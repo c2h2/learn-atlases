@@ -1,0 +1,160 @@
+{
+  "slug": "exenatide",
+  "name": "Exenatide",
+  "aliases": ["Exendin-4", "AC2993", "AC002993", "LY2148568", "Exenatide LAR", "Exenatide extended-release"],
+  "category": "metabolic",
+  "drug_class": "GLP-1 receptor agonist",
+  "subclass": "Synthetic exendin-4, a 39-residue lizard-venom peptide (short-acting and extended-release microsphere forms)",
+  "status": "approved",
+  "status_note": "Approved for type 2 diabetes in the US (2005) and EU (2006); the branded US products were discontinued in 2024 and their approvals withdrawn in 2025, but a generic twice-daily version is sold in the US and Byetta and Bydureon remain authorised in the EU.",
+  "evidence": 5,
+  "evidence_note": "Approved on the basis of three 30-week placebo-controlled phase 3 trials, followed by the DURATION trials of the weekly form and the 14,752-patient EXSCEL cardiovascular outcomes trial; a phase 3 trial in Parkinson's disease (Exenatide-PD3) was negative.",
+  "tagline": "Synthetic Gila monster venom peptide that became the first GLP-1 drug (Byetta)",
+  "summary": "Exenatide is the synthetic form of exendin-4, a 39-amino-acid peptide from the venom of the Gila monster that activates the human GLP-1 receptor but, unlike the body's own GLP-1, is not destroyed within minutes. Approved in 2005 as Byetta, a twice-daily injection for type 2 diabetes, it was the first drug of its class, and a once-weekly microsphere version (Bydureon) followed in 2011–2012. Newer GLP-1 drugs have since overtaken it, and the branded US products were withdrawn in 2024–2025.",
+  "overview": [
+    "Exenatide is the synthetic form of exendin-4, a peptide isolated in 1992 from the venom of the Gila monster (Heloderma suspectum) by John Eng, an endocrinologist at the Veterans Affairs Medical Center in the Bronx, New York, working with Jean-Pierre Raufman. The search had been prompted by the discovery of a related peptide, exendin-3, in the venom of the Mexican beaded lizard. Exendin-4 shares about half of its first 30 residues with human GLP-1 and activates the same receptor, but it lasts far longer in the body, partly because the enzyme DPP-4 cannot inactivate it.",
+    "Eng held the patent personally and licensed it in 1996 to Amylin Pharmaceuticals, which developed the chemically synthesised peptide as AC2993 and in 2002 formed a worldwide alliance with Eli Lilly. Approved by the FDA on 28 April 2005 as Byetta, a twice-daily injection taken before meals, exenatide became the first GLP-1 receptor agonist on the market. To avoid twice-daily injections, Amylin, Lilly and Alkermes encapsulated the peptide in biodegradable poly(lactide-co-glycolide) microspheres, creating the once-weekly Bydureon (EU 2011, US 2012) and later the ready-mixed Bydureon BCise autoinjector (2017).",
+    "Ownership changed several times: Lilly and Amylin ended their partnership in 2011, Bristol-Myers Squibb bought Amylin in 2012 and AstraZeneca took full control of the exenatide franchise in 2014. The 14,752-patient EXSCEL trial (2017) found once-weekly exenatide safe for the heart but not significantly protective. Combined sales reached US$896 million in 2015 and then declined; AstraZeneca discontinued the US brands in October 2024 and their US approvals were withdrawn in 2025, although a generic twice-daily exenatide from Amneal launched in May 2025 and the brands remain authorised in the EU.",
+    "Exenatide has also been studied as a possible disease-modifying treatment for Parkinson's disease. A 62-patient phase 2 trial (2017) suggested a lasting benefit on motor scores, but the 194-patient phase 3 Exenatide-PD3 trial (2025) found no slowing of progression over 96 weeks, and in 2026 The Lancet placed an expression of concern on that paper after a regulatory inspection at one trial site. Smaller trials have explored it in idiopathic intracranial hypertension, alcohol use disorder and hypothalamic obesity."
+  ],
+  "mechanism": [
+    "Exenatide is a potent agonist of the GLP-1 receptor, a class B G-protein-coupled receptor found on pancreatic beta cells and in the brain and gut. Like native GLP-1 it raises cAMP in beta cells and increases insulin secretion only when glucose is elevated, suppresses inappropriately high glucagon secretion and slows gastric emptying. Together these effects blunt the rise in blood glucose after meals, reduce food intake and produce modest weight loss.",
+    "Two features make exendin-4 more durable than GLP-1. Glycine at position 2, where GLP-1 has alanine, makes it a poor substrate for DPP-4, and it is cleared mainly by glomerular filtration in the kidney, giving a plasma half-life of about 2.4 hours compared with about 2 minutes for GLP-1; for the same reason it is not recommended in severe kidney impairment. Its nine extra C-terminal residues, absent from GLP-1, pack around Trp25 in a compact 'Trp-cage', and its helix is more stable than that of GLP-1 in solution.",
+    "In the once-weekly products the peptide is embedded in poly(D,L-lactide-co-glycolide) microspheres. After injection, surface-bound drug is released first and the rest emerges as the microspheres hydrate and erode, so plasma levels build up over several weeks (a plateau at about 10 weeks with Bydureon BCise) and take about 10 weeks to fall below detection after stopping."
+  ],
+  "origin": "Synthetic copy of exendin-4, a 39-residue peptide from the venom of the Gila monster (Heloderma suspectum); manufactured by chemical peptide synthesis",
+  "discovery": {"year": 1992, "by": "John Eng and colleagues, with Jean-Pierre Raufman", "where": "Solomon A. Berson Research Laboratory, Veterans Affairs Medical Center, Bronx, New York, USA", "note": "Isolated from Gila monster venom after the discovery of exendin-3 in Mexican beaded lizard venom; published in J Biol Chem in April 1992."},
+  "first_human_year": 1999,
+  "first_approval": {"date": "2005-04-28", "agency": "FDA", "region": "US", "brand": "Byetta", "indication": "Type 2 diabetes (add-on to metformin and/or a sulfonylurea)"},
+  "developer": "Amylin Pharmaceuticals (in alliance with Eli Lilly, 2002–2011); now AstraZeneca",
+  "brands": [
+    {"name": "Byetta", "company": "Amylin Pharmaceuticals / Eli Lilly (later AstraZeneca)", "route": "Subcutaneous, twice daily", "use": "Type 2 diabetes", "approved": "2005-04-28", "agency": "FDA"},
+    {"name": "Bydureon", "company": "Amylin Pharmaceuticals / Eli Lilly (later AstraZeneca)", "route": "Subcutaneous, once weekly (extended-release microspheres)", "use": "Type 2 diabetes in adults; children aged 10 and over in the EU", "approved": "2011-06-17", "agency": "EMA"},
+    {"name": "Bydureon BCise", "company": "AstraZeneca", "route": "Subcutaneous autoinjector, once weekly", "use": "Type 2 diabetes in adults and children aged 10 and over", "approved": "2017-10-20", "agency": "FDA"}
+  ],
+  "analogs": [
+    {"name": "Exendin-3", "note": "Natural peptide from the venom of the Mexican beaded lizard (Heloderma horridum); identical to exendin-4 except for Ser2-Asp3 in place of Gly2-Glu3."},
+    {"name": "Exendin(9–39) (avexitide)", "note": "N-terminally truncated fragment that binds the GLP-1 receptor without activating it; the standard research antagonist of the receptor."},
+    {"name": "Lixisenatide", "note": "Once-daily exendin-4 analogue (Lyxumia, Adlyxin; code ZP10/AVE0010) in which Pro38 is deleted and six lysines are added at the C-terminus."}
+  ],
+  "targets": [
+    {"name": "Glucagon-like peptide-1 receptor", "gene": "GLP1R", "uniprot": "P43220", "action": "Agonist (high potency)"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["H","G","E","G","T","F","T","S","D","L","S","K","Q","M","E","E","E","A","V","R","L","F","I","E","W","L","K","N","G","G","P","S","S","G","A","P","P","P","S"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A2", "type": "other", "label": "Gly2, where GLP-1 has alanine, makes the peptide a poor substrate for DPP-4, the enzyme that inactivates native GLP-1", "short": "Gly2"}
+    ],
+    "notation": "H-His-Gly-Glu-Gly-Thr-Phe-Thr-Ser-Asp-Leu-Ser-Lys-Gln-Met-Glu-Glu-Glu-Ala-Val-Arg-Leu-Phe-Ile-Glu-Trp-Leu-Lys-Asn-Gly-Gly-Pro-Ser-Ser-Gly-Ala-Pro-Pro-Pro-Ser-NH2",
+    "note": "Identical to natural exendin-4 (UniProt P26349, residues 48–86 of the precursor). Residues 1–30 match human GLP-1(7–36) at 16 positions (about 53%); the C-terminal nine residues (31–39) have no counterpart in GLP-1."
+  },
+  "formula": "C184H282N50O60S",
+  "mw": 4186.6,
+  "half_life": "≈ 2.4 h (twice-daily form); weekly microspheres release drug over several weeks",
+  "half_life_hours": 2.4,
+  "routes": ["Subcutaneous injection, twice daily (Byetta and generic)", "Subcutaneous extended-release injection, once weekly (Bydureon, Bydureon BCise)"],
+  "structure": {
+    "pdb": [
+      {"id": "7LLL", "title": "Exendin-4-bound GLP-1 receptor in complex with Gs protein", "method": "Cryo-EM", "resolution": 3.7, "year": 2022, "peptide_chain": "P", "note": "Full-length exendin-4 in its active, receptor-bound helical pose"},
+      {"id": "1JRJ", "title": "Solution structure of exendin-4 in 30% trifluoroethanol", "method": "NMR", "resolution": null, "year": 2001, "peptide_chain": "A", "note": "Free peptide, showing the helix and the C-terminal Trp-cage"},
+      {"id": "3C5T", "title": "Exendin-4(9–39) bound to the GLP-1 receptor extracellular domain", "method": "X-ray", "resolution": 2.1, "year": 2008, "peptide_chain": "B", "note": "Contains only the truncated antagonist fragment exendin(9–39), residues 9–39"}
+    ],
+    "pubchem_cid": 45588096,
+    "notes": "In 30% trifluoroethanol the peptide forms a helix from about residue 7 to 28, with the proline-rich C-terminus packed around Trp25 (the 'Trp-cage'). In the receptor complex the helical peptide spans the receptor's extracellular domain and transmembrane core."
+  },
+  "ids": {"pubchem_cid": 45588096, "cas": "141758-74-9", "drugbank": "DB01276", "chembl": "CHEMBL414357", "unii": "9P1872D4OL", "kegg": "D04121", "chebi": "CHEBI:64073", "atc": "A10BJ01", "uniprot": "P26349", "inn": "exenatide"},
+  "wiki": "Exenatide",
+  "queries": {"pubmed": "(exenatide[tiab] OR \"exendin-4\"[tiab] OR \"exendin 4\"[tiab] OR AC2993[tiab] OR Byetta[tiab] OR Bydureon[tiab])", "ctgov": "exenatide OR exendin-4 OR Byetta OR Bydureon"},
+  "uses": {
+    "approved": [
+      {"use": "Type 2 diabetes (twice-daily injection)", "detail": "Adjunct to diet and exercise to improve glycaemic control in adults, injected before the two main meals (Byetta; generic exenatide in the US).", "since": 2005, "where": "US, EU"},
+      {"use": "Type 2 diabetes (once-weekly injection)", "detail": "Extended-release microsphere formulation (Bydureon, Bydureon BCise) for adults, alone or with other glucose-lowering medicines.", "since": 2011, "where": "EU; US 2012–2025"},
+      {"use": "Type 2 diabetes in children aged 10 and over", "detail": "Once-weekly formulation as an adjunct to diet and exercise in 10–17-year-olds, based on a 24-week placebo-controlled trial.", "since": 2021, "where": "US (until 2025), EU"}
+    ],
+    "investigational": [
+      {"use": "Parkinson's disease", "stage": "Phase 3 — failed (2025)", "detail": "A 62-patient phase 2 trial (2017) suggested better off-medication motor scores, but the 194-patient Exenatide-PD3 trial found no slowing of progression over 96 weeks; The Lancet issued an expression of concern about the phase 3 paper in 2026."},
+      {"use": "Idiopathic intracranial hypertension", "stage": "Phase 2", "detail": "In a randomised trial in 16 women with telemetric pressure monitors, exenatide lowered intracranial pressure at 2.5 and 24 hours; the investigators proposed a phase 3 trial."},
+      {"use": "Alcohol use disorder", "stage": "Phase 2 — primary endpoint missed", "detail": "In 127 patients, weekly exenatide did not reduce heavy drinking days overall but reduced alcohol-cue reactivity on brain imaging; an exploratory analysis suggested less drinking in people with obesity."},
+      {"use": "Hypothalamic obesity", "stage": "Phase 3 — primary endpoint missed", "detail": "In 42 young people with hypothalamic damage after brain tumours, 36 weeks of weekly exenatide did not significantly lower BMI, although fat mass and waist circumference fell."}
+    ],
+    "off_label": [
+      {"use": "Weight loss without diabetes", "detail": "Exenatide is not approved for weight management, but its appetite-suppressing effect has been tested in people with obesity who do not have diabetes.", "evidence": "In a 24-week trial of 152 adults with obesity, exenatide plus lifestyle advice gave 5.1 kg average weight loss versus 1.6 kg with placebo, much less than approved obesity medicines such as semaglutide 2.4 mg."}
+    ]
+  },
+  "history": [
+    {"year": 1992, "date": "1992-04-15", "title": "Exendin-4 isolated from Gila monster venom", "detail": "John Eng and colleagues at the Bronx Veterans Affairs Medical Center purified a 39-residue peptide from Heloderma suspectum venom that differs from the beaded lizard's exendin-3 only at positions 2 and 3.", "kind": "discovery"},
+    {"year": 1993, "date": "1993-09", "title": "Shown to act on the GLP-1 receptor", "detail": "Göke and colleagues showed that exendin-4 is a high-potency agonist of the GLP-1 receptor on insulin-secreting beta cells, whereas the truncated exendin(9–39) blocks it.", "kind": "science"},
+    {"year": 1996, "date": "1996-10", "title": "Amylin licenses Eng's patent", "detail": "Amylin Pharmaceuticals signed a patent and technology licence with John Eng, who held the exendin-4 patent personally, and developed the synthetic peptide as AC2993.", "kind": "market"},
+    {"year": 1999, "date": "1999-01", "title": "First clinical trials", "detail": "Amylin filed an investigational new drug application in January 1999; small phase 2 studies that year showed lower post-meal glucose and glucagon and slower gastric emptying in type 2 diabetes.", "kind": "trial"},
+    {"year": 2002, "date": "2002-09", "title": "Alliance with Eli Lilly", "detail": "Lilly paid US$110 million up front, with up to US$215 million more in milestones, to co-develop and co-market exenatide worldwide, including a long-acting formulation.", "kind": "market"},
+    {"year": 2005, "date": "2005-04-28", "title": "FDA approves Byetta", "detail": "Twice-daily exenatide became the first GLP-1 receptor agonist approved anywhere, as an add-on to metformin and/or a sulfonylurea; the EU authorised it on 20 November 2006.", "kind": "approval"},
+    {"year": 2007, "date": "2007-10", "title": "Pancreatitis alert", "detail": "FDA reviewed 30 post-marketing reports of acute pancreatitis and added a precaution to the label; in August 2008 it reported six haemorrhagic or necrotising cases, two fatal, and sought stronger warnings.", "kind": "safety"},
+    {"year": 2008, "date": "2008-09", "title": "Once weekly beats twice daily", "detail": "In the 295-patient DURATION-1 trial, exenatide 2 mg once weekly lowered HbA1c by 1.9 percentage points at 30 weeks versus 1.5 with 10 µg twice daily.", "kind": "trial"},
+    {"year": 2011, "date": "2011-06-17", "title": "Bydureon authorised in the EU", "detail": "The once-weekly microsphere formulation was approved in the EU; the FDA followed on 27 January 2012.", "kind": "approval"},
+    {"year": 2011, "date": "2011-11-08", "title": "Lilly and Amylin part ways", "detail": "The companies ended their exenatide alliance and settled their litigation, transferring worldwide responsibility for the drug to Amylin.", "kind": "market"},
+    {"year": 2012, "date": "2012-08-08", "title": "Bristol-Myers Squibb buys Amylin", "detail": "BMS completed its acquisition of Amylin at US$31 a share and ran the exenatide products in a diabetes alliance with AstraZeneca, which took full ownership on 1 February 2014.", "kind": "market"},
+    {"year": 2017, "date": "2017-08-03", "title": "Parkinson's phase 2 signal", "detail": "In a single-centre trial of 62 patients, 48 weeks of weekly exenatide was followed by better off-medication motor scores than placebo at 60 weeks (adjusted difference −3.5 points).", "kind": "trial"},
+    {"year": 2017, "date": "2017-09-14", "title": "EXSCEL outcomes trial", "detail": "In 14,752 people with type 2 diabetes followed for a median 3.2 years, weekly exenatide was non-inferior to placebo for major cardiovascular events but not superior (hazard ratio 0.91, 95% CI 0.83–1.00).", "kind": "trial"},
+    {"year": 2017, "date": "2017-10-20", "title": "Bydureon BCise approved", "detail": "FDA approved a ready-mixed once-weekly autoinjector in which the microspheres are suspended in medium-chain triglyceride oil.", "kind": "approval"},
+    {"year": 2021, "date": "2021-07-22", "title": "Approved for children aged 10 and over", "detail": "FDA extended the weekly formulation to 10–17-year-olds with type 2 diabetes after a 24-week trial showed a 0.85-point HbA1c reduction versus placebo.", "kind": "approval"},
+    {"year": 2024, "date": "2024-10-25", "title": "US brands discontinued", "detail": "AstraZeneca told the FDA it had discontinued Byetta (25 October 2024) and Bydureon BCise (28 October 2024).", "kind": "market"},
+    {"year": 2024, "date": "2024-11-19", "title": "First US generic approved", "detail": "FDA approved Amneal's generic twice-daily exenatide pen referencing Byetta; it launched on 27 May 2025.", "kind": "approval"},
+    {"year": 2025, "date": "2025-02-04", "title": "Parkinson's phase 3 trial fails", "detail": "Exenatide-PD3 randomised 194 people at six UK hospitals; after 96 weeks, off-medication motor scores had worsened similarly with exenatide and placebo.", "kind": "trial"},
+    {"year": 2025, "date": "2025-09-03", "title": "FDA withdraws brand approvals", "detail": "At AstraZeneca's request, FDA withdrew the approvals of Byetta, Bydureon and Bydureon BCise because the products were no longer marketed.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-06-22", "title": "Expression of concern on Exenatide-PD3", "detail": "The Lancet published an expression of concern about the phase 3 Parkinson's paper after being informed of findings from a regulatory inspection at one of the trial sites.", "kind": "science"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "generic", "detail": "Byetta (2005), Bydureon (2012) and Bydureon BCise (2017) were discontinued in October 2024 and their approvals withdrawn effective 3 September 2025; Amneal's generic twice-daily exenatide was approved in November 2024 and launched in May 2025."},
+    {"region": "EU", "status": "approved", "detail": "Byetta (authorised 20 November 2006) and Bydureon (17 June 2011) remain authorised, held by AstraZeneca AB; Bydureon is authorised for adults and children aged 10 and over."},
+    {"region": "WADA", "status": "permitted", "detail": "GLP-1 receptor agonists are not on the World Anti-Doping Agency prohibited list."}
+  ],
+  "pk": {
+    "half_life": "About 2.4 h after a subcutaneous dose of the twice-daily form; the weekly microsphere form releases drug over weeks",
+    "tmax": "Median 2.1 h after a twice-daily dose; with weekly Bydureon BCise, plasma levels rise gradually to a plateau at about 10 weeks",
+    "metabolism": "Proteolytic degradation after glomerular filtration",
+    "excretion": "Mainly renal (glomerular filtration); apparent clearance about 9.1 L/h; exposure rises about 3.4-fold in people on dialysis"
+  },
+  "dosing": [
+    {"product": "Byetta / generic exenatide", "regimen": "5 µg subcutaneously twice daily within 60 minutes before the morning and evening meals (or the two main meals, at least 6 hours apart); may be increased to 10 µg twice daily after one month. Not to be injected after a meal."},
+    {"product": "Bydureon BCise", "regimen": "2 mg subcutaneously once every 7 days, at any time of day, with or without meals (adults and children aged 10 and over)."}
+  ],
+  "dosing_note": "Labelled regimens summarised for reference only; the branded US products were discontinued in 2024. Follow the current prescribing information and a clinician's advice.",
+  "safety": {
+    "common": ["Nausea", "Vomiting", "Diarrhoea", "Hypoglycaemia (mainly with a sulfonylurea or insulin)", "Feeling jittery", "Dizziness", "Headache", "Dyspepsia", "Constipation", "Injection-site nodules (weekly formulation)"],
+    "serious": ["Acute pancreatitis, including haemorrhagic or necrotising forms", "Acute kidney injury and worsening renal function, often after dehydration", "Serious hypersensitivity reactions (anaphylaxis, angioedema)", "Drug-induced immune-mediated thrombocytopenia", "Serious injection-site reactions (abscess, cellulitis, necrosis) with the weekly form", "Gallbladder disease (gallstones, cholecystitis)", "Pulmonary aspiration during general anaesthesia or deep sedation"],
+    "warnings": ["US boxed warning for the once-weekly formulations: thyroid C-cell tumours in rats; contraindicated with a personal or family history of medullary thyroid carcinoma or MEN 2 (the twice-daily product carries no boxed warning)", "Not recommended in severe renal impairment (creatinine clearance < 30 mL/min) or end-stage kidney disease", "Pens must never be shared between patients, even if the needle is changed"],
+    "notes": "Antibodies to exenatide are common (about 44% of patients in the 30-week twice-daily trials), but only about 3% had high titres with a weaker glucose-lowering response. Slowed gastric emptying can reduce the absorption of oral medicines, and raised INR with bleeding has been reported in people taking warfarin."
+  },
+  "market": {
+    "note": "Combined Byetta and Bydureon sales reached US$896 million in 2015, about two-thirds from Bydureon, and then declined; AstraZeneca discontinued the US brands in 2024.",
+    "figures": [
+      {"year": 2015, "label": "Bydureon sales", "value": "US$580 m", "source": "AstraZeneca full-year 2015 results"},
+      {"year": 2015, "label": "Byetta sales", "value": "US$316 m", "source": "AstraZeneca full-year 2015 results"},
+      {"year": 2019, "label": "Bydureon sales", "value": "US$549 m", "source": "AstraZeneca full-year 2019 results"},
+      {"year": 2019, "label": "Byetta sales", "value": "US$110 m", "source": "AstraZeneca full-year 2019 results"}
+    ]
+  },
+  "facts": [
+    "Exendin-4 matches human GLP-1 at 16 of its first 30 positions (about 53%), yet it survives in the blood for hours rather than minutes.",
+    "Eng held the exendin-4 patent personally and licensed it to Amylin in 1996; nine years later exenatide became the first GLP-1 drug on the market.",
+    "The 20-residue 'Trp-cage' miniprotein, a model system for protein-folding studies, was designed in 2002 by trimming and mutating exendin-4.",
+    "Exendin-4's C-terminal tail lives on in newer drugs: tirzepatide and retatrutide both end in the same ten residues (GPSSGAPPPS-NH2)."
+  ],
+  "related": ["liraglutide", "semaglutide", "tirzepatide", "retatrutide", "pramlintide", "glucagon"],
+  "references": [
+    {"title": "Isolation and characterization of exendin-4, an exendin-3 analogue, from Heloderma suspectum venom", "authors": "Eng J, Kleinman WA, Singh L, et al.", "journal": "J Biol Chem", "year": 1992, "url": "https://pubmed.ncbi.nlm.nih.gov/1313797/"},
+    {"title": "Exendin-4 is a high potency agonist and truncated exendin-(9-39)-amide an antagonist at the glucagon-like peptide 1-(7-36)-amide receptor of insulin-secreting beta-cells", "authors": "Göke R, Fehmann HC, Linn T, et al.", "journal": "J Biol Chem", "year": 1993, "url": "https://pubmed.ncbi.nlm.nih.gov/8396143/"},
+    {"title": "Exendin-4 and glucagon-like-peptide-1: NMR structural comparisons in the solution and micelle-associated states", "authors": "Neidigh JW, Fesinmeyer RM, Prickett KS, Andersen NH", "journal": "Biochemistry", "year": 2001, "url": "https://pubmed.ncbi.nlm.nih.gov/11683627/"},
+    {"title": "Effects of exenatide (exendin-4) on glycemic control and weight over 30 weeks in metformin-treated patients with type 2 diabetes", "authors": "DeFronzo RA, Ratner RE, Han J, et al.", "journal": "Diabetes Care", "year": 2005, "url": "https://pubmed.ncbi.nlm.nih.gov/15855572/"},
+    {"title": "Exenatide once weekly versus twice daily for the treatment of type 2 diabetes (DURATION-1)", "authors": "Drucker DJ, Buse JB, Taylor K, et al.", "journal": "Lancet", "year": 2008, "url": "https://pubmed.ncbi.nlm.nih.gov/18782641/"},
+    {"title": "Effects of once-weekly exenatide on cardiovascular outcomes in type 2 diabetes (EXSCEL)", "authors": "Holman RR, Bethel MA, Mentz RJ, et al.", "journal": "N Engl J Med", "year": 2017, "url": "https://pubmed.ncbi.nlm.nih.gov/28910237/"},
+    {"title": "Exenatide once weekly versus placebo in Parkinson's disease: a randomised, double-blind, placebo-controlled trial", "authors": "Athauda D, Maclagan K, Skene SS, et al.", "journal": "Lancet", "year": 2017, "url": "https://pubmed.ncbi.nlm.nih.gov/28781108/"},
+    {"title": "Once-weekly exenatide in youth with type 2 diabetes", "authors": "Tamborlane WV, Bishai R, Geller D, et al.", "journal": "Diabetes Care", "year": 2022, "url": "https://pubmed.ncbi.nlm.nih.gov/35679098/"},
+    {"title": "Exenatide once a week versus placebo as a potential disease-modifying treatment for people with Parkinson's disease in the UK (Exenatide-PD3)", "authors": "Vijiaratnam N, Girges C, Auld G, et al.", "journal": "Lancet", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/39919773/"},
+    {"title": "Expression of concern: Exenatide once a week versus placebo as a potential disease-modifying treatment for people with Parkinson's disease in the UK", "authors": "The Editors of The Lancet", "journal": "Lancet", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42330995/"}
+  ]
+}

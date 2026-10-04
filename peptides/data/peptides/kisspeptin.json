@@ -1,0 +1,129 @@
+{
+  "slug": "kisspeptin",
+  "name": "Kisspeptin",
+  "aliases": ["Metastin", "Kisspeptin-54", "KP-54", "Kisspeptin-10", "KP-10", "KiSS-1 peptide"],
+  "category": "hormone",
+  "drug_class": "Kisspeptin receptor (KISS1R/GPR54) agonist",
+  "subclass": "RF-amide neuropeptide family (kisspeptin-54, -14, -13 and -10)",
+  "status": "clinical",
+  "status_note": "Not approved anywhere; kisspeptin-54, kisspeptin-10 and the synthetic agonist MVT-602 have been tested in phase 1–2 studies in IVF, reproductive disorders and low sexual desire, while kisspeptin-10 circulates on the black market.",
+  "evidence": 3,
+  "evidence_note": "Many small phase 1–2 studies (typically under 100 participants) show that kisspeptin reliably stimulates LH release and can trigger egg maturation in IVF, but no large confirmatory trial has been completed.",
+  "tagline": "Hypothalamic 'puberty switch' peptide tested as an IVF trigger and reproductive drug",
+  "summary": "Kisspeptins are peptides encoded by the KISS1 gene that stimulate the brain's gonadotropin-releasing hormone (GnRH) neurons, placing them at the top of the reproductive hormone cascade; people without working kisspeptin signalling do not go through puberty. Given as a drug, kisspeptin triggers a surge of luteinising hormone, which researchers at Imperial College London have used to mature eggs for IVF in women at risk of ovarian hyperstimulation. It remains investigational.",
+  "overview": [
+    "KISS1 was discovered in 1996 by Danny Welch's group at Penn State College of Medicine in Hershey, Pennsylvania, as a gene that suppressed the spread of melanoma cells; the name is a nod to the Hershey's Kisses chocolates made in the town. In 2001 three groups showed that its protein product is processed into peptides — chiefly kisspeptin-54, also called metastin, with shorter forms of 14, 13 and 10 amino acids sharing the same Arg-Phe-amide end — that activate the orphan receptor GPR54, now called KISS1R.",
+    "In 2003 two groups, led by Nicolas de Roux in France and by Stephanie Seminara with UK collaborators, found that loss-of-function mutations in GPR54 cause hypogonadotropic hypogonadism, a failure to enter puberty, and mice lacking the receptor had the same condition. In 2012 an inactivating mutation in KISS1 itself was shown to cause it too. Kisspeptin is now regarded as a key upstream regulator of GnRH neurons and essential for reproductive health.",
+    "In 2005 Imperial College London researchers showed that an infusion of kisspeptin-54 raised LH, FSH and testosterone in men. The group, led by Waljit Dhillo, then used a single injection of kisspeptin-54 to trigger egg maturation in IVF (2014) and, in 60 women at high risk of ovarian hyperstimulation syndrome, saw no moderate or severe cases (2015). Kisspeptin has also been studied in delayed puberty, hypothalamic amenorrhoea and hypogonadotropic hypogonadism, and in men with low sexual desire, in whom it altered brain responses to sexual images and increased penile tumescence (2023).",
+    "The synthetic agonist MVT-602 (formerly Takeda's TAK-448) produces a later and longer LH rise than native kisspeptin and has been tested in phase 1–2 studies for ovulation induction; potent analogues of this kind were first developed by Takeda to suppress testosterone in prostate cancer, because sustained exposure blunts the axis. Kisspeptin-10 also circulates on the black market, and because it can raise testosterone, kisspeptin and its agonists were added to the World Anti-Doping Agency's Prohibited List in 2024 for male athletes. Cryo-EM structures of the receptor bound to kisspeptin-10 and kisspeptin-54 were published in 2024."
+  ],
+  "mechanism": [
+    "Kisspeptins activate KISS1R, a G protein-coupled receptor that signals mainly through Gq, on GnRH neurons in the hypothalamus. Kisspeptin neurons relay sex-steroid feedback — in female rats they are involved in the oestrogen-driven LH surge that precedes ovulation — and drive GnRH secretion, which releases luteinising hormone (LH) and follicle-stimulating hormone (FSH) from the pituitary and so controls sex-steroid production, sperm production and ovulation.",
+    "A single dose produces a rapid rise in LH, which is why kisspeptin is being tested as an IVF trigger in the hope of lowering the risk of ovarian hyperstimulation syndrome, a potentially life-threatening complication of IVF. With continuous exposure the gonadotropin response fades (in a 2026 study, five days of continuous kisspeptin-10 no longer raised LH or FSH, whereas daily 8-hour infusions kept working for 12 days). Kisspeptin also stimulates oxytocin release in rats and in humans."
+  ],
+  "origin": "Natural peptides cleaved from the 138-residue KISS1 precursor protein, made in the hypothalamus and at very high levels in the placenta",
+  "discovery": {"year": 1996, "by": "Danny Welch's laboratory (first author J. H. Lee)", "where": "Jake Gittlen Cancer Research Institute, Penn State College of Medicine, Hershey, Pennsylvania, USA", "note": "Identified as a melanoma metastasis-suppressor gene. Its peptides were matched to the orphan receptor GPR54 in 2001, and their role in puberty was recognised in 2003."},
+  "first_human_year": 2005,
+  "first_approval": null,
+  "developer": "No commercial product; academic groups (Imperial College London, Massachusetts General Hospital) and, for the analogue MVT-602 (TAK-448), Takeda and Myovant Sciences",
+  "brands": [],
+  "targets": [
+    {"name": "KiSS-1 receptor (GPR54)", "gene": "KISS1R", "uniprot": "Q969F8", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Kisspeptin-10", "residues": ["Y","N","W","N","S","F","G","L","R","F"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [],
+    "notation": "H-Tyr-Asn-Trp-Asn-Ser-Phe-Gly-Leu-Arg-Phe-NH2",
+    "note": "Shown is kisspeptin-10 (KP-10), residues 45–54 of kisspeptin-54 (112–121 of the KISS1 precursor); it binds the receptor about ten times more tightly than the full-length peptide but is rapidly inactivated in plasma (shown in rodents). Kisspeptin-54 (metastin), the main circulating form and the one used in most IVF trials, is GTSLSPPPESSGSPQQPGLSAPHSRQIPAPQGAVLVQREKDLPNYNWNSFGLRF-NH2; kisspeptin-14 and -13 are further C-terminal fragments. All share the C-terminal Arg-Phe-amide (RF-amide) motif."
+  },
+  "formula": "C63H83N17O14",
+  "mw": 1302.4,
+  "half_life": "≈ 28 min for intravenous kisspeptin-54 in men; kisspeptin-10 is rapidly inactivated in plasma",
+  "half_life_hours": 0.46,
+  "routes": ["Intravenous infusion or bolus (research)", "Subcutaneous injection (research, IVF trigger)", "Intranasal (early research)"],
+  "structure": {
+    "pdb": [
+      {"id": "8ZJD", "title": "Kisspeptin-10 bound to the kisspeptin receptor in complex with an engineered Gq protein", "method": "Cryo-EM", "resolution": 3.06, "year": 2024, "peptide_chain": "L", "note": "From a 2024 study of hormone recognition and distinctive Gq coupling by KISS1R"},
+      {"id": "8XGS", "title": "Kisspeptin-54 (metastin) bound to the kisspeptin receptor–Gq complex", "method": "Cryo-EM", "resolution": 2.95, "year": 2024, "peptide_chain": "F", "note": "Complex formed with the full 54-residue hormone"},
+      {"id": "8XGO", "title": "Synthetic agonist TAK-448 (MVT-602) bound to the kisspeptin receptor–Gq complex", "method": "Cryo-EM", "resolution": 2.68, "year": 2024, "peptide_chain": "F", "note": "Clinical-stage analogue with non-natural residues"}
+    ],
+    "pubchem_cid": 25240297,
+    "notes": "Two independent 2024 studies (Cell Reports and Science Advances) solved KISS1R with natural kisspeptins and TAK-448 and examined why the receptor couples preferentially to Gq."
+  },
+  "ids": {"pubchem_cid": 25240297, "cas": "374675-21-5", "chembl": "CHEMBL376756", "unii": "FS1N52VS3S", "uniprot": "Q15726"},
+  "wiki": "Kisspeptin",
+  "queries": {
+    "pubmed": "(kisspeptin*[tiab] OR metastin[tiab] OR \"KiSS-1\"[tiab] OR KISS1[tiab])",
+    "ctgov": "kisspeptin OR metastin OR MVT-602 OR TAK-448"
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Egg-maturation trigger in IVF", "stage": "Phase 2", "detail": "A single injection of kisspeptin-54 matured eggs in 53 women (12 clinical pregnancies, 2014); in 60 women at high risk of ovarian hyperstimulation none developed moderate or severe OHSS, with a 45% live-birth rate per transfer (2015)."},
+      {"use": "Ovulation induction (MVT-602)", "stage": "Phase 1–2a", "detail": "In healthy women the synthetic agonist produced an LH surge of similar size and duration to the natural mid-cycle surge, with ovulation within 5 days in 75–100% depending on dose."},
+      {"use": "Hypothalamic amenorrhoea, delayed puberty and hypogonadotropic hypogonadism", "stage": "Phase 1–2 (academic)", "detail": "Used to probe and restore reproductive-axis function, including pulsatile and repeated subcutaneous regimens."},
+      {"use": "Hypoactive sexual desire disorder", "stage": "Phase 1–2", "detail": "In a crossover trial in men with hypoactive sexual desire disorder (37 randomised, 32 completed), kisspeptin modulated brain responses to sexual videos and increased penile tumescence (2023)."},
+      {"use": "Prostate cancer (TAK-448, TAK-683)", "stage": "Phase 1–2 (terminated)", "detail": "Long-acting analogues were designed to suppress testosterone by continuous receptor stimulation."}
+    ],
+    "off_label": [
+      {"use": "Black-market kisspeptin-10 to raise testosterone", "detail": "Kisspeptin-10 is sold outside medical channels; a doping-control laboratory that analysed a black-market vial in 2024 found kisspeptin-10 with more degradation than a reference standard.", "evidence": "Short infusions raise LH and testosterone in healthy men, but continuous exposure blunts the gonadotropin response and there are no long-term safety data; it is prohibited in sport for men."}
+    ]
+  },
+  "history": [
+    {"year": 1996, "date": "1996-12", "title": "KISS1 found in Hershey", "detail": "Danny Welch's group identified KiSS-1 as a gene that suppressed metastasis of human melanoma cells.", "kind": "discovery"},
+    {"year": 2001, "date": "2001-05", "title": "Peptides matched to GPR54", "detail": "Takeda scientists isolated the 54-residue peptide 'metastin' from placenta as the ligand of an orphan receptor; two other groups reported kisspeptins activating GPR54 the same year.", "kind": "science"},
+    {"year": 2003, "date": "2003-09", "title": "Receptor mutations block puberty", "detail": "De Roux et al. (PNAS) and Seminara et al. (NEJM) showed that loss of GPR54 function causes hypogonadotropic hypogonadism in humans and mice.", "kind": "science"},
+    {"year": 2005, "date": "2005-12", "title": "First human study", "detail": "A 90-minute infusion of kisspeptin-54 raised LH, FSH and testosterone in six healthy men; its plasma half-life was about 28 minutes.", "kind": "trial"},
+    {"year": 2012, "date": "2012-02", "title": "Ligand mutation confirmed", "detail": "An inactivating mutation in KISS1 itself was shown to cause hypogonadotropic hypogonadism.", "kind": "science"},
+    {"year": 2013, "date": "2013-11", "title": "Testosterone-suppressing analogues", "detail": "Takeda described stable nonapeptide agonists that lowered testosterone in rats, leading to TAK-683 and TAK-448 for hormone-dependent cancers.", "kind": "science"},
+    {"year": 2014, "date": "2014-07", "title": "Kisspeptin triggers egg maturation in IVF", "detail": "A single injection of kisspeptin-54 matured eggs in 53 women undergoing IVF, with 12 clinical pregnancies.", "kind": "trial"},
+    {"year": 2015, "date": "2015-09", "title": "Safer trigger for high-risk women", "detail": "In 60 women at high risk of ovarian hyperstimulation syndrome, none developed moderate or severe OHSS after a kisspeptin-54 trigger.", "kind": "trial"},
+    {"year": 2020, "date": "2020-12", "title": "MVT-602 tested in women", "detail": "The synthetic agonist MVT-602 produced a later, longer LH rise than kisspeptin-54 in healthy women and those with PCOS or hypothalamic amenorrhoea.", "kind": "trial"},
+    {"year": 2023, "date": "2023-02", "title": "Effects on sexual desire", "detail": "Kisspeptin altered brain responses to sexual images and increased penile tumescence in men with hypoactive sexual desire disorder.", "kind": "trial"},
+    {"year": 2024, "title": "Added to the WADA Prohibited List", "detail": "Kisspeptin, its isoforms and synthetic agonists such as TAK-448 were included in the 2024 Prohibited List as testosterone-stimulating peptides, prohibited for male athletes.", "kind": "regulatory"},
+    {"year": 2024, "date": "2024-07", "title": "Receptor structures solved", "detail": "Cryo-EM structures of KISS1R bound to kisspeptin-10, kisspeptin-54 and TAK-448 were published by two groups.", "kind": "science"},
+    {"year": 2025, "date": "2025-04", "title": "Nasal spray raises LH", "detail": "Intranasal kisspeptin-54 rapidly stimulated gonadotropin release in healthy men and women and in patients with a reproductive disorder.", "kind": "trial"},
+    {"year": 2026, "date": "2026-08", "title": "Twelve-day dosing in men", "detail": "Daily 8-hour subcutaneous infusions of kisspeptin-10 sustained LH, FSH and testosterone for 12 days, whereas continuous infusion lost its effect on gonadotropins within 5 days.", "kind": "trial"}
+  ],
+  "regulatory": [
+    {"region": "UK", "status": "investigational", "detail": "Studied in academic trials at Imperial College London, including IVF and sexual-desire studies; no marketing application."},
+    {"region": "US", "status": "investigational", "detail": "Studied in academic protocols (for example at Massachusetts General Hospital); no approved product."},
+    {"region": "WADA", "status": "prohibited", "detail": "Kisspeptin, its isoforms and receptor agonists such as TAK-448 have been prohibited for male athletes since the 2024 Prohibited List."}
+  ],
+  "pk": {
+    "half_life": "≈ 28 min for intravenous kisspeptin-54 in men; MVT-602 about 1.3–2.2 h after subcutaneous dosing; kisspeptin-10 is rapidly inactivated in rodent plasma",
+    "tmax": "LH rises within hours of a single dose; after MVT-602 the LH peak came at about 21 h versus about 5 h for kisspeptin-54"
+  },
+  "dosing": null,
+  "dosing_note": "No approved dose. Research protocols vary widely by peptide, route and purpose; grey-market kisspeptin-10 is unregulated, and continuous exposure can blunt the gonadotropin response.",
+  "safety": {
+    "common": [],
+    "serious": [],
+    "warnings": ["Investigational: long-term safety is unknown", "Continuous exposure can blunt the gonadotropin response", "Prohibited in sport for male athletes (WADA)", "Black-market products are unregulated and may be degraded"],
+    "notes": "Most human studies have given single doses or short courses under close monitoring, and the peptides have generally been well tolerated (MVT-602 was safe and well tolerated across all doses tested); no study has examined long-term use."
+  },
+  "market": null,
+  "facts": [
+    "The KISS1 gene's name nods to Hershey's Kisses, the chocolates made in the Pennsylvania town where it was discovered.",
+    "It was first studied as a suppressor of cancer metastasis, not as a reproductive hormone.",
+    "Kisspeptin-54 levels in the blood rise dramatically during human pregnancy because the placenta makes it.",
+    "Kisspeptin-10 binds its receptor about ten times more tightly than full-length kisspeptin-54, yet is rapidly inactivated in plasma."
+  ],
+  "related": ["leuprolide", "oxytocin", "bremelanotide"],
+  "references": [
+    {"title": "KiSS-1, a novel human malignant melanoma metastasis-suppressor gene", "authors": "Lee JH, Miele ME, Hicks DJ, et al.", "journal": "J Natl Cancer Inst", "year": 1996, "url": "https://pubmed.ncbi.nlm.nih.gov/8944003/"},
+    {"title": "Metastasis suppressor gene KiSS-1 encodes peptide ligand of a G-protein-coupled receptor", "authors": "Ohtaki T, Shintani Y, Honda S, et al.", "journal": "Nature", "year": 2001, "url": "https://pubmed.ncbi.nlm.nih.gov/11385580/"},
+    {"title": "The metastasis suppressor gene KiSS-1 encodes kisspeptins, the natural ligands of the orphan G protein-coupled receptor GPR54", "authors": "Kotani M, Detheux M, Vandenbogaerde A, et al.", "journal": "J Biol Chem", "year": 2001, "url": "https://pubmed.ncbi.nlm.nih.gov/11457843/"},
+    {"title": "Hypogonadotropic hypogonadism due to loss of function of the KiSS1-derived peptide receptor GPR54", "authors": "de Roux N, Genin E, Carel JC, et al.", "journal": "Proc Natl Acad Sci U S A", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/12944565/"},
+    {"title": "The GPR54 gene as a regulator of puberty", "authors": "Seminara SB, Messager S, Chatzidaki EE, et al.", "journal": "N Engl J Med", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/14573733/"},
+    {"title": "Kisspeptin-54 stimulates the hypothalamic-pituitary gonadal axis in human males", "authors": "Dhillo WS, Chaudhri OB, Patterson M, et al.", "journal": "J Clin Endocrinol Metab", "year": 2005, "url": "https://pubmed.ncbi.nlm.nih.gov/16174713/"},
+    {"title": "Kisspeptin-54 triggers egg maturation in women undergoing in vitro fertilization", "authors": "Jayasena CN, Abbara A, Comninos AN, et al.", "journal": "J Clin Invest", "year": 2014, "url": "https://pubmed.ncbi.nlm.nih.gov/25036713/"},
+    {"title": "Efficacy of kisspeptin-54 to trigger oocyte maturation in women at high risk of ovarian hyperstimulation syndrome (OHSS) during in vitro fertilization (IVF) therapy", "authors": "Abbara A, Jayasena CN, Christopoulos G, et al.", "journal": "J Clin Endocrinol Metab", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/26192876/"},
+    {"title": "Endocrine profile of the kisspeptin receptor agonist MVT-602 in healthy premenopausal women with and without ovarian stimulation: results from 2 randomized, placebo-controlled clinical trials", "authors": "Abbara A, Ufer M, Voors-Pette C, et al.", "journal": "Fertil Steril", "year": 2024, "url": "https://pubmed.ncbi.nlm.nih.gov/37925096/"},
+    {"title": "Structural basis for hormone recognition and distinctive Gq protein coupling by the kisspeptin receptor", "authors": "Shen S, Wang D, Liu H, et al.", "journal": "Cell Rep", "year": 2024, "url": "https://pubmed.ncbi.nlm.nih.gov/38935498/"}
+  ]
+}

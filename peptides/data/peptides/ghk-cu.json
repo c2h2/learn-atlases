@@ -1,0 +1,360 @@
+{
+  "slug": "ghk-cu",
+  "name": "GHK-Cu",
+  "aliases": [
+    "Copper peptide GHK-Cu",
+    "Copper tripeptide-1",
+    "Glycyl-L-histidyl-L-lysine copper(II)",
+    "Cu-GHK",
+    "GHK copper",
+    "Prezatide copper"
+  ],
+  "category": "repair",
+  "drug_class": "Copper(II)–peptide complex",
+  "subclass": "Endogenous copper-binding tripeptide (matrikine) used in cosmetics and wound research",
+  "status": "clinical",
+  "status_note": "Not approved as a medicine anywhere; it is a widely used cosmetic ingredient (INCI name copper tripeptide-1), a 1990s wound gel was sold in the US only as a medical device, and a topical gel entered a phase 2 wound-healing trial in 2026.",
+  "evidence": 3,
+  "evidence_note": "Wound-healing trials in the 1990s gave mixed results: one positive randomised diabetic-ulcer study, but a 511-patient trial and a randomised venous-ulcer trial found no benefit. Cosmetic studies are small and often industry-linked, and there are no clinical data for injected use.",
+  "tagline": "Copper-binding tripeptide from human plasma, used in skin care and wound research",
+  "summary": "GHK-Cu is the copper(II) complex of the tripeptide glycine-histidine-lysine, a natural component of human plasma discovered by Loren Pickart in 1973. In cell and animal studies it promotes collagen synthesis, blood-vessel growth and wound repair, which made it a staple 'copper peptide' of anti-ageing skin care. Clinical evidence is limited to small or mixed trials, and injectable 'research' versions sold online are unapproved.",
+  "overview": [
+    "GHK was found in 1973 by Loren Pickart, then a PhD student working with M. M. Thaler at the University of California, San Francisco, as a factor in human plasma that prolonged the survival of normal liver cells and stimulated the growth of liver-tumour cells. It was identified as the tripeptide Gly-His-Lys in 1977, and in 1980 Pickart's group showed that it co-purifies with copper, readily forms copper(II) complexes and increases copper uptake by cells. Its affinity for copper is similar to that of the copper-transport site on albumin, from which it can take up the metal.",
+    "In 1988 a team in Reims, France, working with Pickart, showed that the copper complex stimulates collagen synthesis in skin fibroblasts at picomolar to nanomolar concentrations, and noted that the GHK sequence occurs inside type I collagen. Later work found GHK-containing fragments released from the matrix protein SPARC, supporting the idea that GHK acts as a 'matrikine', a signal freed from damaged tissue that helps coordinate repair. Animal studies reported faster wound closure, more new blood vessels and anti-inflammatory effects.",
+    "The Kirkland, Washington company ProCyte developed a GHK-Cu wound gel (Iamin; prezatide copper acetate). After encouraging early results in diabetic foot ulcers, a 511-patient trial failed in 1994, ending attempts to approve it as a drug; in 1996 FDA cleared it through the 510(k) device route as a wound dressing, without a claim that it heals wounds. Copper peptides are now a common ingredient of anti-wrinkle creams, serums and hair products under the INCI name copper tripeptide-1.",
+    "Controlled evidence in people remains thin. Positive facial studies of 41–71 women were presented as conference abstracts in 2002, a small randomised trial after laser resurfacing found no objective benefit, and much of the review literature is written by Pickart and co-authors affiliated with the company Skin Biology. Injectable GHK-Cu is also sold online as a 'research peptide' and was nominated for compounding in injectable form; FDA restricted compounding of injectable forms in 2023 and plans an advisory-committee review before the end of February 2027."
+  ],
+  "mechanism": [
+    "GHK binds copper(II) with high affinity through the glycine amine, the adjacent peptide nitrogen and the histidine ring, forming a complex that keeps copper redox-inactive. It can exchange copper with albumin and was shown to increase copper uptake into cultured cells, so one proposed role is delivering copper to tissues, where it is a cofactor for enzymes such as lysyl oxidase (collagen and elastin cross-linking) and superoxide dismutase.",
+    "In cell culture and animal wound models GHK-Cu increases synthesis of collagen, glycosaminoglycans and the proteoglycan decorin, and modulates both matrix metalloproteinases and their inhibitors, consistent with a tissue-remodelling signal. Gene-expression analyses using the Connectivity Map found that GHK reverses an emphysema-associated expression signature and restores collagen remodelling by fibroblasts from COPD lungs; such data come from cells, not clinical outcomes. A specific GHK receptor has not been characterised."
+  ],
+  "origin": "Naturally occurring copper complex of the tripeptide Gly-His-Lys in human plasma; the GHK sequence also occurs in collagen α2(I) and in SPARC. Commercial GHK-Cu is synthetic.",
+  "discovery": {
+    "year": 1973,
+    "by": "Loren Pickart and M. M. Thaler",
+    "where": "University of California, San Francisco",
+    "note": "Found as a plasma factor that kept normal liver cells alive and stimulated hepatoma growth (Pickart's PhD work); identified as Gly-His-Lys in 1977 and linked to copper in 1980."
+  },
+  "first_human_year": 1992,
+  "first_approval": null,
+  "developer": "Discovered by Loren Pickart; ProCyte (Kirkland, Washington) developed the Iamin wound gel in the 1990s",
+  "brands": [],
+  "analogs": [
+    {
+      "name": "GHK (copper-free)",
+      "note": "The apo-tripeptide, which can pick up copper from albumin in plasma."
+    },
+    {
+      "name": "Prezatide copper acetate (Iamin)",
+      "note": "USAN/INN name for the 2:1 GHK–copper complex acetate used in ProCyte's 1990s wound gel."
+    },
+    {
+      "name": "Pal-GHK",
+      "note": "Palmitoylated GHK used in anti-wrinkle products; the fatty acid is added to improve skin penetration."
+    },
+    {
+      "name": "AHK-Cu",
+      "note": "Alanyl-histidyl-lysine copper complex; stimulated hair-follicle elongation ex vivo (2007)."
+    },
+    {
+      "name": "KGHK",
+      "note": "Peptide released from the matrix protein SPARC that stimulated angiogenesis in animal models (1994)."
+    }
+  ],
+  "targets": [],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "G",
+          "H",
+          "K"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A2",
+        "type": "metal",
+        "label": "Cu(II) is held by three nitrogens: the Gly1 α-amine, the deprotonated Gly–His peptide nitrogen and the His2 imidazole; the fourth equatorial site is a labile oxygen donor (a carboxylate from a neighbouring complex in the crystal)",
+        "short": "Cu(II)"
+      }
+    ],
+    "notation": "H-Gly-His-Lys-OH · Cu(II)",
+    "note": "Shown as the 1:1 copper complex found in solution. Commercial material may be a 2:1 (bis-GHK) copper salt or an acetate; the INN substance prezatide copper acetate is the 2:1 complex."
+  },
+  "formula": "C14H22CuN6O4",
+  "mw": 401.91,
+  "half_life": "Unknown in humans",
+  "half_life_hours": null,
+  "routes": [
+    "Topical (creams, serums, gels)",
+    "Subcutaneous injection (unlicensed products)"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 10111685,
+    "notes": "The Cu(II)–GHK complex has been solved as a small-molecule crystal structure (a carboxylate-bridged dimer in the solid state, Hureau et al. 2011), which is not in the PDB. PDB entries 6QUG–6QUJ show the same copper-binding GHK motif as an N-terminal tag on larger proteins. PubChem lists the free tripeptide as CID 73587."
+  },
+  "ids": {
+    "pubchem_cid": 10111685,
+    "cas": "89030-95-5",
+    "unii": "6BJQ43T1I9",
+    "drugbank": "DB14683"
+  },
+  "wiki": "Copper peptide GHK-Cu",
+  "queries": {
+    "pubmed": "(\"GHK-Cu\"[tiab] OR \"GHK Cu\"[tiab] OR \"copper tripeptide\"[tiab] OR \"glycyl-L-histidyl-L-lysine\"[tiab] OR \"glycyl-histidyl-lysine\"[tiab] OR \"Gly-His-Lys\"[tiab] OR prezatide[tiab] OR \"tripeptide-copper complex\"[tiab] OR \"copper peptide GHK\"[tiab])",
+    "ctgov": "GHK-Cu OR GHK OR copper tripeptide OR prezatide"
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Chronic wounds (diabetic and venous ulcers)",
+        "stage": "Phase 2–3 in the 1990s — mixed, largely negative",
+        "detail": "A randomised, evaluator-blinded study of Iamin gel reported faster closure of diabetic neuropathic foot ulcers (1994), but a 511-patient trial did not beat control and a 0.4% cream was no better than placebo in 86 patients with venous ulcers (1992)."
+      },
+      {
+        "use": "Acute skin wounds",
+        "stage": "Phase 2 (recruiting, 2026)",
+        "detail": "CuHeal: randomised, double-blind, vehicle-controlled split-wound trial of a topical GHK-Cu gel in 60 healthy adults in Shenzhen, China (NCT07437586)."
+      },
+      {
+        "use": "Skin ageing and photodamage",
+        "stage": "Small cosmetic studies",
+        "detail": "Facial studies in 41–71 women presented as conference abstracts (2002) reported firmer skin and fewer wrinkles; a randomised trial in 13 patients after CO2 laser resurfacing found no objective improvement, only higher patient satisfaction."
+      },
+      {
+        "use": "Hair growth",
+        "stage": "Preclinical and small studies",
+        "detail": "Evidence is largely preclinical, including ex vivo follicle studies with the related complex AHK-Cu; a 2026 review notes one small (18-participant) eyebrow study that reported positive cosmetic outcomes."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Cosmetic skin and hair care (non-medical)",
+        "detail": "Copper tripeptide-1 is sold legally in creams, serums and hair products marketed for wrinkles, firmness and thinning hair.",
+        "evidence": "Cell and animal data are consistent, but controlled human studies are few, small and often industry-linked; a 2024 review noted a 'surprising absence' of clinical studies."
+      },
+      {
+        "use": "Injectable 'research peptide'",
+        "detail": "Lyophilised GHK-Cu is sold online as a 'research' product for subcutaneous injection, promoted for skin, hair and tissue repair, and was nominated for compounding in injectable form before FDA restricted it in 2023.",
+        "evidence": "No clinical trial has tested injected GHK-Cu. FDA cited immunogenicity and impurity risks and limited human data, and the identity, sterility and copper content of unlicensed products are not assured."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1973,
+      "date": "1973-05",
+      "title": "Plasma growth factor discovered",
+      "detail": "Loren Pickart and M. M. Thaler reported a tripeptide in human serum that prolonged survival of normal liver cells and stimulated hepatoma growth; a synthetic version was tested later that year.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1977,
+      "date": "1977-03",
+      "title": "Identified as Gly-His-Lys",
+      "detail": "Sequencing showed the growth-modulating serum tripeptide to be glycyl-histidyl-lysine.",
+      "kind": "science"
+    },
+    {
+      "year": 1980,
+      "date": "1980-12",
+      "title": "Copper link established",
+      "detail": "Pickart and colleagues showed in Nature that GHK co-isolates with copper, readily forms copper(II) complexes and enhances copper uptake into cultured cells.",
+      "kind": "science"
+    },
+    {
+      "year": 1988,
+      "date": "1988-10",
+      "title": "Collagen synthesis in fibroblasts",
+      "detail": "Maquart, Pickart and colleagues found that GHK-Cu stimulates collagen synthesis by skin fibroblasts at picomolar to nanomolar concentrations.",
+      "kind": "science"
+    },
+    {
+      "year": 1992,
+      "date": "1992-08",
+      "title": "Venous ulcer trial negative",
+      "detail": "In a randomised, evaluator-blinded trial with 86 evaluable patients, a 0.4% tripeptide-copper cream was no better than placebo; silver sulfadiazine was superior.",
+      "kind": "trial"
+    },
+    {
+      "year": 1994,
+      "date": "1994-10",
+      "title": "Diabetic ulcer results diverge",
+      "detail": "A randomised study reported faster closure of diabetic plantar ulcers with ProCyte's Iamin gel, but in October 1994 the company said a larger 511-patient trial had failed to beat control.",
+      "kind": "trial"
+    },
+    {
+      "year": 1996,
+      "date": "1996-02-05",
+      "title": "Iamin cleared as a wound dressing",
+      "detail": "FDA cleared ProCyte's Iamin gel as a hydrogel wound dressing through the 510(k) device route (K953853, 'substantially equivalent for some indications'), without a claim that it heals wounds.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2006,
+      "date": "2006-07",
+      "title": "Laser-resurfacing trial",
+      "detail": "A small randomised trial of GHK-Cu skin care after CO2 laser resurfacing found no objective effect on redness or wrinkles.",
+      "kind": "trial"
+    },
+    {
+      "year": 2011,
+      "date": "2011-08",
+      "title": "Copper coordination defined",
+      "detail": "X-ray and spectroscopic studies by Hureau and colleagues confirmed how GHK coordinates copper(II) in crystals and in solution, and showed the complex is redox-inert under moderate conditions.",
+      "kind": "science"
+    },
+    {
+      "year": 2012,
+      "date": "2012-08",
+      "title": "Emphysema gene-signature study",
+      "detail": "Boston University researchers identified GHK via the Connectivity Map as reversing a lung-destruction gene signature and restoring collagen remodelling by COPD fibroblasts in vitro.",
+      "kind": "science"
+    },
+    {
+      "year": 2023,
+      "date": "2023-09-29",
+      "title": "Injectable GHK-Cu restricted",
+      "detail": "FDA placed GHK-Cu for injectable routes in Category 2 of its 503A bulk-substance list over immunogenicity and impurity concerns, while GHK-Cu for other routes was listed in Category 1 (under evaluation).",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2026,
+      "date": "2026-02-02",
+      "title": "Phase 2 wound trial starts",
+      "detail": "The CuHeal trial of a topical GHK-Cu gel on standardised skin wounds began enrolling 60 healthy adults in China.",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "date": "2026-04-22",
+      "title": "Removed from FDA categories",
+      "detail": "After nominations were withdrawn, FDA removed injectable GHK-Cu from Category 2 and non-injectable GHK-Cu from Category 1; removal from Category 2 did not by itself permit compounding.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2026,
+      "date": "2026-05",
+      "title": "Topical forms back in Category 1",
+      "detail": "After a nominator clarified on 5 May that it had meant to withdraw only the injectable route, FDA said non-injectable GHK-Cu would be added back to Category 1; FDA also plans to consult its compounding advisory committee on GHK-Cu before the end of February 2027.",
+      "kind": "regulatory"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Not an approved drug; legal as a cosmetic ingredient. Iamin gel was cleared as a wound dressing through the 510(k) device route in 1996. Injectable GHK-Cu was in 503A Category 2 from September 2023 to April 2026; non-injectable GHK-Cu is in Category 1, and the Pharmacy Compounding Advisory Committee is due to review GHK-Cu before the end of February 2027."
+    }
+  ],
+  "pk": {
+    "half_life": "Not characterised in humans"
+  },
+  "dosing": null,
+  "dosing_note": "No approved medicinal dose. Cosmetic products contain it at low concentrations; injectable amounts promoted online are not based on clinical trials.",
+  "safety": {
+    "common": [],
+    "serious": [],
+    "warnings": [
+      "Injectable GHK-Cu is unapproved; FDA cited possible immunogenicity from aggregation and peptide-related impurities and limited human safety data",
+      "Unlicensed 'research' products may be mislabelled, contaminated or non-sterile, and their copper content is not controlled"
+    ],
+    "notes": "Topical products have a long history of cosmetic use, and the 1990s wound-gel trials reported no safety concerns, but systematic safety data are lacking and there are no clinical studies of injected GHK-Cu."
+  },
+  "market": null,
+  "facts": [
+    "The GHK sequence is embedded in the α2 chain of type I collagen and in the matrix protein SPARC, and proteolysis of SPARC has been shown to release it.",
+    "At equal concentrations GHK captured about 42% of the copper from albumin in equilibrium-dialysis experiments (1981).",
+    "A copper-binding GHK tag has been proposed as an aid to protein crystallisation and phasing in X-ray crystallography (2020).",
+    "Pickart reported that plasma GHK levels fall from about 200 ng/mL at age 20 to about 80 ng/mL by age 60."
+  ],
+  "related": [
+    "bpc-157",
+    "tb-500",
+    "kpv",
+    "ll-37",
+    "melanotan-ii",
+    "epitalon"
+  ],
+  "references": [
+    {
+      "title": "Tripeptide in human serum which prolongs survival of normal liver cells and stimulates growth in neoplastic liver",
+      "authors": "Pickart L, Thaler MM",
+      "journal": "Nat New Biol",
+      "year": 1973,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/4349963/"
+    },
+    {
+      "title": "Growth-modulating serum tripeptide is glycyl-histidyl-lysine",
+      "authors": "Schlesinger DH, Pickart L, Thaler MM",
+      "journal": "Experientia",
+      "year": 1977,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/858356/"
+    },
+    {
+      "title": "Growth-modulating plasma tripeptide may function by facilitating copper uptake into cells",
+      "authors": "Pickart L, Freedman JH, Loker WJ, et al.",
+      "journal": "Nature",
+      "year": 1980,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7453802/"
+    },
+    {
+      "title": "Stimulation of collagen synthesis in fibroblast cultures by the tripeptide-copper complex glycyl-L-histidyl-L-lysine-Cu2+",
+      "authors": "Maquart FX, Pickart L, Laurent M, et al.",
+      "journal": "FEBS Lett",
+      "year": 1988,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3169264/"
+    },
+    {
+      "title": "A prospective randomized evaluator-blinded trial of two potential wound healing agents for the treatment of venous stasis ulcers",
+      "authors": "Bishop JB, Phillips LG, Mustoe TA, et al.",
+      "journal": "J Vasc Surg",
+      "year": 1992,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1495150/"
+    },
+    {
+      "title": "Enhanced healing of ulcers in patients with diabetes by topical treatment with glycyl-l-histidyl-l-lysine copper",
+      "authors": "Mulder GD, Patt LM, Sanders L, et al.",
+      "journal": "Wound Repair Regen",
+      "year": 1994,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17147644/"
+    },
+    {
+      "title": "Effects of topical copper tripeptide complex on CO2 laser-resurfaced skin",
+      "authors": "Miller TR, Wagner JD, Baack BR, Eisbach KJ",
+      "journal": "Arch Facial Plast Surg",
+      "year": 2006,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16847171/"
+    },
+    {
+      "title": "X-ray and solution structures of Cu(II) GHK and Cu(II) DAHK complexes: influence on their redox properties",
+      "authors": "Hureau C, Eury H, Guillot R, et al.",
+      "journal": "Chemistry",
+      "year": 2011,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21780203/"
+    },
+    {
+      "title": "A gene expression signature of emphysema-related lung destruction and its reversal by the tripeptide GHK",
+      "authors": "Campbell JD, McDonough JE, Zeskind JE, et al.",
+      "journal": "Genome Med",
+      "year": 2012,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22937864/"
+    },
+    {
+      "title": "GHK-Cu as a bioactive metallopeptide and drug-delivery cargo: coordination chemistry, formulation science, therapeutic evidence, and a translational roadmap",
+      "authors": "Mateescu DM, Gavrilescu DM, Mincioaga RI, et al.",
+      "journal": "Pharmaceutics",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42797253/"
+    }
+  ]
+}

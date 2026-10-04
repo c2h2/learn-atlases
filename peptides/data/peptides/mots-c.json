@@ -1,0 +1,135 @@
+{
+  "slug": "mots-c",
+  "name": "MOTS-c",
+  "aliases": ["Mitochondrial open reading frame of the 12S rRNA-c", "MOTSc", "Mitochondria-derived peptide MOTS-c"],
+  "category": "longevity",
+  "drug_class": "Mitochondrial-derived peptide",
+  "subclass": "16-residue peptide encoded in the mitochondrial 12S rRNA gene (MT-RNR1); AMPK-activating metabolic regulator in animal studies",
+  "status": "clinical",
+  "status_note": "Not approved anywhere. A phase 2a trial of MOTS-c itself began in China in 2026 and CohBar's analogue CB4211 completed phase 1 in 2021; outside trials it circulates as an unregulated 'research' peptide.",
+  "evidence": 2,
+  "evidence_note": "The metabolic and physical-performance effects come from mice and cultured cells. Human data are limited to observational studies of blood and muscle levels, which point in different directions, and a 4-week phase 1b trial of the analogue CB4211 in 20 people; no controlled trial of MOTS-c itself has reported results.",
+  "tagline": "A 16-amino-acid peptide encoded in mitochondrial DNA, studied as an exercise mimetic",
+  "summary": "MOTS-c is a 16-amino-acid peptide encoded in mitochondrial DNA rather than in the cell nucleus, inside the gene for the 12S ribosomal RNA. In mice it acts mainly on skeletal muscle, activating the energy sensor AMPK, preventing diet-induced obesity and insulin resistance and improving physical capacity in old animals, which has earned it the label 'exercise mimetic'. None of these effects has been shown in people, yet it is sold online as a weight-loss and anti-ageing injection and is banned in sport.",
+  "overview": [
+    "Mitochondria carry their own small genome, long thought to encode only 13 proteins plus the RNAs needed to make them. The discovery of humanin in 2001 showed that short open reading frames hidden in mitochondrial DNA can encode active peptides, and in 2015 Changhan Lee, Pinchas Cohen and colleagues at the University of Southern California reported a second one: MOTS-c (mitochondrial open reading frame of the 12S rRNA-c), a 16-residue peptide encoded within the 12S ribosomal RNA gene. Read with the mitochondrial genetic code the sequence gives tandem start and stop codons, so the peptide is thought to be translated in the cytoplasm from an exported transcript. It is detectable in human and rodent plasma, and its first 11 residues are highly conserved across the 14 species examined.",
+    "In mice, MOTS-c injections prevented age-dependent and high-fat-diet-induced insulin resistance and diet-induced obesity. A 2021 study found that it improved physical performance in young, middle-aged and old mice, that intermittent treatment started late in life increased physical capacity and healthspan, and that exercise raises MOTS-c levels in human muscle and blood; together with its AMPK-activating action, this is why it is often called an exercise mimetic. Rodent studies have also reported protection against bone loss after ovariectomy and against muscle atrophy.",
+    "Human evidence is thin. Circulating MOTS-c falls with age in men even as muscle levels rise; levels were lower in people with type 2 diabetes in one study but higher in people with metabolic syndrome and fatty liver in another. A mitochondrial DNA variant found in Northeast Asian populations (m.1382A>C) changes lysine 14 to glutamine; in cohorts totalling 27,527 people it was associated with more type 2 diabetes in men, especially inactive men, and the variant peptide lacked the metabolic effects of normal MOTS-c in mice. The only completed interventional study used CohBar's optimised analogue CB4211: over four weeks in 20 people with obesity and fatty liver, liver enzymes and glucose fell more than with placebo, but liver fat fell by a similar amount in both groups. CohBar announced its liquidation in 2023, and a 120-person phase 2a trial of MOTS-c itself began in Shenzhen, China, in 2026.",
+    "Marketing by websites, clinics and social-media influencers has turned MOTS-c into a popular injectable 'weight-loss', body-building and 'longevity' peptide, sold as 'research use only' vials or through compounding clinics. WADA has named it on the Prohibited List since 2024. The US FDA placed it in Category 2 of its compounding list in September 2023, citing immunogenicity and impurity risks and the absence of human exposure data; it was removed in April 2026 after the nomination was withdrawn, and in July 2026 an FDA advisory committee voted 7–5 to recommend allowing pharmacy compounding, against the advice of FDA reviewers. Adding it to the list still requires formal rulemaking."
+  ],
+  "mechanism": [
+    "In cell studies MOTS-c inhibits the methionine–folate cycle: 5-methyltetrahydrofolate falls, de novo purine synthesis stalls and the purine intermediate AICAR builds up (more than 20-fold in cells overexpressing the peptide). AICAR mimics AMP and activates AMP-activated protein kinase (AMPK), the cell's energy sensor, increasing glucose uptake and glycolytic flux. In mice, skeletal muscle is the main responsive tissue.",
+    "Under metabolic stress such as glucose restriction, MOTS-c moves into the nucleus in an AMPK-dependent way and regulates nuclear genes, including those with antioxidant response elements, interacting with stress-responsive transcription factors such as NRF2. A 2024 study reported that it binds the catalytic α subunit of protein kinase CK2 with nanomolar affinity and activates CK2 in muscle, and that the K14Q variant binds CK2 poorly. These mechanisms come from cells and mice and have not been confirmed in humans."
+  ],
+  "origin": "Encoded by a short open reading frame in the mitochondrial 12S ribosomal RNA gene (MT-RNR1); the transcript is thought to be translated in the cytoplasm",
+  "discovery": {"year": 2015, "by": "Changhan Lee, Pinchas Cohen and colleagues", "where": "Leonard Davis School of Gerontology, University of Southern California, Los Angeles, USA", "note": "Found by searching mitochondrial DNA for further short open reading frames after humanin and published in Cell Metabolism in March 2015 (GenBank KP715230). CohBar's SEC filings date the discovery to 2012."},
+  "first_human_year": 2026,
+  "first_approval": null,
+  "developer": "University of Southern California (discovery); CohBar Inc. developed the analogue CB4211",
+  "brands": [],
+  "analogs": [
+    {"name": "CB4211", "note": "CohBar's optimised MOTS-c analogue; completed a phase 1a/1b trial for fatty liver disease and obesity (2018–2021) before CohBar announced its liquidation in 2023."},
+    {"name": "K14Q MOTS-c", "note": "Natural variant produced by the m.1382A>C mitochondrial DNA polymorphism found in Northeast Asian populations; reduced activity in mice and weaker binding to CK2."}
+  ],
+  "targets": [
+    {"name": "5′-AMP-activated protein kinase (AMPK), catalytic α1 subunit", "gene": "PRKAA1", "uniprot": "Q13131", "action": "Indirect activation through folate-cycle inhibition and AICAR accumulation (cells and mice)"},
+    {"name": "Casein kinase 2 (CK2), catalytic α subunit", "gene": "CSNK2A1", "uniprot": "P68400", "action": "Direct binding and activation reported (cell-free assays and mice, 2024)"},
+    {"name": "Nuclear factor erythroid 2-related factor 2 (NRF2)", "gene": "NFE2L2", "uniprot": "Q16236", "action": "Interacts in the nucleus under metabolic stress (cell studies)"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["M","R","W","Q","E","M","G","Y","I","F","Y","P","R","K","L","R"], "n_term": "H", "c_term": "OH"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A14", "type": "other", "label": "Lys14 becomes Gln in carriers of the m.1382A>C mitochondrial DNA variant found in Northeast Asian populations (K14Q MOTS-c), which is less active in mice", "short": "K14Q variant"}
+    ],
+    "notation": "H-Met-Arg-Trp-Gln-Glu-Met-Gly-Tyr-Ile-Phe-Tyr-Pro-Arg-Lys-Leu-Arg-OH",
+    "note": "Human sequence (UniProt A0A0C5B5G6; GenBank KP715230). Unmodified linear peptide; research material is supplied as the free peptide or as acetate or trifluoroacetate salts."
+  },
+  "formula": "C101H152N28O22S2",
+  "mw": 2174.6,
+  "half_life": "Not established in humans",
+  "half_life_hours": null,
+  "routes": ["Subcutaneous injection (clinical trials and unregulated self-injection)"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 146675088,
+    "notes": "No experimental structure of MOTS-c has been deposited in the Protein Data Bank; the site shows a predicted model."
+  },
+  "ids": {"pubchem_cid": 146675088, "cas": "1627580-64-6", "unii": "A5CV6JFB78", "uniprot": "A0A0C5B5G6"},
+  "wiki": "MOTS-c",
+  "queries": {
+    "pubmed": "(\"MOTS-c\"[tiab] OR \"MOTSc\"[tiab] OR \"mitochondrial open reading frame of the 12S rRNA\"[tiab])",
+    "ctgov": "MOTS-c OR CB4211"
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Prediabetes with overweight or obesity", "stage": "Phase 2a — recruiting (2026)", "detail": "MOTS-MET, a 12-week randomised, placebo-controlled trial of subcutaneous MOTS-c in about 120 adults at Peking University Shenzhen Hospital (sponsor: Hudson Biotech), measures insulin sensitivity; primary completion is expected in 2027."},
+      {"use": "Fatty liver disease (NASH) and obesity", "stage": "Phase 1b — completed (2021); developer wound down (2023)", "detail": "CohBar's analogue CB4211 lowered ALT (−21% vs −4%), AST (−28% vs −11%) and glucose versus placebo over 4 weeks in 20 people with obesity and fatty liver, but the reduction in liver fat was no larger than with placebo."}
+    ],
+    "off_label": [
+      {"use": "Weight loss and body composition", "detail": "Promoted by websites, clinics and influencers as an injectable fat-loss and body-building peptide; sold online as 'research use only' vials or supplied through compounding clinics.", "evidence": "Based on mouse studies; no controlled human trial of MOTS-c has reported results. Identity, purity and sterility of grey-market products are not assured."},
+      {"use": "Longevity and 'exercise mimetic' use", "detail": "Taken in longevity and biohacking circles because of the mouse healthspan and physical-capacity studies, sometimes combined with other peptides ('stacking').", "evidence": "No human data on ageing or performance outcomes; long-term safety is unknown. Prohibited in sport."}
+    ]
+  },
+  "history": [
+    {"year": 2015, "date": "2015-03-03", "title": "MOTS-c described", "detail": "Lee, Cohen and colleagues reported a 16-amino-acid peptide encoded in the mitochondrial 12S rRNA gene that improved insulin sensitivity and prevented diet-induced obesity in mice.", "kind": "discovery"},
+    {"year": 2015, "title": "Longevity link proposed", "detail": "Researchers suggested that m.1382A>C, a Northeast Asian mitochondrial DNA variant that alters MOTS-c, might contribute to the exceptional longevity of Japanese people.", "kind": "science"},
+    {"year": 2016, "title": "Bone-loss study in mice", "detail": "MOTS-c suppressed bone loss after ovariectomy in mice through AMPK activation.", "kind": "science"},
+    {"year": 2018, "date": "2018-07", "title": "Signalling to the nucleus", "detail": "Under metabolic stress MOTS-c moved into the nucleus and regulated nuclear genes, suggesting that the mitochondrial genome can signal directly to the nuclear genome.", "kind": "science"},
+    {"year": 2018, "date": "2018-07", "title": "First human trial of an analogue", "detail": "CohBar began a phase 1a/1b study of CB4211, an optimised MOTS-c analogue, in healthy volunteers and people with fatty liver disease.", "kind": "trial"},
+    {"year": 2018, "date": "2018-11", "title": "CB4211 trial paused", "detail": "CohBar temporarily suspended dosing to deal with unexpectedly persistent injection-site reactions; the study later resumed and completed its phase 1b stage.", "kind": "safety"},
+    {"year": 2021, "date": "2021-01-19", "title": "Diabetes-linked variant", "detail": "The K14Q MOTS-c variant was associated with more type 2 diabetes in men in cohorts totalling 27,527 people, and the variant peptide failed to curb weight gain in mice.", "kind": "science"},
+    {"year": 2021, "date": "2021-01-20", "title": "An exercise-induced regulator of ageing", "detail": "MOTS-c improved physical performance in young, middle-aged and old mice and late-life treatment increased healthspan; in people, exercise raised MOTS-c in muscle and blood.", "kind": "science"},
+    {"year": 2021, "date": "2021-08-10", "title": "CB4211 phase 1b results", "detail": "Four weeks of CB4211 lowered liver enzymes and glucose more than placebo in 20 people with obesity and fatty liver, but liver fat fell similarly in both groups; injection-site reactions were the main side effect.", "kind": "trial"},
+    {"year": 2023, "date": "2023-09-29", "title": "FDA restricts compounding", "detail": "FDA placed MOTS-c in Category 2 of its 503A bulk-substance list, citing immunogenicity and impurity risks and no human exposure data, effectively barring US pharmacies from compounding it.", "kind": "regulatory"},
+    {"year": 2023, "date": "2023-11-01", "title": "CohBar winds down", "detail": "After its planned merger with Morphogenesis collapsed, CohBar announced that it would liquidate and dissolve, ending the main commercial MOTS-c programme.", "kind": "market"},
+    {"year": 2024, "date": "2024-01-01", "title": "Named on WADA Prohibited List", "detail": "MOTS-c was added as a named example of a prohibited hormone and metabolic modulator, banned in sport at all times.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-02-02", "title": "Phase 2a trial of MOTS-c begins", "detail": "MOTS-MET, a 12-week placebo-controlled trial in about 120 adults with prediabetes and overweight or obesity, started at Peking University Shenzhen Hospital.", "kind": "trial"},
+    {"year": 2026, "date": "2026-04-22", "title": "Removed from FDA Category 2", "detail": "After HHS Secretary Robert F. Kennedy Jr promised to ease peptide restrictions, FDA removed MOTS-c and 11 other peptides from Category 2 because their nominations had been withdrawn; this did not by itself permit compounding.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-07-23", "title": "FDA advisers back compounding", "detail": "The Pharmacy Compounding Advisory Committee voted 7–5, with two abstentions, to add MOTS-c to the 503A bulks list for obesity and osteoporosis, although FDA reviewers had recommended against it; FDA must still propose a rule.", "kind": "regulatory"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "not-approved", "detail": "Not approved by FDA. In Category 2 of the 503A compounding list from September 2023 to April 2026; in July 2026 FDA's advisory committee voted 7–5 to recommend adding it to the 503A bulks list, which requires rulemaking before pharmacies may compound it."},
+    {"region": "China", "status": "investigational", "detail": "Phase 2a trial (MOTS-MET) under way at Peking University Shenzhen Hospital since February 2026."},
+    {"region": "WADA", "status": "prohibited", "detail": "Named on the Prohibited List since 2024 under S4 (hormone and metabolic modulators) and, from the 2025 list, as an example of an AMPK activator; prohibited at all times."}
+  ],
+  "pk": {
+    "half_life": "Not established in humans; no pharmacokinetic data for MOTS-c itself have been published"
+  },
+  "dosing": null,
+  "dosing_note": "No approved or clinically established human dose. The only published human data are for the analogue CB4211, and results of the MOTS-c phase 2a trial are pending; amounts promoted online are not based on clinical evidence.",
+  "safety": {
+    "common": ["Injection-site reactions (the main adverse event with the analogue CB4211)"],
+    "serious": [],
+    "warnings": [
+      "FDA has flagged potential immunogenicity and peptide-impurity risks for compounded MOTS-c and found no human exposure data (2023)",
+      "Grey-market products are not made to pharmaceutical standards, so identity, purity and sterility are not assured",
+      "Prohibited at all times in sport (WADA)"
+    ],
+    "notes": "Human safety data are minimal. CohBar paused its CB4211 trial in 2018 because injection-site reactions were unexpectedly persistent. USADA reports that users have described a raised heart rate or palpitations, injection-site irritation, insomnia, local or generalised immune reactions and fever; effects of long-term use are unknown."
+  },
+  "market": null,
+  "facts": [
+    "The name stands for 'mitochondrial open reading frame of the 12S rRNA-c': the peptide is encoded inside the gene for a ribosomal RNA.",
+    "Read with the mitochondrial genetic code, the MOTS-c sequence gives start and stop codons in tandem, so the peptide is thought to be made in the cytoplasm from an exported transcript.",
+    "A single-letter change common in Northeast Asia (K14Q) weakens the peptide's activity in mice and has been linked to type 2 diabetes risk in men.",
+    "MOTS-c was named on WADA's Prohibited List before any controlled trial of the peptide itself had reported results."
+  ],
+  "related": ["humanin", "ss-31", "epitalon", "bpc-157", "tb-500", "kpv", "aod-9604"],
+  "references": [
+    {"title": "The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance", "authors": "Lee C, Zeng J, Drew BG, et al.", "journal": "Cell Metab", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/25738459/"},
+    {"title": "The mitochondrial-encoded peptide MOTS-c translocates to the nucleus to regulate nuclear gene expression in response to metabolic stress", "authors": "Kim KH, Son JM, Benayoun BA, Lee C", "journal": "Cell Metab", "year": 2018, "url": "https://pubmed.ncbi.nlm.nih.gov/29983246/"},
+    {"title": "MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis", "authors": "Reynolds JC, Lai RW, Woodhead JST, et al.", "journal": "Nat Commun", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/33473109/"},
+    {"title": "A pro-diabetogenic mtDNA polymorphism in the mitochondrial-derived peptide, MOTS-c", "authors": "Zempo H, Kim SJ, Fuku N, et al.", "journal": "Aging (Albany NY)", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/33468709/"},
+    {"title": "Increased expression of the mitochondrial derived peptide, MOTS-c, in skeletal muscle of healthy aging men is associated with myofiber composition", "authors": "D'Souza RF, Woodhead JST, Hedges CP, et al.", "journal": "Aging (Albany NY)", "year": 2020, "url": "https://pubmed.ncbi.nlm.nih.gov/32182209/"},
+    {"title": "Mitochondrial-derived peptides are down regulated in diabetes subjects", "authors": "Ramanjaneya M, Bettahi I, Jerobin J, et al.", "journal": "Front Endocrinol (Lausanne)", "year": 2019, "url": "https://pubmed.ncbi.nlm.nih.gov/31214116/"},
+    {"title": "Plasma mitochondrial derived peptides MOTS-c and SHLP2 positively associate with android and liver fat in people without diabetes", "authors": "Sequeira IR, Woodhead JST, Chan A, et al.", "journal": "Biochim Biophys Acta Gen Subj", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34419510/"},
+    {"title": "MOTS-c modulates skeletal muscle function by directly binding and activating CK2", "authors": "Kumagai H, Kim SJ, Miller B, et al.", "journal": "iScience", "year": 2024, "url": "https://pubmed.ncbi.nlm.nih.gov/39559755/"},
+    {"title": "CohBar announces positive topline results from the Phase 1a/1b study of CB4211 under development for NASH and obesity", "authors": "CohBar, Inc.", "journal": "Company press release (GlobeNewswire)", "year": 2021, "url": "https://www.globenewswire.com/news-release/2021/08/10/2278324/0/en/CohBar-Announces-Positive-Topline-Results-from-the-Phase-1a-1b-Study-of-CB4211-Under-Development-for-NASH-and-Obesity.html"},
+    {"title": "July 23–24, 2026: Meeting of the Pharmacy Compounding Advisory Committee", "authors": "US Food and Drug Administration", "journal": "FDA advisory committee calendar", "year": 2026, "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/july-23-24-2026-meeting-pharmacy-compounding-advisory-committee-07232026"}
+  ]
+}

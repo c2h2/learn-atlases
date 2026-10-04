@@ -1,0 +1,446 @@
+{
+  "slug": "oxytocin",
+  "name": "Oxytocin",
+  "aliases": [
+    "Ocytocin",
+    "α-Hypophamine",
+    "OXT"
+  ],
+  "category": "hormone",
+  "drug_class": "Oxytocin receptor agonist (uterotonic)",
+  "subclass": "Cyclic nonapeptide neurohypophysial hormone",
+  "status": "approved",
+  "status_note": "Synthetic oxytocin is used worldwide to induce or augment labour and to prevent and treat postpartum haemorrhage, and is on the WHO Model List of Essential Medicines; it predates modern approval systems, so no single first-approval date applies.",
+  "evidence": 5,
+  "evidence_note": "Decades of obstetric use and very large randomised trials, including the 29,645-woman CHAMPION trial against heat-stable carbetocin; evidence for psychiatric and social uses is weak or negative.",
+  "tagline": "The nine-amino-acid birth hormone used to induce labour and stop postpartum bleeding",
+  "summary": "Oxytocin is a nine-amino-acid hormone made in the hypothalamus and released from the posterior pituitary gland; it triggers uterine contractions in labour and milk let-down during breastfeeding. Its 1953 synthesis was the first of any polypeptide hormone and earned Vincent du Vigneaud the 1955 Nobel Prize in Chemistry. Synthetic oxytocin is one of the most widely used drugs in obstetrics, while its fame as a 'love hormone' has fuelled research into social behaviour that has not produced approved psychiatric uses.",
+  "overview": [
+    "In 1906 the physiologist Henry Dale reported that extracts of the posterior pituitary gland made the uterus contract. In 1928 Oliver Kamm and colleagues separated the gland's oxytocic principle ('α-hypophamine', sold as Pitocin) from its blood-pressure-raising principle ('β-hypophamine', vasopressin, sold as Pitressin), and the two hormones were studied side by side from then on.",
+    "In 1953 Hans Tuppy and Vincent du Vigneaud's group independently worked out its sequence, Cys-Tyr-Ile-Gln-Asn-Cys-Pro-Leu-Gly-NH2, with a disulfide bond closing a six-residue ring. Du Vigneaud's team then synthesised an octapeptide amide with the hormonal activity of oxytocin, the first chemical synthesis of a polypeptide hormone, for which he received the 1955 Nobel Prize in Chemistry.",
+    "Synthetic oxytocin (Pitocin, Syntocinon and many generics) is given by intravenous infusion to induce or strengthen labour and by injection after delivery to prevent and treat postpartum haemorrhage. Oxytocin can degrade in heat, so its quality suffers where a cold chain cannot be maintained. A heat-stable formulation of the longer-acting analogue carbetocin was therefore developed; the CHAMPION trial (2018) found it non-inferior to oxytocin for preventing blood loss of at least 500 ml after vaginal birth, and WHO recommends it where cold storage cannot be assured.",
+    "From the 1990s, studies in prairie voles and humans linked oxytocin to pair bonding, maternal behaviour and trust, and intranasal oxytocin became a popular research tool. Larger trials have been disappointing: the 2021 SOARS-B trial in 290 children and adolescents with autism found no benefit on social function, in 2023 prairie voles lacking the oxytocin receptor still formed pair bonds, and in 2025 a carbetocin nasal spray failed in a phase 3 trial for hyperphagia in Prader–Willi syndrome."
+  ],
+  "mechanism": [
+    "Oxytocin activates the oxytocin receptor (OXTR), a G protein-coupled receptor that signals mainly through Gq to release calcium inside smooth-muscle cells. A magnesium ion coordinated between the hormone and the receptor is needed for full activation. The uterus becomes far more sensitive near term, when receptor concentrations are higher, so small infusions produce rhythmic contractions; in the breast it contracts the cells around milk ducts, causing milk let-down.",
+    "Released within the brain, oxytocin acts as a neuromodulator in circuits for social recognition, maternal care and bonding in animals, although results with intranasal oxytocin in humans have been inconsistent. Because it closely resembles vasopressin, oxytocin has an inherent antidiuretic effect, and large doses infused for long periods can cause water intoxication with seizures."
+  ],
+  "origin": "Natural hormone made in hypothalamic neurons (supraoptic and paraventricular nuclei) as part of the oxytocin–neurophysin I precursor and released from the posterior pituitary",
+  "discovery": {
+    "year": 1906,
+    "by": "Henry Dale",
+    "where": "London, UK",
+    "note": "Dale observed the uterus-contracting action of posterior pituitary extract while studying ergot; the hormone's name comes from Greek for 'quick birth'. Its sequence and synthesis followed in 1953."
+  },
+  "first_human_year": 1909,
+  "first_approval": null,
+  "developer": "Natural hormone; first synthesised by Vincent du Vigneaud's group (1953); made by many manufacturers",
+  "brands": [
+    {
+      "name": "Pitocin",
+      "company": "Par Health (US)",
+      "route": "Intravenous infusion; intramuscular injection after delivery",
+      "use": "Induction and augmentation of labour; third stage of labour and postpartum haemorrhage",
+      "approved": "1980-11-19",
+      "agency": "FDA"
+    }
+  ],
+  "analogs": [
+    {
+      "name": "Carbetocin",
+      "note": "Longer-acting agonist (deamino, carba-bridged, O-methyl-tyrosine); a heat-stable formulation was non-inferior to oxytocin for preventing postpartum haemorrhage in the CHAMPION trial and is recommended by WHO where cold storage cannot be assured. An intranasal form (ACP-101) failed in Prader–Willi syndrome in 2025."
+    },
+    {
+      "name": "Atosiban",
+      "note": "Oxytocin/vasopressin receptor antagonist authorised in the EU since 2000 (Tractocile) to delay imminent preterm birth."
+    },
+    {
+      "name": "Vasopressin",
+      "note": "Sister hormone differing at positions 3 and 8 (Phe for Ile, Arg for Leu); acts mainly on vasopressin receptors to control water balance and blood pressure."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Oxytocin receptor",
+      "gene": "OXTR",
+      "uniprot": "P30559",
+      "action": "Agonist"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "C",
+          "Y",
+          "I",
+          "Q",
+          "N",
+          "C",
+          "P",
+          "L",
+          "G"
+        ],
+        "n_term": "H",
+        "c_term": "NH2"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [
+      {
+        "from": "A1",
+        "to": "A6",
+        "type": "disulfide"
+      }
+    ],
+    "modifications": [],
+    "notation": "H-Cys-Tyr-Ile-Gln-Asn-Cys-Pro-Leu-Gly-NH2 (Cys1–Cys6 disulfide)",
+    "note": "A six-residue ring closed by the Cys1–Cys6 disulfide carries a three-residue tail ending in glycinamide. The hormone is cut from a larger precursor that also contains the carrier protein neurophysin I."
+  },
+  "formula": "C43H66N12O12S2",
+  "mw": 1007.2,
+  "half_life": "≈ 1–6 min in plasma",
+  "half_life_hours": 0.05,
+  "routes": [
+    "Intravenous infusion (labour induction or augmentation)",
+    "Intramuscular or intravenous injection (third stage of labour, postpartum haemorrhage)",
+    "Intranasal (research use)"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "7RYC",
+        "title": "Oxytocin bound to the oxytocin receptor in complex with Gq protein",
+        "method": "Cryo-EM",
+        "resolution": 2.9,
+        "year": 2022,
+        "peptide_chain": "L",
+        "note": "Active-state structure showing a magnesium ion coordinated between oxytocin and the receptor"
+      },
+      {
+        "id": "7QVM",
+        "title": "Human oxytocin receptor–oxytocin complex with a Gq chimera",
+        "method": "Cryo-EM",
+        "resolution": 3.25,
+        "year": 2022,
+        "peptide_chain": "L",
+        "note": "Independent active-state structure from a second group"
+      },
+      {
+        "id": "1NPO",
+        "title": "Bovine neurophysin II in complex with oxytocin",
+        "method": "X-ray",
+        "resolution": 3.0,
+        "year": 1996,
+        "peptide_chain": "B",
+        "note": "Oxytocin bound to its carrier protein, which stores it in secretory granules"
+      },
+      {
+        "id": "2MGO",
+        "title": "NMR solution structure of oxytocin",
+        "method": "Solution NMR",
+        "year": 2013,
+        "peptide_chain": "A",
+        "note": "The free hormone in solution"
+      }
+    ],
+    "pubchem_cid": 439302,
+    "notes": "An inactive-state crystal structure of the receptor bound to the non-peptide antagonist retosiban (6TPK, 2020) preceded the hormone-bound cryo-EM structures."
+  },
+  "ids": {
+    "pubchem_cid": 439302,
+    "cas": "50-56-6",
+    "chembl": "CHEMBL395429",
+    "unii": "1JQS135EYN",
+    "kegg": "D00089",
+    "chebi": "CHEBI:7872",
+    "atc": "H01BB02",
+    "uniprot": "P01178",
+    "inn": "oxytocin"
+  },
+  "wiki": "Oxytocin",
+  "queries": {
+    "pubmed": "oxytocin[tiab]",
+    "ctgov": "oxytocin"
+  },
+  "uses": {
+    "approved": [
+      {
+        "use": "Induction and augmentation of labour",
+        "detail": "Low-dose intravenous infusion, titrated to the contraction pattern under continuous monitoring; in the US it is not indicated for purely elective induction.",
+        "where": "Worldwide"
+      },
+      {
+        "use": "Third stage of labour and postpartum haemorrhage",
+        "detail": "Given after delivery to contract the uterus and prevent or control bleeding; a WHO essential medicine for this purpose.",
+        "where": "Worldwide"
+      },
+      {
+        "use": "Adjunct after miscarriage or abortion",
+        "detail": "Helps the uterus contract after incomplete, inevitable or elective abortion.",
+        "where": "US and elsewhere"
+      }
+    ],
+    "investigational": [
+      {
+        "use": "Autism spectrum disorder",
+        "stage": "Phase 2 — negative (2021)",
+        "detail": "The 24-week SOARS-B trial of intranasal oxytocin in 290 children and adolescents found no improvement in social functioning compared with placebo."
+      },
+      {
+        "use": "Hyperphagia in Prader–Willi syndrome (carbetocin)",
+        "stage": "Phase 3 — failed (2025)",
+        "detail": "Intranasal carbetocin (ACP-101) did not beat placebo on hyperphagia or any secondary endpoint in the COMPASS PWS trial, and development was stopped."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Intranasal oxytocin for social or emotional effects",
+        "detail": "Interest in oxytocin as a 'love' or 'trust' hormone has led to intranasal use outside obstetrics, mainly in research settings.",
+        "evidence": "Early laboratory findings, such as increased trust in a 2005 economic game, have not translated into proven treatments; the largest controlled trial, in autistic children, was negative."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1906,
+      "date": "1906-05",
+      "title": "Uterus-contracting action discovered",
+      "detail": "Henry Dale reported that posterior pituitary extract caused the uterus to contract, during a study of ergot.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1909,
+      "date": "1909-12",
+      "title": "Pituitary extract used in childbirth",
+      "detail": "William Blair-Bell reported treating uterine atony and shock with posterior pituitary (infundibular) extract, the first clinical use of the hormone later identified as oxytocin.",
+      "kind": "trial"
+    },
+    {
+      "year": 1928,
+      "date": "1928-02",
+      "title": "Oxytocic and pressor principles separated",
+      "detail": "Oliver Kamm and colleagues separated posterior pituitary extract into an oxytocic fraction and a pressor (vasopressin) fraction.",
+      "kind": "science"
+    },
+    {
+      "year": 1953,
+      "date": "1953-07",
+      "title": "Sequence worked out",
+      "detail": "Hans Tuppy, and independently Vincent du Vigneaud's group later that year, determined the amino-acid sequence of oxytocin.",
+      "kind": "science"
+    },
+    {
+      "year": 1953,
+      "title": "First synthesis of a peptide hormone",
+      "detail": "Du Vigneaud's team synthesised an octapeptide amide with the hormonal activity of oxytocin, the first chemical synthesis of a polypeptide hormone.",
+      "kind": "science"
+    },
+    {
+      "year": 1955,
+      "title": "Nobel Prize for du Vigneaud",
+      "detail": "Vincent du Vigneaud received the Nobel Prize in Chemistry for work on biochemically important sulphur compounds, especially the first synthesis of a polypeptide hormone.",
+      "kind": "culture"
+    },
+    {
+      "year": 1992,
+      "date": "1992-04",
+      "title": "Oxytocin receptor cloned",
+      "detail": "Kimura and colleagues cloned the human oxytocin receptor, a G protein-coupled receptor.",
+      "kind": "science"
+    },
+    {
+      "year": 1994,
+      "date": "1994-06",
+      "title": "Link to pair bonding",
+      "detail": "Oxytocin given into the brain helped female prairie voles form a partner preference, a landmark in research on its role in social attachment.",
+      "kind": "science"
+    },
+    {
+      "year": 2005,
+      "date": "2005-06",
+      "title": "'Trust hormone' study",
+      "detail": "A Nature study reported that intranasal oxytocin increased trust in an economic game, popularising the idea of a 'trust hormone'.",
+      "kind": "culture"
+    },
+    {
+      "year": 2018,
+      "date": "2018-08",
+      "title": "CHAMPION trial",
+      "detail": "In 29,645 women in 10 countries, heat-stable carbetocin was non-inferior to oxytocin for preventing blood loss of at least 500 ml after vaginal birth.",
+      "kind": "trial"
+    },
+    {
+      "year": 2020,
+      "date": "2020-07",
+      "title": "Receptor crystal structure",
+      "detail": "A crystal structure of the human oxytocin receptor bound to the antagonist retosiban revealed a magnesium site that boosts agonist binding.",
+      "kind": "science"
+    },
+    {
+      "year": 2021,
+      "date": "2021-10",
+      "title": "Autism trial negative",
+      "detail": "The SOARS-B trial found that daily intranasal oxytocin for 24 weeks did not improve social functioning in 290 autistic children and adolescents.",
+      "kind": "trial"
+    },
+    {
+      "year": 2022,
+      "date": "2022-03",
+      "title": "Hormone–receptor structures",
+      "detail": "Cryo-EM structures of oxytocin bound to its receptor and Gq protein were published by two groups in 2022.",
+      "kind": "science"
+    },
+    {
+      "year": 2023,
+      "date": "2023-03",
+      "title": "Voles bond without the receptor",
+      "detail": "Prairie voles lacking the oxytocin receptor still formed pair bonds, challenging a simple 'bonding hormone' model.",
+      "kind": "science"
+    },
+    {
+      "year": 2025,
+      "date": "2025-09",
+      "title": "Carbetocin fails in Prader–Willi syndrome",
+      "detail": "Acadia's phase 3 COMPASS PWS trial of intranasal carbetocin missed its primary endpoint, and the programme was stopped.",
+      "kind": "trial"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "approved",
+      "detail": "Pitocin (NDA 018261) and generic oxytocin injections; the label states that it is not indicated for elective induction of labour and should be given for induction only intravenously under hospital supervision."
+    }
+  ],
+  "pk": {
+    "half_life": "About 1–6 minutes, shorter in late pregnancy and during lactation",
+    "tmax": "Uterine response almost immediately after intravenous dosing (subsiding within about 1 hour); within 3–5 minutes after intramuscular injection, lasting 2–3 hours",
+    "metabolism": "Rapidly removed from plasma, largely by the liver and kidneys",
+    "excretion": "Only small amounts excreted unchanged in urine"
+  },
+  "dosing": [
+    {
+      "product": "Pitocin (induction or augmentation of labour)",
+      "regimen": "Intravenous infusion of 10 units in 1000 ml (10 milliunits/ml) started at 0.5–1 milliunit/min and increased by 1–2 milliunits/min every 30–60 minutes until a satisfactory contraction pattern is reached; rates above 9–10 milliunits/min are rarely needed at term."
+    },
+    {
+      "product": "Pitocin (postpartum bleeding)",
+      "regimen": "10–40 units added to a running intravenous infusion and titrated to control uterine atony, or 10 units intramuscularly after delivery of the placenta."
+    }
+  ],
+  "dosing_note": "Labelled regimens summarised for reference only; oxytocin is given in hospital with continuous monitoring of contractions and fetal heart rate.",
+  "safety": {
+    "common": [
+      "Nausea",
+      "Vomiting"
+    ],
+    "serious": [
+      "Uterine hypertonicity, tetanic contraction or rupture",
+      "Fetal bradycardia, arrhythmias, brain damage or death from excessive contractions",
+      "Water intoxication with seizures and coma from its antidiuretic effect during prolonged high-dose infusion",
+      "Anaphylactic reactions",
+      "Maternal cardiac arrhythmias and hypertensive episodes",
+      "Postpartum haemorrhage, pelvic haematoma and fatal afibrinogenaemia",
+      "Subarachnoid haemorrhage",
+      "Neonatal jaundice, retinal haemorrhage and seizures"
+    ],
+    "warnings": [
+      "For labour induction, give only by intravenous infusion with adequate medical supervision in hospital",
+      "Contraindicated in significant cephalopelvic disproportion, unfavourable fetal positions, fetal distress when delivery is not imminent, a hyperactive uterus and when vaginal delivery is contraindicated",
+      "Not indicated in the US for elective induction of labour"
+    ],
+    "notes": "Dosing is individualised and started at very low levels. Severe water intoxication has occurred even with slow infusion over 24 hours, and maternal deaths from oxytocin-induced water intoxication have been reported."
+  },
+  "market": null,
+  "facts": [
+    "Oxytocin and vasopressin differ at only two of their nine amino acids.",
+    "Du Vigneaud's 1953 synthesis was the first chemical synthesis of a polypeptide hormone.",
+    "The name comes from Greek words meaning 'quick birth'.",
+    "The CHAMPION trial of an oxytocin alternative enrolled 29,645 women in 10 countries."
+  ],
+  "related": [
+    "vasopressin",
+    "kisspeptin"
+  ],
+  "references": [
+    {
+      "title": "On some physiological actions of ergot",
+      "authors": "Dale HH",
+      "journal": "J Physiol",
+      "year": 1906,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16992821/"
+    },
+    {
+      "title": "The amino-acid sequence in oxytocin",
+      "authors": "Tuppy H",
+      "journal": "Biochim Biophys Acta",
+      "year": 1953,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/13093758/"
+    },
+    {
+      "title": "The sequence of amino acids in oxytocin, with a proposal for the structure of oxytocin",
+      "authors": "du Vigneaud V, Ressler C, Trippett S",
+      "journal": "J Biol Chem",
+      "year": 1953,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/13129273/"
+    },
+    {
+      "title": "The synthesis of an octapeptide amide with the hormonal activity of oxytocin",
+      "authors": "du Vigneaud V, Ressler C, Swan JM, et al.",
+      "journal": "J Am Chem Soc",
+      "year": 1953,
+      "url": "https://doi.org/10.1021/ja01115a553"
+    },
+    {
+      "title": "Structure and expression of a human oxytocin receptor",
+      "authors": "Kimura T, Tanizawa O, Mori K, et al.",
+      "journal": "Nature",
+      "year": 1992,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1313946/"
+    },
+    {
+      "title": "Oxytocin increases trust in humans",
+      "authors": "Kosfeld M, Heinrichs M, Zak PJ, et al.",
+      "journal": "Nature",
+      "year": 2005,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15931222/"
+    },
+    {
+      "title": "Heat-stable carbetocin versus oxytocin to prevent hemorrhage after vaginal birth",
+      "authors": "Widmer M, Piaggio G, Nguyen TMH, et al.",
+      "journal": "N Engl J Med",
+      "year": 2018,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29949473/"
+    },
+    {
+      "title": "Intranasal oxytocin in children and adolescents with autism spectrum disorder",
+      "authors": "Sikich L, Kolevzon A, King BH, et al.",
+      "journal": "N Engl J Med",
+      "year": 2021,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34644471/"
+    },
+    {
+      "title": "The oxytocin signaling complex reveals a molecular switch for cation dependence",
+      "authors": "Meyerowitz JG, Robertson MJ, Barros-Álvarez X, et al.",
+      "journal": "Nat Struct Mol Biol",
+      "year": 2022,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35241813/"
+    },
+    {
+      "title": "Oxytocin receptor is not required for social attachment in prairie voles",
+      "authors": "Berendzen KM, Sharma R, Mandujano MA, et al.",
+      "journal": "Neuron",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36708707/"
+    },
+    {
+      "title": "The pituitary body and the therapeutic value of the infundibular extract in shock, uterine atony, and intestinal paresis",
+      "authors": "Bell WB",
+      "journal": "Br Med J",
+      "year": 1909,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20764780/"
+    }
+  ]
+}

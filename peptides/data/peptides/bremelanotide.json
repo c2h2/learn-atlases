@@ -1,0 +1,146 @@
+{
+  "slug": "bremelanotide",
+  "name": "Bremelanotide (PT-141)",
+  "aliases": ["PT-141", "PT141"],
+  "category": "melanocortin",
+  "drug_class": "Melanocortin receptor agonist",
+  "subclass": "Cyclic lactam α-MSH(4–10) analogue; the C-terminal acid of melanotan II",
+  "status": "approved",
+  "status_note": "Approved by the FDA in June 2019 (Vyleesi) for acquired, generalised hypoactive sexual desire disorder in premenopausal women; 2017 licences for China and South Korea had not led to approval or launch as of 2024.",
+  "evidence": 4,
+  "evidence_note": "Approval rested on two 24-week phase 3 RECONNECT trials in 1,267 premenopausal women plus phase 2 studies; improvements in desire and distress were statistically significant but small, and the validity of the outcome measures has been questioned.",
+  "tagline": "On-demand melanocortin injection for low sexual desire in premenopausal women",
+  "summary": "Bremelanotide is a seven-amino-acid, ring-shaped peptide, almost identical to melanotan II, that activates melanocortin receptors in the brain. Sold as Vyleesi, it is self-injected under the skin at least 45 minutes before anticipated sexual activity by premenopausal women with hypoactive sexual desire disorder. About 40% of users have nausea, and each dose briefly raises blood pressure.",
+  "overview": [
+    "Bremelanotide was developed by Palatin Technologies of Cranbury, New Jersey, after the company licensed the University of Arizona's melanocortin sexual-dysfunction technology in 1998. It has the same cyclic Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys] structure as melanotan II but ends in a free carboxylic acid instead of an amide. Palatin scientists first described it in 2003, reporting erections in rats, monkeys and men, and most early trials used a nasal spray in men with erectile dysfunction and in women with sexual arousal disorder.",
+    "In August 2007 the FDA told Palatin and its partner King Pharmaceuticals that it had serious concerns about the benefit–risk balance of the erectile-dysfunction programme, questioning its efficacy and citing blood-pressure increases as its greatest safety concern. In May 2008 Palatin discontinued development of bremelanotide for sexual dysfunction. The drug was later revived as a 1.75 mg subcutaneous autoinjector for women with hypoactive sexual desire disorder (HSDD), in whom it is taken only as needed.",
+    "Two identical phase 3 RECONNECT trials (2015–2016) found small but statistically significant improvements in sexual desire and in distress about low desire compared with placebo. AMAG Pharmaceuticals licensed North American rights in January 2017 and won FDA approval on 21 June 2019. The licence was terminated in July 2020, and Palatin sold Vyleesi to Cosette Pharmaceuticals in December 2023. Critics have argued that the benefits are modest and rest on outcome measures with little validity evidence in HSDD.",
+    "Because MC4R activation reduces appetite, Palatin also tested bremelanotide as an add-on to incretin drugs: in an 8-week phase 2 study reported in March 2025, bremelanotide plus tirzepatide produced 4.4% weight loss against 1.6% with placebo, but the company has said it will not fund further development itself. Products labelled 'PT-141' are also sold by unregulated online vendors for libido."
+  ],
+  "mechanism": [
+    "Bremelanotide activates several melanocortin receptors; its US label gives the order of potency as MC1R > MC4R > MC3R > MC5R > MC2R, with MC1R and MC4R most relevant at therapeutic doses. How it increases sexual desire is not known, but MC4R-expressing neurons in the hypothalamus and other brain regions are thought to modulate sexual motivation, and in female rats a melanocortin agonist selectively increased sexual solicitation.",
+    "Activation of MC1R on melanocytes explains the focal hyperpigmentation seen with frequent dosing. Each dose also causes a transient rise in blood pressure (up to about 6 mmHg systolic and 3 mmHg diastolic, peaking 2–4 hours after injection) and a small fall in heart rate, which usually resolve within 12 hours."
+  ],
+  "origin": "Synthetic analogue of α-melanocyte-stimulating hormone; the free-acid counterpart of melanotan II",
+  "discovery": {"year": 2003, "by": "Palatin Technologies", "where": "Cranbury, New Jersey, USA", "note": "First described in the literature in 2003 (Molinoff et al.) as PT-141, a melanocortin agonist that produced erections in rats, non-human primates and men; it derives from the University of Arizona melanotan II work licensed to Palatin in 1998."},
+  "first_human_year": 2003,
+  "first_approval": {"date": "2019-06-21", "agency": "FDA", "region": "US", "brand": "Vyleesi", "indication": "Acquired, generalised hypoactive sexual desire disorder in premenopausal women"},
+  "developer": "Palatin Technologies (licensed to AMAG Pharmaceuticals 2017–2020; product sold to Cosette Pharmaceuticals in 2023)",
+  "brands": [
+    {"name": "Vyleesi", "company": "Cosette Pharmaceuticals (originally AMAG Pharmaceuticals and Palatin Technologies)", "route": "Subcutaneous autoinjector (1.75 mg), as needed", "use": "Acquired, generalised hypoactive sexual desire disorder in premenopausal women", "approved": "2019-06-21", "agency": "FDA"}
+  ],
+  "targets": [
+    {"name": "Melanocortin 1 receptor", "gene": "MC1R", "uniprot": "Q01726", "action": "Agonist (highest potency; skin pigmentation)"},
+    {"name": "Melanocortin 4 receptor", "gene": "MC4R", "uniprot": "P32245", "action": "Agonist (thought to mediate effects on sexual desire)"},
+    {"name": "Melanocortin 3 receptor", "gene": "MC3R", "uniprot": "P41968", "action": "Agonist"},
+    {"name": "Melanocortin 5 receptor", "gene": "MC5R", "uniprot": "P33032", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["Nle","D","H","f","R","W","K"], "n_term": "Ac", "c_term": "OH"}
+    ],
+    "numbering_offset": 3,
+    "cyclic": false,
+    "bridges": [{"from": "A2", "to": "A7", "type": "lactam"}],
+    "modifications": [
+      {"at": "A1", "type": "nonnatural", "label": "N-acetyl-norleucine at position 4 replaces the methionine of α-MSH", "short": "Ac-Nle4"},
+      {"at": "A2", "type": "other", "label": "The side chain of Asp5 forms a lactam (amide) bond with the side chain of Lys10, closing the ring", "short": "lactam"},
+      {"at": "A4", "type": "d-amino", "label": "D-phenylalanine at position 7 increases potency and resistance to proteolysis", "short": "D-Phe7"},
+      {"at": "A7", "type": "other", "label": "The C-terminal lysine carries a free carboxylic acid, the only structural difference from melanotan II (which has an amide)", "short": "Lys-OH"}
+    ],
+    "notation": "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-OH",
+    "note": "Residues are numbered 4–10 in the literature, following α-MSH. The drug product is the acetate salt."
+  },
+  "formula": "C50H68N14O10",
+  "mw": 1025.2,
+  "half_life": "≈ 2.7 h (range 1.9–4.0 h)",
+  "half_life_hours": 2.7,
+  "routes": ["Subcutaneous injection (autoinjector) into abdomen or thigh, as needed", "Intranasal (early trials, discontinued)"],
+  "structure": {
+    "pdb": [
+      {"id": "7F55", "title": "Bremelanotide bound to the melanocortin-4 receptor in complex with Gs protein", "method": "Cryo-EM", "resolution": 3.1, "year": 2021, "peptide_chain": "L", "note": "MC4R–Gs–Nb35 complex; a calcium ion, a known cofactor for melanocortin-peptide binding, is resolved in the binding pocket"}
+    ],
+    "pubchem_cid": 9941379,
+    "notes": "The same 2021 study also solved MC4R bound to α-MSH (7F53), afamelanotide (7F54) and the small-molecule agonist THIQ (7F58), allowing the peptides' binding modes to be compared."
+  },
+  "ids": {"pubchem_cid": 9941379, "cas": "189691-06-3", "drugbank": "DB11653", "chembl": "CHEMBL2070241", "unii": "6Y24O4F92S", "kegg": "D06569", "chebi": "CHEBI:177849", "atc": "G02CX05", "inn": "bremelanotide"},
+  "wiki": "Bremelanotide",
+  "queries": {
+    "pubmed": "(bremelanotide[tiab] OR \"PT-141\"[tiab] OR PT141[tiab] OR Vyleesi[tiab])",
+    "ctgov": "bremelanotide OR PT-141"
+  },
+  "uses": {
+    "approved": [
+      {"use": "Hypoactive sexual desire disorder in premenopausal women", "detail": "Acquired, generalised low sexual desire causing marked distress, not due to another medical or psychiatric condition, relationship problems or a medicine; used as needed rather than daily.", "since": 2019, "where": "US"}
+    ],
+    "investigational": [
+      {"use": "Obesity (with tirzepatide)", "stage": "Phase 2 — completed (2025)", "detail": "In the 8-week BMT-801 study, bremelanotide plus tirzepatide gave 4.4% weight loss versus 1.6% with placebo, and low-dose bremelanotide limited weight regain after tirzepatide was stopped; Palatin is seeking a partner rather than funding further trials."},
+      {"use": "Erectile dysfunction", "stage": "Phase 2 — discontinued (2008)", "detail": "Nasal and injected formulations produced erections, including in men with an inadequate response to sildenafil, but the FDA raised concerns about efficacy and blood-pressure increases."},
+      {"use": "Female sexual arousal disorder", "stage": "Phase 2 — superseded", "detail": "A single intranasal dose increased reported sexual desire in 18 premenopausal women with sexual arousal disorder; development later refocused on HSDD with the injectable form."}
+    ],
+    "off_label": [
+      {"use": "Grey-market 'PT-141' for libido", "detail": "Products labelled 'PT-141' are sold online outside medical supervision and used by men and women to boost libido or erections.", "evidence": "These products are unregulated and not equivalent to Vyleesi; the approved drug is not indicated for men, postmenopausal women or to enhance sexual performance."}
+    ]
+  },
+  "history": [
+    {"year": 1998, "date": "1998-03-31", "title": "Palatin licenses Arizona technology", "detail": "Competitive Technologies licensed the University of Arizona's melanocortin sexual-dysfunction technology, derived from melanotan II, to Palatin Technologies.", "kind": "market"},
+    {"year": 2003, "date": "2003-06", "title": "PT-141 described", "detail": "Palatin scientists reported that PT-141 caused erections in rats and monkeys and a rapid, dose-dependent increase in erectile activity in men.", "kind": "discovery"},
+    {"year": 2004, "date": "2004-02", "title": "Intranasal trials in men", "detail": "A placebo-controlled study of intranasal PT-141 in healthy men and men with mild-to-moderate erectile dysfunction reported erectile responses.", "kind": "trial"},
+    {"year": 2006, "date": "2006-07", "title": "Tested in women", "detail": "A single intranasal dose increased reported sexual desire in 18 premenopausal women with sexual arousal disorder.", "kind": "trial"},
+    {"year": 2007, "date": "2007-08-30", "title": "FDA raises blood-pressure concerns", "detail": "Palatin and King Pharmaceuticals delayed phase 3 erectile-dysfunction trials after the FDA questioned efficacy and cited blood-pressure increases as its greatest safety concern.", "kind": "regulatory"},
+    {"year": 2008, "date": "2008-05-13", "title": "Intranasal programme dropped", "detail": "Palatin announced it had discontinued development of bremelanotide for male and female sexual dysfunction as part of a restructuring.", "kind": "market"},
+    {"year": 2015, "date": "2015-01", "title": "RECONNECT phase 3 trials begin", "detail": "Two identical 24-week trials of 1.75 mg subcutaneous bremelanotide, used as needed, enrolled 1,267 premenopausal women with HSDD; both finished in 2016.", "kind": "trial"},
+    {"year": 2017, "date": "2017-01", "title": "AMAG licenses North American rights", "detail": "AMAG Pharmaceuticals took over development and commercialisation in North America.", "kind": "market"},
+    {"year": 2019, "date": "2019-06-21", "title": "FDA approves Vyleesi", "detail": "Approved as the first as-needed treatment for acquired, generalised HSDD in premenopausal women.", "kind": "approval"},
+    {"year": 2020, "date": "2020-07", "title": "Rights return to Palatin", "detail": "AMAG and Palatin terminated their licence agreement, returning Vyleesi to Palatin.", "kind": "market"},
+    {"year": 2023, "date": "2023-02", "title": "Efficacy critique published", "detail": "An analysis of RECONNECT data argued that the benefits were statistically modest and limited to outcomes with little validity evidence in HSDD.", "kind": "science"},
+    {"year": 2023, "date": "2023-12-20", "title": "Vyleesi sold to Cosette", "detail": "Palatin sold the product to Cosette Pharmaceuticals for US$12 million upfront plus up to US$159 million in sales-based milestones.", "kind": "market"},
+    {"year": 2025, "date": "2025-03-31", "title": "Obesity combination study", "detail": "In the phase 2 BMT-801 study, bremelanotide added to tirzepatide produced 4.4% weight loss over 8 weeks versus 1.6% with placebo.", "kind": "trial"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "approved", "detail": "Vyleesi (NDA 210557) approved June 2019; owned by Cosette Pharmaceuticals since December 2023."},
+    {"region": "China", "status": "not-approved", "detail": "Licensed to Shanghai Fosun Pharmaceutical in 2017; Palatin's 2024 annual report still listed a milestone payable on Chinese approval."}
+  ],
+  "pk": {
+    "half_life": "≈ 2.7 h (range 1.9–4.0 h)",
+    "tmax": "About 1 hour after subcutaneous injection",
+    "bioavailability": "About 100% subcutaneous",
+    "metabolism": "Hydrolysis of the peptide's amide bonds",
+    "excretion": "About 65% of a radiolabelled dose recovered in urine and 23% in faeces"
+  },
+  "dosing": [
+    {"product": "Vyleesi", "regimen": "1.75 mg injected subcutaneously into the abdomen or thigh with the autoinjector, as needed, at least 45 minutes before anticipated sexual activity; no more than one dose in 24 hours, and more than 8 doses a month is not recommended."}
+  ],
+  "dosing_note": "Labelled regimen summarised for reference only; follow the prescribing information and a clinician's advice. Grey-market 'PT-141' products are not equivalent to the approved medicine.",
+  "safety": {
+    "common": ["Nausea (40%)", "Flushing (20%)", "Injection-site reactions (13%)", "Headache (11%)", "Vomiting", "Cough", "Fatigue", "Hot flush", "Paraesthesia", "Dizziness", "Nasal congestion"],
+    "serious": ["Transient increase in blood pressure and fall in heart rate after each dose", "Focal hyperpigmentation of the face, gums or breasts (1% in trials; 38% after 8 consecutive daily doses), not always reversible", "Nausea severe enough to need anti-emetics (13%) or to stop treatment (8%)"],
+    "warnings": ["Contraindicated in uncontrolled hypertension or known cardiovascular disease; not recommended for patients at high cardiovascular risk", "May slow gastric emptying and reduce absorption of oral drugs; avoid with oral naltrexone used for alcohol or opioid dependence", "Advise effective contraception and stop if pregnancy is suspected"],
+    "notes": "Nausea is most frequent after the first dose (21%) and falls to about 3% with later doses; pre-treatment with ondansetron did not reduce it in a phase 4 study. Vyleesi is not indicated for men, for postmenopausal women or to enhance sexual performance."
+  },
+  "market": {
+    "note": "Vyleesi's US sales have been small; Palatin sold the product to Cosette Pharmaceuticals in December 2023.",
+    "figures": [
+      {"year": 2023, "label": "Vyleesi net product revenue (Palatin fiscal year ended June 2023)", "value": "US$4.85 million", "source": "Palatin Technologies Form 10-K for fiscal 2024"},
+      {"year": 2023, "label": "Upfront payment from Cosette for Vyleesi", "value": "US$12 million (plus up to US$159 million in milestones)", "source": "Palatin Technologies press release, 20 December 2023"}
+    ]
+  },
+  "facts": [
+    "Bremelanotide and melanotan II have the same amino-acid sequence; bremelanotide ends in a carboxylic acid instead of an amide.",
+    "It was the first FDA-approved as-needed treatment for low sexual desire in premenopausal women.",
+    "In a study in which bremelanotide was given daily for 8 days, 38% of participants developed patches of darker skin.",
+    "After blood-pressure concerns stalled the nasal spray, the drug was reformulated as a fixed-dose subcutaneous autoinjector."
+  ],
+  "related": ["melanotan-ii", "afamelanotide", "setmelanotide", "tirzepatide"],
+  "references": [
+    {"title": "PT-141: a melanocortin agonist for the treatment of sexual dysfunction", "authors": "Molinoff PB, Shadiack AM, Earle D, Diamond LE, Quon CY", "journal": "Ann N Y Acad Sci", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/12851303/"},
+    {"title": "Double-blind, placebo-controlled evaluation of the safety, pharmacokinetic properties and pharmacodynamic effects of intranasal PT-141, a melanocortin receptor agonist, in healthy males and patients with mild-to-moderate erectile dysfunction", "authors": "Diamond LE, Earle DC, Rosen RC, et al.", "journal": "Int J Impot Res", "year": 2004, "url": "https://pubmed.ncbi.nlm.nih.gov/14963471/"},
+    {"title": "An effect on the subjective sexual response in premenopausal women with sexual arousal disorder by bremelanotide (PT-141), a melanocortin receptor agonist", "authors": "Diamond LE, Earle DC, Heiman JR, et al.", "journal": "J Sex Med", "year": 2006, "url": "https://pubmed.ncbi.nlm.nih.gov/16839319/"},
+    {"title": "Bremelanotide for the treatment of hypoactive sexual desire disorder: two randomized phase 3 trials", "authors": "Kingsberg SA, Clayton AH, Portman D, et al.", "journal": "Obstet Gynecol", "year": 2019, "url": "https://pubmed.ncbi.nlm.nih.gov/31599840/"},
+    {"title": "Long-term safety and efficacy of bremelanotide for hypoactive sexual desire disorder", "authors": "Simon JA, Kingsberg SA, Portman D, et al.", "journal": "Obstet Gynecol", "year": 2019, "url": "https://pubmed.ncbi.nlm.nih.gov/31599847/"},
+    {"title": "Bremelanotide: first approval", "authors": "Dhillon S, Keam SJ", "journal": "Drugs", "year": 2019, "url": "https://pubmed.ncbi.nlm.nih.gov/31429064/"},
+    {"title": "Structural insights into ligand recognition and activation of the melanocortin-4 receptor", "authors": "Zhang H, Chen LN, Yang D, et al.", "journal": "Cell Res", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34433901/"},
+    {"title": "Safety profile of bremelanotide across the clinical development program", "authors": "Clayton AH, Kingsberg SA, Portman D, et al.", "journal": "J Womens Health (Larchmt)", "year": 2022, "url": "https://pubmed.ncbi.nlm.nih.gov/35147466/"},
+    {"title": "Small effects, questionable outcomes: bremelanotide for hypoactive sexual desire disorder", "authors": "Spielmans GI, Ellefson EM", "journal": "J Sex Res", "year": 2024, "url": "https://pubmed.ncbi.nlm.nih.gov/36809187/"}
+  ]
+}

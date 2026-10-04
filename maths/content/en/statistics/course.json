@@ -1,0 +1,209 @@
+{
+  "slug": "statistics",
+  "title": "Statistics",
+  "full_title": "Statistics",
+  "area": "probability",
+  "level": 2,
+  "order": 80,
+  "tagline": "Learning from data: estimation, confidence intervals, hypothesis tests, regression and Bayesian inference",
+  "summary": "Statistics turns data into conclusions with honest statements of uncertainty. Building on probability, this course covers sampling distributions, point estimation and maximum likelihood, confidence intervals, hypothesis testing, linear regression and Bayesian inference.",
+  "overview": [
+    "Statistics is the science of learning from data in the presence of variability. Probability starts from a known model and predicts what the data will look like; statistics runs the other way, starting from observed data and asking which models are plausible, what the unknown parameters are likely to be, and how sure we can be. Clinical trials, opinion polls, quality control, A/B tests and almost every scientific measurement rely on the ideas in this course.",
+    "The course develops classical (frequentist) inference and then its Bayesian alternative. It begins with sampling distributions — how statistics such as the sample mean and variance vary from sample to sample — and the chi-square, t and F distributions that arise from normal samples. Point estimation compares estimators by bias, variance and mean squared error and introduces the method of moments and maximum likelihood. Confidence intervals and hypothesis tests turn sampling distributions into honest statements of uncertainty. Linear regression models the relationship between variables, and the final chapter treats the parameters themselves as random, turning prior beliefs into posterior ones with Bayes’ theorem.",
+    "Statistical procedures are easy to compute and easy to misinterpret. A confidence level is not the probability that a particular interval contains the parameter, a p-value is not the probability that the null hypothesis is true, and correlation is not causation. Every procedure is therefore paired with a careful statement of what it does and does not mean, and with warnings about common misreadings. The derivations show where each formula comes from, so that you can adapt methods rather than apply them mechanically, and simulations in the interactive figures let you watch the long-run behaviour that the guarantees describe. The prerequisite is the probability course, especially the central limit theorem."
+  ],
+  "prerequisites": [
+    "probability"
+  ],
+  "outcomes": [
+    "Summarise data numerically and graphically, and distinguish sample statistics from population parameters.",
+    "Derive the sampling distributions of the sample mean and sample variance, and use the chi-square, t and F distributions for normal samples.",
+    "Compare estimators by bias, variance and mean squared error, and construct estimators by the method of moments and by maximum likelihood.",
+    "Prove the Cramér–Rao lower bound and use Fisher information to judge the efficiency of an estimator.",
+    "Construct confidence intervals from pivotal quantities for means, proportions and variances, and interpret confidence levels correctly.",
+    "Carry out z, t and chi-square tests, compute p-values and power, and explain type I and type II errors and the Neyman–Pearson lemma.",
+    "Fit linear regression models by least squares, make inferences about the coefficients and check the model assumptions with residuals.",
+    "Perform Bayesian updates with conjugate priors, compute posterior summaries and credible intervals, and compare Bayesian and frequentist conclusions."
+  ],
+  "chapters": [
+    {
+      "slug": "sampling",
+      "title": "Sampling and sampling distributions",
+      "summary": "Describing data, random samples, the sample mean and variance, and the t, chi-square and F distributions.",
+      "requires": [
+        "probability/limit-theorems"
+      ]
+    },
+    {
+      "slug": "estimation",
+      "title": "Point estimation",
+      "summary": "Estimators, bias, variance and mean squared error, the method of moments and maximum likelihood.",
+      "requires": [
+        "statistics/sampling"
+      ]
+    },
+    {
+      "slug": "confidence-intervals",
+      "title": "Confidence intervals",
+      "summary": "Pivotal quantities, intervals for means, proportions and variances, and what a confidence level means.",
+      "requires": [
+        "statistics/estimation"
+      ]
+    },
+    {
+      "slug": "hypothesis-testing",
+      "title": "Hypothesis testing",
+      "summary": "Null and alternative hypotheses, test statistics and p-values, errors and power, z, t and chi-square tests.",
+      "requires": [
+        "statistics/confidence-intervals"
+      ]
+    },
+    {
+      "slug": "regression",
+      "title": "Linear regression",
+      "summary": "Least squares, inference for the slope, residual analysis, correlation and R².",
+      "requires": [
+        "statistics/hypothesis-testing",
+        "linear-algebra/least-squares"
+      ]
+    },
+    {
+      "slug": "bayesian",
+      "title": "Bayesian inference",
+      "summary": "Prior and posterior distributions, conjugate families, credible intervals and comparison with frequentist methods.",
+      "requires": [
+        "statistics/estimation",
+        "probability/conditional-probability"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1805,
+      "title": "The method of least squares",
+      "detail": "Adrien-Marie Legendre published the method of least squares in an appendix to a work on the orbits of comets.",
+      "people": [
+        "Adrien-Marie Legendre"
+      ]
+    },
+    {
+      "year": 1809,
+      "title": "Gauss and the normal law of errors",
+      "detail": "In his Theoria motus Carl Friedrich Gauss justified least squares by assuming normally distributed errors, and claimed to have used the method since 1795.",
+      "people": [
+        "Carl Friedrich Gauss"
+      ]
+    },
+    {
+      "year": 1886,
+      "title": "Regression to the mean",
+      "detail": "Francis Galton found that the children of unusually tall or short parents tend to be closer to average height, and called the phenomenon regression.",
+      "people": [
+        "Francis Galton"
+      ]
+    },
+    {
+      "year": 1900,
+      "title": "The chi-square test",
+      "detail": "Karl Pearson introduced the chi-square goodness-of-fit test, one of the first general tests of a statistical hypothesis.",
+      "people": [
+        "Karl Pearson"
+      ]
+    },
+    {
+      "year": 1908,
+      "title": "Student’s t",
+      "detail": "Writing as “Student”, the Guinness brewer William Sealy Gosset derived the distribution of the t statistic for small samples from a normal population.",
+      "people": [
+        "William Sealy Gosset"
+      ]
+    },
+    {
+      "year": 1922,
+      "title": "Fisher’s foundations",
+      "detail": "Ronald Fisher’s paper “On the mathematical foundations of theoretical statistics” set out consistency, efficiency, sufficiency and maximum likelihood.",
+      "people": [
+        "Ronald Fisher"
+      ]
+    },
+    {
+      "year": 1925,
+      "title": "Statistical Methods for Research Workers",
+      "detail": "Fisher’s book spread significance tests and p-values through the experimental sciences, along with tables of the t, chi-square and other distributions.",
+      "people": [
+        "Ronald Fisher"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "The Neyman–Pearson lemma",
+      "detail": "Jerzy Neyman and Egon Pearson framed testing as a choice between hypotheses with controlled error rates and found the most powerful tests.",
+      "people": [
+        "Jerzy Neyman",
+        "Egon Pearson"
+      ]
+    },
+    {
+      "year": 1937,
+      "title": "Confidence intervals",
+      "detail": "Jerzy Neyman’s “Outline of a theory of statistical estimation” gave the theory of confidence intervals and their frequentist interpretation.",
+      "people": [
+        "Jerzy Neyman"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "Bayesian computation by simulation",
+      "detail": "Alan Gelfand and Adrian Smith showed how Markov chain Monte Carlo methods such as the Gibbs sampler make realistic Bayesian models computable.",
+      "people": [
+        "Alan Gelfand",
+        "Adrian Smith"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Mathematical Statistics and Data Analysis",
+      "authors": "John A. Rice",
+      "year": 2007,
+      "note": "A balanced classic (3rd edition) combining mathematical derivations with real data; covers everything in this course."
+    },
+    {
+      "title": "Introduction to Mathematical Statistics",
+      "authors": "Robert V. Hogg, Joseph W. McKean and Allen T. Craig",
+      "year": 2019,
+      "note": "Rigorous classical treatment (8th edition) of sampling distributions, maximum likelihood, sufficiency and optimal tests."
+    },
+    {
+      "title": "Statistical Inference",
+      "authors": "George Casella and Roger L. Berger",
+      "year": 2002,
+      "note": "The standard advanced text (2nd edition) on estimation and testing theory; the next step after this course."
+    },
+    {
+      "title": "Probability and Statistics",
+      "authors": "Morris H. DeGroot and Mark J. Schervish",
+      "year": 2012,
+      "note": "Integrates probability with both frequentist and Bayesian inference (4th edition); very good on the Bayesian chapters."
+    },
+    {
+      "title": "All of Statistics",
+      "authors": "Larry Wasserman",
+      "year": 2004,
+      "note": "A concise, fast-paced survey that also covers modern topics such as the bootstrap and nonparametric methods."
+    },
+    {
+      "title": "Statistics",
+      "authors": "David Freedman, Robert Pisani and Roger Purves",
+      "year": 2007,
+      "note": "Almost formula-free (4th edition) but unmatched on interpretation, study design and the pitfalls of statistical reasoning."
+    },
+    {
+      "title": "Bayesian Data Analysis",
+      "authors": "Andrew Gelman, John B. Carlin, Hal S. Stern, David B. Dunson, Aki Vehtari and Donald B. Rubin",
+      "year": 2013,
+      "note": "The reference for applied Bayesian modelling and computation (3rd edition)."
+    }
+  ],
+  "next": []
+}

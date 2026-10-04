@@ -1,0 +1,131 @@
+{
+  "slug": "epitalon",
+  "name": "Epitalon",
+  "aliases": ["Epithalon", "Epithalone", "Ala-Glu-Asp-Gly", "AEDG peptide", "Alanyl-glutamyl-aspartyl-glycine"],
+  "category": "longevity",
+  "drug_class": "Peptide bioregulator (investigational geroprotector)",
+  "subclass": "Synthetic pineal tetrapeptide modelled on the extract epithalamin",
+  "status": "research",
+  "status_note": "Not approved as a medicine by the FDA, the EMA or regulators in the UK, Canada or Australia; a US orphan designation for retinitis pigmentosa (2010) was withdrawn in 2016, and the peptide is sold mainly as an unlicensed 'research' or supplement-type product.",
+  "evidence": 2,
+  "evidence_note": "Human data are limited to a few small studies from the developer's group (an eye-disease report and a 20-day sublingual study in 40 night-shift workers measuring melatonin output); the larger mortality cohorts used the pineal extract epithalamin, not epitalon. FDA's 2026 review found no human safety studies and no pharmacokinetic data.",
+  "tagline": "Russian pineal tetrapeptide sold as an anti-ageing 'telomerase activator'",
+  "summary": "Epitalon is a four-amino-acid peptide (Ala-Glu-Asp-Gly) created by Vladimir Khavinson's group in St Petersburg as a synthetic stand-in for epithalamin, a polypeptide extract of cattle pineal gland. Cell and animal studies, mostly from the same group, report telomerase activation, antioxidant effects and modest lifespan gains, which made it a popular 'longevity peptide' online. Controlled human evidence is very thin, and it is not an approved medicine anywhere in the West.",
+  "overview": [
+    "Epitalon grew out of a Soviet research programme on 'peptide bioregulators' led by Vladimir Khavinson (1946–2024). From 1973 Khavinson and colleagues including V. G. Morozov, V. N. Anisimov and V. M. Dilman published studies of pineal-gland (epiphyseal) extracts, and the purified polypeptide preparation from cattle pineal glands became known as epithalamin. In the late 1990s the group synthesised the tetrapeptide Ala-Glu-Asp-Gly, designed from an amino-acid analysis of epithalamin; a patent claiming it as a 'geroprotective' tetrapeptide has a priority date of May 1999. The peptide itself was only reported to be present in the pineal extract in 2017.",
+    "About two-thirds of the roughly 150 PubMed-indexed papers on epitalon list Khavinson or his close collaborators at the St Petersburg Institute of Bioregulation and Gerontology as authors, and many appeared in Russian journals or their English translations. It describes antioxidant effects, restored melatonin rhythms in old monkeys, telomerase activation and telomere elongation in cultured human cells, fewer tumours in some mouse strains and longer survival of fruit flies and rodents. Independent work has been sparse; a 2025 study from Brunel University London reported dose-dependent telomere lengthening in cultured human cell lines.",
+    "Human data are scarce. FDA's 2026 review found only three published studies in which epitalon itself was given to people: a report on retinitis pigmentosa (2002) and two small sublingual studies in night-shift workers that measured melatonin metabolites and clock-gene expression. Often-quoted claims of lower mortality in elderly people come from studies of epithalamin, which FDA describes as a different substance, and none of the human work has been independently replicated.",
+    "Outside Russia epitalon is sold online as 'research use only' vials, capsules and sprays and offered by some wellness clinics as an anti-ageing treatment. In 2023 FDA placed it on the list of substances US compounding pharmacies should not use, citing immunogenicity and impurity concerns; it lifted that listing in April 2026 after the nominations were withdrawn, and in July 2026 its advisory committee voted 7–4 to recommend allowing compounding for insomnia, against the advice of FDA's own reviewers."
+  ],
+  "mechanism": [
+    "No receptor for epitalon has been identified. The developer's group reports that it switches on expression of the telomerase catalytic subunit (TERT) in telomerase-negative human fetal fibroblasts, lengthens telomeres and lets the cells divide beyond their normal limit, and that it acts as an antioxidant and normalises melatonin production by the ageing pineal gland. Based largely on molecular modelling, the group has also proposed that short peptides such as epitalon bind histones and DNA to regulate gene expression directly, a hypothesis that has not been independently established.",
+    "How a small, water-soluble tetrapeptide would survive in the body and reach the nucleus is unknown, because no pharmacokinetic studies have been published. FDA reviewers noted in 2026 that sustained telomerase activation is a theoretical cancer risk, since long telomeres are associated with some malignancies, and that the mouse tumour studies cited as evidence of safety used a single dose, female animals only and intermittent exposure too short to assess carcinogenicity."
+  ],
+  "origin": "Synthetic tetrapeptide modelled on the amino-acid composition of epithalamin, a polypeptide extract of bovine pineal gland; later reported (2017) to be present in that extract",
+  "discovery": {"year": 1999, "by": "Vladimir Khavinson and colleagues", "where": "St Petersburg Institute of Bioregulation and Gerontology, Russia", "note": "Designed from an amino-acid analysis of the pineal extract epithalamin, which the group had studied since 1973. The earliest dated record is a patent application with priority 11 May 1999 (granted in the US in 2004); the first papers appeared in 2000."},
+  "first_human_year": 2002,
+  "first_approval": null,
+  "developer": "St Petersburg Institute of Bioregulation and Gerontology (Vladimir Khavinson)",
+  "brands": [],
+  "analogs": [
+    {"name": "Epithalamin", "note": "Polypeptide extract of bovine pineal gland from which the epitalon sequence was derived; used in the Russian cohort studies. FDA treats it as a different substance."}
+  ],
+  "targets": [
+    {"name": "Telomerase reverse transcriptase", "gene": "TERT", "uniprot": "O14746", "action": "Increased expression and activity reported in cultured human cells; no direct binding or receptor shown"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["A", "E", "D", "G"], "n_term": "H", "c_term": "OH"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [],
+    "notation": "H-Ala-Glu-Asp-Gly-OH",
+    "note": "Unmodified linear tetrapeptide of L-amino acids with a free amine and free acid; commercial material may be the free base or an acetate salt."
+  },
+  "formula": "C14H22N4O9",
+  "mw": 390.35,
+  "half_life": "Unknown (no human pharmacokinetic data)",
+  "half_life_hours": null,
+  "routes": ["Subcutaneous injection (unlicensed products)", "Sublingual or nasal spray", "Oral capsules", "Parabulbar injection (retinitis pigmentosa study)"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 219042,
+    "notes": "No experimental 3D structure has been reported; published conformational work on this short, flexible peptide is limited to molecular modelling and docking."
+  },
+  "ids": {"pubchem_cid": 219042, "cas": "307297-39-8", "unii": "O65P17785G", "chebi": "CHEBI:230091"},
+  "wiki": "Epitalon",
+  "queries": {
+    "pubmed": "(epitalon[tiab] OR epithalon[tiab] OR epithalone[tiab] OR \"Ala-Glu-Asp-Gly\"[tiab] OR \"AEDG peptide\"[tiab] OR \"peptide AEDG\"[tiab])",
+    "ctgov": "epitalon OR epithalon OR AEDG"
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Retinitis pigmentosa", "stage": "Small clinical report (2002); US orphan designation 2010–2016", "detail": "Khavinson's group reported improvement in 90% of patients with degenerative retinal disease given parabulbar injections; design details were limited. An FDA orphan designation held by the Australian company BioDiem was withdrawn in January 2016."},
+      {"use": "Age-related decline in melatonin output", "stage": "Small randomised study (2020)", "detail": "In 40 women aged 40–50 working night shifts with low melatonin output, a 20-day sublingual spray raised urinary 6-sulfatoxymelatonin about 1.7-fold versus placebo; sleep was not measured and blinding was not described."},
+      {"use": "Geroprotection and lifespan", "stage": "Preclinical", "detail": "Studies in fruit flies, mice and rats, almost all from the developer's group, report longer survival of some animals and fewer spontaneous tumours; no human study has tested effects on ageing or lifespan."}
+    ],
+    "off_label": [
+      {"use": "Anti-ageing 'telomerase' peptide", "detail": "Sold online as 'research use only' injectable vials, capsules and sprays and offered by some wellness and concierge clinics, promoted for telomere lengthening, sleep, skin health and longevity.", "evidence": "No controlled human trial shows effects on telomere length, ageing or lifespan. FDA found no human safety studies or pharmacokinetic data, and the identity, purity and sterility of unlicensed products are not assured."}
+    ]
+  },
+  "history": [
+    {"year": 1973, "date": "1973-11", "title": "Pineal extract studies begin", "detail": "Anisimov, Khavinson, Morozov and Dilman reported effects of pineal (epiphyseal) extracts in ageing rats and in mice with transplanted tumours; the polypeptide preparation became known as epithalamin.", "kind": "science"},
+    {"year": 1999, "date": "1999-05-11", "title": "Tetrapeptide patented", "detail": "Khavinson filed a patent on Ala-Glu-Asp-Gly as a 'geroprotective' tetrapeptide made by solution-phase synthesis; the US patent was granted in April 2004.", "kind": "discovery"},
+    {"year": 2000, "date": "2000-12", "title": "Fruit-fly lifespan study", "detail": "The group reported that adding epitalon to the larval medium lengthened the lifespan of Drosophila melanogaster by 11–16%; mouse and rat survival studies followed from 2001.", "kind": "science"},
+    {"year": 2002, "date": "2002-08", "title": "Retinitis pigmentosa report", "detail": "A clinical report from the institute claimed benefit in 90% of patients with degenerative retinal disease, one of only three published studies in which epitalon itself was given to people.", "kind": "trial"},
+    {"year": 2003, "date": "2003-06", "title": "Telomerase activation claim", "detail": "Epitalon was reported to induce the telomerase catalytic subunit and lengthen telomeres in telomerase-negative human fetal fibroblasts, the finding behind its 'telomerase activator' reputation.", "kind": "science"},
+    {"year": 2003, "title": "Epithalamin mortality claims", "detail": "Khavinson and Morozov reported 1.6–1.8-fold lower mortality over 6–8 years in elderly people given the pineal extract epithalamin; these data are often misattributed to epitalon.", "kind": "trial"},
+    {"year": 2010, "date": "2010-09-02", "title": "US orphan designation", "detail": "FDA granted orphan-drug designation to epitalon for retinitis pigmentosa, sponsored by BioDiem Ltd of Melbourne.", "kind": "regulatory"},
+    {"year": 2016, "date": "2016-01-06", "title": "Orphan designation withdrawn", "detail": "The retinitis pigmentosa designation was withdrawn or revoked without the drug being approved.", "kind": "regulatory"},
+    {"year": 2017, "date": "2017-11", "title": "AEDG found in the pineal extract", "detail": "Mass spectrometry detected Ala-Glu-Asp-Gly among the tetrapeptides of the pineal polypeptide complex from which it had been designed.", "kind": "science"},
+    {"year": 2020, "title": "Small randomised melatonin study", "detail": "A 20-day sublingual AEDG spray raised urinary melatonin metabolites about 1.7-fold in 40 night-shift workers with low melatonin output, compared with placebo.", "kind": "trial"},
+    {"year": 2023, "date": "2023-09-29", "title": "FDA blocks compounding", "detail": "FDA placed epitalon in Category 2 of its 503A bulk-substance list, citing possible immunogenicity from aggregation and peptide impurities and a lack of human safety information.", "kind": "regulatory"},
+    {"year": 2025, "date": "2025-09", "title": "Independent cell study", "detail": "Researchers at Brunel University London reported telomere lengthening in normal human cells through telomerase upregulation, and in breast-cancer cell lines through the ALT pathway.", "kind": "science"},
+    {"year": 2026, "date": "2026-04-22", "title": "Removed from Category 2", "detail": "After HHS Secretary Robert F. Kennedy Jr said in February that most restricted peptides should become available again, FDA removed epitalon and 11 other peptides from Category 2 because their nominations were withdrawn; this did not by itself permit compounding.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-07-24", "title": "Advisory committee backs compounding", "detail": "FDA's Pharmacy Compounding Advisory Committee voted 7–4 with one abstention to recommend adding epitalon to the 503A bulks list for insomnia, although FDA reviewers had advised against it; formal rulemaking would still be required.", "kind": "regulatory"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "not-approved", "detail": "Not an approved drug. Category 2 (not to be compounded) from September 2023 until April 2026; in July 2026 the Pharmacy Compounding Advisory Committee voted 7–4 to recommend listing for insomnia, but inclusion on the 503A bulks list requires rulemaking. Orphan designation for retinitis pigmentosa 2010–2016."},
+    {"region": "EU", "status": "not-approved", "detail": "No EMA-authorised product; not in the European Pharmacopoeia (FDA review, 2026)."},
+    {"region": "UK", "status": "not-approved", "detail": "No approved product (FDA review, 2026)."},
+    {"region": "Canada", "status": "not-approved", "detail": "No approved product (FDA review, 2026)."},
+    {"region": "Australia", "status": "not-approved", "detail": "No approved product (FDA review, 2026)."}
+  ],
+  "pk": {
+    "half_life": "Not known; FDA found no published pharmacokinetic or toxicokinetic studies (2026 review)"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose. Amounts promoted by sellers and clinics are not based on clinical trials.",
+  "safety": {
+    "common": [],
+    "serious": [],
+    "warnings": [
+      "Unapproved: identity, purity, sterility and dose of 'research' products are not assured",
+      "FDA cited potential immunogenicity of injected epitalon because of aggregation and peptide-related impurities",
+      "Theoretical cancer concern from sustained telomerase activation; animal tumour studies were too short and limited to assess this"
+    ],
+    "notes": "No clinical study has assessed epitalon's safety. FDA's adverse-event databases (FAERS and the Human Foods Program system) held no reports for epitalon up to December 2025, which reflects limited reporting rather than proven safety."
+  },
+  "market": null,
+  "facts": [
+    "The sequence was chosen from an amino-acid analysis of a cattle pineal extract; the tetrapeptide itself was only detected in that extract in 2017.",
+    "In the fruit-fly study, epitalon was added only during the larval stage, yet adult lifespan was reported to rise by 11–16%.",
+    "Epitalon held a US orphan-drug designation for retinitis pigmentosa from 2010 until it was withdrawn in 2016.",
+    "FDA noted in 2026 that epitalon has no INN or USAN name and that its naming is inconsistent across suppliers."
+  ],
+  "related": ["mots-c", "humanin", "ss-31", "semax", "selank", "dsip", "ghk-cu"],
+  "references": [
+    {"title": "Effect of epitalon on the lifespan increase in Drosophila melanogaster", "authors": "Khavinson VK, Izmaylov DM, Obukhova LK, Malinin VV", "journal": "Mech Ageing Dev", "year": 2000, "url": "https://pubmed.ncbi.nlm.nih.gov/11087911/"},
+    {"title": "Pineal-regulating tetrapeptide epitalon improves eye retina condition in retinitis pigmentosa", "authors": "Khavinson V, Razumovsky M, Trofimova S, et al.", "journal": "Neuro Endocrinol Lett", "year": 2002, "url": "https://pubmed.ncbi.nlm.nih.gov/12195242/"},
+    {"title": "Epithalon peptide induces telomerase activity and telomere elongation in human somatic cells", "authors": "Khavinson VKh, Bondarev IE, Butyugov AA", "journal": "Bull Exp Biol Med", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/12937682/"},
+    {"title": "Effect of Epitalon on biomarkers of aging, life span and spontaneous tumor incidence in female Swiss-derived SHR mice", "authors": "Anisimov VN, Khavinson VKh, Popovich IG, et al.", "journal": "Biogerontology", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/14501183/"},
+    {"title": "Peptides of pineal gland and thymus prolong human life", "authors": "Khavinson VKh, Morozov VG", "journal": "Neuro Endocrinol Lett", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/14523363/"},
+    {"title": "Identification of peptide AEDG in the polypeptide complex of the pineal gland", "authors": "Khavinson VK, Kopylov AT, Vaskovsky BV, et al.", "journal": "Bull Exp Biol Med", "year": 2017, "url": "https://pubmed.ncbi.nlm.nih.gov/29124531/"},
+    {"title": "AEDG peptide regulates human circadian rhythms genes expression during pineal gland accelerated aging (in Russian)", "authors": "Ivko OM, Linkova NS, Ilina AR, et al.", "journal": "Adv Gerontol", "year": 2020, "url": "https://pubmed.ncbi.nlm.nih.gov/33280326/"},
+    {"title": "Overview of Epitalon — highly bioactive pineal tetrapeptide with promising properties", "authors": "Araj SK, Brzezik J, Mądra-Gackowska K, Szeleszczuk Ł", "journal": "Int J Mol Sci", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/40141333/"},
+    {"title": "Epitalon increases telomere length in human cell lines through telomerase upregulation or ALT activity", "authors": "Al-Dulaimi S, Thomas R, Matta S, Roberts T", "journal": "Biogerontology", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/40908429/"},
+    {"title": "Epitalon-related bulk drug substances: FDA briefing document for the Pharmacy Compounding Advisory Committee (24 July 2026)", "authors": "US Food and Drug Administration", "journal": "FDA", "year": 2026, "url": "https://www.fda.gov/media/193345/download"}
+  ]
+}

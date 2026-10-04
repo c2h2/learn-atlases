@@ -1,0 +1,386 @@
+{
+  "slug": "c-peptide",
+  "name": "C-peptide",
+  "aliases": [
+    "Connecting peptide",
+    "Proinsulin C-peptide",
+    "Human C-peptide",
+    "Insulin C-peptide"
+  ],
+  "category": "metabolic",
+  "drug_class": "Proinsulin connecting peptide",
+  "subclass": "31-residue peptide excised from proinsulin and co-secreted with insulin; the usual laboratory marker of beta-cell function",
+  "status": "clinical",
+  "status_note": "Not approved as a medicine. The neuropathy programme stopped at phase 2 without meeting its primary endpoint. An early-phase physiology study of C-peptide during hypoglycaemia is recruiting. Measuring C-peptide already in the blood remains a routine laboratory test, which is not a drug authorisation.",
+  "evidence": 3,
+  "evidence_note": "Randomised studies in type 1 diabetes, including a 250-person phase 2 trial of a pegylated analogue, have tested C-peptide as a drug. That trial did not meet its primary nerve-conduction endpoint. An early-phase study of C-peptide during induced hypoglycaemia opened in 2024 and has not reported results. Use of the endogenous peptide as a laboratory test is standard practice, which is a different kind of evidence from a drug trial.",
+  "tagline": "Insulin's connecting peptide, and the blood test of beta-cell function",
+  "summary": "C-peptide is the 31-amino-acid connector that links the A and B chains inside proinsulin. Beta cells cut it free and release it into the blood in step with insulin, and laboratories measure it to see how much insulin the pancreas is still making. It is not an approved medicine: small trials suggested effects on nerves and kidneys in type 1 diabetes, but a 250-person trial of a long-acting version missed its main endpoint.",
+  "overview": [
+    "Human C-peptide is a 31-residue peptide, Glu-Ala-Glu-Asp-Leu-Gln-Val-Gly-Gln-Val-Glu-Leu-Gly-Gly-Gly-Pro-Gly-Ala-Gly-Ser-Leu-Gln-Pro-Leu-Ala-Leu-Glu-Gly-Ser-Leu-Gln, with an average mass of about 3,020 daltons. It is the middle segment of proinsulin. In the beta cell, the single-chain precursor folds so that insulin's three disulphide bonds can form; enzymes then cut at the pairs of basic residues on either side of the connector and release insulin and C-peptide together. The connector's sequence varies much more between species than the insulin chains do. The porcine segment sequenced in 1968 is 33 residues long and includes the four basic residues that are later removed, leaving a 29-residue peptide different from the human one.",
+    "Donald F. Steiner and Philip E. Oyer, at the University of Chicago, found the precursor in 1967 while studying a human islet-cell adenoma: a protein larger than insulin that trypsin could convert into insulin-like material. They proposed a single chain running from the B chain through a connecting stretch into the A chain. Later that year Steiner's group showed in rat islets that this larger protein is made first and then converted to insulin, and they named it proinsulin. Ronald Chance, Robert Ellis and William Bromer at Eli Lilly sequenced the porcine connecting peptide in 1968. C-peptide itself was isolated from bovine and human pancreas in 1969, and the human sequence was reported in 1971.",
+    "Because the two peptides leave the beta cell together, C-peptide in blood is a measure of endogenous insulin secretion. In six people studied by umbilical-vein catheterisation, portal insulin and C-peptide were nearly equimolar at the peak of secretion, while proinsulin made up only about 2.5% of insulin immunoreactivity; peripheral levels then diverge because the peptides are cleared at different rates. After an intravenous dose the plasma half-life averaged about 34 minutes in healthy adults and about 43 minutes in insulin-dependent diabetes, with a metabolic clearance near 4 mL/min per kg. Pharmaceutical insulin is the mature two-chain hormone and contains no C-peptide, so a high insulin with a low C-peptide points away from insulin the body has just secreted. The test is used to judge residual beta-cell function, to separate insulin deficiency from other kinds of diabetes, and in the work-up of hypoglycaemia.",
+    "For two decades after its discovery C-peptide was treated as a biologically inert by-product of insulin manufacture. From the 1990s, short infusions and small trials in type 1 diabetes reported effects on kidney function, glucose use and nerve conduction. A company, Cebix, then tested a pegylated, once-weekly version (CBX129801, Ersatta). In a 250-person phase 2 trial it did not improve sural nerve conduction velocity beyond placebo, though vibration perception did improve. No receptor is agreed. An orphan G-protein-coupled receptor, GPR146, was proposed in 2013 and was not confirmed when the experiments were repeated in 2020. C-peptide remains a diagnostic analyte, not an approved drug."
+  ],
+  "mechanism": [
+    "Proinsulin folding pairs the cysteines of the future A and B chains while they are still tied together by C-peptide. Processing enzymes in the secretory granule then cut the precursor at the Arg-Arg pair that precedes C-peptide and the Lys-Arg pair that follows it, and trim those basic residues away. Insulin and C-peptide are stored in the same granules and released in equimolar amounts. The connecting segment is the flexible part of the precursor: in the NMR structure of a monomeric proinsulin analogue the C domain is progressively less ordered than the insulin moiety, with a flexible junction onto the B chain.",
+    "Once in the blood, C-peptide is cleared more slowly than would be useful for a minute-to-minute hormone, which is exactly why it is a practical marker. In healthy adults an intravenous dose disappeared with a mean half-life of 33.5 minutes (range 24.9–45.3); in insulin-dependent diabetes the mean was 42.5 minutes (range 39.4–48.5). Metabolic clearance was about 4.4 mL/min per kg and did not differ meaningfully between the two groups. A later study with biosynthetic human C-peptide found a similar clearance, constant over a wide concentration range, and showed that a two-compartment model can reconstruct the secretion rate from peripheral concentrations.",
+    "Whether C-peptide also has an action of its own is unsettled. Injected human C-peptide reduced vascular and nerve dysfunction in diabetic rats, but a reversed sequence and an all-D version were equally active, which argues against a stereospecific receptor and for a non-chiral interaction. Specific membrane binding and effects on Na+/K+-ATPase and endothelial nitric oxide synthase have been reported, and the C-terminal pentapeptide (Glu-Gly-Ser-Leu-Gln) is the most ordered part of the otherwise flexible chain. In 2013 GPR146 was proposed as part of a C-peptide signalling complex. A 2020 study of cells overexpressing that receptor found no mass-redistribution response, no β-arrestin recruitment and no binding or uptake at concentrations up to 33 µM. The biological effects seen in some trials therefore do not yet have an agreed molecular target."
+  ],
+  "origin": "Excised from proinsulin in pancreatic beta cells and secreted with insulin; human C-peptide is residues 57–87 of preproinsulin (UniProt P01308)",
+  "discovery": {
+    "year": 1967,
+    "by": "Donald F. Steiner and Philip E. Oyer",
+    "where": "University of Chicago, USA",
+    "note": "A protein larger than insulin in a human islet-cell adenoma could be converted to insulin-like material by trypsin. The porcine connecting peptide was sequenced in 1968 and the human C-peptide sequence was reported in 1971."
+  },
+  "first_human_year": 1978,
+  "first_approval": null,
+  "developer": "Donald F. Steiner and colleagues, University of Chicago (discovery of proinsulin); Cebix Incorporated (pegylated analogue CBX129801, tested through phase 2)",
+  "analogs": [
+    {
+      "name": "Pegylated C-peptide (CBX129801, Ersatta)",
+      "note": "Cebix once-weekly analogue. A phase 1/2 pharmacokinetic study in 72 people with type 1 diabetes (2011–2012) was followed by a 250-person phase 2 trial in diabetic peripheral neuropathy (2012–2015). Weekly doses of 0.8 mg or 2.4 mg did not improve sural nerve conduction velocity more than placebo."
+    },
+    {
+      "name": "Porcine C-peptide",
+      "note": "Chance, Ellis and Bromer (1968) sequenced a 33-residue porcine connecting segment, including the Arg-Arg and Lys-Arg pairs that are cut off during processing. The excised peptide is 29 residues and differs in sequence from the human 31-residue C-peptide."
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "C-peptide",
+        "residues": ["E","A","E","D","L","Q","V","G","Q","V","E","L","G","G","G","P","G","A","G","S","L","Q","P","L","A","L","E","G","S","L","Q"],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [],
+    "notation": "H-Glu-Ala-Glu-Asp-Leu-Gln-Val-Gly-Gln-Val-Glu-Leu-Gly-Gly-Gly-Pro-Gly-Ala-Gly-Ser-Leu-Gln-Pro-Leu-Ala-Leu-Glu-Gly-Ser-Leu-Gln-OH",
+    "note": "Human C-peptide, residues 57–87 of preproinsulin (UniProt P01308). The Arg-Arg pair before it and the Lys-Arg pair after it are removed during processing and are not part of this chain."
+  },
+  "formula": "C129H211N35O48",
+  "mw": 3020.3,
+  "half_life": "≈ 34 min in healthy adults; ≈ 43 min in insulin-dependent diabetes",
+  "half_life_hours": 0.56,
+  "routes": [
+    "Endogenous secretion into the blood",
+    "Subcutaneous injection (investigational)",
+    "Intravenous infusion (kinetic and physiological studies)"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "1T0C",
+        "title": "Solution structure of human proinsulin C-peptide",
+        "method": "Solution NMR",
+        "resolution": null,
+        "year": 2005,
+        "peptide_chain": "A",
+        "note": "The free 31-residue human peptide. Largely flexible, with local turns; the C-terminal pentapeptide is the best-defined stretch"
+      },
+      {
+        "id": "2KQP",
+        "title": "NMR structure of a monomeric proinsulin analogue",
+        "method": "Solution NMR",
+        "resolution": null,
+        "year": 2010,
+        "peptide_chain": "A",
+        "note": "Single chain of 86 residues. The C-peptide segment is the native human sequence; HisB10 is replaced by Asp and residues B28–B29 are swapped so that the molecule stays monomeric. The connecting domain is the least ordered part"
+      }
+    ],
+    "pubchem_cid": 16157840,
+    "notes": "There is no crystal structure of free full-length C-peptide. Solution NMR shows a flexible chain rather than a stable fold. In 2024, crystal structures of T-cell receptors bound to HLA-DQ8 showed how immune cells recognise a fragment of C-peptide and hybrid peptides derived from it; those complexes are of a short epitope, not the intact 31-residue peptide."
+  },
+  "ids": {
+    "pubchem_cid": 16157840,
+    "cas": "33017-11-7",
+    "chembl": "CHEMBL4594409",
+    "unii": "O2J76Y002M",
+    "uniprot": "P01308"
+  },
+  "wiki": "C-peptide",
+  "queries": {
+    "pubmed": "(\"C-peptide\"[tiab] OR CBX129801[tiab] OR Ersatta[tiab])",
+    "ctgov": "AREA[InterventionName](\"C-peptide\" OR CBX129801 OR Ersatta)",
+    "ctgov_exclude": ["NCT06801769", "NCT07132489", "NCT06821360", "NCT07155473", "NCT05687500", "NCT06427421", "NCT04005261", "NCT01227538", "NCT04774081", "NCT01665638"]
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Diabetic peripheral neuropathy in type 1 diabetes",
+        "stage": "Phase 2 — primary endpoint not met (2016)",
+        "detail": "Native C-peptide, given under the skin for three or six months, improved sensory nerve conduction in two randomised trials. A later 52-week trial of once-weekly pegylated C-peptide in 250 people did not beat placebo on sural nerve conduction velocity, the primary measure, although vibration perception improved."
+      },
+      {
+        "use": "Kidney function in type 1 diabetes",
+        "stage": "Small short-term infusion study",
+        "detail": "In 11 people with type 1 diabetes, a one-hour intravenous infusion at physiological rates lowered the glomerular filtration rate by about 7% and raised whole-body glucose use by about 25% compared with a saline control. This has not become a treatment."
+      },
+      {
+        "use": "Glucagon response during insulin-induced hypoglycaemia",
+        "stage": "Early phase 1 — recruiting (2024)",
+        "detail": "The University of Cincinnati is enrolling about 38 people with type 1 diabetes to test whether a C-peptide infusion changes glucagon release during insulin-induced hypoglycaemia, following an observation in dogs. No results have been reported (NCT06470295)."
+      }
+    ],
+    "off_label": []
+  },
+  "history": [
+    {
+      "year": 1967,
+      "date": "1967-02",
+      "title": "A precursor found in an islet adenoma",
+      "detail": "Steiner and Oyer reported that a human islet-cell tumour made a protein of higher molecular weight than insulin, which trypsin could convert to insulin-like material. They proposed a single chain with a connecting stretch between the B and A sequences.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1967,
+      "date": "1967-08-11",
+      "title": "The precursor is named proinsulin",
+      "detail": "In rat islets, radioactive amino acids entered the larger protein before insulin, and about 70% of that label could be chased into insulin after new synthesis was stopped. Steiner and colleagues suggested the name proinsulin.",
+      "kind": "science"
+    },
+    {
+      "year": 1968,
+      "date": "1968-07-12",
+      "title": "Porcine connecting peptide sequenced",
+      "detail": "Chance, Ellis and Bromer isolated proinsulin from crystalline porcine insulin and sequenced the 33-residue segment that joins the B chain to the A chain, including the basic residues at which it is later cut.",
+      "kind": "science"
+    },
+    {
+      "year": 1969,
+      "date": "1969-05-22",
+      "title": "C-peptide isolated from pancreas",
+      "detail": "Clark, Cho, Rubenstein and Steiner isolated a connecting-peptide fragment, which they called C-peptide, from bovine and human pancreas.",
+      "kind": "science"
+    },
+    {
+      "year": 1970,
+      "date": "1970-09",
+      "title": "Measured in human serum",
+      "detail": "Melani, Rubenstein, Oyer and Steiner described an immunoassay that detected proinsulin and C-peptide in serum. After gel filtration, insulin and C-peptide were present in equimolar amounts.",
+      "kind": "science"
+    },
+    {
+      "year": 1971,
+      "date": "1971-03-10",
+      "title": "Human sequence reported",
+      "detail": "Oyer, Cho, Peterson and colleagues reported the amino-acid sequence of C-peptide isolated from human pancreas, the 31-residue peptide used today.",
+      "kind": "science"
+    },
+    {
+      "year": 1975,
+      "date": "1975-06",
+      "title": "Equimolar secretion in the portal vein",
+      "detail": "In six people, portal insulin and C-peptide approached equimolar concentrations at peak secretion, and proinsulin was about 2.5% of insulin immunoreactivity. The study is a basis for using peripheral C-peptide as an index of beta-cell secretion.",
+      "kind": "science"
+    },
+    {
+      "year": 1978,
+      "date": "1978-07",
+      "title": "Plasma half-life measured",
+      "detail": "Faber, Hagen, Binder and colleagues injected synthetic human C-peptide. The mean half-life was 33.5 minutes in healthy adults and 42.5 minutes in insulin-dependent diabetes; metabolic clearance was similar in both, about 4 mL/min per kg.",
+      "kind": "science"
+    },
+    {
+      "year": 1986,
+      "date": "1986-01",
+      "title": "Secretion rates calculated from C-peptide",
+      "detail": "Polonsky and colleagues showed that a two-compartment model, fitted to each person's decay curve, reconstructed biosynthetic C-peptide infusions from peripheral concentrations. Clearance stayed constant over a wide concentration range.",
+      "kind": "science"
+    },
+    {
+      "year": 1992,
+      "date": "1992-02",
+      "title": "A short infusion changes kidney function",
+      "detail": "In 11 people with type 1 diabetes, intravenous C-peptide for one hour lowered the glomerular filtration rate by 7% and raised whole-body glucose use by about 25%. A saline infusion in a separate group did not.",
+      "kind": "trial"
+    },
+    {
+      "year": 1997,
+      "date": "1997-07-25",
+      "title": "Activity that ignores chirality",
+      "detail": "Human C-peptide prevented or reduced vascular and nerve dysfunction in diabetic rats. A reversed sequence and an all-D-amino-acid version were equally active, evidence for a non-chiral interaction rather than a conventional receptor.",
+      "kind": "science"
+    },
+    {
+      "year": 2003,
+      "date": "2003-02",
+      "title": "Sensory nerve conduction improves in a small trial",
+      "detail": "In a three-month randomised trial, 46 people with type 1 diabetes and early nerve dysfunction completed treatment. Subcutaneous C-peptide raised sural sensory conduction by 2.7 m/s compared with placebo and improved vibration perception.",
+      "kind": "trial"
+    },
+    {
+      "year": 2005,
+      "date": "2005-08",
+      "title": "NMR structure of the free peptide",
+      "detail": "Munte, Vilela, Kalbitzer and Garratt showed that human C-peptide is not a stable fold. Local turns appear in trifluoroethanol, and the C-terminal pentapeptide is the best-ordered part (PDB 1T0C).",
+      "kind": "science"
+    },
+    {
+      "year": 2007,
+      "date": "2007-01",
+      "title": "Six-month replacement study",
+      "detail": "An exploratory trial (NCT00278980, Creative Peptides Sweden) gave 1.5 mg or 4.5 mg a day, split into four subcutaneous doses, for six months. It enrolled 180 people from October 2003 to December 2004. Among 139 who finished the protocol, sensory conduction improved more often than on placebo, chiefly in those with less severe nerve damage.",
+      "kind": "trial"
+    },
+    {
+      "year": 2010,
+      "date": "2010-03-12",
+      "title": "C-peptide seen inside proinsulin",
+      "detail": "Yang, Hua, Liu and colleagues solved the NMR structure of a monomeric proinsulin analogue (PDB 2KQP). The insulin moiety looks like insulin; the tethered C domain is progressively less ordered.",
+      "kind": "science"
+    },
+    {
+      "year": 2011,
+      "date": "2011-04",
+      "title": "Pharmacokinetics of a pegylated analogue",
+      "detail": "Cebix began a phase 1/2 study of subcutaneous CBX129801 in 72 people with type 1 diabetes. The study, started in April 2011, was completed in October 2012.",
+      "kind": "trial"
+    },
+    {
+      "year": 2013,
+      "title": "GPR146 proposed as a receptor",
+      "detail": "Yosten, Kolar and colleagues reported that knocking down the orphan receptor GPR146 blocked C-peptide responses in cells, and that C-peptide and the receptor could be seen together at the membrane.",
+      "kind": "science"
+    },
+    {
+      "year": 2016,
+      "date": "2016-04",
+      "title": "Phase 2 neuropathy trial misses its primary endpoint",
+      "detail": "In 250 people with type 1 diabetes and mild to moderate neuropathy, weekly pegylated C-peptide for 52 weeks (0.8 mg or 2.4 mg) did not improve sural nerve conduction velocity more than placebo. Vibration perception improved by about 25%; the clinical neuropathy score did not change. The trial had run from October 2012 to January 2015.",
+      "kind": "trial"
+    },
+    {
+      "year": 2020,
+      "date": "2020-07-01",
+      "title": "GPR146 not confirmed",
+      "detail": "Lindfors and colleagues found no signalling, arrestin recruitment or binding when human or mouse C-peptide was applied to cells overexpressing GPR146, at concentrations up to 33 µM.",
+      "kind": "science"
+    },
+    {
+      "year": 2024,
+      "date": "2024-06",
+      "title": "Hypoglycaemia physiology study opens",
+      "detail": "A University of Cincinnati early-phase study (NCT06470295) began recruiting to test whether infused C-peptide changes the glucagon response during insulin-induced hypoglycaemia. About 38 participants are planned; completion is estimated in 2028.",
+      "kind": "trial"
+    },
+    {
+      "year": 2024,
+      "date": "2024-09",
+      "title": "T cells seen recognising a C-peptide fragment",
+      "detail": "Crystal structures showed how T-cell receptors from people with type 1 diabetes recognise a C-peptide epitope, and hybrid peptides spliced from it, when either is presented by HLA-DQ8.",
+      "kind": "science"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "No FDA-approved C-peptide medicine. The Cebix neuropathy programme ended at phase 2 without an approval. An early-phase physiology study (NCT06470295) is recruiting. Clinical laboratories measure endogenous C-peptide as a diagnostic test; that is not a drug authorisation."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "No centrally authorised C-peptide medicine. ChEMBL records the highest development phase as phase 2."
+    }
+  ],
+  "pk": {
+    "half_life": "Mean 33.5 minutes in healthy adults (range 24.9–45.3) and 42.5 minutes in insulin-dependent diabetes (range 39.4–48.5) after an intravenous dose",
+    "metabolism": "Metabolic clearance about 4.4 mL/min per kg in healthy adults and 4.7 mL/min per kg in insulin-dependent diabetes; a later biosynthetic-peptide study found 3.8–3.9 mL/min per kg, constant across a wide concentration range"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose. Published studies used intravenous infusions or several daily subcutaneous injections of native C-peptide, or a once-weekly pegylated analogue. None of these is an authorised treatment.",
+  "safety": {
+    "common": [],
+    "serious": [],
+    "warnings": [
+      "Not an approved medicine. The largest trial did not show a benefit on its primary nerve-conduction measure"
+    ],
+    "notes": "Abstracts of the infusion and injection studies, from one-hour infusions to a year of weekly doses, do not describe a characteristic pattern of side effects. Those studies were not large safety trials, and there is no approved product label."
+  },
+  "market": null,
+  "facts": [
+    "Beta cells release insulin and C-peptide in equal amounts. At peak secretion the two were nearly equimolar in the portal vein of six people, while proinsulin was only about 2.5% of insulin immunoreactivity.",
+    "The human peptide is 31 residues. The porcine connecting segment sequenced in 1968 is 33 residues and includes the four basic amino acids that processing removes, leaving a 29-residue peptide of a different sequence.",
+    "Solution NMR shows no stable fold. The best-ordered part is the C-terminal five residues, Glu-Gly-Ser-Leu-Gln.",
+    "A 250-person, year-long trial of once-weekly pegylated C-peptide missed its primary endpoint. Sural nerve conduction rose about as much on placebo as on the drug."
+  ],
+  "related": ["insulin", "glucagon", "pramlintide"],
+  "references": [
+    {
+      "title": "The biosynthesis of insulin and a probable precursor of insulin by a human islet cell adenoma",
+      "authors": "Steiner DF, Oyer PE",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": 1967,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16591494/"
+    },
+    {
+      "title": "Insulin biosynthesis: evidence for a precursor",
+      "authors": "Steiner DF, Cunningham D, Spigelman L, Aten B",
+      "journal": "Science",
+      "year": 1967,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/4291105/"
+    },
+    {
+      "title": "Porcine proinsulin: characterization and amino acid sequence",
+      "authors": "Chance RE, Ellis RM, Bromer WW",
+      "journal": "Science",
+      "year": 1968,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/5657063/"
+    },
+    {
+      "title": "Identification of proinsulin and C-peptide in human serum by a specific immunoassay",
+      "authors": "Melani F, Rubenstein AH, Oyer PE, et al.",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": 1970,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/4318774/"
+    },
+    {
+      "title": "Studies on human proinsulin. Isolation and amino acid sequence of the human pancreatic C-peptide",
+      "authors": "Oyer PE, Cho S, Peterson JD, et al.",
+      "journal": "J Biol Chem",
+      "year": 1971,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/5101771/"
+    },
+    {
+      "title": "Kinetics of human connecting peptide in normal and diabetic subjects",
+      "authors": "Faber OK, Hagen C, Binder C, et al.",
+      "journal": "J Clin Invest",
+      "year": 1978,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/659633/"
+    },
+    {
+      "title": "Amelioration of sensory nerve dysfunction by C-peptide in patients with type 1 diabetes",
+      "authors": "Ekberg K, Brismar T, Johansson BL, et al.",
+      "journal": "Diabetes",
+      "year": 2003,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12540632/"
+    },
+    {
+      "title": "Long-acting C-peptide and neuropathy in type 1 diabetes: a 12-month clinical trial",
+      "authors": "Wahren J, Foyt H, Daniels M, et al.",
+      "journal": "Diabetes Care",
+      "year": 2016,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26884473/"
+    },
+    {
+      "title": "Solution structure of proinsulin: connecting domain flexibility and prohormone processing",
+      "authors": "Yang Y, Hua QX, Liu J, et al.",
+      "journal": "J Biol Chem",
+      "year": 2010,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20106974/"
+    },
+    {
+      "title": "Is GPR146 really the receptor for proinsulin C-peptide?",
+      "authors": "Lindfors L, Sundström L, Fröderberg Roth L, et al.",
+      "journal": "Bioorg Med Chem Lett",
+      "year": 2020,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32354568/"
+    }
+  ]
+}

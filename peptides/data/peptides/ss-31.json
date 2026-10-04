@@ -1,0 +1,139 @@
+{
+  "slug": "ss-31",
+  "name": "Elamipretide (SS-31)",
+  "aliases": ["SS-31", "MTP-131", "Bendavia", "Szeto–Schiller peptide", "Elamipretide hydrochloride", "D-Arg-Dmt-Lys-Phe-NH2"],
+  "category": "longevity",
+  "drug_class": "Mitochondria-targeted peptide (cardiolipin binder)",
+  "subclass": "Aromatic–cationic Szeto–Schiller tetrapeptide with D-arginine and 2′,6′-dimethyltyrosine",
+  "status": "approved",
+  "status_note": "Granted US accelerated approval in September 2025 (Forzinity) to improve muscle strength in Barth syndrome, the first approved drug designed to target mitochondria; continued approval depends on a confirmatory trial, and all other uses remain investigational.",
+  "evidence": 4,
+  "evidence_note": "Approved on a 12-patient crossover trial that missed its primary endpoints, supported by open-label extension and natural-history comparisons. Larger randomised trials in mitochondrial myopathy (MMPOWER-3, 218 patients), heart attack and heart failure were negative, and a phase 3 trial in dry macular degeneration is ongoing.",
+  "tagline": "Mitochondria-targeted tetrapeptide; the first drug approved for Barth syndrome",
+  "summary": "Elamipretide, first known as SS-31, is a synthetic four-amino-acid peptide that enters cells, concentrates in the inner mitochondrial membrane and binds the phospholipid cardiolipin, which is thought to stabilise the machinery that makes ATP. After two decades of development and several failed trials in heart and muscle disease, it received US accelerated approval in 2025 as Forzinity for Barth syndrome, an ultra-rare inherited disorder of cardiolipin. It is also promoted in anti-ageing circles as a 'mitochondrial' peptide, a use with no supporting trials.",
+  "overview": [
+    "SS-31 is one of the Szeto–Schiller (SS) peptides, named after pharmacologist Hazel Szeto of Weill Cornell Medical College in New York and peptide chemist Peter Schiller of the Clinical Research Institute of Montreal. Their collaboration grew out of [Dmt1]DALDA, a highly polar opioid tetrapeptide from Schiller's laboratory. In 2004 they reported that small peptides built from alternating aromatic and basic amino acids cross cell membranes and concentrate about 1,000-fold in the inner mitochondrial membrane, where they protect cells against oxidative injury. SS-31 (D-Arg–Dmt–Lys–Phe-NH2) became the lead compound, and in 2006 Szeto founded Stealth Peptides, later Stealth BioTherapeutics, which licensed the technology from Cornell.",
+    "Early clinical development targeted ischaemia–reperfusion injury: an intravenous infusion (then called Bendavia or MTP-131) given during emergency angioplasty did not reduce heart-attack size in the EMBRACE STEMI trial (2015). Daily subcutaneous injections of elamipretide then failed to improve heart function in heart failure (PROGRESS-HF) and missed both primary endpoints in MMPOWER-3, a 218-patient phase 3 trial in primary mitochondrial myopathy (2019). A phase 2 trial in dry age-related macular degeneration also missed its primary endpoints but showed slower loss of the photoreceptor ellipsoid zone, which became the primary endpoint of the phase 3 ReNEW trial.",
+    "Barth syndrome, an X-linked disease caused by TAFAZZIN mutations that disrupt the remodelling of cardiolipin, became the lead indication. In the 12-patient TAZPOWER crossover trial elamipretide was no better than placebo on walking distance or fatigue, but patients improved during the open-label extension. The FDA refused to file a first application in 2021, an advisory committee voted 10–6 in favour in 2024, a complete response letter followed in May 2025, and in September 2025 the agency granted accelerated approval based on gains in knee-extensor muscle strength. A placebo-controlled confirmatory trial began in 2026, the year the company renamed itself Mighty Therapeutics.",
+    "Interest from the longevity field rests mainly on animal work: a single dose restored mitochondrial energetics in the muscle of old mice, and eight weeks of treatment reversed age-related diastolic dysfunction in old mouse hearts. In a small randomised trial in older adults, one infusion produced a small, short-lived rise in maximal mitochondrial ATP production in a hand muscle without improving fatigue resistance, and an open-label pilot in healthy older adults began in late 2025. SS-31 is nevertheless prescribed off-label by some anti-ageing clinics and sold online as a 'research' peptide; no trial has shown that it slows ageing or improves health in healthy people."
+  ],
+  "mechanism": [
+    "Elamipretide carries a net charge of +3 at physiological pH yet crosses cell membranes. Its alternating aromatic and basic residues let it partition into the inner mitochondrial membrane, where it binds cardiolipin through electrostatic and hydrophobic interactions. Cardiolipin is a four-tailed phospholipid found almost exclusively in this membrane; it shapes the folded cristae and holds respiratory-chain complexes together in supercomplexes, and it is abnormal in Barth syndrome.",
+    "By binding cardiolipin the peptide is proposed to protect cristae structure, keep cytochrome c working as an electron carrier rather than a cardiolipin-oxidising peroxidase, support oxidative phosphorylation and reduce production of reactive oxygen species; the dimethyltyrosine ring can also scavenge oxidants directly. A 2024 genome-wide CRISPR screen in kidney cells and mice identified phospholipid scramblase 3, an inner-membrane protein, as required for SS-31's protective effect. Nearly all of this mechanistic evidence comes from cell and animal studies; the US label describes the drug simply as a mitochondrial cardiolipin binder that improves mitochondrial morphology and function."
+  ],
+  "origin": "Fully synthetic tetrapeptide with no natural counterpart, designed from Szeto and Schiller's work on the polar opioid peptide [Dmt1]DALDA (Dmt-D-Arg-Phe-Lys-NH2)",
+  "discovery": {"year": 2004, "by": "Hazel H. Szeto (Weill Cornell Medical College) and Peter W. Schiller (Clinical Research Institute of Montreal)", "where": "New York, USA and Montreal, Canada", "note": "The mitochondria-targeting SS peptide family was reported in J Biol Chem in 2004; SS-31 itself is described by name, with its sequence and roughly 5,000-fold accumulation in isolated mitochondria, in a 2005 paper from the group."},
+  "first_human_year": 2010,
+  "first_approval": {"date": "2025-09-19", "agency": "FDA", "region": "US", "brand": "Forzinity", "indication": "Barth syndrome, to improve muscle strength in patients weighing at least 30 kg (accelerated approval)"},
+  "developer": "Stealth BioTherapeutics, Needham, Massachusetts (renamed Mighty Therapeutics in June 2026), under licence from Weill Cornell Medical College",
+  "brands": [
+    {"name": "Forzinity", "company": "Stealth BioTherapeutics (now Mighty Therapeutics)", "route": "Subcutaneous injection, once daily", "use": "Barth syndrome: to improve muscle strength in adults and children weighing at least 30 kg (accelerated approval)", "approved": "2025-09-19", "agency": "FDA"}
+  ],
+  "targets": [
+    {"name": "Cardiolipin (inner mitochondrial membrane phospholipid)", "gene": null, "uniprot": null, "action": "Binds; proposed to stabilise cristae and respiratory-chain supercomplexes"},
+    {"name": "Phospholipid scramblase 3", "gene": "PLSCR3", "uniprot": "Q9NRY6", "action": "Binds and stimulates scramblase activity; proposed target from a 2024 CRISPR screen (cells and mice)"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["r","Dmt","K","F"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A1", "type": "d-amino", "label": "D-arginine; the label specifies that all other residues have the L configuration", "short": "D-Arg"},
+      {"at": "A2", "type": "nonnatural", "label": "2′,6′-dimethyl-L-tyrosine (Dmt); in the 2004 study, analogues lacking Dmt did not reduce mitochondrial reactive oxygen species", "short": "Dmt"},
+      {"at": "A4", "type": "amidation", "label": "C-terminal phenylalaninamide, which removes the C-terminal negative charge and leaves the peptide with a net charge of +3", "short": "NH2"}
+    ],
+    "notation": "H-D-Arg-Dmt-Lys-Phe-NH2",
+    "note": "The approved product is the trihydrochloride salt (C32H49N9O5·3HCl, MW 749.2); the formula and molecular weight below are for the free base."
+  },
+  "formula": "C32H49N9O5",
+  "mw": 639.8,
+  "half_life": "Not stated in the US label; the dose is almost completely cleared in urine within 48 h",
+  "half_life_hours": null,
+  "routes": ["Subcutaneous injection, once daily (approved product)", "Intravenous infusion (early trials)", "Topical eye drops (investigational)", "Oral (phase 1 studies only)"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 11764719,
+    "notes": "No experimental structure of elamipretide has been deposited in the Protein Data Bank; as a flexible linear tetrapeptide it has no fixed fold on its own."
+  },
+  "ids": {"pubchem_cid": 11764719, "cas": "736992-21-5", "drugbank": "DB11981", "chembl": "CHEMBL3833370", "unii": "87GWG91S09", "kegg": "D10925", "chebi": "CHEBI:233331", "inn": "elamipretide"},
+  "wiki": "Elamipretide",
+  "queries": {
+    "pubmed": "(elamipretide[tiab] OR \"MTP-131\"[tiab] OR Bendavia[tiab] OR \"Szeto-Schiller\"[tiab] OR ((\"SS-31\"[tiab] OR \"SS31\"[tiab]) AND (peptide*[tiab] OR mitochondri*[tiab] OR cardiolipin[tiab] OR antioxidant*[tiab])))",
+    "ctgov": "elamipretide OR SS-31 OR MTP-131 OR Bendavia"
+  },
+  "uses": {
+    "approved": [
+      {"use": "Barth syndrome", "detail": "To improve muscle strength in adults and children weighing at least 30 kg. Accelerated approval based on knee-extensor strength, an intermediate endpoint; continued approval depends on a confirmatory trial.", "since": 2025, "where": "US"}
+    ],
+    "investigational": [
+      {"use": "Dry age-related macular degeneration", "stage": "Phase 3 (ReNEW, ongoing)", "detail": "ReCLAIM-2 (176 patients) missed its visual-acuity and geographic-atrophy endpoints but slowed ellipsoid-zone loss; the 313-patient ReNEW trial, started in 2024, uses that measure as its primary endpoint and is expected to finish in late 2027."},
+      {"use": "Primary mitochondrial myopathy", "stage": "Phase 3 — failed (2019); second phase 3 completed", "detail": "MMPOWER-3 (218 patients) showed no benefit on walking distance or fatigue. NuPOWER (102 patients with nuclear-DNA mutations) has completed; the company reports a possible benefit in people with POLG mutations and plans a targeted trial."},
+      {"use": "Heart attack and heart failure", "stage": "Phase 2 — negative", "detail": "A one-hour infusion during angioplasty did not reduce infarct size (EMBRACE STEMI), and four weeks of daily injections did not improve left-ventricular volumes in 71 patients with reduced ejection fraction (PROGRESS-HF)."},
+      {"use": "Leber hereditary optic neuropathy", "stage": "Phase 2 — primary endpoint missed", "detail": "Topical 1% eye drops were well tolerated but did not improve best-corrected visual acuity compared with vehicle in 12 patients."},
+      {"use": "Age-related decline in muscle function", "stage": "Phase 2 pilot", "detail": "A single infusion produced a small, short-lived rise in maximal mitochondrial ATP production in the hand muscle of 39 older adults, without improving fatigue resistance; an open-label four-week pilot in healthy older adults (SHAPE) began in November 2025."}
+    ],
+    "off_label": [
+      {"use": "'Mitochondrial' anti-ageing and performance use", "detail": "SS-31 has been prescribed off-label by some anti-ageing clinics and sold online as a 'research' peptide, promoted for energy, fatigue, recovery and longevity; such material is not the approved product.", "evidence": "No trial has shown benefit for these uses in healthy people. Purity, identity and sterility of unlicensed products are not assured, and the label warns of serious hypersensitivity reactions. In August 2026 the FDA sent a warning letter to one online seller that listed SS-31 among unapproved new drugs marketed as 'research use only'."}
+    ]
+  },
+  "history": [
+    {"year": 2004, "date": "2004-08", "title": "Mitochondria-targeted SS peptides reported", "detail": "Szeto, Schiller and colleagues described cell-permeable aromatic–cationic peptide antioxidants that concentrate about 1,000-fold in the inner mitochondrial membrane and protect against oxidative cell death and cardiac reperfusion injury.", "kind": "discovery"},
+    {"year": 2006, "title": "Stealth Peptides founded", "detail": "Hazel Szeto founded Stealth Peptides, later Stealth BioTherapeutics, which licensed the SS peptides from Cornell.", "kind": "market"},
+    {"year": 2010, "date": "2010-05", "title": "First human study", "detail": "A phase 1 trial of single intravenous infusions of MTP-131 (Bendavia) in healthy adults began, the first use of the peptide in people.", "kind": "trial"},
+    {"year": 2013, "date": "2013-07", "title": "Cardiolipin identified as the binding partner", "detail": "Birk and colleagues showed that SS-31 binds cardiolipin with high affinity, protects cristae and speeds ATP recovery after kidney ischaemia in rats.", "kind": "science"},
+    {"year": 2013, "title": "Energetics of old mouse muscle restored", "detail": "A single dose restored mitochondrial ATP production and coupling in the skeletal muscle of 27-month-old mice to youthful levels, drawing interest from ageing researchers.", "kind": "science"},
+    {"year": 2015, "date": "2015-11", "title": "EMBRACE STEMI trial negative", "detail": "Intravenous MTP-131 given during primary angioplasty for anterior heart attack was safe but did not reduce infarct size.", "kind": "trial"},
+    {"year": 2019, "date": "2019-12-20", "title": "MMPOWER-3 fails", "detail": "The 218-patient phase 3 trial in primary mitochondrial myopathy missed both primary endpoints, the six-minute walk and fatigue scores.", "kind": "trial"},
+    {"year": 2021, "date": "2021-10", "title": "FDA refuses to file Barth application", "detail": "The agency declined to review the first new drug application for Barth syndrome, saying it lacked an adequate and well-controlled trial.", "kind": "regulatory"},
+    {"year": 2024, "date": "2024-05", "title": "Phase 3 ReNEW trial starts in dry AMD", "detail": "The trial enrolled 313 people with dry age-related macular degeneration, with ellipsoid-zone loss as the primary endpoint; completion is expected in late 2027.", "kind": "trial"},
+    {"year": 2024, "date": "2024-10-10", "title": "FDA advisers vote 10–6 in favour", "detail": "The Cardiovascular and Renal Drugs Advisory Committee backed elamipretide for Barth syndrome despite FDA reviewers' concerns about open-label and externally controlled data.", "kind": "regulatory"},
+    {"year": 2025, "date": "2025-05", "title": "Complete response letter", "detail": "The FDA declined approval but agreed to consider knee-extensor muscle strength as an intermediate endpoint for accelerated approval; the company resubmitted in August 2025.", "kind": "regulatory"},
+    {"year": 2025, "date": "2025-09-19", "title": "Forzinity approved", "detail": "Accelerated approval for Barth syndrome in patients weighing at least 30 kg made elamipretide the first approved treatment for the disease and the first approved mitochondria-targeted drug.", "kind": "approval"},
+    {"year": 2026, "date": "2026-06-16", "title": "Stealth becomes Mighty Therapeutics", "detail": "The developer adopted a new name after the commercial launch of Forzinity.", "kind": "market"},
+    {"year": 2026, "date": "2026-07", "title": "Confirmatory trial begins", "detail": "4TAZPower, a 72-week randomised placebo-controlled trial planned for 48 patients with Barth syndrome, started enrolling to confirm clinical benefit.", "kind": "trial"},
+    {"year": 2026, "date": "2026-08-24", "title": "FDA warns an online 'research peptide' seller", "detail": "A warning letter to Peptide Partners LLC listed 'SS-31 (Elamipretide)' among unapproved new drugs, stating that despite 'research use only' labels its website showed the products were intended for human use.", "kind": "regulatory"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "approved", "detail": "Forzinity (elamipretide hydrochloride) received accelerated approval on 19 September 2025 for Barth syndrome in patients weighing at least 30 kg; continued approval depends on a confirmatory trial. Other uses are investigational."}
+  ],
+  "pk": {
+    "half_life": "Not stated in the US label; minimal accumulation with once-daily dosing",
+    "tmax": "0.5–1 hour after subcutaneous injection",
+    "bioavailability": "≈ 92% after subcutaneous injection; low plasma protein binding (≈ 39%)",
+    "metabolism": "Sequential C-terminal degradation to inactive tripeptide (M1) and dipeptide (M2) metabolites; no hepatic metabolism seen in vitro",
+    "excretion": "Urine: about 100% of a dose recovered as elamipretide, M1 or M2 within 48 hours; exposure rises in renal impairment"
+  },
+  "dosing": [
+    {"product": "Forzinity", "regimen": "40 mg by subcutaneous injection once daily in patients weighing at least 30 kg; 20 mg once daily in adults with eGFR below 30 mL/min who are not on dialysis."}
+  ],
+  "dosing_note": "Labelled US regimen summarised for reference only; follow the prescribing information and a clinician's advice. There is no approved dose for any other use, including anti-ageing.",
+  "safety": {
+    "common": ["Injection-site reactions: redness, pain, hardening, itching, bruising and hives (seen in all 12 treated patients in the Barth trial)", "Raised blood eosinophil counts during treatment of 30 days or longer, usually without symptoms"],
+    "serious": ["Hypersensitivity reactions, including serious allergic reactions needing emergency treatment (rash, papular lesions, eczematous dermatitis, cough), occurring minutes to months after starting"],
+    "warnings": ["Contraindicated after a serious hypersensitivity reaction to elamipretide or its excipients", "Contains benzyl alcohol: not for use in neonates because of the risk of gasping syndrome"],
+    "notes": "Across trials in several hundred patients the drug was generally well tolerated, with injection-site reactions the main problem. The label expects overdose to cause histamine-related effects such as low blood pressure. Long-term safety data come mainly from small Barth syndrome and myopathy cohorts."
+  },
+  "market": null,
+  "facts": [
+    "Forzinity is the first FDA-approved drug designed to act on mitochondria.",
+    "Although it carries three positive charges, the peptide crosses cell membranes and accumulates more than 1,000-fold in the inner mitochondrial membrane.",
+    "The approval rests on 12 patients: the drug did not beat placebo on its primary endpoints, and approval relied on strength gains during the open-label extension.",
+    "Barth syndrome affects about 150 people in the United States.",
+    "'SS' stands for Szeto–Schiller, after the two scientists who designed the peptide family."
+  ],
+  "related": ["mots-c", "humanin", "epitalon"],
+  "references": [
+    {"title": "Cell-permeable peptide antioxidants targeted to inner mitochondrial membrane inhibit mitochondrial swelling, oxidative cell death, and reperfusion injury", "authors": "Zhao K, Zhao GM, Wu D, et al.", "journal": "J Biol Chem", "year": 2004, "url": "https://pubmed.ncbi.nlm.nih.gov/15178689/"},
+    {"title": "The mitochondrial-targeted compound SS-31 re-energizes ischemic mitochondria by interacting with cardiolipin", "authors": "Birk AV, Liu S, Soong Y, et al.", "journal": "J Am Soc Nephrol", "year": 2013, "url": "https://pubmed.ncbi.nlm.nih.gov/23813215/"},
+    {"title": "Mitochondrial-targeted peptide rapidly improves mitochondrial energetics and skeletal muscle performance in aged mice", "authors": "Siegel MP, Kruse SE, Percival JM, et al.", "journal": "Aging Cell", "year": 2013, "url": "https://pubmed.ncbi.nlm.nih.gov/23692570/"},
+    {"title": "EMBRACE STEMI study: a phase 2a trial to evaluate the safety, tolerability, and efficacy of intravenous MTP-131 on reperfusion injury in patients undergoing primary percutaneous coronary intervention", "authors": "Gibson CM, Giugliano RP, Kloner RA, et al.", "journal": "Eur Heart J", "year": 2016, "url": "https://pubmed.ncbi.nlm.nih.gov/26586786/"},
+    {"title": "A phase 2/3 randomized clinical trial followed by an open-label extension to evaluate the effectiveness of elamipretide in Barth syndrome (TAZPOWER)", "authors": "Reid Thompson W, Hornby B, Manuel R, et al.", "journal": "Genet Med", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/33077895/"},
+    {"title": "In vivo mitochondrial ATP production is improved in older adult skeletal muscle after a single dose of elamipretide in a randomized trial", "authors": "Roshanravan B, Liu SZ, Ali AS, et al.", "journal": "PLoS One", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34264994/"},
+    {"title": "Efficacy and safety of elamipretide in individuals with primary mitochondrial myopathy: the MMPOWER-3 randomized clinical trial", "authors": "Karaa A, Bertini E, Carelli V, et al.", "journal": "Neurology", "year": 2023, "url": "https://pubmed.ncbi.nlm.nih.gov/37268435/"},
+    {"title": "Genome-wide CRISPR screen identifies phospholipid scramblase 3 as the biological target of mitoprotective drug SS-31", "authors": "Silvaroli JA, Bisunke B, Kim JY, et al.", "journal": "J Am Soc Nephrol", "year": 2024, "url": "https://pubmed.ncbi.nlm.nih.gov/38530359/"},
+    {"title": "ReCLAIM-2: a randomized phase II clinical trial evaluating elamipretide in age-related macular degeneration, geographic atrophy growth, visual function, and ellipsoid zone preservation", "authors": "Ehlers JP, Hu A, Boyer D, et al.", "journal": "Ophthalmol Sci", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/39605874/"},
+    {"title": "Elamipretide: first approval", "authors": "Shirley M", "journal": "Drugs", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/41335372/"}
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "slug": "teriparatide",
+  "name": "Teriparatide",
+  "aliases": ["PTH(1–34)", "hPTH(1–34)", "Human parathyroid hormone (1–34)", "Recombinant human PTH(1–34)", "LY333334", "Teriparatide acetate"],
+  "category": "hormone",
+  "drug_class": "Parathyroid hormone analogue (PTH1 receptor agonist)",
+  "subclass": "Recombinant N-terminal 1–34 fragment of human parathyroid hormone; bone-anabolic agent",
+  "status": "approved",
+  "status_note": "Approved for osteoporosis in the US (Forteo, 2002), the EU (Forsteo, 2003), Japan, Canada and elsewhere, with biosimilar and generic versions; synthetic teriparatide acetate was first approved in the US in 1987 as a diagnostic agent (Parathar).",
+  "evidence": 5,
+  "evidence_note": "Large placebo- and active-controlled fracture trials (1,637 women in the Fracture Prevention Trial, 1,360 in VERO, 428 patients in glucocorticoid-induced osteoporosis), trials in men and in Japan, and two decades of post-marketing surveillance.",
+  "tagline": "Bone-building osteoporosis drug made of the active 1–34 fragment of human PTH",
+  "summary": "Teriparatide is a copy of the first 34 amino acids of human parathyroid hormone, the part that switches on its receptor. Injected once a day, it stimulates bone-forming cells more than bone-resorbing ones, raising bone density and cutting new spine fractures by about two-thirds in postmenopausal women with osteoporosis; it is sold by Eli Lilly as Forteo and Forsteo and as biosimilar and generic versions.",
+  "overview": [
+    "Teriparatide is an exact copy of the first 34 amino acids of human parathyroid hormone (PTH), the 84-residue hormone that controls calcium levels; this N-terminal region carries the hormone's receptor-activating activity. Made in genetically modified Escherichia coli and sold by Eli Lilly as Forteo in the US and Forsteo in Europe, it is an anabolic osteoporosis treatment that stimulates new bone formation rather than only slowing bone loss.",
+    "Its roots go back to 1925, when J. B. Collip, a member of the Toronto insulin team, prepared an active parathyroid extract. In 1971 John Potts, Gerald Tregear, Hugh Niall and colleagues at Massachusetts General Hospital showed that a synthetic 1–34 fragment of bovine PTH reproduced the hormone's activity. Human PTH(1–34) was synthesised in 1974, and Reeve and colleagues reported the first studies of daily injections in osteoporosis in 1976 and 1980. Synthetic teriparatide acetate (Parathar) was approved in the US in 1987, but only as a diagnostic test of PTH responsiveness.",
+    "Lilly's recombinant teriparatide was tested in the Fracture Prevention Trial of 1,637 postmenopausal women with previous vertebral fractures: 20 µg daily cut new vertebral fractures by 65% and non-vertebral fragility fractures by about half. The phase 3 programme was stopped early after rats given high doses for most of their lives developed osteosarcoma, so the 2002 US approval carried a boxed warning and a two-year lifetime limit. Large studies linking pharmacy claims with cancer registries later found no increase in osteosarcoma in patients, and in November 2020 the FDA removed the boxed warning and relaxed the two-year limit.",
+    "Other PTH-receptor agonists followed, including abaloparatide, an analogue of PTH-related protein (2017), and palopegteriparatide (Yorvipath), a prodrug that releases teriparatide and is approved for chronic hypoparathyroidism (EU 2023, US 2024). Biosimilars have been sold in Europe since 2017, while in the US a 505(b)(2) version (Bonsity, 2019) and generics (from 2023) are available; in Japan once- and twice-weekly teriparatide injections are also used."
+  ],
+  "mechanism": [
+    "Teriparatide binds and activates the PTH1 receptor (the PTH/PTHrP receptor), a class B G-protein-coupled receptor on osteoblasts, osteocytes and kidney tubule cells that signals mainly through Gs and cAMP. Continuously high PTH, as in hyperparathyroidism, drives bone resorption, but a short daily pulse stimulates bone-forming osteoblasts more than bone-resorbing osteoclasts, so new bone is laid down on trabecular and cortical surfaces and bone density rises, especially in the spine.",
+    "In the kidney the same receptor increases calcium reabsorption and phosphate excretion and stimulates activation of vitamin D, which is why serum calcium rises transiently after each injection. The gains fade after treatment stops, so an antiresorptive drug is usually started afterwards to keep the bone that was built."
+  ],
+  "origin": "Synthetic or recombinant copy of residues 1–34 of human parathyroid hormone (84 amino acids), the calcium-regulating hormone of the parathyroid glands; Forteo is made in genetically modified Escherichia coli",
+  "discovery": {"year": 1971, "by": "John T. Potts Jr, Gerald W. Tregear, Hugh D. Niall and colleagues", "where": "Endocrine Unit, Massachusetts General Hospital, Boston, USA (with NIH collaborators)", "note": "Showed that a synthetic N-terminal 1–34 fragment of bovine PTH reproduces the hormone's biological activity; the human 1–34 peptide was synthesised in 1974 and the complete human PTH sequence was published in 1978."},
+  "first_human_year": 1976,
+  "first_approval": {"date": "1987-12-23", "agency": "FDA", "region": "US", "brand": "Parathar (teriparatide acetate)", "indication": "Diagnostic test of PTH responsiveness (hypoparathyroidism vs pseudohypoparathyroidism)"},
+  "developer": "Eli Lilly and Company (Forteo); synthetic teriparatide acetate was earlier marketed as Parathar",
+  "brands": [
+    {"name": "Forteo", "company": "Eli Lilly and Company", "route": "Subcutaneous prefilled pen, 20 µg once daily", "use": "Osteoporosis in postmenopausal women and men at high fracture risk; glucocorticoid-induced osteoporosis (2009)", "approved": "2002-11-26", "agency": "FDA"},
+    {"name": "Forsteo", "company": "Eli Lilly Nederland", "route": "Subcutaneous prefilled pen, 20 µg once daily", "use": "Osteoporosis in postmenopausal women and men at increased fracture risk, including glucocorticoid-associated osteoporosis", "approved": "2003-06-10", "agency": "EMA"},
+    {"name": "Terrosa", "company": "Gedeon Richter", "route": "Subcutaneous pen", "use": "Osteoporosis (biosimilar of Forsteo)", "approved": "2017-01-04", "agency": "EMA"},
+    {"name": "Movymia", "company": "STADA Arzneimittel", "route": "Subcutaneous pen", "use": "Osteoporosis (biosimilar of Forsteo)", "approved": "2017-01-11", "agency": "EMA"},
+    {"name": "Bonsity", "company": "Alvogen (developed by Pfenex)", "route": "Subcutaneous pen", "use": "Osteoporosis (505(b)(2) application relying on Forteo)", "approved": "2019-10-04", "agency": "FDA"},
+    {"name": "Livogiva", "company": "Theramex", "route": "Subcutaneous pen", "use": "Osteoporosis (biosimilar of Forsteo)", "approved": "2020-08-27", "agency": "EMA"},
+    {"name": "Sondelbay", "company": "Accord Healthcare", "route": "Subcutaneous pen", "use": "Osteoporosis (biosimilar of Forsteo)", "approved": "2022-03-24", "agency": "EMA"},
+    {"name": "Teriparatide injection (generic)", "company": "Teva; Apotex", "route": "Subcutaneous pen", "use": "Osteoporosis (first US generics of Forteo)", "approved": "2023-11-16", "agency": "FDA"}
+  ],
+  "analogs": [
+    {"name": "Abaloparatide (Tymlos, Eladynos)", "note": "Synthetic analogue of PTH-related protein (PTHrP 1–34) for osteoporosis; FDA approval April 2017, EU December 2022."},
+    {"name": "Palopegteriparatide (Yorvipath)", "note": "Prodrug that releases teriparatide in the body, giving sustained PTH(1–34) exposure; approved for chronic hypoparathyroidism in adults (EU November 2023, US August 2024)."},
+    {"name": "Parathyroid hormone 1–84 (Natpara)", "note": "Full-length recombinant human PTH, approved in the US in January 2015 for hypoparathyroidism."},
+    {"name": "Once-weekly teriparatide (Japan)", "note": "56.5 µg weekly injection; cut new vertebral fractures by 80% versus placebo in the Japanese TOWER trial of 578 patients (2012)."}
+  ],
+  "targets": [
+    {"name": "Parathyroid hormone/parathyroid hormone-related peptide receptor (PTH1R)", "gene": "PTH1R", "uniprot": "Q03431", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["S","V","S","E","I","Q","L","M","H","N","L","G","K","H","L","N","S","M","E","R","V","E","W","L","R","K","K","L","Q","D","V","H","N","F"], "n_term": "H", "c_term": "OH"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [],
+    "notation": "H-Ser-Val-Ser-Glu-Ile-Gln-Leu-Met-His-Asn-Leu-Gly-Lys-His-Leu-Asn-Ser-Met-Glu-Arg-Val-Glu-Trp-Leu-Arg-Lys-Lys-Leu-Gln-Asp-Val-His-Asn-Phe-OH",
+    "note": "Identical to residues 1–34 of mature human parathyroid hormone (residues 32–65 of the UniProt P01270 precursor); no non-natural residues or modifications."
+  },
+  "formula": "C181H291N55O51S2",
+  "mw": 4117.8,
+  "half_life": "≈ 1 h after subcutaneous injection",
+  "half_life_hours": 1,
+  "routes": ["Subcutaneous injection, once daily (prefilled pen)"],
+  "structure": {
+    "pdb": [
+      {"id": "7Y36", "title": "Teriparatide-bound human PTH1 receptor in complex with Gs", "method": "Cryo-EM", "resolution": 2.8, "year": 2023, "peptide_chain": "P", "note": "The drug in its active, receptor-bound pose"},
+      {"id": "8FLQ", "title": "Human PTH1 receptor in complex with PTH(1–34) and Gs", "method": "Cryo-EM", "resolution": 2.55, "year": 2023, "peptide_chain": "P", "note": "Independent structure of the same peptide–receptor complex"},
+      {"id": "1ET1", "title": "Crystal structure of human PTH(1–34) at 0.9 Å", "method": "X-ray", "resolution": 0.9, "year": 2000, "peptide_chain": "A", "note": "Peptide alone, solved by Eli Lilly scientists; crystallises as a slightly bent, long helical dimer (chains A and B)"},
+      {"id": "3C4M", "title": "PTH(15–34) bound to the PTH1 receptor extracellular domain", "method": "X-ray", "resolution": 1.95, "year": 2008, "peptide_chain": "C", "note": "Shows how the C-terminal half of the hormone docks onto the receptor's extracellular domain"}
+    ],
+    "pubchem_cid": 16133850,
+    "notes": "PTH(1–34) adopts an extended α-helix; in the receptor complexes its C-terminal region binds the extracellular domain while the N-terminal residues insert into the transmembrane core, the two-step binding mode typical of class B GPCR peptide hormones."
+  },
+  "ids": {"pubchem_cid": 16133850, "cas": "52232-67-4", "drugbank": "DB06285", "chembl": "CHEMBL525610", "unii": "10T9CSU89I", "kegg": "D06078", "chebi": "CHEBI:135983", "atc": "H05AA02", "uniprot": "P01270", "inn": "teriparatide"},
+  "wiki": "Teriparatide",
+  "queries": {"pubmed": "teriparatide[tiab] OR Forteo[tiab] OR Forsteo[tiab] OR \"PTH 1-34\"[tiab]", "ctgov": "teriparatide OR Forteo OR Forsteo"},
+  "uses": {
+    "approved": [
+      {"use": "Postmenopausal osteoporosis at high fracture risk", "detail": "Women with a history of osteoporotic fracture, multiple risk factors, or failure of or intolerance to other treatments; reduces vertebral and non-vertebral fractures.", "since": 2002, "where": "US, EU, Japan, Canada and other countries"},
+      {"use": "Osteoporosis in men", "detail": "Increases bone mass in men with primary or hypogonadal osteoporosis at high fracture risk.", "since": 2002, "where": "US, EU"},
+      {"use": "Glucocorticoid-induced osteoporosis", "detail": "Men and women on sustained systemic glucocorticoids (5 mg or more prednisone daily) at high fracture risk; in a head-to-head trial it increased spine density more than alendronate and reduced new vertebral fractures (0.6% vs 6.1%).", "since": 2009, "where": "US, EU"}
+    ],
+    "investigational": [
+      {"use": "Fracture healing", "stage": "Randomised trial — primary endpoint not met (2010)", "detail": "In 102 women with wrist fractures, 8 weeks of 40 µg daily did not speed healing (primary endpoint), although 20 µg shortened time to cortical bridging in a secondary comparison (2010)."}
+    ],
+    "off_label": [
+      {"use": "Hypoparathyroidism", "detail": "Daily injections of PTH(1–34) have been used to replace missing parathyroid hormone when calcium and active vitamin D are inadequate.", "evidence": "Small randomised trials in adults and children at the NIH (1996–2010); palopegteriparatide, a teriparatide prodrug, is now approved for this use."},
+      {"use": "Fracture non-union and delayed healing", "detail": "Used off-label in an attempt to promote healing of difficult fractures.", "evidence": "Based mainly on animal data, case series and small trials; the randomised wrist-fracture trial did not meet its primary endpoint."}
+    ]
+  },
+  "history": [
+    {"year": 1925, "date": "1925-03", "title": "Collip extracts parathyroid hormone", "detail": "James Bertram Collip at the University of Alberta prepared a parathyroid extract that prevented or controlled tetany and regulated blood calcium.", "kind": "discovery"},
+    {"year": 1971, "date": "1971-01", "title": "Active 1–34 fragment identified", "detail": "Potts, Tregear, Niall and colleagues at Massachusetts General Hospital showed that a synthetic N-terminal 34-residue fragment of bovine PTH is biologically active.", "kind": "science"},
+    {"year": 1974, "date": "1974-04", "title": "Human PTH(1–34) synthesised", "detail": "Tregear and colleagues reported the solid-phase synthesis of the biologically active N-terminal 1–34 peptide of human PTH.", "kind": "science"},
+    {"year": 1976, "date": "1976-05-15", "title": "First study in osteoporosis", "detail": "Reeve and colleagues gave four postmenopausal women with osteoporosis 100 µg of human PTH(1–34) daily for six months; bone formation outweighed resorption (The Lancet).", "kind": "trial"},
+    {"year": 1978, "date": "1978-12-26", "title": "Human PTH sequence completed", "detail": "Keutmann and colleagues published the complete amino-acid sequence of human parathyroid hormone.", "kind": "science"},
+    {"year": 1980, "date": "1980-06-07", "title": "Multicentre trial", "detail": "An international multicentre trial reported an anabolic effect of the human PTH fragment on trabecular bone in involutional osteoporosis (BMJ).", "kind": "trial"},
+    {"year": 1987, "date": "1987-12-23", "title": "Parathar approved as a diagnostic", "detail": "Synthetic teriparatide acetate was approved in the US for PTH infusion tests that distinguish hypoparathyroidism from pseudohypoparathyroidism.", "kind": "approval"},
+    {"year": 1991, "date": "1991-11-15", "title": "PTH/PTHrP receptor cloned", "detail": "Jüppner and colleagues cloned the G-protein-coupled receptor shared by PTH and PTH-related peptide.", "kind": "science"},
+    {"year": 2001, "date": "2001-05-10", "title": "Fracture Prevention Trial published", "detail": "In 1,637 women with previous vertebral fractures, 20 µg daily cut new vertebral fractures by 65% (relative risk 0.35) over a median 21 months; the trial had been stopped early because of a rat osteosarcoma finding.", "kind": "trial"},
+    {"year": 2002, "date": "2002-11-26", "title": "FDA approves Forteo", "detail": "Approved for osteoporosis in postmenopausal women and men at high fracture risk, with a boxed warning about osteosarcoma and a two-year lifetime limit.", "kind": "approval"},
+    {"year": 2003, "date": "2003-06-10", "title": "EU approves Forsteo", "detail": "The European Commission authorised Lilly's teriparatide for postmenopausal osteoporosis.", "kind": "approval"},
+    {"year": 2009, "date": "2009-07-22", "title": "Glucocorticoid-induced osteoporosis added", "detail": "After a trial in 428 patients showed larger spine density gains and fewer vertebral fractures than alendronate (NEJM 2007), the FDA approved use in glucocorticoid-associated osteoporosis.", "kind": "approval"},
+    {"year": 2017, "date": "2017-01-04", "title": "First EU biosimilars", "detail": "Gedeon Richter's Terrosa was authorised, followed a week later by STADA's Movymia; Livogiva (2020) and Sondelbay (2022) came later.", "kind": "market"},
+    {"year": 2017, "date": "2017-04-28", "title": "Abaloparatide approved", "detail": "The FDA approved Radius Health's Tymlos, a PTHrP analogue, the second PTH1-receptor agonist approved for osteoporosis in the US.", "kind": "approval"},
+    {"year": 2018, "date": "2018-01-20", "title": "VERO: better than risedronate", "detail": "In 1,360 women with severe osteoporosis, new vertebral fractures occurred in 5.4% on teriparatide versus 12.0% on risedronate over two years.", "kind": "trial"},
+    {"year": 2019, "date": "2019-10-04", "title": "Bonsity approved", "detail": "Pfenex's teriparatide became the first US follow-on version, approved through the 505(b)(2) pathway rather than as a biosimilar.", "kind": "approval"},
+    {"year": 2020, "date": "2020-11-16", "title": "Osteosarcoma boxed warning removed", "detail": "Based on surveillance studies showing no increased risk in patients, the FDA removed the boxed warning, allowed use beyond two years in people who remain at high fracture risk and added a calciphylaxis warning.", "kind": "safety"},
+    {"year": 2023, "date": "2023-11-16", "title": "First US generics", "detail": "The FDA approved generic teriparatide injections from Teva and Apotex; Amphastar's generic followed in December 2025.", "kind": "market"},
+    {"year": 2023, "date": "2023-11-17", "title": "Teriparatide prodrug for hypoparathyroidism", "detail": "The EU authorised Ascendis Pharma's palopegteriparatide (Yorvipath), which releases teriparatide; the FDA approved it on 9 August 2024.", "kind": "approval"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "approved", "detail": "Parathar (diagnostic, 1987; discontinued), Forteo (2002), Bonsity (2019) and generics from Teva and Apotex (2023) and Amphastar (2025); boxed warning removed in 2020."},
+    {"region": "EU", "status": "approved", "detail": "Forsteo (2003) and biosimilars Terrosa and Movymia (2017), Livogiva (2020) and Sondelbay (2022)."},
+    {"region": "Canada", "status": "approved", "detail": "Forteo was marketed from 2004 and is listed as cancelled post-market in 2026; Teva-Teriparatide (2020) and Apo-Teriparatide (2024) are marketed."},
+    {"region": "Japan", "status": "approved", "detail": "Daily recombinant teriparatide and once- or twice-weekly teriparatide injections are used in clinical practice."}
+  ],
+  "pk": {
+    "half_life": "About 1 hour after subcutaneous injection",
+    "tmax": "About 30 minutes; concentrations fall below detection within about 3 hours",
+    "bioavailability": "≈ 95% (subcutaneous)",
+    "metabolism": "Non-specific enzymatic cleavage, thought to occur mainly in the liver",
+    "excretion": "Peptide fragments cleared by the kidneys"
+  },
+  "dosing": [
+    {"product": "Forteo / Forsteo and equivalents", "regimen": "20 µg subcutaneously once daily into the thigh or abdomen, with calcium and vitamin D supplements if dietary intake is inadequate. In the US, use for more than 2 years in a lifetime is considered only if fracture risk remains high."}
+  ],
+  "dosing_note": "Labelled regimen summarised for reference only; follow the prescribing information and a clinician's advice. The first doses should be taken sitting or lying down in case of dizziness from low blood pressure.",
+  "safety": {
+    "common": ["Nausea", "Joint pain", "Dizziness", "Weakness (asthenia)", "Leg cramps", "Pain"],
+    "serious": ["Hypercalcaemia", "Calciphylaxis and worsening skin calcification (rare)", "Hypersensitivity reactions, including anaphylaxis", "Digoxin toxicity if serum calcium rises", "Worsening of kidney stones"],
+    "warnings": ["Avoid in people at increased risk of osteosarcoma: Paget's disease of bone, open growth plates, prior skeletal radiation, bone metastases or skeletal cancers, hereditary predisposition", "Transient orthostatic hypotension with the first doses", "Not for children or adolescents"],
+    "notes": "High doses given to rats for most of their lives caused osteosarcoma; registry-linked studies in patients have not shown an increased risk, and the US boxed warning was removed in 2020. Bone gains are lost after stopping unless an antiresorptive drug follows."
+  },
+  "market": null,
+  "facts": [
+    "Teriparatide was first approved in 1987 as a diagnostic agent (Parathar), 15 years before Forteo.",
+    "J. B. Collip, a member of the Toronto group that isolated insulin in 1921–22, went on to prepare an active parathyroid extract in 1925.",
+    "Continuously high PTH removes calcium from bone, but a short daily pulse builds bone.",
+    "The crystal structure of teriparatide was solved at 0.9 Å resolution by Eli Lilly scientists in 2000."
+  ],
+  "related": ["sermorelin", "tesamorelin", "glucagon", "octreotide", "leuprolide"],
+  "references": [
+    {"title": "The extraction of a parathyroid hormone which will prevent or control parathyroid tetany and which regulates the level of blood calcium", "authors": "Collip JB", "journal": "J Biol Chem", "year": 1925, "url": "https://doi.org/10.1016/S0021-9258(18)85007-4"},
+    {"title": "Synthesis of a biologically active N-terminal tetratriacontapeptide of parathyroid hormone", "authors": "Potts JT Jr, Tregear GW, Keutmann HT, et al.", "journal": "Proc Natl Acad Sci U S A", "year": 1971, "url": "https://pubmed.ncbi.nlm.nih.gov/4322265/"},
+    {"title": "Anabolic effect of low doses of a fragment of human parathyroid hormone on the skeleton in postmenopausal osteoporosis", "authors": "Reeve J, Hesp R, Williams D, et al.", "journal": "Lancet", "year": 1976, "url": "https://pubmed.ncbi.nlm.nih.gov/57447/"},
+    {"title": "Complete amino acid sequence of human parathyroid hormone", "authors": "Keutmann HT, Sauer MM, Hendy GN, et al.", "journal": "Biochemistry", "year": 1978, "url": "https://pubmed.ncbi.nlm.nih.gov/728431/"},
+    {"title": "Synthetic human parathyroid hormone 1-34 fragment for diagnostic testing", "authors": "Mallette LE", "journal": "Ann Intern Med", "year": 1988, "url": "https://pubmed.ncbi.nlm.nih.gov/2847611/"},
+    {"title": "A G protein-linked receptor for parathyroid hormone and parathyroid hormone-related peptide", "authors": "Jüppner H, Abou-Samra AB, Freeman M, et al.", "journal": "Science", "year": 1991, "url": "https://pubmed.ncbi.nlm.nih.gov/1658941/"},
+    {"title": "Effect of parathyroid hormone (1-34) on fractures and bone mineral density in postmenopausal women with osteoporosis", "authors": "Neer RM, Arnaud CD, Zanchetta JR, et al.", "journal": "N Engl J Med", "year": 2001, "url": "https://pubmed.ncbi.nlm.nih.gov/11346808/"},
+    {"title": "Teriparatide or alendronate in glucocorticoid-induced osteoporosis", "authors": "Saag KG, Shane E, Boonen S, et al.", "journal": "N Engl J Med", "year": 2007, "url": "https://pubmed.ncbi.nlm.nih.gov/18003959/"},
+    {"title": "Effects of teriparatide and risedronate on new fractures in post-menopausal women with severe osteoporosis (VERO)", "authors": "Kendler DL, Marin F, Zerbini CAF, et al.", "journal": "Lancet", "year": 2018, "url": "https://pubmed.ncbi.nlm.nih.gov/29129436/"},
+    {"title": "Teriparatide and osteosarcoma risk: history, science, elimination of boxed warning, and other label updates", "authors": "Krege JH, Gilsenan AW, Komacko JL, Kellier-Steele N", "journal": "JBMR Plus", "year": 2022, "url": "https://pubmed.ncbi.nlm.nih.gov/36111201/"}
+  ]
+}

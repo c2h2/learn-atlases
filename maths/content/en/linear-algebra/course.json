@@ -1,0 +1,265 @@
+{
+  "slug": "linear-algebra",
+  "title": "Linear Algebra",
+  "full_title": "Linear Algebra",
+  "area": "algebra",
+  "level": 1,
+  "order": 40,
+  "tagline": "Systems of equations, vector spaces, linear maps, eigenvalues, orthogonality and the SVD",
+  "summary": "Linear algebra is the mathematics of vectors and matrices, and the most widely used subject in applied mathematics. This course runs from Gaussian elimination through vector spaces and linear maps to determinants, eigenvalues, inner products, least squares, the spectral theorem, the singular value decomposition and the Jordan form.",
+  "overview": [
+    "Linear algebra studies **linear equations**, the **vector spaces** in which their solutions live and the **linear maps** between those spaces. Linear problems are the ones mathematics can solve completely, and for that reason almost every applied subject reduces its questions to them: a derivative is a linear approximation, a differential equation is studied through its linearisation, a data set is a matrix, a quantum state is a vector and a search engine ranks pages with an eigenvector. Computer graphics, statistics, machine learning, engineering, economics and physics all run on the ideas in this course.",
+    "The course has four parts. Chapters 1–2 build the computational core: Gaussian elimination, echelon forms, matrix algebra, inverses and the LU factorisation. Chapters 3–5 develop the abstract framework — vector spaces, subspaces, linear independence, bases, dimension, linear maps, the rank–nullity theorem and change of basis — that explains *why* elimination behaves as it does. Chapters 6–7 introduce determinants and eigenvalues, which measure how a linear map changes volume and which directions it merely stretches. Chapters 8–12 add geometry: inner products, orthogonal projections, least squares, the spectral theorem for symmetric matrices, the singular value decomposition and finally the Jordan canonical form, which describes every square matrix up to similarity.",
+    "The subject is written in two languages at once: concrete arrays of numbers ($A\\mathbf{x} = \\mathbf{b}$, row operations, determinants) and abstract statements about spaces and maps ($\\dim V = \\dim\\ker T + \\dim\\Img T$). Much of the difficulty, and nearly all of the power, comes from translating between them. Work small examples by hand until the algorithms are automatic, ask of every matrix what it does geometrically (the interactive figures let you watch maps of the plane act on a grid), and learn definitions word for word, because the proofs rely on their exact wording. The proofs in this course are short, but they repay careful reading: the same handful of ideas — choose a basis, row reduce, count dimensions — appears again and again."
+  ],
+  "prerequisites": [
+    "proofs"
+  ],
+  "outcomes": [
+    "Solve systems of linear equations by Gaussian elimination and describe every solution set in parametric vector form using the reduced row echelon form.",
+    "Compute with matrices — products, transposes, inverses and LU factorisations — and interpret a matrix as a linear map.",
+    "Prove basic results about vector spaces, subspaces, span, linear independence, bases and dimension.",
+    "Find bases for the four fundamental subspaces of a matrix and apply the rank–nullity theorem.",
+    "Represent a linear map by a matrix relative to chosen bases and convert between bases using similarity.",
+    "Compute determinants efficiently, prove their main properties and interpret them as signed volume.",
+    "Find eigenvalues and eigenvectors, decide whether a matrix is diagonalisable, and use diagonalisation to compute matrix powers and solve recurrences.",
+    "Construct orthonormal bases with the Gram–Schmidt process, compute orthogonal projections and QR factorisations, and solve least-squares problems.",
+    "State and prove the spectral theorem for real symmetric matrices and use it to classify quadratic forms.",
+    "Compute and interpret the singular value decomposition and the Jordan canonical form, including low-rank approximation and the Cayley–Hamilton theorem."
+  ],
+  "chapters": [
+    {
+      "slug": "linear-systems",
+      "title": "Systems of linear equations",
+      "summary": "Gaussian elimination, row echelon and reduced row echelon form, and when solutions exist and are unique.",
+      "requires": []
+    },
+    {
+      "slug": "matrices",
+      "title": "Matrix algebra",
+      "summary": "Matrix operations, inverses, elementary matrices and the LU factorisation.",
+      "requires": [
+        "linear-algebra/linear-systems"
+      ]
+    },
+    {
+      "slug": "vector-spaces",
+      "title": "Vector spaces",
+      "summary": "The axioms of a vector space, subspaces, span and linear independence.",
+      "requires": [
+        "linear-algebra/matrices"
+      ]
+    },
+    {
+      "slug": "basis-dimension",
+      "title": "Bases and dimension",
+      "summary": "Bases, dimension, coordinates, rank, and the four fundamental subspaces of a matrix.",
+      "requires": [
+        "linear-algebra/vector-spaces"
+      ]
+    },
+    {
+      "slug": "linear-maps",
+      "title": "Linear transformations",
+      "summary": "Kernel and image, the rank–nullity theorem, the matrix of a linear map and change of basis.",
+      "requires": [
+        "linear-algebra/basis-dimension"
+      ]
+    },
+    {
+      "slug": "determinants",
+      "title": "Determinants",
+      "summary": "Definition and properties of the determinant, cofactor expansion, its geometric meaning as volume, and Cramer’s rule.",
+      "requires": [
+        "linear-algebra/matrices"
+      ]
+    },
+    {
+      "slug": "eigenvalues",
+      "title": "Eigenvalues and eigenvectors",
+      "summary": "The characteristic polynomial, eigenspaces, diagonalisation and powers of matrices.",
+      "requires": [
+        "linear-algebra/determinants",
+        "linear-algebra/linear-maps"
+      ]
+    },
+    {
+      "slug": "inner-products",
+      "title": "Inner products and orthogonality",
+      "summary": "Inner product spaces, norms, orthogonal projections, the Gram–Schmidt process and the QR factorisation.",
+      "requires": [
+        "linear-algebra/basis-dimension"
+      ]
+    },
+    {
+      "slug": "least-squares",
+      "title": "Least squares",
+      "summary": "Inconsistent systems, the normal equations, projection onto a column space and fitting curves to data.",
+      "requires": [
+        "linear-algebra/inner-products"
+      ]
+    },
+    {
+      "slug": "spectral-theorem",
+      "title": "Symmetric matrices and the spectral theorem",
+      "summary": "Orthogonal diagonalisation of symmetric matrices, quadratic forms and positive definiteness.",
+      "requires": [
+        "linear-algebra/eigenvalues",
+        "linear-algebra/inner-products"
+      ]
+    },
+    {
+      "slug": "svd",
+      "title": "The singular value decomposition",
+      "summary": "The SVD, its geometry, low-rank approximation, the pseudoinverse and applications.",
+      "requires": [
+        "linear-algebra/spectral-theorem"
+      ]
+    },
+    {
+      "slug": "jordan-form",
+      "title": "The Jordan canonical form",
+      "summary": "Generalised eigenvectors, the minimal polynomial, the Cayley–Hamilton theorem and the Jordan form.",
+      "requires": [
+        "linear-algebra/eigenvalues"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 263,
+      "title": "Elimination in the Nine Chapters",
+      "detail": "The chapter *Fangcheng* (rectangular arrays) of the Chinese classic *Nine Chapters on the Mathematical Art*, compiled during the Han dynasty and annotated by Liu Hui in 263, solves systems of linear equations by systematic operations on columns of numbers on a counting board — in effect Gaussian elimination.",
+      "people": [
+        "Liu Hui"
+      ]
+    },
+    {
+      "year": 1683,
+      "title": "Determinants appear",
+      "detail": "Seki Takakazu in Japan (1683) and, independently, Gottfried Wilhelm Leibniz in a letter of 1693 introduced determinants while eliminating unknowns from systems of equations.",
+      "people": [
+        "Seki Takakazu",
+        "Gottfried Wilhelm Leibniz"
+      ]
+    },
+    {
+      "year": 1750,
+      "title": "Cramer’s rule",
+      "detail": "Gabriel Cramer’s *Introduction à l’analyse des lignes courbes algébriques* gave the rule expressing the solution of an n×n system as quotients of determinants.",
+      "people": [
+        "Gabriel Cramer"
+      ]
+    },
+    {
+      "year": 1805,
+      "title": "The method of least squares",
+      "detail": "Adrien-Marie Legendre published the method of least squares for fitting orbits to observations; Carl Friedrich Gauss, who said he had used it since 1795, gave a probabilistic justification in 1809 and solved the resulting normal equations by the elimination now named after him.",
+      "people": [
+        "Adrien-Marie Legendre",
+        "Carl Friedrich Gauss"
+      ]
+    },
+    {
+      "year": 1829,
+      "title": "Symmetric matrices have real eigenvalues",
+      "detail": "Augustin-Louis Cauchy proved that the characteristic roots of a real symmetric system are real, the first step towards the spectral theorem.",
+      "people": [
+        "Augustin-Louis Cauchy"
+      ]
+    },
+    {
+      "year": 1844,
+      "title": "Grassmann’s Ausdehnungslehre",
+      "detail": "Hermann Grassmann’s *Die lineale Ausdehnungslehre* developed linear independence, dimension and subspaces in an abstract setting, decades before the ideas were widely understood.",
+      "people": [
+        "Hermann Grassmann"
+      ]
+    },
+    {
+      "year": 1858,
+      "title": "Cayley’s memoir on matrices",
+      "detail": "Arthur Cayley treated matrices as algebraic objects that can be added, multiplied and inverted, and stated the Cayley–Hamilton theorem. The word *matrix* had been coined by James Joseph Sylvester in 1850.",
+      "people": [
+        "Arthur Cayley",
+        "James Joseph Sylvester"
+      ]
+    },
+    {
+      "year": 1870,
+      "title": "The Jordan canonical form",
+      "detail": "Camille Jordan’s *Traité des substitutions et des équations algébriques* contained the canonical form for linear substitutions that now bears his name; Karl Weierstrass had developed the equivalent theory of elementary divisors in 1868.",
+      "people": [
+        "Camille Jordan",
+        "Karl Weierstrass"
+      ]
+    },
+    {
+      "year": 1873,
+      "title": "The singular value decomposition",
+      "detail": "Eugenio Beltrami (1873) and Camille Jordan (1874) independently showed that a real bilinear form can be reduced to a diagonal form by two orthogonal changes of variables — the singular value decomposition.",
+      "people": [
+        "Eugenio Beltrami",
+        "Camille Jordan"
+      ]
+    },
+    {
+      "year": 1888,
+      "title": "Axioms for a vector space",
+      "detail": "Giuseppe Peano’s *Calcolo geometrico* gave the first axiomatic definition of a (real) vector space and of linear maps between such spaces.",
+      "people": [
+        "Giuseppe Peano"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Linear Algebra (6th ed.)",
+      "authors": "Gilbert Strang",
+      "year": 2023,
+      "note": "Intuitive and application-driven; the source of the ‘four fundamental subspaces’ picture. Pairs well with Strang’s recorded MIT lectures."
+    },
+    {
+      "title": "Linear Algebra and Its Applications (6th ed.)",
+      "authors": "David C. Lay, Steven R. Lay and Judi J. McDonald",
+      "year": 2021,
+      "note": "A gentle first course with many worked examples on elimination, the invertible matrix theorem and least squares."
+    },
+    {
+      "title": "Linear Algebra Done Right (4th ed.)",
+      "authors": "Sheldon Axler",
+      "year": 2024,
+      "note": "A proof-based second course built around linear maps rather than determinants; excellent on eigenvalues, inner products and the spectral theorem. Freely available online."
+    },
+    {
+      "title": "Linear Algebra (5th ed.)",
+      "authors": "Stephen H. Friedberg, Arnold J. Insel and Lawrence E. Spence",
+      "year": 2018,
+      "note": "Rigorous and complete, with careful treatments of change of basis, canonical forms and the Jordan form."
+    },
+    {
+      "title": "Linear Algebra (2nd ed.)",
+      "authors": "Kenneth Hoffman and Ray Kunze",
+      "year": 1971,
+      "note": "The classic rigorous text: determinants via multilinear forms, the primary decomposition theorem and rational and Jordan forms."
+    },
+    {
+      "title": "Numerical Linear Algebra",
+      "authors": "Lloyd N. Trefethen and David Bau III",
+      "year": 1997,
+      "note": "Short lectures on QR, least squares, the SVD and eigenvalue algorithms as they are actually computed."
+    },
+    {
+      "title": "Matrix Analysis (2nd ed.)",
+      "authors": "Roger A. Horn and Charles R. Johnson",
+      "year": 2013,
+      "note": "The standard reference for matrix inequalities, positive definite matrices, norms and canonical forms."
+    }
+  ],
+  "next": [
+    "multivariable",
+    "ode",
+    "abstract-algebra",
+    "numerical-analysis"
+  ]
+}

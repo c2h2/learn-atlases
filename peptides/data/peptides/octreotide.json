@@ -1,0 +1,163 @@
+{
+  "slug": "octreotide",
+  "name": "Octreotide",
+  "aliases": ["SMS 201-995", "SMS 201995", "Sandoz 201-995", "Octreotide acetate", "Octreotide LAR", "CAM2029"],
+  "category": "hormone",
+  "drug_class": "Somatostatin analogue (somatostatin receptor ligand)",
+  "subclass": "Cyclic disulfide octapeptide with D-Phe, D-Trp and a C-terminal threoninol; SST2-preferring agonist",
+  "status": "approved",
+  "status_note": "Approved since 1988 (Sandostatin) for acromegaly and hormone-secreting neuroendocrine tumours, as a short-acting injection, a monthly intramuscular depot (1998), oral capsules (US, 2020) and a monthly subcutaneous depot (EU and UK, 2025); generic injections have been approved in the US since 2005.",
+  "evidence": 4,
+  "evidence_note": "Nearly four decades of clinical use and several randomised trials (for example PROMID in neuroendocrine tumours, phase 3 trials of oral octreotide, and over 20 trials in variceal bleeding), but mostly of modest size and without a large outcome-trial programme.",
+  "tagline": "Long-acting somatostatin analogue for acromegaly and neuroendocrine tumours",
+  "summary": "Octreotide is a ring-shaped eight-amino-acid version of the hormone somatostatin, engineered at Sandoz so that it lasts hours instead of minutes. Sold as Sandostatin and in monthly depot and oral forms, it suppresses excess growth hormone in acromegaly and the hormone-driven flushing and diarrhoea of neuroendocrine tumours, and slows the growth of some of these tumours.",
+  "overview": [
+    "Somatostatin was discovered in 1973 at the Salk Institute, when Roger Guillemin's group, searching sheep hypothalami for a growth-hormone-releasing factor, instead found a 14-amino-acid peptide that blocked growth-hormone release. It proved to be a broad brake on hormone secretion in the pituitary, pancreas and gut, but it survives only minutes in the blood and must be given by continuous intravenous infusion, which limited its use as a medicine.",
+    "Chemists at Sandoz in Basel set out to shrink the hormone to a stable active core. Starting from a six-residue disulfide ring, Cys-Phe-D-Trp-Lys-Thr-Cys, that carries the receptor-binding Phe-Trp-Lys-Thr turn, they extended both ends: a D-phenylalanine at the front and threoninol, an amino alcohol, at the back. The resulting octapeptide, SMS 201-995, was selected in 1980 and published in 1982; it inhibited growth hormone more potently than somatostatin itself and has a half-life of about 1.7–1.9 hours after injection.",
+    "Octreotide (Sandostatin) was first registered in 1988 for acromegaly and hormone-secreting neuroendocrine tumours, in which it controls the flushing and diarrhoea of carcinoid syndrome and the watery diarrhoea of VIPomas. A monthly intramuscular depot followed in 1998, and the PROMID trial (2009) showed that it also slows the growth of metastatic midgut neuroendocrine tumours. Radiolabelled versions of octreotide and its close relative octreotate turned somatostatin receptors into targets for tumour imaging (OctreoScan, 1994) and radionuclide therapy (Lutathera, 2018).",
+    "Newer formulations aim to replace frequent or deep intramuscular injections: delayed-release oral capsules (Mycapssa, US 2020) that use a medium-chain fatty-acid formulation to carry a small fraction of the peptide across the gut wall, and a once-monthly subcutaneous depot (Oczyesa) authorised in the EU and UK in 2025. Octreotide is also widely used off-label, most notably for bleeding oesophageal varices, and is on the WHO Model List of Essential Medicines."
+  ],
+  "mechanism": [
+    "Octreotide is an agonist of somatostatin receptors, inhibitory G-protein-coupled receptors. It binds SST2 with high affinity and SST5 and SST3 less strongly, with little activity at SST1 and SST4. Receptor activation through Gi/o proteins lowers cAMP and calcium entry and blocks hormone exocytosis, suppressing growth hormone from pituitary adenomas (and so IGF-1), serotonin and peptide hormones from neuroendocrine tumours, and the release of insulin, glucagon, gastrin, VIP and TSH.",
+    "It also reduces intestinal fluid secretion, gut motility, gallbladder contraction and splanchnic blood flow, which explains both its anti-diarrhoeal use and its best-known side effect, gallstones. Its antiproliferative effect in neuroendocrine tumours is attributed to SST2/SST5-mediated cell-cycle arrest plus indirect effects on growth factors and tumour blood supply. Cryo-EM structures published in 2022 show the peptide's Phe-D-Trp-Lys-Thr turn inserted deep into the SST2 binding pocket."
+  ],
+  "origin": "Synthetic analogue of somatostatin-14, a cyclic peptide hormone made in the hypothalamus, the pancreatic delta cells and the gut",
+  "discovery": {"year": 1979, "by": "W. Bauer, J. Pless and colleagues, Sandoz", "where": "Basel, Switzerland", "note": "First synthesised in 1979 and chosen in 1980 as the most stable and potent of a large series of somatostatin analogues; published as SMS 201-995 in Life Sciences in 1982."},
+  "first_human_year": null,
+  "first_approval": {"date": "1988-10-21", "agency": "FDA", "region": "US", "brand": "Sandostatin", "indication": "Severe diarrhoea and flushing of metastatic carcinoid tumours; watery diarrhoea of VIP-secreting tumours"},
+  "developer": "Sandoz (now Novartis)",
+  "brands": [
+    {"name": "Sandostatin", "company": "Novartis", "route": "Subcutaneous or intravenous injection, 2–4 times daily", "use": "Acromegaly; carcinoid tumours; VIPomas", "approved": "1988-10-21", "agency": "FDA"},
+    {"name": "Sandostatin LAR Depot", "company": "Novartis", "route": "Intramuscular (gluteal) depot injection every 4 weeks", "use": "Acromegaly; carcinoid tumours; VIPomas (UK label also: advanced midgut neuroendocrine tumours)", "approved": "1998-11-25", "agency": "FDA"},
+    {"name": "Mycapssa", "company": "Chiasma (now Chiesi)", "route": "Oral delayed-release capsule, twice daily", "use": "Long-term maintenance in acromegaly after response to octreotide or lanreotide", "approved": "2020-06-26", "agency": "FDA"},
+    {"name": "Oczyesa", "company": "Camurus", "route": "Subcutaneous depot (FluidCrystal) by autoinjector, once monthly", "use": "Maintenance treatment of acromegaly after response to somatostatin analogues", "approved": "2025-06-30", "agency": "EMA"}
+  ],
+  "analogs": [
+    {"name": "Somatostatin-14", "note": "The native 14-residue hormone; lasts only minutes in blood and is given by intravenous infusion."},
+    {"name": "Lanreotide", "note": "Ipsen's cyclic octapeptide analogue (Somatuline) with a similar SST2/SST5 profile, given as a deep subcutaneous depot."},
+    {"name": "Pasireotide", "note": "Novartis cyclohexapeptide (Signifor) that binds SST1, SST2, SST3 and especially SST5; used in Cushing's disease and acromegaly."},
+    {"name": "Indium-111 pentetreotide", "note": "DTPA-conjugated octreotide for somatostatin-receptor scintigraphy (OctreoScan, FDA 1994)."},
+    {"name": "Lutetium-177 dotatate", "note": "DOTA-Tyr3-octreotate, a close octreotide relative, for peptide receptor radionuclide therapy (Lutathera, FDA 2018)."},
+    {"name": "Paltusotine", "note": "Once-daily oral non-peptide SST2 agonist (Palsonify), approved by FDA for acromegaly in 2025."}
+  ],
+  "targets": [
+    {"name": "Somatostatin receptor type 2", "gene": "SSTR2", "uniprot": "P30874", "action": "Agonist (highest affinity)"},
+    {"name": "Somatostatin receptor type 5", "gene": "SSTR5", "uniprot": "P35346", "action": "Agonist (lower affinity)"},
+    {"name": "Somatostatin receptor type 3", "gene": "SSTR3", "uniprot": "P32745", "action": "Agonist (lower affinity)"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["f","C","F","w","K","T","C","T"], "n_term": "H", "c_term": "ol"}
+    ],
+    "cyclic": false,
+    "bridges": [{"from": "A2", "to": "A7", "type": "disulfide"}],
+    "modifications": [
+      {"at": "A1", "type": "d-amino", "label": "D-Phe1: an N-terminal D-phenylalanine added to the ring; it increases potency and protects against aminopeptidases", "short": "D-Phe"},
+      {"at": "A4", "type": "d-amino", "label": "D-Trp4 (corresponding to Trp8 of somatostatin) stabilises the receptor-binding β-turn Phe-D-Trp-Lys-Thr and resists proteolysis", "short": "D-Trp"},
+      {"at": "A8", "type": "other", "label": "C-terminal threoninol (Thr-ol): the carboxyl group of the last threonine is reduced to a primary alcohol", "short": "Thr-ol"}
+    ],
+    "notation": "H-D-Phe-Cys-Phe-D-Trp-Lys-Thr-Cys-Thr-ol (disulfide Cys2–Cys7)",
+    "note": "Octreotide is numbered 1–8 on its own; residues 3–6 (Phe-D-Trp-Lys-Thr) mimic Phe7-Trp8-Lys9-Thr10 of somatostatin-14. The final residue is threoninol, shown with the Thr token and c_term \"ol\"."
+  },
+  "formula": "C49H66N10O10S2",
+  "mw": 1019.2,
+  "half_life": "≈ 1.7–1.9 h after subcutaneous injection (native somatostatin: a few minutes)",
+  "half_life_hours": 1.8,
+  "routes": ["Subcutaneous injection, 2–4 times daily", "Intravenous infusion", "Intramuscular depot every 4 weeks (LAR)", "Oral delayed-release capsule, twice daily", "Subcutaneous monthly depot (Oczyesa, EU/UK)"],
+  "structure": {
+    "pdb": [
+      {"id": "7T11", "title": "Somatostatin receptor 2 in complex with octreotide and Gi3", "method": "Cryo-EM", "resolution": 2.7, "year": 2022, "peptide_chain": "P", "note": "Active-state SST2 with octreotide in the orthosteric pocket (Robertson et al., 2022)"},
+      {"id": "8X8N", "title": "Octreotide-bound somatostatin receptor 5–Gi complex", "method": "Cryo-EM", "resolution": 2.9, "year": 2024, "peptide_chain": "C", "note": "The same peptide bound to SST5, its second main receptor"},
+      {"id": "1SOC", "title": "Sandostatin (octreotide) in solution, average β-sheet conformer", "method": "Solution NMR", "resolution": null, "year": 1997, "peptide_chain": "A", "note": "Free peptide; NMR showed an equilibrium between β-sheet and partly helical backbone forms (see also 2SOC)"},
+      {"id": "6VC1", "title": "Octreotide oxalate", "method": "Powder diffraction", "resolution": null, "year": 2020, "peptide_chain": "A", "note": "Crystal structure of the drug substance (three peptide copies, chains A–C) solved from powder diffraction data"}
+    ],
+    "pubchem_cid": 448601,
+    "notes": "Receptor-bound structures show the Phe-D-Trp-Lys-Thr β-turn reaching into the transmembrane pocket of SST2 or SST5; the NMR and powder-diffraction entries show the free peptide."
+  },
+  "ids": {"pubchem_cid": 448601, "cas": "83150-76-9", "drugbank": "DB00104", "chembl": "CHEMBL1680", "unii": "RWM8CCW8GP", "kegg": "D00442", "chebi": "CHEBI:7726", "atc": "H01CB02", "inn": "octreotide"},
+  "wiki": "Octreotide",
+  "queries": {"pubmed": "(octreotide[tiab] OR sandostatin[tiab] OR \"SMS 201-995\"[tiab])", "ctgov": "octreotide OR Sandostatin OR CAM2029"},
+  "uses": {
+    "approved": [
+      {"use": "Acromegaly", "detail": "Lowers growth hormone and IGF-1 when surgery or radiotherapy is inadequate or not possible; the oral capsule and the monthly subcutaneous depot are licensed for maintenance after response to injected somatostatin analogues.", "since": 1988, "where": "Worldwide"},
+      {"use": "Carcinoid syndrome and other functional gastro-entero-pancreatic tumours", "detail": "Controls the severe diarrhoea and flushing caused by hormone-secreting neuroendocrine tumours.", "since": 1988, "where": "Worldwide"},
+      {"use": "VIPomas", "detail": "Treats the profuse watery diarrhoea of vasoactive-intestinal-peptide-secreting tumours.", "since": 1988, "where": "US, UK and elsewhere"},
+      {"use": "Advanced midgut neuroendocrine tumours", "detail": "Tumour-growth control with the monthly depot, based on the PROMID trial.", "where": "UK (national labels vary across Europe)"},
+      {"use": "TSH-secreting pituitary adenomas", "detail": "When secretion is not normalised by surgery or radiotherapy, or surgery is inappropriate.", "where": "UK (national labels vary across Europe)"},
+      {"use": "Bleeding gastro-oesophageal varices; complications after pancreatic surgery", "detail": "Emergency control of variceal bleeding in cirrhosis and prevention of complications after pancreatic surgery are licensed indications of the short-acting injection in the UK.", "where": "UK (national labels vary across Europe)"}
+    ],
+    "investigational": [
+      {"use": "Acromegaly: monthly subcutaneous depot in the US", "stage": "Under FDA review (resubmitted 2026)", "detail": "Camurus' CAM2029 (Oclaiz in the US) received a complete response letter on 10 June 2026 over observations at a third-party manufacturer; FDA accepted a resubmission with a target action date of 18 December 2026."}
+    ],
+    "off_label": [
+      {"use": "Acute variceal bleeding (US and elsewhere)", "detail": "Given as an intravenous infusion alongside endoscopic treatment in cirrhosis because it lowers portal and splanchnic blood flow.", "evidence": "A 2008 Cochrane review of 21 trials (2,588 patients) found fewer transfusions and fewer failures of initial haemostasis but no significant reduction in mortality."},
+      {"use": "Sulfonylurea overdose", "detail": "Used in toxicology to suppress insulin release and prevent recurrent hypoglycaemia after sulfonylurea poisoning.", "evidence": "Supported by case series and small studies rather than large trials."},
+      {"use": "Congenital hyperinsulinism", "detail": "Used in infants whose hypoglycaemia does not respond to diazoxide.", "evidence": "Observational evidence only; safety in neonates, including gut complications, has been questioned."},
+      {"use": "Refractory secretory diarrhoea and chyle leaks", "detail": "Used for chemotherapy-induced or other refractory diarrhoea, high-output stomas, dumping syndrome and chylothorax.", "evidence": "Mostly case series and small trials; practice varies."}
+    ]
+  },
+  "history": [
+    {"year": 1973, "date": "1973-01-05", "title": "Somatostatin discovered", "detail": "Paul Brazeau, Roger Guillemin and colleagues at the Salk Institute described a hypothalamic peptide that inhibits growth-hormone secretion and named it somatostatin.", "kind": "discovery"},
+    {"year": 1980, "title": "Sandoz selects SMS 201-995", "detail": "Building on the hexapeptide core Cys-Phe-D-Trp-Lys-Thr-Cys, Sandoz chemists identified D-Phe-Cys-Phe-D-Trp-Lys-Thr-Cys-Thr-ol as their most stable and potent analogue and took it into clinical studies.", "kind": "science"},
+    {"year": 1982, "date": "1982-09-13", "title": "Octreotide published", "detail": "Bauer, Pless and colleagues described SMS 201-995 in Life Sciences as a very potent and selective octapeptide analogue of somatostatin with prolonged action.", "kind": "science"},
+    {"year": 1984, "date": "1984-10-06", "title": "First results in acromegaly", "detail": "A single 50 µg injection lowered growth hormone for about nine hours in six of seven people with acromegaly (Lancet).", "kind": "trial"},
+    {"year": 1986, "date": "1986-09-11", "title": "Relief of carcinoid syndrome", "detail": "Kvols, Moertel and colleagues reported in NEJM that flushing and diarrhoea were promptly relieved in 22 of 25 patients with metastatic carcinoid tumours given SMS 201-995 three times daily.", "kind": "trial"},
+    {"year": 1988, "date": "1988-10-21", "title": "FDA approves Sandostatin", "detail": "First approved in the US for the diarrhoea and flushing of carcinoid tumours and the watery diarrhoea of VIPomas; registrations for acromegaly followed.", "kind": "approval"},
+    {"year": 1994, "date": "1994-06-02", "title": "Radiolabelled octreotide for tumour imaging", "detail": "FDA approved OctreoScan (indium-111 pentetreotide), a chelator-linked octreotide used to locate somatostatin-receptor-positive tumours by scintigraphy.", "kind": "approval"},
+    {"year": 1998, "date": "1998-11-25", "title": "Monthly depot approved", "detail": "Sandostatin LAR Depot, octreotide in biodegradable polymer microspheres, allowed one intramuscular injection every four weeks.", "kind": "approval"},
+    {"year": 2005, "date": "2005-03-28", "title": "First US generics", "detail": "FDA approved the first generic octreotide acetate injections.", "kind": "market"},
+    {"year": 2009, "date": "2009-10", "title": "PROMID shows tumour control", "detail": "Octreotide LAR lengthened median time to tumour progression in metastatic midgut neuroendocrine tumours to 14.3 months versus 6 months with placebo.", "kind": "trial"},
+    {"year": 2018, "date": "2018-01-26", "title": "Radionuclide therapy with an octreotide relative", "detail": "FDA approved Lutathera (lutetium-177 dotatate), built on the closely related peptide octreotate, for somatostatin-receptor-positive gastro-entero-pancreatic neuroendocrine tumours.", "kind": "approval"},
+    {"year": 2020, "date": "2020-06-26", "title": "First oral somatostatin analogue", "detail": "FDA approved Mycapssa delayed-release capsules for long-term maintenance treatment of acromegaly in people who had responded to injected octreotide or lanreotide.", "kind": "approval"},
+    {"year": 2022, "date": "2022-03", "title": "Receptor structures solved", "detail": "Cryo-EM structures of somatostatin receptor 2 bound to octreotide revealed how the peptide's β-turn engages the receptor.", "kind": "science"},
+    {"year": 2022, "date": "2022-12-02", "title": "Oral octreotide authorised in the EU", "detail": "Mycapssa received an EU marketing authorisation for acromegaly; it was withdrawn at the holder's request for commercial reasons in February 2025.", "kind": "approval"},
+    {"year": 2025, "date": "2025-06-30", "title": "Monthly subcutaneous depot in Europe", "detail": "The EU authorised Camurus' Oczyesa, a once-monthly self-injected octreotide depot for acromegaly; the UK MHRA followed on 28 August 2025.", "kind": "approval"},
+    {"year": 2025, "date": "2025-09-25", "title": "Oral non-peptide rival approved", "detail": "FDA approved paltusotine (Palsonify), a once-daily oral non-peptide SST2 agonist, for adults with acromegaly.", "kind": "market"},
+    {"year": 2026, "date": "2026-06-10", "title": "US complete response letter for CAM2029", "detail": "FDA declined to approve the monthly subcutaneous depot pending resolution of manufacturing-inspection findings; a resubmission was accepted in July 2026 with a target date of 18 December 2026.", "kind": "regulatory"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "approved", "detail": "Sandostatin (1988), Sandostatin LAR Depot (1998) and Mycapssa capsules (2020); generic injections since 2005. The CAM2029 subcutaneous depot is under FDA review (target date 18 December 2026)."},
+    {"region": "EU", "status": "approved", "detail": "Sandostatin and Sandostatin LAR are authorised nationally; Oczyesa centrally authorised in June 2025. Mycapssa was authorised in 2022 but withdrawn in 2025 for commercial reasons."},
+    {"region": "UK", "status": "approved", "detail": "Sandostatin injection authorised since 1989, Sandostatin LAR and generics; Oczyesa approved by the MHRA in August 2025."}
+  ],
+  "pk": {
+    "half_life": "Apparent half-life 1.7–1.9 h after subcutaneous injection",
+    "tmax": "About 0.4 h after subcutaneous injection; 1.7–2.5 h after an oral capsule; the LAR depot gives a small early peak, then a plateau from about 2–3 weeks after injection",
+    "bioavailability": "Rapid and essentially complete absorption after subcutaneous injection; a 20 mg oral capsule gives about the same exposure (AUC) as 0.1 mg injected subcutaneously",
+    "metabolism": "Resistant to peptidases because of its D-amino acids, disulfide ring and threoninol end; cleared by the liver and kidneys",
+    "excretion": "About 32% of a dose is excreted unchanged in urine"
+  },
+  "dosing": [
+    {"product": "Sandostatin injection", "regimen": "Acromegaly: 50 µg subcutaneously three times daily at first, usually 100–500 µg three times daily for maintenance. Carcinoid tumours: 100–600 µg daily in 2–4 divided doses for the first 2 weeks. VIPomas: 200–300 µg daily in 2–4 divided doses at first."},
+    {"product": "Sandostatin LAR Depot", "regimen": "20 mg by intragluteal injection every 4 weeks (after a trial of the short-acting injection), then adjusted according to GH/IGF-1 levels or symptoms."},
+    {"product": "Mycapssa", "regimen": "20 mg twice daily on an empty stomach (at least 1 hour before or 2 hours after a meal), increased in 20 mg steps to a maximum of 80 mg daily."}
+  ],
+  "dosing_note": "Labelled regimens summarised for reference only; follow the prescribing information and a clinician's advice.",
+  "safety": {
+    "common": ["Diarrhoea and loose stools", "Nausea", "Abdominal discomfort", "Gallbladder sludge or gallstones", "Slow heart rate (sinus bradycardia)", "Hyperglycaemia", "Hypothyroidism", "Headache", "Injection-site pain"],
+    "serious": ["Gallstones and their complications (cholecystitis, cholangitis, pancreatitis)", "Bradycardia and cardiac conduction abnormalities", "Hypoglycaemia or hyperglycaemia", "Hypothyroidism", "Steatorrhoea and fat malabsorption", "Vitamin B12 deficiency with long-term use"],
+    "warnings": ["No boxed warning; labels advise monitoring of the gallbladder, blood glucose, thyroid function and heart rhythm"],
+    "notes": "Because octreotide suppresses insulin and glucagon as well as growth hormone, doses of insulin and other glucose-lowering drugs may need adjusting; labels also flag interactions with ciclosporin (lower blood levels), beta-blockers and bromocriptine. Injection-site pain is common with the monthly depot, and the short-acting injection is stopped at least 24 hours before each lutetium-177 dotatate dose."
+  },
+  "market": null,
+  "facts": [
+    "Octreotide keeps the Phe-Trp-Lys-Thr turn that somatostatin uses to bind its receptors, but with the tryptophan in its mirror-image D-form to resist enzymes.",
+    "Native somatostatin lasts only minutes in the blood; octreotide's half-life is about 1.7–1.9 hours, and depot forms allow one injection a month.",
+    "It ends in threoninol, an amino alcohol, instead of a normal carboxylic-acid terminus.",
+    "Radiolabelled octreotide relatives are used both to find (OctreoScan, 1994) and to treat (Lutathera, 2018) neuroendocrine tumours.",
+    "Octreotide is on the WHO Model List of Essential Medicines (complementary list)."
+  ],
+  "related": ["vasopressin", "sermorelin", "tesamorelin", "glucagon", "insulin", "leuprolide"],
+  "references": [
+    {"title": "Hypothalamic polypeptide that inhibits the secretion of immunoreactive pituitary growth hormone", "authors": "Brazeau P, Vale W, Burgus R, et al.", "journal": "Science", "year": 1973, "url": "https://pubmed.ncbi.nlm.nih.gov/4682131/"},
+    {"title": "SMS 201-995: a very potent and selective octapeptide analogue of somatostatin with prolonged action", "authors": "Bauer W, Briner U, Doepfner W, et al.", "journal": "Life Sci", "year": 1982, "url": "https://pubmed.ncbi.nlm.nih.gov/6128648/"},
+    {"title": "Long-acting and selective suppression of growth hormone secretion by somatostatin analogue SMS 201-995 in acromegaly", "authors": "Plewe G, Beyer J, Krause U, et al.", "journal": "Lancet", "year": 1984, "url": "https://pubmed.ncbi.nlm.nih.gov/6148524/"},
+    {"title": "Treatment of the malignant carcinoid syndrome. Evaluation of a long-acting somatostatin analogue", "authors": "Kvols LK, Moertel CG, O'Connell MJ, et al.", "journal": "N Engl J Med", "year": 1986, "url": "https://pubmed.ncbi.nlm.nih.gov/2427948/"},
+    {"title": "Octreotide", "authors": "Lamberts SW, van der Lely AJ, de Herder WW, Hofland LJ", "journal": "N Engl J Med", "year": 1996, "url": "https://pubmed.ncbi.nlm.nih.gov/8532003/"},
+    {"title": "The history of somatostatin analogs", "authors": "Pless J", "journal": "J Endocrinol Invest", "year": 2005, "url": "https://pubmed.ncbi.nlm.nih.gov/16625837/"},
+    {"title": "Somatostatin analogues for acute bleeding oesophageal varices", "authors": "Gøtzsche PC, Hróbjartsson A", "journal": "Cochrane Database Syst Rev", "year": 2008, "url": "https://pubmed.ncbi.nlm.nih.gov/18677774/"},
+    {"title": "Placebo-controlled, double-blind, prospective, randomized study on the effect of octreotide LAR in the control of tumor growth in patients with metastatic neuroendocrine midgut tumors (PROMID)", "authors": "Rinke A, Müller HH, Schade-Brittinger C, et al.", "journal": "J Clin Oncol", "year": 2009, "url": "https://pubmed.ncbi.nlm.nih.gov/19704057/"},
+    {"title": "Safety and efficacy of oral octreotide in acromegaly: results of a multicenter phase III trial", "authors": "Melmed S, Popovic V, Bidlingmaier M, et al.", "journal": "J Clin Endocrinol Metab", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/25664604/"},
+    {"title": "Plasticity in ligand recognition at somatostatin receptors", "authors": "Robertson MJ, Meyerowitz JG, Panova O, et al.", "journal": "Nat Struct Mol Biol", "year": 2022, "url": "https://pubmed.ncbi.nlm.nih.gov/35210615/"}
+  ]
+}

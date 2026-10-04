@@ -1,0 +1,675 @@
+{
+  "slug": "semaglutide",
+  "name": "Semaglutide",
+  "aliases": [
+    "NN9535",
+    "NNC 0113-0217",
+    "Oral semaglutide",
+    "Sema"
+  ],
+  "category": "metabolic",
+  "drug_class": "GLP-1 receptor agonist",
+  "subclass": "Fatty-acid acylated GLP-1(7–37) analogue",
+  "status": "approved",
+  "status_note": "Approved worldwide for type 2 diabetes (2017) and chronic weight management (2021), with later labels for cardiovascular risk (2024), diabetic kidney disease (2025) and MASH (2025). Generic versions launched in India, Canada and Brazil in 2026.",
+  "evidence": 5,
+  "evidence_note": "Tested in tens of thousands of participants across the SUSTAIN, PIONEER, STEP, OASIS, SELECT, SOUL, FLOW, ESSENCE and EVOKE phase 3 programmes, including hard-outcome trials.",
+  "tagline": "The once-weekly GLP-1 analogue behind Ozempic, Wegovy and Rybelsus",
+  "summary": "Semaglutide is a synthetic copy of the gut hormone GLP-1, re-engineered with a fatty-acid tail that makes it bind to albumin in the blood, so a single injection lasts about a week. Marketed by Novo Nordisk as Ozempic, Rybelsus and Wegovy, it lowers blood sugar, suppresses appetite and produces around 15% average weight loss at obesity doses.",
+  "overview": [
+    "Semaglutide belongs to the incretin-mimetic family that began with the discovery in the 1980s that GLP-1, a 30-amino-acid hormone released from the gut after meals, amplifies glucose-dependent insulin secretion. Native GLP-1 is destroyed by the enzyme DPP-4 within about two minutes, so drug makers spent two decades engineering longer-lasting versions. Semaglutide is Novo Nordisk's second-generation answer after the once-daily liraglutide.",
+    "Three changes turn GLP-1 into semaglutide: alanine 8 is replaced by the non-natural amino acid Aib, which blocks DPP-4; lysine 34 is swapped for arginine; and lysine 26 carries a C18 fatty diacid attached through a flexible γGlu-2×OEG linker. The fatty acid binds serum albumin tightly and reversibly, which slows kidney clearance and stretches the half-life to roughly 165 hours.",
+    "The molecule was first approved as a weekly injection for type 2 diabetes (Ozempic, 2017), then as the first oral GLP-1 tablet using the absorption enhancer SNAC (Rybelsus, 2019) and at a higher dose for obesity (Wegovy, 2021). Outcome trials then showed reductions in heart attacks and strokes (SUSTAIN-6, SELECT), in kidney-disease progression (FLOW) and resolution of fatty-liver inflammation (ESSENCE).",
+    "Demand driven partly by social media turned semaglutide into one of the best-selling medicines in the world, caused multi-year shortages and a boom in compounded copies, and made Novo Nordisk Europe's most valuable company in 2023. Its core patents expired in India, Canada, China and Brazil in 2026, where cheap generics followed; US protection runs into the 2030s."
+  ],
+  "mechanism": [
+    "Semaglutide is a full agonist of the GLP-1 receptor, a class B G-protein-coupled receptor. In pancreatic beta cells, receptor activation raises cAMP and increases insulin release only when glucose is elevated, which is why the drug causes little hypoglycaemia on its own; it also suppresses glucagon secretion from alpha cells.",
+    "Weight loss comes mainly from the brain. Semaglutide reaches GLP-1 receptors in the hypothalamus and hindbrain (areas with a leaky blood-brain barrier), reducing hunger, food cravings and the reward value of food, so people eat less. It also slows gastric emptying, which contributes to fullness and to the typical gastrointestinal side effects."
+  ],
+  "origin": "Synthetic analogue of human glucagon-like peptide-1 (GLP-1), an incretin hormone cleaved from proglucagon in intestinal L-cells",
+  "discovery": {
+    "year": 2015,
+    "by": "Jesper Lau and colleagues, Novo Nordisk",
+    "where": "Måløv, Denmark",
+    "note": "Designed in the late 2000s as a once-weekly successor to liraglutide; the medicinal-chemistry work was published in J Med Chem in 2015."
+  },
+  "first_human_year": 2007,
+  "first_approval": {
+    "date": "2017-12-05",
+    "agency": "FDA",
+    "region": "US",
+    "brand": "Ozempic",
+    "indication": "Type 2 diabetes"
+  },
+  "developer": "Novo Nordisk",
+  "brands": [
+    {
+      "name": "Ozempic",
+      "company": "Novo Nordisk",
+      "route": "Subcutaneous, once weekly",
+      "use": "Type 2 diabetes; cardiovascular and kidney risk reduction in type 2 diabetes",
+      "approved": "2017-12-05",
+      "agency": "FDA"
+    },
+    {
+      "name": "Rybelsus",
+      "company": "Novo Nordisk",
+      "route": "Oral tablet, once daily",
+      "use": "Type 2 diabetes",
+      "approved": "2019-09-20",
+      "agency": "FDA"
+    },
+    {
+      "name": "Wegovy",
+      "company": "Novo Nordisk",
+      "route": "Subcutaneous, once weekly",
+      "use": "Chronic weight management; cardiovascular risk reduction; MASH",
+      "approved": "2021-06-04",
+      "agency": "FDA"
+    },
+    {
+      "name": "Wegovy pill",
+      "company": "Novo Nordisk",
+      "route": "Oral tablet (25 mg), once daily",
+      "use": "Chronic weight management; cardiovascular risk reduction",
+      "approved": "2025-12-22",
+      "agency": "FDA"
+    },
+    {
+      "name": "Kayshild",
+      "company": "Novo Nordisk",
+      "route": "Subcutaneous, once weekly",
+      "use": "MASH with F2–F3 liver fibrosis (conditional EU authorisation)",
+      "approved": "2026-03-26",
+      "agency": "EMA"
+    }
+  ],
+  "targets": [
+    {
+      "name": "Glucagon-like peptide-1 receptor",
+      "gene": "GLP1R",
+      "uniprot": "P43220",
+      "action": "Full agonist"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "H",
+          "Aib",
+          "E",
+          "G",
+          "T",
+          "F",
+          "T",
+          "S",
+          "D",
+          "V",
+          "S",
+          "S",
+          "Y",
+          "L",
+          "E",
+          "G",
+          "Q",
+          "A",
+          "A",
+          "K",
+          "E",
+          "F",
+          "I",
+          "A",
+          "W",
+          "L",
+          "V",
+          "R",
+          "G",
+          "R",
+          "G"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "numbering_offset": 6,
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A2",
+        "type": "nonnatural",
+        "label": "Aib8 replaces Ala8 of native GLP-1 and blocks cleavage by DPP-4",
+        "short": "Aib"
+      },
+      {
+        "at": "A20",
+        "type": "lipidation",
+        "label": "Lys26 carries an octadecanedioic (C18) fatty diacid attached through γ-glutamate and two OEG (8-amino-3,6-dioxaoctanoic acid) spacers; it binds serum albumin",
+        "short": "C18 diacid"
+      },
+      {
+        "at": "A28",
+        "type": "other",
+        "label": "Arg34 replaces Lys34 so that only Lys26 can be acylated",
+        "short": "K34R"
+      }
+    ],
+    "notation": "H-His-Aib-Glu-Gly-Thr-Phe-Thr-Ser-Asp-Val-Ser-Ser-Tyr-Leu-Glu-Gly-Gln-Ala-Ala-Lys(γGlu-2×OEG-C18 diacid)-Glu-Phe-Ile-Ala-Trp-Leu-Val-Arg-Gly-Arg-Gly-OH",
+    "note": "Residues are numbered 7–37 in the literature, following native GLP-1."
+  },
+  "formula": "C187H291N45O59",
+  "mw": 4113.58,
+  "half_life": "≈ 7 days (about 165 h)",
+  "half_life_hours": 165,
+  "routes": [
+    "Subcutaneous injection, once weekly",
+    "Oral tablet, once daily (with SNAC absorption enhancer)"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "7KI0",
+        "title": "Semaglutide-bound GLP-1 receptor in complex with Gs protein",
+        "method": "Cryo-EM",
+        "resolution": 2.5,
+        "year": 2021,
+        "peptide_chain": "P",
+        "note": "Full-length receptor with semaglutide in its active, helical binding pose"
+      },
+      {
+        "id": "4ZGM",
+        "title": "Semaglutide peptide backbone bound to the GLP-1 receptor extracellular domain",
+        "method": "X-ray",
+        "resolution": 1.8,
+        "year": 2015,
+        "peptide_chain": "B",
+        "note": "From the original discovery paper; the fatty-acid side chain is not included"
+      }
+    ],
+    "pubchem_cid": 56843331,
+    "notes": "In both structures the peptide forms a long α-helix that docks into the receptor's extracellular domain and transmembrane core."
+  },
+  "ids": {
+    "pubchem_cid": 56843331,
+    "cas": "910463-68-2",
+    "drugbank": "DB13928",
+    "chembl": "CHEMBL2108724",
+    "unii": "53AXN4NNHX",
+    "kegg": "D10025",
+    "chebi": "CHEBI:167574",
+    "atc": "A10BJ06",
+    "inn": "semaglutide"
+  },
+  "wiki": "Semaglutide",
+  "queries": {
+    "pubmed": "semaglutide[tiab]",
+    "ctgov": "semaglutide"
+  },
+  "uses": {
+    "approved": [
+      {
+        "use": "Type 2 diabetes",
+        "detail": "Glycaemic control as weekly injection (Ozempic) or daily tablet (Rybelsus).",
+        "since": 2017,
+        "where": "Worldwide"
+      },
+      {
+        "use": "Cardiovascular risk reduction in type 2 diabetes",
+        "detail": "Reduces heart attack, stroke and cardiovascular death in people with type 2 diabetes and established cardiovascular disease (SUSTAIN-6).",
+        "since": 2020,
+        "where": "US, EU"
+      },
+      {
+        "use": "Chronic weight management",
+        "detail": "Adults with obesity, or overweight with a weight-related condition; adolescents aged 12 and over.",
+        "since": 2021,
+        "where": "US, EU, UK, Japan, China and 50+ other countries"
+      },
+      {
+        "use": "Cardiovascular risk reduction in obesity",
+        "detail": "First anti-obesity drug shown (SELECT, 17,604 participants) to cut major cardiovascular events by 20% in people without diabetes.",
+        "since": 2024,
+        "where": "US, EU"
+      },
+      {
+        "use": "Chronic kidney disease in type 2 diabetes",
+        "detail": "Slows kidney-function decline and reduces kidney failure and cardiovascular death (FLOW trial).",
+        "since": 2025,
+        "where": "US, EU"
+      },
+      {
+        "use": "MASH with liver fibrosis",
+        "detail": "Non-cirrhotic metabolic dysfunction-associated steatohepatitis with moderate-to-advanced fibrosis (ESSENCE trial).",
+        "since": 2025,
+        "where": "US (accelerated approval), EU (Kayshild, 2026)"
+      }
+    ],
+    "investigational": [
+      {
+        "use": "Alzheimer's disease",
+        "stage": "Phase 3 — failed (2025)",
+        "detail": "The EVOKE and EVOKE+ trials of oral semaglutide in 3,808 people with early Alzheimer's did not slow progression, despite biomarker changes."
+      },
+      {
+        "use": "Heart failure with preserved ejection fraction",
+        "stage": "Phase 3 — positive",
+        "detail": "STEP-HFpEF trials improved symptoms, physical limitation and exercise capacity in people with obesity-related HFpEF."
+      },
+      {
+        "use": "Knee osteoarthritis pain",
+        "stage": "Phase 3 — positive",
+        "detail": "STEP 9 showed reduced knee pain alongside weight loss in people with obesity."
+      },
+      {
+        "use": "Peripheral artery disease",
+        "stage": "Phase 3 — positive",
+        "detail": "The STRIDE trial reported improved maximum walking distance in people with type 2 diabetes and symptomatic PAD."
+      },
+      {
+        "use": "Alcohol and substance use disorders",
+        "stage": "Phase 2",
+        "detail": "Small randomised trials suggest reduced alcohol craving and intake; larger trials are running."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Weight loss with diabetes-branded products",
+        "detail": "Ozempic was widely prescribed off-label for weight loss before and after Wegovy's launch, contributing to shortages in 2022–2024.",
+        "evidence": "Same molecule and similar doses as Wegovy; efficacy is established but it is outside the labelled indication."
+      },
+      {
+        "use": "Compounded and grey-market semaglutide",
+        "detail": "During the US shortage (2022–2025) pharmacies were allowed to compound semaglutide; unregulated online 'research' vials and counterfeit pens also appeared, and FDA and WHO issued warnings about falsified products.",
+        "evidence": "Quality, dose accuracy and sterility of non-approved products are not assured."
+      },
+      {
+        "use": "'Microdosing' for wellness or longevity",
+        "detail": "A social-media trend of taking small, untitrated doses for appetite control or claimed anti-ageing effects.",
+        "evidence": "No clinical trial data support this use."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1983,
+      "title": "Proglucagon gene reveals GLP-1",
+      "detail": "Cloning of the hamster proglucagon gene by Graeme Bell and colleagues showed that it encodes two glucagon-like peptides in addition to glucagon.",
+      "kind": "science"
+    },
+    {
+      "year": 1987,
+      "date": "1987-02",
+      "title": "GLP-1(7–37) shown to release insulin",
+      "detail": "Svetlana Mojsov, Gordon Weir and Joel Habener showed the truncated GLP-1(7–37) is a potent insulin secretagogue; Jens Juul Holst's and Stephen Bloom's groups reported similar findings.",
+      "kind": "science"
+    },
+    {
+      "year": 2007,
+      "date": "2007-06",
+      "title": "First doses in humans",
+      "detail": "A single-dose escalation trial of NNC 0113-0217 (later named semaglutide) in healthy volunteers began in June 2007 (registered retrospectively as NCT03144271).",
+      "kind": "trial"
+    },
+    {
+      "year": 2009,
+      "title": "Liraglutide paves the way",
+      "detail": "Novo Nordisk's once-daily acylated GLP-1 analogue liraglutide (Victoza) was approved in Europe in 2009 and the US in 2010, proving the albumin-binding strategy.",
+      "kind": "approval"
+    },
+    {
+      "year": 2015,
+      "date": "2015-09",
+      "title": "Discovery paper published",
+      "detail": "Lau et al. described how Aib8, Arg34 and a C18 diacid on a γGlu-2×OEG linker gave a GLP-1 analogue with a half-life suitable for once-weekly dosing.",
+      "kind": "science"
+    },
+    {
+      "year": 2016,
+      "date": "2016-11",
+      "title": "SUSTAIN-6 shows cardiovascular benefit",
+      "detail": "In 3,297 people with type 2 diabetes, weekly semaglutide reduced major adverse cardiovascular events by 26% versus placebo.",
+      "kind": "trial"
+    },
+    {
+      "year": 2017,
+      "date": "2017-12-05",
+      "title": "FDA approves Ozempic",
+      "detail": "Approved as a once-weekly injection for type 2 diabetes; the EU followed in February 2018 and Japan in March 2018.",
+      "kind": "approval"
+    },
+    {
+      "year": 2019,
+      "date": "2019-09-20",
+      "title": "Rybelsus: the first oral GLP-1 drug",
+      "detail": "Co-formulation with the absorption enhancer SNAC (salcaprozate sodium) allowed a daily semaglutide tablet.",
+      "kind": "approval"
+    },
+    {
+      "year": 2021,
+      "date": "2021-02",
+      "title": "STEP 1 reports ~15% weight loss",
+      "detail": "Semaglutide 2.4 mg weekly produced a mean 14.9% weight loss at 68 weeks versus 2.4% with placebo in 1,961 adults.",
+      "kind": "trial"
+    },
+    {
+      "year": 2021,
+      "date": "2021-06-04",
+      "title": "FDA approves Wegovy for obesity",
+      "detail": "The 2.4 mg weekly dose became the first new chronic weight-management drug approved in the US since 2014.",
+      "kind": "approval"
+    },
+    {
+      "year": 2022,
+      "title": "Shortages and compounding",
+      "detail": "Demand outstripped supply and semaglutide was placed on the FDA drug-shortage list, which allowed compounding pharmacies to sell copies.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2023,
+      "date": "2023-09",
+      "title": "Novo Nordisk becomes Europe's most valuable company",
+      "detail": "Soaring Ozempic and Wegovy sales pushed Novo Nordisk's market value past LVMH.",
+      "kind": "market"
+    },
+    {
+      "year": 2023,
+      "date": "2023-11-11",
+      "title": "SELECT: 20% fewer cardiovascular events",
+      "detail": "In 17,604 people with overweight or obesity and heart disease but no diabetes, semaglutide cut major cardiovascular events by 20%.",
+      "kind": "trial"
+    },
+    {
+      "year": 2023,
+      "date": "2023-12",
+      "title": "Science's Breakthrough of the Year",
+      "detail": "Science magazine named GLP-1 obesity drugs its 2023 Breakthrough of the Year.",
+      "kind": "culture"
+    },
+    {
+      "year": 2024,
+      "date": "2024-03-08",
+      "title": "Wegovy approved to cut cardiovascular risk",
+      "detail": "First weight-loss medicine with a cardiovascular-outcomes indication in the US.",
+      "kind": "approval"
+    },
+    {
+      "year": 2024,
+      "date": "2024-09",
+      "title": "Lasker Award for GLP-1 pioneers",
+      "detail": "Joel Habener, Svetlana Mojsov and Novo Nordisk's Lotte Bjerre Knudsen received the Lasker~DeBakey Clinical Medical Research Award for the development of GLP-1-based obesity drugs.",
+      "kind": "culture"
+    },
+    {
+      "year": 2025,
+      "date": "2025-01-28",
+      "title": "Kidney indication (FLOW)",
+      "detail": "FDA approved Ozempic to reduce kidney-disease progression and cardiovascular death in people with type 2 diabetes and chronic kidney disease.",
+      "kind": "approval"
+    },
+    {
+      "year": 2025,
+      "date": "2025-02-21",
+      "title": "US shortage declared over",
+      "detail": "FDA removed semaglutide from the shortage list, starting the wind-down of mass compounding.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2025,
+      "date": "2025-08-15",
+      "title": "First GLP-1 approved for MASH",
+      "detail": "FDA granted accelerated approval to Wegovy for MASH with F2–F3 fibrosis based on the ESSENCE trial.",
+      "kind": "approval"
+    },
+    {
+      "year": 2025,
+      "date": "2025-11-24",
+      "title": "Alzheimer's trials fail",
+      "detail": "The EVOKE and EVOKE+ phase 3 trials found no slowing of cognitive decline in early Alzheimer's disease.",
+      "kind": "trial"
+    },
+    {
+      "year": 2025,
+      "date": "2025-12-22",
+      "title": "Wegovy pill approved",
+      "detail": "FDA approved once-daily oral semaglutide 25 mg for weight management, the first oral GLP-1 for obesity (OASIS 4: 13.6% mean weight loss, 16.6% if adherent).",
+      "kind": "approval"
+    },
+    {
+      "year": 2026,
+      "date": "2026-03-21",
+      "title": "Generics launch in India",
+      "detail": "After the Indian patent expired on 20 March 2026, Sun Pharma, Dr Reddy's, Zydus and others launched semaglutide at a fraction of the branded price.",
+      "kind": "market"
+    },
+    {
+      "year": 2026,
+      "date": "2026-03-26",
+      "title": "EU authorises Kayshild for MASH",
+      "detail": "Conditional EU approval made semaglutide the first GLP-1 medicine authorised for MASH in Europe.",
+      "kind": "approval"
+    },
+    {
+      "year": 2026,
+      "date": "2026-04-28",
+      "title": "First generic approved in Canada",
+      "detail": "Health Canada approved the first generic semaglutide after data protection lapsed; Brazil's Anvisa approved its first generic in May 2026.",
+      "kind": "market"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "approved",
+      "detail": "Ozempic (2017), Rybelsus (2019), Wegovy (2021), Wegovy pill (2025). Patent protection into the early 2030s."
+    },
+    {
+      "region": "EU",
+      "status": "approved",
+      "detail": "Ozempic (2018), Rybelsus (2020), Wegovy (2022); Kayshild conditional approval for MASH (2026)."
+    },
+    {
+      "region": "UK",
+      "status": "approved",
+      "detail": "MHRA-approved; NICE recommends Wegovy for obesity within specialist weight-management services."
+    },
+    {
+      "region": "Japan",
+      "status": "approved",
+      "detail": "Ozempic (2018), Rybelsus (2020) and Wegovy for obesity disease (2023)."
+    },
+    {
+      "region": "China",
+      "status": "approved",
+      "detail": "Ozempic (2021) and Wegovy (2024); compound patent expired in 2026 and domestic versions are in development."
+    },
+    {
+      "region": "India",
+      "status": "generic",
+      "detail": "Generics from many manufacturers since March 2026."
+    },
+    {
+      "region": "Canada",
+      "status": "generic",
+      "detail": "Ozempic approved in 2018; first generic approved April 2026."
+    },
+    {
+      "region": "Brazil",
+      "status": "generic",
+      "detail": "Patent expired March 2026; first generic (EMS's Ozivy) approved May 2026."
+    },
+    {
+      "region": "WADA",
+      "status": "permitted",
+      "detail": "GLP-1 receptor agonists are not on the World Anti-Doping Agency prohibited list."
+    }
+  ],
+  "pk": {
+    "half_life": "About 1 week (≈ 165 h) for both injection and tablet",
+    "tmax": "1–3 days after subcutaneous injection; about 1 hour after an oral dose",
+    "bioavailability": "≈ 89% subcutaneous; about 0.4–1% oral",
+    "metabolism": "Proteolytic cleavage of the peptide backbone and β-oxidation of the fatty-acid side chain",
+    "excretion": "Metabolites cleared in urine and faeces"
+  },
+  "dosing": [
+    {
+      "product": "Ozempic",
+      "regimen": "0.25 mg once weekly for 4 weeks, then 0.5 mg; may be increased stepwise to 1 mg and 2 mg weekly."
+    },
+    {
+      "product": "Wegovy (injection)",
+      "regimen": "Escalated every 4 weeks (0.25 → 0.5 → 1 → 1.7 → 2.4 mg) to a 2.4 mg weekly maintenance dose."
+    },
+    {
+      "product": "Rybelsus",
+      "regimen": "Daily tablet taken on an empty stomach with a sip of water, 30 minutes before food; escalated from a starter dose over one month or more."
+    },
+    {
+      "product": "Wegovy pill",
+      "regimen": "Once-daily tablet escalated monthly (1.5 → 4 → 9 → 25 mg)."
+    }
+  ],
+  "dosing_note": "Labelled regimens summarised for reference only; follow the prescribing information and a clinician's advice.",
+  "safety": {
+    "common": [
+      "Nausea",
+      "Vomiting",
+      "Diarrhoea",
+      "Constipation",
+      "Abdominal pain",
+      "Reduced appetite",
+      "Fatigue",
+      "Headache"
+    ],
+    "serious": [
+      "Acute pancreatitis",
+      "Gallbladder disease (gallstones)",
+      "Hypoglycaemia when combined with insulin or sulfonylureas",
+      "Acute kidney injury from dehydration",
+      "Worsening diabetic retinopathy with rapid glucose lowering",
+      "Aspiration risk during anaesthesia",
+      "Non-arteritic anterior ischaemic optic neuropathy (very rare)"
+    ],
+    "warnings": [
+      "US boxed warning: thyroid C-cell tumours seen in rodents; contraindicated with a personal or family history of medullary thyroid carcinoma or MEN 2"
+    ],
+    "notes": "Most people regain much of the lost weight within a year of stopping (STEP 1 extension). Part of the weight lost is lean mass, which is why resistance exercise and protein intake are advised."
+  },
+  "market": {
+    "note": "Semaglutide is among the highest-grossing medicines in the world. Supply constraints drove multibillion-dollar manufacturing expansions, including Novo Holdings' 2024 acquisition of Catalent.",
+    "figures": [
+      {
+        "year": 2024,
+        "label": "Ozempic sales",
+        "value": "DKK 120.3 bn",
+        "source": "Novo Nordisk Annual Report 2024"
+      },
+      {
+        "year": 2024,
+        "label": "Wegovy sales",
+        "value": "DKK 58.2 bn",
+        "source": "Novo Nordisk Annual Report 2024"
+      },
+      {
+        "year": 2024,
+        "label": "Rybelsus sales",
+        "value": "DKK 23.3 bn",
+        "source": "Novo Nordisk Annual Report 2024"
+      },
+      {
+        "year": 2025,
+        "label": "Ozempic sales",
+        "value": "DKK 127.1 bn",
+        "source": "Novo Nordisk Annual Report 2025"
+      },
+      {
+        "year": 2025,
+        "label": "Rybelsus sales",
+        "value": "DKK 22.1 bn",
+        "source": "Novo Nordisk Annual Report 2025"
+      }
+    ]
+  },
+  "facts": [
+    "The fatty-acid tail stretches the half-life from about 2 minutes for native GLP-1 to about a week.",
+    "Only around 1% of an oral dose is absorbed; the SNAC co-formulant protects it from stomach acid and helps it cross the stomach lining.",
+    "The Aib residue at position 8 is a non-natural amino acid chosen specifically to block the DPP-4 enzyme that inactivates GLP-1.",
+    "Semaglutide is on the WHO Model List of Essential Medicines."
+  ],
+  "related": [
+    "liraglutide",
+    "tirzepatide",
+    "retatrutide",
+    "exenatide",
+    "cagrilintide",
+    "mazdutide",
+    "survodutide",
+    "glucagon"
+  ],
+  "references": [
+    {
+      "title": "Discovery of the once-weekly glucagon-like peptide-1 (GLP-1) analogue semaglutide",
+      "authors": "Lau J, Bloch P, Schäffer L, et al.",
+      "journal": "J Med Chem",
+      "year": 2015,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26308095/"
+    },
+    {
+      "title": "Insulinotropin: glucagon-like peptide I (7-37) co-encoded in the glucagon gene is a potent stimulator of insulin release in the perfused rat pancreas",
+      "authors": "Mojsov S, Weir GC, Habener JF",
+      "journal": "J Clin Invest",
+      "year": 1987,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3543057/"
+    },
+    {
+      "title": "Semaglutide and cardiovascular outcomes in patients with type 2 diabetes (SUSTAIN-6)",
+      "authors": "Marso SP, Bain SC, Consoli A, et al.",
+      "journal": "N Engl J Med",
+      "year": 2016,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27633186/"
+    },
+    {
+      "title": "Oral semaglutide and cardiovascular outcomes in patients with type 2 diabetes (PIONEER 6)",
+      "authors": "Husain M, Birkenfeld AL, Donsmark M, et al.",
+      "journal": "N Engl J Med",
+      "year": 2019,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31185157/"
+    },
+    {
+      "title": "Once-weekly semaglutide in adults with overweight or obesity (STEP 1)",
+      "authors": "Wilding JPH, Batterham RL, Calanna S, et al.",
+      "journal": "N Engl J Med",
+      "year": 2021,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33567185/"
+    },
+    {
+      "title": "Semaglutide and cardiovascular outcomes in obesity without diabetes (SELECT)",
+      "authors": "Lincoff AM, Brown-Frandsen K, Colhoun HM, et al.",
+      "journal": "N Engl J Med",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37952131/"
+    },
+    {
+      "title": "Effects of semaglutide on chronic kidney disease in patients with type 2 diabetes (FLOW)",
+      "authors": "Perkovic V, Tuttle KR, Rossing P, et al.",
+      "journal": "N Engl J Med",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38785209/"
+    },
+    {
+      "title": "Phase 3 trial of semaglutide in metabolic dysfunction-associated steatohepatitis (ESSENCE)",
+      "authors": "Sanyal AJ, Newsome PN, Kliers I, et al.",
+      "journal": "N Engl J Med",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40305708/"
+    },
+    {
+      "title": "Oral semaglutide at a dose of 25 mg in adults with overweight or obesity (OASIS 4)",
+      "authors": "Wharton S, Lingvay I, Bogdanski P, et al.",
+      "journal": "N Engl J Med",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40934115/"
+    }
+  ]
+}

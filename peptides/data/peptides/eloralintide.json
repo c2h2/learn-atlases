@@ -1,0 +1,139 @@
+{
+  "slug": "eloralintide",
+  "name": "Eloralintide",
+  "aliases": ["LY3841136", "LY-3841136", "AMY-1176"],
+  "category": "metabolic",
+  "drug_class": "Selective amylin receptor agonist",
+  "subclass": "Long-acting, fatty-acid acylated amylin analogue with non-natural residues and a thioacetal bridge",
+  "status": "clinical",
+  "status_note": "Not approved anywhere. In phase 3 (ENLIGHTEN programme) since December 2025; Lilly plans to start phase 3 trials of a combination with tirzepatide (EloraTZP) by the end of 2026.",
+  "evidence": 3,
+  "evidence_note": "Published phase 1 trials and a 48-week phase 2 trial in 263 adults, plus a 367-person phase 2b trial with tirzepatide reported at a congress in September 2026. The phase 3 ENLIGHTEN trials started in December 2025 and have not yet reported.",
+  "tagline": "Lilly's once-weekly selective amylin receptor agonist for obesity, in phase 3",
+  "summary": "Eloralintide is a long-acting, extensively modified version of the pancreatic hormone amylin, developed by Eli Lilly for obesity. It was designed to favour amylin receptors over the related calcitonin receptor and is injected once a week. It reduced body weight by up to 20% over 48 weeks in phase 2, has been in phase 3 trials since December 2025, and is also being developed with tirzepatide as the combination EloraTZP.",
+  "overview": [
+    "Eloralintide (LY3841136) is Eli Lilly's long-acting analogue of amylin, the 37-amino-acid hormone that pancreatic beta cells release with insulin to signal fullness, slow stomach emptying and restrain glucagon. Amylin acts through amylin receptors, which are the calcitonin receptor paired with a receptor activity-modifying protein (RAMP), but amylin and its analogues can also activate the calcitonin receptor on its own. Eloralintide was designed to favour the amylin receptors: in human cell assays it was about 12 times more potent at the amylin 1 receptor than at the calcitonin receptor, whereas Novo Nordisk's cagrilintide activates both.",
+    "The molecule keeps amylin's length and the three prolines of pramlintide (positions 25, 28 and 29) but changes nine further positions. Residue 1 is a glutamate linked through its side chain; ornithine, α-methylphenylalanine and N-methylasparagine replace the natural residues at positions 11, 15 and 22; and amylin's Cys2–Cys7 disulfide is replaced by a more stable methylene thioacetal (–S–CH₂–S–). A C20 fatty diacid attached to Lys26 through two γ-glutamates binds albumin, giving a half-life of about two weeks, roughly twice that of cagrilintide.",
+    "In a 48-week phase 2 trial of 263 adults with obesity or overweight but without diabetes, published in The Lancet in November 2025, weekly eloralintide lowered body weight by 9.5% to 20.1% depending on the dose, against 0.4% with placebo (efficacy estimand). Nausea and fatigue were the most frequent side effects; they increased with dose and were less common when treatment started at 3 mg and was stepped up. Lilly began the ENLIGHTEN phase 3 programme in December 2025, covering obesity with and without type 2 diabetes, obstructive sleep apnoea, knee osteoarthritis pain and add-on use in people already taking a weekly incretin.",
+    "Lilly is also pairing eloralintide with tirzepatide, its GIP and GLP-1 receptor agonist. In a 48-week phase 2b trial in 367 adults with obesity or overweight and type 2 diabetes, reported at the EASD meeting in September 2026, the combination (EloraTZP) gave up to 23.3% weight loss against 14.8% with tirzepatide 15 mg alone, and Lilly plans phase 3 trials of a single-injection co-formulation by the end of 2026. Other phase 2 trials combine eloralintide with macupatide, Lilly's long-acting GIP receptor agonist."
+  ],
+  "mechanism": [
+    "Eloralintide is a full agonist at the amylin and calcitonin receptors, which are all built on the calcitonin receptor (CALCR); pairing it with RAMP1 or RAMP3 creates the amylin 1 and amylin 3 receptors. In cAMP assays in human cells it was most potent at the amylin 1 receptor (EC50 about 24 pM), about 11-fold weaker at the amylin 3 receptor and 12-fold weaker at the calcitonin receptor, and it kept this preference in the presence of albumin. In rat cells both amylin receptor subtypes responded more strongly than the calcitonin receptor.",
+    "Amylin receptor agonists act mainly on the brainstem to increase fullness and reduce meal size. In rodents, salmon calcitonin suppresses eating partly by causing malaise, whereas amylin does not, which is the rationale for limiting calcitonin-receptor activity: in lean rats eloralintide caused significantly less conditioned taste avoidance than cagrilintide, and in diet-induced obese rats most of the weight it removed was fat. Unlike native amylin and pramlintide, it had only a mild effect on gastric emptying in the phase 1 trial, and that effect faded with continued dosing."
+  ],
+  "origin": "Synthetic analogue of human amylin (islet amyloid polypeptide) with pramlintide's three prolines, nine further substitutions including three non-natural residues, a thioacetal bridge and a C20 fatty diacid on Lys26",
+  "discovery": {"year": 2021, "by": "Milata M. Abraham, Daniel A. Briere, Lili Guo, Samantha G. L. Keyser, John Lee and Hongchang Qu, Eli Lilly and Company", "where": "Indianapolis, Indiana, USA", "note": "Disclosed as 'Compound II' in a Lilly patent application with a March 2021 priority date (WO2022187305; US 2022/0288168), which describes the thioacetal bridge and the (γGlu)₂–C20 diacid side chain. The WHO proposed the name eloralintide in 2024 (INN List 131), and the discovery and translational work was published in Molecular Metabolism in 2025."},
+  "first_human_year": 2022,
+  "first_approval": null,
+  "developer": "Eli Lilly and Company",
+  "brands": [],
+  "targets": [
+    {"name": "Amylin 1 receptor (calcitonin receptor with RAMP1)", "gene": "CALCR + RAMP1", "uniprot": "P30988", "action": "Agonist (preferred target; EC50 about 24 pM in human cells)"},
+    {"name": "Amylin 3 receptor (calcitonin receptor with RAMP3)", "gene": "CALCR + RAMP3", "uniprot": "P30988", "action": "Agonist (about 11-fold less potent than at the amylin 1 receptor)"},
+    {"name": "Calcitonin receptor", "gene": "CALCR", "uniprot": "P30988", "action": "Weaker agonist (about 12-fold less potent than at the amylin 1 receptor)"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["gGlu","C","N","T","A","T","C","A","T","G","Orn","L","A","E","aMeF","L","V","R","S","S","N","NMeAsn","F","G","P","K","L","P","P","T","E","V","G","S","N","T","Y"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [{"from": "A2", "to": "A7", "type": "thioether"}],
+    "modifications": [
+      {"at": "A1", "type": "nonnatural", "label": "Residue 1 is L-glutamate joined to Cys2 through its side-chain γ-carboxyl, leaving its α-amino and α-carboxyl groups free; human amylin has Lys1", "short": "γGlu1"},
+      {"at": "A2", "type": "other", "label": "Cys2 and Cys7 are joined by a methylene thioacetal (–S–CH₂–S–) instead of amylin's disulfide, which improves chemical stability", "short": "S–CH₂–S"},
+      {"at": "A10", "type": "other", "label": "Gly10 replaces Gln10 of human amylin", "short": "Q10G"},
+      {"at": "A11", "type": "nonnatural", "label": "L-ornithine replaces Arg11 of human amylin", "short": "Orn11"},
+      {"at": "A14", "type": "other", "label": "Glu14 replaces Asn14 of human amylin, as in cagrilintide", "short": "N14E"},
+      {"at": "A15", "type": "nonnatural", "label": "α-Methyl-L-phenylalanine replaces Phe15", "short": "αMeF15"},
+      {"at": "A18", "type": "other", "label": "Arg18 replaces His18 of human amylin", "short": "H18R"},
+      {"at": "A22", "type": "nonnatural", "label": "N-methyl-L-asparagine (a backbone N-methylation) replaces Asn22", "short": "NMeN22"},
+      {"at": "A25", "type": "other", "label": "Pro25 as in pramlintide (Ala25 in human amylin)", "short": "A25P"},
+      {"at": "A26", "type": "lipidation", "label": "Lys26 (Ile26 in human amylin) carries icosanedioic acid, a C20 fatty diacid, attached to its side chain through two γ-glutamates; it binds serum albumin and extends the half-life to about two weeks", "short": "C20 diacid"},
+      {"at": "A28", "type": "other", "label": "Pro28 as in pramlintide (Ser28 in human amylin)", "short": "S28P"},
+      {"at": "A29", "type": "other", "label": "Pro29 as in pramlintide (Ser29 in human amylin)", "short": "S29P"},
+      {"at": "A31", "type": "other", "label": "Glu31 replaces Asn31 of human amylin", "short": "N31E"}
+    ],
+    "notation": "H-γGlu-Cys-Asn-Thr-Ala-Thr-Cys-Ala-Thr-Gly-Orn-Leu-Ala-Glu-αMePhe-Leu-Val-Arg-Ser-Ser-Asn-NMeAsn-Phe-Gly-Pro-Lys[HOOC-(CH2)18-CO-γGlu-γGlu]-Leu-Pro-Pro-Thr-Glu-Val-Gly-Ser-Asn-Thr-Tyr-NH2 (Cys2–Cys7 methylene thioacetal)",
+    "note": "Numbered 1–37 like human amylin. Residue 1 is glutamate linked through its γ-carboxyl, so the free N-terminal amine is that residue's α-amino group. The INN describes the Cys2–Cys7 link as an S2,S7-methylene bridge; the CAS name calls it a cyclic thioether."
+  },
+  "formula": "C201H319N49O65S2",
+  "mw": 4526.11,
+  "half_life": "≈ 2 weeks (13–16 days)",
+  "half_life_hours": 336,
+  "routes": ["Subcutaneous injection, once weekly (investigational)"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 175663130,
+    "notes": "No experimental structure of eloralintide has been deposited in the PDB (searches for 'eloralintide' and 'LY3841136' return no entries) and PubChem has no 3D conformer, so the model shown is predicted. Cryo-EM structures of cagrilintide bound to the amylin 1 receptor (9BP3) and of pramlintide-based analogues bound to the AMY3 and calcitonin receptors (8F0J, 8F2A) show how related amylin analogues sit in these receptors."
+  },
+  "ids": {"pubchem_cid": 175663130, "cas": "2883634-40-8", "chembl": "CHEMBL6068462", "unii": "73G3354J8W", "kegg": "D12886", "inn": "eloralintide"},
+  "wiki": "Eloralintide",
+  "queries": {"pubmed": "(eloralintide[tiab] OR LY3841136[tiab] OR \"LY-3841136\"[tiab])", "ctgov": "eloralintide OR LY3841136"},
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Obesity and overweight", "stage": "Phase 3 (ENLIGHTEN-1, started February 2026)", "detail": "In phase 2 (263 adults without diabetes), mean weight loss at 48 weeks was 9.5%, 12.4%, 17.6% and 20.1% with fixed weekly doses of 1, 3, 6 and 9 mg and 19.9% and 16.4% with 6→9 mg and 3→6→9 mg step-ups, against 0.4% with placebo; up to 57% of participants lost at least 20%. ENLIGHTEN-1 (about 1,980 adults) measures weight change at 64 weeks."},
+      {"use": "Obesity with type 2 diabetes", "stage": "Phase 3 (ENLIGHTEN-2, started December 2025)", "detail": "In a 48-week phase 2 trial in 367 adults with type 2 diabetes, eloralintide alone lowered weight by 8.2–12.3% and HbA1c by 1.1–1.4 percentage points, against 3.0% and 0.3 with placebo. ENLIGHTEN-2, the first phase 3 trial of the programme, is enrolling about 1,035 people."},
+      {"use": "Obesity with type 2 diabetes, combined with tirzepatide (EloraTZP)", "stage": "Phase 2b — positive (2026); phase 3 planned", "detail": "At 48 weeks, eloralintide 9 mg plus tirzepatide 15 mg lowered weight by 23.3% and HbA1c by 2.9 percentage points, against 14.8% and 2.4 with tirzepatide 15 mg alone. Between 10.8% and 27.0% of people on the combinations stopped because of adverse events (2.9% on tirzepatide alone). Lilly plans phase 3 trials of a co-formulated product by the end of 2026."},
+      {"use": "Add-on to weekly incretin therapy", "stage": "Phase 3 (ENLIGHTEN-6, started February 2026)", "detail": "Compares eloralintide with placebo in about 900 adults who still have obesity or overweight while taking a once-weekly incretin medicine. In a phase 1 study, adding eloralintide 3 mg to tirzepatide 5 mg gave 17% weight loss at 16 weeks against 10% with tirzepatide alone."},
+      {"use": "Obstructive sleep apnoea with obesity", "stage": "Phase 3 (ENLIGHTEN-3, started February 2026)", "detail": "A master protocol of two placebo-controlled studies (about 800 adults) with co-primary endpoints of weight change and apnoea–hypopnoea index at 64 weeks."},
+      {"use": "Knee osteoarthritis pain with obesity", "stage": "Phase 3 (ENLIGHTEN-4, started February 2026)", "detail": "Two placebo-controlled studies (about 900 adults) measuring weight change and the WOMAC knee-pain score at 64 weeks."},
+      {"use": "Obesity, combined with macupatide", "stage": "Phase 2 (started October 2025)", "detail": "Lilly is testing eloralintide alone and with macupatide, its long-acting GIP receptor agonist, in adults with obesity or overweight and type 2 diabetes (from October 2025) and in a phase 2b trial in people without diabetes (from May 2026)."}
+    ],
+    "off_label": []
+  },
+  "history": [
+    {"year": 2021, "date": "2021-03-03", "title": "Lilly patent filing", "detail": "A provisional application, later published as WO2022187305 and US 2022/0288168, described long-acting amylin receptor agonists; its 'Compound II' is the molecule now called eloralintide.", "kind": "discovery"},
+    {"year": 2022, "date": "2022-03-30", "title": "First human dosing", "detail": "A phase 1 trial (NCT05295940) began with single doses of 0.04–12 mg in 48 healthy participants, followed by 12 weeks of weekly dosing in 100 people with overweight or obesity.", "kind": "trial"},
+    {"year": 2024, "date": "2024-02-05", "title": "Phase 2 trial begins", "detail": "The 48-week phase 2 trial (NCT06230523) randomised 263 adults with obesity or overweight but without diabetes, at 46 US research centres, to placebo or one of six eloralintide regimens.", "kind": "trial"},
+    {"year": 2024, "date": "2024-09-20", "title": "Combination trial with tirzepatide", "detail": "A 48-week phase 2 trial (NCT06603571) began testing eloralintide alone and with tirzepatide in 367 adults with obesity or overweight and type 2 diabetes in the US and Argentina.", "kind": "trial"},
+    {"year": 2025, "date": "2025-06-20", "title": "First clinical data at ADA", "detail": "At the American Diabetes Association meeting, Lilly reported 2.6–11.3% weight loss after 12 weekly doses given without dose escalation, few gastrointestinal side effects and a half-life of 13.9–15.8 days.", "kind": "trial"},
+    {"year": 2025, "date": "2025-10-16", "title": "Discovery paper", "detail": "Lilly scientists described eloralintide's design, its preference for the amylin 1 receptor and its lower taste aversion than cagrilintide in rats in Molecular Metabolism.", "kind": "science"},
+    {"year": 2025, "date": "2025-11-06", "title": "Phase 2: up to 20% weight loss", "detail": "Presented at ObesityWeek and published in The Lancet: mean weight loss at 48 weeks ranged from 9.5% to 20.1% across doses, against 0.4% with placebo.", "kind": "trial"},
+    {"year": 2025, "date": "2025-12-15", "title": "Phase 3 begins", "detail": "ENLIGHTEN-2, in adults with obesity or overweight and type 2 diabetes, became the first ENLIGHTEN phase 3 trial; it compares four eloralintide doses with placebo over 64 weeks.", "kind": "trial"},
+    {"year": 2026, "date": "2026-02", "title": "Phase 3 programme expands", "detail": "ENLIGHTEN-1 (obesity without diabetes), ENLIGHTEN-3 (sleep apnoea), ENLIGHTEN-4 (knee osteoarthritis pain) and ENLIGHTEN-6 (add-on to weekly incretin therapy) started enrolling.", "kind": "trial"},
+    {"year": 2026, "date": "2026-03", "title": "China joins phase 3", "detail": "Lilly announced that China's Center for Drug Evaluation had cleared Chinese participation in ENLIGHTEN-1, -2 and -6 to support future registration in China.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-09-30", "title": "EloraTZP phase 2b results", "detail": "At the EASD meeting in Milan, eloralintide 9 mg plus tirzepatide 15 mg gave 23.3% weight loss at 48 weeks in people with type 2 diabetes, against 14.8% with tirzepatide 15 mg; Lilly plans phase 3 trials of a co-formulation by the end of 2026.", "kind": "trial"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "investigational", "detail": "In phase 3: five ENLIGHTEN trials started between December 2025 and February 2026, each with a 64-week primary endpoint. No marketing application has been filed."},
+    {"region": "China", "status": "investigational", "detail": "The Center for Drug Evaluation (CDE) cleared Chinese sites for the global phase 3 trials ENLIGHTEN-1, -2 and -6 (announced March 2026); a phase 1 study in Chinese adults with obesity or overweight was completed in 2025."},
+    {"region": "Japan", "status": "investigational", "detail": "A phase 1 study in Japanese adults with obesity or overweight was completed in 2025, and the ENLIGHTEN phase 3 trials include Japanese sites."},
+    {"region": "WADA", "status": "prohibited", "detail": "Not approved for human use by any regulator, so it falls under the S0 'non-approved substances' section of the World Anti-Doping Agency list, which is prohibited at all times."}
+  ],
+  "pk": {
+    "half_life": "310–366 hours (12.9–15.3 days) after single doses of 0.4–12 mg, and 13.9–15.8 days after 12 weekly doses; exposure rose in proportion to dose (phase 1)",
+    "tmax": "Median 72–132 hours after a subcutaneous dose"
+  },
+  "dosing": null,
+  "dosing_note": "No approved dose. Phase 2 tested once-weekly subcutaneous doses of 1–9 mg, started directly or stepped up from 3 or 6 mg; the main phase 3 ENLIGHTEN trials compare four doses with placebo.",
+  "safety": {
+    "common": ["Nausea", "Fatigue", "Constipation", "Diarrhoea", "Decreased appetite", "Vomiting", "Hair loss (alopecia)", "Injection-site reactions"],
+    "serious": [],
+    "warnings": [
+      "Investigational: no approved label; the phase 3 ENLIGHTEN trials are assessing efficacy and longer-term safety",
+      "Lowers pulse rate: in a 12-week phase 1 trial mean pulse fell by 14.4 beats per minute with 12 mg (3.4 with placebo), and trials have excluded people with bradyarrhythmia or sinus bradycardia",
+      "Not available outside clinical trials; anything sold online under the name is an unregulated product of unknown identity and purity"
+    ],
+    "notes": "In phase 2 (all doses pooled), nausea affected 32.7% of participants on eloralintide against 13.5% on placebo, fatigue 26.9% against 11.5%, constipation and diarrhoea 14.9% each, and vomiting 8.2% (none on placebo). Events were mostly mild to moderate and less frequent with the 3→6→9 mg step-up. Adverse events led 10.1% to stop eloralintide against 7.7% on placebo, and serious adverse events were similar (5.3% against 5.8%). In the 12-week phase 1 trial, three participants on 12 mg stopped because of mood-related events, which resolved within days."
+  },
+  "market": null,
+  "facts": [
+    "Its half-life of about two weeks is roughly twice that of cagrilintide and hundreds of times longer than that of pramlintide (about 48 minutes).",
+    "Amylin's Cys2–Cys7 disulfide is replaced by a methylene thioacetal (–S–CH₂–S–), a bridge with a carbon atom inserted between the two sulfurs, which Lilly chose for chemical stability.",
+    "In a body-composition substudy of the phase 2 trial, 60–70% of the weight lost was fat.",
+    "It lowers pulse rate: in a 12-week trial, mean pulse fell by 14.4 beats per minute with 12 mg, against 3.4 with placebo.",
+    "Its first phase 3 trial began in December 2025, less than five years after the March 2021 priority date of the patent that disclosed it."
+  ],
+  "related": ["cagrilintide", "pramlintide", "tirzepatide", "retatrutide", "semaglutide"],
+  "references": [
+    {"title": "Eloralintide (LY3841136), a novel amylin receptor agonist for the treatment of obesity: from discovery to clinical proof of concept", "authors": "Briere DA, Qu H, Lansu K, et al.", "journal": "Mol Metab", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/41109426/"},
+    {"title": "Eloralintide, a selective amylin receptor agonist for the treatment of obesity: a 48-week phase 2, multicentre, double-blind, randomised, placebo-controlled trial", "authors": "Billings LK, Hsia S, Bays H, et al.", "journal": "Lancet", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/41207310/"},
+    {"title": "Eloralintide, a selective, long-acting amylin receptor agonist for treatment of obesity: phase 1 proof of concept", "authors": "Bhattachar S, Tham LS, Tidemann-Miller B, et al.", "journal": "Diabetes Obes Metab", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/41559929/"},
+    {"title": "849-P: Eloralintide (LY3841136), a selective amylin mimetic, lowered body weight with improved quality of weight loss and GI tolerability in rats compared with cagrilintide", "authors": "Briere DA, Long A, Bullock DM, et al.", "journal": "Diabetes (ADA Scientific Sessions abstract)", "year": 2025, "url": "https://doi.org/10.2337/db25-849-P"},
+    {"title": "Long-acting amylin-related peptides as therapies for obesity and type 2 diabetes", "authors": "Bailey CJ, Flatt PR, Conlon JM", "journal": "Peptides", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/41747885/"},
+    {"title": "Amylin analogs: the next major class of weight loss therapy: a review of experimental data and early-phase clinical trials", "authors": "Alhazmi A, le Roux CW", "journal": "Diabetes Obes Metab", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42452898/"},
+    {"title": "International Nonproprietary Names for pharmaceutical substances: Proposed INN List 131 (eloralintide)", "authors": "World Health Organization", "journal": "WHO Drug Information 38(2)", "year": 2024, "url": "https://cdn.who.int/media/docs/default-source/international-nonproprietary-names-(inn)/pl131.pdf"},
+    {"title": "Lilly's EloraTZP (combination of eloralintide and tirzepatide) delivered greater weight loss and A1C reduction vs. tirzepatide 15 mg in adults with obesity and type 2 diabetes", "authors": "Eli Lilly and Company", "journal": "Company press release (PR Newswire)", "year": 2026, "url": "https://www.prnewswire.com/news-releases/lillys-eloratzp-combination-of-eloralintide-and-tirzepatide-delivered-greater-weight-loss-and-a1c-reduction-vs-tirzepatide-15-mg-in-adults-with-obesity-and-type-2-diabetes-302894480.html"}
+  ]
+}

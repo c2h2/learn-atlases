@@ -1,0 +1,240 @@
+{
+  "slug": "number-theory",
+  "title": "Number Theory",
+  "full_title": "Number Theory",
+  "area": "discrete",
+  "level": 2,
+  "order": 130,
+  "tagline": "The integers: divisibility, primes, congruences, reciprocity, Diophantine equations and cryptography",
+  "summary": "Number theory asks deceptively simple questions about whole numbers. This course covers divisibility and the Euclidean algorithm, primes, congruences and the Chinese remainder theorem, the theorems of Fermat, Euler and Wilson, primitive roots, quadratic reciprocity, Diophantine equations and the number theory behind modern cryptography.",
+  "overview": [
+    "Number theory studies the integers and the patterns hidden in them. Its questions are easy to state — which numbers are sums of two squares? how are the primes distributed? when does $x^2 \\equiv a \\pmod p$ have a solution? — yet answering them has repeatedly forced mathematicians to invent new ideas, from Euclid’s algorithm to modern algebra and complex analysis. The elementary theory in this course is also eminently practical: it is the mathematics behind check digits, hashing, pseudo-random numbers and the public-key cryptography that protects almost every connection on the internet.",
+    "The course follows the classical route. We begin with **divisibility**, the Euclidean algorithm and Bézout’s identity, and use them to prove the **fundamental theorem of arithmetic** and to study the primes. **Congruences** then give a language for arithmetic “up to multiples of $n$”, leading to the Chinese remainder theorem, the theorems of **Fermat, Euler and Wilson**, and the structure of the multiplicative group modulo $n$ through **orders and primitive roots**. The high point is Gauss’s **law of quadratic reciprocity**, which we prove in full. The last two chapters apply everything: **cryptography** (RSA, Diffie–Hellman, primality testing) and **Diophantine equations** (Pythagorean triples, sums of two squares, Pell’s equation).",
+    "Proofs in number theory are often short but rely on a single clever idea: choose the smallest counterexample, count the same set in two ways, pair each element with its inverse, or write a number in terms of a generator. The best way to absorb these ideas is to compute: try small cases by hand or with a few lines of code, look for the pattern, and only then read the proof. Each lesson contains interactive figures — Euclid’s algorithm, modular multiplication tables, powers and orders, sieves — for exactly this kind of experiment.",
+    "The only prerequisite is the language of proof from [[proofs]], especially induction and equivalence relations. Readers who know some group theory will recognise many results as statements about the groups $(\\Z/n\\Z)^\\times$; the parallel course [[abstract-algebra]] develops that point of view, and the two can be read side by side."
+  ],
+  "prerequisites": [
+    "proofs"
+  ],
+  "outcomes": [
+    "Apply the division algorithm and the Euclidean algorithm to compute greatest common divisors and Bézout coefficients, and prove their basic properties.",
+    "Prove the fundamental theorem of arithmetic and the infinitude of primes, and use prime factorisations to compute gcds, lcms, divisor counts and the power of a prime dividing $n!$.",
+    "Calculate fluently in modular arithmetic: find inverses, solve linear congruences and solve systems of congruences with the Chinese remainder theorem.",
+    "Prove and apply Fermat’s little theorem, Euler’s theorem and Wilson’s theorem, and compute Euler’s totient function.",
+    "Determine multiplicative orders, prove that primitive roots exist modulo every prime, and use discrete logarithms to solve congruences.",
+    "Evaluate Legendre and Jacobi symbols using Euler’s criterion and the law of quadratic reciprocity, and prove the reciprocity law.",
+    "Explain RSA, Diffie–Hellman key exchange and probabilistic primality tests, prove why they work and analyse what their security depends on.",
+    "Solve linear Diophantine equations, parametrise Pythagorean triples, characterise sums of two squares and generate the solutions of Pell’s equation."
+  ],
+  "chapters": [
+    {
+      "slug": "divisibility",
+      "title": "Divisibility and the Euclidean algorithm",
+      "summary": "The division algorithm, greatest common divisors, Euclid’s algorithm and Bézout’s identity.",
+      "requires": [
+        "proofs/induction"
+      ]
+    },
+    {
+      "slug": "primes",
+      "title": "Prime numbers",
+      "summary": "The fundamental theorem of arithmetic, the infinitude of primes and the distribution of primes.",
+      "requires": [
+        "number-theory/divisibility"
+      ]
+    },
+    {
+      "slug": "congruences",
+      "title": "Congruences",
+      "summary": "Modular arithmetic, linear congruences and the Chinese remainder theorem.",
+      "requires": [
+        "number-theory/divisibility",
+        "proofs/relations"
+      ]
+    },
+    {
+      "slug": "fermat-euler",
+      "title": "Fermat, Euler and Wilson",
+      "summary": "Fermat’s little theorem, Euler’s totient function and theorem, and Wilson’s theorem.",
+      "requires": [
+        "number-theory/congruences"
+      ]
+    },
+    {
+      "slug": "primitive-roots",
+      "title": "Orders and primitive roots",
+      "summary": "The multiplicative order, primitive roots and discrete logarithms.",
+      "requires": [
+        "number-theory/fermat-euler"
+      ]
+    },
+    {
+      "slug": "quadratic-reciprocity",
+      "title": "Quadratic residues and reciprocity",
+      "summary": "Quadratic residues, the Legendre symbol, Euler’s criterion, Gauss’s lemma and the law of quadratic reciprocity.",
+      "requires": [
+        "number-theory/primitive-roots"
+      ]
+    },
+    {
+      "slug": "cryptography",
+      "title": "Number theory and cryptography",
+      "summary": "Fast modular exponentiation, RSA, Diffie–Hellman key exchange and primality testing.",
+      "requires": [
+        "number-theory/fermat-euler"
+      ]
+    },
+    {
+      "slug": "diophantine",
+      "title": "Diophantine equations",
+      "summary": "Linear Diophantine equations, Pythagorean triples, sums of two squares and Pell’s equation.",
+      "requires": [
+        "number-theory/primes",
+        "number-theory/quadratic-reciprocity"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -300,
+      "title": "Euclid’s Elements",
+      "detail": "Books VII–IX of the Elements contain the Euclidean algorithm, the lemma that a prime dividing a product divides one of the factors, and the proof that there are infinitely many primes.",
+      "people": [
+        "Euclid"
+      ]
+    },
+    {
+      "year": 250,
+      "title": "Diophantus’s Arithmetica",
+      "detail": "Diophantus of Alexandria (about the third century) solved many equations in rational numbers; Fermat’s famous marginal notes were written in a 1621 edition of this book.",
+      "people": [
+        "Diophantus of Alexandria"
+      ]
+    },
+    {
+      "year": 628,
+      "title": "Brahmagupta’s composition",
+      "detail": "In the Brāhmasphuṭasiddhānta Brahmagupta showed how to combine solutions of equations $x^2 - Ny^2 = k$, a key step towards Pell’s equation; the cyclic (chakravala) method of Jayadeva and Bhāskara II (eleventh–twelfth centuries) then solved hard cases such as $x^2 - 61y^2 = 1$.",
+      "people": [
+        "Brahmagupta",
+        "Jayadeva",
+        "Bhāskara II"
+      ]
+    },
+    {
+      "year": 1247,
+      "title": "Qin Jiushao and simultaneous congruences",
+      "detail": "Qin Jiushao’s Mathematical Treatise in Nine Sections gave a general method for solving systems of congruences, extending a problem in the much earlier Sunzi Suanjing — the origin of the name “Chinese remainder theorem”.",
+      "people": [
+        "Qin Jiushao"
+      ]
+    },
+    {
+      "year": 1640,
+      "title": "Fermat’s letters",
+      "detail": "In letters of 1640 Pierre de Fermat stated, without proof, the little theorem $a^{p} \\equiv a \\pmod p$ and the theorem that primes of the form $4k+1$ are sums of two squares.",
+      "people": [
+        "Pierre de Fermat"
+      ]
+    },
+    {
+      "year": 1801,
+      "title": "Gauss’s Disquisitiones Arithmeticae",
+      "detail": "Carl Friedrich Gauss introduced the congruence notation, proved the existence of primitive roots modulo primes and gave the first proofs of the law of quadratic reciprocity, which he called the fundamental theorem.",
+      "people": [
+        "Carl Friedrich Gauss"
+      ]
+    },
+    {
+      "year": 1837,
+      "title": "Dirichlet’s theorem",
+      "detail": "Peter Gustav Lejeune Dirichlet proved that every arithmetic progression $a, a+n, a+2n, \\dots$ with $\\gcd(a,n) = 1$ contains infinitely many primes, founding analytic number theory.",
+      "people": [
+        "Peter Gustav Lejeune Dirichlet"
+      ]
+    },
+    {
+      "year": 1896,
+      "title": "The prime number theorem",
+      "detail": "Jacques Hadamard and Charles de la Vallée Poussin independently proved that the number of primes up to $x$ is asymptotic to $x/\\ln x$, using Riemann’s ideas on the zeta function.",
+      "people": [
+        "Jacques Hadamard",
+        "Charles de la Vallée Poussin",
+        "Bernhard Riemann"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Public-key cryptography",
+      "detail": "Whitfield Diffie and Martin Hellman published their key-exchange protocol; Rivest, Shamir and Adleman invented RSA the following year. (Clifford Cocks had found an equivalent of RSA at GCHQ in 1973, which remained secret until 1997.)",
+      "people": [
+        "Whitfield Diffie",
+        "Martin Hellman",
+        "Ron Rivest",
+        "Adi Shamir",
+        "Leonard Adleman",
+        "Clifford Cocks"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "Fermat’s Last Theorem",
+      "detail": "Andrew Wiles’s proof, completed with Richard Taylor, showed that $x^n + y^n = z^n$ has no solutions in positive integers for $n \\ge 3$, ending a search of more than 350 years.",
+      "people": [
+        "Andrew Wiles",
+        "Richard Taylor"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Elementary Number Theory",
+      "authors": "David M. Burton",
+      "year": 2011,
+      "note": "Gentle and thorough, with many worked examples and excellent historical notes; covers all of this course."
+    },
+    {
+      "title": "A Friendly Introduction to Number Theory",
+      "authors": "Joseph H. Silverman",
+      "year": 2012,
+      "note": "Conversational and experimental in spirit, with good chapters on cryptography, Pell’s equation and sums of squares."
+    },
+    {
+      "title": "An Introduction to the Theory of Numbers",
+      "authors": "Ivan Niven, Herbert S. Zuckerman and Hugh L. Montgomery",
+      "year": 1991,
+      "note": "The standard rigorous undergraduate text, with demanding exercises and a wide range of topics."
+    },
+    {
+      "title": "An Introduction to the Theory of Numbers",
+      "authors": "G. H. Hardy and E. M. Wright (revised by D. R. Heath-Brown and J. H. Silverman)",
+      "year": 2008,
+      "note": "The classic: idiosyncratic order but full of beautiful proofs, including several of the theorems on primes and sums of squares."
+    },
+    {
+      "title": "A Classical Introduction to Modern Number Theory",
+      "authors": "Kenneth Ireland and Michael Rosen",
+      "year": 1990,
+      "note": "Takes the algebraic point of view further: reciprocity laws, Gauss sums and finite fields. The natural next book."
+    },
+    {
+      "title": "Elementary Number Theory and Its Applications",
+      "authors": "Kenneth H. Rosen",
+      "year": 2011,
+      "note": "Strong on computation and applications, including check digits, primality testing and cryptography."
+    },
+    {
+      "title": "An Introduction to Mathematical Cryptography",
+      "authors": "Jeffrey Hoffstein, Jill Pipher and Joseph H. Silverman",
+      "year": 2014,
+      "note": "A careful mathematical treatment of RSA, discrete logarithms, elliptic curves and lattice-based cryptography."
+    },
+    {
+      "title": "The Higher Arithmetic",
+      "authors": "H. Davenport",
+      "year": 2008,
+      "note": "A short, elegant classic for reading alongside the course; the 8th edition updates the material on computing and cryptography."
+    }
+  ],
+  "next": []
+}

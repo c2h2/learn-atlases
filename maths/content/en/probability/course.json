@@ -1,0 +1,217 @@
+{
+  "slug": "probability",
+  "title": "Probability",
+  "full_title": "Probability",
+  "area": "probability",
+  "level": 2,
+  "order": 70,
+  "tagline": "Random events, random variables and the laws that govern long-run behaviour",
+  "summary": "Probability theory is the mathematics of uncertainty. Starting from Kolmogorov’s axioms, this course develops conditional probability, discrete and continuous random variables, joint distributions and expectation, the law of large numbers and central limit theorem, and Markov chains.",
+  "overview": [
+    "Probability theory is the mathematics of uncertainty. It gives a precise meaning to statements such as “the chance of rain tomorrow is 30%” or “this test has a 5% false-positive rate”, and it lets us calculate with them: how likely a disease is after a positive test, how long a gambler can expect to last, why averages of many measurements settle down, and why the bell curve appears almost everywhere. Probability is the foundation of statistics and an everyday tool in physics, finance, computer science, machine learning, genetics and engineering.",
+    "The course follows a standard first course in probability. It starts from Kolmogorov’s axioms and the rules that follow from them, then develops conditional probability, Bayes’ theorem and independence. Random variables come next, first discrete and then continuous, with the classical distributions (binomial, geometric, Poisson, uniform, exponential, normal) and their properties. Joint distributions, covariance and correlation describe several random quantities at once, and expectation, conditional expectation and generating functions provide powerful computational tools. The course culminates in the law of large numbers and the central limit theorem, and ends with Markov chains, the simplest models of random evolution in time.",
+    "In probability the mathematics is often easy while the modelling is hard: the real difficulty is usually in translating a verbal description into a sample space, events and random variables. Intuition is a poor guide here (the birthday problem, the Monty Hall problem and the base-rate fallacy are famous traps), so every answer in this course is derived from definitions. Work through the examples yourself, check answers by simulation when you can, and use the interactive figures to build a feel for how distributions behave. Calculus (integrals and series) and elementary counting are used throughout; measure theory is not required, but remarks point out where it makes the theory fully rigorous."
+  ],
+  "prerequisites": [
+    "calculus-1",
+    "discrete"
+  ],
+  "outcomes": [
+    "Model random experiments with probability spaces and derive consequences of Kolmogorov’s axioms such as inclusion–exclusion and the continuity of probability.",
+    "Compute conditional probabilities with the multiplication rule, the law of total probability and Bayes’ theorem, and recognise the base-rate fallacy.",
+    "Decide whether events and random variables are independent, distinguishing mutual from pairwise independence and independence from zero correlation.",
+    "Work fluently with the Bernoulli, binomial, geometric, Poisson, uniform, exponential and normal distributions, their means, variances and relationships.",
+    "Find the distribution of a function of a random variable, and of a sum of independent random variables by convolution or generating functions.",
+    "Calculate joint, marginal and conditional distributions, covariances and correlations for discrete and continuous random vectors.",
+    "Use linearity of expectation, indicator variables, conditional expectation and the laws of total expectation and total variance to solve problems.",
+    "Prove Markov’s and Chebyshev’s inequalities and the weak law of large numbers, and apply the central limit theorem to approximate probabilities.",
+    "Analyse finite Markov chains: compute multi-step transition probabilities, classify states, find stationary distributions and apply the convergence theorem."
+  ],
+  "chapters": [
+    {
+      "slug": "probability-spaces",
+      "title": "Probability spaces",
+      "summary": "Sample spaces and events, Kolmogorov’s axioms and their consequences, and equally likely outcomes.",
+      "requires": [
+        "proofs/sets",
+        "discrete/counting"
+      ]
+    },
+    {
+      "slug": "conditional-probability",
+      "title": "Conditional probability and independence",
+      "summary": "Conditional probability, the law of total probability, Bayes’ theorem and independence.",
+      "requires": [
+        "probability/probability-spaces"
+      ]
+    },
+    {
+      "slug": "discrete-random-variables",
+      "title": "Discrete random variables",
+      "summary": "Probability mass functions, expectation and variance, and the Bernoulli, binomial, geometric and Poisson distributions.",
+      "requires": [
+        "probability/conditional-probability"
+      ]
+    },
+    {
+      "slug": "continuous-random-variables",
+      "title": "Continuous random variables",
+      "summary": "Densities and distribution functions, the uniform, exponential and normal distributions, and functions of random variables.",
+      "requires": [
+        "probability/discrete-random-variables",
+        "calculus-1/integrals"
+      ]
+    },
+    {
+      "slug": "joint-distributions",
+      "title": "Joint distributions",
+      "summary": "Joint, marginal and conditional distributions, independence, covariance and correlation.",
+      "requires": [
+        "probability/continuous-random-variables"
+      ]
+    },
+    {
+      "slug": "expectation",
+      "title": "Expectation and generating functions",
+      "summary": "Linearity of expectation, conditional expectation, and probability and moment generating functions.",
+      "requires": [
+        "probability/joint-distributions"
+      ]
+    },
+    {
+      "slug": "limit-theorems",
+      "title": "Limit theorems",
+      "summary": "Markov’s and Chebyshev’s inequalities, the law of large numbers and the central limit theorem.",
+      "requires": [
+        "probability/expectation"
+      ]
+    },
+    {
+      "slug": "markov-chains",
+      "title": "Markov chains",
+      "summary": "Transition matrices, classification of states, stationary distributions and convergence to equilibrium.",
+      "requires": [
+        "probability/conditional-probability",
+        "linear-algebra/eigenvalues"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1654,
+      "title": "Pascal and Fermat on the problem of points",
+      "detail": "Prompted by questions from the Chevalier de Méré, Blaise Pascal and Pierre de Fermat exchanged letters on how to divide the stakes of an interrupted game, laying the foundations of the subject.",
+      "people": [
+        "Blaise Pascal",
+        "Pierre de Fermat"
+      ]
+    },
+    {
+      "year": 1657,
+      "title": "The first printed book on probability",
+      "detail": "Christiaan Huygens’s De ratiociniis in ludo aleae systematised reasoning about games of chance and introduced the idea of expected value.",
+      "people": [
+        "Christiaan Huygens"
+      ]
+    },
+    {
+      "year": 1713,
+      "title": "Ars Conjectandi and the law of large numbers",
+      "detail": "Jacob Bernoulli’s posthumously published book proved the first law of large numbers: the relative frequency of successes in repeated trials converges to the probability of success.",
+      "people": [
+        "Jacob Bernoulli"
+      ]
+    },
+    {
+      "year": 1733,
+      "title": "De Moivre’s normal approximation",
+      "detail": "Abraham de Moivre showed that binomial probabilities for many trials are approximated by what we now call the normal curve, the first central limit theorem.",
+      "people": [
+        "Abraham de Moivre"
+      ]
+    },
+    {
+      "year": 1763,
+      "title": "Bayes’s essay",
+      "detail": "Richard Price published Thomas Bayes’s posthumous essay on inferring the probability of an event from observed frequencies, the origin of Bayes’ theorem.",
+      "people": [
+        "Thomas Bayes",
+        "Richard Price"
+      ]
+    },
+    {
+      "year": 1812,
+      "title": "Laplace’s analytic theory",
+      "detail": "Pierre-Simon Laplace’s Théorie analytique des probabilités collected the classical theory, including generating functions, the central limit theorem and inverse probability.",
+      "people": [
+        "Pierre-Simon Laplace"
+      ]
+    },
+    {
+      "year": 1867,
+      "title": "Chebyshev’s inequality",
+      "detail": "Pafnuty Chebyshev used the inequality now named after him (found earlier by Irénée-Jules Bienaymé) to prove a general law of large numbers.",
+      "people": [
+        "Pafnuty Chebyshev",
+        "Irénée-Jules Bienaymé"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "Markov chains",
+      "detail": "Andrey Markov extended the law of large numbers to dependent sequences, introducing the chains that bear his name.",
+      "people": [
+        "Andrey Markov"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Kolmogorov’s axioms",
+      "detail": "Andrey Kolmogorov’s Grundbegriffe der Wahrscheinlichkeitsrechnung founded probability on measure theory, giving the axiomatic framework used today.",
+      "people": [
+        "Andrey Kolmogorov"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "A First Course in Probability",
+      "authors": "Sheldon Ross",
+      "year": 2019,
+      "note": "The standard first textbook (10th edition): a very large stock of worked examples and exercises, with a gentle approach to proofs."
+    },
+    {
+      "title": "Introduction to Probability",
+      "authors": "Joseph K. Blitzstein and Jessica Hwang",
+      "year": 2019,
+      "note": "Outstanding for intuition, conditioning arguments and “story proofs”; accompanies Harvard’s Stat 110 course, whose lectures are freely available."
+    },
+    {
+      "title": "Introduction to Probability",
+      "authors": "Dimitri P. Bertsekas and John N. Tsitsiklis",
+      "year": 2008,
+      "note": "Clear and concise MIT text with many solved problems; good on conditional expectation, limit theorems and Markov chains."
+    },
+    {
+      "title": "Probability and Random Processes",
+      "authors": "Geoffrey Grimmett and David Stirzaker",
+      "year": 2020,
+      "note": "Rigorous and comprehensive (4th edition): generating functions, modes of convergence, Markov chains and beyond; the next step after this course."
+    },
+    {
+      "title": "An Introduction to Probability Theory and Its Applications, Volume I",
+      "authors": "William Feller",
+      "year": 1968,
+      "note": "The great classic of discrete probability (3rd edition), full of deep insights on random walks, recurrent events and Markov chains."
+    },
+    {
+      "title": "Markov Chains",
+      "authors": "J. R. Norris",
+      "year": 1997,
+      "note": "The standard rigorous introduction to discrete- and continuous-time Markov chains, with full proofs of the convergence theorems."
+    }
+  ],
+  "next": [
+    "statistics"
+  ]
+}

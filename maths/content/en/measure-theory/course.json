@@ -1,0 +1,194 @@
+{
+  "slug": "measure-theory",
+  "title": "Measure Theory",
+  "full_title": "Measure Theory and Lebesgue Integration",
+  "area": "analysis",
+  "level": 3,
+  "order": 180,
+  "tagline": "σ-algebras, Lebesgue measure and the Lebesgue integral with its convergence theorems",
+  "summary": "The Riemann integral cannot integrate many natural functions or pass limits through integrals freely. Lebesgue’s theory of measure and integration fixes both problems and underpins modern analysis and probability. This course builds measures, Lebesgue measure and the Lebesgue integral, proves the convergence theorems and introduces Lp spaces.",
+  "overview": [
+    "The Riemann integral works beautifully for continuous functions but breaks down at the edges: the indicator function of the rationals in $[0,1]$ has no Riemann integral, although it is a pointwise limit of integrable functions, and theorems that pass limits through integrals need strong hypotheses such as uniform convergence. Measure theory repairs both defects. Instead of chopping the *domain* of a function into intervals, Lebesgue's idea is to chop its *range* and ask how large the set is on which the function takes values in each slice — which requires a theory of the size, or **measure**, of quite general sets.",
+    "The course builds this theory in five steps. We first ask which sets can be measured and introduce σ-algebras and abstract measures. We then construct Lebesgue measure on $\\R$ from outer measure using Carathéodory's criterion, and show that some sets cannot be measured at all. Measurable functions and their approximation by simple functions come next, followed by the Lebesgue integral and its three great convergence theorems: the monotone convergence theorem, Fatou's lemma and the dominated convergence theorem. Finally we study the $L^p$ spaces, proving Hölder's and Minkowski's inequalities and the completeness of $L^p$, and compare the different ways in which a sequence of functions can converge.",
+    "The subject has a reputation for being technical, and the first two chapters do contain careful set-theoretic arguments. The reward is a theory that is far more flexible than Riemann's: limits and integrals can be exchanged under simple, checkable conditions, and the same framework covers lengths, areas, sums and probabilities. Modern probability theory is measure theory with a different vocabulary, and $L^p$ spaces are the natural home of Fourier analysis and partial differential equations. Keep a stock of examples and counterexamples at hand — the moving bump, the escaping mass, the Cantor set — and test every theorem against them."
+  ],
+  "prerequisites": [
+    "real-analysis"
+  ],
+  "outcomes": [
+    "Explain the limitations of the Riemann integral that motivate measure theory.",
+    "Verify that a collection of sets is a σ-algebra, describe the Borel σ-algebra, and prove the basic properties of measures, including continuity from below and above.",
+    "Construct Lebesgue measure from Lebesgue outer measure using Carathéodory's criterion, and prove that non-measurable sets exist.",
+    "Prove that measurable functions are closed under algebraic operations and pointwise limits, and approximate them by simple functions.",
+    "Define the Lebesgue integral and prove the monotone convergence theorem, Fatou's lemma and the dominated convergence theorem.",
+    "Use the convergence theorems to evaluate limits of integrals, to integrate series term by term and to differentiate under the integral sign.",
+    "Prove Hölder's and Minkowski's inequalities and the completeness of $L^p$ spaces.",
+    "Compare almost-everywhere convergence, convergence in $L^p$, convergence in measure and uniform convergence, with counterexamples."
+  ],
+  "chapters": [
+    {
+      "slug": "sigma-algebras",
+      "title": "σ-algebras and measures",
+      "summary": "Why we need measure theory, σ-algebras, measures and Borel sets.",
+      "requires": [
+        "real-analysis/riemann-integral",
+        "proofs/cardinality"
+      ]
+    },
+    {
+      "slug": "lebesgue-measure",
+      "title": "Lebesgue measure",
+      "summary": "Outer measure, Carathéodory’s criterion, Lebesgue measure and non-measurable sets.",
+      "requires": [
+        "measure-theory/sigma-algebras"
+      ]
+    },
+    {
+      "slug": "measurable-functions",
+      "title": "Measurable functions",
+      "summary": "Measurable functions, simple functions and approximation.",
+      "requires": [
+        "measure-theory/lebesgue-measure"
+      ]
+    },
+    {
+      "slug": "lebesgue-integral",
+      "title": "The Lebesgue integral",
+      "summary": "Constructing the integral, the monotone convergence theorem, Fatou’s lemma and the dominated convergence theorem.",
+      "requires": [
+        "measure-theory/measurable-functions"
+      ]
+    },
+    {
+      "slug": "lp-spaces",
+      "title": "Lp spaces and modes of convergence",
+      "summary": "Lp norms, Hölder’s and Minkowski’s inequalities, completeness, and convergence in measure.",
+      "requires": [
+        "measure-theory/lebesgue-integral",
+        "real-analysis/metric-spaces"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1898,
+      "title": "Borel's measure",
+      "detail": "In his *Leçons sur la théorie des fonctions* Borel assigned a measure to sets built from intervals by countable unions and complements, insisting on countable additivity — the origin of the Borel sets.",
+      "people": [
+        "Émile Borel"
+      ]
+    },
+    {
+      "year": 1902,
+      "title": "Lebesgue's thesis *Intégrale, longueur, aire*",
+      "detail": "Lebesgue defined the measure and integral that bear his name and proved the bounded convergence theorem, a special case of the dominated convergence theorem.",
+      "people": [
+        "Henri Lebesgue"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "A non-measurable set",
+      "detail": "Vitali used the axiom of choice to construct a subset of the real line that cannot be assigned any translation-invariant, countably additive length.",
+      "people": [
+        "Giuseppe Vitali"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "The monotone convergence theorem and Fatou's lemma",
+      "detail": "Beppo Levi proved the monotone convergence theorem, and Fatou's lemma appeared in Fatou's thesis on trigonometric and Taylor series.",
+      "people": [
+        "Beppo Levi",
+        "Pierre Fatou"
+      ]
+    },
+    {
+      "year": 1907,
+      "title": "The Riesz–Fischer theorem",
+      "detail": "Riesz and Fischer independently showed that square-integrable functions form a complete space, so that every square-summable sequence of coefficients comes from a function.",
+      "people": [
+        "Frigyes Riesz",
+        "Ernst Fischer"
+      ]
+    },
+    {
+      "year": 1910,
+      "title": "Lp spaces",
+      "detail": "Riesz introduced the spaces of functions whose p-th power is integrable and studied their duality, using the inequalities of Hölder and Minkowski.",
+      "people": [
+        "Frigyes Riesz"
+      ]
+    },
+    {
+      "year": 1911,
+      "title": "Egorov's theorem",
+      "detail": "Egorov showed that on a set of finite measure almost-everywhere convergence is uniform outside a set of arbitrarily small measure; Lusin's theorem on the near-continuity of measurable functions followed in 1912.",
+      "people": [
+        "Dmitri Egorov",
+        "Nikolai Lusin"
+      ]
+    },
+    {
+      "year": 1914,
+      "title": "Carathéodory's criterion",
+      "detail": "Carathéodory characterised measurable sets as those that split every set additively, giving the construction of measures from outer measures used throughout modern measure theory.",
+      "people": [
+        "Constantin Carathéodory"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Probability becomes measure theory",
+      "detail": "Kolmogorov's *Grundbegriffe der Wahrscheinlichkeitsrechnung* founded probability on axioms in which events form a σ-algebra and probability is a measure of total mass one.",
+      "people": [
+        "Andrey Kolmogorov"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Measure, Integration & Real Analysis",
+      "authors": "Sheldon Axler",
+      "year": 2020,
+      "note": "A clear, modern and leisurely introduction, freely available online; closest in spirit to this course."
+    },
+    {
+      "title": "Real Analysis: Measure Theory, Integration, and Hilbert Spaces",
+      "authors": "Elias M. Stein and Rami Shakarchi",
+      "year": 2005,
+      "note": "Builds Lebesgue measure on $\\R^d$ concretely and connects it with Fourier analysis (Princeton Lectures in Analysis III)."
+    },
+    {
+      "title": "Real Analysis",
+      "authors": "H. L. Royden and P. M. Fitzpatrick",
+      "year": 2010,
+      "note": "The standard text (4th edition): Lebesgue measure on the line first, then abstract measure spaces."
+    },
+    {
+      "title": "Real Analysis: Modern Techniques and Their Applications",
+      "authors": "Gerald B. Folland",
+      "year": 1999,
+      "note": "The standard graduate reference (2nd edition); concise and complete, good for going further."
+    },
+    {
+      "title": "An Introduction to Measure Theory",
+      "authors": "Terence Tao",
+      "year": 2011,
+      "note": "Starts from Jordan measure and motivates every step of the Lebesgue construction; many exercises."
+    },
+    {
+      "title": "The Elements of Integration and Lebesgue Measure",
+      "authors": "Robert G. Bartle",
+      "year": 1995,
+      "note": "A short, efficient account of abstract integration and Lp spaces followed by the construction of Lebesgue measure."
+    },
+    {
+      "title": "Measure, Integral and Probability",
+      "authors": "Marek Capiński and Ekkehard Kopp",
+      "year": 2004,
+      "note": "An undergraduate introduction with a strong emphasis on probability (2nd edition)."
+    }
+  ],
+  "next": []
+}

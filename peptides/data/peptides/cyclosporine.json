@@ -1,0 +1,642 @@
+{
+  "slug": "cyclosporine",
+  "name": "Ciclosporin (cyclosporine)",
+  "aliases": [
+    "Cyclosporin A",
+    "CsA",
+    "Cyclosporine A",
+    "Ciclosporine",
+    "OL 27-400",
+    "S 7481F1"
+  ],
+  "category": "hormone",
+  "drug_class": "Calcineurin inhibitor; immunosuppressant",
+  "subclass": "Classic peptide drugs — cyclic undecapeptide natural product",
+  "status": "approved",
+  "status_note": "Approved worldwide since 1983 for prevention of organ-transplant rejection, and later for rheumatoid arthritis, psoriasis and dry eye disease; available as generics and in several ophthalmic formulations.",
+  "evidence": 5,
+  "evidence_note": "Four decades of randomised trials and routine use across kidney, liver and heart transplantation, plus controlled trials in rheumatoid arthritis, psoriasis and keratoconjunctivitis sicca; on the WHO Model List of Essential Medicines.",
+  "tagline": "The fungal cyclic peptide that made modern organ transplantation possible",
+  "summary": "Ciclosporin is a ring of eleven amino acids made by the soil fungus Tolypocladium inflatum, found at Sandoz in Basel in the early 1970s. It blocks the activation of T cells by binding cyclophilin and jamming the phosphatase calcineurin, and its approval in 1983 turned organ transplantation from an experimental gamble into routine surgery. The same mechanism, applied topically, treats dry eye. Its main limitation is that it damages the very kidneys it helps preserve.",
+  "overview": [
+    "In 1970 Sandoz screened fungi from soil samples collected on the Hardangervidda plateau in Norway and in Wisconsin. Both yielded a family of natural products, the cyclosporins, with weak antifungal activity; the Norwegian strain, Tolypocladium inflatum Gams, later became the production organism. On 31 January 1972 the immunosuppressive effect of the lead compound turned up in a screening assay designed by Hartmann Stähelin, and Jean-François Borel drove the subsequent pharmacology. The chemical structure was solved at Sandoz in 1976, and the biological characterisation was published the same year.",
+    "The molecule is chemically extraordinary. It is a head-to-tail cyclic undecapeptide with no free termini, seven N-methylated backbone nitrogens, a D-alanine, an unusual 2-aminobutyric acid, a sarcosine, and a residue found nowhere else in nature: N-methyl-(4R)-4-[(E)-2-butenyl]-4-methyl-L-threonine, abbreviated Bmt. Those features make it resistant to proteases, and let the ring fold so that its polar groups face inward, which is why a 1.2 kDa peptide is orally absorbed at all. Ciclosporin is a textbook example of a natural product breaking the rules of oral druggability.",
+    "Roy Calne's group in Cambridge first gave it to patients receiving cadaveric kidney transplants in 1978, and Thomas Starzl used it in liver transplantation in Pittsburgh. The FDA approved the intravenous formulation of Sandimmune on 14 November 1983. Graft and patient survival improved dramatically, and organ transplantation became a routine service rather than a last resort. Erratic absorption of the original oil-based formulation was a persistent problem, solved in 1995 by Neoral, a microemulsion preconcentrate with much more consistent exposure — the two are explicitly not interchangeable without supervision.",
+    "The same mechanism later found a much larger, lower-risk market in the eye. Restasis, a 0.05% ophthalmic emulsion approved in December 2002, treats keratoconjunctivitis sicca by suppressing local T-cell-driven inflammation, and a series of newer formulations followed: Ikervis in Europe, Cequa in 2018, Verkazia for vernal keratoconjunctivitis in 2021 and Vevye in 2023. Systemically, ciclosporin's nephrotoxicity, hypertension and long-term cancer risk mean it has been steadily displaced in transplantation by tacrolimus, but it remains an essential medicine and is still used in rheumatoid arthritis, severe psoriasis, nephrotic syndrome, aplastic anaemia and in veterinary dermatology."
+  ],
+  "mechanism": [
+    "Ciclosporin is a prodrug for a protein–protein interaction. On its own it does nothing to its ultimate target: it first binds cyclophilin A, an abundant cytosolic peptidyl-prolyl isomerase. The resulting ciclosporin–cyclophilin complex, not either partner alone, binds and inhibits calcineurin, the calcium- and calmodulin-dependent serine/threonine phosphatase that activates T cells. This 'gain of function' inhibition was established in 1991, when Liu and Schreiber showed that calcineurin is the shared target of both cyclophilin–ciclosporin and FKBP–FK506 complexes.",
+    "Blocking calcineurin prevents dephosphorylation of NFAT, so NFAT cannot enter the nucleus and drive transcription of interleukin-2 and other cytokines. Without IL-2, antigen-stimulated T cells do not proliferate, and the cell-mediated response that rejects a graft never gets going. The effect is on activation rather than on existing lymphocyte numbers, which is why ciclosporin suppresses rejection without the marrow toxicity of older cytotoxic immunosuppressants.",
+    "The same calcineurin blockade explains the drug's main toxicity. Calcineurin is not confined to lymphocytes: inhibiting it in the kidney causes afferent arteriolar vasoconstriction and, over years, striped interstitial fibrosis and arteriolar hyalinosis. Ciclosporin is also a substrate and inhibitor of CYP3A4 and P-glycoprotein, which is the source of its long list of interactions — with grapefruit juice, azole antifungals, macrolides, rifampicin and statins among them."
+  ],
+  "origin": "Natural product of the soil fungus Tolypocladium inflatum Gams (originally described as Trichoderma polysporum), isolated from soil samples collected in Norway and Wisconsin",
+  "discovery": {
+    "year": 1972,
+    "by": "Hartmann F. Stähelin and Jean-François Borel",
+    "where": "Sandoz Ltd (now Novartis), Basel, Switzerland",
+    "note": "The fungal strains were isolated in 1970 from Norwegian and Wisconsin soil; the immunosuppressive effect of the lead compound was detected on 31 January 1972 in a screening assay designed by Stähelin. The structure was determined at Sandoz in 1976 and the biology published by Borel, Feurer, Gubler and Stähelin the same year."
+  },
+  "first_human_year": 1978,
+  "first_approval": {
+    "date": "1983-11-14",
+    "agency": "FDA",
+    "region": "US",
+    "brand": "Sandimmune",
+    "indication": "Prophylaxis of organ rejection in kidney, liver and heart transplantation"
+  },
+  "developer": "Sandoz Ltd, Basel (now Novartis)",
+  "brands": [
+    {
+      "name": "Sandimmune (injection)",
+      "company": "Novartis",
+      "route": "Intravenous infusion",
+      "use": "Prophylaxis of organ rejection in kidney, liver and heart transplantation",
+      "approved": "1983-11-14",
+      "agency": "FDA"
+    },
+    {
+      "name": "Sandimmune (capsules)",
+      "company": "Novartis",
+      "route": "Oral capsule and solution",
+      "use": "Prophylaxis of organ rejection",
+      "approved": "1990-03-02",
+      "agency": "FDA"
+    },
+    {
+      "name": "Neoral",
+      "company": "Novartis",
+      "route": "Oral microemulsion capsule and solution",
+      "use": "Transplant rejection prophylaxis; rheumatoid arthritis; severe recalcitrant plaque psoriasis",
+      "approved": "1995-07-14",
+      "agency": "FDA"
+    },
+    {
+      "name": "Restasis",
+      "company": "Allergan (now AbbVie)",
+      "route": "Ophthalmic emulsion 0.05%",
+      "use": "Increasing tear production in keratoconjunctivitis sicca",
+      "approved": "2002-12-23",
+      "agency": "FDA"
+    },
+    {
+      "name": "Cequa",
+      "company": "Sun Pharmaceutical",
+      "route": "Ophthalmic solution 0.09% (nanomicellar)",
+      "use": "Dry eye disease",
+      "approved": "2018-08-14",
+      "agency": "FDA"
+    },
+    {
+      "name": "Verkazia",
+      "company": "Santen / Harrow",
+      "route": "Ophthalmic emulsion 0.1%",
+      "use": "Vernal keratoconjunctivitis in children and adults",
+      "approved": "2021-06-23",
+      "agency": "FDA"
+    },
+    {
+      "name": "Vevye",
+      "company": "Novaliq / Harrow",
+      "route": "Ophthalmic solution 0.1% in a water-free vehicle",
+      "use": "Signs and symptoms of dry eye disease",
+      "approved": "2023-05-30",
+      "agency": "FDA"
+    }
+  ],
+  "analogs": [
+    {
+      "name": "Tacrolimus (FK506)",
+      "note": "A macrolide, not a peptide, that inhibits the same phosphatase through a different immunophilin (FKBP12); it has largely replaced ciclosporin as first-line immunosuppression after transplantation."
+    },
+    {
+      "name": "Voclosporin",
+      "note": "A ciclosporin analogue modified on the Bmt side chain, approved in 2021 for lupus nephritis, with more predictable pharmacokinetics."
+    },
+    {
+      "name": "Alisporivir (Debio 025)",
+      "note": "A non-immunosuppressive cyclophilin inhibitor derived from ciclosporin, developed against hepatitis C and studied for mitochondrial disease."
+    },
+    {
+      "name": "Cyclosporins B–I",
+      "note": "The natural congeners produced alongside cyclosporin A by the same fungi; cyclosporin A is by far the most active."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Peptidyl-prolyl cis-trans isomerase A (cyclophilin A)",
+      "gene": "PPIA",
+      "uniprot": "P62937",
+      "action": "High-affinity binding partner; the ciclosporin–cyclophilin complex is the active species"
+    },
+    {
+      "name": "Calcineurin catalytic subunit (PP2B-Aα)",
+      "gene": "PPP3CA",
+      "uniprot": "Q08209",
+      "action": "Inhibited by the ciclosporin–cyclophilin complex, blocking NFAT dephosphorylation and IL-2 transcription"
+    },
+    {
+      "name": "Cyclophilin D",
+      "gene": "PPIF",
+      "uniprot": "P30405",
+      "action": "Binding inhibits the mitochondrial permeability transition pore — the basis of non-immunosuppressive analogues"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "NMeBmt",
+          "Abu",
+          "Sar",
+          "NMeLeu",
+          "V",
+          "NMeLeu",
+          "A",
+          "a",
+          "NMeLeu",
+          "NMeLeu",
+          "NMeVal"
+        ],
+        "n_term": null,
+        "c_term": null
+      }
+    ],
+    "cyclic": true,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A1",
+        "type": "nonnatural",
+        "label": "Residue 1 is Bmt, N-methyl-(4R)-4-[(E)-2-butenyl]-4-methyl-L-threonine — an amino acid unique to the cyclosporins, carrying a butenyl side chain and a hydroxyl that is essential for calcineurin inhibition",
+        "short": "NMeBmt"
+      },
+      {
+        "at": "A2",
+        "type": "nonnatural",
+        "label": "Residue 2 is L-2-aminobutyric acid (Abu), an alanine homologue with an ethyl side chain",
+        "short": "Abu"
+      },
+      {
+        "at": "A3",
+        "type": "nonnatural",
+        "label": "Residue 3 is sarcosine (N-methylglycine)",
+        "short": "Sar"
+      },
+      {
+        "at": "A4",
+        "type": "nonnatural",
+        "label": "Residue 4 is N-methyl-L-leucine; backbone N-methylation removes an NH donor and helps the ring fold its polar groups inward",
+        "short": "NMeLeu"
+      },
+      {
+        "at": "A6",
+        "type": "nonnatural",
+        "label": "Residue 6 is N-methyl-L-leucine",
+        "short": "NMeLeu"
+      },
+      {
+        "at": "A8",
+        "type": "d-amino",
+        "label": "Residue 8 is D-alanine, the only D-residue in the molecule; it enforces the ring's turn geometry and blocks proteolysis",
+        "short": "D-Ala"
+      },
+      {
+        "at": "A9",
+        "type": "nonnatural",
+        "label": "Residue 9 is N-methyl-L-leucine",
+        "short": "NMeLeu"
+      },
+      {
+        "at": "A10",
+        "type": "nonnatural",
+        "label": "Residue 10 is N-methyl-L-leucine",
+        "short": "NMeLeu"
+      },
+      {
+        "at": "A11",
+        "type": "nonnatural",
+        "label": "Residue 11 is N-methyl-L-valine, whose carbonyl closes the ring back onto the nitrogen of residue 1",
+        "short": "NMeVal"
+      }
+    ],
+    "notation": "cyclo(NMeBmt-Abu-Sar-NMeLeu-Val-NMeLeu-Ala-D-Ala-NMeLeu-NMeLeu-NMeVal)",
+    "note": "A head-to-tail cyclic undecapeptide with no free termini, so n_term and c_term do not apply. Seven of the eleven backbone nitrogens are methylated (residues 1, 3, 4, 6, 9, 10 and 11), which removes hydrogen-bond donors and lets the ring adopt a conformation with its polar groups turned inward — the main reason a 1.2 kDa peptide is orally absorbable. Residue numbering follows the convention of starting at Bmt; PDB entries list the same ring starting at D-Ala, because the deposited sequence begins at residue 8."
+  },
+  "formula": "C62H111N11O12",
+  "mw": 1202.6,
+  "half_life": "≈ 8.4 h (range 5–18 h), terminal",
+  "half_life_hours": 8.4,
+  "routes": [
+    "Oral capsule and solution",
+    "Intravenous infusion",
+    "Ophthalmic emulsion, solution and drops",
+    "Topical (veterinary)"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "1M63",
+        "title": "Calcineurin–cyclophilin–cyclosporin ternary complex",
+        "method": "X-ray",
+        "resolution": 2.8,
+        "year": 2002,
+        "peptide_chain": "D",
+        "note": "The complete mechanism in one structure: ciclosporin bridging cyclophilin A to the calcineurin A and B subunits"
+      },
+      {
+        "id": "1CWA",
+        "title": "Monomeric cyclophilin A–cyclosporin A complex at 2.1 Å",
+        "method": "X-ray",
+        "resolution": 2.1,
+        "year": 1996,
+        "peptide_chain": "C",
+        "note": "The classic binary complex; ciclosporin is deposited as its own short polymer chain rather than as a ligand"
+      },
+      {
+        "id": "2Z6W",
+        "title": "Human cyclophilin D in complex with cyclosporin A at 0.96 Å",
+        "method": "X-ray",
+        "resolution": 0.96,
+        "year": 2008,
+        "peptide_chain": "M",
+        "note": "Near-atomic resolution view of the ring, and the basis for non-immunosuppressive cyclophilin D inhibitors"
+      }
+    ],
+    "pubchem_cid": 5284373,
+    "notes": "In the PDB ciclosporin is modelled as a short polymer chain of eleven modified residues, not as a small-molecule ligand: its deposited sequence reads (DAL)(MLE)(MLE)(MVA)(BMT)(ABA)(SAR)(MLE)V(MLE)A, which is the same ring read from D-alanine (residue 8) rather than from Bmt (residue 1). Viewers that map it to canonical one-letter codes show the misleading string ALLVTAGLVLA. Bound to cyclophilin the ring adopts a different, more extended conformation than the internally hydrogen-bonded form it takes in non-polar solvent — the conformational switch that lets one molecule be both membrane-permeable and protein-binding."
+  },
+  "ids": {
+    "pubchem_cid": 5284373,
+    "cas": "59865-13-3",
+    "drugbank": "DB00091",
+    "chembl": "CHEMBL160",
+    "unii": "83HN0GTJ6D",
+    "kegg": "D00184",
+    "chebi": "CHEBI:4031",
+    "atc": "L04AD01",
+    "inn": "ciclosporin"
+  },
+  "wiki": "Ciclosporin",
+  "queries": {
+    "pubmed": "ciclosporin[tiab] OR cyclosporine[tiab] OR \"cyclosporin A\"[tiab] OR \"cyclosporine A\"[tiab] OR sandimmune[tiab] OR neoral[tiab] OR restasis[tiab]",
+    "ctgov": "cyclosporine OR ciclosporin OR \"cyclosporin A\" OR Neoral OR Sandimmune OR Restasis"
+  },
+  "uses": {
+    "approved": [
+      {
+        "use": "Prophylaxis of organ-transplant rejection",
+        "detail": "Kidney, liver and heart allografts, usually with corticosteroids and an antiproliferative agent. The indication that transformed transplantation.",
+        "since": 1983,
+        "where": "Worldwide"
+      },
+      {
+        "use": "Severe rheumatoid arthritis",
+        "detail": "For active disease that has not responded adequately to methotrexate, alone or in combination with it.",
+        "since": 1995,
+        "where": "US, EU and most markets"
+      },
+      {
+        "use": "Severe recalcitrant plaque psoriasis",
+        "detail": "For extensive or disabling psoriasis in non-immunocompromised adults who have failed at least one systemic therapy; relapse after stopping is usual.",
+        "since": 1995,
+        "where": "US, EU and most markets"
+      },
+      {
+        "use": "Keratoconjunctivitis sicca (dry eye disease)",
+        "detail": "Topical ophthalmic ciclosporin increases tear production in patients whose tear production is presumed suppressed by ocular inflammation.",
+        "since": 2002,
+        "where": "US, EU and many other markets"
+      },
+      {
+        "use": "Vernal keratoconjunctivitis",
+        "detail": "Severe allergic eye disease in children and adults (Verkazia).",
+        "since": 2021,
+        "where": "US, EU"
+      },
+      {
+        "use": "Other immune-mediated disease",
+        "detail": "Depending on the country, labels or long-established use cover nephrotic syndrome, aplastic anaemia, atopic dermatitis, uveitis, ulcerative colitis, Behçet's disease and graft-versus-host disease.",
+        "since": null,
+        "where": "Varies by country"
+      }
+    ],
+    "investigational": [
+      {
+        "use": "Reperfusion injury and mitochondrial protection",
+        "detail": "Cyclophilin D binding blocks the mitochondrial permeability transition pore; trials in myocardial infarction and traumatic brain injury have explored this, so far without a positive phase 3 result.",
+        "stage": "Phase 2/3"
+      },
+      {
+        "use": "Antiviral cyclophilin inhibition",
+        "detail": "Non-immunosuppressive derivatives such as alisporivir were developed against hepatitis C and studied in other viral infections.",
+        "stage": "Phase 2/3 (derivatives)"
+      },
+      {
+        "use": "Inhaled ciclosporin after lung transplantation",
+        "detail": "Liposomal and solution formulations for inhalation have been studied to deliver drug to the graft while limiting systemic exposure.",
+        "stage": "Phase 2/3"
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Severe atopic dermatitis and other dermatoses",
+        "detail": "Widely used off-label in dermatology as short-course systemic therapy for severe eczema, pyoderma gangrenosum and blistering disease.",
+        "evidence": "Supported by controlled trials and long clinical experience, though usually outside the licensed indication in a given country."
+      },
+      {
+        "use": "Veterinary dermatology",
+        "detail": "Marketed as Atopica, Cyclavance and Optimmune for atopic dermatitis in dogs and cats and for keratoconjunctivitis sicca in dogs.",
+        "evidence": "Approved veterinary indications, not human off-label use, but a large part of the molecule's present-day market."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1970,
+      "title": "Fungal strains isolated from Norwegian and Wisconsin soil",
+      "detail": "Sandoz employees in Basel isolated new fungal strains from soil samples taken in Norway and in Wisconsin; both produced cyclosporins with weak antifungal activity. The Norwegian strain, Tolypocladium inflatum Gams, became the production organism.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1972,
+      "date": "1972-01-31",
+      "title": "The immunosuppressive effect is found",
+      "detail": "The activity turned up in a screening assay for immune suppression designed and implemented by Hartmann Stähelin at Sandoz; Jean-François Borel led the pharmacology that followed.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1976,
+      "date": "1976-07",
+      "title": "Biology published, structure solved",
+      "detail": "Borel, Feurer, Gubler and Stähelin described cyclosporin A as a new antilymphocytic agent; the chemical structure of the cyclic undecapeptide was determined at Sandoz in the same year.",
+      "kind": "science"
+    },
+    {
+      "year": 1978,
+      "date": "1978-12",
+      "title": "First use in transplant patients",
+      "detail": "Roy Calne and colleagues in Cambridge reported ciclosporin in patients receiving renal allografts from cadaver donors — the first clinical demonstration that it could prevent rejection.",
+      "kind": "trial"
+    },
+    {
+      "year": 1980,
+      "date": "1980-03-09",
+      "title": "Liver transplantation",
+      "detail": "Thomas Starzl began using ciclosporin in liver transplantation in Pittsburgh; the first such patient was a 28-year-old woman treated on 9 March 1980.",
+      "kind": "trial"
+    },
+    {
+      "year": 1983,
+      "date": "1983-11-14",
+      "title": "FDA approves Sandimmune",
+      "detail": "Approval of the intravenous formulation for prophylaxis of organ rejection made ciclosporin the first selective immunosuppressant in clinical use and changed transplantation from an experiment into a service.",
+      "kind": "approval"
+    },
+    {
+      "year": 1984,
+      "date": "1984-11",
+      "title": "Cyclophilin identified",
+      "detail": "Handschumacher and colleagues reported in Science that ciclosporin binds a specific cytosolic protein, which they named cyclophilin.",
+      "kind": "science"
+    },
+    {
+      "year": 1990,
+      "date": "1990-03-02",
+      "title": "Oral capsules approved",
+      "detail": "FDA approval of Sandimmune soft gelatin capsules made outpatient maintenance therapy simpler, though absorption from the oil-based formulation remained erratic.",
+      "kind": "approval"
+    },
+    {
+      "year": 1991,
+      "date": "1991-08",
+      "title": "Calcineurin found to be the real target",
+      "detail": "Liu, Schreiber and colleagues showed in Cell that calcineurin is the common target of the cyclophilin–ciclosporin and FKBP–FK506 complexes, explaining why two unrelated natural products do the same thing.",
+      "kind": "science"
+    },
+    {
+      "year": 1995,
+      "date": "1995-07-14",
+      "title": "Neoral solves the absorption problem",
+      "detail": "A microemulsion preconcentrate gave far more consistent exposure than Sandimmune; the two formulations are explicitly not bioequivalent and cannot be swapped without supervision.",
+      "kind": "approval"
+    },
+    {
+      "year": 1996,
+      "date": "1996-01",
+      "title": "The discovery history is contested",
+      "detail": "Hartmann Stähelin published an account in Experientia revisiting who did what in the discovery of cyclosporin A, after years in which credit had settled largely on Borel.",
+      "kind": "culture"
+    },
+    {
+      "year": 2000,
+      "date": "2000-04",
+      "title": "Phase 3 trials in dry eye",
+      "detail": "Two multicentre randomised studies of topical cyclosporine ophthalmic emulsion in moderate-to-severe dry eye disease reported improvements in tear production and ocular signs.",
+      "kind": "trial"
+    },
+    {
+      "year": 2002,
+      "date": "2002-12-23",
+      "title": "Restasis approved for dry eye",
+      "detail": "FDA approval of the 0.05% ophthalmic emulsion opened a far larger, lower-risk market than transplantation and made ciclosporin a mass-market eye drug.",
+      "kind": "approval"
+    },
+    {
+      "year": 2009,
+      "date": "2009-02",
+      "title": "Nephrotoxicity reassessed",
+      "detail": "A review by Naesens, Kuypers and Sarwal pulled together the evidence that calcineurin-inhibitor nephrotoxicity is near-universal in long-term transplant recipients, accelerating the shift towards minimising exposure.",
+      "kind": "safety"
+    },
+    {
+      "year": 2018,
+      "date": "2018-08-14",
+      "title": "Cequa approved",
+      "detail": "A 0.09% nanomicellar ophthalmic solution reached the US market, the first of several newer dry-eye formulations designed to deliver more drug to the ocular surface.",
+      "kind": "approval"
+    },
+    {
+      "year": 2021,
+      "date": "2021-06-23",
+      "title": "Verkazia approved for vernal keratoconjunctivitis",
+      "detail": "A 0.1% ophthalmic emulsion was approved in the US for severe allergic eye disease in children and adults.",
+      "kind": "approval"
+    },
+    {
+      "year": 2023,
+      "date": "2023-05-30",
+      "title": "Vevye approved",
+      "detail": "A water-free ophthalmic solution of ciclosporin 0.1% was approved for the signs and symptoms of dry eye disease.",
+      "kind": "approval"
+    },
+    {
+      "year": 2024,
+      "date": "2024-09",
+      "title": "A new ciclosporin eye drop in Europe",
+      "detail": "Vevizye, a water-free ciclosporin solution from Novaliq, was authorised in the European Union for dry eye disease after a positive CHMP opinion in July 2024.",
+      "kind": "approval"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "generic",
+      "detail": "Sandimmune (1983), Neoral (1995) and multiple generic oral formulations; ophthalmic products from several companies. Generic oral ciclosporin is designated a narrow-therapeutic-index drug requiring careful substitution."
+    },
+    {
+      "region": "EU",
+      "status": "generic",
+      "detail": "Approved nationally across member states with generics widely available; ophthalmic products include Ikervis, Verkazia and Vevizye (authorised September 2024)."
+    },
+    {
+      "region": "UK",
+      "status": "generic",
+      "detail": "Long-established MHRA authorisation; prescribing by brand is advised because formulations are not interchangeable."
+    },
+    {
+      "region": "Japan",
+      "status": "approved",
+      "detail": "Approved for transplantation and a range of immune-mediated conditions; listed in the Japanese Pharmacopoeia."
+    },
+    {
+      "region": "China",
+      "status": "approved",
+      "detail": "Widely used in transplantation and immune-mediated disease, with domestic generics."
+    },
+    {
+      "region": "India",
+      "status": "generic",
+      "detail": "Multiple domestic manufacturers supply oral and ophthalmic ciclosporin."
+    },
+    {
+      "region": "WADA",
+      "status": "permitted",
+      "detail": "Ciclosporin is not on the World Anti-Doping Agency Prohibited List; it is an immunosuppressant with no performance-enhancing use."
+    }
+  ],
+  "pk": {
+    "half_life": "Terminal half-life about 8.4 hours (range 5–18 hours); disposition from blood is biphasic",
+    "tmax": "Roughly 1.5–2 hours after an oral dose of the microemulsion formulation",
+    "bioavailability": "Erratic and incomplete; Neoral gives roughly 20–50% higher AUC and 40–106% higher peak concentrations than Sandimmune, and the two are not bioequivalent",
+    "metabolism": "Extensively metabolised by CYP3A4 in liver and gut and transported by P-glycoprotein; grapefruit juice, azole antifungals, macrolides and rifampicin all change exposure substantially",
+    "excretion": "Primarily biliary; only about 6% of a dose, as parent drug and metabolites, appears in urine"
+  },
+  "dosing": [
+    {
+      "product": "Neoral (transplantation)",
+      "regimen": "Oral, always in two divided doses daily, on a consistent schedule relative to meals. The initial dose depends on the organ transplanted and the rest of the immunosuppressive protocol, and is then adjusted to whole-blood trough concentrations."
+    },
+    {
+      "product": "Neoral (rheumatoid arthritis)",
+      "regimen": "2.5 mg/kg/day in two divided doses; after 8 weeks the dose may be increased by 0.5–0.75 mg/kg/day, and again at 12 weeks, to a maximum of 4 mg/kg/day. Stop if there is no benefit by 16 weeks."
+    },
+    {
+      "product": "Neoral (psoriasis)",
+      "regimen": "2.5 mg/kg/day as 1.25 mg/kg twice daily for at least 4 weeks, then increases of about 0.5 mg/kg/day every 2 weeks to a maximum of 4 mg/kg/day."
+    },
+    {
+      "product": "Restasis",
+      "regimen": "One drop of the 0.05% emulsion in each eye twice daily, about 12 hours apart."
+    }
+  ],
+  "dosing_note": "Systemic ciclosporin is dosed to blood concentration, not to a fixed milligram amount, and formulations are not interchangeable — Sandimmune and Neoral differ substantially in bioavailability. These regimens are summarised for reference only; follow the prescribing information and specialist advice.",
+  "safety": {
+    "common": [
+      "Hypertension",
+      "Renal impairment and raised creatinine",
+      "Tremor",
+      "Headache",
+      "Hirsutism (increased hair growth)",
+      "Gingival hyperplasia",
+      "Nausea and diarrhoea",
+      "Paraesthesia",
+      "Hyperlipidaemia",
+      "Hyperkalaemia and hypomagnesaemia"
+    ],
+    "serious": [
+      "Chronic nephrotoxicity with interstitial fibrosis",
+      "Serious and opportunistic infections",
+      "Lymphoma and other malignancies, including skin cancer",
+      "Hepatotoxicity",
+      "Posterior reversible encephalopathy syndrome and seizures",
+      "Thrombotic microangiopathy",
+      "Anaphylaxis to the polyoxyethylated castor oil vehicle in the intravenous formulation"
+    ],
+    "warnings": [
+      "US boxed warning: should be prescribed only by physicians experienced in immunosuppressive therapy, in facilities with adequate laboratory and supportive resources",
+      "Increased susceptibility to infection and to the development of lymphoma and other neoplasms",
+      "Neoral and Sandimmune are not bioequivalent and must not be substituted without physician supervision and concentration monitoring",
+      "Patients with impaired renal function should not receive systemic ciclosporin for rheumatoid arthritis or psoriasis",
+      "Psoriasis patients previously treated with PUVA, methotrexate, other immunosuppressants, UVB, coal tar or radiation are at increased risk of skin malignancy",
+      "Avoid grapefruit and grapefruit juice, which raise blood concentrations"
+    ],
+    "notes": "Ciclosporin's central irony is that the drug that saves transplanted kidneys also damages them: calcineurin-inhibitor nephrotoxicity is near-universal with long-term exposure, which is the main reason regimens now aim to minimise the dose or avoid these agents altogether. Systemic use requires ongoing monitoring of blood concentration, renal function and blood pressure; topical ophthalmic use has a far narrower risk profile, with local burning the usual complaint."
+  },
+  "market": null,
+  "facts": [
+    "Residue 1, Bmt, is an amino acid found nowhere else in nature — it exists only in the cyclosporins.",
+    "Seven of the eleven backbone nitrogens are methylated, removing hydrogen-bond donors and letting the ring hide its polar groups; that is how a 1.2 kDa peptide is absorbed from the gut.",
+    "The drug does nothing by itself: it has to borrow a human protein, cyclophilin, and it is the resulting complex that blocks calcineurin.",
+    "Tacrolimus is chemically unrelated to ciclosporin yet works the same way, by hijacking a different immunophilin to hit the same phosphatase.",
+    "In the Protein Data Bank ciclosporin appears as a polymer chain whose canonical one-letter sequence reads ALLVTAGLVLA — a mapping artefact, since none of those residues is what the molecule actually contains."
+  ],
+  "related": [
+    "octreotide",
+    "leuprolide",
+    "insulin",
+    "teriparatide",
+    "thymosin-alpha-1"
+  ],
+  "references": [
+    {
+      "title": "Biological effects of cyclosporin A: a new antilymphocytic agent",
+      "authors": "Borel JF, Feurer C, Gubler HU, Stähelin H",
+      "journal": "Agents Actions",
+      "year": 1976,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8969/"
+    },
+    {
+      "title": "Cyclosporin A in patients receiving renal allografts from cadaver donors",
+      "authors": "Calne RY, White DJ, Thiru S, et al.",
+      "journal": "Lancet",
+      "year": 1978,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/82836/"
+    },
+    {
+      "title": "Cyclophilin: a specific cytosolic binding protein for cyclosporin A",
+      "authors": "Handschumacher RE, Harding MW, Rice J, et al.",
+      "journal": "Science",
+      "year": 1984,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6238408/"
+    },
+    {
+      "title": "Calcineurin is a common target of cyclophilin-cyclosporin A and FKBP-FK506 complexes",
+      "authors": "Liu J, Farmer JD Jr, Lane WS, et al.",
+      "journal": "Cell",
+      "year": 1991,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1715244/"
+    },
+    {
+      "title": "The history of cyclosporin A (Sandimmune) revisited: another point of view",
+      "authors": "Stähelin HF",
+      "journal": "Experientia",
+      "year": 1996,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8575558/"
+    },
+    {
+      "title": "Two multicenter, randomized studies of the efficacy and safety of cyclosporine ophthalmic emulsion in moderate to severe dry eye disease",
+      "authors": "Sall K, Stevenson OD, Mundorf TK, Reis BL",
+      "journal": "Ophthalmology",
+      "year": 2000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10768324/"
+    },
+    {
+      "title": "Calcineurin inhibitor nephrotoxicity",
+      "authors": "Naesens M, Kuypers DR, Sarwal M",
+      "journal": "Clin J Am Soc Nephrol",
+      "year": 2009,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19218475/"
+    }
+  ]
+}

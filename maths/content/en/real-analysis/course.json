@@ -1,0 +1,231 @@
+{
+  "slug": "real-analysis",
+  "title": "Real Analysis",
+  "full_title": "Real Analysis",
+  "area": "analysis",
+  "level": 2,
+  "order": 100,
+  "tagline": "The rigorous foundations of calculus: completeness, limits, continuity, the Riemann integral and uniform convergence",
+  "summary": "Real analysis rebuilds calculus on rigorous foundations. Starting from the completeness of the real numbers, it proves the theorems first-year calculus takes on trust — about sequences, series, continuity, differentiation and integration — and introduces uniform convergence and metric spaces.",
+  "overview": [
+    "Calculus tells us *how* to differentiate and integrate; real analysis explains *why* the methods work and exactly when they fail. Every key theorem of first-year calculus — the intermediate value theorem, the mean value theorem, the fundamental theorem of calculus, the convergence tests for series — ultimately rests on one property of the real numbers: **completeness**, the fact that $\\R$ has no gaps. In this course we state that property as an axiom and derive the whole of single-variable calculus from it, with complete proofs.",
+    "The course follows the logical order of the subject. We begin with the real numbers, suprema and the Archimedean property, then build the theory of limits of sequences (monotone convergence, Bolzano–Weierstrass, Cauchy sequences) and of series (convergence tests, absolute convergence, rearrangements). With sequences in hand we study continuity and uniform continuity, derivatives and Taylor's theorem, and the Riemann integral through Darboux sums. The last two chapters look further ahead: sequences of *functions*, where the difference between pointwise and uniform convergence decides whether limits may be exchanged with integrals and derivatives, and metric spaces, which carry the ideas of convergence, completeness and compactness far beyond the real line.",
+    "Real analysis is often the first course in which every statement must be proved, and the difficulty is less in any single idea than in the precision required: quantifiers in the right order, hypotheses that are all used, counterexamples that show they cannot be dropped. Work actively. Before reading a proof, try to see why the result should be true; after reading it, close the page and reconstruct it; and for every theorem, ask which hypothesis each step uses and what goes wrong without it. The interactive figures let you play the ε–N and ε–δ games yourself."
+  ],
+  "prerequisites": [
+    "proofs",
+    "calculus-2"
+  ],
+  "outcomes": [
+    "State the completeness axiom and use suprema and infima in proofs, including the Archimedean property and the density of $\\Q$ in $\\R$.",
+    "Prove the convergence or divergence of sequences from the ε–N definition and with the monotone convergence theorem, the Bolzano–Weierstrass theorem and the Cauchy criterion.",
+    "Prove the standard convergence tests for series and explain the difference between absolute and conditional convergence, including Riemann's rearrangement theorem.",
+    "Prove the extreme value, intermediate value and Heine–Cantor theorems and use the sequential characterisation of continuity.",
+    "Prove the mean value theorems and Taylor's theorem with remainder, and use them to bound approximation errors.",
+    "Decide Riemann integrability with Darboux sums and prove both parts of the fundamental theorem of calculus.",
+    "Distinguish pointwise from uniform convergence and justify interchanging limits with integrals, derivatives and infinite sums.",
+    "Work with metric spaces — open and closed sets, completeness and compactness — and apply the contraction mapping theorem.",
+    "Construct counterexamples showing that the hypotheses of the main theorems cannot be dropped."
+  ],
+  "chapters": [
+    {
+      "slug": "real-numbers",
+      "title": "The real numbers",
+      "summary": "Ordered fields, the completeness axiom, suprema and infima, and the Archimedean property.",
+      "requires": [
+        "proofs/proof-techniques"
+      ]
+    },
+    {
+      "slug": "sequences",
+      "title": "Sequences and limits",
+      "summary": "Convergence, the monotone convergence theorem, subsequences, Bolzano–Weierstrass and Cauchy sequences.",
+      "requires": [
+        "real-analysis/real-numbers"
+      ]
+    },
+    {
+      "slug": "series",
+      "title": "Series",
+      "summary": "Convergence tests proved, absolute and conditional convergence, rearrangements and Riemann’s theorem.",
+      "requires": [
+        "real-analysis/sequences"
+      ]
+    },
+    {
+      "slug": "continuity",
+      "title": "Continuity",
+      "summary": "Limits of functions, continuity, uniform continuity, and continuous functions on closed bounded intervals.",
+      "requires": [
+        "real-analysis/sequences"
+      ]
+    },
+    {
+      "slug": "differentiation",
+      "title": "Differentiation",
+      "summary": "The derivative, the mean value theorems and Taylor’s theorem with remainder.",
+      "requires": [
+        "real-analysis/continuity"
+      ]
+    },
+    {
+      "slug": "riemann-integral",
+      "title": "The Riemann integral",
+      "summary": "Darboux sums, criteria for integrability and a proof of the fundamental theorem of calculus.",
+      "requires": [
+        "real-analysis/continuity"
+      ]
+    },
+    {
+      "slug": "uniform-convergence",
+      "title": "Sequences and series of functions",
+      "summary": "Pointwise and uniform convergence, the Weierstrass M-test, interchanging limits and power series.",
+      "requires": [
+        "real-analysis/series",
+        "real-analysis/riemann-integral"
+      ]
+    },
+    {
+      "slug": "metric-spaces",
+      "title": "Metric spaces",
+      "summary": "Metrics, open and closed sets, completeness, compactness and the contraction mapping theorem.",
+      "requires": [
+        "real-analysis/continuity"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -300,
+      "title": "Eudoxus' theory of proportion in Euclid's *Elements*",
+      "detail": "Book V of the *Elements* preserves Eudoxus' way of comparing incommensurable magnitudes by comparing all rational multiples of them — an idea remarkably close to Dedekind's cuts more than two thousand years later.",
+      "people": [
+        "Eudoxus of Cnidus",
+        "Euclid"
+      ]
+    },
+    {
+      "year": 1817,
+      "title": "Bolzano's purely analytic proof of the intermediate value theorem",
+      "detail": "Bolzano gave a proof that did not appeal to geometric intuition, using a version of the least upper bound principle and the convergence criterion now named after Cauchy.",
+      "people": [
+        "Bernard Bolzano"
+      ]
+    },
+    {
+      "year": 1821,
+      "title": "Cauchy's *Cours d'analyse*",
+      "detail": "Cauchy's textbook for the École Polytechnique put limits at the centre of calculus and defined continuity and the convergence of series in terms of them.",
+      "people": [
+        "Augustin-Louis Cauchy"
+      ]
+    },
+    {
+      "year": 1854,
+      "title": "Riemann defines his integral",
+      "detail": "In his Habilitation thesis on trigonometric series Riemann defined the integral as a limit of sums for arbitrary bounded functions and asked which functions are integrable. The thesis was published only after his death.",
+      "people": [
+        "Bernhard Riemann"
+      ]
+    },
+    {
+      "year": 1872,
+      "title": "Constructions of the real numbers",
+      "detail": "Dedekind's *Stetigkeit und irrationale Zahlen* defined real numbers as cuts in the rationals, and in the same year Cantor built them from Cauchy (fundamental) sequences of rationals.",
+      "people": [
+        "Richard Dedekind",
+        "Georg Cantor"
+      ]
+    },
+    {
+      "year": 1872,
+      "title": "A continuous, nowhere differentiable function",
+      "detail": "Weierstrass presented to the Berlin Academy a function, defined by a uniformly convergent trigonometric series, that is continuous everywhere and differentiable nowhere, overturning the belief that continuous functions are differentiable at most points.",
+      "people": [
+        "Karl Weierstrass"
+      ]
+    },
+    {
+      "year": 1875,
+      "title": "Darboux sums",
+      "detail": "Darboux reformulated Riemann's integral with upper and lower sums, giving the clean integrability criterion used in this course.",
+      "people": [
+        "Gaston Darboux"
+      ]
+    },
+    {
+      "year": 1885,
+      "title": "The Weierstrass approximation theorem",
+      "detail": "Weierstrass proved that every continuous function on a closed bounded interval is a uniform limit of polynomials.",
+      "people": [
+        "Karl Weierstrass"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "Metric spaces",
+      "detail": "In his doctoral thesis Fréchet introduced abstract spaces with a distance function, the setting in which convergence, completeness and compactness now live; the name *metric space* is due to Hausdorff (1914).",
+      "people": [
+        "Maurice Fréchet",
+        "Felix Hausdorff"
+      ]
+    },
+    {
+      "year": 1922,
+      "title": "Banach's fixed point theorem",
+      "detail": "Banach's thesis, published in *Fundamenta Mathematicae*, proved that a contraction of a complete metric space has a unique fixed point, abstracting Picard's method of successive approximations.",
+      "people": [
+        "Stefan Banach"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Understanding Analysis",
+      "authors": "Stephen Abbott",
+      "year": 2015,
+      "note": "The friendliest rigorous introduction (2nd edition); excellent motivation and exercises. The best first companion to this course."
+    },
+    {
+      "title": "Elementary Analysis: The Theory of Calculus",
+      "authors": "Kenneth A. Ross",
+      "year": 2013,
+      "note": "A careful, gentle treatment of sequences, series, continuity and integration with many worked proofs (2nd edition)."
+    },
+    {
+      "title": "Introduction to Real Analysis",
+      "authors": "Robert G. Bartle and Donald R. Sherbert",
+      "year": 2011,
+      "note": "A thorough standard textbook (4th edition) with complete proofs and graded exercises."
+    },
+    {
+      "title": "Calculus",
+      "authors": "Michael Spivak",
+      "year": 2008,
+      "note": "A rigorous calculus book (4th edition) that doubles as a first analysis text; outstanding problems."
+    },
+    {
+      "title": "Principles of Mathematical Analysis",
+      "authors": "Walter Rudin",
+      "year": 1976,
+      "note": "The classic concise text (3rd edition), working in metric spaces from the start. Demanding but rewarding once the basics are secure."
+    },
+    {
+      "title": "Analysis I and Analysis II",
+      "authors": "Terence Tao",
+      "year": 2016,
+      "note": "Builds the number systems from scratch and proves everything; ideal for seeing the foundations in full detail (3rd edition)."
+    },
+    {
+      "title": "Real Analysis",
+      "authors": "John M. Howie",
+      "year": 2001,
+      "note": "A compact introduction in the Springer Undergraduate Mathematics Series, aimed at a first university course."
+    }
+  ],
+  "next": [
+    "complex-analysis",
+    "measure-theory",
+    "topology"
+  ]
+}

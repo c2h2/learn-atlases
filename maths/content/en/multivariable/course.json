@@ -1,0 +1,255 @@
+{
+  "slug": "multivariable",
+  "title": "Multivariable Calculus",
+  "full_title": "Multivariable and Vector Calculus",
+  "area": "analysis",
+  "level": 2,
+  "order": 60,
+  "tagline": "Calculus in several dimensions: partial derivatives, multiple integrals and the theorems of Green, Stokes and Gauss",
+  "summary": "Most quantities depend on more than one variable. This course extends calculus to curves, surfaces and fields in space: partial derivatives and gradients, optimisation with constraints, double and triple integrals, line and surface integrals, and the integral theorems of vector calculus.",
+  "overview": [
+    "Most quantities worth studying depend on more than one variable: the temperature in a room depends on position and time, the profit of a firm on many prices, the error of a neural network on millions of parameters. Multivariable calculus extends differentiation and integration to such functions and to vector fields. The familiar ideas take new and more geometric forms: the derivative becomes the best *linear* approximation, encoded by a matrix of partial derivatives; the gradient points in the direction of steepest ascent; and integrals are taken over regions, curves and surfaces rather than intervals.",
+    "The course has three parts. The first two chapters set up the geometry of space: vectors, dot and cross products, lines, planes and curves. Chapters 3–5 are differential calculus: limits and partial derivatives, differentiability and the chain rule, gradients and tangent planes, and optimisation with and without constraints. Chapters 6–7 integrate over regions in the plane and in space, using Fubini’s theorem and the change of variables formula. The last four chapters are vector calculus proper: line and surface integrals and the theorems of Green, Stokes and Gauss, which all say the same thing in different dimensions — integrating a derivative over a region is the same as integrating the function over the region’s boundary.",
+    "Two things make the subject harder than one-variable calculus. There is far more geometry: you must picture surfaces, regions and fields, and choose coordinates that suit them, so sketch every region before you integrate and rotate the interactive figures. And there are genuinely new subtleties: a function can have partial derivatives at a point without being continuous there, a limit can depend on the direction of approach, and a field whose curl vanishes need not be a gradient. Linear algebra — vectors, matrices, determinants and linear maps — is the language of the whole course, so keep it close at hand."
+  ],
+  "prerequisites": [
+    "calculus-1",
+    "linear-algebra"
+  ],
+  "outcomes": [
+    "Compute dot, cross and triple products and use them to find angles, projections, areas, volumes, and equations of lines and planes in space.",
+    "Differentiate and integrate vector-valued functions, and compute arc length, curvature, and the tangential and normal components of acceleration.",
+    "Decide whether limits of functions of several variables exist, compute partial derivatives, and explain the difference between having partial derivatives and being differentiable.",
+    "Apply the multivariable chain rule, compute gradients and directional derivatives, and find tangent planes and linear approximations.",
+    "Classify critical points with the Hessian and solve constrained optimisation problems with Lagrange multipliers.",
+    "Set up and evaluate double and triple integrals over general regions, reversing the order of integration and using polar, cylindrical and spherical coordinates.",
+    "Use the Jacobian determinant to change variables in multiple integrals.",
+    "Compute line integrals, surface integrals and flux, and decide whether a vector field is conservative.",
+    "State, prove (for simple regions) and apply the theorems of Green, Stokes and Gauss.",
+    "Interpret gradient, divergence and curl physically, in fluid flow, gravitation and electromagnetism."
+  ],
+  "chapters": [
+    {
+      "slug": "vectors-geometry",
+      "title": "Vectors and the geometry of space",
+      "summary": "Vectors in three dimensions, dot and cross products, and equations of lines and planes.",
+      "requires": [
+        "linear-algebra/matrices"
+      ]
+    },
+    {
+      "slug": "vector-functions",
+      "title": "Curves and vector-valued functions",
+      "summary": "Derivatives and integrals of vector functions, arc length, velocity and acceleration.",
+      "requires": [
+        "multivariable/vectors-geometry"
+      ]
+    },
+    {
+      "slug": "partial-derivatives",
+      "title": "Partial derivatives",
+      "summary": "Functions of several variables, limits and continuity, partial derivatives, differentiability and the chain rule.",
+      "requires": [
+        "multivariable/vectors-geometry",
+        "calculus-1/chain-rule"
+      ]
+    },
+    {
+      "slug": "gradient",
+      "title": "Gradients and directional derivatives",
+      "summary": "Directional derivatives, the gradient, tangent planes and linear approximation.",
+      "requires": [
+        "multivariable/partial-derivatives"
+      ]
+    },
+    {
+      "slug": "extrema",
+      "title": "Extrema and Lagrange multipliers",
+      "summary": "Critical points, the Hessian and the second derivative test, and constrained optimisation.",
+      "requires": [
+        "multivariable/gradient"
+      ]
+    },
+    {
+      "slug": "multiple-integrals",
+      "title": "Multiple integrals",
+      "summary": "Double and triple integrals, Fubini’s theorem, general regions, and polar, cylindrical and spherical coordinates.",
+      "requires": [
+        "calculus-1/integration-techniques",
+        "multivariable/partial-derivatives"
+      ]
+    },
+    {
+      "slug": "change-of-variables",
+      "title": "Change of variables",
+      "summary": "The Jacobian determinant and the change of variables formula for multiple integrals.",
+      "requires": [
+        "multivariable/multiple-integrals",
+        "linear-algebra/determinants"
+      ]
+    },
+    {
+      "slug": "line-integrals",
+      "title": "Vector fields and line integrals",
+      "summary": "Vector fields, line integrals of scalar and vector fields, work, conservative fields and potentials.",
+      "requires": [
+        "multivariable/vector-functions",
+        "multivariable/gradient"
+      ]
+    },
+    {
+      "slug": "greens-theorem",
+      "title": "Green’s theorem",
+      "summary": "Circulation and flux in the plane, Green’s theorem and its applications.",
+      "requires": [
+        "multivariable/line-integrals",
+        "multivariable/multiple-integrals"
+      ]
+    },
+    {
+      "slug": "surface-integrals",
+      "title": "Surfaces and surface integrals",
+      "summary": "Parametric surfaces, surface area and flux integrals.",
+      "requires": [
+        "multivariable/change-of-variables",
+        "multivariable/line-integrals"
+      ]
+    },
+    {
+      "slug": "stokes-divergence",
+      "title": "Stokes’ theorem and the divergence theorem",
+      "summary": "Curl and divergence, Stokes’ theorem, Gauss’s divergence theorem and applications.",
+      "requires": [
+        "multivariable/greens-theorem",
+        "multivariable/surface-integrals"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1773,
+      "title": "Triple integrals and spherical coordinates",
+      "detail": "In a memoir on the gravitational attraction of ellipsoids, Lagrange writes volumes as triple integrals and transforms them to spherical coordinates with the correct volume factor. Euler had treated changes of variable in double integrals a few years earlier.",
+      "people": [
+        "Joseph-Louis Lagrange",
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1788,
+      "title": "Lagrange multipliers",
+      "detail": "Lagrange’s Mécanique analytique handles mechanical systems subject to constraints by adding multiples of the constraint equations — the method of multipliers now used throughout optimisation.",
+      "people": [
+        "Joseph-Louis Lagrange"
+      ]
+    },
+    {
+      "year": 1826,
+      "title": "The divergence theorem",
+      "detail": "Ostrogradsky presents a general proof of the divergence theorem to the Paris Academy (published in St Petersburg in 1831). Gauss had proved special cases in his 1813 work on the attraction of ellipsoids.",
+      "people": [
+        "Mikhail Ostrogradsky",
+        "Carl Friedrich Gauss"
+      ]
+    },
+    {
+      "year": 1828,
+      "title": "Green’s essay",
+      "detail": "George Green, a largely self-taught miller from Nottingham, publishes An Essay on the Application of Mathematical Analysis to the Theories of Electricity and Magnetism. It introduces the term “potential function” and the integral identities from which Green’s theorem descends.",
+      "people": [
+        "George Green"
+      ]
+    },
+    {
+      "year": 1841,
+      "title": "Functional determinants",
+      "detail": "Jacobi publishes a systematic study of determinants of partial derivatives, De determinantibus functionalibus; these determinants are now called Jacobians.",
+      "people": [
+        "Carl Gustav Jacob Jacobi"
+      ]
+    },
+    {
+      "year": 1843,
+      "title": "Quaternions",
+      "detail": "Hamilton discovers the quaternions. The product of two pure quaternions contains both the dot product and the cross product, and his work shaped the first vector notation.",
+      "people": [
+        "William Rowan Hamilton"
+      ]
+    },
+    {
+      "year": 1854,
+      "title": "Stokes’ theorem",
+      "detail": "The theorem first appeared in an 1850 letter from William Thomson (later Lord Kelvin) to Stokes. Stokes set it as a question in the 1854 Smith’s Prize examination at Cambridge, and his name stuck.",
+      "people": [
+        "George Gabriel Stokes",
+        "William Thomson"
+      ]
+    },
+    {
+      "year": 1881,
+      "title": "Modern vector analysis",
+      "detail": "Gibbs privately prints Elements of Vector Analysis (1881–84) for his Yale students. Together with Heaviside’s independent work, it establishes the dot, cross, divergence and curl notation used today.",
+      "people": [
+        "Josiah Willard Gibbs",
+        "Oliver Heaviside"
+      ]
+    },
+    {
+      "year": 1907,
+      "title": "Fubini’s theorem",
+      "detail": "Fubini proves that the double integral of a Lebesgue-integrable function can be computed as an iterated integral in either order.",
+      "people": [
+        "Guido Fubini"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Multivariable Calculus",
+      "authors": "James Stewart, Daniel Clegg and Saleem Watson",
+      "year": 2020,
+      "note": "The standard computational text: clear explanations, excellent pictures and thousands of graded exercises."
+    },
+    {
+      "title": "Vector Calculus",
+      "authors": "Jerrold E. Marsden and Anthony Tromba",
+      "year": 2012,
+      "note": "More rigorous than Stewart, with proofs of the main theorems and many applications to physics."
+    },
+    {
+      "title": "Vector Calculus",
+      "authors": "Susan Jane Colley",
+      "year": 2012,
+      "note": "A clean, proof-aware treatment that uses matrices from the start; a good bridge to analysis."
+    },
+    {
+      "title": "Div, Grad, Curl, and All That: An Informal Text on Vector Calculus",
+      "authors": "H. M. Schey",
+      "year": 2005,
+      "note": "Short and intuitive: builds divergence, curl and the integral theorems out of electrostatics."
+    },
+    {
+      "title": "Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach",
+      "authors": "John H. Hubbard and Barbara Burke Hubbard",
+      "year": 2015,
+      "note": "Develops linear algebra and calculus together, proves everything, and ends with differential forms and the general Stokes theorem."
+    },
+    {
+      "title": "Calculus on Manifolds",
+      "authors": "Michael Spivak",
+      "year": 1965,
+      "note": "A compact, rigorous account of the derivative, the inverse and implicit function theorems, change of variables and Stokes’ theorem; for the ambitious student."
+    },
+    {
+      "title": "Calculus, Volume II",
+      "authors": "Tom M. Apostol",
+      "year": 1969,
+      "note": "Careful statements and proofs of the multivariable theorems, including Green’s, Stokes’ and Gauss’s theorems."
+    }
+  ],
+  "next": [
+    "differential-geometry",
+    "pde",
+    "complex-analysis"
+  ]
+}

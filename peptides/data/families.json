@@ -1,0 +1,107 @@
+{
+  "families": [
+    {
+      "key": "incretin",
+      "title": "Incretins and glucagon",
+      "blurb": "Every modern obesity drug in this family is a rewrite of the same 30-residue scaffold. Tirzepatide and retatrutide borrow their N-terminus from GIP and their tail from exenatide; Aib residues block the DPP-4 enzyme that cuts native GLP-1 in minutes.",
+      "reference": {"name": "GLP-1 (7–37)", "note": "Native human hormone", "residues": ["H","A","E","G","T","F","T","S","D","V","S","S","Y","L","E","G","Q","A","A","K","E","F","I","A","W","L","V","K","G","R","G"]},
+      "numbering_start": 7,
+      "members": [
+        {"native": {"name": "GIP (1–42)", "note": "Native human hormone", "residues": ["Y","A","E","G","T","F","I","S","D","Y","S","I","A","M","D","K","I","H","Q","Q","D","F","V","N","W","L","L","A","Q","K","G","K","K","N","D","W","K","H","N","I","T","Q"]}},
+        {"slug": "glucagon"},
+        {"native": {"name": "Oxyntomodulin", "note": "Native human hormone", "residues": ["H","S","Q","G","T","F","T","S","D","Y","S","K","Y","L","D","S","R","R","A","Q","D","F","V","Q","W","L","M","N","T","K","R","N","R","N","N","I","A"]}},
+        {"slug": "exenatide"},
+        {"slug": "liraglutide"},
+        {"slug": "semaglutide"},
+        {"slug": "tirzepatide"},
+        {"slug": "retatrutide"},
+        {"slug": "survodutide"},
+        {"slug": "mazdutide"}
+      ]
+    },
+    {
+      "key": "amylin",
+      "title": "Amylin analogues",
+      "blurb": "Human amylin clumps into amyloid fibrils. Pramlintide copies the three prolines of rat amylin, which cannot aggregate. Cagrilintide and eloralintide add further substitutions and a fatty acid for once-weekly dosing; eloralintide also carries three non-natural residues and a thioacetal in place of the disulfide, and favours amylin receptors over the calcitonin receptor.",
+      "reference": {"name": "Human amylin", "note": "Native hormone (IAPP)", "residues": ["K","C","N","T","A","T","C","A","T","Q","R","L","A","N","F","L","V","H","S","S","N","N","F","G","A","I","L","S","S","T","N","V","G","S","N","T","Y"]},
+      "members": [
+        {"slug": "pramlintide"},
+        {"slug": "cagrilintide"},
+        {"slug": "eloralintide"}
+      ]
+    },
+    {
+      "key": "melanocortin",
+      "title": "Melanocortins",
+      "blurb": "All melanocortin drugs keep α-MSH's His-Phe-Arg-Trp message sequence. Swapping in D-phenylalanine and norleucine made afamelanotide potent and stable; cyclising the core produced melanotan II, bremelanotide and setmelanotide. KPV is α-MSH's last three residues.",
+      "reference": {"name": "α-MSH", "note": "Native hormone (from POMC)", "residues": ["S","Y","S","M","E","H","F","R","W","G","K","P","V"]},
+      "members": [
+        {"slug": "afamelanotide"},
+        {"slug": "melanotan-ii", "offset": 3},
+        {"slug": "bremelanotide", "offset": 3},
+        {"slug": "setmelanotide", "offset": 2},
+        {"slug": "kpv", "offset": 10}
+      ]
+    },
+    {
+      "key": "ghrh",
+      "title": "Growth-hormone-releasing hormone",
+      "blurb": "The first 29 residues of GHRH carry its full activity. Sermorelin is exactly that fragment; CJC-1295 stabilises it with four substitutions and an albumin-binding lysine; tesamorelin keeps all 44 residues behind a fatty N-terminal cap.",
+      "reference": {"name": "GHRH (1–44)", "note": "Native human hormone", "residues": ["Y","A","D","A","I","F","T","N","S","Y","R","K","V","L","G","Q","L","S","A","R","K","L","L","Q","D","I","M","S","R","Q","Q","G","E","S","N","Q","E","R","G","A","R","A","R","L"]},
+      "members": [
+        {"slug": "sermorelin"},
+        {"slug": "cjc-1295"},
+        {"slug": "tesamorelin"}
+      ]
+    },
+    {
+      "key": "ghs",
+      "title": "Growth-hormone secretagogues",
+      "blurb": "Small synthetic ghrelin-receptor agonists built around D-amino acids and a C-terminal D-Phe-Lys-NH₂. Ipamorelin trimmed GHRP-6 down to five residues for a cleaner growth-hormone pulse.",
+      "reference": {"name": "GHRP-6", "note": "First-generation secretagogue", "slug": "ghrp-6"},
+      "members": [
+        {"slug": "ghrp-2"},
+        {"slug": "ipamorelin", "tokens": ["Aib","H","dNal","-","f","K"]}
+      ]
+    },
+    {
+      "key": "neurohypophysial",
+      "title": "Oxytocin and vasopressin",
+      "blurb": "Two nonapeptides from the posterior pituitary that differ at only two positions, yet one contracts the uterus and the other holds on to water. Desmopressin removes the N-terminal amine and flips arginine 8 to the D-form, abolishing the pressor effect.",
+      "reference": {"name": "Oxytocin", "note": "Native hormone", "slug": "oxytocin"},
+      "members": [
+        {"slug": "vasopressin"},
+        {"native": {"name": "Desmopressin", "note": "Synthetic analogue (DDAVP)", "residues": ["Mpa","Y","F","Q","N","C","P","r","G"]}},
+        {"native": {"name": "Terlipressin", "note": "Triglycyl-lysine vasopressin prodrug", "residues": ["G","G","G","C","Y","F","Q","N","C","P","K","G"]}, "offset": -3}
+      ]
+    },
+    {
+      "key": "gnrh",
+      "title": "Gonadotropin-releasing hormone",
+      "blurb": "A D-amino acid at position 6 and an ethylamide in place of Gly10 turned the short-lived hypothalamic hormone into leuprolide, a long-acting agonist that shuts the pituitary down when given continuously.",
+      "reference": {"name": "GnRH", "note": "Native hormone", "residues": ["pGlu","H","W","S","Y","G","L","R","P","G"]},
+      "members": [
+        {"slug": "leuprolide"}
+      ]
+    },
+    {
+      "key": "somatostatin",
+      "title": "Somatostatin",
+      "blurb": "Octreotide keeps somatostatin's Phe-Trp-Lys-Thr turn inside a smaller disulfide ring, with D-Trp to resist enzymes: a 2-minute hormone became a drug that lasts hours.",
+      "reference": {"name": "Somatostatin-14", "note": "Native hormone", "residues": ["A","G","C","K","N","F","F","W","K","T","F","T","S","C"]},
+      "members": [
+        {"slug": "octreotide", "offset": 4}
+      ]
+    },
+    {
+      "key": "pth",
+      "title": "Parathyroid hormone family",
+      "blurb": "The first 34 residues of parathyroid hormone reproduce its bone-building signal. Abaloparatide is instead modelled on the related PTH-related protein.",
+      "reference": {"name": "PTH (1–34)", "note": "Native fragment", "slug": "teriparatide"},
+      "members": [
+        {"native": {"name": "PTHrP (1–34)", "note": "Native human peptide", "residues": ["A","V","S","E","H","Q","L","L","H","D","K","G","K","S","I","Q","D","L","R","R","R","F","F","L","H","H","L","I","A","E","I","H","T","A"]}},
+        {"native": {"name": "Abaloparatide", "note": "Synthetic PTHrP analogue (Tymlos)", "residues": ["A","V","S","E","H","Q","L","L","H","D","K","G","K","S","I","Q","D","L","R","R","R","E","L","L","E","K","L","L","Aib","K","L","H","T","A"]}}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "slug": "bpc-157",
+  "name": "BPC-157",
+  "aliases": [
+    "Body Protection Compound 157",
+    "BPC 157",
+    "Bepecin",
+    "PL 14736",
+    "PL-10",
+    "PLD-116",
+    "PCO-02",
+    "Stable gastric pentadecapeptide BPC 157"
+  ],
+  "category": "repair",
+  "drug_class": "Investigational cytoprotective peptide",
+  "subclass": "Synthetic 15-residue fragment of a reported gastric-juice protein ('body protection compound')",
+  "status": "research",
+  "status_note": "Not approved as a medicine in any country. It is sold online as a 'research chemical', in some dietary supplements and through clinics; a July 2026 FDA advisory committee vote to allow US pharmacy compounding still requires rulemaking.",
+  "evidence": 2,
+  "evidence_note": "Human data are limited to two Pliva enema studies (24 healthy volunteers; 53 patients with ulcerative colitis) reported only as conference abstracts in 2002–2005, and three uncontrolled studies by one author at private US clinics, with 31 participants in total. Almost everything else comes from rodent and cell studies, most of them from a single research group.",
+  "tagline": "Synthetic 'gastric' peptide fragment promoted for healing, with scant human evidence",
+  "summary": "BPC-157 is a synthetic 15-amino-acid peptide based on a fragment of a protein that a Zagreb research group reported finding in human gastric juice in the early 1990s. More than 200 published papers, mostly animal studies, describe healing effects on the gut, tendons, muscle and other tissues, but human evidence amounts to two drug-company trials reported only as conference abstracts and a few tiny uncontrolled studies. It is not approved anywhere and is banned in sport, yet it is widely sold as a 'research chemical' and supplement; in 2026 an FDA advisory panel narrowly backed letting US pharmacies compound it.",
+  "overview": [
+    "BPC-157 (from 'body protection compound') is a chain of 15 amino acids made by chemical synthesis. In the early 1990s the Croatian pharmacologist Predrag Sikirić and colleagues at the University of Zagreb reported that human gastric juice contains a protective protein of about 40 kDa, which they called BPC, and described BPC 157 as a 15-residue fragment thought to be essential for its activity. The parent protein cannot be checked in public sequence databases: a UniProt peptide search finds no known protein that contains the BPC-157 sequence.",
+    "Since 1993 more than 200 papers, mostly rat and mouse studies, have reported that BPC-157 protects or heals the stomach, intestine, liver, blood vessels, tendons, ligaments, muscle, bone and nervous system, usually at very low doses given by injection or by mouth. About three-quarters of the roughly 230 PubMed-indexed papers are co-authored by the Zagreb group, independent replication is limited, and FDA reviewers noted in 2026 that dose–response relationships and molecular targets have not been established.",
+    "The Croatian drug company Pliva developed the peptide as PL 14736 for inflammatory bowel disease. An enema formulation was tested in 24 healthy volunteers and then in a 53-patient randomised trial in ulcerative colitis, but the results appeared only as conference abstracts and the difference from placebo was not statistically significant. A 2015 phase 1 trial of oral tablets in Mexico never reported results. The only human studies published in full are three small uncontrolled reports by the same lead author at private US clinics (knee pain, interstitial cystitis and a two-person intravenous safety test); randomised trials in hamstring injury (China) and rotator-cuff surgery (US) were registered in 2026.",
+    "Despite the thin human evidence, BPC-157 became one of the most popular 'healing peptides' among athletes, bodybuilders and biohackers. It is promoted on podcasts and social media and sold online as vials labelled 'for research use only', as capsules, nasal sprays and supplements, often blended with TB-500. The World Anti-Doping Agency banned it in 2022, and in 2023 the FDA placed it in Category 2, effectively stopping US pharmacies from compounding it. In 2026, after HHS Secretary Robert F. Kennedy Jr called that decision illegal, the FDA lifted the Category 2 listing and an advisory committee voted 8–6 to allow compounding, against the advice of FDA staff; the change still requires rulemaking."
+  ],
+  "mechanism": [
+    "How BPC-157 works is not known. No receptor or binding partner has been identified, and FDA reviewers wrote in 2026 that its molecular targets have not been identified and its mechanisms of action remain poorly understood. Almost all proposed mechanisms come from rat studies and cell culture, many from the group that discovered it.",
+    "In those models it has been reported to promote new blood-vessel growth, with increased expression and activation of the VEGF receptor 2 (VEGFR2) and the Akt–eNOS pathway in rat ischaemic muscle and human endothelial cells; to interact with the nitric oxide system; to stimulate the outgrowth, survival and migration of rat Achilles-tendon fibroblasts through FAK–paxillin signalling; and to increase growth-hormone-receptor expression in the same cells. None of these effects has been demonstrated in people.",
+    "The peptide is reported to resist digestion in human gastric juice in vitro, and animal studies describe activity after oral as well as injected dosing. In rats and dogs, however, the intact peptide is cleared from the blood within minutes (half-life under 30 minutes), a mismatch with the long-lasting effects reported in animal studies that reviewers have highlighted."
+  ],
+  "origin": "Synthetic copy of a 15-residue fragment of 'body protection compound' (BPC), a protein of about 40 kDa that its discoverers reported isolating from human gastric juice",
+  "discovery": {
+    "year": 1993,
+    "by": "Predrag Sikirić and colleagues",
+    "where": "Department of Pharmacology, School of Medicine, University of Zagreb, Croatia",
+    "note": "Papers from 1992 describe the gastroprotective 'body protection compound'; a 1993 overview described the fully characterised 15-residue fragment BPC 157, which FDA treats as the first description of the peptide."
+  },
+  "first_human_year": 2002,
+  "first_approval": null,
+  "developer": "University of Zagreb (Predrag Sikirić's group); clinical development by Pliva, Croatia, as PL 14736",
+  "brands": [],
+  "targets": [],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "G",
+          "E",
+          "P",
+          "P",
+          "P",
+          "G",
+          "K",
+          "P",
+          "A",
+          "D",
+          "D",
+          "A",
+          "G",
+          "L",
+          "V"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [],
+    "notation": "H-Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val-OH",
+    "note": "All-L linear peptide with free termini and no modifications. It is also sold as an acetate salt (CAS 216441-37-1), which FDA treats as a separate bulk substance."
+  },
+  "formula": "C62H98N16O22",
+  "mw": 1419.5,
+  "half_life": "Unknown in humans; under 30 minutes in rats and dogs",
+  "half_life_hours": null,
+  "routes": [
+    "Subcutaneous or intramuscular injection (unapproved and compounded products)",
+    "Oral capsules, tablets and sprays (supplements and compounded products)",
+    "Nasal spray (compounded products)",
+    "Rectal enema (Pliva trials, 2000s)",
+    "Intra-articular, intravesical and intravenous (single-clinic pilot studies)"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 9941957,
+    "notes": "No experimental structure of BPC-157 has been deposited in the Protein Data Bank and PubChem has no 3D conformer; the viewer shows a predicted model. The peptide is short, linear and rich in proline (four residues, including a Pro-Pro-Pro run)."
+  },
+  "ids": {
+    "pubchem_cid": 9941957,
+    "cas": "137525-51-0",
+    "drugbank": "DB11882",
+    "chembl": "CHEMBL4297358",
+    "unii": "8ED8NXK95P"
+  },
+  "wiki": "BPC-157",
+  "queries": {
+    "pubmed": "(\"BPC 157\"[tiab] OR \"BPC-157\"[tiab] OR \"BPC157\"[tiab] OR \"body protection compound\"[tiab] OR \"pentadecapeptide BPC\"[tiab] OR \"PL 14736\"[tiab] OR \"PL14736\"[tiab] OR bepecin[tiab])",
+    "ctgov": "BPC-157 OR BPC 157 OR PL 14736 OR Bepecin"
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Ulcerative colitis",
+        "stage": "Phase 2 — abstract only (2005)",
+        "detail": "Pliva tested PL 14736 enemas in a 53-patient randomised, placebo-controlled trial; results were reported only as a 2005 conference abstract, and FDA judged them inadequate to show benefit."
+      },
+      {
+        "use": "Oral safety and pharmacokinetics",
+        "stage": "Phase 1 — status unknown",
+        "detail": "A 42-person placebo-controlled trial of oral tablets (PCO-02) in healthy volunteers in Tijuana, Mexico, was registered in 2015 by PharmaCotherapia d.o.o. (NCT02637284); no results have been posted or published."
+      },
+      {
+        "use": "Knee pain, interstitial cystitis",
+        "stage": "Uncontrolled pilot studies",
+        "detail": "Retrospective and single-arm reports by the same lead author at private US clinics (17 and 12 patients) described symptom relief after injection into the knee or the bladder wall; there was no control group and outcomes were self-reported."
+      },
+      {
+        "use": "Acute hamstring strain",
+        "stage": "Phase 2 — recruiting (2026)",
+        "detail": "Randomised, double-blind, placebo-controlled trial of subcutaneous BPC 157 added to standard rehabilitation in grade II hamstring strains at Peking University Shenzhen Hospital (NCT07437547, sponsor Hudson Biotech; about 120 participants planned)."
+      },
+      {
+        "use": "Recovery after rotator cuff repair",
+        "stage": "Pilot — not yet recruiting (2026)",
+        "detail": "The University of Arkansas for Medical Sciences registered a small randomised trial after arthroscopic rotator cuff repair in September 2026 (NCT07803250)."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Injury recovery and 'healing' (biohacking)",
+        "detail": "Promoted by influencers, podcasts and wellness clinics for tendon, ligament, muscle, joint and gut repair, usually as self-injected vials sold 'for research use only' or as capsules and nasal sprays, and often combined with TB-500. A 2025 review noted that Google search interest reached an all-time high in June 2024 and counted over 50 million BPC-157-tagged views on YouTube and TikTok.",
+        "evidence": "Based on animal studies; no controlled human trial has shown benefit for any musculoskeletal injury, and product quality is not assured."
+      },
+      {
+        "use": "Supplements and compounded products",
+        "detail": "FDA reported in 2026 that BPC-157 is marketed in the US in dietary-supplement capsules and tablets and by pharmacies, clinics and telehealth services as capsules, sprays and injection kits; USADA has said there appears to be no legal basis for selling it as a drug, food or dietary supplement.",
+        "evidence": "FDA found that products sold under the name have included different salts and even different active molecules, and that data on impurities, aggregates and microbial quality are lacking."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1992,
+      "title": "'Body protection compound' reported",
+      "detail": "Predrag Sikirić's group in Zagreb described the protective effects in stressed rats of a newly, partially characterised peptide from human gastric juice, which they named body protection compound (BPC).",
+      "kind": "discovery"
+    },
+    {
+      "year": 1993,
+      "title": "BPC 157 fragment described",
+      "detail": "An overview in the Journal de Physiologie (Paris) reported that BPC was a gastric-juice protein of about 40 kDa and that a 15-amino-acid fragment, BPC 157, had been fully characterised; it was proposed as the prototype of a new class of 'organoprotective' drugs.",
+      "kind": "discovery"
+    },
+    {
+      "year": 2002,
+      "date": "2002-07",
+      "title": "Pliva reports first human study",
+      "detail": "Croatian drugmaker Pliva, developing the peptide as PL 14736 for inflammatory bowel disease, reported an enema study in 24 healthy volunteers (2002 symposium, 2003 abstract); headache and flatulence were the most common side effects and the peptide was mostly undetectable in blood.",
+      "kind": "trial"
+    },
+    {
+      "year": 2005,
+      "title": "Ulcerative colitis trial reported only as an abstract",
+      "detail": "A multicentre, randomised, placebo-controlled phase 2 trial of PL 14736 enemas in 53 people with mild-to-moderate ulcerative colitis was presented as a conference abstract; the difference from placebo was not statistically significant and no full paper followed.",
+      "kind": "trial"
+    },
+    {
+      "year": 2015,
+      "date": "2015-12",
+      "title": "Oral tablet trial registered, never reported",
+      "detail": "PharmaCotherapia registered a phase 1 trial of oral BPC-157 tablets in 42 healthy volunteers in Tijuana, Mexico (NCT02637284); its status remains unknown and no results were posted.",
+      "kind": "trial"
+    },
+    {
+      "year": 2021,
+      "date": "2021-07",
+      "title": "First published human case series",
+      "detail": "A retrospective phone survey of 16 patients from a Florida clinic reported knee-pain relief after intra-articular injections of BPC-157, alone or with thymosin β4; there was no control group or validated outcome measure.",
+      "kind": "trial"
+    },
+    {
+      "year": 2022,
+      "date": "2022-01-01",
+      "title": "Banned in sport",
+      "detail": "WADA named BPC-157 as an example of a prohibited 'non-approved substance' (section S0), banned in and out of competition; it remains named on the 2026 list.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2023,
+      "date": "2023-05-25",
+      "title": "New Zealand moves to restrict it",
+      "detail": "New Zealand's Medicines Classification Committee recommended that BPC-157 be classified as a prescription medicine, citing scarce human data, unproven online claims and importation enquiries.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2023,
+      "date": "2023-09-29",
+      "title": "FDA places it in Category 2",
+      "detail": "FDA listed BPC-157 among bulk substances that raise significant safety risks in compounding, citing possible immunogenicity, peptide-related impurities and a lack of human safety data.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2024,
+      "date": "2024-06",
+      "title": "Online interest peaks",
+      "detail": "Google search interest in BPC-157 reached an all-time high, amid tens of millions of views of BPC-157-tagged videos on YouTube and TikTok.",
+      "kind": "culture"
+    },
+    {
+      "year": 2024,
+      "date": "2024-10",
+      "title": "Interstitial cystitis pilot published",
+      "detail": "The same lead author reported symptom relief in 12 women with interstitial cystitis after BPC-157 injections into the bladder wall, without a control group; a two-person intravenous safety study followed in 2025.",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "date": "2026-02-02",
+      "title": "Randomised hamstring trial begins",
+      "detail": "A placebo-controlled phase 2 trial of BPC 157 in acute hamstring strains, planned to enrol 120 patients, started at Peking University Shenzhen Hospital (NCT07437547).",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "date": "2026-02-27",
+      "title": "Kennedy says most restrictions will be lifted",
+      "detail": "On The Joe Rogan Experience, HHS Secretary Robert F. Kennedy Jr said the 2023 Category 2 listings of peptides were illegal and that most would be reversed; former FDA officials disputed his account.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2026,
+      "date": "2026-04",
+      "title": "Category 2 listing lifted",
+      "detail": "After the nominators withdrew their nominations, FDA removed BPC-157 and 11 other peptides from Category 2 and scheduled advisory-committee review; this left BPC-157 on no list, so compounding still awaited a formal decision.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2026,
+      "date": "2026-07-23",
+      "title": "Advisory committee backs compounding",
+      "detail": "FDA's Pharmacy Compounding Advisory Committee voted 8–6 (one abstention) to recommend adding BPC-157 to the 503A bulks list; FDA, which had evaluated it for ulcerative colitis, recommended against, citing no evidence of effectiveness and inadequate characterisation.",
+      "kind": "regulatory"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Not an approved drug; FDA's 2026 review found no approved product containing it in any country. Placed in 503A Category 2 (significant safety risks) in September 2023 and removed in April 2026 after nominations were withdrawn. The Pharmacy Compounding Advisory Committee voted 8–6 on 23 July 2026 to add it to the 503A bulks list; compounding requires FDA notice-and-comment rulemaking, and no proposed rule had been reported by September 2026."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "Named in section S0 (non-approved substances) since 1 January 2022; prohibited at all times, and still named on the 2026 Prohibited List."
+    }
+  ],
+  "pk": {
+    "half_life": "Not characterised in humans; the intact peptide's elimination half-life is under 30 minutes in rats and dogs",
+    "bioavailability": "Intramuscular: about 14–19% in rats and 45–51% in dogs. Human bioavailability by any route is unknown; after rectal enemas it was mostly undetectable in plasma.",
+    "metabolism": "Rapidly broken down to smaller peptide fragments and amino acids (radiolabel studies in rats and dogs); reported to resist digestion in human gastric juice in vitro",
+    "excretion": "Mainly in urine and bile (rats and dogs)"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose. The doses used in the few human studies were exploratory, and the protocols that circulate online are not based on clinical trials.",
+  "safety": {
+    "common": [
+      "Headache and flatulence (most frequent in the enema studies in healthy volunteers)",
+      "Injection-site redness and swelling (single spontaneous report, with a second injected peptide)"
+    ],
+    "serious": [
+      "Shortness of breath needing emergency care after a compounded injection (single report; causality unclear)",
+      "Diffuse skin hyperpigmentation and gum darkening that recurred on rechallenge with a BPC-157/TB-500 'research' product (single report)"
+    ],
+    "warnings": [
+      "Not approved anywhere: the identity, purity, sterility and strength of grey-market products are not assured",
+      "FDA warns of possible immune reactions (immunogenicity) with injected or nasal products, made more likely by aggregation and impurities",
+      "Promotes blood-vessel growth in animal studies; reviewers raise a theoretical, untested concern that it could promote tumour growth",
+      "Prohibited in sport at all times (WADA S0)"
+    ],
+    "notes": "No serious adverse events were reported in the five small clinical studies, but they were short, involved few people and monitored safety poorly. FDA's 2026 review found no human pharmacokinetic data after oral, injected, nasal or transdermal use, no long-term safety data and no immunogenicity studies; it identified three spontaneous US adverse-event reports up to December 2025, none clearly attributable to BPC-157."
+  },
+  "market": null,
+  "facts": [
+    "About three-quarters of the roughly 230 PubMed-indexed papers on BPC-157 are co-authored by Predrag Sikirić or Sven Seiwerth of the University of Zagreb.",
+    "A UniProt peptide search finds no known protein containing the BPC-157 sequence, so the gastric protein it is said to come from cannot be checked in public databases.",
+    "FDA reviewers found that products sold as 'BPC-157' have included different salts and even different active molecules.",
+    "On WADA's 2026 list BPC-157 is one of only a few substances named as examples in the catch-all S0 'non-approved substances' class, alongside 2,4-dinitrophenol (DNP).",
+    "In 2017 the Sports Medicine Research and Testing Laboratory in Salt Lake City identified BPC 157 in confiscated vials and validated a urine test for it."
+  ],
+  "related": [
+    "tb-500",
+    "kpv",
+    "ghk-cu",
+    "mots-c",
+    "epitalon",
+    "semax",
+    "dsip",
+    "thymosin-alpha-1"
+  ],
+  "references": [
+    {
+      "title": "A new gastric juice peptide, BPC. An overview of the stomach-stress-organoprotection hypothesis and beneficial effects of BPC",
+      "authors": "Sikirić P, Petek M, Rucman R, et al.",
+      "journal": "J Physiol Paris",
+      "year": 1993,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8298609/"
+    },
+    {
+      "title": "Stable gastric pentadecapeptide BPC 157 in trials for inflammatory bowel disease (PL-10, PLD-116, PL 14736, Pliva, Croatia). Full and distended stomach, and vascular response",
+      "authors": "Sikiric P, Seiwerth S, Brcic L, et al.",
+      "journal": "Inflammopharmacology",
+      "year": 2006,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17186181/"
+    },
+    {
+      "title": "The promoting effect of pentadecapeptide BPC 157 on tendon healing involves tendon outgrowth, cell survival, and cell migration",
+      "authors": "Chang CH, Tsai WC, Lin MS, et al.",
+      "journal": "J Appl Physiol",
+      "year": 2011,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21030672/"
+    },
+    {
+      "title": "Therapeutic potential of pro-angiogenic BPC157 is associated with VEGFR2 activation and up-regulation",
+      "authors": "Hsieh MJ, Liu HT, Wang CN, et al.",
+      "journal": "J Mol Med (Berl)",
+      "year": 2017,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27847966/"
+    },
+    {
+      "title": "Pharmacokinetics, distribution, metabolism, and excretion of body-protective compound 157, a potential drug for treating various wounds, in rats and dogs",
+      "authors": "He L, Feng D, Guo H, et al.",
+      "journal": "Front Pharmacol",
+      "year": 2022,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36588717/"
+    },
+    {
+      "title": "Intra-articular injection of BPC 157 for multiple types of knee pain",
+      "authors": "Lee E, Padgett B",
+      "journal": "Altern Ther Health Med",
+      "year": 2021,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34324435/"
+    },
+    {
+      "title": "Effect of BPC-157 on symptoms in patients with interstitial cystitis: a pilot study",
+      "authors": "Lee E, Walker C, Ayadi B",
+      "journal": "Altern Ther Health Med",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39325560/"
+    },
+    {
+      "title": "Emerging use of BPC-157 in orthopaedic sports medicine: a systematic review",
+      "authors": "Vasireddi N, Hahamyan H, Salata MJ, et al.",
+      "journal": "HSS J",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40756949/"
+    },
+    {
+      "title": "BPC-157 as an investigational peptide therapeutic: biopharmaceutical challenges, formulation strategies, and translational development barriers",
+      "authors": "Mateescu DM, Gavrilescu DM, Constantinescu FE, et al.",
+      "journal": "Pharmaceutics",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42198317/"
+    },
+    {
+      "title": "FDA evaluation of BPC-157-related bulk drug substances (Pharmacy Compounding Advisory Committee briefing document, 23–24 July 2026)",
+      "authors": "US Food and Drug Administration",
+      "journal": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/193343/download"
+    }
+  ]
+}

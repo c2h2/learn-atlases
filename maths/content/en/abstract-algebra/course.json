@@ -1,0 +1,247 @@
+{
+  "slug": "abstract-algebra",
+  "title": "Abstract Algebra",
+  "full_title": "Abstract Algebra: Groups, Rings and Fields",
+  "area": "algebra",
+  "level": 2,
+  "order": 120,
+  "tagline": "Symmetry and structure: groups, homomorphisms, group actions, rings, fields and Galois theory",
+  "summary": "Abstract algebra studies sets with operations and the patterns they share. This course introduces groups through symmetry, proves Lagrange’s and the isomorphism theorems, studies group actions and Sylow’s theorems, and moves on to rings, polynomials and field extensions, ending with Galois theory and the unsolvability of the quintic.",
+  "overview": [
+    "Abstract algebra studies sets equipped with operations — adding, multiplying, composing — and asks what follows from a handful of axioms alone. The pay-off of working abstractly is economy: a theorem proved once for all groups applies at a stroke to the integers modulo $n$, to invertible matrices, to the symmetries of a molecule and to the shuffles of a deck of cards. Along the way the subject explains phenomena that look like coincidences elsewhere, such as why $a^{p-1} \\equiv 1 \\pmod p$, why some polynomial equations have formulas for their roots and others do not, and why an angle of $60^\\circ$ cannot be trisected with ruler and compass.",
+    "The course has three parts. Chapters 1–6 develop **group theory**: the axioms and their first consequences, subgroups and cyclic groups, permutations and symmetries of polygons, Lagrange’s theorem, homomorphisms, quotient groups and the isomorphism theorems, and finally group actions, which lead to counting with Burnside’s lemma and to the Sylow theorems. Chapters 7–8 turn to **rings**: ideals and quotient rings, and the arithmetic of polynomial rings, where irreducible polynomials play the role of primes. Chapter 9 brings the two strands together in **field theory and Galois theory**, which translates questions about roots of polynomials into questions about finite groups and settles problems that were open for centuries.",
+    "What makes the subject hard at first is not computation but abstraction: definitions arrive before you have a feel for them, and proofs must use only the axioms, not familiar habits from numbers (in a group $ab$ and $ba$ may differ; in a ring $ab = 0$ need not force $a = 0$ or $b = 0$). The cure is to keep a small zoo of examples to hand — $\\Z_n$, $U(n)$, $S_3$, $D_4$, $Q_8$, $\\mathrm{GL}_2(\\R)$, $\\Z[i]$, $\\Z_p[x]$ — and to test every new definition and theorem on them. The interactive Cayley tables and permutation diagrams in these lessons are designed for exactly that.",
+    "The prerequisites are the language of proofs, sets, functions and equivalence relations from [[proofs]], and the vector spaces, bases and determinants of [[linear-algebra]], which reappear in field theory. Much of the material connects with [[number-theory]]: congruences, Fermat’s little theorem and primitive roots are statements about the groups $U(n)$, and the two courses can be read side by side."
+  ],
+  "prerequisites": [
+    "proofs",
+    "linear-algebra"
+  ],
+  "outcomes": [
+    "Verify the group, ring and field axioms in concrete examples, and prove basic consequences of them such as uniqueness of identities and inverses and the cancellation laws.",
+    "Compute with permutations in cycle notation — products, orders, signs — and work with symmetric, alternating and dihedral groups.",
+    "Prove Lagrange’s theorem and use it to restrict the orders of elements and subgroups, and to deduce Fermat’s and Euler’s theorems.",
+    "Recognise normal subgroups, construct quotient groups and apply the first, second and third isomorphism theorems.",
+    "Use group actions, the orbit–stabiliser theorem and Burnside’s lemma to count symmetries, conjugacy classes and colourings up to symmetry.",
+    "State and prove Cauchy’s and Sylow’s theorems and use them to analyse groups of small order.",
+    "Work with ideals, quotient rings and ring homomorphisms, and decide when a quotient ring is an integral domain or a field.",
+    "Decide irreducibility of polynomials using roots, Gauss’s lemma, Eisenstein’s criterion and reduction modulo a prime, and build new fields as quotients $F[x]/(p(x))$.",
+    "Compute degrees of field extensions with the tower law and use them to prove the impossibility of classical ruler-and-compass constructions.",
+    "State the fundamental theorem of Galois theory, compute Galois groups of small extensions and explain why the general quintic equation cannot be solved by radicals."
+  ],
+  "chapters": [
+    {
+      "slug": "groups",
+      "title": "Groups",
+      "summary": "The group axioms, examples from numbers, matrices and symmetries, basic properties and Cayley tables.",
+      "requires": [
+        "proofs/functions"
+      ]
+    },
+    {
+      "slug": "subgroups",
+      "title": "Subgroups and cyclic groups",
+      "summary": "Subgroup tests, cyclic groups, orders of elements and generators.",
+      "requires": [
+        "abstract-algebra/groups"
+      ]
+    },
+    {
+      "slug": "permutation-groups",
+      "title": "Permutation and dihedral groups",
+      "summary": "Symmetric groups, cycle notation, the sign of a permutation, alternating groups and the symmetries of polygons.",
+      "requires": [
+        "abstract-algebra/subgroups"
+      ]
+    },
+    {
+      "slug": "lagrange",
+      "title": "Cosets and Lagrange’s theorem",
+      "summary": "Cosets, Lagrange’s theorem and its consequences, including Fermat’s and Euler’s theorems.",
+      "requires": [
+        "abstract-algebra/subgroups",
+        "proofs/relations"
+      ]
+    },
+    {
+      "slug": "homomorphisms",
+      "title": "Homomorphisms and quotient groups",
+      "summary": "Homomorphisms and kernels, normal subgroups, quotient groups and the isomorphism theorems.",
+      "requires": [
+        "abstract-algebra/lagrange"
+      ]
+    },
+    {
+      "slug": "group-actions",
+      "title": "Group actions",
+      "summary": "Orbits and stabilisers, Burnside’s lemma, conjugacy classes, the class equation and Sylow’s theorems.",
+      "requires": [
+        "abstract-algebra/homomorphisms",
+        "abstract-algebra/permutation-groups"
+      ]
+    },
+    {
+      "slug": "rings",
+      "title": "Rings and ideals",
+      "summary": "Rings, integral domains and fields, ideals, quotient rings and ring homomorphisms.",
+      "requires": [
+        "abstract-algebra/homomorphisms"
+      ]
+    },
+    {
+      "slug": "polynomials",
+      "title": "Polynomial rings",
+      "summary": "The division algorithm, irreducibility criteria, unique factorisation and quotients F[x]/(p).",
+      "requires": [
+        "abstract-algebra/rings"
+      ]
+    },
+    {
+      "slug": "fields-galois",
+      "title": "Field extensions and Galois theory",
+      "summary": "Field extensions and degree, splitting fields, finite fields, the Galois correspondence and the insolvability of the quintic.",
+      "requires": [
+        "abstract-algebra/polynomials",
+        "abstract-algebra/group-actions"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1770,
+      "title": "Lagrange studies permutations of roots",
+      "detail": "In his “Réflexions sur la résolution algébrique des équations” (1770–71) Lagrange analysed why the classical formulas for equations of degree up to four work by studying how expressions in the roots change when the roots are permuted — the germ of group theory.",
+      "people": [
+        "Joseph-Louis Lagrange"
+      ]
+    },
+    {
+      "year": 1799,
+      "title": "Ruffini on the quintic",
+      "detail": "Paolo Ruffini published a long argument that the general equation of degree five cannot be solved by radicals; his proof contained a gap but introduced many ideas about permutation groups.",
+      "people": [
+        "Paolo Ruffini"
+      ]
+    },
+    {
+      "year": 1824,
+      "title": "Abel proves the quintic insoluble",
+      "detail": "Niels Henrik Abel gave the first essentially complete proof that there is no general formula in radicals for the roots of a polynomial of degree five, publishing a fuller version in Crelle’s Journal in 1826.",
+      "people": [
+        "Niels Henrik Abel"
+      ]
+    },
+    {
+      "year": 1832,
+      "title": "Galois’s letter",
+      "detail": "On the eve of the duel in which he was killed, Évariste Galois summarised his theory linking solvability by radicals to the structure of a group of permutations of the roots. His memoir was published by Liouville in 1846.",
+      "people": [
+        "Évariste Galois",
+        "Joseph Liouville"
+      ]
+    },
+    {
+      "year": 1843,
+      "title": "Hamilton’s quaternions",
+      "detail": "William Rowan Hamilton discovered the quaternions, a number system in which multiplication is not commutative — an early sign that algebra need not obey all the rules of ordinary arithmetic.",
+      "people": [
+        "William Rowan Hamilton"
+      ]
+    },
+    {
+      "year": 1854,
+      "title": "Cayley defines abstract groups",
+      "detail": "In “On the theory of groups, as depending on the symbolic equation θⁿ = 1” Arthur Cayley gave the first definition of a group as an abstract set with an operation, together with multiplication tables for small groups.",
+      "people": [
+        "Arthur Cayley"
+      ]
+    },
+    {
+      "year": 1871,
+      "title": "Dedekind’s ideals",
+      "detail": "Richard Dedekind introduced ideals in a supplement to Dirichlet’s lectures on number theory, restoring unique factorisation in rings of algebraic integers where factorisation of elements fails.",
+      "people": [
+        "Richard Dedekind"
+      ]
+    },
+    {
+      "year": 1872,
+      "title": "Sylow’s theorems",
+      "detail": "Ludwig Sylow proved the existence and conjugacy of subgroups of maximal prime-power order in finite groups, the most powerful general tool for analysing finite groups.",
+      "people": [
+        "Ludwig Sylow"
+      ]
+    },
+    {
+      "year": 1921,
+      "title": "Noether’s ideal theory",
+      "detail": "Emmy Noether’s paper “Idealtheorie in Ringbereichen” founded modern commutative ring theory on the ascending chain condition; her axiomatic style, spread by van der Waerden’s “Moderne Algebra” (1930–31), shaped how the subject is taught today.",
+      "people": [
+        "Emmy Noether",
+        "Bartel van der Waerden"
+      ]
+    },
+    {
+      "year": 2004,
+      "title": "Classification of finite simple groups",
+      "detail": "With the publication of Aschbacher and Smith’s work on quasithin groups, the classification of finite simple groups — a collective effort spanning tens of thousands of journal pages — came to be regarded as complete.",
+      "people": [
+        "Michael Aschbacher",
+        "Stephen D. Smith"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Contemporary Abstract Algebra",
+      "authors": "Joseph A. Gallian",
+      "year": 2021,
+      "note": "Very readable first course with a wealth of examples, computational exercises and biographies; notation close to these lessons ($\\Z_n$, $U(n)$, $D_n$)."
+    },
+    {
+      "title": "Abstract Algebra",
+      "authors": "David S. Dummit and Richard M. Foote",
+      "year": 2004,
+      "note": "Comprehensive standard reference covering everything here and much more (modules, representation theory, Galois theory in depth). Note that it writes $D_{2n}$ for the dihedral group of order $2n$."
+    },
+    {
+      "title": "A First Course in Abstract Algebra",
+      "authors": "John B. Fraleigh",
+      "year": 2003,
+      "note": "A gentle, carefully paced classic; good for a second explanation of quotient groups and field extensions."
+    },
+    {
+      "title": "Algebra",
+      "authors": "Michael Artin",
+      "year": 2011,
+      "note": "Connects algebra to linear algebra and geometry (matrix groups, symmetry, quadratic forms); excellent for intuition."
+    },
+    {
+      "title": "Topics in Algebra",
+      "authors": "I. N. Herstein",
+      "year": 1975,
+      "note": "An elegant classic with famously challenging exercises, including several proofs of the Sylow theorems."
+    },
+    {
+      "title": "Galois Theory",
+      "authors": "Ian Stewart",
+      "year": 2015,
+      "note": "A motivated, historically informed treatment of field extensions, ruler-and-compass constructions and the insolubility of the quintic."
+    },
+    {
+      "title": "Groups and Symmetry",
+      "authors": "M. A. Armstrong",
+      "year": 1988,
+      "note": "Short and geometric: groups through rotations, polyhedra, counting colourings and wallpaper patterns."
+    },
+    {
+      "title": "A Book of Abstract Algebra",
+      "authors": "Charles C. Pinter",
+      "year": 1990,
+      "note": "Inexpensive (Dover reprint) and friendly, with exercise sets that lead you through proofs step by step."
+    }
+  ],
+  "next": [
+    "number-theory"
+  ]
+}

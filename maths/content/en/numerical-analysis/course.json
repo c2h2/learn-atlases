@@ -1,0 +1,228 @@
+{
+  "slug": "numerical-analysis",
+  "title": "Numerical Analysis",
+  "full_title": "Numerical Analysis",
+  "area": "applied",
+  "level": 2,
+  "order": 140,
+  "tagline": "Computing with mathematics: floating point, equations, interpolation, quadrature, linear systems and ODE solvers",
+  "summary": "Most problems in science cannot be solved exactly, so they are solved approximately by algorithms. This course studies how to compute reliably: floating-point error and conditioning, root finding, interpolation, numerical integration, direct and iterative methods for linear systems and eigenvalues, and numerical methods for differential equations.",
+  "overview": [
+    "Most equations that arise in science and engineering cannot be solved in closed form. There is no formula for the root of $x = \\cos x$, for $\\int_0^1 e^{-x^2}\\,dx$ or for the solution of a typical nonlinear differential equation, and a linear system with a million unknowns is solved by an algorithm, never by Cramer's rule. Numerical analysis is the mathematics of such algorithms. It asks not only how to compute an approximate answer, but how accurate that answer is, how quickly the method converges, how much work it costs, and how the unavoidable rounding errors of computer arithmetic propagate.",
+    "The course begins with floating-point arithmetic, conditioning and stability, the ideas that underlie everything else. It then takes the core problems one at a time: nonlinear equations (bisection, fixed-point iteration, Newton's method), polynomial interpolation and splines, numerical integration, direct methods for linear systems (LU and Cholesky factorisations), iterative methods and eigenvalue algorithms, and numerical methods for ordinary differential equations. Every method is derived, analysed with a proof of its error bound or convergence rate, and tested on examples with actual computed results.",
+    "The subject draws on calculus (Taylor's theorem and the mean value theorem appear in almost every error estimate), on linear algebra and on programming. Its characteristic difficulty is that two kinds of error compete: truncation error, from replacing a limit by a finite computation, and rounding error, from finite precision. Good algorithms balance the two. Run the short programs in each chapter yourself, vary the parameters, and compare the errors you observe with the theoretical bounds; that habit is the heart of the subject."
+  ],
+  "prerequisites": [
+    "calculus-2",
+    "linear-algebra"
+  ],
+  "outcomes": [
+    "Explain how real numbers are represented in IEEE floating-point arithmetic and bound the rounding error of the basic operations.",
+    "Distinguish the conditioning of a problem from the stability of an algorithm, and recognise and avoid catastrophic cancellation.",
+    "Analyse bisection, fixed-point iteration, Newton's method and the secant method, proving convergence and determining orders of convergence.",
+    "Construct interpolating polynomials and cubic splines, bound the interpolation error, and explain Runge's phenomenon and the role of Chebyshev nodes.",
+    "Derive Newton–Cotes and Gaussian quadrature rules, prove their error estimates, and accelerate them by Richardson extrapolation.",
+    "Solve linear systems by LU and Cholesky factorisation with pivoting, count the operations, and use condition numbers to estimate the accuracy of a computed solution.",
+    "Prove convergence criteria for the Jacobi, Gauss–Seidel and SOR iterations, and compute eigenvalues with the power method and the QR algorithm.",
+    "Implement Euler and Runge–Kutta methods, analyse their local and global errors, and use stability regions to recognise and handle stiff problems."
+  ],
+  "chapters": [
+    {
+      "slug": "floating-point",
+      "title": "Floating-point arithmetic and error",
+      "summary": "How computers store real numbers, rounding error, cancellation, conditioning and stability.",
+      "requires": [
+        "calculus-2/taylor-series"
+      ]
+    },
+    {
+      "slug": "root-finding",
+      "title": "Solving nonlinear equations",
+      "summary": "Bisection, fixed-point iteration, Newton’s method and the secant method, and orders of convergence.",
+      "requires": [
+        "numerical-analysis/floating-point",
+        "calculus-1/mean-value-theorem"
+      ]
+    },
+    {
+      "slug": "interpolation",
+      "title": "Polynomial interpolation",
+      "summary": "Lagrange and Newton forms, the interpolation error, Runge’s phenomenon, Chebyshev nodes and cubic splines.",
+      "requires": [
+        "numerical-analysis/floating-point"
+      ]
+    },
+    {
+      "slug": "numerical-integration",
+      "title": "Numerical integration",
+      "summary": "Newton–Cotes and composite rules with error analysis, Gaussian quadrature and Romberg integration.",
+      "requires": [
+        "numerical-analysis/interpolation",
+        "calculus-1/integrals"
+      ]
+    },
+    {
+      "slug": "direct-methods",
+      "title": "Direct methods for linear systems",
+      "summary": "Gaussian elimination and LU with pivoting, operation counts, condition numbers and the Cholesky factorisation.",
+      "requires": [
+        "linear-algebra/matrices",
+        "numerical-analysis/floating-point"
+      ]
+    },
+    {
+      "slug": "iterative-methods",
+      "title": "Iterative methods and eigenvalues",
+      "summary": "Jacobi, Gauss–Seidel and SOR and their convergence; the power method and the QR algorithm.",
+      "requires": [
+        "numerical-analysis/direct-methods",
+        "linear-algebra/eigenvalues"
+      ]
+    },
+    {
+      "slug": "numerical-odes",
+      "title": "Numerical methods for ODEs",
+      "summary": "Euler and Runge–Kutta methods, local and global error, stability regions and stiffness.",
+      "requires": [
+        "ode/existence-uniqueness",
+        "numerical-analysis/root-finding"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -1700,
+      "title": "A Babylonian square root",
+      "detail": "The clay tablet YBC 7289 (about 1800–1600 BC) gives √2 in base 60 as 1;24,51,10 ≈ 1.4142130, accurate to better than one part in a million — one of the oldest surviving numerical approximations.",
+      "people": []
+    },
+    {
+      "year": 1669,
+      "title": "Newton's method",
+      "detail": "Isaac Newton's manuscript *De analysi* solves y³ − 2y − 5 = 0 by repeatedly linearising; Joseph Raphson published a streamlined iterative version in 1690, and the method now carries both names.",
+      "people": [
+        "Isaac Newton",
+        "Joseph Raphson"
+      ]
+    },
+    {
+      "year": 1795,
+      "title": "Lagrange interpolation",
+      "detail": "Joseph-Louis Lagrange presents the interpolation formula that bears his name in lectures at the École normale; Edward Waring had published it in 1779.",
+      "people": [
+        "Joseph-Louis Lagrange",
+        "Edward Waring"
+      ]
+    },
+    {
+      "year": 1814,
+      "title": "Gaussian quadrature",
+      "detail": "Carl Friedrich Gauss shows that by choosing the nodes as well as the weights, an n-point rule can integrate all polynomials of degree up to 2n − 1 exactly.",
+      "people": [
+        "Carl Friedrich Gauss"
+      ]
+    },
+    {
+      "year": 1901,
+      "title": "Runge–Kutta methods",
+      "detail": "Building on Carl Runge's 1895 paper, Martin Wilhelm Kutta develops the family of one-step methods for differential equations that includes the classical fourth-order Runge–Kutta method.",
+      "people": [
+        "Carl Runge",
+        "Martin Wilhelm Kutta"
+      ]
+    },
+    {
+      "year": 1947,
+      "title": "Rounding errors in matrix computations",
+      "detail": "John von Neumann and Herman Goldstine publish 'Numerical inverting of matrices of high order', a detailed error analysis of Gaussian elimination for the new electronic computers, often regarded as the start of modern numerical analysis.",
+      "people": [
+        "John von Neumann",
+        "Herman Goldstine"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "Condition numbers and LU",
+      "detail": "Alan Turing's paper 'Rounding-off errors in matrix processes' introduces the term condition number and describes Gaussian elimination as a factorisation A = LU.",
+      "people": [
+        "Alan Turing"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "The QR algorithm",
+      "detail": "John Francis and, independently, Vera Kublanovskaya propose the QR algorithm for computing all the eigenvalues of a matrix; it became one of the most important algorithms of the twentieth century.",
+      "people": [
+        "John G. F. Francis",
+        "Vera Kublanovskaya"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "A-stability and stiffness",
+      "detail": "Germund Dahlquist introduces A-stability for methods applied to stiff differential equations and proves that no A-stable linear multistep method can have order greater than two.",
+      "people": [
+        "Germund Dahlquist"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "The IEEE 754 standard",
+      "detail": "The IEEE standard for binary floating-point arithmetic, shaped above all by William Kahan, fixes formats, correct rounding and exceptional values, so that the same program gives the same results on different machines.",
+      "people": [
+        "William Kahan"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "An Introduction to Numerical Analysis",
+      "authors": "Endre Süli and David Mayers",
+      "year": 2003,
+      "note": "A rigorous, well-organised course text covering almost every chapter here, with complete proofs of the error estimates."
+    },
+    {
+      "title": "Numerical Analysis (10th edition)",
+      "authors": "Richard L. Burden, J. Douglas Faires and Annette M. Burden",
+      "year": 2016,
+      "note": "The most widely used introductory text: every algorithm in pseudocode, with many worked examples and exercises."
+    },
+    {
+      "title": "Numerical Linear Algebra",
+      "authors": "Lloyd N. Trefethen and David Bau III",
+      "year": 1997,
+      "note": "Short lectures on conditioning, stability, LU, QR and eigenvalue algorithms; the best introduction to how numerical linear algebra really works."
+    },
+    {
+      "title": "Accuracy and Stability of Numerical Algorithms (2nd edition)",
+      "authors": "Nicholas J. Higham",
+      "year": 2002,
+      "note": "The definitive reference on floating-point arithmetic and rounding error analysis; read the first chapters for this course."
+    },
+    {
+      "title": "Approximation Theory and Approximation Practice (extended edition)",
+      "authors": "Lloyd N. Trefethen",
+      "year": 2019,
+      "note": "A modern, lively account of interpolation, Chebyshev points and quadrature, with computational experiments throughout."
+    },
+    {
+      "title": "A First Course in the Numerical Analysis of Differential Equations (2nd edition)",
+      "authors": "Arieh Iserles",
+      "year": 2009,
+      "note": "Runge–Kutta and multistep methods, stability and stiffness, written for mathematics undergraduates."
+    },
+    {
+      "title": "Matrix Computations (4th edition)",
+      "authors": "Gene H. Golub and Charles F. Van Loan",
+      "year": 2013,
+      "note": "The standard reference for matrix algorithms: factorisations, iterative methods and eigenvalue computations in full detail."
+    },
+    {
+      "title": "Numerical Computing with IEEE Floating Point Arithmetic",
+      "authors": "Michael L. Overton",
+      "year": 2001,
+      "note": "A short, readable explanation of the IEEE standard, rounding, cancellation and conditioning."
+    }
+  ],
+  "next": []
+}

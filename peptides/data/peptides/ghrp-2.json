@@ -1,0 +1,133 @@
+{
+  "slug": "ghrp-2",
+  "name": "GHRP-2 (pralmorelin)",
+  "aliases": ["Pralmorelin", "KP-102", "GPA-748", "Growth hormone-releasing peptide-2", "Pralmorelin dihydrochloride"],
+  "category": "gh",
+  "drug_class": "Ghrelin receptor (GHS-R1a) agonist",
+  "subclass": "Synthetic hexapeptide growth hormone secretagogue (GHRP family)",
+  "status": "regional",
+  "status_note": "Approved only in Japan, since 2004, as a single-dose intravenous diagnostic for growth hormone deficiency (GHRP Kaken 100); elsewhere it is unapproved, circulates as a grey-market 'research peptide' and is banned in sport.",
+  "evidence": 4,
+  "evidence_note": "The Japanese approval rests on diagnostic validation studies (for example 77 healthy adults and 58 patients with GH deficiency) rather than large therapeutic trials. A 48-week controlled trial of an intranasal spray in 126 GH-deficient children showed no growth benefit, and the body-composition and performance uses promoted online have not been tested.",
+  "tagline": "Potent GH-releasing hexapeptide, approved in Japan as a test for GH deficiency",
+  "summary": "GHRP-2, or pralmorelin, is a six-amino-acid synthetic peptide that mimics the hunger hormone ghrelin and triggers a large release of growth hormone (GH) from the pituitary gland. A product of Cyril Bowers' growth hormone-releasing peptide programme, it was approved in Japan in 2004 as Kaken Pharmaceutical's injectable test for GH deficiency. It also strongly increases appetite, is sold online as a bodybuilding 'research peptide' and is banned in sport.",
+  "overview": [
+    "GHRP-2 came out of the series of growth hormone-releasing peptides developed by Cyril Bowers at Tulane University and by the German company Polygen, which began with the hexapeptide GHRP-6. Its sequence, D-Ala-D-2Nal-Ala-Trp-D-Phe-Lys-NH2, replaces the His-D-Trp at the start of GHRP-6 with D-alanine and the bulky D-2-naphthylalanine. By 1993 Bowers reported that GHRP-6, GHRP-1 and GHRP-2 had all been given to people, that each was progressively more effective at releasing GH and that all worked when swallowed. In pigs GHRP-2 was more potent but less efficacious than GHRP-6, and like GHRP-6 it raised ACTH and cortisol.",
+    "Kaken Pharmaceutical acquired worldwide rights and sublicensed the US and Canadian rights to Wyeth, whose phase 2 programme in GH deficiency was discontinued. It did not succeed as a growth treatment: in a 48-week double-blind trial in 126 Japanese children with GH deficiency, an intranasal spray raised GH secretion but did not improve growth or IGF-1 (published 2014). Its lasting use is diagnostic: GHRP Kaken 100 was approved in Japan on 22 October 2004, making pralmorelin the first ghrelin-receptor agonist to be approved as a medicine. In a Japanese validation study, a 100 µg intravenous dose raised GH to an average peak of about 85 µg/L in healthy adults but only about 1.4 µg/L in severe GH deficiency, and a cut-off of 15 µg/L matched the standard insulin tolerance test, which is unsafe for some patients. The test remains in use: a 2026 Japanese study examined its cortisol response to help distinguish hypothalamic from pituitary adrenal insufficiency.",
+    "Like ghrelin, GHRP-2 is a strong appetite stimulant: a 2005 infusion study found that healthy men ate about 36% more at a buffet meal, and obese people responded similarly. Outside Japan it is sold online for muscle gain and fat loss, alone or with other peptides, although no trial has tested these uses. FDA lists injectable and nasal GHRP-2 as a significant safety risk for outsourcing-facility compounding. WADA prohibits it; doping laboratories detect it through its urinary metabolite, and in 2018 the NBA suspended a player who tested positive for GHRP-2 and ipamorelin."
+  ],
+  "mechanism": [
+    "GHRP-2 is an agonist of the growth hormone secretagogue receptor type 1a (GHS-R1a), the ghrelin receptor, acting on pituitary somatotrophs and on the hypothalamus to release GH in a dose-dependent burst that is amplified by GHRH. A normal peak response to a single intravenous dose shows that the pituitary can secrete GH, which is the basis of its diagnostic use.",
+    "Its effects are less selective than those of ipamorelin: it transiently raises cortisol and prolactin, and, through hypothalamic ghrelin receptors, it increases hunger and food intake. In the body it is cleaved to the tripeptide D-Ala-D-2Nal-Ala-OH (AA-3), which appears in urine alongside the intact peptide."
+  ],
+  "origin": "Synthetic peptide from the growth hormone-releasing peptide series developed at Tulane University (Cyril Bowers) and by Polygen; not found in nature",
+  "discovery": {"year": 1993, "by": "Cyril Y. Bowers and colleagues", "where": "Tulane University, New Orleans, US", "note": "One of a series of GH-releasing peptides developed at Tulane and by Polygen (Germany); its earliest indexed description, in 1993, already reported human studies including oral dosing."},
+  "first_human_year": 1993,
+  "first_approval": {"date": "2004-10-22", "agency": "MHLW", "region": "Japan", "brand": "GHRP Kaken 100", "indication": "Diagnostic test for growth hormone deficiency"},
+  "developer": "Kaken Pharmaceutical (from Tulane University and Polygen); Wyeth held US and Canadian rights",
+  "brands": [
+    {"name": "GHRP Kaken 100", "company": "Kaken Pharmaceutical", "route": "Intravenous injection, single diagnostic dose", "use": "Diagnosis of growth hormone deficiency", "approved": "2004-10-22", "agency": "MHLW (Japan)"}
+  ],
+  "analogs": [
+    {"name": "GHRP-6", "note": "His-D-Trp-Ala-Trp-D-Phe-Lys-NH2; the prototype of the series, less potent in humans."},
+    {"name": "GHRP-1", "note": "Ala-His-D-2Nal-Ala-Trp-D-Phe-Lys-NH2; a heptapeptide sibling and the parent of ipamorelin."},
+    {"name": "Ipamorelin", "note": "Aib-His-D-2Nal-D-Phe-Lys-NH2; releases GH without the ACTH and cortisol rise seen with GHRP-2."},
+    {"name": "Macimorelin (Macrilen)", "note": "Oral peptidomimetic ghrelin agonist approved by the FDA in December 2017 as a diagnostic test for adult GH deficiency."}
+  ],
+  "targets": [
+    {"name": "Growth hormone secretagogue receptor type 1 (ghrelin receptor)", "gene": "GHSR", "uniprot": "Q92847", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["a", "dNal", "A", "W", "f", "K"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A1", "type": "d-amino", "label": "D-Ala1 at the N-terminus", "short": "D-Ala"},
+      {"at": "A2", "type": "d-amino", "label": "3-(2-Naphthyl)-D-alanine (D-2Nal), a bulky non-natural aromatic D-amino acid", "short": "D-2Nal"},
+      {"at": "A5", "type": "d-amino", "label": "D-Phe5, shared with the other GHRPs", "short": "D-Phe"},
+      {"at": "A6", "type": "amidation", "label": "C-terminal lysine amide (Lys-NH2)", "short": "NH2"}
+    ],
+    "notation": "H-D-Ala-D-2Nal-Ala-Trp-D-Phe-Lys-NH2",
+    "note": "Hexapeptide with three D-amino acids; D-2Nal is 3-(2-naphthyl)-D-alanine. The marketed drug is the dihydrochloride salt. The urinary metabolite used in doping control is the N-terminal tripeptide D-Ala-D-2Nal-Ala-OH (AA-3)."
+  },
+  "formula": "C45H55N9O6",
+  "mw": 817.97,
+  "half_life": "≈ 33 minutes (0.55 h, elimination phase after an intravenous dose in children)",
+  "half_life_hours": 0.55,
+  "routes": ["Intravenous injection (diagnostic test in Japan)", "Intranasal spray and oral (paediatric trials)", "Subcutaneous injection and nasal spray (grey-market use)"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 6918245,
+    "notes": "No experimental structure of GHRP-2 has been deposited in the PDB, so the model shown is predicted. The closely related GHRP-6 has been solved bound to the ghrelin receptor (PDB 7F9Z)."
+  },
+  "ids": {"pubchem_cid": 6918245, "cas": "158861-67-7", "chembl": "CHEMBL106593", "unii": "E6S6E1F19M", "kegg": "D02040", "inn": "pralmorelin"},
+  "wiki": "Pralmorelin",
+  "queries": {"pubmed": "(pralmorelin[tiab] OR \"GHRP-2\"[tiab] OR \"GHRP 2\"[tiab] OR \"KP-102\"[tiab] OR \"growth hormone-releasing peptide-2\"[tiab] OR \"growth hormone releasing peptide 2\"[tiab])", "ctgov": ""},
+  "uses": {
+    "approved": [
+      {"use": "Diagnosis of growth hormone deficiency", "detail": "A single intravenous injection (GHRP Kaken 100) as a GH stimulation test, an alternative to the insulin tolerance test; a peak GH below 15 µg/L (9 µg/L with the recombinant GH standard) indicates severe deficiency in adults.", "since": 2004, "where": "Japan"}
+    ],
+    "investigational": [
+      {"use": "Short stature and GH deficiency in children", "stage": "Controlled trial — no benefit (2014)", "detail": "A 48-week double-blind, placebo-controlled trial of an intranasal spray in 126 Japanese children with GH deficiency found no improvement in growth or IGF-1; Wyeth's US phase 2 programme had been discontinued, and long-term oral dosing in 10 GH-deficient children was associated with increased appetite and body weight."},
+      {"use": "Appetite stimulation", "stage": "Experimental studies", "detail": "A subcutaneous infusion increased food intake by about 36% in seven healthy men (2005), and a similar effect was seen in obese subjects (2006)."}
+    ],
+    "off_label": [
+      {"use": "Bodybuilding and 'anti-ageing'", "detail": "Sold online as a 'research peptide' for muscle gain, fat loss and recovery.", "evidence": "No controlled trials of these uses; it raises cortisol, prolactin and appetite, and product quality is not assured."},
+      {"use": "Doping in sport", "detail": "Prohibited at all times by WADA; detected in urine through the parent peptide and its AA-3 metabolite. In 2018 the NBA suspended a player for 25 games after a positive test for GHRP-2 and ipamorelin.", "evidence": "No evidence of a performance benefit."}
+    ]
+  },
+  "history": [
+    {"year": 1984, "date": "1984-05", "title": "GHRP-6 opens the field", "detail": "Cyril Bowers and colleagues described GHRP-6, the first of the synthetic GH-releasing hexapeptides from which GHRP-2 was developed.", "kind": "science"},
+    {"year": 1993, "title": "GHRP-2 given to humans", "detail": "Bowers reported that GHRP-2 released GH more effectively than GHRP-6 and GHRP-1 in people and worked after oral, subcutaneous and intravenous dosing.", "kind": "discovery"},
+    {"year": 1998, "date": "1998-04", "title": "Phase 1 study in children", "detail": "A pharmacokinetic study in 10 short children found an elimination half-life of about 33 minutes after an intravenous dose.", "kind": "trial"},
+    {"year": 1998, "date": "1998-11", "title": "Less selective than ipamorelin", "detail": "In pigs GHRP-2 was the most potent secretagogue tested but raised ACTH and cortisol, which ipamorelin did not.", "kind": "science"},
+    {"year": 2004, "date": "2004-10-22", "title": "Approved in Japan", "detail": "Kaken's GHRP Kaken 100 was approved as a diagnostic for GH deficiency, the first approval of a ghrelin-receptor agonist; Wyeth's US development for GH deficiency had been discontinued.", "kind": "approval"},
+    {"year": 2005, "date": "2005-02", "title": "Appetite effect in humans", "detail": "Infusion of GHRP-2 made healthy men eat about 36% more, mirroring the effect of ghrelin.", "kind": "science"},
+    {"year": 2007, "date": "2007-07", "title": "Diagnostic cut-off validated", "detail": "A Japanese multicentre study set a peak-GH cut-off of 15 µg/L for diagnosing severe adult GH deficiency, equivalent to the insulin tolerance test.", "kind": "trial"},
+    {"year": 2010, "date": "2010-07", "title": "Doping test developed", "detail": "Japanese chemists published a urine method detecting GHRP-2 and its metabolite AA-3 for anti-doping purposes.", "kind": "science"},
+    {"year": 2014, "date": "2014-10", "title": "Nasal spray fails to boost growth", "detail": "A 48-week double-blind trial in 126 Japanese children with GH deficiency found that an intranasal GHRP-2 spray raised GH but did not improve growth.", "kind": "trial"},
+    {"year": 2018, "date": "2018-04-13", "title": "NBA suspension", "detail": "Jodie Meeks of the Washington Wizards was suspended for 25 games after testing positive for GHRP-2 and ipamorelin.", "kind": "regulatory"},
+    {"year": 2023, "date": "2023-09-29", "title": "FDA safety-risk listing", "detail": "FDA placed injectable and nasal GHRP-2 in Category 2 of its bulk-substance list for outsourcing facilities, citing immunogenicity risk from aggregation and impurities.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-09-11", "title": "Still a working test in Japan", "detail": "A Japanese study reported that a low cortisol response in the GHRP-2 test helps identify hypothalamic adrenal insufficiency.", "kind": "science"}
+  ],
+  "regulatory": [
+    {"region": "Japan", "status": "approved", "detail": "GHRP Kaken 100 (pralmorelin hydrochloride) approved 22 October 2004 as a diagnostic for GH deficiency."},
+    {"region": "US", "status": "not-approved", "detail": "Never approved; Wyeth's development was discontinued. In Category 3 (nominated without adequate support) of FDA's 503A list; since 29 September 2023 injectable and nasal forms are in Category 2 (significant safety risks) of the 503B list, while other routes remain under evaluation."},
+    {"region": "WADA", "status": "prohibited", "detail": "Named as GHRP-2 (pralmorelin) among growth hormone-releasing peptides under S2.2.4 of the 2026 Prohibited List; prohibited at all times."}
+  ],
+  "pk": {
+    "half_life": "Elimination half-life 0.55 ± 0.14 h after a 1 µg/kg intravenous dose in 10 children",
+    "tmax": "GH peaks within 60 minutes of an intravenous dose (about 25 minutes in children)",
+    "metabolism": "Cleaved to the tripeptide D-Ala-D-2Nal-Ala-OH (AA-3)",
+    "excretion": "Urine, as unchanged GHRP-2 and AA-3"
+  },
+  "dosing": null,
+  "dosing_note": "Approved only as a single-dose intravenous diagnostic in Japan; the adult validation study used 100 µg after an overnight fast. No therapeutic dose is approved anywhere, and regimens promoted online are not based on clinical trials.",
+  "safety": {
+    "common": ["Increased hunger and food intake", "Transient rises in cortisol and prolactin"],
+    "serious": [],
+    "warnings": ["Not approved outside Japan: grey-market products may be mislabelled, impure or non-sterile", "FDA cites possible immunogenicity from aggregation and peptide-related impurities for injectable and nasal use", "Prohibited in sport at all times (WADA S2)"],
+    "notes": "Single diagnostic doses and short-term studies were generally well tolerated; there are no long-term safety data for repeated use."
+  },
+  "market": null,
+  "facts": [
+    "In the Japanese validation study healthy adults reached an average peak GH of about 85 µg/L after one injection, against about 1.4 µg/L in patients with severe GH deficiency.",
+    "GHRP-2 became the first ghrelin-receptor agonist approved as a medicine in 2004, five years after ghrelin itself was discovered.",
+    "Doping laboratories look for its breakdown product D-Ala-D-2Nal-Ala-OH (AA-3), a tripeptide specific to GHRP-2.",
+    "An infusion made healthy men eat about a third more at a buffet meal, a response comparable to ghrelin's."
+  ],
+  "related": ["ghrp-6", "ipamorelin", "sermorelin", "tesamorelin", "cjc-1295"],
+  "references": [
+    {"title": "GH releasing peptides--structure and kinetics", "authors": "Bowers CY", "journal": "J Pediatr Endocrinol", "year": 1993, "url": "https://pubmed.ncbi.nlm.nih.gov/8374685/"},
+    {"title": "Pharmacokinetics and pharmacodynamics of growth hormone-releasing peptide-2: a phase I study in children", "authors": "Pihoker C, Kearns GL, French D, et al.", "journal": "J Clin Endocrinol Metab", "year": 1998, "url": "https://pubmed.ncbi.nlm.nih.gov/9543135/"},
+    {"title": "Ipamorelin, the first selective growth hormone secretagogue", "authors": "Raun K, Hansen BS, Johansen NL, et al.", "journal": "Eur J Endocrinol", "year": 1998, "url": "https://pubmed.ncbi.nlm.nih.gov/9849822/"},
+    {"title": "Pralmorelin: GHRP 2, GPA 748, growth hormone-releasing peptide 2, KP-102 D, KP-102 LN, KP-102D, KP-102LN", "authors": "Adis R&D profile (no authors listed)", "journal": "Drugs R D", "year": 2004, "url": "https://pubmed.ncbi.nlm.nih.gov/15230633/"},
+    {"title": "Growth hormone releasing peptide-2 (GHRP-2), like ghrelin, increases food intake in healthy men", "authors": "Laferrère B, Abraham C, Russell CD, et al.", "journal": "J Clin Endocrinol Metab", "year": 2005, "url": "https://pubmed.ncbi.nlm.nih.gov/15699539/"},
+    {"title": "A simple diagnostic test using GH-releasing peptide-2 in adult GH deficiency", "authors": "Chihara K, Shimatsu A, Hizuka N, et al.", "journal": "Eur J Endocrinol", "year": 2007, "url": "https://pubmed.ncbi.nlm.nih.gov/17609397/"},
+    {"title": "Increased secretion of endogenous GH after treatment with an intranasal GH-releasing peptide-2 spray does not promote growth in short children with GH deficiency", "authors": "Tanaka T, Hasegawa Y, Yokoya S, et al.", "journal": "Clin Pediatr Endocrinol", "year": 2014, "url": "https://pubmed.ncbi.nlm.nih.gov/25374440/"},
+    {"title": "Determination of growth hormone secretagogue pralmorelin (GHRP-2) and its metabolite in human urine by liquid chromatography/electrospray ionization tandem mass spectrometry", "authors": "Okano M, Sato M, Ikekita A, et al.", "journal": "Rapid Commun Mass Spectrom", "year": 2010, "url": "https://pubmed.ncbi.nlm.nih.gov/20552695/"},
+    {"title": "Differentiating hypothalamic from pituitary adrenal insufficiency: underlying causes and diagnostic utility of the corticotropin-releasing hormone and growth hormone-releasing peptide-2 stimulation tests", "authors": "Okada N, Nakagawa T, Murahashi N, et al.", "journal": "Endocr J", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42732957/"}
+  ]
+}

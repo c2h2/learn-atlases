@@ -1,0 +1,244 @@
+{
+  "slug": "calculus-1",
+  "title": "Calculus I",
+  "full_title": "Calculus I: Limits, Derivatives and Integrals",
+  "area": "analysis",
+  "level": 1,
+  "order": 20,
+  "tagline": "Limits, derivatives and integrals of functions of one variable — the core of first-year calculus",
+  "summary": "Calculus studies change and accumulation. Starting from a precise definition of the limit, this course develops continuity, the derivative and its applications to graphs and optimisation, and the integral, joined to the derivative by the fundamental theorem of calculus.",
+  "overview": [
+    "Calculus is the mathematics of change and accumulation. Its two central questions look unrelated: how fast is a quantity changing at a given instant, and how much of something has accumulated over an interval? The first leads to the **derivative** — the slope of a tangent line, a velocity, a marginal cost — and the second to the **integral** — an area, a distance travelled, a total mass. The fundamental theorem of calculus shows that the two operations undo each other, and this single fact turns hard geometric problems into routine computations. Calculus is the working language of physics, engineering, economics and statistics, and the foundation on which the rest of university analysis is built.",
+    "The course follows the logical order of the subject. After a review of functions and the elementary functions (chapter 1), chapters 2–3 make the notion of a limit precise with the ε–δ definition and use it to study continuity, including the intermediate and extreme value theorems. Chapters 4–7 develop the derivative: its definition and rules, the chain rule and implicit differentiation, the mean value theorem — the theoretical heart of differential calculus — and its use in sketching graphs and solving optimisation problems. Chapters 8–11 turn to integration: Riemann sums and the fundamental theorem, the standard techniques for finding antiderivatives, geometric and physical applications, and improper integrals over unbounded intervals or of unbounded functions.",
+    "Calculus can be learnt as a collection of recipes, but this course aims higher: every rule is stated precisely and proved, so that you know not only *how* to compute but also *when* a computation is valid. For most students the main obstacle is the limit concept, with its quantifiers and inequalities; give chapter 2 time, and return to it whenever a later proof leans on it. Work through the examples with pencil and paper before reading the solutions, experiment with the interactive figures until the pictures and the formulas tell the same story, and attempt the exercises — the challenging ones ask for proofs, and they are where real understanding is built."
+  ],
+  "prerequisites": [
+    "proofs"
+  ],
+  "outcomes": [
+    "Work confidently with real functions and their graphs, including compositions, inverses and the exponential, logarithmic, trigonometric and inverse trigonometric functions.",
+    "State the ε–δ definition of a limit, prove simple limits from it, and evaluate limits with the limit laws, algebraic simplification and the squeeze theorem.",
+    "Decide where a function is continuous, classify its discontinuities, and apply the intermediate and extreme value theorems.",
+    "Compute derivatives from the definition and with the product, quotient and chain rules, including implicit and logarithmic differentiation and derivatives of inverse functions.",
+    "Prove the mean value theorem, use its consequences to establish monotonicity and inequalities, and evaluate indeterminate limits with L'Hôpital's rule.",
+    "Sketch graphs using derivatives, concavity and asymptotes, and solve optimisation problems.",
+    "Explain the definite integral as a limit of Riemann sums, and prove and apply both parts of the fundamental theorem of calculus.",
+    "Evaluate integrals by substitution, integration by parts, trigonometric methods and partial fractions.",
+    "Use integrals to compute areas, volumes, arc lengths, average values, work and probabilities.",
+    "Decide whether an improper integral converges, by direct evaluation or by comparison."
+  ],
+  "chapters": [
+    {
+      "slug": "real-functions",
+      "title": "Functions and their graphs",
+      "summary": "Real functions, transformations of graphs, and the elementary functions: polynomials, exponentials, logarithms, trigonometric and inverse functions.",
+      "requires": [
+        "proofs/functions"
+      ]
+    },
+    {
+      "slug": "limits",
+      "title": "Limits",
+      "summary": "From intuition to the ε–δ definition: limit laws, one-sided and infinite limits, and the squeeze theorem.",
+      "requires": [
+        "calculus-1/real-functions",
+        "proofs/quantifiers"
+      ]
+    },
+    {
+      "slug": "continuity",
+      "title": "Continuity",
+      "summary": "Continuity at a point and on intervals, kinds of discontinuity, and the intermediate and extreme value theorems.",
+      "requires": [
+        "calculus-1/limits"
+      ]
+    },
+    {
+      "slug": "derivatives",
+      "title": "The derivative",
+      "summary": "Rates of change, the derivative as a limit, differentiability, and the rules of differentiation.",
+      "requires": [
+        "calculus-1/limits"
+      ]
+    },
+    {
+      "slug": "chain-rule",
+      "title": "The chain rule and implicit differentiation",
+      "summary": "The chain rule, implicit and logarithmic differentiation, derivatives of inverse functions and related rates.",
+      "requires": [
+        "calculus-1/derivatives",
+        "calculus-1/continuity"
+      ]
+    },
+    {
+      "slug": "mean-value-theorem",
+      "title": "The mean value theorem",
+      "summary": "Rolle’s theorem, the mean value theorem and its consequences, and L’Hôpital’s rule.",
+      "requires": [
+        "calculus-1/continuity",
+        "calculus-1/derivatives"
+      ]
+    },
+    {
+      "slug": "curve-sketching",
+      "title": "Curve sketching and optimisation",
+      "summary": "Critical points, the first and second derivative tests, concavity, asymptotes and optimisation problems.",
+      "requires": [
+        "calculus-1/mean-value-theorem"
+      ]
+    },
+    {
+      "slug": "integrals",
+      "title": "The definite integral",
+      "summary": "Riemann sums, the definite integral and its properties, and the fundamental theorem of calculus.",
+      "requires": [
+        "calculus-1/continuity",
+        "calculus-1/derivatives",
+        "calculus-1/mean-value-theorem"
+      ]
+    },
+    {
+      "slug": "integration-techniques",
+      "title": "Techniques of integration",
+      "summary": "Substitution, integration by parts, trigonometric integrals, partial fractions and trigonometric substitution.",
+      "requires": [
+        "calculus-1/integrals",
+        "calculus-1/chain-rule"
+      ]
+    },
+    {
+      "slug": "integral-applications",
+      "title": "Applications of integration",
+      "summary": "Areas between curves, volumes of revolution, arc length, average value, work and probability densities.",
+      "requires": [
+        "calculus-1/integration-techniques"
+      ]
+    },
+    {
+      "slug": "improper-integrals",
+      "title": "Improper integrals",
+      "summary": "Integrals over infinite intervals and of unbounded functions, and comparison tests for convergence.",
+      "requires": [
+        "calculus-1/integration-techniques"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -250,
+      "title": "Archimedes squares the parabola",
+      "detail": "In *Quadrature of the Parabola* Archimedes proves that a parabolic segment has 4/3 the area of its inscribed triangle, by the method of exhaustion — a forerunner of the integral as a limit of sums.",
+      "people": [
+        "Archimedes"
+      ]
+    },
+    {
+      "year": 1635,
+      "title": "Cavalieri's indivisibles",
+      "detail": "Bonaventura Cavalieri's *Geometria indivisibilibus* finds areas and volumes by comparing their slices; Cavalieri's principle for volumes is still taught today.",
+      "people": [
+        "Bonaventura Cavalieri"
+      ]
+    },
+    {
+      "year": 1666,
+      "title": "Newton's fluxions",
+      "detail": "During 1665–66 Isaac Newton develops his method of fluxions and summarises it in a manuscript tract of October 1666, which includes the inverse relation between tangents and areas. He published his calculus only decades later.",
+      "people": [
+        "Isaac Newton"
+      ]
+    },
+    {
+      "year": 1684,
+      "title": "Leibniz's first paper on the calculus",
+      "detail": "Gottfried Wilhelm Leibniz publishes *Nova methodus pro maximis et minimis* in *Acta Eruditorum*, the first printed account of the differential calculus, using the notation dx and dy that is still standard.",
+      "people": [
+        "Gottfried Wilhelm Leibniz"
+      ]
+    },
+    {
+      "year": 1696,
+      "title": "The first calculus textbook",
+      "detail": "Guillaume de l'Hôpital publishes *Analyse des infiniment petits*, based largely on lessons he had bought from Johann Bernoulli; it contains the rule for limits of the form 0/0 that now bears his name.",
+      "people": [
+        "Guillaume de l'Hôpital",
+        "Johann Bernoulli"
+      ]
+    },
+    {
+      "year": 1734,
+      "title": "Berkeley's *The Analyst*",
+      "detail": "George Berkeley attacks the logical foundations of the calculus, deriding infinitesimals as \"ghosts of departed quantities\" and prompting a long search for rigour.",
+      "people": [
+        "George Berkeley"
+      ]
+    },
+    {
+      "year": 1821,
+      "title": "Cauchy's *Cours d'analyse*",
+      "detail": "Augustin-Louis Cauchy bases analysis on limits and gives definitions of continuity close to the modern ones; in 1823 he defined the integral of a continuous function as a limit of sums and proved the fundamental theorem.",
+      "people": [
+        "Augustin-Louis Cauchy"
+      ]
+    },
+    {
+      "year": 1854,
+      "title": "Riemann's integral",
+      "detail": "In his Habilitation thesis on trigonometric series, Bernhard Riemann defines the integral of a general bounded function by Riemann sums and characterises the integrable functions; the work was published only after his death.",
+      "people": [
+        "Bernhard Riemann"
+      ]
+    },
+    {
+      "year": 1872,
+      "title": "A continuous, nowhere differentiable function",
+      "detail": "Karl Weierstrass, whose Berlin lectures had made ε–δ arguments standard, presents to the Berlin Academy a function that is continuous everywhere but differentiable nowhere.",
+      "people": [
+        "Karl Weierstrass"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Calculus",
+      "authors": "Michael Spivak",
+      "year": 2008,
+      "note": "Fourth edition. The classic rigorous treatment of one-variable calculus: every theorem of this course is proved with care, and the problems are outstanding (and hard). Ideal if you enjoy the proofs."
+    },
+    {
+      "title": "Calculus: Early Transcendentals",
+      "authors": "James Stewart, Daniel Clegg and Saleem Watson",
+      "year": 2020,
+      "note": "Ninth edition. The standard first-year textbook: thorough explanations, many applications and thousands of routine exercises for practising techniques."
+    },
+    {
+      "title": "Calculus, Volume 1",
+      "authors": "Tom M. Apostol",
+      "year": 1967,
+      "note": "Second edition. Rigorous and systematic, with careful axiomatic foundations; it treats integration before differentiation, following the historical order."
+    },
+    {
+      "title": "Calculus",
+      "authors": "Gilbert Strang",
+      "year": 2017,
+      "note": "Third edition (an earlier edition is free on MIT OpenCourseWare). An intuitive, application-driven account that emphasises ideas and models over formalism."
+    },
+    {
+      "title": "Introduction to Calculus and Analysis, Volume I",
+      "authors": "Richard Courant and Fritz John",
+      "year": 1965,
+      "note": "A classic that combines rigour with physical and geometric insight; especially good on applications and on why the definitions are what they are."
+    },
+    {
+      "title": "Understanding Analysis",
+      "authors": "Stephen Abbott",
+      "year": 2015,
+      "note": "Second edition. The natural next step: a readable introduction to real analysis that proves the completeness-based results (intermediate value theorem, extreme value theorem, integrability) that this course partly takes on trust."
+    }
+  ],
+  "next": [
+    "calculus-2",
+    "multivariable",
+    "real-analysis"
+  ]
+}

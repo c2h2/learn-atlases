@@ -1,0 +1,446 @@
+{
+  "slug": "sermorelin",
+  "name": "Sermorelin",
+  "aliases": [
+    "GHRH(1–29)-NH2",
+    "GRF(1–29)NH2",
+    "hGHRH(1–29)NH2",
+    "Sermorelin acetate"
+  ],
+  "category": "gh",
+  "drug_class": "Growth hormone-releasing hormone (GHRH) receptor agonist",
+  "subclass": "N-terminal 29-residue fragment of human GHRH, C-terminal amide",
+  "status": "approved",
+  "status_note": "Approved by the FDA as Geref for diagnostic testing (1990) and for growth hormone deficiency in children (1997), but discontinued by EMD Serono in 2008 for reasons unrelated to safety or effectiveness and its approvals were withdrawn in 2009; no approved product is currently marketed, and US use relies on compounding pharmacies.",
+  "evidence": 4,
+  "evidence_note": "Approved on diagnostic studies and an open-label trial in 110 GH-deficient children rather than large randomised trials. Studies in healthy older adults are small and short, and there are no controlled trials of the anti-ageing and body-composition uses it is now promoted for.",
+  "tagline": "First 29 residues of GHRH; once approved as Geref, now a compounded 'anti-ageing' peptide",
+  "summary": "Sermorelin is a synthetic copy of the first 29 amino acids of growth hormone-releasing hormone (GHRH), the brain hormone that tells the pituitary gland to release growth hormone (GH). Sold by Serono as Geref, it was approved in the US as a test of pituitary function and as a nightly injection for children with GH deficiency, but it was taken off the market in 2008 for reasons unrelated to safety. Compounding pharmacies still make it, and it is promoted by anti-ageing clinics as a 'natural' way to raise GH, a use that lacks controlled trial evidence.",
+  "overview": [
+    "In 1982 two teams — Roger Guillemin's group and the group of Jean Rivier and Wylie Vale, working with clinician Michael Thorner — isolated growth-hormone-releasing hormone (GHRH) not from the brain but from pancreatic tumours that had caused acromegaly by secreting it; in one of these patients, removing the tumour cured the disease. The hormone is a 44-amino-acid peptide with an amidated C-terminus. In 1984 Ling and colleagues showed that shortening it to residues 1–29 with a C-terminal amide kept about half of its potency in pituitary cells, and in the same year GHRH(1–29)-NH2 proved as effective as the longer 1–40 form at releasing GH in volunteers. This fragment became sermorelin.",
+    "Serono developed sermorelin as Geref. The FDA approved single-use ampoules for intravenous testing of the pituitary's ability to secrete GH on 28 December 1990, and vials for once-daily subcutaneous treatment of idiopathic GH deficiency in children with growth failure on 26 September 1997. In the pivotal one-year open-label study, 110 untreated prepubertal children received 30 µg/kg at bedtime: mean height velocity rose from 4.1 cm a year to 8.0 cm a year at 6 months, and about three-quarters were judged good responders; it was never compared directly with recombinant GH at the approved dose.",
+    "In 2008 EMD Serono stopped selling both products and, at the company's request, FDA withdrew the approvals effective 18 June 2009. In 2013, responding to a citizen petition, FDA formally determined that Geref had not been withdrawn for reasons of safety or effectiveness, which allows generic applications to reference it.",
+    "Because sermorelin acetate is a component of an FDA-approved drug, US pharmacies continue to compound it, and it is promoted by anti-ageing and wellness practitioners as a more 'physiological' alternative to GH injections, often combined with ipamorelin. Evidence for these uses is thin: in a 1997 study, six weeks of nightly injections in 11 older men raised nocturnal GH and improved some strength measures but did not change IGF-1, body composition or metabolism. Sermorelin is prohibited in sport by the World Anti-Doping Agency."
+  ],
+  "mechanism": [
+    "Sermorelin binds and activates the GHRH receptor, a class B G-protein-coupled receptor on the somatotroph cells of the anterior pituitary, stimulating the synthesis and release of GH, which in turn drives IGF-1 production. Because it acts one step upstream of GH, the response remains subject to the body's own brakes — somatostatin and IGF-1 feedback — so GH is released in bursts rather than as the constant levels produced by GH injections.",
+    "Its action is brief: in men given intravenous infusions, GHRH(1–29)-NH2 disappeared from plasma with a half-time of about 4 minutes, partly because a plasma dipeptidyl peptidase (DPP-4) cleaves off the first two residues, leaving an inactive fragment. As a diagnostic, a single intravenous dose tests the readily releasable pool of pituitary GH; a normal response does not exclude GH deficiency caused by a hypothalamic defect."
+  ],
+  "origin": "Synthetic copy of residues 1–29 of human growth hormone-releasing hormone (somatoliberin), a 44-residue hypothalamic hormone first isolated from pancreatic tumours",
+  "discovery": {
+    "year": 1982,
+    "by": "Roger Guillemin's group; Jean Rivier, Joachim Spiess, Michael Thorner and Wylie Vale",
+    "where": "Salk Institute, La Jolla, California, US",
+    "note": "GHRH was isolated in 1982 from pancreatic tumours that had caused acromegaly; in 1984 Ling and colleagues showed that the 1–29 amide fragment retains substantial activity, the basis of sermorelin."
+  },
+  "first_human_year": 1984,
+  "first_approval": {
+    "date": "1990-12-28",
+    "agency": "FDA",
+    "region": "US",
+    "brand": "Geref",
+    "indication": "Diagnostic test of pituitary growth hormone secretion"
+  },
+  "developer": "Serono (later EMD Serono)",
+  "brands": [
+    {
+      "name": "Geref (diagnostic ampoules)",
+      "company": "Serono / EMD Serono",
+      "route": "Intravenous, single dose",
+      "use": "Evaluating the ability of the pituitary to secrete GH; discontinued 2008",
+      "approved": "1990-12-28",
+      "agency": "FDA"
+    },
+    {
+      "name": "Geref (0.5 and 1 mg vials)",
+      "company": "Serono / EMD Serono",
+      "route": "Subcutaneous, once daily at bedtime",
+      "use": "Idiopathic GH deficiency in children with growth failure; discontinued 2008",
+      "approved": "1997-09-26",
+      "agency": "FDA"
+    }
+  ],
+  "analogs": [
+    {
+      "name": "Native GHRH (somatorelin)",
+      "note": "The full 44-residue hormone, Tyr1 to Leu44-NH2; residues 30–44 are not needed for receptor activation."
+    },
+    {
+      "name": "Tesamorelin",
+      "note": "Full-length GHRH(1–44) with an N-terminal trans-3-hexenoyl group that blocks dipeptidyl peptidase-4; approved as Egrifta."
+    },
+    {
+      "name": "CJC-1295",
+      "note": "GHRH(1–29) with four substitutions and an albumin-binding maleimide; half-life about a week, never approved."
+    },
+    {
+      "name": "Mod GRF 1–29",
+      "note": "Tetrasubstituted GHRH(1–29) without the albumin binder, sold as 'CJC-1295 without DAC'."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Growth hormone-releasing hormone receptor",
+      "gene": "GHRHR",
+      "uniprot": "Q02643",
+      "action": "Agonist"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "Y",
+          "A",
+          "D",
+          "A",
+          "I",
+          "F",
+          "T",
+          "N",
+          "S",
+          "Y",
+          "R",
+          "K",
+          "V",
+          "L",
+          "G",
+          "Q",
+          "L",
+          "S",
+          "A",
+          "R",
+          "K",
+          "L",
+          "L",
+          "Q",
+          "D",
+          "I",
+          "M",
+          "S",
+          "R"
+        ],
+        "n_term": "H",
+        "c_term": "NH2"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A29",
+        "type": "amidation",
+        "label": "Arg29 carries a C-terminal amide; native GHRH continues to Leu44-NH2",
+        "short": "NH2"
+      }
+    ],
+    "notation": "H-Tyr-Ala-Asp-Ala-Ile-Phe-Thr-Asn-Ser-Tyr-Arg-Lys-Val-Leu-Gly-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Met-Ser-Arg-NH2",
+    "note": "Identical to residues 1–29 of mature human GHRH (residues 32–60 of the UniProt P01286 precursor), with an amidated C-terminus. All residues are standard L-amino acids; marketed as the acetate salt."
+  },
+  "formula": "C149H246N44O42S",
+  "mw": 3357.88,
+  "half_life": "≈ 4 minutes (plasma disappearance half-time after intravenous infusion)",
+  "half_life_hours": 0.07,
+  "routes": [
+    "Intravenous injection (diagnostic test)",
+    "Subcutaneous injection, once daily at bedtime"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "7CZ5",
+        "title": "Native GHRH bound to the human GHRH receptor–Gs protein complex",
+        "method": "Cryo-EM",
+        "resolution": 2.6,
+        "year": 2020,
+        "peptide_chain": "P",
+        "note": "The peptide is native GHRH(1–44); its residues 1–29 are identical to sermorelin"
+      },
+      {
+        "id": "7V9M",
+        "title": "GHRH bound to GHRH receptor splice variant 1 (SV1) with Gs",
+        "method": "Cryo-EM",
+        "resolution": 3.29,
+        "year": 2021,
+        "peptide_chain": "P",
+        "note": "Native GHRH(1–44) bound to the SV1 receptor variant found in some tumours"
+      }
+    ],
+    "pubchem_cid": 16132413,
+    "notes": "No structure of sermorelin itself has been deposited. The entries show the parent hormone, whose first 29 residues are sermorelin, bound to its receptor."
+  },
+  "ids": {
+    "pubchem_cid": 16132413,
+    "cas": "86168-78-7",
+    "drugbank": "DB00010",
+    "chembl": "CHEMBL1201490",
+    "unii": "89243S03TE",
+    "kegg": "D08509",
+    "chebi": "CHEBI:9118",
+    "atc": "H01AC04",
+    "inn": "sermorelin"
+  },
+  "wiki": "Sermorelin",
+  "queries": {
+    "pubmed": "(sermorelin[tiab] OR Geref[tiab] OR \"GHRH(1-29)NH2\"[tiab] OR \"GRF(1-29)NH2\"[tiab] OR \"hGHRH(1-29)NH2\"[tiab] OR \"GHRH-(1-29)-NH2\"[tiab])",
+    "ctgov": "sermorelin"
+  },
+  "uses": {
+    "approved": [
+      {
+        "use": "Diagnostic test of pituitary GH secretion",
+        "detail": "A single intravenous dose assesses the ability of pituitary somatotrophs to release GH (Geref ampoules).",
+        "since": 1990,
+        "where": "US (discontinued 2008)"
+      },
+      {
+        "use": "Idiopathic GH deficiency in children with growth failure",
+        "detail": "Once-daily subcutaneous injection at bedtime; in the pivotal open-label study height velocity roughly doubled over the first 6 months in previously untreated prepubertal children.",
+        "since": 1997,
+        "where": "US (discontinued 2008)"
+      }
+    ],
+    "investigational": [
+      {
+        "use": "Age-related decline in GH",
+        "stage": "Small trials (1990s)",
+        "detail": "Six weeks of nightly 2 mg injections in 11 men aged 64–76 raised nocturnal GH and improved two of six strength measures but did not change IGF-1, body composition, glucose tolerance or lipids."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Anti-ageing and 'hormone optimisation'",
+        "detail": "Compounded sermorelin injections are prescribed by anti-ageing and wellness practitioners as a 'physiological' alternative to recombinant GH for energy, body composition and sleep, often combined with ipamorelin.",
+        "evidence": "No controlled trials support benefits on body composition, longevity or quality of life in healthy adults; the evidence comes from paediatric use and small, short studies in older people."
+      },
+      {
+        "use": "Performance enhancement",
+        "detail": "Named as a GHRH analogue on WADA's Prohibited List.",
+        "evidence": "No evidence of a performance benefit."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1982,
+      "date": "1982-11-05",
+      "title": "GHRH isolated from a pancreatic tumour",
+      "detail": "Guillemin and colleagues reported a 44-amino-acid growth hormone-releasing factor purified from a pancreatic tumour that had caused acromegaly.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1982,
+      "date": "1982-11-18",
+      "title": "Second team characterises GHRH",
+      "detail": "Rivier, Spiess, Thorner and Vale reported a GH-releasing factor from another pancreatic islet tumour; Thorner's patient was cured of acromegaly when the tumour was removed.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1984,
+      "date": "1984-06-16",
+      "title": "The 1–29 fragment works in people",
+      "detail": "A London study found GHRH(1–29)-NH2 as effective as GHRH(1–40) at releasing GH in healthy volunteers.",
+      "kind": "trial"
+    },
+    {
+      "year": 1984,
+      "date": "1984-09-17",
+      "title": "Truncation study defines the active fragment",
+      "detail": "Ling and colleagues showed that C-terminally shortened GHRH down to residues 1–29 amide kept about half the potency of the full hormone in pituitary cells.",
+      "kind": "science"
+    },
+    {
+      "year": 1990,
+      "date": "1990-12-28",
+      "title": "FDA approves Geref as a diagnostic",
+      "detail": "Serono's sermorelin ampoules were approved for testing the pituitary's capacity to secrete GH.",
+      "kind": "approval"
+    },
+    {
+      "year": 1994,
+      "date": "1994-10",
+      "title": "Half-life measured in men",
+      "detail": "Infusion studies put the plasma disappearance half-time of GHRH(1–29)-NH2 at about 4 minutes.",
+      "kind": "science"
+    },
+    {
+      "year": 1996,
+      "date": "1996-03",
+      "title": "Paediatric growth trial reported",
+      "detail": "In 110 GH-deficient children, nightly sermorelin raised mean height velocity from 4.1 to 8.0 cm a year after 6 months.",
+      "kind": "trial"
+    },
+    {
+      "year": 1997,
+      "date": "1997-01",
+      "title": "Trial in older men",
+      "detail": "Nightly GHRH(1–29) for six weeks in healthy men aged 64–76 increased GH release and some strength measures but not IGF-1 or body composition.",
+      "kind": "trial"
+    },
+    {
+      "year": 1997,
+      "date": "1997-09-26",
+      "title": "Approval for childhood GH deficiency",
+      "detail": "FDA approved Geref vials for idiopathic GH deficiency in children with growth failure.",
+      "kind": "approval"
+    },
+    {
+      "year": 2008,
+      "title": "Geref discontinued",
+      "detail": "EMD Serono told FDA in July and December 2008 that it was discontinuing the diagnostic and treatment products, for reasons unrelated to safety.",
+      "kind": "market"
+    },
+    {
+      "year": 2009,
+      "date": "2009-06-18",
+      "title": "Approvals withdrawn",
+      "detail": "At the company's request, FDA withdrew approval of both Geref applications.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2013,
+      "date": "2013-03-04",
+      "title": "FDA: not withdrawn for safety",
+      "detail": "Responding to a citizen petition, FDA determined that Geref had not been withdrawn for safety or effectiveness reasons, allowing generic applications to reference it.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2020,
+      "date": "2020-10-15",
+      "title": "Receptor structure solved",
+      "detail": "A cryo-EM structure of GHRH bound to its receptor and Gs protein showed how the hormone, including the sermorelin segment, engages the receptor.",
+      "kind": "science"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "withdrawn",
+      "detail": "Geref approved in 1990 (diagnostic) and 1997 (paediatric GH deficiency); discontinued in 2008 and approvals withdrawn effective 18 June 2009 at the sponsor's request. FDA ruled in 2013 that the withdrawal was not for safety or effectiveness reasons. FDA lists sermorelin acetate as a component of an approved drug, and it is compounded by US pharmacies."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "Named as a GHRH analogue under S2.2.4 of the 2026 Prohibited List; prohibited at all times."
+    }
+  ],
+  "pk": {
+    "half_life": "Plasma disappearance half-time about 4 minutes after intravenous infusion in men",
+    "metabolism": "Rapid enzymatic degradation, including N-terminal cleavage by dipeptidyl peptidase-4",
+    "excretion": "Not well characterised"
+  },
+  "dosing": [
+    {
+      "product": "Geref diagnostic (discontinued)",
+      "regimen": "Single intravenous dose of 1 µg/kg, followed by serial GH measurements."
+    },
+    {
+      "product": "Geref for paediatric GH deficiency (discontinued)",
+      "regimen": "30 µg/kg subcutaneously once daily at bedtime."
+    }
+  ],
+  "dosing_note": "Former labelled regimens, given for reference only; Geref is no longer marketed. There is no approved adult or anti-ageing dose, and compounded regimens used in clinics are not based on controlled trials.",
+  "safety": {
+    "common": [
+      "Transient facial flushing",
+      "Pain, redness or swelling at the injection site",
+      "Headache, nausea and dizziness (occasional)"
+    ],
+    "serious": [
+      "Allergic reactions (rare)"
+    ],
+    "warnings": [
+      "Compounded products are not FDA-approved; their quality and dosing depend on the pharmacy",
+      "Theoretical concern that raising GH and IGF-1 could promote the growth of existing tumours; no clinical signal has been established",
+      "Prohibited in sport at all times (WADA S2)"
+    ],
+    "notes": "Single diagnostic doses and daily paediatric treatment were well tolerated in clinical studies, with flushing and injection-site pain the most common complaints. There are no long-term safety data for adult or anti-ageing use."
+  },
+  "market": null,
+  "facts": [
+    "Human GHRH was first isolated not from the hypothalamus but from pancreatic tumours that caused acromegaly by secreting it.",
+    "Cutting the 44-residue hormone down to its first 29 residues keeps about half its potency in pituitary cells, and in people it proved as potent as the 40-residue form.",
+    "Sermorelin has two ATC codes: H01AC04 as a somatropin agonist and V04CD03 as a test of pituitary function.",
+    "Unmodified GHRH(1–29) survives only about 4 minutes in the blood, which is why longer-acting analogues such as CJC-1295 and tesamorelin were developed."
+  ],
+  "related": [
+    "tesamorelin",
+    "cjc-1295",
+    "ipamorelin",
+    "ghrp-2",
+    "ghrp-6"
+  ],
+  "references": [
+    {
+      "title": "Growth hormone-releasing factor from a human pancreatic tumor that caused acromegaly",
+      "authors": "Guillemin R, Brazeau P, Böhlen P, et al.",
+      "journal": "Science",
+      "year": 1982,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6812220/"
+    },
+    {
+      "title": "Characterization of a growth hormone-releasing factor from a human pancreatic islet tumour",
+      "authors": "Rivier J, Spiess J, Thorner M, et al.",
+      "journal": "Nature",
+      "year": 1982,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6292724/"
+    },
+    {
+      "title": "Growth hormone releasing factor: comparison of two analogues and demonstration of hypothalamic defect in growth hormone release after radiotherapy",
+      "authors": "Grossman A, Lytras N, Savage MO, et al.",
+      "journal": "Br Med J (Clin Res Ed)",
+      "year": 1984,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6234047/"
+    },
+    {
+      "title": "Synthesis and in vitro bioactivity of C-terminal deleted analogs of human growth hormone-releasing factor",
+      "authors": "Ling N, Baird A, Wehrenberg WB, et al.",
+      "journal": "Biochem Biophys Res Commun",
+      "year": 1984,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6435620/"
+    },
+    {
+      "title": "Once daily subcutaneous growth hormone-releasing hormone therapy accelerates growth in growth hormone-deficient children during the first year of therapy. Geref International Study Group",
+      "authors": "Thorner M, Rochiccioli P, Colle M, et al.",
+      "journal": "J Clin Endocrinol Metab",
+      "year": 1996,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8772599/"
+    },
+    {
+      "title": "Effects of single nightly injections of growth hormone-releasing hormone (GHRH 1-29) in healthy elderly men",
+      "authors": "Vittone J, Blackman MR, Busby-Whitehead J, et al.",
+      "journal": "Metabolism",
+      "year": 1997,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9005976/"
+    },
+    {
+      "title": "Sermorelin: a review of its use in the diagnosis and treatment of children with idiopathic growth hormone deficiency",
+      "authors": "Prakash A, Goa KL",
+      "journal": "BioDrugs",
+      "year": 1999,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18031173/"
+    },
+    {
+      "title": "Incorporation of D-Ala2 in growth hormone-releasing hormone-(1-29)-NH2 increases the half-life and decreases metabolic clearance in normal men",
+      "authors": "Soule S, King JA, Millar RP",
+      "journal": "J Clin Endocrinol Metab",
+      "year": 1994,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7962295/"
+    },
+    {
+      "title": "Determination that GEREF (sermorelin acetate) injection ... were not withdrawn from sale for reasons of safety or effectiveness",
+      "authors": "US Food and Drug Administration",
+      "journal": "Federal Register 78 FR 14095",
+      "year": 2013,
+      "url": "https://www.federalregister.gov/documents/2013/03/04/2013-04827/determination-that-geref-sermorelin-acetate-injection-05-milligrams-basevial-and-10-milligrams"
+    },
+    {
+      "title": "Structural basis for activation of the growth hormone-releasing hormone receptor",
+      "authors": "Zhou F, Zhang H, Cong Z, et al.",
+      "journal": "Nat Commun",
+      "year": 2020,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33060564/"
+    }
+  ]
+}

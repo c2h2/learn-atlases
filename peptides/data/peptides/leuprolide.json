@@ -1,0 +1,193 @@
+{
+  "slug": "leuprolide",
+  "name": "Leuprolide (leuprorelin)",
+  "aliases": ["Leuprorelin", "Leuprolide acetate", "Leuprorelin acetate", "Leuprolide mesylate", "TAP-144", "Abbott-43818"],
+  "category": "hormone",
+  "drug_class": "GnRH receptor agonist (GnRH analogue)",
+  "subclass": "Nonapeptide 'superagonist' analogue of gonadotropin-releasing hormone with D-Leu6 and a C-terminal Pro9 ethylamide",
+  "status": "approved",
+  "status_note": "Approved in the US since 1985 and worldwide for advanced prostate cancer, endometriosis, uterine fibroids and central precocious puberty, mostly as depot injections lasting one to six months; generic versions are available.",
+  "evidence": 5,
+  "evidence_note": "Four decades of randomised trials in prostate cancer, endometriosis and precocious puberty; leuprolide has also served as the standard comparator in large phase 3 trials of newer hormonal drugs such as HERO (relugolix, 2020).",
+  "tagline": "Depot GnRH agonist that switches off sex hormones for prostate cancer and endometriosis",
+  "summary": "Leuprolide (leuprorelin) is a nine-amino-acid synthetic version of gonadotropin-releasing hormone, the brain signal that tells the pituitary to stimulate the testes and ovaries. Given continuously, usually as a monthly to six-monthly depot injection, it briefly stimulates and then shuts down that signal, lowering testosterone to castrate levels and oestrogen to post-menopausal levels. Sold as Lupron, Eligard, Prostap and other brands, it is used for prostate cancer, endometriosis, fibroids and early puberty.",
+  "overview": [
+    "Gonadotropin-releasing hormone (GnRH, also called LHRH) is a ten-amino-acid peptide released in pulses from the hypothalamus that drives the pituitary to secrete luteinising hormone (LH) and follicle-stimulating hormone (FSH). Its structure was worked out in 1971 by Andrew Schally's group in New Orleans from pig hypothalami and confirmed in sheep by Roger Guillemin's group at the Salk Institute; Schally and Guillemin received the 1977 Nobel Prize in Physiology or Medicine, together with Rosalyn Yalow. Native GnRH survives only a few minutes in the blood, so drug companies set out to make stronger, longer-lasting versions, initially hoping for fertility drugs.",
+    "At Takeda in Japan, a team led by M. Fujino found that replacing glycine 6 with a D-amino acid and swapping the C-terminal glycinamide for an ethylamide on proline 9 produced far more potent analogues. The D-leucine version, patented in 1973 and published in 1974, became leuprorelin (TAP-144). The paradox that made it useful was shown in 1978 by Ernst Knobil's laboratory: continuous rather than pulsed GnRH stimulation switches the pituitary off. A long-acting agonist therefore works as a reversible 'medical castration'.",
+    "In 1984 a randomised trial showed that daily leuprolide injections controlled metastatic prostate cancer as well as the oestrogen diethylstilbestrol with fewer side effects, and the FDA approved Lupron in April 1985. It was marketed in the US by TAP Pharmaceutical Products, a Takeda–Abbott joint venture (1977–2008), and later by Abbott and AbbVie. Takeda's biodegradable polymer microspheres then made a monthly depot possible (Lupron Depot, 1989), followed by 3-, 4- and 6-month injections, subcutaneous polymer depots (Eligard, 2002; Camcevi, 2021) and a children's formulation for central precocious puberty (1993).",
+    "Beyond prostate cancer, leuprolide is used for endometriosis (with hormonal 'add-back' to protect bone), to correct anaemia from fibroids before surgery, for premenopausal breast cancer in some countries, and off-label in IVF and for puberty suppression. It was also at the centre of a 2001 US fraud case in which TAP paid $875 million over Lupron pricing and marketing. Leuprorelin is on the WHO Model List of Essential Medicines."
+  ],
+  "mechanism": [
+    "Leuprolide binds the GnRH receptor, a Gq-coupled G-protein-coupled receptor on pituitary gonadotroph cells. The first doses act like a large dose of native GnRH, causing a surge in LH and FSH and a temporary rise in testosterone (about 50% above baseline) or oestradiol, the 'flare'. Because the stimulation is continuous instead of pulsatile, gonadotrophs then become desensitised and the receptor is down-regulated, so LH and FSH fall; within two to four weeks testosterone reaches castrate levels in men and oestrogen falls to post-menopausal levels in premenopausal women. The effect reverses when treatment stops.",
+    "Its greater potency and stability come from two changes to native GnRH: D-leucine at position 6 stabilises the folded β-turn conformation recognised by the receptor and protects the Tyr5–Gly6 bond from cleavage by endopeptidases, and the ethylamide that replaces glycinamide 10 protects the C-terminus. Leuprolide is not active by mouth and is given by injection or implant."
+  ],
+  "origin": "Synthetic analogue of gonadotropin-releasing hormone (GnRH, LHRH), a decapeptide made by neurons in the hypothalamus",
+  "discovery": {"year": 1973, "by": "M. Fujino and colleagues, Takeda Chemical Industries", "where": "Japan", "note": "Patented in 1973 and published in 1974 among GnRH analogues substituted at positions 6 and 10; the D-Leu6, Pro9-ethylamide analogue became leuprorelin (TAP-144)."},
+  "first_human_year": null,
+  "first_approval": {"date": "1985-04-09", "agency": "FDA", "region": "US", "brand": "Lupron (daily injection)", "indication": "Palliative treatment of advanced prostate cancer"},
+  "developer": "Takeda (discovery); TAP Pharmaceutical Products (Takeda–Abbott joint venture) for the US market",
+  "brands": [
+    {"name": "Lupron", "company": "TAP Pharmaceutical Products (now AbbVie)", "route": "Subcutaneous injection, once daily", "use": "Advanced prostate cancer", "approved": "1985-04-09", "agency": "FDA"},
+    {"name": "Lupron Depot", "company": "AbbVie (originally TAP)", "route": "Intramuscular depot every 1, 3, 4 or 6 months", "use": "Advanced prostate cancer; endometriosis; uterine fibroids (with iron, before surgery)", "approved": "1989-01-26", "agency": "FDA"},
+    {"name": "Lupron Depot-PED", "company": "AbbVie (originally TAP)", "route": "Intramuscular depot every 1, 3 or 6 months", "use": "Central precocious puberty", "approved": "1993-04-16", "agency": "FDA"},
+    {"name": "Eligard", "company": "Tolmar", "route": "Subcutaneous polymer depot every 1, 3, 4 or 6 months", "use": "Advanced prostate cancer", "approved": "2002-01-23", "agency": "FDA"},
+    {"name": "Fensolvi", "company": "Tolmar", "route": "Subcutaneous depot every 6 months", "use": "Central precocious puberty", "approved": "2020-05-01", "agency": "FDA"},
+    {"name": "Camcevi", "company": "Accord", "route": "Subcutaneous emulsion (leuprolide mesylate) every 6 months; 3-monthly 21 mg version approved in 2025", "use": "Advanced prostate cancer", "approved": "2021-05-25", "agency": "FDA"}
+  ],
+  "analogs": [
+    {"name": "Gonadorelin", "note": "Native GnRH decapeptide (pGlu-His-Trp-Ser-Tyr-Gly-Leu-Arg-Pro-Gly-NH2); used diagnostically and in pulsatile pumps to induce ovulation."},
+    {"name": "Triptorelin", "note": "D-Trp6 agonist (Decapeptyl, Trelstar) used for the same indications as leuprolide."},
+    {"name": "Goserelin", "note": "D-Ser(tBu)6, aza-Gly10 agonist given as a subcutaneous implant (Zoladex)."},
+    {"name": "Buserelin", "note": "D-Ser(tBu)6 ethylamide agonist available as a nasal spray and injection."},
+    {"name": "Nafarelin", "note": "D-2-naphthylalanine-6 agonist given as a nasal spray (Synarel)."},
+    {"name": "Histrelin", "note": "D-His(benzyl)6 agonist delivered from 12-month subcutaneous implants."},
+    {"name": "Degarelix", "note": "Injectable GnRH receptor antagonist (Firmagon); lowers testosterone without an initial flare."},
+    {"name": "Relugolix", "note": "Oral non-peptide GnRH receptor antagonist (Orgovyx), compared head-to-head with leuprolide in the HERO trial."}
+  ],
+  "targets": [
+    {"name": "Gonadotropin-releasing hormone receptor", "gene": "GNRHR", "uniprot": "P30968", "action": "Agonist; continuous exposure desensitises the receptor and suppresses LH/FSH"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["pGlu", "H", "W", "S", "Y", "l", "L", "R", "P"], "n_term": null, "c_term": "NHEt"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A1", "type": "other", "label": "Pyroglutamate (pGlu1), a cyclised glutamine as in native GnRH; it has no free N-terminal amine and blocks aminopeptidases", "short": "pGlu"},
+      {"at": "A6", "type": "d-amino", "label": "D-Leu6 replaces Gly6 of native GnRH; it stabilises the receptor-bound β-turn and protects the Tyr5–Gly6 bond from endopeptidases", "short": "D-Leu"},
+      {"at": "A9", "type": "amidation", "label": "Pro9 N-ethylamide: native Gly10-NH2 is deleted and the chain ends as an ethylamide on Pro9, protecting the C-terminus from cleavage", "short": "NHEt"}
+    ],
+    "notation": "pGlu-His-Trp-Ser-Tyr-D-Leu-Leu-Arg-Pro-NHEt",
+    "note": "Nonapeptide. Native GnRH is pGlu-His-Trp-Ser-Tyr-Gly-Leu-Arg-Pro-Gly-NH2; leuprolide replaces Gly6 with D-Leu and Gly10-NH2 with an ethylamide on Pro9. The N-terminus is the pGlu lactam, so n_term is null (no free amine)."
+  },
+  "formula": "C59H84N16O12",
+  "mw": 1209.4,
+  "half_life": "≈ 3 h (terminal, after an intravenous or subcutaneous dose); depot formulations release the drug over 1–6 months",
+  "half_life_hours": 3,
+  "routes": [
+    "Intramuscular depot injection (1-, 3-, 4- or 6-monthly)",
+    "Subcutaneous depot or implant (1- to 6-monthly)",
+    "Subcutaneous injection, once daily"
+  ],
+  "structure": {
+    "pdb": [
+      {"id": "1YY2", "title": "NMR conformational analysis of LHRH and its analogues: leuprolide", "method": "Solution NMR", "resolution": null, "year": 2006, "peptide_chain": "A", "note": "Free leuprolide in solution, from a comparative NMR study of GnRH and its analogues"}
+    ],
+    "pubchem_cid": 657181,
+    "notes": "No experimental structure of leuprolide bound to its receptor has been published. Cryo-EM structures of the GnRH receptor with native GnRH (e.g. 9U4W, 2025) and a high-resolution crystal structure of the related agonist triptorelin (4D5M) are available for comparison."
+  },
+  "ids": {"pubchem_cid": 657181, "cas": "53714-56-0", "drugbank": "DB00007", "chembl": "CHEMBL1201199", "unii": "EFY6W0M8TG", "kegg": "D08113", "chebi": "CHEBI:6427", "atc": "L02AE02", "inn": "leuprorelin"},
+  "wiki": "Leuprorelin",
+  "queries": {"pubmed": "(leuprolide[tiab] OR leuprorelin[tiab] OR lupron[tiab] OR eligard[tiab])", "ctgov": "leuprolide OR leuprorelin OR Lupron OR Eligard"},
+  "uses": {
+    "approved": [
+      {"use": "Advanced prostate cancer", "detail": "Androgen-deprivation therapy that lowers testosterone to castrate levels; in some countries also licensed with radiotherapy for high-risk localised disease.", "since": 1985, "where": "Worldwide"},
+      {"use": "Endometriosis", "detail": "Relieves pain and shrinks endometriotic lesions; usually combined with norethindrone acetate 'add-back' to limit bone loss, with total treatment limited to about 12 months.", "since": 1990, "where": "US, UK, Europe and elsewhere"},
+      {"use": "Uterine fibroids", "detail": "Used with iron before surgery to improve anaemia caused by fibroids.", "where": "US and elsewhere"},
+      {"use": "Central precocious puberty", "detail": "Pauses early puberty in children; monthly, 3-monthly and 6-monthly formulations.", "since": 1993, "where": "US, UK, Europe and elsewhere"},
+      {"use": "Premenopausal breast cancer", "detail": "Ovarian suppression in pre- and perimenopausal women with hormone-sensitive breast cancer.", "where": "UK and some other countries (not a US label indication)"}
+    ],
+    "investigational": [
+      {"use": "Spinal and bulbar muscular atrophy (Kennedy disease)", "stage": "Phase 3 (Japan) — primary endpoint not met", "detail": "Suppressing testosterone was tested because the disease is driven by a mutant androgen receptor; the JASMITT trial (199 treated patients) missed its swallowing endpoint, although a subgroup with shorter disease duration and pooled analyses suggested possible benefit."}
+    ],
+    "off_label": [
+      {"use": "Assisted reproduction (IVF)", "detail": "Used to down-regulate the pituitary and prevent premature ovulation during ovarian stimulation, and in some protocols to trigger final egg maturation.", "evidence": "Established clinical practice supported by randomised trials of GnRH agonist protocols; specific regimens vary."},
+      {"use": "Puberty suppression in adolescents with gender dysphoria", "detail": "GnRH agonists such as leuprolide and triptorelin have been prescribed to pause puberty. In England, NHS England stopped routine prescribing for this purpose in March 2024 and the government made restrictions on new private prescriptions for under-18s indefinite in December 2024, pending a clinical trial.", "evidence": "Systematic reviews commissioned for England's Cass Review (2024) judged the evidence on benefits and long-term effects to be of low certainty."}
+    ]
+  },
+  "history": [
+    {"year": 1971, "date": "1971-06", "title": "GnRH structure proposed", "detail": "Matsuo, Baba, Nair, Arimura and Schally reported the decapeptide sequence of porcine LH- and FSH-releasing hormone.", "kind": "discovery"},
+    {"year": 1972, "date": "1972-01", "title": "Guillemin's group confirms it in sheep", "detail": "Burgus and colleagues at the Salk Institute reported the same primary structure for ovine luteinising-hormone-releasing factor.", "kind": "science"},
+    {"year": 1973, "title": "Leuprorelin patented", "detail": "The D-Leu6, Pro9-ethylamide analogue of GnRH, discovered at Takeda, was patented.", "kind": "discovery"},
+    {"year": 1974, "date": "1974-09", "title": "Position-6 and -10 analogues published", "detail": "Fujino and colleagues at Takeda described GnRH analogues substituted at positions 6 and 10, including the one that became leuprorelin.", "kind": "science"},
+    {"year": 1977, "title": "Nobel Prize for hypothalamic hormones", "detail": "Roger Guillemin and Andrew Schally shared the Nobel Prize in Physiology or Medicine for their discoveries of the peptide hormones of the brain, with Rosalyn Yalow; Takeda and Abbott formed the TAP joint venture the same year.", "kind": "culture"},
+    {"year": 1978, "date": "1978-11-10", "title": "Continuous GnRH switches the pituitary off", "detail": "Ernst Knobil's group showed in rhesus monkeys that continuous GnRH infusion suppresses LH and FSH while intermittent pulses restore them, the basis for 'medical castration' with agonists.", "kind": "science"},
+    {"year": 1984, "date": "1984-11-15", "title": "Leuprolide matches oestrogen in prostate cancer", "detail": "In 199 men with metastatic prostate cancer, daily leuprolide gave similar response rates to diethylstilbestrol (86% vs 85%) with less painful gynaecomastia, nausea and oedema, and a trend towards fewer thromboembolic events.", "kind": "trial"},
+    {"year": 1985, "date": "1985-04-09", "title": "FDA approves Lupron", "detail": "A 1 mg daily subcutaneous injection was approved for palliative treatment of advanced prostate cancer, the first approval of leuprolide.", "kind": "approval"},
+    {"year": 1989, "date": "1989-01-26", "title": "Monthly Lupron Depot", "detail": "Leuprolide in biodegradable microspheres allowed a single intramuscular injection every month; 3-, 4- and 6-month depots followed.", "kind": "approval"},
+    {"year": 1990, "date": "1990-10-22", "title": "Endometriosis approval", "detail": "FDA approved Lupron Depot 3.75 mg, a monthly depot used to treat endometriosis, after a placebo-controlled trial.", "kind": "approval"},
+    {"year": 1993, "date": "1993-04-16", "title": "Treatment for precocious puberty", "detail": "Lupron Depot-PED was approved for children with central precocious puberty.", "kind": "approval"},
+    {"year": 1998, "date": "1998-08-04", "title": "First US generic", "detail": "FDA approved the first generic leuprolide acetate injection.", "kind": "market"},
+    {"year": 2001, "date": "2001-10-03", "title": "$875 million Lupron settlement", "detail": "TAP Pharmaceutical Products agreed to plead guilty and pay $875 million, including a then-record $290 million criminal fine, over fraudulent Medicare and Medicaid pricing and marketing of Lupron.", "kind": "regulatory"},
+    {"year": 2002, "date": "2002-01-23", "title": "Eligard subcutaneous depot", "detail": "FDA approved Eligard, leuprolide in a biodegradable polymer that solidifies under the skin, for advanced prostate cancer.", "kind": "approval"},
+    {"year": 2008, "date": "2008-04-30", "title": "TAP joint venture ends", "detail": "Abbott exchanged its stake in TAP for the Lupron business; the franchise passed to AbbVie when it separated from Abbott in 2013.", "kind": "market"},
+    {"year": 2020, "date": "2020-05-01", "title": "Fensolvi for precocious puberty", "detail": "FDA approved a six-monthly subcutaneous leuprolide depot for children with central precocious puberty.", "kind": "approval"},
+    {"year": 2021, "date": "2021-05-25", "title": "Camcevi six-month emulsion", "detail": "FDA approved Camcevi, a subcutaneous leuprolide mesylate emulsion given every six months for advanced prostate cancer; the EU authorised it in May 2022 and FDA approved a 3-monthly version in August 2025.", "kind": "approval"},
+    {"year": 2023, "date": "2023-04-14", "title": "Six-month paediatric depot", "detail": "FDA approved a new dosing regimen for Lupron Depot-PED; the label now includes a 45 mg injection every six months, tested in a phase 3 study published in 2023.", "kind": "approval"},
+    {"year": 2024, "date": "2024-12-11", "title": "UK restricts puberty blockers", "detail": "The UK government made indefinite its restrictions on GnRH analogues for gender dysphoria in under-18s outside research, after NHS England had stopped routine prescribing in March 2024.", "kind": "regulatory"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "approved", "detail": "Lupron (1985), Lupron Depot (1989), Lupron Depot-PED (1993), Eligard (2002), Fensolvi (2020) and Camcevi (2021; 3-month version 2025); generic leuprolide acetate since 1998."},
+    {"region": "EU", "status": "approved", "detail": "Nationally authorised depots (e.g. Eligard, Enantone) plus Camcevi, centrally authorised in May 2022 for prostate cancer."},
+    {"region": "UK", "status": "approved", "detail": "Prostap (Takeda) for prostate and breast cancer, endometriosis and central precocious puberty; also Eligard and the Staladex implant. Private supply of GnRH analogues for gender dysphoria in under-18s has been restricted since 2024."},
+    {"region": "Japan", "status": "approved", "detail": "Leuprorelin acetate is marketed in Japan and is an official Japanese Pharmacopoeia (JP19) drug."},
+    {"region": "WADA", "status": "prohibited", "detail": "GnRH agonist analogues, including leuprorelin, are prohibited at all times in male athletes (S2.2.1, 2026 Prohibited List) because they can stimulate testosterone."}
+  ],
+  "pk": {
+    "half_life": "Terminal elimination half-life about 3 hours after an intravenous bolus",
+    "tmax": "Depots give an initial burst within hours, followed by slow release from the polymer over 1–6 months",
+    "bioavailability": "Subcutaneous bioavailability comparable to intravenous; not active orally",
+    "metabolism": "Broken down by peptidases into inactive fragments (a pentapeptide and smaller peptides); not metabolised by cytochrome P450",
+    "excretion": "Less than 5% of a depot dose recovered in urine as parent drug and the main metabolite"
+  },
+  "dosing": [
+    {"product": "Lupron Depot (prostate cancer)", "regimen": "7.5 mg intramuscularly every 4 weeks, 22.5 mg every 12 weeks, 30 mg every 16 weeks or 45 mg every 24 weeks."},
+    {"product": "Lupron Depot 3.75 mg / 11.25 mg (endometriosis)", "regimen": "3.75 mg monthly or 11.25 mg every 3 months for up to 6 months, alone or with norethindrone acetate 5 mg daily; total treatment with add-back should not exceed 12 months."},
+    {"product": "Lupron Depot-PED (central precocious puberty)", "regimen": "Monthly (7.5, 11.25 or 15 mg by weight), 3-monthly (11.25 or 30 mg) or 6-monthly (45 mg) intramuscular injections, adjusted to hormonal and clinical response."},
+    {"product": "Leuprolide acetate injection", "regimen": "1 mg subcutaneously once daily for advanced prostate cancer."}
+  ],
+  "dosing_note": "Labelled regimens summarised for reference only; follow the prescribing information and a clinician's advice.",
+  "safety": {
+    "common": [
+      "Hot flushes and sweating",
+      "Fatigue and malaise",
+      "Headache",
+      "Reduced libido and erectile dysfunction",
+      "Testicular atrophy (men)",
+      "Mood changes and depression",
+      "Vaginitis (women)",
+      "Weight change",
+      "Nausea",
+      "Dizziness",
+      "Injection-site burning or pain"
+    ],
+    "serious": [
+      "Tumour flare in the first weeks of prostate-cancer treatment (bone pain, urinary obstruction, spinal cord compression)",
+      "Loss of bone mineral density",
+      "Hyperglycaemia and diabetes",
+      "Increased risk of myocardial infarction, sudden cardiac death and stroke",
+      "QT prolongation",
+      "Convulsions",
+      "Psychiatric symptoms, including emotional lability, in children",
+      "Severe skin reactions (Stevens–Johnson syndrome/toxic epidermal necrolysis, rare)",
+      "Pituitary apoplexy (rare)"
+    ],
+    "warnings": [
+      "Can cause fetal harm; pregnancy must be excluded and non-hormonal contraception used",
+      "Duration of use for endometriosis and fibroids is limited because of bone loss"
+    ],
+    "notes": "No boxed warning. Men starting treatment for metastatic prostate cancer are monitored closely, and often given an anti-androgen, during the initial testosterone flare. Long-term androgen deprivation causes bone and muscle loss, weight gain and metabolic changes."
+  },
+  "market": null,
+  "facts": [
+    "Leuprolide works by overstimulation: continuous exposure to a GnRH agonist makes the pituitary stop responding, which is why a hormone 'agonist' ends up suppressing sex hormones.",
+    "It differs from native GnRH in only two places: a D-leucine at position 6 and an ethylamide replacing the final glycinamide.",
+    "Takeda's biodegradable microsphere technology made a month-long depot possible in 1989; today's formulations last up to six months.",
+    "TAP's $290 million criminal fine in the 2001 Lupron case was then the largest ever in a US health-care fraud prosecution.",
+    "Leuprorelin is on the WHO Model List of Essential Medicines (complementary list) as a cancer medicine."
+  ],
+  "related": ["kisspeptin", "sermorelin", "tesamorelin", "octreotide", "oxytocin"],
+  "references": [
+    {"title": "Structure of the porcine LH- and FSH-releasing hormone. I. The proposed amino acid sequence", "authors": "Matsuo H, Baba Y, Nair RM, et al.", "journal": "Biochem Biophys Res Commun", "year": 1971, "url": "https://pubmed.ncbi.nlm.nih.gov/4936338/"},
+    {"title": "Primary structure of the ovine hypothalamic luteinizing hormone-releasing factor (LRF)", "authors": "Burgus R, Butcher M, Amoss M, et al.", "journal": "Proc Natl Acad Sci U S A", "year": 1972, "url": "https://pubmed.ncbi.nlm.nih.gov/4550508/"},
+    {"title": "Synthetic analogs of luteinizing hormone releasing hormone (LH-RH) substituted in position 6 and 10", "authors": "Fujino M, Fukuda T, Shinagawa S, et al.", "journal": "Biochem Biophys Res Commun", "year": 1974, "url": "https://pubmed.ncbi.nlm.nih.gov/4608231/"},
+    {"title": "Hypophysial responses to continuous and intermittent delivery of hypothalamic gonadotropin-releasing hormone", "authors": "Belchetz PE, Plant TM, Nakai Y, et al.", "journal": "Science", "year": 1978, "url": "https://pubmed.ncbi.nlm.nih.gov/100883/"},
+    {"title": "Leuprolide versus diethylstilbestrol for metastatic prostate cancer", "authors": "Leuprolide Study Group", "journal": "N Engl J Med", "year": 1984, "url": "https://pubmed.ncbi.nlm.nih.gov/6436700/"},
+    {"title": "Lupron depot (leuprolide acetate for depot suspension) in the treatment of endometriosis: a randomized, placebo-controlled, double-blind study", "authors": "Dlugi AM, Miller JD, Knittle J", "journal": "Fertil Steril", "year": 1990, "url": "https://pubmed.ncbi.nlm.nih.gov/2118858/"},
+    {"title": "One- and three-month release injectable microspheres of the LH-RH superagonist leuprorelin acetate", "authors": "Okada H", "journal": "Adv Drug Deliv Rev", "year": 1997, "url": "https://pubmed.ncbi.nlm.nih.gov/10837564/"},
+    {"title": "Efficacy and safety of leuprorelin in patients with spinal and bulbar muscular atrophy (JASMITT study)", "authors": "Katsuno M, Banno H, Suzuki K, et al.", "journal": "Lancet Neurol", "year": 2010, "url": "https://pubmed.ncbi.nlm.nih.gov/20691641/"},
+    {"title": "Oral relugolix for androgen-deprivation therapy in advanced prostate cancer (HERO)", "authors": "Shore ND, Saad F, Cookson MS, et al.", "journal": "N Engl J Med", "year": 2020, "url": "https://pubmed.ncbi.nlm.nih.gov/32469183/"},
+    {"title": "Efficacy and safety of leuprolide acetate 6-month depot for the treatment of central precocious puberty: a phase 3 study", "authors": "Klein KO, Mauras N, Nayak S, et al.", "journal": "J Endocr Soc", "year": 2023, "url": "https://pubmed.ncbi.nlm.nih.gov/37334213/"}
+  ]
+}

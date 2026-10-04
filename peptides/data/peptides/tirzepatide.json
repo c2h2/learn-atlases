@@ -1,0 +1,166 @@
+{
+  "slug": "tirzepatide",
+  "name": "Tirzepatide",
+  "aliases": ["LY3298176", "LY-3298176", "Tirz"],
+  "category": "metabolic",
+  "drug_class": "Dual GIP and GLP-1 receptor agonist",
+  "subclass": "Fatty-diacid acylated, GIP-based dual incretin agonist",
+  "status": "approved",
+  "status_note": "Approved for type 2 diabetes (US, EU and Japan, 2022) and chronic weight management (US and UK 2023, China 2024, Japan 2024), with later US labels for obstructive sleep apnoea (2024), children aged 10 and over with type 2 diabetes (2025) and cardiovascular risk reduction in type 2 diabetes (2026).",
+  "evidence": 5,
+  "evidence_note": "Tested in the SURPASS (type 2 diabetes) and SURMOUNT (obesity) phase 3 programmes, SURMOUNT-OSA, SUMMIT, SURPASS-PEDS and the 13,299-participant SURPASS-CVOT outcomes trial; the SURMOUNT-MMO outcomes trial in about 15,000 people with obesity is ongoing.",
+  "tagline": "The once-weekly dual GIP/GLP-1 agonist behind Mounjaro and Zepbound",
+  "summary": "Tirzepatide is a synthetic 39-amino-acid peptide, built on the sequence of the gut hormone GIP, that activates both the GIP and the GLP-1 receptors. A fatty-acid chain lets it bind albumin in the blood, so one injection lasts about a week. Sold by Eli Lilly as Mounjaro and Zepbound, it lowers blood sugar and produced average weight loss of about 20% at the highest dose in obesity trials.",
+  "overview": [
+    "Tirzepatide grew out of efforts to combine the two incretin hormones, GIP and GLP-1, which the gut releases after meals to amplify insulin secretion. GIP, isolated around 1970, was long considered a poor drug target because its insulin-releasing effect is blunted in type 2 diabetes, but in 2013 a team led by Richard DiMarchi and Matthias Tschöp showed that single peptides activating both receptors outperformed selective GLP-1 agonists in animals and people. Eli Lilly designed its own dual agonist, LY3298176, which it claimed in a patent application filed in January 2016 and first gave to humans the same year.",
+    "The molecule is a 39-amino-acid peptide whose sequence is based on GIP. The non-natural amino acid Aib replaces alanine at position 2, where it blocks cleavage by the enzyme DPP-4, and again at position 13; the amidated C-terminal tail (residues 29–39) is identical to that of exendin-4; and lysine 20 is linked through a γGlu–2×OEG spacer to a 20-carbon fatty diacid that binds serum albumin. Together these changes give a half-life of about five days, allowing once-weekly injection.",
+    "Approved as Mounjaro for type 2 diabetes in 2022 and as Zepbound for obesity in 2023, tirzepatide produced mean weight loss of up to about 21% at 72 weeks in SURMOUNT-1 and outperformed semaglutide in head-to-head trials of glucose control (SURPASS-2) and weight loss (SURMOUNT-5). Later US approvals covered obstructive sleep apnoea (2024), children with type 2 diabetes (2025) and cardiovascular risk reduction (2026), after SURPASS-CVOT showed it was at least as protective as dulaglutide.",
+    "Demand quickly outstripped supply. Tirzepatide was on the US drug-shortage list from December 2022 to December 2024, during which compounded copies proliferated, and Lilly began selling vials directly to self-paying patients. In 2025 Mounjaro and Zepbound together earned US$36.5 billion, making tirzepatide Lilly's largest product."
+  ],
+  "mechanism": [
+    "Tirzepatide activates the GIP receptor and the GLP-1 receptor, two class B G-protein-coupled receptors. At clinical doses it engages the GIP receptor more fully than the GLP-1 receptor, so it is described as an 'imbalanced' agonist: at the GIP receptor it mimics native GIP, while at the GLP-1 receptor it favours cAMP signalling over β-arrestin recruitment and causes less receptor internalisation than GLP-1. In pancreatic beta cells both pathways amplify insulin release only when glucose is raised; the drug also lowers fasting and post-meal glucose and improves insulin sensitivity.",
+    "Weight loss comes mainly from reduced appetite and calorie intake; both receptors are found in brain areas that regulate appetite. Tirzepatide also slows gastric emptying, an effect that is greatest after the first dose and wanes with continued treatment. How much the GIP component adds to weight loss in humans is still debated."
+  ],
+  "origin": "Synthetic analogue of human glucose-dependent insulinotropic polypeptide (GIP), a 42-amino-acid incretin hormone secreted by intestinal K-cells, engineered to also activate the GLP-1 receptor",
+  "discovery": {"year": 2016, "by": "Jorge Alsina-Fernandez, Krister Bokvist, Tamer Coskun, Robert Cummins and colleagues, Eli Lilly and Company", "where": "Indianapolis, Indiana, US", "note": "Claimed as SEQ ID NO: 3 in Lilly's GIP/GLP-1 co-agonist patent application WO2016111971 (priority January 2015, published July 2016); the pharmacology and first human data for LY3298176 were published in Molecular Metabolism in 2018."},
+  "first_human_year": 2016,
+  "first_approval": {"date": "2022-05-13", "agency": "FDA", "region": "US", "brand": "Mounjaro", "indication": "Type 2 diabetes"},
+  "developer": "Eli Lilly",
+  "brands": [
+    {"name": "Mounjaro", "company": "Eli Lilly", "route": "Subcutaneous, once weekly (pen, vial or multi-dose KwikPen)", "use": "Type 2 diabetes in adults and children aged 10 and over; cardiovascular risk reduction in type 2 diabetes (US); also licensed for weight management in the EU, UK, China, India and other countries", "approved": "2022-05-13", "agency": "FDA"},
+    {"name": "Zepbound", "company": "Eli Lilly", "route": "Subcutaneous, once weekly (pen, vial or multi-dose KwikPen)", "use": "Chronic weight management; moderate-to-severe obstructive sleep apnoea in adults with obesity", "approved": "2023-11-08", "agency": "FDA"}
+  ],
+  "targets": [
+    {"name": "Gastric inhibitory polypeptide receptor (GIP receptor)", "gene": "GIPR", "uniprot": "P48546", "action": "Agonist; mimics native GIP"},
+    {"name": "Glucagon-like peptide-1 receptor", "gene": "GLP1R", "uniprot": "P43220", "action": "Agonist, biased towards cAMP signalling over β-arrestin recruitment"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["Y","Aib","E","G","T","F","T","S","D","Y","S","I","Aib","L","D","K","I","A","Q","K","A","F","V","Q","W","L","I","A","G","G","P","S","S","G","A","P","P","P","S"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A2", "type": "nonnatural", "label": "Aib2 replaces Ala2 of native GIP and blocks cleavage by DPP-4", "short": "Aib"},
+      {"at": "A13", "type": "nonnatural", "label": "Aib13 replaces Ala13 of native GIP", "short": "Aib"},
+      {"at": "A20", "type": "lipidation", "label": "Lys20 carries an icosanedioic (C20) fatty diacid attached through γ-glutamate and two OEG (8-amino-3,6-dioxaoctanoic acid) spacers; it binds serum albumin", "short": "C20 diacid"}
+    ],
+    "notation": "H-Tyr-Aib-Glu-Gly-Thr-Phe-Thr-Ser-Asp-Tyr-Ser-Ile-Aib-Leu-Asp-Lys-Ile-Ala-Gln-Lys(γGlu-2×OEG-C20 diacid)-Ala-Phe-Val-Gln-Trp-Leu-Ile-Ala-Gly-Gly-Pro-Ser-Ser-Gly-Ala-Pro-Pro-Pro-Ser-NH2",
+    "note": "Numbered 1–39 from the N-terminus, following native GIP. Residues 29–39 (GGPSSGAPPPS) are identical to the C-terminus of exendin-4. The linker order is Lys20 Nε–OEG–OEG–γGlu–C20 diacid."
+  },
+  "formula": "C225H348N48O68",
+  "mw": 4813.53,
+  "half_life": "≈ 5 days (about 120 h)",
+  "half_life_hours": 120,
+  "routes": ["Subcutaneous injection, once weekly (single-dose pen or vial, or multi-dose KwikPen)"],
+  "structure": {
+    "pdb": [
+      {"id": "7RGP", "title": "Tirzepatide bound to the GLP-1 receptor–Gs complex", "method": "Cryo-EM", "resolution": 2.9, "year": 2022, "peptide_chain": "P", "note": "Full-length receptor; both Aib residues are modelled but the fatty-acid side chain is not"},
+      {"id": "7RBT", "title": "Tirzepatide bound to the GIP receptor–Gs complex", "method": "Cryo-EM", "resolution": 3.08, "year": 2022, "peptide_chain": "P", "note": "Companion structure from the same study (Sun et al., PNAS 2022)"},
+      {"id": "7FIY", "title": "Tirzepatide-bound GIP receptor–Gs complex", "method": "Cryo-EM", "resolution": 3.4, "year": 2022, "peptide_chain": "P", "note": "Independent structure (Zhao et al., Nat Commun 2022)"},
+      {"id": "7FIM", "title": "Tirzepatide-bound GLP-1 receptor–Gs complex", "method": "Cryo-EM", "resolution": 3.4, "year": 2022, "peptide_chain": "P", "note": "Independent structure (Zhao et al., Nat Commun 2022)"}
+    ],
+    "pubchem_cid": 166567236,
+    "notes": "In all four structures tirzepatide forms a long α-helix that binds the receptor's extracellular domain and transmembrane core. PubChem CID 166567236 (the record returned by a name search, matching KEGG D11360) is used because the older PubChem record titled 'Tirzepatide' (CID 156588324) draws the lipid on Lys16 with the linker reversed."
+  },
+  "ids": {"pubchem_cid": 166567236, "cas": "2023788-19-2", "drugbank": "DB15171", "chembl": "CHEMBL4297839", "unii": "OYN3CCI6QE", "kegg": "D11360", "chebi": "CHEBI:194186", "atc": "A10BX16", "inn": "tirzepatide"},
+  "wiki": "Tirzepatide",
+  "queries": {"pubmed": "(tirzepatide[tiab] OR LY3298176[tiab])", "ctgov": "tirzepatide OR LY3298176"},
+  "uses": {
+    "approved": [
+      {"use": "Type 2 diabetes", "detail": "Glycaemic control as an adjunct to diet and exercise (Mounjaro); extended to children aged 10 and over in the US and EU after SURPASS-PEDS.", "since": 2022, "where": "US, EU, UK, Japan, China, Canada, India and many other countries"},
+      {"use": "Chronic weight management", "detail": "Adults with obesity, or overweight with at least one weight-related condition; SURMOUNT-1 reported 15.0–20.9% mean weight loss at 72 weeks versus 3.1% with placebo.", "since": 2023, "where": "US (Zepbound), UK, EU, Japan (Zepbound), China, India and others"},
+      {"use": "Obstructive sleep apnoea", "detail": "Moderate-to-severe obstructive sleep apnoea in adults with obesity; SURMOUNT-OSA cut the apnoea–hypopnoea index by about 25–29 events per hour versus about 5 with placebo.", "since": 2024, "where": "US, China"},
+      {"use": "Cardiovascular risk reduction in type 2 diabetes", "detail": "Lowers the risk of cardiovascular death, heart attack or stroke in adults with type 2 diabetes at high cardiovascular risk (SURPASS-CVOT).", "since": 2026, "where": "US"}
+    ],
+    "investigational": [
+      {"use": "Heart failure with preserved ejection fraction and obesity", "stage": "Phase 3 — positive; US application withdrawn (2025)", "detail": "In SUMMIT (731 patients) cardiovascular death or worsening heart failure occurred in 9.9% on tirzepatide versus 15.3% on placebo. FDA asked for a further trial; in the EU the data were added to the label without a separate indication (2026)."},
+      {"use": "MASH (metabolic dysfunction-associated steatohepatitis)", "stage": "Phase 2 — positive", "detail": "In SYNERGY-NASH (190 patients with F2–F3 fibrosis), 52–73% achieved resolution of MASH without worsening fibrosis at 52 weeks, versus 13% with placebo."},
+      {"use": "Cardiovascular outcomes in obesity", "stage": "Phase 3 — ongoing", "detail": "SURMOUNT-MMO is testing whether tirzepatide reduces death and serious cardiovascular events in about 15,000 adults with obesity; primary completion is expected in 2027."},
+      {"use": "Psoriatic disease with obesity", "stage": "Phase 3b — positive", "detail": "In TOGETHER-PsA, adding tirzepatide to ixekizumab (Taltz) improved psoriatic arthritis responses compared with ixekizumab alone in people with obesity or overweight (2026)."}
+    ],
+    "off_label": [
+      {"use": "Weight loss with Mounjaro in the US", "detail": "Before Zepbound was approved in November 2023, Mounjaro was prescribed off-label for weight loss in the US, at a time when demand had led to a national shortage.", "evidence": "Same molecule and doses as Zepbound; efficacy is established in the SURMOUNT trials, but this use is outside the Mounjaro label."},
+      {"use": "Compounded, 'research' and counterfeit tirzepatide", "detail": "While tirzepatide was on the FDA shortage list (December 2022 to December 2024), compounding pharmacies and telehealth companies sold copies; FDA had received more than 730 adverse-event reports linked to compounded tirzepatide by May 2026, including dosing errors. Unapproved vials labelled 'for research purposes' are sold online, and the UK MHRA warned in 2026 about fake Mounjaro KwikPens.", "evidence": "Quality, dose accuracy and sterility of compounded, 'research' and falsified products are not assured."}
+    ]
+  },
+  "history": [
+    {"year": 2013, "date": "2013-10", "title": "Dual incretin concept demonstrated", "detail": "Brian Finan, Richard DiMarchi, Matthias Tschöp and colleagues described a balanced GLP-1/GIP co-agonist peptide that lowered glucose more effectively than selective GLP-1 agonists in rodents, monkeys and humans.", "kind": "science"},
+    {"year": 2016, "date": "2016-05", "title": "First human doses", "detail": "A phase 1 study of LY3298176 in healthy volunteers and people with type 2 diabetes began in May 2016, months after Lilly filed the patent application claiming the molecule.", "kind": "trial"},
+    {"year": 2018, "date": "2018-10", "title": "Discovery paper and phase 2 results", "detail": "Lilly published the pharmacology of LY3298176 in Molecular Metabolism, and a 26-week phase 2 trial in 318 people with type 2 diabetes (The Lancet) reported larger glucose and weight reductions than with dulaglutide.", "kind": "trial"},
+    {"year": 2021, "title": "SURPASS-2 beats semaglutide", "detail": "In 1,879 people with type 2 diabetes, all three tirzepatide doses lowered HbA1c (by 2.01–2.30 percentage points) and body weight more than semaglutide 1 mg over 40 weeks.", "kind": "trial"},
+    {"year": 2022, "date": "2022-05-13", "title": "FDA approves Mounjaro", "detail": "Tirzepatide became the first GIP/GLP-1 receptor agonist on the market, approved as a once-weekly injection for type 2 diabetes.", "kind": "approval"},
+    {"year": 2022, "date": "2022-06-04", "title": "SURMOUNT-1: up to 20.9% weight loss", "detail": "In 2,539 adults with obesity or overweight but without diabetes, tirzepatide reduced body weight by 15.0–20.9% at 72 weeks, versus 3.1% with placebo (NEJM).", "kind": "trial"},
+    {"year": 2022, "date": "2022-09-15", "title": "EU and Japan approve Mounjaro", "detail": "The European Commission authorised Mounjaro for type 2 diabetes on 15 September 2022, and Japan approved it on 26 September 2022.", "kind": "approval"},
+    {"year": 2022, "date": "2022-12-15", "title": "US shortage opens the door to compounding", "detail": "FDA added tirzepatide to its drug-shortage list because of soaring demand, which allowed pharmacies and telehealth companies to sell compounded copies.", "kind": "regulatory"},
+    {"year": 2023, "date": "2023-11-08", "title": "Zepbound approved for obesity", "detail": "FDA approved tirzepatide as Zepbound for chronic weight management; on the same day the UK MHRA authorised Mounjaro for weight management.", "kind": "approval"},
+    {"year": 2024, "date": "2024-08-27", "title": "Self-pay vials launched", "detail": "Lilly began selling Zepbound 2.5 mg and 5 mg single-dose vials to self-paying patients through LillyDirect at half or less of the list price of other obesity incretins; all doses were offered as vials from mid-2025.", "kind": "market"},
+    {"year": 2024, "date": "2024-11-16", "title": "SUMMIT: fewer heart-failure events", "detail": "In 731 people with HFpEF and obesity, tirzepatide cut cardiovascular death or worsening heart failure by 38% versus placebo. Lilly withdrew its US application in 2025 after FDA asked for another trial.", "kind": "trial"},
+    {"year": 2024, "date": "2024-12-19", "title": "US shortage declared over", "detail": "After an October 2024 decision was challenged in court by compounders, FDA confirmed the shortage had resolved; pharmacies had until 18 February 2025 and outsourcing facilities until 19 March 2025 to stop compounding.", "kind": "regulatory"},
+    {"year": 2024, "date": "2024-12-20", "title": "First drug for obstructive sleep apnoea", "detail": "Zepbound became the first medicine approved for moderate-to-severe obstructive sleep apnoea in adults with obesity, based on SURMOUNT-OSA.", "kind": "approval"},
+    {"year": 2025, "date": "2025-05-11", "title": "Head-to-head win over Wegovy", "detail": "SURMOUNT-5 (751 adults with obesity) found mean weight loss of 20.2% with tirzepatide versus 13.7% with semaglutide 2.4 mg at 72 weeks (NEJM).", "kind": "trial"},
+    {"year": 2025, "date": "2025-07-31", "title": "SURPASS-CVOT results", "detail": "In 13,299 people with type 2 diabetes and atherosclerotic heart disease, tirzepatide was non-inferior to dulaglutide for cardiovascular death, heart attack or stroke (hazard ratio 0.92), with 16% lower all-cause mortality.", "kind": "trial"},
+    {"year": 2025, "date": "2025-11-06", "title": "Pricing deal with the US government", "detail": "Lilly agreed that Medicare patients would pay no more than US$50 a month for Zepbound and that self-pay prices for the multi-dose pen would be US$299–449 a month, in return for three years of tariff relief.", "kind": "market"},
+    {"year": 2025, "date": "2025-12", "title": "Approved for children with type 2 diabetes", "detail": "FDA extended Mounjaro to children aged 10 and over after SURPASS-PEDS showed an average HbA1c reduction of 2.2 percentage points at 30 weeks; the EMA's CHMP backed the same extension that month.", "kind": "approval"},
+    {"year": 2026, "date": "2026-02-04", "title": "US$36.5 billion in annual sales", "detail": "Lilly reported 2025 revenue of US$22.97 billion for Mounjaro and US$13.54 billion for Zepbound.", "kind": "market"},
+    {"year": 2026, "date": "2026-04-30", "title": "FDA moves against bulk compounding", "detail": "FDA proposed not to include tirzepatide, semaglutide and liraglutide on the list of bulk substances that outsourcing facilities may use, finding no clinical need for them to be compounded.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-08-28", "title": "Cardiovascular indication approved", "detail": "Based on SURPASS-CVOT, FDA approved Mounjaro to lower the risk of major adverse cardiovascular events in adults with type 2 diabetes at high cardiovascular risk.", "kind": "approval"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "approved", "detail": "Mounjaro for type 2 diabetes (2022; children aged 10+ from 2025) and cardiovascular risk reduction (2026); Zepbound for weight management (2023) and obstructive sleep apnoea (2024). HFpEF application withdrawn in 2025."},
+    {"region": "EU", "status": "approved", "detail": "Mounjaro authorised September 2022 for type 2 diabetes; weight-management indication backed by the CHMP in November 2023; children aged 10+ with type 2 diabetes backed in December 2025. The CHMP did not add separate indications for obstructive sleep apnoea (2024; considered covered by weight management) or HFpEF (2026; trial data added to the label)."},
+    {"region": "UK", "status": "approved", "detail": "MHRA-authorised for type 2 diabetes and, since 8 November 2023, weight management; NICE recommended tirzepatide for obesity in December 2024 (TA1026) with a phased NHS roll-out."},
+    {"region": "Japan", "status": "approved", "detail": "Mounjaro for type 2 diabetes (September 2022); Zepbound for obesity disease (December 2024)."},
+    {"region": "China", "status": "approved", "detail": "Approved for type 2 diabetes and weight management in 2024 and launched in January 2025; also sold for obstructive sleep apnoea. Reimbursed for type 2 diabetes from 1 January 2026."},
+    {"region": "India", "status": "approved", "detail": "Launched by Lilly in March 2025 after CDSCO approval for type 2 diabetes and obesity; the KwikPen was approved in mid-2025."},
+    {"region": "Canada", "status": "approved", "detail": "Mounjaro authorised by Health Canada in November 2022; marketed for obesity as Zepbound."},
+    {"region": "WADA", "status": "permitted", "detail": "GIP and GLP-1 receptor agonists are not on the World Anti-Doping Agency prohibited list."}
+  ],
+  "pk": {
+    "half_life": "About 5 days (5–6 days in people with obesity)",
+    "tmax": "8–72 hours after subcutaneous injection (median about 24 h)",
+    "bioavailability": "≈ 80% subcutaneous",
+    "metabolism": "Proteolytic cleavage of the peptide backbone, β-oxidation of the C20 fatty diacid and amide hydrolysis; about 99% bound to plasma albumin",
+    "excretion": "Metabolites cleared in urine and faeces; no intact tirzepatide is detected in either"
+  },
+  "dosing": [
+    {"product": "Mounjaro", "regimen": "2.5 mg once weekly for 4 weeks, then 5 mg; may be increased in 2.5 mg steps after at least 4 weeks on the current dose, to a maximum of 15 mg weekly (10 mg in children aged 10 and over)."},
+    {"product": "Zepbound", "regimen": "2.5 mg once weekly for 4 weeks, then increased in 2.5 mg steps at intervals of at least 4 weeks to a maintenance dose of 5, 10 or 15 mg weekly (10 or 15 mg for obstructive sleep apnoea)."}
+  ],
+  "dosing_note": "Labelled regimens summarised for reference only; follow the prescribing information and a clinician's advice.",
+  "safety": {
+    "common": ["Nausea", "Diarrhoea", "Vomiting", "Constipation", "Abdominal pain", "Dyspepsia", "Decreased appetite", "Injection-site reactions", "Fatigue", "Eructation", "Hair loss", "Gastro-oesophageal reflux"],
+    "serious": ["Acute pancreatitis", "Gallbladder disease (gallstones, cholecystitis)", "Hypoglycaemia when combined with insulin or sulfonylureas", "Acute kidney injury from dehydration", "Severe gastrointestinal reactions; not recommended in severe gastroparesis", "Worsening diabetic retinopathy in people with a history of retinopathy", "Serious hypersensitivity reactions (anaphylaxis, angioedema)", "Pulmonary aspiration during general anaesthesia or deep sedation"],
+    "warnings": ["US boxed warning: thyroid C-cell tumours seen in rats; contraindicated with a personal or family history of medullary thyroid carcinoma or MEN 2", "May reduce the effectiveness of oral contraceptives: users are advised to switch to or add a non-oral method for 4 weeks after starting and after each dose increase"],
+    "notes": "Stopping treatment leads to substantial weight regain: in SURMOUNT-4, people switched to placebo after 36 weeks regained 14% of their weight over the next year, while those who continued lost a further 5.5%. The US Zepbound label's warning on suicidal behaviour and ideation was removed in February 2026."
+  },
+  "market": {
+    "note": "Tirzepatide became Lilly's largest product within three years of launch. Demand drove a US shortage (2022–2024), multibillion-dollar manufacturing investments and direct-to-patient vial sales through LillyDirect.",
+    "figures": [
+      {"year": 2023, "label": "Mounjaro sales", "value": "US$5.16 bn", "source": "Eli Lilly Q4 and full-year 2024 results (6 Feb 2025)"},
+      {"year": 2024, "label": "Mounjaro sales", "value": "US$11.54 bn", "source": "Eli Lilly Q4 and full-year 2024 results (6 Feb 2025)"},
+      {"year": 2024, "label": "Zepbound sales", "value": "US$4.93 bn", "source": "Eli Lilly Q4 and full-year 2024 results (6 Feb 2025)"},
+      {"year": 2025, "label": "Mounjaro sales", "value": "US$22.97 bn", "source": "Eli Lilly Q4 and full-year 2025 results (4 Feb 2026)"},
+      {"year": 2025, "label": "Zepbound sales", "value": "US$13.54 bn", "source": "Eli Lilly Q4 and full-year 2025 results (4 Feb 2026)"}
+    ]
+  },
+  "facts": [
+    "Tirzepatide is built on the sequence of GIP rather than GLP-1, yet activates both receptors; its last 11 residues are identical to those of exendin-4, the Gila monster peptide behind exenatide.",
+    "About 99% of circulating tirzepatide is bound to albumin, which, together with the C20 fatty diacid, stretches its half-life to about five days.",
+    "Zepbound was the first medicine approved to treat obstructive sleep apnoea in adults with obesity (December 2024).",
+    "In September 2025 the WHO added tirzepatide to its Model List of Essential Medicines, and in December 2025 included it in its first guideline on GLP-1 medicines for obesity."
+  ],
+  "related": ["semaglutide", "retatrutide", "liraglutide", "exenatide", "mazdutide", "survodutide", "cagrilintide", "eloralintide", "glucagon"],
+  "references": [
+    {"title": "LY3298176, a novel dual GIP and GLP-1 receptor agonist for the treatment of type 2 diabetes mellitus: from discovery to clinical proof of concept", "authors": "Coskun T, Sloop KW, Loghin C, et al.", "journal": "Mol Metab", "year": 2018, "url": "https://pubmed.ncbi.nlm.nih.gov/30473097/"},
+    {"title": "Efficacy and safety of LY3298176, a novel dual GIP and GLP-1 receptor agonist, in patients with type 2 diabetes: a randomised, placebo-controlled and active comparator-controlled phase 2 trial", "authors": "Frias JP, Nauck MA, Van J, et al.", "journal": "Lancet", "year": 2018, "url": "https://pubmed.ncbi.nlm.nih.gov/30293770/"},
+    {"title": "Tirzepatide is an imbalanced and biased dual GIP and GLP-1 receptor agonist", "authors": "Willard FS, Douros JD, Gabe MB, et al.", "journal": "JCI Insight", "year": 2020, "url": "https://pubmed.ncbi.nlm.nih.gov/32730231/"},
+    {"title": "Tirzepatide versus semaglutide once weekly in patients with type 2 diabetes (SURPASS-2)", "authors": "Frías JP, Davies MJ, Rosenstock J, et al.", "journal": "N Engl J Med", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34170647/"},
+    {"title": "Tirzepatide once weekly for the treatment of obesity (SURMOUNT-1)", "authors": "Jastreboff AM, Aronne LJ, Ahmad NN, et al.", "journal": "N Engl J Med", "year": 2022, "url": "https://pubmed.ncbi.nlm.nih.gov/35658024/"},
+    {"title": "Structural determinants of dual incretin receptor agonism by tirzepatide", "authors": "Sun B, Willard FS, Feng D, et al.", "journal": "Proc Natl Acad Sci U S A", "year": 2022, "url": "https://pubmed.ncbi.nlm.nih.gov/35333651/"},
+    {"title": "Tirzepatide for the treatment of obstructive sleep apnea and obesity (SURMOUNT-OSA)", "authors": "Malhotra A, Grunstein RR, Fietze I, et al.", "journal": "N Engl J Med", "year": 2024, "url": "https://pubmed.ncbi.nlm.nih.gov/38912654/"},
+    {"title": "Tirzepatide for heart failure with preserved ejection fraction and obesity (SUMMIT)", "authors": "Packer M, Zile MR, Kramer CM, et al.", "journal": "N Engl J Med", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/39555826/"},
+    {"title": "Tirzepatide as compared with semaglutide for the treatment of obesity (SURMOUNT-5)", "authors": "Aronne LJ, Horn DB, le Roux CW, et al.", "journal": "N Engl J Med", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/40353578/"},
+    {"title": "Cardiovascular outcomes with tirzepatide versus dulaglutide in type 2 diabetes (SURPASS-CVOT)", "authors": "Nicholls SJ, Pavo I, Bhatt DL, et al.", "journal": "N Engl J Med", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/41406444/"}
+  ]
+}

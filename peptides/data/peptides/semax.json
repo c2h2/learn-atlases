@@ -1,0 +1,386 @@
+{
+  "slug": "semax",
+  "name": "Semax",
+  "aliases": [
+    "MEHFPGP",
+    "ACTH(4–7)-Pro-Gly-Pro",
+    "Met-Glu-His-Phe-Pro-Gly-Pro",
+    "Семакс"
+  ],
+  "category": "neuro",
+  "drug_class": "Neuropeptide; synthetic ACTH fragment analogue",
+  "subclass": "ACTH(4–7) extended with the C-terminal tripeptide Pro-Gly-Pro",
+  "status": "regional",
+  "status_note": "A prescription medicine in Russia and some other post-Soviet states, given as nasal drops for stroke and cognitive disorders; not approved or marketed in the US, EU or UK.",
+  "evidence": 2,
+  "evidence_note": "Russian clinical trials in ischaemic stroke and cognitive disorders report benefit, but they are small, largely single-country, mostly published in Russian and rarely blinded to Western standards; there are no independent multinational randomised trials and no ClinicalTrials.gov entries.",
+  "tagline": "A Russian nootropic nasal peptide built from a fragment of ACTH",
+  "summary": "Semax is a seven-amino-acid peptide — the ACTH(4–7) fragment Met-Glu-His-Phe with Pro-Gly-Pro added to its tail — designed at the Institute of Molecular Genetics in Moscow. The added tripeptide makes it resist peptidases, so it survives long enough to work when dripped into the nose. It is a prescription drug in Russia for stroke, cognitive disorders and optic nerve disease, and is sold internationally as a grey-market nootropic. In animals it raises BDNF; the human evidence outside Russia is essentially non-existent.",
+  "overview": [
+    "In the 1970s David de Wied's group in Utrecht showed that short fragments of adrenocorticotropic hormone — ACTH(4–10) and even ACTH(4–7) — improved learning in rats without any hormonal effect on the adrenal glands. The problem was that such fragments survive about a minute in the body. Soviet work at Moscow State University and the Institute of Molecular Genetics, prompted by a Ministry of Defence and Academy of Medical Sciences programme on adaptation to extreme conditions, attacked this by adding proline-rich tails, since most peptidases will not cut next to proline.",
+    "Attaching the C-terminal tripeptide Pro-Gly-Pro to ACTH(4–7) gave a heptapeptide that both lasted far longer and acted more strongly than the parent fragment. It was named Semax — from the Russian for 'seven amino acids' — and first appeared in the scientific literature in 1991. It is formulated as 0.1% and 1% intranasal drops, a route chosen because the peptide reaches the brain quickly along the olfactory and trigeminal pathways and would otherwise be destroyed in the gut.",
+    "In Russia Semax is a registered prescription medicine with a very broad label: acute ischaemic stroke and stroke recovery, transient ischaemic attack, chronic cerebrovascular disease, head injury, cognitive and memory disorders, optic nerve atrophy and glaucoma-related optic neuropathy, attention problems in children, and adaptation to stress. It was included on the Russian government's list of vital and essential medicines confirmed on 7 December 2011. Nothing comparable exists elsewhere: no regulator outside the post-Soviet region has reviewed it, and it does not appear on ClinicalTrials.gov at all.",
+    "The mechanism remains unsettled. Animal work consistently shows rapid increases in brain-derived neurotrophic factor and its receptor TrkB, effects on serotonergic and dopaminergic systems, and changes in the expression of hundreds of genes in ischaemic brain tissue. Semax also inhibits enkephalin-degrading enzymes and appears to interact with melanocortin receptors, possibly as an antagonist or partial agonist. Outside Russia its main life is as a nootropic sold online in nasal sprays and lyophilised vials, taken for focus, mood and recovery from concussion, on the strength of animal data and Russian clinical reports that Western regulators have never assessed."
+  ],
+  "mechanism": [
+    "The defining design feature is metabolic, not pharmacological. Peptidases cleave poorly next to proline, so appending Pro-Gly-Pro to the ACTH(4–7) core stretches the peptide's survival in the body by more than an order of magnitude compared with the native fragment, which is what makes a nasal drop a workable dosage form. Intranasal delivery then bypasses first-pass metabolism and gives rapid access to the brain.",
+    "Downstream, the best-replicated effect is neurotrophic. In rats Semax raises BDNF protein and BDNF and TrkB messenger RNA in the hippocampus and basal forebrain within an hour, and it binds specifically in basal forebrain tissue. In models of cerebral ischaemia it alters the expression of large sets of inflammatory and neuroprotective genes, with the pattern depending on how severely the region is damaged.",
+    "Two further actions are described but less certain. Semax inhibits enzymes that degrade enkephalins and other regulatory peptides, which may prolong endogenous opioid signalling; and, like other ACTH fragments, it interacts with melanocortin receptors, reported as competitive antagonism of α-MSH at MC4 and MC5 rather than agonism. No single receptor has been established as the route to its clinical effects."
+  ],
+  "origin": "Synthetic heptapeptide: residues 4–7 of adrenocorticotropic hormone (Met-Glu-His-Phe) extended at the C-terminus with the tripeptide Pro-Gly-Pro",
+  "discovery": {
+    "year": 1991,
+    "by": "Igor P. Ashmarin, Nikolai F. Myasoedov and colleagues",
+    "where": "Institute of Molecular Genetics, USSR/Russian Academy of Sciences, and Moscow State University, Moscow",
+    "note": "Developed from the 1970s onward under a Soviet programme on drugs to help people adapt to extreme conditions; first described in the scientific literature in 1991."
+  },
+  "first_human_year": null,
+  "first_approval": null,
+  "developer": "Institute of Molecular Genetics of the Russian Academy of Sciences, Moscow; manufactured by the innovation and production centre Peptogen",
+  "brands": [
+    {
+      "name": "Semax",
+      "company": "Peptogen (IMG RAS)",
+      "route": "Intranasal drops, 0.1% and 1%",
+      "use": "Ischaemic stroke and stroke recovery, transient ischaemic attack, chronic cerebrovascular disease, cognitive and memory disorders, optic nerve disease (Russian label)"
+    }
+  ],
+  "analogs": [
+    {
+      "name": "Selank",
+      "note": "The sister peptide from the same institute: a tuftsin analogue with the same Pro-Gly-Pro stabilising tail, registered in Russia as an anxiolytic."
+    },
+    {
+      "name": "ACTH(4–10)",
+      "note": "The de Wied fragment that inspired the design; behaviourally active but destroyed within about a minute in vivo."
+    },
+    {
+      "name": "Pro-Gly-Pro",
+      "note": "The C-terminal tripeptide alone, which is itself biologically active in Russian studies and is a metabolite of both Semax and Selank."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Brain-derived neurotrophic factor / TrkB signalling",
+      "gene": "BDNF",
+      "uniprot": "P23560",
+      "action": "Indirect: rapid induction of BDNF protein and BDNF/TrkB mRNA in rodent hippocampus and basal forebrain"
+    },
+    {
+      "name": "Melanocortin 4 receptor",
+      "gene": "MC4R",
+      "uniprot": "P32245",
+      "action": "Reported competitive antagonism of α-MSH; not established as the route to clinical effects"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "M",
+          "E",
+          "H",
+          "F",
+          "P",
+          "G",
+          "P"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "numbering_offset": 3,
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [],
+    "notation": "H-Met-Glu-His-Phe-Pro-Gly-Pro-OH",
+    "note": "All seven residues are standard L-amino acids with no chemical modification: the metabolic stability comes purely from the proline-rich C-terminal tripeptide, not from a synthetic group. Positions 1–4 correspond to residues 4–7 of ACTH, hence the numbering offset of 3; Semax is also commonly described as an ACTH(4–10) analogue, because the Pro-Gly-Pro tail replaces the Arg-Trp-Gly of that longer fragment."
+  },
+  "formula": "C37H51N9O10S",
+  "mw": 813.9,
+  "half_life": "Not reliably established; the Pro-Gly-Pro tail is reported to extend the parent fragment's lifetime roughly fiftyfold",
+  "half_life_hours": null,
+  "routes": [
+    "Intranasal drops or spray",
+    "Subcutaneous or intravenous injection in some Russian studies"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 9811102,
+    "notes": "No experimental structure of Semax has been deposited in the PDB, and a flexible seven-residue peptide with two prolines has no single stable conformation in solution, so the model shown here is predicted. No structure of Semax bound to any protein exists either, consistent with its unresolved receptor pharmacology."
+  },
+  "ids": {
+    "pubchem_cid": 9811102,
+    "cas": "80714-61-0",
+    "unii": "I5FAL2585H"
+  },
+  "wiki": "Semax",
+  "queries": {
+    "pubmed": "semax[tiab]",
+    "ctgov": ""
+  },
+  "uses": {
+    "approved": [
+      {
+        "use": "Ischaemic stroke and stroke recovery",
+        "detail": "Given as 1% nasal drops in the acute phase and during rehabilitation; Russian trials report faster neurological recovery and electrophysiological changes.",
+        "since": null,
+        "where": "Russia and some other post-Soviet states"
+      },
+      {
+        "use": "Cognitive and memory disorders",
+        "detail": "Labelled for cognitive impairment of various causes, chronic cerebrovascular disease, head injury and post-anaesthetic recovery, and in children for attention and learning difficulties.",
+        "since": null,
+        "where": "Russia"
+      },
+      {
+        "use": "Optic nerve disease",
+        "detail": "Used for optic atrophy, optic neuropathy and protection of the optic nerve in glaucoma — an indication with no counterpart in Western practice.",
+        "since": null,
+        "where": "Russia"
+      },
+      {
+        "use": "Adaptation to stress and heavy mental workload",
+        "detail": "The 0.1% strength is labelled for healthy people under extreme or monotonous working conditions, reflecting the drug's origins in a Soviet military-adaptation programme.",
+        "since": null,
+        "where": "Russia"
+      }
+    ],
+    "investigational": [
+      {
+        "use": "Alzheimer's disease",
+        "stage": "Preclinical",
+        "detail": "A 2025 Russian study reported that Semax and a derivative corrected pathological changes in an animal model; no human trial exists."
+      },
+      {
+        "use": "Spinal cord injury",
+        "stage": "Preclinical",
+        "detail": "A 2025 paper in the British Journal of Pharmacology described functional recovery in female mice, linked to the μ-opioid receptor gene Oprm1."
+      },
+      {
+        "use": "Depression and anxiety",
+        "stage": "Preclinical",
+        "detail": "Antidepressant-like and antistress effects are reported in rodent chronic-stress models, including a 2024 head-to-head with melanotan II."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Nootropic use outside Russia",
+        "detail": "Sold internationally through online vendors as nasal spray or lyophilised powder and taken for focus, memory, motivation, mood and recovery from concussion.",
+        "evidence": "No regulator outside the post-Soviet region has assessed it, and no randomised trial has been run in a Western population. Product identity and concentration are unverified, and the peptide has no established safe long-term exposure in healthy people."
+      },
+      {
+        "use": "Self-treatment after head injury",
+        "detail": "Promoted in biohacker communities for concussion recovery on the basis of the Russian stroke and trauma indications.",
+        "evidence": "The Russian trials are in stroke, not sports concussion, and were not blinded to modern standards."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1977,
+      "title": "ACTH fragments shown to act on behaviour",
+      "detail": "Through the 1970s David de Wied's group in Utrecht showed that short ACTH fragments such as ACTH(4–10) and ACTH(4–7) affect learning and behaviour without hormonal action on the adrenal glands — but survive only about a minute in the body.",
+      "kind": "science"
+    },
+    {
+      "year": 1978,
+      "title": "Soviet programme on adaptation peptides",
+      "detail": "At the end of the 1970s the USSR Ministry of Defence and Academy of Medical Sciences commissioned work on nootropic drugs for extreme conditions, carried out at Moscow State University and the Institute of Molecular Genetics; the chosen strategy was to add proline-rich tails that peptidases cannot cut.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1991,
+      "title": "Semax first described",
+      "detail": "The heptapeptide Met-Glu-His-Phe-Pro-Gly-Pro appeared in the literature, its name a contraction of the Russian for 'seven amino acids'.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1997,
+      "title": "Stroke trial in the acute phase",
+      "detail": "Gusev, Skvortsova and colleagues reported clinical and electrophysiological benefit from Semax in acute hemispheric ischaemic stroke.",
+      "kind": "trial"
+    },
+    {
+      "year": 1997,
+      "title": "Fifteen years of development reviewed",
+      "detail": "Ashmarin, Nezavibatko and Myasoedov summarised the programme that produced Semax in the Journal of Higher Nervous Activity.",
+      "kind": "science"
+    },
+    {
+      "year": 1999,
+      "title": "Neuroprotective mechanisms examined",
+      "detail": "A follow-up Russian study looked at the mechanisms behind the drug's reported effect in acute ischaemic stroke.",
+      "kind": "science"
+    },
+    {
+      "year": 2001,
+      "title": "Neurotrophin induction in glial cells",
+      "detail": "Shadrina and colleagues showed rapid induction of neurotrophin mRNAs in rat glial cultures, the first step in the BDNF story.",
+      "kind": "science"
+    },
+    {
+      "year": 2006,
+      "title": "BDNF mechanism established in rodents",
+      "detail": "Dolotov and colleagues showed that Semax binds specifically in rat basal forebrain and raises BDNF protein, and regulates BDNF and TrkB expression in the hippocampus.",
+      "kind": "science"
+    },
+    {
+      "year": 2011,
+      "date": "2011-12-07",
+      "title": "Added to Russia's vital medicines list",
+      "detail": "Semax was included in the Russian government's list of vital and essential medicines approved on 7 December 2011.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2018,
+      "title": "Stroke trial across disease stages",
+      "detail": "Gusev, Martynov and colleagues reported efficacy in patients at different stages of ischaemic stroke, again in the Russian neurological literature.",
+      "kind": "trial"
+    },
+    {
+      "year": 2025,
+      "title": "Alzheimer's model and ischaemia genomics",
+      "detail": "Russian groups published on Semax and a derivative in an animal model of Alzheimer's disease, and on the genes it regulates in rat brain regions with differing degrees of ischaemic damage.",
+      "kind": "science"
+    },
+    {
+      "year": 2025,
+      "date": "2025-07",
+      "title": "Spinal cord injury work reaches a Western journal",
+      "detail": "A study in the British Journal of Pharmacology reported that Semax promoted functional recovery after spinal cord injury in female mice through the μ-opioid receptor gene Oprm1.",
+      "kind": "science"
+    },
+    {
+      "year": 2026,
+      "title": "Listed among grey-market peptides",
+      "detail": "Reviews of therapeutic peptides in orthopaedics and gerontology named Semax among compounds circulating outside approved use in Western markets.",
+      "kind": "culture"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "Russia",
+      "status": "approved",
+      "detail": "Registered prescription medicine as 0.1% and 1% intranasal drops, with a broad neurological and ophthalmological label; on the government list of vital and essential medicines since 7 December 2011."
+    },
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Not an FDA-approved drug and not an approved dietary-supplement ingredient; imported and sold online labelled for research use."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "No marketing authorisation in any EU member state; available only through unregulated online supply."
+    },
+    {
+      "region": "UK",
+      "status": "not-approved",
+      "detail": "No MHRA authorisation."
+    },
+    {
+      "region": "WADA",
+      "status": "permitted",
+      "detail": "Semax is not named on the Prohibited List, and because it holds a Russian marketing authorisation it is not caught by the S0 non-approved-substances category. It has no recognised performance-enhancing use, and athletes using unapproved versions remain responsible for what a product actually contains."
+    }
+  ],
+  "pk": {
+    "half_life": "Not reliably established in published English-language sources",
+    "tmax": "Minutes after intranasal administration; Russian sources describe rapid appearance in plasma and brain",
+    "bioavailability": "Intranasal delivery is used to bypass gastrointestinal degradation and first-pass metabolism and to reach the brain directly",
+    "metabolism": "Sequential peptidase cleavage; the C-terminal Pro-Gly-Pro fragment is itself biologically active",
+    "excretion": "Not characterised in the international literature"
+  },
+  "dosing": [
+    {
+      "product": "Semax 0.1% and 1% nasal drops (Russia)",
+      "regimen": "Applied as nasal drops, with strength, number of drops and course length set by the Russian label according to indication; one drop is about 50 µL, so a drop of the 1% solution delivers roughly 500 µg and a drop of the 0.1% solution about 50 µg. Doses and course lengths differ substantially between indications and should follow the local prescribing information."
+    }
+  ],
+  "dosing_note": "The labelled regimen applies only in the countries where Semax is registered. Product sold to buyers elsewhere is not the licensed medicine and its concentration, purity and sterility are unverified; no dose has been established for healthy people seeking cognitive enhancement.",
+  "safety": {
+    "common": [
+      "Mild irritation of the nasal mucosa"
+    ],
+    "serious": [],
+    "warnings": [
+      "Safety data come almost entirely from Russian studies and post-marketing use; there is no independent pharmacovigilance outside the post-Soviet region",
+      "No long-term safety data exist for continuous use by healthy people as a nootropic",
+      "Material bought online is not the registered medicine: concentration, identity and sterility are unverified"
+    ],
+    "notes": "The Russian label describes the drug as well tolerated with few contraindications, and Russian sources report no recorded overdoses. That reassurance rests on a regulatory system and a literature that has not been independently audited, so the absence of reported harm is weaker evidence than it would be for a Western-approved medicine."
+  },
+  "market": null,
+  "facts": [
+    "The name is a contraction of the Russian for 'seven amino acids' (SEMj AminoKiSlot).",
+    "Its entire design trick is proline: peptidases cleave poorly next to proline residues, so bolting Pro-Gly-Pro onto a fragment that lasted about a minute produced one that lasts long enough to be a drug.",
+    "Semax is given as nose drops rather than by injection, which is unusual for a peptide drug and reflects the nose-to-brain route.",
+    "Despite three decades of use in Russia, ClinicalTrials.gov lists no trial of Semax at all."
+  ],
+  "related": [
+    "selank",
+    "dsip",
+    "epitalon",
+    "melanotan-ii"
+  ],
+  "references": [
+    {
+      "title": "Effectiveness of semax in acute period of hemispheric ischemic stroke (a clinical and electrophysiological study)",
+      "authors": "Gusev EI, Skvortsova VI, Miasoedov NF, et al.",
+      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova",
+      "year": 1997,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11517472/"
+    },
+    {
+      "title": "Rapid induction of neurotrophin mRNAs in rat glial cell cultures by Semax, an adrenocorticotropic hormone analog",
+      "authors": "Shadrina MI, Dolotov OV, Grivennikov IA, et al.",
+      "journal": "Neurosci Lett",
+      "year": 2001,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11457573/"
+    },
+    {
+      "title": "Semax, an analogue of adrenocorticotropin (4-10), binds specifically and increases levels of brain-derived neurotrophic factor protein in rat basal forebrain",
+      "authors": "Dolotov OV, Karpenko EA, Seredenina TS, et al.",
+      "journal": "J Neurochem",
+      "year": 2006,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16635254/"
+    },
+    {
+      "title": "Semax, an analog of ACTH(4-10) with cognitive effects, regulates BDNF and trkB expression in the rat hippocampus",
+      "authors": "Dolotov OV, Karpenko EA, Inozemtseva LS, et al.",
+      "journal": "Brain Res",
+      "year": 2006,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16996037/"
+    },
+    {
+      "title": "The efficacy of semax in the treatment of patients at different stages of ischemic stroke",
+      "authors": "Gusev EI, Martynov MY, Kostenko EV, et al.",
+      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova",
+      "year": 2018,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29798983/"
+    },
+    {
+      "title": "Semax peptide targets the μ opioid receptor gene Oprm1 to promote deubiquitination and functional recovery after spinal cord injury in female mice",
+      "authors": "Liu R, Chen Y, et al.",
+      "journal": "Br J Pharmacol",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40692165/"
+    },
+    {
+      "title": "The potential of the peptide drug Semax and its derivative for correcting pathological impairments in the animal model of Alzheimer's disease",
+      "authors": "Radchenko AI, Kuzubova EV, et al.",
+      "journal": "Acta Naturae",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41479572/"
+    },
+    {
+      "title": "Genes that associated with action of ACTH-like peptides with neuroprotective potential in rat brain regions with different degrees of ischemic damage",
+      "authors": "Filippenkov IB, et al.",
+      "journal": "Int J Mol Sci",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40650034/"
+    }
+  ]
+}

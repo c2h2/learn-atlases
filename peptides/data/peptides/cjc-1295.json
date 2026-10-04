@@ -1,0 +1,127 @@
+{
+  "slug": "cjc-1295",
+  "name": "CJC-1295",
+  "aliases": ["CJC-1295 with DAC", "DAC:GRF", "CJC 1295", "CJC1295"],
+  "category": "gh",
+  "drug_class": "Growth hormone-releasing hormone (GHRH) receptor agonist",
+  "subclass": "Albumin-binding (maleimide-derivatised) GHRH(1–29) analogue",
+  "status": "research",
+  "status_note": "Not approved in any country. ConjuChem terminated its only patient trial in 2006 and no later clinical development was registered; it is sold online as a 'research peptide', and an FDA advisory committee voted against allowing US pharmacy compounding in December 2024.",
+  "evidence": 3,
+  "evidence_note": "Published human data come from two small randomised, placebo-controlled dose-ranging studies in 66 healthy adults and a GH-pulsatility study (2005–2006). A phase 2 trial in HIV-associated abdominal obesity was terminated without results, so there are no efficacy data in any patient group, and none at all for the 'without DAC' variant.",
+  "tagline": "Long-acting GHRH analogue that binds albumin; abandoned in 2006, now sold online",
+  "summary": "CJC-1295 is a modified copy of the first 29 amino acids of growth hormone-releasing hormone (GHRH) with an added chemical 'Drug Affinity Complex' (DAC) that bonds to albumin in the blood, stretching its half-life from minutes to about a week. Developed by the Canadian company ConjuChem, it raised growth hormone (GH) and IGF-1 for days after a single injection in healthy adults, but development stopped after a participant died during a 2006 phase 2 trial. It is now sold online, and products under the name may contain either the DAC form or the short-acting 'CJC-1295 without DAC' (Mod GRF 1–29).",
+  "overview": [
+    "Natural GHRH and its active fragment GHRH(1–29) (sermorelin) are cleared from the blood within minutes, which limits their use as medicines. ConjuChem Biotechnologies of Montreal applied its 'Drug Affinity Complex' technology: a reactive maleimide group attached to a peptide that, after injection, bonds covalently to the single free cysteine (Cys34) of serum albumin. Jetté and colleagues compared three such derivatives of human GRF(1–29) and in 2005 selected CJC-1295 — GRF(1–29) with four amino-acid substitutions (D-Ala2, Gln8, Ala15, Leu27) plus an extra C-terminal lysine carrying a maleimidopropionyl group. In rats it was still present in plasma after 72 hours and circulated bound to albumin.",
+    "Two randomised, placebo-controlled studies in 66 healthy adults aged 21–61, published in 2006, showed that one subcutaneous injection raised mean GH levels 2- to 10-fold for 6 days or more and IGF-1 1.5- to 3-fold for 9–11 days, with an estimated half-life of 5.8–8.1 days; after repeated doses IGF-1 stayed above baseline for up to 28 days. A follow-up study found that GH was still released in pulses, with trough levels raised about 7.5-fold. In GHRH-knockout mice, daily injections normalised growth.",
+    "ConjuChem then tested once-weekly CJC-1295 for 12 weeks in people with HIV-associated abdominal (visceral) obesity. On 13 July 2006, about two hours after the 11th weekly dose, a participant in Argentina had a heart attack and died; the investigator considered undiagnosed coronary disease the most likely cause, but the company terminated the 192-patient study in August 2006 and no further trials were registered.",
+    "CJC-1295 has since circulated as a grey-market 'research peptide', often injected together with ipamorelin for body composition or anti-ageing purposes. Anti-doping chemists in Norway who analysed an unknown preparation submitted by police or customs in 2009 found the 29-residue peptide sold as CJC-1295, without the DAC lysine; 'CJC-1295 without DAC' (Mod GRF 1–29) is a different, short-acting compound with no published human studies. FDA listed CJC-1295 as a compounding safety risk in 2023, its advisory committee voted against every form in 2024, and it is named on the World Anti-Doping Agency's Prohibited List."
+  ],
+  "mechanism": [
+    "CJC-1295 is an agonist of the GHRH receptor on somatotroph cells of the anterior pituitary, the same receptor used by natural GHRH and sermorelin. Receptor activation raises cyclic AMP and stimulates GH synthesis and release; the GH then drives IGF-1 production, mainly in the liver. Because it acts on the pituitary rather than replacing GH, GH continued to be released in pulses during continuous stimulation, with the largest change being a rise in baseline (trough) levels.",
+    "The long action comes from the Drug Affinity Complex: after subcutaneous injection the maleimide on the added lysine reacts with the free thiol of albumin's Cys34, forming a stable peptide–albumin conjugate that escapes rapid kidney clearance and enzymatic breakdown. The D-Ala2 substitution adds protection against dipeptidyl peptidase-4, which normally inactivates GHRH by cutting after residue 2."
+  ],
+  "origin": "Synthetic analogue of human growth hormone-releasing hormone residues 1–29, with an added albumin-reactive maleimidopropionyl-lysine (ConjuChem's Drug Affinity Complex)",
+  "discovery": {"year": 2005, "by": "L. Jetté, D. P. Bridon and colleagues, ConjuChem Biotechnologies", "where": "Montreal, Canada", "note": "Chosen from three maleimido derivatives of human GRF(1–29) as the longest-acting in rats; described in Endocrinology in 2005."},
+  "first_human_year": 2005,
+  "first_approval": null,
+  "developer": "ConjuChem Biotechnologies",
+  "brands": [],
+  "analogs": [
+    {"name": "Sermorelin (GHRH 1–29)", "note": "The unmodified 29-residue parent fragment; its plasma disappearance half-time in men is about 4 minutes."},
+    {"name": "Mod GRF 1–29 ('CJC-1295 without DAC')", "note": "Carries the same four substitutions (D-Ala2, Gln8, Ala15, Leu27) but ends at Arg29-NH2 with no maleimido-lysine, so it does not bind albumin and is short-acting; no peer-reviewed human studies."},
+    {"name": "Tesamorelin", "note": "Full-length GHRH(1–44) with an N-terminal trans-3-hexenoyl group; the only GHRH analogue currently approved (Egrifta, US)."}
+  ],
+  "targets": [
+    {"name": "Growth hormone-releasing hormone receptor", "gene": "GHRHR", "uniprot": "Q02643", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["Y", "a", "D", "A", "I", "F", "T", "Q", "S", "Y", "R", "K", "V", "L", "A", "Q", "L", "S", "A", "R", "K", "L", "L", "Q", "D", "I", "L", "S", "R", "K"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A2", "type": "d-amino", "label": "D-Ala2 replaces L-Ala2; it protects the N-terminus from dipeptidyl peptidase-4 and roughly halves the metabolic clearance of GHRH(1–29) in men", "short": "D-Ala"},
+      {"at": "A8", "type": "other", "label": "Gln8 replaces Asn8, whose deamidation inactivates GHRH analogues in solution", "short": "N8Q"},
+      {"at": "A15", "type": "other", "label": "Ala15 replaces Gly15, a substitution that increases potency in vitro", "short": "G15A"},
+      {"at": "A27", "type": "other", "label": "Leu27 replaces the oxidation-prone Met27", "short": "M27L"},
+      {"at": "A30", "type": "albumin-binder", "label": "Added C-terminal Lys30 whose side-chain amine carries a 3-maleimidopropionyl group (the Drug Affinity Complex); the maleimide bonds covalently to Cys34 of serum albumin after injection. The C-terminus is an amide.", "short": "DAC"}
+    ],
+    "notation": "H-Tyr-D-Ala-Asp-Ala-Ile-Phe-Thr-Gln-Ser-Tyr-Arg-Lys-Val-Leu-Ala-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Leu-Ser-Arg-Lys(ε-3-maleimidopropionyl)-NH2",
+    "note": "Residues are numbered as in native GHRH; Lys30 is an addition. 'CJC-1295 without DAC' (Mod GRF 1–29, also called tetrasubstituted GRF 1–29) is residues 1–29 of this sequence ending in Arg29-NH2, with no Lys30 or maleimide; the two are often confused in marketing and even in some papers."
+  },
+  "formula": "C165H269N47O46",
+  "mw": 3647.19,
+  "half_life": "≈ 6–8 days (5.8–8.1 d, DAC form, healthy adults)",
+  "half_life_hours": 168,
+  "routes": ["Subcutaneous injection"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 91971820,
+    "notes": "No experimental structure of CJC-1295 exists, so the model shown is predicted and cannot represent the albumin conjugate. The receptor-bound structure of its parent hormone, native GHRH(1–44), has been solved by cryo-EM (PDB 7CZ5, chain P)."
+  },
+  "ids": {"pubchem_cid": 91971820, "cas": "446262-90-4", "unii": "62RC32V9N7"},
+  "wiki": "CJC-1295",
+  "queries": {"pubmed": "(\"CJC-1295\"[tiab] OR \"CJC 1295\"[tiab] OR CJC1295[tiab] OR \"DAC:GRF\"[tiab])", "ctgov": "CJC-1295 OR CJC1295"},
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "HIV-associated abdominal (visceral) obesity", "stage": "Phase 2 — terminated (2006)", "detail": "ConjuChem's randomised, placebo-controlled trial of once-weekly injections for 12 weeks (NCT00267527) had enrolled 192 patients when it was terminated after a participant died of a heart attack; no results were published."},
+      {"use": "Growth hormone deficiency", "stage": "Preclinical", "detail": "Daily injections normalised growth and body composition in GHRH-knockout mice (2006), but no trials in GH-deficient patients were reported."}
+    ],
+    "off_label": [
+      {"use": "Body composition, anti-ageing and 'recovery'", "detail": "Sold online as a 'research peptide' and promoted, often in combination with ipamorelin, to raise GH and IGF-1 for fat loss and muscle gain. Products may contain either the long-acting DAC form or the short-acting Mod GRF 1–29.", "evidence": "No controlled trials in these uses. Human data are limited to short pharmacokinetic studies of the DAC form in healthy adults; none exist for the non-DAC form."},
+      {"use": "Doping", "detail": "Prohibited by WADA as a GHRH analogue; anti-doping laboratories have identified it in seized products since at least 2009 and developed detection methods.", "evidence": "No evidence of a performance benefit in humans."}
+    ]
+  },
+  "history": [
+    {"year": 1982, "date": "1982-11", "title": "GHRH isolated", "detail": "Groups led by Roger Guillemin and Wylie Vale isolated growth hormone-releasing hormone from pancreatic tumours that had caused acromegaly; its first 29 residues later became sermorelin, the template for CJC-1295.", "kind": "science"},
+    {"year": 1994, "date": "1994-10", "title": "D-Ala2 slows clearance", "detail": "A study in men showed that swapping Ala2 for D-Ala halved the metabolic clearance of GHRH(1–29)-NH2 and prolonged its plasma half-time.", "kind": "science"},
+    {"year": 2005, "date": "2005-04", "title": "CJC-1295 identified", "detail": "ConjuChem scientists reported that a maleimide-derivatised, tetrasubstituted GRF(1–29) bound to albumin and stayed in rat plasma beyond 72 hours.", "kind": "discovery"},
+    {"year": 2005, "date": "2005-12", "title": "Phase 2 trial begins", "detail": "ConjuChem started a placebo-controlled trial in HIV patients with visceral obesity (NCT00267527).", "kind": "trial"},
+    {"year": 2005, "date": "2005-12-13", "title": "First human data published", "detail": "Teichman et al. reported that single injections raised GH for 6 days or more and IGF-1 for 9–11 days in healthy adults, with a half-life of 5.8–8.1 days.", "kind": "trial"},
+    {"year": 2006, "date": "2006-07-14", "title": "Death in phase 2 trial", "detail": "ConjuChem reported that a participant in Argentina died of a heart attack about two hours after the 11th weekly dose; the investigator judged pre-existing coronary disease the most likely cause.", "kind": "safety"},
+    {"year": 2006, "date": "2006-08-08", "title": "Trial terminated", "detail": "ConjuChem terminated the fully enrolled 192-patient study and said it was re-evaluating the drug's development; no further trials were registered.", "kind": "trial"},
+    {"year": 2006, "date": "2006-10", "title": "GH pulses preserved", "detail": "Ionescu and Frohman showed that continuous stimulation by CJC-1295 kept GH pulsatility intact while raising trough GH about 7.5-fold and IGF-1 by 45%.", "kind": "science"},
+    {"year": 2009, "title": "Found in seized products", "detail": "An unknown preparation submitted by Norwegian police or customs was identified by anti-doping chemists as the 29-residue peptide marketed as CJC-1295 (reported in 2010).", "kind": "regulatory"},
+    {"year": 2023, "date": "2023-09-29", "title": "FDA 'significant safety risk' listing", "detail": "FDA added CJC-1295 to Category 2 of the section 503A bulk-substance list, effectively barring pharmacy compounding.", "kind": "regulatory"},
+    {"year": 2024, "date": "2024-09", "title": "Nomination withdrawn", "detail": "After its nominator withdrew the compounding nomination, FDA removed CJC-1295 from Category 2 but kept it on the agenda of its advisory committee.", "kind": "regulatory"},
+    {"year": 2024, "date": "2024-12-04", "title": "Advisory committee rejects all forms", "detail": "FDA's Pharmacy Compounding Advisory Committee voted against adding CJC-1295 free base (0–13), acetate (1–12) and the three DAC forms (0–13 each) to the 503A bulks list.", "kind": "regulatory"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "not-approved", "detail": "Never approved. Placed in 503A Category 2 (significant safety risks) in September 2023; after the nomination was withdrawn, the Pharmacy Compounding Advisory Committee voted on 4 December 2024 against adding any of five forms (free base, acetate, DAC free base, DAC acetate, DAC trifluoroacetate) to the 503A bulks list. FDA lists it among withdrawn nominations with safety concerns, including immunogenicity risk."},
+    {"region": "WADA", "status": "prohibited", "detail": "Named as a GHRH analogue under S2.2.4 of the 2026 Prohibited List; prohibited at all times."}
+  ],
+  "pk": {
+    "half_life": "5.8–8.1 days after single subcutaneous doses in healthy adults; drug measurable for 10–13 days",
+    "metabolism": "Circulates mainly as a covalent conjugate with serum albumin (shown in rats); the conjugate resists dipeptidyl peptidase-4",
+    "excretion": "Not characterised in humans"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose. Doses were tested only in short pharmacokinetic studies in healthy adults (30–250 µg/kg); regimens circulating online, including combinations with ipamorelin, are not based on clinical trials.",
+  "safety": {
+    "common": ["Injection-site reactions (pain, redness, swelling, induration; about 70% after single doses, all subjects after repeated doses)", "Headache", "Diarrhoea or loose stools", "Flushing and warmth, sometimes with transient low blood pressure (dose-dependent)", "Local urticarial rash at the injection site", "Nausea or abdominal pain"],
+    "serious": ["One death from myocardial infarction during the 2006 phase 2 trial; the investigator attributed it to pre-existing coronary artery disease, but the trial was terminated"],
+    "warnings": ["Not approved: grey-market products may contain a different peptide (often Mod GRF 1–29) or impurities", "FDA cites a potential for immune reactions (immunogenicity)", "Sustained elevation of GH and IGF-1 carries theoretical risks (fluid retention, glucose intolerance, growth-promoting effects) seen with GH itself; long-term effects are unknown", "Prohibited in sport at all times (WADA S2)"],
+    "notes": "In the healthy-volunteer studies adverse events were mild to moderate and more frequent at 125–250 µg/kg; no significant antibody formation or changes in glucose, liver tests or ECGs were seen. There are no long-term or patient safety data."
+  },
+  "market": null,
+  "facts": [
+    "The maleimide on CJC-1295 is designed to react with the single free cysteine (Cys34) of human serum albumin, turning albumin into a carrier.",
+    "One injection kept IGF-1 raised for 9–11 days in healthy adults, compared with a plasma half-time of about 4 minutes for unmodified GHRH(1–29).",
+    "'CJC-1295 without DAC' is not a form of CJC-1295 but a separate peptide, Mod GRF 1–29, with no published human studies.",
+    "FDA's advisory committee voted separately on five salt and DAC forms in December 2024 and rejected all of them."
+  ],
+  "related": ["sermorelin", "tesamorelin", "ipamorelin", "ghrp-2", "ghrp-6", "semaglutide"],
+  "references": [
+    {"title": "Human growth hormone-releasing factor (hGRF)1-29-albumin bioconjugates activate the GRF receptor on the anterior pituitary in rats: identification of CJC-1295 as a long-lasting GRF analog", "authors": "Jetté L, Léger R, Thibaudeau K, et al.", "journal": "Endocrinology", "year": 2005, "url": "https://pubmed.ncbi.nlm.nih.gov/15817669/"},
+    {"title": "Prolonged stimulation of growth hormone (GH) and insulin-like growth factor I secretion by CJC-1295, a long-acting analog of GH-releasing hormone, in healthy adults", "authors": "Teichman SL, Neale A, Lawrence B, et al.", "journal": "J Clin Endocrinol Metab", "year": 2006, "url": "https://pubmed.ncbi.nlm.nih.gov/16352683/"},
+    {"title": "Pulsatile secretion of growth hormone (GH) persists during continuous stimulation by CJC-1295, a long-acting GH-releasing hormone analog", "authors": "Ionescu M, Frohman LA", "journal": "J Clin Endocrinol Metab", "year": 2006, "url": "https://pubmed.ncbi.nlm.nih.gov/17018654/"},
+    {"title": "Once-daily administration of CJC-1295, a long-acting growth hormone-releasing hormone (GHRH) analog, normalizes growth in the GHRH knockout mouse", "authors": "Alba M, Fintini D, Sagazio A, et al.", "journal": "Am J Physiol Endocrinol Metab", "year": 2006, "url": "https://pubmed.ncbi.nlm.nih.gov/16822960/"},
+    {"title": "Incorporation of D-Ala2 in growth hormone-releasing hormone-(1-29)-NH2 increases the half-life and decreases metabolic clearance in normal men", "authors": "Soule S, King JA, Millar RP", "journal": "J Clin Endocrinol Metab", "year": 1994, "url": "https://pubmed.ncbi.nlm.nih.gov/7962295/"},
+    {"title": "Identification of CJC-1295, a growth-hormone-releasing peptide, in an unknown pharmaceutical preparation", "authors": "Henninge J, Pepaj M, Hullstein I, et al.", "journal": "Drug Test Anal", "year": 2010, "url": "https://pubmed.ncbi.nlm.nih.gov/21204297/"},
+    {"title": "Final summary minutes of the Pharmacy Compounding Advisory Committee meeting, 4 December 2024 (AOD-9604, CJC-1295, thymosin alpha-1)", "authors": "US Food and Drug Administration", "journal": "FDA", "year": 2025, "url": "https://www.fda.gov/media/185642/download"},
+    {"title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration", "authors": "Dominikowski A, Rękoś Z, Olejarz M, et al.", "journal": "Front Endocrinol (Lausanne)", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42395176/"}
+  ]
+}

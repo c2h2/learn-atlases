@@ -1,0 +1,130 @@
+{
+  "slug": "ghrp-6",
+  "name": "GHRP-6",
+  "aliases": ["Growth hormone-releasing peptide-6", "Growth hormone-releasing hexapeptide", "SK&F 110679", "[His1,Lys6]-GHRP", "Hexapeptide-2"],
+  "category": "gh",
+  "drug_class": "Ghrelin receptor (GHS-R1a) agonist",
+  "subclass": "Synthetic hexapeptide growth hormone secretagogue; prototype of the GHRP family",
+  "status": "research",
+  "status_note": "Never approved in any country. A research tool since the 1980s that is now sold online as a 'research peptide'; FDA lists it as a significant safety risk for compounding by outsourcing facilities, and WADA prohibits it.",
+  "evidence": 2,
+  "evidence_note": "Human data come from small physiological studies in healthy volunteers and GH-deficient patients (from 1989) and one pharmacokinetic study in nine men; no controlled trial of any therapeutic use has been published. The cardioprotective and tissue-repair effects are from animal studies.",
+  "tagline": "The prototype GH-releasing hexapeptide whose receptor turned out to be ghrelin's",
+  "summary": "GHRP-6 is a six-amino-acid synthetic peptide, reported in 1984 by Cyril Bowers and colleagues, that strongly stimulates growth hormone (GH) release through a receptor different from that of the hypothalamic hormone GHRH. The search for that receptor led to its cloning in 1996 and to the discovery in 1999 of its natural hormone, ghrelin. GHRP-6 was never developed into a medicine; it is sold online for bodybuilding and appetite stimulation and is banned in sport.",
+  "overview": [
+    "GHRP-6 was designed rather than discovered. Frank Momany and Cyril Bowers had noticed that analogues of the opioid peptide Met-enkephalin containing D-Trp or D-Phe weakly released GH from rat pituitary cells. Using conformational energy calculations and repeated rounds of synthesis they produced increasingly potent peptides (published in 1981), and in 1984 described the hexapeptide His-D-Trp-Ala-Trp-D-Phe-Lys-NH2. It released GH specifically — without LH, FSH, TSH or prolactin — in rats, monkeys, lambs and calves, acted within 2 minutes of intravenous injection and increased weight gain in young rats.",
+    "The first human study, run by Smith Kline & French under the code SK&F 110679 and published in 1989, found dose-dependent GH release in healthy men with no change in LH, FSH, TSH or ACTH. In 1990 Bowers and Michael Thorner showed that GHRP-6 and GHRH together released GH synergistically, evidence that the peptide worked through a separate, unknown receptor system. Merck cloned that receptor — the growth hormone secretagogue receptor — in 1996, and in 1999 Masayasu Kojima and Kenji Kangawa identified its natural ligand in the stomach: ghrelin. In 2021 a cryo-EM structure captured GHRP-6 bound to the ghrelin receptor.",
+    "GHRP-6 remained a laboratory and clinical-research tool. Studies documented a strong appetite-stimulating effect and modest rises in cortisol and prolactin. A research programme at Havana's Center for Genetic Engineering and Biotechnology has studied it as a cytoprotective agent in animal models of heart attack and other organ injury, and in 2013 reported a pharmacokinetic study in nine healthy men that found an elimination half-life of about 2.5 hours; no therapeutic trial has been registered on ClinicalTrials.gov.",
+    "GHRP-6 is sold by online 'research peptide' vendors and appears in self-administration protocols for muscle gain and appetite. FDA placed it in Category 2 (significant safety risks) of its list for outsourcing-facility compounding in 2023, and pharmacy (503A) nominations were judged to lack adequate support. The World Anti-Doping Agency names GHRP-6 among prohibited GH-releasing peptides, and doping laboratories screen urine for its metabolites."
+  ],
+  "mechanism": [
+    "GHRP-6 is an agonist of the growth hormone secretagogue receptor type 1a (GHS-R1a), now known as the ghrelin receptor, which is expressed on pituitary somatotrophs and in the hypothalamus. It acts at both the pituitary and the hypothalamus to trigger and amplify pulsatile GH release, works synergistically with GHRH, and is inhibited by somatostatin.",
+    "Unlike the more selective ipamorelin, GHRP-6 also raises prolactin and ACTH/cortisol at higher doses, and because ghrelin receptors in the hypothalamus drive hunger it is a strong appetite stimulant. In the 2021 cryo-EM structure (PDB 7F9Z) the peptide occupies the ligand-binding pocket of the active, Gq-coupled receptor."
+  ],
+  "origin": "Synthetic peptide designed from GH-releasing analogues of Met-enkephalin; not found in nature",
+  "discovery": {"year": 1984, "by": "Cyril Y. Bowers, Frank A. Momany and colleagues", "where": "Tulane University, New Orleans, US", "note": "The design programme began with enkephalin analogues (published 1981); the hexapeptide was reported in Endocrinology in May 1984 as [His1,Lys6]GHRP."},
+  "first_human_year": 1989,
+  "first_approval": null,
+  "developer": "Tulane University (Cyril Bowers); tested in humans by Smith Kline & French as SK&F 110679",
+  "brands": [],
+  "analogs": [
+    {"name": "GHRP-1", "note": "Ala-His-D-2Nal-Ala-Trp-D-Phe-Lys-NH2; a heptapeptide from the same programme and the parent of ipamorelin."},
+    {"name": "GHRP-2 (pralmorelin)", "note": "D-Ala-D-2Nal-Ala-Trp-D-Phe-Lys-NH2; more potent in humans and approved in Japan as a diagnostic (2004)."},
+    {"name": "Hexarelin (examorelin)", "note": "His-D-2-methyl-Trp-Ala-Trp-D-Phe-Lys-NH2; GHRP-6 with a methylated D-Trp."},
+    {"name": "Ipamorelin", "note": "Aib-His-D-2Nal-D-Phe-Lys-NH2; a pentapeptide that releases GH without raising ACTH or cortisol."}
+  ],
+  "targets": [
+    {"name": "Growth hormone secretagogue receptor type 1 (ghrelin receptor)", "gene": "GHSR", "uniprot": "Q92847", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["H", "w", "A", "W", "f", "K"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A2", "type": "d-amino", "label": "D-Trp2; the D-configuration comes from the [D-Trp2]-Met-enkephalin amide analogues from which the series was designed", "short": "D-Trp"},
+      {"at": "A5", "type": "d-amino", "label": "D-Phe5, a second D-amino acid shared by the GHRP family", "short": "D-Phe"},
+      {"at": "A6", "type": "amidation", "label": "C-terminal lysine amide (Lys-NH2)", "short": "NH2"}
+    ],
+    "notation": "H-His-D-Trp-Ala-Trp-D-Phe-Lys-NH2",
+    "note": "Hexapeptide with two D-amino acids. Some PubChem records (e.g. CID 4345065) omit the stereochemistry; CID 9919153 has the correct D/L configuration."
+  },
+  "formula": "C46H56N12O6",
+  "mw": 873.01,
+  "half_life": "≈ 2.5 hours (elimination phase after an intravenous bolus; distribution phase about 8 minutes)",
+  "half_life_hours": 2.5,
+  "routes": ["Intravenous injection (research studies)", "Subcutaneous injection (grey-market use)", "Oral and intranasal (experimental)"],
+  "structure": {
+    "pdb": [
+      {"id": "7F9Z", "title": "GHRP-6-bound ghrelin receptor in complex with Gq", "method": "Cryo-EM", "resolution": 3.2, "year": 2021, "peptide_chain": "C", "note": "GHRP-6 (sequence HWAWFK plus the C-terminal amide) in the ligand pocket of the active receptor; the PDB entity description for chain C is mislabelled"}
+    ],
+    "pubchem_cid": 9919153,
+    "notes": "The same 2021 study also solved the receptor bound to its natural hormone, ghrelin (PDB 7F9Y), allowing the synthetic and natural agonists to be compared."
+  },
+  "ids": {"pubchem_cid": 9919153, "cas": "87616-84-0", "chembl": "CHEMBL105462", "unii": "4H7N4I6X6A"},
+  "wiki": "GHRP-6",
+  "queries": {"pubmed": "(\"GHRP-6\"[tiab] OR \"GHRP 6\"[tiab] OR \"growth hormone-releasing peptide-6\"[tiab] OR \"growth hormone releasing peptide 6\"[tiab] OR \"growth hormone-releasing hexapeptide\"[tiab] OR \"SK&F 110679\"[tiab])", "ctgov": ""},
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Cytoprotection after heart attack and other organ injury", "stage": "Preclinical; phase 1 pharmacokinetics only", "detail": "A Cuban-led programme has reported reduced infarct damage and remodelling, and protection against lung and kidney injury, in rodent models; human data are limited to a 2013 pharmacokinetic study in nine healthy men."},
+      {"use": "Probing GH reserve", "stage": "Research use (1990s)", "detail": "Given alone or with GHRH as an experimental stimulus of GH secretion in physiological and diagnostic studies, including oral dosing in children with GH deficiency."}
+    ],
+    "off_label": [
+      {"use": "Bodybuilding and appetite stimulation", "detail": "Sold online as a 'research peptide' and used in self-administration protocols to raise GH, often noted for its strong effect on hunger.", "evidence": "No controlled trials of body composition or performance; effects on cortisol, prolactin and blood glucose are documented, and product quality is not assured."},
+      {"use": "Doping in sport", "detail": "Prohibited at all times by WADA; anti-doping laboratories detect GHRP-6 and its metabolites in urine.", "evidence": "No evidence of a performance benefit in humans."}
+    ]
+  },
+  "history": [
+    {"year": 1981, "date": "1981-01", "title": "Enkephalin-based design", "detail": "Momany, Bowers and colleagues reported synthetic peptides derived from D-amino-acid Met-enkephalin analogues that released GH in vitro about 1,000 times more strongly than their starting compounds.", "kind": "science"},
+    {"year": 1984, "date": "1984-05", "title": "GHRP-6 described", "detail": "Bowers et al. reported His-D-Trp-Ala-Trp-D-Phe-Lys-NH2, which released GH specifically in several species and increased weight gain in young rats.", "kind": "discovery"},
+    {"year": 1989, "date": "1989-07", "title": "First human study", "detail": "Smith Kline & French gave SK&F 110679 to 17 healthy men and found a selective, dose-dependent rise in GH.", "kind": "trial"},
+    {"year": 1990, "date": "1990-04", "title": "Synergy with GHRH", "detail": "Bowers and Thorner showed that GHRP-6 and GHRH together release GH synergistically in men, pointing to a separate receptor system.", "kind": "trial"},
+    {"year": 1996, "date": "1996-08-16", "title": "Receptor cloned", "detail": "Merck researchers cloned the G-protein-coupled growth hormone secretagogue receptor targeted by GHRP-6 and related synthetic secretagogues.", "kind": "science"},
+    {"year": 1999, "date": "1999-12-09", "title": "Ghrelin discovered", "detail": "Kojima, Kangawa and colleagues identified ghrelin, an octanoylated stomach peptide, as the natural ligand of the receptor.", "kind": "science"},
+    {"year": 2013, "date": "2013-01", "title": "Pharmacokinetics in healthy men", "detail": "Havana researchers reported an elimination half-life of about 2.5 hours after intravenous doses in nine volunteers.", "kind": "trial"},
+    {"year": 2015, "date": "2015-10", "title": "Doping-control markers", "detail": "Anti-doping chemists characterised the urinary metabolites of GHRP-6 and other GHRPs after intranasal dosing, for use in doping control.", "kind": "science"},
+    {"year": 2021, "date": "2021-08-20", "title": "Receptor-bound structure", "detail": "A cryo-EM structure showed GHRP-6 bound to the ghrelin receptor in complex with its Gq protein (PDB 7F9Z).", "kind": "science"},
+    {"year": 2023, "date": "2023-09-29", "title": "FDA safety-risk listing", "detail": "FDA placed GHRP-6 in Category 2 of its bulk-substance list for outsourcing facilities, citing immunogenicity and effects on cortisol and blood glucose.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-03-12", "title": "Post-infarct study in rats", "detail": "A Chinese–Cuban team reported that GHRP-6 reduced scarring and improved heart function after permanent coronary ligation in rats.", "kind": "science"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "not-approved", "detail": "Never approved. In Category 3 (nominated without adequate support) of FDA's 503A bulk-substance list and, since 29 September 2023, in Category 2 (significant safety risks) of the 503B list for outsourcing facilities."},
+    {"region": "WADA", "status": "prohibited", "detail": "Named among growth hormone-releasing peptides under S2.2.4 of the 2026 Prohibited List; prohibited at all times."}
+  ],
+  "pk": {
+    "half_life": "Distribution half-life about 7.6 minutes and elimination half-life about 2.5 hours after intravenous bolus doses in nine healthy men",
+    "tmax": "During a 30-minute intravenous infusion, GH peaked at about 45 minutes and returned to baseline by 210 minutes",
+    "metabolism": "Peptidase breakdown; urinary metabolites are used as doping-control markers",
+    "excretion": "Metabolites are excreted in urine"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose. Doses used in physiological studies were research doses, and the regimens circulating online are not based on clinical trials.",
+  "safety": {
+    "common": ["Increased hunger and food intake", "Transient rises in prolactin and cortisol at higher doses"],
+    "serious": [],
+    "warnings": ["Not approved: identity, purity and sterility of grey-market products are not assured", "FDA cites possible immunogenicity from aggregation and peptide-related impurities, and limited data suggesting effects on cortisol and blood glucose", "Prohibited in sport at all times (WADA S2)"],
+    "notes": "Single doses were well tolerated in small studies of healthy volunteers, with no serious adverse events reported, but there are no data on repeated or long-term use in humans."
+  },
+  "market": null,
+  "facts": [
+    "GHRP-6 was designed step by step from analogues of the opioid peptide Met-enkephalin, guided by computer-calculated peptide conformations.",
+    "Its receptor was cloned in 1996, three years before the natural hormone that activates it, ghrelin, was discovered.",
+    "The peptide contains two D-amino acids (D-Trp and D-Phe), a legacy of the enkephalin analogues it was designed from.",
+    "FDA's substance registry (GSRS) lists it under the name 'Hexapeptide-2'."
+  ],
+  "related": ["ghrp-2", "ipamorelin", "sermorelin", "cjc-1295", "tesamorelin"],
+  "references": [
+    {"title": "Design, synthesis, and biological activity of peptides which release growth hormone in vitro", "authors": "Momany FA, Bowers CY, Reynolds GA, et al.", "journal": "Endocrinology", "year": 1981, "url": "https://pubmed.ncbi.nlm.nih.gov/6109621/"},
+    {"title": "On the in vitro and in vivo activity of a new synthetic hexapeptide that acts on the pituitary to specifically release growth hormone", "authors": "Bowers CY, Momany FA, Reynolds GA, et al.", "journal": "Endocrinology", "year": 1984, "url": "https://pubmed.ncbi.nlm.nih.gov/6714155/"},
+    {"title": "Effect of a new synthetic hexapeptide to selectively stimulate growth hormone release in healthy human subjects", "authors": "Ilson BE, Jorkasky DK, Curnow RT, et al.", "journal": "J Clin Endocrinol Metab", "year": 1989, "url": "https://pubmed.ncbi.nlm.nih.gov/2543692/"},
+    {"title": "Growth hormone (GH)-releasing peptide stimulates GH release in normal men and acts synergistically with GH-releasing hormone", "authors": "Bowers CY, Reynolds GA, Durham D, et al.", "journal": "J Clin Endocrinol Metab", "year": 1990, "url": "https://pubmed.ncbi.nlm.nih.gov/2108187/"},
+    {"title": "A receptor in pituitary and hypothalamus that functions in growth hormone release", "authors": "Howard AD, Feighner SD, Cully DF, et al.", "journal": "Science", "year": 1996, "url": "https://pubmed.ncbi.nlm.nih.gov/8688086/"},
+    {"title": "Ghrelin is a growth-hormone-releasing acylated peptide from stomach", "authors": "Kojima M, Hosoda H, Date Y, et al.", "journal": "Nature", "year": 1999, "url": "https://pubmed.ncbi.nlm.nih.gov/10604470/"},
+    {"title": "Pharmacokinetic study of Growth Hormone-Releasing Peptide 6 (GHRP-6) in nine male healthy volunteers", "authors": "Cabrales A, Gil J, Fernández E, et al.", "journal": "Eur J Pharm Sci", "year": 2013, "url": "https://pubmed.ncbi.nlm.nih.gov/23099431/"},
+    {"title": "Determination of growth hormone releasing peptides metabolites in human urine after nasal administration of GHRP-1, GHRP-2, GHRP-6, Hexarelin, and Ipamorelin", "authors": "Semenistaya E, Zvereva I, Thomas A, et al.", "journal": "Drug Test Anal", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/25869809/"},
+    {"title": "Molecular recognition of an acyl-peptide hormone and activation of ghrelin receptor", "authors": "Wang Y, Guo S, Zhuang Y, et al.", "journal": "Nat Commun", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34417468/"},
+    {"title": "Growth Hormone-Releasing Peptide-6 (GHRP-6) Ameliorates Post-Infarct Ventricular Remodeling and Systolic Dysfunction in a Model of Permanent Coronary Ligation", "authors": "Wang L, Rodriguez-Ulloa A, Berlanga-Acosta J, et al.", "journal": "Pharmaceuticals (Basel)", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/41901314/"}
+  ]
+}

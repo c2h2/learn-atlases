@@ -1,0 +1,218 @@
+{
+  "slug": "complex-analysis",
+  "title": "Complex Analysis",
+  "full_title": "Complex Analysis",
+  "area": "analysis",
+  "level": 2,
+  "order": 110,
+  "tagline": "Calculus with complex numbers: analytic functions, contour integrals, residues and conformal maps",
+  "summary": "Differentiability over the complex numbers turns out to be extraordinarily powerful. This course develops analytic functions, contour integration and Cauchy’s theorem, power and Laurent series, the residue theorem with its many applications, and conformal mappings.",
+  "overview": [
+    "Complex analysis is calculus for functions of a complex variable. Its central definition looks innocent — $f$ is differentiable at $z_0$ if the difference quotient $\\frac{f(z_0+h)-f(z_0)}{h}$ has a limit as $h\\to0$, where $h$ is now a complex number that may approach $0$ from any direction — but it has astonishing consequences. A function that is complex differentiable on an open set is automatically differentiable infinitely often, is the sum of its Taylor series, is determined everywhere by its values on any small disc, and integrates to zero around closed curves. Nothing of the kind is true for real functions.",
+    "These rigid properties make complex analysis one of the most useful parts of mathematics. Contour integration evaluates real integrals and infinite sums that resist every real-variable technique; harmonic functions and conformal maps solve problems in electrostatics, heat flow and aerodynamics; the positions of poles decide the stability of control systems and the behaviour of Laplace and Fourier transforms; and the analytic theory of the Riemann zeta function lies behind the prime number theorem.",
+    "The course has three parts. Chapters 1–3 build the arena: the algebra and geometry of $\\mathbb{C}$, complex differentiability and the Cauchy–Riemann equations, and the exponential, logarithm and power functions with their branches. Chapters 4–7 develop the integral theory: contour integrals, Cauchy's theorem and integral formula with their consequences (Liouville's theorem and the fundamental theorem of algebra), Taylor and Laurent series, and the residue theorem with its applications to real integrals and to counting zeros. Chapter 8 returns to geometry with conformal maps and Möbius transformations.",
+    "The first difficulty is that the graph of a complex function lives in four real dimensions and cannot be drawn. Instead we picture how a function moves points and grids, and we colour the plane by the values of the function; the interactive figures are there to build this intuition. The second difficulty is multivaluedness: logarithms and roots force us to choose branches with care. Keep a few test functions at hand — $z^2$, $1/z$, $e^z$ and $\\bar z$ — and try every definition and theorem on them."
+  ],
+  "prerequisites": [
+    "multivariable",
+    "calculus-2"
+  ],
+  "outcomes": [
+    "Calculate with complex numbers in Cartesian and polar form, and find n-th roots with de Moivre's formula.",
+    "Decide where a function is complex differentiable using the Cauchy–Riemann equations, and construct harmonic conjugates.",
+    "Work with the complex exponential, logarithm, powers and trigonometric functions, choosing branches and branch cuts consistently.",
+    "Evaluate contour integrals by parametrisation and by antiderivatives, and bound them with the ML-inequality.",
+    "State and prove Cauchy's theorem and integral formula, and derive from them Liouville's theorem and the fundamental theorem of algebra.",
+    "Expand analytic functions in Taylor and Laurent series and classify isolated singularities.",
+    "Compute residues and use the residue theorem to evaluate real integrals.",
+    "Count zeros of analytic functions with the argument principle and Rouché's theorem.",
+    "Use Möbius transformations and elementary conformal maps to transform regions and to solve boundary-value problems for Laplace's equation."
+  ],
+  "chapters": [
+    {
+      "slug": "complex-numbers",
+      "title": "Complex numbers",
+      "summary": "The algebra and geometry of complex numbers, polar form, roots of unity and the Riemann sphere.",
+      "requires": []
+    },
+    {
+      "slug": "analytic-functions",
+      "title": "Analytic functions",
+      "summary": "Limits and continuity, complex differentiability, the Cauchy–Riemann equations and harmonic functions.",
+      "requires": [
+        "complex-analysis/complex-numbers",
+        "multivariable/partial-derivatives"
+      ]
+    },
+    {
+      "slug": "elementary-functions",
+      "title": "Elementary functions",
+      "summary": "The complex exponential, logarithms and branches, complex powers and trigonometric functions.",
+      "requires": [
+        "complex-analysis/analytic-functions"
+      ]
+    },
+    {
+      "slug": "contour-integrals",
+      "title": "Contour integration",
+      "summary": "Paths and contour integrals, the ML-inequality and antiderivatives.",
+      "requires": [
+        "complex-analysis/elementary-functions",
+        "multivariable/line-integrals"
+      ]
+    },
+    {
+      "slug": "cauchy-theorem",
+      "title": "Cauchy’s theorem",
+      "summary": "Cauchy’s theorem and integral formula, Liouville’s theorem and the fundamental theorem of algebra.",
+      "requires": [
+        "complex-analysis/contour-integrals"
+      ]
+    },
+    {
+      "slug": "laurent-series",
+      "title": "Power and Laurent series",
+      "summary": "Taylor and Laurent series, zeros of analytic functions and isolated singularities.",
+      "requires": [
+        "complex-analysis/cauchy-theorem",
+        "calculus-2/power-series"
+      ]
+    },
+    {
+      "slug": "residues",
+      "title": "Residues",
+      "summary": "The residue theorem, evaluating real integrals, the argument principle and Rouché’s theorem.",
+      "requires": [
+        "complex-analysis/laurent-series"
+      ]
+    },
+    {
+      "slug": "conformal-maps",
+      "title": "Conformal mappings",
+      "summary": "Conformality, Möbius transformations, mapping regions and applications to physics.",
+      "requires": [
+        "complex-analysis/elementary-functions"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1572,
+      "title": "Bombelli calculates with impossible numbers",
+      "detail": "In his *L'Algebra* Rafael Bombelli gave rules for computing with square roots of negative numbers and used them to show that Cardano's formula for the cubic $x^3 = 15x + 4$ produces the real root $4$.",
+      "people": [
+        "Rafael Bombelli",
+        "Gerolamo Cardano"
+      ]
+    },
+    {
+      "year": 1748,
+      "title": "Euler's formula",
+      "detail": "Leonhard Euler's *Introductio in analysin infinitorum* contains the formula $e^{ix} = \\cos x + i\\sin x$, linking the exponential to trigonometry.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1799,
+      "title": "The complex plane",
+      "detail": "The Norwegian–Danish surveyor Caspar Wessel published a representation of complex numbers as points or vectors in the plane; Jean-Robert Argand found it independently in 1806. In 1799 too, Carl Friedrich Gauss's doctoral dissertation gave a proof of the fundamental theorem of algebra.",
+      "people": [
+        "Caspar Wessel",
+        "Jean-Robert Argand",
+        "Carl Friedrich Gauss"
+      ]
+    },
+    {
+      "year": 1825,
+      "title": "Cauchy's integral theorem",
+      "detail": "In his memoir on definite integrals taken between imaginary limits, Augustin-Louis Cauchy showed that the integral of a well-behaved function between two points does not depend on the path, the first form of Cauchy's theorem. The calculus of residues followed in 1826.",
+      "people": [
+        "Augustin-Louis Cauchy"
+      ]
+    },
+    {
+      "year": 1831,
+      "title": "The integral formula and power series",
+      "detail": "In a memoir written in Turin, Cauchy published his integral formula and deduced that a complex differentiable function can be expanded in a convergent power series.",
+      "people": [
+        "Augustin-Louis Cauchy"
+      ]
+    },
+    {
+      "year": 1851,
+      "title": "Riemann's dissertation",
+      "detail": "Bernhard Riemann's Göttingen dissertation founded the geometric theory of functions of a complex variable: it took the Cauchy–Riemann equations as the definition of analyticity, introduced what are now called Riemann surfaces and stated the Riemann mapping theorem.",
+      "people": [
+        "Bernhard Riemann"
+      ]
+    },
+    {
+      "year": 1879,
+      "title": "Picard's theorem",
+      "detail": "Émile Picard proved that a non-constant entire function omits at most one complex value — a dramatic strengthening of Liouville's theorem.",
+      "people": [
+        "Émile Picard"
+      ]
+    },
+    {
+      "year": 1896,
+      "title": "The prime number theorem",
+      "detail": "Jacques Hadamard and Charles de la Vallée Poussin independently proved that the number of primes up to $x$ is asymptotic to $x/\\ln x$, using the complex analysis of the Riemann zeta function.",
+      "people": [
+        "Jacques Hadamard",
+        "Charles de la Vallée Poussin"
+      ]
+    },
+    {
+      "year": 1900,
+      "title": "Goursat removes a hypothesis",
+      "detail": "Édouard Goursat proved Cauchy's theorem assuming only that the derivative exists, not that it is continuous; Alfred Pringsheim's 1901 version of the argument uses triangles, as most textbooks do today.",
+      "people": [
+        "Édouard Goursat",
+        "Alfred Pringsheim"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Visual Complex Analysis",
+      "authors": "Tristan Needham",
+      "year": 1997,
+      "note": "A uniquely geometric account (25th anniversary edition 2023): amplitwists, Möbius transformations and the physics behind the theorems. Read it alongside a rigorous text for intuition."
+    },
+    {
+      "title": "Complex Analysis (2nd edition)",
+      "authors": "Ian Stewart and David Tall",
+      "year": 2018,
+      "note": "A gentle, careful first course with good explanations of paths, winding numbers and the topological side of Cauchy's theorem."
+    },
+    {
+      "title": "Complex Variables and Applications (9th edition)",
+      "authors": "James Ward Brown and Ruel V. Churchill",
+      "year": 2014,
+      "note": "The classic computational text: many worked residue integrals, conformal maps and boundary-value problems, with a large supply of exercises."
+    },
+    {
+      "title": "Complex Analysis (Princeton Lectures in Analysis II)",
+      "authors": "Elias M. Stein and Rami Shakarchi",
+      "year": 2003,
+      "note": "Rigorous and concise, with Goursat's theorem, the Riemann mapping theorem and striking applications to number theory and Fourier analysis."
+    },
+    {
+      "title": "Complex Analysis (3rd edition)",
+      "authors": "Lars V. Ahlfors",
+      "year": 1979,
+      "note": "The classic graduate-level text; elegant and demanding, with a careful treatment of the general Cauchy theorem and conformal mapping."
+    },
+    {
+      "title": "Functions of One Complex Variable I (2nd edition)",
+      "authors": "John B. Conway",
+      "year": 1978,
+      "note": "A thorough rigorous reference for the homology version of Cauchy's theorem, the argument principle and normal families."
+    }
+  ],
+  "next": [
+    "pde"
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "classes": {
+    "positive": {
+      "label": "Basic (+)",
+      "members": "K R H",
+      "zh": "碱性（+）"
+    },
+    "negative": {
+      "label": "Acidic (−)",
+      "members": "D E",
+      "zh": "酸性（−）"
+    },
+    "hydrophobic": {
+      "label": "Aliphatic",
+      "members": "A V L I M",
+      "zh": "脂肪族"
+    },
+    "aromatic": {
+      "label": "Aromatic",
+      "members": "F W Y",
+      "zh": "芳香族"
+    },
+    "polar": {
+      "label": "Polar",
+      "members": "S T N Q",
+      "zh": "极性"
+    },
+    "special": {
+      "label": "Glycine / proline",
+      "members": "G P",
+      "zh": "甘氨酸 / 脯氨酸"
+    },
+    "cysteine": {
+      "label": "Cysteine",
+      "members": "C",
+      "zh": "半胱氨酸"
+    },
+    "noncanonical": {
+      "label": "Non-canonical",
+      "members": "Aib, Nle, Dmt, …",
+      "zh": "非天然"
+    }
+  },
+  "standard": {
+    "A": {
+      "three": "Ala",
+      "name": "Alanine",
+      "class": "hydrophobic",
+      "zh": "丙氨酸"
+    },
+    "R": {
+      "three": "Arg",
+      "name": "Arginine",
+      "class": "positive",
+      "zh": "精氨酸"
+    },
+    "N": {
+      "three": "Asn",
+      "name": "Asparagine",
+      "class": "polar",
+      "zh": "天冬酰胺"
+    },
+    "D": {
+      "three": "Asp",
+      "name": "Aspartic acid",
+      "class": "negative",
+      "zh": "天冬氨酸"
+    },
+    "C": {
+      "three": "Cys",
+      "name": "Cysteine",
+      "class": "cysteine",
+      "zh": "半胱氨酸"
+    },
+    "Q": {
+      "three": "Gln",
+      "name": "Glutamine",
+      "class": "polar",
+      "zh": "谷氨酰胺"
+    },
+    "E": {
+      "three": "Glu",
+      "name": "Glutamic acid",
+      "class": "negative",
+      "zh": "谷氨酸"
+    },
+    "G": {
+      "three": "Gly",
+      "name": "Glycine",
+      "class": "special",
+      "zh": "甘氨酸"
+    },
+    "H": {
+      "three": "His",
+      "name": "Histidine",
+      "class": "positive",
+      "zh": "组氨酸"
+    },
+    "I": {
+      "three": "Ile",
+      "name": "Isoleucine",
+      "class": "hydrophobic",
+      "zh": "异亮氨酸"
+    },
+    "L": {
+      "three": "Leu",
+      "name": "Leucine",
+      "class": "hydrophobic",
+      "zh": "亮氨酸"
+    },
+    "K": {
+      "three": "Lys",
+      "name": "Lysine",
+      "class": "positive",
+      "zh": "赖氨酸"
+    },
+    "M": {
+      "three": "Met",
+      "name": "Methionine",
+      "class": "hydrophobic",
+      "zh": "甲硫氨酸"
+    },
+    "F": {
+      "three": "Phe",
+      "name": "Phenylalanine",
+      "class": "aromatic",
+      "zh": "苯丙氨酸"
+    },
+    "P": {
+      "three": "Pro",
+      "name": "Proline",
+      "class": "special",
+      "zh": "脯氨酸"
+    },
+    "S": {
+      "three": "Ser",
+      "name": "Serine",
+      "class": "polar",
+      "zh": "丝氨酸"
+    },
+    "T": {
+      "three": "Thr",
+      "name": "Threonine",
+      "class": "polar",
+      "zh": "苏氨酸"
+    },
+    "W": {
+      "three": "Trp",
+      "name": "Tryptophan",
+      "class": "aromatic",
+      "zh": "色氨酸"
+    },
+    "Y": {
+      "three": "Tyr",
+      "name": "Tyrosine",
+      "class": "aromatic",
+      "zh": "酪氨酸"
+    },
+    "V": {
+      "three": "Val",
+      "name": "Valine",
+      "class": "hydrophobic",
+      "zh": "缬氨酸"
+    }
+  },
+  "tokens": {
+    "Aib": {
+      "name": "α-Aminoisobutyric acid (2-methylalanine)",
+      "parent": "A",
+      "note": "Helix-promoting; blocks DPP-4 cleavage when placed at position 2",
+      "abbr": "Aib",
+      "zh": "α-氨基异丁酸（2-甲基丙氨酸）"
+    },
+    "Nle": {
+      "name": "Norleucine",
+      "parent": "L",
+      "note": "Oxidation-resistant isostere of methionine",
+      "abbr": "Nle",
+      "zh": "正亮氨酸"
+    },
+    "Dmt": {
+      "name": "2′,6′-Dimethyl-L-tyrosine",
+      "parent": "Y",
+      "note": "Bulky tyrosine used in SS-peptides and opioid ligands",
+      "abbr": "Dmt",
+      "zh": "2′,6′-二甲基-L-酪氨酸"
+    },
+    "Nal": {
+      "name": "3-(2-Naphthyl)-L-alanine",
+      "parent": "F",
+      "note": "Large aromatic side chain",
+      "abbr": "Nal",
+      "zh": "3-(2-萘基)-L-丙氨酸"
+    },
+    "dNal": {
+      "name": "3-(2-Naphthyl)-D-alanine",
+      "parent": "F",
+      "d": true,
+      "note": "D-configured naphthylalanine used in GH secretagogues",
+      "abbr": "Nal",
+      "zh": "3-(2-萘基)-D-丙氨酸"
+    },
+    "pGlu": {
+      "name": "Pyroglutamic acid (5-oxoproline)",
+      "parent": "Q",
+      "note": "Cyclised N-terminal glutamine/glutamate; blocks aminopeptidases",
+      "abbr": "pE",
+      "zh": "焦谷氨酸（5-氧代脯氨酸）"
+    },
+    "Mpa": {
+      "name": "3-Mercaptopropionic acid (deamino-cysteine)",
+      "parent": "C",
+      "note": "N-terminal Cys without the amine (desmopressin)",
+      "abbr": "Mpa",
+      "zh": "3-巯基丙酸（脱氨基半胱氨酸）"
+    },
+    "aMeLeu": {
+      "name": "α-Methyl-L-leucine",
+      "parent": "L",
+      "note": "Cα-methylated leucine; helix stabilising, protease resistant",
+      "abbr": "αML",
+      "zh": "α-甲基-L-亮氨酸"
+    },
+    "aMeF": {
+      "name": "α-Methyl-L-phenylalanine",
+      "parent": "F",
+      "note": "Cα-methylated phenylalanine",
+      "abbr": "αMF",
+      "zh": "α-甲基-L-苯丙氨酸"
+    },
+    "aMeK": {
+      "name": "α-Methyl-L-lysine",
+      "parent": "K",
+      "note": "Cα-methylated lysine",
+      "abbr": "αMK",
+      "zh": "α-甲基-L-赖氨酸"
+    },
+    "dMeW": {
+      "name": "2-Methyl-D-tryptophan",
+      "parent": "W",
+      "d": true,
+      "note": "Used in hexarelin",
+      "abbr": "MeW",
+      "zh": "2-甲基-D-色氨酸"
+    },
+    "Sar": {
+      "name": "Sarcosine (N-methylglycine)",
+      "parent": "G",
+      "note": "N-methylated glycine",
+      "abbr": "Sar",
+      "zh": "肌氨酸（N-甲基甘氨酸）"
+    },
+    "Hyp": {
+      "name": "4-Hydroxyproline",
+      "parent": "P",
+      "note": "Collagen-type hydroxylated proline",
+      "abbr": "Hyp",
+      "zh": "4-羟脯氨酸"
+    },
+    "Orn": {
+      "name": "Ornithine",
+      "parent": "K",
+      "note": "Lysine homologue lacking one methylene",
+      "abbr": "Orn",
+      "zh": "鸟氨酸"
+    },
+    "Abu": {
+      "name": "L-2-Aminobutyric acid",
+      "parent": "A",
+      "note": "Ethyl side chain",
+      "abbr": "Abu",
+      "zh": "L-2-氨基丁酸"
+    },
+    "Cit": {
+      "name": "Citrulline",
+      "parent": "R",
+      "note": "Neutral urea analogue of arginine",
+      "abbr": "Cit",
+      "zh": "瓜氨酸"
+    },
+    "NMeLeu": {
+      "name": "N-Methyl-L-leucine",
+      "parent": "L",
+      "note": "Backbone N-methylation (cyclosporin)",
+      "abbr": "MeL",
+      "zh": "N-甲基-L-亮氨酸"
+    },
+    "NMeVal": {
+      "name": "N-Methyl-L-valine",
+      "parent": "V",
+      "note": "Backbone N-methylation (cyclosporin)",
+      "abbr": "MeV",
+      "zh": "N-甲基-L-缬氨酸"
+    },
+    "NMeBmt": {
+      "name": "N-Methyl-(4R)-4-[(E)-2-butenyl]-4-methyl-L-threonine",
+      "parent": "T",
+      "note": "Unique cyclosporin residue 1",
+      "abbr": "Bmt",
+      "zh": "N-甲基-(4R)-4-[(E)-2-丁烯基]-4-甲基-L-苏氨酸"
+    },
+    "Tle": {
+      "name": "tert-Leucine",
+      "parent": "L",
+      "note": "Bulky branched residue",
+      "abbr": "Tle",
+      "zh": "叔亮氨酸"
+    },
+    "Cha": {
+      "name": "3-Cyclohexyl-L-alanine",
+      "parent": "F",
+      "note": "Saturated phenylalanine analogue",
+      "abbr": "Cha",
+      "zh": "3-环己基-L-丙氨酸"
+    },
+    "bAla": {
+      "name": "β-Alanine",
+      "parent": "A",
+      "note": "Backbone-extended amino acid",
+      "abbr": "βA",
+      "zh": "β-丙氨酸"
+    },
+    "Gla": {
+      "name": "γ-Carboxyglutamic acid",
+      "parent": "E",
+      "note": "Calcium-binding residue",
+      "abbr": "Gla",
+      "zh": "γ-羧基谷氨酸"
+    },
+    "Ac4c": {
+      "name": "1-Aminocyclobutane-1-carboxylic acid",
+      "parent": "A",
+      "note": "Cyclic Cα,α-disubstituted residue; like Aib it blocks DPP-4 and stabilises helices",
+      "abbr": "Ac4c",
+      "zh": "1-氨基环丁烷-1-羧酸"
+    },
+    "gGlu": {
+      "name": "L-Glutamic acid linked through its γ-carboxyl (γ-Glu)",
+      "parent": "E",
+      "note": "Isopeptide link to the next residue; the α-amino and α-carboxyl groups stay free (eloralintide residue 1)",
+      "abbr": "γE",
+      "zh": "经γ-羧基连接的L-谷氨酸（γ-Glu）"
+    },
+    "NMeAsn": {
+      "name": "N-Methyl-L-asparagine",
+      "parent": "N",
+      "note": "Backbone N-methylation (eloralintide)",
+      "abbr": "MeN",
+      "zh": "N-甲基-L-天冬酰胺"
+    }
+  },
+  "_d_rule": "A lowercase one-letter code means the D-enantiomer of that amino acid (a = D-Ala, f = D-Phe, w = D-Trp, r = D-Arg, l = D-Leu, k = D-Lys, s = D-Ser)."
+}

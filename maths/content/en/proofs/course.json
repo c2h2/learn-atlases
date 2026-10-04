@@ -1,0 +1,220 @@
+{
+  "slug": "proofs",
+  "title": "Foundations",
+  "full_title": "Foundations: Logic, Sets and Proof",
+  "area": "foundations",
+  "level": 1,
+  "order": 10,
+  "tagline": "The language of university mathematics: logic, sets, functions and how to write a proof",
+  "summary": "Before calculus and algebra can be done rigorously, we need a precise language. This course covers propositional and predicate logic, the main proof techniques including induction, and the theory of sets, functions, relations and cardinality that every later course takes for granted.",
+  "overview": [
+    "University mathematics is written in a language that school mathematics rarely makes explicit: statements built from *and*, *or*, *not* and *implies*, qualified by *for all* and *there exists*, and justified by proofs that a sceptical reader can check line by line. This course teaches that language. Every later course depends on it: the ε–δ definitions of analysis, the axioms of linear algebra and group theory and the counting arguments of discrete mathematics are all statements about sets and functions, written in the logic introduced here.",
+    "The course has three parts. Chapters 1–2 cover propositional logic and quantifiers: how to read, negate and manipulate mathematical statements. Chapters 3–4 turn to proof itself — direct proof, contrapositive, contradiction, cases, counterexamples and mathematical induction — with the emphasis on writing arguments that other people can follow. Chapters 5–8 build the basic objects of mathematics out of sets: functions, relations (including equivalence relations and congruence modulo $n$) and cardinality, ending with Cantor's discovery that some infinite sets are strictly larger than others.",
+    "What makes this material hard is not technical difficulty but the change of habit it demands. Every claim must be justified from definitions; examples and pictures are indispensable for *finding* a proof, but they are not proofs. The way to learn it is by doing: read each definition until you can state it from memory, try the worked examples before reading their solutions, and write out the exercises in full sentences. Expect your first proofs to be clumsy — fluency comes with practice, and it pays off in every course that follows."
+  ],
+  "prerequisites": [],
+  "outcomes": [
+    "Translate between English and the symbolic language of propositional and predicate logic, and test logical equivalences with truth tables.",
+    "Negate statements containing several quantifiers correctly, and explain why the order of quantifiers matters.",
+    "Write clear direct proofs, proofs by contrapositive, contradiction and cases, and disprove false statements with counterexamples.",
+    "Prove statements by weak and strong induction, and use the well-ordering principle and recursive definitions.",
+    "Work with unions, intersections, complements, power sets and Cartesian products, and prove set identities by double inclusion.",
+    "Decide whether a function is injective, surjective or bijective, and compute images, preimages, compositions and inverses.",
+    "Recognise equivalence relations and partial orders, and pass between equivalence relations and partitions.",
+    "Compare the sizes of infinite sets: prove that ℚ is countable and ℝ is not, and apply Cantor's and the Schröder–Bernstein theorems."
+  ],
+  "chapters": [
+    {
+      "slug": "propositional-logic",
+      "title": "Propositional logic",
+      "summary": "Statements, connectives, truth tables, tautologies and logical equivalence.",
+      "requires": []
+    },
+    {
+      "slug": "quantifiers",
+      "title": "Predicates and quantifiers",
+      "summary": "For all and there exists, negating quantified statements, and why the order of quantifiers matters.",
+      "requires": [
+        "proofs/propositional-logic"
+      ]
+    },
+    {
+      "slug": "proof-techniques",
+      "title": "Methods of proof",
+      "summary": "Direct proof, contrapositive, contradiction, proof by cases and counterexamples — and how to write a proof others can follow.",
+      "requires": [
+        "proofs/quantifiers"
+      ]
+    },
+    {
+      "slug": "induction",
+      "title": "Mathematical induction",
+      "summary": "Weak and strong induction, the well-ordering principle and recursive definitions.",
+      "requires": [
+        "proofs/proof-techniques"
+      ]
+    },
+    {
+      "slug": "sets",
+      "title": "Sets",
+      "summary": "Set notation, subsets, unions and intersections, complements, power sets, Cartesian products and indexed families.",
+      "requires": [
+        "proofs/quantifiers"
+      ]
+    },
+    {
+      "slug": "functions",
+      "title": "Functions",
+      "summary": "Injections, surjections and bijections, composition, inverses, images and preimages.",
+      "requires": [
+        "proofs/sets"
+      ]
+    },
+    {
+      "slug": "relations",
+      "title": "Relations",
+      "summary": "Equivalence relations and partitions, congruence modulo n, and partial orders.",
+      "requires": [
+        "proofs/functions"
+      ]
+    },
+    {
+      "slug": "cardinality",
+      "title": "Cardinality and countability",
+      "summary": "Comparing infinite sets: countable sets, Cantor’s diagonal argument and the Schröder–Bernstein theorem.",
+      "requires": [
+        "proofs/functions"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -350,
+      "title": "Aristotle's logic",
+      "detail": "In the *Prior Analytics* Aristotle analyses valid forms of argument (syllogisms), the first systematic study of deductive logic.",
+      "people": [
+        "Aristotle"
+      ]
+    },
+    {
+      "year": -300,
+      "title": "Euclid's *Elements*",
+      "detail": "Euclid organises geometry and number theory as theorems deduced from definitions and axioms; Book IX contains the proof that there are infinitely many primes.",
+      "people": [
+        "Euclid"
+      ]
+    },
+    {
+      "year": 1847,
+      "title": "Logic becomes algebra",
+      "detail": "George Boole's *The Mathematical Analysis of Logic* treats propositions with algebraic laws; Augustus De Morgan's *Formal Logic* appears in the same year.",
+      "people": [
+        "George Boole",
+        "Augustus De Morgan"
+      ]
+    },
+    {
+      "year": 1874,
+      "title": "The reals are uncountable",
+      "detail": "Georg Cantor proves that the real numbers cannot be listed as a sequence, while the algebraic numbers can: there are different sizes of infinity.",
+      "people": [
+        "Georg Cantor"
+      ]
+    },
+    {
+      "year": 1879,
+      "title": "Frege's *Begriffsschrift*",
+      "detail": "Gottlob Frege introduces a formal language with quantifiers, the first complete treatment of predicate logic.",
+      "people": [
+        "Gottlob Frege"
+      ]
+    },
+    {
+      "year": 1889,
+      "title": "Peano's axioms",
+      "detail": "Giuseppe Peano publishes axioms for the natural numbers with induction as an axiom, building on Richard Dedekind's analysis of 1888.",
+      "people": [
+        "Giuseppe Peano",
+        "Richard Dedekind"
+      ]
+    },
+    {
+      "year": 1891,
+      "title": "The diagonal argument",
+      "detail": "Cantor gives the diagonal argument and proves that every set is strictly smaller than its set of subsets.",
+      "people": [
+        "Georg Cantor"
+      ]
+    },
+    {
+      "year": 1897,
+      "title": "The Schröder–Bernstein theorem",
+      "detail": "Felix Bernstein, a 19-year-old student in Cantor's seminar, proves that injections in both directions give a bijection. Ernst Schröder announced a proof independently, and Dedekind had found one in 1887 without publishing it.",
+      "people": [
+        "Felix Bernstein",
+        "Ernst Schröder",
+        "Richard Dedekind"
+      ]
+    },
+    {
+      "year": 1902,
+      "title": "Russell's paradox",
+      "detail": "Bertrand Russell writes to Frege about the set of all sets that are not members of themselves, showing that unrestricted set formation is contradictory.",
+      "people": [
+        "Bertrand Russell",
+        "Gottlob Frege"
+      ]
+    },
+    {
+      "year": 1908,
+      "title": "Axiomatic set theory",
+      "detail": "Ernst Zermelo publishes axioms for set theory that avoid the paradoxes; with later additions by Abraham Fraenkel they become the standard foundation (ZF).",
+      "people": [
+        "Ernst Zermelo"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "How to Prove It: A Structured Approach",
+      "authors": "Daniel J. Velleman",
+      "year": 2019,
+      "note": "Third edition. A systematic course in logic and proof strategies, very close in spirit to chapters 1–6; many exercises."
+    },
+    {
+      "title": "Book of Proof",
+      "authors": "Richard Hammack",
+      "year": 2018,
+      "note": "Third edition, freely available online. Clear and gentle, covering exactly this course with plenty of solved exercises."
+    },
+    {
+      "title": "How to Think Like a Mathematician",
+      "authors": "Kevin Houston",
+      "year": 2009,
+      "note": "Practical advice on reading definitions, writing proofs and avoiding common mistakes; ideal for the transition to university."
+    },
+    {
+      "title": "An Introduction to Mathematical Reasoning: Numbers, Sets and Functions",
+      "authors": "Peter J. Eccles",
+      "year": 1997,
+      "note": "A careful first-year text on logic, induction, sets, functions, counting and countability."
+    },
+    {
+      "title": "Naive Set Theory",
+      "authors": "Paul R. Halmos",
+      "year": 1960,
+      "note": "A short classic: set theory from the axioms through functions, cardinals and ordinals, for further reading after chapter 8."
+    },
+    {
+      "title": "Sets, Logic and Categories",
+      "authors": "Peter J. Cameron",
+      "year": 1999,
+      "note": "A next step: axiomatic set theory, formal logic and a first look at categories."
+    }
+  ],
+  "next": [
+    "calculus-1",
+    "linear-algebra",
+    "discrete"
+  ]
+}

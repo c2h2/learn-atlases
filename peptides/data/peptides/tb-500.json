@@ -1,0 +1,496 @@
+{
+  "slug": "tb-500",
+  "name": "TB-500 / Thymosin β4",
+  "aliases": [
+    "Thymosin beta-4",
+    "Tβ4",
+    "TB4",
+    "Timbetasin",
+    "TB500",
+    "Ac-LKKTETQ",
+    "Thymosin β4 fragment 17–23",
+    "Fx (platelet actin-sequestering peptide)",
+    "RGN-259",
+    "RGN-137",
+    "RGN-352",
+    "NL005"
+  ],
+  "category": "repair",
+  "drug_class": "Actin-sequestering peptide (β-thymosin)",
+  "subclass": "Full-length thymosin β4 (INN timbetasin) and its synthetic N-acetylated 17–23 fragment sold as TB-500",
+  "status": "clinical",
+  "status_note": "Not approved anywhere: full-length thymosin β4 is still in clinical trials (eye drops in the US, a recombinant injection in China), while the TB-500 fragment sold online has never been studied in humans.",
+  "evidence": 3,
+  "evidence_note": "Full-length Tβ4 has reached phase 2 and phase 3 trials (more than 1,600 patients in the ARISE dry-eye trials alone), but the phase 3 trials missed their primary endpoints. TB-500 itself has no published human data; claims for it rest on cell and animal studies, mostly of the whole protein.",
+  "tagline": "Actin-binding repair protein; its fragment TB-500 is a banned grey-market injectable",
+  "summary": "Thymosin β4 is a 43-amino-acid peptide found in almost every human cell, where it holds actin monomers in reserve for the cytoskeleton; animal studies suggest it also speeds skin, eye and heart repair. Eye drops, a skin gel and injectable versions have been tested in clinical trials without winning approval. 'TB-500' is the grey-market name for a synthetic seven-amino-acid fragment (and loosely for the whole peptide), injected for injury recovery despite having no human studies, and banned in sport.",
+  "overview": [
+    "Thymosin β4 (Tβ4) was purified from a calf-thymus extract, thymosin fraction 5, and fully sequenced in 1981 by Allan Goldstein's laboratory. It was first assumed to be a thymic hormone, but in 1991 it proved identical to 'Fx', the peptide that binds most of the unpolymerised actin in human platelets. It is now known as the most abundant β-thymosin in mammalian tissues and the main actin-sequestering peptide of many cell types, with especially high levels in platelets, neutrophils and macrophages; its sequence is identical in humans, cattle, rats and mice.",
+    "Interest in Tβ4 as a repair drug began at the US National Institutes of Health, where a 1999 study showed that it accelerated skin-wound healing in rats and later work linked a seven-residue stretch to its effects on blood-vessel growth; a 2004 Nature paper reported heart protection after experimental heart attacks in mice. RegeneRx Biopharmaceuticals licensed the NIH rights in 2001 and tested synthetic Tβ4 as a skin gel (RGN-137), an intravenous heart drug (RGN-352) and eye drops (RGN-259). The dry-eye phase 3 trials and a European phase 3 trial in neurotrophic keratopathy (SEER-3, 2025) missed their primary endpoints; a US trial (SEER-2) was still listed as recruiting at the end of 2025. In China, Beijing Northland Biotech is developing a recombinant Tβ4 injection for heart attack.",
+    "TB-500 is a separate product. The name first appeared on a veterinary preparation marketed from about 2011 to racehorse and greyhound trainers; doping laboratories in Belgium and Hong Kong found that its active ingredient was Ac-LKKTETQ, a synthetic, N-acetylated copy of residues 17–23 of Tβ4 — the actin-binding motif that NIH researchers had linked to cell migration and blood-vessel growth. The name has no official standing: FDA says it has encountered different salts and even different active moieties sold as TB-500, and the name is also used loosely for synthetic full-length Tβ4. It is now sold online as a 'research use only' powder and injected by athletes, bodybuilders and biohackers hoping to speed recovery from tendon, ligament and muscle injuries, often alongside BPC-157.",
+    "Because of its potential to aid soft-tissue recovery, thymosin β4 and its derivatives are prohibited at all times in sport. In January 2016 the Court of Arbitration for Sport ruled that 34 past and present players of the Essendon Australian football club had used thymosin β4 in the club's 2012 supplements programme, and banned them for two years. In the US, FDA placed the TB-500 fragment in Category 2 of its compounding list (substances raising significant safety concerns) in 2023; it was removed in April 2026 after the nomination was withdrawn, and in July 2026 an FDA advisory committee voted 8–6 to recommend allowing pharmacy compounding, against the conclusion of FDA's own reviewers. Formal rulemaking would still be needed."
+  ],
+  "mechanism": [
+    "Inside cells, thymosin β4 binds monomeric (G-) actin in a 1:1 complex and keeps it from joining filaments, acting as a buffer that releases actin when the cytoskeleton needs to grow, for example during cell movement. Crystal structures show the otherwise unstructured peptide wrapping along the actin monomer: an N-terminal helix binds the barbed face, the central LKKTETQ region runs across the surface and a C-terminal helix caps the pointed face, so the bound actin cannot be added to either end of a filament. Profilin competes for the same monomers and passes them on to growing filaments.",
+    "Outside cells — Tβ4 is found in plasma, saliva, tears and wound fluid — it promotes cell migration, blood-vessel formation and cell survival and dampens inflammation in cell and animal experiments; in mouse hearts it acted through integrin-linked kinase (ILK) and Akt survival signalling. No receptor has been firmly established. The seven-residue actin-binding motif matched the whole protein's effect on endothelial-cell migration and vessel sprouting in laboratory assays, which is the rationale for TB-500, but FDA's 2026 review concluded that nonclinical evidence that the fragment itself promotes wound healing is lacking and that no toxicology studies of it exist.",
+    "The N-terminal tetrapeptide of Tβ4, Ac-SDKP, can be released by the enzyme prolyl oligopeptidase and has its own activities, inhibiting the proliferation of haematopoietic stem cells and reducing fibrosis in animal studies."
+  ],
+  "origin": "Endogenous peptide encoded by the X-linked TMSB4X gene, present in almost all nucleated cells and at high levels in platelets and white blood cells; first isolated from calf thymus. TB-500 is a synthetic copy of residues 17–23.",
+  "discovery": {
+    "year": 1981,
+    "by": "Allan Goldstein's laboratory (Low, Hu and Goldstein)",
+    "where": "George Washington University, Washington, DC",
+    "note": "Purified from thymosin fraction 5, a calf-thymus extract, and fully sequenced (43 residues, N-terminally acetylated). The TB-500 heptapeptide appeared as a veterinary product around 2011."
+  },
+  "first_human_year": 2003,
+  "first_approval": null,
+  "developer": "RegeneRx Biopharmaceuticals (Rockville, Maryland) with licensees ReGenTree/HLB Therapeutics and Zhaoke Ophthalmology; recombinant Tβ4 by Beijing Northland Biotech. TB-500 has no originator company.",
+  "brands": [],
+  "analogs": [
+    {
+      "name": "TB-500 (Ac-LKKTETQ)",
+      "note": "Synthetic N-acetylated heptapeptide copying Tβ4 residues 17–23, the central actin-binding motif (C38H68N10O14, 889.0 g/mol; PubChem CID 62707662). Identified by doping laboratories as the ingredient of TB-500 products; no human studies."
+    },
+    {
+      "name": "Timbetasin",
+      "note": "INN for synthetic full-length N-acetylated Tβ4, the active ingredient of RegeneRx's RGN-259 eye drops, RGN-137 gel and RGN-352 injection."
+    },
+    {
+      "name": "Recombinant human Tβ4 (NL005)",
+      "note": "Tβ4 made by Beijing Northland Biotech and tested as an injection in acute myocardial infarction in China."
+    },
+    {
+      "name": "Ac-SDKP (goralatide)",
+      "note": "N-terminal tetrapeptide cut from Tβ4 by prolyl oligopeptidase; inhibits haematopoietic stem-cell proliferation and has antifibrotic effects in animal studies."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Actin, cytoplasmic 1 (β-actin; monomeric G-actin)",
+      "gene": "ACTB",
+      "uniprot": "P60709",
+      "action": "Binds actin monomers 1:1 and sequesters them from polymerisation; also binds other actin isoforms"
+    },
+    {
+      "name": "Integrin-linked kinase (scaffold protein ILK)",
+      "gene": "ILK",
+      "uniprot": "Q13418",
+      "action": "Forms a complex with PINCH and ILK, activating Akt survival signalling in cardiomyocytes (cell and mouse studies)"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Thymosin β4",
+        "residues": [
+          "S",
+          "D",
+          "K",
+          "P",
+          "D",
+          "M",
+          "A",
+          "E",
+          "I",
+          "E",
+          "K",
+          "F",
+          "D",
+          "K",
+          "S",
+          "K",
+          "L",
+          "K",
+          "K",
+          "T",
+          "E",
+          "T",
+          "Q",
+          "E",
+          "K",
+          "N",
+          "P",
+          "L",
+          "P",
+          "S",
+          "K",
+          "E",
+          "T",
+          "I",
+          "E",
+          "Q",
+          "E",
+          "K",
+          "Q",
+          "A",
+          "G",
+          "E",
+          "S"
+        ],
+        "n_term": "Ac",
+        "c_term": "OH"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A1",
+        "type": "acetylation",
+        "label": "The initiator methionine is removed and the N-terminal serine is acetylated in native and synthetic (timbetasin) Tβ4",
+        "short": "N-acetyl"
+      },
+      {
+        "at": "A17",
+        "type": "other",
+        "label": "Residues 17–23 (LKKTETQ) form the central actin-binding motif; TB-500 is this heptapeptide made synthetically with an N-terminal acetyl group (Ac-LKKTETQ-OH)",
+        "short": "TB-500 = 17–23"
+      }
+    ],
+    "notation": "Ac-Ser-Asp-Lys-Pro-Asp-Met-Ala-Glu-Ile-Glu-Lys-Phe-Asp-Lys-Ser-Lys-Leu-Lys-Lys-Thr-Glu-Thr-Gln-Glu-Lys-Asn-Pro-Leu-Pro-Ser-Lys-Glu-Thr-Ile-Glu-Gln-Glu-Lys-Gln-Ala-Gly-Glu-Ser-OH",
+    "note": "Full-length human thymosin β4 (43 residues, numbered without the initiator methionine; identical in cattle, rats and mice). The 'TB-500' characterised by doping laboratories and FDA is only residues 17–23 with an acetylated N-terminus (Ac-LKKTETQ-OH), but the name is also applied to synthetic full-length Tβ4, so products sold as TB-500 may contain either."
+  },
+  "formula": "C212H350N56O78S",
+  "mw": 4963.5,
+  "half_life": "Unknown for TB-500; not well characterised for Tβ4",
+  "half_life_hours": null,
+  "routes": [
+    "Eye drops (RGN-259, investigational)",
+    "Topical gel (RGN-137, investigational)",
+    "Intravenous injection (RGN-352 and recombinant Tβ4, investigational)",
+    "Subcutaneous or intramuscular injection (grey-market TB-500)"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "4PL8",
+        "title": "Actin bound to a hybrid peptide containing full-length thymosin β4",
+        "method": "X-ray",
+        "resolution": 2.0,
+        "year": 2014,
+        "peptide_chain": "H",
+        "note": "Chain H links an N-terminal Tβ4 segment and the lysine-rich region of Cordon-bleu to the complete human Tβ4 sequence, bound to rabbit skeletal-muscle actin"
+      },
+      {
+        "id": "4PL7",
+        "title": "Actin–thymosin β4 fusion protein",
+        "method": "X-ray",
+        "resolution": 2.3,
+        "year": 2014,
+        "peptide_chain": "A",
+        "note": "Human Tβ4 fused to the C-terminus of Komagataella pastoris actin, so chain A contains both actin and Tβ4"
+      },
+      {
+        "id": "1T44",
+        "title": "Actin bound to a gelsolin domain 1–thymosin β4 hybrid",
+        "method": "X-ray",
+        "resolution": 2.0,
+        "year": 2004,
+        "peptide_chain": "G",
+        "note": "First structure of the Tβ4 actin-binding region, stabilised by fusing its C-terminal half to gelsolin domain 1 (chain G)"
+      }
+    ],
+    "pubchem_cid": 16132341,
+    "notes": "Thymosin β4 is intrinsically disordered on its own and there is no structure of the free peptide; it folds only when wrapped around an actin monomer, so every entry uses an engineered fusion or hybrid to trap the complex. No experimental structure exists for the TB-500 fragment."
+  },
+  "ids": {
+    "pubchem_cid": 16132341,
+    "cas": "77591-33-4",
+    "chembl": "CHEMBL4594313",
+    "unii": "2D5MRE3SSY",
+    "uniprot": "P62328",
+    "inn": "timbetasin"
+  },
+  "wiki": "Thymosin beta-4",
+  "queries": {
+    "pubmed": "(\"thymosin beta 4\"[tiab] OR \"thymosin beta-4\"[tiab] OR \"thymosin beta4\"[tiab] OR \"Tbeta4\"[tiab] OR \"RGN-259\"[tiab] OR ((\"TB-500\"[tiab] OR \"TB500\"[tiab]) AND (peptide*[tiab] OR doping[tiab] OR thymosin*[tiab])))",
+    "ctgov": "thymosin beta 4 OR RGN-259 OR RGN-137 OR RGN-352 OR TB-500",
+    "ctgov_exclude": [
+      "NCT07487363"
+    ]
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Neurotrophic keratopathy",
+        "stage": "Phase 3 — SEER-1 borderline, SEER-3 failed (2025), SEER-2 ongoing",
+        "detail": "RGN-259 (0.1% Tβ4 eye drops) is meant to heal persistent corneal epithelial defects. In the 18-patient SEER-1 trial 6 of 10 treated and 1 of 8 placebo patients healed completely (p = 0.066); the European SEER-3 trial showed no significant difference from placebo."
+      },
+      {
+        "use": "Dry eye disease",
+        "stage": "Phase 3 — primary endpoints not met",
+        "detail": "ARISE-2 (2017) and the roughly 700-patient ARISE-3 (2021) missed their co-primary sign and symptom endpoints despite some secondary improvements; FDA did not accept pooled analyses as the basis for a licence application."
+      },
+      {
+        "use": "Acute myocardial infarction",
+        "stage": "Phase 2",
+        "detail": "RegeneRx's planned phase 2 trial of intravenous RGN-352 was put on FDA clinical hold in 2011 over its contract manufacturer's compliance failures and was later withdrawn. In China, a 96-patient randomised trial of Beijing Northland Biotech's recombinant Tβ4 after primary PCI found no significant overall reduction in infarct size; a further phase 2 trial of its NL005 injection was registered in 2026."
+      },
+      {
+        "use": "Chronic skin wounds and epidermolysis bullosa",
+        "stage": "Phase 2 — discontinued",
+        "detail": "Small phase 2 trials of RGN-137 gel in the mid-2000s found it well tolerated; faster healing of pressure ulcers was not statistically significant, and a later epidermolysis bullosa study was put on hold."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Injury recovery (grey-market TB-500)",
+        "detail": "Sold online as 'research use only' powder and injected under the skin or into muscle by athletes, bodybuilders and biohackers hoping to speed healing of tendons, ligaments and muscles, often alongside BPC-157.",
+        "evidence": "No published human study of TB-500. FDA's 2026 review found no human exposure data and no toxicology studies; the animal evidence mostly concerns full-length Tβ4, and product contents may not match their labels."
+      },
+      {
+        "use": "Racehorses and greyhounds",
+        "detail": "TB-500 first appeared around 2011 as a veterinary preparation marketed to racing trainers.",
+        "evidence": "No controlled evidence of benefit; racing and anti-doping laboratories published detection methods in 2012 to police its use."
+      },
+      {
+        "use": "Other marketed claims",
+        "detail": "Online sellers also promote TB-500 for muscle growth, endurance, flexibility, hair growth, inflammation and cardiovascular health.",
+        "evidence": "FDA found no studies in humans supporting any of these uses."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1981,
+      "date": "1981-02",
+      "title": "Thymosin β4 sequenced",
+      "detail": "Low, Hu and Goldstein reported the complete 43-residue sequence of thymosin β4, purified from the calf-thymus extract thymosin fraction 5, and proposed that it was a thymic hormone.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1991,
+      "date": "1991-03",
+      "title": "Revealed as the cell's actin buffer",
+      "detail": "Safer, Elzinga and Nachmias showed that Fx, the peptide holding most unpolymerised actin in human platelets, is identical to thymosin β4 and blocks actin polymerisation.",
+      "kind": "science"
+    },
+    {
+      "year": 1999,
+      "date": "1999-09",
+      "title": "Wound-healing effect in rats",
+      "detail": "NIH researchers reported that topical or intraperitoneal Tβ4 increased re-epithelialisation of full-thickness skin wounds in rats by 42–61% and stimulated keratinocyte migration.",
+      "kind": "science"
+    },
+    {
+      "year": 2003,
+      "date": "2003-09",
+      "title": "First human study",
+      "detail": "RegeneRx, which had taken an exclusive NIH licence to Tβ4 in February 2001, completed a 15-subject phase 1 safety study (March–September 2003) under an FDA IND for dermal wounds cleared in December 2002; phase 2 trials of a topical Tβ4 gel (RGN-137) in chronic skin wounds were cleared in 2004–2005.",
+      "kind": "trial"
+    },
+    {
+      "year": 2003,
+      "date": "2003-11",
+      "title": "Actin-binding motif linked to vessel growth",
+      "detail": "NIH researchers found that the seven-residue actin-binding motif (LKKTETQ) matched full-length Tβ4 in promoting endothelial-cell migration and vessel sprouting in laboratory assays; this is the sequence later sold as TB-500.",
+      "kind": "science"
+    },
+    {
+      "year": 2004,
+      "date": "2004-11-25",
+      "title": "Heart-repair study in Nature",
+      "detail": "Tβ4 promoted cardiomyocyte migration and survival through integrin-linked kinase and Akt and improved heart function after experimental heart attacks in mice.",
+      "kind": "science"
+    },
+    {
+      "year": 2012,
+      "title": "Doping labs identify what TB-500 is",
+      "detail": "Laboratories in Ghent and at the Hong Kong Jockey Club showed that TB-500, a veterinary preparation marketed from about 2011, contains the N-acetylated fragment Ac-LKKTETQ, and published methods to detect it and its metabolites.",
+      "kind": "science"
+    },
+    {
+      "year": 2016,
+      "date": "2016-01",
+      "title": "CAS bans 34 Essendon players",
+      "detail": "Overturning a March 2015 acquittal by the AFL Anti-Doping Tribunal on appeal by WADA, the Court of Arbitration for Sport found that 34 past and present Essendon players had used thymosin β4 in the club's 2012 supplements programme and imposed two-year bans.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2020,
+      "date": "2020-05",
+      "title": "Borderline result in neurotrophic keratopathy",
+      "detail": "In the 18-patient SEER-1 phase 3 trial of RGN-259 eye drops, 6 of 10 treated patients and 1 of 8 on placebo had complete corneal healing at four weeks (p = 0.066), narrowly missing the primary endpoint.",
+      "kind": "trial"
+    },
+    {
+      "year": 2021,
+      "date": "2021-03-18",
+      "title": "Third dry-eye phase 3 trial fails",
+      "detail": "The roughly 700-patient ARISE-3 trial of RGN-259 missed its co-primary sign and symptom endpoints, as ARISE-2 had in 2017; FDA did not accept pooled analyses of the ARISE trials for a licence application.",
+      "kind": "trial"
+    },
+    {
+      "year": 2023,
+      "date": "2023-09-29",
+      "title": "FDA restricts compounding of TB-500",
+      "detail": "FDA placed 'thymosin β4 fragment (LKKTETQ)', also known as TB-500, in Category 2 of its 503A bulk-substance list, citing possible immunogenicity from aggregation and impurities and a lack of human exposure data.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2025,
+      "title": "European neurotrophic keratopathy trial fails",
+      "detail": "HLB Therapeutics reported that the European phase 3 SEER-3 trial of RGN-259 showed no significant difference from placebo in complete corneal healing at four weeks, citing a strong placebo response.",
+      "kind": "trial"
+    },
+    {
+      "year": 2025,
+      "title": "Recombinant Tβ4 tested after heart attack",
+      "detail": "A 96-patient randomised, placebo-controlled trial in China of recombinant human Tβ4 after primary PCI for STEMI found no significant overall reduction in infarct size, although patients dosed within 8 hours of PCI had smaller infarcts.",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "date": "2026-04-22",
+      "title": "Removed from FDA Category 2",
+      "detail": "After HHS Secretary Robert F. Kennedy Jr. said in February 2026 that most restricted peptides would be moved back, FDA removed TB-500 and 11 other peptides from Category 2 because their nominations had been withdrawn; this did not by itself make compounding lawful.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2026,
+      "date": "2026-07-23",
+      "title": "Advisory committee backs compounding",
+      "detail": "FDA's Pharmacy Compounding Advisory Committee voted 8–6, with one abstention, to add TB-500 (free base and acetate) to the 503A bulks list for wound healing, although FDA's reviewers had found no human data and advised against it; rulemaking would be required.",
+      "kind": "regulatory"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "No Tβ4 or TB-500 product is approved; Tβ4 has been regulated as a biologic since March 2020. The TB-500 fragment was in 503A Category 2 from September 2023 to April 2026; despite a favourable advisory vote in July 2026 it is not on the 503A bulks list, and 'research use only' vials are not approved for human use."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "No authorised product; the European phase 3 SEER-3 trial of RGN-259 eye drops missed its primary endpoint in 2025."
+    },
+    {
+      "region": "China",
+      "status": "investigational",
+      "detail": "Recombinant human Tβ4 (NL005, Beijing Northland Biotech) is in phase 2 development for acute myocardial infarction; rights to RGN-259 in Greater China are held by Zhaoke Ophthalmology."
+    },
+    {
+      "region": "Australia",
+      "status": "restricted",
+      "detail": "Thymosin β4 and TB-500 are prescription-only medicines, with no approved product (as summarised by New Zealand's Medsafe in 2025)."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "Prohibited at all times under S2.3 (growth factors and growth factor modulators), which names thymosin-β4 and its derivatives, e.g. TB-500."
+    }
+  ],
+  "pk": {
+    "half_life": "Not established for TB-500. For intravenous synthetic Tβ4 in healthy volunteers, exposure rose in proportion to dose and the half-life lengthened at higher doses",
+    "metabolism": "Proteolysis. Prolyl oligopeptidase can release the N-terminal tetrapeptide Ac-SDKP from Tβ4; TB-500 is trimmed from its C-terminal end into shorter acetylated fragments in horses and rats",
+    "excretion": "TB-500 and its metabolites appear in horse plasma and urine, which is the basis of doping tests"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose. TB-500 has never been tested in humans, so the doses circulating online have no clinical basis; trials of full-length Tβ4 used eye-drop, gel and intravenous formulations that are available only within studies.",
+  "safety": {
+    "common": [
+      "No characteristic side-effect profile: in trials of Tβ4 eye drops, gel and infusions, adverse events were infrequent, mild to moderate and similar to placebo"
+    ],
+    "serious": [
+      "No serious adverse events attributed to Tβ4 in published trials",
+      "Risks of injecting grey-market TB-500 are unknown because it has never been studied in humans"
+    ],
+    "warnings": [
+      "FDA: injectable TB-500 may provoke immune reactions because of aggregation and peptide-related impurities",
+      "Unregulated 'research' vials may be mislabelled, impure or non-sterile",
+      "Theoretical cancer concern: Tβ4 drives cell migration and angiogenesis, and its overexpression increased tumour growth, angiogenesis and lung metastasis of melanoma cells in mice",
+      "Prohibited in sport at all times (WADA S2)"
+    ],
+    "notes": "Human safety data come from trials of synthetic or recombinant full-length Tβ4 given as eye drops, gel or intravenous infusion, including a phase 1 study in healthy volunteers with 14 days of daily infusions and no dose-limiting toxicity. They do not apply directly to subcutaneous or intramuscular injection of TB-500 bought online, whose identity, purity and sterility are not assured."
+  },
+  "market": null,
+  "facts": [
+    "Thymosin β4 was first thought to be a thymic hormone; it is actually present in almost every cell as the main reserve of unpolymerised actin.",
+    "With 43 amino acids it is just over FDA's 40-amino-acid cut-off for a 'protein', so since March 2020 it has been regulated in the US as a biological product rather than a conventional drug.",
+    "'TB-500' is not an official drug name: FDA says it has encountered different salts and even different active moieties sold under it.",
+    "TB-500 was sold to racehorse and greyhound trainers around 2011, before it became popular with people.",
+    "The Essendon bans rested on a 'strands in a cable' combination of circumstantial evidence rather than a failed drug test."
+  ],
+  "related": [
+    "bpc-157",
+    "thymosin-alpha-1",
+    "ghk-cu",
+    "kpv",
+    "mots-c",
+    "aod-9604"
+  ],
+  "references": [
+    {
+      "title": "Complete amino acid sequence of bovine thymosin beta 4: a thymic hormone that induces terminal deoxynucleotidyl transferase activity in thymocyte populations",
+      "authors": "Low TL, Hu SK, Goldstein AL",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": 1981,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6940133/"
+    },
+    {
+      "title": "Thymosin beta 4 and Fx, an actin-sequestering peptide, are indistinguishable",
+      "authors": "Safer D, Elzinga M, Nachmias VT",
+      "journal": "J Biol Chem",
+      "year": 1991,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1999398/"
+    },
+    {
+      "title": "Thymosin beta4 accelerates wound healing",
+      "authors": "Malinda KM, Sidhu GS, Mani H, et al.",
+      "journal": "J Invest Dermatol",
+      "year": 1999,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10469335/"
+    },
+    {
+      "title": "The actin binding site on thymosin beta4 promotes angiogenesis",
+      "authors": "Philp D, Huff T, Gho YS, et al.",
+      "journal": "FASEB J",
+      "year": 2003,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14500546/"
+    },
+    {
+      "title": "Thymosin beta4 activates integrin-linked kinase and promotes cardiac cell migration, survival and cardiac repair",
+      "authors": "Bock-Marquette I, Saxena A, White MD, et al.",
+      "journal": "Nature",
+      "year": 2004,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15565145/"
+    },
+    {
+      "title": "Doping control analysis of TB-500, a synthetic version of an active region of thymosin β4, in equine urine and plasma by liquid chromatography-mass spectrometry",
+      "authors": "Ho EN, Kwok WH, Lau MY, et al.",
+      "journal": "J Chromatogr A",
+      "year": 2012,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23084823/"
+    },
+    {
+      "title": "0.1% RGN-259 (thymosin ß4) ophthalmic solution promotes healing and improves comfort in neurotrophic keratopathy patients in a randomized, placebo-controlled, double-masked phase III clinical trial (SEER-1)",
+      "authors": "Sosne G, Kleinman HK, Springs C, et al.",
+      "journal": "Int J Mol Sci",
+      "year": 2022,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36613994/"
+    },
+    {
+      "title": "TB500/TB1000 and SGF1000: a scientific approach for a better understanding of misbranded and adulterated drugs",
+      "authors": "Delcourt V, Garcia P, Chabot B, et al.",
+      "journal": "Drug Test Anal",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36482504/"
+    },
+    {
+      "title": "Recombinant human thymosin beta 4 improves ischemic cardiac dysfunction in mice and patients with acute ST-segment elevation myocardial infarction after reperfusion",
+      "authors": "Zhang Y, Dong Q, Bian X, et al.",
+      "journal": "Cardiovasc Res",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41229390/"
+    },
+    {
+      "title": "FDA briefing document: evaluation of TB-500-related bulk drug substances for inclusion on the 503A bulks list (Pharmacy Compounding Advisory Committee, 23–24 July 2026)",
+      "authors": "US Food and Drug Administration",
+      "journal": "FDA",
+      "year": 2026,
+      "url": "https://www.fda.gov/media/193349/download"
+    }
+  ]
+}

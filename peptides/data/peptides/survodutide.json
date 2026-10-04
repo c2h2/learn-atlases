@@ -1,0 +1,411 @@
+{
+  "slug": "survodutide",
+  "name": "Survodutide",
+  "aliases": [
+    "BI 456906",
+    "BI-456906",
+    "BI456906"
+  ],
+  "category": "metabolic",
+  "drug_class": "Glucagon/GLP-1 receptor dual agonist",
+  "subclass": "Fatty-acid acylated glucagon analogue (29 amino acids)",
+  "status": "clinical",
+  "status_note": "Investigational and not approved in any country. The phase 3 SYNCHRONIZE-1 (obesity) and SYNCHRONIZE-MASLD trials met their primary endpoints in 2026; results from SYNCHRONIZE-2 and the cardiovascular outcomes trial were expected in the second half of 2026, and the LIVERAGE MASH trials are still running.",
+  "evidence": 4,
+  "evidence_note": "Phase 2 trials in about 1,100 people with obesity, type 2 diabetes or MASH were published in 2023–2024, and six SYNCHRONIZE phase 3 trials enrolled more than 7,500 participants. Only SYNCHRONIZE-1 and SYNCHRONIZE-MASLD had been published by September 2026; outcome data (cardiovascular and liver) are still pending.",
+  "tagline": "Investigational once-weekly glucagon/GLP-1 dual agonist from Boehringer Ingelheim",
+  "summary": "Survodutide is an experimental once-weekly injection that activates two hormone receptors at once: the GLP-1 receptor, which curbs appetite, and the glucagon receptor, which acts mainly on the liver. Developed by Boehringer Ingelheim under licence from Zealand Pharma, it is being tested for obesity and for fatty-liver disease (MASH). In the phase 3 SYNCHRONIZE-1 trial, people who stayed on treatment lost up to 16.6% of their body weight over 76 weeks.",
+  "overview": [
+    "Survodutide belongs to a group of experimental drugs that combine GLP-1 and glucagon activity. The idea comes from oxyntomodulin, a gut hormone cut from the same precursor as glucagon and GLP-1, which weakly activates both receptors and in people reduces food intake while raising energy expenditure. Oxyntomodulin itself has a very short half-life, so several companies set out to build long-acting dual agonists.",
+    "The molecule, coded BI 456906, came out of a research collaboration on glucagon/GLP-1 dual agonists that Zealand Pharma and Boehringer Ingelheim signed in June 2011. It was co-invented by the two companies; Boehringer holds the worldwide licence and runs and pays for development, while Zealand is eligible for milestone payments and royalties. Rather than copying oxyntomodulin, Boehringer's chemists started from the 29-residue glucagon sequence, kept most of its first half, placed the non-coded amino acid 1-aminocyclobutane-1-carboxylic acid (Ac4c) at position 2 to resist the enzyme DPP-4, and made further substitutions to balance activity at the two receptors. A C18 fatty diacid attached to lysine 24 through a short glycine–serine linker binds albumin and allows once-weekly dosing.",
+    "After first human studies in 2017, phase 2 trials reported up to 14.9% weight loss after 46 weeks in obesity, HbA1c reductions in type 2 diabetes, and improvement of MASH without worsening of fibrosis in up to 62% of participants after 48 weeks. The phase 3 SYNCHRONIZE programme in obesity began in November 2023 and includes a cardiovascular outcomes trial of 5,531 people; the LIVERAGE programme in MASH followed in October 2024, after the US FDA granted breakthrough therapy designation.",
+    "In 2026 the first phase 3 results were published. In SYNCHRONIZE-1, mean weight loss at 76 weeks was 12.2% (3.6 mg) and 13.0% (6.0 mg) versus 5.4% with placebo in the treatment-regimen analysis, and up to 16.6% versus 3.2% in the efficacy analysis, which estimates the effect when treatment is taken as intended; SYNCHRONIZE-MASLD showed large reductions in liver fat. Commentators noted that the weight loss was closer to that of semaglutide than of tirzepatide, while Boehringer emphasised reductions in liver and visceral fat."
+  ],
+  "mechanism": [
+    "Survodutide is an agonist of two related class B G-protein-coupled receptors, the GLP-1 receptor and the glucagon receptor. In cell assays its potency was 0.33 nM at the human GLP-1 receptor and 0.52 nM at the human glucagon receptor, about ten times weaker than the native hormones but relatively balanced between the two. GLP-1 receptor activation reduces appetite, slows gastric emptying and increases glucose-dependent insulin release; in mice, labelled survodutide reached appetite-related brain regions through circumventricular organs such as the area postrema, which express GLP-1 receptors but very few glucagon receptors.",
+    "Glucagon receptors are concentrated in the liver. Their activation is thought to reduce liver fat directly and to increase energy expenditure, so that weight loss comes from both lower food intake and higher energy use; in mice survodutide caused more weight loss than maximally effective doses of semaglutide. In people, falls in plasma amino acids confirmed that the glucagon receptor was engaged. Because glucagon also stimulates hepatic glucose output, the GLP-1 component matters for glucose control; in type 2 diabetes survodutide lowered HbA1c."
+  ],
+  "origin": "Synthetic analogue of human glucagon (29 amino acids), redesigned to also activate the GLP-1 receptor and fitted with a C18 fatty-diacid side chain for albumin binding",
+  "discovery": {
+    "year": 2017,
+    "by": "Boehringer Ingelheim and Zealand Pharma (co-invented)",
+    "where": "Biberach an der Riss, Germany, and Copenhagen, Denmark",
+    "note": "Created under the glucagon/GLP-1 collaboration the two companies signed on 15 June 2011; first disclosed as BI 456906 when its first-in-human trial was registered in June 2017, and described in detail by Tina Zimmermann and colleagues in Molecular Metabolism in 2022."
+  },
+  "first_human_year": 2017,
+  "first_approval": null,
+  "developer": "Boehringer Ingelheim (licensed from Zealand Pharma)",
+  "brands": [],
+  "targets": [
+    {
+      "name": "Glucagon-like peptide-1 receptor",
+      "gene": "GLP1R",
+      "uniprot": "P43220",
+      "action": "Agonist (EC50 0.33 nM in CHO-K1 cells)"
+    },
+    {
+      "name": "Glucagon receptor",
+      "gene": "GCGR",
+      "uniprot": "P47871",
+      "action": "Agonist (EC50 0.52 nM in CHO-K1 cells)"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "H",
+          "Ac4c",
+          "Q",
+          "G",
+          "T",
+          "F",
+          "T",
+          "S",
+          "D",
+          "Y",
+          "S",
+          "K",
+          "Y",
+          "L",
+          "D",
+          "E",
+          "R",
+          "A",
+          "A",
+          "K",
+          "D",
+          "F",
+          "I",
+          "K",
+          "W",
+          "L",
+          "E",
+          "S",
+          "A"
+        ],
+        "n_term": "H",
+        "c_term": "NH2"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A2",
+        "type": "nonnatural",
+        "label": "Position 2 is 1-aminocyclobutane-1-carboxylic acid (Ac4c), a non-coded α,α-disubstituted amino acid that replaces Ser2 of glucagon and protects against cleavage by DPP-4",
+        "short": "Ac4c"
+      },
+      {
+        "at": "A24",
+        "type": "lipidation",
+        "label": "Lys24 (Gln24 in glucagon) carries an octadecanedioic (C18) fatty diacid attached through γ-glutamate and a Gly-Ser-Gly-Ser-Gly-Gly peptide linker, in the order Lys–Gly–Gly–Ser–Gly–Ser–Gly–γGlu–C18 diacid; the fatty acid binds serum albumin",
+        "short": "C18 diacid"
+      }
+    ],
+    "notation": "H-His-Ac4c-Gln-Gly-Thr-Phe-Thr-Ser-Asp-Tyr-Ser-Lys-Tyr-Leu-Asp-Glu-Arg-Ala-Ala-Lys-Asp-Phe-Ile-Lys(C18 diacid-γGlu-Gly-Ser-Gly-Ser-Gly-Gly)-Trp-Leu-Glu-Ser-Ala-NH2",
+    "note": "Numbering follows human glucagon (1–29). Residues 1–15 are identical to glucagon except position 2; the other changes are S16E, R18A, Q20K, V23I, Q24K (acylated), M27E, N28S and T29A, plus C-terminal amidation. Position 2 is shown with the Aib token but is really Ac4c. The structure matches the INN/USAN chemical name, which gives the Lys24 substituent as N6-[N-(17-carboxy-1-oxoheptadecyl)-L-γ-glutamylglycyl-L-serylglycyl-L-serylglycylglycyl]."
+  },
+  "formula": "C192H289N47O61",
+  "mw": 4231.7,
+  "half_life": "Long-acting, supporting once-weekly dosing; a human half-life has not been reported in the main publications",
+  "half_life_hours": null,
+  "routes": [
+    "Subcutaneous injection, once weekly (investigational)"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 171378821,
+    "notes": "No experimental 3D structure of survodutide had been deposited in the Protein Data Bank as of September 2026 (searches for 'survodutide' and 'BI 456906' return no entries). PubChem CID 171378821 is used because it depicts all residues with the correct L-configuration."
+  },
+  "ids": {
+    "pubchem_cid": 171378821,
+    "cas": "2805997-46-8",
+    "drugbank": "DB18989",
+    "chembl": "CHEMBL5314776",
+    "unii": "2ALA66NS64",
+    "kegg": "D12898",
+    "inn": "survodutide"
+  },
+  "wiki": "Survodutide",
+  "queries": {
+    "pubmed": "(survodutide[tiab] OR \"BI 456906\"[tiab] OR BI456906[tiab] OR \"BI-456906\"[tiab])",
+    "ctgov": "survodutide OR BI 456906"
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Obesity without diabetes",
+        "stage": "Phase 3 — positive (2026)",
+        "detail": "SYNCHRONIZE-1 (725 adults, 76 weeks): mean weight change of −12.2% (3.6 mg) and −13.0% (6.0 mg) versus −5.4% with placebo by treatment-regimen analysis; up to −16.6% versus −3.2% for people who stayed on treatment. Trials in Chinese (SYNCHRONIZE-CN) and Japanese (SYNCHRONIZE-JP) participants have also been completed."
+      },
+      {
+        "use": "Obesity with type 2 diabetes",
+        "stage": "Phase 3 — results expected 2026",
+        "detail": "SYNCHRONIZE-2 treated 752 people for 76 weeks. In a 16-week phase 2 trial (413 participants), survodutide lowered HbA1c by up to 1.71 percentage points and weight by up to 8.7%, versus 5.3% with open-label semaglutide 1 mg."
+      },
+      {
+        "use": "MASLD with obesity",
+        "stage": "Phase 3 — positive (2026)",
+        "detail": "SYNCHRONIZE-MASLD (216 adults, 48 weeks, 6.0 mg): 84.2% of those who stayed on treatment cut liver fat by at least 30% versus 24.3% with placebo, with 12.2% versus 1.0% weight loss."
+      },
+      {
+        "use": "MASH with moderate or advanced fibrosis",
+        "stage": "Phase 3 (LIVERAGE)",
+        "detail": "In the 48-week phase 2 trial (293 participants), MASH improved without worsening of fibrosis in 47%, 62% and 43% on 2.4, 4.8 and 6.0 mg versus 14% on placebo. LIVERAGE (about 1,800 adults with F2–F3 fibrosis) tests histology at 52 weeks and liver outcomes over about seven years; the programme has FDA breakthrough therapy and EMA PRIME designations."
+      },
+      {
+        "use": "MASH with compensated cirrhosis",
+        "stage": "Phase 3 (LIVERAGE-Cirrhosis)",
+        "detail": "About 1,590 adults with compensated cirrhosis (F4), followed for liver outcomes over about four years. A phase 1 study found similar drug exposure in people with compensated or decompensated cirrhosis and in healthy controls, with reductions in liver fat and liver stiffness."
+      },
+      {
+        "use": "Cardiovascular safety and outcomes in obesity",
+        "stage": "Phase 3 — completed, results pending",
+        "detail": "SYNCHRONIZE-CVOT enrolled 5,531 people with overweight or obesity and cardiovascular disease, chronic kidney disease or cardiovascular risk factors; the primary endpoint is five-point major adverse cardiovascular events."
+      },
+      {
+        "use": "Glycaemic control in type 2 diabetes",
+        "stage": "Phase 3 (started 2026)",
+        "detail": "A 56-week placebo-controlled trial in about 600 people with type 2 diabetes, with change in HbA1c as the primary endpoint, began in August 2026."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Grey-market 'research' survodutide",
+        "detail": "FDA reports that companies have illegally sold unapproved products said to contain survodutide, falsely labelled 'for research purposes' but marketed with dosing instructions for people to inject.",
+        "evidence": "No survodutide product is approved; human data come only from clinical trials, and the identity, dose, purity and sterility of grey-market products are unknown."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 2011,
+      "date": "2011-06-15",
+      "title": "Zealand and Boehringer sign glucagon/GLP-1 deal",
+      "detail": "Zealand Pharma granted Boehringer Ingelheim an exclusive worldwide licence to glucagon/GLP-1 dual agonists for type 2 diabetes and obesity, with joint research; Boehringer paid a €10 million licence fee.",
+      "kind": "market"
+    },
+    {
+      "year": 2017,
+      "date": "2017-06",
+      "title": "First doses in humans",
+      "detail": "A single-rising-dose study of BI 456906 began in healthy men; a multiple-dose study in people with overweight or obesity followed in 2018 and reached a placebo-corrected weight loss of 13.8% after 16 weeks.",
+      "kind": "trial"
+    },
+    {
+      "year": 2021,
+      "date": "2021-05",
+      "title": "FDA fast track for NASH",
+      "detail": "The US FDA granted fast track designation to survodutide for non-alcoholic steatohepatitis, now called MASH.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2022,
+      "date": "2022-11",
+      "title": "Discovery paper published",
+      "detail": "Boehringer scientists described BI 456906 in Molecular Metabolism: a glucagon-based peptide with Ac4c at position 2 and a C18 diacid on lysine 24 that caused more weight loss in mice than semaglutide.",
+      "kind": "science"
+    },
+    {
+      "year": 2023,
+      "date": "2023-11",
+      "title": "EU PRIME support for MASH",
+      "detail": "The European Medicines Agency accepted survodutide into its PRIME (priority medicines) scheme for MASH.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2023,
+      "date": "2023-11",
+      "title": "Phase 3 SYNCHRONIZE programme begins",
+      "detail": "The cardiovascular safety trial SYNCHRONIZE-CVOT started on 20 November 2023, followed within a week by SYNCHRONIZE-1 (obesity without diabetes) and SYNCHRONIZE-2 (obesity with type 2 diabetes).",
+      "kind": "trial"
+    },
+    {
+      "year": 2023,
+      "date": "2023-12",
+      "title": "Phase 2 results in type 2 diabetes",
+      "detail": "In 413 people with type 2 diabetes, 16 weeks of survodutide lowered HbA1c by up to 1.71 percentage points and body weight by up to 8.7%; weekly doses of 1.8 mg or more caused more weight loss than semaglutide 1 mg.",
+      "kind": "trial"
+    },
+    {
+      "year": 2024,
+      "date": "2024-02",
+      "title": "Phase 2 obesity results published",
+      "detail": "In 387 adults with overweight or obesity but no diabetes, weight fell by up to 14.9% after 46 weeks with 4.8 mg, versus 2.8% with placebo.",
+      "kind": "trial"
+    },
+    {
+      "year": 2024,
+      "date": "2024-06-07",
+      "title": "Phase 2 MASH trial in NEJM",
+      "detail": "Up to 62% of adults with biopsy-confirmed MASH and F1–F3 fibrosis had MASH improvement without worsening of fibrosis after 48 weeks, versus 14% on placebo.",
+      "kind": "trial"
+    },
+    {
+      "year": 2024,
+      "date": "2024-10",
+      "title": "Breakthrough therapy designation and MASH phase 3",
+      "detail": "Boehringer announced FDA breakthrough therapy designation for non-cirrhotic MASH with moderate or advanced fibrosis and the launch of the LIVERAGE and LIVERAGE-Cirrhosis phase 3 outcome trials.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2026,
+      "date": "2026-04-28",
+      "title": "SYNCHRONIZE-1 meets its goals",
+      "detail": "Topline phase 3 results in 725 adults without diabetes showed mean weight loss of up to 16.6% after 76 weeks for people who stayed on treatment, versus 3.2% with placebo.",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "date": "2026-06-07",
+      "title": "Full phase 3 results at ADA",
+      "detail": "SYNCHRONIZE-1 was published in NEJM and SYNCHRONIZE-MASLD in Nature Medicine; Boehringer also reported up to 34% less visceral fat and 63% less liver fat in an imaging substudy.",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "date": "2026-06",
+      "title": "Cardiovascular outcomes trial completes",
+      "detail": "SYNCHRONIZE-CVOT, with 5,531 participants, reached its primary completion in June 2026; results were expected later in the year.",
+      "kind": "trial"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "investigational",
+      "detail": "Fast track (2021) and breakthrough therapy designation (September 2024) for MASH with moderate or advanced fibrosis; phase 3 obesity and MASH trials under way. Not approved."
+    },
+    {
+      "region": "EU",
+      "status": "investigational",
+      "detail": "Accepted into the EMA PRIME scheme for MASH in November 2023. Not approved."
+    },
+    {
+      "region": "China",
+      "status": "investigational",
+      "detail": "Breakthrough therapy designation for MASH from the NMPA's Center for Drug Evaluation (June 2024); phase 3 obesity trial in Chinese adults (SYNCHRONIZE-CN) completed in 2025."
+    },
+    {
+      "region": "Japan",
+      "status": "investigational",
+      "detail": "Phase 3 SYNCHRONIZE-JP trial in Japanese people with obesity disease (274 participants) completed in 2025."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "Not approved for human use by any regulator, so it falls under the S0 'non-approved substances' section of the World Anti-Doping Agency list, which is prohibited at all times."
+    }
+  ],
+  "pk": {
+    "half_life": "Not reported in the main publications; the albumin-binding C18 diacid supports once-weekly dosing (mean residence time 44 h in mice and 140 h in dogs)",
+    "metabolism": "A carbon-14 study of metabolism and excretion in healthy men was completed in 2022; drug exposure was similar in people with cirrhosis and in healthy controls"
+  },
+  "dosing": null,
+  "dosing_note": "No approved dose. Survodutide is investigational; in trials it is injected under the skin once weekly with gradual dose escalation under medical supervision.",
+  "safety": {
+    "common": [
+      "Nausea",
+      "Vomiting",
+      "Diarrhoea",
+      "Constipation",
+      "Decreased appetite"
+    ],
+    "serious": [],
+    "warnings": [
+      "Investigational drug not approved in any country; it is available only within clinical trials"
+    ],
+    "notes": "Adverse effects were mainly gastrointestinal, dose-related, mostly mild to moderate and concentrated in the dose-escalation period. In SYNCHRONIZE-1 gastrointestinal events occurred in 80.9% (3.6 mg) and 89.7% (6.0 mg) of participants versus 47.9% with placebo, and Boehringer reported that 19% of survodutide-treated participants stopped treatment because of them (placebo 2.9%). In the phase 2 MASH trial serious adverse events occurred in 8% on survodutide and 7% on placebo. In SYNCHRONIZE-1, lean mass made up no more than 11.3% of the tissue lost at the highest dose. Full phase 3 safety data, including rarer events, are not yet available."
+  },
+  "market": null,
+  "facts": [
+    "Survodutide is built on the glucagon sequence: residues 1–15 are identical to human glucagon except at position 2.",
+    "Position 2 holds 1-aminocyclobutane-1-carboxylic acid, a ring-shaped relative of the Aib residue that protects semaglutide and tirzepatide from DPP-4.",
+    "Its fatty acid is attached through a short peptide linker (γGlu-Gly-Ser-Gly-Ser-Gly-Gly) instead of the OEG spacers used in semaglutide and tirzepatide.",
+    "SYNCHRONIZE-CVOT, with 5,531 participants, is the largest trial in the survodutide programme."
+  ],
+  "related": [
+    "mazdutide",
+    "glucagon",
+    "semaglutide",
+    "tirzepatide",
+    "retatrutide",
+    "liraglutide"
+  ],
+  "references": [
+    {
+      "title": "BI 456906: discovery and preclinical pharmacology of a novel GCGR/GLP-1R dual agonist with robust anti-obesity efficacy",
+      "authors": "Zimmermann T, Thomas L, Baader-Pagler T, et al.",
+      "journal": "Mol Metab",
+      "year": 2022,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36356832/"
+    },
+    {
+      "title": "Phase I studies of the safety, tolerability, pharmacokinetics and pharmacodynamics of the dual glucagon receptor/glucagon-like peptide-1 receptor agonist BI 456906",
+      "authors": "Jungnik A, Arrubla Martinez J, Plum-Mörschel L, et al.",
+      "journal": "Diabetes Obes Metab",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36527386/"
+    },
+    {
+      "title": "Dose-response effects on HbA1c and bodyweight reduction of survodutide, a dual glucagon/GLP-1 receptor agonist, compared with placebo and open-label semaglutide in people with type 2 diabetes: a randomised clinical trial",
+      "authors": "Blüher M, Rosenstock J, Hoefler J, et al.",
+      "journal": "Diabetologia",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38095657/"
+    },
+    {
+      "title": "Glucagon and GLP-1 receptor dual agonist survodutide for obesity: a randomised, double-blind, placebo-controlled, dose-finding phase 2 trial",
+      "authors": "le Roux CW, Steen O, Lucas KJ, et al.",
+      "journal": "Lancet Diabetes Endocrinol",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38330987/"
+    },
+    {
+      "title": "A phase 2 randomized trial of survodutide in MASH and fibrosis",
+      "authors": "Sanyal AJ, Bedossa P, Fraessdorf M, et al.",
+      "journal": "N Engl J Med",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38847460/"
+    },
+    {
+      "title": "Efficacy, tolerability and pharmacokinetics of survodutide, a glucagon/glucagon-like peptide-1 receptor dual agonist, in cirrhosis",
+      "authors": "Lawitz EJ, Fraessdorf M, Neff GW, et al.",
+      "journal": "J Hepatol",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38857788/"
+    },
+    {
+      "title": "Survodutide for the treatment of obesity: rationale and design of the SYNCHRONIZE cardiovascular outcomes trial",
+      "authors": "Kosiborod MN, Platz E, Wharton S, et al.",
+      "journal": "JACC Heart Fail",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39453356/"
+    },
+    {
+      "title": "Survodutide once weekly for the treatment of adults with obesity (SYNCHRONIZE-1)",
+      "authors": "le Roux CW, Wharton S, Startseva E, et al.",
+      "journal": "N Engl J Med",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42253238/"
+    },
+    {
+      "title": "Survodutide in adults with obesity and metabolic dysfunction-associated steatotic liver disease: SYNCHRONIZE-MASLD, a randomized, double-blind, placebo-controlled phase 3 trial",
+      "authors": "Kaplan LM, Startseva E, le Roux CW, et al.",
+      "journal": "Nat Med",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42252333/"
+    },
+    {
+      "title": "Survodutide acts through circumventricular organs in the brain and activates neuronal regions associated with appetite regulation",
+      "authors": "Zimmermann T, Bleymehl K, Haebel P, et al.",
+      "journal": "Mol Metab",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41638399/"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "slug": "pramlintide",
+  "name": "Pramlintide",
+  "aliases": ["AC137", "AC-0137", "Tripro-amylin", "25,28,29-Pro-human amylin"],
+  "category": "metabolic",
+  "drug_class": "Amylin analogue (amylinomimetic)",
+  "subclass": "Synthetic human amylin analogue with three proline substitutions",
+  "status": "approved",
+  "status_note": "Approved by the FDA in March 2005 (Symlin) as an add-on to mealtime insulin and never authorised in the EU; AstraZeneca discontinued manufacture of the US product in 2025.",
+  "evidence": 4,
+  "evidence_note": "Approved on the basis of 26- to 52-week placebo-controlled phase 3 trials in insulin-treated type 1 and type 2 diabetes; effects on HbA1c and body weight were modest.",
+  "tagline": "The first amylin-analogue drug, injected with mealtime insulin as Symlin",
+  "summary": "Pramlintide is a synthetic version of amylin, a hormone released together with insulin, altered with three prolines so that it does not clump like the natural peptide. Sold as Symlin from 2005, it was injected before main meals alongside insulin in type 1 and type 2 diabetes to blunt the rise in blood sugar after eating and to curb appetite. It was discontinued in the US in 2025.",
+  "overview": [
+    "Amylin, also called islet amyloid polypeptide (IAPP), is a 37-amino-acid hormone stored with insulin in pancreatic beta cells and released with it after meals. It was identified in 1986–87 as the main component of the amyloid deposits found in the pancreas of people with type 2 diabetes, first by Per Westermark and colleagues and then by Garth Cooper's group in Oxford. In type 1 and type 2 diabetes, secretion of both hormones after meals is reduced.",
+    "Human amylin itself is a poor drug: it is sticky, poorly soluble and readily forms amyloid fibrils. Chemists at Amylin Pharmaceuticals in San Diego, a company founded in 1987 to exploit the discovery, replaced alanine 25, serine 28 and serine 29 with prolines, the residues found at the same positions in rat amylin, a species that does not develop islet amyloid. The resulting peptide, AC137, later named pramlintide, kept amylin's biological activity but was soluble and stable enough to formulate.",
+    "The road to approval was slow. The FDA issued approvable letters in 2001 and 2003, mainly because of severe insulin-induced hypoglycaemia in type 1 diabetes, before approving Symlin in March 2005 as an add-on to mealtime insulin. Trials lasting up to a year showed modest HbA1c reductions together with weight loss. Amylin Pharmaceuticals described it as the first medicine other than insulin approved for glucose control in type 1 diabetes.",
+    "Use remained limited: pramlintide has a half-life of under an hour, had to be injected separately before each main meal, commonly caused nausea and required mealtime insulin to be cut by half at the start. After Bristol-Myers Squibb bought Amylin in 2012 the product passed to AstraZeneca, which discontinued it in the US in 2025. Its short half-life was the limitation Novo Nordisk set out to overcome with the once-weekly analogue cagrilintide."
+  ],
+  "mechanism": [
+    "Pramlintide mimics amylin at amylin receptors, which are complexes of the calcitonin receptor with one of three receptor activity-modifying proteins (RAMP1–3). Acting largely through the hindbrain, it slows gastric emptying, suppresses the inappropriate rise in glucagon after meals and increases satiety, so less glucose enters the blood after eating and food intake falls.",
+    "The risk of hypoglycaemia comes from the accompanying insulin: slower carbohydrate absorption can leave the usual pre-meal insulin dose too large, which is why mealtime insulin is reduced by 50% when pramlintide is started."
+  ],
+  "origin": "Synthetic analogue of human amylin (islet amyloid polypeptide), a 37-residue hormone co-secreted with insulin by pancreatic beta cells; the three prolines are taken from rat amylin",
+  "discovery": {"year": 1991, "by": "Laura Gaeta, Howard Jones and Elisabeth Albrecht, Amylin Pharmaceuticals", "where": "San Diego, California, USA", "note": "Proline-substituted amylin agonists, including 25,28,29-Pro-human amylin, were claimed in a patent application with a March 1991 priority date, citing better solubility and stability than human amylin. The parent hormone was identified in 1986–87."},
+  "first_human_year": null,
+  "first_approval": {"date": "2005-03-16", "agency": "FDA", "region": "US", "brand": "Symlin", "indication": "Adjunct to mealtime insulin in type 1 and type 2 diabetes"},
+  "developer": "Amylin Pharmaceuticals (San Diego); later Bristol-Myers Squibb and AstraZeneca",
+  "brands": [
+    {"name": "Symlin", "company": "Amylin Pharmaceuticals (AstraZeneca from 2014)", "route": "Subcutaneous, before major meals (vial; SymlinPen 60 and SymlinPen 120 pen-injectors from 2007)", "use": "Adjunct to mealtime insulin in type 1 and type 2 diabetes; discontinued in the US in 2025", "approved": "2005-03-16", "agency": "FDA"}
+  ],
+  "targets": [
+    {"name": "Amylin receptors AMY1–3 (calcitonin receptor with RAMP1, RAMP2 or RAMP3)", "gene": "CALCR + RAMP1/RAMP2/RAMP3", "uniprot": "P30988", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["K","C","N","T","A","T","C","A","T","Q","R","L","A","N","F","L","V","H","S","S","N","N","F","G","P","I","L","P","P","T","N","V","G","S","N","T","Y"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [{"from": "A2", "to": "A7", "type": "disulfide"}],
+    "modifications": [
+      {"at": "A25", "type": "other", "label": "Pro25 replaces Ala25 of human amylin (as in rat amylin); reduces aggregation", "short": "A25P"},
+      {"at": "A28", "type": "other", "label": "Pro28 replaces Ser28 of human amylin (as in rat amylin); reduces aggregation", "short": "S28P"},
+      {"at": "A29", "type": "other", "label": "Pro29 replaces Ser29 of human amylin (as in rat amylin); reduces aggregation", "short": "S29P"}
+    ],
+    "notation": "H-Lys-Cys-Asn-Thr-Ala-Thr-Cys-Ala-Thr-Gln-Arg-Leu-Ala-Asn-Phe-Leu-Val-His-Ser-Ser-Asn-Asn-Phe-Gly-Pro-Ile-Leu-Pro-Pro-Thr-Asn-Val-Gly-Ser-Asn-Thr-Tyr-NH2 (disulfide Cys2–Cys7)",
+    "note": "Identical to human amylin except for prolines at positions 25, 28 and 29. Like the natural hormone it has a Cys2–Cys7 disulfide ring and an amidated C-terminus. Supplied as the acetate salt."
+  },
+  "formula": "C171H267N51O53S2",
+  "mw": 3949.44,
+  "half_life": "≈ 48 minutes",
+  "half_life_hours": 0.8,
+  "routes": ["Subcutaneous injection before each major meal"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 70691388,
+    "notes": "No experimental structure of pramlintide itself has been deposited. Cryo-EM structures of pramlintide-based analogues that differ by a single lysine substitution (San45 and San385) bound to the calcitonin and AMY3 receptors (e.g. 8F0J, 8F2A; Cao et al., 2024), and NMR structures of human amylin in detergent micelles (e.g. 2L86), show the related peptide conformations."
+  },
+  "ids": {"pubchem_cid": 70691388, "cas": "151126-32-8", "drugbank": "DB01278", "chembl": "CHEMBL2103758", "unii": "D3FM8FA78T", "kegg": "D05594", "chebi": "CHEBI:135922", "atc": "A10BX05", "inn": "pramlintide"},
+  "wiki": "Pramlintide",
+  "queries": {"pubmed": "(pramlintide[tiab] OR symlin[tiab] OR AC137[tiab])", "ctgov": "pramlintide OR Symlin"},
+  "uses": {
+    "approved": [
+      {"use": "Type 1 diabetes (add-on to mealtime insulin)", "detail": "For people using mealtime insulin who have not reached glucose targets despite optimal insulin therapy.", "since": 2005, "where": "US only (discontinued 2025)"},
+      {"use": "Type 2 diabetes treated with mealtime insulin", "detail": "Same add-on role in insulin-treated type 2 diabetes, at a higher dose than in type 1 diabetes.", "since": 2005, "where": "US only (discontinued 2025)"}
+    ],
+    "investigational": [
+      {"use": "Obesity", "stage": "Phase 2 — discontinued (2011)", "detail": "Pramlintide alone produced modest, progressive weight loss in phase 2 trials; a pramlintide–metreleptin combination produced 12.7% mean weight loss in a proof-of-concept study but was dropped by Amylin and Takeda in 2011."},
+      {"use": "Insulin–pramlintide delivery systems for type 1 diabetes", "stage": "Phase 1–2", "detail": "Academic groups have tested closed-loop pumps that deliver fast-acting insulin plus pramlintide, and Adocia's ADO09, a co-formulation of pramlintide with insulin A21G, lowered post-meal glucose and body weight versus insulin aspart in small trials."}
+    ],
+    "off_label": []
+  },
+  "history": [
+    {"year": 1986, "date": "1986-11-14", "title": "Islet amyloid peptide identified", "detail": "Per Westermark and colleagues purified the fibril protein of islet amyloid from an insulin-secreting tumour and found a new peptide about 50% homologous to the neuropeptide CGRP.", "kind": "discovery"},
+    {"year": 1987, "title": "Amylin sequenced and purified", "detail": "Westermark's group reported the full 37-residue sequence (June), and Garth Cooper's group in Oxford purified the same peptide from amyloid-rich pancreases of people with type 2 diabetes (December); it became known as amylin.", "kind": "discovery"},
+    {"year": 1987, "title": "Amylin Pharmaceuticals founded", "detail": "Howard Greene co-founded the San Diego company to develop a diabetes drug based on the newly discovered hormone.", "kind": "market"},
+    {"year": 1991, "date": "1991-03-08", "title": "Proline analogues patented", "detail": "Amylin Pharmaceuticals filed patent claims on amylin agonists including 25,28,29-Pro-human amylin, later named pramlintide.", "kind": "discovery"},
+    {"year": 1995, "date": "1995-08", "title": "First clinical results", "detail": "An intravenous infusion of AC137 reduced the rise in blood glucose after a standard meal in people with type 1 diabetes.", "kind": "trial"},
+    {"year": 2001, "date": "2001-10-12", "title": "First FDA approvable letter", "detail": "The FDA judged Symlin approvable but required more clinical work; a second approvable letter in December 2003 asked for data on a patient group and method of use without an increased risk of severe hypoglycaemia.", "kind": "regulatory"},
+    {"year": 2005, "date": "2005-03-16", "title": "FDA approves Symlin", "detail": "Approved as an add-on to mealtime insulin in type 1 and type 2 diabetes and launched in April 2005.", "kind": "approval"},
+    {"year": 2007, "title": "SymlinPen pen-injectors approved", "detail": "The SymlinPen 60 and SymlinPen 120 pre-filled pens delivered fixed doses of 15–60 µg and 60–120 µg.", "kind": "approval"},
+    {"year": 2008, "date": "2008-05-20", "title": "Amylin plus leptin for obesity", "detail": "Amylin Pharmaceuticals reported that pramlintide combined with recombinant leptin (metreleptin) gave 12.7% mean weight loss in a proof-of-concept study, more than either drug alone.", "kind": "science"},
+    {"year": 2011, "date": "2011-08-04", "title": "Obesity combination dropped", "detail": "Amylin and Takeda ended development of pramlintide/metreleptin after a commercial reassessment, months after antibody findings with metreleptin had paused a trial.", "kind": "trial"},
+    {"year": 2012, "date": "2012-08-08", "title": "Bristol-Myers Squibb buys Amylin", "detail": "BMS completed its roughly $5.3 billion acquisition of Amylin, with AstraZeneca paying about $3.4 billion to share the business; AstraZeneca became sole owner of Symlin in February 2014.", "kind": "market"},
+    {"year": 2025, "date": "2025-10-27", "title": "Symlin discontinued in the US", "detail": "AstraZeneca reported to the FDA that it had discontinued manufacture of SymlinPen 60 and SymlinPen 120; all Symlin presentations are now listed as discontinued.", "kind": "market"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "withdrawn", "detail": "Symlin approved 16 March 2005 (NDA 021332). Manufacture discontinued by AstraZeneca in 2025 (FDA discontinuation notice posted 27 October 2025); Drugs@FDA lists all presentations as discontinued."},
+    {"region": "EU", "status": "not-approved", "detail": "Never authorised in the EU; there is no EMA marketing authorisation for pramlintide."}
+  ],
+  "pk": {
+    "half_life": "About 48 minutes in healthy people",
+    "tmax": "About 20 minutes after subcutaneous injection",
+    "bioavailability": "30–40% after subcutaneous injection",
+    "metabolism": "Proteolytic degradation; the main metabolite, des-Lys1 pramlintide (2–37), is active in vitro. About 40% circulates unbound.",
+    "excretion": "Not fully characterised; no dose change needed in mild to severe renal impairment (end-stage renal disease not studied)"
+  },
+  "dosing": [
+    {"product": "Symlin (type 1 diabetes)", "regimen": "15 µg subcutaneously before each major meal, increased in 15 µg steps at least 3 days apart to 30 or 60 µg as tolerated; mealtime insulin is cut by 50% at the start."},
+    {"product": "Symlin (type 2 diabetes)", "regimen": "60 µg before each major meal, increased to 120 µg as tolerated; mealtime insulin is cut by 50% at the start."}
+  ],
+  "dosing_note": "Labelled US regimens summarised for reference only. Symlin has been discontinued in the US; it was always given as a separate injection and never mixed with insulin.",
+  "safety": {
+    "common": ["Nausea", "Loss of appetite", "Vomiting", "Headache", "Fatigue", "Dizziness", "Joint pain"],
+    "serious": ["Severe insulin-induced hypoglycaemia, usually within 3 hours of an injection and mainly in type 1 diabetes", "Serious hypersensitivity reactions"],
+    "warnings": ["US boxed warning: severe hypoglycaemia when used with insulin, particularly in type 1 diabetes; careful patient selection and a 50% cut in mealtime insulin at initiation are required", "Contraindicated in hypoglycaemia unawareness and confirmed gastroparesis", "Slows gastric emptying: oral drugs that need a rapid effect should be taken at least 1 hour before or 2 hours after an injection"],
+    "notes": "Nausea was the main tolerability problem (48% versus 17% with placebo in pooled type 1 diabetes trials) and was reduced by slow dose titration."
+  },
+  "market": {
+    "note": "Symlin remained a small product; annual sales were roughly US$90–105 million in the years before Amylin Pharmaceuticals was acquired.",
+    "figures": [
+      {"year": 2009, "label": "Symlin net product sales", "value": "US$86.4 million", "source": "Amylin Pharmaceuticals Form 10-K 2011"},
+      {"year": 2010, "label": "Symlin net product sales", "value": "US$91.8 million", "source": "Amylin Pharmaceuticals Form 10-K 2011"},
+      {"year": 2011, "label": "Symlin net product sales", "value": "US$103.9 million", "source": "Amylin Pharmaceuticals Form 10-K 2011"}
+    ]
+  },
+  "facts": [
+    "Pramlintide's three prolines were borrowed from rat amylin, which has prolines at positions 25, 28 and 29.",
+    "Amylin Pharmaceuticals described Symlin as the first FDA-approved medicine other than insulin for glucose control in type 1 diabetes.",
+    "Its half-life of under an hour meant injections before every main meal, the limitation Novo Nordisk addressed with the once-weekly analogue cagrilintide.",
+    "Amylin Pharmaceuticals also developed exenatide (Byetta), which was approved in the same year, 2005."
+  ],
+  "related": ["cagrilintide", "eloralintide", "insulin", "exenatide", "semaglutide", "liraglutide", "glucagon"],
+  "references": [
+    {"title": "A novel peptide in the calcitonin gene related peptide family as an amyloid fibril protein in the endocrine pancreas", "authors": "Westermark P, Wernstedt C, Wilander E, Sletten K", "journal": "Biochem Biophys Res Commun", "year": 1986, "url": "https://pubmed.ncbi.nlm.nih.gov/3535798/"},
+    {"title": "Amyloid fibrils in human insulinoma and islets of Langerhans of the diabetic cat are derived from a neuropeptide-like protein also present in normal islet cells", "authors": "Westermark P, Wernstedt C, Wilander E, et al.", "journal": "Proc Natl Acad Sci U S A", "year": 1987, "url": "https://pubmed.ncbi.nlm.nih.gov/3035556/"},
+    {"title": "Purification and characterization of a peptide from amyloid-rich pancreases of type 2 diabetic patients", "authors": "Cooper GJ, Willis AC, Clark A, et al.", "journal": "Proc Natl Acad Sci U S A", "year": 1987, "url": "https://pubmed.ncbi.nlm.nih.gov/3317417/"},
+    {"title": "Reduction of postprandial hyperglycemia in subjects with IDDM by intravenous infusion of AC137, a human amylin analogue", "authors": "Kolterman OG, Gottlieb A, Moyses C, Colburn W", "journal": "Diabetes Care", "year": 1995, "url": "https://pubmed.ncbi.nlm.nih.gov/7587855/"},
+    {"title": "A randomized study and open-label extension evaluating the long-term efficacy of pramlintide as an adjunct to insulin therapy in type 1 diabetes", "authors": "Whitehouse F, Kruger DF, Fineman M, et al.", "journal": "Diabetes Care", "year": 2002, "url": "https://pubmed.ncbi.nlm.nih.gov/11919132/"},
+    {"title": "Pramlintide as an adjunct to insulin therapy improves long-term glycemic and weight control in patients with type 2 diabetes: a 1-year randomized controlled trial", "authors": "Hollander PA, Levy P, Fineman MS, et al.", "journal": "Diabetes Care", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/12610038/"},
+    {"title": "Progressive reduction in body weight after treatment with the amylin analog pramlintide in obese subjects: a phase 2, randomized, placebo-controlled, dose-escalation study", "authors": "Aronne L, Fujioka K, Aroda V, et al.", "journal": "J Clin Endocrinol Metab", "year": 2007, "url": "https://pubmed.ncbi.nlm.nih.gov/17504894/"},
+    {"title": "Leptin responsiveness restored by amylin agonism in diet-induced obesity: evidence from nonclinical and clinical studies", "authors": "Roth JD, Roland BL, Cole RL, et al.", "journal": "Proc Natl Acad Sci U S A", "year": 2008, "url": "https://pubmed.ncbi.nlm.nih.gov/18458326/"},
+    {"title": "A fully artificial pancreas versus a hybrid artificial pancreas for type 1 diabetes: a single-centre, open-label, randomised controlled, crossover, non-inferiority trial", "authors": "Tsoukas MA, Majdpour D, Yale JF, et al.", "journal": "Lancet Digit Health", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34580055/"},
+    {"title": "A co-formulation of pramlintide and insulin A21G (ADO09) improves postprandial glucose and short-term control of mean glucose, time in range, and body weight versus insulin aspart in adults with type 1 diabetes", "authors": "Andersen G, Eloy R, Famulla S, et al.", "journal": "Diabetes Obes Metab", "year": 2023, "url": "https://pubmed.ncbi.nlm.nih.gov/36633505/"}
+  ]
+}

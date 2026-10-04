@@ -1,0 +1,350 @@
+{
+  "slug": "kpv",
+  "name": "KPV",
+  "aliases": [
+    "Lys-Pro-Val",
+    "α-MSH(11–13)",
+    "ACTH(11–13)",
+    "KPV tripeptide",
+    "Lysine-proline-valine"
+  ],
+  "category": "repair",
+  "drug_class": "Melanocortin-derived anti-inflammatory tripeptide",
+  "subclass": "C-terminal fragment of α-melanocyte-stimulating hormone",
+  "status": "research",
+  "status_note": "Not approved as a medicine anywhere; the evidence is from rodent and cell models, and KPV reaches people only through cosmetic formulations and unregulated 'research peptide' suppliers.",
+  "evidence": 1,
+  "evidence_note": "Anti-inflammatory activity is reproducible in rodent colitis and skin models and in cultured human cells, but no controlled human trial of KPV has been published and ClinicalTrials.gov lists no study using it as an intervention.",
+  "tagline": "The three-residue tail of α-MSH, studied as an anti-inflammatory peptide",
+  "summary": "KPV is the last three amino acids of α-melanocyte-stimulating hormone (Lys-Pro-Val), the fragment that carries much of the parent hormone's anti-inflammatory activity without its pigmenting core. In cells and in rodents it damps down NF-κB signalling and the release of inflammatory cytokines, and it reduces gut and skin inflammation. No controlled human study has been published, and KPV is sold only as a cosmetic ingredient or an unapproved research chemical.",
+  "overview": [
+    "α-Melanocyte-stimulating hormone (α-MSH) is a 13-residue hormone cut out of pro-opiomelanocortin. Besides driving pigmentation it is a potent endogenous anti-inflammatory and antipyretic agent, and work in James Lipton's laboratory in the 1980s traced much of that activity to its carboxy-terminal tripeptide, lysine-proline-valine. In 1989 Hiltz and Lipton showed that the isolated tripeptide alone reduced picryl-chloride-induced ear swelling in mice in a dose-related way, and KPV has been studied as an anti-inflammatory lead ever since.",
+    "The attraction of the fragment is what it leaves out. The pigmenting 'message' of α-MSH lies in its central His-Phe-Arg-Trp core, so KPV does not darken skin, and its very small size makes it cheap to synthesise and easy to formulate. How much of its activity still depends on melanocortin receptors is disputed: some cell work points to MC1R or MC3R involvement, while other experiments find anti-inflammatory effects in cells that express little or no receptor, suggesting an intracellular site of action.",
+    "The best-developed line of evidence is in the gut. In 2008 Dalmasso and colleagues showed that KPV is a substrate of PepT1 (SLC15A1), the di- and tripeptide transporter that is switched on in inflamed colonic epithelium, and that transporter-mediated uptake let nanomolar concentrations reduce inflammation in mouse colitis. The same year a German group reported benefit in two murine models of inflammatory bowel disease. Later work packaged KPV in hyaluronic-acid nanoparticles for oral, colon-targeted delivery in mice, and cell studies extended the anti-inflammatory readouts to bronchial epithelium, keratinocytes and adipocytes.",
+    "None of this has been tested in a controlled human trial. KPV nonetheless has a second life outside the laboratory: it is used as a cosmetic 'skin-soothing' peptide and is sold widely online as a research chemical, often alongside BPC-157, for gut complaints, skin conditions and wound healing. These products are not medicines, are not manufactured to pharmaceutical standards, and the doses and routes promoted for them have never been studied in people."
+  ],
+  "mechanism": [
+    "KPV's main documented effect is on the NF-κB pathway. In epithelial and immune cells it reduces the degradation of IκB and the nuclear translocation of the p65 (RelA) subunit, so κB-driven transcription of TNF-α, IL-1β, IL-6 and IL-8 falls; MAPK signalling is dampened in parallel. The result in tissue is less neutrophil recruitment, less oedema and, in colitis models, better preservation of the epithelial barrier.",
+    "How KPV gets to that pathway differs between tissues. In intestinal epithelium it is carried inside the cell by PepT1, a proton-coupled transporter that normally absorbs dietary di- and tripeptides and is upregulated during inflammation — which is why the effect is seen at concentrations far below those needed for receptor agonism, and why luminal delivery makes pharmacological sense. Elsewhere the picture is less settled: unlike full-length α-MSH, KPV binds melanocortin receptors only weakly, and studies dissecting the core and C-terminal fragments disagree on how much of its activity is receptor-mediated."
+  ],
+  "origin": "Synthetic tripeptide identical to residues 11–13 of α-melanocyte-stimulating hormone, itself cleaved from pro-opiomelanocortin (POMC)",
+  "discovery": {
+    "year": 1989,
+    "by": "Michael E. Hiltz and James M. Lipton",
+    "where": "University of Texas Southwestern Medical Center, Dallas, US",
+    "note": "Lipton's group had already identified Lys-Pro-Val as the antipyretic 'message sequence' of α-MSH; the 1989 FASEB J paper was the first to show that the isolated tripeptide had general anti-inflammatory activity in vivo."
+  },
+  "first_human_year": null,
+  "first_approval": null,
+  "developer": "No single developer; investigated in academic laboratories in the US and Germany and supplied by cosmetic-ingredient and research-chemical vendors",
+  "brands": [],
+  "analogs": [
+    {
+      "name": "KdPT (Lys-D-Pro-Thr)",
+      "note": "A tripeptide derived from interleukin-1β rather than α-MSH, developed alongside KPV; it has shown benefit in murine intestinal inflammation and in psoriasis-like skin models."
+    },
+    {
+      "name": "α-MSH (1–13)",
+      "note": "The full parent hormone: anti-inflammatory and antipyretic, but also pigmenting, because its central His-Phe-Arg-Trp core activates melanocortin receptors."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Peptide transporter 1 (PepT1)",
+      "gene": "SLC15A1",
+      "uniprot": "P46059",
+      "action": "Substrate — carries KPV into intestinal epithelial cells, where the transporter is upregulated during inflammation"
+    },
+    {
+      "name": "NF-κB p65 (RelA)",
+      "gene": "RELA",
+      "uniprot": "Q04206",
+      "action": "Indirect inhibition — reduced nuclear translocation and κB-driven transcription"
+    },
+    {
+      "name": "Melanocortin 1 receptor",
+      "gene": "MC1R",
+      "uniprot": "Q01726",
+      "action": "Weak and disputed: KPV keeps part of α-MSH's anti-inflammatory effect but binds melanocortin receptors poorly"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "K",
+          "P",
+          "V"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "numbering_offset": 10,
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [],
+    "notation": "H-Lys-Pro-Val-OH",
+    "note": "All three residues are ordinary L-amino acids with a free N-terminus and a free acid C-terminus; the numbering offset of 10 makes the positions match residues 11–13 of α-MSH. Some suppliers sell an acetate salt or a C-terminal amide; the amide is a different molecule and is usually labelled KPV-NH2."
+  },
+  "formula": "C16H30N4O4",
+  "mw": 342.43,
+  "half_life": "Not characterised in humans",
+  "half_life_hours": null,
+  "routes": [
+    "Topical (cosmetic formulations)",
+    "Oral, rectal and intraperitoneal in animal studies",
+    "Subcutaneous injection in grey-market use"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 125672,
+    "notes": "No experimental structure of KPV has been deposited in the PDB, and as a free tripeptide it has no single stable conformation in solution, so the model shown here is predicted. The parent hormone's receptor-binding core, not this fragment, is what has been crystallised in melanocortin receptor complexes."
+  },
+  "ids": {
+    "pubchem_cid": 125672,
+    "cas": "67727-97-3",
+    "unii": "7V6LGD8S5R",
+    "chebi": "CHEBI:160254"
+  },
+  "wiki": "KPV tripeptide",
+  "queries": {
+    "pubmed": "(\"KPV\"[tiab] AND (peptide[tiab] OR tripeptide[tiab] OR melanocortin[tiab] OR \"alpha-MSH\"[tiab] OR colitis[tiab] OR inflammat*[tiab])) OR \"lysine-proline-valine\"[tiab] OR \"Lys-Pro-Val\"[tiab]",
+    "ctgov": ""
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Inflammatory bowel disease",
+        "stage": "Preclinical",
+        "detail": "Oral, rectal and nanoparticle-delivered KPV reduced weight loss, colon shortening and histological damage in DSS and TNBS colitis in mice; no human trial has followed."
+      },
+      {
+        "use": "Skin inflammation and wound healing",
+        "stage": "Preclinical",
+        "detail": "Reduces contact-hypersensitivity swelling in mice and inflammatory signalling in cultured keratinocytes; reviewed as a candidate wound-healing tripeptide, but human data are absent."
+      },
+      {
+        "use": "Airway inflammation",
+        "stage": "Cell culture",
+        "detail": "Suppresses inflammatory cue release in human bronchial epithelial cells, with a proposed role for MC3R agonism."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Cosmetic 'skin-soothing' ingredient",
+        "detail": "Included at low concentrations in creams and serums marketed for redness, irritation and barrier repair.",
+        "evidence": "Rests on cell and animal anti-inflammatory data; controlled clinical evidence for cosmetic benefit is not published."
+      },
+      {
+        "use": "Grey-market use for gut and skin complaints",
+        "detail": "Sold online as a 'research peptide' in vials for reconstitution, or in capsules, and taken for inflammatory bowel symptoms, leaky gut, acne and wound healing, often stacked with BPC-157.",
+        "evidence": "No controlled human trial exists. Effects, dose, purity and sterility are all unverified, and vendor claims extrapolate directly from rodent studies."
+      },
+      {
+        "use": "Use in sport and bodybuilding",
+        "detail": "Named in 2026 reviews of the peptides circulating in recreational and professional sport as a recovery and anti-inflammatory agent.",
+        "evidence": "No performance or recovery data in humans."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1989,
+      "date": "1989-09",
+      "title": "The tripeptide alone is shown to be anti-inflammatory",
+      "detail": "Hiltz and Lipton reported that α-MSH(11–13) reduced picryl-chloride-induced ear swelling in mice in a dose-related way, and proposed that peptide drugs could be built on the fragment.",
+      "kind": "discovery"
+    },
+    {
+      "year": 2000,
+      "title": "α-MSH framed as a host-defence peptide",
+      "detail": "Reviews by Catania, Lipton and colleagues drew together the antipyretic, anti-inflammatory and antimicrobial actions of α-MSH and its C-terminal fragments.",
+      "kind": "science"
+    },
+    {
+      "year": 2003,
+      "date": "2003-08",
+      "title": "Core and C-terminal fragments compared",
+      "detail": "Getting, Schiöth and Perretti dissected which parts of α-MSH carry its anti-inflammatory effect, and how far KPV's activity depends on melanocortin receptors.",
+      "kind": "science"
+    },
+    {
+      "year": 2008,
+      "date": "2008-01",
+      "title": "PepT1 carries KPV into gut epithelium",
+      "detail": "Dalmasso and colleagues showed in Gastroenterology that the intestinal di/tripeptide transporter PepT1 takes up KPV and that nanomolar doses reduced colitis in mice.",
+      "kind": "science"
+    },
+    {
+      "year": 2008,
+      "date": "2008-03",
+      "title": "Benefit in two murine IBD models",
+      "detail": "Kannengiesser and colleagues reported that KPV reduced inflammation in DSS and transfer models of inflammatory bowel disease.",
+      "kind": "science"
+    },
+    {
+      "year": 2008,
+      "date": "2008-08",
+      "title": "Endocrine Reviews summarises the tripeptide field",
+      "detail": "Brzoska, Luger and colleagues reviewed α-MSH and related tripeptides as candidates for immune-mediated inflammatory disease, and flagged the lack of clinical data.",
+      "kind": "science"
+    },
+    {
+      "year": 2011,
+      "title": "A sibling tripeptide enters the same field",
+      "detail": "KdPT, a tripeptide derived from interleukin-1β, was shown to protect intestinal barrier function in mice, and was later tested in psoriasis-like skin models.",
+      "kind": "science"
+    },
+    {
+      "year": 2012,
+      "title": "Activity outside the gut",
+      "detail": "Land reported that KPV suppressed inflammatory signalling in human bronchial epithelial cells and proposed an MC3R-linked mechanism.",
+      "kind": "science"
+    },
+    {
+      "year": 2017,
+      "date": "2017-07",
+      "title": "Colon-targeted nanoparticles",
+      "detail": "Xiao and colleagues loaded KPV into hyaluronic-acid-functionalised nanoparticles for oral delivery and reported efficient relief of ulcerative colitis in mice.",
+      "kind": "science"
+    },
+    {
+      "year": 2023,
+      "date": "2023-07",
+      "title": "Melanocortins reviewed for IBD",
+      "detail": "A review in Cells placed KPV among melanocortin-system agents being considered for inflammatory bowel disease, still at the preclinical stage.",
+      "kind": "science"
+    },
+    {
+      "year": 2025,
+      "title": "Cell studies broaden the readouts",
+      "detail": "Work published in 2025 and 2026 reported effects of Lys-Pro-Val on fine-dust-injured keratinocytes, on hepatocyte lipid accumulation and on adipogenesis, all in cultured cells.",
+      "kind": "science"
+    },
+    {
+      "year": 2026,
+      "title": "Listed among grey-market sport peptides",
+      "detail": "A critical review of peptide and peptide-analogue use in recreational and professional sport named KPV among the compounds circulating without approval or trial evidence.",
+      "kind": "culture"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Not an FDA-approved drug and not an approved compounding ingredient; sold as a cosmetic ingredient or labelled 'for research use only, not for human consumption'."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "No marketing authorisation; appears only in cosmetic formulations and unregulated online sales."
+    },
+    {
+      "region": "UK",
+      "status": "not-approved",
+      "detail": "No MHRA authorisation."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "KPV is not named on the Prohibited List, but category S0 covers any pharmacological substance with no current approval by a governmental regulatory health authority for human therapeutic use, which applies to research peptides such as this one."
+    }
+  ],
+  "pk": {
+    "half_life": "Not characterised in humans",
+    "bioavailability": "In animal intestine, uptake is mediated by the PepT1 di/tripeptide transporter rather than passive diffusion",
+    "metabolism": "Expected to be hydrolysed by peptidases to lysine, proline and valine",
+    "excretion": "Not characterised"
+  },
+  "dosing": null,
+  "dosing_note": "There is no approved human dose and no dose has been tested in a controlled human trial. KPV appears in cosmetics at low concentrations; vials sold as research chemicals carry vendor-suggested regimens that have no clinical basis, and their identity, purity and sterility are not verified.",
+  "safety": {
+    "common": [
+      "No systematically collected human safety data exist"
+    ],
+    "serious": [],
+    "warnings": [
+      "Material sold as a research peptide is not made to pharmaceutical standards: identity, purity, endotoxin content and sterility are unverified",
+      "KPV acts on inflammatory signalling; the consequences of sustained suppression of these pathways in humans have not been studied",
+      "Injecting non-sterile preparations carries infection and abscess risk"
+    ],
+    "notes": "Rodent studies at the doses used report no overt toxicity, but there is no published formal toxicology package, no repeat-dose human safety study and no pharmacovigilance for grey-market products."
+  },
+  "market": null,
+  "facts": [
+    "KPV is only three amino acids long — about a fifth of the mass of α-MSH, the hormone it comes from, and roughly 1/440 of the mass of a monoclonal antibody.",
+    "It does not darken skin, because the pigmenting message of α-MSH sits in the central His-Phe-Arg-Trp core, not in the C-terminal tail.",
+    "Inflamed bowel upregulates PepT1, the transporter that normally absorbs dietary di- and tripeptides — so the sicker the tissue, the more KPV it takes up.",
+    "Despite nearly four decades of animal work, ClinicalTrials.gov lists no trial with KPV as an intervention."
+  ],
+  "related": [
+    "afamelanotide",
+    "melanotan-ii",
+    "setmelanotide",
+    "bremelanotide",
+    "bpc-157",
+    "ghk-cu",
+    "ll-37"
+  ],
+  "references": [
+    {
+      "title": "Antiinflammatory activity of a COOH-terminal fragment of the neuropeptide alpha-MSH",
+      "authors": "Hiltz ME, Lipton JM",
+      "journal": "FASEB J",
+      "year": 1989,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2550304/"
+    },
+    {
+      "title": "Dissection of the anti-inflammatory effect of the core and C-terminal (KPV) alpha-melanocyte-stimulating hormone peptides",
+      "authors": "Getting SJ, Schiöth HB, Perretti M",
+      "journal": "J Pharmacol Exp Ther",
+      "year": 2003,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12750433/"
+    },
+    {
+      "title": "PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation",
+      "authors": "Dalmasso G, Charrier-Hisamuddin L, Nguyen HT, et al.",
+      "journal": "Gastroenterology",
+      "year": 2008,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18061177/"
+    },
+    {
+      "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease",
+      "authors": "Kannengiesser K, Maaser C, Heidemann J, et al.",
+      "journal": "Inflamm Bowel Dis",
+      "year": 2008,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18092346/"
+    },
+    {
+      "title": "Alpha-melanocyte-stimulating hormone and related tripeptides: biochemistry, antiinflammatory and protective effects in vitro and in vivo, and future perspectives",
+      "authors": "Brzoska T, Luger TA, Maaser C, et al.",
+      "journal": "Endocr Rev",
+      "year": 2008,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18612139/"
+    },
+    {
+      "title": "Inhibition of cellular and systemic inflammation cues in human bronchial epithelial cells by melanocortin-related peptides: mechanism of KPV action and a role for MC3R agonists",
+      "authors": "Land SC",
+      "journal": "Int J Physiol Pathophysiol Pharmacol",
+      "year": 2012,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22837805/"
+    },
+    {
+      "title": "Orally targeted delivery of tripeptide KPV via hyaluronic acid-functionalized nanoparticles efficiently alleviates ulcerative colitis",
+      "authors": "Xiao B, Xu Z, Viennois E, et al.",
+      "journal": "Mol Ther",
+      "year": 2017,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28143741/"
+    },
+    {
+      "title": "The melanocortin system in inflammatory bowel diseases: insights into its mechanisms and therapeutic potentials",
+      "authors": "Gravina AG, Pellegrino R, Durante T, et al.",
+      "journal": "Cells",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37508552/"
+    }
+  ]
+}

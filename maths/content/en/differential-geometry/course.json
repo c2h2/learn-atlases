@@ -1,0 +1,201 @@
+{
+  "slug": "differential-geometry",
+  "title": "Differential Geometry",
+  "full_title": "Differential Geometry of Curves and Surfaces",
+  "area": "geometry",
+  "level": 3,
+  "order": 170,
+  "tagline": "Curvature of curves and surfaces, from the Frenet frame to Gauss’s Theorema Egregium and Gauss–Bonnet",
+  "summary": "Differential geometry uses calculus to measure how curves bend and twist and how surfaces curve. This course covers the Frenet–Serret formulas, the first and second fundamental forms, Gaussian and mean curvature, Gauss’s Theorema Egregium, geodesics and the Gauss–Bonnet theorem.",
+  "overview": [
+    "Differential geometry studies shape with calculus. How sharply does a curve bend, and how quickly does it twist out of its plane? Is a surface curved like a sphere, like a saddle, or not at all? The answers are numbers — the curvature and torsion of a curve, the principal, Gaussian and mean curvatures of a surface — computed from derivatives of a parametrisation but independent of which parametrisation is used. The subject sits behind computer graphics and geometric design, the mechanics of thin shells, cartography, and Einstein’s description of gravity as the curvature of spacetime.",
+    "The course begins with curves: arc length, curvature and torsion, and the Frenet–Serret formulas, which show that curvature and torsion determine a space curve completely up to a rigid motion. It then turns to surfaces: regular surfaces and their tangent planes, the first fundamental form, which measures lengths, angles and areas on the surface, and the Gauss map and second fundamental form, which measure how the surface bends in space. The last two chapters prove the two great theorems of classical surface theory: Gauss’s Theorema Egregium, that Gaussian curvature can be measured by inhabitants of the surface who never leave it, and the Gauss–Bonnet theorem, that the total curvature of a closed surface is 2π times its Euler characteristic, a purely topological number.",
+    "The subject asks for fluency in multivariable calculus and linear algebra at the same time — the shape operator is a self-adjoint linear map and the principal curvatures are its eigenvalues. Computations can be long, so practise on the standard examples (plane, sphere, cylinder, torus, helicoid, catenoid) until they are routine, check every answer against the picture, and keep track of which quantities depend only on the first fundamental form (intrinsic) and which depend on how the surface sits in space (extrinsic). That distinction is the doorway to Riemannian geometry and general relativity."
+  ],
+  "prerequisites": [
+    "multivariable",
+    "linear-algebra"
+  ],
+  "outcomes": [
+    "Parametrise regular curves by arc length and compute curvature and torsion in any parametrisation.",
+    "Derive the Frenet–Serret formulas and use them to prove results about curves, such as the characterisations of plane curves and circles.",
+    "Decide whether a subset of ℝ³ is a regular surface, and compute tangent planes and unit normals.",
+    "Compute the first fundamental form and use it to find lengths, angles and areas on a surface.",
+    "Compute the shape operator, the second fundamental form, the principal curvatures and the Gaussian and mean curvatures of standard surfaces.",
+    "Explain the difference between intrinsic and extrinsic geometry and prove Gauss’s Theorema Egregium.",
+    "Find geodesics using the geodesic equations and Clairaut’s relation, and compute geodesic curvature.",
+    "State and apply the local and global Gauss–Bonnet theorems, relating total curvature to the Euler characteristic."
+  ],
+  "chapters": [
+    {
+      "slug": "curves",
+      "title": "Curves",
+      "summary": "Regular curves, arc length, curvature and torsion, and the Frenet–Serret formulas.",
+      "requires": [
+        "multivariable/vector-functions"
+      ]
+    },
+    {
+      "slug": "regular-surfaces",
+      "title": "Surfaces",
+      "summary": "Parametrised and regular surfaces, tangent planes, the first fundamental form and area.",
+      "requires": [
+        "differential-geometry/curves",
+        "multivariable/surface-integrals"
+      ]
+    },
+    {
+      "slug": "surface-curvature",
+      "title": "Curvature of surfaces",
+      "summary": "The Gauss map, the second fundamental form, principal, Gaussian and mean curvature.",
+      "requires": [
+        "differential-geometry/regular-surfaces",
+        "linear-algebra/spectral-theorem"
+      ]
+    },
+    {
+      "slug": "theorema-egregium",
+      "title": "Gauss’s Theorema Egregium",
+      "summary": "Intrinsic geometry, isometries and Gauss’s remarkable theorem.",
+      "requires": [
+        "differential-geometry/surface-curvature"
+      ]
+    },
+    {
+      "slug": "geodesics-gauss-bonnet",
+      "title": "Geodesics and the Gauss–Bonnet theorem",
+      "summary": "Geodesics, geodesic curvature and the Gauss–Bonnet theorem.",
+      "requires": [
+        "differential-geometry/theorema-egregium"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1673,
+      "title": "Evolutes and the centre of curvature",
+      "detail": "In Horologium Oscillatorium Huygens develops the theory of evolutes and involutes — in effect the locus of centres of curvature — and uses it to design a pendulum clock whose bob follows a cycloid.",
+      "people": [
+        "Christiaan Huygens"
+      ]
+    },
+    {
+      "year": 1767,
+      "title": "Euler on the curvature of surfaces",
+      "detail": "Euler’s Recherches sur la courbure des surfaces shows that the curvatures of all normal sections at a point are determined by two extreme values in perpendicular directions, the principal curvatures.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1776,
+      "title": "Meusnier’s memoir",
+      "detail": "Meusnier relates the curvature of oblique sections of a surface to that of the normal section (Meusnier’s theorem) and shows that the catenoid and the helicoid are minimal surfaces.",
+      "people": [
+        "Jean-Baptiste Meusnier"
+      ]
+    },
+    {
+      "year": 1827,
+      "title": "Gauss’s Disquisitiones generales circa superficies curvas",
+      "detail": "Gauss introduces the Gauss map and Gaussian curvature, proves the Theorema Egregium that this curvature depends only on measurements within the surface, and relates the angle sum of a geodesic triangle to the curvature it encloses.",
+      "people": [
+        "Carl Friedrich Gauss"
+      ]
+    },
+    {
+      "year": 1847,
+      "title": "The Frenet–Serret formulas",
+      "detail": "Frenet derives the formulas for the derivatives of the tangent, normal and binormal of a space curve in his 1847 thesis; Serret publishes them independently in 1851.",
+      "people": [
+        "Jean Frédéric Frenet",
+        "Joseph Alfred Serret"
+      ]
+    },
+    {
+      "year": 1848,
+      "title": "Bonnet’s extension of Gauss’s theorem",
+      "detail": "Bonnet extends Gauss’s angle-sum result to regions bounded by arbitrary curves, with the geodesic curvature of the boundary entering the formula: the local Gauss–Bonnet theorem.",
+      "people": [
+        "Pierre Ossian Bonnet"
+      ]
+    },
+    {
+      "year": 1854,
+      "title": "Riemann’s Habilitation lecture",
+      "detail": "In his lecture on the hypotheses that lie at the foundations of geometry, Riemann extends intrinsic geometry and curvature to spaces of any dimension.",
+      "people": [
+        "Bernhard Riemann"
+      ]
+    },
+    {
+      "year": 1868,
+      "title": "A model of non-Euclidean geometry",
+      "detail": "Beltrami shows that surfaces of constant negative curvature, such as the pseudosphere, realise pieces of the hyperbolic plane, giving the first concrete model of non-Euclidean geometry.",
+      "people": [
+        "Eugenio Beltrami"
+      ]
+    },
+    {
+      "year": 1901,
+      "title": "Hilbert’s theorem",
+      "detail": "Hilbert proves that the complete hyperbolic plane cannot be realised as a regular surface in ℝ³: there is no complete regular surface of constant negative curvature in space.",
+      "people": [
+        "David Hilbert"
+      ]
+    },
+    {
+      "year": 1944,
+      "title": "Chern’s intrinsic Gauss–Bonnet theorem",
+      "detail": "Chern gives an intrinsic proof of the generalised Gauss–Bonnet theorem for closed Riemannian manifolds of any even dimension, a starting point of modern global differential geometry.",
+      "people": [
+        "Shiing-Shen Chern"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Differential Geometry of Curves and Surfaces",
+      "authors": "Manfredo P. do Carmo",
+      "year": 1976,
+      "note": "The classic text for this course: rigorous, geometric and rich in exercises. The revised second edition (Dover, 2016) is inexpensive."
+    },
+    {
+      "title": "Elementary Differential Geometry",
+      "authors": "Andrew Pressley",
+      "year": 2010,
+      "note": "Gentle and very clear, with many worked examples and full solutions to the exercises; the best first read."
+    },
+    {
+      "title": "Elementary Differential Geometry",
+      "authors": "Barrett O’Neill",
+      "year": 2006,
+      "note": "Builds the theory on frame fields and differential forms; excellent on the shape operator."
+    },
+    {
+      "title": "Elementary Differential Geometry",
+      "authors": "Christian Bär",
+      "year": 2010,
+      "note": "Modern and concise, with a careful proof of the Gauss–Bonnet theorem and a first look at Riemannian geometry."
+    },
+    {
+      "title": "Visual Differential Geometry and Forms: A Mathematical Drama in Five Acts",
+      "authors": "Tristan Needham",
+      "year": 2021,
+      "note": "Geometric intuition for curvature, parallel transport, the Theorema Egregium and Gauss–Bonnet, with hundreds of figures."
+    },
+    {
+      "title": "Modern Differential Geometry of Curves and Surfaces with Mathematica",
+      "authors": "Alfred Gray, Elsa Abbena and Simon Salamon",
+      "year": 2006,
+      "note": "An encyclopaedia of explicit curves and surfaces, with computer-algebra code for every computation."
+    },
+    {
+      "title": "Introduction to Riemannian Manifolds",
+      "authors": "John M. Lee",
+      "year": 2018,
+      "note": "Where to go next: the intrinsic theory in any dimension, geodesics, curvature and the Gauss–Bonnet theorem in modern language."
+    }
+  ],
+  "next": []
+}

@@ -1,0 +1,344 @@
+{
+  "slug": "dsip",
+  "name": "Delta sleep-inducing peptide (DSIP)",
+  "aliases": [
+    "DSIP",
+    "Emideltide",
+    "WAGGDASGE",
+    "Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu",
+    "Delta-sleep-inducing peptide"
+  ],
+  "category": "neuro",
+  "drug_class": "Neuropeptide",
+  "subclass": "Nonapeptide isolated from rabbit cerebral venous blood during induced sleep",
+  "status": "research",
+  "status_note": "Not approved anywhere and not in active clinical development; a 1970s discovery whose sleep-promoting effects in humans were never consistently reproduced, now sold as a grey-market 'sleep peptide'.",
+  "evidence": 2,
+  "evidence_note": "Several small human studies were run in the 1980s, including double-blind work in chronic insomnia, with inconsistent and often negative results; no modern randomised trial exists and there are no ClinicalTrials.gov entries.",
+  "tagline": "A 1970s 'sleep peptide' whose human effects were never reliably reproduced",
+  "summary": "DSIP is a nine-amino-acid peptide that Marcel Monnier and Guido Schoenenberger isolated in Basel from the cerebral venous blood of rabbits whose sleep had been induced by electrical stimulation. Infused into other rabbits it increased slow-wave EEG activity — hence the name. Half a century later no gene encoding it has ever been found, its human sleep data are contradictory, and it survives mainly as an unapproved peptide sold online for sleep and recovery.",
+  "overview": [
+    "In the 1960s and 1970s Marcel Monnier's laboratory in Basel pursued the idea of humoral sleep transmission: that sleep is carried in the blood by a chemical factor. Stimulating the thalamus of a rabbit to induce sleep and dialysing its cerebral venous blood into a recipient animal transferred slow-wave, high-amplitude 'delta' EEG activity. Working with Guido Schoenenberger, the group purified the responsible fraction and in 1977 characterised it as a nonapeptide, Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu; the amino-acid analysis, full sequence and synthesis were published the following year.",
+    "The discovery was a landmark in the search for endogenous sleep substances, but it never consolidated. No gene or precursor protein encoding DSIP has ever been identified, the peptide has no established receptor, and antibodies raised against it detect 'DSIP-like immunoreactive material' in many tissues that does not correspond to the free nonapeptide. Reviews by Graf and Kastin in 1984 and 1986 catalogued a sprawling and often contradictory literature — effects reported on sleep, stress, thermoregulation, pain, opioid withdrawal and circadian rhythm — and Kastin's group later used DSIP as a case study in how peptide fields go astray.",
+    "Human testing was modest and inconsistent. Schneider-Helmert's studies in the early 1980s reported improved sleep in chronic insomnia, sometimes with a delayed onset over days; Monti and colleagues found little on short-term administration; and a double-blind study by Bes and colleagues in 1992 found no meaningful effect on the sleep of chronic insomniacs. The peptide received an international non-proprietary name, emideltide, but no product was ever developed and no regulator has reviewed it.",
+    "Its modern presence is almost entirely commercial. DSIP is sold online as a lyophilised powder for subcutaneous injection, marketed for insomnia, jet lag, stress, opioid withdrawal and recovery, often alongside other peptides. None of these uses rests on controlled evidence, the original human work is forty years old and equivocal, and a peptide with no known receptor and no identified gene is a poor candidate for reliable pharmacology."
+  ],
+  "mechanism": [
+    "No receptor for DSIP has been identified, and no gene or precursor encoding it has been found in any genome — which is the central problem with its pharmacology. It is therefore not possible to describe a mechanism in the way one can for a hormone analogue; the reported effects are phenomenological.",
+    "What has been described is a scattering of neuromodulatory observations: increases in slow-wave EEG power and reduced motor activity in rabbits after intraventricular infusion, effects on ACTH, corticosteroid and growth hormone secretion, interactions with opioid and GABAergic systems, and modulation of thermoregulation and stress responses. The peptide crosses the blood–brain barrier in both directions in animal studies. None of these findings has been assembled into a coherent, replicated mechanism, and the 'DSIP-like immunoreactivity' found in tissues may reflect unrelated molecules rather than the nonapeptide itself."
+  ],
+  "origin": "Nonapeptide originally isolated from the cerebral venous blood of rabbits in induced slow-wave sleep; now made synthetically. No encoding gene or precursor protein has ever been identified.",
+  "discovery": {
+    "year": 1977,
+    "by": "Guido A. Schoenenberger and Marcel Monnier",
+    "where": "University of Basel, Switzerland",
+    "note": "Characterised in PNAS in 1977 from the cerebral venous blood of rabbits whose sleep had been induced by thalamic stimulation; the amino-acid analysis, sequence, synthesis and activity of the nonapeptide were published in Pflügers Archiv in 1978."
+  },
+  "first_human_year": 1981,
+  "first_approval": null,
+  "developer": "No commercial developer; the work was academic, at the University of Basel, and no company has taken DSIP into registration",
+  "brands": [],
+  "analogs": [
+    {
+      "name": "Phosphorylated DSIP (P-DSIP)",
+      "note": "A serine-phosphorylated form reported in the older literature to have distinct activity from the parent peptide."
+    },
+    {
+      "name": "DSIP-like immunoreactive peptide (DSIP-LI)",
+      "note": "Material detected by anti-DSIP antibodies in many tissues; a 78-residue porcine protein of this name has been solved by NMR (PDB 1DIP), but it is not the nonapeptide."
+    }
+  ],
+  "targets": [],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "W",
+          "A",
+          "G",
+          "G",
+          "D",
+          "A",
+          "S",
+          "G",
+          "E"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [],
+    "notation": "H-Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu-OH",
+    "note": "All nine residues are standard L-amino acids with free N- and C-termini and no chemical modification. The sequence is small, flexible and heavily glycine- and alanine-rich, with a single tryptophan at the N-terminus. A phosphorylated variant on the serine has been described in the older literature."
+  },
+  "formula": "C35H48N10O15",
+  "mw": 848.8,
+  "half_life": "Reported as very short (minutes) in animal studies; not established in humans",
+  "half_life_hours": null,
+  "routes": [
+    "Intravenous and intraventricular infusion in the original studies",
+    "Subcutaneous injection in grey-market use"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 68816,
+    "notes": "No experimental structure of DSIP exists; a flexible nonapeptide with three glycines has no stable solution conformation, so the 3D view shows a computed conformer. PDB entry 1DIP, despite its name, is a 78-residue porcine 'DSIP-immunoreactive peptide' and is a different molecule."
+  },
+  "ids": {
+    "pubchem_cid": 68816,
+    "cas": "62568-57-4",
+    "unii": "YN28Z5YZ73",
+    "chembl": "CHEMBL2104403",
+    "inn": "emideltide"
+  },
+  "wiki": "Delta-sleep-inducing peptide",
+  "queries": {
+    "pubmed": "\"delta sleep-inducing peptide\"[tiab] OR \"delta-sleep-inducing peptide\"[tiab] OR \"DSIP\"[tiab] OR emideltide[tiab]",
+    "ctgov": ""
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Chronic insomnia",
+        "stage": "Small human studies, 1980s — inconsistent",
+        "detail": "Schneider-Helmert reported improvements, sometimes appearing days after dosing; Monti found little effect on short-term administration; a 1992 double-blind study by Bes and colleagues found no meaningful benefit in chronic insomniacs."
+      },
+      {
+        "use": "Opioid and alcohol withdrawal",
+        "stage": "Small studies and case series, 1980s",
+        "detail": "Reported to ease withdrawal symptoms in older European work; never replicated in a controlled modern trial."
+      },
+      {
+        "use": "Stress, pain and thermoregulation",
+        "stage": "Animal studies",
+        "detail": "The 1980s literature describes effects on ACTH and corticosteroid secretion, nociception and body temperature; the reviews of the period judged the findings inconsistent."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Grey-market 'sleep peptide'",
+        "detail": "Sold online as lyophilised powder for subcutaneous injection and marketed for insomnia, jet lag, stress and recovery, frequently in combination with other research peptides.",
+        "evidence": "No modern controlled trial exists. The human data that do exist are forty years old, small and contradictory, and the best-designed of them was negative. Identity, purity and sterility of vendor products are unverified."
+      },
+      {
+        "use": "Use in bodybuilding and recovery",
+        "detail": "Promoted for deeper sleep and hormonal recovery after training.",
+        "evidence": "No study has examined DSIP in athletes or for recovery endpoints."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1975,
+      "title": "Sleep is shown to be transferable in blood",
+      "detail": "Monnier's group reported that dialysed cerebral venous blood from rabbits in induced sleep carried a 'sleep peptide delta' that produced the same EEG changes in recipient animals.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1977,
+      "title": "Synthetic peptide matches the natural one",
+      "detail": "A companion paper in Experientia compared the original and synthetic nonapeptides and found comparable properties.",
+      "kind": "science"
+    },
+    {
+      "year": 1977,
+      "date": "1977-03",
+      "title": "The nonapeptide is characterised",
+      "detail": "Schoenenberger and Monnier published the characterisation of a delta-EEG (sleep)-inducing peptide in PNAS, from rabbit cerebral venous blood.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1978,
+      "date": "1978-09",
+      "title": "Sequence and synthesis published",
+      "detail": "Schoenenberger and colleagues reported the amino-acid analysis, full sequence (Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu), synthesis and activity of the nonapeptide in Pflügers Archiv.",
+      "kind": "science"
+    },
+    {
+      "year": 1981,
+      "date": "1981-08",
+      "title": "First human sleep study",
+      "detail": "Schneider-Helmert, Gnirss, Monnier and Schenker reported acute and delayed effects of DSIP on human sleep behaviour.",
+      "kind": "trial"
+    },
+    {
+      "year": 1982,
+      "title": "Shown to cross the blood–brain barrier",
+      "detail": "Banks, Kastin and Coy reported that DSIP crosses the blood–brain barrier in dogs, with transport correlating with protein binding — one of the few DSIP findings to be followed up for decades.",
+      "kind": "science"
+    },
+    {
+      "year": 1984,
+      "title": "First major review finds a confused field",
+      "detail": "Graf and Kastin catalogued the DSIP literature and its many reported actions, noting inconsistency across laboratories.",
+      "kind": "science"
+    },
+    {
+      "year": 1984,
+      "title": "Used as a cautionary example",
+      "detail": "Kastin, Zadina, Banks and Graf cited the DSIP field in a paper on misleading concepts in brain-peptide research.",
+      "kind": "science"
+    },
+    {
+      "year": 1986,
+      "title": "An update, and studies in insomnia",
+      "detail": "Graf and Kastin published a second review, and Schneider-Helmert reported further work on DSIP in sleep disturbance.",
+      "kind": "science"
+    },
+    {
+      "year": 1987,
+      "title": "Short-term dosing shows little",
+      "detail": "Monti and colleagues studied short-term administration to chronic insomniacs and found limited efficacy; Schneider-Helmert examined 24-hour sleep–wake behaviour in severe chronic insomnia.",
+      "kind": "trial"
+    },
+    {
+      "year": 1992,
+      "title": "Double-blind study is negative",
+      "detail": "Bes, Hofman, Schuur and Van Boxtel found no meaningful effect of DSIP on the sleep of chronic insomniac patients in a double-blind design — the best-controlled human study of the peptide.",
+      "kind": "trial"
+    },
+    {
+      "year": 2018,
+      "date": "2018-09",
+      "title": "Phosphorylated DSIP studied at altitude",
+      "detail": "An Indian group reported that phosphorylated DSIP restored spatial memory and p-CREB expression in rats by improving sleep architecture at high altitude — a rare modern animal study.",
+      "kind": "science"
+    },
+    {
+      "year": 2021,
+      "date": "2021-09",
+      "title": "Motor recovery after stroke in rats",
+      "detail": "A Russian group reported that DSIP improved motor function in Sprague-Dawley rats after focal stroke, keeping a thin line of preclinical work alive.",
+      "kind": "science"
+    },
+    {
+      "year": 2026,
+      "title": "Circulating as a grey-market sleep peptide",
+      "detail": "Reviews of therapeutic peptides now list DSIP among compounds sold online outside approved use, on the strength of its 1970s name rather than modern evidence.",
+      "kind": "culture"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Never approved by the FDA and not an approved compounding or supplement ingredient; sold online labelled for research use only."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "No marketing authorisation in any member state; the peptide holds an INN (emideltide) but no product was ever registered."
+    },
+    {
+      "region": "UK",
+      "status": "not-approved",
+      "detail": "No MHRA authorisation."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "DSIP is not named on the Prohibited List, but category S0 covers any pharmacological substance with no current approval by a governmental regulatory health authority for human therapeutic use, which applies to DSIP."
+    }
+  ],
+  "pk": {
+    "half_life": "Reported as very short in animal studies; not established in humans",
+    "bioavailability": "Not orally active; given by injection or infusion in all studies",
+    "metabolism": "Rapid peptidase cleavage; animal work reports bidirectional transport across the blood–brain barrier",
+    "excretion": "Not characterised"
+  },
+  "dosing": null,
+  "dosing_note": "There is no approved human dose. The 1980s studies used intravenous infusions under supervision, and those protocols were not shown to work reliably. Regimens promoted by online vendors have no clinical basis, and neither the identity nor the sterility of the material sold can be assumed.",
+  "safety": {
+    "common": [
+      "No systematically collected modern human safety data exist"
+    ],
+    "serious": [],
+    "warnings": [
+      "The human studies date from the 1980s, were small, and did not constitute a formal safety programme",
+      "There is no receptor pharmacology to predict interactions or off-target effects",
+      "Material sold as a research peptide has unverified identity, purity, endotoxin content and sterility; injecting non-sterile preparations carries infection risk"
+    ],
+    "notes": "The 1980s trials did not report notable toxicity, but absence of reported harm in a handful of small, short studies is not a safety profile. The peptide's long disappearance from clinical research reflects lack of reproducible efficacy rather than a safety problem."
+  },
+  "market": null,
+  "facts": [
+    "DSIP was found by dialysing blood out of the brain of a sleeping rabbit and infusing it into an awake one — an experiment in the old tradition of humoral sleep transmission.",
+    "No gene or precursor protein encoding DSIP has ever been identified, in any species, which is remarkable for a peptide named nearly fifty years ago.",
+    "It has an official international non-proprietary name, emideltide, even though no product was ever marketed.",
+    "The best-designed human trial of DSIP — a double-blind study in chronic insomnia published in 1992 — found no meaningful effect."
+  ],
+  "related": [
+    "semax",
+    "selank",
+    "epitalon"
+  ],
+  "references": [
+    {
+      "title": "Characterization of a delta-electroencephalogram (-sleep)-inducing peptide",
+      "authors": "Schoenenberger GA, Monnier M",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": 1977,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/265572/"
+    },
+    {
+      "title": "The delta EEG (sleep)-inducing peptide (DSIP). XI. Amino-acid analysis, sequence, synthesis and activity of the nonapeptide",
+      "authors": "Schoenenberger GA, Maier PF, Tobler HJ, Wilson K, Monnier M",
+      "journal": "Pflugers Arch",
+      "year": 1978,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/568769/"
+    },
+    {
+      "title": "Acute and delayed effects of DSIP (delta sleep-inducing peptide) on human sleep behavior",
+      "authors": "Schneider-Helmert D, Gnirss F, Monnier M, Schenker J",
+      "journal": "Int J Clin Pharmacol Ther Toxicol",
+      "year": 1981,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6895513/"
+    },
+    {
+      "title": "Delta-sleep-inducing peptide (DSIP): a review",
+      "authors": "Graf MV, Kastin AJ",
+      "journal": "Neurosci Biobehav Rev",
+      "year": 1984,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6145137/"
+    },
+    {
+      "title": "Delta-sleep-inducing peptide (DSIP): an update",
+      "authors": "Graf MV, Kastin AJ",
+      "journal": "Peptides",
+      "year": 1986,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3550726/"
+    },
+    {
+      "title": "Study of delta sleep-inducing peptide efficacy in improving sleep on short-term administration to chronic insomniacs",
+      "authors": "Monti JM, Debellis J, Alterwain P, et al.",
+      "journal": "Int J Clin Pharmacol Res",
+      "year": 1987,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3583493/"
+    },
+    {
+      "title": "Effects of delta sleep-inducing peptide on sleep of chronic insomniac patients. A double-blind study",
+      "authors": "Bes F, Hofman W, Schuur J, Van Boxtel C",
+      "journal": "Neuropsychobiology",
+      "year": 1992,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1299794/"
+    },
+    {
+      "title": "Delta sleep-inducing peptide crosses the blood-brain-barrier in dogs: some correlations with protein binding",
+      "authors": "Banks WA, Kastin AJ, Coy DH",
+      "journal": "Pharmacol Biochem Behav",
+      "year": 1982,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6897451/"
+    },
+    {
+      "title": "Delta sleep-inducing peptide recovers motor function in SD rats after focal stroke",
+      "authors": "Tukhovskaya EA, Ismailova AM, Shaykhutdinova ER, et al.",
+      "journal": "Molecules",
+      "year": 2021,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34500605/"
+    }
+  ]
+}

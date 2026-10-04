@@ -1,0 +1,217 @@
+{
+  "slug": "pde",
+  "title": "PDEs and Fourier Analysis",
+  "full_title": "Partial Differential Equations and Fourier Analysis",
+  "area": "applied",
+  "level": 3,
+  "order": 150,
+  "tagline": "Fourier series and transforms, and the heat, wave and Laplace equations",
+  "summary": "Partial differential equations govern heat flow, waves, electrostatics and quantum mechanics. This course develops Fourier series and the Fourier transform and uses them to solve the three classical equations of mathematical physics by separation of variables, with Sturm–Liouville theory as the unifying framework.",
+  "overview": [
+    "A **partial differential equation** (PDE) relates an unknown function of several variables to its partial derivatives. Three equations dominate the classical theory, and this course is built around them: the **heat equation** $u_t = k\\,u_{xx}$, which describes diffusion and smoothing; the **wave equation** $u_{tt} = c^2 u_{xx}$, which describes vibration and propagation at finite speed; and **Laplace's equation** $\\Delta u = 0$, which describes equilibrium states such as steady temperatures, electrostatic potentials and ideal fluid flow. Each one is the prototype of a whole class of equations (parabolic, hyperbolic and elliptic), and each behaves in a strikingly different way.",
+    "The main tool is **Fourier analysis**: the idea, due to Joseph Fourier, that a function can be decomposed into simple oscillations. We begin with Fourier series, prove when and how they converge, and then use **separation of variables** to turn each PDE on an interval, rectangle or disc into ordinary differential equations whose solutions are superposed as a series. Sturm–Liouville theory explains why the method works for far more general equations, and the Fourier transform extends it from bounded intervals to the whole real line.",
+    "Alongside the formulas we prove the qualitative theorems that make the subject coherent: uniqueness by energy methods, the maximum principle for the heat and Laplace equations, conservation of energy and finite speed of propagation for waves, the mean value property of harmonic functions, and the orthogonality and reality of Sturm–Liouville eigenvalues. These tell you what a solution must look like before you compute it, and they are the best way to check that a computed series is right.",
+    "The course assumes [[ode]] (especially second-order linear equations) and [[multivariable]] (partial derivatives, the divergence theorem). What makes the subject demanding is the interplay of three levels: physical modelling, explicit computation with series and integrals, and analysis of convergence. Work through the examples by hand, use the interactive figures to see how the solutions evolve, and always ask which properties of the answer you could have predicted in advance."
+  ],
+  "prerequisites": [
+    "ode",
+    "multivariable"
+  ],
+  "outcomes": [
+    "Compute Fourier sine, cosine and full series of piecewise smooth functions on intervals of any length, and use them to evaluate numerical series.",
+    "State and apply the convergence theorems for Fourier series, including pointwise convergence to the midpoint of a jump, uniform convergence, the Gibbs phenomenon and Parseval's identity.",
+    "Derive the heat, wave and Laplace equations from conservation laws and constitutive assumptions, and choose physically appropriate boundary and initial conditions.",
+    "Solve initial–boundary value problems for the heat and wave equations and boundary value problems for Laplace's equation by separation of variables and superposition.",
+    "Prove uniqueness and stability results using energy methods and the maximum principle.",
+    "Use d'Alembert's formula and characteristics to describe wave propagation, reflection and domains of dependence.",
+    "Prove the basic properties of regular Sturm–Liouville problems and expand functions in their eigenfunctions.",
+    "Compute Fourier transforms using their algebraic properties and the convolution theorem, and solve the heat equation on the whole line with the heat kernel.",
+    "Explain the qualitative differences between diffusion, wave propagation and equilibrium, and relate them to the behaviour of Fourier coefficients."
+  ],
+  "chapters": [
+    {
+      "slug": "fourier-series",
+      "title": "Fourier series",
+      "summary": "Orthogonality of sines and cosines, Fourier coefficients, convergence, the Gibbs phenomenon and Parseval’s identity.",
+      "requires": [
+        "calculus-1/integration-techniques",
+        "linear-algebra/inner-products"
+      ]
+    },
+    {
+      "slug": "heat-equation",
+      "title": "The heat equation",
+      "summary": "Deriving the heat equation, separation of variables, boundary conditions and the maximum principle.",
+      "requires": [
+        "pde/fourier-series",
+        "ode/second-order-linear"
+      ]
+    },
+    {
+      "slug": "wave-equation",
+      "title": "The wave equation",
+      "summary": "Vibrating strings, d’Alembert’s solution, separation of variables and conservation of energy.",
+      "requires": [
+        "pde/fourier-series"
+      ]
+    },
+    {
+      "slug": "laplace-equation",
+      "title": "Laplace’s equation",
+      "summary": "Harmonic functions, boundary value problems on rectangles and discs, and the mean value property.",
+      "requires": [
+        "pde/heat-equation",
+        "multivariable/stokes-divergence"
+      ]
+    },
+    {
+      "slug": "sturm-liouville",
+      "title": "Sturm–Liouville theory",
+      "summary": "Eigenvalue problems, orthogonality of eigenfunctions and eigenfunction expansions.",
+      "requires": [
+        "pde/heat-equation",
+        "linear-algebra/spectral-theorem"
+      ]
+    },
+    {
+      "slug": "fourier-transform",
+      "title": "The Fourier transform",
+      "summary": "The Fourier transform and its properties, convolution, and solving the heat equation on the whole line.",
+      "requires": [
+        "pde/fourier-series",
+        "calculus-1/improper-integrals"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1747,
+      "title": "d'Alembert solves the vibrating string",
+      "detail": "Jean le Rond d'Alembert derived the one-dimensional wave equation for a vibrating string and showed that its solutions are sums of two waves travelling in opposite directions.",
+      "people": [
+        "Jean le Rond d'Alembert"
+      ]
+    },
+    {
+      "year": 1753,
+      "title": "Bernoulli's superposition of modes",
+      "detail": "Daniel Bernoulli argued that every motion of the string is a superposition of sinusoidal normal modes, starting a long controversy with Euler and d'Alembert about which functions such series can represent.",
+      "people": [
+        "Daniel Bernoulli",
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1807,
+      "title": "Fourier's memoir on heat",
+      "detail": "Joseph Fourier submitted to the Institut de France a memoir deriving the heat equation and solving it with trigonometric series of 'arbitrary' functions. The examiners, among them Lagrange and Laplace, were unconvinced by its rigour and it was not published at the time.",
+      "people": [
+        "Joseph Fourier"
+      ]
+    },
+    {
+      "year": 1822,
+      "title": "Théorie analytique de la chaleur",
+      "detail": "Fourier's book on the analytic theory of heat set out separation of variables, Fourier series and the Fourier integral, and became one of the most influential works of applied mathematics.",
+      "people": [
+        "Joseph Fourier"
+      ]
+    },
+    {
+      "year": 1828,
+      "title": "Green's essay on potential theory",
+      "detail": "George Green, a self-taught Nottingham miller, privately published an essay on electricity and magnetism containing Green's identities and the idea of a Green's function for Laplace's equation.",
+      "people": [
+        "George Green"
+      ]
+    },
+    {
+      "year": 1829,
+      "title": "First convergence proof",
+      "detail": "Peter Gustav Lejeune Dirichlet gave the first rigorous proof that the Fourier series of a function with finitely many maxima, minima and jumps converges, to the midpoint of each jump.",
+      "people": [
+        "Peter Gustav Lejeune Dirichlet"
+      ]
+    },
+    {
+      "year": 1836,
+      "title": "Sturm–Liouville theory",
+      "detail": "In papers of 1836–1837 in Liouville's new journal, Charles-François Sturm and Joseph Liouville studied eigenvalue problems for second-order linear equations, their oscillation properties and eigenfunction expansions.",
+      "people": [
+        "Charles-François Sturm",
+        "Joseph Liouville"
+      ]
+    },
+    {
+      "year": 1899,
+      "title": "The Gibbs phenomenon",
+      "detail": "Josiah Willard Gibbs described in Nature the persistent overshoot of Fourier partial sums near a jump; Henry Wilbraham had analysed the same effect in 1848, and Maxime Bôcher later gave a full treatment and the name.",
+      "people": [
+        "J. Willard Gibbs",
+        "Henry Wilbraham"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "The fast Fourier transform",
+      "detail": "James Cooley and John Tukey published an algorithm computing discrete Fourier transforms of length $N$ in $O(N\\log N)$ operations; the idea had appeared in unpublished work of Gauss around 1805.",
+      "people": [
+        "James Cooley",
+        "John Tukey"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Carleson's theorem",
+      "detail": "Lennart Carleson proved that the Fourier series of every square-integrable function converges almost everywhere, settling a question posed by Luzin in 1915.",
+      "people": [
+        "Lennart Carleson"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Partial Differential Equations: An Introduction",
+      "authors": "Walter A. Strauss",
+      "year": 2008,
+      "note": "The standard first course (2nd edition): clear derivations, the maximum principle, energy methods and d'Alembert's formula, with good exercises."
+    },
+    {
+      "title": "Applied Partial Differential Equations with Fourier Series and Boundary Value Problems",
+      "authors": "Richard Haberman",
+      "year": 2013,
+      "note": "Very gentle and detailed on separation of variables, Sturm–Liouville problems and physical modelling; many worked examples (5th edition)."
+    },
+    {
+      "title": "Fourier Analysis: An Introduction",
+      "authors": "Elias M. Stein and Rami Shakarchi",
+      "year": 2003,
+      "note": "Rigorous and elegant treatment of Fourier series and transforms with applications to PDEs; the natural next step for the analysis in this course."
+    },
+    {
+      "title": "Fourier Analysis",
+      "authors": "T. W. Körner",
+      "year": 1988,
+      "note": "A delightful collection of short chapters mixing theory, history and applications of Fourier methods."
+    },
+    {
+      "title": "Fourier Analysis and Its Applications",
+      "authors": "Gerald B. Folland",
+      "year": 1992,
+      "note": "Careful proofs of convergence theorems, Sturm–Liouville theory, Bessel functions and the Fourier transform at an undergraduate level."
+    },
+    {
+      "title": "Elementary Differential Equations and Boundary Value Problems",
+      "authors": "William E. Boyce, Richard C. DiPrima and Douglas B. Meade",
+      "year": 2017,
+      "note": "The final chapters give an accessible first look at Fourier series and separation of variables (11th edition)."
+    },
+    {
+      "title": "Partial Differential Equations",
+      "authors": "Lawrence C. Evans",
+      "year": 2010,
+      "note": "The graduate reference (2nd edition): read its first chapters on the four basic linear PDEs once this course is complete."
+    }
+  ],
+  "next": []
+}

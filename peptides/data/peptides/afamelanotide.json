@@ -1,0 +1,139 @@
+{
+  "slug": "afamelanotide",
+  "name": "Afamelanotide",
+  "aliases": ["Melanotan I", "Melanotan-1", "MT-I", "CUV1647", "NDP-α-MSH", "[Nle4, D-Phe7]-α-MSH"],
+  "category": "melanocortin",
+  "drug_class": "Melanocortin 1 receptor agonist",
+  "subclass": "Linear 13-residue α-MSH analogue formulated as a slow-release subcutaneous implant",
+  "status": "approved",
+  "status_note": "Authorised in the EU (2014, under exceptional circumstances), the US (2019), Australia (2020), Israel and Canada (2026) to prevent phototoxicity in adults with erythropoietic protoporphyria; a late-stage vitiligo programme is under way.",
+  "evidence": 4,
+  "evidence_note": "Approved on randomised phase 3 trials in erythropoietic protoporphyria (74–94 patients each) supported by long-term observational data; vitiligo evidence so far comes from a 55-patient randomised trial, with a 210-patient study due to report in December 2026.",
+  "tagline": "α-MSH analogue implant that darkens skin to shield people with EPP from light",
+  "summary": "Afamelanotide is a synthetic, longer-lasting version of α-melanocyte-stimulating hormone, the hormone that tells skin cells to make dark melanin. Given as a small implant under the skin every two months (Scenesse), it darkens the skin and lets people with erythropoietic protoporphyria (EPP), a rare inherited disorder that makes light exposure painful, spend more time outdoors. First made in Arizona in 1980 and once called 'melanotan I', it was approved in the EU in 2014.",
+  "overview": [
+    "Afamelanotide was created at the University of Arizona in 1980 by T. K. Sawyer, Victor Hruby, Mac Hadley and colleagues, who found that replacing methionine-4 of α-MSH with norleucine and L-phenylalanine-7 with its mirror-image D-form made the hormone resistant to serum enzymes, more potent and much longer-acting. Under the name melanotan I it was studied as a sunless tanning agent that might lower skin-cancer risk: in a 1991 randomised trial in 28 healthy men, ten injections over 12 days darkened the skin of those given the drug without any ultraviolet exposure.",
+    "The Melbourne-based company Clinuvel took the compound forward for light-sensitivity disorders, using a 16 mg controlled-release implant inserted under the skin. Its main target became erythropoietic protoporphyria (EPP), an inherited disorder in which phototoxic protoporphyrin IX accumulates in the body so that even brief exposure to visible light causes burning pain and skin damage. Small studies and treatment programmes in Switzerland and Italy from 2006 onwards reported greater light tolerance and better quality of life.",
+    "Randomised trials in Europe and the US, published in 2015, showed that patients given the implant spent more time in direct sunlight without pain, had fewer phototoxic reactions and reported better quality of life. The European Commission authorised Scenesse under exceptional circumstances in December 2014, followed by the FDA (October 2019), Australia's TGA (October 2020) and Health Canada (July 2026). In 2025 the EU label dropped its limit of four implants a year, allowing treatment all year round as in the US.",
+    "Clinuvel is also testing afamelanotide with narrowband UVB phototherapy to restore pigment in vitiligo, particularly in darker skin: a 55-patient randomised trial found faster and greater repigmentation than phototherapy alone, the 210-patient CUV105 study is due to report in December 2026 and a 300-patient pivotal trial (CUV107) is planned. It has also been studied in polymorphic light eruption, solar urticaria, variegate porphyria, xeroderma pigmentosum and acute stroke. Unlicensed 'melanotan' products sold online for tanning are not the approved implant."
+  ],
+  "mechanism": [
+    "Afamelanotide binds predominantly to the melanocortin 1 receptor (MC1R) on melanocytes, raising cAMP and switching melanin synthesis towards brown-black eumelanin, independently of sun or UV exposure. The extra eumelanin reduces the penetration of light through the skin, which lessens the painful phototoxic reactions of EPP; the company also describes an antioxidant effect.",
+    "Like α-MSH it can activate other melanocortin receptors, and cryo-EM structures show it bound to both MC1R and MC4R. After an implant, plasma levels peak at about 36 hours and are usually undetectable by four days, but the induced pigmentation lasts for weeks, allowing dosing every two months."
+  ],
+  "origin": "Synthetic analogue of α-melanocyte-stimulating hormone (α-MSH), a 13-residue peptide cleaved from pro-opiomelanocortin (POMC)",
+  "discovery": {"year": 1980, "by": "T. K. Sawyer, V. J. Hruby, M. E. Hadley and colleagues", "where": "University of Arizona, Tucson, USA", "note": "Reported in PNAS in October 1980 as [Nle4, D-Phe7]-α-MSH, which resisted degradation by serum enzymes, had ultra-long activity and was 26 times as potent as α-MSH in a melanoma adenylate cyclase assay."},
+  "first_human_year": 1991,
+  "first_approval": {"date": "2014-12-22", "agency": "EMA", "region": "EU", "brand": "Scenesse", "indication": "Prevention of phototoxicity in adults with erythropoietic protoporphyria"},
+  "developer": "University of Arizona (discovery); Clinuvel Pharmaceuticals, Melbourne, Australia (development and marketing)",
+  "brands": [
+    {"name": "Scenesse", "company": "Clinuvel", "route": "Subcutaneous implant (16 mg), every 2 months", "use": "Erythropoietic protoporphyria (prevention of phototoxicity / increasing pain-free light exposure in adults)", "approved": "2014-12-22", "agency": "EMA"}
+  ],
+  "targets": [
+    {"name": "Melanocortin 1 receptor", "gene": "MC1R", "uniprot": "Q01726", "action": "Agonist (primary target; eumelanin production)"},
+    {"name": "Melanocortin 4 receptor", "gene": "MC4R", "uniprot": "P32245", "action": "Agonist (structurally characterised; not the therapeutic target)"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["S","Y","S","Nle","E","H","f","R","W","G","K","P","V"], "n_term": "Ac", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A4", "type": "nonnatural", "label": "Norleucine replaces methionine-4 of α-MSH, removing an oxidation-prone residue", "short": "Nle4"},
+      {"at": "A7", "type": "d-amino", "label": "D-phenylalanine replaces L-phenylalanine-7, increasing potency and resistance to enzymatic breakdown", "short": "D-Phe7"}
+    ],
+    "notation": "Ac-Ser-Tyr-Ser-Nle-Glu-His-D-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH2",
+    "note": "Differs from human α-MSH (Ac-SYSMEHFRWGKPV-NH2) at only two positions, 4 and 7. Like α-MSH it is N-acetylated and C-terminally amidated."
+  },
+  "formula": "C78H111N21O19",
+  "mw": 1646.8,
+  "half_life": "≈ 15 h (apparent, after subcutaneous implant)",
+  "half_life_hours": 15,
+  "routes": ["Subcutaneous implant (16 mg) every 2 months", "Subcutaneous injection (early tanning studies)"],
+  "structure": {
+    "pdb": [
+      {"id": "7F4H", "title": "Afamelanotide bound to the melanocortin-1 receptor in complex with Gs protein", "method": "Cryo-EM", "resolution": 2.7, "year": 2021, "peptide_chain": "F", "note": "Complex with the drug's main target, MC1R, stabilised by Nb35 and scFv16"},
+      {"id": "7F54", "title": "Afamelanotide bound to the melanocortin-4 receptor in complex with Gs protein", "method": "Cryo-EM", "resolution": 3.0, "year": 2021, "peptide_chain": "L", "note": "Solved alongside α-MSH, bremelanotide and a small-molecule agonist"},
+      {"id": "7PIV", "title": "NDP-α-MSH (afamelanotide) bound to the active melanocortin-4 receptor–Gs complex", "method": "Cryo-EM", "resolution": 2.86, "year": 2021, "peptide_chain": "P", "note": "Independent MC4R structure published with the setmelanotide complex"}
+    ],
+    "pubchem_cid": 16197727,
+    "notes": "The MC1R structures come from a 2021 study of calcium-mediated hormone recognition by MC1R; the two MC4R structures were published the same year by independent groups."
+  },
+  "ids": {"pubchem_cid": 16197727, "cas": "75921-69-6", "drugbank": "DB04931", "chembl": "CHEMBL441738", "unii": "QW68W3J66U", "kegg": "D10511", "chebi": "CHEBI:136034", "atc": "D02BB02", "inn": "afamelanotide"},
+  "wiki": "Afamelanotide",
+  "queries": {
+    "pubmed": "(afamelanotide[tiab] OR Scenesse[tiab] OR CUV1647[tiab] OR \"melanotan I\"[tiab] OR \"melanotan-I\"[tiab] OR \"melanotan-1\"[tiab])",
+    "ctgov": "afamelanotide OR Scenesse OR CUV1647"
+  },
+  "uses": {
+    "approved": [
+      {"use": "Erythropoietic protoporphyria (EPP)", "detail": "Prevention of phototoxicity (EU) or increasing pain-free light exposure (US) in adults with EPP; given by trained specialists alongside continued sun protection.", "since": 2014, "where": "EU, US, Australia, Israel, Canada"}
+    ],
+    "investigational": [
+      {"use": "Vitiligo (with narrowband UVB)", "stage": "Late-stage — CUV105 results due December 2026; pivotal CUV107 planned", "detail": "A 55-patient randomised trial showed faster and greater repigmentation than NB-UVB alone, most clearly in darker skin types; CUV105 compares the combination with NB-UVB alone in 210 patients."},
+      {"use": "Variegate porphyria", "stage": "Phase 2 (completed)", "detail": "A study begun in 2023 evaluated photoprotection in this related porphyria; the drug received EU orphan designation for it in 2024."},
+      {"use": "Xeroderma pigmentosum", "stage": "Phase 2", "detail": "Studied for reducing ultraviolet-induced DNA damage in this DNA-repair disorder; EU orphan designation granted in 2024."},
+      {"use": "Acute ischaemic stroke", "stage": "Phase 2a (feasibility)", "detail": "An open-label proof-of-concept study assessed safety in patients with acute stroke (published 2023)."},
+      {"use": "Polymorphic light eruption and solar urticaria", "stage": "Phase 2–3 (2007–2010)", "detail": "Earlier trials in other light-sensitivity disorders; development later concentrated on EPP."}
+    ],
+    "off_label": [
+      {"use": "Unlicensed 'melanotan' for cosmetic tanning", "detail": "Products sold online as melanotan or melanotan I for tanning are not the approved implant and are self-injected without medical supervision.", "evidence": "Quality and dose are not controlled; case reports link unregulated melanotan I and II use to new and changing moles."}
+    ]
+  },
+  "history": [
+    {"year": 1980, "date": "1980-10", "title": "Long-acting α-MSH analogue made", "detail": "Sawyer, Hruby, Hadley and colleagues reported [Nle4, D-Phe7]-α-MSH, which resisted serum enzymes and had ultra-long activity.", "kind": "discovery"},
+    {"year": 1991, "date": "1991-11", "title": "Sunless tanning in humans", "detail": "In a randomised trial in 28 healthy men, ten injections over 12 days darkened the skin without UV exposure, with peak effect one to three weeks after treatment ended.", "kind": "trial"},
+    {"year": 2008, "date": "2008-05-08", "title": "EU orphan designation for EPP", "detail": "Afamelanotide was designated an orphan medicine for erythropoietic protoporphyria in the EU.", "kind": "regulatory"},
+    {"year": 2009, "title": "First EPP results", "detail": "In a Swiss open-label study in five patients with EPP, implants increased tolerance to light, with sunlight tolerance up to 24 times longer than before treatment.", "kind": "trial"},
+    {"year": 2014, "date": "2014-12-22", "title": "EU authorises Scenesse", "detail": "Approved under exceptional circumstances for adults with EPP, the first authorisation of a synthetic α-MSH analogue, with a patient registry as a condition.", "kind": "approval"},
+    {"year": 2015, "date": "2015-01", "title": "Vitiligo trial", "detail": "Combined with narrowband UVB, afamelanotide produced faster and greater repigmentation than UVB alone in 55 patients with vitiligo.", "kind": "trial"},
+    {"year": 2015, "date": "2015-07-02", "title": "Phase 3 EPP results published", "detail": "Two randomised trials (74 and 94 patients) in the NEJM showed longer pain-free time in direct sunlight and better quality of life.", "kind": "trial"},
+    {"year": 2019, "date": "2019-10-08", "title": "FDA approval", "detail": "The FDA approved Scenesse to increase pain-free light exposure in adults with a history of phototoxic reactions from EPP.", "kind": "approval"},
+    {"year": 2020, "date": "2020-10-27", "title": "Approved in Australia", "detail": "The Therapeutic Goods Administration approved Scenesse for EPP.", "kind": "approval"},
+    {"year": 2024, "date": "2024-06-03", "title": "Adolescent application withdrawn", "detail": "Clinuvel withdrew its application to extend the EU authorisation to adolescents with EPP.", "kind": "regulatory"},
+    {"year": 2025, "date": "2025-09-23", "title": "Year-round treatment allowed in the EU", "detail": "The CHMP removed the recommended maximum of four implants a year, allowing one implant every two months throughout the year.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-07-13", "title": "Approved in Canada", "detail": "Health Canada issued a Notice of Compliance for the prevention of phototoxicity in adults with EPP.", "kind": "approval"},
+    {"year": 2026, "date": "2026-07-28", "title": "Vitiligo programme update", "detail": "Clinuvel said topline results from the 210-patient CUV105 study are expected in December 2026 and that the pivotal CUV107 trial, reviewed by the EMA, should start in November 2026.", "kind": "trial"}
+  ],
+  "regulatory": [
+    {"region": "EU", "status": "approved", "detail": "Authorised December 2014 under exceptional circumstances for adults with EPP (orphan medicine, EU registry required); the four-implants-a-year maximum was removed in 2025; an adolescent extension was withdrawn in 2024."},
+    {"region": "US", "status": "approved", "detail": "Approved October 2019 (NDA 210797) to increase pain-free light exposure in adults with EPP."},
+    {"region": "Australia", "status": "approved", "detail": "Approved by the TGA in October 2020."},
+    {"region": "Canada", "status": "approved", "detail": "Notice of Compliance from Health Canada in July 2026."}
+  ],
+  "pk": {
+    "half_life": "≈ 15 h apparent half-life after implantation",
+    "tmax": "Median 36 h after implant insertion; usually undetectable in plasma after 96 h",
+    "metabolism": "May undergo hydrolysis; metabolic profile not fully characterised"
+  },
+  "dosing": [
+    {"product": "Scenesse", "regimen": "One 16 mg implant inserted subcutaneously above the anterior supra-iliac crest every 2 months by a trained healthcare professional, with continued sun and light protection. Since 2025 the EU label sets no maximum number of implants per year."}
+  ],
+  "dosing_note": "Labelled regimen summarised for reference only; the implant is administered only by trained specialists at accredited centres.",
+  "safety": {
+    "common": ["Implant-site reactions (21%)", "Nausea (19%)", "Headache", "Oropharyngeal pain", "Cough", "Fatigue", "Skin hyperpigmentation", "Dizziness", "Melanocytic naevus"],
+    "serious": ["Serious hypersensitivity reactions, including anaphylaxis (post-marketing)"],
+    "warnings": ["Causes generalised skin darkening and darkening of existing moles and freckles; the US label recommends a full-body skin examination twice a year", "The EU summary states it must not be used in patients with reduced liver or kidney function", "Patients should be observed for allergic reactions for 30 minutes after each implant (EU)"],
+    "notes": "Most adverse effects in the phase 3 trials were mild. As a condition of the exceptional-circumstances authorisation, long-term safety and effectiveness data are collected in a European EPP registry; the company reports more than 21,000 implants given to EPP patients, some treated for up to 20 years."
+  },
+  "market": null,
+  "facts": [
+    "It differs from natural α-MSH at just two of its 13 amino acids.",
+    "Under the name melanotan I it was first developed as a sunless tanning agent that might lower the risk of skin cancer.",
+    "Blood levels are usually undetectable within about four days of an implant, yet one implant every two months maintains protection.",
+    "The phase 3 trials measured success in hours spent in direct sunlight without pain."
+  ],
+  "related": ["melanotan-ii", "bremelanotide", "setmelanotide"],
+  "references": [
+    {"title": "4-Norleucine, 7-D-phenylalanine-alpha-melanocyte-stimulating hormone: a highly potent alpha-melanotropin with ultralong biological activity", "authors": "Sawyer TK, Sanfilippo PJ, Hruby VJ, et al.", "journal": "Proc Natl Acad Sci U S A", "year": 1980, "url": "https://pubmed.ncbi.nlm.nih.gov/6777774/"},
+    {"title": "Induction of skin tanning by subcutaneous administration of a potent synthetic melanotropin", "authors": "Levine N, Sheftel SN, Eytan T, et al.", "journal": "JAMA", "year": 1991, "url": "https://pubmed.ncbi.nlm.nih.gov/1658407/"},
+    {"title": "Mitigating photosensitivity of erythropoietic protoporphyria patients by an agonistic analog of alpha-melanocyte stimulating hormone", "authors": "Harms JH, Lautenschlager S, Minder CE, Minder EI", "journal": "Photochem Photobiol", "year": 2009, "url": "https://pubmed.ncbi.nlm.nih.gov/19656325/"},
+    {"title": "Afamelanotide and narrowband UV-B phototherapy for the treatment of vitiligo: a randomized multicenter trial", "authors": "Lim HW, Grimes PE, Agbai O, et al.", "journal": "JAMA Dermatol", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/25230094/"},
+    {"title": "Long-term observational study of afamelanotide in 115 patients with erythropoietic protoporphyria", "authors": "Biolcati G, Marchesini E, Sorge F, et al.", "journal": "Br J Dermatol", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/25494545/"},
+    {"title": "Afamelanotide for erythropoietic protoporphyria", "authors": "Langendonk JG, Balwani M, Anderson KE, et al.", "journal": "N Engl J Med", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/26132941/"},
+    {"title": "Association of afamelanotide with improved outcomes in patients with erythropoietic protoporphyria in clinical practice", "authors": "Wensink D, Wagenmakers MAEM, Barman-Aksözen J, et al.", "journal": "JAMA Dermatol", "year": 2020, "url": "https://pubmed.ncbi.nlm.nih.gov/32186677/"},
+    {"title": "Structural mechanism of calcium-mediated hormone recognition and Gβ interaction by the human melanocortin-1 receptor", "authors": "Ma S, Chen Y, Dai A, et al.", "journal": "Cell Res", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34453129/"},
+    {"title": "Structures of active melanocortin-4 receptor-Gs-protein complexes with NDP-α-MSH and setmelanotide", "authors": "Heyder NA, Kleinau G, Speck D, et al.", "journal": "Cell Res", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34561620/"}
+  ]
+}

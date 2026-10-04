@@ -1,0 +1,2180 @@
+{
+ "_doc": "Catalogue of interactive figure types. Authors write ':::widget <type>' blocks with 'key: value' lines; tools/build.js validates them against this file. Param types: expr (expression in 'vars', plus slider names), exprs (';'-separated exprs), cexpr (complex expression in z), num (number or constant expression like pi/2), int, bool, range ('min, max'), enum (one of 'values'), str, list (';'-separated strings), points ('x,y; x,y'), sliders ('a=1:-3:3:0.1; b=…' = value:min:max[:step]), matrix ('a,b; c,d' rows separated by ';'). Every type also accepts 'title' (str) and 'caption' (inline markup, shown under the figure).",
+ "types": {
+  "plot": {
+   "file": "calculus",
+   "title": "Function plotter",
+   "zh": "函数绘图",
+   "desc": "Graphs of one or more functions of x with optional parameter sliders, shading, marked points and a draggable tangent.",
+   "params": {
+    "f": {
+     "type": "exprs",
+     "vars": [
+      "x"
+     ],
+     "required": true,
+     "desc": "functions of x separated by ';' (sliders' names may appear)"
+    },
+    "x": {
+     "type": "range",
+     "default": "-5, 5"
+    },
+    "y": {
+     "type": "range",
+     "desc": "default: fitted to the graphs"
+    },
+    "sliders": {
+     "type": "sliders"
+    },
+    "labels": {
+     "type": "list",
+     "desc": "legend labels (TeX allowed), one per function"
+    },
+    "points": {
+     "type": "points",
+     "desc": "marked points"
+    },
+    "shade": {
+     "type": "range",
+     "desc": "shade under the first function between these x values"
+    },
+    "between": {
+     "type": "bool",
+     "default": "false",
+     "desc": "with shade: fill between the first two functions instead"
+    },
+    "tangent": {
+     "type": "num",
+     "desc": "x0: draggable tangent line to the first function"
+    },
+    "hlines": {
+     "type": "list"
+    },
+    "vlines": {
+     "type": "list"
+    },
+    "equal": {
+     "type": "bool",
+     "default": "false"
+    },
+    "piticks": {
+     "type": "bool",
+     "default": "false"
+    }
+   },
+   "example": "f: sin(a*x); a*x\nsliders: a=1:0.2:3\nx: -2pi, 2pi\npiticks: true",
+   "zh_desc": "一个或多个关于 x 的函数图像，可加参数滑块、阴影、标记点和可拖动的切线。"
+  },
+  "parametric": {
+   "file": "calculus",
+   "title": "Parametric and polar curves",
+   "zh": "参数曲线与极坐标曲线",
+   "desc": "Curve (fx(t), fy(t)) or polar r(t) traced by a moving point, with velocity vector.",
+   "params": {
+    "fx": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ]
+    },
+    "fy": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ]
+    },
+    "r": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ],
+     "desc": "polar curve r(θ) with θ = t (instead of fx, fy)"
+    },
+    "t": {
+     "type": "range",
+     "default": "0, 2pi"
+    },
+    "x": {
+     "type": "range"
+    },
+    "y": {
+     "type": "range"
+    },
+    "sliders": {
+     "type": "sliders"
+    },
+    "trace": {
+     "type": "bool",
+     "default": "true",
+     "desc": "show the moving point, its velocity and a t slider"
+    },
+    "equal": {
+     "type": "bool",
+     "default": "true"
+    }
+   },
+   "example": "r: 1 + cos(t)\nt: 0, 2pi",
+   "zh_desc": "由动点描出的参数曲线 (x(t), y(t)) 或极坐标曲线 r(t)，并显示速度向量。"
+  },
+  "limit": {
+   "file": "calculus",
+   "title": "ε–δ explorer",
+   "zh": "ε–δ 探索",
+   "desc": "Choose ε; the figure finds the largest δ that works for lim_{x→a} f(x) = L and shows both bands.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "required": true
+    },
+    "a": {
+     "type": "num",
+     "required": true
+    },
+    "L": {
+     "type": "num",
+     "desc": "limit (default: estimated)"
+    },
+    "epsilon": {
+     "type": "num",
+     "default": "0.5"
+    },
+    "x": {
+     "type": "range"
+    },
+    "y": {
+     "type": "range"
+    },
+    "hole": {
+     "type": "bool",
+     "default": "false",
+     "desc": "draw f as undefined at a"
+    }
+   },
+   "example": "f: (x^2 - 1)/(x - 1)\na: 1\nL: 2\nhole: true",
+   "zh_desc": "选择 ε，图形会自动找出使 lim f(x) = L 成立的最大 δ，并画出两条带状区域。"
+  },
+  "secant": {
+   "file": "calculus",
+   "title": "Secant to tangent",
+   "zh": "割线到切线",
+   "desc": "Secant through (x0, f(x0)) and (x0+h, f(x0+h)); slide h to 0 to see the derivative.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "required": true
+    },
+    "x0": {
+     "type": "num",
+     "default": "1"
+    },
+    "h": {
+     "type": "num",
+     "default": "1"
+    },
+    "x": {
+     "type": "range"
+    },
+    "y": {
+     "type": "range"
+    }
+   },
+   "example": "f: x^2\nx0: 1\nh: 1.5",
+   "zh_desc": "过 (x₀, f(x₀)) 与 (x₀+h, f(x₀+h)) 的割线；把 h 滑向 0 即可看到导数。"
+  },
+  "riemann": {
+   "file": "calculus",
+   "title": "Riemann sums",
+   "zh": "黎曼和",
+   "desc": "Rectangles (or trapezoids / Simpson parabolas) approximating the integral of f on [a, b]; slider for n; compares with the exact value.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "required": true
+    },
+    "a": {
+     "type": "num",
+     "default": "0"
+    },
+    "b": {
+     "type": "num",
+     "default": "1"
+    },
+    "n": {
+     "type": "int",
+     "default": "6"
+    },
+    "method": {
+     "type": "enum",
+     "values": [
+      "left",
+      "right",
+      "mid",
+      "trap",
+      "simpson",
+      "upper",
+      "lower"
+     ],
+     "default": "left"
+    },
+    "x": {
+     "type": "range"
+    },
+    "y": {
+     "type": "range"
+    }
+   },
+   "example": "f: sin(x) + 1\na: 0\nb: pi\nn: 6\nmethod: mid",
+   "zh_desc": "用矩形（或梯形、辛普森抛物线）近似 f 在 [a, b] 上的积分；可调节 n，并与精确值比较。"
+  },
+  "taylor": {
+   "file": "calculus",
+   "title": "Taylor polynomials",
+   "zh": "泰勒多项式",
+   "desc": "Taylor polynomial of degree n about x = a (exact coefficients), with the remainder shaded; degree and centre are adjustable.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "required": true
+    },
+    "a": {
+     "type": "num",
+     "default": "0"
+    },
+    "n": {
+     "type": "int",
+     "default": "3"
+    },
+    "max": {
+     "type": "int",
+     "default": "20"
+    },
+    "x": {
+     "type": "range",
+     "default": "-6, 6"
+    },
+    "y": {
+     "type": "range"
+    }
+   },
+   "example": "f: sin(x)\na: 0\nn: 3\nx: -2pi, 2pi",
+   "zh_desc": "函数在 x = a 处的 n 次泰勒多项式（精确系数），阴影表示余项；次数和展开中心均可调。"
+  },
+  "sequence": {
+   "file": "calculus",
+   "title": "Sequences and series",
+   "zh": "数列与级数",
+   "desc": "Terms a_n and/or partial sums S_n; optional ε-band around a limit showing the N from the definition of convergence.",
+   "params": {
+    "a": {
+     "type": "expr",
+     "vars": [
+      "n"
+     ],
+     "required": true
+    },
+    "N": {
+     "type": "int",
+     "default": "30"
+    },
+    "mode": {
+     "type": "enum",
+     "values": [
+      "terms",
+      "sums",
+      "both"
+     ],
+     "default": "terms"
+    },
+    "limit": {
+     "type": "num"
+    },
+    "epsilon": {
+     "type": "num",
+     "desc": "initial ε (adds an ε slider)"
+    },
+    "start": {
+     "type": "int",
+     "default": "1"
+    },
+    "sliders": {
+     "type": "sliders"
+    },
+    "y": {
+     "type": "range"
+    }
+   },
+   "example": "a: (-1)^(n+1)/n\nmode: both\nlimit: ln(2)",
+   "zh_desc": "数列的项 aₙ 和/或部分和 Sₙ；可在极限附近画出 ε 带，显示收敛定义中的 N。"
+  },
+  "newton": {
+   "file": "calculus",
+   "title": "Root finding",
+   "zh": "求根",
+   "desc": "Newton's method, the secant method, bisection or fixed-point iteration, step by step with an iteration table.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "required": true
+    },
+    "method": {
+     "type": "enum",
+     "values": [
+      "newton",
+      "secant",
+      "bisection",
+      "fixed"
+     ],
+     "default": "newton"
+    },
+    "x0": {
+     "type": "num",
+     "default": "1"
+    },
+    "x1": {
+     "type": "num",
+     "desc": "second start (secant) or right end (bisection)"
+    },
+    "g": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "desc": "iteration function for method fixed"
+    },
+    "steps": {
+     "type": "int",
+     "default": "6"
+    },
+    "x": {
+     "type": "range"
+    },
+    "y": {
+     "type": "range"
+    }
+   },
+   "example": "f: x^3 - 2x - 5\nx0: 3",
+   "zh_desc": "逐步演示牛顿法、割线法、二分法或不动点迭代，并给出迭代表。"
+  },
+  "cobweb": {
+   "file": "calculus",
+   "title": "Iteration and cobweb plot",
+   "zh": "迭代与蛛网图",
+   "desc": "Cobweb diagram for x_{n+1} = g(x_n) with the orbit; optional bifurcation diagram over a slider parameter.",
+   "params": {
+    "g": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "required": true
+    },
+    "x0": {
+     "type": "num",
+     "default": "0.2"
+    },
+    "steps": {
+     "type": "int",
+     "default": "30"
+    },
+    "sliders": {
+     "type": "sliders"
+    },
+    "bifurcation": {
+     "type": "str",
+     "desc": "name of a slider parameter: add a bifurcation diagram over its range"
+    },
+    "x": {
+     "type": "range",
+     "default": "0, 1"
+    },
+    "y": {
+     "type": "range"
+    }
+   },
+   "example": "g: r*x*(1-x)\nsliders: r=2.8:1:4:0.01\nx0: 0.2\nbifurcation: r",
+   "zh_desc": "xₙ₊₁ = g(xₙ) 的蛛网图及其轨道；可选按滑块参数绘制分岔图。"
+  },
+  "unitcircle": {
+   "file": "calculus",
+   "title": "Unit circle and trigonometric graphs",
+   "zh": "单位圆与三角函数图像",
+   "desc": "Angle θ on the unit circle linked to the graphs of sin, cos and tan.",
+   "params": {
+    "angle": {
+     "type": "num",
+     "default": "pi/6"
+    },
+    "show": {
+     "type": "enum",
+     "values": [
+      "sin",
+      "cos",
+      "tan",
+      "all"
+     ],
+     "default": "all"
+    }
+   },
+   "example": "angle: pi/3",
+   "zh_desc": "单位圆上的角 θ 与 sin、cos、tan 的图像联动。"
+  },
+  "curvature": {
+   "file": "calculus",
+   "title": "Curvature and osculating circle",
+   "zh": "曲率与密切圆",
+   "desc": "Osculating circle and curvature κ at a movable point of y = f(x) or of a parametric curve.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ]
+    },
+    "fx": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ]
+    },
+    "fy": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ]
+    },
+    "t": {
+     "type": "range",
+     "default": "0, 2pi"
+    },
+    "at": {
+     "type": "num",
+     "default": "0"
+    },
+    "x": {
+     "type": "range"
+    },
+    "y": {
+     "type": "range"
+    }
+   },
+   "example": "f: x^2/2\nat: 0.5",
+   "zh_desc": "曲线 y = f(x) 或参数曲线上动点处的密切圆和曲率 κ。"
+  },
+  "interpolation": {
+   "file": "numerical",
+   "title": "Polynomial interpolation and splines",
+   "zh": "多项式插值与样条",
+   "desc": "Interpolate f at n nodes (equispaced or Chebyshev) or draggable data points; Lagrange, Newton, linear or natural cubic spline; shows the error (Runge's phenomenon).",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ]
+    },
+    "points": {
+     "type": "points",
+     "desc": "data points instead of f (draggable)"
+    },
+    "n": {
+     "type": "int",
+     "default": "7"
+    },
+    "nodes": {
+     "type": "enum",
+     "values": [
+      "equispaced",
+      "chebyshev"
+     ],
+     "default": "equispaced"
+    },
+    "method": {
+     "type": "enum",
+     "values": [
+      "lagrange",
+      "spline",
+      "linear"
+     ],
+     "default": "lagrange"
+    },
+    "x": {
+     "type": "range",
+     "default": "-1, 1"
+    },
+    "y": {
+     "type": "range"
+    }
+   },
+   "example": "f: 1/(1 + 25x^2)\nn: 11\nnodes: equispaced",
+   "zh_desc": "在 n 个节点（等距或切比雪夫节点）或可拖动的数据点上插值；拉格朗日、线性或自然三次样条；显示误差（龙格现象）。"
+  },
+  "quadrature": {
+   "file": "numerical",
+   "title": "Convergence of quadrature rules",
+   "zh": "数值积分的收敛",
+   "desc": "Error of composite rules (midpoint, trapezoid, Simpson, Gauss–Legendre) against n on log–log axes, with fitted orders.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "required": true
+    },
+    "a": {
+     "type": "num",
+     "default": "0"
+    },
+    "b": {
+     "type": "num",
+     "default": "1"
+    },
+    "methods": {
+     "type": "list",
+     "default": "mid; trap; simpson; gauss"
+    }
+   },
+   "example": "f: exp(x)\na: 0\nb: 1",
+   "zh_desc": "复化求积公式（中点、梯形、辛普森、高斯-勒让德）的误差随 n 变化的双对数图，并拟合收敛阶。"
+  },
+  "floatline": {
+   "file": "numerical",
+   "title": "Floating-point numbers",
+   "zh": "浮点数",
+   "desc": "All numbers of a toy binary floating-point system on a number line; rounding of a chosen value, machine epsilon and gaps.",
+   "params": {
+    "p": {
+     "type": "int",
+     "default": "3",
+     "desc": "precision (significand bits)"
+    },
+    "emin": {
+     "type": "int",
+     "default": "-2"
+    },
+    "emax": {
+     "type": "int",
+     "default": "2"
+    },
+    "value": {
+     "type": "num",
+     "default": "1.3"
+    }
+   },
+   "example": "p: 3\nemin: -1\nemax: 2",
+   "zh_desc": "一个玩具二进制浮点系统中所有可表示的数；演示舍入、机器精度和数间间隙。"
+  },
+  "iterative": {
+   "file": "numerical",
+   "title": "Iterative linear solvers",
+   "zh": "迭代法解线性方程组",
+   "desc": "Jacobi, Gauss–Seidel or SOR iterates for a 2×2 system drawn on the two lines, with the residual history.",
+   "params": {
+    "matrix": {
+     "type": "matrix",
+     "default": "4,1; 2,3"
+    },
+    "b": {
+     "type": "points",
+     "default": "1,2",
+     "desc": "right-hand side as one 'b1,b2' pair"
+    },
+    "method": {
+     "type": "enum",
+     "values": [
+      "jacobi",
+      "gauss-seidel",
+      "sor"
+     ],
+     "default": "jacobi"
+    },
+    "omega": {
+     "type": "num",
+     "default": "1.2"
+    },
+    "start": {
+     "type": "points",
+     "default": "0,0"
+    }
+   },
+   "example": "matrix: 4,1; 2,3\nb: 1,2\nmethod: gauss-seidel",
+   "zh_desc": "二阶线性方程组的雅可比、高斯-赛德尔或 SOR 迭代点画在两条直线上，并显示残差历史。"
+  },
+  "transform2d": {
+   "file": "linalg",
+   "title": "Linear maps of the plane",
+   "zh": "平面线性变换",
+   "desc": "The grid, unit square and a vector under the matrix A; editable entries, determinant as area, eigenvectors, animation from the identity.",
+   "params": {
+    "matrix": {
+     "type": "matrix",
+     "default": "1,1; 0,1"
+    },
+    "editable": {
+     "type": "bool",
+     "default": "true"
+    },
+    "eigen": {
+     "type": "bool",
+     "default": "false"
+    },
+    "vector": {
+     "type": "points",
+     "desc": "a draggable vector 'x,y'"
+    },
+    "animate": {
+     "type": "bool",
+     "default": "true"
+    },
+    "range": {
+     "type": "num",
+     "default": "4",
+     "desc": "half-width of the view"
+    }
+   },
+   "example": "matrix: 2,1; 1,2\neigen: true",
+   "zh_desc": "矩阵 A 作用下的网格、单位正方形和向量；可编辑矩阵元素，行列式即面积，显示特征向量，并从单位矩阵连续变换。"
+  },
+  "svd": {
+   "file": "linalg",
+   "title": "Singular value decomposition",
+   "zh": "奇异值分解",
+   "desc": "A = UΣVᵀ for a 2×2 matrix as rotate–stretch–rotate of the unit circle, step by step.",
+   "params": {
+    "matrix": {
+     "type": "matrix",
+     "default": "3,0; 4,5"
+    },
+    "editable": {
+     "type": "bool",
+     "default": "true"
+    }
+   },
+   "example": "matrix: 3,0; 4,5",
+   "zh_desc": "二阶矩阵的分解 A = UΣVᵀ：单位圆依次旋转、拉伸、再旋转，逐步演示。"
+  },
+  "projection": {
+   "file": "linalg",
+   "title": "Projection and Gram–Schmidt",
+   "zh": "投影与格拉姆-施密特正交化",
+   "desc": "Draggable vectors u, v: the projection of v onto u, the orthogonal part, and the Gram–Schmidt basis.",
+   "params": {
+    "u": {
+     "type": "points",
+     "default": "3,1"
+    },
+    "v": {
+     "type": "points",
+     "default": "1,2"
+    },
+    "mode": {
+     "type": "enum",
+     "values": [
+      "projection",
+      "gram-schmidt"
+     ],
+     "default": "projection"
+    }
+   },
+   "example": "u: 3,1\nv: 1,2",
+   "zh_desc": "可拖动的向量 u、v：v 在 u 上的投影、正交分量以及格拉姆-施密特正交基。"
+  },
+  "rowreduce": {
+   "file": "linalg",
+   "title": "Row reduction",
+   "zh": "行化简",
+   "desc": "Gaussian elimination of an (augmented) matrix to reduced row echelon form, one elementary row operation per step, with exact fractions.",
+   "params": {
+    "matrix": {
+     "type": "matrix",
+     "required": true,
+     "desc": "rows separated by ';', up to 5×6"
+    },
+    "augmented": {
+     "type": "bool",
+     "default": "true",
+     "desc": "draw a bar before the last column"
+    }
+   },
+   "example": "matrix: 1,2,-1,3; 2,4,1,9; -1,1,2,0",
+   "zh_desc": "把（增广）矩阵用高斯消元化为简化行阶梯形，每一步一个初等行变换，使用精确分数。"
+  },
+  "surface": {
+   "file": "multivar",
+   "title": "Surfaces in 3D",
+   "zh": "三维曲面",
+   "desc": "Rotatable surface z = f(x, y) or parametric surface (fx, fy, fz)(u, v), with optional contours, tangent plane and curvature colouring.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x",
+      "y"
+     ]
+    },
+    "fx": {
+     "type": "expr",
+     "vars": [
+      "u",
+      "v"
+     ]
+    },
+    "fy": {
+     "type": "expr",
+     "vars": [
+      "u",
+      "v"
+     ]
+    },
+    "fz": {
+     "type": "expr",
+     "vars": [
+      "u",
+      "v"
+     ]
+    },
+    "x": {
+     "type": "range",
+     "default": "-2, 2"
+    },
+    "y": {
+     "type": "range",
+     "default": "-2, 2"
+    },
+    "u": {
+     "type": "range",
+     "default": "0, 2pi"
+    },
+    "v": {
+     "type": "range",
+     "default": "0, pi"
+    },
+    "sliders": {
+     "type": "sliders"
+    },
+    "contours": {
+     "type": "bool",
+     "default": "false"
+    },
+    "tangent": {
+     "type": "points",
+     "desc": "point 'x,y' for a tangent plane (graphs only)"
+    },
+    "color": {
+     "type": "enum",
+     "values": [
+      "height",
+      "gauss",
+      "mean",
+      "plain"
+     ],
+     "default": "height"
+    },
+    "resolution": {
+     "type": "int",
+     "default": "40"
+    }
+   },
+   "example": "f: x^2 - y^2\ncontours: true\ntangent: 0.5, 0.5",
+   "zh_desc": "可旋转的曲面 z = f(x, y) 或参数曲面，可选等高线、切平面和曲率着色。"
+  },
+  "frenet": {
+   "file": "multivar",
+   "title": "Space curves and the Frenet frame",
+   "zh": "空间曲线与弗雷内标架",
+   "desc": "Rotatable 3D curve with the moving T, N, B frame, curvature and torsion.",
+   "params": {
+    "fx": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ],
+     "required": true
+    },
+    "fy": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ],
+     "required": true
+    },
+    "fz": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ],
+     "required": true
+    },
+    "t": {
+     "type": "range",
+     "default": "0, 4pi"
+    },
+    "sliders": {
+     "type": "sliders"
+    }
+   },
+   "example": "fx: cos(t)\nfy: sin(t)\nfz: 0.2t",
+   "zh_desc": "可旋转的三维空间曲线及其活动标架 T、N、B，并显示曲率和挠率。"
+  },
+  "contour": {
+   "file": "multivar",
+   "title": "Level curves and gradients",
+   "zh": "等值线与梯度",
+   "desc": "Contour map of f(x, y) with a draggable point showing the gradient and directional derivative; optional constraint g(x, y) = 0 for Lagrange multipliers.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x",
+      "y"
+     ],
+     "required": true
+    },
+    "x": {
+     "type": "range",
+     "default": "-3, 3"
+    },
+    "y": {
+     "type": "range",
+     "default": "-3, 3"
+    },
+    "levels": {
+     "type": "int",
+     "default": "14"
+    },
+    "gradient": {
+     "type": "bool",
+     "default": "true"
+    },
+    "field": {
+     "type": "bool",
+     "default": "false",
+     "desc": "draw the gradient field"
+    },
+    "constraint": {
+     "type": "expr",
+     "vars": [
+      "x",
+      "y"
+     ],
+     "desc": "g(x, y): draws g = 0 and the points where ∇f ∥ ∇g"
+    },
+    "point": {
+     "type": "points",
+     "default": "1,1"
+    },
+    "sliders": {
+     "type": "sliders"
+    }
+   },
+   "example": "f: x^2 + 2y^2\nconstraint: x + y - 1",
+   "zh_desc": "f(x, y) 的等值线图，可拖动的点显示梯度和方向导数；可加约束 g(x, y) = 0 演示拉格朗日乘数法。"
+  },
+  "vectorfield": {
+   "file": "multivar",
+   "title": "Vector fields and line integrals",
+   "zh": "向量场与曲线积分",
+   "desc": "Arrows of F = (P, Q), optional streamlines, divergence or curl shading, and the work / flux of F along a parametric curve.",
+   "params": {
+    "P": {
+     "type": "expr",
+     "vars": [
+      "x",
+      "y"
+     ],
+     "required": true
+    },
+    "Q": {
+     "type": "expr",
+     "vars": [
+      "x",
+      "y"
+     ],
+     "required": true
+    },
+    "x": {
+     "type": "range",
+     "default": "-3, 3"
+    },
+    "y": {
+     "type": "range",
+     "default": "-3, 3"
+    },
+    "streamlines": {
+     "type": "bool",
+     "default": "false"
+    },
+    "shade": {
+     "type": "enum",
+     "values": [
+      "none",
+      "divergence",
+      "curl"
+     ],
+     "default": "none"
+    },
+    "cx": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ],
+     "desc": "curve x(t)"
+    },
+    "cy": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ],
+     "desc": "curve y(t)"
+    },
+    "t": {
+     "type": "range",
+     "default": "0, 2pi"
+    },
+    "sliders": {
+     "type": "sliders"
+    }
+   },
+   "example": "P: -y\nQ: x\ncx: cos(t)\ncy: sin(t)",
+   "zh_desc": "向量场 F = (P, Q) 的箭头图，可选流线、散度或旋度着色，以及沿参数曲线的功和通量。"
+  },
+  "gradientdescent": {
+   "file": "multivar",
+   "title": "Gradient descent",
+   "zh": "梯度下降",
+   "desc": "Iterates of gradient descent (or momentum / Newton) on the contour map of f, with learning-rate slider and loss curve.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x",
+      "y"
+     ],
+     "required": true
+    },
+    "start": {
+     "type": "points",
+     "default": "2,2"
+    },
+    "rate": {
+     "type": "num",
+     "default": "0.1"
+    },
+    "steps": {
+     "type": "int",
+     "default": "30"
+    },
+    "method": {
+     "type": "enum",
+     "values": [
+      "gd",
+      "momentum",
+      "newton"
+     ],
+     "default": "gd"
+    },
+    "x": {
+     "type": "range",
+     "default": "-3, 3"
+    },
+    "y": {
+     "type": "range",
+     "default": "-3, 3"
+    }
+   },
+   "example": "f: x^2 + 10y^2\nstart: 2.5, 1\nrate: 0.08",
+   "zh_desc": "在 f 的等值线图上演示梯度下降（或动量法、牛顿法）的迭代，可调学习率并显示损失曲线。"
+  },
+  "region": {
+   "file": "multivar",
+   "title": "Regions and iterated integrals",
+   "zh": "区域与累次积分",
+   "desc": "A region bounded by curves with a moving slice; switch the order of integration (type I / type II) and see the limits change.",
+   "params": {
+    "lower": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "desc": "y = lower(x)"
+    },
+    "upper": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "desc": "y = upper(x)"
+    },
+    "a": {
+     "type": "num",
+     "default": "0"
+    },
+    "b": {
+     "type": "num",
+     "default": "1"
+    },
+    "left": {
+     "type": "expr",
+     "vars": [
+      "y"
+     ],
+     "desc": "x = left(y) for the type II description"
+    },
+    "right": {
+     "type": "expr",
+     "vars": [
+      "y"
+     ]
+    },
+    "c": {
+     "type": "num"
+    },
+    "d": {
+     "type": "num"
+    },
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x",
+      "y"
+     ],
+     "desc": "integrand (the value is shown)"
+    },
+    "x": {
+     "type": "range"
+    },
+    "y": {
+     "type": "range"
+    }
+   },
+   "example": "lower: x^2\nupper: sqrt(x)\na: 0\nb: 1\nleft: y^2\nright: sqrt(y)\nc: 0\nd: 1\nf: x*y",
+   "zh_desc": "由曲线围成的区域与移动的截线；切换积分次序（X 型 / Y 型），观察积分限如何变化。"
+  },
+  "slopefield": {
+   "file": "ode",
+   "title": "Slope fields",
+   "zh": "斜率场",
+   "desc": "Direction field of y' = f(x, y); click to add solution curves; Euler or RK4 with adjustable step.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x",
+      "y"
+     ],
+     "required": true
+    },
+    "x": {
+     "type": "range",
+     "default": "-4, 4"
+    },
+    "y": {
+     "type": "range",
+     "default": "-3, 3"
+    },
+    "points": {
+     "type": "points",
+     "desc": "initial conditions"
+    },
+    "method": {
+     "type": "enum",
+     "values": [
+      "rk4",
+      "euler",
+      "both"
+     ],
+     "default": "rk4"
+    },
+    "h": {
+     "type": "num",
+     "default": "0.1"
+    },
+    "sliders": {
+     "type": "sliders"
+    }
+   },
+   "example": "f: y*(1 - y)\npoints: 0, 0.1; 0, 1.5; 0, -0.2",
+   "zh_desc": "y' = f(x, y) 的方向场；点击即可添加解曲线；可调步长的欧拉法或 RK4。"
+  },
+  "phaseplane": {
+   "file": "ode",
+   "title": "Phase plane",
+   "zh": "相平面",
+   "desc": "Phase portrait of x' = f(x, y), y' = g(x, y): field, nullclines, equilibria, click-to-add trajectories; for 'matrix' the eigenvalues and type of the origin.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x",
+      "y"
+     ]
+    },
+    "g": {
+     "type": "expr",
+     "vars": [
+      "x",
+      "y"
+     ]
+    },
+    "matrix": {
+     "type": "matrix",
+     "desc": "linear system x' = Ax (instead of f, g); entries get sliders"
+    },
+    "x": {
+     "type": "range",
+     "default": "-3, 3"
+    },
+    "y": {
+     "type": "range",
+     "default": "-3, 3"
+    },
+    "points": {
+     "type": "points"
+    },
+    "nullclines": {
+     "type": "bool",
+     "default": "true"
+    },
+    "sliders": {
+     "type": "sliders"
+    }
+   },
+   "example": "f: y\ng: -sin(x) - 0.2y\nx: -7, 7\ny: -3, 3",
+   "zh_desc": "x' = f(x, y)，y' = g(x, y) 的相图：方向场、零斜线、平衡点，点击添加轨线；矩阵模式显示特征值与原点类型。"
+  },
+  "odesolver": {
+   "file": "ode",
+   "title": "Numerical ODE solvers",
+   "zh": "常微分方程数值解法",
+   "desc": "Euler, Heun and RK4 approximations of y' = f(t, y) against the exact solution, with a step-size slider and the global error.",
+   "params": {
+    "f": {
+     "type": "expr",
+     "vars": [
+      "t",
+      "y"
+     ],
+     "required": true
+    },
+    "y0": {
+     "type": "num",
+     "default": "1"
+    },
+    "t": {
+     "type": "range",
+     "default": "0, 2"
+    },
+    "exact": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ]
+    },
+    "h": {
+     "type": "num",
+     "default": "0.25"
+    },
+    "methods": {
+     "type": "list",
+     "default": "euler; heun; rk4"
+    }
+   },
+   "example": "f: y\ny0: 1\nt: 0, 2\nexact: exp(t)",
+   "zh_desc": "欧拉法、休恩法和 RK4 对 y' = f(t, y) 的近似与精确解比较，可调步长并显示整体误差。"
+  },
+  "oscillator": {
+   "file": "ode",
+   "title": "Mass–spring oscillator",
+   "zh": "弹簧振子",
+   "desc": "m x'' + c x' + k x = F₀ cos(ωt): animated spring, solution curve, damping regime and the resonance curve.",
+   "params": {
+    "m": {
+     "type": "num",
+     "default": "1"
+    },
+    "c": {
+     "type": "num",
+     "default": "0.4"
+    },
+    "k": {
+     "type": "num",
+     "default": "4"
+    },
+    "F": {
+     "type": "num",
+     "default": "0"
+    },
+    "omega": {
+     "type": "num",
+     "default": "2"
+    },
+    "x0": {
+     "type": "num",
+     "default": "1"
+    },
+    "v0": {
+     "type": "num",
+     "default": "0"
+    }
+   },
+   "example": "m: 1\nc: 0.3\nk: 4\nF: 1\nomega: 1.9",
+   "zh_desc": "m x'' + c x' + k x = F₀ cos(ωt)：弹簧振子动画、解曲线、阻尼类型和共振曲线。"
+  },
+  "complexmap": {
+   "file": "complex",
+   "title": "Complex functions",
+   "zh": "复变函数",
+   "desc": "Domain colouring of f(z) (hue = argument, brightness = modulus) or the image of a grid / polar grid under f (conformal maps).",
+   "params": {
+    "f": {
+     "type": "cexpr",
+     "required": true
+    },
+    "mode": {
+     "type": "enum",
+     "values": [
+      "domain",
+      "grid",
+      "polar"
+     ],
+     "default": "domain"
+    },
+    "x": {
+     "type": "range",
+     "default": "-2, 2"
+    },
+    "y": {
+     "type": "range",
+     "default": "-2, 2"
+    },
+    "sliders": {
+     "type": "sliders"
+    }
+   },
+   "example": "f: (z - 1)/(z^2 + 1)\nmode: domain",
+   "zh_desc": "f(z) 的定义域着色（色相表示辐角，亮度表示模），或网格、极坐标网格在 f 下的像（共形映射）。"
+  },
+  "complexplane": {
+   "file": "complex",
+   "title": "Complex arithmetic",
+   "zh": "复数运算",
+   "desc": "Draggable z and w showing sum, product, quotient and conjugate in polar form, or the n-th roots of a number.",
+   "params": {
+    "z": {
+     "type": "points",
+     "default": "1.5,1"
+    },
+    "w": {
+     "type": "points",
+     "default": "0.5,1.2"
+    },
+    "mode": {
+     "type": "enum",
+     "values": [
+      "sum",
+      "product",
+      "quotient",
+      "powers",
+      "roots"
+     ],
+     "default": "product"
+    },
+    "n": {
+     "type": "int",
+     "default": "5"
+    }
+   },
+   "example": "mode: roots\nn: 6",
+   "zh_desc": "可拖动的 z 与 w，用极坐标形式展示和、积、商、共轭，或一个数的 n 次方根。"
+  },
+  "contourint": {
+   "file": "complex",
+   "title": "Contour integrals and residues",
+   "zh": "围道积分与留数",
+   "desc": "A movable circular contour over the domain colouring of f; the numerically computed ∮ f dz is compared with 2πi times the residues inside.",
+   "params": {
+    "f": {
+     "type": "cexpr",
+     "required": true
+    },
+    "center": {
+     "type": "points",
+     "default": "0,0"
+    },
+    "radius": {
+     "type": "num",
+     "default": "1"
+    },
+    "poles": {
+     "type": "points",
+     "desc": "known poles 'x,y; …' (marked and used for residues)"
+    },
+    "x": {
+     "type": "range",
+     "default": "-3, 3"
+    },
+    "y": {
+     "type": "range",
+     "default": "-3, 3"
+    }
+   },
+   "example": "f: 1/(z^2 + 1)\ncenter: 0,0.5\nradius: 1\npoles: 0,1; 0,-1",
+   "zh_desc": "在 f 的定义域着色图上移动圆形围道；数值计算的 ∮ f dz 与 2πi 乘以内部留数之和相比较。"
+  },
+  "winding": {
+   "file": "complex",
+   "title": "Winding numbers",
+   "zh": "环绕数",
+   "desc": "A closed curve (parametric, or drawn by hand) and a draggable point: the winding number counts how many times the curve goes around the point.",
+   "params": {
+    "fx": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ]
+    },
+    "fy": {
+     "type": "expr",
+     "vars": [
+      "t"
+     ]
+    },
+    "t": {
+     "type": "range",
+     "default": "0, 2pi"
+    },
+    "draw": {
+     "type": "bool",
+     "default": "true",
+     "desc": "allow freehand drawing"
+    },
+    "point": {
+     "type": "points",
+     "default": "0.3,0.2"
+    }
+   },
+   "example": "fx: cos(t) + 0.5cos(2t)\nfy: sin(t) + 0.5sin(2t)",
+   "zh_desc": "一条闭曲线（参数曲线或手绘）和一个可拖动的点：环绕数表示曲线绕该点转了几圈。"
+  },
+  "fourier": {
+   "file": "fourier",
+   "title": "Fourier series",
+   "zh": "傅里叶级数",
+   "desc": "Partial sums of the Fourier series of a periodic function on [−π, π] with the coefficient spectrum and the Gibbs overshoot.",
+   "params": {
+    "wave": {
+     "type": "enum",
+     "values": [
+      "square",
+      "sawtooth",
+      "triangle",
+      "pulse",
+      "parabola",
+      "custom"
+     ],
+     "default": "square"
+    },
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "desc": "for wave: custom (on [−π, π])"
+    },
+    "terms": {
+     "type": "int",
+     "default": "5"
+    },
+    "max": {
+     "type": "int",
+     "default": "60"
+    },
+    "spectrum": {
+     "type": "bool",
+     "default": "true"
+    }
+   },
+   "example": "wave: square\nterms: 7",
+   "zh_desc": "[−π, π] 上周期函数的傅里叶级数部分和、系数谱以及吉布斯过冲。"
+  },
+  "heat": {
+   "file": "fourier",
+   "title": "Heat and wave equations",
+   "zh": "热方程与波动方程",
+   "desc": "Animated series solution of u_t = k u_xx or u_tt = c² u_xx on [0, L] from an initial profile, with Dirichlet or Neumann ends.",
+   "params": {
+    "equation": {
+     "type": "enum",
+     "values": [
+      "heat",
+      "wave"
+     ],
+     "default": "heat"
+    },
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ],
+     "required": true,
+     "desc": "initial profile on [0, L]"
+    },
+    "L": {
+     "type": "num",
+     "default": "pi"
+    },
+    "k": {
+     "type": "num",
+     "default": "1",
+     "desc": "diffusivity (heat) or speed c (wave)"
+    },
+    "boundary": {
+     "type": "enum",
+     "values": [
+      "dirichlet",
+      "neumann"
+     ],
+     "default": "dirichlet"
+    },
+    "terms": {
+     "type": "int",
+     "default": "40"
+    }
+   },
+   "example": "equation: heat\nf: if(x < pi/2, x, pi - x)\nL: pi",
+   "zh_desc": "在 [0, L] 上从初始状态出发的热方程或波动方程级数解动画，端点为狄利克雷或诺伊曼条件。"
+  },
+  "distribution": {
+   "file": "prob",
+   "title": "Probability distributions",
+   "zh": "概率分布",
+   "desc": "PMF/PDF and CDF of a named distribution with parameter sliders, P(a ≤ X ≤ b) shaded, mean ± sd, and an optional normal approximation.",
+   "params": {
+    "dist": {
+     "type": "enum",
+     "values": [
+      "binomial",
+      "poisson",
+      "geometric",
+      "negbinomial",
+      "hypergeometric",
+      "discreteuniform",
+      "normal",
+      "exponential",
+      "uniform",
+      "gamma",
+      "beta",
+      "t",
+      "chisq",
+      "lognormal",
+      "cauchy",
+      "f"
+     ],
+     "required": true
+    },
+    "params": {
+     "type": "str",
+     "desc": "initial parameters, e.g. 'n=10, p=0.3' or 'mu=0, sigma=1'"
+    },
+    "a": {
+     "type": "num"
+    },
+    "b": {
+     "type": "num"
+    },
+    "cdf": {
+     "type": "bool",
+     "default": "false"
+    },
+    "normal": {
+     "type": "bool",
+     "default": "false",
+     "desc": "overlay the normal approximation"
+    }
+   },
+   "example": "dist: binomial\nparams: n=20, p=0.3\na: 4\nb: 8\nnormal: true",
+   "zh_desc": "常见分布的概率质量函数/密度函数和分布函数，带参数滑块、P(a ≤ X ≤ b) 阴影、均值 ± 标准差，可叠加正态近似。"
+  },
+  "clt": {
+   "file": "prob",
+   "title": "Central limit theorem",
+   "zh": "中心极限定理",
+   "desc": "Histogram of many sample means from a chosen population for sample size n, against the normal curve predicted by the CLT.",
+   "params": {
+    "dist": {
+     "type": "enum",
+     "values": [
+      "uniform",
+      "exponential",
+      "bernoulli",
+      "die",
+      "skewed",
+      "bimodal"
+     ],
+     "default": "exponential"
+    },
+    "n": {
+     "type": "int",
+     "default": "5"
+    },
+    "samples": {
+     "type": "int",
+     "default": "2000"
+    }
+   },
+   "example": "dist: exponential\nn: 10",
+   "zh_desc": "从选定总体中抽取大量样本的样本均值直方图，与中心极限定理预测的正态曲线比较。"
+  },
+  "lln": {
+   "file": "prob",
+   "title": "Law of large numbers",
+   "zh": "大数定律",
+   "desc": "Running averages of independent trials (coin, die or Bernoulli(p)) converging to the mean, several runs at once.",
+   "params": {
+    "experiment": {
+     "type": "enum",
+     "values": [
+      "coin",
+      "die",
+      "bernoulli"
+     ],
+     "default": "coin"
+    },
+    "p": {
+     "type": "num",
+     "default": "0.3"
+    },
+    "trials": {
+     "type": "int",
+     "default": "1000"
+    },
+    "runs": {
+     "type": "int",
+     "default": "5"
+    }
+   },
+   "example": "experiment: die\ntrials: 2000",
+   "zh_desc": "独立试验（掷硬币、掷骰子或伯努利(p)）的累计平均值收敛到期望，可同时运行多组。"
+  },
+  "montecarlo": {
+   "file": "prob",
+   "title": "Monte Carlo estimation",
+   "zh": "蒙特卡洛估计",
+   "desc": "Random points estimate π or ∫ f; the estimate and its error shrink like 1/√n.",
+   "params": {
+    "mode": {
+     "type": "enum",
+     "values": [
+      "pi",
+      "integral"
+     ],
+     "default": "pi"
+    },
+    "f": {
+     "type": "expr",
+     "vars": [
+      "x"
+     ]
+    },
+    "a": {
+     "type": "num",
+     "default": "0"
+    },
+    "b": {
+     "type": "num",
+     "default": "1"
+    },
+    "n": {
+     "type": "int",
+     "default": "1000"
+    }
+   },
+   "example": "mode: pi",
+   "zh_desc": "用随机点估计 π 或 ∫f；估计值的误差按 1/√n 缩小。"
+  },
+  "galton": {
+   "file": "prob",
+   "title": "Galton board",
+   "zh": "高尔顿板",
+   "desc": "Balls bouncing through rows of pins pile up in a binomial histogram that approaches the normal curve.",
+   "params": {
+    "rows": {
+     "type": "int",
+     "default": "10"
+    },
+    "balls": {
+     "type": "int",
+     "default": "300"
+    },
+    "p": {
+     "type": "num",
+     "default": "0.5"
+    }
+   },
+   "example": "rows: 12",
+   "zh_desc": "小球穿过一排排钉子落入格子，堆积成二项分布直方图，并逐渐接近正态曲线。"
+  },
+  "markov": {
+   "file": "prob",
+   "title": "Markov chains",
+   "zh": "马尔可夫链",
+   "desc": "State diagram of a Markov chain, a simulated walk, the distribution after n steps and the stationary distribution.",
+   "params": {
+    "matrix": {
+     "type": "matrix",
+     "required": true,
+     "desc": "transition matrix, rows sum to 1"
+    },
+    "states": {
+     "type": "list"
+    },
+    "start": {
+     "type": "int",
+     "default": "0"
+    },
+    "steps": {
+     "type": "int",
+     "default": "20"
+    }
+   },
+   "example": "matrix: 0.9,0.1; 0.5,0.5\nstates: Sunny; Rainy",
+   "zh_desc": "马尔可夫链的状态图、随机游走模拟、n 步后的分布以及平稳分布。"
+  },
+  "hypothesis": {
+   "file": "prob",
+   "title": "Hypothesis tests and power",
+   "zh": "假设检验与功效",
+   "desc": "Null and alternative sampling distributions of a z or t statistic: rejection region, α, β, power and the p-value of an observed value.",
+   "params": {
+    "test": {
+     "type": "enum",
+     "values": [
+      "z",
+      "t"
+     ],
+     "default": "z"
+    },
+    "tail": {
+     "type": "enum",
+     "values": [
+      "two",
+      "right",
+      "left"
+     ],
+     "default": "two"
+    },
+    "alpha": {
+     "type": "num",
+     "default": "0.05"
+    },
+    "effect": {
+     "type": "num",
+     "default": "0.5",
+     "desc": "true effect size in standard deviations (Cohen's d)"
+    },
+    "n": {
+     "type": "int",
+     "default": "20"
+    },
+    "observed": {
+     "type": "num",
+     "desc": "observed test statistic"
+    }
+   },
+   "example": "test: z\ntail: right\nalpha: 0.05\neffect: 0.5\nn: 25",
+   "zh_desc": "z 或 t 统计量在原假设和备择假设下的抽样分布：拒绝域、α、β、功效以及观测值的 p 值。"
+  },
+  "confidence": {
+   "file": "prob",
+   "title": "Confidence intervals",
+   "zh": "置信区间",
+   "desc": "Many simulated confidence intervals for a mean: about the stated level of them cover the true value.",
+   "params": {
+    "dist": {
+     "type": "enum",
+     "values": [
+      "normal",
+      "exponential",
+      "bernoulli"
+     ],
+     "default": "normal"
+    },
+    "n": {
+     "type": "int",
+     "default": "20"
+    },
+    "level": {
+     "type": "num",
+     "default": "0.95"
+    },
+    "intervals": {
+     "type": "int",
+     "default": "50"
+    },
+    "method": {
+     "type": "enum",
+     "values": [
+      "z",
+      "t"
+     ],
+     "default": "t"
+    }
+   },
+   "example": "dist: normal\nn: 15\nlevel: 0.9",
+   "zh_desc": "大量模拟的均值置信区间：约有设定比例的区间覆盖真值。"
+  },
+  "bayes": {
+   "file": "prob",
+   "title": "Bayesian updating",
+   "zh": "贝叶斯更新",
+   "desc": "Beta prior → posterior for a proportion as successes and failures arrive, or Bayes' theorem for a diagnostic test as natural frequencies.",
+   "params": {
+    "mode": {
+     "type": "enum",
+     "values": [
+      "beta",
+      "test"
+     ],
+     "default": "beta"
+    },
+    "a": {
+     "type": "num",
+     "default": "1"
+    },
+    "b": {
+     "type": "num",
+     "default": "1"
+    },
+    "successes": {
+     "type": "int",
+     "default": "6"
+    },
+    "trials": {
+     "type": "int",
+     "default": "10"
+    },
+    "prevalence": {
+     "type": "num",
+     "default": "0.01"
+    },
+    "sensitivity": {
+     "type": "num",
+     "default": "0.95"
+    },
+    "specificity": {
+     "type": "num",
+     "default": "0.95"
+    }
+   },
+   "example": "mode: test\nprevalence: 0.01\nsensitivity: 0.9\nspecificity: 0.95",
+   "zh_desc": "比例的贝塔先验随成功和失败次数更新为后验；或以自然频数展示诊断检验中的贝叶斯定理。"
+  },
+  "regression": {
+   "file": "prob",
+   "title": "Least squares regression",
+   "zh": "最小二乘回归",
+   "desc": "Draggable data points with the least-squares line (or polynomial), residuals, the fitted equation and R².",
+   "params": {
+    "points": {
+     "type": "points",
+     "default": "1,2; 2,2.8; 3,3.1; 4,4.5; 5,4.9; 6,6.3"
+    },
+    "degree": {
+     "type": "int",
+     "default": "1"
+    },
+    "residuals": {
+     "type": "bool",
+     "default": "true"
+    },
+    "x": {
+     "type": "range"
+    },
+    "y": {
+     "type": "range"
+    }
+   },
+   "example": "points: 0,1; 1,1.8; 2,3.2; 3,3.9; 4,5.2\ndegree: 1",
+   "zh_desc": "可拖动的数据点及其最小二乘直线（或多项式）、残差、拟合方程和 R²。"
+  },
+  "graph": {
+   "file": "discrete",
+   "title": "Graphs and graph algorithms",
+   "zh": "图与图算法",
+   "desc": "A draggable graph and a step-by-step algorithm: BFS, DFS, Dijkstra, Prim, Kruskal, topological sort, Euler circuit or greedy colouring.",
+   "params": {
+    "nodes": {
+     "type": "list",
+     "required": true,
+     "desc": "node names; optional positions as 'A@1,2'"
+    },
+    "edges": {
+     "type": "list",
+     "required": true,
+     "desc": "'A-B' or 'A-B:3' (weight); 'A>B' for a directed edge"
+    },
+    "algorithm": {
+     "type": "enum",
+     "values": [
+      "none",
+      "bfs",
+      "dfs",
+      "dijkstra",
+      "prim",
+      "kruskal",
+      "topo",
+      "euler",
+      "colour"
+     ],
+     "default": "none"
+    },
+    "start": {
+     "type": "str"
+    }
+   },
+   "example": "nodes: A; B; C; D; E\nedges: A-B:4; A-C:1; C-B:2; B-D:1; C-D:5; D-E:3\nalgorithm: dijkstra\nstart: A",
+   "zh_desc": "可拖动的图及逐步演示的算法：广度优先、深度优先、迪杰斯特拉、普里姆、克鲁斯卡尔、拓扑排序、欧拉回路或贪心着色。"
+  },
+  "truthtable": {
+   "file": "discrete",
+   "title": "Truth tables",
+   "zh": "真值表",
+   "desc": "Truth table of a propositional formula (¬ ∧ ∨ → ↔ ⊕ or ~ & | -> <-> xor), with sub-formula columns; compares two formulas for equivalence.",
+   "params": {
+    "formula": {
+     "type": "str",
+     "required": true
+    },
+    "compare": {
+     "type": "str",
+     "desc": "second formula: shows whether they are logically equivalent"
+    }
+   },
+   "example": "formula: p -> q\ncompare: ~q -> ~p",
+   "zh_desc": "命题公式的真值表（¬ ∧ ∨ → ↔ ⊕），列出子公式，并可比较两个公式是否逻辑等价。"
+  },
+  "venn": {
+   "file": "discrete",
+   "title": "Venn diagrams",
+   "zh": "维恩图",
+   "desc": "Two or three sets; the regions of a set expression (∪ ∩ \\ ′ or | & - ') are shaded; type a new expression.",
+   "params": {
+    "sets": {
+     "type": "int",
+     "default": "3"
+    },
+    "expr": {
+     "type": "str",
+     "default": "A & (B | C)"
+    },
+    "labels": {
+     "type": "list",
+     "default": "A; B; C"
+    }
+   },
+   "example": "sets: 2\nexpr: (A | B)'",
+   "zh_desc": "两个或三个集合；对集合表达式（∪ ∩ \\ ′）对应的区域着色，也可输入新的表达式。"
+  },
+  "sieve": {
+   "file": "discrete",
+   "title": "Primes",
+   "zh": "素数",
+   "desc": "Sieve of Eratosthenes animation, the Ulam spiral, or π(x) against x/ln x and Li(x).",
+   "params": {
+    "mode": {
+     "type": "enum",
+     "values": [
+      "sieve",
+      "ulam",
+      "count"
+     ],
+     "default": "sieve"
+    },
+    "n": {
+     "type": "int",
+     "default": "120"
+    }
+   },
+   "example": "mode: sieve\nn: 100",
+   "zh_desc": "埃拉托斯特尼筛法动画、乌拉姆螺旋，或 π(x) 与 x/ln x、Li(x) 的比较。"
+  },
+  "modular": {
+   "file": "discrete",
+   "title": "Modular arithmetic",
+   "zh": "模运算",
+   "desc": "Clock arithmetic, addition / multiplication tables mod n, powers mod n (orders, primitive roots) and inverses.",
+   "params": {
+    "n": {
+     "type": "int",
+     "default": "12"
+    },
+    "mode": {
+     "type": "enum",
+     "values": [
+      "clock",
+      "add",
+      "multiply",
+      "powers",
+      "inverses"
+     ],
+     "default": "multiply"
+    },
+    "a": {
+     "type": "int",
+     "default": "3"
+    }
+   },
+   "example": "n: 7\nmode: powers",
+   "zh_desc": "时钟算术、模 n 的加法/乘法表、模 n 的幂（阶与原根）以及逆元。"
+  },
+  "euclid": {
+   "file": "discrete",
+   "title": "Euclid's algorithm and the CRT",
+   "zh": "欧几里得算法与中国剩余定理",
+   "desc": "The (extended) Euclidean algorithm as a table and as squares tiling a rectangle; or a system of congruences solved by the Chinese remainder theorem.",
+   "params": {
+    "a": {
+     "type": "int",
+     "default": "252"
+    },
+    "b": {
+     "type": "int",
+     "default": "198"
+    },
+    "mode": {
+     "type": "enum",
+     "values": [
+      "gcd",
+      "extended",
+      "crt"
+     ],
+     "default": "extended"
+    },
+    "system": {
+     "type": "list",
+     "desc": "for crt: 'a mod m' items, e.g. '2 mod 3; 3 mod 5; 2 mod 7'"
+    }
+   },
+   "example": "a: 240\nb: 46\nmode: extended",
+   "zh_desc": "（扩展）欧几里得算法的步骤表及用正方形铺满矩形的图示；或用中国剩余定理求解同余方程组。"
+  },
+  "permutation": {
+   "file": "discrete",
+   "title": "Permutations",
+   "zh": "置换",
+   "desc": "A permutation as an arrow diagram and in cycle notation, its sign and order; composition with a second permutation.",
+   "params": {
+    "perm": {
+     "type": "str",
+     "required": true,
+     "desc": "one-line '2 3 1 5 4' or cycles '(1 2 3)(4 5)'"
+    },
+    "second": {
+     "type": "str"
+    },
+    "n": {
+     "type": "int",
+     "desc": "degree (default: largest entry)"
+    }
+   },
+   "example": "perm: (1 2 3)(4 5)\nsecond: (1 4)",
+   "zh_desc": "以箭头图和轮换记号表示置换，给出符号与阶；可与第二个置换复合。"
+  },
+  "cayley": {
+   "file": "discrete",
+   "title": "Groups: Cayley tables and graphs",
+   "zh": "群：凯莱表与凯莱图",
+   "desc": "Cayley table of a small group with a subgroup and its cosets highlighted, or the Cayley graph for chosen generators.",
+   "params": {
+    "group": {
+     "type": "enum",
+     "values": [
+      "Z",
+      "U",
+      "D",
+      "S",
+      "A",
+      "Q8",
+      "V4"
+     ],
+     "default": "D"
+    },
+    "n": {
+     "type": "int",
+     "default": "4"
+    },
+    "highlight": {
+     "type": "list",
+     "desc": "generators of a subgroup to highlight, e.g. 'r^2'"
+    },
+    "mode": {
+     "type": "enum",
+     "values": [
+      "table",
+      "graph"
+     ],
+     "default": "table"
+    },
+    "generators": {
+     "type": "list"
+    }
+   },
+   "example": "group: D\nn: 4\nhighlight: r",
+   "zh_desc": "小型群的凯莱表，高亮子群及其陪集；或给定生成元的凯莱图。"
+  },
+  "pascal": {
+   "file": "discrete",
+   "title": "Pascal's triangle",
+   "zh": "帕斯卡三角形",
+   "desc": "Pascal's triangle with entries coloured by residue mod m (Sierpiński patterns) and hover identities.",
+   "params": {
+    "rows": {
+     "type": "int",
+     "default": "16"
+    },
+    "mod": {
+     "type": "int",
+     "default": "2"
+    }
+   },
+   "example": "rows: 32\nmod: 2",
+   "zh_desc": "按模 m 余数着色的帕斯卡三角形（谢尔宾斯基图案），悬停显示组合数恒等式。"
+  },
+  "cantor": {
+   "file": "discrete",
+   "title": "Countability",
+   "zh": "可数性",
+   "desc": "The zig-zag enumeration of ℕ×ℕ and of the positive rationals, or Cantor's diagonal argument building a sequence missing from any list.",
+   "params": {
+    "mode": {
+     "type": "enum",
+     "values": [
+      "pairing",
+      "rationals",
+      "diagonal"
+     ],
+     "default": "diagonal"
+    },
+    "size": {
+     "type": "int",
+     "default": "8"
+    }
+   },
+   "example": "mode: rationals",
+   "zh_desc": "ℕ×ℕ 与正有理数的“之”字形枚举，或构造一个不在任何列表中的序列的康托尔对角线论证。"
+  },
+  "mapping": {
+   "file": "discrete",
+   "title": "Functions as arrow diagrams",
+   "zh": "映射的箭头图",
+   "desc": "A function between finite sets as arrows; reports injective / surjective / bijective and draws the inverse or a composition.",
+   "params": {
+    "domain": {
+     "type": "list",
+     "required": true
+    },
+    "codomain": {
+     "type": "list",
+     "required": true
+    },
+    "map": {
+     "type": "list",
+     "required": true,
+     "desc": "'1>a; 2>b; 3>a'"
+    },
+    "editable": {
+     "type": "bool",
+     "default": "true"
+    },
+    "then": {
+     "type": "list",
+     "desc": "optional second map g from the codomain to 'target', e.g. 'a>x; b>y': draws A → B → C and g∘f"
+    },
+    "target": {
+     "type": "list",
+     "desc": "the codomain C of g (use with 'then')"
+    }
+   },
+   "example": "domain: 1; 2; 3\ncodomain: a; b; c\nmap: 1>b; 2>a; 3>c",
+   "zh_desc": "用箭头图表示有限集合之间的映射；判断单射、满射、双射，并画出逆映射或复合。"
+  },
+  "relation": {
+   "file": "discrete",
+   "title": "Relations",
+   "zh": "关系",
+   "desc": "A relation on a finite set as a digraph and a 0–1 matrix (click to toggle pairs); checks reflexive, symmetric, antisymmetric, transitive and shows equivalence classes or the transitive closure.",
+   "params": {
+    "set": {
+     "type": "list",
+     "required": true
+    },
+    "pairs": {
+     "type": "list",
+     "desc": "'a,b; b,c'"
+    },
+    "view": {
+     "type": "enum",
+     "values": [
+      "all",
+      "properties",
+      "quantifiers"
+     ],
+     "default": "all",
+     "desc": "properties: the four properties, classes and closure; quantifiers: rows with a 1 / full columns and ∀x∃y, ∃y∀x"
+    },
+    "name": {
+     "type": "str",
+     "default": "R",
+     "desc": "letter for the relation in the read-outs, e.g. P"
+    },
+    "editable": {
+     "type": "bool",
+     "default": "true",
+     "desc": "click matrix entries to toggle pairs"
+    }
+   },
+   "example": "set: 1; 2; 3; 4\npairs: 1,1; 2,2; 3,3; 4,4; 1,2; 2,1",
+   "zh_desc": "有限集合上的关系，以有向图和 0–1 矩阵表示（点击切换）；检验自反、对称、反对称、传递，显示等价类或传递闭包。"
+  },
+  "metricballs": {
+   "file": "discrete",
+   "title": "Balls in different metrics",
+   "zh": "不同度量下的球",
+   "desc": "Unit balls of the p-norms (p slider from 1 to ∞) and of other metrics, with a draggable centre and radius.",
+   "params": {
+    "p": {
+     "type": "num",
+     "default": "2",
+     "desc": "starting value of the p slider, which runs from 1/2 to ∞"
+    },
+    "metrics": {
+     "type": "list",
+     "default": "1; 2; inf",
+     "desc": "balls drawn: values of p (1; 2; inf; 3 …), discrete, rail"
+    },
+    "radius": {
+     "type": "num",
+     "default": "1",
+     "desc": "starting radius (the view is scaled to it)"
+    }
+   },
+   "example": "metrics: 1; 2; inf",
+   "zh_desc": "不同 p 范数（p 从 1 到 ∞ 可调）及其他度量下的单位球，圆心可拖动，半径可调。"
+  }
+ }
+}

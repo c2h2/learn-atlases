@@ -1,0 +1,159 @@
+{
+  "slug": "glucagon",
+  "name": "Glucagon",
+  "aliases": ["Hyperglycaemic-glycogenolytic factor (HGF)", "Glucagon (1–29)", "Proglucagon (33–61)", "Pancreatic glucagon", "rDNA glucagon"],
+  "category": "metabolic",
+  "drug_class": "Glucagon receptor agonist",
+  "subclass": "Native 29-amino-acid pancreatic hormone (recombinant or synthetic); antihypoglycaemic and gastrointestinal motility inhibitor",
+  "status": "approved",
+  "status_note": "Approved in the US since 1960 for severe hypoglycaemia and also used as a radiology diagnostic aid; recombinant (1998), nasal (2019), ready-to-use liquid (2019) and generic (2020) versions followed, and it is on the WHO Model List of Essential Medicines.",
+  "evidence": 4,
+  "evidence_note": "More than 60 years of clinical use, but approvals of newer formulations rest on small randomised crossover studies of insulin-induced hypoglycaemia (for example 75 adults for nasal glucagon) rather than large outcome trials.",
+  "tagline": "Pancreatic hormone that raises blood sugar; the standard rescue for severe hypoglycaemia",
+  "summary": "Glucagon is a 29-amino-acid hormone made by the alpha cells of the pancreas that tells the liver to release glucose when blood sugar falls. As a medicine it is the emergency treatment for severe hypoglycaemia in people who use insulin, available as an injection kit, a ready-to-use pen and a nasal powder, and it is also used to relax the gut during radiological examinations.",
+  "overview": [
+    "Glucagon is insulin's hormonal counterpart. It is cut from the precursor proglucagon in the alpha cells of the pancreatic islets and released when blood glucose falls, prompting the liver to break down stored glycogen and to make new glucose. While investigating the brief rise in blood sugar caused by early insulin extracts, C. P. Kimball and John R. Murlin at the University of Rochester attributed it to a separate pancreatic substance and named it glucagon in a 1923 paper.",
+    "Chemists at Eli Lilly crystallised glucagon in 1953 and reported its 29-residue sequence in 1956–57, and Lilly's glucagon was approved in the US in 1960 for severe insulin-induced hypoglycaemia. Early pharmaceutical glucagon was extracted from animal pancreas, which was possible because pig, cattle and human glucagon are identical. Recombinant versions from Novo Nordisk (GlucaGen) and Lilly were approved in 1998, and chemically synthesised generics followed from 2020.",
+    "Glucagon is unstable in solution and tends to form amyloid-like fibrils, so for decades emergency kits contained a powder that had to be mixed with diluent during a crisis, a process prone to error. Since 2019 needle-free and ready-to-use options have appeared: Baqsimi, a 3 mg nasal powder absorbed through the lining of the nose; Gvoke (Ogluo in Europe), glucagon dissolved in dimethyl sulfoxide in a prefilled syringe or autoinjector; and dasiglucagon (Zegalogue), an engineered analogue formulated as an aqueous solution.",
+    "Because it relaxes the smooth muscle of the stomach and intestines, glucagon is also licensed as a diagnostic aid that stops gut movement during radiological examinations, and it is given off-label in beta-blocker and calcium-channel-blocker poisoning. The proglucagon gene also encodes GLP-1 and GLP-2, the starting point of the GLP-1 drug class, and newer obesity drugs such as survodutide, mazdutide and retatrutide deliberately add glucagon-receptor activity to exploit its effects on energy metabolism."
+  ],
+  "mechanism": [
+    "Glucagon acts on the glucagon receptor (GCGR), a class B G-protein-coupled receptor found mainly in the liver. Receptor activation stimulates the Gs protein and adenylyl cyclase; the resulting rise in cAMP activates protein kinase A, which switches on glycogen breakdown through glycogen phosphorylase and promotes gluconeogenesis while inhibiting glycolysis. Blood glucose rises within minutes, but only if the liver has glycogen to release, which is why glucagon may not work in starvation, adrenal insufficiency or chronic hypoglycaemia.",
+    "The same cAMP signal relaxes gastrointestinal smooth muscle, the basis of its diagnostic use, and raises cAMP in heart muscle independently of β-adrenoceptors, the rationale for its use in beta-blocker overdose. In people with an insulinoma the rise in glucose can trigger a burst of insulin from the tumour and rebound hypoglycaemia, and in phaeochromocytoma glucagon can provoke catecholamine release and a sharp rise in blood pressure; both conditions are contraindications."
+  ],
+  "origin": "Endogenous hormone cleaved from proglucagon (residues 53–81 of the human precursor) in pancreatic alpha cells; medicinal glucagon was first extracted from animal pancreas and is now made by recombinant DNA technology or chemical synthesis",
+  "discovery": {"year": 1923, "by": "C. P. Kimball and John R. Murlin", "where": "University of Rochester, New York, USA", "note": "Named as the hyperglycaemic factor contaminating early pancreatic (insulin) extracts; the observations date from 1922, so its centenary was marked in 2022–23. The pure hormone was crystallised at Eli Lilly in 1953."},
+  "first_human_year": null,
+  "first_approval": {"date": "1960-11-14", "agency": "FDA", "region": "US", "brand": "Glucagon (Eli Lilly)", "indication": "Severe hypoglycaemia"},
+  "developer": "Eli Lilly and Company (first commercial glucagon); later products from Novo Nordisk, Xeris, Amphastar and Zealand Pharma",
+  "brands": [
+    {"name": "Glucagon (Lilly)", "company": "Eli Lilly and Company", "route": "IM, SC or IV injection after reconstitution", "use": "Severe hypoglycaemia; original 1960 product and 1998 recombinant version, both now discontinued in the US", "approved": "1960-11-14", "agency": "FDA"},
+    {"name": "GlucaGen", "company": "Novo Nordisk", "route": "IM, SC or IV injection after reconstitution (recombinant)", "use": "Severe hypoglycaemia (US product since discontinued)", "approved": "1998-06-22", "agency": "FDA"},
+    {"name": "Baqsimi", "company": "Amphastar Pharmaceuticals (approved under Eli Lilly)", "route": "Intranasal powder, 3 mg single dose", "use": "Severe hypoglycaemia in people with diabetes aged 1 year and over", "approved": "2019-07-24", "agency": "FDA"},
+    {"name": "Gvoke (PFS, HypoPen, Kit)", "company": "Xeris Biopharma", "route": "Subcutaneous, ready-to-use liquid (0.5 or 1 mg)", "use": "Severe hypoglycaemia in people with diabetes aged 2 years and over", "approved": "2019-09-10", "agency": "FDA"},
+    {"name": "Baqsimi", "company": "Amphastar France Pharmaceuticals", "route": "Intranasal powder, 3 mg single dose", "use": "Severe hypoglycaemia in people with diabetes aged 4 years and over", "approved": "2019-12-16", "agency": "EMA"},
+    {"name": "Glucagon Emergency Kit (generic)", "company": "Amphastar Pharmaceuticals", "route": "IM, SC or IV injection after reconstitution (synthetic)", "use": "Severe hypoglycaemia; diagnostic aid", "approved": "2020-12-28", "agency": "FDA"},
+    {"name": "Ogluo", "company": "Strongbridge Dublin Ltd (Xeris)", "route": "Subcutaneous, ready-to-use liquid", "use": "Severe hypoglycaemia in people with diabetes aged 2 years and over", "approved": "2021-02-11", "agency": "EMA"},
+    {"name": "Gvoke VialDx", "company": "Xeris Biopharma; marketed by American Regent", "route": "Intravenous, ready-to-use vial", "use": "Diagnostic aid to inhibit gastrointestinal movement during radiological examinations in adults", "approved": "2025-03-14", "agency": "FDA"}
+  ],
+  "analogs": [
+    {"name": "Dasiglucagon (Zegalogue)", "note": "Zealand Pharma analogue with seven amino-acid substitutions, including Aib at position 16, supplied as a ready-to-use aqueous solution (0.6 mg). FDA-approved in March 2021 for severe hypoglycaemia; Novo Nordisk licensed it in 2022, the licence was later terminated and the EU authorisation returned to Zealand in January 2026, and the US product is listed as discontinued."},
+    {"name": "Oxyntomodulin", "note": "Natural 37-residue proglucagon product made in the gut: the glucagon sequence plus an eight-residue C-terminal extension. It activates both the glucagon and GLP-1 receptors."},
+    {"name": "GLP-1 and GLP-2", "note": "Also encoded by the proglucagon gene and released from intestinal L-cells; GLP-1 is the template for semaglutide, liraglutide and related drugs."},
+    {"name": "Survodutide, mazdutide, retatrutide", "note": "Obesity drugs that combine glucagon-receptor agonism with GLP-1 (and, for retatrutide, GIP) receptor agonism to add glucagon's effects on energy metabolism."}
+  ],
+  "targets": [
+    {"name": "Glucagon receptor", "gene": "GCGR", "uniprot": "P47871", "action": "Full agonist"},
+    {"name": "Glucagon-like peptide-1 receptor", "gene": "GLP1R", "uniprot": "P43220", "action": "Low-potency agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["H","S","Q","G","T","F","T","S","D","Y","S","K","Y","L","D","S","R","R","A","Q","D","F","V","Q","W","L","M","N","T"], "n_term": "H", "c_term": "OH"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [],
+    "notation": "H-His-Ser-Gln-Gly-Thr-Phe-Thr-Ser-Asp-Tyr-Ser-Lys-Tyr-Leu-Asp-Ser-Arg-Arg-Ala-Gln-Asp-Phe-Val-Gln-Trp-Leu-Met-Asn-Thr-OH",
+    "note": "Unmodified natural sequence, identical in humans, pigs and cattle; residues 53–81 of human preproglucagon (UniProt P01275)."
+  },
+  "formula": "C153H225N43O49S",
+  "mw": 3482.75,
+  "half_life": "≈ 8–18 min after injection; about 30–35 min for the ready-to-use and nasal forms",
+  "half_life_hours": 0.2,
+  "routes": ["Intramuscular, subcutaneous or intravenous injection", "Intranasal powder (3 mg)", "Subcutaneous ready-to-use prefilled syringe or autoinjector"],
+  "structure": {
+    "pdb": [
+      {"id": "9MZG", "title": "Glucagon bound to the glucagon receptor–Gs complex", "method": "Cryo-EM", "resolution": 3.0, "year": 2026, "peptide_chain": "P", "note": "Native glucagon in its active, receptor-bound pose"},
+      {"id": "6LMK", "title": "Human glucagon receptor in complex with glucagon and Gs", "method": "Cryo-EM", "resolution": 3.7, "year": 2020, "peptide_chain": "E", "note": "Full-length receptor with native glucagon (Qiao et al., Science 2020); 6LML shows the corresponding Gi complex"},
+      {"id": "1GCN", "title": "Crystal structure of glucagon", "method": "X-ray", "resolution": 3.0, "year": 1975, "peptide_chain": "A", "note": "Hormone alone, solved by Tom Blundell's group (published 1975, released 1977)"},
+      {"id": "9MXU", "title": "Glucagon bound to the GLP-1 receptor–Gs complex", "method": "Cryo-EM", "resolution": 2.5, "year": 2026, "peptide_chain": "P", "note": "Shows how glucagon also engages the related GLP-1 receptor"}
+    ],
+    "pubchem_cid": 16132283,
+    "notes": "Glucagon is flexible in dilute solution; bound to its receptor it forms a long α-helix whose N-terminus reaches into the transmembrane core while the C-terminal part is held by the extracellular domain."
+  },
+  "ids": {"pubchem_cid": 16132283, "cas": "16941-32-5", "drugbank": "DB00040", "chembl": "CHEMBL5314341", "unii": "76LA80IG2G", "kegg": "D00116", "chebi": "CHEBI:5391", "atc": "H04AA01", "uniprot": "P01275", "inn": "glucagon"},
+  "wiki": "Glucagon",
+  "queries": {"pubmed": "(glucagon[tiab] NOT \"glucagon-like\"[tiab]) OR dasiglucagon[tiab]", "ctgov": "(glucagon AND NOT \"glucagon-like\") OR dasiglucagon"},
+  "uses": {
+    "approved": [
+      {"use": "Severe hypoglycaemia", "detail": "Emergency treatment of severe low blood sugar in people with diabetes, given by a caregiver or clinician as an injection, ready-to-use pen or nasal powder when the person cannot safely take sugar by mouth.", "since": 1960, "where": "Worldwide"},
+      {"use": "Diagnostic aid in radiology", "detail": "Temporarily inhibits movement of the stomach, duodenum, small bowel and colon during radiological examinations in adults.", "where": "US and other countries"}
+    ],
+    "investigational": [
+      {"use": "Bihormonal 'bionic pancreas' systems", "stage": "Randomised crossover trials", "detail": "Automated systems that deliver both insulin and glucagon from a continuous glucose monitor lowered mean glucose and time in hypoglycaemia versus insulin pumps in an 11-day home-use trial (Lancet 2017)."},
+      {"use": "Congenital hyperinsulinism (dasiglucagon)", "stage": "Phase 3; US complete response letter (October 2024)", "detail": "Zealand Pharma sought approval of continuous dasiglucagon infusion in infants and children; the FDA's second complete response letter cited the timing of a third-party manufacturing inspection rather than the clinical data."}
+    ],
+    "off_label": [
+      {"use": "Beta-blocker and calcium-channel-blocker overdose", "detail": "High intravenous doses are given in poisoning to raise heart rate and contractility through cAMP, bypassing blocked β-receptors.", "evidence": "A 2003 systematic review found no controlled human studies; support comes from animal studies and case reports."},
+      {"use": "Oesophageal food-bolus impaction", "detail": "Used to relax the lower oesophageal sphincter so that impacted food passes.", "evidence": "Little evidence of effectiveness, and it can induce nausea and vomiting."},
+      {"use": "Anaphylaxis resistant to adrenaline in people taking beta-blockers", "detail": "Given when adrenaline fails because β-receptors are blocked.", "evidence": "Pharmacological rationale; no randomised trials."}
+    ]
+  },
+  "history": [
+    {"year": 1923, "date": "1923-11", "title": "Glucagon named", "detail": "C. P. Kimball and John R. Murlin attributed the transient rise in blood sugar after early insulin extracts to a separate pancreatic factor and named it glucagon.", "kind": "discovery"},
+    {"year": 1948, "date": "1948-09", "title": "Traced to the alpha cells", "detail": "Earl Sutherland and Christian de Duve established that the hyperglycaemic–glycogenolytic factor comes mainly from the alpha cells of the pancreatic islets.", "kind": "science"},
+    {"year": 1953, "date": "1953-06-05", "title": "Crystallised at Eli Lilly", "detail": "Staub, Sinn and Behrens reported the purification and crystallisation of the hormone, making a pharmaceutical product possible.", "kind": "science"},
+    {"year": 1956, "date": "1956-08", "title": "Amino-acid sequence solved", "detail": "Bromer, Sinn, Staub and Behrens at Eli Lilly reported the complete 29-residue sequence (full papers 1956–57).", "kind": "science"},
+    {"year": 1959, "title": "First glucagon immunoassay", "detail": "Roger Unger and colleagues raised glucagon antibodies and used them to measure the hormone, opening the study of glucagon in health and disease.", "kind": "science"},
+    {"year": 1960, "date": "1960-11-14", "title": "FDA approves Lilly's glucagon", "detail": "Eli Lilly's glucagon became the first glucagon medicine approved in the US, for severe insulin-induced hypoglycaemia.", "kind": "approval"},
+    {"year": 1971, "date": "1971-03-25", "title": "Glucagon experiments reveal G-protein signalling", "detail": "Martin Rodbell's studies of glucagon-sensitive adenylyl cyclase in rat liver membranes showed an obligatory role for GTP, work that led to the discovery of G proteins and a share of the 1994 Nobel Prize.", "kind": "science"},
+    {"year": 1975, "date": "1975-01-04", "title": "The bihormonal hypothesis", "detail": "Roger Unger and Lelio Orci argued in The Lancet that glucagon excess, not only insulin deficiency, drives hyperglycaemia in diabetes.", "kind": "science"},
+    {"year": 1975, "date": "1975-10-30", "title": "First crystal structure", "detail": "Tom Blundell's group published the X-ray structure of glucagon (PDB 1GCN) and related it to receptor binding.", "kind": "science"},
+    {"year": 1982, "date": "1982-01", "title": "Proglucagon gene cloned", "detail": "Preproglucagon cDNA cloning (Lund, Goodman and Habener, 1982) and the hamster and human genes (Bell and colleagues, 1983) showed that the precursor also encodes glucagon-like peptides, later known as GLP-1 and GLP-2.", "kind": "science"},
+    {"year": 1993, "date": "1993-03-12", "title": "Glucagon receptor cloned", "detail": "Expression cloning of the rat glucagon receptor showed a G-protein-coupled receptor related to the calcitonin and parathyroid hormone receptors, signalling through cAMP and calcium.", "kind": "science"},
+    {"year": 1998, "date": "1998-06-22", "title": "Recombinant glucagon approved", "detail": "The FDA approved Novo Nordisk's GlucaGen in June 1998 and Eli Lilly's glucagon of recombinant DNA origin on 11 September 1998.", "kind": "approval"},
+    {"year": 2019, "date": "2019-07-24", "title": "Baqsimi: first needle-free glucagon", "detail": "Lilly's 3 mg nasal powder became the first glucagon that does not need an injection; the EU approved it on 16 December 2019.", "kind": "approval"},
+    {"year": 2019, "date": "2019-09-10", "title": "Gvoke: first ready-to-use liquid glucagon", "detail": "Xeris's glucagon in dimethyl sulfoxide removed the reconstitution step; the EU approved it as Ogluo in February 2021.", "kind": "approval"},
+    {"year": 2020, "date": "2020-12-28", "title": "First generic glucagon kit", "detail": "The FDA approved Amphastar's synthetic glucagon emergency kit as a generic of Lilly's recombinant kit; Mylan, Lupin and Cipla generics followed in 2024–2025.", "kind": "market"},
+    {"year": 2021, "date": "2021-03-22", "title": "Dasiglucagon approved", "detail": "The FDA approved Zealand Pharma's Zegalogue, a stabilised glucagon analogue in aqueous solution, for severe hypoglycaemia in people aged 6 and over.", "kind": "approval"},
+    {"year": 2023, "date": "2023-06-30", "title": "Amphastar buys Baqsimi", "detail": "Amphastar completed its purchase of Baqsimi from Eli Lilly for $500 million at closing plus $125 million due after one year.", "kind": "market"},
+    {"year": 2025, "date": "2025-03-14", "title": "Ready-to-use diagnostic glucagon", "detail": "The FDA approved Gvoke VialDx for intravenous use to inhibit gut movement during radiological examinations; American Regent launched it in August 2025.", "kind": "approval"},
+    {"year": 2026, "date": "2026-01", "title": "Zegalogue returns to Zealand", "detail": "Novo Nordisk ended its 2022 licence and transferred the EU marketing authorisation back to Zealand Pharma; the US product is listed as discontinued.", "kind": "market"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "approved", "detail": "Injectable glucagon since 1960; recombinant products (1998), Baqsimi and Gvoke (2019), generic kits since 2020 and Gvoke VialDx for diagnostic use (2025)."},
+    {"region": "EU", "status": "approved", "detail": "Baqsimi (2019) and Ogluo (2021) centrally authorised; dasiglucagon (Zegalogue) also authorised."},
+    {"region": "Canada", "status": "approved", "detail": "Baqsimi marketed since November 2019; injectable glucagon kits from Lilly and Lupin are listed in the Health Canada database."},
+    {"region": "Japan", "status": "approved", "detail": "Recombinant glucagon is marketed and listed in the Japanese Pharmacopoeia (JP19)."}
+  ],
+  "pk": {
+    "half_life": "8–18 min after IV, IM or SC injection of reconstituted glucagon; about 32 min for Gvoke and 35 min for nasal Baqsimi",
+    "tmax": "About 13 min (IM) and 20 min (SC) for reconstituted glucagon; about 15 min for the nasal powder; about 50 min for Gvoke",
+    "metabolism": "Proteolytic degradation in the liver, kidneys and plasma",
+    "excretion": "Urinary excretion of intact glucagon has not been measured"
+  },
+  "dosing": [
+    {"product": "Glucagon emergency kit (reconstituted)", "regimen": "Severe hypoglycaemia: 1 mg SC, IM or IV for adults and children weighing 20 kg or more; 0.5 mg (or 20–30 µg/kg) for children under 20 kg. A second dose may be given after 15 minutes if there is no response."},
+    {"product": "Baqsimi", "regimen": "3 mg as one actuation into one nostril (it does not need to be inhaled); a second 3 mg dose may be given after 15 minutes if there is no response."},
+    {"product": "Gvoke", "regimen": "1 mg SC for ages 12 and over; for children aged 2 to under 12, 0.5 mg if under 45 kg or 1 mg if 45 kg or more."},
+    {"product": "Diagnostic aid (glucagon for injection)", "regimen": "Duodenum and small bowel: 0.25–0.5 mg IV or 1 mg IM; stomach: 0.5 mg IV or 2 mg IM; colon: 2 mg IM about 10 minutes before the procedure."}
+  ],
+  "dosing_note": "Labelled regimens summarised for reference only. After a person with hypoglycaemia responds, they should be given oral carbohydrate; follow the prescribing information and emergency advice.",
+  "safety": {
+    "common": ["Nausea", "Vomiting", "Headache", "Injection-site swelling or redness", "Nasal discomfort, congestion and watery eyes (nasal powder)"],
+    "serious": ["Sharp rise in blood pressure in people with phaeochromocytoma", "Rebound hypoglycaemia in people with insulinoma (or glucagonoma when used diagnostically)", "Allergic reactions, including anaphylaxis", "Necrolytic migratory erythema (a skin rash) with continuous infusion"],
+    "warnings": ["Contraindicated in phaeochromocytoma and insulinoma", "May be ineffective in starvation, adrenal insufficiency or chronic hypoglycaemia because liver glycogen is depleted"],
+    "notes": "Nausea and vomiting are common after rescue doses. Glucagon does not work well if the liver's glycogen stores are exhausted, in which case glucose should be given instead."
+  },
+  "market": null,
+  "facts": [
+    "Human, pig and cattle glucagon have exactly the same 29-amino-acid sequence.",
+    "Martin Rodbell's experiments on glucagon signalling in rat liver membranes led to the discovery of G proteins, recognised with the 1994 Nobel Prize in Physiology or Medicine.",
+    "Glucagon tends to form amyloid-like fibrils in solution, which is why traditional emergency kits are mixed from powder just before use.",
+    "One international unit of glucagon equals 1 mg.",
+    "The nasal powder works without being inhaled, and a common cold with nasal congestion does not change its absorption."
+  ],
+  "related": ["insulin", "semaglutide", "liraglutide", "survodutide", "mazdutide", "retatrutide", "pramlintide"],
+  "references": [
+    {"title": "Aqueous extracts of pancreas III. Some precipitation reactions of insulin", "authors": "Kimball CP, Murlin JR", "journal": "J Biol Chem", "year": 1923, "url": "https://doi.org/10.1016/S0021-9258(18)85474-6"},
+    {"title": "Purification and crystallization of hyperglycemic glycogenolytic factor (HGF)", "authors": "Staub A, Sinn L, Behrens OK", "journal": "Science", "year": 1953, "url": "https://pubmed.ncbi.nlm.nih.gov/13056638/"},
+    {"title": "The amino acid sequence of glucagon", "authors": "Bromer WW, Sinn LG, Staub A, Behrens OK", "journal": "Diabetes", "year": 1957, "url": "https://pubmed.ncbi.nlm.nih.gov/13427628/"},
+    {"title": "Glucagon antibodies and their use for immunoassay for glucagon", "authors": "Unger RH, Eisentraut AM, McCall MS, et al.", "journal": "Proc Soc Exp Biol Med", "year": 1959, "url": "https://pubmed.ncbi.nlm.nih.gov/13840405/"},
+    {"title": "The essential role of glucagon in the pathogenesis of diabetes mellitus", "authors": "Unger RH, Orci L", "journal": "Lancet", "year": 1975, "url": "https://pubmed.ncbi.nlm.nih.gov/46337/"},
+    {"title": "X-ray analysis of glucagon and its relationship to receptor binding", "authors": "Sasaki K, Dockerill S, Adamiak DA, et al.", "journal": "Nature", "year": 1975, "url": "https://pubmed.ncbi.nlm.nih.gov/171582/"},
+    {"title": "Glucagon in beta-blocker and calcium channel blocker overdoses: a systematic review", "authors": "Bailey B", "journal": "J Toxicol Clin Toxicol", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/14514004/"},
+    {"title": "Intranasal glucagon for treatment of insulin-induced hypoglycemia in adults with type 1 diabetes: a randomized crossover noninferiority study", "authors": "Rickels MR, Ruedy KJ, Foster NC, et al.", "journal": "Diabetes Care", "year": 2016, "url": "https://pubmed.ncbi.nlm.nih.gov/26681725/"},
+    {"title": "Structural basis of Gs and Gi recognition by the human glucagon receptor", "authors": "Qiao A, Han S, Li X, et al.", "journal": "Science", "year": 2020, "url": "https://pubmed.ncbi.nlm.nih.gov/32193322/"},
+    {"title": "Glucagon, from past to present: a century of intensive research and controversies", "authors": "Scheen AJ, Lefèbvre PJ", "journal": "Lancet Diabetes Endocrinol", "year": 2023, "url": "https://pubmed.ncbi.nlm.nih.gov/36566754/"}
+  ]
+}

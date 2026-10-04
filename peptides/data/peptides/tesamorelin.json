@@ -1,0 +1,144 @@
+{
+  "slug": "tesamorelin",
+  "name": "Tesamorelin",
+  "aliases": ["TH9507", "TH-9507", "Tesamorelin acetate"],
+  "category": "gh",
+  "drug_class": "Growth hormone-releasing hormone (GHRH) receptor agonist",
+  "subclass": "N-terminally acylated (trans-3-hexenoyl) full-length GHRH(1–44) amide",
+  "status": "approved",
+  "status_note": "Approved in the US since 2010 (Egrifta, now supplied as Egrifta SV and Egrifta WR) to reduce excess abdominal fat in adults with HIV and lipodystrophy; not approved in the EU after the application was withdrawn in 2012, and the Canadian product was cancelled in 2022.",
+  "evidence": 4,
+  "evidence_note": "Approval rested on two 26-week phase 3 randomised trials with 26-week extensions (806 patients), backed by smaller randomised trials on liver fat, cognition and diabetes. There are no outcome trials showing fewer cardiovascular events or deaths, and evidence outside HIV is limited.",
+  "tagline": "GHRH analogue approved to reduce visceral fat in people with HIV (Egrifta)",
+  "summary": "Tesamorelin is a synthetic version of the full 44-amino-acid growth hormone-releasing hormone (GHRH) with a short hexenoic-acid cap that protects it from being broken down. Injected daily, it makes the pituitary gland release more growth hormone (GH), which shrinks deep abdominal (visceral) fat. Developed by Montreal-based Theratechnologies and sold as Egrifta, it is the only drug approved specifically for excess abdominal fat in people with HIV, and it has shown promise against fatty liver disease in the same population.",
+  "overview": [
+    "Many people taking early antiretroviral therapy for HIV developed lipodystrophy, including accumulation of visceral fat inside the abdomen, which is linked to cardiovascular risk. Recombinant GH reduces visceral fat but causes side effects at the doses needed, so Theratechnologies developed TH9507 to boost the body's own GH instead: native human GHRH(1–44)-NH2 with a trans-3-hexenoyl group on the N-terminal tyrosine. The modification makes the peptide resistant to the enzyme dipeptidyl peptidase-4, which inactivates natural GHRH, and prolongs its activity.",
+    "In a phase 3 trial published in 2007, 412 patients with HIV and abdominal fat accumulation received 2 mg of tesamorelin or placebo daily for 26 weeks; visceral fat fell by 15.2% with tesamorelin and rose by 5.0% with placebo, triglycerides dropped and IGF-1 rose by 81%, without significant changes in glucose measures. A second trial and pooled analysis (806 patients) confirmed the result and showed that the reduction lasted to 52 weeks with continued treatment but that fat re-accumulated after stopping. The FDA approved Egrifta on 10 November 2010; its label states that it is not a weight-loss drug and that long-term cardiovascular safety has not been established.",
+    "Elsewhere its reception was cooler. Ferrer withdrew the European application in June 2012 after the EMA's committee concluded that the benefit had not been shown to be clinically meaningful and raised concerns about high IGF-1 levels, cancer risk and diabetic eye disease. In Canada Egrifta was marketed from 2015 until its cancellation in 2022. In the US the original 1 mg vials were replaced by Egrifta SV (a single 2 mg vial giving a 1.4 mg dose) and, in March 2025, by Egrifta WR, which is reconstituted once a week. Theratechnologies was acquired by Future Pak in September 2025.",
+    "Researchers at Massachusetts General Hospital have shown that tesamorelin also reduces liver fat: in a 2019 randomised trial in people with HIV and non-alcoholic fatty liver disease, it cut the liver fat fraction by 37% relative to baseline, and 35% of treated patients (versus 4% on placebo) reached normal liver fat. Studies of cognition have been mixed, and trials in physical function and nerve injury are under way. The drug is also promoted in fitness circles for fat loss, where evidence is lacking, and it is prohibited in sport by the World Anti-Doping Agency."
+  ],
+  "mechanism": [
+    "Tesamorelin binds the GHRH receptor on somatotroph cells of the anterior pituitary and stimulates the synthesis and pulsatile release of endogenous GH, which raises IGF-1. GH promotes breakdown of stored fat (lipolysis), and in trials the effect fell mainly on visceral fat, with no significant change in subcutaneous abdominal fat. Because it works through the pituitary, it requires an intact hypothalamic–pituitary axis.",
+    "Native GHRH is inactivated within minutes when plasma dipeptidyl peptidase-4 removes its first two residues. The trans-3-hexenoyl group on Tyr1 blocks this cleavage and slowed degradation in human plasma. Tesamorelin itself is still cleared within minutes, but daily injections produce sustained increases in GH secretion and IGF-1."
+  ],
+  "origin": "Synthetic analogue of human growth hormone-releasing hormone (GHRH 1–44), N-terminally acylated with trans-3-hexenoic acid",
+  "discovery": {"year": 2002, "by": "Theratechnologies", "where": "Montreal, Canada", "note": "Developed as TH9507; the year given is its first documented clinical trial (a safety study in type 2 diabetes that began in February 2002), as the date of first synthesis has not been published."},
+  "first_human_year": 2002,
+  "first_approval": {"date": "2010-11-10", "agency": "FDA", "region": "US", "brand": "Egrifta", "indication": "Reduction of excess abdominal fat in HIV-infected patients with lipodystrophy"},
+  "developer": "Theratechnologies (acquired by Future Pak in 2025)",
+  "brands": [
+    {"name": "Egrifta", "company": "Theratechnologies", "route": "Subcutaneous, 2 mg once daily (two 1 mg vials); original formulation, since replaced", "use": "Excess abdominal fat in adults with HIV and lipodystrophy", "approved": "2010-11-10", "agency": "FDA"},
+    {"name": "Egrifta SV", "company": "Theratechnologies", "route": "Subcutaneous, 1.4 mg once daily from a 2 mg vial", "use": "Excess abdominal fat in adults with HIV and lipodystrophy", "approved": "2019-07-05", "agency": "FDA"},
+    {"name": "Egrifta WR", "company": "Theratechnologies", "route": "Subcutaneous, 1.28 mg once daily; one vial reconstituted weekly", "use": "Excess abdominal fat in adults with HIV and lipodystrophy", "approved": "2025-03-25", "agency": "FDA"}
+  ],
+  "analogs": [
+    {"name": "Native GHRH (somatorelin)", "note": "Identical 44-residue sequence without the hexenoyl cap; inactivated by dipeptidyl peptidase-4 within minutes."},
+    {"name": "Sermorelin", "note": "Residues 1–29 of GHRH; formerly approved as Geref for diagnosis and paediatric GH deficiency."},
+    {"name": "CJC-1295", "note": "Modified GHRH(1–29) with an albumin-binding maleimide and a half-life of about a week; never approved."}
+  ],
+  "targets": [
+    {"name": "Growth hormone-releasing hormone receptor", "gene": "GHRHR", "uniprot": "Q02643", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["Y", "A", "D", "A", "I", "F", "T", "N", "S", "Y", "R", "K", "V", "L", "G", "Q", "L", "S", "A", "R", "K", "L", "L", "Q", "D", "I", "M", "S", "R", "Q", "Q", "G", "E", "S", "N", "Q", "E", "R", "G", "A", "R", "A", "R", "L"], "n_term": "trans-3-hexenoyl", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A1", "type": "other", "label": "The N-terminal amine of Tyr1 is acylated with a trans-3-hexenoyl group (a six-carbon unsaturated acid), which blocks inactivation by dipeptidyl peptidase-4", "short": "hexenoyl"},
+      {"at": "A44", "type": "amidation", "label": "Leu44 C-terminal amide, as in native GHRH", "short": "NH2"}
+    ],
+    "notation": "(trans-3-hexenoyl)-Tyr-Ala-Asp-Ala-Ile-Phe-Thr-Asn-Ser-Tyr-Arg-Lys-Val-Leu-Gly-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Met-Ser-Arg-Gln-Gln-Gly-Glu-Ser-Asn-Gln-Glu-Arg-Gly-Ala-Arg-Ala-Arg-Leu-NH2",
+    "note": "The peptide chain is identical to mature human GHRH (residues 32–75 of the UniProt P01286 precursor); the only change is the N-terminal acyl group. Marketed as the acetate salt."
+  },
+  "formula": "C221H366N72O67S",
+  "mw": 5135.78,
+  "half_life": "26–38 minutes (2 mg dose, original formulation); 8–11 minutes after single doses of Egrifta SV or WR",
+  "half_life_hours": 0.5,
+  "routes": ["Subcutaneous injection into the abdomen, once daily"],
+  "structure": {
+    "pdb": [
+      {"id": "7CZ5", "title": "Native GHRH bound to the human GHRH receptor–Gs protein complex", "method": "Cryo-EM", "resolution": 2.6, "year": 2020, "peptide_chain": "P", "note": "The peptide is native GHRH(1–44)-NH2, i.e. tesamorelin's sequence without the hexenoyl cap"},
+      {"id": "7V9M", "title": "GHRH bound to GHRH receptor splice variant 1 (SV1) with Gs", "method": "Cryo-EM", "resolution": 3.29, "year": 2021, "peptide_chain": "P", "note": "Native GHRH(1–44) bound to the SV1 receptor variant"}
+    ],
+    "pubchem_cid": 16137828,
+    "notes": "No structure of tesamorelin itself has been deposited. Both entries show native GHRH, whose sequence tesamorelin shares, bound to its receptor."
+  },
+  "ids": {"pubchem_cid": 16137828, "cas": "218949-48-5", "drugbank": "DB08869", "chembl": "CHEMBL1237026", "unii": "MQG94M5EEO", "kegg": "D06655", "chebi": "CHEBI:63626", "atc": "H01AC06", "inn": "tesamorelin"},
+  "wiki": "Tesamorelin",
+  "queries": {"pubmed": "(tesamorelin[tiab] OR TH9507[tiab] OR \"TH-9507\"[tiab] OR Egrifta[tiab])", "ctgov": "tesamorelin OR TH9507 OR Egrifta"},
+  "uses": {
+    "approved": [
+      {"use": "Excess abdominal fat in adults with HIV and lipodystrophy", "detail": "Reduced visceral fat by about 15% relative to placebo over 26 weeks in two phase 3 trials; the effect is lost after stopping. Not indicated for weight loss, and it has not been shown to improve adherence to antiretroviral therapy.", "since": 2010, "where": "US"}
+    ],
+    "investigational": [
+      {"use": "Fatty liver disease (MASLD/NAFLD) in HIV", "stage": "Phase 2 — positive (2019)", "detail": "In 61 people with HIV and fatty liver, 12 months of tesamorelin reduced the liver fat fraction by 4.1 percentage points (37% relative) versus placebo, and 35% versus 4% reached normal liver fat."},
+      {"use": "Cognition in older adults", "stage": "Phase 2 — mixed", "detail": "A 20-week trial in 152 older adults with or without mild cognitive impairment found improved executive function (2012); a 2025 trial in 73 people with HIV and abdominal obesity found no significant cognitive benefit over standard care."},
+      {"use": "Physical function in HIV", "stage": "Phase 2 — ongoing", "detail": "The TRIUMPH trial (NCT06554717), started in July 2025, tests tesamorelin as an adjunct to exercise."},
+      {"use": "Recovery after peripheral nerve injury", "stage": "Phase 2 — ongoing", "detail": "A Johns Hopkins trial (NCT03150511) is evaluating motor and sensory recovery after upper-limb nerve repair."}
+    ],
+    "off_label": [
+      {"use": "Fat loss and body recomposition outside HIV", "detail": "Promoted in fitness and anti-ageing circles for belly-fat loss, 'recovery' and tissue repair.", "evidence": "Trials were in people with HIV-associated fat accumulation; the label describes it as weight-neutral and not indicated for weight loss, and claims about recovery or healing go beyond trial endpoints."}
+    ]
+  },
+  "history": [
+    {"year": 1982, "date": "1982-11", "title": "GHRH isolated", "detail": "Growth hormone-releasing hormone was isolated from pancreatic tumours that had caused acromegaly; tesamorelin keeps its full 44-residue sequence.", "kind": "science"},
+    {"year": 2002, "date": "2002-02", "title": "First clinical trial", "detail": "Theratechnologies began a safety study of TH9507 in people with stable type 2 diabetes (NCT01264497).", "kind": "trial"},
+    {"year": 2005, "date": "2005-06", "title": "Phase 3 programme starts", "detail": "The first phase 3 trial in HIV-associated lipodystrophy began (NCT00123253).", "kind": "trial"},
+    {"year": 2007, "date": "2007-01", "title": "Preclinical profile published", "detail": "Theratechnologies scientists reported that the hexenoyl group made the peptide resistant to dipeptidyl peptidase-4 and prolonged its action in animals.", "kind": "science"},
+    {"year": 2007, "date": "2007-12-06", "title": "Phase 3 results in NEJM", "detail": "In 412 patients, 26 weeks of tesamorelin cut visceral fat by 15.2% while it rose by 5.0% on placebo.", "kind": "trial"},
+    {"year": 2010, "date": "2010-11-10", "title": "FDA approves Egrifta", "detail": "First treatment approved to reduce excess abdominal fat in HIV-infected patients with lipodystrophy.", "kind": "approval"},
+    {"year": 2012, "date": "2012-06-21", "title": "EU application withdrawn", "detail": "Ferrer withdrew its marketing application after the EMA's committee took the view that benefits did not outweigh risks.", "kind": "regulatory"},
+    {"year": 2012, "date": "2012-11", "title": "Cognition trial in older adults", "detail": "Twenty weeks of tesamorelin improved executive function in 152 older adults with or without mild cognitive impairment.", "kind": "trial"},
+    {"year": 2014, "date": "2014-07-23", "title": "Liver fat reduced", "detail": "A 50-patient randomised trial at Massachusetts General Hospital found reductions in both visceral and liver fat after 6 months.", "kind": "trial"},
+    {"year": 2015, "date": "2015-06-23", "title": "Marketed in Canada", "detail": "Egrifta 1 mg vials went on sale in Canada; the product was cancelled in September 2022.", "kind": "market"},
+    {"year": 2019, "date": "2019-10-11", "title": "Fatty liver trial", "detail": "A 12-month randomised trial in people with HIV and fatty liver reported a 37% relative reduction in liver fat with tesamorelin.", "kind": "trial"},
+    {"year": 2025, "date": "2025-03-25", "title": "FDA approves Egrifta WR", "detail": "A new multi-dose formulation reconstituted once a week, giving 1.28 mg daily with less than half the injection volume of Egrifta SV; it became available in September 2025.", "kind": "approval"},
+    {"year": 2025, "date": "2025-06-02", "title": "No clear cognitive benefit in HIV", "detail": "A 73-person randomised trial found that tesamorelin reduced waist size but did not improve neurocognitive impairment more than standard care.", "kind": "trial"},
+    {"year": 2025, "date": "2025-09-25", "title": "Theratechnologies acquired", "detail": "Future Pak completed its acquisition of Theratechnologies, the maker of Egrifta.", "kind": "market"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "approved", "detail": "Egrifta approved 10 November 2010 (application now a BLA); current products are Egrifta SV (2 mg vial) and Egrifta WR (11.6 mg vial, approved 25 March 2025), which are not interchangeable."},
+    {"region": "EU", "status": "not-approved", "detail": "Ferrer withdrew its application on 21 June 2012; the CHMP had concluded that benefits did not outweigh risks, citing doubts about clinical relevance and concerns over IGF-1-related cancer and diabetic retinopathy risk."},
+    {"region": "Canada", "status": "withdrawn", "detail": "Egrifta was marketed from June 2015; the product was cancelled post-market in September 2022."},
+    {"region": "WADA", "status": "prohibited", "detail": "Named as a GHRH analogue under S2.2.4 of the 2026 Prohibited List; prohibited at all times."}
+  ],
+  "pk": {
+    "half_life": "26 minutes in healthy subjects and 38 minutes in HIV patients after 14 days of 2 mg dosing; 8–11 minutes after single doses of the SV and WR formulations",
+    "tmax": "About 9 minutes (0.15 h) after subcutaneous injection",
+    "bioavailability": "Less than 4% absolute bioavailability after subcutaneous injection of the original 2 mg dose",
+    "metabolism": "No formal human metabolism studies; expected to be broken down by proteolysis",
+    "excretion": "Not characterised"
+  },
+  "dosing": [
+    {"product": "Egrifta SV", "regimen": "1.4 mg (0.35 mL of a reconstituted 2 mg vial) injected subcutaneously into the abdomen once daily."},
+    {"product": "Egrifta WR", "regimen": "1.28 mg (0.16 mL) injected subcutaneously into the abdomen once daily; one reconstituted vial provides seven daily doses."}
+  ],
+  "dosing_note": "Labelled regimens summarised for reference only. The two formulations are not substitutable; follow the prescribing information and a clinician's advice.",
+  "safety": {
+    "common": ["Injection-site reactions (redness, itching, pain, swelling)", "Joint pain (arthralgia)", "Pain in the arms or legs", "Muscle pain", "Peripheral oedema", "Tingling or numbness (paraesthesia, hypoaesthesia)", "Rash"],
+    "serious": ["Hypersensitivity reactions (about 4% in trials)", "Glucose intolerance or diabetes (HbA1c ≥ 6.5% in 5% versus 1% on placebo)", "Fluid retention including carpal tunnel syndrome", "Persistently high IGF-1 levels"],
+    "warnings": ["Contraindicated with disruption of the hypothalamic–pituitary axis, active malignancy, known hypersensitivity, or pregnancy", "May increase the risk of neoplasms; pre-existing malignancy should be inactive and treated before starting", "Monitor IGF-1 and glucose; consider stopping if IGF-1 stays very high", "Prohibited in sport at all times (WADA S2)"],
+    "notes": "About half of patients developed anti-tesamorelin antibodies during 26 weeks of treatment, without an apparent effect on efficacy. Visceral fat returns after the drug is stopped, and long-term cardiovascular safety has not been established."
+  },
+  "market": null,
+  "facts": [
+    "Tesamorelin's peptide chain is exactly the 44 amino acids of human GHRH; a six-carbon trans-3-hexenoyl cap on the first tyrosine is its only modification.",
+    "Less than 4% of an injected dose reaches the circulation intact, yet daily injections raised IGF-1 by about 80% in the pivotal trial.",
+    "About half of treated patients develop antibodies against the drug, which also cross-react with natural GHRH in most of them, without an apparent loss of efficacy.",
+    "The EMA's committee questioned whether shrinking visceral fat was clinically meaningful for patients, and the European application was withdrawn in 2012."
+  ],
+  "related": ["sermorelin", "cjc-1295", "ipamorelin", "aod-9604", "semaglutide"],
+  "references": [
+    {"title": "Metabolic effects of a growth hormone-releasing factor in patients with HIV", "authors": "Falutz J, Allas S, Blot K, et al.", "journal": "N Engl J Med", "year": 2007, "url": "https://pubmed.ncbi.nlm.nih.gov/18057338/"},
+    {"title": "Effects of tesamorelin (TH9507), a growth hormone-releasing factor analog, in human immunodeficiency virus-infected patients with excess abdominal fat: a pooled analysis of two multicenter, double-blind placebo-controlled phase 3 trials with safety extension data", "authors": "Falutz J, Mamputu JC, Potvin D, et al.", "journal": "J Clin Endocrinol Metab", "year": 2010, "url": "https://pubmed.ncbi.nlm.nih.gov/20554713/"},
+    {"title": "Non-clinical pharmacology and safety evaluation of TH9507, a human growth hormone-releasing factor analogue", "authors": "Ferdinandi ES, Brazeau P, High K, et al.", "journal": "Basic Clin Pharmacol Toxicol", "year": 2007, "url": "https://pubmed.ncbi.nlm.nih.gov/17214611/"},
+    {"title": "Effects of growth hormone–releasing hormone on cognitive function in adults with mild cognitive impairment and healthy older adults: results of a controlled trial", "authors": "Baker LD, Barsness SM, Borson S, et al.", "journal": "Arch Neurol", "year": 2012, "url": "https://pubmed.ncbi.nlm.nih.gov/22869065/"},
+    {"title": "Effect of tesamorelin on visceral fat and liver fat in HIV-infected patients with abdominal fat accumulation: a randomized clinical trial", "authors": "Stanley TL, Feldpausch MN, Oh J, et al.", "journal": "JAMA", "year": 2014, "url": "https://pubmed.ncbi.nlm.nih.gov/25038357/"},
+    {"title": "Effects of tesamorelin on non-alcoholic fatty liver disease in HIV: a randomised, double-blind, multicentre trial", "authors": "Stanley TL, Fourman LT, Feldpausch MN, et al.", "journal": "Lancet HIV", "year": 2019, "url": "https://pubmed.ncbi.nlm.nih.gov/31611038/"},
+    {"title": "Effects of tesamorelin on neurocognitive impairment in persons with HIV and abdominal obesity", "authors": "Ellis RJ, Vaida F, Hu K, et al.", "journal": "J Infect Dis", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/39813152/"},
+    {"title": "EGRIFTA WR (tesamorelin) for injection: prescribing information (revised March 2025)", "authors": "Theratechnologies / US Food and Drug Administration", "journal": "FDA label", "year": 2025, "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf"},
+    {"title": "Egrifta: withdrawal of the marketing authorisation application", "authors": "European Medicines Agency", "journal": "EMA", "year": 2012, "url": "https://www.ema.europa.eu/en/medicines/human/withdrawn-applications/egrifta"}
+  ]
+}

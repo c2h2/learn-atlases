@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><title>preview</title>
+<style>html,body{margin:0;height:100%;background:#fff}#v{position:absolute;inset:0}</style>
+<script src="../assets/vendor/3Dmol-min.js"></script></head><body><div id="v"></div>
+<script>
+// Headless snapshot harness used by tools/previews.sh: ?f=<file>&fmt=pdb|sdf&plddt=1
+const q = new URLSearchParams(location.search);
+const C = {K:'#2a78d6',R:'#2a78d6',H:'#2a78d6',D:'#e34948',E:'#e34948',A:'#eda100',V:'#eda100',L:'#eda100',I:'#eda100',M:'#eda100',
+  F:'#eb6834',W:'#eb6834',Y:'#eb6834',S:'#1baf7a',T:'#1baf7a',N:'#1baf7a',Q:'#1baf7a',G:'#a5abb6',P:'#a5abb6',C:'#e87ba4'};
+const T = {ALA:'A',ARG:'R',ASN:'N',ASP:'D',CYS:'C',GLN:'Q',GLU:'E',GLY:'G',HIS:'H',ILE:'I',LEU:'L',LYS:'K',MET:'M',PHE:'F',PRO:'P',SER:'S',THR:'T',TRP:'W',TYR:'Y',VAL:'V'};
+fetch('../structure.php?f=' + encodeURIComponent(q.get('f'))).then(r => r.text()).then(txt => {
+  const v = $3Dmol.createViewer(document.getElementById('v'), {backgroundColor: '#ffffff', antialias: true});
+  v.addModel(txt, q.get('fmt') || 'pdb');
+  if (q.get('fmt') === 'sdf') {
+    v.setStyle({}, {stick: {radius: 0.17, colorscheme: 'Jmol'}, sphere: {scale: 0.22, colorscheme: 'Jmol'}});
+  } else {
+    const col = (a) => C[T[a.resn]] || '#4a3aa7';
+    v.setStyle({}, {cartoon: {colorfunc: col, thickness: 0.6}, stick: {radius: 0.14, colorfunc: col}});
+  }
+  v.zoomTo(); v.zoom(1.1); v.render();
+  document.title = 'ready';
+});
+</script></body></html>

@@ -1,0 +1,139 @@
+{
+  "slug": "mazdutide",
+  "name": "Mazdutide",
+  "aliases": ["LY3305677", "IBI362", "OXM3", "玛仕度肽"],
+  "category": "metabolic",
+  "drug_class": "Glucagon/GLP-1 receptor dual agonist",
+  "subclass": "Fatty-acid acylated oxyntomodulin analogue",
+  "status": "regional",
+  "status_note": "Approved only in China, for chronic weight management (June 2025) and type 2 diabetes (September 2025); investigational elsewhere, where Eli Lilly holds the rights.",
+  "evidence": 4,
+  "evidence_note": "Approved on the basis of phase 3 trials in Chinese adults (GLORY-1, GLORY-2, DREAMS-1, DREAMS-2 and DREAMS-3; about 2,500 participants in total) plus phase 1–2 trials in China and the US; there are no cardiovascular-outcome or phase 3 data outside China yet.",
+  "tagline": "Once-weekly glucagon/GLP-1 dual agonist approved in China for obesity and diabetes",
+  "summary": "Mazdutide is a synthetic analogue of the gut hormone oxyntomodulin that activates both the GLP-1 receptor and the glucagon receptor, with a fatty-acid tail that allows once-weekly injection. Discovered by Eli Lilly and developed in China by Innovent Biologics, it became the first glucagon/GLP-1 dual agonist approved anywhere when China authorised it as Xinermei for weight management in June 2025, followed by type 2 diabetes. In phase 3 trials it produced about 14% average weight loss at 6 mg over 48 weeks and about 17% at 9 mg over 60 weeks.",
+  "overview": [
+    "Oxyntomodulin is a 37-amino-acid peptide released from intestinal L-cells alongside GLP-1. It consists of the complete glucagon sequence plus an eight-residue C-terminal extension (KRNRNNIA) and activates both the GLP-1 and glucagon receptors, and a small 2005 trial showed that injected oxyntomodulin reduced body weight in people with overweight and obesity. The native hormone is quickly inactivated by the enzyme DPP-4, so several companies set out to build long-acting 'oxyntomodulin analogues' that combine GLP-1-driven appetite suppression with the metabolic effects of glucagon.",
+    "Mazdutide is Eli Lilly's version, described in a patent application with a 2015 priority date. Serine 2 is replaced by the non-natural amino acid Aib to block DPP-4; glutamate, lysine and leucine substitutions at positions 16–28 raise potency and stability (Met27→Leu prevents oxidation, Asn28→Glu avoids deamidation and improves solubility); the basic KRNRNNIA tail is replaced by the short sequence GPSSG; and lysine 20 carries a C20 fatty diacid on a γGlu-2×OEG linker that binds albumin. According to the patent, the length and position of the fatty acid were critical for keeping activity at the two receptors roughly balanced.",
+    "Lilly began human studies in 2016 and in 2019 licensed the Chinese rights to Innovent Biologics, which developed the compound under the code IBI362. Phase 3 trials in 610 Chinese adults with obesity or overweight (GLORY-1) and about 1,050 adults with type 2 diabetes (DREAMS-1 and DREAMS-2) led to approval by China's National Medical Products Administration (NMPA) in June 2025 for chronic weight management and in September 2025 for type 2 diabetes. A head-to-head trial then showed better combined glucose and weight control than semaglutide 1 mg (DREAMS-3), and a higher 9 mg dose tested in GLORY-2 has been under review in China since November 2025.",
+    "Outside China the rights remain with Lilly, which has tested doses of up to 16 mg in US trials, including a phase 2 study in which the 16 mg dose produced 18.1% average weight loss at 32 weeks but led one in five participants to stop treatment because of side effects. Further trials are exploring fatty liver disease, obstructive sleep apnoea, heart failure, adolescent obesity and alcohol use disorder."
+  ],
+  "mechanism": [
+    "Mazdutide is an agonist at two class B G-protein-coupled receptors, the GLP-1 receptor and the glucagon receptor. Through the GLP-1 receptor it acts like other incretin drugs: it increases glucose-dependent insulin secretion, suppresses glucagon release from the pancreas, slows gastric emptying and reduces appetite through receptors in the brain.",
+    "Glucagon receptors are concentrated in the liver, where their activation promotes lipolysis and fatty-acid oxidation and inhibits fat synthesis; glucagon is also thought to raise energy expenditure. In preclinical studies mazdutide lowered body weight even in mice lacking either receptor and, unlike semaglutide, increased energy expenditure. The GLP-1 component counterbalances glucagon's tendency to raise blood glucose, and in trials HbA1c fell substantially while liver fat dropped by about 70–80% in participants with fatty liver at baseline."
+  ],
+  "origin": "Synthetic analogue of oxyntomodulin, a 37-amino-acid proglucagon-derived hormone from intestinal L-cells that activates both the GLP-1 and glucagon receptors",
+  "discovery": {"year": 2015, "by": "Adam R. Mezo, Yanyun Chen, Francisco A. Valenzuela, Hongchang Qu and colleagues, Eli Lilly", "where": "Eli Lilly and Company, United States", "note": "Lilly's patent on balanced glucagon/GLP-1 co-agonists (priority date 22 June 2015; US 9,938,335) describes the molecule as compound 2, the C20-diacid member of a series built on a modified oxyntomodulin backbone."},
+  "first_human_year": 2016,
+  "first_approval": {"date": "2025-06-27", "agency": "NMPA", "region": "China", "brand": "Xinermei", "indication": "Chronic weight management in adults with obesity or overweight"},
+  "developer": "Eli Lilly and Company (originator); Innovent Biologics (development and commercialisation in China)",
+  "brands": [
+    {"name": "Xinermei (信尔美)", "company": "Innovent Biologics", "route": "Subcutaneous, once weekly", "use": "Chronic weight management; glycaemic control in type 2 diabetes", "approved": "2025-06-27", "agency": "NMPA"}
+  ],
+  "analogs": [
+    {"name": "Oxyntomodulin", "note": "Native 37-residue proglucagon product (glucagon plus KRNRNNIA) on which mazdutide is based; short-acting"},
+    {"name": "Survodutide (BI 456906)", "note": "Another fatty-acylated glucagon/GLP-1 dual agonist, from Boehringer Ingelheim and Zealand Pharma"}
+  ],
+  "targets": [
+    {"name": "Glucagon-like peptide-1 receptor", "gene": "GLP1R", "uniprot": "P43220", "action": "Agonist"},
+    {"name": "Glucagon receptor", "gene": "GCGR", "uniprot": "P47871", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["H","Aib","Q","G","T","F","T","S","D","Y","S","K","Y","L","D","E","K","K","A","K","E","F","V","E","W","L","L","E","G","G","P","S","S","G"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A2", "type": "nonnatural", "label": "Aib2 (α-aminoisobutyric acid) replaces Ser2 of oxyntomodulin and protects the N-terminus from cleavage by DPP-4", "short": "Aib"},
+      {"at": "A20", "type": "lipidation", "label": "Lys20 carries an icosanedioic (C20) fatty diacid attached through γ-glutamate and two OEG (8-amino-3,6-dioxaoctanoic acid) spacers; it binds serum albumin", "short": "C20 diacid"},
+      {"at": "A27", "type": "other", "label": "Leu27 replaces Met27 of oxyntomodulin to prevent methionine oxidation", "short": "M27L"},
+      {"at": "A28", "type": "other", "label": "Glu28 replaces Asn28 to avoid deamidation and improve solubility", "short": "N28E"}
+    ],
+    "notation": "H-His-Aib-Gln-Gly-Thr-Phe-Thr-Ser-Asp-Tyr-Ser-Lys-Tyr-Leu-Asp-Glu-Lys-Lys-Ala-Lys(γGlu-2×OEG-C20 diacid)-Glu-Phe-Val-Glu-Trp-Leu-Leu-Glu-Gly-Gly-Pro-Ser-Ser-Gly-NH2",
+    "note": "34 residues, per the FDA GSRS/INN definition, KEGG D12225 and Lilly's patent (compound 2). Positions 1–29 follow oxyntomodulin/glucagon numbering; residues 30–34 (GPSSG, ending in a glycinamide) replace the KRNRNNIA tail of oxyntomodulin. The linker runs Lys20 Nε–OEG–OEG–γGlu–C20 diacid."
+  },
+  "formula": "C210H322N46O67",
+  "mw": 4563.14,
+  "half_life": "Long; terminal half-life of about 6–17 days after a first dose in a phase 1b study, supporting once-weekly dosing",
+  "half_life_hours": null,
+  "routes": ["Subcutaneous injection, once weekly"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": null,
+    "notes": "No experimental structure of mazdutide is in the PDB (searches for mazdutide, IBI362 and LY3305677 return no entries). PubChem's mazdutide record (CID 167312357) depicts a 33-residue peptide lacking one of the two serines before the C-terminal glycinamide (formula C207H317N45O65), so it is not linked here; the 34-residue structure (C210H322N46O67, calculated MW 4563.1) follows the FDA GSRS/INN definition, KEGG and Lilly's patent."
+  },
+  "ids": {"cas": "2259884-03-0", "chembl": "CHEMBL5095358", "unii": "MB76Z4IBZ5", "kegg": "D12225", "inn": "mazdutide"},
+  "wiki": "Mazdutide",
+  "queries": {"pubmed": "(mazdutide[tiab] OR IBI362[tiab] OR LY3305677[tiab])", "ctgov": "mazdutide OR IBI362 OR LY3305677"},
+  "uses": {
+    "approved": [
+      {"use": "Chronic weight management", "detail": "Adults with a BMI of at least 28 kg/m², or at least 24 kg/m² with one or more weight-related conditions (Chinese cut-offs), alongside diet and physical activity (GLORY-1).", "since": 2025, "where": "China"},
+      {"use": "Type 2 diabetes", "detail": "Glycaemic control in adults, alone or with metformin, sulfonylureas or SGLT2 inhibitors (DREAMS-1 and DREAMS-2).", "since": 2025, "where": "China"}
+    ],
+    "investigational": [
+      {"use": "Moderate-to-severe obesity (9 mg dose)", "stage": "Phase 3 — positive; under review in China", "detail": "GLORY-2: in 462 adults with a BMI of 30 or more, 9 mg weekly reduced body weight by 16.7% at 60 weeks versus 1.5% with placebo; a supplementary application was accepted in November 2025."},
+      {"use": "Obesity outside China", "stage": "Phase 2 — completed", "detail": "Lilly's US phase 2 trial in 179 adults found 15.6% (10 mg) and 18.1% (16 mg) weight loss at 32 weeks versus 0.9% with placebo; 20% stopped the 16 mg dose because of adverse events."},
+      {"use": "Metabolic dysfunction-associated fatty liver disease and MASH", "stage": "Phase 3 and phase 2", "detail": "GLORY-3 compares mazdutide 9 mg with semaglutide 2.4 mg in adults with overweight or obesity and fatty liver disease; a separate phase 2 trial enrols people with MASH."},
+      {"use": "Obstructive sleep apnoea", "stage": "Phase 3", "detail": "GLORY-OSA enrols Chinese adults with moderate-to-severe sleep apnoea and obesity (first participant dosed June 2025)."},
+      {"use": "Adolescent obesity", "stage": "Phase 3", "detail": "After a 12-week phase 1b trial in 36 adolescents aged 12–17 (BMI down 8.8% with 4 mg and 11.0% with 6 mg versus 1.7% with placebo), a registrational phase 3 trial began in December 2025."},
+      {"use": "Heart failure with preserved or mildly reduced ejection fraction", "stage": "Phase 2", "detail": "Trial in Chinese adults with HFpEF or HFmrEF and obesity."},
+      {"use": "Alcohol use disorder", "stage": "Phase 2 — completed", "detail": "Placebo-controlled trial sponsored by Lilly."}
+    ],
+    "off_label": [
+      {"use": "Grey-market 'research' mazdutide", "detail": "Outside China, where no mazdutide product is approved, FDA reports that companies have illegally sold unapproved products said to contain mazdutide, falsely labelled 'for research purposes' but marketed with dosing instructions for people to inject.", "evidence": "Clinical data apply only to the genuine drug used under medical supervision; the identity, dose, purity and sterility of grey-market products are unknown."}
+    ]
+  },
+  "history": [
+    {"year": 2015, "date": "2015-06-22", "title": "Lilly patents balanced glucagon/GLP-1 co-agonists", "detail": "Lilly's patent application described oxyntomodulin analogues with Aib2, a lipidated Lys20 and a GPSSG C-terminus; mazdutide corresponds to its compound 2, carrying a C20 diacid.", "kind": "discovery"},
+    {"year": 2016, "date": "2016-12", "title": "First human dosing", "detail": "Lilly began a single-ascending-dose study of LY3305677 in healthy volunteers, followed by multiple-dose and type 2 diabetes studies.", "kind": "trial"},
+    {"year": 2019, "date": "2019-08-21", "title": "Innovent licenses the Chinese rights", "detail": "Innovent Biologics announced an agreement with Lilly to develop and commercialise the oxyntomodulin analogue, then called OXM3, in China; Lilly retained the rights elsewhere.", "kind": "market"},
+    {"year": 2020, "date": "2020-06", "title": "First trial in China", "detail": "Innovent's phase 1b study of IBI362 began; in 36 adults with overweight or obesity, 12 weeks of treatment reduced body weight by up to 6.4% versus a 0.6% gain with placebo.", "kind": "trial"},
+    {"year": 2023, "date": "2023-10", "title": "9 mg dose gives 18.6% placebo-adjusted weight loss", "detail": "In an 80-person phase 2 cohort with a mean BMI of 34.3, mazdutide 9 mg produced a placebo-adjusted weight loss of 18.6% after 48 weeks.", "kind": "trial"},
+    {"year": 2024, "date": "2024-01", "title": "GLORY-1 succeeds and an application is filed", "detail": "The first phase 3 obesity trial met all primary and key secondary endpoints; China's Center for Drug Evaluation accepted the new drug application for chronic weight management on 7 February 2024.", "kind": "regulatory"},
+    {"year": 2024, "date": "2024-05", "title": "DREAMS-2 beats dulaglutide", "detail": "In type 2 diabetes both mazdutide doses were superior to dulaglutide 1.5 mg for HbA1c and weight reduction; a diabetes application was accepted in August 2024.", "kind": "trial"},
+    {"year": 2025, "date": "2025-05-25", "title": "GLORY-1 published in the NEJM", "detail": "In 610 Chinese adults, weight fell by 11.0% (4 mg) and 14.0% (6 mg) at 48 weeks versus a 0.3% gain with placebo.", "kind": "trial"},
+    {"year": 2025, "date": "2025-06-27", "title": "China approves Xinermei for weight management", "detail": "The NMPA approved mazdutide 4 mg and 6 mg for chronic weight management, making it the world's first approved glucagon/GLP-1 dual agonist.", "kind": "approval"},
+    {"year": 2025, "date": "2025-09", "title": "Type 2 diabetes approval", "detail": "The NMPA approved mazdutide for glycaemic control in adults with type 2 diabetes, as monotherapy or with metformin, sulfonylureas or SGLT2 inhibitors.", "kind": "approval"},
+    {"year": 2025, "date": "2025-10", "title": "DREAMS-3: better than semaglutide", "detail": "In 349 adults with type 2 diabetes and obesity, 48.0% on mazdutide 6 mg reached an HbA1c below 7% with at least 10% weight loss at 32 weeks, versus 21.0% on semaglutide 1 mg.", "kind": "trial"},
+    {"year": 2025, "date": "2025-11", "title": "GLORY-2 tests a 9 mg dose", "detail": "The 60-week phase 3 trial in adults with a BMI of 30 or more met all primary and key secondary endpoints; a supplementary application for the 9 mg dose was accepted for review on 25 November 2025.", "kind": "trial"},
+    {"year": 2025, "date": "2025-12-17", "title": "Diabetes trials published in Nature", "detail": "DREAMS-1 (versus placebo) and DREAMS-2 (versus dulaglutide), together 1,051 participants, appeared back-to-back in Nature.", "kind": "science"},
+    {"year": 2026, "date": "2026-08", "title": "High-dose results published", "detail": "JAMA published GLORY-2 (16.7% versus 1.5% weight loss at 60 weeks), and Lilly's US phase 2 trial in The Lancet Diabetes & Endocrinology reported 18.1% weight loss at 32 weeks with 16 mg.", "kind": "trial"}
+  ],
+  "regulatory": [
+    {"region": "China", "status": "approved", "detail": "Xinermei approved by the NMPA for chronic weight management (27 June 2025) and type 2 diabetes (September 2025) at 4 mg and 6 mg; a 9 mg dose for moderate-to-severe obesity has been under review since November 2025."},
+    {"region": "US", "status": "investigational", "detail": "Not approved. Eli Lilly, which holds the rights outside China, has completed phase 1 and phase 2 trials in the US at doses of up to 16 mg."},
+    {"region": "WADA", "status": "permitted", "detail": "Approved in China, so the S0 'non-approved substances' rule does not apply; GLP-1 and glucagon receptor agonists are not on the World Anti-Doping Agency prohibited list."}
+  ],
+  "pk": {
+    "half_life": "Terminal half-life ranged from about 6 to 17 days (151–404 h) after a first dose in Chinese adults with obesity",
+    "tmax": "Median about 72 hours after subcutaneous injection"
+  },
+  "dosing": [
+    {"product": "Xinermei (China)", "regimen": "Once-weekly subcutaneous injection at maintenance doses of 4 mg or 6 mg. In the phase 3 trials that supported approval, treatment started at 2 mg weekly for 4 weeks and was raised in 4-week steps (2 → 4 mg, or 2 → 4 → 6 mg)."}
+  ],
+  "dosing_note": "Approved only in China. The regimen is summarised from the approval announcements and the phase 3 trial protocols for reference; follow the local prescribing information and a clinician's advice.",
+  "safety": {
+    "common": ["Nausea", "Vomiting", "Diarrhoea", "Decreased appetite", "Upper respiratory tract infection", "Mild hypoglycaemia in type 2 diabetes"],
+    "serious": ["Gastrointestinal intolerance leading to discontinuation, more frequent at higher doses (0.5–1.5% at 4–6 mg in GLORY-1, 2.9% at 9 mg in GLORY-2, 20% at 16 mg in a US phase 2 trial)"],
+    "warnings": [],
+    "notes": "Gastrointestinal effects were mostly mild to moderate and concentrated in the dose-escalation period. In GLORY-1, serious adverse events were infrequent and similar to placebo, and mean heart rate was about 1.6 beats per minute higher than baseline at 48 weeks. Long-term safety and cardiovascular-outcome data are not yet available."
+  },
+  "market": null,
+  "facts": [
+    "Mazdutide was the first glucagon/GLP-1 dual agonist approved anywhere in the world (China, June 2025).",
+    "Its C-terminal Gly-Gly-Pro-Ser-Ser-Gly segment is identical to residues 29–34 of exendin-4; Lilly's patent reports that this short GPSSG tail gave better in vivo potency and stability than oxyntomodulin's own C-terminus.",
+    "In the head-to-head DREAMS-3 trial, 48% of people on mazdutide 6 mg reached both an HbA1c below 7% and at least 10% weight loss, versus 21% on semaglutide 1 mg.",
+    "Rights are split geographically: Innovent develops and sells mazdutide in China, while Eli Lilly keeps the rights in the rest of the world."
+  ],
+  "related": ["survodutide", "semaglutide", "tirzepatide", "retatrutide", "liraglutide", "exenatide", "glucagon"],
+  "references": [
+    {"title": "Once-weekly mazdutide in Chinese adults with obesity or overweight (GLORY-1)", "authors": "Ji L, Jiang H, Bi Y, et al.", "journal": "N Engl J Med", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/40421736/"},
+    {"title": "Treatment with 9-mg mazdutide for weight reduction in Chinese adults with obesity: the GLORY-2 randomized clinical trial", "authors": "Gao L, Jiang H, Cai H, et al.", "journal": "JAMA", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42251595/"},
+    {"title": "Mazdutide versus placebo in Chinese adults with type 2 diabetes (DREAMS-1)", "authors": "Zhu D, Zhao J, Cai H, et al.", "journal": "Nature", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/41407859/"},
+    {"title": "Mazdutide versus dulaglutide in Chinese adults with type 2 diabetes (DREAMS-2)", "authors": "Guo L, Zhang B, Xue X, et al.", "journal": "Nature", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/41407860/"},
+    {"title": "Efficacy and safety of mazdutide in adults with obesity or overweight: a US-based, multicentre, phase 2, randomised, placebo-controlled clinical trial", "authors": "Hsia SH, Bays HE, Billings LK, et al.", "journal": "Lancet Diabetes Endocrinol", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42628555/"},
+    {"title": "IBI362 (LY3305677), a weekly-dose GLP-1 and glucagon receptor dual agonist, in Chinese adults with overweight or obesity: a randomised, placebo-controlled, multiple ascending dose phase 1b study", "authors": "Ji L, Jiang H, An P, et al.", "journal": "EClinicalMedicine", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34430840/"},
+    {"title": "A phase 2 randomised controlled trial of mazdutide in Chinese overweight adults or adults with obesity", "authors": "Ji L, Jiang H, Cheng Z, et al.", "journal": "Nat Commun", "year": 2023, "url": "https://pubmed.ncbi.nlm.nih.gov/38092790/"},
+    {"title": "Mazdutide: first approval", "authors": "Shirley M", "journal": "Drugs", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/41028652/"}
+  ]
+}

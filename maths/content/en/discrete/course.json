@@ -1,0 +1,221 @@
+{
+  "slug": "discrete",
+  "title": "Discrete Mathematics",
+  "full_title": "Discrete Mathematics and Combinatorics",
+  "area": "discrete",
+  "level": 1,
+  "order": 50,
+  "tagline": "Counting, recurrences, generating functions and graph theory",
+  "summary": "Discrete mathematics deals with finite and countable structures: arrangements, networks and recursive processes. This course covers counting techniques, recurrence relations and generating functions, and graph theory from basic definitions to algorithms, colouring and planarity.",
+  "overview": [
+    "Discrete mathematics studies objects that come in separate, countable pieces — finite sets, integers, arrangements, networks — rather than the continuously varying quantities of calculus. Its questions are often easy to state and surprisingly deep. In how many ways can a committee be chosen? How many moves does the Tower of Hanoi need? Can every map be coloured with four colours? What is the shortest route through a road network? Answering them takes a toolkit of counting principles, recursive thinking and graph theory that is also the mathematical backbone of computer science.",
+    "The course has two halves. Chapters 1–4 are about counting: the sum and product rules, permutations, combinations and the binomial theorem; the pigeonhole principle and inclusion–exclusion; recurrence relations and how to solve them; and generating functions, which turn sequences into power series and counting problems into algebra. Chapters 5–7 are graph theory: the vocabulary of vertices, edges, paths and trees; algorithms for searching graphs, finding shortest paths and minimum spanning trees, and Euler and Hamilton tours; and finally planarity, colouring and matchings.",
+    "We assume the logic, sets, functions and induction of the Foundations course. Counting arguments are easy to get subtly wrong — by counting something twice or overlooking a case — so much of learning the subject is learning to check: test every formula on small cases by hand, look for a bijective explanation, and prove general claims by induction. Graph theory rewards drawing pictures, but a picture is never a proof, and the theorems here are proved with the same care as in analysis."
+  ],
+  "prerequisites": [
+    "proofs"
+  ],
+  "outcomes": [
+    "Count arrangements and selections with the sum and product rules, permutations, combinations and the binomial theorem, and prove identities by double counting.",
+    "Apply the pigeonhole principle and inclusion–exclusion, and count derangements and distributions with stars and bars.",
+    "Model problems with recurrence relations and solve linear recurrences with constant coefficients.",
+    "Use ordinary generating functions to solve recurrences and counting problems, including problems about integer partitions.",
+    "Use the language of graphs — degree, path, connectivity, isomorphism, tree — and prove the handshake lemma and the basic characterisations of trees.",
+    "Run and justify breadth- and depth-first search, Dijkstra's shortest-path algorithm and the minimum spanning tree algorithms of Prim and Kruskal.",
+    "Decide when a graph has an Euler circuit, and explain why finding Hamilton cycles is believed to be much harder.",
+    "Apply Euler's formula to planar graphs, bound chromatic numbers, and use Hall's theorem to decide when a matching exists."
+  ],
+  "chapters": [
+    {
+      "slug": "counting",
+      "title": "Counting principles",
+      "summary": "The sum and product rules, permutations and combinations, and the binomial theorem.",
+      "requires": [
+        "proofs/sets"
+      ]
+    },
+    {
+      "slug": "advanced-counting",
+      "title": "Pigeonhole and inclusion–exclusion",
+      "summary": "The pigeonhole principle, inclusion–exclusion, derangements and stars and bars.",
+      "requires": [
+        "discrete/counting"
+      ]
+    },
+    {
+      "slug": "recurrences",
+      "title": "Recurrence relations",
+      "summary": "Modelling with recurrences and solving linear recurrences with constant coefficients.",
+      "requires": [
+        "discrete/counting",
+        "proofs/induction"
+      ]
+    },
+    {
+      "slug": "generating-functions",
+      "title": "Generating functions",
+      "summary": "Ordinary generating functions, solving recurrences with them, and integer partitions.",
+      "requires": [
+        "discrete/recurrences"
+      ]
+    },
+    {
+      "slug": "graphs",
+      "title": "Graphs",
+      "summary": "Vertices and edges, degrees, paths and connectivity, isomorphism, and trees.",
+      "requires": [
+        "proofs/relations"
+      ]
+    },
+    {
+      "slug": "graph-algorithms",
+      "title": "Graph algorithms",
+      "summary": "Breadth- and depth-first search, shortest paths, minimum spanning trees, and Euler and Hamilton paths.",
+      "requires": [
+        "discrete/graphs"
+      ]
+    },
+    {
+      "slug": "colouring-planarity",
+      "title": "Colouring, planarity and matchings",
+      "summary": "Planar graphs and Euler’s formula, graph colouring, and matchings and Hall’s theorem.",
+      "requires": [
+        "discrete/graphs"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1202,
+      "title": "Fibonacci's rabbits",
+      "detail": "Leonardo of Pisa's *Liber Abaci* poses the rabbit-breeding problem whose answer is the Fibonacci sequence, the most famous recurrence relation.",
+      "people": [
+        "Leonardo of Pisa (Fibonacci)"
+      ]
+    },
+    {
+      "year": 1654,
+      "title": "Pascal's arithmetic triangle",
+      "detail": "Blaise Pascal writes his *Traité du triangle arithmétique* (published in 1665), proving properties of binomial coefficients by an early form of induction. The triangle itself was known centuries earlier in India, Persia and China.",
+      "people": [
+        "Blaise Pascal"
+      ]
+    },
+    {
+      "year": 1736,
+      "title": "The bridges of Königsberg",
+      "detail": "Leonhard Euler shows that no walk crosses each of Königsberg's seven bridges exactly once, the first theorem of graph theory.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1748,
+      "title": "Generating functions for partitions",
+      "detail": "In his *Introductio in analysin infinitorum* Euler counts partitions of integers with infinite products, and proves that partitions into distinct parts and into odd parts are equinumerous.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1852,
+      "title": "The four colour problem",
+      "detail": "Francis Guthrie notices that four colours suffice for a map of the counties of England and asks whether this is always true; the question reaches Augustus De Morgan through his brother Frederick.",
+      "people": [
+        "Francis Guthrie",
+        "Augustus De Morgan"
+      ]
+    },
+    {
+      "year": 1857,
+      "title": "Hamilton's icosian game",
+      "detail": "William Rowan Hamilton presents a puzzle asking for a round trip through the 20 vertices of a dodecahedron, the origin of the term Hamilton cycle.",
+      "people": [
+        "William Rowan Hamilton"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "Kuratowski's theorem",
+      "detail": "Kazimierz Kuratowski proves that a graph is planar unless it contains a subdivision of $K_5$ or $K_{3,3}$.",
+      "people": [
+        "Kazimierz Kuratowski"
+      ]
+    },
+    {
+      "year": 1935,
+      "title": "Hall's marriage theorem",
+      "detail": "Philip Hall gives the condition for a family of sets to have distinct representatives, the basic theorem on matchings in bipartite graphs.",
+      "people": [
+        "Philip Hall"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "Shortest paths and spanning trees",
+      "detail": "Edsger Dijkstra publishes his shortest-path algorithm, following the minimum spanning tree algorithms of Joseph Kruskal (1956) and Robert Prim (1957); Otakar Borůvka had studied spanning trees as early as 1926.",
+      "people": [
+        "Edsger W. Dijkstra",
+        "Joseph Kruskal",
+        "Robert C. Prim"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "The four colour theorem",
+      "detail": "Kenneth Appel and Wolfgang Haken prove that every planar map can be four-coloured, using a computer to check almost two thousand configurations.",
+      "people": [
+        "Kenneth Appel",
+        "Wolfgang Haken"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Discrete Mathematics and Its Applications",
+      "authors": "Kenneth H. Rosen",
+      "year": 2019,
+      "note": "Eighth edition. Encyclopaedic, with a huge stock of exercises on every topic in this course."
+    },
+    {
+      "title": "Discrete Mathematics",
+      "authors": "Norman L. Biggs",
+      "year": 2002,
+      "note": "Second edition. A standard UK text covering counting, recurrences, graphs and algorithms with mathematical care."
+    },
+    {
+      "title": "Introductory Combinatorics",
+      "authors": "Richard A. Brualdi",
+      "year": 2010,
+      "note": "Fifth edition. Thorough on pigeonhole, inclusion–exclusion, recurrences and generating functions."
+    },
+    {
+      "title": "Concrete Mathematics",
+      "authors": "Ronald L. Graham, Donald E. Knuth and Oren Patashnik",
+      "year": 1994,
+      "note": "Second edition. Sums, recurrences, binomial coefficients and generating functions, with a computer-science flavour and wonderful exercises."
+    },
+    {
+      "title": "generatingfunctionology",
+      "authors": "Herbert S. Wilf",
+      "year": 2006,
+      "note": "Third edition (earlier editions are free online). The classic introduction to generating functions."
+    },
+    {
+      "title": "Introduction to Graph Theory",
+      "authors": "Robin J. Wilson",
+      "year": 2010,
+      "note": "Fifth edition. A short, readable first course in graph theory."
+    },
+    {
+      "title": "Introduction to Algorithms",
+      "authors": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein",
+      "year": 2022,
+      "note": "Fourth edition. Correctness proofs and running times for graph search, shortest paths and minimum spanning trees."
+    }
+  ],
+  "next": [
+    "number-theory",
+    "probability"
+  ]
+}

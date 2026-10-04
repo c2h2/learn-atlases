@@ -1,0 +1,208 @@
+{
+  "slug": "topology",
+  "title": "Topology",
+  "full_title": "Topology",
+  "area": "geometry",
+  "level": 3,
+  "order": 160,
+  "tagline": "The mathematics of shape without distance: open sets, continuity, connectedness, compactness and the fundamental group",
+  "summary": "Topology studies the properties of spaces that survive continuous deformation. This course defines topological spaces and continuous maps, studies connectedness and compactness, builds new spaces as products and quotients, introduces the fundamental group, and classifies closed surfaces.",
+  "overview": [
+    "In topology, stretching and bending are allowed but tearing and gluing are not: two shapes count as the same if one can be deformed continuously into the other. A coffee cup and a doughnut are 'the same' to a topologist because each has exactly one hole, while a sphere and a torus are different. To make such statements precise, topology throws away distances and keeps only the notion of an **open set** — which turns out to be exactly what is needed to speak about continuity, convergence, connectedness and compactness.",
+    "The abstraction pays off across mathematics. Point-set topology is the common language of modern analysis (spaces of functions and their convergence), of geometry (manifolds) and of probability. Topological arguments prove existence theorems that no calculation can: the intermediate and extreme value theorems, the Brouwer fixed point theorem and the fundamental theorem of algebra. Algebraic topology turns shapes into algebraic invariants — the fundamental group, the Euler characteristic — that can be computed and compared, with applications from robot motion planning to the analysis of data and the study of phases of matter.",
+    "The course begins with point-set topology: topological spaces, bases, closures and continuous maps (Chapters 1–2), followed by connectedness and compactness (Chapters 3–4), which explain and generalise the intermediate and extreme value theorems. Chapter 5 introduces the Hausdorff condition and the quotient topology, which lets us build the torus, the Möbius band, the Klein bottle and the projective plane by gluing. Chapters 6–7 are an introduction to algebraic topology: the fundamental group, with the calculation $\\pi_1(S^1)\\cong\\mathbb{Z}$ and its consequences, and the classification of closed surfaces by orientability and Euler characteristic.",
+    "Topology is abstract, full of surprising examples, and pictures — though indispensable — can mislead. The best way to learn it is to keep a small zoo of test spaces (the discrete, indiscrete and cofinite topologies, the real line, the topologist's sine curve) and to try every definition and theorem on them. Proofs are often short once the right open sets have been chosen; learning to find them is what the exercises are for."
+  ],
+  "prerequisites": [
+    "real-analysis"
+  ],
+  "outcomes": [
+    "Verify the axioms of a topology and work with bases, closures, interiors and boundaries.",
+    "Prove that maps are continuous or are homeomorphisms, using open sets, bases and the universal properties of subspaces and products.",
+    "Prove that spaces are connected or path-connected, and use connectedness to show that spaces are not homeomorphic.",
+    "Prove the Heine–Borel theorem and use compactness to obtain existence results such as the extreme value theorem.",
+    "Construct the torus, Möbius band, Klein bottle and projective plane as quotient spaces and decide whether quotients are Hausdorff.",
+    "Compute fundamental groups of simple spaces and prove that the fundamental group of the circle is ℤ using path lifting.",
+    "Prove the Brouwer fixed point theorem in dimension two and the fundamental theorem of algebra by topological arguments.",
+    "Compute Euler characteristics, decide orientability, and identify closed surfaces from their polygon presentations."
+  ],
+  "chapters": [
+    {
+      "slug": "topological-spaces",
+      "title": "Topological spaces",
+      "summary": "Open sets and topologies, examples, bases, closed sets, closure and interior.",
+      "requires": [
+        "real-analysis/metric-spaces"
+      ]
+    },
+    {
+      "slug": "continuous-maps",
+      "title": "Continuous maps and homeomorphisms",
+      "summary": "Continuity, homeomorphisms, and subspace and product topologies.",
+      "requires": [
+        "topology/topological-spaces"
+      ]
+    },
+    {
+      "slug": "connectedness",
+      "title": "Connectedness",
+      "summary": "Connected and path-connected spaces, components and applications.",
+      "requires": [
+        "topology/continuous-maps"
+      ]
+    },
+    {
+      "slug": "compactness",
+      "title": "Compactness",
+      "summary": "Open covers, the Heine–Borel theorem, compactness and continuity, and sequential compactness.",
+      "requires": [
+        "topology/continuous-maps"
+      ]
+    },
+    {
+      "slug": "quotient-spaces",
+      "title": "Separation axioms and quotient spaces",
+      "summary": "Hausdorff spaces, the quotient topology, and building the torus, Möbius band and projective plane.",
+      "requires": [
+        "topology/compactness"
+      ]
+    },
+    {
+      "slug": "fundamental-group",
+      "title": "The fundamental group",
+      "summary": "Homotopy, the fundamental group, the fundamental group of the circle and Brouwer’s fixed point theorem.",
+      "requires": [
+        "topology/connectedness",
+        "topology/quotient-spaces"
+      ]
+    },
+    {
+      "slug": "surfaces",
+      "title": "Surfaces and the Euler characteristic",
+      "summary": "Triangulations, the Euler characteristic, orientability and the classification of closed surfaces.",
+      "requires": [
+        "topology/quotient-spaces"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1736,
+      "title": "The bridges of Königsberg",
+      "detail": "Leonhard Euler showed that no walk crosses each of the seven bridges of Königsberg exactly once, in a paper on the 'geometry of position' — a problem in which only the pattern of connections matters, not distances.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1750,
+      "title": "Euler's polyhedron formula",
+      "detail": "In a letter to Christian Goldbach, Euler stated that every convex polyhedron with $V$ vertices, $E$ edges and $F$ faces satisfies $V - E + F = 2$; the formula became the prototype of a topological invariant.",
+      "people": [
+        "Leonhard Euler",
+        "Christian Goldbach"
+      ]
+    },
+    {
+      "year": 1847,
+      "title": "The word 'topology'",
+      "detail": "Johann Benedict Listing, a student of Gauss, introduced the word in his book *Vorstudien zur Topologie*.",
+      "people": [
+        "Johann Benedict Listing"
+      ]
+    },
+    {
+      "year": 1858,
+      "title": "A surface with one side",
+      "detail": "August Ferdinand Möbius and Johann Benedict Listing independently discovered the one-sided band now named after Möbius.",
+      "people": [
+        "August Ferdinand Möbius",
+        "Johann Benedict Listing"
+      ]
+    },
+    {
+      "year": 1895,
+      "title": "Analysis Situs",
+      "detail": "Henri Poincaré's memoir *Analysis Situs* founded algebraic topology, introducing the fundamental group and the first ideas of homology.",
+      "people": [
+        "Henri Poincaré"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "Metric spaces",
+      "detail": "Maurice Fréchet's thesis introduced abstract metric spaces and studied compactness in this general setting.",
+      "people": [
+        "Maurice Fréchet"
+      ]
+    },
+    {
+      "year": 1907,
+      "title": "Classifying surfaces",
+      "detail": "Max Dehn and Poul Heegaard gave the first rigorous proof of the classification of closed surfaces, for triangulated surfaces; Tibor Radó proved in 1925 that every surface can be triangulated.",
+      "people": [
+        "Max Dehn",
+        "Poul Heegaard",
+        "Tibor Radó"
+      ]
+    },
+    {
+      "year": 1912,
+      "title": "Brouwer's fixed point theorem",
+      "detail": "L. E. J. Brouwer published his theorem that every continuous map of a closed ball into itself has a fixed point; Jacques Hadamard had given a proof in 1910.",
+      "people": [
+        "L. E. J. Brouwer",
+        "Jacques Hadamard"
+      ]
+    },
+    {
+      "year": 1914,
+      "title": "Topological spaces",
+      "detail": "In *Grundzüge der Mengenlehre* Felix Hausdorff defined topological spaces by axioms for neighbourhoods, including the separation property now named after him.",
+      "people": [
+        "Felix Hausdorff"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Topology (2nd edition)",
+      "authors": "James R. Munkres",
+      "year": 2000,
+      "note": "The standard undergraduate text: a complete, careful treatment of point-set topology followed by the fundamental group and covering spaces. Most of this course follows its approach."
+    },
+    {
+      "title": "Introduction to Metric and Topological Spaces (2nd edition)",
+      "authors": "Wilson A. Sutherland",
+      "year": 2009,
+      "note": "A gentle bridge from metric spaces to general topology, ideal for the first four chapters."
+    },
+    {
+      "title": "Basic Topology",
+      "authors": "M. A. Armstrong",
+      "year": 1983,
+      "note": "Concise and geometric; strong on quotient spaces, surfaces, the fundamental group and the Euler characteristic."
+    },
+    {
+      "title": "Introduction to Topological Manifolds (2nd edition)",
+      "authors": "John M. Lee",
+      "year": 2011,
+      "note": "A modern, very clearly written account of quotients, the classification of surfaces and the fundamental group."
+    },
+    {
+      "title": "Algebraic Topology",
+      "authors": "Allen Hatcher",
+      "year": 2002,
+      "note": "The standard next step after this course, freely available online; Chapter 1 treats the fundamental group and covering spaces in depth."
+    },
+    {
+      "title": "Counterexamples in Topology (2nd edition)",
+      "authors": "Lynn Arthur Steen and J. Arthur Seebach Jr.",
+      "year": 1978,
+      "note": "A catalogue of over a hundred spaces showing exactly which implications between topological properties fail. Invaluable for testing conjectures."
+    }
+  ],
+  "next": [
+    "differential-geometry"
+  ]
+}

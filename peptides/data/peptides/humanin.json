@@ -1,0 +1,141 @@
+{
+  "slug": "humanin",
+  "name": "Humanin",
+  "aliases": ["HN", "MTRNR2"],
+  "category": "longevity",
+  "drug_class": "Mitochondrial-derived peptide",
+  "subclass": "24-residue cytoprotective peptide encoded in the mitochondrial 16S rRNA gene (MT-RNR2)",
+  "status": "research",
+  "status_note": "Not approved and not in clinical trials anywhere; studied in cells and animals, measured as a biomarker in human observational studies and sold online as an unregulated 'research' peptide.",
+  "evidence": 1,
+  "evidence_note": "All evidence of benefit comes from cells, worms and rodents. No published study has given humanin or its analogues to people; human data are limited to associations of blood levels and genetic variants with age and disease.",
+  "tagline": "Mitochondrial peptide found in Alzheimer's brain tissue that blocks cell death in the lab",
+  "summary": "Humanin is a 24-amino-acid peptide encoded within the 16S ribosomal RNA gene of mitochondrial DNA. It was discovered in 2001 in a search for genes that protect neurons from Alzheimer's-disease-related damage, and in cells and animals it blocks programmed cell death, improves insulin sensitivity and extends lifespan in worms. It has never been tested as a treatment in humans; its link to human ageing rests on blood-level and genetic association studies.",
+  "overview": [
+    "Humanin was found in 2001 by Ikuo Nishimoto's group at Keio University in Tokyo, who screened a cDNA library made from the occipital lobe of a person who had died with Alzheimer's disease, a brain region that is relatively spared by the disease, for genes that stopped neurons dying from familial Alzheimer's mutations and amyloid-β. The clone encoded a 24-residue secreted peptide, which Nishimoto named humanin to express the hope that it could restore 'humanity' to people with the disease. In 2003 two other groups independently isolated the same peptide in yeast two-hybrid screens, as a binding partner of the cell-death protein Bax (John Reed's laboratory) and of IGF-binding protein 3 (Pinchas Cohen's laboratory).",
+    "Its sequence matches an open reading frame in the mitochondrial 16S rRNA gene (MT-RNR2), which made humanin the first recognised mitochondrial-derived peptide and led to the later discovery of the small humanin-like peptides and MOTS-c. Whether circulating humanin actually comes from mitochondrial DNA is still debated: the nuclear genome contains 13 humanin-like copies (MTRNR2L1–13), at least ten of them expressed, and the peptide would be 24 residues long if made in the cytoplasm but only 21 if translated inside mitochondria.",
+    "In laboratory studies humanin and its more potent analogue HNG protect many cell types against stress, and in rodents they have reduced damage in models of Alzheimer's disease, stroke, heart attack and atherosclerosis and improved insulin sensitivity. Overexpressing humanin lengthened the lifespan of the nematode C. elegans, humanin-transgenic mice resisted toxic insults, and treating middle-aged mice with HNG improved markers of metabolic health and inflammation.",
+    "Human evidence is observational. Circulating humanin declines with age, is lower in type 2 diabetes, Alzheimer's disease and the mitochondrial disease MELAS, and was much higher in the children of centenarians than in age-matched controls; a rare variant (P3S) is enriched in centenarians who carry the Alzheimer's risk gene APOE4. No clinical trial of humanin or its analogues is registered, but the peptide and HNG are sold online as research chemicals to people pursuing longevity."
+  ],
+  "mechanism": [
+    "Humanin acts both outside and inside cells. Secreted humanin activates formyl peptide receptor 2 (FPR2, formerly FPRL1), a G-protein-coupled receptor that is also used by amyloid-β42, and a three-part cytokine receptor made of CNTF receptor α, WSX-1 (the IL-27 receptor α chain) and gp130, which signals through STAT3. A 2022 cryo-EM structure shows N-formyl humanin engaging both a polar cavity within FPR2's helical bundle and a hydrophobic groove on its extracellular surface.",
+    "Inside cells it binds the pro-apoptotic protein Bax and stops it moving to mitochondria, and it binds IGFBP-3, blocking IGFBP-3-induced apoptosis in some cells while cooperating with it to protect neurons. Cys8 and Ser14 are essential for neuroprotection; replacing Ser14 with glycine (HNG) greatly increases potency, and replacing Phe6 with alanine abolishes IGFBP-3 binding."
+  ],
+  "origin": "Encoded by a short open reading frame in the mitochondrial 16S ribosomal RNA gene (MT-RNR2); nuclear humanin-like genes (MTRNR2L1–13) may also contribute",
+  "discovery": {"year": 2001, "by": "Yuichi Hashimoto, Ikuo Nishimoto and colleagues", "where": "Keio University School of Medicine, Tokyo, Japan", "note": "Identified by functional expression screening of a cDNA library from the occipital lobe of an Alzheimer's disease brain; independently isolated in 2003 as a Bax-binding and as an IGFBP-3-binding peptide."},
+  "first_human_year": null,
+  "first_approval": null,
+  "developer": "Academic research (Keio University, Tokyo; later groups including the University of Southern California)",
+  "brands": [],
+  "analogs": [
+    {"name": "HNG ([Gly14]-humanin, S14G)", "note": "Ser14→Gly; reported to be about 1,000-fold more potent in neuroprotection assays and widely used in animal studies."},
+    {"name": "HNGF6A", "note": "HNG with Phe6→Ala; does not bind IGFBP-3 and persisted longer than HNG in mouse plasma."},
+    {"name": "Colivelin", "note": "Hybrid of activity-dependent neurotrophic factor and the humanin derivative AGA-(C8R)HNG17; blocked neuronal death at femtomolar concentrations in cell models."},
+    {"name": "Humanin D-Ser14", "note": "Isomerised form with Ser14 in the D configuration; stronger binding to amyloid-β and inhibition of its fibrillation (NMR structure 5GIW)."},
+    {"name": "Small humanin-like peptides (SHLP1–6)", "note": "Six further peptides encoded in the same 16S rRNA region, described in 2016; SHLP2 and SHLP3 share some of humanin's protective effects."}
+  ],
+  "targets": [
+    {"name": "N-formyl peptide receptor 2 (FPRL1)", "gene": "FPR2", "uniprot": "P25090", "action": "Agonist"},
+    {"name": "Ciliary neurotrophic factor receptor α", "gene": "CNTFR", "uniprot": "P26992", "action": "Binds; part of the trimeric humanin receptor with WSX-1 and gp130"},
+    {"name": "Interleukin-27 receptor α (WSX-1)", "gene": "IL27RA", "uniprot": "Q6UWB1", "action": "Binds; part of the trimeric humanin receptor"},
+    {"name": "Glycoprotein 130 (IL-6 receptor subunit β)", "gene": "IL6ST", "uniprot": "P40189", "action": "Signal-transducing subunit of the trimeric receptor (STAT3 activation)"},
+    {"name": "Apoptosis regulator Bax", "gene": "BAX", "uniprot": "Q07812", "action": "Binds and prevents its activation and translocation to mitochondria"},
+    {"name": "Insulin-like growth factor-binding protein 3", "gene": "IGFBP3", "uniprot": "P17936", "action": "Binds with high affinity; blocks IGFBP-3-induced apoptosis in some cells"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["M","A","P","R","G","F","S","C","L","L","L","L","T","S","E","I","D","L","P","V","K","R","R","A"], "n_term": "H", "c_term": "OH"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A14", "type": "other", "label": "Ser14 is replaced by Gly in the potent synthetic analogue HNG (S14G); L→D isomerisation of this serine (D-Ser14) also increases activity", "short": "S14G in HNG"}
+    ],
+    "notation": "H-Met-Ala-Pro-Arg-Gly-Phe-Ser-Cys-Leu-Leu-Leu-Leu-Thr-Ser-Glu-Ile-Asp-Leu-Pro-Val-Lys-Arg-Arg-Ala-OH",
+    "note": "The 24-residue form expected from cytoplasmic translation (UniProt Q8IVG9). Translation inside mitochondria, which use a different genetic code, would give a shorter 21-residue peptide."
+  },
+  "formula": "C119H204N34O32S2",
+  "mw": 2687.2,
+  "half_life": "Not established in humans",
+  "half_life_hours": null,
+  "routes": ["Injection in animal studies (intraperitoneal, intravenous or into the brain)", "Subcutaneous self-injection in unregulated use"],
+  "structure": {
+    "pdb": [
+      {"id": "7WVX", "title": "Formyl peptide receptor 2 bound to N-formyl humanin and Gi2", "method": "Cryo-EM", "resolution": 2.8, "year": 2022, "peptide_chain": "L", "note": "Receptor-bound pose of N-formylated humanin in its G-protein-coupled receptor"},
+      {"id": "1Y32", "title": "Humanin in 30% trifluoroethanol", "method": "NMR", "resolution": null, "year": 2005, "peptide_chain": "A", "note": "First structure: a helix from Gly5 to Leu18 in a membrane-mimicking solvent; the peptide is largely unstructured in water"},
+      {"id": "2GD3", "title": "S14G-humanin (HNG) in 30% trifluoroethanol", "method": "NMR", "resolution": null, "year": 2006, "peptide_chain": "A", "note": "The potent Gly14 analogue"},
+      {"id": "5GIW", "title": "Humanin containing D-Ser14", "method": "NMR", "resolution": null, "year": 2016, "peptide_chain": "X", "note": "Isomerisation of Ser14 to the D form rearranges the peptide's conformation"}
+    ],
+    "pubchem_cid": 16131438,
+    "notes": "Free humanin is flexible; it becomes helical in membrane-like solvents and when bound to FPR2."
+  },
+  "ids": {"pubchem_cid": 16131438, "cas": "330936-69-1", "chembl": "CHEMBL4447799", "unii": "H975EUX36G", "kegg": "C16068", "chebi": "CHEBI:80290", "uniprot": "Q8IVG9"},
+  "wiki": "Humanin",
+  "queries": {
+    "pubmed": "(humanin[tiab] OR colivelin[tiab])",
+    "ctgov": ""
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Alzheimer's disease and neuroprotection", "stage": "Preclinical", "detail": "Humanin, HNG and derivatives such as colivelin protect neurons from amyloid-β and familial Alzheimer's mutations in cell models and reduce memory deficits and amyloid pathology in rodent models."},
+      {"use": "Insulin resistance and type 2 diabetes", "stage": "Preclinical", "detail": "Humanin acting in the hypothalamus improved insulin sensitivity in rodents, and a single dose of a potent analogue lowered blood glucose in Zucker diabetic fatty rats."},
+      {"use": "Ischaemic and cardiovascular injury", "stage": "Preclinical", "detail": "Reported to reduce infarct size after stroke and coronary occlusion in rodents and to slow atherosclerotic plaque progression in ApoE-deficient mice."}
+    ],
+    "off_label": [
+      {"use": "Longevity self-experimentation", "detail": "Humanin and HNG are sold online as 'research chemicals' and self-injected by some people in longevity and biohacking communities, motivated by the worm and mouse lifespan and healthspan studies.", "evidence": "No human safety, pharmacokinetic or efficacy data exist; identity, purity and sterility of such products are not assured."}
+    ]
+  },
+  "history": [
+    {"year": 2001, "date": "2001-05-22", "title": "Humanin discovered", "detail": "Nishimoto's group reported a gene from Alzheimer's brain tissue encoding a secreted peptide that abolished neuronal death caused by familial Alzheimer's genes and amyloid-β.", "kind": "discovery"},
+    {"year": 2001, "date": "2001-12", "title": "Key residues and the HNG analogue", "detail": "The same group mapped the residues needed for activity, including Cys8 and Ser14; swapping Ser14 for glycine (HNG) gave a peptide reported to be about 1,000-fold more potent.", "kind": "science"},
+    {"year": 2003, "date": "2003-05", "title": "Humanin blocks Bax", "detail": "John Reed's group independently found humanin as a Bax-binding peptide that prevents Bax moving to mitochondria, and noted an identical open reading frame in mitochondrial DNA.", "kind": "science"},
+    {"year": 2003, "date": "2003-10", "title": "IGFBP-3 partner found", "detail": "Pinchas Cohen's group cloned humanin as a high-affinity binding partner of IGFBP-3 that can block IGFBP-3-induced apoptosis.", "kind": "science"},
+    {"year": 2004, "date": "2004-06", "title": "First receptor identified", "detail": "Humanin was shown to act through the G-protein-coupled receptor FPRL1 (FPR2), which it shares with amyloid-β42.", "kind": "science"},
+    {"year": 2005, "title": "First NMR structure", "detail": "Solution NMR showed that humanin is flexible in water but forms a helix from Gly5 to Leu18 in a membrane-like solvent (PDB 1Y32).", "kind": "science"},
+    {"year": 2009, "title": "Trimeric cytokine receptor", "detail": "Humanin was found to protect neurons by assembling a receptor complex of CNTF receptor α, WSX-1 and gp130 that signals through STAT3.", "kind": "science"},
+    {"year": 2009, "title": "Nuclear humanin-like genes", "detail": "Thirteen humanin-like loci were identified in the nuclear genome, at least ten of them expressed, raising the question of where circulating humanin comes from.", "kind": "science"},
+    {"year": 2009, "date": "2009-07-22", "title": "Insulin sensitiser that declines with age", "detail": "Humanin acting in the hypothalamus improved insulin sensitivity in rodents, and circulating levels were found to fall with age in humans and mice.", "kind": "science"},
+    {"year": 2016, "date": "2016-04", "title": "Small humanin-like peptides", "detail": "Six further peptides (SHLP1–6) encoded in the same region of mitochondrial DNA were described, widening the family of mitochondrial-derived peptides.", "kind": "science"},
+    {"year": 2020, "date": "2020-06-23", "title": "Lifespan and healthspan link", "detail": "Humanin extended lifespan in C. elegans, HNG improved healthspan markers in middle-aged mice, and children of centenarians had much higher circulating humanin than controls.", "kind": "science"},
+    {"year": 2022, "date": "2022-04-01", "title": "Receptor-bound structure", "detail": "Cryo-EM structures of FPR2 bound to N-formyl humanin or amyloid-β42 showed how the receptor recognises both peptides (PDB 7WVX).", "kind": "science"},
+    {"year": 2024, "date": "2024-03-22", "title": "Longevity variant in APOE4 carriers", "detail": "A rare humanin variant, P3S, was found enriched in centenarians carrying APOE4 and reduced brain amyloid more than normal humanin in a mouse model.", "kind": "science"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "not-approved", "detail": "Not approved for any use and not in registered clinical trials; products sold online are unapproved research chemicals."}
+  ],
+  "pk": {
+    "half_life": "Not established in humans; in rodents, circulating humanin associates with IGFBP-3 and the non-IGFBP-3-binding analogue HNGF6A persists longer than HNG"
+  },
+  "dosing": null,
+  "dosing_note": "No human dose has ever been tested in a clinical study; amounts promoted online are not based on clinical data.",
+  "safety": {
+    "common": [],
+    "serious": [],
+    "warnings": [
+      "No human safety data",
+      "Grey-market products are not made to pharmaceutical standards, so identity, purity and sterility are not assured"
+    ],
+    "notes": "Humanin inhibits apoptosis, and a 2023 cell study reported that a humanin analogue increased chemotherapy resistance and migration of glioblastoma cells, so its effect on cancer risk is an open question."
+  },
+  "market": null,
+  "facts": [
+    "Nishimoto named the peptide humanin to express the hope that it could restore 'humanity' to people with Alzheimer's disease.",
+    "Humanin was discovered three times: in 2001 as a neuroprotective factor, and in 2003 as a binding partner of Bax and of IGFBP-3.",
+    "It was the first peptide traced to a short open reading frame in mitochondrial DNA, opening the field that later produced MOTS-c.",
+    "A single substitution, Ser14 to glycine, makes the analogue HNG roughly 1,000 times more potent in cell assays."
+  ],
+  "related": ["mots-c", "ss-31", "epitalon"],
+  "references": [
+    {"title": "A rescue factor abolishing neuronal cell death by a wide spectrum of familial Alzheimer's disease genes and Abeta", "authors": "Hashimoto Y, Niikura T, Tajima H, et al.", "journal": "Proc Natl Acad Sci U S A", "year": 2001, "url": "https://pubmed.ncbi.nlm.nih.gov/11371646/"},
+    {"title": "Detailed characterization of neuroprotection by a rescue factor humanin against various Alzheimer's disease-relevant insults", "authors": "Hashimoto Y, Niikura T, Ito Y, et al.", "journal": "J Neurosci", "year": 2001, "url": "https://pubmed.ncbi.nlm.nih.gov/11717357/"},
+    {"title": "Humanin peptide suppresses apoptosis by interfering with Bax activation", "authors": "Guo B, Zhai D, Cabezas E, et al.", "journal": "Nature", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/12732850/"},
+    {"title": "Interaction between the Alzheimer's survival peptide humanin and insulin-like growth factor-binding protein 3 regulates cell survival and apoptosis", "authors": "Ikonen M, Liu B, Hashimoto Y, et al.", "journal": "Proc Natl Acad Sci U S A", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/14561895/"},
+    {"title": "Humanin, a newly identified neuroprotective factor, uses the G protein-coupled formylpeptide receptor-like-1 as a functional receptor", "authors": "Ying G, Iribarren P, Zhou Y, et al.", "journal": "J Immunol", "year": 2004, "url": "https://pubmed.ncbi.nlm.nih.gov/15153530/"},
+    {"title": "Humanin inhibits neuronal cell death by interacting with a cytokine receptor complex or complexes involving CNTF receptor alpha/WSX-1/gp130", "authors": "Hashimoto Y, Kurita M, Aiso S, et al.", "journal": "Mol Biol Cell", "year": 2009, "url": "https://pubmed.ncbi.nlm.nih.gov/19386761/"},
+    {"title": "Evidence for potential functionality of nuclearly-encoded humanin isoforms", "authors": "Bodzioch M, Lapicka-Bodzioch K, Zapala B, et al.", "journal": "Genomics", "year": 2009, "url": "https://pubmed.ncbi.nlm.nih.gov/19477263/"},
+    {"title": "Humanin: a novel central regulator of peripheral insulin action", "authors": "Muzumdar RH, Huffman DM, Atzmon G, et al.", "journal": "PLoS One", "year": 2009, "url": "https://pubmed.ncbi.nlm.nih.gov/19623253/"},
+    {"title": "The mitochondrial derived peptide humanin is a regulator of lifespan and healthspan", "authors": "Yen K, Mehta HH, Kim SJ, et al.", "journal": "Aging (Albany NY)", "year": 2020, "url": "https://pubmed.ncbi.nlm.nih.gov/32575074/"},
+    {"title": "Humanin variant P3S is associated with longevity in APOE4 carriers and resists APOE4-induced brain pathology", "authors": "Miller B, Kim SJ, Cao K, et al.", "journal": "Aging Cell", "year": 2024, "url": "https://pubmed.ncbi.nlm.nih.gov/38520065/"}
+  ]
+}

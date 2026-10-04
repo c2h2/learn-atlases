@@ -1,0 +1,732 @@
+{
+  "slug": "insulin",
+  "name": "Insulin",
+  "aliases": [
+    "Human insulin",
+    "Insulin human",
+    "Regular insulin",
+    "Soluble insulin",
+    "Recombinant human insulin"
+  ],
+  "category": "metabolic",
+  "drug_class": "Insulin receptor agonist (glucose-lowering hormone)",
+  "subclass": "Two-chain pancreatic peptide hormone; short-acting human insulin and parent of the rapid-, long- and weekly-acting analogues",
+  "status": "approved",
+  "status_note": "Animal insulin has been sold since 1923 and recombinant human insulin since 1982; human insulin and its analogues are approved worldwide for diabetes, and the first once-weekly basal insulins (icodec, efsitora alfa) were approved in the US in 2026.",
+  "evidence": 5,
+  "evidence_note": "A century of clinical use, landmark outcome trials such as the DCCT (1,441 people with type 1 diabetes) and large phase 3 programmes for every analogue, including ONWARDS for weekly icodec.",
+  "tagline": "The pancreatic hormone whose 1922 debut made type 1 diabetes survivable",
+  "summary": "Insulin is the 51-amino-acid hormone made by the beta cells of the pancreas that lets the body take up, use and store glucose. Isolated in Toronto in 1921–22, it turned type 1 diabetes from a fatal disease into a treatable one, became the first protein to be sequenced and the first medicine made by recombinant DNA technology. Human insulin and its engineered analogues, from rapid-acting mealtime insulins to once-weekly basal insulins, remain essential treatment for type 1 diabetes and for many people with type 2 diabetes.",
+  "overview": [
+    "Insulin is released by the beta cells of the pancreatic islets when blood glucose rises after a meal. It signals liver, muscle and fat to take up and store glucose, fat and protein, and it restrains the liver's own glucose and ketone production. In type 1 diabetes the immune system destroys the beta cells; before insulin treatment the disease was fatal, usually within months to a few years of diagnosis. In 1889 Oskar Minkowski and Joseph von Mering showed that removing a dog's pancreas caused diabetes, and in 1921 Frederick Banting and Charles Best, working in J. J. R. Macleod's laboratory at the University of Toronto, prepared pancreatic extracts that lowered blood sugar in diabetic dogs. Biochemist James Collip purified the extract, and in January 1922 14-year-old Leonard Thompson became the first person successfully treated.",
+    "Insulin then became a landmark molecule for science. Frederick Sanger's group determined its full amino-acid sequence between 1951 and 1955, the first protein ever sequenced; Donald Steiner discovered its single-chain precursor, proinsulin, in 1967; and Dorothy Hodgkin's team in Oxford solved its three-dimensional structure in 1969, 34 years after she first photographed insulin crystals. Chemists in Aachen and Pittsburgh reported the first total syntheses in 1963–64, and a Shanghai team produced fully active crystalline synthetic insulin in 1965.",
+    "For six decades medicinal insulin was extracted from cattle and pig pancreases. Formulation work stretched its action: protamine insulin (Hagedorn, 1936) and NPH insulin (1946) allowed fewer injections. In 1978 Genentech and City of Hope made human insulin in bacteria, and in October 1982 Eli Lilly's Humulin became the first recombinant DNA medicine approved by the FDA. From 1996 protein engineering produced analogues that act faster at mealtimes (lispro, aspart, glulisine) or last longer (glargine, detemir, degludec), and in 2024–2026 the first once-weekly basal insulins, Novo Nordisk's icodec and Eli Lilly's efsitora alfa, were approved. Delivery moved from glass syringes to pens (1985), pumps and inhaled powders (Exubera, 2006; Afrezza, 2014).",
+    "Insulin's cost has long been a public issue. Banting, Best and Collip assigned their patent to the University of Toronto for $1 each, yet a century later WHO reported that three companies control more than 90% of the global insulin market and that price and availability still limit access in many countries. In the US, insulin moved to the biologics pathway in 2020, enabling interchangeable biosimilars; Medicare out-of-pocket costs were capped at $35 a month from 2023, and Eli Lilly, Novo Nordisk and Sanofi cut list prices of their main insulins by 65–78% the same year."
+  ],
+  "mechanism": [
+    "Insulin acts through the insulin receptor, a disulfide-linked dimeric receptor tyrosine kinase. Cryo-EM structures show that up to four insulin molecules can bind one receptor dimer at two distinct types of site, converting the autoinhibited receptor into an active 'T'-shaped form. The intracellular kinase domains then phosphorylate each other and insulin-receptor substrate (IRS) proteins, switching on the PI3K–Akt pathway (metabolic effects) and the MAPK pathway (growth effects).",
+    "In muscle and fat, Akt signalling moves GLUT4 glucose transporters to the cell surface so that glucose is taken up; in the liver insulin suppresses glucose production and promotes glycogen storage. Insulin also blocks fat breakdown and ketone formation, stimulates protein synthesis and drives potassium into cells, which is why it is used with glucose to treat high potassium and why it can cause hypokalaemia.",
+    "In beta-cell granules and in many vials insulin is stored as zinc-stabilised hexamers, which must break down into dimers and monomers before they can be absorbed from under the skin; this delays the action of regular human insulin. Rapid-acting analogues weaken this self-association, whereas long-acting analogues form a slowly dissolving depot (glargine, degludec) or bind albumin through a fatty-acid side chain (detemir, degludec, icodec)."
+  ],
+  "origin": "Endogenous hormone of pancreatic beta cells, cut from preproinsulin (110 aa) via proinsulin (86 aa), which releases the connecting C-peptide; medicinal human insulin is produced by recombinant DNA technology in Escherichia coli or yeast",
+  "discovery": {
+    "year": 1921,
+    "by": "Frederick Banting and Charles Best, with J. J. R. Macleod and James Collip",
+    "where": "University of Toronto, Canada",
+    "note": "Pancreatic extracts lowered blood sugar in diabetic dogs in 1921; Collip's purified extract was used successfully in the first patient in January 1922. In Bucharest, Nicolae Paulescu reported an active pancreatic extract ('pancréine') the same year."
+  },
+  "first_human_year": 1922,
+  "first_approval": {
+    "date": "1923",
+    "agency": "University of Toronto Insulin Committee licence (before drug-approval laws)",
+    "region": "US",
+    "brand": "Iletin (Eli Lilly)",
+    "indication": "Diabetes mellitus"
+  },
+  "developer": "University of Toronto (discovery); Eli Lilly and Company (first commercial production); Genentech and Eli Lilly (recombinant human insulin)",
+  "brands": [
+    {
+      "name": "Humulin",
+      "company": "Eli Lilly",
+      "route": "Subcutaneous injection; Humulin R also intravenous",
+      "use": "Diabetes mellitus (regular, NPH and premixed human insulin); the first recombinant human insulin",
+      "approved": "1982-10-28",
+      "agency": "FDA"
+    },
+    {
+      "name": "Novolin",
+      "company": "Novo Nordisk",
+      "route": "Subcutaneous injection; Novolin R also intravenous",
+      "use": "Diabetes mellitus (regular, NPH and premixed human insulin)",
+      "approved": "1991",
+      "agency": "FDA"
+    },
+    {
+      "name": "Actrapid",
+      "company": "Novo Nordisk",
+      "route": "Subcutaneous injection or intravenous infusion",
+      "use": "Diabetes mellitus (short-acting human insulin; EU-wide authorisation)",
+      "approved": "2002-10-07",
+      "agency": "EMA"
+    },
+    {
+      "name": "Afrezza",
+      "company": "MannKind",
+      "route": "Oral inhalation of dry powder at mealtimes",
+      "use": "Diabetes mellitus in adults and, since May 2026, children aged 6 and over",
+      "approved": "2014-06-27",
+      "agency": "FDA"
+    },
+    {
+      "name": "Myxredlin",
+      "company": "Baxter",
+      "route": "Intravenous infusion (ready-to-use bag)",
+      "use": "Diabetes mellitus; glycaemic control in hospital and acute-care settings",
+      "approved": "2019",
+      "agency": "FDA"
+    }
+  ],
+  "analogs": [
+    {
+      "name": "Insulin lispro (Humalog)",
+      "note": "Rapid-acting mealtime insulin: ProB28 and LysB29 are swapped, weakening hexamer formation. The first insulin analogue (EU April 1996, US June 1996); Eli Lilly."
+    },
+    {
+      "name": "Insulin aspart (NovoRapid, NovoLog)",
+      "note": "Rapid-acting: ProB28 replaced by aspartic acid. EU 1999, US 2000; Novo Nordisk."
+    },
+    {
+      "name": "Insulin glulisine (Apidra)",
+      "note": "Rapid-acting: AsnB3 replaced by lysine and LysB29 by glutamic acid. US 2004; Sanofi."
+    },
+    {
+      "name": "Insulin glargine (Lantus, Toujeo)",
+      "note": "Long-acting: AsnA21 replaced by glycine and two arginines added to the end of the B chain, so the clear acidic solution precipitates under the skin. US 2000; Sanofi. Semglee became the first interchangeable biosimilar insulin in 2021."
+    },
+    {
+      "name": "Insulin detemir (Levemir)",
+      "note": "Long-acting: ThrB30 removed and a C14 fatty acid (myristic acid) attached to LysB29 for albumin binding. EU 2004, US 2005; withdrawn from the US market in 2024; Novo Nordisk."
+    },
+    {
+      "name": "Insulin degludec (Tresiba)",
+      "note": "Ultra-long-acting: ThrB30 removed and a C16 fatty diacid linked through γ-glutamate to LysB29; forms soluble multi-hexamer chains under the skin. EU 2013, US 2015; Novo Nordisk."
+    },
+    {
+      "name": "Insulin icodec (Awiqli)",
+      "note": "Once-weekly: A14E, B16H and B25H substitutions plus a C20 fatty diacid side chain give strong albumin binding and a half-life of about 196 h. Approved in Canada, the EU, Japan and China in 2024 and for type 2 diabetes in the US in March 2026; Novo Nordisk."
+    },
+    {
+      "name": "Insulin efsitora alfa (Onswik)",
+      "note": "Once-weekly: a single-chain insulin variant fused through a peptide linker to a human IgG2 Fc domain. Approved for type 2 diabetes in the EU, Mexico and Japan and by the FDA in September 2026; Eli Lilly."
+    },
+    {
+      "name": "NPH (isophane) insulin",
+      "note": "Intermediate-acting crystalline suspension of insulin with protamine and zinc, developed at Nordisk in 1946 and marketed from 1950; used alone or premixed with regular insulin (e.g. 70/30)."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Insulin receptor",
+      "gene": "INSR",
+      "uniprot": "P06213",
+      "action": "Agonist (endogenous ligand)"
+    },
+    {
+      "name": "Insulin-like growth factor 1 receptor",
+      "gene": "IGF1R",
+      "uniprot": "P08069",
+      "action": "Weak agonist (much lower affinity than for the insulin receptor)"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "A chain",
+        "residues": [
+          "G",
+          "I",
+          "V",
+          "E",
+          "Q",
+          "C",
+          "C",
+          "T",
+          "S",
+          "I",
+          "C",
+          "S",
+          "L",
+          "Y",
+          "Q",
+          "L",
+          "E",
+          "N",
+          "Y",
+          "C",
+          "N"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      },
+      {
+        "name": "B chain",
+        "residues": [
+          "F",
+          "V",
+          "N",
+          "Q",
+          "H",
+          "L",
+          "C",
+          "G",
+          "S",
+          "H",
+          "L",
+          "V",
+          "E",
+          "A",
+          "L",
+          "Y",
+          "L",
+          "V",
+          "C",
+          "G",
+          "E",
+          "R",
+          "G",
+          "F",
+          "F",
+          "Y",
+          "T",
+          "P",
+          "K",
+          "T"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [
+      {
+        "from": "A6",
+        "to": "A11",
+        "type": "disulfide"
+      },
+      {
+        "from": "A7",
+        "to": "B7",
+        "type": "disulfide"
+      },
+      {
+        "from": "A20",
+        "to": "B19",
+        "type": "disulfide"
+      }
+    ],
+    "modifications": [],
+    "notation": "A chain: H-Gly-Ile-Val-Glu-Gln-Cys-Cys-Thr-Ser-Ile-Cys-Ser-Leu-Tyr-Gln-Leu-Glu-Asn-Tyr-Cys-Asn-OH; B chain: H-Phe-Val-Asn-Gln-His-Leu-Cys-Gly-Ser-His-Leu-Val-Glu-Ala-Leu-Tyr-Leu-Val-Cys-Gly-Glu-Arg-Gly-Phe-Phe-Tyr-Thr-Pro-Lys-Thr-OH; disulfides A6–A11, A7–B7, A20–B19",
+    "note": "Human insulin: a 21-residue A chain and a 30-residue B chain left after the C-peptide is cut out of proinsulin. Pig insulin differs only at B30 (Ala); beef insulin at A8 (Ala), A10 (Val) and B30 (Ala)."
+  },
+  "formula": "C257H383N65O77S6",
+  "mw": 5807.6,
+  "half_life": "Short: about 20 min after an intravenous dose; apparent ≈ 1.5 h after subcutaneous injection, where absorption is rate-limiting (regular human insulin)",
+  "half_life_hours": 1.5,
+  "routes": [
+    "Subcutaneous injection (syringe, pen or pump)",
+    "Intravenous infusion (hospital use)",
+    "Oral inhalation (Afrezza, at mealtimes)"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "1MSO",
+        "title": "T6 human insulin hexamer at 1.0 Å resolution",
+        "method": "X-ray",
+        "resolution": 1.0,
+        "year": 2003,
+        "peptide_chain": "A,B",
+        "note": "Zinc-coordinated hexamer; chains A and C are A chains, B and D are B chains (one A–B monomer highlighted)"
+      },
+      {
+        "id": "6PXV",
+        "title": "Full-length insulin receptor bound to four insulins",
+        "method": "Cryo-EM",
+        "resolution": 3.2,
+        "year": 2019,
+        "peptide_chain": "D",
+        "note": "Active 'T'-shaped receptor dimer with insulins at two types of binding site; each bound insulin (chains D–G) is deposited as a single polymer chain"
+      },
+      {
+        "id": "4INS",
+        "title": "2-zinc pig insulin crystals at 1.5 Å resolution",
+        "method": "X-ray",
+        "resolution": 1.5,
+        "year": 1988,
+        "peptide_chain": "A,B",
+        "note": "High-resolution refinement by Dorothy Hodgkin's group of the structure first solved in 1969; pig insulin differs from human only at B30 (chain B is a B chain)"
+      }
+    ],
+    "pubchem_cid": 118984375,
+    "notes": "Each monomer is compact: the A chain forms two short antiparallel helices and the B chain a central helix followed by an extended strand, held together by the three disulfides. Monomers pair into dimers, and three dimers assemble around two zinc ions into the hexamer used for storage in beta cells and in many formulations."
+  },
+  "ids": {
+    "pubchem_cid": 118984375,
+    "cas": "11061-68-0",
+    "drugbank": "DB00030",
+    "chembl": "CHEMBL1201631",
+    "unii": "1Y17CTI5SR",
+    "kegg": "D03230",
+    "chebi": "CHEBI:5931",
+    "atc": "A10AB01",
+    "uniprot": "P01308",
+    "inn": "insulin human"
+  },
+  "wiki": "Insulin",
+  "queries": {
+    "pubmed": "insulin[tiab]",
+    "ctgov": "insulin"
+  },
+  "uses": {
+    "approved": [
+      {
+        "use": "Type 1 diabetes",
+        "detail": "Life-long replacement of the missing hormone, usually as basal plus mealtime injections or by insulin pump; the original indication.",
+        "since": 1923,
+        "where": "Worldwide"
+      },
+      {
+        "use": "Type 2 diabetes",
+        "detail": "Added when other glucose-lowering medicines no longer achieve glycaemic control; once-weekly icodec and efsitora alfa are approved in the US for type 2 diabetes only.",
+        "where": "Worldwide"
+      },
+      {
+        "use": "Diabetes in pregnancy",
+        "detail": "Insulin is the preferred glucose-lowering treatment when diet is not enough in gestational diabetes or pre-existing diabetes during pregnancy.",
+        "where": "Worldwide"
+      },
+      {
+        "use": "Hyperglycaemic emergencies",
+        "detail": "Intravenous regular insulin, with fluids and potassium, is standard hospital treatment for diabetic ketoacidosis and the hyperosmolar hyperglycaemic state.",
+        "where": "Worldwide"
+      }
+    ],
+    "investigational": [
+      {
+        "use": "Once-weekly basal insulin in type 1 diabetes",
+        "stage": "Phase 3 — approved outside the US",
+        "detail": "In ONWARDS 6, weekly icodec matched daily degludec on HbA1c but roughly doubled the rate of clinically significant or severe hypoglycaemia; it is authorised for type 1 diabetes in the EU and Canada but not in the US."
+      },
+      {
+        "use": "Oral insulin for type 2 diabetes",
+        "stage": "Phase 3 — failed (2023)",
+        "detail": "Oramed's ORMD-0801 capsule missed its primary HbA1c endpoint in a 710-person trial, and the company ended its type 2 diabetes programme."
+      },
+      {
+        "use": "Prevention of type 1 diabetes with oral insulin",
+        "stage": "Randomised trial — negative (2017)",
+        "detail": "In TrialNet's study of autoantibody-positive relatives of people with type 1 diabetes, daily oral insulin did not delay or prevent the disease over 2.7 years."
+      },
+      {
+        "use": "Alzheimer's disease and mild cognitive impairment (intranasal insulin)",
+        "stage": "Randomised trial — negative (2020)",
+        "detail": "The SNIFF trial in 289 people found no cognitive or functional benefit from 12 months of intranasal insulin."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Hyperkalaemia",
+        "detail": "Intravenous insulin given with glucose is a standard emergency treatment that shifts potassium into cells.",
+        "evidence": "Well-established physiology and routine emergency practice, although outside most product labels."
+      },
+      {
+        "use": "Calcium-channel-blocker and beta-blocker poisoning",
+        "detail": "High-dose insulin with glucose (hyperinsulinaemia–euglycaemia therapy) is used to support heart function in severe overdoses.",
+        "evidence": "Based on animal studies, case series and expert consensus rather than randomised trials."
+      },
+      {
+        "use": "Insulin tolerance test",
+        "detail": "Deliberate insulin-induced hypoglycaemia is used in endocrinology to test growth-hormone and cortisol (ACTH) reserve.",
+        "evidence": "Long-standing diagnostic reference test, performed under close supervision because of the hypoglycaemia risk."
+      },
+      {
+        "use": "Bodybuilding and doping",
+        "detail": "Some bodybuilders and athletes misuse insulin for its anabolic effect, often with growth hormone and anabolic steroids.",
+        "evidence": "No evidence of safe benefit; case reports describe severe hypoglycaemia and coma. Prohibited at all times by WADA."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1889,
+      "title": "Pancreas linked to diabetes",
+      "detail": "Oskar Minkowski and Joseph von Mering showed that removing a dog's pancreas caused severe diabetes.",
+      "kind": "science"
+    },
+    {
+      "year": 1921,
+      "title": "Banting and Best isolate insulin",
+      "detail": "In J. J. R. Macleod's Toronto laboratory, Frederick Banting and Charles Best prepared pancreatic extracts that lowered blood sugar in diabetic dogs; James Collip joined to purify them.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1922,
+      "date": "1922-01-11",
+      "title": "First patient treated",
+      "detail": "Leonard Thompson, 14, received an extract at Toronto General Hospital; the first impure dose failed, but Collip's purified extract given on 23 January lowered his blood glucose and he lived another 13 years.",
+      "kind": "trial"
+    },
+    {
+      "year": 1923,
+      "title": "Insulin goes on sale",
+      "detail": "Eli Lilly began selling Iletin under licence from the University of Toronto, to which Banting, Best and Collip had assigned their patent for $1 each; in Denmark, August Krogh brought the method to the new Nordisk Insulinlaboratorium.",
+      "kind": "market"
+    },
+    {
+      "year": 1923,
+      "date": "1923-10-25",
+      "title": "Nobel Prize for the discovery",
+      "detail": "Banting and Macleod received the Nobel Prize in Physiology or Medicine; Banting shared his prize money with Best and Macleod shared his with Collip.",
+      "kind": "culture"
+    },
+    {
+      "year": 1936,
+      "date": "1936-01",
+      "title": "Protamine prolongs insulin action",
+      "detail": "Hans Christian Hagedorn's team at Nordisk reported protamine insulinate; Scott and Fisher in Toronto added zinc, giving protamine zinc insulin, the first long-acting preparation.",
+      "kind": "science"
+    },
+    {
+      "year": 1946,
+      "title": "NPH insulin developed",
+      "detail": "Nordisk crystallised insulin with protamine and zinc in isophane proportions; neutral protamine Hagedorn (NPH) insulin was marketed from 1950 and is still used.",
+      "kind": "science"
+    },
+    {
+      "year": 1955,
+      "date": "1955-08",
+      "title": "First protein sequence completed",
+      "detail": "Frederick Sanger's group published the disulfide bonds of insulin, completing the first full sequence of any protein; Sanger received the 1958 Nobel Prize in Chemistry.",
+      "kind": "science"
+    },
+    {
+      "year": 1965,
+      "date": "1965-09-17",
+      "title": "Fully active synthetic insulin",
+      "detail": "After partial syntheses by Helmut Zahn (Aachen) and Panayotis Katsoyannis (Pittsburgh) in 1963–64, a Chinese team in Shanghai obtained crystalline synthetic bovine insulin with full biological activity.",
+      "kind": "science"
+    },
+    {
+      "year": 1967,
+      "date": "1967-08",
+      "title": "Proinsulin discovered",
+      "detail": "Donald Steiner showed that insulin is made from a single-chain precursor, proinsulin, from which the connecting C-peptide is removed.",
+      "kind": "science"
+    },
+    {
+      "year": 1969,
+      "title": "Three-dimensional structure solved",
+      "detail": "Dorothy Hodgkin's Oxford team published the crystal structure of 2-zinc insulin in Nature, 34 years after she first photographed insulin crystals.",
+      "kind": "science"
+    },
+    {
+      "year": 1978,
+      "date": "1978-09-06",
+      "title": "Human insulin made in bacteria",
+      "detail": "Genentech and City of Hope announced the production of human insulin A and B chains in E. coli from chemically synthesised genes.",
+      "kind": "science"
+    },
+    {
+      "year": 1982,
+      "date": "1982-10-28",
+      "title": "Humulin: first recombinant medicine approved",
+      "detail": "The FDA approved Eli Lilly's recombinant human insulin after a review of about five months, the first medicine made by recombinant DNA technology to be approved in the US.",
+      "kind": "approval"
+    },
+    {
+      "year": 1985,
+      "title": "First insulin pen",
+      "detail": "Novo launched the NovoPen, a reusable cartridge-based injector that began to replace syringes and vials.",
+      "kind": "market"
+    },
+    {
+      "year": 1993,
+      "date": "1993-09-30",
+      "title": "DCCT shows tight control prevents complications",
+      "detail": "In 1,441 people with type 1 diabetes, intensive insulin therapy greatly reduced the onset and progression of retinopathy, kidney disease and neuropathy compared with conventional treatment.",
+      "kind": "trial"
+    },
+    {
+      "year": 1996,
+      "date": "1996-04-30",
+      "title": "First insulin analogue approved",
+      "detail": "Insulin lispro (Humalog), with two B-chain residues swapped for faster absorption, was authorised in the EU; the FDA followed on 14 June 1996.",
+      "kind": "approval"
+    },
+    {
+      "year": 2000,
+      "date": "2000-04-20",
+      "title": "First long-acting analogue",
+      "detail": "FDA approved insulin glargine (Lantus), which precipitates under the skin to provide once-daily basal insulin.",
+      "kind": "approval"
+    },
+    {
+      "year": 2006,
+      "date": "2006-01-27",
+      "title": "First inhaled insulin",
+      "detail": "FDA approved Pfizer's Exubera; poor sales led Pfizer to withdraw it in October 2007 with a $2.8 billion charge.",
+      "kind": "approval"
+    },
+    {
+      "year": 2014,
+      "date": "2014-06-27",
+      "title": "Afrezza approved",
+      "detail": "FDA approved MannKind's inhaled mealtime insulin powder for adults; the label was extended to children aged 6 and over on 29 May 2026.",
+      "kind": "approval"
+    },
+    {
+      "year": 2020,
+      "date": "2020-03-23",
+      "title": "Insulin becomes a biologic in the US",
+      "detail": "Under the BPCI Act, insulin approvals were deemed biologics licences, opening a biosimilar pathway; Semglee became the first interchangeable biosimilar insulin on 28 July 2021.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2023,
+      "date": "2023-01-01",
+      "title": "$35 Medicare insulin cap",
+      "detail": "The Inflation Reduction Act capped out-of-pocket insulin costs for Medicare Part D enrollees at $35 a month (Part B from July 2023).",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2023,
+      "date": "2023-03-01",
+      "title": "Manufacturers cut US insulin prices",
+      "detail": "Eli Lilly announced a 70% list-price cut and a $35 monthly cap on out-of-pocket costs; Novo Nordisk and Sanofi followed within two weeks with cuts of up to 75% and 78%.",
+      "kind": "market"
+    },
+    {
+      "year": 2024,
+      "date": "2024-03-12",
+      "title": "First weekly insulin approved",
+      "detail": "Health Canada approved Novo Nordisk's insulin icodec (Awiqli) in the same month as Switzerland; the EU followed on 17 May 2024, then Japan and, for type 2 diabetes, China.",
+      "kind": "approval"
+    },
+    {
+      "year": 2024,
+      "date": "2024-07-10",
+      "title": "FDA issues complete response letter for icodec",
+      "detail": "The FDA requested more information on the manufacturing process and the type 1 diabetes indication, after an advisory committee found the type 1 data insufficient.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2026,
+      "date": "2026-03-26",
+      "title": "Awiqli approved in the US",
+      "detail": "FDA approved insulin icodec-abae for adults with type 2 diabetes, the first once-weekly basal insulin in the US.",
+      "kind": "approval"
+    },
+    {
+      "year": 2026,
+      "date": "2026-09-24",
+      "title": "Weekly efsitora alfa approved",
+      "detail": "FDA approved Eli Lilly's Onswik (insulin efsitora alfa-gobe), an insulin–Fc fusion protein, for adults with type 2 diabetes, its fourth approval after the EU, Mexico and Japan.",
+      "kind": "approval"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "approved",
+      "detail": "Recombinant human insulin since 1982 (animal insulin from 1923); regulated as biologics since March 2020, with interchangeable biosimilars from 2021. Weekly icodec (March 2026) and efsitora alfa (September 2026) are approved for type 2 diabetes only."
+    },
+    {
+      "region": "EU",
+      "status": "approved",
+      "detail": "Human insulins (e.g. Actrapid, EU-wide 2002) and all major analogues; weekly icodec authorised in May 2024 for adults with type 1 or type 2 diabetes, and weekly efsitora alfa in August 2026 for type 2 diabetes."
+    },
+    {
+      "region": "Canada",
+      "status": "approved",
+      "detail": "Where insulin was discovered. Health Canada approved weekly icodec on 12 March 2024, and Canada was the first country to launch it (June 2024)."
+    },
+    {
+      "region": "Japan",
+      "status": "approved",
+      "detail": "Human insulin and analogues, including weekly icodec (2024) and weekly efsitora alfa."
+    },
+    {
+      "region": "China",
+      "status": "approved",
+      "detail": "Human insulin and analogues; weekly icodec approved for type 2 diabetes in June 2024."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "Insulins and insulin-mimetics are prohibited at all times (class S4, hormone and metabolic modulators); athletes with diabetes use therapeutic use exemptions."
+    }
+  ],
+  "pk": {
+    "half_life": "Intravenous regular insulin: mean ≈ 20 min at 0.1 unit/kg (≈ 1 h at 0.2 unit/kg). Subcutaneous: apparent ≈ 1.5 h (range 40 min–7 h)",
+    "tmax": "Peak serum levels 36–150 min after subcutaneous regular insulin; glucose lowering starts after ≈ 30 min, peaks at ≈ 3 h and lasts ≈ 8 h. Inhaled insulin peaks 10–20 min after inhalation",
+    "bioavailability": "48–89% after subcutaneous injection of regular human insulin",
+    "metabolism": "Receptor-mediated uptake and degradation in liver, kidney, muscle and fat; the liver is the main site of clearance",
+    "excretion": "Cleared mainly by degradation; the kidney filters and breaks down circulating insulin"
+  },
+  "dosing": [
+    {
+      "product": "Regular human insulin (e.g. Humulin R, Novolin R, Actrapid)",
+      "regimen": "Dose individualised by glucose monitoring; injected subcutaneously about 30 minutes before a meal, usually with a basal insulin. Intravenous infusion (0.1–1 unit/mL) only under medical supervision with glucose and potassium monitoring."
+    },
+    {
+      "product": "NPH (isophane) human insulin",
+      "regimen": "Individualised doses subcutaneously, typically once or twice daily as basal insulin, alone or premixed with regular insulin (e.g. 70/30)."
+    },
+    {
+      "product": "Afrezza (inhaled)",
+      "regimen": "Inhaled at the beginning of each meal from 4-, 8- or 12-unit cartridges; the starting dose is converted from the previous mealtime insulin, and spirometry is required before starting."
+    },
+    {
+      "product": "Awiqli (insulin icodec)",
+      "regimen": "Injected subcutaneously once weekly on the same day each week; dose individualised."
+    }
+  ],
+  "dosing_note": "Insulin doses are always individualised. Regimens are summarised for reference only; follow the prescribing information and a clinician's advice.",
+  "safety": {
+    "common": [
+      "Hypoglycaemia",
+      "Weight gain",
+      "Injection-site reactions",
+      "Lipodystrophy at injection sites",
+      "Oedema",
+      "Itching and rash",
+      "Cough and throat irritation (inhaled insulin)"
+    ],
+    "serious": [
+      "Severe hypoglycaemia (confusion, seizures, loss of consciousness, death)",
+      "Hypokalaemia",
+      "Severe allergic reactions including anaphylaxis",
+      "Fluid retention and heart failure when combined with thiazolidinediones",
+      "Localised cutaneous amyloidosis at repeatedly used injection sites",
+      "Acute bronchospasm with inhaled insulin in people with chronic lung disease"
+    ],
+    "warnings": [
+      "US boxed warning (Afrezza): risk of acute bronchospasm; contraindicated in asthma and COPD",
+      "Pens, cartridges and needles must never be shared (blood-borne infection risk)",
+      "Medication errors from confusing insulin types and concentrations"
+    ],
+    "notes": "Hypoglycaemia is the main hazard of every insulin; changes in insulin type, dose, timing or injection site call for closer glucose monitoring. Weekly icodec roughly doubled rates of clinically significant hypoglycaemia in type 1 diabetes (ONWARDS 6)."
+  },
+  "market": {
+    "note": "Novo Nordisk, Eli Lilly and Sanofi dominate supply; WHO reported in 2021 that three companies control more than 90% of the global insulin market. Long-acting analogues joined human insulin on the WHO Model List of Essential Medicines in 2021.",
+    "figures": [
+      {
+        "year": 2024,
+        "label": "Novo Nordisk insulin sales",
+        "value": "DKK 55.4 bn",
+        "source": "Novo Nordisk financial report for 2025 (comparative figure)"
+      },
+      {
+        "year": 2025,
+        "label": "Novo Nordisk insulin sales",
+        "value": "DKK 53.1 bn",
+        "source": "Novo Nordisk financial report for 2025"
+      },
+      {
+        "year": 2025,
+        "label": "Novo Nordisk share of US insulin volume",
+        "value": "28.9%",
+        "source": "Novo Nordisk financial report for 2025"
+      }
+    ]
+  },
+  "facts": [
+    "Insulin was the first protein to be fully sequenced (Sanger, 1955) and the first medicine made by recombinant DNA technology to be approved in the US (Humulin, 1982).",
+    "Banting, Best and Collip assigned their insulin patent to the University of Toronto for $1 each.",
+    "Only about two years separated the first dog experiments (1921) and the Nobel Prize (1923), one of the fastest awards in the prize's history.",
+    "Dorothy Hodgkin first photographed insulin crystals in 1935 and solved the structure 34 years later, in 1969.",
+    "Pig insulin differs from human insulin at a single position (B30) and beef insulin at three, which is why animal insulins worked in people for six decades."
+  ],
+  "related": [
+    "c-peptide",
+    "glucagon",
+    "pramlintide",
+    "semaglutide",
+    "tirzepatide",
+    "liraglutide",
+    "exenatide",
+    "cagrilintide"
+  ],
+  "references": [
+    {
+      "title": "Pancreatic extracts in the treatment of diabetes mellitus",
+      "authors": "Banting FG, Best CH, Collip JB, Campbell WR, Fletcher AA",
+      "journal": "Can Med Assoc J",
+      "year": 1922,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20314060/"
+    },
+    {
+      "title": "The disulphide bonds of insulin",
+      "authors": "Ryle AP, Sanger F, Smith LF, Kitai R",
+      "journal": "Biochem J",
+      "year": 1955,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/13249947/"
+    },
+    {
+      "title": "Insulin biosynthesis: evidence for a precursor",
+      "authors": "Steiner DF, Cunningham D, Spigelman L, Aten B",
+      "journal": "Science",
+      "year": 1967,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/4291105/"
+    },
+    {
+      "title": "Structure of rhombohedral 2 zinc insulin crystals",
+      "authors": "Adams MJ, Blundell TL, Dodson EJ, et al. (incl. Hodgkin DC)",
+      "journal": "Nature",
+      "year": 1969,
+      "url": "https://doi.org/10.1038/224491a0"
+    },
+    {
+      "title": "Expression in Escherichia coli of chemically synthesized genes for human insulin",
+      "authors": "Goeddel DV, Kleid DG, Bolivar F, et al.",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": 1979,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/85300/"
+    },
+    {
+      "title": "The effect of intensive treatment of diabetes on the development and progression of long-term complications in insulin-dependent diabetes mellitus (DCCT)",
+      "authors": "Diabetes Control and Complications Trial Research Group",
+      "journal": "N Engl J Med",
+      "year": 1993,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8366922/"
+    },
+    {
+      "title": "[Lys(B28), Pro(B29)]-human insulin. A rapidly absorbed analogue of human insulin",
+      "authors": "Howey DC, Bowsher RR, Brunelle RL, Woodworth JR",
+      "journal": "Diabetes",
+      "year": 1994,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8314011/"
+    },
+    {
+      "title": "Activation mechanism of the insulin receptor revealed by cryo-EM structure of the fully liganded receptor-ligand complex",
+      "authors": "Uchikawa E, Choi E, Shang G, et al.",
+      "journal": "eLife",
+      "year": 2019,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31436533/"
+    },
+    {
+      "title": "Molecular and pharmacological characterization of insulin icodec: a new basal insulin analog designed for once-weekly dosing",
+      "authors": "Nishimura E, Pridal L, Glendorf T, et al.",
+      "journal": "BMJ Open Diabetes Res Care",
+      "year": 2021,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34413118/"
+    },
+    {
+      "title": "Weekly icodec versus daily glargine U100 in type 2 diabetes without previous insulin (ONWARDS 1)",
+      "authors": "Rosenstock J, Bain SC, Gowda A, et al.",
+      "journal": "N Engl J Med",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37356066/"
+    }
+  ]
+}

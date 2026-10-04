@@ -1,0 +1,379 @@
+{
+  "slug": "selank",
+  "name": "Selank",
+  "aliases": [
+    "TP-7",
+    "TKPRPGP",
+    "Thr-Lys-Pro-Arg-Pro-Gly-Pro",
+    "Селанк"
+  ],
+  "category": "neuro",
+  "drug_class": "Peptide anxiolytic",
+  "subclass": "Tuftsin analogue extended with the C-terminal tripeptide Pro-Gly-Pro",
+  "status": "regional",
+  "status_note": "Registered in Russia in 2009 as an intranasal anxiolytic and available there without prescription since 2017; not approved in the US, EU or UK.",
+  "evidence": 2,
+  "evidence_note": "Russian trials in generalised anxiety disorder and neurasthenia, including comparisons with the benzodiazepine phenazepam, report anxiolytic effect, but they are small, single-country, mostly published in Russian, and there are no independent replications or ClinicalTrials.gov entries.",
+  "tagline": "A Russian nasal anxiolytic built from the immune peptide tuftsin",
+  "summary": "Selank is a seven-amino-acid peptide made by adding the stabilising tail Pro-Gly-Pro to tuftsin, a natural immune-stimulating tetrapeptide from the antibody hinge region. It was developed at the Institute of Molecular Genetics with the Zakusov Institute of Pharmacology and registered in Russia in 2009 as a nasal anxiolytic. Russian studies report an anti-anxiety effect comparable to benzodiazepines without sedation or dependence; no independent trials have been published.",
+  "overview": [
+    "Tuftsin is a natural tetrapeptide, Thr-Lys-Pro-Arg, released from the heavy chain of immunoglobulin G and known since the 1970s to stimulate phagocytes. Like other short peptides it is destroyed within minutes. The Institute of Molecular Genetics of the Russian Academy of Sciences applied the same trick it had used for Semax — appending the proline-rich tripeptide Pro-Gly-Pro, which peptidases cleave poorly — and obtained a heptapeptide with a far longer lifetime, designated TP-7 and then Selank.",
+    "Preclinical and clinical development was shared with the Zakusov Institute of Pharmacology of the Russian Academy of Medical Sciences. The drug passed Russian preclinical and clinical testing and was registered for medical use in the Russian Federation in 2009 as a 0.15% intranasal solution. It began as a prescription medicine; a Ministry of Health decision of 2 August 2017 moved it to over-the-counter supply, and it is manufactured by the innovation and production centre Peptogen.",
+    "The Russian indications are anxiety, panic, neurasthenia and asthenia, stress disorders, mood instability, sleep disturbance, indecisiveness and adjustment disorders. Russian trials compared Selank with the benzodiazepine phenazepam and with medazepam in generalised anxiety disorder and neurasthenia, reporting comparable anxiolytic effect but without sedation, muscle relaxation, cognitive blunting, withdrawal or dependence — the properties that make benzodiazepines problematic. The drug is also described as safe to combine with alcohol and compatible with driving, claims that would themselves require careful independent verification.",
+    "Its biology is mixed. As a tuftsin analogue Selank has immunomodulatory effects — it alters interleukin-6 expression and the balance of T-helper cytokines, and Russian studies report antiviral activity. In the central nervous system it raises hippocampal BDNF, shifts serotonin metabolism and monoamine concentrations in rats, and inhibits enkephalin-degrading enzymes, which is the mechanism most often proposed for its anxiolytic effect. Outside Russia it circulates as a grey-market nootropic and anxiolytic, sold as nasal spray or powder, with no Western regulatory review behind it."
+  ],
+  "mechanism": [
+    "The design is the same as Semax's: the Pro-Gly-Pro tail protects the active tuftsin core from peptidases, turning a peptide with a lifetime of minutes into something that can be dosed as a nasal solution. Intranasal delivery then avoids gastrointestinal degradation and gives fast access to the brain; Russian pharmacokinetic work reports appearance in plasma within about half a minute and effects lasting most of a day.",
+    "The most cited central mechanism is inhibition of enkephalin-degrading enzymes, which would prolong the action of endogenous opioid peptides; Selank also affects carboxypeptidase activity in rat nervous tissue. In parallel it raises brain-derived neurotrophic factor in the hippocampus and alters serotonergic and monoaminergic transmission, which is offered as the basis for its reported antidepressant-like and anti-anhedonic effects in animals.",
+    "Because it is built on tuftsin, Selank also acts on the immune system: it modulates interleukin-6 and the Th1/Th2 cytokine balance, and Russian studies report effects on interferon status and on experimental influenza infection. No single receptor has been identified as its target, and its two main metabolites — Thr-Lys-Pro and Gly-Pro — are themselves reported to carry much of its activity."
+  ],
+  "origin": "Synthetic heptapeptide: the natural immunomodulatory tetrapeptide tuftsin (Thr-Lys-Pro-Arg, from the IgG heavy chain) extended at the C-terminus with Pro-Gly-Pro",
+  "discovery": {
+    "year": 1990,
+    "by": "Nikolai F. Myasoedov and colleagues at the Institute of Molecular Genetics, with the Zakusov Institute of Pharmacology",
+    "where": "Moscow, Russia",
+    "note": "Designed as a tuftsin analogue stabilised by the same Pro-Gly-Pro tail used in Semax and reported under the code TP-7. The exact year of first synthesis is not documented in the international literature: its CAS registry number (129954-34-3) dates from around 1990, and the peptide first appears in PubMed-indexed work in 2001."
+  },
+  "first_human_year": null,
+  "first_approval": {
+    "date": "2009",
+    "agency": "Ministry of Health of the Russian Federation",
+    "region": "Russia",
+    "brand": "Selank 0.15%",
+    "indication": "Anxiety and adjustment disorders"
+  },
+  "developer": "Institute of Molecular Genetics of the Russian Academy of Sciences with the V. V. Zakusov Institute of Pharmacology; manufactured by Peptogen",
+  "brands": [
+    {
+      "name": "Selank 0.15%",
+      "company": "Peptogen (IMG RAS)",
+      "route": "Intranasal solution",
+      "use": "Anxiety, panic, neurasthenia and asthenia, stress and adjustment disorders (Russian label)",
+      "approved": "2009",
+      "agency": "Ministry of Health of the Russian Federation"
+    }
+  ],
+  "analogs": [
+    {
+      "name": "Tuftsin (Thr-Lys-Pro-Arg)",
+      "note": "The natural parent tetrapeptide, released from the IgG heavy chain; stimulates phagocytosis but is destroyed within minutes."
+    },
+    {
+      "name": "Semax",
+      "note": "The sister drug from the same institute, built on an ACTH fragment with the same Pro-Gly-Pro stabilising tail and given by the same nasal route."
+    },
+    {
+      "name": "Thr-Lys-Pro and Gly-Pro",
+      "note": "The principal metabolites of Selank, reported in Russian work to carry much of the parent peptide's activity."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Enkephalin-degrading enzymes",
+      "gene": "",
+      "uniprot": "",
+      "action": "Inhibition, prolonging the action of endogenous enkephalins — the mechanism most often proposed for the anxiolytic effect"
+    },
+    {
+      "name": "Brain-derived neurotrophic factor",
+      "gene": "BDNF",
+      "uniprot": "P23560",
+      "action": "Indirect: rapid increase in hippocampal BDNF expression in rats"
+    },
+    {
+      "name": "Interleukin-6",
+      "gene": "IL6",
+      "uniprot": "P05231",
+      "action": "Modulation of expression, reflecting the immunomodulatory heritage of tuftsin"
+    },
+    {
+      "name": "Neuropilin-1",
+      "gene": "NRP1",
+      "uniprot": "O14786",
+      "action": "Binding site for the tuftsin core, crystallised with the parent tetrapeptide; not demonstrated for Selank itself"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "T",
+          "K",
+          "P",
+          "R",
+          "P",
+          "G",
+          "P"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [],
+    "notation": "H-Thr-Lys-Pro-Arg-Pro-Gly-Pro-OH",
+    "note": "All seven residues are standard L-amino acids with no chemical modification; residues 1–4 are tuftsin and residues 5–7 are the Pro-Gly-Pro tail that provides peptidase resistance. Four of the seven residues are proline or glycine, which is why the peptide is both flexible and hard to cleave. The marketed product is the diacetate salt."
+  },
+  "formula": "C33H57N11O9",
+  "mw": 751.9,
+  "half_life": "Not reliably established; Russian sources describe an effect lasting 20–24 hours after a nasal dose",
+  "half_life_hours": null,
+  "routes": [
+    "Intranasal solution"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 11765600,
+    "notes": "No experimental structure of Selank has been deposited in the PDB, so the model shown here is predicted. Its tuftsin core has been crystallised bound to neuropilin-1 (PDB 2ORZ, chain B), which is the closest structural information available, but that entry contains the four-residue parent peptide rather than Selank."
+  },
+  "ids": {
+    "pubchem_cid": 11765600,
+    "cas": "129954-34-3",
+    "unii": "TS9JR8EP1G"
+  },
+  "wiki": "Selank",
+  "queries": {
+    "pubmed": "selank[tiab] OR \"TP-7\"[tiab] AND tuftsin[tiab]",
+    "ctgov": ""
+  },
+  "uses": {
+    "approved": [
+      {
+        "use": "Generalised anxiety disorder and adjustment disorders",
+        "detail": "The core Russian indication: anxiety, worry, panic episodes, mood instability and difficulty making decisions, treated with the 0.15% nasal solution.",
+        "since": 2009,
+        "where": "Russia"
+      },
+      {
+        "use": "Neurasthenia and asthenic states",
+        "detail": "Labelled for asthenia and neurasthenia, including stress-related presentations, a diagnostic category used far more in Russian than in Western psychiatry.",
+        "since": 2009,
+        "where": "Russia"
+      },
+      {
+        "use": "Stress-related sleep disturbance",
+        "detail": "Included in the label alongside anxiety, on the basis of Russian clinical experience rather than dedicated sleep trials.",
+        "since": 2009,
+        "where": "Russia"
+      }
+    ],
+    "investigational": [
+      {
+        "use": "Depression and anhedonia",
+        "stage": "Preclinical",
+        "detail": "Antidepressant-like effects are reported in rodent models; no human antidepressant trial has been published."
+      },
+      {
+        "use": "Immunomodulation and antiviral effects",
+        "stage": "Preclinical and small clinical studies",
+        "detail": "Russian work reports effects on interferon status, cytokine balance and experimental influenza infection, and immunomodulatory changes in patients with anxiety-asthenic disorders."
+      },
+      {
+        "use": "Cognitive effects",
+        "stage": "Preclinical",
+        "detail": "Reported to compensate for memory deficits after neurotoxic damage to the rat noradrenergic system."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Grey-market anxiolytic and nootropic use",
+        "detail": "Sold online as nasal spray or lyophilised powder and used for anxiety, social confidence, focus and stress, often alongside Semax.",
+        "evidence": "No regulator outside Russia has assessed it and no independent randomised trial exists. Vendor products are not the registered medicine and their concentration, identity and sterility are unverified."
+      },
+      {
+        "use": "Benzodiazepine substitution",
+        "detail": "Promoted in online communities as a non-addictive alternative to benzodiazepines, citing the Russian comparisons with phenazepam.",
+        "evidence": "The comparison trials are small, Russian-language and not independently replicated; no withdrawal or dependence study has been run outside Russia."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1970,
+      "title": "Tuftsin described",
+      "detail": "Victor Najjar and Kunio Nishioka reported in Nature that the tetrapeptide Thr-Lys-Pro-Arg, cleaved from the heavy chain of immunoglobulin G, stimulates phagocytosis; it was chemically synthesised in 1973 and shown to be very short-lived.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1990,
+      "title": "Selank designed as a stabilised tuftsin",
+      "detail": "The Institute of Molecular Genetics added the Pro-Gly-Pro tail already used in Semax to the tuftsin core, producing the heptapeptide TP-7; the compound was registered with CAS around this time, though the precise year of first synthesis is not documented outside Russia.",
+      "kind": "discovery"
+    },
+    {
+      "year": 2001,
+      "date": "2001-04",
+      "title": "Enkephalinase inhibition proposed as the mechanism",
+      "detail": "Zozulya and colleagues reported that Selank inhibits enkephalin-degrading enzymes and suggested this as the basis of its anxiolytic activity.",
+      "kind": "science"
+    },
+    {
+      "year": 2008,
+      "title": "Trials in generalised anxiety disorder and neurasthenia",
+      "detail": "Zozulya, Neznamov and colleagues reported efficacy in generalised anxiety disorder and neurasthenia and explored the mechanisms involved.",
+      "kind": "trial"
+    },
+    {
+      "year": 2008,
+      "title": "Immunomodulatory effects in patients",
+      "detail": "Uchakina and colleagues reported changes in immune parameters in patients with anxiety-asthenic disorders, connecting the drug back to its tuftsin origin.",
+      "kind": "trial"
+    },
+    {
+      "year": 2009,
+      "title": "Registered in Russia",
+      "detail": "Selank 0.15% completed Russian preclinical and clinical testing and was registered and permitted for medical use in the Russian Federation, initially as a prescription medicine.",
+      "kind": "approval"
+    },
+    {
+      "year": 2009,
+      "title": "Antiviral activity reported",
+      "detail": "Ershov, Myasoedov and colleagues published on Selank's activity in experimental influenza infection in Voprosy Virusologii.",
+      "kind": "science"
+    },
+    {
+      "year": 2014,
+      "title": "Compared with a benzodiazepine",
+      "detail": "Medvedev and colleagues compared Selank with phenazepam in anxiety disorders, reporting comparable anxiolytic effect with better tolerability.",
+      "kind": "trial"
+    },
+    {
+      "year": 2015,
+      "title": "Treatment optimisation study",
+      "detail": "A follow-up paper examined how best to use Selank in anxiety disorders, including combination with other agents.",
+      "kind": "trial"
+    },
+    {
+      "year": 2017,
+      "date": "2017-08-02",
+      "title": "Moved to over-the-counter supply",
+      "detail": "A decision of the Russian Ministry of Health allowed Selank 0.15% to be dispensed without a prescription, citing its safety profile.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2026,
+      "title": "Named among grey-market peptides",
+      "detail": "International reviews of therapeutic peptides listed Selank among compounds sold outside approved use in Western markets.",
+      "kind": "culture"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "Russia",
+      "status": "approved",
+      "detail": "Registered in 2009 as a 0.15% intranasal solution for anxiety and adjustment disorders; available without prescription since a Ministry of Health decision of 2 August 2017."
+    },
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Not an FDA-approved drug and not an approved dietary-supplement ingredient; sold online labelled for research use."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "No marketing authorisation in any EU member state."
+    },
+    {
+      "region": "UK",
+      "status": "not-approved",
+      "detail": "No MHRA authorisation."
+    },
+    {
+      "region": "WADA",
+      "status": "permitted",
+      "detail": "Selank is not named on the Prohibited List, and because it holds a Russian marketing authorisation it is not caught by the S0 non-approved-substances category. It has no recognised performance-enhancing use, and athletes remain responsible for what an unregulated product actually contains."
+    }
+  ],
+  "pk": {
+    "half_life": "Not reliably established in the international literature; Russian sources describe a 20–24 hour duration of action",
+    "tmax": "Russian pharmacokinetic work reports detection in plasma within about 30 seconds of nasal administration",
+    "bioavailability": "Intranasal absorption reported as high in Russian studies; not independently verified",
+    "metabolism": "Cleaved by dipeptidyl carboxypeptidases to Thr-Lys-Pro, Arg-Pro and Gly-Pro, then to free amino acids; the fragments are themselves reported to be active",
+    "excretion": "Breakdown products enter normal amino-acid metabolism"
+  },
+  "dosing": [
+    {
+      "product": "Selank 0.15% nasal solution (Russia)",
+      "regimen": "Given as nasal drops in divided daily doses over a course of one to two weeks, with the exact number of drops and course length set by the Russian label and the indication. Follow the local prescribing information."
+    }
+  ],
+  "dosing_note": "The labelled regimen applies only in Russia, where the product is registered. Peptide bought from online vendors elsewhere is not the licensed medicine; its concentration, identity and sterility are unverified, and no dose has been established for use by healthy people.",
+  "safety": {
+    "common": [
+      "Mild irritation of the nasal mucosa"
+    ],
+    "serious": [],
+    "warnings": [
+      "Safety evidence comes almost entirely from Russian studies and post-marketing use; there is no independent pharmacovigilance",
+      "The Russian claim that Selank can be combined safely with alcohol has not been verified outside Russia and should not be relied on",
+      "No long-term safety data exist for continuous use as a nootropic or anxiolytic by healthy people"
+    ],
+    "notes": "The case for Selank rests on an absence of the classic benzodiazepine problems — sedation, cognitive impairment, tolerance, withdrawal — rather than on demonstrated superiority. Because it was moved to over-the-counter status in Russia on safety grounds, there is also less structured reporting of adverse effects than for a prescription product."
+  },
+  "market": null,
+  "facts": [
+    "Its active core is tuftsin, a piece of an antibody: the tetrapeptide is cut out of the heavy chain of immunoglobulin G.",
+    "Four of Selank's seven residues are proline or glycine, which is what makes it resistant to peptidases.",
+    "Semax and Selank were built in the same laboratory using the same trick — bolting Pro-Gly-Pro onto a short natural peptide — and are both given as nose drops.",
+    "Since 2017 Selank has been sold over the counter in Russian pharmacies, an unusual status for a prescription-grade anxiolytic."
+  ],
+  "related": [
+    "semax",
+    "dsip",
+    "epitalon",
+    "thymosin-alpha-1"
+  ],
+  "references": [
+    {
+      "title": "\"Tuftsin\": a natural phagocytosis stimulating peptide",
+      "authors": "Najjar VA, Nishioka K",
+      "journal": "Nature",
+      "year": 1970,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/4097539/"
+    },
+    {
+      "title": "The inhibitory effect of Selank on enkephalin-degrading enzymes as a possible mechanism of its anxiolytic activity",
+      "authors": "Zozulya AA, Kost NV, Sokolov OY, et al.",
+      "journal": "Bull Exp Biol Med",
+      "year": 2001,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11550013/"
+    },
+    {
+      "title": "Efficacy and possible mechanisms of action of a new peptide anxiolytic selank in the therapy of generalized anxiety disorders and neurasthenia",
+      "authors": "Zozulia AA, Neznamov GG, Siuniakov TS, et al.",
+      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova",
+      "year": 2008,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18454096/"
+    },
+    {
+      "title": "Immunomodulatory effects of selank in patients with anxiety-asthenic disorders",
+      "authors": "Uchakina ON, Uchakin PN, Miasoedov NF, et al.",
+      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova",
+      "year": 2008,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18577961/"
+    },
+    {
+      "title": "Compensatory effect of selank on the mnestic functions disturbed by neurotoxic damage of the noradrenergic system of the rat brain",
+      "authors": "Kozlovskiĭ II, Belozertseva IV, et al.",
+      "journal": "Eksp Klin Farmakol",
+      "year": 2008,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18488898/"
+    },
+    {
+      "title": "A comparison of the anxiolytic effect and tolerability of selank and phenazepam in the treatment of anxiety disorders",
+      "authors": "Medvedev VE, Tereshchenko ON, Kost NV, et al.",
+      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova",
+      "year": 2014,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25176261/"
+    },
+    {
+      "title": "Optimization of the treatment of anxiety disorders with selank",
+      "authors": "Medvedev VE, Tereshchenko ON, Kost NV, Ter-Israelyan AY",
+      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova",
+      "year": 2015,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26356395/"
+    }
+  ]
+}

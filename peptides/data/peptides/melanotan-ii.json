@@ -1,0 +1,130 @@
+{
+  "slug": "melanotan-ii",
+  "name": "Melanotan II",
+  "aliases": ["MT-II", "MTII", "Melanotan-II", "Melanotan 2"],
+  "category": "melanocortin",
+  "drug_class": "Melanocortin receptor agonist",
+  "subclass": "Cyclic lactam α-MSH(4–10) analogue; non-selective MC1R, MC3R, MC4R and MC5R agonist",
+  "status": "research",
+  "status_note": "Never approved anywhere; tested only in small academic studies in the 1990s, it is sold illegally online as an unlicensed tanning and libido product.",
+  "evidence": 2,
+  "evidence_note": "Human data are limited to a three-man pilot phase 1 study, small placebo-controlled crossover studies in men with erectile dysfunction and case reports of harm from unregulated use.",
+  "tagline": "Unlicensed cyclic α-MSH analogue sold online as a 'tanning injection'",
+  "summary": "Melanotan II is a small, ring-shaped synthetic version of α-melanocyte-stimulating hormone made at the University of Arizona in the late 1980s. It darkens the skin without sun exposure and, unexpectedly, triggers erections, a finding that led to the approved drug bremelanotide. It has never been approved as a medicine, but is widely sold online as an injectable or nasal 'tanning' product despite repeated warnings from regulators.",
+  "overview": [
+    "Melanotan II (MT-II) came out of a University of Arizona programme, led by chemist Victor Hruby and physiologist Mac Hadley, to make long-lasting analogues of α-melanocyte-stimulating hormone (α-MSH) that could tan the skin without ultraviolet light and so perhaps lower the risk of skin cancer. Their first analogue, the linear [Nle4, D-Phe7]-α-MSH (melanotan I, now the approved drug afamelanotide), was followed in 1989 by a series of cyclic fragments in which a lactam bridge between aspartate and lysine constrains the core His-D-Phe-Arg-Trp sequence within a ring; the seven-residue version became melanotan II.",
+    "In a 1996 pilot study in three men, MT-II darkened the skin after only five low doses but also caused nausea, yawning and stretching, and spontaneous erections lasting one to five hours. The Arizona group then tested it for erectile dysfunction: in a 1998 placebo-controlled crossover study, 8 of 10 men with psychogenic erectile dysfunction developed erections after injection. Hadley later described the sexual effects as an accidental discovery made during tanning research. The sexual-dysfunction technology was licensed to Palatin Technologies, which developed the closely related bremelanotide (PT-141), approved in 2019 as Vyleesi.",
+    "Since the mid-2000s MT-II has been sold on the internet, in gyms and in beauty salons as powder for injection or as nasal sprays, often marketed as 'tanning injections' and nicknamed the 'Barbie drug' in the media. No product is licensed anywhere, and quality is unreliable: in 2026 Australia's Therapeutic Goods Administration (TGA) found nasal sprays labelled as containing 30 mg held between 22 and 54 mg. The US FDA (2007), the UK MHRA (2008 and 2013), the Irish Medicines Board (2009) and the TGA have all warned consumers not to use it.",
+    "Case reports describe new or changing moles, melanoma, priapism, rhabdomyolysis, renal infarction and posterior reversible encephalopathy syndrome in users. Whether MT-II itself causes melanoma is unproven, because many users also sunbathe or use sunbeds heavily, but reviews stress that it is taken as part of a risky 'tanning culture' and that products of unknown content and sterility add further hazards."
+  ],
+  "mechanism": [
+    "Melanotan II is a potent but unselective agonist of the melanocortin receptors MC1R, MC3R, MC4R and MC5R. At MC1R on melanocytes it raises cAMP and shifts pigment production towards dark eumelanin, producing a tan without ultraviolet exposure and darkening existing moles and freckles.",
+    "Its sexual effects arise in the central nervous system rather than in penile blood vessels, which distinguishes it from PDE5 inhibitors such as sildenafil; they are thought to be mediated mainly by MC4R (and possibly MC3R) in the brain. Reduced appetite, nausea, flushing, yawning and stretching were also reported in trials, reflecting its broad melanocortin activity."
+  ],
+  "origin": "Synthetic cyclic analogue of the 4–10 fragment of α-melanocyte-stimulating hormone (α-MSH), a peptide cleaved from pro-opiomelanocortin (POMC)",
+  "discovery": {"year": 1989, "by": "Fahad Al-Obeidi, Ana Maria Castrucci, Mac Hadley and Victor Hruby", "where": "University of Arizona, Tucson, USA", "note": "Described in J Med Chem (December 1989) as Ac-[Nle4, Asp5, D-Phe7, Lys10]-α-MSH(4–10)-NH2, one of a series of lactam-bridged α-MSH fragments designed with the help of molecular-dynamics simulations; it was about 90 times as potent as α-MSH in a lizard-skin assay."},
+  "first_human_year": 1996,
+  "first_approval": null,
+  "developer": "University of Arizona (Hruby and Hadley laboratories); sexual-dysfunction rights licensed to Palatin Technologies in 1998",
+  "brands": [],
+  "targets": [
+    {"name": "Melanocortin 1 receptor", "gene": "MC1R", "uniprot": "Q01726", "action": "Agonist (skin pigmentation)"},
+    {"name": "Melanocortin 3 receptor", "gene": "MC3R", "uniprot": "P41968", "action": "Agonist"},
+    {"name": "Melanocortin 4 receptor", "gene": "MC4R", "uniprot": "P32245", "action": "Agonist (thought to mediate sexual and appetite effects)"},
+    {"name": "Melanocortin 5 receptor", "gene": "MC5R", "uniprot": "P33032", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["Nle","D","H","f","R","W","K"], "n_term": "Ac", "c_term": "NH2"}
+    ],
+    "numbering_offset": 3,
+    "cyclic": false,
+    "bridges": [{"from": "A2", "to": "A7", "type": "lactam"}],
+    "modifications": [
+      {"at": "A1", "type": "nonnatural", "label": "N-acetyl-norleucine at position 4 replaces the oxidation-prone methionine of α-MSH", "short": "Ac-Nle4"},
+      {"at": "A2", "type": "other", "label": "The side-chain carboxyl of Asp5 forms an amide (lactam) bond with the side-chain amine of Lys10, closing a 23-membered ring", "short": "lactam"},
+      {"at": "A4", "type": "d-amino", "label": "D-phenylalanine at position 7 (instead of L-Phe) greatly increases potency and resistance to enzymatic breakdown", "short": "D-Phe7"}
+    ],
+    "notation": "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH2",
+    "note": "Residues are numbered 4–10 in the literature, following α-MSH. The ring is formed by a side-chain-to-side-chain lactam between Asp5 and Lys10; the C-terminus is an amide."
+  },
+  "formula": "C50H69N15O9",
+  "mw": 1024.2,
+  "half_life": "Not established in humans",
+  "half_life_hours": null,
+  "routes": ["Subcutaneous injection (1990s trials; unlicensed products)", "Nasal spray (unlicensed products)"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 92432,
+    "notes": "No experimental structure of melanotan II itself has been deposited, so the site shows a predicted model. Bremelanotide, which differs only by a free C-terminal acid, has been solved bound to MC4R by cryo-EM (PDB 7F55), and the closely related antagonist SHU9119, which has a bulkier naphthylalanine at position 7, has been crystallised with MC4R (6W25)."
+  },
+  "ids": {"pubchem_cid": 92432, "cas": "121062-08-6", "chembl": "CHEMBL430239", "unii": "UPF5CJ93X7", "chebi": "CHEBI:195326"},
+  "wiki": "Melanotan II",
+  "queries": {
+    "pubmed": "(\"melanotan II\"[tiab] OR \"melanotan-II\"[tiab] OR \"melanotan 2\"[tiab] OR \"melanotan-2\"[tiab] OR ((MTII[tiab] OR \"MT-II\"[tiab]) AND (melanocortin*[tiab] OR MC4R[tiab] OR \"melanocyte-stimulating\"[tiab])))",
+    "ctgov": "melanotan II OR melanotan-II"
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Sunless tanning", "stage": "Phase 1 (1990s) — not pursued", "detail": "A 1996 pilot study in three men showed skin darkening after five low doses; tanning development continued with the linear analogue melanotan I (afamelanotide) instead."},
+      {"use": "Erectile dysfunction", "stage": "Small phase 2 studies (1998–2000) — superseded", "detail": "Placebo-controlled crossover studies in men with psychogenic and organic erectile dysfunction produced erections within hours of injection; the programme moved to the related compound bremelanotide."}
+    ],
+    "off_label": [
+      {"use": "Cosmetic tanning ('tanning injections' and nasal sprays)", "detail": "Bought online or through gyms and salons and self-injected or sprayed, often in combination with sunbathing or sunbed use.", "evidence": "No product is licensed and dose, identity and sterility are not assured; case reports link use to new or changing moles and melanoma, and regulators in the US, UK, Ireland and Australia advise against it."},
+      {"use": "Sexual stimulant", "detail": "Also marketed and used for libido or erections, overlapping with grey-market bremelanotide ('PT-141').", "evidence": "Based only on small 1990s trials in men with erectile dysfunction; priapism requiring emergency treatment has been reported after unregulated use."}
+    ]
+  },
+  "history": [
+    {"year": 1980, "date": "1980-10", "title": "A super-potent α-MSH analogue", "detail": "The Arizona group reported [Nle4, D-Phe7]-α-MSH (later melanotan I), a long-acting, enzyme-resistant analogue that became the starting point for melanotan II.", "kind": "science"},
+    {"year": 1989, "date": "1989-12", "title": "Cyclic lactam analogues designed", "detail": "Al-Obeidi, Castrucci, Hadley and Hruby described lactam-bridged α-MSH(4–10) fragments, including the compound later called melanotan II, with about 90-fold the potency of α-MSH in a lizard-skin assay.", "kind": "discovery"},
+    {"year": 1996, "title": "First human study", "detail": "A pilot phase 1 study in three men showed tanning after five low doses, along with nausea, yawning and spontaneous erections lasting one to five hours.", "kind": "trial"},
+    {"year": 1998, "date": "1998-03-31", "title": "Sexual-dysfunction rights licensed to Palatin", "detail": "Competitive Technologies, acting for the University of Arizona, licensed the melanocortin sexual-dysfunction technology to Palatin Technologies, which went on to develop bremelanotide.", "kind": "market"},
+    {"year": 1998, "date": "1998-08", "title": "Erections in men with erectile dysfunction", "detail": "In a placebo-controlled crossover study, 8 of 10 men with psychogenic erectile dysfunction developed erections after melanotan II injection.", "kind": "trial"},
+    {"year": 2007, "date": "2007-08-30", "title": "FDA warning letter to online seller", "detail": "The FDA warned Melanocorp of Tennessee over the illegal sale of melanotan II as a tanning agent and skin-cancer preventative, and advised consumers to stop using it.", "kind": "regulatory"},
+    {"year": 2008, "date": "2008-11", "title": "UK MHRA warns consumers", "detail": "The Medicines and Healthcare products Regulatory Agency warned that melanotan was an untested, unlicensed medicine and that its side effects were unknown.", "kind": "regulatory"},
+    {"year": 2009, "date": "2009-02", "title": "Irish regulator issues warning", "detail": "The Irish Medicines Board said the product was unproven, illegal to supply and possibly dangerous, and advised users to stop immediately.", "kind": "regulatory"},
+    {"year": 2011, "date": "2011-06", "title": "Melanoma case reports", "detail": "Dermatologists reported melanomas arising in melanotan users; later reviews found no conclusive causal link but urged caution.", "kind": "safety"},
+    {"year": 2013, "date": "2013-09", "title": "MHRA campaign against tanning injections", "detail": "The MHRA reported 18 adverse-reaction reports describing 74 suspected reactions and said it had closed 72 websites offering melanotan in the previous three months.", "kind": "regulatory"},
+    {"year": 2019, "date": "2019-06-21", "title": "Close relative approved", "detail": "The FDA approved bremelanotide (Vyleesi), which differs from melanotan II only at its C-terminus, for low sexual desire in premenopausal women.", "kind": "approval"},
+    {"year": 2025, "date": "2025-04", "title": "Oral melanoma after nasal spray use", "detail": "UK surgeons reported a mucosal melanoma of the upper jaw in a 22-year-old woman who had used a melanotan II nasal spray for tanning.", "kind": "safety"},
+    {"year": 2026, "date": "2026-05", "title": "Australian supplier fined", "detail": "The TGA issued 27 infringement notices totalling A$101,412 to a New South Wales individual for allegedly supplying melanotan II.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-08", "title": "Nasal sprays found wrongly dosed", "detail": "TGA laboratory testing of sprays labelled 'Pure Tans Triple Strength 30 MG' found between 22 mg and 54 mg of melanotan II per bottle.", "kind": "safety"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "not-approved", "detail": "Not approved by the FDA; the agency issued a warning letter to an online seller in 2007 and advised consumers to stop using it."},
+    {"region": "UK", "status": "not-approved", "detail": "Unlicensed medicine; the MHRA has warned consumers (2008, 2013) and shut down websites selling it."},
+    {"region": "EU", "status": "not-approved", "detail": "No authorised product in the EU; the Irish Medicines Board warned in 2009 that supplying it is illegal."},
+    {"region": "Australia", "status": "not-approved", "detail": "Classified as a prescription-only medicine but no product is on the Australian Register of Therapeutic Goods; supply without a prescription is illegal and the TGA has fined suppliers."}
+  ],
+  "pk": {
+    "half_life": "Not established in humans"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose. Grey-market products are self-dosed and their strength is unreliable (TGA testing in 2026 found 22–54 mg in bottles labelled 30 mg); doses used in 1990s research studies are not a guide to safe use.",
+  "safety": {
+    "common": ["Nausea", "Facial flushing", "Yawning and stretching", "Spontaneous erections", "Reduced appetite", "Drowsiness and fatigue", "Darkening of skin, moles and freckles"],
+    "serious": ["New, enlarging or atypical moles (eruptive naevi)", "Melanoma reported in users (causal link unproven)", "Priapism", "Rhabdomyolysis and acute kidney injury (case report)", "Renal infarction (case report)", "Posterior reversible encephalopathy syndrome (case report)"],
+    "warnings": ["Unlicensed product: identity, dose, sterility and purity are not assured", "Self-injection with shared or reused equipment carries a risk of infection", "Regulators in the US, UK, Ireland and Australia advise consumers not to use it"],
+    "notes": "Melanoma reports mostly involve people who also sunbathe or use sunbeds heavily, so the drug's own contribution is hard to separate; reviews nonetheless describe a growing number of pigmentary complications and stress the unknown quality of products sold online."
+  },
+  "market": null,
+  "facts": [
+    "The erection-inducing effect was discovered by accident during research on skin tanning.",
+    "Melanotan II and bremelanotide share the same amino-acid sequence; bremelanotide simply ends in a carboxylic acid instead of an amide.",
+    "In the 1989 design study, analogues with a 23-membered ring were about 100 times as potent as α-MSH, while smaller or larger rings were weaker.",
+    "It is often nicknamed the 'Barbie drug' in the media."
+  ],
+  "related": ["bremelanotide", "afamelanotide", "setmelanotide"],
+  "references": [
+    {"title": "Potent and prolonged acting cyclic lactam analogues of alpha-melanotropin: design based on molecular dynamics", "authors": "Al-Obeidi F, Castrucci AM, Hadley ME, Hruby VJ", "journal": "J Med Chem", "year": 1989, "url": "https://pubmed.ncbi.nlm.nih.gov/2555512/"},
+    {"title": "Evaluation of melanotan-II, a superpotent cyclic melanotropic peptide in a pilot phase-I clinical study", "authors": "Dorr RT, Lines R, Levine N, et al.", "journal": "Life Sci", "year": 1996, "url": "https://pubmed.ncbi.nlm.nih.gov/8637402/"},
+    {"title": "Synthetic melanotropic peptide initiates erections in men with psychogenic erectile dysfunction: double-blind, placebo controlled crossover study", "authors": "Wessells H, Fuciarelli K, Hansen J, et al.", "journal": "J Urol", "year": 1998, "url": "https://pubmed.ncbi.nlm.nih.gov/9679884/"},
+    {"title": "Melanocortin peptide therapeutics: historical milestones, clinical studies and commercialization", "authors": "Hadley ME, Dorr RT", "journal": "Peptides", "year": 2006, "url": "https://pubmed.ncbi.nlm.nih.gov/16412534/"},
+    {"title": "Melanotan-associated melanoma", "authors": "Paurobally D, Jason F, Dezfoulian B, Nikkels AF", "journal": "Br J Dermatol", "year": 2011, "url": "https://pubmed.ncbi.nlm.nih.gov/21564053/"},
+    {"title": "Melanotan II injection resulting in systemic toxicity and rhabdomyolysis", "authors": "Nelson ME, Bryant SM, Aks SE", "journal": "Clin Toxicol (Phila)", "year": 2012, "url": "https://pubmed.ncbi.nlm.nih.gov/23121206/"},
+    {"title": "Melanotan and the posterior reversible encephalopathy syndrome", "authors": "Kaski D, Stafford N, Mehta A, et al.", "journal": "Ann Intern Med", "year": 2013, "url": "https://pubmed.ncbi.nlm.nih.gov/23648958/"},
+    {"title": "Risks of unregulated use of alpha-melanocyte-stimulating hormone analogues: a review", "authors": "Habbema L, Halk AB, Neumann M, Bergman W", "journal": "Int J Dermatol", "year": 2017, "url": "https://pubmed.ncbi.nlm.nih.gov/28266027/"},
+    {"title": "Melanotan II nasal spray: a possible risk factor for oral mucosal malignant melanoma?", "authors": "Yassin Alsabbagh A, Bhujel N, Singh RP", "journal": "Int J Oral Maxillofac Surg", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/40210573/"}
+  ]
+}

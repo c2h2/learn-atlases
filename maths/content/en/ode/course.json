@@ -1,0 +1,242 @@
+{
+  "slug": "ode",
+  "title": "Differential Equations",
+  "full_title": "Ordinary Differential Equations",
+  "area": "applied",
+  "level": 2,
+  "order": 90,
+  "tagline": "Modelling change: first-order equations, oscillations, Laplace transforms, systems and stability",
+  "summary": "Differential equations describe how systems change, from cooling coffee to planetary orbits. This course covers solution methods for first- and second-order equations, existence and uniqueness, the Laplace transform, linear systems via eigenvalues, the qualitative theory of nonlinear systems, and series solutions.",
+  "overview": [
+    "A **differential equation** relates an unknown function to its own derivatives. Newton's second law, the cooling of a cup of coffee, the charge on a capacitor, the spread of an epidemic and the swing of a pendulum are all described by **ordinary differential equations** (ODEs): equations for functions of a single variable, usually time. To solve one is to find every function that satisfies it — and, when no formula exists, which is the usual situation, to say as much as possible about the solutions without one.",
+    "The course has three movements. First come scalar equations: the classical methods for first-order equations, then the theory that says when an initial value problem has exactly one solution (Picard's theorem), with slope fields and Euler's method as the geometric and numerical companions. Second come linear equations: second-order equations with constant coefficients and the Wronskian, forcing, damping and resonance, and the Laplace transform, which turns initial value problems into algebra. Third come systems and structure: linear systems $\\mathbf{x}' = A\\mathbf{x}$ solved with eigenvalues and the matrix exponential, the qualitative theory of nonlinear systems (phase portraits, linearisation, Lyapunov functions, limit cycles), and power-series solutions, which produce Legendre polynomials and Bessel functions.",
+    "The subject is really two subjects at once: a toolkit of methods for finding formulas, and a body of theory explaining when the methods work and what can still be said when none does. Keep both in view. For every method, ask which class of equations it applies to and why it works; for every equation, sketch a slope field or phase portrait before computing, and check every answer by substituting it back. Linear algebra is used constantly from the second-order chapter onwards — the solutions of a linear homogeneous equation form a vector space, and that single fact organises much of the course."
+  ],
+  "prerequisites": [
+    "calculus-2",
+    "linear-algebra"
+  ],
+  "outcomes": [
+    "Solve separable, linear, exact and Bernoulli first-order equations, and set up and interpret first-order models of cooling, mixing and growth.",
+    "State and prove the Picard–Lindelöf existence and uniqueness theorem, and recognise when uniqueness or global existence fails.",
+    "Sketch slope fields and phase lines, and approximate solutions with Euler's method while bounding its error.",
+    "Find the general solution of linear equations with constant coefficients, and use the Wronskian and Abel's formula to decide when solutions form a fundamental set.",
+    "Solve forced equations by undetermined coefficients and variation of parameters, and analyse damping, beats and resonance.",
+    "Use the Laplace transform, including step functions, impulses and convolution, to solve initial value problems and integral equations.",
+    "Solve linear systems with eigenvalues, generalised eigenvectors and the matrix exponential, and classify planar phase portraits by trace and determinant.",
+    "Analyse nonlinear systems by finding equilibria, linearising, constructing Lyapunov functions and conserved quantities, and detecting or ruling out periodic orbits.",
+    "Find power-series and Frobenius solutions near ordinary and regular singular points, including Legendre polynomials and Bessel functions."
+  ],
+  "chapters": [
+    {
+      "slug": "first-order",
+      "title": "First-order equations",
+      "summary": "Separable, linear and exact equations, integrating factors and modelling with first-order equations.",
+      "requires": [
+        "calculus-2/intro-odes",
+        "calculus-1/integration-techniques"
+      ]
+    },
+    {
+      "slug": "existence-uniqueness",
+      "title": "Existence, uniqueness and slope fields",
+      "summary": "Direction fields, Picard’s theorem and Lipschitz conditions, and Euler’s method.",
+      "requires": [
+        "ode/first-order"
+      ]
+    },
+    {
+      "slug": "second-order-linear",
+      "title": "Second-order linear equations",
+      "summary": "Homogeneous equations with constant coefficients, the characteristic equation, the Wronskian and reduction of order.",
+      "requires": [
+        "ode/first-order"
+      ]
+    },
+    {
+      "slug": "nonhomogeneous",
+      "title": "Forced oscillations and nonhomogeneous equations",
+      "summary": "Undetermined coefficients, variation of parameters, damping and resonance.",
+      "requires": [
+        "ode/second-order-linear"
+      ]
+    },
+    {
+      "slug": "laplace-transform",
+      "title": "The Laplace transform",
+      "summary": "Definition and properties, solving initial value problems, step functions, impulses and convolution.",
+      "requires": [
+        "ode/nonhomogeneous",
+        "calculus-1/improper-integrals"
+      ]
+    },
+    {
+      "slug": "linear-systems",
+      "title": "Systems of linear differential equations",
+      "summary": "Matrix form, the eigenvalue method, the matrix exponential and phase portraits of linear systems.",
+      "requires": [
+        "ode/second-order-linear",
+        "linear-algebra/eigenvalues"
+      ]
+    },
+    {
+      "slug": "nonlinear-systems",
+      "title": "Nonlinear systems and stability",
+      "summary": "Equilibria, linearisation, stability, Lyapunov functions, and predator–prey and pendulum models.",
+      "requires": [
+        "ode/linear-systems"
+      ]
+    },
+    {
+      "slug": "series-solutions",
+      "title": "Series solutions",
+      "summary": "Power series solutions, ordinary and singular points, the Frobenius method, and Bessel and Legendre equations.",
+      "requires": [
+        "ode/second-order-linear",
+        "calculus-2/power-series"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1671,
+      "title": "Newton's fluxional equations",
+      "detail": "In *Methodus fluxionum et serierum infinitarum* (written 1671, published 1736) Newton classified first-order differential equations and solved them by infinite series.",
+      "people": [
+        "Isaac Newton"
+      ]
+    },
+    {
+      "year": 1695,
+      "title": "The Bernoulli equation",
+      "detail": "Jacob Bernoulli proposed the equation $y' + P(x)y = Q(x)y^n$; the following year Leibniz reduced it to a linear equation by a change of variable.",
+      "people": [
+        "Jacob Bernoulli",
+        "Gottfried Wilhelm Leibniz"
+      ]
+    },
+    {
+      "year": 1743,
+      "title": "The characteristic equation",
+      "detail": "Euler published the method of solving linear equations with constant coefficients by substituting exponentials, including the treatment of repeated and complex roots.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1768,
+      "title": "Euler's method",
+      "detail": "The first volume of Euler's *Institutionum calculi integralis* described approximating a solution by short straight-line steps — the ancestor of every numerical ODE solver.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1824,
+      "title": "Cauchy's existence theorem",
+      "detail": "In lectures at the École polytechnique Cauchy proved that an initial value problem has a solution by showing that Euler's polygons converge; Lipschitz later weakened the hypotheses on the right-hand side.",
+      "people": [
+        "Augustin-Louis Cauchy",
+        "Rudolf Lipschitz"
+      ]
+    },
+    {
+      "year": 1873,
+      "title": "The Frobenius method",
+      "detail": "Building on Fuchs's 1866 study of regular singular points, Frobenius showed how to find series solutions $x^r\\sum a_n x^n$ near such points.",
+      "people": [
+        "Lazarus Fuchs",
+        "Ferdinand Georg Frobenius"
+      ]
+    },
+    {
+      "year": 1881,
+      "title": "Qualitative theory",
+      "detail": "Poincaré's memoirs on curves defined by differential equations (1881–1886) introduced phase portraits, the classification of equilibria and limit cycles.",
+      "people": [
+        "Henri Poincaré"
+      ]
+    },
+    {
+      "year": 1890,
+      "title": "Successive approximations",
+      "detail": "Picard proved existence and uniqueness by iterating the equivalent integral equation; Lindelöf sharpened the result in 1894.",
+      "people": [
+        "Émile Picard",
+        "Ernst Lindelöf"
+      ]
+    },
+    {
+      "year": 1892,
+      "title": "Lyapunov stability",
+      "detail": "Lyapunov's doctoral thesis *The general problem of the stability of motion* introduced the direct method, proving stability with an energy-like function instead of a solution formula.",
+      "people": [
+        "Aleksandr Lyapunov"
+      ]
+    },
+    {
+      "year": 1926,
+      "title": "Predator–prey equations",
+      "detail": "Volterra, prompted by D'Ancona's data on fish catches in the Adriatic, derived the predator–prey system that Lotka had obtained independently in his 1925 book *Elements of Physical Biology*.",
+      "people": [
+        "Vito Volterra",
+        "Alfred J. Lotka",
+        "Umberto D'Ancona"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Elementary Differential Equations and Boundary Value Problems",
+      "authors": "William E. Boyce and Richard C. DiPrima (later editions with Douglas B. Meade)",
+      "year": 1965,
+      "note": "The standard first course: clear methods, many modelling examples and exercises; also covers Fourier series and boundary value problems."
+    },
+    {
+      "title": "Differential Equations with Applications and Historical Notes",
+      "authors": "George F. Simmons",
+      "year": 1972,
+      "note": "Beautifully written, with careful proofs, series solutions and special functions, and excellent historical notes."
+    },
+    {
+      "title": "Ordinary Differential Equations",
+      "authors": "Morris Tenenbaum and Harry Pollard",
+      "year": 1963,
+      "note": "An inexpensive Dover classic with hundreds of worked examples for the solution methods."
+    },
+    {
+      "title": "Differential Equations, Dynamical Systems, and an Introduction to Chaos",
+      "authors": "Morris W. Hirsch, Stephen Smale and Robert L. Devaney",
+      "year": 2013,
+      "note": "Third edition of the classic Hirsch–Smale text: linear systems, the matrix exponential, phase portraits and stability, treated with linear algebra."
+    },
+    {
+      "title": "Nonlinear Dynamics and Chaos",
+      "authors": "Steven H. Strogatz",
+      "year": 1994,
+      "note": "An outstanding, intuitive introduction to phase portraits, bifurcations and limit cycles, with many applications."
+    },
+    {
+      "title": "Ordinary Differential Equations",
+      "authors": "Vladimir I. Arnold",
+      "year": 1973,
+      "note": "A geometric approach (English translation of the 1971 Russian text) emphasising phase flows and vector fields; demanding but illuminating."
+    },
+    {
+      "title": "Ordinary Differential Equations and Dynamical Systems",
+      "authors": "Gerald Teschl",
+      "year": 2012,
+      "note": "Rigorous modern treatment (AMS Graduate Studies in Mathematics), freely available as lecture notes; full proofs of the existence theorems and Frobenius theory."
+    },
+    {
+      "title": "Theory of Ordinary Differential Equations",
+      "authors": "Earl A. Coddington and Norman Levinson",
+      "year": 1955,
+      "note": "The classical rigorous reference: Peano's and Picard's theorems, linear systems, singular points and Sturm–Liouville theory."
+    }
+  ],
+  "next": [
+    "pde",
+    "numerical-analysis"
+  ]
+}

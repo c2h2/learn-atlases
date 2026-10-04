@@ -1,0 +1,131 @@
+{
+  "slug": "aod-9604",
+  "name": "AOD-9604",
+  "aliases": ["AOD9604", "AOD 9604", "LAT8881", "Tyr-hGH(177–191)", "hGH fragment 176–191"],
+  "category": "gh",
+  "drug_class": "Growth hormone fragment (lipolytic peptide)",
+  "subclass": "Disulfide-bridged 16-residue analogue of the C-terminus of human growth hormone",
+  "status": "research",
+  "status_note": "Not approved in any country. Its obesity programme was terminated in 2007 after a failed phase 2b trial; it is sold online as a 'fat-loss peptide', is prohibited by WADA, and an FDA advisory committee voted against US pharmacy compounding in 2024.",
+  "evidence": 3,
+  "evidence_note": "The developer ran six randomised, placebo-controlled trials, the largest in 502 obese adults over 24 weeks, but the programme was stopped for lack of benefit and the efficacy results were never published in a peer-reviewed journal; only a sponsor-authored safety summary appeared. Small phase 2 pain trials (as LAT8881) are unpublished, and the fat-loss, joint and healing claims rest on animal studies.",
+  "tagline": "GH fragment developed as an obesity pill; failed in 2007 but still sold for fat loss",
+  "summary": "AOD-9604 is a 16-amino-acid peptide copied from the tail end of human growth hormone (GH), the region thought to carry its fat-burning activity, with an extra tyrosine at the front. Developed in Melbourne by Metabolic Pharmaceuticals from Monash University research, it reduced weight gain in obese rodents without the high blood sugar caused by GH, but in 2007 a 24-week trial in 502 people failed to show a significant weight-loss benefit and the obesity programme was dropped. It is still sold online as a 'fat-loss peptide', is banned in sport and was at the centre of Australian football's 2013 supplements scandal.",
+  "overview": [
+    "In the early 1990s Frank Ng's group at Monash University reported that a synthetic fragment from the C-terminus of human GH, residues 177–191, blocked fat synthesis in rat fat tissue as effectively as the whole hormone, and later that it reduced weight gain in obese mice. AOD-9604 is that fragment with an extra N-terminal tyrosine — the tyrosine sits where GH has Phe176, so the peptide is also called hGH 176–191 — and it keeps the internal disulfide bond between Cys182 and Cys189. Given by mouth, it more than halved weight gain in obese Zucker rats; in obese mice it increased fat burning and lipolysis without the high blood sugar caused by GH, and it neither bound the GH receptor nor stimulated cell growth through it.",
+    "Metabolic Pharmaceuticals, a Melbourne company, developed AOD-9604 as an oral anti-obesity drug. Phase 2a trials were under way by 2002, followed by two phase 2b studies: a 12-week trial of 1–30 mg capsules in 300 obese adults and a 24-week trial of 0.25–1 mg tablets in 502 obese adults. In 2007 the company announced that the results did not support commercial viability and terminated the programme; the efficacy data were never published in a journal. A 2013 summary of all six trials by company-affiliated authors reported no rise in IGF-1, no impairment of glucose tolerance, no antibodies and side effects similar to placebo, and mentioned that an expert panel had declared it 'generally recognised as safe' (GRAS) for use in food — a self-affirmed status, not an FDA approval.",
+    "AOD-9604 became notorious in Australian sport. The Essendon Football Club's 2012 injection programme included it, and its status was confused: it was not named on the WADA list, but on 22 April 2013 WADA stated that, having no government approval for human use, it fell under the catch-all S0 class. Australia's anti-doping agency decided not to pursue AOD-9604 use before that date, and the eventual case against Essendon players concerned thymosin beta-4. WADA now names AOD-9604 as an example of prohibited GH fragments.",
+    "The peptide has since been sold online, and analytical laboratories have identified it in products seized in Belgium and confiscated in the US. FDA listed it as a significant compounding safety risk in 2023, and in December 2024 its advisory committee voted 0–12 against allowing pharmacies to compound it for obesity. Under the code LAT8881, the Australian company Lateral Pharma tested the same peptide in small trials for neuropathic pain and migraine (2019–2020) and intravenous dosing (2022–2023); in 2026 a study co-authored by its scientists identified the protein LanCL1 as the binding target of its active metabolite in rodent spinal cord. Claims that it repairs cartilage come from a rabbit study."
+  ],
+  "mechanism": [
+    "AOD-9604 does not act like growth hormone: it does not bind or activate the GH receptor and does not raise IGF-1. In rodent fat tissue it stimulates lipolysis, inhibits lipogenesis and increases fat oxidation; chronic treatment restored the reduced expression of β3-adrenergic receptors in obese mice, and its long-term effect on weight was lost in mice lacking that receptor, although the authors concluded that it does not act on the receptor directly.",
+    "Its molecular target is not settled. A 2026 study of LAT8881 used a photoaffinity probe of the active metabolite to identify lanthionine synthetase C-like protein 1 (LanCL1) as its binding partner in the spinal cord, linked to relief of neuropathic pain in rodents; whether LanCL1 explains any effect on fat is unknown. In serum it is broken into fragments, of which the disulfide-bridged ring CRSVEGSCG is the most stable."
+  ],
+  "origin": "Synthetic analogue of residues 177–191 at the C-terminus of human growth hormone, with an added N-terminal tyrosine",
+  "discovery": {"year": 2000, "by": "Frank Ng and colleagues, Monash University, with Metabolic Pharmaceuticals", "where": "Melbourne, Australia", "note": "Built on the group's 1993 finding that synthetic hGH(177–191) has antilipogenic activity; AOD-9604 itself was first described in 2000."},
+  "first_human_year": null,
+  "first_approval": null,
+  "developer": "Metabolic Pharmaceuticals (Melbourne); later developed as LAT8881 by Lateral Pharma",
+  "brands": [],
+  "analogs": [
+    {"name": "Human growth hormone (somatropin)", "note": "The 191-residue hormone; AOD-9604 corresponds to its residues 176–191, with tyrosine in place of Phe176."},
+    {"name": "hGH(177–191)", "note": "The unmodified 15-residue C-terminal fragment whose antilipogenic effect was reported in 1993."},
+    {"name": "AOD9401", "note": "An earlier synthetic analogue of the GH lipolytic domain, given orally to obese mice in 2000."}
+  ],
+  "targets": [
+    {"name": "LanC-like protein 1 (LanCL1)", "gene": "LANCL1", "uniprot": "O43813", "action": "Proposed binding target (identified for LAT8881's active metabolite in rodent spinal cord, 2026)"},
+    {"name": "Growth hormone receptor", "gene": "GHR", "uniprot": "P10912", "action": "No binding (does not compete with GH or stimulate receptor-mediated cell growth)"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["Y", "L", "R", "I", "V", "Q", "C", "R", "S", "V", "E", "G", "S", "C", "G", "F"], "n_term": "H", "c_term": "OH"}
+    ],
+    "numbering_offset": 175,
+    "cyclic": false,
+    "bridges": [{"from": "A7", "to": "A14", "type": "disulfide"}],
+    "modifications": [
+      {"at": "A1", "type": "other", "label": "Tyr176: an added N-terminal tyrosine occupying the position of Phe176 in growth hormone; the rest of the chain is hGH(177–191)", "short": "Tyr176"}
+    ],
+    "notation": "H-Tyr-Leu-Arg-Ile-Val-Gln-Cys-Arg-Ser-Val-Glu-Gly-Ser-Cys-Gly-Phe-OH (Cys182–Cys189 disulfide)",
+    "note": "Residues are numbered 176–191 following mature human GH (UniProt P01241, precursor residues 202–217). The disulfide between Cys182 and Cys189 is the same bond that closes the small C-terminal loop of intact GH."
+  },
+  "formula": "C78H123N23O23S2",
+  "mw": 1815.08,
+  "half_life": "Not established in humans",
+  "half_life_hours": null,
+  "routes": ["Oral tablets and capsules (obesity trials)", "Injection from grey-market vials", "Intravenous infusion (LAT8881 phase 1)"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 71300630,
+    "notes": "No experimental structure of AOD-9604 has been deposited, so the model shown is predicted. In intact growth hormone (e.g. PDB 1HGU, or 3HHR with its receptor) residues 177–183 end the fourth helix and Cys182–Cys189 close the C-terminal loop, but the isolated fragment need not keep that shape."
+  },
+  "ids": {"pubchem_cid": 71300630, "cas": "221231-10-3", "chembl": "CHEMBL6068615", "unii": "7UP768IP4M"},
+  "wiki": "AOD9604",
+  "queries": {"pubmed": "(AOD9604[tiab] OR \"AOD-9604\"[tiab] OR \"AOD 9604\"[tiab] OR LAT8881[tiab])", "ctgov": "AOD9604 OR AOD-9604 OR LAT8881"},
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Obesity", "stage": "Phase 2b — failed (2007)", "detail": "A 24-week trial of oral tablets (0.25–1 mg daily) in 502 obese adults failed to show a significant weight-loss benefit, and Metabolic Pharmaceuticals terminated the programme."},
+      {"use": "Neuropathic pain and migraine (as LAT8881)", "stage": "Phase 2a — completed, unpublished", "detail": "Lateral Pharma ran placebo-controlled crossover trials of oral LAT8881 in neuropathic pain (53 patients) and acute migraine (21) in 2019–2020 and an intravenous study in lumbar radicular pain (2022–2023); results were posted on ClinicalTrials.gov but no peer-reviewed report had appeared by 2026."},
+      {"use": "Osteoarthritis and cartilage repair", "stage": "Animal studies", "detail": "Intra-articular injections improved cartilage scores in a rabbit model of osteoarthritis, especially combined with hyaluronic acid (2015)."}
+    ],
+    "off_label": [
+      {"use": "Weight and fat loss", "detail": "Sold online as a 'fat-loss' or 'fragment 176–191' peptide; it was also nominated for US pharmacy compounding for obesity, which FDA's advisory committee rejected in 2024.", "evidence": "The only large human trial failed; there is no evidence that injected AOD-9604 reduces weight or fat in people, and product identity and purity are not assured."},
+      {"use": "Sport", "detail": "Used in the Essendon AFL club's 2012 supplements programme; prohibited by WADA as a GH fragment.", "evidence": "No evidence of a performance benefit."}
+    ]
+  },
+  "history": [
+    {"year": 1993, "date": "1993-05", "title": "GH tail fragment blocks fat synthesis", "detail": "Wu and Ng at Monash University reported that synthetic hGH(177–191) had antilipogenic activity identical to intact growth hormone.", "kind": "science"},
+    {"year": 2000, "title": "AOD-9604 described", "detail": "Ng and colleagues reported that oral AOD-9604 more than halved weight gain in obese Zucker rats without impairing insulin sensitivity.", "kind": "discovery"},
+    {"year": 2001, "date": "2001-10", "title": "No growth hormone receptor binding", "detail": "Mouse and cell studies showed increased fat oxidation and lipolysis but no GH receptor binding, no receptor-driven cell proliferation and no hyperglycaemia.", "kind": "science"},
+    {"year": 2002, "date": "2002-02", "title": "Phase 2a trials under way", "detail": "Metabolic Pharmaceuticals was testing oral AOD-9604 in obese volunteers as an anti-obesity drug.", "kind": "trial"},
+    {"year": 2007, "title": "Obesity programme terminated", "detail": "Metabolic Pharmaceuticals announced that its 24-week phase 2b trial did not support commercial viability and ended development for obesity.", "kind": "trial"},
+    {"year": 2013, "date": "2013-02-07", "title": "Crime commission report on peptides", "detail": "The Australian Crime Commission's report 'Organised Crime and Drugs in Sport' described peptide use in professional sport; that year the anti-doping agency ASADA investigated supplement programmes at Essendon (AFL) and Cronulla (NRL).", "kind": "regulatory"},
+    {"year": 2013, "date": "2013-04-22", "title": "WADA: banned under S0", "detail": "WADA stated that AOD-9604, still in development and approved by no government, was prohibited under its non-approved substances class; ASADA did not pursue use before that date.", "kind": "regulatory"},
+    {"year": 2013, "title": "Safety summary and food-ingredient claim", "detail": "Company-affiliated authors published pooled safety data from six trials and reported a self-affirmed GRAS determination for use in food.", "kind": "market"},
+    {"year": 2014, "date": "2014-06", "title": "Found in seized products", "detail": "Belgian authorities' laboratory identified AOD-9604 in seized unknown preparations; US anti-doping chemists later reported it in confiscated vials.", "kind": "regulatory"},
+    {"year": 2016, "date": "2016-01", "title": "Essendon case decided on thymosin", "detail": "The Court of Arbitration for Sport found Essendon players guilty of using thymosin beta-4; AOD-9604 was not part of the charges.", "kind": "regulatory"},
+    {"year": 2019, "date": "2019-04", "title": "Tested again as LAT8881", "detail": "Lateral Pharma began a phase 2a trial of oral LAT8881 in neuropathic pain, followed by trials in migraine and lumbar radicular pain.", "kind": "trial"},
+    {"year": 2023, "date": "2023-09-29", "title": "FDA 'significant safety risk' listing", "detail": "FDA added AOD-9604 to Category 2 of the 503A bulk-substance list, effectively barring pharmacy compounding.", "kind": "regulatory"},
+    {"year": 2024, "date": "2024-12-04", "title": "Advisory committee votes no", "detail": "After the nomination was withdrawn, FDA's Pharmacy Compounding Advisory Committee still reviewed AOD-9604 for obesity and voted 0–12 against adding it to the 503A bulks list.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-06", "title": "LanCL1 proposed as target", "detail": "Researchers including Lateral Pharma scientists reported that LAT8881's active metabolite binds LanCL1 in the spinal cord, explaining its anti-neuropathic effect in rodents.", "kind": "science"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "not-approved", "detail": "Never approved. Placed in 503A Category 2 (significant safety risks) in September 2023; after the nomination was withdrawn, the Pharmacy Compounding Advisory Committee voted 0–12 on 4 December 2024 against adding the free base or acetate to the 503A bulks list. FDA lists it among withdrawn nominations with safety concerns, including immunogenicity and limited safety data. A GRAS food-ingredient claim was self-affirmed, not an FDA approval."},
+    {"region": "WADA", "status": "prohibited", "detail": "Named as an example of growth hormone fragments under S2.2.3 of the 2026 Prohibited List (with hGH 176–191); prohibited at all times. WADA stated in April 2013 that it was already banned under S0."}
+  ],
+  "pk": {
+    "half_life": "Not reported in human trials",
+    "bioavailability": "Given orally in the obesity trials; oral bioavailability not published",
+    "metabolism": "Broken down into several fragments in serum in vitro; the disulfide-bridged CRSVEGSCG is the most stable and may extend the doping-detection window",
+    "excretion": "Not characterised in humans; doping-control methods target the parent peptide and its stable metabolite in urine"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose. The obesity trials used oral doses of 0.25–30 mg daily, and the largest, 24-week trial failed its weight-loss endpoint; injectable regimens promoted online have not been tested in trials.",
+  "safety": {
+    "common": ["Adverse events similar to placebo in the developer's six trials (sponsor-reported)"],
+    "serious": [],
+    "warnings": ["Not approved: identity, purity and sterility of online products are not assured", "FDA cites possible immunogenicity and limited safety data for injected use", "Prohibited in sport at all times (WADA S2)"],
+    "notes": "The developer reported no effect on IGF-1 or glucose tolerance and no anti-drug antibodies in oral trials of up to 24 weeks. There are no published safety data for the injected doses used on the grey market."
+  },
+  "market": null,
+  "facts": [
+    "FDA's substance registry and ChEMBL list AOD-9604 under Lateral Pharma's code LAT-8881.",
+    "Although it is a piece of growth hormone, it does not bind the GH receptor or raise IGF-1.",
+    "Its most stable breakdown product in serum (tested in vitro) is the nine-residue ring CRSVEGSCG, held together by the peptide's disulfide bond.",
+    "WADA declared it banned in April 2013 under the catch-all S0 class because no government had approved it for human use."
+  ],
+  "related": ["tesamorelin", "cjc-1295", "ipamorelin", "tb-500", "bpc-157", "semaglutide"],
+  "references": [
+    {"title": "Antilipogenic action of synthetic C-terminal sequence 177-191 of human growth hormone", "authors": "Wu Z, Ng FM", "journal": "Biochem Mol Biol Int", "year": 1993, "url": "https://pubmed.ncbi.nlm.nih.gov/8358331/"},
+    {"title": "Metabolic studies of a synthetic lipolytic domain (AOD9604) of human growth hormone", "authors": "Ng FM, Sun J, Sharma L, et al.", "journal": "Horm Res", "year": 2000, "url": "https://pubmed.ncbi.nlm.nih.gov/11146367/"},
+    {"title": "Increase of fat oxidation and weight loss in obese mice caused by chronic treatment with human growth hormone or a modified C-terminal fragment", "authors": "Heffernan MA, Thorburn AW, Fam B, et al.", "journal": "Int J Obes Relat Metab Disord", "year": 2001, "url": "https://pubmed.ncbi.nlm.nih.gov/11673763/"},
+    {"title": "Safety and tolerability of the hexadecapeptide AOD9604 in humans", "authors": "Stier H, Vos E, Kenley D", "journal": "J Endocrinol Metab", "year": 2013, "url": "https://doi.org/10.4021/jem157w"},
+    {"title": "Detection and in vitro metabolism of AOD9604", "authors": "Cox HD, Smeal SJ, Hughes CM, et al.", "journal": "Drug Test Anal", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/25208511/"},
+    {"title": "Effect of intra-articular injection of AOD9604 with or without hyaluronic acid in rabbit osteoarthritis model", "authors": "Kwon DR, Park GY", "journal": "Ann Clin Lab Sci", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/26275694/"},
+    {"title": "Naturally derived cytokine peptides limit virus replication and severe disease during influenza A virus infection", "authors": "Harpur CM, West AC, Le Page MA, et al.", "journal": "Clin Transl Immunology", "year": 2023, "url": "https://pubmed.ncbi.nlm.nih.gov/36969366/"},
+    {"title": "Lanthionine synthetase C-like protein 1 (LanCL1): a therapeutic target for neuropathic pain", "authors": "Spanswick DC, Wei H, Zhao FY, et al.", "journal": "Pain", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42263267/"},
+    {"title": "Final summary minutes of the Pharmacy Compounding Advisory Committee meeting, 4 December 2024 (AOD-9604, CJC-1295, thymosin alpha-1)", "authors": "US Food and Drug Administration", "journal": "FDA", "year": 2025, "url": "https://www.fda.gov/media/185642/download"},
+    {"title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration", "authors": "Dominikowski A, Rękoś Z, Olejarz M, et al.", "journal": "Front Endocrinol (Lausanne)", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42395176/"}
+  ]
+}

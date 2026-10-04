@@ -1,0 +1,633 @@
+{
+  "slug": "liraglutide",
+  "name": "Liraglutide",
+  "aliases": [
+    "NN2211",
+    "NNC 90-1170",
+    "NN8022",
+    "Arg34Lys26-(Nε-(γ-Glu(Nα-hexadecanoyl)))-GLP-1(7-37)"
+  ],
+  "category": "metabolic",
+  "drug_class": "GLP-1 receptor agonist",
+  "subclass": "Fatty-acid acylated GLP-1(7–37) analogue (once daily)",
+  "status": "approved",
+  "status_note": "Approved for type 2 diabetes since 2009 (EU) and 2010 (US, Japan) and for chronic weight management since 2014; generic versions have been sold in the US since 2024 and synthetic hybrid copies were authorised in the EU in 2026.",
+  "evidence": 5,
+  "evidence_note": "Tested in the LEAD (diabetes) and SCALE (obesity) phase 3 programmes, the 9,340-patient LEADER cardiovascular outcomes trial and randomised trials in children and adolescents.",
+  "tagline": "Once-daily GLP-1 analogue sold as Victoza for diabetes and Saxenda for weight loss",
+  "summary": "Liraglutide is a modified form of the gut hormone GLP-1 carrying a palmitic-acid tail that lets it bind to albumin in the blood, so a single injection lasts about a day. Sold by Novo Nordisk as Victoza for type 2 diabetes and Saxenda for weight management, it was the first once-daily GLP-1 drug, the first GLP-1 drug approved for obesity and the first to gain a cardiovascular risk-reduction indication.",
+  "overview": [
+    "Liraglutide was Novo Nordisk's first GLP-1 medicine and the first once-daily drug of its class. Native GLP-1 is destroyed within about two minutes, and the first GLP-1 receptor agonist, exenatide (2005), had to be injected twice a day. A Novo Nordisk team led by Lotte Bjerre Knudsen took a different route from the exendin-based approach: it kept the human hormone almost unchanged and attached a fatty acid so that the peptide binds reversibly to serum albumin, a strategy the company later refined in semaglutide.",
+    "Liraglutide differs from human GLP-1(7–37) in only two ways: lysine 34 is replaced by arginine, and the remaining lysine at position 26 carries a 16-carbon palmitic acid attached through a glutamic acid spacer. The acylated peptide self-associates at the injection site, which slows absorption, and circulates more than 98% bound to plasma proteins, giving a half-life of about 13 hours. Novo Nordisk makes the peptide backbone by expressing a precursor in yeast and then attaches the fatty acid chemically.",
+    "Victoza was authorised for type 2 diabetes in the EU in 2009 and in Japan and the US in 2010. The LEADER trial (9,340 patients) showed a 13% reduction in major cardiovascular events, which in 2017 made Victoza the first GLP-1 drug with a cardiovascular risk-reduction indication, and later trials extended its use to children aged 10 and over. At a higher 3 mg dose, liraglutide became Saxenda (2014), the first GLP-1 drug approved for chronic weight management, later extended to adolescents and, in the EU, to children from age 6.",
+    "Once-weekly semaglutide and tirzepatide have since overtaken liraglutide: Novo Nordisk's combined Victoza and Saxenda sales fell from about DKK 19 billion in 2023 to DKK 6.3 billion in 2025. Liraglutide became the first GLP-1 drug sold as a generic in the US (an authorised generic in June 2024, followed by the first independently developed generic in December 2024), fully synthetic copies were authorised in the EU in 2026, and Novo Nordisk has told the FDA it will stop making Saxenda for the US market, with supply expected to last until January 2027."
+  ],
+  "mechanism": [
+    "Liraglutide binds to and activates the GLP-1 receptor, a class B G-protein-coupled receptor that signals through Gs and cAMP. In the pancreas it increases insulin secretion and reduces glucagon secretion only when glucose is raised, so in adults hypoglycaemia is uncommon unless it is combined with insulin or a sulfonylurea; it also delays gastric emptying.",
+    "Weight loss comes from reduced calorie intake rather than increased energy expenditure. GLP-1 receptors are present in brain areas that regulate appetite, and in animal studies peripherally injected liraglutide reached appetite-regulating regions including the hypothalamus. The long action has three sources: self-association that delays absorption from the injection site, binding to plasma proteins such as albumin, and resistance to the enzymes DPP-4 and neutral endopeptidase that inactivate native GLP-1."
+  ],
+  "origin": "Analogue of human glucagon-like peptide-1 (GLP-1(7–37)), an incretin hormone cleaved from proglucagon in intestinal L-cells; the peptide precursor is produced in yeast (Saccharomyces cerevisiae) and acylated chemically",
+  "discovery": {
+    "year": 1996,
+    "by": "Lotte Bjerre Knudsen, Per Olaf Huusfeldt, Per Franklin Nielsen and colleagues, Novo Nordisk",
+    "where": "Måløv, Denmark",
+    "note": "Liraglutide (NN2211) was one of a series of fatty-acid-acylated GLP-1 derivatives in a Novo Nordisk patent application with a 30 August 1996 priority date; the medicinal chemistry was published in J Med Chem in 2000."
+  },
+  "first_human_year": null,
+  "first_approval": {
+    "date": "2009-06-30",
+    "agency": "EMA",
+    "region": "EU",
+    "brand": "Victoza",
+    "indication": "Type 2 diabetes"
+  },
+  "developer": "Novo Nordisk",
+  "brands": [
+    {
+      "name": "Victoza",
+      "company": "Novo Nordisk",
+      "route": "Subcutaneous, once daily (pen delivers 0.6, 1.2 or 1.8 mg)",
+      "use": "Type 2 diabetes in adults and children aged 10 and over; cardiovascular risk reduction (US)",
+      "approved": "2009-06-30",
+      "agency": "EMA"
+    },
+    {
+      "name": "Saxenda",
+      "company": "Novo Nordisk",
+      "route": "Subcutaneous, once daily (up to 3 mg)",
+      "use": "Chronic weight management in adults and adolescents; children aged 6–11 in the EU",
+      "approved": "2014-12-23",
+      "agency": "FDA"
+    },
+    {
+      "name": "Xultophy",
+      "company": "Novo Nordisk",
+      "route": "Subcutaneous, once daily (fixed-ratio combination with insulin degludec)",
+      "use": "Type 2 diabetes; sold in the US as Xultophy 100/3.6 (approved 2016)",
+      "approved": "2014-09-18",
+      "agency": "EMA"
+    },
+    {
+      "name": "Liluping",
+      "company": "Huadong Medicine",
+      "route": "Subcutaneous, once daily",
+      "use": "Type 2 diabetes; weight management (China)",
+      "approved": "2023-03",
+      "agency": "NMPA"
+    },
+    {
+      "name": "Liraglutide STADA",
+      "company": "STADA Arzneimittel",
+      "route": "Subcutaneous, once daily",
+      "use": "Type 2 diabetes (chemically synthesised hybrid of Victoza)",
+      "approved": "2026-07-15",
+      "agency": "EMA"
+    },
+    {
+      "name": "Ablymico",
+      "company": "STADA Arzneimittel",
+      "route": "Subcutaneous, once daily",
+      "use": "Weight management (chemically synthesised hybrid of Saxenda)",
+      "approved": "2026-07-15",
+      "agency": "EMA"
+    }
+  ],
+  "analogs": [
+    {
+      "name": "GLP-1(7–37)",
+      "note": "The native hormone; half-life of 1.5–2 minutes because of cleavage by DPP-4 and neutral endopeptidases"
+    },
+    {
+      "name": "Semaglutide",
+      "note": "Novo Nordisk's once-weekly successor: Aib8 instead of Ala8 and a C18 fatty diacid on a longer γGlu-2×OEG linker"
+    }
+  ],
+  "targets": [
+    {
+      "name": "Glucagon-like peptide-1 receptor",
+      "gene": "GLP1R",
+      "uniprot": "P43220",
+      "action": "Agonist"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "H",
+          "A",
+          "E",
+          "G",
+          "T",
+          "F",
+          "T",
+          "S",
+          "D",
+          "V",
+          "S",
+          "S",
+          "Y",
+          "L",
+          "E",
+          "G",
+          "Q",
+          "A",
+          "A",
+          "K",
+          "E",
+          "F",
+          "I",
+          "A",
+          "W",
+          "L",
+          "V",
+          "R",
+          "G",
+          "R",
+          "G"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "numbering_offset": 6,
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A20",
+        "type": "lipidation",
+        "label": "Lys26 carries a palmitoyl (C16) fatty acid attached to its side-chain amine through a γ-glutamic acid spacer [Nε-(γ-Glu(Nα-hexadecanoyl))]; it drives self-association and reversible albumin binding",
+        "short": "C16 palmitoyl"
+      },
+      {
+        "at": "A28",
+        "type": "other",
+        "label": "Arg34 replaces Lys34, leaving Lys26 as the only lysine for acylation",
+        "short": "K34R"
+      }
+    ],
+    "notation": "H-His-Ala-Glu-Gly-Thr-Phe-Thr-Ser-Asp-Val-Ser-Ser-Tyr-Leu-Glu-Gly-Gln-Ala-Ala-Lys(γGlu-palmitoyl)-Glu-Phe-Ile-Ala-Trp-Leu-Val-Arg-Gly-Arg-Gly-OH",
+    "note": "Residues are numbered 7–37 in the literature, following native GLP-1. Unlike semaglutide, liraglutide keeps the native Ala8."
+  },
+  "formula": "C172H265N43O51",
+  "mw": 3751.26,
+  "half_life": "≈ 13 hours",
+  "half_life_hours": 13,
+  "routes": [
+    "Subcutaneous injection, once daily"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "4APD",
+        "title": "Liraglutide in aqueous solution",
+        "method": "Solution NMR",
+        "resolution": null,
+        "year": 2013,
+        "peptide_chain": "A",
+        "note": "20-model NMR ensemble of the free peptide in water at pH 7.9 (Steensgaard et al., deposited 2012); the γGlu-palmitoyl side chain is modelled as ligand D6M"
+      }
+    ],
+    "pubchem_cid": 16134956,
+    "notes": "This NMR ensemble is the only liraglutide entry found in the PDB; no receptor-bound liraglutide structure is available. The depositors describe two helical segments whose orientation relative to each other is poorly defined."
+  },
+  "ids": {
+    "pubchem_cid": 16134956,
+    "cas": "204656-20-2",
+    "drugbank": "DB06655",
+    "chembl": "CHEMBL4084119",
+    "unii": "839I73S42A",
+    "kegg": "D06404",
+    "chebi": "CHEBI:71193",
+    "atc": "A10BJ02",
+    "inn": "liraglutide"
+  },
+  "wiki": "Liraglutide",
+  "queries": {
+    "pubmed": "(liraglutide[tiab] OR NN2211[tiab] OR Victoza[tiab] OR Saxenda[tiab])",
+    "ctgov": "liraglutide OR NN2211"
+  },
+  "uses": {
+    "approved": [
+      {
+        "use": "Type 2 diabetes",
+        "detail": "Glycaemic control as an adjunct to diet and exercise in adults and, since 2019, in children aged 10 and over (Victoza).",
+        "since": 2009,
+        "where": "Worldwide, including the EU, US, Japan and China"
+      },
+      {
+        "use": "Cardiovascular risk reduction in type 2 diabetes",
+        "detail": "Reduces cardiovascular death, non-fatal heart attack and non-fatal stroke in adults with type 2 diabetes and established cardiovascular disease (LEADER).",
+        "since": 2017,
+        "where": "US"
+      },
+      {
+        "use": "Chronic weight management in adults",
+        "detail": "Saxenda 3 mg daily for adults with obesity, or with overweight and at least one weight-related condition, alongside diet and physical activity.",
+        "since": 2014,
+        "where": "US (2014), EU (2015), China (2023, domestic liraglutide) and many other countries"
+      },
+      {
+        "use": "Weight management in adolescents",
+        "detail": "Ages 12–17 with obesity and body weight above 60 kg.",
+        "since": 2020,
+        "where": "US, EU"
+      },
+      {
+        "use": "Weight management in children aged 6–11",
+        "detail": "Children with obesity (BMI at or above the 95th percentile) weighing at least 45 kg, based on the SCALE Kids trial.",
+        "since": 2025,
+        "where": "EU"
+      },
+      {
+        "use": "Type 2 diabetes, combined with basal insulin",
+        "detail": "Fixed-ratio combination with insulin degludec in one daily injection (Xultophy).",
+        "since": 2014,
+        "where": "EU (2014), US (2016)"
+      }
+    ],
+    "investigational": [
+      {
+        "use": "Type 1 diabetes (add-on to insulin)",
+        "stage": "Phase 3 — not approved",
+        "detail": "In ADJUNCT ONE (1,398 adults), liraglutide added to insulin modestly lowered HbA1c (by up to 0.2 percentage points versus placebo), insulin dose and body weight, but increased symptomatic hypoglycaemia and hyperglycaemia with ketosis."
+      },
+      {
+        "use": "Non-alcoholic steatohepatitis (MASH)",
+        "stage": "Phase 2 — positive (2016)",
+        "detail": "In the 52-patient LEAN trial, 39% of patients on liraglutide 1.8 mg had resolution of steatohepatitis after 48 weeks versus 9% on placebo, with less fibrosis progression."
+      },
+      {
+        "use": "Alzheimer's disease",
+        "stage": "Phase 2b — primary end point not met (2025)",
+        "detail": "The ELAD trial in 204 people with mild to moderate Alzheimer's disease found no difference in cerebral glucose metabolism after 52 weeks, although an executive-function score favoured liraglutide."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Compounded liraglutide",
+        "detail": "Liraglutide has been listed in the FDA drug-shortage database since July 2023, a status under which compounding of copies is permitted. In April 2026 FDA proposed excluding liraglutide from the 503B bulks list, finding no clinical need for outsourcing facilities to compound it from bulk drug substance.",
+        "evidence": "Compounded products are not FDA-approved; their quality, dose accuracy and sterility are not assured."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1996,
+      "date": "1996-08-30",
+      "title": "Liraglutide patented",
+      "detail": "Novo Nordisk filed the priority application for a patent on fatty-acid-acylated GLP-1 derivatives (inventors Knudsen, Huusfeldt and Nielsen); one of its examples is the compound later named liraglutide.",
+      "kind": "discovery"
+    },
+    {
+      "year": 2000,
+      "date": "2000-05",
+      "title": "Discovery paper published",
+      "detail": "Knudsen and colleagues reported in J Med Chem that GLP-1 derivatives carrying fatty acids of 12 or more carbons bind albumin and are protracted enough for once-daily dosing.",
+      "kind": "science"
+    },
+    {
+      "year": 2002,
+      "date": "2002-02",
+      "title": "First human studies",
+      "detail": "In healthy men, NN2211 had a half-life of about 12.6 hours after subcutaneous injection, supporting once-daily dosing.",
+      "kind": "trial"
+    },
+    {
+      "year": 2009,
+      "date": "2009-06-30",
+      "title": "EU approves Victoza",
+      "detail": "The first authorisation of liraglutide anywhere, for type 2 diabetes, based on the LEAD phase 3 programme.",
+      "kind": "approval"
+    },
+    {
+      "year": 2009,
+      "date": "2009-07",
+      "title": "LEAD-6 beats twice-daily exenatide",
+      "detail": "In 464 patients, once-daily liraglutide 1.8 mg lowered HbA1c by 1.12 percentage points versus 0.79 with exenatide, with less persistent nausea and less minor hypoglycaemia.",
+      "kind": "trial"
+    },
+    {
+      "year": 2010,
+      "date": "2010-01-25",
+      "title": "FDA approves Victoza",
+      "detail": "US approval followed Japan's on 20 January 2010. FDA added a boxed warning about thyroid C-cell tumours seen in rodents and required a cardiovascular outcomes trial and a medullary thyroid carcinoma registry of at least 15 years.",
+      "kind": "approval"
+    },
+    {
+      "year": 2014,
+      "date": "2014-12-23",
+      "title": "Saxenda: first GLP-1 drug for obesity",
+      "detail": "FDA approved liraglutide 3 mg for chronic weight management; the EU followed on 23 March 2015. In the 56-week SCALE trial (3,731 adults) participants lost 8.4 kg on average versus 2.8 kg with placebo.",
+      "kind": "approval"
+    },
+    {
+      "year": 2016,
+      "date": "2016-06-13",
+      "title": "LEADER shows cardiovascular benefit",
+      "detail": "In 9,340 people with type 2 diabetes at high cardiovascular risk, liraglutide reduced cardiovascular death, heart attack or stroke by 13% (13.0% vs 14.9%) and cardiovascular death by 22% over a median 3.8 years.",
+      "kind": "trial"
+    },
+    {
+      "year": 2017,
+      "date": "2017-08-25",
+      "title": "Cardiovascular indication approved",
+      "detail": "FDA approved Victoza to reduce the risk of major adverse cardiovascular events in adults with type 2 diabetes and established cardiovascular disease, the first such indication for a GLP-1 drug.",
+      "kind": "approval"
+    },
+    {
+      "year": 2019,
+      "date": "2019-06-17",
+      "title": "Approved for children with type 2 diabetes",
+      "detail": "Based on the Ellipse trial (HbA1c 1.06 percentage points lower than placebo at 26 weeks), Victoza became the first new non-insulin option for paediatric type 2 diabetes in 19 years, for ages 10 and over.",
+      "kind": "approval"
+    },
+    {
+      "year": 2020,
+      "date": "2020-12-04",
+      "title": "Saxenda approved for adolescents",
+      "detail": "FDA extended Saxenda to ages 12–17 with obesity and body weight above 60 kg; in the 251-participant trial, 43% reduced their BMI by at least 5% versus 19% on placebo.",
+      "kind": "approval"
+    },
+    {
+      "year": 2023,
+      "date": "2023-07",
+      "title": "China approves liraglutide for weight management",
+      "detail": "China's NMPA approved Huadong Medicine's domestically made liraglutide for weight management, reported as the country's first GLP-1 drug for obesity; it had been approved for type 2 diabetes in March 2023.",
+      "kind": "approval"
+    },
+    {
+      "year": 2024,
+      "date": "2024-06-24",
+      "title": "First generic GLP-1 on the US market",
+      "detail": "Teva launched an authorised generic of Victoza, the first generic GLP-1 product sold in the US; liraglutide had been listed in shortage since July 2023.",
+      "kind": "market"
+    },
+    {
+      "year": 2024,
+      "date": "2024-09",
+      "title": "Lasker Award for Lotte Bjerre Knudsen",
+      "detail": "Knudsen shared the Lasker~DeBakey Clinical Medical Research Award with Joel Habener and Svetlana Mojsov; the citation credits her fatty-acid strategy that made liraglutide the first once-daily GLP-1-based drug.",
+      "kind": "culture"
+    },
+    {
+      "year": 2024,
+      "date": "2024-12-23",
+      "title": "First independent generic approved",
+      "detail": "FDA approved Hikma's generic of Victoza, the first generic once-daily GLP-1 injection. By March 2026 generics of Victoza or Saxenda had been approved for six manufacturers.",
+      "kind": "approval"
+    },
+    {
+      "year": 2025,
+      "date": "2025-05-22",
+      "title": "EU recommends Saxenda for children aged 6–11",
+      "detail": "The CHMP backed extending Saxenda to children with obesity weighing at least 45 kg after SCALE Kids showed a 5.8% fall in BMI versus a 1.6% rise with placebo at 56 weeks.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2025,
+      "date": "2025-08-27",
+      "title": "First generic Saxenda approved",
+      "detail": "FDA approved Teva's generic of Saxenda, the first generic GLP-1 indicated for weight management; Teva launched it the following day.",
+      "kind": "market"
+    },
+    {
+      "year": 2026,
+      "date": "2026-01-13",
+      "title": "Suicidality warning removed",
+      "detail": "After a meta-analysis of 91 trials (107,910 patients) found no increased risk, FDA asked for suicidal behaviour and ideation warnings to be removed from Saxenda, Wegovy and Zepbound labels; Saxenda's label was updated in February 2026.",
+      "kind": "safety"
+    },
+    {
+      "year": 2026,
+      "date": "2026-07-15",
+      "title": "EU authorises synthetic liraglutide",
+      "detail": "STADA's Liraglutide STADA and Ablymico, hybrid medicines referencing Victoza and Saxenda whose liraglutide is made by chemical synthesis rather than in living cells, received EU marketing authorisations.",
+      "kind": "approval"
+    },
+    {
+      "year": 2026,
+      "date": "2026-08-25",
+      "title": "Saxenda to be discontinued in the US",
+      "detail": "Novo Nordisk reported to the FDA drug-shortage database that it is discontinuing manufacture of Saxenda for the US, with supply expected until January 2027.",
+      "kind": "market"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "generic",
+      "detail": "Victoza (2010), Saxenda (2014) and Xultophy 100/3.6 (2016). Generics of Victoza since December 2024 and of Saxenda since August 2025 from several manufacturers; liraglutide has been listed in shortage since July 2023. Saxenda is being discontinued (supply until January 2027)."
+    },
+    {
+      "region": "EU",
+      "status": "approved",
+      "detail": "Victoza (2009), Xultophy (2014) and Saxenda (2015; children aged 6–11 added in 2025). Chemically synthesised hybrids Liraglutide STADA and Ablymico authorised July 2026."
+    },
+    {
+      "region": "UK",
+      "status": "approved",
+      "detail": "Victoza (2009) and Saxenda (2015) were authorised in the UK through the EU centralised procedure before Brexit."
+    },
+    {
+      "region": "Japan",
+      "status": "approved",
+      "detail": "Victoza approved on 20 January 2010, the first GLP-1 analogue approved in Japan."
+    },
+    {
+      "region": "China",
+      "status": "approved",
+      "detail": "Huadong Medicine's domestically made liraglutide approved for type 2 diabetes (March 2023) and weight management (July 2023)."
+    },
+    {
+      "region": "Russia",
+      "status": "approved",
+      "detail": "Promomed's domestically produced liraglutide (Enligria) was registered in September 2023."
+    },
+    {
+      "region": "WADA",
+      "status": "permitted",
+      "detail": "GLP-1 receptor agonists are not on the World Anti-Doping Agency prohibited list."
+    }
+  ],
+  "pk": {
+    "half_life": "About 13 hours after subcutaneous injection",
+    "tmax": "8–12 hours",
+    "bioavailability": "≈ 55% (subcutaneous)",
+    "metabolism": "More than 98% bound to plasma proteins; broken down like large proteins, without a specific organ as the main route of elimination",
+    "excretion": "No intact liraglutide in urine or faeces; about 6% and 5% of a radiolabelled dose recovered as metabolites in urine and faeces"
+  },
+  "dosing": [
+    {
+      "product": "Victoza",
+      "regimen": "0.6 mg once daily for one week, then 1.2 mg; may be increased to 1.8 mg daily after at least one week. Children aged 10 and over follow the same steps, with at least one week at each dose."
+    },
+    {
+      "product": "Saxenda (adults)",
+      "regimen": "0.6 mg daily, increased by 0.6 mg each week to the 3 mg maintenance dose. US label: stop if less than 4% of body weight has been lost after 16 weeks; EU label: stop if less than 5% after 12 weeks at 3 mg."
+    },
+    {
+      "product": "Saxenda (children and adolescents)",
+      "regimen": "Same escalation to 3 mg daily, which may take up to 8 weeks; the US label allows a reduction to 2.4 mg if 3 mg is not tolerated."
+    }
+  ],
+  "dosing_note": "Labelled regimens summarised for reference only; follow the prescribing information and a clinician's advice.",
+  "safety": {
+    "common": [
+      "Nausea",
+      "Diarrhoea",
+      "Vomiting",
+      "Constipation",
+      "Decreased appetite",
+      "Dyspepsia",
+      "Headache",
+      "Injection-site reactions"
+    ],
+    "serious": [
+      "Acute pancreatitis",
+      "Gallbladder disease (gallstones, cholecystitis)",
+      "Hypoglycaemia when combined with insulin or sulfonylureas",
+      "Acute kidney injury from dehydration",
+      "Serious hypersensitivity reactions (anaphylaxis, angioedema)",
+      "Increased resting heart rate",
+      "Aspiration risk during anaesthesia or deep sedation"
+    ],
+    "warnings": [
+      "US boxed warning: thyroid C-cell tumours seen in rodents; contraindicated with a personal or family history of medullary thyroid carcinoma or MEN 2",
+      "Pens must never be shared between patients, even if the needle is changed"
+    ],
+    "notes": "At approval in 2010 FDA required a medullary thyroid carcinoma case registry of at least 15 years. In January 2026 FDA asked for suicidal behaviour and ideation warnings to be removed from Saxenda's label after reviewing trial and real-world data. In the adolescent obesity trial, BMI rose again after treatment was stopped."
+  },
+  "market": {
+    "note": "Sales have declined as once-weekly semaglutide and tirzepatide took over the market and US generics launched; Victoza sales fell 45% in 2025. Active-ingredient patents for Victoza and Saxenda have expired in the US, China, Japan and Europe.",
+    "figures": [
+      {
+        "year": 2023,
+        "label": "Victoza sales",
+        "value": "DKK 8.7 bn",
+        "source": "Novo Nordisk Annual Report 2025"
+      },
+      {
+        "year": 2023,
+        "label": "Saxenda sales",
+        "value": "DKK 10.3 bn",
+        "source": "Novo Nordisk Annual Report 2025"
+      },
+      {
+        "year": 2024,
+        "label": "Victoza sales",
+        "value": "DKK 5.5 bn",
+        "source": "Novo Nordisk Annual Report 2025"
+      },
+      {
+        "year": 2024,
+        "label": "Saxenda sales",
+        "value": "DKK 6.9 bn",
+        "source": "Novo Nordisk Annual Report 2025"
+      },
+      {
+        "year": 2025,
+        "label": "Victoza sales",
+        "value": "DKK 3.0 bn",
+        "source": "Novo Nordisk Annual Report 2025"
+      },
+      {
+        "year": 2025,
+        "label": "Saxenda sales",
+        "value": "DKK 3.2 bn",
+        "source": "Novo Nordisk Annual Report 2025"
+      }
+    ]
+  },
+  "facts": [
+    "Liraglutide's amino-acid sequence is 97% identical to human GLP-1; apart from the fatty acid, the only change is arginine in place of lysine at position 34.",
+    "The palmitic-acid tail stretches the half-life from 1.5–2 minutes for native GLP-1 to about 13 hours.",
+    "Novo Nordisk's liraglutide is made by expressing a precursor peptide in baker's yeast and attaching the fatty acid chemically; the EU's 2026 hybrid copies use fully synthetic liraglutide instead.",
+    "Victoza's 2019 paediatric approval gave children with type 2 diabetes their first new non-insulin treatment option in 19 years.",
+    "Lotte Bjerre Knudsen, who led liraglutide's development, shared the 2024 Lasker~DeBakey Clinical Medical Research Award."
+  ],
+  "related": [
+    "semaglutide",
+    "exenatide",
+    "tirzepatide",
+    "insulin",
+    "glucagon",
+    "retatrutide",
+    "survodutide",
+    "mazdutide"
+  ],
+  "references": [
+    {
+      "title": "Potent derivatives of glucagon-like peptide-1 with pharmacokinetic properties suitable for once daily administration",
+      "authors": "Knudsen LB, Nielsen PF, Huusfeldt PO, et al.",
+      "journal": "J Med Chem",
+      "year": 2000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10794683/"
+    },
+    {
+      "title": "The pharmacokinetics, pharmacodynamics, safety and tolerability of NN2211, a new long-acting GLP-1 derivative, in healthy men",
+      "authors": "Agersø H, Jensen LB, Elbrønd B, et al.",
+      "journal": "Diabetologia",
+      "year": 2002,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11935150/"
+    },
+    {
+      "title": "Liraglutide once a day versus exenatide twice a day for type 2 diabetes: a 26-week randomised, parallel-group, multinational, open-label trial (LEAD-6)",
+      "authors": "Buse JB, Rosenstock J, Sesti G, et al.",
+      "journal": "Lancet",
+      "year": 2009,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19515413/"
+    },
+    {
+      "title": "A randomized, controlled trial of 3.0 mg of liraglutide in weight management (SCALE Obesity and Prediabetes)",
+      "authors": "Pi-Sunyer X, Astrup A, Fujioka K, et al.",
+      "journal": "N Engl J Med",
+      "year": 2015,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26132939/"
+    },
+    {
+      "title": "Liraglutide and cardiovascular outcomes in type 2 diabetes (LEADER)",
+      "authors": "Marso SP, Daniels GH, Brown-Frandsen K, et al.",
+      "journal": "N Engl J Med",
+      "year": 2016,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27295427/"
+    },
+    {
+      "title": "Liraglutide safety and efficacy in patients with non-alcoholic steatohepatitis (LEAN): a multicentre, double-blind, randomised, placebo-controlled phase 2 study",
+      "authors": "Armstrong MJ, Gaunt P, Aithal GP, et al.",
+      "journal": "Lancet",
+      "year": 2016,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26608256/"
+    },
+    {
+      "title": "Liraglutide in children and adolescents with type 2 diabetes (Ellipse)",
+      "authors": "Tamborlane WV, Barrientos-Pérez M, Fainberg U, et al.",
+      "journal": "N Engl J Med",
+      "year": 2019,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31034184/"
+    },
+    {
+      "title": "A randomized, controlled trial of liraglutide for adolescents with obesity",
+      "authors": "Kelly AS, Auerbach P, Barrientos-Perez M, et al.",
+      "journal": "N Engl J Med",
+      "year": 2020,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32233338/"
+    },
+    {
+      "title": "Liraglutide for children 6 to <12 years of age with obesity — a randomized trial (SCALE Kids)",
+      "authors": "Fox CK, Barrientos-Pérez M, Bomberg EM, et al.",
+      "journal": "N Engl J Med",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39258838/"
+    },
+    {
+      "title": "Liraglutide in mild to moderate Alzheimer's disease: a phase 2b clinical trial (ELAD)",
+      "authors": "Edison P, Femminella GD, Ritchie C, et al.",
+      "journal": "Nat Med",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41326666/"
+    }
+  ]
+}

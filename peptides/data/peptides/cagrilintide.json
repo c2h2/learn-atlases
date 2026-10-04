@@ -1,0 +1,132 @@
+{
+  "slug": "cagrilintide",
+  "name": "Cagrilintide",
+  "aliases": ["NNC0174-0833", "NN9838", "NN9833", "AM833"],
+  "category": "metabolic",
+  "drug_class": "Amylin and calcitonin receptor agonist",
+  "subclass": "Long-acting, fatty-acid acylated amylin analogue",
+  "status": "clinical",
+  "status_note": "Not approved anywhere. CagriSema (cagrilintide plus semaglutide) was submitted to the FDA in December 2025 with a decision expected in the fourth quarter of 2026; cagrilintide alone has been in phase 3 (RENEW) since November 2025.",
+  "evidence": 4,
+  "evidence_note": "Large phase 3 programme for the CagriSema combination (REDEFINE 1 and 2 alone enrolled 4,623 people) plus phase 2 and phase 3 data for cagrilintide alone; cardiovascular outcome results (REDEFINE 3) are pending.",
+  "tagline": "Novo Nordisk's once-weekly amylin analogue, partnered with semaglutide in CagriSema",
+  "summary": "Cagrilintide is a long-acting, fatty-acid-modified version of the pancreatic hormone amylin, developed by Novo Nordisk for obesity. Injected once a week, it reduces appetite through amylin and calcitonin receptors. Combined with semaglutide as CagriSema it produced about 20% average weight loss in phase 3, and the combination is under FDA review with a decision expected in late 2026.",
+  "overview": [
+    "Cagrilintide is Novo Nordisk's long-acting version of amylin, the 37-amino-acid hormone that pancreatic beta cells release with insulin and that slows stomach emptying, restrains glucagon and signals fullness. The only earlier amylin drug, pramlintide (Symlin), lasts less than an hour and had to be injected before every main meal; cagrilintide was designed for once-weekly injection, with obesity as the main target.",
+    "It is built on the pramlintide sequence, keeping its prolines at positions 25, 28 and 29, with three further changes and a fatty-acid tail. Asn14→Glu and Val17→Arg form a helix-stabilising pair that counters amylin's tendency to form amyloid fibrils, the C-terminal tyrosine-amide is replaced by proline-amide, and the N-terminal amine carries a C20 fatty diacid attached through γ-glutamate. The diacid binds albumin in the blood, giving a half-life of about a week. Cagrilintide activates both the amylin receptors and the calcitonin receptor.",
+    "Given alone, cagrilintide reduced body weight by up to 10.8% in a 26-week phase 2 trial and by 11.8% over 68 weeks in the REDEFINE 1 phase 3 trial (assuming adherence). Its main use is in CagriSema, a once-weekly fixed-dose combination with semaglutide: in REDEFINE 1 the combination gave 20.4% mean weight loss versus 3.0% with placebo, and in people with type 2 diabetes (REDEFINE 2) 13.7% versus 3.4%. In an open-label head-to-head trial it did not match tirzepatide 15 mg (REDEFINE 4, 2026).",
+    "Novo Nordisk filed CagriSema with the FDA in December 2025; a decision is expected in the fourth quarter of 2026, and approval would make it the first combined GLP-1 and amylin analogue treatment. A separate phase 3 programme for cagrilintide alone (RENEW) started in November 2025, alongside CagriSema trials in type 2 diabetes (REIMAGINE), cardiovascular outcomes (REDEFINE 3) and children and adolescents."
+  ],
+  "mechanism": [
+    "Cagrilintide is a non-selective agonist of the calcitonin receptor family: it activates the three amylin receptors (AMY1–3, the calcitonin receptor paired with RAMP1, RAMP2 or RAMP3) and the calcitonin receptor itself. Cryo-EM structures show that it binds these receptors in an amylin-like pose. Amylin-receptor agonism, acting largely through the hindbrain, increases fullness and reduces food intake, slows gastric emptying and lowers glucagon after meals.",
+    "Amylin analogues and GLP-1 analogues act through different receptors and their effects on weight add up. In REDEFINE 1, assuming adherence, weight loss at 68 weeks was 22.7% with cagrilintide plus semaglutide, 16.1% with semaglutide alone and 11.8% with cagrilintide alone."
+  ],
+  "origin": "Synthetic analogue of human amylin derived from pramlintide, carrying an N-terminal C20 fatty diacid for albumin binding",
+  "discovery": {"year": 2011, "by": "Lauge Schäffer, Thomas Kruse, Henning Thøgersen and colleagues, Novo Nordisk", "where": "Måløv, Denmark", "note": "Disclosed in a Novo Nordisk patent application with a June 2011 priority date (WO2012168430) as N-α-[(S)-4-carboxy-4-(19-carboxynonadecanoylamino)butyryl]-[Glu14,Arg17,Pro37]-pramlintide. The medicinal-chemistry work was published in J Med Chem in 2021."},
+  "first_human_year": 2014,
+  "first_approval": null,
+  "developer": "Novo Nordisk",
+  "brands": [],
+  "targets": [
+    {"name": "Amylin receptors AMY1–3 (calcitonin receptor with RAMP1, RAMP2 or RAMP3)", "gene": "CALCR + RAMP1/RAMP2/RAMP3", "uniprot": "P30988", "action": "Agonist"},
+    {"name": "Calcitonin receptor", "gene": "CALCR", "uniprot": "P30988", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["K","C","N","T","A","T","C","A","T","Q","R","L","A","E","F","L","R","H","S","S","N","N","F","G","P","I","L","P","P","T","N","V","G","S","N","T","P"], "n_term": "C20 diacid-γGlu", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [{"from": "A2", "to": "A7", "type": "disulfide"}],
+    "modifications": [
+      {"at": "A1", "type": "lipidation", "label": "The N-terminal α-amino group of Lys1 carries icosanedioic acid (a C20 fatty diacid) attached through a γ-glutamate linker; it binds serum albumin and extends the half-life to about a week", "short": "C20 diacid"},
+      {"at": "A14", "type": "other", "label": "Glu14 replaces Asn14 of amylin and pramlintide; with Arg17 a helix-stabilising pair that counters fibril formation", "short": "N14E"},
+      {"at": "A17", "type": "other", "label": "Arg17 replaces Val17 of amylin and pramlintide; with Glu14 a helix-stabilising pair", "short": "V17R"},
+      {"at": "A25", "type": "other", "label": "Pro25 as in pramlintide (Ala25 in human amylin)", "short": "A25P"},
+      {"at": "A28", "type": "other", "label": "Pro28 as in pramlintide (Ser28 in human amylin)", "short": "S28P"},
+      {"at": "A29", "type": "other", "label": "Pro29 as in pramlintide (Ser29 in human amylin)", "short": "S29P"},
+      {"at": "A37", "type": "other", "label": "C-terminal Pro37-amide replaces the Tyr37-amide of amylin and pramlintide", "short": "Y37P"}
+    ],
+    "notation": "HOOC-(CH2)18-CO-γGlu-Lys-Cys-Asn-Thr-Ala-Thr-Cys-Ala-Thr-Gln-Arg-Leu-Ala-Glu-Phe-Leu-Arg-His-Ser-Ser-Asn-Asn-Phe-Gly-Pro-Ile-Leu-Pro-Pro-Thr-Asn-Val-Gly-Ser-Asn-Thr-Pro-NH2 (disulfide Cys2–Cys7)",
+    "note": "Numbered 1–37 like human amylin. Equivalent to N-α-[γGlu-(C20 diacid)]-[Glu14,Arg17,Pro37]-pramlintide; the lipid is on the N-terminal amine, so the Lys1 side chain is free."
+  },
+  "formula": "C194H312N54O59S2",
+  "mw": 4409.07,
+  "half_life": "≈ 7–8 days (159–195 h)",
+  "half_life_hours": 177,
+  "routes": ["Subcutaneous injection, once weekly (investigational)"],
+  "structure": {
+    "pdb": [
+      {"id": "9BP3", "title": "Cagrilintide bound to the human amylin 1 receptor (calcitonin receptor–RAMP1) in complex with Gs", "method": "Cryo-EM", "resolution": 2.2, "year": 2025, "peptide_chain": "P", "note": "Active receptor complex; the γGlu linker and the C20 diacid (ligand A1B90) are included in the model"},
+      {"id": "9BUB", "title": "Cagrilintide bound to the human calcitonin receptor in complex with Gs", "method": "Cryo-EM", "resolution": 2.3, "year": 2025, "peptide_chain": "P", "note": "'Bypass' conformation; a second calcitonin-receptor conformation is in 9BUD"},
+      {"id": "9BQ3", "title": "Cagrilintide bound to the human amylin 2 receptor (calcitonin receptor–RAMP2) in complex with Gs", "method": "Cryo-EM", "resolution": 2.8, "year": 2025, "peptide_chain": "P", "note": "The matching amylin 3 receptor complex is 9BTW"},
+      {"id": "7BG0", "title": "Cagrilintide (AM833) backbone fused to maltose-binding protein", "method": "X-ray", "resolution": 2.89, "year": 2021, "peptide_chain": "A", "note": "From the discovery paper; non-acylated peptide fused to MBP to aid crystallisation (chains A, B, D and E are copies of the fusion)"}
+    ],
+    "pubchem_cid": 171397054,
+    "notes": "Cao et al. (2025) solved cryo-EM structures of cagrilintide bound to all three amylin receptors and the calcitonin receptor; it adopts an amylin-like binding mode but induces distinct receptor dynamics. An independent 2026 study deposited further amylin 1 and calcitonin receptor complexes (9UWQ, 9UWM)."
+  },
+  "ids": {"pubchem_cid": 171397054, "cas": "1415456-99-3", "chembl": "CHEMBL4802169", "unii": "AO43BIF1U8", "inn": "cagrilintide"},
+  "wiki": "Cagrilintide",
+  "queries": {"pubmed": "(cagrilintide[tiab] OR CagriSema[tiab] OR \"NNC0174-0833\"[tiab])", "ctgov": "cagrilintide OR CagriSema OR NNC0174-0833"},
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Obesity and overweight (CagriSema)", "stage": "Phase 3 — FDA decision expected Q4 2026", "detail": "In REDEFINE 1 (3,417 adults without diabetes), weekly cagrilintide 2.4 mg plus semaglutide 2.4 mg gave 20.4% mean weight loss at 68 weeks versus 3.0% with placebo; a new drug application was filed in December 2025."},
+      {"use": "Obesity with type 2 diabetes (CagriSema)", "stage": "Phase 3 — positive", "detail": "REDEFINE 2 (1,206 adults) showed 13.7% weight loss with CagriSema versus 3.4% with placebo at 68 weeks."},
+      {"use": "Obesity versus tirzepatide (CagriSema)", "stage": "Phase 3 — non-inferiority not met (2026)", "detail": "In the open-label 84-week REDEFINE 4 trial (809 participants), weight loss was 23.0% with CagriSema versus 25.5% with tirzepatide 15 mg."},
+      {"use": "Type 2 diabetes (CagriSema)", "stage": "Phase 3 — positive", "detail": "In the REIMAGINE programme CagriSema lowered HbA1c and weight more than its components (REIMAGINE 2) and than placebo on top of basal insulin (REIMAGINE 3); a 1.0 mg/1.0 mg dose gave more weight loss than tirzepatide 5 mg (REIMAGINE 5)."},
+      {"use": "Obesity (cagrilintide alone)", "stage": "Phase 3 (RENEW, started November 2025)", "detail": "The cagrilintide-only arm of REDEFINE 1 lost 11.8% of body weight versus 2.3% with placebo (assuming adherence), leading to the dedicated RENEW 1 and RENEW 2 trials in people with obesity with or without type 2 diabetes."},
+      {"use": "Cardiovascular risk reduction (CagriSema)", "stage": "Phase 3 — ongoing", "detail": "REDEFINE 3 is testing CagriSema's effect on cardiovascular events in people with established cardiovascular disease."}
+    ],
+    "off_label": []
+  },
+  "history": [
+    {"year": 2011, "date": "2011-06-10", "title": "Novo Nordisk patent application", "detail": "A Novo Nordisk application, later published as WO2012168430, described acylated amylin analogues including the compound later named cagrilintide.", "kind": "discovery"},
+    {"year": 2014, "date": "2014-12", "title": "First human dosing", "detail": "A single-dose phase 1 trial of NNC0174-0833 began in 54 healthy men with normal weight, overweight or obesity in the US.", "kind": "trial"},
+    {"year": 2021, "date": "2021-05", "title": "Phase 1b with semaglutide", "detail": "Cagrilintide 2.4 mg plus semaglutide 2.4 mg gave 17.1% weight loss after 20 weeks versus 9.8% with semaglutide plus placebo.", "kind": "trial"},
+    {"year": 2021, "date": "2021-08", "title": "Discovery paper published", "detail": "Kruse and colleagues described the structure–activity work that led to cagrilintide in J Med Chem.", "kind": "science"},
+    {"year": 2021, "date": "2021-12", "title": "Phase 2 dose-finding results", "detail": "In 706 adults, weekly cagrilintide gave 6.0–10.8% weight loss at 26 weeks versus 3.0% with placebo and 9.0% with daily liraglutide 3.0 mg.", "kind": "trial"},
+    {"year": 2023, "date": "2023-08", "title": "Phase 2 in type 2 diabetes", "detail": "Over 32 weeks in 92 adults, CagriSema lowered HbA1c by 2.2 percentage points and body weight by 15.6%, versus 5.1% weight loss with semaglutide and 8.1% with cagrilintide alone.", "kind": "trial"},
+    {"year": 2024, "date": "2024-12-20", "title": "REDEFINE 1 headline results", "detail": "CagriSema gave 22.7% weight loss at 68 weeks in people who adhered to treatment, versus 16.1% with semaglutide and 11.8% with cagrilintide alone.", "kind": "trial"},
+    {"year": 2025, "date": "2025-03-10", "title": "REDEFINE 2 in type 2 diabetes", "detail": "CagriSema gave 13.7% weight loss versus 3.4% with placebo (15.7% versus 3.1% in people who adhered to treatment).", "kind": "trial"},
+    {"year": 2025, "date": "2025-09-16", "title": "Stand-alone cagrilintide programme", "detail": "Novo Nordisk presented monotherapy data at the EASD congress and moved cagrilintide into its own phase 3 programme (RENEW), which began in November 2025.", "kind": "trial"},
+    {"year": 2025, "date": "2025-12-18", "title": "CagriSema filed with the FDA", "detail": "Novo Nordisk submitted a new drug application for once-weekly CagriSema for weight management, based on REDEFINE 1 and 2.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-02-02", "title": "REIMAGINE 2 in type 2 diabetes", "detail": "CagriSema lowered HbA1c by 1.91 percentage points and body weight by 14.2%, both superior to its individual components.", "kind": "trial"},
+    {"year": 2026, "date": "2026-02-23", "title": "REDEFINE 4 misses non-inferiority", "detail": "In an open-label 84-week comparison, CagriSema gave 23.0% weight loss versus 25.5% with tirzepatide 15 mg, failing to show non-inferiority.", "kind": "trial"},
+    {"year": 2026, "date": "2026-09-21", "title": "Low dose beats tirzepatide 5 mg", "detail": "In REIMAGINE 5, CagriSema 1.0 mg/1.0 mg gave 12.4% weight loss versus 9.1% with tirzepatide 5 mg in type 2 diabetes, with non-inferior HbA1c lowering.", "kind": "trial"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "investigational", "detail": "New drug application for CagriSema (cagrilintide 2.4 mg plus semaglutide 2.4 mg) for weight management submitted 18 December 2025; FDA decision expected in the fourth quarter of 2026. Cagrilintide alone is in phase 3."}
+  ],
+  "pk": {
+    "half_life": "159–195 hours (about a week) in the phase 1b trial",
+    "tmax": "Median 24–72 hours after subcutaneous injection"
+  },
+  "dosing": null,
+  "dosing_note": "No approved dose. Phase 3 trials tested once-weekly subcutaneous doses of up to 2.4 mg, alone or combined with semaglutide.",
+  "safety": {
+    "common": ["Nausea", "Vomiting", "Diarrhoea", "Constipation", "Injection-site reactions"],
+    "serious": [],
+    "warnings": ["Investigational: no approved label; long-term safety, including cardiovascular outcomes (REDEFINE 3), is still being studied", "In phase 3 the safety profile of CagriSema was consistent with the GLP-1 receptor agonist class"],
+    "notes": "Gastrointestinal effects dominate: in the phase 2 monotherapy trial 41–63% of participants on cagrilintide reported gastrointestinal events versus 32% on placebo, mostly nausea. In REDEFINE 1, 5.9% of people stopped CagriSema because of adverse events versus 3.5% on placebo."
+  },
+  "market": null,
+  "facts": [
+    "Cagrilintide activates both the amylin receptors and the calcitonin receptor, making it a non-selective agonist of the calcitonin receptor family.",
+    "Its fatty-acid tail sits on the N-terminal amine rather than on a lysine side chain, as in semaglutide and liraglutide.",
+    "Its half-life of about a week compares with about 48 minutes for the older amylin analogue pramlintide.",
+    "The molecule was first disclosed in a 2011 Novo Nordisk patent application, more than three years before the first human dose.",
+    "According to Novo Nordisk, the 11.8% weight loss with cagrilintide alone in REDEFINE 1 was the first phase 3 result for a long-acting amylin analogue given on its own."
+  ],
+  "related": ["semaglutide", "pramlintide", "eloralintide", "tirzepatide", "retatrutide", "liraglutide"],
+  "references": [
+    {"title": "Development of cagrilintide, a long-acting amylin analogue", "authors": "Kruse T, Hansen JL, Dahl K, et al.", "journal": "J Med Chem", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34288673/"},
+    {"title": "Safety, tolerability, pharmacokinetics, and pharmacodynamics of concomitant administration of multiple doses of cagrilintide with semaglutide 2·4 mg for weight management: a randomised, controlled, phase 1b trial", "authors": "Enebo LB, Berthelsen KK, Kankam M, et al.", "journal": "Lancet", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/33894838/"},
+    {"title": "AM833 is a novel agonist of calcitonin family G protein-coupled receptors: pharmacological comparison with six selective and nonselective agonists", "authors": "Fletcher MM, Keov P, Truong TT, et al.", "journal": "J Pharmacol Exp Ther", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/33727283/"},
+    {"title": "Once-weekly cagrilintide for weight management in people with overweight and obesity: a multicentre, randomised, double-blind, placebo-controlled and active-controlled, dose-finding phase 2 trial", "authors": "Lau DCW, Erichsen L, Francisco AM, et al.", "journal": "Lancet", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34798060/"},
+    {"title": "Efficacy and safety of co-administered once-weekly cagrilintide 2·4 mg with once-weekly semaglutide 2·4 mg in type 2 diabetes: a multicentre, randomised, double-blind, active-controlled, phase 2 trial", "authors": "Frias JP, Deenadayalan S, Erichsen L, et al.", "journal": "Lancet", "year": 2023, "url": "https://pubmed.ncbi.nlm.nih.gov/37364590/"},
+    {"title": "Structural and dynamic features of cagrilintide binding to calcitonin and amylin receptors", "authors": "Cao J, Belousoff MJ, Johnson RM, et al.", "journal": "Nat Commun", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/40204768/"},
+    {"title": "Coadministered cagrilintide and semaglutide in adults with overweight or obesity (REDEFINE 1)", "authors": "Garvey WT, Blüher M, Osorto Contreras CK, et al.", "journal": "N Engl J Med", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/40544433/"},
+    {"title": "Cagrilintide–semaglutide in adults with overweight or obesity and type 2 diabetes (REDEFINE 2)", "authors": "Davies MJ, Bajaj HS, Broholm C, et al.", "journal": "N Engl J Med", "year": 2025, "url": "https://pubmed.ncbi.nlm.nih.gov/40544432/"},
+    {"title": "Cagrilintide-semaglutide (CagriSema) as an add-on to basal insulin in adults with type 2 diabetes (REIMAGINE 3): a randomised, double-blind, placebo-controlled, multicentre, phase 3 study", "authors": "Rosenstock J, Billings LK, Gajria R, et al.", "journal": "Lancet", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42251856/"}
+  ]
+}

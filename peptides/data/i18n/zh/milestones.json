@@ -1,0 +1,30 @@
+[
+  {
+    "title": "促胰液素：第一种激素",
+    "detail": "William Bayliss与Ernest Starling发现，肠黏膜分泌的一种物质可经血液刺激胰腺，并将其命名为促胰液素。这是人类鉴定出的第一种激素，而它是一种肽。"
+  },
+  {
+    "title": "固相肽合成",
+    "detail": "Bruce Merrifield把不断延长的肽链锚定在树脂微珠上，把缓慢的溶液化学变成了可重复、可自动化的循环。本图谱中几乎所有合成肽都是这样制造的。"
+  },
+  {
+    "title": "表彰脑部肽激素的诺贝尔奖",
+    "detail": "Roger Guillemin与Andrew Schally因发现TRH、GnRH和生长抑素等下丘脑肽激素，分享了诺贝尔生理学或医学奖；同年获奖的还有建立肽激素放射免疫分析法的Rosalyn Yalow。"
+  },
+  {
+    "title": "Merrifield获诺贝尔奖",
+    "detail": "诺贝尔化学奖表彰了固相合成法——当今工业化多肽生产的基础方法。"
+  },
+  {
+    "title": "AlphaFold 2攻克结构预测",
+    "detail": "在CASP14评估中，DeepMind的AlphaFold 2以接近实验的精度预测了蛋白质结构，使从未被结晶的序列也能得到预测模型。"
+  },
+  {
+    "title": "ESMFold与ESM宏基因组图谱",
+    "detail": "Meta AI发布了ESMFold：一种基于语言模型、快到足以折叠数亿条序列的结构预测工具。本图谱中的预测模型即来自ESMFold。"
+  },
+  {
+    "title": "蛋白质设计与结构预测获诺贝尔奖",
+    "detail": "David Baker、Demis Hassabis与John Jumper因计算蛋白质设计和AlphaFold分享了诺贝尔化学奖。"
+  }
+]

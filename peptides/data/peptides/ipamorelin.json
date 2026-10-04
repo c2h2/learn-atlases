@@ -1,0 +1,129 @@
+{
+  "slug": "ipamorelin",
+  "name": "Ipamorelin",
+  "aliases": ["NNC 26-0161", "Ipamorelin acetate"],
+  "category": "gh",
+  "drug_class": "Ghrelin receptor (GHS-R1a) agonist",
+  "subclass": "Synthetic pentapeptide growth hormone secretagogue (GHRP family)",
+  "status": "research",
+  "status_note": "Not approved in any country. Development for postoperative ileus stopped after phase 2 trials; it is sold online as a 'research peptide' and has been supplied by US wellness clinics, but an FDA advisory committee voted against allowing pharmacy compounding in 2024.",
+  "evidence": 3,
+  "evidence_note": "Human data consist of one pharmacokinetic study in healthy men (1999) and two phase 2 trials in bowel-surgery patients; only the first (117 patients) was published, and it missed its primary endpoint. There are no trials in growth hormone deficiency, ageing, body composition or sport.",
+  "tagline": "Selective GH-releasing pentapeptide; a shelved drug candidate now sold online",
+  "summary": "Ipamorelin is a five-amino-acid synthetic peptide that mimics the stomach hormone ghrelin and makes the pituitary gland release growth hormone (GH). Designed by Novo Nordisk in the 1990s, it stood out because it released GH without raising the stress hormones ACTH and cortisol, but a trial for speeding bowel recovery after surgery failed and it was never approved. It is now widely sold online and through wellness clinics for body composition and anti-ageing, uses that have not been tested in clinical trials.",
+  "overview": [
+    "Ipamorelin belongs to the growth hormone-releasing peptides (GHRPs), small synthetic peptides that grew out of work by Cyril Bowers and Frank Momany on modified enkephalin peptides, first published in 1981. Novo Nordisk's chemists found it in a series of compounds lacking the central Ala-Trp dipeptide of an earlier secretagogue, GHRP-1, and in 1998 Raun and colleagues described it as 'the first selective growth hormone secretagogue'. In rat pituitary cells and in pigs it released GH with potency and efficacy similar to GHRP-6, but unlike GHRP-6 and GHRP-2 it did not raise ACTH or cortisol, even at doses more than 200 times higher than those needed for GH release.",
+    "The only human pharmacokinetic study, published in 1999, gave 15-minute intravenous infusions to healthy men: blood levels fell with a terminal half-life of about 2 hours, and each dose produced a single pulse of GH peaking at about 40 minutes. Because ghrelin-receptor stimulation speeds gut motility, Helsinn Therapeutics then developed intravenous ipamorelin for postoperative ileus. It shortened time to first bowel movement in rats, but in a 117-patient phase 2 trial in bowel-resection patients the median time to a tolerated meal (25.3 versus 32.6 hours) was not significantly different from placebo. A larger 320-patient dose-finding trial ran from 2011 to 2014 without published results, and development was discontinued.",
+    "Since then ipamorelin has become a staple of the unregulated 'peptide' market. FDA reviewers found that it is supplied by medical spas and wellness clinics, often compounded as injections, nasal sprays or oral products and combined with CJC-1295 or sermorelin; it is also marketed online as a 'research peptide'. None of these uses has been tested in trials. FDA placed ipamorelin in its 'significant safety risk' compounding category in 2023, its advisory committee voted 0–12 against allowing it to be compounded in 2024, and the World Anti-Doping Agency prohibits it at all times."
+  ],
+  "mechanism": [
+    "Ipamorelin is an agonist of the growth hormone secretagogue receptor type 1a (GHS-R1a), the receptor for the hormone ghrelin, found on pituitary somatotroph cells and in the hypothalamus. Pharmacological experiments with GHRP and GHRH antagonists showed that it acts through this GHRP-type receptor rather than the GHRH receptor, producing a short burst of GH release that in turn stimulates insulin-like growth factor 1 (IGF-1) production.",
+    "Its distinguishing feature is selectivity: in pigs it did not change FSH, LH, prolactin or TSH and, unlike GHRP-2 and GHRP-6, did not raise ACTH or cortisol. Ghrelin receptors also regulate gut motility and appetite, and in a rat model of postoperative ileus ipamorelin accelerated gastrointestinal transit and, with repeated doses, increased food intake."
+  ],
+  "origin": "Synthetic peptide derived from GHRP-1, a member of the growth hormone-releasing peptide series that began with modified Met-enkephalin analogues; not found in nature",
+  "discovery": {"year": 1998, "by": "K. Raun and colleagues, Novo Nordisk", "where": "Måløv, Denmark", "note": "Identified in a Novo Nordisk medicinal-chemistry programme on GH secretagogues and published in the European Journal of Endocrinology in November 1998."},
+  "first_human_year": 1999,
+  "first_approval": null,
+  "developer": "Novo Nordisk (discovery); Helsinn Therapeutics (clinical development for postoperative ileus)",
+  "brands": [],
+  "analogs": [
+    {"name": "GHRP-1", "note": "Ala-His-D-2Nal-Ala-Trp-D-Phe-Lys-NH2; ipamorelin was derived from it by removing the central Ala-Trp and placing Aib at position 1."},
+    {"name": "GHRP-6 and GHRP-2 (pralmorelin)", "note": "Earlier hexapeptide secretagogues; both also raise ACTH, cortisol and prolactin. GHRP-2 is approved in Japan as a diagnostic."},
+    {"name": "Macimorelin (Macrilen)", "note": "Orally active peptidomimetic ghrelin-receptor agonist approved by the FDA on 20 December 2017 as a test for adult GH deficiency."},
+    {"name": "Anamorelin (Adlumiz)", "note": "Oral non-peptide ghrelin-receptor agonist approved in Japan on 22 January 2021 for cancer cachexia."}
+  ],
+  "targets": [
+    {"name": "Growth hormone secretagogue receptor type 1 (ghrelin receptor)", "gene": "GHSR", "uniprot": "Q92847", "action": "Agonist"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["Aib", "H", "dNal", "f", "K"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A1", "type": "nonnatural", "label": "Aib1 (α-aminoisobutyric acid, 2-methylalanine), a non-proteinogenic residue in the position of Ala1 of GHRP-1", "short": "Aib"},
+      {"at": "A3", "type": "d-amino", "label": "3-(2-Naphthyl)-D-alanine (D-2Nal), a bulky non-natural aromatic D-amino acid shared with GHRP-1 and GHRP-2", "short": "D-2Nal"},
+      {"at": "A4", "type": "d-amino", "label": "D-Phe4, the D-phenylalanine found in all of the GHRP-type secretagogues", "short": "D-Phe"},
+      {"at": "A5", "type": "amidation", "label": "C-terminal lysine amide (Lys-NH2)", "short": "NH2"}
+    ],
+    "notation": "H-Aib-His-D-2Nal-D-Phe-Lys-NH2",
+    "note": "Pentapeptide. D-2Nal is 3-(2-naphthyl)-D-alanine. Compared with GHRP-1 (Ala-His-D-2Nal-Ala-Trp-D-Phe-Lys-NH2) it lacks the central Ala-Trp dipeptide."
+  },
+  "formula": "C38H49N9O5",
+  "mw": 711.85,
+  "half_life": "≈ 2 hours (terminal, after intravenous infusion)",
+  "half_life_hours": 2,
+  "routes": ["Intravenous infusion (clinical trials)", "Subcutaneous injection (compounded and grey-market products)", "Nasal spray and oral preparations (compounded products)"],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 9831659,
+    "notes": "No experimental structure of ipamorelin has been deposited in the PDB, so the model shown is predicted. The closest experimental reference is the 2021 cryo-EM structure of the related peptide GHRP-6 bound to the ghrelin receptor (PDB 7F9Z)."
+  },
+  "ids": {"pubchem_cid": 9831659, "cas": "170851-70-4", "drugbank": "DB12370", "chembl": "CHEMBL58547", "unii": "Y9M3S784Z6", "inn": "ipamorelin"},
+  "wiki": "Ipamorelin",
+  "queries": {"pubmed": "(ipamorelin[tiab] OR \"NNC 26-0161\"[tiab])", "ctgov": "ipamorelin"},
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Postoperative ileus", "stage": "Phase 2 — failed; discontinued", "detail": "Intravenous ipamorelin (0.03 mg/kg twice daily for up to 7 days) did not significantly shorten time to a tolerated solid meal after bowel resection in a 117-patient trial (NCT00672074). A 320-patient dose-finding trial (NCT01280344, 2011–2014) was completed but its results were not published."},
+      {"use": "Growth hormone deficiency", "stage": "Not studied", "detail": "Nominated to FDA for compounding for GH deficiency, but FDA found no effectiveness studies in GH-deficient children or adults."}
+    ],
+    "off_label": [
+      {"use": "Anti-ageing, body composition and 'recovery'", "detail": "Supplied by medical spas, wellness clinics and online 'research peptide' vendors as injections, nasal sprays or oral products, often combined with CJC-1295 or sermorelin to amplify GH release.", "evidence": "No controlled trial has tested ipamorelin for these purposes, and the identity, purity and sterility of unapproved products are not assured."},
+      {"use": "Performance enhancement in sport", "detail": "Taken by some athletes to raise GH; it is prohibited at all times by WADA and has led to suspensions in professional sport, including NBA players in 2018 and 2019.", "evidence": "No evidence of a performance benefit in humans."}
+    ]
+  },
+  "history": [
+    {"year": 1984, "date": "1984-05", "title": "GHRP-6 founds the peptide secretagogue class", "detail": "Cyril Bowers and colleagues at Tulane University described the hexapeptide GHRP-6, which released GH through a receptor distinct from that of GHRH; ipamorelin was later derived from its relative GHRP-1.", "kind": "science"},
+    {"year": 1996, "date": "1996-08-16", "title": "Secretagogue receptor cloned", "detail": "Merck scientists cloned the G-protein-coupled receptor through which synthetic GH secretagogues act, later named the ghrelin receptor.", "kind": "science"},
+    {"year": 1998, "date": "1998-11", "title": "Ipamorelin described by Novo Nordisk", "detail": "Raun et al. reported a pentapeptide as potent as GHRP-6 at releasing GH but without the ACTH and cortisol rises seen with GHRP-2 and GHRP-6.", "kind": "discovery"},
+    {"year": 1999, "date": "1999-04", "title": "Bone growth in rats", "detail": "Fifteen days of injections increased longitudinal bone growth and body-weight gain in adult female rats.", "kind": "science"},
+    {"year": 1999, "date": "1999-09", "title": "First human pharmacokinetic study", "detail": "Intravenous infusions in healthy men showed dose-proportional kinetics, a terminal half-life of about 2 hours and a single GH pulse after each dose.", "kind": "trial"},
+    {"year": 2008, "date": "2008-04", "title": "Phase 2 trial in postoperative ileus", "detail": "Helsinn Therapeutics began a placebo-controlled trial of intravenous ipamorelin in patients recovering from bowel resection (NCT00672074).", "kind": "trial"},
+    {"year": 2009, "date": "2009-06", "title": "Prokinetic effect in rats", "detail": "In a rat model of postoperative ileus, ipamorelin shortened the time to first bowel movement and, with repeated dosing, increased food intake and weight gain.", "kind": "science"},
+    {"year": 2011, "date": "2011-04", "title": "Larger dose-finding trial", "detail": "Helsinn started a 320-patient phase 2 trial (NCT01280344); it was completed in 2014 but no results were published.", "kind": "trial"},
+    {"year": 2014, "date": "2014-10", "title": "Ileus trial reported as negative", "detail": "Beck et al. reported no significant difference from placebo in time to a tolerated meal (25.3 v 32.6 hours, p = 0.15); development for ileus was later discontinued.", "kind": "trial"},
+    {"year": 2018, "date": "2018-04-13", "title": "NBA suspension", "detail": "The NBA suspended Washington Wizards guard Jodie Meeks for 25 games after he tested positive for ipamorelin and GHRP-2.", "kind": "regulatory"},
+    {"year": 2019, "date": "2019-08-29", "title": "Second NBA suspension", "detail": "Wilson Chandler of the Brooklyn Nets was suspended for 25 games after testing positive for ipamorelin.", "kind": "regulatory"},
+    {"year": 2023, "date": "2023-09-29", "title": "FDA 'significant safety risk' listing", "detail": "FDA placed ipamorelin acetate in Category 2 of its bulk-substance lists for compounding, citing possible immunogenicity and serious adverse events in an intravenous trial.", "kind": "regulatory"},
+    {"year": 2024, "date": "2024-09-19", "title": "Compounding nominations withdrawn", "detail": "The organisations that had nominated ipamorelin withdrew their nominations and it was removed from the 503A Category 2 list, but FDA proceeded with an advisory-committee review.", "kind": "regulatory"},
+    {"year": 2024, "date": "2024-10-29", "title": "Advisory committee votes no", "detail": "FDA's Pharmacy Compounding Advisory Committee voted 0–12 with one abstention against adding ipamorelin (acetate or free base) to the list of substances pharmacies may compound, citing a lack of safety and efficacy data.", "kind": "regulatory"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "not-approved", "detail": "Never approved. Placed in Category 2 (significant safety risks) of FDA's compounding bulk-substance lists on 29 September 2023; after the 503A nominations were withdrawn, the Pharmacy Compounding Advisory Committee voted 0–12 on 29 October 2024 against adding it to the 503A bulks list. It remained in 503B Category 2 (injectable use) in 2026."},
+    {"region": "EU", "status": "not-approved", "detail": "No marketing authorisation; FDA's 2024 review found no listing on the EMA website or in the European pharmacopoeia."},
+    {"region": "WADA", "status": "prohibited", "detail": "Named as a growth hormone secretagogue under S2.2.4 of the 2026 Prohibited List; prohibited at all times."}
+  ],
+  "pk": {
+    "half_life": "About 2 hours (terminal) after 15-minute intravenous infusions in healthy men; clearance 0.078 L/h/kg",
+    "tmax": "GH peaks about 40 minutes (0.67 h) after the start of an intravenous dose",
+    "metabolism": "Resistant to metabolism in rats (FDA review); no human metabolism data",
+    "excretion": "Excreted in urine in rats; human data lacking"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose. The only clinical doses were intravenous infusions in a pharmacokinetic study and in the postoperative-ileus trials; regimens promoted by clinics and online vendors are not based on clinical trials.",
+  "safety": {
+    "common": ["Nausea, vomiting and abdominal distension (similar to placebo in the ileus trial)", "Hypokalaemia, insomnia and raised blood glucose at discharge (more frequent than with placebo in the same trial)", "Headache and increased tear production (spontaneous report with a compounded nasal spray)"],
+    "serious": ["Two deaths in the ipamorelin arm of the first ileus trial, after treatment had ended; causality was not established", "Serious postoperative complications (infection, anastomotic leak) in the same surgical population, not clearly attributable to the drug"],
+    "warnings": ["Not approved: the identity, purity and sterility of compounded and grey-market products are not assured", "FDA cites a potential for immune reactions (immunogenicity) because of aggregation and peptide-related impurities", "Prohibited in sport at all times (WADA S2)"],
+    "notes": "No long-term safety data exist. FDA found no acute or repeat-dose toxicity, genotoxicity, reproductive or carcinogenicity studies of ipamorelin; its reviewers noted that ghrelin-receptor activation promotes reward-seeking behaviour in rodents and that ghrelin impaired fertility and embryo development in mice, but whether ipamorelin shares these effects is unknown."
+  },
+  "market": null,
+  "facts": [
+    "Ipamorelin was made by deleting the central Ala-Trp dipeptide of GHRP-1, shrinking a heptapeptide to a pentapeptide.",
+    "In pigs it did not raise ACTH or cortisol even at doses more than 200 times its ED50 for GH release.",
+    "FDA's advisory committee rejected it for compounding 0–12 in 2024, with one abstention, for both the acetate salt and the free base.",
+    "WADA lists it as an example of a growth hormone secretagogue under section S2 of the Prohibited List."
+  ],
+  "related": ["ghrp-6", "ghrp-2", "cjc-1295", "sermorelin", "tesamorelin"],
+  "references": [
+    {"title": "Ipamorelin, the first selective growth hormone secretagogue", "authors": "Raun K, Hansen BS, Johansen NL, et al.", "journal": "Eur J Endocrinol", "year": 1998, "url": "https://pubmed.ncbi.nlm.nih.gov/9849822/"},
+    {"title": "Pharmacokinetic-pharmacodynamic modeling of ipamorelin, a growth hormone releasing peptide, in human volunteers", "authors": "Gobburu JV, Agersø H, Jusko WJ, et al.", "journal": "Pharm Res", "year": 1999, "url": "https://pubmed.ncbi.nlm.nih.gov/10496658/"},
+    {"title": "Ipamorelin, a new growth-hormone-releasing peptide, induces longitudinal bone growth in rats", "authors": "Johansen PB, Nowak J, Skjaerbaek C, et al.", "journal": "Growth Horm IGF Res", "year": 1999, "url": "https://pubmed.ncbi.nlm.nih.gov/10373343/"},
+    {"title": "Efficacy of ipamorelin, a novel ghrelin mimetic, in a rodent model of postoperative ileus", "authors": "Venkova K, Mann W, Nelson R, et al.", "journal": "J Pharmacol Exp Ther", "year": 2009, "url": "https://pubmed.ncbi.nlm.nih.gov/19289567/"},
+    {"title": "Prospective, randomized, controlled, proof-of-concept study of the Ghrelin mimetic ipamorelin for the management of postoperative ileus in bowel resection patients", "authors": "Beck DE, Sweeney WB, McCarter MD", "journal": "Int J Colorectal Dis", "year": 2014, "url": "https://pubmed.ncbi.nlm.nih.gov/25331030/"},
+    {"title": "Pharmacy Compounding Advisory Committee meeting, 29 October 2024: ipamorelin-related bulk drug substances (transcript)", "authors": "US Food and Drug Administration", "journal": "FDA", "year": 2024, "url": "https://www.fda.gov/media/185414/download"},
+    {"title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration", "authors": "Dominikowski A, Rękoś Z, Olejarz M, et al.", "journal": "Front Endocrinol (Lausanne)", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42395176/"}
+  ]
+}

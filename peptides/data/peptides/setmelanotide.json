@@ -1,0 +1,142 @@
+{
+  "slug": "setmelanotide",
+  "name": "Setmelanotide",
+  "aliases": ["RM-493", "BIM-22493"],
+  "category": "melanocortin",
+  "drug_class": "Melanocortin 4 receptor agonist",
+  "subclass": "Cyclic (disulfide-bridged) octapeptide",
+  "status": "approved",
+  "status_note": "Approved in the US (2020) and EU (2021) for obesity caused by POMC, PCSK1 or LEPR deficiency, later extended to Bardet–Biedl syndrome (2022), to children from age 2 (2024) and to acquired hypothalamic obesity (US and EU, 2026).",
+  "evidence": 4,
+  "evidence_note": "Approvals rest on small single-arm phase 3 trials in ultra-rare genetic obesity (10–11 patients per disorder), a 38-patient randomised phase 3 trial in Bardet–Biedl and Alström syndromes, and the randomised, placebo-controlled TRANSCEND trial in acquired hypothalamic obesity.",
+  "tagline": "Daily MC4R-agonist injection for rare genetic and hypothalamic forms of obesity",
+  "summary": "Setmelanotide is a small ring-shaped peptide that switches on the melanocortin 4 receptor (MC4R), the brain's key 'satiety' receptor. It is used, as the once-daily injection Imcivree, for severe early-onset obesity caused by broken links in the leptin–melanocortin pathway — POMC, PCSK1 or LEPR deficiency and Bardet–Biedl syndrome — and, since 2026, for obesity after hypothalamic damage. It reduces hunger and weight in these patients but is not a treatment for common obesity.",
+  "overview": [
+    "The melanocortin 4 receptor sits at the end of the brain's leptin–melanocortin pathway: leptin from fat stimulates hypothalamic POMC neurons, whose product α-MSH activates MC4R to reduce hunger and raise energy expenditure. Rare genetic defects anywhere along this chain cause insatiable hunger and severe obesity from early childhood. Earlier MC4R agonists raised heart rate and blood pressure, but setmelanotide, discovered in Ipsen's MC4R programme and licensed in 2010 to the company that became Rhythm Pharmaceuticals of Boston, produced weight loss in obese monkeys and raised energy expenditure in obese adults without these effects.",
+    "In 2016 two patients with POMC deficiency, who cannot make α-MSH, lost 51 kg and 20.5 kg on setmelanotide, with a sustained fall in hunger. Small phase 3 trials followed: 8 of 10 patients with POMC deficiency and 5 of 11 with LEPR deficiency lost at least 10% of body weight in about a year, leading to FDA approval of Imcivree in November 2020 and EU authorisation in July 2021.",
+    "Approval was extended to Bardet–Biedl syndrome, a ciliopathy thought to impair MC4R-pathway signalling, in 2022, and to children from the age of 2 in 2024. In March 2026 the FDA approved it for acquired hypothalamic obesity, which most often follows tumours in the hypothalamic region and their treatment; the phase 3 TRANSCEND trial showed a placebo-adjusted BMI reduction of 18.4%, and the EU extended its authorisation the same year.",
+    "Imcivree's net sales reached about US$195 million in 2025. Rhythm is developing successors, including a once-weekly MC4R agonist (RM-718) and an oral small molecule (bivamelagon), while cryo-EM structures of setmelanotide bound to MC4R have shown that calcium acts as a cofactor for agonist binding and activation."
+  ],
+  "mechanism": [
+    "Setmelanotide is a potent MC4R agonist with about 20-fold less activity at MC3R and MC1R. By activating MC4R in the brain it is thought to restore signalling that is missing when α-MSH is absent (POMC or PCSK1 deficiency), when leptin cannot activate POMC neurons (LEPR deficiency), when ciliary defects impair the pathway (Bardet–Biedl syndrome) or when the hypothalamus is damaged, reducing hunger and food intake and increasing energy expenditure.",
+    "Its residual MC1R activity darkens the skin and moles independently of sunlight, and melanocortin effects on sexual function are the likely cause of the spontaneous erections seen in some male patients. In rhesus monkeys and in early human studies it did not raise heart rate or blood pressure, unlike earlier MC4R agonists."
+  ],
+  "origin": "Synthetic cyclic peptide agonist built around the His-Phe-Arg-Trp core that melanocortin hormones such as α-MSH use to activate their receptors",
+  "discovery": {"year": 2012, "by": "Ipsen (MC4R programme); first published with Oregon Health & Science University", "where": "Ipsen research laboratories; primate studies at the Oregon National Primate Research Center, Portland, USA", "note": "Licensed from Ipsen to Rhythm's predecessor company in February 2010; the first peer-reviewed description, as BIM-22493/RM-493 producing weight loss without blood-pressure or heart-rate increases in obese rhesus macaques, appeared online in October 2012."},
+  "first_human_year": 2012,
+  "first_approval": {"date": "2020-11-25", "agency": "FDA", "region": "US", "brand": "Imcivree", "indication": "Chronic weight management in obesity due to POMC, PCSK1 or LEPR deficiency (age 6 and over)"},
+  "developer": "Rhythm Pharmaceuticals (Boston, USA), under licence from Ipsen",
+  "brands": [
+    {"name": "Imcivree", "company": "Rhythm Pharmaceuticals", "route": "Subcutaneous injection, once daily", "use": "Obesity due to POMC, PCSK1 or LEPR deficiency or Bardet–Biedl syndrome (age 2 and over); acquired hypothalamic obesity (age 4 and over)", "approved": "2020-11-25", "agency": "FDA"}
+  ],
+  "targets": [
+    {"name": "Melanocortin 4 receptor", "gene": "MC4R", "uniprot": "P32245", "action": "Agonist (therapeutic target)"},
+    {"name": "Melanocortin 1 receptor", "gene": "MC1R", "uniprot": "Q01726", "action": "Weaker agonist (about 20-fold less active); causes skin darkening"},
+    {"name": "Melanocortin 3 receptor", "gene": "MC3R", "uniprot": "P41968", "action": "Weaker agonist (about 20-fold less active)"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["R","C","a","H","f","R","W","C"], "n_term": "Ac", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [{"from": "A2", "to": "A8", "type": "disulfide"}],
+    "modifications": [
+      {"at": "A3", "type": "d-amino", "label": "D-alanine at position 3 constrains the ring conformation and resists proteolysis", "short": "D-Ala"},
+      {"at": "A5", "type": "d-amino", "label": "D-phenylalanine in the His-D-Phe-Arg-Trp pharmacophore, as in melanotan II, boosts potency", "short": "D-Phe"}
+    ],
+    "notation": "Ac-Arg-cyclo[Cys-D-Ala-His-D-Phe-Arg-Trp-Cys]-NH2",
+    "note": "The N-terminal arginine is acetylated and the C-terminal cysteine is amidated; a disulfide bond between Cys2 and Cys8 closes the ring."
+  },
+  "formula": "C49H68N18O9S2",
+  "mw": 1117.3,
+  "half_life": "≈ 11 h",
+  "half_life_hours": 11,
+  "routes": ["Subcutaneous injection, once daily"],
+  "structure": {
+    "pdb": [
+      {"id": "7PIU", "title": "Setmelanotide bound to the active melanocortin-4 receptor in complex with Gs protein", "method": "Cryo-EM", "resolution": 2.58, "year": 2021, "peptide_chain": "P", "note": "Highest-resolution setmelanotide complex; published with a companion NDP-α-MSH structure (7PIV)"},
+      {"id": "7AUE", "title": "Melanocortin-4 receptor–Gs complex with setmelanotide", "method": "Cryo-EM", "resolution": 2.97, "year": 2021, "peptide_chain": "C", "note": "One of the first active-state MC4R structures (Israeli et al., Science 2021); the peptide chain is the acetylated cyclic setmelanotide"},
+      {"id": "21LT", "title": "Setmelanotide-bound melanocortin-4 receptor in complex with an engineered Gq protein", "method": "Cryo-EM", "resolution": 3.11, "year": 2026, "peptide_chain": "P", "note": "Released August 2026; shows MC4R coupled to a Gq-type rather than a Gs protein"}
+    ],
+    "pubchem_cid": 11993702,
+    "notes": "The MC4R structures show a bound calcium ion acting as a cofactor that is required for agonist (but not antagonist) efficacy, and highlight transmembrane helix 3 in ligand-specific contacts; setmelanotide is reported to be biased towards Gq/11 signalling, which the 2026 Gq complex addresses."
+  },
+  "ids": {"pubchem_cid": 11993702, "cas": "920014-72-8", "drugbank": "DB11700", "chembl": "CHEMBL3301624", "unii": "N7T15V1FUY", "kegg": "D11927", "atc": "A08AA12", "inn": "setmelanotide"},
+  "wiki": "Setmelanotide",
+  "queries": {
+    "pubmed": "(setmelanotide[tiab] OR \"RM-493\"[tiab] OR \"BIM-22493\"[tiab] OR Imcivree[tiab])",
+    "ctgov": "setmelanotide OR RM-493"
+  },
+  "uses": {
+    "approved": [
+      {"use": "Obesity due to POMC, PCSK1 or LEPR deficiency", "detail": "Genetically confirmed variants in POMC, PCSK1 or LEPR interpreted as pathogenic, likely pathogenic or of uncertain significance (US); biallelic loss-of-function variants (EU).", "since": 2020, "where": "US, EU, UK"},
+      {"use": "Obesity in Bardet–Biedl syndrome", "detail": "Reduces weight and hunger in this ciliopathy; approved for adults and children from age 2.", "since": 2022, "where": "US, EU, UK"},
+      {"use": "Acquired hypothalamic obesity", "detail": "Obesity after hypothalamic injury or dysfunction, most often following tumours and their treatment; approved from age 4.", "since": 2026, "where": "US, EU"}
+    ],
+    "investigational": [
+      {"use": "Other rare syndromic obesities", "stage": "Phase 2 / small studies", "detail": "Explored in other genetic disorders affecting the MC4R pathway, including a small study in Smith–Magenis syndrome published in 2024; results in Alström syndrome were inconclusive."}
+    ],
+    "off_label": [
+      {"use": "Common (polygenic) obesity", "detail": "Not indicated; the label states it would not be expected to be effective in obesity unrelated to the approved genetic or hypothalamic causes.", "evidence": "Approval data come only from people with defects in the MC4R pathway."}
+    ]
+  },
+  "history": [
+    {"year": 2010, "date": "2010-02", "title": "Licensed from Ipsen", "detail": "Ipsen granted Rhythm's predecessor company an exclusive worldwide licence to its MC4R programme, including setmelanotide.", "kind": "market"},
+    {"year": 2012, "date": "2012-10", "title": "Weight loss in obese monkeys", "detail": "In diet-induced obese rhesus macaques, BIM-22493 cut food intake and body weight and improved insulin sensitivity without raising blood pressure or heart rate.", "kind": "science"},
+    {"year": 2015, "date": "2015-04", "title": "Energy expenditure raised in humans", "detail": "An inpatient study in obese adults found that RM-493 increased resting energy expenditure without adverse effects on heart rate or blood pressure.", "kind": "trial"},
+    {"year": 2016, "date": "2016-07-21", "title": "First patients with POMC deficiency treated", "detail": "Two patients who cannot make α-MSH lost 51.0 kg and 20.5 kg with a sustained reduction in hunger (NEJM).", "kind": "trial"},
+    {"year": 2020, "date": "2020-10", "title": "Phase 3 genetic-obesity results", "detail": "8 of 10 patients with POMC deficiency and 5 of 11 with LEPR deficiency lost at least 10% of body weight after about a year.", "kind": "trial"},
+    {"year": 2020, "date": "2020-11-25", "title": "FDA approves Imcivree", "detail": "Approved for chronic weight management in patients aged 6 and over with obesity due to POMC, PCSK1 or LEPR deficiency.", "kind": "approval"},
+    {"year": 2021, "date": "2021-05", "title": "Structure of the drug on its receptor", "detail": "Cryo-EM structures of MC4R in its active state bound to setmelanotide were published in Science and, later that year, in Cell Research.", "kind": "science"},
+    {"year": 2021, "date": "2021-07-16", "title": "EU authorisation", "detail": "The European Commission authorised Imcivree for POMC (including PCSK1) and LEPR deficiency; it was designated an orphan medicine and supported through the PRIME scheme.", "kind": "approval"},
+    {"year": 2022, "date": "2022-06-16", "title": "Bardet–Biedl syndrome approval", "detail": "The FDA extended the label to Bardet–Biedl syndrome after a randomised phase 3 trial; the EU followed in September 2022.", "kind": "approval"},
+    {"year": 2024, "date": "2024-07", "title": "Approved from age 2", "detail": "The EU (July 2024) and the FDA (December 2024) extended use to children aged 2 and over.", "kind": "approval"},
+    {"year": 2026, "date": "2026-03-19", "title": "Acquired hypothalamic obesity approval", "detail": "The FDA approved Imcivree for acquired hypothalamic obesity from age 4, the first FDA-approved therapy for the condition; the EMA's CHMP backed the same extension a week later.", "kind": "approval"},
+    {"year": 2026, "date": "2026-07-09", "title": "TRANSCEND published", "detail": "In 120 participants aged 4 to 66, BMI fell by 16.5% with setmelanotide versus a 3.3% rise with placebo over 52 weeks, with less hunger (NEJM).", "kind": "trial"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "approved", "detail": "Imcivree (NDA 213793): POMC, PCSK1 or LEPR deficiency (2020), Bardet–Biedl syndrome (2022), children from age 2 (2024) and acquired hypothalamic obesity from age 4 (March 2026)."},
+    {"region": "EU", "status": "approved", "detail": "Authorised July 2021 as an orphan medicine; Bardet–Biedl syndrome added in 2022, children from age 2 in 2024 and acquired hypothalamic obesity in 2026."},
+    {"region": "UK", "status": "approved", "detail": "Authorised by the MHRA for Bardet–Biedl syndrome and POMC, PCSK1 or LEPR deficiency in adults and children aged 2 and over."}
+  ],
+  "pk": {
+    "half_life": "≈ 11 h (effective elimination half-life)",
+    "tmax": "Median 8 h after subcutaneous injection",
+    "metabolism": "Expected to be broken down into small peptides by catabolic pathways; 79% bound to plasma proteins",
+    "excretion": "About 39% of a dose excreted unchanged in urine over 24 hours"
+  },
+  "dosing": [
+    {"product": "Imcivree", "regimen": "Once-daily subcutaneous injection. Started at 0.5 mg (acquired hypothalamic obesity, and children aged 2–5 with genetic forms), 1 mg (ages 6–11) or 2 mg (age 12 and over) for 2 weeks, then titrated to a usual maintenance dose of 3 mg daily from age 6; weight-based dosing below age 6."}
+  ],
+  "dosing_note": "Labelled regimen summarised for reference only; treatment is prescribed by specialists in genetic or hypothalamic obesity after confirming the diagnosis.",
+  "safety": {
+    "common": ["Skin hyperpigmentation", "Injection-site reactions", "Nausea", "Vomiting", "Headache", "Diarrhoea", "Abdominal pain", "Depression", "Spontaneous penile erections"],
+    "serious": ["Depression and suicidal ideation", "Serious hypersensitivity reactions, including anaphylaxis", "Acute adrenal insufficiency in acquired hypothalamic obesity", "Low or high blood sodium in acquired hypothalamic obesity with central diabetes insipidus", "Erections lasting more than 4 hours"],
+    "warnings": ["Generalised skin darkening, darkening of existing moles and new moles: full-body skin examination before and during treatment", "Sexual adverse reactions in both sexes", "Not expected to work in common obesity or with benign POMC, PCSK1 or LEPR variants"],
+    "notes": "In TRANSCEND, adverse events occurred in all setmelanotide-treated participants (mostly skin darkening, nausea, vomiting and headache) and serious adverse events in 28% versus 8% with placebo. The label describes it as reducing excess weight and maintaining the reduction long term."
+  },
+  "market": {
+    "note": "Imcivree provides Rhythm Pharmaceuticals' product revenue; sales rose 50% in 2025 on higher volumes in the US and abroad.",
+    "figures": [
+      {"year": 2024, "label": "Imcivree net product revenue", "value": "US$130.1 million", "source": "Rhythm Pharmaceuticals Form 10-K 2025"},
+      {"year": 2025, "label": "Imcivree net product revenue", "value": "US$194.8 million", "source": "Rhythm Pharmaceuticals Form 10-K 2025"}
+    ]
+  },
+  "facts": [
+    "Its central His-D-Phe-Arg-Trp sequence mirrors the His-Phe-Arg-Trp core shared by α-MSH, β-MSH, γ-MSH and ACTH.",
+    "The first two patients treated, both unable to make α-MSH, lost 51 kg and 20.5 kg.",
+    "Skin darkening through MC1R affected all ten patients in the POMC-deficiency trial and 61% of patients in the Bardet–Biedl trial.",
+    "It became the first FDA-approved therapy for acquired hypothalamic obesity, a condition that most often follows tumours and their treatment."
+  ],
+  "related": ["bremelanotide", "afamelanotide", "melanotan-ii", "semaglutide", "tirzepatide", "liraglutide"],
+  "references": [
+    {"title": "Chronic treatment with a melanocortin-4 receptor agonist causes weight loss, reduces insulin resistance, and improves cardiovascular function in diet-induced obese rhesus macaques", "authors": "Kievit P, Halem H, Marks DL, et al.", "journal": "Diabetes", "year": 2013, "url": "https://pubmed.ncbi.nlm.nih.gov/23048186/"},
+    {"title": "RM-493, a melanocortin-4 receptor (MC4R) agonist, increases resting energy expenditure in obese individuals", "authors": "Chen KY, Muniyappa R, Abel BS, et al.", "journal": "J Clin Endocrinol Metab", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/25675384/"},
+    {"title": "Proopiomelanocortin deficiency treated with a melanocortin-4 receptor agonist", "authors": "Kühnen P, Clément K, Wiegand S, et al.", "journal": "N Engl J Med", "year": 2016, "url": "https://pubmed.ncbi.nlm.nih.gov/27468060/"},
+    {"title": "Efficacy and safety of setmelanotide, an MC4R agonist, in individuals with severe obesity due to LEPR or POMC deficiency: single-arm, open-label, multicentre, phase 3 trials", "authors": "Clément K, van den Akker E, Argente J, et al.", "journal": "Lancet Diabetes Endocrinol", "year": 2020, "url": "https://pubmed.ncbi.nlm.nih.gov/33137293/"},
+    {"title": "Structure reveals the activation mechanism of the MC4 receptor to initiate satiation signaling", "authors": "Israeli H, Degtjarik O, Fierro F, et al.", "journal": "Science", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/33858992/"},
+    {"title": "Structures of active melanocortin-4 receptor-Gs-protein complexes with NDP-α-MSH and setmelanotide", "authors": "Heyder NA, Kleinau G, Speck D, et al.", "journal": "Cell Res", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34561620/"},
+    {"title": "Efficacy and safety of setmelanotide, a melanocortin-4 receptor agonist, in patients with Bardet-Biedl syndrome and Alström syndrome: a multicentre, randomised, double-blind, placebo-controlled, phase 3 trial with an open-label period", "authors": "Haqq AM, Chung WK, Dollfus H, et al.", "journal": "Lancet Diabetes Endocrinol", "year": 2022, "url": "https://pubmed.ncbi.nlm.nih.gov/36356613/"},
+    {"title": "Setmelanotide for the treatment of acquired hypothalamic obesity", "authors": "Miller JL, van Santen HM, Phillips SA, et al.", "journal": "N Engl J Med", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42418774/"}
+  ]
+}

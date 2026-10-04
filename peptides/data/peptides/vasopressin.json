@@ -1,0 +1,470 @@
+{
+  "slug": "vasopressin",
+  "name": "Vasopressin (ADH)",
+  "aliases": [
+    "Arginine vasopressin",
+    "AVP",
+    "Antidiuretic hormone",
+    "Argipressin",
+    "8-Arginine vasopressin",
+    "β-Hypophamine"
+  ],
+  "category": "hormone",
+  "drug_class": "Vasopressin receptor agonist (vasopressor and antidiuretic)",
+  "subclass": "Cyclic nonapeptide neurohypophysial hormone",
+  "status": "approved",
+  "status_note": "Used for decades in shock and diabetes insipidus; in the US, aqueous vasopressin injection was sold without an approved application until Vasostrict was approved in 2014, so no single first-approval date applies. Analogues such as desmopressin and terlipressin are approved separately.",
+  "evidence": 5,
+  "evidence_note": "Long clinical use plus randomised trials in septic shock (VASST, 778 patients; VANISH, 409) and in-hospital cardiac arrest (VAM-IHCA, 501); none showed a survival advantage over standard care.",
+  "tagline": "Antidiuretic hormone used as a shock vasopressor and template for desmopressin",
+  "summary": "Vasopressin, also called antidiuretic hormone (ADH), is a nine-amino-acid hormone released from the posterior pituitary that makes the kidneys retain water and, at higher levels, constricts blood vessels. Synthetic vasopressin is infused in intensive care to raise blood pressure in vasodilatory shock such as septic shock, while its long-acting analogue desmopressin treats central diabetes insipidus, bed-wetting and some bleeding disorders. It differs from oxytocin at only two of its nine amino acids.",
+  "overview": [
+    "In 1895 George Oliver and Edward Schäfer showed that extracts of the pituitary gland raise blood pressure. In 1928 Oliver Kamm and colleagues separated the pressor principle ('β-hypophamine', sold as Pitressin) from the uterus-contracting principle (oxytocin). The same hormone was later recognised as the body's main antidiuretic hormone, controlling how much water the kidneys conserve.",
+    "Vincent du Vigneaud's laboratory worked out its structure and in 1954 reported a synthetic preparation with the biological properties of arginine vasopressin. Humans carry arginine at position 8, whereas pigs make lysine vasopressin (lypressin). In the late 1960s Czechoslovak chemists led by Milan Zaoral removed the N-terminal amino group and replaced arginine 8 with its D-form, creating desmopressin, a long-acting analogue with strong and specific antidiuretic activity; it was soon shown to help diabetes insipidus and, from 1977, to release clotting factor VIII in mild haemophilia and von Willebrand disease.",
+    "In 1997 researchers found that plasma vasopressin is inappropriately low in vasodilatory septic shock, prompting its use as an additional vasopressor. The VASST trial (2008) found that adding low-dose vasopressin did not lower mortality compared with noradrenaline, and VANISH (2016) found no benefit on kidney failure when it was used early. In the US, vasopressin injection had been marketed for decades without an approved application until Vasostrict (Par) was approved in April 2014 for vasodilatory shock; other manufacturers' versions have been approved since 2020.",
+    "Vasopressin acts on three receptors — V1a on blood vessels, V1b in the pituitary and V2 in the kidney — and has inspired a family of drugs: desmopressin, the V1-preferring prodrug terlipressin (approved in the US in 2022 for hepatorenal syndrome), the selective V1a agonist selepressin (which failed in septic shock in 2019) and non-peptide 'vaptan' antagonists such as tolvaptan. In 2022 an international working group proposed renaming central and nephrogenic diabetes insipidus 'arginine vasopressin deficiency' and 'arginine vasopressin resistance'. Cryo-EM structures of vasopressin bound to its V2 receptor appeared in 2021 and of the V1a receptor in 2026."
+  ],
+  "mechanism": [
+    "Vasopressin acts on three G protein-coupled receptors. V2 receptors in the kidney's collecting ducts signal through Gs and cAMP to insert aquaporin-2 water channels, concentrating the urine (antidiuresis); V1a receptors on vascular smooth muscle signal through Gq/11 and phospholipase C to release intracellular calcium and constrict blood vessels; V1b (V3) receptors in the anterior pituitary stimulate ACTH release.",
+    "At the infusion rates used in shock, exogenous vasopressin constricts most vascular beds, including the splanchnic, renal and skin circulations, which raises blood pressure but also explains ischaemic side effects. Its half-life in shock is 10 minutes or less, so it is given as a continuous infusion; during pregnancy a placental enzyme (vasopressinase) breaks it down faster."
+  ],
+  "origin": "Natural hormone made in hypothalamic neurons as part of a precursor that also contains neurophysin II and copeptin, and released from the posterior pituitary",
+  "discovery": {
+    "year": 1895,
+    "by": "George Oliver and Edward Schäfer",
+    "where": "London, UK",
+    "note": "They showed that pituitary extracts raise blood pressure. The pressor principle was separated in 1928, and du Vigneaud's group determined its structure and synthesised it in 1953–54."
+  },
+  "first_human_year": 1913,
+  "first_approval": null,
+  "developer": "Natural hormone; first synthesised by Vincent du Vigneaud's group (1954); made by many manufacturers",
+  "brands": [
+    {
+      "name": "Vasostrict",
+      "company": "Par Health (US)",
+      "route": "Continuous intravenous infusion",
+      "use": "Raising blood pressure in adults with vasodilatory shock who remain hypotensive despite fluids and catecholamines",
+      "approved": "2014-04-17",
+      "agency": "FDA"
+    }
+  ],
+  "analogs": [
+    {
+      "name": "Desmopressin (DDAVP)",
+      "note": "1-deamino-8-D-arginine vasopressin (Mpa1, D-Arg8): long-acting, selective antidiuretic with little pressor effect. Used for central diabetes insipidus, primary nocturnal enuresis, and to raise factor VIII in mild haemophilia A and type 1 von Willebrand disease; first US approval 1978. Can cause severe hyponatraemia (boxed warning on the injection) and is prohibited in sport as a masking agent."
+    },
+    {
+      "name": "Terlipressin (Terlivaz, Glypressin)",
+      "note": "Triglycyl-lysine vasopressin, a prodrug of lysine vasopressin with its own activity and twice the selectivity for V1 over V2 receptors. Approved in the US in September 2022 to improve kidney function in hepatorenal syndrome (CONFIRM trial); boxed warning for serious or fatal respiratory failure."
+    },
+    {
+      "name": "Lypressin",
+      "note": "Lysine vasopressin, the natural form in pigs; formerly sold in the US as a nasal solution (Diapid), now discontinued."
+    },
+    {
+      "name": "Felypressin",
+      "note": "[Phe2, Lys8]-vasopressin (Octapressin), a vasoconstrictor combined with prilocaine in some dental local anaesthetics."
+    },
+    {
+      "name": "Selepressin",
+      "note": "Selective V1a agonist; the SEPSIS-ACT phase 2b/3 trial in septic shock (2019) found no improvement in vasopressor- and ventilator-free days."
+    },
+    {
+      "name": "Tolvaptan and other vaptans",
+      "note": "Non-peptide V2-receptor antagonists that block vasopressin's water-retaining action; cryo-EM structures of the V2 receptor bound to tolvaptan and conivaptan were released in 2025."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Vasopressin V1a receptor",
+      "gene": "AVPR1A",
+      "uniprot": "P37288",
+      "action": "Agonist (vasoconstriction)"
+    },
+    {
+      "name": "Vasopressin V1b receptor",
+      "gene": "AVPR1B",
+      "uniprot": "P47901",
+      "action": "Agonist (ACTH release)"
+    },
+    {
+      "name": "Vasopressin V2 receptor",
+      "gene": "AVPR2",
+      "uniprot": "P30518",
+      "action": "Agonist (antidiuresis)"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "C",
+          "Y",
+          "F",
+          "Q",
+          "N",
+          "C",
+          "P",
+          "R",
+          "G"
+        ],
+        "n_term": "H",
+        "c_term": "NH2"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [
+      {
+        "from": "A1",
+        "to": "A6",
+        "type": "disulfide"
+      }
+    ],
+    "modifications": [],
+    "notation": "H-Cys-Tyr-Phe-Gln-Asn-Cys-Pro-Arg-Gly-NH2 (Cys1–Cys6 disulfide)",
+    "note": "Human arginine vasopressin. It shares oxytocin's six-residue disulfide ring and glycinamide tail but has Phe3 and Arg8 (oxytocin: Ile3, Leu8). Desmopressin replaces Cys1 with deamino-cysteine (Mpa) and Arg8 with D-Arg."
+  },
+  "formula": "C46H65N15O12S2",
+  "mw": 1084.2,
+  "half_life": "≤ 10 min at infusion rates used in shock",
+  "half_life_hours": 0.17,
+  "routes": [
+    "Continuous intravenous infusion"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "7DW9",
+        "title": "Arginine vasopressin bound to the V2 receptor in complex with Gs protein",
+        "method": "Cryo-EM",
+        "resolution": 2.6,
+        "year": 2021,
+        "peptide_chain": "C",
+        "note": "Hormone bound to its kidney (antidiuretic) receptor"
+      },
+      {
+        "id": "7KH0",
+        "title": "AVP–vasopressin V2 receptor–Gs signalling complex",
+        "method": "Cryo-EM",
+        "resolution": 2.8,
+        "year": 2021,
+        "peptide_chain": "L",
+        "note": "Independent structure of the same complex"
+      },
+      {
+        "id": "9U40",
+        "title": "Arginine vasopressin bound to the V1a receptor in complex with Gq protein",
+        "method": "Cryo-EM",
+        "resolution": 3.04,
+        "year": 2026,
+        "peptide_chain": "P",
+        "note": "Released September 2026 (unpublished); the vasoconstrictor receptor"
+      },
+      {
+        "id": "7R0C",
+        "title": "AVP–V2 receptor–arrestin complex",
+        "method": "Cryo-EM",
+        "resolution": 4.73,
+        "year": 2022,
+        "peptide_chain": "B",
+        "note": "Shows the receptor coupled to arrestin rather than a G protein"
+      }
+    ],
+    "pubchem_cid": 644077,
+    "notes": "Further V2 receptor structures with the antagonists tolvaptan and conivaptan (2025) and V1a receptor structures with the antagonists atosiban and balovaptan (2026) have also been released."
+  },
+  "ids": {
+    "pubchem_cid": 644077,
+    "cas": "113-79-1",
+    "chembl": "CHEMBL373742",
+    "unii": "Y4907O6MFD",
+    "kegg": "D00101",
+    "chebi": "CHEBI:34543",
+    "atc": "H01BA01",
+    "uniprot": "P01185",
+    "inn": "argipressin"
+  },
+  "wiki": "Vasopressin",
+  "queries": {
+    "pubmed": "vasopressin[tiab]",
+    "ctgov": "vasopressin"
+  },
+  "uses": {
+    "approved": [
+      {
+        "use": "Vasodilatory shock",
+        "detail": "Continuous infusion to raise blood pressure in adults with septic or post-cardiotomy shock who remain hypotensive despite fluids and catecholamines.",
+        "since": 2014,
+        "where": "US (Vasostrict); vasopressin is also used widely elsewhere"
+      }
+    ],
+    "investigational": [
+      {
+        "use": "In-hospital cardiac arrest (with methylprednisolone)",
+        "stage": "Phase 3 — no long-term benefit (2022)",
+        "detail": "In the Danish VAM-IHCA trial of 501 patients, vasopressin plus methylprednisolone during resuscitation did not improve survival or neurological outcome at one year."
+      },
+      {
+        "use": "Early septic shock (as first-line vasopressor)",
+        "stage": "Phase 3 — negative (2016)",
+        "detail": "In VANISH (409 patients), early vasopressin instead of noradrenaline did not increase kidney-failure-free days."
+      }
+    ],
+    "off_label": []
+  },
+  "history": [
+    {
+      "year": 1895,
+      "date": "1895-07",
+      "title": "Pressor effect of pituitary extract",
+      "detail": "George Oliver and Edward Schäfer reported that pituitary extracts raise blood pressure.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1913,
+      "date": "1913",
+      "title": "Pituitary extract treats diabetes insipidus",
+      "detail": "Farini successfully treated diabetes insipidus with posterior pituitary extract, the first therapeutic use of the antidiuretic hormone.",
+      "kind": "trial"
+    },
+    {
+      "year": 1928,
+      "date": "1928-02",
+      "title": "Pressor principle separated",
+      "detail": "Oliver Kamm and colleagues separated the pressor principle (vasopressin) from the oxytocic principle of the posterior pituitary.",
+      "kind": "science"
+    },
+    {
+      "year": 1954,
+      "date": "1954-09",
+      "title": "Synthetic arginine vasopressin",
+      "detail": "Du Vigneaud, Gish and Katsoyannis reported a synthetic preparation with the biological properties of arginine vasopressin.",
+      "kind": "science"
+    },
+    {
+      "year": 1968,
+      "date": "1968-05",
+      "title": "Desmopressin tested in diabetes insipidus",
+      "detail": "A synthetic analogue with strong, specific antidiuretic activity — later named desmopressin — was reported effective in animals and patients with diabetes insipidus.",
+      "kind": "trial"
+    },
+    {
+      "year": 1977,
+      "date": "1977-04",
+      "title": "Desmopressin for bleeding disorders",
+      "detail": "Mannucci and colleagues showed that desmopressin raises factor VIII and allows surgery without plasma concentrates in mild haemophilia and von Willebrand disease.",
+      "kind": "trial"
+    },
+    {
+      "year": 1978,
+      "date": "1978-02-21",
+      "title": "FDA approves DDAVP",
+      "detail": "Desmopressin (DDAVP, Ferring) was approved in the US as a new molecular entity.",
+      "kind": "approval"
+    },
+    {
+      "year": 1992,
+      "date": "1992-05",
+      "title": "V2 receptor cloned",
+      "detail": "The human antidiuretic (V2) receptor was cloned, and later that year its gene was identified as the cause of congenital nephrogenic diabetes insipidus.",
+      "kind": "science"
+    },
+    {
+      "year": 1997,
+      "date": "1997-03",
+      "title": "Vasopressin deficiency in septic shock",
+      "detail": "Landry and colleagues found inappropriately low vasopressin levels in vasodilatory septic shock; low-dose infusions raised blood pressure markedly, although vasopressin is a weak pressor in healthy people.",
+      "kind": "science"
+    },
+    {
+      "year": 2008,
+      "date": "2008-02-28",
+      "title": "VASST trial",
+      "detail": "In 778 patients with septic shock, low-dose vasopressin did not reduce mortality compared with noradrenaline.",
+      "kind": "trial"
+    },
+    {
+      "year": 2014,
+      "date": "2014-04-17",
+      "title": "Vasostrict approved",
+      "detail": "The FDA approved Vasostrict for vasodilatory shock through its pathway for drugs already marketed without an approved application.",
+      "kind": "approval"
+    },
+    {
+      "year": 2016,
+      "date": "2016-08",
+      "title": "VANISH trial",
+      "detail": "Early vasopressin instead of noradrenaline did not reduce kidney failure in 409 patients with septic shock.",
+      "kind": "trial"
+    },
+    {
+      "year": 2019,
+      "date": "2019-10",
+      "title": "Selepressin fails in septic shock",
+      "detail": "The selective V1a agonist selepressin did not improve vasopressor- and ventilator-free days in the SEPSIS-ACT trial.",
+      "kind": "trial"
+    },
+    {
+      "year": 2021,
+      "date": "2021-03",
+      "title": "Terlipressin trial in hepatorenal syndrome",
+      "detail": "In the 300-patient CONFIRM trial, terlipressin with albumin reversed hepatorenal syndrome more often than placebo (32% vs 17%) but caused respiratory failure in some patients.",
+      "kind": "trial"
+    },
+    {
+      "year": 2021,
+      "title": "Structures of the hormone on its receptor",
+      "detail": "Three groups published cryo-EM structures of arginine vasopressin bound to the V2 receptor and Gs protein.",
+      "kind": "science"
+    },
+    {
+      "year": 2022,
+      "date": "2022-09-14",
+      "title": "Terlivaz approved in the US",
+      "detail": "The FDA approved terlipressin to improve kidney function in adults with hepatorenal syndrome with rapid reduction in kidney function.",
+      "kind": "approval"
+    },
+    {
+      "year": 2022,
+      "date": "2022-11",
+      "title": "Diabetes insipidus renamed",
+      "detail": "An international working group proposed calling central and nephrogenic diabetes insipidus 'arginine vasopressin deficiency' and 'arginine vasopressin resistance'.",
+      "kind": "science"
+    },
+    {
+      "year": 2026,
+      "date": "2026-09",
+      "title": "Vasopressin–V1a receptor structure released",
+      "detail": "A cryo-EM structure of arginine vasopressin bound to the V1a receptor and Gq protein was released, following antagonist-bound V1a structures earlier in 2026.",
+      "kind": "science"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "approved",
+      "detail": "Vasostrict (NDA 204485, April 2014) for vasodilatory shock, with other manufacturers' versions approved since 2020; the analogues desmopressin (DDAVP, 1978) and terlipressin (Terlivaz, 2022) are approved separately."
+    }
+  ],
+  "pk": {
+    "half_life": "≤ 10 minutes at infusion rates of 0.01–0.1 units/min in vasodilatory shock",
+    "metabolism": "Cleaved by serine proteases, carboxypeptidase and disulfide oxido-reductase into inactive fragments; clearance rises up to five-fold in late pregnancy because of placental vasopressinase",
+    "excretion": "About 6% of a dose excreted unchanged in urine"
+  },
+  "dosing": [
+    {
+      "product": "Vasostrict",
+      "regimen": "Continuous intravenous infusion: 0.03–0.1 units/min for post-cardiotomy shock and 0.01–0.07 units/min for septic shock."
+    }
+  ],
+  "dosing_note": "Labelled regimen summarised for reference only; vasopressin is given in intensive care with continuous haemodynamic monitoring.",
+  "safety": {
+    "common": [],
+    "serious": [
+      "Mesenteric (gut) ischaemia",
+      "Distal limb and skin ischaemia",
+      "Myocardial ischaemia, right heart failure, bradycardia and atrial fibrillation",
+      "Decreased platelets and bleeding",
+      "Acute kidney injury",
+      "Hyponatraemia",
+      "Raised bilirubin",
+      "Reversible diabetes insipidus after the infusion is stopped"
+    ],
+    "warnings": [
+      "Can worsen cardiac function by lowering cardiac index",
+      "Monitor sodium, fluid balance and urine output after stopping; vasopressin may need to be restarted or desmopressin given",
+      "Contraindicated with allergy to arginine vasopressin (or to chlorobutanol in the multi-dose vial)"
+    ],
+    "notes": "The adverse reactions in the Vasostrict label come from published reports, so their frequencies are not known; ischaemic complications reflect its vasoconstrictor action on gut, skin and limb vessels."
+  },
+  "market": null,
+  "facts": [
+    "Arginine vasopressin differs from oxytocin at only two positions: phenylalanine at 3 and arginine at 8.",
+    "Pigs make lysine vasopressin instead of the arginine form found in humans.",
+    "During pregnancy the placenta releases vasopressinase, which can increase vasopressin clearance up to five-fold at term.",
+    "In 2022 endocrinologists proposed retiring the name 'diabetes insipidus' in favour of 'arginine vasopressin deficiency' and 'arginine vasopressin resistance'."
+  ],
+  "related": [
+    "oxytocin"
+  ],
+  "references": [
+    {
+      "title": "On the physiological action of extracts of pituitary body and certain other glandular organs: preliminary communication",
+      "authors": "Oliver G, Schäfer EA",
+      "journal": "J Physiol",
+      "year": 1895,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16992253/"
+    },
+    {
+      "title": "A synthetic preparation possessing biological properties associated with arginine-vasopressin",
+      "authors": "du Vigneaud V, Gish DT, Katsoyannis PG",
+      "journal": "J Am Chem Soc",
+      "year": 1954,
+      "url": "https://doi.org/10.1021/ja01647a089"
+    },
+    {
+      "title": "1-Deamino-8-D-arginine vasopressin: a new pharmacological approach to the management of haemophilia and von Willebrands' diseases",
+      "authors": "Mannucci PM, Ruggeri ZM, Pareti FI, Capitanio A",
+      "journal": "Lancet",
+      "year": 1977,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/67283/"
+    },
+    {
+      "title": "Molecular cloning of the receptor for human antidiuretic hormone",
+      "authors": "Birnbaumer M, Seibold A, Gilbert S, et al.",
+      "journal": "Nature",
+      "year": 1992,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1534149/"
+    },
+    {
+      "title": "Vasopressin deficiency contributes to the vasodilation of septic shock",
+      "authors": "Landry DW, Levin HR, Gallant EM, et al.",
+      "journal": "Circulation",
+      "year": 1997,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9054839/"
+    },
+    {
+      "title": "Vasopressin versus norepinephrine infusion in patients with septic shock (VASST)",
+      "authors": "Russell JA, Walley KR, Singer J, et al.",
+      "journal": "N Engl J Med",
+      "year": 2008,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18305265/"
+    },
+    {
+      "title": "Effect of early vasopressin vs norepinephrine on kidney failure in patients with septic shock: the VANISH randomized clinical trial",
+      "authors": "Gordon AC, Mason AJ, Thirunavukkarasu N, et al.",
+      "journal": "JAMA",
+      "year": 2016,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27483065/"
+    },
+    {
+      "title": "Terlipressin plus albumin for the treatment of type 1 hepatorenal syndrome (CONFIRM)",
+      "authors": "Wong F, Pappas SC, Curry MP, et al.",
+      "journal": "N Engl J Med",
+      "year": 2021,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33657294/"
+    },
+    {
+      "title": "Molecular basis of ligand recognition and activation of human V2 vasopressin receptor",
+      "authors": "Zhou F, Ye C, Ma X, et al.",
+      "journal": "Cell Res",
+      "year": 2021,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33742150/"
+    },
+    {
+      "title": "Changing the name of diabetes insipidus: a position statement of the Working Group for Renaming Diabetes Insipidus",
+      "authors": "Arima H, Cheetham T, Christ-Crain M, et al.",
+      "journal": "Eur J Endocrinol",
+      "year": 2022,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36239119/"
+    },
+    {
+      "title": "History of diabetes insipidus",
+      "authors": "Valenti G, Tamma G",
+      "journal": "G Ital Nefrol",
+      "year": 2016,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26913870/"
+    }
+  ]
+}

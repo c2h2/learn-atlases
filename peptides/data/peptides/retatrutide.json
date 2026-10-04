@@ -1,0 +1,137 @@
+{
+  "slug": "retatrutide",
+  "name": "Retatrutide",
+  "aliases": ["LY3437943", "LY-3437943", "Reta", "Triple G"],
+  "category": "metabolic",
+  "drug_class": "GIP, GLP-1 and glucagon receptor triple agonist",
+  "subclass": "Fatty-acid acylated 39-amino-acid triple agonist peptide",
+  "status": "clinical",
+  "status_note": "Investigational and not approved in any country; positive phase 3 results in obesity, type 2 diabetes, knee osteoarthritis and sleep apnoea were reported in 2025–2026, and Lilly plans to submit a US marketing application in the first quarter of 2027.",
+  "evidence": 4,
+  "evidence_note": "Phase 1 and 2 trials were published in 2022–2024, and phase 3 TRIUMPH and TRANSCEND-T2D trials in more than 6,000 participants met their primary endpoints in 2025–2026. As of September 2026 most phase 3 data were available only as company announcements and conference presentations, and long-term outcome trials are still running.",
+  "tagline": "Lilly's investigational once-weekly GIP, GLP-1 and glucagon triple agonist for obesity",
+  "summary": "Retatrutide is an experimental once-weekly injection from Eli Lilly that activates three hormone receptors at once — those for GIP, GLP-1 and glucagon — combining the appetite-suppressing effects of incretin drugs with glucagon's ability to raise energy expenditure. In phase 3 trials the highest dose produced average weight loss of 28–29% over 68–80 weeks. It is not yet approved anywhere, but unregulated 'research' versions are widely sold online, prompting FDA warnings and lawsuits from Lilly.",
+  "overview": [
+    "Retatrutide (LY3437943) is an investigational treatment for obesity and type 2 diabetes developed by Eli Lilly, which describes it as a first-in-class triple hormone receptor agonist. A single peptide activates the receptors for glucose-dependent insulinotropic polypeptide (GIP), glucagon-like peptide-1 (GLP-1) and glucagon. It extends the approach of Lilly's dual GIP/GLP-1 agonist tirzepatide by adding glucagon-receptor activity, which in animal studies increased energy expenditure on top of the reduced food intake produced by the incretin receptors.",
+    "The molecule is a 39-amino-acid peptide amide built on a GIP-derived backbone. It contains three non-coded amino acids — α-aminoisobutyric acid (Aib) at positions 2 and 20 and α-methyl-L-leucine at position 13 — and ends with the same proline-rich tail as exendin-4. Lysine 17 carries a C20 fatty diacid attached through a γ-glutamate and OEG linker, which binds serum albumin and gives a half-life of about six days, allowing once-weekly injection.",
+    "After phase 1 studies from 2019, a 48-week phase 2 trial published in 2023 reported mean weight loss of 24.2% with the 12 mg dose. The phase 3 TRIUMPH (obesity) and TRANSCEND-T2D (diabetes) programmes began in 2023–2024. The first phase 3 readout, TRIUMPH-4 in people with knee osteoarthritis (December 2025), showed 28.7% weight loss at 68 weeks, and TRIUMPH-1 (May 2026) showed 28.3% at 80 weeks, with 45.3% of participants on 12 mg losing at least 30% of their weight. After further positive trials in type 2 diabetes, cardiovascular disease and sleep apnoea, Lilly said it would apply for FDA approval in the first quarter of 2027.",
+    "Retatrutide acquired a large unregulated market before approval. Online vendors sell products labelled 'for research purposes' or 'not for human consumption', and some compounding pharmacies, telehealth firms and medical spas have marketed it; the FDA has warned such sellers that it is an unapproved drug that cannot legally be compounded. In 2026 Lilly registered a limited pre-approval expanded-access programme for people unable to join trials, and in August it sued six US businesses, saying it had reported more than 14,000 websites, advertisements and listings in over 100 countries."
+  ],
+  "mechanism": [
+    "Retatrutide is a single peptide that activates three class B G-protein-coupled receptors: the GIP receptor, the GLP-1 receptor and the glucagon receptor. Compared with each natural hormone it is about 8.9 times more potent at the GIP receptor and about 0.4 and 0.3 times as potent at the GLP-1 and glucagon receptors, respectively. Cryo-EM structures show it binding all three receptors as one continuous α-helix: residues 1–13 reach into the transmembrane core, while the C-terminal part of the helix contacts the extracellular domain and extracellular loop 1, where receptor-specific contacts allow one sequence to activate all three receptors.",
+    "The GLP-1 and GIP components stimulate glucose-dependent insulin release, and GLP-1 receptor activation in the brain reduces appetite and food intake, as with tirzepatide. The added glucagon-receptor activity, which acts mainly in the liver, raised energy expenditure in obese mice and is thought to contribute to the larger weight loss and the marked fall in liver fat seen in trials. In type 2 diabetes the net effect is glucose-lowering, with HbA1c reductions of about 2 percentage points at the higher doses."
+  ],
+  "origin": "Synthetic peptide designed at Eli Lilly on a GIP-derived backbone, with three non-coded amino acids, a C20 fatty-diacid side chain and the C-terminal tail of exendin-4 (GPSSGAPPPS-NH2)",
+  "discovery": {"year": 2019, "by": "Tamer Coskun and colleagues, Eli Lilly and Company", "where": "Indianapolis, Indiana, USA", "note": "First disclosed as LY3437943 when its first-in-human study was registered in February 2019; the discovery, preclinical pharmacology and first human data were published in Cell Metabolism in 2022."},
+  "first_human_year": 2019,
+  "first_approval": null,
+  "developer": "Eli Lilly and Company",
+  "brands": [],
+  "targets": [
+    {"name": "Gastric inhibitory polypeptide (GIP) receptor", "gene": "GIPR", "uniprot": "P48546", "action": "Agonist (about 8.9× the potency of native GIP)"},
+    {"name": "Glucagon-like peptide-1 receptor", "gene": "GLP1R", "uniprot": "P43220", "action": "Agonist (about 0.4× the potency of native GLP-1)"},
+    {"name": "Glucagon receptor", "gene": "GCGR", "uniprot": "P47871", "action": "Agonist (about 0.3× the potency of native glucagon)"}
+  ],
+  "sequence": {
+    "chains": [
+      {"name": "Peptide", "residues": ["Y","Aib","Q","G","T","F","T","S","D","Y","S","I","aMeLeu","L","D","K","K","A","Q","Aib","A","F","I","E","Y","L","L","E","G","G","P","S","S","G","A","P","P","P","S"], "n_term": "H", "c_term": "NH2"}
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {"at": "A2", "type": "nonnatural", "label": "Aib2 (α-aminoisobutyric acid) replaces the second residue and protects the N-terminus from cleavage by DPP-4", "short": "Aib"},
+      {"at": "A13", "type": "nonnatural", "label": "Position 13 is α-methyl-L-leucine (αMeL13), a non-coded Cα-methylated residue; in the receptor complexes it makes hydrophobic contacts with transmembrane helix 1", "short": "αMeLeu"},
+      {"at": "A17", "type": "lipidation", "label": "Lys17 carries an icosanedioic (C20) fatty diacid attached through γ-glutamate and a single OEG (8-amino-3,6-dioxaoctanoic acid, AEEA) spacer, in the order Lys–OEG–γGlu–C20 diacid; it binds serum albumin", "short": "C20 diacid"},
+      {"at": "A20", "type": "nonnatural", "label": "A second Aib (α-aminoisobutyric acid) at position 20", "short": "Aib"}
+    ],
+    "notation": "H-Tyr-Aib-Gln-Gly-Thr-Phe-Thr-Ser-Asp-Tyr-Ser-Ile-αMeLeu-Leu-Asp-Lys-Lys(γGlu-OEG-C20 diacid)-Ala-Gln-Aib-Ala-Phe-Ile-Glu-Tyr-Leu-Leu-Glu-Gly-Gly-Pro-Ser-Ser-Gly-Ala-Pro-Pro-Pro-Ser-NH2",
+    "note": "Positions follow the 39-residue retatrutide sequence itself (no parent-hormone numbering). The structure matches the INN/USAN chemical name: N6-[N-(19-carboxy-1-oxononadecyl)-L-γ-glutamyl-2-[2-(2-aminoethoxy)ethoxy]acetyl]-L-lysine at position 17 and a C-terminal serinamide."
+  },
+  "formula": "C221H342N46O68",
+  "mw": 4731.34,
+  "half_life": "≈ 6 days",
+  "half_life_hours": 144,
+  "routes": ["Subcutaneous injection, once weekly (investigational)"],
+  "structure": {
+    "pdb": [
+      {"id": "8YW3", "title": "Retatrutide bound to the GLP-1 receptor–Gs complex", "method": "Cryo-EM", "resolution": 2.68, "year": 2024, "peptide_chain": "P", "note": "Residues 1–30 modelled as a continuous α-helix; the lipid side chain is not modelled"},
+      {"id": "8YW4", "title": "Retatrutide bound to the GIP receptor–Gs complex", "method": "Cryo-EM", "resolution": 3.26, "year": 2024, "peptide_chain": "P", "note": "From the same study; residues 1–27 modelled, showing the GIP-receptor binding pose"},
+      {"id": "8YW5", "title": "Retatrutide bound to the glucagon receptor–Gs complex", "method": "Cryo-EM", "resolution": 2.84, "year": 2024, "peptide_chain": "P", "note": "From the same study; residues 1–30 modelled, completing the set of all three target receptors"},
+      {"id": "8YWF", "title": "Retatrutide bound to the GLP-1 receptor–G protein complex", "method": "Cryo-EM", "resolution": 2.74, "year": 2025, "peptide_chain": "P", "note": "Separate deposition (not yet published); residues 1–33 modelled, with the C20 diacid–γGlu–OEG side chain as ligand A1D7Q"}
+    ],
+    "pubchem_cid": 171934787,
+    "notes": "The three 2024 structures (Li et al., Cell Discovery) show retatrutide as a continuous α-helix in GLP-1R, GIPR and GCGR; the three complexes are highly similar overall (Cα RMSD 0.88–0.93 Å), with receptor-specific differences around extracellular loop 1. PubChem has no record under the plain name 'retatrutide'; CID 171934787 (titled 'Retatrutide (sodium salt)') depicts the neutral peptide with the correct all-L stereochemistry and matches the INN structure, whereas CID 171390338 ('Triple G') has an incorrect configuration at residue 13."
+  },
+  "ids": {"pubchem_cid": 171934787, "cas": "2381089-83-2", "chembl": "CHEMBL5095485", "unii": "NOP2Y096GV", "kegg": "D12430", "inn": "retatrutide"},
+  "wiki": "Retatrutide",
+  "queries": {"pubmed": "(retatrutide[tiab] OR LY3437943[tiab] OR \"LY-3437943\"[tiab])", "ctgov": "retatrutide OR LY3437943", "ctgov_exclude": ["NCT07629401"]},
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {"use": "Obesity and overweight", "stage": "Phase 3 — positive (2026)", "detail": "In TRIUMPH-1 (2,339 adults without diabetes), mean weight loss at 80 weeks was 19.0%, 25.9% and 28.3% with 4, 9 and 12 mg versus 2.2% with placebo; 45.3% of those on 12 mg lost at least 30%. TRIUMPH-3, in 1,949 adults with severe obesity and cardiovascular disease, reported up to 22.6%."},
+      {"use": "Type 2 diabetes", "stage": "Phase 3 — positive (2026)", "detail": "TRANSCEND-T2D-1 (537 adults on diet and exercise alone) lowered HbA1c by 1.7–1.9 percentage points at 40 weeks (about 0.8 with placebo), with 11.5–15.3% weight loss; TRIUMPH-2, in people with obesity and diabetes, reported up to 20.8% weight loss at 80 weeks. Further TRANSCEND-T2D trials, including a comparison with semaglutide, are running."},
+      {"use": "Knee osteoarthritis pain with obesity", "stage": "Phase 3 — positive (2025)", "detail": "TRIUMPH-4 (445 adults) reported 26.4% and 28.7% weight loss at 68 weeks with 9 and 12 mg (2.1% with placebo) and a 74–76% reduction in WOMAC knee-pain scores (40% with placebo); an osteoarthritis substudy within TRIUMPH-1 reported pain reductions of up to 73%."},
+      {"use": "Obstructive sleep apnoea", "stage": "Phase 3 — positive (2026)", "detail": "In a sleep-apnoea substudy nested in TRIUMPH-1, the apnoea–hypopnoea index fell by up to 36.1 events per hour (60.6%) from a baseline of 58.6."},
+      {"use": "Metabolic dysfunction-associated steatotic liver disease (MASLD)", "stage": "Phase 2 — positive; phase 3 started 2025", "detail": "In a 98-person substudy of the phase 2 obesity trial, liver fat fell by 82.4% at 24 weeks with 12 mg and 86% of participants reached normal liver fat. The phase 3 SYNERGY-Outcomes master protocol is testing retatrutide and tirzepatide in MASLD."},
+      {"use": "Cardiovascular and kidney outcomes", "stage": "Phase 3 — ongoing", "detail": "TRIUMPH-Outcomes, started in 2024, is testing whether retatrutide reduces cardiovascular and kidney events in about 10,000 adults with obesity; the phase 2b TRANSCEND-CKD study measured its effects on kidney function in 146 people with chronic kidney disease."},
+      {"use": "Chronic low back pain with obesity", "stage": "Phase 3", "detail": "TRIUMPH-7, started in 2025, is testing retatrutide in adults with obesity or overweight and chronic low back pain."}
+    ],
+    "off_label": [
+      {"use": "Grey-market 'research peptide' use", "detail": "Products sold online as retatrutide, often nicknamed 'reta' or 'triple G' and labelled 'for research purposes' or 'not for human consumption', are self-injected for weight loss. The FDA has issued warning letters to such sellers, and analyses of seized products have found doses ranging from none to overdoses and substituted ingredients such as insulin, with many made in non-sterile conditions.", "evidence": "Efficacy and safety data come only from Lilly's trials of the genuine drug given with gradual dose escalation and medical monitoring; nothing is known about the identity, dose, purity or sterility of grey-market products."},
+      {"use": "Compounded and clinic-supplied retatrutide", "detail": "Some compounding pharmacies, telehealth companies and medical spas have marketed retatrutide injections. The FDA states that retatrutide cannot be used in compounding under federal law and is not a component of any FDA-approved drug, and in August 2026 Lilly sued a pharmacy, a medical spa and four peptide sellers in US federal courts.", "evidence": "No regulatory quality standard applies to these products, and their contents are unverified."}
+    ]
+  },
+  "history": [
+    {"year": 2019, "date": "2019-03", "title": "First human doses", "detail": "A single-ascending-dose safety study of LY3437943 in healthy volunteers (NCT03841630) began in March 2019.", "kind": "trial"},
+    {"year": 2022, "date": "2022-08", "title": "Discovery paper published", "detail": "Coskun and colleagues described the triple agonist in Cell Metabolism: in obese mice glucagon-receptor activity added higher energy expenditure to incretin-driven reductions in food intake, and in people a single dose lowered body weight for up to 43 days.", "kind": "science"},
+    {"year": 2022, "date": "2022-10", "title": "Phase 1b results in type 2 diabetes", "detail": "A 12-week multiple-ascending-dose study in 72 people (The Lancet) found a half-life of about 6 days and placebo-adjusted HbA1c reductions of up to 1.6 percentage points.", "kind": "trial"},
+    {"year": 2023, "date": "2023-05", "title": "Phase 3 TRIUMPH programme begins", "detail": "TRIUMPH-3 started in May 2023 and TRIUMPH-1, -2 and -4 in July–August 2023; the TRANSCEND-T2D diabetes trials followed in 2024.", "kind": "trial"},
+    {"year": 2023, "date": "2023-06-26", "title": "Phase 2: 24% weight loss at 48 weeks", "detail": "In 338 adults with obesity, the 12 mg dose produced a mean 24.2% weight loss versus 2.1% with placebo (NEJM). A phase 2 diabetes trial published the same day in The Lancet reported HbA1c falls of up to 2.02 percentage points.", "kind": "trial"},
+    {"year": 2024, "date": "2024-04", "title": "TRIUMPH-Outcomes starts", "detail": "A cardiovascular and kidney outcomes trial planned for about 10,000 adults with obesity began enrolling.", "kind": "trial"},
+    {"year": 2024, "date": "2024-06", "title": "Liver fat largely cleared", "detail": "A phase 2 substudy in 98 people with fatty liver disease (Nature Medicine) found an 82.4% fall in liver fat at 24 weeks with 12 mg; 86% reached normal liver fat.", "kind": "trial"},
+    {"year": 2024, "date": "2024-07", "title": "Structures with all three receptors", "detail": "Cryo-EM structures of retatrutide bound to the GLP-1, GIP and glucagon receptors, published in Cell Discovery, showed how one helical peptide engages all three.", "kind": "science"},
+    {"year": 2025, "date": "2025-09-09", "title": "FDA warning letter to an online seller", "detail": "The FDA told a website selling compounded retatrutide that the products were unapproved, misbranded drugs and that retatrutide is not eligible for the compounding exemptions of sections 503A and 503B.", "kind": "regulatory"},
+    {"year": 2025, "date": "2025-12-11", "title": "First phase 3 result: TRIUMPH-4", "detail": "In adults with obesity and knee osteoarthritis, 12 mg produced 28.7% mean weight loss at 68 weeks (2.1% with placebo) and cut knee-pain scores by about three-quarters.", "kind": "trial"},
+    {"year": 2026, "date": "2026-03-19", "title": "First phase 3 diabetes trial positive", "detail": "TRANSCEND-T2D-1 met its HbA1c endpoint at 40 weeks, with HbA1c reductions of up to about 2 percentage points and up to 16.8% weight loss by Lilly's efficacy estimand.", "kind": "trial"},
+    {"year": 2026, "date": "2026-05-21", "title": "TRIUMPH-1: 28.3% weight loss", "detail": "In 2,339 adults without diabetes, 12 mg produced 28.3% mean weight loss at 80 weeks; participants with BMI ≥ 35 who continued to 104 weeks averaged 30.3%.", "kind": "trial"},
+    {"year": 2026, "date": "2026-06", "title": "Expanded access registered", "detail": "Lilly registered a pre-approval, single-patient expanded-access programme (NCT07629401) for adults with a BMI of at least 35 and two or more serious obesity-related complications who cannot join a trial.", "kind": "regulatory"},
+    {"year": 2026, "date": "2026-06-06", "title": "Sleep apnoea and diabetes data at ADA", "detail": "At the American Diabetes Association's 86th Scientific Sessions, Lilly reported a 60.6% fall in the apnoea–hypopnoea index in the TRIUMPH-1 sleep-apnoea substudy; TRANSCEND-T2D-1 was published in The Lancet.", "kind": "trial"},
+    {"year": 2026, "date": "2026-07-23", "title": "TRIUMPH-2 and -3 positive; filing planned", "detail": "Weight loss reached 20.8% in people with type 2 diabetes and 22.6% in people with cardiovascular disease at 80 weeks; Lilly said it would submit a Biologics License Application to the FDA in the first quarter of 2027.", "kind": "trial"},
+    {"year": 2026, "date": "2026-08-12", "title": "Lilly sues black-market sellers", "detail": "Lilly filed six US lawsuits against a pharmacy, a medical spa and peptide vendors, and said it had referred more than 200 people and entities to regulators and law enforcement.", "kind": "regulatory"}
+  ],
+  "regulatory": [
+    {"region": "US", "status": "investigational", "detail": "Phase 3 data package complete for obesity, sleep apnoea and knee osteoarthritis pain; Lilly plans to submit a Biologics License Application in the first quarter of 2027. The FDA states that retatrutide cannot be used in compounding and has warned sellers of 'research use only' and compounded products. A pre-approval expanded-access programme opened in 2026."},
+    {"region": "WADA", "status": "prohibited", "detail": "Not approved for human use by any regulator, so it falls under the S0 'non-approved substances' section of the World Anti-Doping Agency list, which is prohibited at all times."}
+  ],
+  "pk": {
+    "half_life": "About 6 days, supporting once-weekly dosing; exposure rose in proportion to dose (phase 1b)",
+    "metabolism": "Not yet described in detail in the literature; a carbon-14 mass-balance study in healthy men was completed in 2023"
+  },
+  "dosing": null,
+  "dosing_note": "No approved dose. Retatrutide is investigational; in trials it is injected under the skin once weekly, with gradual dose escalation under medical supervision. Doses promoted by grey-market sellers have no regulatory standing.",
+  "safety": {
+    "common": ["Nausea", "Diarrhoea", "Vomiting", "Constipation", "Decreased appetite", "Dysaesthesia (tingling, sensitivity or pain of the skin)", "Dose-dependent increase in heart rate"],
+    "serious": [],
+    "warnings": ["Investigational drug not approved in any country; genuine retatrutide is supplied only within Lilly's clinical trials and a limited expanded-access programme", "Products sold as 'research chemicals' or compounded retatrutide are unapproved; seized products have contained wrong doses or other drugs such as insulin, and many are made in non-sterile conditions"],
+    "notes": "Gastrointestinal effects were dose-related, mostly mild to moderate, and reduced by starting at a lower dose (phase 2). Discontinuation because of adverse events reached 11.3% (TRIUMPH-1) and 18.2% (TRIUMPH-4) with 12 mg, versus 4–5% with placebo. Dysaesthesia was reported by 20.9% of participants on 12 mg in TRIUMPH-4 (0.7% with placebo). Heart rate rose in a dose-dependent way, peaking at 24 weeks in phase 2. Full phase 3 safety data, including rarer serious events, have not yet been published."
+  },
+  "market": null,
+  "facts": [
+    "Its sequence contains three amino acids not found in natural proteins: two α-aminoisobutyric acid (Aib) residues and an α-methyl-L-leucine.",
+    "Compared with the native hormones, it is about 8.9 times more potent at the GIP receptor but less potent at the GLP-1 (0.4×) and glucagon (0.3×) receptors.",
+    "In TRIUMPH-1, 45.3% of participants on the 12 mg dose lost at least 30% of their body weight over 80 weeks.",
+    "Its C-terminal tail (GPSSGAPPPS-NH2) is identical to that of exendin-4, the Gila monster peptide behind exenatide.",
+    "The 2024 cryo-EM structures of retatrutide bound to the GLP-1, GIP and glucagon receptors are highly similar overall (Cα RMSD 0.88–0.93 Å), with receptor-specific differences mainly around extracellular loop 1."
+  ],
+  "related": ["tirzepatide", "semaglutide", "survodutide", "mazdutide", "glucagon", "liraglutide", "exenatide", "cagrilintide"],
+  "references": [
+    {"title": "LY3437943, a novel triple glucagon, GIP, and GLP-1 receptor agonist for glycemic control and weight loss: from discovery to clinical proof of concept", "authors": "Coskun T, Urva S, Roell WC, et al.", "journal": "Cell Metab", "year": 2022, "url": "https://pubmed.ncbi.nlm.nih.gov/35985340/"},
+    {"title": "LY3437943, a novel triple GIP, GLP-1, and glucagon receptor agonist in people with type 2 diabetes: a phase 1b, multicentre, double-blind, placebo-controlled, randomised, multiple-ascending dose trial", "authors": "Urva S, Coskun T, Loh MT, et al.", "journal": "Lancet", "year": 2022, "url": "https://pubmed.ncbi.nlm.nih.gov/36354040/"},
+    {"title": "Triple-hormone-receptor agonist retatrutide for obesity — a phase 2 trial", "authors": "Jastreboff AM, Kaplan LM, Frías JP, et al.", "journal": "N Engl J Med", "year": 2023, "url": "https://pubmed.ncbi.nlm.nih.gov/37366315/"},
+    {"title": "Retatrutide, a GIP, GLP-1 and glucagon receptor agonist, for people with type 2 diabetes: a randomised, double-blind, placebo and active-controlled, parallel-group, phase 2 trial conducted in the USA", "authors": "Rosenstock J, Frias J, Jastreboff AM, et al.", "journal": "Lancet", "year": 2023, "url": "https://pubmed.ncbi.nlm.nih.gov/37385280/"},
+    {"title": "Triple hormone receptor agonist retatrutide for metabolic dysfunction-associated steatotic liver disease: a randomized phase 2a trial", "authors": "Sanyal AJ, Kaplan LM, Frias JP, et al.", "journal": "Nat Med", "year": 2024, "url": "https://pubmed.ncbi.nlm.nih.gov/38858523/"},
+    {"title": "Structural insights into the triple agonism at GLP-1R, GIPR and GCGR manifested by retatrutide", "authors": "Li W, Zhou Q, Cong Z, et al.", "journal": "Cell Discov", "year": 2024, "url": "https://pubmed.ncbi.nlm.nih.gov/39019866/"},
+    {"title": "Retatrutide for the treatment of obesity, obstructive sleep apnea and knee osteoarthritis: rationale and design of the TRIUMPH registrational clinical trials", "authors": "Giblin K, Kaplan LM, Somers VK, et al.", "journal": "Diabetes Obes Metab", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/41090431/"},
+    {"title": "Efficacy and safety of retatrutide, a GIP, GLP-1, and glucagon receptor agonist, in people with type 2 diabetes and inadequate glycaemic control with diet and exercise (TRANSCEND-T2D-1): a double-blind, randomised, phase 3 trial", "authors": "Bajaj HS, Welch M, Shah P, et al.", "journal": "Lancet", "year": 2026, "url": "https://pubmed.ncbi.nlm.nih.gov/42250575/"}
+  ]
+}

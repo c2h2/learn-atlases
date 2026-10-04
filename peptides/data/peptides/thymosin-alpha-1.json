@@ -1,0 +1,466 @@
+{
+  "slug": "thymosin-alpha-1",
+  "name": "Thymosin α1",
+  "aliases": [
+    "Thymalfasin",
+    "Tα1",
+    "Thymosin alpha-1",
+    "TA1"
+  ],
+  "category": "repair",
+  "drug_class": "Immunomodulator",
+  "subclass": "N-acetylated 28-residue fragment of prothymosin α",
+  "status": "regional",
+  "status_note": "Marketed as Zadaxin (thymalfasin) in dozens of countries, including China and Italy, for chronic hepatitis B and as an immune enhancer; never approved by the FDA or the EMA.",
+  "evidence": 3,
+  "evidence_note": "Many randomised trials exist, but most are small, Chinese or Italian, and of low methodological quality; the two largest rigorous trials — the 2025 TESTS phase 3 in sepsis and a 2026 Cochrane review in chronic hepatitis B — were respectively negative and inconclusive.",
+  "tagline": "A thymic peptide sold across Asia and Europe as an immune booster",
+  "summary": "Thymosin α1 is a 28-amino-acid, N-acetylated peptide that was purified from calf thymus extract in 1977 and is now made synthetically. Given by injection as thymalfasin (Zadaxin), it is licensed in dozens of countries for chronic hepatitis B, as a vaccine adjuvant and as an immune enhancer, though not in the US or EU. It nudges dendritic cells and T cells through Toll-like receptors, but the largest rigorous trials — in sepsis and hepatitis B — have not shown clear benefit.",
+  "overview": [
+    "In the 1960s and 1970s Allan Goldstein and Abraham White set out to find the hormones through which the thymus directs immune development. Their crude calf-thymus preparation, thymosin fraction 5, restored immune function in thymectomised animals, and in 1977 Goldstein's group isolated and sequenced its most active component, a 28-residue acetylated peptide they named thymosin α1. It turned out to be a fragment of a much larger intracellular protein, prothymosin α, from which it is cleaved — so its status as a classical secreted hormone has always been debated.",
+    "The peptide is easy to make synthetically, and SciClone Pharmaceuticals developed it as thymalfasin under the brand Zadaxin. It was approved in a long list of countries from the 1990s onward — Italy, China, Singapore, the Philippines, Mexico, Kuwait and many others — chiefly for chronic hepatitis B, for hepatitis C in combination with interferon, as an adjuvant for influenza and other vaccines in immunocompromised people, and as a general immune enhancer. It has never held a US or EU marketing authorisation; US development stalled after hepatitis trials failed to produce a convincing signal.",
+    "Its largest modern audience has been in China. Thymosin α1 was written into successive Chinese COVID-19 treatment protocols and given very widely during the pandemic, supported by observational cohorts and a widely cited 2020 report that it reduced mortality in severe cases by restoring lymphocyte counts. Systematic reviews since then have been cautious: the pooled data are dominated by non-randomised studies with high risk of bias, and the effect estimates are unstable.",
+    "The clearest evidence now available is negative or uncertain. The TESTS trial, a multicentre double-blind phase 3 in 1,106 adults with sepsis published in the BMJ in January 2025, found identical 28-day mortality with thymosin α1 and placebo. A Cochrane review published in September 2026 assessed the certainty of evidence for thymosin-α1 in chronic hepatitis B as very low for almost every outcome and found no ongoing trials. Meanwhile laboratory interest continues in oncology — as an adjunct to chemotherapy and immunotherapy — and the peptide has also crossed into the grey market, where it is sold for 'immune support' and post-viral recovery."
+  ],
+  "mechanism": [
+    "Thymosin α1 acts mainly on antigen-presenting cells. It signals through Toll-like receptors — TLR9 and TLR2 in dendritic cells and monocytes — driving MyD88-dependent activation, maturation of dendritic cells and a shift towards Th1 cytokines such as IL-2 and interferon-γ. Downstream it increases T-cell differentiation in the thymus, raises CD4+ and CD8+ counts and natural killer cell activity, and can reverse the exhausted T-cell phenotype seen in chronic viral infection and sepsis.",
+    "It has no single high-affinity receptor of the kind that defines most peptide drugs, and it is structurally disordered in water: NMR shows a largely random coil that only becomes helical at the N-terminus on contact with membranes or in structure-promoting solvents. This diffuse, context-dependent pharmacology is part of why its clinical effects have been so hard to pin down, and why it is described as an immune modulator rather than a stimulant or a suppressant."
+  ],
+  "origin": "Natural human peptide: residues 2–29 of prothymosin α (PTMA), acetylated at the new N-terminus; originally purified from calf thymus and now made by solid-phase synthesis",
+  "discovery": {
+    "year": 1977,
+    "by": "Allan L. Goldstein, Teresa L. K. Low and colleagues",
+    "where": "University of Texas Medical Branch, Galveston, US",
+    "note": "Isolated and sequenced from thymosin fraction 5, a partially purified calf-thymus extract that Goldstein and Abraham White had developed in the 1960s."
+  },
+  "first_human_year": null,
+  "first_approval": null,
+  "developer": "Discovered in Allan Goldstein's laboratory; developed commercially as thymalfasin by SciClone Pharmaceuticals, with sigma-tau (Italy) and Chinese partners marketing it in their regions",
+  "brands": [
+    {
+      "name": "Zadaxin",
+      "company": "SciClone Pharmaceuticals (marketed in Italy by sigma-tau and in China through local partners)",
+      "route": "Subcutaneous injection",
+      "use": "Chronic hepatitis B; chronic hepatitis C with interferon; vaccine adjuvant and immune enhancement, depending on the national label"
+    }
+  ],
+  "analogs": [
+    {
+      "name": "Prothymosin α",
+      "note": "The 111-residue parent protein from which thymosin α1 is derived; an intracellular, highly acidic protein involved in chromatin remodelling and the Nrf2/Keap1 stress response."
+    },
+    {
+      "name": "Thymosin β4 (TB-500)",
+      "note": "An unrelated actin-sequestering peptide that shares only the historical name 'thymosin', from the same fraction-5 nomenclature."
+    },
+    {
+      "name": "Thymopentin",
+      "note": "A synthetic pentapeptide from thymopoietin, developed in the same era as a simpler thymic immunomodulator."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Toll-like receptor 9",
+      "gene": "TLR9",
+      "uniprot": "Q9NR96",
+      "action": "Agonist-like signalling in dendritic cells, driving maturation and Th1 polarisation"
+    },
+    {
+      "name": "Toll-like receptor 2",
+      "gene": "TLR2",
+      "uniprot": "O60603",
+      "action": "MyD88-dependent activation in monocytes and dendritic cells"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "S",
+          "D",
+          "A",
+          "A",
+          "V",
+          "D",
+          "T",
+          "S",
+          "S",
+          "E",
+          "I",
+          "T",
+          "T",
+          "K",
+          "D",
+          "L",
+          "K",
+          "E",
+          "K",
+          "K",
+          "E",
+          "V",
+          "V",
+          "E",
+          "E",
+          "A",
+          "E",
+          "N"
+        ],
+        "n_term": "Ac",
+        "c_term": "OH"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A1",
+        "type": "acetylation",
+        "label": "The N-terminal serine is acetylated; the acetyl group is present on the natural peptide and is reproduced in the synthetic drug",
+        "short": "N-acetyl"
+      }
+    ],
+    "notation": "Ac-Ser-Asp-Ala-Ala-Val-Asp-Thr-Ser-Ser-Glu-Ile-Thr-Thr-Lys-Asp-Leu-Lys-Glu-Lys-Lys-Glu-Val-Val-Glu-Glu-Ala-Glu-Asn-OH",
+    "note": "Corresponds exactly to residues 2–29 of human prothymosin α (UniProt P06454). The sequence is strikingly acidic — ten of the 28 residues are aspartate or glutamate — which is why the peptide is highly soluble and has no fixed fold in water."
+  },
+  "formula": "C129H215N33O55",
+  "mw": 3108.3,
+  "half_life": "≈ 2 h after subcutaneous injection",
+  "half_life_hours": 2,
+  "routes": [
+    "Subcutaneous injection"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "2L9I",
+        "title": "NMR structure of human thymosin α-1",
+        "method": "Solution NMR",
+        "resolution": null,
+        "year": 2011,
+        "peptide_chain": "A",
+        "note": "The peptide alone; largely disordered with a transient helical tendency"
+      },
+      {
+        "id": "2MNQ",
+        "title": "Chemical-shift assignments for thymosin α1 inserting its N-terminus into model membranes",
+        "method": "Solution NMR",
+        "resolution": null,
+        "year": 2015,
+        "peptide_chain": "A",
+        "note": "Shows the N-terminal region adopting a helix on contact with membrane mimics"
+      }
+    ],
+    "pubchem_cid": 16130571,
+    "notes": "Both deposited structures are NMR ensembles of the free peptide; there is no structure of thymosin α1 bound to a receptor, consistent with the absence of a single identified high-affinity target. The N-terminal acetyl group is modelled as a separate group at the start of the chain."
+  },
+  "ids": {
+    "pubchem_cid": 16130571,
+    "cas": "62304-98-7",
+    "unii": "W0B22ISQ1C",
+    "chembl": "CHEMBL2103979",
+    "kegg": "D06116",
+    "chebi": "CHEBI:135915",
+    "uniprot": "P06454",
+    "inn": "thymalfasin"
+  },
+  "wiki": "Thymosin α1",
+  "queries": {
+    "pubmed": "\"thymosin alpha 1\"[tiab] OR \"thymosin alpha-1\"[tiab] OR \"thymosin alpha1\"[tiab] OR \"thymosin α1\"[tiab] OR thymalfasin[tiab] OR zadaxin[tiab]",
+    "ctgov": "thymalfasin OR \"thymosin alpha 1\" OR Zadaxin"
+  },
+  "uses": {
+    "approved": [
+      {
+        "use": "Chronic hepatitis B",
+        "detail": "Given subcutaneously, alone or with nucleoside analogues or interferon. A 2026 Cochrane review judged the certainty of evidence for all critical outcomes to be very low.",
+        "since": null,
+        "where": "China, Italy and dozens of other countries across Asia, Latin America and the Middle East"
+      },
+      {
+        "use": "Chronic hepatitis C (with interferon)",
+        "detail": "Licensed in several of the same countries as an add-on to interferon-based regimens, a role largely superseded by direct-acting antivirals.",
+        "since": null,
+        "where": "Selected countries in Asia, Latin America and the Middle East"
+      },
+      {
+        "use": "Vaccine adjuvant and immune enhancement",
+        "detail": "Used to improve vaccine responses and immune function in immunocompromised patients, including people on dialysis and older adults, and as an adjunct in cancer care.",
+        "since": null,
+        "where": "China and other markets where Zadaxin is licensed"
+      }
+    ],
+    "investigational": [
+      {
+        "use": "Sepsis",
+        "detail": "The TESTS phase 3 trial in 1,106 adults found 28-day all-cause mortality of 23.4% with thymosin α1 versus 24.1% with placebo, with no difference in any secondary or safety outcome.",
+        "stage": "Phase 3 — negative (2025)"
+      },
+      {
+        "use": "COVID-19",
+        "detail": "Given very widely in China under national treatment protocols; cohort studies suggested a mortality benefit in severe disease, but meta-analyses rate the evidence as low quality and dominated by non-randomised data.",
+        "stage": "Observational and small randomised studies"
+      },
+      {
+        "use": "Cancer immunotherapy adjunct",
+        "detail": "Studied with chemotherapy and checkpoint inhibitors, including a 2026 neoadjuvant trial in locally advanced gastric cancer; laboratory work in 2026 reported effects on dendritic cells and on chemotherapy-induced antitumour immunity.",
+        "stage": "Phase 2 and preclinical"
+      },
+      {
+        "use": "Hepatocellular carcinoma after resection",
+        "detail": "A multicentre randomised trial reported adjuvant benefit in HBV-related HCC, but it was observation-controlled rather than placebo-controlled.",
+        "stage": "Phase 3 (single trial)"
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Grey-market 'immune support'",
+        "detail": "Sold online as a research peptide for long COVID, post-viral fatigue, chronic infection and general immune enhancement, usually for subcutaneous self-injection.",
+        "evidence": "None of these uses has been tested in a controlled trial. Because thymosin α1 shifts immune polarisation rather than simply boosting it, effects in healthy or autoimmune-prone users are unpredictable."
+      },
+      {
+        "use": "Adjunct in anti-ageing and longevity clinics",
+        "detail": "Offered alongside other peptides on the premise that thymic involution with age can be reversed pharmacologically.",
+        "evidence": "No trial has examined thymosin α1 for ageing-related endpoints."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1966,
+      "title": "Thymosin fraction 5",
+      "detail": "Allan Goldstein and Abraham White reported a calf-thymus extract that restored immune function in thymectomised animals, opening the search for thymic hormones.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1977,
+      "date": "1977-02",
+      "title": "Thymosin α1 isolated and sequenced",
+      "detail": "Goldstein, Low and colleagues purified the most active component of fraction 5 — an acetylated 28-residue peptide — and published its sequence in PNAS.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1984,
+      "title": "Its parent protein is identified",
+      "detail": "Thymosin α1 was shown to be a fragment of prothymosin α, an abundant, highly acidic intracellular protein, complicating the idea that it is a secreted thymic hormone.",
+      "kind": "science"
+    },
+    {
+      "year": 2001,
+      "date": "2001-05",
+      "title": "Thymalfasin in Western development",
+      "detail": "A US hospital-pharmacy monograph recorded thymosin α1 in phase 3 trials for hepatitis C and phase 2 for hepatitis B, with a serum half-life of about two hours and a 1.6 mg twice-weekly subcutaneous regimen.",
+      "kind": "trial"
+    },
+    {
+      "year": 2008,
+      "date": "2008-02",
+      "title": "Meta-analysis in chronic hepatitis B",
+      "detail": "A pooled comparison with interferon-α suggested a delayed but comparable sustained response with thymosin α1, on the strength of small studies.",
+      "kind": "trial"
+    },
+    {
+      "year": 2010,
+      "date": "2010-04",
+      "title": "Licensed across Asia, Latin America and parts of Europe",
+      "detail": "A review by Ciancio and Rizzetto summarised thymalfasin's place in hepatitis B and C treatment in the many countries where it was approved — never including the US or a centralised EU authorisation.",
+      "kind": "approval"
+    },
+    {
+      "year": 2011,
+      "date": "2011-12",
+      "title": "First NMR structure",
+      "detail": "Elizondo-Riojas and colleagues published a solution structure of the free peptide, confirming that it is largely disordered.",
+      "kind": "science"
+    },
+    {
+      "year": 2015,
+      "title": "Membrane-associated conformation described",
+      "detail": "NMR work showed the N-terminus inserting into model membranes and taking on a helical conformation, suggesting how a disordered peptide might engage cell surfaces.",
+      "kind": "science",
+      "date": "2015-03"
+    },
+    {
+      "year": 2015,
+      "date": "2015-06",
+      "title": "Adjuvant trial after liver-cancer surgery",
+      "detail": "A multicentre randomised trial reported that thymalfasin after curative resection of HBV-related hepatocellular carcinoma improved outcomes, though the control arm was observation rather than placebo.",
+      "kind": "trial"
+    },
+    {
+      "year": 2020,
+      "date": "2020-05",
+      "title": "Widely used during COVID-19 in China",
+      "detail": "A report in Clinical Infectious Diseases described reduced mortality in severe COVID-19 with restoration of lymphocyte counts, and the peptide was written into Chinese treatment protocols.",
+      "kind": "trial"
+    },
+    {
+      "year": 2023,
+      "date": "2023-01",
+      "title": "COVID meta-analyses urge caution",
+      "detail": "Systematic reviews found that the apparent benefit rests largely on retrospective cohorts with high risk of bias, and that randomised evidence is sparse.",
+      "kind": "trial"
+    },
+    {
+      "year": 2025,
+      "date": "2025-01-15",
+      "title": "TESTS phase 3 in sepsis is negative",
+      "detail": "In 1,106 adults across Chinese intensive care units, 28-day mortality was 23.4% with thymosin α1 and 24.1% with placebo (hazard ratio 0.99); no secondary or safety outcome differed.",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "title": "Oncology interest continues",
+      "detail": "A prospective trial of neoadjuvant immunochemotherapy plus thymalfasin in locally advanced gastric cancer and mechanistic work on dendritic cells and neuroprotection were published during 2026.",
+      "kind": "science"
+    },
+    {
+      "year": 2026,
+      "date": "2026-09-09",
+      "title": "Cochrane finds the hepatitis B evidence very uncertain",
+      "detail": "A Cochrane review rated the certainty of evidence as very low for all outcomes except serious adverse events, could not determine whether thymosin-α1 affects mortality or histology, and found no ongoing trials.",
+      "kind": "trial"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "China",
+      "status": "approved",
+      "detail": "Widely licensed and heavily used, including in national COVID-19 treatment protocols; domestic generics of thymalfasin are marketed alongside Zadaxin."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "No centralised EMA authorisation. Thymalfasin is licensed nationally in Italy, where sigma-tau has marketed Zadaxin and sponsored trials."
+    },
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Never approved by the FDA. SciClone ran phase 2 and phase 3 US trials in hepatitis C and hepatocellular carcinoma, but no marketing authorisation followed, and thymalfasin is not an approved compounding ingredient."
+    },
+    {
+      "region": "India",
+      "status": "approved",
+      "detail": "Thymalfasin is marketed for chronic hepatitis B and as an immune enhancer."
+    },
+    {
+      "region": "UK",
+      "status": "not-approved",
+      "detail": "No MHRA authorisation."
+    },
+    {
+      "region": "WADA",
+      "status": "permitted",
+      "detail": "Thymosin α1 is not named on the Prohibited List, and because it holds marketing authorisation in several countries it is not caught by the S0 non-approved-substances category; it is not a growth factor and has no recognised performance-enhancing use."
+    }
+  ],
+  "pk": {
+    "half_life": "About 2 hours after subcutaneous injection",
+    "tmax": "Roughly 2 hours after a subcutaneous dose",
+    "bioavailability": "Effectively complete after subcutaneous injection; not orally active",
+    "metabolism": "Proteolytic breakdown to smaller peptides and amino acids; no cytochrome P450 involvement",
+    "excretion": "Cleared as peptide fragments; no dose adjustment described for renal or hepatic impairment on most labels"
+  },
+  "dosing": [
+    {
+      "product": "Zadaxin (thymalfasin)",
+      "regimen": "Subcutaneous injection, most commonly 1.6 mg twice weekly for chronic hepatitis B, given for six to twelve months depending on the national label. Regimens vary by country and indication; follow the local prescribing information."
+    }
+  ],
+  "dosing_note": "Approved regimens differ substantially between the countries where thymalfasin is licensed, and the peptide is not approved at all in the US, EU or UK. Doses circulating on grey-market sites have no regulatory basis.",
+  "safety": {
+    "common": [
+      "Injection-site reactions (redness, discomfort)",
+      "Transient rash",
+      "Mild fatigue"
+    ],
+    "serious": [
+      "Rare hypersensitivity reactions"
+    ],
+    "warnings": [
+      "Because the peptide shifts immune polarisation, caution is advised in autoimmune disease and in transplant recipients on immunosuppression, where the interaction has not been formally studied",
+      "The apparent safety record comes largely from small trials in hepatitis; the one large rigorous trial (TESTS, n=1,106 in sepsis) found no safety difference from placebo but also no benefit",
+      "Material sold through unregulated peptide vendors is not the licensed product and has unverified identity, purity and sterility"
+    ],
+    "notes": "Thymosin α1 is generally described as unusually well tolerated, which is one reason it stayed in use despite weak efficacy data; the flip side is that a benign safety profile has allowed very wide use on a thin evidence base."
+  },
+  "market": null,
+  "facts": [
+    "It is a fragment of an intracellular protein, prothymosin α, which is why whether it is a genuine secreted hormone has been argued over for nearly fifty years.",
+    "Ten of its 28 residues are acidic (aspartate or glutamate), making it one of the most negatively charged peptide drugs in use.",
+    "Thymosin α1 and thymosin β4 share a name only for historical reasons: both were numbered by their migration in the original calf-thymus fraction 5, and they are structurally and functionally unrelated.",
+    "The 2025 TESTS trial is the only large, double-blind, placebo-controlled phase 3 ever run on the peptide — and it found no effect on mortality."
+  ],
+  "related": [
+    "tb-500",
+    "ll-37",
+    "epitalon",
+    "kpv",
+    "cyclosporine"
+  ],
+  "references": [
+    {
+      "title": "Thymosin alpha1: isolation and sequence analysis of an immunologically active thymic polypeptide",
+      "authors": "Goldstein AL, Low TL, McAdoo M, et al.",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": 1977,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/265536/"
+    },
+    {
+      "title": "Thymosin alpha-1",
+      "authors": "Ancell CD, Phipps J, Young L",
+      "journal": "Am J Health Syst Pharm",
+      "year": 2001,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11381492/"
+    },
+    {
+      "title": "Thymalfasin in the treatment of hepatitis B and C",
+      "authors": "Ciancio A, Rizzetto M",
+      "journal": "Ann N Y Acad Sci",
+      "year": 2010,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20536462/"
+    },
+    {
+      "title": "Comparison of the efficacy of thymosin alpha-1 and interferon alpha in the treatment of chronic hepatitis B: a meta-analysis",
+      "authors": "Yang YF, Zhao W, Zhong YD, et al.",
+      "journal": "Antiviral Res",
+      "year": 2008,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18078676/"
+    },
+    {
+      "title": "NMR structure of human thymosin alpha-1",
+      "authors": "Elizondo-Riojas MA, Chamow SM, Tuthill CW, Gorenstein DG",
+      "journal": "Biochem Biophys Res Commun",
+      "year": 2011,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22115779/"
+    },
+    {
+      "title": "Thymosin alpha 1 reduces the mortality of severe coronavirus disease 2019 by restoration of lymphocytopenia and reversion of exhausted T cells",
+      "authors": "Liu Y, Pan Y, Hu Z, et al.",
+      "journal": "Clin Infect Dis",
+      "year": 2020,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32442287/"
+    },
+    {
+      "title": "Thymosin alpha1 use in adult COVID-19 patients: a systematic review and meta-analysis on clinical outcomes",
+      "authors": "Shang W, Zhang B, Ren Y, et al.",
+      "journal": "Int Immunopharmacol",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36527881/"
+    },
+    {
+      "title": "The efficacy and safety of thymosin α1 for sepsis (TESTS): multicentre, double blinded, randomised, placebo controlled, phase 3 trial",
+      "authors": "Wu J, Pei F, Zhou L, et al.",
+      "journal": "BMJ",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39814420/"
+    },
+    {
+      "title": "Thymosin-α1 for people with chronic hepatitis B",
+      "authors": "Naing C, Ni H, Aung HH, Aye SN",
+      "journal": "Cochrane Database Syst Rev",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42713852/"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "slug": "calculus-2",
+  "title": "Calculus II",
+  "full_title": "Calculus II: Sequences, Series and Approximation",
+  "area": "analysis",
+  "level": 1,
+  "order": 30,
+  "tagline": "Infinite sequences and series, power and Taylor series, parametric and polar curves",
+  "summary": "How can an infinite sum have a finite value, and how do calculators compute sin x? This course studies sequences and series, tests for convergence, power series and Taylor approximation, then parametric and polar curves and a first look at differential equations.",
+  "overview": [
+    "Calculus I is about functions, and about the limits that define their derivatives and integrals. Calculus II turns to a different kind of limit: the limit of an infinite process. How can adding infinitely many numbers give a finite answer, as $1 + \\tfrac12 + \\tfrac14 + \\cdots = 2$ does? Why does $1 + \\tfrac12 + \\tfrac13 + \\cdots$ grow without bound even though its terms shrink to zero? And how does a calculator, which can only add and multiply, find $\\sin 0.3$ or $e^{1.7}$ to sixteen digits? The answers come from the theory of sequences and series, the first place in calculus where careful reasoning about limits pays off directly.",
+    "The course has three parts. The first four chapters build the theory: sequences and their limits, infinite series, the standard tests for convergence, and power series, which behave like polynomials of infinite degree and can be differentiated and integrated term by term. Taylor series then connect this theory back to functions: a smooth function is approximated by polynomials, and Taylor's theorem says exactly how good the approximation is. The last two chapters widen the toolkit for later courses: curves described parametrically and in polar coordinates, and a first look at differential equations through slope fields, separable equations and the logistic model.",
+    "What makes the subject hard is that intuition about finite sums can fail for infinite ones: rearranging a series can change its sum, and a convergence test that is inconclusive tells you nothing. The cure is to keep the definitions in view (a series *is* the limit of its partial sums) and to practise choosing the right test. Work through the examples with pencil and paper, use the interactive figures to watch partial sums and Taylor polynomials converge or fail to, and check every numerical answer against the error bound that the theory provides."
+  ],
+  "prerequisites": [
+    "calculus-1"
+  ],
+  "outcomes": [
+    "Prove that a sequence converges from the ε–N definition, and compute limits with the limit laws, the squeeze theorem and the monotone convergence theorem.",
+    "Sum geometric and telescoping series, and explain why the terms of a convergent series tend to zero while terms tending to zero do not guarantee convergence.",
+    "Choose and apply the integral, comparison, limit comparison, ratio, root and alternating series tests, and distinguish absolute from conditional convergence.",
+    "Find the radius and interval of convergence of a power series, and differentiate and integrate power series term by term.",
+    "Construct Taylor polynomials and series, bound the error with Taylor's theorem, and use the standard series to evaluate limits, integrals and sums.",
+    "Estimate the sum of a series or the value of a function numerically with a guaranteed error bound.",
+    "Describe curves parametrically and in polar coordinates, and compute their tangents, arc lengths and enclosed areas.",
+    "Sketch slope fields, solve separable differential equations, and analyse exponential and logistic models."
+  ],
+  "chapters": [
+    {
+      "slug": "sequences",
+      "title": "Sequences",
+      "summary": "Convergence and divergence, limit laws for sequences, monotone and bounded sequences, and standard limits.",
+      "requires": [
+        "calculus-1/limits"
+      ]
+    },
+    {
+      "slug": "series",
+      "title": "Infinite series",
+      "summary": "Partial sums, geometric and telescoping series, the divergence test and the harmonic series.",
+      "requires": [
+        "calculus-2/sequences"
+      ]
+    },
+    {
+      "slug": "convergence-tests",
+      "title": "Convergence tests",
+      "summary": "Integral, comparison, ratio, root and alternating series tests; absolute and conditional convergence.",
+      "requires": [
+        "calculus-2/series",
+        "calculus-1/improper-integrals"
+      ]
+    },
+    {
+      "slug": "power-series",
+      "title": "Power series",
+      "summary": "Radius and interval of convergence, and differentiating and integrating power series term by term.",
+      "requires": [
+        "calculus-2/convergence-tests"
+      ]
+    },
+    {
+      "slug": "taylor-series",
+      "title": "Taylor series",
+      "summary": "Taylor polynomials, Taylor’s theorem with remainder, the standard series and approximation in practice.",
+      "requires": [
+        "calculus-2/power-series"
+      ]
+    },
+    {
+      "slug": "parametric-polar",
+      "title": "Parametric curves and polar coordinates",
+      "summary": "Parametric equations, tangents and arc length, polar curves and areas in polar coordinates.",
+      "requires": [
+        "calculus-1/integral-applications"
+      ]
+    },
+    {
+      "slug": "intro-odes",
+      "title": "A first look at differential equations",
+      "summary": "Slope fields, separable equations, exponential growth and decay, and the logistic model.",
+      "requires": [
+        "calculus-1/integration-techniques"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -250,
+      "title": "Archimedes sums a geometric series",
+      "detail": "In *Quadrature of the Parabola* (around 250 BC) Archimedes shows that a parabolic segment has 4/3 the area of an inscribed triangle, in effect summing 1 + 1/4 + 1/16 + ⋯ = 4/3 with a rigorous argument by double contradiction.",
+      "people": [
+        "Archimedes"
+      ]
+    },
+    {
+      "year": 1350,
+      "title": "The harmonic series diverges",
+      "detail": "Nicole Oresme proves that 1 + 1/2 + 1/3 + ⋯ grows without bound by grouping its terms into blocks that are each at least 1/2 — the argument still used today.",
+      "people": [
+        "Nicole Oresme"
+      ]
+    },
+    {
+      "year": 1400,
+      "title": "Power series in Kerala",
+      "detail": "Madhava of Sangamagrama and his followers in southern India find infinite series for the arctangent, sine and cosine, including π/4 = 1 − 1/3 + 1/5 − ⋯, more than two centuries before their rediscovery in Europe.",
+      "people": [
+        "Madhava of Sangamagrama"
+      ]
+    },
+    {
+      "year": 1668,
+      "title": "A series for the logarithm",
+      "detail": "Nicholas Mercator publishes the series ln(1 + x) = x − x²/2 + x³/3 − ⋯ in *Logarithmotechnia*; Isaac Newton, who had found it independently, responds by circulating his manuscript *De analysi* (1669) with many more power series.",
+      "people": [
+        "Nicholas Mercator",
+        "Isaac Newton"
+      ]
+    },
+    {
+      "year": 1715,
+      "title": "Taylor's theorem",
+      "detail": "Brook Taylor publishes the general expansion of a function in powers of x − a in *Methodus incrementorum directa et inversa*; Colin Maclaurin popularises the case a = 0 in his *Treatise of Fluxions* (1742).",
+      "people": [
+        "Brook Taylor",
+        "Colin Maclaurin"
+      ]
+    },
+    {
+      "year": 1735,
+      "title": "The Basel problem",
+      "detail": "Leonhard Euler shows that 1 + 1/4 + 1/9 + 1/16 + ⋯ = π²/6, solving a problem that had defeated the Bernoullis and making his reputation.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1797,
+      "title": "The remainder in Taylor's theorem",
+      "detail": "Joseph-Louis Lagrange gives the remainder of a Taylor polynomial in the form f⁽ⁿ⁺¹⁾(c)(x − a)ⁿ⁺¹/(n + 1)! in *Théorie des fonctions analytiques*, turning Taylor series into a tool with error bounds.",
+      "people": [
+        "Joseph-Louis Lagrange"
+      ]
+    },
+    {
+      "year": 1821,
+      "title": "Convergence made rigorous",
+      "detail": "Augustin-Louis Cauchy's *Cours d'analyse* defines the sum of a series as the limit of its partial sums, insists that divergent series have no sum, and proves the root test and the Cauchy criterion.",
+      "people": [
+        "Augustin-Louis Cauchy"
+      ]
+    },
+    {
+      "year": 1838,
+      "title": "The logistic equation",
+      "detail": "Pierre-François Verhulst proposes the logistic model dP/dt = rP(1 − P/K) for population growth limited by resources, correcting the unlimited exponential growth assumed by Malthus in 1798.",
+      "people": [
+        "Pierre-François Verhulst"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Calculus: Early Transcendentals (9th edition)",
+      "authors": "James Stewart, Daniel Clegg and Saleem Watson",
+      "year": 2020,
+      "note": "The standard calculus text: clear explanations of every test for series, with a very large supply of graded exercises."
+    },
+    {
+      "title": "Calculus (4th edition)",
+      "authors": "Michael Spivak",
+      "year": 2008,
+      "note": "A rigorous and beautifully written treatment; its chapters on sequences, series and Taylor polynomials are the best bridge to real analysis."
+    },
+    {
+      "title": "Calculus, Volume 1 (2nd edition)",
+      "authors": "Tom M. Apostol",
+      "year": 1967,
+      "note": "Careful proofs of convergence tests and Taylor's theorem, with historical introductions; good for the theory behind the techniques."
+    },
+    {
+      "title": "Calculus (3rd edition)",
+      "authors": "Gilbert Strang",
+      "year": 2017,
+      "note": "An informal, applications-minded text (an earlier edition is free on MIT OpenCourseWare) with good chapters on differential equations and polar coordinates."
+    },
+    {
+      "title": "Understanding Analysis (2nd edition)",
+      "authors": "Stephen Abbott",
+      "year": 2015,
+      "note": "Where to go next: the rigorous theory of sequences, series and power series, with excellent discussion of rearrangements."
+    },
+    {
+      "title": "Theory and Application of Infinite Series",
+      "authors": "Konrad Knopp",
+      "year": 1990,
+      "note": "The classic encyclopaedia of series (Dover reprint of the 1928 English edition); full of convergence tests, examples and historical detail."
+    },
+    {
+      "title": "Elementary Differential Equations and Boundary Value Problems (11th edition)",
+      "authors": "William E. Boyce, Richard C. DiPrima and Douglas B. Meade",
+      "year": 2017,
+      "note": "Standard text for the differential-equations chapter, with slope fields, separable equations and population models."
+    }
+  ],
+  "next": [
+    "ode",
+    "real-analysis"
+  ]
+}
