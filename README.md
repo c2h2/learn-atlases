@@ -44,12 +44,16 @@ Serve the repository root (or any subdirectory) with PHP-FPM behind Caddy, nginx
 assets carry `?v=<mtime>` and can be cached for a long time. If the checkout itself is the web root,
 make sure the server does not serve dotfiles such as `.git`.
 
-## Third-party components
+## Licence
 
-Self-hosted copies, each under its own licence:
+Public domain: the code and content of this repository are dedicated to the public domain under
+[CC0 1.0](LICENSE). You may copy, modify, publish and use them for any purpose, commercial or not,
+without asking permission or giving credit.
+
+The bundled libraries, fonts and structure files keep their own licences:
 [KaTeX](https://katex.org) (MIT), [D3](https://d3js.org) (ISC), [TopoJSON](https://github.com/topojson/topojson)
-and [world-atlas](https://github.com/topojson/world-atlas) (ISC, Natural Earth data),
-[3Dmol.js](https://3dmol.org) (BSD-3-Clause), and the fonts [Archivo](https://github.com/Omnibus-Type/Archivo)
-and [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) (SIL Open Font License 1.1).
-Peptide structures come from the [RCSB Protein Data Bank](https://www.rcsb.org) (CC0) or are
-predicted with ESMFold.
+(BSD-3-Clause), [world-atlas](https://github.com/topojson/world-atlas) (ISC, Natural Earth data),
+[3Dmol.js](https://3dmol.org) (BSD-3-Clause), [Archivo](https://github.com/Omnibus-Type/Archivo) and
+[JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) (SIL Open Font License 1.1), and protein
+structures from the [RCSB Protein Data Bank](https://www.rcsb.org) (CC0) or predicted with ESMFold.
+Their notices are in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
