@@ -1,12 +1,10 @@
-# Generated caches: rebuilt on demand (maths: tools/build.sh, peptides: tools/refresh.sh)
+# Generated caches: rebuilt on demand (maths: tools/build.sh, physics: tools/prerender.php, peptides: tools/refresh.sh)
 /maths/data/cache/
+/physics/data/cache/
 /peptides/data/cache/
 
 # Raw downloads for the peptide attention data (Wikimedia pageview dumps, ~400 MB)
 /peptides/data/raw/
-
-# Not part of this repository yet
-/physics/
 
 # Tooling and editor leftovers
 __pycache__/

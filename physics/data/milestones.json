@@ -1,0 +1,88 @@
+{
+  "_doc": "Events that belong to the whole subject. Course histories carry the rest.",
+  "milestones": [
+    {
+      "year": 1609,
+      "title": "Kepler’s first two laws",
+      "detail": "Johannes Kepler’s Astronomia Nova stated that planets move on ellipses with the Sun at one focus, and that a line from the Sun to a planet sweeps equal areas in equal times.",
+      "people": [
+        "Johannes Kepler"
+      ],
+      "area": "astro"
+    },
+    {
+      "year": 1619,
+      "title": "Kepler’s third law",
+      "detail": "In Harmonices Mundi Kepler published the relation between a planet’s period and the size of its orbit, which Newton later derived from the inverse-square law.",
+      "people": [
+        "Johannes Kepler"
+      ],
+      "area": "astro"
+    },
+    {
+      "year": 1798,
+      "title": "Weighing the Earth",
+      "detail": "Henry Cavendish measured the gravitational attraction between lead spheres with a torsion balance and so determined the mean density of the Earth, and with it G.",
+      "people": [
+        "Henry Cavendish"
+      ],
+      "area": "mechanics"
+    },
+    {
+      "year": 1676,
+      "title": "A finite speed of light",
+      "detail": "Ole Rømer explained the irregular timing of Jupiter’s moons by a finite speed of light, the first measurement of that speed.",
+      "people": [
+        "Ole Rømer"
+      ],
+      "area": "waves"
+    },
+    {
+      "year": 1912,
+      "title": "Cosmic rays",
+      "detail": "Victor Hess, carrying electroscopes on balloon flights, found that the ionisation of air increases with altitude. The radiation comes from outside the Earth.",
+      "people": [
+        "Victor Hess"
+      ],
+      "area": "astro"
+    },
+    {
+      "year": 1929,
+      "title": "The Hubble law",
+      "detail": "Edwin Hubble reported that the redshifts of galaxies are proportional to their distances. The relation is the first evidence that the universe expands.",
+      "people": [
+        "Edwin Hubble"
+      ],
+      "area": "astro"
+    },
+    {
+      "year": 1965,
+      "title": "The cosmic microwave background",
+      "detail": "Arno Penzias and Robert Wilson found an excess antenna temperature of about 3 K, identified by Dicke, Peebles, Roll and Wilkinson as the cooled radiation of a hot early universe.",
+      "people": [
+        "Arno Penzias",
+        "Robert Wilson"
+      ],
+      "area": "astro"
+    },
+    {
+      "year": 1998,
+      "title": "Accelerated expansion",
+      "detail": "Two teams measuring distant type Ia supernovae found that the expansion of the universe is speeding up, now described by a cosmological constant.",
+      "people": [
+        "Supernova Cosmology Project",
+        "High-Z Supernova Search Team"
+      ],
+      "area": "astro"
+    },
+    {
+      "year": 2019,
+      "title": "A black hole, imaged",
+      "detail": "The Event Horizon Telescope published an image of the ring of emission around the black hole in the galaxy M87, on the scale of the photon orbit.",
+      "people": [
+        "Event Horizon Telescope Collaboration"
+      ],
+      "area": "astro"
+    }
+  ]
+}

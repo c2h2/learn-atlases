@@ -1,0 +1,177 @@
+{
+  "slug": "analytical-mechanics",
+  "title": "Analytical mechanics",
+  "full_title": "Analytical Mechanics: Lagrangians and Hamiltonians",
+  "area": "mechanics",
+  "level": 3,
+  "order": 80,
+  "tagline": "Coordinates chosen for the problem, not for the axes",
+  "summary": "Constraints and generalised coordinates, Lagrange’s equations, central-force motion, rigid bodies, small oscillations, Hamilton’s equations and a first look at chaos.",
+  "overview": [
+    "Newtonian mechanics in Cartesian coordinates becomes painful as soon as a constraint removes a degree of freedom: a bead on a wire, a pendulum, a rolling disc. Lagrange’s method takes the constraints as the definition of the coordinates, writes the kinetic and potential energy, and produces the equations of motion without a catalogue of constraint forces.",
+    "After the calculus of variations and Lagrange’s equations, the course treats the two classical applications that justify the machinery: motion under a central force, including Kepler’s problem, and the free rotation of a rigid body. Small oscillations about equilibrium are a systematic version of the normal modes already met for springs. Hamilton’s equations and canonical transformations restate the same theory in phase space, which is the language of statistical mechanics and of quantum mechanics. A final chapter shows what a nonlinear system can do that a linear one cannot.",
+    "The skill being taught is the choice of coordinate. A good generalised coordinate is one whose kinetic energy you can write down, and whose constraint is already built in. If you cannot write T and V, no formalism will help."
+  ],
+  "prerequisites": [
+    "mechanics",
+    "math-methods"
+  ],
+  "outcomes": [
+    "Identify holonomic constraints and choose generalised coordinates.",
+    "Derive equations of motion from a Lagrangian, including generalised forces when the force is not conservative.",
+    "Reduce the central-force problem to an orbit equation and solve the Kepler problem.",
+    "Use the inertia tensor, principal axes and Euler’s equations for a rigid body.",
+    "Find normal modes and normal frequencies of a coupled system from a quadratic Lagrangian.",
+    "Write Hamilton’s equations, use Poisson brackets, and recognise a chaotic trajectory in a simple system such as the driven pendulum."
+  ],
+  "chapters": [
+    {
+      "slug": "constraints",
+      "title": "Constraints and virtual work",
+      "summary": "Holonomic constraints, generalised coordinates, and d’Alembert’s principle.",
+      "requires": [
+        "mechanics/newton-laws",
+        "math-methods/vector-calculus"
+      ]
+    },
+    {
+      "slug": "lagrangian",
+      "title": "Lagrange’s equations",
+      "summary": "The calculus of variations, the Euler–Lagrange equation, and ignorable coordinates.",
+      "requires": [
+        "analytical-mechanics/constraints",
+        "mechanics/work-energy"
+      ]
+    },
+    {
+      "slug": "central-forces",
+      "title": "Central forces",
+      "summary": "Reduction to one dimension, the orbit equation, Kepler’s problem and scattering angle.",
+      "requires": [
+        "analytical-mechanics/lagrangian",
+        "mechanics/gravitation"
+      ]
+    },
+    {
+      "slug": "rigid-bodies",
+      "title": "Rigid-body dynamics",
+      "summary": "The inertia tensor, principal axes, Euler’s equations and the free symmetric top.",
+      "requires": [
+        "analytical-mechanics/lagrangian",
+        "mechanics/angular-momentum"
+      ]
+    },
+    {
+      "slug": "small-oscillations",
+      "title": "Small oscillations",
+      "summary": "Equilibria, the matrices of T and V, normal modes and degeneracy.",
+      "requires": [
+        "analytical-mechanics/lagrangian",
+        "oscillations/simple-harmonic"
+      ]
+    },
+    {
+      "slug": "hamiltonian",
+      "title": "Hamiltonian mechanics",
+      "summary": "Legendre transforms, Hamilton’s equations, phase space and Poisson brackets.",
+      "requires": [
+        "analytical-mechanics/lagrangian"
+      ]
+    },
+    {
+      "slug": "chaos",
+      "title": "Nonlinear dynamics",
+      "summary": "Fixed points, the driven pendulum, sensitivity to initial conditions and a Poincaré section.",
+      "requires": [
+        "analytical-mechanics/hamiltonian"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1788,
+      "title": "Mécanique analytique",
+      "detail": "Lagrange’s treatise contains no diagrams. It derives the equations of motion from a single variational principle and treats constraints by the choice of coordinates.",
+      "people": [
+        "Joseph-Louis Lagrange"
+      ]
+    },
+    {
+      "year": 1834,
+      "title": "Hamilton’s general method",
+      "detail": "Hamilton’s two essays of 1834 and 1835 recast dynamics as a system of first-order equations in phase space and introduced the principal function.",
+      "people": [
+        "William Rowan Hamilton"
+      ]
+    },
+    {
+      "year": 1842,
+      "title": "Jacobi’s lectures",
+      "detail": "Jacobi simplified Hamilton’s method, introduced the transformation theory, and showed how a complete integral of the Hamilton–Jacobi equation solves the motion.",
+      "people": [
+        "Carl Gustav Jacob Jacobi"
+      ]
+    },
+    {
+      "year": 1918,
+      "title": "Noether’s theorem",
+      "detail": "Emmy Noether proved that every continuous symmetry of the action yields a conservation law. Energy, momentum and angular momentum are the cases this course uses.",
+      "people": [
+        "Emmy Noether"
+      ]
+    },
+    {
+      "year": 1890,
+      "title": "Poincaré and the three-body problem",
+      "detail": "Poincaré showed that the three-body problem does not have the integrals earlier mathematicians had hoped for, and found the homoclinic tangle that begins the modern study of chaos.",
+      "people": [
+        "Henri Poincaré"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "A deterministic nonperiodic flow",
+      "detail": "Edward Lorenz’s three equations for a model of convection have solutions that stay bounded and never repeat. The paper is the public start of chaos as a subject physicists compute.",
+      "people": [
+        "Edward Lorenz"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Classical Mechanics",
+      "authors": "John R. Taylor",
+      "year": 2005,
+      "note": "The right first book on Lagrangians. Chapters 6 to 13 cover this course except the deepest parts of rigid-body motion."
+    },
+    {
+      "title": "Introduction to Classical Mechanics",
+      "authors": "David Morin",
+      "year": 2008,
+      "note": "Superb problems, with full solutions, especially on Lagrangians and central forces."
+    },
+    {
+      "title": "Classical Mechanics",
+      "authors": "Herbert Goldstein, Charles Poole and John Safko",
+      "year": 2002,
+      "note": "Third edition. The traditional graduate text. Use it for rigid bodies, canonical transformations and Hamilton–Jacobi theory."
+    },
+    {
+      "title": "Mechanics",
+      "authors": "L. D. Landau and E. M. Lifshitz",
+      "year": 1976,
+      "note": "Third edition. Short, sharp and opinionated. Read it after Taylor, not before."
+    },
+    {
+      "title": "Classical Dynamics",
+      "authors": "David Tong",
+      "year": 2005,
+      "note": "Cambridge lecture notes, free online. A clean modern route through the same material, including a little field theory at the end."
+    }
+  ],
+  "next": [
+    "gravitation",
+    "statistical-mechanics",
+    "quantum-1"
+  ]
+}

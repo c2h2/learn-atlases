@@ -1,0 +1,165 @@
+{
+  "slug": "math-methods",
+  "title": "Mathematical methods",
+  "full_title": "Mathematical Methods for Physics",
+  "area": "methods",
+  "level": 2,
+  "order": 25,
+  "tagline": "The calculus physicists actually use",
+  "summary": "Vector calculus and the integral theorems, Fourier series, the ordinary differential equations of physics, complex methods and Green’s functions.",
+  "overview": [
+    "The physics courses state their laws as differential equations and as integrals of fields. This course supplies the mathematics those statements use, in the order the physics needs it and with the notation the physics uses. It is not a replacement for a mathematics degree: proofs are given when they are short and illuminating, and cited when they are not.",
+    "Vector calculus comes first, because electromagnetism and fluids are written in it. Fourier series come next, because they are how we solve the wave equation, the diffusion equation and the driven oscillator for a general drive. Ordinary differential equations collect the equations already met in mechanics and circuits and add series solutions. Complex numbers and Green’s functions are the last two tools, used everywhere from AC circuits to the later quantum course.",
+    "The main danger is formalism without a picture. div and curl have geometrical meanings, a Fourier series is a list of amplitudes, and a Green’s function is the response to a unit source. If you can say that sentence for each new object, the algebra stays attached to the physics."
+  ],
+  "prerequisites": [
+    "mechanics"
+  ],
+  "outcomes": [
+    "Compute gradients, divergences and curls in Cartesian and curvilinear coordinates, and interpret them.",
+    "State and use the divergence theorem and Stokes’ theorem.",
+    "Expand a periodic function in a Fourier series and use Parseval’s theorem.",
+    "Solve the standard linear ODEs of physics: constant coefficients, series solutions at ordinary points, and the Frobenius method in simple cases.",
+    "Use complex exponentials for oscillations and evaluate straightforward real integrals by residues.",
+    "Construct Green’s functions for Sturm–Liouville problems and for Poisson’s equation in simple geometries."
+  ],
+  "chapters": [
+    {
+      "slug": "vector-calculus",
+      "title": "Vector calculus",
+      "summary": "Fields, the gradient, divergence and curl, and orthogonal curvilinear coordinates.",
+      "requires": [
+        "mechanics/units-vectors"
+      ]
+    },
+    {
+      "slug": "integral-theorems",
+      "title": "The integral theorems",
+      "summary": "Line and surface integrals, the divergence theorem, Stokes’ theorem and conservative fields.",
+      "requires": [
+        "math-methods/vector-calculus"
+      ]
+    },
+    {
+      "slug": "fourier",
+      "title": "Fourier series",
+      "summary": "Periodic expansions, convergence, Parseval’s theorem and the Fourier transform as a limit.",
+      "requires": [
+        "oscillations/superposition"
+      ]
+    },
+    {
+      "slug": "odes",
+      "title": "Ordinary differential equations",
+      "summary": "Linear equations, normal modes, series solutions and the equations of Bessel and Legendre in outline.",
+      "requires": [
+        "oscillations/simple-harmonic",
+        "math-methods/fourier"
+      ]
+    },
+    {
+      "slug": "complex-methods",
+      "title": "Complex methods",
+      "summary": "Complex exponentials, contour integrals and the residue theorem applied to real integrals.",
+      "requires": [
+        "math-methods/odes"
+      ]
+    },
+    {
+      "slug": "green-functions",
+      "title": "Green’s functions",
+      "summary": "The response to a point source, Sturm–Liouville problems, and Poisson’s equation.",
+      "requires": [
+        "math-methods/odes",
+        "math-methods/integral-theorems"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1822,
+      "title": "The Analytical Theory of Heat",
+      "detail": "Joseph Fourier’s treatise expanded the temperature of a body in trigonometric series in order to solve the heat equation, against objections that such series could not represent general functions.",
+      "people": [
+        "Joseph Fourier"
+      ]
+    },
+    {
+      "year": 1828,
+      "title": "Green’s essay",
+      "detail": "George Green’s privately printed essay introduced the function now called Green’s and the theorem relating a volume integral of a divergence to a surface flux.",
+      "people": [
+        "George Green"
+      ]
+    },
+    {
+      "year": 1854,
+      "title": "Stokes’ theorem",
+      "detail": "The theorem relating the circulation of a field to its curl through a surface was set on the Smith’s Prize examination of 1854. It became standard through Maxwell’s use of it.",
+      "people": [
+        "George Gabriel Stokes"
+      ]
+    },
+    {
+      "year": 1893,
+      "title": "Heaviside’s vectors",
+      "detail": "Oliver Heaviside recast Maxwell’s twenty equations in components as the four vector equations taught today, and promoted the notation of divergence and curl.",
+      "people": [
+        "Oliver Heaviside"
+      ]
+    },
+    {
+      "year": 1824,
+      "title": "Cauchy’s integral theorem",
+      "detail": "Augustin-Louis Cauchy developed the integral calculus of complex functions. The residue theorem, in the hands of Cauchy and later Laurent, is the tool used in this course.",
+      "people": [
+        "Augustin-Louis Cauchy"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "The delta function",
+      "detail": "Paul Dirac’s Principles of Quantum Mechanics made the delta function the everyday language of a unit source. Its justification as a distribution came later, with Schwartz.",
+      "people": [
+        "Paul Dirac"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Mathematical Methods in the Physical Sciences",
+      "authors": "Mary L. Boas",
+      "year": 2006,
+      "note": "Third edition. The book most physics students actually learn this material from. Do the exercises."
+    },
+    {
+      "title": "Mathematical Methods for Physics and Engineering",
+      "authors": "K. F. Riley, M. P. Hobson and S. J. Bence",
+      "year": 2006,
+      "note": "Third edition. More encyclopaedic than Boas, and a good reference once you know what you are looking up."
+    },
+    {
+      "title": "Div, Grad, Curl, and all that",
+      "authors": "H. M. Schey",
+      "year": 2005,
+      "note": "Fourth edition. A short, intuitive reading of vector calculus. Read it before the theorems feel official."
+    },
+    {
+      "title": "Mathematical Methods for Physicists",
+      "authors": "George B. Arfken, Hans J. Weber and Frank E. Harris",
+      "year": 2013,
+      "note": "Seventh edition. A reference for special functions and for the later courses."
+    },
+    {
+      "title": "Fourier Series and Boundary Value Problems",
+      "authors": "James Ward Brown and Ruel V. Churchill",
+      "year": 2012,
+      "note": "Eighth edition. A clean treatment of the series this course uses for waves and diffusion."
+    }
+  ],
+  "next": [
+    "analytical-mechanics",
+    "electrodynamics",
+    "quantum-1"
+  ]
+}

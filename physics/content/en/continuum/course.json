@@ -1,0 +1,166 @@
+{
+  "slug": "continuum",
+  "title": "Continuum mechanics",
+  "full_title": "Continuum Mechanics: Elasticity and Fluids",
+  "area": "mechanics",
+  "level": 3,
+  "order": 130,
+  "tagline": "Solids that deform and fluids that flow",
+  "summary": "Stress and strain, linear elasticity, the kinematics of flow, Euler’s equation, the Navier–Stokes equation and waves in fluids.",
+  "overview": [
+    "When the number of particles is enormous and we care about lengths much larger than the distance between them, matter is a continuum. The state is a few fields — density, velocity, displacement — and the laws are conservation of mass and momentum written for those fields. Solids remember a reference shape; fluids do not.",
+    "Stress and strain, and the linear relation between them, come first, with Young’s modulus and the shear modulus as the two numbers a beginner needs. Fluid kinematics then distinguishes a pathline from a streamline. Euler’s equation is Newton’s second law for an ideal fluid, and Bernoulli’s equation is its energy integral along a streamline. Viscosity produces the Navier–Stokes equation, whose few exact solutions — pipe flow, a boundary layer in outline — already explain a great deal. Waves on water and sound close the course.",
+    "The first-year fluid chapter is the special case of this one in which the flow is steady, incompressible and either at rest or inviscid. Every time that chapter’s formula is used, the hypotheses should be checked against the more general equation."
+  ],
+  "prerequisites": [
+    "mechanics",
+    "math-methods"
+  ],
+  "outcomes": [
+    "Define the stress tensor and the strain tensor and use Hooke’s law in isotropic linear elasticity.",
+    "Distinguish streamlines, pathlines and the material derivative.",
+    "Derive the continuity equation and Euler’s equation, and recover Bernoulli’s equation under its hypotheses.",
+    "Write the Navier–Stokes equation and solve it for steady flow in a pipe and for Couette flow.",
+    "Estimate a Reynolds number and say what it measures.",
+    "Describe sound waves and surface gravity waves at the level of their dispersion relations."
+  ],
+  "chapters": [
+    {
+      "slug": "stress-strain",
+      "title": "Stress and strain",
+      "summary": "The stress tensor, the strain tensor, and what each component means.",
+      "requires": [
+        "mechanics/newton-laws",
+        "math-methods/vector-calculus"
+      ]
+    },
+    {
+      "slug": "elasticity",
+      "title": "Linear elasticity",
+      "summary": "Hooke’s law, Young’s modulus, Poisson’s ratio, and simple deformations.",
+      "requires": [
+        "continuum/stress-strain"
+      ]
+    },
+    {
+      "slug": "fluid-kinematics",
+      "title": "How fluids move",
+      "summary": "The material derivative, streamlines, and the continuity equation.",
+      "requires": [
+        "continuum/stress-strain",
+        "mechanics/fluids"
+      ]
+    },
+    {
+      "slug": "ideal-flow",
+      "title": "Ideal flow",
+      "summary": "Euler’s equation, vorticity, and Bernoulli’s equation along a streamline.",
+      "requires": [
+        "continuum/fluid-kinematics"
+      ]
+    },
+    {
+      "slug": "viscous-flow",
+      "title": "Viscous flow",
+      "summary": "The Navier–Stokes equation, pipe flow, Couette flow and the Reynolds number.",
+      "requires": [
+        "continuum/ideal-flow"
+      ]
+    },
+    {
+      "slug": "waves-in-fluids",
+      "title": "Waves in fluids",
+      "summary": "Sound, shallow-water waves, and the dispersion of surface gravity waves.",
+      "requires": [
+        "continuum/ideal-flow",
+        "oscillations/travelling-waves"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1687,
+      "title": "Newton on viscosity",
+      "detail": "In Book II of the Principia Newton proposed that the resistance between adjacent layers of a fluid is proportional to their relative speed, the linear viscosity used here.",
+      "people": [
+        "Isaac Newton"
+      ]
+    },
+    {
+      "year": 1738,
+      "title": "Hydrodynamica",
+      "detail": "Daniel Bernoulli’s Hydrodynamica relates pressure and speed in a steady flow. The derivation taught now, from Euler’s equation, came later.",
+      "people": [
+        "Daniel Bernoulli"
+      ]
+    },
+    {
+      "year": 1757,
+      "title": "Euler’s equations",
+      "detail": "Leonhard Euler wrote the acceleration of a fluid element in terms of the pressure gradient, the inviscid equation that carries his name.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1822,
+      "title": "Navier",
+      "detail": "Claude-Louis Navier added viscous terms to Euler’s equation from a molecular hypothesis. Stokes, in 1845, derived the same equation from a continuum argument.",
+      "people": [
+        "Claude-Louis Navier",
+        "George Gabriel Stokes"
+      ]
+    },
+    {
+      "year": 1904,
+      "title": "The boundary layer",
+      "detail": "Ludwig Prandtl showed that for small viscosity the flow is ideal except in a thin layer at a solid surface, where the no-slip condition is met.",
+      "people": [
+        "Ludwig Prandtl"
+      ]
+    },
+    {
+      "year": 1851,
+      "title": "Stokes’ drag",
+      "detail": "Stokes solved the flow past a slowly moving sphere and found the drag 6πηav, still the formula used for a Millikan oil drop and for a small particle in air.",
+      "people": [
+        "George Gabriel Stokes"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "An Introduction to Fluid Dynamics",
+      "authors": "G. K. Batchelor",
+      "year": 2000,
+      "note": "The classic. Harder than this course, and the right reference for any derivation you want done properly."
+    },
+    {
+      "title": "Elementary Fluid Dynamics",
+      "authors": "D. J. Acheson",
+      "year": 1990,
+      "note": "The best undergraduate book. It covers everything here except the elasticity chapters, with real calculations."
+    },
+    {
+      "title": "Fluid Mechanics",
+      "authors": "Pijush K. Kundu, Ira M. Cohen and David R. Dowling",
+      "year": 2015,
+      "note": "Sixth edition. A full course text, good on waves and on viscous flow."
+    },
+    {
+      "title": "Theory of Elasticity",
+      "authors": "L. D. Landau and E. M. Lifshitz",
+      "year": 1986,
+      "note": "Third edition. Short and definitive for the solid half of the course, once the definitions are familiar."
+    },
+    {
+      "title": "University Physics",
+      "authors": "Hugh D. Young and Roger A. Freedman",
+      "year": 2020,
+      "note": "Fifteenth edition, the chapter on fluid mechanics, as the elementary special case."
+    }
+  ],
+  "next": [
+    "computation"
+  ]
+}

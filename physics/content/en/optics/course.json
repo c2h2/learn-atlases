@@ -1,0 +1,148 @@
+{
+  "slug": "optics",
+  "title": "Optics",
+  "full_title": "Optics: Rays, Interference and Diffraction",
+  "area": "waves",
+  "level": 2,
+  "order": 60,
+  "tagline": "How light travels, bends and interferes",
+  "summary": "Geometrical optics of mirrors and lenses, then the wave theory: interference, diffraction and polarisation.",
+  "overview": [
+    "Geometrical optics treats light as rays that reflect and refract. It is an approximation, valid when obstacles are large compared with a wavelength, and it is good enough to design a telescope. The wave theory is the more fundamental account: light is the electromagnetic wave of the magnetism course, and rays are the direction in which the wave’s energy travels.",
+    "The first chapter covers reflection, refraction, the thin-lens equation and optical instruments, with the sign convention stated explicitly. Interference and diffraction then explain what rays cannot: why a double slit produces fringes, why a single slit has a width, and why a grating disperses colours. Polarisation is the evidence that the wave is transverse.",
+    "Path difference, not a memorised formula, is the thing to compute. A bright fringe is a path difference of a whole number of wavelengths, once any phase change on reflection has been counted. The small-angle approximation sin θ ≈ tan θ ≈ θ (in radians) is used constantly and should be labelled when it is used."
+  ],
+  "prerequisites": [
+    "oscillations"
+  ],
+  "outcomes": [
+    "Apply the law of reflection and Snell’s law, including total internal reflection.",
+    "Use the mirror and thin-lens equations with a consistent sign convention, and locate images.",
+    "Explain two-slit interference and thin-film interference in terms of path difference.",
+    "Find the single-slit diffraction pattern and the resolving power of a circular aperture.",
+    "Use the grating equation and describe how a spectrometer separates wavelengths.",
+    "Account for polarisation by selective absorption, reflection and birefringence, and use Malus’s law."
+  ],
+  "chapters": [
+    {
+      "slug": "geometric",
+      "title": "Rays and images",
+      "summary": "Reflection, refraction, mirrors, thin lenses and simple instruments.",
+      "requires": [
+        "oscillations/travelling-waves"
+      ]
+    },
+    {
+      "slug": "interference",
+      "title": "Interference",
+      "summary": "Two-slit interference, coherence, and thin films.",
+      "requires": [
+        "optics/geometric",
+        "oscillations/superposition"
+      ]
+    },
+    {
+      "slug": "diffraction",
+      "title": "Diffraction",
+      "summary": "Single-slit diffraction, the Rayleigh criterion, and diffraction gratings.",
+      "requires": [
+        "optics/interference"
+      ]
+    },
+    {
+      "slug": "polarisation",
+      "title": "Polarisation",
+      "summary": "Transverse waves, Malus’s law, polarisation by reflection, and birefringence.",
+      "requires": [
+        "optics/interference",
+        "magnetism/electromagnetic-waves"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1621,
+      "title": "The sine law of refraction",
+      "detail": "Willebrord Snell found that the sines of the angles of incidence and refraction are in a constant ratio. Descartes published the law in 1637.",
+      "people": [
+        "Willebrord Snell",
+        "René Descartes"
+      ]
+    },
+    {
+      "year": 1704,
+      "title": "Newton’s Opticks",
+      "detail": "Newton’s Opticks set out experiments on the prism, thin films (Newton’s rings) and diffraction, and defended a particle theory of light.",
+      "people": [
+        "Isaac Newton"
+      ]
+    },
+    {
+      "year": 1801,
+      "title": "Young’s interference",
+      "detail": "Thomas Young’s lectures of 1801–1803 showed that light from two slits forms fringes, which a particle picture does not explain.",
+      "people": [
+        "Thomas Young"
+      ]
+    },
+    {
+      "year": 1818,
+      "title": "Fresnel’s memoir",
+      "detail": "Augustin-Jean Fresnel’s memoir on diffraction, assessed by Poisson and Arago, predicted the bright spot in the shadow of a disc and confirmed the wave theory.",
+      "people": [
+        "Augustin-Jean Fresnel"
+      ]
+    },
+    {
+      "year": 1808,
+      "title": "Polarisation by reflection",
+      "detail": "Étienne-Louis Malus found that light reflected from glass at a particular angle is polarised, evidence that the light wave is transverse.",
+      "people": [
+        "Étienne-Louis Malus"
+      ]
+    },
+    {
+      "year": 1865,
+      "title": "Light as an electromagnetic wave",
+      "detail": "Maxwell’s identification of light with an electromagnetic disturbance explains why the wave is transverse and why its speed is 1/√(ε₀μ₀).",
+      "people": [
+        "James Clerk Maxwell"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Optics",
+      "authors": "Eugene Hecht",
+      "year": 2017,
+      "note": "Fifth edition. The standard undergraduate optics book, from rays through Fourier optics."
+    },
+    {
+      "title": "Introduction to Optics",
+      "authors": "Frank L. Pedrotti, Leno M. Pedrotti and Leno S. Pedrotti",
+      "year": 2017,
+      "note": "Third edition. Clear on geometrical optics and on polarisation."
+    },
+    {
+      "title": "University Physics",
+      "authors": "Hugh D. Young and Roger A. Freedman",
+      "year": 2020,
+      "note": "Fifteenth edition, the optics chapters, for a first pass and for problems."
+    },
+    {
+      "title": "Optics",
+      "authors": "Ajoy Ghatak",
+      "year": 2010,
+      "note": "A thorough account with many worked examples, widely used in physics degrees."
+    },
+    {
+      "title": "Introduction to Electrodynamics",
+      "authors": "David J. Griffiths",
+      "year": 2017,
+      "note": "Fourth edition, chapter 9, for the electromagnetic wave that geometrical optics approximates."
+    }
+  ],
+  "next": [
+    "quantum-1"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "slug": "electrostatics",
+  "title": "Electrostatics and circuits",
+  "full_title": "Electrostatics, Current and Circuits",
+  "area": "fields",
+  "level": 2,
+  "order": 40,
+  "tagline": "Charge, field, potential and steady currents",
+  "summary": "Coulomb’s law, the electric field and Gauss’s law, electric potential, capacitors, current, resistance and direct-current circuits.",
+  "overview": [
+    "Electricity begins with one new property of matter, charge, and one new field, the electric field, which tells a test charge what force it would feel. Everything else in this course — potential, capacitance, current, resistance — is built from that field together with the mechanics you already know. The field is the object; the force on a particular charge is an application.",
+    "Coulomb’s law and the superposition principle give the field of any static arrangement of charges, and Gauss’s law is the same statement rewritten so that symmetry does the integration. Potential turns a vector problem back into a scalar one. Capacitors store energy in the field. The last two chapters let the charges move slowly: current is a flux of charge, Ohm’s law is a material relation, and Kirchhoff’s rules are charge conservation and the loop rule for a conservative field.",
+    "Gauss’s law is easy to state and easy to misapply. It is always true; it is useful for computing a field only when symmetry makes the flux integral trivial. A conductor in electrostatics is an equipotential with no field in its interior, and that fact solves more problems than a direct integration does."
+  ],
+  "prerequisites": [
+    "mechanics"
+  ],
+  "outcomes": [
+    "Compute forces and fields of point charges by superposition, in Cartesian and polar language.",
+    "Use Gauss’s law for spherical, cylindrical and planar symmetry, and say why it does not help without symmetry.",
+    "Compute potential and potential difference, and recover the field as minus the gradient.",
+    "Find capacitance and stored energy for simple geometries and for combinations of capacitors.",
+    "Apply Ohm’s law, resistivity and the microscopic picture of drift velocity.",
+    "Analyse direct-current circuits with Kirchhoff’s rules, including RC transients."
+  ],
+  "chapters": [
+    {
+      "slug": "coulomb",
+      "title": "Charge and Coulomb’s law",
+      "summary": "Charge, conductors and insulators, Coulomb’s law and superposition.",
+      "requires": [
+        "mechanics/newton-laws"
+      ]
+    },
+    {
+      "slug": "electric-field",
+      "title": "The electric field",
+      "summary": "The field of point charges and continuous distributions, field lines, and motion in a uniform field.",
+      "requires": [
+        "electrostatics/coulomb"
+      ]
+    },
+    {
+      "slug": "gauss-law",
+      "title": "Gauss’s law",
+      "summary": "Flux, Gauss’s law, and the fields of spheres, lines and sheets, including conductors.",
+      "requires": [
+        "electrostatics/electric-field"
+      ]
+    },
+    {
+      "slug": "potential",
+      "title": "Electric potential",
+      "summary": "Potential, potential energy, the field as a gradient, and equipotentials.",
+      "requires": [
+        "electrostatics/electric-field"
+      ]
+    },
+    {
+      "slug": "capacitance",
+      "title": "Capacitance and dielectrics",
+      "summary": "Capacitors, combinations, stored energy, and the effect of a linear dielectric.",
+      "requires": [
+        "electrostatics/potential",
+        "electrostatics/gauss-law"
+      ]
+    },
+    {
+      "slug": "current",
+      "title": "Current and resistance",
+      "summary": "Current density, drift speed, resistivity, Ohm’s law and dissipation.",
+      "requires": [
+        "electrostatics/potential"
+      ]
+    },
+    {
+      "slug": "dc-circuits",
+      "title": "Direct-current circuits",
+      "summary": "Resistor networks, Kirchhoff’s rules, and charging and discharging a capacitor.",
+      "requires": [
+        "electrostatics/current",
+        "electrostatics/capacitance"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1785,
+      "title": "Coulomb’s torsion balance",
+      "detail": "Charles-Augustin de Coulomb measured the force between charged spheres with a torsion balance and found the inverse-square law that now carries his name.",
+      "people": [
+        "Charles-Augustin de Coulomb"
+      ]
+    },
+    {
+      "year": 1813,
+      "title": "Poisson’s equation",
+      "detail": "Siméon Denis Poisson formulated the equation ∇²V = −ρ/ε₀ relating the electrostatic potential to the charge density.",
+      "people": [
+        "Siméon Denis Poisson"
+      ]
+    },
+    {
+      "year": 1835,
+      "title": "Gauss’s flux law",
+      "detail": "Gauss wrote the flux law for the electric field in 1835. It was published only in 1867, in his collected works.",
+      "people": [
+        "Carl Friedrich Gauss"
+      ]
+    },
+    {
+      "year": 1827,
+      "title": "Ohm’s law",
+      "detail": "Georg Simon Ohm’s Die galvanische Kette stated that the current in a conductor is proportional to the potential difference across it.",
+      "people": [
+        "Georg Simon Ohm"
+      ]
+    },
+    {
+      "year": 1845,
+      "title": "Kirchhoff’s rules",
+      "detail": "As a student, Gustav Kirchhoff published the junction and loop rules that reduce a resistive network to linear equations.",
+      "people": [
+        "Gustav Kirchhoff"
+      ]
+    },
+    {
+      "year": 1837,
+      "title": "Faraday and the dielectric",
+      "detail": "Faraday found that filling a capacitor with an insulator increases its capacitance, the first evidence that the field in matter is not the field in vacuum.",
+      "people": [
+        "Michael Faraday"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Electrodynamics",
+      "authors": "David J. Griffiths",
+      "year": 2017,
+      "note": "Fourth edition. Chapters 2 and 3 are the standard undergraduate treatment of electrostatics. Read them even during a first-year course."
+    },
+    {
+      "title": "Electricity and Magnetism",
+      "authors": "Edward M. Purcell and David J. Morin",
+      "year": 2013,
+      "note": "Third edition. Relativistic in outlook from the start, and exceptionally clear on fields in matter."
+    },
+    {
+      "title": "University Physics",
+      "authors": "Hugh D. Young and Roger A. Freedman",
+      "year": 2020,
+      "note": "Fifteenth edition, the chapters on electrostatics and direct-current circuits."
+    },
+    {
+      "title": "A Student’s Guide to Maxwell’s Equations",
+      "authors": "Daniel Fleisch",
+      "year": 2008,
+      "note": "A short, equation-by-equation reading of the integral and differential forms. Useful beside Gauss’s law."
+    },
+    {
+      "title": "The Feynman Lectures on Physics, Volume II",
+      "authors": "Richard P. Feynman, Robert B. Leighton and Matthew Sands",
+      "year": 1964,
+      "note": "The early chapters on electrostatics and the field inside a dielectric."
+    }
+  ],
+  "next": [
+    "magnetism"
+  ]
+}

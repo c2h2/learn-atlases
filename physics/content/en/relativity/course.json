@@ -1,0 +1,166 @@
+{
+  "slug": "relativity",
+  "title": "Special relativity",
+  "full_title": "Special Relativity",
+  "area": "astro",
+  "level": 2,
+  "order": 70,
+  "tagline": "Space and time at speeds near the speed of light",
+  "summary": "Einstein’s two postulates, the Lorentz transformation, time dilation and length contraction, velocity addition, energy and momentum, and Minkowski spacetime.",
+  "overview": [
+    "Newtonian mechanics assumes a single time shared by every observer and a velocity that adds in the obvious way. Experiments on light refuse that assumption. Special relativity keeps the principle that no inertial experiment can detect uniform motion, and adds the fact that every inertial observer measures the same speed of light. The consequences — clocks, rods, simultaneity, energy — follow by algebra from those two sentences.",
+    "The course starts from the Galilean transformation and the difficulty it has with electromagnetism, then derives the Lorentz transformation and reads off time dilation, length contraction and the relativity of simultaneity. Velocity addition and the Doppler effect come next. Dynamics is rebuilt so that momentum and energy transform properly, which forces E² = p²c² + m²c⁴ and the identification of rest energy. The last chapters repackage the same physics as geometry in Minkowski spacetime.",
+    "A common failure is to apply time dilation and length contraction to the wrong pair of events. Write down the two events, say in which frame they occur at the same place or the same time, and only then choose a formula. “The moving clock runs slow” is true of a clock compared with two synchronised clocks at rest; it is not true of every pair of readings."
+  ],
+  "prerequisites": [
+    "mechanics"
+  ],
+  "outcomes": [
+    "State the two postulates and explain why the Galilean transformation conflicts with a universal speed of light.",
+    "Derive and use the Lorentz transformation, including the relativity of simultaneity.",
+    "Apply time dilation, length contraction and the Doppler effect to specified pairs of events.",
+    "Add collinear velocities relativistically and check the low-speed limit.",
+    "Use relativistic energy and momentum, including rest energy, kinetic energy and the invariant E² − p²c².",
+    "Draw and read a spacetime diagram, and use four-vectors for simple particle processes."
+  ],
+  "chapters": [
+    {
+      "slug": "galilean",
+      "title": "Inertial frames",
+      "summary": "The Galilean transformation, the ship thought-experiment, and why electromagnetism does not fit.",
+      "requires": [
+        "mechanics/newton-laws"
+      ]
+    },
+    {
+      "slug": "postulates",
+      "title": "The two postulates",
+      "summary": "Einstein’s postulates and the derivation of the Lorentz transformation.",
+      "requires": [
+        "relativity/galilean"
+      ]
+    },
+    {
+      "slug": "time-and-length",
+      "title": "Time, length and simultaneity",
+      "summary": "Time dilation, length contraction, the twin paradox in outline, and synchronisation.",
+      "requires": [
+        "relativity/postulates"
+      ]
+    },
+    {
+      "slug": "velocity-energy",
+      "title": "Velocity, energy and momentum",
+      "summary": "Velocity addition, the relativistic Doppler effect, and the rebuild of momentum and energy.",
+      "requires": [
+        "relativity/time-and-length",
+        "mechanics/momentum"
+      ]
+    },
+    {
+      "slug": "four-vectors",
+      "title": "Four-vectors",
+      "summary": "The interval, four-velocity and four-momentum, and invariants in collisions.",
+      "requires": [
+        "relativity/velocity-energy"
+      ]
+    },
+    {
+      "slug": "spacetime",
+      "title": "Spacetime diagrams",
+      "summary": "Minkowski diagrams, worldlines, the light cone, and causality.",
+      "requires": [
+        "relativity/four-vectors"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1632,
+      "title": "The ship",
+      "detail": "Galileo’s Dialogue argues that experiments inside a uniformly moving ship cannot reveal the ship’s motion. The principle of relativity is older than the theory named after it.",
+      "people": [
+        "Galileo Galilei"
+      ]
+    },
+    {
+      "year": 1887,
+      "title": "Michelson and Morley",
+      "detail": "The Michelson–Morley interferometer found no evidence that the Earth moves through a luminiferous ether, at a sensitivity that should have seen it.",
+      "people": [
+        "Albert A. Michelson",
+        "Edward W. Morley"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "On the electrodynamics of moving bodies",
+      "detail": "Einstein’s paper of 30 June 1905 derives the Lorentz transformation from two postulates and shows that simultaneity depends on the frame.",
+      "people": [
+        "Albert Einstein"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "Rest energy",
+      "detail": "In a short paper that September, Einstein concluded that the mass of a body is a measure of its energy content: the relation written today as E₀ = mc².",
+      "people": [
+        "Albert Einstein"
+      ]
+    },
+    {
+      "year": 1908,
+      "title": "Space and time",
+      "detail": "Minkowski’s lecture in Cologne recast special relativity as geometry: a four-dimensional spacetime with a single invariant interval.",
+      "people": [
+        "Hermann Minkowski"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "Clocks on aeroplanes",
+      "detail": "Hafele and Keating flew caesium clocks around the world and measured both the special-relativistic and the gravitational shifts. Later tests are far more precise; this was the first one a newspaper could report.",
+      "people": [
+        "Joseph Hafele",
+        "Richard Keating"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Special Relativity",
+      "authors": "A. P. French",
+      "year": 1968,
+      "note": "The M.I.T. introductory text. Still the best first book: spacetime diagrams from the beginning, and honest problems."
+    },
+    {
+      "title": "Spacetime Physics",
+      "authors": "Edwin F. Taylor and John Archibald Wheeler",
+      "year": 1992,
+      "note": "Second edition. Geometric, with almost no tensor machinery, and a memorable supply of paradoxes."
+    },
+    {
+      "title": "Introduction to Special Relativity",
+      "authors": "Robert Resnick",
+      "year": 1968,
+      "note": "A standard course text with careful kinematics and a full chapter on dynamics."
+    },
+    {
+      "title": "Introduction to Electrodynamics",
+      "authors": "David J. Griffiths",
+      "year": 2017,
+      "note": "Fourth edition, chapter 12. The relativistic transformation of the fields, once the kinematics is in place."
+    },
+    {
+      "title": "Relativity: Special, General, and Cosmological",
+      "authors": "Wolfgang Rindler",
+      "year": 2006,
+      "note": "Second edition. Sharper and more advanced. The special-relativity half is the natural next reading."
+    }
+  ],
+  "next": [
+    "gravitation",
+    "particles",
+    "electrodynamics"
+  ]
+}

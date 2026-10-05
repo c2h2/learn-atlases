@@ -1,0 +1,199 @@
+{
+  "slug": "mechanics",
+  "title": "Mechanics",
+  "full_title": "Mechanics: Motion, Forces and Energy",
+  "area": "mechanics",
+  "level": 1,
+  "order": 10,
+  "tagline": "Newton’s laws, from straight-line motion to orbits and fluids",
+  "summary": "The mechanics taught in the first year of a physics degree: vectors, kinematics, Newton’s laws, energy, momentum, rotation, gravitation and a first look at fluids.",
+  "overview": [
+    "Mechanics is the theory of how things move and why. A stone, a planet, a spinning wheel and the water in a pipe are very different objects, but the same few laws describe all of them once we say what a force is and how it changes momentum. This course builds that theory from the beginning, in the form used throughout the rest of the degree: vector quantities, derivatives with respect to time, and conservation laws that follow from the equations of motion.",
+    "The first three chapters are kinematics, the description of motion before any question of cause. Chapters 4–6 introduce Newton’s laws and the two conservation laws that do most of the work in problems, energy and momentum. Chapters 7 and 8 treat rotation, where the same ideas reappear with angle in place of distance and torque in place of force. Gravitation then shows the laws at work on the scale of orbits, and the last chapter is a first treatment of fluids at rest and in steady flow.",
+    "Two habits matter more than any formula. Draw a diagram and name the object whose motion you are describing before you write an equation, and keep track of which quantities are vectors. Take g = 9.80 m/s² unless a problem says otherwise, and keep extra digits until the last line. Every derived formula in the course has hypotheses — constant acceleration, no friction, a rigid body, an inertial frame — and using a formula outside those hypotheses is the usual way to get a confident wrong answer."
+  ],
+  "prerequisites": [],
+  "outcomes": [
+    "Add, resolve and multiply vectors, and use dimensions to check an equation before computing with it.",
+    "Describe motion in one and two dimensions with position, velocity and acceleration, including projectiles and uniform circular motion.",
+    "Draw a free-body diagram and apply Newton’s laws in inertial frames, including friction and circular motion.",
+    "Compute work, kinetic energy and potential energy, and decide when mechanical energy is conserved.",
+    "Use momentum and the centre of mass for collisions and for systems of several particles.",
+    "Compute moments of inertia and relate torque, angular acceleration and rotational kinetic energy.",
+    "Apply the angular-momentum principle, including situations where it is conserved.",
+    "Solve problems of circular and elliptical orbits, escape speed and surface gravity from Newton’s law of gravitation.",
+    "Use hydrostatic pressure, buoyancy, continuity and Bernoulli’s equation, and state the assumptions of each."
+  ],
+  "chapters": [
+    {
+      "slug": "units-vectors",
+      "title": "Units, dimensions and vectors",
+      "summary": "SI units, dimensional homogeneity, and the algebra of vectors: components, the dot product and the cross product.",
+      "requires": []
+    },
+    {
+      "slug": "motion-1d",
+      "title": "Motion in one dimension",
+      "summary": "Average and instantaneous velocity and acceleration, and the equations for constant acceleration, including free fall.",
+      "requires": [
+        "mechanics/units-vectors"
+      ]
+    },
+    {
+      "slug": "motion-2d",
+      "title": "Motion in a plane",
+      "summary": "Projectile motion, relative velocity and the acceleration of uniform circular motion.",
+      "requires": [
+        "mechanics/motion-1d"
+      ]
+    },
+    {
+      "slug": "newton-laws",
+      "title": "Newton’s laws",
+      "summary": "Force, mass, inertial frames, free-body diagrams, friction and connected objects.",
+      "requires": [
+        "mechanics/motion-2d"
+      ]
+    },
+    {
+      "slug": "work-energy",
+      "title": "Work and energy",
+      "summary": "Work, the work–energy theorem, potential energy, conservation of mechanical energy and power.",
+      "requires": [
+        "mechanics/newton-laws"
+      ]
+    },
+    {
+      "slug": "momentum",
+      "title": "Momentum and collisions",
+      "summary": "Impulse, conservation of momentum, elastic and inelastic collisions, the centre of mass and rockets.",
+      "requires": [
+        "mechanics/newton-laws"
+      ]
+    },
+    {
+      "slug": "rotation",
+      "title": "Rotation of rigid bodies",
+      "summary": "Angular kinematics, moment of inertia, torque, rotational energy and rolling without slipping.",
+      "requires": [
+        "mechanics/newton-laws",
+        "mechanics/motion-1d"
+      ]
+    },
+    {
+      "slug": "angular-momentum",
+      "title": "Angular momentum",
+      "summary": "The angular momentum of a particle and of a rigid body, its rate of change, and when it is conserved.",
+      "requires": [
+        "mechanics/rotation",
+        "mechanics/momentum"
+      ]
+    },
+    {
+      "slug": "gravitation",
+      "title": "Gravitation",
+      "summary": "Newton’s law of gravitation, gravitational potential energy, circular and elliptical orbits, and escape speed.",
+      "requires": [
+        "mechanics/work-energy",
+        "mechanics/newton-laws"
+      ]
+    },
+    {
+      "slug": "fluids",
+      "title": "Fluids",
+      "summary": "Pressure, Pascal’s and Archimedes’ principles, continuity and Bernoulli’s equation.",
+      "requires": [
+        "mechanics/newton-laws",
+        "mechanics/work-energy"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -250,
+      "title": "The lever and floating bodies",
+      "detail": "Archimedes’ On the Equilibrium of Planes proves the law of the lever, and On Floating Bodies proves that a floating body displaces its own weight of fluid.",
+      "people": [
+        "Archimedes"
+      ]
+    },
+    {
+      "year": 1638,
+      "title": "Two New Sciences",
+      "detail": "Galileo’s Discourses argue that, neglecting air resistance, the distance fallen from rest grows with the square of the time, and that a projectile follows a parabola.",
+      "people": [
+        "Galileo Galilei"
+      ]
+    },
+    {
+      "year": 1687,
+      "title": "The Principia",
+      "detail": "Newton’s Philosophiae Naturalis Principia Mathematica states the three laws of motion and the inverse-square law of gravitation, and derives Kepler’s laws from them.",
+      "people": [
+        "Isaac Newton"
+      ]
+    },
+    {
+      "year": 1743,
+      "title": "d’Alembert’s principle",
+      "detail": "Jean le Rond d’Alembert’s Traité de dynamique recasts dynamics as a balance of forces including the inertial term −ma, a step toward Lagrange’s later formulation.",
+      "people": [
+        "Jean le Rond d’Alembert"
+      ]
+    },
+    {
+      "year": 1829,
+      "title": "Work as a quantity",
+      "detail": "Coriolis defined the work of a force along a path and related it to the change in vis viva, the quantity we now write as twice the kinetic energy.",
+      "people": [
+        "Gaspard-Gustave Coriolis"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "The Newtonian limit",
+      "detail": "Einstein’s special relativity shows that Newton’s laws are the low-speed limit of a deeper theory. At everyday speeds the difference is far too small to measure, which is why the Newtonian theory remains the working tool of this course.",
+      "people": [
+        "Albert Einstein"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "University Physics",
+      "authors": "Hugh D. Young and Roger A. Freedman",
+      "year": 2020,
+      "note": "Fifteenth edition. The standard first-year text: careful explanations, many worked examples and a large supply of problems at every level."
+    },
+    {
+      "title": "An Introduction to Mechanics",
+      "authors": "Daniel Kleppner and Robert Kolenkow",
+      "year": 2014,
+      "note": "Second edition. Sharper and more demanding than a typical first course; excellent on momentum, rotation and the meaning of inertial frames."
+    },
+    {
+      "title": "Introduction to Classical Mechanics",
+      "authors": "David Morin",
+      "year": 2008,
+      "note": "A problem book as much as a textbook. The solutions are unusually complete, and the harder problems are genuinely instructive."
+    },
+    {
+      "title": "Classical Mechanics",
+      "authors": "John R. Taylor",
+      "year": 2005,
+      "note": "Especially good on oscillations, conservation laws and the passage from Newtonian mechanics to Lagrangians, which is the next course."
+    },
+    {
+      "title": "The Feynman Lectures on Physics, Volume I",
+      "authors": "Richard P. Feynman, Robert B. Leighton and Matthew Sands",
+      "year": 1963,
+      "note": "New millennium edition, 2011. Not a substitute for exercises, but the chapters on energy, symmetry and the laws of motion are worth reading slowly."
+    }
+  ],
+  "next": [
+    "oscillations",
+    "thermodynamics",
+    "electrostatics",
+    "math-methods"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "slug": "condensed-matter",
+  "title": "Condensed matter",
+  "full_title": "Condensed-Matter Physics",
+  "area": "quantum",
+  "level": 4,
+  "order": 140,
+  "tagline": "Why solids are metals, insulators or magnets",
+  "summary": "Crystal lattices, phonons, the free-electron gas, band structure, semiconductors, and an introduction to magnetism and superconductivity.",
+  "overview": [
+    "A solid is a quantum many-body problem with Avogadro’s number of particles. The reason it is solvable at all is symmetry: a crystal is periodic, so its excitations are waves labelled by a crystal momentum, and its electrons occupy bands rather than atomic orbitals. This course builds that picture from the lattice up.",
+    "Diffraction fixes the lattice. Lattice vibrations — phonons — are the normal modes of the coupled atoms and carry the heat capacity of an insulator. Electrons are treated first as a free Fermi gas, which already explains conduction and the heat capacity of a metal, and then as waves in a periodic potential, which opens gaps and distinguishes metals from insulators. Semiconductors are the technologically decisive case. Magnetism and superconductivity are introduced as broken symmetries, not as complete theories.",
+    "The reciprocal lattice and the first Brillouin zone do more work than any formula in the course. Draw them. A band structure is a plot of energy against crystal momentum in that zone, and almost every qualitative question about a solid is a question about that plot."
+  ],
+  "prerequisites": [
+    "quantum-1",
+    "statistical-mechanics"
+  ],
+  "outcomes": [
+    "Index crystal planes and use Bragg’s law to interpret a diffraction pattern.",
+    "Derive the phonon dispersion of a monatomic and a diatomic chain, and the Debye heat capacity.",
+    "Apply the free-electron model: Fermi energy, density of states, and the electronic heat capacity.",
+    "Explain band gaps with the nearly-free-electron model and state Bloch’s theorem.",
+    "Describe electrons and holes in a semiconductor and the p–n junction in outline.",
+    "Distinguish diamagnetism, paramagnetism and ferromagnetism, and state the phenomenological facts of superconductivity."
+  ],
+  "chapters": [
+    {
+      "slug": "crystals",
+      "title": "Crystal lattices",
+      "summary": "Bravais lattices, the reciprocal lattice, and diffraction.",
+      "requires": [
+        "quantum-1/schrodinger-equation"
+      ]
+    },
+    {
+      "slug": "lattice-vibrations",
+      "title": "Phonons",
+      "summary": "Chains of atoms, acoustic and optical branches, and the Debye model.",
+      "requires": [
+        "condensed-matter/crystals",
+        "statistical-mechanics/bose-fermi"
+      ]
+    },
+    {
+      "slug": "free-electrons",
+      "title": "The free-electron gas",
+      "summary": "The Fermi sphere, the density of states, heat capacity and conductivity.",
+      "requires": [
+        "statistical-mechanics/bose-fermi",
+        "condensed-matter/crystals"
+      ]
+    },
+    {
+      "slug": "band-structure",
+      "title": "Band structure",
+      "summary": "Bloch’s theorem, the nearly-free-electron model, and metals versus insulators.",
+      "requires": [
+        "condensed-matter/free-electrons",
+        "quantum-1/piecewise-potentials"
+      ]
+    },
+    {
+      "slug": "semiconductors",
+      "title": "Semiconductors",
+      "summary": "Electrons and holes, doping, and the p–n junction.",
+      "requires": [
+        "condensed-matter/band-structure"
+      ]
+    },
+    {
+      "slug": "magnetism-superconductivity",
+      "title": "Order",
+      "summary": "Paramagnetism, ferromagnetism in mean field, and the London picture of a superconductor.",
+      "requires": [
+        "condensed-matter/free-electrons",
+        "statistical-mechanics/phase-transitions"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1912,
+      "title": "Diffraction by a crystal",
+      "detail": "Max von Laue proposed that a crystal would diffract X-rays. Friedrich and Knipping observed the spots the same year, and the Braggs turned the observation into a law and a method in 1913.",
+      "people": [
+        "Max von Laue",
+        "William Henry Bragg",
+        "William Lawrence Bragg"
+      ]
+    },
+    {
+      "year": 1900,
+      "title": "Drude’s metal",
+      "detail": "Paul Drude treated conduction electrons as a classical gas. Sommerfeld replaced the classical distribution by a Fermi gas in 1927, which is the free-electron model of this course.",
+      "people": [
+        "Paul Drude",
+        "Arnold Sommerfeld"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "Bloch’s theorem",
+      "detail": "Felix Bloch proved that the eigenstates of an electron in a periodic potential are plane waves modulated by a periodic function, the starting point of band theory.",
+      "people": [
+        "Felix Bloch"
+      ]
+    },
+    {
+      "year": 1911,
+      "title": "Superconductivity",
+      "detail": "Heike Kamerlingh Onnes found that the resistance of mercury vanishes below 4.2 K. The microscopic theory, by Bardeen, Cooper and Schrieffer, came in 1957.",
+      "people": [
+        "Heike Kamerlingh Onnes"
+      ]
+    },
+    {
+      "year": 1947,
+      "title": "The transistor",
+      "detail": "Bardeen and Brattain demonstrated the point-contact transistor in December 1947; Shockley’s junction transistor followed. The device is a p–n junction put to work.",
+      "people": [
+        "John Bardeen",
+        "Walter Brattain",
+        "William Shockley"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "The quantum Hall effect",
+      "detail": "Klaus von Klitzing found that the Hall conductance of a two-dimensional electron gas is quantised in units of e²/h. It is the cleanest macroscopic quantum effect in a solid.",
+      "people": [
+        "Klaus von Klitzing"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Oxford Solid State Basics",
+      "authors": "Steven H. Simon",
+      "year": 2013,
+      "note": "The right first book. It covers this course and no more, with problems that teach."
+    },
+    {
+      "title": "Introduction to Solid State Physics",
+      "authors": "Charles Kittel",
+      "year": 2005,
+      "note": "Eighth edition. The traditional text and a useful reference for numbers and for magnetism."
+    },
+    {
+      "title": "Solid State Physics",
+      "authors": "Neil W. Ashcroft and N. David Mermin",
+      "year": 1976,
+      "note": "Deeper and slower. The chapters on the free-electron gas and on bands are worth the effort."
+    },
+    {
+      "title": "Condensed Matter Physics",
+      "authors": "Michael P. Marder",
+      "year": 2010,
+      "note": "Second edition. A modern survey that continues past this course into broken symmetry."
+    },
+    {
+      "title": "The Feynman Lectures on Physics, Volume III",
+      "authors": "Richard P. Feynman, Robert B. Leighton and Matthew Sands",
+      "year": 1965,
+      "note": "Chapters 13 and 14, on propagation in a lattice, are a fine introduction to Bloch’s theorem."
+    }
+  ],
+  "next": []
+}

@@ -1,0 +1,168 @@
+{
+  "slug": "particles",
+  "title": "Nuclei and particles",
+  "full_title": "Nuclear and Particle Physics",
+  "area": "astro",
+  "level": 4,
+  "order": 150,
+  "tagline": "From radioactive decay to the Standard Model",
+  "summary": "Nuclear structure, decay, reactions, detectors, and the Standard Model of quarks and leptons.",
+  "overview": [
+    "Nuclei and particles are quantum systems bound by interactions other than electromagnetism. A nucleus is a few hundred nucleons bound by the residual strong force; a hadron is a bound state of quarks; and the decays that power the Sun and that we detect in the laboratory are the weak interaction changing one fermion into another.",
+    "The course begins with nuclear sizes, the semi-empirical mass formula and the stability of nuclei, then the three modes of decay and the reactions of fission and fusion. Detectors and accelerators are treated as instruments with a principle, not as a catalogue. The second half is particle physics proper: the quark model, the leptons, and the gauge structure of the Standard Model at the level of its particles, its conservation laws and its one observed scalar, the Higgs boson.",
+    "Orders of magnitude matter here more than in any earlier course. A nuclear binding energy is a few MeV per nucleon, a rest energy is about a GeV per nucleon, and an atomic energy is an eV. Keeping those three numbers separate prevents most mistakes."
+  ],
+  "prerequisites": [
+    "quantum-1",
+    "relativity"
+  ],
+  "outcomes": [
+    "Use the semi-empirical mass formula and interpret a binding-energy curve.",
+    "Compute lifetimes and spectra for alpha, beta and gamma decay in the standard approximations.",
+    "Describe fission and fusion in terms of the binding-energy curve and Q values.",
+    "Explain how a scintillator, a semiconductor detector and a tracking detector identify a particle.",
+    "State the quark content of the light hadrons and the conservation laws of the strong, electromagnetic and weak interactions.",
+    "Describe the particles of the Standard Model and the role of the Higgs boson."
+  ],
+  "chapters": [
+    {
+      "slug": "nuclear-structure",
+      "title": "The nucleus",
+      "summary": "Sizes, the liquid-drop model, and the shell model in outline.",
+      "requires": [
+        "quantum-1/piecewise-potentials"
+      ]
+    },
+    {
+      "slug": "decay",
+      "title": "Radioactive decay",
+      "summary": "Alpha, beta and gamma decay, the decay law, and activity.",
+      "requires": [
+        "particles/nuclear-structure",
+        "quantum-2/time-dependent"
+      ]
+    },
+    {
+      "slug": "reactions",
+      "title": "Reactions",
+      "summary": "Q values, cross-sections, fission and fusion.",
+      "requires": [
+        "particles/nuclear-structure",
+        "relativity/velocity-energy"
+      ]
+    },
+    {
+      "slug": "accelerators",
+      "title": "Instruments",
+      "summary": "Accelerators, the interaction of radiation with matter, and detectors.",
+      "requires": [
+        "particles/reactions",
+        "electrodynamics/radiation"
+      ]
+    },
+    {
+      "slug": "standard-model",
+      "title": "The Standard Model",
+      "summary": "Quarks, leptons, the interactions, and the Higgs boson.",
+      "requires": [
+        "particles/decay",
+        "quantum-2/identical-particles"
+      ]
+    },
+    {
+      "slug": "symmetries",
+      "title": "Symmetries",
+      "summary": "Conserved quantities, parity violation, and the idea of a gauge symmetry.",
+      "requires": [
+        "particles/standard-model",
+        "quantum-1/angular-momentum"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1896,
+      "title": "Becquerel’s rays",
+      "detail": "Henri Becquerel found that uranium salts darken a photographic plate wrapped against the light. Radioactivity was the first evidence of a nucleus with internal energy.",
+      "people": [
+        "Henri Becquerel"
+      ]
+    },
+    {
+      "year": 1911,
+      "title": "Rutherford’s nucleus",
+      "detail": "The Geiger–Marsden scattering experiment, interpreted by Rutherford, showed that the positive charge of an atom sits in a region far smaller than the atom.",
+      "people": [
+        "Ernest Rutherford"
+      ]
+    },
+    {
+      "year": 1932,
+      "title": "The neutron and the positron",
+      "detail": "Chadwick identified the neutron. The same year Anderson observed the positron, the antiparticle Dirac had predicted.",
+      "people": [
+        "James Chadwick",
+        "Carl Anderson"
+      ]
+    },
+    {
+      "year": 1934,
+      "title": "Fermi’s theory of beta decay",
+      "detail": "Fermi wrote a field theory of beta decay in which a neutron becomes a proton, an electron and a neutrino. It is the ancestor of the weak interaction.",
+      "people": [
+        "Enrico Fermi"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Quarks",
+      "detail": "Gell-Mann and, independently, Zweig proposed that hadrons are bound states of fractionally charged quarks. Deep inelastic scattering at SLAC, from 1968, showed the pointlike constituents.",
+      "people": [
+        "Murray Gell-Mann",
+        "George Zweig"
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "The Higgs boson",
+      "detail": "On 4 July 2012 the ATLAS and CMS collaborations at the LHC announced a boson near 125 GeV with the couplings expected of the Higgs boson of the Standard Model.",
+      "people": [
+        "ATLAS Collaboration",
+        "CMS Collaboration"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introductory Nuclear Physics",
+      "authors": "Kenneth S. Krane",
+      "year": 1988,
+      "note": "The standard undergraduate nuclear text. Clear on decay and on the mass formula."
+    },
+    {
+      "title": "Introduction to Elementary Particles",
+      "authors": "David J. Griffiths",
+      "year": 2008,
+      "note": "Second edition. The particle half of this course, written so that a quantum-mechanics student can read it."
+    },
+    {
+      "title": "Particle Physics",
+      "authors": "B. R. Martin and Graham Shaw",
+      "year": 2017,
+      "note": "Fourth edition. A little more experimental than Griffiths, and good on detectors."
+    },
+    {
+      "title": "Nuclear and Particle Physics",
+      "authors": "B. R. Martin",
+      "year": 2009,
+      "note": "Second edition. One book for both halves, at the length of a single course."
+    },
+    {
+      "title": "Introduction to High Energy Physics",
+      "authors": "Donald H. Perkins",
+      "year": 2000,
+      "note": "Fourth edition. Older, and still excellent on how the experiments established the Standard Model."
+    }
+  ],
+  "next": []
+}

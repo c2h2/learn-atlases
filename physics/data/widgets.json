@@ -1,0 +1,167 @@
+{
+  "_doc": "Catalogue of interactive figures. Authors write ':::widget <type>' with 'key: value' lines. Every type also accepts title and caption.",
+  "types": {
+    "plot": {
+      "file": "calculus",
+      "title": "Function plotter",
+      "zh": "函数绘图",
+      "desc": "Graphs of one or more functions of x, with optional sliders, shading and a draggable tangent.",
+      "zh_desc": "一个或多个关于 x 的函数图像，可加滑块、阴影和可拖动的切线。",
+      "example": "f: sin(a*x)\nsliders: a=1:0.2:3\nx: -2pi, 2pi\npiticks: true",
+      "params": { "f": {"type": "exprs", "required": true}, "x": {"type": "range", "default": "-5, 5"}, "y": {"type": "range"}, "sliders": {"type": "sliders"}, "labels": {"type": "list"}, "shade": {"type": "range"}, "tangent": {"type": "num"}, "equal": {"type": "bool", "default": "false"}, "piticks": {"type": "bool", "default": "false"} }
+    },
+    "parametric": {
+      "file": "calculus",
+      "title": "Parametric curves",
+      "zh": "参数曲线",
+      "desc": "A curve (fx(t), fy(t)) traced by a moving point, with its velocity vector.",
+      "zh_desc": "动点描绘的参数曲线 (fx(t), fy(t))，并显示速度矢量。",
+      "example": "fx: cos(t)\nfy: sin(2*t)\nt: 0, 2pi",
+      "params": { "fx": {"type": "expr"}, "fy": {"type": "expr"}, "t": {"type": "range", "default": "0, 2pi"} }
+    },
+    "oscillator": {
+      "file": "ode",
+      "title": "Mass–spring oscillator",
+      "zh": "弹簧振子",
+      "desc": "The driven damped oscillator m x'' + c x' + k x = F cos(ωt), with the resonance curve.",
+      "zh_desc": "受驱阻尼振子 m x'' + c x' + k x = F cos(ωt)，并给出共振曲线。",
+      "example": "m: 1\nc: 0.3\nk: 4\nF: 1\nomega: 1.9",
+      "params": { "m": {"type": "num", "default": "1"}, "c": {"type": "num", "default": "0.4"}, "k": {"type": "num", "default": "4"}, "F": {"type": "num", "default": "0"}, "omega": {"type": "num", "default": "2"}, "x0": {"type": "num", "default": "1"}, "v0": {"type": "num", "default": "0"} }
+    },
+    "slopefield": {
+      "file": "ode",
+      "title": "Slope fields",
+      "zh": "斜率场",
+      "desc": "Direction field of y' = f(x, y). Click to grow a solution curve.",
+      "zh_desc": "y' = f(x, y) 的方向场。点击即可长出一条解曲线。",
+      "example": "f: y*(1 - y)\npoints: 0, 0.1",
+      "params": { "f": {"type": "expr", "required": true}, "x": {"type": "range"}, "y": {"type": "range"}, "points": {"type": "points"} }
+    },
+    "vector": {
+      "file": "physics",
+      "title": "Vectors in the plane",
+      "zh": "平面向量",
+      "desc": "Drag the tips of two vectors to see their sum, dot product, cross product and the angle between them.",
+      "zh_desc": "拖动两个向量的端点，查看它们的和、点积、叉积以及夹角。",
+      "example": "ax: 2.4\nay: 1.1\nbx: -0.8\nby: 2.2",
+      "params": { "ax": {"type": "num", "default": "2.4"}, "ay": {"type": "num", "default": "1.1"}, "bx": {"type": "num", "default": "-0.8"}, "by": {"type": "num", "default": "2.2"} }
+    },
+    "motion": {
+      "file": "physics",
+      "title": "Constant acceleration",
+      "zh": "匀加速运动",
+      "desc": "Position against time for motion with constant acceleration. Play it, and change the initial conditions.",
+      "zh_desc": "匀加速运动的位置–时间图。可以播放，并改变初始条件。",
+      "example": "x0: 0\nv0: 8\na: -9.8\nT: 2",
+      "params": { "x0": {"type": "num", "default": "0"}, "v0": {"type": "num", "default": "8"}, "a": {"type": "num", "default": "-9.8"}, "T": {"type": "num", "default": "2"} }
+    },
+    "projectile": {
+      "file": "physics",
+      "title": "Projectile",
+      "zh": "抛体运动",
+      "desc": "A projectile launched at speed v and angle θ, with its range, maximum height and time of flight.",
+      "zh_desc": "以速率 v、角度 θ 抛出的物体，并显示射程、最大高度和飞行时间。",
+      "example": "v: 12\nangle: 50\ng: 9.8",
+      "params": { "v": {"type": "num", "default": "12"}, "angle": {"type": "num", "default": "50"}, "g": {"type": "num", "default": "9.8"}, "h": {"type": "num", "default": "0"} }
+    },
+    "incline": {
+      "file": "physics",
+      "title": "Block on an incline",
+      "zh": "斜面上的物块",
+      "desc": "Whether a block sticks or slides, and its acceleration, as the angle and the coefficient of friction change.",
+      "zh_desc": "改变倾角和摩擦系数，观察物块是静止还是滑动，以及加速度的大小。",
+      "example": "angle: 30\nmu: 0.2",
+      "params": { "angle": {"type": "num", "default": "30"}, "mu": {"type": "num", "default": "0.2"}, "g": {"type": "num", "default": "9.8"} }
+    },
+    "springenergy": {
+      "file": "physics",
+      "title": "Energy of a spring",
+      "zh": "弹簧的能量",
+      "desc": "Kinetic energy, potential energy and their constant sum for a mass on a spring.",
+      "zh_desc": "弹簧振子的动能、势能以及二者不变的总和。",
+      "example": "k: 8\nm: 1\nA: 0.4",
+      "params": { "k": {"type": "num", "default": "8"}, "m": {"type": "num", "default": "1"}, "A": {"type": "num", "default": "0.4"} }
+    },
+    "collision": {
+      "file": "physics",
+      "title": "One-dimensional collision",
+      "zh": "一维碰撞",
+      "desc": "Final velocities of two blocks, from elastic (e = 1) to perfectly inelastic (e = 0).",
+      "zh_desc": "两个物块碰撞后的速度，从弹性（e = 1）到完全非弹性（e = 0）。",
+      "example": "m1: 2\nm2: 1\nu1: 3\nu2: 0\ne: 1",
+      "params": { "m1": {"type": "num"}, "m2": {"type": "num"}, "u1": {"type": "num"}, "u2": {"type": "num"}, "e": {"type": "num", "default": "1"} }
+    },
+    "rolling": {
+      "file": "physics",
+      "title": "Rolling race",
+      "zh": "滚动比赛",
+      "desc": "A solid sphere, a disc and a hoop roll down the same incline. The one with the smallest I/(mR²) wins.",
+      "zh_desc": "实心球、圆盘和圆环沿同一斜面滚下。I/(mR²) 最小的最先到达。",
+      "example": "angle: 25",
+      "params": { "angle": {"type": "num", "default": "25"} }
+    },
+    "orbit": {
+      "file": "physics",
+      "title": "Orbits",
+      "zh": "轨道",
+      "desc": "Trajectory in an inverse-square field. Compare the launch speed with the circular and escape speeds.",
+      "zh_desc": "平方反比力场中的轨迹。把发射速率与圆轨道速率、逃逸速率相比较。",
+      "example": "GM: 1\nr: 1.4\nvt: 0.85",
+      "params": { "GM": {"type": "num", "default": "1"}, "r": {"type": "num", "default": "1.4"}, "vt": {"type": "num", "default": "0.85"} }
+    },
+    "hydro": {
+      "file": "physics",
+      "title": "A tank with a hole",
+      "zh": "带孔的水箱",
+      "desc": "Hydrostatic pressure and Torricelli's speed for a hole a depth d below the surface.",
+      "zh_desc": "液面以下深度 d 处的静压强，以及小孔处的托里拆利速率。",
+      "example": "H: 2\nd: 1.2\nrho: 1000",
+      "params": { "H": {"type": "num", "default": "2"}, "d": {"type": "num", "default": "1.2"}, "rho": {"type": "num", "default": "1000"} }
+    },
+    "charges": {
+      "file": "physics",
+      "title": "Point charges",
+      "zh": "点电荷",
+      "desc": "The electric field of a set of point charges, drawn as a grid of arrows.",
+      "zh_desc": "一组点电荷的电场，用箭头网格画出。",
+      "example": "charges: 1, -1.2, 0; -1, 1.2, 0",
+      "params": { "charges": {"type": "list", "desc": "q, x, y entries separated by ';'"} }
+    },
+    "wave": {
+      "file": "physics",
+      "title": "Travelling waves",
+      "zh": "行波",
+      "desc": "A wave travelling to the right, plus an optional wave to the left. Equal amplitudes make a standing wave.",
+      "zh_desc": "向右传播的波，以及可选的向左的波。振幅相等时形成驻波。",
+      "example": "A: 1\nB: 1\nk: 2\nw: 3",
+      "params": { "A": {"type": "num", "default": "1"}, "B": {"type": "num", "default": "0"}, "k": {"type": "num", "default": "2"}, "w": {"type": "num", "default": "3"} }
+    },
+    "well": {
+      "file": "physics",
+      "title": "Infinite square well",
+      "zh": "无限深方势阱",
+      "desc": "Energy eigenfunctions and probability densities of the infinite square well, in units ℏ = m = a = 1.",
+      "zh_desc": "无限深方势阱的能量本征函数和概率密度，单位取 ℏ = m = a = 1。",
+      "example": "n: 2",
+      "params": { "n": {"type": "int", "default": "1"}, "show": {"type": "enum", "values": ["both", "wave", "density"], "default": "both"} }
+    },
+    "isotherm": {
+      "file": "physics",
+      "title": "Ideal-gas isotherms",
+      "zh": "理想气体等温线",
+      "desc": "Three isotherms of an ideal gas, and a point that follows the temperature you choose.",
+      "zh_desc": "理想气体的三条等温线，以及一个跟随你所设定温度的状态点。",
+      "example": "T: 300",
+      "params": { "T": {"type": "num", "default": "300"} }
+    },
+    "boost": {
+      "file": "physics",
+      "title": "Velocity addition",
+      "zh": "速度叠加",
+      "desc": "Galilean and Einstein addition of two collinear velocities, and the Lorentz factor of the frame.",
+      "zh_desc": "两个共线速度的伽利略叠加与爱因斯坦叠加，以及参考系的洛伦兹因子。",
+      "example": "v: 0.6\nu: 0.6",
+      "params": { "v": {"type": "num", "default": "0.6"}, "u": {"type": "num", "default": "0.6"} }
+    }
+  }
+}

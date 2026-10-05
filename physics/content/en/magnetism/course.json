@@ -1,0 +1,176 @@
+{
+  "slug": "magnetism",
+  "title": "Magnetism",
+  "full_title": "Magnetism, Induction and Electromagnetic Waves",
+  "area": "fields",
+  "level": 2,
+  "order": 50,
+  "tagline": "Moving charges, changing fields and light",
+  "summary": "The magnetic force and field, Ampère’s law, Faraday’s law, inductance, alternating currents, Maxwell’s correction and electromagnetic waves.",
+  "overview": [
+    "Magnetism is the force between moving charges. A steady current makes a magnetic field; a changing magnetic field makes an electric field; and once both effects are admitted, the fields can sustain each other and travel as a wave. That wave is light. This course is the experimental and conceptual path to that conclusion, at the level of the integral laws.",
+    "We start with the Lorentz force on a charge and on a current-carrying wire, then the Biot–Savart law and Ampère’s law as ways to find the field. Faraday’s law and Lenz’s law govern induction, inductance and magnetic energy. Alternating-current circuits are the oscillator of the previous courses, now made of L, C and R. Maxwell’s displacement current repairs Ampère’s law, and the last chapter derives the wave equation and the properties of a plane electromagnetic wave.",
+    "The right-hand rule is a convention tied to the cross product, not a law of nature, but you must use one convention consistently. Direction is where magnetic problems go wrong. Draw the field, the current and the force as three separate arrows before you compute a magnitude."
+  ],
+  "prerequisites": [
+    "electrostatics"
+  ],
+  "outcomes": [
+    "Compute the magnetic force on a charge and on a straight wire, and describe cyclotron motion.",
+    "Use the Biot–Savart law and Ampère’s law for wires, loops and solenoids.",
+    "Apply Faraday’s law and Lenz’s law to moving conductors and to changing fields.",
+    "Find inductance and magnetic energy, and solve simple RL and LC circuits.",
+    "Analyse series RLC circuits in the steady state, including impedance and resonance.",
+    "State Maxwell’s equations in integral form and derive the speed and structure of a plane electromagnetic wave in vacuum."
+  ],
+  "chapters": [
+    {
+      "slug": "magnetic-force",
+      "title": "The magnetic force",
+      "summary": "The Lorentz force, motion in a uniform field, forces on currents, and torque on a loop.",
+      "requires": [
+        "electrostatics/coulomb"
+      ]
+    },
+    {
+      "slug": "biot-savart",
+      "title": "Sources of the magnetic field",
+      "summary": "The Biot–Savart law, Ampère’s law, and the fields of wires, loops and solenoids.",
+      "requires": [
+        "magnetism/magnetic-force"
+      ]
+    },
+    {
+      "slug": "faraday",
+      "title": "Electromagnetic induction",
+      "summary": "Faraday’s law, Lenz’s law, motional emf and eddy currents.",
+      "requires": [
+        "magnetism/biot-savart",
+        "electrostatics/potential"
+      ]
+    },
+    {
+      "slug": "inductance",
+      "title": "Inductance",
+      "summary": "Self-inductance, mutual inductance, RL circuits and energy in the magnetic field.",
+      "requires": [
+        "magnetism/faraday",
+        "electrostatics/dc-circuits"
+      ]
+    },
+    {
+      "slug": "ac-circuits",
+      "title": "Alternating currents",
+      "summary": "Phasors, impedance, power, and resonance in series RLC circuits.",
+      "requires": [
+        "magnetism/inductance",
+        "oscillations/resonance"
+      ]
+    },
+    {
+      "slug": "maxwell",
+      "title": "Maxwell’s equations",
+      "summary": "Displacement current, the integral form of Maxwell’s equations, and what each one says.",
+      "requires": [
+        "magnetism/faraday",
+        "electrostatics/gauss-law"
+      ]
+    },
+    {
+      "slug": "electromagnetic-waves",
+      "title": "Electromagnetic waves",
+      "summary": "The wave equation, plane waves, the Poynting vector, intensity, radiation pressure and polarisation.",
+      "requires": [
+        "magnetism/maxwell",
+        "oscillations/travelling-waves"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1820,
+      "title": "Oersted’s compass",
+      "detail": "Hans Christian Ørsted observed that a current deflects a compass needle, the first experimental link between electricity and magnetism.",
+      "people": [
+        "Hans Christian Ørsted"
+      ]
+    },
+    {
+      "year": 1820,
+      "title": "Ampère’s force law",
+      "detail": "Within months of Ørsted’s result, Ampère measured the force between currents and began the theory that a magnet is a collection of currents.",
+      "people": [
+        "André-Marie Ampère"
+      ]
+    },
+    {
+      "year": 1831,
+      "title": "Faraday’s induction",
+      "detail": "On 29 August 1831 Faraday found that a changing current in one coil induces a current in another. The law of induction is the statement of that discovery.",
+      "people": [
+        "Michael Faraday"
+      ]
+    },
+    {
+      "year": 1865,
+      "title": "A dynamical theory of the field",
+      "detail": "Maxwell’s paper introduced the displacement current and concluded that light is an electromagnetic wave travelling at the speed 1/√(ε₀μ₀).",
+      "people": [
+        "James Clerk Maxwell"
+      ]
+    },
+    {
+      "year": 1888,
+      "title": "Hertz’s waves",
+      "detail": "Heinrich Hertz produced and detected electromagnetic waves in the laboratory and showed that they reflect, refract and interfere as light does.",
+      "people": [
+        "Heinrich Hertz"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "Magnets and conductors in motion",
+      "detail": "Einstein’s first relativity paper opens with the asymmetry between a magnet moving past a conductor and a conductor moving past a magnet, which the Maxwell–Lorentz theory treats as different cases of one phenomenon.",
+      "people": [
+        "Albert Einstein"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Electrodynamics",
+      "authors": "David J. Griffiths",
+      "year": 2017,
+      "note": "Fourth edition, chapters 5 to 9. The book to grow into as the integral laws become differential."
+    },
+    {
+      "title": "Electricity and Magnetism",
+      "authors": "Edward M. Purcell and David J. Morin",
+      "year": 2013,
+      "note": "Third edition. The best discussion of why magnetism is a consequence of relativity and of Coulomb’s law."
+    },
+    {
+      "title": "University Physics",
+      "authors": "Hugh D. Young and Roger A. Freedman",
+      "year": 2020,
+      "note": "Fifteenth edition, the chapters from the magnetic force through electromagnetic waves."
+    },
+    {
+      "title": "A Student’s Guide to Maxwell’s Equations",
+      "authors": "Daniel Fleisch",
+      "year": 2008,
+      "note": "Walks through each equation in integral and differential form with the same examples every course uses."
+    },
+    {
+      "title": "Classical Electrodynamics",
+      "authors": "John David Jackson",
+      "year": 1998,
+      "note": "Third edition. A graduate book. The historical introduction and the chapter on plane waves are worth a look, not a first reading."
+    }
+  ],
+  "next": [
+    "optics",
+    "electrodynamics",
+    "relativity"
+  ]
+}

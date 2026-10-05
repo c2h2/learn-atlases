@@ -1,0 +1,170 @@
+{
+  "slug": "electrodynamics",
+  "title": "Electrodynamics",
+  "full_title": "Electrodynamics",
+  "area": "fields",
+  "level": 3,
+  "order": 90,
+  "tagline": "Maxwell’s equations as a working theory",
+  "summary": "Electrostatics and magnetostatics as boundary-value problems, Maxwell’s equations, waves in vacuum and in matter, radiation, and the fields of moving charges.",
+  "overview": [
+    "The integral laws of the second-year course are Maxwell’s theory seen from outside. This course goes inside. The same four equations are written differentially, solved as boundary-value problems, and used to compute the fields of realistic charges and currents, the waves they radiate, and the way those fields look to a moving observer.",
+    "Electrostatics in vacuum and in linear media is Poisson’s equation with boundary conditions, solved by images, separation of variables and multipoles. Magnetostatics is the vector-potential version of the same idea. Maxwell’s equations then unify the two, conservation of charge becomes the continuity equation, and energy and momentum live in the fields. Waves in conductors and dielectrics, waveguides in outline, radiation from dipoles, and the Liénard–Wiechert fields of a moving point charge complete the undergraduate theory.",
+    "The calculations are longer than in the first electromagnetism course, and the physics is in the boundary conditions and the choice of gauge as much as in the algebra. Write the symmetry of the problem in a sentence before you choose a coordinate system."
+  ],
+  "prerequisites": [
+    "magnetism",
+    "math-methods"
+  ],
+  "outcomes": [
+    "Solve electrostatic boundary-value problems by images and by separation of variables in simple coordinates.",
+    "Use the multipole expansion and the vector potential for magnetostatics, including the dipole field.",
+    "Write Maxwell’s equations in differential form and derive the continuity equation and Poynting’s theorem from them.",
+    "Describe plane waves in dielectrics and conductors, including skin depth and reflection at a boundary.",
+    "Compute the power radiated by an electric dipole and the angular distribution of the radiation.",
+    "Use the Liénard–Wiechert fields and explain the transformation of the electromagnetic field under a boost."
+  ],
+  "chapters": [
+    {
+      "slug": "electrostatics",
+      "title": "Electrostatics as a boundary-value problem",
+      "summary": "Poisson’s equation, the method of images, separation of variables and multipoles.",
+      "requires": [
+        "electrostatics/gauss-law",
+        "math-methods/green-functions"
+      ]
+    },
+    {
+      "slug": "magnetostatics",
+      "title": "Magnetostatics",
+      "summary": "The vector potential, Ampère’s law in differential form, and magnetic multipoles.",
+      "requires": [
+        "magnetism/biot-savart",
+        "math-methods/vector-calculus"
+      ]
+    },
+    {
+      "slug": "maxwell-equations",
+      "title": "Maxwell’s equations",
+      "summary": "The differential equations, gauges, the continuity equation, and energy and momentum in the field.",
+      "requires": [
+        "electrodynamics/electrostatics",
+        "electrodynamics/magnetostatics",
+        "magnetism/maxwell"
+      ]
+    },
+    {
+      "slug": "waves-in-media",
+      "title": "Waves in matter",
+      "summary": "Dielectrics, conductors, reflection and refraction, and waveguides in outline.",
+      "requires": [
+        "electrodynamics/maxwell-equations",
+        "magnetism/electromagnetic-waves"
+      ]
+    },
+    {
+      "slug": "radiation",
+      "title": "Radiation",
+      "summary": "Retarded potentials, dipole radiation, and the power radiated by an accelerated charge.",
+      "requires": [
+        "electrodynamics/maxwell-equations"
+      ]
+    },
+    {
+      "slug": "relativistic-fields",
+      "title": "Fields of moving charges",
+      "summary": "The Liénard–Wiechert potentials and the transformation of E and B.",
+      "requires": [
+        "electrodynamics/radiation",
+        "relativity/four-vectors"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1873,
+      "title": "The Treatise",
+      "detail": "Maxwell’s Treatise on Electricity and Magnetism assembled the theory. The compact four-equation form taught now is Heaviside’s later vector version.",
+      "people": [
+        "James Clerk Maxwell"
+      ]
+    },
+    {
+      "year": 1898,
+      "title": "The field of a moving charge",
+      "detail": "Alfred-Marie Liénard (1898) and Emil Wiechert (1900) wrote the potentials of a point charge in arbitrary motion, from which the radiation of an accelerated charge follows.",
+      "people": [
+        "Alfred-Marie Liénard",
+        "Emil Wiechert"
+      ]
+    },
+    {
+      "year": 1909,
+      "title": "The Theory of Electrons",
+      "detail": "H. A. Lorentz’s book treated matter as charges in the vacuum field and gave the force law that carries his name its modern setting.",
+      "people": [
+        "Hendrik Antoon Lorentz"
+      ]
+    },
+    {
+      "year": 1908,
+      "title": "The relativistic field tensor",
+      "detail": "Minkowski wrote the electromagnetic field as an antisymmetric tensor, so that the transformation of E and B is a change of frame rather than a new law.",
+      "people": [
+        "Hermann Minkowski"
+      ]
+    },
+    {
+      "year": 1884,
+      "title": "Poynting’s theorem",
+      "detail": "John Henry Poynting identified the flux of electromagnetic energy. The momentum density of the field is the same construction divided by c².",
+      "people": [
+        "John Henry Poynting"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "Synchrotron radiation",
+      "detail": "Julian Schwinger calculated the spectrum of radiation from a relativistic charge in a magnetic field. Graduate courses still teach that 1949 result.",
+      "people": [
+        "Julian Schwinger"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Electrodynamics",
+      "authors": "David J. Griffiths",
+      "year": 2017,
+      "note": "Fourth edition. This course follows it. Work the problems; the text is not a substitute for them."
+    },
+    {
+      "title": "Modern Electrodynamics",
+      "authors": "Andrew Zangwill",
+      "year": 2013,
+      "note": "A rich modern alternative to Jackson at the start of graduate study, with excellent physical discussion."
+    },
+    {
+      "title": "Classical Electrodynamics",
+      "authors": "John David Jackson",
+      "year": 1998,
+      "note": "Third edition. The reference, not the first textbook. Use it for radiation and for looking up a standard result."
+    },
+    {
+      "title": "Electricity and Magnetism",
+      "authors": "Edward M. Purcell and David J. Morin",
+      "year": 2013,
+      "note": "Third edition. Still the best place to remember what the fields mean while the calculations get longer."
+    },
+    {
+      "title": "Classical Electrodynamics",
+      "authors": "David Tong",
+      "year": 2015,
+      "note": "Cambridge lecture notes. A clear path through the undergraduate and early graduate theory."
+    }
+  ],
+  "next": [
+    "gravitation",
+    "quantum-2"
+  ]
+}

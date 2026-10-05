@@ -1,0 +1,169 @@
+{
+  "slug": "gravitation",
+  "title": "Gravitation",
+  "full_title": "Gravitation, Stars and Cosmology",
+  "area": "astro",
+  "level": 4,
+  "order": 160,
+  "tagline": "From the equivalence principle to an expanding universe",
+  "summary": "The equivalence principle, the Schwarzschild geometry, black holes, gravitational waves, the structure of stars, and a first cosmology.",
+  "overview": [
+    "General relativity is the theory of gravitation in which spacetime is curved by energy and momentum, and free fall is motion on a geodesic. This course does not develop the full tensor machinery. It develops the physical content that a physics graduate should be able to use: the equivalence principle, the Schwarzschild solution and what it predicts, gravitational waves at the level of their effect on a detector, and the two applications that dominate the observations, stars and cosmology.",
+    "The equivalence principle explains gravitational redshift and why light bends, before any field equation. The Schwarzschild geometry is then taken as the spherically symmetric vacuum solution and read for orbits, light deflection, the event horizon and the global structure of a black hole. Gravitational waves are introduced through their measured strain. Stellar structure uses the Newtonian hydrostatic equilibrium that relativity corrects for compact objects, and cosmology uses the Friedmann equation with matter, radiation and a cosmological constant.",
+    "Several famous formulae in this course are quoted from the field equations rather than derived. Each time, the text says so. The skill is to know which predictions are geometry, which are astrophysics, and which number comes from an observation."
+  ],
+  "prerequisites": [
+    "relativity",
+    "analytical-mechanics"
+  ],
+  "outcomes": [
+    "Use the equivalence principle to derive the gravitational redshift and to explain light deflection qualitatively.",
+    "Read the Schwarzschild metric for proper time, orbits and the photon sphere.",
+    "Describe the event horizon of a Schwarzschild black hole and the difference between a coordinate singularity and a physical one.",
+    "Interpret a gravitational-wave strain and the Hulse–Taylor pulsar as a test of the quadrupole formula.",
+    "Set up the equations of stellar structure in the Newtonian limit and describe white dwarfs and neutron stars.",
+    "Use the Friedmann equation for a flat universe with matter and a cosmological constant, and define redshift and the Hubble law."
+  ],
+  "chapters": [
+    {
+      "slug": "equivalence",
+      "title": "The equivalence principle",
+      "summary": "Inertial and gravitational mass, redshift, and the bending of light.",
+      "requires": [
+        "relativity/postulates",
+        "mechanics/gravitation"
+      ]
+    },
+    {
+      "slug": "schwarzschild",
+      "title": "The Schwarzschild geometry",
+      "summary": "The metric, proper time, orbits and the deflection of light.",
+      "requires": [
+        "gravitation/equivalence",
+        "relativity/spacetime"
+      ]
+    },
+    {
+      "slug": "black-holes",
+      "title": "Black holes",
+      "summary": "The horizon, coordinates that cross it, and rotating black holes in outline.",
+      "requires": [
+        "gravitation/schwarzschild"
+      ]
+    },
+    {
+      "slug": "gravitational-waves",
+      "title": "Gravitational waves",
+      "summary": "Strain, the quadrupole formula in outline, and the binary pulsar.",
+      "requires": [
+        "gravitation/schwarzschild",
+        "relativity/velocity-energy"
+      ]
+    },
+    {
+      "slug": "stars",
+      "title": "Stars",
+      "summary": "Hydrostatic equilibrium, energy generation, white dwarfs and neutron stars.",
+      "requires": [
+        "gravitation/equivalence",
+        "thermodynamics/first-law",
+        "particles/reactions"
+      ]
+    },
+    {
+      "slug": "cosmology",
+      "title": "Cosmology",
+      "summary": "The expanding universe, the Friedmann equation, and the cosmic microwave background.",
+      "requires": [
+        "gravitation/equivalence",
+        "relativity/spacetime"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1907,
+      "title": "The equivalence principle",
+      "detail": "Einstein’s review of 1907 argued that a uniform gravitational field is locally indistinguishable from an acceleration, and deduced the gravitational redshift from that.",
+      "people": [
+        "Albert Einstein"
+      ]
+    },
+    {
+      "year": 1915,
+      "title": "The field equations",
+      "detail": "Einstein presented the final field equations to the Prussian Academy on 25 November 1915, and used them to compute the anomalous precession of Mercury.",
+      "people": [
+        "Albert Einstein"
+      ]
+    },
+    {
+      "year": 1916,
+      "title": "The Schwarzschild solution",
+      "detail": "Karl Schwarzschild found the exact spherically symmetric vacuum solution while serving at the front, and communicated it in January 1916.",
+      "people": [
+        "Karl Schwarzschild"
+      ]
+    },
+    {
+      "year": 1919,
+      "title": "The eclipse",
+      "detail": "Eddington and Dyson measured the deflection of starlight by the Sun during the eclipse of 29 May 1919. The result agreed with Einstein’s prediction and made the theory famous.",
+      "people": [
+        "Arthur Eddington",
+        "Frank Watson Dyson"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "The binary pulsar",
+      "detail": "Hulse and Taylor found the pulsar PSR B1913+16 in orbit with another neutron star. Its orbital decay matches the energy loss to gravitational waves.",
+      "people": [
+        "Russell Hulse",
+        "Joseph Taylor"
+      ]
+    },
+    {
+      "year": 2015,
+      "title": "GW150914",
+      "detail": "On 14 September 2015 the two LIGO detectors recorded the merger of two black holes of about 30 solar masses. The announcement came on 11 February 2016.",
+      "people": [
+        "LIGO Scientific Collaboration",
+        "Virgo Collaboration"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Gravity: An Introduction to Einstein’s General Relativity",
+      "authors": "James B. Hartle",
+      "year": 2003,
+      "note": "The book this course follows: physics first, with the Schwarzschild geometry used before the field equations are derived."
+    },
+    {
+      "title": "A First Course in General Relativity",
+      "authors": "Bernard Schutz",
+      "year": 2022,
+      "note": "Third edition. More tensor machinery than Hartle, and the natural next step."
+    },
+    {
+      "title": "Spacetime and Geometry",
+      "authors": "Sean Carroll",
+      "year": 2004,
+      "note": "A graduate text. The early chapters are a clear account of the geometry this course uses."
+    },
+    {
+      "title": "An Introduction to Modern Astrophysics",
+      "authors": "Bradley W. Carroll and Dale A. Ostlie",
+      "year": 2017,
+      "note": "Second edition. The stellar-structure and cosmology chapters, for the astrophysical half."
+    },
+    {
+      "title": "Introduction to Cosmology",
+      "authors": "Barbara Ryden",
+      "year": 2017,
+      "note": "Second edition. A short, careful cosmology at the level of the last chapter."
+    }
+  ],
+  "next": []
+}

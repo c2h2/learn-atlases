@@ -1,0 +1,170 @@
+{
+  "slug": "quantum-2",
+  "title": "Quantum mechanics II",
+  "full_title": "Quantum Mechanics II",
+  "area": "quantum",
+  "level": 3,
+  "order": 110,
+  "tagline": "Approximation, identical particles and measurement",
+  "summary": "Time-independent and time-dependent perturbation theory, identical particles, atomic structure, scattering, and entanglement.",
+  "overview": [
+    "Almost no Hamiltonian beyond hydrogen can be diagonalised in closed form. This course is about controlled approximations, and about the two structural facts that approximation has to respect: identical particles are indistinguishable, and angular momentum is conserved unless the Hamiltonian breaks the symmetry.",
+    "Stationary perturbation theory handles a weak extra term whose effect on energies and states we want to first or second order, including degeneracy. Time-dependent perturbation theory handles transitions and gives Fermi’s golden rule. Identical particles force symmetric or antisymmetric states and, for electrons, the Pauli principle, from which the periodic table is built. Scattering then returns to the continuum, and the last chapter treats entangled states and what a measurement actually asserts.",
+    "The algebra of perturbation theory is easy to mis-order. Write the unperturbed states and the small parameter before expanding, and check that a first-order energy shift has the units and the sign the physics suggests."
+  ],
+  "prerequisites": [
+    "quantum-1"
+  ],
+  "outcomes": [
+    "Compute first- and second-order corrections to non-degenerate levels, and first-order corrections in a degenerate subspace.",
+    "Use time-dependent perturbation theory for a harmonic drive and state Fermi’s golden rule.",
+    "Construct symmetric and antisymmetric multi-particle states and apply the Pauli principle.",
+    "Account for the gross structure of the periodic table and for fine structure in outline.",
+    "Compute a scattering cross-section in the Born approximation and for a partial wave in the low-energy limit.",
+    "Describe entanglement, the EPR argument and Bell’s inequality at the level of spin singlets."
+  ],
+  "chapters": [
+    {
+      "slug": "stationary-perturbation",
+      "title": "Stationary perturbation theory",
+      "summary": "Non-degenerate and degenerate corrections, and the fine structure of hydrogen in outline.",
+      "requires": [
+        "quantum-1/hydrogen",
+        "quantum-1/formalism"
+      ]
+    },
+    {
+      "slug": "time-dependent",
+      "title": "Time-dependent perturbation theory",
+      "summary": "Transition amplitudes, harmonic perturbations and Fermi’s golden rule.",
+      "requires": [
+        "quantum-2/stationary-perturbation"
+      ]
+    },
+    {
+      "slug": "identical-particles",
+      "title": "Identical particles",
+      "summary": "Symmetrisation, the Pauli principle, and exchange for two spins.",
+      "requires": [
+        "quantum-1/spin",
+        "quantum-2/stationary-perturbation"
+      ]
+    },
+    {
+      "slug": "atomic-structure",
+      "title": "Atoms",
+      "summary": "Helium, the independent-electron picture, and the periodic table.",
+      "requires": [
+        "quantum-2/identical-particles",
+        "quantum-1/hydrogen"
+      ]
+    },
+    {
+      "slug": "scattering",
+      "title": "Scattering",
+      "summary": "Cross-sections, the Born approximation, and phase shifts.",
+      "requires": [
+        "quantum-1/piecewise-potentials",
+        "quantum-2/time-dependent"
+      ]
+    },
+    {
+      "slug": "entanglement",
+      "title": "Entanglement and measurement",
+      "summary": "Product and entangled states, the EPR argument, and Bell’s inequality.",
+      "requires": [
+        "quantum-1/spin",
+        "quantum-1/formalism"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1926,
+      "title": "Born’s approximation",
+      "detail": "Max Born’s papers on collisions introduced both the probability interpretation and the first practical approximation for a scattering amplitude.",
+      "people": [
+        "Max Born"
+      ]
+    },
+    {
+      "year": 1927,
+      "title": "Fermi’s golden rule",
+      "detail": "Dirac derived the transition rate for a continuum of final states in 1927. Fermi’s lectures made the formula the working tool of nuclear and atomic physics, and it carries Fermi’s name.",
+      "people": [
+        "Paul Dirac",
+        "Enrico Fermi"
+      ]
+    },
+    {
+      "year": 1925,
+      "title": "The exclusion principle",
+      "detail": "Wolfgang Pauli proposed that no two electrons in an atom share all their quantum numbers, before spin had been named. The periodic table is this principle plus Coulomb’s law.",
+      "people": [
+        "Wolfgang Pauli"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "The Dirac equation",
+      "detail": "Dirac’s relativistic equation for the electron produced spin and predicted the positron, observed by Anderson in 1932.",
+      "people": [
+        "Paul Dirac"
+      ]
+    },
+    {
+      "year": 1935,
+      "title": "EPR",
+      "detail": "Einstein, Podolsky and Rosen argued that quantum mechanics is incomplete because it assigns no elements of reality to quantities that can be predicted with certainty.",
+      "people": [
+        "Albert Einstein",
+        "Boris Podolsky",
+        "Nathan Rosen"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Bell’s inequality",
+      "detail": "John Bell showed that no local hidden-variable theory reproduces all the predictions of quantum mechanics. Aspect’s experiments in the early 1980s tested the inequality.",
+      "people": [
+        "John Stewart Bell"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Quantum Mechanics",
+      "authors": "David J. Griffiths and Darrell F. Schroeter",
+      "year": 2018,
+      "note": "Third edition, the second half: perturbation theory, identical particles and scattering."
+    },
+    {
+      "title": "Modern Quantum Mechanics",
+      "authors": "J. J. Sakurai and Jim Napolitano",
+      "year": 2020,
+      "note": "Third edition. The natural step up, especially on angular momentum and on identical particles."
+    },
+    {
+      "title": "Quantum Mechanics, Volume 2",
+      "authors": "Claude Cohen-Tannoudji, Bernard Diu and Franck Laloë",
+      "year": 2019,
+      "note": "Second edition. Exhaustive and careful. Use it when a Griffiths argument feels too short."
+    },
+    {
+      "title": "Lectures on Quantum Mechanics",
+      "authors": "Steven Weinberg",
+      "year": 2013,
+      "note": "A theorist’s account. The chapters on interpretation and on scattering are the ones to sample."
+    },
+    {
+      "title": "Speakable and Unspeakable in Quantum Mechanics",
+      "authors": "John Stewart Bell",
+      "year": 2004,
+      "note": "Second edition. The papers themselves, including the 1964 inequality, collected with unusual clarity."
+    }
+  ],
+  "next": [
+    "condensed-matter",
+    "particles"
+  ]
+}

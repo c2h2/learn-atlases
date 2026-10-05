@@ -1,0 +1,185 @@
+{
+  "slug": "quantum-1",
+  "title": "Quantum mechanics I",
+  "full_title": "Quantum Mechanics I",
+  "area": "quantum",
+  "level": 3,
+  "order": 100,
+  "tagline": "Wavefunctions, operators and the hydrogen atom",
+  "summary": "The experimental origins, the Schrödinger equation, piecewise potentials, the harmonic oscillator, the formal theory, angular momentum, hydrogen and spin.",
+  "overview": [
+    "Quantum mechanics replaces the trajectory of a particle by a wavefunction, whose modulus squared is a probability density, and replaces dynamical quantities by operators. The Schrödinger equation is the equation of motion. Almost every exact solution an undergraduate meets is in this course: the free particle, the infinite and finite wells, the step, the harmonic oscillator and the hydrogen atom.",
+    "The first four chapters are the wave mechanics of one dimension, where the new ideas can be seen without angular momentum. The formal chapter then says what a state, an observable and a measurement are, so that angular momentum, hydrogen and spin are applications of a single structure rather than three separate tricks. Spin is introduced as an angular momentum that is not a function of position; the Stern–Gerlach experiment is the evidence.",
+    "Normalisation, boundary conditions and the difference between a stationary state and a wave packet are the points to be careful about. A stationary state has a time-independent probability density even though the wavefunction carries a phase e^{−iEt/ℏ}. Superpositions are what move."
+  ],
+  "prerequisites": [
+    "oscillations",
+    "math-methods"
+  ],
+  "outcomes": [
+    "State the experimental evidence that classical mechanics fails at atomic scales, and the de Broglie relation.",
+    "Solve the time-independent Schrödinger equation for piecewise constant potentials and interpret the solutions.",
+    "Solve the harmonic oscillator with raising and lowering operators and with the differential equation.",
+    "Use Dirac notation, compute expectation values and uncertainties, and state the measurement postulate.",
+    "Add angular momenta in the cases needed for atoms, and use spherical harmonics at the level of their properties.",
+    "Solve the hydrogen atom for the energy levels and the angular part of the wavefunction, and describe spin-1/2."
+  ],
+  "chapters": [
+    {
+      "slug": "origins",
+      "title": "Where the classical theory fails",
+      "summary": "Black-body radiation, the photoelectric effect, Compton scattering, Bohr’s atom and de Broglie waves.",
+      "requires": [
+        "oscillations/travelling-waves"
+      ]
+    },
+    {
+      "slug": "schrodinger-equation",
+      "title": "The Schrödinger equation",
+      "summary": "The wavefunction, probability, operators, expectation values and stationary states.",
+      "requires": [
+        "quantum-1/origins",
+        "math-methods/odes"
+      ]
+    },
+    {
+      "slug": "piecewise-potentials",
+      "title": "Piecewise potentials",
+      "summary": "The infinite and finite wells, the step, the barrier and tunnelling.",
+      "requires": [
+        "quantum-1/schrodinger-equation"
+      ]
+    },
+    {
+      "slug": "harmonic-oscillator",
+      "title": "The harmonic oscillator",
+      "summary": "Series solution, Hermite polynomials, and the algebraic solution with a and a†.",
+      "requires": [
+        "quantum-1/piecewise-potentials"
+      ]
+    },
+    {
+      "slug": "formalism",
+      "title": "States and observables",
+      "summary": "Hilbert space, Dirac notation, compatible observables and the uncertainty principle.",
+      "requires": [
+        "quantum-1/schrodinger-equation"
+      ]
+    },
+    {
+      "slug": "angular-momentum",
+      "title": "Angular momentum",
+      "summary": "Commutation relations, spherical harmonics, and the addition of two angular momenta.",
+      "requires": [
+        "quantum-1/formalism",
+        "math-methods/odes"
+      ]
+    },
+    {
+      "slug": "hydrogen",
+      "title": "The hydrogen atom",
+      "summary": "Separation in spherical coordinates, energy levels, degeneracy and the radial wavefunctions.",
+      "requires": [
+        "quantum-1/angular-momentum"
+      ]
+    },
+    {
+      "slug": "spin",
+      "title": "Spin",
+      "summary": "Spin 1/2, the Stern–Gerlach experiment, Pauli matrices and the magnetic moment.",
+      "requires": [
+        "quantum-1/angular-momentum"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1900,
+      "title": "Planck’s quantum",
+      "detail": "On 14 December 1900 Planck presented a derivation of the black-body spectrum in which the energy of an oscillator is an integer multiple of hν.",
+      "people": [
+        "Max Planck"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "Light quanta",
+      "detail": "Einstein’s paper on the photoelectric effect treated light of frequency ν as quanta of energy hν, against the wave theory then in possession.",
+      "people": [
+        "Albert Einstein"
+      ]
+    },
+    {
+      "year": 1913,
+      "title": "Bohr’s atom",
+      "detail": "Bohr combined Rutherford’s nucleus with a quantisation condition and obtained the Balmer formula for hydrogen. The orbits were a temporary picture; the numbers survived.",
+      "people": [
+        "Niels Bohr"
+      ]
+    },
+    {
+      "year": 1924,
+      "title": "Matter waves",
+      "detail": "Louis de Broglie’s thesis assigned a wavelength h/p to a particle. Davisson and Germer, and independently G. P. Thomson, observed the diffraction of electrons in 1927.",
+      "people": [
+        "Louis de Broglie"
+      ]
+    },
+    {
+      "year": 1926,
+      "title": "Wave mechanics",
+      "detail": "Schrödinger’s papers of 1926 introduced the wave equation and solved the hydrogen atom. Heisenberg’s matrix mechanics of 1925 is the same theory, as Schrödinger and Dirac showed.",
+      "people": [
+        "Erwin Schrödinger",
+        "Werner Heisenberg"
+      ]
+    },
+    {
+      "year": 1927,
+      "title": "Uncertainty",
+      "detail": "Heisenberg’s uncertainty paper, and Born’s probability interpretation of the year before, fixed the reading of the wavefunction that this course uses.",
+      "people": [
+        "Werner Heisenberg",
+        "Max Born"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Quantum Mechanics",
+      "authors": "David J. Griffiths and Darrell F. Schroeter",
+      "year": 2018,
+      "note": "Third edition. The book this course tracks. The problems are part of the text."
+    },
+    {
+      "title": "Quantum Mechanics",
+      "authors": "B. H. Bransden and C. J. Joachain",
+      "year": 2000,
+      "note": "Second edition. More detail on the hydrogen atom and on the experimental origins."
+    },
+    {
+      "title": "Principles of Quantum Mechanics",
+      "authors": "R. Shankar",
+      "year": 2011,
+      "note": "Second edition, corrected. Begins with the linear algebra the formalism chapter needs. A good second reading."
+    },
+    {
+      "title": "Modern Quantum Mechanics",
+      "authors": "J. J. Sakurai and Jim Napolitano",
+      "year": 2020,
+      "note": "Third edition. For the next course. The opening chapter on spin is already worth reading."
+    },
+    {
+      "title": "The Feynman Lectures on Physics, Volume III",
+      "authors": "Richard P. Feynman, Robert B. Leighton and Matthew Sands",
+      "year": 1965,
+      "note": "Starts from spin and amplitudes. Read it for the picture, and Griffiths for the calculations."
+    }
+  ],
+  "next": [
+    "quantum-2",
+    "statistical-mechanics",
+    "condensed-matter",
+    "particles"
+  ]
+}

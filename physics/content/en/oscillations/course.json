@@ -1,0 +1,163 @@
+{
+  "slug": "oscillations",
+  "title": "Oscillations and waves",
+  "full_title": "Oscillations and Waves",
+  "area": "waves",
+  "level": 1,
+  "order": 20,
+  "tagline": "From a mass on a spring to sound",
+  "summary": "Simple harmonic motion, damping and resonance, then travelling waves, superposition, standing waves and sound.",
+  "overview": [
+    "A mass on a spring, a pendulum clock, a guitar string and a sound wave in air are the same mathematical object seen at different scales. Whenever a system is disturbed a little from a stable equilibrium, the restoring force is proportional to the displacement, and the motion is sinusoidal. That single fact is why oscillations appear in every part of physics, from circuits to atoms.",
+    "The first three chapters stay with one degree of freedom: free oscillation, damping, and a driving force that can resonate. The rest of the course lets the oscillation travel. A wave carries energy and momentum without carrying the medium with it; two waves occupy the same place and simply add; and a wave trapped between two ends stands still in a pattern of nodes. Sound is the example we can hear, and it fixes the ideas of intensity, beats and the Doppler effect.",
+    "The differential equation x'' = −ω²x is worth knowing cold, including its general solution and the link between ω and the physical parameters. Complex exponentials are the cleanest bookkeeping for phase, and they are introduced here as a tool rather than as a new theory. If the driving frequency is close to the natural frequency, a steady state takes many cycles to establish — transient and steady state are different questions."
+  ],
+  "prerequisites": [
+    "mechanics"
+  ],
+  "outcomes": [
+    "Solve the simple-harmonic equation and relate ω, the period and the physical parameters of a spring, a pendulum and a torsional oscillator.",
+    "Describe underdamped, critically damped and overdamped motion, and identify which regime a system is in.",
+    "Find the steady-state amplitude and phase of a driven damped oscillator, and explain resonance.",
+    "Write a travelling wave in the form f(x − vt), and relate wavelength, frequency and speed.",
+    "Superpose waves, explain beats and standing waves, and find the normal modes of a string fixed at both ends.",
+    "Use the sound speed, intensity level in decibels and the Doppler formula, including a moving source and a moving observer."
+  ],
+  "chapters": [
+    {
+      "slug": "simple-harmonic",
+      "title": "Simple harmonic motion",
+      "summary": "The equation x'' = −ω²x, energy of an oscillator, and the spring, pendulum and physical pendulum.",
+      "requires": [
+        "mechanics/work-energy",
+        "mechanics/newton-laws"
+      ]
+    },
+    {
+      "slug": "damping",
+      "title": "Damped oscillations",
+      "summary": "Linear drag and the three damping regimes, with the energy lost per cycle.",
+      "requires": [
+        "oscillations/simple-harmonic"
+      ]
+    },
+    {
+      "slug": "resonance",
+      "title": "Driven oscillations and resonance",
+      "summary": "A sinusoidal driving force, the steady-state response, phase, and the resonance curve.",
+      "requires": [
+        "oscillations/damping"
+      ]
+    },
+    {
+      "slug": "travelling-waves",
+      "title": "Travelling waves",
+      "summary": "Waveforms f(x − vt), the wave equation, energy transport, and waves on a string.",
+      "requires": [
+        "oscillations/simple-harmonic"
+      ]
+    },
+    {
+      "slug": "superposition",
+      "title": "Superposition and standing waves",
+      "summary": "Interference of two waves, beats, reflection, and the normal modes of a finite string.",
+      "requires": [
+        "oscillations/travelling-waves"
+      ]
+    },
+    {
+      "slug": "sound",
+      "title": "Sound",
+      "summary": "The speed of sound, intensity and decibels, standing sound waves, and the Doppler effect.",
+      "requires": [
+        "oscillations/superposition"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1602,
+      "title": "The pendulum",
+      "detail": "In a letter of 1602 Galileo reported that the period of a simple pendulum is nearly independent of amplitude, provided the swing is small — the first quantitative harmonic oscillator.",
+      "people": [
+        "Galileo Galilei"
+      ]
+    },
+    {
+      "year": 1678,
+      "title": "Hooke’s law",
+      "detail": "Robert Hooke published the anagram of ut tensio, sic vis: the extension of a spring is proportional to the load, the restoring force behind simple harmonic motion.",
+      "people": [
+        "Robert Hooke"
+      ]
+    },
+    {
+      "year": 1747,
+      "title": "The vibrating string",
+      "detail": "d’Alembert derived the wave equation for a taut string and showed that its general solution is the sum of a right-going and a left-going waveform.",
+      "people": [
+        "Jean le Rond d’Alembert"
+      ]
+    },
+    {
+      "year": 1753,
+      "title": "Bernoulli on superposition",
+      "detail": "Daniel Bernoulli argued that the motion of a string is a sum of its normal modes, a claim Fourier analysis later made precise.",
+      "people": [
+        "Daniel Bernoulli"
+      ]
+    },
+    {
+      "year": 1877,
+      "title": "The Theory of Sound",
+      "detail": "Lord Rayleigh’s treatise organised vibrations, the wave equation, strings, bars, membranes and acoustics into the form still taught.",
+      "people": [
+        "John William Strutt, Lord Rayleigh"
+      ]
+    },
+    {
+      "year": 1842,
+      "title": "The Doppler effect",
+      "detail": "Christian Doppler predicted the shift in the pitch of a source moving through a medium. Buys Ballot tested it in 1845 with horn players on a moving train.",
+      "people": [
+        "Christian Doppler"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Vibrations and Waves",
+      "authors": "A. P. French",
+      "year": 1971,
+      "note": "The M.I.T. introductory text. Clear, short and physical; the book to read alongside this course."
+    },
+    {
+      "title": "The Physics of Vibrations and Waves",
+      "authors": "H. J. Pain and Patricia Rankin",
+      "year": 2015,
+      "note": "Sixth edition. Goes further into Fourier analysis, wave packets and electromagnetic waves."
+    },
+    {
+      "title": "Vibrations and Waves",
+      "authors": "George C. King",
+      "year": 2009,
+      "note": "A Manchester Physics Series text, with worked examples at the level of a second-year course."
+    },
+    {
+      "title": "University Physics",
+      "authors": "Hugh D. Young and Roger A. Freedman",
+      "year": 2020,
+      "note": "Fifteenth edition, the chapters on oscillations, waves and sound. Good for routine practice."
+    },
+    {
+      "title": "The Theory of Sound",
+      "authors": "John William Strutt, Lord Rayleigh",
+      "year": 1877,
+      "note": "Volume I. Still readable on strings and resonators, and the source of many standard arguments."
+    }
+  ],
+  "next": [
+    "optics",
+    "quantum-1"
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "slug": "computation",
+  "title": "Computational physics",
+  "full_title": "Computational Physics",
+  "area": "methods",
+  "level": 2,
+  "order": 35,
+  "tagline": "What to compute when the equation will not solve",
+  "summary": "Integration of the equations of motion, linear algebra, Monte Carlo methods, fields on a grid, many-particle simulation and the numerical signs of chaos.",
+  "overview": [
+    "Most of the equations in the other courses do not have closed-form solutions. Computational physics is the disciplined replacement of those equations by a finite algorithm whose error you can estimate. The subject is not a programming course. The code is short; the question is whether it computes the thing you think it computes.",
+    "Ordinary differential equations come first, because Newtonian mechanics is a system of them: Euler’s method, and why its error forces you on to a Runge–Kutta method, with energy as the diagnostic. Linear algebra is the language of small oscillations, of quantum finite differences and of fitting. Monte Carlo integration and the Metropolis algorithm connect to statistical mechanics. Grids turn Poisson’s equation and the wave equation into matrices. A short molecular-dynamics example and a driven pendulum show many degrees of freedom and sensitive dependence in practice.",
+    "Every numerical result in this course should be accompanied by a check against a known limit: energy drift, a halving of the step, or a comparison with an exact solution at a special value of the parameters. A plot is not a check."
+  ],
+  "prerequisites": [
+    "mechanics"
+  ],
+  "outcomes": [
+    "Integrate a second-order equation of motion and estimate the global error of the method used.",
+    "Solve a linear system and a linear eigenvalue problem and know which algorithms are stable.",
+    "Estimate an integral and an expectation value by Monte Carlo sampling, with an error bar.",
+    "Implement a simple Metropolis simulation of an Ising lattice.",
+    "Discretise Poisson’s equation and the wave equation on a grid and state the stability condition.",
+    "Recognise sensitive dependence in a numerical trajectory and test it by varying the initial data."
+  ],
+  "chapters": [
+    {
+      "slug": "integrating-motion",
+      "title": "Integrating the equations of motion",
+      "summary": "Euler, Verlet and Runge–Kutta, with energy as a diagnostic.",
+      "requires": [
+        "mechanics/newton-laws"
+      ]
+    },
+    {
+      "slug": "linear-algebra",
+      "title": "Linear algebra numerically",
+      "summary": "Gaussian elimination, eigenvalues, and fitting a line to noisy data.",
+      "requires": [
+        "computation/integrating-motion",
+        "math-methods/odes"
+      ]
+    },
+    {
+      "slug": "random-sampling",
+      "title": "Monte Carlo",
+      "summary": "Random numbers, Monte Carlo integration, and the Metropolis algorithm.",
+      "requires": [
+        "computation/integrating-motion",
+        "statistical-mechanics/canonical"
+      ]
+    },
+    {
+      "slug": "fields-on-grids",
+      "title": "Fields on a grid",
+      "summary": "Finite differences for Poisson’s equation and for the wave equation.",
+      "requires": [
+        "math-methods/integral-theorems",
+        "computation/linear-algebra"
+      ]
+    },
+    {
+      "slug": "many-particles",
+      "title": "Many particles",
+      "summary": "A short molecular-dynamics simulation and what it measures.",
+      "requires": [
+        "computation/integrating-motion",
+        "continuum/fluid-kinematics"
+      ]
+    },
+    {
+      "slug": "chaos-and-data",
+      "title": "Chaos and data",
+      "summary": "The driven pendulum, sensitivity, and fitting a model to data.",
+      "requires": [
+        "analytical-mechanics/chaos",
+        "computation/linear-algebra"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1895,
+      "title": "Runge–Kutta",
+      "detail": "Carl Runge published a systematic method for integrating an ordinary differential equation; Martin Kutta generalised it in 1901 to the family of methods that carries both names.",
+      "people": [
+        "Carl Runge",
+        "Martin Kutta"
+      ]
+    },
+    {
+      "year": 1947,
+      "title": "ENIAC and the Monte Carlo idea",
+      "detail": "Stanislaw Ulam and John von Neumann proposed estimating integrals by random sampling while working on neutron transport. Metropolis and Ulam published the method in 1949.",
+      "people": [
+        "Stanislaw Ulam",
+        "Nicholas Metropolis"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "The Metropolis algorithm",
+      "detail": "The paper of Metropolis, Rosenbluth, Rosenbluth, Teller and Teller gave a Markov chain whose stationary distribution is the Boltzmann distribution.",
+      "people": [
+        "Nicholas Metropolis",
+        "Arianna W. Rosenbluth",
+        "Marshall N. Rosenbluth"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "The fast Fourier transform",
+      "detail": "Cooley and Tukey published an algorithm for the discrete Fourier transform in O(n log n) operations. Gauss had used the idea; the paper made it a tool.",
+      "people": [
+        "James Cooley",
+        "John Tukey"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Verlet’s integration",
+      "detail": "Loup Verlet published an integration scheme for molecular dynamics that conserves energy well over long runs and is still the default in the field.",
+      "people": [
+        "Loup Verlet"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "Lorenz’s equations",
+      "detail": "Edward Lorenz integrated a three-dimensional model of convection and found that trajectories starting close together diverge, the numerical discovery of sensitive dependence.",
+      "people": [
+        "Edward Lorenz"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Computational Physics",
+      "authors": "Mark Newman",
+      "year": 2013,
+      "note": "The book this course follows. It assumes you will write the programs; the physics is in the exercises."
+    },
+    {
+      "title": "An Introduction to Computer Simulation Methods",
+      "authors": "Harvey Gould, Jan Tobochnik and Wolfgang Christian",
+      "year": 2016,
+      "note": "Third edition. A wide set of projects, from mechanics to statistical physics."
+    },
+    {
+      "title": "Computational Physics",
+      "authors": "Nicholas J. Giordano and Hisao Nakanishi",
+      "year": 2006,
+      "note": "Second edition. Good on ordinary differential equations and on chaos."
+    },
+    {
+      "title": "Numerical Recipes",
+      "authors": "William H. Press, Saul A. Teukolsky, William T. Vetterling and Brian P. Flannery",
+      "year": 2007,
+      "note": "Third edition. A reference for the algorithms, not a physics book. Read the warnings as carefully as the code."
+    },
+    {
+      "title": "Understanding Molecular Simulation",
+      "authors": "Daan Frenkel and Berend Smit",
+      "year": 2002,
+      "note": "Second edition. The next step after the short molecular-dynamics chapter."
+    }
+  ],
+  "next": [
+    "continuum",
+    "condensed-matter"
+  ]
+}

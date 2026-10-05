@@ -1,0 +1,163 @@
+{
+  "slug": "thermodynamics",
+  "title": "Thermodynamics",
+  "full_title": "Thermodynamics and Kinetic Theory",
+  "area": "thermal",
+  "level": 2,
+  "order": 30,
+  "tagline": "Heat, work, entropy and the ideal gas",
+  "summary": "Temperature and the equation of state, the first and second laws, heat engines, entropy, thermodynamic potentials, and the kinetic theory of gases.",
+  "overview": [
+    "Thermodynamics describes matter in bulk without committing itself to what the matter is made of. Energy can enter as heat or as work, and not every form of energy is equally available for work: that restriction is the second law, and entropy is the quantity that expresses it. The subject is short on new equations and strict about what they mean.",
+    "We begin with temperature, heat capacity and the ideal gas, then the first law and the kinds of process — isothermal, adiabatic, isobaric, isochoric — that make up an engine. Kinetic theory supplies a microscopic reading of pressure and temperature for a dilute gas, before the second law, entropy and the potentials U, H, F and G. The potentials are the language of the later course on statistical mechanics.",
+    "Signs are a frequent source of trouble. This course takes work done on the system as positive in the first law, ΔU = Q + W, and says so whenever the opposite convention would change a formula. Quasi-static is not the same as reversible, and an ideal gas is a model with PV = nRT and U depending only on T, not a description of every gas."
+  ],
+  "prerequisites": [
+    "mechanics"
+  ],
+  "outcomes": [
+    "Use the ideal-gas law, heat capacities and the difference Cp − Cv = nR.",
+    "Apply the first law to isothermal, adiabatic, isobaric and isochoric processes.",
+    "Derive the pressure of an ideal gas from molecular collisions, and use the Maxwell speed distribution at the level of its consequences.",
+    "Compute the efficiency of a Carnot engine and state why no engine between the same two temperatures can do better.",
+    "Calculate entropy changes for reversible processes and for the free expansion of an ideal gas.",
+    "Use the thermodynamic identity dU = T dS − P dV and the potentials H, F and G, including Maxwell relations in simple cases."
+  ],
+  "chapters": [
+    {
+      "slug": "temperature",
+      "title": "Temperature and the ideal gas",
+      "summary": "Thermal equilibrium, the zeroth law, equations of state, and heat capacity.",
+      "requires": [
+        "mechanics/work-energy"
+      ]
+    },
+    {
+      "slug": "first-law",
+      "title": "The first law",
+      "summary": "Heat, work, internal energy, and the standard processes of an ideal gas, including adiabats.",
+      "requires": [
+        "thermodynamics/temperature"
+      ]
+    },
+    {
+      "slug": "kinetic-theory",
+      "title": "Kinetic theory",
+      "summary": "Pressure from collisions, temperature and kinetic energy, equipartition, and the distribution of speeds.",
+      "requires": [
+        "thermodynamics/temperature"
+      ]
+    },
+    {
+      "slug": "heat-engines",
+      "title": "Heat engines",
+      "summary": "The Carnot cycle, refrigerators, and the limits on efficiency.",
+      "requires": [
+        "thermodynamics/first-law"
+      ]
+    },
+    {
+      "slug": "entropy",
+      "title": "Entropy and the second law",
+      "summary": "Entropy as a state function, the Clausius inequality, and irreversibility.",
+      "requires": [
+        "thermodynamics/heat-engines"
+      ]
+    },
+    {
+      "slug": "potentials",
+      "title": "Thermodynamic potentials",
+      "summary": "Enthalpy, Helmholtz and Gibbs free energies, and the Maxwell relations.",
+      "requires": [
+        "thermodynamics/entropy"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1662,
+      "title": "Boyle’s law",
+      "detail": "The second edition of Boyle’s New Experiments recorded that, at fixed temperature, the pressure of a confined sample of air is inversely proportional to its volume.",
+      "people": [
+        "Robert Boyle"
+      ]
+    },
+    {
+      "year": 1824,
+      "title": "Carnot’s engine",
+      "detail": "Sadi Carnot’s Reflections on the Motive Power of Fire showed that the efficiency of a reversible engine depends only on the two temperatures it works between.",
+      "people": [
+        "Sadi Carnot"
+      ]
+    },
+    {
+      "year": 1850,
+      "title": "The first and second laws",
+      "detail": "Clausius and, independently, William Thomson (Kelvin) stated energy conservation for heat and work, and the principle that heat does not pass of itself from a colder body to a hotter one.",
+      "people": [
+        "Rudolf Clausius",
+        "William Thomson"
+      ]
+    },
+    {
+      "year": 1857,
+      "title": "Kinetic theory",
+      "detail": "Clausius, and then Maxwell in 1860, derived the pressure of a gas from molecular impacts and found the distribution of molecular speeds.",
+      "people": [
+        "Rudolf Clausius",
+        "James Clerk Maxwell"
+      ]
+    },
+    {
+      "year": 1865,
+      "title": "Entropy named",
+      "detail": "Clausius introduced entropy and summarised the two laws as: the energy of the universe is constant, and its entropy tends to a maximum.",
+      "people": [
+        "Rudolf Clausius"
+      ]
+    },
+    {
+      "year": 1877,
+      "title": "Boltzmann’s principle",
+      "detail": "Boltzmann related the entropy of a macrostate to the number of microstates, S = k log W, the bridge from this course to statistical mechanics.",
+      "people": [
+        "Ludwig Boltzmann"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "An Introduction to Thermal Physics",
+      "authors": "Daniel V. Schroeder",
+      "year": 2021,
+      "note": "Second edition. The book this course follows most closely: clear, modern, and honest about entropy."
+    },
+    {
+      "title": "Thermal Physics",
+      "authors": "Charles Kittel and Herbert Kroemer",
+      "year": 1980,
+      "note": "Second edition. Begins from statistical mechanics. Excellent once the second law feels familiar."
+    },
+    {
+      "title": "Thermodynamics",
+      "authors": "Enrico Fermi",
+      "year": 1937,
+      "note": "A short classic. Still the cleanest account of the potentials and the approach to equilibrium."
+    },
+    {
+      "title": "Concepts in Thermal Physics",
+      "authors": "Stephen J. Blundell and Katherine M. Blundell",
+      "year": 2010,
+      "note": "Second edition. A full undergraduate treatment, with problems."
+    },
+    {
+      "title": "University Physics",
+      "authors": "Hugh D. Young and Roger A. Freedman",
+      "year": 2020,
+      "note": "Fifteenth edition, the thermal chapters, for first exposure and routine calculations."
+    }
+  ],
+  "next": [
+    "statistical-mechanics"
+  ]
+}
