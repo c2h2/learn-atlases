@@ -295,7 +295,7 @@ A finite poset is drawn as a **Hasse diagram**. Say that $b$ **covers** $a$ if $
 nodes: 1@0,0; 2@-1,1; 3@1,1; 4@-2,2; 6@0,2; 12@-1,3
 edges: 1>2; 1>3; 2>4; 2>6; 3>6; 4>12; 6>12
 algorithm: topo
-caption: The Hasse diagram of the divisors of $12$ under divisibility, with each line directed upwards, from a number to a number that covers it. Seven lines encode all $18$ related pairs. Step through the topological sort: it lists the elements one at a time, always choosing an element with nothing below it, and produces a total order compatible with divisibility — a *linear extension* of the partial order.
+caption: The Hasse diagram of the divisors of $12$ under divisibility, with each line directed upwards, from a number to a number that covers it. Seven lines encode all $18$ related pairs. Step through the topological sort: it lists the elements one at a time, always choosing an element with nothing below it among the elements not yet listed, and produces a total order compatible with divisibility — a *linear extension* of the partial order.
 :::
 
 ::: definition Minimal, maximal, least and greatest elements {#def-extremal}

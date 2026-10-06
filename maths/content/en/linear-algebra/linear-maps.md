@@ -105,7 +105,7 @@ $T(0) = 0$, so $0\in\ker T$ and $0 \in\Img T$. If $T(u) = T(v) = 0$, then $T(au 
 If $T$ is injective and $T(v) = 0 = T(0)$, then $v = 0$; so $\ker T = \{0\}$. Conversely, suppose $\ker T = \{0\}$ and $T(u) = T(v)$. Then $T(u - v) = T(u) - T(v) = 0$, so $u - v\in\ker T$, hence $u = v$.
 :::
 
-The criterion "injective iff trivial kernel" is a great labour-saver: instead of comparing all pairs of inputs, we only need to know which inputs go to $0$. It is the abstract form of the uniqueness part of [[linear-algebra/linear-systems#thm-structure]]: the solutions of $T(v) = w$, if there are any, form a translate $v_0 + \ker T$ of the kernel.
+The criterion "injective iff trivial kernel" is a great labour-saver: instead of comparing all pairs of inputs, we only need to know which inputs go to $0$. It is the abstract form of [[linear-algebra/linear-systems#thm-structure]]: the solutions of $T(v) = w$, if there are any, form a translate $v_0 + \ker T$ of the kernel, so a solution, when one exists, is unique exactly when $\ker T = \{0\}$.
 
 ::: widget projection
 u: 2,1

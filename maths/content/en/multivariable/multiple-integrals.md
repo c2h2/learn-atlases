@@ -20,7 +20,7 @@ I = \iint_R f(x,y)\,dA = \lim_{\text{mesh}\to0}\sum_{i,j} f(x_{ij}^*, y_{ij}^*)\
 $$
 :::
 
-When $f \ge 0$ the integral is the volume under the graph; in general it is the volume above the $xy$-plane minus the volume below. As in one variable, the key existence result is that every continuous function on $R$ is integrable, and more generally every bounded function whose discontinuities lie on finitely many smooth curves (which have zero area). The proof uses the uniform continuity of continuous functions on closed bounded sets and is given in [[real-analysis/riemann-integral]]; we use it freely. The basic properties of the integral follow directly from the definition.
+When $f \ge 0$ the integral is the volume under the graph; in general it is the volume above the $xy$-plane minus the volume below. As in one variable, the key existence result is that every continuous function on $R$ is integrable, and more generally every bounded function whose discontinuities lie on finitely many smooth curves (which have zero area). The proof uses the uniform continuity of continuous functions on closed bounded sets, exactly as for the one-variable integral in [[real-analysis/riemann-integral]]; we use the result freely. The basic properties of the integral follow directly from the definition.
 
 ::: proposition Properties of the double integral {#prop-properties}
 Let $f$ and $g$ be integrable on the rectangle $R$ and let $\alpha, \beta\in\R$. Then
@@ -72,7 +72,7 @@ $$
 Every Riemann sum of a *refinement* of this partition lies between $L$ and $U$, because each of its small rectangles lies inside some $R_{ij}$, where $m_{ij}\le f\le M_{ij}$. Refinements of arbitrarily small mesh exist, and their Riemann sums converge to $\iint_R f\,dA$; so also $L \le \iint_R f\,dA \le U$. Now let $\eps > 0$. By uniform continuity there is $\delta > 0$ such that $\abs{f(\mathbf{p}) - f(\mathbf{q})} < \eps$ whenever $\norm{\mathbf{p} - \mathbf{q}} < \delta$; for a partition whose rectangles all have diameter less than $\delta$ we get $M_{ij} - m_{ij} < \eps$ and therefore $U - L < \eps\cdot\text{area}(R)$. Both $\int_a^bF\,dx$ and $\iint_R f\,dA$ lie in the interval $[L, U]$ of length less than $\eps\cdot\text{area}(R)$, for every $\eps > 0$; so they are equal. The same argument with the roles of $x$ and $y$ exchanged gives the second equality.
 :::
 
-The same proof works whenever $f$ is integrable on $R$ and the inner integrals exist; in particular for bounded functions continuous except on finitely many smooth curves. The most general form, for Lebesgue integrable functions, is proved in [[measure-theory/lebesgue-integral]].
+The same proof works whenever $f$ is integrable on $R$ and the inner integrals exist; in particular for bounded functions continuous except on finitely many smooth curves. The most general form, for Lebesgue integrable functions, is a theorem of measure theory, built on the integral of [[measure-theory/lebesgue-integral]].
 
 ::: example Choosing the order {#ex-order}
 Evaluate $\displaystyle\iint_R x\,e^{xy}\,dA$ over $R = [0,1]\times[0,1]$.
@@ -94,7 +94,7 @@ $$
 \int_0^1\int_0^1 f\,dy\,dx = \int_0^1\frac{dx}{1+x^2} = \frac{\pi}{4}, \qquad \int_0^1\int_0^1 f\,dx\,dy = -\frac{\pi}{4},
 $$
 
-since $\int_0^1 f\,dy = \bigl[\tfrac{y}{x^2+y^2}\bigr]_0^1 = \tfrac{1}{1+x^2}$ and $f(y,x) = -f(x,y)$. The double integral does not exist: $f$ is unbounded near the origin and $\iint\abs{f}\,dA = \infty$. Swapping the order of integration is safe for continuous functions on rectangles, and for any function whose absolute value has a finite integral — not otherwise.
+since $\int_0^1 f\,dy = \bigl[\tfrac{y}{x^2+y^2}\bigr]_0^1 = \tfrac{1}{1+x^2}$ and $f(y,x) = -f(x,y)$. The double integral does not exist: $f$ is unbounded near the origin and $\iint\abs{f}\,dA = \infty$. Swapping the order of integration is safe for continuous functions on rectangles, for non-negative functions, and for any function whose absolute value has a finite integral — but not in general.
 :::
 
 A special case worth remembering: if $f(x,y) = g(x)h(y)$, then $\iint_R f\,dA = \left(\int_a^b g\,dx\right)\left(\int_c^d h\,dy\right)$, because the inner integral $\int_c^d g(x)h(y)\,dy = g(x)\int_c^d h$ pulls the constant $\int_c^d h$ out of the outer one.
@@ -206,7 +206,7 @@ $$
 m = \iint_D \sigma\,dA, \qquad \bar x = \frac1m\iint_D x\,\sigma\,dA, \qquad \bar y = \frac1m\iint_D y\,\sigma\,dA,
 $$
 
-obtained by adding up the masses $\sigma\,\Delta A$ and their moments $x\,\sigma\,\Delta A$, $y\,\sigma\,\Delta A$ of small pieces. For constant density the centre of mass is the **centroid**, a purely geometric point. Similarly the **average value** of $f$ over $D$ is $\frac{1}{\text{area}(D)}\iint_D f\,dA$, and for continuous functions the average is always attained.
+obtained by adding up the masses $\sigma\,\Delta A$ and their moments $x\,\sigma\,\Delta A$, $y\,\sigma\,\Delta A$ of small pieces. For constant density the centre of mass is the **centroid**, a purely geometric point. Similarly the **average value** of $f$ over $D$ is $\frac{1}{\text{area}(D)}\iint_D f\,dA$, and a continuous function on a region in one piece attains its average value.
 
 ::: theorem Mean value theorem for double integrals {#thm-mvt-integral}
 Let $D$ be a closed bounded region of positive area in which any two points can be joined by a continuous path in $D$, and let $f$ be continuous on $D$. Then there is a point $\mathbf{p}\in D$ with
@@ -264,7 +264,7 @@ $$
 where $r_i^*$ is the midpoint radius. The polar rectangle is *not* a $\Delta r$ by $\Delta\theta$ rectangle: its sides are $\Delta r$ and approximately $r\,\Delta\theta$, an arc whose length grows with the distance from the origin. This exact formula is the heart of the following theorem.
 
 ::: theorem Integration in polar coordinates {#thm-polar}
-Let $D = \set{(r\cos\theta, r\sin\theta) : \alpha\le\theta\le\beta,\ h_1(\theta)\le r\le h_2(\theta)}$, where $0\le\beta - \alpha\le2\pi$ and $0\le h_1\le h_2$ are continuous. If $f$ is continuous on $D$, then
+Let $D$ be the set of points $(r\cos\theta, r\sin\theta)$ with $\alpha\le\theta\le\beta$ and $h_1(\theta)\le r\le h_2(\theta)$, where $0\le\beta - \alpha\le2\pi$ and $0\le h_1\le h_2$ are continuous. If $f$ is continuous on $D$, then
 
 $$
 \iint_D f(x,y)\,dA = \int_\alpha^\beta\int_{h_1(\theta)}^{h_2(\theta)} f(r\cos\theta, r\sin\theta)\,r\,dr\,d\theta, \qquad D = \set{\alpha\le\theta\le\beta,\ h_1(\theta)\le r\le h_2(\theta)}.
@@ -320,7 +320,7 @@ caption: The bell-shaped surface $z = e^{-(x^2+y^2)}$. Its level curves are circ
 :::
 
 ::: application The normal distribution
-The standard normal density $\varphi(x) = \frac{1}{\sqrt{2\pi}}e^{-x^2/2}$ is the most important function in statistics. That its total integral is $1$ follows from [[#ex-gaussian]] by the substitution $x = \sqrt2\,u$. The same polar-coordinates trick shows that if $X$ and $Y$ are independent standard normal variables, the pair $(X,Y)$ has a rotationally symmetric distribution — the starting point of the Box–Muller method for generating normal random numbers ([[probability/joint-distributions]]).
+The standard normal density $\varphi(x) = \frac{1}{\sqrt{2\pi}}e^{-x^2/2}$ is the most important function in statistics. That its total integral is $1$ follows from [[#ex-gaussian]] by the substitution $x = \sqrt2\,u$. If $X$ and $Y$ are independent standard normal variables, their joint density $\varphi(x)\varphi(y) = \frac{1}{2\pi}e^{-(x^2+y^2)/2}$ ([[probability/joint-distributions]]) depends only on the distance from the origin, so the pair $(X,Y)$ has a rotationally symmetric distribution — the starting point of the Box–Muller method for generating normal random numbers ([[multivariable/change-of-variables]]).
 :::
 
 ## Cylindrical and spherical coordinates
@@ -394,7 +394,7 @@ Slicing a solid to find its volume goes back to Bonaventura Cavalieri, whose *Ge
 
 ## Where this leads
 
-The factors $r$ and $\rho^2\sin\phi$ are special cases of the Jacobian determinant, and [[multivariable/change-of-variables]] proves the general change of variables formula, which lets us choose coordinates adapted to any region. Double integrals over regions bounded by curves are related to line integrals around their boundaries by Green's theorem ([[multivariable/greens-theorem]]), and triple integrals to surface integrals by the divergence theorem ([[multivariable/stokes-divergence]]). In probability, joint densities are integrated over regions of the plane to compute probabilities and expectations ([[probability/joint-distributions]]), and when integrals cannot be done in closed form they are approximated by the methods of [[numerical-analysis/numerical-integration]] or by Monte Carlo sampling. The Lebesgue integral of [[measure-theory/lebesgue-integral]] puts Fubini's theorem in its natural generality.
+The factors $r$ and $\rho^2\sin\phi$ are special cases of the Jacobian determinant, and [[multivariable/change-of-variables]] proves the general change of variables formula, which lets us choose coordinates adapted to any region. Double integrals over regions bounded by curves are related to line integrals around their boundaries by Green's theorem ([[multivariable/greens-theorem]]), and triple integrals to surface integrals by the divergence theorem ([[multivariable/stokes-divergence]]). In probability, joint densities are integrated over regions of the plane to compute probabilities and expectations ([[probability/joint-distributions]]), and when integrals cannot be done in closed form they are approximated by the methods of [[numerical-analysis/numerical-integration]] or by Monte Carlo sampling. The Lebesgue integral, introduced in [[measure-theory/lebesgue-integral]], is the setting in which Fubini's theorem takes its natural general form, the Fubini–Tonelli theorem of measure theory.
 
 ::: summary
 - $\iint_R f\,dA$ is the limit of Riemann sums $\sum f(\mathbf{x}_{ij}^*)\,\Delta A_{ij}$; for $f\ge0$ it is the volume under the graph ([[#def-double-integral]]).
@@ -483,7 +483,7 @@ Let $f(x,y) = \dfrac{x^2-y^2}{(x^2+y^2)^2}$. Show that $\displaystyle\int_0^1\in
 Check that $\pdv{}{y}\left(\dfrac{y}{x^2+y^2}\right) = f(x,y)$.
 :::
 ::: solution
-For $x > 0$, $\pdv{}{y}\dfrac{y}{x^2+y^2} = \dfrac{(x^2+y^2) - 2y^2}{(x^2+y^2)^2} = f(x,y)$, so $\int_0^1 f\,dy = \dfrac{1}{x^2+1}$ and $\int_0^1\frac{dx}{1+x^2} = \arctan 1 = \frac\pi4$. Since $f(y,x) = -f(x,y)$, the other iterated integral is the same computation with the roles of the variables exchanged and the sign reversed: $-\frac\pi4$. There is no contradiction because $f$ is not continuous on $[0,1]^2$ — it is unbounded near the origin (e.g. $f(x,0) = 1/x^2$) — and $\iint\abs{f}\,dA = \infty$, so none of the versions of Fubini's theorem applies.
+For $x > 0$, $\pdv{}{y}\dfrac{y}{x^2+y^2} = \dfrac{(x^2+y^2) - 2y^2}{(x^2+y^2)^2} = f(x,y)$, so $\int_0^1 f\,dy = \dfrac{1}{x^2+1}$ and $\int_0^1\frac{dx}{1+x^2} = \arctan 1 = \frac\pi4$. Since $f(y,x) = -f(x,y)$, the other iterated integral is the same computation with the roles of the variables exchanged and the sign reversed: $-\frac\pi4$. There is no contradiction because $f$ is not continuous on $[0,1]^2$ — it is unbounded near the origin (e.g. $f(x,0) = 1/x^2$) — and $\iint\abs{f}\,dA = \infty$: in polar coordinates $\abs{f} = \abs{\cos2\theta}/r^2$, so already the quarter-disc $r\le1$ contributes $\int_0^{\pi/2}\abs{\cos2\theta}\,d\theta\int_0^1\frac{dr}{r} = \infty$. So none of the versions of Fubini's theorem applies.
 :::
 :::
 

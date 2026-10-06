@@ -365,7 +365,7 @@ $$
 - [x] $\norm{\mathbf{u}\times\mathbf{v}} \le \norm{\mathbf{u}}\,\norm{\mathbf{v}}$
 - [x] $\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w}) = \mathbf{w}\cdot(\mathbf{u}\times\mathbf{v})$
 ::: solution
-叉积是反交换的，所以只要$\mathbf{u}\times\mathbf{v} \ne \mathbf{0}$，第一个命题就不成立；叉积也不满足结合律（见上面的“注意”）。第二个命题就是[[#thm-cross-props]](3)。第四个命题由$\norm{\mathbf{u}\times\mathbf{v}} = \norm{\mathbf{u}}\norm{\mathbf{v}}\sin\theta$和$\sin\theta \le 1$推出。最后一个是混合积的轮换对称性。
+叉积是反交换的，所以只要$\mathbf{u}\times\mathbf{v} \ne \mathbf{0}$，第一个命题就不成立；叉积也不满足结合律（见上面的“常见错误”）。第二个命题就是[[#thm-cross-props]](3)。第四个命题由$\norm{\mathbf{u}\times\mathbf{v}} = \norm{\mathbf{u}}\norm{\mathbf{v}}\sin\theta$和$\sin\theta \le 1$推出。最后一个是混合积的轮换对称性。
 :::
 :::
 

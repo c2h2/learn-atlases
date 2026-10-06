@@ -391,7 +391,7 @@ The divergence test and the comparison of $\sum 1/n$ with $\sum 1/n^2$ lead dire
 - Telescoping series $\sum(b_n - b_{n+1})$ have partial sums $b_1 - b_{n+1}$; partial fractions often reveal them.
 - Convergent series can be added and multiplied by constants term by term, but not multiplied together term by term.
 - Divergence test: if $a_n \not\to 0$ the series diverges. If $a_n \to 0$ the test says nothing.
-- The harmonic series diverges, but only like $\ln n$: $H_n = \ln n + \gamma + o(1)$.
+- The harmonic series diverges, but only like $\ln n$: $H_n - \ln n \to \gamma \approx 0.5772$.
 - A series of non-negative terms converges exactly when its partial sums are bounded; this gives $\sum 1/n^2 < 2$ (in fact $= \pi^2/6$).
 :::
 

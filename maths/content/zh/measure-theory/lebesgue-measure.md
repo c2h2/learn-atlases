@@ -38,7 +38,7 @@ $$
 \lambda^*\Bigl(\bigcup_n A_n\Bigr) \le \sum_{n,k}\ell(I_{n,k}) < \sum_n\Bigl(\lambda^*(A_n) + \frac{\eps}{2^n}\Bigr) = \sum_n\lambda^*(A_n) + \eps.
 $$
 
-（非负项二重级数可以按任意顺序求和：[[real-analysis/series#thm-rearrangement-abs]]。）由于$\eps$是任意的，不等式得证。
+（这里把所有区间$I_{n,k}$排成一个序列；由于各项非负，它们长度的每个有限部分和——从而整个和——都不超过$\sum_n\sum_k\ell(I_{n,k})$。）由于$\eps$是任意的，不等式得证。
 
 (3) 区间$I_k$覆盖$A$当且仅当平移后的区间$I_k + t$覆盖$A + t$，而平移保持长度不变。
 
@@ -48,7 +48,7 @@ $$
 ::: widget cantor
 mode: rationals
 size: 8
-caption: 沿着之字形路线走遍分数表，可以把正有理数排成$q_1, q_2, q_3, \dots$。用长度为$\eps/2^k$的开区间覆盖$q_k$，就以至多为$\eps$的总长度覆盖了每个有理数——无论$\eps$多么小。这就是为什么$\lambda^*(\Q) = 0$，尽管$\Q$是稠密的，与每个区间都相交。
+caption: 沿着之字形路线走遍分数表，可以把正有理数排成$q_1, q_2, q_3, \dots$。用长度为$\eps/2^k$的开区间覆盖$q_k$，就以至多为$\eps$的总长度覆盖了每个正有理数——无论$\eps$多么小；改用序列$0, q_1, -q_1, q_2, -q_2, \dots$，同样的做法就覆盖了整个$\Q$。这就是为什么$\lambda^*(\Q) = 0$，尽管$\Q$是稠密的，与每个区间都相交。
 :::
 
 ::: example 有理数集：可数覆盖与有限覆盖 {#ex-rationals-measure}
@@ -56,7 +56,7 @@ caption: 沿着之字形路线走遍分数表，可以把正有理数排成$q_1,
 ::: solution
 **可数覆盖。**把$[0, 1]$中的有理数排成$q_1, q_2, \dots$，用长度为$\eps 2^{-k}$的区间$\bigl(q_k - \eps2^{-k-1}, q_k + \eps2^{-k-1}\bigr)$覆盖$q_k$。总长度为$\eps$，所以对每个$\eps > 0$都有$\lambda^*(\Q\cap[0,1]) \le \eps$。
 
-**有限覆盖。**设开区间$I_1, \dots, I_m$覆盖$\Q\cap[0,1]$，其并为$U$。则$[0, 1]\setminus U$是有限个区间的并（有限个区间的补集与交都是区间的有限并），并且不含任何有理数。长度为正的区间都含有有理数，所以这些区间中的每一个都是单点：$[0, 1]\setminus U$是一个有限集$F$。由于各$I_k$本身就构成$U$的一个覆盖，而且$[0, 1] \subseteq U \cup F$，
+**有限覆盖。**设开区间$I_1, \dots, I_m$覆盖$\Q\cap[0,1]$，其并为$U$。则$[0, 1]\setminus U$是有限个区间的并（有限个区间的补集与交都是区间的有限并），并且不含任何有理数。长度为正的区间都含有有理数，所以这些区间中的每一个都是单点：$[0, 1]\setminus U$是一个有限集$F$。由于各$I_k$本身就构成$U$的一个覆盖，而且$[0, 1] \subseteq U \cup F$，利用$\lambda^*([0, 1]) = 1$（在下面的[[#thm-outer-interval]]中证明）得
 
 $$
 1 = \lambda^*([0, 1]) \le \lambda^*(U) + \lambda^*(F) \le \sum_{k=1}^m\ell(I_k) + 0.
@@ -78,7 +78,7 @@ $$
 **闭区间，下界。**设$(I_k)$是$[a, b]$的任一由开区间构成的可数覆盖。由海涅-博雷尔（Heine–Borel）定理（[[real-analysis/metric-spaces#thm-heine-borel]]），其中有限个区间就已经覆盖了$[a, b]$；只需证明这有限个区间的总长度大于$b - a$。从中选一个包含$a$的区间$(a_1, b_1)$。若$b_1 \le b$，则$b_1 \in [a, b]$被这有限个区间中的另一个$(a_2, b_2)$覆盖，$a_2 < b_1 < b_2$。如此继续：只要$b_j \le b$，就从这个有限覆盖中再选一个包含$b_j$的区间$(a_{j+1}, b_{j+1})$。右端点严格递增，所以没有区间被选中两次，这一过程至多经过有限步就会停止，此时某个$b_m > b$。于是
 
 $$
-\sum_{j=1}^m (b_j - a_j) = b_m - a_1 + \sum_{j=1}^{m-1}(b_j - a_{j+1}) > b_m - a_1 > b - a,
+\sum_{j=1}^m (b_j - a_j) = b_m - a_1 + \sum_{j=1}^{m-1}(b_j - a_{j+1}) \ge b_m - a_1 > b - a,
 $$
 
 这是因为每个$a_{j+1} < b_j$，$b_m > b$且$a_1 < a$。所以每个覆盖的总长度都大于$b - a$，从而$\lambda^*([a, b]) \ge b - a$。
@@ -251,7 +251,7 @@ limit: 1
 caption: 构造康托尔集时被去掉的长度：第$n$步去掉$2^{n-1}$个长度为$3^{-n}$的区间。它们的部分和逐步增加到$1$，即$[0, 1]$的全长，所以剩下的康托尔集测度为$0$——尽管它仍然含有不可数多个点，其中包括$\tfrac14 = 0.0202\ldots_3$，它从来不是任何被去掉区间的端点。
 :::
 
-康托尔集解决了一个关于$\mathcal{L}$本身的问题。由于$\lambda(C) = 0$且勒贝格测度是完备的，$C$的**每个**子集都是勒贝格可测的。$C$具有$\R$的基数$\mathfrak{c}$，所以$\mathcal{L}$至少有$2^{\mathfrak{c}}$个成员；但博雷尔集只有$\mathfrak{c}$个。因此，**存在不是博雷尔集的勒贝格可测集**。（利用[[measure-theory/measurable-functions#ex-cantor-function]]中的康托尔函数，可以明确地构造出这样一个集合。）
+康托尔集解决了一个关于$\mathcal{L}$本身的问题。由于$\lambda(C) = 0$且勒贝格测度是完备的，$C$的**每个**子集都是勒贝格可测的。$C$具有$\R$的基数$\mathfrak{c}$，所以$\mathcal{L}$至少有$2^{\mathfrak{c}}$个成员；但博雷尔集只有$\mathfrak{c}$个。因此，**存在不是博雷尔集的勒贝格可测集**。（[[measure-theory/measurable-functions#ex-cantor-function]]给出了一个具体的例子：一个不可测集在由康托尔函数构造的同胚之下的原像。）
 
 ::: quiz
 $[0, 1]$中无理数集的勒贝格测度是多少？
@@ -302,7 +302,7 @@ $$
 
 ## 后续内容
 
-有了勒贝格测度，我们就可以求积分了。[[measure-theory/measurable-functions]]一章刻画那些水平集可测的函数，[[measure-theory/lebesgue-integral]]一章则用简单函数（即可测集的示性函数的有限组合）从下方逼近$f$，以此定义$\int f\,d\lambda$。本章的构造可以立即推广：用矩形覆盖，就得到$\R^n$上的勒贝格测度（即[[multivariable/multiple-integrals]]一章中非正式地使用的面积和体积）；对递增且右连续的$F$，把$b - a$换成$F(b) - F(a)$，就得到勒贝格-斯蒂尔杰斯（Lebesgue–Stieltjes）测度，它们恰好就是实随机变量的分布（[[probability/continuous-random-variables]]）；而卡拉泰奥多里定理还能构造出概率论所需要的、描述无穷多次抛掷硬币的测度。
+有了勒贝格测度，我们就可以求积分了。[[measure-theory/measurable-functions]]一章刻画那些水平集可测的函数，[[measure-theory/lebesgue-integral]]一章则用简单函数（即可测集的示性函数的有限组合）从下方逼近$f$，以此定义$\int f\,d\lambda$。本章的构造可以立即推广：用矩形覆盖，就得到$\R^n$上的勒贝格测度（即[[multivariable/multiple-integrals]]一章中非正式地使用的面积和体积）；对递增且右连续的$F$，把$b - a$换成$F(b) - F(a)$，就得到满足$\mu_F((a, b]) = F(b) - F(a)$的勒贝格-斯蒂尔杰斯（Lebesgue–Stieltjes）测度$\mu_F$，其中$F$在$-\infty$处趋于$0$、在$+\infty$处趋于$1$的那些，恰好就是实随机变量的分布（[[probability/continuous-random-variables]]）；而卡拉泰奥多里定理还能构造出概率论所需要的、描述无穷多次抛掷硬币的测度。
 
 ::: summary
 - 勒贝格外测度$\lambda^*(A)$是用开区间对$A$作可数覆盖时总长度的下确界（[[#def-outer-measure]]）。它对所有集合都有定义，具有单调性、可数次可加性和平移不变性；可数集的外测度为$0$。

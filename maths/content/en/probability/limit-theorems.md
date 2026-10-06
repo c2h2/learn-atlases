@@ -171,7 +171,7 @@ f: exp(-x^2)
 a: 0
 b: 1
 n: 1000
-caption: Monte Carlo estimation of $\int_0^1e^{-x^2}\,dx\approx0.7468$. Here $\sigma_g\approx0.20$, so with $n = 1000$ points the estimate is typically within about $0.006$ of the truth. Rerun several times and compare the spread of the estimates with that prediction; then multiply $n$ by $4$ and check that the typical error halves.
+caption: Monte Carlo estimation of $\int_0^1e^{-x^2}\,dx\approx0.7468$. Here $\sigma_g\approx0.20$, so with $n = 1000$ points the sample-mean estimate (the average of the $g(U_i)$ described above) is typically within about $0.006$ of the truth; the hit-or-miss estimate, which counts the points under the curve, is less accurate. Rerun several times and compare the spread of the sample-mean estimates with that prediction; then multiply $n$ by $4$ and check that the typical error halves.
 :::
 
 ## Convergence in distribution and the central limit theorem {#clt}
@@ -318,7 +318,7 @@ Jacob Bernoulli proved the first law of large numbers, for relative frequencies,
 
 ## Where this leads {#where-next}
 
-The central limit theorem is the engine of classical statistics. It explains why sample means are approximately normal ([[statistics/sampling]]), it gives the margins of error of [[statistics/confidence-intervals]] and the z-tests of [[statistics/hypothesis-testing]], and it justifies the large-sample normality of maximum likelihood estimators ([[statistics/estimation]]). Laws of large numbers also hold for dependent sequences: for a Markov chain the long-run fraction of time spent in a state converges to its stationary probability ([[probability/markov-chains]]). The different modes of convergence (in probability, almost sure, in distribution, in mean square) are compared systematically in [[measure-theory/lp-spaces]].
+The central limit theorem is the engine of classical statistics. It explains why sample means are approximately normal ([[statistics/sampling]]), it gives the margins of error of [[statistics/confidence-intervals]] and the z-tests of [[statistics/hypothesis-testing]], and it justifies the large-sample normality of maximum likelihood estimators ([[statistics/estimation]]). Laws of large numbers also hold for dependent sequences: for a Markov chain the long-run fraction of time spent in a state converges to its stationary probability ([[probability/markov-chains]]). The different modes of convergence (in probability, almost sure, in mean square) are compared systematically in [[measure-theory/lp-spaces]].
 
 ::: summary
 - Markov: $\Prob(X\ge a)\le\E X/a$ for $X\ge0$. Chebyshev: $\Prob(\lvert X-\mu\rvert\ge\eps)\le\sigma^2/\eps^2$; valid for every distribution, hence crude for any particular one.

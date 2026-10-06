@@ -203,12 +203,12 @@ Show that the inequality in Fatou's lemma can be strict, using (a) $f_n = n\math
 :::
 
 ::: widget plot
-f: n^2*x*exp(-n*x)
+f: n^2*x*exp(-n*x); 4/(e^2*x)
 x: 0, 2
-y: 0, 8
+y: 0, 10
 sliders: n=1:1:25:1
-labels: f_n(x) = n^2xe^{-nx}
-caption: Another sequence that loses its mass: $f_n(x) = n^2xe^{-nx}$ tends to $0$ at every $x \ge 0$, but $\int_0^\infty f_n = 1$ for every $n$. Fatou's lemma allows this ($0 \le 1$). The dominated convergence theorem does not apply, and the picture shows why: no single integrable function lies above all the $f_n$ — their upper envelope behaves like $4/(e^2x)$ near $0$, which is not integrable.
+labels: f_n(x) = n^2xe^{-nx}; 4/(e^2x)
+caption: Another sequence that loses its mass: $f_n(x) = n^2xe^{-nx}$ tends to $0$ at every $x \ge 0$, but $\int_0^\infty f_n = 1$ for every $n$. Fatou's lemma allows this ($0 \le 1$). The dominated convergence theorem does not apply, and the picture shows why: every $f_n$ lies below the curve $4/(e^2x)$ and touches it at $x = 2/n$, so the smallest function above all the $f_n$ behaves like $4/(e^2x)$ near $0$. That is not integrable, so no integrable function lies above all the $f_n$.
 :::
 
 ## Integrable functions
@@ -246,7 +246,7 @@ If $f \le g$ a.e., then $g - f$ equals a non-negative function a.e., so $\int g 
 Now the third and most used convergence theorem. It follows from Fatou's lemma by a clever choice of non-negative functions.
 
 ::: theorem Dominated convergence theorem {#thm-dct}
-Let $f_n$ be measurable functions with $f_n \to f$ almost everywhere, and suppose there is an integrable $g$ with $\abs{f_n} \le g$ a.e. for every $n$. Then $f$ is integrable,
+Let $f_n$ and $f$ be measurable functions with $f_n \to f$ almost everywhere, and suppose there is an integrable $g$ with $\abs{f_n} \le g$ a.e. for every $n$. Then $f$ is integrable,
 
 $$
 \int_X\abs{f_n - f}\,d\mu \to 0, \qquad\text{and in particular}\qquad \int_X f_n\,d\mu \to \int_X f\,d\mu.
@@ -254,7 +254,7 @@ $$
 :::
 
 ::: proof
-Changing all the functions on a null set changes no integral, so we may assume (redefining them as $0$ on a suitable null set) that $f_n \to f$ and $\abs{f_n} \le g$ everywhere, with $g$ finite. Then $f$ is measurable and $\abs f \le g$, so $f$ is integrable. The functions $2g - \abs{f_n - f}$ are non-negative (as $\abs{f_n - f} \le \abs{f_n} + \abs f \le 2g$) and converge to $2g$. Fatou's lemma gives
+Changing all the functions on a null set changes no integral, so we may assume (redefining them as $0$ on a suitable null set) that $f_n \to f$ and $\abs{f_n} \le g$ everywhere, with $g$ finite. Then $\abs f \le g$, so $f$ is integrable. (For a complete measure such as Lebesgue measure the measurability of $f$ is automatic, by the remark after [[measure-theory/measurable-functions#def-ae]]; for an incomplete measure it must be assumed.) The functions $2g - \abs{f_n - f}$ are non-negative (as $\abs{f_n - f} \le \abs{f_n} + \abs f \le 2g$) and converge to $2g$. Fatou's lemma gives
 
 $$
 \int 2g\,d\mu \le \liminf_n\int\bigl(2g - \abs{f_n - f}\bigr)d\mu = \int 2g\,d\mu - \limsup_n\int\abs{f_n - f}\,d\mu.
@@ -382,7 +382,7 @@ integrating by parts on $[0, N]$ and letting $N\to\infty$. So $\frac{d}{dt}\bigl
 :::
 
 ::: application Expectations
-In probability theory the integral of a random variable $X$ on a probability space $(\Omega, \mathcal{F}, P)$ is its **expectation**, $\E[X] = \int_\Omega X\,dP$. The theorems of this chapter become the basic rules of the subject: Markov's inequality $P(\abs X \ge t) \le \E\abs X/t$; linearity of expectation; $\E\bigl[\sum X_n\bigr] = \sum\E[X_n]$ for non-negative $X_n$ (so the expected number of events that occur among $A_1, A_2, \dots$ is $\sum P(A_n)$); and the exchange of limits and expectations under domination, used throughout [[probability/limit-theorems]].
+In probability theory the integral of a random variable $X$ on a probability space $(\Omega, \mathcal{F}, P)$ is its **expectation**, $\E[X] = \int_\Omega X\,dP$. The theorems of this chapter become the basic rules of the subject: Markov's inequality $P(\abs X \ge t) \le \E\abs X/t$; linearity of expectation; $\E\bigl[\sum X_n\bigr] = \sum\E[X_n]$ for non-negative $X_n$ (so the expected number of events that occur among $A_1, A_2, \dots$ is $\sum P(A_n)$); and the exchange of limits and expectations under domination, used to expand moment generating functions as power series ([[probability/expectation]]) — the tool behind the proof of the central limit theorem ([[probability/limit-theorems]]).
 :::
 
 ::: history
@@ -391,7 +391,7 @@ Henri Lebesgue presented his integral in his 1902 thesis *Intégrale, longueur, 
 
 ## Where this leads
 
-The integral of this chapter is the foundation of modern analysis and probability. In [[measure-theory/lp-spaces]] the integrable functions become the normed space $L^1$, joined by the spaces $L^p$ of functions with $\int\abs f^p < \infty$; we prove they are complete — the Riesz–Fischer theorem, whose proof is a direct application of the monotone convergence theorem and Fatou's lemma — and compare the many ways in which functions can converge. In probability ([[probability/expectation]]) the integral is the **expectation** $\E[X] = \int X\,dP$, and the convergence theorems justify exchanging limits and expectations throughout [[probability/limit-theorems]]. Fubini's theorem on iterated integrals, the Fourier transform ([[pde/fourier-transform]]) and the theory of differential equations all rest on the theorems proved here.
+The integral of this chapter is the foundation of modern analysis and probability. In [[measure-theory/lp-spaces]] the integrable functions become the normed space $L^1$, joined by the spaces $L^p$ of functions with $\int\abs f^p < \infty$; we prove they are complete — the Riesz–Fischer theorem, whose proof is a direct application of the monotone and dominated convergence theorems — and compare the many ways in which functions can converge. In probability ([[probability/expectation]]) the integral is the **expectation** $\E[X] = \int X\,dP$, and the convergence theorems justify exchanging limits and expectations, as in the moment generating functions behind the central limit theorem ([[probability/limit-theorems]]). Fubini's theorem on iterated integrals, the Fourier transform ([[pde/fourier-transform]]) and the theory of differential equations all rest on the theorems proved here.
 
 ::: summary
 - For non-negative simple functions $\int\sum c_k\mathbf{1}_{E_k} = \sum c_k\mu(E_k)$; for non-negative measurable $f$, $\int f$ is the supremum of the integrals of simple functions below $f$.

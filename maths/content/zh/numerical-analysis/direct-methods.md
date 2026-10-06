@@ -1,6 +1,6 @@
 线性方程组$A\mathbf x = \mathbf b$是科学计算的主力。将微分方程离散化、用模型拟合数据、计算样条（[[numerical-analysis/interpolation]]）、执行多元牛顿法的一步、分析电路网络或桥梁结构——最后都归结为一个线性方程组，未知数常常多达数千乃至数百万个。计算机应当怎样求解它们？
 
-当然不是用克拉默法则。按代数余子式展开计算行列式大约需要$n!$次运算，因此一个含$20$个方程的方程组大约需要$20! \approx 2.4\times10^{18}$次运算——即使在高速处理器上也要算几十年。你在[[linear-algebra/linear-systems]]一章中学过的**高斯消去法**大约只需要$\frac23n^3$次运算：$n = 1000$时还不到十亿次运算，只需不到一秒。本章把消去法重新表述为一种**分解**$A = LU$，统计它的运算量，说明为什么必须配合**选主元**才能可靠，并引入**条件数**——它告诉我们计算出的解中有几位数字是可信的。对于对称正定矩阵，**楚列斯基分解**只用一半的运算量就能完成同样的工作。
+当然不是用克拉默法则。按代数余子式展开计算行列式大约需要$n!$次运算，而克拉默法则需要计算$n + 1$个行列式，因此一个含$20$个方程的方程组需要超过$20! \approx 2.4\times10^{18}$次运算——即使在高速处理器上也要算几十年。你在[[linear-algebra/linear-systems]]一章中学过的**高斯消去法**大约只需要$\frac23n^3$次运算：$n = 1000$时还不到十亿次运算，只需不到一秒。本章把消去法重新表述为一种**分解**$A = LU$，统计它的运算量，说明为什么必须配合**选主元**才能可靠，并引入**条件数**——它告诉我们计算出的解中有几位数字是可信的。对于对称正定矩阵，**楚列斯基分解**只用一半的运算量就能完成同样的工作。
 
 本章中，$A$始终是$n\times n$实矩阵，**flop**指一次浮点运算（$+$、$-$、$\times$或$/$）。
 
@@ -141,7 +141,7 @@ $$
 :::
 
 ::: proof {collapsed}
-**证明概要。**在每一步都使用标准模型$\operatorname{fl}(x\circ y) = (x\circ y)(1 + \delta)$（[[numerical-analysis/floating-point#ax-standard-model]]），可以证明计算出的因子满足$\hat L\hat U = PA + E$，其中逐元素地有$\abs{E} \le \gamma_n\abs{\hat L}\abs{\hat U}$；还可以证明，三角方程组的求解在同样的逐分量意义下是向后稳定的，正如[[numerical-analysis/floating-point]]一章习题中的内积那样。把这些结合起来，就得到$(A + \Delta A)\hat{\mathbf x} = \mathbf b$，其中$\abs{\Delta A} \le \gamma_{3n}\abs{\hat L}\abs{\hat U}$（不计置换）。采用部分选主元时$\abs{\hat\ell_{ij}} \le 1$，而$\hat U$的元素以$\rho_n\max\abs{a_{ij}}$为界，由此便得到范数形式的界。参见 Higham 的《数值算法的精度与稳定性》（Accuracy and Stability of Numerical Algorithms）第9章。
+**证明概要。**在每一步都使用标准模型$\operatorname{fl}(x\circ y) = (x\circ y)(1 + \delta)$（[[numerical-analysis/floating-point#ax-standard-model]]），可以证明计算出的因子满足$\hat L\hat U = PA + E$，其中逐元素地有$\abs{E} \le \gamma_n\abs{\hat L}\abs{\hat U}$，这里$\gamma_n = \frac{nu}{1 - nu}$与[[numerical-analysis/floating-point#lem-gamma]]中相同；还可以证明，三角方程组的求解在同样的逐分量意义下是向后稳定的，正如[[numerical-analysis/floating-point]]一章习题中的内积那样。把这些结合起来，就得到$(A + \Delta A)\hat{\mathbf x} = \mathbf b$，其中$\abs{\Delta A} \le \gamma_{3n}\abs{\hat L}\abs{\hat U}$（不计置换）。采用部分选主元时$\abs{\hat\ell_{ij}} \le 1$，而$\hat U$的元素以$\rho_n\max\abs{a_{ij}}$为界，由此便得到范数形式的界。参见 Higham 的《数值算法的精度与稳定性》（Accuracy and Stability of Numerical Algorithms）第9章。
 :::
 
 采用部分选主元时$\rho_n \le 2^{n-1}$，而且这个界是可以达到的：对于对角线和最后一列的元素都是$1$、对角线下方的元素全是$-1$的$10\times10$矩阵，增长因子恰好是$2^9 = 512$。这样的矩阵在实践中极为罕见，实际问题的增长因子几乎总是很小。因此部分选主元是普遍采用的默认做法；计算出的解是某个方程组的精确解，而该方程组的矩阵与$A$大约在第十六位数字上才有差别。这是否足够好，取决于问题本身——这就引出了问题的条件。
@@ -204,10 +204,10 @@ $\det A = 0.0001$，$A^{-1} = 10^4\begin{pmatrix}1.0001 & -1\\ -1 & 1\end{pmatri
 :::
 
 ::: widget transform2d
-matrix: 1, 1; 1, 1.05
+matrix: 1, 1; 1, 1.1
 editable: true
 eigen: false
-caption: 近奇异矩阵$\begin{pmatrix}1 & 1\\ 1 & 1.05\end{pmatrix}$把单位正方形压扁成一个狭长的平行四边形（面积$= \det A = 0.05$）：它把一个方向拉伸约$2$倍，把另一个方向压缩约$40$倍，所以$\kappa_2 \approx 80$。求解$A\mathbf x = \mathbf b$就是要撤销这一变换，而这会把被压扁方向上的小误差极大地放大。编辑矩阵元素，使两列更接近平行或更远离平行，观察面积的变化。
+caption: 近奇异矩阵$\begin{pmatrix}1 & 1\\ 1 & 1.1\end{pmatrix}$把单位正方形压扁成一个狭长的平行四边形（面积$= \det A = 0.1$）：它把一个方向拉伸约$2$倍，把另一个方向压缩约$20$倍，所以$\kappa_2 \approx 42$。求解$A\mathbf x = \mathbf b$就是要撤销这一变换，而这会把被压扁方向上的小误差极大地放大。编辑矩阵元素，使两列更接近平行或更远离平行，观察面积的变化。
 :::
 
 ::: example 希尔伯特矩阵 {#ex-hilbert}
@@ -217,11 +217,11 @@ caption: 近奇异矩阵$\begin{pmatrix}1 & 1\\ 1 & 1.05\end{pmatrix}$把单位�
 
 | $n$ | $4$ | $6$ | $8$ | $10$ | $12$ | $14$ |
 |---|---|---|---|---|---|---|
-| $\kappa_2(H_n)$ | $1.6\times10^4$ | $1.5\times10^7$ | $1.5\times10^{10}$ | $1.6\times10^{13}$ | $1.7\times10^{16}$ | $6\times10^{17}$ |
+| $\kappa_2(H_n)$ | $1.6\times10^4$ | $1.5\times10^7$ | $1.5\times10^{10}$ | $1.6\times10^{13}$ | $1.7\times10^{16}$ | $1.9\times10^{19}$ |
 | 相对误差$\norm{\hat{\mathbf x} - \mathbf 1}_\infty$ | $6.6\times10^{-14}$ | $2.4\times10^{-10}$ | $1.2\times10^{-7}$ | $1.7\times10^{-4}$ | $0.70$ | $8.9$ |
 | 相对残差 | $0$ | $1.8\times10^{-16}$ | $8.2\times10^{-17}$ | $1.5\times10^{-16}$ | $1.4\times10^{-16}$ | $1.4\times10^{-16}$ |
 
-误差与$\kappa_2(H_n)\,u$吻合得非常好；当$n \ge 12$时，没有一位数字是正确的。然而残差$\norm{\mathbf b - H_n\hat{\mathbf x}}/\norm{\mathbf b}$始终处于舍入误差的水平：算法是向后稳定的，已经完美地完成了它的任务。在双精度下，这个问题本身就毫无希望。
+误差随$\kappa_2(H_n)$增长，并且始终低于$\kappa_2(H_n)\,u$，正如经验法则所预言；当$n \ge 12$时，没有一位数字是正确的。（当$n = 14$时，`numpy.linalg.cond`给出的值只有约$6\times10^{17}$：在双精度下，连最小奇异值本身也无法准确算出。）然而残差$\norm{\mathbf b - H_n\hat{\mathbf x}}/\norm{\mathbf b}$始终处于舍入误差的水平：算法是向后稳定的，已经完美地完成了它的任务。在双精度下，这个问题本身就毫无希望。
 :::
 :::
 
@@ -231,7 +231,7 @@ caption: 近奇异矩阵$\begin{pmatrix}1 & 1\\ 1 & 1.05\end{pmatrix}$把单位�
 
 ## 楚列斯基分解
 
-应用中的许多矩阵是**对称正定**（SPD）的：$A = A\T$，且对所有$\mathbf x \ne \mathbf 0$有$\mathbf x\T A\mathbf x > 0$。协方差矩阵、最小二乘问题的正规方程矩阵$A\T A$、结构力学中的刚度矩阵以及离散化的扩散算子都是对称正定的。对于这类矩阵，存在 LU 分解的一种对称形式，它不需要选主元，运算量也只有一半。
+应用中的许多矩阵是**对称正定**（SPD）的：$A = A\T$，且对所有$\mathbf x \ne \mathbf 0$有$\mathbf x\T A\mathbf x > 0$。协方差矩阵、最小二乘问题的正规方程矩阵$A\T A$、结构力学中的刚度矩阵以及离散化的扩散算子，除退化情形（例如$A$的列线性相关）外，都是对称正定的。对于这类矩阵，存在 LU 分解的一种对称形式，它不需要选主元，运算量也只有一半。
 
 ::: theorem 楚列斯基分解 {#thm-cholesky}
 实对称矩阵$A$正定，当且仅当它可以写成$A = LL\T$，其中$L$是对角元为正的下三角矩阵。这种分解是唯一的。
@@ -294,7 +294,7 @@ $$
 :::
 
 ::: history
-消去法见于中国古代经典《九章算术》（约成书于公元前1世纪至公元1世纪），其第八章通过对算筹排成的各列进行运算来求解多元线性方程组。卡尔·弗里德里希·高斯（Carl Friedrich Gauss）在用最小二乘法计算行星轨道时（1809—1810年）系统地使用了消去法。法国军事大地测量学家安德烈-路易·楚列斯基（André-Louis Cholesky）在1910年前后提出了他的分解方法；在他于第一次世界大战中去世之后，贝努瓦（Benoît）少校于1924年将其发表。计算机出现以后，约翰·冯·诺伊曼（John von Neumann）和赫尔曼·戈德斯坦（Herman Goldstine）（1947年）以及艾伦·图灵（Alan Turing）（1948年）分析了消去法中的舍入误差；图灵既提出了 LU 分解的表述，也引入了“条件数”这一术语。詹姆斯·威尔金森（James Wilkinson）的向后误差分析（1961年）解释了列主元消去法为什么如此有效，而 LAPACK 程序库（1992年）则使稳定的实现得以普遍使用。
+消去法见于中国古代经典《九章算术》（约成书于公元前1世纪至公元1世纪），其第八章通过对算筹排成的各列进行运算来求解多元线性方程组。卡尔·弗里德里希·高斯（Carl Friedrich Gauss）在用最小二乘法计算行星轨道时（1809—1810年）系统地使用了消去法。法国军事大地测量学家安德烈-路易·楚列斯基（André-Louis Cholesky）在1910年前后提出了他的分解方法；在他于第一次世界大战中去世之后，贝努瓦（Benoît）少校于1924年将其发表。计算机出现以后，约翰·冯·诺伊曼（John von Neumann）和赫尔曼·戈德斯坦（Herman Goldstine）（1947年）以及艾伦·图灵（Alan Turing）（1948年）分析了消去法中的舍入误差；图灵创造了“条件数”这一术语和“LU”这一简称，不过这种分解本身早在1938年就已由塔德乌什·巴纳赫维奇（Tadeusz Banachiewicz）提出。詹姆斯·威尔金森（James Wilkinson）的向后误差分析（1961年）解释了列主元消去法为什么如此有效，而 LAPACK 程序库（1992年）则使稳定的实现得以普遍使用。
 :::
 
 ## 后续内容
@@ -320,7 +320,7 @@ $$
 :::
 
 ::: exercise 无穷范数 {level=1 check="7"}
-对$A = \begin{pmatrix}1 & -2\\ 3 & 4\end{pmatrix}$，计算$\norm A_\infty$和$\norm A_1$。
+对$A = \begin{pmatrix}1 & -2\\ 3 & 4\end{pmatrix}$，计算$\norm A_\infty$和$\norm A_1$。（输入$\norm A_\infty$。）
 ::: solution
 各行元素绝对值之和为$1 + 2 = 3$和$3 + 4 = 7$，所以$\norm A_\infty = 7$。各列之和为$1 + 3 = 4$和$2 + 4 = 6$，所以$\norm A_1 = 6$。
 :::
@@ -364,7 +364,7 @@ $\ell_{11} = 2$，$\ell_{21} = \frac22 = 1$，$\ell_{22} = \sqrt{5 - 1} = 2$。�
 ::: exercise 无穷范数等于最大行和 {level=3 #exr-inf-norm}
 证明：由$\norm\cdot_\infty$诱导的矩阵范数为$\norm A_\infty = \max_i\sum_j\abs{a_{ij}}$。
 ::: solution
-令$R = \max_i\sum_j\abs{a_{ij}}$。对任意$\mathbf x$，$\abs{(A\mathbf x)_i} = \abs{\sum_ja_{ij}x_j} \le \sum_j\abs{a_{ij}}\norm{\mathbf x}_\infty \le R\norm{\mathbf x}_\infty$，所以$\norm A_\infty \le R$。为证反向不等式，选取达到最大值的一行$k$，令$x_j = \sgn(a_{kj})$（若$a_{kj} = 0$，则取$x_j = 1$）。则$\norm{\mathbf x}_\infty = 1$（设$A \ne 0$），且$(A\mathbf x)_k = \sum_j\abs{a_{kj}} = R$，所以$\norm{A\mathbf x}_\infty \ge R$。因此$\norm A_\infty = R$。
+令$R = \max_i\sum_j\abs{a_{ij}}$。对任意$\mathbf x$，$\abs{(A\mathbf x)_i} = \abs{\sum_ja_{ij}x_j} \le \sum_j\abs{a_{ij}}\norm{\mathbf x}_\infty \le R\norm{\mathbf x}_\infty$，所以$\norm A_\infty \le R$。为证反向不等式，选取达到最大值的一行$k$，令$x_j = \sgn(a_{kj})$（若$a_{kj} = 0$，则取$x_j = 1$）。则$\norm{\mathbf x}_\infty = 1$，且$(A\mathbf x)_k = \sum_j\abs{a_{kj}} = R$，所以$\norm{A\mathbf x}_\infty \ge R$。因此$\norm A_\infty = R$。
 :::
 :::
 
@@ -381,6 +381,6 @@ $\ell_{11} = 2$，$\ell_{21} = \frac22 = 1$，$\ell_{22} = \sqrt{5 - 1} = 2$。�
 ::: exercise 由残差给出误差界 {level=3}
 $A\mathbf x = \mathbf b$的计算解$\hat{\mathbf x}$的残差为$\mathbf r = \mathbf b - A\hat{\mathbf x}$。证明$\dfrac{1}{\kappa(A)}\dfrac{\norm{\mathbf r}}{\norm{\mathbf b}} \le \dfrac{\norm{\mathbf x - \hat{\mathbf x}}}{\norm{\mathbf x}} \le \kappa(A)\dfrac{\norm{\mathbf r}}{\norm{\mathbf b}}$，并解释这两个不等式在实践中意味着什么。
 ::: solution
-我们有$\mathbf e = \mathbf x - \hat{\mathbf x} = A^{-1}\mathbf r$。上界：$\norm{\mathbf e} \le \norm{A^{-1}}\norm{\mathbf r}$，$\norm{\mathbf b} \le \norm A\norm{\mathbf x}$；两式相乘即可。下界：$\norm{\mathbf r} = \norm{A\mathbf e} \le \norm A\norm{\mathbf e}$，$\norm{\mathbf x} = \norm{A^{-1}\mathbf b} \le \norm{A^{-1}}\norm{\mathbf b}$，所以$\frac{\norm{\mathbf r}}{\norm{\mathbf b}} \le \norm A\norm{A^{-1}}\frac{\norm{\mathbf e}}{\norm{\mathbf x}}$。在实践中：对于良态矩阵（$\kappa \approx 1$），相对残差是相对误差的可靠估计；对于病态矩阵，真实误差可能落在残差附近一个宽度为$\kappa^2$的范围内的任何位置，残差小几乎说明不了什么。
+我们有$\mathbf e = \mathbf x - \hat{\mathbf x} = A^{-1}\mathbf r$。上界：$\norm{\mathbf e} \le \norm{A^{-1}}\norm{\mathbf r}$，$\norm{\mathbf b} \le \norm A\norm{\mathbf x}$；两式相乘即可。下界：$\norm{\mathbf r} = \norm{A\mathbf e} \le \norm A\norm{\mathbf e}$，$\norm{\mathbf x} = \norm{A^{-1}\mathbf b} \le \norm{A^{-1}}\norm{\mathbf b}$，所以$\frac{\norm{\mathbf r}}{\norm{\mathbf b}} \le \norm A\norm{A^{-1}}\frac{\norm{\mathbf e}}{\norm{\mathbf x}}$。在实践中：对于良态矩阵（$\kappa \approx 1$），相对残差是相对误差的可靠估计；对于病态矩阵，相对误差可能是相对残差的$1/\kappa$倍到$\kappa$倍之间的任何值，残差小几乎说明不了什么。
 :::
 :::

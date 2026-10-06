@@ -119,7 +119,7 @@ Many important surfaces are quotients of the unit square $Q = [0, 1]^2$ in which
 - The **Klein bottle** $K$: $(0, y)\sim(1, y)$ and $(x, 0)\sim(1 - x, 1)$ — a cylinder whose end circles are glued with a reflection.
 - The **real projective plane** $\R P^2$: $(0, y)\sim(1, 1 - y)$ and $(x, 0)\sim(1 - x, 1)$ — each boundary point is glued to the point symmetric to it through the centre of the square.
 
-A convenient shorthand labels the edges of the square with letters and arrows, read around the boundary: the torus is $aba^{-1}b^{-1}$, the Klein bottle $aba^{-1}b$ and the projective plane $abab$, where an inverse means the edge is traversed against its arrow. These **polygon presentations** are the language of the classification of surfaces in [[topology/surfaces]].
+A convenient shorthand labels the edges of the square with letters and arrows, read around the boundary. Going clockwise from the corner $(0, 0)$, with $a$ the left edge (arrow pointing up) and $b$ the top edge (arrow pointing right), the torus is $aba^{-1}b^{-1}$, the Klein bottle $aba^{-1}b$ and the projective plane $abab$, where an inverse means the edge is traversed against its arrow. These **polygon presentations** are the language of the classification of surfaces in [[topology/surfaces]].
 
 ::: example The torus is a product of circles {#ex-torus}
 Prove that the square with opposite sides identified as above is homeomorphic to $S^1\times S^1$.
@@ -149,7 +149,7 @@ fz: sin(u/2)*sin(v) + cos(u/2)*sin(2*v)
 u: 0, 2pi
 v: 0, 2pi
 color: height
-caption: An immersion of the Klein bottle in $\R^3$: a figure-eight cross-section is carried around a circle while rotating by half a turn, so that after one revolution the figure eight comes back reflected. The surface crosses itself, but the abstract Klein bottle, the quotient of the square by $aba^{-1}b$, does not; it lives without self-intersection in $\R^4$.
+caption: An immersion of the Klein bottle in $\R^3$: a figure-eight cross-section is carried around a circle while rotating by half a turn. After one revolution the figure eight lands on itself, but the point with parameter $v$ arrives where the point $-v$ started, so the two end circles are glued by a reflection, as in the Klein bottle. The surface crosses itself, but the abstract Klein bottle, the quotient of the square by $aba^{-1}b$, does not; it lives without self-intersection in $\R^4$.
 :::
 
 The projective plane has several equally useful descriptions, all homeomorphic:
@@ -212,7 +212,7 @@ The Möbius band was discovered independently by August Ferdinand Möbius and Jo
 Quotients are the main source of examples in the rest of the course. In [[topology/fundamental-group]] we compute the fundamental group of the circle, viewed as the quotient $\R/\Z$, and state those of the torus and the projective plane. In [[topology/surfaces]] every closed surface is presented as a polygon with edges identified in pairs, and the classification theorem says that the sphere, the tori and the projective planes and their connected sums are the only possibilities. Quotients by group actions — orbit spaces such as $\R^n/\Z^n$ and $S^n/\set{\pm1}$ — are central in geometry and connect topology with [[abstract-algebra/group-actions]].
 
 ::: summary
-- $T_1$: points are closed; Hausdorff: distinct points have disjoint neighbourhoods; regular and normal spaces separate points and closed sets. Metric spaces satisfy all of these; the cofinite topology is $T_1$ but not Hausdorff.
+- $T_1$: points are closed; Hausdorff: distinct points have disjoint neighbourhoods; regular and normal spaces separate points and closed sets. Metric spaces satisfy all of these; the cofinite topology on an infinite set is $T_1$ but not Hausdorff.
 - In Hausdorff spaces limits of sequences are unique; subspaces and products of Hausdorff spaces are Hausdorff; $X$ is Hausdorff iff the diagonal is closed in $X\times X$.
 - The quotient topology on $X/{\sim}$ makes $U$ open iff $q^{-1}(U)$ is open; open sets of the quotient correspond to saturated open sets of $X$.
 - Universal property: $g\colon X/{\sim}\to Z$ is continuous iff $g\circ q$ is; continuous maps constant on classes descend to the quotient.

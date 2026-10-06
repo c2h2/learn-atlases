@@ -290,7 +290,7 @@ The roots of unity are balanced around the origin: their centre of mass is $0$. 
 mode: roots
 n: 5
 z: 1.5, 1
-caption: The $n$ solutions of $z^n = w$ sit at the corners of a regular $n$-gon of radius $\lvert w\rvert^{1/n}$. Change $n$ and drag the point $w$: moving $w$ once around the origin rotates the polygon by only $2\pi/n$, so each root moves to the position of its neighbour — the first glimpse of a branch point, explored in [[complex-analysis/elementary-functions]].
+caption: The figure shows a point $z$ and its $n$-th roots $w_0, \dots, w_{n-1}$, the solutions of $w^n = z$ (the letters are swapped relative to [[#thm-roots]]). They sit at the corners of a regular $n$-gon of radius $\lvert z\rvert^{1/n}$. Change $n$, then drag $z$ once around the origin: followed continuously, the polygon turns by only $2\pi/n$ and each root ends at the position of its neighbour (the labels $w_k$, computed from $\Arg z$, jump back as $z$ crosses the negative real axis) — the first glimpse of a branch point, explored in [[complex-analysis/elementary-functions]].
 :::
 
 ::: example Fourth roots of −16 {#ex-fourth-roots}
@@ -333,7 +333,7 @@ Check: the sum of the roots is $3 + i$ and their product is $(2 - i)(1 + 2i) = 2
 :::
 :::
 
-The same method finds $\sqrt[3]{2 + 11i}$ in Bombelli's problem: one cube root is $2 + i$, and by [[#thm-roots]] the other two are $(2+i)\omega$ and $(2 + i)\omega^2$ with $\omega = e^{2\pi i/3}$. Pairing each cube root of $2 + 11i$ with its conjugate, as Cardano's formula requires, yields all three real roots of $x^3 = 15x + 4$: $4$ and $-2 \pm \sqrt3$.
+For the cube root $\sqrt[3]{2 + 11i}$ in Bombelli's problem the same comparison only goes round in a circle: with $u^2 + v^2 = \abs{2 + 11i}^{2/3} = 5$, the real parts give $4u^3 - 15u - 2 = 0$, which is the original cubic with $x = 2u$. So one falls back on guessing, as Bombelli did (this cubic has the rational root $u = 2$, and then $v = 1$): one cube root is $2 + i$, and by [[#thm-roots]] the other two are $(2+i)\omega$ and $(2 + i)\omega^2$ with $\omega = e^{2\pi i/3}$. Pairing each cube root of $2 + 11i$ with its conjugate, as Cardano's formula requires, yields all three real roots of $x^3 = 15x + 4$: $4$ and $-2 \pm \sqrt3$.
 
 ::: warning √ is ambiguous in ℂ
 Every non-zero complex number has *two* square roots, and there is no way to pick one of them for every $z$ that makes $\sqrt{zw} = \sqrt z\sqrt w$ true. The "proof" $-1 = i \cdot i = \sqrt{-1}\sqrt{-1} = \sqrt{(-1)(-1)} = \sqrt1 = 1$ fails precisely at the step $\sqrt{a}\sqrt{b} = \sqrt{ab}$, which is only valid for non-negative reals. When you write $\sqrt{w}$ for complex $w$, say which root you mean, or work with the set of both roots.

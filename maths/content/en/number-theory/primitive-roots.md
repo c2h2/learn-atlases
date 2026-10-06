@@ -26,7 +26,7 @@ Let $\gcd(a, n) = 1$ and $m = \ord_n(a)$. Then
 3. Euler's theorem gives $a^{\varphi(n)} \equiv 1$, so $m \mid \varphi(n)$ by part 1.
 :::
 
-Part 3 makes orders easy to find: only the divisors of $\varphi(n)$ need testing. For instance, to find $\ord_{41}(10)$ we test the divisors of $40$; $10^1, 10^2 = 100 \equiv 18$ are not $1$, but $10^5 = 100000 = 41\cdot 2439 + 1 \equiv 1$, so $\ord_{41}(10) = 5$.
+Part 3 makes orders easy to find: only the divisors of $\varphi(n)$ need testing. For instance, to find $\ord_{41}(10)$ we test the divisors $1, 2, 4, 5, \dots$ of $40$ in turn: $10^1$, $10^2 = 100 \equiv 18$ and $10^4 \equiv 18^2 = 324 \equiv 37$ are not $1$, but $10^5 = 100000 = 41\cdot 2439 + 1 \equiv 1$, so $\ord_{41}(10) = 5$.
 
 ::: theorem Order of a power {#thm-order-power}
 If $\ord_n(a) = m$, then for every $k \ge 1$
@@ -176,7 +176,7 @@ The least primitive roots of the first primes are:
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | least $g$ | $2$ | $2$ | $3$ | $2$ | $2$ | $3$ | $2$ | $5$ | $2$ | $3$ | $2$ | $6$ | $3$ |
 
-The least primitive root is usually very small — it is $2$ for about $37\%$ of primes — but it has no simple pattern, and no formula for it is known. In practice one tests $g = 2, 3, 5, 6, \dots$ with [[#thm-primitive-root-test]], which requires knowing the prime factors of $p - 1$; that is why cryptographic software often chooses primes $p$ for which $p - 1 = 2q$ with $q$ prime, so that only two conditions need checking.
+The least primitive root is usually very small — in numerical experiments it is $2$ for about $37\%$ of primes — but it has no simple pattern, and no formula for it is known. In practice one tests $g = 2, 3, 5, 6, \dots$ with [[#thm-primitive-root-test]], which requires knowing the prime factors of $p - 1$; this is one reason why cryptographic software often chooses primes $p$ for which $p - 1 = 2q$ with $q$ prime: then only two conditions need checking.
 
 ::: quiz
 How many primitive roots are there modulo $23$?
@@ -202,7 +202,7 @@ A primitive root modulo $n \ge 2$ exists if and only if $n = 2$, $4$, $p^k$ or $
 
 (ii) $n = n_1n_2$ with $\gcd(n_1, n_2) = 1$ and $n_1, n_2 > 2$. Then $\varphi(n_1)$ and $\varphi(n_2)$ are both even ([[number-theory/fermat-euler#exr-4-7]]). Let $e = \varphi(n_1)\varphi(n_2)/2 = \varphi(n)/2$. Since $\varphi(n_1) \mid e$ and $\varphi(n_2) \mid e$, Euler's theorem gives $a^e \equiv 1$ modulo $n_1$ and modulo $n_2$, hence modulo $n$.
 
-Every $n$ not in the list falls under (i) or (ii): if $n = 2^am$ with $m$ odd, then either $m = 1$ and $a \ge 3$ (case (i)); or $m$ has two distinct prime factors $p, q$, and $n = p^{v_p(n)}\cdot\frac{n}{p^{v_p(n)}}$ with both factors greater than $2$; or $m = p^k$ and $a \ge 2$, so $n = 2^a\cdot p^k$ with $2^a \ge 4$. (Case $a = 1$, $m = p^k$ is $2p^k$, in the list.)
+Every $n$ not in the list falls under (i) or (ii): if $n = 2^am$ with $m$ odd, then either $m = 1$ and $a \ge 3$ (case (i)); or $m$ has two distinct prime factors $p, q$, and $n = p^{v_p(n)}\cdot\frac{n}{p^{v_p(n)}}$ with both factors greater than $2$; or $m = p^k$ and $a \ge 2$, so $n = 2^a\cdot p^k$ with $2^a \ge 4$. (The remaining cases, $m = 1$ with $a = 1, 2$ and $m = p^k$ with $a = 0, 1$, give $n = 2, 4, p^k, 2p^k$, which are in the list.)
 
 *Existence* (sketch). For $n = 2, 4$ the residues $1$ and $3$ work. For an odd prime $p$, take a primitive root $g$ modulo $p$. One checks that $g$ or $g + p$ satisfies $g^{p-1} \not\equiv 1 \pmod{p^2}$, and that such a $g$ is a primitive root modulo every power $p^k$: its order modulo $p^k$ is a multiple of $p - 1$ dividing $p^{k-1}(p-1)$, and an induction like the one in (i) shows $g^{p^{k-2}(p-1)} \not\equiv 1 \pmod{p^k}$. Finally, a primitive root modulo $p^k$ that is odd (replace $g$ by $g + p^k$ if necessary) is a primitive root modulo $2p^k$, because $\varphi(2p^k) = \varphi(p^k)$. Full details are in Niven, Zuckerman and Montgomery, §2.8, or Ireland and Rosen, Chapter 4.
 :::
@@ -298,7 +298,7 @@ Leonhard Euler introduced the term "primitive root" in 1773 and gave an argument
 
 ## Where this leads
 
-Primitive roots give a quick route to the next chapter: $a$ is a square modulo $p$ exactly when its index is even, which leads to Euler's criterion in [[number-theory/quadratic-reciprocity]]. The hardness of discrete logarithms underlies Diffie–Hellman and ElGamal in [[number-theory/cryptography]]. In abstract algebra, the existence of primitive roots modulo $p$ is the statement that $U(p)$ is cyclic, a special case of the theorem that the multiplicative group of every finite field is cyclic ([[abstract-algebra/fields-galois#thm-cyclic-mult]]).
+Primitive roots give a quick route to the next chapter: $a$ is a square modulo $p$ exactly when its index is even, which leads to Euler's criterion in [[number-theory/quadratic-reciprocity]]. The hardness of discrete logarithms underlies the Diffie–Hellman key exchange in [[number-theory/cryptography]], and also the ElGamal cryptosystem built from it. In abstract algebra, the existence of primitive roots modulo $p$ is the statement that $U(p)$ is cyclic, a special case of the theorem that the multiplicative group of every finite field is cyclic ([[abstract-algebra/fields-galois#thm-cyclic-mult]]).
 
 ::: summary
 - $\ord_n(a)$ is the least $k \ge 1$ with $a^k \equiv 1$; $a^k \equiv 1$ iff $\ord_n(a) \mid k$, and $\ord_n(a) \mid \varphi(n)$ ([[#thm-order-divides]]).
@@ -306,7 +306,7 @@ Primitive roots give a quick route to the next chapter: $a$ is a square modulo $
 - **Lagrange**: a polynomial congruence of degree $d$ modulo a prime has at most $d$ solutions; $x^d \equiv 1$ has exactly $d$ when $d \mid p - 1$.
 - **Every prime has a primitive root**; there are exactly $\varphi(d)$ residues of order $d$ for each $d \mid p-1$, so $\varphi(p-1)$ primitive roots.
 - $g$ is a primitive root mod $p$ iff $g^{(p-1)/q} \not\equiv 1$ for every prime $q \mid p - 1$.
-- Primitive roots exist exactly for $n = 2, 4, p^k, 2p^k$ ($p$ odd); none modulo $8$ or modulo numbers with two odd prime factors.
+- Primitive roots exist exactly for $n = 2, 4, p^k, 2p^k$ ($p$ odd); none modulo $8$ or modulo numbers with two distinct odd prime factors.
 - **Indices** (discrete logarithms) turn multiplication into addition modulo $\varphi(n)$ and solve congruences like $x^k \equiv a$ and $a^x \equiv b$; computing them for large $p$ is believed hard, and baby-step giant-step takes about $\sqrt p$ steps.
 :::
 

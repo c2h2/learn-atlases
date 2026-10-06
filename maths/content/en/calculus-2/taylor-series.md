@@ -307,7 +307,7 @@ $$
 using $(n+1)\binom{\alpha}{n+1} = (\alpha - n)\binom\alpha n$. Now $h(x) = g(x)(1+x)^{-\alpha}$ has $h'(x) = (1+x)^{-\alpha-1}\bigl[(1+x)g'(x) - \alpha g(x)\bigr] = 0$ on $(-1, 1)$, so $h$ is constant, equal to $h(0) = 1$. Hence $g(x) = (1+x)^\alpha$.
 :::
 
-For example, with $\alpha = \frac12$ and $\alpha = -\frac12$,
+For example, $\alpha = \frac12$ gives the first series below, and $\alpha = -\frac12$ with $-x^2$ in place of $x$ gives the second:
 
 $$
 \sqrt{1+x} = 1 + \frac x2 - \frac{x^2}{8} + \frac{x^3}{16} - \cdots, \qquad \frac{1}{\sqrt{1 - x^2}} = 1 + \frac{x^2}{2} + \frac{3x^4}{8} + \frac{5x^6}{16} + \cdots .

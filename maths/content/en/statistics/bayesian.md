@@ -51,7 +51,7 @@ $$
 where $B(\alpha,\beta) = \int_0^1t^{\alpha-1}(1-t)^{\beta-1}\,dt = \dfrac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}$. Its mean is $\dfrac{\alpha}{\alpha+\beta}$ and its variance is $\dfrac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$.
 :::
 
-The family is flexible: $\operatorname{Beta}(1,1)$ is the uniform distribution, $\operatorname{Beta}(\alpha,\beta)$ with $\alpha = \beta$ is symmetric about $\tfrac12$, and larger $\alpha+\beta$ means a more concentrated distribution. It is also exactly what a binomial likelihood turns into a posterior.
+The family is flexible: $\operatorname{Beta}(1,1)$ is the uniform distribution, $\operatorname{Beta}(\alpha,\beta)$ with $\alpha = \beta$ is symmetric about $\tfrac12$, and for a given mean, larger $\alpha+\beta$ means a more concentrated distribution. It is also exactly what a binomial likelihood turns into a posterior.
 
 ::: theorem Beta prior, binomial data {#thm-beta-binomial}
 If $p\sim\operatorname{Beta}(\alpha,\beta)$ and, given $p$, $X\sim\Bin(n,p)$ is observed to equal $s$, then the posterior distribution is
@@ -98,7 +98,7 @@ a: 1
 b: 1
 successes: 7
 trials: 10
-caption: Beta prior (here uniform) and the posterior after $7$ successes in $10$ trials, $\operatorname{Beta}(8,4)$. Increase the number of trials keeping the proportion at $70\%$: the posterior narrows around $0.7$. Then try a sceptical prior such as $\operatorname{Beta}(10,10)$, centred at $\tfrac12$: with $10$ trials it pulls the posterior noticeably towards $0.5$, with $200$ trials hardly at all.
+caption: Beta prior (here uniform) and the posterior after $7$ successes in $10$ trials, $\operatorname{Beta}(8,4)$. Increase the number of trials keeping the proportion at $70\%$: the posterior narrows around $0.7$. Then try a sceptical prior such as $\operatorname{Beta}(10,10)$, centred at $\tfrac12$: with $10$ trials it pulls the posterior mean from $0.67$ down to $0.57$, but with $50$ trials ($35$ successes) only from $0.69$ to $0.64$; the more data, the less the prior matters.
 :::
 
 The posterior also predicts future observations. The probability that the next patient is cured, given the data, averages the cure probability $p$ over the posterior: $\Prob(\text{next cured}\mid s) = \E(p\mid s)$, by the law of total probability (in its continuous form, [[probability/expectation#thm-tower]]).
@@ -208,7 +208,7 @@ dist: beta
 params: alpha=8, beta=4
 a: 0.5
 b: 1
-caption: The $\operatorname{Beta}(8,4)$ posterior for the cure rate of the new drug, with $\Prob(p>0.5\mid\text{data}) = 227/256\approx0.887$ shaded. Move the left end of the shaded region to $0.390$: the interval from $0.390$ to $0.891$, which carries $95\%$ of the posterior probability, is the $95\%$ equal-tailed credible interval.
+caption: The $\operatorname{Beta}(8,4)$ posterior for the cure rate of the new drug, with $\Prob(p>0.5\mid\text{data}) = 227/256\approx0.887$ shaded. Drag the ends of the shaded region to $0.390$ and $0.891$: this interval carries $95\%$ of the posterior probability and is the $95\%$ equal-tailed credible interval.
 :::
 
 ## Comparing hypotheses with Bayes factors {#bayes-factors}
@@ -264,7 +264,7 @@ A probability statement about $p$ given the data needs a probability distributio
 :::
 
 ::: history
-Thomas Bayes's posthumous essay of 1763 solved the problem of inferring a binomial probability with a uniform prior, essentially the beta–binomial model of this chapter. Pierre-Simon Laplace independently developed "inverse probability" from 1774 onwards, derived the rule of succession, and applied Bayesian reasoning to problems from astronomy to the ratio of male to female births. In the early twentieth century Fisher's criticism of arbitrary priors pushed inverse probability out of favour, but it was kept alive by Harold Jeffreys, whose *Theory of Probability* (1939) introduced reference priors and Bayes factors, and given subjectivist foundations by Frank Ramsey, Bruno de Finetti and Leonard Savage (*The Foundations of Statistics*, 1954). During the Second World War Alan Turing and his colleagues at Bletchley Park used sequential Bayes factors, measured in units Turing called "bans", to help break the Enigma cipher. The practical revolution came with computing: the Metropolis algorithm (1953), generalised by Hastings (1970), was brought to statistics by Alan Gelfand and Adrian Smith in 1990.
+Thomas Bayes's posthumous essay of 1763 solved the problem of inferring a binomial probability with a uniform prior, essentially the beta–binomial model of this chapter. Pierre-Simon Laplace independently developed "inverse probability" from 1774 onwards, derived the rule of succession, and applied Bayesian reasoning to problems from astronomy to the ratio of male to female births. In the early twentieth century Fisher's criticism of arbitrary priors pushed inverse probability out of favour, but it was kept alive by Harold Jeffreys, whose *Theory of Probability* (1939) proposed priors to represent ignorance and developed Bayes factors, and given subjectivist foundations by Frank Ramsey, Bruno de Finetti and Leonard Savage (*The Foundations of Statistics*, 1954). During the Second World War Alan Turing and his colleagues at Bletchley Park used sequential Bayes factors, measured in units Turing called "bans", to help break the Enigma cipher. The practical revolution came with computing: the Metropolis algorithm (1953), generalised by Hastings (1970), was brought to statistics by Alan Gelfand and Adrian Smith in 1990.
 :::
 
 ## Where this leads {#where-next}
@@ -350,7 +350,7 @@ which is minimised exactly at $a = m$, with minimum $\Var(\theta\mid x)$. (This 
 ::: exercise Only the sample mean matters {level=3}
 In the normal–normal model of [[#thm-normal-normal]], show that the posterior given all of $x_1,\ldots,x_n$ is the same as the posterior given only $\bar x$, treated as a single observation from $\Normal(\theta,\sigma^2/n)$.
 ::: solution
-Given $\theta$, $\bar X\sim\Normal(\theta,\sigma^2/n)$, so a single observation $\bar x$ with variance $\sigma^2/n$ has likelihood proportional to $\exp\bigl(-\frac{n}{2\sigma^2}(\theta-\bar x)^2\bigr)$. The proof of [[#thm-normal-normal]] showed that the likelihood of the full sample is proportional (as a function of $\theta$) to exactly the same expression. Since posterior $\propto$ likelihood $\times$ prior, the two posteriors coincide. In the language of [[statistics/estimation]], $\bar X$ is a **sufficient statistic**: it carries all the information in the sample about $\theta$.
+Given $\theta$, $\bar X\sim\Normal(\theta,\sigma^2/n)$, so a single observation $\bar x$ with variance $\sigma^2/n$ has likelihood proportional to $\exp\bigl(-\frac{n}{2\sigma^2}(\theta-\bar x)^2\bigr)$. The proof of [[#thm-normal-normal]] showed that the likelihood of the full sample is proportional (as a function of $\theta$) to exactly the same expression. Since posterior $\propto$ likelihood $\times$ prior, the two posteriors coincide. In the language of mathematical statistics (see the end of [[statistics/estimation]]), $\bar X$ is a **sufficient statistic**: it carries all the information in the sample about $\theta$.
 :::
 :::
 

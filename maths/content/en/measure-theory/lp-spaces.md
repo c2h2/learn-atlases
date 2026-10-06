@@ -71,7 +71,7 @@ $$ {#eq-holder}
 :::
 
 ::: proof
-If $p = 1$ and $q = \infty$: $\abs{fg} \le \abs f\,\norm g_\infty$ a.e., and integrating gives the claim. Now let $1 < p < \infty$. If $\norm f_p = 0$ or $\norm g_q = 0$, then $f = 0$ or $g = 0$ a.e., so $fg = 0$ a.e. and both sides vanish. Otherwise put $F = \abs f/\norm f_p$ and $G = \abs g/\norm g_q$, so that $\int F^p = \int G^q = 1$. By Young's inequality at each point, $FG \le \frac{F^p}{p} + \frac{G^q}{q}$, and integrating,
+If $p = 1$ and $q = \infty$: $\abs{fg} \le \abs f\,\norm g_\infty$ a.e., and integrating gives the claim; the case $p = \infty$, $q = 1$ is the same with $f$ and $g$ exchanged. Now let $1 < p < \infty$. If $\norm f_p = 0$ or $\norm g_q = 0$, then $f = 0$ or $g = 0$ a.e., so $fg = 0$ a.e. and both sides vanish. Otherwise put $F = \abs f/\norm f_p$ and $G = \abs g/\norm g_q$, so that $\int F^p = \int G^q = 1$. By Young's inequality at each point, $FG \le \frac{F^p}{p} + \frac{G^q}{q}$, and integrating,
 
 $$
 \int FG\,d\mu \le \frac1p + \frac1q = 1.
@@ -80,7 +80,7 @@ $$
 Multiplying by $\norm f_p\norm g_q$ gives [[#eq-holder]].
 :::
 
-The case $p = q = 2$ is the **Cauchy–Schwarz inequality** $\int\abs{fg} \le \norm f_2\norm g_2$, which says that $\inner{f}{g} = \int fg\,d\mu$ is an inner product on $L^2$ with $\norm{f}_2 = \sqrt{\inner ff}$ ([[linear-algebra/inner-products]]). It gives a first glimpse of how $L^p$ norms control functions.
+The case $p = q = 2$ is the **Cauchy–Schwarz inequality** $\int\abs{fg} \le \norm f_2\norm g_2$, which shows that $\inner{f}{g} = \int fg\,d\mu$ is defined for all $f, g \in L^2$; it is an inner product on $L^2$, with $\norm{f}_2 = \sqrt{\inner ff}$ ([[linear-algebra/inner-products]]). It gives a first glimpse of how $L^p$ norms control functions.
 
 ::: example Square-integrable derivatives {#ex-holder-continuity}
 Let $f \in L^2(0, 1)$ and $F(x) = \int_0^x f\,d\lambda$. Show that $\abs{F(x) - F(y)} \le \norm{f}_2\,\abs{x - y}^{1/2}$ for all $x, y \in [0, 1]$.
@@ -91,7 +91,7 @@ $$
 \abs{F(x) - F(y)} = \Bigl\lvert\int_0^1 f\,\mathbf{1}_{[y,x]}\,d\lambda\Bigr\rvert \le \norm{f}_2\,\norm{\mathbf{1}_{[y, x]}}_2 = \norm f_2\,(x - y)^{1/2}.
 $$
 
-So $F$ is Hölder continuous with exponent $\tfrac12$, a quantitative improvement on the Lipschitz bound of [[real-analysis/riemann-integral#thm-ftc1]], which needs $f$ bounded. With $f \in L^p$ the same argument with Hölder's inequality gives exponent $1 - \frac1p$.
+So $F$ is Hölder continuous with exponent $\tfrac12$: a weaker bound than the Lipschitz bound of [[real-analysis/riemann-integral#thm-ftc1]], which needs $f$ bounded, but one that holds for every $f \in L^2$, bounded or not. With $f \in L^p$ the same argument with Hölder's inequality gives exponent $1 - \frac1p$.
 :::
 :::
 
@@ -157,7 +157,7 @@ The exponent $p$ decides how errors are weighted. In $\norm{f - g}_1$ every unit
 ::: widget metricballs
 metrics: 1; 2; inf
 radius: 1
-caption: The unit balls $\set{x : \norm{x}_p < 1}$ in $\R^2$ — the space $L^p$ for counting measure on two points. Slide $p$ from $1$ to $\infty$: the ball swells from the diamond to the square, and it is always **convex**. Minkowski's inequality is exactly this convexity. For $p < 1$ the "ball" $\lvert x_1\rvert^p + \lvert x_2\rvert^p < 1$ would be star-shaped, with inward-curving sides, and the triangle inequality would fail.
+caption: The unit balls $\set{x : \norm{x}_p < 1}$ in $\R^2$ — the space $L^p$ for counting measure on two points. Slide $p$ from $1$ to $\infty$: the ball swells from the diamond to the square, and it is always **convex**. Minkowski's inequality is exactly this convexity. Slide below $p = 1$: the "ball" $\lvert x_1\rvert^p + \lvert x_2\rvert^p < 1$ becomes star-shaped, with inward-curving sides, the dashed red chord between two of its boundary points leaves it, and the triangle inequality fails.
 :::
 
 ::: warning No triangle inequality below p = 1
@@ -168,20 +168,20 @@ For $0 < p < 1$ the formula $\bigl(\int\abs f^p\bigr)^{1/p}$ still makes sense, 
 Let $f \in L^2(0, 1)$. Which bound on $\int_0^1\abs{f(x)}\sqrt x\,dx$ follows from the Cauchy–Schwarz inequality?
 - [x] $\norm f_2/\sqrt2$
 - [ ] $\norm f_2/2$
-- [ ] $\norm f_1$
+- [ ] $\norm f_2/\sqrt3$
 - [ ] $\norm{f}_2^2$
 ::: solution
-By Cauchy–Schwarz, $\int_0^1\abs f\sqrt x\,dx \le \norm f_2\bigl(\int_0^1x\,dx\bigr)^{1/2} = \norm f_2\cdot\frac{1}{\sqrt2}$. The other bounds do not follow: for instance $\norm f_2^2$ has the wrong homogeneity (doubling $f$ should double the bound, not quadruple it).
+By Cauchy–Schwarz, $\int_0^1\abs f\sqrt x\,dx \le \norm f_2\bigl(\int_0^1x\,dx\bigr)^{1/2} = \norm f_2\cdot\frac{1}{\sqrt2}$. The other bounds are false in general. For $f(x) = \sqrt x$, where Cauchy–Schwarz is an equality, the integral is $\frac12 = \norm f_2/\sqrt2$, which exceeds $\norm f_2/2$ and $\norm f_2/\sqrt3$; and $\norm f_2^2$ has the wrong homogeneity (doubling $f$ should double the bound, not quadruple it).
 :::
 :::
 
 ::: remark Duality
-Hölder's inequality says that each $g \in L^q$ defines a linear functional $\Lambda_g(f) = \int fg\,d\mu$ on $L^p$ with $\abs{\Lambda_g(f)} \le \norm g_q\norm f_p$. The equality case of Young's inequality shows that the bound is sharp: for $1 < p < \infty$ the function $f = \abs g^{q-1}\sgn g$ gives equality, so the norm of $\Lambda_g$ is exactly $\norm g_q$. The **Riesz representation theorem** states the converse: for $1 \le p < \infty$ (and $\mu$ σ-finite when $p = 1$) every bounded linear functional on $L^p$ is of the form $\Lambda_g$ for a unique $g \in L^q$, so the dual space of $L^p$ is $L^q$. Its proof uses the Radon–Nikodym theorem; see Folland, *Real Analysis*, chapter 6. For $p = \infty$ the dual is strictly larger than $L^1$.
+Hölder's inequality says that each $g \in L^q$ defines a linear functional $\Lambda_g(f) = \int fg\,d\mu$ on $L^p$ with $\abs{\Lambda_g(f)} \le \norm g_q\norm f_p$. The equality case of Young's inequality shows that the bound is sharp: for $1 < p < \infty$ the function $f = \abs g^{q-1}\sgn g$ gives equality, so the norm of $\Lambda_g$ is exactly $\norm g_q$. The **Riesz representation theorem** states the converse: for $1 \le p < \infty$ (and $\mu$ σ-finite when $p = 1$) every bounded linear functional on $L^p$ is of the form $\Lambda_g$ for a unique $g \in L^q$, so the dual space of $L^p$ is $L^q$. Its proof uses the Radon–Nikodym theorem; see Folland, *Real Analysis*, chapter 6. For $p = \infty$ the dual is in general strictly larger than $L^1$ (for Lebesgue measure, for instance).
 :::
 
 ## Completeness: the Riesz–Fischer theorem
 
-The decisive property of $L^p$ is that Cauchy sequences converge. The proof uses a criterion valid in every normed space, and both convergence theorems of the previous chapter.
+The decisive property of $L^p$ is that Cauchy sequences converge. The proof uses a criterion valid in every normed space, and the monotone and dominated convergence theorems of the previous chapter.
 
 ::: lemma Absolutely convergent series {#lem-abs-series}
 Let $V$ be a normed space. If every series $\sum v_k$ in $V$ with $\sum\norm{v_k} < \infty$ converges in $V$, then $V$ is complete.
@@ -206,11 +206,11 @@ Hence $G < \infty$ almost everywhere, and at every such point the series $\sum g
 
 *The subsequence.* If $f_n \to f$ in $L^p$, the sequence is Cauchy, and the proof of [[#lem-abs-series]] together with the argument above produces a subsequence $f_{n_k}$ that converges almost everywhere (the partial sums $f_{n_{k+1}}$ of an a.e. absolutely convergent series) and in $L^p$ to the same function $S$. Limits in a metric space are unique, so $S = f$ in $L^p$, that is $S = f$ a.e., and $f_{n_k} \to f$ a.e.
 
-*Case $p = \infty$.* Let $(f_n)$ be Cauchy in $L^\infty$. For each $n$ the set where $\abs{f_n} > \norm{f_n}_\infty$ is null, and for each pair $m, n$ so is the set where $\abs{f_m - f_n} > \norm{f_m - f_n}_\infty$; let $N$ be the union of these countably many null sets. Off $N$ the sequence is uniformly Cauchy, so it converges uniformly to a bounded function $f$ ([[real-analysis/uniform-convergence#thm-uniform-cauchy]]); setting $f = 0$ on $N$, we get $\norm{f_n - f}_\infty \to 0$.
+*Case $p = \infty$.* Let $(f_n)$ be Cauchy in $L^\infty$. For each $n$ the set where $\abs{f_n} > \norm{f_n}_\infty$ is null, and for each pair $m, n$ so is the set where $\abs{f_m - f_n} > \norm{f_m - f_n}_\infty$; let $N$ be the union of these countably many null sets. Off $N$ the sequence is uniformly Cauchy, so it converges uniformly to a bounded function $f$ ([[real-analysis/uniform-convergence#thm-uniform-cauchy]]); setting $f = 0$ on $N$, we get $\norm{f_n - f}_\infty \to 0$. Similarly, if $f_n \to f$ in $L^\infty$, then off a null set $\abs{f_n - f} \le \norm{f_n - f}_\infty$ for every $n$, so for $p = \infty$ the whole sequence converges to $f$ almost everywhere.
 :::
 
 ::: remark Completions and density
-In a complete space, a dense subspace determines everything. For $1 \le p < \infty$ the simple functions vanishing outside sets of finite measure are dense in $L^p(\mu)$: for $f \ge 0$ the approximations $\varphi_n \uparrow f$ of [[measure-theory/measurable-functions#thm-simple-approx]] satisfy $\abs{f - \varphi_n}^p \le f^p$, so $\norm{f - \varphi_n}_p \to 0$ by dominated convergence. For Lebesgue measure one can go further, using the regularity of Lebesgue measure ([[measure-theory/lebesgue-measure#thm-regularity]]) to replace measurable sets by finite unions of intervals: step functions, and continuous functions vanishing outside bounded intervals, are dense in $L^p(\R)$ for $p < \infty$. In the language of [[real-analysis/metric-spaces]], $L^1(a, b)$ is the completion of the incomplete space $(C[a,b], d_1)$ of [[real-analysis/metric-spaces#ex-incomplete]]. (For $p = \infty$ density fails: a uniform limit of continuous functions is continuous, so $\mathbf{1}_{[0, 1/2]}$ is not in the closure of $C[0, 1]$.)
+In a complete space, a dense subspace determines everything. For $1 \le p < \infty$ the simple functions vanishing outside sets of finite measure are dense in $L^p(\mu)$: for $f \ge 0$ the approximations $\varphi_n \uparrow f$ of [[measure-theory/measurable-functions#thm-simple-approx]] satisfy $\abs{f - \varphi_n}^p \le f^p$, so $\norm{f - \varphi_n}_p \to 0$ by dominated convergence; each $\varphi_n$ vanishes outside $\set{f \ge 2^{-n}}$, which has finite measure by Markov's inequality, and a general $f$ is handled through $f = f^+ - f^-$. For Lebesgue measure one can go further, using the regularity of Lebesgue measure ([[measure-theory/lebesgue-measure#thm-regularity]]) to replace measurable sets by finite unions of intervals: step functions, and continuous functions vanishing outside bounded intervals, are dense in $L^p(\R)$ for $p < \infty$. In the language of [[real-analysis/metric-spaces]], $L^1(a, b)$ is the completion of the incomplete space $(C[a,b], d_1)$ of [[real-analysis/metric-spaces#ex-incomplete]]. (For $p = \infty$ density fails: a uniform limit of continuous functions is continuous, so $\mathbf{1}_{[0, 1/2]}$ is not in the closure of $C[0, 1]$.)
 :::
 
 ::: application Fourier series and least squares
@@ -237,7 +237,7 @@ $$
 \mu\bigl(\set{\abs{f_n - f} > \eps}\bigr) \le \frac{1}{\eps^p}\int\abs{f_n - f}^p\,d\mu = \frac{\norm{f_n - f}_p^p}{\eps^p} \to 0.
 $$ {#eq-chebyshev}
 
-On a finite measure space, almost-everywhere convergence also implies convergence in measure ([[#exr-5-7]]). Convergence in measure does not imply almost-everywhere convergence — but it almost does.
+On a finite measure space, almost-everywhere convergence also implies convergence in measure ([[#exr-5-7]]; it also follows at once from Egorov's theorem ([[measure-theory/measurable-functions#thm-egorov]]), since $\abs{f_n - f} \le \eps$ for all large $n$ outside a set of arbitrarily small measure). Convergence in measure does not imply almost-everywhere convergence — but it almost does.
 
 ::: theorem Riesz's subsequence theorem {#thm-riesz-subsequence}
 If $f_n \to f$ in measure, then some subsequence $f_{n_k}$ converges to $f$ almost everywhere.
@@ -256,7 +256,7 @@ As $n$ runs from $2^k$ to $2^{k+1} - 1$, the interval of $f_n$ (of length $2^{-k
 
 *Convergence in $L^p$ and in measure.* $\norm{f_n}_p = \bigl(2^{-k}\bigr)^{1/p} \to 0$, since $k \to \infty$ as $n \to \infty$. By [[#eq-chebyshev]] $f_n \to 0$ in measure as well.
 
-*No pointwise convergence.* Fix $x \in [0, 1]$. In each sweep (each $k$) some interval contains $x$, so $f_n(x) = 1$ for at least one $n$ in every block $2^k \le n < 2^{k+1}$; and for $k \ge 1$ some interval of the sweep misses $x$, so $f_n(x) = 0$ for another $n$ in the block. Hence $f_n(x) = 1$ infinitely often and $f_n(x) = 0$ infinitely often, and $(f_n(x))$ diverges.
+*No pointwise convergence.* Fix $x \in [0, 1]$. In each sweep (each $k$) some interval contains $x$, so $f_n(x) = 1$ for at least one $n$ in every block $2^k \le n < 2^{k+1}$; and for $k \ge 2$ some interval of the sweep misses $x$ (there are $2^k \ge 4$ intervals, and $x$ lies in at most two of them), so $f_n(x) = 0$ for another $n$ in the block. Hence $f_n(x) = 1$ infinitely often and $f_n(x) = 0$ infinitely often, and $(f_n(x))$ diverges.
 
 As Riesz's theorem predicts, subsequences do converge a.e.: $f_{2^k} = \mathbf{1}_{[0, 2^{-k}]} \to 0$ at every $x > 0$.
 :::
@@ -277,7 +277,7 @@ Let $f_n = \sqrt n\,\mathbf{1}_{(0, 1/n)}$ on $[0, 1]$. Decide whether $f_n \to 
 :::
 :::
 
-Two more examples complete the picture. On $[0, 1]$, $g_n = n\mathbf{1}_{(0, 1/n)}$ converges to $0$ everywhere and in measure, but $\norm{g_n}_1 = 1$, so not in $L^1$: almost-everywhere convergence does not imply $L^p$ convergence without domination. On $\R$, $h_n = \mathbf{1}_{[n, n+1]}$ converges to $0$ everywhere but not in measure, since $\lambda(\set{h_n > \tfrac12}) = 1$: on infinite measure spaces, a.e. convergence does not even imply convergence in measure. The relations are summarised below.
+Two more examples complete the picture. On $[0, 1]$, $g_n = n\mathbf{1}_{(0, 1/n)}$ converges to $0$ everywhere and in measure, but $\norm{g_n}_1 = 1$, so not in $L^1$: almost-everywhere convergence does not imply $L^p$ convergence without domination. On $\R$, $h_n = \mathbf{1}_{[n, n+1]}$ converges to $0$ everywhere but not in measure, since $\lambda(\set{h_n > \tfrac12}) = 1$: on infinite measure spaces, a.e. convergence does not even imply convergence in measure. The relations are summarised below for $1 \le p < \infty$, where "dominated" means $\abs{f_n} \le g$ for all $n$ with one fixed $g \in L^p$.
 
 | from ↓ / to → | a.e. | in measure | in $L^p$ |
 |---|---|---|---|
@@ -310,7 +310,7 @@ The $L^p$ spaces are the meeting point of measure theory and functional analysis
 - Young's inequality $ab \le \frac{a^p}{p} + \frac{b^q}{q}$ gives Hölder's inequality $\int\abs{fg} \le \norm f_p\norm g_q$ for conjugate exponents ([[#thm-holder]]); $p = q = 2$ is Cauchy–Schwarz.
 - Minkowski's inequality $\norm{f + g}_p \le \norm f_p + \norm g_p$ makes $L^p$ a normed space for $p \ge 1$ ([[#thm-minkowski]]); it fails for $p < 1$.
 - On finite measure spaces $L^r \subseteq L^p$ for $p < r$; on $\R$ no inclusion holds, and for sequences $\ell^p \subseteq \ell^r$.
-- Riesz–Fischer: $L^p$ is complete, and $L^p$-convergent sequences have a.e.-convergent subsequences ([[#thm-riesz-fischer]]); simple and (for Lebesgue measure) step and continuous functions are dense.
+- Riesz–Fischer: $L^p$ is complete, and $L^p$-convergent sequences have a.e.-convergent subsequences ([[#thm-riesz-fischer]]); for $p < \infty$, simple and (for Lebesgue measure) step and continuous functions are dense.
 - Convergence in $L^p$ implies convergence in measure, which implies a.e. convergence of a subsequence ([[#thm-riesz-subsequence]]); the typewriter sequence converges in $L^p$ but nowhere pointwise.
 :::
 

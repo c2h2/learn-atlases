@@ -257,7 +257,7 @@ $$
 $$
 :::
 
-The prime number theorem was proved in $1896$, independently by Jacques Hadamard and Charles de la Vallée Poussin, using the Riemann zeta function $\zeta(s) = \sum n^{-s}$ as a function of a complex variable and showing that it has no zeros on the line $\operatorname{Re}s = 1$. An "elementary" proof (without complex analysis, but not simple) was found by Atle Selberg and Paul Erdős in $1949$. Both are beyond this course; see Hardy and Wright, Chapter 22. Equivalent forms say that the $n$-th prime $p_n$ is asymptotically $n\ln n$, and that a randomly chosen integer near $x$ is prime with probability about $1/\ln x$ — so a random $300$-digit number is prime with probability roughly $1/690$, a fact that makes it practical to find large primes for cryptography ([[number-theory/cryptography]]).
+The prime number theorem was proved in $1896$, independently by Jacques Hadamard and Charles de la Vallée Poussin, using the Riemann zeta function $\zeta(s) = \sum n^{-s}$ as a function of a complex variable and showing that it has no zeros on the line $\operatorname{Re}s = 1$. An "elementary" proof (without complex analysis, but not simple) was found by Atle Selberg and Paul Erdős in $1949$. Both are beyond this course; Hardy and Wright, Chapter 22, gives the elementary proof. Equivalent forms say that the $n$-th prime $p_n$ is asymptotically $n\ln n$, and that a randomly chosen integer near $x$ is prime with probability about $1/\ln x$ — so a random $300$-digit number is prime with probability roughly $1/690$, a fact that makes it practical to find large primes for cryptography ([[number-theory/cryptography]]).
 
 ::: widget sieve
 mode: count
@@ -281,7 +281,7 @@ $91 = 7\cdot 13$ and $221 = 13\cdot17$ are composite (two classic traps); $1$ is
 
 ## Special primes and open problems
 
-**Mersenne primes.** If $2^n - 1$ is prime then $n$ is prime, because $2^{ab} - 1$ is divisible by $2^a - 1$ (as $x - 1$ divides $x^b - 1$). The converse fails: $2^{11} - 1 = 2047 = 23\cdot 89$. Primes of the form $2^p - 1$ are called **Mersenne primes**; they are exactly the primes in Euclid's perfect numbers, and they are easy to test (by the Lucas–Lehmer test), so the largest known primes are almost always Mersenne primes. As of 2024 the record was $2^{136279841} - 1$, a number of more than $41$ million digits found in October 2024 by the GIMPS distributed-computing project.
+**Mersenne primes.** If $2^n - 1$ is prime then $n$ is prime, because $2^{ab} - 1$ is divisible by $2^a - 1$ (as $x - 1$ divides $x^b - 1$). The converse fails: $2^{11} - 1 = 2047 = 23\cdot 89$. Primes of the form $2^p - 1$ are called **Mersenne primes**; they are exactly the primes in Euclid's perfect numbers, and they are easy to test (by the Lucas–Lehmer test), so the largest known primes are almost always Mersenne primes. As of 2026 the record is still $2^{136279841} - 1$, a number of more than $41$ million digits found in October 2024 by the GIMPS distributed-computing project.
 
 **Fermat primes.** Fermat noticed that $F_n = 2^{2^n} + 1$ is prime for $n = 0, 1, 2, 3, 4$ ($3, 5, 17, 257, 65537$) and conjectured that all such numbers are prime. Euler showed in 1732 that $F_5 = 4294967297 = 641\cdot 6700417$, and no further Fermat prime has ever been found. Gauss showed that a regular $p$-gon ($p$ prime) can be constructed with ruler and compass when $p$ is a Fermat prime, and Pierre Wantzel proved in 1837 that these are the only primes for which it is possible ([[abstract-algebra/fields-galois]]).
 
@@ -327,7 +327,7 @@ $2024 = 8\cdot 253 = 2^3\cdot 11\cdot 23$, so $\tau(2024) = (3+1)(1+1)(1+1) = 16
 ::: exercise Primes up to 50 {level=1 check="15"}
 Use the sieve of Eratosthenes to find $\pi(50)$.
 ::: solution
-Since $\sqrt{50} < 8$, sieving by $2, 3, 5, 7$ suffices. The survivors are $2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47$, so $\pi(50) = 15$.
+Since $\sqrt{50} < 8$, sieving by $2, 3, 5, 7$ suffices. The survivors are $2,\allowbreak 3,\allowbreak 5,\allowbreak 7,\allowbreak 11,\allowbreak 13,\allowbreak 17,\allowbreak 19,\allowbreak 23,\allowbreak 29,\allowbreak 31,\allowbreak 37,\allowbreak 41,\allowbreak 43,\allowbreak 47$, so $\pi(50) = 15$.
 :::
 :::
 

@@ -97,7 +97,7 @@ degree: 1
 residuals: true
 x: -1, 5
 y: -1, 6
-caption: [[#ex-line]]中的数据，以及最小二乘直线$y = \tfrac32 + x$和它的残差。拖动一个点，观察直线如何随之变化：它使以竖直残差为边的正方形的总面积最小。注意这条直线总是经过数据的重心$(\bar x, \bar y)$；而把一个点移到很远的地方（离群点），整条直线都会被它拖着走——平方使大误差的代价非常高。
+caption: [[#ex-line]]中的数据，以及最小二乘直线$y = \tfrac32 + x$和它的残差。拖动一个点，观察直线如何随之变化：它使以竖直残差为边的正方形的总面积最小（打开“平方”开关即可看到这些正方形）。注意这条直线总是经过数据的重心$(\bar x, \bar y)$；而把一个点移到很远的地方（离群点），整条直线都会被它拖着走——平方使大误差的代价非常高。
 :::
 
 ::: example 一个无解的方程组 {#ex-inconsistent}
@@ -302,12 +302,12 @@ $$
 A\T A = \begin{pmatrix}1 + \delta^2 & 1\\ 1 & 1 + \delta^2\end{pmatrix}, \qquad \delta^2 = 10^{-16}.
 $$
 
-在双精度运算中，数$1 + 10^{-16}$被舍入为恰好等于$1$（$1$与下一个可表示的数之间的间隔约为$2.2\times10^{-16}$）。因此计算得到的$A\T A$是$\begin{pmatrix}1&1\\1&1\end{pmatrix}$，它是奇异的：区分这两列的信息在求解开始之前就已经被舍入掉了。QR分解直接处理$A$本身：格拉姆-施密特（Gram–Schmidt）正交化（或豪斯霍尔德（Householder）反射）给出$R\approx\begin{pmatrix}1&1\\0&\sqrt2\,\delta\end{pmatrix}$，它完全可逆，而$R\hat{\mathbf{x}} = Q\T\mathbf{b}$以完全的精度给出$(1, 1)$。（用[[linear-algebra/svd]]一章的语言来说：$A$的条件数约为$1.4\times 10^8$，无伤大雅；而$A\T A$的条件数是它的平方，约为$2\times10^{16}$，超出了运算的精度。）
+在双精度运算中，数$1 + 10^{-16}$被舍入为恰好等于$1$（$1$与下一个可表示的数之间的间隔约为$2.2\times10^{-16}$）。因此计算得到的$A\T A$是$\begin{pmatrix}1&1\\1&1\end{pmatrix}$，它是奇异的：区分这两列的信息在求解开始之前就已经被舍入掉了。QR分解直接处理$A$本身。用豪斯霍尔德（Householder）反射（见下面的注记）得到$R\approx\begin{pmatrix}1&1\\0&\sqrt2\,\delta\end{pmatrix}$（至多相差符号），它完全可逆，而$R\hat{\mathbf{x}} = Q\T\mathbf{b}$以完全的精度给出$(1, 1)$。普通的格拉姆-施密特（Gram–Schmidt）正交化求得的$R$相同，但这里计算出的$\mathbf{q}_2$与$\mathbf{q}_1$并不精确正交，由计算出的$Q\T\mathbf{b}$得到的反而是$(2, 0)$——这正是程序库更青睐豪斯霍尔德反射的原因之一。（用[[linear-algebra/svd]]一章的语言来说：$A$的条件数约为$1.4\times 10^8$，无伤大雅；而$A\T A$的条件数是它的平方，约为$2\times10^{16}$，超出了运算的精度。）
 :::
 :::
 
 ::: remark 实际中的做法
-库函数（例如`numpy.linalg.lstsq`或MATLAB的反斜杠运算符背后的程序）计算QR分解时用的不是格拉姆-施密特方法，而是数值上更稳定的**豪斯霍尔德反射**；当各列可能几乎线性相关时，则使用奇异值分解。非常大的稀疏问题用迭代法求解。参见[[numerical-analysis/direct-methods]]和[[numerical-analysis/iterative-methods]]。
+库函数计算QR分解时用的不是格拉姆-施密特方法，而是数值上更稳定的**豪斯霍尔德反射**（MATLAB的反斜杠运算符对长方形方程组就是这样做的）；或者使用奇异值分解，它在各列几乎线性相关时也能应对（`numpy.linalg.lstsq`用的就是这种方法）。非常大的稀疏问题用迭代法求解。参见[[numerical-analysis/direct-methods]]和[[numerical-analysis/iterative-methods]]。
 :::
 
 ::: history

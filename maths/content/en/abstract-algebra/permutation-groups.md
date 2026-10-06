@@ -1,4 +1,4 @@
-In the 1870s and 1880s a puzzle swept America and Europe: fifteen numbered tiles in a $4\times4$ tray with one empty square, to be slid around until they were in order. Puzzle sellers offered the tray with tiles $14$ and $15$ swapped and challenged buyers to put them right. Nobody ever could, and by the end of this chapter you will be able to prove that nobody ever will: every sequence of moves rearranges the tiles by an *even* permutation, and swapping two tiles is odd.
+In 1880 a puzzle swept America and Europe: fifteen numbered tiles in a $4\times4$ tray with one empty square, to be slid around until they were in order. The most notorious challenge, with prizes offered for a solution, started from the position with tiles $14$ and $15$ swapped. Nobody ever solved it, and by the end of this chapter you will be able to prove that nobody ever will: every sequence of moves that brings the empty square back to where it started rearranges the tiles by an *even* permutation, and swapping two tiles is odd.
 
 Permutations — rearrangements of a finite set — were the first groups ever studied. Lagrange, Ruffini, Cauchy and Galois all thought about groups as collections of permutations of the roots of an equation, long before the abstract definition of [[abstract-algebra/groups]] existed. They remain central for a precise reason, Cayley's theorem: *every* group is a group of permutations. In this chapter we learn to compute with permutations efficiently using cycle notation, prove that every permutation has a well-defined **sign**, meet the alternating groups, and study the symmetry groups of regular polygons, the **dihedral groups**.
 
@@ -105,7 +105,7 @@ For $(1\ 2)(1\ 3\ 5)$: $1 \mapsto 3 \mapsto 3$, $3 \mapsto 5 \mapsto 5$, $5 \map
 ::: widget permutation
 perm: 5 7 9 1 4 2 3 8 6
 second: (1 2)
-caption: The permutation of [[#ex-decompose]] as an arrow diagram: its cycles $(1\ 5\ 4)$ and $(2\ 7\ 3\ 9\ 6)$ appear as separate loops, and $8$ is a fixed point. Compare the order and sign the figure reports with [[#thm-order-lcm]] and [[#thm-sign]]. The figure also composes $\sigma$ with $(1\ 2)$: work out both $\sigma(1\ 2)$ and $(1\ 2)\sigma$ by hand and decide which one it shows.
+caption: The permutation of [[#ex-decompose]] as an arrow diagram: its cycles $(1\ 5\ 4)$ and $(2\ 7\ 3\ 9\ 6)$ appear as separate loops, and $8$ is a fixed point. Compare the order and sign the figure reports with [[#thm-order-lcm]] and [[#thm-sign]]. The figure also takes $\tau = (1\ 2)$: work out $\sigma(1\ 2)$ and $(1\ 2)\sigma$ by hand, then compare them with its views $\sigma\circ\tau$ and $\tau\circ\sigma$.
 :::
 
 ### Orders and cycle types
@@ -284,7 +284,7 @@ $$ {#eq-dihedral-relations}
 :::
 
 ::: proof
-A symmetry $f$ permutes the vertices (they are the points of the polygon farthest from the centre) and preserves distances, so it sends adjacent vertices (those at the minimal distance, the side length) to adjacent vertices. It also fixes the centre $O$, the average of the vertices. An isometry of the plane fixing $O$ is a linear (orthogonal) map, so it is determined by its values on the two linearly independent position vectors of vertices $1$ and $2$ ([[linear-algebra/linear-maps]]). Now $f(1)$ can be any of the $n$ vertices, and $f(2)$ must be one of the $2$ neighbours of $f(1)$, so there are **at most** $2n$ symmetries.
+A symmetry $f$ permutes the vertices (they are its corners, the points of the polygon that do not lie inside a segment joining two other points of the polygon, and an isometry maps segments to segments) and preserves distances, so it sends adjacent vertices (those at the minimal distance, the side length) to adjacent vertices. It also fixes the centre $O$, the average of the vertices. An isometry of the plane fixing $O$ is a linear (orthogonal) map, so it is determined by its values on the two linearly independent position vectors of vertices $1$ and $2$ ([[linear-algebra/linear-maps]]). Now $f(1)$ can be any of the $n$ vertices, and $f(2)$ must be one of the $2$ neighbours of $f(1)$, so there are **at most** $2n$ symmetries.
 
 On the other hand, the $2n$ listed maps are symmetries, and they are distinct, because they do different things to vertices $1$ and $2$: $r^k$ sends $(1, 2) \mapsto (1 + k, 2 + k)$, while $r^ks$ sends $(1, 2) \mapsto (1 + k, k)$ since $s(1) = 1$ and $s(2) = 0 = n$. So $\abs{D_n} = 2n$.
 
@@ -379,7 +379,7 @@ Permutations entered algebra through the theory of equations. Joseph-Louis Lagra
 
 ## Where this leads
 
-Cycle types and conjugation reappear in [[abstract-algebra/group-actions]], where we show that two permutations are conjugate exactly when they have the same cycle type and count the conjugacy classes of $S_n$. The sign map $\sgn\colon S_n \to \set{\pm1}$ is our first example of a homomorphism; in [[abstract-algebra/homomorphisms]] its kernel $A_n$ becomes a normal subgroup and $S_n/A_n \cong \Z_2$. Dihedral and symmetric groups are the standard testing ground for every theorem in the course, and the Galois group of a polynomial of degree $n$ is a subgroup of $S_n$ ([[abstract-algebra/fields-galois]]). The sign of a permutation also underlies the definition of the determinant ([[linear-algebra/determinants]]).
+Cycle types and conjugation reappear in [[abstract-algebra/group-actions]]: two permutations are conjugate exactly when they have the same cycle type ([[#prop-conjugation]] and its converse in the exercises), and there we use this to find the conjugacy classes of $S_4$ and $A_5$. The sign map $\sgn\colon S_n \to \set{\pm1}$ is our first example of a homomorphism; in [[abstract-algebra/homomorphisms]] its kernel $A_n$ becomes a normal subgroup and $S_n/A_n \cong \Z_2$. Dihedral and symmetric groups are the standard testing ground for every theorem in the course, and the Galois group of a polynomial of degree $n$ is a subgroup of $S_n$ ([[abstract-algebra/fields-galois]]). The sign of a permutation also underlies the definition of the determinant ([[linear-algebra/determinants]]).
 
 ::: summary
 - $S_n$, the bijections of $\set{1, \dots, n}$ under composition, has order $n!$ and is non-abelian for $n \ge 3$. Products are read right to left: $\sigma\tau$ applies $\tau$ first.

@@ -105,7 +105,7 @@ $T(0) = 0$，所以$0\in\ker T$且$0 \in\Img T$。若$T(u) = T(v) = 0$，则$T(a
 若$T$是单射且$T(v) = 0 = T(0)$，则$v = 0$；所以$\ker T = \{0\}$。反之，设$\ker T = \{0\}$且$T(u) = T(v)$。则$T(u - v) = T(u) - T(v) = 0$，所以$u - v\in\ker T$，从而$u = v$。
 :::
 
-“单射当且仅当核平凡”这一判别法能省去大量功夫：不必比较所有的输入对，只需知道哪些输入被映到$0$。它是[[linear-algebra/linear-systems#thm-structure]]中唯一性部分的抽象形式：方程$T(v) = w$的解（如果有的话）构成核的一个平移$v_0 + \ker T$。
+“单射当且仅当核平凡”这一判别法能省去大量功夫：不必比较所有的输入对，只需知道哪些输入被映到$0$。它是[[linear-algebra/linear-systems#thm-structure]]的抽象形式：方程$T(v) = w$的解（如果有的话）构成核的一个平移$v_0 + \ker T$，所以当解存在时，它唯一当且仅当$\ker T = \{0\}$。
 
 ::: widget projection
 u: 2,1

@@ -267,7 +267,7 @@ $$
 
 当$\delta\to0^+$，$t\to\infty$时，边界项$\delta^se^{-\delta}$和$t^se^{-t}$都趋于$0$，所以$\Gamma(s+1) = s\,\Gamma(s)$。
 
-**阶乘。**$\Gamma(1) = \int_0^\infty e^{-x}\,dx = 1$，于是$\Gamma(2) = 1\cdot\Gamma(1) = 1$，$\Gamma(3) = 2\Gamma(2) = 2$，由归纳法得$\Gamma(n+1) = n\cdot(n-1)! = n!$。伽马函数光滑地插值了阶乘；例如$\Gamma\bigl(\frac12\bigr) = \sqrt\pi$，所以“$\bigl(-\frac12\bigr)! = \sqrt\pi$”。它在概率论与统计学中随处可见（[[probability/continuous-random-variables]]）。
+**阶乘。**$\Gamma(1) = \int_0^\infty e^{-x}\,dx = 1$，于是$\Gamma(2) = 1\cdot\Gamma(1) = 1$，$\Gamma(3) = 2\Gamma(2) = 2$，由归纳法得$\Gamma(n+1) = n\cdot(n-1)! = n!$。伽马函数光滑地插值了阶乘；例如$\Gamma\bigl(\frac12\bigr) = \sqrt\pi$，所以“$\bigl(-\frac12\bigr)! = \sqrt\pi$”。它在概率论与统计学中随处可见，例如伽马分布和卡方分布的密度（[[probability/joint-distributions]]、[[statistics/sampling]]）。
 
 在$\frac12$处的值来自高斯积分：代换$x = u^2$（于是$dx = 2u\,du$，$x^{-1/2} = u^{-1}$）给出$\Gamma\bigl(\frac12\bigr) = \int_0^\infty x^{-1/2}e^{-x}\,dx = 2\int_0^\infty e^{-u^2}\,du = 2\cdot\frac{\sqrt\pi}{2} = \sqrt\pi$，这里用到了[[#ex-comparison]]中给出的$\int_0^\infty e^{-u^2}\,du$的值。
 :::

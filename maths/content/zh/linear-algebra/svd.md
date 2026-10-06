@@ -179,7 +179,7 @@ $$
 \norm{(A - B)\mathbf{x}}^2 = \norm{A\mathbf{x}}^2 = \Bigl\lVert\sum_{i\le k+1}c_i\sigma_i\mathbf{u}_i\Bigr\rVert^2 = \sum_{i\le k+1}c_i^2\sigma_i^2\ge\sigma_{k+1}^2\sum_{i\le k+1}c_i^2 = \sigma_{k+1}^2.
 $$
 
-所以$\norm{A - B}\ge\sigma_{k+1}$。关于弗罗贝尼乌斯范数的结论可以用类似但更长的论证来证明（米尔斯基（Mirsky），1960）；参见霍恩（Horn）和约翰逊（Johnson）的《矩阵分析》（*Matrix Analysis*）。
+所以$\norm{A - B}\ge\sigma_{k+1}$。关于弗罗贝尼乌斯范数的结论——这正是埃卡特和杨在1936年所证明的形式——需要类似但更长的论证；米尔斯基（Mirsky，1960）进一步证明了$A_k$对包括这两种范数在内的一整族范数都是最优的；参见霍恩（Horn）和约翰逊（Johnson）的《矩阵分析》（*Matrix Analysis*）。
 :::
 
 ::: example 最佳秩1逼近 {#ex-rank-one}
@@ -218,7 +218,7 @@ degree: 1
 residuals: true
 x: -3, 3
 y: -2.5, 2.5
-caption: [[#ex-pca]]中的点及其最小二乘直线$y = 0.6x$；残差是竖直的。由奇异值分解求出的第一主方向略陡一些，斜率为$0.618$，因为它度量的是垂直于直线的距离。竖直拖动外侧的点：回归斜率随数据线性变化，而主方向总是沿着点云的长轴。
+caption: [[#ex-pca]]中的点及其最小二乘直线$y = 0.6x$；残差是竖直的。由奇异值分解求出的第一主方向（图中未画出）略陡一些，斜率为$0.618$，因为它度量的是垂直于直线的距离。竖直拖动外侧的点：回归斜率随数据线性变化，而主方向总是沿着点云的长轴。
 :::
 
 ## 伪逆与最小二乘
@@ -305,7 +305,7 @@ $5\times 3$矩阵$A$的奇异值为$4$、$2$、$0$。下列哪些说法正确？
 :::
 
 ::: history
-奇异值分解由欧金尼奥·贝尔特拉米（Eugenio Beltrami，1873年）和卡米尔·若尔当（Camille Jordan，1874年）各自独立发现，他们证明了实双线性型可以通过两次正交的变量替换化为对角形；詹姆斯·约瑟夫·西尔维斯特（James Joseph Sylvester）于1889年又针对实方阵重新发现了它。埃哈德·施密特（Erhard Schmidt，1907年）发展了积分算子的相应理论，其中包括低秩逼近性质；埃米尔·皮卡（Émile Picard，1910年）引入了“奇异值”（*singular values*）这一名称。心理测量学家卡尔·埃卡特（Carl Eckart）和盖尔·杨（Gale Young）（1936年）处理了一般的长方矩阵，并证明了以他们的名字命名的矩阵逼近定理；伪逆归功于E. H. 穆尔（E. H. Moore，1920年）和罗杰·彭罗斯（Roger Penrose，1955年）。直到吉恩·戈卢布（Gene Golub）和威廉·卡汉（William Kahan）于1965年提出稳定的算法，并由戈卢布和克里斯蒂安·赖因施（Christian Reinsch）于1970年加以改进，奇异值分解才成为实用的工具；这一算法在计算过程中从不构造$A\T A$。
+奇异值分解由欧金尼奥·贝尔特拉米（Eugenio Beltrami，1873年）和卡米尔·若尔当（Camille Jordan，1874年）各自独立发现，他们证明了实双线性型可以通过两次正交的变量替换化为对角形；詹姆斯·约瑟夫·西尔维斯特（James Joseph Sylvester）于1889年又针对实方阵重新发现了它。埃哈德·施密特（Erhard Schmidt，1907年）发展了积分算子的相应理论，其中包括低秩逼近性质；埃米尔·皮卡（Émile Picard，1910年）引入了“奇异值”（*singular values*）这一名称。卡尔·埃卡特（Carl Eckart）和盖尔·杨（Gale Young）在新创刊的《心理测量学》（*Psychometrika*）杂志上发表的1936年论文中处理了一般的长方矩阵，并证明了以他们的名字命名的矩阵逼近定理；伪逆归功于E. H. 穆尔（E. H. Moore，1920年）和罗杰·彭罗斯（Roger Penrose，1955年）。直到吉恩·戈卢布（Gene Golub）和威廉·卡汉（William Kahan）于1965年提出稳定的算法，并由戈卢布和克里斯蒂安·赖因施（Christian Reinsch）于1970年加以改进，奇异值分解才成为实用的工具；这一算法在计算过程中从不构造$A\T A$。
 :::
 
 ## 后续内容
@@ -372,7 +372,7 @@ $A = \mathbf{w}\mathbf{w}\T$，其中$\mathbf{w} = (1, 2)$，所以$A = 5\,\math
 :::
 
 ::: exercise 条件数的计算 {level=2 check="3"}
-求$A = \begin{pmatrix}3&0\\4&5\end{pmatrix}$和$A\T A$的条件数。
+求$A = \begin{pmatrix}3&0\\4&5\end{pmatrix}$和$A\T A$的条件数。$\kappa(A)$是多少？
 ::: solution
 由[[#ex-svd-2x2]]，$\kappa(A) = \sigma_1/\sigma_2 = 3\sqrt5/\sqrt5 = 3$。矩阵$A\T A = \begin{pmatrix}25&20\\20&25\end{pmatrix}$是对称正定矩阵，特征值为$45$和$5$，它们也是它的奇异值，所以$\kappa(A\T A) = 9 = \kappa(A)^2$。
 :::

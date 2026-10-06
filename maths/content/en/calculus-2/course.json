@@ -146,7 +146,7 @@
     {
       "year": 1821,
       "title": "Convergence made rigorous",
-      "detail": "Augustin-Louis Cauchy's *Cours d'analyse* defines the sum of a series as the limit of its partial sums, insists that divergent series have no sum, and proves the root test and the Cauchy criterion.",
+      "detail": "Augustin-Louis Cauchy's *Cours d'analyse* defines the sum of a series as the limit of its partial sums, insists that divergent series have no sum, proves the root test and states the Cauchy criterion.",
       "people": [
         "Augustin-Louis Cauchy"
       ]
@@ -195,7 +195,7 @@
       "title": "Theory and Application of Infinite Series",
       "authors": "Konrad Knopp",
       "year": 1990,
-      "note": "The classic encyclopaedia of series (Dover reprint of the 1928 English edition); full of convergence tests, examples and historical detail."
+      "note": "The classic encyclopaedia of series (Dover reprint of the 1951 second English edition); full of convergence tests, examples and historical detail."
     },
     {
       "title": "Elementary Differential Equations and Boundary Value Problems (11th edition)",

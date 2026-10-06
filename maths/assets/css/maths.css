@@ -250,6 +250,7 @@ svg.chain[style*="applied"] .bead:not(.is-missing) text { fill: #15192b; }
 .tl .ev-meta { font-size: 0.8125rem; color: var(--ink-3); margin-left: 8px; font-weight: 400; }
 .tl .ev-detail { color: var(--ink-2); margin: 3px 0 0; font-size: 0.9375rem; max-width: 72ch; }
 .tl .ev-course { font-size: 0.8125rem; font-weight: 600; text-decoration: none; }
+.tl .ev-course + .ev-course { margin-left: 14px; }
 
 /* tables */
 .data-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
@@ -401,6 +402,8 @@ a.ref { text-decoration-style: dotted; }
 .lesson-foot .t { font-weight: 700; margin-top: 2px; }
 .lesson-foot .next { text-align: right; grid-column: 2; }
 @media (max-width: 640px) { .lesson-foot { grid-template-columns: minmax(0, 1fr); } .lesson-foot .next { grid-column: 1; } }
+.nobr { white-space: nowrap; }
+.lesson-report { margin-top: 20px; text-align: center; font-size: 0.8125rem; color: var(--ink-3); }
 
 /* ---------- interactive figures ---------- */
 figure.widget { margin: 1.8em 0; background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; max-width: 920px; }
@@ -506,7 +509,7 @@ figure.widget > figcaption { border-top: 1px solid var(--rule); padding: 10px 16
 .tt.on { opacity: 1; }
 
 @media print {
-  .site-head nav, .controls, .lesson-toc, .theme-toggle, .w-controls, .done-toggle, .lesson-foot { display: none !important; }
+  .site-head nav, .controls, .lesson-toc, .theme-toggle, .w-controls, .done-toggle, .lesson-foot, .lesson-report { display: none !important; }
   body { background: #fff; }
   .lesson-layout { display: block; }
   details { display: block; }

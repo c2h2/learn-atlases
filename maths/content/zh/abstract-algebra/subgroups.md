@@ -79,7 +79,7 @@ $$
 即与所有元素都可交换的元素组成的集合。对$a \in G$，$a$的**中心化子**是$C_G(a) = \set{g \in G : ga = ag}$。
 :::
 
-两者都是子群。先看中心：$e \in Z(G)$；若$a, b \in Z(G)$，$g \in G$，则$(ab)g = a(bg) = a(gb) = (ag)b = (ga)b = g(ab)$，所以$ab \in Z(G)$；又由$ag = ga$，两边同时左乘和右乘$a^{-1}$，得$ga^{-1} = a^{-1}g$，所以$a^{-1} \in Z(G)$。把其中的$g$固定为单个元素$g = a$，同样的计算表明$C_G(a) \le G$。显然，$G$是阿贝尔群当且仅当$Z(G) = G$，并且$Z(G) = \bigcap_{a\in G} C_G(a)$。
+两者都是子群。先看中心：$e \in Z(G)$；若$a, b \in Z(G)$，$g \in G$，则$(ab)g = a(bg) = a(gb) = (ag)b = (ga)b = g(ab)$，所以$ab \in Z(G)$；又由$ag = ga$，两边同时左乘和右乘$a^{-1}$，得$ga^{-1} = a^{-1}g$，所以$a^{-1} \in Z(G)$。把其中的$g$固定下来，同样的计算表明中心化子$C_G(g)$是子群。显然，$G$是阿贝尔群当且仅当$Z(G) = G$，并且$Z(G) = \bigcap_{a\in G} C_G(a)$。
 
 ::: example GL₂(ℝ)的中心 {#ex-centre-gl2}
 证明$Z(\mathrm{GL}_2(\R)) = \set{\lambda I : \lambda \neq 0}$，即非零数量矩阵的全体。
@@ -350,7 +350,7 @@ $\gcd(3, 4) = 1$，所以$\Z_3 \times \Z_4 \cong \Z_{12}$，由$(1, 1)$生成：
 
 ## 后续内容
 
-一般有限群的子群远不如循环群的子群那样整齐，但有一个约束依然成立：在[[abstract-algebra/lagrange]]中我们将证明，有限群的**每个**子群的阶都整除群的阶。[[#thm-cyclic-subgroups]]中逆向的那一半——对每个因数都有一个子群——一般不成立，而[[abstract-algebra/group-actions]]中的西罗（Sylow）定理描述了它在多大程度上仍然成立。哪些群$U(n)$是循环群的问题将在[[number-theory/primitive-roots]]中解答，而高斯的正$17$边形将在[[abstract-algebra/fields-galois]]中以伽罗瓦对应的形式再次出现。
+一般有限群的子群远不如循环群的子群那样整齐，但有一个约束依然成立：在[[abstract-algebra/lagrange]]中我们将证明，有限群的**每个**子群的阶都整除群的阶。[[#thm-cyclic-subgroups]]中逆向的那一半——对每个因数都有一个子群——一般不成立，而[[abstract-algebra/group-actions]]中的西罗（Sylow）定理描述了它在多大程度上仍然成立。哪些群$U(n)$是循环群的问题将在[[number-theory/primitive-roots]]中解答，而高斯关于正$17$边形的论证，正是[[abstract-algebra/fields-galois]]中所研究的子群与中间域之间对应关系的雏形。
 
 ::: summary
 - 非空子集$H$是子群，当且仅当对所有$a, b \in H$都有$ab^{-1} \in H$（[[#thm-subgroup-test]]）；对于有限的$H$，仅有封闭性就够了。

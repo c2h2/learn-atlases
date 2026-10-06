@@ -239,7 +239,7 @@ The alternating group $A_5$, of order $60$, is simple.
 :::
 
 ::: proof
-The elements of $A_5$ are the identity, the $15$ double transpositions, the $20$ three-cycles and the $24$ five-cycles. We find the conjugacy classes *in $A_5$*, using $\abs{\operatorname{cl}_{A_5}(x)} = 60/\abs{C_{A_5}(x)}$ and $C_{A_5}(x) = C_{S_5}(x)\cap A_5$, where $\abs{C_{S_5}(x)} = 120/(\text{size of the cycle type class in } S_5)$.
+The elements of $A_5$ are the identity, the $15$ double transpositions, the $20$ three-cycles and the $24$ five-cycles. We find the conjugacy classes *in $A_5$*, using $\abs{\operatorname{cl}_{A_5}(x)} = 60/\abs{C_{A_5}(x)}$ and $C_{A_5}(x) = C_{S_5}(x)\cap A_5$, where $\abs{C_{S_5}(x)}$ is $120$ divided by the number of elements of $S_5$ with the same cycle type as $x$.
 
 - $x = (1\ 2\ 3)$: $\abs{C_{S_5}(x)} = 120/20 = 6$, and $C_{S_5}(x) = \langle(1\ 2\ 3)\rangle\times\langle(4\ 5)\rangle$ contains the odd permutation $(4\ 5)$, so $\abs{C_{A_5}(x)} = 3$ and the class has $20$ elements: all $3$-cycles.
 - $x = (1\ 2)(3\ 4)$: $\abs{C_{S_5}(x)} = 120/15 = 8$; it contains the odd $(1\ 2)$, so $\abs{C_{A_5}(x)} = 4$ and the class has $15$ elements.
@@ -391,7 +391,7 @@ William Burnside's lemma, as it is universally known, appears in his book *Theor
 
 ## Where this leads
 
-Group actions are everywhere in mathematics: Galois groups act on the roots of polynomials ([[abstract-algebra/fields-galois]]), matrix groups act on vector spaces ([[linear-algebra/linear-maps]]), and the fundamental group of a space acts on its covering spaces ([[topology/fundamental-group]]). The Sylow theorems are the starting point for classifying groups of small order and for proving that groups are not simple; the simplicity of $A_5$ is the reason the general quintic cannot be solved by radicals, as we will see in [[abstract-algebra/fields-galois]]. Burnside's lemma and its refinement by Pólya are standard tools of enumerative combinatorics ([[discrete/counting]]).
+Group actions are everywhere in mathematics: Galois groups act on the roots of polynomials ([[abstract-algebra/fields-galois]]), matrix groups act on vector spaces ([[linear-algebra/linear-maps]]), and the fundamental group of a space acts on the fibres of its covering maps (for the covering $\R \to S^1$ of [[topology/fundamental-group]], $\pi_1(S^1) \cong \Z$ acts on each fibre $s + \Z$ by integer translations). The Sylow theorems are the starting point for classifying groups of small order and for proving that groups are not simple; the simplicity of $A_5$ is the reason the general quintic cannot be solved by radicals, as we will see in [[abstract-algebra/fields-galois]]. Burnside's lemma and its refinement by Pólya are standard tools of enumerative combinatorics, extending [[discrete/counting|the basic counting principles]] to counting up to symmetry.
 
 ::: summary
 - An **action** of $G$ on $X$ is a homomorphism $G \to \operatorname{Sym}(X)$; its orbits partition $X$ and its stabilisers are subgroups, with $\operatorname{Stab}(g\cdot x) = g\operatorname{Stab}(x)g^{-1}$.
@@ -400,7 +400,7 @@ Group actions are everywhere in mathematics: Galois groups act on the roots of p
 - Conjugacy classes have sizes $[G : C_G(a)]$ dividing $\abs{G}$, and $\abs{G} = \abs{Z(G)} + \sum [G : C_G(a_i)]$ (class equation). Normal subgroups are unions of classes; $A_5$ is simple.
 - $p$-groups have non-trivial centres; groups of order $p^2$ are abelian. For $p$-group actions, $\abs{X} \equiv \abs{X^P} \pmod p$.
 - **Cauchy**: if $p \mid \abs{G}$, there is an element of order $p$.
-- **Sylow**: Sylow $p$-subgroups exist, are all conjugate, and $n_p \equiv 1 \pmod p$, $n_p \mid m$; $n_p = 1$ iff the Sylow subgroup is normal. Hence groups of order $pq$ ($p \nmid q-1$) are cyclic, and no group of order $12$, $20$ or $30$ is simple.
+- **Sylow**: Sylow $p$-subgroups exist, are all conjugate, and $n_p \equiv 1 \pmod p$, $n_p \mid m$; $n_p = 1$ iff the Sylow subgroup is normal. Hence groups of order $pq$, for primes $p < q$ with $p \nmid q-1$, are cyclic, and no group of order $12$, $20$ or $30$ is simple.
 :::
 
 ## Exercises

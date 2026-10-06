@@ -158,7 +158,7 @@ z: 2,0
 caption: $2$的三个立方根构成一个以$0$为中心的等边三角形：一个实根$\sqrt[3]2$和两个共轭复根$\sqrt[3]2\,\omega^{\pm1}$。域$\Q(\sqrt[3]2)$位于$\R$之内，所以只包含其中一个根；再添加$\omega$使次数加倍，就得到次数为$6$的分裂域。
 :::
 
-分裂域还可以用来对有限域进行分类。有限域$F$的特征是某个素数$p$（[[abstract-algebra/rings#prop-char-domain]]），所以它包含素域$\F_p = \set{0, 1, \dots, p - 1}$；若$[F : \F_p] = n$，则$\abs F = p^n$。在特征$p$中，二项式系数$\binom pk$（$0 < k < p$）都为零，所以$(a + b)^p = a^p + b^p$：**弗罗贝尼乌斯（Frobenius）映射**$a \mapsto a^p$是环同态，并且是单射（因为域没有可以作为核的非零理想），所以当$F$有限时它是双射。
+分裂域还可以用来对有限域进行分类。有限域$F$的特征是某个素数$p$（[[abstract-algebra/rings#prop-char-domain]]），所以它包含素域$\F_p = \set{0, 1, \dots, p - 1}$；若$[F : \F_p] = n$，则$\abs F = p^n$。在特征$p$中，二项式系数$\binom pk$（$0 < k < p$）都为零，所以$(a + b)^p = a^p + b^p$：**弗罗贝尼乌斯（Frobenius）映射**$a \mapsto a^p$是环同态。它是单射，因为在域中由$a^p = 0$可推出$a = 0$；所以当$F$有限时它是双射。
 
 ::: theorem 有限域的乘法群是循环群 {#thm-cyclic-mult}
 若$F$是有$q$个元素的有限域，则$F^\times$是$q - 1$阶循环群。
@@ -221,7 +221,7 @@ $F$-自同构$\sigma$由$\sigma(\alpha)$决定，因为$K$的每个元素都是$
 :::
 :::
 
-另外还有两类重要的例子。对有限域，$\operatorname{Gal}(\F_{p^n}/\F_p)$是**由弗罗贝尼乌斯映射$\phi(a) = a^p$生成的$n$阶循环群**：事实上$\phi^k(a) = a^{p^k}$，而$\phi^k = \id$意味着每个元素都是$x^{p^k} - x$的根，这要求$p^k \ge p^n$；所以$\phi$的阶为$n = [\F_{p^n} : \F_p]$。对单位根，$\operatorname{Gal}(\Q(\zeta_n)/\Q) \cong U(n)$，其中每个$k \in U(n)$对应把$\zeta_n \mapsto \zeta_n^k$的自同构$\sigma_k$（这要用到分圆多项式$\Phi_n$的不可约性，上文已对$n$为素数的情形证明了这一点）。
+另外还有两类重要的例子。对有限域，$\operatorname{Gal}(\F_{p^n}/\F_p)$是**由弗罗贝尼乌斯映射$\phi(a) = a^p$生成的$n$阶循环群**：事实上$\phi^k(a) = a^{p^k}$，而$\phi^k = \id$意味着每个元素都是$x^{p^k} - x$的根，这要求$p^k \ge p^n$；所以$\phi$的阶为$n = [\F_{p^n} : \F_p]$。对单位根，$\operatorname{Gal}(\Q(\zeta_n)/\Q) \cong U(n)$，其中每个$k \in U(n)$对应把$\zeta_n \mapsto \zeta_n^k$的自同构$\sigma_k$（这要用到分圆多项式$\Phi_n$的不可约性；$n$为素数的情形已在[[abstract-algebra/polynomials#ex-eisenstein]]中证明）。
 
 ::: quiz
 设$K$是$(x^2 - 2)(x^2 - 5)$的分裂域，$\abs{\operatorname{Gal}(K/\Q)}$等于多少？
@@ -281,14 +281,14 @@ $G \cong S_3$，它作用在根$\alpha_1 = \sqrt[3]2$，$\alpha_2 = \sqrt[3]2\,\
 - $\langle (2\ 3)\rangle$固定$\alpha_1$，所以它的固定域包含$\Q(\alpha_1)$，而后者的次数为$3 = [S_3 : \langle(2\ 3)\rangle]$；因此$K^{\langle(2\ 3)\rangle} = \Q(\sqrt[3]2)$。同理，$\langle (1\ 3)\rangle$和$\langle(1\ 2)\rangle$的固定域分别为$\Q(\alpha_2)$和$\Q(\alpha_3)$。
 - $3$-轮换$\sigma = (1\ 2\ 3)$把$\omega = \alpha_2/\alpha_1$映为$\alpha_3/\alpha_2 = \omega$，所以$A_3$固定$\omega$；由于$[S_3 : A_3] = 2 = [\Q(\omega) : \Q]$，$K^{A_3} = \Q(\omega) = \Q(\sqrt{-3})$。
 
-所以恰有四个真中间域：三个共轭的三次域$\Q(\alpha_i)$和一个二次域$\Q(\omega)$。$S_3$的正规子群是$\set e$、$A_3$、$S_3$，所以在这些中间域中，只有$\Q(\omega)$在$\Q$上是伽罗瓦扩张——它是$x^2 + x + 1$的分裂域——并且$\operatorname{Gal}(\Q(\omega)/\Q) \cong S_3/A_3 \cong \Z_2$。三次域不是伽罗瓦扩张，这与[[#ex-galois-groups]](d)相符。
+所以恰有四个真中间域：三个共轭的三次域$\Q(\alpha_i)$和一个二次域$\Q(\omega)$。$S_3$的正规子群是$\set e$、$A_3$、$S_3$，所以在这四个真中间域中，只有$\Q(\omega)$在$\Q$上是伽罗瓦扩张——它是$x^2 + x + 1$的分裂域——并且$\operatorname{Gal}(\Q(\omega)/\Q) \cong S_3/A_3 \cong \Z_2$。三次域不是伽罗瓦扩张，这与[[#ex-galois-groups]](d)相符。
 :::
 :::
 
 ::: widget graph
-nodes: K@0,3; Q(a1)@-2,1.6; Q(a2)@-0.7,1.6; Q(a3)@0.6,1.6; Q(w)@2,2.2; Q@0,0
-edges: K-Q(a1); K-Q(a2); K-Q(a3); K-Q(w); Q(a1)-Q; Q(a2)-Q; Q(a3)-Q; Q(w)-Q
-caption: 介于$\Q$与$K = \Q(\sqrt[3]2, \omega)$之间的域所成的格，图中$a_i = \alpha_i$，$w = \omega$。通向三次域$\Q(\alpha_i)$的边，下方一段的次数为$3$，上方一段的次数为$2$；二次域$\Q(\omega)$下方的次数为$2$，上方的次数为$3$。把这幅图上下颠倒，它就变成$S_3$的子群格：$K \leftrightarrow \set{e}$，$\Q(\alpha_1) \leftrightarrow \langle(2\ 3)\rangle$，$\Q(\omega) \leftrightarrow A_3$，$\Q \leftrightarrow S_3$。
+nodes: K@0,3; Q(a1)@-2,1.85; Q(a2)@-0.7,1.85; Q(a3)@0.6,1.85; Q(w)@2,1.15; Q@0,0
+edges: K-Q(a1):2; K-Q(a2):2; K-Q(a3):2; K-Q(w):3; Q(a1)-Q:3; Q(a2)-Q:3; Q(a3)-Q:3; Q(w)-Q:2
+caption: 介于$\Q$与$K = \Q(\sqrt[3]2, \omega)$之间的域所成的格，图中$a_i = \alpha_i$，$w = \omega$。较大的域画在较高处，每条边上标出相应扩张的次数：三次域$\Q(\alpha_i)$下方的次数为$3$，上方的次数为$2$；二次域$\Q(\omega)$下方的次数为$2$，上方的次数为$3$。把这幅图上下颠倒，它就变成$S_3$的子群格，边上的数随之变为指数：$K \leftrightarrow \set{e}$，$\Q(\alpha_1) \leftrightarrow \langle(2\ 3)\rangle$，$\Q(\omega) \leftrightarrow A_3$，$\Q \leftrightarrow S_3$。（图下信息栏中的“各顶点的度”是图论概念，指与顶点相连的边数，不是扩张的次数。）
 :::
 
 ::: warning 固定域反转包含关系
@@ -335,7 +335,7 @@ caption: $x^5 - 6x + 3$的图像恰好与横轴相交三次（在$-1.671$、$0.5
 :::
 
 ::: history
-保罗·鲁菲尼（Paolo Ruffini）于1799年、尼尔斯·亨里克·阿贝尔（Niels Henrik Abel）于1824年证明了一般五次方程不能用根式求解。埃瓦里斯特·伽罗瓦（Évariste Galois）大约在1830年从事这方面的研究，1832年死于决斗，年仅二十岁；他用我们今天所说的伽罗瓦群给出了判别准则，他的论文由约瑟夫·刘维尔（Joseph Liouville）于1846年发表。伽罗瓦还引入了以他的名字命名的有限域。1837年，皮埃尔·旺策尔（Pierre Wantzel）发表了倍立方和三等分角不可能性的证明；费迪南德·冯·林德曼（Ferdinand von Lindemann）对$\pi$是超越数的证明（1882年）解决了化圆为方问题。本章所用的借助域扩张、次数和固定域的现代表述，在很大程度上归功于理查德·戴德金（Richard Dedekind），尤其是埃米尔·阿廷（Emil Artin），他的讲义（1942年出版）塑造了今天讲授伽罗瓦理论的方式。
+一般五次方程不能用根式求解，这一结论由保罗·鲁菲尼（Paolo Ruffini）于1799年在一个有漏洞的冗长证明中提出，并由尼尔斯·亨里克·阿贝尔（Niels Henrik Abel）于1824年完整地证明。埃瓦里斯特·伽罗瓦（Évariste Galois）大约在1830年从事这方面的研究，1832年死于决斗，年仅二十岁；他用我们今天所说的伽罗瓦群给出了判别准则，他的论文由约瑟夫·刘维尔（Joseph Liouville）于1846年发表。伽罗瓦还引入了以他的名字命名的有限域。1837年，皮埃尔·旺策尔（Pierre Wantzel）发表了倍立方和三等分角不可能性的证明；费迪南德·冯·林德曼（Ferdinand von Lindemann）对$\pi$是超越数的证明（1882年）解决了化圆为方问题。本章所用的借助域扩张、次数和固定域的现代表述，在很大程度上归功于理查德·戴德金（Richard Dedekind），尤其是埃米尔·阿廷（Emil Artin），他的讲义（1942年出版）塑造了今天讲授伽罗瓦理论的方式。
 :::
 
 ## 后续内容
@@ -416,7 +416,7 @@ $K = \Q(i, \sqrt 2)$是$(x^2+1)(x^2-2)$的分裂域，次数为$4$（同[[#exr-9
 ::: exercise 另一个不可解的五次方程 {level=3}
 证明$x^5 - 4x + 2$在$\Q$上不是根式可解的。
 ::: solution
-仿照[[#thm-quintic]]的证明。对$2$应用艾森斯坦判别法（$2 \nmid 1$；$2 \mid -4, 2$；$4 \nmid 2$）可知这个多项式不可约，所以它的伽罗瓦群$G \le S_5$的阶能被$5$整除，从而包含一个$5$-轮换。导数$5x^4 - 4$在$\pm t$处为零，其中$t = (4/5)^{1/4} \approx 0.946$，并且$f(t) = t(t^4 - 4) + 2 = 2 - 3.2t < 0$，$f(-t) = 2 + 3.2t > 0$；再结合在$\pm\infty$处$f \to \pm\infty$，可知它恰有三个实根（在$-1.519$、$0.509$、$1.244$附近）。于是复共轭是$G$中的一个对换，所以$G = S_5$，而$S_5$不可解；由伽罗瓦判别准则，这个多项式不是根式可解的。
+仿照[[#thm-quintic]]的证明。对$2$应用艾森斯坦判别法（$2 \nmid 1$；$2 \mid -4, 2$；$4 \nmid 2$）可知这个多项式不可约，所以它的伽罗瓦群$G \le S_5$的阶能被$5$整除，从而包含一个$5$-轮换。导数$5x^4 - 4$在$\pm t$处为零，其中$t = (4/5)^{1/4} \approx 0.946$，并且$f(t) = t(t^4 - 4) + 2 = 2 - 3.2t < 0$，$f(-t) = 2 + 3.2t > 0$；再结合在$\pm\infty$处$f \to \pm\infty$，可知它恰有三个实根（在$-1.519$、$0.508$、$1.244$附近）。于是复共轭是$G$中的一个对换，所以$G = S_5$，而$S_5$不可解；由伽罗瓦判别准则，这个多项式不是根式可解的。
 :::
 :::
 

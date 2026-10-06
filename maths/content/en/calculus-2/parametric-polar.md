@@ -246,7 +246,7 @@ $$
 \frac{dy}{dx} = \frac{\dfrac{dr}{d\theta}\sin\theta + r\cos\theta}{\dfrac{dr}{d\theta}\cos\theta - r\sin\theta} .
 $$ {#eq-polar-slope}
 
-At a point where the curve passes through the origin with $r = 0$ and $\frac{dr}{d\theta} \ne 0$, this reduces to $\tan\theta$: the curve leaves the origin along the ray $\theta = \theta_0$. For example, the rose $r = \cos 2\theta$ passes through the origin at $\theta = \frac\pi4$, tangent to the line $y = x$.
+If the curve passes through the origin at $\theta = \theta_0$, with $r = 0$ and $\frac{dr}{d\theta} \ne 0$ there, this reduces to $\tan\theta_0$: the tangent at the origin is the line $\theta = \theta_0$. For example, the rose $r = \cos 2\theta$ passes through the origin at $\theta = \frac\pi4$, tangent to the line $y = x$.
 
 ::: quiz
 Which Cartesian point has polar coordinates $(r, \theta) = \left(-2, \frac\pi6\right)$?

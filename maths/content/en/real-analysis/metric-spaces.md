@@ -50,7 +50,7 @@ Which of the following define a metric on $\R$? Select all that apply.
 - [ ] $d(x, y) = \abs{x^2 - y^2}$
 - [x] $d(x, y) = \sqrt{\abs{x - y}}$
 ::: solution
-$(x - y)^2$ fails the triangle inequality: $d(0, 2) = 4 > d(0, 1) + d(1, 2) = 2$. $\abs{x^2 - y^2}$ fails property 1: $d(1, -1) = 0$. The other two are metrics: both have the form $\varphi(\abs{x - y})$ with $\varphi$ increasing, $\varphi(0) = 0$, and $\varphi(s + t) \le \varphi(s) + \varphi(t)$ — for the second see [[#exr-8-4]]; for the last, $\sqrt{s + t} \le \sqrt s + \sqrt t$ (square both sides). The second metric is bounded by $1$, yet it has the same convergent sequences as $\abs{x - y}$: boundedness of a metric says nothing about the space.
+$(x - y)^2$ fails the triangle inequality: $d(0, 2) = 4 > d(0, 1) + d(1, 2) = 2$. $\abs{x^2 - y^2}$ fails property 1: $d(1, -1) = 0$. The other two are metrics: both have the form $\varphi(\abs{x - y})$ with $\varphi$ strictly increasing, $\varphi(0) = 0$, and $\varphi(s + t) \le \varphi(s) + \varphi(t)$ — for the second see [[#exr-8-4]]; for the last, $\sqrt{s + t} \le \sqrt s + \sqrt t$ (square both sides). The second metric is bounded by $1$, yet it has the same convergent sequences as $\abs{x - y}$: boundedness of a metric says nothing about the space.
 :::
 :::
 
@@ -194,7 +194,7 @@ Let $(y_n)$ be a sequence in $f(K)$, say $y_n = f(x_n)$ with $x_n \in K$. By com
 :::
 
 ::: remark Sequential compactness and open covers
-In a metric space $K$ is sequentially compact if and only if it has the finite subcover property. *Sketch.* If every open cover has a finite subcover and $(x_n)$ had no subsequence converging in $K$, each point of $K$ would have a ball around it containing $x_n$ for only finitely many $n$; finitely many of these balls cover $K$, yet together they contain only finitely many terms — impossible. Conversely, a sequentially compact $K$ is **totally bounded** (for each $\eps$ it is covered by finitely many $\eps$-balls), and every open cover has a **Lebesgue number** $\delta > 0$ such that each ball of radius $\delta$ centred in $K$ lies in a single member of the cover; covering $K$ by finitely many $\delta$-balls then gives a finite subcover. Full proofs are in Rudin, *Principles of Mathematical Analysis*, chapter 2, and in [[topology/compactness]].
+In a metric space $K$ is sequentially compact if and only if it has the finite subcover property. *Sketch.* If every open cover has a finite subcover and $(x_n)$ had no subsequence converging in $K$, each point of $K$ would have a ball around it containing $x_n$ for only finitely many $n$; finitely many of these balls cover $K$, yet together they contain only finitely many terms — impossible. Conversely, a sequentially compact $K$ is **totally bounded** (for each $\eps$ it is covered by finitely many $\eps$-balls), and every open cover has a **Lebesgue number** $\delta > 0$ such that each ball of radius $\delta$ centred in $K$ lies in a single member of the cover; covering $K$ by finitely many $\delta$-balls then gives a finite subcover. A full proof is in [[topology/compactness]]; Rudin, *Principles of Mathematical Analysis*, proves the first direction (Theorem 3.6) and develops the second in the exercises of chapter 2.
 :::
 
 ::: quiz
@@ -258,7 +258,7 @@ g: cos(x)
 x0: 1
 steps: 20
 x: 0, 1.2
-caption: The cobweb diagram for $x_{n+1} = \cos x_n$ from $x_0 = 1$. Because $\cos$ is decreasing, the orbit spirals inwards around the fixed point where the graph meets the diagonal $y = x$, and each loop is smaller than the last by roughly the factor $\lvert\cos'(x^*)\rvert = \sin x^* \approx 0.67$. Try other starting values: every orbit in $[0, 1]$ is drawn to the same point — uniqueness in action.
+caption: The cobweb diagram for $x_{n+1} = \cos x_n$ from $x_0 = 1$. Because $\cos$ is decreasing, the orbit spirals inwards around the fixed point where the graph meets the diagonal $y = x$. Each step shrinks the distance to it by roughly the factor $\lvert\cos'(x^*)\rvert = \sin x^* \approx 0.67$, so each turn of the spiral (two steps) is about $0.45$ times the size of the last. Try other starting values: every orbit in $[0, 1]$ is drawn to the same point — uniqueness in action.
 :::
 
 ::: application Solving differential equations by iteration

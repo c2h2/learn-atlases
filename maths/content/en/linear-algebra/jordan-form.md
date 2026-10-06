@@ -23,13 +23,13 @@ Every square matrix satisfies its characteristic equation: if $p_A(t) = \det(A -
 :::
 
 ::: proof
-Let $C(t) = \operatorname{adj}(A - tI)$ be the adjugate of $A - tI$ ([[linear-algebra/determinants#thm-adjugate]]). Its entries are cofactors of $A - tI$, so they are polynomials in $t$ of degree at most $n - 1$, and we can write $C(t) = C_0 + C_1t + \dots + C_{n-1}t^{n-1}$ with constant matrices $C_k$. Write $p_A(t) = c_0 + c_1t + \dots + c_nt^n$. The adjugate formula gives, for every $t$,
+Let $C(t) = \operatorname{adj}(A - tI)$ be the adjugate of $A - tI$ ([[linear-algebra/determinants#thm-adjugate]]). Its entries are cofactors of $A - tI$, so they are polynomials in $t$ of degree at most $n - 1$, and we can write $C(t) = C_0 + C_1t + \dots + C_{n-1}t^{n-1}$ with constant matrices $C_k$. Write $p_A(t) = c_0 + c_1t + \dots + c_nt^n$. The adjugate formula gives
 
 $$
 (A - tI)(C_0 + C_1t + \dots + C_{n-1}t^{n-1}) = (c_0 + c_1t + \dots + c_nt^n)I.
 $$
 
-Both sides are polynomials in $t$ whose coefficients are matrices; they agree for infinitely many values of $t$, so their coefficients agree entry by entry. Comparing the coefficients of $1, t, \dots, t^n$:
+Both sides are polynomials in $t$ whose coefficients are matrices, and they are equal as polynomials, so their coefficients agree. (Over $\R$ or $\C$ this is because the two sides agree for infinitely many values of $t$; over any field, it is because the proof of the adjugate formula uses only sums and products of entries, so it holds for matrices whose entries are polynomials in $t$.) Comparing the coefficients of $1, t, \dots, t^n$:
 
 $$
 AC_0 = c_0I,\quad AC_1 - C_0 = c_1I,\quad \dots,\quad AC_{n-1} - C_{n-2} = c_{n-1}I,\quad -C_{n-1} = c_nI.
@@ -232,7 +232,7 @@ so that $A\mathbf{v}_j = \lambda\mathbf{v}_j + \mathbf{v}_{j-1}$ — exactly wha
 ::: widget transform2d
 matrix: 1,1; 0,1
 eigen: true
-caption: The shear $J_2(1)$, the simplest matrix that cannot be diagonalised. There is only one eigenvector line, the $x$-axis. The vector $\mathbf{e}_2$ is a generalised eigenvector: $(A - I)\mathbf{e}_2 = \mathbf{e}_1$, so $A\mathbf{e}_2 = \mathbf{e}_2 + \mathbf{e}_1$ — it is moved along the eigenvector direction. Change the bottom-left entry from $0$ to a small number such as $0.05$: two eigenvector lines appear, very close together. Jordan blocks are the limit as distinct eigenvectors merge.
+caption: The shear $J_2(1)$, the simplest matrix that cannot be diagonalised. There is only one eigenvector line, the $x$-axis. The vector $\mathbf{e}_2$ is a generalised eigenvector: $(A - I)\mathbf{e}_2 = \mathbf{e}_1$, so $A\mathbf{e}_2 = \mathbf{e}_2 + \mathbf{e}_1$ — it is moved along the eigenvector direction. Change the bottom-left entry from $0$ to a small positive number such as $0.1$: two eigenvector lines appear, one on each side of the $x$-axis (slopes $\pm\sqrt{0.1}\approx\pm0.32$); slide it back towards $0$ and watch them close up onto the axis. Jordan blocks are the limit as distinct eigenvectors merge.
 :::
 
 ## Computing the Jordan form
@@ -242,7 +242,7 @@ The procedure follows the theory: find the eigenvalues and their algebraic multi
 ::: example A 3×3 Jordan form {#ex-jordan3}
 Find the Jordan form $J$ of $B = \begin{pmatrix}0&1&2\\0&2&0\\-1&1&3\end{pmatrix}$ and an invertible $P$ with $B = PJP^{-1}$.
 ::: solution
-From [[#ex-minpoly]]: $p_B(t) = (2 - t)^2(1 - t)$, the eigenvalue $2$ has a $1$-dimensional eigenspace spanned by $\mathbf{v}_1 = (1, 0, 1)$, and the eigenvalue $1$ has the eigenvector $\mathbf{w} = (2, 0, 1)$. So the eigenvalue $2$ has one block, of size $2$:
+From [[#ex-minpoly]] and [[linear-algebra/eigenvalues#ex-defective]]: $p_B(t) = (2 - t)^2(1 - t)$, the eigenvalue $2$ has a $1$-dimensional eigenspace spanned by $\mathbf{v}_1 = (1, 0, 1)$, and the eigenvalue $1$ has the eigenvector $\mathbf{w} = (2, 0, 1)$. So the eigenvalue $2$ has one block, of size $2$:
 
 $$
 J = \begin{pmatrix}2&1&0\\0&2&0\\0&0&1\end{pmatrix}.
@@ -340,7 +340,7 @@ Camille Jordan published the canonical form in his *Traité des substitutions et
 
 ## Where this leads
 
-The Jordan form completes the classification of square matrices up to similarity, and it is the natural setting for the matrix exponential and the solution of linear systems of differential equations ([[ode/linear-systems]]), including the stability theory of [[ode/nonlinear-systems]]. Its algebraic underpinning is the structure theorem for finitely generated modules over a principal ideal domain: the space $\F^n$ becomes a module over the polynomial ring $\F[t]$, with $t$ acting as $A$, and the Jordan and rational canonical forms are the two ways of decomposing it ([[abstract-algebra/rings]], [[abstract-algebra/polynomials]]). In numerical work the Schur decomposition and the singular value decomposition ([[linear-algebra/svd]]) take its place. Infinite-dimensional analogues — the spectral theory of operators that are not self-adjoint — are a central topic of functional analysis.
+The Jordan form completes the classification of square matrices up to similarity, and it is the natural setting for the matrix exponential and the solution of linear systems of differential equations ([[ode/linear-systems]]), including the stability theory of [[ode/nonlinear-systems]]. Its algebraic underpinning is the structure theorem for finitely generated modules over a principal ideal domain, which belongs to a more advanced algebra course (see Dummit and Foote, *Abstract Algebra*, Chapter 12): with $t$ acting as $A$, the space $\F^n$ becomes a module over the polynomial ring $\F[t]$ — a principal ideal domain, as shown in [[abstract-algebra/rings]] and [[abstract-algebra/polynomials]] — and the Jordan and rational canonical forms are the two ways of decomposing it. In numerical work the Schur decomposition and the singular value decomposition ([[linear-algebra/svd]]) take its place. Infinite-dimensional analogues — the spectral theory of operators that are not self-adjoint — are a central topic of functional analysis.
 
 ::: summary
 - Every matrix satisfies its characteristic equation, $p_A(A) = O$ (Cayley–Hamilton, [[#thm-cayley-hamilton]]); so $A^{-1}$ and all powers of $A$ are polynomials in $A$ of degree less than $n$.
@@ -390,7 +390,7 @@ $(A - 2I)^2 = \begin{pmatrix}1&1\\-1&-1\end{pmatrix}^2 = O$ (by Cayley–Hamilto
 :::
 
 ::: exercise A degenerate node {level=2 check="1/e"}
-For the solution $\mathbf{x}(t) = (x_1(t), x_2(t))$ of $\mathbf{x}' = \begin{pmatrix}-1&1\\0&-1\end{pmatrix}\mathbf{x}$ with $\mathbf{x}(0) = (0, 1)$, find $x_1(1)$, and the time at which $x_1$ is largest.
+For the solution $\mathbf{x}(t) = (x_1(t), x_2(t))$ of $\mathbf{x}' = \begin{pmatrix}-1&1\\0&-1\end{pmatrix}\mathbf{x}$ with $\mathbf{x}(0) = (0, 1)$, find $x_1(t)$ and the time at which it is largest. What is $x_1(1)$?
 ::: solution
 By [[#ex-jordan-ode]], $x_1(t) = te^{-t}$, so $x_1(1) = e^{-1} = \frac1e$. Since $x_1'(t) = (1 - t)e^{-t}$, the maximum is at $t = 1$: the component $x_1$ is driven up by $x_2$ before both decay — a continuous-time version of transient growth.
 :::

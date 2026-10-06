@@ -106,7 +106,7 @@ f: x^2*sin(1/x); 2x*sin(1/x) - cos(1/x)
 x: -0.4, 0.4
 y: -1.3, 1.3
 labels: f(x) = x^2\sin(1/x); f'(x)
-caption: The function $x^2\sin(1/x)$ (flattened against the parabolas $\pm x^2$) is differentiable at $0$ with $f'(0) = 0$, yet its derivative oscillates between about $-1$ and $1$ in every neighbourhood of $0$. Notice, though, that $f'$ does not *jump*: by Darboux's theorem below, no derivative can.
+caption: The function $x^2\sin(1/x)$ (squeezed between $-x^2$ and $x^2$) is differentiable at $0$ with $f'(0) = 0$, yet its derivative oscillates between about $-1$ and $1$ in every neighbourhood of $0$. Notice, though, that $f'$ does not *jump*: by Darboux's theorem below, no derivative can.
 :::
 
 ## The mean value theorem
@@ -230,7 +230,7 @@ Suppose $f'(a) < y < f'(b)$ (otherwise replace $f$ by $-f$ and $y$ by $-y$). Let
 The minimum is not at $a$: since $\frac{g(x) - g(a)}{x - a} \to g'(a) < 0$ as $x \to a^+$, the quotient is negative for $x$ close to $a$, so $g(x) < g(a)$ there. Similarly, since $\frac{g(x) - g(b)}{x - b} \to g'(b) > 0$ as $x \to b^-$ and $x - b < 0$, we get $g(x) < g(b)$ for $x$ close to $b$. So $c \in (a, b)$, and by [[#thm-fermat]] $g'(c) = 0$, that is $f'(c) = y$.
 :::
 
-So the sign function, for example, is not the derivative of anything: it jumps from $-1$ to $1$ without taking the value $0$ anywhere on $(-1, 0) \cup (0, 1)$. Note that the proof does not use continuity of $f'$ — it could not, since $f'$ need not be continuous.
+So the sign function, for example, is not the derivative of anything: on $[-1, 1]$ it takes only the values $-1$, $0$ and $1$, so it misses the value $\tfrac12$, which lies strictly between $\sgn(-1) = -1$ and $\sgn(1) = 1$. Note that the proof does not use continuity of $f'$ — it could not, since $f'$ need not be continuous.
 
 ## L'Hôpital's rule
 
@@ -352,7 +352,7 @@ a finite sum of terms $c\,x^{-j}e^{-1/x^2}$, which tends to $0$ by step 1. So $f
 :::
 :::
 
-Functions equal to the sum of their Taylor series near every point are called **analytic**; [[#ex-flat]] shows that smooth (infinitely differentiable) functions need not be analytic. Such flat functions are indispensable for building smooth "bump" functions, used throughout differential geometry and analysis. In complex analysis the situation is completely different: a function that is differentiable once in the complex sense is automatically analytic ([[complex-analysis/analytic-functions]]).
+Functions equal to the sum of their Taylor series near every point are called **analytic**; [[#ex-flat]] shows that smooth (infinitely differentiable) functions need not be analytic. Such flat functions are indispensable for building smooth "bump" functions, used throughout differential geometry and analysis. In complex analysis the situation is completely different: a function that is differentiable just once in the complex sense, at every point of an open set, is automatically analytic there ([[complex-analysis/laurent-series]]).
 
 ::: history
 Pierre de Fermat's method for finding maxima and minima, developed in the 1630s, already contains the idea that the tangent is horizontal at an extremum. Michel Rolle stated his theorem for polynomials in 1691, without using calculus at all. Brook Taylor published the series that bears his name in *Methodus incrementorum* (1715), without a remainder; Joseph-Louis Lagrange gave the remainder in the form used here in *Théorie des fonctions analytiques* (1797), and the mean value theorem appears in his work as well. Augustin-Louis Cauchy proved the mean value theorem and his two-function version in his lectures of 1823 and 1829. The rule for $0/0$ was discovered by Johann Bernoulli, who taught it to the Marquis de l'Hôpital; l'Hôpital published it in his textbook *Analyse des infiniment petits* (1696). Gaston Darboux proved that derivatives have the intermediate value property in 1875.
@@ -366,7 +366,7 @@ The mean value theorem is the main bridge between derivatives and integrals: in 
 - $f'(c)$ is the limit of difference quotients; equivalently, $f(x) - f(c) = \varphi(x)(x - c)$ with $\varphi$ continuous at $c$ and $\varphi(c) = f'(c)$ ([[#lem-caratheodory]]). Differentiable functions are continuous.
 - Carathéodory's form gives a correct proof of the chain rule, avoiding division by $f(x) - f(c)$.
 - At an interior extremum $f'(c) = 0$; with the extreme value theorem this gives Rolle's theorem and the **mean value theorem** $f(b) - f(a) = f'(c)(b - a)$ ([[#thm-mvt]]).
-- Consequences: $f' = 0$ ⇒ constant; $f' \ge 0$ ⇒ increasing; $\abs{f'} \le K$ ⇒ $K$-Lipschitz. Many inequalities follow.
+- Consequences on an interval: $f' = 0$ ⇒ constant; $f' \ge 0$ ⇒ increasing; $\abs{f'} \le K$ ⇒ $K$-Lipschitz. Many inequalities follow.
 - Derivatives need not be continuous, but they always have the intermediate value property (Darboux).
 - L'Hôpital's rule follows from Cauchy's mean value theorem; it requires $\lim f'/g'$ to exist.
 - Taylor's theorem: $f(x) = P_n(x) + \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}$ ([[#thm-taylor]]). Smooth functions such as $e^{-1/x^2}$ need not equal the sum of their Taylor series.
@@ -408,7 +408,7 @@ $g(x) = f(x)e^{-x}$ is differentiable with $g'(x) = f'(x)e^{-x} - f(x)e^{-x} = 0
 ::: exercise Positive derivative at a point {level=2}
 Let $f(x) = x + 2x^2\sin(1/x)$ for $x \ne 0$ and $f(0) = 0$. Show that $f'(0) = 1$, but that $f$ is not increasing on any interval containing $0$.
 ::: solution
-$\frac{f(x) - f(0)}{x} = 1 + 2x\sin(1/x) \to 1$, so $f'(0) = 1$. For $x \ne 0$, $f'(x) = 1 + 4x\sin(1/x) - 2\cos(1/x)$. At $x_n = \frac{1}{2n\pi}$ this equals $1 + 0 - 2 = -1 < 0$. If $f$ were increasing on an interval $(-\delta, \delta)$, all its difference quotients there would be $\ge 0$, hence so would every derivative $f'(x)$ with $\abs x < \delta$; but $x_n \in (-\delta, \delta)$ for large $n$ and $f'(x_n) = -1$. So a positive derivative at a single point does not make a function increasing near that point; [[#cor-monotone]] needs $f' \ge 0$ on a whole interval.
+$\frac{f(x) - f(0)}{x} = 1 + 2x\sin(1/x) \to 1$, so $f'(0) = 1$. For $x \ne 0$, $f'(x) = 1 + 4x\sin(1/x) - 2\cos(1/x)$. At $x = \pm\frac{1}{2n\pi}$ this equals $1 + 0 - 2 = -1 < 0$. If $f$ were increasing on an interval containing $0$ and more than one point, it would be increasing on $[0, \delta)$ or on $(-\delta, 0]$ for some $\delta > 0$. All difference quotients of $f$ on that half-interval would then be $\ge 0$, hence so would $f'(x)$ at each of its points $x \ne 0$. But for large $n$ the half-interval contains $\frac{1}{2n\pi}$ (respectively $-\frac{1}{2n\pi}$), where $f' = -1$. So a positive derivative at a single point does not make a function increasing near that point; [[#cor-monotone]] needs $f' \ge 0$ on a whole interval.
 :::
 :::
 

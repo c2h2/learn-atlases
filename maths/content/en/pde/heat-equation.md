@@ -193,7 +193,7 @@ x: 0, pi
 y: 0, 1.3
 sliders: t=0:0:1.5:0.005
 labels: u(x,t)\ \text{(41 terms)}; \tfrac{4}{\pi}e^{-t}\sin x
-caption: The rod of [[#ex-cooling]] in dimensionless form ($L = \pi$, $k = 1$, initial temperature $1$). At $t = 0$ the partial sum shows the square initial profile with its Gibbs overshoot. Move $t$ just above $0$: the corners round off at once. By $t \approx 0.3$ the solution is indistinguishable from the single first mode (the second curve), which then simply decays.
+caption: The rod of [[#ex-cooling]] in dimensionless form ($L = \pi$, $k = 1$, initial temperature $1$). At $t = 0$ the partial sum shows the square initial profile with its Gibbs overshoot. Move $t$ just above $0$: the corners round off at once. By $t \approx 0.5$ the solution is indistinguishable from the single first mode (the second curve), which then simply decays.
 :::
 
 ::: quiz
@@ -385,13 +385,13 @@ For the right inequality let $g(x) = \pi\sin x - x(\pi - x)$, which is symmetric
 :::
 
 ::: quiz
-A solution of $u_t = u_{xx}$ on $[0,1]\times[0,2]$ has $u(x,0) = \sin\pi x$, $u(0,t) = 0$ and $u(1,t) = t/4$. Which of the following must be true?
+A solution of $u_t = u_{xx}$ on $[0,1]\times[0,2]$ has $u(x,0) = \sin\pi x$, $u(0,t) = 0$ and $u(1,t) = t/4$. Which of the following can be deduced from [[#thm-max]]?
 - [x] $0 \le u(x,t) \le 1$ for all $(x,t)$ in the rectangle.
 - [ ] $u(x, 2) \le u(x, 0)$ for every $x$.
 - [ ] The maximum of $u$ is attained only at $t = 0$.
 - [x] $u(x,t) \ge 0$ for all $(x,t)$ in the rectangle.
 ::: solution
-On the parabolic boundary the values are $\sin\pi x \in [0,1]$, $0$, and $t/4 \in [0, \tfrac12]$. By [[#thm-max]], $\min_\Gamma u = 0 \le u \le 1 = \max_\Gamma u$, which gives both correct options. The maximum principle compares the interior with the *whole* parabolic boundary, not with the initial values alone, so it does not imply $u(x,2) \le u(x,0)$ pointwise (near $x = 1$, $u(x,2)$ is close to $\tfrac12 > \sin\pi x$). And the maximum may be attained elsewhere too; the theorem only guarantees that it is attained on $\Gamma$.
+On the parabolic boundary the values are $\sin\pi x \in [0,1]$, $0$, and $t/4 \in [0, \tfrac12]$. By [[#thm-max]], $\min_\Gamma u = 0 \le u \le 1 = \max_\Gamma u$, which gives both correct options. The maximum principle compares the interior with the *whole* parabolic boundary, not with the initial values alone, so it does not imply $u(x,2) \le u(x,0)$ pointwise — which is in fact false: near $x = 1$, $u(x,2)$ is close to $\tfrac12 > \sin\pi x$. Nor does the theorem say that the maximum is attained *only* at $t = 0$; it guarantees only that it is attained somewhere on $\Gamma$. (Here the maximum $1$ happens to be attained only at $(\tfrac12, 0)$, but proving that needs the stronger form of the principle, which is beyond this chapter.)
 :::
 :::
 
@@ -400,11 +400,11 @@ On the parabolic boundary the values are $\sin\pi x \in [0,1]$, $0$, and $t/4 \i
 The factor $e^{-k(n\pi/L)^2t}$ in [[#eq-heat-series]] explains the character of diffusion.
 
 - **Instant smoothing.** For any $t > 0$, high frequencies are damped by factors like $e^{-cn^2t}$, so the solution is infinitely differentiable even if $f$ has jumps ([[#thm-heat-series]]). Corners and discontinuities disappear at once.
-- **Forgetting.** For large $t$ the first mode dominates and $u \approx b_1e^{-k\pi^2t/L^2}\sin\frac{\pi x}{L}$. The relaxation time $L^2/(k\pi^2)$ grows like the *square* of the length: diffusion spreads heat over a distance of order $\sqrt{kt}$ in time $t$.
+- **Forgetting.** For large $t$ the first mode dominates (if $b_1 \ne 0$) and $u \approx b_1e^{-k\pi^2t/L^2}\sin\frac{\pi x}{L}$. The relaxation time $L^2/(k\pi^2)$ grows like the *square* of the length: diffusion spreads heat over a distance of order $\sqrt{kt}$ in time $t$.
 - **Irreversibility.** Running time backwards multiplies the $n$th mode by $e^{+k(n\pi/L)^2t}$, which explodes.
 
 ::: warning The heat equation cannot be run backwards
-It is tempting to recover an earlier temperature distribution by solving the heat equation "backwards in time" from today's measurements. This problem is **ill posed**. The data $\frac1n\sin nx$ at time $t = 1$ on $(0,\pi)$ are tiny for large $n$, yet the only solution with zero end values that attains them came from $u(x, 0) = \frac{e^{n^2}}{n}\sin nx$, which is astronomically large. Arbitrarily small errors in the final data (and all measurements have errors) can correspond to arbitrarily large differences in the initial data. Diffusion destroys information, and that information cannot be recovered without additional assumptions.
+It is tempting to recover an earlier temperature distribution by solving the heat equation "backwards in time" from today's measurements. This problem is **ill posed**. For $u_t = u_{xx}$ on $(0,\pi)$, the data $\frac1n\sin nx$ at time $t = 1$ are tiny for large $n$, yet the only solution with zero end values that attains them came from $u(x, 0) = \frac{e^{n^2}}{n}\sin nx$, which is astronomically large. Arbitrarily small errors in the final data (and all measurements have errors) can correspond to arbitrarily large differences in the initial data. Diffusion destroys information, and that information cannot be recovered without additional assumptions.
 :::
 
 ::: application Diffusion everywhere

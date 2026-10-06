@@ -52,7 +52,7 @@ f: exp(z)
 mode: grid
 x: -2, 1.5
 y: -pi, pi
-caption: The image of a rectangular grid under $e^z$. Horizontal lines become rays from the origin and vertical lines become circles, crossing at right angles. The strip shown has height $2\pi$, so its image covers the punctured plane exactly once; a taller strip would wrap around again, which is the periodicity $e^{z+2\pi i} = e^z$. The left edge of the grid is squeezed towards $0$, which is never reached.
+caption: The image of a rectangular grid under $e^z$. Horizontal lines become rays from the origin and vertical lines become circles, crossing at right angles. The grid has height $2\pi$, so its image, an annulus around the origin, is covered exactly once (the whole strip $-\pi < y \le \pi$ covers the punctured plane exactly once); a taller strip would wrap around again, which is the periodicity $e^{z+2\pi i} = e^z$. The left edge of the grid is squeezed towards $0$, which is never reached.
 :::
 
 ::: example Solving an exponential equation {#ex-exp-eq}

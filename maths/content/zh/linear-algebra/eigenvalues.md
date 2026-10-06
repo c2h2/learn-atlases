@@ -315,7 +315,7 @@ $$
 :::
 :::
 
-引言中的例子是一个**马尔可夫链**：$A$的各列元素非负且和为$1$，所以总人口守恒。这样的矩阵总有特征值$1$（$A - I$的各行相加为零，所以$A - I$奇异），而属于$1$且各分量之和为$1$的特征向量称为**稳态**。对这两个城镇，稳态是$(0.6, 0.4)$。下图按照概率论的惯例展示同一个链：在那里转移矩阵作用于行向量，因而是$A$的转置。
+引言中的例子是一个**马尔可夫链**：$A$的各列元素非负且和为$1$，所以总人口守恒。这样的矩阵总有特征值$1$（$A - I$的每一列之和都为$0$，所以$A - I$的各行相加得零行，从而$A - I$奇异），而属于$1$且各分量之和为$1$的特征向量称为**稳态**。对这两个城镇，稳态是$(0.6, 0.4)$。下图按照概率论的惯例展示同一个链：在那里转移矩阵作用于行向量，因而是$A$的转置。
 
 ::: widget markov
 matrix: 0.8,0.2; 0.3,0.7
@@ -331,7 +331,7 @@ caption: 引言中的两镇链，初始时所有人都在城镇A。分布收敛�
 
 ## 复特征值
 
-实矩阵可以有复特征值，而且它们成共轭对出现：$p_A$的系数是实数，所以若$p_A(\lambda) = 0$，则$p_A(\bar\lambda) = \overline{p_A(\lambda)} = 0$；对$A\mathbf{v} = \lambda\mathbf{v}$取共轭，得$A\bar{\mathbf{v}} = \bar\lambda\bar{\mathbf{v}}$。在$\C$上，[[linear-algebra/linear-maps#eq-rotation]]中的旋转$R_\theta$有特征值$e^{\pm i\theta} = \cos\theta\pm i\sin\theta$，它在$\C$上可对角化，但在$\R$上不可对角化。用实数的语言来说，一对复特征值意味着旋转与缩放的结合。
+实矩阵可以有复特征值，而且它们成共轭对出现：$p_A$的系数是实数，所以若$p_A(\lambda) = 0$，则$p_A(\bar\lambda) = \overline{p_A(\lambda)} = 0$；对$A\mathbf{v} = \lambda\mathbf{v}$取共轭，得$A\bar{\mathbf{v}} = \bar\lambda\bar{\mathbf{v}}$。在$\C$上，[[linear-algebra/linear-maps#eq-rotation]]中的旋转$R_\theta$有特征值$e^{\pm i\theta} = \cos\theta\pm i\sin\theta$；当$\theta$不是$\pi$的整数倍时，它们不是实数，$R_\theta$在$\C$上可对角化，但在$\R$上不可对角化。用实数的语言来说，一对复特征值意味着旋转与缩放的结合。
 
 ::: proposition 旋转-缩放形式 {#prop-rotation-scaling}
 设$A$是$2\times 2$实矩阵，有非实特征值$\lambda = a - bi$（$b\neq 0$）及相应的特征向量$\mathbf{v} = \mathbf{x} + i\mathbf{y}$，其中$\mathbf{x}, \mathbf{y}\in\R^2$。则$P = (\mathbf{x}\ \ \mathbf{y})$可逆，并且
@@ -399,7 +399,7 @@ $A - 2I = \begin{pmatrix}1&2\\3&6\end{pmatrix}$的行列式为$6 - 6 = 0$，所�
 :::
 
 ::: exercise 由特征值求行列式 {level=1 check="-8"}
-某个$3\times 3$矩阵的特征值为$2$，$-1$和$4$。它的行列式是多少？迹是多少？
+某个$3\times 3$矩阵的特征值为$2$，$-1$和$4$。求它的迹和行列式。它的行列式是多少？
 ::: solution
 由[[#prop-trace-det]]，$\det A = 2\cdot(-1)\cdot 4 = -8$，$\tr A = 2 - 1 + 4 = 5$。
 :::

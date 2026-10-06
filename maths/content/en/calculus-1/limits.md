@@ -223,7 +223,7 @@ $$
 **Quotient.** Since $f/g = f\cdot(1/g)$, by the product rule it suffices to show $1/g(x) \to 1/M$. Choose $\delta_1$ with $\abs{g(x) - M} < \abs{M}/2$ for $0<\abs{x-a}<\delta_1$; then $\abs{g(x)} > \abs{M}/2 > 0$, so in particular $g(x) \neq 0$ and $1/g(x)$ is defined there. For such $x$,
 
 $$
-\abs{\frac{1}{g(x)} - \frac{1}{M}} = \frac{\abs{M - g(x)}}{\abs{g(x)}\,\abs{M}} < \frac{2}{\abs{M}^2}\,\abs{g(x) - M}.
+\abs{\frac{1}{g(x)} - \frac{1}{M}} = \frac{\abs{M - g(x)}}{\abs{g(x)}\,\abs{M}} \le \frac{2}{\abs{M}^2}\,\abs{g(x) - M}.
 $$
 
 Choose $\delta_2$ with $\abs{g(x) - M} < \eps\abs{M}^2/2$; for $0<\abs{x-a}<\min(\delta_1,\delta_2)$ the right-hand side is less than $\eps$.

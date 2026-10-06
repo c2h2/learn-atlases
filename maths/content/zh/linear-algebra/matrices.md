@@ -51,7 +51,7 @@ $$ {#eq-row-col}
 所以$AB$的$(i,j)$元是“$A$的第$i$行乘$B$的第$j$列”。理解乘积还有另外两种有用的方式，它们都可以由[[#eq-row-col]]直接得到：
 
 - **$AB$的第$i$行**是（$A$的第$i$行）$\,B$，即以$A$的第$i$行的元素为权的$B$的各**行**的组合。
-- **列-行展开**：$AB = \mathbf{a}_1\mathbf{r}_1 + \mathbf{a}_2\mathbf{r}_2 + \dots + \mathbf{a}_n\mathbf{r}_n$，其中$\mathbf{a}_k$是$A$的第$k$列，$\mathbf{r}_k$是$B$的第$k$行；每一项（列乘行）都是秩为一的$m\times p$矩阵。在[[linear-algebra/svd]]中讨论奇异值分解时，这一观点会再次出现。
+- **列-行展开**：$AB = \mathbf{a}_1\mathbf{r}_1 + \mathbf{a}_2\mathbf{r}_2 + \dots + \mathbf{a}_n\mathbf{r}_n$，其中$\mathbf{a}_k$是$A$的第$k$列，$\mathbf{r}_k$是$B$的第$k$行；每一项（列乘行）都是各行均为$\mathbf{r}_k$的倍数的$m\times p$矩阵——用[[linear-algebra/basis-dimension]]中的语言说，它的秩至多为一。在[[linear-algebra/svd]]中讨论奇异值分解时，这一观点会再次出现。
 
 ::: example 计算乘积 {#ex-product}
 设$A = \begin{pmatrix}1&2&0\\-1&1&3\end{pmatrix}$，$B = \begin{pmatrix}2&1\\0&-1\\1&4\end{pmatrix}$。计算$AB$和$BA$。
@@ -325,7 +325,7 @@ $$
 
 ::: widget rowreduce
 matrix: 1,1,1,1,0,0; 1,2,2,0,1,0; 1,2,3,0,0,1
-augmented: false
+augmented: 3
 caption: 对[[#ex-inverse]]中的矩阵执行[[#alg-inverse]]。同样的行变换作用于左右两半；当左半边变成$I$时，右半边就变成了$A^{-1}$。每做一步之前，先试着预测它的结果。
 :::
 

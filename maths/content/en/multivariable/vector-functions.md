@@ -365,7 +365,7 @@ t: 0, 2pi
 at: 0.5
 x: -3.5, 3.5
 y: -2.5, 2.5
-caption: The ellipse $(2\cos t, \sin t)$ with its osculating circle. Move the point around the curve. At the ends of the long axis ($t = 0, \pi$) the ellipse turns sharply: $\kappa = 2$ and the circle has radius $\tfrac12$. At the ends of the short axis ($t = \pm\pi/2$) it is flattest: $\kappa = \tfrac14$ and the circle has radius $4$. In general $\kappa(t) = 2/(1 + 3\sin^2 t)^{3/2}$.
+caption: The ellipse $(2\cos t, \sin t)$ with its osculating circle. Move the point around the curve. At the ends of the long axis ($t = 0, \pi$) the ellipse turns sharply: $\kappa = 2$ and the circle has radius $\tfrac12$. At the ends of the short axis ($t = \pi/2, 3\pi/2$) it is flattest: $\kappa = \tfrac14$ and the circle has radius $4$. In general $\kappa(t) = 2/(1 + 3\sin^2 t)^{3/2}$.
 :::
 
 ::: widget frenet

@@ -34,6 +34,8 @@ fx: 0.5 + a*cos(t)
 fy: a*sin(t)
 t: 0, 2pi
 sliders: a=1:0.3:2:0.1
+x: -1.7, 2.7
+y: -2.2, 2.2
 equal: true
 trace: true
 caption: The circle $\gamma(t) = \tfrac12 + ae^{it}$ traced counterclockwise, with its velocity vector $\gamma'(t) = iae^{it}$. Multiplication by $i$ turns the radius vector through a right angle, so the velocity is always tangent to the circle, and its length is the constant speed $a$. Change the radius with the slider: the length $2\pi a$ of the path is the time ($2\pi$) times the speed.
@@ -185,7 +187,7 @@ f: 1/z
 center: 0.3, 0.2
 radius: 1
 poles: 0, 0
-caption: The numerically computed integral of $1/z$ around a movable circle, compared with $2\pi i$ times the residues inside. Drag and resize the circle: as long as it encloses the origin the integral is exactly $2\pi i \approx 6.283i$, whatever the centre and radius; as soon as the origin is outside, it drops to $0$. Proving this in general is the job of [[complex-analysis/cauchy-theorem]].
+caption: The numerically computed integral of $1/z$ around a movable circle, compared with $2\pi i$ times the residues inside (for $1/z$ the only residue is $1$, at the origin; residues are defined in [[complex-analysis/residues]]). Drag and resize the circle: as long as it encloses the origin the integral is exactly $2\pi i \approx 6.283i$, whatever the centre and radius; as soon as the origin is outside, it drops to $0$. Proving this in general is the job of [[complex-analysis/cauchy-theorem]].
 :::
 
 ## The ML-inequality

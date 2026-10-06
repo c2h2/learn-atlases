@@ -39,7 +39,7 @@ The significands are $(1.00)_2 = 1$, $(1.01)_2 = 1.25$, $(1.10)_2 = 1.5$ and $(1
 | $e = 1$ | $2,\ 2.5,\ 3,\ 3.5$ | $0.5$ |
 | $e = 2$ | $4,\ 5,\ 6,\ 7$ | $1$ |
 
-There are only $16$ positive numbers. They are not evenly spaced: the gap doubles at each power of $2$, but the *relative* gap (gap divided by size) stays between $\frac18$ and $\frac14$. Numbers above $7$ overflow and positive numbers below $0.5$ underflow (to subnormals or $0$).
+There are only $16$ positive numbers. They are not evenly spaced: the gap doubles at each power of $2$, but the *relative* gap (gap divided by size) stays between $\frac18$ and $\frac14$. Numbers from $7.5$ upwards overflow (those between $7$ and $7.5$ still round to $7$), and positive numbers below $0.5$ underflow (to subnormals or $0$).
 :::
 :::
 
@@ -48,7 +48,7 @@ p: 3
 emin: -1
 emax: 2
 value: 2.3
-caption: The toy system of [[#ex-toy]] on a number line. The value $2.3$ lies between the neighbours $2$ and $2.5$ and rounds to $2.5$, a relative error of $0.087 < u = 2^{-3}$. Move the value and change the precision $p$: each extra bit halves every gap, and the maximal *relative* rounding error is always at most $u = 2^{-p}$.
+caption: The toy system of [[#ex-toy]] on a number line. The value $2.3$ lies between the neighbours $2$ and $2.5$ and rounds to $2.5$, a relative error of $0.087 < u = 2^{-3}$. Move the value and change the precision $p$: each extra bit halves every gap, and from the smallest normal number $2^{e_{\min}}$ up to the overflow threshold the *relative* rounding error never exceeds $u = 2^{-p}$ (below $2^{e_{\min}}$ the read-out reports underflow).
 :::
 
 The pattern in [[#ex-toy]] holds in general. Between $\beta^e$ and $\beta^{e+1}$ the floating-point numbers are equally spaced with gap $\beta^{e - p + 1}$. In particular the gap between $1$ and the next larger floating-point number is
@@ -233,7 +233,7 @@ A problem is **well-conditioned** at $x$ if $\kappa_f(x)$ is of moderate size an
 :::
 
 ::: theorem Conditioning governs error propagation {#thm-conditioning}
-Let $f$ be twice continuously differentiable near $x$. If $\hat x = x(1 + \delta)$, then
+Let $f$ be twice continuously differentiable near $x$, with $x \ne 0$ and $f(x) \ne 0$. If $\hat x = x(1 + \delta)$, then
 
 $$
 \frac{f(\hat x) - f(x)}{f(x)} = \frac{x f'(x)}{f(x)}\,\delta + O(\delta^2) , \qquad\text{so}\qquad \frac{\abs{f(\hat x) - f(x)}}{\abs{f(x)}} \le \kappa_f(x)\abs\delta + O(\delta^2).
@@ -316,7 +316,7 @@ Expanding the product, $\abs{\prod(1 + \delta_i) - 1} \le \prod(1 + \abs{\delta_
 For example, with $n = 10^6$ and $u = 2^{-53}$, $\gamma_n \approx 1.1\times10^{-10}$; to first order $\gamma_n \approx nu$.
 
 ::: theorem Error of recursive summation {#thm-summation}
-Let $\hat s$ be the floating-point sum of $x_1, \dots, x_n$ computed as $((x_1 + x_2) + x_3) + \cdots + x_n$. Then
+Let $\hat s$ be the floating-point sum of $x_1, \dots, x_n$ computed as $((x_1 + x_2) + x_3) + \cdots + x_n$, and suppose $(n - 1)u < 1$. Then
 
 $$
 \hat s = \sum_{i=1}^n x_i(1 + \theta^{(i)}), \quad \abs{\theta^{(i)}} \le \gamma_{n-1}, \qquad\text{hence}\qquad \abs{\hat s - s} \le \gamma_{n-1}\sum_{i=1}^n\abs{x_i} .
@@ -333,7 +333,7 @@ $$
 Each $x_i$ is multiplied by at most $n - 1$ factors $1 + \delta_k$, so by [[#lem-gamma]] its factor is $1 + \theta^{(i)}$ with $\abs{\theta^{(i)}} \le \gamma_{n-1}$ (a product of fewer factors satisfies an even smaller bound). Subtracting $s = \sum x_i$ and using the triangle inequality gives the bound on $\abs{\hat s - s}$.
 :::
 
-The first statement says that recursive summation is backward stable: the computed sum is the exact sum of slightly perturbed terms. The forward error bound shows when it is accurate: if all $x_i$ have the same sign then $\sum\abs{x_i} = \abs s$ and the relative error is at most $\gamma_{n-1} \approx nu$; with cancellation, $\sum\abs{x_i}$ can be much larger than $\abs s$. The proof also shows that early terms suffer the most rounding, which suggests adding small terms first. Summing $\sum_{k=1}^{10^6}\frac1{k^2}$ in *single* precision gives $1.644\,725\,3$ from $k = 1$ upwards and $1.644\,933\,0$ from $k = 10^6$ downwards; the true value is $1.644\,933\,07$. Going forwards, once the sum is near $1.64$ the terms below about $10^{-8}$ are simply rounded away.
+The first statement says that recursive summation is backward stable: the computed sum is the exact sum of slightly perturbed terms. The forward error bound shows when it is accurate: if all $x_i$ have the same sign then $\sum\abs{x_i} = \abs s$ and the relative error is at most $\gamma_{n-1} \approx nu$; with cancellation, $\sum\abs{x_i}$ can be much larger than $\abs s$. The proof also shows that early terms suffer the most rounding, which suggests adding small terms first. Summing $\sum_{k=1}^{10^6}\frac1{k^2}$ in *single* precision gives $1.644\,725\,3$ from $k = 1$ upwards and $1.644\,933\,0$ from $k = 10^6$ downwards; the true value is $1.644\,933\,07$. Going forwards, once the sum is near $1.64$ every term below $2^{-24} \approx 6\times10^{-8}$ (half the gap between single-precision numbers there), that is every term from $k = 4097$ on, is simply rounded away.
 
 A clever algorithm due to Kahan carries along the rounding error of each addition and feeds it back in.
 
@@ -361,12 +361,12 @@ Since $0 < x^ne^{x-1} \le x^n$ on $(0, 1]$, the true values satisfy $0 < I_n < \
 
 | $n$ | $5$ | $10$ | $15$ | $17$ | $18$ | $20$ | $25$ |
 |---|---|---|---|---|---|---|---|
-| forward recurrence | $0.145\,533$ | $0.083\,877\,07$ | $0.059\,034$ | $0.057\,19$ | $-0.029\,45$ | $-30.19$ | $1.93\times10^{8}$ |
-| true value | $0.145\,533$ | $0.083\,877\,10$ | $0.059\,018$ | $0.052\,77$ | $0.050\,12$ | $0.045\,54$ | $0.037\,09$ |
+| forward recurrence | $0.145\,533$ | $0.083\,877\,070\,06$ | $0.059\,034$ | $0.057\,19$ | $-0.029\,45$ | $-30.19$ | $1.93\times10^{8}$ |
+| true value | $0.145\,533$ | $0.083\,877\,070\,10$ | $0.059\,018$ | $0.052\,77$ | $0.050\,12$ | $0.045\,54$ | $0.037\,09$ |
 
 The negative value at $n = 18$ is impossible. The cause: $I_0$ is stored with an error $\eps_0$ of about $10^{-17}$, and each step multiplies the current error by $-n$, so the error in $I_n$ is $(-1)^n n!\,\eps_0$; $20! \approx 2.4\times10^{18}$. The *problem* is fine; the *algorithm* amplifies errors by $n!$.
 
-Running the recurrence **backwards**, $I_{n-1} = \frac{1 - I_n}{n}$, divides the error by $n$ at each step. Starting from the crude guess $I_{40} = 0$ (error less than $\frac{1}{41}$) and recurring down, the error is divided by $40\cdot39\cdots21 \approx 3.4\times10^{29}$ by the time we reach $n = 20$, and the backward recurrence gives $I_{20} = 0.045\,544\,884\,075\,818$, correct to all sixteen digits.
+Running the recurrence **backwards**, $I_{n-1} = \frac{1 - I_n}{n}$, divides the error by $n$ at each step. Starting from the crude guess $I_{40} = 0$ (error less than $\frac{1}{41}$) and recurring down, the error is divided by $40\cdot39\cdots21 \approx 3.4\times10^{29}$ by the time we reach $n = 20$, and the backward recurrence gives $I_{20} = 0.045\,544\,884\,075\,818\,05$, correct to all sixteen significant digits.
 :::
 :::
 
@@ -413,7 +413,7 @@ $\kappa = \abs{\frac{x\cdot3x^2}{x^3}} = 3$. A relative error $\delta$ in $x$ be
 :::
 
 ::: exercise Unit roundoff in single precision {level=1 check="2^(-24)"}
-Single precision has $p = 24$. What is its unit roundoff $u$, and about how many significant decimal digits does it carry?
+Single precision has $p = 24$. What is its unit roundoff $u$, and about how many significant decimal digits does it carry? (Enter $u$.)
 ::: solution
 $u = 2^{-p} = 2^{-24} \approx 5.96\times10^{-8}$, so single precision carries about $-\log_{10}u \approx 7.2$ significant decimal digits.
 :::
@@ -427,7 +427,7 @@ Multiplying by the conjugate, $\sqrt{x+1} - \sqrt x = \dfrac{1}{\sqrt{x + 1} + \
 :::
 
 ::: exercise The logarithm near 1 {level=2 check="1/ln(1.001)"}
-Find the relative condition number of $f(x) = \ln x$ at $x = 1.001$. If $x$ is known with relative error $10^{-16}$, about how many correct digits can $\ln x$ have?
+Find the relative condition number of $f(x) = \ln x$ at $x = 1.001$. If $x$ is known with relative error $10^{-16}$, about how many correct digits can $\ln x$ have? (Enter the condition number.)
 ::: solution
 $\kappa = \frac{1}{\abs{\ln x}} = \frac{1}{\ln 1.001} \approx 1000.5$. Relative errors are amplified by about $10^3$, so the relative error in $\ln x$ can be about $10^{-13}$: roughly $13$ correct digits instead of $16$.
 :::
@@ -444,16 +444,16 @@ By Taylor's theorem, $f(x \pm h) = f(x) \pm hf'(x) + \frac{h^2}{2}f''(x) \pm \fr
 :::
 
 ::: exercise A stable quadratic solver {level=2}
-Use the function `quadratic_roots` above to explain why it never subtracts nearly equal quantities, and verify by hand that it returns the correct roots of $x^2 - 5x + 6 = 0$.
+Use the function `quadratic_roots` above to explain why it avoids the cancellation of [[#ex-quadratic]], and verify by hand that it returns the correct roots of $x^2 - 5x + 6 = 0$.
 ::: solution
-The quantity $q = -\frac12\left(b + \operatorname{sign}(b)\sqrt{b^2 - 4ac}\right)$ adds $b$ and a number of the *same* sign, so no cancellation occurs (the square root itself is well-conditioned unless $b^2 \approx 4ac$, i.e. a near-double root, which is an ill-conditioned problem). The roots are $q/a$ and $c/q$, because $q$ is $a$ times one root and the product of the roots is $c/a$. For $a = 1$, $b = -5$, $c = 6$: $\sqrt{25 - 24} = 1$, $\operatorname{sign}(b)\cdot1 = -1$, $q = -\frac12(-5 - 1) = 3$. The roots are $q/a = 3$ and $c/q = 2$.
+The quantity $q = -\frac12\left(b + \operatorname{sign}(b)\sqrt{b^2 - 4ac}\right)$ adds $b$ and a number of the *same* sign, so no cancellation occurs. (The only remaining subtraction is in the discriminant $b^2 - 4ac$, which cancels only when $b^2 \approx 4ac$, i.e. near a double root; that problem is itself ill-conditioned, so no formula can do much better.) The roots are $q/a$ and $c/q$, because $q$ is $a$ times one root and the product of the roots is $c/a$. For $a = 1$, $b = -5$, $c = 6$: $\sqrt{25 - 24} = 1$, $\operatorname{sign}(b)\cdot1 = -1$, $q = -\frac12(-5 - 1) = 3$. The roots are $q/a = 3$ and $c/q = 2$.
 :::
 :::
 
 ::: exercise An inner product {level=3}
 Let $\hat s$ be the computed value of $s = \sum_{i=1}^n x_iy_i$ (products formed in floating point, then summed recursively). Using [[#eq-standard-model]] and [[#lem-gamma]], prove that $\abs{\hat s - s} \le \gamma_n\sum_{i=1}^n\abs{x_iy_i}$.
 ::: solution
-Each product is computed as $x_iy_i(1 + \epsilon_i)$ with $\abs{\epsilon_i} \le u$. Summing these $n$ numbers recursively, as in the proof of [[#thm-summation]], term $i$ is further multiplied by at most $n - 1$ factors $(1 + \delta_k)$. So $\hat s = \sum_i x_iy_i\prod_{j}(1 + \delta_{ij})$ where each product has at most $n$ factors with $\abs{\delta_{ij}} \le u$. By [[#lem-gamma]] each product equals $1 + \theta^{(i)}$ with $\abs{\theta^{(i)}} \le \gamma_n$ (fewer factors give a smaller bound, since $\gamma_k$ increases with $k$). Hence $\abs{\hat s - s} = \abs{\sum_ix_iy_i\theta^{(i)}} \le \gamma_n\sum_i\abs{x_iy_i}$. This bound is the basis of the error analysis of matrix multiplication and Gaussian elimination.
+Each product is computed as $x_iy_i(1 + \eps_i)$ with $\abs{\eps_i} \le u$. Summing these $n$ numbers recursively, as in the proof of [[#thm-summation]], term $i$ is further multiplied by at most $n - 1$ factors $(1 + \delta_k)$. So $\hat s = \sum_i x_iy_i\prod_{j}(1 + \delta_{ij})$ where each product has at most $n$ factors with $\abs{\delta_{ij}} \le u$. By [[#lem-gamma]] each product equals $1 + \theta^{(i)}$ with $\abs{\theta^{(i)}} \le \gamma_n$ (fewer factors give a smaller bound, since $\gamma_k$ increases with $k$). Hence $\abs{\hat s - s} = \abs{\sum_ix_iy_i\theta^{(i)}} \le \gamma_n\sum_i\abs{x_iy_i}$. This bound is the basis of the error analysis of matrix multiplication and Gaussian elimination.
 :::
 :::
 

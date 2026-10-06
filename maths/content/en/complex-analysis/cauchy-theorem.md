@@ -10,7 +10,7 @@ $$
 \oint_\gamma f\,dz = \oint_\gamma(u\,dx - v\,dy) + i\oint_\gamma(v\,dx + u\,dy) = \iint_\Omega(-v_x - u_y)\,dA + i\iint_\Omega(u_x - v_y)\,dA .
 $$
 
-Both integrands vanish identically by the Cauchy–Riemann equations, so $\oint_\gamma f\,dz = 0$. This was essentially Cauchy's own argument. It has two defects: it needs the derivative $f'$ to be continuous, which is not part of the definition of analyticity, and it relies on Green's theorem for general regions, whose proof is harder than it looks. In 1900 Édouard Goursat found a proof that avoids both, starting from triangles.
+Both integrands vanish identically by the Cauchy–Riemann equations, so $\oint_\gamma f\,dz = 0$. This was essentially Cauchy's own argument. It has two defects: it needs the derivative $f'$ to be continuous, which is not part of the definition of analyticity, and it relies on Green's theorem for general regions, whose proof is harder than it looks. In 1900 Édouard Goursat found a proof that avoids both, by subdividing into small squares; we follow Alfred Pringsheim's version of 1901, which starts from triangles.
 
 ## Goursat's theorem
 
@@ -111,7 +111,7 @@ A domain $D$ is **simply connected** if every closed curve in $D$ can be continu
 
 *If $f$ is analytic on a simply connected domain $D$, then $\oint_\gamma f\,dz = 0$ for every closed contour $\gamma$ in $D$, and $f$ has a primitive on $D$.*
 
-More generally, if two closed contours can be deformed into each other within the domain of analyticity of $f$ (they are *homotopic*), their integrals are equal. The proof covers the deformation by small discs, applies [[#thm-cauchy-disc]] in each, and adds up; see Stein and Shakarchi, *Complex Analysis*, Chapter 3, or Conway, *Functions of One Complex Variable*, Chapter IV. Homotopy and simple connectivity are studied in [[topology/fundamental-group]]. A version in which the deformation is replaced by the condition $n(\gamma, p) = 0$ for all $p\notin D$ (the **homology version**) is the most general form.
+More generally, if two closed contours can be deformed into each other within the domain of analyticity of $f$ (they are *homotopic*), their integrals are equal. The proof covers the deformation by small discs, applies [[#thm-cauchy-disc]] in each, and adds up; see Stein and Shakarchi, *Complex Analysis*, Chapter 3, or Conway, *Functions of One Complex Variable*, Chapter IV. Homotopy and simple connectivity are studied in [[topology/fundamental-group]]. A version in which the deformation is replaced by the condition $n(\gamma, p) = 0$ for all $p\notin D$, where $n$ is the winding number of [[complex-analysis/contour-integrals#def-winding]] (the **homology version**), is the most general form.
 
 In this course we use the theorem in the following concrete form: *if $\gamma$ is a simple closed contour (such as a circle, a polygon, or the boundary of a semicircle or a keyhole) and $f$ is analytic on an open set containing $\gamma$ and the region inside it, then $\oint_\gamma f\,dz = 0$.* For the contours that occur in practice this follows from [[#thm-cauchy-disc]] by cutting the inside region into finitely many convex pieces, as the next picture suggests.
 :::

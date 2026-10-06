@@ -385,7 +385,7 @@ caption: The Bessel functions $J_0$ and $J_1$, computed from [[#eq-bessel-series
 :::
 
 ::: application The sound of a drum
-A circular drumhead of radius $a$ vibrates in modes of the form $J_n(kr)\cos(n\theta)\cos(ckt)$, where the fixed rim requires $J_n(ka) = 0$. The allowed frequencies are therefore proportional to the zeros of Bessel functions: for the symmetric modes, to $2.405$, $5.520$, $8.654$, …. Unlike the frequencies $1, 2, 3, \dots$ of a vibrating string, these are not integer multiples of the lowest one, which is why a drum has a less definite pitch than a violin. The derivation is carried out in [[pde/laplace-equation]] and [[pde/sturm-liouville]].
+A circular drumhead of radius $a$ vibrates in modes of the form $J_n(kr)\cos(n\theta)\cos(ckt)$, where the fixed rim requires $J_n(ka) = 0$. The allowed frequencies are therefore proportional to the zeros of Bessel functions: for the symmetric modes, to $2.405$, $5.520$, $8.654$, …. Unlike the frequencies $1, 2, 3, \dots$ of a vibrating string, these are not integer multiples of the lowest one, which is why a drum has a less definite pitch than a violin. The modes come from separating the wave equation in polar coordinates, as Laplace's equation is separated in a disc in [[pde/laplace-equation]]; the radial factor then solves Bessel's equation, a singular Sturm–Liouville problem ([[pde/sturm-liouville]]).
 :::
 
 ::: history
@@ -394,7 +394,7 @@ Newton solved differential equations by infinite series in his *Methodus fluxion
 
 ## Where this leads
 
-Legendre polynomials and Bessel functions are the eigenfunctions of singular Sturm–Liouville problems, studied in [[pde/sturm-liouville]], and they appear whenever Laplace's, the heat or the wave equation is separated in spherical or cylindrical coordinates ([[pde/laplace-equation]]). The orthogonality of [[#thm-legendre-orth]] is the polynomial cousin of the orthogonality of sines and cosines in [[pde/fourier-series]]. In complex analysis, series solutions are the starting point of the theory of differential equations in the complex plane, where the behaviour of solutions around singular points (their **monodromy**) is a central topic ([[complex-analysis/laurent-series]]). And the zeros of Legendre polynomials are the nodes of Gaussian quadrature ([[numerical-analysis/numerical-integration]]).
+Legendre polynomials and Bessel functions are the eigenfunctions of singular Sturm–Liouville problems, studied in [[pde/sturm-liouville]], and they appear whenever Laplace's, the heat or the wave equation is separated in spherical or cylindrical coordinates ([[pde/laplace-equation]]). The orthogonality of [[#thm-legendre-orth]] is the polynomial cousin of the orthogonality of sines and cosines in [[pde/fourier-series]]. In complex analysis, series solutions are the starting point of the theory of differential equations in the complex plane, where the behaviour of solutions continued around singular points (their **monodromy**) is a central topic; the local expansions used there generalise the Laurent series of [[complex-analysis/laurent-series]]. And the zeros of Legendre polynomials are the nodes of Gaussian quadrature ([[numerical-analysis/numerical-integration]]).
 
 ::: summary
 - At an ordinary point, substitute $y = \sum a_n(x-x_0)^n$, shift indices and compare coefficients to get a recurrence; $a_0 = y(x_0)$ and $a_1 = y'(x_0)$ are free ([[#thm-ordinary]]).

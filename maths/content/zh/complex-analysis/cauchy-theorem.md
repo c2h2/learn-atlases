@@ -10,7 +10,7 @@ $$
 \oint_\gamma f\,dz = \oint_\gamma(u\,dx - v\,dy) + i\oint_\gamma(v\,dx + u\,dy) = \iint_\Omega(-v_x - u_y)\,dA + i\iint_\Omega(u_x - v_y)\,dA .
 $$
 
-由柯西-黎曼方程，两个被积函数都恒为零，所以$\oint_\gamma f\,dz = 0$。这基本上就是柯西本人的论证。它有两个缺陷：它要求导数$f'$连续，而这并不包含在解析的定义之中；它还依赖于一般区域上的格林公式，而后者的证明比看起来要难。1900年，古尔萨（Édouard Goursat）从三角形出发，找到了一个同时避开这两个缺陷的证明。
+由柯西-黎曼方程，两个被积函数都恒为零，所以$\oint_\gamma f\,dz = 0$。这基本上就是柯西本人的论证。它有两个缺陷：它要求导数$f'$连续，而这并不包含在解析的定义之中；它还依赖于一般区域上的格林公式，而后者的证明比看起来要难。1900年，古尔萨（Édouard Goursat）通过细分成小正方形，找到了一个同时避开这两个缺陷的证明；我们采用普林斯海姆（Alfred Pringsheim）1901年给出的形式，它从三角形出发。
 
 ## 古尔萨定理
 
@@ -111,7 +111,7 @@ $$
 
 **若$f$在单连通区域$D$上解析，则对$D$中的每条闭围道$\gamma$都有$\oint_\gamma f\,dz = 0$，并且$f$在$D$上有原函数。**
 
-更一般地，若两条闭围道能在$f$的解析区域内相互连续变形（即它们是**同伦**的），则它们的积分相等。证明的做法是用一些小圆盘覆盖整个变形过程，在每个小圆盘中应用[[#thm-cauchy-disc]]，再把结果相加；参见 Stein 与 Shakarchi《复分析》（*Complex Analysis*）第3章，或 Conway《单复变函数》（*Functions of One Complex Variable*）第IV章。同伦与单连通性在[[topology/fundamental-group]]一章中研究。把变形换成条件“对所有$p\notin D$都有$n(\gamma, p) = 0$”的版本（**同调形式**）是最一般的形式。
+更一般地，若两条闭围道能在$f$的解析区域内相互连续变形（即它们是**同伦**的），则它们的积分相等。证明的做法是用一些小圆盘覆盖整个变形过程，在每个小圆盘中应用[[#thm-cauchy-disc]]，再把结果相加；参见 Stein 与 Shakarchi《复分析》（*Complex Analysis*）第3章，或 Conway《单复变函数》（*Functions of One Complex Variable*）第IV章。同伦与单连通性在[[topology/fundamental-group]]一章中研究。把变形换成条件“对所有$p\notin D$都有$n(\gamma, p) = 0$”（其中$n$是[[complex-analysis/contour-integrals#def-winding]]中的环绕数）的版本（**同调形式**）是最一般的形式。
 
 本课程以如下具体形式使用该定理：**若$\gamma$是简单闭围道（例如圆周、多边形，或者半圆形、钥匙孔形区域的边界），且$f$在包含$\gamma$及其内部区域的某个开集上解析，则$\oint_\gamma f\,dz = 0$。**对实际中出现的围道，把内部区域切成有限个凸块，就可以由[[#thm-cauchy-disc]]推出这一结论，正如下面的图景所提示的那样。
 :::

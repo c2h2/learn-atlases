@@ -89,6 +89,8 @@ f: 1/(z^4 + 1)
 center: 0, 0.6
 radius: 1
 poles: 0.7071, 0.7071; -0.7071, 0.7071; -0.7071, -0.7071; 0.7071, -0.7071
+x: -2, 2
+y: -1.5, 2
 caption: The four simple poles of $\frac{1}{z^4+1}$ sit at $e^{\pm i\pi/4}$ and $e^{\pm 3i\pi/4}$. Move and resize the circle and compare the numerical value of $\oint f\,dz$ with $2\pi i$ times the sum of the residues enclosed: they agree, and the integral only changes when a pole crosses the circle. With the two upper poles enclosed the integral is $\pi/\sqrt2\approx 2.221$ — the value of $\int_{-\infty}^\infty\frac{dx}{1+x^4}$ computed below.
 :::
 
@@ -360,7 +362,7 @@ Cauchy introduced residues (*résidus*) in 1826 in his *Exercices de mathématiq
 
 ## Where this leads
 
-The residue theorem is the most widely used tool of complex analysis. It computes inverse Laplace and Fourier transforms ([[ode/laplace-transform]], [[pde/fourier-transform]]), sums series such as $\sum 1/n^2$ ([[#exr-basel]]), and gives asymptotic formulas in combinatorics through generating functions ([[discrete/generating-functions]]). The argument principle and Rouché's theorem locate zeros of polynomials and transcendental functions, and the winding numbers behind them are the degree of a loop, studied topologically in [[topology/fundamental-group]]. Finally, the open mapping property that follows from the argument principle — a non-constant analytic function maps open sets to open sets — is the starting point of [[complex-analysis/conformal-maps]].
+The residue theorem is the most widely used tool of complex analysis. It computes inverse Laplace and Fourier transforms ([[ode/laplace-transform]], [[pde/fourier-transform]]), sums series such as $\sum 1/n^2$ ([[#exr-basel]]), and gives asymptotic formulas in combinatorics through generating functions ([[discrete/generating-functions]]). The argument principle and Rouché's theorem locate zeros of polynomials and transcendental functions, and the winding numbers behind them are the degree of a loop, studied topologically in [[topology/fundamental-group]]. Finally, by counting the solutions of $f(z) = w$ near a point, the argument principle shows that a non-constant analytic function maps open sets to open sets (the open mapping property) and that an injective one has a non-vanishing derivative, a fact used in [[complex-analysis/conformal-maps]].
 
 ::: summary
 - The residue of $f$ at an isolated singularity is the Laurent coefficient $c_{-1} = \frac{1}{2\pi i}\oint f$ around a small circle; at a simple pole it is $\lim(z - a)f(z)$ or $g(a)/h'(a)$, at a pole of order $m$ use [[#eq-res-order-m]], at an essential singularity expand.

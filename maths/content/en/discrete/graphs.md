@@ -10,7 +10,7 @@ A **graph** $G = (V, E)$ consists of a finite non-empty set $V$ of **vertices** 
 
 We write $V(G)$ and $E(G)$ when several graphs are around, and always use $n = \abs{V}$ for the number of vertices and $m = \abs{E}$ for the number of edges. The definition excludes **loops** (edges from a vertex to itself) and **multiple edges** (several edges joining the same pair); graphs without them are called **simple**, and when they are allowed we speak of a **multigraph** — we will need one for the bridges of Königsberg in [[discrete/graph-algorithms]]. In a **directed graph** the edges are ordered pairs $(u,v)$, drawn as arrows. Unless we say otherwise, "graph" means a finite simple undirected graph.
 
-A graph is the abstract pair $(V, E)$, not a picture of it. Positions, lengths and crossings belong to a *drawing*: a square with both diagonals and a triangle with a vertex in the middle are two drawings of the same graph $K_4$, in which every two of the four vertices are adjacent. Learning to look past the drawing is one of the main skills of the subject.
+A graph is the abstract pair $(V, E)$, not a picture of it. Positions, lengths and crossings belong to a *drawing*: a square with both diagonals and a triangle with a vertex in the middle joined to all three corners are two drawings of the same graph $K_4$, in which every two of the four vertices are adjacent. Learning to look past the drawing is one of the main skills of the subject.
 
 ::: definition Degree {#def-degree}
 The **degree** $\deg(v)$ of a vertex $v$ is the number of edges incident with it, so $\deg(v) = \abs{N(v)}$. We write $\delta(G)$ and $\Delta(G)$ for the minimum and maximum degree. A vertex of degree $0$ is **isolated**, a vertex of degree $1$ is a **leaf**, and $G$ is **$k$-regular** if every vertex has degree $k$.
@@ -343,7 +343,7 @@ For $n \ge 2$ there are exactly $n^{n-2}$ trees with vertex set $[n]$.
 :::
 
 ::: proof {collapsed}
-*Sketch (Prüfer's bijection).* Given a tree on $[n]$, repeat $n - 2$ times: delete the leaf with the smallest label and record the label of its neighbour. The resulting **Prüfer code** lies in $[n]^{n-2}$, and each vertex $v$ occurs in it exactly $\deg(v) - 1$ times. Conversely, from any sequence in $[n]^{n-2}$ the tree can be rebuilt: at each step the deleted leaf must be the smallest label not yet deleted that does not occur in the remaining part of the sequence, and the last two vertices are joined at the end. So the code is a bijection between trees and sequences, and there are $n^{n-2}$ trees. Full details, and three further proofs, are in Aigner and Ziegler, *Proofs from THE BOOK*.
+*Sketch (Prüfer's bijection).* Given a tree on $[n]$, repeat $n - 2$ times: delete the leaf with the smallest label and record the label of its neighbour. The resulting **Prüfer code** lies in $[n]^{n-2}$, and each vertex $v$ occurs in it exactly $\deg(v) - 1$ times. Conversely, from any sequence in $[n]^{n-2}$ the tree can be rebuilt: at each step the deleted leaf must be the smallest label not yet deleted that does not occur in the remaining part of the sequence, and the last two vertices are joined at the end. So the code is a bijection between trees and sequences, and there are $n^{n-2}$ trees. Full details are in most graph theory textbooks; Aigner and Ziegler, *Proofs from THE BOOK*, give four other proofs, including a different bijection due to André Joyal.
 :::
 
 For example, the tree on $[7]$ with edges $13, 23, 35, 45, 56, 67$ loses the leaves $1, 2, 3, 4, 5$ in that order (each becomes the smallest leaf in turn), recording the code $(3, 3, 5, 5, 6)$: the degree-$3$ vertices $3$ and $5$ occur twice, the degree-$2$ vertex $6$ once, and the leaves not at all.
@@ -380,7 +380,7 @@ The diagonal of $A^2$ lists the degrees $2, 2, 3, 1$, since a closed walk of len
 :::
 
 ::: application Spectra and random walks
-The eigenvalues of $A$, the *spectrum* of the graph, carry structural information: for instance, a connected graph is bipartite exactly when the negative of its largest eigenvalue is also an eigenvalue. They also govern random walks on the graph, the Markov chains of [[probability/markov-chains]] — the idea behind ranking web pages by where a random surfer spends most time.
+The eigenvalues of $A$, the *spectrum* of the graph, carry structural information: for instance, a connected graph is bipartite exactly when the negative of its largest eigenvalue is also an eigenvalue. The eigenvalues of the closely related transition matrix (row $i$ of $A$ divided by $\deg(v_i)$) govern random walks on the graph, the Markov chains of [[probability/markov-chains]] — the idea behind ranking web pages by where a random surfer spends most time.
 :::
 
 ::: history

@@ -329,7 +329,7 @@ $$
 \left(\sum_{n=0}^\infty a_nx^n\right)\left(\sum_{n=0}^\infty b_nx^n\right) = \sum_{n=0}^\infty\left(\sum_{k=0}^n a_kb_{n-k}\right)x^n
 $$ {#eq-cauchy-product}
 
-这对小于两个收敛半径的$\abs x$成立。这个**柯西乘积**公式之所以成立，是因为两个级数在那里都绝对收敛（这是柯西和默滕斯（Mertens）的一个定理，证明见[[real-analysis/series]]）。例如，把几何级数平方，得$\frac{1}{(1-x)^2} = \sum_n (n+1)x^n$，与[[#ex-differentiate]]的结果一致。
+这对小于两个收敛半径的$\abs x$成立。这个**柯西乘积**公式之所以成立，是因为两个级数在那里都绝对收敛（这是柯西和默滕斯（Mertens）的一个定理，见[[real-analysis/series]]）。例如，把几何级数平方，得$\frac{1}{(1-x)^2} = \sum_n (n+1)x^n$，与[[#ex-differentiate]]的结果一致。
 
 ::: example 在另一个中心处展开 {#ex-recentre}
 求$f(x) = \dfrac1x$以$a = 2$为中心的幂级数及其收敛区间。
@@ -364,7 +364,7 @@ $$
 :::
 
 ::: application 生成函数
-幂级数可以把整个数列存储在一个函数中：数列$(a_n)$的**生成函数**是$\sum a_nx^n$。对于斐波那契数，$\sum F_nx^n = \frac{x}{1 - x - x^2}$（[[#exr-fibonacci-gf]]），把右端展开成部分分式，就得到比内（Binet）公式$F_n = (\varphi^n - (-1/\varphi)^n)/\sqrt5$。收敛半径编码了增长速度：这里$R = 1/\varphi$，因为$F_n$像$\varphi^n$那样增长。生成函数将在[[discrete/generating-functions]]中展开讨论，而作为概率生成函数，它出现在[[probability/discrete-random-variables]]中。
+幂级数可以把整个数列存储在一个函数中：数列$(a_n)$的**生成函数**是$\sum a_nx^n$。对于斐波那契数，$\sum F_nx^n = \frac{x}{1 - x - x^2}$（[[#exr-fibonacci-gf]]），把右端展开成部分分式，就得到比内（Binet）公式$F_n = (\varphi^n - (-1/\varphi)^n)/\sqrt5$。收敛半径编码了增长速度：这里$R = 1/\varphi$，因为$F_n$像$\varphi^n$那样增长。生成函数将在[[discrete/generating-functions]]中展开讨论，而作为概率生成函数，它出现在[[probability/expectation]]中。
 :::
 
 ::: history
@@ -402,7 +402,7 @@ $\abs{\dfrac{c_{n+1}}{c_n}} = \dfrac{n\,5^n}{(n+1)5^{n+1}} = \dfrac{n}{5(n+1)} \
 :::
 
 ::: exercise 利用代换 {level=1 check="1/2"}
-求$\dfrac{x}{1+4x^2}$以$0$为中心的幂级数及其收敛半径。
+求$\dfrac{x}{1+4x^2}$以$0$为中心的幂级数及其收敛半径。（填写收敛半径。）
 ::: solution
 把$-4x^2$代入几何级数，当$4x^2 < 1$时$\dfrac{1}{1+4x^2} = \sum_{n\ge0}(-4x^2)^n$。乘以$x$，得
 

@@ -304,7 +304,7 @@ $$
 \int\frac{x+5}{x^2+x-2}\,dx = 2\ln\abs{x-1} - \ln\abs{x+2} + C.
 $$
 
-(b) The repeated factor $x^2$ needs two terms: $\dfrac{1}{x^2(x+1)} = \dfrac Ax + \dfrac B{x^2} + \dfrac{C}{x+1}$, so $1 = Ax(x+1) + B(x+1) + Cx^2$. At $x = 0$: $B = 1$. At $x = -1$: $C = 1$. Comparing coefficients of $x^2$: $0 = A + C$, so $A = -1$. Hence
+(b) The repeated factor $x^2$ needs two terms: $\dfrac{1}{x^2(x+1)} = \dfrac Ax + \dfrac B{x^2} + \dfrac{D}{x+1}$, so $1 = Ax(x+1) + B(x+1) + Dx^2$. At $x = 0$: $B = 1$. At $x = -1$: $D = 1$. Comparing coefficients of $x^2$: $0 = A + D$, so $A = -1$. Hence
 
 $$
 \int\frac{dx}{x^2(x+1)} = -\ln\abs{x} - \frac1x + \ln\abs{x+1} + C.
@@ -411,7 +411,7 @@ caption: Simpson's rule fits parabolas through consecutive triples of points. Fo
 :::
 
 ::: application Numerical integration
-Every serious computation of an integral that has no closed form — the arc length of an ellipse, the probability that a normally distributed quantity lies in a range, the energy radiated by a black body — uses numerical rules such as Simpson's. Their analysis, including why Simpson's error behaves like $1/n^4$ for smooth integrands and how adaptive methods concentrate effort where the integrand changes fastest, is part of [[numerical-analysis/numerical-integration]].
+Integrals that have no closed form — the arc length of an ellipse, the probability that a normally distributed quantity lies in a range, the energy a black body radiates in a given band of wavelengths — are computed numerically, very often with rules such as Simpson's. Their analysis, including why Simpson's error behaves like $1/n^4$ for smooth integrands and how adaptive methods concentrate effort where the integrand changes fastest, is part of [[numerical-analysis/numerical-integration]].
 :::
 
 ::: history

@@ -21,7 +21,7 @@ We picture a vector field by drawing the arrow $\mathbf{F}(\mathbf{x})$ with its
   of magnitude $GMm/\norm{\mathbf{r}}^2$ and directed towards the origin — an **inverse-square field**. Electrostatic forces have the same form.
 - **Gradient fields**: for a differentiable function $f$, the field $\nabla f$ points in the direction of steepest ascent of $f$ (see [[multivariable/gradient#thm-steepest]]). For instance $f = \sqrt{x^2+y^2+z^2}$ has $\nabla f = \mathbf{r}/\norm{\mathbf{r}}$, the unit radial field.
 
-If $\mathbf{F}$ is the velocity field of a fluid, a particle carried by the flow moves along a curve $\mathbf{r}(t)$ with $\mathbf{r}'(t) = \mathbf{F}(\mathbf{r}(t))$; such curves are called **flow lines** or **streamlines**. For the rotation field they are circles about the origin; for the radial field, rays from the origin. Finding flow lines means solving a system of differential equations, the subject of [[ode/linear-systems]].
+If $\mathbf{F}$ is the velocity field of a fluid, a particle carried by the flow moves along a curve $\mathbf{r}(t)$ with $\mathbf{r}'(t) = \mathbf{F}(\mathbf{r}(t))$; such curves are called **flow lines** or **streamlines**. For the rotation field they are circles about the origin; for the radial field, rays from the origin. Finding flow lines means solving a system of differential equations, the subject of [[ode/linear-systems]] and [[ode/nonlinear-systems]].
 
 ::: widget vectorfield
 P: a*x - b*y
@@ -342,7 +342,7 @@ t: 0, 2pi
 x: -3, 3
 y: -3, 3
 sliders: c=0:-2:2:0.1; r=1:0.3:2:0.1
-caption: The vortex field of [[#ex-vortex]] with a circle of radius $r$ centred at $(c, 0)$. While the circle surrounds the origin the circulation is exactly $2\pi$, however you move or resize it; as soon as the origin lies outside, it drops to $0$. (When the circle passes through the origin the integral is undefined.) Explaining this jump is one of the first applications of Green's theorem.
+caption: The vortex field of [[#ex-vortex]] with a circle of radius $r$ centred at $(c, 0)$. While the circle surrounds the origin the circulation is exactly $2\pi$, however you move or resize it; as soon as the origin lies outside, it drops to $0$. (When the circle passes through the origin the integral is undefined.) Green's theorem does not apply directly to a disc containing the origin, where $\mathbf{F}$ is undefined — which is why the figure's estimate of $\iint_D\curl\mathbf{F}\,dA$ does not match the circulation — but explaining this jump is one of its first applications.
 :::
 
 ::: warning The test P_y = Q_x is not enough on its own
@@ -421,7 +421,7 @@ The idea that a force can be derived from a single function goes back to Joseph-
 
 ## Where this leads
 
-The vortex shows that whether "$P_y = Q_x$" implies "conservative" is a question about the shape of the domain. [[multivariable/greens-theorem]] resolves it in the plane: the quantity $Q_x - P_y$ (the scalar curl) measures circulation per unit area, and its integral over a region equals the circulation around the boundary. In three dimensions the conditions of [[#thm-curl-test]] say that the curl $\nabla\times\mathbf{F}$ vanishes, and Stokes' theorem ([[multivariable/stokes-divergence]]) plays the role of Green's theorem. In [[complex-analysis/contour-integrals]] line integrals of analytic functions are path-independent on simply connected domains (Cauchy's theorem), and the vortex reappears as the integral of $1/z$, which counts how many times a curve winds round the origin. That counting is the starting point of algebraic topology ([[topology/fundamental-group]]).
+The vortex shows that whether "$P_y = Q_x$" implies "conservative" is a question about the shape of the domain. [[multivariable/greens-theorem]] resolves it in the plane: the quantity $Q_x - P_y$ (the scalar curl) measures circulation per unit area, and its integral over a region equals the circulation around the boundary. In three dimensions the conditions of [[#thm-curl-test]] say that the curl $\nabla\times\mathbf{F}$ vanishes, and Stokes' theorem ([[multivariable/stokes-divergence]]) plays the role of Green's theorem. In complex analysis, line integrals of analytic functions are path-independent on simply connected domains (Cauchy's theorem, [[complex-analysis/cauchy-theorem]]), and the vortex reappears as the integral of $1/z$, which counts how many times a curve winds round the origin ([[complex-analysis/contour-integrals]]). That counting is the starting point of algebraic topology ([[topology/fundamental-group]]).
 
 ::: summary
 - A vector field assigns a vector to each point; flow lines satisfy $\mathbf{r}' = \mathbf{F}(\mathbf{r})$ ([[#def-vector-field]]).

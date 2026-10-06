@@ -38,7 +38,7 @@ Multiply by $4a = 12 \equiv 1$ — conveniently, here multiplying by $12$ change
 ::: widget modular
 n: 13
 mode: multiply
-caption: The multiplication table modulo $13$. Its diagonal holds the squares $a\cdot a$, which take only the six values $1, 4, 9, 3, 12, 10$ (each twice, from $a$ and $13 - a$): these are the quadratic residues. Check [[#cor-legendre-mult]] in the table: a product of two non-residues, such as $2\cdot 5 = 10$, is a residue.
+caption: The multiplication table modulo $13$. Its diagonal holds the squares $a\cdot a$; for $a \ne 0$ they take only the six values $1, 4, 9, 3, 12, 10$ (each twice, from $a$ and $13 - a$): these are the quadratic residues. Check [[#cor-legendre-mult]] in the table: a product of two non-residues, such as $2\cdot 5 = 10$, is a residue.
 :::
 
 ## The Legendre symbol and Euler's criterion
@@ -264,7 +264,7 @@ caption: Eisenstein's proof for $p = 11$, $q = 7$. The $5 \times 3 = 15$ lattice
 :::
 
 ::: intuition Why reciprocity is surprising
-The statement "$p$ is a square modulo $q$" is about arithmetic modulo $q$, while "$q$ is a square modulo $p$" is about arithmetic modulo $p$ — two completely different finite worlds. Reciprocity says they are linked by a simple sign. Gauss's lemma turns each symbol into a count, and the lattice-point picture shows that the two counts are complementary pieces of a single rectangle: the hidden symmetry is the reflection of the rectangle in its diagonal.
+The statement "$p$ is a square modulo $q$" is about arithmetic modulo $q$, while "$q$ is a square modulo $p$" is about arithmetic modulo $p$ — two completely different finite worlds. Reciprocity says they are linked by a simple sign. Gauss's lemma turns each symbol into a count, and the lattice-point picture shows that the two counts are complementary pieces of a single rectangle, cut by its diagonal: the hidden symmetry is the exchange of $x$ and $y$, which swaps the roles of $p$ and $q$.
 :::
 
 ### Computing with reciprocity
@@ -359,12 +359,12 @@ For a prime $p \equiv 3 \pmod 4$ and a residue $a$, $x = a^{(p+1)/4} \bmod p$ is
 :::
 
 ::: history
-Euler discovered the reciprocity law experimentally in the 1740s–1780s, stating it in several equivalent forms. Adrien-Marie Legendre introduced his symbol and published a proof in 1785 (and again in his 1798 *Essai sur la théorie des nombres*), but the proof assumed results, such as the existence of suitable auxiliary primes, that he could not establish. Carl Friedrich Gauss found the first complete proof in 1796 and published it in the *Disquisitiones Arithmeticae* (1801), calling the law the *theorema fundamentale*; he eventually found eight proofs. Gauss's lemma appeared in his third proof (1808). Ferdinand Gotthold Eisenstein gave the lattice-point proof used here in 1844, and Carl Gustav Jacob Jacobi introduced his symbol in 1837. Hundreds of proofs have since been published, and the search for analogues — cubic, biquadratic and higher reciprocity laws — led eventually to class field theory, one of the great achievements of twentieth-century number theory.
+Euler discovered the reciprocity law experimentally in the 1740s–1780s, stating it in several equivalent forms. Adrien-Marie Legendre published a proof in 1785 and again in his *Essai sur la théorie des nombres* (1798), where he introduced his symbol; but the proof assumed results, such as the existence of suitable auxiliary primes, that he could not establish. Carl Friedrich Gauss found the first complete proof in 1796 and published it in the *Disquisitiones Arithmeticae* (1801), calling the law the *theorema fundamentale*; he eventually found eight proofs. Gauss's lemma appeared in his third proof (1808). Ferdinand Gotthold Eisenstein gave the lattice-point proof used here in 1844, and Carl Gustav Jacob Jacobi introduced his symbol in 1837. Hundreds of proofs have since been published, and the search for analogues — cubic, biquadratic and higher reciprocity laws — led eventually to class field theory, one of the great achievements of twentieth-century number theory.
 :::
 
 ## Where this leads
 
-Quadratic residues reappear in [[number-theory/diophantine]], where $\bigl(\frac{-1}p\bigr) = 1$ is the first step in deciding which primes are sums of two squares, and in [[number-theory/cryptography]], where Euler's criterion underlies probabilistic primality tests. The number of solutions of $x^2 \equiv a \pmod n$ for composite $n$ follows by combining the prime case with the Chinese remainder theorem ([[number-theory/congruences]]). In algebraic number theory, quadratic reciprocity describes how primes split in quadratic fields such as $\Q(\sqrt{5})$, and it is the simplest instance of the reciprocity laws studied through Galois groups ([[abstract-algebra/fields-galois]]).
+Quadratic residues reappear in [[number-theory/diophantine]], where $\bigl(\frac{-1}p\bigr) = 1$ is the first step in deciding which primes are sums of two squares, and in [[number-theory/cryptography]], whose Miller–Rabin primality test is a sharper form of the congruence $a^{(p-1)/2} \equiv \pm 1$ given by Euler's criterion. The number of solutions of $x^2 \equiv a \pmod n$ for composite $n$ follows by combining the prime case with the Chinese remainder theorem ([[number-theory/congruences]]). In algebraic number theory, quadratic reciprocity describes how primes split in quadratic fields such as $\Q(\sqrt{5})$, and it is the simplest instance of the reciprocity laws studied through Galois groups ([[abstract-algebra/fields-galois]]).
 
 ::: summary
 - Modulo an odd prime $p$, exactly half of the non-zero residues are **quadratic residues**; each has two square roots $\pm x$.

@@ -36,7 +36,7 @@ and there are exactly $n$ of them, $[0], [1], \dots, [n-1]$. A set containing ex
 n: 12
 mode: clock
 a: 5
-caption: Arithmetic on a $12$-hour clock is arithmetic modulo $12$: adding $5$ repeatedly visits $0, 5, 10, 3, 8, 1, \dots$ and returns to $0$ only after twelve steps, because $\gcd(5, 12) = 1$. Every integer lands on one of the twelve positions, its residue class; for instance $38$ and $-10$ both land on $2$.
+caption: Arithmetic on a $12$-hour clock is arithmetic modulo $12$: the figure opens with $5 + 9 = 14 \equiv 2$, the sum wrapping once past $0$. Choose "multiples of a" to see that adding $5$ repeatedly visits $0, 5, 10, 3, 8, 1, \dots$ and returns to $0$ only after twelve steps, because $\gcd(5, 12) = 1$. Every integer lands on one of the twelve positions, its residue class; for instance $38$ and $-10$ both land on $2$.
 :::
 
 ## Arithmetic with congruences
@@ -120,7 +120,7 @@ $$
 a number is congruent to its digit sum modulo $9$ (and modulo $3$). Since $10 \equiv -1 \pmod{11}$, $10^i \equiv (-1)^i$, and $N$ is congruent modulo $11$ to its **alternating digit sum** $d_0 - d_1 + d_2 - \cdots$. For $918\,082$ the alternating sum is $2 - 8 + 0 - 8 + 1 - 9 = -22 \equiv 0$, so $11 \mid 918\,082$ (indeed $918\,082 = 11 \cdot 83\,462$), while its digit sum $28$ shows it leaves remainder $1$ on division by $9$. The rule modulo $9$ is the basis of **casting out nines**, an old check on hand multiplication: if $ab = c$ then the digit sums must satisfy $s(a)s(b) \equiv s(c) \pmod 9$.
 
 ::: warning Division and exponents need care
-Congruences may be multiplied but not, in general, divided. For example $2\cdot 4 \equiv 2\cdot 1 \pmod 6$, since $8 - 2 = 6$, yet $4 \not\equiv 1 \pmod 6$. The correct rule is [[#prop-cancel]] below. Likewise, **exponents may not be reduced modulo $n$**: $10 \equiv 3 \pmod 7$, but $2^{10} = 1024 \equiv 2 \pmod 7$ while $2^3 = 8 \equiv 1 \pmod 7$. Exponents can be reduced modulo the order of the base — by Fermat and Euler, modulo $p - 1$ or $\varphi(n)$ ([[number-theory/fermat-euler]]).
+Congruences may be multiplied but not, in general, divided. For example $2\cdot 4 \equiv 2\cdot 1 \pmod 6$, since $8 - 2 = 6$, yet $4 \not\equiv 1 \pmod 6$. The correct rule is [[#prop-cancel]] below. Likewise, **exponents may not be reduced modulo $n$**: $10 \equiv 3 \pmod 7$, but $2^{10} = 1024 \equiv 2 \pmod 7$ while $2^3 = 8 \equiv 1 \pmod 7$. For a base coprime to $n$, exponents can be reduced modulo the order of the base — by Fermat and Euler, modulo $p - 1$ or $\varphi(n)$ ([[number-theory/fermat-euler]]).
 :::
 
 ::: proposition Cancellation {#prop-cancel}

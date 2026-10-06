@@ -14,7 +14,7 @@ and the picture of all their trajectories, the **phase portrait**. The plan of t
 Let $\mathbf{F} = (f,g)$ be continuously differentiable on an open set $D\subseteq\R^2$. The system $\mathbf{x}' = \mathbf{F}(\mathbf{x})$, $\mathbf{x} = (x,y)$, is **autonomous**: the right-hand side does not depend on $t$. A point $\mathbf{x}^*$ with $\mathbf{F}(\mathbf{x}^*) = \mathbf{0}$ is an **equilibrium** (or critical point); the constant function $\mathbf{x}(t)\equiv\mathbf{x}^*$ is then a solution. The curve traced out by a solution in the plane is its **trajectory** (or orbit), and the collection of all trajectories is the **phase portrait**.
 :::
 
-By the Picard–Lindelöf theorem (in its vector form, see [[ode/linear-systems#thm-eu-system]]), through each point of $D$ passes exactly one solution of each initial value problem. For autonomous systems this has striking geometric consequences.
+By the Picard–Lindelöf theorem, each initial value problem $\mathbf{x}(t_0) = \mathbf{x}_0\in D$ has exactly one solution: a continuously differentiable field is locally Lipschitz, and the proof carries over to systems once absolute values are replaced by norms, as in [[ode/linear-systems#thm-eu-system]]. For autonomous systems this has striking geometric consequences.
 
 ::: proposition Trajectories do not cross {#prop-orbits}
 For an autonomous system with $\mathbf{F}$ continuously differentiable:
@@ -69,7 +69,7 @@ Let $V$ be positive definite on a neighbourhood $U$ of the equilibrium $\mathbf{
 2. Take $\eps,\delta$ as in part 1 and a solution starting within $\delta$ of $\mathbf{x}^*$. The function $t\mapsto V(\mathbf{x}(t))$ is non-increasing and bounded below by $0$, so it has a limit $L\ge0$. Suppose $L > 0$. By continuity there is $\rho > 0$ with $V < L$ on $B_\rho$, so the solution stays in the compact annulus $K = \set{\rho\le\norm{\mathbf{x} - \mathbf{x}^*}\le\eps}$. On $K$, $\dot V$ is continuous and negative, so $\dot V\le-\mu$ for some $\mu > 0$, and then $V(\mathbf{x}(t))\le V(\mathbf{x}(0)) - \mu t\to-\infty$, a contradiction. Hence $V(\mathbf{x}(t))\to0$. Finally $\mathbf{x}(t)\to\mathbf{x}^*$: otherwise there would be $\eta > 0$ and times $t_k\to\infty$ with $\eta\le\norm{\mathbf{x}(t_k) - \mathbf{x}^*}\le\eps$, where $V$ is bounded below by a positive constant, contradicting $V(\mathbf{x}(t_k))\to0$.
 :::
 
-::: example A stable centre in disguise {#ex-lyapunov}
+::: example A stable equilibrium that looks like a centre {#ex-lyapunov}
 Show that the origin is asymptotically stable for $x' = -y - x^3$, $y' = x - y^3$.
 ::: solution
 Try $V = x^2 + y^2$, which is positive definite. Then
@@ -135,7 +135,7 @@ Much more is true when no eigenvalue lies on the imaginary axis. Such an equilib
 If $\mathbf{x}^*$ is a hyperbolic equilibrium, there is a homeomorphism from a neighbourhood of $\mathbf{x}^*$ onto a neighbourhood of $\mathbf{0}$ that maps trajectories of the nonlinear system onto trajectories of its linearisation, preserving the direction of time.
 :::
 
-In words, near a hyperbolic equilibrium the nonlinear phase portrait is a continuously deformed copy of the linear one: saddles stay saddles, nodes stay nodes and spirals stay spirals. (The proof, due to D. M. Grobman in 1959 and Philip Hartman in 1960, is beyond this course.)
+In words, near a hyperbolic equilibrium the nonlinear phase portrait is a continuously deformed copy of the linear one: saddles stay saddles, and attracting or repelling equilibria stay attracting or repelling. A homeomorphism cannot tell a node from a spiral (it may twist straight trajectories into spirals), but when $\mathbf{F}$ is twice continuously differentiable a sharper theorem, also due to Hartman, provides a continuously differentiable deformation, which preserves tangent directions: nodes then stay nodes and spirals stay spirals. (The proofs, due to D. M. Grobman in 1959 and Philip Hartman in 1960, are beyond this course.)
 
 ::: warning When linearisation says nothing {#warn-centre}
 If $J$ has eigenvalues on the imaginary axis — a centre, or a zero eigenvalue — the nonlinear terms decide. The systems $x' = -y \pm x(x^2+y^2)$, $y' = x\pm y(x^2+y^2)$ both have linearisation $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, a centre. In polar coordinates they become $r' = \pm r^3$, $\theta' = 1$: with the plus sign every trajectory spirals *out* (unstable), with the minus sign every trajectory spirals *in* (asymptotically stable). A linear centre tells you nothing about stability.
@@ -212,7 +212,7 @@ x: -7, 7
 y: -3, 3
 sliders: c=0:0:1:0.05
 points: 0, 1; 0, 1.9; 0, 2.1; -6.5, 2.6
-caption: The pendulum $x' = y$, $y' = -\sin x - cy$ (angle $x$, angular velocity $y$). With $c = 0$ you see closed librations around the bottom equilibria, rotations above and below, and the separatrices through the saddles at $x = \pm\pi$; the starts at speed $1.9$ and $2.1$ fall on either side of the critical speed $2$. Add friction with the slider: every centre becomes a stable spiral, and rotating trajectories eventually fall into one of the wells.
+caption: The pendulum $x' = y$, $y' = -\sin x - cy$ (angle $x$, angular velocity $y$). With $c = 0$ the starts at speeds $1$ and $1.9$ swing back and forth around the bottom equilibrium (librations) and the other two go over the top (rotations). The speeds $1.9$ and $2.1$ lie on either side of the critical speed $2$, so these two orbits hug the separatrices through the saddles at $x = \pm\pi$ from inside and outside. Click to add more orbits — below the axis for rotations the other way. Add friction with the slider: every centre becomes a stable spiral, and rotating trajectories eventually fall into one of the wells.
 :::
 
 ::: quiz
@@ -394,7 +394,7 @@ Phase-plane analysis is the two-dimensional core of the theory of **dynamical sy
 ::: exercise Equilibria and their types {level=1}
 Find and classify the equilibria of $x' = x - y$, $y' = x^2 - 4$.
 ::: solution
-$x = y$ and $x^2 = 4$ give $(2,2)$ and $(-2,-2)$. The Jacobian is $\begin{pmatrix}1&-1\\2x&0\end{pmatrix}$. At $(2,2)$: trace $1$, determinant $4$, and $\tau^2 - 4\Delta = -15 < 0$, so an unstable spiral (eigenvalues $\frac12\pm\frac{\sqrt{15}}2i$). At $(-2,-2)$: determinant $-4 < 0$, a saddle. Both are hyperbolic, so by [[#thm-hartman]] the nonlinear system has the same types.
+$x = y$ and $x^2 = 4$ give $(2,2)$ and $(-2,-2)$. The Jacobian is $\begin{pmatrix}1&-1\\2x&0\end{pmatrix}$. At $(2,2)$: trace $1$, determinant $4$, and $\tau^2 - 4\Delta = -15 < 0$, so an unstable spiral (eigenvalues $\frac12\pm\frac{\sqrt{15}}2i$). At $(-2,-2)$: determinant $-4 < 0$, a saddle. Both are hyperbolic and the field is polynomial (hence twice continuously differentiable), so by [[#thm-hartman]] and the remark after it the nonlinear system has the same types.
 :::
 :::
 

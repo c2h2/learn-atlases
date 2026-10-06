@@ -96,10 +96,12 @@ Q: sin(y)
 x: -3.5, 3.5
 y: -3.5, 3.5
 shade: divergence
-cx: cos(t)
-cy: sin(t)
+cx: a + cos(t)
+cy: b + sin(t)
 t: 0, 2pi
-caption: 场$(\sin x, \sin y)$，按其散度$\cos x + \cos y$着色。在原点附近，箭头向四周散开（散度为正：源区域）；在角点$(\pm\pi, \pm\pi)$附近，箭头汇聚（散度为负：汇区域）。流出单位圆的通量为正，因为它等于散度在圆盘上的积分。把圆拖到汇区域中，通量就变为负的。
+mode: flux
+sliders: a=0:-2.4:2.4:0.1; b=0:-2.4:2.4:0.1
+caption: 场$(\sin x, \sin y)$，按其散度$\cos x + \cos y$着色。在原点附近，箭头向四周散开（散度为正：源区域）；在角点$(\pm\pi, \pm\pi)$附近，箭头汇聚（散度为负：汇区域）。流出单位圆的通量为正，因为它等于散度在圆盘上的积分。用$a$和$b$把圆移到汇区域中，通量就变为负的。
 :::
 
 ::: widget vectorfield
@@ -109,10 +111,11 @@ x: -2, 2
 y: -2, 2
 shade: curl
 streamlines: true
-cx: 1 + 0.5*cos(t)
-cy: 0.5*sin(t)
+cx: a + 0.5*cos(t)
+cy: b + 0.5*sin(t)
 t: 0, 2pi
-caption: 剪切流$(y, 0)$：每条流线都是水平直线，但旋度处处为$-1$。放在流中的小桨轮会顺时针转动，因为它上方的水（向右）流得比下方的水快。沿任何半径为$\tfrac12$的圆的环量都是$-\pi/4$，即旋度乘以面积——无论把圆放在哪里。旋度度量的是局部的旋转，而不是流线的弯曲。
+sliders: a=1:-1.4:1.4:0.1; b=0:-1.4:1.4:0.1
+caption: 剪切流$(y, 0)$：每条流线都是水平直线，但旋度处处为$-1$。放在流中的小桨轮会顺时针转动，因为它上方的水（向右）流得比下方的水快。沿任何半径为$\tfrac12$的圆的环量都是$-\pi/4$，即旋度乘以面积——无论把圆放在哪里（用$a$和$b$移动它）。旋度度量的是局部的旋转，而不是流线的弯曲。
 :::
 
 ## 斯托克斯公式
@@ -275,7 +278,7 @@ $$
 \iint_S Pn_1\,dS = \iiint_E P_x\,dV, \qquad \iint_S Qn_2\,dS = \iiint_E Q_y\,dV, \qquad \iint_S Rn_3\,dS = \iiint_E R_z\,dV .
 $$
 
-我们证明第三个；另外两个的证明相同，只需置换变量的角色，并利用$E$的另外两种描述。利用描述$E = \set{(x,y)\in D,\ u_1(x,y)\le z\le u_2(x,y)}$。由富比尼（Fubini）定理以及关于$z$的微积分基本定理，
+我们证明第三个；另外两个的证明相同，只需置换变量的角色，并利用$E$的另外两种描述。利用第一种描述：$E$由满足$(x,y)\in D$且$u_1(x,y)\le z\le u_2(x,y)$的点$(x,y,z)$组成。由富比尼（Fubini）定理以及关于$z$的微积分基本定理，
 
 $$
 \iiint_E R_z\,dV = \iint_D\left(\int_{u_1(x,y)}^{u_2(x,y)}R_z\,dz\right)dA = \iint_D\bigl[R(x,y,u_2(x,y)) - R(x,y,u_1(x,y))\bigr]\,dA .
@@ -376,7 +379,7 @@ $$
 在每种情形中，把导数在一个区域上积分，都等于把原来的对象在边界上积分，且两边的定向相互匹配。还请注意梯度$\to$旋度$\to$散度这条链，其中$\nabla\times\nabla f = \mathbf{0}$，$\nabla\cdot(\nabla\times\mathbf{F}) = 0$：连续作用两次导数总是得到零，这与“区域的边界本身没有边界”这一事实相呼应。
 
 ::: remark 一般的斯托克斯公式
-用微分形式的语言来说，这五个命题是同一个命题：对边界为$\partial M$的$k$维有向流形$M$和$(k-1)$-形式$\omega$，
+用微分形式的语言来说，这五个命题是同一个命题：对边界为$\partial M$的$k$维紧有向流形$M$和$(k-1)$-形式$\omega$，
 
 $$
 \int_M d\omega = \int_{\partial M}\omega .
@@ -386,12 +389,12 @@ $$
 :::
 
 ::: history
-散度定理的一些特殊情形出现在拉格朗日（Lagrange，1762年）和高斯（Gauss，1813年）关于引力的工作中；米哈伊尔·奥斯特罗格拉茨基（Mikhail Ostrogradsky）以一般形式证明了这个定理，他于1826年把它提交给巴黎科学院，并于1831年在圣彼得堡发表；因此这个定理常被称为高斯-奥斯特罗格拉茨基定理。乔治·格林（George Green）1828年的论文中包含了与之密切相关的恒等式。如今称为斯托克斯公式的定理，最早出现在威廉·汤姆森（William Thomson，即后来的开尔文勋爵）1850年7月写给乔治·加布里埃尔·斯托克斯（George Gabriel Stokes）的一封信中；斯托克斯在1854年剑桥大学史密斯奖的考试中把它出成一道试题，而参加了那次考试的詹姆斯·克拉克·麦克斯韦（James Clerk Maxwell）在他的《电磁通论》（*Treatise on Electricity and Magnetism*，1873年）中把这个定理归功于斯托克斯，在这部著作中，这些定理成为物理学的核心。统一的公式$\int_M d\omega = \int_{\partial M}\omega$则是在20世纪初从埃利·嘉当（Élie Cartan）的微分形式演算中产生的。
+散度定理的一些特殊情形出现在拉格朗日（Lagrange）1762年关于声音传播的工作和高斯（Gauss）1813年关于引力的工作中；米哈伊尔·奥斯特罗格拉茨基（Mikhail Ostrogradsky）以一般形式证明了这个定理，他于1826年把它提交给巴黎科学院，并于1831年在圣彼得堡发表；因此这个定理常被称为高斯-奥斯特罗格拉茨基定理。乔治·格林（George Green）1828年的论文中包含了与之密切相关的恒等式。如今称为斯托克斯公式的定理，最早出现在威廉·汤姆森（William Thomson，即后来的开尔文勋爵）1850年7月写给乔治·加布里埃尔·斯托克斯（George Gabriel Stokes）的一封信中；斯托克斯在1854年剑桥大学史密斯奖的考试中把它出成一道试题，而参加了那次考试的詹姆斯·克拉克·麦克斯韦（James Clerk Maxwell）在他的《电磁通论》（*Treatise on Electricity and Magnetism*，1873年）中把这个定理归功于斯托克斯，在这部著作中，这些定理成为物理学的核心。统一的公式$\int_M d\omega = \int_{\partial M}\omega$则是在20世纪初从埃利·嘉当（Élie Cartan）的微分形式演算中产生的。
 :::
 
 ## 后续内容
 
-斯托克斯公式和高斯公式是物理定律的积分形式与微分形式之间的桥梁：麦克斯韦方程组、流体动力学方程，以及一般的守恒律（[[pde/heat-equation]]、[[pde/wave-equation]]、[[pde/laplace-equation]]）都是如此。在复分析中，把格林公式应用于解析函数的实部和虚部，就证明了柯西（Cauchy）定理（[[complex-analysis/cauchy-theorem]]）。在微分几何中，高斯-博内（Gauss–Bonnet）定理（[[differential-geometry/geodesics-gauss-bonnet]]）是通过在曲面的坐标中应用格林公式来证明的。而“当定义域有洞时，无旋场未必是梯度场”这一观察，正是德拉姆（de Rham）上同调的起点，它用微积分来度量空间中的洞（[[topology/fundamental-group]]）。
+斯托克斯公式和高斯公式是物理定律的积分形式与微分形式之间的桥梁：麦克斯韦方程组、流体动力学方程，以及一般的守恒律（[[pde/heat-equation]]、[[pde/wave-equation]]、[[pde/laplace-equation]]）都是如此。在复分析中，把格林公式应用于解析函数的实部和虚部，就证明了柯西（Cauchy）定理（[[complex-analysis/cauchy-theorem]]）。在微分几何中，高斯-博内（Gauss–Bonnet）定理（[[differential-geometry/geodesics-gauss-bonnet]]）是通过在曲面的坐标中应用格林公式来证明的。而“当定义域有洞时，无旋场未必是梯度场”这一观察，正是德拉姆（de Rham）上同调的起点，它用微积分来度量空间中的洞，正如基本群（[[topology/fundamental-group]]）用闭路来度量它们一样。
 
 ::: summary
 - $\nabla\cdot\mathbf{F} = P_x + Q_y + R_z$度量膨胀（单位体积的向外通量，[[#thm-div-density]]）；$\nabla\times\mathbf{F} = (R_y - Q_z,\ P_z - R_x,\ Q_x - P_y)$度量转动（单位面积上的环量，[[#thm-curl-density]]）。
@@ -415,7 +418,7 @@ $\nabla\cdot\mathbf{F} = 2xy + z + 2xz$，它在$(1,1,1)$处等于$2 + 1 + 2 = 5
 ::: exercise 一个无旋场 {level=1}
 证明$\mathbf{F} = (yz,\ xz,\ xy)$的旋度为零，并求一个满足$\nabla f = \mathbf{F}$的函数$f$。
 ::: solution
-$\nabla\times\mathbf{F} = (x - x,\ y - y,\ z - z) = \mathbf{0}$。由于$\R^3$是星形的，$\mathbf{F}$是保守场（[[multivariable/line-integrals#thm-star-shaped]]），而$f = xyz$满足要求：$\nabla(xyz) = (yz, xz, xy)$。
+$\nabla\times\mathbf{F} = (x - x,\ y - y,\ z - z) = \mathbf{0}$。由于$\R^3$是星形的，$\mathbf{F}$是保守场（[[multivariable/line-integrals#exr-star-3d]]），而$f = xyz$满足要求：$\nabla(xyz) = (yz, xz, xy)$。
 :::
 :::
 

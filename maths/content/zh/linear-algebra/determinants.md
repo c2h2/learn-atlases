@@ -421,17 +421,17 @@ $$
 :::
 :::
 
-::: exercise 三角形的面积 {level=2 check="11/2"}
-求以$(1,2)$，$(4,3)$和$(2,6)$为顶点的三角形的面积。
+::: exercise 三角形的面积 {level=2 check="8"}
+求以$(0,3)$，$(4,1)$和$(2,-2)$为顶点的三角形的面积。
 ::: solution
-从$(1,2)$出发的两条边是$(3,1)$和$(1,4)$，所以面积为$\tfrac12\abs{\det\begin{pmatrix}3&1\\1&4\end{pmatrix}} = \tfrac12\cdot 11 = \tfrac{11}{2}$。
+从$(0,3)$出发的两条边是$(4,-2)$和$(2,-5)$，所以面积为$\tfrac12\abs{\det\begin{pmatrix}4&2\\-2&-5\end{pmatrix}} = \tfrac12\abs{-20 + 4} = \tfrac12\cdot 16 = 8$。行列式为负，是因为从第一条边转到第二条边是顺时针方向；只有它的绝对值才是面积。
 :::
 :::
 
 ::: exercise 四面体的体积 {level=2 check="13/6"}
 以$\mathbf{0}$，$\mathbf{a}$，$\mathbf{b}$，$\mathbf{c}$为顶点的四面体的体积为$\tfrac16\abs{\det(\mathbf{a}\ \mathbf{b}\ \mathbf{c})}$。当$\mathbf{a} = (1,2,0)$，$\mathbf{b} = (0,1,3)$，$\mathbf{c} = (2,0,1)$时，求这个体积。
 ::: solution
-$\det\begin{pmatrix}1&0&2\\2&1&0\\0&3&1\end{pmatrix} = 1(1 - 0) - 0 + 2(6 - 0) = 13$，所以体积为$\tfrac{13}{6}$。（因子$\tfrac16$来自对平行六面体的分割：一个立方体可以分成六个体积相等的四面体。）
+$\det\begin{pmatrix}1&0&2\\2&1&0\\0&3&1\end{pmatrix} = 1(1 - 0) - 0 + 2(6 - 0) = 13$，所以体积为$\tfrac{13}{6}$。（因子$\tfrac16$是以$\mathbf{0}$，$\mathbf{e}_1$，$\mathbf{e}_2$，$\mathbf{e}_3$为顶点的四面体的体积，它是底面积为$\tfrac12$、高为$1$的棱锥。映射$\mathbf{x}\mapsto(\mathbf{a}\ \mathbf{b}\ \mathbf{c})\mathbf{x}$把它映成我们的四面体，并且由[[#thm-volume]]，把它的体积乘以$\abs{\det(\mathbf{a}\ \mathbf{b}\ \mathbf{c})}$。）
 :::
 :::
 

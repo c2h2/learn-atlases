@@ -70,7 +70,7 @@ $(1 + \sqrt 2)(-1 + \sqrt2) = -1 + \sqrt 2 - \sqrt 2 + 2 = 1$，所以$1 + \sqrt
 这个定义的要点在于**消去律**：在整环中，若$a \neq 0$且$ab = ac$，则由$a(b - c) = 0$可知必有$b = c$。与此相反，在$\Z_6$中$2 \cdot 1 = 2 \cdot 4$，但$1 \ne 4$。
 
 ::: definition 域 {#def-field}
-**域**是满足$1 \neq 0$且每个非零元都是单位的交换环。满足$1 \neq 0$且每个非零元都是单位的非交换环称为**除环**（例如$\mathbb H$）。
+**域**是满足$1 \neq 0$且每个非零元都是单位的交换环。满足$1 \neq 0$且每个非零元都是单位、但不要求可交换的环称为**除环**；所以域就是可交换的除环，而$\mathbb H$是一个不是域的除环。
 :::
 
 $\Q$、$\R$和$\C$都是域；$\Z$和$\Z[i]$是整环，但不是域。每个域都是整环，因为单位不是零因子。
@@ -104,7 +104,7 @@ caption: 域$\F_{11} = \Z_{11}$中的逆元：每个非零剩余$a$都有一个�
 ::: widget modular
 n: 12
 mode: multiply
-caption: $\Z_{12}$的乘法表。单位$1, 5, 7, 11$所在的行中，每个剩余恰好出现一次，所以可以“除以”这些元素。其余每个非零行中都有某处为$0$——例如$3 \cdot 4 = 0$，$6 \cdot 2 = 0$——所以$2, 3, 4, 6, 8, 9, 10$是零因子。在有限交换环中，每个非零元要么是单位，要么是零因子。
+caption: $\Z_{12}$的乘法表。单位$1, 5, 7, 11$所在的行中，每个剩余恰好出现一次，所以可以“除以”这些元素。其余每个非零行在$0$所在的列之外还有$0$——例如$3 \cdot 4 = 0$，$6 \cdot 2 = 0$——所以$2, 3, 4, 6, 8, 9, 10$是零因子。在有限交换环中，每个非零元要么是单位，要么是零因子。
 :::
 
 ::: definition 特征 {#def-characteristic}
@@ -255,7 +255,7 @@ $$
 ::: solution
 (a) 令$\operatorname{ev}_i\colon \R[x] \to \C$，$f \mapsto f(i)$。它是环同态，并且是满射，因为$a + bx \mapsto a + bi$。再求核：用$x^2 + 1$除$f$（[[abstract-algebra/polynomials#thm-poly-division]]），得$f = (x^2 + 1)q + (a + bx)$，其中$a, b \in \R$，所以$f(i) = a + bi$；它等于$0$当且仅当$a = b = 0$，即当且仅当$x^2 + 1$整除$f$。所以$\ker\operatorname{ev}_i = (x^2 + 1)$，由[[#thm-first-iso-rings]]得$\R[x]/(x^2 + 1) \cong \C$。复数**就是**模$x^2 + 1$计算的实系数多项式。
 
-(b) 利用上一节中的同态$\varphi(a + bi) = (a + 3b) \bmod 5$。它是满射（$\varphi(a) = a \bmod 5$）。它的核包含$2 + i$，因为$2 + 3 = 5 \equiv 0$，从而包含理想$(2 + i)$。反过来，设$5 \mid a + 3b$，比如说$a + 3b = 5k$。利用$(2+i)(2-i) = 5$和$(2 + i)(1 - i) = 3 - i$，得
+(b) 利用前面环同态例子中的同态$\varphi(a + bi) = (a + 3b) \bmod 5$。它是满射（$\varphi(a) = a \bmod 5$）。它的核包含$2 + i$，因为$2 + 3 = 5 \equiv 0$，从而包含理想$(2 + i)$。反过来，设$5 \mid a + 3b$，比如说$a + 3b = 5k$。利用$(2+i)(2-i) = 5$和$(2 + i)(1 - i) = 3 - i$，得
 
 $$
 a + bi = (a + 3b) - b(3 - i) = (2 + i)\bigl[(2 - i)k - (1 - i)b\bigr] \in (2 + i).
@@ -368,7 +368,7 @@ $$
 ::: widget euclid
 mode: crt
 system: 2 mod 3; 4 mod 5
-caption: 同构$\Z_{15} \cong \Z_3 \times \Z_5$的实际运作：剩余对$(2 \bmod 3,\ 4 \bmod 5)$恰好对应模$15$的一个剩余，即$14$。方法遵循[[#thm-crt-rings]]的证明：写$1 = a + b$，其中$a \in 3\Z$，$b \in 5\Z$（这里$1 = 6 - 5$），然后组合起来。
+caption: 同构$\Z_{15} \cong \Z_3 \times \Z_5$的实际运作：剩余对$(2 \bmod 3,\ 4 \bmod 5)$恰好对应模$15$的一个剩余，即$14$。图末的公式表正是[[#thm-crt-rings]]的证明中的做法：$6 \in 3\Z$与$10 \in 5\Z$之和为$16 \equiv 1 \pmod{15}$（即证明中的$1 = 6 + (-5)$，因为$-5 \equiv 10$），于是$x \equiv 2 \cdot 10 + 4 \cdot 6 = 44 \equiv 14$。
 :::
 
 ::: application 用余数做计算
@@ -385,7 +385,7 @@ caption: 同构$\Z_{15} \cong \Z_3 \times \Z_5$的实际运作：剩余对$(2 \b
 
 ## 后续内容
 
-下一章[[abstract-algebra/polynomials]]研究继$\Z$之后最重要的一类环：域上的多项式环$F[x]$。它们的性质与整数惊人地相似——有带余除法，每个理想都是主理想，因子分解是唯一的——并且对不可约多项式取商所得的$F[x]/(p(x))$是域。在[[abstract-algebra/fields-galois]]中，这些域被用来构造分裂域和所有有限域。$\Z/n\Z$的算术在[[number-theory/congruences]]中展开讨论，而高斯整数将在[[number-theory/diophantine]]中费马两平方和定理的证明里再次出现。
+下一章[[abstract-algebra/polynomials]]研究继$\Z$之后最重要的一类环：域上的多项式环$F[x]$。它们的性质与整数惊人地相似——有带余除法，每个理想都是主理想，因子分解是唯一的——并且对不可约多项式取商所得的$F[x]/(p(x))$是域。在[[abstract-algebra/fields-galois]]中，这些域被用来构造分裂域和所有有限域。$\Z/n\Z$的算术在[[number-theory/congruences]]中展开讨论，而高斯整数是费马两平方和定理（在[[number-theory/diophantine]]中证明）的自然背景：素数$p = a^2 + b^2$在$\Z[i]$中分解为$(a + bi)(a - bi)$。
 
 ::: summary
 - **环**有一个阿贝尔群$(R, +)$和一个满足结合律、带有$1$的乘法，二者由分配律联系起来；$0a = 0$和$(-a)(-b) = ab$可由公理推出。

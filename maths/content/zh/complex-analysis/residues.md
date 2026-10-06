@@ -89,6 +89,8 @@ f: 1/(z^4 + 1)
 center: 0, 0.6
 radius: 1
 poles: 0.7071, 0.7071; -0.7071, 0.7071; -0.7071, -0.7071; 0.7071, -0.7071
+x: -2, 2
+y: -1.5, 2
 caption: $\frac{1}{z^4+1}$的四个单极点位于$e^{\pm i\pi/4}$和$e^{\pm 3i\pi/4}$。移动圆周并改变其大小，把$\oint f\,dz$的数值与$2\pi i$乘以所包围的留数之和作比较：二者一致，而且只有当某个极点穿过圆周时积分才会改变。当包围上方的两个极点时，积分为$\pi/\sqrt2\approx 2.221$——这正是下面将要算出的$\int_{-\infty}^\infty\frac{dx}{1+x^4}$的值。
 :::
 
@@ -360,7 +362,7 @@ $z^7 - 5z^3 + 1$在单位圆盘$\abs z < 1$内有多少个零点？
 
 ## 后续内容
 
-留数定理是复分析中应用最广泛的工具。它可以计算拉普拉斯逆变换和傅里叶逆变换（[[ode/laplace-transform]]，[[pde/fourier-transform]]），可以求像$\sum 1/n^2$这样的级数的和（[[#exr-basel]]），还可以通过生成函数给出组合学中的渐近公式（[[discrete/generating-functions]]）。辐角原理和儒歇定理可以确定多项式和超越函数的零点位置，而它们背后的环绕数就是闭曲线的度，[[topology/fundamental-group]]一章将从拓扑的角度研究它。最后，由辐角原理推出的开映射性质——非常数解析函数把开集映为开集——是[[complex-analysis/conformal-maps]]一章的出发点。
+留数定理是复分析中应用最广泛的工具。它可以计算拉普拉斯逆变换和傅里叶逆变换（[[ode/laplace-transform]]，[[pde/fourier-transform]]），可以求像$\sum 1/n^2$这样的级数的和（[[#exr-basel]]），还可以通过生成函数给出组合学中的渐近公式（[[discrete/generating-functions]]）。辐角原理和儒歇定理可以确定多项式和超越函数的零点位置，而它们背后的环绕数就是闭曲线的度，[[topology/fundamental-group]]一章将从拓扑的角度研究它。最后，通过计数方程$f(z) = w$在一点附近的解的个数，辐角原理表明非常数解析函数把开集映为开集（开映射性质），并且单射的解析函数的导数处处不为零——[[complex-analysis/conformal-maps]]一章要用到这一事实。
 
 ::: summary
 - $f$在孤立奇点处的留数是洛朗系数$c_{-1} = \frac{1}{2\pi i}\oint f$（沿一个小圆周积分）；在单极点处它等于$\lim(z - a)f(z)$或$g(a)/h'(a)$，在$m$阶极点处用[[#eq-res-order-m]]，在本性奇点处则展开成级数。

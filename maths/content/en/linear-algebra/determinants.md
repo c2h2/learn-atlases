@@ -421,17 +421,17 @@ So $x_2 = -4/8 = -\tfrac12$. (The full solution is $(\tfrac34, -\tfrac12, \tfrac
 :::
 :::
 
-::: exercise Area of a triangle {level=2 check="11/2"}
-Find the area of the triangle with vertices $(1,2)$, $(4,3)$ and $(2,6)$.
+::: exercise Area of a triangle {level=2 check="8"}
+Find the area of the triangle with vertices $(0,3)$, $(4,1)$ and $(2,-2)$.
 ::: solution
-The sides from $(1,2)$ are $(3,1)$ and $(1,4)$, so the area is $\tfrac12\abs{\det\begin{pmatrix}3&1\\1&4\end{pmatrix}} = \tfrac12\cdot 11 = \tfrac{11}{2}$.
+The sides from $(0,3)$ are $(4,-2)$ and $(2,-5)$, so the area is $\tfrac12\abs{\det\begin{pmatrix}4&2\\-2&-5\end{pmatrix}} = \tfrac12\abs{-20 + 4} = \tfrac12\cdot 16 = 8$. The determinant is negative because turning from the first side to the second is clockwise; only its absolute value is the area.
 :::
 :::
 
 ::: exercise Volume of a tetrahedron {level=2 check="13/6"}
 The tetrahedron with vertices $\mathbf{0}$, $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ has volume $\tfrac16\abs{\det(\mathbf{a}\ \mathbf{b}\ \mathbf{c})}$. Find the volume when $\mathbf{a} = (1,2,0)$, $\mathbf{b} = (0,1,3)$, $\mathbf{c} = (2,0,1)$.
 ::: solution
-$\det\begin{pmatrix}1&0&2\\2&1&0\\0&3&1\end{pmatrix} = 1(1 - 0) - 0 + 2(6 - 0) = 13$, so the volume is $\tfrac{13}{6}$. (The factor $\tfrac16$ comes from slicing the parallelepiped: a cube splits into six tetrahedra of equal volume.)
+$\det\begin{pmatrix}1&0&2\\2&1&0\\0&3&1\end{pmatrix} = 1(1 - 0) - 0 + 2(6 - 0) = 13$, so the volume is $\tfrac{13}{6}$. (The factor $\tfrac16$ is the volume of the tetrahedron with vertices $\mathbf{0}$, $\mathbf{e}_1$, $\mathbf{e}_2$, $\mathbf{e}_3$, a pyramid with base area $\tfrac12$ and height $1$. The map $\mathbf{x}\mapsto(\mathbf{a}\ \mathbf{b}\ \mathbf{c})\mathbf{x}$ carries it onto our tetrahedron and, by [[#thm-volume]], multiplies its volume by $\abs{\det(\mathbf{a}\ \mathbf{b}\ \mathbf{c})}$.)
 :::
 :::
 

@@ -343,7 +343,7 @@ matrix: 0.0375,0.4625,0.4625,0.0375; 0.0375,0.0375,0.8875,0.0375; 0.8875,0.0375,
 states: A; B; C; D
 start: 3
 steps: 30
-caption: The random-surfer chain for the four-page web described above, with damping $0.85$. Starting from page D, the distribution converges to the PageRank vector $(0.373, 0.196, 0.394, 0.0375)$ in a handful of steps. Try other starting pages: the limit is always the same, as the convergence theorem promises.
+caption: The random-surfer chain for the four-page web described above, with damping $0.85$. Starting from page D, the distribution swings back and forth at first and settles on the PageRank vector $(0.373, 0.196, 0.394, 0.0375)$ within about ten steps. Try other starting pages: the limit is always the same, as the convergence theorem promises.
 :::
 
 ::: application Markov chain Monte Carlo
@@ -392,7 +392,7 @@ States $1$ and $2$ communicate and cannot reach $3$ or $4$: $\{1,2\}$ is a close
 :::
 
 ::: exercise A fair game's duration {level=2 check="21"}
-In a fair gambler's ruin ($p = \tfrac12$) starting with £3 and target £10, find the probability of reaching £10 and the expected number of bets.
+In a fair gambler's ruin ($p = \tfrac12$) starting with £3 and target £10, find the probability of reaching £10 and the expected number of bets; enter the expected number of bets.
 ::: hint
 For the duration $D_i$, first-step analysis gives $D_i = 1 + \tfrac12D_{i+1} + \tfrac12D_{i-1}$ with $D_0 = D_N = 0$; try $D_i = i(N-i)$.
 :::
@@ -410,7 +410,7 @@ and (as for $h$) the equations have only one solution. So the expected number of
 ::: exercise Mean return time on a graph {level=2 check="8"}
 A random walk moves on the graph with vertices $A, B, C, D$ and edges $AB$, $AC$, $AD$, $BC$. Find the stationary distribution and the mean return time to $D$.
 ::: solution
-The degrees are $3, 2, 2, 1$ and there are $m = 4$ edges, so by [[#ex-graph-walk]] $\pi = (\tfrac38,\tfrac28,\tfrac28,\tfrac18)$. By [[#thm-stationary-unique]], the mean return time to $D$ is $1/\pi_D = 8$ steps. (Directly: from $D$ the walk must go to $A$, and from $A$ it returns to $D$ with probability $\tfrac13$ at each visit; the excursions through $B$ and $C$ take time.)
+The degrees are $3, 2, 2, 1$ and there are $m = 4$ edges, so by [[#ex-graph-walk]] $\pi = (\tfrac38,\tfrac28,\tfrac28,\tfrac18)$. By [[#thm-stationary-unique]], the mean return time to $D$ is $1/\pi_D = 8$ steps. (Directly: from $D$ the walk must go to $A$. If $t$ is the expected time to reach $D$ from $A$, and $u$ that from $B$ or from $C$ (equal by symmetry), first-step analysis gives $t = 1 + \tfrac23u$ and $u = 1 + \tfrac12t + \tfrac12u$, so $u = t + 2$, $t = 7$, and the mean return time is $1 + 7 = 8$.)
 :::
 :::
 

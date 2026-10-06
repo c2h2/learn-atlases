@@ -148,7 +148,7 @@ caption: 五组相互独立的模拟，每组抛掷硬币$2000$次，各自显�
 :::
 
 ::: proof
-*我们在附加假设$\E X_1^4<\infty$下证明这个定理；一般情形归功于柯尔莫哥洛夫（Kolmogorov），需要用到截断论证，可以在格里米特（Grimmett）与斯特扎克（Stirzaker）的书的第7章中找到。*用$X_i-\mu$代替$X_i$，可以假设$\mu = 0$。展开
+我们在附加假设$\E X_1^4<\infty$下证明这个定理；一般情形归功于柯尔莫哥洛夫（Kolmogorov），需要用到截断论证，可以在格里米特（Grimmett）与斯特扎克（Stirzaker）的书的第7章中找到。用$X_i-\mu$代替$X_i$，可以假设$\mu = 0$。展开
 
 $$
 \E S_n^4 = \sum_{i,j,k,l}\E(X_iX_jX_kX_l).
@@ -171,7 +171,7 @@ f: exp(-x^2)
 a: 0
 b: 1
 n: 1000
-caption: 用蒙特卡罗方法估计$\int_0^1e^{-x^2}\,dx\approx0.7468$。这里$\sigma_g\approx0.20$，所以用$n = 1000$个点时，估计值与真值之差通常在$0.006$左右以内。多运行几次，把估计值的分散程度与这一预测作比较；然后把$n$乘以$4$，验证典型误差减半。
+caption: 用蒙特卡罗方法估计$\int_0^1e^{-x^2}\,dx\approx0.7468$。这里$\sigma_g\approx0.20$，所以用$n = 1000$个点时，样本均值法的估计值（即上文所述的诸$g(U_i)$的平均值）与真值之差通常在$0.006$左右以内；投点法通过数曲线下方的点来估计，其估计值没有那么准确。多运行几次，把样本均值法估计值的分散程度与这一预测作比较；然后把$n$乘以$4$，验证典型误差减半。
 :::
 
 ## 依分布收敛与中心极限定理 {#clt}
@@ -215,7 +215,7 @@ $$ {#eq-exp-limit}
 这可以像[[probability/discrete-random-variables]]一章中泊松近似的证明那样得到：$n\ln(1 + c_n/n) = c_n\cdot\frac{\ln(1+c_n/n)}{c_n/n}\to c$（第二个因子趋于$1$；若$c_n = 0$，该项反正为$0$）。
 
 ::: proof
-*在各$X_i$有矩母函数时中心极限定理的证明（一个细致的概要）。*令$Y_i = (X_i-\mu)/\sigma$，它们独立同分布，均值为$0$，方差为$1$；设$M$为它们共同的矩母函数，在某个$(-h,h)$上有限。由[[probability/expectation#thm-mgf]]，$M$在$0$附近可表示为一个收敛的幂级数，且$M(0) = 1$，$M'(0) = \E Y_i = 0$，$M''(0) = \E Y_i^2 = 1$。由泰勒定理，
+**在各$X_i$有矩母函数时中心极限定理的证明（一个细致的概要）。**令$Y_i = (X_i-\mu)/\sigma$，它们独立同分布，均值为$0$，方差为$1$；设$M$为它们共同的矩母函数，在某个$(-h,h)$上有限。由[[probability/expectation#thm-mgf]]，$M$在$0$附近可表示为一个收敛的幂级数，且$M(0) = 1$，$M'(0) = \E Y_i = 0$，$M''(0) = \E Y_i^2 = 1$。由泰勒定理，
 
 $$
 M(s) = 1 + \frac{s^2}{2} + r(s),\qquad\text{其中 } \frac{r(s)}{s^2}\to0\text{ 当 }s\to0 .
@@ -318,7 +318,7 @@ $X_1,\ldots,X_{48}$相互独立，且都在$[0,1]$上均匀分布。$S = X_1+\do
 
 ## 后续内容 {#where-next}
 
-中心极限定理是经典统计学的引擎。它解释了样本均值为什么近似服从正态分布（[[statistics/sampling]]），给出了[[statistics/confidence-intervals]]中的误差范围和[[statistics/hypothesis-testing]]中的z检验，并为最大似然估计量的大样本正态性提供了依据（[[statistics/estimation]]）。大数定律对相依序列也成立：对马尔可夫链，长期停留在某个状态的时间比例收敛于该状态的平稳概率（[[probability/markov-chains]]）。各种收敛方式（依概率收敛、几乎必然收敛、依分布收敛、均方收敛）将在[[measure-theory/lp-spaces]]中系统地加以比较。
+中心极限定理是经典统计学的引擎。它解释了样本均值为什么近似服从正态分布（[[statistics/sampling]]），给出了[[statistics/confidence-intervals]]中的误差范围和[[statistics/hypothesis-testing]]中的z检验，并为最大似然估计量的大样本正态性提供了依据（[[statistics/estimation]]）。大数定律对相依序列也成立：对马尔可夫链，长期停留在某个状态的时间比例收敛于该状态的平稳概率（[[probability/markov-chains]]）。各种收敛方式（依概率收敛、几乎必然收敛、均方收敛）将在[[measure-theory/lp-spaces]]中系统地加以比较。
 
 ::: summary
 - 马尔可夫不等式：对$X\ge0$，$\Prob(X\ge a)\le\E X/a$。切比雪夫不等式：$\Prob(\lvert X-\mu\rvert\ge\eps)\le\sigma^2/\eps^2$；它对每个分布都成立，因此对任何特定的分布都很粗糙。

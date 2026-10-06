@@ -560,7 +560,7 @@
     };
     D.t = {
       name: "Student's t",
-      params: [{ key: 'nu', tex: '\\nu', names: ['nu', 'df', 'n', 'k', 'v', 'ν'], def: 5, min: 1, max: 60, step: 1, check: POS('ν') }],
+      params: [{ key: 'nu', tex: 'k', names: ['nu', 'df', 'n', 'k', 'v', 'ν'], def: 5, min: 1, max: 60, step: 1, check: POS('k') }], // shown as k, as in the statistics course
       support: () => [-Infinity, Infinity],
       pdf: (x, P) => dt(x, P.nu),
       cdf: (x, P) => pt(x, P.nu),
@@ -570,7 +570,7 @@
       variance: (P) => (P.nu > 2 ? P.nu / (P.nu - 2) : P.nu > 1 ? Infinity : NaN),
       mode: () => 0,
       tex: (P) => 't_{' + fx(P.nu) + '}',
-      formula: 'f(x)=\\dfrac{\\Gamma(\\frac{\\nu+1}{2})}{\\sqrt{\\nu\\pi}\\,\\Gamma(\\frac{\\nu}{2})}\\Big(1+\\dfrac{x^2}{\\nu}\\Big)^{-\\frac{\\nu+1}{2}}',
+      formula: 'f(x)=\\dfrac{\\Gamma(\\frac{k+1}{2})}{\\sqrt{k\\pi}\\,\\Gamma(\\frac{k}{2})}\\Big(1+\\dfrac{x^2}{k}\\Big)^{-\\frac{k+1}{2}}',
       normalRef: true,
     };
     D.chisq = {
@@ -2640,7 +2640,7 @@
         MA.ui.kv('\\Prob(\\theta > 0.5 \\mid \\text{data}) =', fmt(gt, 4), true));
     }
     const sk = MA.ui.slider(bar2, { label: T('successes'), min: 0, max: Math.max(N, 1), step: 1, value: k, fmt: (v) => String(v), onInput: guard((v) => { k = Math.min(v, N); if (k !== v) sk.set(k); draw(); }, report) });
-    const sN = MA.ui.slider(bar2, { label: T('trials'), min: 0, max: Math.max(50, N), step: 1, value: N, fmt: (v) => String(v),
+    const sN = MA.ui.slider(bar2, { label: T('trials'), min: 0, max: Math.max(200, N), step: 1, value: N, fmt: (v) => String(v),
       onInput: guard((v) => { N = v; sk.input.max = Math.max(N, 1); if (k > N) k = N; sk.set(k); draw(); }, report) });
     const add = (succ) => {
       N++; if (succ) k++;
@@ -2692,8 +2692,21 @@
       P.layers.labels.append(el('text', { class: 'lbl', x: mx + (right ? 8 : -8), y: my + 4, 'text-anchor': right ? 'start' : 'end', style: 'font-size:11px;fill:var(--ink-2)', text: label }));
     }
     const nfmt = (v) => v.toLocaleString(MA.zh ? 'zh-CN' : 'en-US');
+    /** Population for the tree: the smallest power of ten with at least 5 ill people in which every count is
+     *  a whole number (1% prevalence, 95% sensitivity: 10,000 people, so 95 and 495 rather than 9.5 and 49.5). */
+    function population() {
+      const whole = (v) => Math.abs(v - Math.round(v)) < 1e-6;
+      let first = 0;
+      for (const N of [1000, 10000, 100000, 1000000]) {
+        if (N * prev < 5) continue;
+        first = first || N;
+        const D = Math.round(N * prev);
+        if (whole(N * prev) && whole(D * sens) && whole((N - D) * (1 - spec))) return N;
+      }
+      return first || 1000000;
+    }
     function draw() {
-      const N = 1000 * prev >= 5 ? 1000 : 10000 * prev >= 5 ? 10000 : 100000;
+      const N = population();
       const c = counts(N);
       // tree
       Pt.clear();

@@ -14,7 +14,7 @@ A quantity is **intrinsic** if it can be computed from the first fundamental for
 A smooth map $\phi\colon S\to\tilde S$ between regular surfaces is a **local isometry** if it preserves the lengths of tangent vectors: $\norm{d\phi_p(\mathbf{w})} = \norm{\mathbf{w}}$ for every $p\in S$ and $\mathbf{w}\in T_pS$. A local isometry that is a bijection is an **isometry**, and $S$ and $\tilde S$ are then **isometric**. Two surfaces are **locally isometric** if every point of each has a neighbourhood isometric to an open subset of the other.
 :::
 
-Here $d\phi_p(\mathbf{w})$ is the velocity of $\phi\circ\boldsymbol\alpha$ for any curve $\boldsymbol\alpha$ on $S$ with velocity $\mathbf{w}$ at $p$. By polarisation, $2\,\mathbf{w}_1\cdot\mathbf{w}_2 = \norm{\mathbf{w}_1 + \mathbf{w}_2}^2 - \norm{\mathbf{w}_1}^2 - \norm{\mathbf{w}_2}^2$, a map that preserves lengths of tangent vectors also preserves their dot products, and so preserves angles; integrating, it preserves lengths of curves and areas. Note that "distance" here means distance measured *along the surface*: rolling a sheet into a cylinder brings opposite edges close together in space, but not along the sheet.
+Here $d\phi_p(\mathbf{w})$ is the velocity of $\phi\circ\boldsymbol\alpha$ for any curve $\boldsymbol\alpha$ on $S$ with velocity $\mathbf{w}$ at $p$. By polarisation, $2\,\mathbf{w}_1\cdot\mathbf{w}_2 = \norm{\mathbf{w}_1 + \mathbf{w}_2}^2 - \norm{\mathbf{w}_1}^2 - \norm{\mathbf{w}_2}^2$, so a map that preserves lengths of tangent vectors also preserves their dot products, and so preserves angles; integrating, it preserves lengths of curves and areas. Note that "distance" here means distance measured *along the surface*: rolling a sheet into a cylinder brings opposite edges close together in space, but not along the sheet.
 
 The working criterion compares fundamental forms in matching patches.
 
@@ -41,7 +41,7 @@ The helix is $\tilde{\mathbf{x}}(Rt, ct)$, the image of the straight segment fro
 :::
 :::
 
-A much less obvious example: the helicoid and the catenoid, which we saw in [[differential-geometry/surface-curvature#ex-minimal]] are both minimal surfaces, are locally isometric.
+A much less obvious example: the helicoid and the catenoid, which, as we saw in [[differential-geometry/surface-curvature#ex-minimal]], are both minimal surfaces, are locally isometric.
 
 ::: example The catenoid and the helicoid {#ex-catenoid-helicoid}
 Let $\mathbf{c}(u,v) = (\cosh u\cos v,\ \cosh u\sin v,\ u)$ (catenoid) and $\mathbf{h}(u,v) = (\sinh u\sin v,\ -\sinh u\cos v,\ v)$ (a helicoid). Show that for every $s$ the surface
@@ -68,13 +68,13 @@ fy: -cos(s)*sinh(u)*cos(v) + sin(s)*cosh(u)*sin(v)
 fz: cos(s)*v + sin(s)*u
 u: -1.2, 1.2
 v: 0, 6.2832
-sliders: s=0:0:1.5708:0.02
+sliders: s=0:0:1.5708:0.015708
 color: gauss
 caption: The family $\mathbf{z}_s$ of [[#ex-catenoid-helicoid]]. Move $s$ from $0$ to $\pi/2$: one turn of the helicoid bends, without stretching or tearing, into the catenoid. Watch the colouring by Gaussian curvature: it does not change during the bending — at each parameter point $K = -1/\cosh^4u$ for every $s$. This is the Theorema Egregium in action.
 :::
 
 ::: quiz
-A flat sheet of paper is rolled, without stretching, into a cylinder. Which quantities at a point of the sheet are unchanged? (Select all that apply.)
+A flat sheet of paper is rolled, without stretching, into a cylinder. Which of the following are unchanged? (Select all that apply.)
 - [x] The lengths of curves drawn on the sheet
 - [ ] The mean curvature
 - [x] The Gaussian curvature
@@ -197,7 +197,7 @@ by [[differential-geometry/surface-curvature#eq-K-H]]. Rearranging gives [[#eq-g
 For the last statement, let $\mathbf{x}$ be a patch around $p$ on which $\phi$ is one-to-one. By [[#thm-isometry-fff]], $\tilde{\mathbf{x}} = \phi\circ\mathbf{x}$ has the same $E, F, G$ as $\mathbf{x}$, hence the same Christoffel symbols and, by Gauss's equation, the same Gaussian curvature at corresponding points.
 :::
 
-The proof shows where the theorem comes from: the second fundamental form enters only through the combination $LN - M^2$, which is exactly the numerator of $K$. Individually $L$, $M$, $N$ — and with them $\kappa_1$, $\kappa_2$ and $H$ — are not intrinsic. The coefficients of $\mathbf{x}_u$ and $\mathbf{n}$ in $\mathbf{x}_{uuv} = \mathbf{x}_{uvu}$, and the analogous identity $\mathbf{x}_{vvu} = \mathbf{x}_{uvv}$, give further equations, discussed at the end of the chapter.
+The proof shows where the theorem comes from: the second fundamental form enters only through the combination $LN - M^2$, which is exactly the numerator of $K$. Individually $L$, $M$, $N$ — and with them $\kappa_1$, $\kappa_2$ and $H$ — are not intrinsic. The coefficient of $\mathbf{x}_u$ in $\mathbf{x}_{uuv} = \mathbf{x}_{uvu}$ gives nothing new, only another formula of the same kind (for $FK$); the coefficients of $\mathbf{n}$ in this identity and in the analogous identity $\mathbf{x}_{vvu} = \mathbf{x}_{uvv}$ give further equations, discussed at the end of the chapter.
 
 ### Formulas for K in terms of the metric
 
@@ -325,11 +325,11 @@ $$ {#eq-codazzi}
 Gauss's equation and the Codazzi–Mainardi equations are the **compatibility equations** of surface theory: the six functions $E, F, G, L, M, N$ of a patch cannot be prescribed arbitrarily. Conversely, they are the only obstruction, exactly as curvature and torsion determine a curve ([[differential-geometry/curves#thm-fundamental-curves]]).
 
 ::: theorem Bonnet's theorem {#thm-bonnet}
-Let $E, F, G, L, M, N$ be smooth functions on a connected, simply connected open set $U\subseteq\R^2$ with $E > 0$, $G > 0$, $EG - F^2 > 0$, satisfying Gauss's equation [[#eq-gauss-equation]] and the Codazzi–Mainardi equations [[#eq-codazzi]]. Then there is a patch $\mathbf{x}\colon U\to\R^3$ whose first and second fundamental forms have these coefficients, and it is unique up to a rigid motion of $\R^3$.
+Let $E, F, G, L, M, N$ be smooth functions on a connected, simply connected open set $U\subseteq\R^2$ with $E > 0$, $G > 0$, $EG - F^2 > 0$, satisfying Gauss's equation [[#eq-gauss-equation]] and the Codazzi–Mainardi equations [[#eq-codazzi]]. Then there is a smooth map $\mathbf{x}\colon U\to\R^3$ with $\mathbf{x}_u\times\mathbf{x}_v\ne\mathbf{0}$ whose first and second fundamental forms (with $\mathbf{n} = \mathbf{x}_u\times\mathbf{x}_v/\norm{\mathbf{x}_u\times\mathbf{x}_v}$) have these coefficients, and it is unique up to a proper rigid motion of $\R^3$. Near each point of $U$ the map is a patch, but it need not be one-to-one on all of $U$: the coefficients of the catenoid on $U = \R^2$ give $(\cosh u\cos v,\ \cosh u\sin v,\ u)$, which wraps around infinitely often.
 :::
 
 ::: proof
-*Sketch.* Uniqueness: if two patches have the same forms, move one by a rigid motion so that the frames $(\mathbf{x}_u, \mathbf{x}_v, \mathbf{n})$ agree at one point. Both frames satisfy the same linear system of partial differential equations — the Gauss formulas and Weingarten equations, whose coefficients are built from $E, F, G, L, M, N$ — so they agree everywhere, and then so do the patches. Existence: the same system is solvable precisely when its mixed partial derivatives are compatible, which is what the Gauss and Codazzi–Mainardi equations say; integrating the frame then gives $\mathbf{x}$. See do Carmo, *Differential Geometry of Curves and Surfaces*, §4-3 and its appendix.
+*Sketch.* Uniqueness: if two such maps have the same forms, move one by a proper rigid motion so that the frames $(\mathbf{x}_u, \mathbf{x}_v, \mathbf{n})$ agree at one point (this is possible because the two frames have the same lengths, angles and orientation there; a reflection would reverse the sign of $L, M, N$). Both frames satisfy the same linear system of partial differential equations — the Gauss formulas and Weingarten equations, whose coefficients are built from $E, F, G, L, M, N$ — so they agree everywhere, and then so do the maps. Existence: the same system is solvable precisely when its mixed partial derivatives are compatible, which is what the Gauss and Codazzi–Mainardi equations say; integrating the frame then gives $\mathbf{x}$. See do Carmo, *Differential Geometry of Curves and Surfaces*, §4-3 and its appendix.
 :::
 
 ::: history
@@ -381,14 +381,14 @@ By [[#eq-K-isothermal]] with $\lambda = v^{-2}$: $\ln\lambda = -2\ln v$, so $\De
 :::
 
 ::: exercise A metric with E = 1 {level=2 check="-1"}
-A surface has a patch with $E = 1$, $F = 0$, $G = \cosh^2u$. Find its Gaussian curvature. What do you get for $G = \cos^2u$?
+A surface has a patch with $E = 1$, $F = 0$, $G = \cosh^2u$. Find its Gaussian curvature. What do you get for $G = \cos^2u$? (Enter the curvature for $G = \cosh^2u$.)
 ::: solution
 With $E = 1$, [[#eq-K-orthogonal]] reduces to $K = -(\sqrt G)_{uu}/\sqrt G$. For $\sqrt G = \cosh u$, $K = -\cosh u/\cosh u = -1$. For $\sqrt G = \cos u$, $K = \cos u/\cos u = 1$ (the unit sphere, with $u$ the latitude).
 :::
 :::
 
 ::: exercise The cone is a rolled-up sector {level=2 check="sqrt(2)*pi"}
-Show that the cone of [[#exr-cone]] (with $0 < \theta < 2\pi$) is isometric to a sector of the plane, and find the angle of that sector.
+Show that the cone of [[#exr-cone]] (with $0 < \theta < 2\pi$) is isometric to a sector of the plane, and find the angle of that sector, in radians.
 ::: hint
 Look for polar coordinates $(\rho, \psi)$ in the plane with $\rho = ar$ and $\psi = b\theta$ such that $d\rho^2 + \rho^2d\psi^2 = 2\,dr^2 + r^2\,d\theta^2$.
 :::
@@ -435,13 +435,13 @@ and $\frac{E_vW_v + G_uW_u}{2W^3} = \frac{E_v(E_vG + EG_v) + G_u(E_uG + EG_u)}{4
 ::: exercise Same curvature, not isometric {#exr-converse level=3}
 Let $\mathbf{x}(u,v) = (u\cos v,\ u\sin v,\ \ln u)$ and $\tilde{\mathbf{x}}(u,v) = (u\cos v,\ u\sin v,\ v)$ for $u > 0$. Show that $K(u,v) = \tilde K(u,v) = -\dfrac{1}{(1+u^2)^2}$, but that $\tilde{\mathbf{x}}\circ\mathbf{x}^{-1}$ is not a local isometry.
 ::: solution
-For $\mathbf{x}$: $\mathbf{x}_u = (\cos v, \sin v, 1/u)$, $\mathbf{x}_v = (-u\sin v, u\cos v, 0)$, so $E = 1 + u^{-2}$, $F = 0$, $G = u^2$. It is the surface of revolution $z = \ln r$; by [[differential-geometry/surface-curvature#eq-K-graph]] applied to $f = \ln\sqrt{x^2+y^2}$ (or by [[#eq-K-orthogonal]]), $K = -\frac{1}{(1 + u^2)^2}$. For the helicoid, $E = 1$, $F = 0$, $G = 1 + u^2$, and $K = -(\sqrt G)_{uu}/\sqrt G = -\frac{(1+u^2)^{-3/2}}{(1+u^2)^{1/2}} = -\frac{1}{(1+u^2)^2}$. So the curvatures agree at corresponding points. But $E\ne\tilde E$ (and $G\ne\tilde G$), so by [[#thm-isometry-fff]] the correspondence $\tilde{\mathbf{x}}\circ\mathbf{x}^{-1}$ does not preserve the lengths of the tangent vectors $\mathbf{x}_u$: it is not a local isometry. (In fact, no local isometry maps one surface onto the other near these points, as a finer argument with the level curves of $K$ shows; see do Carmo, §4-3.)
+For $\mathbf{x}$: $\mathbf{x}_u = (\cos v, \sin v, 1/u)$, $\mathbf{x}_v = (-u\sin v, u\cos v, 0)$, so $E = 1 + u^{-2}$, $F = 0$, $G = u^2$. It is the surface of revolution $z = \ln r$; by [[differential-geometry/surface-curvature#eq-K-graph]] applied to $f = \ln\sqrt{x^2+y^2}$ (or by [[#eq-K-orthogonal]]), $K = -\frac{1}{(1 + u^2)^2}$. For the helicoid, $E = 1$, $F = 0$, $G = 1 + u^2$, and $K = -(\sqrt G)_{uu}/\sqrt G = -\frac{(1+u^2)^{-3/2}}{(1+u^2)^{1/2}} = -\frac{1}{(1+u^2)^2}$. So the curvatures agree at corresponding points. But $E\ne\tilde E$ (and $G\ne\tilde G$), so by [[#thm-isometry-fff]] the correspondence $\tilde{\mathbf{x}}\circ\mathbf{x}^{-1}$ does not preserve the lengths of the tangent vectors $\mathbf{x}_u$: it is not a local isometry. (In fact no local isometry at all maps a neighbourhood of a point of one surface onto a neighbourhood of a point of the other. It would preserve $K$, which on both surfaces is the same strictly increasing function of $u$, and hence preserve $u$. But a segment of a ruling of the helicoid from $u = a$ to $u = b$ has length $b - a$, whereas on the first surface every curve from $u = a$ to $u = b$ has length at least $\int_a^b\sqrt{E}\,du = \int_a^b\sqrt{1 + u^{-2}}\,du > b - a$.)
 :::
 :::
 
 ::: exercise Developable means flat {level=3}
 Let $\mathbf{x}(u,v) = \boldsymbol\gamma(u) + v\,\boldsymbol\delta(u)$ be a ruled surface, where $\boldsymbol\delta$ is a unit vector field along the curve $\boldsymbol\gamma$. Show that $M = \mathbf{n}\cdot\boldsymbol\delta'$, $N = 0$, and hence $K = -\dfrac{M^2}{EG - F^2}\le0$. Deduce that a ruled surface has $K\equiv0$ if and only if $\det(\boldsymbol\gamma', \boldsymbol\delta, \boldsymbol\delta') = 0$ everywhere.
 ::: solution
-$\mathbf{x}_v = \boldsymbol\delta$, so $\mathbf{x}_{vv} = \mathbf{0}$ and $N = 0$; $\mathbf{x}_{uv} = \boldsymbol\delta'$, so $M = \mathbf{n}\cdot\boldsymbol\delta'$. Then $K = \frac{LN - M^2}{EG - F^2} = -\frac{M^2}{EG - F^2}\le0$, with equality iff $\mathbf{n}\cdot\boldsymbol\delta' = 0$. Since $\mathbf{n}$ is parallel to $\mathbf{x}_u\times\mathbf{x}_v = (\boldsymbol\gamma' + v\boldsymbol\delta')\times\boldsymbol\delta$, we have $(\mathbf{x}_u\times\mathbf{x}_v)\cdot\boldsymbol\delta' = \det(\boldsymbol\gamma' + v\boldsymbol\delta',\ \boldsymbol\delta,\ \boldsymbol\delta') = \det(\boldsymbol\gamma', \boldsymbol\delta, \boldsymbol\delta')$, the $v\boldsymbol\delta'$ term contributing a determinant with a repeated column. So $K\equiv0$ iff $\det(\boldsymbol\gamma', \boldsymbol\delta, \boldsymbol\delta') = 0$. For a cylinder ($\boldsymbol\delta$ constant) and a cone ($\boldsymbol\gamma$ constant) this holds trivially; for the helicoid, with $\boldsymbol\gamma = (0,0,u)$ and $\boldsymbol\delta = (\cos u, \sin u, 0)$, the determinant is $\det\bigl((0,0,1), (\cos u,\sin u,0), (-\sin u,\cos u,0)\bigr) = 1\ne0$, so the helicoid is not developable.
+$\mathbf{x}_v = \boldsymbol\delta$, so $\mathbf{x}_{vv} = \mathbf{0}$ and $N = 0$; $\mathbf{x}_{uv} = \boldsymbol\delta'$, so $M = \mathbf{n}\cdot\boldsymbol\delta'$. Then $K = \frac{LN - M^2}{EG - F^2} = -\frac{M^2}{EG - F^2}\le0$, with equality iff $\mathbf{n}\cdot\boldsymbol\delta' = 0$. Since $\mathbf{n}$ is parallel to $\mathbf{x}_u\times\mathbf{x}_v = (\boldsymbol\gamma' + v\boldsymbol\delta')\times\boldsymbol\delta$, we have $(\mathbf{x}_u\times\mathbf{x}_v)\cdot\boldsymbol\delta' = \det(\boldsymbol\gamma' + v\boldsymbol\delta',\ \boldsymbol\delta,\ \boldsymbol\delta') = \det(\boldsymbol\gamma', \boldsymbol\delta, \boldsymbol\delta')$, the $v\boldsymbol\delta'$ term contributing a determinant with a repeated column. So $K\equiv0$ iff $\det(\boldsymbol\gamma', \boldsymbol\delta, \boldsymbol\delta') = 0$. For a cylinder ($\boldsymbol\delta$ constant) and a cone ($\boldsymbol\gamma$ constant) this holds trivially; for the helicoid, with $\boldsymbol\gamma = (0,0,u)$ and $\boldsymbol\delta = (\cos u, \sin u, 0)$, the determinant is $\det\bigl((0,0,1),\allowbreak (\cos u,\sin u,0),\allowbreak (-\sin u,\cos u,0)\bigr) = 1\ne0$, so the helicoid is not developable.
 :::
 :::

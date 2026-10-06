@@ -18,7 +18,7 @@ and the **sample standard deviation** is $s = \sqrt{s^2}$.
 
 The divisor $n-1$ rather than $n$ looks odd at first; [[#thm-sample-moments]] explains it. A useful computational form is $\sum(x_i-\bar x)^2 = \sum x_i^2 - n\bar x^2$.
 
-The mean and standard deviation are sensitive to extreme values. Summaries based on ordering the data are more **robust**. The **median** is the middle value of the sorted data (the average of the two middle values when $n$ is even). The **quartiles** $Q_1$ and $Q_3$ are, roughly, the medians of the lower and upper halves of the data; several slightly different conventions exist, and software packages disagree in small samples. Here we take the medians of the values below and above the median. The **interquartile range** $\mathrm{IQR} = Q_3 - Q_1$ is the spread of the middle half of the data, and the **five-number summary** (minimum, $Q_1$, median, $Q_3$, maximum) is what a **box plot** draws. A common rule flags as possible **outliers** the values more than $1.5\,\mathrm{IQR}$ beyond the quartiles.
+The mean and standard deviation are sensitive to extreme values. Summaries based on ordering the data are more **robust**. The **median** is the middle value of the sorted data (the average of the two middle values when $n$ is even). The **quartiles** $Q_1$ and $Q_3$ are, roughly, the medians of the lower and upper halves of the data; several slightly different conventions exist, and software packages disagree in small samples. Here we take the medians of the lower and upper halves of the sorted list, leaving out the middle value when $n$ is odd. The **interquartile range** $\mathrm{IQR} = Q_3 - Q_1$ is the spread of the middle half of the data, and the **five-number summary** (minimum, $Q_1$, median, $Q_3$, maximum) is what a **box plot** draws. A common rule flags as possible **outliers** the values more than $1.5\,\mathrm{IQR}$ beyond the quartiles.
 
 ::: example Quiz times with an outlier {#ex-quiz-times}
 Eleven students took the following times, in minutes, to complete a quiz:
@@ -36,7 +36,7 @@ Without the $41$, the mean drops to $143/10 = 14.3$ and the standard deviation t
 :::
 
 ::: warning Mean and median answer different questions
-Neither summary is "the right one". The mean is what you need for totals (total waiting time = $n\times$ mean), and it is the natural target of the theory in this course; the median describes the typical individual. When a distribution is skewed to the right — incomes, house prices, hospital stays — the mean is larger than the median, sometimes much larger, and reporting one when the reader expects the other is a classic way to mislead.
+Neither summary is "the right one". The mean is what you need for totals (total waiting time = $n\times$ mean), and it is the natural target of the theory in this course; the median describes the typical individual. When a distribution is skewed to the right — incomes, house prices, hospital stays — the mean is usually larger than the median, sometimes much larger, and reporting one when the reader expects the other is a classic way to mislead.
 :::
 
 ## Random samples and sampling distributions {#random-samples}
@@ -47,7 +47,7 @@ To reason about the uncertainty in summaries like $\bar x$, we model the data as
 A **random sample** of size $n$ from a distribution $F$ is a collection of independent random variables $X_1,\ldots,X_n$, each with distribution $F$; we write $X_1,\ldots,X_n\iid F$. The distribution $F$ is called the **population** distribution, and numbers that describe it (its mean $\mu$, variance $\sigma^2$, median, and so on) are **parameters**. A **statistic** is any quantity computed from the sample, such as $\bar X = \frac1n\sum X_i$ or $S^2 = \frac{1}{n-1}\sum(X_i-\bar X)^2$; its probability distribution is its **sampling distribution**.
 :::
 
-Capital letters denote the random variables, lower-case letters their observed values: $\bar X$ is a random variable whose value $\bar x$ we compute from the data. A parameter is a fixed but unknown number; a statistic varies from sample to sample. The model fits, for example, measurements repeated under identical conditions, or individuals drawn at random (with replacement, or from a population much larger than the sample) from a large population.
+Capital letters denote the random variables, lower-case letters their observed values: $\bar X$ is a random variable whose value $\bar x$ we compute from the data. A parameter is a fixed but unknown number; a statistic varies from sample to sample. The model fits, for example, measurements repeated under identical conditions, or individuals drawn at random from a population with replacement, or without replacement from a population much larger than the sample.
 
 ::: theorem Mean and variance of the sample mean and sample variance {#thm-sample-moments}
 Let $X_1,\ldots,X_n$ be a random sample from a distribution with mean $\mu$ and variance $\sigma^2$, with $n\ge2$. Then
@@ -233,17 +233,19 @@ $$
 By [[#thm-normal-sample]] the numerator is $\Normal(0,1)$, the quantity under the square root is $\chi^2_{n-1}$ divided by its degrees of freedom, and the two are independent. This is the definition of $t_{n-1}$.
 :::
 
-Remarkably, the distribution of $T$ does not depend on the unknown $\sigma$: this is what makes it so useful in [[statistics/confidence-intervals]]. The upper $2.5\%$ points of $t_k$, which play the role of $1.96$ for the normal, are
+Remarkably, the distribution of $T$ does not depend on the unknown $\sigma$: this is what makes it so useful in [[statistics/confidence-intervals]]. The upper $2.5\%$ points of $t_k$, written $t_{k,0.025}$ (so that $\Prob(T>t_{k,0.025}) = 0.025$ when $T\sim t_k$), play the role of $1.96$ for the normal:
 
 | $k$ | $1$ | $2$ | $5$ | $9$ | $10$ | $20$ | $30$ | $60$ | $\infty$ |
 |---|---|---|---|---|---|---|---|---|---|
-| $t_{k,\,0.975}$ | $12.706$ | $4.303$ | $2.571$ | $2.262$ | $2.228$ | $2.086$ | $2.042$ | $2.000$ | $1.960$ |
+| $t_{k,\,0.025}$ | $12.706$ | $4.303$ | $2.571$ | $2.262$ | $2.228$ | $2.086$ | $2.042$ | $2.000$ | $1.960$ |
 
 ::: widget distribution
 dist: t
 params: df=3
+a: -1.96
+b: 1.96
 normal: true
-caption: The $t_k$ density compared with the standard normal. With $k = 1$ or $2$ degrees of freedom the tails are dramatically heavier; by $k = 30$ the two curves are hard to tell apart except far out in the tails. Shade $\lvert t\rvert>1.96$ and watch the tail probability fall towards $0.05$ as $k$ increases.
+caption: The $t_k$ density compared with the standard normal. With $k = 1$ or $2$ degrees of freedom the tails are dramatically heavier; by $k = 30$ the two curves are hard to tell apart except far out in the tails. The shaded probability $\Prob(\lvert T\rvert\le1.96)$ is only $0.86$ for $k = 3$; increase $k$ and watch it rise towards $0.95$, so that the two tails together shrink towards $0.05$.
 :::
 
 ::: example Using s in place of sigma {#ex-t-vs-z}
@@ -284,7 +286,7 @@ $$
 \frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}\sim F_{n_1-1,\;n_2-1}.
 $$ {#eq-variance-ratio}
 
-The F distribution is also the basis of the analysis of variance and of the overall significance test in multiple regression ([[statistics/regression]]).
+Beyond this course, the F distribution is also the basis of the analysis of variance and of the overall significance test in multiple regression (whose model is set up at the end of [[statistics/regression]]).
 
 ::: example Comparing two variances {#ex-f-ratio}
 Two machines have the same variability. Samples of $10$ bolts from the first and $15$ from the second are measured. How likely is it that the first sample variance is more than three times the second?
@@ -299,7 +301,7 @@ The modern theory of sampling distributions began with small samples in industry
 
 ## Where this leads {#where-next}
 
-Sampling distributions are the raw material of inference. In [[statistics/estimation]] we judge estimators such as $\bar X$ and $S^2$ by their bias and variance; in [[statistics/confidence-intervals]] the t statistic [[#eq-t-statistic]] and the chi-square result of [[#thm-normal-sample]] become intervals for $\mu$ and $\sigma^2$; and in [[statistics/hypothesis-testing]] they become the t-test, the chi-square test and the F-test. When the population is not normal and the sample is small, exact distributions are rarely available; the **bootstrap**, which approximates a sampling distribution by resampling the data, is a modern alternative described in Wasserman's *All of Statistics*.
+Sampling distributions are the raw material of inference. In [[statistics/estimation]] we judge estimators such as $\bar X$ and $S^2$ by their bias and variance; in [[statistics/confidence-intervals]] the t statistic [[#eq-t-statistic]] and the chi-square result of [[#thm-normal-sample]] become intervals for $\mu$ and $\sigma^2$; and in [[statistics/hypothesis-testing]] they become the t-test and the chi-square tests. The ratio [[#eq-variance-ratio]] gives the F-test for comparing two variances, a standard test just beyond this course. When the population is not normal and the sample is small, exact distributions are rarely available; the **bootstrap**, which approximates a sampling distribution by resampling the data, is a modern alternative described in Wasserman's *All of Statistics*.
 
 ::: summary
 - Summaries: the mean and standard deviation (divisor $n-1$) are efficient but sensitive to outliers; the median and IQR are robust.

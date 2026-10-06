@@ -42,6 +42,7 @@ a: 1
 b: 8
 n: 7
 method: right
+y: 0, 1.1
 caption: The right-endpoint rectangles over $[1, 8]$ have heights $\frac1{2^2}, \frac1{3^2}, \dots, \frac1{8^2}$ and lie *under* the curve $y = 1/x^2$, so $\sum_{n=2}^{8} \frac1{n^2} \le \int_1^8 \frac{dx}{x^2} < 1$. Switch to left endpoints: those rectangles (heights $1, \frac14, \dots, \frac1{49}$) lie *above* the curve. A series and an integral of a decreasing function always trap each other like this.
 :::
 
@@ -290,7 +291,7 @@ caption: Terms and partial sums of $1 - \frac12 + \frac13 - \cdots$. The partial
 :::
 
 ::: warning All three hypotheses are needed
-The terms must alternate in sign, decrease in absolute value, and tend to zero. If $b_n \not\to 0$, the series diverges by the divergence test. If $b_n \to 0$ but not monotonically, the series may diverge: take $b_n = \frac1n$ for odd $n$ and $b_n = \frac{1}{n^2}$ for even $n$. Then $\sum(-1)^{n+1}b_n$ is the sum of $1 + \frac13 + \frac15 + \cdots$, which diverges, and $-\left(\frac14 + \frac1{16} + \cdots\right)$, which converges; by [[calculus-2/series#thm-linear]] the total diverges.
+The terms must alternate in sign, decrease in absolute value, and tend to zero. If $b_n \not\to 0$, the series diverges by the divergence test. If $b_n \to 0$ but not monotonically, the series may diverge: take $b_n = \frac1n$ for odd $n$ and $b_n = \frac{1}{n^2}$ for even $n$. Then $\sum(-1)^{n+1}b_n$ is the sum of $1 + \frac13 + \frac15 + \cdots$, which diverges, and $-\left(\frac14 + \frac1{16} + \frac1{36} + \cdots\right)$, which converges; by [[calculus-2/series#thm-linear]] the total diverges.
 :::
 
 ::: example A fast alternating series {#ex-alt-factorial}
@@ -408,7 +409,7 @@ For $n \ge 1$, $0 < \dfrac{n}{n^3+2} < \dfrac{n}{n^3} = \dfrac{1}{n^2}$, and $\s
 :::
 
 ::: exercise A ratio {level=1 check="3/4"}
-Find the limit $L$ of $\abs{a_{n+1}/a_n}$ for the series $\displaystyle\sum_{n=1}^\infty\frac{n^2\,3^n}{4^n}$. Does the series converge?
+Find the limit $L$ of $\abs{a_{n+1}/a_n}$ for the series $\displaystyle\sum_{n=1}^\infty\frac{n^2\,3^n}{4^n}$. Does the series converge? (Enter $L$.)
 ::: solution
 $\dfrac{a_{n+1}}{a_n} = \dfrac{(n+1)^2}{n^2}\cdot\dfrac34 \to \dfrac34$. Since $L = \frac34 < 1$, the series converges by the ratio test.
 :::
@@ -497,6 +498,6 @@ $$
 
 The partial sum $s_{2^{K+1} - 1} = B_0 + \cdots + B_K$ is therefore at most $\sum_{k=0}^{K}2^ka_{2^k}$ and at least $\frac12\sum_{k=1}^{K+1}2^ka_{2^k}$. If the condensed series converges, the partial sums $s_{2^{K+1}-1}$, and hence all partial sums $s_n$ (which increase with $n$), are bounded, so $\sum a_n$ converges. If $\sum a_n$ converges, the second inequality bounds the partial sums of the condensed series by $2\sum a_n + a_1$, so it converges.
 
-For $a_n = n^{-p}$ with $p > 0$, the condensed series is $\sum 2^k\,2^{-kp} = \sum\left(2^{1-p}\right)^k$, a geometric series that converges exactly when $2^{1-p} < 1$, that is $p > 1$.
+For $a_n = n^{-p}$ with $p > 0$, the condensed series is $\sum 2^k\,2^{-kp} = \sum\left(2^{1-p}\right)^k$, a geometric series that converges exactly when $2^{1-p} < 1$, that is $p > 1$. (For $p \le 0$ the terms do not tend to $0$, so the series diverges.)
 :::
 :::

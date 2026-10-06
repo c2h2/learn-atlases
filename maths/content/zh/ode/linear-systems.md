@@ -286,7 +286,7 @@ $$
 - [ ] $\begin{pmatrix}e^t&e^t\\0&e^t\end{pmatrix}$
 - [ ] $\begin{pmatrix}1&0\\0&1\end{pmatrix}$，因为$A^2 = 0$
 ::: solution
-$A^2 = 0$，所以级数在两项之后就终止了：$e^{At} = I + At = \begin{pmatrix}1&t\\0&1\end{pmatrix}$。这就是方程组$x_1' = x_2$，$x_2' = 0$：速度不变，位置线性增长。逐个元素取指数（第一和第三个选项）是常见的错误。
+$A^2 = 0$，所以级数在两项之后就终止了：$e^{At} = I + At = \begin{pmatrix}1&t\\0&1\end{pmatrix}$。这就是方程组$x_1' = x_2$，$x_2' = 0$：速度不变，位置线性增长。把$e^t$放进矩阵元素中（第一和第三个选项）是常见的错误：矩阵指数不能逐个元素地计算。
 :::
 :::
 
@@ -337,7 +337,7 @@ $$
 | $\Delta > 0$，$\tau^2 < 4\Delta$，$\tau > 0$ | 复数，$\operatorname{Re} > 0$ | 不稳定焦点 |
 | $\Delta > 0$，$\tau = 0$ | 纯虚数 | 中心（稳定，但不是渐近稳定） |
 
-在**迹-行列式平面**上，这些区域被轴$\Delta = 0$、它上方的半轴$\tau = 0$以及抛物线$\tau^2 = 4\Delta$分隔开。鞍点、结点和焦点充满开区域，它们是稳健的：$A$的微小改变不会改变类型。中心和退化结点位于曲线上，最轻微的扰动就会把它们变成别的类型。
+在**迹-行列式平面**上，这些区域被轴$\Delta = 0$、它上方的半轴$\tau = 0$以及抛物线$\tau^2 = 4\Delta$分隔开。鞍点、结点和焦点充满开区域，它们是稳健的：$A$的微小改变不会改变类型。中心和退化结点位于曲线上，最轻微的扰动就可能把它们变成别的类型。
 
 ::: widget phaseplane
 matrix: -1, 2; -2, -1
@@ -383,7 +383,7 @@ $\tau = 0$，但$\Delta = -4 + 3 = -1 < 0$，所以特征值是异号的实数�
 
 ## 后续内容
 
-平面相图的分类是[[ode/nonlinear-systems]]一章的出发点：在那里，非线性方程组在平衡点附近用它的线性化$\mathbf{x}' = J\mathbf{x}$来近似，其中$J$是雅可比矩阵，而[[#thm-linear-stability]]在大多数情形下决定了稳定性。对大型矩阵可靠地计算$e^{At}$是数值线性代数的一个经典问题（[[numerical-analysis/iterative-methods]]），而刚性方程组——其特征值的大小相差悬殊——需要专门的方法（[[numerical-analysis/numerical-odes]]）。把热方程这样的偏微分方程在空间上离散化，会得到一个巨大的线性方程组$\mathbf{u}' = A\mathbf{u}$，它的特征向量近似于[[pde/heat-equation]]一章中的傅里叶模式。
+平面相图的分类是[[ode/nonlinear-systems]]一章的出发点：在那里，非线性方程组在平衡点附近用它的线性化$\mathbf{x}' = J\mathbf{x}$来近似，其中$J$是雅可比矩阵，而[[#thm-linear-stability]]在大多数情形下决定了稳定性。可靠地计算大型矩阵的特征值是数值线性代数的一个经典问题（[[numerical-analysis/iterative-methods]]），计算$e^{At}$也是如此，而且更为微妙；刚性方程组——其特征值的大小相差悬殊——则需要专门的方法（[[numerical-analysis/numerical-odes]]）。把热方程这样的偏微分方程在空间上离散化，会得到一个巨大的线性方程组$\mathbf{u}' = A\mathbf{u}$，它的特征向量近似于[[pde/heat-equation]]一章中的傅里叶模式。
 
 ::: summary
 - $n$阶线性方程等价于以友矩阵为系数矩阵的一阶方程组；线性方程组有唯一的整体解（[[#thm-eu-system]]）。

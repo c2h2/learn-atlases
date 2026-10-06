@@ -10,7 +10,7 @@ Fourier needed such expansions to solve the heat equation, and they are the main
 
 ## Periodic functions and trigonometric polynomials
 
-A function $f\colon \R\to\R$ is **periodic with period** $T > 0$ if $f(x + T) = f(x)$ for every $x$. The functions $\cos nx$ and $\sin nx$, $n = 0, 1, 2, \dots$, all have period $2\pi$ (their smallest period is $2\pi/n$, but $2\pi$ is a period of each). So do their finite linear combinations
+A function $f\colon \R\to\R$ is **periodic with period** $T > 0$ if $f(x + T) = f(x)$ for every $x$. The functions $\cos nx$ and $\sin nx$, $n = 0, 1, 2, \dots$, all have period $2\pi$ (for $n \ge 1$ the smallest period is $2\pi/n$, but $2\pi$ is a period of each). So do their finite linear combinations
 
 $$
 T(x) = \frac{c_0}{2} + \sum_{n=1}^{N}\bigl(c_n\cos nx + d_n\sin nx\bigr),
@@ -513,7 +513,7 @@ hence $16\sum\frac1{n^4} = \frac{2\pi^4}{5} - \frac{2\pi^4}{9} = \frac{8\pi^4}{4
 :::
 
 ::: application Energy, spectra and compression
-In acoustics and electrical engineering $\int f^2$ measures the energy of a signal over one period, and $a_n^2 + b_n^2$ is the energy carried by the $n$th harmonic. Parseval's identity says that the total energy is the sum of the energies of the harmonics; the sequence $a_n^2 + b_n^2$ is the **power spectrum**, and it is what distinguishes a violin from a flute playing the same note. It also explains lossy compression. If we discard some coefficients of an orthogonal expansion, [[#eq-pythag]] shows that the mean-square error is exactly the sum of the squares of the discarded coefficients (times $\pi$), so throwing away many small coefficients costs very little. JPEG image compression applies this idea with the discrete cosine transform on $8\times8$ blocks of pixels.
+In acoustics and electrical engineering $\int f^2$ measures the energy of a signal over one period, and $a_n^2 + b_n^2$ is the energy carried by the $n$th harmonic. Parseval's identity says that the total energy is the sum of the energies of the harmonics; the sequence $a_n^2 + b_n^2$ is the **power spectrum**, and it is what distinguishes a violin from a flute playing the same note. It also explains lossy compression. If we discard some coefficients of an orthogonal expansion, [[#eq-pythag]] together with Parseval's identity shows that the mean-square error is exactly the sum of the squares of the discarded coefficients (times $\pi$), so throwing away many small coefficients costs very little. JPEG image compression applies this idea with the discrete cosine transform on $8\times8$ blocks of pixels.
 :::
 
 ## Integrating and differentiating Fourier series
@@ -553,7 +553,7 @@ The examples display a general dictionary. Jumps give coefficients of size about
 :::
 
 ::: history
-Euler was already using trigonometric series in the 1740s, and in the 1750s they became the centre of the debate between d'Alembert, Euler and Daniel Bernoulli about the vibrating string; Clairaut and Euler also found the integral formulas for the coefficients in special cases. Joseph Fourier's memoir on heat, presented to the Institut de France in 1807, went much further: he claimed that an *arbitrary* function could be so expanded. The examiners, among them Lagrange and Laplace, were sceptical, and the work appeared in full only in his *Théorie analytique de la chaleur* (1822). The first rigorous convergence proof was published by Peter Gustav Lejeune Dirichlet in 1829 for functions with finitely many jumps and finitely many maxima and minima. Bernhard Riemann's 1854 Habilitation thesis on trigonometric series introduced the Riemann integral for this purpose, and Georg Cantor's study of the uniqueness of trigonometric series in the 1870s led him to set theory. The overshoot near jumps was analysed by Henry Wilbraham in 1848 and rediscovered by J. Willard Gibbs in letters to *Nature* in 1898–99. Paul du Bois-Reymond found a continuous function with a divergent Fourier series (1873), and the question of exactly which functions have convergent series was settled only in 1966, when Lennart Carleson proved that the Fourier series of every square-integrable function converges almost everywhere.
+Euler was already using trigonometric series in the 1740s, and in the 1750s they became the centre of the debate between d'Alembert, Euler and Daniel Bernoulli about the vibrating string; Clairaut and Euler also found the integral formulas for the coefficients in special cases. Joseph Fourier's memoir on heat, presented to the Institut de France in 1807, went much further: he claimed that an *arbitrary* function could be so expanded. The examiners, among them Lagrange and Laplace, were sceptical, and the work appeared in full only in his *Théorie analytique de la chaleur* (1822). The first rigorous convergence proof was published by Peter Gustav Lejeune Dirichlet in 1829 for functions with finitely many jumps and finitely many maxima and minima. Bernhard Riemann's 1854 Habilitation thesis on trigonometric series introduced the Riemann integral for this purpose, and Georg Cantor's study of the uniqueness of trigonometric series in the 1870s led him to set theory. The overshoot near jumps was analysed by Henry Wilbraham in 1848 and rediscovered by J. Willard Gibbs in letters to *Nature* in 1898–99. Paul du Bois-Reymond found a continuous function with a divergent Fourier series (1873), and the long-standing question whether the Fourier series of every square-integrable function converges at least almost everywhere was settled only in 1966, when Lennart Carleson proved that it does.
 :::
 
 ## Where this leads
@@ -583,7 +583,7 @@ From $\sin 3x = 3\sin x - 4\sin^3x$ we get $\sin^3 x = \frac34\sin x - \frac14\s
 :::
 
 ::: exercise Value at a jump {level=1 check="pi^2/2"}
-Let $f(x) = 0$ for $-\pi < x < 0$ and $f(x) = x^2$ for $0 \le x < \pi$, extended $2\pi$-periodically. Without computing the coefficients, find the sum of the Fourier series of $f$ at $x = \pi$. What are the sums at $x = 0$ and $x = \pi/2$?
+Let $f(x) = 0$ for $-\pi < x < 0$ and $f(x) = x^2$ for $0 \le x < \pi$, extended $2\pi$-periodically. Without computing the coefficients, find the sum of the Fourier series of $f$ at $x = \pi$. What are the sums at $x = 0$ and $x = \pi/2$? (Enter the sum at $x = \pi$.)
 ::: solution
 $f$ is piecewise smooth, so [[#thm-dirichlet]] applies. At $x = \pi$ the periodic extension jumps from $f(\pi^-) = \pi^2$ to $f(\pi^+) = f(-\pi^+) = 0$, so the series converges to $\frac{\pi^2 + 0}{2} = \frac{\pi^2}{2}$. At $x = 0$ both one-sided limits are $0$, so the sum is $0$. At $x = \pi/2$ the function is continuous and the sum is $f(\pi/2) = \frac{\pi^2}{4}$.
 :::
@@ -625,7 +625,7 @@ with equality everywhere because $\abs{\sin x}$ is continuous, periodic and piec
 :::
 
 ::: exercise A cosine as a sine series {level=2 check="8/(3*pi)"}
-Find the half-range sine series of $f(x) = \cos x$ on $(0, \pi)$. What is $b_2$? To what does the series converge at $x = 0$, and why do its coefficients decay only like $1/n$?
+Find the half-range sine series of $f(x) = \cos x$ on $(0, \pi)$. What is $b_2$? To what does the series converge at $x = 0$, and why do its coefficients decay only like $1/n$? (Enter $b_2$.)
 ::: solution
 By [[#def-half-range]] with $L = \pi$, $b_n = \frac2\pi\int_0^\pi\cos x\sin nx\,dx = \frac1\pi\int_0^\pi\bigl[\sin(n+1)x + \sin(n-1)x\bigr]dx$. For $n = 1$ this is $\frac1\pi\int_0^\pi\sin 2x\,dx = 0$. For $n \ge 2$,
 

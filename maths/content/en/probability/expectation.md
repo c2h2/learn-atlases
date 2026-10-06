@@ -56,7 +56,7 @@ Both the mean and the variance equal $1$ for every $n\ge2$ — the same as for a
 ::: widget distribution
 dist: poisson
 params: lambda=1
-caption: The $\operatorname{Poisson}(1)$ distribution, the limit of the number of fixed points of a random permutation. $\Prob(N = 0) = \Prob(N = 1) = e^{-1}\approx0.368$, and three or more matches happen only about $8\%$ of the time. For a party of $10$ guests the exact probabilities agree with these to about six decimal places.
+caption: The $\operatorname{Poisson}(1)$ distribution, the limit of the number of fixed points of a random permutation. $\Prob(N = 0) = \Prob(N = 1) = e^{-1}\approx0.368$, and three or more matches happen only about $8\%$ of the time. For a party of $10$ guests the exact probabilities agree with these to four decimal places.
 :::
 
 Indicators also settle the claims about sampling without replacement made in [[probability/discrete-random-variables]].
@@ -408,7 +408,7 @@ Moment generating functions give the proof of the central limit theorem in [[pro
 ## Exercises
 
 ::: exercise A hundred dice {level=1 check="875/3"}
-One hundred fair dice are rolled. Find the expectation and the variance of the total.
+One hundred fair dice are rolled. Find the expectation and the variance of the total; enter the variance.
 ::: solution
 By linearity the expectation is $100\times\tfrac72 = 350$. The dice are independent, so variances add: $100\times\tfrac{35}{12} = \tfrac{875}{3}\approx291.7$ (standard deviation about $17.1$).
 :::
@@ -460,7 +460,7 @@ By [[#ex-coupon]], $4\bigl(1+\tfrac12+\tfrac13+\tfrac14\bigr) = 4\cdot\tfrac{25}
 :::
 
 ::: exercise An extinction probability {level=3 check="0.4"}
-In a branching process each individual has $0$, $1$ or $2$ children with probabilities $0.2$, $0.3$ and $0.5$. Find the mean number of children and the probability that the line descended from one individual dies out.
+In a branching process each individual has $0$, $1$ or $2$ children with probabilities $0.2$, $0.3$ and $0.5$. Find the mean number of children and the probability that the line descended from one individual dies out; enter the probability.
 ::: solution
 $G(s) = 0.2 + 0.3s + 0.5s^2$ and $m = G'(1) = 0.3 + 1 = 1.3>1$, so extinction is not certain. Solve $G(s) = s$: $0.5s^2 - 0.7s + 0.2 = 0$, that is $5s^2 - 7s + 2 = 0 = (5s - 2)(s - 1)$. The roots are $s = 0.4$ and $s = 1$; by [[#thm-extinction]] the extinction probability is the smaller root, $0.4$.
 :::

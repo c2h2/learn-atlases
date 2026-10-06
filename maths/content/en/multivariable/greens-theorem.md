@@ -83,7 +83,7 @@ $$
 Adding the two identities proves Green's theorem for regions of both types.
 :::
 
-**Extending the theorem.** Suppose $D$ is cut by a segment into two pieces $D_1$ and $D_2$, each of which satisfies Green's theorem. Adding the theorem for $D_1$ and for $D_2$, the double integrals add up to the integral over $D$. On the boundary side, the cut appears twice — once in $\partial D_1$ and once in $\partial D_2$ — traversed in *opposite* directions (each piece must stay on the left), so by [[multivariable/line-integrals#thm-orientation]] the two contributions cancel, and what remains is exactly the circulation around $\partial D$. By induction, Green's theorem holds for every region that can be cut into finitely many regions of both types. (In fact the $P$ identity only needs a decomposition into type I pieces and the $Q$ identity one into type II pieces, and the two decompositions may differ.) This covers all polygons and every region with holes that you are likely to meet: the annulus, for example, is cut into four quarter-annuli by the coordinate axes. The theorem holds in the generality stated, for any region bounded by finitely many piecewise smooth simple closed curves, but the general proof requires approximation arguments; see Apostol, *Calculus*, Vol. II, ch. 11.
+**Extending the theorem.** Suppose $D$ is cut by a segment into two pieces $D_1$ and $D_2$, each of which satisfies Green's theorem. Adding the theorem for $D_1$ and for $D_2$, the double integrals add up to the integral over $D$. On the boundary side, the cut appears twice — once in $\partial D_1$ and once in $\partial D_2$ — traversed in *opposite* directions (each piece must stay on the left), so by [[multivariable/line-integrals#thm-orientation]] the two contributions cancel, and what remains is exactly the circulation around $\partial D$. By induction, Green's theorem holds for every region that can be cut into finitely many regions of both types. (In fact the $P$ identity only needs a decomposition into type I pieces and the $Q$ identity one into type II pieces, and the two decompositions may differ.) This covers all polygons and every region with holes that you are likely to meet: the annulus, for example, is cut into four quarter-annuli by the coordinate axes. The theorem holds in the generality stated, for any region bounded by finitely many piecewise smooth simple closed curves, but the general proof requires approximation arguments; see Apostol, *Mathematical Analysis* (1957 edition), ch. 10.
 
 ::: warning The field must be smooth on the whole region
 Green's theorem needs $P$ and $Q$ to be $C^1$ at *every* point of $D$, not just on the boundary. The vortex field $\mathbf{F} = \left(\frac{-y}{x^2+y^2}, \frac{x}{x^2+y^2}\right)$ of [[multivariable/line-integrals#ex-vortex]] has $Q_x - P_y = 0$ wherever it is defined, yet its circulation around the unit circle is $2\pi$, not $0$. There is no contradiction: the field is undefined at the origin, which lies inside the disc, so the theorem does not apply to the disc. It does apply to regions that avoid the origin, with striking consequences ([[#ex-vortex-again]]).
@@ -252,7 +252,7 @@ which tends to $0$ as $\rho\to0$ because $\curl\mathbf{F}$ is continuous. The di
 These limits do not mention coordinates at all, so curl and divergence are geometric quantities: they do not change if we rotate the axes. Positive divergence at a point means fluid is being created there — a **source** — and negative divergence a **sink**. Positive curl means a net anticlockwise swirl.
 
 ::: intuition The paddle-wheel test
-Drop a tiny paddle wheel, free to spin about a vertical axle, into a flowing sheet of fluid. It spins anticlockwise where $\curl\mathbf{F} > 0$ and clockwise where $\curl\mathbf{F} < 0$; in fact its angular velocity is $\tfrac12\curl\mathbf{F}$. Curl is about *local* spin, which is not the same as flowing in circles. In the **shear flow** $\mathbf{F} = (y, 0)$ the fluid moves in straight lines, faster higher up, yet $\curl\mathbf{F} = 0 - 1 = -1$: the faster water above the wheel pushes its top forwards, and the wheel turns clockwise. Conversely, in the vortex of [[multivariable/line-integrals#ex-vortex]] the fluid circles the origin, yet away from the origin the curl is $0$: the wheel is carried round without spinning, because the slower outer water exactly balances the faster inner water.
+Drop a tiny paddle wheel, free to spin about a vertical axle, into a flowing sheet of fluid. It spins anticlockwise where $\curl\mathbf{F} > 0$ and clockwise where $\curl\mathbf{F} < 0$; in fact its angular velocity is $\tfrac12\curl\mathbf{F}$. Curl is about *local* spin, which is not the same as flowing in circles. In the **shear flow** $\mathbf{F} = (y, 0)$ the fluid moves in straight lines, faster higher up, yet $\curl\mathbf{F} = 0 - 1 = -1$: the faster water above the wheel pushes its top forwards, and the wheel turns clockwise. Conversely, in the vortex of [[multivariable/line-integrals#ex-vortex]] the fluid circles the origin, yet away from the origin the curl is $0$: the wheel is carried round without spinning, because two effects cancel exactly — the curving of the flow turns it anticlockwise, while the faster inner water turns it clockwise.
 :::
 
 ::: widget vectorfield
@@ -288,6 +288,7 @@ t: 0, 2pi
 x: -3, 3
 y: -3, 3
 shade: divergence
+mode: flux
 sliders: a=1:-2:2:0.1; b=0.5:-2:2:0.1; r=0.8:0.2:1.5:0.1
 caption: The field $\mathbf{F} = (x^2, y^2)$ has divergence $2x + 2y$: sources above the line $x + y = 0$, sinks below it. Slide the circle across that line and watch the flux change sign; by [[#thm-green-flux]] it equals $2(a + b)\pi r^2$, the integral of the divergence over the disc.
 :::
@@ -326,7 +327,7 @@ $$
 
 where both integrals are now anticlockwise. Hence $\oint_C\mathbf{F}\cdot d\mathbf{r} = \oint_{C_\eps}\mathbf{F}\cdot d\mathbf{r} = 2\pi$, the value computed for a circle (the same computation works for any radius).
 
-The answer is the same for a square, an ellipse or a wiggly loop: all that matters is whether the curve goes round the origin. (A closed curve that winds round the origin $k$ times, counted with sign, gives $2\pi k$, which leads to the **winding number** of [[complex-analysis/cauchy-theorem]].)
+The answer is the same for a square, an ellipse or a wiggly loop: all that matters is whether the curve goes round the origin. (A closed curve that winds round the origin $k$ times, counted with sign, gives $2\pi k$, which leads to the **winding number** of [[complex-analysis/contour-integrals]].)
 :::
 :::
 

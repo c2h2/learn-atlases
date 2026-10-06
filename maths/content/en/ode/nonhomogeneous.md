@@ -27,7 +27,7 @@ Let $g$ be continuous on $I$ and let $y_p$ be any one solution of $L[y] = g$.
 The function $y_h = c_1y_1 + c_2y_2$ is called the **complementary** (or homogeneous) solution and $y_p$ a **particular** solution. Part 2 means that a complicated forcing term can be split into simple pieces, each handled separately. The constants $c_1, c_2$ are always fitted to initial conditions **last**, to the full solution $y_p + y_h$.
 
 ::: warning Fit the initial conditions to the whole solution
-A frequent error is to fit $c_1, c_2$ to the initial conditions using $y_h$ alone and then add $y_p$. That gives the wrong answer unless $y_p(t_0) = y_p'(t_0) = 0$. Write down $y = y_p + c_1y_1 + c_2y_2$ first, then impose $y(t_0) = y_0$ and $y'(t_0) = y_1$.
+A frequent error is to fit $c_1, c_2$ to the initial conditions using $y_h$ alone and then add $y_p$. That gives the wrong answer unless $y_p(t_0) = y_p'(t_0) = 0$. Write down $y = y_p + c_1y_1 + c_2y_2$ first, then impose both initial conditions at $t_0$ on this $y$.
 :::
 
 ## Undetermined coefficients
@@ -187,7 +187,7 @@ $$
 y = c_1\cos t + c_2\sin t + \cos t\,\ln(\cos t) + t\sin t .
 $$
 
-The interval matters: $\sec t$ is discontinuous at $\pm\frac\pi2$, and there the particular solution has a logarithmic singularity.
+The interval matters: $\sec t$ is discontinuous at $\pm\frac\pi2$, and there the particular solution, although it stays bounded, has a derivative that blows up logarithmically.
 :::
 :::
 
@@ -282,7 +282,7 @@ x: 0, 60
 y: -10, 10
 sliders: w=2.8:2:4:0.02
 labels: x(t)
-caption: The response of $x'' + 9x = \cos\omega t$ from rest (natural frequency $\omega_0 = 3$; horizontal axis $t$). Slide $\omega$ towards $3$: the beats become slower and taller, and at exactly $\omega = 3$ the envelope opens into the straight lines $\pm t/6$ of pure resonance. Move $\omega$ far from $3$ and the response is small and only mildly modulated.
+caption: The response of $x'' + 9x = \cos\omega t$ from rest (natural frequency $\omega_0 = 3$; horizontal axis $t$). Slide $\omega$ towards $3$: the beats become slower and taller, and at exactly $\omega = 3$ the envelope opens into the straight lines $\pm t/6$ of pure resonance. Move $\omega$ far from $3$ and the response is small and the beats are short.
 :::
 
 ## Damped forcing: transients and the steady state
@@ -300,7 +300,7 @@ The difference solves the homogeneous equation $mx'' + cx' + kx = 0$. As shown i
 So for periodic forcing $F_0\cos\omega t$ every solution approaches one special solution, the **steady state**, and the homogeneous part is the **transient**.
 
 ::: theorem Steady-state response {#thm-steady}
-Let $m, c, k > 0$. The equation $mx'' + cx' + kx = F_0\cos\omega t$ has exactly one periodic solution,
+Let $m, c, k > 0$ and $\omega > 0$. The equation $mx'' + cx' + kx = F_0\cos\omega t$ has exactly one periodic solution,
 
 $$
 x_{\mathrm{ss}}(t) = A(\omega)\cos(\omega t - \delta), \qquad A(\omega) = \frac{F_0}{\sqrt{(k - m\omega^2)^2 + c^2\omega^2}}, \qquad \tan\delta = \frac{c\,\omega}{k - m\omega^2},
@@ -316,7 +316,7 @@ $$
 \bigl(k - m\omega^2 + ic\omega\bigr)Z = F_0 .
 $$
 
-The factor in brackets is non-zero because its imaginary part $c\omega \ne 0$ (for $\omega \neq 0$; for $\omega = 0$ it is $k \neq 0$). So $Z = F_0/(k - m\omega^2 + ic\omega)$, with modulus $\lvert Z\rvert = A(\omega)$ and argument $-\delta$, where $\delta$ is the argument of $k - m\omega^2 + ic\omega$; this lies in $(0,\pi)$ since the imaginary part is positive. Then $\operatorname{Re}(Ze^{i\omega t}) = A(\omega)\cos(\omega t - \delta)$ is a periodic solution. Every solution converges to it by [[#prop-transient]]. If there were two periodic solutions, their difference would be a periodic solution of the homogeneous equation that tends to $0$, hence identically zero.
+The factor in brackets is non-zero because its imaginary part $c\omega$ is positive. So $Z = F_0/(k - m\omega^2 + ic\omega)$, with modulus $\lvert Z\rvert = A(\omega)$ and argument $-\delta$, where $\delta$ is the argument of $k - m\omega^2 + ic\omega$; this lies in $(0,\pi)$ since the imaginary part is positive. Then $\operatorname{Re}(Ze^{i\omega t}) = A(\omega)\cos(\omega t - \delta)$ is a periodic solution. Every solution converges to it by [[#prop-transient]]. If there were two periodic solutions, their difference would be a periodic solution of the homogeneous equation that tends to $0$, hence identically zero.
 :::
 
 ::: remark Complexification
@@ -477,14 +477,14 @@ At resonance ($\omega = \omega_0 = 4$), $x = \frac{F_0}{2\omega_0}t\sin\omega_0t
 :::
 
 ::: exercise The resonant frequency {level=2 check="sqrt(7/2)"}
-For $x'' + x' + 4x = \cos\omega t$, find the driving frequency $\omega_r$ that maximises the steady-state amplitude, and the maximal amplitude.
+For $x'' + x' + 4x = \cos\omega t$, find the driving frequency $\omega_r$ that maximises the steady-state amplitude, and the maximal amplitude. Enter $\omega_r$.
 ::: solution
 Here $m = 1$, $c = 1$, $k = 4$, and $c^2 = 1 < 8 = 2mk$. By [[#cor-practical]], $\omega_r = \sqrt{4 - \frac12} = \sqrt{7/2}\approx 1.871$, and $A(\omega_r) = \dfrac{1}{1\cdot\sqrt{4 - \frac14}} = \dfrac{2}{\sqrt{15}}\approx 0.516$.
 :::
 :::
 
 ::: exercise The loudest beat {level=2 check="2"}
-Solve $x'' + 25x = 9\cos 4t$, $x(0) = x'(0) = 0$. What is the maximum displacement, and when is it first reached?
+Solve $x'' + 25x = 9\cos 4t$, $x(0) = x'(0) = 0$. What is the maximum displacement, and when is it first reached? Enter the maximum displacement.
 ::: solution
 By [[#eq-beats]] with $\omega_0 = 5$, $\omega = 4$, $F_0/(\omega_0^2 - \omega^2) = 9/9 = 1$: $x = \cos4t - \cos5t = 2\sin\frac t2\sin\frac{9t}{2}$. Certainly $\lvert x\rvert\le 2$, and $x = 2$ requires $\cos 4t = 1$ and $\cos5t = -1$, i.e. $4t \in 2\pi\Z$ and $5t \in \pi + 2\pi\Z$. The smallest positive such $t$ is $t = \pi$ ($4\pi$ and $5\pi$). So the maximum displacement is $2$, first reached at $t = \pi$, in the middle of the first beat.
 :::

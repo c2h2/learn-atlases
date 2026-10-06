@@ -393,7 +393,7 @@ $$
 (4) If $\rho = 0$ then $f(x,y) = \varphi(x)\varphi(y)$, so $X$ and $Y$ are independent by [[#thm-independence-criteria]]; if they are independent then $\rho = \Corr(X,Y) = 0$ by [[#thm-covariance]].
 :::
 
-Part (4) is special to the bivariate normal: for jointly normal variables, and *only* for such well-behaved families, uncorrelated means independent. The general bivariate normal distribution is obtained by rescaling, $(\mu_X+\sigma_XX,\ \mu_Y+\sigma_YY)$; its density has elliptical contours centred at $(\mu_X,\mu_Y)$, tilted according to the sign of $\rho$.
+Part (4) is special: for jointly normal variables uncorrelated means independent, but in general it does not (see the warning above), not even when $X$ and $Y$ are each normal. If $X\sim\Normal(0,1)$ and $Y = SX$, where $S = \pm1$ is a fair random sign independent of $X$, then $Y\sim\Normal(0,1)$ and $\Cov(X,Y) = \E S\,\E X^2 = 0$, yet $\lvert Y\rvert = \lvert X\rvert$; the pair is not bivariate normal (it lies on the two lines $y = \pm x$, so it has no joint density). The general bivariate normal distribution is obtained by rescaling, $(\mu_X+\sigma_XX,\ \mu_Y+\sigma_YY)$; its density has elliptical contours centred at $(\mu_X,\mu_Y)$, tilted according to the sign of $\rho$.
 
 ::: widget surface
 f: exp(-(x^2 - 2*r*x*y + y^2)/(2*(1 - r^2)))/(2*pi*sqrt(1 - r^2))
@@ -452,7 +452,7 @@ $$
 :::
 
 ::: exercise First failure {level=2 check="500"}
-Three independent components have exponential lifetimes with means $1000$, $2000$ and $2000$ hours. A system fails as soon as any one of its components fails. Find the expected lifetime of the system, and the probability that the first component is the one that fails first.
+Three independent components have exponential lifetimes with means $1000$, $2000$ and $2000$ hours. A system fails as soon as any one of its components fails. Find the expected lifetime of the system, and the probability that the first component is the one that fails first; enter the expected lifetime.
 ::: solution
 The failure rates are $0.001$, $0.0005$ and $0.0005$ per hour. As in [[#ex-competing]], the minimum of independent exponential lifetimes exceeds $t$ exactly when all three do, so $\Prob(T>t) = e^{-0.001t}e^{-0.0005t}e^{-0.0005t} = e^{-0.002t}$: the system lifetime is $\operatorname{Exp}(0.002)$, with mean $1/0.002 = 500$ hours. The first component fails first with probability $0.001/(0.001 + 0.0005 + 0.0005) = \tfrac12$, by the same integral as in the example with $\mu$ replaced by the combined rate $0.001$ of the other two (their minimum is $\operatorname{Exp}(0.001)$ and is independent of the first lifetime).
 :::
@@ -478,7 +478,7 @@ $$
 \E(XY) = \int_0^1\int_0^1xy(x+y)\,dx\,dy = \frac13\cdot\frac12 + \frac12\cdot\frac13 = \frac13,
 $$
 
-so $\Cov(X,Y) = \tfrac13 - \tfrac{49}{144} = -\tfrac{1}{144}$ and $\Corr(X,Y) = \dfrac{-1/144}{11/144} = -\dfrac{1}{11}$. The correlation is weakly negative: the density is largest near the corner $(1,1)$ but the constraint of total mass $1$ makes large values of one coordinate slightly favour small values of the other.
+so $\Cov(X,Y) = \tfrac13 - \tfrac{49}{144} = -\tfrac{1}{144}$ and $\Corr(X,Y) = \dfrac{-1/144}{11/144} = -\dfrac{1}{11}$. The correlation is weakly negative, although the density is largest near the corner $(1,1)$. Given $X = x$, $Y$ has density $(x+y)/(x+\tfrac12)$, whose tilt towards large $y$ weakens as $x$ grows; so $\E(Y\mid X = x) = \dfrac{3x+2}{6x+3}$ falls from $\tfrac23$ at $x = 0$ to $\tfrac59$ at $x = 1$.
 :::
 :::
 

@@ -13,7 +13,7 @@
 下面是一些例子，按样本空间从小到大的顺序排列：
 
 - 抛一次硬币：$\Omega = \{H, T\}$（$H$表示正面，$T$表示反面）。
-- 掷一颗红骰子和一颗蓝骰子：$\Omega = \{(i, j) : 1 \le i, j \le 6\}$，共有$36$个结果。事件“点数之和为$7$”就是$\{(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)\}$。
+- 掷一颗红骰子和一颗蓝骰子：$\Omega = \{(i, j) : 1 \le i, j \le 6\}$，共有$36$个结果。事件“点数之和为$7$”就是$\{(1,6),\allowbreak (2,5),\allowbreak (3,4),\allowbreak (4,3),\allowbreak (5,2),\allowbreak (6,1)\}$。
 - 反复抛硬币直到第一次出现正面，并记录抛掷的次数：$\Omega = \{1, 2, 3, \ldots\}$，这是一个可数无限集。
 - 以小时为单位测量一只灯泡的寿命：$\Omega = [0, \infty)$，这是一个不可数集。
 
@@ -100,7 +100,7 @@ $$ {#eq-discrete}
 :::
 
 ::: proof
-[[#eq-discrete]]中的和的各项都非负，所以这些和有确定的意义（可能是无穷级数），并且其值与求和顺序无关（[[calculus-2/series]]）。显然$\Prob(A) \ge 0$且$\Prob(\Omega) = 1$。若$A_1, A_2, \ldots$两两不相交，则它们的并中的每个$\omega$恰好属于一个$A_n$；而非负项级数可以分组并逐组求和，所以
+[[#eq-discrete]]中的和的各项都非负，所以这些和有确定的意义（可能是无穷级数），并且其值与求和顺序无关（[[calculus-2/convergence-tests#thm-rearrangement]]）。显然$\Prob(A) \ge 0$且$\Prob(\Omega) = 1$。若$A_1, A_2, \ldots$两两不相交，则它们的并中的每个$\omega$恰好属于一个$A_n$；而非负项级数可以分组并逐组求和，所以
 
 $$
 \Prob\Bigl(\bigcup_n A_n\Bigr) = \sum_{\omega \in \bigcup_n A_n} p(\omega) = \sum_{n} \sum_{\omega \in A_n} p(\omega) = \sum_n \Prob(A_n).
@@ -264,7 +264,7 @@ $$
 ::: example 两颗骰子的点数和 {#ex-two-dice}
 掷两颗均匀的骰子。求点数和为$7$的概率，以及点数和为$8$的概率。
 ::: solution
-使用$36$个有序结果$(i, j)$，对均匀骰子而言它们是等可能的。点数和为$7$来自$(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)$，所以$\Prob(\text{点数和为 } 7) = \tfrac{6}{36} = \tfrac16$。点数和为$8$来自$(2,6), (3,5), (4,4), (5,3), (6,2)$，所以$\Prob(\text{点数和为 }8) = \tfrac{5}{36}$。一般地，得到点数和$2, 3, \ldots, 12$的方法数为
+使用$36$个有序结果$(i, j)$，对均匀骰子而言它们是等可能的。点数和为$7$来自$(1,6),\allowbreak (2,5),\allowbreak (3,4),\allowbreak (4,3),\allowbreak (5,2),\allowbreak (6,1)$，所以$\Prob(\text{点数和为 } 7) = \tfrac{6}{36} = \tfrac16$。点数和为$8$来自$(2,6),\allowbreak (3,5),\allowbreak (4,4),\allowbreak (5,3),\allowbreak (6,2)$，所以$\Prob(\text{点数和为 }8) = \tfrac{5}{36}$。一般地，得到点数和$2, 3, \ldots, 12$的方法数为
 
 | 点数和 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -427,7 +427,7 @@ caption: 每个点都是单位正方形中的一个均匀随机点；落在四�
 
 ## 后续内容 {#where-next}
 
-概率空间是其他一切内容展开的舞台。在[[probability/conditional-probability]]一章中，我们将学习获得部分信息后概率如何变化，由此引出贝叶斯定理和独立性的概念。附着在结果上的数值量，例如两颗骰子的点数和或直到出现正面所需的抛掷次数，称为**随机变量**，从[[probability/discrete-random-variables]]一章起开始研究。本章中测度论的一面——σ-代数、勒贝格测度的构造以及关于概率测度的积分——将在[[measure-theory/sigma-algebras]]和[[measure-theory/lebesgue-integral]]两章中全面展开。
+概率空间是其他一切内容展开的舞台。在[[probability/conditional-probability]]一章中，我们将学习获得部分信息后概率如何变化，由此引出贝叶斯定理和独立性的概念。附着在结果上的数值量，例如两颗骰子的点数和或直到出现正面所需的抛掷次数，称为**随机变量**，从[[probability/discrete-random-variables]]一章起开始研究。本章中测度论的一面——σ-代数、勒贝格测度的构造以及关于概率测度的积分——将在[[measure-theory/sigma-algebras]]、[[measure-theory/lebesgue-measure]]和[[measure-theory/lebesgue-integral]]三章中全面展开。
 
 ::: summary
 - 概率空间$(\Omega, \mathcal{F}, \Prob)$由结果组成的样本空间、由事件组成的σ-代数以及满足柯尔莫哥洛夫公理的概率测度构成；这些公理是：非负性、$\Prob(\Omega) = 1$和可数可加性（[[#def-prob-space]]）。

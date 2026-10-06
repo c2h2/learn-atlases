@@ -917,8 +917,12 @@
       }
       let vlo = lo[2], vhi = hi[2];
       if (colorMode === 'gauss' || colorMode === 'mean') {
+        // curvatures of a surface of size L are of order 1/L; far below that they are finite-difference noise
+        // (H ≈ 5e-6 on a catenoid), and stretching the scale to the noise would shade a surface with H = 0
+        const L = Math.max(hi[0] - lo[0], hi[1] - lo[1], hi[2] - lo[2]) || 1;
         const m = percentile(Array.from(val).map(Math.abs), 0.95);
-        vhi = m > 1e-9 ? m : 1; vlo = -vhi;
+        if (m < 1e-4 / L) val.forEach((v, k) => { if (fin(v)) val[k] = 0; });
+        vhi = m >= 1e-4 / L ? m : 1 / L; vlo = -vhi;
       }
       // contour segments per cell (levels of z)
       const levels = showContours ? niceLevels(lo[2], hi[2], 11) : [];
@@ -1017,7 +1021,7 @@
       const [a, b] = tp;
       const h = 1e-5 * Math.max(span(ur), span(vr));
       const z0 = fz(a, b);
-      const p = (fz(a + h, b) - fz(a - h, b)) / (2 * h), q = (fz(a, b + h) - fz(a, b - h)) / (2 * h);
+      const p = MA.num.snap((fz(a + h, b) - fz(a - h, b)) / (2 * h), z0), q = MA.num.snap((fz(a, b + h) - fz(a, b - h)) / (2 * h), z0);
       let c = { K: NaN, H: NaN };
       try { c = curv(a, b); } catch (e) { /* shown as – */ }
       T = { a, b, z0, p, q, K: c.K, H: c.H };
@@ -1539,7 +1543,7 @@
     const F = (x, y) => { scope.x = x; scope.y = y; return [Pe.f(scope), Qe.f(scope)]; };
     const cs = Object.assign({}, sl.values);
     const rc = (t) => { cs.t = t; return [CX.f(cs), CY.f(cs)]; };
-    let mode = 'work';
+    let mode = cfg.mode === 'flux' ? 'flux' : 'work';
     let tt = tr[0] + 0.35 * span(tr);
 
     MA.ui.title(stage, cfg.title);
@@ -1656,7 +1660,10 @@
       const pts = [], wv = [], fv = [];
       for (let i = 0; i <= N; i++) { const t = tr[0] + span(tr) * i / N; pts.push(rc(t)); wv.push(work(t)); fv.push(flux(t)); }
       const cum = (v) => { const c = [0]; for (let i = 1; i <= N; i++) c.push(c[i - 1] + (v[i - 1] + v[i]) / 2 * span(tr) / N); return c; };
-      const W = quad(work, tr[0], tr[1], 1e-10, 200), Phi = quad(flux, tr[0], tr[1], 1e-10, 200);
+      // scale of each integral (∫|integrand|): values far below it are rounding noise, and a double integral that
+      // misses the line integral by more than a few per cent means F is not smooth inside C (Green does not apply)
+      const absW = quad((t) => Math.abs(work(t)), tr[0], tr[1], 1e-8, 200), absPhi = quad((t) => Math.abs(flux(t)), tr[0], tr[1], 1e-8, 200);
+      const W = MA.num.snap(quad(work, tr[0], tr[1], 1e-10, 200), absW), Phi = MA.num.snap(quad(flux, tr[0], tr[1], 1e-10, 200), absPhi);
       const a = pts[0], b = pts[N];
       const closed = a.every(fin) && b.every(fin) && Math.hypot(a[0] - b[0], a[1] - b[1]) < 1e-6 * Math.max(P.x1 - P.x0, P.y1 - P.y0);
       let green = null;
@@ -1684,7 +1691,9 @@
             sc += -w * curlAt(x, y); sd += -w * divAt(x, y);
           }
         }
-        green = { curl: sc * dx * dy, div: sd * dx * dy };
+        const curl = sc * dx * dy, div = sd * dx * dy;
+        const off = (a, b, s) => !fin(a) || Math.abs(a - b) > 0.02 * Math.max(s, 1e-9);
+        green = { curl: MA.num.snap(curl, absW), div: MA.num.snap(div, absPhi), curlOff: off(curl, W, absW), divOff: off(div, Phi, absPhi) };
       }
       const fm = percentile(pts.map((p) => { const v = F(p[0], p[1]); return Math.hypot(v[0], v[1]); }), 0.9);
       const fsc = 0.17 * Math.min(P.x1 - P.x0, P.y1 - P.y0) / (fm > 0 ? fm : 1);
@@ -1756,11 +1765,12 @@
         if (mode === 'work') {
           parts.push({ tex: 'W = ' + sym + '\\mathbf F\\cdot d\\mathbf r = \\int_{' + ta + '}^{' + tb + '} (P x\' + Q y\')\\,dt = ' + tn(c.W, 5) });
           parts2.push({ tex: '\\int_{' + ta + '}^{t}\\mathbf F\\cdot d\\mathbf r = ' + tn(cum[k], 4) }, el('span', { class: 'k', text: MA.t('integrand') }), { tex: '\\mathbf F\\cdot\\mathbf r\'(t) = ' + tn(vals[k], 4) });
-          if (c.green) parts2.push({ tex: '\\iint_D \\operatorname{curl}\\mathbf F\\,dA \\approx ' + tn(c.green.curl, 4) }, el('span', { class: 'w-mv-note', text: MA.t('(Green’s theorem)') }));
+          // a field singular inside C gives a meaningless grid sum: say why instead of printing it
+          if (c.green) parts2.push(c.green.curlOff ? { tex: '\\iint_D \\operatorname{curl}\\mathbf F\\,dA' } : { tex: '\\iint_D \\operatorname{curl}\\mathbf F\\,dA \\approx ' + tn(c.green.curl, 4) }, el('span', { class: 'w-mv-note', text: c.green.curlOff ? MA.t('does not exist here: F is not smooth everywhere inside C, so Green’s theorem does not apply') : MA.t('(Green’s theorem)') }));
         } else {
           parts.push({ tex: '\\Phi = ' + sym + '\\mathbf F\\cdot\\mathbf n\\,ds = \\int_{' + ta + '}^{' + tb + '} (P y\' - Q x\')\\,dt = ' + tn(c.Phi, 5) });
           parts2.push({ tex: '\\int_{' + ta + '}^{t}\\mathbf F\\cdot\\mathbf n\\,ds = ' + tn(cum[k], 4) }, el('span', { class: 'k', text: MA.t('integrand') }), { tex: '\\mathbf F\\cdot\\mathbf n\\,|\\mathbf r\'| = ' + tn(vals[k], 4) });
-          if (c.green) parts2.push({ tex: '\\iint_D \\operatorname{div}\\mathbf F\\,dA \\approx ' + tn(c.green.div, 4) }, el('span', { class: 'w-mv-note', text: MA.t('(divergence theorem in the plane)') }));
+          if (c.green) parts2.push(c.green.divOff ? { tex: '\\iint_D \\operatorname{div}\\mathbf F\\,dA' } : { tex: '\\iint_D \\operatorname{div}\\mathbf F\\,dA \\approx ' + tn(c.green.div, 4) }, el('span', { class: 'w-mv-note', text: c.green.divOff ? MA.t('does not exist here: F is not smooth everywhere inside C, so the divergence theorem does not apply') : MA.t('(divergence theorem in the plane)') }));
         }
       } else {
         parts.push(el('span', { class: 'w-mv-note', text: MA.t('Hover to read F, div F and curl F at a point.') }));

@@ -8,7 +8,7 @@
 设$f$是集合$D \subseteq \R^n$上的实值函数，$\mathbf{a} \in D$。如果存在$\delta > 0$，使得对所有满足$\norm{\mathbf{x} - \mathbf{a}} < \delta$的$\mathbf{x} \in D$都有$f(\mathbf{x}) \le f(\mathbf{a})$，就称$f$在$\mathbf{a}$处取**局部极大值**；如果对所有这样的$\mathbf{x}$都有$f(\mathbf{x}) \ge f(\mathbf{a})$，就称$f$在$\mathbf{a}$处取**局部极小值**。如果当$\mathbf{x} \neq \mathbf{a}$时不等式严格成立，就称该极值是**严格的**。如果不等式对**所有**$\mathbf{x} \in D$都成立，就称这个极大值或极小值是**全局的**（或**绝对的**）。极大值与极小值统称为**极值**。
 :::
 
-一元微积分中的一阶导数检验——在内部极值点处导数为零——可以直接推广过来。
+一元微积分中的一阶必要条件——在内部极值点处导数为零——可以直接推广过来。
 
 ::: theorem 费马定理 {#thm-fermat}
 若$f$在$D$的内点$\mathbf{a}$处取局部极值，且$f$在$\mathbf{a}$处的各偏导数都存在，则$\nabla f(\mathbf{a}) = \mathbf{0}$。
@@ -235,7 +235,7 @@ $D = f_{xx}f_{yy} - f_{xy}^2 = 16 - 16 = 0$，所以判别法失效。仅有$f_{
 :::
 
 ::: warning 不要只沿坐标轴检验
-一个临界点沿每条坐标轴看都像极小值点——甚至沿过它的每条直线看都是如此——却仍可能是鞍点。函数$f(x,y) = (y - x^2)(y - 2x^2)$限制在过原点的每条直线上，都在原点处取严格局部极小值；然而它在抛物线$y = x^2$与$y = 2x^2$之间取负值，而这两条抛物线可以任意接近原点（[[#exr-peano]]）。只有二阶导数判别法，或者顾及附近**所有**点的直接论证，才能作出判断。
+一个临界点沿每条坐标轴看都像极小值点——甚至沿过它的每条直线看都是如此——却仍可能是鞍点。函数$f(x,y) = (y - x^2)(y - 2x^2)$限制在过原点的每条直线上，都在原点处取严格局部极小值；然而它在抛物线$y = x^2$与$y = 2x^2$之间取负值，而这两条抛物线可以任意接近原点（[[#exr-peano]]）。只有二阶导数判别法（在它能给出结论时），或者顾及附近**所有**点的直接论证，才能作出判断。
 :::
 
 ## 有界闭集上的全局最值
@@ -291,7 +291,7 @@ $$ {#eq-lagrange}
 *一般的$n$（概要）*。隐函数定理表明，在$\mathbf{a}$附近，集合$S$是一个光滑的$(n-1)$维超曲面，并且与$\nabla g(\mathbf{a})$正交的每个向量都是$S$中某条满足$\mathbf{r}(0) = \mathbf{a}$的$C^1$曲线$\mathbf{r}$的速度向量$\mathbf{r}'(0)$。于是上面的论证表明，$\nabla f(\mathbf{a})$与每个和$\nabla g(\mathbf{a})$正交的向量都正交，因此它位于$\nabla g(\mathbf{a})$张成的空间中。完整的细节见 Spivak《流形上的微积分》（*Calculus on Manifolds*）第5章，或 Marsden 与 Tromba《向量微积分》（*Vector Calculus*）§3.4。
 :::
 
-实际计算时，我们对$n+1$个未知量$x_1, \dots, x_n, \lambda$求解$n+1$个方程$\nabla f = \lambda\nabla g$，$g = c$，然后比较$f$在这些解处的值——还要连同$S$中使$\nabla g = \mathbf{0}$的点以及$S$的边界点（如果有的话）一起比较。等价地说，这些条件表明$\mathbf{a}$是**拉格朗日函数**$\mathcal{L}(\mathbf{x}, \lambda) = f(\mathbf{x}) - \lambda\,(g(\mathbf{x}) - c)$（看作$n+1$元函数）的临界点。
+实际计算时，我们对$n+1$个未知量$x_1, \dots, x_n, \lambda$求解$n+1$个方程$\nabla f = \lambda\nabla g$，$g = c$，然后比较$f$在这些解处的值——还要连同$S$中使$\nabla g = \mathbf{0}$的点以及$S$的边界点（如果有的话）一起比较。等价地说，这些条件表明$(\mathbf{a}, \lambda)$是**拉格朗日函数**$\mathcal{L}(\mathbf{x}, \lambda) = f(\mathbf{x}) - \lambda\,(g(\mathbf{x}) - c)$（一个$n+1$元函数）的临界点：它对各$x_i$的偏导数给出$\nabla f = \lambda\nabla g$，而$\partial\mathcal{L}/\partial\lambda = 0$又给出约束条件。
 
 ::: example 最省料的无盖箱子 {#ex-box}
 一个无盖的长方体箱子的容积必须为$4$ m³。求使其表面积最小的尺寸。
@@ -389,7 +389,7 @@ $$
 
 ## 后续内容
 
-临界点和黑塞矩阵在数学的各个领域中反复出现。在[[ode/nonlinear-systems]]一章中，梯度系统$\mathbf{x}' = -\nabla f(\mathbf{x})$的平衡点的稳定性可以由$f$的黑塞矩阵读出；在统计学中，最大似然估计是对数似然函数的临界点（[[statistics/estimation]]）；而最优化的数值方法，例如牛顿法$\mathbf{x}_{k+1} = \mathbf{x}_k - Hf(\mathbf{x}_k)^{-1}\nabla f(\mathbf{x}_k)$，都建立在二阶泰勒公式的基础上（[[numerical-analysis/root-finding]]）。在[[differential-geometry/surface-curvature]]一章中，以曲面为图像的函数的黑塞矩阵变成了该曲面的第二基本形式，其特征值变成了主曲率：极小值点是正曲率点，鞍点是负曲率点。
+临界点和黑塞矩阵在数学的各个领域中反复出现。在[[ode/nonlinear-systems]]一章中，梯度系统$\mathbf{x}' = -\nabla f(\mathbf{x})$的平衡点的稳定性可以由$f$的黑塞矩阵读出；在统计学中，最大似然估计是对数似然函数的临界点（[[statistics/estimation]]）；而最优化的数值方法，例如牛顿法$\mathbf{x}_{k+1} = \mathbf{x}_k - Hf(\mathbf{x}_k)^{-1}\nabla f(\mathbf{x}_k)$，都建立在二阶泰勒公式的基础上（[[numerical-analysis/root-finding]]）。在[[differential-geometry/surface-curvature]]一章中，在$f$的临界点处，黑塞矩阵变成了图像$z = f(x,y)$的第二基本形式，其特征值变成了主曲率，$D$变成了高斯曲率：$D > 0$的极值点是正曲率点，$D < 0$的鞍点是负曲率点。
 
 ::: summary
 - 具有偏导数的函数的内部极值出现在临界点处，即$\nabla f = \mathbf{0}$的点（[[#thm-fermat]]）；临界点也可能是鞍点。

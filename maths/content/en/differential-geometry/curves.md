@@ -144,7 +144,7 @@ t: 0, 2pi
 at: 0.5
 x: -3.5, 3.5
 y: -2.5, 2.5
-caption: The ellipse $(2\cos t, \sin t)$ with its osculating circle, the circle of radius $1/\kappa$ centred at $\boldsymbol\gamma + \frac{1}{\kappa}\mathbf{n}_s$ that best fits the curve. Move the point: the circle has radius $\tfrac12$ at the ends of the major axis ($\kappa = 2$) and radius $4$ at the ends of the minor axis ($\kappa = \tfrac14$). These four extremes are the vertices; the four vertex theorem says that every simple closed curve has at least four.
+caption: The ellipse $(2\cos t, \sin t)$ with its osculating circle, the circle of radius $1/\kappa$ centred at $\boldsymbol\gamma + \frac{1}{\kappa}\mathbf{n}_s$ that best fits the curve. Move the point: the circle has radius $\tfrac12$ at the ends of the major axis ($\kappa = 2$) and radius $4$ at the ends of the minor axis ($\kappa = \tfrac14$). These four extremes are the vertices; the four vertex theorem says that every simple closed plane curve has at least four.
 :::
 
 The signed curvature determines a plane curve completely.
@@ -379,7 +379,7 @@ A unit-speed curve with constant curvature $\kappa > 0$ and $\tau\equiv0$ is an 
 Let $\mathbf{c}(s) = \boldsymbol\gamma(s) + \frac1\kappa\mathbf{N}(s)$. By the Frenet formulas, $\mathbf{c}' = \mathbf{T} + \frac1\kappa(-\kappa\mathbf{T} + 0\cdot\mathbf{B}) = \mathbf{0}$, so $\mathbf{c}$ is a constant point and $\norm{\boldsymbol\gamma - \mathbf{c}} = 1/\kappa$. By [[#thm-planar]] the curve also lies in a plane, and a sphere meets a plane in a circle — here a circle of radius $1/\kappa$ centred at $\mathbf{c}$.
 :::
 
-The point $\boldsymbol\gamma + \frac1\kappa\mathbf{N}$ is the **centre of curvature** at each point of any curve; the proof shows it stays put only for circles.
+The point $\boldsymbol\gamma + \frac1\kappa\mathbf{N}$ is the **centre of curvature** at each point of any curve with $\kappa > 0$. For a general curve the same computation gives $\mathbf{c}' = -(\kappa'/\kappa^2)\mathbf{N} + (\tau/\kappa)\mathbf{B}$, so the centre stays put only for circles.
 
 We can now prove the central theorem: curvature and torsion form a complete set of invariants.
 
@@ -436,12 +436,12 @@ caption: A trefoil knot with its Frenet frame. Watch the binormal: it swings rou
 :::
 
 ::: history
-Space curves were first studied systematically by Alexis Clairaut, whose *Recherches sur les courbes à double courbure* (1731) treated curves in space as intersections of surfaces and introduced the idea that they curve in two ways at once. Through the eighteenth century curvature and the osculating plane were investigated by Euler and by Gaspard Monge and his school, and a student of Monge, Michel-Ange Lancret, proved at the start of the nineteenth century that curves whose tangents make a constant angle with a fixed direction are exactly those with $\tau/\kappa$ constant ([[#exr-lancret]]). The formulas of [[#thm-frenet]] were found independently by Jean Frédéric Frenet, in his 1847 doctoral thesis at Toulouse (published in 1852), and by Joseph Alfred Serret, who published them in 1851. The idea of studying a geometric object through a frame that moves with it was developed into a general method by Gaston Darboux in his lectures on surfaces (1887–1896) and by Élie Cartan in the twentieth century, whose *method of moving frames* is still a basic tool of differential geometry.
+Space curves were first studied systematically by Alexis Clairaut, whose *Recherches sur les courbes à double courbure* (1731) treated curves in space as intersections of surfaces and introduced the idea that they curve in two ways at once. Through the eighteenth century curvature and the osculating plane were investigated by Euler and by Gaspard Monge and his school, and a student of Monge, Michel-Ange Lancret, stated in 1802 that curves whose tangents make a constant angle with a fixed direction are exactly those with $\tau/\kappa$ constant ([[#exr-lancret]]); the first proof is credited to Barré de Saint-Venant (1845). The formulas of [[#thm-frenet]] were found independently by Jean Frédéric Frenet, in his 1847 doctoral thesis at Toulouse (published in 1852), and by Joseph Alfred Serret, who published them in 1851. The idea of studying a geometric object through a frame that moves with it was developed into a general method by Gaston Darboux in his lectures on surfaces (1887–1896) and by Élie Cartan in the twentieth century, whose *method of moving frames* is still a basic tool of differential geometry.
 :::
 
 ## Where this leads
 
-Curves reappear constantly in the rest of the course. A curve lying on a surface has its curvature vector split into a part normal to the surface, measured by the second fundamental form ([[differential-geometry/surface-curvature]]), and a part tangent to it, the geodesic curvature; curves with zero geodesic curvature are the geodesics, the "straightest" curves on a surface ([[differential-geometry/geodesics-gauss-bonnet]]). The integral of signed curvature around a closed plane curve, $2\pi$ for a simple loop, is the one-dimensional ancestor of the Gauss–Bonnet theorem. The existence proof of [[#thm-fundamental-curves]] is a first example of building geometry by solving differential equations ([[ode/linear-systems]]), and knotted curves such as the trefoil are classified by the algebraic topology of [[topology/fundamental-group]].
+Curves reappear constantly in the rest of the course. A curve lying on a surface has its curvature vector split into a part normal to the surface, measured by the second fundamental form ([[differential-geometry/surface-curvature]]), and a part tangent to it, the geodesic curvature; curves with zero geodesic curvature are the geodesics, the "straightest" curves on a surface ([[differential-geometry/geodesics-gauss-bonnet]]). The integral of signed curvature around a closed plane curve, $\pm2\pi$ for a simple loop, is the one-dimensional ancestor of the Gauss–Bonnet theorem. The existence proof of [[#thm-fundamental-curves]] is a first example of building geometry by solving differential equations ([[ode/linear-systems]]), and knotted curves such as the trefoil are studied with algebraic topology: the fundamental group ([[topology/fundamental-group]]) of the space around a trefoil differs from that around an unknotted circle.
 
 ::: summary
 - A parametrised curve is regular if $\boldsymbol\gamma'\ne\mathbf{0}$; exactly the regular curves can be reparametrised by arc length, uniquely up to $s\mapsto\pm s + c$ ([[#prop-unit-speed]]).

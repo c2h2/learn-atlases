@@ -118,7 +118,7 @@ $$
 aH = bH \iff a^{-1}b \in H \iff (a^{-1}b)^{-1} = b^{-1}a \in H \iff Ha^{-1} = Hb^{-1},
 $$
 
-using the right-coset test $Hx = Hy \iff xy^{-1} \in H$ with $x = a^{-1}$, $y = b^{-1}$.
+using the right-coset test $Hx = Hy \iff xy^{-1} \in H$ with $x = b^{-1}$, $y = a^{-1}$.
 
 ::: intuition Tiling a group
 Lagrange's theorem says that a subgroup *tiles* the group: its translates $aH$ are copies of $H$ that fit together without gaps or overlaps, like the parallel lines covering the plane in [[#ex-cosets]]. A group of order $12$ cannot be tiled by copies of a $5$-element set, so it has no subgroup of order $5$.
@@ -215,7 +215,7 @@ caption: Powers modulo the prime $7$. Every non-zero residue satisfies $a^6 \equ
 :::
 
 ::: remark Two proofs of one theorem
-[[number-theory/fermat-euler]] proves Fermat's and Euler's theorems directly, by multiplying together all the elements of $U(n)$. That argument is really a special case of the proof of Lagrange's theorem: multiplying $U(n)$ by $a$ permutes its elements, just as left multiplication permutes the cosets of $\langle a \rangle$. The group-theoretic proof explains *why* the exponent $\varphi(n)$ appears: it is the order of the group.
+[[number-theory/fermat-euler]] proves Fermat's and Euler's theorems directly, by multiplying together all the elements of $U(n)$. That argument is a close relative of the coset proof — both use the fact that multiplication by $a$ is a bijection — but it needs commutativity (the product of all the elements must not depend on the order of the factors), so it works only in abelian groups such as $U(n)$, whereas Lagrange's theorem holds in every finite group. The group-theoretic proof also explains *why* the exponent $\varphi(n)$ appears: it is the order of the group.
 :::
 
 ## Classifying small groups
@@ -273,10 +273,10 @@ Suppose $H \le A_4$ with $\abs{H} = 6$. Then $[A_4 : H] = 2$, so the left cosets
 Now let $\sigma$ be any $3$-cycle. Then $\sigma^3 = e$, so $\sigma = \sigma^4 = (\sigma^2)^2$, and applying the claim to $g = \sigma^2$ shows $\sigma \in H$. Thus $H$ contains all eight $3$-cycles, which is impossible since $\abs{H} = 6$.
 :::
 
-In fact $A_4$ has subgroups of orders $1, 2, 3, 4$ and $12$ only. Lagrange's theorem gives necessary conditions, not sufficient ones. A partial converse does hold for prime powers: if $p^k$ divides $\abs{G}$ then $G$ has a subgroup of order $p^k$. This is Sylow's first theorem, proved in [[abstract-algebra/group-actions]].
+In fact $A_4$ has subgroups of orders $1, 2, 3, 4$ and $12$ only. Lagrange's theorem gives necessary conditions, not sufficient ones. A partial converse does hold for prime powers: if $p^k$ divides $\abs{G}$ then $G$ has a subgroup of order $p^k$. This is a strong form of Sylow's first theorem, proved in [[abstract-algebra/group-actions]].
 
 ::: warning Lagrange constrains, it does not construct
-"$6$ divides $12$, so $A_4$ has a subgroup of order $6$" is a false inference. Likewise, "$d$ divides $\abs{G}$, so $G$ has an element of order $d$" is false: $V_4$ has order $4$ but no element of order $4$, and $S_4$ has order $24$ but no element of order $6$ ([[abstract-algebra/permutation-groups#ex-s4-types]]). The only guaranteed elements are those of prime order dividing $\abs{G}$ (Cauchy's theorem).
+"$6$ divides $12$, so $A_4$ has a subgroup of order $6$" is a false inference. Likewise, "$d$ divides $\abs{G}$, so $G$ has an element of order $d$" is false: $V_4$ has order $4$ but no element of order $4$, and $S_4$ has order $24$ but no element of order $6$ ([[abstract-algebra/permutation-groups#ex-s4-types]]). What *is* guaranteed is an element of every **prime** order dividing $\abs{G}$ (Cauchy's theorem, proved in [[abstract-algebra/group-actions]]).
 :::
 
 ## Products of subgroups
@@ -319,7 +319,7 @@ By [[#lem-cosets]], $aH = bH \iff a^{-1}b \in H$. The condition $ab^{-1} \in H$ 
 :::
 
 ::: history
-Joseph-Louis Lagrange's *Réflexions sur la résolution algébrique des équations* (1770–71) studied how many different values a rational function of $n$ variables can take when the variables are permuted, and showed that this number divides $n!$. In modern language, the permutations leaving the function unchanged form a subgroup of $S_n$, and the number of values is its index — so Lagrange had found the theorem for subgroups of symmetric groups, before groups had been defined. Cauchy and Galois used such counting arguments freely, and the statement for arbitrary finite groups became standard once the abstract notion of a group had been formulated in the second half of the nineteenth century. The proof by cosets is now the one everybody learns. Fermat had stated his little theorem in 1640 and Euler proved its generalisation in 1763, long before either was seen as a statement about the order of a group.
+Joseph-Louis Lagrange's *Réflexions sur la résolution algébrique des équations* (1770–71) studied how many different values a rational function of $n$ variables can take when the variables are permuted, and asserted that this number always divides $n!$ (his argument covered only special cases; Pietro Abbati gave the first complete proof in 1802). In modern language, the permutations leaving the function unchanged form a subgroup of $S_n$, and the number of values is its index — so Lagrange had found the theorem for subgroups of symmetric groups, before groups had been defined. Cauchy and Galois used such counting arguments freely, and the statement for arbitrary finite groups became standard once the abstract notion of a group had been formulated in the second half of the nineteenth century. The proof by cosets is now the one everybody learns. Fermat had stated his little theorem in 1640 and Euler proved its generalisation in 1763, long before either was seen as a statement about the order of a group.
 :::
 
 ## Where this leads
@@ -385,7 +385,7 @@ The last two digits are $43$.
 ::: exercise Left and right cosets in D₄ {level=2}
 Let $H = \set{e, s} \le D_4$. Compute the left coset $rH$ and the right coset $Hr$, writing each element in the form $r^k$ or $r^ks$, and show that they are different. Is there any $a \notin H$ with $aH = Ha$?
 ::: solution
-$rH = \set{r, rs}$ and $Hr = \set{r, sr} = \set{r, r^{-1}s} = \set{r, r^3s}$. Since $rs \neq r^3s$, $rH \neq Hr$. Now $aH = Ha$ means $as \in Ha$, i.e. $as = sa$ (the other element $a$ is common to both). For $a = r^k$ this needs $r^ks = sr^k = r^{-k}s$, i.e. $r^{2k} = e$, so $k \in \set{0, 2}$: $a = r^2$ works, and so does $a = r^2s$ (since $r^2 s \cdot s = r^2 = s \cdot r^2 s$ as $r^2$ is central). So $a = r^2$ and $a = r^2s$ are the elements outside $H$ with $aH = Ha$; for the other four ($r, r^3, rs, r^3s$) the cosets differ.
+$rH = \set{r, rs}$ and $Hr = \set{r, sr} = \set{r, r^{-1}s} = \set{r, r^3s}$. Since $rs \neq r^3s$, $rH \neq Hr$. Now $aH = Ha$ means $as \in Ha$, i.e. $as = sa$ (the other element $a$ is common to both). For $a = r^k$ this needs $r^ks = sr^k = r^{-k}s$, i.e. $r^{2k} = e$, so $k \in \set{0, 2}$. For $a = r^ks$ it needs $as = r^k$ to equal $sa = sr^ks = r^{-k}$, so again $r^{2k} = e$ and $k \in \set{0, 2}$ ($k = 0$ gives $a = s \in H$). So $a = r^2$ and $a = r^2s$ are the elements outside $H$ with $aH = Ha$; for the other four ($r, r^3, rs, r^3s$) the cosets differ.
 :::
 :::
 

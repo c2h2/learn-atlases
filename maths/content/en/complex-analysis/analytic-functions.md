@@ -187,7 +187,7 @@ f: z^2
 mode: grid
 x: -1.5, 1.5
 y: -1.5, 1.5
-caption: The image of a square grid under $f(z) = z^2$. Vertical and horizontal lines become two families of parabolas, and they still cross at right angles — the infinitesimal squares are rotated and scaled, never sheared. The exception is the origin, where $f'(0) = 0$: there the angle between the axes is doubled. A map that is not analytic, such as $z + \tfrac12\bar z$, would turn the little squares into parallelograms.
+caption: The image of a square grid under $f(z) = z^2$. Vertical and horizontal lines become two families of parabolas, and they still cross at right angles — the infinitesimal squares are rotated and scaled, never sheared. The exception is the origin, where $f'(0) = 0$: there the angle between the axes is doubled. A map that is not analytic, such as $z + \tfrac i2\bar z$, would shear the little squares into rhombi.
 :::
 
 The Cauchy–Riemann equations are necessary for differentiability. With a mild extra hypothesis they are also sufficient.
@@ -395,7 +395,7 @@ y: -2, 2
 levels: 14
 gradient: true
 point: 1, 0.5
-caption: Level curves of the harmonic function $u = x^2 - y^2 = \operatorname{Re}(z^2)$. Drag the point: the gradient $\nabla u$ is perpendicular to the level curve through it, and it is tangent to the level curves of the conjugate $v = 2xy$ (the hyperbolas $xy = \text{const}$, not drawn). In fluid flow, $u$ is the velocity potential and the curves $v = \text{const}$ are the streamlines of a flow turning a corner.
+caption: Level curves of the harmonic function $u = x^2 - y^2 = \operatorname{Re}(z^2)$ (the figure calls it $f$; its bold $\mathbf u$ is only a direction for the directional derivative). Drag the point: the gradient $\nabla u$ (drawn as $\nabla f$) is perpendicular to the level curve through it, and it is tangent to the level curves of the conjugate $v = 2xy$ (the hyperbolas $xy = \text{const}$, not drawn). In fluid flow, $u$ is the velocity potential and the curves $v = \text{const}$ are the streamlines of a flow turning a corner.
 :::
 
 ::: application Ideal flow and electrostatics

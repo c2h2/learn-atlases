@@ -169,7 +169,7 @@ $$
 所以$\sum a_n$满足柯西收敛准则，从而收敛。最后，对每个$N$有$\abs{S_N} \le \sum_{n=1}^N\abs{a_n} \le \sum_{n=1}^\infty\abs{a_n}$，而这个不等式在取极限后保持成立（[[real-analysis/sequences#thm-order-limits]]）。
 :::
 
-判定绝对收敛的两个最有力的判别法都是把级数与几何级数作比较。它们用到[[real-analysis/sequences#def-limsup]]中的上极限$\limsup$，它对每个数列都存在（可能为$\infty$）。
+判定绝对收敛的两个最有力的判别法都是把级数与几何级数作比较。它们用到[[real-analysis/sequences#def-limsup]]中的上极限$\limsup$，它对每个非负数列都存在（可能为$\infty$）。
 
 ::: theorem 根值判别法 {#thm-root}
 令$\alpha = \limsup_{n\to\infty}\abs{a_n}^{1/n}$。
@@ -251,7 +251,7 @@ $$
 S_2 \le S_4 \le S_6 \le \cdots \le S_{2n} \le S_{2n-1} \le \cdots \le S_3 \le S_1,
 $$
 
-其中$S_{2n} = S_{2n-1} - b_{2n} \le S_{2n-1}$把两条链连接起来。偶数项部分和递增，并以$S_1$为上界；奇数项部分和递减，并以$S_2$为下界。由单调收敛定理，$S_{2n} \to E$，$S_{2n-1} \to O$，并且$O - E = \lim(S_{2n-1} - S_{2n}) = \lim b_{2n} = 0$。所以偶数项部分和与奇数项部分和有相同的极限$S$，因此$S_N \to S$：给定$\eps > 0$，当$n$超过某个$K$时，$\abs{S_{2n} - S}$和$\abs{S_{2n-1} - S}$都小于$\eps$，从而当$N \ge 2K$时$\abs{S_N - S} < \eps$。
+其中$S_{2n} = S_{2n-1} - b_{2n} \le S_{2n-1}$把两条链连接起来。偶数项部分和递增，并以$S_1$为上界；奇数项部分和递减，并以$S_2$为下界。由单调收敛定理，$S_{2n} \to E$，$S_{2n-1} \to O$，并且$O - E = \lim(S_{2n-1} - S_{2n}) = \lim b_{2n} = 0$。所以偶数项部分和与奇数项部分和有相同的极限$S$，因此$S_N \to S$：给定$\eps > 0$，存在$K$，使得对所有$n \ge K$，$\abs{S_{2n} - S}$和$\abs{S_{2n-1} - S}$都小于$\eps$，从而当$N \ge 2K$时$\abs{S_N - S} < \eps$。
 
 至于误差估计，由上面的链可知，$S$位于任意两个相邻的部分和$S_N$与$S_{N+1}$之间，所以$\abs{S - S_N} \le \abs{S_{N+1} - S_N} = b_{N+1}$。
 :::

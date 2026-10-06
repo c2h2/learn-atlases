@@ -23,13 +23,13 @@ A small p-value means the data would be unusual if $H_0$ were true. By conventio
 ::: example A suspicious coin {#ex-coin-test}
 A coin is tossed $100$ times and shows $60$ heads. Is it fair?
 ::: solution
-Take $H_0$: $p = \tfrac12$ against the two-sided $H_1$: $p\ne\tfrac12$, and use the number of heads $X$ as the test statistic. Under $H_0$, $X\sim\Bin(100,\tfrac12)$, and results at least as extreme as $60$ are $X\ge60$ or $X\le40$. By symmetry,
+Let $\theta$ be the probability of heads (the letter $p$ is kept for the p-value). Take $H_0$: $\theta = \tfrac12$ against the two-sided $H_1$: $\theta\ne\tfrac12$, and use the number of heads $X$ as the test statistic. Under $H_0$, $X\sim\Bin(100,\tfrac12)$, and results at least as extreme as $60$ are $X\ge60$ or $X\le40$. By symmetry,
 
 $$
 p = 2\,\Prob_{H_0}(X\ge60) = 2\times0.0284 = 0.057 .
 $$
 
-(The normal approximation with continuity correction, $2(1-\Phi(1.9)) = 0.057$, agrees.) Sixty heads would happen in about $6\%$ of experiments with a fair coin: some evidence of bias, but not strong evidence. At the $5\%$ level we would not reject fairness.
+(The normal approximation with continuity correction, $2(1-\Phi(1.9)) = 0.057$, agrees.) A result at least as extreme as sixty heads would happen in about $6\%$ of experiments with a fair coin: some evidence of bias, but not strong evidence. At the $5\%$ level we would not reject fairness.
 :::
 :::
 
@@ -53,7 +53,7 @@ Suppose that under $H_0$ the test statistic $T$ has a continuous distribution fu
 :::
 
 ::: proof
-By the probability integral transform ([[probability/continuous-random-variables#thm-inverse-transform]]), $F(T)\sim\operatorname{U}(0,1)$ under $H_0$. If $U$ is uniform then so is $1-U$, so $P = 1-F(T)$ is uniform, and $\Prob(P\le\alpha) = \alpha$.
+By the probability integral transform ([[probability/continuous-random-variables#thm-inverse-transform]]), $F(T)\sim\operatorname{U}(0,1)$ under $H_0$. (That theorem also assumes $F$ strictly increasing where $0<F<1$, but continuity is enough: for $u\in(0,1)$ let $x_u$ be the largest $x$ with $F(x) = u$, which exists because $F$ is continuous with limits $0$ and $1$; then $F(T)\le u$ exactly when $T\le x_u$, so $\Prob(F(T)\le u) = F(x_u) = u$.) If $U$ is uniform then so is $1-U$, so $P = 1-F(T)$ is uniform, and $\Prob(P\le\alpha) = \alpha$.
 :::
 
 So when the null hypothesis is true, a p-value is just a uniform random number: $5\%$ of true null hypotheses produce $p<0.05$, by construction. (For discrete statistics, such as the binomial count above, $\Prob_{H_0}(P\le\alpha)\le\alpha$, so the test is conservative.)
@@ -188,7 +188,7 @@ $$
 X^2 = \sum_{j=1}^k\frac{(O_j - E_j)^2}{E_j}.
 $$ {#eq-pearson}
 
-Large values indicate a poor fit. Pearson proved (in 1900) that if $H_0$ specifies the category probabilities completely, then as the sample size grows the distribution of $X^2$ under $H_0$ converges to $\chi^2_{k-1}$; one degree of freedom is lost because the counts must add up to $n$. If $m$ parameters are estimated from the data to compute the $E_j$, the degrees of freedom drop to $k-1-m$ (a correction due to Fisher). The approximation is usually considered adequate when all $E_j\ge5$. The proof uses the multivariate central limit theorem; see Rice, *Mathematical Statistics and Data Analysis*, Chapter 9.
+Large values indicate a poor fit. Pearson proved (in 1900) that if $H_0$ specifies the category probabilities completely, then as the sample size grows the distribution of $X^2$ under $H_0$ converges to $\chi^2_{k-1}$; one degree of freedom is lost because the counts must add up to $n$. If $m$ parameters are estimated from the data to compute the $E_j$, the degrees of freedom drop to $k-1-m$ (a correction due to Fisher). The approximation is usually considered adequate when all $E_j\ge5$. The proof uses the multivariate central limit theorem; see, for example, Ferguson, *A Course in Large Sample Theory* (1996), Chapter 9.
 
 ::: example Is the die fair? {#ex-die-test}
 A die is rolled $120$ times, giving the counts $15, 22, 18, 26, 17, 22$ for faces $1$ to $6$. Test whether it is fair.
@@ -204,7 +204,7 @@ with $6 - 1 = 5$ degrees of freedom. The $5\%$ critical value is $\chi^2_{5,0.05
 :::
 
 ::: example Mendel's peas {#ex-mendel}
-In his 1866 paper, Gregor Mendel reported $556$ pea plants from a cross of two hybrid plants: $315$ round yellow, $108$ round green, $101$ wrinkled yellow and $32$ wrinkled green. His theory predicts the ratio $9:3:3:1$. Test the fit.
+In his 1866 paper, Gregor Mendel reported the $556$ seeds produced by $15$ self-fertilised hybrid pea plants: $315$ round yellow, $108$ round green, $101$ wrinkled yellow and $32$ wrinkled green. His theory predicts the ratio $9:3:3:1$. Test the fit.
 ::: solution
 The expected counts are $556\times\tfrac{9}{16} = 312.75$, $104.25$, $104.25$ and $34.75$. Then
 
@@ -321,10 +321,10 @@ An early significance test was published by John Arbuthnot in 1710: in each of t
 
 ## Where this leads {#where-next}
 
-Tests for regression coefficients, and the F-test for comparing models, are developed in [[statistics/regression]]. The Bayesian alternative to significance testing, based on Bayes factors and posterior probabilities of hypotheses, is described in [[statistics/bayesian]]; it answers the question "how probable is $H_0$ given the data?" that p-values are so often misread as answering. Beyond this course lie nonparametric tests that do not assume normality (rank tests, permutation tests), the analysis of variance for comparing several groups, and the theory of sequential testing.
+Tests and confidence intervals for regression coefficients are developed in [[statistics/regression]]; the F-test for comparing nested regression models, based on the F distribution of [[statistics/sampling#def-f]], is a natural next step beyond this course. The Bayesian alternative to significance testing, based on Bayes factors and posterior probabilities of hypotheses, is described in [[statistics/bayesian]]; it answers the question "how probable is $H_0$ given the data?" that p-values are so often misread as answering. Beyond this course lie nonparametric tests that do not assume normality (rank tests, permutation tests), the analysis of variance for comparing several groups, and the theory of sequential testing.
 
 ::: summary
-- A test assumes $H_0$ and asks how surprising the data are; the p-value is $\Prob_{H_0}(\text{a result at least as extreme as observed})$.
+- A test assumes $H_0$ and asks how surprising the data are; the p-value is the probability, computed under $H_0$, of a result at least as extreme as the one observed.
 - Type I error: rejecting a true $H_0$ (probability $\le\alpha$); type II error: missing a real effect; power $=\Prob(\text{reject}\mid H_1)$ grows with effect size and $\sqrt n$.
 - Under $H_0$ a continuous p-value is uniform, so $\Prob(p\le\alpha) = \alpha$.
 - z-test with known $\sigma$; t-test with estimated $\sigma$; paired data are analysed through their differences.

@@ -258,7 +258,7 @@ Lusin's theorem says that the *restriction* $f|_F$ is continuous, not that $f$ i
 :::
 
 ::: remark Littlewood's three principles
-J. E. Littlewood summarised the spirit of the subject in three principles: every measurable set is nearly a finite union of intervals (regularity); every measurable function is nearly continuous (Lusin); every convergent sequence of measurable functions is nearly uniformly convergent (Egorov). "Nearly" always means: after discarding a set of small measure. Many proofs in measure theory consist of applying one of these principles and then a classical argument on the large good set.
+J. E. Littlewood summarised the spirit of the subject in three principles: every measurable set of finite measure is nearly a finite union of intervals (regularity); every measurable function is nearly continuous (Lusin); every convergent sequence of measurable functions is nearly uniformly convergent (Egorov). "Nearly" always means: after discarding a set of small measure. Many proofs in measure theory consist of applying one of these principles and then a classical argument on the large good set.
 :::
 
 ## The Cantor function
@@ -286,7 +286,7 @@ params: mu=0, sigma=1
 a: -1
 b: 1
 cdf: true
-caption: The distribution of a random variable $X$ is a measure on the Borel sets, determined by its distribution function $F(a) = P(X \le a)$. Here $X$ is standard normal; the shaded probability $P(-1 \le X \le 1) = F(1) - F(-1) \approx 0.683$ is the measure of the Borel set $[-1, 1]$. Change the distribution and the interval: every probability you can compute is the measure of a set $\set{X \in B}$, which exists because $X$ is measurable.
+caption: The distribution of a random variable $X$ is a measure on the Borel sets, determined by its distribution function $F(a) = P(X \le a)$. Here $X$ is standard normal, and $P(-1 \le X \le 1) = F(1) - F(-1) \approx 0.683$ — the rise of $F$ marked by the bar between the dashed lines, or the shaded area under the density if you switch to PDF — is the measure of the Borel set $[-1, 1]$. Change the distribution and the interval: every probability you can compute is the measure of a set $\set{X \in B}$, which exists because $X$ is measurable.
 :::
 
 ::: history
@@ -295,7 +295,7 @@ Henri Lebesgue introduced measurable functions in his thesis of 1902 as the func
 
 ## Where this leads
 
-Simple functions are integrated by the obvious formula $\int\sum c_k\mathbf{1}_{E_k}\,d\mu = \sum c_k\mu(E_k)$, and [[measure-theory/lebesgue-integral]] defines the integral of a non-negative measurable function as the supremum of the integrals of the simple functions below it — the approximations of [[#thm-simple-approx]] — and proves the monotone convergence theorem, which is the integral version of [[#thm-measurable-limits]]. Egorov's theorem reappears in [[measure-theory/lp-spaces]], where it connects almost-everywhere convergence with convergence in measure. In probability ([[probability/limit-theorems]]) the strong law of large numbers is a theorem about almost-everywhere convergence of measurable functions.
+Simple functions are integrated by the obvious formula $\int\sum c_k\mathbf{1}_{E_k}\,d\mu = \sum c_k\mu(E_k)$, and [[measure-theory/lebesgue-integral]] defines the integral of a non-negative measurable function as the supremum of the integrals of the simple functions below it — the approximations of [[#thm-simple-approx]] — and proves the monotone convergence theorem, which is the integral version of [[#thm-measurable-limits]]. The argument of Egorov's proof reappears in [[measure-theory/lp-spaces]], where it shows that on a finite measure space almost-everywhere convergence implies convergence in measure. In probability ([[probability/limit-theorems]]) the strong law of large numbers is a theorem about almost-everywhere convergence of measurable functions.
 
 ::: summary
 - $f$ is measurable when every set $\set{f > a}$ is measurable; equivalently $\set{f \ge a}$, $\set{f < a}$ or $\set{f\le a}$; for real $f$, every Borel set has measurable preimage ([[#thm-measurable-equiv]]).

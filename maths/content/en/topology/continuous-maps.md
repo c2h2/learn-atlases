@@ -192,7 +192,7 @@ which is open. By [[#thm-continuity]](4), $f$ is continuous.
 This theorem explains why the product topology, rather than some other topology on $X\times Y$, is the right one: it is the coarsest topology making both projections continuous, and it makes "continuity of a vector-valued map" equivalent to "continuity of its components", as in multivariable calculus.
 
 ::: example Continuity of arithmetic and the torus {#ex-product}
-(a) Show that if $f, g\colon X\to\R$ are continuous, then so are $f + g$ and $fg$. (b) Show that the torus $T = S^1\times S^1$ is homeomorphic to the doughnut-shaped surface in $\R^3$ obtained by rotating a circle of radius $1$ centred at $(2, 0, 0)$ about the $z$-axis.
+(a) Show that if $f, g\colon X\to\R$ are continuous, then so are $f + g$ and $fg$. (b) Show that the torus $T = S^1\times S^1$ is homeomorphic to the doughnut-shaped surface in $\R^3$ obtained by rotating the circle of radius $1$ in the $xz$-plane centred at $(2, 0, 0)$ about the $z$-axis.
 ::: solution
 (a) Addition $s(x, y) = x + y$ and multiplication $m(x, y) = xy$ are continuous maps $\R^2\to\R$ (from the ε–δ estimates of [[calculus-1/limits]]). By [[#thm-product]] the map $h = (f, g)\colon X\to\R^2$ is continuous, so $f + g = s\circ h$ and $fg = m\circ h$ are continuous.
 

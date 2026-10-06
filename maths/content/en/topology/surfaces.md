@@ -29,7 +29,7 @@ $$
 $$ {#eq-euler}
 :::
 
-Two foundational theorems make this a good definition. We state them without proof; the proofs are genuinely hard and can be found in Armstrong, *Basic Topology*, Chapter 8, or Moise, *Geometric Topology in Dimensions 2 and 3*.
+Two foundational theorems make this a good definition. We state them without proof; the proofs are genuinely hard: (1) is proved in Moise, *Geometric Topology in Dimensions 2 and 3*, and (2) in Armstrong, *Basic Topology*, Chapter 9, using the homology groups of Chapter 8.
 
 ::: theorem Existence and invariance {#thm-invariance}
 1. (Radó, 1925) Every compact surface has a triangulation.
@@ -106,7 +106,7 @@ By the test above, a word gives an orientable surface iff each letter appears on
 Let $M$ and $N$ be closed surfaces. Remove from each the interior of a small closed disc, and glue the two resulting boundary circles together by a homeomorphism. The resulting closed surface is the **connected sum** $M\# N$.
 :::
 
-One can show that the result does not depend, up to homeomorphism, on the choices of discs and gluing map (this uses the fact that any two embedded discs can be moved onto each other by a homeomorphism of the surface; for non-orientable surfaces, also on reflecting the gluing). The sphere is a neutral element: $M\# S^2\cong M$, since removing a disc from $S^2$ leaves a disc, which simply fills the hole again.
+One can show that the result does not depend, up to homeomorphism, on the choices of discs and gluing map (this uses the fact that any two embedded discs can be moved onto each other by a homeomorphism of the surface, which can moreover be chosen to reverse the orientation of the disc: by a reflection if the surface is orientable, by sliding the disc once around a Möbius band if it is not). The sphere is a neutral element: $M\# S^2\cong M$, since removing a disc from $S^2$ leaves a disc, which simply fills the hole again.
 
 ::: proposition Euler characteristic of a connected sum {#prop-connected-sum}
 For closed surfaces $M$ and $N$, $\chi(M\# N) = \chi(M) + \chi(N) - 2$.
@@ -233,7 +233,7 @@ Euler stated the polyhedron formula in a letter to Christian Goldbach in 1750 an
 
 ## Where this leads
 
-The classification of surfaces is a model for much of modern topology: one looks for invariants (here orientability and the Euler characteristic) that are computable and that distinguish everything. In higher dimensions this programme becomes much harder; for three-dimensional manifolds it was completed only with Perelman's proof of Thurston's geometrisation conjecture in 2003, and in dimension four a full classification is impossible. The Euler characteristic generalises to the alternating sum of the ranks of homology groups in any dimension, and the fundamental groups of the surfaces (computed from their polygon words by the Seifert–van Kampen theorem) extend the calculations of [[topology/fundamental-group]]. In [[differential-geometry/geodesics-gauss-bonnet]] the Euler characteristic reappears as total curvature, and in complex analysis the Riemann surfaces of algebraic functions are exactly the orientable closed surfaces $\Sigma_g$, their genus playing a central role.
+The classification of surfaces is a model for much of modern topology: one looks for invariants (here orientability and the Euler characteristic) that are computable and that distinguish everything. In higher dimensions this programme becomes much harder; for three-dimensional manifolds it was completed only with Perelman's proof of Thurston's geometrisation conjecture in 2002–2003, and in dimension four a full classification is impossible. The Euler characteristic generalises to the alternating sum of the ranks of homology groups in any dimension, and the fundamental groups of the surfaces (computed from their polygon words by the Seifert–van Kampen theorem) extend the calculations of [[topology/fundamental-group]]. In [[differential-geometry/geodesics-gauss-bonnet]] the Euler characteristic reappears as total curvature, and in complex analysis the Riemann surfaces of algebraic functions are exactly the orientable closed surfaces $\Sigma_g$, their genus playing a central role.
 
 ::: summary
 - A surface is a Hausdorff, second countable space locally homeomorphic to the plane; closed surfaces are compact and connected (sphere, torus, Klein bottle, projective plane).
@@ -247,7 +247,7 @@ The classification of surfaces is a model for much of modern topology: one looks
 ## Exercises
 
 ::: exercise The icosahedron {level=1 check="2"}
-The regular icosahedron has $20$ triangular faces, with $5$ meeting at each vertex. Compute $V$ and $E$ from these data, and then $V - E + F$.
+The regular icosahedron has $20$ triangular faces, with $5$ meeting at each vertex. Compute $V$ and $E$ from these data, and then $V - E + F$. (Enter $V - E + F$.)
 ::: solution
 Each face has $3$ edges and each edge lies on $2$ faces: $E = \frac{3\cdot20}{2} = 30$. Each face has $3$ vertices and each vertex lies on $5$ faces: $V = \frac{3\cdot20}{5} = 12$. So $V - E + F = 12 - 30 + 20 = 2$.
 :::
@@ -284,7 +284,7 @@ As in the application above: with $P$ pentagons and $H$ hexagons, counting edge�
 ::: exercise K₅ is not planar {level=2}
 Use Euler's formula to show that a simple connected plane graph with $V\ge3$ vertices has at most $3V - 6$ edges, and deduce that the complete graph $K_5$ cannot be drawn in the plane without crossings.
 ::: solution
-Each region of a simple plane graph with at least three vertices is bounded by at least $3$ edges, and each edge borders at most $2$ regions, so $3F\le2E$. Then $2 = V - E + F\le V - E + \frac{2E}{3}$, i.e. $E\le3V - 6$. For $K_5$, $V = 5$ and $E = 10 > 3\cdot5 - 6 = 9$, so it is not planar. (The same argument with $4F\le2E$ shows that $K_{3,3}$, which has no triangles, is not planar: $9 > 2\cdot6 - 4$.)
+Walk once around the boundary of each region and count the edges met, an edge with the region on both sides counting twice: every edge is counted exactly twice in total. Since the graph is simple and has at least two edges (it is connected with $V\ge3$), each region meets at least $3$ edges in this count (a count of $1$ or $2$ would need a loop, two parallel edges, or a graph consisting of a single edge), so $3F\le2E$. Then $2 = V - E + F\le V - E + \frac{2E}{3}$, i.e. $E\le3V - 6$. For $K_5$, $V = 5$ and $E = 10 > 3\cdot5 - 6 = 9$, so it is not planar. (The same argument with $4F\le2E$ shows that $K_{3,3}$, which has no triangles, is not planar: $9 > 2\cdot6 - 4$.)
 :::
 :::
 

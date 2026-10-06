@@ -286,7 +286,7 @@ What is $e^{At}$ for $A = \begin{pmatrix}0&1\\0&0\end{pmatrix}$?
 - [ ] $\begin{pmatrix}e^t&e^t\\0&e^t\end{pmatrix}$
 - [ ] $\begin{pmatrix}1&0\\0&1\end{pmatrix}$, because $A^2 = 0$
 ::: solution
-$A^2 = 0$, so the series stops after two terms: $e^{At} = I + At = \begin{pmatrix}1&t\\0&1\end{pmatrix}$. This is the system $x_1' = x_2$, $x_2' = 0$: constant velocity, linearly growing position. Exponentiating entry by entry (the first and third options) is a common mistake.
+$A^2 = 0$, so the series stops after two terms: $e^{At} = I + At = \begin{pmatrix}1&t\\0&1\end{pmatrix}$. This is the system $x_1' = x_2$, $x_2' = 0$: constant velocity, linearly growing position. Putting $e^t$ into the entries (the first and third options) is a common mistake: a matrix exponential is not computed entry by entry.
 :::
 :::
 
@@ -337,7 +337,7 @@ $$
 | $\Delta > 0$, $\tau^2 < 4\Delta$, $\tau > 0$ | complex, $\operatorname{Re} > 0$ | unstable spiral |
 | $\Delta > 0$, $\tau = 0$ | purely imaginary | centre (stable, not asymptotically) |
 
-In the **trace–determinant plane** these regions are separated by the axis $\Delta = 0$, the half-axis $\tau = 0$ above it, and the parabola $\tau^2 = 4\Delta$. Saddles, nodes and spirals fill open regions and are robust: a small change in $A$ does not change the type. Centres and degenerate nodes lie on curves, and the slightest perturbation turns them into something else.
+In the **trace–determinant plane** these regions are separated by the axis $\Delta = 0$, the half-axis $\tau = 0$ above it, and the parabola $\tau^2 = 4\Delta$. Saddles, nodes and spirals fill open regions and are robust: a small change in $A$ does not change the type. Centres and degenerate nodes lie on curves, and the slightest perturbation can turn them into something else.
 
 ::: widget phaseplane
 matrix: -1, 2; -2, -1
@@ -383,7 +383,7 @@ Systems of linear differential equations arose in the eighteenth century in cele
 
 ## Where this leads
 
-The classification of planar phase portraits is the starting point of [[ode/nonlinear-systems]], where a nonlinear system near an equilibrium is approximated by its linearisation $\mathbf{x}' = J\mathbf{x}$, with $J$ the Jacobian matrix, and [[#thm-linear-stability]] decides stability in most cases. Computing $e^{At}$ reliably for large matrices is a classic problem of numerical linear algebra ([[numerical-analysis/iterative-methods]]), and stiff systems, whose eigenvalues have widely different sizes, demand special methods ([[numerical-analysis/numerical-odes]]). Discretising a partial differential equation such as the heat equation in space produces a huge linear system $\mathbf{u}' = A\mathbf{u}$ whose eigenvectors approximate the Fourier modes of [[pde/heat-equation]].
+The classification of planar phase portraits is the starting point of [[ode/nonlinear-systems]], where a nonlinear system near an equilibrium is approximated by its linearisation $\mathbf{x}' = J\mathbf{x}$, with $J$ the Jacobian matrix, and [[#thm-linear-stability]] decides stability in most cases. Computing the eigenvalues of large matrices reliably is a classic problem of numerical linear algebra ([[numerical-analysis/iterative-methods]]), and so, more subtly, is computing $e^{At}$; stiff systems, whose eigenvalues have widely different sizes, demand special methods ([[numerical-analysis/numerical-odes]]). Discretising a partial differential equation such as the heat equation in space produces a huge linear system $\mathbf{u}' = A\mathbf{u}$ whose eigenvectors approximate the Fourier modes of [[pde/heat-equation]].
 
 ::: summary
 - An $n$th-order linear equation is equivalent to a first-order system with the companion matrix; linear systems have unique global solutions ([[#thm-eu-system]]).

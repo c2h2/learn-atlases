@@ -208,7 +208,7 @@ Picture all the numbers $ax + by$ on the number line. They are closed under addi
 ::: example A water-jug puzzle {#ex-jugs}
 You have an unmarked $7$-litre jug, an unmarked $4$-litre jug and a tap. How can you measure exactly $6$ litres?
 ::: solution
-Filling a jug adds $7$ or $4$ litres to the water you control, and emptying one removes $7$ or $4$, so the amounts you can produce are combinations $7x + 4y$. Since $\gcd(7, 4) = 1$, every whole number of litres is such a combination; here $6 = 7\cdot2 - 4\cdot 2$, which suggests filling the big jug twice and emptying the small jug twice. Writing (big, small) for the contents:
+Filling a jug sets its contents to $7$ or $4$, emptying it sets them to $0$, and pouring stops when one jug is empty or the other is full; so, by induction on the number of moves, each jug always holds a combination $7x + 4y$. Since $\gcd(7, 4) = 1$, every whole number of litres is such a combination; here $6 = 7\cdot2 - 4\cdot 2$, which suggests filling the big jug twice and emptying the small jug twice. Writing (big, small) for the contents:
 
 $$
 (7, 0) \to (3, 4) \to (3, 0) \to (0, 3) \to (7, 3) \to (6, 4).
@@ -253,7 +253,7 @@ Checking every row ($240\cdot1 - 46\cdot 5 = 10$, $-960 + 966 = 6$, …) is a go
 a: 240
 b: 46
 mode: extended
-caption: The extended Euclidean algorithm for $240$ and $46$. Each row keeps the invariant $r_i = 240x_i + 46y_i$; the last non-zero remainder gives $\gcd(240,46) = 2 = 240\cdot(-9) + 46\cdot 47$. The Bézout coefficients are not unique: adding $23$ to $x$ and subtracting $120$ from $y$ gives another pair.
+caption: The extended Euclidean algorithm for $240$ and $46$ (the figure numbers the rows from $0$ and writes $s_i, t_i$ for the coefficients $x_i, y_i$ of [[#ex-extended]]). Each row keeps the invariant $r_i = 240s_i + 46t_i$; the last non-zero remainder gives $\gcd(240,46) = 2 = 240\cdot(-9) + 46\cdot 47$. The Bézout coefficients are not unique: the final row, $240\cdot 23 - 46\cdot 120 = 0$, shows that adding $23$ to $x$ and subtracting $120$ from $y$ gives another pair.
 :::
 
 Bézout's identity yields the single most useful fact about coprime numbers.
@@ -328,10 +328,10 @@ $$
 
 With $k = n - 1$ this gives $b = r_0 \ge F_{n+1}$.
 
-For the digit bound, let $\phi = \frac{1 + \sqrt 5}{2} \approx 1.618$, which satisfies $\phi^2 = \phi + 1$. By induction $F_{k+1} \ge \phi^{k-1}$: true for $k = 1, 2$ ($1 \ge 1$, $2 \ge \phi$), and $F_{k+1} = F_k + F_{k-1} \ge \phi^{k-2} + \phi^{k-3} = \phi^{k-3}(\phi + 1) = \phi^{k-1}$. So $b \ge \phi^{n-1}$, i.e. $n - 1 \le \log_{10} b/\log_{10}\phi$. Since $\log_{10}\phi \approx 0.209 > \frac15$, we get $n - 1 < 5\log_{10} b$. If $b$ has $N$ decimal digits then $\log_{10} b < N$, so $n - 1 < 5N$ and $n \le 5N$.
+For the digit bound, let $\phi = \frac{1 + \sqrt 5}{2} \approx 1.618$, which satisfies $\phi^2 = \phi + 1$. By induction $F_{k+1} \ge \phi^{k-1}$: true for $k = 1, 2$ ($1 \ge 1$, $2 \ge \phi$), and $F_{k+1} = F_k + F_{k-1} \ge \phi^{k-2} + \phi^{k-3} = \phi^{k-3}(\phi + 1) = \phi^{k-1}$. So $b \ge \phi^{n-1}$, i.e. $n - 1 \le \log_{10} b/\log_{10}\phi$. Since $\log_{10}\phi \approx 0.209 > \frac15$, we get $n - 1 \le 5\log_{10} b$. If $b$ has $N$ decimal digits then $\log_{10} b < N$, so $n - 1 < 5N$ and $n \le 5N$.
 :::
 
-So for numbers of $300$ digits — the size used in RSA — Euclid's algorithm needs at most $1500$ steps, a negligible amount of work for a computer. By contrast, finding the gcd by first factorising both numbers is believed to be infeasible at that size. That asymmetry between computing gcds (easy) and factorising (hard) is exactly what public-key cryptography exploits ([[number-theory/cryptography]]).
+So for numbers of $617$ digits — the size of a $2048$-bit RSA modulus — Euclid's algorithm needs at most $5\cdot 617 = 3085$ steps, a negligible amount of work for a computer. By contrast, finding the gcd by first factorising both numbers is believed to be infeasible at that size. That asymmetry between computing gcds (easy) and factorising (hard) is exactly what public-key cryptography exploits ([[number-theory/cryptography]]).
 
 ::: widget euclid
 a: 89
@@ -341,16 +341,16 @@ caption: The worst case for Euclid's algorithm: consecutive Fibonacci numbers $8
 :::
 
 ::: application Euclid in everyday computing
-Euclid's algorithm is used to reduce fractions in exact arithmetic, to compute modular inverses when generating RSA keys (the extended algorithm finds $d$ with $ed \equiv 1$), in the "binary gcd" variants built into cryptographic libraries, and in music software, where the gcd of two rhythmic periods gives the length of the shortest repeating cycle (the lcm). The same algorithm works for polynomials ([[abstract-algebra/polynomials]]), where it underlies error-correcting codes.
+Euclid's algorithm is used to reduce fractions in exact arithmetic, to compute modular inverses when generating RSA keys (the extended algorithm finds $d$ with $ed \equiv 1$), in the "binary gcd" variants built into cryptographic libraries, and in music software, where two rhythms with periods $a$ and $b$ realign after $\lcm(a, b) = ab/\gcd(a, b)$ beats. The same algorithm works for polynomials ([[abstract-algebra/polynomials]]), where it underlies error-correcting codes.
 :::
 
 ::: history
-The algorithm appears as Propositions 1 and 2 of Book VII of Euclid's *Elements* (about $300$ BC), phrased as repeatedly subtracting the smaller of two lengths from the larger — a process the Greeks called *anthyphairesis* — and it was probably known to earlier Greek mathematicians. In India, Āryabhaṭa (around $499$) used the closely related *kuṭṭaka* ("pulveriser") method to solve linear equations in integers. The identity $ax + by = \gcd(a, b)$ was stated and proved by Claude-Gaspard Bachet de Méziriac in 1624, and Étienne Bézout proved the analogue for polynomials in 1779; the identity is named after the latter. Gabriel Lamé's 1844 analysis of the number of steps is often cited as one of the first results in computational complexity, and also one of the first serious applications of the Fibonacci numbers.
+The algorithm appears as Propositions 1 and 2 of Book VII of Euclid's *Elements* (about $300$ BC), phrased as repeatedly subtracting the smaller of two lengths from the larger — a process the Greeks called *anthyphairesis* — and it was probably known to earlier Greek mathematicians. In India, Āryabhaṭa (around $499$) used the closely related *kuṭṭaka* ("pulveriser") method to solve linear equations in integers. Claude-Gaspard Bachet de Méziriac showed in 1624 how to solve $ax - by = 1$ for coprime $a$ and $b$ — the heart of the identity $ax + by = \gcd(a, b)$ — and Étienne Bézout proved the analogue for polynomials in 1779; the identity is named after the latter. Gabriel Lamé's 1844 analysis of the number of steps is often cited as one of the first results in computational complexity, and also one of the first serious applications of the Fibonacci numbers.
 :::
 
 ## Where this leads
 
-Bézout's identity is the engine of the next three chapters. In [[number-theory/primes]] it proves Euclid's lemma and hence unique factorisation into primes. In [[number-theory/congruences]] it shows that $a$ has an inverse modulo $n$ exactly when $\gcd(a, n) = 1$, and powers the Chinese remainder theorem. The general solution of $ax + by = c$, and its positive solutions, are found in [[number-theory/diophantine]]. In abstract algebra the same ideas reappear as "every ideal of $\Z$ is principal" ([[abstract-algebra/rings]]) and as Euclid's algorithm for polynomials ([[abstract-algebra/polynomials]]).
+Bézout's identity is the engine of the next three chapters. In [[number-theory/primes]] it proves Euclid's lemma and hence unique factorisation into primes. In [[number-theory/congruences]] it shows that $a$ has an inverse modulo $n$ exactly when $\gcd(a, n) = 1$, and powers the Chinese remainder theorem. The general solution of $ax + by = c$, and its non-negative solutions, are found in [[number-theory/diophantine]]. In abstract algebra the same ideas reappear as "every ideal of $\Z$ is principal" ([[abstract-algebra/rings]]) and as Euclid's algorithm for polynomials ([[abstract-algebra/polynomials]]).
 
 ::: summary
 - $a \mid b$ means $b = ak$ for some integer $k$; a divisor of $b$ and $c$ divides every combination $bx + cy$.

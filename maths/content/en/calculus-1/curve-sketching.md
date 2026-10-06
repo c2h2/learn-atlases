@@ -276,7 +276,7 @@ y: 0, 2300
 tangent: 2
 points: 5, 2000
 labels: V(x) = x(30-2x)^2
-caption: The volume of the box as a function of the cut size $x$. Drag the point of tangency to the top of the curve: at the top of the curve the tangent becomes horizontal: there $x = 5$, $V'(5) = 0$ and the volume reaches $2000$ cm³. Near the maximum the graph is flat, so small errors in cutting cost very little volume.
+caption: The volume of the box as a function of the cut size $x$. Drag the point of tangency to the top of the curve, where the tangent becomes horizontal: there $x = 5$, $V'(5) = 0$ and the volume reaches $2000$ cm³. Near the maximum the graph is flat, so small errors in cutting cost very little volume.
 :::
 
 On an interval that is not closed and bounded, a global extremum need not exist, and the closed interval method does not apply. A useful substitute is the **first derivative test for global extrema**: if $f$ is continuous on an interval $I$ and $c\in I$ is such that $f'<0$ for $x<c$ and $f'>0$ for $x>c$ (in $I$), then $f(c)$ is the global minimum of $f$ on $I$, because $f$ decreases up to $c$ and increases after it. The same holds for maxima with the signs reversed.
@@ -321,7 +321,7 @@ Extremal problems are among the oldest in mathematics. Heron of Alexandria, in t
 
 ## Where this leads
 
-Optimisation with several variables, and with constraints, is the subject of [[multivariable/extrema]], where critical points are found from the gradient and classified by a matrix of second derivatives, and Lagrange multipliers handle constraints. Convex functions — the concave-up functions of this chapter — are the backbone of modern optimisation, because every local minimum of a convex function is a global one. Root-finding by Newton's method, which follows tangent lines downhill to a zero, is studied in [[numerical-analysis/root-finding]], and the curvature of a graph, a more refined measure of bending than the sign of $f''$, appears in [[differential-geometry/curves]].
+Optimisation with several variables, and with constraints, is the subject of [[multivariable/extrema]], where critical points are found from the gradient and classified by a matrix of second derivatives, and Lagrange multipliers handle constraints. Convex functions — the concave-up functions of this chapter — are the backbone of modern optimisation, because every local minimum of a convex function is a global one. Root-finding by Newton's method, which follows tangent lines to a zero, is studied in [[numerical-analysis/root-finding]], and the curvature of a graph, a more refined measure of bending than the sign of $f''$, appears in [[differential-geometry/curves]].
 
 ::: summary
 - Critical points are interior points where $f' = 0$ or $f'$ does not exist; interior local extrema can occur only there.

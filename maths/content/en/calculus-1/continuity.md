@@ -259,7 +259,7 @@ The theorem needs continuity on the **whole** closed interval. The function $1/x
 :::
 
 ::: application Two antipodal points with the same temperature
-At any instant, there are two diametrically opposite points on the equator with exactly the same temperature. Describe points of the equator by their longitude $\theta$, and let $T(\theta)$ be the temperature there, assumed to vary continuously, with $T(\theta + 2\pi) = T(\theta)$. Put $g(\theta) = T(\theta) - T(\theta + \pi)$. Then $g$ is continuous and $g(\pi) = T(\pi) - T(2\pi) = -g(0)$. So either $g(0) = 0$, or $g(0)$ and $g(\pi)$ have opposite signs and $g$ vanishes somewhere in $(0,\pi)$. A zero of $g$ is a pair of antipodal points with equal temperatures. The two-dimensional version (the Borsuk–Ulam theorem, see [[topology]]) says the same for temperature *and* pressure together, anywhere on the globe.
+At any instant, there are two diametrically opposite points on the equator with exactly the same temperature. Describe points of the equator by their longitude $\theta$, and let $T(\theta)$ be the temperature there, assumed to vary continuously, with $T(\theta + 2\pi) = T(\theta)$. Put $g(\theta) = T(\theta) - T(\theta + \pi)$. Then $g$ is continuous and $g(\pi) = T(\pi) - T(2\pi) = -g(0)$. So either $g(0) = 0$, or $g(0)$ and $g(\pi)$ have opposite signs and $g$ vanishes somewhere in $(0,\pi)$. A zero of $g$ is a pair of antipodal points with equal temperatures. The two-dimensional version, the Borsuk–Ulam theorem (see [[topology/connectedness]]), goes further: at any instant there are two antipodal points somewhere on the globe with the same temperature *and* the same pressure.
 :::
 
 ### Continuity of inverse functions

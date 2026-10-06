@@ -174,7 +174,7 @@ Every non-empty subset of $\R$ that is bounded above has a supremum in $\R$.
 A **complete ordered field** is an ordered field in which every non-empty set that is bounded above has a supremum. We take as our starting point that **$\R$ is a complete ordered field**: it satisfies the axioms of [[#def-ordered-field]] together with [[#ax-completeness]]. Every theorem of this course is deduced from these axioms.
 
 ::: remark Does such a field exist, and is it unique?
-Both questions have the answer one would hope for. A complete ordered field can be *constructed* from $\Q$. In Dedekind's construction a real number is a "cut": a non-empty set $L \subsetneq \Q$ with no largest element such that $q \in L$ and $p < q$ imply $p \in L$ (think of $L$ as the rationals to the left of the number). Cuts are added and multiplied in the natural way, $L \le L'$ means $L \subseteq L'$, and the supremum of a bounded family of cuts is simply their union — which is why completeness becomes easy to prove. Cantor's alternative construction uses Cauchy sequences of rationals. Moreover any two complete ordered fields are isomorphic by a unique bijection preserving addition, multiplication and order, so the axioms describe $\R$ completely. Full details are in the final chapters of Spivak's *Calculus* and in chapter 5 of Tao's *Analysis I*.
+Both questions have the answer one would hope for. A complete ordered field can be *constructed* from $\Q$. In Dedekind's construction a real number is a "cut": a non-empty set $L \subsetneq \Q$ with no largest element such that $q \in L$ and $p < q$ imply $p \in L$ (think of $L$ as the rationals to the left of the number). Cuts are added and multiplied in the natural way, $L \le L'$ means $L \subseteq L'$, and the supremum of a bounded family of cuts is simply their union — which is why completeness becomes easy to prove. Cantor's alternative construction uses Cauchy sequences of rationals. Moreover any two complete ordered fields are isomorphic by a unique bijection preserving addition, multiplication and order, so the axioms describe $\R$ completely. The final chapters of Spivak's *Calculus* carry out the construction by cuts and prove the uniqueness; chapter 5 of Tao's *Analysis I* builds $\R$ from Cauchy sequences.
 :::
 
 Completeness for suprema implies completeness for infima: we do not need a separate axiom.
@@ -266,7 +266,7 @@ Every element exceeds $-1$: odd-indexed ones are $-1 + \tfrac1n > -1$ and even-i
 a: 1 - 1/n
 N: 40
 limit: 1
-epsilon: 0.1
+epsilon: 0.08
 y: 0, 1.1
 caption: The set $\set{1 - 1/n : n \in \N}$ has supremum $1$, which it never reaches. Drag $\eps$ smaller: however thin the band below $1$, some points of the set enter it — this is the approximation property [[#lem-sup-approx]]. The first index that enters is the first $n$ with $1/n < \eps$, and the Archimedean property is exactly the guarantee that such an $n$ exists.
 :::
@@ -365,10 +365,12 @@ are disjoint, so $x_{n+1}$ lies in at most one of them. Let $I_{n+1}$ be one of 
 By [[#thm-nested-intervals]] there is a real number $x$ in every $I_n$. For each $n$, $x \in I_n$ while $x_n \notin I_n$, so $x \neq x_n$. Thus the sequence $(x_n)$ misses $x$, and no sequence can list all real numbers.
 :::
 
+Cantor's other proof of [[#thm-r-uncountable]], the **diagonal argument** (1891), works with digits instead of intervals. Given any list $x_1, x_2, x_3, \dots$ of numbers in $(0,1)$, write $x_n = 0.d_{n1}d_{n2}d_{n3}\ldots$ in decimal and put $x = 0.e_1e_2e_3\ldots$, where $e_n = 4$ if $d_{nn} = 5$ and $e_n = 5$ otherwise. Then $x \in (0,1)$, and its $n$-th digit differs from that of $x_n$. Only an expansion ending in endless $0$s or endless $9$s has a twin (such as $0.1000\ldots = 0.0999\ldots$), so the expansion of $x$, made of $4$s and $5$s, is its only one, and $x \neq x_n$ for every $n$. So not even $(0,1)$ can be listed; decimal expansions are treated in detail in [[proofs/cardinality]].
+
 ::: widget cantor
 mode: diagonal
 size: 8
-caption: Cantor's other proof of [[#thm-r-uncountable]]. List any real numbers in $(0,1)$ by their decimal expansions and build a new number whose $n$-th digit differs from the $n$-th digit of the $n$-th number on the list. The new number is in $(0,1)$ but on nobody's list. Try editing the list: the diagonal always escapes. (To avoid the double expansions such as $0.0999\ldots = 0.1000\ldots$, choose new digits that are neither $0$ nor $9$.)
+caption: The diagonal argument for infinite sequences of $0$s and $1$s. Row $s_n$ is the $n$-th sequence on a list; the new sequence $d$ flips the $n$-th digit of $s_n$, so it differs from every $s_n$ in at least one place and is on nobody's list. Click digits to change the list, draw a new list, or add $d$ to it: the new diagonal always escapes. The argument above does the same with decimal digits, using only $4$ and $5$ to avoid double expansions.
 :::
 
 Since $\Q$ is countable and $\R$ is not, the irrational numbers are uncountable: in the sense of cardinality, almost every real number is irrational. In [[measure-theory/lebesgue-measure]] the same conclusion appears in the language of length: $\Q$ can be covered by intervals of total length as small as we like.

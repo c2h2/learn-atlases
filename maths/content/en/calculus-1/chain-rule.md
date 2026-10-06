@@ -29,7 +29,7 @@ $$
 \frac{f(g(a+h)) - f(g(a))}{h} = \frac{f(g(a+h)) - f(g(a))}{g(a+h) - g(a)}\cdot\frac{g(a+h) - g(a)}{h}
 $$
 
-and let $h\to0$: the second factor tends to $g'(a)$, and the first looks like a difference quotient of $f$ at $g(a)$. But the first factor is meaningless whenever $g(a+h) = g(a)$, and this can happen for $h$ arbitrarily close to $0$ — for a constant $g$, or for $g(x) = x^2\sin(1/x)$ at $a = 0$. The argument needs repair, not just polish.
+and let $h\to0$: the second factor tends to $g'(a)$, and the first looks like a difference quotient of $f$ at $g(a)$. But the first factor is meaningless whenever $g(a+h) = g(a)$, and this can happen for $h$ arbitrarily close to $0$ — for a constant $g$, or for $g(x) = x^2\sin(1/x)$ (with $g(0) = 0$) at $a = 0$. The argument needs repair, not just polish.
 :::
 
 The repair uses a reformulation of differentiability, due to Constantin Carathéodory, that avoids division altogether.
@@ -250,7 +250,7 @@ $$
 
 For instance $\frac{d}{dx}x^{\sqrt2} = \sqrt2\,x^{\sqrt2-1}$, and $\frac{d}{dx}\sqrt{x} = \frac12x^{-1/2}$ agrees with our earlier computation from the definition.
 
-Two more families follow at once. By the change-of-base formula $\log_a x = \frac{\ln x}{\ln a}$ ([[calculus-1/real-functions#thm-log-laws]]), so $\frac{d}{dx}\log_a x = \frac{1}{x\ln a}$; the awkward factor $\ln a$ disappears only for $a = e$, which is why the natural logarithm is natural. And since $\frac{d}{dx}e^{-x} = -e^{-x}$, the hyperbolic functions of [[calculus-1/real-functions#eq-hyperbolic]] satisfy
+Two more families follow at once. By the change-of-base formula, $\log_a x = \frac{\ln x}{\ln a}$ ([[calculus-1/real-functions#thm-log-laws]]), so $\frac{d}{dx}\log_a x = \frac{1}{x\ln a}$; the awkward factor $\ln a$ disappears only for $a = e$, which is why the natural logarithm is natural. And since $\frac{d}{dx}e^{-x} = -e^{-x}$, the hyperbolic functions of [[calculus-1/real-functions#eq-hyperbolic]] satisfy
 
 $$
 \frac{d}{dx}\sinh x = \cosh x, \qquad \frac{d}{dx}\cosh x = \sinh x,
@@ -287,7 +287,7 @@ $$
 :::
 :::
 
-::: warning Neither the power rule nor the exponential rule applies to x^x
+::: warning Neither the power rule nor the exponential rule applies to $x^x$
 In $x^x$ both the base and the exponent vary. Treating the exponent as a constant (power rule) gives $x\cdot x^{x-1} = x^x$; treating the base as a constant (exponential rule) gives $x^x\ln x$. Both are wrong — but notice that the correct answer $x^x(\ln x + 1)$ is exactly their *sum*. This is no accident: each variable occurrence contributes its own term, as the chain rule for functions of two variables explains ([[multivariable/partial-derivatives]]).
 :::
 
@@ -417,7 +417,7 @@ With the chain rule we can now differentiate any function built from the element
 ::: summary
 - Chain rule: $(f\circ g)'(x) = f'(g(x))\,g'(x)$, or $\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx}$. Differentiate the outside, keep the inside, multiply by the derivative of the inside.
 - The naive proof fails where $g(x) = g(a)$; writing $f(x) - f(a) = \varphi(x)(x-a)$ with $\varphi$ continuous at $a$ gives a correct proof.
-- If $f$ is strictly monotonic and $f'(a)\neq0$, then $(f^{-1})'(f(a)) = 1/f'(a)$.
+- If $f$ is continuous and strictly monotonic on an open interval and $f'(a)\neq0$, then $(f^{-1})'(f(a)) = 1/f'(a)$.
 - $(\ln x)' = 1/x$, $(a^x)' = a^x\ln a$, $(x^r)' = rx^{r-1}$, $(\arcsin x)' = 1/\sqrt{1-x^2}$ and $(\arctan x)' = 1/(1+x^2)$.
 - Logarithmic differentiation handles variable exponents such as $x^x$ and long products and quotients.
 - Implicit differentiation: differentiate an equation in $x$ and $y$ with $y = y(x)$, remembering $\frac{d}{dx}y^n = ny^{n-1}y'$.

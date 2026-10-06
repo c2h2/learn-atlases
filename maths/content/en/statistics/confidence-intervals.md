@@ -24,7 +24,7 @@ n: 15
 level: 0.95
 intervals: 50
 method: t
-caption: Fifty $95\%$ t-intervals for a population mean, each from a new simulated sample of size $15$; the vertical line is the true mean. About $95\%$ of the intervals cover it, and the misses (highlighted) fall on either side. The intervals have different centres *and* different widths, because both $\bar x$ and $s$ vary. Lower the level to $0.8$ and the intervals shrink while the misses become more frequent.
+caption: Fifty $95\%$ t-intervals for a population mean, each from a new simulated sample of size $15$; the vertical line is the true mean. About $95\%$ of the intervals cover it, and the misses (highlighted) can fall on either side; press New sample to see more. The intervals have different centres *and* different widths, because both $\bar x$ and $s$ vary. Lower the level to $0.8$ and the intervals shrink while the misses become more frequent.
 :::
 
 ::: warning What 95% confidence does not mean
@@ -158,11 +158,11 @@ For small samples or proportions near $0$ or $1$ the Wald interval behaves badly
 
 ::: widget confidence
 dist: bernoulli
-n: 20
+n: 10
 level: 0.95
 intervals: 50
 method: z
-caption: Wald intervals $\hat p\pm1.96\sqrt{\hat p(1-\hat p)/n}$ for a proportion, from samples of size $20$. Count the misses: the coverage is usually noticeably below $95\%$, and some intervals stick out below $0$ or have zero width. Increase $n$ to $200$ and the coverage approaches the nominal level.
+caption: Wald intervals $\hat p\pm1.96\sqrt{\hat p(1-\hat p)/n}$ for a proportion $p = 0.3$, from samples of size $10$. Count the misses: the long-run coverage is only about $84\%$, and many intervals stick out below $0$ or, when no successes are observed, have zero width. Increase $n$ to $200$ and the coverage comes close to the nominal level, though not steadily: it is about $95\%$ for $n = 20$ but $89\%$ for $n = 21$.
 :::
 
 ::: application The rule of three
@@ -257,7 +257,7 @@ The confidence level is a property of the procedure. The first statement is the 
 :::
 
 ::: history
-Pierre-Simon Laplace computed approximate intervals for proportions in the early nineteenth century, in effect using the normal approximation of [[#eq-wald]], and "probable errors" were routinely quoted by astronomers and surveyors. The modern frequentist concept was created by Jerzy Neyman, first in a 1934 paper on sampling methods and then systematically in "Outline of a theory of statistical estimation based on the classical theory of probability" (1937), where he coined the term "confidence interval" and insisted on the interpretation in terms of long-run coverage. Edwin Bidwell Wilson proposed his interval for a proportion in 1927, and Charles Clopper and Egon Pearson gave an exact (conservative) interval based on the binomial distribution in 1934. Ronald Fisher's rival theory of "fiducial" intervals, which tried to attach probabilities to parameters without a prior, led to a long and bitter dispute with Neyman.
+Pierre-Simon Laplace computed approximate intervals for proportions in the early nineteenth century, in effect using the normal approximation of [[#eq-wald]], and "probable errors" were routinely quoted by astronomers and surveyors. The modern frequentist concept was created by Jerzy Neyman, who coined the term "confidence interval" in a 1934 paper on sampling methods and developed the theory systematically in "Outline of a theory of statistical estimation based on the classical theory of probability" (1937), where he insisted on the interpretation in terms of long-run coverage. Edwin Bidwell Wilson proposed his interval for a proportion in 1927, and Charles Clopper and Egon Pearson gave an exact (conservative) interval based on the binomial distribution in 1934. Ronald Fisher's rival theory of "fiducial" intervals, which tried to attach probabilities to parameters without a prior, led to a long and bitter dispute with Neyman.
 :::
 
 ## Where this leads {#where-next}

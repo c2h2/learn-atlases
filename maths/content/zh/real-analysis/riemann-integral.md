@@ -158,12 +158,12 @@ $$
 :::
 
 ::: widget riemann
-f: floor(4x)/4 + x/4
+f: floor(pi x)/pi + x/4
 a: 0
 b: 1
 n: 6
 method: upper
-caption: 一个递增的类阶梯函数，在$\tfrac14, \tfrac12, \tfrac34$以及端点$1$处有跳跃。它的上和仍然收敛于积分：由[[#thm-monotone-integrable]]中的裂项相消论证，无论跳跃如何，都有$U - L = (f(1) - f(0))/n$。增大$n$，观察那些跨越跳跃点的矩形——只有它们超出得较多，而它们的宽度趋于$0$。
+caption: 一个递增的类阶梯函数$f(x) = \lfloor \pi x\rfloor/\pi + x/4$，在$1/\pi$、$2/\pi$和$3/\pi$处有跳跃。它的上和仍然收敛于积分：由[[#thm-monotone-integrable]]中的裂项相消论证，无论跳跃如何，都有$U - L = (f(1) - f(0))/n$。增大$n$，观察那些跨越跳跃点的矩形——只有它们超出得较多，而它们的宽度趋于$0$。
 :::
 
 ::: example 托马函数可积 {#ex-thomae-integral}
@@ -259,7 +259,7 @@ $$
 由于$m_k \le f(t_k) \le M_k$，这对每个分割都给出$L(f, P) \le F(b) - F(a) \le U(f, P)$。因此$L(f) \le F(b) - F(a) \le U(f)$，而$f$可积，所以上、下两个界都等于$\int_a^b f$。
 :::
 
-注意这里**没有**假设什么：$f$不必连续。但它必须可积，而这一点并不是自动成立的。1881年，沃尔泰拉（Volterra）构造了一个可导函数$F$，它的导数有界却不黎曼可积；对这样的$F$，[[#eq-ftc]]的左端不存在。（[[measure-theory/lebesgue-integral]]一章中的勒贝格积分弥补了这种情形。）
+注意这里**没有**假设什么：$f$不必连续。但它必须可积，而这一点并不是自动成立的。1881年，沃尔泰拉（Volterra）构造了一个可导函数$F$，它的导数有界却不黎曼可积；对这样的$F$，[[#eq-ftc]]的左端不存在。（[[measure-theory/lebesgue-integral]]一章中的勒贝格积分弥补了这种情形：有界的导数总是勒贝格可积的，其积分等于$F(b) - F(a)$。）
 
 第二半则反过来：先积分，再求导。
 

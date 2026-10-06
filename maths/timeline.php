@@ -21,6 +21,33 @@ foreach ($ms as $e) {
         'area' => $e['area'] ?? 'foundations', 'course' => null, 'ctitle' => null];
 }
 usort($events, fn($a, $b) => [$a['year'], $a['course'] === null ? 0 : 1] <=> [$b['year'], $b['course'] === null ? 0 : 1]);
+// The same discovery is often told in several courses (Euclid's Elements, Cauchy's Cours d'analyse …) and again in
+// the site milestones: list it once — the milestone's wording if there is one — with a link to every course.
+$merged = [];
+foreach ($events as $e) {
+    $hit = null;
+    foreach ($merged as $k => $g) {
+        if ($e['people'] && $g['year'] === $e['year'] && array_intersect($g['people'], $e['people'])) {
+            $hit = $k;
+            break;
+        }
+    }
+    if ($hit === null) {
+        $merged[] = $e + ['areas' => [$e['area']], 'courses' => $e['course'] ? [$e['course'] => $e] : [], 'more' => ''];
+        continue;
+    }
+    $g = &$merged[$hit];
+    $g['people'] = array_values(array_unique(array_merge($g['people'], $e['people'])));
+    if (!in_array($e['area'], $g['areas'], true)) {
+        $g['areas'][] = $e['area'];
+    }
+    if ($e['course'] && !isset($g['courses'][$e['course']])) {
+        $g['courses'][$e['course']] = $e;
+    }
+    $g['more'] .= ' ' . $e['title'] . ' ' . $e['detail'];
+    unset($g);
+}
+$events = $merged;
 $centuries = [];
 foreach ($events as $e) {
     $centuries[$e['year'] < 1500 ? 'early' : (string)(intdiv($e['year'], 100) * 100)] = true;
@@ -45,13 +72,13 @@ page_head(t('Timeline'), 'timeline', ['description' => t('Four thousand years of
         $key = $e['course'] ?? '_site';
         $title = $e['course'] ? ma_inline($e['title'], $e['course']) : ma_site_inline($e['title']);
         $detail = $e['course'] ? ma_inline($e['detail'], $e['course']) : ma_site_inline($e['detail']);
-        $search = mb_strtolower(strip_tags($title . ' ' . $detail . ' ' . implode(' ', $e['people']))); ?>
-    <li data-search="<?= h($search) ?>" data-area="<?= h($e['area']) ?>" style="--c:var(--a-<?= h($e['area']) ?>)">
+        $search = mb_strtolower(strip_tags($title . ' ' . $detail . ' ' . implode(' ', $e['people']) . $e['more'])); ?>
+    <li data-search="<?= h($search) ?>" data-area="<?= h(implode(' ', $e['areas'])) ?>" style="--c:var(--a-<?= h($e['area']) ?>)">
       <span class="yr"><?= h(year_label($e['year'])) ?></span><span class="dot"></span>
       <div>
         <span class="ev-title"><?= $title ?></span><?php if ($e['people']): ?><span class="ev-meta"><?= h(implode(list_sep(), $e['people'])) ?></span><?php endif; ?>
         <p class="ev-detail"><?= $detail ?></p>
-        <?php if ($e['course']): ?><a class="ev-course" href="<?= h(url('course.php', ['c' => $e['course']])) ?>"><?= ma_inline($e['ctitle'], $e['course']) ?> →</a><?php endif; ?>
+        <?php foreach ($e['courses'] as $cs => $m): ?><a class="ev-course" href="<?= h(url('course.php', ['c' => $cs])) ?>" title="<?= h(html_entity_decode(strip_tags(ma_inline($m['title'], $cs)), ENT_QUOTES, 'UTF-8')) ?>"><?= ma_inline($m['ctitle'], $cs) ?> →</a><?php endforeach; ?>
       </div>
     </li>
     <?php endforeach; ?>

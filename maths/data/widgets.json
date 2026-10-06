@@ -706,9 +706,9 @@
      "desc": "rows separated by ';', up to 5×6"
     },
     "augmented": {
-     "type": "bool",
+     "type": "text",
      "default": "true",
-     "desc": "draw a bar before the last column"
+     "desc": "true: a bar before the last column ([A | b]); false: no bar; a number k: the bar after column k (e.g. 3 for [A | I] with A 3×3 — the read-out then gives A⁻¹)"
     }
    },
    "example": "matrix: 1,2,-1,3; 2,4,1,9; -1,1,2,0",
@@ -946,6 +946,15 @@
      "type": "range",
      "default": "0, 2pi"
     },
+    "mode": {
+     "type": "enum",
+     "values": [
+      "work",
+      "flux"
+     ],
+     "default": "work",
+     "desc": "line integral shown first: work ∮F·dr or flux ∮F·n ds"
+    },
     "sliders": {
      "type": "sliders"
     }
@@ -1144,7 +1153,8 @@
      "default": "-3, 3"
     },
     "points": {
-     "type": "points"
+     "type": "points",
+     "desc": "starting points of the trajectories drawn; when given, the automatic orbits (saddle separatrices and seed grid) are not drawn"
     },
     "nullclines": {
      "type": "bool",

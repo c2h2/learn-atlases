@@ -3623,7 +3623,7 @@
           : T('%s = %s has already been listed, so skip it.', label(m, n), ((m + 1) / gcd(m + 1, n + 1)) + '/' + ((n + 1) / gcd(m + 1, n + 1)));
       } else msg = T('Step %d: the pair %s.', k - 1, label(cur[0], cur[1]));
       const parts = [el('span', { class: 'w-dm-msg', text: msg })];
-      if (!rat) parts.push(el('span', null, MA.texEl(zig ? '\\pi(m,n) = \\tfrac{d(d+1)}{2} + \\begin{cases} m & d \\text{ even} \\\\ n & d \\text{ odd}\\end{cases},\\; d = m+n' : '\\pi(m,n) = \\tfrac{(m+n)(m+n+1)}{2} + n')));
+      if (!rat) parts.push(el('span', null, MA.texEl(zig ? '\\pi(m,n) = \\tfrac{d(d+1)}{2} + \\begin{cases} m & d \\text{ ' + T('even@@parity') + '} \\\\ n & d \\text{ ' + T('odd@@parity') + '}\\end{cases},\\; d = m+n' : '\\pi(m,n) = \\tfrac{(m+n)(m+n+1)}{2} + n')));
       info.set(...parts);
       if (rat) panel.replaceChildren(chipRow(T('The list so far:'), list.slice(-40), (i) => i === list.length - 1), el('div', { class: 'w-dm-hint', text: T('Every positive rational p/q sits in row q, column p, so the zig-zag reaches it after finitely many steps; skipping repeats makes the list a bijection ℕ → ℚ⁺.') }));
       else panel.replaceChildren(el('div', { class: 'w-dm-hint', text: T('Every pair lies on a finite diagonal m + n = d, so it receives a number after finitely many steps: ℕ × ℕ is countable. Hover a cell to see its number.') }));

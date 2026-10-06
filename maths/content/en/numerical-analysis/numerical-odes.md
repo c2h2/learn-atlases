@@ -191,7 +191,7 @@ t: 0, 2
 exact: 1/(1 + t^2)
 h: 0.2
 methods: euler; heun; rk4
-caption: Euler, Heun and RK4 for $y' = -2ty^2$, $y(0) = 1$, against the exact solution $\frac{1}{1+t^2}$. With $h = 0.2$ Euler visibly undershoots, Heun is close and RK4 is indistinguishable from the exact curve. Halve the step size and compare the global errors: they fall by about $2$, $4$ and $16$.
+caption: Euler, Heun and RK4 for $y' = -2ty^2$, $y(0) = 1$, against the exact solution $\frac{1}{1+t^2}$. With $h = 0.2$ Euler is visibly off (too high while the solution falls steeply, slightly too low near the end), Heun is close and RK4 is indistinguishable from the exact curve. Halve the step size and compare the global errors: they fall by about $2$, $4$ and $16$.
 :::
 
 ::: quiz
@@ -260,7 +260,7 @@ t: 0, 2
 exact: (2500/2501)*cos(t) + (50/2501)*sin(t) - (2500/2501)*exp(-50*t)
 h: 0.03
 methods: euler; rk4
-caption: The stiff problem $y' = -50(y - \cos t)$. With $h = 0.03$ both explicit methods track the smooth solution after the initial transient (Euler overshoots and oscillates there, because its growth factor for the transient is $R = 1 - 1.5 = -0.5$). Increase $h$ slowly: at $h = 0.04$ Euler's transient stops decaying and oscillates, beyond it Euler explodes, and RK4 follows just above $h = 0.056$. Nothing about the *solution* changed — it is as smooth as ever — only the stability limit of the method was crossed.
+caption: The stiff problem $y' = -50(y - \cos t)$. With $h = 0.03$ both explicit methods track the smooth solution after the initial transient (Euler overshoots and oscillates there, because its growth factor for the transient is $R = 1 - 1.5 = -0.5$). Increase $h$ slowly: at $h = 0.04$ Euler's transient stops decaying and oscillates, beyond it Euler explodes, and RK4 follows as soon as $h$ exceeds its limit $2.785/50 \approx 0.0557$, that is, from $h = 0.056$ on the slider. Nothing about the *solution* changed — it is as smooth as ever — only the stability limit of the method was crossed.
 :::
 
 ::: quiz
@@ -283,7 +283,7 @@ $$
 E_{n+1} = (y_n + hv_n)^2 + (v_n - hy_n)^2 = (1 + h^2)(y_n^2 + v_n^2) = (1 + h^2)E_n .
 $$
 
-The energy grows by the factor $(1 + h^2)^{63} = 1.87$ in every period, and by $510$ after ten periods: the computed orbit spirals outwards, however small $h$ is (only the rate changes). In the language of stability regions, the system has eigenvalues $\lambda = \pm i$, and $\abs{R(\pm ih)} = \abs{1 \pm ih} = \sqrt{1 + h^2} > 1$: the imaginary axis lies outside Euler's stability disc. For RK4, $\abs{R(ih)}^2 = 1 - \frac{h^6}{72} + \frac{h^8}{576}$, so the energy *decreases*, but only by a relative $8.6\times10^{-7}$ per period. Converting a higher-order equation into a first-order system in this way is how all ODE software handles second-order problems.
+The energy grows by the factor $(1 + h^2)^{63} = 1.87$ in every period, and by $510$ after ten periods: the computed orbit spirals outwards, however small $h$ is (only the rate changes). In the language of stability regions, the system has eigenvalues $\lambda = \pm i$, and $\abs{R(\pm ih)} = \abs{1 \pm ih} = \sqrt{1 + h^2} > 1$: the imaginary axis lies outside Euler's stability disc. For RK4, $\abs{R(ih)}^2 = 1 - \frac{h^6}{72} + \frac{h^8}{576}$, so the energy *decreases*, but only by a relative $8.6\times10^{-7}$ per period. Converting a higher-order equation into a first-order system in this way is how general-purpose ODE software handles second-order problems.
 :::
 :::
 
@@ -316,7 +316,7 @@ A chemical reaction model has Jacobian eigenvalues $-0.5$ and $-10^6$, and you n
 - [x] An implicit A-stable or BDF method with steps chosen for accuracy, for example $h \approx 0.1$
 - [ ] Euler's method with $h = 0.1$, as it is the most robust
 ::: solution
-The problem is stiff. RK4 with $h = 0.1$ has $h\lambda = -10^5$, far outside its stability interval $[-2.785, 0]$, and explodes. RK4 with $h \le 2.785\times10^{-6}$ is stable but needs about $4\times10^7$ steps. An implicit method is stable for any step on this problem, so $h$ can be chosen for the accuracy of the slow component, giving about $1000$ steps (each requiring a linear solve, which is cheap for a small system). Euler's method is explicit and has the same problem as RK4.
+The problem is stiff. RK4 with $h = 0.1$ has $h\lambda = -10^5$, far outside its stability interval $[-2.785, 0]$, and explodes. RK4 with $h \le 2.785\times10^{-6}$ is stable but needs about $4\times10^7$ steps. Such an implicit method is stable for any step on this problem, so $h$ can be chosen for the accuracy of the slow component, giving about $1000$ steps (each requiring a linear solve, which is cheap for a small system). Euler's method is explicit and has the same problem as RK4.
 :::
 :::
 
@@ -334,7 +334,7 @@ Leonhard Euler described his method in his *Institutiones calculi integralis* (1
 
 ## Where this leads
 
-Linear multistep methods (Adams and BDF) reuse past values instead of extra stages and are the basis of many adaptive stiff solvers. Boundary value problems, where conditions are given at both ends of an interval, are solved by shooting (repeated initial value solves with Newton's method on the unknown initial data) or by finite differences that lead to the linear systems of [[numerical-analysis/direct-methods]]. Applying ODE solvers to the spatially discretised heat and wave equations — the *method of lines* — connects this chapter with [[pde/heat-equation]] and [[pde/wave-equation]], where the stability limit $h \le C(\Delta x)^2$ for explicit methods becomes the famous Courant–Friedrichs–Lewy type condition. The qualitative theory of the systems being simulated is in [[ode/nonlinear-systems]].
+Linear multistep methods (Adams and BDF) reuse past values instead of extra stages and are the basis of many adaptive stiff solvers. Boundary value problems, where conditions are given at both ends of an interval, are solved by shooting (repeated initial value solves with Newton's method on the unknown initial data) or by finite differences that lead to the linear systems of [[numerical-analysis/direct-methods]]. Applying ODE solvers to the spatially discretised heat and wave equations — the *method of lines* — connects this chapter with [[pde/heat-equation]] and [[pde/wave-equation]]; there explicit methods face stability limits $h \le C(\Delta x)^2$ for the heat equation and $h \le C\,\Delta x$ for the wave equation, the latter being the famous Courant–Friedrichs–Lewy condition. The qualitative theory of the systems being simulated is in [[ode/nonlinear-systems]].
 
 ::: summary
 - A one-step method $y_{n+1} = y_n + h\Phi(t_n, y_n; h)$ has order $p$ if its truncation error per unit step is $O(h^p)$; Euler's method has order $1$.

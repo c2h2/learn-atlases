@@ -51,7 +51,7 @@ $$
 其中$B(\alpha,\beta) = \int_0^1t^{\alpha-1}(1-t)^{\beta-1}\,dt = \dfrac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}$。它的均值（数学期望）为$\dfrac{\alpha}{\alpha+\beta}$，方差为$\dfrac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$。
 :::
 
-这个分布族很灵活：$\operatorname{Beta}(1,1)$是均匀分布，$\alpha = \beta$时$\operatorname{Beta}(\alpha,\beta)$关于$\tfrac12$对称，而$\alpha+\beta$越大，分布越集中。此外，二项似然恰好会把贝塔先验变成贝塔后验。
+这个分布族很灵活：$\operatorname{Beta}(1,1)$是均匀分布，$\alpha = \beta$时$\operatorname{Beta}(\alpha,\beta)$关于$\tfrac12$对称，而在均值给定时，$\alpha+\beta$越大，分布越集中。此外，二项似然恰好会把贝塔先验变成贝塔后验。
 
 ::: theorem 贝塔先验，二项数据 {#thm-beta-binomial}
 若$p\sim\operatorname{Beta}(\alpha,\beta)$，且在给定$p$时，$X\sim\Bin(n,p)$的观测值为$s$，则后验分布为
@@ -98,7 +98,7 @@ a: 1
 b: 1
 successes: 7
 trials: 10
-caption: 贝塔先验（这里是均匀分布）以及$10$次试验中$7$次成功之后的后验$\operatorname{Beta}(8,4)$。保持比例为$70\%$，增加试验次数：后验在$0.7$附近变窄。再试一个怀疑性的先验，例如以$\tfrac12$为中心的$\operatorname{Beta}(10,10)$：在$10$次试验时，它会把后验明显地拉向$0.5$；在$200$次试验时则几乎没有影响。
+caption: 贝塔先验（这里是均匀分布）以及$10$次试验中$7$次成功之后的后验$\operatorname{Beta}(8,4)$。保持比例为$70\%$，增加试验次数：后验在$0.7$附近变窄。再试一个怀疑性的先验，例如以$\tfrac12$为中心的$\operatorname{Beta}(10,10)$：在$10$次试验时，它把后验均值从$0.67$拉低到$0.57$；而在$50$次试验（$35$次成功）时，只是从$0.69$拉低到$0.64$。数据越多，先验的影响越小。
 :::
 
 后验还能预测未来的观测。给定数据时，下一位患者被治愈的概率是治愈概率$p$关于后验分布的平均：由全概率公式（其连续形式见[[probability/expectation#thm-tower]]），$\Prob(\text{下一位被治愈}\mid s) = \E(p\mid s)$。
@@ -208,7 +208,7 @@ dist: beta
 params: alpha=8, beta=4
 a: 0.5
 b: 1
-caption: 新药治愈率的后验$\operatorname{Beta}(8,4)$，阴影部分为$\Prob(p>0.5\mid\text{数据}) = 227/256\approx0.887$。把阴影区域的左端移到$0.390$：从$0.390$到$0.891$的区间包含了$95\%$的后验概率，它就是$95\%$等尾可信区间。
+caption: 新药治愈率的后验$\operatorname{Beta}(8,4)$，阴影部分为$\Prob(p>0.5\mid\text{数据}) = 227/256\approx0.887$。把阴影区域的两端分别拖到$0.390$和$0.891$：这个区间包含了$95\%$的后验概率，它就是$95\%$等尾可信区间。
 :::
 
 ## 用贝叶斯因子比较假设 {#bayes-factors}
@@ -264,7 +264,7 @@ $95\%$可信区间说的是“给定这些数据和这个先验，$\theta$以$0.
 :::
 
 ::: history
-托马斯·贝叶斯（Thomas Bayes）在身后于1763年发表的论文，解决了在均匀先验下推断二项概率的问题，这基本上就是本章的贝塔-二项模型。皮埃尔-西蒙·拉普拉斯（Pierre-Simon Laplace）从1774年起独立地发展了“逆概率”，推导出接续法则，并把贝叶斯推理应用于从天文学到男女出生比例的各种问题。20世纪初，费希尔（Fisher）对任意选取先验的批评使逆概率失宠，但哈罗德·杰弗里斯（Harold Jeffreys）使它延续了下来——他的《概率论》（Theory of Probability，1939年）引入了参考先验和贝叶斯因子；弗兰克·拉姆齐（Frank Ramsey）、布鲁诺·德菲内蒂（Bruno de Finetti）和伦纳德·萨维奇（Leonard Savage）则为它奠定了主观主义的基础，萨维奇的著作是《统计学基础》（The Foundations of Statistics，1954年）。第二次世界大战期间，艾伦·图灵（Alan Turing）和他在布莱切利园（Bletchley Park）的同事们使用序贯贝叶斯因子——以图灵称为“班”（ban）的单位来度量——来帮助破译恩尼格玛（Enigma）密码。实际应用上的革命随着计算机的出现而到来：梅特罗波利斯（Metropolis）算法（1953年）经黑斯廷斯（Hastings）推广（1970年）后，于1990年由艾伦·盖尔芬德（Alan Gelfand）和阿德里安·史密斯（Adrian Smith）引入统计学。
+托马斯·贝叶斯（Thomas Bayes）在身后于1763年发表的论文，解决了在均匀先验下推断二项概率的问题，这基本上就是本章的贝塔-二项模型。皮埃尔-西蒙·拉普拉斯（Pierre-Simon Laplace）从1774年起独立地发展了“逆概率”，推导出接续法则，并把贝叶斯推理应用于从天文学到男女出生比例的各种问题。20世纪初，费希尔（Fisher）对任意选取先验的批评使逆概率失宠，但哈罗德·杰弗里斯（Harold Jeffreys）使它延续了下来——他的《概率论》（Theory of Probability，1939年）提出了用来表示对参数一无所知的先验，并发展了贝叶斯因子；弗兰克·拉姆齐（Frank Ramsey）、布鲁诺·德菲内蒂（Bruno de Finetti）和伦纳德·萨维奇（Leonard Savage）则为它奠定了主观主义的基础，萨维奇的著作是《统计学基础》（The Foundations of Statistics，1954年）。第二次世界大战期间，艾伦·图灵（Alan Turing）和他在布莱切利园（Bletchley Park）的同事们使用序贯贝叶斯因子——以图灵称为“班”（ban）的单位来度量——来帮助破译恩尼格玛（Enigma）密码。实际应用上的革命随着计算机的出现而到来：梅特罗波利斯（Metropolis）算法（1953年）经黑斯廷斯（Hastings）推广（1970年）后，于1990年由艾伦·盖尔芬德（Alan Gelfand）和阿德里安·史密斯（Adrian Smith）引入统计学。
 :::
 
 ## 后续内容 {#where-next}
@@ -350,7 +350,7 @@ $$
 ::: exercise 只有样本均值起作用 {level=3}
 在[[#thm-normal-normal]]的正态-正态模型中，证明：给定全部$x_1,\ldots,x_n$时的后验，与只给定$\bar x$（把它看作来自$\Normal(\theta,\sigma^2/n)$的单个观测值）时的后验相同。
 ::: solution
-给定$\theta$时，$\bar X\sim\Normal(\theta,\sigma^2/n)$，所以方差为$\sigma^2/n$的单个观测值$\bar x$的似然正比于$\exp\bigl(-\frac{n}{2\sigma^2}(\theta-\bar x)^2\bigr)$。[[#thm-normal-normal]]的证明表明，整个样本的似然（作为$\theta$的函数）正比于完全相同的表达式。由于后验$\propto$似然$\times$先验，两个后验相同。用[[statistics/estimation]]一章的语言来说，$\bar X$是一个**充分统计量**：它携带了样本中关于$\theta$的全部信息。
+给定$\theta$时，$\bar X\sim\Normal(\theta,\sigma^2/n)$，所以方差为$\sigma^2/n$的单个观测值$\bar x$的似然正比于$\exp\bigl(-\frac{n}{2\sigma^2}(\theta-\bar x)^2\bigr)$。[[#thm-normal-normal]]的证明表明，整个样本的似然（作为$\theta$的函数）正比于完全相同的表达式。由于后验$\propto$似然$\times$先验，两个后验相同。用数理统计的语言来说（参见[[statistics/estimation]]一章的末尾），$\bar X$是一个**充分统计量**：它携带了样本中关于$\theta$的全部信息。
 :::
 :::
 

@@ -29,7 +29,7 @@ So the solutions lie on a line, spaced evenly at steps of $\left(\frac bd, -\fra
 ::: example A linear equation via Euclid {#ex-linear-diophantine}
 Find all integer solutions of $1071x + 462y = 105$.
 ::: solution
-From [[number-theory/divisibility#ex-gcd]], $\gcd(1071, 462) = 21$ and $21 = 7\cdot 462 - 3\cdot 1071$. Since $105 = 5\cdot 21$, multiplying by $5$ gives the particular solution $x_0 = -15$, $y_0 = 35$: indeed $1071\cdot(-15) + 462\cdot 35 = -16065 + 16170 = 105$. With $\frac bd = \frac{462}{21} = 22$ and $\frac ad = \frac{1071}{21} = 51$, all solutions are
+From [[number-theory/divisibility#ex-gcd]], $\gcd(1071, 462) = 21$, and running Euclid's algorithm backwards gives $21 = 7\cdot 462 - 3\cdot 1071$. Since $105 = 5\cdot 21$, multiplying by $5$ gives the particular solution $x_0 = -15$, $y_0 = 35$: indeed $1071\cdot(-15) + 462\cdot 35 = -16065 + 16170 = 105$. With $\frac bd = \frac{462}{21} = 22$ and $\frac ad = \frac{1071}{21} = 51$, all solutions are
 
 $$
 x = -15 + 22t, \qquad y = 35 - 51t \qquad (t \in \Z).
@@ -69,7 +69,7 @@ Given $n$, choose $x$ with $0 \le x \le b - 1$ and $ax \equiv n \pmod b$ (possib
 Now suppose $ab - a - b = ax + by$ with $x, y \ge 0$. Then $a(x + 1) + b(y + 1) = ab$, so $b \mid a(x + 1)$ and hence $b \mid x + 1$; similarly $a \mid y + 1$. So $x + 1 \ge b$ and $y + 1 \ge a$, giving $ab = a(x+1) + b(y+1) \ge 2ab$, a contradiction.
 :::
 
-With coins of $5$ and $8$, the largest impossible amount is $40 - 5 - 8 = 27$; the impossible amounts are $1, 2, 3, 4, 6, 7, 9, 11, 12, 14, 17, 19, 22, 27$. There are $14 = \frac{(5-1)(8-1)}2$ of them; James Joseph Sylvester proved in 1884 that exactly $\frac{(a-1)(b-1)}{2}$ amounts are impossible in general. For three or more coin values no closed formula for the largest impossible amount is known.
+With coins of $5$ and $8$, the largest impossible amount is $40 - 5 - 8 = 27$; the impossible amounts are $1, 2, 3, 4, 6, 7, 9, 11, 12, 14, 17, 19, 22, 27$. There are $14 = \frac{(5-1)(8-1)}2$ of them; James Joseph Sylvester proved in 1882 that exactly $\frac{(a-1)(b-1)}{2}$ amounts are impossible in general. For three or more coin values no closed formula for the largest impossible amount is known.
 
 ::: quiz
 Does $6x + 10y = 15$ have integer solutions?
@@ -126,13 +126,13 @@ which is rational exactly when $t$ is (if the second point is rational, so is th
 :::
 
 ::: widget plot
-f: sqrt(1 - x^2); -sqrt(1 - x^2); (x + 1)/2; 2(x + 1)/3
+f: sqrt(1 - x^2); (x + 1)/2; 2(x + 1)/3; (x + 1)/4; -sqrt(1 - x^2)
 x: -1.3, 1.3
 y: -1.3, 1.3
 equal: true
-points: -1, 0; 3/5, 4/5; 5/13, 12/13
-labels: X^2+Y^2=1; ; t=1/2; t=2/3
-caption: Lines through $(-1, 0)$ with rational slope $t$ meet the unit circle again at rational points. Slope $t = \frac12$ hits $\left(\frac35, \frac45\right)$, giving the triple $(3, 4, 5)$; slope $t = \frac23$ hits $\left(\frac5{13}, \frac{12}{13}\right)$, giving $(5, 12, 13)$. Every Pythagorean triple arises this way from some rational slope.
+points: -1, 0; 3/5, 4/5; 5/13, 12/13; 15/17, 8/17
+labels: X^2+Y^2=1; t=1/2; t=2/3; t=1/4
+caption: Lines through $(-1, 0)$ with rational slope $t$ meet the unit circle again at rational points. Slope $t = \frac12$ hits $\left(\frac35, \frac45\right)$, giving the triple $(3, 4, 5)$; slope $t = \frac23$ hits $\left(\frac5{13}, \frac{12}{13}\right)$, giving $(5, 12, 13)$; slope $t = \frac14$ hits $\left(\frac{15}{17}, \frac{8}{17}\right)$, giving $(15, 8, 17)$. Every Pythagorean triple arises this way from some rational slope.
 :::
 
 ## Infinite descent and Fermat's Last Theorem
@@ -248,7 +248,7 @@ $21 = 3\cdot 7$ has primes $\equiv 3 \pmod 4$ to odd powers. $50 = 2\cdot 5^2 = 
 :::
 
 ::: remark Three and four squares
-Lagrange proved in 1770 that **every** positive integer is a sum of four squares; for example $7 = 4 + 1 + 1 + 1$. Three squares suffice exactly for the numbers not of the form $4^a(8b + 7)$ — a theorem of Legendre and Gauss. The easy half is [[number-theory/congruences#exr-3-6]]: squares are $0, 1, 4 \pmod 8$, so no number $\equiv 7 \pmod 8$ is a sum of three squares.
+Lagrange proved in 1770 that **every** positive integer is a sum of four squares; for example $7 = 4 + 1 + 1 + 1$. Three squares suffice exactly for the numbers not of the form $4^a(8b + 7)$ — a theorem of Legendre and Gauss. The easy half starts from [[number-theory/congruences#exr-3-6]]: squares are $0, 1, 4 \pmod 8$, so no number $\equiv 7 \pmod 8$ is a sum of three squares; and if $4n$ is a sum of three squares, all three are even (squares are $0$ or $1 \pmod 4$), so $n$ is one too.
 :::
 
 ## Pell's equation

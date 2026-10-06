@@ -6,7 +6,7 @@ $$
 
 converges only for $\abs x < 1$. Nothing happens at $x = \pm1$ to explain this. Second, the function equal to $e^{-1/x^2}$ for $x\neq0$ and $0$ at $0$ is infinitely differentiable with every derivative zero at $0$, so its Taylor series is identically zero — and does not represent the function at all. Real analysis offers no explanation of either phenomenon. Complex analysis explains both at once. The function $\frac{1}{1 + z^2}$ has poles at $z = \pm i$, at distance exactly $1$ from the origin, and a power series cannot converge on a disc containing a pole. And $e^{-1/z^2}$ is not even continuous at $z = 0$ in the complex plane (along the imaginary axis it blows up), so there is no reason for it to have a Taylor series there.
 
-In this chapter we prove that every analytic function equals the sum of its Taylor series on the largest disc where it is analytic. Consequences include the **identity theorem**: an analytic function on a domain is determined by its values on any set with a limit point. We then extend Taylor series to **Laurent series**, which allow negative powers and represent functions on annuli, and use them to classify **isolated singularities** as removable singularities, poles or essential singularities.
+In this chapter we prove that every analytic function equals the sum of its Taylor series on the largest disc where it is analytic. Consequences include the **identity theorem**: an analytic function on a domain is determined by its values on any set with a limit point in the domain. We then extend Taylor series to **Laurent series**, which allow negative powers and represent functions on annuli, and use them to classify **isolated singularities** as removable singularities, poles or essential singularities.
 
 ## Power series in the complex plane
 
@@ -176,7 +176,7 @@ The identity theorem is the reason analytic functions are so rigid: values on a 
 ::: solution
 (a) $g(z) = z^2$ satisfies $g(1/n) = 1/n^2$. The set $S = \set{1/n : n\ge2}$ has the limit point $0$, which lies in the disc, so by [[#thm-identity]] $f = g$: the only such function is $f(z) = z^2$.
 
-(b) No. Along the even integers $n = 2k$ we would have $f(1/2k) = 1/2k$, and the set $\set{1/2k}$ accumulates at $0$, so $f(z) = z$ by the identity theorem. But then $f(1/3) = 1/3\neq-1/3$. Note that $f(x) = (-1)^n/n$ at $x = 1/n$ can easily be achieved by a *smooth real* function — another way in which real smoothness is much weaker than complex analyticity.
+(b) No. Along the even integers $n = 2k$ we would have $f(1/2k) = 1/2k$, and the set $\set{1/2k}$ accumulates at $0$, so $f(z) = z$ by the identity theorem. But then $f(1/3) = 1/3\neq-1/3$. In contrast, values at the points $1/n$ do not determine a *smooth real* function: $x^2 + e^{-1/x^2}\sin(\pi/x)$, with value $0$ at $x = 0$, is infinitely differentiable on $\R$ and equals $1/n^2$ at every $x = 1/n$, yet it is not $x^2$ — another way in which real smoothness is much weaker than complex analyticity.
 :::
 :::
 
@@ -332,7 +332,7 @@ y: -0.6, 0.6
 caption: Domain colouring of $e^{1/z}$ near its essential singularity at $0$. Zoom in on the origin in your mind: every colour (argument) and every brightness (modulus) occurs in every neighbourhood of $0$ — the Casorati–Weierstrass theorem made visible. Compare a pole, where the picture near the point is a single colour wheel with brightness increasing towards the centre.
 :::
 
-In fact much more is true. **Picard's great theorem** (1879) says that in every punctured neighbourhood of an essential singularity, $f$ takes *every* complex value, with at most one exception, infinitely often. For $e^{1/z}$ the exception is $0$: given $w\neq0$, the solutions of $e^{1/z} = w$ are $z = \frac{1}{\Log w + 2\pi ik}$, $k\in\Z$, and they tend to $0$ as $\abs k\to\infty$.
+In fact much more is true. **Picard's great theorem** (1879) says that in every punctured neighbourhood of an essential singularity, $f$ takes *every* complex value, with at most one exception, infinitely often. For $e^{1/z}$ the exception is $0$: given $w\neq0$, the solutions of $e^{1/z} = w$ are $z = \frac{1}{\Log w + 2\pi ik}$, $k\in\Z$ (with $k\neq0$ when $w = 1$), and they tend to $0$ as $\abs k\to\infty$.
 
 ::: example Classifying singularities {#ex-classify}
 Find and classify the singularities of (a) $\dfrac{1 - \cos z}{z^4}$, (b) $\dfrac{1}{e^z - 1}$, (c) $z\sin\dfrac1z$.

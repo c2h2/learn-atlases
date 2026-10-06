@@ -313,7 +313,7 @@ $$
 \frac{\partial F}{\partial x} = M, \qquad \frac{\partial F}{\partial y} = N \qquad\text{on } R.
 $$
 
-Then every solution satisfies $F(x, y(x)) = C$ for a constant $C$; conversely a differentiable $y$ with $F(x,y(x)) = C$ and $N(x,y(x)) \ne 0$ is a solution.
+Then every solution satisfies $F(x, y(x)) = C$ for a constant $C$; conversely, every differentiable $y$ with $F(x,y(x)) = C$ is a solution, and near each point of a level curve $F = C$ where $N \ne 0$ the curve is the graph of such a function (implicit function theorem).
 :::
 
 In the language of [[multivariable/line-integrals]], the equation is exact when the vector field $(M, N)$ is conservative and $F$ is its potential. As there, a simple test decides the question on rectangles.
@@ -335,7 +335,7 @@ $$
 F(x, y) = \int_{x_0}^{x} M(s, y_0)\,ds + \int_{y_0}^{y} N(x, s)\,ds .
 $$
 
-Every point on the two segments of integration lies in $R$, because $R$ is a rectangle. The first integral does not depend on $y$, so by the fundamental theorem of calculus $F_y(x,y) = N(x, y)$. For $F_x$ we differentiate the second integral under the integral sign, which is allowed because $N_x$ is continuous on the closed segment (Leibniz's rule), and then use [[#eq-exact-test]]:
+Every point on the two segments of integration lies in $R$, because $R$ is a rectangle. The first integral does not depend on $y$, so by the fundamental theorem of calculus $F_y(x,y) = N(x, y)$. For $F_x$ we differentiate the second integral under the integral sign, which is allowed because $N_x$ is continuous on $R$, and $R$ contains a closed rectangle around the segment (Leibniz's rule), and then use [[#eq-exact-test]]:
 
 $$
 F_x(x,y) = M(x, y_0) + \int_{y_0}^{y} N_x(x, s)\,ds = M(x, y_0) + \int_{y_0}^{y} M_y(x, s)\,ds = M(x,y_0) + \bigl(M(x,y) - M(x,y_0)\bigr) = M(x,y).

@@ -165,7 +165,7 @@ caption: 非紧定义域上的两个连续函数。在$\R$上，$\arctan x$有�
 我们证明$f$把闭集映成闭集；这样，对$g = f^{-1}$和$X$中的闭集$C$，$g^{-1}(C) = f(C)$是闭集，所以$g$连续。设$C\subseteq X$是闭集。由[[#thm-closed-compact]](1)，$C$是紧的，所以由[[#thm-image]]，$f(C)$是紧的，从而由[[#thm-closed-compact]](2)，它是豪斯多夫空间$Y$中的闭集。
 :::
 
-例如，映射$[0, 2\pi]\to S^1$，$t\mapsto(\cos t, \sin t)$是连续的满射，但不是单射；它在$[0, 2\pi)$上的限制是双射，却不是同胚（[[topology/continuous-maps#ex-not-homeo]]）——定义域$[0, 2\pi)$不是紧的。在[[topology/quotient-spaces]]一章中，这个定理将说明把$[0, 2\pi]$的两端粘合起来恰好得到圆周。它还立即说明，[[topology/continuous-maps#ex-product]]中从$S^1\times S^1$到甜甜圈形曲面的映射是同胚：它是从紧空间到$\R^3$的子空间的连续双射，而$\R^3$的子空间是豪斯多夫空间。
+例如，映射$[0, 2\pi]\to S^1$，$t\mapsto(\cos t, \sin t)$是连续的满射，但不是单射；它在$[0, 2\pi)$上的限制是双射，却不是同胚（[[topology/continuous-maps#ex-not-homeo]]）——定义域$[0, 2\pi)$不是紧的。事实上，根本不存在连续双射$[0, 2\pi]\to S^1$：由这个定理，它会是同胚，但$[0, 2\pi]\cong[0, 1]$与$S^1$不同胚（[[topology/connectedness#thm-line-plane]]）。在[[topology/quotient-spaces]]一章中，这个定理将说明把$[0, 2\pi]$的两端粘合起来恰好得到圆周。它还立即说明，[[topology/continuous-maps#ex-product]]中从$S^1\times S^1$到甜甜圈形曲面的映射是同胚：它是从紧空间到$\R^3$的子空间的连续双射，而$\R^3$的子空间是豪斯多夫空间。
 
 ::: quiz
 设$f\colon X\to Y$是连续双射。在下列哪种情形下可以断定$f$是同胚？
@@ -245,7 +245,7 @@ caption: $a_n = \sin n$的各项在$[-1, 1]$中游荡，始终不会稳定下来
 
 ## 后续内容
 
-紧性是点集拓扑的两大支柱之一，在本课程余下的部分中将被反复使用。在[[topology/quotient-spaces]]一章中，[[#thm-compact-hausdorff]]把圆周、环面和射影平面等商空间与具体的模型等同起来。在[[topology/fundamental-group]]一章中，勒贝格数引理是道路提升论证的引擎，而这一论证计算出了圆周的基本群。在分析学中，紧性带来了一致连续性、最大值和最小值的存在性以及子列的收敛性——而在[[real-analysis/metric-spaces]]和[[measure-theory/lp-spaces]]中，紧性在无穷维情形下的失效是许多微妙之处的根源。
+紧性是点集拓扑的两大支柱之一，在本课程余下的部分中将被反复使用。在[[topology/quotient-spaces]]一章中，[[#thm-compact-hausdorff]]把圆周、环面和射影平面等商空间与具体的模型等同起来。在[[topology/fundamental-group]]一章中，勒贝格数引理是道路提升论证的引擎，而这一论证计算出了圆周的基本群。在分析学中，紧性带来了一致连续性、最大值和最小值的存在性以及子列的收敛性——而在无穷维情形下，有界闭集未必是紧的（[[real-analysis/metric-spaces]]，[[#exr-ell2]]），紧性的这种失效是函数空间（例如[[measure-theory/lp-spaces]]中的$L^p$空间）中许多微妙之处的根源。
 
 ::: summary
 - 若每个开覆盖都有有限子覆盖，则空间是紧的；有限集、闭区间和$\set0\cup\set{1/n}$是紧的，而$\R$、$(0,1)$和无限离散空间不是紧的。

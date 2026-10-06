@@ -20,7 +20,7 @@ $$
 \Prob(a < X\le b) = F_X(b) - F_X(a).
 $$ {#eq-interval}
 
-Every distribution function shares three properties, and conversely any function with these properties is the distribution function of some random variable (a fact proved in [[measure-theory/lebesgue-measure]]).
+Every distribution function has the first three properties in the next theorem, and conversely any function with these three properties is the distribution function of some random variable (the probability measure it needs, a Lebesgue–Stieltjes measure, is constructed like Lebesgue measure; see [[measure-theory/lebesgue-measure]]).
 
 ::: theorem Properties of distribution functions {#thm-cdf}
 Let $F$ be the distribution function of a random variable $X$. Then
@@ -123,7 +123,7 @@ $$
 \E\,g(X) = \int_{-\infty}^\infty g(x)\,f_X(x)\,dx,
 $$ {#eq-lotus-cont}
 
-whenever the integral converges absolutely. For monotone differentiable $g$ this follows from the change-of-variables theorem later in this chapter by a substitution; the general case is a theorem of integration theory, proved in [[measure-theory/lebesgue-integral]]. As in the discrete case, [[#eq-lotus-cont]] implies $\E(aX+b) = a\E X+b$, $\Var X = \E X^2 - (\E X)^2$ and $\Var(aX+b) = a^2\Var X$, with the same proofs.
+whenever the integral converges absolutely. For monotone differentiable $g$ this follows from the change-of-variables theorem later in this chapter by a substitution; the general case is a theorem of measure-theoretic integration, in which expectations are the Lebesgue integrals of [[measure-theory/lebesgue-integral]]. As in the discrete case, [[#eq-lotus-cont]] implies $\E(aX+b) = a\E X+b$, $\Var X = \E X^2 - (\E X)^2$ and $\Var(aX+b) = a^2\Var X$, with the same proofs.
 
 For the density of [[#ex-density-constant]], symmetry about $0$ gives $\E X = 0$ (the integrand $x f(x)$ is odd), and the variance is computed in the exercises.
 
@@ -163,7 +163,7 @@ Integration by parts gives $\E X = \int_0^\infty x\lambda e^{-\lambda x}\,dx = \
 dist: exponential
 params: lambda=1
 cdf: true
-caption: The $\operatorname{Exp}(\lambda)$ density and distribution function. Change the rate $\lambda$: the density always starts at height $\lambda$ and the mean $1/\lambda$ (marked with $\pm$ one standard deviation, also $1/\lambda$) moves inversely. The cdf rises to $1 - e^{-1}\approx 0.63$ at the mean, so about $63\%$ of lifetimes are shorter than average.
+caption: The $\operatorname{Exp}(\lambda)$ distribution function; switch to PDF to see the density. Change the rate $\lambda$: the density always starts at height $\lambda$ and the mean $1/\lambda$ (marked with $\pm$ one standard deviation, also $1/\lambda$) moves inversely. The cdf rises to $1 - e^{-1}\approx 0.63$ at the mean, so about $63\%$ of lifetimes are shorter than average.
 :::
 
 ::: example Radiocarbon {#ex-carbon}
@@ -262,7 +262,7 @@ $$
 
 The function $\Phi$ has no formula in terms of elementary functions; it is tabulated and built into every statistical package. By symmetry $\Phi(-z) = 1 - \Phi(z)$, so tables list only $z\ge0$. Some values worth knowing:
 
-| $z$ | $0$ | $0.5$ | $1$ | $1.282$ | $1.5$ | $1.645$ | $1.96$ | $2$ | $2.326$ | $2.576$ | $3$ |
+| $z$ | $0$ | $0.5$ | $1$ | $1.2816$ | $1.5$ | $1.645$ | $1.96$ | $2$ | $2.326$ | $2.576$ | $3$ |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | $\Phi(z)$ | $0.5$ | $0.6915$ | $0.8413$ | $0.9000$ | $0.9332$ | $0.9500$ | $0.9750$ | $0.9772$ | $0.9900$ | $0.9950$ | $0.9987$ |
 

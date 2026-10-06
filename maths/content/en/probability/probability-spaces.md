@@ -13,7 +13,7 @@ The **sample space** of an experiment is a set $\Omega$ whose elements, called *
 Some examples, in increasing order of size:
 
 - Tossing a coin once: $\Omega = \{H, T\}$.
-- Rolling a red die and a blue die: $\Omega = \{(i, j) : 1 \le i, j \le 6\}$, with $36$ outcomes. The event "the total is $7$" is $\{(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)\}$.
+- Rolling a red die and a blue die: $\Omega = \{(i, j) : 1 \le i, j \le 6\}$, with $36$ outcomes. The event "the total is $7$" is $\{(1,6),\allowbreak (2,5),\allowbreak (3,4),\allowbreak (4,3),\allowbreak (5,2),\allowbreak (6,1)\}$.
 - Tossing a coin until the first head appears and recording the number of tosses: $\Omega = \{1, 2, 3, \ldots\}$, a countably infinite set.
 - Measuring the lifetime of a light bulb in hours: $\Omega = [0, \infty)$, an uncountable set.
 
@@ -100,7 +100,7 @@ defines a probability measure on $(\Omega, 2^\Omega)$. Conversely, every probabi
 :::
 
 ::: proof
-The sums in [[#eq-discrete]] have non-negative terms, so they are well defined (possibly as infinite series) and their value does not depend on the order of summation ([[calculus-2/series]]). Clearly $\Prob(A) \ge 0$ and $\Prob(\Omega) = 1$. If $A_1, A_2, \ldots$ are pairwise disjoint, each $\omega$ in their union lies in exactly one $A_n$, and a series of non-negative terms may be split into groups and summed group by group, so
+The sums in [[#eq-discrete]] have non-negative terms, so they are well defined (possibly as infinite series) and their value does not depend on the order of summation ([[calculus-2/convergence-tests#thm-rearrangement]]). Clearly $\Prob(A) \ge 0$ and $\Prob(\Omega) = 1$. If $A_1, A_2, \ldots$ are pairwise disjoint, each $\omega$ in their union lies in exactly one $A_n$, and a series of non-negative terms may be split into groups and summed group by group, so
 
 $$
 \Prob\Bigl(\bigcup_n A_n\Bigr) = \sum_{\omega \in \bigcup_n A_n} p(\omega) = \sum_{n} \sum_{\omega \in A_n} p(\omega) = \sum_n \Prob(A_n).
@@ -264,7 +264,7 @@ Computing probabilities thus becomes a matter of counting, and the tools of [[di
 ::: example Totals of two dice {#ex-two-dice}
 Two fair dice are rolled. Find the probability that the total is $7$, and the probability that it is $8$.
 ::: solution
-Use the $36$ ordered outcomes $(i, j)$, which are equally likely for fair dice. A total of $7$ arises from $(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)$, so $\Prob(\text{total } 7) = \tfrac{6}{36} = \tfrac16$. A total of $8$ arises from $(2,6), (3,5), (4,4), (5,3), (6,2)$, so $\Prob(\text{total }8) = \tfrac{5}{36}$. In general the number of ways to obtain the totals $2, 3, \ldots, 12$ is
+Use the $36$ ordered outcomes $(i, j)$, which are equally likely for fair dice. A total of $7$ arises from $(1,6),\allowbreak (2,5),\allowbreak (3,4),\allowbreak (4,3),\allowbreak (5,2),\allowbreak (6,1)$, so $\Prob(\text{total } 7) = \tfrac{6}{36} = \tfrac16$. A total of $8$ arises from $(2,6),\allowbreak (3,5),\allowbreak (4,4),\allowbreak (5,3),\allowbreak (6,2)$, so $\Prob(\text{total }8) = \tfrac{5}{36}$. In general the number of ways to obtain the totals $2, 3, \ldots, 12$ is
 
 | total | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -427,7 +427,7 @@ Games of chance are ancient, but their mathematics is not. Gerolamo Cardano anal
 
 ## Where this leads {#where-next}
 
-The probability space is the stage on which everything else happens. In [[probability/conditional-probability]] we learn how probabilities change when we receive partial information, which leads to Bayes' theorem and the notion of independence. Numerical quantities attached to outcomes, such as the total of two dice or the number of tosses until a head, are **random variables**, studied from [[probability/discrete-random-variables]] onwards. The measure-theoretic side of this chapter — σ-algebras, the construction of Lebesgue measure and integration with respect to a probability measure — is developed fully in [[measure-theory/sigma-algebras]] and [[measure-theory/lebesgue-integral]].
+The probability space is the stage on which everything else happens. In [[probability/conditional-probability]] we learn how probabilities change when we receive partial information, which leads to Bayes' theorem and the notion of independence. Numerical quantities attached to outcomes, such as the total of two dice or the number of tosses until a head, are **random variables**, studied from [[probability/discrete-random-variables]] onwards. The measure-theoretic side of this chapter — σ-algebras, the construction of Lebesgue measure and integration with respect to a probability measure — is developed fully in [[measure-theory/sigma-algebras]], [[measure-theory/lebesgue-measure]] and [[measure-theory/lebesgue-integral]].
 
 ::: summary
 - A probability space $(\Omega, \mathcal{F}, \Prob)$ consists of a sample space of outcomes, a σ-algebra of events and a probability measure obeying Kolmogorov's axioms: non-negativity, $\Prob(\Omega) = 1$ and countable additivity ([[#def-prob-space]]).

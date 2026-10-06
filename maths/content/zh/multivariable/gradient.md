@@ -274,9 +274,9 @@ $$
 ::: example 不是线性的方向导数 {#ex-not-differentiable}
 当$(x,y) \ne (0,0)$时令$f(x, y) = \dfrac{x^2y}{x^2 + y^2}$，并令$f(0,0) = 0$。证明$f$在原点处连续，且沿每个方向都有方向导数，但在原点处不可微。
 ::: solution
-*连续性*。由于$x^2 \le x^2 + y^2$，当$(x,y)\to(0,0)$时，$\abs{f(x,y)} \le \abs{y} \to 0$。
+**连续性。**由于$x^2 \le x^2 + y^2$，当$(x,y)\to(0,0)$时，$\abs{f(x,y)} \le \abs{y} \to 0$。
 
-*方向导数*。对单位向量$\mathbf{u} = (u_1, u_2)$和$h \ne 0$，
+**方向导数。**对单位向量$\mathbf{u} = (u_1, u_2)$和$h \ne 0$，
 
 $$
 \frac{f(hu_1, hu_2) - f(0,0)}{h} = \frac{1}{h}\cdot\frac{h^3u_1^2u_2}{h^2(u_1^2 + u_2^2)} = u_1^2u_2 ,
@@ -284,7 +284,7 @@ $$
 
 所以对每个$\mathbf{u}$，$D_{\mathbf{u}}f(0,0) = u_1^2u_2$都存在。特别地，$f_x(0,0) = 0$（取$\mathbf{u} = \mathbf{i}$），$f_y(0,0) = 0$（取$\mathbf{u} = \mathbf{j}$），所以$\nabla f(0,0) = \mathbf{0}$。
 
-*不可微*。如果$f$在原点处可微，那么由[[#thm-directional-gradient]]，对每个$\mathbf{u}$都有$D_{\mathbf{u}}f(0,0) = \nabla f(0,0)\cdot\mathbf{u} = 0$。但对$\mathbf{u} = (1,1)/\sqrt2$，我们算得$D_{\mathbf{u}}f(0,0) = \tfrac12\cdot\tfrac{1}{\sqrt2} \ne 0$。所以$f$在原点处不可微。从几何上看，图像在过原点的每个竖直平面内都有一条切**线**，但这些切线不在同一个平面内。
+**不可微。**如果$f$在原点处可微，那么由[[#thm-directional-gradient]]，对每个$\mathbf{u}$都有$D_{\mathbf{u}}f(0,0) = \nabla f(0,0)\cdot\mathbf{u} = 0$。但对$\mathbf{u} = (1,1)/\sqrt2$，我们算得$D_{\mathbf{u}}f(0,0) = \tfrac12\cdot\tfrac{1}{\sqrt2} \ne 0$。所以$f$在原点处不可微。从几何上看，图像在过原点的每个竖直平面内都有一条切**线**，但这些切线不在同一个平面内。
 :::
 :::
 
@@ -322,7 +322,7 @@ $$
 :::
 
 ::: corollary 梯度为零则函数为常数 {#cor-constant}
-若$U$是凸开集（即它包含其中任意两点之间的线段），且在$U$上$\nabla f = \mathbf{0}$，则$f$在$U$上为常数。若在$U$上$\norm{\nabla f} \le M$，则对所有$\mathbf{a}, \mathbf{b} \in U$，有$\abs{f(\mathbf{b}) - f(\mathbf{a})} \le M\norm{\mathbf{b} - \mathbf{a}}$。
+设$f$在凸开集$U$（即包含其中任意两点之间线段的开集）上可微。若在$U$上$\nabla f = \mathbf{0}$，则$f$在$U$上为常数。若在$U$上$\norm{\nabla f} \le M$，则对所有$\mathbf{a}, \mathbf{b} \in U$，有$\abs{f(\mathbf{b}) - f(\mathbf{a})} \le M\norm{\mathbf{b} - \mathbf{a}}$。
 :::
 
 ::: proof
@@ -375,7 +375,7 @@ caption: $f = x^2 + 10y^2$上的梯度下降。学习率为$0.09$时，路径在
 
 ## 后续内容
 
-梯度是多元函数的一阶导数。[[multivariable/extrema]]一章将引入二阶导数（黑塞矩阵），在$\nabla f = \mathbf{0}$处寻找极大值和极小值，并利用[[#thm-gradient-normal]]推导出在约束$g = c$下求最优值的拉格朗日乘数法。梯度场$\mathbf{F} = \nabla f$就是[[multivariable/line-integrals]]一章中的保守向量场，那里的曲线积分基本定理推广了中值定理；在[[multivariable/stokes-divergence]]一章中，$\nabla$又以散度$\nabla\cdot\mathbf{F}$和旋度$\nabla\times\mathbf{F}$的形式重新出现。切平面和单位法向量是[[differential-geometry/regular-surfaces]]一章中曲面几何的出发点，而梯度方法将在[[numerical-analysis/iterative-methods]]一章中深入研究。
+梯度是多元函数的一阶导数。[[multivariable/extrema]]一章将引入二阶导数（黑塞矩阵），在$\nabla f = \mathbf{0}$处寻找极大值和极小值，并利用[[#thm-gradient-normal]]推导出在约束$g = c$下求最优值的拉格朗日乘数法。梯度场$\mathbf{F} = \nabla f$就是[[multivariable/line-integrals]]一章中的保守向量场，那里的曲线积分基本定理$\int_C\nabla f\cdot d\mathbf{r} = f(B) - f(A)$扮演着微积分基本定理的角色；在[[multivariable/stokes-divergence]]一章中，$\nabla$又以散度$\nabla\cdot\mathbf{F}$和旋度$\nabla\times\mathbf{F}$的形式重新出现。切平面和单位法向量是[[differential-geometry/regular-surfaces]]一章中曲面几何的出发点。在二次碗形函数上，梯度下降法是一种定常线性迭代，其收敛性由[[numerical-analysis/iterative-methods]]一章中研究的谱半径决定。
 
 ::: summary
 - 方向导数$D_{\mathbf{u}}f(\mathbf{a})$是$f$在$\mathbf{a}$处沿单位向量$\mathbf{u}$的方向、每单位距离的变化率（[[#def-directional]]）。
@@ -478,6 +478,6 @@ $$
 \frac{f(t,t)}{\norm{(t,t)}} = \frac{t}{\sqrt2\,t} = \frac{1}{\sqrt2},
 $$
 
-它不趋于$0$。因此$f$在原点处不可微。（等价地说，对$\mathbf{u} = (1,1)/\sqrt2$，$D_{\mathbf{u}}f(0,0)$不存在：商$f(t\mathbf{u})/t = \abs{t}/(\sqrt2\,t)$随$t$的符号不同而等于$\pm 1/\sqrt2$。）
+它不趋于$0$。因此$f$在原点处不可微。（另一种证法：对$\mathbf{u} = (1,1)/\sqrt2$，$D_{\mathbf{u}}f(0,0)$不存在：商$f(t\mathbf{u})/t = \abs{t}/(\sqrt2\,t)$随$t$的符号不同而等于$\pm 1/\sqrt2$。）
 :::
 :::

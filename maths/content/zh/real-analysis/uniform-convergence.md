@@ -125,7 +125,7 @@ x: 0, 1
 y: 0, 8
 sliders: n=1:1:20:1
 labels: h_n(x) = n^2xe^{-nx}
-caption: [[#ex-failures]]中的鼓包$h_n(x) = n^2xe^{-nx}$。随着$n$增大，每个鼓包都更高（在$x = 1/n$处高为$n/e$）、更窄，并向$x = 0$滑去。在每个固定的$x > 0$处，函数值最终都会消失，所以$h_n \to 0$逐点成立；但每个鼓包下方的面积始终接近$1$。质量沿竖直轴向上逃逸了——而一致收敛不允许这种情况发生。
+caption: [[#ex-failures]]中的鼓包$h_n(x) = n^2xe^{-nx}$。随着$n$增大，每个鼓包都更高（在$x = 1/n$处高为$n/e$）、更窄，并向$x = 0$滑去。在每个固定的$x > 0$处，函数值最终都会消失，所以$h_n \to 0$逐点成立；但鼓包下方的面积$1 - (n+1)e^{-n}$趋于$1$。质量沿竖直轴向上逃逸了——而一致收敛不允许这种情况发生。
 :::
 
 导数的情形更微妙。$f_n$的一致收敛对$f_n'$没有任何约束（例(c)）；正确的假设是**导数**的一致收敛。
@@ -341,7 +341,7 @@ caption: 带角点的函数$\lvert x - \tfrac12\rvert$的伯恩斯坦多项式�
 
 ## 后续内容
 
-一致收敛就是按上确界范数收敛，在[[real-analysis/metric-spaces]]一章中，它成为度量空间$C[a, b]$中的收敛；[[#thm-uniform-cauchy]]说明这个空间是完备的，这是压缩映射原理以及微分方程存在性定理（[[ode/existence-uniqueness]]）的关键。傅里叶级数（[[pde/fourier-series]]）很少一致收敛——阿贝尔的例子就有跳跃——因而需要更弱的收敛概念。测度论提供了这些概念：在[[measure-theory/lebesgue-integral]]一章中，单调收敛定理和控制收敛定理允许在比一致收敛弱得多的假设下交换极限与积分的次序，而[[measure-theory/lp-spaces]]一章比较了函数收敛的多种方式。在复平面中，幂级数的性态甚至更好：[[complex-analysis/analytic-functions]]一章表明，复可微函数总是其泰勒级数之和。
+一致收敛就是按上确界范数收敛，在[[real-analysis/metric-spaces]]一章中，它成为度量空间$C[a, b]$中的收敛；[[#thm-uniform-cauchy]]与[[#thm-uniform-continuous]]合起来说明这个空间是完备的，这是压缩映射原理以及微分方程存在性定理（[[ode/existence-uniqueness]]）的关键。傅里叶级数（[[pde/fourier-series]]）很少一致收敛——阿贝尔的例子就有跳跃——因而需要更弱的收敛概念。测度论提供了这些概念：在[[measure-theory/lebesgue-integral]]一章中，单调收敛定理和控制收敛定理允许在比一致收敛弱得多的假设下交换极限与积分的次序，而[[measure-theory/lp-spaces]]一章比较了函数收敛的多种方式。在复平面中，幂级数的性态甚至更好：[[complex-analysis/laurent-series]]一章表明，在开圆盘上复可微的函数在整个圆盘上等于其泰勒级数之和。
 
 ::: summary
 - 逐点收敛（在每个$x$处$f_n(x) \to f(x)$）不能保持连续性（$x^n$）、积分（逃逸的鼓包）或导数（$\sin(nx)/\sqrt n$）。

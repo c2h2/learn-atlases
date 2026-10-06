@@ -94,7 +94,7 @@ Given $\eps > 0$, choose $N$ so large that $\abs{b_n - b} < \eps/(2M)$ and $\abs
 (3) By (2) it suffices to show $1/b_n \to 1/b$. There is $N_1$ with $\abs{b_n - b} < \abs{b}/2$ for $n \ge N_1$; by the reverse triangle inequality $\abs{b_n} > \abs{b}/2$ for these $n$, and so
 
 $$
-\left\lvert\frac1{b_n} - \frac1b\right\rvert = \frac{\abs{b - b_n}}{\abs{b_n}\,\abs{b}} < \frac{2}{\abs{b}^2}\,\abs{b_n - b} \qquad (n \ge N_1).
+\left\lvert\frac1{b_n} - \frac1b\right\rvert = \frac{\abs{b - b_n}}{\abs{b_n}\,\abs{b}} \le \frac{2}{\abs{b}^2}\,\abs{b_n - b} \qquad (n \ge N_1).
 $$
 
 Given $\eps > 0$, choose $N_2$ with $\abs{b_n - b} < \eps\abs{b}^2/2$ for $n \ge N_2$; for $n \ge \max(N_1, N_2)$ the right-hand side is less than $\eps$.
@@ -199,7 +199,7 @@ g: sqrt(2 + x)
 x0: 1
 steps: 12
 x: 0, 2.5
-caption: The cobweb diagram of $x_{n+1} = \sqrt{2 + x_n}$ from $x_1 = 1$. The orbit climbs a staircase between the graph of $\sqrt{2+x}$ and the line $y = x$: every step goes up (the sequence increases) but no step can cross the intersection point $x = 2$ (the sequence is bounded). Try starting values above $2$: the sequence now decreases to $2$.
+caption: The cobweb diagram of $x_{n+1} = \sqrt{2 + x_n}$ from $x_1 = 1$ (the figure calls the starting value $x_0$). The orbit climbs a staircase between the graph of $\sqrt{2+x}$ and the line $y = x$: every step goes up (the sequence increases) but no step can cross the intersection point $x = 2$ (the sequence is bounded). Drag the starting point to the right of $2$: the sequence now decreases to $2$.
 :::
 
 Note the logic: we must show *first* that the limit exists, and only then find it from the recursion. Skipping the first step leads to nonsense — the recursion $x_{n+1} = 2x_n$ with $x_1 = 1$ "has limit $L = 2L$, so $L = 0$", although $x_n = 2^{n-1} \to \infty$.

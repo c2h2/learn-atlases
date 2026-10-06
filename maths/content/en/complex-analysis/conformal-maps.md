@@ -161,9 +161,9 @@ The most famous map of this kind is the **Cayley transform** $C(z) = \dfrac{z - 
 ::: widget complexmap
 f: (z - i)/(z + i)
 mode: grid
-x: -3, 3
-y: 0, 3
-caption: The Cayley transform $\frac{z-i}{z+i}$ applied to a grid in the upper half-plane. Horizontal and vertical lines become circles, all passing through the point $1$ (the image of $\infty$), and they still meet at right angles. The whole half-plane is squeezed into the unit disc; the real axis wraps around the boundary circle, and the point $i$ lands at the centre.
+x: -1.5, 1.5
+y: 0, 1.5
+caption: The Cayley transform $\frac{z-i}{z+i}$ applied to a grid in the upper half-plane. Horizontal and vertical lines become arcs of circles that, continued beyond the grid, all pass through the point $1$ (the image of $\infty$), and they still meet at right angles. The grid lands inside the unit disc: its bottom edge, the segment $[-1.5, 1.5]$ of the real axis, wraps around most of the boundary circle (the thick arc), and the point $i$ lands at the centre.
 :::
 
 ## Automorphisms of the disc and the Schwarz lemma
@@ -209,7 +209,7 @@ Uniqueness, at least, follows from what we have proved: if $f$ and $g$ are two s
 In practice, conformal maps between given regions are built by composing a few standard maps. Here is the toolbox.
 
 - **Möbius transformations** map discs and half-planes to discs and half-planes; for instance the Cayley transform maps the upper half-plane onto the disc.
-- **Powers** $z\mapsto z^\alpha$ (principal branch) open or close wedges: the wedge $\set{0 < \arg z < \beta}$ goes onto the wedge $\set{0 < \arg w < \alpha\beta}$, provided $\alpha\beta\le2\pi$. In particular $z\mapsto z^{\pi/\beta}$ maps a wedge of angle $\beta$ onto the upper half-plane.
+- **Powers** $z\mapsto z^\alpha$ ($\alpha > 0$) open or close wedges: with the branch $z^\alpha = \abs z^\alpha e^{i\alpha\arg z}$, $0 < \arg z < \beta$ (the principal branch when $\beta\le\pi$), the wedge $\set{0 < \arg z < \beta}$ goes onto the wedge $\set{0 < \arg w < \alpha\beta}$, provided $\alpha\beta\le2\pi$. In particular $z\mapsto z^{\pi/\beta}$ maps a wedge of angle $\beta$ onto the upper half-plane.
 - **The exponential** maps the horizontal strip $\set{0 < \operatorname{Im} z < \pi}$ onto the upper half-plane, and the logarithm maps it back ([[complex-analysis/elementary-functions]]).
 - **The Joukowski map** $J(z) = \frac12\big(z + \frac1z\big)$, discussed below.
 
@@ -224,7 +224,7 @@ $$
 
 works; for instance $f(1 + i) = \frac{2i - i}{2i + i} = \frac13$, inside the disc.
 
-(b) $z\mapsto e^z$ maps $S$ onto the upper half-plane, and the Cayley transform finishes: $g(z) = \dfrac{e^z - i}{e^z + i}$. The boundary lines $\operatorname{Im} z = 0$ and $\operatorname{Im} z = \pi$ go to the positive and negative real axes, and then to the two arcs of the unit circle on either side of $\pm1$; the two ends of the strip, $\operatorname{Re} z\to\mp\infty$, go to $-1$ and $1$.
+(b) $z\mapsto e^z$ maps $S$ onto the upper half-plane, and the Cayley transform finishes: $g(z) = \dfrac{e^z - i}{e^z + i}$. The boundary lines $\operatorname{Im} z = 0$ and $\operatorname{Im} z = \pi$ go to the positive and negative real axes, and then to the lower and upper halves of the unit circle; the two ends of the strip, $\operatorname{Re} z\to\mp\infty$, go to $-1$ and $1$.
 :::
 :::
 
@@ -247,14 +247,14 @@ $$
 J(re^{it}) = \frac12\Big(r + \frac1r\Big)\cos t + \frac i2\Big(r - \frac1r\Big)\sin t,
 $$
 
-so for $r\neq1$ the circle $\abs z = r$ goes to the ellipse with semi-axes $\frac12(r + \frac1r)$ and $\frac12\abs{r - \frac1r}$ and foci $\pm1$, while the unit circle is flattened onto the segment $[-1, 1]$, traversed twice. The rays $\arg z = t$ go to hyperbolas with the same foci. Since $J(z) = J(1/z)$ and $J'(z) = \frac12(1 - z^{-2})$ vanishes only at $\pm1$, $J$ maps the exterior $\set{\abs z > 1}$ conformally onto $\C\setminus[-1,1]$.
+so for $r\neq1$ the circle $\abs z = r$ goes to the ellipse with semi-axes $\frac12(r + \frac1r)$ and $\frac12\abs{r - \frac1r}$ and foci $\pm1$, while the unit circle is flattened onto the segment $[-1, 1]$, traversed twice. The rays $\arg z = t$ go to hyperbolas with the same foci. Since $J(z_1) = J(z_2)$ only when $z_2 = z_1$ or $z_2 = 1/z_1$, and $J'(z) = \frac12(1 - z^{-2})$ vanishes only at $\pm1$, $J$ maps the exterior $\set{\abs z > 1}$ conformally onto $\C\setminus[-1,1]$: each $w\notin[-1,1]$ has the two preimages $z$ and $1/z$, exactly one of which lies outside the unit circle.
 
 ::: widget complexmap
 f: (z + 1/z)/2
 mode: polar
 x: -2.5, 2.5
 y: -2.5, 2.5
-caption: The Joukowski map $\frac12(z + 1/z)$ applied to a polar grid. Circles $\lvert z\rvert = r$ become confocal ellipses with foci $\pm1$, rays become confocal hyperbolas, and they cross at right angles. As $r$ decreases to $1$ the ellipses flatten onto the slit $[-1,1]$. A circle through $-1$ that encloses the point $1$, slightly off-centre, is mapped to the curved, pointed profile of a Joukowski aerofoil.
+caption: The Joukowski map $\frac12(z + 1/z)$ applied to a polar grid. Circles $\lvert z\rvert = r$ become confocal ellipses with foci $\pm1$, rays become confocal hyperbolas, and they cross at right angles. As $r$ decreases to $1$ the ellipses flatten onto the slit $[-1,1]$. (Not drawn here: a slightly off-centre circle through $-1$ that encloses the point $1$ is mapped to the curved, pointed profile of a Joukowski aerofoil.)
 :::
 
 ## Harmonic functions and boundary-value problems
@@ -320,7 +320,7 @@ Bernhard Riemann stated the mapping theorem in his dissertation of 1851, with a 
 
 ## Where this leads
 
-Conformal maps connect complex analysis with geometry and physics. The Laplace equation and its boundary-value problems are developed in [[pde/laplace-equation]], where the Poisson integral formula gives the solution in the disc explicitly. The Möbius group, acting on the disc and the half-plane, is the group of isometries of the hyperbolic plane, a geometry of constant negative curvature ([[differential-geometry/geodesics-gauss-bonnet]]). Riemann surfaces and the uniformisation theorem, the far-reaching generalisation of the Riemann mapping theorem, belong to graduate courses in complex analysis and geometry.
+Conformal maps connect complex analysis with geometry and physics. The Laplace equation and its boundary-value problems are developed in [[pde/laplace-equation]], where the Poisson integral formula gives the solution in the disc explicitly. The Möbius transformations of the disc (or of the half-plane) onto itself are the orientation-preserving isometries of the hyperbolic plane, a geometry of constant negative curvature ([[differential-geometry/geodesics-gauss-bonnet]]). Riemann surfaces and the uniformisation theorem, the far-reaching generalisation of the Riemann mapping theorem, belong to graduate courses in complex analysis and geometry.
 
 ::: summary
 - An analytic function is conformal (angle- and orientation-preserving) wherever $f'\neq0$; at a zero of $f'$ of order $k - 1$, angles are multiplied by $k$.

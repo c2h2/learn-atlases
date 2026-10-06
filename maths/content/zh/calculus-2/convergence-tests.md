@@ -42,6 +42,7 @@ a: 1
 b: 8
 n: 7
 method: right
+y: 0, 1.1
 caption: 区间$[1, 8]$上的右端点矩形的高为$\frac1{2^2}, \frac1{3^2}, \dots, \frac1{8^2}$，它们位于曲线$y = 1/x^2$的**下方**，所以$\sum_{n=2}^{8} \frac1{n^2} \le \int_1^8 \frac{dx}{x^2} < 1$。切换到左端点：这些矩形（高为$1, \frac14, \dots, \frac1{49}$）位于曲线的**上方**。递减函数的级数与积分总是像这样相互夹住对方。
 :::
 
@@ -290,7 +291,7 @@ caption: $1 - \frac12 + \frac13 - \cdots$的项与部分和。部分和在$\ln 2
 :::
 
 ::: warning 三个假设缺一不可
-项必须正负交替、绝对值递减并且趋于零。若$b_n \not\to 0$，则由发散判别法，级数发散。若$b_n \to 0$但不单调，级数可能发散：取$n$为奇数时$b_n = \frac1n$，$n$为偶数时$b_n = \frac{1}{n^2}$。那么$\sum(-1)^{n+1}b_n$是发散的$1 + \frac13 + \frac15 + \cdots$与收敛的$-\left(\frac14 + \frac1{16} + \cdots\right)$之和；由[[calculus-2/series#thm-linear]]，整个级数发散。
+项必须正负交替、绝对值递减并且趋于零。若$b_n \not\to 0$，则由发散判别法，级数发散。若$b_n \to 0$但不单调，级数可能发散：取$n$为奇数时$b_n = \frac1n$，$n$为偶数时$b_n = \frac{1}{n^2}$。那么$\sum(-1)^{n+1}b_n$是发散的$1 + \frac13 + \frac15 + \cdots$与收敛的$-\left(\frac14 + \frac1{16} + \frac1{36} + \cdots\right)$之和；由[[calculus-2/series#thm-linear]]，整个级数发散。
 :::
 
 ::: example 一个收敛很快的交错级数 {#ex-alt-factorial}
@@ -408,7 +409,7 @@ $\displaystyle\sum_{n=1}^\infty\frac{(-1)^n}{\sqrt n}$的收敛性如何？
 :::
 
 ::: exercise 一个比值 {level=1 check="3/4"}
-对级数$\displaystyle\sum_{n=1}^\infty\frac{n^2\,3^n}{4^n}$，求$\abs{a_{n+1}/a_n}$的极限$L$。该级数是否收敛？
+对级数$\displaystyle\sum_{n=1}^\infty\frac{n^2\,3^n}{4^n}$，求$\abs{a_{n+1}/a_n}$的极限$L$。该级数是否收敛？（填写$L$。）
 ::: solution
 $\dfrac{a_{n+1}}{a_n} = \dfrac{(n+1)^2}{n^2}\cdot\dfrac34 \to \dfrac34$。由于$L = \frac34 < 1$，由比值判别法，级数收敛。
 :::
@@ -497,6 +498,6 @@ $$
 
 于是部分和$s_{2^{K+1} - 1} = B_0 + \cdots + B_K$至多为$\sum_{k=0}^{K}2^ka_{2^k}$，至少为$\frac12\sum_{k=1}^{K+1}2^ka_{2^k}$。若凝聚级数收敛，则部分和$s_{2^{K+1}-1}$有界，从而所有部分和$s_n$（它们随$n$递增）都有界，所以$\sum a_n$收敛。若$\sum a_n$收敛，则第二个不等式把凝聚级数的部分和控制在$2\sum a_n + a_1$以内，所以凝聚级数收敛。
 
-对$p > 0$，取$a_n = n^{-p}$，凝聚级数为$\sum 2^k\,2^{-kp} = \sum\left(2^{1-p}\right)^k$，这是一个几何级数，它收敛当且仅当$2^{1-p} < 1$，即$p > 1$。
+对$p > 0$，取$a_n = n^{-p}$，凝聚级数为$\sum 2^k\,2^{-kp} = \sum\left(2^{1-p}\right)^k$，这是一个几何级数，它收敛当且仅当$2^{1-p} < 1$，即$p > 1$。（当$p \le 0$时，项不趋于$0$，所以级数发散。）
 :::
 :::

@@ -1,6 +1,6 @@
 Linear systems $A\mathbf x = \mathbf b$ are the workhorse of scientific computing. Discretising a differential equation, fitting a model to data, computing a spline ([[numerical-analysis/interpolation]]), taking a step of Newton's method in several variables, analysing an electrical network or a bridge — all end in a linear system, often with thousands or millions of unknowns. How should a computer solve them?
 
-Not by Cramer's rule. Evaluating determinants by cofactor expansion costs about $n!$ operations, so a system of $20$ equations would need roughly $20! \approx 2.4\times10^{18}$ operations — decades on a fast processor. **Gaussian elimination**, which you met in [[linear-algebra/linear-systems]], needs about $\frac23n^3$: for $n = 1000$ that is under a billion operations, a fraction of a second. This chapter recasts elimination as a **factorisation** $A = LU$, counts its cost, shows why it must be combined with **pivoting** to be reliable, and introduces the **condition number**, which tells us how many digits of the computed solution we can trust. For symmetric positive definite matrices, the **Cholesky factorisation** does the job at half the cost.
+Not by Cramer's rule. Evaluating determinants by cofactor expansion costs about $n!$ operations, and Cramer's rule needs $n + 1$ determinants, so a system of $20$ equations would need more than $20! \approx 2.4\times10^{18}$ operations — decades on a fast processor. **Gaussian elimination**, which you met in [[linear-algebra/linear-systems]], needs about $\frac23n^3$: for $n = 1000$ that is under a billion operations, a fraction of a second. This chapter recasts elimination as a **factorisation** $A = LU$, counts its cost, shows why it must be combined with **pivoting** to be reliable, and introduces the **condition number**, which tells us how many digits of the computed solution we can trust. For symmetric positive definite matrices, the **Cholesky factorisation** does the job at half the cost.
 
 Throughout, $A$ is a real $n\times n$ matrix and *flop* means one floating-point operation ($+$, $-$, $\times$ or $/$).
 
@@ -141,7 +141,7 @@ where $c$ is a modest constant and $u$ the unit roundoff.
 :::
 
 ::: proof {collapsed}
-*Proof sketch.* Using the standard model $\operatorname{fl}(x\circ y) = (x\circ y)(1 + \delta)$ ([[numerical-analysis/floating-point#ax-standard-model]]) at every step, one shows that the computed factors satisfy $\hat L\hat U = PA + E$ with $\abs{E} \le \gamma_n\abs{\hat L}\abs{\hat U}$ entrywise, and that the triangular solves are backward stable in the same componentwise sense, as for the inner products in the exercises of [[numerical-analysis/floating-point]]. Combining these gives $(A + \Delta A)\hat{\mathbf x} = \mathbf b$ with $\abs{\Delta A} \le \gamma_{3n}\abs{\hat L}\abs{\hat U}$ (up to the permutation). With partial pivoting $\abs{\hat\ell_{ij}} \le 1$, and the entries of $\hat U$ are bounded by $\rho_n\max\abs{a_{ij}}$, which yields the norm bound. See Higham, *Accuracy and Stability of Numerical Algorithms*, Chapter 9.
+*Proof sketch.* Using the standard model $\operatorname{fl}(x\circ y) = (x\circ y)(1 + \delta)$ ([[numerical-analysis/floating-point#ax-standard-model]]) at every step, one shows that the computed factors satisfy $\hat L\hat U = PA + E$ with $\abs{E} \le \gamma_n\abs{\hat L}\abs{\hat U}$ entrywise, where $\gamma_n = \frac{nu}{1 - nu}$ as in [[numerical-analysis/floating-point#lem-gamma]], and that the triangular solves are backward stable in the same componentwise sense, as for the inner products in the exercises of [[numerical-analysis/floating-point]]. Combining these gives $(A + \Delta A)\hat{\mathbf x} = \mathbf b$ with $\abs{\Delta A} \le \gamma_{3n}\abs{\hat L}\abs{\hat U}$ (up to the permutation). With partial pivoting $\abs{\hat\ell_{ij}} \le 1$, and the entries of $\hat U$ are bounded by $\rho_n\max\abs{a_{ij}}$, which yields the norm bound. See Higham, *Accuracy and Stability of Numerical Algorithms*, Chapter 9.
 :::
 
 With partial pivoting $\rho_n \le 2^{n-1}$, and this bound is attained: for the $10\times10$ matrix with ones on the diagonal and in the last column and $-1$ everywhere below the diagonal, the growth factor is exactly $2^9 = 512$. Such matrices are extremely rare in practice, and growth factors of real problems are almost always small. Partial pivoting is therefore the universal default, and the computed solution is the exact solution of a system whose matrix differs from $A$ in about the sixteenth digit. Whether that is good enough depends on the problem itself — which brings us to conditioning.
@@ -204,10 +204,10 @@ For $\mathbf b = (2, 2.0001)\T$ the solution is $\mathbf x = (1, 1)\T$; for $\ma
 :::
 
 ::: widget transform2d
-matrix: 1, 1; 1, 1.05
+matrix: 1, 1; 1, 1.1
 editable: true
 eigen: false
-caption: The nearly singular matrix $\begin{pmatrix}1 & 1\\ 1 & 1.05\end{pmatrix}$ squashes the unit square into a thin parallelogram (area $= \det A = 0.05$): it stretches one direction by about $2$ and shrinks another by a factor of about $40$, so $\kappa_2 \approx 80$. Solving $A\mathbf x = \mathbf b$ means undoing this, which stretches small errors in the squashed direction enormously. Edit the entries to make the columns more or less parallel and watch the area.
+caption: The nearly singular matrix $\begin{pmatrix}1 & 1\\ 1 & 1.1\end{pmatrix}$ squashes the unit square into a thin parallelogram (area $= \det A = 0.1$): it stretches one direction by about $2$ and shrinks another by a factor of about $20$, so $\kappa_2 \approx 42$. Solving $A\mathbf x = \mathbf b$ means undoing this, which stretches small errors in the squashed direction enormously. Edit the entries to make the columns more or less parallel and watch the area.
 :::
 
 ::: example The Hilbert matrix {#ex-hilbert}
@@ -217,11 +217,11 @@ Using `numpy.linalg.solve` (LU with partial pivoting):
 
 | $n$ | $4$ | $6$ | $8$ | $10$ | $12$ | $14$ |
 |---|---|---|---|---|---|---|
-| $\kappa_2(H_n)$ | $1.6\times10^4$ | $1.5\times10^7$ | $1.5\times10^{10}$ | $1.6\times10^{13}$ | $1.7\times10^{16}$ | $6\times10^{17}$ |
+| $\kappa_2(H_n)$ | $1.6\times10^4$ | $1.5\times10^7$ | $1.5\times10^{10}$ | $1.6\times10^{13}$ | $1.7\times10^{16}$ | $1.9\times10^{19}$ |
 | relative error $\norm{\hat{\mathbf x} - \mathbf 1}_\infty$ | $6.6\times10^{-14}$ | $2.4\times10^{-10}$ | $1.2\times10^{-7}$ | $1.7\times10^{-4}$ | $0.70$ | $8.9$ |
 | relative residual | $0$ | $1.8\times10^{-16}$ | $8.2\times10^{-17}$ | $1.5\times10^{-16}$ | $1.4\times10^{-16}$ | $1.4\times10^{-16}$ |
 
-The errors track $\kappa_2(H_n)\,u$ remarkably well, and for $n \ge 12$ no digit is correct. Yet the residual $\norm{\mathbf b - H_n\hat{\mathbf x}}/\norm{\mathbf b}$ is always at rounding level: the algorithm is backward stable and has done its job perfectly. The problem itself is hopeless in double precision.
+The errors grow with $\kappa_2(H_n)$ and stay below $\kappa_2(H_n)\,u$, as the rule of thumb predicts, and for $n \ge 12$ no digit is correct. (For $n = 14$, `numpy.linalg.cond` reports only about $6\times10^{17}$: in double precision even the smallest singular value cannot be computed accurately.) Yet the residual $\norm{\mathbf b - H_n\hat{\mathbf x}}/\norm{\mathbf b}$ is always at rounding level: the algorithm is backward stable and has done its job perfectly. The problem itself is hopeless in double precision.
 :::
 :::
 
@@ -231,7 +231,7 @@ The residual $\mathbf r = \mathbf b - A\hat{\mathbf x}$ is computable; the error
 
 ## The Cholesky factorisation
 
-Many matrices in applications are **symmetric positive definite** (SPD): $A = A\T$ and $\mathbf x\T A\mathbf x > 0$ for all $\mathbf x \ne \mathbf 0$. Covariance matrices, the normal equations $A\T A$ of least squares, stiffness matrices in structural mechanics and discretised diffusion operators are all SPD. For them a symmetric version of LU exists, needs no pivoting and costs half as much.
+Many matrices in applications are **symmetric positive definite** (SPD): $A = A\T$ and $\mathbf x\T A\mathbf x > 0$ for all $\mathbf x \ne \mathbf 0$. Covariance matrices, the normal equations $A\T A$ of least squares, stiffness matrices in structural mechanics and discretised diffusion operators are SPD, except in degenerate cases (such as $A$ with linearly dependent columns). For them a symmetric version of LU exists, needs no pivoting and costs half as much.
 
 ::: theorem Cholesky factorisation {#thm-cholesky}
 A real symmetric matrix $A$ is positive definite if and only if it can be written as $A = LL\T$ with $L$ lower triangular with positive diagonal entries. This factorisation is unique.
@@ -294,7 +294,7 @@ To simulate a random vector with mean $\mathbf 0$ and covariance matrix $\Sigma$
 :::
 
 ::: history
-Elimination appears in the Chinese classic *The Nine Chapters on the Mathematical Art* (compiled around the first centuries BC and AD), whose eighth chapter solves systems of several linear equations by operations on columns of counting rods. Carl Friedrich Gauss used elimination systematically in his least-squares computations of planetary orbits (1809–1810). André-Louis Cholesky, a French military geodesist, devised his factorisation around 1910; it was published after his death in the First World War by Commandant Benoît in 1924. With the arrival of computers, John von Neumann and Herman Goldstine (1947) and Alan Turing (1948) analysed rounding errors in elimination; Turing introduced both the LU formulation and the term "condition number". James Wilkinson's backward error analysis (1961) explained why elimination with partial pivoting works so well, and the LAPACK library (1992) made stable implementations universally available.
+Elimination appears in the Chinese classic *The Nine Chapters on the Mathematical Art* (compiled around the first centuries BC and AD), whose eighth chapter solves systems of several linear equations by operations on columns of counting rods. Carl Friedrich Gauss used elimination systematically in his least-squares computations of planetary orbits (1809–1810). André-Louis Cholesky, a French military geodesist, devised his factorisation around 1910; it was published after his death in the First World War by Commandant Benoît in 1924. With the arrival of computers, John von Neumann and Herman Goldstine (1947) and Alan Turing (1948) analysed rounding errors in elimination; Turing coined the term "condition number" and the abbreviation "LU", although the factorisation itself had already been introduced by Tadeusz Banachiewicz in 1938. James Wilkinson's backward error analysis (1961) explained why elimination with partial pivoting works so well, and the LAPACK library (1992) made stable implementations universally available.
 :::
 
 ## Where this leads
@@ -320,7 +320,7 @@ The multiplier is $\ell_{21} = 2$, and $u_{22} = 7 - 2\cdot3 = 1$. So $L = \begi
 :::
 
 ::: exercise An infinity norm {level=1 check="7"}
-Compute $\norm A_\infty$ and $\norm A_1$ for $A = \begin{pmatrix}1 & -2\\ 3 & 4\end{pmatrix}$.
+Compute $\norm A_\infty$ and $\norm A_1$ for $A = \begin{pmatrix}1 & -2\\ 3 & 4\end{pmatrix}$. (Enter $\norm A_\infty$.)
 ::: solution
 Row sums of absolute values: $1 + 2 = 3$ and $3 + 4 = 7$, so $\norm A_\infty = 7$. Column sums: $1 + 3 = 4$ and $2 + 4 = 6$, so $\norm A_1 = 6$.
 :::
@@ -364,7 +364,7 @@ All four factors are invertible ($\det L_i = 1$ and $\det U_i \ne 0$ since $\det
 ::: exercise The infinity norm is the maximum row sum {level=3 #exr-inf-norm}
 Prove that the matrix norm induced by $\norm\cdot_\infty$ is $\norm A_\infty = \max_i\sum_j\abs{a_{ij}}$.
 ::: solution
-Let $R = \max_i\sum_j\abs{a_{ij}}$. For any $\mathbf x$, $\abs{(A\mathbf x)_i} = \abs{\sum_ja_{ij}x_j} \le \sum_j\abs{a_{ij}}\norm{\mathbf x}_\infty \le R\norm{\mathbf x}_\infty$, so $\norm A_\infty \le R$. For the reverse inequality, choose a row $k$ attaining the maximum and let $x_j = \sgn(a_{kj})$ (with $x_j = 1$ if $a_{kj} = 0$). Then $\norm{\mathbf x}_\infty = 1$ (assuming $A \ne 0$) and $(A\mathbf x)_k = \sum_j\abs{a_{kj}} = R$, so $\norm{A\mathbf x}_\infty \ge R$. Hence $\norm A_\infty = R$.
+Let $R = \max_i\sum_j\abs{a_{ij}}$. For any $\mathbf x$, $\abs{(A\mathbf x)_i} = \abs{\sum_ja_{ij}x_j} \le \sum_j\abs{a_{ij}}\norm{\mathbf x}_\infty \le R\norm{\mathbf x}_\infty$, so $\norm A_\infty \le R$. For the reverse inequality, choose a row $k$ attaining the maximum and let $x_j = \sgn(a_{kj})$ (with $x_j = 1$ if $a_{kj} = 0$). Then $\norm{\mathbf x}_\infty = 1$ and $(A\mathbf x)_k = \sum_j\abs{a_{kj}} = R$, so $\norm{A\mathbf x}_\infty \ge R$. Hence $\norm A_\infty = R$.
 :::
 :::
 
@@ -381,6 +381,6 @@ For $\mathbf y \in \R^k$, $\mathbf y \ne \mathbf 0$, extend by zeros to $\mathbf
 ::: exercise Error bound from the residual {level=3}
 A computed solution $\hat{\mathbf x}$ of $A\mathbf x = \mathbf b$ has residual $\mathbf r = \mathbf b - A\hat{\mathbf x}$. Prove that $\dfrac{1}{\kappa(A)}\dfrac{\norm{\mathbf r}}{\norm{\mathbf b}} \le \dfrac{\norm{\mathbf x - \hat{\mathbf x}}}{\norm{\mathbf x}} \le \kappa(A)\dfrac{\norm{\mathbf r}}{\norm{\mathbf b}}$, and explain what the two inequalities say in practice.
 ::: solution
-We have $\mathbf e = \mathbf x - \hat{\mathbf x} = A^{-1}\mathbf r$. Upper bound: $\norm{\mathbf e} \le \norm{A^{-1}}\norm{\mathbf r}$ and $\norm{\mathbf b} \le \norm A\norm{\mathbf x}$; multiply. Lower bound: $\norm{\mathbf r} = \norm{A\mathbf e} \le \norm A\norm{\mathbf e}$ and $\norm{\mathbf x} = \norm{A^{-1}\mathbf b} \le \norm{A^{-1}}\norm{\mathbf b}$, so $\frac{\norm{\mathbf r}}{\norm{\mathbf b}} \le \norm A\norm{A^{-1}}\frac{\norm{\mathbf e}}{\norm{\mathbf x}}$. In practice: for a well-conditioned matrix ($\kappa \approx 1$), the relative residual is a reliable estimate of the relative error; for an ill-conditioned one, the true error can be anywhere in a range of width $\kappa^2$ around the residual, and a small residual proves little.
+We have $\mathbf e = \mathbf x - \hat{\mathbf x} = A^{-1}\mathbf r$. Upper bound: $\norm{\mathbf e} \le \norm{A^{-1}}\norm{\mathbf r}$ and $\norm{\mathbf b} \le \norm A\norm{\mathbf x}$; multiply. Lower bound: $\norm{\mathbf r} = \norm{A\mathbf e} \le \norm A\norm{\mathbf e}$ and $\norm{\mathbf x} = \norm{A^{-1}\mathbf b} \le \norm{A^{-1}}\norm{\mathbf b}$, so $\frac{\norm{\mathbf r}}{\norm{\mathbf b}} \le \norm A\norm{A^{-1}}\frac{\norm{\mathbf e}}{\norm{\mathbf x}}$. In practice: for a well-conditioned matrix ($\kappa \approx 1$), the relative residual is a reliable estimate of the relative error; for an ill-conditioned one, the relative error can be anywhere between $1/\kappa$ and $\kappa$ times the relative residual, and a small residual proves little.
 :::
 :::

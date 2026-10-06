@@ -130,7 +130,7 @@ By [[#eq-derivative]], $sF(s) - f(0) = \mathcal{L}\{f'\}(s)$, and $\mathcal{L}\{
 The initial value theorem lets you read off $f(0)$ from $F$ without inverting — a useful check on a computed transform. There is also a *final* value theorem, $\lim_{t\to\infty}f(t) = \lim_{s\to0^+}sF(s)$, but it holds only when $f(t)$ actually has a limit (for example when all poles of $sF(s)$ have negative real part); applied to $f = \sin t$ it would give the false conclusion $\lim\sin t = 0$.
 
 ::: intuition Why the transform turns calculus into algebra
-The exponentials $e^{st}$ are the functions that differentiation merely rescales: $\frac{d}{dt}e^{st} = s\,e^{st}$. The Laplace transform measures "how much of each $e^{-st}$" a function contains, so on the transform side, differentiation becomes multiplication by $s$ — up to a boundary term $f(0)$ coming from the fact that we only look at $t \ge 0$. This is the same idea as trying $y = e^{rt}$ in [[ode/second-order-linear]], applied to all exponentials at once.
+The exponentials $e^{st}$ are the functions that differentiation merely rescales: $\frac{d}{dt}e^{st} = s\,e^{st}$. The Laplace transform measures "how much of each $e^{st}$" a function contains (inverting the transform rebuilds $f$ from these exponentials, with weights $F(s)$), so on the transform side, differentiation becomes multiplication by $s$ — up to a boundary term $f(0)$ coming from the fact that we only look at $t \ge 0$. This is the same idea as trying $y = e^{rt}$ in [[ode/second-order-linear]], applied to all exponentials at once.
 :::
 
 Two more rules complete the basic toolkit.
@@ -156,7 +156,7 @@ $$
 :::
 
 ::: proof
-Formally, differentiate [[#eq-laplace]] under the integral sign: $\frac{d}{ds}e^{-st}f(t) = -te^{-st}f(t)$. To justify this, fix $s_0 > a$ and $a < a' < s_0$. Since $t\le Ce^{(a' - a)t}$ for a suitable constant $C$, the function $t\,f(t)$ has exponential order $a'$, so for $s \ge s_0$ the integrand $-te^{-st}f(t)$ is dominated by the integrable function $CK e^{-(s_0 - a')t}$ (for $t\ge T$). The integral of the $s$-derivative therefore converges uniformly for $s\ge s_0$, which is the standard condition for differentiating an improper integral under the integral sign ([[real-analysis/uniform-convergence]]).
+Formally, differentiate [[#eq-laplace]] under the integral sign: $\frac{d}{ds}e^{-st}f(t) = -te^{-st}f(t)$. To justify this, fix $s_0 > a$ and $a < a' < s_0$. Since $t\le Ce^{(a' - a)t}$ for a suitable constant $C$, the function $t\,f(t)$ has exponential order $a'$, so for $s \ge s_0$ the integrand $-te^{-st}f(t)$ is dominated by the integrable function $CK e^{-(s_0 - a')t}$ (for $t\ge T$). The integral of the $s$-derivative therefore converges uniformly for $s\ge s_0$: the truncated transforms $F_n(s) = \int_0^ne^{-st}f(t)\,dt$ converge to $F$, and their derivatives $F_n'(s) = -\int_0^nte^{-st}f(t)\,dt$ converge uniformly on $[s_0, s_0 + 1]$. By the theorem on differentiating limits ([[real-analysis/uniform-convergence#thm-uniform-derivative]]), $F$ is differentiable there with $F'(s) = -\int_0^\infty te^{-st}f(t)\,dt$; as $s_0 > a$ was arbitrary, this holds for every $s > a$.
 :::
 
 For example, $\mathcal{L}\{t\sin bt\} = -\frac{d}{ds}\frac{b}{s^2+b^2} = \frac{2bs}{(s^2+b^2)^2}$ — the transform behind resonance.
@@ -242,7 +242,7 @@ $$
 y(t) = 1 - e^{-t}\cos 2t - \tfrac12e^{-t}\sin 2t .
 $$
 
-The solution rises from rest towards the steady value $1$, overshooting slightly with decaying oscillations — the step response of an underdamped system.
+The solution rises from rest towards the steady value $1$, overshoots it (the first peak, at $t = \pi/2$, is $1 + e^{-\pi/2}\approx 1.21$) and settles down with decaying oscillations — the step response of an underdamped system.
 :::
 :::
 

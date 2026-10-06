@@ -64,7 +64,7 @@ matrix: 4,1; 2,3
 b: 1,2
 method: jacobi
 start: 0,0
-caption: Jacobi iterates for $4x + y = 1$, $2x + 3y = 2$ (solution $(0.1, 0.6)$), drawn on the two lines. Each Jacobi step moves both coordinates at once, using old values, producing a staircase that zigzags towards the intersection; the residual history on the right falls by a constant factor ($\rho = 1/\sqrt6 \approx 0.41$) per step. Switch to Gauss–Seidel: the path now alternates between the two lines and the residual falls by $\rho^2 = \frac16$ per step.
+caption: Jacobi iterates for $4x + y = 1$, $2x + 3y = 2$ (solution $(0.1, 0.6)$), drawn on the two lines. Each Jacobi step moves both coordinates at once, using old values: the dashed guides run horizontally to the first line and vertically to the second, and the new point combines the two moves, so the path zigzags in towards the intersection. The residual history on the right falls on average by the factor $\rho = 1/\sqrt6 \approx 0.41$ per step. Switch to Gauss–Seidel: the path now alternates between the two lines and the residual falls by $\rho^2 = \frac16$ per step.
 :::
 
 ## Convergence of stationary iterations
@@ -166,7 +166,7 @@ Gauss–Seidel is exactly twice as fast as Jacobi, and well-tuned SOR is faster 
 :::
 :::
 
-Modern solvers — the conjugate gradient method with preconditioning, and multigrid methods, which smooth the error with a few Gauss–Seidel sweeps and correct the slowly varying part on coarser grids — overcome this and need a number of iterations nearly independent of $n$.
+Modern solvers do far better. The conjugate gradient method needs a number of iterations growing only like $\sqrt{\kappa(A)}$ (like $n$ here), which a good preconditioner reduces further, and multigrid methods, which smooth the error with a few Gauss–Seidel sweeps and correct the slowly varying part on coarser grids, need a number of iterations nearly independent of $n$.
 
 ::: widget iterative
 matrix: 4,1; 2,3
@@ -242,7 +242,7 @@ Google's original ranking of web pages modelled a random surfer who follows link
 
 ## The QR algorithm
 
-The power method finds one eigenvalue. To find them all, apply it to many vectors at once and keep them orthonormal — and then reorganise the computation in a strikingly simple form. Recall that every square matrix has a **QR factorisation** $A = QR$ with $Q$ orthogonal ($Q\T Q = I$) and $R$ upper triangular, computed stably by Householder reflections (Gram–Schmidt orthogonalisation, [[linear-algebra/inner-products]], gives the same factors in exact arithmetic but loses orthogonality in floating point unless it is run in its modified form).
+The power method finds one eigenvalue. To find them all, apply it to many vectors at once and keep them orthonormal — and then reorganise the computation in a strikingly simple form. Recall that every square matrix has a **QR factorisation** $A = QR$ with $Q$ orthogonal ($Q\T Q = I$) and $R$ upper triangular, computed stably by Householder reflections (Gram–Schmidt orthogonalisation, [[linear-algebra/inner-products]], gives the same factors up to signs in exact arithmetic, but in floating point its computed $Q$ loses orthogonality when $A$ is ill-conditioned — less severely in the modified form, but still in proportion to $\kappa(A)$).
 
 ::: algorithm The QR algorithm {#alg-qr}
 Set $A_0 = A$. For $k = 0, 1, 2, \dots$: factorise $A_k = Q_kR_k$ and set $A_{k+1} = R_kQ_k$.
@@ -253,7 +253,7 @@ Reversing the order of the factors looks like an arbitrary trick, but it preserv
 ::: theorem Properties of the QR iteration {#thm-qr}
 1. Each $A_{k+1} = Q_k\T A_kQ_k$ is orthogonally similar to $A_k$, so all $A_k$ have the same eigenvalues as $A$; if $A$ is symmetric, so is every $A_k$.
 2. With $\mathcal Q_k = Q_0Q_1\cdots Q_{k-1}$ and $\mathcal R_k = R_{k-1}\cdots R_1R_0$, we have $A^k = \mathcal Q_k\mathcal R_k$ and $A_k = \mathcal Q_k\T A\,\mathcal Q_k$.
-3. If $A$ is real with eigenvalues of distinct absolute values $\abs{\lambda_1} > \abs{\lambda_2} > \cdots > \abs{\lambda_n} > 0$ (and a mild condition on the eigenvectors holds), then $A_k$ converges to an upper triangular matrix with diagonal $\lambda_1, \dots, \lambda_n$, and the entry $(A_k)_{i+1,i}$ tends to $0$ like $\abs{\lambda_{i+1}/\lambda_i}^k$.
+3. If $A$ is real with eigenvalues of distinct absolute values $\abs{\lambda_1} > \abs{\lambda_2} > \cdots > \abs{\lambda_n} > 0$ (and a mild condition on the eigenvectors holds), then $A_k$ tends to upper triangular form: its diagonal converges to $\lambda_1, \dots, \lambda_n$, and its entries below the diagonal tend to $0$, the entry $(A_k)_{i+1,i}$ like $\abs{\lambda_{i+1}/\lambda_i}^k$. (The entries above the diagonal need not converge; they may change sign at every step.)
 :::
 
 ::: proof
@@ -265,7 +265,7 @@ $$
 A^{k+1} = A\,\mathcal Q_k\mathcal R_k = \mathcal Q_kA_k\mathcal R_k = \mathcal Q_kQ_kR_k\mathcal R_k = \mathcal Q_{k+1}\mathcal R_{k+1}.
 $$
 
-3. *Proof sketch.* By 2, $\mathcal Q_k\mathcal R_k$ is a QR factorisation of $A^k$; in particular the first $j$ columns of $\mathcal Q_k$ are an orthonormal basis of the span of the first $j$ columns of $A^k$, which is $A^k$ applied to the span of $\mathbf e_1, \dots, \mathbf e_j$. By the argument of [[#thm-power]], applied to subspaces ("simultaneous iteration"), this span converges to the span of the eigenvectors for $\lambda_1, \dots, \lambda_j$ at the rate $\abs{\lambda_{j+1}/\lambda_j}^k$. Then $A_k = \mathcal Q_k\T A\mathcal Q_k$ becomes block upper triangular for every $j$, i.e. upper triangular. See Trefethen and Bau, *Numerical Linear Algebra*, Lectures 28–29, for the details.
+3. *Proof sketch.* By 2, $\mathcal Q_k\mathcal R_k$ is a QR factorisation of $A^k$; in particular the first $j$ columns of $\mathcal Q_k$ are an orthonormal basis of the span of the first $j$ columns of $A^k$, which is $A^k$ applied to the span of $\mathbf e_1, \dots, \mathbf e_j$. By the argument of [[#thm-power]], applied to subspaces ("simultaneous iteration"), this span converges to the span of the eigenvectors for $\lambda_1, \dots, \lambda_j$ at the rate $\abs{\lambda_{j+1}/\lambda_j}^k$. Then $A_k = \mathcal Q_k\T A\mathcal Q_k$ tends to block upper triangular form for every $j$, i.e. to upper triangular form. See Trefethen and Bau, *Numerical Linear Algebra*, Lectures 28–29, for the details.
 :::
 
 ::: example The QR algorithm on a symmetric matrix {#ex-qr}
@@ -354,7 +354,7 @@ We need $0.9^k \le 10^{-6}$, i.e. $k \ge \frac{6}{-\log_{10}0.9} = \frac{6}{0.04
 :::
 
 ::: exercise Shifted inverse iteration {level=2 check="1/3"}
-A symmetric matrix has eigenvalues $1$, $2$ and $4$. What is the asymptotic convergence factor of inverse iteration with shift $\sigma = 2.5$? Which shift in $[1, 4]$ would make inverse iteration converge to the eigenvalue $4$ with factor $\frac{1}{10}$?
+A symmetric matrix has eigenvalues $1$, $2$ and $4$. What is the asymptotic convergence factor of inverse iteration with shift $\sigma = 2.5$? Which shift in $[1, 4]$ would make inverse iteration converge to the eigenvalue $4$ with factor $\frac{1}{10}$? (Enter the convergence factor for $\sigma = 2.5$.)
 ::: solution
 As in the quick check, the factor is $\frac{\abs{2 - 2.5}}{\abs{1 - 2.5}} = \frac13$. For convergence to $4$ with factor $\frac1{10}$ we need $\frac{\abs{4 - \sigma}}{\min(\abs{2 - \sigma}, \abs{1 - \sigma})} = \frac{1}{10}$. For $\sigma$ between $2$ and $4$ the nearest other eigenvalue is $2$, so $\frac{4 - \sigma}{\sigma - 2} = \frac{1}{10}$, giving $\sigma = \frac{42}{11} \approx 3.818$.
 :::

@@ -163,7 +163,7 @@ Cantor's own enumeration of the grid walks along the diagonals $m+n = 2, 3, 4,\d
 ::: widget cantor
 mode: pairing
 size: 8
-caption: Cantor's walk through the grid $\N\times\N$, diagonal by diagonal. Every pair is reached after finitely many steps and so receives a number in the list. Compare a row-by-row listing $(1,1), (1,2), (1,3),\dots$: it never leaves the first row, so it fails to list the pairs.
+caption: Cantor's walk through the grid of pairs, diagonal by diagonal. The figure counts from $0$, not $1$: its pairs $(m,n)$ have $m,n\ge0$ and are numbered $0,1,2,\dots$. By default it zig-zags, running along alternate diagonals in opposite directions; switch to *diagonals* to run along every diagonal in the same direction. Either way every pair is reached after finitely many steps and so receives a number in the list. Compare listing the top row first, $(0,0), (1,0), (2,0),\dots$: that list never reaches the second row, so it fails to list the pairs.
 :::
 
 ::: corollary Products, rationals and unions {#cor-countable}
@@ -203,7 +203,7 @@ Combined with the uncountability of $\R$ (proved next), this shows that transcen
 
 ### The diagonal argument
 
-We use two facts about decimals, proved from the completeness of $\R$ in [[real-analysis/series]]. Every $x\in[0,1)$ has a decimal expansion $x = 0.d_1d_2d_3\ldots = \sum_{k\ge1}d_k10^{-k}$ with digits $d_k\in\set{0,\dots,9}$. Some numbers have two expansions, such as $0.5000\ldots = 0.4999\ldots$, but if we forbid expansions that end in an infinite string of $9$s, then every $x\in[0,1)$ has **exactly one** expansion.
+We use two facts about decimals, both consequences of the completeness of $\R$ (infinite decimals are discussed in [[calculus-2/series]] and [[real-analysis/real-numbers]]). Every $x\in[0,1)$ has a decimal expansion $x = 0.d_1d_2d_3\ldots = \sum_{k\ge1}d_k10^{-k}$ with digits $d_k\in\set{0,\dots,9}$. Some numbers have two expansions, such as $0.5000\ldots = 0.4999\ldots$, but if we forbid expansions that end in an infinite string of $9$s, then every $x\in[0,1)$ has **exactly one** expansion. Uniqueness needs only an estimate: if two expansions of the same number first differ in the $k$th digit, say $d_k<d_k'$, then the first $k$ digits contribute at least $10^{-k}$ more to the second sum, while the later digits contribute at most $\sum_{j>k}9\cdot10^{-j} = 10^{-k}$ to the first sum and at least $0$ to the second; so the sums can agree only if every later digit of the first expansion is $9$.
 
 ::: theorem The real numbers are uncountable {#thm-reals-uncountable}
 The interval $(0,1)$ is uncountable. Consequently $\R$ is uncountable.
@@ -237,7 +237,7 @@ The choice of the digits $4$ and $5$ is deliberate. Had we changed digits to $0$
 ::: widget cantor
 mode: diagonal
 size: 8
-caption: Cantor's diagonal argument. Whatever list of expansions is shown, the new number is built by changing the $n$th digit of the $n$th entry, so it differs from every entry in at least one place. Whatever list you start from, the construction defeats it: no list of real numbers is ever complete.
+caption: Cantor's diagonal argument for infinite sequences of $0$s and $1$s (compare the exercise on binary sequences). The new sequence $d$ is built by changing the $n$th digit of the $n$th sequence, so it differs from every sequence in the list in at least one place. Click digits to change the list, draw a new list, or add $d$ to it: the new $d$ always escapes, so no list of $0$–$1$ sequences is ever complete. The proof above runs the same construction on decimal digits, using only $4$ and $5$ to avoid double expansions.
 :::
 
 Since $\R = \Q\cup(\R\setminus\Q)$ and a union of two countable sets is countable, the irrational numbers are uncountable: in the sense of cardinality, almost every real number is irrational. Likewise, by [[#ex-algebraic]], almost every real number is transcendental.

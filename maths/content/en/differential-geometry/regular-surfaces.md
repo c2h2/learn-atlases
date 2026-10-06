@@ -100,7 +100,7 @@ u: 0, 2pi
 v: 0, 2pi
 sliders: a=2:1:3:0.1; b=0.8:0.2:3:0.05
 color: plain
-caption: The torus patch of [[#ex-level-sets]]. The grid curves are the meridian circles ($v$ constant, around the tube) and the parallels ($u$ constant, around the axis); they meet at right angles everywhere, which is why $F = 0$ for this patch. Push $b$ up to $a$: when $a = b$ the tube touches the axis and the surface stops being regular at the origin.
+caption: The torus patch of [[#ex-level-sets]]. The grid curves are the meridian circles ($v$ constant, around the tube) and the parallels ($u$ constant, around the axis); they meet at right angles everywhere, because $\mathbf{x}_u\cdot\mathbf{x}_v = 0$ for this patch. Push $b$ up to $a$: when $a = b$ the tube touches the axis and the surface stops being regular at the origin.
 :::
 
 Not every reasonable-looking set is a regular surface.
@@ -345,7 +345,7 @@ The longitude $\varphi = \varphi_0 + \psi\tan\alpha$ grows without bound, so the
 :::
 
 ::: application Mercator's map
-Gerardus Mercator's world map of 1569 draws the point with longitude $\varphi$ and Mercator coordinate $\psi$ at the position $(\varphi, \psi)$ of the plane — it is the inverse of the conformal patch above. Because the patch is conformal, compass bearings are preserved, and a course of constant bearing (a loxodrome) appears as a straight line, which is exactly what a navigator needs. The price is the scale factor $1/\lambda = \cosh\psi = \sec\theta$: Greenland appears about as large as Africa, although Africa is some fourteen times larger. Stereographic projection is also conformal and is used for polar charts and in complex analysis, where it identifies the sphere with the extended complex plane ([[complex-analysis/conformal-maps]]).
+Gerardus Mercator's world map of 1569 draws the point with longitude $\varphi$ and Mercator coordinate $\psi$ at the position $(\varphi, \psi)$ of the plane — it is the inverse of the conformal patch above. Because the patch is conformal, compass bearings are preserved, and a course of constant bearing (a loxodrome) appears as a straight line, which is exactly what a navigator needs. The price is the scale factor $1/\lambda = \cosh\psi = \sec\theta$: Greenland appears about as large as Africa, although Africa is some fourteen times larger. Stereographic projection is also conformal and is used for polar charts and in complex analysis, where it identifies the sphere with the extended complex plane ([[complex-analysis/complex-numbers]]).
 :::
 
 ::: history
@@ -354,7 +354,7 @@ Carl Friedrich Gauss introduced the first fundamental form in his *Disquisitione
 
 ## Where this leads
 
-The first fundamental form records how to measure *inside* a surface. The next chapter, [[differential-geometry/surface-curvature]], studies how the surface bends in space, through the rate at which its unit normal turns; this leads to the second fundamental form and the Gaussian curvature. Gauss's *Theorema Egregium* ([[differential-geometry/theorema-egregium]]) then shows that, astonishingly, the Gaussian curvature can be computed from $E, F, G$ alone — and this is why the cylinder, whose first fundamental form is that of the plane, has zero curvature, while no map of the sphere can preserve distances. Geodesics, the shortest paths on a surface, are defined using only the first fundamental form ([[differential-geometry/geodesics-gauss-bonnet]]). In Riemannian geometry the first fundamental form, freed from any ambient $\R^3$, becomes the *metric* of a manifold, the basic object of general relativity.
+The first fundamental form records how to measure *inside* a surface. The next chapter, [[differential-geometry/surface-curvature]], studies how the surface bends in space, through the rate at which its unit normal turns; this leads to the second fundamental form and the Gaussian curvature. Gauss's *Theorema Egregium* ([[differential-geometry/theorema-egregium]]) then shows that, astonishingly, the Gaussian curvature can be computed from $E, F, G$ alone — and this is why the cylinder, whose first fundamental form is that of the plane, has zero curvature, while no map of the sphere can preserve distances. Geodesics, the locally shortest paths on a surface, are defined using only the first fundamental form ([[differential-geometry/geodesics-gauss-bonnet]]). In Riemannian geometry the first fundamental form, freed from any ambient $\R^3$, becomes the *metric* of a manifold, the basic object of general relativity.
 
 ::: summary
 - A surface patch is a smooth map $\mathbf{x}\colon U\to\R^3$ that is a homeomorphism onto its image and has $\mathbf{x}_u\times\mathbf{x}_v\ne\mathbf{0}$ ([[#def-surface-patch]]); a regular surface is a set covered by patches whose images are open pieces of it ([[#def-regular-surface]]).
@@ -369,7 +369,7 @@ The first fundamental form records how to measure *inside* a surface. The next c
 ## Exercises
 
 ::: exercise A paraboloid {level=1 check="9"}
-For the patch $\mathbf{x}(u,v) = (u, v, u^2 + v^2)$ of the paraboloid, compute $E$, $F$, $G$ and the value of $EG - F^2$ at $(u,v) = (1,1)$.
+For the patch $\mathbf{x}(u,v) = (u, v, u^2 + v^2)$ of the paraboloid, compute $E$, $F$, $G$ and the value of $EG - F^2$ at $(u,v) = (1,1)$. (Enter $EG - F^2$.)
 ::: solution
 $\mathbf{x}_u = (1, 0, 2u)$ and $\mathbf{x}_v = (0, 1, 2v)$, so $E = 1 + 4u^2$, $F = 4uv$, $G = 1 + 4v^2$. At $(1,1)$: $E = G = 5$, $F = 4$, and $EG - F^2 = 25 - 16 = 9$. (In general $EG - F^2 = 1 + 4u^2 + 4v^2 = \norm{\mathbf{x}_u\times\mathbf{x}_v}^2$.)
 :::

@@ -10,7 +10,7 @@
   "overview": [
     "A **partial differential equation** (PDE) relates an unknown function of several variables to its partial derivatives. Three equations dominate the classical theory, and this course is built around them: the **heat equation** $u_t = k\\,u_{xx}$, which describes diffusion and smoothing; the **wave equation** $u_{tt} = c^2 u_{xx}$, which describes vibration and propagation at finite speed; and **Laplace's equation** $\\Delta u = 0$, which describes equilibrium states such as steady temperatures, electrostatic potentials and ideal fluid flow. Each one is the prototype of a whole class of equations (parabolic, hyperbolic and elliptic), and each behaves in a strikingly different way.",
     "The main tool is **Fourier analysis**: the idea, due to Joseph Fourier, that a function can be decomposed into simple oscillations. We begin with Fourier series, prove when and how they converge, and then use **separation of variables** to turn each PDE on an interval, rectangle or disc into ordinary differential equations whose solutions are superposed as a series. Sturm–Liouville theory explains why the method works for far more general equations, and the Fourier transform extends it from bounded intervals to the whole real line.",
-    "Alongside the formulas we prove the qualitative theorems that make the subject coherent: uniqueness by energy methods, the maximum principle for the heat and Laplace equations, conservation of energy and finite speed of propagation for waves, the mean value property of harmonic functions, and the orthogonality and reality of Sturm–Liouville eigenvalues. These tell you what a solution must look like before you compute it, and they are the best way to check that a computed series is right.",
+    "Alongside the formulas we prove the qualitative theorems that make the subject coherent: uniqueness by energy methods, the maximum principle for the heat and Laplace equations, conservation of energy and finite speed of propagation for waves, the mean value property of harmonic functions, and the reality of Sturm–Liouville eigenvalues and the orthogonality of their eigenfunctions. These tell you what a solution must look like before you compute it, and they are the best way to check that a computed series is right.",
     "The course assumes [[ode]] (especially second-order linear equations) and [[multivariable]] (partial derivatives, the divergence theorem). What makes the subject demanding is the interplay of three levels: physical modelling, explicit computation with series and integrals, and analysis of convergence. Work through the examples by hand, use the interactive figures to see how the solutions evolve, and always ask which properties of the answer you could have predicted in advance."
   ],
   "prerequisites": [
@@ -52,7 +52,8 @@
       "title": "The wave equation",
       "summary": "Vibrating strings, d’Alembert’s solution, separation of variables and conservation of energy.",
       "requires": [
-        "pde/fourier-series"
+        "pde/fourier-series",
+        "pde/heat-equation"
       ]
     },
     {

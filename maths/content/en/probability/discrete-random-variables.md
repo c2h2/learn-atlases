@@ -217,7 +217,7 @@ $$
 $$
 :::
 
-Both results are what intuition suggests: $n$ trials with success rate $p$ produce about $np$ successes, and (as we shall see in [[probability/expectation]]) the variance of a sum of independent terms is the sum of the variances, $n\cdot p(1-p)$.
+Both results are what intuition suggests: $n$ trials with success rate $p$ produce about $np$ successes, and (as we shall see in [[probability/joint-distributions#thm-covariance]]) the variance of a sum of independent terms is the sum of the variances, $n\cdot p(1-p)$.
 
 ::: example Guessing on a multiple-choice test {#ex-guessing}
 For the student from the introduction, $X\sim\Bin(20, \tfrac14)$. Find $\E X$, the standard deviation of $X$, and $\Prob(X \ge 10)$.
@@ -442,7 +442,7 @@ Misprints arise from a very large number of opportunities (every character), eac
 :::
 
 ::: history
-The expectation of a game was the central concept of Christiaan Huygens's *De ratiociniis in ludo aleae* (1657), which reasoned about the fair price of a gamble. Jacob Bernoulli studied repeated independent trials in his *Ars Conjectandi* (1713), and the binomial distribution and Bernoulli trials bear his name. Siméon-Denis Poisson obtained the Poisson distribution as a limit of the binomial in *Recherches sur la probabilité des jugements en matière criminelle et en matière civile* (1837), a book about the reliability of jury verdicts. It attracted little attention until Ladislaus Bortkiewicz's *Das Gesetz der kleinen Zahlen* (1898) showed how well it describes rare events, with the horse-kick data as its most famous illustration.
+The expectation of a game was the central concept of Christiaan Huygens's *De ratiociniis in ludo aleae* (1657), which reasoned about the fair price of a gamble. Jacob Bernoulli studied repeated independent trials in his *Ars Conjectandi* (1713), and Bernoulli trials and the Bernoulli distribution bear his name. Siméon-Denis Poisson obtained the Poisson distribution as a limit of the binomial in *Recherches sur la probabilité des jugements en matière criminelle et en matière civile* (1837), a book about the reliability of jury verdicts. It attracted little attention until Ladislaus Bortkiewicz's *Das Gesetz der kleinen Zahlen* (1898) showed how well it describes rare events, with the horse-kick data as its most famous illustration.
 :::
 
 ## Where this leads {#where-next}
@@ -512,7 +512,7 @@ As a check, $\E M = \sum_k k(2k-1)/36 = \tfrac{161}{36}$ for the maximum, and $\
 :::
 
 ::: exercise Free throws {level=2 check="0.7^3*0.3"}
-A basketball player makes each free throw with probability $0.7$, independently. Find the probability that the first miss occurs on the fourth throw, and the expected number of throws up to and including the first miss.
+A basketball player makes each free throw with probability $0.7$, independently. Find the probability that the first miss occurs on the fourth throw, and the expected number of throws up to and including the first miss; enter the probability.
 ::: solution
 "Success" is now a miss, with probability $0.3$, so the throw of the first miss is $\operatorname{Geom}(0.3)$: $\Prob(X=4) = 0.7^3\times0.3 = 0.1029$ and $\E X = 1/0.3 = \tfrac{10}{3}$.
 :::

@@ -46,7 +46,7 @@ Above that line, $x - y < 1$, so solution curves are less steep than the line, a
 f: x - y
 x: -3, 4
 y: -3, 4
-points: -2, 3; -2, -2; 0, 2; 0, -1
+points: 0, -2.5; -2, -2; 0, 2; 0, -1
 caption: The slope field of $y' = x - y$ with four solution curves. Click anywhere to start a new solution there. Every curve, whatever its starting point, bends towards the straight-line solution $y = x - 1$ and then runs alongside it — the slope field shows this without solving anything.
 :::
 

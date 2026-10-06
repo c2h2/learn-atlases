@@ -114,7 +114,7 @@ Which of the following spaces are simply connected? (Several may be correct.)
 - [x] A star-shaped region of the plane (all points visible from one centre)
 - [ ] The annulus $1\le\abs z\le2$
 ::: solution
-The disc and $\R^3$ are convex. A star-shaped set with centre $c$ is simply connected too: the homotopy $H(t, s) = (1 - s)f(t) + sc$ shrinks every loop at $c$ to the constant loop within the set. The circle and the annulus have fundamental group $\Z$, as we are about to prove (the annulus retracts onto a circle).
+The disc and $\R^3$ are convex. A star-shaped set with centre $c$ is simply connected too: the homotopy $H(t, s) = (1 - s)f(t) + sc$ shrinks every loop at $c$ to the constant loop within the set. The circle and the annulus have fundamental group $\Z$, as we are about to prove (the radial homotopy used below for the punctured plane deforms the annulus onto a circle).
 :::
 :::
 
@@ -228,7 +228,7 @@ $$
 The expression under the square root is non-negative since $\norm x\le1$, and $\tau$ depends continuously on $x$, so $r\colon D^2\to S^1$ is continuous. If $\norm x = 1$, then $x\cdot u = 1 - x\cdot f(x)\ge0$ (as $\abs{x\cdot f(x)}\le\norm x\norm{f(x)}\le1$), so the formula gives $\tau = (-x\cdot u + \abs{x\cdot u})/\norm u^2 = 0$ and $r(x) = x$. Thus $r$ is a retraction of $D^2$ onto $S^1$, contradicting [[#thm-no-retraction]].
 :::
 
-The theorem says, for example, that if you take a map of a country and place it on the floor somewhere within that country — crumpled if you like, as long as it is not torn — some point of the map lies exactly above the place it represents. It holds in every dimension, but the higher-dimensional proof needs higher homotopy or homology groups. In dimension one it is the fixed point theorem for $[0,1]$ of [[topology/connectedness#ex-ivt-applications]].
+The theorem says, for example, that if you take a map of a country and place it on the floor somewhere within that country — crumpled if you like, as long as it is not torn — some point of the map lies exactly above the place it represents. It holds in every dimension: the same argument works once $\pi_1$ is replaced by higher homotopy or homology groups, and there are also combinatorial proofs via Sperner's lemma. In dimension one it is the fixed point theorem for $[0,1]$ of [[topology/connectedness#ex-ivt-applications]].
 
 ::: example Fixed points on other shapes {#ex-fixed-shapes}
 (a) Show that every continuous map of a closed square, or of a closed triangle, into itself has a fixed point. (b) Show that the annulus $A = \set{x\in\R^2 : 1\le\norm x\le2}$ does not have this property, and deduce again that $A$ is not homeomorphic to the disc.

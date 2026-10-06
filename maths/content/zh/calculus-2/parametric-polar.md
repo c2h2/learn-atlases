@@ -246,7 +246,7 @@ $$
 \frac{dy}{dx} = \frac{\dfrac{dr}{d\theta}\sin\theta + r\cos\theta}{\dfrac{dr}{d\theta}\cos\theta - r\sin\theta} .
 $$ {#eq-polar-slope}
 
-在曲线经过原点的点处，若$r = 0$且$\frac{dr}{d\theta} \ne 0$，上式化为$\tan\theta$：曲线沿射线$\theta = \theta_0$离开原点。例如，玫瑰线$r = \cos 2\theta$在$\theta = \frac\pi4$处经过原点，并在那里与直线$y = x$相切。
+若曲线在$\theta = \theta_0$处经过原点，且在该处$r = 0$、$\frac{dr}{d\theta} \ne 0$，则上式化为$\tan\theta_0$：曲线在原点处的切线就是直线$\theta = \theta_0$。例如，玫瑰线$r = \cos 2\theta$在$\theta = \frac\pi4$处经过原点，并在那里与直线$y = x$相切。
 
 ::: quiz
 极坐标为$(r, \theta) = \left(-2, \frac\pi6\right)$的点的直角坐标是什么？

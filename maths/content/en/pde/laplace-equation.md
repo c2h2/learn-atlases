@@ -4,7 +4,7 @@ $$
 \Delta u = u_{xx} + u_{yy} = 0.
 $$
 
-The same equation describes the electrostatic potential in a region free of charge, the gravitational potential in empty space, the velocity potential of an ideal fluid, and the shape of a soap film with small slopes. Its solutions, the **harmonic functions**, are among the most beautiful objects in analysis: they are infinitely differentiable, they equal their own averages over every circle, and they are the real parts of complex analytic functions.
+The same equation describes the electrostatic potential in a region free of charge, the gravitational potential in empty space, the velocity potential of an ideal fluid, and the shape of a soap film with small slopes. Its solutions, the **harmonic functions**, are among the most beautiful objects in analysis: they are infinitely differentiable, they equal their own averages over every circle, and locally they are the real parts of complex analytic functions.
 
 Laplace's equation has no time variable, so there are no initial conditions; a solution is determined entirely by its values (or its normal derivative) on the boundary of a region. In this chapter we solve such **boundary value problems** on rectangles and discs by separation of variables, derive Poisson's integral formula for the disc, and prove the **mean value property** and the **maximum principle**, which give uniqueness and stability and explain why harmonic functions can have no peaks or pits.
 
@@ -113,7 +113,7 @@ $$
 u(x,y) = \frac{4}{\pi}\sum_{n\ \text{odd}}\frac{\sinh ny}{n\sinh n\pi}\sin nx.
 $$
 
-The value at the centre can be found without summing the series. Let $u_1 = u$, and let $u_2, u_3, u_4$ be the solutions with temperature $1$ on the right, bottom and left edges respectively (and $0$ on the other three). By the symmetry of the square, each is a rotation of $u_1$, so all four take the same value at the centre. Their sum is harmonic with boundary value $1$ on every edge, so by uniqueness ([[#cor-unique]] below) the sum is the constant $1$. Hence
+The value at the centre can be found without summing the series. Let $u_1 = u$, and let $u_2, u_3, u_4$ be the solutions with temperature $1$ on the right, bottom and left edges respectively (and $0$ on the other three). By the symmetry of the square, each is a rotation of $u_1$, so all four take the same value at the centre. Their sum is harmonic with boundary value $1$ on every edge, so by uniqueness ([[#cor-unique]] below) the sum is the constant $1$. (Strictly, [[#cor-unique]] needs continuous boundary values, and these jump at the corners; uniqueness still holds for bounded solutions whose data jump at finitely many points, a refinement we do not prove.) Hence
 
 $$
 u\bigl(\tfrac\pi2, \tfrac\pi2\bigr) = \frac14.
@@ -168,7 +168,7 @@ $$
 u(r,\theta) = \frac34r\cos\theta + \frac14r^3\cos3\theta = \frac34x + \frac14\bigl(x^3 - 3xy^2\bigr),
 $$
 
-using $r^3\cos3\theta = \operatorname{Re}z^3 = x^3 - 3xy^2$. It is a harmonic polynomial, as it must be (each term is the real part of a power of $z$). By the maximum principle ([[#cor-unique]] below) its maximum over the closed disc is the maximum of the boundary values $\cos^3\theta$, namely $1$, attained only at $(1, 0)$; inside the disc, $u < 1$.
+using $r^3\cos3\theta = \operatorname{Re}z^3 = x^3 - 3xy^2$. It is a harmonic polynomial, as it must be (each term is the real part of a power of $z$). By the maximum principle ([[#cor-unique]] and [[#thm-strong-max]] below) its maximum over the closed disc is the maximum of the boundary values $\cos^3\theta$, namely $1$, attained only at $(1, 0)$; inside the disc, $u < 1$.
 :::
 :::
 
@@ -376,7 +376,7 @@ Since $\cos^2\theta = \frac12 + \frac12\cos2\theta$, the series [[#eq-disc-serie
 ::: exercise A single mode on a square {level=1 check="1/(2*cosh(3*pi/2))"}
 Solve $\Delta u = 0$ on $0 < x, y < \pi$ with $u = 0$ on the edges $x = 0$, $x = \pi$, $y = 0$ and $u(x, \pi) = \sin 3x$. Evaluate $u(\pi/6, \pi/2)$.
 ::: solution
-The boundary data are a single eigenfunction, so by [[#eq-rect-solution]] $u = \frac{\sinh 3y}{\sinh 3\pi}\sin3x$. At $(\pi/6,\pi/2)$, $\sin\frac\pi2 = 1$ and $u = \frac{\sinh(3\pi/2)}{\sinh 3\pi} = \frac{1}{2\cosh(3\pi/2)} \approx 0.009$, using $\sinh2s = 2\sinh s\cosh s$. The value at the centre is tiny: the third harmonic dies off quickly away from the edge.
+The boundary data are a single eigenfunction, so by [[#eq-rect-solution]] $u = \frac{\sinh 3y}{\sinh 3\pi}\sin3x$. At $(\pi/6,\pi/2)$, $\sin\frac\pi2 = 1$ and $u = \frac{\sinh(3\pi/2)}{\sinh 3\pi} = \frac{1}{2\cosh(3\pi/2)} \approx 0.009$, using $\sinh2s = 2\sinh s\cosh s$. The value halfway up the square is tiny: the third harmonic dies off quickly away from the edge.
 :::
 :::
 

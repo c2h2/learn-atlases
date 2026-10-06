@@ -151,9 +151,9 @@ The choice of $g$ matters enormously.
 ::: example Two rearrangements of the same equation {#ex-rearrange}
 Newton's cubic $x^3 - 2x - 5 = 0$ can be rewritten as $x = g_1(x) = (2x + 5)^{1/3}$ or as $x = g_2(x) = \frac{x^3 - 5}{2}$. Which fixed-point iteration converges to $x^* \approx 2.0946$?
 ::: solution
-Both functions have $x^*$ as a fixed point, so [[#cor-local]] decides by the size of the derivative there. For the first, $g_1'(x) = \frac{2}{3(2x + 5)^{2/3}}$, so $g_1'(x^*) \approx 0.152 < 1$: the iteration converges linearly, gaining about $-\log_{10}0.152 \approx 0.8$ digits per step. From $x_0 = 2$ it gives $2.0801,\ 2.0924,\ 2.0942,\ 2.0945, \dots$, and $x_7$ has error $1.8\times10^{-7}$.
+Both functions have $x^*$ as a fixed point, so [[#cor-local]] decides by the size of the derivative there. For the first, $g_1'(x) = \frac{2}{3(2x + 5)^{2/3}}$, so $g_1'(x^*) \approx 0.152 < 1$: the iteration converges linearly, gaining about $-\log_{10}0.152 \approx 0.8$ digits per step. From $x_0 = 2$ it gives $2.0801,\ \allowbreak 2.0924,\ \allowbreak 2.0942,\ \allowbreak 2.0945,\ \allowbreak \dots$, and $x_7$ has error $1.8\times10^{-7}$.
 
-For the second, $g_2'(x) = \frac32x^2$, so $g_2'(x^*) \approx 6.6 > 1$: the fixed point repels, and from $x_0 = 2$ the iteration produces $1.5,\ -0.81,\ -2.77,\ -13.1,\ -1128, \dots$. The same equation, rearranged two ways, gives one good and one useless method. A systematic way to choose $g$ with $g'(x^*) = 0$ is exactly Newton's method, below.
+For the second, $g_2'(x) = \frac32x^2$, so $g_2'(x^*) \approx 6.6 > 1$: the fixed point repels, and from $x_0 = 2$ the iteration produces $1.5,\ \allowbreak -0.81,\ \allowbreak -2.77,\ \allowbreak -13.1,\ \allowbreak -1128,\ \allowbreak \dots$. The same equation, rearranged two ways, gives one good and one useless method. A systematic way to choose $g$ with $g'(x^*) = 0$ is exactly Newton's method, below.
 :::
 :::
 
@@ -246,7 +246,7 @@ Here $f'(x) = 3x^2 - 2$, so $x_{n+1} = x_n - \frac{x_n^3 - 2x_n - 5}{3x_n^2 - 2}
 | $2$ | $2.094\,568\,121\,104\,185$ | $1.7\times10^{-5}$ |
 | $3$ | $2.094\,551\,481\,698\,199$ | $1.6\times10^{-10}$ |
 | $4$ | $2.094\,551\,481\,542\,326\,591\,496$ | $1.4\times10^{-20}$ |
-| $5$ | (40 correct digits) | $1.0\times10^{-40}$ |
+| $5$ | (40 correct digits) | $1.1\times10^{-40}$ |
 
 The number of correct digits roughly doubles at each step: $1, 2, 5, 10, 20, 40$. The ratios $e_{n+1}/e_n^2$ approach $\frac{f''(x^*)}{2f'(x^*)} = \frac{6x^*}{2(3(x^*)^2 - 2)} \approx 0.563$, as [[#eq-newton-error]] predicts (for instance $1.66\times10^{-5}/(5.45\times10^{-3})^2 \approx 0.56$). In double precision the iteration reaches full accuracy after $4$ steps.
 :::
@@ -290,7 +290,7 @@ A tiny value of $\abs{f(x_n)}$ does not guarantee that $x_n$ is close to a root,
 ::: example A double root {#ex-double-root}
 Apply Newton's method to $f(x) = x^3 - 3x + 2 = (x - 1)^2(x + 2)$ from $x_0 = 2$.
 ::: solution
-The iterates are $1.556,\ 1.298,\ 1.155,\ 1.080,\ 1.040,\ 1.020,\ 1.010, \dots$: the error halves at each step, which is linear convergence with constant $\frac12$. The reason: at a root of multiplicity $m$, $f(x) = (x - x^*)^mh(x)$ with $h(x^*) \ne 0$, and one computes $g'(x^*) = 1 - \frac1m$ ([[#exr-multiplicity]]), here $\frac12$.
+The iterates are $1.556,\ \allowbreak 1.298,\ \allowbreak 1.155,\ \allowbreak 1.080,\ \allowbreak 1.040,\ \allowbreak 1.020,\ \allowbreak 1.010,\ \allowbreak \dots$: the error halves at each step, which is linear convergence with constant $\frac12$. The reason: at a root of multiplicity $m$, $f(x) = (x - x^*)^mh(x)$ with $h(x^*) \ne 0$, and one computes $g'(x^*) = 1 - \frac1m$ ([[#exr-multiplicity]]), here $\frac12$.
 
 If the multiplicity is known, the **modified Newton method** $x_{n+1} = x_n - m\frac{f(x_n)}{f'(x_n)}$ restores quadratic convergence: with $m = 2$ the errors are $0.11,\ 1.9\times10^{-3},\ 6.3\times10^{-7},\ 1.6\times10^{-10}$. The next step, however, jumps *back* to an error of $4.8\times10^{-7}$: at this point $f(x_n)$ is so small that it is dominated by rounding error, illustrating the $\sqrt u$ limit of the warning above.
 :::
@@ -325,7 +325,7 @@ for some $\eta_n, \zeta_n$ in the smallest interval containing $x_{n-1}, x_n, x^
 :::
 
 ::: proof {collapsed}
-*Proof sketch.* The secant line is the linear interpolant $p$ of $f$ at $x_{n-1}, x_n$, and $x_{n+1}$ is its zero. The interpolation error formula of [[numerical-analysis/interpolation]] gives $f(x^*) - p(x^*) = \frac{f''(\eta_n)}{2}(x^* - x_n)(x^* - x_{n-1})$, i.e. $-p(x^*) = \frac{f''(\eta_n)}{2}e_ne_{n-1}$. Since $p$ is linear with slope $\frac{f(x_n) - f(x_{n-1})}{x_n - x_{n-1}} = f'(\zeta_n)$ (mean value theorem) and $p(x_{n+1}) = 0$, we have $p(x^*) = f'(\zeta_n)(x^* - x_{n+1}) = -f'(\zeta_n)e_{n+1}$, which gives the error formula. As in [[#thm-newton]], it implies convergence from close enough starting values, and then $e_{n+1} \approx Ce_ne_{n-1}$ with $C = \frac{f''(x^*)}{2f'(x^*)}$. If $\abs{e_{n+1}} \approx K\abs{e_n}^p$ for some order $p$, then $\abs{e_n} \approx (\abs{e_{n+1}}/K)^{1/p}$ and substituting into $\abs{e_{n+1}} \approx \abs C\,\abs{e_n}\abs{e_{n-1}}$ forces $p = 1 + \frac1p$, i.e. $p^2 = p + 1$, whose positive root is $\varphi$. Making the last step rigorous requires a little more care; see Süli and Mayers, *An Introduction to Numerical Analysis*, Chapter 1.
+*Proof sketch.* The secant line is the linear interpolant $p$ of $f$ at $x_{n-1}, x_n$, and $x_{n+1}$ is its zero. The interpolation error formula of [[numerical-analysis/interpolation]] gives $f(x^*) - p(x^*) = \frac{f''(\eta_n)}{2}(x^* - x_n)(x^* - x_{n-1})$, i.e. $-p(x^*) = \frac{f''(\eta_n)}{2}e_ne_{n-1}$. Since $p$ is linear with slope $\frac{f(x_n) - f(x_{n-1})}{x_n - x_{n-1}} = f'(\zeta_n)$ (mean value theorem) and $p(x_{n+1}) = 0$, we have $p(x^*) = f'(\zeta_n)(x^* - x_{n+1}) = -f'(\zeta_n)e_{n+1}$, which gives the error formula. As in [[#thm-newton]], it implies convergence from close enough starting values, and then $e_{n+1} \approx Ce_ne_{n-1}$ with $C = \frac{f''(x^*)}{2f'(x^*)}$. If $\abs{e_{n+1}} \approx K\abs{e_n}^p$ for some order $p$, then also $\abs{e_{n-1}} \approx (\abs{e_n}/K)^{1/p}$, and substituting both into $\abs{e_{n+1}} \approx \abs C\,\abs{e_n}\abs{e_{n-1}}$ forces $p = 1 + \frac1p$, i.e. $p^2 = p + 1$, whose positive root is $\varphi$. Making the last step rigorous requires a little more care; see Süli and Mayers, *An Introduction to Numerical Analysis*, Chapter 1.
 :::
 
 ::: example The secant method on Newton's cubic {#ex-secant}
@@ -335,7 +335,7 @@ With $f(2) = -1$ and $f(3) = 16$, the first step is $x_2 = 3 - 16\cdot\frac{3 - 
 
 | $n$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ |
 |---|---|---|---|---|---|---|---|
-| $\abs{x_n - x^*}$ | $3.6\times10^{-2}$ | $1.3\times10^{-2}$ | $2.7\times10^{-4}$ | $2.1\times10^{-6}$ | $3.2\times10^{-10}$ | $3.6\times10^{-16}$ | $6.4\times10^{-26}$ |
+| $\abs{x_n - x^*}$ | $3.6\times10^{-2}$ | $1.3\times10^{-2}$ | $2.7\times10^{-4}$ | $2.1\times10^{-6}$ | $3.1\times10^{-10}$ | $3.6\times10^{-16}$ | $6.4\times10^{-26}$ |
 
 From $n = 4$ on, the exponents ($3.6$, $5.7$, $9.5$, $15.4$, $25.2$ in absolute value) grow roughly like a Fibonacci sequence: each is about the sum of the two before, exactly as $e_{n+1} \approx Ce_ne_{n-1}$ predicts. The ratio of successive exponents approaches $\varphi \approx 1.6$, compared with $2$ for Newton's method.
 :::
@@ -359,7 +359,7 @@ Newton's method is so effective that it is used to implement arithmetic itself. 
 :::
 
 ::: history
-Iterative root finding is ancient: the Babylonian square-root method is Newton's method for $x^2 - a$. Isaac Newton described his method in *De analysi* (1669) on the example $x^3 - 2x - 5 = 0$, not as an iteration on $x$ but by successively correcting polynomial expansions; Joseph Raphson published the simpler iterative form in 1690, and Thomas Simpson stated it for general equations, with derivatives, in 1740. Joseph Fourier and Augustin-Louis Cauchy studied its convergence in the early nineteenth century. The contraction mapping theorem, in the general form for complete metric spaces, was proved by Stefan Banach in his 1922 thesis. The secant method descends from the much older "rule of false position" known in ancient Egypt and China. Richard Brent's robust hybrid algorithm appeared in his book *Algorithms for Minimization without Derivatives* (1973).
+Iterative root finding is ancient: the Babylonian square-root method is Newton's method for $x^2 - a$. Isaac Newton described his method in *De analysi* (1669) on the example $x^3 - 2x - 5 = 0$, not as an iteration on $x$ but by successively correcting polynomial expansions; Joseph Raphson published the simpler iterative form in 1690, and Thomas Simpson stated it for general equations, with derivatives, in 1740. Joseph Fourier and Augustin-Louis Cauchy studied its convergence in the early nineteenth century. The contraction mapping theorem in abstract form was proved by Stefan Banach in his doctoral thesis (1920, published 1922) for complete normed spaces, and extended to complete metric spaces by Renato Caccioppoli in 1930. The secant method descends from the much older "rule of false position" known in ancient Egypt and China. Richard Brent's robust hybrid algorithm appeared in his book *Algorithms for Minimization without Derivatives* (1973).
 :::
 
 ## Where this leads
@@ -440,11 +440,11 @@ and subtracting from $x - x^*$ gives the formula. As $x \to x^*$ the bracket ten
 :::
 
 ::: exercise An a posteriori bound {level=3}
-For $g(x) = \cos x$ on $[0.5, 1]$, with $L = \sin 1$, the iterates in [[#ex-cos-fixed]] satisfy $\abs{x_{30} - x_{29}} \approx 4.7\times10^{-6}$. Use [[#thm-contraction]] to bound $\abs{x_{30} - x^*}$, and explain why the bound is pessimistic. Then prove that if $g$ is a contraction with constant $L$ and $\abs{g'(x)} \le \ell$ on an interval containing all iterates and $x^*$, the bound can be improved to $\frac{\ell}{1 - \ell}\abs{x_n - x_{n-1}}$ for any $\ell$ with $\ell < 1$.
+For $g(x) = \cos x$ on $[0.5, 1]$, with $L = \sin 1$, the iterates in [[#ex-cos-fixed]] satisfy $\abs{x_{30} - x_{29}} \approx 4.7\times10^{-6}$. Use [[#thm-contraction]] to bound $\abs{x_{30} - x^*}$, and explain why the bound is pessimistic. Then prove that if $\abs{g'(x)} \le \ell$ for all $x$ between $x_{n-1}$ and $x^*$, where $\ell < 1$, the bound can be improved to $\frac{\ell}{1 - \ell}\abs{x_n - x_{n-1}}$, and evaluate this bound for $n = 30$.
 ::: solution
 With $L = \sin1 \approx 0.841$, $\frac{L}{1-L} \approx 5.3$, so $\abs{x_{30} - x^*} \le 5.3\times4.7\times10^{-6} \approx 2.5\times10^{-5}$. The actual error is $1.9\times10^{-6}$, more than ten times smaller, because near $x^*$ the contraction factor is $\sin x^* \approx 0.674$, not the worst case $0.841$.
 
-For the improvement, the proof of the a posteriori bound only used $\abs{x_{n+1} - x^*} \le L\abs{x_n - x^*}$ for the iterates in question. If $\abs{g'} \le \ell$ on an interval containing all iterates and $x^*$, the mean value theorem gives $\abs{x_{k+1} - x^*} \le \ell\abs{x_k - x^*}$ there, and the same argument yields $\abs{x_n - x^*} \le \frac{\ell}{1 - \ell}\abs{x_n - x_{n-1}}$. For the iterates near $x^*$ we may take $\ell$ close to $0.674$, giving $\frac{\ell}{1-\ell} \approx 2.1$ and a bound $9.8\times10^{-6}$ (still an overestimate, because the iterates alternate around $x^*$, so that $\abs{x_n - x_{n-1}}$ is the *sum* of two consecutive errors).
+For the improvement, note that the proof of the a posteriori bound used only the single step $\abs{x_n - x^*} \le L\abs{x_{n-1} - x^*}$. If $\abs{g'} \le \ell$ between $x_{n-1}$ and $x^*$, the mean value theorem gives $\abs{x_n - x^*} = \abs{g(x_{n-1}) - g(x^*)} \le \ell\abs{x_{n-1} - x^*}$, and the same argument yields $\abs{x_n - x^*} \le \frac{\ell}{1 - \ell}\abs{x_n - x_{n-1}}$. For $n = 30$, $x_{29}$ lies within $3\times10^{-6}$ of $x^*$, where $\sin x \le 0.674$, so we may take $\ell = 0.674$, giving $\frac{\ell}{1-\ell} \approx 2.1$ and a bound $9.8\times10^{-6}$ (still an overestimate, because the iterates alternate around $x^*$, so that $\abs{x_n - x_{n-1}}$ is the *sum* of two consecutive errors).
 :::
 :::
 

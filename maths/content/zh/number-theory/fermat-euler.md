@@ -49,7 +49,7 @@ $\binom pk = \dfrac{p!}{k!\,(p-k)!}$是整数，而$p$整除分子$p!$。分母�
 ::: widget pascal
 rows: 16
 mod: 7
-caption: 按模$7$的剩余着色的帕斯卡三角形。第$7$行是$1, 0, 0, 0, 0, 0, 0, 1$：每个内部的系数$\binom 7k$都能被$7$整除，这正是[[#lem-binomial-p]]。图中出现的大块空白三角形是卢卡斯（Lucas）定理的图示，该定理通过$n$和$k$的$p$进制数字来描述$\binom nk \bmod p$。试看合数行，例如第$6$行：$\binom 62 = 15$不能被$6$整除。
+caption: 按模$7$的剩余着色的帕斯卡三角形（空白格中的数能被$7$整除）。第$7$行除两端的$1$以外全是空白：每个内部的系数$\binom 7k$都能被$7$整除，这正是[[#lem-binomial-p]]。图中出现的大块空白三角形是卢卡斯（Lucas）定理的图示，该定理通过$n$和$k$的$p$进制数字来描述$\binom nk \bmod p$。对于合数模，这个引理不成立：把 mod 调到$6$，再看第$6$行，其中$\binom 62 = 15$不能被$6$整除。
 :::
 
 ### 费马定理的应用
@@ -200,7 +200,7 @@ $$
 而各个$r_i$的乘积与$n$互素，所以可以消去。
 :::
 
-当$n = p$是素数时，$\varphi(p) = p - 1$，欧拉定理就是费马定理。用群论的语言来说，欧拉定理断言：在阶为$\varphi(n)$的群$G = U(n)$中，$a^{\abs{G}} = e$，这是拉格朗日（Lagrange）定理的特例（[[abstract-algebra/lagrange#cor-euler]]）；上面的证明其实就是改头换面的拉格朗日定理的证明。
+当$n = p$是素数时，$\varphi(p) = p - 1$，欧拉定理就是费马定理。用群论的语言来说，欧拉定理断言：在阶为$\varphi(n)$的群$G = U(n)$中，$a^{\abs{G}} = e$，这是拉格朗日（Lagrange）定理的特例（[[abstract-algebra/lagrange#cor-euler]]）；上面的重排证明对每个有限阿贝尔群都适用。
 
 ::: example 末位数字与幂塔 {#ex-euler}
 (a) 求$13^{2026}$的末两位数字。(b) 计算$2^{2^{100}} \bmod 7$。
@@ -230,7 +230,7 @@ caption: 模$10$的幂。对与$10$互素的四个剩余——即$1, 3, 7, 9$—
 费马定理使我们能够“反转指数”。由于$\gcd(7, 10) = 1$，存在$d$使$7d \equiv 1 \pmod{10}$，即$d = 3$（$21 = 2\cdot 10 + 1$）。若$x^7 \equiv 3$，则$x \not\equiv 0$，两边取$3$次方得
 
 $$
-x = x^{1}\cdot\bigl(x^{10}\bigr)^2 = x^{21} = (x^7)^3 \equiv 3^3 = 27 \equiv 5 \pmod{11} .
+x \equiv x\cdot\bigl(x^{10}\bigr)^2 = x^{21} = (x^7)^3 \equiv 3^3 = 27 \equiv 5 \pmod{11} .
 $$
 
 反之，$x = 5$确实是解：$5^2 = 25 \equiv 3$，$5^4 \equiv 9$，所以$5^7 = 5^4\cdot 5^2\cdot 5 \equiv 9\cdot 3\cdot 5 = 135 \equiv 3$。所以唯一的解是$x \equiv 5 \pmod{11}$。映射$x \mapsto x^7$是模$11$的剩余之间的一个双射，它的逆映射是$y \mapsto y^3$——这正是 RSA 加密与解密的机制，只不过要把$11$换成两个大素数的乘积。
@@ -343,10 +343,10 @@ $$
 所以$m$是偶数（因为对奇数$p$有$-1 \not\equiv 1$），即$p \equiv 1 \pmod 4$。
 :::
 
-当$p = 13$时：$6! = 720 = 55\cdot 13 + 5$，而$5^2 = 25 \equiv -1 \pmod{13}$。当$p = 17$时：$8! = 40320 \equiv 13$，而$13^2 = 169 \equiv -1 \pmod{17}$。这个定理是二次互反律的第一个特殊情形（[[number-theory/quadratic-reciprocity]]），也是费马两平方和定理中的关键步骤（[[number-theory/diophantine]]）。
+当$p = 13$时：$6! = 720 = 55\cdot 13 + 5$，而$5^2 = 25 \equiv -1 \pmod{13}$。当$p = 17$时：$8! = 40320 \equiv 13$，而$13^2 = 169 \equiv -1 \pmod{17}$。这个定理就是二次互反律的第一补充律（[[number-theory/quadratic-reciprocity#thm-first-supplement]]），也是费马两平方和定理中的关键步骤（[[number-theory/diophantine]]）。
 
 ::: application RSA为什么可行
-在 RSA 密码体制中（[[number-theory/cryptography]]），消息$m$被加密为$c = m^e \bmod n$，其中$n = pq$；解密则计算$c^d \bmod n$，其中$ed \equiv 1 \pmod{\varphi(n)}$。记$ed = 1 + k\varphi(n)$，则只要$\gcd(m, n) = 1$，由欧拉定理就有$c^d = m^{ed} = m\,(m^{\varphi(n)})^k \equiv m \pmod n$。其安全性依赖于这样一个事实：计算$\varphi(n) = (p-1)(q-1)$需要知道$n$的分解式。
+在 RSA 密码体制中（[[number-theory/cryptography]]），消息$m$被加密为$c = m^e \bmod n$，其中$n = pq$；解密则计算$c^d \bmod n$，其中$ed \equiv 1 \pmod{\varphi(n)}$。记$ed = 1 + k\varphi(n)$，则只要$\gcd(m, n) = 1$，由欧拉定理就有$c^d \equiv m^{ed} = m\,(m^{\varphi(n)})^k \equiv m \pmod n$。其安全性依赖于这样一个事实：计算$\varphi(n) = (p-1)(q-1)$需要知道$n$的分解式。
 :::
 
 ::: history

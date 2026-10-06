@@ -1,4 +1,4 @@
-微分方程$y'' + y = 0$有解$\sin x$和$\cos x$。由于这个方程是线性的，任何组合$a\sin x + b\cos x$也都是解：若$y_1'' + y_1 = 0$且$y_2'' + y_2 = 0$，则$(ay_1 + by_2)'' + (ay_1 + by_2) = a(y_1'' + y_1) + b(y_2'' + y_2) = 0$。齐次线性方程组$A\mathbf{x} = \mathbf{0}$的解也完全如此（[[linear-algebra/linear-systems#thm-structure]]），多项式、矩阵、数列以及手机所处理的信号也是这样。在每种情形中，都有一些可以**相加**、可以**与数相乘**的对象，并且熟悉的算术规则成立。
+微分方程$y'' + y = 0$有解$\sin x$和$\cos x$。由于这个方程是线性的，任何组合$a\sin x + b\cos x$也都是解：若$y_1'' + y_1 = 0$且$y_2'' + y_2 = 0$，则$(ay_1 + by_2)'' + (ay_1 + by_2) = a(y_1'' + y_1) + b(y_2'' + y_2) = 0$。齐次线性方程组$A\mathbf{x} = \mathbf{0}$的解也完全如此（由[[linear-algebra/linear-systems#eq-linear]]，$A(a\mathbf{u} + b\mathbf{v}) = aA\mathbf{u} + bA\mathbf{v}$），多项式、矩阵、数列以及手机所处理的信号也是这样。在每种情形中，都有一些可以**相加**、可以**与数相乘**的对象，并且熟悉的算术规则成立。
 
 分别为列向量、函数、多项式和矩阵各自发展一套理论未免太浪费了。我们转而把它们共有的规则列为公理，只从公理出发证明定理；这样，每个定理都立即适用于每个例子。带有满足这些规则的运算的集合称为**向量空间**，它的元素称为**向量**——即使它们是函数或矩阵。本章建立这套语言：向量空间、子空间、线性组合、张成空间和线性无关。下一章将用它来定义维数。
 
@@ -337,7 +337,7 @@ $\mathbf{u} + \mathbf{v} - \mathbf{w} = \mathbf{0}$是一个相关关系，由[[
 
 ## 后续内容
 
-有了子空间、张成空间和线性无关这些概念，[[linear-algebra/basis-dimension]]将把张成与线性无关结合成**基**的概念，证明一个空间的所有基都含有相同个数的向量——这个数就是空间的**维数**——并求出矩阵的零空间和列空间的基。[[linear-algebra/linear-maps]]研究向量空间之间保持运算的函数。$C[a,b]$这样的函数空间是无穷维向量空间，它们通过内积和范数获得的几何结构推动了傅里叶级数（[[pde/fourier-series]]）、[[measure-theory/lp-spaces]]中的$L^p$空间以及现代分析的大部分内容（[[real-analysis/metric-spaces]]）。把标量域换成环，就得到模论，见[[abstract-algebra/rings]]。
+有了子空间、张成空间和线性无关这些概念，[[linear-algebra/basis-dimension]]将把张成与线性无关结合成**基**的概念，证明一个空间的所有基都含有相同个数的向量——这个数就是空间的**维数**——并求出矩阵的零空间和列空间的基。[[linear-algebra/linear-maps]]研究向量空间之间保持运算的函数。$C[a,b]$这样的函数空间是无穷维向量空间，它们通过内积和范数获得的几何结构推动了傅里叶级数（[[pde/fourier-series]]）、[[measure-theory/lp-spaces]]中的$L^p$空间以及现代分析的大部分内容（[[real-analysis/metric-spaces]]）。把标量域换成环（见[[abstract-algebra/rings]]），就得到更一般的模论。
 
 ::: summary
 - 向量空间是带有满足八条公理的加法和数乘的集合（[[#def-vector-space]]）；例子包括$\F^n$、矩阵、多项式以及带有逐点运算的函数。

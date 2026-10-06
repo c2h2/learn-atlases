@@ -123,14 +123,14 @@ These are exactly the factors in [[multivariable/multiple-integrals#eq-polar]] a
 :::
 :::
 
-The next figure shows a non-linear map in action: the map $(u,v)\mapsto(u^2 - v^2,\ 2uv)$, which in complex notation is $z\mapsto z^2$. Its Jacobian is $\det\begin{pmatrix}2u&-2v\\2v&2u\end{pmatrix} = 4(u^2 + v^2)$, so small squares far from the origin are enlarged a lot, while near the origin, where $J = 0$, areas are crushed.
+The next figure shows a non-linear map in action: the map $(u,v)\mapsto(u^2 - v^2,\ 2uv)$, which in complex notation is $z\mapsto z^2$. Its Jacobian is $\det\begin{pmatrix}2u&-2v\\2v&2u\end{pmatrix} = 4(u^2 + v^2)$, so small squares far from the origin are enlarged a lot, while near the origin, where $J$ is close to $0$, areas are crushed.
 
 ::: widget complexmap
 f: z^2
 mode: grid
 x: -1.5, 1.5
 y: -1.5, 1.5
-caption: The image of a square grid under $(u,v)\mapsto(u^2-v^2,\ 2uv)$. The grid squares become curvilinear quadrilaterals — still meeting at right angles — whose areas are about $4(u^2+v^2)$ times the original. Near the origin the Jacobian vanishes and the map folds the plane over itself (it is two-to-one), which is why change of variables requires a map that is one-to-one with non-zero Jacobian.
+caption: The image of a square grid under $(u,v)\mapsto(u^2-v^2,\ 2uv)$. The grid squares become curvilinear quadrilaterals — still meeting at right angles — whose areas are about $4(u^2+v^2)$ times the original. The Jacobian vanishes at the origin, and the map is two-to-one — $z$ and $-z$ have the same image, so the lines $u = c$ and $u = -c$ land on the same parabola — which is why change of variables requires a map that is one-to-one with non-zero Jacobian.
 :::
 
 Inverting a change of variables inverts the Jacobian.
@@ -168,13 +168,13 @@ $$
 \iint_D f\,dA = \sum_k\iint_{T(Q_k)} f\,dA \approx \sum_k f\bigl(T(\mathbf{c}_k)\bigr)\,\text{area}\bigl(T(Q_k)\bigr)
 $$
 
-by [[multivariable/multiple-integrals#thm-mvt-integral]]. Next, near $\mathbf{c}_k$ the map $T$ is approximated by the affine map $\mathbf{u}\mapsto T(\mathbf{c}_k) + DT(\mathbf{c}_k)(\mathbf{u} - \mathbf{c}_k)$, which by [[#thm-det-area]] multiplies area by exactly $\abs{J_T(\mathbf{c}_k)}$. The key estimate, which uses the uniform continuity of $DT$ on $S$, is that $\text{area}(T(Q_k)) = \abs{J_T(\mathbf{c}_k)}\,\text{area}(Q_k)\,(1 + \eps_k)$ with $\max_k\abs{\eps_k}\to0$ as the squares shrink. Substituting,
+by [[multivariable/multiple-integrals#thm-mvt-integral]]. Next, near $\mathbf{c}_k$ the map $T$ is approximated by the affine map $\mathbf{u}\mapsto T(\mathbf{c}_k) + DT(\mathbf{c}_k)(\mathbf{u} - \mathbf{c}_k)$, which by [[#thm-det-area]] multiplies area by exactly $\abs{J_T(\mathbf{c}_k)}$. The key estimate, which uses the uniform continuity of $DT$ on $S$, is that $\text{area}(T(Q_k)) = \bigl(\abs{J_T(\mathbf{c}_k)} + \eps_k\bigr)\,\text{area}(Q_k)$ with $\max_k\abs{\eps_k}\to0$ as the squares shrink. Substituting (the errors add up to at most $\max\abs{f}\cdot\max_k\abs{\eps_k}\cdot\text{area}(S)$, which tends to $0$),
 
 $$
 \iint_D f\,dA \approx \sum_k f\bigl(T(\mathbf{c}_k)\bigr)\,\abs{J_T(\mathbf{c}_k)}\,\text{area}(Q_k),
 $$
 
-which is a Riemann sum for the right-hand side of [[#eq-cov]]; letting the mesh tend to $0$ turns both approximations into equalities. Making the key estimate rigorous takes a few pages (one needs the inverse function theorem to control the shape of $T(Q_k)$); complete proofs are in Spivak, *Calculus on Manifolds*, Theorem 3-13, and Munkres, *Analysis on Manifolds*, §17.
+which is a Riemann sum for the right-hand side of [[#eq-cov]]; letting the mesh tend to $0$ turns both approximations into equalities. Making the key estimate rigorous takes a few pages (one needs the inverse function theorem to control the shape of $T(Q_k)$); complete proofs are in Spivak, *Calculus on Manifolds*, Theorem 3-13, and Munkres, *Analysis on Manifolds*, §§17–19.
 :::
 
 The hypotheses allow $T$ to misbehave on the boundary of $S$, which is essential in practice: polar coordinates on $S = [0, R]\times[0, 2\pi]$ are not one-to-one on the edges $r = 0$ and $\theta\in\set{0, 2\pi}$, and $J = r$ vanishes at $r = 0$, but these are boundary curves of area zero. So [[#eq-cov]] proves the polar, cylindrical and spherical formulas of [[multivariable/multiple-integrals]].
@@ -328,7 +328,7 @@ $$
 1\cdot\abs{\frac{\partial(u_1,u_2)}{\partial(x,y)}} = \frac{u_1}{2\pi} = \frac{1}{2\pi}e^{-(x^2+y^2)/2} = \frac{e^{-x^2/2}}{\sqrt{2\pi}}\cdot\frac{e^{-y^2/2}}{\sqrt{2\pi}} .
 $$
 
-The density factorises, so $X$ and $Y$ are *independent* standard normal variables. George Box and Mervin Muller published the method in 1958, and it is still used in simulation software ([[probability/joint-distributions]]).
+The density factorises, so $X$ and $Y$ are *independent* standard normal variables ([[probability/joint-distributions]]). George Box and Mervin Muller published the method in 1958, and it is still used in simulation software.
 :::
 
 ::: history
@@ -337,7 +337,7 @@ Leonhard Euler worked out how to change variables in double integrals around 177
 
 ## Where this leads
 
-The Jacobian determinant measures how a map distorts volume, and this idea recurs throughout mathematics. In [[multivariable/surface-integrals]] the analogous factor for a map from a plane region onto a surface in space is $\norm{\mathbf{r}_u\times\mathbf{r}_v}$, and the proof that surface integrals do not depend on the parametrisation is a change of variables. In [[complex-analysis/conformal-maps]] the maps $z\mapsto f(z)$ have Jacobian $\abs{f'(z)}^2$ and preserve angles. In [[probability/joint-distributions]] the transformation rule for densities derived above is used constantly. In the language of differential forms, the change of variables formula becomes the statement that $dx\wedge dy = \frac{\partial(x,y)}{\partial(u,v)}\,du\wedge dv$, the starting point of integration on manifolds and the general Stokes theorem mentioned in [[multivariable/stokes-divergence]].
+The Jacobian determinant measures how a map distorts volume, and this idea recurs throughout mathematics. In [[multivariable/surface-integrals]] the analogous factor for a map from a plane region onto a surface in space is $\norm{\mathbf{r}_u\times\mathbf{r}_v}$, and the proof that surface integrals do not depend on the parametrisation is a change of variables. In [[complex-analysis/conformal-maps]] the maps $z\mapsto f(z)$ have Jacobian $\abs{f'(z)}^2$ and preserve angles. In probability and statistics the transformation rule for densities derived above is used constantly; for example, it shows that for normal data the sample mean and the sample variance are independent ([[statistics/sampling]]). In the language of differential forms, the change of variables formula becomes the statement that $dx\wedge dy = \frac{\partial(x,y)}{\partial(u,v)}\,du\wedge dv$, the starting point of integration on manifolds and the general Stokes theorem mentioned in [[multivariable/stokes-divergence]].
 
 ::: summary
 - A linear map with matrix $A$ multiplies every area (volume) by $\abs{\det A}$ ([[#thm-det-area]]).

@@ -322,7 +322,7 @@ Let $g(t) = f(\mathbf{a} + t(\mathbf{b} - \mathbf{a}))$ for $t$ in an open inter
 :::
 
 ::: corollary Zero gradient means constant {#cor-constant}
-If $U$ is open and convex (it contains the segment between any two of its points) and $\nabla f = \mathbf{0}$ on $U$, then $f$ is constant on $U$. If $\norm{\nabla f} \le M$ on $U$, then $\abs{f(\mathbf{b}) - f(\mathbf{a})} \le M\norm{\mathbf{b} - \mathbf{a}}$ for all $\mathbf{a}, \mathbf{b} \in U$.
+Let $f$ be differentiable on an open convex set $U$ (one that contains the segment between any two of its points). If $\nabla f = \mathbf{0}$ on $U$, then $f$ is constant on $U$. If $\norm{\nabla f} \le M$ on $U$, then $\abs{f(\mathbf{b}) - f(\mathbf{a})} \le M\norm{\mathbf{b} - \mathbf{a}}$ for all $\mathbf{a}, \mathbf{b} \in U$.
 :::
 
 ::: proof
@@ -375,7 +375,7 @@ The operator $\nabla$ grew out of William Rowan Hamilton's work on quaternions i
 
 ## Where this leads
 
-The gradient is the first derivative of a function of several variables; [[multivariable/extrema]] adds the second derivative (the Hessian matrix), finds maxima and minima where $\nabla f = \mathbf{0}$, and uses [[#thm-gradient-normal]] to derive the method of Lagrange multipliers for optimisation under a constraint $g = c$. Gradient fields $\mathbf{F} = \nabla f$ are the conservative vector fields of [[multivariable/line-integrals]], where the fundamental theorem for line integrals generalises the mean value theorem, and $\nabla$ reappears as the divergence $\nabla\cdot\mathbf{F}$ and curl $\nabla\times\mathbf{F}$ in [[multivariable/stokes-divergence]]. Tangent planes and unit normals are the starting point of the geometry of surfaces in [[differential-geometry/regular-surfaces]], and gradient methods are studied in depth in [[numerical-analysis/iterative-methods]].
+The gradient is the first derivative of a function of several variables; [[multivariable/extrema]] adds the second derivative (the Hessian matrix), finds maxima and minima where $\nabla f = \mathbf{0}$, and uses [[#thm-gradient-normal]] to derive the method of Lagrange multipliers for optimisation under a constraint $g = c$. Gradient fields $\mathbf{F} = \nabla f$ are the conservative vector fields of [[multivariable/line-integrals]], where the fundamental theorem for line integrals, $\int_C\nabla f\cdot d\mathbf{r} = f(B) - f(A)$, plays the role of the fundamental theorem of calculus, and $\nabla$ reappears as the divergence $\nabla\cdot\mathbf{F}$ and curl $\nabla\times\mathbf{F}$ in [[multivariable/stokes-divergence]]. Tangent planes and unit normals are the starting point of the geometry of surfaces in [[differential-geometry/regular-surfaces]]. On a quadratic bowl, gradient descent is a stationary linear iteration, and its convergence is governed by the spectral radius studied in [[numerical-analysis/iterative-methods]].
 
 ::: summary
 - The directional derivative $D_{\mathbf{u}}f(\mathbf{a})$ is the rate of change of $f$ at $\mathbf{a}$ per unit distance in the direction of the unit vector $\mathbf{u}$ ([[#def-directional]]).
@@ -478,6 +478,6 @@ $$
 \frac{f(t,t)}{\norm{(t,t)}} = \frac{t}{\sqrt2\,t} = \frac{1}{\sqrt2},
 $$
 
-which does not tend to $0$. Hence $f$ is not differentiable at the origin. (Equivalently, $D_{\mathbf{u}}f(0,0)$ does not exist for $\mathbf{u} = (1,1)/\sqrt2$: the quotient $f(t\mathbf{u})/t = \abs{t}/(\sqrt2\,t)$ is $\pm 1/\sqrt2$ according to the sign of $t$.)
+which does not tend to $0$. Hence $f$ is not differentiable at the origin. (Alternatively, $D_{\mathbf{u}}f(0,0)$ does not exist for $\mathbf{u} = (1,1)/\sqrt2$: the quotient $f(t\mathbf{u})/t = \abs{t}/(\sqrt2\,t)$ is $\pm 1/\sqrt2$ according to the sign of $t$.)
 :::
 :::

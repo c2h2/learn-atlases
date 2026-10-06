@@ -40,7 +40,7 @@ $$
 - [x] $3$
 - [ ] $4$
 ::: solution
-集合$\set{1,2}$与$\set{2,1}$的元素相同，所以它们相等，只算一次。其余的元素$\varnothing$和$\set{\varnothing}$彼此不同（一个没有元素，另一个有一个元素），也都不同于$\set{1,2}$。所以这个集合就是$\set{\varnothing, \set{\varnothing}, \set{1,2}}$，有三个元素。注意这里$\varnothing$算作一个元素：“空”是$\varnothing$**自身的**元素的性质，当$\varnothing$位于另一个集合之中时，这并不是忽略它的理由。
+集合$\set{1,2}$与$\set{2,1}$的元素相同，所以它们相等，只算一次。其余的元素$\varnothing$和$\set{\varnothing}$彼此不同（一个没有元素，另一个有一个元素），也都不同于$\set{1,2}$。所以这个集合就是$\set{\varnothing, \set{\varnothing}, \set{1,2}}$，有三个元素。注意这里$\varnothing$算作一个元素：“空”说的是$\varnothing$**内部**有什么（什么也没有），当$\varnothing$位于另一个集合之中时，这并不是忽略它的理由。
 :::
 :::
 

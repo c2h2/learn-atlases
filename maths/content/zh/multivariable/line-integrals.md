@@ -21,7 +21,7 @@
   其大小为$GMm/\norm{\mathbf{r}}^2$，方向指向原点——这是一个**平方反比场**。静电力也具有同样的形式。
 - **梯度场**：对可微函数$f$，场$\nabla f$指向$f$的最速上升方向（见[[multivariable/gradient#thm-steepest]]）。例如$f = \sqrt{x^2+y^2+z^2}$的梯度为$\nabla f = \mathbf{r}/\norm{\mathbf{r}}$，即单位径向场。
 
-若$\mathbf{F}$是流体的速度场，则随流体运动的质点沿满足$\mathbf{r}'(t) = \mathbf{F}(\mathbf{r}(t))$的曲线$\mathbf{r}(t)$运动；这样的曲线称为**流线**（flow line，也称 streamline）。旋转场的流线是以原点为圆心的圆；径向场的流线是从原点出发的射线。求流线就是解一个微分方程组，这是[[ode/linear-systems]]一章的主题。
+若$\mathbf{F}$是流体的速度场，则随流体运动的质点沿满足$\mathbf{r}'(t) = \mathbf{F}(\mathbf{r}(t))$的曲线$\mathbf{r}(t)$运动；这样的曲线称为**流线**（flow line，也称 streamline）。旋转场的流线是以原点为圆心的圆；径向场的流线是从原点出发的射线。求流线就是解一个微分方程组，这是[[ode/linear-systems]]和[[ode/nonlinear-systems]]两章的主题。
 
 ::: widget vectorfield
 P: a*x - b*y
@@ -342,7 +342,7 @@ t: 0, 2pi
 x: -3, 3
 y: -3, 3
 sliders: c=0:-2:2:0.1; r=1:0.3:2:0.1
-caption: [[#ex-vortex]]中的涡旋场，以及以$(c, 0)$为圆心、半径为$r$的圆。只要圆包围着原点，无论怎样移动或缩放，环量都恰好是$2\pi$；一旦原点落在圆外，环量就降为$0$。（当圆经过原点时，积分没有定义。）解释这一跳变是格林（Green）公式最早的应用之一。
+caption: [[#ex-vortex]]中的涡旋场，以及以$(c, 0)$为圆心、半径为$r$的圆。只要圆包围着原点，无论怎样移动或缩放，环量都恰好是$2\pi$；一旦原点落在圆外，环量就降为$0$。（当圆经过原点时，积分没有定义。）对包含原点的圆盘，格林（Green）公式不能直接应用，因为$\mathbf{F}$在原点处没有定义——这就是图中$\iint_D\curl\mathbf{F}\,dA$的估计值与环量不符的原因；但解释这一跳变正是格林公式最早的应用之一。
 :::
 
 ::: warning 仅凭 P_y = Q_x 还不够
@@ -421,7 +421,7 @@ $$
 
 ## 后续内容
 
-涡旋场表明，“$P_y = Q_x$”能否推出“保守”，是一个关于定义域形状的问题。[[multivariable/greens-theorem]]一章在平面上解决了这个问题：量$Q_x - P_y$（标量旋度）度量单位面积上的环量，它在一个区域上的积分等于沿边界的环量。在三维空间中，[[#thm-curl-test]]中的条件是说旋度$\nabla\times\mathbf{F}$为零，而斯托克斯（Stokes）公式（[[multivariable/stokes-divergence]]）扮演着格林公式的角色。在[[complex-analysis/contour-integrals]]一章中，解析函数的曲线积分在单连通区域上与路径无关（柯西定理），而涡旋场又以$1/z$的积分的形式重新出现，这个积分计算的是曲线绕原点的圈数。这种计数正是代数拓扑的出发点（[[topology/fundamental-group]]）。
+涡旋场表明，“$P_y = Q_x$”能否推出“保守”，是一个关于定义域形状的问题。[[multivariable/greens-theorem]]一章在平面上解决了这个问题：量$Q_x - P_y$（标量旋度）度量单位面积上的环量，它在一个区域上的积分等于沿边界的环量。在三维空间中，[[#thm-curl-test]]中的条件是说旋度$\nabla\times\mathbf{F}$为零，而斯托克斯（Stokes）公式（[[multivariable/stokes-divergence]]）扮演着格林公式的角色。在复分析中，解析函数的曲线积分在单连通区域上与路径无关（柯西定理，[[complex-analysis/cauchy-theorem]]），而涡旋场又以$1/z$的积分的形式重新出现，这个积分计算的是曲线绕原点的圈数（[[complex-analysis/contour-integrals]]）。这种计数正是代数拓扑的出发点（[[topology/fundamental-group]]）。
 
 ::: summary
 - 向量场给每一点指定一个向量；流线满足$\mathbf{r}' = \mathbf{F}(\mathbf{r})$（[[#def-vector-field]]）。

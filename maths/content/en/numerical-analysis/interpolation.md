@@ -326,7 +326,7 @@ and by symmetry $s(x) = s(2 - x)$ on $[1, 2]$. Checks: $s(0) = 0$, $s(1) = 1$, $
 f: 1/(1 + 25x^2)
 n: 11
 method: spline
-caption: The natural cubic spline through the same $11$ equally spaced samples of Runge's function that gave the wild degree-$10$ polynomial. The spline follows the function closely everywhere (maximum error about $0.02$). Increase the number of points: the error now *decreases*, roughly like $h^4$ away from the ends.
+caption: The natural cubic spline through the same $11$ equally spaced samples of Runge's function that gave the wild degree-$10$ polynomial. The spline follows the function closely everywhere (maximum error about $0.02$). Increase the number of points: the error now *decreases* (zigzagging, because the peak at $x = 0$ is a node only for odd counts), approaching the rate $h^4$ that the theory below predicts away from the ends.
 :::
 
 Splines converge reliably. For a function with continuous fourth derivative, the clamped cubic spline satisfies $\max\abs{f - s} \le \frac{5}{384}h^4\max\abs{f^{(4)}}$, and the natural spline achieves the same $O(h^4)$ rate away from the endpoints (near them its artificial condition $s'' = 0$ limits it to $O(h^2)$ unless $f''$ vanishes there); see de Boor's *A Practical Guide to Splines*. For Runge's function with $n + 1$ equally spaced points, the natural spline errors are $0.022$ ($n = 10$), $0.0032$ ($n = 20$) and $0.000\,28$ ($n = 40$). In Python, `scipy.interpolate.CubicSpline(x, y, bc_type='natural')` constructs the spline of [[#thm-spline]].
@@ -352,7 +352,7 @@ Interpolation formulas were developed for astronomical and navigational tables. 
 
 ## Where this leads
 
-Integrating interpolating polynomials gives the quadrature rules of [[numerical-analysis/numerical-integration]], and Gaussian quadrature is built on the roots of orthogonal polynomials, as Chebyshev interpolation is built on the roots of $T_n$. Differentiating interpolants gives finite-difference formulas, and extrapolating them gives Richardson extrapolation and multistep ODE methods ([[numerical-analysis/numerical-odes]]). Least-squares approximation, which fits rather than interpolates noisy data, is in [[linear-algebra/least-squares]], and the trigonometric analogue of polynomial interpolation is the discrete Fourier transform ([[pde/fourier-transform]]).
+Integrating interpolating polynomials gives the quadrature rules of [[numerical-analysis/numerical-integration]], and Gaussian quadrature is built on the roots of orthogonal polynomials, as Chebyshev interpolation is built on the roots of $T_n$. Differentiating interpolants gives finite-difference formulas, and extrapolating them gives Richardson extrapolation ([[numerical-analysis/numerical-integration]]) and multistep ODE methods ([[numerical-analysis/numerical-odes]]). Least-squares approximation, which fits rather than interpolates noisy data, is in [[linear-algebra/least-squares]], and the trigonometric analogue of polynomial interpolation is the discrete Fourier transform ([[pde/fourier-transform]]).
 
 ::: summary
 - For distinct nodes $x_0, \dots, x_n$ there is a unique interpolant in $\mathcal P_n$; the Lagrange form is $\sum y_j\ell_j(x)$ with $\ell_j(x_i) = \delta_{ij}$.
@@ -394,14 +394,14 @@ $f''' = e^x \le e$ on $[0, 1]$ and $\omega_3(0.25) = 0.25\times(-0.25)\times(-0.
 :::
 
 ::: exercise Three Chebyshev nodes {level=2 check="1/4"}
-Find the three Chebyshev nodes on $[-1, 1]$ and the maximum of $\abs{\omega_3}$ for them. Compare with the equispaced nodes $-1, 0, 1$.
+Find the three Chebyshev nodes on $[-1, 1]$ and the maximum of $\abs{\omega_3}$ for them. Compare with the equispaced nodes $-1, 0, 1$. (Enter the maximum of $\abs{\omega_3}$ for the Chebyshev nodes.)
 ::: solution
 The zeros of $T_3(x) = 4x^3 - 3x$ are $0$ and $\pm\frac{\sqrt3}{2}$. Then $\omega_3 = x\left(x^2 - \frac34\right) = \frac14T_3$, whose maximum absolute value on $[-1, 1]$ is $\frac14$. For $-1, 0, 1$: $\omega_3 = x^3 - x$, with maximum $\frac{2}{3\sqrt3} \approx 0.385$ at $x = \pm\frac{1}{\sqrt3}$. Chebyshev nodes reduce the bound by a factor of about $1.54$; the gain grows exponentially with the degree.
 :::
 :::
 
 ::: exercise Evaluating a spline {level=2 check="11/16"}
-Evaluate the natural spline of [[#ex-spline]] at $x = \frac12$, and compare with the interpolating parabola there.
+Evaluate the natural spline of [[#ex-spline]] at $x = \frac12$, and compare with the interpolating parabola there. (Enter the value of the spline.)
 ::: solution
 $s\left(\frac12\right) = -\frac{1}{16} + \frac34 = \frac{11}{16} = 0.6875$. The parabola $x(2-x)$ gives $\frac34$ at $x = \frac12$.
 :::

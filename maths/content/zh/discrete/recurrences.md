@@ -204,12 +204,12 @@ $$
 :::
 
 ::: widget sequence
-a: (phi^(n+1) - (1-phi)^(n+1))/(phi^n - (1-phi)^n)
+a: phi*(1 - ((1-phi)/phi)^(n+1))/(1 - ((1-phi)/phi)^n)
 N: 20
 limit: phi
 epsilon: 0.01
 y: 0.9, 2.1
-caption: 比值$F_{n+1}/F_n = 1, 2, 1.5, 1.667, 1.6, 1.625, \dots$（由比内公式算出，因为$1 - \varphi = \psi$）。它们交替地位于$\varphi \approx 1.618$的上方和下方；由于误差受$(\psi/\varphi)^n$控制，误差每一步大约除以$\varphi^2 \approx 2.6$。缩小$\eps$，观察$N$如何增长——它只随$1/\eps$按对数增长。
+caption: 比值$F_{n+1}/F_n = 1, 2, 1.5, 1.667, 1.6, 1.625, \dots$，它们按上面证明中的形式$\varphi(1 - q^{n+1})/(1 - q^n)$由比内公式算出，其中$q = \psi/\varphi$，$\psi = 1 - \varphi$。它们交替地位于$\varphi \approx 1.618$的上方和下方；由于误差受$(\psi/\varphi)^n$控制，误差每一步大约除以$\varphi^2 \approx 2.6$。缩小$\eps$，观察$N$如何增长——它只随$1/\eps$按对数增长。
 :::
 
 ::: quiz
@@ -365,7 +365,7 @@ $$
 
 ## 后续内容
 
-线性递推关系与常系数线性微分方程（[[ode/second-order-linear]]）具有相同的结构：试探指数形式的解，得到特征方程，对重根乘以额外的因子$n$（或$t$），对非齐次项再加上一个特解。[[#eq-linear]]的解构成一个$k$维向量空间，并且递推关系可以改写为$\mathbf{v}_n = M\mathbf{v}_{n-1}$，其中$M$是一个$k\times k$矩阵，其特征值就是特征根（[[linear-algebra/eigenvalues]]）。[[discrete/generating-functions]]给出了求解递推关系的第二种更机械化的方法，它也能处理一般的重根情形。递推关系描述随机游走和马尔可夫链（[[probability/markov-chains]]）、数值方法的稳定性（[[numerical-analysis/numerical-odes]]），以及递归算法（例如[[discrete/graph-algorithms]]中关于图的算法）的运行时间。
+线性递推关系与常系数线性微分方程（[[ode/second-order-linear]]）具有相同的结构：试探指数形式的解，得到特征方程，对重根乘以额外的因子$n$（或$t$），对非齐次项再加上一个特解。[[#eq-linear]]的解构成一个$k$维向量空间，并且递推关系可以改写为$\mathbf{v}_n = M\mathbf{v}_{n-1}$，其中$M$是一个$k\times k$矩阵，其特征值就是特征根（[[linear-algebra/eigenvalues]]）。[[discrete/generating-functions]]给出了求解递推关系的第二种更机械化的方法，它也能处理一般的重根情形。递推关系描述随机游走和马尔可夫链（[[probability/markov-chains]]）、数值方法的稳定性（[[numerical-analysis/numerical-odes]]），以及递归算法（例如[[#ex-resonance]]中的归并排序）的运行时间；而对于[[discrete/graph-algorithms|后面一章]]中的图算法，运行时间则是通过直接计数步数得到的。
 
 ::: summary
 - **递推关系**用前面的项表示$a_n$；连同初始条件，它唯一地确定数列（[[#prop-unique]]），所以要证明猜出的封闭形式，只需验证递推关系和初值。

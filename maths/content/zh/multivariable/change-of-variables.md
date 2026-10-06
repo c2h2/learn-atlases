@@ -123,14 +123,14 @@ $$
 :::
 :::
 
-下图展示了一个非线性映射的作用：映射$(u,v)\mapsto(u^2 - v^2,\ 2uv)$，用复数记号表示就是$z\mapsto z^2$。它的雅可比行列式为$\det\begin{pmatrix}2u&-2v\\2v&2u\end{pmatrix} = 4(u^2 + v^2)$，所以远离原点的小正方形被大大放大，而在原点附近（那里$J = 0$），面积被压扁。
+下图展示了一个非线性映射的作用：映射$(u,v)\mapsto(u^2 - v^2,\ 2uv)$，用复数记号表示就是$z\mapsto z^2$。它的雅可比行列式为$\det\begin{pmatrix}2u&-2v\\2v&2u\end{pmatrix} = 4(u^2 + v^2)$，所以远离原点的小正方形被大大放大，而在原点附近（那里$J$接近$0$），面积被压扁。
 
 ::: widget complexmap
 f: z^2
 mode: grid
 x: -1.5, 1.5
 y: -1.5, 1.5
-caption: 正方形网格在$(u,v)\mapsto(u^2-v^2,\ 2uv)$下的像。网格中的正方形变成曲边四边形——它们仍然以直角相交——其面积约为原来的$4(u^2+v^2)$倍。在原点附近，雅可比行列式变为零，并且这个映射把平面对折到自身之上（它是二对一的）；这就是为什么换元要求映射是单射且雅可比行列式非零。
+caption: 正方形网格在$(u,v)\mapsto(u^2-v^2,\ 2uv)$下的像。网格中的正方形变成曲边四边形——它们仍然以直角相交——其面积约为原来的$4(u^2+v^2)$倍。雅可比行列式在原点处为零，并且这个映射是二对一的——$z$与$-z$的像相同，所以直线$u = c$与$u = -c$落在同一条抛物线上；这就是为什么换元要求映射是单射且雅可比行列式非零。
 :::
 
 对换元取逆，雅可比行列式也随之取倒数。
@@ -168,13 +168,13 @@ $$
 \iint_D f\,dA = \sum_k\iint_{T(Q_k)} f\,dA \approx \sum_k f\bigl(T(\mathbf{c}_k)\bigr)\,\text{面积}\bigl(T(Q_k)\bigr)
 $$
 
-成立。其次，在$\mathbf{c}_k$附近，映射$T$可以用仿射映射$\mathbf{u}\mapsto T(\mathbf{c}_k) + DT(\mathbf{c}_k)(\mathbf{u} - \mathbf{c}_k)$来近似，而由[[#thm-det-area]]，这个仿射映射恰好把面积乘以$\abs{J_T(\mathbf{c}_k)}$。关键的估计（要用到$DT$在$S$上的一致连续性）是：$\text{面积}(T(Q_k)) = \abs{J_T(\mathbf{c}_k)}\,\text{面积}(Q_k)\,(1 + \eps_k)$，并且当正方形缩小时$\max_k\abs{\eps_k}\to0$。代入上式，得
+成立。其次，在$\mathbf{c}_k$附近，映射$T$可以用仿射映射$\mathbf{u}\mapsto T(\mathbf{c}_k) + DT(\mathbf{c}_k)(\mathbf{u} - \mathbf{c}_k)$来近似，而由[[#thm-det-area]]，这个仿射映射恰好把面积乘以$\abs{J_T(\mathbf{c}_k)}$。关键的估计（要用到$DT$在$S$上的一致连续性）是：$\text{面积}(T(Q_k)) = \bigl(\abs{J_T(\mathbf{c}_k)} + \eps_k\bigr)\,\text{面积}(Q_k)$，并且当正方形缩小时$\max_k\abs{\eps_k}\to0$。代入上式（误差之和至多为$\max\abs{f}\cdot\max_k\abs{\eps_k}\cdot\text{面积}(S)$，它趋于$0$），得
 
 $$
 \iint_D f\,dA \approx \sum_k f\bigl(T(\mathbf{c}_k)\bigr)\,\abs{J_T(\mathbf{c}_k)}\,\text{面积}(Q_k),
 $$
 
-这是[[#eq-cov]]右端的一个黎曼和；令细度趋于$0$，两个近似式就都变成等式。要使关键估计严格化需要几页篇幅（需要用反函数定理来控制$T(Q_k)$的形状）；完整的证明见 Spivak《流形上的微积分》（*Calculus on Manifolds*）定理3-13，以及 Munkres《流形上的分析》（*Analysis on Manifolds*）§17。
+这是[[#eq-cov]]右端的一个黎曼和；令细度趋于$0$，两个近似式就都变成等式。要使关键估计严格化需要几页篇幅（需要用反函数定理来控制$T(Q_k)$的形状）；完整的证明见 Spivak《流形上的微积分》（*Calculus on Manifolds*）定理3-13，以及 Munkres《流形上的分析》（*Analysis on Manifolds*）§§17–19。
 :::
 
 定理的假设允许$T$在$S$的边界上表现不好，这在实际应用中至关重要：$S = [0, R]\times[0, 2\pi]$上的极坐标在边$r = 0$和$\theta\in\set{0, 2\pi}$上不是单射，而且$J = r$在$r = 0$处为零，但这些都是面积为零的边界曲线。所以[[#eq-cov]]证明了[[multivariable/multiple-integrals]]一章中的极坐标、柱面坐标和球面坐标公式。
@@ -328,7 +328,7 @@ $$
 1\cdot\abs{\frac{\partial(u_1,u_2)}{\partial(x,y)}} = \frac{u_1}{2\pi} = \frac{1}{2\pi}e^{-(x^2+y^2)/2} = \frac{e^{-x^2/2}}{\sqrt{2\pi}}\cdot\frac{e^{-y^2/2}}{\sqrt{2\pi}} .
 $$
 
-这个密度可以分解为两个因子之积，所以$X$和$Y$是**相互独立**的标准正态随机变量。乔治·博克斯（George Box）和默文·马勒（Mervin Muller）于1958年发表了这一方法，它至今仍在模拟软件中使用（[[probability/joint-distributions]]）。
+这个密度可以分解为两个因子之积，所以$X$和$Y$是**相互独立**的标准正态随机变量（[[probability/joint-distributions]]）。乔治·博克斯（George Box）和默文·马勒（Mervin Muller）于1958年发表了这一方法，它至今仍在模拟软件中使用。
 :::
 
 ::: history
@@ -337,7 +337,7 @@ $$
 
 ## 后续内容
 
-雅可比行列式衡量映射使体积畸变的程度，这一思想贯穿整个数学。在[[multivariable/surface-integrals]]一章中，从平面区域到空间曲面的映射的相应因子是$\norm{\mathbf{r}_u\times\mathbf{r}_v}$，而曲面积分与参数化无关的证明就是一次换元。在[[complex-analysis/conformal-maps]]一章中，映射$z\mapsto f(z)$的雅可比行列式为$\abs{f'(z)}^2$，并且保持角度。在[[probability/joint-distributions]]一章中，上面推导出的密度变换法则被经常使用。在微分形式的语言中，换元公式变成了$dx\wedge dy = \frac{\partial(x,y)}{\partial(u,v)}\,du\wedge dv$这一命题，它是流形上的积分以及[[multivariable/stokes-divergence]]一章中提到的一般形式的斯托克斯公式的出发点。
+雅可比行列式衡量映射使体积畸变的程度，这一思想贯穿整个数学。在[[multivariable/surface-integrals]]一章中，从平面区域到空间曲面的映射的相应因子是$\norm{\mathbf{r}_u\times\mathbf{r}_v}$，而曲面积分与参数化无关的证明就是一次换元。在[[complex-analysis/conformal-maps]]一章中，映射$z\mapsto f(z)$的雅可比行列式为$\abs{f'(z)}^2$，并且保持角度。在概率论与统计学中，上面推导出的密度变换法则被经常使用；例如，正态样本的样本均值与样本方差相互独立，就是借助它证明的（[[statistics/sampling]]）。在微分形式的语言中，换元公式变成了$dx\wedge dy = \frac{\partial(x,y)}{\partial(u,v)}\,du\wedge dv$这一命题，它是流形上的积分以及[[multivariable/stokes-divergence]]一章中提到的一般形式的斯托克斯公式的出发点。
 
 ::: summary
 - 矩阵为$A$的线性映射把每个面积（体积）都乘以$\abs{\det A}$（[[#thm-det-area]]）。

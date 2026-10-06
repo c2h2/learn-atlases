@@ -307,7 +307,7 @@ $$
 这里用到了$(n+1)\binom{\alpha}{n+1} = (\alpha - n)\binom\alpha n$。现在，函数$h(x) = g(x)(1+x)^{-\alpha}$在$(-1, 1)$上满足$h'(x) = (1+x)^{-\alpha-1}\bigl[(1+x)g'(x) - \alpha g(x)\bigr] = 0$，所以$h$是常数，等于$h(0) = 1$。因此$g(x) = (1+x)^\alpha$。
 :::
 
-例如，取$\alpha = \frac12$和$\alpha = -\frac12$，得
+例如，取$\alpha = \frac12$得到下面第一个级数；取$\alpha = -\frac12$并以$-x^2$代替$x$，得到第二个级数：
 
 $$
 \sqrt{1+x} = 1 + \frac x2 - \frac{x^2}{8} + \frac{x^3}{16} - \cdots, \qquad \frac{1}{\sqrt{1 - x^2}} = 1 + \frac{x^2}{2} + \frac{3x^4}{8} + \frac{5x^6}{16} + \cdots .

@@ -194,10 +194,10 @@ Choosing the next vertex by scanning a list gives running time $O(n^2)$; keeping
 In Dijkstra's algorithm with non-negative weights, which statement is true?
 - [ ] A vertex's tentative distance can increase when a neighbour is settled.
 - [x] Vertices are settled in non-decreasing order of their distance from $s$.
-- [ ] The first neighbour of $s$ to be settled is the one joined to $s$ by the most edges.
+- [ ] The first neighbour of $s$ to be settled is the one joined to $s$ by the heaviest edge.
 - [ ] The shortest path to a vertex always uses as few edges as possible.
 ::: solution
-Tentative distances only decrease, and by [[#thm-dijkstra]] each newly settled vertex is at least as far from $s$ as all earlier ones. The last option fails in [[#ex-dijkstra]]: the shortest route to $G$ uses five edges although three suffice to reach it.
+Tentative distances only decrease, and by [[#thm-dijkstra]] each newly settled vertex is at least as far from $s$ as all earlier ones. After $s$, the first vertex settled is a neighbour joined to $s$ by a *lightest* edge, not the heaviest. The last option fails in [[#ex-dijkstra]]: the shortest route to $G$ uses five edges although three suffice to reach it.
 :::
 :::
 
@@ -339,7 +339,7 @@ A snowplough must cover every street; if the street graph has odd vertices some 
 A **Hamilton cycle** in a graph is a cycle that passes through every vertex; a **Hamilton path** is a path through every vertex. A graph with a Hamilton cycle is **Hamiltonian**.
 :::
 
-The name recalls William Rowan Hamilton's 1857 puzzle asking for a round trip through the twenty vertices of a dodecahedron. $K_n$ ($n \ge 3$) is Hamiltonian, and so is $Q_d$ ($d \ge 2$): a *Gray code* such as $000, 001, 011, 010, 110, 111, 101, 100$ lists the strings so that consecutive ones differ in one bit. Unlike Euler's problem there is no simple test, but there is a simple obstruction.
+The name recalls William Rowan Hamilton's 1857 puzzle asking for a round trip through the twenty vertices of a dodecahedron. $K_n$ ($n \ge 3$) is Hamiltonian, and so is $Q_d$ ($d \ge 2$): a *Gray code* such as $000, 001, 011, 010, 110, 111, 101, 100$ lists the strings so that consecutive ones, and also the last and the first, differ in one bit. Unlike Euler's problem there is no simple test, but there is a simple obstruction.
 
 ::: proposition A necessary condition {#prop-ham-necessary}
 If $G$ is Hamiltonian, then for every non-empty set $S$ of vertices the graph $G - S$ has at most $\abs{S}$ components.

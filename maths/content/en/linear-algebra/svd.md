@@ -179,7 +179,7 @@ $$
 \norm{(A - B)\mathbf{x}}^2 = \norm{A\mathbf{x}}^2 = \Bigl\lVert\sum_{i\le k+1}c_i\sigma_i\mathbf{u}_i\Bigr\rVert^2 = \sum_{i\le k+1}c_i^2\sigma_i^2\ge\sigma_{k+1}^2\sum_{i\le k+1}c_i^2 = \sigma_{k+1}^2.
 $$
 
-So $\norm{A - B}\ge\sigma_{k+1}$. The Frobenius statement is proved by a similar but longer argument (Mirsky 1960); see Horn and Johnson, *Matrix Analysis*.
+So $\norm{A - B}\ge\sigma_{k+1}$. The Frobenius statement — the form in which Eckart and Young proved the theorem in 1936 — needs a similar but longer argument, and Mirsky (1960) showed that $A_k$ is optimal for a whole family of norms that includes both; see Horn and Johnson, *Matrix Analysis*.
 :::
 
 ::: example The best rank-one approximation {#ex-rank-one}
@@ -218,7 +218,7 @@ degree: 1
 residuals: true
 x: -3, 3
 y: -2.5, 2.5
-caption: The points of [[#ex-pca]] with their least-squares line $y = 0.6x$; the residuals are vertical. The first principal direction found from the SVD is slightly steeper, slope $0.618$, because it measures distance perpendicular to the line. Drag the outer points vertically: the regression slope changes linearly with the data, while the principal direction always follows the long axis of the cloud.
+caption: The points of [[#ex-pca]] with their least-squares line $y = 0.6x$; the residuals are vertical. The first principal direction found from the SVD (not drawn) is slightly steeper, slope $0.618$, because it measures distance perpendicular to the line. Drag the outer points vertically: the regression slope changes linearly with the data, while the principal direction always follows the long axis of the cloud.
 :::
 
 ## The pseudoinverse and least squares
@@ -305,7 +305,7 @@ The rank is the number of non-zero singular values, $2$ ([[#lem-svd]]); the oper
 :::
 
 ::: history
-The SVD was discovered independently by Eugenio Beltrami (1873) and Camille Jordan (1874), who showed that a real bilinear form can be reduced to diagonal form by two orthogonal changes of variables; James Joseph Sylvester found it again for real square matrices in 1889. Erhard Schmidt (1907) developed the analogous theory for integral operators, including the low-rank approximation property, and Émile Picard (1910) introduced the name *singular values*. The psychometricians Carl Eckart and Gale Young (1936) treated general rectangular matrices and proved the matrix approximation theorem that bears their names; the pseudoinverse is due to E. H. Moore (1920) and Roger Penrose (1955). The SVD became a practical tool only with the stable algorithm of Gene Golub and William Kahan (1965), refined by Golub and Christian Reinsch (1970), which computes it without ever forming $A\T A$.
+The SVD was discovered independently by Eugenio Beltrami (1873) and Camille Jordan (1874), who showed that a real bilinear form can be reduced to diagonal form by two orthogonal changes of variables; James Joseph Sylvester found it again for real square matrices in 1889. Erhard Schmidt (1907) developed the analogous theory for integral operators, including the low-rank approximation property, and Émile Picard (1910) introduced the name *singular values*. Carl Eckart and Gale Young, in a 1936 paper in the new journal *Psychometrika*, treated general rectangular matrices and proved the matrix approximation theorem that bears their names; the pseudoinverse is due to E. H. Moore (1920) and Roger Penrose (1955). The SVD became a practical tool only with the stable algorithm of Gene Golub and William Kahan (1965), refined by Golub and Christian Reinsch (1970), which computes it without ever forming $A\T A$.
 :::
 
 ## Where this leads
@@ -372,7 +372,7 @@ $A = \mathbf{w}\mathbf{w}\T$ with $\mathbf{w} = (1, 2)$, so $A = 5\,\mathbf{u}\m
 :::
 
 ::: exercise A condition number {level=2 check="3"}
-Find the condition number of $A = \begin{pmatrix}3&0\\4&5\end{pmatrix}$ and of $A\T A$.
+Find the condition number of $A = \begin{pmatrix}3&0\\4&5\end{pmatrix}$ and of $A\T A$. What is $\kappa(A)$?
 ::: solution
 From [[#ex-svd-2x2]], $\kappa(A) = \sigma_1/\sigma_2 = 3\sqrt5/\sqrt5 = 3$. The matrix $A\T A = \begin{pmatrix}25&20\\20&25\end{pmatrix}$ is symmetric positive definite with eigenvalues $45$ and $5$, which are also its singular values, so $\kappa(A\T A) = 9 = \kappa(A)^2$.
 :::

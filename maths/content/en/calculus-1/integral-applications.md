@@ -61,7 +61,7 @@ y: -1, 6
 shade: -1, 2
 between: true
 labels: y = x + 2; y = x^2
-caption: The region between the line and the parabola, from $x = -1$ to $x = 2$. Each thin vertical strip has height (top minus bottom) $x + 2 - x^2$; adding the strips gives the area $\frac92$. Hover to read off the height of the strip at any $x$.
+caption: The region between the line and the parabola, from $x = -1$ to $x = 2$. Each thin vertical strip has height (top minus bottom) $x + 2 - x^2$; adding the strips gives the area $\frac92$. Hover at any $x$ to read off the heights of the line and the parabola; their difference is the height of the strip there.
 :::
 
 Sometimes it is better to slice horizontally, treating $x$ as a function of $y$: if the region lies between $x = u(y)$ on the left and $x = v(y)$ on the right for $c\le y\le d$, its area is $\int_c^d\bigl(v(y) - u(y)\bigr)\,dy$, "right minus left".

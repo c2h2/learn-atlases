@@ -27,7 +27,7 @@ $$ {#eq-forced}
 函数$y_h = c_1y_1 + c_2y_2$称为**余解**（或齐次解），$y_p$称为**特解**。第2部分意味着可以把复杂的强迫项拆成简单的几部分，分别处理。常数$c_1, c_2$总是**最后**才用初始条件来确定，并且要针对完整的解$y_p + y_h$来确定。
 
 ::: warning 用初始条件确定常数时要针对完整的解
-一个常见的错误是只用$y_h$来拟合初始条件、确定$c_1, c_2$，然后再加上$y_p$。除非$y_p(t_0) = y_p'(t_0) = 0$，否则这样做会得到错误的答案。应当先写出$y = y_p + c_1y_1 + c_2y_2$，再施加条件$y(t_0) = y_0$和$y'(t_0) = y_1$。
+一个常见的错误是只用$y_h$来拟合初始条件、确定$c_1, c_2$，然后再加上$y_p$。除非$y_p(t_0) = y_p'(t_0) = 0$，否则这样做会得到错误的答案。应当先写出$y = y_p + c_1y_1 + c_2y_2$，再对这个$y$施加$t_0$处的两个初始条件。
 :::
 
 ## 待定系数法
@@ -187,7 +187,7 @@ $$
 y = c_1\cos t + c_2\sin t + \cos t\,\ln(\cos t) + t\sin t .
 $$
 
-区间很重要：$\sec t$在$\pm\frac\pi2$处不连续，特解在那里有对数奇点。
+区间很重要：$\sec t$在$\pm\frac\pi2$处不连续；特解在那里虽然保持有界，但它的导数以对数的方式趋于无穷。
 :::
 :::
 
@@ -282,7 +282,7 @@ x: 0, 60
 y: -10, 10
 sliders: w=2.8:2:4:0.02
 labels: x(t)
-caption: $x'' + 9x = \cos\omega t$从静止出发的响应（固有频率$\omega_0 = 3$；横轴为$t$）。把$\omega$滑向$3$：拍变得更慢、更高；而恰好在$\omega = 3$时，包络线张开成纯共振的直线$\pm t/6$。把$\omega$移到远离$3$处，响应就很小，只受到轻微的调制。
+caption: $x'' + 9x = \cos\omega t$从静止出发的响应（固有频率$\omega_0 = 3$；横轴为$t$）。把$\omega$滑向$3$：拍变得更慢、更高；而恰好在$\omega = 3$时，包络线张开成纯共振的直线$\pm t/6$。把$\omega$移到远离$3$处，响应就很小，拍也很短。
 :::
 
 ## 有阻尼受迫振动：瞬态与稳态
@@ -300,7 +300,7 @@ caption: $x'' + 9x = \cos\omega t$从静止出发的响应（固有频率$\omega
 所以对于周期外力$F_0\cos\omega t$，每个解都趋近于一个特殊的解，称为**稳态**，而齐次部分称为**瞬态**。
 
 ::: theorem 稳态响应 {#thm-steady}
-设$m, c, k > 0$。方程$mx'' + cx' + kx = F_0\cos\omega t$恰有一个周期解
+设$m, c, k > 0$，$\omega > 0$。方程$mx'' + cx' + kx = F_0\cos\omega t$恰有一个周期解
 
 $$
 x_{\mathrm{ss}}(t) = A(\omega)\cos(\omega t - \delta), \qquad A(\omega) = \frac{F_0}{\sqrt{(k - m\omega^2)^2 + c^2\omega^2}}, \qquad \tan\delta = \frac{c\,\omega}{k - m\omega^2},
@@ -316,7 +316,7 @@ $$
 \bigl(k - m\omega^2 + ic\omega\bigr)Z = F_0 .
 $$
 
-括号中的因子不为零，因为它的虚部$c\omega \ne 0$（当$\omega \neq 0$时；当$\omega = 0$时，它等于$k \neq 0$）。所以$Z = F_0/(k - m\omega^2 + ic\omega)$，其模为$\lvert Z\rvert = A(\omega)$，辐角为$-\delta$，其中$\delta$是$k - m\omega^2 + ic\omega$的辐角；由于虚部为正，$\delta$落在$(0,\pi)$中。于是$\operatorname{Re}(Ze^{i\omega t}) = A(\omega)\cos(\omega t - \delta)$是一个周期解。由[[#prop-transient]]，每个解都收敛于它。如果有两个周期解，它们的差就是齐次方程的一个趋于$0$的周期解，因而恒为零。
+括号中的因子不为零，因为它的虚部$c\omega$为正。所以$Z = F_0/(k - m\omega^2 + ic\omega)$，其模为$\lvert Z\rvert = A(\omega)$，辐角为$-\delta$，其中$\delta$是$k - m\omega^2 + ic\omega$的辐角；由于虚部为正，$\delta$落在$(0,\pi)$中。于是$\operatorname{Re}(Ze^{i\omega t}) = A(\omega)\cos(\omega t - \delta)$是一个周期解。由[[#prop-transient]]，每个解都收敛于它。如果有两个周期解，它们的差就是齐次方程的一个趋于$0$的周期解，因而恒为零。
 :::
 
 ::: remark 复化
@@ -477,14 +477,14 @@ $$
 :::
 
 ::: exercise 共振频率 {level=2 check="sqrt(7/2)"}
-对于$x'' + x' + 4x = \cos\omega t$，求使稳态振幅最大的驱动频率$\omega_r$，以及最大振幅。
+对于$x'' + x' + 4x = \cos\omega t$，求使稳态振幅最大的驱动频率$\omega_r$，以及最大振幅。输入$\omega_r$。
 ::: solution
 这里$m = 1$，$c = 1$，$k = 4$，并且$c^2 = 1 < 8 = 2mk$。由[[#cor-practical]]，$\omega_r = \sqrt{4 - \frac12} = \sqrt{7/2}\approx 1.871$，$A(\omega_r) = \dfrac{1}{1\cdot\sqrt{4 - \frac14}} = \dfrac{2}{\sqrt{15}}\approx 0.516$。
 :::
 :::
 
 ::: exercise 最响的拍 {level=2 check="2"}
-求解$x'' + 25x = 9\cos 4t$，$x(0) = x'(0) = 0$。最大位移是多少？它第一次在何时达到？
+求解$x'' + 25x = 9\cos 4t$，$x(0) = x'(0) = 0$。最大位移是多少？它第一次在何时达到？输入最大位移。
 ::: solution
 由[[#eq-beats]]，取$\omega_0 = 5$，$\omega = 4$，$F_0/(\omega_0^2 - \omega^2) = 9/9 = 1$：$x = \cos4t - \cos5t = 2\sin\frac t2\sin\frac{9t}{2}$。显然$\lvert x\rvert\le 2$，而$x = 2$要求$\cos 4t = 1$且$\cos5t = -1$，即$4t \in 2\pi\Z$且$5t \in \pi + 2\pi\Z$。满足这些条件的最小正数$t$是$t = \pi$（$4\pi$和$5\pi$）。所以最大位移为$2$，第一次在$t = \pi$时达到，正好在第一个拍的中间。
 :::

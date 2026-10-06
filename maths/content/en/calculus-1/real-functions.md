@@ -287,7 +287,7 @@ $$
 
 and the bracket tends to $1$ as $x\to\pm\infty$. So $x^3 - 100x^2$ eventually behaves like $x^3$, however large the $100$. Rational functions at infinity are compared through their leading terms in the same way, as in [[calculus-1/limits#ex-rational-infinity]].
 
-**Powers and roots.** For an integer $n\ge2$, the $n$th root $\sqrt[n]{x} = x^{1/n}$ is the inverse of $x\mapsto x^n$: on $[0, \infty)$ when $n$ is even, and on all of $\R$ when $n$ is odd (then $x^n$ is strictly increasing on $\R$). Rational powers are defined by $x^{m/n} = \bigl(\sqrt[n]{x}\bigr)^m$. Power functions with negative or fractional exponents, such as $x^{-1}$ and $x^{2/3}$, will be our standard examples of graphs with asymptotes and cusps.
+**Powers and roots.** For an integer $n\ge2$, the $n$th root $\sqrt[n]{x} = x^{1/n}$ is the inverse of $x\mapsto x^n$: on $[0, \infty)$ when $n$ is even, and on all of $\R$ when $n$ is odd (then $x^n$ is strictly increasing on $\R$). Rational powers are defined by $x^{m/n} = \bigl(\sqrt[n]{x}\bigr)^m$, with $m/n$ in lowest terms (otherwise $(-8)^{2/6}$ would be undefined although $(-8)^{1/3} = -2$). Power functions with negative or fractional exponents, such as $x^{-1}$ and $x^{2/3}$, will be our standard examples of graphs with asymptotes and cusps.
 
 ## Exponential and logarithmic functions
 
@@ -327,7 +327,7 @@ Moreover, for any other base $b>0$ with $b\neq1$, we have the change-of-base for
 Put $u = \log_a x$ and $v = \log_a y$, so that $a^u = x$ and $a^v = y$. By [[#eq-exp-laws]], $a^{u+v} = a^u a^v = xy$, which says precisely that $\log_a(xy) = u + v$. Similarly $a^{u-v} = a^u a^{-v} = x/y$ (because $a^{-v}a^{v} = a^0 = 1$), and $a^{ru} = (a^u)^r = x^r$; these give the second and third laws. For the change of base, apply $\log_b$ to $x = a^u$ and use the third law (for base $b$): $\log_b x = u\log_b a$. Since $a\neq1$, $\log_b a\neq 0$, and so $u = \log_b x/\log_b a$.
 :::
 
-By the change-of-base formula every exponential is a rescaled natural exponential, $a^x = e^{x\ln a}$, and every logarithm a rescaled natural logarithm. This is why calculators and programming languages provide little more than $\exp$ and $\ln$.
+Since $a = e^{\ln a}$, the laws of exponents give $a^x = e^{x\ln a}$, and the change-of-base formula gives $\log_a x = \ln x/\ln a$: every exponential is a rescaled natural exponential, and every logarithm a rescaled natural logarithm. This is why calculators and programming languages provide little more than $\exp$ and $\ln$.
 
 ::: widget plot
 f: a^x; log(x, a); x
@@ -336,7 +336,7 @@ x: -4, 6
 y: -4, 6
 equal: true
 labels: a^x; \log_a x; y=x
-caption: The graph of $\log_a x$ is the mirror image of the graph of $a^x$ in the line $y = x$, as [[#prop-inverse-graph]] predicts. Move $a$: for $a > 1$ both functions increase, for $a<1$ both decrease. Near $a = 1$ the exponential flattens to the constant $1$, which is not one-to-one, and the logarithm disappears. Every $a^x$ passes through $(0,1)$ and every $\log_a x$ through $(1,0)$.
+caption: The graph of $\log_a x$ is the mirror image of the graph of $a^x$ in the line $y = x$, as [[#prop-inverse-graph]] predicts. Move $a$: for $a > 1$ both functions increase, for $a<1$ both decrease. As $a$ approaches $1$ the exponential flattens towards the constant $1$, which is not one-to-one, while the graph of the logarithm steepens towards the vertical line $x = 1$ and vanishes at $a = 1$. Every $a^x$ passes through $(0,1)$ and every $\log_a x$ through $(1,0)$.
 :::
 
 ::: example Solving an exponential equation {#ex-exp-equation}
@@ -627,7 +627,7 @@ Every real $y$ is therefore a value of $\sinh$, so its range is $\R$, and this f
 ::: exercise Polynomials that agree at many points {#exr-poly-agree level=3}
 Let $p$ and $q$ be polynomials of degree at most $n$, and suppose that $p(x_k) = q(x_k)$ for $n+1$ distinct numbers $x_0, x_1, \dots, x_n$. Prove that $p$ and $q$ have the same coefficients.
 ::: solution
-The difference $r = p - q$ is a polynomial whose coefficients are the differences of those of $p$ and $q$, all of degree at most $n$, and $r(x_k) = 0$ for $k = 0, \dots, n$. Suppose some coefficient of $r$ is non-zero. Then $r$ has a degree $m$ with $0 \le m\le n$, and by [[#cor-roots]] it has at most $m \le n$ distinct roots. But $x_0, \dots, x_n$ are $n + 1$ distinct roots — a contradiction. Hence every coefficient of $r$ is $0$, so $p$ and $q$ have the same coefficients.
+The difference $r = p - q$ is a polynomial whose coefficients are the differences of those of $p$ and $q$, so it has no terms of degree above $n$, and $r(x_k) = 0$ for $k = 0, \dots, n$. Suppose some coefficient of $r$ is non-zero. Then $r$ has a degree $m$ with $0 \le m\le n$, and by [[#cor-roots]] it has at most $m \le n$ distinct roots. But $x_0, \dots, x_n$ are $n + 1$ distinct roots — a contradiction. Hence every coefficient of $r$ is $0$, so $p$ and $q$ have the same coefficients.
 :::
 :::
 

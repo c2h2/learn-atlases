@@ -28,7 +28,7 @@ $$
 d\mathbf{n}_p(\mathbf{w}) = \frac{d}{dt}\Big|_{t=0}\mathbf{n}\bigl(\boldsymbol\alpha(t)\bigr).
 $$
 
-In a patch, if $\boldsymbol\alpha(t) = \mathbf{x}(u(t), v(t))$, the chain rule gives $d\mathbf{n}_p(\mathbf{w}) = \mathbf{n}_u u'(0) + \mathbf{n}_v v'(0)$ for $\mathbf{w} = \mathbf{x}_uu'(0) + \mathbf{x}_vv'(0)$. So $d\mathbf{n}_p(\mathbf{w})$ depends only on $\mathbf{w}$, not on the curve, and it is linear in $\mathbf{w}$, with $d\mathbf{n}_p(\mathbf{x}_u) = \mathbf{n}_u$ and $d\mathbf{n}_p(\mathbf{x}_v) = \mathbf{n}_v$. Moreover $d\mathbf{n}_p(\mathbf{w})$ lies in the tangent plane: differentiating $\mathbf{n}\cdot\mathbf{n} = 1$ gives $2\,\mathbf{n}\cdot d\mathbf{n}_p(\mathbf{w}) = 0$, so $d\mathbf{n}_p(\mathbf{w})$ is orthogonal to $\mathbf{n}(p)$ — exactly the condition for a vector to lie in $T_pS$ ([[differential-geometry/regular-surfaces#def-tangent-plane]]). Hence $d\mathbf{n}_p$ is a linear map from $T_pS$ to itself.
+In a patch, if $\boldsymbol\alpha(t) = \mathbf{x}(u(t), v(t))$, the chain rule gives $d\mathbf{n}_p(\mathbf{w}) = \mathbf{n}_u u'(0) + \mathbf{n}_v v'(0)$ for $\mathbf{w} = \mathbf{x}_uu'(0) + \mathbf{x}_vv'(0)$. So $d\mathbf{n}_p(\mathbf{w})$ depends only on $\mathbf{w}$, not on the curve, and it is linear in $\mathbf{w}$, with $d\mathbf{n}_p(\mathbf{x}_u) = \mathbf{n}_u$ and $d\mathbf{n}_p(\mathbf{x}_v) = \mathbf{n}_v$. Moreover $d\mathbf{n}_p(\mathbf{w})$ lies in the tangent plane: differentiating $\mathbf{n}\cdot\mathbf{n} = 1$ gives $2\,\mathbf{n}\cdot d\mathbf{n}_p(\mathbf{w}) = 0$, so $d\mathbf{n}_p(\mathbf{w})$ is orthogonal to $\mathbf{n}(p)$ — exactly the condition for a vector to lie in $T_pS$ ([[differential-geometry/regular-surfaces#thm-tangent-plane]]). Hence $d\mathbf{n}_p$ is a linear map from $T_pS$ to itself.
 
 ## The shape operator and the second fundamental form
 
@@ -179,7 +179,7 @@ $$
 This is a weighted average of $\kappa_1$ and $\kappa_2$ with weights $\cos^2\theta + \sin^2\theta = 1$, so it lies between them, with the extremes at $\theta = 0$ and $\theta = \pi/2$.
 :::
 
-So the bending of a surface in all directions is controlled by two numbers in two perpendicular directions — Euler's discovery of 1760. The directions in which $\kappa_n = 0$ are the **asymptotic directions**; by Euler's formula they exist exactly when $\kappa_1\kappa_2\le0$, and then $\tan^2\theta = -\kappa_1/\kappa_2$ (if $\kappa_2 = 0$, the asymptotic direction is $\theta = \pi/2$, the second principal direction).
+So the bending of a surface in all directions is controlled by two numbers in two perpendicular directions — Euler's discovery, published in 1767. The directions in which $\kappa_n = 0$ are the **asymptotic directions**; by Euler's formula they exist exactly when $\kappa_1\kappa_2\le0$. If $\kappa_2\ne0$ they are given by $\tan^2\theta = -\kappa_1/\kappa_2$; if $\kappa_2 = 0 < \kappa_1$, the only asymptotic direction is $\theta = \pi/2$, the second principal direction; and at a planar point ($\kappa_1 = \kappa_2 = 0$) every direction is asymptotic.
 
 ::: quiz
 What are the principal curvatures of a circular cylinder of radius $R$ (with the inward normal), and what is their product?
@@ -310,7 +310,7 @@ At a point $p$ of a surface the Gaussian curvature is negative. Which statement 
 - [ ] The mean curvature at $p$ must be zero.
 - [ ] The sign of $K$ depends on the choice of unit normal.
 ::: solution
-$K < 0$ means $LN - M^2 < 0$, so by [[#prop-height]] the height above the tangent plane has an indefinite Hessian: the point is a saddle point of the height function, and the surface crosses its tangent plane. $H$ need not vanish (on the inner side of a torus $K < 0$ but $H\ne0$), and $K$ is independent of the orientation.
+$K < 0$ means $LN - M^2 < 0$, so by [[#prop-height]] the height above the tangent plane has an indefinite Hessian: the point is a saddle point of the height function, and the surface crosses its tangent plane. $H$ need not vanish (on most of the inner half of a torus $K < 0$ but $H\ne0$), and $K$ is independent of the orientation.
 :::
 :::
 
@@ -374,7 +374,7 @@ Soap films are minimal surfaces, and their study (Plateau's problem: does every 
 :::
 
 ::: history
-Leonhard Euler began the study of the curvature of surfaces in his *Recherches sur la courbure des surfaces* (written in 1760, published in 1767), proving the formula $\kappa_n = \kappa_1\cos^2\theta + \kappa_2\sin^2\theta$ for the curvatures of normal sections. In 1776 Jean-Baptiste Meusnier, then a young military engineer, related the curvature of oblique sections to normal ones, and found that the catenoid and the helicoid satisfy Lagrange's equation for surfaces of least area. The decisive step came in Carl Friedrich Gauss's *Disquisitiones generales circa superficies curvas* (1827), which introduced the normal map to the sphere, defined the curvature of a surface as the ratio of areas in [[#prop-gauss-area]], and derived the formula in terms of the coefficients of the two fundamental forms. Meusnier also observed that Lagrange's equation says the two principal curvatures are equal and opposite — zero mean curvature, in modern terms — and the mean curvature later took centre stage in Sophie Germain's work on the vibrations of elastic plates, which won the Paris Academy's prize in 1816.
+Leonhard Euler began the study of the curvature of surfaces in his *Recherches sur la courbure des surfaces* (presented to the Berlin Academy in 1763, published in 1767), proving the formula $\kappa_n = \kappa_1\cos^2\theta + \kappa_2\sin^2\theta$ for the curvatures of normal sections. In 1776 Jean-Baptiste Meusnier, then a young military engineer, related the curvature of oblique sections to normal ones, and found that the catenoid and the helicoid satisfy Lagrange's equation for surfaces of least area. The decisive step came in Carl Friedrich Gauss's *Disquisitiones generales circa superficies curvas* (1827), which introduced the normal map to the sphere, defined the curvature of a surface as the ratio of areas in [[#prop-gauss-area]], and derived the formula in terms of the coefficients of the two fundamental forms. Meusnier also observed that Lagrange's equation says the two principal curvatures are equal and opposite — zero mean curvature, in modern terms — and the mean curvature later took centre stage in Sophie Germain's work on the vibrations of elastic plates, which won the Paris Academy's prize in 1816.
 :::
 
 ## Where this leads
@@ -423,7 +423,7 @@ By [[#ex-saddle]], $K = -\dfrac{1}{(1 + x^2 + y^2)^2} = -\dfrac{1}{(1 + 1 + 1)^2
 :::
 
 ::: exercise The outermost circle of a torus {level=2 check="1/3"}
-For the torus of [[#ex-torus]] with $a = 2$, $b = 1$, find the Gaussian curvature at the points of the outermost circle, and the principal curvatures there.
+For the torus of [[#ex-torus]] with $a = 2$, $b = 1$, find the Gaussian curvature at the points of the outermost circle, and the principal curvatures there. (Enter $K$.)
 ::: solution
 At $u = 0$, $K = \dfrac{\cos0}{1\cdot(2 + 1)} = \dfrac13$. There $E = 1$, $G = 9$, $L = 1$, $N = 3$, $F = M = 0$, so the matrix of $W$ is $\operatorname{diag}(L/E, N/G) = \operatorname{diag}(1, \tfrac13)$: the principal curvatures are $1$ (around the tube, a circle of radius $b = 1$) and $\tfrac13$ (around the outer circle of radius $a + b = 3$).
 :::

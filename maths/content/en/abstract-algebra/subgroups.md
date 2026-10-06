@@ -79,7 +79,7 @@ $$
 the set of elements that commute with everything. For $a \in G$, the **centraliser** of $a$ is $C_G(a) = \set{g \in G : ga = ag}$.
 :::
 
-Both are subgroups. For the centre: $e \in Z(G)$; if $a, b \in Z(G)$ and $g \in G$, then $(ab)g = a(bg) = a(gb) = (ag)b = (ga)b = g(ab)$, so $ab \in Z(G)$; and from $ag = ga$ we get, multiplying by $a^{-1}$ on both sides, $ga^{-1} = a^{-1}g$, so $a^{-1} \in Z(G)$. The same computation with a single $g = a$ fixed shows $C_G(a) \le G$. Clearly $G$ is abelian if and only if $Z(G) = G$, and $Z(G) = \bigcap_{a\in G} C_G(a)$.
+Both are subgroups. For the centre: $e \in Z(G)$; if $a, b \in Z(G)$ and $g \in G$, then $(ab)g = a(bg) = a(gb) = (ag)b = (ga)b = g(ab)$, so $ab \in Z(G)$; and from $ag = ga$ we get, multiplying by $a^{-1}$ on both sides, $ga^{-1} = a^{-1}g$, so $a^{-1} \in Z(G)$. The same computation with $g$ fixed shows that the centraliser $C_G(g)$ is a subgroup. Clearly $G$ is abelian if and only if $Z(G) = G$, and $Z(G) = \bigcap_{a\in G} C_G(a)$.
 
 ::: example The centre of GL₂(ℝ) {#ex-centre-gl2}
 Show that $Z(\mathrm{GL}_2(\R)) = \set{\lambda I : \lambda \neq 0}$, the non-zero scalar matrices.
@@ -350,7 +350,7 @@ Long before groups were defined, cyclic groups were at the heart of Carl Friedri
 
 ## Where this leads
 
-Subgroups of a general finite group are far less tidy than those of a cyclic group, but one constraint survives: in [[abstract-algebra/lagrange]] we prove that the order of *every* subgroup of a finite group divides the order of the group. The converse half of [[#thm-cyclic-subgroups]] — a subgroup for every divisor — fails in general, and the Sylow theorems of [[abstract-algebra/group-actions]] describe how much of it survives. The question of which groups $U(n)$ are cyclic is answered in [[number-theory/primitive-roots]], and Gauss's $17$-gon reappears as a Galois correspondence in [[abstract-algebra/fields-galois]].
+Subgroups of a general finite group are far less tidy than those of a cyclic group, but one constraint survives: in [[abstract-algebra/lagrange]] we prove that the order of *every* subgroup of a finite group divides the order of the group. The converse half of [[#thm-cyclic-subgroups]] — a subgroup for every divisor — fails in general, and the Sylow theorems of [[abstract-algebra/group-actions]] describe how much of it survives. The question of which groups $U(n)$ are cyclic is answered in [[number-theory/primitive-roots]], and Gauss's $17$-gon argument is the prototype of the correspondence between subgroups and intermediate fields studied in [[abstract-algebra/fields-galois]].
 
 ::: summary
 - A non-empty subset $H$ is a subgroup if and only if $ab^{-1} \in H$ for all $a, b \in H$ ([[#thm-subgroup-test]]); for finite $H$, closure alone suffices.

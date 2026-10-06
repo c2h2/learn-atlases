@@ -71,7 +71,7 @@ $$ {#eq-holder}
 :::
 
 ::: proof
-若$p = 1$，$q = \infty$：几乎处处有$\abs{fg} \le \abs f\,\norm g_\infty$，积分即得结论。现在设$1 < p < \infty$。若$\norm f_p = 0$或$\norm g_q = 0$，则几乎处处有$f = 0$，或几乎处处有$g = 0$，所以几乎处处有$fg = 0$，两边都为零。否则，令$F = \abs f/\norm f_p$，$G = \abs g/\norm g_q$，于是$\int F^p = \int G^q = 1$。在每一点处应用杨不等式，得$FG \le \frac{F^p}{p} + \frac{G^q}{q}$，积分得
+若$p = 1$，$q = \infty$：几乎处处有$\abs{fg} \le \abs f\,\norm g_\infty$，积分即得结论；$p = \infty$，$q = 1$的情形只需交换$f$与$g$。现在设$1 < p < \infty$。若$\norm f_p = 0$或$\norm g_q = 0$，则几乎处处有$f = 0$，或几乎处处有$g = 0$，所以几乎处处有$fg = 0$，两边都为零。否则，令$F = \abs f/\norm f_p$，$G = \abs g/\norm g_q$，于是$\int F^p = \int G^q = 1$。在每一点处应用杨不等式，得$FG \le \frac{F^p}{p} + \frac{G^q}{q}$，积分得
 
 $$
 \int FG\,d\mu \le \frac1p + \frac1q = 1.
@@ -80,7 +80,7 @@ $$
 乘以$\norm f_p\norm g_q$，即得[[#eq-holder]]。
 :::
 
-$p = q = 2$的情形就是**柯西-施瓦茨（Cauchy–Schwarz）不等式**$\int\abs{fg} \le \norm f_2\norm g_2$，它表明$\inner{f}{g} = \int fg\,d\mu$是$L^2$上的内积，且$\norm{f}_2 = \sqrt{\inner ff}$（[[linear-algebra/inner-products]]）。它让我们初步看到$L^p$范数是如何控制函数的。
+$p = q = 2$的情形就是**柯西-施瓦茨（Cauchy–Schwarz）不等式**$\int\abs{fg} \le \norm f_2\norm g_2$，它表明对所有$f, g \in L^2$，$\inner{f}{g} = \int fg\,d\mu$都有定义；它是$L^2$上的内积，且$\norm{f}_2 = \sqrt{\inner ff}$（[[linear-algebra/inner-products]]）。它让我们初步看到$L^p$范数是如何控制函数的。
 
 ::: example 平方可积的导数 {#ex-holder-continuity}
 设$f \in L^2(0, 1)$，$F(x) = \int_0^x f\,d\lambda$。证明：对所有$x, y \in [0, 1]$，$\abs{F(x) - F(y)} \le \norm{f}_2\,\abs{x - y}^{1/2}$。
@@ -91,7 +91,7 @@ $$
 \abs{F(x) - F(y)} = \Bigl\lvert\int_0^1 f\,\mathbf{1}_{[y,x]}\,d\lambda\Bigr\rvert \le \norm{f}_2\,\norm{\mathbf{1}_{[y, x]}}_2 = \norm f_2\,(x - y)^{1/2}.
 $$
 
-所以$F$是指数为$\tfrac12$的赫尔德连续函数，这是对[[real-analysis/riemann-integral#thm-ftc1]]中利普希茨（Lipschitz）界的一个定量改进，后者要求$f$有界。若$f \in L^p$，用赫尔德不等式作同样的论证，可得指数$1 - \frac1p$。
+所以$F$是指数为$\tfrac12$的赫尔德连续函数：这个界比[[real-analysis/riemann-integral#thm-ftc1]]中的利普希茨（Lipschitz）界弱（后者要求$f$有界），但它对每个$f \in L^2$都成立，不论$f$是否有界。若$f \in L^p$，用赫尔德不等式作同样的论证，可得指数$1 - \frac1p$。
 :::
 :::
 
@@ -157,7 +157,7 @@ $$
 ::: widget metricballs
 metrics: 1; 2; inf
 radius: 1
-caption: $\R^2$中的单位球$\set{x : \norm{x}_p < 1}$——即两点集上计数测度的空间$L^p$。把$p$从$1$滑动到$\infty$：球从菱形膨胀为正方形，并且始终是**凸**的。闵可夫斯基不等式恰好就是这种凸性。当$p < 1$时，“球”$\lvert x_1\rvert^p + \lvert x_2\rvert^p < 1$将是星形的，各边向内弯曲，三角不等式也将不成立。
+caption: $\R^2$中的单位球$\set{x : \norm{x}_p < 1}$——即两点集上计数测度的空间$L^p$。把$p$从$1$滑动到$\infty$：球从菱形膨胀为正方形，并且始终是**凸**的。闵可夫斯基不等式恰好就是这种凸性。把$p$滑到$1$以下：“球”$\lvert x_1\rvert^p + \lvert x_2\rvert^p < 1$变成星形，各边向内弯曲，连接其边界上两点的红色虚线弦跑到了球外，三角不等式不再成立。
 :::
 
 ::: warning p小于1时没有三角不等式
@@ -168,20 +168,20 @@ caption: $\R^2$中的单位球$\set{x : \norm{x}_p < 1}$——即两点集上计
 设$f \in L^2(0, 1)$。由柯西-施瓦茨不等式可以得到$\int_0^1\abs{f(x)}\sqrt x\,dx$的下列哪个上界？
 - [x] $\norm f_2/\sqrt2$
 - [ ] $\norm f_2/2$
-- [ ] $\norm f_1$
+- [ ] $\norm f_2/\sqrt3$
 - [ ] $\norm{f}_2^2$
 ::: solution
-由柯西-施瓦茨不等式，$\int_0^1\abs f\sqrt x\,dx \le \norm f_2\bigl(\int_0^1x\,dx\bigr)^{1/2} = \norm f_2\cdot\frac{1}{\sqrt2}$。其他几个界都推不出来：例如$\norm f_2^2$的齐次性不对（把$f$加倍，界应该加倍，而不是变为四倍）。
+由柯西-施瓦茨不等式，$\int_0^1\abs f\sqrt x\,dx \le \norm f_2\bigl(\int_0^1x\,dx\bigr)^{1/2} = \norm f_2\cdot\frac{1}{\sqrt2}$。其他几个界一般都不成立。对$f(x) = \sqrt x$，柯西-施瓦茨不等式取等号，积分等于$\frac12 = \norm f_2/\sqrt2$，大于$\norm f_2/2$和$\norm f_2/\sqrt3$；而$\norm f_2^2$的齐次性不对（把$f$加倍，界应该加倍，而不是变为四倍）。
 :::
 :::
 
 ::: remark 对偶性
-赫尔德不等式表明，每个$g \in L^q$都定义了$L^p$上的一个线性泛函$\Lambda_g(f) = \int fg\,d\mu$，且$\abs{\Lambda_g(f)} \le \norm g_q\norm f_p$。杨不等式中等号成立的情形表明这个界是精确的：当$1 < p < \infty$时，函数$f = \abs g^{q-1}\sgn g$使等号成立，所以$\Lambda_g$的范数恰好是$\norm g_q$。**里斯（Riesz）表示定理**给出了逆命题：当$1 \le p < \infty$时（$p = 1$时还要求$\mu$是σ-有限的），$L^p$上的每个有界线性泛函都具有$\Lambda_g$的形式，其中$g \in L^q$是唯一的，因此$L^p$的对偶空间是$L^q$。它的证明要用到拉东-尼科迪姆（Radon–Nikodym）定理；见福兰德（Folland）《实分析》（*Real Analysis*）第6章。当$p = \infty$时，对偶空间严格大于$L^1$。
+赫尔德不等式表明，每个$g \in L^q$都定义了$L^p$上的一个线性泛函$\Lambda_g(f) = \int fg\,d\mu$，且$\abs{\Lambda_g(f)} \le \norm g_q\norm f_p$。杨不等式中等号成立的情形表明这个界是精确的：当$1 < p < \infty$时，函数$f = \abs g^{q-1}\sgn g$使等号成立，所以$\Lambda_g$的范数恰好是$\norm g_q$。**里斯（Riesz）表示定理**给出了逆命题：当$1 \le p < \infty$时（$p = 1$时还要求$\mu$是σ-有限的），$L^p$上的每个有界线性泛函都具有$\Lambda_g$的形式，其中$g \in L^q$是唯一的，因此$L^p$的对偶空间是$L^q$。它的证明要用到拉东-尼科迪姆（Radon–Nikodym）定理；见福兰德（Folland）《实分析》（*Real Analysis*）第6章。当$p = \infty$时，对偶空间一般严格大于$L^1$（例如对勒贝格测度）。
 :::
 
 ## 完备性：里斯-费希尔定理
 
-$L^p$的决定性性质是：柯西列都收敛。证明要用到一个在任何赋范空间中都成立的判别准则，以及上一章的两个收敛定理。
+$L^p$的决定性性质是：柯西列都收敛。证明要用到一个在任何赋范空间中都成立的判别准则，以及上一章的单调收敛定理和控制收敛定理。
 
 ::: lemma 绝对收敛级数 {#lem-abs-series}
 设$V$是赋范空间。若$V$中每个满足$\sum\norm{v_k} < \infty$的级数$\sum v_k$都在$V$中收敛，则$V$是完备的。
@@ -206,11 +206,11 @@ $$
 
 **子列。**若在$L^p$中$f_n \to f$，则该序列是柯西列，而[[#lem-abs-series]]的证明与上面的论证结合起来，就给出一个子列$f_{n_k}$，它几乎处处收敛（它是一个几乎处处绝对收敛的级数的部分和$f_{n_{k+1}}$），也在$L^p$中收敛，并且两种意义下的极限是同一个函数$S$。度量空间中的极限是唯一的，所以在$L^p$中$S = f$，即几乎处处有$S = f$，从而几乎处处有$f_{n_k} \to f$。
 
-**情形$p = \infty$。**设$(f_n)$是$L^\infty$中的柯西列。对每个$n$，使$\abs{f_n} > \norm{f_n}_\infty$的点集是零测集；对每一对$m, n$，使$\abs{f_m - f_n} > \norm{f_m - f_n}_\infty$的点集也是零测集。设$N$是这可数多个零测集之并。在$N$之外，该序列是一致柯西的，所以它一致收敛于一个有界函数$f$（[[real-analysis/uniform-convergence#thm-uniform-cauchy]]）；在$N$上令$f = 0$，就得到$\norm{f_n - f}_\infty \to 0$。
+**情形$p = \infty$。**设$(f_n)$是$L^\infty$中的柯西列。对每个$n$，使$\abs{f_n} > \norm{f_n}_\infty$的点集是零测集；对每一对$m, n$，使$\abs{f_m - f_n} > \norm{f_m - f_n}_\infty$的点集也是零测集。设$N$是这可数多个零测集之并。在$N$之外，该序列是一致柯西的，所以它一致收敛于一个有界函数$f$（[[real-analysis/uniform-convergence#thm-uniform-cauchy]]）；在$N$上令$f = 0$，就得到$\norm{f_n - f}_\infty \to 0$。类似地，若在$L^\infty$中$f_n \to f$，则在某个零测集之外，对每个$n$都有$\abs{f_n - f} \le \norm{f_n - f}_\infty$，所以当$p = \infty$时，整个序列都几乎处处收敛于$f$。
 :::
 
 ::: remark 完备化与稠密性
-在完备空间中，一个稠密子空间决定了一切。对$1 \le p < \infty$，在测度有限的集合之外为零的简单函数在$L^p(\mu)$中稠密：对$f \ge 0$，[[measure-theory/measurable-functions#thm-simple-approx]]中的逼近$\varphi_n \uparrow f$满足$\abs{f - \varphi_n}^p \le f^p$，所以由控制收敛定理，$\norm{f - \varphi_n}_p \to 0$。对勒贝格测度，还可以更进一步：利用勒贝格测度的正则性（[[measure-theory/lebesgue-measure#thm-regularity]]）把可测集换成有限多个区间之并，可知当$p < \infty$时，阶梯函数以及在有界区间之外为零的连续函数都在$L^p(\R)$中稠密。用[[real-analysis/metric-spaces]]一章的语言来说，$L^1(a, b)$是[[real-analysis/metric-spaces#ex-incomplete]]中不完备空间$(C[a,b], d_1)$的完备化。（当$p = \infty$时，稠密性不成立：连续函数的一致极限是连续的，所以$\mathbf{1}_{[0, 1/2]}$不在$C[0, 1]$的闭包中。）
+在完备空间中，一个稠密子空间决定了一切。对$1 \le p < \infty$，在测度有限的集合之外为零的简单函数在$L^p(\mu)$中稠密：对$f \ge 0$，[[measure-theory/measurable-functions#thm-simple-approx]]中的逼近$\varphi_n \uparrow f$满足$\abs{f - \varphi_n}^p \le f^p$，所以由控制收敛定理，$\norm{f - \varphi_n}_p \to 0$；每个$\varphi_n$在$\set{f \ge 2^{-n}}$之外为零，而由马尔可夫不等式，这个集合的测度有限；对一般的$f$，利用$f = f^+ - f^-$即可。对勒贝格测度，还可以更进一步：利用勒贝格测度的正则性（[[measure-theory/lebesgue-measure#thm-regularity]]）把可测集换成有限多个区间之并，可知当$p < \infty$时，阶梯函数以及在有界区间之外为零的连续函数都在$L^p(\R)$中稠密。用[[real-analysis/metric-spaces]]一章的语言来说，$L^1(a, b)$是[[real-analysis/metric-spaces#ex-incomplete]]中不完备空间$(C[a,b], d_1)$的完备化。（当$p = \infty$时，稠密性不成立：连续函数的一致极限是连续的，所以$\mathbf{1}_{[0, 1/2]}$不在$C[0, 1]$的闭包中。）
 :::
 
 ::: application 傅里叶级数与最小二乘
@@ -237,7 +237,7 @@ $$
 \mu\bigl(\set{\abs{f_n - f} > \eps}\bigr) \le \frac{1}{\eps^p}\int\abs{f_n - f}^p\,d\mu = \frac{\norm{f_n - f}_p^p}{\eps^p} \to 0.
 $$ {#eq-chebyshev}
 
-在有限测度空间上，几乎处处收敛也蕴涵依测度收敛（[[#exr-5-7]]）。依测度收敛并不蕴涵几乎处处收敛——但也相差不远。
+在有限测度空间上，几乎处处收敛也蕴涵依测度收敛（[[#exr-5-7]]；它也可以由叶戈罗夫（Egorov）定理（[[measure-theory/measurable-functions#thm-egorov]]）直接推出，因为在一个测度可以任意小的集合之外，对所有充分大的$n$都有$\abs{f_n - f} \le \eps$）。依测度收敛并不蕴涵几乎处处收敛——但也相差不远。
 
 ::: theorem 里斯子列定理 {#thm-riesz-subsequence}
 若依测度有$f_n \to f$，则存在子列$f_{n_k}$几乎处处收敛于$f$。
@@ -256,7 +256,7 @@ $$ {#eq-chebyshev}
 
 **在$L^p$中收敛与依测度收敛。**$\norm{f_n}_p = \bigl(2^{-k}\bigr)^{1/p} \to 0$，因为当$n \to \infty$时$k \to \infty$。由[[#eq-chebyshev]]，依测度也有$f_n \to 0$。
 
-**不逐点收敛。**固定$x \in [0, 1]$。在每一轮扫描（每个$k$）中，总有某个区间包含$x$，所以在每一段$2^k \le n < 2^{k+1}$中至少有一个$n$使$f_n(x) = 1$；而当$k \ge 1$时，这一轮扫描中也有某个区间不包含$x$，所以在这一段中还有另一个$n$使$f_n(x) = 0$。因此$f_n(x) = 1$无穷多次成立，$f_n(x) = 0$也无穷多次成立，从而$(f_n(x))$发散。
+**不逐点收敛。**固定$x \in [0, 1]$。在每一轮扫描（每个$k$）中，总有某个区间包含$x$，所以在每一段$2^k \le n < 2^{k+1}$中至少有一个$n$使$f_n(x) = 1$；而当$k \ge 2$时，这一轮扫描中也有某个区间不包含$x$（共有$2^k \ge 4$个区间，而$x$至多属于其中两个），所以在这一段中还有另一个$n$使$f_n(x) = 0$。因此$f_n(x) = 1$无穷多次成立，$f_n(x) = 0$也无穷多次成立，从而$(f_n(x))$发散。
 
 正如里斯定理所预言的，确实有子列几乎处处收敛：在每个$x > 0$处都有$f_{2^k} = \mathbf{1}_{[0, 2^{-k}]} \to 0$。
 :::
@@ -277,7 +277,7 @@ caption: 打字机序列$f_n$，其中$n = 2^k + j$。逐步增大$n$：高为$1
 :::
 :::
 
-再看两个例子，全貌就完整了。在$[0, 1]$上，$g_n = n\mathbf{1}_{(0, 1/n)}$处处收敛于$0$，也依测度收敛于$0$，但$\norm{g_n}_1 = 1$，所以不在$L^1$中收敛：没有控制条件时，几乎处处收敛不蕴涵$L^p$收敛。在$\R$上，$h_n = \mathbf{1}_{[n, n+1]}$处处收敛于$0$，但不依测度收敛，因为$\lambda(\set{h_n > \tfrac12}) = 1$：在测度无限的空间上，几乎处处收敛甚至不蕴涵依测度收敛。下表总结了这些关系。
+再看两个例子，全貌就完整了。在$[0, 1]$上，$g_n = n\mathbf{1}_{(0, 1/n)}$处处收敛于$0$，也依测度收敛于$0$，但$\norm{g_n}_1 = 1$，所以不在$L^1$中收敛：没有控制条件时，几乎处处收敛不蕴涵$L^p$收敛。在$\R$上，$h_n = \mathbf{1}_{[n, n+1]}$处处收敛于$0$，但不依测度收敛，因为$\lambda(\set{h_n > \tfrac12}) = 1$：在测度无限的空间上，几乎处处收敛甚至不蕴涵依测度收敛。下表总结了$1 \le p < \infty$时的这些关系，其中“有控制”是指存在同一个$g \in L^p$，使得对所有$n$都有$\abs{f_n} \le g$。
 
 | 从 ↓ / 到 → | 几乎处处收敛 | 依测度收敛 | $L^p$收敛 |
 |---|---|---|---|
@@ -310,7 +310,7 @@ $L^p$空间是测度论与泛函分析的交汇点。$L^2$是希尔伯特空间�
 - 由杨不等式$ab \le \frac{a^p}{p} + \frac{b^q}{q}$可得共轭指数的赫尔德不等式$\int\abs{fg} \le \norm f_p\norm g_q$（[[#thm-holder]]）；$p = q = 2$时就是柯西-施瓦茨不等式。
 - 闵可夫斯基不等式$\norm{f + g}_p \le \norm f_p + \norm g_p$使$L^p$在$p \ge 1$时成为赋范空间（[[#thm-minkowski]]）；当$p < 1$时它不成立。
 - 在有限测度空间上，当$p < r$时$L^r \subseteq L^p$；在$\R$上，任何包含关系都不成立；而对数列，$\ell^p \subseteq \ell^r$。
-- 里斯-费希尔定理：$L^p$是完备的，并且$L^p$收敛的序列有几乎处处收敛的子列（[[#thm-riesz-fischer]]）；简单函数是稠密的，（对勒贝格测度）阶梯函数和连续函数也是稠密的。
+- 里斯-费希尔定理：$L^p$是完备的，并且$L^p$收敛的序列有几乎处处收敛的子列（[[#thm-riesz-fischer]]）；当$p < \infty$时，简单函数是稠密的，（对勒贝格测度）阶梯函数和连续函数也是稠密的。
 - $L^p$收敛蕴涵依测度收敛，而依测度收敛又蕴涵有子列几乎处处收敛（[[#thm-riesz-subsequence]]）；打字机序列在$L^p$中收敛，却在任何点处都不逐点收敛。
 :::
 

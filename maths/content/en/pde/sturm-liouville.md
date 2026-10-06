@@ -169,7 +169,7 @@ Then the expansion converges to $\frac12\bigl(f(x^+) + f(x^-)\bigr)$ at every $x
 :::
 
 ::: proof {collapsed}
-*Sketch.* The full proof is longer than this chapter; see Coddington and Levinson, *Theory of Ordinary Differential Equations*, chapters 7–8, or Birkhoff and Rota, *Ordinary Differential Equations*, chapter 10. The two main ideas are as follows.
+*Sketch.* The full proof is longer than this chapter; see Coddington and Levinson, *Theory of Ordinary Differential Equations*, chapters 7–8, or Birkhoff and Rota, *Ordinary Differential Equations*, chapters 10–11. The two main ideas are as follows.
 
 *Existence and completeness* come from turning the differential equation into an integral equation. Shifting $\lambda$ if necessary, we may assume $0$ is not an eigenvalue. Then for each continuous $g$ the boundary value problem $Ly = g$ has a unique solution, given by $y(x) = \int_a^bG(x,s)\,g(s)\,ds$, where the **Green's function** $G$ is continuous and, because $L$ is self-adjoint, symmetric: $G(x,s) = G(s,x)$. The eigenvalue problem $Ly = \lambda wy$ becomes $y = \lambda\int_a^bG(x,s)w(s)y(s)\,ds$, an eigenvalue problem for an integral operator $K$ that is compact and self-adjoint on the space of functions with the inner product $\inner\cdot\cdot_w$. The spectral theorem for compact self-adjoint operators — the infinite-dimensional analogue of [[linear-algebra/spectral-theorem]] — provides an orthonormal sequence of eigenfunctions of $K$, with eigenvalues $\mu_n = 1/\lambda_n \to 0$, that spans the range of $K$; since that range is dense, the eigenfunctions are complete in the mean-square sense. Pointwise convergence for piecewise smooth $f$ follows by comparing the eigenfunction expansion with an ordinary Fourier series ("equiconvergence").
 
@@ -264,7 +264,7 @@ $$
 c_n = \frac{\int_0^1\sin\mu_nx\,dx}{\int_0^1\sin^2\mu_nx\,dx} = \frac{(1 - \cos\mu_n)/\mu_n}{\frac12\left(1 + \cos^2\mu_n\right)},
 $$
 
-which gives $c_1 \approx 1.189$, $c_2 \approx 0.313$, $c_3 \approx 0.278$. (As a check, summing a few thousand terms at $x = \frac12$ gives $1.0000$, as completeness promises.) For large $t$, $u \approx 1.189\,e^{-4.116\,t}\sin(2.029\,x)$. The decay rate $\mu_1^2 \approx 4.12$ lies between the rate $\pi^2/4 \approx 2.47$ for a perfectly insulated right end and $\pi^2 \approx 9.87$ for a right end held at $0$, as it should for a partially insulating end.
+which gives $c_1 \approx 1.189$, $c_2 \approx 0.313$, $c_3 \approx 0.278$. (As a check, summing a few thousand terms at $x = \frac12$ gives $1.000$, as completeness promises.) For large $t$, $u \approx 1.189\,e^{-4.116\,t}\sin(2.029\,x)$. The decay rate $\mu_1^2 \approx 4.12$ lies between the rate $\pi^2/4 \approx 2.47$ for a perfectly insulated right end and $\pi^2 \approx 9.87$ for a right end held at $0$, as it should for a partially insulating end.
 :::
 :::
 

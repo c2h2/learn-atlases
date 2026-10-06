@@ -28,7 +28,7 @@ $$
 d\mathbf{n}_p(\mathbf{w}) = \frac{d}{dt}\Big|_{t=0}\mathbf{n}\bigl(\boldsymbol\alpha(t)\bigr).
 $$
 
-在曲面片中，若$\boldsymbol\alpha(t) = \mathbf{x}(u(t), v(t))$，则对$\mathbf{w} = \mathbf{x}_uu'(0) + \mathbf{x}_vv'(0)$，链式法则给出$d\mathbf{n}_p(\mathbf{w}) = \mathbf{n}_u u'(0) + \mathbf{n}_v v'(0)$。所以$d\mathbf{n}_p(\mathbf{w})$只依赖于$\mathbf{w}$而与曲线无关，并且关于$\mathbf{w}$是线性的，$d\mathbf{n}_p(\mathbf{x}_u) = \mathbf{n}_u$，$d\mathbf{n}_p(\mathbf{x}_v) = \mathbf{n}_v$。此外，$d\mathbf{n}_p(\mathbf{w})$位于切平面内：对$\mathbf{n}\cdot\mathbf{n} = 1$求导得$2\,\mathbf{n}\cdot d\mathbf{n}_p(\mathbf{w}) = 0$，所以$d\mathbf{n}_p(\mathbf{w})$与$\mathbf{n}(p)$正交——这恰好是向量位于$T_pS$中的条件（[[differential-geometry/regular-surfaces#def-tangent-plane]]）。因此$d\mathbf{n}_p$是从$T_pS$到自身的线性映射。
+在曲面片中，若$\boldsymbol\alpha(t) = \mathbf{x}(u(t), v(t))$，则对$\mathbf{w} = \mathbf{x}_uu'(0) + \mathbf{x}_vv'(0)$，链式法则给出$d\mathbf{n}_p(\mathbf{w}) = \mathbf{n}_u u'(0) + \mathbf{n}_v v'(0)$。所以$d\mathbf{n}_p(\mathbf{w})$只依赖于$\mathbf{w}$而与曲线无关，并且关于$\mathbf{w}$是线性的，$d\mathbf{n}_p(\mathbf{x}_u) = \mathbf{n}_u$，$d\mathbf{n}_p(\mathbf{x}_v) = \mathbf{n}_v$。此外，$d\mathbf{n}_p(\mathbf{w})$位于切平面内：对$\mathbf{n}\cdot\mathbf{n} = 1$求导得$2\,\mathbf{n}\cdot d\mathbf{n}_p(\mathbf{w}) = 0$，所以$d\mathbf{n}_p(\mathbf{w})$与$\mathbf{n}(p)$正交——这恰好是向量位于$T_pS$中的条件（[[differential-geometry/regular-surfaces#thm-tangent-plane]]）。因此$d\mathbf{n}_p$是从$T_pS$到自身的线性映射。
 
 ## 形状算子与第二基本形式
 
@@ -179,7 +179,7 @@ $$
 这是$\kappa_1$和$\kappa_2$的加权平均，权重之和为$\cos^2\theta + \sin^2\theta = 1$，所以它介于两者之间，极值在$\theta = 0$和$\theta = \pi/2$处取到。
 :::
 
-因此，曲面沿所有方向的弯曲都由两个互相垂直方向上的两个数所控制——这是欧拉在1760年的发现。使$\kappa_n = 0$的方向称为**渐近方向**；由欧拉公式，渐近方向存在当且仅当$\kappa_1\kappa_2\le0$，此时$\tan^2\theta = -\kappa_1/\kappa_2$（若$\kappa_2 = 0$，渐近方向就是$\theta = \pi/2$，即第二主方向）。
+因此，曲面沿所有方向的弯曲都由两个互相垂直方向上的两个数所控制——这是欧拉的发现，发表于1767年。使$\kappa_n = 0$的方向称为**渐近方向**；由欧拉公式，渐近方向存在当且仅当$\kappa_1\kappa_2\le0$。若$\kappa_2\ne0$，渐近方向由$\tan^2\theta = -\kappa_1/\kappa_2$给出；若$\kappa_2 = 0 < \kappa_1$，唯一的渐近方向是$\theta = \pi/2$，即第二主方向；而在平点处（$\kappa_1 = \kappa_2 = 0$），每个方向都是渐近方向。
 
 ::: quiz
 半径为$R$的圆柱面（取内法向量）的主曲率是什么？它们的乘积是多少？
@@ -310,7 +310,7 @@ caption: 曲面$z = x^2 + ay^2$，按高斯曲率着色；在原点处$K = 4a$�
 - [ ] $p$处的平均曲率必定为零。
 - [ ] $K$的符号依赖于单位法向量的选取。
 ::: solution
-$K < 0$意味着$LN - M^2 < 0$，所以由[[#prop-height]]，切平面上方高度的黑塞矩阵是不定的：该点是高度函数的鞍点，曲面穿过它的切平面。$H$不必为零（在环面的内侧$K < 0$，但$H\ne0$），而$K$与定向无关。
+$K < 0$意味着$LN - M^2 < 0$，所以由[[#prop-height]]，切平面上方高度的黑塞矩阵是不定的：该点是高度函数的鞍点，曲面穿过它的切平面。$H$不必为零（在环面内半部分的大部分点处$K < 0$，但$H\ne0$），而$K$与定向无关。
 :::
 :::
 
@@ -374,7 +374,7 @@ caption: 悬链面，即把悬链线$x = \cosh z$绕$z$轴旋转所扫出的曲�
 :::
 
 ::: history
-欧拉（Leonhard Euler）在《关于曲面曲率的研究》（*Recherches sur la courbure des surfaces*，1760年写成，1767年发表）中开创了曲面曲率的研究，证明了关于法截线曲率的公式$\kappa_n = \kappa_1\cos^2\theta + \kappa_2\sin^2\theta$。1776年，当时还是一名年轻军事工程师的默尼耶（Jean-Baptiste Meusnier）建立了斜截线曲率与法截线曲率之间的关系，并发现悬链面和正螺面满足拉格朗日（Lagrange）的最小面积曲面方程。决定性的一步出现在高斯（Carl Friedrich Gauss）的《关于曲面的一般研究》（*Disquisitiones generales circa superficies curvas*，1827）中：他引入了到球面的法映射，把曲面的曲率定义为[[#prop-gauss-area]]中的面积比，并导出了用两个基本形式的系数表示曲率的公式。默尼耶还注意到，拉格朗日方程表明两个主曲率大小相等、符号相反——用现代的话说，就是平均曲率为零；后来，平均曲率在热尔曼（Sophie Germain）关于弹性板振动的工作中占据了中心位置，这项工作于1816年获得了巴黎科学院的奖金。
+欧拉（Leonhard Euler）在《关于曲面曲率的研究》（*Recherches sur la courbure des surfaces*，1763年提交柏林科学院，1767年发表）中开创了曲面曲率的研究，证明了关于法截线曲率的公式$\kappa_n = \kappa_1\cos^2\theta + \kappa_2\sin^2\theta$。1776年，当时还是一名年轻军事工程师的默尼耶（Jean-Baptiste Meusnier）建立了斜截线曲率与法截线曲率之间的关系，并发现悬链面和正螺面满足拉格朗日（Lagrange）的最小面积曲面方程。决定性的一步出现在高斯（Carl Friedrich Gauss）的《关于曲面的一般研究》（*Disquisitiones generales circa superficies curvas*，1827）中：他引入了到球面的法映射，把曲面的曲率定义为[[#prop-gauss-area]]中的面积比，并导出了用两个基本形式的系数表示曲率的公式。默尼耶还注意到，拉格朗日方程表明两个主曲率大小相等、符号相反——用现代的话说，就是平均曲率为零；后来，平均曲率在热尔曼（Sophie Germain）关于弹性板振动的工作中占据了中心位置，这项工作于1816年获得了巴黎科学院的奖金。
 :::
 
 ## 后续内容
@@ -423,7 +423,7 @@ $K = 1/R^2 = 1/9$（[[#ex-sphere]]），无论使用哪个法向量。
 :::
 
 ::: exercise 环面的最外圈 {level=2 check="1/3"}
-对[[#ex-torus]]中$a = 2$，$b = 1$的环面，求最外圈上各点处的高斯曲率，以及那里的主曲率。
+对[[#ex-torus]]中$a = 2$，$b = 1$的环面，求最外圈上各点处的高斯曲率，以及那里的主曲率。（输入$K$。）
 ::: solution
 在$u = 0$处，$K = \dfrac{\cos0}{1\cdot(2 + 1)} = \dfrac13$。那里$E = 1$，$G = 9$，$L = 1$，$N = 3$，$F = M = 0$，所以$W$的矩阵为$\operatorname{diag}(L/E, N/G) = \operatorname{diag}(1, \tfrac13)$：主曲率为$1$（绕管道方向，即半径为$b = 1$的圆）和$\tfrac13$（沿半径为$a + b = 3$的外圈方向）。
 :::

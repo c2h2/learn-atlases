@@ -49,7 +49,7 @@ Fermat's theorem also has a combinatorial proof. There are $a^p - a$ ways to col
 ::: widget pascal
 rows: 16
 mod: 7
-caption: Pascal's triangle coloured by residues modulo $7$. Row $7$ reads $1, 0, 0, 0, 0, 0, 0, 1$: every inner coefficient $\binom 7k$ is divisible by $7$, which is [[#lem-binomial-p]]. The large blank triangles that appear are a picture of Lucas's theorem, which describes $\binom nk \bmod p$ through the base-$p$ digits of $n$ and $k$. Try a composite row such as row $6$: $\binom 62 = 15$ is not divisible by $6$.
+caption: Pascal's triangle coloured by residues modulo $7$ (blank cells are divisible by $7$). Row $7$ is blank apart from the $1$s at its ends: every inner coefficient $\binom 7k$ is divisible by $7$, which is [[#lem-binomial-p]]. The large blank triangles that appear are a picture of Lucas's theorem, which describes $\binom nk \bmod p$ through the base-$p$ digits of $n$ and $k$. For a composite modulus the lemma fails: set mod to $6$ and look at row $6$, where $\binom 62 = 15$ is not divisible by $6$.
 :::
 
 ### Using Fermat's theorem
@@ -200,7 +200,7 @@ $$
 and the product of the $r_i$ is coprime to $n$, so it can be cancelled.
 :::
 
-When $n = p$ is prime, $\varphi(p) = p - 1$ and Euler's theorem is Fermat's. In the language of group theory, Euler's theorem says that $a^{\abs{G}} = e$ in the group $G = U(n)$ of order $\varphi(n)$, a special case of Lagrange's theorem ([[abstract-algebra/lagrange#cor-euler]]); the proof above is the proof of Lagrange's theorem in disguise.
+When $n = p$ is prime, $\varphi(p) = p - 1$ and Euler's theorem is Fermat's. In the language of group theory, Euler's theorem says that $a^{\abs{G}} = e$ in the group $G = U(n)$ of order $\varphi(n)$, a special case of Lagrange's theorem ([[abstract-algebra/lagrange#cor-euler]]); the rearrangement proof above works in every finite abelian group.
 
 ::: example Last digits and power towers {#ex-euler}
 (a) Find the last two digits of $13^{2026}$. (b) Compute $2^{2^{100}} \bmod 7$.
@@ -230,7 +230,7 @@ Solve $x^7 \equiv 3 \pmod{11}$.
 Fermat's theorem lets us "invert the exponent". Since $\gcd(7, 10) = 1$, there is $d$ with $7d \equiv 1 \pmod{10}$, namely $d = 3$ ($21 = 2\cdot 10 + 1$). If $x^7 \equiv 3$ then $x \not\equiv 0$, and raising to the power $3$ gives
 
 $$
-x = x^{1}\cdot\bigl(x^{10}\bigr)^2 = x^{21} = (x^7)^3 \equiv 3^3 = 27 \equiv 5 \pmod{11} .
+x \equiv x\cdot\bigl(x^{10}\bigr)^2 = x^{21} = (x^7)^3 \equiv 3^3 = 27 \equiv 5 \pmod{11} .
 $$
 
 Conversely $x = 5$ works: $5^2 = 25 \equiv 3$, $5^4 \equiv 9$, so $5^7 = 5^4\cdot 5^2\cdot 5 \equiv 9\cdot 3\cdot 5 = 135 \equiv 3$. So the unique solution is $x \equiv 5 \pmod{11}$. The map $x \mapsto x^7$ is a bijection of the residues modulo $11$, undone by $y \mapsto y^3$ — exactly the mechanism of RSA encryption and decryption, with $11$ replaced by a product of two large primes.
@@ -343,10 +343,10 @@ $$
 so $m$ is even (as $-1 \not\equiv 1$ for odd $p$), i.e. $p \equiv 1 \pmod 4$.
 :::
 
-For $p = 13$: $6! = 720 = 55\cdot 13 + 5$, and $5^2 = 25 \equiv -1 \pmod{13}$. For $p = 17$: $8! = 40320 \equiv 13$ and $13^2 = 169 \equiv -1 \pmod{17}$. This theorem is the first case of quadratic reciprocity ([[number-theory/quadratic-reciprocity]]) and the key step in Fermat's theorem on sums of two squares ([[number-theory/diophantine]]).
+For $p = 13$: $6! = 720 = 55\cdot 13 + 5$, and $5^2 = 25 \equiv -1 \pmod{13}$. For $p = 17$: $8! = 40320 \equiv 13$ and $13^2 = 169 \equiv -1 \pmod{17}$. This theorem is the first supplementary law of quadratic reciprocity ([[number-theory/quadratic-reciprocity#thm-first-supplement]]) and the key step in Fermat's theorem on sums of two squares ([[number-theory/diophantine]]).
 
 ::: application Why RSA works
-In RSA cryptography ([[number-theory/cryptography]]) a message $m$ is encrypted as $c = m^e \bmod n$ with $n = pq$, and decrypted as $c^d \bmod n$, where $ed \equiv 1 \pmod{\varphi(n)}$. Writing $ed = 1 + k\varphi(n)$, Euler's theorem gives $c^d = m^{ed} = m\,(m^{\varphi(n)})^k \equiv m \pmod n$ whenever $\gcd(m, n) = 1$. The security rests on the fact that computing $\varphi(n) = (p-1)(q-1)$ requires knowing the factorisation of $n$.
+In RSA cryptography ([[number-theory/cryptography]]) a message $m$ is encrypted as $c = m^e \bmod n$ with $n = pq$, and decrypted as $c^d \bmod n$, where $ed \equiv 1 \pmod{\varphi(n)}$. Writing $ed = 1 + k\varphi(n)$, Euler's theorem gives $c^d \equiv m^{ed} = m\,(m^{\varphi(n)})^k \equiv m \pmod n$ whenever $\gcd(m, n) = 1$. The security rests on the fact that computing $\varphi(n) = (p-1)(q-1)$ requires knowing the factorisation of $n$.
 :::
 
 ::: history

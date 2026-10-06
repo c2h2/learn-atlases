@@ -329,7 +329,7 @@ $$
 \left(\sum_{n=0}^\infty a_nx^n\right)\left(\sum_{n=0}^\infty b_nx^n\right) = \sum_{n=0}^\infty\left(\sum_{k=0}^n a_kb_{n-k}\right)x^n
 $$ {#eq-cauchy-product}
 
-for $\abs x$ less than both radii. This **Cauchy product** formula holds because both series converge absolutely there (a theorem of Cauchy and Mertens, proved in [[real-analysis/series]]). For example, squaring the geometric series gives $\frac{1}{(1-x)^2} = \sum_n (n+1)x^n$, in agreement with [[#ex-differentiate]].
+for $\abs x$ less than both radii. This **Cauchy product** formula holds because both series converge absolutely there (a theorem of Cauchy and Mertens; see [[real-analysis/series]]). For example, squaring the geometric series gives $\frac{1}{(1-x)^2} = \sum_n (n+1)x^n$, in agreement with [[#ex-differentiate]].
 
 ::: example Expanding about a different centre {#ex-recentre}
 Find the power series of $f(x) = \dfrac1x$ centred at $a = 2$, and its interval of convergence.
@@ -364,7 +364,7 @@ The radius stays $1$ ([[#thm-termwise]]), but the endpoints must be rechecked. A
 :::
 
 ::: application Generating functions
-A power series can store a whole sequence in a single function: the **generating function** of $(a_n)$ is $\sum a_nx^n$. For the Fibonacci numbers, $\sum F_nx^n = \frac{x}{1 - x - x^2}$ ([[#exr-fibonacci-gf]]), and expanding the right-hand side in partial fractions yields Binet's formula $F_n = (\varphi^n - (-1/\varphi)^n)/\sqrt5$. The radius of convergence encodes the growth rate: here $R = 1/\varphi$ because $F_n$ grows like $\varphi^n$. Generating functions are developed in [[discrete/generating-functions]] and, as probability generating functions, in [[probability/discrete-random-variables]].
+A power series can store a whole sequence in a single function: the **generating function** of $(a_n)$ is $\sum a_nx^n$. For the Fibonacci numbers, $\sum F_nx^n = \frac{x}{1 - x - x^2}$ ([[#exr-fibonacci-gf]]), and expanding the right-hand side in partial fractions yields Binet's formula $F_n = (\varphi^n - (-1/\varphi)^n)/\sqrt5$. The radius of convergence encodes the growth rate: here $R = 1/\varphi$ because $F_n$ grows like $\varphi^n$. Generating functions are developed in [[discrete/generating-functions]] and, as probability generating functions, in [[probability/expectation]].
 :::
 
 ::: history
@@ -376,7 +376,7 @@ Power series entered mathematics in a rush in the 1660s. Nicholas Mercator publi
 [[#cor-coefficients]] says that a function with a power series has coefficients $f^{(n)}(a)/n!$; in [[calculus-2/taylor-series]] we turn this around and ask which functions are equal to their Taylor series, with an estimate of the error. Power series solve differential equations in [[ode/series-solutions]], and in complex analysis ([[complex-analysis/analytic-functions]]) a function with a convergent power series around every point turns out to be the central object of the subject. The rigorous justification of term-by-term operations through uniform convergence is in [[real-analysis/uniform-convergence]].
 
 ::: summary
-- A power series $\sum c_n(x - a)^n$ converges on an interval centred at $a$: absolutely for $\abs{x - a} < R$, divergently for $\abs{x - a} > R$, where $R \in [0, \infty]$ is the radius of convergence.
+- A power series $\sum c_n(x - a)^n$ converges on an interval centred at $a$: it converges absolutely for $\abs{x - a} < R$ and diverges for $\abs{x - a} > R$, where $R \in [0, \infty]$ is the radius of convergence.
 - $R = 1/L$ when $\abs{c_{n+1}/c_n} \to L$ or $\abs{c_n}^{1/n} \to L$; for series with gaps, apply the ratio test to the terms.
 - The endpoints $x = a \pm R$ must always be tested separately.
 - Inside the interval, power series can be differentiated and integrated term by term without changing the radius ([[#thm-termwise]]); the sum is infinitely differentiable and $c_n = f^{(n)}(a)/n!$.
@@ -402,7 +402,7 @@ The ratio of coefficients $\frac{n}{n+1} \to 1$, so $R = 1$ and the series conve
 :::
 
 ::: exercise By substitution {level=1 check="1/2"}
-Find a power series for $\dfrac{x}{1+4x^2}$ centred at $0$, and its radius of convergence.
+Find a power series for $\dfrac{x}{1+4x^2}$ centred at $0$, and its radius of convergence. (Enter the radius.)
 ::: solution
 Substituting $-4x^2$ into the geometric series, $\dfrac{1}{1+4x^2} = \sum_{n\ge0}(-4x^2)^n$ for $4x^2 < 1$. Multiplying by $x$,
 

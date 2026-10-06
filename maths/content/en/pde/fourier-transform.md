@@ -185,7 +185,7 @@ $$
 \widehat{f*g}(\xi) = \int\!\!\int f(x - y)g(y)\,e^{-i\xi x}\,dy\,dx = \int g(y)e^{-i\xi y}\left(\int f(x - y)e^{-i\xi(x - y)}\,dx\right)dy = \hat f(\xi)\int g(y)e^{-i\xi y}\,dy,
 $$
 
-where we wrote $e^{-i\xi x} = e^{-i\xi y}e^{-i\xi(x-y)}$ and substituted $z = x - y$ in the inner integral. (For the piecewise continuous functions of this chapter the double integrals can be understood as improper Riemann integrals; the general statements are proved in [[measure-theory/lebesgue-integral]].)
+where we wrote $e^{-i\xi x} = e^{-i\xi y}e^{-i\xi(x-y)}$ and substituted $z = x - y$ in the inner integral. (For the piecewise continuous functions of this chapter the double integrals can be understood as improper Riemann integrals; in general, Tonelli's and Fubini's theorems belong to the Lebesgue theory of integration, which begins in [[measure-theory/lebesgue-integral]].)
 :::
 
 ::: example A convolution computed two ways {#ex-conv}
@@ -222,7 +222,7 @@ $$
 \frac{1}{2\pi}\int_{-R}^R\hat f(\xi)e^{i\xi x}\,d\xi = \frac1{2\pi}\int_{-\infty}^\infty f(y)\left(\int_{-R}^Re^{i\xi(x - y)}\,d\xi\right)dy = \frac1\pi\int_{-\infty}^\infty f(x + t)\,\frac{\sin Rt}{t}\,dt.
 $$
 
-The kernel $\frac{\sin Rt}{\pi t}$ plays the role of the Dirichlet kernel in [[pde/fourier-series#lem-dirichlet]], and $\int_0^\infty\frac{\sin Rt}{t}\,dt = \frac\pi2$ for every $R > 0$. Subtracting $\frac12f(x^+) + \frac12f(x^-)$ and arguing exactly as in the proof of [[pde/fourier-series#thm-dirichlet]] — the quotient $\frac{f(x+t) - f(x^\pm)}{t}$ is bounded near $t = 0$ by piecewise smoothness, and a Riemann–Lebesgue argument disposes of the rest, including the tails, which are controlled by the integrability of $f$ — gives the first statement. If $\hat f$ is integrable, the limit is the absolutely convergent integral, and at points of continuity the right-hand side is $f(x)$. Full details are in Stein and Shakarchi, *Fourier Analysis*, chapter 5, or Folland, *Fourier Analysis and Its Applications*, chapter 7.
+The kernel $\frac{\sin Rt}{\pi t}$ plays the role of the Dirichlet kernel in [[pde/fourier-series#lem-dirichlet]], and $\int_0^\infty\frac{\sin Rt}{t}\,dt = \frac\pi2$ for every $R > 0$ (the Dirichlet integral, evaluated in [[ode/laplace-transform]] and in [[complex-analysis/residues]]). Subtracting $\frac12f(x^+) + \frac12f(x^-)$ and arguing exactly as in the proof of [[pde/fourier-series#thm-dirichlet]] — the quotient $\frac{f(x+t) - f(x^\pm)}{t}$ is bounded near $t = 0$ by piecewise smoothness, and a Riemann–Lebesgue argument disposes of the rest, including the tails, which are controlled by the integrability of $f$ — gives the first statement. If $\hat f$ is integrable, the limit is the absolutely convergent integral, and at points of continuity the right-hand side is $f(x)$. Full details are in Stein and Shakarchi, *Fourier Analysis*, chapter 5, or Folland, *Fourier Analysis and Its Applications*, chapter 7.
 :::
 
 Inversion makes the transform injective: an integrable piecewise smooth function is determined (at its points of continuity) by its transform. It also produces new transforms for free. Since $\frac{2a}{a^2+\xi^2}$ is integrable, inverting [[#ex-exp-abs]] gives $e^{-a\abs x} = \frac1{2\pi}\int\frac{2a}{a^2 + \xi^2}e^{i\xi x}\,d\xi$; renaming the variables and replacing $x$ by $-x$,
@@ -231,7 +231,7 @@ $$
 \mathcal F\left[\frac{1}{a^2 + x^2}\right](\xi) = \frac{\pi}{a}e^{-a\abs\xi}.
 $$ {#eq-lorentzian}
 
-(This can also be computed with residues, [[complex-analysis/residues]].) And inverting the rectangular pulse at $x = 0$ — a point of continuity — gives $1 = \frac{1}{2\pi}\lim_{R\to\infty}\int_{-R}^R\frac{2\sin a\xi}{\xi}\,d\xi$, the famous **Dirichlet integral** $\int_{-\infty}^\infty\frac{\sin a\xi}{\xi}\,d\xi = \pi$ for $a > 0$.
+(This can also be computed with residues, [[complex-analysis/residues]].) And inverting the rectangular pulse at $x = 0$ — a point of continuity — gives $1 = \frac{1}{2\pi}\lim_{R\to\infty}\int_{-R}^R\frac{2\sin a\xi}{\xi}\,d\xi$, the famous **Dirichlet integral** $\int_{-\infty}^\infty\frac{\sin a\xi}{\xi}\,d\xi = \pi$ for $a > 0$. (This is a consistency check rather than a new proof, since the proof of [[#thm-inversion]] uses this integral.)
 
 ::: theorem Plancherel's identity {#thm-plancherel}
 If $f$ is integrable and $\int\abs f^2 < \infty$, then $\hat f$ is square-integrable and
@@ -313,7 +313,7 @@ x: -6, 6
 y: 0, 1.3
 sliders: t=0.25:0.02:4:0.01
 labels: G_t(x); u(x,t)\ \text{for } f = \chi_{[-1,1]}
-caption: The heat kernel $G_t$ with $k = 1$ and the temperature of an infinite rod that starts at $1$ on $[-1,1]$ and $0$ elsewhere. Drag $t$ towards $0$: the kernel becomes a tall, narrow spike of area $1$ and the box regains its sharp edges. Drag it up: both spread like $\sqrt t$ and their peaks fall like $1/\sqrt t$, while the area under each curve stays fixed — the total heat is conserved.
+caption: The heat kernel $G_t$ with $k = 1$ and the temperature of an infinite rod that starts at $1$ on $[-1,1]$ and $0$ elsewhere. Drag $t$ towards $0$: the kernel becomes a tall, narrow spike of area $1$ and the box regains its sharp edges. Drag it up: the kernel spreads like $\sqrt t$ and its peak falls like $1/\sqrt t$ (for larger $t$ the box does the same), while the area under each curve stays fixed — the total heat is conserved.
 :::
 
 ::: example A hot segment {#ex-box}
@@ -406,7 +406,7 @@ Fourier introduced the integral representation of non-periodic functions in his 
 
 ## Where this leads
 
-The Fourier transform solves other constant-coefficient problems on the whole line in the same way: the wave equation, where each frequency oscillates as $\cos c\xi t$ and inversion recovers d'Alembert's formula ([[pde/wave-equation]]); Laplace's equation in a half-plane, where the kernel is the Poisson kernel $\frac{y}{\pi(x^2 + y^2)}$, a relative of [[#eq-lorentzian]]; and ordinary differential equations on $\R$. The **Laplace transform** of [[ode/laplace-transform]] is the one-sided cousin of the Fourier transform, adapted to initial value problems; formally, writing $s = \sigma + i\tau$, $\mathcal L f(s)$ is the Fourier transform of $f(t)e^{-\sigma t}$ restricted to $t \ge 0$, evaluated at $\xi = \tau = \operatorname{Im}s$. Extending the transform to all square-integrable functions, and to generalised functions such as the Dirac delta, leads to distribution theory and modern harmonic analysis, building on [[measure-theory/lp-spaces]]. In probability, the transform of a density is its characteristic function, the main tool for proving the central limit theorem ([[probability/limit-theorems]]).
+The Fourier transform solves other constant-coefficient problems on the whole line in the same way: the wave equation, where each frequency oscillates as $\cos c\xi t$ and inversion recovers d'Alembert's formula ([[pde/wave-equation]]); Laplace's equation in a half-plane, where the kernel is the Poisson kernel $\frac{y}{\pi(x^2 + y^2)}$, a relative of [[#eq-lorentzian]]; and ordinary differential equations on $\R$. The **Laplace transform** of [[ode/laplace-transform]] is the one-sided cousin of the Fourier transform, adapted to initial value problems; formally, writing $s = \sigma + i\tau$, $\mathcal L f(s)$ is the Fourier transform of $f(t)e^{-\sigma t}$ restricted to $t \ge 0$, evaluated at $\xi = \tau = \operatorname{Im}s$. Extending the transform to all square-integrable functions, and to generalised functions such as the Dirac delta, leads to distribution theory and modern harmonic analysis, building on [[measure-theory/lp-spaces]]. In probability, the characteristic function $\E e^{i\xi X}$ of a random variable $X$ with density $p$ is $\hat p(-\xi)$, the transform with the opposite sign convention; it is the main tool for proving the central limit theorem ([[probability/limit-theorems]]).
 
 ::: summary
 - The Fourier transform $\hat f(\xi) = \int f(x)e^{-i\xi x}\,dx$ is the limit of Fourier series as the period tends to infinity; it is bounded, continuous and tends to $0$ at infinity (Riemann–Lebesgue).
@@ -428,7 +428,7 @@ By [[#ex-exp-abs]] with $a = 3$, $\hat f(\xi) = \frac{6}{9 + \xi^2}$, so $\hat f
 :::
 
 ::: exercise A wider pulse {level=1 check="8/pi"}
-Let $f = \chi_{[-2,2]}$. Find $\hat f(0)$ and $\hat f(\pi/4)$.
+Let $f = \chi_{[-2,2]}$. Find $\hat f(0)$ and $\hat f(\pi/4)$. (Enter $\hat f(\pi/4)$.)
 ::: solution
 By [[#ex-rect]] with $a = 2$, $\hat f(\xi) = \frac{2\sin2\xi}{\xi}$ and $\hat f(0) = 4$, the area under $f$. At $\xi = \pi/4$, $\hat f = \frac{2\sin(\pi/2)}{\pi/4} = \frac{8}{\pi}$.
 :::
@@ -449,7 +449,7 @@ $\int\abs f^2 = \int e^{-2\abs x}\,dx = 1$ and $\hat f = \frac{2}{1 + \xi^2}$. B
 :::
 
 ::: exercise Spreading of a Gaussian {level=2 check="1/3"}
-With $k = 1$ and initial temperature $e^{-x^2}$ on an infinite rod, find the temperature at $x = 0$ at time $t = 2$, and the time at which the central temperature has fallen to half its initial value.
+With $k = 1$ and initial temperature $e^{-x^2}$ on an infinite rod, find the temperature at $x = 0$ at time $t = 2$, and the time at which the central temperature has fallen to half its initial value. (Enter $u(0,2)$.)
 ::: solution
 By [[#ex-gauss-heat]], $u(0,t) = (1 + 4t)^{-1/2}$, so $u(0,2) = \frac{1}{\sqrt9} = \frac13$. Half the initial value requires $1 + 4t = 4$, i.e. $t = \frac34$.
 :::

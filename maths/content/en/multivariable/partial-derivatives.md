@@ -165,7 +165,7 @@ A function $f(x,y)$ has both partial derivatives at $(0,0)$. Which of the follow
 - [x] The one-variable function $x\mapsto f(x, 0)$ is differentiable at $x = 0$.
 - [ ] $f_{xy}(0,0) = f_{yx}(0,0)$.
 ::: solution
-By definition $f_x(0,0)$ is the derivative of $x\mapsto f(x,0)$ at $0$, so the third statement is exactly what is given. [[#ex-partials-discontinuous]] rules out the first two, and the second-order partial derivatives need not even exist.
+By definition $f_x(0,0)$ is the derivative of $x\mapsto f(x,0)$ at $0$, so the third statement is exactly what is given. [[#ex-partials-discontinuous]] rules out the first two (a differentiable function is continuous, [[#thm-diff-partials]]), and the second-order partial derivatives need not even exist.
 :::
 :::
 
@@ -220,7 +220,7 @@ $$
 $$
 f_y(x, 0) = \lim_{k\to0}\frac{f(x, k) - f(x, 0)}{k} = \lim_{k\to0}\frac{x(x^2 - k^2)}{x^2 + k^2} = x,
 $$
-so $f_{yx}(0, 0) = \frac{d}{dx}(x)\big|_{x=0} = 1$. The mixed partial derivatives exist but differ; by [[#thm-clairaut]] they cannot both be continuous at the origin. (Away from the origin $f$ is a rational function, its mixed partials are equal, and they oscillate between values near $-1$ and $1$ as $(x,y)\to(0,0)$.)
+so $f_{yx}(0, 0) = \frac{d}{dx}(x)\big|_{x=0} = 1$. The mixed partial derivatives exist but differ; by [[#thm-clairaut]] they cannot both be continuous at the origin. (Away from the origin $f$ is a rational function and its mixed partials are equal, but they depend only on the direction from the origin: on every circle around it they take every value between $-\sqrt2$ and $\sqrt2$, so they have no limit at the origin.)
 :::
 :::
 
@@ -417,7 +417,7 @@ $$
 $$
 :::
 
-The proof (by a contraction or monotonicity argument, then a general version for systems of equations) belongs to analysis; see Spivak's *Calculus on Manifolds*, Chapter 2, or [[real-analysis]]. The formulas themselves are just the chain rule, as we derived above.
+The proof (by a contraction or monotonicity argument, then a general version for systems of equations) belongs to analysis; see Spivak's *Calculus on Manifolds*, Chapter 2 (one standard route uses the contraction mapping theorem of [[real-analysis/metric-spaces]]). The formulas themselves are just the chain rule, as we derived above.
 
 ::: example The folium of Descartes {#ex-folium}
 The curve $x^3 + y^3 = 6xy$ passes through $(3, 3)$. Find the slope of the tangent line there, and explain why the method fails at the origin.
@@ -434,7 +434,7 @@ Leonhard Euler and Alexis Clairaut used the equality of mixed partial derivative
 
 ## Where this leads
 
-The next chapter, [[multivariable/gradient]], uses differentiability to define derivatives in every direction, the gradient vector and tangent planes. Second derivatives and the symmetry of [[#thm-clairaut]] drive the classification of maxima, minima and saddle points in [[multivariable/extrema]]. The derivative matrix of a map between spaces of the same dimension has a determinant, the Jacobian, which measures how the map stretches area and volume ([[multivariable/change-of-variables]]). Partial derivatives are the raw material of partial differential equations such as Laplace's equation $u_{xx} + u_{yy} = 0$ ([[pde/laplace-equation]]), and the inverse and implicit function theorems, which say that a map is locally invertible where its derivative is, are proved in [[real-analysis]].
+The next chapter, [[multivariable/gradient]], uses differentiability to define derivatives in every direction, the gradient vector and tangent planes. Second derivatives and the symmetry of [[#thm-clairaut]] drive the classification of maxima, minima and saddle points in [[multivariable/extrema]]. The derivative matrix of a map between spaces of the same dimension has a determinant, the Jacobian, which measures how the map stretches area and volume ([[multivariable/change-of-variables]]). Partial derivatives are the raw material of partial differential equations such as Laplace's equation $u_{xx} + u_{yy} = 0$ ([[pde/laplace-equation]]), and the inverse and implicit function theorems, which say that a map is locally invertible where its derivative is, are proved in courses on analysis, for instance from the contraction mapping theorem of [[real-analysis/metric-spaces]].
 
 ::: summary
 - Limits in $\R^n$ use the norm: $0 < \norm{\mathbf{x} - \mathbf{a}} < \delta \implies \abs{f(\mathbf{x}) - L} < \eps$ ([[#def-limit-2d]]). Different limits along two paths prove that a limit does not exist; lines alone are never enough to prove that one does.

@@ -70,7 +70,7 @@ An **integral domain** is a commutative ring with $1 \neq 0$ and no zero-divisor
 The point of the definition is **cancellation**: in an integral domain, if $a \neq 0$ and $ab = ac$, then $a(b - c) = 0$ forces $b = c$. In $\Z_6$, by contrast, $2 \cdot 1 = 2 \cdot 4$ but $1 \ne 4$.
 
 ::: definition Field {#def-field}
-A **field** is a commutative ring with $1 \neq 0$ in which every non-zero element is a unit. A non-commutative ring with $1 \neq 0$ in which every non-zero element is a unit is a **division ring** (such as $\mathbb H$).
+A **field** is a commutative ring with $1 \neq 0$ in which every non-zero element is a unit. A ring with $1 \neq 0$ in which every non-zero element is a unit, but which need not be commutative, is a **division ring**; so fields are the commutative division rings, and $\mathbb H$ is a division ring that is not a field.
 :::
 
 $\Q$, $\R$ and $\C$ are fields; $\Z$ and $\Z[i]$ are integral domains but not fields. Every field is an integral domain, since units are not zero-divisors.
@@ -104,7 +104,7 @@ Let $D$ be a finite integral domain and $a \neq 0$. The map $x \mapsto ax$ from 
 ::: widget modular
 n: 12
 mode: multiply
-caption: The multiplication table of $\Z_{12}$. The rows of the units $1, 5, 7, 11$ contain every residue exactly once, so these elements can be "divided by". Every other non-zero row contains $0$ somewhere — for example $3 \cdot 4 = 0$ and $6 \cdot 2 = 0$ — so $2, 3, 4, 6, 8, 9, 10$ are zero-divisors. In a finite commutative ring every non-zero element is one or the other.
+caption: The multiplication table of $\Z_{12}$. The rows of the units $1, 5, 7, 11$ contain every residue exactly once, so these elements can be "divided by". Every other non-zero row has a $0$ outside the column of $0$ — for example $3 \cdot 4 = 0$ and $6 \cdot 2 = 0$ — so $2, 3, 4, 6, 8, 9, 10$ are zero-divisors. In a finite commutative ring every non-zero element is one or the other.
 :::
 
 ::: definition Characteristic {#def-characteristic}
@@ -255,7 +255,7 @@ Prove that (a) $\R[x]/(x^2 + 1) \cong \C$; (b) $\Z[i]/(2 + i) \cong \Z_5$; (c) $
 ::: solution
 (a) Let $\operatorname{ev}_i\colon \R[x] \to \C$, $f \mapsto f(i)$. It is a ring homomorphism, and it is surjective since $a + bx \mapsto a + bi$. For the kernel: dividing $f$ by $x^2 + 1$ ([[abstract-algebra/polynomials#thm-poly-division]]) gives $f = (x^2 + 1)q + (a + bx)$ with $a, b \in \R$, so $f(i) = a + bi$, which is $0$ exactly when $a = b = 0$, that is when $x^2 + 1$ divides $f$. So $\ker\operatorname{ev}_i = (x^2 + 1)$, and [[#thm-first-iso-rings]] gives $\R[x]/(x^2 + 1) \cong \C$. The complex numbers *are* real polynomials computed modulo $x^2 + 1$.
 
-(b) Use the homomorphism $\varphi(a + bi) = (a + 3b) \bmod 5$ from the previous section. It is surjective ($\varphi(a) = a \bmod 5$). Its kernel contains $2 + i$, since $2 + 3 = 5 \equiv 0$, hence contains the ideal $(2 + i)$. Conversely, suppose $5 \mid a + 3b$, say $a + 3b = 5k$. Using $(2+i)(2-i) = 5$ and $(2 + i)(1 - i) = 3 - i$,
+(b) Use the homomorphism $\varphi(a + bi) = (a + 3b) \bmod 5$ from the examples of ring homomorphisms above. It is surjective ($\varphi(a) = a \bmod 5$). Its kernel contains $2 + i$, since $2 + 3 = 5 \equiv 0$, hence contains the ideal $(2 + i)$. Conversely, suppose $5 \mid a + 3b$, say $a + 3b = 5k$. Using $(2+i)(2-i) = 5$ and $(2 + i)(1 - i) = 3 - i$,
 
 $$
 a + bi = (a + 3b) - b(3 - i) = (2 + i)\bigl[(2 - i)k - (1 - i)b\bigr] \in (2 + i).
@@ -368,7 +368,7 @@ This is the ring-theoretic form of the Chinese remainder theorem of [[number-the
 ::: widget euclid
 mode: crt
 system: 2 mod 3; 4 mod 5
-caption: The isomorphism $\Z_{15} \cong \Z_3 \times \Z_5$ in action: the pair of residues $(2 \bmod 3,\ 4 \bmod 5)$ corresponds to exactly one residue modulo $15$, namely $14$. The method follows the proof of [[#thm-crt-rings]]: write $1 = a + b$ with $a \in 3\Z$, $b \in 5\Z$ (here $1 = 6 - 5$), and combine.
+caption: The isomorphism $\Z_{15} \cong \Z_3 \times \Z_5$ in action: the pair of residues $(2 \bmod 3,\ 4 \bmod 5)$ corresponds to exactly one residue modulo $15$, namely $14$. The formula table at the end is the recipe from the proof of [[#thm-crt-rings]]: $6 \in 3\Z$ and $10 \in 5\Z$ add up to $16 \equiv 1 \pmod{15}$ (the proof's $1 = 6 + (-5)$, as $-5 \equiv 10$), and $x \equiv 2 \cdot 10 + 4 \cdot 6 = 44 \equiv 14$.
 :::
 
 ::: application Computing with remainders
@@ -385,7 +385,7 @@ Ring theory grew out of number theory. In the 1840s Ernst Kummer found that uniq
 
 ## Where this leads
 
-The next chapter, [[abstract-algebra/polynomials]], studies the most important rings after $\Z$: polynomial rings $F[x]$ over a field. They behave remarkably like the integers — there is a division algorithm, every ideal is principal and factorisation is unique — and quotients $F[x]/(p(x))$ by irreducible polynomials are fields. In [[abstract-algebra/fields-galois]] those fields are used to construct splitting fields and all finite fields. The arithmetic of $\Z/n\Z$ is developed in [[number-theory/congruences]], and the Gaussian integers reappear in the proof of Fermat's two-squares theorem in [[number-theory/diophantine]].
+The next chapter, [[abstract-algebra/polynomials]], studies the most important rings after $\Z$: polynomial rings $F[x]$ over a field. They behave remarkably like the integers — there is a division algorithm, every ideal is principal and factorisation is unique — and quotients $F[x]/(p(x))$ by irreducible polynomials are fields. In [[abstract-algebra/fields-galois]] those fields are used to construct splitting fields and all finite fields. The arithmetic of $\Z/n\Z$ is developed in [[number-theory/congruences]], and the Gaussian integers are the natural home of Fermat's two-squares theorem, proved in [[number-theory/diophantine]]: a prime $p = a^2 + b^2$ factors in $\Z[i]$ as $(a + bi)(a - bi)$.
 
 ::: summary
 - A **ring** has an abelian group $(R, +)$ and an associative multiplication with $1$, linked by the distributive laws; $0a = 0$ and $(-a)(-b) = ab$ follow from the axioms.

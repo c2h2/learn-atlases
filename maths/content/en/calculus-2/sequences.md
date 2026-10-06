@@ -299,7 +299,7 @@ Which of these sequences tend to $0$? (Select all that apply.)
 - [x] $\dfrac{(\ln n)^5}{\sqrt n}$
 - [ ] $\dfrac{n!}{10^n}$
 ::: solution
-By [[#eq-hierarchy]], exponentials beat powers, so $n^{10}/1.1^n \to 0$ even though the terms grow at first (they peak at about $7\times10^{15}$ near $n = 105$ and only fall below $1$ from $n = 686$ on), while $2^n/n^{10} \to \infty$. Powers beat logarithms, so $(\ln n)^5/\sqrt n \to 0$ (again very slowly). Factorials beat exponentials, so $n!/10^n \to \infty$. Tables of early terms are misleading here; the hierarchy is a statement about the eventual behaviour.
+By [[#eq-hierarchy]], exponentials beat powers, so $n^{10}/1.1^n \to 0$ even though the terms grow at first (they peak at about $7\times10^{15}$ near $n = 105$ and fall back below $1$ only from $n = 686$ on), while $2^n/n^{10} \to \infty$. Powers beat logarithms, so $(\ln n)^5/\sqrt n \to 0$ (again very slowly). Factorials beat exponentials, so $n!/10^n \to \infty$. Tables of early terms are misleading here; the hierarchy is a statement about the eventual behaviour.
 :::
 :::
 
@@ -342,7 +342,7 @@ The theorem is most useful for recursively defined sequences, where the strategy
 ::: example A recursively defined sequence {#ex-recursive}
 Let $a_1 = 1$ and $a_{n+1} = \sqrt{2 + a_n}$. Show that $(a_n)$ converges and find its limit.
 ::: solution
-The first terms are $1,\ 1.7321,\ 1.9319,\ 1.9829,\ 1.9957,\ 1.9989, \dots$, which suggests an increasing sequence with limit $2$.
+The first terms are $1,\ \allowbreak 1.7321,\ \allowbreak 1.9319,\ \allowbreak 1.9829,\ \allowbreak 1.9957,\ \allowbreak 1.9989,\ \allowbreak \dots$, which suggests an increasing sequence with limit $2$.
 
 *Bounded above by 2.* We prove $0 < a_n < 2$ by induction. It holds for $a_1 = 1$. If $0 < a_n < 2$, then $a_{n+1} = \sqrt{2 + a_n}$ is positive and $a_{n+1} < \sqrt{2 + 2} = 2$.
 

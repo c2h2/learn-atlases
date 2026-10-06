@@ -35,11 +35,11 @@ $$
 y(t) = \begin{cases} (t - a)^3, & t < a, \\ 0, & a \le t \le b, \\ (t - b)^3, & t > b, \end{cases}
 $$
 
-is differentiable (the one-sided derivatives at $a$ and $b$ are all $0$) and satisfies $y' = 3y^{2/3}$ everywhere, with $y(0) = 0$. A solution can sit at zero for as long as it likes and then leave at any moment. There are infinitely many solutions — and with $a = -\infty$ or $b = +\infty$ (that is, omitting a piece) we obtain still more.
+is differentiable (the one-sided derivatives at $a$ and $b$ are all $0$) and satisfies $y' = 3y^{2/3}$ everywhere, with $y(0) = 0$. A solution can sit at zero for as long as it likes and then leave at any moment. There are infinitely many solutions — and with $a = -\infty$ or $b = +\infty$ (that is, omitting a piece) we obtain still more. Conversely, every solution has this form: since $y' \ge 0$, a solution is non-decreasing, so it vanishes exactly on an interval $[a, b]$ containing $0$; on either side of it $y \ne 0$, separation gives $y = (t - c)^3$, and continuity at the endpoint forces $c = a$ or $c = b$.
 :::
 :::
 
-What goes wrong in this example is the behaviour of $f(y) = 3y^{2/3}$ near $y = 0$: its graph has a vertical tangent there, $f'(y) = 2y^{-1/3} \to \infty$. A tiny change in $y$ produces a disproportionately large change in the slope, and this allows solutions to peel away from the equilibrium. The cure is to forbid such behaviour.
+What goes wrong in this example is the behaviour of $f(y) = 3y^{2/3}$ near $y = 0$: its graph has a vertical tangent there, $\lvert f'(y)\rvert = 2\lvert y\rvert^{-1/3} \to \infty$. A tiny change in $y$ produces a disproportionately large change in the slope, and this allows solutions to peel away from the equilibrium. The cure is to forbid such behaviour.
 
 ## Lipschitz conditions
 
@@ -108,7 +108,7 @@ y_3(t) &= \int_0^t 2s\left(1 + s^2 + \frac{s^4}{2}\right)ds = t^2 + \frac{t^4}{2
 \end{aligned}
 $$
 
-By induction $y_n(t) = \sum_{k=1}^{n} \dfrac{t^{2k}}{k!}$, the $n$th partial sum of the series for $e^{t^2} - 1$. So the iterates converge (for every $t$) to $y = e^{t^2} - 1$, and indeed $y' = 2te^{t^2} = 2t(1 + y)$, $y(0) = 0$. Each iterate is correct to one more order in $t$ than the previous one.
+By induction $y_n(t) = \sum_{k=1}^{n} \dfrac{t^{2k}}{k!}$, the $n$th partial sum of the series for $e^{t^2} - 1$. So the iterates converge (for every $t$) to $y = e^{t^2} - 1$, and indeed $y' = 2te^{t^2} = 2t(1 + y)$, $y(0) = 0$. Each iterate adds one more term of the Taylor series of the solution, so $y_n$ agrees with it up to the term in $t^{2n}$.
 :::
 :::
 
@@ -322,7 +322,7 @@ x: 0, 12
 y: -0.4, 1.4
 sliders: h=0.1875:0:0.35:0.0125
 points: 0, 0.2; 0, 0.3; 0, 1.2
-caption: Harvested logistic growth $y' = y(1-y) - h$ (horizontal axis $t$). The solution curves are horizontal translates of one another because the equation is autonomous. Slide $h$ up to $0.25$ and watch the stable and unstable equilibria approach each other and annihilate; beyond that, every solution collapses.
+caption: Harvested logistic growth $y' = y(1-y) - h$ (horizontal axis $t$). Because the equation is autonomous, shifting a solution curve sideways gives another solution curve. Slide $h$ up to $0.25$ and watch the stable and unstable equilibria approach each other and annihilate; beyond that, every solution collapses.
 :::
 
 ::: quiz

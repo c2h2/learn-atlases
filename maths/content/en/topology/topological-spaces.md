@@ -176,7 +176,7 @@ By [[#thm-closure]], every limit point of $A$ lies in $\overline A$, and $A\subs
 ::: example Computing closures in three topologies {#ex-closures}
 (a) In $\R$ (standard topology), let $A = (0, 1]\cup\set2$. Find $\operatorname{int}A$, $\overline A$, $\partial A$ and $A'$. Do the same for $\Q$. (b) In $\R_\ell$, find the closure of $(0, 1)$. (c) In the cofinite topology on $\R$, find the closure of an infinite set.
 ::: solution
-(a) Every point of $(0, 1)$ has an interval around it inside $A$, while every interval around $1$ or $2$ contains points outside $A$; so $\operatorname{int}A = (0, 1)$. By [[#thm-closure]], $0\in\overline A$ (every interval around $0$ meets $(0,1]$), while points outside $[0, 1]\cup\set2$ have intervals around them missing $A$; so $\overline A = [0,1]\cup\set2$ and $\partial A = \set{0, 1, 2}$. The limit points are $A' = [0, 1]$: the isolated point $2$ belongs to $A$ but is not a limit point, since $(1.5, 2.5)$ meets $A$ only in $2$. For $\Q$: every open interval contains rationals and irrationals, so $\overline\Q = \R$ ($\Q$ is dense), $\operatorname{int}\Q = \emptyset$ and $\partial\Q = \R$.
+(a) Every point of $(0, 1)$ has an interval around it inside $A$, while every interval around $1$ or $2$ contains points outside $A$; so $\operatorname{int}A = (0, 1)$. By [[#thm-closure]], $0\in\overline A$ (every interval around $0$ meets $(0,1]$), while points outside $[0, 1]\cup\set2$ have intervals around them missing $A$; so $\overline A = [0,1]\cup\set2$ and $\partial A = \set{0, 1, 2}$. The limit points are $A' = [0, 1]$: the isolated point $2$ belongs to $A$ but is not a limit point, since $(1.5, 2.5)$ meets $A$ only in $2$. For $\Q$: every open interval contains rationals and irrationals, so $\overline\Q = \R$ ($\Q$ is dense), $\operatorname{int}\Q = \emptyset$ and $\partial\Q = \R$; and since every interval around a real number $x$ contains rationals other than $x$, $\Q' = \R$.
 
 (b) Use the basis of half-open intervals. A point $x < 0$ has $[x, 0)$ missing $(0,1)$; a point $x\ge1$ has $[x, x + 1)$ missing $(0,1)$; but every $[0, b)$ meets $(0, 1)$. So the closure of $(0, 1)$ in $\R_\ell$ is $[0, 1)$, not $[0, 1]$: the point $1$ can be "approached from the left" only, and the topology of $\R_\ell$ only sees approach from the right.
 
@@ -214,7 +214,7 @@ In a metric space this is the familiar definition, since it suffices to test the
 :::
 :::
 
-Limits are unique in metric spaces because distinct points have disjoint neighbourhoods; the cofinite topology on an infinite set has no disjoint non-empty open sets at all. This is the separation property studied in [[topology/quotient-spaces]]. A second warning: in metric spaces, $x\in\overline A$ exactly when some sequence in $A$ converges to $x$, but in general topological spaces sequences are not enough to detect closures (see [[#exr-cocountable]]). Metric spaces, and more generally spaces in which each point has a countable collection of neighbourhoods that suffices for testing, are the spaces where sequences tell the whole story.
+Limits are unique in metric spaces because distinct points have disjoint neighbourhoods; the cofinite topology on an infinite set has no disjoint non-empty open sets at all. This is the separation property studied in [[topology/quotient-spaces]]. A second warning: in metric spaces, $x\in\overline A$ exactly when some sequence in $A$ converges to $x$, but in general topological spaces sequences are not enough to detect closures (see [[#exr-cocountable]]). In metric spaces, and more generally in spaces in which each point has a countable collection of neighbourhoods that suffices for testing, sequences do detect closures.
 
 ::: application The Zariski topology
 Topologies far from metric ones are central in algebraic geometry. On $\C^n$, declare a set closed if it is the set of common zeros of some collection of polynomials. These closed sets satisfy [[#prop-closed]] (the zero set of a product $pq$ is the union of the zero sets, and the zero set of a collection of polynomials is the intersection of their zero sets), so their complements form a topology, the **Zariski topology**. On $\C$ a non-zero polynomial has finitely many zeros, so the Zariski topology on $\C$ is exactly the cofinite topology. Although very coarse, this topology carries just the right information for studying solutions of polynomial equations; see [[abstract-algebra/polynomials]] for the algebra behind it.
@@ -226,7 +226,7 @@ The idea of an abstract space with a notion of nearness grew out of analysis aro
 
 ## Where this leads
 
-With open sets as the basic notion we can now define continuity for maps between arbitrary topological spaces and build new spaces from old as subspaces and products ([[topology/continuous-maps]]). The open and closed sets of this chapter are the raw material of the two great properties of [[topology/connectedness]] and [[topology/compactness]]; the strange behaviour of sequences in non-Hausdorff spaces motivates the separation axioms of [[topology/quotient-spaces]]; and the Sorgenfrey line and the cofinite topology will reappear as counterexamples throughout. The same language underlies [[measure-theory/sigma-algebras]], whose axioms are modelled on these, and [[real-analysis/metric-spaces]] becomes a special case.
+With open sets as the basic notion we can now define continuity for maps between arbitrary topological spaces and build new spaces from old as subspaces and products ([[topology/continuous-maps]]). The open and closed sets of this chapter are the raw material of the two great properties of [[topology/connectedness]] and [[topology/compactness]]; the strange behaviour of sequences in non-Hausdorff spaces motivates the separation axioms of [[topology/quotient-spaces]]; and the Sorgenfrey line and the cofinite topology will reappear as counterexamples throughout. The σ-algebras of measure theory ([[measure-theory/sigma-algebras]]) are axiomatised in the same spirit (with complements and countable unions in place of arbitrary unions and finite intersections), and [[real-analysis/metric-spaces]] becomes a special case.
 
 ::: summary
 - A topology on $X$ is a collection of subsets containing $\emptyset$ and $X$ and closed under arbitrary unions and finite intersections ([[#def-topology]]); its members are the open sets.
@@ -234,7 +234,7 @@ With open sets as the basic notion we can now define continuity for maps between
 - A basis generates a topology whose open sets are the unions of basis elements ([[#thm-basis]]); open intervals generate the topology of $\R$, half-open intervals $[a,b)$ the finer Sorgenfrey topology.
 - Closed sets are complements of open sets: closed under arbitrary intersections and finite unions. "Closed" is not the opposite of "open".
 - $x\in\overline A$ if and only if every open set (or basis element) containing $x$ meets $A$; $\overline A = A\cup A'$, so a set is closed iff it contains its limit points.
-- In general spaces sequences can converge to many points, and do not always detect closures; separation properties restore the familiar behaviour.
+- In general spaces sequences can converge to many points, and do not always detect closures; the Hausdorff separation property restores unique limits, and in metric spaces sequences do detect closures.
 :::
 
 ## Exercises
@@ -260,7 +260,7 @@ $\operatorname{int}A = (0, 1)$: the point $0$ has no interval around it inside $
 :::
 :::
 
-::: exercise A countable basis {level=2}
+::: exercise A countable basis {#exr-countable-basis level=2}
 Prove that the open intervals $(p, q)$ with $p, q\in\Q$ form a countable basis for the standard topology on $\R$, and that the open discs with rational centres (both coordinates rational) and rational radii form a countable basis for $\R^2$.
 ::: solution
 The collection of pairs $(p, q)$ of rationals is countable, so there are countably many such intervals; that they form a basis generating the standard topology was shown in [[#ex-bases]](a). For $\R^2$: let $U$ be open and $x\in U$, with $B(x, r)\subseteq U$. Choose a point $c$ with rational coordinates and $d(c, x) < r/3$, and a rational $s$ with $r/3 < s < 2r/3$. Then $x\in B(c, s)$ since $d(x, c) < r/3 < s$, and $B(c, s)\subseteq B(x, r)$ since $d(y, x)\le d(y, c) + d(c, x) < 2r/3 + r/3 = r$ for $y\in B(c, s)$. So every open set is a union of such discs (they form a basis because they are open and satisfy this property), and there are countably many of them.
@@ -281,7 +281,7 @@ An open set $U$ satisfies $U\subseteq X\setminus A$ if and only if $X\setminus U
 :::
 :::
 
-::: exercise Dense sets {level=2}
+::: exercise Dense sets {#exr-dense level=2}
 Prove that $D\subseteq X$ is dense if and only if $D$ meets every non-empty open subset of $X$. Show that $\Q$ is dense in the Sorgenfrey line $\R_\ell$, and that in the cofinite topology on an infinite set every infinite subset is dense.
 ::: solution
 By [[#thm-closure]], $\overline D = X$ iff every point $x$ has the property that every open set containing $x$ meets $D$, iff every non-empty open set (which contains some point) meets $D$. In $\R_\ell$ every non-empty open set contains a basis interval $[a, b)$ with $a < b$, which contains rationals; so $\Q$ is dense. In the cofinite topology a non-empty open set has finite complement and so meets every infinite set ([[#ex-closures]](c)).
@@ -314,7 +314,7 @@ Prove that $\R_\ell$ has no countable basis, although it has a countable dense s
 Given a basis $\mathcal B$, choose for each $x$ an element $B_x\in\mathcal B$ with $x\in B_x\subseteq[x, x + 1)$.
 :::
 ::: solution
-Let $\mathcal B$ be any basis for $\R_\ell$. For each $x\in\R$ the set $[x, x+1)$ is open and contains $x$, so there is $B_x\in\mathcal B$ with $x\in B_x\subseteq[x, x+1)$. Then $x$ is the smallest element of $B_x$. If $x\neq y$ then $B_x\neq B_y$, because their smallest elements differ. So $x\mapsto B_x$ is an injection from $\R$ into $\mathcal B$, and $\mathcal B$ is uncountable. On the other hand $\Q$ is countable and dense in $\R_\ell$ (previous exercise). In metric spaces a countable dense subset always yields a countable basis (balls with rational radii around its points, as in the countable basis exercise), so this also shows that $\R_\ell$ is not metrisable.
+Let $\mathcal B$ be any basis for $\R_\ell$. For each $x\in\R$ the set $[x, x+1)$ is open and contains $x$, so there is $B_x\in\mathcal B$ with $x\in B_x\subseteq[x, x+1)$. Then $x$ is the smallest element of $B_x$. If $x\neq y$ then $B_x\neq B_y$, because their smallest elements differ. So $x\mapsto B_x$ is an injection from $\R$ into $\mathcal B$, and $\mathcal B$ is uncountable. On the other hand $\Q$ is countable and dense in $\R_\ell$ ([[#exr-dense]]). In metric spaces a countable dense subset always yields a countable basis (balls with rational radii around its points, as in [[#exr-countable-basis]]), so this also shows that $\R_\ell$ is not metrisable.
 :::
 :::
 

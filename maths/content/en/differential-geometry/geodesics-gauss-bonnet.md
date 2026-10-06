@@ -65,7 +65,7 @@ fy: cos(a)*sin(t)
 fz: sin(a)
 t: 0, 2pi
 sliders: a=0.8:0:1.4:0.05
-caption: A circle of latitude $a$ on the unit sphere with its Frenet frame. The principal normal $\mathbf{N}$ points horizontally at the axis, while the sphere's normal points away from the centre; $\mathbf{N}$ makes the angle $a$, the latitude, with the inward normal. The part of the curvature $\kappa = 1/\cos a$ along the sphere's normal is $\kappa_n = -1$, and the rest, $\kappa_g = \tan a$, is the turning felt on the sphere. Move $a$ to $0$: $\mathbf{N}$ points straight at the centre, along the sphere's normal line, and the equator becomes a geodesic.
+caption: A circle of latitude $a$ on the unit sphere with its Frenet frame. The principal normal $\mathbf{N}$ points horizontally at the axis, while the sphere's normal points away from the centre; $\mathbf{N}$ makes the angle $a$, the latitude, with the inward normal. The curvature vector, of length $\kappa = 1/\cos a$, has component $\kappa_n = -1$ along the sphere's normal and component $\kappa_g = \tan a$ in the tangent plane — the turning felt on the sphere ($\kappa^2 = \kappa_n^2 + \kappa_g^2$). Move $a$ to $0$: $\mathbf{N}$ points straight at the centre, along the sphere's normal line, and the equator becomes a geodesic.
 :::
 
 ## Geodesics
@@ -175,7 +175,7 @@ $$
 u'' - ff'\,v'^2 = 0, \qquad v'' + \frac{2f'}{f}\,u'v' = 0 .
 $$ {#eq-revolution-geodesic}
 
-**Meridians** ($v$ constant, $u = s$) satisfy both equations, so every meridian is a geodesic. A **parallel** $u = u_0$, traversed at unit speed ($v' = 1/f(u_0)$), satisfies the second equation, and the first becomes $f(u_0)f'(u_0)/f(u_0)^2 = 0$: a parallel is a geodesic exactly when $f'(u_0) = 0$, that is, at a parallel of locally extreme radius, such as the equator of a sphere or the waist of a catenoid. The general geodesic is controlled by a conserved quantity.
+**Meridians** ($v$ constant, $u = s$) satisfy both equations, so every meridian is a geodesic. A **parallel** $u = u_0$, traversed at unit speed ($v' = 1/f(u_0)$), satisfies the second equation, and the first becomes $f(u_0)f'(u_0)/f(u_0)^2 = 0$: a parallel is a geodesic exactly when $f'(u_0) = 0$, that is, where the radius is stationary — for instance at a parallel of locally extreme radius, such as the equator of a sphere or the waist of a catenoid. The general geodesic is controlled by a conserved quantity.
 
 ::: theorem Clairaut's relation {#thm-clairaut}
 Let $\boldsymbol\gamma$ be a unit-speed geodesic on a surface of revolution, and let $\psi(s)$ be the angle between $\boldsymbol\gamma'(s)$ and the parallel through $\boldsymbol\gamma(s)$. Then
@@ -204,7 +204,7 @@ $$
 Since $\abs{\cos\psi}\le1$, a geodesic with Clairaut constant $c$ never enters the part of the surface where $f(u) < \abs{c}$: heading into a narrowing part, it turns back where the radius equals $\abs{c}$, touching that parallel. (Physically, $f^2v'$ is angular momentum about the axis, conserved by symmetry.)
 
 ::: example How high does a great circle go? {#ex-clairaut-sphere}
-On the unit sphere a geodesic leaves the equator heading north-east, at angle $\alpha$ to the equator ($0 < \alpha < \pi/2$). What is the highest latitude it reaches?
+On the unit sphere a geodesic leaves the equator heading north of east, at angle $\alpha$ to the equator ($0 < \alpha < \pi/2$). What is the highest latitude it reaches?
 ::: solution
 With latitude $\theta$ as the profile parameter, the radius of the parallel at latitude $\theta$ is $f = \cos\theta$. At the start $f = 1$ and $\psi = \alpha$, so Clairaut's constant is $c = \cos\alpha$. At the highest point the geodesic runs along a parallel, $\cos\psi = 1$, so $\cos\theta_{\max} = \cos\alpha$, i.e. $\theta_{\max} = \alpha$. This agrees with geometry: the geodesic is the great circle whose plane is tilted at angle $\alpha$ to the equatorial plane, and its highest point has latitude $\alpha$.
 :::
@@ -215,7 +215,7 @@ With latitude $\theta$ as the profile parameter, the radius of the parallel at l
 Straight lines in the plane are the shortest paths between their points. On a surface the relationship is subtler.
 
 ::: theorem Shortest curves are geodesics {#thm-shortest}
-(a) If a curve on $S$ is the shortest among all piecewise smooth curves on $S$ joining its endpoints, then, parametrised by arc length, it is a geodesic. (b) Conversely, every point $p\in S$ has a neighbourhood $W$ such that for each $q\in W$ the geodesic from $p$ to $q$ within $W$ is the unique shortest curve on $S$ joining $p$ and $q$.
+(a) If a regular curve on $S$ is the shortest among all piecewise smooth curves on $S$ joining its endpoints, then, parametrised by arc length, it is a geodesic. (b) Conversely, every point $p\in S$ has a neighbourhood $W$ such that for each $q\in W$ the geodesic from $p$ to $q$ within $W$ is the unique shortest curve on $S$ joining $p$ and $q$.
 :::
 
 ::: proof
@@ -231,7 +231,7 @@ So $\mathcal{L}(\eps) < \mathcal{L}(0)$ for small $\eps > 0$, contradicting mini
 :::
 
 ::: warning Geodesics are only locally shortest
-A geodesic need not be the shortest path between its endpoints: a great-circle arc longer than half the circle is a geodesic, but the other arc is shorter, and the multiply wound helices of [[#ex-cylinder]] are not shortest. A shortest path need not even exist: in the plane minus the origin, no curve from $(-1,0)$ to $(1,0)$ is shortest. On a compact surface, though, any two points are joined by a shortest geodesic (Hopf–Rinow theorem).
+A geodesic need not be the shortest path between its endpoints: a great-circle arc longer than half the circle is a geodesic, but the other arc is shorter, and the multiply wound helices of [[#ex-cylinder]] are not shortest. A shortest path need not even exist: in the plane minus the origin, no curve from $(-1,0)$ to $(1,0)$ is shortest. On a compact connected surface, though, any two points are joined by a shortest geodesic (Hopf–Rinow theorem).
 :::
 
 ## Parallel transport and holonomy
@@ -294,7 +294,7 @@ $$
 using $\mathbf{x}_{uu}\cdot\mathbf{x}_v = F_u - \tfrac12E_v = -\tfrac12E_v$ and $\mathbf{x}_{uv}\cdot\mathbf{x}_v = \tfrac12G_u$ (differentiate $F = \mathbf{x}_u\cdot\mathbf{x}_v = 0$ and $G = \mathbf{x}_v\cdot\mathbf{x}_v$).
 :::
 
-Check: on the sphere in latitude–longitude coordinates ($\mathbf{e}_1$ north, $\mathbf{e}_2$ east, so $\mathbf{n}$ points *inwards*), the eastward circle of latitude $\theta_0$ has $\phi = \pi/2$, $\theta' = 0$, $\varphi' = 1/(R\cos\theta_0)$, and [[#eq-liouville]] gives $\kappa_g = \frac{-2R^2\cos\theta_0\sin\theta_0}{2R^2\cos\theta_0}\cdot\frac{1}{R\cos\theta_0} = -\frac{\tan\theta_0}{R}$ — the value of [[#ex-latitude]], with the sign reversed because the normal is reversed.
+Check: on the sphere in latitude–longitude coordinates ($\mathbf{e}_1$ north, $\mathbf{e}_2$ east, so $\mathbf{n}$ points *inwards*), the eastward circle of latitude $\theta_0$ has constant tangent angle $\phi = \pi/2$, while $\theta' = 0$ and the longitude changes at the rate $\varphi' = 1/(R\cos\theta_0)$, so [[#eq-liouville]] gives $\kappa_g = \frac{-2R^2\cos\theta_0\sin\theta_0}{2R^2\cos\theta_0}\cdot\frac{1}{R\cos\theta_0} = -\frac{\tan\theta_0}{R}$ — the value of [[#ex-latitude]], with the sign reversed because the normal is reversed.
 
 To state the theorem, let $R$ be a **simple region** in an orthogonal patch: the image $\mathbf{x}(D)$ of a region $D$ homeomorphic to a closed disc whose boundary is a piecewise smooth simple closed curve. Parametrise the boundary $\partial R$ by arc length in the **positive** direction (with $R$ on the left when $\mathbf{n}$ points up; equivalently, $\partial D$ anticlockwise in the $(u,v)$-plane). At each **vertex**, where the boundary has a corner, the **exterior angle** $\theta_i\in(-\pi, \pi)$ is the angle from the incoming to the outgoing tangent, positive if the boundary turns towards $R$; the interior angle is $\alpha_i = \pi - \theta_i$.
 
@@ -385,11 +385,11 @@ By [[#cor-triangle]], $\alpha_1 + \alpha_2 + \alpha_3 = \pi + \iint_T K\,dA = \p
 Liouville's formula also measures holonomy.
 
 ::: proposition Holonomy equals enclosed curvature {#prop-holonomy}
-Let $R$ be a simple region in an orthogonal patch whose boundary $\partial R$ is a smooth curve, traversed once positively, and let $\mathbf{w}$ be a parallel unit field along $\partial R$. Measured against the frame $\mathbf{e}_1, \mathbf{e}_2$, the angle $\psi$ of $\mathbf{w}$ increases by $\iint_R K\,dA$ in one circuit. So parallel transport around $\partial R$ rotates every tangent vector at the starting point by the angle $\iint_R K\,dA$.
+Let $R$ be a simple region in an orthogonal patch, with boundary $\partial R$ (corners allowed) traversed once positively, and let $\mathbf{w}$ be a parallel unit field along $\partial R$. Measured against the frame $\mathbf{e}_1, \mathbf{e}_2$, the angle $\psi$ of $\mathbf{w}$ increases by $\iint_R K\,dA$ in one circuit. So parallel transport around $\partial R$ rotates every tangent vector at the starting point by the angle $\iint_R K\,dA$.
 :::
 
 ::: proof
-By [[#lem-liouville]], $\psi' = -\frac{1}{2\sqrt{EG}}(G_uv' - E_vu')$ along $\partial R$, so the total change of $\psi$ is minus the line integral of Step 2 in the proof of [[#thm-local-gauss-bonnet]], namely $\iint_R K\,dA$. Since the frame $\mathbf{e}_1, \mathbf{e}_2$ returns to itself, $\mathbf{w}$ comes back rotated by this angle relative to its starting position.
+By [[#lem-liouville]], $\psi' = -\frac{1}{2\sqrt{EG}}(G_uv' - E_vu')$ along each smooth arc of $\partial R$, and $\psi$ does not jump at the corners, because $\mathbf{w}$ is continuous there. So the total change of $\psi$ is minus the line integral of Step 2 in the proof of [[#thm-local-gauss-bonnet]], namely $\iint_R K\,dA$. Since the frame $\mathbf{e}_1, \mathbf{e}_2$ returns to itself, $\mathbf{w}$ comes back rotated by this angle relative to its starting position.
 :::
 
 This is the intrinsic meaning of Gaussian curvature: **curvature is the rotation produced by parallel transport around a small loop, per unit enclosed area**. On the unit sphere, the loop of the previous section enclosed the octant of area $\pi/2$ and rotated vectors by $\pi/2$.
@@ -472,7 +472,7 @@ u: 0, 2pi
 v: 0, pi
 sliders: e=0.3:0:0.5:0.05
 color: gauss
-caption: A sphere with three bulges and three dents, coloured by Gaussian curvature. Increase $e$: regions of negative curvature (saddles) appear between the bulges, and the curvature on the bulges grows to compensate. However large $e$ is, $\iint K\,dA$ stays exactly $4\pi$, because the surface is still topologically a sphere ($\chi = 2$).
+caption: A sphere with three bulges and three dents, coloured by Gaussian curvature. Move $e$ up from $0$: beyond $e = 0.1$, regions of negative curvature (saddles) appear in the dents between the bulges, while the curvature on the bulges grows to compensate; beyond $e = 0.25$ the floor of each dent becomes a small cup of positive curvature, ringed by saddles. However large $e$ is, $\iint K\,dA$ stays exactly $4\pi$, because the surface is still topologically a sphere ($\chi = 2$).
 :::
 
 ::: quiz
@@ -489,7 +489,7 @@ A compact orientable surface with $g = 3$ handles has $\chi = 2 - 2g = -4$, so $
 Some consequences of the theorem:
 
 1. Every surface homeomorphic to a sphere — an ellipsoid, a potato, the bumpy sphere above — has total curvature $4\pi$.
-2. If $K > 0$ everywhere on a compact orientable surface, then $\chi(S) > 0$, so $\chi(S) = 2$ and $S$ is homeomorphic to a sphere.
+2. If $K > 0$ everywhere on a compact connected orientable surface, then $\chi(S) > 0$, so $\chi(S) = 2$ and $S$ is homeomorphic to a sphere.
 3. Every compact surface in space has points with $K > 0$ (last exercise of [[differential-geometry/surface-curvature]]), so a torus must also have points with $K < 0$.
 
 ::: warning Read the hypotheses
@@ -556,7 +556,7 @@ At the equator $f = 1$ and $\psi = 30^\circ$, so $c = \cos30^\circ$. At the high
 :::
 
 ::: exercise Foucault at thirty degrees {level=2 check="pi"}
-Through what angle, in radians, does the swing plane of a Foucault pendulum at latitude $30^\circ$ turn relative to the ground in one sidereal day? How long does a full turn take?
+Through what angle, in radians, does the swing plane of a Foucault pendulum at latitude $30^\circ$ turn relative to the ground in one sidereal day? How long does a full turn take? (Enter the angle.)
 ::: solution
 $2\pi\sin30^\circ = \pi$ per sidereal day, so a full turn takes two sidereal days, about $47.9$ hours.
 :::
@@ -593,7 +593,7 @@ contradicting $K\le0$. For a smooth closed geodesic bounding $R$ there are no ve
 :::
 
 ::: exercise Total curvature of a surface of revolution {level=3 check="4*pi"}
-Let $S$ be obtained by rotating a unit-speed profile curve $(f(u), g(u))$, $0\le u\le\ell$, about the $z$-axis, where $f > 0$ on $(0,\ell)$, $f(0) = f(\ell) = 0$, $f'(0) = 1$ and $f'(\ell) = -1$ (the profile meets the axis at right angles, so $S$ is a smooth surface homeomorphic to a sphere). Using $K = -f''/f$ ([[differential-geometry/surface-curvature]]), compute $\iint_S K\,dA$ directly and compare with the Gauss–Bonnet theorem.
+Let $S$ be obtained by rotating a unit-speed profile curve $(f(u), g(u))$, $0\le u\le\ell$, about the $z$-axis, where $f > 0$ on $(0,\ell)$, $f(0) = f(\ell) = 0$, $f'(0) = 1$ and $f'(\ell) = -1$ (the profile meets the axis at right angles; assume also that $S$ is smooth at the two poles, so that it is a regular surface homeomorphic to a sphere). Using $K = -f''/f$ ([[differential-geometry/surface-curvature]]), compute $\iint_S K\,dA$ directly and compare with the Gauss–Bonnet theorem.
 ::: solution
 In the patch $\mathbf{x}(u,v) = (f\cos v, f\sin v, g)$, $E = 1$, $F = 0$, $G = f^2$, so $dA = f\,du\,dv$ and $K\,dA = -f''\,du\,dv$. The two poles are single points and do not affect the integral, so
 

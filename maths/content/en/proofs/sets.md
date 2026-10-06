@@ -40,7 +40,7 @@ How many elements does the set $\set{\varnothing,\ \set{\varnothing},\ \set{1,2}
 - [x] $3$
 - [ ] $4$
 ::: solution
-The sets $\set{1,2}$ and $\set{2,1}$ have the same elements, so they are equal and count only once. The remaining elements $\varnothing$ and $\set{\varnothing}$ differ from each other (one has no elements, the other has one) and from $\set{1,2}$. So the set is $\set{\varnothing, \set{\varnothing}, \set{1,2}}$, with three elements. Note that $\varnothing$ counts as an element here: being empty is a property of the elements *of* $\varnothing$, not a reason to ignore $\varnothing$ when it sits inside another set.
+The sets $\set{1,2}$ and $\set{2,1}$ have the same elements, so they are equal and count only once. The remaining elements $\varnothing$ and $\set{\varnothing}$ differ from each other (one has no elements, the other has one) and from $\set{1,2}$. So the set is $\set{\varnothing, \set{\varnothing}, \set{1,2}}$, with three elements. Note that $\varnothing$ counts as an element here: being empty is a fact about what lies *inside* $\varnothing$ (nothing), not a reason to ignore $\varnothing$ when it sits inside another set.
 :::
 :::
 

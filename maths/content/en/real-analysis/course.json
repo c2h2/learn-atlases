@@ -173,9 +173,10 @@
     {
       "year": 1922,
       "title": "Banach's fixed point theorem",
-      "detail": "Banach's thesis, published in *Fundamenta Mathematicae*, proved that a contraction of a complete metric space has a unique fixed point, abstracting Picard's method of successive approximations.",
+      "detail": "Banach's thesis, published in *Fundamenta Mathematicae*, proved that a contraction of a complete normed space (a Banach space, as we now say) has a unique fixed point, abstracting Picard's method of successive approximations; Caccioppoli extended the theorem to complete metric spaces in 1930.",
       "people": [
-        "Stefan Banach"
+        "Stefan Banach",
+        "Renato Caccioppoli"
       ]
     }
   ],

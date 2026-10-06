@@ -203,12 +203,12 @@ $$
 :::
 
 ::: widget plot
-f: n^2*x*exp(-n*x)
+f: n^2*x*exp(-n*x); 4/(e^2*x)
 x: 0, 2
-y: 0, 8
+y: 0, 10
 sliders: n=1:1:25:1
-labels: f_n(x) = n^2xe^{-nx}
-caption: 另一个丢失质量的序列：$f_n(x) = n^2xe^{-nx}$在每个$x \ge 0$处都趋于$0$，但对每个$n$都有$\int_0^\infty f_n = 1$。法图引理允许这种情况发生（$0 \le 1$）。控制收敛定理不适用，图像显示了原因：没有一个可积函数能位于所有$f_n$的上方——它们的上包络在$0$附近的行为像$4/(e^2x)$，而这个函数不可积。
+labels: f_n(x) = n^2xe^{-nx}; 4/(e^2x)
+caption: 另一个丢失质量的序列：$f_n(x) = n^2xe^{-nx}$在每个$x \ge 0$处都趋于$0$，但对每个$n$都有$\int_0^\infty f_n = 1$。法图引理允许这种情况发生（$0 \le 1$）。控制收敛定理不适用，图像显示了原因：每个$f_n$都位于曲线$4/(e^2x)$的下方，并在$x = 2/n$处与它相切，所以位于所有$f_n$上方的最小函数在$0$附近的行为像$4/(e^2x)$。这个函数不可积，所以没有一个可积函数能位于所有$f_n$的上方。
 :::
 
 ## 可积函数
@@ -246,7 +246,7 @@ $\abs{af + bg} \le \abs a\abs f + \abs b\abs g$，由[[#cor-additivity]]，右�
 下面是第三个、也是最常用的收敛定理。通过巧妙地选取非负函数，它可以由法图引理推出。
 
 ::: theorem 控制收敛定理 {#thm-dct}
-设$f_n$是可测函数，几乎处处有$f_n \to f$，并设存在可积函数$g$，使得对每个$n$，几乎处处有$\abs{f_n} \le g$。则$f$可积，
+设$f_n$和$f$是可测函数，几乎处处有$f_n \to f$，并设存在可积函数$g$，使得对每个$n$，几乎处处有$\abs{f_n} \le g$。则$f$可积，
 
 $$
 \int_X\abs{f_n - f}\,d\mu \to 0, \qquad\text{特别地}\qquad \int_X f_n\,d\mu \to \int_X f\,d\mu.
@@ -254,7 +254,7 @@ $$
 :::
 
 ::: proof
-在一个零测集上改变所有函数的值不会改变任何积分，所以我们可以假定（在一个适当的零测集上把它们重新定义为$0$）$f_n \to f$和$\abs{f_n} \le g$处处成立，并且$g$取有限值。于是$f$可测，且$\abs f \le g$，所以$f$可积。函数$2g - \abs{f_n - f}$非负（因为$\abs{f_n - f} \le \abs{f_n} + \abs f \le 2g$），并且收敛于$2g$。由法图引理得
+在一个零测集上改变所有函数的值不会改变任何积分，所以我们可以假定（在一个适当的零测集上把它们重新定义为$0$）$f_n \to f$和$\abs{f_n} \le g$处处成立，并且$g$取有限值。于是$\abs f \le g$，所以$f$可积。（对于勒贝格测度这样的完备测度，由[[measure-theory/measurable-functions#def-ae]]之后的说明，$f$的可测性自动成立；对于不完备的测度，则必须把它作为假设。）函数$2g - \abs{f_n - f}$非负（因为$\abs{f_n - f} \le \abs{f_n} + \abs f \le 2g$），并且收敛于$2g$。由法图引理得
 
 $$
 \int 2g\,d\mu \le \liminf_n\int\bigl(2g - \abs{f_n - f}\bigr)d\mu = \int 2g\,d\mu - \limsup_n\int\abs{f_n - f}\,d\mu.
@@ -382,7 +382,7 @@ $$
 :::
 
 ::: application 数学期望
-在概率论中，概率空间$(\Omega, \mathcal{F}, P)$上的随机变量$X$的积分就是它的**数学期望**$\E[X] = \int_\Omega X\,dP$。本章的定理成为这门学科的基本法则：马尔可夫不等式$P(\abs X \ge t) \le \E\abs X/t$；期望的线性性；对非负的$X_n$，$\E\bigl[\sum X_n\bigr] = \sum\E[X_n]$（因此在$A_1, A_2, \dots$中发生的事件个数的期望为$\sum P(A_n)$）；以及在控制条件下极限与期望的交换，这在[[probability/limit-theorems]]一章中随处可见。
+在概率论中，概率空间$(\Omega, \mathcal{F}, P)$上的随机变量$X$的积分就是它的**数学期望**$\E[X] = \int_\Omega X\,dP$。本章的定理成为这门学科的基本法则：马尔可夫不等式$P(\abs X \ge t) \le \E\abs X/t$；期望的线性性；对非负的$X_n$，$\E\bigl[\sum X_n\bigr] = \sum\E[X_n]$（因此在$A_1, A_2, \dots$中发生的事件个数的期望为$\sum P(A_n)$）；以及在控制条件下极限与期望的交换，它被用来把矩母函数展开为幂级数（[[probability/expectation]]）——这正是证明中心极限定理的工具（[[probability/limit-theorems]]）。
 :::
 
 ::: history
@@ -391,7 +391,7 @@ $$
 
 ## 后续内容
 
-本章的积分是现代分析学和概率论的基础。在[[measure-theory/lp-spaces]]一章中，可积函数构成赋范空间$L^1$，与之并列的还有满足$\int\abs f^p < \infty$的函数所构成的空间$L^p$；我们将证明它们是完备的——这就是里斯-费希尔（Riesz–Fischer）定理，它的证明是单调收敛定理和法图引理的直接应用——并比较函数列各种不同的收敛方式。在概率论中（[[probability/expectation]]），积分就是**数学期望**$\E[X] = \int X\,dP$，而收敛定理为[[probability/limit-theorems]]一章中随处可见的极限与期望的交换提供了依据。关于累次积分的富比尼（Fubini）定理、傅里叶变换（[[pde/fourier-transform]]）以及微分方程理论，都建立在这里所证明的定理之上。
+本章的积分是现代分析学和概率论的基础。在[[measure-theory/lp-spaces]]一章中，可积函数构成赋范空间$L^1$，与之并列的还有满足$\int\abs f^p < \infty$的函数所构成的空间$L^p$；我们将证明它们是完备的——这就是里斯-费希尔（Riesz–Fischer）定理，它的证明是单调收敛定理和控制收敛定理的直接应用——并比较函数列各种不同的收敛方式。在概率论中（[[probability/expectation]]），积分就是**数学期望**$\E[X] = \int X\,dP$，而收敛定理为极限与期望的交换提供了依据，例如中心极限定理背后的矩母函数（[[probability/limit-theorems]]）。关于累次积分的富比尼（Fubini）定理、傅里叶变换（[[pde/fourier-transform]]）以及微分方程理论，都建立在这里所证明的定理之上。
 
 ::: summary
 - 对非负简单函数，$\int\sum c_k\mathbf{1}_{E_k} = \sum c_k\mu(E_k)$；对非负可测函数$f$，$\int f$是位于$f$下方的简单函数的积分的上确界。

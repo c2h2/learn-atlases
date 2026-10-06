@@ -97,7 +97,7 @@ degree: 1
 residuals: true
 x: -1, 5
 y: -1, 6
-caption: The data of [[#ex-line]] with the least-squares line $y = \tfrac32 + x$ and its residuals. Drag a point and watch the line respond: it minimises the total area of the squares built on the vertical residuals. Notice that the line always passes through the centroid $(\bar x, \bar y)$ of the data, and that moving one point far away (an outlier) drags the whole line with it — squaring makes large errors very expensive.
+caption: The data of [[#ex-line]] with the least-squares line $y = \tfrac32 + x$ and its residuals. Drag a point and watch the line respond: it minimises the total area of the squares built on the vertical residuals (switch on *Squares* to see them). Notice that the line always passes through the centroid $(\bar x, \bar y)$ of the data, and that moving one point far away (an outlier) drags the whole line with it — squaring makes large errors very expensive.
 :::
 
 ::: example A system with no solution {#ex-inconsistent}
@@ -302,12 +302,12 @@ $$
 A\T A = \begin{pmatrix}1 + \delta^2 & 1\\ 1 & 1 + \delta^2\end{pmatrix}, \qquad \delta^2 = 10^{-16}.
 $$
 
-In double-precision arithmetic, the number $1 + 10^{-16}$ is rounded to exactly $1$ (the gap between $1$ and the next representable number is about $2.2\times10^{-16}$). The computed $A\T A$ is therefore $\begin{pmatrix}1&1\\1&1\end{pmatrix}$, which is singular: the information that distinguished the columns has been rounded away before the solution even starts. The QR factorisation works with $A$ itself: Gram–Schmidt (or a Householder reflection) gives $R\approx\begin{pmatrix}1&1\\0&\sqrt2\,\delta\end{pmatrix}$, which is perfectly invertible, and $R\hat{\mathbf{x}} = Q\T\mathbf{b}$ returns $(1, 1)$ to full accuracy. (In the language of [[linear-algebra/svd]]: the condition number of $A$ is about $1.4\times 10^8$, harmless, while that of $A\T A$ is its square, about $2\times10^{16}$, beyond the precision of the arithmetic.)
+In double-precision arithmetic, the number $1 + 10^{-16}$ is rounded to exactly $1$ (the gap between $1$ and the next representable number is about $2.2\times10^{-16}$). The computed $A\T A$ is therefore $\begin{pmatrix}1&1\\1&1\end{pmatrix}$, which is singular: the information that distinguished the columns has been rounded away before the solution even starts. The QR factorisation works with $A$ itself. Householder reflections (see the next remark) give, up to signs, $R\approx\begin{pmatrix}1&1\\0&\sqrt2\,\delta\end{pmatrix}$, which is perfectly invertible, and $R\hat{\mathbf{x}} = Q\T\mathbf{b}$ returns $(1, 1)$ to full accuracy. Plain Gram–Schmidt finds the same $R$, but here its computed $\mathbf{q}_2$ is not accurately orthogonal to $\mathbf{q}_1$, and the computed $Q\T\mathbf{b}$ leads to $(2, 0)$ instead — one reason why libraries prefer Householder reflections. (In the language of [[linear-algebra/svd]]: the condition number of $A$ is about $1.4\times 10^8$, harmless, while that of $A\T A$ is its square, about $2\times10^{16}$, beyond the precision of the arithmetic.)
 :::
 :::
 
 ::: remark How it is done in practice
-Library routines (such as those behind `numpy.linalg.lstsq` or MATLAB's backslash) compute the QR factorisation not by Gram–Schmidt but by **Householder reflections**, which are numerically more stable, or use the singular value decomposition when the columns may be nearly dependent. Very large sparse problems are solved iteratively. See [[numerical-analysis/direct-methods]] and [[numerical-analysis/iterative-methods]].
+Library routines compute the QR factorisation not by Gram–Schmidt but by **Householder reflections**, which are numerically more stable (MATLAB's backslash does this for a rectangular system), or use the singular value decomposition, which also copes with nearly dependent columns (as `numpy.linalg.lstsq` does). Very large sparse problems are solved iteratively. See [[numerical-analysis/direct-methods]] and [[numerical-analysis/iterative-methods]].
 :::
 
 ::: history

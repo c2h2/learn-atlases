@@ -38,7 +38,7 @@ $$
 \lambda^*\Bigl(\bigcup_n A_n\Bigr) \le \sum_{n,k}\ell(I_{n,k}) < \sum_n\Bigl(\lambda^*(A_n) + \frac{\eps}{2^n}\Bigr) = \sum_n\lambda^*(A_n) + \eps.
 $$
 
-(A double series of non-negative terms may be summed in any order: [[real-analysis/series#thm-rearrangement-abs]].) As $\eps$ was arbitrary, the inequality follows.
+(Here the intervals $I_{n,k}$ are taken in a single sequence; since the terms are non-negative, every finite partial sum of their lengths, and hence the whole sum, is at most $\sum_n\sum_k\ell(I_{n,k})$.) As $\eps$ was arbitrary, the inequality follows.
 
 (3) The intervals $I_k$ cover $A$ if and only if the translated intervals $I_k + t$ cover $A + t$, and translation preserves lengths.
 
@@ -48,7 +48,7 @@ $$
 ::: widget cantor
 mode: rationals
 size: 8
-caption: The positive rationals can be listed $q_1, q_2, q_3, \dots$ by walking the zig-zag through the table of fractions. Covering $q_k$ by an open interval of length $\eps/2^k$ covers every rational with total length at most $\eps$ — however small $\eps$ is. That is why $\lambda^*(\Q) = 0$, even though $\Q$ is dense and meets every interval.
+caption: The positive rationals can be listed $q_1, q_2, q_3, \dots$ by walking the zig-zag through the table of fractions. Covering $q_k$ by an open interval of length $\eps/2^k$ covers every positive rational with total length at most $\eps$ — however small $\eps$ is — and listing $0, q_1, -q_1, q_2, -q_2, \dots$ instead does the same for all of $\Q$. That is why $\lambda^*(\Q) = 0$, even though $\Q$ is dense and meets every interval.
 :::
 
 ::: example The rationals: countable versus finite covers {#ex-rationals-measure}
@@ -56,7 +56,7 @@ Show that $\lambda^*(\Q\cap[0, 1]) = 0$, but that any *finite* family of open in
 ::: solution
 *Countable covers.* List the rationals of $[0, 1]$ as $q_1, q_2, \dots$ and cover $q_k$ by the interval $\bigl(q_k - \eps2^{-k-1}, q_k + \eps2^{-k-1}\bigr)$ of length $\eps 2^{-k}$. The total length is $\eps$, so $\lambda^*(\Q\cap[0,1]) \le \eps$ for every $\eps > 0$.
 
-*Finite covers.* Let $I_1, \dots, I_m$ be open intervals covering $\Q\cap[0,1]$, with union $U$. Then $[0, 1]\setminus U$ is a finite union of intervals (complements and intersections of finitely many intervals are finite unions of intervals) containing no rational number. An interval of positive length contains rationals, so each of these intervals is a single point: $[0, 1]\setminus U$ is a finite set $F$. Since the $I_k$ themselves form a cover of $U$, and $[0, 1] \subseteq U \cup F$,
+*Finite covers.* Let $I_1, \dots, I_m$ be open intervals covering $\Q\cap[0,1]$, with union $U$. Then $[0, 1]\setminus U$ is a finite union of intervals (complements and intersections of finitely many intervals are finite unions of intervals) containing no rational number. An interval of positive length contains rationals, so each of these intervals is a single point: $[0, 1]\setminus U$ is a finite set $F$. Since the $I_k$ themselves form a cover of $U$, and $[0, 1] \subseteq U \cup F$, we get, using $\lambda^*([0, 1]) = 1$ (proved in [[#thm-outer-interval]] below),
 
 $$
 1 = \lambda^*([0, 1]) \le \lambda^*(U) + \lambda^*(F) \le \sum_{k=1}^m\ell(I_k) + 0.
@@ -78,7 +78,7 @@ For every interval $I$ with end-points $a \le b$ (open, closed or half-open), $\
 *Closed intervals, lower bound.* Let $(I_k)$ be any countable cover of $[a, b]$ by open intervals. By the Heine–Borel theorem ([[real-analysis/metric-spaces#thm-heine-borel]]) finitely many of them already cover $[a, b]$; it suffices to show that these have total length greater than $b - a$. Choose one of them, $(a_1, b_1)$, containing $a$. If $b_1 \le b$, then $b_1 \in [a, b]$ is covered by another of the finitely many intervals, $(a_2, b_2)$, with $a_2 < b_1 < b_2$. Continue in this way: as long as $b_j \le b$, choose a further interval $(a_{j+1}, b_{j+1})$ of the finite cover containing $b_j$. The right end-points strictly increase, so no interval is chosen twice, and the process stops after at most finitely many steps, with some $b_m > b$. Then
 
 $$
-\sum_{j=1}^m (b_j - a_j) = b_m - a_1 + \sum_{j=1}^{m-1}(b_j - a_{j+1}) > b_m - a_1 > b - a,
+\sum_{j=1}^m (b_j - a_j) = b_m - a_1 + \sum_{j=1}^{m-1}(b_j - a_{j+1}) \ge b_m - a_1 > b - a,
 $$
 
 because each $a_{j+1} < b_j$, $b_m > b$ and $a_1 < a$. So every cover has total length greater than $b - a$, and $\lambda^*([a, b]) \ge b - a$.
@@ -251,7 +251,7 @@ limit: 1
 caption: The lengths removed when building the Cantor set: $2^{n-1}$ intervals of length $3^{-n}$ at stage $n$. Their partial sums climb to $1$, the whole length of $[0, 1]$, so the Cantor set that remains has measure $0$ — although it still contains uncountably many points, among them $\tfrac14 = 0.0202\ldots_3$, which is never an end-point of a removed interval.
 :::
 
-The Cantor set settles a question about $\mathcal{L}$ itself. Since $\lambda(C) = 0$ and Lebesgue measure is complete, *every* subset of $C$ is Lebesgue measurable. $C$ has the cardinality $\mathfrak{c}$ of $\R$, so $\mathcal{L}$ has at least $2^{\mathfrak{c}}$ members; but there are only $\mathfrak{c}$ Borel sets. Hence **there are Lebesgue measurable sets that are not Borel**. (An explicit one can be built with the Cantor function of [[measure-theory/measurable-functions#ex-cantor-function]].)
+The Cantor set settles a question about $\mathcal{L}$ itself. Since $\lambda(C) = 0$ and Lebesgue measure is complete, *every* subset of $C$ is Lebesgue measurable. $C$ has the cardinality $\mathfrak{c}$ of $\R$, so $\mathcal{L}$ has at least $2^{\mathfrak{c}}$ members; but there are only $\mathfrak{c}$ Borel sets. Hence **there are Lebesgue measurable sets that are not Borel**. (A specific one, the preimage of a non-measurable set under a homeomorphism built from the Cantor function, appears in [[measure-theory/measurable-functions#ex-cantor-function]].)
 
 ::: quiz
 What is the Lebesgue measure of the set of irrational numbers in $[0, 1]$?
@@ -302,7 +302,7 @@ Henri Lebesgue defined the measure of a set in his 1902 thesis *Intégrale, long
 
 ## Where this leads
 
-With Lebesgue measure in hand we can integrate. [[measure-theory/measurable-functions]] identifies the functions whose level sets are measurable, and [[measure-theory/lebesgue-integral]] defines $\int f\,d\lambda$ by approximating $f$ from below with simple functions, which are finite combinations of indicator functions of measurable sets. The construction of this chapter generalises at once: covering by rectangles gives Lebesgue measure on $\R^n$ (area and volume, as used informally in [[multivariable/multiple-integrals]]); replacing $b - a$ by $F(b) - F(a)$ for an increasing right-continuous $F$ gives the Lebesgue–Stieltjes measures, which are exactly the distributions of real random variables ([[probability/continuous-random-variables]]); and Carathéodory's theorem builds the measure for infinitely many coin tosses that probability theory needs.
+With Lebesgue measure in hand we can integrate. [[measure-theory/measurable-functions]] identifies the functions whose level sets are measurable, and [[measure-theory/lebesgue-integral]] defines $\int f\,d\lambda$ by approximating $f$ from below with simple functions, which are finite combinations of indicator functions of measurable sets. The construction of this chapter generalises at once: covering by rectangles gives Lebesgue measure on $\R^n$ (area and volume, as used informally in [[multivariable/multiple-integrals]]); replacing $b - a$ by $F(b) - F(a)$ for an increasing right-continuous $F$ gives the Lebesgue–Stieltjes measure $\mu_F$, with $\mu_F((a, b]) = F(b) - F(a)$, and those for which $F$ rises from $0$ at $-\infty$ to $1$ at $+\infty$ are exactly the distributions of real random variables ([[probability/continuous-random-variables]]); and Carathéodory's theorem builds the measure for infinitely many coin tosses that probability theory needs.
 
 ::: summary
 - Lebesgue outer measure $\lambda^*(A)$ is the infimum of total lengths of countable covers of $A$ by open intervals ([[#def-outer-measure]]). It is defined for all sets, monotone, countably subadditive and translation invariant; countable sets have outer measure $0$.

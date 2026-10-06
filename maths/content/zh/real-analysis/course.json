@@ -92,7 +92,7 @@
     },
     {
       "title": "巴拿赫不动点定理",
-      "detail": "巴拿赫（Banach）的博士论文发表在《数学基础》（*Fundamenta Mathematicae*）上，其中证明了完备度量空间上的压缩映射有唯一的不动点，这是对皮卡（Picard）逐次逼近法的抽象。"
+      "detail": "巴拿赫（Banach）的博士论文发表在《数学基础》（*Fundamenta Mathematicae*）上，其中证明了完备赋范空间（即今天所说的巴拿赫空间）上的压缩映射有唯一的不动点，这是对皮卡（Picard）逐次逼近法的抽象；1930年，卡乔波利（Caccioppoli）把这一定理推广到完备度量空间。"
     }
   ],
   "references": [

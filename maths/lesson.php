@@ -90,6 +90,14 @@ page_head($titlePlain . ' · ' . md_plain($course['title']), '', ['scripts' => $
         <?php if ($next): ?><a class="next" href="<?= h(url('lesson.php', ['c' => $cslug, 'l' => $next['slug']])) ?>"><div class="dir"><?= h(t('Next')) ?> →</div><div class="t"><?= ma_inline($next['title'], $cslug) ?></div></a>
         <?php else: ?><a class="next" href="<?= h(url('course.php', ['c' => $cslug])) ?>"><div class="dir"><?= h(t('End of course')) ?> →</div><div class="t"><?= ma_inline($course['title'], $cslug) ?></div></a><?php endif; ?>
       </nav>
+      <?php
+      $page_url = (($_SERVER['HTTPS'] ?? 'off') !== 'off' ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'f.g77k.com') . ($_SERVER['REQUEST_URI'] ?? '');
+      $issue = MA_ISSUES_URL . '/new?' . http_build_query([
+          'title' => "[maths] $cslug/$lslug: ",
+          'body' => "Page: $page_url\nWhere (theorem, example or exercise number):\nWhat is wrong:\n",
+      ]);
+      ?>
+      <p class="lesson-report"><?= sprintf(h(t('Found a mistake on this page? %s')), '<a href="' . h($issue) . '">' . h(t('Report it on GitHub')) . '</a>') ?></p>
     </article>
   </div>
   <?php endif; ?>

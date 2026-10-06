@@ -326,7 +326,7 @@ $$
 f: 1/(1 + 25x^2)
 n: 11
 method: spline
-caption: 经过龙格函数同样$11$个等距样本点的自然三次样条——正是这些样本点给出了那个剧烈振荡的$10$次多项式。样条处处都紧贴函数（最大误差约为$0.02$）。增加点数：现在误差**减小**了，在远离端点处大致像$h^4$那样减小。
+caption: 经过龙格函数同样$11$个等距样本点的自然三次样条——正是这些样本点给出了那个剧烈振荡的$10$次多项式。样条处处都紧贴函数（最大误差约为$0.02$）。增加点数：现在误差**减小**了（呈锯齿状，因为只有点数为奇数时峰顶$x = 0$才是节点），并逐渐接近下文理论所预言的、远离端点处的$h^4$速度。
 :::
 
 样条的收敛是可靠的。对于四阶导数连续的函数，固支三次样条满足$\max\abs{f - s} \le \frac{5}{384}h^4\max\abs{f^{(4)}}$，而自然样条在远离端点处也达到同样的$O(h^4)$收敛速度（在端点附近，人为施加的条件$s'' = 0$把它限制为$O(h^2)$，除非$f''$在那里为零）；参见 de Boor 的《样条实用指南》（*A Practical Guide to Splines*）。对龙格函数取$n + 1$个等距点，自然样条的误差为$0.022$（$n = 10$）、$0.0032$（$n = 20$）和$0.000\,28$（$n = 40$）。在 Python 中，`scipy.interpolate.CubicSpline(x, y, bc_type='natural')`构造的就是[[#thm-spline]]中的样条。
@@ -352,7 +352,7 @@ caption: 经过龙格函数同样$11$个等距样本点的自然三次样条—�
 
 ## 后续内容
 
-对插值多项式积分，就得到[[numerical-analysis/numerical-integration]]中的求积公式；高斯求积建立在正交多项式的根之上，正如切比雪夫插值建立在$T_n$的根之上。对插值多项式求导得到有限差分公式，对其外推则得到理查森外推和常微分方程的多步法（[[numerical-analysis/numerical-odes]]）。最小二乘逼近对含噪声的数据进行拟合而非插值，见[[linear-algebra/least-squares]]；多项式插值在三角函数中的类比是离散傅里叶变换（[[pde/fourier-transform]]）。
+对插值多项式积分，就得到[[numerical-analysis/numerical-integration]]中的求积公式；高斯求积建立在正交多项式的根之上，正如切比雪夫插值建立在$T_n$的根之上。对插值多项式求导得到有限差分公式，对其外推则得到理查森外推（[[numerical-analysis/numerical-integration]]）和常微分方程的多步法（[[numerical-analysis/numerical-odes]]）。最小二乘逼近对含噪声的数据进行拟合而非插值，见[[linear-algebra/least-squares]]；多项式插值在三角函数中的类比是离散傅里叶变换（[[pde/fourier-transform]]）。
 
 ::: summary
 - 对互不相同的节点$x_0, \dots, x_n$，在$\mathcal P_n$中存在唯一的插值多项式；其拉格朗日形式为$\sum y_j\ell_j(x)$，其中$\ell_j(x_i) = \delta_{ij}$。
@@ -394,14 +394,14 @@ $M_2 = \max\abs{\sin''} \le 1$，所以误差至多为$\frac{h^2}{8} = \frac{0.0
 :::
 
 ::: exercise 三个切比雪夫节点 {level=2 check="1/4"}
-求$[-1, 1]$上的三个切比雪夫节点，以及对这组节点$\abs{\omega_3}$的最大值。并与等距节点$-1, 0, 1$比较。
+求$[-1, 1]$上的三个切比雪夫节点，以及对这组节点$\abs{\omega_3}$的最大值。并与等距节点$-1, 0, 1$比较。（输入切比雪夫节点对应的$\abs{\omega_3}$的最大值。）
 ::: solution
 $T_3(x) = 4x^3 - 3x$的零点为$0$和$\pm\frac{\sqrt3}{2}$。于是$\omega_3 = x\left(x^2 - \frac34\right) = \frac14T_3$，它在$[-1, 1]$上绝对值的最大值为$\frac14$。对$-1, 0, 1$：$\omega_3 = x^3 - x$，其绝对值在$x = \pm\frac{1}{\sqrt3}$处取最大值$\frac{2}{3\sqrt3} \approx 0.385$。切比雪夫节点使误差界减小了一个约为$1.54$的因子；这种改进随次数呈指数增长。
 :::
 :::
 
 ::: exercise 计算样条的值 {level=2 check="11/16"}
-计算[[#ex-spline]]中的自然样条在$x = \frac12$处的值，并与插值抛物线在该点的值比较。
+计算[[#ex-spline]]中的自然样条在$x = \frac12$处的值，并与插值抛物线在该点的值比较。（输入样条的值。）
 ::: solution
 $s\left(\frac12\right) = -\frac{1}{16} + \frac34 = \frac{11}{16} = 0.6875$。抛物线$x(2-x)$在$x = \frac12$处的值为$\frac34$。
 :::

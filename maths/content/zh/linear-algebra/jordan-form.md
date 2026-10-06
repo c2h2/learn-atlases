@@ -23,13 +23,13 @@ $$ {#eq-poly-eigen}
 :::
 
 ::: proof
-设$C(t) = \operatorname{adj}(A - tI)$是$A - tI$的伴随矩阵（[[linear-algebra/determinants#thm-adjugate]]）。它的元素是$A - tI$的代数余子式，因而是$t$的次数不超过$n - 1$的多项式，所以可以写成$C(t) = C_0 + C_1t + \dots + C_{n-1}t^{n-1}$，其中$C_k$是常数矩阵。写$p_A(t) = c_0 + c_1t + \dots + c_nt^n$。由伴随矩阵公式，对每个$t$，
+设$C(t) = \operatorname{adj}(A - tI)$是$A - tI$的伴随矩阵（[[linear-algebra/determinants#thm-adjugate]]）。它的元素是$A - tI$的代数余子式，因而是$t$的次数不超过$n - 1$的多项式，所以可以写成$C(t) = C_0 + C_1t + \dots + C_{n-1}t^{n-1}$，其中$C_k$是常数矩阵。写$p_A(t) = c_0 + c_1t + \dots + c_nt^n$。由伴随矩阵公式得
 
 $$
 (A - tI)(C_0 + C_1t + \dots + C_{n-1}t^{n-1}) = (c_0 + c_1t + \dots + c_nt^n)I.
 $$
 
-两边都是以矩阵为系数的$t$的多项式；它们对无穷多个$t$值相等，所以它们的系数逐个元素相等。比较$1, t, \dots, t^n$的系数：
+两边都是以矩阵为系数的$t$的多项式，并且作为多项式相等，所以它们的系数相等。（在$\R$或$\C$上，这是因为两边对无穷多个$t$值相等；在任意域上，这是因为伴随矩阵公式的证明只用到元素的加法和乘法，因而对元素为$t$的多项式的矩阵同样成立。）比较$1, t, \dots, t^n$的系数：
 
 $$
 AC_0 = c_0I,\quad AC_1 - C_0 = c_1I,\quad \dots,\quad AC_{n-1} - C_{n-2} = c_{n-1}I,\quad -C_{n-1} = c_nI.
@@ -232,7 +232,7 @@ $$
 ::: widget transform2d
 matrix: 1,1; 0,1
 eigen: true
-caption: 剪切矩阵$J_2(1)$，最简单的不可对角化矩阵。它只有一条特征向量直线，即$x$轴。向量$\mathbf{e}_2$是广义特征向量：$(A - I)\mathbf{e}_2 = \mathbf{e}_1$，所以$A\mathbf{e}_2 = \mathbf{e}_2 + \mathbf{e}_1$——它沿特征向量方向被推移。把左下角的元素从$0$改为一个小数，例如$0.05$：就会出现两条非常靠近的特征向量直线。若尔当块是不同的特征向量合并时的极限情形。
+caption: 剪切矩阵$J_2(1)$，最简单的不可对角化矩阵。它只有一条特征向量直线，即$x$轴。向量$\mathbf{e}_2$是广义特征向量：$(A - I)\mathbf{e}_2 = \mathbf{e}_1$，所以$A\mathbf{e}_2 = \mathbf{e}_2 + \mathbf{e}_1$——它沿特征向量方向被推移。把左下角的元素从$0$改为一个小的正数，例如$0.1$：就会出现两条特征向量直线，分别位于$x$轴两侧（斜率为$\pm\sqrt{0.1}\approx\pm0.32$）；再把它往$0$滑回，观察这两条直线如何向$x$轴靠拢。若尔当块是不同的特征向量合并时的极限情形。
 :::
 
 ## 若尔当标准形的计算
@@ -242,7 +242,7 @@ caption: 剪切矩阵$J_2(1)$，最简单的不可对角化矩阵。它只有一
 ::: example 3×3矩阵的若尔当标准形 {#ex-jordan3}
 求$B = \begin{pmatrix}0&1&2\\0&2&0\\-1&1&3\end{pmatrix}$的若尔当标准形$J$，以及满足$B = PJP^{-1}$的可逆矩阵$P$。
 ::: solution
-由[[#ex-minpoly]]：$p_B(t) = (2 - t)^2(1 - t)$，特征值$2$的特征空间是$1$维的，由$\mathbf{v}_1 = (1, 0, 1)$张成；特征值$1$有特征向量$\mathbf{w} = (2, 0, 1)$。所以特征值$2$只有一个块，其大小为$2$：
+由[[#ex-minpoly]]和[[linear-algebra/eigenvalues#ex-defective]]：$p_B(t) = (2 - t)^2(1 - t)$，特征值$2$的特征空间是$1$维的，由$\mathbf{v}_1 = (1, 0, 1)$张成；特征值$1$有特征向量$\mathbf{w} = (2, 0, 1)$。所以特征值$2$只有一个块，其大小为$2$：
 
 $$
 J = \begin{pmatrix}2&1&0\\0&2&0\\0&0&1\end{pmatrix}.
@@ -340,7 +340,7 @@ caption: 由[[#eq-jordan-power]]得到的$J_3(0.8)^m$的三个不同元素随$m$
 
 ## 后续内容
 
-若尔当标准形完成了方阵在相似意义下的分类，它也是研究矩阵指数和求解线性微分方程组（[[ode/linear-systems]]）——包括[[ode/nonlinear-systems]]一章中的稳定性理论——的自然框架。它的代数基础是主理想整环上有限生成模的结构定理：让$t$以$A$的方式作用，空间$\F^n$就成为多项式环$\F[t]$上的模，而若尔当标准形和有理标准形是分解这个模的两种方式（[[abstract-algebra/rings]]，[[abstract-algebra/polynomials]]）。在数值计算中，舒尔分解和奇异值分解（[[linear-algebra/svd]]）取代了它的位置。无穷维的类似理论——非自伴算子的谱理论——是泛函分析的核心课题之一。
+若尔当标准形完成了方阵在相似意义下的分类，它也是研究矩阵指数和求解线性微分方程组（[[ode/linear-systems]]）——包括[[ode/nonlinear-systems]]一章中的稳定性理论——的自然框架。它的代数基础是主理想整环上有限生成模的结构定理，这属于更高阶的代数课程（参见达米特（Dummit）和富特（Foote）的《抽象代数》（*Abstract Algebra*）第12章）：让$t$以$A$的方式作用，空间$\F^n$就成为多项式环$\F[t]$上的模——$\F[t]$是主理想整环，这在[[abstract-algebra/rings]]和[[abstract-algebra/polynomials]]中已经证明——而若尔当标准形和有理标准形是分解这个模的两种方式。在数值计算中，舒尔分解和奇异值分解（[[linear-algebra/svd]]）取代了它的位置。无穷维的类似理论——非自伴算子的谱理论——是泛函分析的核心课题之一。
 
 ::: summary
 - 每个矩阵都满足它的特征方程，$p_A(A) = O$（凯莱-哈密顿定理，[[#thm-cayley-hamilton]]）；所以$A^{-1}$和$A$的所有幂都是$A$的次数小于$n$的多项式。
@@ -390,7 +390,7 @@ $(A - 2I)^2 = \begin{pmatrix}1&1\\-1&-1\end{pmatrix}^2 = O$（由凯莱-哈密�
 :::
 
 ::: exercise 退化结点 {level=2 check="1/e"}
-对$\mathbf{x}' = \begin{pmatrix}-1&1\\0&-1\end{pmatrix}\mathbf{x}$满足$\mathbf{x}(0) = (0, 1)$的解$\mathbf{x}(t) = (x_1(t), x_2(t))$，求$x_1(1)$，以及$x_1$取最大值的时刻。
+对$\mathbf{x}' = \begin{pmatrix}-1&1\\0&-1\end{pmatrix}\mathbf{x}$满足$\mathbf{x}(0) = (0, 1)$的解$\mathbf{x}(t) = (x_1(t), x_2(t))$，求$x_1(t)$以及它取最大值的时刻。$x_1(1)$等于多少？
 ::: solution
 由[[#ex-jordan-ode]]，$x_1(t) = te^{-t}$，所以$x_1(1) = e^{-1} = \frac1e$。由于$x_1'(t) = (1 - t)e^{-t}$，最大值在$t = 1$处取到：分量$x_1$先被$x_2$推高，然后两者才一起衰减——这是瞬态增长的连续时间版本。
 :::

@@ -104,7 +104,7 @@ With $X = [a, b]$ this is the intermediate value theorem of [[calculus-1/continu
 ::: solution
 (a) Let $g(x) = f(x) - x$, continuous on the connected space $[0,1]$. Since $0\le f(x)\le1$, we have $g(0) = f(0)\ge0$ and $g(1) = f(1) - 1\le0$. If either is $0$ we have a fixed point; otherwise $g(0) > 0 > g(1)$ and [[#cor-ivt]] gives $x$ with $g(x) = 0$.
 
-(b) Parametrise the equator by the angle $\theta$ and let $T(\theta)$ be the temperature, a continuous $2\pi$-periodic function, so a continuous function on the circle $S^1$. Put $g(\theta) = T(\theta) - T(\theta + \pi)$, which is continuous on $S^1$, a connected space (the continuous image of $[0, 2\pi]$). Then $g(\theta + \pi) = T(\theta + \pi) - T(\theta + 2\pi) = -g(\theta)$. So $g$ takes the values $g(0)$ and $-g(0)$, which have opposite signs or are both zero; by [[#cor-ivt]] it vanishes somewhere, at a point $\theta_0$ with $T(\theta_0) = T(\theta_0 + \pi)$. This is the one-dimensional case of the Borsuk–Ulam theorem; the two-dimensional case (two antipodal points on the Earth's surface with the same temperature *and* the same pressure) needs the methods of [[topology/fundamental-group]].
+(b) Parametrise the equator by the angle $\theta$ and let $T(\theta)$ be the temperature, a continuous $2\pi$-periodic function, so a continuous function on the circle $S^1$. Put $g(\theta) = T(\theta) - T(\theta + \pi)$, which is continuous on $S^1$, a connected space (the continuous image of $[0, 2\pi]$). Then $g(\theta + \pi) = T(\theta + \pi) - T(\theta + 2\pi) = -g(\theta)$. So $g$ takes the values $g(0)$ and $-g(0)$, which have opposite signs or are both zero; by [[#cor-ivt]] it vanishes somewhere, at a point $\theta_0$ with $T(\theta_0) = T(\theta_0 + \pi)$. This is the one-dimensional case of the Borsuk–Ulam theorem; the two-dimensional case (two antipodal points on the Earth's surface with the same temperature *and* the same pressure) needs the fundamental group ([[topology/fundamental-group]]), and is proved with it in Hatcher's *Algebraic Topology*, Theorem 1.10.
 :::
 :::
 
@@ -179,7 +179,7 @@ Let $G = \set{(x, \sin(1/x)) : 0 < x\le1}$ and $S = G\cup\big(\set0\times[-1, 1]
 ::: solution
 *Connected.* $G$ is the image of the connected interval $(0, 1]$ under the continuous map $x\mapsto(x, \sin(1/x))$, so it is connected. Every point $(0, y)$ with $\abs y\le1$ is a limit of points of $G$: choose $x_n\to0^+$ with $\sin(1/x_n) = y$ (for instance $1/x_n = \arcsin y + 2\pi n$). So $G\subseteq S\subseteq\overline G$, and $S$ is connected by [[#thm-building]](2).
 
-*Not path-connected.* Suppose $\gamma = (\gamma_1, \gamma_2)\colon[0, 1]\to S$ is a path from $(0, 0)$ to a point of $G$. The set $\set{t : \gamma_1(t) = 0}$ is closed and contains $0$; let $t_0$ be its largest element. Then $t_0 < 1$, $\gamma_1(t_0) = 0$ and $\gamma_1(t) > 0$ for $t > t_0$. By continuity there is $\delta > 0$ with $\abs{\gamma_2(t) - \gamma_2(t_0)} < \frac12$ for $t_0\le t\le t_0 + \delta$. Now $\gamma_1$ maps $[t_0, t_0 + \delta]$ onto an interval $[0, c]$ with $c > 0$ (by connectedness). This interval contains points $x = \frac{1}{\pi/2 + 2\pi n}$ and $x' = \frac{1}{3\pi/2 + 2\pi n}$ for all large $n$, at which $\sin(1/x) = 1$ and $\sin(1/x') = -1$. So $\gamma_2$ takes both values $1$ and $-1$ on $[t_0, t_0 + \delta]$, which is impossible since all its values there lie within $\frac12$ of $\gamma_2(t_0)$. Hence no path joins $(0, 0)$ to $G$.
+*Not path-connected.* Suppose $\gamma = (\gamma_1, \gamma_2)\colon[0, 1]\to S$ is a path from a point $(0, y_0)$ of the segment to a point of $G$. The set $\set{t : \gamma_1(t) = 0}$ is closed and contains $0$; let $t_0$ be its largest element. Then $t_0 < 1$, $\gamma_1(t_0) = 0$ and $\gamma_1(t) > 0$ for $t > t_0$. By continuity there is $\delta > 0$ with $\abs{\gamma_2(t) - \gamma_2(t_0)} < \frac12$ for $t_0\le t\le t_0 + \delta$. Now $\gamma_1([t_0, t_0 + \delta])$ is an interval (by connectedness) containing $0 = \gamma_1(t_0)$ and $c = \gamma_1(t_0 + \delta) > 0$, so it contains $[0, c]$. This interval contains the points $x = \frac{1}{\pi/2 + 2\pi n}$ and $x' = \frac{1}{3\pi/2 + 2\pi n}$ for all large $n$, at which $\sin(1/x) = 1$ and $\sin(1/x') = -1$. Since the points of $S$ with positive first coordinate lie on $G$, $\gamma_2$ takes both values $1$ and $-1$ on $[t_0, t_0 + \delta]$, which is impossible since all its values there lie within $\frac12$ of $\gamma_2(t_0)$. Hence no path joins a point of the segment to a point of $G$.
 :::
 :::
 
@@ -188,7 +188,7 @@ f: sin(1/x)
 x: 0, 1
 y: -1.3, 1.3
 vlines: 0
-caption: The graph of $\sin(1/x)$ for $0 < x\le1$ together with the segment $\set0\times[-1,1]$ (the vertical line at $0$). Zoom towards $x = 0$: the graph oscillates ever faster and accumulates on the whole segment, so the union is connected. But a path trying to travel from the segment into the graph would have to make infinitely many full oscillations in a finite time, which continuity forbids.
+caption: The graph of $\sin(1/x)$ for $0 < x\le1$; the segment $\set0\times[-1,1]$ lies on the dashed vertical line $x = 0$ at the left edge. Towards $x = 0$ the graph oscillates ever faster — far faster than any picture can show — and accumulates on the whole segment, so the union is connected. But a path trying to travel from the segment into the graph would have to make infinitely many full oscillations in a finite time, which continuity forbids.
 :::
 
 ::: warning Connected does not mean path-connected
@@ -230,7 +230,7 @@ For the second statement count the non-cut points: in $(0, 1)$ every point is a 
 :::
 
 ::: example Letters of the alphabet {#ex-letters}
-Regard the capital letters X, Y, T, O and L, drawn with straight strokes and arcs of a fixed width zero, as subspaces of the plane. Which of them are homeomorphic?
+Regard the capital letters X, Y, T, O and L, drawn with straight strokes and arcs of zero width, as subspaces of the plane. Which of them are homeomorphic?
 ::: solution
 Count, for each point, the number of components left when it is removed. In **X**, removing the crossing point leaves $4$ components; no point of Y, T, O or L does this. In **Y** and **T**, removing the junction leaves $3$ components; Y and T are in fact homeomorphic (bend the arms of the T). In **O** (a circle), removing any point leaves $1$ component. In **L** (a bent segment, homeomorphic to $[0, 1]$), removing an interior point leaves $2$ components and removing an endpoint leaves $1$. Since these counts are preserved by homeomorphisms, the classes are $\set{X}$, $\set{Y, T}$, $\set{O}$ and $\set{L}$; in particular O is not homeomorphic to L, because L has cut points and O has none.
 :::

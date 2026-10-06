@@ -169,7 +169,7 @@ $$ {#eq-sl-coeffs}
 :::
 
 ::: proof {collapsed}
-**证明概要。**完整的证明比本章还长；参见科丁顿（Coddington）与莱文森（Levinson）的《常微分方程理论》（*Theory of Ordinary Differential Equations*）第7—8章，或伯克霍夫（Birkhoff）与罗塔（Rota）的《常微分方程》（*Ordinary Differential Equations*）第10章。两个主要思想如下。
+**证明概要。**完整的证明比本章还长；参见科丁顿（Coddington）与莱文森（Levinson）的《常微分方程理论》（*Theory of Ordinary Differential Equations*）第7—8章，或伯克霍夫（Birkhoff）与罗塔（Rota）的《常微分方程》（*Ordinary Differential Equations*）第10—11章。两个主要思想如下。
 
 **存在性与完备性**来自把微分方程化为积分方程。必要时把$\lambda$平移一下，可以假定$0$不是特征值。于是对每个连续函数$g$，边值问题$Ly = g$有唯一解，由$y(x) = \int_a^bG(x,s)\,g(s)\,ds$给出，其中**格林（Green）函数**$G$连续，并且由于$L$是自伴的，$G$是对称的：$G(x,s) = G(s,x)$。特征值问题$Ly = \lambda wy$化为$y = \lambda\int_a^bG(x,s)w(s)y(s)\,ds$，这是积分算子$K$的特征值问题，而$K$在以$\inner\cdot\cdot_w$为内积的函数空间上是紧的自伴算子。紧自伴算子的谱定理——[[linear-algebra/spectral-theorem]]的无穷维类比——给出$K$的一个标准正交的特征函数序列，相应的特征值为$\mu_n = 1/\lambda_n \to 0$，并且这个序列张成$K$的值域；由于这个值域是稠密的，特征函数在均方意义下是完备的。对分段光滑的$f$，逐点收敛性可以通过把特征函数展开与普通的傅里叶级数相比较而得到（“等收敛性”）。
 
@@ -264,7 +264,7 @@ $$
 c_n = \frac{\int_0^1\sin\mu_nx\,dx}{\int_0^1\sin^2\mu_nx\,dx} = \frac{(1 - \cos\mu_n)/\mu_n}{\frac12\left(1 + \cos^2\mu_n\right)},
 $$
 
-由此得$c_1 \approx 1.189$，$c_2 \approx 0.313$，$c_3 \approx 0.278$。（作为验证，在$x = \frac12$处对几千项求和，得到$1.0000$，这正是完备性所保证的。）当$t$很大时，$u \approx 1.189\,e^{-4.116\,t}\sin(2.029\,x)$。衰减率$\mu_1^2 \approx 4.12$介于右端完全绝热时的衰减率$\pi^2/4 \approx 2.47$和右端温度保持为$0$时的衰减率$\pi^2 \approx 9.87$之间，对于部分绝热的端点，这正是应有的结果。
+由此得$c_1 \approx 1.189$，$c_2 \approx 0.313$，$c_3 \approx 0.278$。（作为验证，在$x = \frac12$处对几千项求和，得到$1.000$，这正是完备性所保证的。）当$t$很大时，$u \approx 1.189\,e^{-4.116\,t}\sin(2.029\,x)$。衰减率$\mu_1^2 \approx 4.12$介于右端完全绝热时的衰减率$\pi^2/4 \approx 2.47$和右端温度保持为$0$时的衰减率$\pi^2 \approx 9.87$之间，对于部分绝热的端点，这正是应有的结果。
 :::
 :::
 

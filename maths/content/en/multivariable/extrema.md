@@ -8,7 +8,7 @@ For free problems the strategy is the familiar one from one variable, upgraded: 
 Let $f$ be a real-valued function on a set $D \subseteq \R^n$ and $\mathbf{a} \in D$. Then $f$ has a **local maximum** at $\mathbf{a}$ if there is $\delta > 0$ such that $f(\mathbf{x}) \le f(\mathbf{a})$ for all $\mathbf{x} \in D$ with $\norm{\mathbf{x} - \mathbf{a}} < \delta$, and a **local minimum** if instead $f(\mathbf{x}) \ge f(\mathbf{a})$ for all such $\mathbf{x}$. It is **strict** if the inequality is strict for $\mathbf{x} \neq \mathbf{a}$. If the inequality holds for *all* $\mathbf{x} \in D$, the maximum or minimum is **global** (or **absolute**). Maxima and minima are collectively called **extrema**.
 :::
 
-The first-derivative test of one-variable calculus — at an interior extremum the derivative vanishes — carries over directly.
+The first-order condition of one-variable calculus — at an interior extremum the derivative vanishes — carries over directly.
 
 ::: theorem Fermat's theorem {#thm-fermat}
 If $f$ has a local extremum at an interior point $\mathbf{a}$ of $D$, and the partial derivatives of $f$ exist at $\mathbf{a}$, then $\nabla f(\mathbf{a}) = \mathbf{0}$.
@@ -235,7 +235,7 @@ $D = f_{xx}f_{yy} - f_{xy}^2 = 16 - 16 = 0$, so the test is inconclusive. Positi
 :::
 
 ::: warning Do not test only along the axes
-A critical point can look like a minimum along every coordinate axis — even along every line through it — and still be a saddle. The function $f(x,y) = (y - x^2)(y - 2x^2)$ has a strict local minimum at the origin along every straight line through it, yet it is negative between the parabolas $y = x^2$ and $y = 2x^2$, which come arbitrarily close to the origin ([[#exr-peano]]). Only the second derivative test, or a direct argument covering *all* nearby points, decides.
+A critical point can look like a minimum along every coordinate axis — even along every line through it — and still be a saddle. The function $f(x,y) = (y - x^2)(y - 2x^2)$ has a strict local minimum at the origin along every straight line through it, yet it is negative between the parabolas $y = x^2$ and $y = 2x^2$, which come arbitrarily close to the origin ([[#exr-peano]]). Only the second derivative test (when it is conclusive), or a direct argument covering *all* nearby points, decides.
 :::
 
 ## Global extrema on closed bounded sets
@@ -291,7 +291,7 @@ The function $h(t) = f(\mathbf{r}(t))$ has a local extremum at $t = a_1$, becaus
 *For general $n$ (sketch).* The implicit function theorem shows that near $\mathbf{a}$ the set $S$ is a smooth $(n-1)$-dimensional hypersurface, and that every vector orthogonal to $\nabla g(\mathbf{a})$ is the velocity $\mathbf{r}'(0)$ of some $C^1$ curve $\mathbf{r}$ in $S$ with $\mathbf{r}(0) = \mathbf{a}$. The argument above then shows that $\nabla f(\mathbf{a})$ is orthogonal to every vector orthogonal to $\nabla g(\mathbf{a})$, so it lies in the span of $\nabla g(\mathbf{a})$. Full details are in Spivak, *Calculus on Manifolds*, ch. 5, or Marsden and Tromba, *Vector Calculus*, §3.4.
 :::
 
-In practice we solve the $n+1$ equations $\nabla f = \lambda\nabla g$, $g = c$ for the $n+1$ unknowns $x_1, \dots, x_n, \lambda$, and then compare the values of $f$ at the solutions — together with any points of $S$ where $\nabla g = \mathbf{0}$, and boundary points of $S$ if it has any. Equivalently, the conditions say that $\mathbf{a}$ is a critical point of the **Lagrangian** $\mathcal{L}(\mathbf{x}, \lambda) = f(\mathbf{x}) - \lambda\,(g(\mathbf{x}) - c)$ as a function of $n+1$ variables.
+In practice we solve the $n+1$ equations $\nabla f = \lambda\nabla g$, $g = c$ for the $n+1$ unknowns $x_1, \dots, x_n, \lambda$, and then compare the values of $f$ at the solutions — together with any points of $S$ where $\nabla g = \mathbf{0}$, and boundary points of $S$ if it has any. Equivalently, the conditions say that $(\mathbf{a}, \lambda)$ is a critical point of the **Lagrangian** $\mathcal{L}(\mathbf{x}, \lambda) = f(\mathbf{x}) - \lambda\,(g(\mathbf{x}) - c)$, a function of $n+1$ variables: its $x_i$-derivatives give $\nabla f = \lambda\nabla g$, and $\partial\mathcal{L}/\partial\lambda = 0$ gives back the constraint.
 
 ::: example The cheapest open box {#ex-box}
 An open-topped rectangular box must have volume $4$ m³. Find the dimensions that minimise its surface area.
@@ -389,7 +389,7 @@ Pierre de Fermat devised a method for finding maxima and minima of curves in the
 
 ## Where this leads
 
-Critical points and Hessians reappear across mathematics. In [[ode/nonlinear-systems]] the stability of an equilibrium of a gradient system $\mathbf{x}' = -\nabla f(\mathbf{x})$ is read off from the Hessian of $f$; in statistics, maximum likelihood estimates are critical points of a log-likelihood ([[statistics/estimation]]); and numerical methods for optimisation, such as Newton's method $\mathbf{x}_{k+1} = \mathbf{x}_k - Hf(\mathbf{x}_k)^{-1}\nabla f(\mathbf{x}_k)$, are built on the second-order Taylor formula ([[numerical-analysis/root-finding]]). In [[differential-geometry/surface-curvature]] the Hessian of a function whose graph is a surface becomes its second fundamental form, and its eigenvalues become principal curvatures: a minimum is a point of positive curvature, a saddle a point of negative curvature.
+Critical points and Hessians reappear across mathematics. In [[ode/nonlinear-systems]] the stability of an equilibrium of a gradient system $\mathbf{x}' = -\nabla f(\mathbf{x})$ is read off from the Hessian of $f$; in statistics, maximum likelihood estimates are critical points of a log-likelihood ([[statistics/estimation]]); and numerical methods for optimisation, such as Newton's method $\mathbf{x}_{k+1} = \mathbf{x}_k - Hf(\mathbf{x}_k)^{-1}\nabla f(\mathbf{x}_k)$, are built on the second-order Taylor formula ([[numerical-analysis/root-finding]]). In [[differential-geometry/surface-curvature]], at a critical point of $f$ the Hessian becomes the second fundamental form of the graph $z = f(x,y)$, its eigenvalues become the principal curvatures and $D$ becomes the Gaussian curvature: an extremum with $D > 0$ is a point of positive curvature, a saddle with $D < 0$ a point of negative curvature.
 
 ::: summary
 - Interior extrema of a function with partial derivatives occur at critical points, where $\nabla f = \mathbf{0}$ ([[#thm-fermat]]); critical points can also be saddle points.

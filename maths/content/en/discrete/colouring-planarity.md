@@ -289,7 +289,7 @@ If an augmenting path exists, swapping along it produces a larger matching, so $
 :::
 
 ::: example Assigning jobs {#ex-matching}
-Workers $A, B, C, D$ can do the following jobs: $A$: $1, 2$; $B$: $1$; $C$: $2, 3$; $D$: $3, 4$. (a) Find a perfect matching, starting from the greedy matching $\{A1, C2\}$. (b) Show that if $C$ could only do jobs $1$ and $2$, no assignment of all four workers exists.
+Workers $A, B, C, D$ can do the following jobs: $A$: $1, 2$; $B$: $1$; $C$: $2, 3$; $D$: $3, 4$. (a) Find a perfect matching, starting from the matching $\{A1, C2\}$. (b) Show that if $C$ could only do jobs $1$ and $2$, no assignment of all four workers exists.
 ::: solution
 (a) In $M = \{A1, C2\}$ the worker $B$ is uncovered, and the only job $B$ can do, $1$, is taken by $A$. Follow alternating edges: $B$ to $1$ (not in $M$), $1$ to $A$ (in $M$), $A$ to $2$ (not in $M$), $2$ to $C$ (in $M$), $C$ to $3$ (not in $M$), and job $3$ is uncovered. So $B, 1, A, 2, C, 3$ is an augmenting path. Swapping gives $\{B1, A2, C3\}$, and adding $D4$ (both uncovered) gives the perfect matching $\{A2, B1, C3, D4\}$.
 
@@ -301,7 +301,7 @@ Workers $A, B, C, D$ can do the following jobs: $A$: $1, 2$; $B$: $1$; $C$: $2, 
 nodes: A@0,1; B@1,1; C@2,1; D@3,1; 1@0,0; 2@1,0; 3@2,0; 4@3,0
 edges: A-1; A-2; B-1; C-2; C-3; D-3; D-4
 algorithm: none
-caption: The qualification graph of [[#ex-matching]]. Click a vertex to see its neighbours. Start from the greedy matching $A1, C2$, trace the augmenting path $B, 1, A, 2, C, 3$ and add $D4$: every worker ends up with a job. Hall's condition can be checked by hand here: every set of $k$ workers can do at least $k$ jobs between them.
+caption: The qualification graph of [[#ex-matching]]. Click a vertex to see its neighbours. Start from the matching $A1, C2$, trace the augmenting path $B, 1, A, 2, C, 3$ and add $D4$: every worker ends up with a job. Hall's condition can be checked by hand here: every set of $k$ workers can do at least $k$ jobs between them.
 :::
 
 In a bipartite graph a **vertex cover** is a set of vertices meeting every edge. Each edge of a matching needs its own cover vertex, so a maximum matching is never larger than a minimum vertex cover. **König's theorem** (Dénes Kőnig, 1931; also Jenő Egerváry) says that in bipartite graphs the two are equal; it is equivalent to Hall's theorem and can be proved with augmenting paths.

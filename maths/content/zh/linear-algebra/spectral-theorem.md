@@ -288,7 +288,7 @@ $$
 同理$\sum\lambda_iy_i^2\ge\lambda_n$。值$\lambda_1$在$\mathbf{x} = \mathbf{q}_1$处取到，因为$\mathbf{q}_1\T A\mathbf{q}_1 = \lambda_1\mathbf{q}_1\T\mathbf{q}_1 = \lambda_1$；同样，$\lambda_n$在$\mathbf{q}_n$处取到。
 :::
 
-例如，在单位圆上，$3x^2 + 2xy + 3y^2$（[[#ex-spectral-2]]中的二次型）在$\pm\frac{1}{\sqrt2}(1,1)$处取最大值$4$，在$\pm\frac{1}{\sqrt2}(1,-1)$处取最小值$2$。若再限制$\mathbf{x}$与$\mathbf{q}_1$正交，则得到下一个最大值$\lambda_2$，依此类推：对称矩阵的特征值是一列约束最大值。在[[multivariable/extrema]]一章中，用拉格朗日乘数法也得到同样的结论：条件$\nabla(\mathbf{x}\T A\mathbf{x}) = \mu\nabla(\mathbf{x}\T\mathbf{x})$就是$2A\mathbf{x} = 2\mu\mathbf{x}$，这是一个特征值方程。
+例如，在单位圆上，$3x^2 + 2xy + 3y^2$（[[#ex-spectral-2]]中的二次型）在$\pm\frac{1}{\sqrt2}(1,1)$处取最大值$4$，在$\pm\frac{1}{\sqrt2}(1,-1)$处取最小值$2$。若再限制$\mathbf{x}$与$\mathbf{q}_1$正交，则得到下一个最大值$\lambda_2$，依此类推：对称矩阵的特征值是一列约束最大值。用[[multivariable/extrema]]一章中的拉格朗日乘数法也能得到同样的结论：条件$\nabla(\mathbf{x}\T A\mathbf{x}) = \mu\nabla(\mathbf{x}\T\mathbf{x})$就是$2A\mathbf{x} = 2\mu\mathbf{x}$，这是一个特征值方程。
 
 ::: application 主成分分析
 设$\R^n$中由$N$个点构成的数据集已经中心化，使其均值为$\mathbf{0}$；它的**协方差矩阵**为$C = \frac{1}{N-1}\sum_k\mathbf{x}_k\mathbf{x}_k\T$，这是一个对称半正定矩阵。数据在单位向量$\mathbf{u}$方向上的方差为$\mathbf{u}\T C\mathbf{u}$，所以由[[#thm-rayleigh]]，方差最大的方向——**第一主成分**——是$C$的属于最大特征值的特征向量，下一个是属于第二大特征值的特征向量，依此类推。把数据投影到前几个主成分上，是在尽可能多地保留数据变化的同时降低数据维数的标准方法。在实际中，它是用奇异值分解（[[linear-algebra/svd]]）来计算的。
@@ -299,12 +299,12 @@ $$
 :::
 
 ::: history
-对称矩阵最初是以二次型的形式出现的：出现在欧拉（Euler）和拉格朗日（Lagrange）的力学中（转动和惯性的主轴），也出现在通过旋转到主轴来对圆锥曲线和二次曲面进行分类的问题中。奥古斯丁-路易·柯西（Augustin-Louis Cauchy）于1829年证明了对称矩阵的特征根都是实数，并证明了主轴变换在任意维数下都适用。詹姆斯·约瑟夫·西尔维斯特（James Joseph Sylvester）于1852年发表了“惯性定律”：无论用怎样的可逆变量替换把一个二次型化为平方和，其中正平方项和负平方项的个数总是相同的。“谱”（*spectrum*）一词是大卫·希尔伯特（David Hilbert）在20世纪初为积分算子的特征值引入的；而它恰好也描述了原子的谱线——20世纪20年代的量子力学表明，这些谱线正是自伴算子的特征值——这是一个美妙的巧合。
+对称矩阵最初是以二次型的形式出现的：出现在欧拉（Euler）和拉格朗日（Lagrange）的力学中（转动和惯性的主轴），也出现在通过旋转到主轴来对圆锥曲线和二次曲面进行分类的问题中。奥古斯丁-路易·柯西（Augustin-Louis Cauchy）于1829年证明了对称矩阵的特征根都是实数，并证明了主轴变换在任意维数下都适用。詹姆斯·约瑟夫·西尔维斯特（James Joseph Sylvester）于1852年发表了“惯性定律”：无论用怎样的可逆变量替换把一个二次型化为平方和，其中正平方项和负平方项的个数总是相同的。“谱”（*spectrum*）一词在1897年已由威廉·维尔丁格（Wilhelm Wirtinger）使用，20世纪初大卫·希尔伯特（David Hilbert）用它来称呼积分算子的特征值；而它恰好也描述了原子的谱线——20世纪20年代的量子力学表明，谱线的频率正比于某个自伴算子的特征值之差（即原子的能级之差）——这是一个美妙的巧合。
 :::
 
 ## 后续内容
 
-谱定理是通向奇异值分解的大门：把它应用于对称半正定矩阵$A\T A$，就能得到与**任意**矩阵$A$相适应的标准正交基（[[linear-algebra/svd]]）。正定矩阵恰好就是$\R^n$上内积的矩阵（[[#exr-inner-product]]），它们是最优化（[[multivariable/extrema]]）、统计学（协方差矩阵）以及楚列斯基分解和共轭梯度法等数值方法（[[numerical-analysis/iterative-methods]]）的基础。在无穷维情形，自伴算子的谱定理是傅里叶级数和[[pde/sturm-liouville]]一章中施图姆-刘维尔（Sturm–Liouville）理论的基础，在那里，微分算子的特征函数构成函数空间的一组标准正交基。曲面的弯曲程度也由一个对称矩阵决定——即形算子，它的特征值就是主曲率（[[differential-geometry/surface-curvature]]）。
+谱定理是通向奇异值分解的大门：把它应用于对称半正定矩阵$A\T A$，就能得到与**任意**矩阵$A$相适应的标准正交基（[[linear-algebra/svd]]）。正定矩阵恰好就是$\R^n$上内积的矩阵（[[#exr-inner-product]]），它们是最优化（[[multivariable/extrema]]）、统计学（协方差矩阵）以及楚列斯基分解（[[numerical-analysis/direct-methods]]）和共轭梯度法（[[numerical-analysis/iterative-methods]]）等数值方法的基础。在无穷维情形，自伴算子的谱定理是傅里叶级数和[[pde/sturm-liouville]]一章中施图姆-刘维尔（Sturm–Liouville）理论的基础，在那里，微分算子的特征函数构成函数空间的一组标准正交基。曲面的弯曲程度也由一个对称矩阵决定——即形算子，它的特征值就是主曲率（[[differential-geometry/surface-curvature]]）。
 
 ::: summary
 - 对于对称矩阵，$(A\mathbf{x})\cdot\mathbf{y} = \mathbf{x}\cdot(A\mathbf{y})$；因此它的特征值都是实数（[[#thm-real-eigenvalues]]），属于不同特征值的特征向量相互正交（[[#thm-orthogonal-eigenvectors]]）。

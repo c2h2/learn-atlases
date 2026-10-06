@@ -58,7 +58,7 @@ So $p(x) = 2\cdot 1 + 0\cdot(1 + x) + 1\cdot(1+x)^2$ and $[p]_{\mathcal{B}} = (2
 :::
 :::
 
-When does a basis exist? Call $V$ **finite-dimensional** if it is spanned by some finite list. All our examples except $\mathcal{P}(\F)$ and spaces of functions on infinite sets are finite-dimensional.
+When does a basis exist? Call $V$ **finite-dimensional** if it is spanned by some finite list. All our examples except $\mathcal{P}(\F)$ and the spaces $\mathcal{F}(X, \F)$ of all functions on an infinite set $X$ are finite-dimensional.
 
 ::: theorem Every spanning list contains a basis {#thm-reduce}
 If $v_1, \dots, v_k$ span $V$, then some sublist of $v_1, \dots, v_k$ is a basis of $V$. In particular every finite-dimensional vector space has a basis.
@@ -188,7 +188,7 @@ Let $A$ be an $m\times n$ matrix with entries in $\F$. Four subspaces are attach
 | row space $\operatorname{Row}(A)$ | span of the rows $= \operatorname{Col}(A\T)$ | $\F^n$ |
 | left null space $\operatorname{Nul}(A\T)$ | solutions of $A\T\mathbf{y} = \mathbf{0}$ | $\F^m$ |
 
-(Strang writes $C(A)$, $N(A)$, $C(A\T)$ and $N(A\T)$.) The column space answers the existence question for $A\mathbf{x} = \mathbf{b}$ — a solution exists iff $\mathbf{b}\in\operatorname{Col}(A)$ — and the null space answers the uniqueness question, since by [[linear-algebra/linear-systems#thm-structure]] the solutions form a translate of $\operatorname{Nul}(A)$. All four can be read off from one elimination.
+(Strang writes $C(A)$, $N(A)$, $C(A\T)$ and $N(A\T)$.) The column space answers the existence question for $A\mathbf{x} = \mathbf{b}$ — a solution exists iff $\mathbf{b}\in\operatorname{Col}(A)$ — and the null space answers the uniqueness question, since by [[linear-algebra/linear-systems#thm-structure]] the solutions form a translate of $\operatorname{Nul}(A)$. Three of the four can be read off from one elimination of $A$; the fourth is the null space of $A\T$, found in the same way.
 
 ::: theorem Bases for the fundamental subspaces {#thm-four-bases}
 Let $R$ be the reduced row echelon form of $A$.
@@ -310,7 +310,7 @@ The words come from different eras. Hermann Grassmann already worked with indepe
 
 ## Where this leads
 
-Dimension counting is one of the most powerful tools in mathematics. In [[linear-algebra/linear-maps]], the rank theorem becomes the rank–nullity theorem for linear maps, and coordinates become the bridge that represents every linear map by a matrix. In [[linear-algebra/inner-products]] we will see that $\operatorname{Row}(A)$ and $\operatorname{Nul}(A)$ are orthogonal complements in $\F^n$, as are $\operatorname{Col}(A)$ and $\operatorname{Nul}(A\T)$ in $\F^m$, and in [[linear-algebra/svd]] the singular value decomposition supplies especially good bases for all four subspaces at once. Dimension arguments also prove that the solution space of an $n$-th order linear differential equation is $n$-dimensional ([[ode/second-order-linear]]) and drive the theory of field extensions ([[abstract-algebra/fields-galois]]), where the degree of an extension is a dimension.
+Dimension counting is one of the most powerful tools in mathematics. In [[linear-algebra/linear-maps]], the rank theorem becomes the rank–nullity theorem for linear maps, and coordinates become the bridge that represents every linear map by a matrix. In [[linear-algebra/inner-products]] we will see that for a real matrix $\operatorname{Row}(A)$ and $\operatorname{Nul}(A)$ are orthogonal complements in $\R^n$, as are $\operatorname{Col}(A)$ and $\operatorname{Nul}(A\T)$ in $\R^m$, and in [[linear-algebra/svd]] the singular value decomposition supplies especially good bases for all four subspaces at once. Dimension arguments also prove that the solution space of an $n$-th order linear differential equation is $n$-dimensional ([[ode/second-order-linear]], [[ode/linear-systems]]) and drive the theory of field extensions ([[abstract-algebra/fields-galois]]), where the degree of an extension is a dimension.
 
 ::: summary
 - A basis is an independent spanning list; equivalently, every vector has unique coordinates relative to it ([[#thm-coordinates]]). Coordinates turn a space with a basis of length $n$ into $\F^n$.
@@ -325,7 +325,7 @@ Dimension counting is one of the most powerful tools in mathematics. In [[linear
 ## Exercises
 
 ::: exercise Dimension of a solution space {level=1 check="2"}
-Find a basis for the subspace $\set{(x, y, z, w)\in\R^4 : x + y - z = 0,\ y + w = 0}$. What is its dimension?
+Find a basis for the subspace of $\R^4$ consisting of all $(x, y, z, w)$ with $x + y - z = 0$ and $y + w = 0$. What is its dimension?
 ::: solution
 The coefficient matrix $\begin{pmatrix}1&1&-1&0\\0&1&0&1\end{pmatrix}$ is in echelon form; $R_1\to R_1 - R_2$ gives the RREF $\begin{pmatrix}1&0&-1&-1\\0&1&0&1\end{pmatrix}$. The free variables are $z, w$, and $x = z + w$, $y = -w$. The special solutions $(1, 0, 1, 0)$ (from $z = 1, w = 0$) and $(1, -1, 0, 1)$ (from $z = 0$, $w = 1$) form a basis, so the dimension is $2 = 4 - 2$.
 :::
@@ -367,7 +367,7 @@ $\operatorname{Col}(B)$: $(1, 2, -1)$, $(1, 3, 1)$. $\operatorname{Row}(B)$: $(1
 :::
 
 ::: exercise Intersecting subspaces {level=2 check="1"}
-In $\R^4$ let $U = \Span\bigl((1,0,0,1), (0,1,0,1)\bigr)$ and $W = \Span\bigl((1,1,0,2), (0,0,1,0)\bigr)$. Find $\dim(U + W)$ and $\dim(U\cap W)$, and describe $U\cap W$.
+In $\R^4$ let $U = \Span\bigl((1,0,0,1), (0,1,0,1)\bigr)$ and $W = \Span\bigl((1,1,0,2), (0,0,1,0)\bigr)$. Find $\dim(U + W)$ and $\dim(U\cap W)$, and describe $U\cap W$. (Enter $\dim(U\cap W)$.)
 ::: solution
 Both spanning pairs are independent, so $\dim U = \dim W = 2$. Since $(1,1,0,2) = (1,0,0,1) + (0,1,0,1)\in U$, the space $U + W$ is spanned by $(1,0,0,1), (0,1,0,1), (0,0,1,0)$, which are independent (look at coordinates 1, 2, 3); so $\dim(U + W) = 3$. By [[#thm-sum-dim]], $\dim(U\cap W) = 2 + 2 - 3 = 1$. The vector $(1,1,0,2)$ lies in both, so $U\cap W = \Span\bigl((1,1,0,2)\bigr)$.
 :::

@@ -169,7 +169,7 @@ $$
 so $\sum a_n$ satisfies the Cauchy criterion and converges. Finally $\abs{S_N} \le \sum_{n=1}^N\abs{a_n} \le \sum_{n=1}^\infty\abs{a_n}$ for every $N$, and the inequality passes to the limit ([[real-analysis/sequences#thm-order-limits]]).
 :::
 
-The two most powerful tests for absolute convergence compare a series with a geometric one. They use the upper limit $\limsup$ of [[real-analysis/sequences#def-limsup]], which exists for every sequence (possibly as $\infty$).
+The two most powerful tests for absolute convergence compare a series with a geometric one. They use the upper limit $\limsup$ of [[real-analysis/sequences#def-limsup]], which exists for every sequence of non-negative numbers (possibly as $\infty$).
 
 ::: theorem Root test {#thm-root}
 Let $\alpha = \limsup_{n\to\infty}\abs{a_n}^{1/n}$.
@@ -251,7 +251,7 @@ $$
 S_2 \le S_4 \le S_6 \le \cdots \le S_{2n} \le S_{2n-1} \le \cdots \le S_3 \le S_1,
 $$
 
-where $S_{2n} = S_{2n-1} - b_{2n} \le S_{2n-1}$ links the two chains. The even partial sums increase and are bounded above by $S_1$; the odd ones decrease and are bounded below by $S_2$. By the monotone convergence theorem $S_{2n} \to E$ and $S_{2n-1} \to O$, and $O - E = \lim(S_{2n-1} - S_{2n}) = \lim b_{2n} = 0$. So the even and odd partial sums have the same limit $S$, and therefore $S_N \to S$: given $\eps > 0$, both $\abs{S_{2n} - S}$ and $\abs{S_{2n-1} - S}$ are less than $\eps$ for $n$ beyond some $K$, hence $\abs{S_N - S} < \eps$ for $N \ge 2K$.
+where $S_{2n} = S_{2n-1} - b_{2n} \le S_{2n-1}$ links the two chains. The even partial sums increase and are bounded above by $S_1$; the odd ones decrease and are bounded below by $S_2$. By the monotone convergence theorem $S_{2n} \to E$ and $S_{2n-1} \to O$, and $O - E = \lim(S_{2n-1} - S_{2n}) = \lim b_{2n} = 0$. So the even and odd partial sums have the same limit $S$, and therefore $S_N \to S$: given $\eps > 0$, there is $K$ such that both $\abs{S_{2n} - S}$ and $\abs{S_{2n-1} - S}$ are less than $\eps$ for all $n \ge K$, hence $\abs{S_N - S} < \eps$ for $N \ge 2K$.
 
 For the error bound, the chain shows that $S$ lies between any two consecutive partial sums $S_N$ and $S_{N+1}$, so $\abs{S - S_N} \le \abs{S_{N+1} - S_N} = b_{N+1}$.
 :::

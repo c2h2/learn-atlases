@@ -29,7 +29,7 @@ The definition keeps the relative sizes of the probabilities of outcomes inside 
 ::: widget venn
 sets: 2
 expr: A & B
-caption: Conditioning on $B$ makes $B$ the new sample space. The shaded region $A \cap B$ is the part of $A$ that is still possible, and $\Prob(A \mid B)$ is its share of the circle $B$, not of the whole rectangle. Type `B` and then `A & B'` to compare $\Prob(A\mid B)$ with $\Prob(A \mid B^c)$, the share of $A$ outside $B$.
+caption: Conditioning on $B$ makes $B$ the new sample space. The shaded region $A \cap B$ is the part of $A$ that is still possible, and $\Prob(A \mid B)$ is its share of the circle $B$, not of the whole rectangle. Type `B` and then `A & B'` to compare $\Prob(A\mid B)$ with $\Prob(A \mid B^c)$, the share of the region outside $B$ that lies in $A$.
 :::
 
 A conditional probability is a probability in its own right: all the rules of [[probability/probability-spaces]] apply to it.
@@ -173,7 +173,7 @@ mode: test
 prevalence: 0.01
 sensitivity: 0.95
 specificity: 0.95
-caption: The diagnostic test as natural frequencies. Each square is a person; the positives are those flagged by the test. Raise the prevalence to $10\%$ and watch $\Prob(\text{ill}\mid +)$ jump to about $0.68$; then return to $1\%$ and raise the specificity to $0.99$. For rare conditions it is the false-positive rate, not the sensitivity, that matters most.
+caption: The diagnostic test as natural frequencies. Each dot is a person; the positives are those flagged by the test. Raise the prevalence to $10\%$ and watch $\Prob(\text{ill}\mid +)$ jump to about $0.68$; then return to $1\%$ and raise the specificity to $0.99$. For rare conditions it is the false-positive rate, not the sensitivity, that matters most.
 :::
 
 Bayes' theorem is especially transparent in terms of **odds**. The odds on an event $E$ are $\Prob(E)/\Prob(E^c)$; for example, probability $0.2$ corresponds to odds of $0.2/0.8 = 1/4$, "4 to 1 against".

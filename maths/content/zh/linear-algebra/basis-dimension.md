@@ -58,7 +58,7 @@ $$
 :::
 :::
 
-基何时存在？如果$V$可以由某个有限的向量组张成，就称$V$是**有限维的**。在我们的例子中，除了$\mathcal{P}(\F)$和无限集上的函数空间之外，都是有限维的。
+基何时存在？如果$V$可以由某个有限的向量组张成，就称$V$是**有限维的**。在我们的例子中，除了$\mathcal{P}(\F)$和无限集$X$上全体函数构成的空间$\mathcal{F}(X, \F)$之外，都是有限维的。
 
 ::: theorem 每个张成组都包含一组基 {#thm-reduce}
 若$v_1, \dots, v_k$张成$V$，则$v_1, \dots, v_k$的某个子组是$V$的一组基。特别地，每个有限维向量空间都有基。
@@ -188,7 +188,7 @@ $$
 | 行空间$\operatorname{Row}(A)$ | 各行的张成空间$= \operatorname{Col}(A\T)$ | $\F^n$ |
 | 左零空间$\operatorname{Nul}(A\T)$ | $A\T\mathbf{y} = \mathbf{0}$的解 | $\F^m$ |
 
-（斯特朗（Strang）把它们记作$C(A)$、$N(A)$、$C(A\T)$和$N(A\T)$。）列空间回答了$A\mathbf{x} = \mathbf{b}$的存在性问题——解存在当且仅当$\mathbf{b}\in\operatorname{Col}(A)$——而零空间回答了唯一性问题，因为由[[linear-algebra/linear-systems#thm-structure]]，解集是$\operatorname{Nul}(A)$的一个平移。这四个子空间都可以从一次消元中读出来。
+（斯特朗（Strang）把它们记作$C(A)$、$N(A)$、$C(A\T)$和$N(A\T)$。）列空间回答了$A\mathbf{x} = \mathbf{b}$的存在性问题——解存在当且仅当$\mathbf{b}\in\operatorname{Col}(A)$——而零空间回答了唯一性问题，因为由[[linear-algebra/linear-systems#thm-structure]]，解集是$\operatorname{Nul}(A)$的一个平移。四个子空间中有三个可以从对$A$的一次消元中读出来；第四个是$A\T$的零空间，可以用同样的方法求出。
 
 ::: theorem 基本子空间的基 {#thm-four-bases}
 设$R$是$A$的简化行阶梯形。
@@ -310,7 +310,7 @@ $$
 
 ## 后续内容
 
-维数计数是数学中最有力的工具之一。在[[linear-algebra/linear-maps]]中，秩定理将成为线性映射的秩-零化度定理，而坐标则成为用矩阵表示每个线性映射的桥梁。在[[linear-algebra/inner-products]]中我们将看到，$\operatorname{Row}(A)$与$\operatorname{Nul}(A)$是$\F^n$中互为正交补的子空间，$\operatorname{Col}(A)$与$\operatorname{Nul}(A\T)$在$\F^m$中也是如此；而在[[linear-algebra/svd]]中，奇异值分解同时为全部四个子空间提供了特别好的基。维数论证还能证明$n$阶线性微分方程的解空间是$n$维的（[[ode/second-order-linear]]），并推动了域扩张理论的发展（[[abstract-algebra/fields-galois]]），在那里扩张的次数就是一个维数。
+维数计数是数学中最有力的工具之一。在[[linear-algebra/linear-maps]]中，秩定理将成为线性映射的秩-零化度定理，而坐标则成为用矩阵表示每个线性映射的桥梁。在[[linear-algebra/inner-products]]中我们将看到，对实矩阵而言，$\operatorname{Row}(A)$与$\operatorname{Nul}(A)$是$\R^n$中互为正交补的子空间，$\operatorname{Col}(A)$与$\operatorname{Nul}(A\T)$在$\R^m$中也是如此；而在[[linear-algebra/svd]]中，奇异值分解同时为全部四个子空间提供了特别好的基。维数论证还能证明$n$阶线性微分方程的解空间是$n$维的（[[ode/second-order-linear]]，[[ode/linear-systems]]），并推动了域扩张理论的发展（[[abstract-algebra/fields-galois]]），在那里扩张的次数就是一个维数。
 
 ::: summary
 - 基是线性无关的张成组；等价地说，每个向量关于它都有唯一的坐标（[[#thm-coordinates]]）。坐标把一个有长度为$n$的基的空间变成$\F^n$。
@@ -325,7 +325,7 @@ $$
 ## 习题
 
 ::: exercise 解空间的维数 {level=1 check="2"}
-求子空间$\set{(x, y, z, w)\in\R^4 : x + y - z = 0,\ y + w = 0}$的一组基。它的维数是多少？
+求$\R^4$中满足$x + y - z = 0$且$y + w = 0$的全体向量$(x, y, z, w)$构成的子空间的一组基。它的维数是多少？
 ::: solution
 系数矩阵$\begin{pmatrix}1&1&-1&0\\0&1&0&1\end{pmatrix}$已是阶梯形；作$R_1\to R_1 - R_2$得到简化行阶梯形$\begin{pmatrix}1&0&-1&-1\\0&1&0&1\end{pmatrix}$。自由变量是$z, w$，且$x = z + w$，$y = -w$。特殊解$(1, 0, 1, 0)$（取$z = 1, w = 0$）和$(1, -1, 0, 1)$（取$z = 0$，$w = 1$）构成一组基，所以维数是$2 = 4 - 2$。
 :::
@@ -367,7 +367,7 @@ $\operatorname{Col}(B)$：$(1, 2, -1)$，$(1, 3, 1)$。$\operatorname{Row}(B)$�
 :::
 
 ::: exercise 相交的子空间 {level=2 check="1"}
-在$\R^4$中，设$U = \Span\bigl((1,0,0,1), (0,1,0,1)\bigr)$，$W = \Span\bigl((1,1,0,2), (0,0,1,0)\bigr)$。求$\dim(U + W)$和$\dim(U\cap W)$，并描述$U\cap W$。
+在$\R^4$中，设$U = \Span\bigl((1,0,0,1), (0,1,0,1)\bigr)$，$W = \Span\bigl((1,1,0,2), (0,0,1,0)\bigr)$。求$\dim(U + W)$和$\dim(U\cap W)$，并描述$U\cap W$。（填写$\dim(U\cap W)$。）
 ::: solution
 两对张成向量都线性无关，所以$\dim U = \dim W = 2$。由于$(1,1,0,2) = (1,0,0,1) + (0,1,0,1)\in U$，空间$U + W$由$(1,0,0,1), (0,1,0,1), (0,0,1,0)$张成，而它们线性无关（看第1、2、3个坐标）；所以$\dim(U + W) = 3$。由[[#thm-sum-dim]]，$\dim(U\cap W) = 2 + 2 - 3 = 1$。向量$(1,1,0,2)$同时属于两者，所以$U\cap W = \Span\bigl((1,1,0,2)\bigr)$。
 :::

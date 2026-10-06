@@ -20,7 +20,7 @@ I = \iint_R f(x,y)\,dA = \lim_{\text{细度}\to0}\sum_{i,j} f(x_{ij}^*, y_{ij}^*
 $$
 :::
 
-当$f \ge 0$时，积分就是图像下方的体积；一般情况下，它是$xy$平面上方的体积减去下方的体积。与一元情形一样，关键的存在性结论是：$R$上的每个连续函数都可积；更一般地，间断点都位于有限条光滑曲线（它们的面积为零）上的每个有界函数都可积。证明要用到连续函数在有界闭集上的一致连续性，见[[real-analysis/riemann-integral]]一章；我们将直接使用这一结论。积分的基本性质可以直接由定义得出。
+当$f \ge 0$时，积分就是图像下方的体积；一般情况下，它是$xy$平面上方的体积减去下方的体积。与一元情形一样，关键的存在性结论是：$R$上的每个连续函数都可积；更一般地，间断点都位于有限条光滑曲线（它们的面积为零）上的每个有界函数都可积。证明要用到连续函数在有界闭集上的一致连续性，与[[real-analysis/riemann-integral]]一章中一元积分的证明完全类似；我们将直接使用这一结论。积分的基本性质可以直接由定义得出。
 
 ::: proposition 二重积分的性质 {#prop-properties}
 设$f$和$g$在矩形$R$上可积，$\alpha, \beta\in\R$。则
@@ -72,7 +72,7 @@ $$
 这个分割的任何**加细**的每个黎曼和都介于$L$与$U$之间，因为加细后的每个小矩形都包含在某个$R_{ij}$中，而在$R_{ij}$上$m_{ij}\le f\le M_{ij}$。细度任意小的加细是存在的，而它们的黎曼和收敛于$\iint_R f\,dA$；所以同样有$L \le \iint_R f\,dA \le U$。现在设$\eps > 0$。由一致连续性，存在$\delta > 0$，使得只要$\norm{\mathbf{p} - \mathbf{q}} < \delta$，就有$\abs{f(\mathbf{p}) - f(\mathbf{q})} < \eps$；对于所有小矩形的直径都小于$\delta$的分割，有$M_{ij} - m_{ij} < \eps$，因此$U - L < \eps\cdot\text{面积}(R)$。对每个$\eps > 0$，$\int_a^bF\,dx$与$\iint_R f\,dA$都落在长度小于$\eps\cdot\text{面积}(R)$的区间$[L, U]$中；所以二者相等。交换$x$与$y$的角色，同样的论证可得第二个等式。
 :::
 
-只要$f$在$R$上可积且内层积分存在，同样的证明就适用；特别地，它适用于除有限条光滑曲线外处处连续的有界函数。对勒贝格可积函数成立的最一般形式在[[measure-theory/lebesgue-integral]]一章中证明。
+只要$f$在$R$上可积且内层积分存在，同样的证明就适用；特别地，它适用于除有限条光滑曲线外处处连续的有界函数。对勒贝格可积函数成立的最一般形式是测度论中的定理，它建立在[[measure-theory/lebesgue-integral]]一章的积分之上。
 
 ::: example 选择积分次序 {#ex-order}
 计算$\displaystyle\iint_R x\,e^{xy}\,dA$，其中$R = [0,1]\times[0,1]$。
@@ -94,7 +94,7 @@ $$
 \int_0^1\int_0^1 f\,dy\,dx = \int_0^1\frac{dx}{1+x^2} = \frac{\pi}{4}, \qquad \int_0^1\int_0^1 f\,dx\,dy = -\frac{\pi}{4},
 $$
 
-这是因为$\int_0^1 f\,dy = \bigl[\tfrac{y}{x^2+y^2}\bigr]_0^1 = \tfrac{1}{1+x^2}$，且$f(y,x) = -f(x,y)$。二重积分不存在：$f$在原点附近无界，并且$\iint\abs{f}\,dA = \infty$。对矩形上的连续函数，以及绝对值的积分有限的任何函数，交换积分次序都是安全的——其他情况则不然。
+这是因为$\int_0^1 f\,dy = \bigl[\tfrac{y}{x^2+y^2}\bigr]_0^1 = \tfrac{1}{1+x^2}$，且$f(y,x) = -f(x,y)$。二重积分不存在：$f$在原点附近无界，并且$\iint\abs{f}\,dA = \infty$。对矩形上的连续函数、非负函数，以及绝对值的积分有限的任何函数，交换积分次序都是安全的——但一般情况下则不然。
 :::
 
 一个值得记住的特殊情形：若$f(x,y) = g(x)h(y)$，则$\iint_R f\,dA = \left(\int_a^b g\,dx\right)\left(\int_c^d h\,dy\right)$，因为内层积分$\int_c^d g(x)h(y)\,dy = g(x)\int_c^d h$，常数$\int_c^d h$可以提到外层积分之外。
@@ -206,7 +206,7 @@ $$
 m = \iint_D \sigma\,dA, \qquad \bar x = \frac1m\iint_D x\,\sigma\,dA, \qquad \bar y = \frac1m\iint_D y\,\sigma\,dA,
 $$
 
-这些公式是把各小块的质量$\sigma\,\Delta A$及其矩$x\,\sigma\,\Delta A$、$y\,\sigma\,\Delta A$累加起来得到的。当密度为常数时，质心就是**形心**，它是一个纯几何的点。类似地，$f$在$D$上的**平均值**为$\frac{1}{\text{面积}(D)}\iint_D f\,dA$；对连续函数，这个平均值总能取到。
+这些公式是把各小块的质量$\sigma\,\Delta A$及其矩$x\,\sigma\,\Delta A$、$y\,\sigma\,\Delta A$累加起来得到的。当密度为常数时，质心就是**形心**，它是一个纯几何的点。类似地，$f$在$D$上的**平均值**为$\frac{1}{\text{面积}(D)}\iint_D f\,dA$；在连成一片的区域上，连续函数能取到它的平均值。
 
 ::: theorem 二重积分中值定理 {#thm-mvt-integral}
 设$D$是面积为正的有界闭区域，并且$D$中任意两点都可以用$D$中的一条连续路径连接，$f$在$D$上连续。则存在一点$\mathbf{p}\in D$，使得
@@ -264,7 +264,7 @@ $$
 其中$r_i^*$是中点处的半径。极坐标矩形**不是**边长为$\Delta r$和$\Delta\theta$的矩形：它的两边分别是$\Delta r$和近似为$r\,\Delta\theta$的一段弧，弧长随到原点的距离增大而增大。这个精确的公式是下面定理的核心。
 
 ::: theorem 极坐标下的积分 {#thm-polar}
-设$D = \set{(r\cos\theta, r\sin\theta) : \alpha\le\theta\le\beta,\ h_1(\theta)\le r\le h_2(\theta)}$，其中$0\le\beta - \alpha\le2\pi$，且$0\le h_1\le h_2$都是连续函数。若$f$在$D$上连续，则
+设$D$为满足$\alpha\le\theta\le\beta$、$h_1(\theta)\le r\le h_2(\theta)$的点$(r\cos\theta, r\sin\theta)$构成的集合，其中$0\le\beta - \alpha\le2\pi$，且$0\le h_1\le h_2$都是连续函数。若$f$在$D$上连续，则
 
 $$
 \iint_D f(x,y)\,dA = \int_\alpha^\beta\int_{h_1(\theta)}^{h_2(\theta)} f(r\cos\theta, r\sin\theta)\,r\,dr\,d\theta, \qquad D = \set{\alpha\le\theta\le\beta,\ h_1(\theta)\le r\le h_2(\theta)}.
@@ -320,7 +320,7 @@ caption: 钟形曲面$z = e^{-(x^2+y^2)}$。它的等值线是圆，这正是极
 :::
 
 ::: application 正态分布
-标准正态密度$\varphi(x) = \frac{1}{\sqrt{2\pi}}e^{-x^2/2}$是统计学中最重要的函数。它的总积分为$1$，这一点可以通过换元$x = \sqrt2\,u$由[[#ex-gaussian]]得到。同样的极坐标技巧表明，若$X$和$Y$是相互独立的标准正态随机变量，则$(X,Y)$的分布是旋转对称的——这正是生成正态随机数的 Box–Muller 方法的出发点（[[probability/joint-distributions]]）。
+标准正态密度$\varphi(x) = \frac{1}{\sqrt{2\pi}}e^{-x^2/2}$是统计学中最重要的函数。它的总积分为$1$，这一点可以通过换元$x = \sqrt2\,u$由[[#ex-gaussian]]得到。若$X$和$Y$是相互独立的标准正态随机变量，则它们的联合密度$\varphi(x)\varphi(y) = \frac{1}{2\pi}e^{-(x^2+y^2)/2}$（[[probability/joint-distributions]]）只依赖于到原点的距离，所以$(X,Y)$的分布是旋转对称的——这正是生成正态随机数的 Box–Muller 方法的出发点（[[multivariable/change-of-variables]]）。
 :::
 
 ## 柱面坐标与球面坐标
@@ -394,7 +394,7 @@ $$
 
 ## 后续内容
 
-因子$r$和$\rho^2\sin\phi$都是雅可比行列式的特例；[[multivariable/change-of-variables]]一章将证明一般的换元公式，它使我们能够针对任意区域选取与之相适应的坐标。由曲线围成的区域上的二重积分与沿其边界的曲线积分通过格林公式联系起来（[[multivariable/greens-theorem]]），三重积分与曲面积分则通过散度定理（高斯公式）联系起来（[[multivariable/stokes-divergence]]）。在概率论中，把联合密度在平面区域上积分，就可以计算概率和数学期望（[[probability/joint-distributions]]）；当积分无法以闭合形式求出时，可以用[[numerical-analysis/numerical-integration]]一章中的方法或蒙特卡罗抽样来近似计算。[[measure-theory/lebesgue-integral]]一章中的勒贝格积分使富比尼定理具有了它天然的一般形式。
+因子$r$和$\rho^2\sin\phi$都是雅可比行列式的特例；[[multivariable/change-of-variables]]一章将证明一般的换元公式，它使我们能够针对任意区域选取与之相适应的坐标。由曲线围成的区域上的二重积分与沿其边界的曲线积分通过格林公式联系起来（[[multivariable/greens-theorem]]），三重积分与曲面积分则通过散度定理（高斯公式）联系起来（[[multivariable/stokes-divergence]]）。在概率论中，把联合密度在平面区域上积分，就可以计算概率和数学期望（[[probability/joint-distributions]]）；当积分无法以闭合形式求出时，可以用[[numerical-analysis/numerical-integration]]一章中的方法或蒙特卡罗抽样来近似计算。[[measure-theory/lebesgue-integral]]一章引入的勒贝格积分，正是富比尼定理取得其天然一般形式的框架，即测度论中的富比尼–托内利定理。
 
 ::: summary
 - $\iint_R f\,dA$是黎曼和$\sum f(\mathbf{x}_{ij}^*)\,\Delta A_{ij}$的极限；当$f\ge0$时，它是图像下方的体积（[[#def-double-integral]]）。
@@ -483,7 +483,7 @@ $$
 验证$\pdv{}{y}\left(\dfrac{y}{x^2+y^2}\right) = f(x,y)$。
 :::
 ::: solution
-当$x > 0$时，$\pdv{}{y}\dfrac{y}{x^2+y^2} = \dfrac{(x^2+y^2) - 2y^2}{(x^2+y^2)^2} = f(x,y)$，所以$\int_0^1 f\,dy = \dfrac{1}{x^2+1}$，且$\int_0^1\frac{dx}{1+x^2} = \arctan 1 = \frac\pi4$。由于$f(y,x) = -f(x,y)$，另一个累次积分的计算与此相同，只是两个变量的角色互换、符号相反：结果为$-\frac\pi4$。这并不矛盾，因为$f$在$[0,1]^2$上不连续——它在原点附近无界（例如$f(x,0) = 1/x^2$）——并且$\iint\abs{f}\,dA = \infty$，所以富比尼定理的任何一种形式都不适用。
+当$x > 0$时，$\pdv{}{y}\dfrac{y}{x^2+y^2} = \dfrac{(x^2+y^2) - 2y^2}{(x^2+y^2)^2} = f(x,y)$，所以$\int_0^1 f\,dy = \dfrac{1}{x^2+1}$，且$\int_0^1\frac{dx}{1+x^2} = \arctan 1 = \frac\pi4$。由于$f(y,x) = -f(x,y)$，另一个累次积分的计算与此相同，只是两个变量的角色互换、符号相反：结果为$-\frac\pi4$。这并不矛盾，因为$f$在$[0,1]^2$上不连续——它在原点附近无界（例如$f(x,0) = 1/x^2$）——并且$\iint\abs{f}\,dA = \infty$：在极坐标下$\abs{f} = \abs{\cos2\theta}/r^2$，仅四分之一圆盘$r\le1$的贡献就已是$\int_0^{\pi/2}\abs{\cos2\theta}\,d\theta\int_0^1\frac{dr}{r} = \infty$。所以富比尼定理的任何一种形式都不适用。
 :::
 :::
 

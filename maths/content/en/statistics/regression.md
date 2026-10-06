@@ -208,7 +208,7 @@ $$
 $$
 :::
 
-$R^2$ lies between $0$ and $1$ and is the fraction of the variance of $y$ "explained" by its linear relationship with $x$. For the revision data, $\mathrm{SSR} = 444.1^2/168.1 = 1173.3$, so $R^2 = 1173.3/1228.1 = 0.955$ and $r = 0.977$: revision time accounts for about $95\%$ of the variation in marks *in this sample*. The sample correlation $r$ is the data analogue of the correlation coefficient of [[probability/joint-distributions#def-covariance]], and like it, it measures only linear association.
+$R^2$ lies between $0$ and $1$ and is the fraction of the variance of $y$ "explained" by its linear relationship with $x$. For the revision data, $\mathrm{SSR} = 444.1^2/168.1 = 1173.3$, so $R^2 = 1173.3/1228.1 = 0.955$ and $r = 0.977$: revision time accounts for $95.5\%$ of the variation in marks *in this sample*. The sample correlation $r$ is the data analogue of the correlation coefficient of [[probability/joint-distributions#def-covariance]], and like it, it measures only linear association.
 
 ::: quiz
 A regression of adult weight on height (with a positive slope) has $R^2 = 0.49$. Which statement is correct?

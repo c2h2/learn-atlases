@@ -125,7 +125,7 @@ x: 0, 1
 y: 0, 8
 sliders: n=1:1:20:1
 labels: h_n(x) = n^2xe^{-nx}
-caption: The bumps $h_n(x) = n^2xe^{-nx}$ of [[#ex-failures]]. As $n$ grows, each bump is taller ($n/e$ at $x = 1/n$) and narrower, and it slides towards $x = 0$. At every fixed $x > 0$ the values eventually die out, so $h_n \to 0$ pointwise; but the area under each bump stays close to $1$. The mass escapes up the vertical axis — which uniform convergence would forbid.
+caption: The bumps $h_n(x) = n^2xe^{-nx}$ of [[#ex-failures]]. As $n$ grows, each bump is taller ($n/e$ at $x = 1/n$) and narrower, and it slides towards $x = 0$. At every fixed $x > 0$ the values eventually die out, so $h_n \to 0$ pointwise; but the area under the bump, $1 - (n+1)e^{-n}$, tends to $1$. The mass escapes up the vertical axis — which uniform convergence would forbid.
 :::
 
 Derivatives are more delicate. Uniform convergence of $f_n$ says nothing about $f_n'$ (example (c)); the right hypothesis is uniform convergence of the *derivatives*.
@@ -341,7 +341,7 @@ Cauchy's *Cours d'analyse* (1821) claimed that a convergent series of continuous
 
 ## Where this leads
 
-Uniform convergence is convergence in the supremum norm, and in [[real-analysis/metric-spaces]] it becomes convergence in the metric space $C[a, b]$; [[#thm-uniform-cauchy]] says that this space is complete, which is the key to the contraction mapping theorem and to existence theorems for differential equations ([[ode/existence-uniqueness]]). Fourier series ([[pde/fourier-series]]) rarely converge uniformly — Abel's example jumps — and need weaker notions of convergence. Measure theory provides them: in [[measure-theory/lebesgue-integral]] the monotone and dominated convergence theorems allow limits and integrals to be exchanged under hypotheses far weaker than uniform convergence, and [[measure-theory/lp-spaces]] compares the many ways in which functions can converge. In the complex plane power series are even better behaved: [[complex-analysis/analytic-functions]] shows that a complex differentiable function is always the sum of its Taylor series.
+Uniform convergence is convergence in the supremum norm, and in [[real-analysis/metric-spaces]] it becomes convergence in the metric space $C[a, b]$; [[#thm-uniform-cauchy]] and [[#thm-uniform-continuous]] together say that this space is complete, which is the key to the contraction mapping theorem and to existence theorems for differential equations ([[ode/existence-uniqueness]]). Fourier series ([[pde/fourier-series]]) rarely converge uniformly — Abel's example jumps — and need weaker notions of convergence. Measure theory provides them: in [[measure-theory/lebesgue-integral]] the monotone and dominated convergence theorems allow limits and integrals to be exchanged under hypotheses far weaker than uniform convergence, and [[measure-theory/lp-spaces]] compares the many ways in which functions can converge. In the complex plane power series are even better behaved: [[complex-analysis/laurent-series]] shows that a function complex differentiable on an open disc is the sum of its Taylor series on the whole disc.
 
 ::: summary
 - Pointwise convergence ($f_n(x) \to f(x)$ at each $x$) does not preserve continuity ($x^n$), integrals (escaping bumps) or derivatives ($\sin(nx)/\sqrt n$).

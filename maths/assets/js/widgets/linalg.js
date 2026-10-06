@@ -173,7 +173,9 @@
   function entrySliders(bar, A, onChange) {
     const m0 = Math.max(...A.flat().map(Math.abs));
     const m = Math.max(3, Math.ceil(m0 * 1.5));
-    const step = m > 6 ? 0.2 : 0.1;
+    // entries off the slider grid (0.866 with step 0.1) would display rounded while the figure uses the exact value
+    const grid = m > 6 ? 0.2 : 0.1;
+    const step = A.flat().every((v) => Math.abs(v / grid - Math.round(v / grid)) < 1e-9) ? grid : 'any';
     const out = [];
     [[0, 0], [0, 1], [1, 0], [1, 1]].forEach(([i, j]) => {
       out.push(MA.ui.slider(bar, { label: 'a_{' + (i + 1) + (j + 1) + '}', min: -m, max: m, step, value: A[i][j], fmt: (v) => fmt(v, 3),
@@ -854,7 +856,17 @@
     const m = rows.length, n = rows[0].length;
     if (m > 6 || n > 8) throw new Error('rowreduce: ' + MA.t('at most 6 rows and 8 columns (got %d×%d)', m, n));
     const M0 = rows.map((r) => r.map(exactEntry));
-    const aug = C.bool(cfg.augmented, true) && n >= 2;
+    // augmented: true (bar before the last column), false (no bar), or the number of columns left of the bar,
+    // e.g. 3 for [A | I] with a 3×3 matrix A
+    let split = n;
+    const augN = String(cfg.augmented ?? '').trim();
+    if (/^\d+$/.test(augN)) {
+      split = parseInt(augN, 10);
+      if (split < 1 || split >= n) throw new Error('rowreduce: ' + MA.t('augmented must be true, false or a number of columns from 1 to %d', n - 1));
+    } else if (C.bool(cfg.augmented, true) && n >= 2) split = n - 1;
+    const aug = split < n, multi = split < n - 1;
+    // [A | I]: the right block starts as the identity, and the read-out reports A⁻¹ instead of solutions
+    const inverse = multi && split === m && n - split === m && M0.every((r, i) => r.slice(split).every((q, j) => (i === j ? q.isOne() : q.isZero())));
     const red = reduce(M0);
     const steps = red.steps, N = steps.length - 1;
     if (N) steps[0].cur = steps[1].cur;
@@ -895,20 +907,20 @@
     });
 
     // grid columns: row label | [ | entries … (bar) last | ] | note
-    const colOf = (j) => 3 + j + (aug && j === n - 1 ? 1 : 0);
+    const colOf = (j) => 3 + j + (aug && j >= split ? 1 : 0);
     const rbCol = 3 + n + (aug ? 1 : 0);
     const tmpl = ['auto', '8px'];
-    for (let j = 0; j < n; j++) { if (aug && j === n - 1) tmpl.push('12px'); tmpl.push('auto'); }
+    for (let j = 0; j < n; j++) { if (aug && j === split) tmpl.push('12px'); tmpl.push('auto'); }
     tmpl.push('8px', 'auto');
     grid.style.gridTemplateColumns = tmpl.join(' ');
     const place = (node, row, col, span) => { node.style.gridRow = span ? row + ' / span ' + span : String(row); node.style.gridColumn = String(col); grid.append(node); return node; };
 
     function renderGrid(st, prev) {
       grid.replaceChildren();
-      for (let j = 0; j < n; j++) place(MA.tex(el('div', { class: 'h' }), aug && j === n - 1 ? 'b' : 'x_{' + (j + 1) + '}'), 1, colOf(j));
+      for (let j = 0; j < n; j++) place(MA.tex(el('div', { class: 'h' }), multi ? '' : aug && j === n - 1 ? 'b' : 'x_{' + (j + 1) + '}'), 1, colOf(j));
       place(el('div', { class: 'bk l' }), 2, 2, m);
       place(el('div', { class: 'bk r' }), 2, rbCol, m);
-      if (aug) place(el('div', { class: 'bar' }), 2, colOf(n - 1) - 1, m);
+      if (aug) place(el('div', { class: 'bar' }), 2, colOf(split) - 1, m);
       const tgt = new Set(), src = new Set();
       if (st.type === 'swap') { tgt.add(st.i); tgt.add(st.j); } else if (st.type) { tgt.add(st.i); if (st.type === 'add') src.add(st.j); }
       const isPiv = (i, j) => st.piv.some((p) => p[0] === i && p[1] === j);
@@ -942,7 +954,7 @@
       const st = steps[k];
       renderGrid(st, k ? steps[k - 1] : null);
       head.replaceChildren(el('span', {}, el('b', { text: k ? MA.t('Step %d of %d', k, N) : MA.t('Original matrix') })),
-        el('span', { text: k === N ? MA.t('reduced row echelon form') : k && st.phase === 'forward' ? MA.t('forward phase → echelon form') : k ? MA.t('backward phase → reduced form') : (aug ? MA.t('augmented matrix [A | b]') : '') }));
+        el('span', { text: k === N ? MA.t('reduced row echelon form') : k && st.phase === 'forward' ? MA.t('forward phase → echelon form') : k ? MA.t('backward phase → reduced form') : (inverse ? MA.t('augmented matrix [A | I]') : multi ? MA.t('augmented matrix [A | B]') : aug ? MA.t('augmented matrix [A | b]') : '') }));
       opBox.replaceChildren();
       if (k) {
         opBox.append(MA.texEl(opTeX(st)), el('span', { text: MA.t(WHY[st.why]) }));
@@ -956,7 +968,13 @@
         const top = items[k].offsetTop - logBox.offsetTop, h = logBox.clientHeight;
         if (top < logBox.scrollTop || top > logBox.scrollTop + h - 30) logBox.scrollTop = Math.max(0, top - h / 2);
       }
-      if (k === N) info.set(...solutionParts(red.R, red.pivots, aug));
+      if (k === N) {
+        if (inverse) {
+          const left = red.R.every((r, i) => r.slice(0, split).every((q, j) => (i === j ? q.isOne() : q.isZero())));
+          info.set(el('span', { text: left ? MA.t('The left block is now I, so the right block is the inverse of A.') : MA.t('The left block cannot be reduced to I, so A is not invertible.') }));
+        } else if (multi) info.set(el('span', { text: MA.t('Reduced row echelon form of [A | B].') }));
+        else info.set(...solutionParts(red.R, red.pivots, aug));
+      }
       else info.set(el('span', { class: 'w-la-note', text: MA.t('The solution set appears when the reduced row echelon form is reached.') }));
       if (btn.back) { btn.start.disabled = btn.back.disabled = k === 0; btn.next.disabled = btn.end.disabled = k === N; }
     }

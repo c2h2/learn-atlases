@@ -158,12 +158,12 @@ This tends to $0$, so $f$ is integrable by [[#thm-riemann-criterion]].
 :::
 
 ::: widget riemann
-f: floor(4x)/4 + x/4
+f: floor(pi x)/pi + x/4
 a: 0
 b: 1
 n: 6
 method: upper
-caption: An increasing step-like function with jumps at $\tfrac14, \tfrac12, \tfrac34$ and at the end-point $1$. Its upper sums still converge to the integral: by the telescoping argument in [[#thm-monotone-integrable]], $U - L = (f(1) - f(0))/n$ whatever the jumps. Increase $n$ and watch the rectangles that straddle a jump — they are the only ones with a large overshoot, and their width tends to $0$.
+caption: An increasing step-like function, $f(x) = \lfloor \pi x\rfloor/\pi + x/4$, with jumps at $1/\pi$, $2/\pi$ and $3/\pi$. Its upper sums still converge to the integral: by the telescoping argument in [[#thm-monotone-integrable]], $U - L = (f(1) - f(0))/n$ whatever the jumps. Increase $n$ and watch the rectangles that straddle a jump — they are the only ones with a large overshoot, and their width tends to $0$.
 :::
 
 ::: example Thomae's function is integrable {#ex-thomae-integral}
@@ -259,7 +259,7 @@ $$
 Since $m_k \le f(t_k) \le M_k$, this gives $L(f, P) \le F(b) - F(a) \le U(f, P)$ for every partition. Hence $L(f) \le F(b) - F(a) \le U(f)$, and as $f$ is integrable both bounds equal $\int_a^b f$.
 :::
 
-Notice what is *not* assumed: $f$ need not be continuous. But it must be integrable, and that is not automatic. In 1881 Volterra constructed a differentiable function $F$ whose derivative is bounded but not Riemann integrable; for such $F$ the left side of [[#eq-ftc]] does not exist. (The Lebesgue integral of [[measure-theory/lebesgue-integral]] repairs this case.)
+Notice what is *not* assumed: $f$ need not be continuous. But it must be integrable, and that is not automatic. In 1881 Volterra constructed a differentiable function $F$ whose derivative is bounded but not Riemann integrable; for such $F$ the left side of [[#eq-ftc]] does not exist. (The Lebesgue integral of [[measure-theory/lebesgue-integral]] repairs this case: a bounded derivative is always Lebesgue integrable, with integral $F(b) - F(a)$.)
 
 The second half goes the other way: integrate, then differentiate.
 

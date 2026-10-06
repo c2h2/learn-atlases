@@ -217,7 +217,7 @@ $$
 $$
 :::
 
-这两个结果都与直觉相符：成功率为$p$的$n$次试验大约产生$np$次成功；并且（我们将在[[probability/expectation]]一章中看到）独立项之和的方差等于各项方差之和，即$n\cdot p(1-p)$。
+这两个结果都与直觉相符：成功率为$p$的$n$次试验大约产生$np$次成功；并且（我们将在[[probability/joint-distributions#thm-covariance]]中看到）独立项之和的方差等于各项方差之和，即$n\cdot p(1-p)$。
 
 ::: example 选择题考试中的猜题 {#ex-guessing}
 对于本章开头的那名学生，$X\sim\Bin(20, \tfrac14)$。求$\E X$、$X$的标准差以及$\Prob(X \ge 10)$。
@@ -442,7 +442,7 @@ caption: $\operatorname{Poisson}(\lambda)$的概率质量函数。$\lambda$较�
 :::
 
 ::: history
-赌局的期望是克里斯蒂安·惠更斯（Christiaan Huygens）《论赌博中的计算》（*De ratiociniis in ludo aleae*，1657）的核心概念，该书讨论了一场赌博的公平价格。雅各布·伯努利（Jacob Bernoulli）在他的《猜度术》（*Ars Conjectandi*，1713）中研究了重复独立试验，二项分布和伯努利试验都与他的名字联系在一起。西莫恩-德尼·泊松（Siméon-Denis Poisson）在《关于刑事和民事判决的概率研究》（*Recherches sur la probabilité des jugements en matière criminelle et en matière civile*，1837）中把泊松分布作为二项分布的极限得到；这是一部讨论陪审团裁决可靠性的著作。泊松分布起初很少受到关注，直到拉迪斯劳斯·博尔特基维奇（Ladislaus Bortkiewicz）的《小数定律》（*Das Gesetz der kleinen Zahlen*，1898）表明它能多么好地描述稀有事件，其中最著名的例子就是马踢致死的数据。
+赌局的期望是克里斯蒂安·惠更斯（Christiaan Huygens）《论赌博中的计算》（*De ratiociniis in ludo aleae*，1657）的核心概念，该书讨论了一场赌博的公平价格。雅各布·伯努利（Jacob Bernoulli）在他的《猜度术》（*Ars Conjectandi*，1713）中研究了重复独立试验，伯努利试验和伯努利分布都以他的名字命名。西莫恩-德尼·泊松（Siméon-Denis Poisson）在《关于刑事和民事判决的概率研究》（*Recherches sur la probabilité des jugements en matière criminelle et en matière civile*，1837）中把泊松分布作为二项分布的极限得到；这是一部讨论陪审团裁决可靠性的著作。泊松分布起初很少受到关注，直到拉迪斯劳斯·博尔特基维奇（Ladislaus Bortkiewicz）的《小数定律》（*Das Gesetz der kleinen Zahlen*，1898）表明它能多么好地描述稀有事件，其中最著名的例子就是马踢致死的数据。
 :::
 
 ## 后续内容 {#where-next}
@@ -512,7 +512,7 @@ $$
 :::
 
 ::: exercise 罚球 {level=2 check="0.7^3*0.3"}
-一名篮球运动员每次罚球命中的概率都是$0.7$，各次相互独立。求第一次罚失发生在第四次罚球的概率，以及直到第一次罚失为止（包括这一次）的罚球次数的期望。
+一名篮球运动员每次罚球命中的概率都是$0.7$，各次相互独立。求第一次罚失发生在第四次罚球的概率，以及直到第一次罚失为止（包括这一次）的罚球次数的期望；请填写该概率。
 ::: solution
 现在“成功”是罚失，其概率为$0.3$，所以第一次罚失发生在第几次罚球服从$\operatorname{Geom}(0.3)$：$\Prob(X=4) = 0.7^3\times0.3 = 0.1029$，$\E X = 1/0.3 = \tfrac{10}{3}$。
 :::

@@ -63,7 +63,7 @@ y: -4, 5
 points: -2, -1; 2, 3
 tangent: 0
 labels: f(x) = x^3 - 3x + 1; \text{secant}
-caption: The fixed line through the two black points $(-2,-1)$ and $(2,3)$ is the secant, of slope $1$; the other line is the tangent at the large dot. Drag the dot until the tangent line is parallel to the secant. There are two such points, $c = \pm 2/\sqrt3 \approx \pm1.155$, where $f'(c) = 3c^2 - 3 = 1$. The mean value theorem promises at least one; it does not say where.
+caption: The fixed line through the two small dots $(-2,-1)$ and $(2,3)$ is the secant, of slope $1$; the other line is the tangent at the large dot. Drag the dot until the tangent line is parallel to the secant. There are two such points, $c = \pm 2/\sqrt3 \approx \pm1.155$, where $f'(c) = 3c^2 - 3 = 1$. The mean value theorem promises at least one; it does not say where.
 :::
 
 ::: example Finding the mean value point {#ex-mvt-point}
@@ -318,7 +318,7 @@ The mean value theorem grew out of algebra. In 1691 Michel Rolle — later a voc
 
 ## Where this leads
 
-The mean value theorem is used, often silently, in almost every argument that follows. In [[calculus-1/curve-sketching]] the monotonicity test becomes the main tool for analysing graphs and finding maxima. In [[calculus-1/integrals]] the mean value theorem is the key step in the proof of the fundamental theorem of calculus, and [[#cor-same-derivative]] explains why antiderivatives are unique up to a constant. Taylor's theorem ([[calculus-2/taylor-series]]) is a higher-order mean value theorem that controls the error of polynomial approximations, and in [[numerical-analysis/root-finding]] the theorem explains why Newton's method converges so fast. Not every generalisation survives: for a curve in the plane, or a complex-valued function such as $e^{it}$ on $[0, 2\pi]$, there need not be any point where the velocity equals the average velocity ([[multivariable/vector-functions]]).
+The mean value theorem is used, often silently, in almost every argument that follows. In [[calculus-1/curve-sketching]] the monotonicity test becomes the main tool for analysing graphs and finding maxima. In [[calculus-1/integrals]] the mean value theorem is the key step in the proof of the fundamental theorem of calculus, and [[#cor-same-derivative]] explains why antiderivatives are unique up to a constant. Taylor's theorem ([[calculus-2/taylor-series]]) is a higher-order mean value theorem that controls the error of polynomial approximations, and in [[numerical-analysis/root-finding]] it explains why Newton's method converges so fast. Not every generalisation survives: as $t$ runs over $[0, 2\pi]$ the point $(\cos t, \sin t)$ goes once round the unit circle, so its average velocity is zero, yet its velocity $(-\sin t, \cos t)$ never vanishes. For curves in the plane ([[multivariable/vector-functions]]), and for complex-valued functions such as $e^{it}$, only an inequality remains.
 
 ::: summary
 - Fermat: at an interior local extremum of a differentiable function, $f'(c) = 0$. The converse is false ($x^3$ at $0$).
@@ -417,7 +417,7 @@ Since $r - 1\ge0$, the function $t\mapsto t^{r-1}$ is increasing on $(0,\infty)$
 ::: exercise Rolle's theorem twice {level=3}
 Let $f$ be twice differentiable on $\R$ with $f(0) = f(1) = f(2) = 0$. Prove that $f''(c) = 0$ for some $c\in(0,2)$.
 ::: solution
-By Rolle's theorem on $[0,1]$ and on $[1,2]$ there are $c_1\in(0,1)$ and $c_2\in(1,2)$ with $f'(c_1) = 0 = f'(c_2)$. The function $f'$ is differentiable on $\R$ (as $f$ is twice differentiable), hence continuous, so Rolle's theorem applies to $f'$ on $[c_1, c_2]$: there is $c\in(c_1, c_2)\subseteq(0,2)$ with $f''(c) = 0$. More generally, if $f$ has $n+1$ zeros then $f^{(n)}$ has a zero between the smallest and largest of them.
+By Rolle's theorem on $[0,1]$ and on $[1,2]$ there are $c_1\in(0,1)$ and $c_2\in(1,2)$ with $f'(c_1) = 0 = f'(c_2)$. The function $f'$ is differentiable on $\R$ (as $f$ is twice differentiable), hence continuous, so Rolle's theorem applies to $f'$ on $[c_1, c_2]$: there is $c\in(c_1, c_2)\subseteq(0,2)$ with $f''(c) = 0$. More generally, if an $n$ times differentiable function $f$ has $n+1$ zeros, then $f^{(n)}$ has a zero between the smallest and largest of them.
 :::
 :::
 

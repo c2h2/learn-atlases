@@ -56,7 +56,7 @@ $$
 ::: widget distribution
 dist: poisson
 params: lambda=1
-caption: $\operatorname{Poisson}(1)$分布，即随机置换的不动点个数的极限分布。$\Prob(N = 0) = \Prob(N = 1) = e^{-1}\approx0.368$，而出现三个或更多配对的概率只有约$8\%$。对于有$10$位客人的聚会，精确概率与这些值大约在小数点后六位以内一致。
+caption: $\operatorname{Poisson}(1)$分布，即随机置换的不动点个数的极限分布。$\Prob(N = 0) = \Prob(N = 1) = e^{-1}\approx0.368$，而出现三个或更多配对的概率只有约$8\%$。对于有$10$位客人的聚会，精确概率与这些值在小数点后四位上一致。
 :::
 
 示性变量还可以证实[[probability/discrete-random-variables]]一章中关于不放回抽样的论断。
@@ -321,7 +321,7 @@ $$
 :::
 
 ::: proof
-(1) *证明概要。*展开$e^{tX} = \sum_k(tX)^k/k!$。当$\lvert t\rvert<h$时，$\sum_k\lvert tX\rvert^k/k! = e^{\lvert tX\rvert}\le e^{tX} + e^{-tX}$，而后者的期望$M_X(t) + M_X(-t)$有限。这一控制使我们可以逐项取期望（由控制收敛定理，[[measure-theory/lebesgue-integral]]），从而得到该幂级数；幂级数的系数等于它在$0$处的各阶导数除以$k!$。
+(1) **证明概要。**展开$e^{tX} = \sum_k(tX)^k/k!$。当$\lvert t\rvert<h$时，$\sum_k\lvert tX\rvert^k/k! = e^{\lvert tX\rvert}\le e^{tX} + e^{-tX}$，而后者的期望$M_X(t) + M_X(-t)$有限。这一控制使我们可以逐项取期望（由控制收敛定理，[[measure-theory/lebesgue-integral]]），从而得到该幂级数；幂级数的系数等于它在$0$处的各阶导数除以$k!$。
 
 (2) $e^{t(X+Y)} = e^{tX}e^{tY}$是独立随机变量之积，所以由[[probability/joint-distributions#thm-product]]，它的期望为$M_X(t)M_Y(t)$。第二个公式就是$\E e^{t(aX+b)} = e^{bt}\E e^{(at)X}$。
 
@@ -408,7 +408,7 @@ $e^{\lambda(e^t-1)}$是$\operatorname{Poisson}(\lambda)$的矩母函数，这里
 ## 习题
 
 ::: exercise 一百颗骰子 {level=1 check="875/3"}
-掷一百颗均匀的骰子。求总点数的期望和方差。
+掷一百颗均匀的骰子。求总点数的期望和方差；请填写方差。
 ::: solution
 由线性性，期望为$100\times\tfrac72 = 350$。各颗骰子相互独立，所以方差相加：$100\times\tfrac{35}{12} = \tfrac{875}{3}\approx291.7$（标准差约为$17.1$）。
 :::
@@ -460,7 +460,7 @@ $e^{\lambda(e^t-1)}$是$\operatorname{Poisson}(\lambda)$的矩母函数，这里
 :::
 
 ::: exercise 一个灭绝概率 {level=3 check="0.4"}
-在一个分支过程中，每个个体分别以概率$0.2$、$0.3$和$0.5$生育$0$个、$1$个或$2$个孩子。求平均孩子数，以及由一个个体繁衍出的家系最终灭绝的概率。
+在一个分支过程中，每个个体分别以概率$0.2$、$0.3$和$0.5$生育$0$个、$1$个或$2$个孩子。求平均孩子数，以及由一个个体繁衍出的家系最终灭绝的概率；请填写这个概率。
 ::: solution
 $G(s) = 0.2 + 0.3s + 0.5s^2$，$m = G'(1) = 0.3 + 1 = 1.3>1$，所以灭绝不是必然的。解$G(s) = s$：$0.5s^2 - 0.7s + 0.2 = 0$，即$5s^2 - 7s + 2 = 0 = (5s - 2)(s - 1)$。两个根为$s = 0.4$和$s = 1$；由[[#thm-extinction]]，灭绝概率是较小的根$0.4$。
 :::

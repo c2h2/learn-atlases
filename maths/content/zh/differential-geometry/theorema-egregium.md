@@ -68,13 +68,13 @@ fy: -cos(s)*sinh(u)*cos(v) + sin(s)*cosh(u)*sin(v)
 fz: cos(s)*v + sin(s)*u
 u: -1.2, 1.2
 v: 0, 6.2832
-sliders: s=0:0:1.5708:0.02
+sliders: s=0:0:1.5708:0.015708
 color: gauss
 caption: [[#ex-catenoid-helicoid]]中的曲面族$\mathbf{z}_s$。把$s$从$0$移到$\pi/2$：正螺面的一圈既不拉伸也不撕裂，就弯曲成了悬链面。注意按高斯曲率所着的颜色：它在弯曲过程中保持不变——对每个$s$，在每个参数点处都有$K = -1/\cosh^4u$。这正是绝妙定理在起作用。
 :::
 
 ::: quiz
-把一张平展的纸在不拉伸的情况下卷成圆柱面。纸上一点处的哪些量保持不变？（选出所有正确的选项。）
+把一张平展的纸在不拉伸的情况下卷成圆柱面。下列哪些量保持不变？（选出所有正确的选项。）
 - [x] 画在纸上的曲线的长度
 - [ ] 平均曲率
 - [x] 高斯曲率
@@ -197,7 +197,7 @@ $$
 至于最后一个结论，设$\mathbf{x}$是$p$附近的一个曲面片，且$\phi$在其上是一一的。由[[#thm-isometry-fff]]，$\tilde{\mathbf{x}} = \phi\circ\mathbf{x}$与$\mathbf{x}$有相同的$E, F, G$，从而有相同的克里斯托费尔符号；再由高斯方程，它们在对应点处有相同的高斯曲率。
 :::
 
-这个证明揭示了定理的来源：第二基本形式只以组合$LN - M^2$的形式出现，而它恰好是$K$的分子。单独的$L$、$M$、$N$——以及随之而来的$\kappa_1$、$\kappa_2$和$H$——都不是内蕴的。$\mathbf{x}_{uuv} = \mathbf{x}_{uvu}$中$\mathbf{x}_u$和$\mathbf{n}$的系数，以及类似的恒等式$\mathbf{x}_{vvu} = \mathbf{x}_{uvv}$，还给出另外一些方程，我们将在本章末尾讨论。
+这个证明揭示了定理的来源：第二基本形式只以组合$LN - M^2$的形式出现，而它恰好是$K$的分子。单独的$L$、$M$、$N$——以及随之而来的$\kappa_1$、$\kappa_2$和$H$——都不是内蕴的。$\mathbf{x}_{uuv} = \mathbf{x}_{uvu}$中$\mathbf{x}_u$的系数并不给出新的信息，只给出同一类型的另一个公式（关于$FK$的）；而这个恒等式以及类似的恒等式$\mathbf{x}_{vvu} = \mathbf{x}_{uvv}$中$\mathbf{n}$的系数还给出另外一些方程，我们将在本章末尾讨论。
 
 ### 用度量表示K的公式
 
@@ -325,11 +325,11 @@ $$ {#eq-codazzi}
 高斯方程和科达齐-迈纳尔迪方程是曲面论的**相容性方程**：曲面片的六个函数$E, F, G, L, M, N$不能任意给定。反过来，这些方程也是唯一的障碍，这与曲率和挠率决定一条曲线（[[differential-geometry/curves#thm-fundamental-curves]]）完全类似。
 
 ::: theorem 博内定理 {#thm-bonnet}
-设$E, F, G, L, M, N$是连通、单连通开集$U\subseteq\R^2$上的光滑函数，满足$E > 0$，$G > 0$，$EG - F^2 > 0$，并且满足高斯方程[[#eq-gauss-equation]]和科达齐-迈纳尔迪方程[[#eq-codazzi]]。则存在曲面片$\mathbf{x}\colon U\to\R^3$，其第一基本形式和第二基本形式恰以这些函数为系数，并且这样的曲面片在相差$\R^3$的一个刚体运动的意义下是唯一的。
+设$E, F, G, L, M, N$是连通、单连通开集$U\subseteq\R^2$上的光滑函数，满足$E > 0$，$G > 0$，$EG - F^2 > 0$，并且满足高斯方程[[#eq-gauss-equation]]和科达齐-迈纳尔迪方程[[#eq-codazzi]]。则存在满足$\mathbf{x}_u\times\mathbf{x}_v\ne\mathbf{0}$的光滑映射$\mathbf{x}\colon U\to\R^3$，其第一基本形式和第二基本形式（取$\mathbf{n} = \mathbf{x}_u\times\mathbf{x}_v/\norm{\mathbf{x}_u\times\mathbf{x}_v}$）恰以这些函数为系数，并且这样的映射在相差$\R^3$的一个保持定向的刚体运动的意义下是唯一的。在$U$的每一点附近，这个映射都是曲面片，但它在整个$U$上未必是一一的：悬链面的系数在$U = \R^2$上给出映射$(\cosh u\cos v,\ \cosh u\sin v,\ u)$，它绕轴转了无穷多圈。
 :::
 
 ::: proof
-**证明概要。**唯一性：如果两个曲面片有相同的基本形式，就用一个刚体运动移动其中一个，使两者的标架$(\mathbf{x}_u, \mathbf{x}_v, \mathbf{n})$在某一点处重合。两个标架满足同一个线性偏微分方程组——即高斯公式和魏因加滕方程，其系数由$E, F, G, L, M, N$构成——所以它们处处相同，从而两个曲面片也相同。存在性：这个方程组可解的充要条件恰好是其混合偏导数相容，而这正是高斯方程和科达齐-迈纳尔迪方程所表达的；然后对标架积分就得到$\mathbf{x}$。见 do Carmo《曲线与曲面的微分几何》（*Differential Geometry of Curves and Surfaces*）§4-3及其附录。
+**证明概要。**唯一性：如果两个这样的映射有相同的基本形式，就用一个保持定向的刚体运动移动其中一个，使两者的标架$(\mathbf{x}_u, \mathbf{x}_v, \mathbf{n})$在某一点处重合（这是可以做到的，因为两个标架在该点处有相同的长度、夹角和定向；反射会改变$L, M, N$的符号）。两个标架满足同一个线性偏微分方程组——即高斯公式和魏因加滕方程，其系数由$E, F, G, L, M, N$构成——所以它们处处相同，从而两个映射也相同。存在性：这个方程组可解的充要条件恰好是其混合偏导数相容，而这正是高斯方程和科达齐-迈纳尔迪方程所表达的；然后对标架积分就得到$\mathbf{x}$。见 do Carmo《曲线与曲面的微分几何》（*Differential Geometry of Curves and Surfaces*）§4-3及其附录。
 :::
 
 ::: history
@@ -381,14 +381,14 @@ $\mathbf{x}_r = (\cos\theta, \sin\theta, 1)$，$\mathbf{x}_\theta = (-r\sin\thet
 :::
 
 ::: exercise 一个满足E = 1的度量 {level=2 check="-1"}
-某曲面有一个曲面片，其中$E = 1$，$F = 0$，$G = \cosh^2u$。求它的高斯曲率。若$G = \cos^2u$，结果又如何？
+某曲面有一个曲面片，其中$E = 1$，$F = 0$，$G = \cosh^2u$。求它的高斯曲率。若$G = \cos^2u$，结果又如何？（输入$G = \cosh^2u$时的曲率。）
 ::: solution
 当$E = 1$时，[[#eq-K-orthogonal]]化为$K = -(\sqrt G)_{uu}/\sqrt G$。对$\sqrt G = \cosh u$，$K = -\cosh u/\cosh u = -1$。对$\sqrt G = \cos u$，$K = \cos u/\cos u = 1$（这是单位球面，$u$为纬度）。
 :::
 :::
 
 ::: exercise 圆锥面是卷起来的扇形 {level=2 check="sqrt(2)*pi"}
-证明[[#exr-cone]]中的圆锥面（取$0 < \theta < 2\pi$）与平面上的一个扇形等距，并求这个扇形的圆心角。
+证明[[#exr-cone]]中的圆锥面（取$0 < \theta < 2\pi$）与平面上的一个扇形等距，并求这个扇形的圆心角（以弧度表示）。
 ::: hint
 在平面上寻找极坐标$(\rho, \psi)$，使$\rho = ar$，$\psi = b\theta$，且$d\rho^2 + \rho^2d\psi^2 = 2\,dr^2 + r^2\,d\theta^2$。
 :::
@@ -435,13 +435,13 @@ $$
 ::: exercise 曲率相同却不等距 {#exr-converse level=3}
 对$u > 0$，设$\mathbf{x}(u,v) = (u\cos v,\ u\sin v,\ \ln u)$，$\tilde{\mathbf{x}}(u,v) = (u\cos v,\ u\sin v,\ v)$。证明$K(u,v) = \tilde K(u,v) = -\dfrac{1}{(1+u^2)^2}$，但$\tilde{\mathbf{x}}\circ\mathbf{x}^{-1}$不是局部等距。
 ::: solution
-对$\mathbf{x}$：$\mathbf{x}_u = (\cos v, \sin v, 1/u)$，$\mathbf{x}_v = (-u\sin v, u\cos v, 0)$，所以$E = 1 + u^{-2}$，$F = 0$，$G = u^2$。它是旋转曲面$z = \ln r$；对$f = \ln\sqrt{x^2+y^2}$应用[[differential-geometry/surface-curvature#eq-K-graph]]（或用[[#eq-K-orthogonal]]），得$K = -\frac{1}{(1 + u^2)^2}$。对正螺面，$E = 1$，$F = 0$，$G = 1 + u^2$，且$K = -(\sqrt G)_{uu}/\sqrt G = -\frac{(1+u^2)^{-3/2}}{(1+u^2)^{1/2}} = -\frac{1}{(1+u^2)^2}$。所以两者的曲率在对应点处相等。但$E\ne\tilde E$（且$G\ne\tilde G$），所以由[[#thm-isometry-fff]]，对应$\tilde{\mathbf{x}}\circ\mathbf{x}^{-1}$不保持切向量$\mathbf{x}_u$的长度：它不是局部等距。（事实上，利用$K$的等值线作更精细的论证可以证明，在这些点附近不存在把一个曲面映到另一个曲面上的局部等距；见 do Carmo §4-3。）
+对$\mathbf{x}$：$\mathbf{x}_u = (\cos v, \sin v, 1/u)$，$\mathbf{x}_v = (-u\sin v, u\cos v, 0)$，所以$E = 1 + u^{-2}$，$F = 0$，$G = u^2$。它是旋转曲面$z = \ln r$；对$f = \ln\sqrt{x^2+y^2}$应用[[differential-geometry/surface-curvature#eq-K-graph]]（或用[[#eq-K-orthogonal]]），得$K = -\frac{1}{(1 + u^2)^2}$。对正螺面，$E = 1$，$F = 0$，$G = 1 + u^2$，且$K = -(\sqrt G)_{uu}/\sqrt G = -\frac{(1+u^2)^{-3/2}}{(1+u^2)^{1/2}} = -\frac{1}{(1+u^2)^2}$。所以两者的曲率在对应点处相等。但$E\ne\tilde E$（且$G\ne\tilde G$），所以由[[#thm-isometry-fff]]，对应$\tilde{\mathbf{x}}\circ\mathbf{x}^{-1}$不保持切向量$\mathbf{x}_u$的长度：它不是局部等距。（事实上，根本不存在把一个曲面上某点的邻域映到另一个曲面上某点的邻域上的局部等距。这样的映射会保持$K$，而在两个曲面上它都是$u$的同一个严格递增函数，因此这个映射也保持$u$。但正螺面上一条直母线从$u = a$到$u = b$的线段长为$b - a$，而在第一个曲面上，从$u = a$到$u = b$的任何曲线的长度都至少是$\int_a^b\sqrt{E}\,du = \int_a^b\sqrt{1 + u^{-2}}\,du > b - a$。）
 :::
 :::
 
 ::: exercise 可展即平坦 {level=3}
 设$\mathbf{x}(u,v) = \boldsymbol\gamma(u) + v\,\boldsymbol\delta(u)$是一个直纹面，其中$\boldsymbol\delta$是沿曲线$\boldsymbol\gamma$的单位向量场。证明$M = \mathbf{n}\cdot\boldsymbol\delta'$，$N = 0$，从而$K = -\dfrac{M^2}{EG - F^2}\le0$。由此推出：直纹面满足$K\equiv0$当且仅当处处有$\det(\boldsymbol\gamma', \boldsymbol\delta, \boldsymbol\delta') = 0$。
 ::: solution
-$\mathbf{x}_v = \boldsymbol\delta$，所以$\mathbf{x}_{vv} = \mathbf{0}$，$N = 0$；$\mathbf{x}_{uv} = \boldsymbol\delta'$，所以$M = \mathbf{n}\cdot\boldsymbol\delta'$。于是$K = \frac{LN - M^2}{EG - F^2} = -\frac{M^2}{EG - F^2}\le0$，等号成立当且仅当$\mathbf{n}\cdot\boldsymbol\delta' = 0$。由于$\mathbf{n}$平行于$\mathbf{x}_u\times\mathbf{x}_v = (\boldsymbol\gamma' + v\boldsymbol\delta')\times\boldsymbol\delta$，我们有$(\mathbf{x}_u\times\mathbf{x}_v)\cdot\boldsymbol\delta' = \det(\boldsymbol\gamma' + v\boldsymbol\delta',\ \boldsymbol\delta,\ \boldsymbol\delta') = \det(\boldsymbol\gamma', \boldsymbol\delta, \boldsymbol\delta')$，因为$v\boldsymbol\delta'$项给出的是一个有两列相同的行列式。所以$K\equiv0$当且仅当$\det(\boldsymbol\gamma', \boldsymbol\delta, \boldsymbol\delta') = 0$。对柱面（$\boldsymbol\delta$为常向量）和锥面（$\boldsymbol\gamma$为常向量），这显然成立；对正螺面，取$\boldsymbol\gamma = (0,0,u)$，$\boldsymbol\delta = (\cos u, \sin u, 0)$，行列式为$\det\bigl((0,0,1), (\cos u,\sin u,0), (-\sin u,\cos u,0)\bigr) = 1\ne0$，所以正螺面不是可展曲面。
+$\mathbf{x}_v = \boldsymbol\delta$，所以$\mathbf{x}_{vv} = \mathbf{0}$，$N = 0$；$\mathbf{x}_{uv} = \boldsymbol\delta'$，所以$M = \mathbf{n}\cdot\boldsymbol\delta'$。于是$K = \frac{LN - M^2}{EG - F^2} = -\frac{M^2}{EG - F^2}\le0$，等号成立当且仅当$\mathbf{n}\cdot\boldsymbol\delta' = 0$。由于$\mathbf{n}$平行于$\mathbf{x}_u\times\mathbf{x}_v = (\boldsymbol\gamma' + v\boldsymbol\delta')\times\boldsymbol\delta$，我们有$(\mathbf{x}_u\times\mathbf{x}_v)\cdot\boldsymbol\delta' = \det(\boldsymbol\gamma' + v\boldsymbol\delta',\ \boldsymbol\delta,\ \boldsymbol\delta') = \det(\boldsymbol\gamma', \boldsymbol\delta, \boldsymbol\delta')$，因为$v\boldsymbol\delta'$项给出的是一个有两列相同的行列式。所以$K\equiv0$当且仅当$\det(\boldsymbol\gamma', \boldsymbol\delta, \boldsymbol\delta') = 0$。对柱面（$\boldsymbol\delta$为常向量）和锥面（$\boldsymbol\gamma$为常向量），这显然成立；对正螺面，取$\boldsymbol\gamma = (0,0,u)$，$\boldsymbol\delta = (\cos u, \sin u, 0)$，行列式为$\det\bigl((0,0,1),\allowbreak (\cos u,\sin u,0),\allowbreak (-\sin u,\cos u,0)\bigr) = 1\ne0$，所以正螺面不是可展曲面。
 :::
 :::

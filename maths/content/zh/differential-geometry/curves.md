@@ -144,7 +144,7 @@ t: 0, 2pi
 at: 0.5
 x: -3.5, 3.5
 y: -2.5, 2.5
-caption: 椭圆$(2\cos t, \sin t)$及其密切圆：密切圆是以$\boldsymbol\gamma + \frac{1}{\kappa}\mathbf{n}_s$为圆心、半径为$1/\kappa$、与曲线拟合得最好的圆。移动该点：在长轴的端点处，圆的半径为$\tfrac12$（$\kappa = 2$）；在短轴的端点处，半径为$4$（$\kappa = \tfrac14$）。这四个极值点就是顶点；四顶点定理指出，每条简单闭曲线至少有四个顶点。
+caption: 椭圆$(2\cos t, \sin t)$及其密切圆：密切圆是以$\boldsymbol\gamma + \frac{1}{\kappa}\mathbf{n}_s$为圆心、半径为$1/\kappa$、与曲线拟合得最好的圆。移动该点：在长轴的端点处，圆的半径为$\tfrac12$（$\kappa = 2$）；在短轴的端点处，半径为$4$（$\kappa = \tfrac14$）。这四个极值点就是顶点；四顶点定理指出，每条简单闭平面曲线至少有四个顶点。
 :::
 
 有向曲率完全决定了一条平面曲线。
@@ -379,7 +379,7 @@ $\abs{\tau} = \norm{\mathbf{B}'}$，而$\mathbf{B}$是密切平面的法向量�
 令$\mathbf{c}(s) = \boldsymbol\gamma(s) + \frac1\kappa\mathbf{N}(s)$。由弗勒内公式，$\mathbf{c}' = \mathbf{T} + \frac1\kappa(-\kappa\mathbf{T} + 0\cdot\mathbf{B}) = \mathbf{0}$，所以$\mathbf{c}$是一个定点，且$\norm{\boldsymbol\gamma - \mathbf{c}} = 1/\kappa$。由[[#thm-planar]]，曲线还位于一个平面内，而球面与平面交于一个圆——这里是以$\mathbf{c}$为圆心、半径为$1/\kappa$的圆。
 :::
 
-对任何曲线，点$\boldsymbol\gamma + \frac1\kappa\mathbf{N}$称为曲线在该点的**曲率中心**；上面的证明表明，只有对圆，它才保持不动。
+对任何$\kappa > 0$的曲线，点$\boldsymbol\gamma + \frac1\kappa\mathbf{N}$称为曲线在该点的**曲率中心**。对一般的曲线，同样的计算给出$\mathbf{c}' = -(\kappa'/\kappa^2)\mathbf{N} + (\tau/\kappa)\mathbf{B}$，所以只有对圆，曲率中心才保持不动。
 
 现在可以证明核心定理了：曲率和挠率构成一组完全不变量。
 
@@ -436,12 +436,12 @@ caption: 三叶结及其弗勒内标架。注意观察副法向量：它随着�
 :::
 
 ::: history
-最早系统研究空间曲线的是克莱罗（Alexis Clairaut），他在《关于双重曲率曲线的研究》（*Recherches sur les courbes à double courbure*，1731）中把空间曲线看作曲面的交线，并提出了空间曲线同时沿两种方式弯曲的思想。整个18世纪，欧拉（Euler）以及蒙日（Gaspard Monge）和他的学派都研究过曲率和密切平面；蒙日的学生兰克雷（Michel-Ange Lancret）在19世纪初证明：切线与一个固定方向成定角的曲线，恰好就是$\tau/\kappa$为常数的曲线（[[#exr-lancret]]）。[[#thm-frenet]]中的公式由两人独立发现：一位是弗勒内（Jean Frédéric Frenet），见于他1847年在图卢兹完成的博士论文（1852年发表）；另一位是塞雷（Joseph Alfred Serret），他于1851年发表了这组公式。借助随几何对象一起运动的标架来研究该对象，这一思想由达布（Gaston Darboux）在他的曲面讲义（1887–1896）中发展成一种一般方法，并由嘉当（Élie Cartan）在20世纪进一步发展；嘉当的**活动标架法**至今仍是微分几何的基本工具。
+最早系统研究空间曲线的是克莱罗（Alexis Clairaut），他在《关于双重曲率曲线的研究》（*Recherches sur les courbes à double courbure*，1731）中把空间曲线看作曲面的交线，并提出了空间曲线同时沿两种方式弯曲的思想。整个18世纪，欧拉（Euler）以及蒙日（Gaspard Monge）和他的学派都研究过曲率和密切平面；蒙日的学生兰克雷（Michel-Ange Lancret）于1802年提出：切线与一个固定方向成定角的曲线，恰好就是$\tau/\kappa$为常数的曲线（[[#exr-lancret]]）；第一个证明通常归功于圣维南（Barré de Saint-Venant，1845）。[[#thm-frenet]]中的公式由两人独立发现：一位是弗勒内（Jean Frédéric Frenet），见于他1847年在图卢兹完成的博士论文（1852年发表）；另一位是塞雷（Joseph Alfred Serret），他于1851年发表了这组公式。借助随几何对象一起运动的标架来研究该对象，这一思想由达布（Gaston Darboux）在他的曲面讲义（1887–1896）中发展成一种一般方法，并由嘉当（Élie Cartan）在20世纪进一步发展；嘉当的**活动标架法**至今仍是微分几何的基本工具。
 :::
 
 ## 后续内容
 
-在本课程的其余部分，曲线会不断再次出现。位于曲面上的曲线，其曲率向量可以分解为两部分：垂直于曲面的部分由第二基本形式度量（[[differential-geometry/surface-curvature]]），与曲面相切的部分则是测地曲率；测地曲率为零的曲线就是测地线，即曲面上“最直”的曲线（[[differential-geometry/geodesics-gauss-bonnet]]）。有向曲率沿闭平面曲线的积分（对简单闭环为$2\pi$）是高斯-博内定理在一维情形的前身。[[#thm-fundamental-curves]]的存在性证明是通过求解微分方程来构造几何对象的第一个例子（[[ode/linear-systems]]），而像三叶结这样打了结的曲线，则用[[topology/fundamental-group]]中的代数拓扑来分类。
+在本课程的其余部分，曲线会不断再次出现。位于曲面上的曲线，其曲率向量可以分解为两部分：垂直于曲面的部分由第二基本形式度量（[[differential-geometry/surface-curvature]]），与曲面相切的部分则是测地曲率；测地曲率为零的曲线就是测地线，即曲面上“最直”的曲线（[[differential-geometry/geodesics-gauss-bonnet]]）。有向曲率沿闭平面曲线的积分（对简单闭环为$\pm2\pi$）是高斯-博内定理在一维情形的前身。[[#thm-fundamental-curves]]的存在性证明是通过求解微分方程来构造几何对象的第一个例子（[[ode/linear-systems]]），而像三叶结这样打了结的曲线，则用代数拓扑来研究：三叶结周围空间的基本群（[[topology/fundamental-group]]）与一个未打结的圆周围空间的基本群不同。
 
 ::: summary
 - 若$\boldsymbol\gamma'\ne\mathbf{0}$，参数曲线就是正则的；恰好正则曲线可以用弧长重新参数化，并且这种参数化在相差$s\mapsto\pm s + c$的意义下唯一（[[#prop-unit-speed]]）。

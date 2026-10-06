@@ -96,10 +96,12 @@ Q: sin(y)
 x: -3.5, 3.5
 y: -3.5, 3.5
 shade: divergence
-cx: cos(t)
-cy: sin(t)
+cx: a + cos(t)
+cy: b + sin(t)
 t: 0, 2pi
-caption: The field $(\sin x, \sin y)$, shaded by its divergence $\cos x + \cos y$. Near the origin the arrows spread apart (positive divergence: a source region); near the corners $(\pm\pi, \pm\pi)$ they converge (negative divergence: a sink region). The flux out of the unit circle is positive, because it equals the integral of the divergence over the disc. Drag the circle into a sink region and the flux becomes negative.
+mode: flux
+sliders: a=0:-2.4:2.4:0.1; b=0:-2.4:2.4:0.1
+caption: The field $(\sin x, \sin y)$, shaded by its divergence $\cos x + \cos y$. Near the origin the arrows spread apart (positive divergence: a source region); near the corners $(\pm\pi, \pm\pi)$ they converge (negative divergence: a sink region). The flux out of the unit circle is positive, because it equals the integral of the divergence over the disc. Move the circle into a sink region with $a$ and $b$ and the flux becomes negative.
 :::
 
 ::: widget vectorfield
@@ -109,10 +111,11 @@ x: -2, 2
 y: -2, 2
 shade: curl
 streamlines: true
-cx: 1 + 0.5*cos(t)
-cy: 0.5*sin(t)
+cx: a + 0.5*cos(t)
+cy: b + 0.5*sin(t)
 t: 0, 2pi
-caption: A shear flow $(y, 0)$: every streamline is a straight horizontal line, yet the curl is $-1$ everywhere. A small paddle wheel placed in the flow turns clockwise, because the water above it moves faster (to the right) than the water below. The circulation around any circle of radius $\tfrac12$ is $-\pi/4$, the curl times the area — wherever you put the circle. Curl measures local spinning, not curved streamlines.
+sliders: a=1:-1.4:1.4:0.1; b=0:-1.4:1.4:0.1
+caption: A shear flow $(y, 0)$: every streamline is a straight horizontal line, yet the curl is $-1$ everywhere. A small paddle wheel placed in the flow turns clockwise, because the water above it moves faster (to the right) than the water below. The circulation around any circle of radius $\tfrac12$ is $-\pi/4$, the curl times the area — wherever you put the circle (move it with $a$ and $b$). Curl measures local spinning, not curved streamlines.
 :::
 
 ## Stokes' theorem
@@ -275,7 +278,7 @@ $$
 \iint_S Pn_1\,dS = \iiint_E P_x\,dV, \qquad \iint_S Qn_2\,dS = \iiint_E Q_y\,dV, \qquad \iint_S Rn_3\,dS = \iiint_E R_z\,dV .
 $$
 
-We prove the third; the other two are the same with the roles of the variables permuted, using the other two descriptions of $E$. Use the description $E = \set{(x,y)\in D,\ u_1(x,y)\le z\le u_2(x,y)}$. By Fubini's theorem and the fundamental theorem of calculus in $z$,
+We prove the third; the other two are the same with the roles of the variables permuted, using the other two descriptions of $E$. Use the first description: $E$ consists of the points $(x,y,z)$ with $(x,y)\in D$ and $u_1(x,y)\le z\le u_2(x,y)$. By Fubini's theorem and the fundamental theorem of calculus in $z$,
 
 $$
 \iiint_E R_z\,dV = \iint_D\left(\int_{u_1(x,y)}^{u_2(x,y)}R_z\,dz\right)dA = \iint_D\bigl[R(x,y,u_2(x,y)) - R(x,y,u_1(x,y))\bigr]\,dA .
@@ -376,7 +379,7 @@ The theorems of this course share a single form:
 In each case, integrating a derivative over a region equals integrating the original object over the boundary, with orientations matched. Notice also the chain gradient $\to$ curl $\to$ divergence, with $\nabla\times\nabla f = \mathbf{0}$ and $\nabla\cdot(\nabla\times\mathbf{F}) = 0$: applying two successive derivatives always gives zero, matching the fact that the boundary of a region has no boundary of its own.
 
 ::: remark The general Stokes theorem
-In the language of differential forms all five statements are one: for an oriented $k$-dimensional manifold $M$ with boundary $\partial M$ and a $(k-1)$-form $\omega$,
+In the language of differential forms all five statements are one: for a compact oriented $k$-dimensional manifold $M$ with boundary $\partial M$ and a $(k-1)$-form $\omega$,
 
 $$
 \int_M d\omega = \int_{\partial M}\omega .
@@ -386,12 +389,12 @@ Here $d$ is the exterior derivative, which in $\R^3$ acts as the gradient on fun
 :::
 
 ::: history
-Special cases of the divergence theorem appear in the work of Lagrange (1762) and Gauss (1813) on gravitation, and the theorem was proved in general form by Mikhail Ostrogradsky, who presented it to the Paris Academy in 1826 and published it in St Petersburg in 1831; the theorem is often called the Gauss–Ostrogradsky theorem. George Green's 1828 essay contained closely related identities. The theorem now called Stokes' theorem first appeared in a letter from William Thomson (later Lord Kelvin) to George Gabriel Stokes in July 1850; Stokes set it as a question in the Smith's Prize examination at Cambridge in 1854, and James Clerk Maxwell, who sat that examination, attributed it to Stokes in his *Treatise on Electricity and Magnetism* (1873), where the theorems became central to physics. The unifying formula $\int_M d\omega = \int_{\partial M}\omega$ emerged in the early twentieth century from Élie Cartan's calculus of differential forms.
+Special cases of the divergence theorem appear in the work of Lagrange (1762, on the propagation of sound) and Gauss (1813, on gravitational attraction), and the theorem was proved in general form by Mikhail Ostrogradsky, who presented it to the Paris Academy in 1826 and published it in St Petersburg in 1831; the theorem is often called the Gauss–Ostrogradsky theorem. George Green's 1828 essay contained closely related identities. The theorem now called Stokes' theorem first appeared in a letter from William Thomson (later Lord Kelvin) to George Gabriel Stokes in July 1850; Stokes set it as a question in the Smith's Prize examination at Cambridge in 1854, and James Clerk Maxwell, who sat that examination, attributed it to Stokes in his *Treatise on Electricity and Magnetism* (1873), where the theorems became central to physics. The unifying formula $\int_M d\omega = \int_{\partial M}\omega$ emerged in the early twentieth century from Élie Cartan's calculus of differential forms.
 :::
 
 ## Where this leads
 
-Stokes' and Gauss's theorems are the bridge between the integral and differential forms of the laws of physics: Maxwell's equations, the equations of fluid dynamics, and conservation laws in general ([[pde/heat-equation]], [[pde/wave-equation]], [[pde/laplace-equation]]). In complex analysis, Green's theorem applied to the real and imaginary parts of an analytic function proves Cauchy's theorem ([[complex-analysis/cauchy-theorem]]). In differential geometry, the Gauss–Bonnet theorem ([[differential-geometry/geodesics-gauss-bonnet]]) is proved by applying Green's theorem in coordinates on a surface. And the observation that curl-free fields need not be gradients when the domain has holes is the beginning of de Rham cohomology, which measures the holes of a space with calculus ([[topology/fundamental-group]]).
+Stokes' and Gauss's theorems are the bridge between the integral and differential forms of the laws of physics: Maxwell's equations, the equations of fluid dynamics, and conservation laws in general ([[pde/heat-equation]], [[pde/wave-equation]], [[pde/laplace-equation]]). In complex analysis, Green's theorem applied to the real and imaginary parts of an analytic function proves Cauchy's theorem ([[complex-analysis/cauchy-theorem]]). In differential geometry, the Gauss–Bonnet theorem ([[differential-geometry/geodesics-gauss-bonnet]]) is proved by applying Green's theorem in coordinates on a surface. And the observation that curl-free fields need not be gradients when the domain has holes is the beginning of de Rham cohomology, which measures the holes of a space with calculus, just as the fundamental group ([[topology/fundamental-group]]) measures them with loops.
 
 ::: summary
 - $\nabla\cdot\mathbf{F} = P_x + Q_y + R_z$ measures expansion (outward flux per unit volume, [[#thm-div-density]]); $\nabla\times\mathbf{F} = (R_y - Q_z,\ P_z - R_x,\ Q_x - P_y)$ measures rotation (circulation per unit area, [[#thm-curl-density]]).
@@ -415,7 +418,7 @@ $\nabla\cdot\mathbf{F} = 2xy + z + 2xz$, which is $2 + 1 + 2 = 5$ at $(1,1,1)$ (
 ::: exercise A curl-free field {level=1}
 Show that $\mathbf{F} = (yz,\ xz,\ xy)$ has zero curl, and find a function $f$ with $\nabla f = \mathbf{F}$.
 ::: solution
-$\nabla\times\mathbf{F} = (x - x,\ y - y,\ z - z) = \mathbf{0}$. Since $\R^3$ is star-shaped, $\mathbf{F}$ is conservative ([[multivariable/line-integrals#thm-star-shaped]]), and $f = xyz$ works: $\nabla(xyz) = (yz, xz, xy)$.
+$\nabla\times\mathbf{F} = (x - x,\ y - y,\ z - z) = \mathbf{0}$. Since $\R^3$ is star-shaped, $\mathbf{F}$ is conservative ([[multivariable/line-integrals#exr-star-3d]]), and $f = xyz$ works: $\nabla(xyz) = (yz, xz, xy)$.
 :::
 :::
 

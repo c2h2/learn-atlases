@@ -315,7 +315,7 @@ Since $\abs{\psi} < 1$, the term $\psi^k/\sqrt5$ is tiny ($F_k$ is the nearest i
 :::
 :::
 
-The introductory example is a **Markov chain**: the columns of $A$ are non-negative and sum to $1$, so the total population is conserved. Such a matrix always has the eigenvalue $1$ (the rows of $A - I$ sum to zero, so $A - I$ is singular), and an eigenvector for $1$ with entries summing to $1$ is a **steady state**. For the two towns it is $(0.6, 0.4)$. The figure below shows the same chain in the convention of probability theory, where the transition matrix acts on row vectors and so is the transpose of $A$.
+The introductory example is a **Markov chain**: the columns of $A$ are non-negative and sum to $1$, so the total population is conserved. Such a matrix always has the eigenvalue $1$ (each column of $A - I$ sums to $0$, so the rows of $A - I$ add up to the zero row and $A - I$ is singular), and an eigenvector for $1$ with entries summing to $1$ is a **steady state**. For the two towns it is $(0.6, 0.4)$. The figure below shows the same chain in the convention of probability theory, where the transition matrix acts on row vectors and so is the transpose of $A$.
 
 ::: widget markov
 matrix: 0.8,0.2; 0.3,0.7
@@ -331,7 +331,7 @@ A random surfer on the web follows a random link from each page (and occasionall
 
 ## Complex eigenvalues
 
-A real matrix can have complex eigenvalues, and they come in conjugate pairs: $p_A$ has real coefficients, so if $p_A(\lambda) = 0$ then $p_A(\bar\lambda) = \overline{p_A(\lambda)} = 0$; and conjugating $A\mathbf{v} = \lambda\mathbf{v}$ gives $A\bar{\mathbf{v}} = \bar\lambda\bar{\mathbf{v}}$. Over $\C$ the rotation $R_\theta$ of [[linear-algebra/linear-maps#eq-rotation]] has eigenvalues $e^{\pm i\theta} = \cos\theta\pm i\sin\theta$, and it is diagonalisable over $\C$ but not over $\R$. In real terms, a pair of complex eigenvalues means rotation combined with scaling.
+A real matrix can have complex eigenvalues, and they come in conjugate pairs: $p_A$ has real coefficients, so if $p_A(\lambda) = 0$ then $p_A(\bar\lambda) = \overline{p_A(\lambda)} = 0$; and conjugating $A\mathbf{v} = \lambda\mathbf{v}$ gives $A\bar{\mathbf{v}} = \bar\lambda\bar{\mathbf{v}}$. Over $\C$ the rotation $R_\theta$ of [[linear-algebra/linear-maps#eq-rotation]] has eigenvalues $e^{\pm i\theta} = \cos\theta\pm i\sin\theta$; when $\theta$ is not a multiple of $\pi$ these are not real, and $R_\theta$ is diagonalisable over $\C$ but not over $\R$. In real terms, a pair of complex eigenvalues means rotation combined with scaling.
 
 ::: proposition Rotation–scaling form {#prop-rotation-scaling}
 Let $A$ be a real $2\times 2$ matrix with a non-real eigenvalue $\lambda = a - bi$ ($b\neq 0$) and eigenvector $\mathbf{v} = \mathbf{x} + i\mathbf{y}$ with $\mathbf{x}, \mathbf{y}\in\R^2$. Then $P = (\mathbf{x}\ \ \mathbf{y})$ is invertible and
@@ -399,7 +399,7 @@ $A - 2I = \begin{pmatrix}1&2\\3&6\end{pmatrix}$ has determinant $6 - 6 = 0$, so 
 :::
 
 ::: exercise Determinant from eigenvalues {level=1 check="-8"}
-A $3\times 3$ matrix has eigenvalues $2$, $-1$ and $4$. What is its determinant? What is its trace?
+A $3\times 3$ matrix has eigenvalues $2$, $-1$ and $4$. Find its trace and its determinant. What is the determinant?
 ::: solution
 By [[#prop-trace-det]], $\det A = 2\cdot(-1)\cdot 4 = -8$ and $\tr A = 2 - 1 + 4 = 5$.
 :::

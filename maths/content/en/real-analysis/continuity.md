@@ -110,7 +110,7 @@ $\abs{x\,D(x) - 0} \le \abs{x}$ and $\abs{h(x) - 0} \le \abs{x}$, so $\delta = \
 
 ## Continuous functions on closed bounded intervals
 
-The next three theorems are the reason continuity matters. Each fails if the interval is not closed, not bounded, or the function not continuous; each is proved by combining continuity with completeness, in the form of the Bolzano–Weierstrass theorem ([[real-analysis/sequences#thm-bw]]) or the supremum.
+The next three theorems are the reason continuity matters. All three fail if the function is not continuous; the first two also fail if the interval is not closed or not bounded, whereas the third needs only that the domain be an interval (over $\Q$ it fails, as we saw). Each is proved by combining continuity with completeness, in the form of the Bolzano–Weierstrass theorem ([[real-analysis/sequences#thm-bw]]) or the supremum.
 
 ::: theorem Boundedness theorem {#thm-bounded}
 A continuous function $f\colon [a, b] \to \R$ is bounded.
@@ -180,7 +180,7 @@ x: 0.05, 2.2
 y: 0, 12
 sliders: c=1:0.1:2:0.01; e=0.5:0.1:1:0.05
 labels: 1/x; 1/c+\varepsilon; 1/c-\varepsilon
-caption: The band of half-width $\eps$ around the height $1/c$. The graph of $1/x$ lies inside the band only for $x$ in a short interval around $c$, of length roughly $2\eps c^2$. Keep $\eps$ fixed and slide $c$ towards $0$: the admissible interval shrinks to nothing, so no single $\delta$ serves every point. This is the failure of uniform continuity.
+caption: The band of half-width $\eps$ (the slider $e$) around the height $1/c$. The graph of $1/x$ lies inside the band only for $x$ in a short interval around $c$, of length roughly $2\eps c^2$. Keep $\eps$ fixed and slide $c$ towards $0$: the admissible interval shrinks to nothing, so no single $\delta$ serves every point. This is the failure of uniform continuity.
 :::
 
 ::: definition Uniform continuity {#def-uniform-continuity}
@@ -285,7 +285,7 @@ The theorems of this chapter are the foundation of the next two. The mean value 
 - $\lim_{x\to c}f(x) = L$ if and only if $f(x_n) \to L$ for every sequence $x_n \to c$ with $x_n \ne c$ ([[#thm-sequential-limit]]); two sequences with different limits prove that a limit does not exist.
 - $f$ is continuous at $c$ when $f(x_n) \to f(c)$ for all $x_n \to c$; sums, products, quotients and compositions of continuous functions are continuous.
 - Dirichlet's function is continuous nowhere; Thomae's function is continuous exactly at the irrationals.
-- On a closed bounded interval a continuous function is bounded, attains its maximum and minimum ([[#thm-evt]]), takes every intermediate value ([[#thm-ivt]]), and is uniformly continuous ([[#thm-heine-cantor]]). Each conclusion can fail on open or unbounded intervals.
+- On a closed bounded interval a continuous function is bounded, attains its maximum and minimum ([[#thm-evt]]), takes every intermediate value ([[#thm-ivt]]), and is uniformly continuous ([[#thm-heine-cantor]]). All but the intermediate value property can fail on open or unbounded intervals.
 - Uniform continuity: one $\delta$ for the whole domain. To disprove it, find $x_n, y_n$ with $\abs{x_n - y_n} \to 0$ but $\abs{f(x_n) - f(y_n)} \ge \eps_0$.
 - Monotone functions have one-sided limits everywhere and at most countably many jumps; continuous strictly monotone functions have continuous inverses.
 :::

@@ -34,6 +34,8 @@ fx: 0.5 + a*cos(t)
 fy: a*sin(t)
 t: 0, 2pi
 sliders: a=1:0.3:2:0.1
+x: -1.7, 2.7
+y: -2.2, 2.2
 equal: true
 trace: true
 caption: 沿逆时针方向描出的圆周$\gamma(t) = \tfrac12 + ae^{it}$及其速度向量$\gamma'(t) = iae^{it}$。乘以$i$把半径向量旋转一个直角，所以速度总是与圆周相切，其长度是恒定的速率$a$。用滑块改变半径：路径的长度$2\pi a$等于时间（$2\pi$）乘以速率。
@@ -185,7 +187,7 @@ f: 1/z
 center: 0.3, 0.2
 radius: 1
 poles: 0, 0
-caption: $1/z$沿一个可移动圆周的数值积分，并与$2\pi i$乘以圆内的留数作比较。拖动圆周并改变其大小：只要圆周包围原点，无论圆心和半径如何，积分都恰好是$2\pi i \approx 6.283i$；一旦原点位于圆外，积分就降为$0$。一般性地证明这一点是[[complex-analysis/cauchy-theorem]]一章的任务。
+caption: $1/z$沿一个可移动圆周的数值积分，并与$2\pi i$乘以圆内的留数作比较（$1/z$只有一个留数，即原点处的$1$；留数的定义见[[complex-analysis/residues]]一章）。拖动圆周并改变其大小：只要圆周包围原点，无论圆心和半径如何，积分都恰好是$2\pi i \approx 6.283i$；一旦原点位于圆外，积分就降为$0$。一般性地证明这一点是[[complex-analysis/cauchy-theorem]]一章的任务。
 :::
 
 ## ML不等式

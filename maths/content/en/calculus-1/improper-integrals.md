@@ -267,7 +267,7 @@ $$
 
 As $\delta\to0^+$ and $t\to\infty$, the boundary terms $\delta^se^{-\delta}$ and $t^se^{-t}$ tend to $0$, so $\Gamma(s+1) = s\,\Gamma(s)$.
 
-*Factorials.* $\Gamma(1) = \int_0^\infty e^{-x}\,dx = 1$, and then $\Gamma(2) = 1\cdot\Gamma(1) = 1$, $\Gamma(3) = 2\Gamma(2) = 2$, and by induction $\Gamma(n+1) = n\cdot(n-1)! = n!$. The gamma function interpolates the factorials smoothly; for instance $\Gamma\bigl(\frac12\bigr) = \sqrt\pi$, so "$\bigl(-\frac12\bigr)! = \sqrt\pi$". It appears throughout probability and statistics ([[probability/continuous-random-variables]]).
+*Factorials.* $\Gamma(1) = \int_0^\infty e^{-x}\,dx = 1$, and then $\Gamma(2) = 1\cdot\Gamma(1) = 1$, $\Gamma(3) = 2\Gamma(2) = 2$, and by induction $\Gamma(n+1) = n\cdot(n-1)! = n!$. The gamma function interpolates the factorials smoothly; for instance $\Gamma\bigl(\frac12\bigr) = \sqrt\pi$, so "$\bigl(-\frac12\bigr)! = \sqrt\pi$". It appears throughout probability and statistics, for instance in the gamma and chi-square densities ([[probability/joint-distributions]], [[statistics/sampling]]).
 
 The value at $\frac12$ comes from the Gaussian integral: substituting $x = u^2$ (so $dx = 2u\,du$ and $x^{-1/2} = u^{-1}$) gives $\Gamma\bigl(\frac12\bigr) = \int_0^\infty x^{-1/2}e^{-x}\,dx = 2\int_0^\infty e^{-u^2}\,du = 2\cdot\frac{\sqrt\pi}{2} = \sqrt\pi$, using the value of $\int_0^\infty e^{-u^2}\,du$ quoted in [[#ex-comparison]].
 :::

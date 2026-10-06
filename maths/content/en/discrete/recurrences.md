@@ -204,12 +204,12 @@ $$
 :::
 
 ::: widget sequence
-a: (phi^(n+1) - (1-phi)^(n+1))/(phi^n - (1-phi)^n)
+a: phi*(1 - ((1-phi)/phi)^(n+1))/(1 - ((1-phi)/phi)^n)
 N: 20
 limit: phi
 epsilon: 0.01
 y: 0.9, 2.1
-caption: The ratios $F_{n+1}/F_n = 1, 2, 1.5, 1.667, 1.6, 1.625, \dots$ (computed from Binet's formula, since $1 - \varphi = \psi$). They alternate above and below $\varphi \approx 1.618$, and the error shrinks by a factor of about $\varphi^2 \approx 2.6$ at each step because it is controlled by $(\psi/\varphi)^n$. Shrink $\eps$ and see how $N$ grows — only logarithmically in $1/\eps$.
+caption: The ratios $F_{n+1}/F_n = 1, 2, 1.5, 1.667, 1.6, 1.625, \dots$, computed from Binet's formula in the form $\varphi(1 - q^{n+1})/(1 - q^n)$ with $q = \psi/\varphi$ and $\psi = 1 - \varphi$, as in the proof above. They alternate above and below $\varphi \approx 1.618$, and the error shrinks by a factor of about $\varphi^2 \approx 2.6$ at each step because it is controlled by $(\psi/\varphi)^n$. Shrink $\eps$ and see how $N$ grows — only logarithmically in $1/\eps$.
 :::
 
 ::: quiz
@@ -365,7 +365,7 @@ The Fibonacci sequence takes its name from Leonardo of Pisa, known as Fibonacci,
 
 ## Where this leads
 
-Linear recurrences have the same structure as linear differential equations with constant coefficients ([[ode/second-order-linear]]): try exponentials, get a characteristic equation, treat repeated roots with an extra factor of $n$ (or $t$), and add a particular solution for a forcing term. The solutions of [[#eq-linear]] form a $k$-dimensional vector space, and the recurrence can be rewritten as $\mathbf{v}_n = M\mathbf{v}_{n-1}$ for a $k\times k$ matrix whose eigenvalues are the characteristic roots ([[linear-algebra/eigenvalues]]). [[discrete/generating-functions]] gives a second, more mechanical way to solve recurrences, which also handles the general repeated-root case. Recurrences describe random walks and Markov chains ([[probability/markov-chains]]), the stability of numerical methods ([[numerical-analysis/numerical-odes]]), and the running times of recursive algorithms such as those for graphs in [[discrete/graph-algorithms]].
+Linear recurrences have the same structure as linear differential equations with constant coefficients ([[ode/second-order-linear]]): try exponentials, get a characteristic equation, treat repeated roots with an extra factor of $n$ (or $t$), and add a particular solution for a forcing term. The solutions of [[#eq-linear]] form a $k$-dimensional vector space, and the recurrence can be rewritten as $\mathbf{v}_n = M\mathbf{v}_{n-1}$ for a $k\times k$ matrix whose eigenvalues are the characteristic roots ([[linear-algebra/eigenvalues]]). [[discrete/generating-functions]] gives a second, more mechanical way to solve recurrences, which also handles the general repeated-root case. Recurrences describe random walks and Markov chains ([[probability/markov-chains]]), the stability of numerical methods ([[numerical-analysis/numerical-odes]]), and the running times of recursive algorithms such as merge sort ([[#ex-resonance]]); for the graph algorithms of [[discrete/graph-algorithms|a later chapter]], running times are found by counting steps directly.
 
 ::: summary
 - A **recurrence** expresses $a_n$ through earlier terms; together with initial conditions it determines the sequence uniquely ([[#prop-unique]]), so a guessed closed form is proved by checking the recurrence and the initial values.

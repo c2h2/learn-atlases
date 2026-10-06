@@ -223,7 +223,7 @@ $$
 **商**。由于$f/g = f\cdot(1/g)$，由乘积法则，只需证明$1/g(x) \to 1/M$。选取$\delta_1$，使得当$0<\abs{x-a}<\delta_1$时$\abs{g(x) - M} < \abs{M}/2$；于是$\abs{g(x)} > \abs{M}/2 > 0$，特别地，$g(x) \neq 0$，$1/g(x)$在那里有定义。对这样的$x$，
 
 $$
-\abs{\frac{1}{g(x)} - \frac{1}{M}} = \frac{\abs{M - g(x)}}{\abs{g(x)}\,\abs{M}} < \frac{2}{\abs{M}^2}\,\abs{g(x) - M}.
+\abs{\frac{1}{g(x)} - \frac{1}{M}} = \frac{\abs{M - g(x)}}{\abs{g(x)}\,\abs{M}} \le \frac{2}{\abs{M}^2}\,\abs{g(x) - M}.
 $$
 
 再选取$\delta_2$使$\abs{g(x) - M} < \eps\abs{M}^2/2$；当$0<\abs{x-a}<\min(\delta_1,\delta_2)$时，右边小于$\eps$。

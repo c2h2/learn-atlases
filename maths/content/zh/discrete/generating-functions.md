@@ -416,7 +416,7 @@ $$
 
 ## 后续内容
 
-生成函数把离散数学与分析学联系起来。把$A(x)$看作复变量的函数，其奇点的位置控制着$a_n$增长的快慢——$\frac{1}{1 - x - x^2}$最近的奇点在$1/\varphi$处，而$F_n$像$\varphi^n$那样增长——这一主题要借助[[complex-analysis/laurent-series]]和[[complex-analysis/residues]]中的工具来发展。在概率论中，随机变量的生成函数$\sum_n\Prob(X = n)s^n$把独立随机变量之和变为乘积（[[probability/discrete-random-variables]]）。分拆理论是数论的一个分支：拉马努金发现$p(5n + 4)$总能被$5$整除（例如$p(4) = 5$，$p(9) = 30$，$p(14) = 135$）。而本章的方法——比较幂级数的系数——在微分方程的级数解法中再次出现（[[ode/series-solutions]]）。
+生成函数把离散数学与分析学联系起来。把$A(x)$看作复变量的函数，其奇点的位置控制着$a_n$增长的快慢——$\frac{1}{1 - x - x^2}$最近的奇点在$1/\varphi$处，而$F_n$像$\varphi^n$那样增长——这一主题要借助[[complex-analysis/laurent-series]]和[[complex-analysis/residues]]中的工具来发展。在概率论中，随机变量的生成函数$\sum_n\Prob(X = n)s^n$把独立随机变量之和变为乘积（[[probability/expectation]]）。分拆理论是数论的一个分支：拉马努金发现$p(5n + 4)$总能被$5$整除（例如$p(4) = 5$，$p(9) = 30$，$p(14) = 135$）。而本章的方法——比较幂级数的系数——在微分方程的级数解法中再次出现（[[ode/series-solutions]]）。
 
 ::: summary
 - $(a_n)$的**生成函数**是形式幂级数$\sum a_nx^n$（[[#def-ogf]]）；乘积对应于卷积，一个级数可逆当且仅当它的常数项不为零。

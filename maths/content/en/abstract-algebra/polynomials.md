@@ -222,7 +222,7 @@ For polynomials of higher degree we need to rule out factorisations into non-lin
 :::
 
 ::: theorem Eisenstein's criterion {#thm-eisenstein}
-Let $f = a_nx^n + a_{n-1}x^{n-1} + \dots + a_0 \in \Z[x]$ and let $p$ be a prime such that
+Let $f = a_nx^n + a_{n-1}x^{n-1} + \dots + a_0 \in \Z[x]$ with $n \ge 1$, and let $p$ be a prime such that
 
 $$
 p \nmid a_n, \qquad p \mid a_i \ \ (0 \le i \le n-1), \qquad p^2 \nmid a_0 .
@@ -262,7 +262,7 @@ The leading coefficient is $1$; every other coefficient $\binom pk$ with $1 \le 
 mode: roots
 n: 5
 z: 1,0
-caption: The fifth roots of unity are the roots of $x^5 - 1 = (x - 1)\Phi_5(x)$. The root $1$ belongs to the rational factor $x - 1$; the other four are the roots of $\Phi_5(x) = x^4 + x^3 + x^2 + x + 1$, which is irreducible over $\Q$ by Eisenstein's criterion applied to $\Phi_5(x+1)$. No polynomial of degree less than $4$ with rational coefficients has $e^{2\pi i/5}$ as a root.
+caption: The fifth roots of unity are the roots of $x^5 - 1 = (x - 1)\Phi_5(x)$. The root $1$ belongs to the rational factor $x - 1$; the other four are the roots of $\Phi_5(x) = x^4 + x^3 + x^2 + x + 1$, which is irreducible over $\Q$ by Eisenstein's criterion applied to $\Phi_5(x+1)$. No non-zero polynomial of degree less than $4$ with rational coefficients has $e^{2\pi i/5}$ as a root.
 :::
 
 A third test reduces the problem to finite fields, where it can be settled by finite checking.

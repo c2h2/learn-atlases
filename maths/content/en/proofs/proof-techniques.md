@@ -267,7 +267,7 @@ $$
 and by [[#lem-abs]] again, with $a = x + y$ and $b = \abs{x} + \abs{y}$, this says $\abs{x + y} \le \abs{x} + \abs{y}$.
 :::
 
-The triangle inequality is the single most used inequality in analysis; we met it already in the uniqueness of limits in [[calculus-1/limits]].
+The triangle inequality is the single most used inequality in analysis; one of its first uses is the proof that limits are unique in [[calculus-1/limits]].
 
 Cases are just as useful for integers, where we can split according to the remainder on division by some number.
 

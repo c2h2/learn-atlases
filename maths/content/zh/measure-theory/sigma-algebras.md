@@ -28,10 +28,10 @@ caption: 之字形枚举把每个正有理数恰好列出一次（跳过诸如$2
 称$(X, \mathcal{A})$为**可测空间**，并称$\mathcal{A}$的成员为**可测集**。
 :::
 
-由此立即得到另外几条封闭性质。$\varnothing = X^c \in \mathcal{A}$。有限并就是从某一项起$A_n = \varnothing$的可数并。由德摩根（De Morgan）律，$\bigcap_n A_n = \bigl(\bigcup_n A_n^c\bigr)^c \in \mathcal{A}$，所以可以取可数交；并且只要$A$和$B$属于$\mathcal{A}$，$A \setminus B = A \cap B^c$和$A \triangle B = (A\setminus B)\cup(B\setminus A)$也都属于$\mathcal{A}$。简而言之，σ-代数对每次只涉及可数个集合的一切集合运算都封闭。只对取补集和**有限**并封闭的集族称为集合的**代数**（集代数）。
+由此立即得到另外几条封闭性质。$\varnothing = X^c \in \mathcal{A}$。有限并就是从某一项起$A_n = \varnothing$的可数并。由德摩根（De Morgan）律，$\bigcap_n A_n = \bigl(\bigcup_n A_n^c\bigr)^c \in \mathcal{A}$，所以可以取可数交；并且只要$A$和$B$属于$\mathcal{A}$，$A \setminus B = A \cap B^c$和$A \triangle B = (A\setminus B)\cup(B\setminus A)$也都属于$\mathcal{A}$。简而言之，σ-代数对每次只涉及可数个集合的一切集合运算都封闭。包含$X$、并且只对取补集和**有限**并封闭的集族称为集合的**代数**（集代数）。
 
 ::: example 大大小小的σ-代数 {#ex-sigma-algebras}
-证明下列每一个都是$X$上的σ-代数：(a) 幂集$\mathcal{P}(X)$；(b) $\set{\varnothing, X}$；(c) $\set{\varnothing, A, A^c, X}$，其中$A \subseteq X$是取定的集合；(d) 当$X = \R$时，由满足“$A$或$A^c$可数”的集合$A$构成的集族$\mathcal{C}$。再证明$\R$中区间的有限并构成一个代数，但不构成σ-代数。
+证明下列每一个都是$X$上的σ-代数：(a) 幂集$\mathcal{P}(X)$；(b) $\set{\varnothing, X}$；(c) $\set{\varnothing, A, A^c, X}$，其中$A \subseteq X$是取定的集合；(d) 当$X = \R$时，由满足“$A$或$A^c$可数”的集合$A$构成的集族$\mathcal{C}$。再证明$\R$中区间（有界或无界）的有限并构成一个代数，但不构成σ-代数。
 ::: solution
 (a)–(c)：直接验证可知，它们对取补集和任意并都封闭。
 
@@ -153,7 +153,7 @@ $$
 :::
 :::
 
-由这些例子还可以构造出更多的例子：对权$w(x) \ge 0$，有**加权计数测度**$\mu(A) = \sum_{x\in A}w(x)$；有测度在一个固定集合$B$上的**限制**$\mu_B(A) = \mu(A \cap B)$；还有测度的正倍数以及可数个测度之和。所有测度中最重要的是$\mathcal{B}(\R)$上满足$\lambda((a, b)) = b - a$的**勒贝格测度**，它的构造出人意料地困难，[[measure-theory/lebesgue-measure]]一章专门讨论它。
+由这些例子还可以构造出更多的例子：对权$w(x) \ge 0$，有**加权计数测度**$\mu(A) = \sum_{x\in A}w(x)$；有测度在一个固定集合$B \in \mathcal{A}$上的**限制**$\mu_B(A) = \mu(A \cap B)$；还有测度的正倍数以及可数个测度之和。所有测度中最重要的是$\mathcal{B}(\R)$上满足$\lambda((a, b)) = b - a$的**勒贝格测度**，它的构造出人意料地困难，[[measure-theory/lebesgue-measure]]一章专门讨论它。
 
 ::: theorem 测度的基本性质 {#thm-measure-properties}
 设$(X, \mathcal{A}, \mu)$是测度空间，并设下面出现的集合都属于$\mathcal{A}$。
@@ -239,10 +239,10 @@ a: 1/n^2
 mode: sums
 N: 40
 limit: pi^2/6
-caption: 设事件$A_n$的概率为$1/n^2$。$\sum P(A_n)$的部分和趋于$\pi^2/6$；取$N$项之后，曲线与其极限之间的差距——即尾部$\sum_{n>N}1/n^2 \approx 1/N$——是第$N$个事件之后还有某个事件发生的概率的上界。随着尾部缩小到$0$，发生无穷多次的可能性也缩小到$0$。若$P(A_n) = 1/n$，则部分和发散，该引理不能给出任何结论。
+caption: 设事件$A_n$的概率为$1/n^2$。$\sum P(A_n)$的部分和趋于$\pi^2/6$；取$N$项之后，曲线与其极限之间的差距——即尾部$\sum_{n>N}1/n^2 \approx 1/N$——是第$N$个事件之后还有某个事件发生的概率的上界。发生无穷多次的概率不超过每一个这样的尾部，所以它等于$0$。若$P(A_n) = 1/n$，则部分和发散，该引理不能给出任何结论。
 :::
 
-这个引理不需要独立性，也不需要关于$A_n$如何相互重叠的任何信息；这正是它的威力所在。（它的一个部分逆命题，即第二博雷尔-坎泰利引理，确实需要独立性：见[[probability/limit-theorems]]。）它是证明某件事以概率1只发生有限多次的标准工具——例如证明：在$n$次抛掷中，正面所占的比例最终会一直落在$\tfrac12$的任意给定的$\eps$范围之内。
+这个引理不需要独立性，也不需要关于$A_n$如何相互重叠的任何信息；这正是它的威力所在。（它的一个部分逆命题，即第二博雷尔-坎泰利引理，确实需要独立性：若事件$A_n$相互独立且$\sum P(A_n) = \infty$，则以概率$1$有无穷多个$A_n$发生。）它是证明某件事以概率1只发生有限多次的标准工具——例如证明：在$n$次抛掷中，正面所占的比例最终会一直落在$\tfrac12$的任意给定的$\eps$范围之内；[[probability/limit-theorems]]一章正是这样证明强大数定律的。
 
 ::: quiz
 对集合序列$A_n$，关于$\limsup_n A_n$的哪个说法是正确的？
@@ -283,10 +283,10 @@ $x \in \bigcap_N\bigcup_{n\ge N}A_n$的意思是：对每个$N$，都存在$n \g
 令$\mathcal{D} = \set{A \in \sigma(\mathcal{P}) : \mu(A) = \nu(A)}$。它包含$\mathcal{P}$和$X$。若$\mathcal{D}$中的$A \subseteq B$，则$\mu(B \setminus A) = \mu(B) - \mu(A) = \nu(B) - \nu(A) = \nu(B \setminus A)$，由于测度有限，这里的减法是合法的。若$\mathcal{D}$中的$A_1 \subseteq A_2 \subseteq \cdots$，则由下连续性得$\mu(\bigcup A_n) = \lim\mu(A_n) = \lim\nu(A_n) = \nu(\bigcup A_n)$。所以$\mathcal{D}$是λ-系，由[[#thm-pi-lambda]]得$\sigma(\mathcal{P}) \subseteq \mathcal{D}$。
 :::
 
-由此得到两个重要推论。$\R$上的博雷尔概率测度$\mu$由它的**分布函数**$F(a) = \mu((-\infty, a])$决定，因为半直线构成一个生成$\mathcal{B}(\R)$的π-系（[[#thm-borel-generators]]）；这就是为什么在概率论中，随机变量的分布可以用它的累积分布函数来描述（[[probability/continuous-random-variables]]）。此外，把该定理用于测度有限的各个部分，就可以把它推广到σ-有限测度，这表明$\mathcal{B}(\R)$上至多有一个测度使每个区间的测度等于它的长度。
+由此得到两个重要推论。$\R$上的博雷尔概率测度$\mu$由它的**分布函数**$F(a) = \mu((-\infty, a])$决定，因为半直线构成一个生成$\mathcal{B}(\R)$的π-系（[[#thm-borel-generators]]）；这就是为什么在概率论中，随机变量的分布可以用它的累积分布函数来描述（[[probability/continuous-random-variables]]）。此外，只要测度有限的那些部分可以从$\mathcal{P}$中选取，该定理就可以推广到σ-有限测度：若$\mathcal{P}$中的$X_1 \subseteq X_2 \subseteq \cdots$的并为$X$，且$\mu(X_n) < \infty$，则$A \mapsto \mu(A \cap X_n)$与$A \mapsto \nu(A \cap X_n)$是在$\mathcal{P}$上（因为$A \cap X_n \in \mathcal{P}$）和在$X$上都相等的有限测度，因而处处相等；再利用下连续性令$n \to \infty$即可。取$\mathcal{P}$为区间$(a, b]$（连同$\varnothing$）、$X_n = (-n, n]$，就表明$\mathcal{B}(\R)$上至多有一个测度使每个区间的测度等于它的长度。没有这个附加条件，推广就会失败：$\Q$上的计数测度与两倍计数测度都是σ-有限的，它们在每个集合$(a, b]\cap\Q$上都相等，因为这些集合都是无限集或空集。
 
 ::: history
-埃米尔·博雷尔（Émile Borel）的《函数论讲义》（*Leçons sur la théorie des fonctions*，1898年）提出了这样的想法：为那些从区间出发经可数并和取补集所能得到的集合指定测度；他还坚持要求可数可加性。亨利·勒贝格（Henri Lebesgue）在1902年的博士论文中以此为基础建立了他的积分。1905年，朱塞佩·维塔利（Giuseppe Vitali）证明了并非每个实数集都能有一个平移不变且可数可加的长度；而费利克斯·豪斯多夫（Felix Hausdorff，1914年）的悖论以及斯特凡·巴拿赫（Stefan Banach）和阿尔弗雷德·塔斯基（Alfred Tarski，1924年）的悖论表明，在三维空间中，对任意集合而言，即使只要求有限可加性也办不到。抽象测度空间在20世纪10年代和20年代发展起来；1933年，安德烈·柯尔莫哥洛夫（Andrey Kolmogorov）的《概率论基本概念》（*Grundbegriffe der Wahrscheinlichkeitsrechnung*）把概率论建立在由事件构成的σ-代数和总质量为1的测度之上。π-λ定理可以追溯到瓦茨瓦夫·谢尔品斯基（Wacław Sierpiński，1928年），并在20世纪50年代经叶夫根尼·狄金（Eugene Dynkin）的推广而广为人知。
+埃米尔·博雷尔（Émile Borel）的《函数论讲义》（*Leçons sur la théorie des fonctions*，1898年）提出了这样的想法：为那些从区间出发经可数并和取补集所能得到的集合指定测度；他还坚持要求可数可加性。亨利·勒贝格（Henri Lebesgue）在1902年的博士论文中以此为基础建立了他的积分。1905年，朱塞佩·维塔利（Giuseppe Vitali）证明了并非每个实数集都能有一个平移不变且可数可加的长度；而费利克斯·豪斯多夫（Felix Hausdorff，1914年）的悖论以及斯特凡·巴拿赫（Stefan Banach）和阿尔弗雷德·塔斯基（Alfred Tarski，1924年）的悖论表明，在三维空间中，对任意集合而言，即使只要求有限可加性也办不到。抽象测度空间在20世纪10年代和20年代发展起来；1933年，安德烈·柯尔莫哥洛夫（Andrey Kolmogorov）的《概率论基本概念》（*Grundbegriffe der Wahrscheinlichkeitsrechnung*）把概率论建立在由事件构成的σ-代数和总质量为1的测度之上。π-λ定理可以追溯到瓦茨瓦夫·谢尔品斯基（Wacław Sierpiński，1928年），并在20世纪50年代因叶夫根尼·狄金（Eugene Dynkin）的推介而广为人知。
 :::
 
 ## 后续内容

@@ -372,7 +372,7 @@ The difference $w$ of two solutions satisfies the homogeneous wave equation, zer
 For a single normal mode, energy shuttles between kinetic and potential forms: in $u_n = A_n\cos\omega_nt\sin\frac{n\pi x}{L}$ the kinetic energy is proportional to $\sin^2\omega_nt$ and the potential energy to $\cos^2\omega_nt$, with constant sum. For a general solution, orthogonality of the modes shows that $E = \sum_nE_n$: each mode keeps its own energy forever. An ideal string therefore never changes its timbre; real strings do, because damping is stronger for higher frequencies.
 
 ::: warning Maximum principles fail for waves
-It is natural to expect, as for heat, that the displacement can never exceed its initial maximum. It can. With $\varphi = 0$, $\psi(x) = \sin x$ on $[0,\pi]$ and $c = 1$, the solution is $u = \sin x\sin t$: the string starts flat and reaches height $1$ at $t = \frac\pi2$. Even with $\psi = 0$ there is no maximum principle in general — two pulses moving towards each other add up to a displacement larger than either. For the wave equation, the conserved **energy**, not the maximum, is the right measure of size.
+It is natural to expect, as for heat, that the displacement can never exceed its initial maximum. It can. With $\varphi = 0$, $\psi(x) = \sin x$ on $[0,\pi]$ and $c = 1$, the solution is $u = \sin x\sin t$: the string starts flat and reaches height $1$ at $t = \frac\pi2$. Even with $\psi = 0$ there is no maximum principle: $u = -\sin x\cos t$ is $\le 0$ at $t = 0$ and vanishes at both ends, yet at $t = \pi$ it equals $\sin x$ and reaches height $1$. For the wave equation, the conserved **energy**, not the maximum, is the right measure of size.
 :::
 
 ::: quiz
@@ -450,7 +450,7 @@ so $u(0,\pi/2) = 1$. Check: $u_t = \cos x\cos t$ equals $\cos x$ at $t = 0$.
 :::
 
 ::: exercise Tuning a string {level=1 check="312.5"}
-A steel string of length $0.64\ \mathrm{m}$ and mass per unit length $4\times10^{-4}\ \mathrm{kg/m}$ is under a tension of $64\ \mathrm N$. Find its fundamental frequency in hertz. By what factor must the tension change to raise the pitch by an octave?
+A steel string of length $0.64\ \mathrm{m}$ and mass per unit length $4\times10^{-4}\ \mathrm{kg/m}$ is under a tension of $64\ \mathrm N$. Find its fundamental frequency in hertz. By what factor must the tension change to raise the pitch by an octave? (Enter the frequency.)
 ::: solution
 The wave speed is $c = \sqrt{64/(4\times10^{-4})} = \sqrt{160\,000} = 400\ \mathrm{m/s}$, so by [[#eq-fundamental]] $\nu_1 = \frac{c}{2L} = \frac{400}{1.28} = 312.5\ \mathrm{Hz}$. An octave doubles the frequency; since $\nu_1 \propto \sqrt{T_0}$, the tension must be multiplied by $4$.
 :::

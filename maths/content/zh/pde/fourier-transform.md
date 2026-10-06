@@ -185,7 +185,7 @@ $$
 \widehat{f*g}(\xi) = \int\!\!\int f(x - y)g(y)\,e^{-i\xi x}\,dy\,dx = \int g(y)e^{-i\xi y}\left(\int f(x - y)e^{-i\xi(x - y)}\,dx\right)dy = \hat f(\xi)\int g(y)e^{-i\xi y}\,dy,
 $$
 
-这里我们写$e^{-i\xi x} = e^{-i\xi y}e^{-i\xi(x-y)}$，并在内层积分中作代换$z = x - y$。（对于本章中的分段连续函数，这些二重积分可以理解为反常黎曼积分；一般的结论在[[measure-theory/lebesgue-integral]]中证明。）
+这里我们写$e^{-i\xi x} = e^{-i\xi y}e^{-i\xi(x-y)}$，并在内层积分中作代换$z = x - y$。（对于本章中的分段连续函数，这些二重积分可以理解为反常黎曼积分；一般情形下的托内利定理和富比尼定理属于勒贝格积分理论，这一理论从[[measure-theory/lebesgue-integral]]开始建立。）
 :::
 
 ::: example 用两种方法计算卷积 {#ex-conv}
@@ -222,7 +222,7 @@ $$
 \frac{1}{2\pi}\int_{-R}^R\hat f(\xi)e^{i\xi x}\,d\xi = \frac1{2\pi}\int_{-\infty}^\infty f(y)\left(\int_{-R}^Re^{i\xi(x - y)}\,d\xi\right)dy = \frac1\pi\int_{-\infty}^\infty f(x + t)\,\frac{\sin Rt}{t}\,dt.
 $$
 
-核$\frac{\sin Rt}{\pi t}$所起的作用相当于[[pde/fourier-series#lem-dirichlet]]中的狄利克雷核，并且对每个$R > 0$都有$\int_0^\infty\frac{\sin Rt}{t}\,dt = \frac\pi2$。减去$\frac12f(x^+) + \frac12f(x^-)$，再完全按照[[pde/fourier-series#thm-dirichlet]]的证明来论证——由分段光滑性，商$\frac{f(x+t) - f(x^\pm)}{t}$在$t = 0$附近有界，而其余部分（包括由$f$的可积性控制的尾部）用黎曼-勒贝格型的论证处理——就得到第一个结论。若$\hat f$可积，则这个极限就是绝对收敛的积分，而在连续点处右边等于$f(x)$。完整的细节见斯坦（Stein）与沙卡尔奇（Shakarchi）的《傅里叶分析》（*Fourier Analysis*）第5章，或福兰德（Folland）的《傅里叶分析及其应用》（*Fourier Analysis and Its Applications*）第7章。
+核$\frac{\sin Rt}{\pi t}$所起的作用相当于[[pde/fourier-series#lem-dirichlet]]中的狄利克雷核，并且对每个$R > 0$都有$\int_0^\infty\frac{\sin Rt}{t}\,dt = \frac\pi2$（这就是狄利克雷积分，[[ode/laplace-transform]]和[[complex-analysis/residues]]中都计算过它）。减去$\frac12f(x^+) + \frac12f(x^-)$，再完全按照[[pde/fourier-series#thm-dirichlet]]的证明来论证——由分段光滑性，商$\frac{f(x+t) - f(x^\pm)}{t}$在$t = 0$附近有界，而其余部分（包括由$f$的可积性控制的尾部）用黎曼-勒贝格型的论证处理——就得到第一个结论。若$\hat f$可积，则这个极限就是绝对收敛的积分，而在连续点处右边等于$f(x)$。完整的细节见斯坦（Stein）与沙卡尔奇（Shakarchi）的《傅里叶分析》（*Fourier Analysis*）第5章，或福兰德（Folland）的《傅里叶分析及其应用》（*Fourier Analysis and Its Applications*）第7章。
 :::
 
 反演定理表明傅里叶变换是单射：可积的分段光滑函数（在其连续点处）由它的变换唯一确定。反演还能毫不费力地给出新的变换。由于$\frac{2a}{a^2+\xi^2}$可积，对[[#ex-exp-abs]]作反演得$e^{-a\abs x} = \frac1{2\pi}\int\frac{2a}{a^2 + \xi^2}e^{i\xi x}\,d\xi$；交换变量的名称并把$x$换成$-x$，得
@@ -231,7 +231,7 @@ $$
 \mathcal F\left[\frac{1}{a^2 + x^2}\right](\xi) = \frac{\pi}{a}e^{-a\abs\xi}.
 $$ {#eq-lorentzian}
 
-（这也可以用留数来计算，[[complex-analysis/residues]]。）而在连续点$x = 0$处对矩形脉冲作反演，得$1 = \frac{1}{2\pi}\lim_{R\to\infty}\int_{-R}^R\frac{2\sin a\xi}{\xi}\,d\xi$，这就是著名的**狄利克雷积分**：当$a > 0$时，$\int_{-\infty}^\infty\frac{\sin a\xi}{\xi}\,d\xi = \pi$。
+（这也可以用留数来计算，[[complex-analysis/residues]]。）而在连续点$x = 0$处对矩形脉冲作反演，得$1 = \frac{1}{2\pi}\lim_{R\to\infty}\int_{-R}^R\frac{2\sin a\xi}{\xi}\,d\xi$，这就是著名的**狄利克雷积分**：当$a > 0$时，$\int_{-\infty}^\infty\frac{\sin a\xi}{\xi}\,d\xi = \pi$。（这只是一个自洽性检验，而不是新的证明，因为[[#thm-inversion]]的证明用到了这个积分。）
 
 ::: theorem 普朗歇尔恒等式 {#thm-plancherel}
 若$f$可积且$\int\abs f^2 < \infty$，则$\hat f$平方可积，并且
@@ -313,7 +313,7 @@ x: -6, 6
 y: 0, 1.3
 sliders: t=0.25:0.02:4:0.01
 labels: G_t(x); u(x,t)\ \text{当 } f = \chi_{[-1,1]}
-caption: $k = 1$时的热核$G_t$，以及一根无限长杆的温度，杆的初始温度在$[-1,1]$上为$1$，在其他地方为$0$。把$t$向$0$拖动：热核变成一个面积为$1$的又高又窄的尖峰，而矩形又恢复了它陡峭的边缘。把$t$向上拖动：两者都像$\sqrt t$那样展宽，峰值像$1/\sqrt t$那样下降，而每条曲线下方的面积保持不变——总热量守恒。
+caption: $k = 1$时的热核$G_t$，以及一根无限长杆的温度，杆的初始温度在$[-1,1]$上为$1$，在其他地方为$0$。把$t$向$0$拖动：热核变成一个面积为$1$的又高又窄的尖峰，而矩形又恢复了它陡峭的边缘。把$t$向上拖动：热核像$\sqrt t$那样展宽，峰值像$1/\sqrt t$那样下降（$t$较大时矩形也是如此），而每条曲线下方的面积保持不变——总热量守恒。
 :::
 
 ::: example 加热的一段 {#ex-box}
@@ -406,7 +406,7 @@ caption: 高斯函数（第一条曲线，变量为$x$）及其傅里叶变换�
 
 ## 后续内容
 
-傅里叶变换可以用同样的方法求解整条直线上其他的常系数问题：波动方程——其中每个频率按$\cos c\xi t$振荡，反演后就得到达朗贝尔（d'Alembert）公式（[[pde/wave-equation]]）；半平面上的拉普拉斯方程——其核是泊松核$\frac{y}{\pi(x^2 + y^2)}$，它与[[#eq-lorentzian]]密切相关；以及$\R$上的常微分方程。[[ode/laplace-transform]]中的**拉普拉斯变换**是傅里叶变换的单边版本，适用于初值问题；形式上，记$s = \sigma + i\tau$，则$\mathcal L f(s)$就是限制在$t \ge 0$上的$f(t)e^{-\sigma t}$的傅里叶变换在$\xi = \tau = \operatorname{Im}s$处的值。把傅里叶变换推广到所有平方可积函数以及狄拉克δ函数这样的广义函数，就通向以[[measure-theory/lp-spaces]]为基础的分布理论和现代调和分析。在概率论中，密度函数的傅里叶变换就是它的特征函数，这是证明中心极限定理的主要工具（[[probability/limit-theorems]]）。
+傅里叶变换可以用同样的方法求解整条直线上其他的常系数问题：波动方程——其中每个频率按$\cos c\xi t$振荡，反演后就得到达朗贝尔（d'Alembert）公式（[[pde/wave-equation]]）；半平面上的拉普拉斯方程——其核是泊松核$\frac{y}{\pi(x^2 + y^2)}$，它与[[#eq-lorentzian]]密切相关；以及$\R$上的常微分方程。[[ode/laplace-transform]]中的**拉普拉斯变换**是傅里叶变换的单边版本，适用于初值问题；形式上，记$s = \sigma + i\tau$，则$\mathcal L f(s)$就是限制在$t \ge 0$上的$f(t)e^{-\sigma t}$的傅里叶变换在$\xi = \tau = \operatorname{Im}s$处的值。把傅里叶变换推广到所有平方可积函数以及狄拉克δ函数这样的广义函数，就通向以[[measure-theory/lp-spaces]]为基础的分布理论和现代调和分析。在概率论中，具有密度$p$的随机变量$X$的特征函数$\E e^{i\xi X}$等于$\hat p(-\xi)$，即采用相反符号约定的傅里叶变换；它是证明中心极限定理的主要工具（[[probability/limit-theorems]]）。
 
 ::: summary
 - 傅里叶变换$\hat f(\xi) = \int f(x)e^{-i\xi x}\,dx$是周期趋于无穷时傅里叶级数的极限；它有界、连续，并且在无穷远处趋于$0$（黎曼-勒贝格引理）。
@@ -428,7 +428,7 @@ caption: 高斯函数（第一条曲线，变量为$x$）及其傅里叶变换�
 :::
 
 ::: exercise 更宽的脉冲 {level=1 check="8/pi"}
-设$f = \chi_{[-2,2]}$。求$\hat f(0)$和$\hat f(\pi/4)$。
+设$f = \chi_{[-2,2]}$。求$\hat f(0)$和$\hat f(\pi/4)$。（输入$\hat f(\pi/4)$。）
 ::: solution
 由[[#ex-rect]]（取$a = 2$），$\hat f(\xi) = \frac{2\sin2\xi}{\xi}$，$\hat f(0) = 4$，即$f$下方的面积。在$\xi = \pi/4$处，$\hat f = \frac{2\sin(\pi/2)}{\pi/4} = \frac{8}{\pi}$。
 :::
@@ -449,7 +449,7 @@ $\int\abs f^2 = \int e^{-2\abs x}\,dx = 1$，$\hat f = \frac{2}{1 + \xi^2}$。�
 :::
 
 ::: exercise 高斯型温度的扩散 {level=2 check="1/3"}
-设$k = 1$，无限长杆的初始温度为$e^{-x^2}$。求时刻$t = 2$时$x = 0$处的温度，以及中心温度降到初始值一半的时刻。
+设$k = 1$，无限长杆的初始温度为$e^{-x^2}$。求时刻$t = 2$时$x = 0$处的温度，以及中心温度降到初始值一半的时刻。（输入$u(0,2)$。）
 ::: solution
 由[[#ex-gauss-heat]]，$u(0,t) = (1 + 4t)^{-1/2}$，所以$u(0,2) = \frac{1}{\sqrt9} = \frac13$。降到初始值的一半要求$1 + 4t = 4$，即$t = \frac34$。
 :::

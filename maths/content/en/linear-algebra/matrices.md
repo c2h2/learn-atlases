@@ -51,7 +51,7 @@ The first statement is the computation just before [[#def-product]]: $A(B\mathbf
 So the $(i,j)$ entry of $AB$ is "row $i$ of $A$ times column $j$ of $B$". There are two other useful ways to read a product, both immediate from [[#eq-row-col]]:
 
 - **Row $i$ of $AB$** is (row $i$ of $A$)$\,B$, a combination of the *rows* of $B$ with weights from row $i$ of $A$.
-- **Column–row expansion:** $AB = \mathbf{a}_1\mathbf{r}_1 + \mathbf{a}_2\mathbf{r}_2 + \dots + \mathbf{a}_n\mathbf{r}_n$, where $\mathbf{a}_k$ is column $k$ of $A$ and $\mathbf{r}_k$ is row $k$ of $B$; each term (column times row) is an $m\times p$ matrix of rank one. This view returns with the singular value decomposition in [[linear-algebra/svd]].
+- **Column–row expansion:** $AB = \mathbf{a}_1\mathbf{r}_1 + \mathbf{a}_2\mathbf{r}_2 + \dots + \mathbf{a}_n\mathbf{r}_n$, where $\mathbf{a}_k$ is column $k$ of $A$ and $\mathbf{r}_k$ is row $k$ of $B$; each term (column times row) is an $m\times p$ matrix whose rows are all multiples of $\mathbf{r}_k$ — a matrix of rank at most one, in the language of [[linear-algebra/basis-dimension]]. This view returns with the singular value decomposition in [[linear-algebra/svd]].
 
 ::: example Computing products {#ex-product}
 Let $A = \begin{pmatrix}1&2&0\\-1&1&3\end{pmatrix}$ and $B = \begin{pmatrix}2&1\\0&-1\\1&4\end{pmatrix}$. Compute $AB$ and $BA$.
@@ -325,7 +325,7 @@ $$
 
 ::: widget rowreduce
 matrix: 1,1,1,1,0,0; 1,2,2,0,1,0; 1,2,3,0,0,1
-augmented: false
+augmented: 3
 caption: [[#alg-inverse]] for the matrix of [[#ex-inverse]]. The same row operations act on both halves; when the left half becomes $I$, the right half has become $A^{-1}$. Try to predict each step before you take it.
 :::
 

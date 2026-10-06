@@ -140,11 +140,11 @@ So the composite midpoint and trapezoid rules converge like $h^2$ and Simpson's 
 | $n$ | $M_h$ error | $T_h$ error | $S_h$ error | ratios (M, T, S) |
 |---|---|---|---|---|
 | $2$ | $-7.77\times10^{-3}$ | $1.55\times10^{-2}$ | $-3.56\times10^{-4}$ | |
-| $4$ | $-1.92\times10^{-3}$ | $3.84\times10^{-3}$ | $-3.13\times10^{-5}$ | $4.04,\ 4.02,\ 11.4$ |
+| $4$ | $-1.92\times10^{-3}$ | $3.84\times10^{-3}$ | $-3.12\times10^{-5}$ | $4.04,\ 4.02,\ 11.4$ |
 | $8$ | $-4.79\times10^{-4}$ | $9.59\times10^{-4}$ | $-1.99\times10^{-6}$ | $4.01,\ 4.01,\ 15.7$ |
-| $16$ | $-1.20\times10^{-4}$ | $2.40\times10^{-4}$ | $-1.25\times10^{-7}$ | $4.00,\ 4.00,\ 16.0$ |
-| $32$ | $-2.99\times10^{-5}$ | $5.99\times10^{-5}$ | $-7.80\times10^{-9}$ | $4.00,\ 4.00,\ 16.0$ |
-| $64$ | $-7.49\times10^{-6}$ | $1.50\times10^{-5}$ | $-4.87\times10^{-10}$ | $4.00,\ 4.00,\ 16.0$ |
+| $16$ | $-1.20\times10^{-4}$ | $2.40\times10^{-4}$ | $-1.25\times10^{-7}$ | $4.00,\ 4.00,\ 15.9$ |
+| $32$ | $-2.99\times10^{-5}$ | $5.99\times10^{-5}$ | $-7.79\times10^{-9}$ | $4.00,\ 4.00,\ 16.0$ |
+| $64$ | $-7.48\times10^{-6}$ | $1.50\times10^{-5}$ | $-4.87\times10^{-10}$ | $4.00,\ 4.00,\ 16.0$ |
 
 (Errors are $I - Q$: the midpoint and Simpson rules overestimate this integral and the trapezoid rule underestimates it, in agreement with the signs in [[#thm-composite]], since $\int_0^1 f'' = f'(1) - f'(0) < 0$ and $\int_0^1 f^{(4)} = f'''(1) - f'''(0) > 0$.) The observed ratios confirm the orders $2$, $2$ and $4$. Checking observed ratios against the theory like this is the standard way to test a quadrature code.
 
@@ -180,7 +180,7 @@ $$
 T_h = I + c_1h^2 + c_2h^4 + c_3h^6 + \cdots, \qquad c_1 = \frac{f'(b) - f'(a)}{12},\quad c_2 = -\frac{f'''(b) - f'''(a)}{720}, \ \dots
 $$ {#eq-euler-maclaurin}
 
-(the constants involve Bernoulli numbers and odd derivatives at the endpoints; for a proof see Süli and Mayers, Chapter 7). The constants do not depend on $h$, and this can be exploited. For the test integral $c_1 = \frac{-2e^{-1} - 0}{12} = -0.0613$, and indeed with $n = 64$ the prediction $T_h - I \approx c_1h^2 = -1.497\times10^{-5}$ matches the table to four digits.
+(the constants involve Bernoulli numbers and odd derivatives at the endpoints; for a proof see Süli and Mayers, Chapter 7). The constants do not depend on $h$, and this can be exploited. For the test integral $c_1 = \frac{-2e^{-1} - 0}{12} = -0.0613$, and indeed with $n = 64$ the prediction $T_h - I \approx c_1h^2 = -1.497\times10^{-5}$ agrees with the actual error (shown rounded to $1.50\times10^{-5}$ in the table) to four digits.
 
 **Richardson extrapolation.** Since $T_h = I + c_1h^2 + O(h^4)$ and $T_{h/2} = I + \frac14c_1h^2 + O(h^4)$, the combination
 
@@ -316,7 +316,7 @@ After mapping $[-1, 1]$ to $[0, 1]$, the computed values and errors $G_n - I$ ar
 | $n$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ |
 |---|---|---|---|---|---|---|
 | $G_n$ | $0.778\,801$ | $0.746\,594\,7$ | $0.746\,814\,58$ | $0.746\,824\,468$ | $0.746\,824\,126\,8$ | $0.746\,824\,132\,89$ |
-| error | $3.2\times10^{-2}$ | $-2.3\times10^{-4}$ | $-9.6\times10^{-6}$ | $3.4\times10^{-7}$ | $-6.0\times10^{-9}$ | $7.8\times10^{-11}$ |
+| error | $3.2\times10^{-2}$ | $-2.3\times10^{-4}$ | $-9.5\times10^{-6}$ | $3.4\times10^{-7}$ | $-6.0\times10^{-9}$ | $7.8\times10^{-11}$ |
 
 Six function evaluations give ten correct digits — as accurate as the trapezoid rule with about $28\,000$ intervals, and better than Simpson's rule with $64$ intervals ($65$ evaluations, error $4.9\times10^{-10}$). Each extra node gains one and a half to two digits here.
 :::
@@ -396,7 +396,7 @@ $f''(x) = \frac{2}{x^3} \le 2$ on $[1, 2]$, so by [[#thm-composite]] the error i
 :::
 
 ::: exercise Designing a two-point rule {level=2 check="1/sqrt(3)"}
-Find $\alpha > 0$ and $w$ such that $\int_{-1}^1f(x)\,dx \approx w\bigl(f(-\alpha) + f(\alpha)\bigr)$ is exact for all polynomials of degree at most $3$.
+Find $\alpha > 0$ and $w$ such that $\int_{-1}^1f(x)\,dx \approx w\bigl(f(-\alpha) + f(\alpha)\bigr)$ is exact for all polynomials of degree at most $3$. (Enter $\alpha$.)
 ::: solution
 By symmetry the rule is exact for odd functions ($x$ and $x^3$) for any $\alpha, w$. Exactness for $1$ gives $2w = 2$, so $w = 1$; exactness for $x^2$ gives $2\alpha^2 = \frac23$, so $\alpha = \frac{1}{\sqrt3}$. This is the $2$-point Gauss–Legendre rule, and $\pm\frac1{\sqrt3}$ are the zeros of $P_2 = \frac12(3x^2 - 1)$.
 :::
@@ -419,13 +419,25 @@ $\frac{4(0.731\,370) - 0.683\,940}{3} = \frac{2.925\,480 - 0.683\,940}{3} = 0.74
 ::: exercise Simpson's rule is extrapolated trapezoid {level=3 #exr-simpson-richardson}
 Show that $\frac{4T_{h/2} - T_h}{3} = S_{h/2}$ exactly, for any function, where $T_h$ uses $n$ subintervals and $S_{h/2}$ is the composite Simpson rule with $2n$ subintervals.
 ::: solution
-Let $y_j = f(a + jh/2)$ for $j = 0, \dots, 2n$. Then $T_h = h\left(\frac12y_0 + y_2 + y_4 + \cdots + y_{2n-2} + \frac12y_{2n}\right)$ and $T_{h/2} = \frac h2\left(\frac12y_0 + y_1 + y_2 + \cdots + y_{2n-1} + \frac12y_{2n}\right)$. Hence
+Let $y_j = f(a + jh/2)$ for $j = 0, \dots, 2n$. Then
+
+$$
+T_h = h\left(\tfrac12y_0 + y_2 + y_4 + \cdots + y_{2n-2} + \tfrac12y_{2n}\right), \qquad T_{h/2} = \frac h2\left(\tfrac12y_0 + y_1 + y_2 + \cdots + y_{2n-1} + \tfrac12y_{2n}\right).
+$$
+
+Hence
 
 $$
 4T_{h/2} - T_h = h\Bigl(y_0 + 2\sum_{j \text{ odd}}y_j + 2\sum_{\substack{j \text{ even}\\ 0<j<2n}}y_j + y_{2n}\Bigr) - h\Bigl(\tfrac12y_0 + \sum_{\substack{j \text{ even}\\0<j<2n}}y_j + \tfrac12y_{2n}\Bigr) = h\Bigl(\tfrac12y_0 + 2\sum_{\text{odd}}y_j + \sum_{\text{even, interior}}y_j + \tfrac12y_{2n}\Bigr).
 $$
 
-Dividing by $3$: $\frac{h}{6}\left(y_0 + 4\sum_{\text{odd}}y_j + 2\sum_{\text{even, interior}}y_j + y_{2n}\right)$, which is $S_{h/2}$ with spacing $\frac h2$ (since $\frac{h/2}{3} = \frac h6$).
+Dividing by $3$,
+
+$$
+\frac{4T_{h/2} - T_h}{3} = \frac{h}{6}\Bigl(y_0 + 4\sum_{\text{odd}}y_j + 2\sum_{\text{even, interior}}y_j + y_{2n}\Bigr),
+$$
+
+which is $S_{h/2}$ with spacing $\frac h2$ (since $\frac{h/2}{3} = \frac h6$).
 :::
 :::
 

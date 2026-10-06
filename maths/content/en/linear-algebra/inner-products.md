@@ -112,7 +112,7 @@ and for an orthonormal basis simply $v = \inner{v}{u_1}u_1 + \dots + \inner{v}{u
 Suppose $c_1u_1 + \dots + c_ku_k = 0$. Taking the inner product with $u_j$ kills every term except one: $c_j\inner{u_j}{u_j} = 0$, and $\inner{u_j}{u_j} > 0$, so $c_j = 0$. For the formula, write $v = \sum c_iu_i$ and take the inner product with $u_j$ in the same way: $\inner{v}{u_j} = c_j\inner{u_j}{u_j}$.
 :::
 
-Compare this with a general basis, where finding coordinates means solving a linear system. The numbers $\inner{v}{u_i}$ are called the **Fourier coefficients** of $v$, after the case of trigonometric functions ([[pde/fourier-series]]).
+Compare this with a general basis, where finding coordinates means solving a linear system. The coefficients in [[#eq-fourier-coeffs]] — simply $\inner{v}{u_i}$ for an orthonormal basis — are called the **Fourier coefficients** of $v$, after the case of trigonometric functions ([[pde/fourier-series]]).
 
 ::: example Coordinates in an orthogonal basis {#ex-orth-coords}
 Check that $\mathbf{u}_1 = (1,1,1)$, $\mathbf{u}_2 = (1,-1,0)$, $\mathbf{u}_3 = (1,1,-2)$ form an orthogonal basis of $\R^3$, and express $\mathbf{v} = (3, 1, -2)$ in it.
@@ -134,7 +134,7 @@ Which of these vectors are orthogonal to $(1, 2, -1)$? (Select all that apply.)
 - [ ] $(1, 1, 1)$
 - [x] $(0, 1, 2)$
 ::: solution
-Compute dot products with $(1,2,-1)$: $1 + 0 - 1 = 0$; $2 - 2 + 0 = 0$; $1 + 2 - 1 = 2$; $0 + 2 - 2 = 0$. So all except $(1,1,1)$. Together, these orthogonal vectors fill the plane $x + 2y - z = 0$, which is the orthogonal complement of the line through $(1,2,-1)$.
+Compute dot products with $(1,2,-1)$: $1 + 0 - 1 = 0$; $2 - 2 + 0 = 0$; $1 + 2 - 1 = 2$; $0 + 2 - 2 = 0$. So all except $(1,1,1)$. The three vectors that pass the test lie in the plane $x + 2y - z = 0$ (any two of them span it), which is the orthogonal complement of the line through $(1,2,-1)$.
 :::
 :::
 
@@ -470,6 +470,6 @@ $$
 
 with equality if and only if $v\in\Span(e_1, \dots, e_k)$.
 ::: solution
-Let $W = \Span(e_1, \dots, e_k)$. By [[#thm-decomposition]], $v = \hat v + z$ with $\hat v = \sum\inner{v}{e_i}e_i$ and $z\perp W$. By Pythagoras (applied repeatedly to orthogonal pieces), $\norm{\hat v}^2 = \sum\inner{v}{e_i}^2$ and $\norm{v}^2 = \norm{\hat v}^2 + \norm{z}^2\ge\norm{\hat v}^2$. Equality holds iff $z = 0$, i.e. iff $v = \hat v\in W$. (For infinite orthonormal families such as the trigonometric functions, letting $k\to\infty$ shows that the squares of the Fourier coefficients of $f$ form a convergent series.)
+Let $W = \Span(e_1, \dots, e_k)$. By [[#thm-decomposition]], $v = \hat v + z$ with $\hat v = \sum\inner{v}{e_i}e_i$ and $z\perp W$. By Pythagoras (applied repeatedly to orthogonal pieces), $\norm{\hat v}^2 = \sum\inner{v}{e_i}^2$ and $\norm{v}^2 = \norm{\hat v}^2 + \norm{z}^2\ge\norm{\hat v}^2$. Equality holds iff $z = 0$, i.e. iff $v = \hat v\in W$. (For infinite orthonormal families such as the normalised trigonometric functions, letting $k\to\infty$ shows that the squares of the Fourier coefficients of $f$ form a convergent series.)
 :::
 :::

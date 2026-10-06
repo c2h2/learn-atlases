@@ -307,7 +307,7 @@ f: cos(ln(x)); sin(ln(x)); x^2*ln(x)
 x: 0.002, 3
 y: -1.5, 1.5
 labels: \cos(\ln t); \sin(\ln t); t^2\ln t
-caption: Solutions of Cauchy–Euler equations near the singular point $t = 0$. The solutions $\cos(\ln t)$ and $\sin(\ln t)$ of $t^2y'' + ty' + y = 0$ oscillate infinitely often as $t\to0^+$, ever faster; $t^2\ln t$ from [[#ex-reduction]] tends to $0$ but is not twice differentiable at $0$. Zoom towards the origin: behaviour like this cannot occur at a point where the coefficients are continuous.
+caption: Solutions of Cauchy–Euler equations near the singular point $t = 0$. The solutions $\cos(\ln t)$ and $\sin(\ln t)$ of $t^2y'' + ty' + y = 0$ oscillate infinitely often as $t\to0^+$, ever faster — successive zeros shrink by the factor $e^{-\pi}\approx 0.04$, so only the first swings are visible at this scale; $t^2\ln t$ from [[#ex-reduction]] tends to $0$ but is not twice differentiable at $0$. Behaviour like this cannot occur at a point where the coefficients are continuous.
 :::
 
 ## Free mechanical vibrations
@@ -370,7 +370,7 @@ k: 4
 F: 0
 x0: 1
 v0: 0
-caption: A mass–spring system $mx'' + cx' + kx = 0$. With $m = 1$, $k = 4$ the critical damping is $c = 2\sqrt{mk} = 4$. Increase $c$ from $0.4$: the oscillations die faster and slow down slightly, stop altogether at $c = 4$, and for larger $c$ the mass creeps back ever more slowly — too much damping is as bad as too little.
+caption: A mass–spring system $mx'' + cx' + kx = 0$. With $m = 1$, $k = 4$ the critical damping is $c = 2\sqrt{mk} = 4$. Increase $c$ from $0.4$: the oscillations die faster and slow down slightly, and stop altogether at $c = 4$, the end of the slider. Then keep $c = 4$ and lower $k$, so that $c^2 > 4mk$: the overdamped mass creeps back ever more slowly — too much damping is as bad as too little.
 :::
 
 The phase plane gives another view. Writing $v = x'$, the equation becomes the system $x' = v$, $v' = -\frac km x - \frac cm v$, and each solution traces a curve in the $(x,v)$-plane. Undamped motion gives closed ellipses (the level curves of the energy); underdamped motion spirals into the origin; over- and critically damped motion approaches it without spiralling.
@@ -395,7 +395,7 @@ $c^2 = 16$ and $4mk = 16$ are equal, so the system is critically damped: the cha
 :::
 
 ::: application Suspensions, circuits and buildings
-Car suspensions and the door closers on fire doors are designed to be close to critically damped: they return to equilibrium as fast as possible without overshooting. In an electrical circuit with an inductor $L$, resistor $R$ and capacitor $C$ in series, the charge satisfies $Lq'' + Rq' + q/C = 0$ — exactly [[#eq-spring]] with inductance playing the role of mass, resistance of friction and $1/C$ of stiffness. Engineers move freely between the mechanical and electrical pictures. Tall buildings use tuned mass dampers, large masses on springs and dampers near the top, to dissipate the energy of swaying caused by wind and earthquakes.
+Door closers on fire doors are designed to be close to critically damped: they return to equilibrium as fast as possible without overshooting. Car suspensions, by contrast, are deliberately underdamped — $c$ is typically only $20$–$40\%$ of the critical value $2\sqrt{mk}$ — trading some overshoot for a softer ride. In an electrical circuit with an inductor $L$, resistor $R$ and capacitor $C$ in series, the charge satisfies $Lq'' + Rq' + q/C = 0$ — exactly [[#eq-spring]] with inductance playing the role of mass, resistance of friction and $1/C$ of stiffness. Engineers move freely between the mechanical and electrical pictures. Tall buildings use tuned mass dampers, large masses on springs and dampers near the top, to dissipate the energy of swaying caused by wind and earthquakes.
 :::
 
 ::: history
@@ -466,7 +466,7 @@ So $y_2 = t + 1$ (dropping the sign) is a second solution; check: $t\cdot 0 - (t
 :::
 
 ::: exercise Critical damping {level=2 check="6"}
-A mass of $1$ kg hangs on a spring of stiffness $9$ N/m. What damping coefficient $c$ makes the system critically damped? For this $c$, solve the IVP $x(0) = 1$, $x'(0) = 0$ and find the maximum of $\lvert x\rvert$ for $t \ge 0$.
+A mass of $1$ kg hangs on a spring of stiffness $9$ N/m. What damping coefficient $c$ makes the system critically damped? For this $c$, solve the IVP $x(0) = 1$, $x'(0) = 0$ and find the maximum of $\lvert x\rvert$ for $t \ge 0$. Enter $c$.
 ::: solution
 Critical damping requires $c^2 = 4mk = 36$, so $c = 6$. Then $r^2 + 6r + 9 = (r+3)^2$ and $x = (c_1 + c_2t)e^{-3t}$ with $c_1 = 1$ and $c_2 - 3c_1 = 0$: $x = (1 + 3t)e^{-3t}$. For $t > 0$, $x' = -9te^{-3t} < 0$, so $x$ decreases from $1$ towards $0$ without crossing it, and $\max\lvert x\rvert = 1$, attained at $t = 0$.
 :::

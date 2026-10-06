@@ -385,7 +385,7 @@ caption: 由[[#eq-bessel-series]]算出的贝塞尔函数$J_0$和$J_1$，以及$
 :::
 
 ::: application 鼓的声音
-半径为$a$的圆形鼓膜以形如$J_n(kr)\cos(n\theta)\cos(ckt)$的模式振动，其中固定的边缘要求$J_n(ka) = 0$。因此允许的频率与贝塞尔函数的零点成正比：对于对称模式，频率与$2.405$，$5.520$，$8.654$，……成正比。与振动弦的频率$1, 2, 3, \dots$不同，这些频率不是最低频率的整数倍，这就是鼓的音高不如小提琴明确的原因。推导过程见[[pde/laplace-equation]]和[[pde/sturm-liouville]]两章。
+半径为$a$的圆形鼓膜以形如$J_n(kr)\cos(n\theta)\cos(ckt)$的模式振动，其中固定的边缘要求$J_n(ka) = 0$。因此允许的频率与贝塞尔函数的零点成正比：对于对称模式，频率与$2.405$，$5.520$，$8.654$，……成正比。与振动弦的频率$1, 2, 3, \dots$不同，这些频率不是最低频率的整数倍，这就是鼓的音高不如小提琴明确的原因。这些模式来自在极坐标下对波动方程分离变量，就像[[pde/laplace-equation]]一章在圆盘上对拉普拉斯方程分离变量那样；径向因子于是满足贝塞尔方程，这是一个奇异施图姆-刘维尔问题（[[pde/sturm-liouville]]）。
 :::
 
 ::: history
@@ -394,7 +394,7 @@ caption: 由[[#eq-bessel-series]]算出的贝塞尔函数$J_0$和$J_1$，以及$
 
 ## 后续内容
 
-勒让德多项式和贝塞尔函数是奇异施图姆-刘维尔问题的特征函数，这将在[[pde/sturm-liouville]]一章中研究；每当在球坐标或柱坐标下对拉普拉斯方程、热方程或波动方程分离变量时，它们都会出现（[[pde/laplace-equation]]）。[[#thm-legendre-orth]]中的正交性，是[[pde/fourier-series]]一章中正弦与余弦函数正交性的多项式版本。在复分析中，级数解是复平面上微分方程理论的出发点，而解在奇点周围的行为（它们的**单值性**）是其中的核心课题（[[complex-analysis/laurent-series]]）。此外，勒让德多项式的零点就是高斯求积公式的节点（[[numerical-analysis/numerical-integration]]）。
+勒让德多项式和贝塞尔函数是奇异施图姆-刘维尔问题的特征函数，这将在[[pde/sturm-liouville]]一章中研究；每当在球坐标或柱坐标下对拉普拉斯方程、热方程或波动方程分离变量时，它们都会出现（[[pde/laplace-equation]]）。[[#thm-legendre-orth]]中的正交性，是[[pde/fourier-series]]一章中正弦与余弦函数正交性的多项式版本。在复分析中，级数解是复平面上微分方程理论的出发点，而解绕奇点延拓时的行为（它们的**单值性**）是其中的核心课题；那里所用的局部展开推广了[[complex-analysis/laurent-series]]一章中的洛朗级数。此外，勒让德多项式的零点就是高斯求积公式的节点（[[numerical-analysis/numerical-integration]]）。
 
 ::: summary
 - 在常点处，代入$y = \sum a_n(x-x_0)^n$，平移指标并比较系数，得到递推关系；$a_0 = y(x_0)$和$a_1 = y'(x_0)$可以自由选取（[[#thm-ordinary]]）。

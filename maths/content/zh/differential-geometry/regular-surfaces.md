@@ -100,7 +100,7 @@ u: 0, 2pi
 v: 0, 2pi
 sliders: a=2:1:3:0.1; b=0.8:0.2:3:0.05
 color: plain
-caption: [[#ex-level-sets]]中的环面曲面片。网格曲线是经圆（$v$为常数，绕管道一周）和纬圆（$u$为常数，绕轴一周）；它们处处成直角相交，这就是这个曲面片的$F = 0$的原因。把$b$增大到$a$：当$a = b$时，管道碰到旋转轴，曲面在原点处不再正则。
+caption: [[#ex-level-sets]]中的环面曲面片。网格曲线是经圆（$v$为常数，绕管道一周）和纬圆（$u$为常数，绕轴一周）；它们处处成直角相交，因为对这个曲面片有$\mathbf{x}_u\cdot\mathbf{x}_v = 0$。把$b$增大到$a$：当$a = b$时，管道碰到旋转轴，曲面在原点处不再正则。
 :::
 
 并不是每个看起来合理的集合都是正则曲面。
@@ -345,7 +345,7 @@ $$
 :::
 
 ::: application 墨卡托地图
-墨卡托（Gerardus Mercator）1569年的世界地图把经度为$\varphi$、墨卡托坐标为$\psi$的点画在平面上的$(\varphi, \psi)$位置——它就是上面那个共形曲面片的逆。由于这个曲面片是共形的，罗盘方位得以保持，而恒定方位的航线（斜驶线）在图上表现为直线，这正是航海者所需要的。代价是比例因子$1/\lambda = \cosh\psi = \sec\theta$：格陵兰岛在图上看起来和非洲差不多大，而实际上非洲约为格陵兰岛的十四倍。球极投影也是共形的，它被用于绘制极区海图，也用于复分析，在复分析中它把球面与扩充复平面等同起来（[[complex-analysis/conformal-maps]]）。
+墨卡托（Gerardus Mercator）1569年的世界地图把经度为$\varphi$、墨卡托坐标为$\psi$的点画在平面上的$(\varphi, \psi)$位置——它就是上面那个共形曲面片的逆。由于这个曲面片是共形的，罗盘方位得以保持，而恒定方位的航线（斜驶线）在图上表现为直线，这正是航海者所需要的。代价是比例因子$1/\lambda = \cosh\psi = \sec\theta$：格陵兰岛在图上看起来和非洲差不多大，而实际上非洲约为格陵兰岛的十四倍。球极投影也是共形的，它被用于绘制极区海图，也用于复分析，在复分析中它把球面与扩充复平面等同起来（[[complex-analysis/complex-numbers]]）。
 :::
 
 ::: history
@@ -354,7 +354,7 @@ $$
 
 ## 后续内容
 
-第一基本形式记录了如何在曲面**内部**进行测量。下一章[[differential-geometry/surface-curvature]]通过单位法向量转动的速率来研究曲面在空间中如何弯曲；这将引出第二基本形式和高斯曲率。随后，高斯绝妙定理（*Theorema Egregium*，[[differential-geometry/theorema-egregium]]）表明，令人惊奇的是，高斯曲率仅由$E, F, G$就能算出——这就是为什么第一基本形式与平面相同的圆柱面曲率为零，而球面的任何地图都不能保持距离。测地线，即曲面上的最短路径，只用第一基本形式就能定义（[[differential-geometry/geodesics-gauss-bonnet]]）。在黎曼几何中，第一基本形式摆脱了任何外围的$\R^3$，成为流形的**度量**，这是广义相对论的基本对象。
+第一基本形式记录了如何在曲面**内部**进行测量。下一章[[differential-geometry/surface-curvature]]通过单位法向量转动的速率来研究曲面在空间中如何弯曲；这将引出第二基本形式和高斯曲率。随后，高斯绝妙定理（*Theorema Egregium*，[[differential-geometry/theorema-egregium]]）表明，令人惊奇的是，高斯曲率仅由$E, F, G$就能算出——这就是为什么第一基本形式与平面相同的圆柱面曲率为零，而球面的任何地图都不能保持距离。测地线，即曲面上局部最短的路径，只用第一基本形式就能定义（[[differential-geometry/geodesics-gauss-bonnet]]）。在黎曼几何中，第一基本形式摆脱了任何外围的$\R^3$，成为流形的**度量**，这是广义相对论的基本对象。
 
 ::: summary
 - 曲面片是满足$\mathbf{x}_u\times\mathbf{x}_v\ne\mathbf{0}$、且是到其像上的同胚的光滑映射$\mathbf{x}\colon U\to\R^3$（[[#def-surface-patch]]）；正则曲面是被曲面片覆盖的集合，这些曲面片的像都是它的开的部分（[[#def-regular-surface]]）。
@@ -369,7 +369,7 @@ $$
 ## 习题
 
 ::: exercise 抛物面 {level=1 check="9"}
-对抛物面的曲面片$\mathbf{x}(u,v) = (u, v, u^2 + v^2)$，计算$E$，$F$，$G$，以及$EG - F^2$在$(u,v) = (1,1)$处的值。
+对抛物面的曲面片$\mathbf{x}(u,v) = (u, v, u^2 + v^2)$，计算$E$，$F$，$G$，以及$EG - F^2$在$(u,v) = (1,1)$处的值。（输入$EG - F^2$。）
 ::: solution
 $\mathbf{x}_u = (1, 0, 2u)$，$\mathbf{x}_v = (0, 1, 2v)$，所以$E = 1 + 4u^2$，$F = 4uv$，$G = 1 + 4v^2$。在$(1,1)$处：$E = G = 5$，$F = 4$，$EG - F^2 = 25 - 16 = 9$。（一般地，$EG - F^2 = 1 + 4u^2 + 4v^2 = \norm{\mathbf{x}_u\times\mathbf{x}_v}^2$。）
 :::
