@@ -1,0 +1,89 @@
+{
+  "slug": "neural-networks",
+  "title": "Neural Networks",
+  "full_title": "Neural Networks and Deep Learning",
+  "area": "foundations",
+  "level": 1,
+  "order": 30,
+  "tagline": "Multilayer networks, backpropagation, optimisers, initialisation, normalisation and training practice",
+  "summary": "Deep networks learn their own features. This course builds multilayer perceptrons, derives backpropagation and automatic differentiation, and covers the optimisers, initialisation, normalisation and regularisation that make deep networks trainable, with convolutional networks as a first architecture.",
+  "overview": [],
+  "prerequisites": [
+    "ml-fundamentals"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "perceptrons-mlps",
+      "title": "From perceptrons to multilayer networks",
+      "summary": "Neurons, activation functions, multilayer perceptrons and universal approximation.",
+      "requires": [
+        "ml-fundamentals/logistic-regression"
+      ]
+    },
+    {
+      "slug": "backpropagation",
+      "title": "Backpropagation",
+      "summary": "Computation graphs, the backward pass and the cost of computing gradients.",
+      "requires": [
+        "neural-networks/perceptrons-mlps",
+        "math-for-ml/gradients"
+      ]
+    },
+    {
+      "slug": "automatic-differentiation",
+      "title": "Automatic differentiation",
+      "summary": "Forward and reverse mode, tensors and autograd systems such as PyTorch and JAX.",
+      "requires": [
+        "neural-networks/backpropagation"
+      ]
+    },
+    {
+      "slug": "optimisers",
+      "title": "Optimisers",
+      "summary": "SGD, momentum, RMSProp, Adam and AdamW, learning-rate schedules and warm-up.",
+      "requires": [
+        "neural-networks/backpropagation",
+        "math-for-ml/optimisation"
+      ]
+    },
+    {
+      "slug": "initialisation-normalisation",
+      "title": "Initialisation and normalisation",
+      "summary": "Vanishing and exploding gradients, Xavier and He initialisation, batch and layer normalisation, and residual connections.",
+      "requires": [
+        "neural-networks/optimisers"
+      ]
+    },
+    {
+      "slug": "regularisation-deep",
+      "title": "Regularisation in deep networks",
+      "summary": "Dropout, weight decay, label smoothing, data augmentation and implicit regularisation.",
+      "requires": [
+        "neural-networks/initialisation-normalisation",
+        "ml-fundamentals/regularisation"
+      ]
+    },
+    {
+      "slug": "convolutional-networks",
+      "title": "Convolutional networks",
+      "summary": "Convolutions, pooling, receptive fields and residual networks.",
+      "requires": [
+        "neural-networks/initialisation-normalisation"
+      ]
+    },
+    {
+      "slug": "training-practice",
+      "title": "Training deep networks in practice",
+      "summary": "Data pipelines, batching, mixed precision, debugging loss curves and reproducibility.",
+      "requires": [
+        "neural-networks/regularisation-deep"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "sequence-models"
+  ]
+}

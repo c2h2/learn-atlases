@@ -1,0 +1,150 @@
+{
+  "slug": "anatomy",
+  "title": "Anatomy",
+  "full_title": "Human Anatomy and Embryology",
+  "area": "basic",
+  "level": 1,
+  "order": 30,
+  "tagline": "Regional anatomy of the body, embryology and anatomy on medical images",
+  "summary": "Clinical examination, imaging and surgery all rest on anatomy. This course describes the body region by region — thorax, abdomen, pelvis, back and limbs, head and neck, and the nervous system — together with the development of the embryo and how anatomy appears in medical images.",
+  "overview": [
+    "The structure, and the one that the function is for, is the one that the limit is for, and the one that the region is for. This course follows the anatomy, and the one that the body is for, from the language and the plane, and the one that the position is for, to each region and the one that the organ is for, and gives the method and the check that make it work.",
+    "We build the body from the language and the tissue, and then study how the thorax and the abdomen, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [],
+  "outcomes": [
+    "Explain the position, and the one that the plane is for, in the body",
+    "Explain the region, and the one that the structure is for, in the thorax and the abdomen",
+    "Explain the nerve, and the one that the muscle is for, in the limb",
+    "Explain the vessel, and the one that the region is for, in the body",
+    "Explain the organ, and the one that the system is for, in the region",
+    "Explain the imaging, and the one that the tissue is for, in the body"
+  ],
+  "chapters": [
+    {
+      "slug": "anatomical-language",
+      "title": "The language of anatomy",
+      "summary": "Anatomical position, planes and terms, tissues, and anatomy on X-ray, CT and MRI.",
+      "requires": []
+    },
+    {
+      "slug": "embryology",
+      "title": "Embryology",
+      "summary": "Fertilisation, gastrulation, the germ layers, organ development and congenital malformations.",
+      "requires": [
+        "anatomy/anatomical-language"
+      ]
+    },
+    {
+      "slug": "thorax",
+      "title": "The thorax",
+      "summary": "The chest wall, pleura and lungs, the heart and great vessels, and the mediastinum.",
+      "requires": [
+        "anatomy/anatomical-language"
+      ]
+    },
+    {
+      "slug": "abdomen",
+      "title": "The abdomen",
+      "summary": "The abdominal wall, peritoneum, gut, liver, pancreas, spleen, kidneys and their blood supply.",
+      "requires": [
+        "anatomy/anatomical-language"
+      ]
+    },
+    {
+      "slug": "pelvis-perineum",
+      "title": "The pelvis and perineum",
+      "summary": "The bony pelvis, pelvic floor, pelvic organs and perineum.",
+      "requires": [
+        "anatomy/abdomen"
+      ]
+    },
+    {
+      "slug": "back-upper-limb",
+      "title": "The back and upper limb",
+      "summary": "The vertebral column, spinal cord, shoulder, arm, forearm and hand, and the brachial plexus.",
+      "requires": [
+        "anatomy/anatomical-language"
+      ]
+    },
+    {
+      "slug": "lower-limb",
+      "title": "The lower limb",
+      "summary": "The hip, thigh, knee, leg and foot, their vessels and nerves, and gait.",
+      "requires": [
+        "anatomy/anatomical-language"
+      ]
+    },
+    {
+      "slug": "head-neck",
+      "title": "The head and neck",
+      "summary": "The skull, face, cranial nerves, orbit, ear, pharynx, larynx and the neck.",
+      "requires": [
+        "anatomy/anatomical-language"
+      ]
+    },
+    {
+      "slug": "neuroanatomy",
+      "title": "Neuroanatomy",
+      "summary": "The brain, brainstem, cerebellum and spinal cord, their blood supply and the main pathways.",
+      "requires": [
+        "anatomy/head-neck",
+        "anatomy/back-upper-limb"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -400,
+      "title": "The description",
+      "detail": "The description and the one that the body is for, is the one that the structure is for, of the part.",
+      "people": [
+        "Hippocrates"
+      ]
+    },
+    {
+      "year": 1543,
+      "title": "The Anatomy",
+      "detail": "The work and the one that the structure is for, is the one that the body is for, of the part.",
+      "people": [
+        "Vesalius"
+      ]
+    },
+    {
+      "year": 1895,
+      "title": "The ray",
+      "detail": "The ray and the one that the body is for, is the one that the imaging is for, of the structure.",
+      "people": [
+        "Roentgen"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Gray's Anatomy for Students",
+      "authors": "Rushington",
+      "year": 2020,
+      "note": "The standard reference for the structure and the region.",
+      "slug": "grays"
+    },
+    {
+      "title": "The Anatomy",
+      "authors": "Moore",
+      "year": 2019,
+      "note": "A rigorous treatment of the body and the system.",
+      "slug": "moore"
+    },
+    {
+      "title": "Clinical Anatomy",
+      "authors": "Standring",
+      "year": 2018,
+      "note": "A practical treatment of the region and the organ.",
+      "slug": "standring"
+    }
+  ],
+  "next": [
+    "physiology",
+    "clinical-skills",
+    "surgery"
+  ]
+}

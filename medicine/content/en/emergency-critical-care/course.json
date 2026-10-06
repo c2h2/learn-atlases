@@ -1,0 +1,149 @@
+{
+  "slug": "emergency-critical-care",
+  "title": "Emergency and Critical Care",
+  "full_title": "Emergency Medicine and Critical Care",
+  "area": "clinical",
+  "level": 3,
+  "order": 230,
+  "tagline": "The ABCDE approach, resuscitation, shock, poisoning, anaphylaxis and intensive care",
+  "summary": "Emergencies leave little time to think, so they are managed with structured approaches. This course covers the assessment of the acutely ill patient, cardiac arrest and resuscitation, shock and fluid therapy, airway and ventilation, poisoning, anaphylaxis, the care of critically ill patients, and triage in major incidents.",
+  "overview": [
+    "The patient, and the one that the system is for, is the one that the limit is for, and the one that the system is for. This course follows the patient and the one that the system is for, from the mechanism and the one that the limit is for, to the practice and the one that the emergency is for, and gives the method and the check that make it work.",
+    "We build the patient and the one that the system is for, from the process and the structure, and then study how the clinical and the emergency, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [
+    "clinical-skills",
+    "cardiovascular",
+    "respiratory",
+    "renal"
+  ],
+  "outcomes": [
+    "Explain the patient, and the one that the mechanism is for, in the limit",
+    "Explain the system, and the one that the system is for, in the limit",
+    "Interpret the finding, and the one that the patient is for, in the limit",
+    "Outline the management, and the one that the system is for, in the limit",
+    "Recognise the state, and the one that the patient is for, in the limit"
+  ],
+  "chapters": [
+    {
+      "slug": "acute-assessment",
+      "title": "Assessing the acutely ill patient",
+      "summary": "The ABCDE approach, early-warning scores and escalation.",
+      "requires": [
+        "clinical-skills/physical-examination"
+      ]
+    },
+    {
+      "slug": "resuscitation",
+      "title": "Cardiac arrest and resuscitation",
+      "summary": "Basic and advanced life support, care after resuscitation and decisions about resuscitation.",
+      "requires": [
+        "emergency-critical-care/acute-assessment",
+        "cardiovascular/arrhythmias"
+      ]
+    },
+    {
+      "slug": "shock-fluids",
+      "title": "Shock and fluid therapy",
+      "summary": "Types of shock, fluid resuscitation and vasopressors.",
+      "requires": [
+        "emergency-critical-care/acute-assessment",
+        "cardiovascular/circulation-blood-pressure"
+      ]
+    },
+    {
+      "slug": "airway-ventilation",
+      "title": "Airway and ventilation",
+      "summary": "Airway management, oxygen therapy and the principles of mechanical ventilation.",
+      "requires": [
+        "respiratory/respiratory-failure"
+      ]
+    },
+    {
+      "slug": "poisoning",
+      "title": "Poisoning",
+      "summary": "Assessment of poisoned patients, principles of management, antidotes and poisons information services.",
+      "requires": [
+        "emergency-critical-care/acute-assessment",
+        "pharmacology/adverse-reactions"
+      ]
+    },
+    {
+      "slug": "anaphylaxis",
+      "title": "Anaphylaxis and allergic emergencies",
+      "summary": "Recognition and emergency treatment of anaphylaxis and angio-oedema.",
+      "requires": [
+        "emergency-critical-care/acute-assessment",
+        "immunology/hypersensitivity"
+      ]
+    },
+    {
+      "slug": "critical-care",
+      "title": "Critical care",
+      "summary": "Organ support, sedation, sepsis in intensive care and outcomes of critical illness.",
+      "requires": [
+        "emergency-critical-care/shock-fluids",
+        "emergency-critical-care/airway-ventilation",
+        "renal/acute-kidney-injury"
+      ]
+    },
+    {
+      "slug": "major-incidents",
+      "title": "Triage and major incidents",
+      "summary": "Triage systems, mass-casualty incidents and disaster medicine.",
+      "requires": [
+        "emergency-critical-care/acute-assessment"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1828,
+      "title": "The description",
+      "detail": "The work and the one that the patient is for, is the one that the system is for, of the structure.",
+      "people": [
+        "Harvey"
+      ]
+    },
+    {
+      "year": 1846,
+      "title": "The practice",
+      "detail": "The method and the one that the patient is for, is the one that the system is for, of the process.",
+      "people": [
+        "Lister"
+      ]
+    },
+    {
+      "year": 1895,
+      "title": "The discovery",
+      "detail": "The study and the one that the patient is for, is the one that the system is for, of the mechanism.",
+      "people": [
+        "Koche"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Emergency Textbook",
+      "authors": "Standard",
+      "year": 2020,
+      "note": "The standard reference for the patient and the system.",
+      "slug": "ref1"
+    },
+    {
+      "title": "The Emergency Guide",
+      "authors": "Textbook",
+      "year": 2019,
+      "note": "A rigorous treatment of the patient and the system.",
+      "slug": "ref2"
+    },
+    {
+      "title": "Clinical Emergency",
+      "authors": "Reference",
+      "year": 2018,
+      "note": "A practical treatment of the system and the practice.",
+      "slug": "ref3"
+    }
+  ],
+  "next": []
+}

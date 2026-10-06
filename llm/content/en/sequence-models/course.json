@@ -1,0 +1,81 @@
+{
+  "slug": "sequence-models",
+  "title": "Sequence Models",
+  "full_title": "Sequence Models and Attention",
+  "area": "language",
+  "level": 2,
+  "order": 50,
+  "tagline": "Recurrent networks, LSTMs, sequence-to-sequence models and the invention of attention",
+  "summary": "Language unfolds in time. This course models sequences with recurrent networks, meets the difficulty of long-range dependencies with LSTMs and GRUs, builds sequence-to-sequence models for translation, and introduces attention — the idea that became the Transformer.",
+  "overview": [],
+  "prerequisites": [
+    "neural-networks",
+    "text-and-language"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "recurrent-networks",
+      "title": "Recurrent neural networks",
+      "summary": "Recurrence, unrolling, backpropagation through time and neural language models.",
+      "requires": [
+        "neural-networks/backpropagation",
+        "text-and-language/ngram-models"
+      ]
+    },
+    {
+      "slug": "long-range-dependencies",
+      "title": "LSTMs and GRUs",
+      "summary": "Vanishing gradients through time, gating, the LSTM and GRU cells and gradient clipping.",
+      "requires": [
+        "sequence-models/recurrent-networks"
+      ]
+    },
+    {
+      "slug": "seq2seq",
+      "title": "Sequence-to-sequence models",
+      "summary": "Encoder–decoder architectures, teacher forcing and machine translation.",
+      "requires": [
+        "sequence-models/long-range-dependencies"
+      ]
+    },
+    {
+      "slug": "decoding-basics",
+      "title": "Decoding",
+      "summary": "Greedy and beam search, length normalisation and exposure bias.",
+      "requires": [
+        "sequence-models/seq2seq"
+      ]
+    },
+    {
+      "slug": "attention-mechanism",
+      "title": "Attention",
+      "summary": "Additive and multiplicative attention, alignment, and attention as a soft dictionary lookup.",
+      "requires": [
+        "sequence-models/seq2seq"
+      ]
+    },
+    {
+      "slug": "contextual-embeddings",
+      "title": "Contextual embeddings",
+      "summary": "ELMo, transfer learning and the move from static to contextual representations.",
+      "requires": [
+        "sequence-models/attention-mechanism",
+        "text-and-language/word-embeddings"
+      ]
+    },
+    {
+      "slug": "state-space-models",
+      "title": "Convolutions and state-space models",
+      "summary": "Temporal convolutions, linear recurrences and state-space models such as S4 and Mamba.",
+      "requires": [
+        "sequence-models/long-range-dependencies"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "transformers"
+  ]
+}

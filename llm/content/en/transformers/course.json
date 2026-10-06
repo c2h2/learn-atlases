@@ -1,0 +1,90 @@
+{
+  "slug": "transformers",
+  "title": "The Transformer",
+  "full_title": "The Transformer",
+  "area": "language",
+  "level": 2,
+  "order": 60,
+  "tagline": "Self-attention, multi-head attention, positional encodings, the Transformer block and its variants",
+  "summary": "Since 2017 the Transformer has been the architecture of language models. This course derives self-attention and multi-head attention, positional encodings, the residual Transformer block, the encoder, decoder and encoder–decoder variants, the cost of attention, and the efficient and sparse variants used at scale.",
+  "overview": [],
+  "prerequisites": [
+    "sequence-models"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "self-attention",
+      "title": "Self-attention",
+      "summary": "Queries, keys and values, scaled dot-product attention and attention as a weighted average.",
+      "requires": [
+        "sequence-models/attention-mechanism",
+        "math-for-ml/vectors-matrices"
+      ]
+    },
+    {
+      "slug": "multi-head-attention",
+      "title": "Multi-head attention",
+      "summary": "Heads and projections, causal masking and the shapes of attention computations.",
+      "requires": [
+        "transformers/self-attention"
+      ]
+    },
+    {
+      "slug": "positional-encoding",
+      "title": "Positional information",
+      "summary": "Sinusoidal and learned position embeddings, relative positions, RoPE and ALiBi.",
+      "requires": [
+        "transformers/self-attention"
+      ]
+    },
+    {
+      "slug": "transformer-block",
+      "title": "The Transformer block",
+      "summary": "The residual stream, layer normalisation and RMSNorm, feed-forward layers and gated activations such as SwiGLU.",
+      "requires": [
+        "transformers/multi-head-attention",
+        "neural-networks/initialisation-normalisation"
+      ]
+    },
+    {
+      "slug": "architecture-families",
+      "title": "Encoders, decoders and encoder–decoders",
+      "summary": "BERT-style encoders, GPT-style decoders and T5-style encoder–decoders, and what each is good for.",
+      "requires": [
+        "transformers/transformer-block"
+      ]
+    },
+    {
+      "slug": "attention-complexity",
+      "title": "The cost of attention",
+      "summary": "Quadratic cost in sequence length, memory traffic and FlashAttention.",
+      "requires": [
+        "transformers/multi-head-attention"
+      ]
+    },
+    {
+      "slug": "efficient-attention",
+      "title": "Efficient and long-context attention",
+      "summary": "Sparse, sliding-window and linear attention, and multi-query and grouped-query attention.",
+      "requires": [
+        "transformers/attention-complexity"
+      ]
+    },
+    {
+      "slug": "mixture-of-experts",
+      "title": "Mixture of experts",
+      "summary": "Sparse expert layers, routing, load balancing and the trade-offs of conditional computation.",
+      "requires": [
+        "transformers/transformer-block"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "pretraining",
+    "prompting-rag",
+    "interpretability"
+  ]
+}

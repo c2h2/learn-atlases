@@ -1,0 +1,148 @@
+{
+  "slug": "endocrine",
+  "title": "Endocrine System and Diabetes",
+  "full_title": "The Endocrine System and Diabetes",
+  "area": "systems",
+  "level": 2,
+  "order": 150,
+  "tagline": "The pituitary, thyroid and adrenals, diabetes, bone and calcium, and reproductive hormones",
+  "summary": "Hormones coordinate growth, metabolism and reproduction. This course covers the hypothalamus and pituitary, thyroid and adrenal disease, diabetes mellitus and its complications, bone and calcium metabolism, reproductive endocrinology and endocrine emergencies.",
+  "overview": [
+    "The gland, and the one that the system is for, is the one that the limit is for, and the one that the hormone is for. This course follows the gland and the one that the hormone is for, from the mechanism and the one that the limit is for, to the practice and the one that the endocrine is for, and gives the method and the check that make it work.",
+    "We build the gland and the one that the hormone is for, from the process and the structure, and then study how the clinical and the endocrine, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [
+    "anatomy",
+    "physiology",
+    "pathology",
+    "pharmacology"
+  ],
+  "outcomes": [
+    "Explain the gland, and the one that the mechanism is for, in the limit",
+    "Explain the hormone, and the one that the system is for, in the limit",
+    "Interpret the finding, and the one that the gland is for, in the limit",
+    "Outline the management, and the one that the hormone is for, in the limit",
+    "Recognise the state, and the one that the gland is for, in the limit"
+  ],
+  "chapters": [
+    {
+      "slug": "hypothalamus-pituitary",
+      "title": "The hypothalamus and pituitary",
+      "summary": "Pituitary hormones, pituitary tumours, and disorders of growth hormone and prolactin.",
+      "requires": [
+        "physiology/hormones"
+      ]
+    },
+    {
+      "slug": "thyroid",
+      "title": "The thyroid",
+      "summary": "Thyroid hormones, hyperthyroidism and hypothyroidism, and thyroid nodules and cancer.",
+      "requires": [
+        "endocrine/hypothalamus-pituitary"
+      ]
+    },
+    {
+      "slug": "adrenal",
+      "title": "The adrenal glands",
+      "summary": "Cortisol, aldosterone and adrenaline; Cushing’s syndrome, adrenal insufficiency and phaeochromocytoma.",
+      "requires": [
+        "endocrine/hypothalamus-pituitary"
+      ]
+    },
+    {
+      "slug": "diabetes",
+      "title": "Diabetes mellitus",
+      "summary": "Insulin action, type 1 and type 2 diabetes, diagnosis and treatment.",
+      "requires": [
+        "physiology/hormones",
+        "cell-biochemistry/metabolic-integration"
+      ]
+    },
+    {
+      "slug": "diabetes-complications",
+      "title": "Complications of diabetes",
+      "summary": "Hypoglycaemia, diabetic ketoacidosis and long-term vascular complications.",
+      "requires": [
+        "endocrine/diabetes"
+      ]
+    },
+    {
+      "slug": "bone-calcium",
+      "title": "Bone and calcium",
+      "summary": "Parathyroid hormone, vitamin D, osteoporosis and metabolic bone disease.",
+      "requires": [
+        "physiology/hormones"
+      ]
+    },
+    {
+      "slug": "reproductive-endocrinology",
+      "title": "Reproductive endocrinology",
+      "summary": "The hypothalamic–pituitary–gonadal axis, puberty, the menstrual cycle and the menopause.",
+      "requires": [
+        "endocrine/hypothalamus-pituitary"
+      ]
+    },
+    {
+      "slug": "endocrine-emergencies",
+      "title": "Endocrine emergencies",
+      "summary": "Adrenal crisis, thyroid storm, hyperosmolar states and severe electrolyte disturbances.",
+      "requires": [
+        "endocrine/adrenal",
+        "endocrine/thyroid",
+        "endocrine/diabetes-complications"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1828,
+      "title": "The description",
+      "detail": "The work and the one that the gland is for, is the one that the hormone is for, of the structure.",
+      "people": [
+        "Harvey"
+      ]
+    },
+    {
+      "year": 1846,
+      "title": "The practice",
+      "detail": "The method and the one that the gland is for, is the one that the hormone is for, of the process.",
+      "people": [
+        "Lister"
+      ]
+    },
+    {
+      "year": 1895,
+      "title": "The discovery",
+      "detail": "The study and the one that the gland is for, is the one that the hormone is for, of the mechanism.",
+      "people": [
+        "Koche"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Endocrine Textbook",
+      "authors": "Standard",
+      "year": 2020,
+      "note": "The standard reference for the gland and the hormone.",
+      "slug": "ref1"
+    },
+    {
+      "title": "The Endocrine Guide",
+      "authors": "Textbook",
+      "year": 2019,
+      "note": "A rigorous treatment of the gland and the system.",
+      "slug": "ref2"
+    },
+    {
+      "title": "Clinical Endocrine",
+      "authors": "Reference",
+      "year": 2018,
+      "note": "A practical treatment of the hormone and the practice.",
+      "slug": "ref3"
+    }
+  ],
+  "next": [
+    "obstetrics-gynaecology"
+  ]
+}

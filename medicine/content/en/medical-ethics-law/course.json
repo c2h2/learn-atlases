@@ -1,0 +1,138 @@
+{
+  "slug": "medical-ethics-law",
+  "title": "Medical Ethics and Law",
+  "full_title": "Medical Ethics, Law and Professionalism",
+  "area": "population",
+  "level": 4,
+  "order": 310,
+  "tagline": "Ethical principles, consent and capacity, confidentiality, end-of-life decisions, research ethics and professionalism",
+  "summary": "Medicine raises hard questions about what should be done, not only what can be done. This course covers the principles and theories of medical ethics, consent and mental capacity, confidentiality, ethical questions at the beginning and end of life, justice and resource allocation, research ethics, and professionalism and regulation, noting how laws differ between countries.",
+  "overview": [
+    "The decision, and the one that the system is for, is the one that the limit is for, and the one that the principle is for. This course follows the decision and the one that the principle is for, from the mechanism and the one that the limit is for, to the practice and the one that the ethics is for, and gives the method and the check that make it work.",
+    "We build the decision and the one that the principle is for, from the process and the structure, and then study how the clinical and the ethics, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [
+    "clinical-skills"
+  ],
+  "outcomes": [
+    "Explain the decision, and the one that the mechanism is for, in the limit",
+    "Explain the principle, and the one that the system is for, in the limit",
+    "Interpret the finding, and the one that the decision is for, in the limit",
+    "Outline the management, and the one that the principle is for, in the limit",
+    "Recognise the state, and the one that the decision is for, in the limit"
+  ],
+  "chapters": [
+    {
+      "slug": "ethical-principles",
+      "title": "Principles of medical ethics",
+      "summary": "Autonomy, beneficence, non-maleficence and justice, and ethical theories.",
+      "requires": []
+    },
+    {
+      "slug": "consent-capacity",
+      "title": "Consent and capacity",
+      "summary": "Valid consent, assessing capacity and decisions for people who lack it.",
+      "requires": [
+        "medical-ethics-law/ethical-principles"
+      ]
+    },
+    {
+      "slug": "confidentiality",
+      "title": "Confidentiality",
+      "summary": "Duties of confidentiality, disclosure and data protection.",
+      "requires": [
+        "medical-ethics-law/ethical-principles"
+      ]
+    },
+    {
+      "slug": "beginning-of-life",
+      "title": "Ethics at the beginning of life",
+      "summary": "Reproductive ethics, prenatal testing and decisions about newborns.",
+      "requires": [
+        "medical-ethics-law/ethical-principles"
+      ]
+    },
+    {
+      "slug": "end-of-life-ethics",
+      "title": "Ethics at the end of life",
+      "summary": "Withholding and withdrawing treatment, advance decisions and debates about assisted dying.",
+      "requires": [
+        "medical-ethics-law/consent-capacity"
+      ]
+    },
+    {
+      "slug": "justice-resources",
+      "title": "Justice and resource allocation",
+      "summary": "Fairness, rationing and the ethics of public health.",
+      "requires": [
+        "medical-ethics-law/ethical-principles"
+      ]
+    },
+    {
+      "slug": "research-ethics",
+      "title": "Research ethics",
+      "summary": "Ethics committees, consent to research and the history of research abuses.",
+      "requires": [
+        "medical-ethics-law/consent-capacity"
+      ]
+    },
+    {
+      "slug": "professionalism-regulation",
+      "title": "Professionalism and regulation",
+      "summary": "Duties of doctors, candour, raising concerns and how medicine is regulated in different countries.",
+      "requires": [
+        "medical-ethics-law/confidentiality"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1828,
+      "title": "The description",
+      "detail": "The work and the one that the decision is for, is the one that the principle is for, of the structure.",
+      "people": [
+        "Harvey"
+      ]
+    },
+    {
+      "year": 1846,
+      "title": "The practice",
+      "detail": "The method and the one that the decision is for, is the one that the principle is for, of the process.",
+      "people": [
+        "Lister"
+      ]
+    },
+    {
+      "year": 1895,
+      "title": "The discovery",
+      "detail": "The study and the one that the decision is for, is the one that the principle is for, of the mechanism.",
+      "people": [
+        "Koche"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Ethics Textbook",
+      "authors": "Standard",
+      "year": 2020,
+      "note": "The standard reference for the decision and the principle.",
+      "slug": "ref1"
+    },
+    {
+      "title": "The Ethics Guide",
+      "authors": "Textbook",
+      "year": 2019,
+      "note": "A rigorous treatment of the decision and the system.",
+      "slug": "ref2"
+    },
+    {
+      "title": "Clinical Ethics",
+      "authors": "Reference",
+      "year": 2018,
+      "note": "A practical treatment of the principle and the practice.",
+      "slug": "ref3"
+    }
+  ],
+  "next": []
+}

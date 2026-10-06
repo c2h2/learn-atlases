@@ -1,0 +1,88 @@
+{
+  "slug": "prompting-rag",
+  "title": "Prompting and Retrieval",
+  "full_title": "Prompting and Retrieval-Augmented Generation",
+  "area": "applications",
+  "level": 2,
+  "order": 80,
+  "tagline": "In-context learning, prompt design, structured output, embeddings, vector search and retrieval-augmented generation",
+  "summary": "Much of what a language model can do is unlocked by what you put in its context. This course covers in-context learning and prompt design, structured output, text embeddings and vector search, retrieval-augmented generation and its evaluation, and the problem of hallucination.",
+  "overview": [],
+  "prerequisites": [
+    "transformers"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "in-context-learning",
+      "title": "In-context learning",
+      "summary": "Zero- and few-shot prompting, and theories of why in-context learning works.",
+      "requires": [
+        "transformers/architecture-families"
+      ]
+    },
+    {
+      "slug": "prompt-design",
+      "title": "Prompt design",
+      "summary": "Instructions, examples, roles and formatting, and systematic prompt engineering.",
+      "requires": [
+        "prompting-rag/in-context-learning"
+      ]
+    },
+    {
+      "slug": "structured-output",
+      "title": "Structured output",
+      "summary": "JSON and schema-constrained generation, grammars and parsing model output.",
+      "requires": [
+        "prompting-rag/prompt-design"
+      ]
+    },
+    {
+      "slug": "text-embeddings",
+      "title": "Text embeddings",
+      "summary": "Sentence embeddings, contrastive training and similarity search.",
+      "requires": [
+        "text-and-language/word-embeddings",
+        "transformers/architecture-families"
+      ]
+    },
+    {
+      "slug": "vector-search",
+      "title": "Vector search",
+      "summary": "Nearest-neighbour search, approximate indexes such as HNSW, and hybrid keyword and vector search.",
+      "requires": [
+        "prompting-rag/text-embeddings"
+      ]
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "title": "Retrieval-augmented generation",
+      "summary": "Chunking, retrieval, reranking and grounding answers in sources.",
+      "requires": [
+        "prompting-rag/vector-search",
+        "prompting-rag/prompt-design"
+      ]
+    },
+    {
+      "slug": "hallucination",
+      "title": "Hallucination and grounding",
+      "summary": "Why models state falsehoods, citations, abstention and calibration.",
+      "requires": [
+        "prompting-rag/retrieval-augmented-generation"
+      ]
+    },
+    {
+      "slug": "rag-evaluation",
+      "title": "Evaluating retrieval systems",
+      "summary": "Retrieval metrics, answer faithfulness and end-to-end evaluation.",
+      "requires": [
+        "prompting-rag/retrieval-augmented-generation"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "agents"
+  ]
+}

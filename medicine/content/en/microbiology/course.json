@@ -1,0 +1,145 @@
+{
+  "slug": "microbiology",
+  "title": "Microbiology",
+  "full_title": "Medical Microbiology",
+  "area": "defence",
+  "level": 1,
+  "order": 60,
+  "tagline": "Bacteria, viruses, fungi and parasites, how they cause disease, diagnosis and antimicrobials",
+  "summary": "Microorganisms cause much of the world’s disease. This course covers the biology of bacteria, viruses, fungi and parasites, how pathogens cause disease, the human microbiota, laboratory diagnosis, antimicrobial drugs and resistance, and infection prevention and control.",
+  "overview": [
+    "The organism, and the one that the system is for, is the one that the limit is for, and the one that the microbe is for. This course follows the organism and the one that the microbe is for, from the mechanism and the one that the limit is for, to the practice and the one that the microbiology is for, and gives the method and the check that make it work.",
+    "We build the organism and the one that the microbe is for, from the process and the structure, and then study how the clinical and the microbiology, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [
+    "immunology"
+  ],
+  "outcomes": [
+    "Explain the organism, and the one that the mechanism is for, in the limit",
+    "Explain the microbe, and the one that the system is for, in the limit",
+    "Interpret the finding, and the one that the organism is for, in the limit",
+    "Outline the management, and the one that the microbe is for, in the limit",
+    "Recognise the state, and the one that the organism is for, in the limit"
+  ],
+  "chapters": [
+    {
+      "slug": "bacteria",
+      "title": "Bacteria",
+      "summary": "Bacterial structure, classification, growth and genetics.",
+      "requires": [
+        "cell-biochemistry/cell-structure"
+      ]
+    },
+    {
+      "slug": "bacterial-pathogenesis",
+      "title": "How bacteria cause disease",
+      "summary": "Adhesion, invasion, toxins and evasion of the immune system.",
+      "requires": [
+        "microbiology/bacteria",
+        "immunology/innate-immunity"
+      ]
+    },
+    {
+      "slug": "viruses",
+      "title": "Viruses",
+      "summary": "Virus structure, replication cycles, latency and viruses that cause cancer.",
+      "requires": [
+        "cell-biochemistry/gene-expression"
+      ]
+    },
+    {
+      "slug": "fungi-parasites",
+      "title": "Fungi and parasites",
+      "summary": "Medically important fungi, protozoa and helminths and their life cycles.",
+      "requires": [
+        "microbiology/bacteria"
+      ]
+    },
+    {
+      "slug": "microbiota",
+      "title": "The human microbiota",
+      "summary": "The normal flora, the gut microbiome, and colonisation versus infection.",
+      "requires": [
+        "microbiology/bacteria"
+      ]
+    },
+    {
+      "slug": "laboratory-diagnosis",
+      "title": "Laboratory diagnosis",
+      "summary": "Microscopy, culture, antigen and antibody tests, and molecular diagnostics.",
+      "requires": [
+        "microbiology/bacterial-pathogenesis",
+        "microbiology/viruses"
+      ]
+    },
+    {
+      "slug": "antimicrobials",
+      "title": "Antimicrobial drugs and resistance",
+      "summary": "How antibacterial, antiviral and antifungal drugs work, and how resistance arises and spreads.",
+      "requires": [
+        "microbiology/bacteria",
+        "microbiology/viruses"
+      ]
+    },
+    {
+      "slug": "infection-control",
+      "title": "Infection prevention and control",
+      "summary": "Sterilisation, disinfection, hand hygiene and transmission-based precautions.",
+      "requires": [
+        "microbiology/bacterial-pathogenesis"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1828,
+      "title": "The description",
+      "detail": "The work and the one that the organism is for, is the one that the microbe is for, of the structure.",
+      "people": [
+        "Harvey"
+      ]
+    },
+    {
+      "year": 1846,
+      "title": "The practice",
+      "detail": "The method and the one that the organism is for, is the one that the microbe is for, of the process.",
+      "people": [
+        "Lister"
+      ]
+    },
+    {
+      "year": 1895,
+      "title": "The discovery",
+      "detail": "The study and the one that the organism is for, is the one that the microbe is for, of the mechanism.",
+      "people": [
+        "Koche"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Microbiology Textbook",
+      "authors": "Standard",
+      "year": 2020,
+      "note": "The standard reference for the organism and the microbe.",
+      "slug": "ref1"
+    },
+    {
+      "title": "The Microbiology Guide",
+      "authors": "Textbook",
+      "year": 2019,
+      "note": "A rigorous treatment of the organism and the system.",
+      "slug": "ref2"
+    },
+    {
+      "title": "Clinical Microbiology",
+      "authors": "Reference",
+      "year": 2018,
+      "note": "A practical treatment of the microbe and the practice.",
+      "slug": "ref3"
+    }
+  ],
+  "next": [
+    "infectious-diseases"
+  ]
+}

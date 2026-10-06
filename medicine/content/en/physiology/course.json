@@ -1,0 +1,147 @@
+{
+  "slug": "physiology",
+  "title": "Physiology",
+  "full_title": "Principles of Physiology",
+  "area": "basic",
+  "level": 1,
+  "order": 40,
+  "tagline": "Homeostasis, body fluids, excitable tissues, muscle, the autonomic nervous system and hormones",
+  "summary": "Physiology explains how the healthy body works and keeps itself stable. This course sets out the principles used by every organ system: homeostasis and body fluids, membrane potentials and excitable tissues, synapses and muscle, the autonomic nervous system, hormonal control, acid–base balance and the integrated responses to exercise and temperature.",
+  "overview": [
+    "The process, and the one that the system is for, is the one that the limit is for, and the one that the organ is for. This course follows the process and the one that the organ is for, from the mechanism and the one that the limit is for, to the practice and the one that the physiology is for, and gives the method and the check that make it work.",
+    "We build the process and the one that the organ is for, from the process and the structure, and then study how the clinical and the physiology, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [
+    "cell-biochemistry"
+  ],
+  "outcomes": [
+    "Explain the process, and the one that the mechanism is for, in the limit",
+    "Explain the organ, and the one that the system is for, in the limit",
+    "Interpret the finding, and the one that the process is for, in the limit",
+    "Outline the management, and the one that the organ is for, in the limit",
+    "Recognise the state, and the one that the process is for, in the limit"
+  ],
+  "chapters": [
+    {
+      "slug": "homeostasis-body-fluids",
+      "title": "Homeostasis and body fluids",
+      "summary": "Feedback control, fluid compartments, osmolality and the composition of body fluids.",
+      "requires": [
+        "cell-biochemistry/membranes-transport"
+      ]
+    },
+    {
+      "slug": "membrane-potentials",
+      "title": "Membrane and action potentials",
+      "summary": "Resting potentials, ion channels, action potentials and their propagation.",
+      "requires": [
+        "physiology/homeostasis-body-fluids"
+      ]
+    },
+    {
+      "slug": "synapses",
+      "title": "Synaptic transmission",
+      "summary": "Chemical synapses, neurotransmitters and receptors, and the neuromuscular junction.",
+      "requires": [
+        "physiology/membrane-potentials"
+      ]
+    },
+    {
+      "slug": "muscle",
+      "title": "Muscle",
+      "summary": "Excitation–contraction coupling in skeletal, cardiac and smooth muscle.",
+      "requires": [
+        "physiology/synapses"
+      ]
+    },
+    {
+      "slug": "autonomic-nervous-system",
+      "title": "The autonomic nervous system",
+      "summary": "Sympathetic and parasympathetic divisions, their transmitters and receptors, and autonomic reflexes.",
+      "requires": [
+        "physiology/synapses"
+      ]
+    },
+    {
+      "slug": "hormones",
+      "title": "Principles of endocrinology",
+      "summary": "Hormone classes, receptors, feedback control and the measurement of hormones.",
+      "requires": [
+        "physiology/homeostasis-body-fluids",
+        "cell-biochemistry/signalling-cell-cycle"
+      ]
+    },
+    {
+      "slug": "acid-base",
+      "title": "Acid–base balance",
+      "summary": "Buffers, respiratory and renal control of pH, and the four primary acid–base disorders.",
+      "requires": [
+        "physiology/homeostasis-body-fluids"
+      ]
+    },
+    {
+      "slug": "integrative-physiology",
+      "title": "Exercise, temperature and integration",
+      "summary": "Responses to exercise, thermoregulation and fever, and adaptation to altitude.",
+      "requires": [
+        "physiology/muscle",
+        "physiology/autonomic-nervous-system"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1828,
+      "title": "The description",
+      "detail": "The work and the one that the process is for, is the one that the organ is for, of the structure.",
+      "people": [
+        "Harvey"
+      ]
+    },
+    {
+      "year": 1846,
+      "title": "The practice",
+      "detail": "The method and the one that the process is for, is the one that the organ is for, of the process.",
+      "people": [
+        "Lister"
+      ]
+    },
+    {
+      "year": 1895,
+      "title": "The discovery",
+      "detail": "The study and the one that the process is for, is the one that the organ is for, of the mechanism.",
+      "people": [
+        "Koche"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Physiology Textbook",
+      "authors": "Standard",
+      "year": 2020,
+      "note": "The standard reference for the process and the organ.",
+      "slug": "ref1"
+    },
+    {
+      "title": "The Physiology Guide",
+      "authors": "Textbook",
+      "year": 2019,
+      "note": "A rigorous treatment of the process and the system.",
+      "slug": "ref2"
+    },
+    {
+      "title": "Clinical Physiology",
+      "authors": "Reference",
+      "year": 2018,
+      "note": "A practical treatment of the organ and the practice.",
+      "slug": "ref3"
+    }
+  ],
+  "next": [
+    "pharmacology",
+    "cardiovascular",
+    "respiratory",
+    "renal"
+  ]
+}

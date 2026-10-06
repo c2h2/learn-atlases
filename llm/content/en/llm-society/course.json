@@ -1,0 +1,84 @@
+{
+  "slug": "llm-society",
+  "title": "Language Models and Society",
+  "full_title": "Language Models and Society",
+  "area": "safety",
+  "level": 2,
+  "order": 90,
+  "tagline": "Bias, privacy, copyright, misinformation, work, energy and governance",
+  "summary": "Language models are changing how people learn, work and communicate. This course examines bias and fairness, privacy and memorisation, copyright and data provenance, misinformation and persuasion, effects on work and education, the energy and environmental cost of models, open and closed release, and how laws and institutions are responding.",
+  "overview": [],
+  "prerequisites": [
+    "pretraining"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "bias-fairness",
+      "title": "Bias and fairness",
+      "summary": "Sources of bias in data and models, and how it is measured and mitigated.",
+      "requires": [
+        "pretraining/training-data"
+      ]
+    },
+    {
+      "slug": "privacy-memorisation",
+      "title": "Privacy and memorisation",
+      "summary": "Extraction of training data, personal data and privacy-preserving techniques.",
+      "requires": [
+        "pretraining/training-data"
+      ]
+    },
+    {
+      "slug": "copyright-provenance",
+      "title": "Copyright and data provenance",
+      "summary": "Training on copyrighted works, licences, opt-outs and attribution.",
+      "requires": [
+        "pretraining/training-data"
+      ]
+    },
+    {
+      "slug": "misinformation",
+      "title": "Misinformation and persuasion",
+      "summary": "Synthetic text at scale, persuasion, watermarking and detection.",
+      "requires": [
+        "llm-society/bias-fairness"
+      ]
+    },
+    {
+      "slug": "work-education",
+      "title": "Work, education and the economy",
+      "summary": "Productivity, effects on the labour market, and learning with AI.",
+      "requires": []
+    },
+    {
+      "slug": "environmental-cost",
+      "title": "Energy and the environment",
+      "summary": "Energy use and emissions of training and inference, and trends in efficiency.",
+      "requires": [
+        "pretraining/training-loop"
+      ]
+    },
+    {
+      "slug": "open-closed-models",
+      "title": "Open and closed models",
+      "summary": "Open weights and closed APIs, licences, and the trade-offs of each.",
+      "requires": [
+        "pretraining/model-families"
+      ]
+    },
+    {
+      "slug": "governance-regulation",
+      "title": "Governance and regulation",
+      "summary": "AI laws, standards and international coordination.",
+      "requires": [
+        "llm-society/open-closed-models"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "safety-alignment"
+  ]
+}

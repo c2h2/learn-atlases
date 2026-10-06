@@ -1,0 +1,4 @@
+{
+  "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC.",
+  "milestones": []
+}

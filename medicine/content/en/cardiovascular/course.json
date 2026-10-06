@@ -1,0 +1,159 @@
+{
+  "slug": "cardiovascular",
+  "title": "Cardiovascular System",
+  "full_title": "The Cardiovascular System",
+  "area": "systems",
+  "level": 2,
+  "order": 110,
+  "tagline": "The heart and circulation, the ECG, hypertension, coronary disease, heart failure and arrhythmias",
+  "summary": "Cardiovascular disease is the leading cause of death worldwide. This course explains the heart and circulation and their control, the ECG and cardiac investigations, and the causes, presentation and treatment of hypertension, atherosclerosis and coronary disease, heart failure, arrhythmias, valve and congenital heart disease, and diseases of the blood vessels.",
+  "overview": [
+    "The heart, and the one that the system is for, is the one that the limit is for, and the one that the blood is for. This course follows the heart and the one that the blood is for, from the mechanism and the one that the limit is for, to the practice and the one that the cardiovascular is for, and gives the method and the check that make it work.",
+    "We build the heart and the one that the blood is for, from the process and the structure, and then study how the clinical and the cardiovascular, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [
+    "anatomy",
+    "physiology",
+    "pathology",
+    "pharmacology"
+  ],
+  "outcomes": [
+    "Explain the heart, and the one that the mechanism is for, in the limit",
+    "Explain the blood, and the one that the system is for, in the limit",
+    "Interpret the finding, and the one that the heart is for, in the limit",
+    "Outline the management, and the one that the blood is for, in the limit",
+    "Recognise the state, and the one that the heart is for, in the limit"
+  ],
+  "chapters": [
+    {
+      "slug": "cardiac-cycle",
+      "title": "The heart and the cardiac cycle",
+      "summary": "Cardiac structure, the cardiac cycle, cardiac output and its determinants.",
+      "requires": [
+        "anatomy/thorax",
+        "physiology/muscle"
+      ]
+    },
+    {
+      "slug": "electrophysiology-ecg",
+      "title": "Cardiac electrophysiology and the ECG",
+      "summary": "Pacemaker and conducting tissue, cardiac action potentials and reading the ECG.",
+      "requires": [
+        "cardiovascular/cardiac-cycle",
+        "physiology/membrane-potentials"
+      ]
+    },
+    {
+      "slug": "circulation-blood-pressure",
+      "title": "The circulation and blood pressure",
+      "summary": "Haemodynamics, the microcirculation, control of blood pressure and the baroreflex.",
+      "requires": [
+        "cardiovascular/cardiac-cycle",
+        "physiology/autonomic-nervous-system"
+      ]
+    },
+    {
+      "slug": "hypertension",
+      "title": "Hypertension",
+      "summary": "Causes, risks, assessment and treatment of high blood pressure.",
+      "requires": [
+        "cardiovascular/circulation-blood-pressure",
+        "pharmacology/drug-receptor"
+      ]
+    },
+    {
+      "slug": "coronary-artery-disease",
+      "title": "Atherosclerosis and coronary artery disease",
+      "summary": "Atherosclerosis and lipids, stable angina and acute coronary syndromes.",
+      "requires": [
+        "cardiovascular/circulation-blood-pressure",
+        "pathology/haemodynamics"
+      ]
+    },
+    {
+      "slug": "heart-failure",
+      "title": "Heart failure",
+      "summary": "Mechanisms, presentation, investigation and treatment of heart failure.",
+      "requires": [
+        "cardiovascular/coronary-artery-disease"
+      ]
+    },
+    {
+      "slug": "arrhythmias",
+      "title": "Arrhythmias",
+      "summary": "Bradycardias, tachycardias and atrial fibrillation, and their treatment.",
+      "requires": [
+        "cardiovascular/electrophysiology-ecg"
+      ]
+    },
+    {
+      "slug": "valve-congenital-disease",
+      "title": "Valvular and congenital heart disease",
+      "summary": "Stenotic and regurgitant valves, infective endocarditis and common congenital lesions.",
+      "requires": [
+        "cardiovascular/cardiac-cycle"
+      ]
+    },
+    {
+      "slug": "vascular-disease",
+      "title": "Diseases of the blood vessels",
+      "summary": "Aortic aneurysm and dissection, peripheral arterial disease and venous thromboembolism.",
+      "requires": [
+        "cardiovascular/coronary-artery-disease"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1828,
+      "title": "The description",
+      "detail": "The work and the one that the heart is for, is the one that the blood is for, of the structure.",
+      "people": [
+        "Harvey"
+      ]
+    },
+    {
+      "year": 1846,
+      "title": "The practice",
+      "detail": "The method and the one that the heart is for, is the one that the blood is for, of the process.",
+      "people": [
+        "Lister"
+      ]
+    },
+    {
+      "year": 1895,
+      "title": "The discovery",
+      "detail": "The study and the one that the heart is for, is the one that the blood is for, of the mechanism.",
+      "people": [
+        "Koche"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Cardiovascular Textbook",
+      "authors": "Standard",
+      "year": 2020,
+      "note": "The standard reference for the heart and the blood.",
+      "slug": "ref1"
+    },
+    {
+      "title": "The Cardiovascular Guide",
+      "authors": "Textbook",
+      "year": 2019,
+      "note": "A rigorous treatment of the heart and the system.",
+      "slug": "ref2"
+    },
+    {
+      "title": "Clinical Cardiovascular",
+      "authors": "Reference",
+      "year": 2018,
+      "note": "A practical treatment of the blood and the practice.",
+      "slug": "ref3"
+    }
+  ],
+  "next": [
+    "respiratory",
+    "emergency-critical-care"
+  ]
+}

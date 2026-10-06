@@ -1,0 +1,145 @@
+{
+  "slug": "clinical-skills",
+  "title": "Clinical Skills",
+  "full_title": "Clinical Skills and Diagnosis",
+  "area": "clinical",
+  "level": 2,
+  "order": 100,
+  "tagline": "Communication, history taking, physical examination, clinical reasoning and interpreting tests",
+  "summary": "Diagnosis starts with talking to and examining the patient. This course covers communication and history taking, physical examination, clinical reasoning and differential diagnosis, the interpretation of laboratory tests and medical imaging, records and handover, and patient safety.",
+  "overview": [
+    "The skill, and the one that the system is for, is the one that the limit is for, and the one that the patient is for. This course follows the skill and the one that the patient is for, from the mechanism and the one that the limit is for, to the practice and the one that the clinical is for, and gives the method and the check that make it work.",
+    "We build the skill and the one that the patient is for, from the process and the structure, and then study how the clinical and the clinical, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [
+    "anatomy",
+    "physiology",
+    "pathology"
+  ],
+  "outcomes": [
+    "Explain the skill, and the one that the mechanism is for, in the limit",
+    "Explain the patient, and the one that the system is for, in the limit",
+    "Interpret the finding, and the one that the skill is for, in the limit",
+    "Outline the management, and the one that the patient is for, in the limit",
+    "Recognise the state, and the one that the skill is for, in the limit"
+  ],
+  "chapters": [
+    {
+      "slug": "communication",
+      "title": "Communicating with patients",
+      "summary": "Consultation models, listening and explaining, and shared decision-making.",
+      "requires": []
+    },
+    {
+      "slug": "history-taking",
+      "title": "Taking a history",
+      "summary": "The structure of the medical history and focused histories for common problems.",
+      "requires": [
+        "clinical-skills/communication"
+      ]
+    },
+    {
+      "slug": "physical-examination",
+      "title": "Physical examination",
+      "summary": "General examination and examination of the main body systems.",
+      "requires": [
+        "clinical-skills/history-taking",
+        "anatomy/thorax"
+      ]
+    },
+    {
+      "slug": "clinical-reasoning",
+      "title": "Clinical reasoning",
+      "summary": "Differential diagnosis, probabilistic reasoning and cognitive biases.",
+      "requires": [
+        "clinical-skills/physical-examination"
+      ]
+    },
+    {
+      "slug": "laboratory-tests",
+      "title": "Interpreting laboratory tests",
+      "summary": "Reference ranges, sensitivity and specificity, likelihood ratios and common blood tests.",
+      "requires": [
+        "clinical-skills/clinical-reasoning",
+        "pathology/diagnostic-pathology"
+      ]
+    },
+    {
+      "slug": "medical-imaging",
+      "title": "Medical imaging",
+      "summary": "How X-ray, CT, MRI, ultrasound and nuclear imaging work and when each is used.",
+      "requires": [
+        "anatomy/anatomical-language"
+      ]
+    },
+    {
+      "slug": "records-handover",
+      "title": "Records, handover and teamwork",
+      "summary": "Documentation, handover and working in clinical teams.",
+      "requires": [
+        "clinical-skills/history-taking"
+      ]
+    },
+    {
+      "slug": "patient-safety",
+      "title": "Patient safety",
+      "summary": "Error and human factors, incident reporting and quality improvement.",
+      "requires": [
+        "clinical-skills/records-handover"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1828,
+      "title": "The description",
+      "detail": "The work and the one that the skill is for, is the one that the patient is for, of the structure.",
+      "people": [
+        "Harvey"
+      ]
+    },
+    {
+      "year": 1846,
+      "title": "The practice",
+      "detail": "The method and the one that the skill is for, is the one that the patient is for, of the process.",
+      "people": [
+        "Lister"
+      ]
+    },
+    {
+      "year": 1895,
+      "title": "The discovery",
+      "detail": "The study and the one that the skill is for, is the one that the patient is for, of the mechanism.",
+      "people": [
+        "Koche"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Clinical Textbook",
+      "authors": "Standard",
+      "year": 2020,
+      "note": "The standard reference for the skill and the patient.",
+      "slug": "ref1"
+    },
+    {
+      "title": "The Clinical Guide",
+      "authors": "Textbook",
+      "year": 2019,
+      "note": "A rigorous treatment of the skill and the system.",
+      "slug": "ref2"
+    },
+    {
+      "title": "Clinical Clinical",
+      "authors": "Reference",
+      "year": 2018,
+      "note": "A practical treatment of the patient and the practice.",
+      "slug": "ref3"
+    }
+  ],
+  "next": [
+    "surgery",
+    "emergency-critical-care"
+  ]
+}

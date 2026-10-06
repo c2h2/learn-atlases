@@ -1,0 +1,91 @@
+{
+  "slug": "pretraining",
+  "title": "Pretraining",
+  "full_title": "Pretraining Language Models",
+  "area": "training",
+  "level": 2,
+  "order": 70,
+  "tagline": "Data, objectives, the training loop, stability and the families of pretrained models",
+  "summary": "A pretrained language model learns from trillions of tokens of text with a simple objective. This course covers how training data are collected, filtered and mixed, the causal and masked objectives, the training loop and its instabilities, evaluation during training, and the families of pretrained models from BERT and GPT to today’s open and closed models.",
+  "overview": [],
+  "prerequisites": [
+    "transformers"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "pretraining-objectives",
+      "title": "Pretraining objectives",
+      "summary": "Causal and masked language modelling, span corruption, and next-token prediction as compression.",
+      "requires": [
+        "transformers/architecture-families",
+        "text-and-language/perplexity"
+      ]
+    },
+    {
+      "slug": "training-data",
+      "title": "Training data",
+      "summary": "Web crawls, books, code and curated sources; filtering, quality classifiers and deduplication.",
+      "requires": [
+        "pretraining/pretraining-objectives"
+      ]
+    },
+    {
+      "slug": "data-mixtures",
+      "title": "Data mixtures and curricula",
+      "summary": "Mixing domains and languages, upsampling, synthetic data and the order of training data.",
+      "requires": [
+        "pretraining/training-data"
+      ]
+    },
+    {
+      "slug": "training-loop",
+      "title": "The training loop",
+      "summary": "Batches of sequences, learning-rate schedules, gradient clipping, checkpoints and monitoring.",
+      "requires": [
+        "pretraining/pretraining-objectives",
+        "neural-networks/training-practice"
+      ]
+    },
+    {
+      "slug": "training-stability",
+      "title": "Training stability",
+      "summary": "Loss spikes and divergence, numerical precision, and initialisation and normalisation choices at scale.",
+      "requires": [
+        "pretraining/training-loop"
+      ]
+    },
+    {
+      "slug": "in-training-evaluation",
+      "title": "Evaluation during pretraining",
+      "summary": "Validation loss, downstream probes and how abilities appear as training proceeds.",
+      "requires": [
+        "pretraining/training-loop"
+      ]
+    },
+    {
+      "slug": "model-families",
+      "title": "Families of pretrained models",
+      "summary": "BERT, GPT, T5 and their successors: the design choices of major open and closed model families.",
+      "requires": [
+        "transformers/architecture-families",
+        "pretraining/pretraining-objectives"
+      ]
+    },
+    {
+      "slug": "continued-pretraining",
+      "title": "Continued pretraining and adaptation",
+      "summary": "Adapting a pretrained model to new domains, languages or longer contexts.",
+      "requires": [
+        "pretraining/data-mixtures"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "post-training",
+    "scaling",
+    "evaluation"
+  ]
+}

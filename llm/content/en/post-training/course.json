@@ -1,0 +1,90 @@
+{
+  "slug": "post-training",
+  "title": "Post-training",
+  "full_title": "Post-training and Alignment",
+  "area": "alignment",
+  "level": 3,
+  "order": 120,
+  "tagline": "Instruction tuning, reward models, RLHF, preference optimisation and parameter-efficient fine-tuning",
+  "summary": "A pretrained model predicts text; an assistant follows instructions. This course covers supervised instruction tuning, reward modelling and reinforcement learning from human feedback, direct preference optimisation, AI feedback and constitutional methods, and the parameter-efficient methods that make fine-tuning cheap.",
+  "overview": [],
+  "prerequisites": [
+    "pretraining"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "instruction-tuning",
+      "title": "Instruction tuning",
+      "summary": "Supervised fine-tuning on instructions and dialogues, chat templates and system prompts.",
+      "requires": [
+        "pretraining/model-families"
+      ]
+    },
+    {
+      "slug": "rl-for-language-models",
+      "title": "Reinforcement learning for language models",
+      "summary": "Policies, rewards, policy gradients and the KL-regularised objective.",
+      "requires": [
+        "post-training/instruction-tuning",
+        "math-for-ml/optimisation"
+      ]
+    },
+    {
+      "slug": "reward-models",
+      "title": "Reward models",
+      "summary": "Learning rewards from human comparisons, the Bradley–Terry model and reward over-optimisation.",
+      "requires": [
+        "post-training/rl-for-language-models"
+      ]
+    },
+    {
+      "slug": "rlhf",
+      "title": "Reinforcement learning from human feedback",
+      "summary": "The RLHF pipeline with PPO, its practical difficulties and what it changes in a model.",
+      "requires": [
+        "post-training/reward-models"
+      ]
+    },
+    {
+      "slug": "preference-optimisation",
+      "title": "Direct preference optimisation",
+      "summary": "DPO and related methods that learn from preferences without an explicit reward model.",
+      "requires": [
+        "post-training/rlhf"
+      ]
+    },
+    {
+      "slug": "ai-feedback",
+      "title": "AI feedback and constitutional methods",
+      "summary": "Learning from model-generated feedback guided by written principles.",
+      "requires": [
+        "post-training/rlhf"
+      ]
+    },
+    {
+      "slug": "parameter-efficient-tuning",
+      "title": "Parameter-efficient fine-tuning",
+      "summary": "Adapters, prefix tuning, LoRA and QLoRA.",
+      "requires": [
+        "post-training/instruction-tuning",
+        "math-for-ml/matrix-decompositions"
+      ]
+    },
+    {
+      "slug": "distillation",
+      "title": "Distillation and synthetic data",
+      "summary": "Training smaller models from larger ones, synthetic instruction data and model collapse.",
+      "requires": [
+        "post-training/instruction-tuning"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "reasoning",
+    "safety-alignment",
+    "multimodal"
+  ]
+}

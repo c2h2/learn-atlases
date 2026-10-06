@@ -1,5 +1,8 @@
 # Generated caches: rebuilt on demand (maths: tools/build.sh, physics: tools/prerender.php, peptides: tools/refresh.sh)
 /maths/data/cache/
+/ee/data/cache/
+/llm/data/cache/
+/medicine/data/cache/
 /physics/data/cache/
 /peptides/data/cache/
 

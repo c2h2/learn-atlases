@@ -1,0 +1,85 @@
+{
+  "slug": "interpretability",
+  "title": "Interpretability",
+  "full_title": "Interpretability",
+  "area": "safety",
+  "level": 4,
+  "order": 180,
+  "tagline": "Probing, the residual stream, circuits, superposition, sparse features and steering",
+  "summary": "What computations happen inside a language model? This course covers probing and attribution, the residual-stream view of Transformers, circuits such as induction heads, superposition, sparse dictionary learning of features, causal interventions and steering, and the open problems of understanding large models.",
+  "overview": [],
+  "prerequisites": [
+    "transformers"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "interpretability-goals",
+      "title": "Goals and methods of interpretability",
+      "summary": "Behavioural, attributional and mechanistic approaches, and what an explanation should achieve.",
+      "requires": [
+        "transformers/transformer-block"
+      ]
+    },
+    {
+      "slug": "probing-attribution",
+      "title": "Probing and attribution",
+      "summary": "Linear probes, saliency, attention analysis and their pitfalls.",
+      "requires": [
+        "interpretability/interpretability-goals"
+      ]
+    },
+    {
+      "slug": "residual-stream",
+      "title": "The residual stream",
+      "summary": "Transformers as sums of paths, the logit lens and reading intermediate predictions.",
+      "requires": [
+        "interpretability/interpretability-goals"
+      ]
+    },
+    {
+      "slug": "circuits",
+      "title": "Circuits",
+      "summary": "Induction heads, indirect-object identification and reverse-engineering small mechanisms.",
+      "requires": [
+        "interpretability/residual-stream"
+      ]
+    },
+    {
+      "slug": "superposition",
+      "title": "Superposition and polysemanticity",
+      "summary": "Why neurons mix many features, and toy models of superposition.",
+      "requires": [
+        "interpretability/circuits"
+      ]
+    },
+    {
+      "slug": "sparse-features",
+      "title": "Sparse dictionary learning",
+      "summary": "Sparse autoencoders, transcoders and dictionaries of features in large models.",
+      "requires": [
+        "interpretability/superposition"
+      ]
+    },
+    {
+      "slug": "causal-interventions",
+      "title": "Causal interventions and steering",
+      "summary": "Activation patching, ablations and steering vectors.",
+      "requires": [
+        "interpretability/circuits"
+      ]
+    },
+    {
+      "slug": "open-problems",
+      "title": "Open problems in interpretability",
+      "summary": "Scaling interpretability, the faithfulness of explanations and uses for safety.",
+      "requires": [
+        "interpretability/sparse-features",
+        "interpretability/causal-interventions"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

@@ -1,0 +1,82 @@
+{
+  "slug": "evaluation",
+  "title": "Evaluation",
+  "full_title": "Evaluating Language Models",
+  "area": "safety",
+  "level": 3,
+  "order": 170,
+  "tagline": "Benchmarks, contamination, human and model judges, capability evaluations and the statistics of evaluation",
+  "summary": "Knowing what a model can do is surprisingly hard. This course covers benchmark evaluation and its pitfalls of contamination and saturation, human preference evaluation and arenas, models as judges, capability and dangerous-capability evaluations, robustness and calibration, and the statistics needed to compare models honestly.",
+  "overview": [],
+  "prerequisites": [
+    "pretraining",
+    "ml-fundamentals"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "evaluation-principles",
+      "title": "Principles of evaluation",
+      "summary": "What to measure, validity, and the gap between benchmarks and real use.",
+      "requires": [
+        "ml-fundamentals/evaluation-metrics"
+      ]
+    },
+    {
+      "slug": "benchmarks",
+      "title": "Benchmarks",
+      "summary": "Knowledge, reasoning, coding and multilingual benchmarks and how they are scored.",
+      "requires": [
+        "evaluation/evaluation-principles"
+      ]
+    },
+    {
+      "slug": "contamination",
+      "title": "Contamination and saturation",
+      "summary": "Test-set leakage, how to detect it, and the life cycle of benchmarks.",
+      "requires": [
+        "evaluation/benchmarks",
+        "pretraining/training-data"
+      ]
+    },
+    {
+      "slug": "human-evaluation",
+      "title": "Human evaluation and arenas",
+      "summary": "Pairwise comparisons, Elo and Bradley–Terry ratings, and their biases.",
+      "requires": [
+        "evaluation/evaluation-principles"
+      ]
+    },
+    {
+      "slug": "model-judges",
+      "title": "Models as judges",
+      "summary": "LLM-as-a-judge, rubrics, position and length bias, and agreement with humans.",
+      "requires": [
+        "evaluation/human-evaluation"
+      ]
+    },
+    {
+      "slug": "capability-evaluations",
+      "title": "Capability and dangerous-capability evaluations",
+      "summary": "Eliciting capabilities, agentic tasks and evaluations for high-risk capabilities.",
+      "requires": [
+        "evaluation/benchmarks"
+      ]
+    },
+    {
+      "slug": "evaluation-statistics",
+      "title": "Statistics of evaluation",
+      "summary": "Confidence intervals and significance, variance across seeds and prompts, and calibration.",
+      "requires": [
+        "evaluation/benchmarks",
+        "math-for-ml/estimation"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "safety-alignment",
+    "interpretability"
+  ]
+}

@@ -1,15 +1,20 @@
 # Learn — interactive atlases
 
-Long-form, interactive references for self-study, in English and Simplified Chinese.
+Long-form, interactive references for self-study, with an English and Simplified Chinese interface.
 Every topic is explained in depth, with figures you can play with. Live at <https://f.g77k.com/learn/>.
 
 | | |
 |---|---|
-| **[Maths Atlas](maths/)** | University mathematics in 18 courses and 141 chapters, from logic and calculus to analysis, algebra, probability, differential equations, topology, geometry and measure theory. Definitions, theorems with proofs, worked examples, 410 interactive figures and 1 400 exercises with full solutions. |
+| **[Maths Atlas](maths/)** | University mathematics in 18 courses and 141 chapters, every lesson in English and Chinese, from logic and calculus to analysis, algebra, probability, differential equations, topology, geometry and measure theory. Definitions, theorems with proofs, worked examples, 411 interactive figures and 1 395 exercises with full solutions. |
+| **[Physics Atlas](physics/)** | University physics in 18 courses and 115 chapters: mechanics, waves and optics, electromagnetism, thermodynamics and statistical physics, quantum mechanics, relativity and astrophysics, with 119 interactive figures and 940 exercises. |
+| **[Electrical Engineering Atlas](ee/)** | Electrical and electronic engineering in 22 courses and 182 chapters: circuits, electronics and devices, digital and computer systems, signals and communications, electromagnetics, power and control, with 185 interactive figures and 1 510 exercises. |
+| **[LLM Atlas](llm/)** | Large language models from first principles, in 18 courses and 137 chapters. The curriculum is mapped out; the lessons are in preparation. |
+| **[Medicine Atlas](medicine/)** | The medical curriculum in 27 courses and 224 chapters, for education only (not medical advice). The curriculum is mapped out; the lessons are in preparation. |
 | **[Peptide Atlas](peptides/)** | 44 therapeutic and research peptides (semaglutide, insulin, tirzepatide, BPC-157 …) drawn residue by residue, with 3D structures, history, regulation and worldwide attention. |
 
-Both are plain PHP sites: no framework, no database, no build step needed to serve them, and every
-script, font and library is self-hosted.
+All are plain PHP sites: no framework, no database, no build step needed to serve them, and every
+script, font and library is self-hosted. The five course atlases share one lesson engine (each keeps
+its own copy).
 
 ## Quick start
 
@@ -19,13 +24,15 @@ cd learn-atlases
 php -S localhost:8000          # PHP 8.1+ with mbstring
 ```
 
-Open <http://localhost:8000/>. The sites write caches to `maths/data/cache/` and
-`peptides/data/cache/` (created on first use; the web server needs write access).
+Open <http://localhost:8000/>. Each site writes caches to its own `data/cache/` (created on first
+use; the web server needs write access).
 
 Optional, for speed and completeness:
 
 - **Maths:** `cd maths && tools/build.sh` (Node 18+) pre-renders every formula with KaTeX and checks
   all lessons; without it, formulas are rendered in the browser. See [maths/README.md](maths/README.md).
+  The EE, LLM and Medicine atlases have the same tools (see their READMEs); for Physics run
+  `php tools/extract.php && node tools/build.js && php tools/prerender.php`.
 - **Peptides:** `cd peptides && tools/refresh.sh` fetches Wikipedia, PubMed, ClinicalTrials.gov,
   PubChem and PDB data (attention maps and charts stay empty until then). See
   [peptides/README.md](peptides/README.md).
@@ -35,6 +42,10 @@ Optional, for speed and completeness:
 ```
 index.php, assets/     the /learn landing page
 maths/                 Maths Atlas
+physics/               Physics Atlas
+ee/                    Electrical Engineering Atlas
+llm/                   LLM Atlas (curriculum; lessons in preparation)
+medicine/              Medicine Atlas (curriculum; lessons in preparation)
 peptides/              Peptide Atlas
 ```
 

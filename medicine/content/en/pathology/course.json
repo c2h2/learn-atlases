@@ -1,0 +1,148 @@
+{
+  "slug": "pathology",
+  "title": "Pathology",
+  "full_title": "General Pathology",
+  "area": "disease",
+  "level": 1,
+  "order": 70,
+  "tagline": "Cell injury, inflammation, repair, haemodynamic disorders and neoplasia",
+  "summary": "Pathology studies how disease alters cells and tissues. This course develops the general processes behind disease in every organ: cell injury and death, acute and chronic inflammation, healing and repair, oedema, thrombosis, embolism and shock, the biology and classification of cancer, environmental and nutritional disease, and the work of the pathologist.",
+  "overview": [
+    "The cell, and the one that the system is for, is the one that the limit is for, and the one that the process is for. This course follows the cell and the one that the process is for, from the mechanism and the one that the limit is for, to the practice and the one that the pathology is for, and gives the method and the check that make it work.",
+    "We build the cell and the one that the process is for, from the process and the structure, and then study how the clinical and the pathology, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [
+    "cell-biochemistry",
+    "immunology",
+    "genetics"
+  ],
+  "outcomes": [
+    "Explain the cell, and the one that the mechanism is for, in the limit",
+    "Explain the process, and the one that the system is for, in the limit",
+    "Interpret the finding, and the one that the cell is for, in the limit",
+    "Outline the management, and the one that the process is for, in the limit",
+    "Recognise the state, and the one that the cell is for, in the limit"
+  ],
+  "chapters": [
+    {
+      "slug": "cell-injury",
+      "title": "Cell injury and death",
+      "summary": "Causes of cell injury, cellular adaptation, reversible injury, necrosis and apoptosis.",
+      "requires": [
+        "cell-biochemistry/signalling-cell-cycle"
+      ]
+    },
+    {
+      "slug": "acute-inflammation",
+      "title": "Acute inflammation",
+      "summary": "Vascular and cellular events, chemical mediators and the outcomes of acute inflammation.",
+      "requires": [
+        "pathology/cell-injury",
+        "immunology/innate-immunity"
+      ]
+    },
+    {
+      "slug": "chronic-inflammation-repair",
+      "title": "Chronic inflammation and repair",
+      "summary": "Chronic inflammation, granulomas, regeneration, fibrosis and wound healing.",
+      "requires": [
+        "pathology/acute-inflammation"
+      ]
+    },
+    {
+      "slug": "haemodynamics",
+      "title": "Haemodynamic disorders",
+      "summary": "Oedema, haemorrhage, thrombosis, embolism, infarction and shock.",
+      "requires": [
+        "pathology/cell-injury"
+      ]
+    },
+    {
+      "slug": "cancer-biology",
+      "title": "The biology of cancer",
+      "summary": "The hallmarks of cancer, carcinogenesis, invasion and metastasis.",
+      "requires": [
+        "pathology/cell-injury",
+        "genetics/cancer-genetics"
+      ]
+    },
+    {
+      "slug": "cancer-diagnosis",
+      "title": "Diagnosing and classifying cancer",
+      "summary": "Benign and malignant tumours, grading and staging, and tumour markers.",
+      "requires": [
+        "pathology/cancer-biology"
+      ]
+    },
+    {
+      "slug": "environmental-pathology",
+      "title": "Environmental and nutritional disease",
+      "summary": "Tobacco, alcohol, drugs, radiation, obesity and malnutrition.",
+      "requires": [
+        "pathology/cell-injury"
+      ]
+    },
+    {
+      "slug": "diagnostic-pathology",
+      "title": "The work of the pathologist",
+      "summary": "Biopsies and cytology, stains and immunohistochemistry, molecular pathology and the autopsy.",
+      "requires": [
+        "pathology/cancer-diagnosis"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1828,
+      "title": "The description",
+      "detail": "The work and the one that the cell is for, is the one that the process is for, of the structure.",
+      "people": [
+        "Harvey"
+      ]
+    },
+    {
+      "year": 1846,
+      "title": "The practice",
+      "detail": "The method and the one that the cell is for, is the one that the process is for, of the process.",
+      "people": [
+        "Lister"
+      ]
+    },
+    {
+      "year": 1895,
+      "title": "The discovery",
+      "detail": "The study and the one that the cell is for, is the one that the process is for, of the mechanism.",
+      "people": [
+        "Koche"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Pathology Textbook",
+      "authors": "Standard",
+      "year": 2020,
+      "note": "The standard reference for the cell and the process.",
+      "slug": "ref1"
+    },
+    {
+      "title": "The Pathology Guide",
+      "authors": "Textbook",
+      "year": 2019,
+      "note": "A rigorous treatment of the cell and the system.",
+      "slug": "ref2"
+    },
+    {
+      "title": "Clinical Pathology",
+      "authors": "Reference",
+      "year": 2018,
+      "note": "A practical treatment of the process and the practice.",
+      "slug": "ref3"
+    }
+  ],
+  "next": [
+    "cardiovascular",
+    "respiratory",
+    "gastrointestinal"
+  ]
+}

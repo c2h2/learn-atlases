@@ -1,0 +1,81 @@
+{
+  "slug": "text-and-language",
+  "title": "Text and Language",
+  "full_title": "Text, Tokens and Classical Language Models",
+  "area": "language",
+  "level": 1,
+  "order": 40,
+  "tagline": "Text as data, tokenisation, n-gram language models, perplexity and word embeddings",
+  "summary": "A language model assigns probabilities to text. This course starts from text as data, builds tokenisers, n-gram language models and their evaluation by perplexity, and learns word embeddings — the ideas on which neural language models are built.",
+  "overview": [],
+  "prerequisites": [
+    "math-for-ml",
+    "ml-fundamentals"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "text-as-data",
+      "title": "Text as data",
+      "summary": "Characters and Unicode, words and corpora, Zipf’s law and the statistics of language.",
+      "requires": []
+    },
+    {
+      "slug": "tokenisation",
+      "title": "Tokenisation",
+      "summary": "Word, character and subword tokenisers: byte-pair encoding, WordPiece, unigram language models and byte-level tokenisers.",
+      "requires": [
+        "text-and-language/text-as-data"
+      ]
+    },
+    {
+      "slug": "ngram-models",
+      "title": "N-gram language models",
+      "summary": "The chain rule of probability, Markov assumptions, counting and smoothing.",
+      "requires": [
+        "text-and-language/tokenisation",
+        "math-for-ml/probability"
+      ]
+    },
+    {
+      "slug": "perplexity",
+      "title": "Evaluating language models",
+      "summary": "Likelihood, cross-entropy, perplexity and bits per byte.",
+      "requires": [
+        "text-and-language/ngram-models",
+        "math-for-ml/information-theory"
+      ]
+    },
+    {
+      "slug": "word-embeddings",
+      "title": "Word embeddings",
+      "summary": "Distributional semantics, word2vec, GloVe and the geometry of embedding spaces.",
+      "requires": [
+        "text-and-language/ngram-models",
+        "math-for-ml/matrix-decompositions"
+      ]
+    },
+    {
+      "slug": "text-classification",
+      "title": "Text classification",
+      "summary": "Bag-of-words models, embeddings and neural classifiers for sentiment, topic and intent.",
+      "requires": [
+        "text-and-language/word-embeddings",
+        "ml-fundamentals/logistic-regression"
+      ]
+    },
+    {
+      "slug": "linguistic-structure",
+      "title": "Linguistic structure",
+      "summary": "Morphology, syntax and semantics, and the tasks of classical NLP: tagging, parsing and named entities.",
+      "requires": [
+        "text-and-language/text-as-data"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "sequence-models"
+  ]
+}

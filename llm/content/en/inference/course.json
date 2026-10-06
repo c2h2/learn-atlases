@@ -1,0 +1,90 @@
+{
+  "slug": "inference",
+  "title": "Inference",
+  "full_title": "Inference and Serving",
+  "area": "systems",
+  "level": 3,
+  "order": 140,
+  "tagline": "Decoding and sampling, the KV cache, batching, quantisation, speculative decoding and long context",
+  "summary": "Every generated token costs time, memory and money. This course explains decoding and sampling strategies, the key–value cache, batching and memory management in serving systems, quantisation and distillation, speculative decoding, long-context inference, and how latency, throughput and cost trade off.",
+  "overview": [],
+  "prerequisites": [
+    "transformers",
+    "scaling"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "decoding-sampling",
+      "title": "Decoding and sampling",
+      "summary": "Greedy decoding, temperature, top-k and nucleus sampling, and repetition penalties.",
+      "requires": [
+        "transformers/multi-head-attention",
+        "sequence-models/decoding-basics"
+      ]
+    },
+    {
+      "slug": "kv-cache",
+      "title": "The key–value cache",
+      "summary": "Incremental decoding, the memory of the cache, and multi-query and grouped-query attention at inference time.",
+      "requires": [
+        "inference/decoding-sampling",
+        "transformers/efficient-attention"
+      ]
+    },
+    {
+      "slug": "batching-serving",
+      "title": "Batching and serving systems",
+      "summary": "Continuous batching, paged attention, prefill and decode phases, and serving frameworks.",
+      "requires": [
+        "inference/kv-cache"
+      ]
+    },
+    {
+      "slug": "quantisation",
+      "title": "Quantisation",
+      "summary": "Integer and low-bit formats, post-training quantisation methods such as GPTQ and AWQ, and quantised caches.",
+      "requires": [
+        "inference/kv-cache",
+        "scaling/mixed-precision"
+      ]
+    },
+    {
+      "slug": "model-compression",
+      "title": "Distillation and pruning",
+      "summary": "Smaller models through distillation and structured and unstructured pruning.",
+      "requires": [
+        "inference/quantisation"
+      ]
+    },
+    {
+      "slug": "speculative-decoding",
+      "title": "Speculative decoding",
+      "summary": "Draft models, verification and parallel decoding schemes.",
+      "requires": [
+        "inference/decoding-sampling"
+      ]
+    },
+    {
+      "slug": "long-context",
+      "title": "Long-context inference",
+      "summary": "Extending the context window, position interpolation, retrieving distant information and attention sinks.",
+      "requires": [
+        "inference/kv-cache",
+        "transformers/positional-encoding"
+      ]
+    },
+    {
+      "slug": "latency-cost",
+      "title": "Latency, throughput and cost",
+      "summary": "Measuring and optimising time to first token, tokens per second and cost per token.",
+      "requires": [
+        "inference/batching-serving",
+        "inference/speculative-decoding"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}
