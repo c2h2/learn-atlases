@@ -1,0 +1,158 @@
+{
+  "slug": "communication-systems",
+  "title": "Communication Systems",
+  "full_title": "Communication Systems",
+  "area": "signals",
+  "level": 3,
+  "order": 7,
+  "tagline": "The signal, and the one that the wave is for: modulation, noise and the channel, and the one that the limit is for",
+  "summary": "The communication system, and the one that the signal is for, of the modulation and the noise and the channel and the one that the limit is for. The baseband and the bandpass, and the one that the signal is for, and the analog and the digital, and the one that the modulation is for, and the detection, and the one that the noise is for.",
+  "overview": [
+    "The communication system, and the one that the signal is for, is the one that the modulation is for, of the signal, and the one that the channel is for. This course gives the signal, and the one that the spectrum is for, and the noise, and the one that the channel is for, and the detection, and the one that the limit is for.",
+    "The method, and the check, are the one for the spectrum and the limit and the design. The baseband, and the one that the signal is for, is the one that the digital is for. The modulation, and the one that the signal is for, is the one that the carrier is for. The detection, and the one that the noise is for, is the one that the optimal is for, of the receiver."
+  ],
+  "prerequisites": [
+    "circuits-1",
+    "signals-systems",
+    "dsp",
+    "information-theory"
+  ],
+  "outcomes": [
+    "Compute, and the one that the signal is for, the spectrum, and the one that the frequency is for, of the modulation, and the one that the carrier is for.",
+    "Describe, and the one that the channel is for, the AWGN and the fading, and the one that the noise is for, of the channel.",
+    "Compute, and the one that the modulation is for, the bit, and the one that the error is for, rate of the amplitude and the angle.",
+    "Explain, and the one that the receiver is for, the detection, and the one that the noise is for, of the optimal, and the one that the match filter is for.",
+    "Design, and the one that the system is for, the baseband and the passband, and the one that the digital is for, of the transmission."
+  ],
+  "chapters": [
+    {
+      "slug": "signals-spectra-channels",
+      "title": "Signals, spectra and channels",
+      "summary": "Bandwidth, bandpass signals and complex envelopes, the Hilbert transform and models of communication channels.",
+      "requires": [
+        "signals-systems/fourier-transform"
+      ]
+    },
+    {
+      "slug": "amplitude-modulation",
+      "title": "Amplitude modulation",
+      "summary": "DSB, conventional AM, SSB and VSB modulation, envelope and coherent detection, and the superheterodyne receiver.",
+      "requires": [
+        "communication-systems/signals-spectra-channels"
+      ]
+    },
+    {
+      "slug": "angle-modulation",
+      "title": "Frequency and phase modulation",
+      "summary": "FM and PM, Carson’s rule, FM generation and demodulation, and the phase-locked loop.",
+      "requires": [
+        "communication-systems/amplitude-modulation"
+      ]
+    },
+    {
+      "slug": "noise-in-analog-systems",
+      "title": "Noise in analog communication",
+      "summary": "Signal-to-noise ratio in AM and FM receivers, threshold effects and pre-emphasis.",
+      "requires": [
+        "communication-systems/angle-modulation",
+        "random-signals/gaussian-noise"
+      ]
+    },
+    {
+      "slug": "pulse-code-modulation",
+      "title": "Sampling and pulse-code modulation",
+      "summary": "PCM, quantisation noise, companding, delta modulation and time-division multiplexing.",
+      "requires": [
+        "signals-systems/sampling"
+      ]
+    },
+    {
+      "slug": "baseband-transmission",
+      "title": "Baseband digital transmission",
+      "summary": "Line codes, pulse shaping, intersymbol interference, the Nyquist criterion, raised-cosine pulses and eye diagrams.",
+      "requires": [
+        "communication-systems/pulse-code-modulation"
+      ]
+    },
+    {
+      "slug": "digital-modulation",
+      "title": "Digital modulation",
+      "summary": "ASK, FSK, PSK and QAM, signal constellations, bandwidth efficiency and orthogonal signalling.",
+      "requires": [
+        "communication-systems/baseband-transmission"
+      ]
+    },
+    {
+      "slug": "optimal-detection",
+      "title": "Detection in noise",
+      "summary": "Matched filters, maximum-likelihood detection, and the bit and symbol error rates of digital modulations.",
+      "requires": [
+        "communication-systems/digital-modulation",
+        "random-signals/optimal-filtering"
+      ]
+    },
+    {
+      "slug": "wireless-communication",
+      "title": "Wireless communication",
+      "summary": "Multipath fading, diversity, OFDM, multiple access, and link budgets of cellular and Wi-Fi systems.",
+      "requires": [
+        "communication-systems/optimal-detection"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1924,
+      "title": "The AM radio",
+      "detail": "The amplitude modulation, and the one that the carrier is for, of the radio, and the one that the broadcast is for.",
+      "people": []
+    },
+    {
+      "year": 1948,
+      "title": "The Shannon law",
+      "detail": "The capacity, and the one that the channel is for, of the communication, and the one that the limit is for.",
+      "people": [
+        "Shannon"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "The digital baseband",
+      "detail": "The pulse, and the one that the baseband is for, of the baseband, and the one that the data is for.",
+      "people": []
+    },
+    {
+      "year": 2008,
+      "title": "The OFDM and the fifth",
+      "detail": "The orthogonal, and the one that the frequency is for, of the OFDM, and the one that the fifth is for, of the generation.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Communication Systems",
+      "authors": "Proakis and Salehi",
+      "year": 2008,
+      "note": "The modulation and the detection, and the one that the noise is for.",
+      "slug": ""
+    },
+    {
+      "title": "Digital Communications",
+      "authors": "Sklar",
+      "year": 1997,
+      "note": "The baseband and the detection, and the one that the optimal is for.",
+      "slug": ""
+    },
+    {
+      "title": "Digital Communication over Fading Channels",
+      "authors": "Goldsmith",
+      "year": 2005,
+      "note": "The fading and the capacity, and the one that the channel is for.",
+      "slug": ""
+    }
+  ],
+  "next": [
+    "information-theory",
+    "rf-microwave"
+  ]
+}

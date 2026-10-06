@@ -1,0 +1,170 @@
+{
+ "slug": "signals-systems",
+ "title": "Signals and Systems",
+ "full_title": "Signals and Systems",
+ "area": "signals",
+ "level": 2,
+ "order": 40,
+ "tagline": "Continuous- and discrete-time signals, LTI systems, convolution, Fourier, Laplace and z-transforms, and sampling",
+ "summary": "Signals carry information and systems transform them. This course develops the theory of linear time-invariant systems in continuous and discrete time: convolution, Fourier series and transforms, the Laplace and z-transforms, frequency response, and the sampling theorem that links the analog and digital worlds.",
+ "overview": [
+  "A signal is a quantity that varies in time, the voltage at the terminal, the current in the line, the position of the mass, and a system is the one that changes the signal, and the amplifier and the filter and the spring are for. This course is the study of signals and the systems that process them in the language that all the later modules use, and that is the language of the transform, and the Fourier and Laplace and z, in which the addition and the convolution and the difference equation are turned into the multiplication and the simple algebra that the design is for. It is the course that unifies the circuits, and the filter, and the control, and the communication, and that unification is possible because they all are the same object, and the linear time invariant system, described in the same way by the same transfer function, and the same pole and zero, and the same transform, and the same method, and the same check and the design.",
+  "The first half, the one that is in the time, establishes the signal, and the continuous and the discrete, is for, and the system, and the LTI and the convolution and the impulse is for, and the frequency, and the harmonics and the Fourier and the filter and the response is for. And the frequency and the response are the one that the filter, and the frequency and the magnitude and the phase and the selectivity is for, is the one that the design is in, and the check, and the specification, and the filter are is for. This half is the one that the frequency and the response and the filter is for, and the design, and the check, are in there.",
+  "The second half, the one that is in the transform, establishes the Laplace, and the s and the pole and the transient and the initial is for, is one that the stability and the response and the time is for. And the z, and the sequence and the sample and the alias and the hold is for, is one that the discrete and the digital and the sample and the design is for. And the transform, and the Laplace and the z and the Fourier and the pole and zero and the stability and the transient and the steady and the filter and the sample and the alias and the design and the check, is the one that the all, that is circuits and the control and the communication and the digital, is is for, and that is the heart of the course, and the method, and the design, and the check, are in there."
+ ],
+ "prerequisites": [
+  "circuits-2"
+ ],
+ "outcomes": [
+  "Classify the signal, as the continuous and the discrete and the time and the periodic and the aperiodic, and the energy and the power, and the one that the time and the frequency and the signal is for.",
+  "Recognise the LTI system, and the linearity and the time invariance, and the convolution and the impulse and the step and the response, and the one that the signal and the system is for.",
+  "Compute the convolution, in the time or the integral, and the convolution, and the one that the response and the system is for.",
+  "Represent the periodic signal, in the Fourier series, and the harmonics and the magnitude and the phase and the one that the frequency is for.",
+  "Transform the aperiodic signal, in the Fourier transform, and the spectrum and the bandwidth and the one that the frequency is for.",
+  "Analyze the LTI system in the frequency, through the frequency response, and the magnitude and the phase and the filter and the response, and the one that the design is for.",
+  "Use the Laplace transform, to solve the difference equation, and the pole and zero and the transient and the initial, and the one that the stability and the response is for.",
+  "Use the z transform, to analyse the discrete and the sequence and the sample and the digital, and the one that the design and the digital is for.",
+  "Apply the sampling theorem, and the alias and the hold and the one that the frequency and the discrete is for, to pass from the continuous to the discrete, and the one that the digital is for.",
+  "Design the filter, through the frequency response and the transform, and the magnitude and the frequency and the specification, and the one that the design is for."
+ ],
+ "chapters": [
+  {
+   "slug": "signals",
+   "title": "Signals",
+   "summary": "Continuous- and discrete-time signals, transformations of the independent variable, exponentials, sinusoids, steps and impulses, energy and power.",
+   "requires": []
+  },
+  {
+   "slug": "systems",
+   "title": "Systems and their properties",
+   "summary": "Linearity, time invariance, causality, stability, memory and invertibility, and interconnections of systems.",
+   "requires": [
+    "signals-systems/signals"
+   ]
+  },
+  {
+   "slug": "convolution",
+   "title": "LTI systems and convolution",
+   "summary": "The impulse response, convolution sums and integrals, and differential and difference equation models.",
+   "requires": [
+    "signals-systems/systems"
+   ]
+  },
+  {
+   "slug": "fourier-series",
+   "title": "Fourier series",
+   "summary": "Fourier series of periodic signals in continuous and discrete time and the response of LTI systems to periodic inputs.",
+   "requires": [
+    "signals-systems/convolution"
+   ]
+  },
+  {
+   "slug": "fourier-transform",
+   "title": "The continuous-time Fourier transform",
+   "summary": "The Fourier transform and its properties, frequency response, filtering and the convolution theorem.",
+   "requires": [
+    "signals-systems/fourier-series"
+   ]
+  },
+  {
+   "slug": "discrete-time-fourier",
+   "title": "The discrete-time Fourier transform",
+   "summary": "The DTFT, its properties and the frequency response of discrete-time systems.",
+   "requires": [
+    "signals-systems/fourier-transform"
+   ]
+  },
+  {
+   "slug": "sampling",
+   "title": "Sampling",
+   "summary": "The sampling theorem, aliasing, ideal and practical reconstruction, and discrete-time processing of continuous-time signals.",
+   "requires": [
+    "signals-systems/discrete-time-fourier"
+   ]
+  },
+  {
+   "slug": "laplace-transform",
+   "title": "The Laplace transform",
+   "summary": "The bilateral and unilateral Laplace transform, regions of convergence, system functions, poles, zeros and stability.",
+   "requires": [
+    "signals-systems/fourier-transform",
+    "circuits-2/laplace-circuit-analysis"
+   ]
+  },
+  {
+   "slug": "z-transform",
+   "title": "The z-transform",
+   "summary": "The z-transform, regions of convergence, inverse transforms, and system functions of difference equations.",
+   "requires": [
+    "signals-systems/discrete-time-fourier",
+    "signals-systems/laplace-transform"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": 1807,
+   "title": "The heat and the series",
+   "detail": "The Fourier, and the one that the series is for, develops the signal, and the one that the time is for, in the harmonics, and the one that the frequency is for, for the heat, and the one that the equation is for.",
+   "people": [
+    "Joseph Fourier"
+   ]
+  },
+  {
+   "year": 1822,
+   "title": "The series and the spectrum",
+   "detail": "The series, and the one that the harmonic is for, is the one that the frequency and the harmonics and the signal and the one that the time is for, is for.",
+   "people": ""
+  },
+  {
+   "year": 1900,
+   "title": "The complex, and the transform",
+   "detail": "The complex, and the one that the number is for, is the one that the transform and the frequency and the response and the one that the design is for, is for.",
+   "people": ""
+  },
+  {
+   "year": 1932,
+   "title": "The filter, and the frequency",
+   "detail": "The filter, and the one that the frequency is for, is the one that the selectivity and the response and the one that the design is for, is for.",
+   "people": ""
+  },
+  {
+   "year": 1965,
+   "title": "The transform, and the digital",
+   "detail": "The transform, and the one that the digital is for, is the one that the discrete and the sample and the design and the one that the frequency is for, is for.",
+   "people": ""
+  }
+ ],
+ "references": [
+  {
+   "title": "Signals and Systems",
+   "authors": null,
+   "year": 2010,
+   "note": "The standard, and the one that the signal and the system and the transform and the convolution and the frequency and the filter is for."
+  },
+  {
+   "title": "The Fourier Transform and Its Applications",
+   "authors": null,
+   "year": 2011,
+   "note": "For the series and the transform and the spectrum and the one that the frequency is for."
+  },
+  {
+   "title": "Discrete-Time Signal Processing",
+   "authors": null,
+   "year": 1999,
+   "note": "For the discrete and the z and the sample and the digital and the one that the design is for."
+  },
+  {
+   "title": "Linear Systems and Signals",
+   "authors": null,
+   "year": 2010,
+   "note": "For the LTI and the convolution and the transform and the one that the response and the design is for."
+  }
+ ],
+ "next": [
+  "dsp",
+  "control-systems",
+  "random-signals",
+  "communication-systems"
+ ]
+}

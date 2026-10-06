@@ -1,0 +1,156 @@
+{
+  "slug": "computer-architecture",
+  "title": "Computer Architecture",
+  "full_title": "Computer Architecture",
+  "area": "digital",
+  "level": 2,
+  "order": 80,
+  "tagline": "Instruction sets, processor datapaths, pipelining, memory hierarchy and parallelism",
+  "summary": "A processor is a large finite-state machine that executes instructions. This course follows a program from its instruction set to the hardware: computer arithmetic, single-cycle and pipelined datapaths, hazards, caches and virtual memory, input and output, and the parallel architectures of multicore processors and GPUs.",
+  "overview": [
+    "A processor is a finite-state machine that runs your program. This course follows a program from its instruction set to the hardware that executes it.",
+    "We study computer arithmetic, single-cycle and pipelined datapaths, the hazards that limit them, the memory hierarchy from caches to virtual memory, input and output, and how multicore and GPU machines exploit parallelism."
+  ],
+  "prerequisites": [
+    "digital-logic"
+  ],
+  "outcomes": [
+    "Describe the instruction set architecture, registers, and addressing modes of a RISC-V-style processor",
+    "Build the datapath and control of a single-cycle and a pipelined processor",
+    "Identify and resolve data and control hazards with forwarding and stalls",
+    "Analyse the memory hierarchy, caches, and virtual memory, and measure performance with CPI and Amdahl's law"
+  ],
+  "chapters": [
+    {
+      "slug": "instruction-set-architecture",
+      "title": "Instruction set architecture",
+      "summary": "Instructions, registers, addressing modes and assembly language, using the RISC-V instruction set.",
+      "requires": [
+        "digital-logic/number-systems"
+      ]
+    },
+    {
+      "slug": "computer-arithmetic",
+      "title": "Computer arithmetic",
+      "summary": "Fast adders, multipliers and dividers, and floating-point representation and arithmetic.",
+      "requires": [
+        "computer-architecture/instruction-set-architecture",
+        "digital-logic/combinational-building-blocks"
+      ]
+    },
+    {
+      "slug": "single-cycle-processor",
+      "title": "A single-cycle processor",
+      "summary": "Datapath and control for a simple processor that executes one instruction per clock cycle.",
+      "requires": [
+        "computer-architecture/computer-arithmetic",
+        "digital-logic/registers-counters"
+      ]
+    },
+    {
+      "slug": "pipelining",
+      "title": "Pipelining",
+      "summary": "Pipelined datapaths, data and control hazards, forwarding, stalls and branch prediction.",
+      "requires": [
+        "computer-architecture/single-cycle-processor"
+      ]
+    },
+    {
+      "slug": "memory-hierarchy",
+      "title": "The memory hierarchy",
+      "summary": "Locality, caches and their organisation, virtual memory, and the performance of memory systems.",
+      "requires": [
+        "computer-architecture/pipelining"
+      ]
+    },
+    {
+      "slug": "input-output",
+      "title": "Input, output and interrupts",
+      "summary": "Buses, memory-mapped I/O, polling, interrupts and direct memory access.",
+      "requires": [
+        "computer-architecture/memory-hierarchy"
+      ]
+    },
+    {
+      "slug": "performance",
+      "title": "Performance",
+      "summary": "Measuring performance, CPI and clock rate, Amdahl’s law and benchmarks.",
+      "requires": [
+        "computer-architecture/pipelining"
+      ]
+    },
+    {
+      "slug": "parallel-architectures",
+      "title": "Parallel architectures",
+      "summary": "Instruction-level parallelism, multicore processors, cache coherence, and vector and GPU architectures.",
+      "requires": [
+        "computer-architecture/memory-hierarchy",
+        "computer-architecture/performance"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1946,
+      "title": "ENIAC",
+      "detail": "One of the earliest general-purpose electronic computers, programmed by rewiring its plugboards.",
+      "people": [
+        "Mauchly",
+        "Eckert"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "IBM System/360",
+      "detail": "A unified instruction set that defined compatibility across a range of machines.",
+      "people": [
+        "IBM"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "MIPS",
+      "detail": "A reduced instruction set showing that a simple orthogonal set runs at high clock rates.",
+      "people": [
+        "Paterson",
+        "Hennessy",
+        "Patterson"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "Pentium Pro",
+      "detail": "An out-of-order superscalar that reordered and renamed instructions to fill pipeline stalls.",
+      "people": [
+        "Intel"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Computer Architecture: A Quantitative Approach",
+      "authors": "Hennessy and Patterson",
+      "year": 2019,
+      "note": "The standard reference, quantifying every design choice.",
+      "slug": "hennessy-patterson"
+    },
+    {
+      "title": "RISC-V ISA Manual, V",
+      "authors": "Krste Asanovic et al",
+      "year": 2019,
+      "note": "The open instruction set, the basis of this course.",
+      "slug": "riscv"
+    },
+    {
+      "title": "Digital Design and Computer Architecture",
+      "authors": "Harris and Harris",
+      "year": 2012,
+      "note": "A design-oriented treatment of datapaths and pipelines.",
+      "slug": "harris"
+    }
+  ],
+  "next": [
+    "embedded-systems",
+    "digital-ic"
+  ]
+}

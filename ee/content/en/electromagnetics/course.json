@@ -1,0 +1,174 @@
+{
+  "slug": "electromagnetics",
+  "title": "Electromagnetics",
+  "full_title": "Engineering Electromagnetics",
+  "area": "em",
+  "level": 2,
+  "order": 50,
+  "tagline": "Electrostatics, magnetostatics, Maxwell’s equations, plane waves and transmission lines",
+  "summary": "Circuit theory is an approximation to electromagnetism. This course develops static electric and magnetic fields, capacitance and inductance, Faraday’s law and Maxwell’s equations, and the propagation, reflection and guiding of electromagnetic waves, ending with transmission lines.",
+  "overview": [
+    "Every field in the machine and the circuit is one electromagnetic field. This course follows the field from the vector to the wave: vector analysis, the electrostatic and magnetostatic fields, the boundary value problem that makes it a field, Maxwells equations, the waves and the transmission lines that carry the field.",
+    "We build each field from the basic equation, and then study how the field moves the charge and the energy."
+  ],
+  "prerequisites": [
+    "circuits-2"
+  ],
+  "outcomes": [
+    "Use the vector notation for the field, and the divergence and the curl and the boundary of the field",
+    "Solve the electrostatic and the magnetostatic field of the charge and the current",
+    "Set up the boundary value problem of the field in the medium and the one that the limit is for",
+    "Solve Maxwells equations and the wave and the wave of the transmission line"
+  ],
+  "chapters": [
+    {
+      "slug": "vector-analysis",
+      "title": "Vector analysis for fields",
+      "summary": "Coordinate systems, line, surface and volume integrals, gradient, divergence and curl, and the theorems of Gauss and Stokes.",
+      "requires": []
+    },
+    {
+      "slug": "electrostatics",
+      "title": "Electrostatic fields",
+      "summary": "Coulomb’s law, electric field and flux density, Gauss’s law, and the electric potential.",
+      "requires": [
+        "electromagnetics/vector-analysis"
+      ]
+    },
+    {
+      "slug": "conductors-dielectrics",
+      "title": "Conductors, dielectrics and capacitance",
+      "summary": "Current and conductors, polarisation and permittivity, boundary conditions, capacitance and electrostatic energy.",
+      "requires": [
+        "electromagnetics/electrostatics"
+      ]
+    },
+    {
+      "slug": "boundary-value-problems",
+      "title": "Poisson’s and Laplace’s equations",
+      "summary": "Boundary-value problems in electrostatics, uniqueness, the method of images and numerical field solutions.",
+      "requires": [
+        "electromagnetics/conductors-dielectrics"
+      ]
+    },
+    {
+      "slug": "magnetostatics",
+      "title": "Magnetostatic fields",
+      "summary": "The Biot–Savart law, Ampère’s law, magnetic flux density, vector potential and magnetic materials.",
+      "requires": [
+        "electromagnetics/electrostatics"
+      ]
+    },
+    {
+      "slug": "induction-inductance",
+      "title": "Electromagnetic induction",
+      "summary": "Faraday’s law, motional and transformer emf, self- and mutual inductance, magnetic energy and forces.",
+      "requires": [
+        "electromagnetics/magnetostatics"
+      ]
+    },
+    {
+      "slug": "maxwells-equations",
+      "title": "Maxwell’s equations",
+      "summary": "Displacement current, Maxwell’s equations in integral and differential form, boundary conditions and time-harmonic fields.",
+      "requires": [
+        "electromagnetics/induction-inductance"
+      ]
+    },
+    {
+      "slug": "plane-waves",
+      "title": "Uniform plane waves",
+      "summary": "The wave equation, plane waves in lossless and lossy media, skin depth, polarisation and the Poynting vector.",
+      "requires": [
+        "electromagnetics/maxwells-equations"
+      ]
+    },
+    {
+      "slug": "reflection-refraction",
+      "title": "Reflection and transmission of waves",
+      "summary": "Normal and oblique incidence on planar boundaries, standing waves, total internal reflection and the Brewster angle.",
+      "requires": [
+        "electromagnetics/plane-waves"
+      ]
+    },
+    {
+      "slug": "transmission-lines",
+      "title": "Transmission lines",
+      "summary": "Distributed circuit models, the telegrapher’s equations, characteristic impedance, reflections, standing waves and transients on lines.",
+      "requires": [
+        "electromagnetics/plane-waves",
+        "circuits-2/sinusoids-phasors"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1820,
+      "title": "Oersteds discovery",
+      "detail": "Oersted showed that the current and the one that the field is for is for, and the one that the magnet is for is for, and the one that the limit is for.",
+      "people": [
+        "Oersted"
+      ]
+    },
+    {
+      "year": 1820,
+      "title": "Ampere",
+      "detail": "Ampere set the law of the current and the one that the field is for is for, and the force and the one that the limit is for.",
+      "people": [
+        "Ampere"
+      ]
+    },
+    {
+      "year": 1831,
+      "title": "Faradays law",
+      "detail": "Faraday showed that the changing field and the one that the limit is for is for the current, and the one that the machine is for is for.",
+      "people": [
+        "Faraday"
+      ]
+    },
+    {
+      "year": 1865,
+      "title": "Maxwell",
+      "detail": "Maxwell set the equations of the field and the wave, and the one that the limit is for is for.",
+      "people": [
+        "Maxwell"
+      ]
+    },
+    {
+      "year": 1887,
+      "title": "Heavysides",
+      "detail": "Heavysides set the vector of the field and the wave, and the one that the limit is for is for.",
+      "people": [
+        "Heavysides"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Engineering Electromagnetics",
+      "authors": "Hayt and Buck",
+      "year": 2008,
+      "note": "The standard reference for the field and the boundary and the wave.",
+      "slug": "hayt"
+    },
+    {
+      "title": "Fields and Waves",
+      "authors": "Sadiku",
+      "year": 2009,
+      "note": "A quantified and design-oriented treatment.",
+      "slug": "sadiku"
+    },
+    {
+      "title": "Elements of Electromagnetics",
+      "authors": "Ulaby",
+      "year": 2015,
+      "note": "A physics and design of the field and the wave.",
+      "slug": "ulaby"
+    }
+  ],
+  "next": [
+    "rf-microwave",
+    "photonics",
+    "electric-machines"
+  ]
+}

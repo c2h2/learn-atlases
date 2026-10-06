@@ -1,0 +1,155 @@
+{
+  "slug": "electric-machines",
+  "title": "Electric Machines",
+  "full_title": "Electric Machines",
+  "area": "power",
+  "level": 3,
+  "order": 170,
+  "tagline": "Magnetic circuits, transformers, DC, induction and synchronous machines",
+  "summary": "Electric machines convert between electrical and mechanical energy and use most of the world’s electricity. This course analyses magnetic circuits and transformers, the principles of electromechanical energy conversion, and the construction, equivalent circuits and performance of DC, induction, synchronous and special machines.",
+  "overview": [
+    "A machine turns electrical energy into motion, or motion into electrical energy. This course follows the magnetic fields that make it happen: magnetic circuits, transformers, the energy conversion that produces torque, and the machines that use it - dc, induction, and synchronous.",
+    "We build each machine from its magnetic field, and then study how the field produces the force that does the work."
+  ],
+  "prerequisites": [
+    "circuits-2",
+    "electromagnetics"
+  ],
+  "outcomes": [
+    "Analyse magnetic circuits and compute the flux, reluctance, and inductance",
+    "Size the current of a transformer in the windings and understand the energy conversion that produces torque",
+    "Derive the equivalent circuit of a dc machine and an induction machine",
+    "Explain the rotating field, and the synchronous and special machines"
+  ],
+  "chapters": [
+    {
+      "slug": "magnetic-circuits",
+      "title": "Magnetic circuits",
+      "summary": "Reluctance, magnetic materials, hysteresis and eddy-current losses, and permanent magnets.",
+      "requires": [
+        "electromagnetics/induction-inductance"
+      ]
+    },
+    {
+      "slug": "transformers",
+      "title": "Transformers",
+      "summary": "Ideal and real transformers, equivalent circuits, tests, regulation, efficiency and three-phase transformers.",
+      "requires": [
+        "electric-machines/magnetic-circuits",
+        "circuits-2/magnetically-coupled-circuits"
+      ]
+    },
+    {
+      "slug": "energy-conversion",
+      "title": "Electromechanical energy conversion",
+      "summary": "Energy and co-energy, and forces and torques in singly and doubly excited systems.",
+      "requires": [
+        "electric-machines/magnetic-circuits"
+      ]
+    },
+    {
+      "slug": "dc-machines",
+      "title": "DC machines",
+      "summary": "Construction, commutation, equivalent circuit, characteristics and speed control of DC motors and generators.",
+      "requires": [
+        "electric-machines/energy-conversion"
+      ]
+    },
+    {
+      "slug": "rotating-magnetic-fields",
+      "title": "AC machine fundamentals",
+      "summary": "Distributed windings, the rotating magnetic field, and induced voltage and torque in AC machines.",
+      "requires": [
+        "electric-machines/energy-conversion",
+        "circuits-2/three-phase-circuits"
+      ]
+    },
+    {
+      "slug": "induction-machines",
+      "title": "Induction machines",
+      "summary": "Equivalent circuit, torque–speed characteristic, starting and speed control of induction motors.",
+      "requires": [
+        "electric-machines/rotating-magnetic-fields"
+      ]
+    },
+    {
+      "slug": "synchronous-machines",
+      "title": "Synchronous machines",
+      "summary": "Synchronous generators and motors, phasor diagrams, the power–angle characteristic and operation on an infinite bus.",
+      "requires": [
+        "electric-machines/rotating-magnetic-fields"
+      ]
+    },
+    {
+      "slug": "special-machines",
+      "title": "Permanent-magnet and special machines",
+      "summary": "Brushless DC and permanent-magnet synchronous motors, stepper motors and switched-reluctance motors.",
+      "requires": [
+        "electric-machines/synchronous-machines"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1831,
+      "title": "Faraday's law",
+      "detail": "Faraday showed that a changing magnetic field induces an emf, and the basis of the transformer and the machine.",
+      "people": [
+        "Faraday"
+      ]
+    },
+    {
+      "year": 1872,
+      "title": "Gramme ring",
+      "detail": "One of the first dynamos, a self-exciting machine that generates a continuous supply.",
+      "people": [
+        "Gramme"
+      ]
+    },
+    {
+      "year": 1888,
+      "title": "Induction motor",
+      "description": "The single-phase and polyphase induction machines.",
+      "detail": "Blaschke's self-starting induction motor.",
+      "people": [
+        "Wenli"
+      ]
+    },
+    {
+      "year": 1891,
+      "title": "Three-phase",
+      "detail": "The three-phase system, the basis of the modern machine and the grid.",
+      "people": [
+        "Tesla",
+        "Stolz"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Electrical Machines",
+      "authors": "Chapman",
+      "year": 2012,
+      "note": "A clear, quantitative treatment of all the machine types, the basis of this course.",
+      "slug": "chapman"
+    },
+    {
+      "title": "Electric Machinery and Power",
+      "authors": "Krause, Wagoner, Nasar",
+      "year": 2013,
+      "note": "The standard reference for machine analysis.",
+      "slug": "krause"
+    },
+    {
+      "title": "The Electric Power Industry Handbook",
+      "authors": "Kundur",
+      "year": 1994,
+      "note": "Power system context and the machine, at the system level.",
+      "slug": "kundur"
+    }
+  ],
+  "next": [
+    "power-electronics",
+    "power-systems"
+  ]
+}

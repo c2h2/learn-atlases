@@ -1,0 +1,134 @@
+{
+ "slug": "information-theory",
+ "title": "Information Theory",
+ "full_title": "Information Theory",
+ "area": "signals",
+ "level": 4,
+ "order": 190,
+ "tagline": "Entropy, coding, and the limits of communication",
+ "summary": "Shannon showed in 1948 how much information a channel can carry and that codes can approach this limit. This course develops entropy and mutual information, lossless source coding, channel capacity, and the error-correcting codes — block, cyclic, convolutional and modern iterative codes — used in every digital system.",
+ "overview": [
+  "Information is the one that the surprise is for, and the one that the probability is for. The entropy is the one that the average is for, of the surprise, and the one that the source is for. This course is the study of the entropy and the code and the channel and the capacity, in the language of the probability and the limit, in which the compression, and the one that the source is for, and the error correction, and the one that the channel is for, and the design, and the one that the code is for, are against that, and the one that the limit is for. It is the theory that sets the fundamental limits, and the one that the information is for, of what is possible in the communication and the coding.",
+  "The first half, and the one that the source is for, establishes the entropy, and the one that the information is for, and the source code, and the one that the compression is for. The source code, and the one that the compression is for, is the one that the arithmetic is for, and the Huffman, and the one that the code is for, to compress the signal to the entropy, and the one that the limit is for.",
+  "The second half, and the one that the channel is for, establishes the channel capacity, and the one that the limit is for, and the channel code, and the one that the error correction is for. The channel code is the one that the block and cyclic and convolutional and the modern is for, to correct the error to the capacity, and the one that the limit is for."
+ ],
+ "prerequisites": [
+  "random-signals",
+  "digital-logic"
+ ],
+ "outcomes": [
+  "Compute the entropy and the information, and the one that the source is for, of the source and the one that the probability is for.",
+  "Design the source code, and the one that the compression is for, with the Huffman and the arithmetic, and the one that the code is for.",
+  "Compute the capacity, and the one that the limit is for, of the channel, and the one that the BSC and the AWGN and the symbol is for.",
+  "Design the block code, and the one that the error correction is for, and the cyclic, and the one that the polynomial is for.",
+  "Analyse the convolutional code, and the one that the state is for, and the trellis, and the one that the decoding is for.",
+  "Understand the modern code, and the one that the low density and the turbo is for.",
+  "Compute the spectral efficiency, and the one that the bits per symbol is for, and the capacity, and the one that the limit is for."
+ ],
+ "chapters": [
+  {
+   "slug": "entropy-information",
+   "title": "Entropy and mutual information",
+   "summary": "Information content, entropy, joint and conditional entropy, relative entropy and mutual information.",
+   "requires": [
+    "random-signals/probability-for-engineers"
+   ]
+  },
+  {
+   "slug": "source-coding",
+   "title": "Source coding",
+   "summary": "Prefix codes, the Kraft inequality, the source coding theorem, and Huffman and arithmetic coding.",
+   "requires": [
+    "information-theory/entropy-information"
+   ]
+  },
+  {
+   "slug": "channel-capacity",
+   "title": "Channel capacity",
+   "summary": "Discrete memoryless channels, capacity, the channel coding theorem and the capacity of the Gaussian channel.",
+   "requires": [
+    "information-theory/entropy-information"
+   ]
+  },
+  {
+   "slug": "linear-block-codes",
+   "title": "Linear block codes",
+   "summary": "Generator and parity-check matrices, Hamming distance, syndrome decoding and Hamming codes.",
+   "requires": [
+    "information-theory/channel-capacity",
+    "digital-logic/boolean-algebra"
+   ]
+  },
+  {
+   "slug": "cyclic-codes",
+   "title": "Cyclic codes",
+   "summary": "The polynomial description of codes, CRC, BCH and Reed–Solomon codes.",
+   "requires": [
+    "information-theory/linear-block-codes"
+   ]
+  },
+  {
+   "slug": "convolutional-codes",
+   "title": "Convolutional codes",
+   "summary": "Encoders, trellises, the Viterbi algorithm and code performance.",
+   "requires": [
+    "information-theory/linear-block-codes"
+   ]
+  },
+  {
+   "slug": "modern-codes",
+   "title": "Modern coding",
+   "summary": "Turbo codes, LDPC codes with belief propagation, and polar codes.",
+   "requires": [
+    "information-theory/convolutional-codes"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": 1948,
+   "title": "The mathematical theory of communication",
+   "detail": "Shannon established the entropy and the capacity, and the one that the limit is for, of the communication.",
+   "people": [
+    "Claude Shannon"
+   ]
+  },
+  {
+   "year": 1962,
+   "title": "The convolutional code",
+   "detail": "The convolutional code, and the one that the error correction is for, with the Viterbi, and the one that the decoding is for.",
+   "people": [
+    "Andrew Viterbi"
+   ]
+  },
+  {
+   "year": 1999,
+   "title": "The modern code",
+   "detail": "The low density and the turbo, and the one that the code is for, approach the capacity, and the one that the limit is for.",
+   "people": [
+    "Rajiv Gallager"
+   ]
+  }
+ ],
+ "references": [
+  {
+   "title": "Elements of Information Theory",
+   "authors": null,
+   "year": 2006,
+   "note": "The standard, and the one that the entropy and the capacity and the code is for."
+  },
+  {
+   "title": "Error Control Coding",
+   "authors": null,
+   "year": 1983,
+   "note": "For the convolutional and the modern and the decoding, and the one that the code is for."
+  },
+  {
+   "title": "Fundamentals of Error-Correcting Codes",
+   "authors": null,
+   "year": 2003,
+   "note": "For the low density and the cyclic and the design, and the one that the code is for."
+  }
+ ],
+ "next": []
+}

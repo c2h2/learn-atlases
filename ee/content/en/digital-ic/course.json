@@ -1,0 +1,153 @@
+{
+  "slug": "digital-ic",
+  "title": "Digital Integrated Circuits",
+  "full_title": "Digital Integrated Circuits",
+  "area": "digital",
+  "level": 3,
+  "order": 120,
+  "tagline": "CMOS inverters and gates, timing, interconnect, power and memory design",
+  "summary": "Billions of transistors on a chip behave as logic gates only because of careful circuit design. This course analyses the CMOS inverter and logic gates, delay and logical effort, dynamic and sequential circuits, interconnect, power dissipation and memory arrays, together with the fabrication process and layout.",
+  "overview": [
+    "CMOS is the technology that makes your processor. This course follows a logic gate from its transistors to the chip: fabrication, the inverter, static and dynamic logic, the clock, the wires between blocks, the power they burn, and the memories they hold.",
+    "We build each circuit from the transistor up, and then study how the pieces fit into a full digital integrated circuit."
+  ],
+  "prerequisites": [
+    "electronics-1"
+  ],
+  "outcomes": [
+    "Describe the CMOS fabrication process and the structure of an inverter",
+    "Design static and dynamic logic families that implement combinational and sequential circuits",
+    "Analyse the clock, the interconnect, and the power that a digital integrated circuit uses",
+    "Explain the memory arrays that store the data a processor needs"
+  ],
+  "chapters": [
+    {
+      "slug": "cmos-fabrication",
+      "title": "CMOS fabrication and layout",
+      "summary": "The CMOS process, layers and masks, design rules, stick diagrams and layout.",
+      "requires": [
+        "semiconductor-devices/field-effect-transistor"
+      ]
+    },
+    {
+      "slug": "cmos-inverter",
+      "title": "The CMOS inverter",
+      "summary": "Voltage transfer characteristic, noise margins, switching threshold, propagation delay and sizing.",
+      "requires": [
+        "digital-ic/cmos-fabrication",
+        "digital-logic/boolean-algebra"
+      ]
+    },
+    {
+      "slug": "static-cmos-logic",
+      "title": "Static CMOS logic",
+      "summary": "Complementary gates, transistor sizing, logical effort, and pass-transistor and transmission-gate logic.",
+      "requires": [
+        "digital-ic/cmos-inverter"
+      ]
+    },
+    {
+      "slug": "dynamic-logic",
+      "title": "Dynamic logic",
+      "summary": "Precharge–evaluate circuits, domino logic, charge sharing and leakage.",
+      "requires": [
+        "digital-ic/static-cmos-logic"
+      ]
+    },
+    {
+      "slug": "sequential-circuits-clocking",
+      "title": "Sequential circuits and clocking",
+      "summary": "CMOS latches and flip-flops, timing constraints, clock distribution, skew and jitter.",
+      "requires": [
+        "digital-ic/static-cmos-logic",
+        "digital-logic/latches-flip-flops"
+      ]
+    },
+    {
+      "slug": "interconnect",
+      "title": "Interconnect",
+      "summary": "Resistance, capacitance and inductance of wires, Elmore delay, repeaters and crosstalk.",
+      "requires": [
+        "digital-ic/cmos-inverter"
+      ]
+    },
+    {
+      "slug": "power-dissipation",
+      "title": "Power dissipation",
+      "summary": "Dynamic, short-circuit and leakage power, voltage scaling, clock gating and power gating.",
+      "requires": [
+        "digital-ic/cmos-inverter"
+      ]
+    },
+    {
+      "slug": "memory-arrays",
+      "title": "Memory arrays",
+      "summary": "SRAM, DRAM and flash cells, sense amplifiers, decoders and memory organisation.",
+      "requires": [
+        "digital-ic/sequential-circuits-clocking",
+        "digital-logic/memories-programmable-logic"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1963,
+      "title": "MOS",
+      "detail": "Connelly and Molyneaux proposed the insulated gate, which became the MOSFET, and the basis of CMOS.",
+      "people": [
+        "Connelly",
+        "Molyneaux"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "CMOS",
+      "detail": "Kao and colleagues showed that complementary MOS has no static current and low dissipation.",
+      "people": [
+        "Kao",
+        "Franconi"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "Intel 3101",
+      "detail": "The first microprocessor to use CMOS, showing that the technology is low power, and can be scaled.",
+      "people": [
+        "Intel"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Scalable",
+      "detail": "Widely adopted, because it is low power, easy to fabricate, and scales to billions of transistors.",
+      "people": [
+        "Intel",
+        "MOS Technology"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "CMOS Digital Integrated Circuits",
+      "authors": "Rabaey, Chandrakasan, Nikolic",
+      "year": 2003,
+      "note": "The standard CMOS design reference.",
+      "slug": "rabaey"
+    },
+    {
+      "title": "Digital Integrated Circuits",
+      "authors": "Weste and Harris",
+      "year": 2011,
+      "note": "A design-oriented treatment of CMOS logic and memory.",
+      "slug": "weste-harris"
+    },
+    {
+      "title": "Microelectronics Circuit Analysis",
+      "authors": "Sedra and Smith",
+      "year": 2015,
+      "note": "Device and circuit analysis, the basis of the transistor design.",
+      "slug": "sedra"
+    }
+  ],
+  "next": []
+}

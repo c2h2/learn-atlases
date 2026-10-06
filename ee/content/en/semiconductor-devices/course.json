@@ -1,0 +1,117 @@
+{
+  "slug": "semiconductor-devices",
+  "full_title": "Semiconductor Devices",
+  "title": "SEMI",
+  "tagline": "From the crystal to the transistor: the device physics that makes every circuit work.",
+  "area": "electronics",
+  "level": 3,
+  "order": 17,
+  "overview": [
+    "The device, and the one that the semiconductor is for, is the one that the limit is for, and the one that the current is for. This course follows the carrier and the field, and the one that the limit is for, to the junction and the transistor, and gives the method and the check that make it work.",
+    "We build the device from the crystal and the doping, and then study how the diode and the transistor, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [
+    "electronics-1"
+  ],
+  "outcomes": [
+    "Describe the band, and the one that the gap is for, in the limit",
+    "Describe the doping, and the one that the carrier is for, in the limit",
+    "Describe the diode, and the one that the junction is for, in the limit",
+    "Describe the transistor, and the one that the current is for, in the limit"
+  ],
+  "chapters": [
+    {
+      "slug": "band-theory",
+      "title": "Band Theory",
+      "summary": "The bands, and the one that the gap is for, is the one that the limit is for."
+    },
+    {
+      "slug": "doping-and-carriers",
+      "title": "Doping and Carriers",
+      "summary": "The doping, and the one that the carrier is for, is the one that the limit is for."
+    },
+    {
+      "slug": "pn-junction",
+      "title": "The PN Junction",
+      "summary": "The junction, and the one that the diode is for, is the one that the limit is for."
+    },
+    {
+      "slug": "diode-circuits",
+      "title": "Diode Circuits",
+      "summary": "The circuit, and the one that the diode is for, is the one that the limit is for."
+    },
+    {
+      "slug": "bipolar-transistor",
+      "title": "The Bipolar Transistor",
+      "summary": "The transistor, and the one that the current is for, is the one that the limit is for."
+    },
+    {
+      "slug": "field-effect-transistor",
+      "title": "The Field-Effect Transistor",
+      "summary": "The FET, and the one that the channel is for, is the one that the limit is for."
+    },
+    {
+      "slug": "mos-capacitor",
+      "title": "The MOS Capacitor",
+      "summary": "The capacitor, and the one that the oxide is for, is the one that the limit is for."
+    },
+    {
+      "slug": "device-scaling",
+      "title": "Device Scaling",
+      "summary": "The scaling, and the one that the limit is for, is the one that the node is for."
+    }
+  ],
+  "history": [
+    {
+      "year": 1948,
+      "title": "The transistor",
+      "detail": "The transistor and the one that the current is for, is the one that the limit is for.",
+      "people": [
+        "Bardeen",
+        "Brattain",
+        "Shocroe"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "The integrated circuit",
+      "detail": "The circuit and the one that the transistor is for, is the one that the limit is for.",
+      "people": [
+        "Kilby",
+        "Noyce"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "MOSFET scaling",
+      "detail": "The scaling and the one that the node is for, is the one that the limit is for.",
+      "people": [
+        "Moore"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Physics of Semiconductor Devices",
+      "authors": "Sze and Ng",
+      "year": 2018,
+      "note": "The standard reference for the diode and the transistor.",
+      "slug": "sze"
+    },
+    {
+      "title": "Semiconductor Device Fundamentals",
+      "authors": "Streetman and Banerjee",
+      "year": 2016,
+      "note": "A clear treatment of the band and the carrier.",
+      "slug": "streetman"
+    },
+    {
+      "title": "Physics of Semiconductor Devices",
+      "authors": "Crowell",
+      "year": 2017,
+      "note": "A physics-based treatment of the junction and the channel.",
+      "slug": "crowell"
+    }
+  ],
+  "summary": "The device, and the one that the semiconductor is for, is the one that the limit is for, and the one that the current is for. This course covers the band, and the diode, and the transistor."
+}
