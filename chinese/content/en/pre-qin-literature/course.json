@@ -1,104 +1,203 @@
 {
-  "slug": "pre-qin-literature",
-  "title": "Pre-Qin Literature",
-  "full_title": "Pre-Qin Literature: From Myth to the Masters",
-  "area": "ancient",
-  "level": 1,
-  "order": 60,
-  "tagline": "Myths, the *Book of Songs*, its forms and techniques, historical prose, narrative in the *Zuo Zhuan*, the *Analects* and the *Mencius*, Zhuangzi and the other Masters, Qu Yuan and the *Li Sao*, the *Songs of Chu*, and the legacy of early literature",
-  "summary": "The literature of the centuries before the Qin unification laid foundations that Chinese writers drew on for the next two thousand years. This course reads the early myths, the *Book of Songs*, the historical prose of the *Book of Documents*, the *Zuo Zhuan* and the *Discourses of the States*, the prose of Confucius, Mencius, Zhuangzi and the other Masters, and the poetry of Qu Yuan and the *Songs of Chu*.",
-  "overview": [],
-  "prerequisites": [
-    "classical-chinese-1"
-  ],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "myths",
-      "title": "Myths",
-      "summary": "The fragmentary myths of ancient China — Nüwa, Pangu, Kuafu, Jingwei — where they are recorded, and why they survive only in pieces.",
-      "requires": [
-        "classical-chinese-1/what-is-wenyan"
-      ]
-    },
-    {
-      "slug": "book-of-songs",
-      "title": "The *Book of Songs*",
-      "summary": "The 305 poems, how the anthology was compiled, its Airs, Odes and Hymns, and how it became a Confucian classic.",
-      "requires": [
-        "pre-qin-literature/myths"
-      ]
-    },
-    {
-      "slug": "songs-forms",
-      "title": "Form and technique in the *Book of Songs*",
-      "summary": "Four-character lines, repetition across stanzas, and the techniques of *fu*, *bi* and *xing*.",
-      "requires": [
-        "pre-qin-literature/book-of-songs"
-      ]
-    },
-    {
-      "slug": "historical-prose",
-      "title": "Historical prose",
-      "summary": "The *Book of Documents*, the *Spring and Autumn Annals*, the *Zuo Zhuan*, the *Discourses of the States* and the *Intrigues of the Warring States*.",
-      "requires": [
-        "pre-qin-literature/book-of-songs"
-      ]
-    },
-    {
-      "slug": "zuo-zhuan",
-      "title": "Narrative in the *Zuo Zhuan*",
-      "summary": "How the *Zuo Zhuan* tells of battles, speeches and people, and its influence on later historical writing.",
-      "requires": [
-        "pre-qin-literature/historical-prose"
-      ]
-    },
-    {
-      "slug": "analects-mencius",
-      "title": "The *Analects* and the *Mencius*",
-      "summary": "Recorded sayings and argument: the style of the *Analects* and the persuasive prose of Mencius.",
-      "requires": [
-        "pre-qin-literature/historical-prose"
-      ]
-    },
-    {
-      "slug": "zhuangzi-masters",
-      "title": "Zhuangzi and the other Masters",
-      "summary": "The parables of Zhuangzi, the essays of Xunzi and Han Feizi, and the Mohists and other schools as literature.",
-      "requires": [
-        "pre-qin-literature/analects-mencius"
-      ]
-    },
-    {
-      "slug": "qu-yuan",
-      "title": "Qu Yuan and the *Li Sao*",
-      "summary": "Qu Yuan’s life and the *Li Sao*: its fragrant plants and fair ones, its journeys among the gods, and its place in Chinese culture.",
-      "requires": [
-        "pre-qin-literature/songs-forms"
-      ]
-    },
-    {
-      "slug": "songs-of-chu",
-      "title": "The *Songs of Chu*",
-      "summary": "The *Nine Songs*, the *Heavenly Questions* and other pieces, the culture of Chu, and how the *Chuci* differ from the *Book of Songs*.",
-      "requires": [
-        "pre-qin-literature/qu-yuan"
-      ]
-    },
-    {
-      "slug": "legacy",
-      "title": "The legacy of pre-Qin literature",
-      "summary": "The *Book of Songs* and the *Songs of Chu* as the two sources of Chinese poetry, the traditions of prose founded in this period, and how later writers read them.",
-      "requires": [
-        "pre-qin-literature/zhuangzi-masters",
-        "pre-qin-literature/songs-of-chu"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "han-to-nanbeichao",
-    "classical-criticism"
-  ]
+ "slug": "pre-qin-literature",
+ "title": "Pre-Qin Literature",
+ "full_title": "Pre-Qin Literature: From Myth to the Masters",
+ "area": "ancient",
+ "level": 1,
+ "order": 60,
+ "tagline": "Myths, the *Book of Songs*, its forms and techniques, historical prose, narrative in the *Zuo Zhuan*, the *Analects* and the *Mencius*, Zhuangzi and the other Masters, Qu Yuan and the *Li Sao*, the *Songs of Chu*, and the legacy of early literature",
+ "summary": "The literature of the centuries before the Qin unification laid foundations that Chinese writers drew on for the next two thousand years. This course reads the early myths, the *Book of Songs*, the historical prose of the *Book of Documents*, the *Zuo Zhuan* and the *Discourses of the States*, the prose of Confucius, Mencius, Zhuangzi and the other Masters, and the poetry of Qu Yuan and the *Songs of Chu*.",
+ "overview": [
+  "Pre-Qin literature is Chinese literature's childhood — and, uncannily, its apprenticeship master: the Book of Songs' four-character odes, the Zuo Zhuan's battle scenes, Mencius' temper, Zhuangzi's fish and butterflies, Qu Yuan's fragrant plants all became the source codes every later dynasty re-encrypted.",
+  "This course walks the thousand-year archive by genre and by workshop: mythology's fragments and their Victorian-afterlife reinventions; the Songs' compilation, taxonomy (feng/ya/song), techniques (fu/bi/xing) and music-loss; historical prose from Shangshu's oracles through Spring and Autumn's brush to the Zuo Zhuan's narrative rooms and the Strategies' rhetoric; the Masters' essay society and its argument styles; Qu Yuan inventing the individual voice, the Songs of Chu's shamans, orchids and monster-questions; and finally the twin-inheritance thesis (Feng-Sao) with which later ages explained all literature back to these two shelves.",
+  "Prerequisite: Classical Chinese I — every close reading here runs on its six workshop skills (sound, graph, punctuation, syntax, translation, appreciation)."
+ ],
+ "prerequisites": [
+  "classical-chinese-1"
+ ],
+ "outcomes": [
+  "map the major pre-Qin corpora (Songs, Documents, Annals, Zuo, Strategies, Analects, Mencius, Zhuangzi, Xunzi, Han Feizi, Chu Ci) to dates, milieus and afterlives",
+  "read a 国风 poem with 赋比兴 technique, four-character rhythm and layering, and defend the reading against alternative 美刺 interpretations",
+  "analyse Zuo Zhuan battle narratives for their point-of-view control, foreshadowing and diplomatic speech craft",
+  "compare the Masters' persuasive styles (Analects' aphorism, Mencius' momentum, Zhuangzi's parable, Han Feizi's edge, Xunzi's architecture)",
+  "explain the Chu Ci's shamanic substrate, the 香草美人 allegory's political grammar, and why Liu An called the Li Sao 国风-adjacent",
+  "trace 神话 afterlives: how Pangu, Nüwa, Hou Yi and the rest were recorded late, rewritten always, and remain China's most re-told IP",
+  "critically use the 风骚并称 template — what it canonized and what it hid",
+  "read original-language excerpts (with notes) of each corpus and place scholarly controversies (毛郑异同, 今古文, authorship of Li Sao) at their proper confidence"
+ ],
+ "chapters": [
+  {
+   "slug": "myths",
+   "title": "Myths",
+   "summary": "The fragmentary myths of ancient China — Nüwa, Pangu, Kuafu, Jingwei — where they are recorded, and why they survive only in pieces.",
+   "requires": [
+    "classical-chinese-1/what-is-wenyan"
+   ]
+  },
+  {
+   "slug": "book-of-songs",
+   "title": "The *Book of Songs*",
+   "summary": "The 305 poems, how the anthology was compiled, its Airs, Odes and Hymns, and how it became a Confucian classic.",
+   "requires": [
+    "pre-qin-literature/myths"
+   ]
+  },
+  {
+   "slug": "songs-forms",
+   "title": "Form and technique in the *Book of Songs*",
+   "summary": "Four-character lines, repetition across stanzas, and the techniques of *fu*, *bi* and *xing*.",
+   "requires": [
+    "pre-qin-literature/book-of-songs"
+   ]
+  },
+  {
+   "slug": "historical-prose",
+   "title": "Historical prose",
+   "summary": "The *Book of Documents*, the *Spring and Autumn Annals*, the *Zuo Zhuan*, the *Discourses of the States* and the *Intrigues of the Warring States*.",
+   "requires": [
+    "pre-qin-literature/book-of-songs"
+   ]
+  },
+  {
+   "slug": "zuo-zhuan",
+   "title": "Narrative in the *Zuo Zhuan*",
+   "summary": "How the *Zuo Zhuan* tells of battles, speeches and people, and its influence on later historical writing.",
+   "requires": [
+    "pre-qin-literature/historical-prose"
+   ]
+  },
+  {
+   "slug": "analects-mencius",
+   "title": "The *Analects* and the *Mencius*",
+   "summary": "Recorded sayings and argument: the style of the *Analects* and the persuasive prose of Mencius.",
+   "requires": [
+    "pre-qin-literature/historical-prose"
+   ]
+  },
+  {
+   "slug": "zhuangzi-masters",
+   "title": "Zhuangzi and the other Masters",
+   "summary": "The parables of Zhuangzi, the essays of Xunzi and Han Feizi, and the Mohists and other schools as literature.",
+   "requires": [
+    "pre-qin-literature/analects-mencius"
+   ]
+  },
+  {
+   "slug": "qu-yuan",
+   "title": "Qu Yuan and the *Li Sao*",
+   "summary": "Qu Yuan’s life and the *Li Sao*: its fragrant plants and fair ones, its journeys among the gods, and its place in Chinese culture.",
+   "requires": [
+    "pre-qin-literature/songs-forms"
+   ]
+  },
+  {
+   "slug": "songs-of-chu",
+   "title": "The *Songs of Chu*",
+   "summary": "The *Nine Songs*, the *Heavenly Questions* and other pieces, the culture of Chu, and how the *Chuci* differ from the *Book of Songs*.",
+   "requires": [
+    "pre-qin-literature/qu-yuan"
+   ]
+  },
+  {
+   "slug": "legacy",
+   "title": "The legacy of pre-Qin literature",
+   "summary": "The *Book of Songs* and the *Songs of Chu* as the two sources of Chinese poetry, the traditions of prose founded in this period, and how later writers read them.",
+   "requires": [
+    "pre-qin-literature/zhuangzi-masters",
+    "pre-qin-literature/songs-of-chu"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": -1000,
+   "title": "Zhou airs enter their making",
+   "detail": "Western Zhou collection and shaping of airs begins (the “wooden bell on the road” folk-survey is a later legend); the ritual odes of Zhou and the Southern airs reach stable written form.",
+   "people": "周乐官"
+  },
+  {
+   "year": -550,
+   "title": "Quoting the Oes as diplomacy",
+   "detail": "In the Zuo Zhuan's missions, envoys 赋诗言志 — reciting odes to state what they will not say outright; the anthology becomes the international language of the age and canon by usage.",
+   "people": "列国行人"
+  },
+  {
+   "year": -480,
+   "title": "Confucius sorts the canon (tradition)",
+   "detail": "“Set the Odes, order the Documents, return the Ya and Song” — whether he deleted or simply taught, the tradition of a Confucian-edited classic fixes the Songs' afterlife as scripture of statecraft and self-cultivation.",
+   "people": "孔子（传说）"
+  },
+  {
+   "year": -350,
+   "title": "Zuo Zhuan takes written shape",
+   "detail": "The narrative commentary (attributed to Zuo Qiuming) reaches the form we read: battles told in stage-shots, speeches as engine rooms of fate — historical prose matures into literature.",
+   "people": "左丘明（传统署名）"
+  },
+  {
+   "year": -300,
+   "title": "The essay society",
+   "detail": "Hundred-schools prose in full tilt: Mencius harangues, Zhuangzi parables, Han Feizi files his blades — argument becomes a literary genre with styles of its own.",
+   "people": "诸子"
+  },
+  {
+   "year": -280,
+   "title": "First signed voice",
+   "detail": "Qu Yuan composes the Li Sao (traditional dating): the longest poem before the Han, the first great poem with a name behind its grief — the individual enters Chinese literature.",
+   "people": "屈原"
+  },
+  {
+   "year": -239,
+   "title": "The last great compilation",
+   "detail": "Lu Buwei's guests compile the Lüshi Chunqiu, claiming to hold all the principles of heaven and earth in one index — the hundred schools close with a systematic table of contents of themselves.",
+   "people": "吕不韦门客"
+  },
+  {
+   "year": -213,
+   "title": "The burning begins the end",
+   "detail": "Li Si's book-burning edict (excepting medicine, divination, planted records and博士-held copies) closes the pre-Qin era: what survives was preserved by memory, hiding and Han recopying — the first great editorial trauma of the canon.",
+   "people": "李斯／始皇"
+  }
+ ],
+ "references": [
+  {
+   "title": "《诗经》",
+   "authors": "佚名（周采诗／乐官编）",
+   "year": -600,
+   "note": "The source shelf; read with 毛传郑笺 and 朱熹《诗集传》; modern selections from 余冠英 onward."
+  },
+  {
+   "title": "《春秋左氏传》",
+   "authors": "左丘明（传统）",
+   "year": -350,
+   "note": "Narrative headquarters of early prose; Yang Bojun's 译注 remains the desk standard."
+  },
+  {
+   "title": "《史记·屈原贾生列传》",
+   "authors": "司马迁",
+   "year": -91,
+   "note": "The founding biography of Qu Yuan — source and legend at once; every Li Sao dating argument passes through it."
+  },
+  {
+   "title": "《文心雕龙》(《辨骚》《明诗》)",
+   "authors": "刘勰",
+   "year": 501,
+   "note": "The first systematic critic's verdict on Feng and Sao — the canonization under audit."
+  },
+  {
+   "title": "《四库全书总目提要》(集·楚词等部)",
+   "authors": "纪昀等",
+   "year": 1782,
+   "note": "Qing official scholarship's map of the pre-Qin holdings —辨章学术,考镜源流 in one shelf."
+  },
+  {
+   "title": "《中国文学史稿》",
+   "authors": "陆侃如、冯沅君",
+   "year": 1931,
+   "note": "The modern survey era's early synthesis — how the twentieth century learned to narrate these texts as literature."
+  }
+ ],
+ "next": [
+  "han-to-nanbeichao",
+  "classical-criticism"
+ ]
 }
