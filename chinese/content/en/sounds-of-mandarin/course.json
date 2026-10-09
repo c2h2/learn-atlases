@@ -7,9 +7,22 @@
   "order": 20,
   "tagline": "Speech sounds, initials, finals, tones, syllables and Hanyu Pinyin, tone sandhi, the neutral tone and erhua, stress and intonation, Putonghua and the dialects, and the Putonghua Proficiency Test",
   "summary": "Native speakers produce the sounds of Putonghua without thinking, but few can describe them. This course describes the sound system of standard Mandarin precisely — how its initials, finals and tones are made, how syllables are built, what Hanyu Pinyin does and does not show, and how sounds change in connected speech — and applies it to standard pronunciation, reading aloud and the differences between Putonghua and the reader’s own dialect.",
-  "overview": [],
+  "overview": [
+    "Native speakers of Putonghua produce dozens of its sounds every minute without an effort, and can hardly describe one. This course describes the sound system of standard Mandarin: how its initials, finals and tones are made and sound; how a syllable is built and what Hanyu Pinyin shows and hides; and how sounds change in connected speech — third-tone sandhi, the tone changes of 一 and 不, the neutral tone, erhua, stress and intonation.",
+    "The course begins with phonetics — what speech sounds are as physical, physiological and social facts — and then takes up the segments and tones of Putonghua one class at a time, always with the articulation behind the ear: place and manner for the initials, the four classes and the structure of the finals, Chao's five-level values for the tones. It ends by turning to the reader's own speech: the systematic correspondences between Putonghua and the regional pronunciation, how to train them, and how the national Putonghua Proficiency Test grades all of this.",
+    "Why should a native speaker take such a course? Because describing is a kind of knowing. The feel of pronunciation — which reading is standard, what one's own dialect does differently — becomes explicit knowledge only when it can be stated in terms of articulation, transcription and rule, and explicit knowledge can be checked, taught and extended. What is hard here is precision: a description of a sound is an observable claim about the mouth, a transcription is either right or wrong, and appeals to \"what everyone says\" dissolve where the审音表, the Pinyin scheme and the dictionaries disagree with custom. Work through the phonetic notation until it is second nature, and read every rule against your own speech."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Describe any initial of Putonghua by its place and manner of articulation, voiced or voiceless, aspirated or not.",
+    "Classify the finals of Putonghua — simple, compound and nasal — by their structure and by the four traditional classes of medial, and transcribe them in the IPA.",
+    "Give the four tones of Putonghua in Chao's five-level values and draw their contours; distinguish tone from intonation.",
+    "State the spelling rules of the Hanyu Pinyin scheme and point out where the spelling departs from the pronunciation.",
+    "Apply the sandhi rules of connected speech correctly: third-tone sandhi, the tone changes of 一 and 不, the tone changes of 啊, the neutral tone and erhua.",
+    "Analyse the stress, pauses and intonation of a sentence, and use them in reading aloud.",
+    "Describe the systematic correspondences between Putonghua and the reader's own dialect or regional accent, and diagnose and correct the reader's own pronunciations.",
+    "Explain the format, the grades and the common errors of the Putonghua Proficiency Test, and plan training against them."
+  ],
   "chapters": [
     {
       "slug": "speech-sounds",
@@ -83,8 +96,100 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 601,
+      "title": "Lù Fǎyán's Qieyun",
+      "detail": "Lù Fǎyán and several scholars set out a compromise reading system in the rime book Qieyun, arranging the syllables of Chinese by rhyme, initial type and tone; the categories it and its successors established — fǎnqiè spelling, the rime classes, the traditional analysis of initials and finals — are still the vocabulary Chinese phonetics uses for its past.",
+      "people": [
+        "Lù Fǎyán"
+      ]
+    },
+    {
+      "year": 1892,
+      "title": "The first book of modern phonetics for a Chinese dialect",
+      "detail": "Lu Lancheng's Qieyun linyin jian, published in Amoy (Xiamen), describes the sound system of Southern Min with the schemes of Western phonetics and argues for spelling Chinese with an alphabet.",
+      "people": [
+        "Lu Lancheng"
+      ]
+    },
+    {
+      "year": 1918,
+      "title": "Publication of the national phonetic alphabet",
+      "detail": "The Commission on Unifying Pronunciation, whose 1913 conference had settled a pronunciation standard for the national language, publishes the Zhùyin zìmǔ, the first state phonetic script for Chinese; its letter names bō pō mō fō are still how Chinese speakers recite the initials.",
+      "people": []
+    },
+    {
+      "year": 1928,
+      "title": "Instrumental phonetics begins in China",
+      "detail": "At the Institute of History and Philology, Chao Yuen Ren, Luo Changpei and others carry out phonograph experiments on the dialects; out of this work come Chao's tone letters and the five-level scale on which this course, and every Chinese textbook, describes tones.",
+      "people": [
+        "Chao Yuen Ren",
+        "Luo Changpei"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "Putonghua defined",
+      "detail": "After the National Conference on the Reform of the Written Language (1955), the State Council issues its directive on the promotion of Putonghua, defining it as \"based on the Beijing pronunciation, with the Northern dialects as the base dialect and with exemplary modern Baihua writings as the model for grammar\".",
+      "people": []
+    },
+    {
+      "year": 1958,
+      "title": "The Hanyu Pinyin scheme",
+      "detail": "The Pinyin scheme of 1958, worked out mostly by a committee under Zhōu Yǔpéi, is approved by the Standing Committee of the National People's Congress; it becomes the standard romanisation of Chinese (later ISO 7098) and the alphabet of the literacy campaign.",
+      "people": [
+        "Zhōu Yǔpéi"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "The pronunciation table of variant readings",
+      "detail": "The Pǔtōnghuǎ yìdú cí shěnyīn biǎo standardises the readings of polysyllabic words and abolishes many traditional variants — 骑, for instance, is qí throughout — so that \"the standard reading\" becomes, for the first time, a single dated document.",
+      "people": []
+    },
+    {
+      "year": 1994,
+      "title": "The Putonghua Proficiency Test",
+      "detail": "The Putonghua Proficiency Test, jointly established by the State Language Commission and its partners, is first administered; it turns the norms of this course into a graded, national examination with published syllabi and sample papers.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "《现代汉语》（上册）",
+      "authors": "黄伯荣、廖序东 主编",
+      "note": "The standard beginning textbook; its phonetics chapters fix the terms, the counts (21 initials, 39 finals) and the analyses this course follows."
+    },
+    {
+      "title": "《语音学》",
+      "authors": "毛倩",
+      "year": 1986,
+      "note": "A careful introduction to phonetics by a Chinese phonetician: articulation, acoustics, transcription, with Chinese examples."
+    },
+    {
+      "title": "《现代汉语词典》（第七版）",
+      "authors": "中国社会科学院语言研究所 编",
+      "year": 2016,
+      "note": "The authority on the standard reading of individual words and polysyllabic terms; readings here agree with it, including the 1985 shěnyīn table."
+    },
+    {
+      "title": "《普通话培训测试大纲》",
+      "authors": "国家语言文字工作委员会",
+      "note": "The national test syllabus: the 1,000 isolated syllables and 100 words, the reading passages and the topics, and the grading criteria."
+    },
+    {
+      "title": "《中国语言地图集》（第2版）·汉语方言卷",
+      "authors": "贺巍 等",
+      "year": 2012,
+      "note": "Where the varieties that produce the accent differences of chapter 8 are actually spoken; used descriptively, never copied."
+    },
+    {
+      "title": "《语言学纲要》",
+      "authors": "叶蜚声、徐通锵",
+      "note": "The phoneme, opposition and the sound change of chapter 4 in their linguistic home; the companion course of this one."
+    }
+  ],
   "next": [
     "poetry-metrics",
     "linguistics",
