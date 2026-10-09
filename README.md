@@ -7,9 +7,9 @@ Every topic is explained in depth, with figures you can play with. Live at <http
 |---|---|
 | **[Maths Atlas](maths/)** | University mathematics in 18 courses and 141 chapters, every lesson in English and Chinese, from logic and calculus to analysis, algebra, probability, differential equations, topology, geometry and measure theory. Definitions, theorems with proofs, worked examples, 411 interactive figures and 1 395 exercises with full solutions. |
 | **[Physics Atlas](physics/)** | University physics in 18 courses and 115 chapters: mechanics, waves and optics, electromagnetism, thermodynamics and statistical physics, quantum mechanics, relativity and astrophysics, with 119 interactive figures and 940 exercises. |
-| **[Electrical Engineering Atlas](ee/)** | Electrical and electronic engineering in 22 courses and 182 chapters: circuits, electronics and devices, digital and computer systems, signals and communications, electromagnetics, power and control, with 185 interactive figures and 1 510 exercises. |
+| **[Electrical Engineering Atlas](ee/)** | Electrical and electronic engineering in 22 courses and 182 chapters: circuits, electronics and devices, digital and computer systems, signals and communications, electromagnetics, power and control. The curriculum is mapped out; Circuit Analysis I and the first two chapters of Circuit Analysis II are written, and the other lessons are in preparation. |
 | **[LLM Atlas](llm/)** | Large language models from first principles, in 18 courses and 137 chapters. The curriculum is mapped out; the lessons are in preparation. |
-| **[Medicine Atlas](medicine/)** | The medical curriculum in 27 courses and 224 chapters, for education only (not medical advice). The curriculum is mapped out; the lessons are in preparation. |
+| **[Medicine Atlas](medicine/)** | The medical curriculum in 27 courses and 224 chapters, every lesson in English and Chinese, for education only (not medical advice): cells and genes, anatomy and physiology, infection and immunity, pathology and pharmacology, every organ system in health and disease, clinical practice and population health, with 224 interactive figures and 1 808 exercises. |
 | **[Peptide Atlas](peptides/)** | 44 therapeutic and research peptides (semaglutide, insulin, tirzepatide, BPC-157 …) drawn residue by residue, with 3D structures, history, regulation and worldwide attention. |
 
 **Skeletons, to be completed.** These eight atlases are curricula so far: every course and chapter is
@@ -60,9 +60,9 @@ Optional, for speed and completeness:
 index.php, assets/     the /learn landing page
 maths/                 Maths Atlas
 physics/               Physics Atlas
-ee/                    Electrical Engineering Atlas
+ee/                    Electrical Engineering Atlas (curriculum; lessons being written)
 llm/                   LLM Atlas (curriculum; lessons in preparation)
-medicine/              Medicine Atlas (curriculum; lessons in preparation)
+medicine/              Medicine Atlas
 peptides/              Peptide Atlas
 chemistry/  cs/  biology/  mechanical/  economics/  earth/  english/  chinese/
                        the eight skeleton atlases (curricula; lessons to be written)
