@@ -1,100 +1,199 @@
 {
-  "slug": "classical-chinese-1",
-  "title": "Classical Chinese I",
-  "full_title": "Classical Chinese I: Reading Wenyan",
-  "area": "classical",
-  "level": 1,
-  "order": 50,
-  "tagline": "What classical Chinese is, dictionaries and reference tools, content words and changes of meaning, function words, word-class shifts, word order and special patterns, phonetic loans and variant characters, punctuating classical texts, translating into modern Chinese, and reading whole texts",
-  "summary": "Classical Chinese, the written language of more than two thousand years, is close enough to modern Chinese to look familiar and far enough to be misread. This course teaches the essentials of reading it: how words and their meanings differ from today, the common function words, word-class shifts, word order and special sentence patterns, phonetic loans, how to punctuate an unpunctuated text and how to translate accurately into modern Chinese, using passages from the standard classics.",
-  "overview": [],
-  "prerequisites": [],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "what-is-wenyan",
-      "title": "What classical Chinese is",
-      "summary": "Classical Chinese and the vernacular, how the written language stayed stable for two millennia while speech changed, and why it is still worth reading.",
-      "requires": []
-    },
-    {
-      "slug": "reference-tools",
-      "title": "Dictionaries and reference tools",
-      "summary": "The *Shuowen Jiezi*, the *Kangxi Dictionary*, the *Ciyuan*, the *Hanyu Da Cidian* and dictionaries of common classical characters, and digital databases.",
-      "requires": [
-        "classical-chinese-1/what-is-wenyan"
-      ]
-    },
-    {
-      "slug": "old-and-new-meanings",
-      "title": "Content words and changes of meaning",
-      "summary": "How meanings widened, narrowed or shifted (走 once meant ‘run’, 去 ‘leave’), how single-syllable words became compounds, and false friends between classical and modern Chinese.",
-      "requires": [
-        "classical-chinese-1/reference-tools"
-      ]
-    },
-    {
-      "slug": "function-words",
-      "title": "Function words",
-      "summary": "之, 其, 而, 以, 于, 为, 乃, 则, 者 and 所: their uses and how to translate them.",
-      "requires": [
-        "classical-chinese-1/old-and-new-meanings"
-      ]
-    },
-    {
-      "slug": "word-class-shifts",
-      "title": "Word-class shifts",
-      "summary": "Nouns used as verbs, causative and putative uses, and nouns used as adverbials.",
-      "requires": [
-        "classical-chinese-1/function-words"
-      ]
-    },
-    {
-      "slug": "special-patterns",
-      "title": "Word order and special sentence patterns",
-      "summary": "Judgement sentences, passive constructions, fronted objects, postposed modifiers and omission.",
-      "requires": [
-        "classical-chinese-1/word-class-shifts"
-      ]
-    },
-    {
-      "slug": "loans-variants",
-      "title": "Phonetic loans and variant characters",
-      "summary": "Characters borrowed for their sound, earlier and later forms of one word, and variant forms, and how to tell them apart.",
-      "requires": [
-        "classical-chinese-1/special-patterns"
-      ]
-    },
-    {
-      "slug": "punctuating",
-      "title": "Punctuating classical texts",
-      "summary": "Reading texts printed without punctuation, the clues that mark where sentences end, and classic mistakes of punctuation.",
-      "requires": [
-        "classical-chinese-1/loans-variants"
-      ]
-    },
-    {
-      "slug": "translating",
-      "title": "Translating into modern Chinese",
-      "summary": "Literal and free translation, keeping, replacing, supplying, deleting and reordering words, and the standard of faithfulness, clarity and elegance.",
-      "requires": [
-        "classical-chinese-1/punctuating"
-      ]
-    },
-    {
-      "slug": "reading-texts",
-      "title": "Reading whole texts",
-      "summary": "Close reading of complete passages from the *Zuo Zhuan*, the *Analects*, the *Mencius* and the *Zhuangzi*, using everything in the course.",
-      "requires": [
-        "classical-chinese-1/translating"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "pre-qin-literature",
-    "classical-chinese-2",
-    "poetry-metrics"
-  ]
+ "slug": "classical-chinese-1",
+ "title": "Classical Chinese I",
+ "full_title": "Classical Chinese I: Reading Wenyan",
+ "area": "classical",
+ "level": 1,
+ "order": 50,
+ "tagline": "What classical Chinese is, dictionaries and reference tools, content words and changes of meaning, function words, word-class shifts, word order and special patterns, phonetic loans and variant characters, punctuating classical texts, translating into modern Chinese, and reading whole texts",
+ "summary": "Classical Chinese, the written language of more than two thousand years, is close enough to modern Chinese to look familiar and far enough to be misread. This course teaches the essentials of reading it: how words and their meanings differ from today, the common function words, word-class shifts, word order and special sentence patterns, phonetic loans, how to punctuate an unpunctuated text and how to translate accurately into modern Chinese, using passages from the standard classics.",
+ "overview": [
+  "Classical Chinese (文言) is one of history's longest-lived written standards: born from the speech of the Eastern Zhou, frozen and renewed by two thousand years of imitation, and retired as a living medium only a century ago. This course teaches it as a language — with its own grammar, its own vocabulary, its own tools — not as a museum of moral quotations.",
+  "We build the workshop in the order a reader actually needs: what 文言 is and why it diverged from speech; the reference shelf (Shuowen, Kangxi, modern dictionaries, commentaries); content-word semantics (走, 去, 汤); the ten most profitable function words (之其而于为乃则者所); word-class shifts (noun used as verb, causative, putative); special orders (判断句, 宾语前置, 被动, 省略); phonetic loans and old/new character forms; punctuating unpunctuated texts; the eight techniques of translation; and finally sustained reading of complete passages from the Zuo Zhuan, the Analects, Mencius, Zhuangzi, and the prose of the eight masters.",
+  "No prerequisites; shares its sound-and-reading ledger with the phonology course. On completion you are ready for Classical Chinese II and the pre-Qin literature course."
+ ],
+ "prerequisites": [],
+ "outcomes": [
+  "explain the classical/vernacular split as a diglossia and date its two-thousand-year arc",
+  "use Shuowen Jiezi, Kangxi Dictionary, Modern Chinese Dictionary and 古注/注释 to settle a word's sense",
+  "trace the semantic history of core content words (走/跑, 去, 汤, 臭, 牺牲, 江河) and date senses to periods",
+  "assign the main functions of 之 其 而 以 于 为 乃 则 者 所 in running text",
+  "recognise and translate noun-as-verb, causative and putative uses, and adjectival nouns used as adverbs",
+  "identify judgement sentences, passives, fronted objects, post-modifiers and ellipsis, and restore them to modern order",
+  "distinguish phonetic loans (通假) from old/later and variant graphs, and read them without being fooled",
+  "punctuate (句读) a lightly glossed classical text and translate it with the keep/replace/supply/delete rules"
+ ],
+ "chapters": [
+  {
+   "slug": "what-is-wenyan",
+   "title": "What classical Chinese is",
+   "summary": "Classical Chinese and the vernacular, how the written language stayed stable for two millennia while speech changed, and why it is still worth reading.",
+   "requires": []
+  },
+  {
+   "slug": "reference-tools",
+   "title": "Dictionaries and reference tools",
+   "summary": "The *Shuowen Jiezi*, the *Kangxi Dictionary*, the *Ciyuan*, the *Hanyu Da Cidian* and dictionaries of common classical characters, and digital databases.",
+   "requires": [
+    "classical-chinese-1/what-is-wenyan"
+   ]
+  },
+  {
+   "slug": "old-and-new-meanings",
+   "title": "Content words and changes of meaning",
+   "summary": "How meanings widened, narrowed or shifted (走 once meant ‘run’, 去 ‘leave’), how single-syllable words became compounds, and false friends between classical and modern Chinese.",
+   "requires": [
+    "classical-chinese-1/reference-tools"
+   ]
+  },
+  {
+   "slug": "function-words",
+   "title": "Function words",
+   "summary": "之, 其, 而, 以, 于, 为, 乃, 则, 者 and 所: their uses and how to translate them.",
+   "requires": [
+    "classical-chinese-1/old-and-new-meanings"
+   ]
+  },
+  {
+   "slug": "word-class-shifts",
+   "title": "Word-class shifts",
+   "summary": "Nouns used as verbs, causative and putative uses, and nouns used as adverbials.",
+   "requires": [
+    "classical-chinese-1/function-words"
+   ]
+  },
+  {
+   "slug": "special-patterns",
+   "title": "Word order and special sentence patterns",
+   "summary": "Judgement sentences, passive constructions, fronted objects, postposed modifiers and omission.",
+   "requires": [
+    "classical-chinese-1/word-class-shifts"
+   ]
+  },
+  {
+   "slug": "loans-variants",
+   "title": "Phonetic loans and variant characters",
+   "summary": "Characters borrowed for their sound, earlier and later forms of one word, and variant forms, and how to tell them apart.",
+   "requires": [
+    "classical-chinese-1/special-patterns"
+   ]
+  },
+  {
+   "slug": "punctuating",
+   "title": "Punctuating classical texts",
+   "summary": "Reading texts printed without punctuation, the clues that mark where sentences end, and classic mistakes of punctuation.",
+   "requires": [
+    "classical-chinese-1/loans-variants"
+   ]
+  },
+  {
+   "slug": "translating",
+   "title": "Translating into modern Chinese",
+   "summary": "Literal and free translation, keeping, replacing, supplying, deleting and reordering words, and the standard of faithfulness, clarity and elegance.",
+   "requires": [
+    "classical-chinese-1/punctuating"
+   ]
+  },
+  {
+   "slug": "reading-texts",
+   "title": "Reading whole texts",
+   "summary": "Close reading of complete passages from the *Zuo Zhuan*, the *Analects*, the *Mencius* and the *Zhuangzi*, using everything in the course.",
+   "requires": [
+    "classical-chinese-1/translating"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": -1200,
+   "title": "The oracle-bone line begins",
+   "detail": "Shang divination graphs and Zhou bronzes set the written language on its own track: brief, formulaic, unbothered by speech — the deep ancestry of 文言's concision.",
+   "people": "商巫周史"
+  },
+  {
+   "year": -500,
+   "title": "The age that wrote the classics",
+   "detail": "The founding corpus: the Analects' terse dialogues, the Daodejing's rhymed sententiae, the Zuo Zhuan's narrative halls — speech recorded once, then worshipped and imitated for two thousand years: vernacular of a dying dialect, grammar of an immortal language.",
+   "people": "孔子、老子、左氏"
+  },
+  {
+   "year": 100,
+   "title": "Shuowen Jiezi",
+   "detail": "Xu Shen files 9,353 graphs under 540 radicals with etymological glosses — the first dictionary built to read old texts correctly, still the gateway to pre-Qin senses.",
+   "people": "许慎"
+  },
+  {
+   "year": 800,
+   "title": "The revival that re-forged the language",
+   "detail": "Han Yu and Liu Zongyuan's 古文运动 threw out parallel-office prose but kept the classics' grammar: after it, writing 文言 became imitating models — a learned, artificial medium by design.",
+   "people": "韩愈、柳宗元"
+  },
+  {
+   "year": 1500,
+   "title": "Diglossia in full dress",
+   "detail": "Ming–Qing lives in two registers: examination edicts, gazetteers and letters in 文言; novels, drama and sermons in 白话. Every literate person bilingual in one script.",
+   "people": "科举社会"
+  },
+  {
+   "year": 1917,
+   "title": "The vernacular declared",
+   "detail": "Hu Shi and Chen Duxiu demand literature in spoken language; within three years schools follow. The two-thousand-year separation ends in a decade — the moment 文言 became a foreign tongue at home.",
+   "people": "胡适、陈独秀"
+  },
+  {
+   "year": 1920,
+   "title": "Schools switch over",
+   "detail": "The state mandates 国语 (spoken-based) textbooks in primary schools; 文言 retreats to universities and calligraphy scrolls, taking on its modern life as a school subject and aesthetic.",
+   "people": "民国教育部"
+  },
+  {
+   "year": 2017,
+   "title": "The classics return, curated",
+   "detail": "The unified national Chinese textbook multiplies its classical selections (from the Analects to Yueyang Tower), taught with annotation technique rather than recitation: 文言 as heritage skill, quantitatively governed.",
+   "people": "部编本教材"
+  }
+ ],
+ "references": [
+  {
+   "title": "《说文解字》",
+   "authors": "许慎",
+   "year": 100,
+   "note": "Still the etymological compass for pre-Qin senses; use with Duan Yucai's commentary (1815)."
+  },
+  {
+   "title": "《康熙字典》",
+   "authors": "张玉书、陈廷敬",
+   "year": 1716,
+   "note": "The imperial evidence bank: sense piles ordered by citations — learn its citation logic and you can date a meaning."
+  },
+  {
+   "title": "《马氏文通》",
+   "authors": "马建忠",
+   "year": 1898,
+   "note": "The first grammar of Classical Chinese — read its Latin-rod mistakes as a lesson in not grafting cases onto a caseless language."
+  },
+  {
+   "title": "《辞源》（修订本）",
+   "authors": "广东、河南《辞源》修订组",
+   "year": 1979,
+   "note": "The erudition dictionary: 典故 and book-senses with sources — the bridge between reading and researching."
+  },
+  {
+   "title": "《切韵》",
+   "authors": "陆法言",
+   "year": 601,
+   "note": "Rhyme is argument in classical scholarship: which reading, which 破音, which meaning — the 音韵 link."
+  },
+  {
+   "title": "《古书句读释例》",
+   "authors": "吕叔湘",
+   "year": 1934,
+   "note": "The punctuating errors of two thousand years, catalogued — the best training ground for reading blind."
+  }
+ ],
+ "next": [
+  "pre-qin-literature",
+  "classical-chinese-2",
+  "poetry-metrics"
+ ]
 }
