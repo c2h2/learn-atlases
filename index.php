@@ -105,7 +105,7 @@ foreach (['chemistry', 'cs', 'biology', 'mechanical', 'economics', 'earth', 'eng
         $sk[$dir]['chapters'] += count(json_decode((string)file_get_contents($f), true)['chapters'] ?? []);
     }
 }
-$skName = fn(string $name): string => $zh ? $t($name) . '（' . $t('skeleton') . '）' : $name . ' (skeleton)';
+$skName = fn(string $name): string => $h($t($name)) . ($zh ? '<span class="sk">（' . $h($t('skeleton')) . '）</span>' : ' <span class="sk">(skeleton)</span>');
 $skStats = fn(string $dir): string => '<dl><div><dt>' . $sk[$dir]['courses'] . '</dt><dd>' . $h($t('courses')) . '</dd></div><div><dt>'
     . $sk[$dir]['chapters'] . '</dt><dd>' . $h($t('chapters')) . '</dd></div><div><dt>' . $sk[$dir]['written'] . '</dt><dd>' . $h($t('written')) . '</dd></div></dl>';
 $skDots = function (array $points, float $r = 7): string {
@@ -231,7 +231,7 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
         <circle cx="40" cy="37" r="12" class="curve"/>
         <?= $skDots([[86, 40.5], [112, 25.5], [138, 40.5], [164, 25.5], [190, 40.5], [216, 25.5], [242, 40.5]]) ?>
       </svg>
-      <h2><?= $h($skName('Chemistry Atlas')) ?></h2>
+      <h2><?= $skName('Chemistry Atlas') ?></h2>
       <p><?= $h($t('University chemistry: general and physical chemistry, inorganic and organic chemistry, analytical chemistry and spectroscopy, biochemistry and medicinal chemistry, materials, polymers and the environment. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('chemistry') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
@@ -241,7 +241,7 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
         <path d="M150 12L90 36M150 12l60 24M90 36L60 60M90 36l30 24M210 36l-30 24M210 36l30 24" class="curve"/>
         <?= $skDots([[150, 12], [90, 36], [210, 36], [60, 60], [120, 60], [180, 60], [240, 60]]) ?>
       </svg>
-      <h2><?= $h($skName('Computer Science Atlas')) ?></h2>
+      <h2><?= $skName('Computer Science Atlas') ?></h2>
       <p><?= $h($t('University computer science: programming and languages, data structures and algorithms, computability and complexity, computer systems, networks and distributed systems, databases and artificial intelligence, security and cryptography, graphics and software engineering. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('cs') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
@@ -258,7 +258,7 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
         <path d="<?= $a ?>" class="curve"/><path d="<?= $b ?>" class="curve"/><path d="<?= $rungs ?>" class="curve" style="stroke-dasharray:2 3"/>
         <?= $skDots(array_map(fn($k) => [30 + 40 * $k, 36], range(0, 6)), 6.5) ?>
       </svg>
-      <h2><?= $h($skName('Biology Atlas')) ?></h2>
+      <h2><?= $skName('Biology Atlas') ?></h2>
       <p><?= $h($t('University biology: molecules and cells, genetics and genomics, microbes, plants and animals, neuroscience and behaviour, evolution, ecology and conservation, and quantitative biology. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('biology') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
@@ -268,7 +268,7 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
         <path d="M30 52H270M60 16H240M30 52L60 16 90 52 120 16 150 52 180 16 210 52 240 16 270 52M30 52l-7 11h14zM270 52l-7 11h14z" class="curve" style="stroke-linejoin:round"/>
         <?= $skDots([[30, 52], [60, 16], [90, 52], [120, 16], [150, 52], [180, 16], [210, 52], [240, 16], [270, 52]], 5.5) ?>
       </svg>
-      <h2><?= $h($skName('Mechanical and Aerospace Engineering Atlas')) ?></h2>
+      <h2><?= $skName('Mechanical and Aerospace Engineering Atlas') ?></h2>
       <p><?= $h($t('University mechanical and aerospace engineering: solid mechanics, dynamics and vibration, thermodynamics, fluids and heat transfer, materials and manufacturing, design, control and robotics, aerodynamics, propulsion and orbits. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('mechanical') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
@@ -278,7 +278,7 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
         <path d="M14 4V62H292M30 52L70 44 110 48 150 32 190 36 230 20 270 12" class="curve"/>
         <?= $skDots([[30, 52], [70, 44], [110, 48], [150, 32], [190, 36], [230, 20], [270, 12]], 6) ?>
       </svg>
-      <h2><?= $h($skName('Economics and Finance Atlas')) ?></h2>
+      <h2><?= $skName('Economics and Finance Atlas') ?></h2>
       <p><?= $h($t('University economics and finance: microeconomics and macroeconomics, econometrics, game theory and market design, money, banking and corporate finance, asset pricing and derivatives, trade and development, and public and behavioural economics. For education, not investment advice. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('economics') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
@@ -290,7 +290,7 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
         <?= $skDots([[58, 22], [92, 40], [138, 10], [186, 44], [226, 26]], 6) ?>
         <circle cx="266" cy="16" r="9" style="fill:#e0612d"/>
       </svg>
-      <h2><?= $h($skName('Earth and Climate Science Atlas')) ?></h2>
+      <h2><?= $skName('Earth and Climate Science Atlas') ?></h2>
       <p><?= $h($t('University Earth and climate science: the Earth system, minerals, rocks and tectonics, geophysics, landscapes and water, the atmosphere and weather, oceans and ice, Earth history, biogeochemistry and climate change. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('earth') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
@@ -301,7 +301,7 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
         <path d="M60 8H240V62H120zM80 26H240M100 44H240M150 8l30 54" class="curve" style="stroke-linejoin:round"/>
         <?= $skDots([[66, 10], [92, 18], [98, 34], [124, 56], [165, 35], [192, 48], [236, 58], [234, 36], [212, 18], [234, 10]], 5.5) ?>
       </svg>
-      <h2><?= $h($skName('English Language Atlas')) ?></h2>
+      <h2><?= $skName('English Language Atlas') ?></h2>
       <p><?= $h($t('English for learners, especially Chinese speakers, from level A1 to C2: pronunciation, vocabulary and grammar, reading and writing up to academic papers, listening and speaking, the history and varieties of English, and English–Chinese translation. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('english') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
@@ -313,7 +313,7 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
         <?= $skDots([[186, 35], [186, 48], [162, 9], [162, 22], [162, 61], [138, 9], [138, 22], [138, 35], [114, 48], [114, 61]], 5.2) ?>
         <rect x="62" y="40" width="22" height="22" rx="2.5" style="fill:#d6457c"/><rect x="65.5" y="43.5" width="15" height="15" style="fill:none;stroke:#fff;stroke-width:1.2"/>
       </svg>
-      <h2><?= $h($skName('Chinese Language and Literature Atlas')) ?></h2>
+      <h2><?= $skName('Chinese Language and Literature Atlas') ?></h2>
       <p><?= $h($t('Chinese language and literature for native speakers, at the level of a university degree: characters and calligraphy, modern and classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and writing and reasoning. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('chinese') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
