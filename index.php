@@ -26,7 +26,7 @@ $T = [
     'University electrical and electronic engineering: circuits, electronics and devices, digital and computer systems, signals and communications, electromagnetics, power and control. The curriculum of 22 courses is mapped out; the lessons are being written.' => '大学电气与电子工程：电路、电子技术与器件、数字与计算机系统、信号与通信、电磁场、电力与控制。22门课程的体系已经规划好，课文正在编写中。',
     'written' => '已完成',
     'LLM Atlas' => '大语言模型图谱',
-    'Large language models from first principles: the mathematics of machine learning, neural networks and the Transformer, pretraining and scaling, post-training and reasoning, inference, agents, evaluation, interpretability and safety. The curriculum of 18 courses is mapped out; the lessons are being written.' => '从基本原理讲解大语言模型：机器学习的数学、神经网络与Transformer、预训练与规模化、后训练与推理能力、推理部署、智能体、评测、可解释性与安全。18门课程的体系已经规划好，课文正在编写中。',
+    'Large language models from first principles: the mathematics of machine learning, neural networks and the Transformer, pretraining and scaling, post-training and reasoning, inference, agents, evaluation, interpretability and safety. The curriculum is mapped out, with course outlines, readings and a timeline; the lessons are being written, starting with the Transformer course.' => '从基本原理讲解大语言模型：机器学习的数学、神经网络与Transformer、预训练与规模化、后训练与推理能力、推理部署、智能体、评测、可解释性与安全。课程体系已经规划好，并附有课程概述、阅读书目和时间线；课文正在编写中，已完成 Transformer 一门课程。',
     'Medicine Atlas' => '医学图谱',
     'The medical curriculum in depth: cells, genes, anatomy and physiology, infection and immunity, pathology and pharmacology, every organ system in health and disease, clinical practice and population health. Worked examples, interactive figures and exercises with full solutions. For education, not medical advice.' => '深入讲解医学课程：细胞、基因、解剖与生理，感染与免疫，病理与药理，各器官系统的生理与疾病，临床实践与人群健康。包含详细例题、交互图形以及附完整解答的练习。仅供教育学习，不构成医疗建议。',
     'Peptide Atlas' => '多肽图谱',
@@ -78,13 +78,6 @@ foreach (glob(__DIR__ . '/ee/content/en/*/course.json') ?: [] as $f) {
     $eChapters += count(json_decode((string)file_get_contents($f), true)['chapters'] ?? []);
 }
 $eWritten = count(glob(__DIR__ . '/ee/content/en/*/*.md') ?: []);
-$lCourses = 0;
-$lChapters = 0;
-foreach (glob(__DIR__ . '/llm/content/en/*/course.json') ?: [] as $f) {
-    $lCourses++;
-    $lChapters += count(json_decode((string)file_get_contents($f), true)['chapters'] ?? []);
-}
-$lWritten = count(glob(__DIR__ . '/llm/content/en/*/*.md') ?: []);
 $dCourses = 0;
 $dChapters = 0;
 foreach (glob(__DIR__ . '/medicine/content/en/*/course.json') ?: [] as $f) {
@@ -97,7 +90,7 @@ foreach (glob(__DIR__ . '/medicine/content/en/*/*.md') ?: [] as $f) {
 }
 // curriculum skeletons: courses and chapters are mapped out, the lessons are still to be written
 $sk = [];
-foreach (['chemistry', 'cs', 'biology', 'mechanical', 'economics', 'earth', 'english', 'chinese'] as $dir) {
+foreach (['llm', 'chemistry', 'cs', 'biology', 'mechanical', 'economics', 'earth', 'english', 'chinese'] as $dir) {
     $src = $dir === 'chinese' ? 'zh' : 'en'; // the Chinese Atlas is written in Chinese first
     $sk[$dir] = ['courses' => 0, 'chapters' => 0, 'written' => count(glob(__DIR__ . "/$dir/content/$src/*/*.md") ?: [])];
     foreach (glob(__DIR__ . "/$dir/content/en/*/course.json") ?: [] as $f) {
@@ -177,21 +170,6 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
       <dl><div><dt><?= $eCourses ?></dt><dd><?= $h($t('courses')) ?></dd></div><div><dt><?= $eChapters ?></dt><dd><?= $h($t('chapters')) ?></dd></div><div><dt><?= $eWritten ?></dt><dd><?= $h($t('written')) ?></dd></div></dl>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
-    <a class="card" href="llm/<?= $L ?>">
-      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
-        <?php $cols = ['#6b7180', '#2a78d6', '#4a3aa7', '#e0612d', '#d99400', '#1a9e6f', '#d6457c'];
-        foreach ([[0, 3], [1, 3], [2, 6], [3, 5], [1, 6]] as [$a, $b]): $xa = 20 + $a * 43; $xb = 20 + $b * 43; $hgt = 10 + ($b - $a) * 9; ?>
-        <path d="M<?= $xa ?> 54 C <?= $xa ?> <?= 54 - $hgt ?>, <?= $xb ?> <?= 54 - $hgt ?>, <?= $xb ?> 54" class="curve"/>
-        <?php endforeach;
-        foreach ($cols as $i => $c): $x = 20 + $i * 43; ?>
-        <circle cx="<?= $x ?>" cy="58" r="7" style="fill:<?= $c ?>"/>
-        <?php endforeach; ?>
-      </svg>
-      <h2><?= $h($t('LLM Atlas')) ?></h2>
-      <p><?= $h($t('Large language models from first principles: the mathematics of machine learning, neural networks and the Transformer, pretraining and scaling, post-training and reasoning, inference, agents, evaluation, interpretability and safety. The curriculum of 18 courses is mapped out; the lessons are being written.')) ?></p>
-      <dl><div><dt><?= $lCourses ?></dt><dd><?= $h($t('courses')) ?></dd></div><div><dt><?= $lChapters ?></dt><dd><?= $h($t('chapters')) ?></dd></div><div><dt><?= $lWritten ?></dt><dd><?= $h($t('written')) ?></dd></div></dl>
-      <span class="open"><?= $h($t('Open')) ?> →</span>
-    </a>
     <a class="card" href="medicine/<?= $L ?>">
       <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
         <path d="M6 30h104l10-22 12 44 12-52 10 30h140" class="curve" style="stroke-linejoin:round"/>
@@ -225,6 +203,21 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
     <p><?= $h($t('These atlases are curricula so far: every course and chapter is mapped out with its summary and prerequisites, and the lessons are still to be written.')) ?></p>
   </section>
   <div class="cards">
+    <a class="card" href="llm/<?= $L ?>">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <?php $cols = ['#6b7180', '#2a78d6', '#4a3aa7', '#e0612d', '#d99400', '#1a9e6f', '#d6457c'];
+        foreach ([[0, 3], [1, 3], [2, 6], [3, 5], [1, 6]] as [$a, $b]): $xa = 20 + $a * 43; $xb = 20 + $b * 43; $hgt = 10 + ($b - $a) * 9; ?>
+        <path d="M<?= $xa ?> 54 C <?= $xa ?> <?= 54 - $hgt ?>, <?= $xb ?> <?= 54 - $hgt ?>, <?= $xb ?> 54" class="curve"/>
+        <?php endforeach;
+        foreach ($cols as $i => $c): $x = 20 + $i * 43; ?>
+        <circle cx="<?= $x ?>" cy="58" r="7" style="fill:<?= $c ?>"/>
+        <?php endforeach; ?>
+      </svg>
+      <h2><?= $skName('LLM Atlas') ?></h2>
+      <p><?= $h($t('Large language models from first principles: the mathematics of machine learning, neural networks and the Transformer, pretraining and scaling, post-training and reasoning, inference, agents, evaluation, interpretability and safety. The curriculum is mapped out, with course outlines, readings and a timeline; the lessons are being written, starting with the Transformer course.')) ?></p>
+      <?= $skStats('llm') ?>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
     <a class="card" href="chemistry/<?= $L ?>">
       <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
         <path d="M40 14l20 11.5v23L40 60 20 48.5v-23zM60 25.5l26 15 26-15 26 15 26-15 26 15 26-15 26 15" class="curve"/>

@@ -5,10 +5,18 @@ used, and how to make them safe — in English and Simplified Chinese, on the sa
 [Maths Atlas](../maths/). Plain PHP, no framework and no database.
 
 **Status: curriculum skeleton.** All 18 courses and 137 chapters are defined, with chapter summaries
-and prerequisites. Lessons, course overviews, outcomes, history, references, the timeline and
-LLM-specific figures are still to be written; missing chapters show as "in preparation".
+and prerequisites. Every course record is written — overview, learning outcomes, history and
+references — in English and Chinese, with Chinese course and chapter titles, and the timeline has
+28 field-wide milestones (2026-10-09). The Transformer course is written in English (all eight lessons, 2026-10-09; the Chinese
+translation is pending). The other lessons and the LLM-specific figures are still to be written;
+missing chapters show as "to be written", and the site says "(skeleton)" in its title until they are.
 Generated placeholder lessons that stood in for them until 2026-10-09 are kept in
 [`pending/`](pending/) for reference only.
+
+The engine is generated from the Maths Atlas engine by [`../tools/mkatlas.py`](../tools/mkatlas.py)
+with the spec `tools/atlas-specs/llm.json` (areas, stages, learning paths, brand mark, figure set).
+Engine changes belong there or in `maths/`: a re-run replaces the generated copies, and never touches
+`content/`, this README or `tools/*.md`.
 
 | Stage | Courses |
 |---|---|

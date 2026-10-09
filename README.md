@@ -8,16 +8,16 @@ Every topic is explained in depth, with figures you can play with. Live at <http
 | **[Maths Atlas](maths/)** | University mathematics in 18 courses and 141 chapters, every lesson in English and Chinese, from logic and calculus to analysis, algebra, probability, differential equations, topology, geometry and measure theory. Definitions, theorems with proofs, worked examples, 411 interactive figures and 1 395 exercises with full solutions. |
 | **[Physics Atlas](physics/)** | University physics in 18 courses and 115 chapters: mechanics, waves and optics, electromagnetism, thermodynamics and statistical physics, quantum mechanics, relativity and astrophysics, with 119 interactive figures and 940 exercises. |
 | **[Electrical Engineering Atlas](ee/)** | Electrical and electronic engineering in 22 courses and 182 chapters: circuits, electronics and devices, digital and computer systems, signals and communications, electromagnetics, power and control. The curriculum is mapped out; Circuit Analysis I and the first two chapters of Circuit Analysis II are written, and the other lessons are in preparation. |
-| **[LLM Atlas](llm/)** | Large language models from first principles, in 18 courses and 137 chapters. The curriculum is mapped out; the lessons are in preparation. |
 | **[Medicine Atlas](medicine/)** | The medical curriculum in 27 courses and 224 chapters, every lesson in English and Chinese, for education only (not medical advice): cells and genes, anatomy and physiology, infection and immunity, pathology and pharmacology, every organ system in health and disease, clinical practice and population health, with 224 interactive figures and 1 808 exercises. |
 | **[Peptide Atlas](peptides/)** | 44 therapeutic and research peptides (semaglutide, insulin, tirzepatide, BPC-157 …) drawn residue by residue, with 3D structures, history, regulation and worldwide attention. |
 
-**Skeletons, to be completed.** These eight atlases are curricula so far: every course and chapter is
+**Skeletons, to be completed.** These nine atlases are curricula so far: every course and chapter is
 mapped out with a summary and its prerequisites, the guides for writing them are in place, and the
 lessons are still to be written. Each says "(skeleton)" in its title until it is finished.
 
 | | |
 |---|---|
+| **[LLM Atlas](llm/)** (skeleton) | 18 courses and 137 chapters on large language models, from the mathematics of machine learning and the Transformer to pretraining, post-training and reasoning, inference, agents, evaluation, interpretability and safety. Every course has its overview, learning outcomes, history and readings in English and Chinese, and the atlas has a timeline of the field. |
 | **[Chemistry Atlas](chemistry/)** (skeleton) | 24 courses and 211 chapters: general, physical, inorganic, organic and analytical chemistry, spectroscopy, biochemistry and medicinal chemistry, materials, polymers and the environment. |
 | **[Computer Science Atlas](cs/)** (skeleton) | 22 courses and 197 chapters: programming and languages, data structures and algorithms, computability and complexity, systems, networks, databases, AI, security and cryptography, graphics and software engineering. |
 | **[Biology Atlas](biology/)** (skeleton) | 21 courses and 187 chapters: molecules and cells, genetics and genomics, microbes, plants and animals, neuroscience and behaviour, evolution, ecology and quantitative biology. |
@@ -29,7 +29,7 @@ lessons are still to be written. Each says "(skeleton)" in its title until it is
 
 All are plain PHP sites: no framework, no database, no build step needed to serve them, and every
 script, font and library is self-hosted. The thirteen course atlases share one lesson engine (each keeps
-its own copy); the eight skeletons are generated from the Maths Atlas engine by
+its own copy); the nine skeletons are generated from the Maths Atlas engine by
 [`tools/mkatlas.py`](tools/mkatlas.py) and the specs in `tools/atlas-specs/`, and re-running it
 brings later engine fixes into them without touching their content.
 
@@ -48,7 +48,7 @@ Optional, for speed and completeness:
 
 - **Maths:** `cd maths && tools/build.sh` (Node 18+) pre-renders every formula with KaTeX and checks
   all lessons; without it, formulas are rendered in the browser. See [maths/README.md](maths/README.md).
-  The EE, LLM and Medicine atlases and the eight skeletons have the same tools (see their READMEs); for Physics run
+  The EE and Medicine atlases and the nine skeletons have the same tools (see their READMEs); for Physics run
   `php tools/extract.php && node tools/build.js && php tools/prerender.php`.
 - **Peptides:** `cd peptides && tools/refresh.sh` fetches Wikipedia, PubMed, ClinicalTrials.gov,
   PubChem and PDB data (attention maps and charts stay empty until then). See
@@ -61,11 +61,10 @@ index.php, assets/     the /learn landing page
 maths/                 Maths Atlas
 physics/               Physics Atlas
 ee/                    Electrical Engineering Atlas (curriculum; lessons being written)
-llm/                   LLM Atlas (curriculum; lessons in preparation)
 medicine/              Medicine Atlas
 peptides/              Peptide Atlas
-chemistry/  cs/  biology/  mechanical/  economics/  earth/  english/  chinese/
-                       the eight skeleton atlases (curricula; lessons to be written)
+llm/  chemistry/  cs/  biology/  mechanical/  economics/  earth/  english/  chinese/
+                       the nine skeleton atlases (curricula; lessons to be written)
 tools/                 mkatlas.py, which generates the skeleton atlases from the Maths engine, and their specs
 ```
 
