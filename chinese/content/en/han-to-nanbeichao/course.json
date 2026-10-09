@@ -7,11 +7,24 @@
   "order": 110,
   "tagline": "Han rhapsodies, Sima Qian and the *Records of the Grand Historian*, Han ballads, the *Nineteen Old Poems*, Jian’an literature, the Zhengshi and Jin poets, Tao Yuanming, landscape poetry and the Yongming style, Southern and Northern folk songs, and tales and criticism",
   "summary": "Between the Qin unification and the Sui, Chinese literature found many of its lasting forms: the rhapsody, the great histories, five-character poetry, landscape and pastoral poetry, and the first collections of tales. This course follows that story from the Han rhapsodies and Sima Qian through the ballads of the Han and the *Nineteen Old Poems* to the Jian’an poets, Tao Yuanming, Xie Lingyun, the tonal experiments of the Yongming period, and the tales and literary criticism of the Six Dynasties.",
-  "overview": [],
+  "overview": [
+    "From the Qin unification to the Sui reunification, Chinese literature buys its lasting wardrobe: the fu that swallowed chu ci, history-writing that became literature, five-character verse that became the default voice, and criticism that began to supervise all of it.",
+    "The course's heart is the first great age of the individual writer — the Jian'an Caos and their companions, Ruan Ji's masked grief, Tao Yuanming's self-portrait in rhyme — while the southern courts mint landscape poetry, southern folk love-songs, and the tonal rules that will force poetry to grow spine.",
+    "Exit skills: read a han rhapsody as imperial rhetoric, a Shiji biography as narrative craft, a poem's date from its prosody and imagery, and use Six Dynasties criticism (Wenxin diaolong, Shipin, the Shishuo anecdote) as working lenses. Prerequisite: pre-Qin literature."
+  ],
   "prerequisites": [
     "pre-qin-literature"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "trace the fu from Jia Yi's grievance-rhapsodies through Sima Xiangru's display fu to lyrical and object rhapsodies, and explain the 'reform at the ending' double message",
+    "read Shiji biographies as narrative art — scene dialogue, the withheld judge, interlocking collaterals (互见) — and contrast Ban Gu's dynastic annalistic history",
+    "explain Yuefu Bureau editing and the later imitation of yuefu titles, and translate the Han ballads' raw narrative voice into prose without killing it",
+    "date and describe the Nineteen Old Poems' 'faceless authorship', their parting-and-brevity imagery, and the five-character line's victory",
+    "assess the Four of Jian'an and the Seven Masters, define jian'an fenggu and its afterlife in Tang reformers",
+    "map Zhengshi-Taikang-Eastern Jin (Ruan Ji, Ji Kang, Zuo Si, the Xu Wang Xu counter-current, metaphysical verse) and defend the claim 'a Wei-Jin poem is a person'",
+    "appreciate Tao Yuanming through both his self-portrait and his posthumous canonisation; explain how landscape poetry (Xie Lingyun) and court craft (Yongming, palace style) differ as worldviews",
+    "describe Yongming tonal rules (四声八病) as the antechamber of regulated verse, tell northern from southern folk songs, and trace zhiguai and anecdote tales to their Tang and蒲松龄 heirs"
+  ],
   "chapters": [
     {
       "slug": "han-fu",
@@ -95,8 +108,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": -170,
+      "title": "The grievance-fu",
+      "detail": "Jia Yi dies in banishment-adjacent grief; his owl-fu makes the Chu voice a Han confession form.",
+      "people": "贾谊"
+    },
+    {
+      "year": -130,
+      "title": "The display-fu at full tilt",
+      "detail": "Sima Xiangru's cataloguing rhapsodies give the empire its verbal map — and give readers the lesson that extravagance ends in a moral.",
+      "people": "司马相如"
+    },
+    {
+      "year": -91,
+      "title": "The Shiji takes shape",
+      "detail": "After the palace punishment, Sima Qian finishes the Records 'to nest its words in the deeds of the ages'; history gains a literary point of view.",
+      "people": "司马迁"
+    },
+    {
+      "year": 80,
+      "title": "The dynastic history founded",
+      "detail": "Ban Gu's Book of Han fixes the cut-off-at-one-dynasty format and a drier, denser prose; Sima Qian's freedom becomes the foil.",
+      "people": "班固"
+    },
+    {
+      "year": 217,
+      "title": "Jian'an company town",
+      "detail": "Cao Pi's Xudi pavilion gatherings (and his Treatise on Literature) make writing a court team sport with a critical scoreboard.",
+      "people": "曹丕 刘桢"
+    },
+    {
+      "year": 353,
+      "title": "The orchid pavilion day",
+      "detail": "Xu Wang Xu's calligraphy and the Lanting poems mark the moment literati life itself becomes literature's subject.",
+      "people": "王羲之 孙绰"
+    },
+    {
+      "year": 405,
+      "title": "Hanging up the seal",
+      "detail": "Tao Yuanming quits the Pengze prefecture after eighty-plus days and turns a small life into a permanent literary option.",
+      "people": "陶渊明"
+    },
+    {
+      "year": 501,
+      "title": "Criticism mounted",
+      "detail": "Liu Xie finishes the Wenxin diaolong, a constitution for literature; a decade on, Zhong Rong ranks the poets by feel and by life.",
+      "people": "刘勰 钟嵘"
+    }
+  ],
+  "references": [
+    {
+      "title": "《汉书·艺文志》",
+      "authors": "班固",
+      "year": 80,
+      "note": "The earliest complete surviving catalogue — see Han reading through its 'rhapsodies: a hundred pieces' shelf."
+    },
+    {
+      "title": "《楚辞章句》",
+      "authors": "王逸",
+      "year": 170,
+      "note": "The received Chu ci — how Han scholarship packaged a shamanic south as loyalty allegory."
+    },
+    {
+      "title": "《典论·论文》(《典论》)",
+      "authors": "曹丕",
+      "year": 217,
+      "note": "'Writing is a great undertaking of the state' — literature's independence is usually read from this short letter."
+    },
+    {
+      "title": "《搜神记》",
+      "authors": "干宝",
+      "year": 320,
+      "note": "Zhiguai compiled with historian's seriousness — literature keeps what the official history refuses."
+    },
+    {
+      "title": "《世说新语》",
+      "authors": "刘义庆",
+      "year": 445,
+      "note": "The birth of the anecdote: character criticism (人物品藻) learning to write short."
+    },
+    {
+      "title": "《文心雕龙》",
+      "authors": "刘勰",
+      "year": 501,
+      "note": "Literature's constitution — Dao, sage, classic in the first three chapters; craft and genre in the rest."
+    },
+    {
+      "title": "《诗品》",
+      "authors": "钟嵘",
+      "year": 512,
+      "note": "Ranking poems as if they were people: the courage — and mischief — of graded criticism."
+    },
+    {
+      "title": "《文选》",
+      "authors": "萧统",
+      "year": 530,
+      "note": "The first anthology that drew the line of 'literature' — and then everyone studied inside that line."
+    }
+  ],
   "next": [
     "tang-literature"
   ]
