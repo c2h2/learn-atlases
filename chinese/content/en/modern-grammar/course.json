@@ -1,97 +1,197 @@
 {
-  "slug": "modern-grammar",
-  "title": "Modern Chinese Grammar",
-  "full_title": "Modern Chinese Grammar: Words, Phrases and Sentences",
-  "area": "language",
-  "level": 1,
-  "order": 40,
-  "tagline": "What grammar is, parts of speech, function words, phrases, sentence constituents, sentence patterns and types, special constructions, complex sentences, and faulty sentences",
-  "summary": "Chinese has almost no inflection, so its grammar lies in word order and function words, which native speakers use effortlessly but rarely analyse. This course describes the grammar of modern Chinese: the parts of speech and the function words, how phrases are built, the constituents and patterns of sentences, special constructions such as the 把 and 被 sentences, complex sentences, and how to find and correct faulty sentences.",
-  "overview": [],
-  "prerequisites": [
-    "modern-vocabulary"
-  ],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "what-is-grammar",
-      "title": "What grammar is",
-      "summary": "Grammatical units and relations, the characteristics of Chinese grammar, and the main systems of description since the *Mashi Wentong* of 1898.",
-      "requires": [
-        "modern-vocabulary/morphemes-words"
-      ]
-    },
-    {
-      "slug": "parts-of-speech",
-      "title": "Parts of speech",
-      "summary": "Nouns, verbs, adjectives, numerals and classifiers, pronouns and adverbs, how they are told apart by their grammatical function, and words that belong to two classes.",
-      "requires": [
-        "modern-grammar/what-is-grammar"
-      ]
-    },
-    {
-      "slug": "function-words",
-      "title": "Function words",
-      "summary": "Prepositions, conjunctions, the structural particles 的, 地 and 得, the aspect particles 了, 着 and 过, and modal particles.",
-      "requires": [
-        "modern-grammar/parts-of-speech"
-      ]
-    },
-    {
-      "slug": "phrases",
-      "title": "Phrases",
-      "summary": "Subject–predicate, verb–object, modifier–head, verb–complement and coordinate phrases, and analysing phrases layer by layer.",
-      "requires": [
-        "modern-grammar/function-words"
-      ]
-    },
-    {
-      "slug": "sentence-constituents",
-      "title": "Sentence constituents",
-      "summary": "Subject, predicate, object, attributive, adverbial and complement, with the many kinds of complement that Chinese uses.",
-      "requires": [
-        "modern-grammar/phrases"
-      ]
-    },
-    {
-      "slug": "sentence-patterns",
-      "title": "Sentence patterns and types",
-      "summary": "Subject–predicate and subjectless sentences, and statements, questions, commands and exclamations.",
-      "requires": [
-        "modern-grammar/sentence-constituents"
-      ]
-    },
-    {
-      "slug": "special-constructions",
-      "title": "Special constructions",
-      "summary": "The 把 and 被 sentences, existential sentences, serial-verb and pivotal constructions, and comparative sentences.",
-      "requires": [
-        "modern-grammar/sentence-patterns"
-      ]
-    },
-    {
-      "slug": "complex-sentences",
-      "title": "Complex sentences",
-      "summary": "Coordinate and subordinate relations between clauses, the connectives that mark them, multi-layered complex sentences, and the run-on style (流水句) of Chinese.",
-      "requires": [
-        "modern-grammar/sentence-patterns"
-      ]
-    },
-    {
-      "slug": "faulty-sentences",
-      "title": "Finding and correcting faulty sentences",
-      "summary": "Mismatched constituents, wrong word order, missing or redundant parts, misused connectives and ambiguity, and a method for correcting them.",
-      "requires": [
-        "modern-grammar/special-constructions",
-        "modern-grammar/complex-sentences"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "rhetoric",
-    "classical-chinese-2",
-    "linguistics"
-  ]
+ "slug": "modern-grammar",
+ "title": "Modern Chinese Grammar",
+ "full_title": "Modern Chinese Grammar: Words, Phrases and Sentences",
+ "area": "language",
+ "level": 1,
+ "order": 40,
+ "tagline": "What grammar is, parts of speech, function words, phrases, sentence constituents, sentence patterns and types, special constructions, complex sentences, and faulty sentences",
+ "summary": "Chinese has almost no inflection, so its grammar lies in word order and function words, which native speakers use effortlessly but rarely analyse. This course describes the grammar of modern Chinese: the parts of speech and the function words, how phrases are built, the constituents and patterns of sentences, special constructions such as the 把 and 被 sentences, complex sentences, and how to find and correct faulty sentences.",
+ "overview": [
+  "Chinese has no case endings, no conjugations, no grammatical gender — and for that very reason a grammar of Chinese is a grammar of word order, function words and word classes that can switch jobs on the fly. This course builds the descriptive machinery of modern Mandarin grammar as taught in the university mainstream (the Huang–Liao tradition): morpheme to phrase to sentence, with distributional tests (substitution, expansion, contrast) instead of inherited Latin templates.",
+  "We take up, in order: the content words (noun, verb, adjective, numeral–classifier, pronoun, adverb) and their notorious boundary disputes; the function words (prepositions, conjunctions, the three shi particles 的地得, mood particles); phrase structures (subject–predicate, verb–object, modifier–head, verb–complement, serial-verb and the like) and immediate-constituent analysis; sentence constituents and their extraction tests; sentence types (subject-predicate vs subjectless, the four moods); special constructions (把, 被, existential and locative-inverted sentences, serial verbs, pivots, 是, comparisons); complex sentences (coordination vs subordination, the multi-functional 的 and 得 relations, clause sequences without conjunctions); and finally the diagnostic clinic of病句 correction and the writing-quality discipline of the language-normalisation tradition.",
+  "No prior grammar training is assumed; the course assumes the vocabulary lessons (word/homophone/word-boundary disputes) and treats Mandarin phonology lightly. By the end you should be able to parse any sentence two ways on purpose — and say which reading is right and why."
+ ],
+ "prerequisites": [
+  "sounds-of-mandarin",
+  "modern-vocabulary"
+ ],
+ "outcomes": [
+  "apply distributional tests (substitution, expansion, minimal contrast) to decide a word's class and a string's structure",
+  "draw the word-class map of Mandarin with its hard cases (time-nouns, difference/like verbs, adjectives vs stative verbs)",
+  "analyse phrases by immediate constituents and mark the structural relations (SB, VO, AV, VN, and the like)",
+  "identify the seven sentence constituents and run the 提取法 and 加线法 on a long sentence",
+  "classify sentence types by mood and by structure, including subjectless and one-word sentences",
+  "derive the constructional meanings of 把, 被, 是, existential and locative-inverted sentences, and their formal requirements",
+  "diagnose ambiguity with structure trees and explain coordination vs subordination in complex sentences",
+  "detect and repair the twelve families of病句 with minimal-edit principles"
+ ],
+ "chapters": [
+  {
+   "slug": "what-is-grammar",
+   "title": "What grammar is",
+   "summary": "Grammatical units and relations, the characteristics of Chinese grammar, and the main systems of description since the *Mashi Wentong* of 1898.",
+   "requires": [
+    "modern-vocabulary/morphemes-words"
+   ]
+  },
+  {
+   "slug": "parts-of-speech",
+   "title": "Parts of speech",
+   "summary": "Nouns, verbs, adjectives, numerals and classifiers, pronouns and adverbs, how they are told apart by their grammatical function, and words that belong to two classes.",
+   "requires": [
+    "modern-grammar/what-is-grammar"
+   ]
+  },
+  {
+   "slug": "function-words",
+   "title": "Function words",
+   "summary": "Prepositions, conjunctions, the structural particles 的, 地 and 得, the aspect particles 了, 着 and 过, and modal particles.",
+   "requires": [
+    "modern-grammar/parts-of-speech"
+   ]
+  },
+  {
+   "slug": "phrases",
+   "title": "Phrases",
+   "summary": "Subject–predicate, verb–object, modifier–head, verb–complement and coordinate phrases, and analysing phrases layer by layer.",
+   "requires": [
+    "modern-grammar/function-words"
+   ]
+  },
+  {
+   "slug": "sentence-constituents",
+   "title": "Sentence constituents",
+   "summary": "Subject, predicate, object, attributive, adverbial and complement, with the many kinds of complement that Chinese uses.",
+   "requires": [
+    "modern-grammar/phrases"
+   ]
+  },
+  {
+   "slug": "sentence-patterns",
+   "title": "Sentence patterns and types",
+   "summary": "Subject–predicate and subjectless sentences, and statements, questions, commands and exclamations.",
+   "requires": [
+    "modern-grammar/sentence-constituents"
+   ]
+  },
+  {
+   "slug": "special-constructions",
+   "title": "Special constructions",
+   "summary": "The 把 and 被 sentences, existential sentences, serial-verb and pivotal constructions, and comparative sentences.",
+   "requires": [
+    "modern-grammar/sentence-patterns"
+   ]
+  },
+  {
+   "slug": "complex-sentences",
+   "title": "Complex sentences",
+   "summary": "Coordinate and subordinate relations between clauses, the connectives that mark them, multi-layered complex sentences, and the run-on style (流水句) of Chinese.",
+   "requires": [
+    "modern-grammar/sentence-patterns"
+   ]
+  },
+  {
+   "slug": "faulty-sentences",
+   "title": "Finding and correcting faulty sentences",
+   "summary": "Mismatched constituents, wrong word order, missing or redundant parts, misused connectives and ambiguity, and a method for correcting them.",
+   "requires": [
+    "modern-grammar/special-constructions",
+    "modern-grammar/complex-sentences"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": 1898,
+   "title": "Mashi Wentong",
+   "detail": "The first systematic grammar of classical Chinese, modelled on Latin case and part-of-speech logic, proved by imitation that Chinese grammar could be described at all — and set the agenda (what counts as subject, how to classify words) that a century of native scholarship then rewrote.",
+   "people": "马建忠 (Ma Jianzhong)"
+  },
+  {
+   "year": 1920,
+   "title": "A grammar of the spoken language",
+   "detail": "Liu Shuyu's Outline of the Grammar of the National Language transferred the description from literary model to living Mandarin — the founding act of modern Chinese grammar as a school subject.",
+   "people": "刘复 (Liu Shuyu)"
+  },
+  {
+   "year": 1951,
+   "title": "Canghai Yiwai",
+   "detail": "A People's Daily column of corrected essays (from June 1951) tied grammatical purity to public writing and launched the normalisation campaign that still frames faulty-sentence diagnosis in schools.",
+   "people": "罗常培、吕叔湘等"
+  },
+  {
+   "year": 1955,
+   "title": "Language reform conference",
+   "detail": "The national conference on language reform set the agenda (standardise pronunciation, vocabulary and grammar; simplify script) that grammar textbooks have served ever since.",
+   "people": "国家教育部门"
+  },
+  {
+   "year": 1956,
+   "title": "Promotion of Putonghua",
+   "detail": "State Council directions defined Putonghua (Beijing pronunciation as norm, northern dialects as base, classic modern writings as grammatical model) — the legal-grade anchor of what counts as grammatical.",
+   "people": "国务院"
+  },
+  {
+   "year": 1979,
+   "title": "The university standard grammar",
+   "detail": "A college textbook by Huang Borong and Liao Xudong fixed the teaching system of word classes, phrase types and the three-level grammatical scale that most Chinese classrooms still use.",
+   "people": "黄伯荣、廖序东"
+  },
+  {
+   "year": 1980,
+   "title": "New frameworks enter",
+   "detail": "The 1980s imported structural, generative and functional syntax in waves; native-language syntax research moved from parsing essays to testing theories on Chinese facts.",
+   "people": "学界群体"
+  },
+  {
+   "year": 2000,
+   "title": "The language law",
+   "detail": "The law on spoken and written language made the standardised norm a civic obligation in public domains, closing the circle between grammar pedagogy and language policy.",
+   "people": "全国人大常委会"
+  }
+ ],
+ "references": [
+  {
+   "title": "《马氏文通》",
+   "authors": "马建忠",
+   "year": 1898,
+   "note": "The founding text; read for its questions more than its answers."
+  },
+  {
+   "title": "《国语语法》",
+   "authors": "刘复",
+   "year": 1920,
+   "note": "First grammar of living Mandarin; still witty on word-class puzzles."
+  },
+  {
+   "title": "《中国文法要略》",
+   "authors": "吕叔湘",
+   "year": 1944,
+   "note": "A master's balanced account of form and function; the essays behind the normalisation era."
+  },
+  {
+   "title": "A Grammar of Spoken Chinese",
+   "authors": "Yuen Ren Chao",
+   "year": 1968,
+   "note": "Chao's structural description of the spoken language: the model of distributional method applied with elegance."
+  },
+  {
+   "title": "Mandarin Chinese: A Functional Reference Grammar",
+   "authors": "Charles N. Li & Sandra A. Thompson",
+   "year": 1981,
+   "note": "The functionalist reference: information flow, topics, aspect — Chinese explained on its own terms."
+  },
+  {
+   "title": "《现代汉语》(下册)",
+   "authors": "黄伯荣、廖序东",
+   "year": 1979,
+   "note": "The standard university grammar; this course follows its terminology and its three-level scale."
+  }
+ ],
+ "next": [
+  "rhetoric",
+  "classical-chinese-2",
+  "linguistics"
+ ]
 }
