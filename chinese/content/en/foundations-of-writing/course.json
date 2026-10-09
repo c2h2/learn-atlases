@@ -1,92 +1,185 @@
 {
-  "slug": "foundations-of-writing",
-  "title": "Foundations of Writing",
-  "full_title": "Foundations of Writing: Observation, Narrative and Description",
-  "area": "writing",
-  "level": 1,
-  "order": 70,
-  "tagline": "The writing process, observation and material, theme and structure, narration, description, expressing feeling, exposition, language and punctuation, and revision",
-  "summary": "Most school leavers have written hundreds of compositions to a formula; good writing starts from looking closely and saying exactly what you mean. This course covers the writing process from observation and gathering material to choosing a theme and a structure, the modes of narration, description, expression of feeling and exposition, clear and correct language including punctuation, and the habit of revision.",
-  "overview": [],
-  "prerequisites": [],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "writing-process",
-      "title": "The writing process",
-      "summary": "From the urge to write to a finished piece: gathering, planning, drafting and revising, and why formulaic exam compositions are a poor model.",
-      "requires": []
-    },
-    {
-      "slug": "observation-material",
-      "title": "Observation and material",
-      "summary": "Seeing and recording precisely, keeping notebooks, reading as a writer, and choosing material.",
-      "requires": [
-        "foundations-of-writing/writing-process"
-      ]
-    },
-    {
-      "slug": "theme-structure",
-      "title": "Theme and structure",
-      "summary": "Finding what a piece is about, openings and endings, transitions and echoes, and the shape of the whole.",
-      "requires": [
-        "foundations-of-writing/observation-material"
-      ]
-    },
-    {
-      "slug": "narration",
-      "title": "Narration",
-      "summary": "Telling events clearly: order, person and point of view, pace, and detail.",
-      "requires": [
-        "foundations-of-writing/theme-structure"
-      ]
-    },
-    {
-      "slug": "description",
-      "title": "Description",
-      "summary": "Describing people, places and scenes through the senses, and the difference between description and decoration.",
-      "requires": [
-        "foundations-of-writing/narration"
-      ]
-    },
-    {
-      "slug": "expressing-feeling",
-      "title": "Expressing feeling",
-      "summary": "Direct and indirect expression of feeling, feeling conveyed through scene and event, and restraint.",
-      "requires": [
-        "foundations-of-writing/description"
-      ]
-    },
-    {
-      "slug": "exposition",
-      "title": "Exposition",
-      "summary": "Explaining things and processes clearly: definition, classification, example, comparison and figures.",
-      "requires": [
-        "foundations-of-writing/theme-structure"
-      ]
-    },
-    {
-      "slug": "language-punctuation",
-      "title": "Language and punctuation",
-      "summary": "Plain, precise language, the national standards for punctuation (GB/T 15834—2011) and for numbers (GB/T 15835—2011), and common errors.",
-      "requires": [
-        "foundations-of-writing/exposition"
-      ]
-    },
-    {
-      "slug": "revision",
-      "title": "Revision",
-      "summary": "Revising for content, structure and language, reading aloud to check, and giving and using feedback.",
-      "requires": [
-        "foundations-of-writing/language-punctuation",
-        "foundations-of-writing/expressing-feeling"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "argumentative-writing",
-    "applied-writing"
-  ]
+ "slug": "foundations-of-writing",
+ "title": "Foundations of Writing",
+ "full_title": "Foundations of Writing: Observation, Narrative and Description",
+ "area": "writing",
+ "level": 1,
+ "order": 70,
+ "tagline": "The writing process, observation and material, theme and structure, narration, description, expressing feeling, exposition, language and punctuation, and revision",
+ "summary": "Most school leavers have written hundreds of compositions to a formula; good writing starts from looking closely and saying exactly what you mean. This course covers the writing process from observation and gathering material to choosing a theme and a structure, the modes of narration, description, expression of feeling and exposition, clear and correct language including punctuation, and the habit of revision.",
+ "overview": [
+  "Almost everyone has written hundreds of school compositions; almost no one was taught writing as a process rather than a product. This course rebuilds the fundamentals from the ground up: learning to see, then learning to say — observation notebooks, a single controlling theme, narration's chronology and its deviations, description's five senses, exposition's cold clarity, and the unglamorous craft of revision.",
+  "It takes Chinese school writing seriously and asks it to be less formulaic: 套路 — opening with “as the ancients said”, closing with “I aspire”—is treated as what it is: a default that outsources thinking. Chinese models carry the teaching line (the Ye Shengtao, Xia Minzun school), while the workshop science is imported: process writing, Flower & Hayes' cognitive model, Peter Elbow's free-writing — shelves Chinese classrooms deserve and increasingly use.",
+  "Prerequisites: none — this is a “from zero to a submittable draft” course; the rhetoric and grammar courses run parallel and will show up whenever you need them."
+ ],
+ "prerequisites": [],
+ "outcomes": [
+  "run the full writing process (accumulate—conceive—draft—revise—proofread) on a 1,000-word piece under time constraints",
+  "keep an observation notebook that distinguishes seeing, inferring, and feeling, and mine it for material",
+  "reduce a composition to one controlling theme and prune every sentence that serves another master",
+  "order a narrative deliberately (顺叙/倒叙/插叙) with six-element bookkeeping and scene-vs-summary proportioning",
+  "write description that uses all five senses, fixed and moving viewpoints, and 白描 vs 工笔 as strategy",
+  "choose exposition modes (definition, division, examples, comparison, sequence) to match reader and purpose",
+  "revise at three levels — structural, paragraph, sentence — and proofread by typesetting-error class (错字、别字、漏字、标点)",
+  "diagnose and remove 套话 (formulaic diction): fake citations, aspiration-endings, and the counterfeit 深情 of stock emotion"
+ ],
+ "chapters": [
+  {
+   "slug": "writing-process",
+   "title": "The writing process",
+   "summary": "From the urge to write to a finished piece: gathering, planning, drafting and revising, and why formulaic exam compositions are a poor model.",
+   "requires": []
+  },
+  {
+   "slug": "observation-material",
+   "title": "Observation and material",
+   "summary": "Seeing and recording precisely, keeping notebooks, reading as a writer, and choosing material.",
+   "requires": [
+    "foundations-of-writing/writing-process"
+   ]
+  },
+  {
+   "slug": "theme-structure",
+   "title": "Theme and structure",
+   "summary": "Finding what a piece is about, openings and endings, transitions and echoes, and the shape of the whole.",
+   "requires": [
+    "foundations-of-writing/observation-material"
+   ]
+  },
+  {
+   "slug": "narration",
+   "title": "Narration",
+   "summary": "Telling events clearly: order, person and point of view, pace, and detail.",
+   "requires": [
+    "foundations-of-writing/theme-structure"
+   ]
+  },
+  {
+   "slug": "description",
+   "title": "Description",
+   "summary": "Describing people, places and scenes through the senses, and the difference between description and decoration.",
+   "requires": [
+    "foundations-of-writing/narration"
+   ]
+  },
+  {
+   "slug": "expressing-feeling",
+   "title": "Expressing feeling",
+   "summary": "Direct and indirect expression of feeling, feeling conveyed through scene and event, and restraint.",
+   "requires": [
+    "foundations-of-writing/description"
+   ]
+  },
+  {
+   "slug": "exposition",
+   "title": "Exposition",
+   "summary": "Explaining things and processes clearly: definition, classification, example, comparison and figures.",
+   "requires": [
+    "foundations-of-writing/theme-structure"
+   ]
+  },
+  {
+   "slug": "language-punctuation",
+   "title": "Language and punctuation",
+   "summary": "Plain, precise language, the national standards for punctuation (GB/T 15834—2011) and for numbers (GB/T 15835—2011), and common errors.",
+   "requires": [
+    "foundations-of-writing/exposition"
+   ]
+  },
+  {
+   "slug": "revision",
+   "title": "Revision",
+   "summary": "Revising for content, structure and language, reading aloud to check, and giving and using feedback.",
+   "requires": [
+    "foundations-of-writing/language-punctuation",
+    "foundations-of-writing/expressing-feeling"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": 1904,
+   "title": "Composition enters the timetable",
+   "detail": "The 癸卯–壬寅 school regulations make 中国文学/作文 a standing subject with graded exercises (monthly 课作, term 季考) — classroom writing in China begins as homework with a schedule.",
+   "people": "张之洞等（学制成文）"
+  },
+  {
+   "year": 1920,
+   "title": "Vernacular gets the green light",
+   "detail": "The Ministry of Education orders vernacular (语体) in primary reading texts; children may now write as they speak — the century's greatest upgrade (and downgrade) of the composition assignment.",
+   "people": "北洋政府教育部"
+  },
+  {
+   "year": 1925,
+   "title": "The first composition-method textbooks",
+   "detail": "Mid-1920s Chengda-school 作文范本 appear (后由叶圣陶等修订推行), and 叶圣陶、夏丏尊的《文心》式读写教材继之 — writing pedagogy becomes a book trade with classics.",
+   "people": "夏丐尊、叶圣陶一系"
+  },
+  {
+   "year": 1963,
+   "title": "The “double basics” line",
+   "detail": "The first national 中学语文教学大纲 stresses 基础知识和基本技能 (later canonized as “双基”) — composition drills get a syllabus; 套路化 gets its institutional excuse.",
+   "people": "人民教育出版社"
+  },
+  {
+   "year": 1978,
+   "title": "The essay returns to the exam hall",
+   "detail": "With the gaokao restored, 作文 reappears as a scored section after a decade's absence — an entire generation learns to write again at night, copying 范文 with 红笔批改.",
+   "people": "恢复高考的一代"
+  },
+  {
+   "year": 1981,
+   "title": "Writing as a cognitive process",
+   "detail": "Flower & Hayes publish their planning–translating–reviewing model; “process writing” (预写—起草—修改—校对) reshapes composition teaching worldwide, China's imported wing included.",
+   "people": "Linda Flower、John Hayes"
+  },
+  {
+   "year": 2001,
+   "title": "The Standards de-formulaize",
+   "detail": "The new 全日制义务教育语文课程标准 asks for 有创意地表达 and cuts the topic-essay farce — 不限文体、贴近生活; the 套路 fights back by teaching “innovative” templates.",
+   "people": "教育部"
+  },
+  {
+   "year": 2015,
+   "title": "A letter becomes a national argument",
+   "detail": "A gaokao task asks candidates to write a letter to a relative who phoned while driving; the “老张” essays flood media and re-ask the century-old question: can honest writing be assessed, or only honest-sounding writing?",
+   "people": "全国卷作文题"
+  }
+ ],
+ "references": [
+  {
+   "title": "《文心》",
+   "authors": "夏丏尊、叶圣陶",
+   "year": 1934,
+   "note": "Stories teaching reading-and-writing — the Chinese standard for “textbook you actually want to read.”"
+  },
+  {
+   "title": "Writing Without Teachers",
+   "authors": "Peter Elbow",
+   "year": 1973,
+   "note": "Free-writing and the belief that messy first drafts are the method, not the failure — 自由写作法之源。"
+  },
+  {
+   "title": "A Cognitive Process Theory of Writing",
+   "authors": "Flower & Hayes",
+   "year": 1981,
+   "note": "The process model's founding paper: planning, translating, reviewing — writing as observable cognition."
+  },
+  {
+   "title": "On Writing Well",
+   "authors": "William Zinsser",
+   "year": 1976,
+   "note": "The English nonfiction tradition's clearest sermon on clutter — a useful mirror for 中文“简洁”训练。"
+  },
+  {
+   "title": "《综合高中语文》（实验课本）",
+   "authors": "钱理群等主编",
+   "year": 1996,
+   "note": "The controversial integrated Chinese textbook (读史、读文、说与写、想想) — a case study in how composition reform gets fought."
+  }
+ ],
+ "next": [
+  "argumentative-writing",
+  "applied-writing"
+ ]
 }
