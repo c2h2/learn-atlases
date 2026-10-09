@@ -7,9 +7,22 @@
   "order": 10,
   "tagline": "Writing and language, the origins of Chinese writing, oracle-bone and bronze inscriptions, from seal script to regular script, the six categories, phonetic compounds, characters and culture, strokes and radicals, simplified and traditional characters, standard characters, and characters in the digital age",
   "summary": "Chinese characters are one of the oldest writing systems still in use, and literate Chinese speakers know thousands of them without knowing much about how they work. This course explains what kind of writing system Chinese is, how characters arose and changed from the oracle-bone inscriptions to regular script, how they are built from components that carry sound and meaning, the traditional six categories and their modern revisions, and the twentieth-century reforms that produced today’s standard simplified characters.",
-  "overview": [],
+  "overview": [
+    "Every Chinese sentence a native speaker reads is a surface over a second, deeper language: the language of the character. Chinese characters are not pictures of ideas waiting to be guessed but a mature writing system with a phonology of their own — over eighty percent of them built on a pattern of semantic plus phonetic component, layer upon layer of it since the twelfth century BC. This course takes that system apart for readers who already own it: how writing and spoken language interlock, what oracle-bone and bronze inscriptions actually record, how seal script became the clerical and regular scripts, what the six categories (liushu) explain and where they break down, and what the state has done — and not done — to standardize the character since 1955.",
+    "We follow one argument throughout: the character is a morpheme-syllable unit, and its shape is a compromise between meaning, sound and the physical habits of brush, chisel and keyboard. The liushu analysis of individual characters is therefore trained like a practical skill — you will classify real characters, catch readings invented from phonetic components, and date scripts from samples — while the cultural and political chapters (characters and culture; simplification; the standard character tables) keep one question in view: how a script shaped a civilization, and how a civilization has been reshaping its script ever since, most recently in Unicode code charts and the 2013 Table of General Standard Chinese Characters.",
+    "The course presumes Mandarin phonology and grammar at the level of the first-year courses and leans on them constantly: an alphabetic way of thinking about sound is exactly what must be suspended to understand a xiesheng series, and the history of Chinese supplies the phonological background for every statement about what a bronze inscription sounded like. By the end, the thousand commonest characters should feel like worked machinery rather than given shapes, and dictionary, epigraphy and font questions should look like — and become answerable by — the tools covered in the last two chapters."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish word-mapping writing from language-representing writing, and explain why 'Chinese characters are pictographic' fails as a description of the system as a whole.",
+    "Identify oracle-bone, bronze, seal, clerical and regular script from samples, and narrate the ancient-modern script change with its causes in writing materials and administration.",
+    "Analyze any transmitted or excavated character under the six categories, and state which of the traditional categories the difficult cases break.",
+    "Explain the function and the limits of the phonetic component: date xiesheng series against Old Chinese, catch readings guessed from a component, and read fanqie-style glosses when met.",
+    "Discuss at least three character-culture topics (taboo forms, classical quotation, calligraphy as practice) with epigraphic or dictionary evidence.",
+    "Decompose characters into strokes and components correctly, apply stroke-order and radical-index rules, and use the 2013 standard in both print and manuscript form.",
+    "Trace the simplification process (1935, 1955, 1964, 1986 rescission) and adjudicate traditional-versus-simplified questions by register, region and the current standard tables.",
+    "Handle characters computationally: explain encoding (GB 2312 to Unicode), input methods as component analysis, variant and compatibility issues, and font licensing as a practical constraint."
+  ],
   "chapters": [
     {
       "slug": "writing-and-language",
@@ -98,8 +111,102 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": -1200,
+      "title": "Oracle-bone script",
+      "detail": "Diviners of the late Shang at Yinxu cut a fully grown writing system — some 4,500 distinct characters known, over half still undeciphered — onto scapula and plastron. No ancestor script of comparable age is legible; this one is.",
+      "people": []
+    },
+    {
+      "year": -1046,
+      "title": "Western Zhou bronze inscriptions",
+      "detail": "Casting ritual texts on bells and vessels gave Chinese its monumental register: long, genealogical, formulaic, and the base from which small seal script of the Qin region descends.",
+      "people": []
+    },
+    {
+      "year": -221,
+      "title": "Unifying characters in one script",
+      "detail": "Qin's chancelleries standardize small seal for official documents while daily work runs on clerical script; within two centuries the brush and knife have rewritten the graph shapes beyond etymological recognition — the 'ancient-modern script change'.",
+      "people": [
+        "Li Si"
+      ]
+    },
+    {
+      "year": 121,
+      "title": "Shuowen jiezi",
+      "detail": "Xu Shen analyses 9,353 graphs under 540 radicals, dating and explaining most of them from small-seal forms. The first dictionary — and the first, flawed, but indispensable theory of what a character is.",
+      "people": [
+        "Xu Shen"
+      ]
+    },
+    {
+      "year": 220,
+      "title": "Regular script takes shape",
+      "detail": "Between late Han and the Wei-Jin period, the eight strokes of clerical script lose their silkworm head and the graphs straighten into zhen-shu; Wang Xizhi's generation writes the model letters that cut-and-paste into the print typefaces of a millennium later.",
+      "people": [
+        "Zhong Yao",
+        "Wang Xizhi"
+      ]
+    },
+    {
+      "year": 1615,
+      "title": "Zihui",
+      "detail": "Mei Yingzuo's dictionary indexes characters by 214 radicals — the arrangement copied by the Kangxi dictionary and by most printed dictionaries down to today.",
+      "people": [
+        "Mei Yingzuo"
+      ]
+    },
+    {
+      "year": 1955,
+      "title": "Simplification launched",
+      "detail": "The script-reform movement produces the first batch of simplified characters and a program — script Latinization first, simplification as a compromise — whose 1964 table, corrected in 1986 after the failed second scheme, still sets the mainland standard.",
+      "people": [
+        "Wu Yu"
+      ]
+    },
+    {
+      "year": 2013,
+      "title": "Table of General Standard Chinese Characters",
+      "detail": "After a decade of drafting, 8,105 standard characters are promulgated with an attached list of recovered old variants, ending a fifty-year gap without a comprehensive standard list and anchoring font, textbook and name-and-place policy.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "《说文解字》",
+      "authors": "许慎 撰",
+      "year": 121,
+      "note": "The foundation: 540 radicals, 9,353 graphs and the first systematic, if often mistaken, account of character form and meaning."
+    },
+    {
+      "title": "《说文解字注》",
+      "authors": "段玉裁 注",
+      "note": "The Qing commentary every later Shuowen reading presupposes; its treatment of phonetic series is the root of modern xiesheng studies."
+    },
+    {
+      "title": "《中国文字学》",
+      "authors": "陈梦家",
+      "note": "A concise, still vivid account of the origins and evolution of the script by a bronze-and-bone epigrapher."
+    },
+    {
+      "title": "《文字学概要》",
+      "authors": "裘锡圭",
+      "note": "The standard university text on Chinese grammar of characters: six categories reworked with excavated evidence; the analysis this course follows."
+    },
+    {
+      "title": "《中华大字典》",
+      "authors": "欧阳溥存 等 编",
+      "year": 1915,
+      "note": "A landmark of pre-republic lexicography, superseded but a window into received readings and usages."
+    },
+    {
+      "title": "《通用规范汉字表》",
+      "authors": "国务院 公布",
+      "year": 2013,
+      "note": "The operative standard: 8,105 characters in three grades, with the accompanying handbook explaining every choice."
+    }
+  ],
   "next": [
     "classical-chinese-2",
     "calligraphy"
