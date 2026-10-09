@@ -1,95 +1,194 @@
 {
-  "slug": "calligraphy",
-  "title": "Handwriting and Calligraphy",
-  "full_title": "Handwriting and Calligraphy: Writing Characters Well",
-  "area": "script",
-  "level": 2,
-  "order": 80,
-  "tagline": "Strokes and stroke order, the structure of characters, writing with a pen, the brush and its tools, regular script, running and cursive script, seal and clerical script, the history of calligraphy, and looking at calligraphy",
-  "summary": "Writing characters well is a skill that keyboards have made rare and that calligraphy turned into an art. This course starts with standard stroke order and the structure of characters, moves from the pen to the brush, introduces regular, running, cursive, seal and clerical script, and surveys the history of calligraphy and how to look at and copy the great works.",
-  "overview": [],
-  "prerequisites": [
-    "chinese-characters"
-  ],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "strokes-order",
-      "title": "Strokes and stroke order",
-      "summary": "The basic strokes and their variants, and the national standard for stroke order.",
-      "requires": [
-        "chinese-characters/strokes-radicals"
-      ]
-    },
-    {
-      "slug": "structure",
-      "title": "The structure of characters",
-      "summary": "Proportion, balance and spacing in characters of different shapes, and the classical rules of composing a character.",
-      "requires": [
-        "calligraphy/strokes-order"
-      ]
-    },
-    {
-      "slug": "pen-writing",
-      "title": "Writing with a pen",
-      "summary": "Neat and fluent handwriting with a pen, from regular script to a running hand.",
-      "requires": [
-        "calligraphy/structure"
-      ]
-    },
-    {
-      "slug": "brush-tools",
-      "title": "The brush and the four treasures",
-      "summary": "Brush, ink, paper and inkstone, holding the brush, and the basic movements of the brush tip.",
-      "requires": [
-        "calligraphy/structure"
-      ]
-    },
-    {
-      "slug": "regular-script",
-      "title": "Regular script",
-      "summary": "The models of Ouyang Xun, Yan Zhenqing, Liu Gongquan and Zhao Mengfu, and how to begin copying.",
-      "requires": [
-        "calligraphy/brush-tools"
-      ]
-    },
-    {
-      "slug": "running-cursive",
-      "title": "Running and cursive script",
-      "summary": "Wang Xizhi’s *Lanting Xu*, running script as an everyday hand, and the rules behind cursive.",
-      "requires": [
-        "calligraphy/regular-script"
-      ]
-    },
-    {
-      "slug": "seal-clerical",
-      "title": "Seal and clerical script",
-      "summary": "Writing seal and clerical script from Qin and Han models, and the art of seal carving.",
-      "requires": [
-        "calligraphy/regular-script"
-      ]
-    },
-    {
-      "slug": "history-of-calligraphy",
-      "title": "A history of calligraphy",
-      "summary": "From Qin and Han inscriptions through the Jin, the Tang masters and the four Song masters to the calligraphers of the Ming, Qing and modern times.",
-      "requires": [
-        "calligraphy/running-cursive",
-        "calligraphy/seal-clerical"
-      ]
-    },
-    {
-      "slug": "appreciation",
-      "title": "Looking at calligraphy",
-      "summary": "The stele and model-book traditions, how to read brushwork, structure and composition, and the relation between calligraphy and the text it writes.",
-      "requires": [
-        "calligraphy/history-of-calligraphy"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "classical-chinese-2"
-  ]
+ "slug": "calligraphy",
+ "title": "Handwriting and Calligraphy",
+ "full_title": "Handwriting and Calligraphy: Writing Characters Well",
+ "area": "script",
+ "level": 2,
+ "order": 80,
+ "tagline": "Strokes and stroke order, the structure of characters, writing with a pen, the brush and its tools, regular script, running and cursive script, seal and clerical script, the history of calligraphy, and looking at calligraphy",
+ "summary": "Writing characters well is a skill that keyboards have made rare and that calligraphy turned into an art. This course starts with standard stroke order and the structure of characters, moves from the pen to the brush, introduces regular, running, cursive, seal and clerical script, and surveys the history of calligraphy and how to look at and copy the great works.",
+ "overview": [
+  "Writing characters well is a skill keyboards made rare — and one China's calligraphic tradition had, uniquely, turned into a fine art. This course starts where the handwriting class should have: standard stroke order and the architecture of characters, then the hand itself (pen first, brush after), the tools and their etiquette, and the three great script families practiced as living systems rather than rubric-rubbings.",
+  "By the end you should be able to write legibly fast with a pen, hold a brush without fear, date a style to its dynasty at a glance, and—most of all—look: 读帖 before 临帖, since in this art the eye trains the hand, and a century of masters said so in writing. The history runs from the Qin standardization to the 2009 UNESCO listing, with the keyboard and the stylus as the newest, least forgiving patrons.",
+  "Prerequisite: Chinese Characters — the logic of character formation learned there becomes, in this course, the basis of structure itself."
+ ],
+ "prerequisites": [
+  "chinese-characters"
+ ],
+ "outcomes": [
+  "apply the state stroke-order rules (先横后竖、先撇后捺、从上到下、从左到右、先外后内再封口 etc.) and diagnose common order and form errors",
+  "describe character structure (间架): balance, main-stroke, enclosure and proportion principles, and apply them to handwriting layout",
+  "demonstrate correct pen grip, posture, stroke dynamics (起笔行笔收笔) for fast legible running-style handwriting",
+  "identify and handle brush, ink, paper, inkstone (文房四宝) and ancillary tools; mount practice the right way (描红—临帖—背帖)",
+  "write basic regular-script strokes with 永字八法 vocabulary and read a 九宫格/米字格 model copy",
+  "distinguish running and cursive scripts, read common cursive forms (草法), and explain why 楷如立、行如走、草如奔",
+  "trace the genealogy 篆—隶—楷—行—草 with the 隶变 hinge; date a stele or model letter to its broad period from style cues",
+  "critique a work using classical vocabulary (骨、肉、筋、血、势、意、法、韵) and connect taste to the history of theory (尚韵—尚法—尚意—尚态)"
+ ],
+ "chapters": [
+  {
+   "slug": "strokes-order",
+   "title": "Strokes and stroke order",
+   "summary": "The basic strokes and their variants, and the national standard for stroke order.",
+   "requires": [
+    "chinese-characters/strokes-radicals"
+   ]
+  },
+  {
+   "slug": "structure",
+   "title": "The structure of characters",
+   "summary": "Proportion, balance and spacing in characters of different shapes, and the classical rules of composing a character.",
+   "requires": [
+    "calligraphy/strokes-order"
+   ]
+  },
+  {
+   "slug": "pen-writing",
+   "title": "Writing with a pen",
+   "summary": "Neat and fluent handwriting with a pen, from regular script to a running hand.",
+   "requires": [
+    "calligraphy/structure"
+   ]
+  },
+  {
+   "slug": "brush-tools",
+   "title": "The brush and the four treasures",
+   "summary": "Brush, ink, paper and inkstone, holding the brush, and the basic movements of the brush tip.",
+   "requires": [
+    "calligraphy/structure"
+   ]
+  },
+  {
+   "slug": "regular-script",
+   "title": "Regular script",
+   "summary": "The models of Ouyang Xun, Yan Zhenqing, Liu Gongquan and Zhao Mengfu, and how to begin copying.",
+   "requires": [
+    "calligraphy/brush-tools"
+   ]
+  },
+  {
+   "slug": "running-cursive",
+   "title": "Running and cursive script",
+   "summary": "Wang Xizhi’s *Lanting Xu*, running script as an everyday hand, and the rules behind cursive.",
+   "requires": [
+    "calligraphy/regular-script"
+   ]
+  },
+  {
+   "slug": "seal-clerical",
+   "title": "Seal and clerical script",
+   "summary": "Writing seal and clerical script from Qin and Han models, and the art of seal carving.",
+   "requires": [
+    "calligraphy/regular-script"
+   ]
+  },
+  {
+   "slug": "history-of-calligraphy",
+   "title": "A history of calligraphy",
+   "summary": "From Qin and Han inscriptions through the Jin, the Tang masters and the four Song masters to the calligraphers of the Ming, Qing and modern times.",
+   "requires": [
+    "calligraphy/running-cursive",
+    "calligraphy/seal-clerical"
+   ]
+  },
+  {
+   "slug": "appreciation",
+   "title": "Looking at calligraphy",
+   "summary": "The stele and model-book traditions, how to read brushwork, structure and composition, and the relation between calligraphy and the text it writes.",
+   "requires": [
+    "calligraphy/history-of-calligraphy"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": -221,
+   "title": "One realm, one script",
+   "detail": "Qin unification fixes the small seal as standard (“书同文”); Li Si’s Cangjie pian is the first national primer. Unification also accelerates the everyday slip into qin-li — the 隶变 that will free Chinese writing from picturehood.",
+   "people": "李斯"
+  },
+  {
+   "year": 175,
+   "title": "Writing carved as law",
+   "detail": "The Xiaping stone classics, calligraphed (traditionally under Cai Yong), set the canon in stone for scholars to copy — the earliest state-sponsored model-script publication, and the birth of the rubbing trade.",
+   "people": "蔡邕等"
+  },
+  {
+   "year": 353,
+   "title": "A drunk masterpieces itself",
+   "detail": "At the Orchid Pavilion renewal rite Wang Xizhi drafts the preface in running script; Tang reviewers will crown it 天下第一行书. The anecdote-set (the mouse whisker, the rice-pavilion, the washerwoman and her fans) makes the calligrapher a cultural hero.",
+   "people": "王羲之"
+  },
+  {
+   "year": 690,
+   "title": "Theory finds its vocabulary",
+   "detail": "Sun Guoting’s Shu Pu argues 翰逸少而功倍, maps the five scripts and the dialectic of 平正—险绝—平正 — calligraphy Criticism acquires grammar; Tang will codify 尚法 to match.",
+   "people": "孙过庭"
+  },
+  {
+   "year": 1082,
+   "title": "Intent over statute",
+   "detail": "In exile Su Shi writes the Cold Food Observance; the Song turn to 尚意 (“我书意造本无法”) makes the written line a portrait of the writer — theory, biography and brushwork braid together.",
+   "people": "苏轼"
+  },
+  {
+   "year": 1300,
+   "title": "The great archaist revival",
+   "detail": "Zhao Mengfu’s retro program — 复古 to Jin and Tang, seal-clerical arteries reopened — re-pipes the tradition back to 二王; his influence (and the controversy over his Yuan service) frames taste for three more dynasties.",
+   "people": "赵孟頫"
+  },
+  {
+   "year": 1899,
+   "title": "Oracle bones, end of exams",
+   "detail": "Wang Yirong identifies the 安阳 oracle bones; six years later the exam system falls. The brush loses its bureaucratic career in one generation — and gains the museum, the academy and the art gallery.",
+   "people": "王懿荣"
+  },
+  {
+   "year": 2009,
+   "title": "Intangible, therefore alive",
+   "detail": "Chinese calligraphy enters UNESCO’s Representative List. Debates shift from “calligraphy vs typing” to performance, avant-garde 墨象, and AI-generated model letters — a 3000-year craft enters its keyboard century.",
+   "people": "UNESCO"
+  }
+ ],
+ "references": [
+  {
+   "title": "《书谱》",
+   "authors": "孙过庭",
+   "year": 690,
+   "note": "Theory and model letter in one scroll — read the treatise in the very hand it praises."
+  },
+  {
+   "title": "《法书要录》",
+   "authors": "张彦远",
+   "year": 815,
+   "note": "The Tang-Song anthology of calligraphy writing — half of all surviving early theory lives here."
+  },
+  {
+   "title": "《淳化阁帖》",
+   "authors": "宋太宗敕辑",
+   "year": 992,
+   "note": "The first great model-letter corpus carved for rubbing — the “canon” idea, published."
+  },
+  {
+   "title": "《游艺录》",
+   "authors": "姜绍书",
+   "year": 1667,
+   "note": "Qing connoisseurship, tools, and anecdotes — how cultivated eyes actually looked."
+  },
+  {
+   "title": "《艺舟双楫》(论书部分)",
+   "authors": "包世臣",
+   "year": 1833,
+   "note": "The stele-school manifesto’s technical wing — 北碑 aesthetics with a manual’s bone."
+  },
+  {
+   "title": "《广艺舟双楫》",
+   "authors": "康有为",
+   "year": 1917,
+   "note": "Kang’s 尊碑抑帖 polemic — calligraphy argument as cultural politics."
+  }
+ ],
+ "next": [
+  "classical-chinese-2"
+ ]
 }
