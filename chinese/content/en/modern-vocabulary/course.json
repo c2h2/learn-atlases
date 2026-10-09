@@ -1,91 +1,193 @@
 {
-  "slug": "modern-vocabulary",
-  "title": "Modern Chinese Vocabulary",
-  "full_title": "Modern Chinese Vocabulary: Morphemes, Words and Meanings",
-  "area": "language",
-  "level": 1,
-  "order": 30,
-  "tagline": "Morphemes and words, word formation, word meaning, synonyms, antonyms and semantic fields, idioms and set phrases, the layers of the lexicon, loanwords, new words and internet language, and dictionaries",
-  "summary": "The vocabulary of Chinese is built from morphemes that are almost all one syllable and one character, combined in ways that native speakers handle by feel and rarely describe. This course explains morphemes and words, the main ways of forming words, how word meanings are structured and related, idioms and other fixed expressions, the historical layers of the lexicon from classical words to loanwords and internet coinages, and how to use dictionaries well.",
-  "overview": [],
-  "prerequisites": [],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "morphemes-words",
-      "title": "Morphemes and words",
-      "summary": "Morphemes, words and phrases, why the character is not the word, and how to tell a word from a phrase.",
-      "requires": []
-    },
-    {
-      "slug": "word-formation",
-      "title": "How words are formed",
-      "summary": "The five main types of compound, affixation with 老-, -子 and -化, and reduplication.",
-      "requires": [
-        "modern-vocabulary/morphemes-words"
-      ]
-    },
-    {
-      "slug": "word-meaning",
-      "title": "Word meaning",
-      "summary": "Lexical and grammatical meaning, denotation and connotation, polysemy, and how meanings extend and shift.",
-      "requires": [
-        "modern-vocabulary/morphemes-words"
-      ]
-    },
-    {
-      "slug": "sense-relations",
-      "title": "Synonyms, antonyms and semantic fields",
-      "summary": "Telling near-synonyms apart, kinds of antonym, homonyms, and semantic fields.",
-      "requires": [
-        "modern-vocabulary/word-meaning"
-      ]
-    },
-    {
-      "slug": "idioms",
-      "title": "Idioms and set phrases",
-      "summary": "*Chengyu*, their sources and structure, idiomatic phrases (惯用语), two-part allegorical sayings (歇后语) and proverbs, and how idioms are misused.",
-      "requires": [
-        "modern-vocabulary/word-formation"
-      ]
-    },
-    {
-      "slug": "lexicon-layers",
-      "title": "Layers of the lexicon",
-      "summary": "Basic and general vocabulary, classical words, dialect words and specialised terms, and how words enter and leave the standard language.",
-      "requires": [
-        "modern-vocabulary/word-meaning"
-      ]
-    },
-    {
-      "slug": "loanwords",
-      "title": "Loanwords",
-      "summary": "Words from Sanskrit, Japanese, English and other languages borrowed by sound, by meaning or both, and lettered words such as *CT* and *Wi-Fi*.",
-      "requires": [
-        "modern-vocabulary/lexicon-layers"
-      ]
-    },
-    {
-      "slug": "new-words",
-      "title": "New words and internet language",
-      "summary": "How new words are made and spread, the language of the internet, and the debate about norms.",
-      "requires": [
-        "modern-vocabulary/loanwords"
-      ]
-    },
-    {
-      "slug": "dictionaries",
-      "title": "Dictionaries",
-      "summary": "How the *Xinhua Zidian* and the *Xiandai Hanyu Cidian* are made and used, and what other dictionaries and corpora offer.",
-      "requires": [
-        "modern-vocabulary/lexicon-layers"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "modern-grammar",
-    "rhetoric"
-  ]
+ "slug": "modern-vocabulary",
+ "title": "Modern Chinese Vocabulary",
+ "full_title": "Modern Chinese Vocabulary: Morphemes, Words and Meanings",
+ "area": "language",
+ "level": 1,
+ "order": 30,
+ "tagline": "Morphemes and words, word formation, word meaning, synonyms, antonyms and semantic fields, idioms and set phrases, the layers of the lexicon, loanwords, new words and internet language, and dictionaries",
+ "summary": "The vocabulary of Chinese is built from morphemes that are almost all one syllable and one character, combined in ways that native speakers handle by feel and rarely describe. This course explains morphemes and words, the main ways of forming words, how word meanings are structured and related, idioms and other fixed expressions, the historical layers of the lexicon from classical words to loanwords and internet coinages, and how to use dictionaries well.",
+ "overview": [
+  "Chinese vocabulary looks deceptively simple to native speakers: morphemes are nearly all single syllables written by single characters, and new words seem to appear by snapping these bricks together. This course makes the tacit knowledge explicit — the morpheme as the smallest meaningful unit, the word as the smallest free form, and the tests (notably the substitution frame, or 扩展法) that decide whether 白饭 or 黑板 is one word or two.",
+  "We then walk through the machinery of the lexicon: the five compound structures inherited from traditional grammar (subject-predicate, verb-object, modifying, coordinate, and complement), derivation with affixes such as 老-、小-、-子、-儿、-头、-化, and the productive reduplication of roots and measures. Meaning gets its own treatment — lexical against grammatical meaning, denotation against connotation, polysemy and its extension chains, and the relations that organize the vocabulary into synonymous groups, antonym pairs and semantic fields.",
+  "The second half of the course deals with the lexicon as a growing, layered, borrowed, catalogued thing: idioms and other fixed phrases with their fossilized grammar; historical strata from archaisms and classical re-borrowings to dialect words and loanwords from Sanskrit, Mongolian, Japanese and English; the explosion of neologisms and internet language; and, finally, how Chinese dictionaries from 尔雅 to the 现代汉语词典 are built — and how to read them so they work for you."
+ ],
+ "prerequisites": [
+  "sounds-of-mandarin",
+  "chinese-characters"
+ ],
+ "outcomes": [
+  "identify morphemes, words and phrases in Chinese text using substitution and free-standing tests",
+  "parse modern Chinese words into roots and affixes and label the five compound structures",
+  "describe word meaning in terms of denotation, connotation, and polysemy-driven extension",
+  "analyze synonym differences along the axes of meaning, coloring, and collocation",
+  "explain the grammatical and semantic properties of idioms, proverbial sayings, and set phrases",
+  "trace a given word through the historical layers of the modern lexicon (archaism, classical stratum, dialect stratum, loan stratum)",
+  "classify loanwords by mechanism (transcription, translation, hybrid) and evaluate adaptation pressures",
+  "use character, word and idiom dictionaries efficiently, including their pronunciation and sense-division conventions"
+ ],
+ "chapters": [
+  {
+   "slug": "morphemes-words",
+   "title": "Morphemes and words",
+   "summary": "Morphemes, words and phrases, why the character is not the word, and how to tell a word from a phrase.",
+   "requires": []
+  },
+  {
+   "slug": "word-formation",
+   "title": "How words are formed",
+   "summary": "The five main types of compound, affixation with 老-, -子 and -化, and reduplication.",
+   "requires": [
+    "modern-vocabulary/morphemes-words"
+   ]
+  },
+  {
+   "slug": "word-meaning",
+   "title": "Word meaning",
+   "summary": "Lexical and grammatical meaning, denotation and connotation, polysemy, and how meanings extend and shift.",
+   "requires": [
+    "modern-vocabulary/morphemes-words"
+   ]
+  },
+  {
+   "slug": "sense-relations",
+   "title": "Synonyms, antonyms and semantic fields",
+   "summary": "Telling near-synonyms apart, kinds of antonym, homonyms, and semantic fields.",
+   "requires": [
+    "modern-vocabulary/word-meaning"
+   ]
+  },
+  {
+   "slug": "idioms",
+   "title": "Idioms and set phrases",
+   "summary": "*Chengyu*, their sources and structure, idiomatic phrases (惯用语), two-part allegorical sayings (歇后语) and proverbs, and how idioms are misused.",
+   "requires": [
+    "modern-vocabulary/word-formation"
+   ]
+  },
+  {
+   "slug": "lexicon-layers",
+   "title": "Layers of the lexicon",
+   "summary": "Basic and general vocabulary, classical words, dialect words and specialised terms, and how words enter and leave the standard language.",
+   "requires": [
+    "modern-vocabulary/word-meaning"
+   ]
+  },
+  {
+   "slug": "loanwords",
+   "title": "Loanwords",
+   "summary": "Words from Sanskrit, Japanese, English and other languages borrowed by sound, by meaning or both, and lettered words such as *CT* and *Wi-Fi*.",
+   "requires": [
+    "modern-vocabulary/lexicon-layers"
+   ]
+  },
+  {
+   "slug": "new-words",
+   "title": "New words and internet language",
+   "summary": "How new words are made and spread, the language of the internet, and the debate about norms.",
+   "requires": [
+    "modern-vocabulary/loanwords"
+   ]
+  },
+  {
+   "slug": "dictionaries",
+   "title": "Dictionaries",
+   "summary": "How the *Xinhua Zidian* and the *Xiandai Hanyu Cidian* are made and used, and what other dictionaries and corpora offer.",
+   "requires": [
+    "modern-vocabulary/lexicon-layers"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": -150,
+   "title": "Erya",
+   "detail": "The earliest Chinese word-explaining compendium: nineteen chapters grouping words by semantic fields — kinship, geography, plants and animals — and glossing archaisms with the contemporary language of the Warring States. It founds Chinese lexicography not as an alphabet list but as a classified thesaurus.",
+   "people": "Anonymous Han scholars (received text)"
+  },
+  {
+   "year": 121,
+   "title": "Shuowen Jiezi",
+   "detail": "Xu Shen analyses 9,353 graphs under 540 radicals, treating each entry through form, sound and meaning. Built for classical exegesis, it long served as the de facto vocabulary handbook of educated China and remains the base for interpreting pre-Qin words.",
+   "people": "许慎 (Xu Shen)"
+  },
+  {
+   "year": 200,
+   "title": "Shiming",
+   "detail": "Liu Xi's 'clear-light' dictionary explains words by phonetic gloss (声训) — a mass of late-Han folk and learned etymology that, for all its uncontrolled method, preserves invaluable Han pronunciation and word-usage evidence.",
+   "people": "刘熙 (Liu Xi)"
+  },
+  {
+   "year": 1008,
+   "title": "Jingde Guangyun",
+   "detail": "The Song rhyme book that became a vocabulary treasury: 26,000-odd syllabified entries with terse definitions, our chief ledger of Middle Chinese lexicon and the reservoir later dictionary makers drew on.",
+   "people": "Chen Pengnian and others, ed."
+  },
+  {
+   "year": 1716,
+   "title": "Kangxi Zidian",
+   "detail": "The Qing court dictionary of over 47,000 characters organized under 214 radicals became the standard reference for two centuries and still anchors the radical-stroke lookup everyone learns as a child.",
+   "people": "Zhang Yushu and others, eds."
+  },
+  {
+   "year": 1915,
+   "title": "Ciyuan",
+   "detail": "The Commercial Press's 'Etymological Dictionary' fused the classical tradition (characters plus words and phrases, with book-source citations) with modern science terms — the first modern Chinese dictionary and the model for everything after.",
+   "people": "Lu Feikui, Gao Engong and others, eds."
+  },
+  {
+   "year": 1936,
+   "title": "Cihai",
+   "detail": "Zhonghua Book Company's answer to Ciyuan updated the encyclopedic-philological format with contemporary knowledge; revised for decades after 1949 in both Taipei and Shanghai, it remains a name for 'the big dictionary'.",
+   "people": "Shu Xincheng and others, eds."
+  },
+  {
+   "year": 1978,
+   "title": "Xiandai Hanyu Cidian",
+   "detail": "The Institute of Linguistics' dictionary of the living language, finished after twenty years' work interrupted by politics, established the norms of describing modern words grammatically (word-class marks, usage notes) and is still revised — its newest editions still make headlines for every word added or deleted.",
+   "people": "语言研究所词典编辑室 (Institute of Linguistics dictionary editorial office)"
+  }
+ ],
+ "references": [
+  {
+   "title": "《现代汉语》（黄廖本）",
+   "authors": "黄伯荣、廖序东 主编",
+   "year": 2012,
+   "note": "The standard two-volume university textbook; its vocabulary and word-formation chapters supply this course's working taxonomy."
+  },
+  {
+   "title": "《语法讲话》",
+   "authors": "吕叔湘",
+   "year": 1952,
+   "note": "The classic descriptivist grammar whose chapter on 词和名词界说 refined the substitution test for Chinese word boundaries."
+  },
+  {
+   "title": "《现代汉语词典》第7版",
+   "authors": "中国社会科学院语言研究所词典编辑室",
+   "year": 2016,
+   "note": "The norm-setting dictionary of modern Chinese; read its 凡例 — the part everyone skips — as part of this course."
+  },
+  {
+   "title": "Chinese Lexis",
+   "authors": "J. Packard",
+   "year": 2000,
+   "note": "A rigorous English-language study of the Chinese mental lexicon: what a word is when speakers cannot agree where it starts."
+  },
+  {
+   "title": "《现代汉语方言大词典》",
+   "authors": "李荣 主编",
+   "year": 1999,
+   "note": "Forty-two volumes recording the lexicons of the major varieties — the quarry for the dialect stratum of the common language."
+  },
+  {
+   "title": "《新华字典》",
+   "authors": "商务印书馆（辞书编辑委员会）",
+   "year": 1953,
+   "note": "Not a word dictionary but a character dictionary; useful for feeling exactly what a morpheme looks like when it is listed alone."
+  }
+ ],
+ "next": [
+  "modern-grammar",
+  "rhetoric"
+ ]
 }
