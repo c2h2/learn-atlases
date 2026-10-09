@@ -7,11 +7,24 @@
   "order": 60,
   "tagline": "Self-attention, multi-head attention, positional encodings, the Transformer block and its variants",
   "summary": "Since 2017 the Transformer has been the architecture of language models. This course derives self-attention and multi-head attention, positional encodings, the residual Transformer block, the encoder, decoder and encoder–decoder variants, the cost of attention, and the efficient and sparse variants used at scale.",
-  "overview": [],
+  "overview": [
+    "Almost every large language model today is a Transformer: a stack of identical blocks in which each position gathers information from the others through self-attention and then processes it with a small feed-forward network. Unlike a recurrent network, a Transformer handles all positions of a sequence in parallel during training, which is what allowed models to be trained on trillions of tokens. This course derives the architecture piece by piece and explains the variants used in current models.",
+    "Self-attention is built from queries, keys and values and the scaled dot product, then extended to multiple heads with causal masks for language modelling. Because attention ignores order, position must be injected: sinusoidal and learned embeddings, relative schemes, and the rotary embeddings (RoPE) used by most current models. The Transformer block assembles attention, the residual stream, normalisation (LayerNorm or RMSNorm) and a gated feed-forward layer; encoders, decoders and encoder–decoders specialise it for understanding, generation and translation. The last chapters face the cost of attention — quadratic in sequence length and limited by memory traffic — and its remedies: FlashAttention, sparse and sliding-window attention, grouped-query attention, and mixtures of experts that add parameters without adding computation per token.",
+    "The Transformer is short to write down and easy to get subtly wrong. Keep track of the shape of every tensor, implement a small model from scratch, and check it against a reference implementation; most later courses — pretraining, inference, interpretability — assume that you can read a Transformer layer by layer."
+  ],
   "prerequisites": [
     "sequence-models"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Derive scaled dot-product attention from queries, keys and values, and explain the role of the scaling factor.",
+    "Implement multi-head attention with causal masking, tracking the shape of every tensor.",
+    "Compare sinusoidal, learned, relative and rotary position encodings, and explain how RoPE encodes relative position.",
+    "Assemble a Transformer block from attention, residual connections, normalisation and a gated feed-forward layer.",
+    "Distinguish encoder-only, decoder-only and encoder–decoder models, and match them to tasks.",
+    "Estimate the compute and memory cost of attention, and explain how FlashAttention reduces memory traffic.",
+    "Describe sparse, sliding-window, linear, multi-query and grouped-query attention and their trade-offs.",
+    "Explain how mixture-of-experts layers route tokens, and why they need load balancing."
+  ],
   "chapters": [
     {
       "slug": "self-attention",
@@ -80,8 +93,115 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2017,
+      "title": "Attention Is All You Need",
+      "detail": "Vaswani and colleagues at Google replaced recurrence with self-attention in an encoder–decoder for translation, introducing the Transformer.",
+      "people": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan Gomez",
+        "Łukasz Kaiser",
+        "Illia Polosukhin"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Gated feed-forward layers",
+      "detail": "Shazeer showed that gated linear units such as SwiGLU improve the Transformer’s feed-forward layer; most current models use them.",
+      "people": [
+        "Noam Shazeer"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Sliding-window attention",
+      "detail": "Beltagy, Peters and Cohan’s Longformer combined local windowed attention with a few global tokens to process documents thousands of tokens long.",
+      "people": [
+        "Iz Beltagy",
+        "Matthew Peters",
+        "Arman Cohan"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Linear attention",
+      "detail": "Katharopoulos and colleagues replaced the softmax with a kernel feature map, making attention linear in sequence length and recurrent at inference.",
+      "people": [
+        "Angelos Katharopoulos"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "Rotary position embedding",
+      "detail": "Su and colleagues encoded position by rotating query and key vectors, so that attention scores depend on relative position; RoPE became the standard in open models.",
+      "people": [
+        "Jianlin Su"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "Switch Transformer",
+      "detail": "Fedus, Zoph and Shazeer routed each token to a single expert and scaled sparse Transformers past a trillion parameters, building on the sparsely gated mixture-of-experts layer of Shazeer and colleagues (2017).",
+      "people": [
+        "William Fedus",
+        "Barret Zoph",
+        "Noam Shazeer"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "FlashAttention",
+      "detail": "Dao and colleagues computed exact attention in tiles that stay in fast on-chip memory, cutting memory traffic and making long sequences practical.",
+      "people": [
+        "Tri Dao"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Grouped-query attention",
+      "detail": "Ainslie and colleagues let groups of query heads share one key–value head, keeping most of the quality of multi-head attention with a fraction of its cache; multi-query attention (Shazeer, 2019) is the extreme case.",
+      "people": [
+        "Joshua Ainslie"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Attention Is All You Need",
+      "authors": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser and Illia Polosukhin",
+      "year": 2017,
+      "note": "The original paper; short, and still a clear statement of the architecture."
+    },
+    {
+      "title": "Formal Algorithms for Transformers",
+      "authors": "Mary Phuong and Marcus Hutter",
+      "year": 2022,
+      "note": "Precise pseudocode for every common Transformer variant, in consistent notation."
+    },
+    {
+      "title": "The Annotated Transformer",
+      "authors": "Alexander Rush (updated by Austin Huang and colleagues)",
+      "year": 2018,
+      "note": "The original paper reimplemented line by line in PyTorch, with commentary."
+    },
+    {
+      "title": "Understanding Deep Learning",
+      "authors": "Simon J. D. Prince",
+      "year": 2023,
+      "note": "Chapter 12 explains Transformers with exceptionally clear figures."
+    },
+    {
+      "title": "Speech and Language Processing",
+      "authors": "Daniel Jurafsky and James H. Martin",
+      "year": 2024,
+      "note": "The Transformer and large-language-model chapters of the third-edition draft."
+    }
+  ],
   "next": [
     "pretraining",
     "prompting-rag",

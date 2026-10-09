@@ -7,12 +7,24 @@
   "order": 50,
   "tagline": "Recurrent networks, LSTMs, sequence-to-sequence models and the invention of attention",
   "summary": "Language unfolds in time. This course models sequences with recurrent networks, meets the difficulty of long-range dependencies with LSTMs and GRUs, builds sequence-to-sequence models for translation, and introduces attention — the idea that became the Transformer.",
-  "overview": [],
+  "overview": [
+    "Before the Transformer, language was modelled one step at a time. A recurrent network reads a sequence token by token, carrying a hidden state that summarises everything seen so far; trained to predict the next token, it is a neural language model with, in principle, unlimited context. This course develops recurrent networks, the gated cells — LSTMs and GRUs — that let them remember over long spans, the encoder–decoder models that made neural machine translation work, and the attention mechanism that was invented to help them and ended up replacing them.",
+    "The chapters follow the history of the problem. Backpropagation through time shows why gradients vanish or explode over long sequences, and gating gives the LSTM a path along which information and gradients survive. Sequence-to-sequence models encode a sentence and decode a translation from it, and decoding itself — greedy search, beam search and their biases — becomes a topic of its own. Attention lets the decoder look back at every encoder state instead of one summary vector, and contextual embeddings such as ELMo show that representations learned this way transfer to other tasks. The course ends with convolutional and state-space sequence models, a line of work that has returned in models such as Mamba.",
+    "These models are worth studying even though Transformers dominate: the vocabulary of today’s systems — hidden states, teacher forcing, beam search, attention weights — comes from them, and recurrent and state-space layers are being revived for long contexts where attention is expensive. Trace each model’s computation on a short sequence by hand before trusting a library to do it."
+  ],
   "prerequisites": [
     "neural-networks",
     "text-and-language"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Build recurrent neural language models and train them with backpropagation through time.",
+    "Explain vanishing and exploding gradients in recurrent networks, and how LSTM and GRU gating and gradient clipping address them.",
+    "Construct encoder–decoder models for sequence-to-sequence tasks, trained with teacher forcing.",
+    "Implement greedy and beam-search decoding, and explain length normalisation and exposure bias.",
+    "Derive additive and multiplicative attention, and interpret attention weights as a soft alignment.",
+    "Explain the move from static to contextual embeddings and the transfer learning it enabled.",
+    "Compare recurrent, convolutional and state-space sequence models in cost and in how far back they can see."
+  ],
   "chapters": [
     {
       "slug": "recurrent-networks",
@@ -73,8 +85,115 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1990,
+      "title": "Finding structure in time",
+      "detail": "Elman trained simple recurrent networks to predict the next word and showed that their hidden states group words by grammatical and semantic category.",
+      "people": [
+        "Jeffrey Elman"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "The difficulty of long-term dependencies",
+      "detail": "Bengio, Simard and Frasconi showed that gradient-based training of recurrent networks struggles to capture dependencies over long spans; Hochreiter had analysed the vanishing gradient in his 1991 thesis.",
+      "people": [
+        "Yoshua Bengio",
+        "Sepp Hochreiter"
+      ]
+    },
+    {
+      "year": 1997,
+      "title": "Long short-term memory",
+      "detail": "Hochreiter and Schmidhuber introduced a memory cell with gates that keeps error signals flowing over hundreds of steps; the forget gate was added by Gers, Schmidhuber and Cummins in 2000.",
+      "people": [
+        "Sepp Hochreiter",
+        "Jürgen Schmidhuber"
+      ]
+    },
+    {
+      "year": 2010,
+      "title": "Recurrent neural network language models",
+      "detail": "Mikolov and colleagues showed that recurrent language models clearly outperform n-gram models in speech recognition.",
+      "people": [
+        "Tomas Mikolov"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "Sequence to sequence learning",
+      "detail": "Sutskever, Vinyals and Le translated sentences with one LSTM that encodes the source and another that decodes the target; Cho and colleagues proposed the encoder–decoder with the GRU the same year.",
+      "people": [
+        "Ilya Sutskever",
+        "Oriol Vinyals",
+        "Quoc Le"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "Attention for translation",
+      "detail": "Bahdanau, Cho and Bengio let the decoder attend to all encoder states, learning to align source and target words instead of squeezing the sentence into one vector.",
+      "people": [
+        "Dzmitry Bahdanau",
+        "Kyunghyun Cho",
+        "Yoshua Bengio"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "ELMo",
+      "detail": "Peters and colleagues showed that word representations taken from a bidirectional LSTM language model improve a wide range of NLP tasks, an early success of pretraining and transfer.",
+      "people": [
+        "Matthew Peters"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "Structured state spaces",
+      "detail": "Gu, Goel and Ré’s S4 made linear state-space layers trainable on very long sequences.",
+      "people": [
+        "Albert Gu",
+        "Karan Goel",
+        "Christopher Ré"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Mamba",
+      "detail": "Gu and Dao made the state-space parameters depend on the input, giving a recurrent model that matches Transformers of the same size in language modelling.",
+      "people": [
+        "Albert Gu",
+        "Tri Dao"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Deep Learning",
+      "authors": "Ian Goodfellow, Yoshua Bengio and Aaron Courville",
+      "year": 2016,
+      "note": "Chapter 10 is a thorough account of recurrent networks, LSTMs and sequence-to-sequence models."
+    },
+    {
+      "title": "Supervised Sequence Labelling with Recurrent Neural Networks",
+      "authors": "Alex Graves",
+      "year": 2012,
+      "note": "A monograph on LSTMs, bidirectional networks and connectionist temporal classification."
+    },
+    {
+      "title": "Neural Machine Translation",
+      "authors": "Philipp Koehn",
+      "year": 2020,
+      "note": "Encoder–decoder models, attention, decoding and evaluation, told through machine translation, the task where they were developed."
+    },
+    {
+      "title": "Dive into Deep Learning",
+      "authors": "Aston Zhang, Zachary C. Lipton, Mu Li and Alexander J. Smola",
+      "year": 2023,
+      "note": "Runnable implementations of RNNs, LSTMs, GRUs, sequence-to-sequence models and attention."
+    }
+  ],
   "next": [
     "transformers"
   ]

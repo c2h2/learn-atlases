@@ -7,11 +7,23 @@
   "order": 130,
   "tagline": "Chain of thought, sampling and voting, reinforcement learning with verifiable rewards and search",
   "summary": "Models can improve their answers by thinking longer. This course covers chain-of-thought prompting and self-consistency, training reasoning with outcome and process rewards on verifiable tasks, search over reasoning paths, the scaling of test-time compute, and what is known about the faithfulness and limits of model reasoning.",
-  "overview": [],
+  "overview": [
+    "For most of their history language models answered in a single pass, one token after another, with no room to work a problem out. Since 2022 a series of discoveries has changed that. Prompting a model to write out intermediate steps improves its answers; sampling several solutions and voting improves them further; and since 2024 models trained with reinforcement learning on problems with checkable answers have learned to produce long chains of reasoning, so that accuracy grows with the compute spent at inference. This course studies these methods and what is — and is not — known about why they work.",
+    "The course moves from prompting to training. Chain-of-thought prompting and scratchpads come first, then sampling-based methods — self-consistency, best-of-n and verifiers. Outcome and process rewards decide what a training signal should reward: the final answer or each step. Reinforcement learning with verifiable rewards on mathematics and code, as in DeepSeek-R1, produces long reasoning with behaviours such as checking and backtracking. Search over reasoning paths, the scaling of test-time compute and the economics of thinking budgets follow, and the course ends with faithfulness: whether a model’s written reasoning reflects the computation that produced its answer.",
+    "This is the fastest-moving course in the atlas, and many of its results come from technical reports rather than peer-reviewed papers. Separate what has been measured from what has been claimed, and remember that gains on mathematics and code may not transfer to tasks without an automatic checker."
+  ],
   "prerequisites": [
     "post-training"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain chain-of-thought prompting and why intermediate tokens can improve answers.",
+    "Apply self-consistency, best-of-n sampling and verifiers, and analyse how accuracy grows with the number of samples.",
+    "Compare outcome and process rewards, and describe how process reward models are trained.",
+    "Describe reinforcement learning with verifiable rewards on mathematics and code, and the behaviours it produces.",
+    "Apply tree search and other search methods to language-model reasoning.",
+    "Analyse the trade-off between test-time compute and accuracy, and its cost.",
+    "Evaluate the evidence on the faithfulness of stated reasoning and the limits of current reasoning models."
+  ],
   "chapters": [
     {
       "slug": "chain-of-thought",
@@ -41,7 +53,7 @@
     {
       "slug": "verifiable-rewards",
       "title": "Reinforcement learning with verifiable rewards",
-      "summary": "Training on mathematics and code with automatic checking, and what emerges from long reinforcement learning.",
+      "summary": "Training on mathematics and code with automatic checking, algorithms such as GRPO, and what emerges from long reinforcement learning.",
       "requires": [
         "reasoning/process-outcome-rewards",
         "post-training/rlhf"
@@ -73,8 +85,116 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2021,
+      "title": "Scratchpads",
+      "detail": "Nye and colleagues showed that training a model to write intermediate computations to a ‘scratchpad’ lets it carry out multi-step arithmetic and trace program execution.",
+      "people": [
+        "Maxwell Nye"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "Training verifiers",
+      "detail": "Cobbe and colleagues at OpenAI released the GSM8K dataset of grade-school mathematics problems and showed that sampling many solutions and ranking them with a trained verifier beats fine-tuning alone.",
+      "people": [
+        "Karl Cobbe"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Chain-of-thought prompting",
+      "detail": "Wei and colleagues showed that a few examples with written-out reasoning steps make large models far better at arithmetic, commonsense and symbolic problems.",
+      "people": [
+        "Jason Wei"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Self-consistency",
+      "detail": "Wang and colleagues sampled several reasoning paths and took a majority vote over their answers, improving on a single chain of thought.",
+      "people": [
+        "Xuezhi Wang"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Process supervision",
+      "detail": "Lightman and colleagues at OpenAI showed that a reward model trained on human labels for each step (the PRM800K dataset) picks correct mathematics solutions better than one trained on final answers only.",
+      "people": [
+        "Hunter Lightman"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Tree of thoughts",
+      "detail": "Yao and colleagues searched over branching sequences of intermediate thoughts, using the model itself to evaluate partial solutions.",
+      "people": [
+        "Shunyu Yao"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Unfaithful chains of thought",
+      "detail": "Turpin and colleagues showed that chain-of-thought explanations can omit factors, such as a biased ordering of answer options, that demonstrably changed the model’s answer.",
+      "people": [
+        "Miles Turpin"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Test-time compute versus parameters",
+      "detail": "Snell and colleagues found that spending inference compute adaptively can be more effective than scaling up model parameters on problems of moderate difficulty.",
+      "people": [
+        "Charlie Snell"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "OpenAI o1",
+      "detail": "OpenAI released a model trained with reinforcement learning to reason at length before answering, and reported accuracy rising with both training and test-time compute.",
+      "people": []
+    },
+    {
+      "year": 2025,
+      "title": "DeepSeek-R1",
+      "detail": "DeepSeek showed that reinforcement learning with rule-based rewards on mathematics and code, using its GRPO algorithm, produces long reasoning with self-verification, and released the model’s weights.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "authors": "Jason Wei and colleagues",
+      "year": 2022,
+      "note": "The paper that started the field, with many worked examples."
+    },
+    {
+      "title": "Let’s Verify Step by Step",
+      "authors": "Hunter Lightman and colleagues",
+      "year": 2023,
+      "note": "Outcome versus process supervision, with the PRM800K dataset."
+    },
+    {
+      "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+      "authors": "Charlie Snell, Jaehoon Lee, Kelvin Xu and Aviral Kumar",
+      "year": 2024,
+      "note": "A careful study of how best to spend inference compute."
+    },
+    {
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "authors": "DeepSeek-AI",
+      "year": 2025,
+      "note": "A detailed open report on training reasoning with verifiable rewards, including what did not work."
+    },
+    {
+      "title": "Reinforcement Learning from Human Feedback",
+      "authors": "Nathan Lambert",
+      "year": 2025,
+      "note": "Its chapters on reasoning and reinforcement learning with verifiable rewards connect this course with post-training."
+    }
+  ],
   "next": [
     "agents"
   ]

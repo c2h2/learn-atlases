@@ -7,11 +7,23 @@
   "order": 80,
   "tagline": "In-context learning, prompt design, structured output, embeddings, vector search and retrieval-augmented generation",
   "summary": "Much of what a language model can do is unlocked by what you put in its context. This course covers in-context learning and prompt design, structured output, text embeddings and vector search, retrieval-augmented generation and its evaluation, and the problem of hallucination.",
-  "overview": [],
+  "overview": [
+    "A trained language model is steered almost entirely through its context. What goes into the prompt — instructions, examples, retrieved documents, a schema for the answer — decides whether the same model produces a useful answer or a confident fabrication. This course treats the context window as the interface to a model: how in-context learning works, how to design prompts systematically, how to obtain structured output, and how retrieval-augmented generation grounds a model’s answers in documents it was never trained on.",
+    "The first chapters cover in-context learning — zero- and few-shot prompting and the theories of why it works — and prompt design, from instructions and examples to roles and formatting, treated as an engineering discipline with tests rather than folklore. Structured output shows how schemas, grammars and constrained decoding make output machine-readable. The retrieval chapters build the pipeline: text embeddings trained contrastively, nearest-neighbour search with indexes such as HNSW and hybrid keyword–vector search, then retrieval-augmented generation with chunking, reranking and citation. The course closes with hallucination — why models state falsehoods, and how grounding, abstention and calibration reduce it — and with the evaluation of retrieval systems.",
+    "Prompting looks easy and is easy to do badly. Treat every prompt as a hypothesis: write test cases, measure, and change one thing at a time. With retrieval, measure the retriever and the generator separately before blaming either."
+  ],
   "prerequisites": [
     "transformers"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain zero- and few-shot in-context learning, and summarise the main theories of why it works.",
+    "Design, test and iterate prompts systematically with instructions, examples, roles and formatting.",
+    "Obtain reliable structured output with schemas, grammars and constrained decoding.",
+    "Train and use text embeddings, and build vector indexes for nearest-neighbour and hybrid search.",
+    "Build a retrieval-augmented generation pipeline with chunking, retrieval, reranking and citation of sources.",
+    "Explain the causes of hallucination, and apply grounding, abstention and calibration to reduce it.",
+    "Evaluate retrieval systems by retrieval metrics, answer faithfulness and end-to-end quality."
+  ],
   "chapters": [
     {
       "slug": "in-context-learning",
@@ -80,8 +92,101 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1972,
+      "title": "Inverse document frequency",
+      "detail": "Spärck Jones proposed weighting search terms by how rare they are across documents, the idea behind tf–idf and the BM25 ranking function still used in hybrid search.",
+      "people": [
+        "Karen Spärck Jones"
+      ]
+    },
+    {
+      "year": 2016,
+      "title": "HNSW",
+      "detail": "Malkov and Yashunin’s hierarchical navigable small-world graphs made approximate nearest-neighbour search fast and accurate; they underlie most vector databases.",
+      "people": [
+        "Yury Malkov",
+        "Dmitry Yashunin"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "Sentence-BERT",
+      "detail": "Reimers and Gurevych fine-tuned BERT in a siamese network to produce sentence embeddings that can be compared by cosine similarity.",
+      "people": [
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Few-shot learning in context",
+      "detail": "Brown and colleagues showed that GPT-3, with 175 billion parameters, performs new tasks from a handful of examples in its prompt, without any change to its weights.",
+      "people": [
+        "Tom Brown"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Dense passage retrieval",
+      "detail": "Karpukhin and colleagues trained question and passage encoders contrastively and outperformed keyword search for open-domain question answering.",
+      "people": [
+        "Vladimir Karpukhin"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Retrieval-augmented generation",
+      "detail": "Lewis and colleagues combined a dense retriever with a sequence-to-sequence generator trained end to end, and named the approach.",
+      "people": [
+        "Patrick Lewis"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Grammar-constrained generation",
+      "detail": "Willard and Louf showed how to restrict sampling efficiently to strings that match a regular expression or grammar, the technique behind reliable JSON output.",
+      "people": [
+        "Brandon Willard",
+        "Rémi Louf"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Lost in the middle",
+      "detail": "Liu and colleagues found that models use information at the beginning and end of a long context much better than information in the middle.",
+      "people": [
+        "Nelson Liu"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Information Retrieval",
+      "authors": "Christopher D. Manning, Prabhakar Raghavan and Hinrich Schütze",
+      "year": 2008,
+      "note": "Indexing, ranking, tf–idf and evaluation — the foundations under every retrieval pipeline; free online."
+    },
+    {
+      "title": "Pretrained Transformers for Text Ranking: BERT and Beyond",
+      "authors": "Jimmy Lin, Rodrigo Nogueira and Andrew Yates",
+      "year": 2021,
+      "note": "Neural retrieval and reranking, dense and sparse, explained systematically."
+    },
+    {
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "authors": "Yunfan Gao and colleagues",
+      "year": 2023,
+      "note": "A map of RAG architectures, retrieval and generation techniques, and evaluation."
+    },
+    {
+      "title": "A Survey on Hallucination in Large Language Models",
+      "authors": "Lei Huang and colleagues",
+      "year": 2023,
+      "note": "The causes, detection and mitigation of hallucination."
+    }
+  ],
   "next": [
     "agents"
   ]

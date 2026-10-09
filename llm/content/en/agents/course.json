@@ -7,17 +7,30 @@
   "order": 150,
   "tagline": "Function calling, agent loops, planning, memory, code execution, multi-agent systems and agent security",
   "summary": "Language models become agents when they can act: call tools, run code, browse and operate computers over many steps. This course covers function calling, agent loops and planning, memory and context management, code and computer use, multi-agent systems, the evaluation of agents, and the security risks of autonomous action.",
-  "overview": [],
+  "overview": [
+    "A language model on its own can only produce text. Given tools — a search engine, a code interpreter, an API, a browser, a computer’s mouse and keyboard — and run in a loop that feeds the results back, it becomes an agent that can carry out tasks of many steps. Agents are where much current work on language models is directed, and where their failures cost most. This course covers how tool use works, how agent loops are built and evaluated, and why giving a model the ability to act raises new security problems.",
+    "It starts with function calling: tool schemas, calling conventions, protocols that connect models to tools, and how models are trained to call them. Agent loops such as ReAct interleave reasoning with actions and observations; planning, task decomposition, reflection and recovery from errors extend them to long tasks. Memory and context management decide what an agent keeps in its limited context — the practice now called context engineering. Code agents that edit and test real software, and agents that browse the web or operate graphical interfaces, are the two most developed applications. Multi-agent systems divide work between orchestrators and workers, and the last chapter evaluates agents and their security: reliability over many steps, prompt injection through untrusted content, and limits on what an agent is permitted to do.",
+    "An agent’s errors compound: a step that succeeds 95 per cent of the time succeeds only about a third of the time when it must be repeated twenty times in a row (0.95²⁰ ≈ 0.36). Design for failure: check results, keep people in the loop for irreversible actions, and treat every piece of retrieved content as potentially hostile input."
+  ],
   "prerequisites": [
     "prompting-rag",
     "reasoning"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define tools with schemas, and explain how models are trained to call them.",
+    "Build an agent loop that interleaves reasoning, actions and observations.",
+    "Decompose tasks into plans and subgoals, and design reflection and error recovery.",
+    "Manage an agent’s context and memory with summarisation, retrieval and context engineering.",
+    "Explain how code agents generate, run and test code, and how they are evaluated on software-engineering benchmarks.",
+    "Describe web and computer-use agents, and the perception and control problems they face.",
+    "Design multi-agent systems with orchestrators and workers, and judge when they help.",
+    "Evaluate agent reliability, and defend against prompt injection with sandboxing and least-privilege permissions."
+  ],
   "chapters": [
     {
       "slug": "function-calling",
       "title": "Function calling and tools",
-      "summary": "Tool schemas, calling conventions and training models to use tools.",
+      "summary": "Tool schemas, calling conventions, protocols such as MCP, and training models to use tools.",
       "requires": [
         "prompting-rag/structured-output"
       ]
@@ -82,7 +95,105 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2021,
+      "title": "Codex",
+      "detail": "Chen and colleagues at OpenAI fine-tuned GPT models on public code and introduced HumanEval, a benchmark of programming problems checked by unit tests.",
+      "people": [
+        "Mark Chen"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "WebGPT",
+      "detail": "Nakano and colleagues at OpenAI fine-tuned GPT-3 to answer questions by searching and browsing the web, citing its sources.",
+      "people": [
+        "Reiichiro Nakano"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "ReAct",
+      "detail": "Yao and colleagues interleaved reasoning traces with actions and observations, the pattern behind most agent loops.",
+      "people": [
+        "Shunyu Yao"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Toolformer",
+      "detail": "Schick and colleagues at Meta trained a model to decide for itself when to call tools such as a calculator or a search engine, learning from examples it generated itself.",
+      "people": [
+        "Timo Schick"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Indirect prompt injection",
+      "detail": "Greshake and colleagues showed that instructions hidden in web pages or documents can take over applications that pass such content to a language model.",
+      "people": [
+        "Kai Greshake"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Function calling in APIs",
+      "detail": "OpenAI added function calling to its API, letting developers describe tools with JSON schemas; other providers soon followed.",
+      "people": []
+    },
+    {
+      "year": 2023,
+      "title": "SWE-bench",
+      "detail": "Jimenez and colleagues built a benchmark of real GitHub issues that an agent must resolve by editing a repository until its tests pass.",
+      "people": [
+        "Carlos Jimenez"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Computer use",
+      "detail": "Anthropic released a model that operates a computer from screenshots, moving the pointer and typing as a person would.",
+      "people": []
+    },
+    {
+      "year": 2024,
+      "title": "The Model Context Protocol",
+      "detail": "Anthropic published an open protocol for connecting models to tools and data sources, which was soon widely adopted.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "authors": "Shunyu Yao and colleagues",
+      "year": 2023,
+      "note": "The paper that defined the agent loop."
+    },
+    {
+      "title": "Building Effective Agents",
+      "authors": "Erik Schluntz and Barry Zhang (Anthropic)",
+      "year": 2024,
+      "note": "A practitioner’s guide to workflows and agents, and to when simple patterns suffice."
+    },
+    {
+      "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+      "authors": "Carlos E. Jimenez and colleagues",
+      "year": 2024,
+      "note": "The benchmark that made software engineering a standard test of agents."
+    },
+    {
+      "title": "Not What You’ve Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+      "authors": "Kai Greshake and colleagues",
+      "year": 2023,
+      "note": "The paper that defined indirect prompt injection."
+    },
+    {
+      "title": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+      "authors": "Zhiheng Xi and colleagues",
+      "year": 2023,
+      "note": "A broad survey of agent architectures and applications."
+    }
+  ],
   "next": []
 }

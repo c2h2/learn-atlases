@@ -1,0 +1,116 @@
+{
+  "milestones": [
+    {
+      "title": "马尔可夫的字母链",
+      "detail": "马尔可夫（Markov）证明，普希金《叶甫盖尼·奥涅金》中的每个字母都依赖于它前面的字母，这是第一个关于语言的统计模型。"
+    },
+    {
+      "title": "信息论",
+      "detail": "香农（Shannon）创立了信息论，定义了熵，并把英语建模为一个统计信源——语言模型至今仍在这一框架中训练和评分。"
+    },
+    {
+      "title": "计算机器与智能",
+      "detail": "图灵（Turing）提出，以机器能否进行与人无法区分的对话来判断它能否思考——即“模仿游戏”，后来被称为图灵测试。"
+    },
+    {
+      "title": "达特茅斯会议",
+      "detail": "由 McCarthy、Minsky、Rochester 与香农（Shannon）倡议的达特茅斯学院夏季研讨会，使“人工智能”成为一个领域的名称。"
+    },
+    {
+      "title": "感知机",
+      "detail": "Rosenblatt 的感知机能在出错后调整权重、学会对简单模式分类，是第一个可训练的神经网络。"
+    },
+    {
+      "title": "ELIZA",
+      "detail": "Weizenbaum 的 ELIZA 只用简单的模式匹配模仿心理治疗师，许多用户却认为它理解了自己——这早早表明人们多么容易认为机器具有心智。"
+    },
+    {
+      "title": "霍普菲尔德网络",
+      "detail": "霍普菲尔德（Hopfield）证明，具有对称连接的网络可以把记忆存储为一个能量函数的稳定状态。"
+    },
+    {
+      "title": "反向传播",
+      "detail": "Rumelhart、辛顿（Hinton）与 Williams 证明，反向传播能训练多层网络学会自己的内部表示。"
+    },
+    {
+      "title": "统计机器翻译",
+      "detail": "IBM 的 Brown 等人利用法英对照的议会记录、以概率模型学习翻译，用从数据中学到的统计规律取代了手写规则。"
+    },
+    {
+      "title": "长短期记忆网络",
+      "detail": "Hochreiter 与 Schmidhuber 的 LSTM 让循环网络能够在长序列中传递信息，在 Transformer 出现之前一直是最主要的序列模型。"
+    },
+    {
+      "title": "神经语言模型",
+      "detail": "Bengio 等人用基于学习所得词向量的神经网络预测下一个词，这是当今语言模型的先驱。"
+    },
+    {
+      "title": "深度信念网络",
+      "detail": "辛顿（Hinton）、Osindero 与 Teh 逐层训练深度网络，重新唤起了人们对深度学习的兴趣。"
+    },
+    {
+      "title": "AlexNet",
+      "detail": "一个在两块 GPU 上训练的深度卷积网络以巨大优势赢得 ImageNet 竞赛，深度学习从此成为感知任务的主导方法。"
+    },
+    {
+      "title": "word2vec",
+      "detail": "Mikolov 等人用浅层网络从数十亿词中学习词向量，这些向量的几何结构捕捉到了词义与类比关系。"
+    },
+    {
+      "title": "注意力机制",
+      "detail": "Bahdanau、Cho 与 Bengio 让翻译模型能够关注源语句中的每一个词，这一机制正是 Transformer 的核心。"
+    },
+    {
+      "title": "AlphaGo",
+      "detail": "DeepMind 的 AlphaGo 把深度网络与树搜索、强化学习结合起来，在围棋比赛中击败了李世石。"
+    },
+    {
+      "title": "Transformer",
+      "detail": "Vaswani 等人提出了完全基于注意力的 Transformer，它成为语言模型的架构。"
+    },
+    {
+      "title": "从人类偏好中学习",
+      "detail": "Christiano 等人用从人类比较中学到的奖励模型训练智能体，这一方法后来被用于对齐语言模型。"
+    },
+    {
+      "title": "BERT",
+      "detail": "Devlin 等人的 BERT 使“先在无标注文本上预训练 Transformer、再针对每个任务微调”成为自然语言处理的标准做法。"
+    },
+    {
+      "title": "GPT-3",
+      "detail": "一个1750亿参数的语言模型能从提示中的示例学会新任务，展示了仅凭规模所能达到的效果。"
+    },
+    {
+      "title": "缩放定律",
+      "detail": "Kaplan 等人发现，语言模型的损失随参数、数据和计算量按幂律可预测地下降。"
+    },
+    {
+      "title": "Chinchilla",
+      "detail": "Hoffmann 等人证明参数和训练数据应当同步扩大，改变了模型的训练方式。"
+    },
+    {
+      "title": "InstructGPT",
+      "detail": "OpenAI 用人类反馈微调 GPT-3，使其遵循指令；这一方法是第一批对话助手的基础。"
+    },
+    {
+      "title": "ChatGPT",
+      "detail": "OpenAI 以免费研究预览的形式发布 ChatGPT，据估计大约两个月内用户就达到一亿。"
+    },
+    {
+      "title": "GPT-4",
+      "detail": "OpenAI 的 GPT-4 能同时接受图像和文本输入，在专业和学术考试中表现出色；其技术报告没有公开架构与训练细节。"
+    },
+    {
+      "title": "开放权重模型",
+      "detail": "Meta 的 LLaMA，以及随后的 Llama 2、Mistral、通义千问（Qwen）等众多模型，把能力很强的语言模型交到了世界各地的研究者和开发者手中。"
+    },
+    {
+      "title": "人工智能安全峰会",
+      "detail": "在布莱切利园，包括美国和中国在内的28个国家以及欧盟签署宣言，承认前沿人工智能的风险以及开展国际合作的必要。"
+    },
+    {
+      "title": "神经网络获诺贝尔奖",
+      "detail": "诺贝尔物理学奖授予霍普菲尔德（Hopfield）和辛顿（Hinton），表彰他们对神经网络的奠基性工作；化学奖的一半授予 Hassabis 与 Jumper，表彰他们用 AlphaFold 预测蛋白质结构。"
+    }
+  ]
+}

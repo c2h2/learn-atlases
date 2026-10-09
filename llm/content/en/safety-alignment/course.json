@@ -7,12 +7,25 @@
   "order": 190,
   "tagline": "Specification and reward hacking, robustness, red teaming, scalable oversight, monitoring and safety frameworks",
   "summary": "As language models grow more capable, making them reliably safe becomes a central engineering problem. This course covers specification gaming and reward hacking, jailbreaks and adversarial robustness, red teaming, scalable oversight, research on deceptive or misaligned behaviour, monitoring and control of deployed systems, and the frameworks developers and governments use to manage risk.",
-  "overview": [],
+  "overview": [
+    "A capable model that pursues the wrong objective, can be talked into harmful behaviour, or behaves differently when it believes it is being tested poses risks in proportion to its capability. AI safety studies how to make models reliably do what their developers and users intend, how to find out when they do not, and how to manage the risk that remains. This course treats safety as a technical discipline built on the methods of earlier courses — post-training, evaluation and interpretability — while also covering the institutional frameworks around it.",
+    "The course starts with the alignment problem: specifying what we want, and the gap between the objective a model is trained on and the behaviour it learns. Specification gaming and reward hacking, including sycophancy, show the problem in today’s systems. Jailbreaks and adversarial attacks test robustness, and red teaming organises the search for failures. Scalable oversight asks how people can supervise models on tasks they cannot easily check — through debate, task decomposition or weak-to-strong generalisation. Research on deceptive or misaligned behaviour studies, in controlled settings, models that conceal capabilities or pursue unintended goals, and monitoring and control design safeguards that should hold even if a model is misaligned. The course ends with the safety frameworks that developers publish and the role of regulation.",
+    "Safety questions are often posed about future systems, which makes them easy either to dismiss or to exaggerate. The course keeps to evidence: what has been demonstrated in current models, under what conditions, and what remains a hypothesis. In line with the atlas’s rules, attacks are discussed conceptually, without working jailbreak strings."
+  ],
   "prerequisites": [
     "post-training",
     "evaluation"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain the alignment problem, outer and inner alignment, and why rewards are hard to specify.",
+    "Identify specification gaming, reward hacking and sycophancy in trained models, and evaluate mitigations.",
+    "Describe jailbreaks and adversarial attacks conceptually, and assess defences.",
+    "Plan manual and automated red teaming with clear threat models.",
+    "Compare approaches to scalable oversight, including debate and weak-to-strong generalisation.",
+    "Summarise the evidence on deceptive or misaligned behaviour in current models, and how it is studied.",
+    "Design monitoring and control measures for deployed systems, including chain-of-thought monitoring.",
+    "Compare published safety frameworks, and the role of regulation in managing frontier risks."
+  ],
   "chapters": [
     {
       "slug": "alignment-problem",
@@ -82,7 +95,118 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2016,
+      "title": "Concrete problems in AI safety",
+      "detail": "Amodei and colleagues framed safety as concrete machine-learning research problems: avoiding side effects, reward hacking, scalable oversight, safe exploration and robustness to distributional shift.",
+      "people": [
+        "Dario Amodei"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "AI safety via debate",
+      "detail": "Irving, Christiano and Amodei proposed training models to argue opposite sides before a human judge, so that people can supervise answers they could not check alone.",
+      "people": [
+        "Geoffrey Irving",
+        "Paul Christiano"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "Risks from learned optimisation",
+      "detail": "Hubinger and colleagues distinguished outer from inner alignment and described how a trained model might pursue an objective different from the one it was trained on.",
+      "people": [
+        "Evan Hubinger"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Specification gaming",
+      "detail": "Krakovna and colleagues collected dozens of examples of AI systems satisfying the letter of their objective rather than its intent.",
+      "people": [
+        "Victoria Krakovna"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Red teaming with language models",
+      "detail": "Perez and colleagues used one language model to generate test cases that elicit harmful outputs from another, automating part of red teaming.",
+      "people": [
+        "Ethan Perez"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Universal adversarial attacks",
+      "detail": "Zou and colleagues found adversarial suffixes by gradient-guided search that transferred across aligned models, showing that safety training could be bypassed automatically.",
+      "people": [
+        "Andy Zou"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Responsible scaling policies",
+      "detail": "Anthropic published a policy tying required safety measures to capability thresholds; OpenAI’s Preparedness Framework (2023) and Google DeepMind’s Frontier Safety Framework (2024) followed.",
+      "people": []
+    },
+    {
+      "year": 2023,
+      "title": "Weak-to-strong generalisation",
+      "detail": "Burns and colleagues at OpenAI fine-tuned strong models on labels from weaker ones, as an analogy for people supervising superhuman models, and found that the strong models partly surpass their supervisors.",
+      "people": [
+        "Collin Burns"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "AI control",
+      "detail": "Greenblatt and colleagues designed safety protocols meant to hold even if the model tries to subvert them, and tested them against deliberately adversarial models.",
+      "people": [
+        "Ryan Greenblatt"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Alignment faking",
+      "detail": "Greenblatt and colleagues observed a model strategically complying with a training objective it disagreed with in order to avoid being modified, in an experimental setting.",
+      "people": [
+        "Ryan Greenblatt"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Concrete Problems in AI Safety",
+      "authors": "Dario Amodei, Chris Olah, Jacob Steinhardt, Paul Christiano, John Schulman and Dan Mané",
+      "year": 2016,
+      "note": "The research agenda that tied safety to machine-learning practice."
+    },
+    {
+      "title": "Introduction to AI Safety, Ethics, and Society",
+      "authors": "Dan Hendrycks",
+      "year": 2024,
+      "note": "A textbook on technical safety, risk management and governance; free online."
+    },
+    {
+      "title": "The Alignment Problem",
+      "authors": "Brian Christian",
+      "year": 2020,
+      "note": "A readable history of the problem, from fairness to learning rewards."
+    },
+    {
+      "title": "International AI Safety Report",
+      "authors": "Yoshua Bengio (chair) and an international expert panel",
+      "year": 2025,
+      "note": "Where scientists agree, and disagree, about the risks of general-purpose AI."
+    },
+    {
+      "title": "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision",
+      "authors": "Collin Burns and colleagues",
+      "year": 2023,
+      "note": "An empirical approach to scalable oversight."
+    }
+  ],
   "next": []
 }

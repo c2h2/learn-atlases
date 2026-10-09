@@ -7,12 +7,24 @@
   "order": 40,
   "tagline": "Text as data, tokenisation, n-gram language models, perplexity and word embeddings",
   "summary": "A language model assigns probabilities to text. This course starts from text as data, builds tokenisers, n-gram language models and their evaluation by perplexity, and learns word embeddings — the ideas on which neural language models are built.",
-  "overview": [],
+  "overview": [
+    "Long before a neural network is trained, a language model depends on choices about text itself — what counts as a symbol, how text is cut into tokens, how predictions are scored — and those choices shape everything after. This course studies text as data and the classical language models that came before neural networks: the statistics of words, tokenisers from words to bytes, n-gram models and smoothing, perplexity, and word embeddings learned from co-occurrence.",
+    "The course follows the pipeline of a modern model in miniature. Text arrives as Unicode characters and is segmented by a tokeniser, usually a subword method such as byte-pair encoding; an n-gram model estimates the probability of each token from the few before it, and perplexity measures how well it predicts held-out text. Distributional semantics turns co-occurrence counts into vectors, word2vec and GloVe learn them efficiently, and simple classifiers built on such representations solve tasks such as sentiment and topic classification. A last chapter introduces the linguistic structure — morphology, syntax and meaning — that classical NLP made explicit and large models learn implicitly.",
+    "The ideas are elementary but their consequences are not: tokenisation explains why models struggle to count letters and why some languages cost more tokens than others, and the sparsity of n-gram counts is the problem that neural language models solved. Build each model yourself on a small corpus; watching a trigram model generate text is good preparation for the rest of the atlas."
+  ],
   "prerequisites": [
     "math-for-ml",
     "ml-fundamentals"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe text as data — Unicode, characters and words — and the statistical regularities of language such as Zipf’s law.",
+    "Implement and compare tokenisers, including byte-pair encoding, WordPiece, unigram and byte-level tokenisers.",
+    "Build n-gram language models with smoothing, and generate text from them.",
+    "Evaluate language models by cross-entropy, perplexity and bits per byte, and compare models with different tokenisers fairly.",
+    "Explain distributional semantics, train word embeddings with word2vec or GloVe, and interpret the geometry of embedding spaces.",
+    "Build text classifiers from bag-of-words features and embeddings.",
+    "Describe morphology, syntax and semantics, and the classical NLP tasks of tagging, parsing and named-entity recognition."
+  ],
   "chapters": [
     {
       "slug": "text-as-data",
@@ -73,8 +85,117 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1913,
+      "title": "Markov’s chains of letters",
+      "detail": "Markov counted vowels and consonants in the first 20,000 letters of Pushkin’s *Eugene Onegin* and showed that each letter depends on the one before — the first Markov chain applied to language.",
+      "people": [
+        "Andrey Markov"
+      ]
+    },
+    {
+      "year": 1935,
+      "title": "Zipf’s law",
+      "detail": "In *The Psycho-Biology of Language* Zipf documented that a word’s frequency is roughly inversely proportional to its rank, which makes most words rare in any corpus.",
+      "people": [
+        "George Kingsley Zipf"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "The entropy of English",
+      "detail": "Shannon asked people to guess the next letter of a text and estimated that printed English carries roughly one bit per letter — an early version of the bits-per-character that language models now report.",
+      "people": [
+        "Claude Shannon"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "The distributional hypothesis",
+      "detail": "Harris argued that words occurring in similar contexts have similar meanings; Firth’s 1957 slogan ‘You shall know a word by the company it keeps’ made the idea famous.",
+      "people": [
+        "Zellig Harris",
+        "John Rupert Firth"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "Kneser–Ney smoothing",
+      "detail": "Kneser and Ney smoothed n-gram estimates by backing off to how many different contexts a word appears in, the best-performing n-gram method in later comparisons.",
+      "people": [
+        "Reinhard Kneser",
+        "Hermann Ney"
+      ]
+    },
+    {
+      "year": 2003,
+      "title": "A neural probabilistic language model",
+      "detail": "Bengio and colleagues replaced n-gram counts with a neural network over learned word vectors, attacking the curse of dimensionality that limits n-gram models.",
+      "people": [
+        "Yoshua Bengio"
+      ]
+    },
+    {
+      "year": 2013,
+      "title": "word2vec",
+      "detail": "Mikolov and colleagues trained word embeddings with the skip-gram and CBOW objectives on billions of words, and showed that vector arithmetic captures analogies such as king − man + woman ≈ queen.",
+      "people": [
+        "Tomas Mikolov"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "GloVe",
+      "detail": "Pennington, Socher and Manning fitted word vectors to global co-occurrence statistics, connecting prediction-based embeddings with matrix factorisation.",
+      "people": [
+        "Jeffrey Pennington",
+        "Richard Socher",
+        "Christopher Manning"
+      ]
+    },
+    {
+      "year": 2016,
+      "title": "Subword units",
+      "detail": "Sennrich, Haddow and Birch adapted byte-pair encoding, a 1994 compression algorithm by Gage, to split rare words into subwords for neural machine translation — the tokenisation method of most language models since.",
+      "people": [
+        "Rico Sennrich",
+        "Philip Gage"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Speech and Language Processing",
+      "authors": "Daniel Jurafsky and James H. Martin",
+      "year": 2024,
+      "note": "The standard NLP textbook: n-grams, tokenisation, embeddings, classification and linguistic structure; the third-edition drafts are free online."
+    },
+    {
+      "title": "Foundations of Statistical Natural Language Processing",
+      "authors": "Christopher D. Manning and Hinrich Schütze",
+      "year": 1999,
+      "note": "The classic account of corpus statistics, n-gram models and smoothing."
+    },
+    {
+      "title": "Introduction to Natural Language Processing",
+      "authors": "Jacob Eisenstein",
+      "year": 2019,
+      "note": "Classification, language models, embeddings and linguistic structure, with a machine-learning emphasis."
+    },
+    {
+      "title": "An Empirical Study of Smoothing Techniques for Language Modeling",
+      "authors": "Stanley F. Chen and Joshua Goodman",
+      "year": 1998,
+      "note": "The careful comparison of n-gram smoothing methods that established Kneser–Ney as the best."
+    },
+    {
+      "title": "Neural Network Methods for Natural Language Processing",
+      "authors": "Yoav Goldberg",
+      "year": 2017,
+      "note": "A concise bridge from classical NLP features to neural models and embeddings."
+    }
+  ],
   "next": [
     "sequence-models"
   ]

@@ -7,12 +7,24 @@
   "order": 170,
   "tagline": "Benchmarks, contamination, human and model judges, capability evaluations and the statistics of evaluation",
   "summary": "Knowing what a model can do is surprisingly hard. This course covers benchmark evaluation and its pitfalls of contamination and saturation, human preference evaluation and arenas, models as judges, capability and dangerous-capability evaluations, robustness and calibration, and the statistics needed to compare models honestly.",
-  "overview": [],
+  "overview": [
+    "Every claim about a language model — that it is better, safer or capable of something new — rests on an evaluation, and evaluating general-purpose models is unusually hard. Benchmarks saturate within months, leak into training data and reward narrow skills; human judgements are expensive and biased; models used as judges bring biases of their own; and small changes to a prompt can move scores more than real improvements do. This course teaches how to measure models well, and how to read other people’s measurements critically.",
+    "It opens with principles — what to measure, construct validity, and the gap between benchmarks and real use — and then surveys benchmarks of knowledge, reasoning, coding and multilingual ability and how they are scored. Contamination and saturation explain why benchmark numbers decay. Human evaluation and arenas turn pairwise preferences into ratings with Elo and Bradley–Terry models; LLM-as-a-judge scales this up, with its biases towards particular positions, longer answers and its own style. Capability evaluations elicit what a model can do, including dangerous capabilities relevant to safety, and the final chapter supplies the statistics: confidence intervals, significance, variance across seeds and prompts, and calibration.",
+    "The most useful habit in evaluation is to report uncertainty. A difference of one point on a benchmark of a thousand questions is often within noise; before concluding that one model is better, estimate how much its score would change with a different sample of questions, prompts or seeds."
+  ],
   "prerequisites": [
     "pretraining",
     "ml-fundamentals"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define what an evaluation should measure, and assess construct validity and the gap between benchmark and real-world performance.",
+    "Describe major benchmarks of knowledge, reasoning, coding and multilingual ability, and how each is scored.",
+    "Detect and mitigate test-set contamination, and explain the life cycle of benchmarks.",
+    "Run pairwise human evaluations, compute Elo and Bradley–Terry ratings, and recognise their biases.",
+    "Use language models as judges with rubrics, and measure and correct position and length bias.",
+    "Design capability and dangerous-capability evaluations, including agentic tasks.",
+    "Report evaluation results with confidence intervals and significance tests, and measure calibration."
+  ],
   "chapters": [
     {
       "slug": "evaluation-principles",
@@ -73,8 +85,104 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2002,
+      "title": "BLEU",
+      "detail": "Papineni and colleagues at IBM scored machine translation by its n-gram overlap with reference translations, the first automatic metric widely adopted in NLP.",
+      "people": [
+        "Kishore Papineni"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "GLUE",
+      "detail": "Wang and colleagues combined nine language-understanding tasks into a single benchmark with a public leaderboard; models soon surpassed its human baseline, prompting the harder SuperGLUE (2019).",
+      "people": [
+        "Alex Wang"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "MMLU",
+      "detail": "Hendrycks and colleagues tested knowledge in 57 subjects with multiple-choice questions, for several years the standard benchmark of knowledge.",
+      "people": [
+        "Dan Hendrycks"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "HELM",
+      "detail": "Liang and colleagues at Stanford evaluated many models on many scenarios and metrics at once, making trade-offs between accuracy, robustness and fairness visible.",
+      "people": [
+        "Percy Liang"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Evaluations for extreme risks",
+      "detail": "Shevlane and colleagues argued that developers should evaluate models before deployment for dangerous capabilities and for the propensity to use them.",
+      "people": [
+        "Toby Shevlane"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "LLM-as-a-judge and Chatbot Arena",
+      "detail": "Zheng and colleagues measured how well strong models agree with human judges, and ranked chat models from crowdsourced pairwise votes.",
+      "people": [
+        "Lianmin Zheng"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "GPQA",
+      "detail": "Rein and colleagues wrote graduate-level science questions that skilled non-experts could not answer even with web search, to keep benchmarks ahead of models.",
+      "people": [
+        "David Rein"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Error bars for evaluations",
+      "detail": "Miller set out how to compute confidence intervals and paired comparisons for language-model evaluations, treating questions as a sample from a larger population.",
+      "people": [
+        "Evan Miller"
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "Humanity’s Last Exam",
+      "detail": "Experts in many fields contributed questions at the frontier of their disciplines, designed to stay hard for the strongest models.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Holistic Evaluation of Language Models",
+      "authors": "Percy Liang and colleagues",
+      "year": 2023,
+      "note": "A framework and large-scale study of evaluating language models across scenarios and metrics."
+    },
+    {
+      "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+      "authors": "Lianmin Zheng and colleagues",
+      "year": 2023,
+      "note": "Model judges and crowdsourced pairwise ratings, with their biases."
+    },
+    {
+      "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
+      "authors": "Evan Miller",
+      "year": 2024,
+      "note": "A short, practical guide to the statistics of evaluation."
+    },
+    {
+      "title": "Model Evaluation for Extreme Risks",
+      "authors": "Toby Shevlane and colleagues",
+      "year": 2023,
+      "note": "Why and how to evaluate dangerous capabilities."
+    }
+  ],
   "next": [
     "safety-alignment",
     "interpretability"

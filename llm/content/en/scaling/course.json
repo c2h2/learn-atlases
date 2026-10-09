@@ -7,11 +7,23 @@
   "order": 110,
   "tagline": "Scaling laws, compute budgets, parallelism, low-precision training and hardware",
   "summary": "Language models improve predictably with scale. This course studies empirical scaling laws and compute-optimal training, estimates the FLOPs and memory of training runs, and explains how data, tensor, pipeline and expert parallelism, sharded optimisers and low-precision arithmetic spread training across thousands of accelerators.",
-  "overview": [],
+  "overview": [
+    "One of the most consequential empirical findings about language models is that their loss falls smoothly and predictably as parameters, data and compute grow. Scaling laws turned model building into a planning problem — how big a model, how many tokens, how much compute — and acting on the answers requires training runs on thousands of accelerators for weeks or months. This course covers both halves: the empirical science of scaling, and the systems engineering that makes very large training runs possible.",
+    "The first chapters fit and interpret scaling laws and derive compute-optimal allocations in the style of Chinchilla, including why practitioners now deliberately train smaller models for longer to make inference cheaper. The arithmetic of a training step — about six floating-point operations per parameter per token, plus activation and optimiser memory — gives the budget, and the accelerator chapters explain what limits throughput: memory bandwidth, arithmetic intensity and the roofline model. Low-precision formats such as bf16 and fp8 stretch the hardware further. Parallelism then spreads the work: data parallelism with all-reduce, sharded optimisers (ZeRO, FSDP), tensor and pipeline parallelism, and expert parallelism for mixtures of experts. The last chapter covers the engineering of the largest runs: networks, failures, checkpointing and monitoring.",
+    "Scaling laws are empirical regularities fitted over limited ranges, not laws of nature, and their exponents depend on data, architecture and how they were measured. Practise the back-of-the-envelope estimates until they are automatic — FLOPs, memory per device, time per step — because they decide whether a plan is feasible before any code runs."
+  ],
   "prerequisites": [
     "pretraining"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Fit power laws relating loss to parameters, data and compute, and judge the range over which they hold.",
+    "Derive compute-optimal model and data sizes, and explain when to train smaller models for longer.",
+    "Estimate the FLOPs, memory and wall-clock time of a training run.",
+    "Analyse accelerator performance with arithmetic intensity and the roofline model.",
+    "Explain floating-point formats and the practice of bf16 and fp8 training.",
+    "Compare data, tensor, pipeline and expert parallelism and sharded optimisers, and combine them for a given model and cluster.",
+    "Describe the engineering of large training runs: networking, fault tolerance and checkpointing."
+  ],
   "chapters": [
     {
       "slug": "scaling-laws",
@@ -79,8 +91,102 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2017,
+      "title": "Deep learning scaling is predictable",
+      "detail": "Hestness and colleagues at Baidu measured power-law relations between training-set size and error across translation, language modelling, image classification and speech recognition.",
+      "people": [
+        "Joel Hestness"
+      ]
+    },
+    {
+      "year": 2017,
+      "title": "Mixed-precision training",
+      "detail": "Micikevicius and colleagues trained networks in 16-bit floating point with a 32-bit master copy of the weights and loss scaling, nearly halving memory without losing accuracy.",
+      "people": [
+        "Paulius Micikevicius"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "GPipe",
+      "detail": "Huang and colleagues split a model into stages on different devices and kept them busy by pipelining micro-batches through them.",
+      "people": [
+        "Yanping Huang"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "Megatron-LM",
+      "detail": "Shoeybi and colleagues at NVIDIA split the matrices of each Transformer layer across GPUs — the tensor parallelism used to train most large models.",
+      "people": [
+        "Mohammad Shoeybi"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "ZeRO",
+      "detail": "Rajbhandari and colleagues at Microsoft sharded optimiser states, gradients and parameters across data-parallel workers, removing the memory redundancy of data parallelism.",
+      "people": [
+        "Samyam Rajbhandari"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Scaling laws for neural language models",
+      "detail": "Kaplan and colleagues at OpenAI found that language-model loss falls as a power law in parameters, data and compute over many orders of magnitude.",
+      "people": [
+        "Jared Kaplan"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Chinchilla",
+      "detail": "Hoffmann and colleagues at DeepMind showed that large models had been undertrained: for a fixed compute budget, parameters and training tokens should grow in proportion — roughly twenty tokens per parameter.",
+      "people": [
+        "Jordan Hoffmann"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Training on sixteen thousand GPUs",
+      "detail": "Meta’s Llama 3 report described training a 405-billion-parameter model on up to 16,000 H100 GPUs, including how often hardware failures interrupted the run.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "How to Scale Your Model",
+      "authors": "Jacob Austin and colleagues (Google DeepMind)",
+      "year": 2025,
+      "note": "A free online book on accelerator arithmetic, parallelism and the cost of training and serving Transformers."
+    },
+    {
+      "title": "The Ultra-Scale Playbook: Training LLMs on GPU Clusters",
+      "authors": "Nouamane Tazi and colleagues (Hugging Face)",
+      "year": 2025,
+      "note": "A practical, experimentally grounded guide to data, tensor, pipeline, context and expert parallelism."
+    },
+    {
+      "title": "Scaling Laws for Neural Language Models",
+      "authors": "Jared Kaplan and colleagues",
+      "year": 2020,
+      "note": "The paper that established power-law scaling of language-model loss."
+    },
+    {
+      "title": "Training Compute-Optimal Large Language Models",
+      "authors": "Jordan Hoffmann and colleagues",
+      "year": 2022,
+      "note": "The Chinchilla paper: three approaches to compute-optimal allocation that agree."
+    },
+    {
+      "title": "Programming Massively Parallel Processors",
+      "authors": "Wen-mei W. Hwu, David B. Kirk and Izzat El Hajj",
+      "year": 2022,
+      "note": "GPU architecture and CUDA programming, for understanding what limits accelerator performance (fourth edition)."
+    }
+  ],
   "next": [
     "inference"
   ]

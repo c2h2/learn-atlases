@@ -1,17 +1,29 @@
 {
   "slug": "ml-fundamentals",
-  "title": "Machine Learning Fundamentals",
+  "title": "Machine Learning Basics",
   "full_title": "Machine Learning Fundamentals",
   "area": "foundations",
   "level": 1,
   "order": 20,
   "tagline": "Supervised learning, loss functions, generalisation, regularisation and evaluation",
   "summary": "Before neural networks come the ideas that govern all of machine learning: learning a function from examples, choosing a loss, fitting by optimisation and making sure the result generalises. This course develops them with linear and logistic regression, evaluation metrics and the bias–variance trade-off.",
-  "overview": [],
+  "overview": [
+    "Machine learning turns examples into functions, and a small set of ideas decides whether that works: a hypothesis class, a loss that says what a good prediction is, an optimiser that fits the parameters, and the gap between performance on the training data and on new data. This course develops those ideas with the simplest models that show them clearly — linear and logistic regression — so that each later model in the atlas can be read as a variation on the same pattern.",
+    "The chapters move from the learning problem itself — data, risk and the kinds of supervision, including the self-supervision that trains language models — to least squares and its probabilistic reading, and to classification with the logistic and softmax functions and the cross-entropy loss. Generalisation follows, with the bias–variance trade-off and its modern twist, double descent; then regularisation, the evaluation of classifiers, and finally the idea that good features can themselves be learned.",
+    "The difficulty here is statistical rather than computational: a model that fits its training data tells you little until it has been measured fairly on data it has not seen. Keep a clean split between training, validation and test data in every exercise, and ask of every number how much it would change on a different sample."
+  ],
   "prerequisites": [
     "math-for-ml"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Formulate a learning problem in terms of data, a hypothesis class, a loss and the expected risk, and distinguish supervised, unsupervised and self-supervised learning.",
+    "Fit linear regression by least squares, solve the normal equations and interpret the solution as maximum likelihood under Gaussian noise.",
+    "Train logistic and softmax regression with the cross-entropy loss, and derive its gradient.",
+    "Diagnose underfitting and overfitting with training, validation and test sets, and explain the bias–variance trade-off and double descent.",
+    "Apply weight decay, early stopping and data augmentation, and relate weight decay to a Gaussian prior.",
+    "Evaluate classifiers with accuracy, precision, recall, calibration and confidence intervals, and compare models fairly.",
+    "Explain the difference between engineered features, kernels and learned representations."
+  ],
   "chapters": [
     {
       "slug": "learning-problem",
@@ -73,8 +85,98 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1936,
+      "title": "Linear discriminant analysis",
+      "detail": "Fisher separated three species of iris with a linear combination of four measurements, introducing both a classical classifier and one of the best-known datasets.",
+      "people": [
+        "Ronald Fisher"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Logistic regression",
+      "detail": "Cox set out the regression analysis of binary outcomes through the logistic function, the model that softmax classifiers and the output layers of language models generalise.",
+      "people": [
+        "David Cox"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Ridge regression",
+      "detail": "Hoerl and Kennard stabilised least squares by penalising the size of the coefficients, the idea now called weight decay.",
+      "people": [
+        "Arthur Hoerl",
+        "Robert Kennard"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "Vapnik–Chervonenkis theory",
+      "detail": "Vapnik and Chervonenkis bounded the gap between training and test error by the capacity of the hypothesis class, measured by what is now called the VC dimension.",
+      "people": [
+        "Vladimir Vapnik",
+        "Alexey Chervonenkis"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "Probably approximately correct learning",
+      "detail": "Valiant defined when a class of functions can be learned from examples with high probability and small error, founding computational learning theory.",
+      "people": [
+        "Leslie Valiant"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "The bias–variance dilemma",
+      "detail": "Geman, Bienenstock and Doursat analysed the error of neural networks as a trade-off between bias and variance.",
+      "people": [
+        "Stuart Geman"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "Double descent",
+      "detail": "Belkin and colleagues showed that test error can fall again once a model is large enough to interpolate its training data, reconciling over-parameterised networks with the classical trade-off.",
+      "people": [
+        "Mikhail Belkin"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Pattern Recognition and Machine Learning",
+      "authors": "Christopher M. Bishop",
+      "year": 2006,
+      "note": "A thorough probabilistic treatment of regression, classification, regularisation and Bayesian methods."
+    },
+    {
+      "title": "The Elements of Statistical Learning",
+      "authors": "Trevor Hastie, Robert Tibshirani and Jerome Friedman",
+      "year": 2009,
+      "note": "Linear methods, model selection, the bias–variance trade-off and kernels from a statistician’s point of view (second edition); free online."
+    },
+    {
+      "title": "An Introduction to Statistical Learning",
+      "authors": "Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani",
+      "year": 2013,
+      "note": "A gentler companion to the previous book, with worked labs in R and, since 2023, Python; free online."
+    },
+    {
+      "title": "Understanding Machine Learning: From Theory to Algorithms",
+      "authors": "Shai Shalev-Shwartz and Shai Ben-David",
+      "year": 2014,
+      "note": "Learning theory — PAC learning, VC dimension, regularisation and stability — stated precisely; free online."
+    },
+    {
+      "title": "Probabilistic Machine Learning: An Introduction",
+      "authors": "Kevin P. Murphy",
+      "year": 2022,
+      "note": "A modern, comprehensive reference from linear models to deep learning; free online."
+    }
+  ],
   "next": [
     "neural-networks",
     "text-and-language"

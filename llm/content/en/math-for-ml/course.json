@@ -1,15 +1,27 @@
 {
   "slug": "math-for-ml",
-  "title": "Mathematics for Machine Learning",
+  "title": "Maths for Machine Learning",
   "full_title": "Mathematics for Machine Learning",
   "area": "foundations",
   "level": 1,
   "order": 10,
   "tagline": "Linear algebra, calculus, probability, information theory and optimisation for machine learning",
   "summary": "Machine learning is applied mathematics. This course collects the linear algebra, multivariable calculus, probability, information theory and optimisation that the rest of the atlas uses, always with an eye on how they appear inside neural networks and language models.",
-  "overview": [],
+  "overview": [
+    "Every operation inside a language model is a piece of mathematics: a token becomes a vector, a layer is a matrix multiplication followed by a nonlinearity, the output is a probability distribution over the vocabulary, and training minimises a cross-entropy loss by gradient descent. This course collects the mathematics the rest of the atlas relies on — linear algebra, multivariable calculus, probability, estimation, information theory and optimisation — and presents each topic through the role it plays in machine learning.",
+    "It starts with vectors, matrices and tensors as the data structures of deep learning, then the decompositions — eigenvalues, the singular value decomposition, low rank — that explain why weight matrices can be compressed. Calculus is reduced to what training needs: gradients, Jacobians and the chain rule that backpropagation automates. The probability chapters build distributions, expectation, Bayes’ rule and maximum likelihood; information theory defines entropy, cross-entropy and KL divergence, the quantities a language model’s loss measures. The last chapter treats optimisation: convexity, gradient descent, stochastic gradients and momentum.",
+    "What makes this material hard is not any single result but keeping track of shapes, indices and probabilistic meaning at the same time. Work through small examples by hand and check every formula numerically — with NumPy or PyTorch this is a one-line habit — and use the figures to watch projections, gradients and distributions change as you move them."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Manipulate vectors, matrices and tensors, and read a matrix product both as a composition of linear maps and as a batch of dot products.",
+    "Compute eigendecompositions and singular value decompositions, and use the SVD to find the best low-rank approximation of a matrix.",
+    "Derive gradients and Jacobians of vector-valued functions with the multivariable chain rule.",
+    "Work with common discrete and continuous distributions, expectations, conditional probability and Bayes’ rule.",
+    "Derive maximum-likelihood and maximum a posteriori estimators, and explain bias and variance.",
+    "Compute entropy, cross-entropy and KL divergence, and explain why minimising cross-entropy fits a model to data.",
+    "Analyse gradient descent on convex and non-convex objectives, and explain the effect of the learning rate, stochastic gradients and momentum."
+  ],
   "chapters": [
     {
       "slug": "vectors-matrices",
@@ -64,8 +76,100 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1805,
+      "title": "The method of least squares",
+      "detail": "Legendre published least squares for fitting comet orbits to observations; in 1809 Gauss justified it by assuming normally distributed errors.",
+      "people": [
+        "Adrien-Marie Legendre",
+        "Carl Friedrich Gauss"
+      ]
+    },
+    {
+      "year": 1847,
+      "title": "Gradient descent",
+      "detail": "Cauchy proposed solving systems of equations by repeatedly stepping against the gradient — the method of steepest descent that, in stochastic form, trains neural networks today.",
+      "people": [
+        "Augustin-Louis Cauchy"
+      ]
+    },
+    {
+      "year": 1936,
+      "title": "The best low-rank approximation",
+      "detail": "Eckart and Young proved that truncating the singular value decomposition gives the closest matrix of a given rank, the result behind low-rank compression and adapters such as LoRA.",
+      "people": [
+        "Carl Eckart",
+        "Gale Young"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "A mathematical theory of communication",
+      "detail": "Shannon defined entropy as the average information produced by a source, and generated text from the letter and word statistics of English — the first n-gram language models.",
+      "people": [
+        "Claude Shannon"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "The Kullback–Leibler divergence",
+      "detail": "Kullback and Leibler introduced a directed divergence between two distributions, now used to compare a model with data and to keep a fine-tuned model close to its starting point.",
+      "people": [
+        "Solomon Kullback",
+        "Richard Leibler"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "Stochastic approximation",
+      "detail": "Robbins and Monro showed how to find the root of a function from noisy measurements with decreasing step sizes; applied to a gradient, this is stochastic gradient descent.",
+      "people": [
+        "Herbert Robbins",
+        "Sutton Monro"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Momentum",
+      "detail": "Polyak’s heavy-ball method added a fraction of the previous step to each update, accelerating gradient descent on ill-conditioned problems.",
+      "people": [
+        "Boris Polyak"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Mathematics for Machine Learning",
+      "authors": "Marc Peter Deisenroth, A. Aldo Faisal and Cheng Soon Ong",
+      "year": 2020,
+      "note": "The closest match to this course: linear algebra, matrix decompositions, vector calculus, probability and optimisation, each tied to a machine-learning method; free online."
+    },
+    {
+      "title": "Linear Algebra and Learning from Data",
+      "authors": "Gilbert Strang",
+      "year": 2019,
+      "note": "Linear algebra seen from data and deep learning: the SVD, low rank, optimisation and the structure of neural networks."
+    },
+    {
+      "title": "Probabilistic Machine Learning: An Introduction",
+      "authors": "Kevin P. Murphy",
+      "year": 2022,
+      "note": "Probability, statistics and optimisation for machine learning, developed in depth with code; free online."
+    },
+    {
+      "title": "Elements of Information Theory",
+      "authors": "Thomas M. Cover and Joy A. Thomas",
+      "year": 2006,
+      "note": "The standard text on entropy, relative entropy, mutual information and coding (second edition)."
+    },
+    {
+      "title": "Convex Optimization",
+      "authors": "Stephen Boyd and Lieven Vandenberghe",
+      "year": 2004,
+      "note": "Convex sets and functions, duality and algorithms; the reference for the optimisation chapter, free online."
+    }
+  ],
   "next": [
     "ml-fundamentals",
     "neural-networks"

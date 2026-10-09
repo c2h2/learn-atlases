@@ -7,11 +7,24 @@
   "order": 180,
   "tagline": "Probing, the residual stream, circuits, superposition, sparse features and steering",
   "summary": "What computations happen inside a language model? This course covers probing and attribution, the residual-stream view of Transformers, circuits such as induction heads, superposition, sparse dictionary learning of features, causal interventions and steering, and the open problems of understanding large models.",
-  "overview": [],
+  "overview": [
+    "A language model’s weights determine everything it does, yet reading off why it produced a particular answer is an open scientific problem. Interpretability research asks what representations and algorithms a trained network has learned, and it matters both for science and for safety: a model whose internal reasoning we can inspect is a model whose failures we might detect before they cause harm. This course introduces the methods and results of the field, with emphasis on the mechanistic interpretability of Transformers.",
+    "The course begins with the goals of interpretability and its main families of methods — behavioural, attributional and mechanistic. Probing and attribution are useful but easy to over-interpret, and their pitfalls are treated carefully. The residual-stream view decomposes a Transformer into paths that write to and read from a shared space, and the logit lens reads intermediate predictions from it. Circuit analysis reverse-engineers small mechanisms such as induction heads, which implement in-context copying. Superposition explains why individual neurons are hard to interpret — networks represent more features than they have dimensions — and sparse autoencoders and transcoders recover interpretable features from large models. Causal interventions — activation patching, ablation and steering — test hypotheses by changing the computation, and a final chapter surveys open problems and the uses of interpretability for safety.",
+    "Interpretability results are easy to fool oneself with: a plausible story about a neuron or an attention head can be wrong. Insist on causal evidence — does changing the component change the behaviour as predicted? — and test every interpretation against counterexamples."
+  ],
   "prerequisites": [
     "transformers"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish behavioural, attributional and mechanistic approaches, and state what a good explanation should achieve.",
+    "Train and evaluate linear probes and attribution methods, and recognise their pitfalls.",
+    "Decompose a Transformer’s computation in the residual stream, and apply the logit lens.",
+    "Reverse-engineer small circuits such as induction heads.",
+    "Explain superposition and polysemanticity with toy models.",
+    "Train sparse autoencoders and interpret the features they find.",
+    "Test hypotheses with activation patching, ablations and steering vectors.",
+    "Assess the open problems of interpretability and its uses for safety."
+  ],
   "chapters": [
     {
       "slug": "interpretability-goals",
@@ -79,7 +92,122 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2016,
+      "title": "Linear probes",
+      "detail": "Alain and Bengio trained linear classifiers on the hidden layers of a network to measure what information each layer makes linearly available.",
+      "people": [
+        "Guillaume Alain",
+        "Yoshua Bengio"
+      ]
+    },
+    {
+      "year": 2017,
+      "title": "Integrated gradients",
+      "detail": "Sundararajan, Taly and Yan derived an attribution method from axioms, crediting a prediction to input features by integrating gradients along a path.",
+      "people": [
+        "Mukund Sundararajan"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "The logit lens",
+      "detail": "A blog post by the pseudonymous researcher nostalgebraist decoded GPT-2’s intermediate layers with its output embedding, showing its predictions forming layer by layer.",
+      "people": [
+        "nostalgebraist"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "A mathematical framework for Transformer circuits",
+      "detail": "Elhage and colleagues at Anthropic analysed attention-only Transformers as sums of paths through the residual stream.",
+      "people": [
+        "Nelson Elhage",
+        "Chris Olah"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Locating and editing factual associations",
+      "detail": "Meng and colleagues used causal tracing to locate where GPT models recall facts, and edited individual facts by changing the weights of a single MLP layer.",
+      "people": [
+        "Kevin Meng"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Induction heads",
+      "detail": "Olsson and colleagues traced much of in-context learning to induction heads: pairs of attention heads that find an earlier occurrence of the current token and copy what followed it.",
+      "people": [
+        "Catherine Olsson"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Toy models of superposition",
+      "detail": "Elhage and colleagues showed in small networks how models store more sparse features than they have dimensions, at the cost of interference.",
+      "people": [
+        "Nelson Elhage"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Indirect object identification",
+      "detail": "Wang and colleagues reverse-engineered a circuit of 26 attention heads in GPT-2 small that completes sentences such as ‘When Mary and John went to the store, John gave a drink to …’.",
+      "people": [
+        "Kevin Wang"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Sparse autoencoders find features",
+      "detail": "Bricken and colleagues at Anthropic, and independently Cunningham and colleagues, used sparse autoencoders to decompose activations into features far more interpretable than individual neurons.",
+      "people": [
+        "Trenton Bricken",
+        "Hoagy Cunningham"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Scaling monosemanticity",
+      "detail": "Templeton and colleagues extracted millions of features from Claude 3 Sonnet, including abstract and safety-relevant ones, and steered the model by amplifying them.",
+      "people": [
+        "Adly Templeton"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Transformer Circuits Thread",
+      "authors": "Chris Olah, Nelson Elhage and colleagues (Anthropic)",
+      "year": 2021,
+      "note": "The series of articles, from the mathematical framework to sparse features and circuit tracing, that defined much of the field."
+    },
+    {
+      "title": "A Primer on the Inner Workings of Transformer-based Language Models",
+      "authors": "Javier Ferrando, Gabriele Sarti, Arianna Bisazza and Marta R. Costa-jussà",
+      "year": 2024,
+      "note": "A technical introduction to the methods and findings of language-model interpretability."
+    },
+    {
+      "title": "Open Problems in Mechanistic Interpretability",
+      "authors": "Lee Sharkey and colleagues",
+      "year": 2025,
+      "note": "A survey of what is not yet understood, written by researchers from across the field."
+    },
+    {
+      "title": "Interpretable Machine Learning",
+      "authors": "Christoph Molnar",
+      "year": 2022,
+      "note": "A broad, free guide to attribution and other interpretation methods, with their limitations (second edition)."
+    },
+    {
+      "title": "Toy Models of Superposition",
+      "authors": "Nelson Elhage and colleagues",
+      "year": 2022,
+      "note": "The central paper on superposition, with interactive figures."
+    }
+  ],
   "next": []
 }

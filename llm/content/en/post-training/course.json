@@ -7,11 +7,24 @@
   "order": 120,
   "tagline": "Instruction tuning, reward models, RLHF, preference optimisation and parameter-efficient fine-tuning",
   "summary": "A pretrained model predicts text; an assistant follows instructions. This course covers supervised instruction tuning, reward modelling and reinforcement learning from human feedback, direct preference optimisation, AI feedback and constitutional methods, and the parameter-efficient methods that make fine-tuning cheap.",
-  "overview": [],
+  "overview": [
+    "Post-training turns a model that continues text into an assistant that answers questions, follows instructions and declines harmful requests. It is a comparatively small amount of training on carefully chosen data and feedback, and it changes how a model behaves far more than what it knows. This course covers the methods: supervised instruction tuning, reinforcement learning from human feedback and the reward models it relies on, direct preference optimisation and its relatives, learning from AI feedback guided by written principles, parameter-efficient fine-tuning, and distillation from larger models.",
+    "The course starts with supervised fine-tuning on instructions and dialogues, chat templates and system prompts, then develops the reinforcement-learning view of a language model as a policy whose outputs earn rewards, with a KL penalty that keeps it close to its starting point. Reward models learned from human comparisons with the Bradley–Terry model supply those rewards, and RLHF with PPO puts the pieces together — along with its practical difficulties and the danger of over-optimising an imperfect reward. Direct preference optimisation shows that the same objective can be optimised without an explicit reward model, and constitutional methods replace much human labelling with model feedback guided by principles. The last chapters make adaptation cheap with adapters and LoRA, and transfer abilities from large models to small ones by distillation and synthetic data.",
+    "Post-training sets many of a model’s most visible traits — helpfulness, tone, refusals, sycophancy — often unintentionally. When you study a method, ask what signal it optimises, how that signal can be gamed, and how you would detect that it has been."
+  ],
   "prerequisites": [
     "pretraining"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Prepare instruction and dialogue data, apply chat templates, and run supervised fine-tuning.",
+    "Formulate fine-tuning as reinforcement learning with a KL-regularised objective, and derive the policy gradient.",
+    "Train a reward model on pairwise comparisons with the Bradley–Terry model, and explain reward over-optimisation.",
+    "Describe the RLHF pipeline with PPO, its practical difficulties and its effects on a model.",
+    "Derive direct preference optimisation from the KL-regularised objective, and compare it with RLHF.",
+    "Explain learning from AI feedback and constitutional methods.",
+    "Apply parameter-efficient methods such as LoRA and QLoRA, and estimate the memory they save.",
+    "Use distillation and synthetic data to train smaller models, and explain the risk of model collapse."
+  ],
   "chapters": [
     {
       "slug": "instruction-tuning",
@@ -80,8 +93,114 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2015,
+      "title": "Knowledge distillation",
+      "detail": "Hinton, Vinyals and Dean trained small networks to match the softened output distribution of a large one.",
+      "people": [
+        "Geoffrey Hinton",
+        "Oriol Vinyals",
+        "Jeff Dean"
+      ]
+    },
+    {
+      "year": 2017,
+      "title": "Learning from human preferences",
+      "detail": "Christiano and colleagues trained agents from human comparisons of short behaviour clips, learning a reward model instead of hand-writing a reward.",
+      "people": [
+        "Paul Christiano"
+      ]
+    },
+    {
+      "year": 2017,
+      "title": "Proximal policy optimisation",
+      "detail": "Schulman and colleagues introduced PPO, a stable policy-gradient method that later became the standard optimiser in RLHF.",
+      "people": [
+        "John Schulman"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "Instruction tuning",
+      "detail": "Wei and colleagues at Google fine-tuned a language model on dozens of tasks phrased as instructions and found that it generalised to unseen tasks (FLAN).",
+      "people": [
+        "Jason Wei"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "LoRA",
+      "detail": "Hu and colleagues fine-tuned large models by learning low-rank updates to frozen weight matrices, training only a tiny fraction of the parameters.",
+      "people": [
+        "Edward Hu"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "InstructGPT",
+      "detail": "Ouyang and colleagues at OpenAI applied supervised fine-tuning and RLHF to GPT-3; labellers preferred the outputs of a 1.3-billion-parameter InstructGPT to those of the 175-billion-parameter original.",
+      "people": [
+        "Long Ouyang"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Constitutional AI",
+      "detail": "Bai and colleagues at Anthropic trained a harmless assistant using feedback from a model guided by a short list of written principles instead of human labels of harm.",
+      "people": [
+        "Yuntao Bai"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Direct preference optimisation",
+      "detail": "Rafailov and colleagues showed that the KL-regularised RLHF objective can be optimised directly on preference pairs with a classification-style loss, without a separate reward model.",
+      "people": [
+        "Rafael Rafailov"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Model collapse",
+      "detail": "Shumailov and colleagues showed that models trained recursively on their own generated data progressively lose the tails of the original distribution.",
+      "people": [
+        "Ilia Shumailov"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Reinforcement Learning from Human Feedback",
+      "authors": "Nathan Lambert",
+      "year": 2025,
+      "note": "A free online book on instruction tuning, reward models, RLHF, DPO and their practical details."
+    },
+    {
+      "title": "Reinforcement Learning: An Introduction",
+      "authors": "Richard S. Sutton and Andrew G. Barto",
+      "year": 2018,
+      "note": "The foundations of reinforcement learning, including the policy-gradient methods RLHF builds on (second edition); free online."
+    },
+    {
+      "title": "Training Language Models to Follow Instructions with Human Feedback",
+      "authors": "Long Ouyang and colleagues",
+      "year": 2022,
+      "note": "The InstructGPT paper, the clearest description of the original RLHF pipeline."
+    },
+    {
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "authors": "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning and Chelsea Finn",
+      "year": 2023,
+      "note": "Derives DPO from the RLHF objective in a few lines."
+    },
+    {
+      "title": "Constitutional AI: Harmlessness from AI Feedback",
+      "authors": "Yuntao Bai and colleagues",
+      "year": 2022,
+      "note": "Learning from AI feedback guided by written principles."
+    }
+  ],
   "next": [
     "reasoning",
     "safety-alignment",

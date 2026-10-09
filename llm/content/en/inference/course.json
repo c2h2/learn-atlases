@@ -7,12 +7,25 @@
   "order": 140,
   "tagline": "Decoding and sampling, the KV cache, batching, quantisation, speculative decoding and long context",
   "summary": "Every generated token costs time, memory and money. This course explains decoding and sampling strategies, the key–value cache, batching and memory management in serving systems, quantisation and distillation, speculative decoding, long-context inference, and how latency, throughput and cost trade off.",
-  "overview": [],
+  "overview": [
+    "A model is trained once and run billions of times. Inference is where most of a language model’s cost is paid, and its constraints differ from training: tokens are generated one at a time, each step reads the whole model and its cache from memory, and users notice every delay. This course explains how a model turns a prompt into text, and how serving systems make that fast and cheap.",
+    "It begins with decoding — greedy decoding, temperature, top-k and nucleus sampling — and the key–value cache that makes incremental decoding possible and whose memory grows with every token and every concurrent user. Serving systems batch requests continuously, manage cache memory in pages, and separate the compute-bound prefill phase from the memory-bound decode phase. Quantisation shrinks weights and caches to 8, 4 or fewer bits; distillation and pruning produce smaller models; speculative decoding lets a small draft model propose tokens that the large model checks in parallel. Long-context inference adds position interpolation and the attention sinks that keep streaming models stable, and the last chapter measures what users and operators care about: time to first token, tokens per second and cost per token.",
+    "Inference is limited by memory bandwidth more often than by arithmetic, so the key skill is to estimate bytes moved as well as FLOPs. Before optimising, measure: profile a realistic workload, find whether it is compute-bound or memory-bound, and only then choose a technique."
+  ],
   "prerequisites": [
     "transformers",
     "scaling"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Implement greedy decoding, temperature, top-k and nucleus sampling, and explain their effect on quality and diversity.",
+    "Calculate the memory of the key–value cache, and explain how multi-query and grouped-query attention reduce it.",
+    "Describe continuous batching, paged attention and the prefill and decode phases of serving.",
+    "Explain post-training quantisation of weights, activations and caches, and its effect on accuracy.",
+    "Compare distillation and structured and unstructured pruning for producing smaller models.",
+    "Show why speculative decoding preserves the target model’s output distribution, and estimate its speed-up.",
+    "Explain techniques for long-context inference, including position interpolation and attention sinks.",
+    "Measure and optimise time to first token, throughput and cost per token."
+  ],
   "chapters": [
     {
       "slug": "decoding-sampling",
@@ -84,7 +97,104 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2019,
+      "title": "Nucleus sampling",
+      "detail": "Holtzman and colleagues showed that sampling from the smallest set of tokens holding most of the probability avoids both the repetition of greedy decoding and the incoherence of pure sampling.",
+      "people": [
+        "Ari Holtzman"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "LLM.int8()",
+      "detail": "Dettmers and colleagues found that a few outlier features break naive 8-bit quantisation of large models, and kept those features in higher precision.",
+      "people": [
+        "Tim Dettmers"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "GPTQ",
+      "detail": "Frantar and colleagues quantised the weights of 175-billion-parameter models to 3 or 4 bits in a few GPU hours, using approximate second-order information.",
+      "people": [
+        "Elias Frantar"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Continuous batching",
+      "detail": "Yu and colleagues’ Orca scheduled work one iteration at a time, letting new requests join a running batch as others finish.",
+      "people": [
+        "Gyeong-In Yu"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Speculative decoding",
+      "detail": "Leviathan, Kalman and Matias, and independently Chen and colleagues, used a small draft model to propose several tokens that the large model verifies in one pass, with an acceptance rule that leaves the output distribution unchanged.",
+      "people": [
+        "Yaniv Leviathan",
+        "Charlie Chen"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "PagedAttention",
+      "detail": "Kwon and colleagues stored the key–value cache in fixed-size pages, as operating systems do with virtual memory, and built the vLLM serving system on the idea.",
+      "people": [
+        "Woosuk Kwon"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Position interpolation",
+      "detail": "Chen and colleagues at Meta extended the context window of RoPE models by scaling positions down into the trained range, needing only brief fine-tuning.",
+      "people": [
+        "Shouyuan Chen"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Attention sinks",
+      "detail": "Xiao and colleagues found that models place large attention on the first tokens, and that keeping those tokens in the cache lets a model generate stably far beyond its training length.",
+      "people": [
+        "Guangxuan Xiao"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+      "authors": "Woosuk Kwon and colleagues",
+      "year": 2023,
+      "note": "The vLLM paper: why serving is memory-bound and how paging the cache helps."
+    },
+    {
+      "title": "Fast Inference from Transformers via Speculative Decoding",
+      "authors": "Yaniv Leviathan, Matan Kalman and Yossi Matias",
+      "year": 2023,
+      "note": "Speculative decoding, with a short proof that the output distribution is preserved."
+    },
+    {
+      "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+      "authors": "Elias Frantar, Saleh Ashkboos, Torsten Hoefler and Dan Alistarh",
+      "year": 2023,
+      "note": "The standard method for low-bit weight quantisation."
+    },
+    {
+      "title": "A Survey on Efficient Inference for Large Language Models",
+      "authors": "Zixuan Zhou and colleagues",
+      "year": 2024,
+      "note": "A map of data-, model- and system-level methods for faster and cheaper inference."
+    },
+    {
+      "title": "How to Scale Your Model",
+      "authors": "Jacob Austin and colleagues (Google DeepMind)",
+      "year": 2025,
+      "note": "Its inference chapters estimate latency and throughput from first principles."
+    }
+  ],
   "next": []
 }

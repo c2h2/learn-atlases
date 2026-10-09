@@ -7,12 +7,24 @@
   "order": 160,
   "tagline": "Vision transformers, contrastive learning, vision–language models, speech and image generation",
   "summary": "Language models increasingly see, hear and speak. This course covers vision transformers and contrastive image–text learning, vision–language models, speech recognition and synthesis, audio and spoken-dialogue models, the diffusion and autoregressive models that generate images, and models trained natively on many modalities.",
-  "overview": [],
+  "overview": [
+    "The recipe that made language models — a Transformer trained on vast data with a simple objective — works for images, audio and video once they are turned into sequences of tokens or vectors. Current assistants read documents and screenshots, describe images, transcribe and speak, and generate pictures. This course explains how other modalities are brought into language models, and how models generate images and speech.",
+    "Vision transformers treat an image as a sequence of patches; contrastive training on image–text pairs, as in CLIP, places images and captions in one embedding space and enables zero-shot classification. Vision–language models connect such encoders to language models and are tuned on visual instructions and documents. On the audio side, the course covers speech recognition with encoder–decoder models such as Whisper, neural text-to-speech, and models that turn audio into discrete tokens for real-time spoken conversation. Image generation is treated through diffusion and latent diffusion as well as the autoregressive generation of image tokens, and the course ends with natively multimodal models trained from the start on interleaved text, images, audio and video.",
+    "Multimodal systems combine components trained on very different data, and many of their failures — misread text in images, objects hallucinated into captions, speech recognition that falters on unfamiliar accents — come from the seams between them. When you study an architecture, follow one input from pixels or samples to tokens, and ask what each conversion keeps and what it loses."
+  ],
   "prerequisites": [
     "transformers",
     "post-training"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain how vision transformers turn images into sequences of patch embeddings.",
+    "Describe contrastive image–text training, and use a shared embedding space for zero-shot classification and retrieval.",
+    "Explain how vision–language models connect image encoders to language models, and how they are instruction-tuned.",
+    "Describe speech recognition and text-to-speech systems, from audio features to tokens.",
+    "Explain discrete audio tokens and speech-to-speech models for real-time conversation.",
+    "Derive the training objective of diffusion models, and compare diffusion with autoregressive image generation.",
+    "Compare late-fusion and natively multimodal (early-fusion) architectures."
+  ],
   "chapters": [
     {
       "slug": "vision-transformers",
@@ -74,7 +86,109 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2020,
+      "title": "Denoising diffusion",
+      "detail": "Ho, Jain and Abbeel trained a network to reverse a gradual noising process and generated high-quality images, building on the diffusion models of Sohl-Dickstein and colleagues (2015).",
+      "people": [
+        "Jonathan Ho"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "The vision transformer",
+      "detail": "Dosovitskiy and colleagues at Google split images into 16×16 patches and showed that a plain Transformer matches convolutional networks when pretrained on enough data.",
+      "people": [
+        "Alexey Dosovitskiy"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "CLIP",
+      "detail": "Radford and colleagues at OpenAI trained image and text encoders contrastively on 400 million image–caption pairs, enabling zero-shot image classification.",
+      "people": [
+        "Alec Radford"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "DALL·E",
+      "detail": "Ramesh and colleagues generated images from text with a Transformer that predicts image tokens one by one, as a language model predicts words.",
+      "people": [
+        "Aditya Ramesh"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Flamingo",
+      "detail": "Alayrac and colleagues at DeepMind joined a frozen vision encoder to a frozen language model with new cross-attention layers, so that it learns visual tasks from a few examples.",
+      "people": [
+        "Jean-Baptiste Alayrac"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Latent diffusion",
+      "detail": "Rombach and colleagues ran diffusion in the compressed latent space of an autoencoder, making high-resolution generation affordable; the model was released as Stable Diffusion.",
+      "people": [
+        "Robin Rombach"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Whisper",
+      "detail": "Radford and colleagues trained an encoder–decoder Transformer on 680,000 hours of weakly labelled audio, giving robust multilingual speech recognition.",
+      "people": [
+        "Alec Radford"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Visual instruction tuning",
+      "detail": "Liu and colleagues connected a CLIP image encoder to an open language model through a projection layer and tuned it on visual instructions generated with GPT-4 (LLaVA).",
+      "people": [
+        "Haotian Liu"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "GPT-4o",
+      "detail": "OpenAI released a model trained end to end across text, images and audio that holds spoken conversations with response times close to a person’s.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Understanding Deep Learning",
+      "authors": "Simon J. D. Prince",
+      "year": 2023,
+      "note": "Clear chapters on Transformers for images, generative models and diffusion; free online."
+    },
+    {
+      "title": "Multimodal Foundation Models: From Specialists to General-Purpose Assistants",
+      "authors": "Chunyuan Li and colleagues",
+      "year": 2023,
+      "note": "A survey of vision–language pretraining, image generation and multimodal assistants."
+    },
+    {
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "authors": "Alec Radford and colleagues",
+      "year": 2021,
+      "note": "The CLIP paper."
+    },
+    {
+      "title": "Denoising Diffusion Probabilistic Models",
+      "authors": "Jonathan Ho, Ajay Jain and Pieter Abbeel",
+      "year": 2020,
+      "note": "The paper that made diffusion models practical."
+    },
+    {
+      "title": "Speech and Language Processing",
+      "authors": "Daniel Jurafsky and James H. Martin",
+      "year": 2024,
+      "note": "Chapters on automatic speech recognition and text-to-speech."
+    }
+  ],
   "next": []
 }

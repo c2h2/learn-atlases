@@ -7,11 +7,24 @@
   "order": 30,
   "tagline": "Multilayer networks, backpropagation, optimisers, initialisation, normalisation and training practice",
   "summary": "Deep networks learn their own features. This course builds multilayer perceptrons, derives backpropagation and automatic differentiation, and covers the optimisers, initialisation, normalisation and regularisation that make deep networks trainable, with convolutional networks as a first architecture.",
-  "overview": [],
+  "overview": [
+    "A neural network is a composition of simple functions — linear maps and elementwise nonlinearities — whose parameters are fitted by gradient descent. Depth lets such a network build its own features in stages, and since 2012 that ability has made deep learning the dominant approach to vision, speech and language. This course builds the multilayer network from the logistic unit, derives backpropagation, and explains the machinery — automatic differentiation, optimisers, initialisation, normalisation and regularisation — that makes networks with many layers trainable.",
+    "After perceptrons and multilayer networks comes the computation of gradients: backpropagation as the chain rule applied to a computation graph, and automatic differentiation as the general tool behind PyTorch and JAX. The middle chapters explain why training can fail — vanishing and exploding gradients, badly scaled initialisations — and the remedies: careful initialisation, normalisation layers, residual connections and adaptive optimisers such as Adam. Convolutional networks give a first architecture with structure built in, and the last chapter turns to the craft of training: data pipelines, mixed precision, reading loss curves and making runs reproducible.",
+    "Much of deep learning is empirical, so every derivation here comes with an experiment you can run. When a network does not learn, the cause is usually mundane — a learning rate off by a factor of ten, a bug in the data, an unnormalised input — and the habit of checking the simplest explanation first is worth more than any single technique."
+  ],
   "prerequisites": [
     "ml-fundamentals"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Build multilayer perceptrons, and explain the role of nonlinear activations and the universal approximation theorem.",
+    "Derive backpropagation on a computation graph and compare its cost with that of the forward pass.",
+    "Explain forward- and reverse-mode automatic differentiation, and use an autograd library.",
+    "Compare SGD, momentum, RMSProp, Adam and AdamW, and choose learning-rate schedules with warm-up.",
+    "Explain vanishing and exploding gradients, and how initialisation, normalisation and residual connections address them.",
+    "Apply dropout, weight decay, label smoothing and data augmentation, and recognise implicit regularisation.",
+    "Describe convolution, pooling and receptive fields, and the residual networks built from them.",
+    "Debug training runs from their loss curves, and make experiments reproducible."
+  ],
   "chapters": [
     {
       "slug": "perceptrons-mlps",
@@ -81,8 +94,113 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1943,
+      "title": "The logical neuron",
+      "detail": "McCulloch and Pitts modelled a neuron as a threshold unit and showed that networks of such units can compute logical functions.",
+      "people": [
+        "Warren McCulloch",
+        "Walter Pitts"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "The perceptron",
+      "detail": "Rosenblatt described a trainable threshold unit and a rule that adjusts its weights after each mistake.",
+      "people": [
+        "Frank Rosenblatt"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "Perceptrons",
+      "detail": "Minsky and Papert proved that a single-layer perceptron cannot compute functions such as parity; the book is often blamed for a long decline in neural-network research.",
+      "people": [
+        "Marvin Minsky",
+        "Seymour Papert"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "Learning representations by back-propagating errors",
+      "detail": "Rumelhart, Hinton and Williams showed that backpropagation lets hidden units learn useful internal representations; reverse-mode differentiation had been described by Linnainmaa (1970) and applied to networks by Werbos (1974).",
+      "people": [
+        "David Rumelhart",
+        "Geoffrey Hinton",
+        "Ronald Williams"
+      ]
+    },
+    {
+      "year": 1989,
+      "title": "Universal approximation",
+      "detail": "Cybenko proved that a network with one hidden layer of sigmoid units can approximate any continuous function on a compact set, given enough units.",
+      "people": [
+        "George Cybenko"
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "AlexNet",
+      "detail": "Krizhevsky, Sutskever and Hinton’s deep convolutional network, trained on GPUs, won the ImageNet challenge by a wide margin and started the deep-learning era.",
+      "people": [
+        "Alex Krizhevsky",
+        "Ilya Sutskever",
+        "Geoffrey Hinton"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "Adam",
+      "detail": "Kingma and Ba combined momentum with per-parameter step sizes taken from running averages of squared gradients; Adam and its variant AdamW became the default optimisers for Transformers.",
+      "people": [
+        "Diederik Kingma",
+        "Jimmy Ba"
+      ]
+    },
+    {
+      "year": 2015,
+      "title": "Batch normalisation and residual networks",
+      "detail": "Ioffe and Szegedy normalised activations inside the network, and He and colleagues added identity shortcuts that made networks of more than a hundred layers trainable.",
+      "people": [
+        "Sergey Ioffe",
+        "Christian Szegedy",
+        "Kaiming He"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Deep Learning",
+      "authors": "Ian Goodfellow, Yoshua Bengio and Aaron Courville",
+      "year": 2016,
+      "note": "The standard text on optimisation, regularisation, convolutional and recurrent networks and the theory behind them; free online."
+    },
+    {
+      "title": "Understanding Deep Learning",
+      "authors": "Simon J. D. Prince",
+      "year": 2023,
+      "note": "A clear modern account with excellent figures, from shallow networks to Transformers and diffusion models; free online."
+    },
+    {
+      "title": "Dive into Deep Learning",
+      "authors": "Aston Zhang, Zachary C. Lipton, Mu Li and Alexander J. Smola",
+      "year": 2023,
+      "note": "Every idea implemented in runnable code; also available in Chinese as 《动手学深度学习》."
+    },
+    {
+      "title": "Deep Learning: Foundations and Concepts",
+      "authors": "Christopher M. Bishop and Hugh Bishop",
+      "year": 2024,
+      "note": "A careful mathematical introduction, from probability and neural networks to Transformers and diffusion."
+    },
+    {
+      "title": "Neural Networks and Deep Learning",
+      "authors": "Michael Nielsen",
+      "year": 2015,
+      "note": "A short, readable online book that derives backpropagation from scratch."
+    }
+  ],
   "next": [
     "sequence-models"
   ]

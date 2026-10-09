@@ -7,11 +7,23 @@
   "order": 70,
   "tagline": "Data, objectives, the training loop, stability and the families of pretrained models",
   "summary": "A pretrained language model learns from trillions of tokens of text with a simple objective. This course covers how training data are collected, filtered and mixed, the causal and masked objectives, the training loop and its instabilities, evaluation during training, and the families of pretrained models from BERT and GPT to today’s open and closed models.",
-  "overview": [],
+  "overview": [
+    "Pretraining is where a language model acquires most of its knowledge and ability. A Transformer is trained to predict the next token on trillions of tokens of text and code, and the capabilities that later stages refine — knowledge of the world, grammar, translation, arithmetic, programming — emerge from that one objective. This course covers what goes into a pretraining run: the objectives, the data and how they are filtered and mixed, the training loop and its failure modes, evaluation during training, and the families of models that resulted.",
+    "It begins with the objectives — causal language modelling, masked language modelling and span corruption — and the view of next-token prediction as compression. Data are the largest lever: web crawls, books, code and curated sources are cleaned with heuristics and quality classifiers, deduplicated and mixed across domains and languages, increasingly together with synthetic data. The training-loop chapters cover batching, learning-rate schedules, checkpoints and the loss spikes that can derail large runs, and evaluation during training shows how abilities appear as the loss falls. A survey of model families — BERT, GPT, T5 and their open and closed successors — shows how these choices combine, and the last chapter adapts a pretrained model to new domains, languages and context lengths.",
+    "Little of pretraining is settled theory, and many best practices are known from the published reports of large runs rather than from proofs. Read those reports critically — note what was measured, at what scale and what was left out — and expect today’s recipes to change."
+  ],
   "prerequisites": [
     "transformers"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Compare causal language modelling, masked language modelling and span corruption, and explain next-token prediction as compression.",
+    "Describe how pretraining corpora are collected, filtered, deduplicated and assessed for quality.",
+    "Design a data mixture across domains and languages, and explain the role of upsampling, synthetic data and data order.",
+    "Set up a pretraining loop with a learning-rate schedule, gradient clipping, checkpointing and monitoring.",
+    "Diagnose loss spikes and divergence, and describe the numerical and architectural choices that prevent them.",
+    "Track abilities during training with validation loss and downstream evaluations, and assess claims of emergent abilities.",
+    "Compare the design choices of the major model families, and adapt a pretrained model by continued pretraining."
+  ],
   "chapters": [
     {
       "slug": "pretraining-objectives",
@@ -81,8 +93,111 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2015,
+      "title": "Semi-supervised sequence learning",
+      "detail": "Dai and Le showed that pretraining a recurrent network as a language model or sequence autoencoder, then fine-tuning it, improves text classification.",
+      "people": [
+        "Andrew Dai",
+        "Quoc Le"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "Generative pretraining",
+      "detail": "Radford and colleagues at OpenAI pretrained a Transformer decoder as a language model and fine-tuned it for each task, improving the state of the art on most of the benchmarks they tried.",
+      "people": [
+        "Alec Radford"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "BERT",
+      "detail": "Devlin and colleagues at Google pretrained a bidirectional Transformer encoder with masked language modelling; fine-tuned BERT led most language-understanding benchmarks.",
+      "people": [
+        "Jacob Devlin"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "GPT-2",
+      "detail": "A 1.5-billion-parameter language model trained on the WebText corpus performed several tasks without task-specific training; OpenAI at first withheld the full model, citing possible misuse.",
+      "people": [
+        "Alec Radford"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "T5 and C4",
+      "detail": "Raffel and colleagues cast every task as text-to-text, compared pretraining objectives and data systematically, and released the C4 web corpus.",
+      "people": [
+        "Colin Raffel"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "The Pile",
+      "detail": "EleutherAI assembled an 825-gigabyte corpus from 22 diverse sources for training open language models.",
+      "people": [
+        "Leo Gao"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "LLaMA",
+      "detail": "Touvron and colleagues at Meta trained models of 7 to 65 billion parameters on publicly available data only and released the weights to researchers, starting a wave of open models.",
+      "people": [
+        "Hugo Touvron"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "FineWeb",
+      "detail": "Penedo and colleagues at Hugging Face released a 15-trillion-token web corpus with an openly documented filtering pipeline, together with an educational-quality subset.",
+      "people": [
+        "Guilherme Penedo"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "DeepSeek-V3",
+      "detail": "DeepSeek trained a 671-billion-parameter mixture-of-experts model, with 37 billion parameters active per token, using FP8 mixed precision, and reported about 2.8 million GPU hours of training.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "On the Opportunities and Risks of Foundation Models",
+      "authors": "Rishi Bommasani and colleagues (Stanford CRFM)",
+      "year": 2021,
+      "note": "A broad survey of pretrained models: data, training, capabilities, applications and social effects."
+    },
+    {
+      "title": "A Survey of Large Language Models",
+      "authors": "Wayne Xin Zhao and colleagues",
+      "year": 2023,
+      "note": "A regularly updated survey of pretraining data, architectures, training and evaluation; expanded into the Chinese book 《大语言模型》."
+    },
+    {
+      "title": "Natural Language Processing with Transformers",
+      "authors": "Lewis Tunstall, Leandro von Werra and Thomas Wolf",
+      "year": 2022,
+      "note": "A practical guide to pretrained Transformers, including training a model from scratch."
+    },
+    {
+      "title": "The Llama 3 Herd of Models",
+      "authors": "Llama Team, AI at Meta",
+      "year": 2024,
+      "note": "An unusually detailed report of a large pretraining run: data, scaling decisions, infrastructure and evaluation."
+    },
+    {
+      "title": "Build a Large Language Model (From Scratch)",
+      "authors": "Sebastian Raschka",
+      "year": 2024,
+      "note": "Implements a GPT-style model, its pretraining loop and fine-tuning in PyTorch, step by step."
+    }
+  ],
   "next": [
     "post-training",
     "scaling",

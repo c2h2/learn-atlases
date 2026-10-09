@@ -1,4 +1,263 @@
 {
   "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC.",
-  "milestones": []
+  "milestones": [
+    {
+      "year": 1913,
+      "title": "Markov’s chains of letters",
+      "detail": "Markov showed that each letter of Pushkin’s *Eugene Onegin* depends on the letter before it, the first statistical model of language.",
+      "people": [
+        "Andrey Markov"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1948,
+      "title": "Information theory",
+      "detail": "Shannon founded information theory, defining entropy and modelling English as a statistical source — the framework in which language models are still trained and scored.",
+      "people": [
+        "Claude Shannon"
+      ],
+      "area": "foundations"
+    },
+    {
+      "year": 1950,
+      "title": "Computing machinery and intelligence",
+      "detail": "Turing proposed judging whether a machine can think by whether it can hold a conversation indistinguishable from a person’s — the imitation game, later called the Turing test.",
+      "people": [
+        "Alan Turing"
+      ],
+      "area": "safety"
+    },
+    {
+      "year": 1956,
+      "title": "The Dartmouth workshop",
+      "detail": "A summer workshop at Dartmouth College, proposed by McCarthy, Minsky, Rochester and Shannon, gave artificial intelligence its name as a field.",
+      "people": [
+        "John McCarthy",
+        "Marvin Minsky"
+      ],
+      "area": "foundations"
+    },
+    {
+      "year": 1958,
+      "title": "The perceptron",
+      "detail": "Rosenblatt’s perceptron learned to classify simple patterns by adjusting its weights after mistakes, the first trainable neural network.",
+      "people": [
+        "Frank Rosenblatt"
+      ],
+      "area": "foundations"
+    },
+    {
+      "year": 1966,
+      "title": "ELIZA",
+      "detail": "Weizenbaum’s ELIZA imitated a psychotherapist with simple pattern matching, yet many users attributed understanding to it — an early lesson in how readily people credit machines with minds.",
+      "people": [
+        "Joseph Weizenbaum"
+      ],
+      "area": "applications"
+    },
+    {
+      "year": 1982,
+      "title": "Hopfield networks",
+      "detail": "Hopfield showed that a network with symmetric connections can store memories as stable states of an energy function.",
+      "people": [
+        "John Hopfield"
+      ],
+      "area": "foundations"
+    },
+    {
+      "year": 1986,
+      "title": "Backpropagation",
+      "detail": "Rumelhart, Hinton and Williams showed that backpropagation trains multilayer networks to learn their own internal representations.",
+      "people": [
+        "David Rumelhart",
+        "Geoffrey Hinton",
+        "Ronald Williams"
+      ],
+      "area": "foundations"
+    },
+    {
+      "year": 1990,
+      "title": "Statistical machine translation",
+      "detail": "Brown and colleagues at IBM learned to translate from French–English parliamentary records with probabilistic models, replacing hand-written rules with statistics learned from data.",
+      "people": [
+        "Peter Brown"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1997,
+      "title": "Long short-term memory",
+      "detail": "Hochreiter and Schmidhuber’s LSTM let recurrent networks carry information across long sequences; it remained the leading sequence model until the Transformer.",
+      "people": [
+        "Sepp Hochreiter",
+        "Jürgen Schmidhuber"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 2003,
+      "title": "Neural language models",
+      "detail": "Bengio and colleagues predicted the next word with a neural network over learned word vectors, the ancestor of today’s language models.",
+      "people": [
+        "Yoshua Bengio"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 2006,
+      "title": "Deep belief networks",
+      "detail": "Hinton, Osindero and Teh trained deep networks one layer at a time, reviving interest in deep learning.",
+      "people": [
+        "Geoffrey Hinton"
+      ],
+      "area": "foundations"
+    },
+    {
+      "year": 2012,
+      "title": "AlexNet",
+      "detail": "A deep convolutional network trained on two GPUs won the ImageNet challenge by a wide margin, and deep learning became the dominant approach to perception.",
+      "people": [
+        "Alex Krizhevsky",
+        "Ilya Sutskever",
+        "Geoffrey Hinton"
+      ],
+      "area": "foundations"
+    },
+    {
+      "year": 2013,
+      "title": "word2vec",
+      "detail": "Mikolov and colleagues learned word vectors from billions of words with a shallow network; their geometry captured meaning and analogy.",
+      "people": [
+        "Tomas Mikolov"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 2014,
+      "title": "Attention",
+      "detail": "Bahdanau, Cho and Bengio let a translation model attend to every word of the source sentence, the mechanism at the heart of the Transformer.",
+      "people": [
+        "Dzmitry Bahdanau",
+        "Kyunghyun Cho",
+        "Yoshua Bengio"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 2016,
+      "title": "AlphaGo",
+      "detail": "DeepMind’s AlphaGo, combining deep networks with tree search and reinforcement learning, defeated Lee Sedol at Go.",
+      "people": [
+        "David Silver",
+        "Demis Hassabis"
+      ],
+      "area": "alignment"
+    },
+    {
+      "year": 2017,
+      "title": "The Transformer",
+      "detail": "Vaswani and colleagues introduced the Transformer, built entirely on attention; it became the architecture of language models.",
+      "people": [
+        "Ashish Vaswani"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 2017,
+      "title": "Learning from human preferences",
+      "detail": "Christiano and colleagues trained agents with a reward model learned from human comparisons, the method later used to align language models.",
+      "people": [
+        "Paul Christiano"
+      ],
+      "area": "alignment"
+    },
+    {
+      "year": 2018,
+      "title": "BERT",
+      "detail": "Devlin and colleagues’ BERT made pretraining a Transformer on unlabelled text, then fine-tuning it for each task, the standard recipe of NLP.",
+      "people": [
+        "Jacob Devlin"
+      ],
+      "area": "training"
+    },
+    {
+      "year": 2020,
+      "title": "GPT-3",
+      "detail": "A 175-billion-parameter language model learned new tasks from examples in its prompt, showing what scale alone could achieve.",
+      "people": [
+        "Tom Brown"
+      ],
+      "area": "training"
+    },
+    {
+      "year": 2020,
+      "title": "Scaling laws",
+      "detail": "Kaplan and colleagues found that language-model loss falls predictably, as a power law, with parameters, data and compute.",
+      "people": [
+        "Jared Kaplan"
+      ],
+      "area": "training"
+    },
+    {
+      "year": 2022,
+      "title": "Chinchilla",
+      "detail": "Hoffmann and colleagues showed that parameters and training data should be scaled together, changing how models are trained.",
+      "people": [
+        "Jordan Hoffmann"
+      ],
+      "area": "training"
+    },
+    {
+      "year": 2022,
+      "title": "InstructGPT",
+      "detail": "OpenAI fine-tuned GPT-3 with human feedback to follow instructions, the method behind the first chat assistants.",
+      "people": [
+        "Long Ouyang"
+      ],
+      "area": "alignment"
+    },
+    {
+      "year": 2022,
+      "title": "ChatGPT",
+      "detail": "OpenAI released ChatGPT as a free research preview; it reached an estimated 100 million users in about two months.",
+      "people": [],
+      "area": "applications"
+    },
+    {
+      "year": 2023,
+      "title": "GPT-4",
+      "detail": "OpenAI’s GPT-4 accepted images as well as text and performed well on professional and academic exams; its technical report withheld the architecture and training details.",
+      "people": [],
+      "area": "applications"
+    },
+    {
+      "year": 2023,
+      "title": "Open-weight models",
+      "detail": "Meta’s LLaMA, followed by Llama 2, Mistral, Qwen and many others, put capable language models in the hands of researchers and developers everywhere.",
+      "people": [
+        "Hugo Touvron"
+      ],
+      "area": "training"
+    },
+    {
+      "year": 2023,
+      "title": "The AI Safety Summit",
+      "detail": "At Bletchley Park, 28 countries and the European Union, including the United States and China, signed a declaration on the risks of frontier AI and the need for international cooperation.",
+      "people": [],
+      "area": "safety"
+    },
+    {
+      "year": 2024,
+      "title": "Nobel prizes for neural networks",
+      "detail": "The Nobel Prize in Physics went to Hopfield and Hinton for foundational work on neural networks, and half of the Chemistry prize to Hassabis and Jumper for predicting protein structures with AlphaFold.",
+      "people": [
+        "John Hopfield",
+        "Geoffrey Hinton",
+        "Demis Hassabis",
+        "John Jumper"
+      ],
+      "area": "foundations"
+    }
+  ]
 }

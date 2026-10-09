@@ -7,11 +7,23 @@
   "order": 90,
   "tagline": "Bias, privacy, copyright, misinformation, work, energy and governance",
   "summary": "Language models are changing how people learn, work and communicate. This course examines bias and fairness, privacy and memorisation, copyright and data provenance, misinformation and persuasion, effects on work and education, the energy and environmental cost of models, open and closed release, and how laws and institutions are responding.",
-  "overview": [],
+  "overview": [
+    "Language models are used by hundreds of millions of people to write, learn, search and program, and their effects reach far beyond their users. This course examines those effects with the care the atlas gives to the technology itself: where bias comes from and how it is measured, what models memorise about people, the legal and ethical questions of training on copyrighted work, misinformation and persuasion, effects on work and education, the energy cost of training and serving models, the choice between open and closed release, and how laws and institutions are responding.",
+    "Each chapter connects a social question to the technical facts that bear on it — for example, how memorisation depends on duplication in the training data, how watermarking works and why detecting machine-written text is hard, or how energy use divides between training and inference. Several of the questions are contested; the course presents the main positions and the evidence for them rather than a verdict.",
+    "Many details change quickly: laws are passed and revised, court cases are decided, and models are released under new terms. The chapters date their claims. Check current sources before relying on any of them, and read claims about impact — positive or negative — with attention to how they were measured."
+  ],
   "prerequisites": [
     "pretraining"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Identify sources of bias in data and models, and evaluate methods for measuring and mitigating it.",
+    "Explain how models memorise training data, how extraction attacks work, and which privacy-preserving techniques apply.",
+    "Describe the legal and ethical debates about training on copyrighted work, licensing, opt-outs and attribution.",
+    "Assess the risks of synthetic text for misinformation and persuasion, and the limits of watermarking and detection.",
+    "Summarise the evidence on the effects of language models on productivity, employment and education.",
+    "Estimate the energy use and emissions of training and inference, and discuss trends in efficiency.",
+    "Compare open-weight and closed release, and outline the main approaches to AI governance and regulation."
+  ],
   "chapters": [
     {
       "slug": "bias-fairness",
@@ -76,8 +88,109 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 2016,
+      "title": "Bias in word embeddings",
+      "detail": "Bolukbasi and colleagues showed that word2vec embeddings encode gender stereotypes — completing ‘man is to computer programmer as woman is to …’ with ‘homemaker’ — and proposed a way to reduce them.",
+      "people": [
+        "Tolga Bolukbasi"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "The energy cost of NLP",
+      "detail": "Strubell, Ganesh and McCallum estimated the energy use and emissions of training large NLP models, putting their environmental cost on the research agenda.",
+      "people": [
+        "Emma Strubell"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "Extracting training data",
+      "detail": "Carlini and colleagues recovered verbatim training examples, including personal information, from GPT-2 by sampling many outputs and ranking them.",
+      "people": [
+        "Nicholas Carlini"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "On the dangers of stochastic parrots",
+      "detail": "Bender, Gebru, McMillan-Major and Mitchell questioned the race to larger language models on grounds of cost, undocumented training data and the illusion of meaning.",
+      "people": [
+        "Emily Bender",
+        "Timnit Gebru"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Watermarking language models",
+      "detail": "Kirchenbauer and colleagues biased sampling towards a pseudorandom ‘green list’ of tokens, leaving a statistical signal that a detector can test for.",
+      "people": [
+        "John Kirchenbauer"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Generative AI at work",
+      "detail": "Brynjolfsson, Li and Raymond found that an AI assistant raised the productivity of customer-support agents by about 14 per cent on average, and most for the least experienced.",
+      "people": [
+        "Erik Brynjolfsson"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "China’s rules for generative AI services",
+      "detail": "China’s Interim Measures for the Management of Generative AI Services, in force from August 2023, set requirements for training data, generated content and the filing of public services.",
+      "people": []
+    },
+    {
+      "year": 2024,
+      "title": "The EU AI Act",
+      "detail": "The European Union adopted a risk-based law on AI, with obligations for providers of general-purpose AI models applying from August 2025.",
+      "people": []
+    },
+    {
+      "year": 2025,
+      "title": "The International AI Safety Report",
+      "detail": "About a hundred experts chaired by Yoshua Bengio published a scientific assessment of the capabilities and risks of general-purpose AI, backed by 30 countries and international organisations.",
+      "people": [
+        "Yoshua Bengio"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Fairness and Machine Learning: Limitations and Opportunities",
+      "authors": "Solon Barocas, Moritz Hardt and Arvind Narayanan",
+      "year": 2023,
+      "note": "The standard text on defining and measuring fairness; free online."
+    },
+    {
+      "title": "Atlas of AI",
+      "authors": "Kate Crawford",
+      "year": 2021,
+      "note": "The material, labour and political costs of AI systems."
+    },
+    {
+      "title": "AI Snake Oil",
+      "authors": "Arvind Narayanan and Sayash Kapoor",
+      "year": 2024,
+      "note": "How to tell which claims about the capabilities and effects of AI hold up."
+    },
+    {
+      "title": "International AI Safety Report",
+      "authors": "Yoshua Bengio (chair) and an international expert panel",
+      "year": 2025,
+      "note": "A scientific assessment of the capabilities, risks and mitigations of general-purpose AI, with extensive references."
+    },
+    {
+      "title": "The AI Index Report",
+      "authors": "Stanford Institute for Human-Centered Artificial Intelligence",
+      "year": 2025,
+      "note": "Yearly data on models, costs, adoption, policy and public opinion."
+    }
+  ],
   "next": [
     "safety-alignment"
   ]
