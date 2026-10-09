@@ -1,0 +1,92 @@
+{
+  "slug": "everyday-english",
+  "title": "Everyday English",
+  "full_title": "Everyday English: Getting Things Done",
+  "area": "speaking",
+  "level": 1,
+  "order": 40,
+  "tagline": "Greetings and introductions, personal information, numbers in conversation, shopping and eating out, directions and travel, requests and offers, talking about yourself, phone calls and messages, and small talk",
+  "summary": "Everyday English is about getting things done: meeting people, buying things, finding the way and asking for help. This course teaches the phrases and short exchanges for the commonest everyday situations, with the grammar behind them kept simple, and explains the conventions of politeness — *please*, *thank you*, *could you* — that matter more in English than many learners expect.",
+  "overview": [],
+  "prerequisites": [
+    "sounds-of-english"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "greetings-introductions",
+      "title": "Greetings and introductions",
+      "summary": "Saying hello and goodbye, introducing yourself and others, names and titles, and the difference between *How are you?* as a greeting and as a real question.",
+      "requires": []
+    },
+    {
+      "slug": "personal-information",
+      "title": "Personal information",
+      "summary": "Asking and answering about name, home, work, study and family, spelling names aloud with the English alphabet, and giving email addresses.",
+      "requires": [
+        "everyday-english/greetings-introductions"
+      ]
+    },
+    {
+      "slug": "numbers-in-conversation",
+      "title": "Numbers in conversation",
+      "summary": "Understanding and saying prices, times, dates and phone numbers quickly, and checking numbers that are easy to confuse, such as *fifteen* and *fifty*.",
+      "requires": [
+        "everyday-english/personal-information"
+      ]
+    },
+    {
+      "slug": "shopping-eating-out",
+      "title": "Shopping and eating out",
+      "summary": "Asking for things, prices and sizes, ordering in a café or restaurant and paying, with the polite forms that make requests sound friendly.",
+      "requires": [
+        "everyday-english/numbers-in-conversation"
+      ]
+    },
+    {
+      "slug": "directions-travel",
+      "title": "Directions and travel",
+      "summary": "Asking for and giving directions, using public transport, booking a room and dealing with simple problems when travelling.",
+      "requires": [
+        "everyday-english/shopping-eating-out"
+      ]
+    },
+    {
+      "slug": "requests-offers",
+      "title": "Requests, offers and invitations",
+      "summary": "*Can I*, *could you*, *would you like* and *shall I*, accepting and refusing politely, and why a bare imperative can sound rude in English.",
+      "requires": [
+        "everyday-english/shopping-eating-out"
+      ]
+    },
+    {
+      "slug": "talking-about-yourself",
+      "title": "Talking about yourself",
+      "summary": "Daily routines, likes and dislikes, last weekend and future plans: the topics of most first conversations.",
+      "requires": [
+        "everyday-english/personal-information"
+      ]
+    },
+    {
+      "slug": "phone-messages",
+      "title": "Phone calls and messages",
+      "summary": "Starting and ending a phone call, leaving a message, and writing short texts and chat messages in natural English.",
+      "requires": [
+        "everyday-english/requests-offers"
+      ]
+    },
+    {
+      "slug": "small-talk",
+      "title": "Small talk",
+      "summary": "Keeping a short conversation going about the weather, the weekend or work, asking follow-up questions, and ending a conversation politely.",
+      "requires": [
+        "everyday-english/talking-about-yourself"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "listening-and-conversation"
+  ]
+}

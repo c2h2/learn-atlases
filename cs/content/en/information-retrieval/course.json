@@ -1,0 +1,95 @@
+{
+  "slug": "information-retrieval",
+  "title": "Information Retrieval",
+  "full_title": "Search Engines and Information Retrieval",
+  "area": "data",
+  "level": 4,
+  "order": 210,
+  "tagline": "Text processing, inverted indexes, compression, ranked retrieval, BM25, evaluation, web search and link analysis, learning to rank and dense retrieval",
+  "summary": "Search engines find the handful of relevant documents among billions in a fraction of a second. This course explains how: text processing and inverted indexes, index construction and compression, ranked retrieval with the vector space model and BM25, the evaluation of search quality, web crawling and link analysis with PageRank, learning to rank, and the dense neural retrieval used alongside language models.",
+  "overview": [],
+  "prerequisites": [
+    "databases",
+    "algorithms"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "text-processing",
+      "title": "Documents and text processing",
+      "summary": "Tokenisation, normalisation and stemming, and the statistics of text such as Zipf’s law.",
+      "requires": []
+    },
+    {
+      "slug": "inverted-indexes",
+      "title": "Inverted indexes",
+      "summary": "Building an inverted index, postings lists, and Boolean and phrase queries.",
+      "requires": [
+        "information-retrieval/text-processing",
+        "databases/storage-indexing"
+      ]
+    },
+    {
+      "slug": "index-compression",
+      "title": "Index construction and compression",
+      "summary": "Building indexes at scale and compressing postings with variable-byte and gamma codes.",
+      "requires": [
+        "information-retrieval/inverted-indexes",
+        "algorithms/sorting-selection"
+      ]
+    },
+    {
+      "slug": "vector-space",
+      "title": "Ranked retrieval and the vector space model",
+      "summary": "Term weighting with tf–idf, cosine similarity and efficient top-k scoring.",
+      "requires": [
+        "information-retrieval/inverted-indexes"
+      ]
+    },
+    {
+      "slug": "probabilistic-retrieval",
+      "title": "Probabilistic retrieval and BM25",
+      "summary": "The probability ranking principle, BM25 and language-model approaches to retrieval.",
+      "requires": [
+        "information-retrieval/vector-space"
+      ]
+    },
+    {
+      "slug": "evaluation",
+      "title": "Evaluating search",
+      "summary": "Relevance judgements, precision and recall, mean average precision and nDCG, and studies with users.",
+      "requires": [
+        "information-retrieval/vector-space"
+      ]
+    },
+    {
+      "slug": "web-search",
+      "title": "Web search and link analysis",
+      "summary": "Crawling, duplicate detection, PageRank and HITS.",
+      "requires": [
+        "information-retrieval/index-compression",
+        "algorithms/graph-search"
+      ]
+    },
+    {
+      "slug": "learning-to-rank",
+      "title": "Learning to rank",
+      "summary": "Ranking features, pointwise, pairwise and listwise learning, and click models.",
+      "requires": [
+        "information-retrieval/evaluation",
+        "information-retrieval/probabilistic-retrieval"
+      ]
+    },
+    {
+      "slug": "dense-retrieval",
+      "title": "Dense retrieval and semantic search",
+      "summary": "Text embeddings, approximate nearest-neighbour search and retrieval for language models.",
+      "requires": [
+        "information-retrieval/learning-to-rank"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

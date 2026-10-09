@@ -5,6 +5,14 @@
 /medicine/data/cache/
 /physics/data/cache/
 /peptides/data/cache/
+/chemistry/data/cache/
+/cs/data/cache/
+/biology/data/cache/
+/mechanical/data/cache/
+/economics/data/cache/
+/earth/data/cache/
+/english/data/cache/
+/chinese/data/cache/
 
 # Raw downloads for the peptide attention data (Wikimedia pageview dumps, ~400 MB)
 /peptides/data/raw/

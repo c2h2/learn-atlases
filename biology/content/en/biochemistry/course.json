@@ -1,0 +1,93 @@
+{
+  "slug": "biochemistry",
+  "title": "Biochemistry",
+  "full_title": "Biochemistry and Metabolism",
+  "area": "cells",
+  "level": 1,
+  "order": 20,
+  "tagline": "Water and weak bonds, the molecules of life, enzymes, bioenergetics and the central pathways of metabolism",
+  "summary": "Living things run on chemistry: a few kinds of molecule, folded and assembled, catalyse and regulate thousands of reactions. This course covers water and weak interactions, proteins, carbohydrates, lipids and nucleotides, enzyme kinetics and regulation, bioenergetics, and the central pathways of metabolism, from glycolysis to oxidative phosphorylation, and how they are controlled.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "water-and-bonds",
+      "title": "Water, pH and weak interactions",
+      "summary": "Hydrogen bonds, the hydrophobic effect, acids, bases and buffers in living systems.",
+      "requires": []
+    },
+    {
+      "slug": "amino-acids-proteins",
+      "title": "Amino acids and proteins",
+      "summary": "The twenty amino acids, the peptide bond and the four levels of protein structure.",
+      "requires": [
+        "biochemistry/water-and-bonds"
+      ]
+    },
+    {
+      "slug": "carbohydrates-lipids",
+      "title": "Carbohydrates, lipids and nucleotides",
+      "summary": "Sugars and polysaccharides, fats and membrane lipids, and nucleotides as building blocks and energy carriers.",
+      "requires": [
+        "biochemistry/water-and-bonds"
+      ]
+    },
+    {
+      "slug": "enzymes",
+      "title": "Enzymes and their kinetics",
+      "summary": "How enzymes speed up reactions, Michaelis–Menten kinetics and enzyme inhibition.",
+      "requires": [
+        "biochemistry/amino-acids-proteins"
+      ]
+    },
+    {
+      "slug": "enzyme-regulation",
+      "title": "Regulation of enzymes",
+      "summary": "Allostery, cooperativity, covalent modification and the control of flux through a pathway.",
+      "requires": [
+        "biochemistry/enzymes"
+      ]
+    },
+    {
+      "slug": "bioenergetics",
+      "title": "Bioenergetics",
+      "summary": "Free energy, coupled reactions, ATP and the redox carriers NADH and FADH₂.",
+      "requires": [
+        "biochemistry/carbohydrates-lipids"
+      ]
+    },
+    {
+      "slug": "glycolysis-tca",
+      "title": "Glycolysis, fermentation and the citric acid cycle",
+      "summary": "How glucose is oxidised to pyruvate and carbon dioxide, and how the released energy is captured.",
+      "requires": [
+        "biochemistry/bioenergetics",
+        "biochemistry/enzymes"
+      ]
+    },
+    {
+      "slug": "oxidative-phosphorylation",
+      "title": "Oxidative phosphorylation",
+      "summary": "The electron transport chain, the chemiosmotic theory and ATP synthase.",
+      "requires": [
+        "biochemistry/glycolysis-tca"
+      ]
+    },
+    {
+      "slug": "metabolic-integration",
+      "title": "Lipids, amino acids and the integration of metabolism",
+      "summary": "Fatty-acid oxidation and synthesis, nitrogen metabolism, gluconeogenesis and the hormonal control of fuel use.",
+      "requires": [
+        "biochemistry/oxidative-phosphorylation",
+        "biochemistry/enzyme-regulation"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "molecular-biology",
+    "structural-biology"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "structural-geology",
+  "title": "Structural Geology",
+  "full_title": "Structural Geology and Tectonics",
+  "area": "solid",
+  "level": 2,
+  "order": 60,
+  "tagline": "Stress, strain, rock rheology, fractures and faults, folds and foliations, shear zones, geological maps and the structure of rifts and mountain belts",
+  "summary": "Structural geology reconstructs how rocks have been deformed, from single grains to whole mountain belts. This course covers stress and strain, how rocks deform by fracture and by flow, joints and faults, folds, foliations and shear zones, reading and drawing geological maps and cross-sections, and the large-scale structure of rifts, mountain belts and strike-slip zones.",
+  "overview": [],
+  "prerequisites": [
+    "physical-geology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "stress",
+      "title": "Stress",
+      "summary": "Traction and the stress tensor, principal stresses, the Mohr circle and the state of stress in the crust.",
+      "requires": [
+        "physical-geology/deformation"
+      ]
+    },
+    {
+      "slug": "strain",
+      "title": "Strain",
+      "summary": "Displacement and deformation, homogeneous strain, the strain ellipse and measuring strain in rocks.",
+      "requires": [
+        "structural-geology/stress"
+      ]
+    },
+    {
+      "slug": "rheology",
+      "title": "Rock rheology",
+      "summary": "Elastic, brittle, plastic and viscous behaviour, and how temperature, pressure, fluids and strain rate control it.",
+      "requires": [
+        "structural-geology/strain"
+      ]
+    },
+    {
+      "slug": "fractures-faults",
+      "title": "Fractures and faults",
+      "summary": "Joints, the Coulomb failure criterion, fault types and fault rocks, and how faults grow.",
+      "requires": [
+        "structural-geology/rheology"
+      ]
+    },
+    {
+      "slug": "folds",
+      "title": "Folds and foliations",
+      "summary": "Fold geometry and classification, folding mechanisms, cleavage and lineations.",
+      "requires": [
+        "structural-geology/strain"
+      ]
+    },
+    {
+      "slug": "shear-zones",
+      "title": "Shear zones and ductile deformation",
+      "summary": "Mylonites, kinematic indicators and how deformation is concentrated in the deep crust.",
+      "requires": [
+        "structural-geology/rheology",
+        "structural-geology/folds"
+      ]
+    },
+    {
+      "slug": "maps-sections",
+      "title": "Geological maps and cross-sections",
+      "summary": "Outcrop patterns, structure contours, stereographic projection and balanced cross-sections.",
+      "requires": [
+        "structural-geology/folds",
+        "structural-geology/fractures-faults"
+      ]
+    },
+    {
+      "slug": "rifts",
+      "title": "Extension and rifts",
+      "summary": "Normal-fault systems, rift basins, and the path from continental rifting to seafloor spreading.",
+      "requires": [
+        "structural-geology/fractures-faults"
+      ]
+    },
+    {
+      "slug": "orogens",
+      "title": "Mountain belts and strike-slip zones",
+      "summary": "Fold-and-thrust belts, collisional mountain belts, and transform and strike-slip fault systems.",
+      "requires": [
+        "structural-geology/fractures-faults",
+        "structural-geology/shear-zones"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "geophysics",
+    "natural-hazards"
+  ]
+}

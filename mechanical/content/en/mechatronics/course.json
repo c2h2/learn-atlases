@@ -1,0 +1,88 @@
+{
+  "slug": "mechatronics",
+  "title": "Mechatronics",
+  "full_title": "Mechatronics: Sensors, Actuators and Embedded Control",
+  "area": "control",
+  "level": 3,
+  "order": 160,
+  "tagline": "Sensors, signal conditioning and data acquisition, microcontrollers, electric motors and drives, hydraulic and pneumatic actuators, and motion control",
+  "summary": "Mechatronics combines mechanisms, electronics and software into machines that sense and act. The course covers sensors, signal conditioning and data acquisition, microcontrollers and real-time software, DC, stepper and brushless motors and their drives, hydraulic and pneumatic actuation, and closed-loop motion control, ending with the design of complete mechatronic systems.",
+  "overview": [],
+  "prerequisites": [
+    "control-systems"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "mechatronic-systems",
+      "title": "Mechatronic systems",
+      "summary": "The elements of a mechatronic system, and the circuit basics needed to build one.",
+      "requires": [
+        "control-systems/modelling-dynamic-systems"
+      ]
+    },
+    {
+      "slug": "sensors",
+      "title": "Sensors",
+      "summary": "Measuring position, speed, acceleration, force, strain, pressure and temperature, and the specifications of sensors.",
+      "requires": [
+        "mechatronics/mechatronic-systems"
+      ]
+    },
+    {
+      "slug": "signal-conditioning",
+      "title": "Signal conditioning and data acquisition",
+      "summary": "Operational-amplifier circuits, bridges and filters, noise, analogue-to-digital conversion, sampling and aliasing.",
+      "requires": [
+        "mechatronics/sensors"
+      ]
+    },
+    {
+      "slug": "microcontrollers",
+      "title": "Microcontrollers and embedded software",
+      "summary": "Microcontroller architecture, digital input and output, timers, interrupts, pulse-width modulation and real-time programming.",
+      "requires": [
+        "mechatronics/signal-conditioning"
+      ]
+    },
+    {
+      "slug": "electric-actuators",
+      "title": "Electric motors and drives",
+      "summary": "DC, stepper and brushless motors, their models and torque–speed curves, and H-bridges and motor drives.",
+      "requires": [
+        "mechatronics/mechatronic-systems"
+      ]
+    },
+    {
+      "slug": "fluid-power",
+      "title": "Hydraulic and pneumatic actuators",
+      "summary": "Pumps, valves, cylinders and motors in fluid-power circuits, and their dynamics.",
+      "requires": [
+        "mechatronics/mechatronic-systems"
+      ]
+    },
+    {
+      "slug": "motion-control",
+      "title": "Motion control",
+      "summary": "Closed-loop position and speed control of motor-driven axes, encoders, feedforward and trajectory following.",
+      "requires": [
+        "mechatronics/electric-actuators",
+        "control-systems/pid-control"
+      ]
+    },
+    {
+      "slug": "system-integration",
+      "title": "Designing mechatronic systems",
+      "summary": "Integrating sensors, actuators and controllers, safety interlocks, and case studies from printers to vehicles.",
+      "requires": [
+        "mechatronics/motion-control",
+        "mechatronics/microcontrollers"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "robotics"
+  ]
+}

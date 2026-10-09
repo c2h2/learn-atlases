@@ -1,0 +1,95 @@
+{
+  "slug": "databases",
+  "title": "Databases",
+  "full_title": "Database Systems",
+  "area": "data",
+  "level": 2,
+  "order": 90,
+  "tagline": "The relational model, SQL, conceptual design, normalisation, storage and indexing, query processing and optimisation, transactions and recovery",
+  "summary": "Databases store the data that organisations depend on and answer questions about it efficiently and reliably. This course covers the relational model and relational algebra, SQL, conceptual design and normalisation, and then how a database engine works inside: storage and indexing, query processing and optimisation, transactions and concurrency control, and crash recovery.",
+  "overview": [],
+  "prerequisites": [
+    "data-structures"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "relational-model",
+      "title": "The relational model",
+      "summary": "Relations, keys and integrity constraints, and the relational algebra.",
+      "requires": []
+    },
+    {
+      "slug": "sql",
+      "title": "SQL",
+      "summary": "Queries and joins, aggregation and grouping, nested queries, NULL values and views.",
+      "requires": [
+        "databases/relational-model"
+      ]
+    },
+    {
+      "slug": "conceptual-design",
+      "title": "Conceptual design",
+      "summary": "Entity–relationship modelling and translating a design into relational schemas.",
+      "requires": [
+        "databases/relational-model"
+      ]
+    },
+    {
+      "slug": "normalisation",
+      "title": "Functional dependencies and normalisation",
+      "summary": "Functional dependencies and anomalies, Boyce–Codd and third normal forms, and lossless decompositions.",
+      "requires": [
+        "databases/conceptual-design"
+      ]
+    },
+    {
+      "slug": "storage-indexing",
+      "title": "Storage and indexing",
+      "summary": "Pages and records, buffer management, and B+-tree and hash indexes.",
+      "requires": [
+        "databases/sql",
+        "data-structures/balanced-trees"
+      ]
+    },
+    {
+      "slug": "query-processing",
+      "title": "Query processing",
+      "summary": "Algorithms for selection, sorting and joins, and their costs.",
+      "requires": [
+        "databases/storage-indexing"
+      ]
+    },
+    {
+      "slug": "query-optimisation",
+      "title": "Query optimisation",
+      "summary": "Equivalence rules, cardinality estimation and cost-based choice of query plans.",
+      "requires": [
+        "databases/query-processing"
+      ]
+    },
+    {
+      "slug": "transactions",
+      "title": "Transactions and concurrency control",
+      "summary": "ACID properties, serialisability, two-phase locking, isolation levels and multiversion concurrency control.",
+      "requires": [
+        "databases/sql"
+      ]
+    },
+    {
+      "slug": "recovery",
+      "title": "Crash recovery",
+      "summary": "Logging, write-ahead logging and checkpoints, and the ARIES recovery algorithm.",
+      "requires": [
+        "databases/transactions",
+        "databases/storage-indexing"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "distributed-systems",
+    "information-retrieval"
+  ]
+}

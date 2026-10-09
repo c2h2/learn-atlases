@@ -1,0 +1,97 @@
+{
+  "slug": "polymer-chemistry",
+  "title": "Polymer Chemistry",
+  "full_title": "Polymer Chemistry",
+  "area": "materials",
+  "level": 3,
+  "order": 200,
+  "tagline": "Polymer structure and molar mass, step and chain growth, controlled polymerisation, copolymers, chains in solution, characterisation and properties",
+  "summary": "Polymers — long chains built from small repeating units — range from proteins and DNA to plastics and fibres. This course explains how polymers are made by step-growth, chain-growth and controlled polymerisation, how chains behave in solution, how polymers are characterised, and how structure determines their mechanical, thermal and functional properties.",
+  "overview": [],
+  "prerequisites": [
+    "organic-2",
+    "thermodynamics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "polymer-structure",
+      "title": "Polymer structure and molar mass",
+      "summary": "Repeat units and nomenclature, tacticity, and number- and weight-average molar masses and dispersity.",
+      "requires": [
+        "organic-1/stereochemistry"
+      ]
+    },
+    {
+      "slug": "step-growth",
+      "title": "Step-growth polymerisation",
+      "summary": "Polyesters and polyamides, the Carothers equation, molar-mass distributions and network formation.",
+      "requires": [
+        "polymer-chemistry/polymer-structure",
+        "organic-2/carboxylic-derivatives"
+      ]
+    },
+    {
+      "slug": "radical-polymerisation",
+      "title": "Radical chain polymerisation",
+      "summary": "Initiation, propagation and termination, the kinetics of chain growth, and chain transfer.",
+      "requires": [
+        "polymer-chemistry/polymer-structure"
+      ]
+    },
+    {
+      "slug": "controlled-polymerisation",
+      "title": "Ionic and controlled polymerisation",
+      "summary": "Anionic and cationic polymerisation, living polymerisation, ATRP and RAFT, and ring-opening and coordination polymerisation.",
+      "requires": [
+        "polymer-chemistry/radical-polymerisation"
+      ]
+    },
+    {
+      "slug": "copolymerisation",
+      "title": "Copolymers",
+      "summary": "Reactivity ratios and the Mayo–Lewis equation, and random, alternating, block and graft copolymers.",
+      "requires": [
+        "polymer-chemistry/radical-polymerisation"
+      ]
+    },
+    {
+      "slug": "polymer-solutions",
+      "title": "Polymer chains and solutions",
+      "summary": "Random coils and chain dimensions, Flory–Huggins theory, theta solvents and phase separation.",
+      "requires": [
+        "polymer-chemistry/polymer-structure",
+        "thermodynamics/mixtures"
+      ]
+    },
+    {
+      "slug": "polymer-characterisation",
+      "title": "Characterising polymers",
+      "summary": "Size-exclusion chromatography, viscometry, light scattering, spectroscopy and thermal analysis.",
+      "requires": [
+        "polymer-chemistry/polymer-solutions"
+      ]
+    },
+    {
+      "slug": "polymer-properties",
+      "title": "Mechanical and thermal properties",
+      "summary": "Crystallinity and the glass transition, viscoelasticity, rubber elasticity and the strength of polymers.",
+      "requires": [
+        "polymer-chemistry/polymer-solutions"
+      ]
+    },
+    {
+      "slug": "functional-polymers",
+      "title": "Functional and biodegradable polymers",
+      "summary": "Conducting, stimuli-responsive and biomedical polymers, and polymers designed to degrade.",
+      "requires": [
+        "polymer-chemistry/polymer-properties"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "green-chemistry"
+  ]
+}

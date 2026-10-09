@@ -1,0 +1,97 @@
+{
+  "slug": "public-economics",
+  "title": "Public Economics",
+  "full_title": "Public Economics",
+  "area": "policy",
+  "level": 3,
+  "order": 180,
+  "tagline": "The role of government, public goods, externalities, social insurance, redistribution, tax incidence, the efficiency cost of taxes, optimal taxation, public choice and fiscal federalism",
+  "summary": "Public economics studies what governments should do and how their policies affect the economy. This course uses the tools of welfare economics to analyse public goods and externalities, social insurance and redistribution, the incidence and efficiency costs of taxes, optimal commodity and income taxation, and the political economy of public decisions and of multi-level government.",
+  "overview": [],
+  "prerequisites": [
+    "microeconomics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "role-of-government",
+      "title": "The role of government",
+      "summary": "When markets fail and when governments fail: efficiency, equity, and the size and structure of the public sector.",
+      "requires": [
+        "microeconomics/welfare-theorems"
+      ]
+    },
+    {
+      "slug": "public-goods",
+      "title": "Public goods",
+      "summary": "The Samuelson condition, free riding, private provision and the problem of revealing preferences.",
+      "requires": [
+        "public-economics/role-of-government"
+      ]
+    },
+    {
+      "slug": "externalities",
+      "title": "Externalities and Pigouvian policy",
+      "summary": "Pigouvian taxes and subsidies, the Coase theorem and its limits, and the choice between taxes and regulation.",
+      "requires": [
+        "public-economics/role-of-government"
+      ]
+    },
+    {
+      "slug": "social-insurance",
+      "title": "Social insurance",
+      "summary": "Why governments provide insurance: adverse selection and moral hazard in unemployment, disability and health insurance.",
+      "requires": [
+        "public-economics/role-of-government",
+        "microeconomics/uncertainty"
+      ]
+    },
+    {
+      "slug": "redistribution",
+      "title": "Inequality and redistribution",
+      "summary": "Measuring inequality, cash and in-kind transfers, means testing and the incentive effects of welfare programmes.",
+      "requires": [
+        "public-economics/social-insurance"
+      ]
+    },
+    {
+      "slug": "tax-incidence",
+      "title": "Tax incidence",
+      "summary": "Who really bears a tax: incidence in partial and general equilibrium, and the evidence.",
+      "requires": [
+        "public-economics/role-of-government",
+        "microeconomics/competitive-markets"
+      ]
+    },
+    {
+      "slug": "efficiency-costs-of-taxation",
+      "title": "The efficiency costs of taxation",
+      "summary": "Deadweight loss and the Harberger triangle, the marginal cost of public funds and behavioural responses to taxation.",
+      "requires": [
+        "public-economics/tax-incidence"
+      ]
+    },
+    {
+      "slug": "optimal-taxation",
+      "title": "Optimal taxation",
+      "summary": "Ramsey commodity taxation, the Mirrlees model of optimal income taxation, and the taxation of capital income.",
+      "requires": [
+        "public-economics/efficiency-costs-of-taxation",
+        "public-economics/redistribution"
+      ]
+    },
+    {
+      "slug": "public-choice",
+      "title": "Public choice and fiscal federalism",
+      "summary": "Voting and the median voter, interest groups and bureaucracy, and the division of tasks between levels of government.",
+      "requires": [
+        "public-economics/public-goods"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "environmental-economics"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "earth-resources",
+  "title": "Earth Resources",
+  "full_title": "Earth Resources: Minerals, Energy and Water",
+  "area": "surface",
+  "level": 4,
+  "order": 230,
+  "tagline": "Resources and reserves, ore deposits, critical minerals, petroleum systems, oil, gas and coal, geothermal energy, subsurface storage, groundwater and the impacts of extraction",
+  "summary": "Almost every material society uses, and most of its energy, comes out of the ground. This course explains how resources and reserves are estimated, how mineral deposits and fossil fuels form and are found, the geology of critical minerals, geothermal energy and storing carbon dioxide underground, groundwater as a resource, and the environmental and social effects of extraction.",
+  "overview": [],
+  "prerequisites": [
+    "sedimentology",
+    "hydrology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "resources-reserves",
+      "title": "Resources and reserves",
+      "summary": "How resources and reserves are defined and estimated, ore grade and cut-off, and the life cycle of a mine or field.",
+      "requires": []
+    },
+    {
+      "slug": "magmatic-hydrothermal",
+      "title": "Magmatic and hydrothermal ore deposits",
+      "summary": "Ores formed from magmas and hot fluids: layered intrusions, porphyry copper, veins and seafloor massive sulfides.",
+      "requires": [
+        "earth-resources/resources-reserves",
+        "physical-geology/igneous-rocks"
+      ]
+    },
+    {
+      "slug": "sedimentary-ores",
+      "title": "Sedimentary and surface ore deposits",
+      "summary": "Placers, banded iron formations, evaporites, laterites and bauxite, and supergene enrichment.",
+      "requires": [
+        "earth-resources/resources-reserves",
+        "sedimentology/carbonates"
+      ]
+    },
+    {
+      "slug": "critical-minerals",
+      "title": "Critical minerals",
+      "summary": "Lithium, cobalt, rare earth elements and other materials for the energy transition: where they occur and the risks to supply.",
+      "requires": [
+        "earth-resources/magmatic-hydrothermal",
+        "earth-resources/sedimentary-ores"
+      ]
+    },
+    {
+      "slug": "petroleum-systems",
+      "title": "Petroleum systems",
+      "summary": "Source rocks and maturation, migration, reservoirs, traps and seals.",
+      "requires": [
+        "sedimentology/basins-sequences"
+      ]
+    },
+    {
+      "slug": "hydrocarbons-coal",
+      "title": "Producing oil, gas and coal",
+      "summary": "Exploration and drilling, reservoir behaviour, unconventional oil and gas, and the geology of coal.",
+      "requires": [
+        "earth-resources/petroleum-systems"
+      ]
+    },
+    {
+      "slug": "geothermal-storage",
+      "title": "Geothermal energy and subsurface storage",
+      "summary": "Geothermal systems, and storing carbon dioxide, hydrogen and heat underground.",
+      "requires": [
+        "earth-resources/petroleum-systems"
+      ]
+    },
+    {
+      "slug": "groundwater-resources",
+      "title": "Groundwater as a resource",
+      "summary": "Sustainable yield, groundwater depletion, fossil groundwater and the management of aquifers.",
+      "requires": [
+        "hydrology/aquifers-wells"
+      ]
+    },
+    {
+      "slug": "extraction-impacts",
+      "title": "Environmental and social impacts of extraction",
+      "summary": "Mine waste and acid drainage, land and water use, remediation, and the social licence to operate.",
+      "requires": [
+        "earth-resources/critical-minerals",
+        "earth-resources/hydrocarbons-coal"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

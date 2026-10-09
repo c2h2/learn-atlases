@@ -1,0 +1,87 @@
+{
+  "slug": "behavioural-economics",
+  "title": "Behavioural Economics",
+  "full_title": "Behavioural Economics",
+  "area": "policy",
+  "level": 3,
+  "order": 200,
+  "tagline": "Rationality and its limits, judgement under uncertainty, prospect theory, present bias and self-control, social preferences, limited attention, behavioural game theory and behavioural policy",
+  "summary": "Real people are not always the rational, self-interested optimisers of standard models. Behavioural economics brings psychology into economics with tractable models and careful evidence: biases in judging probabilities, prospect theory and loss aversion, present bias and self-control, social preferences such as fairness and reciprocity, limited attention, and behavioural game theory. The course also asks what these findings imply for markets and for policy, and where the evidence is still contested.",
+  "overview": [],
+  "prerequisites": [
+    "microeconomics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "rationality-and-anomalies",
+      "title": "Rationality and its limits",
+      "summary": "The standard model of choice, bounded rationality, and the experimental evidence that motivated behavioural economics.",
+      "requires": [
+        "microeconomics/consumer-choice"
+      ]
+    },
+    {
+      "slug": "judgement-under-uncertainty",
+      "title": "Judgement under uncertainty",
+      "summary": "Heuristics and biases in probability judgement: representativeness, availability, anchoring and overconfidence.",
+      "requires": [
+        "behavioural-economics/rationality-and-anomalies"
+      ]
+    },
+    {
+      "slug": "prospect-theory",
+      "title": "Prospect theory and reference dependence",
+      "summary": "The Allais paradox, loss aversion, probability weighting, the endowment effect and prospect theory.",
+      "requires": [
+        "behavioural-economics/rationality-and-anomalies",
+        "microeconomics/uncertainty"
+      ]
+    },
+    {
+      "slug": "present-bias",
+      "title": "Time preference and self-control",
+      "summary": "Exponential and quasi-hyperbolic discounting, present bias, naivety and sophistication, and commitment devices.",
+      "requires": [
+        "behavioural-economics/rationality-and-anomalies",
+        "microeconomics/labour-and-intertemporal-choice"
+      ]
+    },
+    {
+      "slug": "social-preferences",
+      "title": "Social preferences",
+      "summary": "Altruism, fairness, inequality aversion and reciprocity, and the evidence from ultimatum, dictator and public-goods games.",
+      "requires": [
+        "behavioural-economics/rationality-and-anomalies"
+      ]
+    },
+    {
+      "slug": "limited-attention",
+      "title": "Limited attention and mental accounting",
+      "summary": "Salience and inattention, choice overload, framing effects and mental accounting.",
+      "requires": [
+        "behavioural-economics/prospect-theory"
+      ]
+    },
+    {
+      "slug": "behavioural-game-theory",
+      "title": "Behavioural game theory",
+      "summary": "Level-k thinking, cognitive hierarchy, quantal response equilibrium and learning in games.",
+      "requires": [
+        "behavioural-economics/social-preferences"
+      ]
+    },
+    {
+      "slug": "behavioural-policy",
+      "title": "Behavioural economics and policy",
+      "summary": "Nudges, defaults and choice architecture, behavioural welfare economics, and the ethics of paternalism.",
+      "requires": [
+        "behavioural-economics/present-bias",
+        "behavioural-economics/limited-attention"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

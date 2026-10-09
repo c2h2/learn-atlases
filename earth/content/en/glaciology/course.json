@@ -1,0 +1,92 @@
+{
+  "slug": "glaciology",
+  "title": "Glaciology",
+  "full_title": "Glaciology and the Cryosphere",
+  "area": "ocean",
+  "level": 3,
+  "order": 150,
+  "tagline": "Snow and firn, mass and energy balance, ice flow and basal sliding, ice sheets and ice shelves, sea ice, permafrost and observing the cryosphere",
+  "summary": "Ice covers about a tenth of the land and much of the polar oceans, and the ice sheets hold enough water to raise sea level by tens of metres. This course covers how snow becomes glacier ice, the mass and energy balance of glaciers, the physics of ice flow and basal sliding, the Greenland and Antarctic ice sheets and their ice shelves, sea ice, permafrost, and how the cryosphere is observed and how it is changing.",
+  "overview": [],
+  "prerequisites": [
+    "oceanography"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "snow-firn",
+      "title": "Snow, firn and glacier ice",
+      "summary": "How snow turns into firn and then into ice, densification, and the anatomy of a glacier.",
+      "requires": []
+    },
+    {
+      "slug": "mass-balance",
+      "title": "Mass and energy balance",
+      "summary": "Accumulation and ablation, the surface energy balance of snow and ice, and measuring glacier mass change.",
+      "requires": [
+        "glaciology/snow-firn"
+      ]
+    },
+    {
+      "slug": "ice-flow",
+      "title": "How ice flows",
+      "summary": "Ice as a viscous material, Glen’s flow law, internal deformation and the shape of glaciers and ice sheets.",
+      "requires": [
+        "glaciology/mass-balance"
+      ]
+    },
+    {
+      "slug": "basal-sliding",
+      "title": "Basal sliding and fast flow",
+      "summary": "Water at the glacier bed, sliding laws, ice streams and surging glaciers.",
+      "requires": [
+        "glaciology/ice-flow"
+      ]
+    },
+    {
+      "slug": "ice-sheets",
+      "title": "Ice sheets",
+      "summary": "The structure, flow and mass balance of the Greenland and Antarctic ice sheets, and how they respond to climate.",
+      "requires": [
+        "glaciology/basal-sliding"
+      ]
+    },
+    {
+      "slug": "ice-shelves",
+      "title": "Ice shelves and the ocean",
+      "summary": "Ice shelves and grounding lines, calving and melting by the ocean, and marine ice-sheet instability.",
+      "requires": [
+        "glaciology/ice-sheets",
+        "oceanography/overturning"
+      ]
+    },
+    {
+      "slug": "sea-ice",
+      "title": "Sea ice",
+      "summary": "How sea ice grows, melts and drifts, and its role in polar climate and ocean circulation.",
+      "requires": [
+        "oceanography/air-sea-fluxes"
+      ]
+    },
+    {
+      "slug": "permafrost",
+      "title": "Permafrost and frozen ground",
+      "summary": "The thermal regime of frozen ground, ground ice, permafrost thaw and the carbon stored in permafrost.",
+      "requires": []
+    },
+    {
+      "slug": "observing-ice",
+      "title": "Observing the changing cryosphere",
+      "summary": "Satellite altimetry, gravimetry and radar interferometry, field measurements, and what they show about changing ice.",
+      "requires": [
+        "glaciology/ice-sheets",
+        "glaciology/sea-ice"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "palaeoclimate"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "finite-element-method",
+  "title": "Finite Element Method",
+  "full_title": "The Finite Element Method",
+  "area": "mechanics",
+  "level": 4,
+  "order": 200,
+  "tagline": "The direct stiffness method, weak forms and Galerkin's method, frame, plane and isoparametric elements, convergence, field problems, structural dynamics and nonlinear analysis",
+  "summary": "The finite element method turns the equations of mechanics into matrix problems a computer can solve, and is the main tool for analysing real structures. The course starts from springs, bars and trusses with the direct stiffness method, develops weak forms and Galerkin's method, builds frame, plane and isoparametric elements with numerical integration, studies convergence and meshing, extends the method to heat conduction, vibration and nonlinear problems, and ends with the verification of models.",
+  "overview": [],
+  "prerequisites": [
+    "solid-mechanics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "direct-stiffness",
+      "title": "Springs, bars and the direct stiffness method",
+      "summary": "Element stiffness matrices, assembly, boundary conditions and solution for systems of springs and bars.",
+      "requires": [
+        "mechanics-of-materials/axial-loading"
+      ]
+    },
+    {
+      "slug": "trusses-frames",
+      "title": "Trusses and frames",
+      "summary": "Truss elements in two and three dimensions, coordinate transformations, and beam and frame elements.",
+      "requires": [
+        "finite-element-method/direct-stiffness",
+        "mechanics-of-materials/beam-deflection"
+      ]
+    },
+    {
+      "slug": "weak-forms",
+      "title": "Weak forms and Galerkin's method",
+      "summary": "Strong and weak forms, the principle of virtual work, shape functions and Galerkin's method for one-dimensional problems.",
+      "requires": [
+        "finite-element-method/direct-stiffness",
+        "solid-mechanics/energy-methods"
+      ]
+    },
+    {
+      "slug": "plane-elements",
+      "title": "Two-dimensional elements",
+      "summary": "Constant-strain triangles and bilinear quadrilaterals for plane stress and plane strain.",
+      "requires": [
+        "finite-element-method/weak-forms",
+        "solid-mechanics/linear-elasticity"
+      ]
+    },
+    {
+      "slug": "isoparametric-elements",
+      "title": "Isoparametric elements and numerical integration",
+      "summary": "Isoparametric mapping and the Jacobian, Gauss quadrature, and higher-order and three-dimensional elements.",
+      "requires": [
+        "finite-element-method/plane-elements"
+      ]
+    },
+    {
+      "slug": "convergence-meshing",
+      "title": "Convergence, accuracy and meshing",
+      "summary": "Patch tests and rates of convergence, locking, stress recovery, and mesh refinement guided by error estimates.",
+      "requires": [
+        "finite-element-method/isoparametric-elements"
+      ]
+    },
+    {
+      "slug": "field-problems",
+      "title": "Heat conduction and other field problems",
+      "summary": "Finite elements for steady and transient heat conduction and other scalar field problems, with time integration.",
+      "requires": [
+        "finite-element-method/weak-forms"
+      ]
+    },
+    {
+      "slug": "structural-dynamics",
+      "title": "Structural dynamics",
+      "summary": "Consistent and lumped mass matrices, modal analysis and direct time integration of structural vibration.",
+      "requires": [
+        "finite-element-method/trusses-frames"
+      ]
+    },
+    {
+      "slug": "nonlinear-analysis",
+      "title": "Nonlinear analysis and modelling practice",
+      "summary": "Geometric and material nonlinearity solved by Newton–Raphson iteration, and good practice in building, checking and verifying models.",
+      "requires": [
+        "finite-element-method/convergence-meshing",
+        "solid-mechanics/plasticity"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

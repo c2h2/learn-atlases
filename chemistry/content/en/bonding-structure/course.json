@@ -1,0 +1,92 @@
+{
+  "slug": "bonding-structure",
+  "title": "Chemical Bonding",
+  "full_title": "Chemical Bonding and Molecular Structure",
+  "area": "general",
+  "level": 1,
+  "order": 30,
+  "tagline": "Ionic and covalent bonds, Lewis structures, VSEPR, hybridisation, molecular orbitals, metals, intermolecular forces and solids",
+  "summary": "Chemical bonds hold matter together and decide its shape and properties. This course moves from ionic bonding and Lewis structures through VSEPR theory, valence bond theory and molecular orbitals to bonding in metals, the forces between molecules and the structures of solids.",
+  "overview": [],
+  "prerequisites": [
+    "general-chemistry-1"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "ionic-bonding",
+      "title": "Ionic bonding and lattice energy",
+      "summary": "How ions form, the lattice energy of ionic solids, the Born–Haber cycle and the properties of ionic compounds.",
+      "requires": [
+        "general-chemistry-1/periodicity",
+        "general-chemistry-1/thermochemistry"
+      ]
+    },
+    {
+      "slug": "covalent-lewis",
+      "title": "Covalent bonds and Lewis structures",
+      "summary": "Shared electron pairs, Lewis structures, formal charge, resonance, exceptions to the octet rule, and bond order, length and energy.",
+      "requires": [
+        "general-chemistry-1/periodicity"
+      ]
+    },
+    {
+      "slug": "vsepr",
+      "title": "Molecular shape and VSEPR theory",
+      "summary": "Electron domains, molecular geometries and bond angles, and how shape and bond polarity determine molecular dipole moments.",
+      "requires": [
+        "bonding-structure/covalent-lewis"
+      ]
+    },
+    {
+      "slug": "valence-bond",
+      "title": "Valence bond theory and hybridisation",
+      "summary": "Bonds as overlapping orbitals, sp, sp² and sp³ hybrids, and σ and π bonds in single and multiple bonds.",
+      "requires": [
+        "bonding-structure/vsepr",
+        "general-chemistry-1/quantum-atom"
+      ]
+    },
+    {
+      "slug": "molecular-orbitals",
+      "title": "Molecular orbital theory",
+      "summary": "Bonding and antibonding molecular orbitals from atomic orbitals, MO diagrams of diatomic molecules, bond order, magnetism, and the HOMO and LUMO.",
+      "requires": [
+        "bonding-structure/valence-bond"
+      ]
+    },
+    {
+      "slug": "metallic-bonding",
+      "title": "Metallic bonding and band theory",
+      "summary": "Bonding in metals, the band model, and why some solids are conductors, semiconductors or insulators.",
+      "requires": [
+        "bonding-structure/molecular-orbitals"
+      ]
+    },
+    {
+      "slug": "intermolecular-forces",
+      "title": "Intermolecular forces",
+      "summary": "Dispersion forces, dipole–dipole interactions and hydrogen bonding, and their effects on boiling points, solubility and viscosity.",
+      "requires": [
+        "bonding-structure/vsepr"
+      ]
+    },
+    {
+      "slug": "solid-structures",
+      "title": "The structures of solids",
+      "summary": "Crystalline and amorphous solids, unit cells and close packing, and ionic, metallic, covalent-network and molecular solids.",
+      "requires": [
+        "bonding-structure/ionic-bonding",
+        "bonding-structure/metallic-bonding",
+        "bonding-structure/intermolecular-forces"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "organic-1",
+    "main-group",
+    "quantum-chemistry"
+  ]
+}

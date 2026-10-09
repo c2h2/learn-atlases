@@ -1,0 +1,106 @@
+{
+  "slug": "dialects",
+  "title": "Chinese Dialects",
+  "full_title": "The Dialects of Chinese",
+  "area": "language",
+  "level": 4,
+  "order": 250,
+  "tagline": "Dialect and language, classifying the dialects, Mandarin dialects, Wu, Cantonese, Min and Hakka, Xiang, Gan, Hui and Pinghua, dialect words and grammar, dialects today, and recording a dialect",
+  "summary": "Most Chinese people grow up with a dialect as well as Putonghua, and the dialects differ from one another as much as the languages of Europe. This course explains how Chinese dialects are classified and described, surveys the major groups from the Mandarin dialects to Wu, Cantonese, Min and Hakka with their history and features, compares their words and grammar, and discusses dialects in today’s society and how to record one’s own.",
+  "overview": [],
+  "prerequisites": [
+    "linguistics",
+    "phonology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "dialect-and-language",
+      "title": "Dialect and language",
+      "summary": "What makes a dialect a dialect, mutual intelligibility, and the political and cultural sense of “Chinese”.",
+      "requires": [
+        "linguistics/language-society"
+      ]
+    },
+    {
+      "slug": "classification",
+      "title": "Classifying the dialects",
+      "summary": "Criteria for classification, the *Language Atlas of China*, and the ten dialect groups.",
+      "requires": [
+        "dialects/dialect-and-language"
+      ]
+    },
+    {
+      "slug": "mandarin-dialects",
+      "title": "Mandarin dialects",
+      "summary": "The eight Mandarin subgroups, from Northeastern and Beijing Mandarin to Southwestern and Jianghuai Mandarin, and the Jin group.",
+      "requires": [
+        "dialects/classification"
+      ]
+    },
+    {
+      "slug": "wu",
+      "title": "Wu",
+      "summary": "Shanghainese, the Suzhou dialect and the other Wu dialects, their voiced initials and their tone sandhi.",
+      "requires": [
+        "dialects/classification"
+      ]
+    },
+    {
+      "slug": "cantonese",
+      "title": "Cantonese and Yue",
+      "summary": "Cantonese and the Yue dialects, their nine tones and entering-tone finals, and written Cantonese.",
+      "requires": [
+        "dialects/classification"
+      ]
+    },
+    {
+      "slug": "min-hakka",
+      "title": "Min and Hakka",
+      "summary": "The Min dialects of Fujian, Taiwan and Hainan with their literary and colloquial readings, and Hakka.",
+      "requires": [
+        "dialects/classification"
+      ]
+    },
+    {
+      "slug": "xiang-gan-hui-pinghua",
+      "title": "Xiang, Gan, Hui and Pinghua",
+      "summary": "The other southern groups and the features that set them apart.",
+      "requires": [
+        "dialects/classification"
+      ]
+    },
+    {
+      "slug": "dialect-words-grammar",
+      "title": "Dialect words and grammar",
+      "summary": "Comparing words, grammatical particles and word order across the dialects.",
+      "requires": [
+        "dialects/wu",
+        "dialects/cantonese",
+        "dialects/min-hakka"
+      ]
+    },
+    {
+      "slug": "dialects-today",
+      "title": "Dialects today",
+      "summary": "Putonghua and the dialects in a mobile society, the decline of dialects, and efforts to record and preserve them.",
+      "requires": [
+        "dialects/dialect-words-grammar"
+      ]
+    },
+    {
+      "slug": "fieldwork",
+      "title": "Recording a dialect",
+      "summary": "How to record a dialect: the standard character list for dialect surveys, transcription and audio recording.",
+      "requires": [
+        "dialects/dialects-today",
+        "phonology/to-mandarin"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "history-of-chinese"
+  ]
+}

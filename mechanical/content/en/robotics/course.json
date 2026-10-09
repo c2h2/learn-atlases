@@ -1,0 +1,97 @@
+{
+  "slug": "robotics",
+  "title": "Robotics",
+  "full_title": "Robotics: Kinematics, Dynamics and Control",
+  "area": "control",
+  "level": 4,
+  "order": 240,
+  "tagline": "Rigid-body motions, forward and inverse kinematics, Jacobians, manipulator dynamics, trajectory planning, motion and force control, mobile robots and motion planning",
+  "summary": "Robots are mechanisms under computer control. The course describes rigid-body motion with rotation matrices and homogeneous transformations, solves the forward and inverse kinematics of manipulators, derives velocity Jacobians and singularities, formulates manipulator dynamics, plans trajectories, designs joint-space, task-space and force controllers, and introduces mobile robots, perception and motion planning.",
+  "overview": [],
+  "prerequisites": [
+    "mechanisms",
+    "control-systems"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "rigid-motions",
+      "title": "Rigid-body motions and transformations",
+      "summary": "Rotation matrices, Euler angles, quaternions and homogeneous transformations.",
+      "requires": [
+        "dynamics/three-dimensional-dynamics"
+      ]
+    },
+    {
+      "slug": "forward-kinematics",
+      "title": "Forward kinematics",
+      "summary": "Joint variables, Denavit–Hartenberg parameters and the product-of-exponentials formula.",
+      "requires": [
+        "robotics/rigid-motions",
+        "mechanisms/mechanisms-mobility"
+      ]
+    },
+    {
+      "slug": "inverse-kinematics",
+      "title": "Inverse kinematics",
+      "summary": "Analytical and numerical solutions of the inverse kinematics, multiple solutions and workspaces.",
+      "requires": [
+        "robotics/forward-kinematics"
+      ]
+    },
+    {
+      "slug": "jacobians",
+      "title": "Velocity kinematics and Jacobians",
+      "summary": "The manipulator Jacobian, singularities, manipulability, and the relation between joint torques and end-effector forces.",
+      "requires": [
+        "robotics/forward-kinematics"
+      ]
+    },
+    {
+      "slug": "manipulator-dynamics",
+      "title": "Manipulator dynamics",
+      "summary": "The Euler–Lagrange and Newton–Euler equations of motion of robot arms.",
+      "requires": [
+        "robotics/jacobians",
+        "dynamics/rigid-body-kinetics"
+      ]
+    },
+    {
+      "slug": "trajectory-planning",
+      "title": "Trajectory planning",
+      "summary": "Point-to-point and path trajectories in joint and task space, polynomial and spline profiles, and time scaling.",
+      "requires": [
+        "robotics/inverse-kinematics"
+      ]
+    },
+    {
+      "slug": "robot-control",
+      "title": "Motion and force control",
+      "summary": "Independent-joint PID control, computed-torque control, task-space control, and impedance and force control.",
+      "requires": [
+        "robotics/manipulator-dynamics",
+        "control-systems/pid-control"
+      ]
+    },
+    {
+      "slug": "mobile-robots",
+      "title": "Mobile robots",
+      "summary": "Kinematics of wheeled robots, odometry, and the basics of localisation and mapping.",
+      "requires": [
+        "robotics/rigid-motions"
+      ]
+    },
+    {
+      "slug": "motion-planning-perception",
+      "title": "Motion planning and perception",
+      "summary": "Configuration space, sampling-based motion planners, and sensing for robots with cameras and lidar.",
+      "requires": [
+        "robotics/mobile-robots",
+        "robotics/inverse-kinematics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

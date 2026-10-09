@@ -1,0 +1,90 @@
+{
+  "slug": "causal-inference",
+  "title": "Causal Inference",
+  "full_title": "Causal Inference and Programme Evaluation",
+  "area": "methods",
+  "level": 3,
+  "order": 120,
+  "tagline": "Potential outcomes, randomised experiments, regression and matching, instrumental variables and LATE, difference-in-differences, regression discontinuity, synthetic control and external validity",
+  "summary": "Did a policy work, and by how much? This course develops the modern toolkit for answering causal questions with data: the potential-outcomes framework, randomised experiments, regression and matching under selection on observables, instrumental variables and local average treatment effects, difference-in-differences and event studies, regression discontinuity and synthetic control. The emphasis throughout is on the assumptions each method needs and how to probe them.",
+  "overview": [],
+  "prerequisites": [
+    "econometrics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "potential-outcomes",
+      "title": "Potential outcomes and causal effects",
+      "summary": "Counterfactuals, average treatment effects, selection bias and causal diagrams.",
+      "requires": [
+        "econometrics/multiple-regression"
+      ]
+    },
+    {
+      "slug": "randomised-experiments",
+      "title": "Randomised experiments",
+      "summary": "Why randomisation identifies causal effects, analysing experiments, statistical power, non-compliance and threats to validity.",
+      "requires": [
+        "causal-inference/potential-outcomes",
+        "econometrics/inference"
+      ]
+    },
+    {
+      "slug": "selection-on-observables",
+      "title": "Regression and matching",
+      "summary": "Selection on observables, regression as weighted matching, propensity scores, and the limits of controlling for confounders.",
+      "requires": [
+        "causal-inference/potential-outcomes"
+      ]
+    },
+    {
+      "slug": "iv-and-late",
+      "title": "Instrumental variables and local average treatment effects",
+      "summary": "Natural experiments, the LATE theorem and compliers, and the problem of weak instruments.",
+      "requires": [
+        "causal-inference/randomised-experiments",
+        "econometrics/instrumental-variables"
+      ]
+    },
+    {
+      "slug": "difference-in-differences",
+      "title": "Difference-in-differences",
+      "summary": "Parallel trends, two-way fixed effects, event studies, and the pitfalls of staggered adoption.",
+      "requires": [
+        "causal-inference/selection-on-observables",
+        "econometrics/panel-data"
+      ]
+    },
+    {
+      "slug": "regression-discontinuity",
+      "title": "Regression discontinuity",
+      "summary": "Sharp and fuzzy designs, local estimation around a cut-off, bandwidth choice and tests for manipulation.",
+      "requires": [
+        "causal-inference/iv-and-late"
+      ]
+    },
+    {
+      "slug": "synthetic-control",
+      "title": "Synthetic control and comparative case studies",
+      "summary": "Building a counterfactual from weighted comparison units, placebo inference and synthetic difference-in-differences.",
+      "requires": [
+        "causal-inference/difference-in-differences"
+      ]
+    },
+    {
+      "slug": "external-validity",
+      "title": "External validity and the credibility revolution",
+      "summary": "Generalising from experiments, heterogeneous effects, replication and pre-registration, and the use of evidence in policy.",
+      "requires": [
+        "causal-inference/randomised-experiments"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "labour-economics",
+    "development-economics"
+  ]
+}

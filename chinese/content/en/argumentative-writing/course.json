@@ -1,0 +1,104 @@
+{
+  "slug": "argumentative-writing",
+  "title": "Argument and Commentary",
+  "full_title": "Argumentative Writing and Commentary",
+  "area": "writing",
+  "level": 2,
+  "order": 160,
+  "tagline": "What an argument is, the claim, evidence, methods of reasoning, structure, refutation, the language of argument, commentary and editorials, reviews, and the examination essay",
+  "summary": "An argumentative essay persuades by reasons, not by slogans, quotations or ornament. This course teaches how to form a clear claim, choose and use evidence, reason soundly by example, analogy, cause and comparison, organise an argument and answer the other side, and write in the forms readers meet every day — commentary, editorials and reviews — and looks critically at the formulas of the examination essay.",
+  "overview": [],
+  "prerequisites": [
+    "foundations-of-writing",
+    "logic"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "what-is-argument",
+      "title": "What an argument is",
+      "summary": "Claims, reasons and evidence, persuasion and proof, and why slogans are not arguments.",
+      "requires": [
+        "foundations-of-writing/writing-process",
+        "logic/arguments"
+      ]
+    },
+    {
+      "slug": "claim",
+      "title": "The claim",
+      "summary": "Finding a claim worth arguing, making it precise, and limiting its scope.",
+      "requires": [
+        "argumentative-writing/what-is-argument"
+      ]
+    },
+    {
+      "slug": "evidence",
+      "title": "Evidence",
+      "summary": "Facts, data, examples and authorities, how to check them, and how to quote honestly.",
+      "requires": [
+        "argumentative-writing/claim"
+      ]
+    },
+    {
+      "slug": "methods",
+      "title": "Methods of reasoning",
+      "summary": "Argument by example, analogy, cause, comparison and reduction to absurdity, and their limits.",
+      "requires": [
+        "argumentative-writing/evidence"
+      ]
+    },
+    {
+      "slug": "structure",
+      "title": "Structure",
+      "summary": "Raising, analysing and resolving a question, and parallel, progressive and contrastive structures.",
+      "requires": [
+        "argumentative-writing/methods"
+      ]
+    },
+    {
+      "slug": "refutation",
+      "title": "Refutation",
+      "summary": "Stating the other side fairly, refuting its claim, evidence or reasoning, and conceding.",
+      "requires": [
+        "argumentative-writing/structure"
+      ]
+    },
+    {
+      "slug": "language-of-argument",
+      "title": "The language of argument",
+      "summary": "Precision, qualification, tone and rhetoric in argument, and avoiding empty grandeur.",
+      "requires": [
+        "argumentative-writing/refutation"
+      ]
+    },
+    {
+      "slug": "commentary",
+      "title": "Commentary and editorials",
+      "summary": "Short commentary on current events: the news peg, the angle, evidence and balance.",
+      "requires": [
+        "argumentative-writing/language-of-argument"
+      ]
+    },
+    {
+      "slug": "reviews",
+      "title": "Reviews",
+      "summary": "Reviewing books, films and exhibitions: description, analysis and judgement.",
+      "requires": [
+        "argumentative-writing/commentary"
+      ]
+    },
+    {
+      "slug": "exam-essays",
+      "title": "The examination essay",
+      "summary": "The gaokao essay and the civil-service *shenlun*, their formulas, and how to write well within limits of time and format without empty formulas.",
+      "requires": [
+        "argumentative-writing/language-of-argument"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "academic-writing"
+  ]
+}

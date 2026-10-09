@@ -1,0 +1,99 @@
+{
+  "slug": "operating-systems",
+  "title": "Operating Systems",
+  "full_title": "Operating Systems",
+  "area": "systems",
+  "level": 2,
+  "order": 70,
+  "tagline": "Kernel structure, processes and scheduling, address spaces and paging, threads and locks, synchronisation and deadlock, storage, file systems and virtual machines",
+  "summary": "The operating system turns one machine into many: it shares the processor, memory and devices between programs while protecting them from one another. This course explains how, following the three themes of virtualisation, concurrency and persistence — processes and scheduling, address spaces and paging, threads, locks and deadlock, storage devices and file systems — and ends with virtual machines and containers.",
+  "overview": [],
+  "prerequisites": [
+    "computer-systems"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "os-structure",
+      "title": "Operating-system structure",
+      "summary": "Kernel and user mode, system calls, kernel architectures and how the system boots.",
+      "requires": [
+        "computer-systems/exceptions-processes"
+      ]
+    },
+    {
+      "slug": "processes-scheduling",
+      "title": "Processes and CPU scheduling",
+      "summary": "The process abstraction, context switches, and scheduling policies from first-come first-served to multilevel feedback queues.",
+      "requires": [
+        "operating-systems/os-structure"
+      ]
+    },
+    {
+      "slug": "address-spaces-paging",
+      "title": "Address spaces and paging",
+      "summary": "Address translation, segmentation, page tables and translation lookaside buffers.",
+      "requires": [
+        "operating-systems/os-structure",
+        "computer-systems/memory-hierarchy"
+      ]
+    },
+    {
+      "slug": "page-replacement",
+      "title": "Swapping and page replacement",
+      "summary": "Demand paging and page faults, replacement policies such as LRU and the clock algorithm, and thrashing.",
+      "requires": [
+        "operating-systems/address-spaces-paging"
+      ]
+    },
+    {
+      "slug": "threads-locks",
+      "title": "Threads and locks",
+      "summary": "Threads, race conditions and mutual exclusion, and building locks from atomic instructions.",
+      "requires": [
+        "operating-systems/processes-scheduling"
+      ]
+    },
+    {
+      "slug": "synchronisation",
+      "title": "Condition variables, semaphores and deadlock",
+      "summary": "Condition variables, semaphores and monitors, classic synchronisation problems, and preventing and detecting deadlock.",
+      "requires": [
+        "operating-systems/threads-locks"
+      ]
+    },
+    {
+      "slug": "storage-io",
+      "title": "Storage devices and input/output",
+      "summary": "Device interaction and drivers, hard disks and solid-state drives, disk scheduling and RAID.",
+      "requires": [
+        "operating-systems/os-structure"
+      ]
+    },
+    {
+      "slug": "file-systems",
+      "title": "File systems",
+      "summary": "Files and directories, on-disk layout and inodes, crash consistency and journalling.",
+      "requires": [
+        "operating-systems/storage-io",
+        "computer-systems/system-io"
+      ]
+    },
+    {
+      "slug": "virtualisation",
+      "title": "Virtual machines and containers",
+      "summary": "Hypervisors, hardware-assisted virtualisation, containers and isolation.",
+      "requires": [
+        "operating-systems/address-spaces-paging",
+        "operating-systems/processes-scheduling"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "parallel-computing",
+    "security",
+    "distributed-systems"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "meteorology",
+  "title": "Meteorology",
+  "full_title": "Weather and Meteorology",
+  "area": "atmosphere",
+  "level": 1,
+  "order": 40,
+  "tagline": "The atmosphere’s structure, radiation and temperature, humidity, stability, clouds and precipitation, winds, fronts, storms and forecasting",
+  "summary": "Meteorology explains the weather from the physics of the air. This course covers the composition and layers of the atmosphere, radiation and temperature, water vapour and stability, clouds and precipitation, pressure and winds, air masses, fronts and mid-latitude cyclones, thunderstorms and tropical cyclones, and how the weather is observed and forecast.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "atmosphere-structure",
+      "title": "Composition and structure of the atmosphere",
+      "summary": "The gases of the air, how pressure and density fall with height, and the layers from the troposphere to the thermosphere.",
+      "requires": []
+    },
+    {
+      "slug": "radiation-temperature",
+      "title": "Radiation and temperature",
+      "summary": "Solar and terrestrial radiation, the surface energy budget, and the daily and seasonal cycles of temperature.",
+      "requires": [
+        "meteorology/atmosphere-structure"
+      ]
+    },
+    {
+      "slug": "moisture",
+      "title": "Water vapour and humidity",
+      "summary": "Measures of humidity, saturation and the dew point, and the ways in which air is cooled to condensation.",
+      "requires": [
+        "meteorology/atmosphere-structure"
+      ]
+    },
+    {
+      "slug": "stability",
+      "title": "Atmospheric stability",
+      "summary": "Adiabatic processes, the dry and moist lapse rates, stable and unstable air, and convection.",
+      "requires": [
+        "meteorology/moisture",
+        "meteorology/radiation-temperature"
+      ]
+    },
+    {
+      "slug": "clouds-precipitation",
+      "title": "Clouds and precipitation",
+      "summary": "How clouds form and are classified, and how droplets and ice crystals grow into rain, snow and hail.",
+      "requires": [
+        "meteorology/stability"
+      ]
+    },
+    {
+      "slug": "winds",
+      "title": "Pressure and winds",
+      "summary": "The pressure-gradient, Coriolis and friction forces, the geostrophic wind and the global pattern of winds.",
+      "requires": [
+        "meteorology/atmosphere-structure"
+      ]
+    },
+    {
+      "slug": "fronts-cyclones",
+      "title": "Air masses, fronts and mid-latitude cyclones",
+      "summary": "Air masses, warm and cold fronts, and the life cycle of extratropical cyclones.",
+      "requires": [
+        "meteorology/winds",
+        "meteorology/stability"
+      ]
+    },
+    {
+      "slug": "storms",
+      "title": "Thunderstorms and tropical cyclones",
+      "summary": "How thunderstorms, tornadoes and hurricanes form, and what makes them dangerous.",
+      "requires": [
+        "meteorology/clouds-precipitation",
+        "meteorology/winds"
+      ]
+    },
+    {
+      "slug": "forecasting",
+      "title": "Observing and forecasting the weather",
+      "summary": "Weather stations, balloons, satellites and radar, weather maps, and numerical weather prediction and its limits.",
+      "requires": [
+        "meteorology/fronts-cyclones"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "atmospheric-dynamics",
+    "atmospheric-chemistry"
+  ]
+}

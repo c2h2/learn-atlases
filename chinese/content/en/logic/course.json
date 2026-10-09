@@ -1,0 +1,99 @@
+{
+  "slug": "logic",
+  "title": "Logic and Critical Thinking",
+  "full_title": "Logic and Critical Thinking",
+  "area": "writing",
+  "level": 2,
+  "order": 170,
+  "tagline": "The structure of arguments, concepts and definition, propositions, deductive reasoning, the syllogism, induction and analogy, causal reasoning, fallacies, evaluating information, and logic in ancient China",
+  "summary": "Clear writing depends on clear thinking. This course introduces the logic taught in Chinese universities — concepts and definitions, propositions, deductive inference and the syllogism, induction, analogy and causal reasoning — together with the practical skills of critical thinking: recognising fallacies, weighing evidence and judging the claims met in the news and online. It ends with the logical traditions of ancient China.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "arguments",
+      "title": "The structure of arguments",
+      "summary": "Premises and conclusions, finding the argument in a text, and validity and soundness.",
+      "requires": []
+    },
+    {
+      "slug": "concepts-definition",
+      "title": "Concepts and definition",
+      "summary": "Intension and extension, relations between concepts, definition and division, and their common errors.",
+      "requires": [
+        "logic/arguments"
+      ]
+    },
+    {
+      "slug": "propositions",
+      "title": "Propositions",
+      "summary": "Simple and compound propositions — negation, conjunction, disjunction and conditionals — and the square of opposition.",
+      "requires": [
+        "logic/concepts-definition"
+      ]
+    },
+    {
+      "slug": "deduction",
+      "title": "Deductive reasoning",
+      "summary": "Inferences from compound propositions, conditional reasoning, and dilemmas.",
+      "requires": [
+        "logic/propositions"
+      ]
+    },
+    {
+      "slug": "syllogism",
+      "title": "The syllogism",
+      "summary": "Categorical syllogisms, their rules and figures, and checking them with diagrams.",
+      "requires": [
+        "logic/deduction"
+      ]
+    },
+    {
+      "slug": "induction-analogy",
+      "title": "Induction and analogy",
+      "summary": "Induction by enumeration, statistical generalisation and analogy, and how strong each can be.",
+      "requires": [
+        "logic/arguments"
+      ]
+    },
+    {
+      "slug": "causal-reasoning",
+      "title": "Causal reasoning",
+      "summary": "Mill’s methods, correlation and causation, and confounding factors.",
+      "requires": [
+        "logic/induction-analogy"
+      ]
+    },
+    {
+      "slug": "fallacies",
+      "title": "Fallacies",
+      "summary": "Equivocation, begging the question, false dilemma, slippery slope, personal attack, appeals to authority and to the crowd, and the straw man.",
+      "requires": [
+        "logic/deduction",
+        "logic/causal-reasoning"
+      ]
+    },
+    {
+      "slug": "evaluating-information",
+      "title": "Evaluating information",
+      "summary": "Sources, statistics and rumours, checking claims met online, and reflecting on one’s own biases.",
+      "requires": [
+        "logic/fallacies"
+      ]
+    },
+    {
+      "slug": "ancient-chinese-logic",
+      "title": "Logic in ancient China",
+      "summary": "The logic of the Mohist canons, Gongsun Long and the School of Names, and Xunzi on the rectification of names.",
+      "requires": [
+        "logic/syllogism"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "argumentative-writing"
+  ]
+}

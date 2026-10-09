@@ -1,0 +1,93 @@
+{
+  "slug": "cell-biology",
+  "title": "Cell Biology",
+  "full_title": "Cell Biology",
+  "area": "cells",
+  "level": 1,
+  "order": 10,
+  "tagline": "Cells and their membranes, organelles, protein traffic, the cytoskeleton, signalling, the cell cycle and cell death",
+  "summary": "Every living thing is made of cells, and most of biology happens inside them. This course covers the organisation of prokaryotic and eukaryotic cells, membranes and transport, organelles and the traffic of proteins between them, the cytoskeleton and cell movement, cell signalling, the cell cycle and its control, and how cells adhere, form tissues and die.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "cells-and-microscopy",
+      "title": "Cells and how we see them",
+      "summary": "Cell theory, prokaryotic and eukaryotic organisation, cell size, and light, fluorescence and electron microscopy.",
+      "requires": []
+    },
+    {
+      "slug": "membranes",
+      "title": "Membrane structure",
+      "summary": "Lipid bilayers, membrane proteins, fluidity and the fluid-mosaic model.",
+      "requires": [
+        "cell-biology/cells-and-microscopy"
+      ]
+    },
+    {
+      "slug": "membrane-transport",
+      "title": "Membrane transport",
+      "summary": "Diffusion, channels, carriers and pumps, electrochemical gradients and the membrane potential.",
+      "requires": [
+        "cell-biology/membranes"
+      ]
+    },
+    {
+      "slug": "organelles",
+      "title": "Organelles and compartments",
+      "summary": "The nucleus, endoplasmic reticulum, Golgi apparatus, lysosomes, peroxisomes, mitochondria and chloroplasts, and the endosymbiotic origin of the last two.",
+      "requires": [
+        "cell-biology/membranes"
+      ]
+    },
+    {
+      "slug": "protein-sorting",
+      "title": "Protein sorting and vesicle traffic",
+      "summary": "Signal sequences, import into organelles, the secretory pathway, endocytosis and exocytosis.",
+      "requires": [
+        "cell-biology/organelles"
+      ]
+    },
+    {
+      "slug": "cytoskeleton",
+      "title": "The cytoskeleton and cell movement",
+      "summary": "Actin filaments, microtubules and intermediate filaments, motor proteins, cilia and crawling cells.",
+      "requires": [
+        "cell-biology/organelles"
+      ]
+    },
+    {
+      "slug": "cell-signalling",
+      "title": "Cell signalling",
+      "summary": "Receptors, second messengers, kinase cascades and how cells integrate the signals they receive.",
+      "requires": [
+        "cell-biology/membrane-transport"
+      ]
+    },
+    {
+      "slug": "cell-cycle",
+      "title": "The cell cycle and cell division",
+      "summary": "Mitosis and cytokinesis, cyclins and cyclin-dependent kinases, checkpoints, and how their failure leads to cancer.",
+      "requires": [
+        "cell-biology/cytoskeleton",
+        "cell-biology/cell-signalling"
+      ]
+    },
+    {
+      "slug": "tissues-and-cell-death",
+      "title": "Cell adhesion, tissues and cell death",
+      "summary": "Cell junctions, the extracellular matrix, stem cells and programmed cell death.",
+      "requires": [
+        "cell-biology/cell-cycle"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "molecular-biology",
+    "microbiology",
+    "animal-physiology"
+  ]
+}

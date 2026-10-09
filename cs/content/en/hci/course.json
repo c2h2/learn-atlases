@@ -1,0 +1,84 @@
+{
+  "slug": "hci",
+  "title": "Human–Computer Interaction",
+  "full_title": "Human–Computer Interaction",
+  "area": "software",
+  "level": 3,
+  "order": 190,
+  "tagline": "Perception and cognition, user-centred design, prototyping, interaction techniques, visual design, usability evaluation, experiments, accessibility and ethics",
+  "summary": "Software succeeds or fails in the hands of the people who use it. This course teaches how to design interactive systems around people: human perception, cognition and motor performance, user-centred design and prototyping, interaction techniques and visual design, usability evaluation and controlled experiments, accessibility, and the ethics of persuasive and data-driven design.",
+  "overview": [],
+  "prerequisites": [
+    "software-engineering"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "human-factors",
+      "title": "Perception, cognition and action",
+      "summary": "Vision and attention, memory and mental models, and models of motor performance such as Fitts’s law.",
+      "requires": []
+    },
+    {
+      "slug": "user-centred-design",
+      "title": "User-centred design",
+      "summary": "Understanding users and their tasks through interviews and observation, personas and scenarios.",
+      "requires": [
+        "hci/human-factors",
+        "software-engineering/requirements"
+      ]
+    },
+    {
+      "slug": "prototyping",
+      "title": "Prototyping",
+      "summary": "Sketches, paper and interactive prototypes, and iterating on a design.",
+      "requires": [
+        "hci/user-centred-design"
+      ]
+    },
+    {
+      "slug": "interaction-techniques",
+      "title": "Interaction techniques",
+      "summary": "Direct manipulation, menus and forms, and touch, gesture and voice interfaces.",
+      "requires": [
+        "hci/human-factors"
+      ]
+    },
+    {
+      "slug": "visual-design",
+      "title": "Visual and information design",
+      "summary": "Layout, typography, colour and visual hierarchy, and the design of data visualisations.",
+      "requires": [
+        "hci/interaction-techniques"
+      ]
+    },
+    {
+      "slug": "usability-evaluation",
+      "title": "Usability evaluation",
+      "summary": "Heuristic evaluation, cognitive walkthroughs and usability testing with users.",
+      "requires": [
+        "hci/prototyping"
+      ]
+    },
+    {
+      "slug": "experiments",
+      "title": "Controlled experiments and analytics",
+      "summary": "Experimental design and statistical analysis, A/B testing and its pitfalls.",
+      "requires": [
+        "hci/usability-evaluation"
+      ]
+    },
+    {
+      "slug": "accessibility-ethics",
+      "title": "Accessibility and ethics",
+      "summary": "Designing for disability and inclusion, accessibility guidelines, deceptive design patterns and responsible design.",
+      "requires": [
+        "hci/visual-design",
+        "hci/usability-evaluation"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

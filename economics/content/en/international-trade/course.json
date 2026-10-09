@@ -1,0 +1,94 @@
+{
+  "slug": "international-trade",
+  "title": "International Trade",
+  "full_title": "International Trade",
+  "area": "global",
+  "level": 3,
+  "order": 150,
+  "tagline": "Patterns of trade and gravity, the Ricardian model, specific factors, Heckscher–Ohlin, increasing returns, firms and value chains, trade-policy instruments, political economy and trade agreements",
+  "summary": "Why do countries trade, what do they trade, and who gains and who loses? This course develops the classical and modern theories of international trade — the Ricardian model, the specific-factors and Heckscher–Ohlin models, increasing returns and monopolistic competition, and heterogeneous firms — and uses them to analyse tariffs, quotas and subsidies, global value chains, the political economy of protection and the world trading system.",
+  "overview": [],
+  "prerequisites": [
+    "microeconomics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "trade-facts",
+      "title": "Patterns of world trade",
+      "summary": "Who trades with whom, the gravity equation, and how trade has changed as transport and communication costs fell.",
+      "requires": [
+        "principles/gains-from-trade"
+      ]
+    },
+    {
+      "slug": "ricardian-model",
+      "title": "Comparative advantage: the Ricardian model",
+      "summary": "Labour productivity, relative prices and the gains from trade when countries differ in technology.",
+      "requires": [
+        "international-trade/trade-facts",
+        "microeconomics/general-equilibrium"
+      ]
+    },
+    {
+      "slug": "specific-factors",
+      "title": "Specific factors and income distribution",
+      "summary": "Why trade creates winners and losers when some factors of production cannot move between industries.",
+      "requires": [
+        "international-trade/ricardian-model"
+      ]
+    },
+    {
+      "slug": "heckscher-ohlin",
+      "title": "Factor endowments: the Heckscher–Ohlin model",
+      "summary": "Trade driven by differences in capital and labour, the Stolper–Samuelson and Rybczynski theorems, and the evidence.",
+      "requires": [
+        "international-trade/specific-factors"
+      ]
+    },
+    {
+      "slug": "new-trade-theory",
+      "title": "Increasing returns and imperfect competition",
+      "summary": "Intra-industry trade, monopolistic competition, the home-market effect and economic geography.",
+      "requires": [
+        "international-trade/heckscher-ohlin"
+      ]
+    },
+    {
+      "slug": "firms-in-trade",
+      "title": "Firms in the global economy",
+      "summary": "Heterogeneous firms and the Melitz model, exporting, multinational production and global value chains.",
+      "requires": [
+        "international-trade/new-trade-theory"
+      ]
+    },
+    {
+      "slug": "tariffs-and-quotas",
+      "title": "The instruments of trade policy",
+      "summary": "Tariffs, quotas and export subsidies in partial and general equilibrium, the large-country case and the optimal tariff.",
+      "requires": [
+        "international-trade/ricardian-model",
+        "microeconomics/competitive-markets"
+      ]
+    },
+    {
+      "slug": "political-economy-of-trade",
+      "title": "The political economy of trade policy",
+      "summary": "Why countries protect industries: interest groups and lobbying, infant industries and strategic trade policy.",
+      "requires": [
+        "international-trade/tariffs-and-quotas"
+      ]
+    },
+    {
+      "slug": "trade-agreements",
+      "title": "Trade agreements and the world trading system",
+      "summary": "The GATT and the WTO, regional trade agreements, trade wars and the settlement of trade disputes.",
+      "requires": [
+        "international-trade/political-economy-of-trade"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

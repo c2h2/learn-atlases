@@ -1,0 +1,88 @@
+{
+  "slug": "time-series",
+  "title": "Time Series",
+  "full_title": "Time-Series and Financial Econometrics",
+  "area": "methods",
+  "level": 4,
+  "order": 240,
+  "tagline": "Stationarity and autocorrelation, ARMA models, forecasting, unit roots, cointegration, vector autoregressions, volatility models and tests of asset-pricing models",
+  "summary": "Economic and financial data arrive as sequences in time, with trends, cycles, persistence and changing volatility. This course develops the models used to describe and forecast them — stationary ARMA processes, forecasting and its evaluation, unit roots and cointegration, vector autoregressions and impulse responses — and the econometrics of financial returns, from volatility clustering and GARCH models to tests of asset-pricing models.",
+  "overview": [],
+  "prerequisites": [
+    "econometrics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "stationarity",
+      "title": "Stationarity and autocorrelation",
+      "summary": "Time-series data, stationarity, autocovariance and autocorrelation functions, and white noise.",
+      "requires": [
+        "econometrics/economic-data"
+      ]
+    },
+    {
+      "slug": "arma-models",
+      "title": "ARMA models",
+      "summary": "Autoregressive and moving-average processes, their properties, identification and estimation.",
+      "requires": [
+        "time-series/stationarity",
+        "mathematical-economics/difference-and-differential-equations"
+      ]
+    },
+    {
+      "slug": "forecasting",
+      "title": "Forecasting",
+      "summary": "Optimal forecasts, forecast errors and intervals, model selection and the evaluation of forecasts.",
+      "requires": [
+        "time-series/arma-models"
+      ]
+    },
+    {
+      "slug": "unit-roots",
+      "title": "Trends and unit roots",
+      "summary": "Deterministic and stochastic trends, spurious regression and Dickey–Fuller tests.",
+      "requires": [
+        "time-series/arma-models",
+        "econometrics/inference"
+      ]
+    },
+    {
+      "slug": "cointegration",
+      "title": "Cointegration",
+      "summary": "Long-run relationships between non-stationary series, error-correction models, and the Engle–Granger and Johansen methods.",
+      "requires": [
+        "time-series/unit-roots"
+      ]
+    },
+    {
+      "slug": "var-models",
+      "title": "Vector autoregressions",
+      "summary": "VARs, Granger causality, impulse responses, variance decompositions and structural identification.",
+      "requires": [
+        "time-series/arma-models",
+        "econometrics/multiple-regression"
+      ]
+    },
+    {
+      "slug": "volatility",
+      "title": "Volatility models",
+      "summary": "Volatility clustering, ARCH and GARCH models, and realised volatility.",
+      "requires": [
+        "time-series/arma-models"
+      ]
+    },
+    {
+      "slug": "financial-econometrics",
+      "title": "Testing asset-pricing models",
+      "summary": "Return predictability, time-series and cross-sectional tests of factor models, and the generalised method of moments.",
+      "requires": [
+        "time-series/volatility",
+        "econometrics/instrumental-variables"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

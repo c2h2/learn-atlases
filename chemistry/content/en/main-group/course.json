@@ -1,0 +1,90 @@
+{
+  "slug": "main-group",
+  "title": "Main-Group Chemistry",
+  "full_title": "Inorganic Chemistry of the Main-Group Elements",
+  "area": "inorganic",
+  "level": 2,
+  "order": 100,
+  "tagline": "Periodic trends, bonding in main-group compounds, acids and bases, redox diagrams and the chemistry of the s- and p-block elements",
+  "summary": "Inorganic chemistry studies all the elements and their compounds. This course explains the periodic trends and bonding models that organise main-group chemistry and the acid–base and redox principles behind its reactions, then surveys the chemistry of hydrogen, the s block and groups 13 to 18.",
+  "overview": [],
+  "prerequisites": [
+    "bonding-structure",
+    "general-chemistry-2"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "periodic-trends",
+      "title": "Periodic trends in the main-group elements",
+      "summary": "Trends in size, ionisation energy, electronegativity and oxidation states across the s and p blocks, the inert-pair effect and diagonal relationships.",
+      "requires": [
+        "general-chemistry-1/periodicity"
+      ]
+    },
+    {
+      "slug": "main-group-bonding",
+      "title": "Structure and bonding in main-group compounds",
+      "summary": "Hypervalent molecules, three-centre bonds, electron-deficient compounds and multiple bonding in the heavier elements.",
+      "requires": [
+        "main-group/periodic-trends",
+        "bonding-structure/molecular-orbitals"
+      ]
+    },
+    {
+      "slug": "inorganic-acids-bases",
+      "title": "Acids, bases and the HSAB principle",
+      "summary": "The Brønsted acidity of oxides and oxoacids, Lewis acids and bases, hard and soft acids and bases, and non-aqueous solvents.",
+      "requires": [
+        "general-chemistry-2/acids-bases"
+      ]
+    },
+    {
+      "slug": "inorganic-redox",
+      "title": "Redox chemistry and the extraction of elements",
+      "summary": "Reduction potentials, Latimer, Frost and Pourbaix diagrams, disproportionation, and Ellingham diagrams for extracting metals from their ores.",
+      "requires": [
+        "general-chemistry-2/electrochemistry-intro"
+      ]
+    },
+    {
+      "slug": "hydrogen-s-block",
+      "title": "Hydrogen and the s-block elements",
+      "summary": "Hydrogen and its hydrides, the alkali and alkaline-earth metals, their compounds and their solutions in liquid ammonia.",
+      "requires": [
+        "main-group/periodic-trends"
+      ]
+    },
+    {
+      "slug": "groups-13-14",
+      "title": "Groups 13 and 14",
+      "summary": "Boron and the boranes, aluminium, the allotropes of carbon, and silicon, silicates and silicones.",
+      "requires": [
+        "main-group/main-group-bonding"
+      ]
+    },
+    {
+      "slug": "groups-15-16",
+      "title": "Groups 15 and 16",
+      "summary": "Nitrogen and phosphorus, oxygen and sulfur, and their hydrides, oxides and oxoacids.",
+      "requires": [
+        "main-group/main-group-bonding",
+        "main-group/inorganic-redox"
+      ]
+    },
+    {
+      "slug": "halogens-noble-gases",
+      "title": "The halogens and the noble gases",
+      "summary": "The halogens, interhalogen compounds and halogen oxoacids, and the compounds of the noble gases.",
+      "requires": [
+        "main-group/groups-15-16"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "coordination-chemistry",
+    "materials-chemistry"
+  ]
+}

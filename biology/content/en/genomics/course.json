@@ -1,0 +1,98 @@
+{
+  "slug": "genomics",
+  "title": "Genomics",
+  "full_title": "Genomics and Epigenomics",
+  "area": "genetics",
+  "level": 3,
+  "order": 160,
+  "tagline": "Sequencing and assembly, genome architecture, comparative and functional genomics, epigenomics, the 3D genome, human variation, association studies and metagenomics",
+  "summary": "Since the first genome of a free-living organism was sequenced in 1995, sequencing has become routine and cheap enough to read the genomes of thousands of species and hundreds of thousands of people. This course covers sequencing technologies and assembly, what genomes contain, comparative and functional genomics, epigenetic marks and the three-dimensional genome, human genetic variation, genome-wide association studies and the genomics of whole communities.",
+  "overview": [],
+  "prerequisites": [
+    "molecular-biology",
+    "population-genetics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "sequencing-genomes",
+      "title": "Sequencing genomes",
+      "summary": "From Sanger sequencing to short- and long-read technologies, and how reads are assembled into genomes.",
+      "requires": [
+        "molecular-biology/molecular-tools"
+      ]
+    },
+    {
+      "slug": "genome-architecture",
+      "title": "The architecture of genomes",
+      "summary": "Genome sizes, genes and non-coding DNA, repeats and transposons, and the C-value paradox.",
+      "requires": [
+        "genomics/sequencing-genomes"
+      ]
+    },
+    {
+      "slug": "comparative-genomics",
+      "title": "Comparative genomics",
+      "summary": "Gene families, orthologues and paralogues, whole-genome duplication and the evolution of genomes.",
+      "requires": [
+        "genomics/genome-architecture"
+      ]
+    },
+    {
+      "slug": "functional-genomics",
+      "title": "Functional genomics",
+      "summary": "Transcriptomes and RNA sequencing, single-cell methods and genome-wide genetic screens.",
+      "requires": [
+        "genomics/genome-architecture"
+      ]
+    },
+    {
+      "slug": "epigenomics",
+      "title": "Epigenetics and epigenomics",
+      "summary": "DNA methylation, histone marks, chromatin states and imprinting, and how they are mapped across the genome.",
+      "requires": [
+        "genomics/functional-genomics",
+        "molecular-biology/eukaryotic-gene-regulation"
+      ]
+    },
+    {
+      "slug": "nuclear-organisation",
+      "title": "The genome in three dimensions",
+      "summary": "Chromosome territories, loops and domains, and how the folding of the genome affects gene expression.",
+      "requires": [
+        "genomics/epigenomics"
+      ]
+    },
+    {
+      "slug": "human-variation",
+      "title": "Human genetic variation",
+      "summary": "Single-nucleotide and structural variants, haplotypes and the genetic structure of human populations.",
+      "requires": [
+        "genomics/comparative-genomics",
+        "population-genetics/linkage-disequilibrium"
+      ]
+    },
+    {
+      "slug": "association-studies",
+      "title": "Genome-wide association studies",
+      "summary": "Mapping the genetic basis of complex traits, polygenic scores and the limits of both.",
+      "requires": [
+        "genomics/human-variation",
+        "population-genetics/quantitative-traits"
+      ]
+    },
+    {
+      "slug": "metagenomics",
+      "title": "Metagenomics and environmental DNA",
+      "summary": "Sequencing whole communities, microbiomes, and surveying biodiversity from DNA in water and soil.",
+      "requires": [
+        "genomics/functional-genomics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "bioinformatics"
+  ]
+}

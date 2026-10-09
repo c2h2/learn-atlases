@@ -1,0 +1,108 @@
+{
+  "slug": "biochemistry",
+  "title": "Biochemistry",
+  "full_title": "Biochemistry: The Molecules of Life",
+  "area": "biological",
+  "level": 2,
+  "order": 120,
+  "tagline": "Water and noncovalent forces, proteins, enzymes, carbohydrates, lipids and membranes, nucleic acids, bioenergetics and metabolism",
+  "summary": "Biochemistry explains life in the language of chemistry. This course covers the noncovalent forces that organise biomolecules, the structure and function of proteins and enzymes, carbohydrates, lipids, membranes and nucleic acids, and then follows energy through metabolism, from glycolysis and the citric acid cycle to oxidative phosphorylation, photosynthesis and the metabolism of lipids and amino acids.",
+  "overview": [],
+  "prerequisites": [
+    "organic-1",
+    "general-chemistry-2"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "water-noncovalent",
+      "title": "Water and noncovalent interactions",
+      "summary": "Water as a solvent, hydrogen bonds, electrostatic and van der Waals interactions, the hydrophobic effect and physiological buffers.",
+      "requires": [
+        "general-chemistry-2/buffers-titrations",
+        "bonding-structure/intermolecular-forces"
+      ]
+    },
+    {
+      "slug": "amino-acids-proteins",
+      "title": "Amino acids and protein structure",
+      "summary": "The amino acids, the peptide bond, primary, secondary, tertiary and quaternary structure, and protein folding.",
+      "requires": [
+        "biochemistry/water-noncovalent",
+        "organic-1/stereochemistry"
+      ]
+    },
+    {
+      "slug": "protein-function",
+      "title": "Protein function: binding and allostery",
+      "summary": "Ligand binding, myoglobin and haemoglobin, cooperativity and allosteric regulation.",
+      "requires": [
+        "biochemistry/amino-acids-proteins"
+      ]
+    },
+    {
+      "slug": "enzymes",
+      "title": "Enzymes: kinetics and mechanism",
+      "summary": "Michaelis–Menten kinetics, inhibition, catalytic strategies such as those of the serine proteases, and the regulation of enzymes.",
+      "requires": [
+        "biochemistry/protein-function"
+      ]
+    },
+    {
+      "slug": "carbohydrates-lipids",
+      "title": "Carbohydrates, lipids and membranes",
+      "summary": "Monosaccharides and glycosidic bonds, polysaccharides, lipids, the structure of membranes and transport across them.",
+      "requires": [
+        "biochemistry/water-noncovalent",
+        "organic-1/stereochemistry"
+      ]
+    },
+    {
+      "slug": "nucleic-acids",
+      "title": "Nucleic acids",
+      "summary": "Nucleotides, the structures of DNA and RNA, and the chemistry of replication, transcription and translation.",
+      "requires": [
+        "biochemistry/water-noncovalent"
+      ]
+    },
+    {
+      "slug": "bioenergetics",
+      "title": "Bioenergetics",
+      "summary": "Free energy in living systems, ATP and coupled reactions, and the redox carriers NAD⁺ and FAD.",
+      "requires": [
+        "biochemistry/enzymes",
+        "general-chemistry-2/entropy-free-energy"
+      ]
+    },
+    {
+      "slug": "glycolysis-citric-acid",
+      "title": "Glycolysis and the citric acid cycle",
+      "summary": "The breakdown of glucose to pyruvate, the citric acid cycle, gluconeogenesis and the control of these pathways.",
+      "requires": [
+        "biochemistry/bioenergetics",
+        "biochemistry/carbohydrates-lipids"
+      ]
+    },
+    {
+      "slug": "oxidative-phosphorylation",
+      "title": "Oxidative phosphorylation and photosynthesis",
+      "summary": "The electron-transport chain, chemiosmosis and ATP synthase, and the light reactions and carbon fixation of photosynthesis.",
+      "requires": [
+        "biochemistry/glycolysis-citric-acid"
+      ]
+    },
+    {
+      "slug": "lipid-nitrogen-metabolism",
+      "title": "Lipid and nitrogen metabolism",
+      "summary": "The oxidation and synthesis of fatty acids, the breakdown of amino acids and the urea cycle, and how metabolism is integrated.",
+      "requires": [
+        "biochemistry/oxidative-phosphorylation"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "medicinal-chemistry"
+  ]
+}

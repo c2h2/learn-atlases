@@ -1,0 +1,92 @@
+{
+  "slug": "statics",
+  "title": "Statics",
+  "full_title": "Engineering Statics",
+  "area": "mechanics",
+  "level": 1,
+  "order": 10,
+  "tagline": "Forces and moments, equilibrium of particles and rigid bodies, trusses, frames and machines, friction, centroids and moments of inertia of areas",
+  "summary": "Statics is the mechanics of bodies that do not accelerate, and every bridge, crane and machine frame must first be in equilibrium. The course builds the vector tools of mechanics — forces, moments, couples and free-body diagrams — and applies the equations of equilibrium to particles, rigid bodies, trusses, frames and machines, friction, centroids and distributed loads, and the second moments of area used throughout structural design.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "forces-vectors",
+      "title": "Forces and vectors",
+      "summary": "Force as a vector, components in two and three dimensions, resultants, and the units and dimensions of mechanics.",
+      "requires": []
+    },
+    {
+      "slug": "particle-equilibrium",
+      "title": "Equilibrium of a particle",
+      "summary": "Free-body diagrams and the conditions for a particle to be in equilibrium in the plane and in space.",
+      "requires": [
+        "statics/forces-vectors"
+      ]
+    },
+    {
+      "slug": "moments-couples",
+      "title": "Moments and couples",
+      "summary": "The moment of a force about a point and about an axis, couples, and equivalent force–couple systems.",
+      "requires": [
+        "statics/forces-vectors"
+      ]
+    },
+    {
+      "slug": "rigid-body-equilibrium",
+      "title": "Equilibrium of rigid bodies",
+      "summary": "Supports and their reactions, the equations of equilibrium in two and three dimensions, and statical determinacy.",
+      "requires": [
+        "statics/particle-equilibrium",
+        "statics/moments-couples"
+      ]
+    },
+    {
+      "slug": "trusses",
+      "title": "Trusses",
+      "summary": "Plane trusses analysed by the method of joints and the method of sections, zero-force members and space trusses.",
+      "requires": [
+        "statics/rigid-body-equilibrium"
+      ]
+    },
+    {
+      "slug": "frames-machines",
+      "title": "Frames and machines",
+      "summary": "Multi-force members, pin forces and the analysis of frames, linkages and simple machines.",
+      "requires": [
+        "statics/rigid-body-equilibrium"
+      ]
+    },
+    {
+      "slug": "friction",
+      "title": "Friction",
+      "summary": "Coulomb friction, impending slipping and tipping, wedges, screws, belts and bearings.",
+      "requires": [
+        "statics/rigid-body-equilibrium"
+      ]
+    },
+    {
+      "slug": "centroids-distributed-loads",
+      "title": "Centroids and distributed loads",
+      "summary": "Centres of gravity and centroids by integration and by composite parts, and the resultants of distributed loads and fluid pressure.",
+      "requires": [
+        "statics/moments-couples"
+      ]
+    },
+    {
+      "slug": "area-moments",
+      "title": "Moments of inertia of areas",
+      "summary": "Second moments of area, the parallel-axis theorem, polar and product moments, and the principal axes of cross-sections.",
+      "requires": [
+        "statics/centroids-distributed-loads"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "dynamics",
+    "mechanics-of-materials"
+  ]
+}

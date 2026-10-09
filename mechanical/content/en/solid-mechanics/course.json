@@ -1,0 +1,99 @@
+{
+  "slug": "solid-mechanics",
+  "title": "Solid Mechanics",
+  "full_title": "Advanced Solid Mechanics: Elasticity, Plasticity and Fracture",
+  "area": "mechanics",
+  "level": 3,
+  "order": 140,
+  "tagline": "Stress and strain tensors, linear elasticity, energy methods, thick cylinders and rotating discs, thin-walled structures, plates, plasticity, fracture and composites",
+  "summary": "Solid mechanics goes beyond bars, shafts and beams to the general theory of deformable solids. The course develops stress and strain in three dimensions, the equations of linear elasticity and their classical solutions, energy methods, thick cylinders and rotating discs, thin-walled aircraft-type structures, the bending of plates, plasticity and limit loads, linear-elastic fracture mechanics and the mechanics of composite laminates.",
+  "overview": [],
+  "prerequisites": [
+    "mechanics-of-materials"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "stress-strain-3d",
+      "title": "Stress and strain in three dimensions",
+      "summary": "The Cauchy stress tensor and the equilibrium equations, the small-strain tensor and compatibility, principal values and strain-gauge rosettes.",
+      "requires": [
+        "mechanics-of-materials/stress-transformation"
+      ]
+    },
+    {
+      "slug": "linear-elasticity",
+      "title": "Linear elasticity",
+      "summary": "Generalised Hooke's law, the boundary-value problem of elasticity, plane stress and plane strain, and Airy stress functions.",
+      "requires": [
+        "solid-mechanics/stress-strain-3d"
+      ]
+    },
+    {
+      "slug": "energy-methods",
+      "title": "Energy methods",
+      "summary": "Strain energy, Castigliano's theorems, the principle of virtual work and the principle of minimum potential energy.",
+      "requires": [
+        "solid-mechanics/linear-elasticity",
+        "mechanics-of-materials/beam-deflection"
+      ]
+    },
+    {
+      "slug": "thick-cylinders-discs",
+      "title": "Thick cylinders and rotating discs",
+      "summary": "The Lamé solution for thick-walled cylinders, shrink fits and the stresses in rotating discs.",
+      "requires": [
+        "solid-mechanics/linear-elasticity"
+      ]
+    },
+    {
+      "slug": "thin-walled-structures",
+      "title": "Thin-walled structures",
+      "summary": "Bending, shear and torsion of thin-walled open and closed sections, shear flow and the shear centre, and multicell box beams.",
+      "requires": [
+        "mechanics-of-materials/transverse-shear",
+        "mechanics-of-materials/torsion"
+      ]
+    },
+    {
+      "slug": "plates",
+      "title": "Bending of thin plates",
+      "summary": "Kirchhoff plate theory, rectangular and circular plates under lateral load, and the buckling of plates.",
+      "requires": [
+        "solid-mechanics/linear-elasticity",
+        "mechanics-of-materials/buckling"
+      ]
+    },
+    {
+      "slug": "plasticity",
+      "title": "Plasticity",
+      "summary": "Yield criteria, flow rules and hardening, elastic–plastic bending and torsion, and limit analysis.",
+      "requires": [
+        "solid-mechanics/linear-elasticity"
+      ]
+    },
+    {
+      "slug": "fracture-mechanics",
+      "title": "Fracture mechanics",
+      "summary": "Stress intensity factors, energy release rate and fracture toughness, fatigue crack growth and damage-tolerant design.",
+      "requires": [
+        "solid-mechanics/linear-elasticity",
+        "materials-science/failure"
+      ]
+    },
+    {
+      "slug": "composites",
+      "title": "Mechanics of composite laminates",
+      "summary": "Orthotropic laminae, classical laminate theory and failure criteria for fibre composites.",
+      "requires": [
+        "solid-mechanics/linear-elasticity",
+        "materials-science/material-families"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "finite-element-method"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "slug": "foundations-of-writing",
+  "title": "Foundations of Writing",
+  "full_title": "Foundations of Writing: Observation, Narrative and Description",
+  "area": "writing",
+  "level": 1,
+  "order": 70,
+  "tagline": "The writing process, observation and material, theme and structure, narration, description, expressing feeling, exposition, language and punctuation, and revision",
+  "summary": "Most school leavers have written hundreds of compositions to a formula; good writing starts from looking closely and saying exactly what you mean. This course covers the writing process from observation and gathering material to choosing a theme and a structure, the modes of narration, description, expression of feeling and exposition, clear and correct language including punctuation, and the habit of revision.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "writing-process",
+      "title": "The writing process",
+      "summary": "From the urge to write to a finished piece: gathering, planning, drafting and revising, and why formulaic exam compositions are a poor model.",
+      "requires": []
+    },
+    {
+      "slug": "observation-material",
+      "title": "Observation and material",
+      "summary": "Seeing and recording precisely, keeping notebooks, reading as a writer, and choosing material.",
+      "requires": [
+        "foundations-of-writing/writing-process"
+      ]
+    },
+    {
+      "slug": "theme-structure",
+      "title": "Theme and structure",
+      "summary": "Finding what a piece is about, openings and endings, transitions and echoes, and the shape of the whole.",
+      "requires": [
+        "foundations-of-writing/observation-material"
+      ]
+    },
+    {
+      "slug": "narration",
+      "title": "Narration",
+      "summary": "Telling events clearly: order, person and point of view, pace, and detail.",
+      "requires": [
+        "foundations-of-writing/theme-structure"
+      ]
+    },
+    {
+      "slug": "description",
+      "title": "Description",
+      "summary": "Describing people, places and scenes through the senses, and the difference between description and decoration.",
+      "requires": [
+        "foundations-of-writing/narration"
+      ]
+    },
+    {
+      "slug": "expressing-feeling",
+      "title": "Expressing feeling",
+      "summary": "Direct and indirect expression of feeling, feeling conveyed through scene and event, and restraint.",
+      "requires": [
+        "foundations-of-writing/description"
+      ]
+    },
+    {
+      "slug": "exposition",
+      "title": "Exposition",
+      "summary": "Explaining things and processes clearly: definition, classification, example, comparison and figures.",
+      "requires": [
+        "foundations-of-writing/theme-structure"
+      ]
+    },
+    {
+      "slug": "language-punctuation",
+      "title": "Language and punctuation",
+      "summary": "Plain, precise language, the national standards for punctuation (GB/T 15834—2011) and for numbers (GB/T 15835—2011), and common errors.",
+      "requires": [
+        "foundations-of-writing/exposition"
+      ]
+    },
+    {
+      "slug": "revision",
+      "title": "Revision",
+      "summary": "Revising for content, structure and language, reading aloud to check, and giving and using feedback.",
+      "requires": [
+        "foundations-of-writing/language-punctuation",
+        "foundations-of-writing/expressing-feeling"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "argumentative-writing",
+    "applied-writing"
+  ]
+}

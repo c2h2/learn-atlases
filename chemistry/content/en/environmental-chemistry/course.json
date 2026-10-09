@@ -1,0 +1,97 @@
+{
+  "slug": "environmental-chemistry",
+  "title": "Environmental Chemistry",
+  "full_title": "Environmental and Atmospheric Chemistry",
+  "area": "materials",
+  "level": 3,
+  "order": 210,
+  "tagline": "Element cycles, stratospheric ozone, tropospheric chemistry, aerosols and acid deposition, greenhouse gases, natural waters, pollutants, soils and monitoring",
+  "summary": "Environmental chemistry studies the chemical processes of air, water and soil, and how human activity changes them. This course covers the global cycles of the elements, ozone chemistry in the stratosphere and troposphere, aerosols and acid deposition, greenhouse gases, the chemistry of natural waters, the fate and remediation of pollutants, and environmental monitoring.",
+  "overview": [],
+  "prerequisites": [
+    "analytical-chemistry",
+    "kinetics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "earth-system-chemistry",
+      "title": "Chemistry of the Earth system",
+      "summary": "Reservoirs, fluxes and residence times, and the global cycles of carbon, nitrogen and sulfur.",
+      "requires": [
+        "general-chemistry-2/chemical-equilibrium"
+      ]
+    },
+    {
+      "slug": "stratospheric-ozone",
+      "title": "Stratospheric ozone",
+      "summary": "The Chapman mechanism, catalytic destruction cycles, chlorofluorocarbons and the ozone hole, and the Montreal Protocol.",
+      "requires": [
+        "kinetics/chain-reactions",
+        "kinetics/photochemistry"
+      ]
+    },
+    {
+      "slug": "tropospheric-chemistry",
+      "title": "Tropospheric chemistry and smog",
+      "summary": "The hydroxyl radical, nitrogen oxides and volatile organic compounds, photochemical smog and ground-level ozone.",
+      "requires": [
+        "kinetics/photochemistry"
+      ]
+    },
+    {
+      "slug": "particulates-acid-deposition",
+      "title": "Particulate matter and acid deposition",
+      "summary": "The formation and composition of aerosols, fine particles and health, and sulfate, nitrate and acid rain.",
+      "requires": [
+        "environmental-chemistry/tropospheric-chemistry"
+      ]
+    },
+    {
+      "slug": "greenhouse-gases",
+      "title": "Greenhouse gases and climate",
+      "summary": "Radiative forcing and the greenhouse gases, the carbon cycle and ocean acidification.",
+      "requires": [
+        "environmental-chemistry/earth-system-chemistry"
+      ]
+    },
+    {
+      "slug": "natural-waters",
+      "title": "The chemistry of natural waters",
+      "summary": "The carbonate system and alkalinity, redox conditions and metal speciation in rivers, lakes and the oceans.",
+      "requires": [
+        "environmental-chemistry/earth-system-chemistry",
+        "analytical-chemistry/equilibria-in-analysis"
+      ]
+    },
+    {
+      "slug": "pollutants-fate",
+      "title": "Pollutants and their fate",
+      "summary": "Persistent organic pollutants and heavy metals, partitioning between air, water and soil, and bioaccumulation.",
+      "requires": [
+        "environmental-chemistry/natural-waters"
+      ]
+    },
+    {
+      "slug": "soils-remediation",
+      "title": "Soils, water treatment and remediation",
+      "summary": "Soil chemistry and sorption, the treatment of drinking water and wastewater, and the remediation of contaminated land.",
+      "requires": [
+        "environmental-chemistry/pollutants-fate"
+      ]
+    },
+    {
+      "slug": "environmental-monitoring",
+      "title": "Environmental monitoring and analysis",
+      "summary": "Sampling strategies, trace analysis, quality control and the role of monitoring in regulation.",
+      "requires": [
+        "analytical-chemistry/hyphenated-methods"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "green-chemistry"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "sounds-of-english",
+  "title": "Sounds of English",
+  "full_title": "The Sounds of English",
+  "area": "sounds",
+  "level": 1,
+  "order": 10,
+  "tagline": "How speech is made, the phonemic alphabet, vowels and consonants, syllables and clusters, spelling and sound, word stress, and the sounds Chinese speakers find hardest",
+  "summary": "English has around 40 to 44 distinctive sounds, depending on the accent, and its spelling shows them only roughly. This course explains how speech sounds are made, how to read the phonemic symbols used in dictionaries, the vowels and consonants of General British and General American English, how sounds combine into syllables, how spelling maps onto sound and the basics of word stress, with special attention to the contrasts that Mandarin does not make.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "how-speech-is-made",
+      "title": "How speech is made",
+      "summary": "The organs of speech, voicing, and how the tongue, lips and soft palate shape the airflow into vowels and consonants.",
+      "requires": []
+    },
+    {
+      "slug": "phonemic-alphabet",
+      "title": "The phonemic alphabet",
+      "summary": "Phonemes, the IPA symbols for English used in learner’s dictionaries, General British and General American as models, and how to read a transcription.",
+      "requires": [
+        "sounds-of-english/how-speech-is-made"
+      ]
+    },
+    {
+      "slug": "short-vowels",
+      "title": "Short vowels",
+      "summary": "The short vowels of *ship*, *bed*, *cat*, *cup*, *hot* and *book*, how they differ from the long vowels, and schwa, the most common vowel in English.",
+      "requires": [
+        "sounds-of-english/phonemic-alphabet"
+      ]
+    },
+    {
+      "slug": "long-vowels-diphthongs",
+      "title": "Long vowels and diphthongs",
+      "summary": "The long vowels of *sheep*, *car*, *bird*, *door* and *food*, the gliding vowels of *face*, *price*, *choice*, *goat* and *mouth*, and the main differences between British and American vowels.",
+      "requires": [
+        "sounds-of-english/short-vowels"
+      ]
+    },
+    {
+      "slug": "stops-fricatives",
+      "title": "Stops, fricatives and affricates",
+      "summary": "The consonants made by stopping or narrowing the airflow — *p*, *b*, *t*, *d*, *k*, *g*, *f*, *v*, the two *th* sounds, *s*, *z*, *sh*, the middle sound of *measure*, *h*, *ch* and *j* — and how voicing, aspiration and the length of the vowel before them keep pairs like *bag* and *back* apart.",
+      "requires": [
+        "sounds-of-english/phonemic-alphabet"
+      ]
+    },
+    {
+      "slug": "nasals-approximants",
+      "title": "Nasals, *l*, *r*, *w* and *y*",
+      "summary": "The nasals *m*, *n* and *ng*, especially at the ends of words, the two kinds of *l*, *r* in British and American accents, and the glides *w* and *y*.",
+      "requires": [
+        "sounds-of-english/stops-fricatives"
+      ]
+    },
+    {
+      "slug": "syllables-clusters",
+      "title": "Syllables and consonant clusters",
+      "summary": "How English builds syllables with up to three consonants before the vowel and four after it, and how to say clusters such as *str-*, *-lts* and *-xths* without adding extra vowels.",
+      "requires": [
+        "sounds-of-english/nasals-approximants",
+        "sounds-of-english/long-vowels-diphthongs"
+      ]
+    },
+    {
+      "slug": "spelling-and-sound",
+      "title": "Spelling and sound",
+      "summary": "The main patterns linking letters to sounds — single and double consonants, silent *e*, common vowel spellings and silent letters — and why so many everyday words break them.",
+      "requires": [
+        "sounds-of-english/syllables-clusters"
+      ]
+    },
+    {
+      "slug": "word-stress-basics",
+      "title": "Word stress",
+      "summary": "Stressed and unstressed syllables, how dictionaries mark stress, the usual stress of two-syllable nouns and verbs, and how misplaced stress makes a word hard to recognise.",
+      "requires": [
+        "sounds-of-english/syllables-clusters"
+      ]
+    },
+    {
+      "slug": "sounds-for-chinese-speakers",
+      "title": "Sounds for Chinese speakers",
+      "summary": "The contrasts Chinese speakers most often need to practise — long and short vowels, the *th* sounds, final consonants and, for speakers of some dialects, *l* and *n* or *v* and *w* — why Pinyin spellings can mislead, and how to practise with minimal pairs.",
+      "requires": [
+        "sounds-of-english/spelling-and-sound",
+        "sounds-of-english/word-stress-basics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "connected-speech",
+    "everyday-english"
+  ]
+}

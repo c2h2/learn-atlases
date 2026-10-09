@@ -1,0 +1,95 @@
+{
+  "slug": "international-finance",
+  "title": "International Finance",
+  "full_title": "International Macroeconomics and Finance",
+  "area": "global",
+  "level": 3,
+  "order": 160,
+  "tagline": "The balance of payments, exchange rates and interest parity, purchasing power parity, the current account, Mundell–Fleming, exchange-rate regimes, monetary unions, crises and the international monetary system",
+  "summary": "How do exchange rates move, why do countries run current-account deficits, and what happens when capital flows reverse? This course covers the national accounts of an open economy, exchange rates and interest parity, purchasing power parity, the intertemporal approach to the current account, the Mundell–Fleming model, the choice of exchange-rate regime and monetary unions, currency, banking and debt crises, and the evolution of the international monetary system.",
+  "overview": [],
+  "prerequisites": [
+    "macroeconomics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "balance-of-payments",
+      "title": "The balance of payments",
+      "summary": "Open-economy national accounts, the current and financial accounts, and the net international investment position.",
+      "requires": [
+        "macroeconomics/national-income"
+      ]
+    },
+    {
+      "slug": "exchange-rates",
+      "title": "Exchange rates and the foreign-exchange market",
+      "summary": "Nominal and real exchange rates, covered and uncovered interest parity, and the asset approach to exchange rates.",
+      "requires": [
+        "international-finance/balance-of-payments"
+      ]
+    },
+    {
+      "slug": "ppp",
+      "title": "Purchasing power parity and the long run",
+      "summary": "The law of one price, purchasing power parity and its failures, and the Balassa–Samuelson effect.",
+      "requires": [
+        "international-finance/exchange-rates"
+      ]
+    },
+    {
+      "slug": "current-account",
+      "title": "The intertemporal approach to the current account",
+      "summary": "Saving, investment and international borrowing, global imbalances and the sustainability of external debt.",
+      "requires": [
+        "international-finance/balance-of-payments",
+        "macroeconomics/consumption-and-saving"
+      ]
+    },
+    {
+      "slug": "mundell-fleming",
+      "title": "Output and exchange rates in the short run",
+      "summary": "The Mundell–Fleming model, fiscal and monetary policy under fixed and floating rates, and exchange-rate overshooting.",
+      "requires": [
+        "international-finance/exchange-rates",
+        "macroeconomics/is-lm"
+      ]
+    },
+    {
+      "slug": "exchange-rate-regimes",
+      "title": "Exchange-rate regimes and the trilemma",
+      "summary": "Fixed, floating and intermediate regimes, the impossible trinity and capital controls.",
+      "requires": [
+        "international-finance/mundell-fleming"
+      ]
+    },
+    {
+      "slug": "monetary-unions",
+      "title": "Monetary unions",
+      "summary": "Optimum currency areas, the euro, and the lessons of the euro-area crisis.",
+      "requires": [
+        "international-finance/exchange-rate-regimes"
+      ]
+    },
+    {
+      "slug": "crises",
+      "title": "Currency, banking and sovereign debt crises",
+      "summary": "Speculative attacks, sudden stops, twin crises and sovereign default.",
+      "requires": [
+        "international-finance/exchange-rate-regimes",
+        "international-finance/current-account"
+      ]
+    },
+    {
+      "slug": "international-monetary-system",
+      "title": "The international monetary system",
+      "summary": "From the gold standard and Bretton Woods to floating rates, reserve currencies and the role of the IMF.",
+      "requires": [
+        "international-finance/exchange-rate-regimes"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

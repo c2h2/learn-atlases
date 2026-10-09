@@ -1,0 +1,93 @@
+{
+  "slug": "green-chemistry",
+  "title": "Green and Industrial Chemistry",
+  "full_title": "Green Chemistry and Industrial Processes",
+  "area": "materials",
+  "level": 4,
+  "order": 240,
+  "tagline": "Principles and metrics of green chemistry, the chemical industry, industrial processes, safer solvents, renewable feedstocks, carbon management and recycling",
+  "summary": "Chemistry at industrial scale feeds and equips the world, and it must do so sustainably. This course introduces the principles and metrics of green chemistry, surveys the chemical industry and its major inorganic and petrochemical processes, and examines safer solvents and conditions, renewable feedstocks, carbon capture and low-emission hydrogen, and recycling in a circular economy.",
+  "overview": [],
+  "prerequisites": [
+    "organometallics-catalysis",
+    "thermodynamics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "green-principles",
+      "title": "Principles of green chemistry",
+      "summary": "The twelve principles of green chemistry, hazard and risk, and life-cycle thinking.",
+      "requires": []
+    },
+    {
+      "slug": "green-metrics",
+      "title": "Measuring greenness",
+      "summary": "Atom economy, the E-factor, process mass intensity and life-cycle assessment.",
+      "requires": [
+        "green-chemistry/green-principles",
+        "general-chemistry-1/stoichiometry"
+      ]
+    },
+    {
+      "slug": "chemical-industry",
+      "title": "The chemical industry",
+      "summary": "Feedstocks and products, bulk, fine and speciality chemicals, and scaling a reaction up from the laboratory.",
+      "requires": [
+        "green-chemistry/green-principles"
+      ]
+    },
+    {
+      "slug": "industrial-inorganic",
+      "title": "Industrial inorganic processes",
+      "summary": "Ammonia, sulfuric acid, chlor-alkali and fertilisers: choosing conditions that balance equilibrium, rate and cost.",
+      "requires": [
+        "green-chemistry/chemical-industry",
+        "thermodynamics/reaction-equilibrium"
+      ]
+    },
+    {
+      "slug": "petrochemicals",
+      "title": "Petrochemicals",
+      "summary": "Refining and cracking, steam cracking, and the major intermediates and polymers made from oil and gas.",
+      "requires": [
+        "green-chemistry/chemical-industry"
+      ]
+    },
+    {
+      "slug": "safer-solvents",
+      "title": "Safer solvents and conditions",
+      "summary": "Solvent selection, water and supercritical carbon dioxide as solvents, ionic liquids, and continuous-flow chemistry.",
+      "requires": [
+        "green-chemistry/green-metrics"
+      ]
+    },
+    {
+      "slug": "renewable-feedstocks",
+      "title": "Renewable feedstocks and biocatalysis",
+      "summary": "Biomass and platform chemicals, biorefineries, and enzymes as industrial catalysts.",
+      "requires": [
+        "green-chemistry/chemical-industry"
+      ]
+    },
+    {
+      "slug": "carbon-hydrogen",
+      "title": "Carbon capture and low-emission hydrogen",
+      "summary": "Capturing and using carbon dioxide, producing hydrogen with low emissions, and storing energy in chemicals.",
+      "requires": [
+        "green-chemistry/industrial-inorganic"
+      ]
+    },
+    {
+      "slug": "circular-economy",
+      "title": "Recycling and the circular economy",
+      "summary": "Mechanical and chemical recycling, design for end of life, and chemicals regulation such as REACH.",
+      "requires": [
+        "green-chemistry/renewable-feedstocks"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

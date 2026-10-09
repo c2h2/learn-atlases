@@ -1,0 +1,97 @@
+{
+  "slug": "word-formation",
+  "title": "Word Formation",
+  "full_title": "Word Formation: How Words Are Made",
+  "area": "words",
+  "level": 2,
+  "order": 90,
+  "tagline": "Morphemes, prefixes, suffixes and word class, compounds, conversion, clipping, blends and acronyms, Greek and Latin roots, spelling changes, and learning words through their parts",
+  "summary": "Most English words are built from smaller parts, and recognising those parts lets a learner guess the meaning of new words and turn one word into many. This course explains roots and affixes, the prefixes and suffixes that do most of the work, compounds, conversion between word classes, shortened words, the Greek and Latin roots of academic vocabulary, and the spelling changes that happen when words are built.",
+  "overview": [],
+  "prerequisites": [
+    "core-vocabulary"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "morphemes",
+      "title": "Morphemes",
+      "summary": "Roots, prefixes and suffixes, the difference between endings that make new words and endings that mark grammar, and how to split a word into its parts.",
+      "requires": [
+        "core-vocabulary/word-families"
+      ]
+    },
+    {
+      "slug": "prefixes",
+      "title": "Prefixes",
+      "summary": "The common prefixes of negation, number, time, place and degree — *un-*, *in-*, *dis-*, *re-*, *pre-*, *over-*, *mis-* and others — and what they add.",
+      "requires": [
+        "word-formation/morphemes"
+      ]
+    },
+    {
+      "slug": "suffixes",
+      "title": "Suffixes and word class",
+      "summary": "Suffixes that make nouns (*-tion*, *-ment*, *-ness*, *-ity*), adjectives (*-able*, *-ful*, *-ous*), verbs (*-ise*, *-en*) and adverbs (*-ly*), and how some of them move the stress.",
+      "requires": [
+        "word-formation/morphemes"
+      ]
+    },
+    {
+      "slug": "compounds",
+      "title": "Compounds",
+      "summary": "Compounds such as *bus stop* and *greenhouse*, how stress tells a compound (*a greenhouse*) from a phrase (*a green house*), and how compounds are written.",
+      "requires": [
+        "word-formation/suffixes"
+      ]
+    },
+    {
+      "slug": "conversion",
+      "title": "Conversion",
+      "summary": "Words that change class without changing form — *to email*, *a must*, *to google* — and how to tell which class a word belongs to in a sentence.",
+      "requires": [
+        "word-formation/suffixes"
+      ]
+    },
+    {
+      "slug": "shortening",
+      "title": "Clipping, blends and acronyms",
+      "summary": "Shortened words like *lab* and *flu*, blends like *brunch* and *smog*, and acronyms and initialisms such as *NASA* and *BBC*.",
+      "requires": [
+        "word-formation/morphemes"
+      ]
+    },
+    {
+      "slug": "greek-latin-roots",
+      "title": "Greek and Latin roots",
+      "summary": "The roots behind academic and scientific words — *bio-*, *-graph*, *-logy*, *port*, *spect*, *dict* — and how to use them to guess meanings.",
+      "requires": [
+        "word-formation/prefixes",
+        "word-formation/suffixes"
+      ]
+    },
+    {
+      "slug": "spelling-changes",
+      "title": "Spelling changes in word building",
+      "summary": "Dropping *e*, doubling consonants, changing *y* to *i*, and the choice between *-able* and *-ible* and between *-ance* and *-ence*.",
+      "requires": [
+        "word-formation/suffixes"
+      ]
+    },
+    {
+      "slug": "learning-with-word-formation",
+      "title": "Learning words through their parts",
+      "summary": "Using word parts to guess meanings, the traps of false analysis, and building word families into vocabulary practice.",
+      "requires": [
+        "word-formation/greek-latin-roots",
+        "word-formation/conversion"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "collocation-and-register",
+    "history-of-english"
+  ]
+}

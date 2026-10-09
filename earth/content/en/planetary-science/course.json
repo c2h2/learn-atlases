@@ -1,0 +1,93 @@
+{
+  "slug": "planetary-science",
+  "title": "Planetary Science",
+  "full_title": "Planetary Science",
+  "area": "solid",
+  "level": 4,
+  "order": 240,
+  "tagline": "Formation of the Solar System, meteorites, impact cratering, the Moon, the terrestrial planets, interiors and magnetic fields, atmospheres, giant planets, icy moons, small bodies and exoplanets",
+  "summary": "Comparing the Earth with other worlds shows which of its features are universal and which are unusual. This course covers the formation of the Solar System and the evidence of meteorites, impact cratering, the Moon, the surfaces and interiors of Mercury, Venus and Mars, planetary atmospheres and climates, the giant planets, icy moons and small bodies, and what exoplanets reveal about planets in general.",
+  "overview": [],
+  "prerequisites": [
+    "geophysics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "formation",
+      "title": "Formation of the Solar System",
+      "summary": "The solar nebula, condensation, planetesimals, and the growth and migration of the planets.",
+      "requires": []
+    },
+    {
+      "slug": "meteorites",
+      "title": "Meteorites and the early Solar System",
+      "summary": "Chondrites, achondrites and iron meteorites, and what they reveal about the first few million years.",
+      "requires": [
+        "planetary-science/formation"
+      ]
+    },
+    {
+      "slug": "impacts",
+      "title": "Impact cratering",
+      "summary": "The physics of impacts, crater forms, crater counting as a dating tool, and impacts in Earth history.",
+      "requires": [
+        "planetary-science/formation"
+      ]
+    },
+    {
+      "slug": "moon",
+      "title": "The Moon",
+      "summary": "Lunar geology, the Apollo samples, the lunar magma ocean and the origin of the Moon.",
+      "requires": [
+        "planetary-science/impacts"
+      ]
+    },
+    {
+      "slug": "terrestrial-planets",
+      "title": "Mercury, Venus and Mars",
+      "summary": "The surfaces, tectonics and volcanism of the rocky planets compared with the Earth.",
+      "requires": [
+        "planetary-science/impacts",
+        "physical-geology/plate-tectonics"
+      ]
+    },
+    {
+      "slug": "interiors",
+      "title": "Planetary interiors and magnetic fields",
+      "summary": "Density, moment of inertia and gravity fields, internal heat, and dynamos in planets and moons.",
+      "requires": [
+        "geophysics/gravity-isostasy",
+        "geophysics/geomagnetism"
+      ]
+    },
+    {
+      "slug": "atmospheres",
+      "title": "Planetary atmospheres and climates",
+      "summary": "The atmospheres of Venus, Mars and Titan, runaway greenhouses, atmospheric escape and habitability.",
+      "requires": [
+        "planetary-science/terrestrial-planets"
+      ]
+    },
+    {
+      "slug": "outer-solar-system",
+      "title": "Giant planets, icy moons and small bodies",
+      "summary": "Jupiter and Saturn, ocean worlds such as Europa and Enceladus, comets, asteroids and the Kuiper belt.",
+      "requires": [
+        "planetary-science/interiors"
+      ]
+    },
+    {
+      "slug": "exoplanets",
+      "title": "Exoplanets",
+      "summary": "How planets around other stars are found, the diversity of planetary systems, and the search for habitable worlds.",
+      "requires": [
+        "planetary-science/atmospheres",
+        "planetary-science/outer-solar-system"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

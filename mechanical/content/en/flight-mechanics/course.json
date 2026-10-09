@@ -1,0 +1,88 @@
+{
+  "slug": "flight-mechanics",
+  "title": "Flight Mechanics",
+  "full_title": "Flight Mechanics: Performance, Stability and Control",
+  "area": "aerospace",
+  "level": 3,
+  "order": 190,
+  "tagline": "Aircraft performance, range and endurance, manoeuvres, take-off and landing, static stability and trim, equations of motion, dynamic modes and flight control",
+  "summary": "Flight mechanics predicts how an aircraft flies: how fast, how far and how high it can go, whether it is stable, and how it is controlled. The course covers steady-flight performance, range and endurance, turns and take-off and landing, longitudinal and lateral–directional static stability and trim, the rigid-body equations of motion, the dynamic modes of an aircraft, and an introduction to stability augmentation and autopilots.",
+  "overview": [],
+  "prerequisites": [
+    "aerodynamics",
+    "dynamics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "steady-flight-performance",
+      "title": "Steady flight performance",
+      "summary": "The standard atmosphere and airspeeds, drag polars, thrust and power required and available, maximum speed, climb and gliding flight.",
+      "requires": [
+        "aerodynamics/finite-wings",
+        "aerodynamics/viscous-aerodynamics"
+      ]
+    },
+    {
+      "slug": "range-endurance",
+      "title": "Range and endurance",
+      "summary": "The Breguet equations for jet and propeller aircraft, and the best speeds for range and endurance.",
+      "requires": [
+        "flight-mechanics/steady-flight-performance"
+      ]
+    },
+    {
+      "slug": "manoeuvres-takeoff-landing",
+      "title": "Manoeuvres, take-off and landing",
+      "summary": "Turning flight, load factor and the V–n diagram, and take-off and landing distances.",
+      "requires": [
+        "flight-mechanics/steady-flight-performance"
+      ]
+    },
+    {
+      "slug": "longitudinal-static-stability",
+      "title": "Longitudinal static stability and trim",
+      "summary": "Pitching moment, the neutral point and static margin, trim with the elevator, and stick-fixed and stick-free stability.",
+      "requires": [
+        "flight-mechanics/steady-flight-performance",
+        "aerodynamics/thin-airfoil-theory"
+      ]
+    },
+    {
+      "slug": "lateral-static-stability",
+      "title": "Lateral–directional static stability",
+      "summary": "Directional and roll stability, the dihedral effect, and rudder and aileron control.",
+      "requires": [
+        "flight-mechanics/longitudinal-static-stability"
+      ]
+    },
+    {
+      "slug": "aircraft-equations-of-motion",
+      "title": "Aircraft equations of motion",
+      "summary": "Body axes and Euler angles, the rigid-body equations of motion, stability derivatives and linearisation about trim.",
+      "requires": [
+        "flight-mechanics/longitudinal-static-stability",
+        "dynamics/three-dimensional-dynamics"
+      ]
+    },
+    {
+      "slug": "dynamic-modes",
+      "title": "Dynamic stability and aircraft modes",
+      "summary": "The phugoid and short-period modes, Dutch roll, roll subsidence and the spiral mode, and handling qualities.",
+      "requires": [
+        "flight-mechanics/aircraft-equations-of-motion"
+      ]
+    },
+    {
+      "slug": "flight-control",
+      "title": "Introduction to flight control",
+      "summary": "Stability augmentation, autopilots and fly-by-wire control laws.",
+      "requires": [
+        "flight-mechanics/dynamic-modes"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

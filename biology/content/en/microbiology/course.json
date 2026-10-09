@@ -1,0 +1,97 @@
+{
+  "slug": "microbiology",
+  "title": "Microbiology",
+  "full_title": "Microbiology",
+  "area": "organisms",
+  "level": 2,
+  "order": 80,
+  "tagline": "Microbial cells, growth, metabolism, diversity and evolution, viruses, microbial ecology, microbes and hosts, and antimicrobials",
+  "summary": "Microbes are the most abundant and metabolically diverse organisms on Earth. This course covers the structure of bacterial and archaeal cells, how microbes grow, their remarkable range of metabolism, microbial diversity and evolution, viruses, microbial communities and their part in the cycles of the elements, relationships with hosts, and the control of microbes and the evolution of resistance.",
+  "overview": [],
+  "prerequisites": [
+    "cell-biology",
+    "biochemistry"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "microbial-world",
+      "title": "The microbial world",
+      "summary": "What microbes are, how they were discovered from van Leeuwenhoek to Pasteur and Koch, and how they are studied today.",
+      "requires": []
+    },
+    {
+      "slug": "microbial-cells",
+      "title": "Structure of microbial cells",
+      "summary": "Cell walls and envelopes, flagella and pili, endospores, and how archaeal cells differ from bacterial ones.",
+      "requires": [
+        "microbiology/microbial-world",
+        "cell-biology/membranes"
+      ]
+    },
+    {
+      "slug": "microbial-growth",
+      "title": "Microbial growth",
+      "summary": "Binary fission, exponential growth and the growth curve, and the effects of temperature, pH and oxygen.",
+      "requires": [
+        "microbiology/microbial-cells"
+      ]
+    },
+    {
+      "slug": "microbial-metabolism",
+      "title": "Microbial metabolism",
+      "summary": "Fermentation, aerobic and anaerobic respiration, chemolithotrophy, phototrophy and nitrogen fixation.",
+      "requires": [
+        "microbiology/microbial-growth",
+        "biochemistry/oxidative-phosphorylation"
+      ]
+    },
+    {
+      "slug": "microbial-diversity",
+      "title": "Microbial evolution and diversity",
+      "summary": "Ribosomal RNA phylogeny, horizontal gene transfer, metagenomic discovery and the major microbial lineages.",
+      "requires": [
+        "microbiology/microbial-cells"
+      ]
+    },
+    {
+      "slug": "viruses",
+      "title": "Viruses",
+      "summary": "Virus structure, the replication cycles of bacteriophages and animal viruses, and the diversity of viruses.",
+      "requires": [
+        "microbiology/microbial-cells"
+      ]
+    },
+    {
+      "slug": "microbial-ecology",
+      "title": "Microbial ecology",
+      "summary": "Microbial communities and biofilms, symbioses, and the part microbes play in cycling carbon, nitrogen and sulfur.",
+      "requires": [
+        "microbiology/microbial-metabolism",
+        "microbiology/microbial-diversity"
+      ]
+    },
+    {
+      "slug": "microbes-and-hosts",
+      "title": "Microbes and their hosts",
+      "summary": "Microbiomes, mutualism and commensalism, and an outline of how pathogens cause disease.",
+      "requires": [
+        "microbiology/microbial-ecology",
+        "microbiology/viruses"
+      ]
+    },
+    {
+      "slug": "antimicrobials",
+      "title": "Controlling microbes",
+      "summary": "Sterilisation and disinfection, how antibiotics work, and the evolution and spread of antimicrobial resistance.",
+      "requires": [
+        "microbiology/microbes-and-hosts"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "biotechnology"
+  ]
+}

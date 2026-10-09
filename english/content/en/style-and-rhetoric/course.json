@@ -1,0 +1,107 @@
+{
+  "slug": "style-and-rhetoric",
+  "title": "Style and Rhetoric",
+  "full_title": "Style and Rhetoric: Writing with Clarity and Force",
+  "area": "writing",
+  "level": 4,
+  "order": 210,
+  "tagline": "Clarity, concision, cohesion and emphasis, sentence variety and rhythm, word choice, the rhetorical appeals, figures of speech, persuasive writing and speeches, writing for different readers, and editing for style",
+  "summary": "Correct English can still be hard to read. This course teaches the principles of clear style — characters as subjects and actions as verbs, concision, familiar information before new, emphasis at the end of the sentence — and the classical tools of rhetoric, applied to persuasive writing, speeches and writing for different readers and media.",
+  "overview": [],
+  "prerequisites": [
+    "essay-writing",
+    "collocation-and-register"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "clarity",
+      "title": "Clarity: characters and actions",
+      "summary": "Making the main characters the subjects and their actions the verbs, and unpacking nominalisations.",
+      "requires": [
+        "essay-writing/revising-editing"
+      ]
+    },
+    {
+      "slug": "concision",
+      "title": "Concision",
+      "summary": "Cutting redundancy, empty phrases and unnecessary hedges without losing meaning.",
+      "requires": [
+        "style-and-rhetoric/clarity"
+      ]
+    },
+    {
+      "slug": "cohesion-emphasis",
+      "title": "Cohesion and emphasis",
+      "summary": "Putting familiar information first and new or important information at the end of the sentence.",
+      "requires": [
+        "style-and-rhetoric/clarity"
+      ]
+    },
+    {
+      "slug": "sentence-variety",
+      "title": "Sentence variety and rhythm",
+      "summary": "Varying the length and structure of sentences, using parallelism, and reading prose aloud to hear its rhythm.",
+      "requires": [
+        "style-and-rhetoric/cohesion-emphasis"
+      ]
+    },
+    {
+      "slug": "word-choice",
+      "title": "Word choice",
+      "summary": "Plain English, jargon, euphemism and cliché, and choosing the concrete word over the abstract one.",
+      "requires": [
+        "style-and-rhetoric/concision",
+        "collocation-and-register/connotation"
+      ]
+    },
+    {
+      "slug": "rhetorical-appeals",
+      "title": "The rhetorical appeals",
+      "summary": "Ethos, pathos and logos: how writers and speakers build credibility, engage feelings and reason with an audience.",
+      "requires": [
+        "style-and-rhetoric/cohesion-emphasis"
+      ]
+    },
+    {
+      "slug": "figures-of-speech",
+      "title": "Figures of speech",
+      "summary": "Metaphor, simile, antithesis, the rule of three, repetition and the rhetorical question.",
+      "requires": [
+        "style-and-rhetoric/rhetorical-appeals"
+      ]
+    },
+    {
+      "slug": "persuasive-writing",
+      "title": "Persuasive writing and speeches",
+      "summary": "Structuring a persuasive text, with famous speeches in the public domain as models.",
+      "requires": [
+        "style-and-rhetoric/figures-of-speech"
+      ]
+    },
+    {
+      "slug": "readers-and-media",
+      "title": "Writing for different readers",
+      "summary": "Reports, web pages, journalism and instructions, and adapting style to readers and media.",
+      "requires": [
+        "style-and-rhetoric/word-choice"
+      ]
+    },
+    {
+      "slug": "editing-for-style",
+      "title": "Editing for style",
+      "summary": "Revising a draft for clarity, concision and emphasis, step by step.",
+      "requires": [
+        "style-and-rhetoric/sentence-variety",
+        "style-and-rhetoric/persuasive-writing",
+        "style-and-rhetoric/readers-and-media"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "reading-literature",
+    "translation"
+  ]
+}

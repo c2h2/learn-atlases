@@ -1,0 +1,92 @@
+{
+  "slug": "economic-history",
+  "title": "Economic History",
+  "full_title": "Economic History of the Modern World",
+  "area": "global",
+  "level": 1,
+  "order": 30,
+  "tagline": "The Malthusian world, the Industrial Revolution, the great divergence, globalisation and empire, the Great Depression, post-war growth, planning and the rise of Asia",
+  "summary": "Why are some countries rich and others poor, and how did the modern world economy come to be? This course traces economic life from the Malthusian world before 1800 through the Industrial Revolution, the great divergence, the first globalisation and the colonial economy, the interwar collapse and the Great Depression, the post-war golden age, central planning and transition, and late industrialisation in Asia. Throughout, data and simple economic models are used to test competing explanations.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "malthusian-world",
+      "title": "Before modern growth: the Malthusian world",
+      "summary": "Population, wages and technology in pre-industrial economies, and the Malthusian model of stagnant living standards.",
+      "requires": []
+    },
+    {
+      "slug": "industrial-revolution",
+      "title": "The Industrial Revolution",
+      "summary": "Why sustained growth began in Britain around 1760–1830: coal, wages, technology, science and the measured pace of early growth.",
+      "requires": [
+        "economic-history/malthusian-world"
+      ]
+    },
+    {
+      "slug": "great-divergence",
+      "title": "The great divergence",
+      "summary": "How Western Europe and its offshoots pulled ahead of China, India and the rest of the world, and the debate over institutions, resources and culture.",
+      "requires": [
+        "economic-history/industrial-revolution"
+      ]
+    },
+    {
+      "slug": "first-globalisation",
+      "title": "The first globalisation, 1870–1914",
+      "summary": "Falling transport costs, mass migration, capital flows and the gold standard, and the convergence of prices and wages across the Atlantic.",
+      "requires": [
+        "economic-history/great-divergence"
+      ]
+    },
+    {
+      "slug": "empire-and-colonialism",
+      "title": "Empire and the colonial economy",
+      "summary": "The economics of empire, colonial institutions in Africa, Asia and Latin America, the slave trades, and their long-run effects on development.",
+      "requires": [
+        "economic-history/first-globalisation"
+      ]
+    },
+    {
+      "slug": "interwar-and-depression",
+      "title": "War, the interwar economy and the Great Depression",
+      "summary": "The First World War, hyperinflation, the return to gold, and the causes and spread of the Great Depression.",
+      "requires": [
+        "economic-history/first-globalisation"
+      ]
+    },
+    {
+      "slug": "golden-age",
+      "title": "The post-war golden age",
+      "summary": "Reconstruction, Bretton Woods, rapid growth and catch-up in Western Europe and Japan, and the slowdown of the 1970s.",
+      "requires": [
+        "economic-history/interwar-and-depression"
+      ]
+    },
+    {
+      "slug": "planned-economies",
+      "title": "Planned economies and transition",
+      "summary": "Central planning in the Soviet Union and China, its achievements and failures, and the transitions to markets after 1978 and 1989.",
+      "requires": [
+        "economic-history/golden-age"
+      ]
+    },
+    {
+      "slug": "late-industrialisation",
+      "title": "Late industrialisation and the rise of Asia",
+      "summary": "Industrialisation in East Asia and beyond, the second globalisation, the 2008 financial crisis, and the convergence and divergence of incomes since 1950.",
+      "requires": [
+        "economic-history/golden-age",
+        "economic-history/planned-economies"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "economic-growth",
+    "development-economics"
+  ]
+}

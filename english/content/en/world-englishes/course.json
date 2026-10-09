@@ -1,0 +1,105 @@
+{
+  "slug": "world-englishes",
+  "title": "World Englishes",
+  "full_title": "World Englishes: English Around the World",
+  "area": "language",
+  "level": 4,
+  "order": 250,
+  "tagline": "Models of world Englishes, British and American English, other first-language varieties, South Asian, Southeast Asian, African and Caribbean Englishes, pidgins and creoles, English as a lingua franca, English in China, and accent and identity",
+  "summary": "English now has more second-language than first-language speakers, and many standard forms. This course describes the main varieties of English around the world and the models used to classify them, the differences between British and American English, pidgins and creoles, English as a lingua franca, the history and features of English in China, and the attitudes and choices that surround accent and identity.",
+  "overview": [],
+  "prerequisites": [
+    "history-of-english",
+    "pragmatics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "models",
+      "title": "Models of world Englishes",
+      "summary": "Kachru’s three circles, Schneider’s dynamic model, and their critics.",
+      "requires": [
+        "history-of-english/spread-of-english"
+      ]
+    },
+    {
+      "slug": "british-american",
+      "title": "British and American English",
+      "summary": "Differences in spelling, vocabulary, grammar and pronunciation, and how much they matter.",
+      "requires": [
+        "world-englishes/models"
+      ]
+    },
+    {
+      "slug": "other-first-language-varieties",
+      "title": "Other first-language varieties",
+      "summary": "The English of Ireland, Scotland, Wales, Canada, Australia, New Zealand and South Africa.",
+      "requires": [
+        "world-englishes/british-american"
+      ]
+    },
+    {
+      "slug": "south-asian-englishes",
+      "title": "South Asian Englishes",
+      "summary": "English in India, Pakistan, Bangladesh and Sri Lanka, and the features of Indian English.",
+      "requires": [
+        "world-englishes/models"
+      ]
+    },
+    {
+      "slug": "southeast-asian-englishes",
+      "title": "Southeast Asian Englishes",
+      "summary": "English in Singapore, Malaysia and the Philippines, and standard Singapore English and Singlish.",
+      "requires": [
+        "world-englishes/models"
+      ]
+    },
+    {
+      "slug": "african-caribbean-englishes",
+      "title": "African and Caribbean Englishes",
+      "summary": "English in Nigeria, Ghana, Kenya and South Africa, and in the Caribbean.",
+      "requires": [
+        "world-englishes/models"
+      ]
+    },
+    {
+      "slug": "pidgins-creoles",
+      "title": "Pidgins and creoles",
+      "summary": "How pidgins and creoles arise, with Tok Pisin, Nigerian Pidgin and Jamaican Creole as examples, and the history of Chinese Pidgin English.",
+      "requires": [
+        "world-englishes/african-caribbean-englishes"
+      ]
+    },
+    {
+      "slug": "lingua-franca",
+      "title": "English as a lingua franca",
+      "summary": "English between speakers of other languages, intelligibility, and the Lingua Franca Core.",
+      "requires": [
+        "world-englishes/models",
+        "pragmatics/directness-across-cultures"
+      ]
+    },
+    {
+      "slug": "english-in-china",
+      "title": "English in China",
+      "summary": "The history of English in China, English education, China English and Chinglish, and Hong Kong English.",
+      "requires": [
+        "world-englishes/pidgins-creoles",
+        "world-englishes/lingua-franca"
+      ]
+    },
+    {
+      "slug": "accent-identity",
+      "title": "Accent, identity and attitudes",
+      "summary": "Accent prejudice and prestige, choosing a pronunciation model, and the idea of the native speaker.",
+      "requires": [
+        "world-englishes/lingua-franca"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "translation"
+  ]
+}

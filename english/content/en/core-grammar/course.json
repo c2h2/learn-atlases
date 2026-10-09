@@ -1,0 +1,116 @@
+{
+  "slug": "core-grammar",
+  "title": "Core Grammar",
+  "full_title": "Core Grammar: Words and Sentences",
+  "area": "grammar",
+  "level": 1,
+  "order": 20,
+  "tagline": "Word classes, sentence patterns, *be* and *have*, the present simple, questions and negatives, the present continuous, the past simple, nouns and pronouns, adjectives and adverbs, prepositions of time and place, the future, and the first modal verbs",
+  "summary": "Every English sentence needs a subject and a verb, and English marks time, person and number on its verbs in ways that Chinese does not. This course builds the grammar a beginner needs: the word classes and basic sentence patterns, *be* and *have*, the present simple and continuous, the past simple, questions and negatives, nouns, pronouns, adjectives and adverbs, the prepositions of time and place, the simplest ways to talk about the future and the first modal verbs.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "word-classes",
+      "title": "Word classes",
+      "summary": "Nouns, verbs, adjectives, adverbs, pronouns, prepositions, determiners and conjunctions, how to recognise them, and how English word classes compare with Chinese ones.",
+      "requires": []
+    },
+    {
+      "slug": "sentence-patterns",
+      "title": "Sentence patterns",
+      "summary": "Subject, verb, object and complement, the fixed word order of English statements, and why an English sentence needs a subject even where Chinese would leave it out.",
+      "requires": [
+        "core-grammar/word-classes"
+      ]
+    },
+    {
+      "slug": "be-and-have",
+      "title": "*Be* and *have*",
+      "summary": "The forms of *be* and *have*, *there is* and *there are*, and how English uses *be* where Chinese uses 是, 在 or no verb at all, as in *She is tired*.",
+      "requires": [
+        "core-grammar/sentence-patterns"
+      ]
+    },
+    {
+      "slug": "present-simple",
+      "title": "The present simple",
+      "summary": "Habits, facts and states, and the *-s* ending after *he*, *she* and *it* that learners most often forget.",
+      "requires": [
+        "core-grammar/be-and-have"
+      ]
+    },
+    {
+      "slug": "questions-and-negatives",
+      "title": "Questions and negatives",
+      "summary": "Questions and negatives with *do*, *does* and *be*, yes–no and *wh-* questions, short answers, and question word order.",
+      "requires": [
+        "core-grammar/present-simple"
+      ]
+    },
+    {
+      "slug": "present-continuous",
+      "title": "The present continuous",
+      "summary": "*Be* + *-ing* for actions in progress and temporary situations, the spelling of *-ing* forms, and the contrast with the present simple.",
+      "requires": [
+        "core-grammar/questions-and-negatives"
+      ]
+    },
+    {
+      "slug": "past-simple",
+      "title": "The past simple",
+      "summary": "Regular *-ed* endings and their three pronunciations, the most common irregular verbs, *did* in questions and negatives, and why English marks past time on the verb every time.",
+      "requires": [
+        "core-grammar/questions-and-negatives"
+      ]
+    },
+    {
+      "slug": "nouns-pronouns",
+      "title": "Nouns, plurals and pronouns",
+      "summary": "Plural endings and irregular plurals, a first look at countable and uncountable nouns, subject and object pronouns, possessives, and *he* and *she*, which sound the same in spoken Chinese.",
+      "requires": [
+        "core-grammar/sentence-patterns"
+      ]
+    },
+    {
+      "slug": "adjectives-adverbs",
+      "title": "Adjectives and adverbs",
+      "summary": "Where adjectives and adverbs go, *-ly* adverbs, comparatives and superlatives, and adverbs of frequency such as *always* and *never*.",
+      "requires": [
+        "core-grammar/nouns-pronouns"
+      ]
+    },
+    {
+      "slug": "prepositions-time-place",
+      "title": "Prepositions of time and place",
+      "summary": "*In*, *on* and *at* for times and places, other common prepositions of place and movement, and prepositions in fixed phrases.",
+      "requires": [
+        "core-grammar/nouns-pronouns"
+      ]
+    },
+    {
+      "slug": "talking-about-the-future",
+      "title": "Talking about the future",
+      "summary": "*Will*, *be going to* and the present continuous for predictions, plans and arrangements, as a first step towards the full system in Tense and Aspect.",
+      "requires": [
+        "core-grammar/present-continuous"
+      ]
+    },
+    {
+      "slug": "first-modals",
+      "title": "*Can*, *must* and *should*",
+      "summary": "*Can* for ability and permission, *must* and *have to* for obligation, and *should* for advice: the first modal verbs, before the full picture in Modality.",
+      "requires": [
+        "core-grammar/questions-and-negatives"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "tense-and-aspect",
+    "nouns-and-articles",
+    "verb-patterns"
+  ]
+}

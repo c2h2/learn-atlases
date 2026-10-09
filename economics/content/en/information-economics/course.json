@@ -1,0 +1,92 @@
+{
+  "slug": "information-economics",
+  "title": "Information and Incentives",
+  "full_title": "Information, Contracts and Incentives",
+  "area": "micro",
+  "level": 4,
+  "order": 220,
+  "tagline": "Adverse selection, signalling, screening, moral hazard and principal–agent contracts, incentives in organisations, incomplete contracts, mechanism design and efficient mechanisms",
+  "summary": "When one side of a transaction knows more than the other, markets and organisations have to be designed around the information gap. This course develops the economics of asymmetric information: adverse selection and market unravelling, signalling and screening, moral hazard and the design of incentive contracts, incentives in organisations and incomplete contracts, and mechanism design with the revelation principle — with applications to insurance, credit, labour markets and regulation.",
+  "overview": [],
+  "prerequisites": [
+    "microeconomics",
+    "game-theory"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "asymmetric-information",
+      "title": "Asymmetric information and adverse selection",
+      "summary": "Akerlof’s market for lemons, market unravelling, and adverse selection in insurance and credit.",
+      "requires": [
+        "microeconomics/uncertainty",
+        "microeconomics/competitive-markets"
+      ]
+    },
+    {
+      "slug": "job-market-signalling",
+      "title": "Signalling in markets",
+      "summary": "Spence’s model of job-market signalling, separating and pooling equilibria, and the intuitive criterion.",
+      "requires": [
+        "information-economics/asymmetric-information",
+        "game-theory/signalling"
+      ]
+    },
+    {
+      "slug": "screening",
+      "title": "Screening and self-selection",
+      "summary": "The Rothschild–Stiglitz insurance model and nonlinear pricing when buyers’ types are hidden.",
+      "requires": [
+        "information-economics/asymmetric-information"
+      ]
+    },
+    {
+      "slug": "moral-hazard",
+      "title": "Moral hazard and the principal–agent problem",
+      "summary": "Hidden actions, the trade-off between risk sharing and incentives, and optimal contracts.",
+      "requires": [
+        "information-economics/asymmetric-information",
+        "mathematical-economics/constrained-optimisation"
+      ]
+    },
+    {
+      "slug": "incentives-in-organisations",
+      "title": "Incentives in organisations",
+      "summary": "Multitasking, career concerns, tournaments and relational contracts.",
+      "requires": [
+        "information-economics/moral-hazard",
+        "game-theory/repeated-games"
+      ]
+    },
+    {
+      "slug": "incomplete-contracts",
+      "title": "Incomplete contracts and the boundaries of the firm",
+      "summary": "The hold-up problem, property rights and the theory of the firm.",
+      "requires": [
+        "information-economics/moral-hazard"
+      ]
+    },
+    {
+      "slug": "mechanism-design",
+      "title": "Mechanism design and the revelation principle",
+      "summary": "Social choice functions, incentive compatibility, the revelation principle and the Gibbard–Satterthwaite theorem.",
+      "requires": [
+        "information-economics/screening",
+        "game-theory/bayesian-games"
+      ]
+    },
+    {
+      "slug": "efficient-mechanisms",
+      "title": "Efficient mechanisms and public decisions",
+      "summary": "Vickrey–Clarke–Groves mechanisms, budget balance and the Myerson–Satterthwaite impossibility theorem.",
+      "requires": [
+        "information-economics/mechanism-design"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "market-design"
+  ]
+}

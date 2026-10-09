@@ -1,0 +1,99 @@
+{
+  "slug": "organic-2",
+  "title": "Organic Chemistry II",
+  "full_title": "Organic Chemistry II: Carbonyls, Aromatics and Synthesis",
+  "area": "organic",
+  "level": 2,
+  "order": 90,
+  "tagline": "Conjugation, aromaticity, aromatic substitution, carbonyl chemistry, enolates, condensations, amines and heterocycles",
+  "summary": "This course continues organic chemistry with the reactions that build most molecules: conjugated systems and aromatic rings, nucleophilic addition and substitution at carbonyl groups, the chemistry of enols and enolates and the condensations they make possible, amines, and the aromatic heterocycles found throughout biology and medicine.",
+  "overview": [],
+  "prerequisites": [
+    "organic-1"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "conjugation",
+      "title": "Conjugation and dienes",
+      "summary": "Allylic systems and resonance, conjugated dienes, 1,2- and 1,4-addition, and kinetic versus thermodynamic control.",
+      "requires": [
+        "organic-1/alkenes-alkynes"
+      ]
+    },
+    {
+      "slug": "aromaticity",
+      "title": "Benzene and aromaticity",
+      "summary": "The structure and stability of benzene, Hückel’s rule, and aromatic ions and heterocycles.",
+      "requires": [
+        "organic-2/conjugation",
+        "bonding-structure/molecular-orbitals"
+      ]
+    },
+    {
+      "slug": "aromatic-substitution",
+      "title": "Aromatic substitution",
+      "summary": "Electrophilic aromatic substitution, Friedel–Crafts reactions and the directing effects of substituents, and nucleophilic aromatic substitution.",
+      "requires": [
+        "organic-2/aromaticity"
+      ]
+    },
+    {
+      "slug": "carbonyl-addition",
+      "title": "Nucleophilic addition to aldehydes and ketones",
+      "summary": "Hydrates, acetals, imines and cyanohydrins, hydride reductions and the addition of organometallic reagents.",
+      "requires": [
+        "organic-1/acidity-mechanism"
+      ]
+    },
+    {
+      "slug": "carboxylic-derivatives",
+      "title": "Carboxylic acids and their derivatives",
+      "summary": "Nucleophilic acyl substitution in acyl chlorides, anhydrides, esters and amides, and the chemistry of nitriles.",
+      "requires": [
+        "organic-2/carbonyl-addition"
+      ]
+    },
+    {
+      "slug": "enols-enolates",
+      "title": "Enols and enolates",
+      "summary": "Keto–enol tautomerism, α-substitution, the formation and alkylation of enolates, and the aldol reaction.",
+      "requires": [
+        "organic-2/carbonyl-addition"
+      ]
+    },
+    {
+      "slug": "condensations",
+      "title": "Condensations and conjugate addition",
+      "summary": "The Claisen condensation, conjugate (Michael) addition to unsaturated carbonyl compounds and the Robinson annulation.",
+      "requires": [
+        "organic-2/enols-enolates",
+        "organic-2/carboxylic-derivatives"
+      ]
+    },
+    {
+      "slug": "amines",
+      "title": "Amines",
+      "summary": "The basicity of amines, their synthesis by alkylation and reductive amination, and the chemistry of diazonium salts.",
+      "requires": [
+        "organic-2/carboxylic-derivatives"
+      ]
+    },
+    {
+      "slug": "heterocycles",
+      "title": "Aromatic heterocycles",
+      "summary": "Pyridine, pyrrole, furan, thiophene and indole, their reactivity, and the heterocycles of biology and medicine.",
+      "requires": [
+        "organic-2/aromatic-substitution",
+        "organic-2/amines"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "organic-synthesis",
+    "spectroscopy",
+    "medicinal-chemistry"
+  ]
+}

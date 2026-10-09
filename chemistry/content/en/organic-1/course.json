@@ -1,0 +1,99 @@
+{
+  "slug": "organic-1",
+  "title": "Organic Chemistry I",
+  "full_title": "Organic Chemistry I: Structure and Mechanism",
+  "area": "organic",
+  "level": 2,
+  "order": 80,
+  "tagline": "Structures and functional groups, conformations, stereochemistry, curly arrows, substitution, elimination, addition and radical reactions",
+  "summary": "Organic chemistry is the chemistry of carbon compounds, from fuels to medicines. This course teaches how to draw and name organic molecules, analyse their shapes and stereochemistry, and describe reactions with curly-arrow mechanisms, through substitution, elimination, addition to alkenes and alkynes, the chemistry of alcohols and ethers, and radical reactions.",
+  "overview": [],
+  "prerequisites": [
+    "bonding-structure"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "organic-structures",
+      "title": "Organic structures and functional groups",
+      "summary": "Skeletal formulae, the main functional groups and the IUPAC nomenclature of organic compounds.",
+      "requires": [
+        "bonding-structure/valence-bond"
+      ]
+    },
+    {
+      "slug": "conformations",
+      "title": "Conformations of alkanes and cycloalkanes",
+      "summary": "Newman projections, torsional and steric strain, ring strain, and the chair conformation of cyclohexane with its axial and equatorial substituents.",
+      "requires": [
+        "organic-1/organic-structures"
+      ]
+    },
+    {
+      "slug": "stereochemistry",
+      "title": "Stereochemistry",
+      "summary": "Chirality and stereocentres, R and S configurations, enantiomers and diastereomers, meso compounds, optical activity and E/Z isomerism.",
+      "requires": [
+        "organic-1/conformations"
+      ]
+    },
+    {
+      "slug": "acidity-mechanism",
+      "title": "Acidity, nucleophiles and curly arrows",
+      "summary": "The pKa values of organic compounds, nucleophiles and electrophiles, describing mechanisms with curly arrows, and reaction energy profiles.",
+      "requires": [
+        "organic-1/organic-structures",
+        "bonding-structure/covalent-lewis"
+      ]
+    },
+    {
+      "slug": "nucleophilic-substitution",
+      "title": "Nucleophilic substitution",
+      "summary": "The SN1 and SN2 mechanisms, leaving groups, nucleophilicity and solvent effects, and the stereochemistry of substitution.",
+      "requires": [
+        "organic-1/acidity-mechanism",
+        "organic-1/stereochemistry"
+      ]
+    },
+    {
+      "slug": "elimination",
+      "title": "Elimination reactions",
+      "summary": "The E1 and E2 mechanisms, Zaitsev and Hofmann products, stereoelectronic requirements and competition with substitution.",
+      "requires": [
+        "organic-1/nucleophilic-substitution"
+      ]
+    },
+    {
+      "slug": "alkenes-alkynes",
+      "title": "Addition to alkenes and alkynes",
+      "summary": "Electrophilic addition and Markovnikov’s rule, carbocation rearrangements, halogenation, hydration, hydroboration, oxidation and hydrogenation.",
+      "requires": [
+        "organic-1/acidity-mechanism",
+        "organic-1/elimination"
+      ]
+    },
+    {
+      "slug": "alcohols-ethers",
+      "title": "Alcohols, ethers and epoxides",
+      "summary": "Preparing alcohols and ethers, turning alcohols into leaving groups, oxidising alcohols, and the ring opening of epoxides.",
+      "requires": [
+        "organic-1/nucleophilic-substitution",
+        "organic-1/elimination"
+      ]
+    },
+    {
+      "slug": "radical-reactions",
+      "title": "Radical reactions",
+      "summary": "The structure and stability of radicals, radical halogenation and its selectivity, and radical additions to alkenes.",
+      "requires": [
+        "organic-1/alkenes-alkynes"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "organic-2",
+    "biochemistry"
+  ]
+}

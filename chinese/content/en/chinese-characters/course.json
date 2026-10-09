@@ -1,0 +1,107 @@
+{
+  "slug": "chinese-characters",
+  "title": "Chinese Characters",
+  "full_title": "Chinese Characters: Origins, Structure and Change",
+  "area": "script",
+  "level": 1,
+  "order": 10,
+  "tagline": "Writing and language, the origins of Chinese writing, oracle-bone and bronze inscriptions, from seal script to regular script, the six categories, phonetic compounds, characters and culture, strokes and radicals, simplified and traditional characters, standard characters, and characters in the digital age",
+  "summary": "Chinese characters are one of the oldest writing systems still in use, and literate Chinese speakers know thousands of them without knowing much about how they work. This course explains what kind of writing system Chinese is, how characters arose and changed from the oracle-bone inscriptions to regular script, how they are built from components that carry sound and meaning, the traditional six categories and their modern revisions, and the twentieth-century reforms that produced today’s standard simplified characters.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "writing-and-language",
+      "title": "Writing and language",
+      "summary": "What writing is, how it records language, and where Chinese characters stand among the writing systems of the world.",
+      "requires": []
+    },
+    {
+      "slug": "origins",
+      "title": "The origins of Chinese writing",
+      "summary": "Neolithic signs, the legend of Cangjie, and what archaeology can and cannot tell us about how Chinese writing began.",
+      "requires": [
+        "chinese-characters/writing-and-language"
+      ]
+    },
+    {
+      "slug": "oracle-bronze",
+      "title": "Oracle-bone and bronze inscriptions",
+      "summary": "The Shang divination inscriptions first recognised in 1899 and the inscriptions cast on Zhou bronzes: how they were made, deciphered and read.",
+      "requires": [
+        "chinese-characters/origins"
+      ]
+    },
+    {
+      "slug": "seal-to-regular",
+      "title": "From seal script to regular script",
+      "summary": "The unification of the script under the Qin, the clerical change (隶变) that turned curves into strokes, and the rise of regular, running and cursive script.",
+      "requires": [
+        "chinese-characters/oracle-bronze"
+      ]
+    },
+    {
+      "slug": "six-categories",
+      "title": "The six categories",
+      "summary": "Pictographs, indicatives, compound ideographs, phono-semantic compounds and the disputed 转注 and 假借, from Xu Shen’s *Shuowen Jiezi* to modern revisions such as the three-category theory.",
+      "requires": [
+        "chinese-characters/seal-to-regular"
+      ]
+    },
+    {
+      "slug": "phonetic-compounds",
+      "title": "Sound and meaning in characters",
+      "summary": "Why most characters are phono-semantic compounds, how far their phonetic components still show the sound, and how semantic components group meanings.",
+      "requires": [
+        "chinese-characters/six-categories"
+      ]
+    },
+    {
+      "slug": "characters-and-culture",
+      "title": "Characters and culture",
+      "summary": "What characters can and cannot tell us about ancient society, and the folk etymologies to be wary of.",
+      "requires": [
+        "chinese-characters/phonetic-compounds"
+      ]
+    },
+    {
+      "slug": "strokes-radicals",
+      "title": "Strokes, components and radicals",
+      "summary": "Strokes and stroke order, components, the radical systems of dictionaries from the 540 of the *Shuowen* to today’s 201, and how to look up an unknown character.",
+      "requires": [
+        "chinese-characters/phonetic-compounds"
+      ]
+    },
+    {
+      "slug": "simplification",
+      "title": "Traditional and simplified characters",
+      "summary": "Simplification from the folk forms of earlier centuries to the 1956 scheme and the 1964 list, its methods, the abandoned second scheme, and reading traditional characters today.",
+      "requires": [
+        "chinese-characters/strokes-radicals"
+      ]
+    },
+    {
+      "slug": "standard-characters",
+      "title": "Standard characters and common errors",
+      "summary": "The Table of General Standard Chinese Characters of 2013, variant forms, and the miswritten and misused characters that even educated writers produce.",
+      "requires": [
+        "chinese-characters/simplification"
+      ]
+    },
+    {
+      "slug": "characters-digital",
+      "title": "Characters in the digital age",
+      "summary": "Character encoding from GB 2312 to Unicode, input methods, the worry about forgetting how to write, and what computers have changed.",
+      "requires": [
+        "chinese-characters/standard-characters"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "classical-chinese-2",
+    "calligraphy"
+  ]
+}

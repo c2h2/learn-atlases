@@ -1,0 +1,100 @@
+{
+  "slug": "manufacturing",
+  "title": "Manufacturing",
+  "full_title": "Manufacturing Processes",
+  "area": "materials",
+  "level": 2,
+  "order": 90,
+  "tagline": "Process selection, casting, bulk and sheet-metal forming, machining, joining, polymer and composite processing, additive manufacturing, metrology and quality",
+  "summary": "Every design has to be made, and how it is made shapes what it can be. The course surveys the main manufacturing processes — casting, forging, rolling and sheet forming, machining, welding and other joining methods, polymer and composite processing and additive manufacturing — with the mechanics and materials science behind them, and closes with measurement, quality control and automation.",
+  "overview": [],
+  "prerequisites": [
+    "materials-science"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "process-selection",
+      "title": "Manufacturing processes and their selection",
+      "summary": "The families of manufacturing processes, and how shape, material, tolerance, batch size and cost decide between them.",
+      "requires": [
+        "materials-science/material-families"
+      ]
+    },
+    {
+      "slug": "casting",
+      "title": "Casting",
+      "summary": "Solidification, sand, investment and die casting, the design of gating and risers, and casting defects.",
+      "requires": [
+        "materials-science/phase-diagrams",
+        "manufacturing/process-selection"
+      ]
+    },
+    {
+      "slug": "bulk-forming",
+      "title": "Bulk deformation processes",
+      "summary": "Forging, rolling, extrusion and drawing, with the mechanics of plastic deformation and the forces and power required.",
+      "requires": [
+        "materials-science/dislocations-strengthening",
+        "manufacturing/process-selection"
+      ]
+    },
+    {
+      "slug": "sheet-metal-forming",
+      "title": "Sheet-metal forming",
+      "summary": "Shearing, bending, deep drawing and stretch forming, springback, and formability limits.",
+      "requires": [
+        "manufacturing/bulk-forming"
+      ]
+    },
+    {
+      "slug": "machining",
+      "title": "Machining",
+      "summary": "The mechanics of chip formation, cutting forces and power, tool wear and tool life, turning, milling, drilling and grinding, and non-traditional processes.",
+      "requires": [
+        "materials-science/mechanical-properties",
+        "manufacturing/process-selection"
+      ]
+    },
+    {
+      "slug": "joining",
+      "title": "Joining",
+      "summary": "Fusion and solid-state welding, brazing and soldering, adhesive bonding and mechanical fastening, and the metallurgy of welds.",
+      "requires": [
+        "materials-science/phase-transformations",
+        "manufacturing/process-selection"
+      ]
+    },
+    {
+      "slug": "polymer-composite-processing",
+      "title": "Polymer and composite processing",
+      "summary": "Injection moulding, extrusion and thermoforming of polymers, and lay-up, filament winding and moulding of composites.",
+      "requires": [
+        "materials-science/material-families",
+        "manufacturing/process-selection"
+      ]
+    },
+    {
+      "slug": "additive-manufacturing",
+      "title": "Additive manufacturing",
+      "summary": "Powder-bed fusion, material extrusion, vat photopolymerisation and other additive processes, and design for additive manufacturing.",
+      "requires": [
+        "manufacturing/process-selection"
+      ]
+    },
+    {
+      "slug": "metrology-quality",
+      "title": "Metrology, quality and automation",
+      "summary": "Measurement and inspection, statistical process control, numerically controlled machines and automated production.",
+      "requires": [
+        "manufacturing/machining"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "design-process",
+    "machine-design"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "hydrology",
+  "title": "Hydrology",
+  "full_title": "Hydrology and Hydrogeology",
+  "area": "surface",
+  "level": 3,
+  "order": 140,
+  "tagline": "The catchment water balance, precipitation and evapotranspiration, snow, soil water, runoff, floods and droughts, groundwater flow, aquifers and contaminant transport",
+  "summary": "Hydrology follows water through the land part of the water cycle, above and below the ground. This course covers the catchment water balance, precipitation and evapotranspiration, snow, infiltration and soil water, runoff and streamflow, floods and droughts, the physics of groundwater flow, aquifers and wells, and how dissolved contaminants move with water.",
+  "overview": [],
+  "prerequisites": [
+    "geomorphology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "water-balance",
+      "title": "The catchment water balance",
+      "summary": "Catchments and their water balance, and how precipitation, evaporation and streamflow are measured.",
+      "requires": [
+        "geomorphology/drainage-basins"
+      ]
+    },
+    {
+      "slug": "precipitation-evaporation",
+      "title": "Precipitation and evapotranspiration",
+      "summary": "Rainfall over catchments, and evaporation and transpiration from the energy balance to the Penman–Monteith equation.",
+      "requires": [
+        "hydrology/water-balance"
+      ]
+    },
+    {
+      "slug": "snow",
+      "title": "Snow hydrology",
+      "summary": "The accumulation and melt of snowpacks, and the contribution of snow and glaciers to river flow.",
+      "requires": [
+        "hydrology/precipitation-evaporation"
+      ]
+    },
+    {
+      "slug": "soil-water",
+      "title": "Infiltration and soil water",
+      "summary": "Soil moisture, unsaturated flow and infiltration, from the Green–Ampt model to the Richards equation.",
+      "requires": [
+        "hydrology/water-balance",
+        "geomorphology/soils"
+      ]
+    },
+    {
+      "slug": "runoff",
+      "title": "Runoff and streamflow",
+      "summary": "How rain becomes streamflow — overland flow and subsurface stormflow — and hydrographs and unit hydrographs.",
+      "requires": [
+        "hydrology/soil-water"
+      ]
+    },
+    {
+      "slug": "floods-droughts",
+      "title": "Floods and droughts",
+      "summary": "Flood frequency analysis and return periods, low flows and droughts.",
+      "requires": [
+        "hydrology/runoff"
+      ]
+    },
+    {
+      "slug": "groundwater-flow",
+      "title": "Groundwater flow",
+      "summary": "Porosity, permeability, hydraulic head and Darcy’s law, and the groundwater flow equation.",
+      "requires": [
+        "hydrology/soil-water"
+      ]
+    },
+    {
+      "slug": "aquifers-wells",
+      "title": "Aquifers and wells",
+      "summary": "Confined and unconfined aquifers, recharge and discharge, pumping tests and the hydraulics of wells.",
+      "requires": [
+        "hydrology/groundwater-flow"
+      ]
+    },
+    {
+      "slug": "contaminant-transport",
+      "title": "Water quality and contaminant transport",
+      "summary": "Advection, dispersion and sorption of dissolved substances, and natural and human contaminants of water.",
+      "requires": [
+        "hydrology/groundwater-flow"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "earth-resources"
+  ]
+}

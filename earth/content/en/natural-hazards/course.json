@@ -1,0 +1,98 @@
+{
+  "slug": "natural-hazards",
+  "title": "Natural Hazards",
+  "full_title": "Natural Hazards and Risk",
+  "area": "system",
+  "level": 3,
+  "order": 200,
+  "tagline": "Hazard, exposure, vulnerability and risk; earthquakes, tsunamis, volcanoes, landslides, floods, storms, wildfire, drought and heat; reducing disaster risk",
+  "summary": "Natural hazards become disasters when they meet exposed and vulnerable people. This course introduces the science of risk — hazard, exposure, vulnerability and probability — and applies it to earthquakes, tsunamis, volcanic eruptions, landslides, floods, tropical cyclones and severe storms, wildfire, drought and heat, before turning to early warning, planning and how societies reduce disaster risk. It is for education and never replaces official warnings.",
+  "overview": [],
+  "prerequisites": [
+    "structural-geology",
+    "meteorology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "risk",
+      "title": "Hazard, exposure, vulnerability and risk",
+      "summary": "The vocabulary of disaster risk, return periods and exceedance probabilities, and how losses are counted.",
+      "requires": []
+    },
+    {
+      "slug": "earthquake-hazard",
+      "title": "Earthquake hazard",
+      "summary": "Ground shaking and its amplification, seismic hazard maps, the vulnerability of buildings, and lessons from major earthquakes.",
+      "requires": [
+        "natural-hazards/risk",
+        "structural-geology/fractures-faults",
+        "physical-geology/earthquakes"
+      ]
+    },
+    {
+      "slug": "tsunamis",
+      "title": "Tsunamis",
+      "summary": "Generation by earthquakes, landslides and eruptions, propagation across ocean basins, run-up and warning systems.",
+      "requires": [
+        "natural-hazards/earthquake-hazard"
+      ]
+    },
+    {
+      "slug": "volcanic-hazards",
+      "title": "Volcanic hazards",
+      "summary": "Lava, pyroclastic flows, lahars, ash and gas, and how volcanoes are monitored and eruptions forecast.",
+      "requires": [
+        "natural-hazards/risk",
+        "physical-geology/volcanoes"
+      ]
+    },
+    {
+      "slug": "landslides",
+      "title": "Landslides and ground failure",
+      "summary": "The triggers of slope failure, landslide susceptibility maps, subsidence, sinkholes and liquefaction.",
+      "requires": [
+        "natural-hazards/risk"
+      ]
+    },
+    {
+      "slug": "floods",
+      "title": "Floods",
+      "summary": "River, flash, coastal and urban floods, flood-risk maps and flood defences.",
+      "requires": [
+        "natural-hazards/risk",
+        "meteorology/clouds-precipitation"
+      ]
+    },
+    {
+      "slug": "storms",
+      "title": "Tropical cyclones and severe storms",
+      "summary": "The wind, storm-surge and rainfall hazards of tropical cyclones, and tornadoes and hail.",
+      "requires": [
+        "natural-hazards/risk",
+        "meteorology/storms"
+      ]
+    },
+    {
+      "slug": "wildfire-drought-heat",
+      "title": "Wildfire, drought and heat",
+      "summary": "Fire weather and fire behaviour, and droughts and heatwaves as slow-onset hazards.",
+      "requires": [
+        "natural-hazards/risk",
+        "meteorology/radiation-temperature"
+      ]
+    },
+    {
+      "slug": "risk-reduction",
+      "title": "Reducing disaster risk",
+      "summary": "Early warning, land-use planning, engineering, insurance and international frameworks for disaster risk reduction.",
+      "requires": [
+        "natural-hazards/earthquake-hazard",
+        "natural-hazards/floods"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

@@ -1,0 +1,92 @@
+{
+  "slug": "business-cycles",
+  "title": "Business Cycles",
+  "full_title": "Business Cycles and Monetary Policy",
+  "area": "macro",
+  "level": 3,
+  "order": 110,
+  "tagline": "Business-cycle facts, real business cycles, nominal rigidities, the New Keynesian model, monetary policy rules, the zero lower bound, financial frictions and fiscal stabilisation",
+  "summary": "Why do economies go through booms and recessions, and what can policy do about them? This course measures business cycles, builds the dynamic models used to explain them — the real business cycle model and the New Keynesian model with sticky prices — and uses them to study monetary policy: interest-rate rules and inflation targeting, the zero lower bound and unconventional policy, the role of financial frictions, and fiscal policy over the cycle.",
+  "overview": [],
+  "prerequisites": [
+    "macroeconomics",
+    "money-banking"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "business-cycle-facts",
+      "title": "Measuring business cycles",
+      "summary": "Detrending, the cyclical behaviour of output, employment, consumption, investment and prices, and the dating of recessions.",
+      "requires": [
+        "macroeconomics/ad-as-and-stabilisation"
+      ]
+    },
+    {
+      "slug": "real-business-cycles",
+      "title": "The real business cycle model",
+      "summary": "A dynamic general equilibrium model with technology shocks, labour supply and capital accumulation, and how well it fits the data.",
+      "requires": [
+        "business-cycles/business-cycle-facts",
+        "macroeconomics/consumption-and-saving"
+      ]
+    },
+    {
+      "slug": "nominal-rigidities",
+      "title": "Nominal rigidities",
+      "summary": "Menu costs, staggered price setting, Calvo pricing, and why money is not neutral in the short run.",
+      "requires": [
+        "business-cycles/real-business-cycles",
+        "macroeconomics/aggregate-supply"
+      ]
+    },
+    {
+      "slug": "new-keynesian-model",
+      "title": "The New Keynesian model",
+      "summary": "The dynamic IS curve, the New Keynesian Phillips curve and an interest-rate rule in the three-equation model.",
+      "requires": [
+        "business-cycles/nominal-rigidities"
+      ]
+    },
+    {
+      "slug": "monetary-policy-rules",
+      "title": "Monetary policy rules and inflation targeting",
+      "summary": "The Taylor rule and the Taylor principle, inflation targeting, credibility and the time-inconsistency problem.",
+      "requires": [
+        "business-cycles/new-keynesian-model",
+        "money-banking/monetary-policy-implementation"
+      ]
+    },
+    {
+      "slug": "zero-lower-bound",
+      "title": "The zero lower bound and unconventional policy",
+      "summary": "Liquidity traps, forward guidance, quantitative easing and negative interest rates.",
+      "requires": [
+        "business-cycles/monetary-policy-rules"
+      ]
+    },
+    {
+      "slug": "financial-frictions",
+      "title": "Financial frictions and the business cycle",
+      "summary": "The financial accelerator, credit cycles and the macroeconomics of financial crises.",
+      "requires": [
+        "business-cycles/new-keynesian-model",
+        "money-banking/bank-runs-and-crises"
+      ]
+    },
+    {
+      "slug": "fiscal-stabilisation",
+      "title": "Fiscal policy over the cycle",
+      "summary": "Automatic stabilisers, fiscal multipliers in theory and evidence, and the interaction of fiscal and monetary policy.",
+      "requires": [
+        "business-cycles/new-keynesian-model",
+        "macroeconomics/fiscal-policy-and-debt"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "international-finance"
+  ]
+}

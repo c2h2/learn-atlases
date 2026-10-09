@@ -1,0 +1,95 @@
+{
+  "slug": "programming-languages",
+  "title": "Programming Languages",
+  "full_title": "Principles of Programming Languages",
+  "area": "programming",
+  "level": 2,
+  "order": 110,
+  "tagline": "Syntax and semantics, the lambda calculus, interpreters, scope and binding, type systems, type inference, polymorphism, control and concurrency",
+  "summary": "Programming languages are designed artefacts with precise meanings, and understanding their principles makes every language easier to learn and use well. This course studies syntax and semantics, the lambda calculus, writing interpreters, names, scope and binding, type systems and type inference, polymorphism, subtyping and modules, and control constructs from exceptions and continuations to concurrency.",
+  "overview": [],
+  "prerequisites": [
+    "program-design"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "syntax-semantics",
+      "title": "Syntax and semantics",
+      "summary": "Abstract syntax, grammars for programs, and operational and denotational semantics.",
+      "requires": [
+        "program-design/abstraction-specifications"
+      ]
+    },
+    {
+      "slug": "lambda-calculus",
+      "title": "The lambda calculus",
+      "summary": "Abstraction and application, reduction, Church encodings and evaluation strategies.",
+      "requires": [
+        "programming-languages/syntax-semantics",
+        "program-design/higher-order-functions"
+      ]
+    },
+    {
+      "slug": "interpreters",
+      "title": "Interpreters",
+      "summary": "Writing an evaluator for a small language, with environments and closures.",
+      "requires": [
+        "programming-languages/lambda-calculus"
+      ]
+    },
+    {
+      "slug": "scope-binding",
+      "title": "Names, scope and binding",
+      "summary": "Static and dynamic scope, binding times, parameter-passing mechanisms and the lifetime of storage.",
+      "requires": [
+        "programming-languages/interpreters"
+      ]
+    },
+    {
+      "slug": "type-systems",
+      "title": "Type systems",
+      "summary": "Typing rules, type safety through progress and preservation, and the simply typed lambda calculus.",
+      "requires": [
+        "programming-languages/lambda-calculus"
+      ]
+    },
+    {
+      "slug": "type-inference",
+      "title": "Type inference",
+      "summary": "Constraint generation, unification and Hindley–Milner type inference.",
+      "requires": [
+        "programming-languages/type-systems"
+      ]
+    },
+    {
+      "slug": "polymorphism",
+      "title": "Polymorphism, subtyping and modules",
+      "summary": "Parametric polymorphism, subtyping, objects and module systems.",
+      "requires": [
+        "programming-languages/type-systems"
+      ]
+    },
+    {
+      "slug": "control",
+      "title": "Exceptions and continuations",
+      "summary": "Exceptions, continuations, generators and coroutines as control constructs.",
+      "requires": [
+        "programming-languages/interpreters"
+      ]
+    },
+    {
+      "slug": "concurrency-models",
+      "title": "Concurrency in programming languages",
+      "summary": "Shared memory and message passing, actors, futures and async–await.",
+      "requires": [
+        "programming-languages/control"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "compilers"
+  ]
+}

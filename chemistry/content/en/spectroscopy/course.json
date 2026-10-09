@@ -1,0 +1,101 @@
+{
+  "slug": "spectroscopy",
+  "title": "Spectroscopy",
+  "full_title": "Spectroscopy and Structure Determination",
+  "area": "analytical",
+  "level": 3,
+  "order": 130,
+  "tagline": "Selection rules, rotational, vibrational and electronic spectra, NMR, EPR, mass spectrometry and solving structures",
+  "summary": "Spectroscopy reveals the structure of molecules through their interaction with radiation. This course derives the principles and selection rules of rotational, vibrational and electronic spectroscopy and of magnetic resonance, and then shows how NMR, infrared and mass spectra are combined in practice to determine unknown structures.",
+  "overview": [],
+  "prerequisites": [
+    "quantum-chemistry",
+    "organic-1"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "spectroscopy-principles",
+      "title": "Principles of spectroscopy",
+      "summary": "The interaction of radiation with molecules, transition dipole moments, selection rules, populations and line widths.",
+      "requires": [
+        "quantum-chemistry/quantum-foundations"
+      ]
+    },
+    {
+      "slug": "rotational-spectroscopy",
+      "title": "Rotational spectroscopy",
+      "summary": "Rigid and centrifugally distorted rotors, microwave spectra and bond lengths from rotational constants.",
+      "requires": [
+        "spectroscopy/spectroscopy-principles",
+        "quantum-chemistry/vibration-rotation"
+      ]
+    },
+    {
+      "slug": "vibrational-spectroscopy",
+      "title": "Infrared and Raman spectroscopy",
+      "summary": "Normal modes, anharmonicity, infrared and Raman selection rules, and characteristic group frequencies.",
+      "requires": [
+        "spectroscopy/rotational-spectroscopy",
+        "quantum-chemistry/molecular-symmetry"
+      ]
+    },
+    {
+      "slug": "electronic-spectroscopy",
+      "title": "Electronic spectroscopy",
+      "summary": "Electronic transitions and the Franck–Condon principle, chromophores, fluorescence and phosphorescence, and lasers.",
+      "requires": [
+        "spectroscopy/spectroscopy-principles",
+        "quantum-chemistry/many-electron-atoms"
+      ]
+    },
+    {
+      "slug": "nmr-principles",
+      "title": "Nuclear magnetic resonance: principles",
+      "summary": "Nuclear spin in a magnetic field, the chemical shift, spin–spin coupling, relaxation and pulsed Fourier-transform NMR.",
+      "requires": [
+        "spectroscopy/spectroscopy-principles"
+      ]
+    },
+    {
+      "slug": "nmr-structure",
+      "title": "NMR for structure determination",
+      "summary": "Interpreting proton and carbon-13 spectra, integration and multiplicity, and two-dimensional experiments such as COSY, HSQC and HMBC.",
+      "requires": [
+        "spectroscopy/nmr-principles",
+        "organic-1/organic-structures"
+      ]
+    },
+    {
+      "slug": "epr",
+      "title": "Electron paramagnetic resonance",
+      "summary": "Electron spin resonance, g values and hyperfine coupling, and the study of radicals and metal ions.",
+      "requires": [
+        "spectroscopy/nmr-principles"
+      ]
+    },
+    {
+      "slug": "mass-spectrometry",
+      "title": "Mass spectrometry",
+      "summary": "Ionisation methods, isotope patterns, fragmentation, and molecular formulae from high-resolution masses.",
+      "requires": [
+        "organic-1/organic-structures"
+      ]
+    },
+    {
+      "slug": "structure-problems",
+      "title": "Solving structures from spectra",
+      "summary": "Combining infrared, NMR and mass spectra to deduce the structures of unknown compounds.",
+      "requires": [
+        "spectroscopy/nmr-structure",
+        "spectroscopy/mass-spectrometry",
+        "spectroscopy/vibrational-spectroscopy"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "computational-chemistry"
+  ]
+}

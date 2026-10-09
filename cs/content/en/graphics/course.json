@@ -1,0 +1,92 @@
+{
+  "slug": "graphics",
+  "title": "Computer Graphics",
+  "full_title": "Computer Graphics",
+  "area": "software",
+  "level": 3,
+  "order": 180,
+  "tagline": "Images and colour, transformations, viewing and projection, rasterisation, shading, texture mapping, the GPU pipeline, ray tracing, curves and animation",
+  "summary": "Computer graphics turns geometric descriptions of a scene into images. This course covers raster images and colour, transformations with homogeneous coordinates, cameras and projection, rasterisation and visibility, lighting, shading and texture mapping, the programmable GPU pipeline, ray tracing and global illumination, and curves, surfaces and animation.",
+  "overview": [],
+  "prerequisites": [
+    "data-structures"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "images-colour",
+      "title": "Raster images and colour",
+      "summary": "Pixels and sampling, colour spaces and gamma, and aliasing.",
+      "requires": []
+    },
+    {
+      "slug": "transformations",
+      "title": "Transformations",
+      "summary": "2D and 3D transformations, homogeneous coordinates and composing transformations.",
+      "requires": [
+        "graphics/images-colour"
+      ]
+    },
+    {
+      "slug": "viewing-projection",
+      "title": "Viewing and projection",
+      "summary": "Cameras, orthographic and perspective projection, and the viewing pipeline.",
+      "requires": [
+        "graphics/transformations"
+      ]
+    },
+    {
+      "slug": "rasterisation",
+      "title": "Rasterisation and visibility",
+      "summary": "Drawing lines and triangles, barycentric interpolation, clipping and the depth buffer.",
+      "requires": [
+        "graphics/viewing-projection"
+      ]
+    },
+    {
+      "slug": "shading",
+      "title": "Lighting and shading",
+      "summary": "How light interacts with surfaces, the Phong and physically based models, and smooth shading.",
+      "requires": [
+        "graphics/rasterisation"
+      ]
+    },
+    {
+      "slug": "texture-mapping",
+      "title": "Texture mapping",
+      "summary": "Texture coordinates, filtering and mipmapping, and bump and environment mapping.",
+      "requires": [
+        "graphics/shading"
+      ]
+    },
+    {
+      "slug": "gpu-pipeline",
+      "title": "The GPU pipeline and shaders",
+      "summary": "The programmable pipeline, vertex and fragment shaders, and real-time rendering techniques.",
+      "requires": [
+        "graphics/texture-mapping"
+      ]
+    },
+    {
+      "slug": "ray-tracing",
+      "title": "Ray tracing and global illumination",
+      "summary": "Ray–object intersection, acceleration structures, the rendering equation and path tracing.",
+      "requires": [
+        "graphics/shading"
+      ]
+    },
+    {
+      "slug": "curves-animation",
+      "title": "Curves, surfaces and animation",
+      "summary": "Bézier curves and splines, subdivision surfaces, keyframing and skeletal animation.",
+      "requires": [
+        "graphics/transformations"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "hci"
+  ]
+}

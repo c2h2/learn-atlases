@@ -1,0 +1,96 @@
+{
+  "slug": "climate-modelling",
+  "title": "Climate Modelling",
+  "full_title": "Climate Modelling",
+  "area": "climate",
+  "level": 4,
+  "order": 210,
+  "tagline": "The model hierarchy, energy-balance and box models, numerical methods, parameterisation, general circulation and Earth system models, evaluation, ensembles, scenarios and downscaling",
+  "summary": "Climate models turn the physics of the climate system into numbers on a computer. This course builds a hierarchy of models from energy-balance and box models to general circulation and Earth system models, explains the numerical methods and the parameterisation of processes too small to resolve, and shows how models are tuned and evaluated against observations, combined in ensembles and intercomparison projects, driven by scenarios and downscaled to regions.",
+  "overview": [],
+  "prerequisites": [
+    "climate-system"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "model-hierarchy",
+      "title": "Why models, and which ones",
+      "summary": "The hierarchy of climate models from conceptual to comprehensive, and what each kind is good for.",
+      "requires": [
+        "climate-system/feedbacks-sensitivity"
+      ]
+    },
+    {
+      "slug": "energy-balance-models",
+      "title": "Energy-balance models",
+      "summary": "Zero- and one-dimensional energy-balance models, the ice–albedo feedback and multiple equilibria.",
+      "requires": [
+        "climate-modelling/model-hierarchy"
+      ]
+    },
+    {
+      "slug": "box-models",
+      "title": "Box models of ocean heat and carbon",
+      "summary": "Two-box models of ocean heat uptake, box models of the overturning circulation and simple carbon-cycle models.",
+      "requires": [
+        "climate-modelling/energy-balance-models",
+        "climate-system/carbon-climate"
+      ]
+    },
+    {
+      "slug": "numerical-methods",
+      "title": "Numerical methods for atmosphere and ocean",
+      "summary": "Discretising the equations of motion: grids, time stepping, numerical stability and spectral methods.",
+      "requires": [
+        "climate-modelling/model-hierarchy",
+        "atmospheric-dynamics/equations-of-motion"
+      ]
+    },
+    {
+      "slug": "parameterisation",
+      "title": "Parameterisation",
+      "summary": "Representing convection, clouds, turbulence and radiation at scales the model grid cannot resolve.",
+      "requires": [
+        "climate-modelling/numerical-methods"
+      ]
+    },
+    {
+      "slug": "earth-system-models",
+      "title": "General circulation and Earth system models",
+      "summary": "Coupling atmosphere, ocean, land, ice and biogeochemistry, spin-up, and the anatomy of a modern Earth system model.",
+      "requires": [
+        "climate-modelling/parameterisation"
+      ]
+    },
+    {
+      "slug": "evaluation",
+      "title": "Evaluating and tuning models",
+      "summary": "Comparing models with observations, tuning, systematic biases and emergent constraints.",
+      "requires": [
+        "climate-modelling/earth-system-models"
+      ]
+    },
+    {
+      "slug": "ensembles-scenarios",
+      "title": "Ensembles, intercomparisons and scenarios",
+      "summary": "Initial-condition and multi-model ensembles, the Coupled Model Intercomparison Project, and emission scenarios such as the SSPs.",
+      "requires": [
+        "climate-modelling/evaluation"
+      ]
+    },
+    {
+      "slug": "downscaling",
+      "title": "Regional models and downscaling",
+      "summary": "Regional climate models, statistical downscaling, and turning global projections into local information.",
+      "requires": [
+        "climate-modelling/ensembles-scenarios"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "climate-change"
+  ]
+}

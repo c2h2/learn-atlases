@@ -1,0 +1,99 @@
+{
+  "slug": "academic-reading",
+  "title": "Academic Reading",
+  "full_title": "Academic and Critical Reading",
+  "area": "reading",
+  "level": 3,
+  "order": 160,
+  "tagline": "How academic texts are organised, reading strategically, dense academic sentences, claims and evidence, evaluating sources, stance and hedging, reading data, notes and summaries, and paraphrasing and quoting",
+  "summary": "Academic reading means reading long, dense texts efficiently and critically. This course explains how textbooks and research articles are organised and how to read them strategically, how to unpack nominalised academic sentences, how to identify and evaluate arguments, evidence and sources, how writers signal stance and caution, how to read data, and how to take notes, summarise and paraphrase for your own writing.",
+  "overview": [],
+  "prerequisites": [
+    "reading-skills",
+    "complex-sentences"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "academic-texts",
+      "title": "How academic texts are organised",
+      "summary": "Textbooks, research articles and reviews, the IMRaD structure, abstracts, and the signposts that show where information is.",
+      "requires": [
+        "reading-skills/text-types"
+      ]
+    },
+    {
+      "slug": "strategic-reading",
+      "title": "Reading strategically",
+      "summary": "Surveying a text, setting questions, reading selectively and managing long reading lists.",
+      "requires": [
+        "academic-reading/academic-texts"
+      ]
+    },
+    {
+      "slug": "dense-sentences",
+      "title": "Dense academic sentences",
+      "summary": "Nominalisation, long noun phrases and embedded clauses, and how to restate them in simpler words to understand them.",
+      "requires": [
+        "academic-reading/strategic-reading",
+        "complex-sentences/participle-infinitive-clauses"
+      ]
+    },
+    {
+      "slug": "claims-and-evidence",
+      "title": "Claims, reasons and evidence",
+      "summary": "Finding the claim, the reasons and the evidence in an argument, and the language that signals each.",
+      "requires": [
+        "academic-reading/strategic-reading"
+      ]
+    },
+    {
+      "slug": "evaluating-sources",
+      "title": "Evaluating evidence and sources",
+      "summary": "Kinds of evidence, peer review, sample size and correlation, and judging how reliable a source is.",
+      "requires": [
+        "academic-reading/claims-and-evidence"
+      ]
+    },
+    {
+      "slug": "stance-and-hedging",
+      "title": "Stance and hedging",
+      "summary": "How writers show certainty, doubt, agreement and criticism, and how to read cautious academic claims accurately.",
+      "requires": [
+        "academic-reading/claims-and-evidence"
+      ]
+    },
+    {
+      "slug": "reading-data",
+      "title": "Reading data",
+      "summary": "Graphs, tables and statistics in academic texts, and the language used to report and interpret them.",
+      "requires": [
+        "academic-reading/evaluating-sources",
+        "reading-skills/numbers-and-charts"
+      ]
+    },
+    {
+      "slug": "notes-and-summaries",
+      "title": "Notes and summaries",
+      "summary": "Methods of note-taking, and summarising a text in your own words at different lengths.",
+      "requires": [
+        "academic-reading/dense-sentences",
+        "academic-reading/claims-and-evidence"
+      ]
+    },
+    {
+      "slug": "paraphrase-and-quotation",
+      "title": "Paraphrasing and quoting",
+      "summary": "When to paraphrase and when to quote, how to paraphrase without copying sentence structure, and recording sources as you read.",
+      "requires": [
+        "academic-reading/notes-and-summaries"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "academic-writing",
+    "reading-literature"
+  ]
+}

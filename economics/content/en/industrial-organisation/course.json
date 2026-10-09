@@ -1,0 +1,100 @@
+{
+  "slug": "industrial-organisation",
+  "title": "Industrial Organisation",
+  "full_title": "Industrial Organisation and Competition Policy",
+  "area": "strategy",
+  "level": 3,
+  "order": 130,
+  "tagline": "Market structure and market power, monopoly pricing and price discrimination, Cournot and Bertrand oligopoly, product differentiation, entry, collusion, vertical relations, platforms and competition policy",
+  "summary": "Industrial organisation studies how firms compete when markets are not perfectly competitive, and what governments should do about it. This course uses game theory to analyse pricing by firms with market power and price discrimination, oligopoly and product differentiation, entry deterrence and collusion, vertical relationships, network effects and platforms, and the economics behind merger control and antitrust policy.",
+  "overview": [],
+  "prerequisites": [
+    "microeconomics",
+    "game-theory"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "market-structure",
+      "title": "Market structure and market power",
+      "summary": "Measuring concentration and market power, the structure–conduct–performance tradition and the game-theoretic approach.",
+      "requires": [
+        "principles/market-power",
+        "microeconomics/competitive-markets"
+      ]
+    },
+    {
+      "slug": "monopoly-pricing",
+      "title": "Monopoly pricing and price discrimination",
+      "summary": "The monopoly mark-up rule, first-, second- and third-degree price discrimination, bundling and two-part tariffs.",
+      "requires": [
+        "industrial-organisation/market-structure"
+      ]
+    },
+    {
+      "slug": "cournot-bertrand",
+      "title": "Oligopoly: Cournot and Bertrand",
+      "summary": "Competition in quantities and in prices, the Bertrand paradox, capacity constraints and the Cournot limit theorem.",
+      "requires": [
+        "industrial-organisation/market-structure",
+        "game-theory/nash-equilibrium"
+      ]
+    },
+    {
+      "slug": "product-differentiation",
+      "title": "Product differentiation",
+      "summary": "Horizontal and vertical differentiation, the Hotelling and Salop models, and the economics of advertising.",
+      "requires": [
+        "industrial-organisation/cournot-bertrand"
+      ]
+    },
+    {
+      "slug": "entry-and-deterrence",
+      "title": "Entry, commitment and entry deterrence",
+      "summary": "Stackelberg leadership, strategic commitment, limit pricing, predation and contestable markets.",
+      "requires": [
+        "industrial-organisation/cournot-bertrand",
+        "game-theory/extensive-form"
+      ]
+    },
+    {
+      "slug": "collusion",
+      "title": "Collusion and cartels",
+      "summary": "Tacit and explicit collusion as repeated games, what makes cartels stable, and how cartels are detected.",
+      "requires": [
+        "industrial-organisation/cournot-bertrand",
+        "game-theory/repeated-games"
+      ]
+    },
+    {
+      "slug": "vertical-relations",
+      "title": "Vertical relations",
+      "summary": "Double marginalisation, vertical restraints, vertical integration and foreclosure.",
+      "requires": [
+        "industrial-organisation/monopoly-pricing"
+      ]
+    },
+    {
+      "slug": "platforms-and-networks",
+      "title": "Network effects and platforms",
+      "summary": "Network externalities and standards, two-sided markets, and the economics of digital platforms.",
+      "requires": [
+        "industrial-organisation/product-differentiation"
+      ]
+    },
+    {
+      "slug": "competition-policy",
+      "title": "Competition policy",
+      "summary": "Merger analysis, abuse of dominance and cartel enforcement, and how antitrust principles differ across jurisdictions.",
+      "requires": [
+        "industrial-organisation/collusion",
+        "industrial-organisation/vertical-relations"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "market-design"
+  ]
+}

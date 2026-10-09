@@ -1,0 +1,96 @@
+{
+  "slug": "collocation-and-register",
+  "title": "Collocation and Register",
+  "full_title": "Collocation, Idiom and Register",
+  "area": "words",
+  "level": 3,
+  "order": 150,
+  "tagline": "Collocation, using a corpus, verb–noun and adjective–noun collocations, phrasal verbs and their formal equivalents, idioms, register, connotation and near-synonyms, translation traps and Chinglish, and academic vocabulary",
+  "summary": "Knowing a word includes knowing its company: which words it goes with, in which situations it is used and what it suggests. This course covers collocation and how to check it in a corpus, idioms and fixed expressions, the vocabulary of formal and informal registers, connotation and near-synonyms, the translation traps that produce Chinglish, and the core vocabulary of academic English.",
+  "overview": [],
+  "prerequisites": [
+    "word-formation"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "what-is-collocation",
+      "title": "Collocation",
+      "summary": "Why we say *heavy rain* and *make a mistake* but not *strong rain* or *do a mistake*, and how collocations differ in strength.",
+      "requires": [
+        "word-formation/learning-with-word-formation"
+      ]
+    },
+    {
+      "slug": "using-a-corpus",
+      "title": "Using a corpus",
+      "summary": "Concordances, frequencies and collocates from freely available corpora and dictionaries, and how to check whether a phrase is natural.",
+      "requires": [
+        "collocation-and-register/what-is-collocation"
+      ]
+    },
+    {
+      "slug": "verb-noun-adjective-noun",
+      "title": "Verb–noun and adjective–noun collocations",
+      "summary": "The high-frequency verbs *make*, *do*, *take*, *have* and *give*, and common adjective–noun pairs.",
+      "requires": [
+        "collocation-and-register/what-is-collocation"
+      ]
+    },
+    {
+      "slug": "phrasal-verbs-register",
+      "title": "Phrasal verbs and their formal equivalents",
+      "summary": "Phrasal verbs in everyday speech and their single-word equivalents in formal writing (*find out* and *discover*, *put off* and *postpone*).",
+      "requires": [
+        "collocation-and-register/verb-noun-adjective-noun"
+      ]
+    },
+    {
+      "slug": "idioms",
+      "title": "Idioms and fixed expressions",
+      "summary": "Idioms, proverbs, binomials (*sooner or later*) and sentence frames, how fixed they are, and when to use them.",
+      "requires": [
+        "collocation-and-register/what-is-collocation"
+      ]
+    },
+    {
+      "slug": "register",
+      "title": "Register",
+      "summary": "Formal, neutral and informal vocabulary, spoken and written English, and keeping the register of a text consistent.",
+      "requires": [
+        "collocation-and-register/phrasal-verbs-register"
+      ]
+    },
+    {
+      "slug": "connotation",
+      "title": "Connotation and near-synonyms",
+      "summary": "*Thin*, *slim* and *skinny*, *famous* and *notorious*: how words with similar meanings differ in feeling, strength and use.",
+      "requires": [
+        "collocation-and-register/register"
+      ]
+    },
+    {
+      "slug": "false-friends-chinglish",
+      "title": "Translation traps and Chinglish",
+      "summary": "Words and phrases translated one-to-one from Chinese that do not work in English, and how to find the natural expression.",
+      "requires": [
+        "collocation-and-register/connotation",
+        "collocation-and-register/using-a-corpus"
+      ]
+    },
+    {
+      "slug": "academic-vocabulary",
+      "title": "Academic vocabulary",
+      "summary": "The general academic words used across subjects, their collocations and word families, and how to learn them.",
+      "requires": [
+        "collocation-and-register/register"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "style-and-rhetoric",
+    "translation"
+  ]
+}

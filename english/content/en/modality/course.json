@@ -1,0 +1,98 @@
+{
+  "slug": "modality",
+  "title": "Modality",
+  "full_title": "Modality: Possibility, Obligation and Hedging",
+  "area": "grammar",
+  "level": 3,
+  "order": 140,
+  "tagline": "What modal verbs do, ability and possibility, obligation and advice, certainty and deduction, modals and the past, *will*, *would* and *shall*, modality without modal verbs, hedging and boosting, and politeness",
+  "summary": "Modality is how speakers show how certain they are, and what they consider necessary, possible or desirable. This course covers the meanings of the modal verbs and their past forms, other ways of expressing modality with adverbs, adjectives, nouns and verbs, the hedging that makes academic claims precise, and the part modality plays in politeness.",
+  "overview": [],
+  "prerequisites": [
+    "tense-and-aspect"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "what-modals-do",
+      "title": "What modal verbs do",
+      "summary": "The forms of the modal verbs, and their two broad kinds of meaning: how likely something is, and what is necessary or allowed.",
+      "requires": [
+        "core-grammar/first-modals"
+      ]
+    },
+    {
+      "slug": "ability-possibility",
+      "title": "Ability and possibility",
+      "summary": "*Can*, *could* and *be able to* for ability; *may*, *might*, *could* and *can* for possibility.",
+      "requires": [
+        "modality/what-modals-do"
+      ]
+    },
+    {
+      "slug": "obligation-necessity",
+      "title": "Obligation, necessity and advice",
+      "summary": "*Must*, *have to*, *need to*, *should* and *ought to*, and the difference between *mustn’t* and *don’t have to*.",
+      "requires": [
+        "modality/what-modals-do"
+      ]
+    },
+    {
+      "slug": "deduction",
+      "title": "Certainty and deduction",
+      "summary": "*Must*, *can’t*, *might* and *should* for conclusions about the present, on a scale from certain to impossible.",
+      "requires": [
+        "modality/ability-possibility",
+        "modality/obligation-necessity"
+      ]
+    },
+    {
+      "slug": "past-modals",
+      "title": "Modals and the past",
+      "summary": "*Must have*, *might have*, *should have*, *could have* and *needn’t have* for deductions and regrets about the past.",
+      "requires": [
+        "modality/deduction",
+        "tense-and-aspect/present-perfect"
+      ]
+    },
+    {
+      "slug": "will-would-shall",
+      "title": "*Will*, *would* and *shall*",
+      "summary": "Prediction, willingness, habits and offers, and the uses of *would* in conditionals and polite requests.",
+      "requires": [
+        "modality/what-modals-do"
+      ]
+    },
+    {
+      "slug": "modality-without-modals",
+      "title": "Modality without modal verbs",
+      "summary": "Adverbs (*probably*), adjectives (*likely*), nouns (*possibility*) and verbs (*seem*, *tend*, *appear*) that express modality.",
+      "requires": [
+        "modality/deduction"
+      ]
+    },
+    {
+      "slug": "hedging-boosting",
+      "title": "Hedging and boosting",
+      "summary": "Softening and strengthening claims in speech and academic writing, and avoiding claims that are too strong or too weak.",
+      "requires": [
+        "modality/modality-without-modals"
+      ]
+    },
+    {
+      "slug": "modality-politeness",
+      "title": "Modality and politeness",
+      "summary": "How *could*, *would* and *might* make requests and suggestions polite, and degrees of directness.",
+      "requires": [
+        "modality/will-would-shall",
+        "modality/hedging-boosting"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "pragmatics",
+    "academic-writing"
+  ]
+}

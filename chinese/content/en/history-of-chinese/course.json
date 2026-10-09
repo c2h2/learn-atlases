@@ -1,0 +1,97 @@
+{
+  "slug": "history-of-chinese",
+  "title": "History of Chinese",
+  "full_title": "History of the Chinese Language",
+  "area": "classical",
+  "level": 4,
+  "order": 260,
+  "tagline": "Periods of Chinese, Old Chinese, Middle Chinese, Early Mandarin, the history of the lexicon, the history of grammar, the formation of Mandarin, the vernacular movement, and modern standard Chinese",
+  "summary": "Chinese has a written record of more than three thousand years, which lets us follow its changes in sound, vocabulary and grammar in unusual detail. This course divides the history of Chinese into periods and describes each, traces the history of the lexicon and of grammatical structures such as classifiers and the 把 construction, follows the vernacular from Buddhist translations to the novels, and ends with the rise of Mandarin and the twentieth-century reforms that made modern standard Chinese.",
+  "overview": [],
+  "prerequisites": [
+    "phonology",
+    "linguistics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "periods",
+      "title": "Periods of Chinese",
+      "summary": "How the history of Chinese is divided into periods, and the sources for each.",
+      "requires": [
+        "phonology/why-phonology",
+        "linguistics/language-change"
+      ]
+    },
+    {
+      "slug": "old-chinese-language",
+      "title": "Old Chinese",
+      "summary": "The language of the oracle bones, the bronze inscriptions and the pre-Qin texts.",
+      "requires": [
+        "history-of-chinese/periods"
+      ]
+    },
+    {
+      "slug": "middle-chinese-language",
+      "title": "Middle Chinese",
+      "summary": "The language from the Han to the Tang, the Buddhist translations, and the growth of two-syllable words.",
+      "requires": [
+        "history-of-chinese/old-chinese-language"
+      ]
+    },
+    {
+      "slug": "early-mandarin",
+      "title": "Early Mandarin",
+      "summary": "The vernacular of the Tang and after: the Dunhuang manuscripts, the records of Chan masters and the language of Yuan drama.",
+      "requires": [
+        "history-of-chinese/middle-chinese-language"
+      ]
+    },
+    {
+      "slug": "lexical-history",
+      "title": "History of the lexicon",
+      "summary": "The replacement of basic words, the shift to two-syllable words, and loanwords through the ages.",
+      "requires": [
+        "history-of-chinese/early-mandarin"
+      ]
+    },
+    {
+      "slug": "grammatical-history",
+      "title": "History of grammar",
+      "summary": "The rise of classifiers, aspect particles and the 把 and 被 constructions, and changes in word order.",
+      "requires": [
+        "history-of-chinese/early-mandarin"
+      ]
+    },
+    {
+      "slug": "guanhua",
+      "title": "The formation of Mandarin",
+      "summary": "Guanhua as the language of officials, the Nanjing and Beijing standards, and the records left by Western missionaries.",
+      "requires": [
+        "history-of-chinese/lexical-history",
+        "history-of-chinese/grammatical-history"
+      ]
+    },
+    {
+      "slug": "vernacular-movement",
+      "title": "The vernacular movement",
+      "summary": "From the vernacular newspapers of the late Qing to the May Fourth movement, and Europeanised grammar.",
+      "requires": [
+        "history-of-chinese/guanhua"
+      ]
+    },
+    {
+      "slug": "modern-standard",
+      "title": "Modern standard Chinese",
+      "summary": "The national language movement, the definition of Putonghua in 1955–56, and the reforms of script and spelling.",
+      "requires": [
+        "history-of-chinese/vernacular-movement"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "dialects"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "slug": "sentences-and-paragraphs",
+  "title": "Sentences and Paragraphs",
+  "full_title": "Writing Sentences and Paragraphs",
+  "area": "writing",
+  "level": 2,
+  "order": 110,
+  "tagline": "Complete sentences, joining ideas with coordination and subordination, punctuation, capitals and spelling, topic sentences, coherent paragraphs, emails and messages, description and narration, and editing",
+  "summary": "Clear writing starts with sentences that are complete and correctly joined, grouped into paragraphs that each make one point. This course covers the sentence-boundary errors learners make most, joining ideas with coordination and subordination, punctuation and spelling conventions, topic sentences and coherent paragraphs, everyday emails and messages, descriptive and narrative paragraphs, and how to edit your own writing.",
+  "overview": [],
+  "prerequisites": [
+    "core-grammar"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "complete-sentences",
+      "title": "The complete sentence",
+      "summary": "What makes a sentence complete, and how to fix fragments, run-on sentences and comma splices.",
+      "requires": [
+        "core-grammar/sentence-patterns"
+      ]
+    },
+    {
+      "slug": "coordination",
+      "title": "Joining ideas: *and*, *but*, *or* and *so*",
+      "summary": "Coordinating conjunctions, the punctuation around them, and parallel structure.",
+      "requires": [
+        "sentences-and-paragraphs/complete-sentences"
+      ]
+    },
+    {
+      "slug": "subordination",
+      "title": "Joining ideas: *because*, *although* and *when*",
+      "summary": "Subordinate clauses of reason, contrast, time and condition, and why *although* and *but* do not go together in English as 虽然 and 但是 do in Chinese.",
+      "requires": [
+        "sentences-and-paragraphs/coordination"
+      ]
+    },
+    {
+      "slug": "punctuation",
+      "title": "Punctuation",
+      "summary": "Commas, full stops, apostrophes, colons, semicolons, dashes and quotation marks, and how they differ from Chinese punctuation.",
+      "requires": [
+        "sentences-and-paragraphs/subordination"
+      ]
+    },
+    {
+      "slug": "capitals-spelling",
+      "title": "Capital letters and spelling",
+      "summary": "Capital letters for names, titles and days, common spelling rules and errors, and British and American spelling.",
+      "requires": [
+        "sentences-and-paragraphs/complete-sentences"
+      ]
+    },
+    {
+      "slug": "topic-sentences",
+      "title": "Topic sentences and paragraph unity",
+      "summary": "Writing a topic sentence that states the point, and keeping every sentence of the paragraph on that point.",
+      "requires": [
+        "sentences-and-paragraphs/coordination"
+      ]
+    },
+    {
+      "slug": "coherence",
+      "title": "Coherent paragraphs",
+      "summary": "Ordering ideas, using linking words and phrases, and repeating key words so that a paragraph reads smoothly.",
+      "requires": [
+        "sentences-and-paragraphs/topic-sentences"
+      ]
+    },
+    {
+      "slug": "emails-messages",
+      "title": "Emails and messages",
+      "summary": "Formal and informal emails — greetings, purpose, requests and endings — and short notes and messages.",
+      "requires": [
+        "sentences-and-paragraphs/coherence"
+      ]
+    },
+    {
+      "slug": "describing-narrating",
+      "title": "Description and narration",
+      "summary": "Writing a descriptive paragraph about a place or a person and a narrative paragraph about an event, with the tenses and linking words each needs.",
+      "requires": [
+        "sentences-and-paragraphs/coherence",
+        "core-grammar/past-simple"
+      ]
+    },
+    {
+      "slug": "editing",
+      "title": "Editing your own writing",
+      "summary": "A checklist for revising and proofreading — sentence boundaries, verb forms, articles, agreement and punctuation — and how to use feedback.",
+      "requires": [
+        "sentences-and-paragraphs/punctuation",
+        "sentences-and-paragraphs/capitals-spelling",
+        "sentences-and-paragraphs/emails-messages"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "essay-writing"
+  ]
+}

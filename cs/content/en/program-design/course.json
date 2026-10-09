@@ -1,0 +1,99 @@
+{
+  "slug": "program-design",
+  "title": "Program Design",
+  "full_title": "Program Design: Abstraction, Objects and Functions",
+  "area": "programming",
+  "level": 1,
+  "order": 20,
+  "tagline": "Abstraction and specifications, abstract data types, classes and objects, inheritance, higher-order functions, iterators, types and design patterns",
+  "summary": "Once programs grow beyond a page, design matters more than syntax. This course teaches how to structure programs: abstraction and specifications, abstract data types, classes and objects, inheritance and polymorphism, functional programming with higher-order functions and immutable data, iterators, types and interfaces, and modules and design patterns.",
+  "overview": [],
+  "prerequisites": [
+    "programming-1"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "abstraction-specifications",
+      "title": "Abstraction and specifications",
+      "summary": "Procedural abstraction, preconditions and postconditions, and programming against a contract.",
+      "requires": [
+        "programming-1/functions",
+        "programming-1/testing-debugging"
+      ]
+    },
+    {
+      "slug": "abstract-data-types",
+      "title": "Abstract data types",
+      "summary": "Separating interface from representation, representation invariants and abstraction functions.",
+      "requires": [
+        "program-design/abstraction-specifications"
+      ]
+    },
+    {
+      "slug": "classes-objects",
+      "title": "Classes and objects",
+      "summary": "Classes, attributes and methods, constructors, encapsulation and object identity.",
+      "requires": [
+        "program-design/abstract-data-types"
+      ]
+    },
+    {
+      "slug": "inheritance-polymorphism",
+      "title": "Inheritance and polymorphism",
+      "summary": "Subclasses and overriding, dynamic dispatch, the substitution principle and composition over inheritance.",
+      "requires": [
+        "program-design/classes-objects"
+      ]
+    },
+    {
+      "slug": "higher-order-functions",
+      "title": "Higher-order functions",
+      "summary": "Functions as values, map, filter and reduce, lambda expressions and closures.",
+      "requires": [
+        "program-design/abstraction-specifications",
+        "programming-1/recursion"
+      ]
+    },
+    {
+      "slug": "functional-style",
+      "title": "Immutable data and functional style",
+      "summary": "Pure functions, immutable and persistent data, recursion over structures and reasoning by substitution.",
+      "requires": [
+        "program-design/higher-order-functions"
+      ]
+    },
+    {
+      "slug": "iterators-generators",
+      "title": "Iterators and generators",
+      "summary": "The iteration protocol, generators and lazy sequences, and pipelines of transformations.",
+      "requires": [
+        "program-design/higher-order-functions",
+        "program-design/classes-objects"
+      ]
+    },
+    {
+      "slug": "types-interfaces",
+      "title": "Types, interfaces and generics",
+      "summary": "Static and dynamic typing, type annotations, interfaces and generic containers.",
+      "requires": [
+        "program-design/inheritance-polymorphism"
+      ]
+    },
+    {
+      "slug": "modules-patterns",
+      "title": "Modules and design patterns",
+      "summary": "Modules and packages, coupling and cohesion, and common patterns such as iterator, observer and strategy.",
+      "requires": [
+        "program-design/types-interfaces",
+        "program-design/iterators-generators"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "software-engineering",
+    "programming-languages"
+  ]
+}

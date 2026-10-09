@@ -1,0 +1,90 @@
+{
+  "slug": "electrochemistry",
+  "title": "Electrochemistry",
+  "full_title": "Electrochemistry: Cells, Batteries and Corrosion",
+  "area": "physical",
+  "level": 3,
+  "order": 170,
+  "tagline": "Cell thermodynamics, conductivity, the double layer, electrode kinetics, voltammetry, batteries, fuel cells and corrosion",
+  "summary": "Electrochemistry links chemical change with electric current, and underlies batteries, fuel cells, electrolysis and corrosion. This course builds the thermodynamics of cells, the structure of the electrode–solution interface and the kinetics of electron transfer, introduces voltammetry, and applies these ideas to energy storage and conversion and to the corrosion of metals.",
+  "overview": [],
+  "prerequisites": [
+    "thermodynamics",
+    "kinetics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "cell-thermodynamics",
+      "title": "Thermodynamics of electrochemical cells",
+      "summary": "Cell potentials and the Gibbs energy, the Nernst equation, temperature coefficients and the effects of activity.",
+      "requires": [
+        "thermodynamics/ions-in-solution",
+        "general-chemistry-2/electrochemistry-intro"
+      ]
+    },
+    {
+      "slug": "conductivity",
+      "title": "Conductivity of electrolytes",
+      "summary": "Ionic mobility, molar conductivity and Kohlrausch’s law, transport numbers and solid electrolytes.",
+      "requires": [
+        "electrochemistry/cell-thermodynamics"
+      ]
+    },
+    {
+      "slug": "double-layer",
+      "title": "The electrode–solution interface",
+      "summary": "The electrical double layer, the Helmholtz, Gouy–Chapman and Stern models, and double-layer capacitance.",
+      "requires": [
+        "electrochemistry/cell-thermodynamics"
+      ]
+    },
+    {
+      "slug": "electrode-kinetics",
+      "title": "Electrode kinetics",
+      "summary": "Electron transfer at electrodes, the Butler–Volmer equation, exchange current density, overpotential and Tafel analysis.",
+      "requires": [
+        "electrochemistry/double-layer",
+        "kinetics/transition-state-theory"
+      ]
+    },
+    {
+      "slug": "voltammetry",
+      "title": "Mass transport and voltammetry",
+      "summary": "Diffusion, migration and convection, cyclic voltammetry and rotating-disc electrodes.",
+      "requires": [
+        "electrochemistry/electrode-kinetics"
+      ]
+    },
+    {
+      "slug": "batteries",
+      "title": "Batteries",
+      "summary": "Primary and rechargeable cells, lead–acid and lithium-ion chemistry, energy and power density, and degradation.",
+      "requires": [
+        "electrochemistry/cell-thermodynamics",
+        "electrochemistry/voltammetry"
+      ]
+    },
+    {
+      "slug": "fuel-cells-electrolysis",
+      "title": "Fuel cells, electrolysis and electrocatalysis",
+      "summary": "Hydrogen fuel cells, the electrolysis of water, the chlor-alkali process and electrocatalysts.",
+      "requires": [
+        "electrochemistry/electrode-kinetics"
+      ]
+    },
+    {
+      "slug": "corrosion",
+      "title": "Corrosion and its prevention",
+      "summary": "Mixed potentials and Evans diagrams, passivation, and protection by coatings and cathodic protection.",
+      "requires": [
+        "electrochemistry/electrode-kinetics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "materials-chemistry"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "physical-geology",
+  "title": "Physical Geology",
+  "full_title": "Physical Geology",
+  "area": "solid",
+  "level": 1,
+  "order": 20,
+  "tagline": "Minerals, igneous, sedimentary and metamorphic rocks, plate tectonics, volcanoes, earthquakes, deformation and the Earth’s interior",
+  "summary": "Physical geology studies what the Earth is made of and the processes that build and change it. This course covers minerals and the three families of rocks, plate tectonics and the evidence for it, volcanoes and earthquakes, the deformation of rocks and the growth of mountains, and what seismic waves and other evidence reveal about the planet’s interior.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "minerals",
+      "title": "Minerals",
+      "summary": "Atoms, crystals and the physical properties used to identify the common rock-forming minerals.",
+      "requires": []
+    },
+    {
+      "slug": "igneous-rocks",
+      "title": "Magma and igneous rocks",
+      "summary": "How rocks melt, how magma rises and cools, and how igneous rocks are classified by texture and composition.",
+      "requires": [
+        "physical-geology/minerals"
+      ]
+    },
+    {
+      "slug": "sedimentary-rocks",
+      "title": "Sediments and sedimentary rocks",
+      "summary": "How the products of weathering are transported, deposited and turned into clastic, chemical and biogenic sedimentary rocks.",
+      "requires": [
+        "physical-geology/minerals"
+      ]
+    },
+    {
+      "slug": "metamorphic-rocks",
+      "title": "Metamorphism and the rock cycle",
+      "summary": "How heat, pressure and fluids transform rocks, metamorphic textures and grades, and the rock cycle that links the three rock families.",
+      "requires": [
+        "physical-geology/igneous-rocks",
+        "physical-geology/sedimentary-rocks"
+      ]
+    },
+    {
+      "slug": "plate-tectonics",
+      "title": "Plate tectonics",
+      "summary": "From continental drift to seafloor spreading: the plates, their boundaries and motions, and the evidence for them.",
+      "requires": []
+    },
+    {
+      "slug": "volcanoes",
+      "title": "Volcanoes",
+      "summary": "Volcanic landforms and eruption styles, and how they depend on magma composition and plate-tectonic setting.",
+      "requires": [
+        "physical-geology/igneous-rocks",
+        "physical-geology/plate-tectonics"
+      ]
+    },
+    {
+      "slug": "earthquakes",
+      "title": "Earthquakes",
+      "summary": "Faults and elastic rebound, seismic waves, magnitude and intensity, and where and why earthquakes happen.",
+      "requires": [
+        "physical-geology/plate-tectonics"
+      ]
+    },
+    {
+      "slug": "deformation",
+      "title": "Deformation and mountain building",
+      "summary": "Folds, faults and joints, how rocks respond to stress, and how mountain belts grow at convergent plate boundaries.",
+      "requires": [
+        "physical-geology/plate-tectonics",
+        "physical-geology/metamorphic-rocks"
+      ]
+    },
+    {
+      "slug": "earth-interior",
+      "title": "Inside the Earth",
+      "summary": "Crust, mantle and core as revealed by seismic waves, gravity, heat flow and the magnetic field.",
+      "requires": [
+        "physical-geology/earthquakes"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "mineralogy-petrology",
+    "structural-geology",
+    "sedimentology"
+  ]
+}

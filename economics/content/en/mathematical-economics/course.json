@@ -1,0 +1,101 @@
+{
+  "slug": "mathematical-economics",
+  "title": "Mathematics for Economists",
+  "full_title": "Mathematical Methods for Economists",
+  "area": "methods",
+  "level": 1,
+  "order": 20,
+  "tagline": "Functions and models, derivatives and elasticities, integration, matrices, constrained optimisation and Lagrange multipliers, comparative statics, dynamics and dynamic optimisation",
+  "summary": "Modern economics is written in mathematics. This course develops the tools used throughout the atlas — functions and derivatives, integrals and present values, matrices and linear models, unconstrained and constrained optimisation with Lagrange multipliers and the Kuhn–Tucker conditions, comparative statics and the envelope theorem, difference and differential equations, and an introduction to dynamic optimisation — each motivated by an economic problem. Probability and statistics are taught in the Maths Atlas.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "functions-and-models",
+      "title": "Functions and economic models",
+      "summary": "Variables, parameters and the functional forms used in economics — linear, power, exponential and logarithmic — and the idea of an equilibrium.",
+      "requires": []
+    },
+    {
+      "slug": "derivatives-and-elasticities",
+      "title": "Derivatives, marginal quantities and elasticities",
+      "summary": "Differentiation as marginal analysis, logarithmic derivatives, elasticities and growth rates.",
+      "requires": [
+        "mathematical-economics/functions-and-models"
+      ]
+    },
+    {
+      "slug": "integration",
+      "title": "Integration, surplus and present value",
+      "summary": "Antiderivatives and definite integrals, consumer surplus, continuous compounding and the present value of income streams.",
+      "requires": [
+        "mathematical-economics/derivatives-and-elasticities"
+      ]
+    },
+    {
+      "slug": "matrices-and-linear-models",
+      "title": "Matrices and linear models",
+      "summary": "Systems of linear equations, inverses and determinants, Cramer’s rule, input–output models and quadratic forms.",
+      "requires": [
+        "mathematical-economics/functions-and-models"
+      ]
+    },
+    {
+      "slug": "functions-of-several-variables",
+      "title": "Functions of several variables",
+      "summary": "Partial derivatives, total differentials, level curves, homogeneous functions and Euler’s theorem, and implicit differentiation.",
+      "requires": [
+        "mathematical-economics/derivatives-and-elasticities"
+      ]
+    },
+    {
+      "slug": "unconstrained-optimisation",
+      "title": "Unconstrained optimisation",
+      "summary": "First- and second-order conditions, concave and convex functions, and profit maximisation as the leading example.",
+      "requires": [
+        "mathematical-economics/functions-of-several-variables",
+        "mathematical-economics/matrices-and-linear-models"
+      ]
+    },
+    {
+      "slug": "constrained-optimisation",
+      "title": "Constrained optimisation and Lagrange multipliers",
+      "summary": "Equality constraints and the Lagrangian, the multiplier as a shadow price, and inequality constraints with the Kuhn–Tucker conditions.",
+      "requires": [
+        "mathematical-economics/unconstrained-optimisation"
+      ]
+    },
+    {
+      "slug": "comparative-statics",
+      "title": "Comparative statics and the envelope theorem",
+      "summary": "How optimal choices and equilibria respond to parameters, using the implicit function theorem and the envelope theorem.",
+      "requires": [
+        "mathematical-economics/constrained-optimisation"
+      ]
+    },
+    {
+      "slug": "difference-and-differential-equations",
+      "title": "Difference and differential equations",
+      "summary": "First- and second-order difference and differential equations, steady states and stability, with the cobweb model and simple growth models.",
+      "requires": [
+        "mathematical-economics/derivatives-and-elasticities"
+      ]
+    },
+    {
+      "slug": "dynamic-optimisation",
+      "title": "Introduction to dynamic optimisation",
+      "summary": "Discounting and intertemporal choice, dynamic programming and the Bellman equation, and a first look at optimal control.",
+      "requires": [
+        "mathematical-economics/constrained-optimisation",
+        "mathematical-economics/difference-and-differential-equations"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "microeconomics",
+    "econometrics"
+  ]
+}

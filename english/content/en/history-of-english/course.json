@@ -1,0 +1,105 @@
+{
+  "slug": "history-of-english",
+  "title": "History of English",
+  "full_title": "The History of the English Language",
+  "area": "language",
+  "level": 4,
+  "order": 240,
+  "tagline": "English and its relatives, Old English, the Vikings and Old Norse, the Norman Conquest, Middle English and Chaucer, the Great Vowel Shift and spelling, Early Modern English, dictionaries and grammars, the spread of English, and English today",
+  "summary": "English began as the dialects of a few Germanic peoples and became a world language, taking words from Norse, French, Latin, Greek and many other languages on the way. This course traces that history — Old, Middle and Early Modern English, the sound changes that explain modern spelling, the making of dictionaries and grammars, and the spread of English around the world — and shows how it explains features of the language that learners meet today.",
+  "overview": [],
+  "prerequisites": [
+    "word-formation",
+    "connected-speech"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "english-and-its-relatives",
+      "title": "English and its relatives",
+      "summary": "The Indo-European family, the Germanic branch, and how linguists reconstruct the relations between languages.",
+      "requires": [
+        "word-formation/greek-latin-roots"
+      ]
+    },
+    {
+      "slug": "old-english",
+      "title": "Old English",
+      "summary": "The Anglo-Saxon settlements, the inflections and vocabulary of Old English, and texts such as *Beowulf*.",
+      "requires": [
+        "history-of-english/english-and-its-relatives"
+      ]
+    },
+    {
+      "slug": "vikings-norse",
+      "title": "The Vikings and Old Norse",
+      "summary": "Norse settlement, its legacy in everyday words such as *sky*, *egg* and *they*, and its possible part in the loss of inflections.",
+      "requires": [
+        "history-of-english/old-english"
+      ]
+    },
+    {
+      "slug": "norman-french",
+      "title": "The Norman Conquest and French",
+      "summary": "French as the language of power after 1066, and the layers of vocabulary it left (*cow* and *beef*, *ask* and *inquire*).",
+      "requires": [
+        "history-of-english/vikings-norse"
+      ]
+    },
+    {
+      "slug": "middle-english",
+      "title": "Middle English and Chaucer",
+      "summary": "The return of English, its regional dialects, and the language of Chaucer.",
+      "requires": [
+        "history-of-english/norman-french"
+      ]
+    },
+    {
+      "slug": "great-vowel-shift",
+      "title": "The Great Vowel Shift and English spelling",
+      "summary": "How the long vowels changed between about 1400 and 1700, and why English spelling no longer matches pronunciation.",
+      "requires": [
+        "history-of-english/middle-english",
+        "sounds-of-english/spelling-and-sound"
+      ]
+    },
+    {
+      "slug": "early-modern-english",
+      "title": "Early Modern English",
+      "summary": "Printing, the Renaissance borrowings from Latin and Greek, Shakespeare and the King James Bible.",
+      "requires": [
+        "history-of-english/great-vowel-shift"
+      ]
+    },
+    {
+      "slug": "dictionaries-grammars",
+      "title": "Dictionaries and grammars",
+      "summary": "The standardisation of English: Johnson’s dictionary, the prescriptive grammarians, Webster and the *Oxford English Dictionary*.",
+      "requires": [
+        "history-of-english/early-modern-english"
+      ]
+    },
+    {
+      "slug": "spread-of-english",
+      "title": "English spreads",
+      "summary": "Colonisation, American English, and how English became a global language.",
+      "requires": [
+        "history-of-english/dictionaries-grammars"
+      ]
+    },
+    {
+      "slug": "english-today",
+      "title": "English today",
+      "summary": "Changes in progress in vocabulary, grammar and pronunciation, and the effect of the internet.",
+      "requires": [
+        "history-of-english/spread-of-english"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "world-englishes",
+    "reading-literature"
+  ]
+}

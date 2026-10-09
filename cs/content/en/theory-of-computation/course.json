@@ -1,0 +1,94 @@
+{
+  "slug": "theory-of-computation",
+  "title": "Theory of Computation",
+  "full_title": "Automata, Computability and Formal Languages",
+  "area": "theory",
+  "level": 2,
+  "order": 60,
+  "tagline": "Finite automata, nondeterminism, regular expressions, context-free grammars, pushdown automata, Turing machines, decidability and reductions",
+  "summary": "What can a computer do in principle, and what is impossible however much time we allow? This course builds the mathematical models of computation — finite automata, regular expressions, context-free grammars, pushdown automata and Turing machines — and uses them to prove the limits of computation: undecidable problems, reductions and Rice’s theorem.",
+  "overview": [],
+  "prerequisites": [
+    "data-structures"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "finite-automata",
+      "title": "Finite automata",
+      "summary": "Strings and languages, deterministic finite automata, and the closure properties of regular languages.",
+      "requires": []
+    },
+    {
+      "slug": "nondeterminism",
+      "title": "Nondeterminism",
+      "summary": "Nondeterministic finite automata, ε-transitions and the subset construction.",
+      "requires": [
+        "theory-of-computation/finite-automata"
+      ]
+    },
+    {
+      "slug": "regular-expressions",
+      "title": "Regular expressions",
+      "summary": "Regular expressions, their equivalence with finite automata, and pattern matching in practice.",
+      "requires": [
+        "theory-of-computation/nondeterminism"
+      ]
+    },
+    {
+      "slug": "non-regular-languages",
+      "title": "Non-regular languages and minimisation",
+      "summary": "The pumping lemma, the Myhill–Nerode theorem and minimal automata.",
+      "requires": [
+        "theory-of-computation/regular-expressions"
+      ]
+    },
+    {
+      "slug": "context-free-grammars",
+      "title": "Context-free grammars",
+      "summary": "Grammars, derivations and parse trees, ambiguity, and Chomsky normal form.",
+      "requires": [
+        "theory-of-computation/regular-expressions"
+      ]
+    },
+    {
+      "slug": "pushdown-automata",
+      "title": "Pushdown automata",
+      "summary": "Pushdown automata, their equivalence with context-free grammars, and the pumping lemma for context-free languages.",
+      "requires": [
+        "theory-of-computation/context-free-grammars",
+        "theory-of-computation/non-regular-languages"
+      ]
+    },
+    {
+      "slug": "turing-machines",
+      "title": "Turing machines",
+      "summary": "The Turing machine model and its variants, the Church–Turing thesis and universal machines.",
+      "requires": [
+        "theory-of-computation/pushdown-automata"
+      ]
+    },
+    {
+      "slug": "decidability",
+      "title": "Decidability and the halting problem",
+      "summary": "Decidable and recognisable languages, diagonalisation and the undecidability of the halting problem.",
+      "requires": [
+        "theory-of-computation/turing-machines"
+      ]
+    },
+    {
+      "slug": "reductions",
+      "title": "Reductions and Rice’s theorem",
+      "summary": "Mapping reductions, undecidable questions about programs, Rice’s theorem and the Post correspondence problem.",
+      "requires": [
+        "theory-of-computation/decidability"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "complexity",
+    "compilers"
+  ]
+}

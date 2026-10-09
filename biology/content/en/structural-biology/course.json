@@ -1,0 +1,97 @@
+{
+  "slug": "structural-biology",
+  "title": "Structural Biology",
+  "full_title": "Structural Biology",
+  "area": "cells",
+  "level": 3,
+  "order": 170,
+  "tagline": "Protein architecture and folding, nucleic acids, X-ray crystallography, NMR, cryo-EM, structure prediction, molecular machines and dynamics",
+  "summary": "Structural biology explains how biological molecules work by locating their atoms. This course covers the architecture and folding of proteins and nucleic acids, the methods that determine structures — X-ray crystallography, NMR spectroscopy and cryo-electron microscopy — the prediction of structure from sequence, and what structures reveal about molecular machines, dynamics and binding.",
+  "overview": [],
+  "prerequisites": [
+    "biochemistry",
+    "molecular-biology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "protein-architecture",
+      "title": "Protein architecture",
+      "summary": "Secondary structure, folds, domains and the classification of protein structures.",
+      "requires": [
+        "biochemistry/amino-acids-proteins"
+      ]
+    },
+    {
+      "slug": "protein-folding",
+      "title": "Protein folding and stability",
+      "summary": "The energy landscape of folding, chaperones, misfolding and aggregation.",
+      "requires": [
+        "structural-biology/protein-architecture"
+      ]
+    },
+    {
+      "slug": "nucleic-acid-structure",
+      "title": "Structures of nucleic acids",
+      "summary": "Forms of DNA, RNA folding and ribozymes, and how proteins recognise DNA and RNA.",
+      "requires": [
+        "structural-biology/protein-architecture",
+        "molecular-biology/dna-structure"
+      ]
+    },
+    {
+      "slug": "x-ray-crystallography",
+      "title": "X-ray crystallography",
+      "summary": "Crystals, diffraction, the phase problem and building a model into an electron-density map.",
+      "requires": [
+        "structural-biology/protein-architecture"
+      ]
+    },
+    {
+      "slug": "nmr-spectroscopy",
+      "title": "NMR and spectroscopic methods",
+      "summary": "Nuclear magnetic resonance of proteins, and circular dichroism and fluorescence for structure and dynamics.",
+      "requires": [
+        "structural-biology/protein-architecture"
+      ]
+    },
+    {
+      "slug": "cryo-em",
+      "title": "Cryo-electron microscopy",
+      "summary": "Single-particle analysis, electron tomography and the resolution revolution.",
+      "requires": [
+        "structural-biology/x-ray-crystallography"
+      ]
+    },
+    {
+      "slug": "structure-prediction",
+      "title": "Predicting structure",
+      "summary": "Homology modelling, physics-based methods and deep-learning prediction from AlphaFold onwards.",
+      "requires": [
+        "structural-biology/protein-folding"
+      ]
+    },
+    {
+      "slug": "molecular-machines",
+      "title": "Molecular machines",
+      "summary": "How structures explain function: the ribosome, ATP synthase, motor proteins and membrane transporters.",
+      "requires": [
+        "structural-biology/cryo-em"
+      ]
+    },
+    {
+      "slug": "dynamics-and-design",
+      "title": "Dynamics, binding and design",
+      "summary": "Conformational change, ligand binding, molecular dynamics simulation and the design of new proteins.",
+      "requires": [
+        "structural-biology/molecular-machines",
+        "structural-biology/structure-prediction"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "bioinformatics"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "labour-economics",
+  "title": "Labour Economics",
+  "full_title": "Labour Economics",
+  "area": "policy",
+  "level": 3,
+  "order": 190,
+  "tagline": "Labour supply and demand, equilibrium and minimum wages, human capital and the returns to education, compensating differentials, discrimination, wage inequality, unions and migration, and job search",
+  "summary": "Most people’s income comes from work, so the labour market matters for nearly everyone. This course studies how labour supply and demand determine wages and employment; how people invest in education and skills; why wages differ between jobs and between groups; the effects of minimum wages, unions and migration; and how job search shapes unemployment — always confronting theory with empirical evidence.",
+  "overview": [],
+  "prerequisites": [
+    "microeconomics",
+    "econometrics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "labour-supply",
+      "title": "Labour supply",
+      "summary": "The labour–leisure model, income and substitution effects, participation decisions and evidence on labour-supply elasticities.",
+      "requires": [
+        "microeconomics/labour-and-intertemporal-choice"
+      ]
+    },
+    {
+      "slug": "labour-demand",
+      "title": "Labour demand",
+      "summary": "Labour demand in the short and long run, the elasticity of factor demand, and the effects of technology and automation.",
+      "requires": [
+        "microeconomics/production-and-cost"
+      ]
+    },
+    {
+      "slug": "labour-market-equilibrium",
+      "title": "Labour market equilibrium and minimum wages",
+      "summary": "Competitive equilibrium, monopsony, and the theory and evidence on minimum wages.",
+      "requires": [
+        "labour-economics/labour-supply",
+        "labour-economics/labour-demand"
+      ]
+    },
+    {
+      "slug": "human-capital",
+      "title": "Human capital and the returns to education",
+      "summary": "The schooling decision, human capital versus signalling, and estimating the returns to education.",
+      "requires": [
+        "labour-economics/labour-market-equilibrium",
+        "econometrics/instrumental-variables"
+      ]
+    },
+    {
+      "slug": "compensating-differentials",
+      "title": "Compensating wage differentials",
+      "summary": "Hedonic wages, the value of a statistical life and the pricing of job amenities.",
+      "requires": [
+        "labour-economics/labour-market-equilibrium"
+      ]
+    },
+    {
+      "slug": "discrimination",
+      "title": "Discrimination in the labour market",
+      "summary": "Taste-based and statistical discrimination, decomposing wage gaps, and audit and correspondence studies.",
+      "requires": [
+        "labour-economics/human-capital"
+      ]
+    },
+    {
+      "slug": "wage-inequality",
+      "title": "Wage inequality",
+      "summary": "The rise in wage inequality, skill-biased and task-based technical change, and the roles of trade and institutions.",
+      "requires": [
+        "labour-economics/human-capital"
+      ]
+    },
+    {
+      "slug": "unions-and-migration",
+      "title": "Unions, bargaining and migration",
+      "summary": "Collective bargaining and union wage effects, and the economics of immigration and its effects on the labour market.",
+      "requires": [
+        "labour-economics/labour-market-equilibrium"
+      ]
+    },
+    {
+      "slug": "search-and-unemployment",
+      "title": "Job search and unemployment",
+      "summary": "Search theory and reservation wages, the Diamond–Mortensen–Pissarides matching model, and unemployment insurance.",
+      "requires": [
+        "labour-economics/labour-market-equilibrium"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

@@ -1,0 +1,92 @@
+{
+  "slug": "biostatistics",
+  "title": "Biostatistics",
+  "full_title": "Biostatistics and Experimental Design",
+  "area": "quantitative",
+  "level": 1,
+  "order": 60,
+  "tagline": "Describing data, probability, estimation, hypothesis tests, comparing groups, categorical data, experimental design and linear models",
+  "summary": "Biological data are variable, so conclusions have to be drawn with statistics. This course covers describing data, probability distributions, estimation and confidence intervals, hypothesis tests and their pitfalls, comparisons between groups, categorical data, the design of experiments, and regression and linear models, with examples from field, laboratory and genetic studies.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "data-and-variation",
+      "title": "Data, variation and description",
+      "summary": "Types of biological data, summary statistics and honest graphs.",
+      "requires": []
+    },
+    {
+      "slug": "probability-distributions",
+      "title": "Probability and distributions",
+      "summary": "The rules of probability and the binomial, Poisson and normal distributions in biology.",
+      "requires": [
+        "biostatistics/data-and-variation"
+      ]
+    },
+    {
+      "slug": "estimation",
+      "title": "Sampling and estimation",
+      "summary": "Samples and populations, sampling distributions, standard errors and confidence intervals.",
+      "requires": [
+        "biostatistics/probability-distributions"
+      ]
+    },
+    {
+      "slug": "hypothesis-testing",
+      "title": "Hypothesis testing",
+      "summary": "Null hypotheses, P-values, type I and type II errors, power and the problem of multiple tests.",
+      "requires": [
+        "biostatistics/estimation"
+      ]
+    },
+    {
+      "slug": "comparing-groups",
+      "title": "Comparing groups",
+      "summary": "Student’s t-tests, analysis of variance and their non-parametric counterparts.",
+      "requires": [
+        "biostatistics/hypothesis-testing"
+      ]
+    },
+    {
+      "slug": "categorical-data",
+      "title": "Categorical data",
+      "summary": "Contingency tables, chi-squared and exact tests, and goodness of fit to genetic ratios.",
+      "requires": [
+        "biostatistics/hypothesis-testing"
+      ]
+    },
+    {
+      "slug": "experimental-design",
+      "title": "Experimental design",
+      "summary": "Controls, replication, randomisation, blocking, pseudoreplication and planning the sample size.",
+      "requires": [
+        "biostatistics/comparing-groups"
+      ]
+    },
+    {
+      "slug": "regression",
+      "title": "Correlation and regression",
+      "summary": "Linear regression, correlation, residuals, and transformations such as allometric scaling.",
+      "requires": [
+        "biostatistics/comparing-groups"
+      ]
+    },
+    {
+      "slug": "linear-models",
+      "title": "Linear and generalised linear models",
+      "summary": "Multiple regression, analysis of covariance, logistic and Poisson regression, and model selection.",
+      "requires": [
+        "biostatistics/regression",
+        "biostatistics/experimental-design"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "ecology",
+    "bioinformatics"
+  ]
+}

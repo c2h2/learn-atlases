@@ -1,0 +1,88 @@
+{
+  "slug": "market-design",
+  "title": "Market Design",
+  "full_title": "Auctions and Market Design",
+  "area": "strategy",
+  "level": 4,
+  "order": 230,
+  "tagline": "Auction formats, revenue equivalence, optimal auctions, common values and the winner’s curse, multi-unit and spectrum auctions, stable matching, school choice and kidney exchange",
+  "summary": "Some markets are designed rather than grown: auctions for radio spectrum and government bonds, clearing houses for junior doctors, school admissions and kidney exchanges. This course develops auction theory — the standard formats, revenue equivalence, optimal auctions, common values and multi-unit auctions — and matching theory — stable matching, the deferred-acceptance algorithm, school choice and exchange without money — and shows how both have been used to design real markets.",
+  "overview": [],
+  "prerequisites": [
+    "game-theory",
+    "information-economics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "auction-formats",
+      "title": "Auction formats and private values",
+      "summary": "English, Dutch, first-price and second-price auctions, and equilibrium bidding with independent private values.",
+      "requires": [
+        "game-theory/bayesian-games"
+      ]
+    },
+    {
+      "slug": "revenue-equivalence",
+      "title": "Revenue equivalence",
+      "summary": "The revenue equivalence theorem, its assumptions, and how risk aversion, asymmetries and budget constraints break it.",
+      "requires": [
+        "market-design/auction-formats"
+      ]
+    },
+    {
+      "slug": "optimal-auctions",
+      "title": "Optimal auctions",
+      "summary": "Myerson’s optimal auction, virtual values and reserve prices.",
+      "requires": [
+        "market-design/revenue-equivalence",
+        "information-economics/mechanism-design"
+      ]
+    },
+    {
+      "slug": "common-values",
+      "title": "Common values and the winner’s curse",
+      "summary": "Interdependent values, the winner’s curse, affiliation and the linkage principle.",
+      "requires": [
+        "market-design/auction-formats"
+      ]
+    },
+    {
+      "slug": "multi-unit-auctions",
+      "title": "Multi-unit and spectrum auctions",
+      "summary": "Uniform-price and discriminatory auctions, demand reduction, and simultaneous ascending and combinatorial auctions.",
+      "requires": [
+        "market-design/revenue-equivalence",
+        "market-design/common-values"
+      ]
+    },
+    {
+      "slug": "stable-matching",
+      "title": "Stable matching",
+      "summary": "Two-sided matching markets, the Gale–Shapley deferred-acceptance algorithm and the structure of stable matchings.",
+      "requires": [
+        "game-theory/strategic-games"
+      ]
+    },
+    {
+      "slug": "school-choice",
+      "title": "School choice and the medical match",
+      "summary": "Strategy-proofness, the Boston mechanism versus deferred acceptance, and the redesign of the US medical residency match.",
+      "requires": [
+        "market-design/stable-matching",
+        "information-economics/mechanism-design"
+      ]
+    },
+    {
+      "slug": "exchange-without-money",
+      "title": "Exchange without money",
+      "summary": "Housing markets, the top trading cycles algorithm and kidney exchange.",
+      "requires": [
+        "market-design/stable-matching"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

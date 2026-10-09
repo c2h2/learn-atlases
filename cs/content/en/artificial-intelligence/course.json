@@ -1,0 +1,94 @@
+{
+  "slug": "artificial-intelligence",
+  "title": "Artificial Intelligence",
+  "full_title": "Artificial Intelligence: Search, Logic and Uncertainty",
+  "area": "data",
+  "level": 3,
+  "order": 170,
+  "tagline": "Intelligent agents, search, games, constraint satisfaction, logic, planning, probabilistic reasoning, decision making and reinforcement learning",
+  "summary": "Artificial intelligence studies how to build agents that act well in the world. This course covers the classical core of the field — search, game playing, constraint satisfaction, logical reasoning and planning — and reasoning under uncertainty with Bayesian networks, decision theory and reinforcement learning. Machine learning and language models are covered in depth in the LLM Atlas.",
+  "overview": [],
+  "prerequisites": [
+    "algorithms"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "intelligent-agents",
+      "title": "Intelligent agents",
+      "summary": "Agents and environments, rationality, and the kinds of problems artificial intelligence addresses.",
+      "requires": []
+    },
+    {
+      "slug": "search",
+      "title": "Problem solving by search",
+      "summary": "State spaces, uninformed search, and heuristic search with A* and admissible heuristics.",
+      "requires": [
+        "artificial-intelligence/intelligent-agents",
+        "algorithms/shortest-paths"
+      ]
+    },
+    {
+      "slug": "adversarial-search",
+      "title": "Adversarial search and games",
+      "summary": "Minimax, alpha–beta pruning, evaluation functions and Monte Carlo tree search.",
+      "requires": [
+        "artificial-intelligence/search"
+      ]
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "title": "Constraint satisfaction",
+      "summary": "Variables, domains and constraints, backtracking search, constraint propagation and local search.",
+      "requires": [
+        "artificial-intelligence/search"
+      ]
+    },
+    {
+      "slug": "logical-agents",
+      "title": "Logical agents",
+      "summary": "Propositional and first-order logic, inference by resolution and SAT solving, and knowledge representation.",
+      "requires": [
+        "artificial-intelligence/intelligent-agents"
+      ]
+    },
+    {
+      "slug": "planning",
+      "title": "Automated planning",
+      "summary": "Classical planning languages, state-space and plan-space search, and planning graphs.",
+      "requires": [
+        "artificial-intelligence/logical-agents",
+        "artificial-intelligence/search"
+      ]
+    },
+    {
+      "slug": "probabilistic-reasoning",
+      "title": "Probabilistic reasoning",
+      "summary": "Bayesian networks, exact and approximate inference, and reasoning over time with hidden Markov models.",
+      "requires": [
+        "artificial-intelligence/intelligent-agents"
+      ]
+    },
+    {
+      "slug": "decision-making",
+      "title": "Decisions under uncertainty",
+      "summary": "Utility theory, Markov decision processes, value iteration and policy iteration.",
+      "requires": [
+        "artificial-intelligence/probabilistic-reasoning"
+      ]
+    },
+    {
+      "slug": "reinforcement-learning",
+      "title": "Reinforcement learning",
+      "summary": "Learning from reward: temporal-difference learning, Q-learning, exploration and function approximation.",
+      "requires": [
+        "artificial-intelligence/decision-making"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "information-retrieval"
+  ]
+}

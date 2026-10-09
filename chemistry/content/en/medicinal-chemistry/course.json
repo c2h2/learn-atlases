@@ -1,0 +1,94 @@
+{
+  "slug": "medicinal-chemistry",
+  "title": "Medicinal Chemistry",
+  "full_title": "Medicinal Chemistry and Drug Design",
+  "area": "biological",
+  "level": 4,
+  "order": 230,
+  "tagline": "Drug targets and binding, pharmacokinetics, hits and leads, structure–activity relationships, structure-based design, case studies, biologics and drug development",
+  "summary": "Medicinal chemistry applies chemistry to the discovery and design of medicines. This course explains drug targets and how drugs bind to them, how the body absorbs, distributes and clears drugs, how leads are found and optimised through structure–activity relationships and structure-based design, and follows case studies, newer modalities such as peptides and antibodies, and the path from candidate to approved medicine. It is for education only, not medical advice.",
+  "overview": [],
+  "prerequisites": [
+    "organic-2",
+    "biochemistry"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "drug-targets",
+      "title": "Drug targets",
+      "summary": "Enzymes, receptors, ion channels, transporters and nucleic acids as targets for drugs.",
+      "requires": [
+        "biochemistry/protein-function"
+      ]
+    },
+    {
+      "slug": "drug-binding",
+      "title": "How drugs bind",
+      "summary": "Intermolecular forces in binding, affinity and selectivity, agonists and antagonists, and dose–response relationships.",
+      "requires": [
+        "medicinal-chemistry/drug-targets"
+      ]
+    },
+    {
+      "slug": "pharmacokinetics",
+      "title": "Pharmacokinetics and ADME",
+      "summary": "Absorption, distribution, metabolism and excretion, drug-likeness and Lipinski’s rules, and metabolism by cytochrome P450 enzymes.",
+      "requires": [
+        "medicinal-chemistry/drug-binding"
+      ]
+    },
+    {
+      "slug": "hits-and-leads",
+      "title": "Finding hits and leads",
+      "summary": "Natural products, high-throughput screening and fragment-based approaches to finding active compounds.",
+      "requires": [
+        "medicinal-chemistry/drug-targets"
+      ]
+    },
+    {
+      "slug": "structure-activity",
+      "title": "Structure–activity relationships",
+      "summary": "Pharmacophores, bioisosteres, optimising potency and properties, and quantitative structure–activity relationships.",
+      "requires": [
+        "medicinal-chemistry/hits-and-leads"
+      ]
+    },
+    {
+      "slug": "structure-based-design",
+      "title": "Structure-based and computer-aided design",
+      "summary": "Using protein structures, docking and modelling to design ligands, with the HIV protease inhibitors as a case study.",
+      "requires": [
+        "medicinal-chemistry/structure-activity"
+      ]
+    },
+    {
+      "slug": "drug-case-studies",
+      "title": "Case studies in drug design",
+      "summary": "β-Lactam antibiotics, ACE inhibitors, statins and kinase inhibitors: how chemistry shaped each class.",
+      "requires": [
+        "medicinal-chemistry/structure-based-design",
+        "biochemistry/enzymes"
+      ]
+    },
+    {
+      "slug": "biologics",
+      "title": "Peptides, biologics and new modalities",
+      "summary": "Peptide drugs, antibodies, oligonucleotide therapies and targeted protein degraders.",
+      "requires": [
+        "medicinal-chemistry/drug-targets"
+      ]
+    },
+    {
+      "slug": "drug-development",
+      "title": "From candidate to medicine",
+      "summary": "Toxicology and safety testing, process chemistry and scale-up, clinical trials and regulatory approval.",
+      "requires": [
+        "medicinal-chemistry/pharmacokinetics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

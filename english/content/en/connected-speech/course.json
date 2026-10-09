@@ -1,0 +1,104 @@
+{
+  "slug": "connected-speech",
+  "title": "Stress, Rhythm and Intonation",
+  "full_title": "Connected Speech: Stress, Rhythm and Intonation",
+  "area": "sounds",
+  "level": 2,
+  "order": 80,
+  "tagline": "Word stress patterns, sentence stress and focus, weak forms, rhythm, linking, elision and assimilation, falling and rising tones, intonation and attitude, Mandarin tones and English intonation, and hearing fast speech",
+  "summary": "In connected speech English words change: unstressed syllables shrink, and sounds link, disappear or blend, while the melody of the voice carries meaning. Mandarin uses pitch mainly to tell words apart; English uses it to show focus, attitude and the structure of what is said, so learners often find natural English hard to follow and their own English hard to hear. This course covers word and sentence stress, weak forms, rhythm, linking, elision, assimilation and intonation, and applies them to listening.",
+  "overview": [],
+  "prerequisites": [
+    "sounds-of-english"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "word-stress-patterns",
+      "title": "Word stress patterns",
+      "summary": "How suffixes move or keep the stress (*photograph*, *photography*, *photographic*), stress in compounds, and pairs such as *a record* and *to record*.",
+      "requires": [
+        "sounds-of-english/word-stress-basics"
+      ]
+    },
+    {
+      "slug": "sentence-stress",
+      "title": "Sentence stress and focus",
+      "summary": "Content words and function words, where the main stress falls in a sentence, and how moving it changes the meaning.",
+      "requires": [
+        "connected-speech/word-stress-patterns"
+      ]
+    },
+    {
+      "slug": "weak-forms",
+      "title": "Weak forms",
+      "summary": "How words such as *to*, *for*, *of*, *can*, *and* and *them* are reduced to schwa in normal speech, and when they keep their strong forms.",
+      "requires": [
+        "connected-speech/sentence-stress"
+      ]
+    },
+    {
+      "slug": "rhythm",
+      "title": "Rhythm",
+      "summary": "The rhythm of English, in which stressed syllables stand out and unstressed ones are compressed, and how it differs from the rhythm of Mandarin.",
+      "requires": [
+        "connected-speech/weak-forms"
+      ]
+    },
+    {
+      "slug": "linking",
+      "title": "Linking",
+      "summary": "Joining words in speech — consonant to vowel, and vowel to vowel with *w*, *y* or *r* — so that *an apple* and *pick it up* flow as one.",
+      "requires": [
+        "connected-speech/rhythm"
+      ]
+    },
+    {
+      "slug": "elision-assimilation",
+      "title": "Elision and assimilation",
+      "summary": "How sounds are dropped (*next day*) or changed by their neighbours (*ten pounds*, *would you*), and the informal spoken forms *gonna* and *wanna*.",
+      "requires": [
+        "connected-speech/linking"
+      ]
+    },
+    {
+      "slug": "intonation-basics",
+      "title": "Intonation: falls and rises",
+      "summary": "Falling and rising tones on statements, questions, lists and question tags, and how intonation shows that a speaker has finished.",
+      "requires": [
+        "connected-speech/sentence-stress"
+      ]
+    },
+    {
+      "slug": "intonation-meaning",
+      "title": "Intonation and attitude",
+      "summary": "How pitch range and tone signal politeness, surprise, interest or impatience, and why a narrow pitch range can sound bored or unfriendly in English.",
+      "requires": [
+        "connected-speech/intonation-basics"
+      ]
+    },
+    {
+      "slug": "tones-and-intonation",
+      "title": "Mandarin tones and English intonation",
+      "summary": "Why the pitch habits of a tone language carry over into English, and how to practise English pitch patterns.",
+      "requires": [
+        "connected-speech/intonation-meaning"
+      ]
+    },
+    {
+      "slug": "hearing-fast-speech",
+      "title": "Hearing fast speech",
+      "summary": "Using stress, weak forms and linking to decode natural speech, with dictation and shadowing practice.",
+      "requires": [
+        "connected-speech/elision-assimilation",
+        "connected-speech/intonation-basics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "listening-and-conversation",
+    "presentations-and-discussion"
+  ]
+}

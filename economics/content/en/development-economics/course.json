@@ -1,0 +1,95 @@
+{
+  "slug": "development-economics",
+  "title": "Development Economics",
+  "full_title": "Development Economics",
+  "area": "global",
+  "level": 3,
+  "order": 170,
+  "tagline": "Measuring development, poverty and inequality, structural transformation, health and education, credit and insurance, land and agriculture, institutions, and aid and development policy",
+  "summary": "Development economics asks why billions of people remain poor and what can be done about it. This course studies how development and poverty are measured and how economies transform as they grow; how markets for labour, land, credit and insurance work — and fail — in poor countries; health and education; the role of institutions, governance and foreign aid; and the evidence from field experiments.",
+  "overview": [],
+  "prerequisites": [
+    "microeconomics",
+    "macroeconomics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "measuring-development",
+      "title": "Measuring development",
+      "summary": "Income and purchasing-power comparisons, the Human Development Index and the many dimensions of development.",
+      "requires": [
+        "macroeconomics/national-income"
+      ]
+    },
+    {
+      "slug": "poverty-and-inequality",
+      "title": "Poverty and inequality",
+      "summary": "Poverty lines and poverty measures, the Lorenz curve and the Gini coefficient, the Kuznets hypothesis and global trends.",
+      "requires": [
+        "development-economics/measuring-development"
+      ]
+    },
+    {
+      "slug": "structural-change",
+      "title": "Structural transformation",
+      "summary": "The Lewis dual-economy model, migration from farms to cities, industrialisation and premature deindustrialisation.",
+      "requires": [
+        "development-economics/measuring-development",
+        "microeconomics/general-equilibrium"
+      ]
+    },
+    {
+      "slug": "human-capital",
+      "title": "Health, nutrition and education",
+      "summary": "Nutrition-based poverty traps, the returns to schooling and health, and what works to raise learning and health in poor countries.",
+      "requires": [
+        "development-economics/poverty-and-inequality"
+      ]
+    },
+    {
+      "slug": "credit-and-microfinance",
+      "title": "Credit and microfinance",
+      "summary": "Why credit markets fail the poor, informal lenders, group lending and the evidence on microfinance.",
+      "requires": [
+        "development-economics/poverty-and-inequality",
+        "microeconomics/uncertainty"
+      ]
+    },
+    {
+      "slug": "risk-and-insurance",
+      "title": "Risk, insurance and households",
+      "summary": "How poor households smooth consumption, informal insurance networks and index insurance.",
+      "requires": [
+        "development-economics/credit-and-microfinance"
+      ]
+    },
+    {
+      "slug": "land-and-agriculture",
+      "title": "Land, agriculture and rural markets",
+      "summary": "Sharecropping, land rights and land reform, agricultural productivity and the green revolution.",
+      "requires": [
+        "development-economics/structural-change"
+      ]
+    },
+    {
+      "slug": "institutions-and-governance",
+      "title": "Institutions, governance and corruption",
+      "summary": "Political institutions, state capacity and corruption, and their consequences for development.",
+      "requires": [
+        "development-economics/measuring-development"
+      ]
+    },
+    {
+      "slug": "aid-and-policy",
+      "title": "Aid, trade and development policy",
+      "summary": "Foreign aid and its effectiveness, trade strategies and industrial policy, and the use of randomised evaluations.",
+      "requires": [
+        "development-economics/institutions-and-governance"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

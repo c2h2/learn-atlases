@@ -1,0 +1,97 @@
+{
+  "slug": "computational-fluid-dynamics",
+  "title": "Computational Fluid Dynamics",
+  "full_title": "Computational Fluid Dynamics",
+  "area": "thermofluids",
+  "level": 4,
+  "order": 210,
+  "tagline": "Governing equations, finite differences and finite volumes, stability and accuracy, convection schemes, pressure–velocity coupling, turbulence modelling and verification",
+  "summary": "Computational fluid dynamics solves the equations of fluid flow and heat transfer numerically and is now part of almost every thermofluids design. The course covers the conservation equations and their mathematical character, finite-difference and finite-volume discretisation, consistency, stability and convergence, schemes for diffusion and convection, iterative solvers, pressure–velocity coupling for incompressible flow, turbulence modelling, meshing and boundary conditions, and the verification and validation of results.",
+  "overview": [],
+  "prerequisites": [
+    "fluid-mechanics",
+    "heat-transfer"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "governing-equations",
+      "title": "Governing equations and their classification",
+      "summary": "The conservation laws in integral and differential form, and elliptic, parabolic and hyperbolic behaviour.",
+      "requires": [
+        "fluid-mechanics/navier-stokes"
+      ]
+    },
+    {
+      "slug": "finite-differences",
+      "title": "Finite differences",
+      "summary": "Taylor-series approximations of derivatives, truncation error, and explicit and implicit schemes for model equations.",
+      "requires": [
+        "computational-fluid-dynamics/governing-equations"
+      ]
+    },
+    {
+      "slug": "stability-accuracy",
+      "title": "Consistency, stability and convergence",
+      "summary": "Von Neumann stability analysis, the CFL condition, numerical diffusion and dispersion, and the Lax equivalence theorem.",
+      "requires": [
+        "computational-fluid-dynamics/finite-differences"
+      ]
+    },
+    {
+      "slug": "finite-volume-diffusion",
+      "title": "The finite volume method for diffusion",
+      "summary": "Control-volume discretisation of steady and unsteady diffusion problems, with heat-conduction examples.",
+      "requires": [
+        "computational-fluid-dynamics/finite-differences",
+        "heat-transfer/steady-conduction"
+      ]
+    },
+    {
+      "slug": "linear-solvers",
+      "title": "Solving the discrete equations",
+      "summary": "Direct and iterative solvers, multigrid acceleration, and monitoring convergence.",
+      "requires": [
+        "computational-fluid-dynamics/finite-volume-diffusion"
+      ]
+    },
+    {
+      "slug": "convection-diffusion",
+      "title": "Convection–diffusion schemes",
+      "summary": "Central, upwind and higher-order schemes, the Péclet number, boundedness and flux limiters.",
+      "requires": [
+        "computational-fluid-dynamics/finite-volume-diffusion",
+        "computational-fluid-dynamics/stability-accuracy"
+      ]
+    },
+    {
+      "slug": "pressure-velocity",
+      "title": "Pressure–velocity coupling",
+      "summary": "Staggered and collocated grids, the SIMPLE family of algorithms and fractional-step methods for incompressible flow.",
+      "requires": [
+        "computational-fluid-dynamics/convection-diffusion",
+        "computational-fluid-dynamics/linear-solvers"
+      ]
+    },
+    {
+      "slug": "turbulence-modelling",
+      "title": "Turbulence modelling",
+      "summary": "Reynolds averaging, eddy-viscosity models such as k–ε and k–ω SST, wall treatment, and large-eddy simulation.",
+      "requires": [
+        "computational-fluid-dynamics/pressure-velocity",
+        "fluid-mechanics/boundary-layers-drag"
+      ]
+    },
+    {
+      "slug": "meshing-verification",
+      "title": "Meshing, boundary conditions and verification",
+      "summary": "Structured and unstructured meshes, boundary conditions, grid-convergence studies, and verification and validation.",
+      "requires": [
+        "computational-fluid-dynamics/turbulence-modelling"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

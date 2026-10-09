@@ -1,0 +1,92 @@
+{
+  "slug": "thermodynamics",
+  "title": "Thermodynamics",
+  "full_title": "Engineering Thermodynamics",
+  "area": "thermofluids",
+  "level": 2,
+  "order": 60,
+  "tagline": "Properties of pure substances, energy balances for closed systems and control volumes, the second law, entropy and exergy, power cycles, mixtures and combustion",
+  "summary": "Thermodynamics governs every engine, power station, refrigerator and compressor. The course develops the properties of pure substances and ideal gases, energy balances on closed systems and control volumes, the second law, entropy and exergy, and applies them to gas and vapour power cycles, ideal-gas mixtures and combustion.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "basic-concepts",
+      "title": "Systems, properties and energy",
+      "summary": "Systems and control volumes, state and equilibrium, temperature and pressure, and energy transfer by work and heat.",
+      "requires": []
+    },
+    {
+      "slug": "pure-substances",
+      "title": "Properties of pure substances",
+      "summary": "Phases and phase changes, property tables and diagrams, and the ideal-gas equation of state.",
+      "requires": [
+        "thermodynamics/basic-concepts"
+      ]
+    },
+    {
+      "slug": "first-law-closed",
+      "title": "The first law for closed systems",
+      "summary": "Energy balances for closed systems, boundary work, and the specific heats of ideal gases, liquids and solids.",
+      "requires": [
+        "thermodynamics/pure-substances"
+      ]
+    },
+    {
+      "slug": "first-law-open",
+      "title": "Mass and energy in control volumes",
+      "summary": "Conservation of mass and energy for steady-flow devices — nozzles, turbines, compressors, valves and heat exchangers — and for unsteady filling and emptying.",
+      "requires": [
+        "thermodynamics/first-law-closed"
+      ]
+    },
+    {
+      "slug": "second-law",
+      "title": "The second law",
+      "summary": "Heat engines, refrigerators and heat pumps, the Kelvin–Planck and Clausius statements, reversibility and the Carnot cycle.",
+      "requires": [
+        "thermodynamics/first-law-open"
+      ]
+    },
+    {
+      "slug": "entropy",
+      "title": "Entropy",
+      "summary": "The Clausius inequality, entropy changes of substances, isentropic processes and efficiencies, and entropy generation.",
+      "requires": [
+        "thermodynamics/second-law"
+      ]
+    },
+    {
+      "slug": "exergy",
+      "title": "Exergy",
+      "summary": "Reversible work and irreversibility, second-law efficiency, and exergy balances for closed systems and control volumes.",
+      "requires": [
+        "thermodynamics/entropy"
+      ]
+    },
+    {
+      "slug": "power-cycles",
+      "title": "Gas and vapour power cycles",
+      "summary": "The Otto, Diesel and Brayton cycles, the Rankine cycle with reheat and regeneration, and combined cycles.",
+      "requires": [
+        "thermodynamics/entropy"
+      ]
+    },
+    {
+      "slug": "mixtures-combustion",
+      "title": "Gas mixtures and combustion",
+      "summary": "Ideal-gas mixtures, fuels and combustion reactions, enthalpy of formation, adiabatic flame temperature and an introduction to chemical equilibrium.",
+      "requires": [
+        "thermodynamics/first-law-open"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "heat-transfer",
+    "propulsion",
+    "energy-systems"
+  ]
+}

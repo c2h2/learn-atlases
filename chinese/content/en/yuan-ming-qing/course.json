@@ -1,0 +1,110 @@
+{
+  "slug": "yuan-ming-qing",
+  "title": "Yuan, Ming and Qing Literature",
+  "full_title": "Literature of the Yuan, Ming and Qing Dynasties",
+  "area": "ancient",
+  "level": 3,
+  "order": 190,
+  "tagline": "Yuan drama, *The Western Chamber*, *Romance of the Three Kingdoms*, *Water Margin*, *Journey to the West*, *The Plum in the Golden Vase* and the vernacular story, Ming and Qing drama, *Strange Tales from a Chinese Studio*, *The Scholars*, *Dream of the Red Chamber*, and Ming and Qing poetry, prose and criticism",
+  "summary": "From the Yuan to the Qing, drama and the vernacular novel became the great literary forms, while classical poetry and prose went on flourishing. This course reads Yuan drama from Guan Hanqing to *The Western Chamber*; the Ming novels *Romance of the Three Kingdoms*, *Water Margin*, *Journey to the West* and *The Plum in the Golden Vase*; Tang Xianzu’s *Peony Pavilion*; Pu Songling’s tales; *The Scholars* and *Dream of the Red Chamber*; and the poetry, prose and criticism of the late empire.",
+  "overview": [],
+  "prerequisites": [
+    "song-literature"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "yuan-zaju",
+      "title": "Yuan drama",
+      "summary": "The form of *zaju* — four acts and a wedge, with one lead singer — and Guan Hanqing’s *Injustice to Dou E*.",
+      "requires": [
+        "song-literature/huaben"
+      ]
+    },
+    {
+      "slug": "western-chamber",
+      "title": "*The Western Chamber* and other playwrights",
+      "summary": "Wang Shifu’s *The Western Chamber*, Bai Pu and Ma Zhiyuan, and Yuan *sanqu* songs.",
+      "requires": [
+        "yuan-ming-qing/yuan-zaju"
+      ]
+    },
+    {
+      "slug": "three-kingdoms",
+      "title": "*Romance of the Three Kingdoms*",
+      "summary": "History and fiction, how the novel was made, and its characters and battles.",
+      "requires": [
+        "song-literature/huaben"
+      ]
+    },
+    {
+      "slug": "water-margin",
+      "title": "*Water Margin*",
+      "summary": "The outlaws of Liangshan, the versions of the novel, and its heroes and its violence.",
+      "requires": [
+        "yuan-ming-qing/three-kingdoms"
+      ]
+    },
+    {
+      "slug": "journey-west",
+      "title": "*Journey to the West*",
+      "summary": "Xuanzang’s pilgrimage turned into comic fantasy, Sun Wukong, and readings of the novel.",
+      "requires": [
+        "yuan-ming-qing/three-kingdoms"
+      ]
+    },
+    {
+      "slug": "jin-ping-mei",
+      "title": "*The Plum in the Golden Vase* and the vernacular story",
+      "summary": "The first Chinese novel of domestic life, its realism and its reputation, and the story collections of Feng Menglong and Ling Mengchu.",
+      "requires": [
+        "yuan-ming-qing/water-margin"
+      ]
+    },
+    {
+      "slug": "ming-qing-drama",
+      "title": "Ming and Qing drama",
+      "summary": "Tang Xianzu’s *The Peony Pavilion*, Kunqu opera, Hong Sheng’s *The Palace of Eternal Youth* and Kong Shangren’s *The Peach Blossom Fan*.",
+      "requires": [
+        "yuan-ming-qing/western-chamber"
+      ]
+    },
+    {
+      "slug": "liaozhai",
+      "title": "*Strange Tales from a Chinese Studio*",
+      "summary": "Pu Songling’s tales of fox spirits and ghosts written in classical Chinese, and the classical tale after him.",
+      "requires": [
+        "yuan-ming-qing/jin-ping-mei"
+      ]
+    },
+    {
+      "slug": "the-scholars",
+      "title": "*The Scholars*",
+      "summary": "Wu Jingzi’s satire of the examination system and the literati it produced.",
+      "requires": [
+        "yuan-ming-qing/liaozhai"
+      ]
+    },
+    {
+      "slug": "red-chamber",
+      "title": "*Dream of the Red Chamber*",
+      "summary": "Cao Xueqin’s novel, the problem of its last forty chapters, its world and characters, and two centuries of Redology.",
+      "requires": [
+        "yuan-ming-qing/the-scholars"
+      ]
+    },
+    {
+      "slug": "ming-qing-poetry-prose",
+      "title": "Ming and Qing poetry, prose and criticism",
+      "summary": "Schools of poetry and prose from the Former Seven Masters to the Tongcheng school, Yuan Mei, and the criticism of Jin Shengtan and Wang Fuzhi.",
+      "requires": [
+        "yuan-ming-qing/ming-qing-drama"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "classical-criticism"
+  ]
+}

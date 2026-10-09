@@ -1,0 +1,97 @@
+{
+  "slug": "corporate-finance",
+  "title": "Corporate Finance",
+  "full_title": "Corporate Finance",
+  "area": "finance",
+  "level": 2,
+  "order": 90,
+  "tagline": "The time value of money, valuing bonds and shares, capital budgeting, risk and the cost of capital, capital structure, payout policy, real options and corporate governance",
+  "summary": "Corporate finance asks which projects a firm should undertake and how it should pay for them. This course develops the tools of valuation — discounting, net present value and the valuation of bonds and shares — and applies them to capital budgeting, the cost of capital, the choice between debt and equity, payout policy, the value of flexibility, and the conflicts of interest between managers, shareholders and creditors.",
+  "overview": [],
+  "prerequisites": [
+    "principles",
+    "mathematical-economics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "time-value-of-money",
+      "title": "The time value of money",
+      "summary": "Compounding and discounting, annuities and perpetuities, effective annual rates and continuous compounding.",
+      "requires": [
+        "principles/thinking-like-an-economist",
+        "mathematical-economics/integration"
+      ]
+    },
+    {
+      "slug": "valuing-bonds",
+      "title": "Valuing bonds",
+      "summary": "Bond cash flows, prices and yields, duration, and the sensitivity of bond prices to interest rates.",
+      "requires": [
+        "corporate-finance/time-value-of-money"
+      ]
+    },
+    {
+      "slug": "valuing-stocks",
+      "title": "Valuing shares",
+      "summary": "Dividend-discount and free-cash-flow models, growth and payout, and valuation by comparable firms.",
+      "requires": [
+        "corporate-finance/time-value-of-money"
+      ]
+    },
+    {
+      "slug": "capital-budgeting",
+      "title": "Capital budgeting",
+      "summary": "Net present value and the alternatives (payback, internal rate of return), forecasting incremental cash flows, and sensitivity and scenario analysis.",
+      "requires": [
+        "corporate-finance/time-value-of-money"
+      ]
+    },
+    {
+      "slug": "risk-and-return",
+      "title": "Risk, return and the cost of capital",
+      "summary": "Historical returns, diversification, systematic risk and beta, and estimating the cost of equity and the weighted average cost of capital.",
+      "requires": [
+        "corporate-finance/capital-budgeting",
+        "corporate-finance/valuing-stocks"
+      ]
+    },
+    {
+      "slug": "capital-structure",
+      "title": "Capital structure",
+      "summary": "The Modigliani–Miller theorems, taxes, the costs of financial distress, and the trade-off and pecking-order theories.",
+      "requires": [
+        "corporate-finance/risk-and-return"
+      ]
+    },
+    {
+      "slug": "payout-policy",
+      "title": "Payout policy",
+      "summary": "Dividends and share repurchases, the irrelevance result, and why payout policy matters in practice.",
+      "requires": [
+        "corporate-finance/capital-structure"
+      ]
+    },
+    {
+      "slug": "real-options",
+      "title": "Real options and investment under uncertainty",
+      "summary": "The value of flexibility: options to delay, expand or abandon a project, valued with decision trees.",
+      "requires": [
+        "corporate-finance/capital-budgeting"
+      ]
+    },
+    {
+      "slug": "governance",
+      "title": "Corporate governance and agency",
+      "summary": "Conflicts between shareholders, managers and creditors, executive pay, boards, and mergers and the market for corporate control.",
+      "requires": [
+        "corporate-finance/capital-structure"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "asset-pricing"
+  ]
+}

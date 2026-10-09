@@ -1,0 +1,94 @@
+{
+  "slug": "tang-literature",
+  "title": "Tang Literature",
+  "full_title": "Literature of the Tang and Five Dynasties",
+  "area": "ancient",
+  "level": 2,
+  "order": 120,
+  "tagline": "Early Tang poetry and regulated verse, the High Tang, Li Bai, Du Fu, Bai Juyi and the mid-Tang poets, Han Yu, Liu Zongyuan and the ancient-prose movement, late Tang poetry, Tang tales, and the rise of the *ci*",
+  "summary": "The Tang dynasty is the summit of Chinese poetry, when regulated verse took its final form and poets such as Wang Wei, Li Bai and Du Fu wrote the poems every Chinese reader knows. This course follows Tang literature from the early Tang poets through the High Tang, the mid-Tang reforms of Bai Juyi and Han Yu and the late Tang poetry of Li Shangyin and Du Mu, to the Tang tales and the song lyrics of the Five Dynasties.",
+  "overview": [],
+  "prerequisites": [
+    "han-to-nanbeichao"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "early-tang",
+      "title": "Early Tang poetry",
+      "summary": "The Four Talents of the Early Tang, Chen Zi’ang’s call for the strength of the Han and Wei, and the fixing of regulated verse by Shen Quanqi and Song Zhiwen.",
+      "requires": [
+        "han-to-nanbeichao/landscape-yongming"
+      ]
+    },
+    {
+      "slug": "high-tang",
+      "title": "The High Tang",
+      "summary": "Meng Haoran and Wang Wei, the frontier poems of Gao Shi and Cen Shen, and the quatrains of Wang Changling.",
+      "requires": [
+        "tang-literature/early-tang"
+      ]
+    },
+    {
+      "slug": "li-bai",
+      "title": "Li Bai",
+      "summary": "The “banished immortal”: his life, his songs and quatrains, and his romantic imagination.",
+      "requires": [
+        "tang-literature/high-tang"
+      ]
+    },
+    {
+      "slug": "du-fu",
+      "title": "Du Fu",
+      "summary": "The “poet-historian”: his life through the An Lushan rebellion, his regulated verse, and his concern for his country and its people.",
+      "requires": [
+        "tang-literature/high-tang"
+      ]
+    },
+    {
+      "slug": "mid-tang",
+      "title": "Bai Juyi and the mid-Tang poets",
+      "summary": "The New Yuefu movement, the *Song of Everlasting Sorrow* and the *Song of the Pipa*, Yuan Zhen, and the strange and difficult styles of Han Yu, Meng Jiao and Li He.",
+      "requires": [
+        "tang-literature/du-fu"
+      ]
+    },
+    {
+      "slug": "guwen",
+      "title": "Han Yu, Liu Zongyuan and ancient prose",
+      "summary": "The movement to replace parallel prose with “ancient-style” prose, and the essays and travel writing of Han Yu and Liu Zongyuan.",
+      "requires": [
+        "tang-literature/mid-tang"
+      ]
+    },
+    {
+      "slug": "late-tang",
+      "title": "Late Tang poetry",
+      "summary": "Li Shangyin’s untitled poems, Du Mu, and Wen Tingyun.",
+      "requires": [
+        "tang-literature/mid-tang"
+      ]
+    },
+    {
+      "slug": "tang-tales",
+      "title": "Tang tales",
+      "summary": "Stories such as *Yingying’s Story* and *The Governor of the Southern Branch*, and how fiction became a deliberate art.",
+      "requires": [
+        "tang-literature/guwen"
+      ]
+    },
+    {
+      "slug": "five-dynasties-ci",
+      "title": "The rise of the *ci*",
+      "summary": "Song lyrics written to tunes, the *Among the Flowers* anthology, and Li Yu, the last ruler of the Southern Tang.",
+      "requires": [
+        "tang-literature/late-tang"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "song-literature"
+  ]
+}

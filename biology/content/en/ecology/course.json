@@ -1,0 +1,95 @@
+{
+  "slug": "ecology",
+  "title": "Ecology",
+  "full_title": "Ecology",
+  "area": "ecology",
+  "level": 2,
+  "order": 110,
+  "tagline": "The niche, life histories, population growth, competition, predation, communities, energy flow, nutrient cycles and biogeography",
+  "summary": "Ecology studies how organisms interact with each other and with their environment, from single populations to the whole biosphere. This course covers the niche, life histories, population growth and regulation, competition, predation and parasitism, the structure and dynamics of communities, energy flow and nutrient cycling in ecosystems, and the large-scale patterns of biogeography.",
+  "overview": [],
+  "prerequisites": [
+    "evolution"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "organisms-environment",
+      "title": "Organisms and their environment",
+      "summary": "Climate and physical conditions, resources, tolerance and the ecological niche.",
+      "requires": [
+        "evolution/natural-selection"
+      ]
+    },
+    {
+      "slug": "life-histories",
+      "title": "Life histories",
+      "summary": "Allocation and trade-offs, the timing of reproduction, r and K selection, and senescence.",
+      "requires": [
+        "ecology/organisms-environment"
+      ]
+    },
+    {
+      "slug": "population-growth",
+      "title": "Population growth and regulation",
+      "summary": "Life tables, exponential and logistic growth, and density dependence.",
+      "requires": [
+        "ecology/life-histories"
+      ]
+    },
+    {
+      "slug": "competition",
+      "title": "Competition",
+      "summary": "Intraspecific and interspecific competition, the Lotka–Volterra competition model and coexistence.",
+      "requires": [
+        "ecology/population-growth"
+      ]
+    },
+    {
+      "slug": "predation-parasitism",
+      "title": "Predation, herbivory and parasitism",
+      "summary": "Predator–prey cycles, functional responses, and the dynamics of hosts and parasites.",
+      "requires": [
+        "ecology/competition"
+      ]
+    },
+    {
+      "slug": "communities",
+      "title": "Communities",
+      "summary": "Mutualism and other interactions, food webs, succession, and what controls the number of species in a community.",
+      "requires": [
+        "ecology/predation-parasitism"
+      ]
+    },
+    {
+      "slug": "ecosystem-energetics",
+      "title": "Energy flow in ecosystems",
+      "summary": "Primary production, trophic levels and the efficiency of energy transfer.",
+      "requires": [
+        "ecology/communities"
+      ]
+    },
+    {
+      "slug": "nutrient-cycles",
+      "title": "Nutrient cycles",
+      "summary": "Decomposition and the cycling of carbon, nitrogen and phosphorus through ecosystems.",
+      "requires": [
+        "ecology/ecosystem-energetics"
+      ]
+    },
+    {
+      "slug": "biogeography",
+      "title": "Biogeography and macroecology",
+      "summary": "Biomes, the latitudinal gradient in diversity, and the theory of island biogeography.",
+      "requires": [
+        "ecology/communities"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "behaviour",
+    "conservation-biology"
+  ]
+}

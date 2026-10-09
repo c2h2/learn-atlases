@@ -1,0 +1,101 @@
+{
+  "slug": "literary-theory",
+  "title": "Literary Theory",
+  "full_title": "Introduction to Literary Theory",
+  "area": "theory",
+  "level": 2,
+  "order": 140,
+  "tagline": "What literature is, literature and society, the creative process, the levels of a literary work, narrative, lyric, drama, genre and style, reading and interpretation, and the schools of modern theory",
+  "summary": "Literary theory asks what literature is, how it is made, how a work is built and how readers make sense of it. This course introduces those questions through both the Chinese and the Western traditions: literature’s relation to society and to the writer, the levels of a literary work, the theory of narrative, lyric and drama, genre and style, the reader’s part in interpretation, and a map of the main twentieth-century schools from formalism to cultural studies.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "what-is-literature",
+      "title": "What literature is",
+      "summary": "Definitions of literature in China and the West, literature as an art of language, and the boundaries of the literary.",
+      "requires": []
+    },
+    {
+      "slug": "literature-society",
+      "title": "Literature and society",
+      "summary": "Imitation and expression, literature as a reflection of life, ideology, and the market.",
+      "requires": [
+        "literary-theory/what-is-literature"
+      ]
+    },
+    {
+      "slug": "creation",
+      "title": "The creative process",
+      "summary": "Inspiration and craft, experience and imagination, and what writers have said about how they work.",
+      "requires": [
+        "literary-theory/literature-society"
+      ]
+    },
+    {
+      "slug": "levels-of-the-work",
+      "title": "The levels of a literary work",
+      "summary": "Language, image and meaning, from Wang Bi’s words, images and ideas to Ingarden’s strata.",
+      "requires": [
+        "literary-theory/creation"
+      ]
+    },
+    {
+      "slug": "narrative",
+      "title": "Narrative",
+      "summary": "Story and discourse, narrators and point of view, and time and plot in narrative works.",
+      "requires": [
+        "literary-theory/levels-of-the-work"
+      ]
+    },
+    {
+      "slug": "lyric",
+      "title": "Lyric",
+      "summary": "The lyric self, image and *yijing*, and the Chinese traditions of poetry as the expression of intent and of feeling.",
+      "requires": [
+        "literary-theory/levels-of-the-work"
+      ]
+    },
+    {
+      "slug": "drama",
+      "title": "Drama",
+      "summary": "Conflict, character and action, tragedy and comedy, and Chinese opera compared with Western drama.",
+      "requires": [
+        "literary-theory/narrative"
+      ]
+    },
+    {
+      "slug": "genre-style",
+      "title": "Genre and style",
+      "summary": "Classifying genres, the Chinese theory of genres, and individual and period style.",
+      "requires": [
+        "literary-theory/lyric",
+        "literary-theory/drama"
+      ]
+    },
+    {
+      "slug": "reading-interpretation",
+      "title": "Reading and interpretation",
+      "summary": "The reader’s part, the hermeneutic circle and reception theory, and the Chinese ideas of knowing the author and meeting the author’s intent.",
+      "requires": [
+        "literary-theory/genre-style"
+      ]
+    },
+    {
+      "slug": "modern-schools",
+      "title": "Schools of modern theory",
+      "summary": "Formalism, New Criticism, structuralism, psychoanalysis, Marxist criticism, feminism, postcolonialism and cultural studies in outline.",
+      "requires": [
+        "literary-theory/reading-interpretation"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "modern-literature",
+    "world-literature",
+    "classical-criticism"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "verb-patterns",
+  "title": "Verb Patterns",
+  "full_title": "Verbs and Their Patterns",
+  "area": "grammar",
+  "level": 2,
+  "order": 70,
+  "tagline": "Transitive, intransitive and linking verbs, two objects, *-ing* or *to*-infinitive, verb + object + verb, causatives, phrasal verbs, verbs with prepositions, the passive, and reflexive and reciprocal verbs",
+  "summary": "Each English verb comes with its own patterns: what can follow it, and in which form. This course covers transitive, intransitive and linking verbs, verbs with two objects, the choice between *-ing* and the *to*-infinitive, verbs followed by an object and another verb, causatives such as *make* and *let*, phrasal and prepositional verbs, the passive voice, and reflexive and reciprocal verbs.",
+  "overview": [],
+  "prerequisites": [
+    "core-grammar"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "transitive-intransitive",
+      "title": "Transitive, intransitive and linking verbs",
+      "summary": "Verbs that need an object, verbs that cannot take one, verbs that can do both, and linking verbs such as *be*, *seem* and *become*.",
+      "requires": [
+        "core-grammar/sentence-patterns"
+      ]
+    },
+    {
+      "slug": "two-objects",
+      "title": "Verbs with two objects",
+      "summary": "*Give her the book* and *give the book to her*, which verbs allow both patterns, and which take *to* and which *for*.",
+      "requires": [
+        "verb-patterns/transitive-intransitive"
+      ]
+    },
+    {
+      "slug": "ing-or-infinitive",
+      "title": "*-ing* or *to*-infinitive",
+      "summary": "Verbs followed by *-ing* (*enjoy*, *avoid*), by *to* (*want*, *decide*), or by either with a change of meaning (*remember*, *stop*, *try*).",
+      "requires": [
+        "verb-patterns/transitive-intransitive"
+      ]
+    },
+    {
+      "slug": "object-and-verb",
+      "title": "Verb + object + verb",
+      "summary": "*Want someone to do*, *see someone do* or *doing*, and *help someone (to) do*: the patterns with an object before a second verb.",
+      "requires": [
+        "verb-patterns/ing-or-infinitive"
+      ]
+    },
+    {
+      "slug": "causatives",
+      "title": "*Make*, *let*, *have* and *get*",
+      "summary": "Causative verbs for making, allowing and arranging things, and *have something done*.",
+      "requires": [
+        "verb-patterns/object-and-verb"
+      ]
+    },
+    {
+      "slug": "phrasal-verbs",
+      "title": "Phrasal verbs",
+      "summary": "Verbs with particles such as *give up*, *look after* and *take off*, where the object goes, and how particles like *up* and *out* add meaning.",
+      "requires": [
+        "verb-patterns/transitive-intransitive"
+      ]
+    },
+    {
+      "slug": "prepositional-verbs",
+      "title": "Verbs with prepositions",
+      "summary": "*Depend on*, *consist of*, *apologise for* and other verb–preposition pairs, and the prepositions that follow common adjectives and nouns.",
+      "requires": [
+        "verb-patterns/phrasal-verbs"
+      ]
+    },
+    {
+      "slug": "the-passive",
+      "title": "The passive",
+      "summary": "How the passive is formed in each tense, when English prefers it, the *get*-passive, and why English uses the passive more often, and more neutrally, than Chinese uses 被.",
+      "requires": [
+        "verb-patterns/two-objects"
+      ]
+    },
+    {
+      "slug": "reflexive-reciprocal",
+      "title": "Reflexive and reciprocal verbs",
+      "summary": "*Myself* and *yourself*, *each other* and *one another*, and verbs such as *relax*, *concentrate* and *meet* that usually need neither.",
+      "requires": [
+        "verb-patterns/transitive-intransitive"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "complex-sentences",
+    "collocation-and-register"
+  ]
+}

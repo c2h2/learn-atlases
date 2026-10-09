@@ -1,0 +1,96 @@
+{
+  "slug": "geomorphology",
+  "title": "Geomorphology",
+  "full_title": "Geomorphology: Landscapes and Surface Processes",
+  "area": "surface",
+  "level": 2,
+  "order": 80,
+  "tagline": "Weathering, soils, hillslopes, rivers and drainage basins, glacial, periglacial, aeolian and coastal landscapes, and long-term landscape evolution",
+  "summary": "Geomorphology explains the shape of the land surface and the processes that change it. This course covers weathering and soils, hillslopes and landslides, rivers and drainage networks, glacial and periglacial landscapes, wind and deserts, coasts, and how tectonic uplift, climate and erosion together drive the evolution of landscapes over long timescales.",
+  "overview": [],
+  "prerequisites": [
+    "physical-geology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "weathering",
+      "title": "Weathering",
+      "summary": "The physical, chemical and biological breakdown of rock, and what controls its rate.",
+      "requires": [
+        "physical-geology/minerals"
+      ]
+    },
+    {
+      "slug": "soils",
+      "title": "Soils",
+      "summary": "How soils form, soil profiles and horizons, soil classification and soil erosion.",
+      "requires": [
+        "geomorphology/weathering"
+      ]
+    },
+    {
+      "slug": "hillslopes",
+      "title": "Hillslopes and mass movement",
+      "summary": "Soil creep, landslides, rockfalls and debris flows, and the stability of slopes.",
+      "requires": [
+        "geomorphology/soils"
+      ]
+    },
+    {
+      "slug": "rivers",
+      "title": "Rivers",
+      "summary": "River channels, discharge and sediment load, channel patterns and floodplains.",
+      "requires": [
+        "geomorphology/hillslopes"
+      ]
+    },
+    {
+      "slug": "drainage-basins",
+      "title": "Drainage basins and river profiles",
+      "summary": "Drainage networks, stream power, longitudinal profiles, knickpoints and river incision.",
+      "requires": [
+        "geomorphology/rivers"
+      ]
+    },
+    {
+      "slug": "glacial-landscapes",
+      "title": "Glacial and periglacial landscapes",
+      "summary": "Erosion and deposition by glaciers, the landforms left by former ice sheets, and frost processes in cold regions.",
+      "requires": [
+        "geomorphology/weathering"
+      ]
+    },
+    {
+      "slug": "aeolian",
+      "title": "Wind and deserts",
+      "summary": "The transport of sand and dust by wind, dunes, loess and desert landscapes.",
+      "requires": [
+        "geomorphology/weathering"
+      ]
+    },
+    {
+      "slug": "coasts",
+      "title": "Coasts",
+      "summary": "Waves, tides and longshore transport, beaches, cliffs and estuaries, and coastal change.",
+      "requires": [
+        "geomorphology/rivers"
+      ]
+    },
+    {
+      "slug": "landscape-evolution",
+      "title": "Landscape evolution",
+      "summary": "How tectonic uplift, climate and erosion interact, dating landscapes with cosmogenic nuclides, and models of long-term landscape change.",
+      "requires": [
+        "geomorphology/drainage-basins",
+        "geomorphology/hillslopes"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "hydrology",
+    "glaciology"
+  ]
+}

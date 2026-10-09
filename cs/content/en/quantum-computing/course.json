@@ -1,0 +1,92 @@
+{
+  "slug": "quantum-computing",
+  "title": "Quantum Computing",
+  "full_title": "Quantum Computing and Quantum Information",
+  "area": "theory",
+  "level": 4,
+  "order": 220,
+  "tagline": "Qubits and measurement, quantum circuits, entanglement, early quantum algorithms, Shor’s and Grover’s algorithms, quantum complexity, error correction and hardware",
+  "summary": "Quantum computers process information using superposition and entanglement, and for some problems they promise speed-ups that no known classical algorithm matches. This course builds the subject from linear algebra: qubits and measurement, quantum circuits, entanglement and teleportation, the first quantum algorithms, the quantum Fourier transform and Shor’s algorithm, Grover’s search, quantum complexity, error correction, and the physical platforms being built today.",
+  "overview": [],
+  "prerequisites": [
+    "complexity"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "qubits",
+      "title": "Qubits and measurement",
+      "summary": "State vectors and the Bloch sphere, measurement, and the postulates of quantum mechanics needed for computing.",
+      "requires": []
+    },
+    {
+      "slug": "quantum-circuits",
+      "title": "Quantum gates and circuits",
+      "summary": "Single-qubit gates, controlled operations, universal gate sets and the circuit model.",
+      "requires": [
+        "quantum-computing/qubits"
+      ]
+    },
+    {
+      "slug": "entanglement",
+      "title": "Entanglement and teleportation",
+      "summary": "Multi-qubit states and Bell states, the no-cloning theorem, teleportation and superdense coding.",
+      "requires": [
+        "quantum-computing/quantum-circuits"
+      ]
+    },
+    {
+      "slug": "first-algorithms",
+      "title": "First quantum algorithms",
+      "summary": "The Deutsch–Jozsa, Bernstein–Vazirani and Simon algorithms, and how interference produces a speed-up.",
+      "requires": [
+        "quantum-computing/entanglement"
+      ]
+    },
+    {
+      "slug": "shor",
+      "title": "The quantum Fourier transform and Shor’s algorithm",
+      "summary": "The quantum Fourier transform, phase estimation, order finding and factoring.",
+      "requires": [
+        "quantum-computing/first-algorithms"
+      ]
+    },
+    {
+      "slug": "grover",
+      "title": "Grover’s search and amplitude amplification",
+      "summary": "The quadratic speed-up for unstructured search, amplitude amplification and why it is optimal.",
+      "requires": [
+        "quantum-computing/first-algorithms"
+      ]
+    },
+    {
+      "slug": "quantum-complexity",
+      "title": "Quantum complexity",
+      "summary": "The class BQP and its relation to classical classes, oracle separations and claims of quantum advantage.",
+      "requires": [
+        "quantum-computing/shor",
+        "quantum-computing/grover",
+        "complexity/randomised-complexity"
+      ]
+    },
+    {
+      "slug": "error-correction",
+      "title": "Quantum error correction",
+      "summary": "Noise and decoherence, the bit-flip and Shor codes, stabiliser codes and fault tolerance.",
+      "requires": [
+        "quantum-computing/entanglement"
+      ]
+    },
+    {
+      "slug": "quantum-hardware",
+      "title": "Quantum hardware",
+      "summary": "Superconducting circuits, trapped ions, neutral atoms and photons, noisy intermediate-scale devices, and the state of the field.",
+      "requires": [
+        "quantum-computing/error-correction"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

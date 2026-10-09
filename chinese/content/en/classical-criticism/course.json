@@ -1,0 +1,105 @@
+{
+  "slug": "classical-criticism",
+  "title": "Classical Criticism",
+  "full_title": "Classical Chinese Literary Criticism",
+  "area": "theory",
+  "level": 4,
+  "order": 270,
+  "tagline": "Poetry expresses intent, Confucian and Daoist views of literature, Cao Pi and Lu Ji, *The Literary Mind and the Carving of Dragons*, Zhong Rong’s *Grades of Poets*, Tang and Song poetry talks, Yan Yu and Chan, the criticism of fiction and drama, Ming and Qing theories of poetry, and Wang Guowei",
+  "summary": "China has a long tradition of thinking about literature, set down in prefaces, treatises, letters and “poetry talks” rather than in systematic theory. This course reads its key texts and concepts: poetry as the expression of intent, the Confucian and Daoist views, Cao Pi’s *Discourse on Literature* and Lu Ji’s *Rhapsody on Literature*, Liu Xie’s *The Literary Mind and the Carving of Dragons*, Zhong Rong, the Tang and Song poetry talks, Yan Yu, the criticism of fiction and drama, and Wang Guowei’s idea of *jingjie*.",
+  "overview": [],
+  "prerequisites": [
+    "literary-theory",
+    "classical-chinese-2"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "poetry-expresses-intent",
+      "title": "Poetry expresses intent",
+      "summary": "The earliest statements about poetry, the Great Preface to the *Book of Songs*, and Confucius on what poetry is for.",
+      "requires": [
+        "literary-theory/lyric",
+        "classical-chinese-2/commentaries"
+      ]
+    },
+    {
+      "slug": "confucian-daoist",
+      "title": "Confucian and Daoist views of literature",
+      "summary": "Literature as moral teaching, and Laozi and Zhuangzi on words, meaning and naturalness.",
+      "requires": [
+        "classical-criticism/poetry-expresses-intent"
+      ]
+    },
+    {
+      "slug": "cao-pi-lu-ji",
+      "title": "Cao Pi and Lu Ji",
+      "summary": "The *Discourse on Literature* and the writer’s *qi*, and the *Rhapsody on Literature* on the creative process.",
+      "requires": [
+        "classical-criticism/confucian-daoist"
+      ]
+    },
+    {
+      "slug": "wenxin-diaolong",
+      "title": "*The Literary Mind and the Carving of Dragons*",
+      "summary": "Liu Xie’s system: its foundations, its account of genres, of creation and of criticism.",
+      "requires": [
+        "classical-criticism/cao-pi-lu-ji"
+      ]
+    },
+    {
+      "slug": "shipin",
+      "title": "Zhong Rong’s *Grades of Poets*",
+      "summary": "Ranking poets, the idea of “flavour”, and the critique of allusion and of tonal rules.",
+      "requires": [
+        "classical-criticism/wenxin-diaolong"
+      ]
+    },
+    {
+      "slug": "poetry-talks",
+      "title": "Tang and Song poetry talks",
+      "summary": "Sikong Tu, Ouyang Xiu’s *Liuyi Shihua*, and the genre of the “poetry talk”.",
+      "requires": [
+        "classical-criticism/shipin"
+      ]
+    },
+    {
+      "slug": "yan-yu",
+      "title": "Yan Yu and Chan",
+      "summary": "The *Canglang Shihua*, “wondrous enlightenment”, and the High Tang as the model.",
+      "requires": [
+        "classical-criticism/poetry-talks"
+      ]
+    },
+    {
+      "slug": "fiction-drama-criticism",
+      "title": "The criticism of fiction and drama",
+      "summary": "Li Zhi, Jin Shengtan’s commentary on *Water Margin*, and Li Yu on the theatre.",
+      "requires": [
+        "classical-criticism/yan-yu"
+      ]
+    },
+    {
+      "slug": "ming-qing-poetics",
+      "title": "Ming and Qing theories of poetry",
+      "summary": "Archaism, the school of “native sensibility”, Wang Shizhen’s “spirit and resonance”, and Ye Xie.",
+      "requires": [
+        "classical-criticism/yan-yu"
+      ]
+    },
+    {
+      "slug": "wang-guowei",
+      "title": "Wang Guowei’s *Remarks on Song Lyrics*",
+      "summary": "*Jingjie*, the scene with a self and the scene without one, and where classical criticism meets Western thought.",
+      "requires": [
+        "classical-criticism/ming-qing-poetics",
+        "classical-criticism/fiction-drama-criticism"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "academic-writing"
+  ]
+}

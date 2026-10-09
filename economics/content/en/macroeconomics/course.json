@@ -1,0 +1,101 @@
+{
+  "slug": "macroeconomics",
+  "title": "Macroeconomics",
+  "full_title": "Intermediate Macroeconomics",
+  "area": "macro",
+  "level": 2,
+  "order": 50,
+  "tagline": "National income in the long run, money and inflation, unemployment, consumption and investment, IS–LM and aggregate demand, aggregate supply and the Phillips curve, stabilisation and public debt",
+  "summary": "Macroeconomics studies the economy as a whole: output, unemployment, inflation and interest rates, and the policies that affect them. This course builds the standard intermediate models — the classical long-run model, money and inflation, the labour market, consumption and investment, IS–LM, aggregate supply and the Phillips curve — and uses them to analyse stabilisation policy, budget deficits and government debt.",
+  "overview": [],
+  "prerequisites": [
+    "principles",
+    "mathematical-economics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "national-income",
+      "title": "National income in the long run",
+      "summary": "Output, factor prices and the distribution of income in the classical model, and how saving and investment determine the real interest rate.",
+      "requires": [
+        "principles/measuring-the-macroeconomy",
+        "mathematical-economics/functions-of-several-variables"
+      ]
+    },
+    {
+      "slug": "money-and-inflation",
+      "title": "Money and inflation",
+      "summary": "The quantity theory of money, seigniorage, the Fisher effect, the costs of inflation and hyperinflation.",
+      "requires": [
+        "macroeconomics/national-income"
+      ]
+    },
+    {
+      "slug": "unemployment",
+      "title": "Unemployment and the labour market",
+      "summary": "Job finding and job separation, the natural rate of unemployment, frictional and structural unemployment, and wage rigidity.",
+      "requires": [
+        "macroeconomics/national-income"
+      ]
+    },
+    {
+      "slug": "consumption-and-saving",
+      "title": "Consumption and saving",
+      "summary": "From the Keynesian consumption function to intertemporal choice, the permanent-income and life-cycle hypotheses, and Ricardian equivalence.",
+      "requires": [
+        "macroeconomics/national-income",
+        "mathematical-economics/dynamic-optimisation"
+      ]
+    },
+    {
+      "slug": "investment",
+      "title": "Investment",
+      "summary": "Business fixed investment and the user cost of capital, Tobin’s q, residential investment and inventories.",
+      "requires": [
+        "macroeconomics/national-income"
+      ]
+    },
+    {
+      "slug": "is-lm",
+      "title": "Aggregate demand: the IS–LM model",
+      "summary": "The Keynesian cross, equilibrium in the goods and money markets, and the effects of fiscal and monetary policy on output and interest rates.",
+      "requires": [
+        "macroeconomics/consumption-and-saving",
+        "macroeconomics/money-and-inflation"
+      ]
+    },
+    {
+      "slug": "aggregate-supply",
+      "title": "Aggregate supply and the Phillips curve",
+      "summary": "Short-run aggregate supply, sticky prices and wages, the Phillips curve, expectations and the costs of disinflation.",
+      "requires": [
+        "macroeconomics/is-lm",
+        "macroeconomics/unemployment"
+      ]
+    },
+    {
+      "slug": "ad-as-and-stabilisation",
+      "title": "Stabilisation policy",
+      "summary": "The AD–AS model in action, demand and supply shocks, policy lags, rules versus discretion, and the Lucas critique.",
+      "requires": [
+        "macroeconomics/aggregate-supply"
+      ]
+    },
+    {
+      "slug": "fiscal-policy-and-debt",
+      "title": "Fiscal policy and government debt",
+      "summary": "Budget deficits, the government budget constraint, the dynamics of the debt ratio, and the debate over the burden of public debt.",
+      "requires": [
+        "macroeconomics/ad-as-and-stabilisation"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "economic-growth",
+    "business-cycles",
+    "international-finance"
+  ]
+}

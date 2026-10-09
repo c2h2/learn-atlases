@@ -1,0 +1,90 @@
+{
+  "slug": "organometallics-catalysis",
+  "title": "Organometallics and Catalysis",
+  "full_title": "Organometallic Chemistry and Catalysis",
+  "area": "inorganic",
+  "level": 3,
+  "order": 150,
+  "tagline": "Electron counting, main-group and transition-metal organometallics, elementary reactions, catalytic cycles, cross-coupling, metathesis and heterogeneous catalysis",
+  "summary": "Organometallic compounds, with bonds between metals and carbon, are the workhorses of modern catalysis. This course covers electron counting and the common ligands, main-group organometallic reagents, the elementary reactions of transition-metal complexes, and how they combine into catalytic cycles for hydrogenation, cross-coupling, metathesis and polymerisation, ending with catalysis on surfaces.",
+  "overview": [],
+  "prerequisites": [
+    "coordination-chemistry",
+    "kinetics",
+    "organic-2"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "organometallic-bonding",
+      "title": "Organometallic compounds and electron counting",
+      "summary": "Metal–carbon bonds, electron counting and the 18-electron rule, and σ-donor and π-acceptor ligands.",
+      "requires": [
+        "coordination-chemistry/ligand-field-mo"
+      ]
+    },
+    {
+      "slug": "main-group-organometallics",
+      "title": "Main-group organometallic reagents",
+      "summary": "Organolithium and Grignard reagents, organozinc, organoboron and organosilicon compounds, and their uses in synthesis.",
+      "requires": [
+        "organic-2/carbonyl-addition",
+        "main-group/groups-13-14"
+      ]
+    },
+    {
+      "slug": "ligands-complexes",
+      "title": "Carbonyls, phosphines, alkenes and other ligands",
+      "summary": "Metal carbonyls and their infrared signatures, phosphines, and alkene, alkyne, carbene, cyclopentadienyl and arene ligands.",
+      "requires": [
+        "organometallics-catalysis/organometallic-bonding"
+      ]
+    },
+    {
+      "slug": "elementary-reactions",
+      "title": "Elementary reactions",
+      "summary": "Ligand substitution, oxidative addition and reductive elimination, migratory insertion and β-hydride elimination.",
+      "requires": [
+        "organometallics-catalysis/ligands-complexes"
+      ]
+    },
+    {
+      "slug": "hydrogenation-hydroformylation",
+      "title": "Catalytic cycles: hydrogenation and hydroformylation",
+      "summary": "Building catalytic cycles from elementary steps, Wilkinson’s catalyst, asymmetric hydrogenation and hydroformylation.",
+      "requires": [
+        "organometallics-catalysis/elementary-reactions",
+        "kinetics/homogeneous-catalysis"
+      ]
+    },
+    {
+      "slug": "cross-coupling",
+      "title": "Cross-coupling reactions",
+      "summary": "Palladium-catalysed Suzuki, Heck, Sonogashira and Buchwald–Hartwig couplings and their mechanisms.",
+      "requires": [
+        "organometallics-catalysis/elementary-reactions"
+      ]
+    },
+    {
+      "slug": "metathesis-polymerisation",
+      "title": "Metathesis and polymerisation catalysis",
+      "summary": "Alkene metathesis with Grubbs and Schrock catalysts, and Ziegler–Natta and metallocene catalysts for polymerising alkenes.",
+      "requires": [
+        "organometallics-catalysis/hydrogenation-hydroformylation"
+      ]
+    },
+    {
+      "slug": "heterogeneous-catalysis",
+      "title": "Heterogeneous catalysis",
+      "summary": "Active sites on metal surfaces, supported catalysts, zeolites and oxides, and how working catalysts are characterised.",
+      "requires": [
+        "kinetics/surface-kinetics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "green-chemistry"
+  ]
+}

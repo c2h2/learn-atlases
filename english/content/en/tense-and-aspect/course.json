@@ -1,0 +1,100 @@
+{
+  "slug": "tense-and-aspect",
+  "title": "Tense and Aspect",
+  "full_title": "Tense and Aspect: Time in English",
+  "area": "grammar",
+  "level": 2,
+  "order": 50,
+  "tagline": "Time, tense and aspect, simple and progressive, the present perfect, the present perfect progressive, narrative tenses, the future, past habits, English tenses and Chinese 了, 过 and 着, and choosing tenses in real texts",
+  "summary": "English verbs carry two kinds of information about time: tense, which places a situation in the present or the past, and aspect, which shows whether it is seen as complete, in progress or connected to a later point. Chinese expresses these ideas with particles such as 了, 过 and 着 and with time words, so English tenses are among the hardest parts of the language for Chinese learners. This course builds the whole system, from the meaning of the simple and progressive forms to the present perfect, the narrative tenses, the many ways of talking about the future, and how writers choose tenses in real texts.",
+  "overview": [],
+  "prerequisites": [
+    "core-grammar"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "time-tense-aspect",
+      "title": "Time, tense and aspect",
+      "summary": "The difference between time and tense, the two tenses and two aspects of English, and a timeline model with event time, reference time and speech time.",
+      "requires": [
+        "core-grammar/past-simple",
+        "core-grammar/present-continuous"
+      ]
+    },
+    {
+      "slug": "simple-and-progressive",
+      "title": "Simple and progressive",
+      "summary": "What the progressive adds — an action in progress, temporary or unfinished — and why state verbs such as *know*, *own* and *belong* rarely take it.",
+      "requires": [
+        "tense-and-aspect/time-tense-aspect"
+      ]
+    },
+    {
+      "slug": "present-perfect",
+      "title": "The present perfect",
+      "summary": "*Have* + past participle for experiences, recent events with present results and situations continuing up to now, and the contrast with the past simple.",
+      "requires": [
+        "tense-and-aspect/simple-and-progressive"
+      ]
+    },
+    {
+      "slug": "present-perfect-progressive",
+      "title": "The present perfect progressive",
+      "summary": "*Have been* + *-ing* for activities up to now, *for* and *since*, and the choice between *I have read* and *I have been reading*.",
+      "requires": [
+        "tense-and-aspect/present-perfect"
+      ]
+    },
+    {
+      "slug": "narrative-tenses",
+      "title": "Narrative tenses",
+      "summary": "The past progressive for background, the past perfect for earlier events, and how the narrative tenses work together in a story.",
+      "requires": [
+        "tense-and-aspect/present-perfect"
+      ]
+    },
+    {
+      "slug": "future-forms",
+      "title": "The future",
+      "summary": "*Will*, *be going to*, the present continuous and the present simple for the future, the future progressive and future perfect, and the differences in meaning between them.",
+      "requires": [
+        "tense-and-aspect/simple-and-progressive",
+        "core-grammar/talking-about-the-future"
+      ]
+    },
+    {
+      "slug": "past-habits",
+      "title": "Past habits: *used to* and *would*",
+      "summary": "*Used to* and *would* for past habits and states, and the different meaning of *be used to* and *get used to*.",
+      "requires": [
+        "tense-and-aspect/narrative-tenses"
+      ]
+    },
+    {
+      "slug": "tense-and-chinese",
+      "title": "English tenses and Chinese 了, 过 and 着",
+      "summary": "How Chinese marks time and aspect with particles and time words, where these match English tenses and where they do not, and the tense errors that follow.",
+      "requires": [
+        "tense-and-aspect/present-perfect-progressive",
+        "tense-and-aspect/narrative-tenses"
+      ]
+    },
+    {
+      "slug": "tenses-in-texts",
+      "title": "Choosing tenses in real texts",
+      "summary": "How tenses are used in stories, news reports, emails and academic writing, and how to keep tenses consistent across a paragraph.",
+      "requires": [
+        "tense-and-aspect/future-forms",
+        "tense-and-aspect/past-habits",
+        "tense-and-aspect/tense-and-chinese"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "complex-sentences",
+    "modality"
+  ]
+}

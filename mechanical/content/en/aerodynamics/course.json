@@ -1,0 +1,98 @@
+{
+  "slug": "aerodynamics",
+  "title": "Aerodynamics",
+  "full_title": "Aerodynamics",
+  "area": "aerospace",
+  "level": 3,
+  "order": 170,
+  "tagline": "Aerodynamic forces, potential flow, airfoil theory and panel methods, finite wings, viscous drag, shocks and expansions, and transonic and supersonic flow",
+  "summary": "Aerodynamics explains how wings produce lift and what it costs in drag. The course builds from aerodynamic forces and potential flow to thin-airfoil theory, panel methods, finite wings and induced drag, and viscous effects and stall, and then turns to compressible aerodynamics: oblique shocks and expansion waves, subsonic and transonic airfoils, supersonic flow and the main features of hypersonic flight.",
+  "overview": [],
+  "prerequisites": [
+    "fluid-mechanics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "aerodynamic-forces",
+      "title": "Aerodynamic forces and coefficients",
+      "summary": "Lift, drag and pitching moment and their coefficients, the centre of pressure and the aerodynamic centre, and the similarity parameters of aerodynamics.",
+      "requires": [
+        "fluid-mechanics/boundary-layers-drag"
+      ]
+    },
+    {
+      "slug": "potential-flow",
+      "title": "Incompressible potential flow",
+      "summary": "Stream function and velocity potential, elementary flows and their superposition, flow over a cylinder and the Kutta–Joukowski theorem.",
+      "requires": [
+        "fluid-mechanics/navier-stokes"
+      ]
+    },
+    {
+      "slug": "thin-airfoil-theory",
+      "title": "Airfoils and thin-airfoil theory",
+      "summary": "Airfoil geometry and nomenclature, the Kutta condition, vortex sheets, and thin-airfoil theory for lift and pitching moment.",
+      "requires": [
+        "aerodynamics/potential-flow",
+        "aerodynamics/aerodynamic-forces"
+      ]
+    },
+    {
+      "slug": "panel-methods",
+      "title": "Panel methods",
+      "summary": "Source and vortex panel methods for airfoils of arbitrary shape.",
+      "requires": [
+        "aerodynamics/thin-airfoil-theory"
+      ]
+    },
+    {
+      "slug": "finite-wings",
+      "title": "Finite wings",
+      "summary": "Wing-tip vortices and downwash, Prandtl's lifting-line theory, induced drag, and the effects of aspect ratio and sweep.",
+      "requires": [
+        "aerodynamics/thin-airfoil-theory"
+      ]
+    },
+    {
+      "slug": "viscous-aerodynamics",
+      "title": "Viscous effects, drag and stall",
+      "summary": "Boundary layers on airfoils, skin-friction and form drag, transition, stall and high-lift devices.",
+      "requires": [
+        "aerodynamics/thin-airfoil-theory",
+        "fluid-mechanics/boundary-layers-drag"
+      ]
+    },
+    {
+      "slug": "oblique-shocks",
+      "title": "Oblique shocks and expansion waves",
+      "summary": "Oblique shock relations, the θ–β–M relation, Prandtl–Meyer expansions and shock-expansion theory.",
+      "requires": [
+        "fluid-mechanics/compressible-flow"
+      ]
+    },
+    {
+      "slug": "compressible-airfoils",
+      "title": "Subsonic and transonic airfoils",
+      "summary": "Compressibility corrections, the critical Mach number, drag divergence and supercritical airfoils.",
+      "requires": [
+        "aerodynamics/thin-airfoil-theory",
+        "fluid-mechanics/compressible-flow"
+      ]
+    },
+    {
+      "slug": "supersonic-hypersonic",
+      "title": "Supersonic and hypersonic flow",
+      "summary": "Linearised supersonic flow over thin airfoils, wave drag, swept wings, and the main features of hypersonic flow.",
+      "requires": [
+        "aerodynamics/oblique-shocks"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "flight-mechanics",
+    "propulsion"
+  ]
+}

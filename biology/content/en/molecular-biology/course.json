@@ -1,0 +1,98 @@
+{
+  "slug": "molecular-biology",
+  "title": "Molecular Biology",
+  "full_title": "Molecular Biology of the Gene",
+  "area": "cells",
+  "level": 2,
+  "order": 70,
+  "tagline": "DNA and chromatin, replication, repair and recombination, molecular tools, transcription, RNA processing, translation and gene regulation",
+  "summary": "Molecular biology explains how genetic information is stored, copied and expressed. This course covers the structure of DNA and chromatin, replication, repair and recombination, the laboratory tools that made the field, transcription, RNA processing and translation, and how bacteria and eukaryotes control which genes are expressed, when and how much.",
+  "overview": [],
+  "prerequisites": [
+    "cell-biology",
+    "genetics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "dna-structure",
+      "title": "DNA and chromatin",
+      "summary": "The double helix, supercoiling, nucleosomes and the packaging of genomes.",
+      "requires": [
+        "genetics/genes-and-mutation"
+      ]
+    },
+    {
+      "slug": "dna-replication",
+      "title": "DNA replication",
+      "summary": "DNA polymerases, the replication fork, origins, telomeres and the fidelity of copying.",
+      "requires": [
+        "molecular-biology/dna-structure"
+      ]
+    },
+    {
+      "slug": "dna-repair-recombination",
+      "title": "DNA repair and recombination",
+      "summary": "Mismatch, excision and double-strand-break repair, homologous recombination and transposable elements.",
+      "requires": [
+        "molecular-biology/dna-replication"
+      ]
+    },
+    {
+      "slug": "molecular-tools",
+      "title": "Tools of molecular biology",
+      "summary": "Restriction enzymes, cloning, the polymerase chain reaction, sequencing, blotting and reporter genes.",
+      "requires": [
+        "molecular-biology/dna-replication"
+      ]
+    },
+    {
+      "slug": "transcription",
+      "title": "Transcription",
+      "summary": "RNA polymerases, promoters, and the initiation, elongation and termination of transcription in bacteria and eukaryotes.",
+      "requires": [
+        "molecular-biology/dna-structure"
+      ]
+    },
+    {
+      "slug": "rna-processing",
+      "title": "RNA processing",
+      "summary": "Capping, splicing and alternative splicing, polyadenylation, RNA editing and the export of messenger RNA.",
+      "requires": [
+        "molecular-biology/transcription"
+      ]
+    },
+    {
+      "slug": "translation",
+      "title": "The genetic code and translation",
+      "summary": "Codons, transfer RNA, the ribosome and the steps of protein synthesis.",
+      "requires": [
+        "molecular-biology/rna-processing"
+      ]
+    },
+    {
+      "slug": "bacterial-gene-regulation",
+      "title": "Gene regulation in bacteria",
+      "summary": "Operons, repressors and activators, attenuation and riboswitches.",
+      "requires": [
+        "molecular-biology/transcription"
+      ]
+    },
+    {
+      "slug": "eukaryotic-gene-regulation",
+      "title": "Gene regulation in eukaryotes",
+      "summary": "Transcription factors, enhancers, chromatin modification and regulatory RNAs.",
+      "requires": [
+        "molecular-biology/bacterial-gene-regulation",
+        "molecular-biology/rna-processing"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "genomics",
+    "developmental-biology",
+    "biotechnology"
+  ]
+}

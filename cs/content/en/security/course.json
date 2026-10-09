@@ -1,0 +1,98 @@
+{
+  "slug": "security",
+  "title": "Computer Security",
+  "full_title": "Computer and Network Security",
+  "area": "security",
+  "level": 3,
+  "order": 150,
+  "tagline": "Threat models, authentication, access control, memory safety, web and network security, malware, privacy and secure development",
+  "summary": "Security is about keeping systems working as intended when someone is trying to make them fail. This course teaches how attacks work at a conceptual level and, above all, how systems defend against them: threat modelling, authentication and access control, memory-safety vulnerabilities and their mitigations, web and network security, malware and intrusion detection, privacy, and secure software development. Attacks are explained only as far as is needed to understand the defences.",
+  "overview": [],
+  "prerequisites": [
+    "operating-systems",
+    "networks"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "security-principles",
+      "title": "Security principles and threat models",
+      "summary": "Confidentiality, integrity and availability, threat modelling, and principles such as least privilege and defence in depth.",
+      "requires": []
+    },
+    {
+      "slug": "authentication",
+      "title": "Authentication",
+      "summary": "Passwords and how to store them, multi-factor authentication, and single sign-on.",
+      "requires": [
+        "security/security-principles"
+      ]
+    },
+    {
+      "slug": "access-control",
+      "title": "Access control and isolation",
+      "summary": "Access-control models, the reference monitor, operating-system protection and sandboxing.",
+      "requires": [
+        "security/authentication",
+        "operating-systems/os-structure"
+      ]
+    },
+    {
+      "slug": "memory-safety",
+      "title": "Memory-safety vulnerabilities and defences",
+      "summary": "Buffer overflows and use-after-free as classes of bug, and defences such as stack canaries, address-space randomisation, non-executable memory and memory-safe languages.",
+      "requires": [
+        "security/security-principles",
+        "operating-systems/address-spaces-paging"
+      ]
+    },
+    {
+      "slug": "web-security",
+      "title": "Web security",
+      "summary": "The browser security model, injection, cross-site scripting and request forgery, and their defences.",
+      "requires": [
+        "security/security-principles",
+        "networks/application-layer"
+      ]
+    },
+    {
+      "slug": "network-security",
+      "title": "Network security",
+      "summary": "Attacks on network protocols, firewalls, secure channels and VPNs in practice, and intrusion detection.",
+      "requires": [
+        "security/security-principles",
+        "networks/tcp-congestion"
+      ]
+    },
+    {
+      "slug": "malware",
+      "title": "Malware and incident response",
+      "summary": "Kinds of malicious software, how they spread and persist, and detection, containment and recovery.",
+      "requires": [
+        "security/access-control"
+      ]
+    },
+    {
+      "slug": "privacy",
+      "title": "Privacy",
+      "summary": "Data protection, tracking and anonymity, de-identification and differential privacy.",
+      "requires": [
+        "security/security-principles"
+      ]
+    },
+    {
+      "slug": "secure-development",
+      "title": "Secure software development",
+      "summary": "Secure design, security code review and testing, fuzzing, and responsible disclosure.",
+      "requires": [
+        "security/memory-safety",
+        "security/web-security"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "cryptography"
+  ]
+}

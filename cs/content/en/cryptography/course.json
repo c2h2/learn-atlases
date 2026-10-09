@@ -1,0 +1,94 @@
+{
+  "slug": "cryptography",
+  "title": "Cryptography",
+  "full_title": "Cryptography",
+  "area": "security",
+  "level": 3,
+  "order": 160,
+  "tagline": "Perfect secrecy, computational security, block ciphers, hash functions and MACs, number theory, public-key encryption, digital signatures, protocols and post-quantum cryptography",
+  "summary": "Modern cryptography turns secrecy and authenticity into precise definitions with provable guarantees. This course develops symmetric encryption, block ciphers and modes of operation, hash functions and message authentication, the number theory behind public-key cryptography, key exchange, public-key encryption and digital signatures, secure protocols such as TLS, and the post-quantum schemes now being deployed.",
+  "overview": [],
+  "prerequisites": [
+    "algorithms"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "perfect-secrecy",
+      "title": "Classical ciphers and perfect secrecy",
+      "summary": "Historical ciphers and how they were broken, Shannon’s perfect secrecy and the one-time pad.",
+      "requires": []
+    },
+    {
+      "slug": "computational-security",
+      "title": "Computational security and pseudorandomness",
+      "summary": "Security definitions and negligible advantage, pseudorandom generators and pseudorandom functions.",
+      "requires": [
+        "cryptography/perfect-secrecy",
+        "algorithms/randomised-algorithms"
+      ]
+    },
+    {
+      "slug": "block-ciphers",
+      "title": "Block ciphers and modes of operation",
+      "summary": "The design of AES, security against chosen-plaintext attacks, and modes such as CBC and CTR.",
+      "requires": [
+        "cryptography/computational-security"
+      ]
+    },
+    {
+      "slug": "hash-mac",
+      "title": "Hash functions and message authentication",
+      "summary": "Collision resistance, SHA-2 and SHA-3, MACs and HMAC, and authenticated encryption.",
+      "requires": [
+        "cryptography/block-ciphers"
+      ]
+    },
+    {
+      "slug": "number-theory",
+      "title": "Number theory for cryptography",
+      "summary": "Modular arithmetic and groups, fast exponentiation, primality testing, and the factoring and discrete-logarithm problems.",
+      "requires": [
+        "cryptography/computational-security"
+      ]
+    },
+    {
+      "slug": "public-key",
+      "title": "Key exchange and public-key encryption",
+      "summary": "Diffie–Hellman over finite fields and elliptic curves, RSA and ElGamal encryption, and chosen-ciphertext security.",
+      "requires": [
+        "cryptography/number-theory"
+      ]
+    },
+    {
+      "slug": "signatures",
+      "title": "Digital signatures and certificates",
+      "summary": "RSA and elliptic-curve signatures, hash-and-sign, certificates and public-key infrastructure.",
+      "requires": [
+        "cryptography/public-key",
+        "cryptography/hash-mac"
+      ]
+    },
+    {
+      "slug": "protocols",
+      "title": "Cryptographic protocols",
+      "summary": "Authenticated key exchange and TLS 1.3, secret sharing and zero-knowledge proofs.",
+      "requires": [
+        "cryptography/signatures"
+      ]
+    },
+    {
+      "slug": "post-quantum",
+      "title": "Post-quantum cryptography",
+      "summary": "Quantum threats to public-key cryptography, lattice-based and hash-based schemes, and the move to new standards.",
+      "requires": [
+        "cryptography/public-key"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "quantum-computing"
+  ]
+}

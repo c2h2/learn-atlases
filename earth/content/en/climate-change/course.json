@@ -1,0 +1,99 @@
+{
+  "slug": "climate-change",
+  "title": "Climate Change",
+  "full_title": "Climate Change: Evidence, Impacts and Responses",
+  "area": "climate",
+  "level": 4,
+  "order": 220,
+  "tagline": "Observed change, detection and attribution, emissions and carbon budgets, projections, extremes, sea-level rise, tipping points, impacts, mitigation and adaptation",
+  "summary": "This course examines what is known about human-caused climate change and how it is known. It covers the observed changes across the climate system, detection and attribution, greenhouse-gas emissions and carbon budgets, projections of future climate and extremes, sea-level rise and tipping points, impacts on ecosystems and people, and the evidence on options for mitigation and adaptation — with the uncertainty ranges of the assessed literature, and keeping physical science separate from policy choices.",
+  "overview": [],
+  "prerequisites": [
+    "climate-system"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "observed-change",
+      "title": "Observed changes in the climate system",
+      "summary": "The instrumental temperature record, ocean heat content, ice, sea level and other indicators, and how they are measured.",
+      "requires": [
+        "climate-system/energy-budget",
+        "climate-system/climate-statistics"
+      ]
+    },
+    {
+      "slug": "attribution",
+      "title": "Detection and attribution",
+      "summary": "Fingerprints of different causes, the attribution of the observed warming, and the attribution of individual extreme events.",
+      "requires": [
+        "climate-change/observed-change",
+        "climate-system/variability"
+      ]
+    },
+    {
+      "slug": "emissions-budgets",
+      "title": "Emissions and carbon budgets",
+      "summary": "The sources of greenhouse gases, the near-linear relation between cumulative carbon dioxide emissions and warming, and remaining carbon budgets.",
+      "requires": [
+        "climate-system/carbon-climate"
+      ]
+    },
+    {
+      "slug": "projections",
+      "title": "Projections of future climate",
+      "summary": "Scenarios and global warming levels, and projected changes in temperature, precipitation and circulation.",
+      "requires": [
+        "climate-change/emissions-budgets",
+        "climate-system/feedbacks-sensitivity"
+      ]
+    },
+    {
+      "slug": "extremes",
+      "title": "Extremes in a warming world",
+      "summary": "Observed and projected changes in heatwaves, heavy precipitation, droughts and tropical cyclones.",
+      "requires": [
+        "climate-change/projections",
+        "climate-change/attribution"
+      ]
+    },
+    {
+      "slug": "sea-level-rise",
+      "title": "Sea-level rise",
+      "summary": "Contributions from ocean warming, glaciers and ice sheets, projections, and the long-term commitment to rising seas.",
+      "requires": [
+        "climate-change/projections",
+        "oceanography/sea-level"
+      ]
+    },
+    {
+      "slug": "tipping-points",
+      "title": "Tipping points and irreversibility",
+      "summary": "Ice sheets, the overturning circulation, permafrost and forests: thresholds, abrupt change and the strength of the evidence.",
+      "requires": [
+        "climate-change/projections"
+      ]
+    },
+    {
+      "slug": "impacts",
+      "title": "Impacts on ecosystems and people",
+      "summary": "Effects on ecosystems, water, food, health and settlements, and how risk depends on exposure and vulnerability.",
+      "requires": [
+        "climate-change/extremes",
+        "climate-change/sea-level-rise"
+      ]
+    },
+    {
+      "slug": "responses",
+      "title": "Mitigation and adaptation",
+      "summary": "The evidence on options to reduce emissions, remove carbon dioxide and adapt, with their costs, limits and trade-offs as assessed by the IPCC.",
+      "requires": [
+        "climate-change/emissions-budgets",
+        "climate-change/impacts"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

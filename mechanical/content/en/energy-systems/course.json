@@ -1,0 +1,97 @@
+{
+  "slug": "energy-systems",
+  "title": "Energy Systems",
+  "full_title": "Energy Conversion Systems",
+  "area": "thermofluids",
+  "level": 4,
+  "order": 220,
+  "tagline": "Energy resources, steam and gas-turbine power plants, combined cycles, engines, refrigeration and air conditioning, solar, wind and hydro power, storage, cost and emissions",
+  "summary": "Energy systems convert fuels, heat, wind and sunlight into the electricity, heating and cooling that society uses. The course applies thermodynamics and heat transfer to steam and gas-turbine power plants, combined cycles and cogeneration, internal combustion engines, refrigeration, heat pumps and air conditioning, solar, wind and hydropower and energy storage, and compares systems by efficiency, cost and emissions.",
+  "overview": [],
+  "prerequisites": [
+    "thermodynamics",
+    "heat-transfer"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "energy-overview",
+      "title": "Energy resources and demand",
+      "summary": "Primary energy sources, conversion chains and their efficiencies, and the units and statistics of energy use.",
+      "requires": [
+        "thermodynamics/exergy"
+      ]
+    },
+    {
+      "slug": "steam-power-plants",
+      "title": "Steam power plants",
+      "summary": "Practical Rankine plants fired by fossil fuels, biomass or nuclear reactors: boilers, turbines, condensers, feedwater heating and supercritical cycles.",
+      "requires": [
+        "thermodynamics/power-cycles",
+        "heat-transfer/heat-exchangers"
+      ]
+    },
+    {
+      "slug": "gas-turbines-combined-cycles",
+      "title": "Gas turbines and combined cycles",
+      "summary": "Industrial gas turbines, heat-recovery steam generators, combined cycles and combined heat and power.",
+      "requires": [
+        "energy-systems/steam-power-plants"
+      ]
+    },
+    {
+      "slug": "internal-combustion-engines",
+      "title": "Internal combustion engines",
+      "summary": "Spark- and compression-ignition engines, real engine cycles, performance and efficiency, and emissions.",
+      "requires": [
+        "thermodynamics/power-cycles",
+        "thermodynamics/mixtures-combustion"
+      ]
+    },
+    {
+      "slug": "refrigeration-hvac",
+      "title": "Refrigeration, heat pumps and air conditioning",
+      "summary": "Vapour-compression and absorption refrigeration, refrigerants and heat pumps, psychrometrics and air-conditioning processes.",
+      "requires": [
+        "thermodynamics/entropy",
+        "thermodynamics/mixtures-combustion"
+      ]
+    },
+    {
+      "slug": "solar-energy",
+      "title": "Solar energy",
+      "summary": "Solar radiation and its availability, solar thermal collectors and photovoltaic conversion.",
+      "requires": [
+        "heat-transfer/radiation"
+      ]
+    },
+    {
+      "slug": "wind-hydro",
+      "title": "Wind and hydropower",
+      "summary": "The Betz limit and wind-turbine performance, and hydroelectric and marine energy.",
+      "requires": [
+        "energy-systems/energy-overview",
+        "fluid-mechanics/control-volume-analysis"
+      ]
+    },
+    {
+      "slug": "energy-storage",
+      "title": "Energy storage",
+      "summary": "Batteries, pumped hydro, thermal storage, compressed air and hydrogen compared by efficiency, capacity and cost.",
+      "requires": [
+        "energy-systems/energy-overview"
+      ]
+    },
+    {
+      "slug": "energy-economics-emissions",
+      "title": "Efficiency, cost and emissions",
+      "summary": "Levelised cost of energy, carbon emissions and the life-cycle assessment of energy systems.",
+      "requires": [
+        "energy-systems/energy-overview"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

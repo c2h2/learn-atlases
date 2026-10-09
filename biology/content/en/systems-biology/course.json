@@ -1,0 +1,95 @@
+{
+  "slug": "systems-biology",
+  "title": "Systems Biology",
+  "full_title": "Systems and Mathematical Biology",
+  "area": "quantitative",
+  "level": 4,
+  "order": 200,
+  "tagline": "Kinetic models, gene-expression dynamics, network motifs, switches and oscillators, noise, robustness, metabolic networks, pattern formation and fitting models to data",
+  "summary": "Systems biology asks how the behaviour of cells emerges from networks of interacting molecules, and answers with mathematical models. This course builds dynamical models of gene expression, the network motifs that recur in nature, switches, oscillators and noise, signalling and robust adaptation, metabolic networks and pattern formation, and the statistics of fitting models to data.",
+  "overview": [],
+  "prerequisites": [
+    "molecular-biology",
+    "biostatistics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "modelling-principles",
+      "title": "Modelling biological systems",
+      "summary": "Why we model, kinetic equations, mass action and steady states.",
+      "requires": [
+        "molecular-biology/eukaryotic-gene-regulation"
+      ]
+    },
+    {
+      "slug": "gene-expression-dynamics",
+      "title": "Dynamics of gene expression",
+      "summary": "Production and degradation, response times, Hill functions and autoregulation.",
+      "requires": [
+        "systems-biology/modelling-principles"
+      ]
+    },
+    {
+      "slug": "network-motifs",
+      "title": "Network motifs",
+      "summary": "Feed-forward loops, negative and positive feedback, and the design principles of transcription networks.",
+      "requires": [
+        "systems-biology/gene-expression-dynamics"
+      ]
+    },
+    {
+      "slug": "switches-oscillators",
+      "title": "Switches and oscillators",
+      "summary": "Bistability and hysteresis, the genetic toggle switch, the repressilator and circadian clocks.",
+      "requires": [
+        "systems-biology/network-motifs"
+      ]
+    },
+    {
+      "slug": "noise",
+      "title": "Noise in gene expression",
+      "summary": "Stochastic chemical kinetics, the Gillespie algorithm and the consequences of noise for cells.",
+      "requires": [
+        "systems-biology/gene-expression-dynamics",
+        "biostatistics/probability-distributions"
+      ]
+    },
+    {
+      "slug": "signalling-robustness",
+      "title": "Signalling, adaptation and robustness",
+      "summary": "Bacterial chemotaxis, exact adaptation, ultrasensitivity and robust design.",
+      "requires": [
+        "systems-biology/network-motifs"
+      ]
+    },
+    {
+      "slug": "metabolic-networks",
+      "title": "Metabolic networks",
+      "summary": "Stoichiometric models, flux balance analysis and metabolic control analysis.",
+      "requires": [
+        "systems-biology/modelling-principles"
+      ]
+    },
+    {
+      "slug": "pattern-formation",
+      "title": "Pattern formation",
+      "summary": "Morphogen gradients, Turing patterns and reaction–diffusion in development.",
+      "requires": [
+        "systems-biology/switches-oscillators"
+      ]
+    },
+    {
+      "slug": "fitting-models",
+      "title": "Fitting models to data",
+      "summary": "Parameter estimation, identifiability and choosing between competing models.",
+      "requires": [
+        "systems-biology/noise",
+        "biostatistics/linear-models"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

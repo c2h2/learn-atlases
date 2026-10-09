@@ -1,0 +1,95 @@
+{
+  "slug": "software-engineering",
+  "title": "Software Engineering",
+  "full_title": "Software Engineering",
+  "area": "software",
+  "level": 2,
+  "order": 100,
+  "tagline": "Software processes, requirements, architecture, design principles, version control, testing, refactoring, verification and professional ethics",
+  "summary": "Software engineering is programming done by teams, over years, for people who depend on the result. This course covers how real software is specified, designed, built, tested and maintained: development processes and requirements, architecture and design principles, version control and continuous integration, testing, refactoring and maintenance, verification of critical software, and the professional and ethical responsibilities of engineers.",
+  "overview": [],
+  "prerequisites": [
+    "program-design"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "software-process",
+      "title": "Software processes",
+      "summary": "Life-cycle models, plan-driven and agile development, and estimating and managing software projects.",
+      "requires": []
+    },
+    {
+      "slug": "requirements",
+      "title": "Requirements",
+      "summary": "Eliciting, specifying and validating requirements, with user stories and use cases.",
+      "requires": [
+        "software-engineering/software-process"
+      ]
+    },
+    {
+      "slug": "software-architecture",
+      "title": "Software architecture",
+      "summary": "Architectural styles such as layered, client–server and event-driven systems, and recording design decisions.",
+      "requires": [
+        "software-engineering/requirements",
+        "program-design/modules-patterns"
+      ]
+    },
+    {
+      "slug": "design-principles",
+      "title": "Design principles",
+      "summary": "Coupling and cohesion, information hiding, the SOLID principles and designing for change.",
+      "requires": [
+        "software-engineering/software-architecture"
+      ]
+    },
+    {
+      "slug": "version-control",
+      "title": "Version control and collaboration",
+      "summary": "Git, branching and merging, code review and continuous integration.",
+      "requires": [
+        "software-engineering/software-process"
+      ]
+    },
+    {
+      "slug": "testing",
+      "title": "Software testing",
+      "summary": "Unit, integration and system tests, test design and coverage, and test-driven development.",
+      "requires": [
+        "program-design/abstraction-specifications",
+        "software-engineering/version-control"
+      ]
+    },
+    {
+      "slug": "refactoring-maintenance",
+      "title": "Refactoring and maintenance",
+      "summary": "Code smells, refactoring, technical debt and working with legacy code.",
+      "requires": [
+        "software-engineering/design-principles",
+        "software-engineering/testing"
+      ]
+    },
+    {
+      "slug": "verification",
+      "title": "Reliability and verification",
+      "summary": "Static analysis, formal specification, model checking and safety-critical software.",
+      "requires": [
+        "software-engineering/testing"
+      ]
+    },
+    {
+      "slug": "professional-ethics",
+      "title": "Professional practice and ethics",
+      "summary": "Licences and intellectual property, privacy, accessibility, accountability and codes of ethics.",
+      "requires": [
+        "software-engineering/software-process"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "hci"
+  ]
+}

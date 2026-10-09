@@ -1,0 +1,83 @@
+{
+  "slug": "engineering-graphics",
+  "title": "Engineering Graphics",
+  "full_title": "Engineering Graphics and CAD",
+  "area": "design",
+  "level": 1,
+  "order": 30,
+  "tagline": "Sketching, orthographic and pictorial projection, sections, dimensioning, tolerances and geometric tolerancing, and parametric CAD",
+  "summary": "Engineering drawings are the language in which designs are specified, made and inspected. The course covers freehand sketching and pictorial views, orthographic projection, sectional and auxiliary views, dimensioning, tolerances and fits, geometric dimensioning and tolerancing, and parametric 3D CAD models, assemblies and working drawings.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "sketching-pictorial",
+      "title": "Sketching and pictorial views",
+      "summary": "Freehand sketching, line types, and isometric, oblique and perspective views of objects.",
+      "requires": []
+    },
+    {
+      "slug": "orthographic-projection",
+      "title": "Orthographic projection",
+      "summary": "First- and third-angle projection, choosing and arranging views, and reading multiview drawings.",
+      "requires": [
+        "engineering-graphics/sketching-pictorial"
+      ]
+    },
+    {
+      "slug": "sections-auxiliary-views",
+      "title": "Sections and auxiliary views",
+      "summary": "Full, half, offset and removed sections, hatching conventions, and auxiliary views of inclined surfaces.",
+      "requires": [
+        "engineering-graphics/orthographic-projection"
+      ]
+    },
+    {
+      "slug": "dimensioning",
+      "title": "Dimensioning",
+      "summary": "Standard practice for dimensions and notes, and the dimensioning of holes, threads, chamfers and fillets.",
+      "requires": [
+        "engineering-graphics/orthographic-projection"
+      ]
+    },
+    {
+      "slug": "tolerances-fits",
+      "title": "Tolerances and fits",
+      "summary": "Limits and tolerances, standard fits between mating parts, tolerance stack-up and surface finish.",
+      "requires": [
+        "engineering-graphics/dimensioning"
+      ]
+    },
+    {
+      "slug": "geometric-tolerancing",
+      "title": "Geometric dimensioning and tolerancing",
+      "summary": "Datums, feature control frames, and tolerances of form, orientation, location and run-out.",
+      "requires": [
+        "engineering-graphics/tolerances-fits"
+      ]
+    },
+    {
+      "slug": "cad-modelling",
+      "title": "Parametric CAD modelling",
+      "summary": "Sketches, constraints and features in parametric solid modelling, and capturing design intent.",
+      "requires": [
+        "engineering-graphics/orthographic-projection"
+      ]
+    },
+    {
+      "slug": "assemblies-drawings",
+      "title": "Assemblies and working drawings",
+      "summary": "Assembly models and mating constraints, bills of materials, exploded views and production drawings.",
+      "requires": [
+        "engineering-graphics/cad-modelling",
+        "engineering-graphics/tolerances-fits"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "design-process"
+  ]
+}

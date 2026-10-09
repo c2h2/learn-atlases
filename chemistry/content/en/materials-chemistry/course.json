@@ -1,0 +1,97 @@
+{
+  "slug": "materials-chemistry",
+  "title": "Materials Chemistry",
+  "full_title": "Solid-State and Materials Chemistry",
+  "area": "materials",
+  "level": 3,
+  "order": 190,
+  "tagline": "Crystal structures, X-ray diffraction, defects, band theory, synthesis of solids, magnetic and optical materials, porous solids, nanomaterials and energy materials",
+  "summary": "Materials chemistry connects the arrangement of atoms in solids with properties we can use. This course covers crystal structures and their determination by diffraction, defects and the electronic structure of solids, methods of making solids, and the chemistry behind magnetic, optical, porous, nanoscale and energy materials.",
+  "overview": [],
+  "prerequisites": [
+    "main-group",
+    "thermodynamics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "crystal-structures",
+      "title": "Crystal structures and lattices",
+      "summary": "Lattices and unit cells, Miller indices, and common structure types such as rock salt, fluorite, perovskite and spinel.",
+      "requires": [
+        "bonding-structure/solid-structures"
+      ]
+    },
+    {
+      "slug": "diffraction",
+      "title": "X-ray diffraction",
+      "summary": "Bragg’s law, structure factors and systematic absences, powder diffraction and single-crystal structure determination.",
+      "requires": [
+        "materials-chemistry/crystal-structures"
+      ]
+    },
+    {
+      "slug": "defects",
+      "title": "Defects and non-stoichiometry",
+      "summary": "Point defects and their thermodynamics, Kröger–Vink notation, ionic conduction and non-stoichiometric compounds.",
+      "requires": [
+        "materials-chemistry/crystal-structures",
+        "thermodynamics/free-energy"
+      ]
+    },
+    {
+      "slug": "electronic-structure-solids",
+      "title": "Electronic structure of solids",
+      "summary": "Bands from orbitals, the density of states, metals, semiconductors and insulators, and doping.",
+      "requires": [
+        "bonding-structure/metallic-bonding"
+      ]
+    },
+    {
+      "slug": "solid-synthesis",
+      "title": "Synthesis of inorganic solids",
+      "summary": "Ceramic, sol–gel, hydrothermal and solvothermal methods, and chemical vapour deposition.",
+      "requires": [
+        "materials-chemistry/crystal-structures"
+      ]
+    },
+    {
+      "slug": "magnetic-optical",
+      "title": "Magnetic, optical and dielectric materials",
+      "summary": "Ferromagnetism and antiferromagnetism, ferroelectrics, luminescence, pigments and phosphors.",
+      "requires": [
+        "materials-chemistry/electronic-structure-solids"
+      ]
+    },
+    {
+      "slug": "porous-materials",
+      "title": "Porous materials",
+      "summary": "Zeolites and metal–organic frameworks, porosity and surface area, and their use for gas storage, separation and catalysis.",
+      "requires": [
+        "materials-chemistry/crystal-structures"
+      ]
+    },
+    {
+      "slug": "nanomaterials",
+      "title": "Nanomaterials",
+      "summary": "Size effects, quantum dots, metal nanoparticles, carbon nanotubes, graphene and other two-dimensional materials.",
+      "requires": [
+        "materials-chemistry/electronic-structure-solids"
+      ]
+    },
+    {
+      "slug": "energy-materials",
+      "title": "Materials for energy",
+      "summary": "Battery electrodes and electrolytes, photovoltaic materials, thermoelectrics and superconductors.",
+      "requires": [
+        "materials-chemistry/electronic-structure-solids",
+        "materials-chemistry/defects"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "polymer-chemistry"
+  ]
+}

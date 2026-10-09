@@ -1,0 +1,89 @@
+{
+  "slug": "machine-design",
+  "title": "Machine Design",
+  "full_title": "Design of Machine Elements",
+  "area": "design",
+  "level": 3,
+  "order": 130,
+  "tagline": "Static failure theories, fatigue, shafts, bearings, gears, fasteners and welded joints, springs, clutches, brakes, belts and chains",
+  "summary": "Machine design sizes the components that make machines work so that they neither break nor wear out too soon. Building on mechanics of materials, the course covers failure theories for static loading, fatigue under fluctuating loads, and the design and selection of shafts, rolling and journal bearings, gears, threaded fasteners and welded joints, springs, and clutches, brakes, belts and chains.",
+  "overview": [],
+  "prerequisites": [
+    "mechanics-of-materials",
+    "design-process"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "static-failure",
+      "title": "Failure under static loading",
+      "summary": "Failure theories for ductile and brittle materials — maximum shear stress, distortion energy and Mohr–Coulomb — and stress concentration.",
+      "requires": [
+        "mechanics-of-materials/stress-transformation"
+      ]
+    },
+    {
+      "slug": "fatigue",
+      "title": "Fatigue failure",
+      "summary": "S–N curves, endurance limits and modifying factors, fluctuating stresses with the Goodman and Gerber criteria, and cumulative damage.",
+      "requires": [
+        "machine-design/static-failure",
+        "materials-science/failure"
+      ]
+    },
+    {
+      "slug": "shafts",
+      "title": "Shafts and shaft components",
+      "summary": "Shaft layout, stresses and deflections under combined loads, critical speeds, keys and couplings.",
+      "requires": [
+        "machine-design/fatigue",
+        "mechanics-of-materials/beam-deflection"
+      ]
+    },
+    {
+      "slug": "bearings",
+      "title": "Rolling and journal bearings",
+      "summary": "Rolling-bearing life, load ratings and selection, and the hydrodynamic lubrication of journal bearings.",
+      "requires": [
+        "machine-design/shafts"
+      ]
+    },
+    {
+      "slug": "gear-design",
+      "title": "Gear design",
+      "summary": "Gear geometry and force analysis of meshes, bending and contact stresses in gear teeth, and gear rating.",
+      "requires": [
+        "machine-design/fatigue"
+      ]
+    },
+    {
+      "slug": "fasteners-joints",
+      "title": "Fasteners and welded joints",
+      "summary": "Threaded fasteners, bolt preload and joint stiffness, and bolted, welded and bonded joints under static and fatigue loads.",
+      "requires": [
+        "machine-design/fatigue"
+      ]
+    },
+    {
+      "slug": "springs",
+      "title": "Mechanical springs",
+      "summary": "Helical compression, extension and torsion springs: stresses, deflection, buckling, fatigue and surge.",
+      "requires": [
+        "machine-design/fatigue",
+        "mechanics-of-materials/torsion"
+      ]
+    },
+    {
+      "slug": "clutches-brakes-belts",
+      "title": "Clutches, brakes, belts and chains",
+      "summary": "Friction clutches and brakes with their energy dissipation and temperature rise, and power transmission by belts and chains.",
+      "requires": [
+        "machine-design/static-failure",
+        "statics/friction"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

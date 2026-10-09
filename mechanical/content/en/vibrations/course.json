@@ -1,0 +1,97 @@
+{
+  "slug": "vibrations",
+  "title": "Vibrations",
+  "full_title": "Mechanical Vibrations",
+  "area": "dynamics",
+  "level": 3,
+  "order": 120,
+  "tagline": "Free and forced vibration of single-degree-of-freedom systems, damping and isolation, general excitation, multi-degree-of-freedom systems, modal analysis and continuous systems",
+  "summary": "Vibration is everywhere in machines: unbalanced rotors, vehicle suspensions, buildings in earthquakes and wings in turbulence. The course develops free and forced vibration of single-degree-of-freedom systems, damping, isolation and measurement, the response to shocks and general forcing, systems with several degrees of freedom and their modes, vibration absorbers, and the vibration of strings, bars and beams.",
+  "overview": [],
+  "prerequisites": [
+    "dynamics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "vibration-fundamentals",
+      "title": "Fundamentals of vibration",
+      "summary": "Oscillatory motion and harmonic analysis, equivalent springs, masses and dampers, and modelling a system as a mass–spring–damper.",
+      "requires": [
+        "dynamics/newtons-laws"
+      ]
+    },
+    {
+      "slug": "free-vibration",
+      "title": "Free vibration",
+      "summary": "Natural frequency by Newton and energy methods, viscous damping with underdamped, critically damped and overdamped responses, and Coulomb damping.",
+      "requires": [
+        "vibrations/vibration-fundamentals",
+        "dynamics/rigid-body-kinetics"
+      ]
+    },
+    {
+      "slug": "harmonic-excitation",
+      "title": "Harmonically forced vibration",
+      "summary": "Steady-state response, resonance, magnitude and phase of the frequency response, rotating unbalance and base excitation.",
+      "requires": [
+        "vibrations/free-vibration"
+      ]
+    },
+    {
+      "slug": "isolation-transmissibility",
+      "title": "Vibration isolation and measurement",
+      "summary": "Force and motion transmissibility, the design of isolators, and vibration-measuring instruments.",
+      "requires": [
+        "vibrations/harmonic-excitation"
+      ]
+    },
+    {
+      "slug": "general-excitation",
+      "title": "Response to general excitation",
+      "summary": "Impulse response and convolution, shock response spectra, periodic forcing by Fourier series, and Laplace-transform solutions.",
+      "requires": [
+        "vibrations/harmonic-excitation"
+      ]
+    },
+    {
+      "slug": "two-degrees-of-freedom",
+      "title": "Systems with two degrees of freedom",
+      "summary": "Equations of motion, natural frequencies and mode shapes, coordinate coupling and forced response.",
+      "requires": [
+        "vibrations/free-vibration"
+      ]
+    },
+    {
+      "slug": "modal-analysis",
+      "title": "Multi-degree-of-freedom systems and modal analysis",
+      "summary": "Mass and stiffness matrices, the eigenvalue problem, orthogonality of modes, and modal superposition with damping.",
+      "requires": [
+        "vibrations/two-degrees-of-freedom"
+      ]
+    },
+    {
+      "slug": "vibration-absorbers",
+      "title": "Vibration absorbers and vibration control",
+      "summary": "The undamped and damped dynamic absorber, tuned mass dampers, and passive and active vibration control.",
+      "requires": [
+        "vibrations/two-degrees-of-freedom",
+        "vibrations/isolation-transmissibility"
+      ]
+    },
+    {
+      "slug": "continuous-systems",
+      "title": "Vibration of continuous systems",
+      "summary": "Vibrating strings, axial and torsional vibration of bars, transverse vibration of beams, and Rayleigh's method.",
+      "requires": [
+        "vibrations/modal-analysis"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "control-systems",
+    "finite-element-method"
+  ]
+}

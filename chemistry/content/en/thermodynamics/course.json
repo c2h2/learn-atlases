@@ -1,0 +1,91 @@
+{
+  "slug": "thermodynamics",
+  "title": "Chemical Thermodynamics",
+  "full_title": "Chemical Thermodynamics",
+  "area": "physical",
+  "level": 2,
+  "order": 50,
+  "tagline": "The first and second laws, heat capacity, entropy, free energy, phase equilibria, mixtures, chemical equilibrium and ions in solution",
+  "summary": "Thermodynamics predicts which changes can happen and how far they go, from energy and entropy alone. This course develops the first and second laws, the Gibbs and Helmholtz energies and the chemical potential, and applies them to phase transitions, mixtures, chemical equilibrium and solutions of ions.",
+  "overview": [],
+  "prerequisites": [
+    "general-chemistry-2"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "first-law",
+      "title": "The first law",
+      "summary": "Systems and surroundings, internal energy, work and heat, state functions, and reversible and irreversible processes.",
+      "requires": [
+        "general-chemistry-1/thermochemistry"
+      ]
+    },
+    {
+      "slug": "heat-capacity-adiabatic",
+      "title": "Heat capacity, enthalpy and adiabatic change",
+      "summary": "Heat capacities at constant volume and pressure, the temperature dependence of reaction enthalpies (Kirchhoff’s law), adiabatic expansion and the Joule–Thomson effect.",
+      "requires": [
+        "thermodynamics/first-law",
+        "general-chemistry-1/gases"
+      ]
+    },
+    {
+      "slug": "second-law",
+      "title": "Entropy and the second law",
+      "summary": "The thermodynamic and statistical definitions of entropy, entropy changes in processes, heat engines and the Carnot cycle, the Clausius inequality and the third law.",
+      "requires": [
+        "thermodynamics/first-law",
+        "general-chemistry-2/entropy-free-energy"
+      ]
+    },
+    {
+      "slug": "free-energy",
+      "title": "Free energy and chemical potential",
+      "summary": "The Helmholtz and Gibbs energies, the fundamental equation, Maxwell relations, the Gibbs–Helmholtz equation and the chemical potential.",
+      "requires": [
+        "thermodynamics/second-law"
+      ]
+    },
+    {
+      "slug": "phase-equilibria",
+      "title": "Phase equilibria of pure substances",
+      "summary": "Phase diagrams, the Clapeyron and Clausius–Clapeyron equations, the phase rule and the stability of phases.",
+      "requires": [
+        "thermodynamics/free-energy"
+      ]
+    },
+    {
+      "slug": "mixtures",
+      "title": "Mixtures and solutions",
+      "summary": "Partial molar quantities, the thermodynamics of mixing, ideal and real solutions, Raoult’s and Henry’s laws, activity, and phase diagrams of two-component systems.",
+      "requires": [
+        "thermodynamics/phase-equilibria",
+        "general-chemistry-2/liquids-solutions"
+      ]
+    },
+    {
+      "slug": "reaction-equilibrium",
+      "title": "Thermodynamics of chemical equilibrium",
+      "summary": "The reaction Gibbs energy and the equilibrium constant, the van ’t Hoff equation, the effect of pressure, and coupled reactions.",
+      "requires": [
+        "thermodynamics/free-energy",
+        "general-chemistry-2/chemical-equilibrium"
+      ]
+    },
+    {
+      "slug": "ions-in-solution",
+      "title": "Ions in solution",
+      "summary": "Activities of ions, ionic strength, the Debye–Hückel theory and its consequences for solubility and equilibria.",
+      "requires": [
+        "thermodynamics/mixtures"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "statistical-thermodynamics",
+    "electrochemistry"
+  ]
+}

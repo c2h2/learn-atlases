@@ -1,0 +1,91 @@
+{
+  "slug": "general-chemistry-1",
+  "title": "General Chemistry I",
+  "full_title": "General Chemistry I: Atoms, Molecules and Reactions",
+  "area": "general",
+  "level": 1,
+  "order": 10,
+  "tagline": "Atoms and molecules, the mole, stoichiometry, solutions, gases, thermochemistry and the quantum atom",
+  "summary": "Chemistry is the science of substances and how they change. This course builds the quantitative foundations — measurement, the mole and stoichiometry — then follows reactions in solution, the behaviour of gases and the energy of reactions, and ends with the quantum picture of the atom that explains the periodic table.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "matter-measurement",
+      "title": "Matter and measurement",
+      "summary": "Elements, compounds and mixtures, SI units, significant figures and dimensional analysis.",
+      "requires": []
+    },
+    {
+      "slug": "atoms-and-moles",
+      "title": "Atoms, isotopes and the mole",
+      "summary": "Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole.",
+      "requires": [
+        "general-chemistry-1/matter-measurement"
+      ]
+    },
+    {
+      "slug": "formulas-nomenclature",
+      "title": "Formulas and names of compounds",
+      "summary": "Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds.",
+      "requires": [
+        "general-chemistry-1/atoms-and-moles"
+      ]
+    },
+    {
+      "slug": "stoichiometry",
+      "title": "Chemical equations and stoichiometry",
+      "summary": "Balancing equations, mole ratios, limiting reagents and percentage yield.",
+      "requires": [
+        "general-chemistry-1/formulas-nomenclature"
+      ]
+    },
+    {
+      "slug": "solutions-reactions",
+      "title": "Reactions in aqueous solution",
+      "summary": "Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations.",
+      "requires": [
+        "general-chemistry-1/stoichiometry"
+      ]
+    },
+    {
+      "slug": "gases",
+      "title": "Gases",
+      "summary": "The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases.",
+      "requires": [
+        "general-chemistry-1/stoichiometry"
+      ]
+    },
+    {
+      "slug": "thermochemistry",
+      "title": "Thermochemistry",
+      "summary": "Heat and work, enthalpy, calorimetry, Hess’s law and standard enthalpies of formation.",
+      "requires": [
+        "general-chemistry-1/stoichiometry"
+      ]
+    },
+    {
+      "slug": "quantum-atom",
+      "title": "Light and the quantum atom",
+      "summary": "Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals.",
+      "requires": [
+        "general-chemistry-1/atoms-and-moles"
+      ]
+    },
+    {
+      "slug": "periodicity",
+      "title": "Electron configurations and periodic trends",
+      "summary": "The aufbau principle, the Pauli principle and Hund’s rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity.",
+      "requires": [
+        "general-chemistry-1/quantum-atom"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "general-chemistry-2",
+    "bonding-structure"
+  ]
+}

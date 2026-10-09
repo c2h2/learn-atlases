@@ -1,0 +1,96 @@
+{
+  "slug": "geochemistry",
+  "title": "Geochemistry",
+  "full_title": "Geochemistry and Isotopes",
+  "area": "history",
+  "level": 2,
+  "order": 110,
+  "tagline": "The elements in the Earth, reaction thermodynamics, aqueous geochemistry and weathering, trace elements, geochronology, radiogenic and stable isotopes",
+  "summary": "Geochemistry uses chemistry to read the Earth’s processes and history. This course covers how the elements were made and how they are distributed in the Earth, the thermodynamics and kinetics of geological reactions, natural waters and water–rock interaction, trace elements, radioactive decay and geochronology, radiogenic isotopes as tracers, and stable isotopes — the basis of the oxygen- and carbon-isotope records used throughout Earth and climate science.",
+  "overview": [],
+  "prerequisites": [
+    "physical-geology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "elements-earth",
+      "title": "The elements and the Earth",
+      "summary": "Nucleosynthesis, meteorites and the bulk composition of the Earth, and how the elements are shared between core, mantle and crust.",
+      "requires": [
+        "physical-geology/earth-interior"
+      ]
+    },
+    {
+      "slug": "reactions",
+      "title": "Thermodynamics and kinetics of geological reactions",
+      "summary": "Free energy, equilibrium constants and reaction rates applied to minerals and fluids.",
+      "requires": [
+        "physical-geology/minerals"
+      ]
+    },
+    {
+      "slug": "aqueous-geochemistry",
+      "title": "Aqueous geochemistry",
+      "summary": "Activity, acids and bases, carbonate equilibria, redox and the composition of natural waters.",
+      "requires": [
+        "geochemistry/reactions"
+      ]
+    },
+    {
+      "slug": "weathering-chemistry",
+      "title": "Water–rock interaction",
+      "summary": "Chemical weathering reactions, clay minerals, and how rivers and groundwater acquire their chemistry.",
+      "requires": [
+        "geochemistry/aqueous-geochemistry"
+      ]
+    },
+    {
+      "slug": "trace-elements",
+      "title": "Trace elements",
+      "summary": "Partition coefficients, compatible and incompatible elements, and rare earth element patterns as tracers of melting and crystallisation.",
+      "requires": [
+        "geochemistry/elements-earth"
+      ]
+    },
+    {
+      "slug": "geochronology",
+      "title": "Radioactive decay and geochronology",
+      "summary": "Decay laws and isochrons, and the U–Pb, K–Ar and ⁴⁰Ar/³⁹Ar, Rb–Sr and radiocarbon methods.",
+      "requires": [
+        "geochemistry/elements-earth"
+      ]
+    },
+    {
+      "slug": "radiogenic-tracers",
+      "title": "Radiogenic isotope tracers",
+      "summary": "Strontium, neodymium, lead and hafnium isotopes, and what they reveal about mantle reservoirs and the growth of the crust.",
+      "requires": [
+        "geochemistry/geochronology",
+        "geochemistry/trace-elements"
+      ]
+    },
+    {
+      "slug": "stable-isotopes",
+      "title": "Stable isotopes",
+      "summary": "Isotope fractionation, δ notation, and the stable isotopes of hydrogen, carbon, oxygen and sulfur in nature.",
+      "requires": [
+        "geochemistry/reactions"
+      ]
+    },
+    {
+      "slug": "isotopes-water-carbon",
+      "title": "Isotopes in the water and carbon cycles",
+      "summary": "Rayleigh distillation, the meteoric water line, isotope palaeothermometry, and the carbon-isotope signatures of photosynthesis and carbonates.",
+      "requires": [
+        "geochemistry/stable-isotopes"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "biogeochemistry",
+    "palaeoclimate"
+  ]
+}

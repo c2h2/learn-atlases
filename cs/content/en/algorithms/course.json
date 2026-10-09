@@ -1,0 +1,100 @@
+{
+  "slug": "algorithms",
+  "title": "Algorithms",
+  "full_title": "Design and Analysis of Algorithms",
+  "area": "theory",
+  "level": 2,
+  "order": 50,
+  "tagline": "Correctness and recurrences, divide and conquer, sorting and selection, graph algorithms, greedy algorithms, dynamic programming, network flow and randomised algorithms",
+  "summary": "An algorithm is a precise method for solving a problem, and its analysis tells us how its cost grows with the size of the input. This course teaches the main design techniques — divide and conquer, greedy choice, dynamic programming and reduction to network flow — together with proofs of correctness, the analysis of running time, graph algorithms and randomised algorithms.",
+  "overview": [],
+  "prerequisites": [
+    "data-structures"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "correctness-recurrences",
+      "title": "Correctness and recurrences",
+      "summary": "Loop invariants and induction for correctness, and solving recurrences with recursion trees and the master theorem.",
+      "requires": [
+        "data-structures/asymptotic-analysis"
+      ]
+    },
+    {
+      "slug": "divide-and-conquer",
+      "title": "Divide and conquer",
+      "summary": "Mergesort, quicksort, fast integer multiplication and the closest pair of points, with their analyses.",
+      "requires": [
+        "algorithms/correctness-recurrences"
+      ]
+    },
+    {
+      "slug": "sorting-selection",
+      "title": "Sorting lower bounds and selection",
+      "summary": "The comparison lower bound for sorting, counting and radix sort, and linear-time selection.",
+      "requires": [
+        "algorithms/divide-and-conquer"
+      ]
+    },
+    {
+      "slug": "graph-search",
+      "title": "Graph search and its applications",
+      "summary": "Breadth- and depth-first search, topological sorting, strongly connected components and bipartite graphs.",
+      "requires": [
+        "algorithms/correctness-recurrences",
+        "data-structures/graph-representations"
+      ]
+    },
+    {
+      "slug": "shortest-paths",
+      "title": "Shortest paths",
+      "summary": "Dijkstra’s algorithm, Bellman–Ford and negative cycles, and all-pairs shortest paths.",
+      "requires": [
+        "algorithms/graph-search",
+        "data-structures/heaps"
+      ]
+    },
+    {
+      "slug": "greedy-algorithms",
+      "title": "Greedy algorithms and spanning trees",
+      "summary": "Exchange arguments, interval scheduling, Huffman codes, and Kruskal’s and Prim’s algorithms with union–find.",
+      "requires": [
+        "algorithms/graph-search",
+        "data-structures/heaps"
+      ]
+    },
+    {
+      "slug": "dynamic-programming",
+      "title": "Dynamic programming",
+      "summary": "Optimal substructure, memoisation and tabulation, with sequence alignment, knapsack and shortest paths.",
+      "requires": [
+        "algorithms/divide-and-conquer"
+      ]
+    },
+    {
+      "slug": "network-flow",
+      "title": "Network flow and matching",
+      "summary": "The Ford–Fulkerson method, the max-flow min-cut theorem, and bipartite matching by reduction to flow.",
+      "requires": [
+        "algorithms/graph-search"
+      ]
+    },
+    {
+      "slug": "randomised-algorithms",
+      "title": "Randomised algorithms",
+      "summary": "Las Vegas and Monte Carlo algorithms, expected running time, universal hashing and randomised minimum cut.",
+      "requires": [
+        "algorithms/divide-and-conquer",
+        "data-structures/hash-tables"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "complexity",
+    "artificial-intelligence",
+    "cryptography"
+  ]
+}

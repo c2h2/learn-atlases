@@ -1,0 +1,108 @@
+{
+  "slug": "linguistics",
+  "title": "English Linguistics",
+  "full_title": "English Linguistics: How the Language Works",
+  "area": "language",
+  "level": 4,
+  "order": 230,
+  "tagline": "What linguistics studies, phonetics and phonology, morphology, phrases and constituents, clauses and movement, semantics, pragmatics and discourse, corpus linguistics, language acquisition, and variation and change",
+  "summary": "Linguistics studies language scientifically, describing how it is actually used rather than prescribing how it should be. This course surveys the structure of English at every level — sounds, words, phrases and sentences, meaning and discourse — and introduces corpus linguistics, how first and second languages are acquired, and how language varies and changes.",
+  "overview": [],
+  "prerequisites": [
+    "complex-sentences",
+    "connected-speech",
+    "word-formation"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "what-linguistics-studies",
+      "title": "What linguistics studies",
+      "summary": "Description and prescription, the levels of linguistic analysis, and the evidence linguists use.",
+      "requires": []
+    },
+    {
+      "slug": "phonetics-phonology",
+      "title": "Phonetics and phonology",
+      "summary": "Articulatory and acoustic phonetics, phonemes and allophones, and the sound patterns of English.",
+      "requires": [
+        "linguistics/what-linguistics-studies",
+        "connected-speech/word-stress-patterns"
+      ]
+    },
+    {
+      "slug": "morphology",
+      "title": "Morphology",
+      "summary": "Morphemes, inflection and derivation, and how English morphology compares with that of Chinese.",
+      "requires": [
+        "linguistics/what-linguistics-studies",
+        "word-formation/morphemes"
+      ]
+    },
+    {
+      "slug": "phrases-constituents",
+      "title": "Syntax: phrases and constituents",
+      "summary": "Constituency tests, phrase structure, and tree diagrams for English sentences.",
+      "requires": [
+        "linguistics/what-linguistics-studies",
+        "complex-sentences/clause-structure"
+      ]
+    },
+    {
+      "slug": "clauses-movement",
+      "title": "Syntax: clauses and movement",
+      "summary": "Questions, passives and relative clauses as relations between structures, and how syntacticians model them.",
+      "requires": [
+        "linguistics/phrases-constituents"
+      ]
+    },
+    {
+      "slug": "semantics",
+      "title": "Semantics",
+      "summary": "Word meaning and sense relations, sentence meaning and truth conditions, and quantifiers and logical words.",
+      "requires": [
+        "linguistics/phrases-constituents"
+      ]
+    },
+    {
+      "slug": "pragmatics-discourse",
+      "title": "Pragmatics and discourse",
+      "summary": "Grice’s maxims, presupposition, and the structure of conversations and texts.",
+      "requires": [
+        "linguistics/semantics"
+      ]
+    },
+    {
+      "slug": "corpus-linguistics",
+      "title": "Corpus linguistics",
+      "summary": "Building and searching corpora, word frequency and Zipf’s law, collocation statistics and n-gram models.",
+      "requires": [
+        "linguistics/what-linguistics-studies"
+      ]
+    },
+    {
+      "slug": "language-acquisition",
+      "title": "Language acquisition",
+      "summary": "How children acquire their first language, and the main theories and findings about learning a second one.",
+      "requires": [
+        "linguistics/morphology",
+        "linguistics/clauses-movement"
+      ]
+    },
+    {
+      "slug": "variation-change",
+      "title": "Variation and change",
+      "summary": "Variation by region, social class, age and gender, and how sounds and grammar change over time.",
+      "requires": [
+        "linguistics/phonetics-phonology",
+        "linguistics/corpus-linguistics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "history-of-english",
+    "world-englishes"
+  ]
+}

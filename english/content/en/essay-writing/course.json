@@ -1,0 +1,114 @@
+{
+  "slug": "essay-writing",
+  "title": "Essay Writing",
+  "full_title": "Essay Writing: Argument and Structure",
+  "area": "writing",
+  "level": 3,
+  "order": 170,
+  "tagline": "The writing process, understanding the question, thesis and introduction, arguing a point, counter-arguments, essay types, describing data, conclusions, signposting, revising and editing, and writing under time pressure",
+  "summary": "An essay answers a question with a clear position supported by reasons and evidence. This course follows the writing process from analysing the question and planning to drafting, revising and editing, and teaches thesis statements, argumentative paragraphs, counter-arguments, the common types of essay, describing data, introductions and conclusions, signposting, and writing under time pressure.",
+  "overview": [],
+  "prerequisites": [
+    "sentences-and-paragraphs",
+    "complex-sentences"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "writing-process",
+      "title": "The writing process",
+      "summary": "Planning, drafting, revising and editing, and why good writers keep these stages apart.",
+      "requires": [
+        "sentences-and-paragraphs/editing"
+      ]
+    },
+    {
+      "slug": "understanding-the-question",
+      "title": "Understanding the question",
+      "summary": "Task words such as *discuss*, *evaluate* and *to what extent*, narrowing a topic and generating ideas.",
+      "requires": [
+        "essay-writing/writing-process"
+      ]
+    },
+    {
+      "slug": "thesis-introduction",
+      "title": "Thesis statements and introductions",
+      "summary": "Writing a thesis that takes a position, and an introduction that leads to it.",
+      "requires": [
+        "essay-writing/understanding-the-question"
+      ]
+    },
+    {
+      "slug": "arguing-a-point",
+      "title": "Arguing a point",
+      "summary": "Body paragraphs that make a claim, explain it and support it with examples and evidence.",
+      "requires": [
+        "essay-writing/thesis-introduction"
+      ]
+    },
+    {
+      "slug": "counter-arguments",
+      "title": "Counter-arguments and concession",
+      "summary": "Presenting opposing views fairly and answering them, with the language of concession and rebuttal.",
+      "requires": [
+        "essay-writing/arguing-a-point"
+      ]
+    },
+    {
+      "slug": "essay-types",
+      "title": "Types of essay",
+      "summary": "Discursive, compare-and-contrast, cause-and-effect and problem–solution essays, and how each is organised.",
+      "requires": [
+        "essay-writing/arguing-a-point"
+      ]
+    },
+    {
+      "slug": "describing-data",
+      "title": "Describing data and processes",
+      "summary": "Describing trends, comparisons and processes from charts, tables and diagrams.",
+      "requires": [
+        "essay-writing/essay-types"
+      ]
+    },
+    {
+      "slug": "conclusions",
+      "title": "Conclusions",
+      "summary": "Ending an essay by answering the question, without repeating the introduction or adding new arguments.",
+      "requires": [
+        "essay-writing/counter-arguments"
+      ]
+    },
+    {
+      "slug": "signposting",
+      "title": "Cohesion and signposting",
+      "summary": "Linking paragraphs, signposting the argument, and avoiding the overuse of connectives such as *moreover* and *furthermore*.",
+      "requires": [
+        "essay-writing/counter-arguments",
+        "complex-sentences/adverbial-clauses"
+      ]
+    },
+    {
+      "slug": "revising-editing",
+      "title": "Revising and editing",
+      "summary": "Revising for argument and structure, editing for language, and giving and using feedback.",
+      "requires": [
+        "essay-writing/conclusions",
+        "essay-writing/signposting"
+      ]
+    },
+    {
+      "slug": "timed-essays",
+      "title": "Writing under time pressure",
+      "summary": "Planning, writing and checking an essay in a fixed time, as in examinations.",
+      "requires": [
+        "essay-writing/revising-editing"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "academic-writing",
+    "style-and-rhetoric"
+  ]
+}

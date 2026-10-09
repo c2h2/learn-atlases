@@ -1,0 +1,106 @@
+{
+  "slug": "coordination-chemistry",
+  "title": "Coordination Chemistry",
+  "full_title": "Transition-Metal and Coordination Chemistry",
+  "area": "inorganic",
+  "level": 3,
+  "order": 140,
+  "tagline": "Complexes and isomerism, crystal and ligand field theory, electronic spectra, magnetism, stability, mechanisms, the d and f blocks and metals in biology",
+  "summary": "Transition-metal complexes give us pigments, catalysts, magnets and the active sites of many enzymes. This course explains the structure and bonding of complexes with crystal field and ligand field theory, interprets their spectra and magnetism, studies their stability and reaction mechanisms, and surveys the d- and f-block elements and the roles of metals in biology.",
+  "overview": [],
+  "prerequisites": [
+    "main-group",
+    "quantum-chemistry"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "coordination-compounds",
+      "title": "Coordination compounds",
+      "summary": "Ligands and denticity, coordination numbers and geometries, nomenclature, and structural isomers and stereoisomers.",
+      "requires": [
+        "main-group/inorganic-acids-bases"
+      ]
+    },
+    {
+      "slug": "crystal-field-theory",
+      "title": "Crystal field theory",
+      "summary": "The splitting of the d orbitals in octahedral, tetrahedral and square-planar fields, the spectrochemical series, high- and low-spin complexes, and the Jahn–Teller effect.",
+      "requires": [
+        "coordination-chemistry/coordination-compounds"
+      ]
+    },
+    {
+      "slug": "ligand-field-mo",
+      "title": "Ligand field and molecular orbital theory",
+      "summary": "σ and π bonding in complexes, molecular orbital diagrams built with symmetry, and the 18-electron rule.",
+      "requires": [
+        "coordination-chemistry/crystal-field-theory",
+        "quantum-chemistry/molecular-symmetry"
+      ]
+    },
+    {
+      "slug": "spectra-of-complexes",
+      "title": "Electronic spectra of complexes",
+      "summary": "Terms and microstates, Orgel and Tanabe–Sugano diagrams, selection rules and charge-transfer bands.",
+      "requires": [
+        "coordination-chemistry/ligand-field-mo",
+        "quantum-chemistry/many-electron-atoms"
+      ]
+    },
+    {
+      "slug": "magnetism",
+      "title": "Magnetic properties of complexes",
+      "summary": "Paramagnetism and the spin-only formula, magnetic susceptibility, orbital contributions and spin crossover.",
+      "requires": [
+        "coordination-chemistry/crystal-field-theory"
+      ]
+    },
+    {
+      "slug": "complex-stability",
+      "title": "Stability of complexes",
+      "summary": "Stability constants, the chelate and macrocyclic effects, the Irving–Williams series and hard–soft preferences.",
+      "requires": [
+        "coordination-chemistry/crystal-field-theory"
+      ]
+    },
+    {
+      "slug": "inorganic-mechanisms",
+      "title": "Reaction mechanisms of complexes",
+      "summary": "Associative and dissociative ligand substitution, the trans effect, and inner- and outer-sphere electron transfer.",
+      "requires": [
+        "coordination-chemistry/complex-stability"
+      ]
+    },
+    {
+      "slug": "d-block-chemistry",
+      "title": "Chemistry of the d-block elements",
+      "summary": "Trends across the three transition series, common oxidation states, and the important compounds of the transition metals.",
+      "requires": [
+        "coordination-chemistry/coordination-compounds"
+      ]
+    },
+    {
+      "slug": "f-block",
+      "title": "Lanthanides and actinides",
+      "summary": "The f orbitals, the lanthanide contraction, the magnetic and luminescent properties of the lanthanides, and the chemistry of the actinides.",
+      "requires": [
+        "coordination-chemistry/d-block-chemistry"
+      ]
+    },
+    {
+      "slug": "bioinorganic",
+      "title": "Metals in biology",
+      "summary": "Metalloproteins and metalloenzymes, oxygen transport and biological electron transfer, and metal-based drugs.",
+      "requires": [
+        "coordination-chemistry/complex-stability",
+        "coordination-chemistry/inorganic-mechanisms"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "organometallics-catalysis"
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "slug": "economics",
+  "name": "Economics & Finance Atlas",
+  "name_zh": "经济与金融图谱",
+  "card_name": "Economics and Finance Atlas",
+  "card_name_zh": "经济与金融图谱",
+  "desc": "A detailed, interactive course through university economics and finance: from supply and demand to microeconomics and macroeconomics, econometrics, game theory, finance, trade, development and public policy. For education only, not investment advice.",
+  "desc_zh": "深入、可交互的大学经济学与金融学课程：从供给与需求，到微观经济学与宏观经济学、计量经济学、博弈论、金融、国际贸易、经济发展与公共政策。仅供教育学习，不构成投资建议。",
+  "lede": "A detailed, interactive course through university economics and finance — from supply and demand to microeconomics and macroeconomics, econometrics and causal inference, game theory and market design, corporate finance and asset pricing, trade, development, and public and behavioural economics. For education only, not investment advice. This is a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.",
+  "lede_zh": "深入、可交互的大学经济学与金融学课程——从供给与需求，到微观经济学与宏观经济学、计量经济学与因果推断、博弈论与市场设计、公司金融与资产定价、国际贸易、经济发展，以及公共经济学与行为经济学。仅供教育学习，不构成投资建议。目前这是一个框架：课程与章节已经规划好，课文尚待编写。",
+  "foot": "a free, detailed and interactive tour of the undergraduate economics and finance curriculum, written to be read alongside lectures and textbooks. For education only — not investment or financial advice.",
+  "foot_zh": "一套免费、详尽、可交互的大学本科经济学与金融学课程导览，可配合课堂和教材阅读。仅供教育学习，不构成投资或理财建议。",
+  "about_lede": "Economics & Finance Atlas is a free, detailed tour of the economics and finance taught in a university degree — written to be read alongside lectures and textbooks, or on its own. It is for education only and is not investment or financial advice.",
+  "about_lede_zh": "经济与金融图谱是一套免费、详尽的大学经济学与金融学导览——可以配合课堂和教材阅读，也可以单独自学。内容仅供教育学习，不构成投资或理财建议。",
+  "timeline_desc": "From Adam Smith to game theory and modern finance: the ideas behind every course in the atlas.",
+  "timeline_desc_zh": "从亚当·斯密到博弈论和现代金融学：图谱中每门课程背后的思想。",
+  "timeline_title": "Timeline of economics",
+  "timeline_title_zh": "经济学时间线",
+  "timeline_lede": "The ideas behind the courses, from Smith’s division of labour and Ricardo’s comparative advantage to Keynes, game theory, rational expectations and modern finance. Coloured dots show the area; links lead to the course where the idea is taught.",
+  "timeline_lede_zh": "各门课程背后的思想：从斯密的分工理论和李嘉图的比较优势，到凯恩斯、博弈论、理性预期与现代金融学。彩色圆点表示所属领域；链接指向讲授该内容的课程。",
+  "card_desc": "University economics and finance: microeconomics and macroeconomics, econometrics, game theory and market design, money, banking and corporate finance, asset pricing and derivatives, trade and development, and public and behavioural economics. For education, not investment advice. The curriculum is mapped out; the lessons are still to be written.",
+  "card_desc_zh": "大学经济学与金融学：微观经济学与宏观经济学、计量经济学、博弈论与市场设计、货币银行与公司金融、资产定价与衍生品、国际贸易与经济发展，以及公共经济学与行为经济学。仅供教育学习，不构成投资建议。课程体系已经规划好，课文尚待编写。",
+  "brand": "<path d=\"M4 14L34 2M4 2l30 12\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"8\" cy=\"3.6\" r=\"2.6\" style=\"fill:var(--a-finance)\"/><circle cx=\"30\" cy=\"3.6\" r=\"2.6\" style=\"fill:var(--a-macro)\"/><circle cx=\"19\" cy=\"8\" r=\"3.6\" style=\"fill:var(--a-micro)\"/>",
+  "areas": [
+    {
+      "key": "micro",
+      "palette": "analysis",
+      "label": "Microeconomics",
+      "blurb": "Choices of households and firms, markets, prices and welfare.",
+      "label_zh": "微观经济学",
+      "blurb_zh": "家庭与企业的选择、市场、价格与福利。"
+    },
+    {
+      "key": "macro",
+      "palette": "algebra",
+      "label": "Macroeconomics",
+      "blurb": "Output, growth, unemployment, inflation and policy for whole economies.",
+      "label_zh": "宏观经济学",
+      "blurb_zh": "整体经济的产出、增长、失业、通货膨胀与政策。"
+    },
+    {
+      "key": "methods",
+      "palette": "foundations",
+      "label": "Quantitative methods",
+      "blurb": "Mathematics, statistics and econometrics for economists.",
+      "label_zh": "定量方法",
+      "blurb_zh": "面向经济学的数学、统计与计量经济学。"
+    },
+    {
+      "key": "strategy",
+      "palette": "discrete",
+      "label": "Games & markets",
+      "blurb": "Strategic behaviour, competition and the design of markets and institutions.",
+      "label_zh": "博弈与市场",
+      "blurb_zh": "策略行为、竞争以及市场与制度的设计。"
+    },
+    {
+      "key": "finance",
+      "palette": "geometry",
+      "label": "Finance",
+      "blurb": "Money, banks, the financial decisions of firms, asset prices and risk.",
+      "label_zh": "金融",
+      "blurb_zh": "货币、银行、企业的财务决策、资产价格与风险。"
+    },
+    {
+      "key": "global",
+      "palette": "probability",
+      "label": "Global economy & history",
+      "blurb": "Trade, international finance, development and economic history.",
+      "label_zh": "全球经济与经济史",
+      "blurb_zh": "国际贸易、国际金融、经济发展与经济史。"
+    },
+    {
+      "key": "policy",
+      "palette": "applied",
+      "label": "Policy & behaviour",
+      "blurb": "Public finance, labour, the environment and how people actually decide.",
+      "label_zh": "政策与行为",
+      "blurb_zh": "公共财政、劳动、环境以及人们实际上如何决策。"
+    }
+  ],
+  "widgets": [
+    "plot",
+    "riemann",
+    "cobweb",
+    "sequence",
+    "newton",
+    "contour",
+    "surface",
+    "gradientdescent",
+    "rowreduce",
+    "slopefield",
+    "phaseplane",
+    "odesolver",
+    "markov",
+    "distribution",
+    "clt",
+    "lln",
+    "montecarlo",
+    "hypothesis",
+    "confidence",
+    "bayes",
+    "regression",
+    "graph"
+  ],
+  "lab_groups": {
+    "calculus": "Curves, surplus and dynamics",
+    "multivar": "Preferences and optimisation",
+    "linalg": "Input–output models",
+    "ode": "Growth and dynamics",
+    "prob": "Probability, data and econometrics",
+    "discrete": "Networks and game trees"
+  },
+  "lab_groups_zh": {
+    "calculus": "曲线、剩余与动态",
+    "multivar": "偏好与优化",
+    "linalg": "投入产出模型",
+    "ode": "增长与动态",
+    "prob": "概率、数据与计量",
+    "discrete": "网络与博弈树"
+  },
+  "paths": {
+    "core": [
+      "The economics core",
+      [
+        "principles",
+        "mathematical-economics",
+        "microeconomics",
+        "macroeconomics",
+        "econometrics",
+        "game-theory"
+      ]
+    ],
+    "finance": [
+      "Finance",
+      [
+        "principles",
+        "mathematical-economics",
+        "money-banking",
+        "corporate-finance",
+        "econometrics",
+        "asset-pricing",
+        "time-series",
+        "derivatives"
+      ]
+    ],
+    "theory": [
+      "Economic theory",
+      [
+        "mathematical-economics",
+        "microeconomics",
+        "game-theory",
+        "industrial-organisation",
+        "information-economics",
+        "market-design"
+      ]
+    ],
+    "policy": [
+      "Policy and applied economics",
+      [
+        "microeconomics",
+        "econometrics",
+        "causal-inference",
+        "public-economics",
+        "labour-economics",
+        "environmental-economics",
+        "behavioural-economics"
+      ]
+    ],
+    "global": [
+      "Global and development economics",
+      [
+        "economic-history",
+        "macroeconomics",
+        "economic-growth",
+        "international-trade",
+        "international-finance",
+        "development-economics"
+      ]
+    ]
+  },
+  "paths_zh": {
+    "core": "经济学核心课程",
+    "finance": "金融",
+    "theory": "经济理论",
+    "policy": "政策与应用经济学",
+    "global": "全球与发展经济学"
+  },
+  "courses": [
+    {
+      "slug": "principles",
+      "title": "Principles of Economics",
+      "full_title": "Principles of Economics",
+      "area": "micro",
+      "level": 1,
+      "order": 10,
+      "prerequisites": [],
+      "next": [
+        "microeconomics",
+        "macroeconomics"
+      ]
+    },
+    {
+      "slug": "mathematical-economics",
+      "title": "Mathematics for Economists",
+      "full_title": "Mathematical Methods for Economists",
+      "area": "methods",
+      "level": 1,
+      "order": 20,
+      "prerequisites": [],
+      "next": [
+        "microeconomics",
+        "econometrics"
+      ]
+    },
+    {
+      "slug": "economic-history",
+      "title": "Economic History",
+      "full_title": "Economic History of the Modern World",
+      "area": "global",
+      "level": 1,
+      "order": 30,
+      "prerequisites": [],
+      "next": [
+        "economic-growth",
+        "development-economics"
+      ]
+    },
+    {
+      "slug": "microeconomics",
+      "title": "Microeconomics",
+      "full_title": "Intermediate Microeconomics",
+      "area": "micro",
+      "level": 2,
+      "order": 40,
+      "prerequisites": [
+        "principles",
+        "mathematical-economics"
+      ],
+      "next": [
+        "industrial-organisation",
+        "public-economics",
+        "information-economics"
+      ]
+    },
+    {
+      "slug": "macroeconomics",
+      "title": "Macroeconomics",
+      "full_title": "Intermediate Macroeconomics",
+      "area": "macro",
+      "level": 2,
+      "order": 50,
+      "prerequisites": [
+        "principles",
+        "mathematical-economics"
+      ],
+      "next": [
+        "economic-growth",
+        "business-cycles",
+        "international-finance"
+      ]
+    },
+    {
+      "slug": "econometrics",
+      "title": "Econometrics",
+      "full_title": "Introductory Econometrics",
+      "area": "methods",
+      "level": 2,
+      "order": 60,
+      "prerequisites": [
+        "mathematical-economics"
+      ],
+      "next": [
+        "causal-inference",
+        "time-series"
+      ]
+    },
+    {
+      "slug": "game-theory",
+      "title": "Game Theory",
+      "full_title": "Game Theory",
+      "area": "strategy",
+      "level": 2,
+      "order": 70,
+      "prerequisites": [
+        "principles",
+        "mathematical-economics"
+      ],
+      "next": [
+        "industrial-organisation",
+        "information-economics",
+        "market-design"
+      ]
+    },
+    {
+      "slug": "money-banking",
+      "title": "Money and Banking",
+      "full_title": "Money, Banking and Financial Markets",
+      "area": "finance",
+      "level": 2,
+      "order": 80,
+      "prerequisites": [
+        "principles"
+      ],
+      "next": [
+        "business-cycles",
+        "asset-pricing"
+      ]
+    },
+    {
+      "slug": "corporate-finance",
+      "title": "Corporate Finance",
+      "full_title": "Corporate Finance",
+      "area": "finance",
+      "level": 2,
+      "order": 90,
+      "prerequisites": [
+        "principles",
+        "mathematical-economics"
+      ],
+      "next": [
+        "asset-pricing"
+      ]
+    },
+    {
+      "slug": "economic-growth",
+      "title": "Economic Growth",
+      "full_title": "Economic Growth",
+      "area": "macro",
+      "level": 3,
+      "order": 100,
+      "prerequisites": [
+        "macroeconomics"
+      ],
+      "next": [
+        "development-economics"
+      ]
+    },
+    {
+      "slug": "business-cycles",
+      "title": "Business Cycles",
+      "full_title": "Business Cycles and Monetary Policy",
+      "area": "macro",
+      "level": 3,
+      "order": 110,
+      "prerequisites": [
+        "macroeconomics",
+        "money-banking"
+      ],
+      "next": [
+        "international-finance"
+      ]
+    },
+    {
+      "slug": "causal-inference",
+      "title": "Causal Inference",
+      "full_title": "Causal Inference and Programme Evaluation",
+      "area": "methods",
+      "level": 3,
+      "order": 120,
+      "prerequisites": [
+        "econometrics"
+      ],
+      "next": [
+        "labour-economics",
+        "development-economics"
+      ]
+    },
+    {
+      "slug": "industrial-organisation",
+      "title": "Industrial Organisation",
+      "full_title": "Industrial Organisation and Competition Policy",
+      "area": "strategy",
+      "level": 3,
+      "order": 130,
+      "prerequisites": [
+        "microeconomics",
+        "game-theory"
+      ],
+      "next": [
+        "market-design"
+      ]
+    },
+    {
+      "slug": "asset-pricing",
+      "title": "Asset Pricing",
+      "full_title": "Asset Pricing and Portfolio Choice",
+      "area": "finance",
+      "level": 3,
+      "order": 140,
+      "prerequisites": [
+        "corporate-finance",
+        "econometrics"
+      ],
+      "next": [
+        "derivatives",
+        "time-series"
+      ]
+    },
+    {
+      "slug": "international-trade",
+      "title": "International Trade",
+      "full_title": "International Trade",
+      "area": "global",
+      "level": 3,
+      "order": 150,
+      "prerequisites": [
+        "microeconomics"
+      ],
+      "next": []
+    },
+    {
+      "slug": "international-finance",
+      "title": "International Finance",
+      "full_title": "International Macroeconomics and Finance",
+      "area": "global",
+      "level": 3,
+      "order": 160,
+      "prerequisites": [
+        "macroeconomics"
+      ],
+      "next": []
+    },
+    {
+      "slug": "development-economics",
+      "title": "Development Economics",
+      "full_title": "Development Economics",
+      "area": "global",
+      "level": 3,
+      "order": 170,
+      "prerequisites": [
+        "microeconomics",
+        "macroeconomics"
+      ],
+      "next": []
+    },
+    {
+      "slug": "public-economics",
+      "title": "Public Economics",
+      "full_title": "Public Economics",
+      "area": "policy",
+      "level": 3,
+      "order": 180,
+      "prerequisites": [
+        "microeconomics"
+      ],
+      "next": [
+        "environmental-economics"
+      ]
+    },
+    {
+      "slug": "labour-economics",
+      "title": "Labour Economics",
+      "full_title": "Labour Economics",
+      "area": "policy",
+      "level": 3,
+      "order": 190,
+      "prerequisites": [
+        "microeconomics",
+        "econometrics"
+      ],
+      "next": []
+    },
+    {
+      "slug": "behavioural-economics",
+      "title": "Behavioural Economics",
+      "full_title": "Behavioural Economics",
+      "area": "policy",
+      "level": 3,
+      "order": 200,
+      "prerequisites": [
+        "microeconomics"
+      ],
+      "next": []
+    },
+    {
+      "slug": "environmental-economics",
+      "title": "Environmental Economics",
+      "full_title": "Environmental and Resource Economics",
+      "area": "policy",
+      "level": 3,
+      "order": 210,
+      "prerequisites": [
+        "microeconomics"
+      ],
+      "next": []
+    },
+    {
+      "slug": "information-economics",
+      "title": "Information and Incentives",
+      "full_title": "Information, Contracts and Incentives",
+      "area": "micro",
+      "level": 4,
+      "order": 220,
+      "prerequisites": [
+        "microeconomics",
+        "game-theory"
+      ],
+      "next": [
+        "market-design"
+      ]
+    },
+    {
+      "slug": "market-design",
+      "title": "Market Design",
+      "full_title": "Auctions and Market Design",
+      "area": "strategy",
+      "level": 4,
+      "order": 230,
+      "prerequisites": [
+        "game-theory",
+        "information-economics"
+      ],
+      "next": []
+    },
+    {
+      "slug": "time-series",
+      "title": "Time Series",
+      "full_title": "Time-Series and Financial Econometrics",
+      "area": "methods",
+      "level": 4,
+      "order": 240,
+      "prerequisites": [
+        "econometrics"
+      ],
+      "next": []
+    },
+    {
+      "slug": "derivatives",
+      "title": "Derivatives",
+      "full_title": "Derivatives and Risk Management",
+      "area": "finance",
+      "level": 4,
+      "order": 250,
+      "prerequisites": [
+        "asset-pricing"
+      ],
+      "next": []
+    }
+  ]
+}

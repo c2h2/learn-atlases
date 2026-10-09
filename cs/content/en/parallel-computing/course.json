@@ -1,0 +1,98 @@
+{
+  "slug": "parallel-computing",
+  "title": "Parallel Computing",
+  "full_title": "Parallel and High-Performance Computing",
+  "area": "systems",
+  "level": 3,
+  "order": 140,
+  "tagline": "Parallel architectures, performance laws, shared-memory programming, memory consistency, concurrent data structures, parallel algorithms, GPUs, message passing and performance engineering",
+  "summary": "Almost every processor is now parallel, from multicore laptops to GPUs and supercomputers, and using them well takes new ideas. This course covers parallel architectures and the laws that limit speed-up, shared-memory programming with threads and OpenMP, cache coherence, memory consistency and concurrent data structures, the design of parallel algorithms, GPU programming, message passing with MPI, and performance engineering.",
+  "overview": [],
+  "prerequisites": [
+    "operating-systems",
+    "algorithms"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "parallel-architectures",
+      "title": "Parallel architectures",
+      "summary": "Multicore processors, SIMD and vector units, GPUs and clusters, and Flynn’s taxonomy.",
+      "requires": [
+        "operating-systems/threads-locks"
+      ]
+    },
+    {
+      "slug": "performance-laws",
+      "title": "Speed-up and performance laws",
+      "summary": "Amdahl’s and Gustafson’s laws, work and span, and the roofline model.",
+      "requires": [
+        "parallel-computing/parallel-architectures"
+      ]
+    },
+    {
+      "slug": "shared-memory",
+      "title": "Shared-memory programming",
+      "summary": "Threads and OpenMP, data and task parallelism, and avoiding data races.",
+      "requires": [
+        "parallel-computing/performance-laws",
+        "operating-systems/synchronisation"
+      ]
+    },
+    {
+      "slug": "memory-consistency",
+      "title": "Cache coherence and memory consistency",
+      "summary": "Coherence protocols, memory models, atomic operations and false sharing.",
+      "requires": [
+        "parallel-computing/shared-memory"
+      ]
+    },
+    {
+      "slug": "concurrent-data-structures",
+      "title": "Concurrent data structures",
+      "summary": "Lock-based and lock-free data structures, compare-and-swap and linearisability.",
+      "requires": [
+        "parallel-computing/memory-consistency"
+      ]
+    },
+    {
+      "slug": "parallel-algorithms",
+      "title": "Parallel algorithms",
+      "summary": "Parallel prefix sums, reductions, sorting and graph algorithms in the work–span model.",
+      "requires": [
+        "parallel-computing/performance-laws",
+        "algorithms/divide-and-conquer"
+      ]
+    },
+    {
+      "slug": "gpu-programming",
+      "title": "GPU programming",
+      "summary": "The GPU execution model, kernels, thread blocks and the memory hierarchy, with examples in CUDA.",
+      "requires": [
+        "parallel-computing/parallel-algorithms"
+      ]
+    },
+    {
+      "slug": "message-passing",
+      "title": "Message passing and MPI",
+      "summary": "Distributed-memory programming, point-to-point and collective communication, and domain decomposition.",
+      "requires": [
+        "parallel-computing/parallel-algorithms"
+      ]
+    },
+    {
+      "slug": "performance-engineering",
+      "title": "Performance engineering",
+      "summary": "Profiling, vectorisation, cache blocking and measuring how programs scale.",
+      "requires": [
+        "parallel-computing/memory-consistency",
+        "parallel-computing/gpu-programming"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "distributed-systems"
+  ]
+}

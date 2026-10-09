@@ -1,0 +1,100 @@
+{
+  "slug": "mechanics-of-materials",
+  "title": "Mechanics of Materials",
+  "full_title": "Mechanics of Materials",
+  "area": "mechanics",
+  "level": 2,
+  "order": 50,
+  "tagline": "Stress and strain, axial load, torsion, shear-force and bending-moment diagrams, bending and shear stresses, stress transformation, beam deflection and buckling",
+  "summary": "Mechanics of materials asks how much a loaded member deforms and when it will fail. Starting from stress, strain and Hooke's law, the course treats axially loaded bars, torsion of shafts, shear-force and bending-moment diagrams, bending and shear stresses in beams, combined loading, pressure vessels and stress transformation with Mohr's circle, the deflection of beams and the buckling of columns.",
+  "overview": [],
+  "prerequisites": [
+    "statics",
+    "materials-science"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "stress-strain",
+      "title": "Stress and strain",
+      "summary": "Normal and shear stress and strain, Hooke's law and Poisson's ratio, allowable stresses and factors of safety.",
+      "requires": [
+        "statics/rigid-body-equilibrium",
+        "materials-science/mechanical-properties"
+      ]
+    },
+    {
+      "slug": "axial-loading",
+      "title": "Axially loaded members",
+      "summary": "Elongation of bars, statically indeterminate members, thermal stresses and stress concentrations.",
+      "requires": [
+        "mechanics-of-materials/stress-strain"
+      ]
+    },
+    {
+      "slug": "torsion",
+      "title": "Torsion",
+      "summary": "Shear stress and angle of twist in circular shafts, power transmission and statically indeterminate shafts.",
+      "requires": [
+        "mechanics-of-materials/stress-strain"
+      ]
+    },
+    {
+      "slug": "shear-moment-diagrams",
+      "title": "Shear-force and bending-moment diagrams",
+      "summary": "Internal forces in beams, the relations between load, shear force and bending moment, and drawing the diagrams.",
+      "requires": [
+        "statics/rigid-body-equilibrium",
+        "statics/centroids-distributed-loads"
+      ]
+    },
+    {
+      "slug": "bending-stress",
+      "title": "Bending stress",
+      "summary": "The flexure formula, beams of composite and unsymmetric section, and the design of beams for bending.",
+      "requires": [
+        "mechanics-of-materials/shear-moment-diagrams",
+        "statics/area-moments"
+      ]
+    },
+    {
+      "slug": "transverse-shear",
+      "title": "Shear stresses in beams",
+      "summary": "The shear formula, the distribution of shear stress over common sections, and shear flow in built-up members.",
+      "requires": [
+        "mechanics-of-materials/bending-stress"
+      ]
+    },
+    {
+      "slug": "stress-transformation",
+      "title": "Combined loading and stress transformation",
+      "summary": "Thin-walled pressure vessels, combined axial, torsional and bending loads, plane stress transformation, principal stresses and Mohr's circle.",
+      "requires": [
+        "mechanics-of-materials/torsion",
+        "mechanics-of-materials/transverse-shear"
+      ]
+    },
+    {
+      "slug": "beam-deflection",
+      "title": "Deflection of beams",
+      "summary": "The elastic curve by integration, discontinuity functions and superposition, and statically indeterminate beams.",
+      "requires": [
+        "mechanics-of-materials/bending-stress"
+      ]
+    },
+    {
+      "slug": "buckling",
+      "title": "Buckling of columns",
+      "summary": "Euler buckling of ideal columns, end conditions and effective length, eccentric loading and the design of columns.",
+      "requires": [
+        "mechanics-of-materials/beam-deflection"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "machine-design",
+    "solid-mechanics"
+  ]
+}

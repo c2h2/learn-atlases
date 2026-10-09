@@ -1,0 +1,94 @@
+{
+  "slug": "song-literature",
+  "title": "Song Literature",
+  "full_title": "Literature of the Song Dynasty",
+  "area": "ancient",
+  "level": 3,
+  "order": 180,
+  "tagline": "Early Northern Song *ci*, Su Shi, Zhou Bangyan and Li Qingzhao, Xin Qiji, Jiang Kui and the late Southern Song, Song poetry, Lu You and the Southern Song poets, Song prose, and storytellers’ scripts",
+  "summary": "In the Song dynasty the song lyric (*ci*) reached its height, poetry turned towards reflection and everyday life, and the prose essay became the scholar-official’s voice. This course reads the great lyricists from Liu Yong and Su Shi to Li Qingzhao, Xin Qiji and Jiang Kui, Song poetry from the reformers of the Northern Song to Lu You, the Song masters of ancient-style prose, and the storytellers’ scripts from which vernacular fiction grew.",
+  "overview": [],
+  "prerequisites": [
+    "tang-literature"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "northern-song-ci",
+      "title": "Early Northern Song *ci*",
+      "summary": "Yan Shu, Ouyang Xiu and the refined short lyric, and Liu Yong’s long lyrics for the entertainment quarters.",
+      "requires": [
+        "tang-literature/five-dynasties-ci"
+      ]
+    },
+    {
+      "slug": "su-shi",
+      "title": "Su Shi",
+      "summary": "Su Shi as poet, lyricist, essayist and calligrapher, his bold new style of *ci*, and his life in exile.",
+      "requires": [
+        "song-literature/northern-song-ci"
+      ]
+    },
+    {
+      "slug": "zhou-li",
+      "title": "Zhou Bangyan and Li Qingzhao",
+      "summary": "Zhou Bangyan’s craftsmanship in the long lyric, and Li Qingzhao’s lyrics before and after the flight to the south.",
+      "requires": [
+        "song-literature/su-shi"
+      ]
+    },
+    {
+      "slug": "xin-qiji",
+      "title": "Xin Qiji and the bold style",
+      "summary": "Xin Qiji, soldier and poet, patriotic lyrics, and the lyrics of Lu You and Chen Liang.",
+      "requires": [
+        "song-literature/zhou-li"
+      ]
+    },
+    {
+      "slug": "late-southern-song-ci",
+      "title": "Jiang Kui and the late Southern Song",
+      "summary": "Jiang Kui’s austere lyrics, Wu Wenying, and the lyricists at the end of the Song.",
+      "requires": [
+        "song-literature/xin-qiji"
+      ]
+    },
+    {
+      "slug": "song-poetry",
+      "title": "Song poetry",
+      "summary": "How Song poetry differs from Tang: Mei Yaochen, Wang Anshi, Huang Tingjian and the Jiangxi school.",
+      "requires": [
+        "song-literature/su-shi"
+      ]
+    },
+    {
+      "slug": "southern-song-poetry",
+      "title": "Lu You and the Southern Song poets",
+      "summary": "Lu You’s patriotic poetry, Yang Wanli’s lively style, Fan Chengda’s poems of the countryside, and the Rivers and Lakes poets.",
+      "requires": [
+        "song-literature/song-poetry"
+      ]
+    },
+    {
+      "slug": "song-prose",
+      "title": "Song prose",
+      "summary": "Ouyang Xiu and the reform of prose, Wang Anshi, Zeng Gong and the three Su, and Song informal notes (笔记).",
+      "requires": [
+        "song-literature/su-shi"
+      ]
+    },
+    {
+      "slug": "huaben",
+      "title": "Storytellers’ scripts",
+      "summary": "Entertainment in the Song capitals, the art of storytelling, and the scripts that became the source of vernacular fiction.",
+      "requires": [
+        "song-literature/song-prose"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "yuan-ming-qing"
+  ]
+}

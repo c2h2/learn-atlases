@@ -1,0 +1,99 @@
+{
+  "slug": "compilers",
+  "title": "Compilers",
+  "full_title": "Compilers and Program Analysis",
+  "area": "programming",
+  "level": 3,
+  "order": 120,
+  "tagline": "Lexical analysis, parsing, semantic analysis, intermediate representations, data-flow analysis and optimisation, code generation, register allocation and runtime systems",
+  "summary": "A compiler translates programs into machine code that runs fast, and its techniques power many other tools, from linters to query engines. This course follows a program through the phases of a compiler — lexing, parsing, semantic analysis, intermediate representations, data-flow analysis and optimisation, instruction selection and register allocation — and ends with runtime systems and garbage collection.",
+  "overview": [],
+  "prerequisites": [
+    "programming-languages",
+    "theory-of-computation",
+    "computer-systems"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "compiler-structure",
+      "title": "The structure of a compiler",
+      "summary": "Phases and passes, front and back ends, and bootstrapping.",
+      "requires": [
+        "programming-languages/syntax-semantics"
+      ]
+    },
+    {
+      "slug": "lexical-analysis",
+      "title": "Lexical analysis",
+      "summary": "Tokens, regular expressions and generating scanners from finite automata.",
+      "requires": [
+        "compilers/compiler-structure",
+        "theory-of-computation/regular-expressions"
+      ]
+    },
+    {
+      "slug": "top-down-parsing",
+      "title": "Top-down parsing",
+      "summary": "Recursive descent, FIRST and FOLLOW sets, and LL(1) parsing.",
+      "requires": [
+        "compilers/lexical-analysis",
+        "theory-of-computation/context-free-grammars"
+      ]
+    },
+    {
+      "slug": "bottom-up-parsing",
+      "title": "Bottom-up parsing",
+      "summary": "Shift–reduce parsing, LR(0), SLR, LR(1) and LALR parsers, and parser generators.",
+      "requires": [
+        "compilers/top-down-parsing"
+      ]
+    },
+    {
+      "slug": "semantic-analysis",
+      "title": "Semantic analysis",
+      "summary": "Abstract syntax trees, symbol tables, scope resolution and type checking.",
+      "requires": [
+        "compilers/bottom-up-parsing",
+        "programming-languages/type-systems"
+      ]
+    },
+    {
+      "slug": "intermediate-representations",
+      "title": "Intermediate representations",
+      "summary": "Three-address code, control-flow graphs and static single assignment form.",
+      "requires": [
+        "compilers/semantic-analysis"
+      ]
+    },
+    {
+      "slug": "dataflow-optimisation",
+      "title": "Data-flow analysis and optimisation",
+      "summary": "Liveness and reaching definitions, lattices and fixed points, and classic optimisations.",
+      "requires": [
+        "compilers/intermediate-representations"
+      ]
+    },
+    {
+      "slug": "code-generation",
+      "title": "Code generation and register allocation",
+      "summary": "Instruction selection, calling conventions, and register allocation by graph colouring.",
+      "requires": [
+        "compilers/dataflow-optimisation",
+        "computer-systems/machine-code"
+      ]
+    },
+    {
+      "slug": "runtime-systems",
+      "title": "Runtime systems and garbage collection",
+      "summary": "Activation records, objects and closures at run time, and garbage-collection algorithms.",
+      "requires": [
+        "compilers/code-generation",
+        "computer-systems/dynamic-memory"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

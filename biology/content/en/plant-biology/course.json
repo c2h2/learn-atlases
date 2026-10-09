@@ -1,0 +1,98 @@
+{
+  "slug": "plant-biology",
+  "title": "Plant Biology",
+  "full_title": "Plant Biology",
+  "area": "organisms",
+  "level": 2,
+  "order": 90,
+  "tagline": "Plant cells and form, water and nutrient transport, photosynthesis, C4 and CAM, hormones, responses to the environment and reproduction",
+  "summary": "Plants turn sunlight, water and carbon dioxide into the food and oxygen on which most other life depends. This course covers plant cells and tissues, growth and form, the movement of water and nutrients, photosynthesis and its variants, hormones and signalling, responses to light and stress, and flowering, fertilisation and seeds.",
+  "overview": [],
+  "prerequisites": [
+    "cell-biology",
+    "biochemistry",
+    "diversity-of-life"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "plant-cells-tissues",
+      "title": "Plant cells and tissues",
+      "summary": "Cell walls, plastids and vacuoles, and the tissue systems of the plant body.",
+      "requires": [
+        "cell-biology/organelles",
+        "diversity-of-life/land-plants"
+      ]
+    },
+    {
+      "slug": "plant-form",
+      "title": "Plant form and growth",
+      "summary": "Meristems, primary and secondary growth, and the anatomy of roots, stems and leaves.",
+      "requires": [
+        "plant-biology/plant-cells-tissues"
+      ]
+    },
+    {
+      "slug": "water-transport",
+      "title": "Water and transport",
+      "summary": "Water potential, transpiration, the cohesion–tension theory and translocation in the phloem.",
+      "requires": [
+        "plant-biology/plant-form"
+      ]
+    },
+    {
+      "slug": "mineral-nutrition",
+      "title": "Mineral nutrition",
+      "summary": "Essential elements, uptake by roots, mycorrhizae and nitrogen-fixing symbioses.",
+      "requires": [
+        "plant-biology/water-transport"
+      ]
+    },
+    {
+      "slug": "photosynthesis",
+      "title": "Photosynthesis",
+      "summary": "Light harvesting, the two photosystems and photosynthetic electron transport, and the Calvin cycle.",
+      "requires": [
+        "plant-biology/plant-cells-tissues",
+        "biochemistry/oxidative-phosphorylation"
+      ]
+    },
+    {
+      "slug": "c4-and-cam",
+      "title": "C3, C4 and CAM photosynthesis",
+      "summary": "Photorespiration, carbon-concentrating mechanisms and photosynthesis in hot, dry and shaded environments.",
+      "requires": [
+        "plant-biology/photosynthesis"
+      ]
+    },
+    {
+      "slug": "plant-hormones",
+      "title": "Plant hormones and signalling",
+      "summary": "Auxin, cytokinins, gibberellins, abscisic acid and ethylene, and how their signals interact.",
+      "requires": [
+        "plant-biology/plant-form"
+      ]
+    },
+    {
+      "slug": "plant-responses",
+      "title": "Responses to light and the environment",
+      "summary": "Phototropism, phytochromes, photoperiodism and circadian clocks, and responses to drought, cold and pathogens.",
+      "requires": [
+        "plant-biology/plant-hormones"
+      ]
+    },
+    {
+      "slug": "plant-reproduction",
+      "title": "Plant reproduction",
+      "summary": "Flowers, pollination, double fertilisation, seeds and fruits, dispersal and germination.",
+      "requires": [
+        "plant-biology/plant-responses"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "ecology"
+  ]
+}

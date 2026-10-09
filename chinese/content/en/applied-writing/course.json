@@ -1,0 +1,94 @@
+{
+  "slug": "applied-writing",
+  "title": "Practical Writing",
+  "full_title": "Practical and Official Writing",
+  "area": "writing",
+  "level": 3,
+  "order": 240,
+  "tagline": "What practical writing is, letters and notes, official documents and their format, notices, reports and requests, official letters and minutes, plans, summaries and investigation reports, news writing, applications and personal statements, and writing for the screen",
+  "summary": "Most of what educated people write at work is practical writing, with its own conventions and, for official documents in China, a national standard. This course covers letters and notes, the types and format of official documents, notices, reports, requests, official letters and minutes, plans, summaries and investigation reports, news writing, application letters and personal statements, and writing for websites and social media.",
+  "overview": [],
+  "prerequisites": [
+    "foundations-of-writing"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "practical-writing",
+      "title": "What practical writing is",
+      "summary": "Purpose, reader and format, and the qualities of good practical writing: accuracy, clarity, brevity and courtesy.",
+      "requires": [
+        "foundations-of-writing/language-punctuation"
+      ]
+    },
+    {
+      "slug": "letters-notes",
+      "title": "Letters and notes",
+      "summary": "Personal and formal letters, forms of address and closing courtesies, and receipts, IOUs and requests for leave.",
+      "requires": [
+        "applied-writing/practical-writing"
+      ]
+    },
+    {
+      "slug": "official-format",
+      "title": "Official documents and their format",
+      "summary": "The fifteen types of official document and the format laid down in GB/T 9704—2012.",
+      "requires": [
+        "applied-writing/letters-notes"
+      ]
+    },
+    {
+      "slug": "notices-reports",
+      "title": "Notices, reports and requests",
+      "summary": "Writing notices, reports and requests for instructions, and the difference between a report and a request.",
+      "requires": [
+        "applied-writing/official-format"
+      ]
+    },
+    {
+      "slug": "letters-minutes",
+      "title": "Official letters and minutes",
+      "summary": "Letters between offices, minutes of meetings, and their language.",
+      "requires": [
+        "applied-writing/notices-reports"
+      ]
+    },
+    {
+      "slug": "plans-summaries",
+      "title": "Plans, summaries and investigation reports",
+      "summary": "Plans, work summaries and investigation reports, and how to make them specific rather than vague.",
+      "requires": [
+        "applied-writing/practical-writing"
+      ]
+    },
+    {
+      "slug": "news-writing",
+      "title": "News writing",
+      "summary": "The news story and the inverted pyramid, headlines and leads, and the feature story.",
+      "requires": [
+        "applied-writing/practical-writing"
+      ]
+    },
+    {
+      "slug": "applications",
+      "title": "Applications and personal statements",
+      "summary": "CVs, cover letters and personal statements for study, and honesty in presenting oneself.",
+      "requires": [
+        "applied-writing/letters-notes"
+      ]
+    },
+    {
+      "slug": "new-media",
+      "title": "Writing for the screen",
+      "summary": "Writing for websites, public accounts and social media: headlines, length, structure and responsibility.",
+      "requires": [
+        "applied-writing/news-writing"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "academic-writing"
+  ]
+}

@@ -35,6 +35,9 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
 .card dt { font-size: 1.5rem; font-weight: 700; font-stretch: 110%; font-variant-numeric: tabular-nums; }
 .card dd { margin: 0; font-size: 0.8125rem; color: var(--ink-3); }
 .card .open { font-weight: 700; color: var(--accent); }
+.group { margin: 64px 0 0; padding-top: 28px; border-top: 1px solid var(--rule); }
+.group h2 { margin: 0; font-stretch: 118%; font-weight: 800; font-size: clamp(1.6rem, 3.4vw, 2.3rem); letter-spacing: -0.01em; line-height: 1.1; }
+.group p { color: var(--ink-2); max-width: 64ch; margin: 10px 0 0; }
 .foot { color: var(--ink-3); font-size: 0.875rem; margin: 36px 0 60px; }
 :lang(zh) body { line-height: 1.75; }
 :lang(zh) .intro h1 { letter-spacing: 0.02em; line-height: 1.1; }

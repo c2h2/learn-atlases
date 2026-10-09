@@ -1,0 +1,98 @@
+{
+  "slug": "population-genetics",
+  "title": "Population Genetics",
+  "full_title": "Population and Quantitative Genetics",
+  "area": "genetics",
+  "level": 2,
+  "order": 120,
+  "tagline": "Hardy–Weinberg equilibrium, selection, drift, mutation and migration, inbreeding, linkage disequilibrium, molecular evolution and quantitative traits",
+  "summary": "Population genetics turns Mendel’s laws into a quantitative theory of evolution. This course builds the classical models — Hardy–Weinberg equilibrium, selection, genetic drift, mutation, migration and inbreeding — then connects them to DNA sequence data through linkage disequilibrium and the neutral theory, and to continuous traits through heritability and the response to selection.",
+  "overview": [],
+  "prerequisites": [
+    "genetics",
+    "evolution"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "hardy-weinberg",
+      "title": "Genetic variation and Hardy–Weinberg equilibrium",
+      "summary": "Measuring variation, allele and genotype frequencies, and the null model of a population that is not evolving.",
+      "requires": [
+        "genetics/mendelian-inheritance",
+        "evolution/mutation-drift-gene-flow"
+      ]
+    },
+    {
+      "slug": "selection-models",
+      "title": "Natural selection in populations",
+      "summary": "Fitness, selection coefficients, dominance and the dynamics of allele frequencies under selection.",
+      "requires": [
+        "population-genetics/hardy-weinberg"
+      ]
+    },
+    {
+      "slug": "genetic-drift",
+      "title": "Genetic drift and effective population size",
+      "summary": "The Wright–Fisher model, fixation probabilities, coalescence and the effective population size.",
+      "requires": [
+        "population-genetics/hardy-weinberg"
+      ]
+    },
+    {
+      "slug": "mutation-migration",
+      "title": "Mutation, migration and population structure",
+      "summary": "Mutation–selection balance, gene flow, the island model and F-statistics.",
+      "requires": [
+        "population-genetics/genetic-drift"
+      ]
+    },
+    {
+      "slug": "inbreeding",
+      "title": "Inbreeding and non-random mating",
+      "summary": "The inbreeding coefficient, assortative mating and inbreeding depression.",
+      "requires": [
+        "population-genetics/hardy-weinberg"
+      ]
+    },
+    {
+      "slug": "linkage-disequilibrium",
+      "title": "Linkage disequilibrium",
+      "summary": "Associations between loci, how recombination breaks them down, and what they reveal about population history.",
+      "requires": [
+        "population-genetics/mutation-migration",
+        "genetics/linkage-mapping"
+      ]
+    },
+    {
+      "slug": "neutral-theory",
+      "title": "Molecular evolution and the neutral theory",
+      "summary": "The molecular clock, rates of substitution and tests for selection in DNA sequences.",
+      "requires": [
+        "population-genetics/genetic-drift",
+        "population-genetics/selection-models"
+      ]
+    },
+    {
+      "slug": "quantitative-traits",
+      "title": "Quantitative traits",
+      "summary": "Polygenic inheritance, genetic and environmental variance, and heritability.",
+      "requires": [
+        "population-genetics/hardy-weinberg"
+      ]
+    },
+    {
+      "slug": "response-to-selection",
+      "title": "The response to selection",
+      "summary": "The breeder’s equation, artificial selection and correlated responses.",
+      "requires": [
+        "population-genetics/quantitative-traits"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "genomics"
+  ]
+}

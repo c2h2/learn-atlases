@@ -1,0 +1,100 @@
+{
+  "slug": "biogeochemistry",
+  "title": "Biogeochemistry",
+  "full_title": "Biogeochemical Cycles",
+  "area": "history",
+  "level": 3,
+  "order": 190,
+  "tagline": "Element budgets and redox, photosynthesis and decomposition, the carbon cycle on short and long timescales, nitrogen, phosphorus and sulfur, soils, wetlands, the ocean and oxygen",
+  "summary": "Life, rocks, water and air exchange elements in cycles that keep the planet habitable. This course covers the principles of biogeochemistry, primary production and decomposition, the carbon cycle from years to millions of years, the nitrogen, phosphorus and sulfur cycles, the processing of elements in soils, wetlands, inland waters and the ocean, the regulation of atmospheric oxygen through Earth history, and the human transformation of these cycles.",
+  "overview": [],
+  "prerequisites": [
+    "geochemistry",
+    "earth-system"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "principles",
+      "title": "Principles of biogeochemistry",
+      "summary": "Element budgets, the stoichiometry of life, redox reactions and mass balance in biogeochemical cycles.",
+      "requires": [
+        "earth-system/reservoirs-fluxes",
+        "geochemistry/aqueous-geochemistry"
+      ]
+    },
+    {
+      "slug": "production-decomposition",
+      "title": "Photosynthesis, respiration and decomposition",
+      "summary": "Primary production, the fate of organic matter, and the energy that drives element cycles.",
+      "requires": [
+        "biogeochemistry/principles"
+      ]
+    },
+    {
+      "slug": "carbon-today",
+      "title": "The contemporary carbon cycle",
+      "summary": "Carbon in the atmosphere, on land, in the ocean and in fossil reservoirs, and the fluxes between them today.",
+      "requires": [
+        "biogeochemistry/production-decomposition",
+        "earth-system/carbon-cycle"
+      ]
+    },
+    {
+      "slug": "carbon-deep-time",
+      "title": "The long-term carbon cycle",
+      "summary": "Silicate weathering, carbonate and organic-carbon burial, volcanic degassing, and the thermostat that regulates carbon dioxide over millions of years.",
+      "requires": [
+        "biogeochemistry/carbon-today",
+        "geochemistry/weathering-chemistry"
+      ]
+    },
+    {
+      "slug": "nitrogen",
+      "title": "The nitrogen cycle",
+      "summary": "Nitrogen fixation, nitrification and denitrification, and how industry and agriculture have roughly doubled the supply of reactive nitrogen.",
+      "requires": [
+        "biogeochemistry/principles"
+      ]
+    },
+    {
+      "slug": "phosphorus-sulfur",
+      "title": "The phosphorus and sulfur cycles",
+      "summary": "Phosphorus as a long-term limiting nutrient, and sulfur from volcanoes, the ocean, microbes and fuels.",
+      "requires": [
+        "biogeochemistry/principles"
+      ]
+    },
+    {
+      "slug": "soils-wetlands",
+      "title": "Soils, wetlands and inland waters",
+      "summary": "Soil organic matter, wetland methane, and the processing of carbon and nutrients by rivers and lakes.",
+      "requires": [
+        "biogeochemistry/carbon-today",
+        "biogeochemistry/nitrogen"
+      ]
+    },
+    {
+      "slug": "ocean-cycles",
+      "title": "The ocean in global element cycles",
+      "summary": "How marine production, export and burial couple the ocean to the global carbon, nutrient and oxygen cycles.",
+      "requires": [
+        "biogeochemistry/carbon-today"
+      ]
+    },
+    {
+      "slug": "oxygen",
+      "title": "Oxygen and the coupled cycles",
+      "summary": "How atmospheric oxygen is regulated, its rise through Earth history, and the coupling of the carbon, sulfur and oxygen cycles.",
+      "requires": [
+        "biogeochemistry/carbon-deep-time",
+        "biogeochemistry/phosphorus-sulfur"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "climate-change"
+  ]
+}

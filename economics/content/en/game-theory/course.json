@@ -1,0 +1,99 @@
+{
+  "slug": "game-theory",
+  "title": "Game Theory",
+  "full_title": "Game Theory",
+  "area": "strategy",
+  "level": 2,
+  "order": 70,
+  "tagline": "Strategic-form games and dominance, Nash equilibrium, mixed strategies, continuous games, extensive-form games and subgame perfection, bargaining, repeated games, Bayesian games and signalling",
+  "summary": "Game theory is the mathematics of strategic interaction: situations in which each decision-maker’s best choice depends on what the others do. This course develops the core solution concepts — dominance, Nash equilibrium in pure and mixed strategies, subgame-perfect equilibrium, and equilibria of repeated and Bayesian games — and applies them to coordination, the commons, bargaining, cooperation, auctions and signalling.",
+  "overview": [],
+  "prerequisites": [
+    "principles",
+    "mathematical-economics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "strategic-games",
+      "title": "Strategic-form games and dominance",
+      "summary": "Players, strategies and payoffs, dominant and dominated strategies, and iterated elimination of dominated strategies.",
+      "requires": [
+        "principles/thinking-like-an-economist"
+      ]
+    },
+    {
+      "slug": "nash-equilibrium",
+      "title": "Nash equilibrium",
+      "summary": "Best responses, Nash equilibrium in pure strategies, and applications to coordination, conflict and the provision of public goods.",
+      "requires": [
+        "game-theory/strategic-games"
+      ]
+    },
+    {
+      "slug": "mixed-strategies",
+      "title": "Mixed strategies",
+      "summary": "Randomised strategies, the indifference principle, the existence of equilibrium, and zero-sum games with the minimax theorem.",
+      "requires": [
+        "game-theory/nash-equilibrium"
+      ]
+    },
+    {
+      "slug": "continuous-games",
+      "title": "Games with continuous strategies",
+      "summary": "Best-response functions with continuous actions, existence by fixed points, and applications to location, contests and the tragedy of the commons.",
+      "requires": [
+        "game-theory/nash-equilibrium",
+        "mathematical-economics/unconstrained-optimisation"
+      ]
+    },
+    {
+      "slug": "extensive-form",
+      "title": "Extensive-form games and backward induction",
+      "summary": "Game trees, strategies in sequential games, backward induction and subgame-perfect equilibrium.",
+      "requires": [
+        "game-theory/nash-equilibrium"
+      ]
+    },
+    {
+      "slug": "bargaining",
+      "title": "Bargaining",
+      "summary": "The Nash bargaining solution and Rubinstein’s model of alternating offers.",
+      "requires": [
+        "game-theory/extensive-form"
+      ]
+    },
+    {
+      "slug": "repeated-games",
+      "title": "Repeated games and cooperation",
+      "summary": "Finitely and infinitely repeated games, trigger strategies, the folk theorem and when cooperation can be sustained.",
+      "requires": [
+        "game-theory/extensive-form"
+      ]
+    },
+    {
+      "slug": "bayesian-games",
+      "title": "Games of incomplete information",
+      "summary": "Types and beliefs, Bayesian Nash equilibrium, and applications to auctions and voluntary contributions.",
+      "requires": [
+        "game-theory/mixed-strategies"
+      ]
+    },
+    {
+      "slug": "signalling",
+      "title": "Perfect Bayesian equilibrium and signalling",
+      "summary": "Beliefs on and off the equilibrium path, signalling games, pooling and separating equilibria, and cheap talk.",
+      "requires": [
+        "game-theory/bayesian-games",
+        "game-theory/extensive-form"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "industrial-organisation",
+    "information-economics",
+    "market-design"
+  ]
+}

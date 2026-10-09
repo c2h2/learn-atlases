@@ -1,0 +1,107 @@
+{
+  "slug": "linguistics",
+  "title": "Introduction to Linguistics",
+  "full_title": "Introduction to Linguistics",
+  "area": "language",
+  "level": 3,
+  "order": 210,
+  "tagline": "Language and linguistics, the nature of language, phonetics and phonology, morphology, syntax, semantics, pragmatics, language and society, language change, and the languages of the world and of China",
+  "summary": "Linguistics studies human language in general, and seeing Chinese as one language among thousands changes how a native speaker understands it. This course introduces the nature of language and the core fields of linguistics — phonetics and phonology, morphology, syntax, semantics and pragmatics — with examples from Chinese and other languages, and then turns to language in society, how languages change, and the languages of the world and of China.",
+  "overview": [],
+  "prerequisites": [
+    "sounds-of-mandarin",
+    "modern-grammar"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "language-and-linguistics",
+      "title": "Language and linguistics",
+      "summary": "What linguistics studies, description and prescription, and the history of the discipline from traditional philology to Saussure and Chomsky.",
+      "requires": [
+        "modern-grammar/what-is-grammar"
+      ]
+    },
+    {
+      "slug": "nature-of-language",
+      "title": "The nature of language",
+      "summary": "Language as a system of signs, arbitrariness and linearity, language and thought, and human language compared with animal communication.",
+      "requires": [
+        "linguistics/language-and-linguistics"
+      ]
+    },
+    {
+      "slug": "phonetics-phonology",
+      "title": "Phonetics and phonology",
+      "summary": "The International Phonetic Alphabet, phonemes and allophones, distinctive features, and syllables and tones in the languages of the world.",
+      "requires": [
+        "linguistics/nature-of-language",
+        "sounds-of-mandarin/speech-sounds"
+      ]
+    },
+    {
+      "slug": "morphology",
+      "title": "Morphology",
+      "summary": "Morphemes and words, inflection and derivation, and isolating, agglutinative and fusional languages.",
+      "requires": [
+        "linguistics/nature-of-language"
+      ]
+    },
+    {
+      "slug": "syntax",
+      "title": "Syntax",
+      "summary": "Constituents and hierarchy, the typology of word order, and the main approaches to syntax.",
+      "requires": [
+        "linguistics/morphology",
+        "modern-grammar/phrases"
+      ]
+    },
+    {
+      "slug": "semantics",
+      "title": "Semantics",
+      "summary": "Lexical meaning, componential analysis, sentence meaning, presupposition and entailment.",
+      "requires": [
+        "linguistics/syntax"
+      ]
+    },
+    {
+      "slug": "pragmatics",
+      "title": "Pragmatics",
+      "summary": "Deixis, speech acts, the cooperative principle and politeness.",
+      "requires": [
+        "linguistics/semantics"
+      ]
+    },
+    {
+      "slug": "language-society",
+      "title": "Language and society",
+      "summary": "Varieties, standard languages, bilingualism, language contact, and language policy in China.",
+      "requires": [
+        "linguistics/pragmatics"
+      ]
+    },
+    {
+      "slug": "language-change",
+      "title": "Language change",
+      "summary": "Sound change, grammaticalisation and lexical change, and the comparative method.",
+      "requires": [
+        "linguistics/phonetics-phonology",
+        "linguistics/morphology"
+      ]
+    },
+    {
+      "slug": "languages-of-china",
+      "title": "Languages of the world and of China",
+      "summary": "Language families and typology, and the languages spoken in China and the families they are usually assigned to: Sino-Tibetan, Altaic, Austroasiatic, Austronesian, Indo-European and others.",
+      "requires": [
+        "linguistics/language-change"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "dialects",
+    "history-of-chinese"
+  ]
+}

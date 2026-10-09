@@ -1,0 +1,96 @@
+{
+  "slug": "atmospheric-chemistry",
+  "title": "Atmospheric Chemistry",
+  "full_title": "Atmospheric Chemistry and Air Quality",
+  "area": "atmosphere",
+  "level": 3,
+  "order": 160,
+  "tagline": "Trace gases and lifetimes, transport, photochemistry, stratospheric ozone, the oxidising power of the troposphere, smog, aerosols, acid deposition and air quality",
+  "summary": "Trace gases and particles are a tiny fraction of the air but control its chemistry, the ozone layer, air quality and part of the climate. This course covers the sources, sinks and lifetimes of trace gases, atmospheric transport, kinetics and photochemistry, stratospheric ozone and its depletion, the hydroxyl radical and tropospheric oxidation, ozone and smog near the ground, aerosols, acid deposition, and the science behind air-quality monitoring and regulation.",
+  "overview": [],
+  "prerequisites": [
+    "meteorology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "trace-gases",
+      "title": "Trace gases, sources and lifetimes",
+      "summary": "Mixing ratios, box models, lifetimes and the global budgets of trace gases.",
+      "requires": [
+        "meteorology/atmosphere-structure"
+      ]
+    },
+    {
+      "slug": "transport",
+      "title": "Atmospheric transport",
+      "summary": "How winds, convection and turbulence mix gases between regions, between the hemispheres and into the stratosphere.",
+      "requires": [
+        "atmospheric-chemistry/trace-gases",
+        "meteorology/winds"
+      ]
+    },
+    {
+      "slug": "photochemistry",
+      "title": "Kinetics and photochemistry",
+      "summary": "Reaction rates, photolysis and the radical chain reactions that drive atmospheric chemistry.",
+      "requires": [
+        "atmospheric-chemistry/trace-gases"
+      ]
+    },
+    {
+      "slug": "stratospheric-ozone",
+      "title": "Stratospheric ozone",
+      "summary": "The Chapman mechanism, catalytic cycles, the Antarctic ozone hole and the Montreal Protocol.",
+      "requires": [
+        "atmospheric-chemistry/photochemistry"
+      ]
+    },
+    {
+      "slug": "oxidising-power",
+      "title": "The oxidising power of the troposphere",
+      "summary": "The hydroxyl radical, the oxidation of methane and carbon monoxide, and how the atmosphere cleans itself.",
+      "requires": [
+        "atmospheric-chemistry/photochemistry"
+      ]
+    },
+    {
+      "slug": "tropospheric-ozone",
+      "title": "Ozone and smog near the ground",
+      "summary": "Nitrogen oxides, volatile organic compounds and the photochemical production of ozone.",
+      "requires": [
+        "atmospheric-chemistry/oxidising-power"
+      ]
+    },
+    {
+      "slug": "aerosols",
+      "title": "Aerosols",
+      "summary": "The sources, size distributions and chemistry of atmospheric particles, and their effects on health, clouds and climate.",
+      "requires": [
+        "atmospheric-chemistry/trace-gases"
+      ]
+    },
+    {
+      "slug": "acid-deposition",
+      "title": "Acid deposition",
+      "summary": "Sulfur and nitrogen oxides, the chemistry of acid rain, and its effects on soils, waters and forests.",
+      "requires": [
+        "atmospheric-chemistry/oxidising-power"
+      ]
+    },
+    {
+      "slug": "air-quality",
+      "title": "Air quality and its management",
+      "summary": "Pollutants and health, monitoring networks, air-quality standards and the science behind emission controls.",
+      "requires": [
+        "atmospheric-chemistry/tropospheric-ozone",
+        "atmospheric-chemistry/aerosols"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "climate-change"
+  ]
+}

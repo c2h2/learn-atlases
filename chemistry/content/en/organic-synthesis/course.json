@@ -1,0 +1,98 @@
+{
+  "slug": "organic-synthesis",
+  "title": "Organic Synthesis",
+  "full_title": "Advanced Organic Synthesis",
+  "area": "organic",
+  "level": 3,
+  "order": 160,
+  "tagline": "Retrosynthesis, determining mechanisms, oxidation and reduction, protecting groups, C–C bond formation, pericyclic reactions, stereoselectivity and total synthesis",
+  "summary": "Synthesis is the art of making molecules by design. This course teaches retrosynthetic planning and the evidence used to establish mechanisms, then the main tools of the synthetic chemist — selective oxidation and reduction, protecting groups, carbon–carbon bond formation, pericyclic reactions and stereoselective methods — and studies how they come together in total synthesis.",
+  "overview": [],
+  "prerequisites": [
+    "organic-2"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "retrosynthesis",
+      "title": "Retrosynthetic analysis",
+      "summary": "Disconnections and synthons, functional-group interconversion, and choosing between routes.",
+      "requires": [
+        "organic-2/condensations"
+      ]
+    },
+    {
+      "slug": "mechanism-determination",
+      "title": "Determining reaction mechanisms",
+      "summary": "Kinetic evidence, isotope labelling and isotope effects, Hammett correlations, trapping intermediates and stereochemical probes.",
+      "requires": [
+        "organic-2/aromatic-substitution"
+      ]
+    },
+    {
+      "slug": "redox-in-synthesis",
+      "title": "Oxidation and reduction in synthesis",
+      "summary": "Chemoselective oxidants and reductants, and choosing reagents for functional-group interconversions.",
+      "requires": [
+        "organic-synthesis/retrosynthesis"
+      ]
+    },
+    {
+      "slug": "protecting-groups",
+      "title": "Protecting groups",
+      "summary": "Protecting alcohols, amines and carbonyl groups, and orthogonal protection strategies.",
+      "requires": [
+        "organic-synthesis/retrosynthesis"
+      ]
+    },
+    {
+      "slug": "carbon-carbon-bonds",
+      "title": "Forming carbon–carbon bonds",
+      "summary": "Organometallic additions, the Wittig reaction and related olefinations, enolate chemistry and cross-coupling in synthesis.",
+      "requires": [
+        "organic-synthesis/retrosynthesis",
+        "organic-2/enols-enolates"
+      ]
+    },
+    {
+      "slug": "pericyclic",
+      "title": "Pericyclic reactions",
+      "summary": "Cycloadditions such as the Diels–Alder reaction, electrocyclic reactions and sigmatropic rearrangements, and the Woodward–Hoffmann rules.",
+      "requires": [
+        "organic-2/conjugation"
+      ]
+    },
+    {
+      "slug": "stereoselective-synthesis",
+      "title": "Stereoselective synthesis",
+      "summary": "Diastereoselective reactions and the Felkin–Anh model, the chiral pool, chiral auxiliaries and asymmetric catalysis.",
+      "requires": [
+        "organic-synthesis/carbon-carbon-bonds",
+        "organic-1/stereochemistry"
+      ]
+    },
+    {
+      "slug": "rearrangements-radicals",
+      "title": "Rearrangements, carbenes and radicals in synthesis",
+      "summary": "Cationic rearrangements, carbenes and nitrenes, and radical cyclisations as synthetic tools.",
+      "requires": [
+        "organic-synthesis/mechanism-determination",
+        "organic-1/radical-reactions"
+      ]
+    },
+    {
+      "slug": "total-synthesis",
+      "title": "Strategy in total synthesis",
+      "summary": "Convergent and linear strategies, step economy, and case studies of landmark syntheses of natural products.",
+      "requires": [
+        "organic-synthesis/stereoselective-synthesis",
+        "organic-synthesis/protecting-groups"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "medicinal-chemistry"
+  ]
+}

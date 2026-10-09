@@ -1,0 +1,99 @@
+{
+  "slug": "propulsion",
+  "title": "Propulsion",
+  "full_title": "Aircraft and Rocket Propulsion",
+  "area": "aerospace",
+  "level": 3,
+  "order": 180,
+  "tagline": "Thrust and efficiency, gas-turbine cycles, inlets and nozzles, compressors, turbines and combustors, propellers, and rocket propulsion",
+  "summary": "Propulsion systems produce the thrust that moves aircraft and spacecraft. The course derives thrust and efficiencies from momentum and energy balances, analyses turbojet, turbofan, turboprop and ramjet cycles and their components — inlets, nozzles, compressors, combustors and turbines — and treats propellers and, at textbook level, rocket propulsion: the rocket equation, nozzle performance and chemical and electric rockets.",
+  "overview": [],
+  "prerequisites": [
+    "thermodynamics",
+    "fluid-mechanics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "thrust-efficiency",
+      "title": "Thrust and propulsive efficiency",
+      "summary": "Thrust from a momentum balance, specific fuel consumption and specific impulse, and thermal, propulsive and overall efficiencies.",
+      "requires": [
+        "fluid-mechanics/control-volume-analysis",
+        "thermodynamics/power-cycles"
+      ]
+    },
+    {
+      "slug": "gas-turbine-cycles",
+      "title": "Gas-turbine engine cycles",
+      "summary": "Ideal and real cycle analysis of turbojets, turbofans, turboprops and ramjets.",
+      "requires": [
+        "propulsion/thrust-efficiency"
+      ]
+    },
+    {
+      "slug": "inlets-nozzles",
+      "title": "Inlets and nozzles",
+      "summary": "Subsonic and supersonic inlets, convergent and convergent–divergent nozzles, and their losses.",
+      "requires": [
+        "propulsion/gas-turbine-cycles",
+        "fluid-mechanics/compressible-flow"
+      ]
+    },
+    {
+      "slug": "compressors",
+      "title": "Compressors",
+      "summary": "Velocity triangles and the Euler turbomachinery equation, axial and centrifugal compressors, stage loading, stall and surge.",
+      "requires": [
+        "propulsion/gas-turbine-cycles"
+      ]
+    },
+    {
+      "slug": "turbines",
+      "title": "Turbines",
+      "summary": "Axial turbine stages, blade loading and cooling, and matching the turbine to the compressor.",
+      "requires": [
+        "propulsion/compressors"
+      ]
+    },
+    {
+      "slug": "combustors",
+      "title": "Combustors",
+      "summary": "Combustion chamber design, flame stabilisation, combustion efficiency and pollutant emissions.",
+      "requires": [
+        "propulsion/gas-turbine-cycles",
+        "thermodynamics/mixtures-combustion"
+      ]
+    },
+    {
+      "slug": "propellers",
+      "title": "Propellers",
+      "summary": "Momentum and blade-element theories of propellers, propeller efficiency, and the choice between propellers and fans.",
+      "requires": [
+        "propulsion/thrust-efficiency"
+      ]
+    },
+    {
+      "slug": "rocket-fundamentals",
+      "title": "Rocket propulsion fundamentals",
+      "summary": "The rocket equation and staging, the thrust coefficient and characteristic velocity of rocket nozzles.",
+      "requires": [
+        "propulsion/thrust-efficiency",
+        "propulsion/inlets-nozzles"
+      ]
+    },
+    {
+      "slug": "rocket-engines",
+      "title": "Chemical and electric rockets",
+      "summary": "Liquid, solid and hybrid rocket engines and electric propulsion, compared at the level of performance and system design.",
+      "requires": [
+        "propulsion/rocket-fundamentals"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "orbital-mechanics"
+  ]
+}

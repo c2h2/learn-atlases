@@ -1,0 +1,106 @@
+{
+  "slug": "reading-literature",
+  "title": "Reading Literature",
+  "full_title": "Reading Literature in English",
+  "area": "reading",
+  "level": 4,
+  "order": 220,
+  "tagline": "Close reading, narrative and point of view, the short story, the novel, metre and rhythm, poetic forms, figurative language, drama and Shakespeare, literary periods, and writing about literature",
+  "summary": "Reading literature in English rewards attention to how something is said as well as to what is said. Using texts in the public domain, this course teaches close reading, narrative and point of view, the short story and the novel, metre, rhythm and poetic form, figurative language, reading Shakespeare and other drama, a map of literary periods from Chaucer to the modernists, and how to write about literature.",
+  "overview": [],
+  "prerequisites": [
+    "academic-reading",
+    "collocation-and-register"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "close-reading",
+      "title": "Close reading",
+      "summary": "Reading slowly and annotating, noticing word choice, sound and structure, and asking what effect they have.",
+      "requires": [
+        "academic-reading/strategic-reading"
+      ]
+    },
+    {
+      "slug": "narrative",
+      "title": "Narrative and point of view",
+      "summary": "Plot, character, setting, narrators and point of view, including free indirect style.",
+      "requires": [
+        "reading-literature/close-reading"
+      ]
+    },
+    {
+      "slug": "short-story",
+      "title": "The short story",
+      "summary": "How short stories work, with public-domain stories by writers such as Edgar Allan Poe, Kate Chopin, Katherine Mansfield and James Joyce.",
+      "requires": [
+        "reading-literature/narrative"
+      ]
+    },
+    {
+      "slug": "the-novel",
+      "title": "The novel",
+      "summary": "Reading a novel, with passages from Austen, Dickens, the Brontës, George Eliot and Hardy, and how the English novel developed.",
+      "requires": [
+        "reading-literature/narrative"
+      ]
+    },
+    {
+      "slug": "metre-rhythm",
+      "title": "Metre and rhythm",
+      "summary": "Stress in verse, iambic pentameter and other metres, and how to scan a line.",
+      "requires": [
+        "reading-literature/close-reading"
+      ]
+    },
+    {
+      "slug": "poetic-forms",
+      "title": "Poetic forms",
+      "summary": "The sonnet, the ballad, blank verse and free verse, with poems by Shakespeare, Wordsworth, Dickinson and others.",
+      "requires": [
+        "reading-literature/metre-rhythm"
+      ]
+    },
+    {
+      "slug": "figurative-language",
+      "title": "Figurative language and imagery",
+      "summary": "Metaphor, simile, symbol and imagery in poetry and prose.",
+      "requires": [
+        "reading-literature/close-reading"
+      ]
+    },
+    {
+      "slug": "drama-shakespeare",
+      "title": "Drama and Shakespeare",
+      "summary": "Reading plays, the language of Shakespeare’s time, and how to approach a scene.",
+      "requires": [
+        "reading-literature/poetic-forms"
+      ]
+    },
+    {
+      "slug": "literary-periods",
+      "title": "Literary periods",
+      "summary": "A map of English literature from Chaucer to the modernists, and where the major writers fit.",
+      "requires": [
+        "reading-literature/the-novel",
+        "reading-literature/drama-shakespeare"
+      ]
+    },
+    {
+      "slug": "writing-about-literature",
+      "title": "Writing about literature",
+      "summary": "Literary essays: making an argument about a text and supporting it with quotation and analysis.",
+      "requires": [
+        "reading-literature/figurative-language",
+        "reading-literature/literary-periods"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "history-of-english",
+    "style-and-rhetoric"
+  ]
+}

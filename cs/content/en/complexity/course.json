@@ -1,0 +1,98 @@
+{
+  "slug": "complexity",
+  "title": "Computational Complexity",
+  "full_title": "Computational Complexity",
+  "area": "theory",
+  "level": 3,
+  "order": 130,
+  "tagline": "Time complexity, P and NP, NP-completeness, coping with intractability, space complexity, the polynomial hierarchy, randomised computation and the PCP theorem",
+  "summary": "Complexity theory asks which problems can be solved efficiently, and gives strong evidence that many cannot. This course defines time and space complexity classes, develops the theory of NP-completeness through polynomial-time reductions, surveys ways of coping with intractable problems, and studies space-bounded, randomised and approximate computation, ending with the PCP theorem and the hardness of approximation.",
+  "overview": [],
+  "prerequisites": [
+    "algorithms",
+    "theory-of-computation"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "time-complexity",
+      "title": "Time complexity and the class P",
+      "summary": "Measuring time on Turing machines, polynomial time and why the class P is robust.",
+      "requires": [
+        "theory-of-computation/turing-machines",
+        "algorithms/correctness-recurrences"
+      ]
+    },
+    {
+      "slug": "np",
+      "title": "The class NP",
+      "summary": "Nondeterministic time, verifiers and certificates, and the P versus NP question.",
+      "requires": [
+        "complexity/time-complexity"
+      ]
+    },
+    {
+      "slug": "np-completeness",
+      "title": "NP-completeness and the Cook–Levin theorem",
+      "summary": "Polynomial-time reductions, NP-hardness and the NP-completeness of satisfiability.",
+      "requires": [
+        "complexity/np"
+      ]
+    },
+    {
+      "slug": "np-complete-problems",
+      "title": "A catalogue of NP-complete problems",
+      "summary": "Reductions to 3-SAT, clique, vertex cover, Hamiltonian cycle, subset sum and graph colouring.",
+      "requires": [
+        "complexity/np-completeness"
+      ]
+    },
+    {
+      "slug": "coping-with-hardness",
+      "title": "Coping with intractability",
+      "summary": "Exact exponential algorithms, fixed-parameter tractability, SAT solvers and heuristics.",
+      "requires": [
+        "complexity/np-complete-problems"
+      ]
+    },
+    {
+      "slug": "space-complexity",
+      "title": "Space complexity",
+      "summary": "PSPACE, Savitch’s theorem, PSPACE-completeness and logarithmic space.",
+      "requires": [
+        "complexity/np-completeness"
+      ]
+    },
+    {
+      "slug": "hierarchies",
+      "title": "Hierarchy theorems and the polynomial hierarchy",
+      "summary": "Time and space hierarchy theorems, oracles and relativisation, and the polynomial hierarchy.",
+      "requires": [
+        "complexity/space-complexity"
+      ]
+    },
+    {
+      "slug": "randomised-complexity",
+      "title": "Randomised computation",
+      "summary": "Probabilistic Turing machines, the classes BPP, RP and ZPP, and derandomisation.",
+      "requires": [
+        "complexity/np",
+        "algorithms/randomised-algorithms"
+      ]
+    },
+    {
+      "slug": "approximation-pcp",
+      "title": "Approximation and the PCP theorem",
+      "summary": "Approximation algorithms and ratios, the PCP theorem and the hardness of approximation.",
+      "requires": [
+        "complexity/np-complete-problems"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "cryptography",
+    "quantum-computing"
+  ]
+}

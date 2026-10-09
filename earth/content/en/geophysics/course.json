@@ -1,0 +1,96 @@
+{
+  "slug": "geophysics",
+  "title": "Geophysics",
+  "full_title": "Geophysics: Seismology, Gravity and Magnetism",
+  "area": "solid",
+  "level": 3,
+  "order": 130,
+  "tagline": "Elastic waves, the seismic structure of the Earth, earthquake sources, gravity and isostasy, lithospheric flexure, geomagnetism, palaeomagnetism, heat flow and exploration methods",
+  "summary": "Geophysics measures the physical fields of the Earth to see inside it. This course covers elastic waves and the seismic structure of the Earth, earthquake sources and magnitudes, gravity, the geoid and isostasy, the flexure of the lithosphere, the geomagnetic field and palaeomagnetism, heat flow and mantle convection, and the geophysical methods used to image the shallow subsurface.",
+  "overview": [],
+  "prerequisites": [
+    "structural-geology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "elastic-waves",
+      "title": "Elastic waves",
+      "summary": "Elasticity, P and S waves, surface waves and the wave equation in solids.",
+      "requires": [
+        "structural-geology/strain"
+      ]
+    },
+    {
+      "slug": "seismic-structure",
+      "title": "The seismic structure of the Earth",
+      "summary": "Ray paths and travel-time curves, reflection and refraction, and layered models of the Earth.",
+      "requires": [
+        "geophysics/elastic-waves",
+        "physical-geology/earth-interior"
+      ]
+    },
+    {
+      "slug": "earthquake-sources",
+      "title": "Earthquake sources",
+      "summary": "Fault slip, focal mechanisms, seismic moment and magnitude scales, and the statistics of earthquakes.",
+      "requires": [
+        "geophysics/elastic-waves",
+        "structural-geology/fractures-faults"
+      ]
+    },
+    {
+      "slug": "gravity-isostasy",
+      "title": "Gravity and isostasy",
+      "summary": "The figure of the Earth, the geoid, gravity anomalies and how topography is supported.",
+      "requires": []
+    },
+    {
+      "slug": "flexure",
+      "title": "Flexure and the strength of the lithosphere",
+      "summary": "The bending of elastic plates under seamounts, ice sheets and mountain belts, and post-glacial rebound.",
+      "requires": [
+        "geophysics/gravity-isostasy",
+        "structural-geology/rheology"
+      ]
+    },
+    {
+      "slug": "geomagnetism",
+      "title": "The geomagnetic field",
+      "summary": "The dipole field and its variations, the geodynamo and magnetic reversals.",
+      "requires": []
+    },
+    {
+      "slug": "palaeomagnetism",
+      "title": "Palaeomagnetism",
+      "summary": "Rock magnetism, apparent polar wander, the magnetic anomalies of the seafloor and plate reconstructions.",
+      "requires": [
+        "geophysics/geomagnetism",
+        "physical-geology/plate-tectonics"
+      ]
+    },
+    {
+      "slug": "heat-flow",
+      "title": "Heat flow and mantle convection",
+      "summary": "Conduction and radiogenic heat, the cooling of oceanic lithosphere, and convection in the mantle.",
+      "requires": [
+        "physical-geology/plate-tectonics"
+      ]
+    },
+    {
+      "slug": "exploration",
+      "title": "Exploration geophysics",
+      "summary": "Seismic reflection surveys, and gravity, magnetic and electrical methods for imaging the shallow subsurface.",
+      "requires": [
+        "geophysics/seismic-structure",
+        "geophysics/gravity-isostasy"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "natural-hazards",
+    "planetary-science"
+  ]
+}

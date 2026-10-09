@@ -1,0 +1,96 @@
+{
+  "slug": "quantum-chemistry",
+  "title": "Quantum Chemistry",
+  "full_title": "Quantum Chemistry",
+  "area": "physical",
+  "level": 2,
+  "order": 70,
+  "tagline": "The Schrödinger equation, model systems, the hydrogen atom, many-electron atoms, approximation methods, the chemical bond, Hückel theory and symmetry",
+  "summary": "Quantum mechanics is the foundation of chemical structure and spectroscopy. This course develops the Schrödinger equation from first principles, solves the model systems behind translation, vibration and rotation, treats atoms and the approximation methods needed for molecules, and ends with the quantum description of the chemical bond, π systems and molecular symmetry.",
+  "overview": [],
+  "prerequisites": [
+    "bonding-structure"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "quantum-foundations",
+      "title": "The foundations of quantum mechanics",
+      "summary": "The failures of classical physics, the Schrödinger equation, wavefunctions and the Born interpretation, operators, observables and the uncertainty principle.",
+      "requires": [
+        "general-chemistry-1/quantum-atom"
+      ]
+    },
+    {
+      "slug": "model-systems",
+      "title": "Particles in boxes and on rings",
+      "summary": "Translational motion in one and more dimensions, tunnelling, the particle on a ring, and conjugated molecules as boxes for electrons.",
+      "requires": [
+        "quantum-chemistry/quantum-foundations"
+      ]
+    },
+    {
+      "slug": "vibration-rotation",
+      "title": "The harmonic oscillator and the rigid rotor",
+      "summary": "Vibrational energy levels and zero-point energy, angular momentum and the rotational levels of molecules.",
+      "requires": [
+        "quantum-chemistry/model-systems"
+      ]
+    },
+    {
+      "slug": "hydrogen-atom",
+      "title": "The hydrogen atom",
+      "summary": "Separating the Schrödinger equation for hydrogen, radial and angular wavefunctions, the shapes of orbitals and the spectrum of hydrogen.",
+      "requires": [
+        "quantum-chemistry/vibration-rotation"
+      ]
+    },
+    {
+      "slug": "many-electron-atoms",
+      "title": "Many-electron atoms",
+      "summary": "Electron spin, the Pauli principle, the orbital approximation, shielding and penetration, and term symbols.",
+      "requires": [
+        "quantum-chemistry/hydrogen-atom"
+      ]
+    },
+    {
+      "slug": "approximation-methods",
+      "title": "Variation and perturbation methods",
+      "summary": "The variation principle, linear variation functions and secular equations, and first- and second-order perturbation theory.",
+      "requires": [
+        "quantum-chemistry/hydrogen-atom"
+      ]
+    },
+    {
+      "slug": "chemical-bond-qm",
+      "title": "The chemical bond in quantum mechanics",
+      "summary": "The Born–Oppenheimer approximation, the hydrogen molecule-ion and the hydrogen molecule, and valence-bond and molecular-orbital wavefunctions.",
+      "requires": [
+        "quantum-chemistry/approximation-methods",
+        "bonding-structure/molecular-orbitals"
+      ]
+    },
+    {
+      "slug": "huckel-theory",
+      "title": "Hückel theory of π systems",
+      "summary": "Secular determinants for conjugated molecules, delocalisation energy, aromaticity and the 4n + 2 rule.",
+      "requires": [
+        "quantum-chemistry/chemical-bond-qm"
+      ]
+    },
+    {
+      "slug": "molecular-symmetry",
+      "title": "Molecular symmetry and group theory",
+      "summary": "Symmetry elements and operations, point groups, representations and character tables, and their use for orbitals and vibrations.",
+      "requires": [
+        "quantum-chemistry/chemical-bond-qm"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "spectroscopy",
+    "computational-chemistry"
+  ]
+}

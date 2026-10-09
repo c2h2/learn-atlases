@@ -1,0 +1,97 @@
+{
+  "slug": "phonology",
+  "title": "Historical Phonology",
+  "full_title": "Chinese Historical Phonology: The Sounds of Earlier Chinese",
+  "area": "classical",
+  "level": 3,
+  "order": 220,
+  "tagline": "Why historical phonology matters, fanqie spellings, the *Qieyun* and *Guangyun*, the initials of Middle Chinese, its finals and tones, rhyme tables, Old Chinese, from Middle Chinese to Mandarin, and phonology for readers",
+  "summary": "Chinese characters do not show how they sounded, yet poets rhymed and scholars recorded sounds for two thousand years. This course explains how the sounds of earlier Chinese are reconstructed: fanqie spellings, the rhyme dictionaries from the *Qieyun* to the *Guangyun*, the categories of Middle Chinese, the rhyme tables, the evidence for Old Chinese, and the changes that led to modern Mandarin — and shows how this knowledge helps in reading classical poetry and understanding the dialects.",
+  "overview": [],
+  "prerequisites": [
+    "classical-chinese-2",
+    "sounds-of-mandarin"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "why-phonology",
+      "title": "Why historical phonology?",
+      "summary": "Old poems that no longer rhyme, the reputation of phonology as a forbidding subject, and what it is good for.",
+      "requires": [
+        "classical-chinese-2/exegesis",
+        "sounds-of-mandarin/syllables-pinyin"
+      ]
+    },
+    {
+      "slug": "fanqie",
+      "title": "Fanqie spellings",
+      "summary": "Spelling the sound of a character with two others, how fanqie works, and how it is used to recover old pronunciations.",
+      "requires": [
+        "phonology/why-phonology"
+      ]
+    },
+    {
+      "slug": "rhyme-books",
+      "title": "The rhyme dictionaries",
+      "summary": "Lu Fayan’s *Qieyun* of 601, the *Guangyun* of 1008, and its 206 rhymes.",
+      "requires": [
+        "phonology/fanqie"
+      ]
+    },
+    {
+      "slug": "mc-initials",
+      "title": "The initials of Middle Chinese",
+      "summary": "The thirty-six initials, and how the initial categories are worked out from fanqie.",
+      "requires": [
+        "phonology/rhyme-books"
+      ]
+    },
+    {
+      "slug": "mc-finals-tones",
+      "title": "The finals and tones of Middle Chinese",
+      "summary": "Rhyme groups, divisions, open and closed finals, and the four tones: level, rising, departing and entering.",
+      "requires": [
+        "phonology/mc-initials"
+      ]
+    },
+    {
+      "slug": "rhyme-tables",
+      "title": "Rhyme tables",
+      "summary": "The *Yunjing* and the *Qieyun Zhizhang Tu*, and how the tables lay out the sound system.",
+      "requires": [
+        "phonology/mc-finals-tones"
+      ]
+    },
+    {
+      "slug": "old-chinese",
+      "title": "Old Chinese",
+      "summary": "The evidence of the rhymes of the *Book of Songs* and of phonetic series, the rhyme groups of the Qing scholars, and modern reconstructions.",
+      "requires": [
+        "phonology/rhyme-tables"
+      ]
+    },
+    {
+      "slug": "to-mandarin",
+      "title": "From Middle Chinese to Mandarin",
+      "summary": "The *Zhongyuan Yinyun* of 1324, the loss of the entering tone, the splitting of tones by voicing, and palatalisation.",
+      "requires": [
+        "phonology/old-chinese"
+      ]
+    },
+    {
+      "slug": "applications",
+      "title": "Phonology for readers",
+      "summary": "Reading the rhymes and tones of classical poetry, explaining correspondences between dialects, and solving puzzles in old texts.",
+      "requires": [
+        "phonology/to-mandarin"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "dialects",
+    "history-of-chinese"
+  ]
+}

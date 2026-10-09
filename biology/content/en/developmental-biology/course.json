@@ -1,0 +1,94 @@
+{
+  "slug": "developmental-biology",
+  "title": "Developmental Biology",
+  "full_title": "Developmental Biology",
+  "area": "organisms",
+  "level": 3,
+  "order": 130,
+  "tagline": "Fertilisation, axes and morphogens, gastrulation, segmentation and Hox genes, organogenesis, plant development, regeneration and evo-devo",
+  "summary": "A single fertilised egg becomes an organism with hundreds of cell types arranged in a precise body plan. This course follows that process: fertilisation and early embryos, axis formation and morphogen gradients, gastrulation, segmentation and Hox genes, the building of organs, plant development, stem cells and regeneration, and how changes in development drive evolution.",
+  "overview": [],
+  "prerequisites": [
+    "molecular-biology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "principles-of-development",
+      "title": "Principles of development",
+      "summary": "Cell fate, specification, determination and differentiation, and the model organisms of developmental biology.",
+      "requires": [
+        "molecular-biology/eukaryotic-gene-regulation",
+        "cell-biology/cell-signalling"
+      ]
+    },
+    {
+      "slug": "early-embryos",
+      "title": "Fertilisation and early embryos",
+      "summary": "Fertilisation, cleavage and the formation of the blastula in sea urchins, frogs, flies and mammals.",
+      "requires": [
+        "developmental-biology/principles-of-development"
+      ]
+    },
+    {
+      "slug": "axis-formation",
+      "title": "Axis formation and morphogen gradients",
+      "summary": "Maternal determinants, morphogen gradients and the establishment of body axes in Drosophila and vertebrates.",
+      "requires": [
+        "developmental-biology/early-embryos"
+      ]
+    },
+    {
+      "slug": "gastrulation",
+      "title": "Gastrulation and germ layers",
+      "summary": "The cell movements that form the three germ layers, and embryonic induction.",
+      "requires": [
+        "developmental-biology/early-embryos"
+      ]
+    },
+    {
+      "slug": "segmentation-hox",
+      "title": "Segmentation and Hox genes",
+      "summary": "Gap, pair-rule and segment-polarity genes, somites, and Hox genes and the body plan.",
+      "requires": [
+        "developmental-biology/axis-formation"
+      ]
+    },
+    {
+      "slug": "organogenesis",
+      "title": "Organogenesis",
+      "summary": "The neural tube, the limb and the signalling pathways that pattern organs.",
+      "requires": [
+        "developmental-biology/gastrulation",
+        "developmental-biology/segmentation-hox"
+      ]
+    },
+    {
+      "slug": "plant-development",
+      "title": "Plant development",
+      "summary": "Embryogenesis and meristems in plants, the ABC model of flower development, and the plasticity of plant form.",
+      "requires": [
+        "developmental-biology/principles-of-development"
+      ]
+    },
+    {
+      "slug": "stem-cells-regeneration",
+      "title": "Stem cells, regeneration and ageing",
+      "summary": "Stem cells and their niches, regeneration in planarians and salamanders, and the biology of ageing.",
+      "requires": [
+        "developmental-biology/organogenesis"
+      ]
+    },
+    {
+      "slug": "evo-devo",
+      "title": "Evolution and development",
+      "summary": "The shared genetic toolkit, cis-regulatory evolution and how changes in development produce new forms.",
+      "requires": [
+        "developmental-biology/segmentation-hox"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

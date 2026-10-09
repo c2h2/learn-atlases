@@ -1,0 +1,97 @@
+{
+  "slug": "control-systems",
+  "title": "Control Systems",
+  "full_title": "Control of Dynamic Systems",
+  "area": "control",
+  "level": 3,
+  "order": 150,
+  "tagline": "Modelling dynamic systems, transfer functions, time response, stability, root locus, frequency response, PID, state-space and digital control",
+  "summary": "Feedback control keeps aircraft stable, robots on their paths and engines at speed. The course models mechanical, electrical, fluid and thermal systems with differential equations and transfer functions, analyses transient and steady-state response and stability, and designs controllers by root locus, frequency response and state-space methods, with PID control and digital implementation.",
+  "overview": [],
+  "prerequisites": [
+    "dynamics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "modelling-dynamic-systems",
+      "title": "Modelling dynamic systems",
+      "summary": "Differential equations of mechanical, electrical, fluid and thermal systems, linearisation and analogies between domains.",
+      "requires": [
+        "dynamics/newtons-laws"
+      ]
+    },
+    {
+      "slug": "transfer-functions",
+      "title": "Transfer functions and block diagrams",
+      "summary": "The Laplace transform, transfer functions, poles and zeros, and block-diagram algebra.",
+      "requires": [
+        "control-systems/modelling-dynamic-systems"
+      ]
+    },
+    {
+      "slug": "time-response",
+      "title": "Time response",
+      "summary": "First- and second-order responses, rise time, overshoot and settling time, and the effect of additional poles and zeros.",
+      "requires": [
+        "control-systems/transfer-functions"
+      ]
+    },
+    {
+      "slug": "feedback-stability",
+      "title": "Feedback and stability",
+      "summary": "The benefits of feedback, steady-state error and system type, and stability by the Routh–Hurwitz criterion.",
+      "requires": [
+        "control-systems/time-response"
+      ]
+    },
+    {
+      "slug": "root-locus",
+      "title": "Root-locus design",
+      "summary": "Sketching the root locus, and designing gains and lead and lag compensators with it.",
+      "requires": [
+        "control-systems/feedback-stability"
+      ]
+    },
+    {
+      "slug": "frequency-response",
+      "title": "Frequency response",
+      "summary": "Bode plots, the Nyquist criterion, gain and phase margins, and loop shaping.",
+      "requires": [
+        "control-systems/feedback-stability"
+      ]
+    },
+    {
+      "slug": "pid-control",
+      "title": "PID control",
+      "summary": "Proportional, integral and derivative action, tuning rules, integrator wind-up and practical implementation.",
+      "requires": [
+        "control-systems/root-locus",
+        "control-systems/frequency-response"
+      ]
+    },
+    {
+      "slug": "state-space",
+      "title": "State-space methods",
+      "summary": "State equations, controllability and observability, pole placement and state observers.",
+      "requires": [
+        "control-systems/feedback-stability"
+      ]
+    },
+    {
+      "slug": "digital-control",
+      "title": "Digital control",
+      "summary": "Sampling, the z-transform, discrete equivalents of continuous controllers, and implementation on microcontrollers.",
+      "requires": [
+        "control-systems/pid-control"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "mechatronics",
+    "robotics",
+    "flight-mechanics"
+  ]
+}

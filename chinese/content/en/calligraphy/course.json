@@ -1,0 +1,95 @@
+{
+  "slug": "calligraphy",
+  "title": "Handwriting and Calligraphy",
+  "full_title": "Handwriting and Calligraphy: Writing Characters Well",
+  "area": "script",
+  "level": 2,
+  "order": 80,
+  "tagline": "Strokes and stroke order, the structure of characters, writing with a pen, the brush and its tools, regular script, running and cursive script, seal and clerical script, the history of calligraphy, and looking at calligraphy",
+  "summary": "Writing characters well is a skill that keyboards have made rare and that calligraphy turned into an art. This course starts with standard stroke order and the structure of characters, moves from the pen to the brush, introduces regular, running, cursive, seal and clerical script, and surveys the history of calligraphy and how to look at and copy the great works.",
+  "overview": [],
+  "prerequisites": [
+    "chinese-characters"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "strokes-order",
+      "title": "Strokes and stroke order",
+      "summary": "The basic strokes and their variants, and the national standard for stroke order.",
+      "requires": [
+        "chinese-characters/strokes-radicals"
+      ]
+    },
+    {
+      "slug": "structure",
+      "title": "The structure of characters",
+      "summary": "Proportion, balance and spacing in characters of different shapes, and the classical rules of composing a character.",
+      "requires": [
+        "calligraphy/strokes-order"
+      ]
+    },
+    {
+      "slug": "pen-writing",
+      "title": "Writing with a pen",
+      "summary": "Neat and fluent handwriting with a pen, from regular script to a running hand.",
+      "requires": [
+        "calligraphy/structure"
+      ]
+    },
+    {
+      "slug": "brush-tools",
+      "title": "The brush and the four treasures",
+      "summary": "Brush, ink, paper and inkstone, holding the brush, and the basic movements of the brush tip.",
+      "requires": [
+        "calligraphy/structure"
+      ]
+    },
+    {
+      "slug": "regular-script",
+      "title": "Regular script",
+      "summary": "The models of Ouyang Xun, Yan Zhenqing, Liu Gongquan and Zhao Mengfu, and how to begin copying.",
+      "requires": [
+        "calligraphy/brush-tools"
+      ]
+    },
+    {
+      "slug": "running-cursive",
+      "title": "Running and cursive script",
+      "summary": "Wang Xizhi’s *Lanting Xu*, running script as an everyday hand, and the rules behind cursive.",
+      "requires": [
+        "calligraphy/regular-script"
+      ]
+    },
+    {
+      "slug": "seal-clerical",
+      "title": "Seal and clerical script",
+      "summary": "Writing seal and clerical script from Qin and Han models, and the art of seal carving.",
+      "requires": [
+        "calligraphy/regular-script"
+      ]
+    },
+    {
+      "slug": "history-of-calligraphy",
+      "title": "A history of calligraphy",
+      "summary": "From Qin and Han inscriptions through the Jin, the Tang masters and the four Song masters to the calligraphers of the Ming, Qing and modern times.",
+      "requires": [
+        "calligraphy/running-cursive",
+        "calligraphy/seal-clerical"
+      ]
+    },
+    {
+      "slug": "appreciation",
+      "title": "Looking at calligraphy",
+      "summary": "The stele and model-book traditions, how to read brushwork, structure and composition, and the relation between calligraphy and the text it writes.",
+      "requires": [
+        "calligraphy/history-of-calligraphy"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "classical-chinese-2"
+  ]
+}

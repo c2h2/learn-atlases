@@ -1,0 +1,89 @@
+{
+  "slug": "core-vocabulary",
+  "title": "Core Vocabulary",
+  "full_title": "Core Vocabulary: The Words You Need Most",
+  "area": "words",
+  "level": 1,
+  "order": 30,
+  "tagline": "What knowing a word means, frequency and coverage, word families, numbers, dates and money, everyday topics, function words, learner’s dictionaries, remembering words, and phrases and chunks",
+  "summary": "A few thousand words make up most of what learners read and hear, so the order in which words are learned matters. This course explains what it means to know a word, which words are worth learning first and why, how words come in families, the vocabulary of numbers, dates and everyday life, the small function words that hold sentences together, how to use a learner’s dictionary, and how spaced practice helps words stay in memory.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "knowing-a-word",
+      "title": "What it means to know a word",
+      "summary": "Form, meaning and use, recognising a word versus being able to use it, and why a single Chinese translation is rarely the whole story.",
+      "requires": []
+    },
+    {
+      "slug": "frequency-and-coverage",
+      "title": "Frequency and coverage",
+      "summary": "Why a small number of words make up most of any text, what research says about how many words a reader needs, and how to decide which words to learn first.",
+      "requires": [
+        "core-vocabulary/knowing-a-word"
+      ]
+    },
+    {
+      "slug": "word-families",
+      "title": "Word families",
+      "summary": "How *decide*, *decision* and *decisive* belong together, the common endings that mark word class, and how learning families multiplies a vocabulary.",
+      "requires": [
+        "core-vocabulary/knowing-a-word"
+      ]
+    },
+    {
+      "slug": "numbers-dates-money",
+      "title": "Numbers, dates, time and money",
+      "summary": "Saying and writing numbers, years, dates, times, prices and phone numbers, British and American differences, and converting between 万 and 亿 and thousands and millions.",
+      "requires": []
+    },
+    {
+      "slug": "everyday-topics",
+      "title": "Everyday topics",
+      "summary": "Core words for people and family, home, food, work and study, shopping, travel, health and the weather, grouped so they can be learned together.",
+      "requires": [
+        "core-vocabulary/word-families"
+      ]
+    },
+    {
+      "slug": "function-words",
+      "title": "Function words",
+      "summary": "The articles, pronouns, prepositions, conjunctions and auxiliaries that make up a large share of any text, and why they are best learned in phrases.",
+      "requires": [
+        "core-vocabulary/frequency-and-coverage"
+      ]
+    },
+    {
+      "slug": "using-a-dictionary",
+      "title": "Using a learner’s dictionary",
+      "summary": "What a learner’s dictionary shows — pronunciation, word class, grammar patterns, collocations and examples — and when to use a bilingual or an English–English dictionary.",
+      "requires": [
+        "core-vocabulary/word-families"
+      ]
+    },
+    {
+      "slug": "learning-and-remembering",
+      "title": "Learning and remembering words",
+      "summary": "Why we forget, how spaced retrieval practice and word cards work, and how to build a daily routine for learning vocabulary.",
+      "requires": [
+        "core-vocabulary/knowing-a-word"
+      ]
+    },
+    {
+      "slug": "phrases-and-chunks",
+      "title": "Phrases and chunks",
+      "summary": "Learning words in useful chunks such as *by the way*, *make a decision* and *I’m afraid that*, and why chunks make speech more fluent.",
+      "requires": [
+        "core-vocabulary/function-words"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "word-formation",
+    "reading-skills"
+  ]
+}

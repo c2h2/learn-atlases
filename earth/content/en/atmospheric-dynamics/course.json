@@ -1,0 +1,96 @@
+{
+  "slug": "atmospheric-dynamics",
+  "title": "Atmospheric Dynamics",
+  "full_title": "Atmospheric Physics and Dynamics",
+  "area": "atmosphere",
+  "level": 2,
+  "order": 90,
+  "tagline": "Atmospheric thermodynamics, radiative transfer, cloud physics, equations of motion on a rotating planet, balanced flow, vorticity, the boundary layer and the general circulation",
+  "summary": "This course turns the physics behind the weather into equations. It covers the thermodynamics of dry and moist air, radiative transfer, cloud physics, the equations of motion on a rotating planet, geostrophic and thermal-wind balance, vorticity and Rossby waves, the turbulent boundary layer, and baroclinic instability and the general circulation of the atmosphere.",
+  "overview": [],
+  "prerequisites": [
+    "meteorology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "thermodynamics",
+      "title": "Atmospheric thermodynamics",
+      "summary": "The gas laws, the first law of thermodynamics for air parcels, potential temperature and hydrostatic balance.",
+      "requires": [
+        "meteorology/stability"
+      ]
+    },
+    {
+      "slug": "moist-thermodynamics",
+      "title": "Moist thermodynamics",
+      "summary": "The Clausius–Clapeyron relation, equivalent potential temperature, thermodynamic diagrams and convective available potential energy.",
+      "requires": [
+        "atmospheric-dynamics/thermodynamics"
+      ]
+    },
+    {
+      "slug": "radiative-transfer",
+      "title": "Radiative transfer",
+      "summary": "Absorption, emission and scattering by gases, aerosols and clouds, and the radiative heating and cooling of the atmosphere.",
+      "requires": [
+        "meteorology/radiation-temperature"
+      ]
+    },
+    {
+      "slug": "cloud-physics",
+      "title": "Cloud physics",
+      "summary": "Nucleation, droplet growth by condensation and collision, ice processes and the formation of precipitation.",
+      "requires": [
+        "atmospheric-dynamics/moist-thermodynamics",
+        "meteorology/clouds-precipitation"
+      ]
+    },
+    {
+      "slug": "equations-of-motion",
+      "title": "Equations of motion on a rotating Earth",
+      "summary": "Forces on air parcels, the Coriolis force, scale analysis and the primitive equations.",
+      "requires": [
+        "atmospheric-dynamics/thermodynamics",
+        "meteorology/winds"
+      ]
+    },
+    {
+      "slug": "balanced-flow",
+      "title": "Balanced flow",
+      "summary": "Geostrophic, gradient and thermal winds, and the effects of friction.",
+      "requires": [
+        "atmospheric-dynamics/equations-of-motion"
+      ]
+    },
+    {
+      "slug": "vorticity",
+      "title": "Vorticity and Rossby waves",
+      "summary": "Circulation, vorticity, potential vorticity and planetary Rossby waves.",
+      "requires": [
+        "atmospheric-dynamics/balanced-flow"
+      ]
+    },
+    {
+      "slug": "boundary-layer",
+      "title": "The atmospheric boundary layer",
+      "summary": "Turbulence, the surface fluxes of heat, moisture and momentum, and the daily cycle of the boundary layer.",
+      "requires": [
+        "atmospheric-dynamics/equations-of-motion"
+      ]
+    },
+    {
+      "slug": "general-circulation",
+      "title": "Baroclinic instability and the general circulation",
+      "summary": "Hadley cells, jet streams and mid-latitude eddies, and how the atmosphere transports heat and momentum.",
+      "requires": [
+        "atmospheric-dynamics/vorticity"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "climate-system"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "earth-system",
+  "title": "The Earth System",
+  "full_title": "The Earth System",
+  "area": "system",
+  "level": 1,
+  "order": 10,
+  "tagline": "Spheres, energy, the water, rock and carbon cycles, life and people: the planet as one interacting system",
+  "summary": "Earth’s rocks, air, water, ice and life form one system, linked by flows of energy and matter. This course introduces the language of reservoirs, fluxes and feedbacks, the planet’s energy balance, the circulation of atmosphere and ocean, the water, rock and carbon cycles, the long partnership between life and the planet, and the scale of human influence — the framework for every other course in the atlas.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "planet-earth",
+      "title": "Earth as a planet",
+      "summary": "How the Solar System and the Earth formed, the Earth’s size, shape and layered interior, and what makes the planet habitable.",
+      "requires": []
+    },
+    {
+      "slug": "reservoirs-fluxes",
+      "title": "Reservoirs, fluxes and feedbacks",
+      "summary": "Box models, residence times, steady states and positive and negative feedback loops — the language of Earth system science.",
+      "requires": []
+    },
+    {
+      "slug": "energy-balance",
+      "title": "Sunlight and the energy balance",
+      "summary": "Solar radiation, albedo and emitted infrared radiation, the seasons, and a first look at the greenhouse effect through a planetary energy budget.",
+      "requires": [
+        "earth-system/reservoirs-fluxes"
+      ]
+    },
+    {
+      "slug": "circulation",
+      "title": "Winds and ocean currents",
+      "summary": "Why the tropics export heat towards the poles, and how the circulation of the atmosphere and the ocean currents carry it.",
+      "requires": [
+        "earth-system/energy-balance"
+      ]
+    },
+    {
+      "slug": "water-cycle",
+      "title": "The water cycle",
+      "summary": "Reservoirs and fluxes of water — evaporation, precipitation, runoff, groundwater and ice — and their residence times.",
+      "requires": [
+        "earth-system/reservoirs-fluxes",
+        "earth-system/circulation"
+      ]
+    },
+    {
+      "slug": "solid-earth",
+      "title": "The restless solid Earth",
+      "summary": "Plate tectonics, volcanism and the rock cycle as parts of the Earth system, moving matter between the interior, the surface and the atmosphere.",
+      "requires": [
+        "earth-system/planet-earth"
+      ]
+    },
+    {
+      "slug": "carbon-cycle",
+      "title": "The carbon cycle",
+      "summary": "The fast exchange of carbon between air, ocean and living things, and the slow geological cycle that regulates climate over millions of years.",
+      "requires": [
+        "earth-system/reservoirs-fluxes",
+        "earth-system/solid-earth"
+      ]
+    },
+    {
+      "slug": "life-and-planet",
+      "title": "Life and the planet",
+      "summary": "How life has changed the atmosphere, the oceans and the rocks over billions of years, from the first photosynthesis to today’s biosphere.",
+      "requires": [
+        "earth-system/carbon-cycle"
+      ]
+    },
+    {
+      "slug": "human-planet",
+      "title": "People as a planetary force",
+      "summary": "Human changes to land, water, the carbon and nitrogen cycles and biodiversity, planetary boundaries, and the debate over naming an Anthropocene epoch.",
+      "requires": [
+        "earth-system/carbon-cycle",
+        "earth-system/water-cycle"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "physical-geology",
+    "meteorology",
+    "oceanography",
+    "biogeochemistry"
+  ]
+}

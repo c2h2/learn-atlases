@@ -1,0 +1,97 @@
+{
+  "slug": "mineralogy-petrology",
+  "title": "Mineralogy and Petrology",
+  "full_title": "Mineralogy and Petrology",
+  "area": "solid",
+  "level": 2,
+  "order": 50,
+  "tagline": "Crystal symmetry and chemistry, the silicate minerals, optical mineralogy, phase diagrams, magmas, igneous rocks and metamorphic reactions",
+  "summary": "Mineralogy studies the crystals that rocks are made of; petrology explains how the rocks form. This course covers crystal symmetry and structure, crystal chemistry and the silicate minerals, identifying minerals under the polarising microscope, phase diagrams and the melting and crystallisation of magmas, the origin of igneous rocks in their tectonic settings, and metamorphic reactions, facies and pressure–temperature paths.",
+  "overview": [],
+  "prerequisites": [
+    "physical-geology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "crystallography",
+      "title": "Crystals and symmetry",
+      "summary": "Lattices, unit cells, symmetry elements, the crystal systems and Miller indices.",
+      "requires": [
+        "physical-geology/minerals"
+      ]
+    },
+    {
+      "slug": "crystal-chemistry",
+      "title": "Crystal chemistry",
+      "summary": "Ionic radii, coordination, bonding and solid solution, and how chemistry controls the structures of minerals.",
+      "requires": [
+        "mineralogy-petrology/crystallography"
+      ]
+    },
+    {
+      "slug": "silicates",
+      "title": "The silicate minerals",
+      "summary": "Silica tetrahedra and the ways they link, and the structures and chemistry of the major silicate groups.",
+      "requires": [
+        "mineralogy-petrology/crystal-chemistry"
+      ]
+    },
+    {
+      "slug": "optical-mineralogy",
+      "title": "Optical mineralogy",
+      "summary": "Light in crystals, the polarising microscope, birefringence and identifying minerals in thin section.",
+      "requires": [
+        "mineralogy-petrology/silicates"
+      ]
+    },
+    {
+      "slug": "phase-diagrams",
+      "title": "Phase diagrams and melting",
+      "summary": "Binary and ternary phase diagrams, eutectics and solid solutions, and how rocks begin to melt.",
+      "requires": [
+        "mineralogy-petrology/silicates"
+      ]
+    },
+    {
+      "slug": "magma-evolution",
+      "title": "Magma generation and evolution",
+      "summary": "Partial melting of the mantle, fractional crystallisation, assimilation and magma mixing.",
+      "requires": [
+        "mineralogy-petrology/phase-diagrams",
+        "physical-geology/igneous-rocks"
+      ]
+    },
+    {
+      "slug": "igneous-settings",
+      "title": "Igneous rocks and tectonic settings",
+      "summary": "How the chemistry of basalts, andesites and granites records mid-ocean ridges, subduction zones and hotspots.",
+      "requires": [
+        "mineralogy-petrology/magma-evolution",
+        "physical-geology/plate-tectonics"
+      ]
+    },
+    {
+      "slug": "metamorphic-reactions",
+      "title": "Metamorphic reactions and facies",
+      "summary": "Mineral reactions, index minerals and isograds, and the metamorphic facies.",
+      "requires": [
+        "mineralogy-petrology/phase-diagrams",
+        "physical-geology/metamorphic-rocks"
+      ]
+    },
+    {
+      "slug": "pt-paths",
+      "title": "Pressure–temperature paths",
+      "summary": "Geothermometry and geobarometry, and what pressure–temperature–time paths reveal about burial, mountain building and exhumation.",
+      "requires": [
+        "mineralogy-petrology/metamorphic-reactions"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "geochemistry"
+  ]
+}

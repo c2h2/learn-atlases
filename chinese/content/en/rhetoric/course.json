@@ -1,0 +1,97 @@
+{
+  "slug": "rhetoric",
+  "title": "Rhetoric and Style",
+  "full_title": "Rhetoric and Style in Modern Chinese",
+  "area": "language",
+  "level": 2,
+  "order": 90,
+  "tagline": "What rhetoric is, choosing words, choosing sentence forms, figures of meaning, figures of form, sound and rhythm, registers, style, and analysing rhetoric",
+  "summary": "Rhetoric in Chinese linguistics is the art of choosing among the ways the language offers to say something, so that what is said fits its purpose, its reader and its situation. This course covers the choice of words and sentence forms, the figures of speech from metaphor and personification to antithesis and parallelism, the use of sound and rhythm, the registers of spoken, literary, official, scientific and news language, personal and period style, and how to analyse the rhetoric of a text.",
+  "overview": [],
+  "prerequisites": [
+    "modern-grammar"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "what-is-rhetoric",
+      "title": "What rhetoric is",
+      "summary": "Rhetoric as choice according to context, from Chen Wangdao’s *Xiucixue Fafan* of 1932 to modern rhetoric.",
+      "requires": [
+        "modern-grammar/what-is-grammar"
+      ]
+    },
+    {
+      "slug": "choosing-words",
+      "title": "Choosing words",
+      "summary": "Precision, colour, sound and freshness in the choice of words, and famous examples of refining a single word (炼字).",
+      "requires": [
+        "rhetoric/what-is-rhetoric"
+      ]
+    },
+    {
+      "slug": "choosing-sentences",
+      "title": "Choosing sentence forms",
+      "summary": "Long and short, loose and tight, active and passive, and regular and varied sentences, and their effects.",
+      "requires": [
+        "rhetoric/what-is-rhetoric"
+      ]
+    },
+    {
+      "slug": "figures-of-meaning",
+      "title": "Figures of meaning",
+      "summary": "Metaphor and simile, personification, metonymy, hyperbole and irony.",
+      "requires": [
+        "rhetoric/choosing-words"
+      ]
+    },
+    {
+      "slug": "figures-of-form",
+      "title": "Figures of form",
+      "summary": "Antithesis, parallelism, repetition, climax, and rhetorical questions and other figures of structure.",
+      "requires": [
+        "rhetoric/figures-of-meaning",
+        "rhetoric/choosing-sentences"
+      ]
+    },
+    {
+      "slug": "sound-rhythm",
+      "title": "Sound and rhythm",
+      "summary": "Matching syllables, level and oblique tones, rhyme, reduplication and onomatopoeia in prose.",
+      "requires": [
+        "rhetoric/figures-of-form"
+      ]
+    },
+    {
+      "slug": "registers",
+      "title": "Registers",
+      "summary": "Spoken and written language, and the literary, official, scientific, news and political registers of modern Chinese.",
+      "requires": [
+        "rhetoric/choosing-sentences"
+      ]
+    },
+    {
+      "slug": "style",
+      "title": "Style",
+      "summary": "Personal and period styles — plain and ornate, concise and expansive, humorous and solemn — and how to describe them.",
+      "requires": [
+        "rhetoric/registers"
+      ]
+    },
+    {
+      "slug": "rhetorical-analysis",
+      "title": "Analysing rhetoric",
+      "summary": "Analysing the rhetoric of speeches, advertisements, news reports and literary texts, and the line between rhetoric and manipulation.",
+      "requires": [
+        "rhetoric/style",
+        "rhetoric/sound-rhythm"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "argumentative-writing",
+    "literary-theory"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "neuroscience",
+  "title": "Neuroscience",
+  "full_title": "Neuroscience: From Neurons to Systems",
+  "area": "neuro",
+  "level": 3,
+  "order": 140,
+  "tagline": "Neurons and glia, membrane potentials, action potentials, synapses, sensory and motor systems, development, plasticity and neural coding",
+  "summary": "The nervous system turns sensations into perceptions and decisions into movements, using electrical and chemical signals. This course explains how neurons generate and transmit signals, from the resting potential and the action potential to synapses, then how circuits build sensory and motor systems, how nervous systems develop and change with experience, and how neural activity encodes information.",
+  "overview": [],
+  "prerequisites": [
+    "animal-physiology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "neurons-glia",
+      "title": "Neurons and glia",
+      "summary": "The cells of the nervous system, their shapes and functions, and the neuron doctrine.",
+      "requires": [
+        "cell-biology/organelles"
+      ]
+    },
+    {
+      "slug": "resting-potential",
+      "title": "The resting membrane potential",
+      "summary": "Ion gradients, the Nernst and Goldman equations, and the neuron as an electrical circuit.",
+      "requires": [
+        "neuroscience/neurons-glia",
+        "cell-biology/membrane-transport"
+      ]
+    },
+    {
+      "slug": "action-potential",
+      "title": "The action potential",
+      "summary": "Voltage-gated channels, the Hodgkin–Huxley model and the propagation of impulses along axons.",
+      "requires": [
+        "neuroscience/resting-potential"
+      ]
+    },
+    {
+      "slug": "synapses",
+      "title": "Synaptic transmission",
+      "summary": "Electrical and chemical synapses, neurotransmitters and receptors, and synaptic integration.",
+      "requires": [
+        "neuroscience/action-potential"
+      ]
+    },
+    {
+      "slug": "sensory-systems",
+      "title": "Sensory systems",
+      "summary": "Transduction, receptive fields and coding in vision, hearing, touch and the chemical senses.",
+      "requires": [
+        "neuroscience/synapses"
+      ]
+    },
+    {
+      "slug": "motor-systems",
+      "title": "Motor systems",
+      "summary": "Motor neurons and reflexes, central pattern generators and the control of movement.",
+      "requires": [
+        "neuroscience/synapses",
+        "animal-physiology/muscle-movement"
+      ]
+    },
+    {
+      "slug": "neural-development",
+      "title": "Development and evolution of nervous systems",
+      "summary": "From nerve nets to brains, and how neurons are born, find their targets and form circuits.",
+      "requires": [
+        "neuroscience/synapses"
+      ]
+    },
+    {
+      "slug": "plasticity-learning",
+      "title": "Plasticity, learning and memory",
+      "summary": "Long-term potentiation, Hebbian learning and memory systems from Aplysia to mammals.",
+      "requires": [
+        "neuroscience/synapses"
+      ]
+    },
+    {
+      "slug": "neural-coding",
+      "title": "Neural coding and recording the brain",
+      "summary": "Rate and timing codes, population activity, brain rhythms and sleep, and the methods used to record and image neural activity.",
+      "requires": [
+        "neuroscience/plasticity-learning",
+        "neuroscience/sensory-systems"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "behaviour"
+  ]
+}

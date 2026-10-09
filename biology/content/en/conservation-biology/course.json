@@ -1,0 +1,94 @@
+{
+  "slug": "conservation-biology",
+  "title": "Conservation Biology",
+  "full_title": "Conservation Biology",
+  "area": "ecology",
+  "level": 3,
+  "order": 190,
+  "tagline": "Biodiversity, extinction, small populations, conservation genetics, fragmentation, protected areas, invasions and climate change, restoration and policy",
+  "summary": "Species are now being lost far faster than the background rate seen in the fossil record. This course applies ecology and evolutionary biology to the problem: measuring biodiversity, the drivers of extinction, the biology and genetics of small populations, habitat fragmentation, protected areas, invasive species and climate change, restoration, and the people and policies on which conservation depends.",
+  "overview": [],
+  "prerequisites": [
+    "ecology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "biodiversity",
+      "title": "Biodiversity and its value",
+      "summary": "What biodiversity is, how it is measured, and why it matters.",
+      "requires": [
+        "ecology/communities"
+      ]
+    },
+    {
+      "slug": "extinction",
+      "title": "Extinction and its drivers",
+      "summary": "Background and mass extinctions, and the modern threats of habitat loss, overexploitation, invasive species, pollution and climate change.",
+      "requires": [
+        "conservation-biology/biodiversity"
+      ]
+    },
+    {
+      "slug": "small-populations",
+      "title": "Small populations",
+      "summary": "Demographic and environmental stochasticity, population viability analysis and minimum viable populations.",
+      "requires": [
+        "conservation-biology/extinction",
+        "ecology/population-growth"
+      ]
+    },
+    {
+      "slug": "conservation-genetics",
+      "title": "Conservation genetics",
+      "summary": "Loss of genetic diversity, inbreeding depression, genetic rescue and DNA tools for conservation.",
+      "requires": [
+        "conservation-biology/small-populations",
+        "evolution/mutation-drift-gene-flow"
+      ]
+    },
+    {
+      "slug": "fragmentation",
+      "title": "Habitat loss and fragmentation",
+      "summary": "Metapopulations, edge effects, corridors and landscape ecology.",
+      "requires": [
+        "conservation-biology/small-populations"
+      ]
+    },
+    {
+      "slug": "protected-areas",
+      "title": "Protected areas and reserve design",
+      "summary": "Systematic conservation planning, reserve networks and whether protected areas work.",
+      "requires": [
+        "conservation-biology/fragmentation"
+      ]
+    },
+    {
+      "slug": "invasions-climate",
+      "title": "Invasive species and climate change",
+      "summary": "How biological invasions happen, and how species and ecosystems respond to a changing climate.",
+      "requires": [
+        "conservation-biology/extinction"
+      ]
+    },
+    {
+      "slug": "restoration",
+      "title": "Restoration and rewilding",
+      "summary": "Restoring habitats, reintroducing species and recovering ecosystem services.",
+      "requires": [
+        "conservation-biology/protected-areas"
+      ]
+    },
+    {
+      "slug": "people-and-policy",
+      "title": "Conservation, people and policy",
+      "summary": "Sustainable use, the economics of conservation, international agreements and conservation in practice.",
+      "requires": [
+        "conservation-biology/restoration"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

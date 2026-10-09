@@ -1,0 +1,96 @@
+{
+  "slug": "nouns-and-articles",
+  "title": "Nouns and Articles",
+  "full_title": "Nouns, Articles and Determiners",
+  "area": "grammar",
+  "level": 2,
+  "order": 60,
+  "tagline": "Countable and uncountable nouns, *a* and *the*, no article and generic reference, articles with names, quantifiers, possessives and *of*, determiners, noun phrases, and subject–verb agreement",
+  "summary": "Articles are among the most frequent words in English and one of its hardest areas for learners whose first language, like Chinese, has none. This course explains how English sorts nouns into countable and uncountable, how *a*, *the* and no article signal what the speaker assumes the listener knows, how quantifiers and other determiners work, how long noun phrases are built, and how the verb agrees with its subject.",
+  "overview": [],
+  "prerequisites": [
+    "core-grammar"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "countable-uncountable",
+      "title": "Countable and uncountable nouns",
+      "summary": "Why *information*, *advice* and *furniture* have no plural, nouns that can be both, and *a piece of*, *a cup of* and other ways of counting the uncountable.",
+      "requires": [
+        "core-grammar/nouns-pronouns"
+      ]
+    },
+    {
+      "slug": "a-and-the",
+      "title": "*A* and *the*",
+      "summary": "*A* for something new to the listener and *the* for something both speakers can identify, with the main cases of first mention, shared knowledge and unique things.",
+      "requires": [
+        "nouns-and-articles/countable-uncountable"
+      ]
+    },
+    {
+      "slug": "zero-article-generic",
+      "title": "No article and generic reference",
+      "summary": "When English uses no article, and the three ways of talking about a whole class: *dogs*, *a dog* and *the dog*.",
+      "requires": [
+        "nouns-and-articles/a-and-the"
+      ]
+    },
+    {
+      "slug": "articles-with-names",
+      "title": "Articles with names and places",
+      "summary": "Why we say *China* but *the United States*, *Mount Everest* but *the Alps*, and other conventions for the names of people, places and organisations.",
+      "requires": [
+        "nouns-and-articles/zero-article-generic"
+      ]
+    },
+    {
+      "slug": "quantifiers",
+      "title": "Quantifiers",
+      "summary": "*Some* and *any*, *much*, *many* and *a lot of*, *few* and *a few*, *little* and *a little*, *each*, *every*, *all*, *both*, *either* and *neither*.",
+      "requires": [
+        "nouns-and-articles/countable-uncountable"
+      ]
+    },
+    {
+      "slug": "possessives-and-of",
+      "title": "Possessives and *of*",
+      "summary": "The possessive *’s* and *s’*, the *of*-construction, and how to choose between *Tom’s car*, *the end of the film* and *the car door*.",
+      "requires": [
+        "nouns-and-articles/a-and-the"
+      ]
+    },
+    {
+      "slug": "other-determiners",
+      "title": "Demonstratives and other determiners",
+      "summary": "*This*, *that*, *these* and *those*, *other* and *another*, *such* and *what*, and the order of determiners before a noun.",
+      "requires": [
+        "nouns-and-articles/quantifiers"
+      ]
+    },
+    {
+      "slug": "noun-phrases",
+      "title": "Building noun phrases",
+      "summary": "The order of adjectives, nouns used as modifiers, and phrases and clauses after the noun, where Chinese puts the whole description before it.",
+      "requires": [
+        "nouns-and-articles/possessives-and-of",
+        "nouns-and-articles/other-determiners"
+      ]
+    },
+    {
+      "slug": "agreement",
+      "title": "Subject–verb agreement",
+      "summary": "Singular and plural verbs after long subjects, collective nouns, *everyone* and *none*, and British and American differences such as *the team is* and *the team are*.",
+      "requires": [
+        "nouns-and-articles/noun-phrases"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "sentences-and-paragraphs",
+    "complex-sentences"
+  ]
+}

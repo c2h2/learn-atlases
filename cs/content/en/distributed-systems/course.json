@@ -1,0 +1,95 @@
+{
+  "slug": "distributed-systems",
+  "title": "Distributed Systems",
+  "full_title": "Distributed Systems",
+  "area": "networks",
+  "level": 4,
+  "order": 200,
+  "tagline": "Failure models, remote communication, time and clocks, replication and consistency, consensus, fault tolerance, distributed storage, distributed transactions and data processing",
+  "summary": "Modern services run on many machines that fail independently and communicate over unreliable networks. This course covers the foundations of building such systems: models of failure and timing, remote communication, time and logical clocks, replication and consistency models, consensus with Paxos and Raft, fault tolerance, distributed storage and transactions, and large-scale data processing.",
+  "overview": [],
+  "prerequisites": [
+    "operating-systems",
+    "networks"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "system-models",
+      "title": "Models of distributed systems",
+      "summary": "Why systems are distributed, failure models, assumptions about timing, and the fallacies of distributed computing.",
+      "requires": [
+        "networks/network-principles"
+      ]
+    },
+    {
+      "slug": "remote-communication",
+      "title": "Communication and remote procedure calls",
+      "summary": "Message passing, remote procedure calls, serialisation and idempotence.",
+      "requires": [
+        "distributed-systems/system-models",
+        "networks/sockets"
+      ]
+    },
+    {
+      "slug": "time-clocks",
+      "title": "Time, clocks and ordering",
+      "summary": "Physical clock synchronisation, Lamport clocks, vector clocks and causality.",
+      "requires": [
+        "distributed-systems/system-models"
+      ]
+    },
+    {
+      "slug": "replication-consistency",
+      "title": "Replication and consistency",
+      "summary": "Primary–backup and quorum replication, linearisability, eventual consistency and the CAP theorem.",
+      "requires": [
+        "distributed-systems/time-clocks"
+      ]
+    },
+    {
+      "slug": "consensus",
+      "title": "Consensus",
+      "summary": "The consensus problem, the FLP impossibility result, Paxos and Raft.",
+      "requires": [
+        "distributed-systems/replication-consistency"
+      ]
+    },
+    {
+      "slug": "fault-tolerance",
+      "title": "Fault tolerance",
+      "summary": "Failure detection, state-machine replication, Byzantine faults and recovery.",
+      "requires": [
+        "distributed-systems/consensus"
+      ]
+    },
+    {
+      "slug": "distributed-storage",
+      "title": "Distributed storage",
+      "summary": "Partitioning and consistent hashing, distributed file systems and key–value stores.",
+      "requires": [
+        "distributed-systems/replication-consistency"
+      ]
+    },
+    {
+      "slug": "distributed-transactions",
+      "title": "Distributed transactions",
+      "summary": "Two-phase commit, distributed concurrency control and globally consistent databases.",
+      "requires": [
+        "distributed-systems/consensus"
+      ]
+    },
+    {
+      "slug": "data-processing",
+      "title": "Large-scale data processing",
+      "summary": "MapReduce, dataflow systems and stream processing.",
+      "requires": [
+        "distributed-systems/distributed-storage",
+        "distributed-systems/remote-communication"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

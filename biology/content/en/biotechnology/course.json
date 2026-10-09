@@ -1,0 +1,88 @@
+{
+  "slug": "biotechnology",
+  "title": "Biotechnology",
+  "full_title": "Biotechnology and Synthetic Biology",
+  "area": "cells",
+  "level": 4,
+  "order": 210,
+  "tagline": "Recombinant DNA, protein production, genome editing, synthetic circuits, metabolic engineering, bioprocessing, agricultural biotechnology and biosafety",
+  "summary": "Biotechnology uses living systems to make products and solve problems, and synthetic biology tries to make that engineering predictable. This course covers recombinant DNA and protein production, genome editing with CRISPR and related tools, the design of genetic circuits, metabolic engineering, scaling up in bioprocesses, agricultural biotechnology, and the biosafety, biosecurity and ethical questions that these powers raise.",
+  "overview": [],
+  "prerequisites": [
+    "molecular-biology",
+    "microbiology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "recombinant-dna",
+      "title": "Recombinant DNA technology",
+      "summary": "Vectors and hosts, and the design of DNA constructs from restriction cloning to DNA synthesis.",
+      "requires": [
+        "molecular-biology/molecular-tools"
+      ]
+    },
+    {
+      "slug": "protein-production",
+      "title": "Producing proteins",
+      "summary": "Expression in bacteria, yeast and mammalian cells, and protein engineering.",
+      "requires": [
+        "biotechnology/recombinant-dna",
+        "microbiology/microbial-growth"
+      ]
+    },
+    {
+      "slug": "genome-editing",
+      "title": "Genome editing",
+      "summary": "Zinc fingers, TALENs and CRISPR–Cas systems, base and prime editing, and their accuracy and limits.",
+      "requires": [
+        "biotechnology/recombinant-dna"
+      ]
+    },
+    {
+      "slug": "synthetic-biology",
+      "title": "Synthetic biology",
+      "summary": "Standard parts, genetic circuits, biosensors and the design–build–test cycle.",
+      "requires": [
+        "biotechnology/recombinant-dna"
+      ]
+    },
+    {
+      "slug": "metabolic-engineering",
+      "title": "Metabolic engineering",
+      "summary": "Engineering microbes to make fuels, chemicals and medicines.",
+      "requires": [
+        "biotechnology/synthetic-biology",
+        "microbiology/microbial-metabolism"
+      ]
+    },
+    {
+      "slug": "bioprocessing",
+      "title": "Bioprocess engineering",
+      "summary": "Bioreactors, growth and production kinetics at scale, and downstream processing.",
+      "requires": [
+        "biotechnology/protein-production"
+      ]
+    },
+    {
+      "slug": "agricultural-biotechnology",
+      "title": "Plant and agricultural biotechnology",
+      "summary": "Transgenic and genome-edited crops, their traits and how they are regulated.",
+      "requires": [
+        "biotechnology/genome-editing"
+      ]
+    },
+    {
+      "slug": "biosafety-ethics",
+      "title": "Biosafety, biosecurity and ethics",
+      "summary": "Containment, dual-use research, regulation and the ethics of modifying living things.",
+      "requires": [
+        "biotechnology/genome-editing",
+        "biotechnology/synthetic-biology"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

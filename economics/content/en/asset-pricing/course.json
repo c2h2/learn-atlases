@@ -1,0 +1,101 @@
+{
+  "slug": "asset-pricing",
+  "title": "Asset Pricing",
+  "full_title": "Asset Pricing and Portfolio Choice",
+  "area": "finance",
+  "level": 3,
+  "order": 140,
+  "tagline": "Returns and risk aversion, mean–variance portfolio choice, the CAPM, factor models, market efficiency, the stochastic discount factor, consumption-based pricing, fixed income and behavioural finance",
+  "summary": "Why do some assets earn higher average returns than others? This course develops the theory and evidence of asset pricing: expected utility and risk aversion, mean–variance portfolio choice, the capital asset pricing model and multifactor models, market efficiency and its anomalies, the stochastic discount factor that unifies the theory, the equity premium puzzle, the term structure of interest rates, and the limits to arbitrage.",
+  "overview": [],
+  "prerequisites": [
+    "corporate-finance",
+    "econometrics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "returns-and-risk",
+      "title": "Returns, risk and risk aversion",
+      "summary": "Measuring returns, the statistical properties of asset returns, expected utility and the price of risk.",
+      "requires": [
+        "corporate-finance/risk-and-return",
+        "econometrics/economic-data"
+      ]
+    },
+    {
+      "slug": "portfolio-choice",
+      "title": "Mean–variance portfolio choice",
+      "summary": "Diversification, the efficient frontier, the tangency portfolio and the two-fund separation theorem.",
+      "requires": [
+        "asset-pricing/returns-and-risk",
+        "mathematical-economics/constrained-optimisation"
+      ]
+    },
+    {
+      "slug": "capm",
+      "title": "The capital asset pricing model",
+      "summary": "Equilibrium with mean–variance investors, the security market line, beta, and empirical tests of the CAPM.",
+      "requires": [
+        "asset-pricing/portfolio-choice"
+      ]
+    },
+    {
+      "slug": "factor-models",
+      "title": "Arbitrage pricing and factor models",
+      "summary": "The arbitrage pricing theory, size, value and momentum factors, and how factor models are estimated.",
+      "requires": [
+        "asset-pricing/capm",
+        "econometrics/multiple-regression"
+      ]
+    },
+    {
+      "slug": "market-efficiency",
+      "title": "Market efficiency",
+      "summary": "Weak, semi-strong and strong forms, event studies, return predictability and the anomalies literature.",
+      "requires": [
+        "asset-pricing/factor-models"
+      ]
+    },
+    {
+      "slug": "stochastic-discount-factor",
+      "title": "The stochastic discount factor",
+      "summary": "No arbitrage and state prices, the fundamental pricing equation, and how it unifies asset-pricing models.",
+      "requires": [
+        "asset-pricing/capm"
+      ]
+    },
+    {
+      "slug": "consumption-based-pricing",
+      "title": "Consumption-based asset pricing",
+      "summary": "The consumption CAPM, the equity-premium and risk-free-rate puzzles, and habit and long-run-risk explanations.",
+      "requires": [
+        "asset-pricing/stochastic-discount-factor",
+        "mathematical-economics/dynamic-optimisation"
+      ]
+    },
+    {
+      "slug": "fixed-income",
+      "title": "Fixed income and the term structure",
+      "summary": "Spot and forward rates, bootstrapping a yield curve, convexity and immunisation, and an introduction to term-structure models.",
+      "requires": [
+        "asset-pricing/stochastic-discount-factor",
+        "corporate-finance/valuing-bonds"
+      ]
+    },
+    {
+      "slug": "behavioural-finance",
+      "title": "Limits to arbitrage and behavioural finance",
+      "summary": "Noise traders, limits to arbitrage, bubbles, and behavioural explanations of asset-pricing anomalies.",
+      "requires": [
+        "asset-pricing/market-efficiency"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "derivatives",
+    "time-series"
+  ]
+}

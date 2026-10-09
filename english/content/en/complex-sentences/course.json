@@ -1,0 +1,107 @@
+{
+  "slug": "complex-sentences",
+  "title": "Complex Sentences",
+  "full_title": "Complex Sentences: Clauses, Conditionals and Reported Speech",
+  "area": "grammar",
+  "level": 3,
+  "order": 130,
+  "tagline": "Clauses and sentences, relative clauses, noun clauses, adverbial clauses, conditionals, wishes and the unreal past, reported speech, participle and infinitive clauses, emphasis and inversion, and ellipsis",
+  "summary": "Upper-intermediate English is built from clauses inside clauses. This course explains how complex sentences are structured: relative, noun and adverbial clauses, the full system of conditionals and unreal meanings, reported speech, participle and infinitive clauses, the structures English uses for emphasis, such as cleft sentences and inversion, and the ways it avoids repetition.",
+  "overview": [],
+  "prerequisites": [
+    "tense-and-aspect",
+    "verb-patterns"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "clause-structure",
+      "title": "Clauses and sentences",
+      "summary": "Main and subordinate clauses, finite and non-finite clauses, and how to find the structure of a long sentence.",
+      "requires": [
+        "verb-patterns/object-and-verb",
+        "tense-and-aspect/tenses-in-texts"
+      ]
+    },
+    {
+      "slug": "relative-clauses",
+      "title": "Relative clauses",
+      "summary": "*Who*, *which*, *that*, *whose* and *where*, defining and non-defining clauses and their commas, prepositions in relative clauses, and why the clause follows the noun where Chinese puts the description before it.",
+      "requires": [
+        "complex-sentences/clause-structure"
+      ]
+    },
+    {
+      "slug": "noun-clauses",
+      "title": "Noun clauses",
+      "summary": "*That*-clauses, *wh*-clauses and *whether* or *if* as subjects and objects, and *it* as a stand-in subject.",
+      "requires": [
+        "complex-sentences/clause-structure"
+      ]
+    },
+    {
+      "slug": "adverbial-clauses",
+      "title": "Adverbial clauses",
+      "summary": "Clauses of time, reason, contrast, purpose and result, and the conjunctions that introduce them.",
+      "requires": [
+        "complex-sentences/clause-structure"
+      ]
+    },
+    {
+      "slug": "conditionals",
+      "title": "Conditionals",
+      "summary": "Real and unreal conditions, *if*, *unless*, *provided* and *in case*, mixed conditionals, and how English marks unreal conditions with tense where Chinese leaves them to context.",
+      "requires": [
+        "complex-sentences/adverbial-clauses"
+      ]
+    },
+    {
+      "slug": "unreal-past",
+      "title": "Wishes and the unreal past",
+      "summary": "*Wish*, *if only*, *it’s time*, *would rather* and *as if*, and the subjunctive of formal English (*I suggest that he be told*).",
+      "requires": [
+        "complex-sentences/conditionals"
+      ]
+    },
+    {
+      "slug": "reported-speech",
+      "title": "Reported speech",
+      "summary": "Reporting statements, questions and commands, shifting tenses and pronouns, and choosing reporting verbs such as *claim*, *suggest* and *deny*.",
+      "requires": [
+        "complex-sentences/noun-clauses"
+      ]
+    },
+    {
+      "slug": "participle-infinitive-clauses",
+      "title": "Participle and infinitive clauses",
+      "summary": "Reduced clauses such as *Arriving late, she …* and *the man sitting by the door*, and dangling participles.",
+      "requires": [
+        "complex-sentences/relative-clauses",
+        "complex-sentences/adverbial-clauses"
+      ]
+    },
+    {
+      "slug": "emphasis-inversion",
+      "title": "Emphasis: clefts, fronting and inversion",
+      "summary": "*It*-clefts and *wh*-clefts, fronting, and inversion after negative adverbials (*Never have I seen …*) in formal English.",
+      "requires": [
+        "complex-sentences/participle-infinitive-clauses"
+      ]
+    },
+    {
+      "slug": "ellipsis-substitution",
+      "title": "Ellipsis and substitution",
+      "summary": "Leaving words out, and using *so*, *do so*, *one* and *that* to avoid repetition.",
+      "requires": [
+        "complex-sentences/clause-structure"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "essay-writing",
+    "academic-reading",
+    "linguistics"
+  ]
+}

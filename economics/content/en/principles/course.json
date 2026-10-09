@@ -1,0 +1,101 @@
+{
+  "slug": "principles",
+  "title": "Principles of Economics",
+  "full_title": "Principles of Economics",
+  "area": "micro",
+  "level": 1,
+  "order": 10,
+  "tagline": "Scarcity and trade, supply and demand, elasticity, markets and welfare, firms and market power, and a first look at the macroeconomy",
+  "summary": "Economics studies how people, firms and governments choose when resources are scarce. This course introduces the economic way of thinking: opportunity cost and the gains from trade, supply and demand, elasticity, the efficiency of markets and why they sometimes fail, and the behaviour of firms under competition and monopoly. It ends with a first look at the economy as a whole — national income, inflation, unemployment, money and economic policy.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "thinking-like-an-economist",
+      "title": "Thinking like an economist",
+      "summary": "Scarcity, opportunity cost, marginal reasoning, incentives and the use of models in economics.",
+      "requires": []
+    },
+    {
+      "slug": "gains-from-trade",
+      "title": "Specialisation and the gains from trade",
+      "summary": "Production possibilities, absolute and comparative advantage, and why voluntary exchange can benefit both sides.",
+      "requires": [
+        "principles/thinking-like-an-economist"
+      ]
+    },
+    {
+      "slug": "supply-and-demand",
+      "title": "Supply and demand",
+      "summary": "Demand and supply curves, market equilibrium, and how equilibrium responds when either curve shifts.",
+      "requires": [
+        "principles/thinking-like-an-economist"
+      ]
+    },
+    {
+      "slug": "elasticity",
+      "title": "Elasticity",
+      "summary": "Price, income and cross-price elasticities, how to measure them, and what they imply for spending and revenue.",
+      "requires": [
+        "principles/supply-and-demand"
+      ]
+    },
+    {
+      "slug": "markets-and-welfare",
+      "title": "Markets, welfare and government intervention",
+      "summary": "Consumer and producer surplus, the efficiency of competitive markets, and the effects of taxes, subsidies and price controls.",
+      "requires": [
+        "principles/elasticity"
+      ]
+    },
+    {
+      "slug": "market-failure",
+      "title": "Externalities and public goods",
+      "summary": "Why markets misallocate resources when costs or benefits fall on others, and the case for corrective taxes, regulation and public provision.",
+      "requires": [
+        "principles/markets-and-welfare"
+      ]
+    },
+    {
+      "slug": "firms-and-costs",
+      "title": "Firms, costs and competition",
+      "summary": "Production and costs in the short and long run, and the behaviour of firms in perfectly competitive markets.",
+      "requires": [
+        "principles/supply-and-demand"
+      ]
+    },
+    {
+      "slug": "market-power",
+      "title": "Monopoly and imperfect competition",
+      "summary": "How firms with market power set prices, the welfare cost of monopoly, and a first look at oligopoly and monopolistic competition.",
+      "requires": [
+        "principles/firms-and-costs",
+        "principles/markets-and-welfare"
+      ]
+    },
+    {
+      "slug": "measuring-the-macroeconomy",
+      "title": "Measuring the macroeconomy",
+      "summary": "National income accounting, real and nominal GDP, price indices and the measurement of unemployment.",
+      "requires": [
+        "principles/thinking-like-an-economist"
+      ]
+    },
+    {
+      "slug": "macroeconomic-policy",
+      "title": "Money, fluctuations and policy",
+      "summary": "Money and inflation, short-run fluctuations in aggregate demand and supply, and the roles of monetary and fiscal policy.",
+      "requires": [
+        "principles/measuring-the-macroeconomy",
+        "principles/supply-and-demand"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "microeconomics",
+    "macroeconomics"
+  ]
+}

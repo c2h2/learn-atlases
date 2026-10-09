@@ -1,0 +1,96 @@
+{
+  "slug": "behaviour",
+  "title": "Animal Behaviour",
+  "full_title": "Animal Behaviour",
+  "area": "neuro",
+  "level": 3,
+  "order": 150,
+  "tagline": "Tinbergen’s questions, mechanisms and learning, foraging, conflict and game theory, communication, mating systems, cooperation and migration",
+  "summary": "Why does a bird sing at dawn, a honeybee dance or a female spider eat her mate? This course asks Tinbergen’s four questions — mechanism, development, function and evolution — and covers the genetic, hormonal and neural basis of behaviour, learning and cognition, foraging decisions, conflict and evolutionary game theory, communication, mating systems and parental care, cooperation and social insects, and migration.",
+  "overview": [],
+  "prerequisites": [
+    "evolution",
+    "ecology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "studying-behaviour",
+      "title": "Studying behaviour",
+      "summary": "Tinbergen’s four questions, the rise of ethology and the methods of behavioural research.",
+      "requires": [
+        "evolution/natural-selection"
+      ]
+    },
+    {
+      "slug": "mechanisms-of-behaviour",
+      "title": "Mechanisms of behaviour",
+      "summary": "Genes, hormones and neurons in behaviour, and how behaviour develops.",
+      "requires": [
+        "behaviour/studying-behaviour"
+      ]
+    },
+    {
+      "slug": "learning-cognition",
+      "title": "Learning and cognition",
+      "summary": "Imprinting, conditioning, social learning and the study of animal cognition.",
+      "requires": [
+        "behaviour/mechanisms-of-behaviour"
+      ]
+    },
+    {
+      "slug": "foraging",
+      "title": "Foraging",
+      "summary": "Optimal foraging theory, risk-sensitive choice and decisions about where and what to eat.",
+      "requires": [
+        "behaviour/studying-behaviour",
+        "ecology/predation-parasitism"
+      ]
+    },
+    {
+      "slug": "conflict-game-theory",
+      "title": "Conflict and evolutionary game theory",
+      "summary": "Hawks and doves, evolutionarily stable strategies and the settlement of contests.",
+      "requires": [
+        "behaviour/foraging"
+      ]
+    },
+    {
+      "slug": "communication",
+      "title": "Communication",
+      "summary": "Signals and their honesty, deception, and the evolution of animal communication.",
+      "requires": [
+        "behaviour/studying-behaviour"
+      ]
+    },
+    {
+      "slug": "mating-systems",
+      "title": "Mating systems and parental care",
+      "summary": "Monogamy and polygamy, sperm competition, and the evolution of parental care.",
+      "requires": [
+        "behaviour/communication",
+        "evolution/sexual-selection"
+      ]
+    },
+    {
+      "slug": "cooperation",
+      "title": "Cooperation and social behaviour",
+      "summary": "Kin selection and Hamilton’s rule, reciprocity, and eusociality in ants, bees and termites.",
+      "requires": [
+        "behaviour/mating-systems",
+        "behaviour/conflict-game-theory"
+      ]
+    },
+    {
+      "slug": "migration-navigation",
+      "title": "Migration and navigation",
+      "summary": "Orientation with compasses and maps, and the ecology and evolution of migration.",
+      "requires": [
+        "behaviour/foraging"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

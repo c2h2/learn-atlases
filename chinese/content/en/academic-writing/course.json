@@ -1,0 +1,104 @@
+{
+  "slug": "academic-writing",
+  "title": "Academic Writing",
+  "full_title": "Academic Writing and the Thesis",
+  "area": "writing",
+  "level": 4,
+  "order": 280,
+  "tagline": "What research is, choosing a topic, finding literature, reading and notes, the literature review, structure and argument, citation and references, academic integrity, the language of scholarship, and the thesis and its defence",
+  "summary": "A thesis in Chinese language or literature asks a question that has not yet been answered, places it among earlier work and answers it with evidence. This course covers choosing a topic, searching databases such as CNKI, reading and taking notes, writing a literature review, structuring the argument of a paper, citing according to the national standard, academic integrity, the language of scholarship, and writing and defending a graduation thesis.",
+  "overview": [],
+  "prerequisites": [
+    "argumentative-writing"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "what-is-research",
+      "title": "What research is",
+      "summary": "Questions, evidence and contribution in the study of language and literature, and the kinds of paper.",
+      "requires": [
+        "argumentative-writing/what-is-argument"
+      ]
+    },
+    {
+      "slug": "choosing-topic",
+      "title": "Choosing a topic",
+      "summary": "From an interest to a question that can be answered, and narrowing a topic.",
+      "requires": [
+        "academic-writing/what-is-research"
+      ]
+    },
+    {
+      "slug": "finding-literature",
+      "title": "Finding literature",
+      "summary": "Libraries, CNKI and other databases, databases of classical texts, and keeping track of sources.",
+      "requires": [
+        "academic-writing/choosing-topic"
+      ]
+    },
+    {
+      "slug": "reading-notes",
+      "title": "Reading and notes",
+      "summary": "Reading scholarship critically, and notes that keep quotation, paraphrase and one’s own ideas apart.",
+      "requires": [
+        "academic-writing/finding-literature"
+      ]
+    },
+    {
+      "slug": "literature-review",
+      "title": "The literature review",
+      "summary": "Synthesising earlier work by question rather than by author, and finding the gap.",
+      "requires": [
+        "academic-writing/reading-notes"
+      ]
+    },
+    {
+      "slug": "structure-argument",
+      "title": "Structure and argument",
+      "summary": "Introduction, body and conclusion, primary texts as evidence, and close reading in an argument.",
+      "requires": [
+        "academic-writing/literature-review"
+      ]
+    },
+    {
+      "slug": "citation",
+      "title": "Citation and references",
+      "summary": "Direct and indirect quotation, footnotes, and the national standard for references, GB/T 7714—2015.",
+      "requires": [
+        "academic-writing/structure-argument"
+      ]
+    },
+    {
+      "slug": "integrity",
+      "title": "Academic integrity",
+      "summary": "Plagiarism, self-plagiarism and fabrication, similarity checking, and using AI tools within the rules.",
+      "requires": [
+        "academic-writing/citation"
+      ]
+    },
+    {
+      "slug": "academic-language",
+      "title": "The language of scholarship",
+      "summary": "Precision, caution and economy in academic Chinese, and avoiding both jargon and grand empty phrases.",
+      "requires": [
+        "academic-writing/structure-argument"
+      ]
+    },
+    {
+      "slug": "thesis-defence",
+      "title": "The thesis and its defence",
+      "summary": "Planning and writing a graduation thesis, working with a supervisor, and the oral defence.",
+      "requires": [
+        "academic-writing/integrity",
+        "academic-writing/academic-language"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "classical-criticism",
+    "history-of-chinese"
+  ]
+}

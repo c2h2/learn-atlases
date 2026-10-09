@@ -1,0 +1,98 @@
+{
+  "slug": "econometrics",
+  "title": "Econometrics",
+  "full_title": "Introductory Econometrics",
+  "area": "methods",
+  "level": 2,
+  "order": 60,
+  "tagline": "Economic data, simple and multiple regression, inference, functional form and specification, heteroskedasticity, binary outcomes, panel data and instrumental variables",
+  "summary": "Econometrics uses data to measure economic relationships and test economic theories. This course develops linear regression from first principles — estimation by ordinary least squares, its statistical properties, hypothesis tests and confidence intervals — and then the tools that real data demand: functional form and dummy variables, heteroskedasticity and robust inference, models for binary outcomes, panel data and instrumental variables. Probability and statistical inference are reviewed briefly; their full treatment is in the Maths Atlas.",
+  "overview": [],
+  "prerequisites": [
+    "mathematical-economics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "economic-data",
+      "title": "Economic data and the aims of econometrics",
+      "summary": "Cross-section, time-series and panel data, correlation versus causation, and a review of the probability and statistics used in the course.",
+      "requires": [
+        "mathematical-economics/functions-and-models"
+      ]
+    },
+    {
+      "slug": "simple-regression",
+      "title": "The simple regression model",
+      "summary": "Ordinary least squares with one regressor, its algebraic properties, goodness of fit and the interpretation of coefficients.",
+      "requires": [
+        "econometrics/economic-data",
+        "mathematical-economics/unconstrained-optimisation"
+      ]
+    },
+    {
+      "slug": "multiple-regression",
+      "title": "Multiple regression",
+      "summary": "OLS with several regressors in matrix form, partialling out, omitted-variable bias and the Gauss–Markov theorem.",
+      "requires": [
+        "econometrics/simple-regression",
+        "mathematical-economics/matrices-and-linear-models"
+      ]
+    },
+    {
+      "slug": "inference",
+      "title": "Inference in regression",
+      "summary": "Sampling distributions of OLS estimators, t and F tests, confidence intervals and large-sample inference.",
+      "requires": [
+        "econometrics/multiple-regression"
+      ]
+    },
+    {
+      "slug": "specification",
+      "title": "Functional form, dummy variables and specification",
+      "summary": "Logarithms, quadratics and interactions, qualitative regressors, and tests of model specification.",
+      "requires": [
+        "econometrics/inference"
+      ]
+    },
+    {
+      "slug": "heteroskedasticity",
+      "title": "Heteroskedasticity and robust inference",
+      "summary": "Consequences of heteroskedasticity, robust and clustered standard errors, and weighted least squares.",
+      "requires": [
+        "econometrics/inference"
+      ]
+    },
+    {
+      "slug": "binary-outcomes",
+      "title": "Binary outcomes: linear probability, probit and logit",
+      "summary": "Models for yes-or-no outcomes, maximum likelihood estimation and the interpretation of marginal effects.",
+      "requires": [
+        "econometrics/specification"
+      ]
+    },
+    {
+      "slug": "panel-data",
+      "title": "Panel data",
+      "summary": "Pooled, first-difference, fixed-effects and random-effects estimators for repeated observations of the same units.",
+      "requires": [
+        "econometrics/specification",
+        "econometrics/heteroskedasticity"
+      ]
+    },
+    {
+      "slug": "instrumental-variables",
+      "title": "Endogeneity and instrumental variables",
+      "summary": "Measurement error, simultaneity and omitted variables, instrumental variables and two-stage least squares.",
+      "requires": [
+        "econometrics/inference"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "causal-inference",
+    "time-series"
+  ]
+}

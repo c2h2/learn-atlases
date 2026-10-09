@@ -1,0 +1,104 @@
+{
+  "slug": "pre-qin-literature",
+  "title": "Pre-Qin Literature",
+  "full_title": "Pre-Qin Literature: From Myth to the Masters",
+  "area": "ancient",
+  "level": 1,
+  "order": 60,
+  "tagline": "Myths, the *Book of Songs*, its forms and techniques, historical prose, narrative in the *Zuo Zhuan*, the *Analects* and the *Mencius*, Zhuangzi and the other Masters, Qu Yuan and the *Li Sao*, the *Songs of Chu*, and the legacy of early literature",
+  "summary": "The literature of the centuries before the Qin unification laid foundations that Chinese writers drew on for the next two thousand years. This course reads the early myths, the *Book of Songs*, the historical prose of the *Book of Documents*, the *Zuo Zhuan* and the *Discourses of the States*, the prose of Confucius, Mencius, Zhuangzi and the other Masters, and the poetry of Qu Yuan and the *Songs of Chu*.",
+  "overview": [],
+  "prerequisites": [
+    "classical-chinese-1"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "myths",
+      "title": "Myths",
+      "summary": "The fragmentary myths of ancient China — Nüwa, Pangu, Kuafu, Jingwei — where they are recorded, and why they survive only in pieces.",
+      "requires": [
+        "classical-chinese-1/what-is-wenyan"
+      ]
+    },
+    {
+      "slug": "book-of-songs",
+      "title": "The *Book of Songs*",
+      "summary": "The 305 poems, how the anthology was compiled, its Airs, Odes and Hymns, and how it became a Confucian classic.",
+      "requires": [
+        "pre-qin-literature/myths"
+      ]
+    },
+    {
+      "slug": "songs-forms",
+      "title": "Form and technique in the *Book of Songs*",
+      "summary": "Four-character lines, repetition across stanzas, and the techniques of *fu*, *bi* and *xing*.",
+      "requires": [
+        "pre-qin-literature/book-of-songs"
+      ]
+    },
+    {
+      "slug": "historical-prose",
+      "title": "Historical prose",
+      "summary": "The *Book of Documents*, the *Spring and Autumn Annals*, the *Zuo Zhuan*, the *Discourses of the States* and the *Intrigues of the Warring States*.",
+      "requires": [
+        "pre-qin-literature/book-of-songs"
+      ]
+    },
+    {
+      "slug": "zuo-zhuan",
+      "title": "Narrative in the *Zuo Zhuan*",
+      "summary": "How the *Zuo Zhuan* tells of battles, speeches and people, and its influence on later historical writing.",
+      "requires": [
+        "pre-qin-literature/historical-prose"
+      ]
+    },
+    {
+      "slug": "analects-mencius",
+      "title": "The *Analects* and the *Mencius*",
+      "summary": "Recorded sayings and argument: the style of the *Analects* and the persuasive prose of Mencius.",
+      "requires": [
+        "pre-qin-literature/historical-prose"
+      ]
+    },
+    {
+      "slug": "zhuangzi-masters",
+      "title": "Zhuangzi and the other Masters",
+      "summary": "The parables of Zhuangzi, the essays of Xunzi and Han Feizi, and the Mohists and other schools as literature.",
+      "requires": [
+        "pre-qin-literature/analects-mencius"
+      ]
+    },
+    {
+      "slug": "qu-yuan",
+      "title": "Qu Yuan and the *Li Sao*",
+      "summary": "Qu Yuan’s life and the *Li Sao*: its fragrant plants and fair ones, its journeys among the gods, and its place in Chinese culture.",
+      "requires": [
+        "pre-qin-literature/songs-forms"
+      ]
+    },
+    {
+      "slug": "songs-of-chu",
+      "title": "The *Songs of Chu*",
+      "summary": "The *Nine Songs*, the *Heavenly Questions* and other pieces, the culture of Chu, and how the *Chuci* differ from the *Book of Songs*.",
+      "requires": [
+        "pre-qin-literature/qu-yuan"
+      ]
+    },
+    {
+      "slug": "legacy",
+      "title": "The legacy of pre-Qin literature",
+      "summary": "The *Book of Songs* and the *Songs of Chu* as the two sources of Chinese poetry, the traditions of prose founded in this period, and how later writers read them.",
+      "requires": [
+        "pre-qin-literature/zhuangzi-masters",
+        "pre-qin-literature/songs-of-chu"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "han-to-nanbeichao",
+    "classical-criticism"
+  ]
+}

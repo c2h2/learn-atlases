@@ -1,0 +1,100 @@
+{
+  "slug": "dynamics",
+  "title": "Dynamics",
+  "full_title": "Engineering Dynamics",
+  "area": "dynamics",
+  "level": 1,
+  "order": 20,
+  "tagline": "Kinematics and kinetics of particles and rigid bodies: Newton's second law, work and energy, impulse and momentum, impact and motion in three dimensions",
+  "summary": "Dynamics explains how forces produce motion. The course treats the kinematics of particles in rectangular, normal–tangential and polar coordinates, Newton's second law, work and energy, impulse, momentum and impact, and then the planar kinematics and kinetics of rigid bodies, ending with rotating frames, Euler's equations and gyroscopic motion in three dimensions.",
+  "overview": [],
+  "prerequisites": [
+    "statics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "particle-kinematics",
+      "title": "Kinematics of particles",
+      "summary": "Position, velocity and acceleration in rectilinear and curvilinear motion, in rectangular, normal–tangential and polar coordinates.",
+      "requires": [
+        "statics/forces-vectors"
+      ]
+    },
+    {
+      "slug": "relative-motion",
+      "title": "Relative and constrained motion",
+      "summary": "Relative motion of particles, translating reference frames and the dependent motion of connected bodies.",
+      "requires": [
+        "dynamics/particle-kinematics"
+      ]
+    },
+    {
+      "slug": "newtons-laws",
+      "title": "Newton's second law for particles",
+      "summary": "Equations of motion in different coordinate systems, free-body and kinetic diagrams, and systems of particles.",
+      "requires": [
+        "dynamics/particle-kinematics",
+        "statics/particle-equilibrium"
+      ]
+    },
+    {
+      "slug": "work-energy",
+      "title": "Work and energy",
+      "summary": "The work of a force, kinetic and potential energy, conservative forces, the work–energy principle and power.",
+      "requires": [
+        "dynamics/newtons-laws"
+      ]
+    },
+    {
+      "slug": "impulse-momentum",
+      "title": "Impulse, momentum and impact",
+      "summary": "Linear impulse and momentum, conservation of momentum, direct and oblique impact with the coefficient of restitution, and angular momentum.",
+      "requires": [
+        "dynamics/newtons-laws"
+      ]
+    },
+    {
+      "slug": "rigid-body-kinematics",
+      "title": "Planar kinematics of rigid bodies",
+      "summary": "Rotation about a fixed axis, general plane motion, instantaneous centres, and velocities and accelerations in rotating frames.",
+      "requires": [
+        "dynamics/relative-motion"
+      ]
+    },
+    {
+      "slug": "rigid-body-kinetics",
+      "title": "Planar kinetics of rigid bodies",
+      "summary": "Mass moments of inertia and the equations of motion of rigid bodies in translation, rotation and general plane motion.",
+      "requires": [
+        "dynamics/rigid-body-kinematics",
+        "dynamics/newtons-laws"
+      ]
+    },
+    {
+      "slug": "rigid-body-energy-momentum",
+      "title": "Energy and momentum methods for rigid bodies",
+      "summary": "Work–energy and impulse–momentum principles for rigid bodies, conservation of angular momentum and eccentric impact.",
+      "requires": [
+        "dynamics/rigid-body-kinetics",
+        "dynamics/work-energy",
+        "dynamics/impulse-momentum"
+      ]
+    },
+    {
+      "slug": "three-dimensional-dynamics",
+      "title": "Rigid bodies in three dimensions",
+      "summary": "Angular velocity and acceleration in three dimensions, the inertia tensor, Euler's equations and gyroscopic motion.",
+      "requires": [
+        "dynamics/rigid-body-kinetics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "mechanisms",
+    "vibrations",
+    "fluid-mechanics"
+  ]
+}

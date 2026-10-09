@@ -1,0 +1,97 @@
+{
+  "slug": "bioinformatics",
+  "title": "Bioinformatics",
+  "full_title": "Bioinformatics",
+  "area": "quantitative",
+  "level": 3,
+  "order": 180,
+  "tagline": "Sequence databases, alignment, BLAST, profiles and hidden Markov models, phylogenetic inference, gene finding, assembly and variant calling, expression analysis and machine learning",
+  "summary": "Bioinformatics is the computational analysis of biological data, above all of sequences. This course covers the algorithms and statistics behind sequence alignment and database searches, profiles and hidden Markov models, phylogenetic inference, gene finding, genome assembly and variant calling, the analysis of gene expression, and machine learning for biological data.",
+  "overview": [],
+  "prerequisites": [
+    "biostatistics",
+    "molecular-biology"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "sequences-databases",
+      "title": "Biological sequences and databases",
+      "summary": "Sequence formats, the major databases and programming for biologists.",
+      "requires": [
+        "molecular-biology/dna-structure"
+      ]
+    },
+    {
+      "slug": "pairwise-alignment",
+      "title": "Pairwise sequence alignment",
+      "summary": "Substitution matrices, gap penalties and the dynamic-programming algorithms of Needleman–Wunsch and Smith–Waterman.",
+      "requires": [
+        "bioinformatics/sequences-databases"
+      ]
+    },
+    {
+      "slug": "database-search",
+      "title": "Searching sequence databases",
+      "summary": "BLAST and its heuristics, and the statistics of alignment scores and E-values.",
+      "requires": [
+        "bioinformatics/pairwise-alignment",
+        "biostatistics/hypothesis-testing"
+      ]
+    },
+    {
+      "slug": "multiple-alignment",
+      "title": "Multiple alignment and profiles",
+      "summary": "Progressive alignment, sequence profiles and hidden Markov models of protein families.",
+      "requires": [
+        "bioinformatics/pairwise-alignment"
+      ]
+    },
+    {
+      "slug": "phylogenetic-inference",
+      "title": "Phylogenetic inference",
+      "summary": "Distance, parsimony, maximum-likelihood and Bayesian methods for building trees from sequences.",
+      "requires": [
+        "bioinformatics/multiple-alignment"
+      ]
+    },
+    {
+      "slug": "gene-finding",
+      "title": "Gene finding and annotation",
+      "summary": "Hidden Markov models for genes, motif discovery and the annotation of genomes.",
+      "requires": [
+        "bioinformatics/multiple-alignment"
+      ]
+    },
+    {
+      "slug": "assembly-variants",
+      "title": "Assembly, read mapping and variant calling",
+      "summary": "De Bruijn graphs, aligning reads to a reference and calling variants from them.",
+      "requires": [
+        "bioinformatics/pairwise-alignment"
+      ]
+    },
+    {
+      "slug": "expression-analysis",
+      "title": "Analysing gene expression",
+      "summary": "Normalisation, differential expression, false discovery rates and the clustering of RNA-sequencing data.",
+      "requires": [
+        "bioinformatics/assembly-variants",
+        "biostatistics/linear-models"
+      ]
+    },
+    {
+      "slug": "machine-learning",
+      "title": "Machine learning in biology",
+      "summary": "Classification, dimensionality reduction and deep learning applied to sequences, images and omics data.",
+      "requires": [
+        "bioinformatics/expression-analysis"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "systems-biology"
+  ]
+}

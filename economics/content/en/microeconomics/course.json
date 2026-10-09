@@ -1,0 +1,102 @@
+{
+  "slug": "microeconomics",
+  "title": "Microeconomics",
+  "full_title": "Intermediate Microeconomics",
+  "area": "micro",
+  "level": 2,
+  "order": 40,
+  "tagline": "Preferences and utility, consumer demand, income and substitution effects, choice under uncertainty, production and cost, competitive and general equilibrium, and welfare",
+  "summary": "Microeconomics studies how households and firms make choices and how those choices interact in markets. This course develops the theory of the consumer — preferences, utility, demand, the measurement of welfare and choice under uncertainty — and of the firm — technology, cost and supply — and then combines them in competitive and general equilibrium, asking when markets allocate resources efficiently and when they fail.",
+  "overview": [],
+  "prerequisites": [
+    "principles",
+    "mathematical-economics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "preferences-and-utility",
+      "title": "Preferences and utility",
+      "summary": "Budget sets, preference relations, indifference curves, the marginal rate of substitution and utility functions that represent preferences.",
+      "requires": [
+        "principles/thinking-like-an-economist",
+        "mathematical-economics/functions-of-several-variables"
+      ]
+    },
+    {
+      "slug": "consumer-choice",
+      "title": "Consumer choice and demand",
+      "summary": "Utility maximisation, Marshallian demand, the indirect utility function and Roy’s identity.",
+      "requires": [
+        "microeconomics/preferences-and-utility",
+        "mathematical-economics/constrained-optimisation"
+      ]
+    },
+    {
+      "slug": "slutsky-and-welfare",
+      "title": "Income and substitution effects",
+      "summary": "Expenditure minimisation, Hicksian demand, the Slutsky equation, and measuring welfare changes with compensating and equivalent variation.",
+      "requires": [
+        "microeconomics/consumer-choice",
+        "mathematical-economics/comparative-statics"
+      ]
+    },
+    {
+      "slug": "labour-and-intertemporal-choice",
+      "title": "Endowments, labour supply and saving",
+      "summary": "Choice with endowments, the trade-off between labour and leisure, and consumption over time with borrowing and lending.",
+      "requires": [
+        "microeconomics/consumer-choice"
+      ]
+    },
+    {
+      "slug": "uncertainty",
+      "title": "Choice under uncertainty",
+      "summary": "Lotteries, expected utility, risk aversion, certainty equivalents and the demand for insurance.",
+      "requires": [
+        "microeconomics/consumer-choice"
+      ]
+    },
+    {
+      "slug": "production-and-cost",
+      "title": "Production and cost",
+      "summary": "Technology and production functions, returns to scale, cost minimisation and cost curves in the short and long run.",
+      "requires": [
+        "principles/firms-and-costs",
+        "mathematical-economics/constrained-optimisation"
+      ]
+    },
+    {
+      "slug": "competitive-markets",
+      "title": "Profit maximisation and competitive markets",
+      "summary": "Firm and industry supply, and short- and long-run equilibrium in perfectly competitive markets.",
+      "requires": [
+        "microeconomics/production-and-cost"
+      ]
+    },
+    {
+      "slug": "general-equilibrium",
+      "title": "General equilibrium and exchange",
+      "summary": "The Edgeworth box, Walrasian equilibrium and its existence, and general equilibrium with production.",
+      "requires": [
+        "microeconomics/consumer-choice",
+        "microeconomics/competitive-markets"
+      ]
+    },
+    {
+      "slug": "welfare-theorems",
+      "title": "Efficiency, welfare and market failure",
+      "summary": "Pareto efficiency, the two welfare theorems, social welfare functions, and how externalities and public goods break the first welfare theorem.",
+      "requires": [
+        "microeconomics/general-equilibrium"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "industrial-organisation",
+    "public-economics",
+    "information-economics"
+  ]
+}

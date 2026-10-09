@@ -1,0 +1,96 @@
+{
+  "slug": "oceanography",
+  "title": "Oceanography",
+  "full_title": "Physical and Chemical Oceanography",
+  "area": "ocean",
+  "level": 2,
+  "order": 100,
+  "tagline": "Ocean basins, seawater, air–sea fluxes, wind-driven and overturning circulation, waves and tides, ocean chemistry, productivity and sea level",
+  "summary": "The ocean covers seven-tenths of the planet and holds far more heat and carbon than the atmosphere. This course covers the shape of the ocean basins, the physical properties of seawater, the exchange of heat and fresh water with the atmosphere, wind-driven currents and Ekman transport, water masses and the overturning circulation, waves and tides, the carbonate chemistry of seawater, nutrients and biological productivity, and sea level.",
+  "overview": [],
+  "prerequisites": [
+    "earth-system"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "ocean-basins",
+      "title": "The ocean basins",
+      "summary": "Seafloor topography, from continental margins and abyssal plains to mid-ocean ridges and trenches.",
+      "requires": [
+        "earth-system/solid-earth"
+      ]
+    },
+    {
+      "slug": "seawater",
+      "title": "Properties of seawater",
+      "summary": "Temperature, salinity and density, the equation of state of seawater, and how water masses are identified.",
+      "requires": []
+    },
+    {
+      "slug": "air-sea-fluxes",
+      "title": "Heat and fresh water at the sea surface",
+      "summary": "The exchange of heat and fresh water between ocean and atmosphere, and the ocean’s surface mixed layer.",
+      "requires": [
+        "oceanography/seawater",
+        "earth-system/energy-balance"
+      ]
+    },
+    {
+      "slug": "wind-driven",
+      "title": "Wind-driven circulation",
+      "summary": "Ekman transport, upwelling, geostrophic currents, gyres and western boundary currents.",
+      "requires": [
+        "oceanography/air-sea-fluxes"
+      ]
+    },
+    {
+      "slug": "overturning",
+      "title": "Water masses and the overturning circulation",
+      "summary": "Deep-water formation, the global overturning circulation and the major water masses of the ocean.",
+      "requires": [
+        "oceanography/seawater",
+        "oceanography/wind-driven"
+      ]
+    },
+    {
+      "slug": "waves-tides",
+      "title": "Waves and tides",
+      "summary": "Wind waves and swell, tsunamis, and the tides raised by the Moon and the Sun.",
+      "requires": [
+        "oceanography/ocean-basins"
+      ]
+    },
+    {
+      "slug": "ocean-chemistry",
+      "title": "Ocean chemistry and the carbonate system",
+      "summary": "Dissolved salts and gases, the carbonate system, pH and alkalinity, and ocean acidification.",
+      "requires": [
+        "oceanography/seawater"
+      ]
+    },
+    {
+      "slug": "productivity",
+      "title": "Nutrients and biological productivity",
+      "summary": "Phytoplankton and nutrients, the biological pump, and oxygen-minimum zones.",
+      "requires": [
+        "oceanography/ocean-chemistry",
+        "oceanography/wind-driven"
+      ]
+    },
+    {
+      "slug": "sea-level",
+      "title": "Sea level",
+      "summary": "What sets sea level and how it changes — thermal expansion, melting ice, vertical land motion — and how tide gauges and satellites measure it.",
+      "requires": [
+        "oceanography/air-sea-fluxes"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "climate-system",
+    "glaciology"
+  ]
+}

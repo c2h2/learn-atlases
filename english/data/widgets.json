@@ -1,0 +1,265 @@
+{
+  "_doc": "Catalogue of interactive figure types. Authors write ':::widget <type>' blocks with 'key: value' lines; tools/build.js validates them against this file. Param types: expr (expression in 'vars', plus slider names), exprs (';'-separated exprs), cexpr (complex expression in z), num (number or constant expression like pi/2), int, bool, range ('min, max'), enum (one of 'values'), str, list (';'-separated strings), points ('x,y; x,y'), sliders ('a=1:-3:3:0.1; b=…' = value:min:max[:step]), matrix ('a,b; c,d' rows separated by ';'). Every type also accepts 'title' (str) and 'caption' (inline markup, shown under the figure).",
+  "types": {
+    "plot": {
+      "file": "calculus",
+      "title": "Function plotter",
+      "zh": "函数绘图",
+      "desc": "Graphs of one or more functions of x with optional parameter sliders, shading, marked points and a draggable tangent.",
+      "params": {
+        "f": {
+          "type": "exprs",
+          "vars": [
+            "x"
+          ],
+          "required": true,
+          "desc": "functions of x separated by ';' (sliders' names may appear)"
+        },
+        "x": {
+          "type": "range",
+          "default": "-5, 5"
+        },
+        "y": {
+          "type": "range",
+          "desc": "default: fitted to the graphs"
+        },
+        "sliders": {
+          "type": "sliders"
+        },
+        "labels": {
+          "type": "list",
+          "desc": "legend labels (TeX allowed), one per function"
+        },
+        "points": {
+          "type": "points",
+          "desc": "marked points"
+        },
+        "shade": {
+          "type": "range",
+          "desc": "shade under the first function between these x values"
+        },
+        "between": {
+          "type": "bool",
+          "default": "false",
+          "desc": "with shade: fill between the first two functions instead"
+        },
+        "tangent": {
+          "type": "num",
+          "desc": "x0: draggable tangent line to the first function"
+        },
+        "hlines": {
+          "type": "list"
+        },
+        "vlines": {
+          "type": "list"
+        },
+        "equal": {
+          "type": "bool",
+          "default": "false"
+        },
+        "piticks": {
+          "type": "bool",
+          "default": "false"
+        }
+      },
+      "example": "f: sin(a*x); a*x\nsliders: a=1:0.2:3\nx: -2pi, 2pi\npiticks: true",
+      "zh_desc": "一个或多个关于 x 的函数图像，可加参数滑块、阴影、标记点和可拖动的切线。"
+    },
+    "fourier": {
+      "file": "fourier",
+      "title": "Fourier series",
+      "zh": "傅里叶级数",
+      "desc": "Partial sums of the Fourier series of a periodic function on [−π, π] with the coefficient spectrum and the Gibbs overshoot.",
+      "params": {
+        "wave": {
+          "type": "enum",
+          "values": [
+            "square",
+            "sawtooth",
+            "triangle",
+            "pulse",
+            "parabola",
+            "custom"
+          ],
+          "default": "square"
+        },
+        "f": {
+          "type": "expr",
+          "vars": [
+            "x"
+          ],
+          "desc": "for wave: custom (on [−π, π])"
+        },
+        "terms": {
+          "type": "int",
+          "default": "5"
+        },
+        "max": {
+          "type": "int",
+          "default": "60"
+        },
+        "spectrum": {
+          "type": "bool",
+          "default": "true"
+        }
+      },
+      "example": "wave: square\nterms: 7",
+      "zh_desc": "[−π, π] 上周期函数的傅里叶级数部分和、系数谱以及吉布斯过冲。"
+    },
+    "distribution": {
+      "file": "prob",
+      "title": "Probability distributions",
+      "zh": "概率分布",
+      "desc": "PMF/PDF and CDF of a named distribution with parameter sliders, P(a ≤ X ≤ b) shaded, mean ± sd, and an optional normal approximation.",
+      "params": {
+        "dist": {
+          "type": "enum",
+          "values": [
+            "binomial",
+            "poisson",
+            "geometric",
+            "negbinomial",
+            "hypergeometric",
+            "discreteuniform",
+            "normal",
+            "exponential",
+            "uniform",
+            "gamma",
+            "beta",
+            "t",
+            "chisq",
+            "lognormal",
+            "cauchy",
+            "f"
+          ],
+          "required": true
+        },
+        "params": {
+          "type": "str",
+          "desc": "initial parameters, e.g. 'n=10, p=0.3' or 'mu=0, sigma=1'"
+        },
+        "a": {
+          "type": "num"
+        },
+        "b": {
+          "type": "num"
+        },
+        "cdf": {
+          "type": "bool",
+          "default": "false"
+        },
+        "normal": {
+          "type": "bool",
+          "default": "false",
+          "desc": "overlay the normal approximation"
+        }
+      },
+      "example": "dist: binomial\nparams: n=20, p=0.3\na: 4\nb: 8\nnormal: true",
+      "zh_desc": "常见分布的概率质量函数/密度函数和分布函数，带参数滑块、P(a ≤ X ≤ b) 阴影、均值 ± 标准差，可叠加正态近似。"
+    },
+    "markov": {
+      "file": "prob",
+      "title": "Markov chains",
+      "zh": "马尔可夫链",
+      "desc": "State diagram of a Markov chain, a simulated walk, the distribution after n steps and the stationary distribution.",
+      "params": {
+        "matrix": {
+          "type": "matrix",
+          "required": true,
+          "desc": "transition matrix, rows sum to 1"
+        },
+        "states": {
+          "type": "list"
+        },
+        "start": {
+          "type": "int",
+          "default": "0"
+        },
+        "steps": {
+          "type": "int",
+          "default": "20"
+        }
+      },
+      "example": "matrix: 0.9,0.1; 0.5,0.5\nstates: Sunny; Rainy",
+      "zh_desc": "马尔可夫链的状态图、随机游走模拟、n 步后的分布以及平稳分布。"
+    },
+    "graph": {
+      "file": "discrete",
+      "title": "Graphs and graph algorithms",
+      "zh": "图与图算法",
+      "desc": "A draggable graph and a step-by-step algorithm: BFS, DFS, Dijkstra, Prim, Kruskal, topological sort, Euler circuit or greedy colouring.",
+      "params": {
+        "nodes": {
+          "type": "list",
+          "required": true,
+          "desc": "node names; optional positions as 'A@1,2'"
+        },
+        "edges": {
+          "type": "list",
+          "required": true,
+          "desc": "'A-B' or 'A-B:3' (weight); 'A>B' for a directed edge"
+        },
+        "algorithm": {
+          "type": "enum",
+          "values": [
+            "none",
+            "bfs",
+            "dfs",
+            "dijkstra",
+            "prim",
+            "kruskal",
+            "topo",
+            "euler",
+            "colour"
+          ],
+          "default": "none"
+        },
+        "start": {
+          "type": "str"
+        }
+      },
+      "example": "nodes: A; B; C; D; E\nedges: A-B:4; A-C:1; C-B:2; B-D:1; C-D:5; D-E:3\nalgorithm: dijkstra\nstart: A",
+      "zh_desc": "可拖动的图及逐步演示的算法：广度优先、深度优先、迪杰斯特拉、普里姆、克鲁斯卡尔、拓扑排序、欧拉回路或贪心着色。"
+    },
+    "truthtable": {
+      "file": "discrete",
+      "title": "Truth tables",
+      "zh": "真值表",
+      "desc": "Truth table of a propositional formula (¬ ∧ ∨ → ↔ ⊕ or ~ & | -> <-> xor), with sub-formula columns; compares two formulas for equivalence.",
+      "params": {
+        "formula": {
+          "type": "str",
+          "required": true
+        },
+        "compare": {
+          "type": "str",
+          "desc": "second formula: shows whether they are logically equivalent"
+        }
+      },
+      "example": "formula: p -> q\ncompare: ~q -> ~p",
+      "zh_desc": "命题公式的真值表（¬ ∧ ∨ → ↔ ⊕），列出子公式，并可比较两个公式是否逻辑等价。"
+    },
+    "venn": {
+      "file": "discrete",
+      "title": "Venn diagrams",
+      "zh": "维恩图",
+      "desc": "Two or three sets; the regions of a set expression (∪ ∩ \\ ′ or | & - ') are shaded; type a new expression.",
+      "params": {
+        "sets": {
+          "type": "int",
+          "default": "3"
+        },
+        "expr": {
+          "type": "str",
+          "default": "A & (B | C)"
+        },
+        "labels": {
+          "type": "list",
+          "default": "A; B; C"
+        }
+      },
+      "example": "sets: 2\nexpr: (A | B)'",
+      "zh_desc": "两个或三个集合；对集合表达式（∪ ∩ \\ ′）对应的区域着色，也可输入新的表达式。"
+    }
+  }
+}

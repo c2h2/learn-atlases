@@ -1,0 +1,103 @@
+{
+  "slug": "palaeoclimate",
+  "title": "Palaeoclimate",
+  "full_title": "Palaeoclimate",
+  "area": "climate",
+  "level": 3,
+  "order": 180,
+  "tagline": "Climate archives and proxies, dating, ocean-sediment and ice-core records, greenhouse and icehouse climates, orbital cycles and ice ages, abrupt change, the Holocene and the last two millennia",
+  "summary": "Past climates are natural experiments that test our understanding of the climate system. This course covers the archives and proxies that record past climate and how they are dated, the records from ocean sediments and ice cores, and then follows climate through time: greenhouse and icehouse worlds over hundreds of millions of years, the ice ages paced by the Earth’s orbit, abrupt changes, the Holocene and the climate of the last two thousand years.",
+  "overview": [],
+  "prerequisites": [
+    "climate-system",
+    "earth-history",
+    "geochemistry"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "proxies",
+      "title": "Climate archives and proxies",
+      "summary": "How natural archives record climate, and how proxies are calibrated and their uncertainties estimated.",
+      "requires": [
+        "climate-system/climate-statistics"
+      ]
+    },
+    {
+      "slug": "dating",
+      "title": "Dating climate records",
+      "summary": "Radiocarbon and other radiometric ages, layer counting, orbital tuning and age–depth models.",
+      "requires": [
+        "palaeoclimate/proxies",
+        "geochemistry/geochronology",
+        "earth-history/geological-time"
+      ]
+    },
+    {
+      "slug": "ocean-sediments",
+      "title": "Ocean-sediment records",
+      "summary": "Foraminiferal oxygen isotopes, ice volume and deep-ocean temperature, and other marine proxies.",
+      "requires": [
+        "palaeoclimate/proxies",
+        "geochemistry/isotopes-water-carbon"
+      ]
+    },
+    {
+      "slug": "ice-cores",
+      "title": "Ice-core records",
+      "summary": "Trapped air, water isotopes and dust in Antarctic and Greenland ice, and 800,000 years of temperature and greenhouse gases.",
+      "requires": [
+        "palaeoclimate/proxies",
+        "geochemistry/isotopes-water-carbon"
+      ]
+    },
+    {
+      "slug": "deep-time",
+      "title": "Greenhouse and icehouse climates",
+      "summary": "Climate over hundreds of millions of years: the faint young Sun, the carbon-cycle thermostat, hothouse episodes and the Cenozoic cooling.",
+      "requires": [
+        "palaeoclimate/ocean-sediments",
+        "earth-history/cenozoic"
+      ]
+    },
+    {
+      "slug": "orbital-cycles",
+      "title": "Orbital forcing and the ice ages",
+      "summary": "Milankovitch cycles, insolation, and the glacial–interglacial cycles of the last 2.6 million years.",
+      "requires": [
+        "palaeoclimate/ocean-sediments",
+        "palaeoclimate/ice-cores"
+      ]
+    },
+    {
+      "slug": "abrupt-change",
+      "title": "Abrupt climate change",
+      "summary": "Dansgaard–Oeschger and Heinrich events, the Younger Dryas, and the role of the ocean’s overturning circulation.",
+      "requires": [
+        "palaeoclimate/ice-cores",
+        "oceanography/overturning"
+      ]
+    },
+    {
+      "slug": "holocene",
+      "title": "The Holocene",
+      "summary": "The last 11,700 years: deglaciation, the mid-Holocene, shifting monsoons, and climate and early societies.",
+      "requires": [
+        "palaeoclimate/orbital-cycles"
+      ]
+    },
+    {
+      "slug": "last-two-millennia",
+      "title": "The last two thousand years",
+      "summary": "Tree rings, corals, ice and documents, reconstructions of temperature, and how recent warming compares with the past.",
+      "requires": [
+        "palaeoclimate/holocene"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "climate-change"
+  ]
+}

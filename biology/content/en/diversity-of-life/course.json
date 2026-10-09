@@ -1,0 +1,88 @@
+{
+  "slug": "diversity-of-life",
+  "title": "Diversity of Life",
+  "full_title": "The Diversity of Life",
+  "area": "evolution",
+  "level": 1,
+  "order": 50,
+  "tagline": "Classification, the origin of life, bacteria and archaea, protists, fungi, land plants, invertebrates and vertebrates",
+  "summary": "About two million living species have been named, and many more await discovery. This course surveys the tree of life: how organisms are classified, how life began, and the major lineages — bacteria and archaea, protists, fungi, land plants, invertebrates and vertebrates — with their body plans, life cycles and evolutionary history.",
+  "overview": [],
+  "prerequisites": [
+    "evolution"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "classifying-life",
+      "title": "Classifying life",
+      "summary": "Taxonomy and systematics, binomial names, ranks and clades, and the three domains of life.",
+      "requires": [
+        "evolution/phylogenetics"
+      ]
+    },
+    {
+      "slug": "origin-of-life",
+      "title": "The origin and early history of life",
+      "summary": "Prebiotic chemistry, the RNA world, the first cells and the oldest evidence of life.",
+      "requires": [
+        "diversity-of-life/classifying-life"
+      ]
+    },
+    {
+      "slug": "bacteria-archaea",
+      "title": "Bacteria and archaea",
+      "summary": "The structure, metabolic range and major lineages of the prokaryotes.",
+      "requires": [
+        "diversity-of-life/classifying-life"
+      ]
+    },
+    {
+      "slug": "protists",
+      "title": "Protists and the origin of eukaryotes",
+      "summary": "Endosymbiosis, the major eukaryotic supergroups, algae and protozoa.",
+      "requires": [
+        "diversity-of-life/bacteria-archaea"
+      ]
+    },
+    {
+      "slug": "fungi",
+      "title": "Fungi",
+      "summary": "Fungal structure, nutrition and life cycles, and lichens and mycorrhizae.",
+      "requires": [
+        "diversity-of-life/protists"
+      ]
+    },
+    {
+      "slug": "land-plants",
+      "title": "Land plants",
+      "summary": "The move onto land, alternation of generations, and bryophytes, ferns, gymnosperms and flowering plants.",
+      "requires": [
+        "diversity-of-life/protists"
+      ]
+    },
+    {
+      "slug": "invertebrates",
+      "title": "Invertebrate animals",
+      "summary": "Animal body plans from sponges to arthropods and echinoderms, and the Cambrian explosion.",
+      "requires": [
+        "diversity-of-life/protists"
+      ]
+    },
+    {
+      "slug": "vertebrates",
+      "title": "Chordates and vertebrates",
+      "summary": "Fishes, the move onto land, amniotes, birds and mammals.",
+      "requires": [
+        "diversity-of-life/invertebrates"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "microbiology",
+    "plant-biology",
+    "animal-physiology"
+  ]
+}

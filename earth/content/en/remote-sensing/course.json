@@ -1,0 +1,93 @@
+{
+  "slug": "remote-sensing",
+  "title": "Remote Sensing and GIS",
+  "full_title": "Remote Sensing and Geographic Information Systems",
+  "area": "system",
+  "level": 2,
+  "order": 120,
+  "tagline": "Electromagnetic radiation, sensors and orbits, image processing and classification, thermal, microwave, radar and lidar sensing, maps, projections and GIS",
+  "summary": "Satellites and aircraft observe the whole planet, and geographic information systems turn those observations into maps and analysis. This course covers how radiation interacts with the surface and the atmosphere, sensors, platforms and orbits, image processing and classification, thermal and microwave sensing, radar and lidar, map projections and coordinate systems, and spatial data and analysis in GIS, with examples from across the Earth sciences.",
+  "overview": [],
+  "prerequisites": [
+    "earth-system"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "em-radiation",
+      "title": "Radiation and the surface",
+      "summary": "The electromagnetic spectrum, atmospheric windows, and the spectral signatures of vegetation, soil, water and rock.",
+      "requires": [
+        "earth-system/energy-balance"
+      ]
+    },
+    {
+      "slug": "sensors-orbits",
+      "title": "Sensors, platforms and orbits",
+      "summary": "Passive and active sensors, spatial, spectral, radiometric and temporal resolution, and satellite orbits.",
+      "requires": [
+        "remote-sensing/em-radiation"
+      ]
+    },
+    {
+      "slug": "image-processing",
+      "title": "Digital image processing",
+      "summary": "Radiometric and geometric correction, image enhancement, band ratios and spectral indices such as NDVI.",
+      "requires": [
+        "remote-sensing/sensors-orbits"
+      ]
+    },
+    {
+      "slug": "classification",
+      "title": "Image classification and change detection",
+      "summary": "Supervised and unsupervised classification, accuracy assessment, and mapping change over time.",
+      "requires": [
+        "remote-sensing/image-processing"
+      ]
+    },
+    {
+      "slug": "thermal-microwave",
+      "title": "Thermal and passive microwave sensing",
+      "summary": "Measuring surface temperature, soil moisture, sea ice and rainfall from emitted radiation.",
+      "requires": [
+        "remote-sensing/em-radiation"
+      ]
+    },
+    {
+      "slug": "radar-lidar",
+      "title": "Radar, altimetry and lidar",
+      "summary": "Synthetic-aperture radar and interferometry for ground deformation, radar and laser altimetry, and laser scanning of topography.",
+      "requires": [
+        "remote-sensing/sensors-orbits"
+      ]
+    },
+    {
+      "slug": "maps-projections",
+      "title": "Maps, coordinates and projections",
+      "summary": "Geodetic datums, coordinate systems, map projections and their distortions, and satellite positioning.",
+      "requires": []
+    },
+    {
+      "slug": "gis-data",
+      "title": "Spatial data and GIS",
+      "summary": "Vector and raster data, digital elevation models, spatial databases and data quality.",
+      "requires": [
+        "remote-sensing/maps-projections"
+      ]
+    },
+    {
+      "slug": "spatial-analysis",
+      "title": "Spatial analysis",
+      "summary": "Overlay, buffers, terrain analysis, spatial interpolation and spatial statistics applied to Earth-science questions.",
+      "requires": [
+        "remote-sensing/gis-data",
+        "remote-sensing/classification"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "natural-hazards"
+  ]
+}

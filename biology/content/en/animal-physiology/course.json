@@ -1,0 +1,97 @@
+{
+  "slug": "animal-physiology",
+  "title": "Animal Physiology",
+  "full_title": "Animal Physiology",
+  "area": "organisms",
+  "level": 2,
+  "order": 100,
+  "tagline": "Homeostasis, energetics and body size, temperature, feeding, gas exchange, circulation, osmoregulation, muscle and hormones across the animal kingdom",
+  "summary": "Animals live in deserts, deep oceans and polar ice, and their bodies solve the same problems in different ways. This comparative course covers homeostasis and control, energy metabolism and body size, temperature regulation, feeding and digestion, gas exchange, circulation, water and salt balance, muscle and locomotion, and hormones, always asking how physiology is adapted to the environment.",
+  "overview": [],
+  "prerequisites": [
+    "cell-biology",
+    "biochemistry"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "homeostasis",
+      "title": "Homeostasis and control",
+      "summary": "The internal environment, feedback control, regulators and conformers, and the comparative method in physiology.",
+      "requires": [
+        "cell-biology/cell-signalling"
+      ]
+    },
+    {
+      "slug": "energy-metabolism",
+      "title": "Energy metabolism and body size",
+      "summary": "Metabolic rate, allometric scaling, Kleiber’s law and the energetic cost of activity.",
+      "requires": [
+        "animal-physiology/homeostasis",
+        "biochemistry/oxidative-phosphorylation"
+      ]
+    },
+    {
+      "slug": "thermoregulation",
+      "title": "Temperature and thermoregulation",
+      "summary": "Ectotherms and endotherms, heat exchange with the environment, torpor and hibernation.",
+      "requires": [
+        "animal-physiology/energy-metabolism"
+      ]
+    },
+    {
+      "slug": "feeding-digestion",
+      "title": "Feeding and digestion",
+      "summary": "Feeding strategies, digestive systems and the absorption of nutrients across animals.",
+      "requires": [
+        "animal-physiology/energy-metabolism"
+      ]
+    },
+    {
+      "slug": "gas-exchange",
+      "title": "Gas exchange",
+      "summary": "Breathing water and air with gills, lungs and tracheae, and oxygen transport by respiratory pigments.",
+      "requires": [
+        "animal-physiology/energy-metabolism"
+      ]
+    },
+    {
+      "slug": "circulation",
+      "title": "Circulation",
+      "summary": "Open and closed circulatory systems, hearts, blood pressure and flow.",
+      "requires": [
+        "animal-physiology/gas-exchange"
+      ]
+    },
+    {
+      "slug": "water-salt-balance",
+      "title": "Water, salts and excretion",
+      "summary": "Osmoregulation in the sea, in fresh water and on land, kidneys and the excretion of nitrogenous waste.",
+      "requires": [
+        "animal-physiology/circulation"
+      ]
+    },
+    {
+      "slug": "muscle-movement",
+      "title": "Muscle and movement",
+      "summary": "Muscle contraction, excitation–contraction coupling, types of muscle and the mechanics of locomotion.",
+      "requires": [
+        "cell-biology/cytoskeleton",
+        "animal-physiology/energy-metabolism"
+      ]
+    },
+    {
+      "slug": "endocrine-control",
+      "title": "Hormones and endocrine control",
+      "summary": "Hormone classes and receptors, and the endocrine control of growth, moulting, reproduction and metabolism.",
+      "requires": [
+        "animal-physiology/homeostasis"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "neuroscience"
+  ]
+}

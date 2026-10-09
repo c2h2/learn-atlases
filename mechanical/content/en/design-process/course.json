@@ -1,0 +1,93 @@
+{
+  "slug": "design-process",
+  "title": "Design Process",
+  "full_title": "The Engineering Design Process",
+  "area": "design",
+  "level": 2,
+  "order": 100,
+  "tagline": "Requirements, concept generation and selection, embodiment design, design for manufacture and assembly, reliability and risk, sustainability, standards and ethics",
+  "summary": "Design turns a need into a product that can be made, used safely and maintained. The course follows the design process from customer needs and specifications through concept generation and selection to embodiment and detail design, and covers design for manufacture and assembly, reliability and risk, sustainable design, standards and the professional responsibilities of engineers.",
+  "overview": [],
+  "prerequisites": [
+    "engineering-graphics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "design-process-overview",
+      "title": "The design process",
+      "summary": "Models of the design process, design as iteration, and the engineer's role across a product's life cycle.",
+      "requires": []
+    },
+    {
+      "slug": "requirements",
+      "title": "Needs and requirements",
+      "summary": "Customer needs, product specifications with measurable targets, and quality function deployment.",
+      "requires": [
+        "design-process/design-process-overview"
+      ]
+    },
+    {
+      "slug": "concept-generation",
+      "title": "Function and concept generation",
+      "summary": "Functional decomposition, morphological charts, creativity methods and patents as a source of ideas.",
+      "requires": [
+        "design-process/requirements"
+      ]
+    },
+    {
+      "slug": "concept-selection",
+      "title": "Concept evaluation and selection",
+      "summary": "Screening and scoring matrices, decisions under uncertainty, and early modelling of concepts.",
+      "requires": [
+        "design-process/concept-generation"
+      ]
+    },
+    {
+      "slug": "embodiment-design",
+      "title": "Embodiment and detail design",
+      "summary": "Product architecture, layout and interfaces, sizing calculations, prototyping and testing.",
+      "requires": [
+        "design-process/concept-selection",
+        "engineering-graphics/assemblies-drawings"
+      ]
+    },
+    {
+      "slug": "design-for-manufacture",
+      "title": "Design for manufacture and assembly",
+      "summary": "Designing parts and assemblies for low cost and high quality, with rules for common processes.",
+      "requires": [
+        "design-process/embodiment-design"
+      ]
+    },
+    {
+      "slug": "reliability-risk",
+      "title": "Reliability, risk and safety",
+      "summary": "Failure rates and reliability, failure modes and effects analysis, fault trees, and designing hazards out.",
+      "requires": [
+        "design-process/embodiment-design"
+      ]
+    },
+    {
+      "slug": "sustainability",
+      "title": "Sustainable design",
+      "summary": "Life-cycle assessment, design for disassembly and recycling, and energy and material efficiency.",
+      "requires": [
+        "design-process/embodiment-design"
+      ]
+    },
+    {
+      "slug": "ethics-standards",
+      "title": "Standards, law and professional ethics",
+      "summary": "Codes and standards, product liability, intellectual property and the ethical responsibilities of engineers.",
+      "requires": [
+        "design-process/design-process-overview"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "machine-design"
+  ]
+}

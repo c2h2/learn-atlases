@@ -1,0 +1,96 @@
+{
+  "slug": "presentations-and-discussion",
+  "title": "Presentations and Discussion",
+  "full_title": "Presentations, Discussion and Debate",
+  "area": "speaking",
+  "level": 3,
+  "order": 180,
+  "tagline": "Planning a talk, signposting, delivery, visual aids, handling questions, seminars and group discussion, debate and persuasion, meetings and negotiation, and interviews",
+  "summary": "Speaking at length and in groups needs structure, clear delivery and the language to manage interaction. This course covers planning and signposting a presentation, using the voice and visual aids, handling questions, taking part in seminars and discussions, debating and persuading, meetings and negotiations, and job and academic interviews.",
+  "overview": [],
+  "prerequisites": [
+    "listening-and-conversation"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "planning-a-talk",
+      "title": "Planning a talk",
+      "summary": "Audience, purpose and a clear structure with an opening, main points and an ending.",
+      "requires": [
+        "listening-and-conversation/opinions"
+      ]
+    },
+    {
+      "slug": "signposting-a-talk",
+      "title": "Signposting a talk",
+      "summary": "The phrases that guide listeners through a talk: introducing, moving on, summarising and concluding.",
+      "requires": [
+        "presentations-and-discussion/planning-a-talk"
+      ]
+    },
+    {
+      "slug": "delivery",
+      "title": "Delivery",
+      "summary": "Pace, pausing, stress and intonation, eye contact, and managing nerves.",
+      "requires": [
+        "presentations-and-discussion/signposting-a-talk",
+        "connected-speech/intonation-meaning"
+      ]
+    },
+    {
+      "slug": "visual-aids",
+      "title": "Visual aids",
+      "summary": "Designing simple slides, and describing charts and images in a talk.",
+      "requires": [
+        "presentations-and-discussion/signposting-a-talk"
+      ]
+    },
+    {
+      "slug": "handling-questions",
+      "title": "Handling questions",
+      "summary": "Inviting, clarifying and answering questions, and what to say when you do not know the answer.",
+      "requires": [
+        "presentations-and-discussion/delivery"
+      ]
+    },
+    {
+      "slug": "seminars-discussion",
+      "title": "Seminars and group discussion",
+      "summary": "Taking the floor, building on other people’s points, disagreeing constructively and bringing others in.",
+      "requires": [
+        "listening-and-conversation/clarification"
+      ]
+    },
+    {
+      "slug": "debate-persuasion",
+      "title": "Debate and persuasion",
+      "summary": "The structure of a formal debate, persuasive arguments and rebuttals.",
+      "requires": [
+        "presentations-and-discussion/seminars-discussion"
+      ]
+    },
+    {
+      "slug": "meetings-negotiation",
+      "title": "Meetings and negotiation",
+      "summary": "Chairing and taking part in meetings, making proposals, bargaining and reaching agreement.",
+      "requires": [
+        "presentations-and-discussion/seminars-discussion"
+      ]
+    },
+    {
+      "slug": "interviews",
+      "title": "Interviews",
+      "summary": "Preparing for and answering questions in job and academic interviews, and asking your own.",
+      "requires": [
+        "presentations-and-discussion/handling-questions"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "pragmatics",
+    "world-englishes"
+  ]
+}

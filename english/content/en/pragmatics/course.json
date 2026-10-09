@@ -1,0 +1,98 @@
+{
+  "slug": "pragmatics",
+  "title": "Pragmatics and Politeness",
+  "full_title": "Pragmatics: Politeness, Context and Culture",
+  "area": "speaking",
+  "level": 3,
+  "order": 190,
+  "tagline": "Meaning beyond words, speech acts, politeness and face, requests and refusals, apologies, thanks and compliments, small talk, directness across cultures, irony and understatement, and writing to people you do not know well",
+  "summary": "Pragmatics is about what speakers mean rather than what their words literally say, and it is where fluent learners still make their most noticeable mistakes. This course explains implied meaning, speech acts and politeness, and applies them to requests, refusals, apologies, compliments, small talk, humour and email, comparing English conventions with Chinese ones without reducing either to a stereotype.",
+  "overview": [],
+  "prerequisites": [
+    "listening-and-conversation",
+    "modality"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "meaning-beyond-words",
+      "title": "Meaning beyond words",
+      "summary": "What is said and what is meant, implicature, and how context fills the gap between them.",
+      "requires": [
+        "listening-and-conversation/opinions"
+      ]
+    },
+    {
+      "slug": "speech-acts",
+      "title": "Speech acts",
+      "summary": "Requests, promises, apologies and other acts performed with words, and indirect speech acts such as *Can you pass the salt?*",
+      "requires": [
+        "pragmatics/meaning-beyond-words"
+      ]
+    },
+    {
+      "slug": "politeness-face",
+      "title": "Politeness and face",
+      "summary": "Theories of politeness and face, the Chinese concepts of 面子 and 脸, and the strategies speakers use to protect each other’s face.",
+      "requires": [
+        "pragmatics/speech-acts"
+      ]
+    },
+    {
+      "slug": "requests-refusals",
+      "title": "Requests and refusals",
+      "summary": "Making requests at the right level of directness, and refusing without causing offence.",
+      "requires": [
+        "pragmatics/politeness-face",
+        "modality/modality-politeness"
+      ]
+    },
+    {
+      "slug": "apologies-thanks-compliments",
+      "title": "Apologies, thanks and compliments",
+      "summary": "How English speakers apologise, thank and pay compliments, and how responses to compliments differ between English and Chinese.",
+      "requires": [
+        "pragmatics/politeness-face"
+      ]
+    },
+    {
+      "slug": "small-talk-norms",
+      "title": "Small talk and safe topics",
+      "summary": "What small talk is for, which topics are usually safe or sensitive in English-speaking settings, and questions that may seem too personal.",
+      "requires": [
+        "pragmatics/politeness-face"
+      ]
+    },
+    {
+      "slug": "directness-across-cultures",
+      "title": "Directness across cultures",
+      "summary": "Research on cultural differences in directness, and how to avoid both misunderstanding and stereotype.",
+      "requires": [
+        "pragmatics/requests-refusals"
+      ]
+    },
+    {
+      "slug": "irony-understatement",
+      "title": "Irony, understatement and humour",
+      "summary": "Recognising irony, sarcasm and understatement, and the place of humour in conversation.",
+      "requires": [
+        "pragmatics/meaning-beyond-words"
+      ]
+    },
+    {
+      "slug": "writing-to-people",
+      "title": "Writing to teachers, colleagues and strangers",
+      "summary": "Openings, requests, tone and closings in emails to people of different status, and common mistakes of tone.",
+      "requires": [
+        "pragmatics/requests-refusals",
+        "pragmatics/apologies-thanks-compliments"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "world-englishes",
+    "translation"
+  ]
+}

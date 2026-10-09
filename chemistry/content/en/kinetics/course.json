@@ -1,0 +1,96 @@
+{
+  "slug": "kinetics",
+  "title": "Chemical Kinetics",
+  "full_title": "Chemical Kinetics and Reaction Dynamics",
+  "area": "physical",
+  "level": 2,
+  "order": 60,
+  "tagline": "Rate laws, mechanisms, collision and transition-state theory, chain reactions, catalysis, surfaces, photochemistry and dynamics",
+  "summary": "Kinetics asks how fast reactions go and by what path. This course turns rate measurements into rate laws and mechanisms, explains rates with collision theory and transition-state theory, and treats chain reactions, catalysis and oscillations, reactions at surfaces, photochemical kinetics and the dynamics of single reactive encounters.",
+  "overview": [],
+  "prerequisites": [
+    "general-chemistry-2"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "rate-laws",
+      "title": "Rate laws and their measurement",
+      "summary": "Experimental methods for following reactions, initial rates and the isolation method, and integrated rate laws of zero, first and second order.",
+      "requires": [
+        "general-chemistry-2/rates-intro"
+      ]
+    },
+    {
+      "slug": "reaction-mechanisms",
+      "title": "Reaction mechanisms",
+      "summary": "Elementary steps and molecularity, consecutive and competing reactions, the steady-state approximation, pre-equilibria and rate-determining steps.",
+      "requires": [
+        "kinetics/rate-laws"
+      ]
+    },
+    {
+      "slug": "collision-theory",
+      "title": "Collision theory",
+      "summary": "Molecular collisions, the Maxwell–Boltzmann distribution of speeds, steric factors and the origin of the Arrhenius equation.",
+      "requires": [
+        "kinetics/rate-laws",
+        "general-chemistry-1/gases"
+      ]
+    },
+    {
+      "slug": "transition-state-theory",
+      "title": "Transition-state theory",
+      "summary": "The activated complex, the Eyring equation, enthalpies and entropies of activation, and kinetic isotope effects.",
+      "requires": [
+        "kinetics/collision-theory"
+      ]
+    },
+    {
+      "slug": "chain-reactions",
+      "title": "Chain reactions",
+      "summary": "Radical chain mechanisms, the hydrogen–bromine reaction, chain branching and explosion limits.",
+      "requires": [
+        "kinetics/reaction-mechanisms"
+      ]
+    },
+    {
+      "slug": "homogeneous-catalysis",
+      "title": "Catalysis, autocatalysis and oscillating reactions",
+      "summary": "Acid–base and homogeneous catalysis, catalytic cycles, autocatalysis, and oscillating reactions such as the Belousov–Zhabotinsky reaction.",
+      "requires": [
+        "kinetics/reaction-mechanisms"
+      ]
+    },
+    {
+      "slug": "surface-kinetics",
+      "title": "Adsorption and reactions at surfaces",
+      "summary": "Physisorption and chemisorption, the Langmuir and BET isotherms, and the Langmuir–Hinshelwood and Eley–Rideal mechanisms.",
+      "requires": [
+        "kinetics/homogeneous-catalysis"
+      ]
+    },
+    {
+      "slug": "photochemistry",
+      "title": "Photochemical kinetics",
+      "summary": "Absorption and quantum yields, the rates of fluorescence, phosphorescence and energy transfer, and quenching and the Stern–Volmer equation.",
+      "requires": [
+        "kinetics/reaction-mechanisms"
+      ]
+    },
+    {
+      "slug": "reaction-dynamics",
+      "title": "Molecular reaction dynamics",
+      "summary": "Potential energy surfaces, trajectories and molecular beams, and diffusion-controlled reactions in solution.",
+      "requires": [
+        "kinetics/transition-state-theory"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "organometallics-catalysis",
+    "environmental-chemistry"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "general-chemistry-2",
+  "title": "General Chemistry II",
+  "full_title": "General Chemistry II: Equilibrium, Energy and Rates",
+  "area": "general",
+  "level": 1,
+  "order": 20,
+  "tagline": "Solutions, reaction rates, equilibrium, acids and bases, solubility, free energy, electrochemistry and nuclear chemistry",
+  "summary": "Why do reactions stop, how fast do they go, and which way do they run? This course introduces solutions and colligative properties, reaction rates and chemical equilibrium with its applications to acids, bases, buffers and solubility, then connects equilibrium to entropy and free energy, electrochemical cells and nuclear processes.",
+  "overview": [],
+  "prerequisites": [
+    "general-chemistry-1"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "liquids-solutions",
+      "title": "Liquids, solutions and colligative properties",
+      "summary": "Vapour pressure and phase changes, solubility, Raoult’s law, and the effects of solutes on boiling point, freezing point and osmotic pressure.",
+      "requires": [
+        "general-chemistry-1/gases",
+        "general-chemistry-1/solutions-reactions"
+      ]
+    },
+    {
+      "slug": "rates-intro",
+      "title": "Reaction rates",
+      "summary": "Rates and rate laws, reaction order, integrated rate laws and half-lives, the Arrhenius equation and catalysts.",
+      "requires": [
+        "general-chemistry-1/stoichiometry"
+      ]
+    },
+    {
+      "slug": "chemical-equilibrium",
+      "title": "Chemical equilibrium",
+      "summary": "Dynamic equilibrium, the equilibrium constants Kc and Kp, the reaction quotient, Le Chatelier’s principle and equilibrium calculations.",
+      "requires": [
+        "general-chemistry-1/stoichiometry",
+        "general-chemistry-1/gases"
+      ]
+    },
+    {
+      "slug": "acids-bases",
+      "title": "Acids and bases",
+      "summary": "Brønsted–Lowry and Lewis acids and bases, pH, acid and base dissociation constants, weak acids and bases, polyprotic acids and salts.",
+      "requires": [
+        "general-chemistry-2/chemical-equilibrium"
+      ]
+    },
+    {
+      "slug": "buffers-titrations",
+      "title": "Buffers and titrations",
+      "summary": "Buffer solutions and the Henderson–Hasselbalch equation, buffer capacity, titration curves and indicators.",
+      "requires": [
+        "general-chemistry-2/acids-bases"
+      ]
+    },
+    {
+      "slug": "solubility-equilibria",
+      "title": "Solubility and complex-ion equilibria",
+      "summary": "Solubility products, the common-ion effect, selective precipitation and the formation of complex ions.",
+      "requires": [
+        "general-chemistry-2/chemical-equilibrium"
+      ]
+    },
+    {
+      "slug": "entropy-free-energy",
+      "title": "Entropy, free energy and spontaneity",
+      "summary": "The second law, entropy changes, the Gibbs energy and the link between the standard Gibbs energy change and the equilibrium constant.",
+      "requires": [
+        "general-chemistry-1/thermochemistry",
+        "general-chemistry-2/chemical-equilibrium"
+      ]
+    },
+    {
+      "slug": "electrochemistry-intro",
+      "title": "Redox reactions and electrochemical cells",
+      "summary": "Balancing redox equations, galvanic cells, standard electrode potentials, the Nernst equation and electrolysis.",
+      "requires": [
+        "general-chemistry-2/entropy-free-energy",
+        "general-chemistry-1/solutions-reactions"
+      ]
+    },
+    {
+      "slug": "nuclear-chemistry",
+      "title": "Nuclear chemistry",
+      "summary": "Radioactive decay and its kinetics, nuclear binding energy, fission and fusion, and the uses of radioisotopes in dating and medicine.",
+      "requires": [
+        "general-chemistry-1/atoms-and-moles",
+        "general-chemistry-2/rates-intro"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "thermodynamics",
+    "kinetics",
+    "analytical-chemistry"
+  ]
+}

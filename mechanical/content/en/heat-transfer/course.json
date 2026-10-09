@@ -1,0 +1,106 @@
+{
+  "slug": "heat-transfer",
+  "title": "Heat Transfer",
+  "full_title": "Heat Transfer",
+  "area": "thermofluids",
+  "level": 3,
+  "order": 110,
+  "tagline": "Steady and transient conduction, fins, forced and natural convection, boiling and condensation, heat exchangers and thermal radiation",
+  "summary": "Heat transfer asks how fast thermal energy moves, which sets the size of a radiator, the cooling of a chip and the insulation of a building. The course covers steady and transient conduction, extended surfaces, forced convection in external and internal flows, natural convection, boiling and condensation, heat-exchanger analysis and thermal radiation between surfaces.",
+  "overview": [],
+  "prerequisites": [
+    "thermodynamics",
+    "fluid-mechanics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "heat-transfer-modes",
+      "title": "Modes of heat transfer",
+      "summary": "Conduction, convection and radiation, their rate equations, and the surface energy balance.",
+      "requires": [
+        "thermodynamics/first-law-closed"
+      ]
+    },
+    {
+      "slug": "steady-conduction",
+      "title": "Steady conduction",
+      "summary": "The heat equation, one-dimensional conduction through plane, cylindrical and spherical walls, thermal resistance networks and internal heat generation.",
+      "requires": [
+        "heat-transfer/heat-transfer-modes"
+      ]
+    },
+    {
+      "slug": "fins",
+      "title": "Extended surfaces and two-dimensional conduction",
+      "summary": "Fins and their efficiency and effectiveness, and two-dimensional conduction by shape factors.",
+      "requires": [
+        "heat-transfer/steady-conduction"
+      ]
+    },
+    {
+      "slug": "transient-conduction",
+      "title": "Transient conduction",
+      "summary": "The lumped-capacitance method, the Biot and Fourier numbers, and transient conduction in slabs, cylinders and semi-infinite solids.",
+      "requires": [
+        "heat-transfer/steady-conduction"
+      ]
+    },
+    {
+      "slug": "external-convection",
+      "title": "Forced convection in external flow",
+      "summary": "Thermal boundary layers, the Nusselt and Prandtl numbers, and heat transfer from plates, cylinders and spheres.",
+      "requires": [
+        "heat-transfer/heat-transfer-modes",
+        "fluid-mechanics/boundary-layers-drag"
+      ]
+    },
+    {
+      "slug": "internal-convection",
+      "title": "Forced convection in internal flow",
+      "summary": "Developing and fully developed flow in tubes, the mean temperature, and constant heat flux and constant wall temperature.",
+      "requires": [
+        "heat-transfer/external-convection",
+        "fluid-mechanics/pipe-flow"
+      ]
+    },
+    {
+      "slug": "natural-convection",
+      "title": "Natural convection",
+      "summary": "Buoyancy-driven flow, the Grashof and Rayleigh numbers, and correlations for plates, cylinders and enclosures.",
+      "requires": [
+        "heat-transfer/external-convection"
+      ]
+    },
+    {
+      "slug": "boiling-condensation",
+      "title": "Boiling and condensation",
+      "summary": "Pool boiling and the boiling curve, critical heat flux, flow boiling, and film and dropwise condensation.",
+      "requires": [
+        "heat-transfer/natural-convection"
+      ]
+    },
+    {
+      "slug": "heat-exchangers",
+      "title": "Heat exchangers",
+      "summary": "Types of heat exchanger, the overall heat-transfer coefficient and fouling, and the LMTD and effectiveness–NTU methods.",
+      "requires": [
+        "heat-transfer/internal-convection"
+      ]
+    },
+    {
+      "slug": "radiation",
+      "title": "Thermal radiation",
+      "summary": "Blackbody radiation, emissivity and the radiative properties of surfaces, view factors, and radiation exchange between surfaces.",
+      "requires": [
+        "heat-transfer/heat-transfer-modes"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "energy-systems",
+    "computational-fluid-dynamics"
+  ]
+}

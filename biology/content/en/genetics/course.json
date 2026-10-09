@@ -1,0 +1,92 @@
+{
+  "slug": "genetics",
+  "title": "Genetics",
+  "full_title": "Principles of Genetics",
+  "area": "genetics",
+  "level": 1,
+  "order": 30,
+  "tagline": "Mendel’s laws, chromosomes and meiosis, sex linkage, genetic maps, mutation, and the genetics of microbes and organelles",
+  "summary": "Genetics explains how traits pass from parents to offspring and why relatives resemble each other. This course follows the classical route: Mendel’s laws and their extensions, the chromosome theory of inheritance, sex linkage and pedigrees, recombination and genetic maps, chromosome and gene mutations, the genetics of bacteria and viruses, and inheritance that breaks Mendel’s rules.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "mendelian-inheritance",
+      "title": "Mendelian inheritance",
+      "summary": "Segregation and independent assortment, Punnett squares, test crosses and probability in genetics.",
+      "requires": []
+    },
+    {
+      "slug": "extensions-of-mendel",
+      "title": "Extensions of Mendelian genetics",
+      "summary": "Incomplete dominance and codominance, multiple and lethal alleles, epistasis, and the interplay of genes and environment.",
+      "requires": [
+        "genetics/mendelian-inheritance"
+      ]
+    },
+    {
+      "slug": "chromosomes-meiosis",
+      "title": "Chromosomes and meiosis",
+      "summary": "The chromosome theory of inheritance, meiosis as the physical basis of Mendel’s laws, and sex determination.",
+      "requires": [
+        "genetics/mendelian-inheritance"
+      ]
+    },
+    {
+      "slug": "sex-linkage-pedigrees",
+      "title": "Sex linkage and pedigrees",
+      "summary": "X-linked inheritance, dosage compensation and the analysis of human pedigrees.",
+      "requires": [
+        "genetics/chromosomes-meiosis"
+      ]
+    },
+    {
+      "slug": "linkage-mapping",
+      "title": "Linkage and genetic maps",
+      "summary": "Recombination frequency, map distances, three-point crosses and interference.",
+      "requires": [
+        "genetics/chromosomes-meiosis"
+      ]
+    },
+    {
+      "slug": "chromosome-mutations",
+      "title": "Chromosome mutations",
+      "summary": "Changes in chromosome number and structure: aneuploidy, polyploidy, deletions, duplications, inversions and translocations.",
+      "requires": [
+        "genetics/chromosomes-meiosis"
+      ]
+    },
+    {
+      "slug": "genes-and-mutation",
+      "title": "Genes, DNA and mutation",
+      "summary": "DNA as the genetic material, the gene concept, point mutations, mutagens and complementation tests.",
+      "requires": [
+        "genetics/extensions-of-mendel"
+      ]
+    },
+    {
+      "slug": "microbial-genetics",
+      "title": "Genetics of bacteria and viruses",
+      "summary": "Transformation, conjugation and transduction, and how genes were mapped in microbes.",
+      "requires": [
+        "genetics/genes-and-mutation"
+      ]
+    },
+    {
+      "slug": "non-mendelian-inheritance",
+      "title": "Non-Mendelian inheritance",
+      "summary": "Maternal effects, mitochondrial and chloroplast inheritance, genomic imprinting and other exceptions to Mendel’s rules.",
+      "requires": [
+        "genetics/extensions-of-mendel",
+        "genetics/chromosomes-meiosis"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "molecular-biology",
+    "population-genetics"
+  ]
+}

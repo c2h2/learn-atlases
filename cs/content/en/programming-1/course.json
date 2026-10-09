@@ -1,0 +1,91 @@
+{
+  "slug": "programming-1",
+  "title": "Programming Fundamentals",
+  "full_title": "Programming Fundamentals",
+  "area": "programming",
+  "level": 1,
+  "order": 10,
+  "tagline": "Values and types, control flow, functions, recursion, collections, files, testing and debugging",
+  "summary": "Programming is the craft of telling a computer precisely what to do. This course teaches it from the beginning in Python: values, types and expressions, control flow, functions and recursion, lists, dictionaries and strings, files and exceptions, and the habits of testing and debugging that make programs trustworthy.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "computation-and-programs",
+      "title": "Computation and programs",
+      "summary": "What a program is, how source code is run by an interpreter, and a first look at Python.",
+      "requires": []
+    },
+    {
+      "slug": "values-types",
+      "title": "Values, types and expressions",
+      "summary": "Numbers, strings and Booleans, operators and precedence, and variables and assignment.",
+      "requires": [
+        "programming-1/computation-and-programs"
+      ]
+    },
+    {
+      "slug": "control-flow",
+      "title": "Control flow",
+      "summary": "Conditionals, while and for loops, and reasoning about what a loop does.",
+      "requires": [
+        "programming-1/values-types"
+      ]
+    },
+    {
+      "slug": "functions",
+      "title": "Functions",
+      "summary": "Defining and calling functions, parameters and return values, scope, and breaking a problem into small functions.",
+      "requires": [
+        "programming-1/control-flow"
+      ]
+    },
+    {
+      "slug": "recursion",
+      "title": "Recursion",
+      "summary": "Recursive definitions, base cases, the call stack, and recursion compared with iteration.",
+      "requires": [
+        "programming-1/functions"
+      ]
+    },
+    {
+      "slug": "sequences",
+      "title": "Lists, tuples and strings",
+      "summary": "Indexing and slicing, mutation and aliasing, list comprehensions and string processing.",
+      "requires": [
+        "programming-1/functions"
+      ]
+    },
+    {
+      "slug": "dictionaries-sets",
+      "title": "Dictionaries and sets",
+      "summary": "Mappings and sets, counting and grouping data, and choosing the right collection.",
+      "requires": [
+        "programming-1/sequences"
+      ]
+    },
+    {
+      "slug": "files-exceptions",
+      "title": "Files, input and exceptions",
+      "summary": "Reading and writing files, handling errors with exceptions, and working with text data.",
+      "requires": [
+        "programming-1/sequences"
+      ]
+    },
+    {
+      "slug": "testing-debugging",
+      "title": "Testing and debugging",
+      "summary": "Specifications and assertions, unit tests, reading error messages and debugging systematically.",
+      "requires": [
+        "programming-1/functions"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "program-design",
+    "data-structures"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "materials-science",
+  "title": "Materials Science",
+  "full_title": "Materials Science and Engineering",
+  "area": "materials",
+  "level": 1,
+  "order": 40,
+  "tagline": "Bonding and crystal structures, defects and diffusion, mechanical properties and strengthening, phase diagrams and heat treatment, failure, corrosion and materials selection",
+  "summary": "The properties of a material follow from its structure, from atomic bonds and crystals up to grains and phases. The course connects the two: crystal structures and defects, diffusion, mechanical behaviour and how metals are strengthened, phase diagrams and the heat treatment of steels, fracture, fatigue, creep and corrosion, the families of engineering materials, and how to select a material for a design.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "bonding-structure",
+      "title": "Atomic bonding and crystal structures",
+      "summary": "Bonding in solids, unit cells and crystal systems, Miller indices, and the density and packing of crystals.",
+      "requires": []
+    },
+    {
+      "slug": "defects-diffusion",
+      "title": "Defects and diffusion",
+      "summary": "Point, line and planar defects, grain boundaries and microstructure, and diffusion by Fick's laws.",
+      "requires": [
+        "materials-science/bonding-structure"
+      ]
+    },
+    {
+      "slug": "mechanical-properties",
+      "title": "Mechanical properties",
+      "summary": "The tensile test, elastic and plastic deformation, ductility, toughness and hardness, and the scatter of measured properties.",
+      "requires": [
+        "materials-science/bonding-structure"
+      ]
+    },
+    {
+      "slug": "dislocations-strengthening",
+      "title": "Dislocations and strengthening",
+      "summary": "Slip and dislocation motion, and strengthening by grain refinement, solid solution, strain hardening and precipitation.",
+      "requires": [
+        "materials-science/defects-diffusion",
+        "materials-science/mechanical-properties"
+      ]
+    },
+    {
+      "slug": "phase-diagrams",
+      "title": "Phase diagrams",
+      "summary": "Binary phase diagrams, the lever rule, eutectic and eutectoid systems, and the iron–carbon diagram.",
+      "requires": [
+        "materials-science/defects-diffusion"
+      ]
+    },
+    {
+      "slug": "phase-transformations",
+      "title": "Phase transformations and heat treatment",
+      "summary": "Nucleation and growth, isothermal and continuous-cooling transformation diagrams, martensite, and the heat treatment of steels.",
+      "requires": [
+        "materials-science/phase-diagrams"
+      ]
+    },
+    {
+      "slug": "failure",
+      "title": "Fracture, fatigue and creep",
+      "summary": "Ductile and brittle fracture, fracture toughness, fatigue under cyclic loading and creep at high temperature.",
+      "requires": [
+        "materials-science/dislocations-strengthening"
+      ]
+    },
+    {
+      "slug": "material-families",
+      "title": "Ceramics, polymers and composites",
+      "summary": "The structure and properties of ceramics, glasses, polymers and fibre composites compared with those of metals.",
+      "requires": [
+        "materials-science/mechanical-properties"
+      ]
+    },
+    {
+      "slug": "corrosion",
+      "title": "Corrosion and degradation",
+      "summary": "Electrochemical corrosion and its forms, high-temperature oxidation, the degradation of polymers, and protection against them.",
+      "requires": [
+        "materials-science/material-families"
+      ]
+    },
+    {
+      "slug": "materials-selection",
+      "title": "Materials selection",
+      "summary": "Material property charts, performance indices, and choosing materials for strength, stiffness, cost and sustainability.",
+      "requires": [
+        "materials-science/material-families",
+        "materials-science/failure"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "mechanics-of-materials",
+    "manufacturing"
+  ]
+}

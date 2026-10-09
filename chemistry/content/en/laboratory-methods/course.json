@@ -1,0 +1,85 @@
+{
+  "slug": "laboratory-methods",
+  "title": "Laboratory Methods",
+  "full_title": "Laboratory Methods, Measurement and Safety",
+  "area": "analytical",
+  "level": 1,
+  "order": 40,
+  "tagline": "Safety and hazards, measurement and uncertainty, data and graphs, quantitative technique, separation, chromatography and reporting",
+  "summary": "Chemistry is an experimental science, and good results start with safe, careful practice. This course covers hazard assessment and safety information, measurement uncertainty and the treatment of data, quantitative technique, the standard ways of separating and purifying compounds, simple methods of identification and the honest reporting of results.",
+  "overview": [],
+  "prerequisites": [
+    "general-chemistry-1"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "lab-safety",
+      "title": "Laboratory safety and hazard communication",
+      "summary": "Risk assessment, GHS hazard pictograms and safety data sheets, protective equipment, safe handling and storage, waste disposal and emergency procedures.",
+      "requires": []
+    },
+    {
+      "slug": "measurement-uncertainty",
+      "title": "Measurement and uncertainty",
+      "summary": "Accuracy and precision, random and systematic errors, significant figures and the propagation of uncertainty.",
+      "requires": [
+        "general-chemistry-1/matter-measurement"
+      ]
+    },
+    {
+      "slug": "data-graphs",
+      "title": "Recording data, graphs and straight-line fits",
+      "summary": "Laboratory notebooks, tables and graphs, and least-squares straight lines with the uncertainties of slope and intercept.",
+      "requires": [
+        "laboratory-methods/measurement-uncertainty"
+      ]
+    },
+    {
+      "slug": "volumetric-technique",
+      "title": "Volumetric and gravimetric technique",
+      "summary": "Balances, volumetric glassware, standard solutions and dilutions, and weighing precipitates to constant mass.",
+      "requires": [
+        "laboratory-methods/measurement-uncertainty",
+        "general-chemistry-1/solutions-reactions"
+      ]
+    },
+    {
+      "slug": "separation-purification",
+      "title": "Separation and purification",
+      "summary": "Filtration, recrystallisation, distillation, liquid–liquid extraction and drying, and the principles that make each one work.",
+      "requires": [
+        "laboratory-methods/lab-safety"
+      ]
+    },
+    {
+      "slug": "chromatography-basics",
+      "title": "Introduction to chromatography",
+      "summary": "Partition between phases, paper and thin-layer chromatography, retention factors and column chromatography.",
+      "requires": [
+        "laboratory-methods/separation-purification"
+      ]
+    },
+    {
+      "slug": "identifying-compounds",
+      "title": "Physical properties and identification",
+      "summary": "Melting and boiling points, density, refractive index and optical rotation, and simple qualitative tests for ions and functional groups.",
+      "requires": [
+        "laboratory-methods/separation-purification"
+      ]
+    },
+    {
+      "slug": "reporting-integrity",
+      "title": "Reporting experiments and research integrity",
+      "summary": "Writing up experiments, presenting results with their uncertainties, citing sources, reproducibility and the honest handling of data.",
+      "requires": [
+        "laboratory-methods/data-graphs"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "analytical-chemistry"
+  ]
+}

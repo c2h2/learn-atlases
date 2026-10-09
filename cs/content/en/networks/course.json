@@ -1,0 +1,95 @@
+{
+  "slug": "networks",
+  "title": "Computer Networks",
+  "full_title": "Computer Networks",
+  "area": "networks",
+  "level": 2,
+  "order": 80,
+  "tagline": "Layers and protocols, the application layer, sockets, reliable transport, TCP and congestion control, IP and routing, link layers and wireless networks",
+  "summary": "The internet connects billions of devices by layering simple protocols over unreliable links. This course follows the layers from the top down — applications and sockets, reliable transport and TCP congestion control, IP addressing and routing, link layers and switching, wireless and mobile networks — and explains the performance and design principles that let the internet scale.",
+  "overview": [],
+  "prerequisites": [
+    "computer-systems"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "network-principles",
+      "title": "Networks and layering",
+      "summary": "Packet switching, delay, loss and throughput, protocol layers and the architecture of the internet.",
+      "requires": []
+    },
+    {
+      "slug": "application-layer",
+      "title": "The application layer",
+      "summary": "The web and HTTP, the domain name system, email and content distribution networks.",
+      "requires": [
+        "networks/network-principles"
+      ]
+    },
+    {
+      "slug": "sockets",
+      "title": "Socket programming",
+      "summary": "The sockets interface, clients and servers over TCP and UDP, and concurrent servers.",
+      "requires": [
+        "networks/application-layer",
+        "computer-systems/system-io"
+      ]
+    },
+    {
+      "slug": "reliable-transport",
+      "title": "Reliable data transfer",
+      "summary": "UDP, the principles of reliable transfer, and stop-and-wait, go-back-N and selective repeat.",
+      "requires": [
+        "networks/network-principles"
+      ]
+    },
+    {
+      "slug": "tcp-congestion",
+      "title": "TCP and congestion control",
+      "summary": "TCP connections and flow control, congestion control from AIMD to modern algorithms, and fairness.",
+      "requires": [
+        "networks/reliable-transport"
+      ]
+    },
+    {
+      "slug": "network-layer",
+      "title": "The network layer and IP",
+      "summary": "Forwarding, IPv4 and IPv6 addressing, subnetting, network address translation and ICMP.",
+      "requires": [
+        "networks/network-principles"
+      ]
+    },
+    {
+      "slug": "routing",
+      "title": "Routing",
+      "summary": "Link-state and distance-vector routing, OSPF, and inter-domain routing with BGP.",
+      "requires": [
+        "networks/network-layer"
+      ]
+    },
+    {
+      "slug": "link-layer",
+      "title": "The link layer and local networks",
+      "summary": "Error detection, multiple access, Ethernet, switches and virtual LANs.",
+      "requires": [
+        "networks/network-layer"
+      ]
+    },
+    {
+      "slug": "wireless-mobile",
+      "title": "Wireless and mobile networks",
+      "summary": "Wi-Fi and cellular networks, mobility, and the effect of wireless links on transport protocols.",
+      "requires": [
+        "networks/link-layer",
+        "networks/tcp-congestion"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "security",
+    "distributed-systems"
+  ]
+}

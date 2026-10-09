@@ -1,0 +1,110 @@
+{
+  "slug": "fluid-mechanics",
+  "title": "Fluid Mechanics",
+  "full_title": "Fluid Mechanics",
+  "area": "thermofluids",
+  "level": 2,
+  "order": 70,
+  "tagline": "Fluid properties and statics, control-volume analysis, Bernoulli's equation, the Navier–Stokes equations, dimensional analysis, pipe flow, boundary layers, drag and compressible flow",
+  "summary": "Fluid mechanics explains how liquids and gases move and the forces they exert, from water in pipes to air over a wing. The course covers fluid properties and hydrostatics, the kinematics of flow, the integral laws for control volumes, Bernoulli's equation, the differential equations of motion, dimensional analysis and similitude, viscous flow in pipes, boundary layers, lift and drag, and an introduction to compressible flow.",
+  "overview": [],
+  "prerequisites": [
+    "dynamics",
+    "thermodynamics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "fluid-properties",
+      "title": "Fluids and their properties",
+      "summary": "The continuum model, density, viscosity and Newtonian fluids, surface tension and vapour pressure.",
+      "requires": []
+    },
+    {
+      "slug": "fluid-statics",
+      "title": "Fluid statics",
+      "summary": "Pressure in a fluid at rest, manometers, forces on submerged surfaces, and buoyancy and stability of floating bodies.",
+      "requires": [
+        "fluid-mechanics/fluid-properties",
+        "statics/area-moments"
+      ]
+    },
+    {
+      "slug": "fluid-kinematics",
+      "title": "Fluid kinematics",
+      "summary": "Lagrangian and Eulerian descriptions, streamlines and pathlines, the material derivative, vorticity and the Reynolds transport theorem.",
+      "requires": [
+        "fluid-mechanics/fluid-properties",
+        "dynamics/particle-kinematics"
+      ]
+    },
+    {
+      "slug": "control-volume-analysis",
+      "title": "Control-volume analysis",
+      "summary": "Conservation of mass, momentum, angular momentum and energy for control volumes, with forces on vanes, nozzles and pipe bends.",
+      "requires": [
+        "fluid-mechanics/fluid-kinematics",
+        "dynamics/impulse-momentum",
+        "thermodynamics/first-law-open"
+      ]
+    },
+    {
+      "slug": "bernoulli",
+      "title": "Bernoulli's equation",
+      "summary": "Bernoulli's equation along a streamline, its assumptions and limits, and flow measurement with Pitot tubes, Venturi meters and orifices.",
+      "requires": [
+        "fluid-mechanics/control-volume-analysis"
+      ]
+    },
+    {
+      "slug": "navier-stokes",
+      "title": "The Navier–Stokes equations",
+      "summary": "Continuity and momentum in differential form, the Navier–Stokes equations and their exact solutions, and inviscid and potential flow.",
+      "requires": [
+        "fluid-mechanics/control-volume-analysis"
+      ]
+    },
+    {
+      "slug": "dimensional-analysis",
+      "title": "Dimensional analysis and similitude",
+      "summary": "The Buckingham Π theorem, the main dimensionless groups of fluid mechanics, and model testing.",
+      "requires": [
+        "fluid-mechanics/navier-stokes"
+      ]
+    },
+    {
+      "slug": "pipe-flow",
+      "title": "Viscous flow in pipes",
+      "summary": "Laminar and turbulent pipe flow, the Moody chart, minor losses, pipe networks and the matching of pumps to systems.",
+      "requires": [
+        "fluid-mechanics/dimensional-analysis",
+        "fluid-mechanics/bernoulli"
+      ]
+    },
+    {
+      "slug": "boundary-layers-drag",
+      "title": "Boundary layers, lift and drag",
+      "summary": "Laminar and turbulent boundary layers, separation, and the drag and lift on immersed bodies.",
+      "requires": [
+        "fluid-mechanics/navier-stokes",
+        "fluid-mechanics/dimensional-analysis"
+      ]
+    },
+    {
+      "slug": "compressible-flow",
+      "title": "Introduction to compressible flow",
+      "summary": "The speed of sound and Mach number, isentropic flow with area change, choked nozzles and normal shocks.",
+      "requires": [
+        "fluid-mechanics/control-volume-analysis",
+        "thermodynamics/entropy"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "heat-transfer",
+    "aerodynamics",
+    "computational-fluid-dynamics"
+  ]
+}

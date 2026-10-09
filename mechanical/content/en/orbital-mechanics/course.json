@@ -1,0 +1,94 @@
+{
+  "slug": "orbital-mechanics",
+  "title": "Orbital Mechanics",
+  "full_title": "Orbital Mechanics and Spacecraft Dynamics",
+  "area": "aerospace",
+  "level": 4,
+  "order": 230,
+  "tagline": "The two-body problem, Kepler's equation, orbital elements, orbit determination, manoeuvres and transfers, rendezvous, interplanetary trajectories, perturbations and attitude dynamics",
+  "summary": "Orbital mechanics describes how satellites and spacecraft move under gravity and how to change their orbits with as little propellant as possible. The course develops the two-body problem and conic orbits, position as a function of time, orbital elements and orbit determination, impulsive manoeuvres and transfers, relative motion and rendezvous, interplanetary trajectories, orbital perturbations, and the attitude dynamics and control of spacecraft.",
+  "overview": [],
+  "prerequisites": [
+    "dynamics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "two-body-problem",
+      "title": "The two-body problem",
+      "summary": "Newton's law of gravitation, the equations of relative motion, the conserved energy and angular momentum, and conic-section orbits.",
+      "requires": [
+        "dynamics/newtons-laws"
+      ]
+    },
+    {
+      "slug": "orbital-position-time",
+      "title": "Orbital position as a function of time",
+      "summary": "Kepler's laws, the anomalies, and Kepler's equation for elliptic, parabolic and hyperbolic orbits.",
+      "requires": [
+        "orbital-mechanics/two-body-problem"
+      ]
+    },
+    {
+      "slug": "orbital-elements",
+      "title": "Orbits in three dimensions",
+      "summary": "Reference frames, the classical orbital elements, and conversion between orbital elements and state vectors.",
+      "requires": [
+        "orbital-mechanics/orbital-position-time"
+      ]
+    },
+    {
+      "slug": "orbit-determination",
+      "title": "Orbit determination",
+      "summary": "The Gibbs and Lambert problems, and determining an orbit from observations.",
+      "requires": [
+        "orbital-mechanics/orbital-elements"
+      ]
+    },
+    {
+      "slug": "orbital-manoeuvres",
+      "title": "Orbital manoeuvres",
+      "summary": "Impulsive manoeuvres, Hohmann and bi-elliptic transfers, plane changes and phasing manoeuvres.",
+      "requires": [
+        "orbital-mechanics/orbital-elements"
+      ]
+    },
+    {
+      "slug": "relative-motion-rendezvous",
+      "title": "Relative motion and rendezvous",
+      "summary": "The Clohessy–Wiltshire equations, and rendezvous and docking manoeuvres.",
+      "requires": [
+        "orbital-mechanics/orbital-manoeuvres"
+      ]
+    },
+    {
+      "slug": "interplanetary-trajectories",
+      "title": "Interplanetary trajectories",
+      "summary": "Patched conics, spheres of influence, hyperbolic departure and arrival, and gravity assists.",
+      "requires": [
+        "orbital-mechanics/orbital-manoeuvres",
+        "orbital-mechanics/orbit-determination"
+      ]
+    },
+    {
+      "slug": "perturbations",
+      "title": "Orbital perturbations",
+      "summary": "The Earth's oblateness and the J2 effects, sun-synchronous and frozen orbits, atmospheric drag and third-body effects.",
+      "requires": [
+        "orbital-mechanics/orbital-elements"
+      ]
+    },
+    {
+      "slug": "attitude-dynamics",
+      "title": "Spacecraft attitude dynamics and control",
+      "summary": "Euler's equations for spacecraft, spin and gravity-gradient stabilisation, and attitude control with reaction wheels and thrusters.",
+      "requires": [
+        "orbital-mechanics/two-body-problem",
+        "dynamics/three-dimensional-dynamics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "computational-chemistry",
+  "title": "Computational Chemistry",
+  "full_title": "Computational Chemistry and Molecular Modelling",
+  "area": "physical",
+  "level": 4,
+  "order": 220,
+  "tagline": "Potential energy surfaces, force fields, Hartree–Fock, basis sets, electron correlation, density functional theory, molecular dynamics and free energies",
+  "summary": "Computation now complements experiment in every branch of chemistry. This course covers potential energy surfaces and molecular mechanics, the Hartree–Fock method, basis sets, correlated wavefunction methods and density functional theory, and the simulation methods — molecular dynamics, Monte Carlo and free-energy calculations — that connect molecular models with measurable properties.",
+  "overview": [],
+  "prerequisites": [
+    "quantum-chemistry",
+    "statistical-thermodynamics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "potential-energy-surfaces",
+      "title": "Potential energy surfaces",
+      "summary": "Stationary points, geometry optimisation, normal-mode analysis and locating transition states.",
+      "requires": [
+        "quantum-chemistry/chemical-bond-qm"
+      ]
+    },
+    {
+      "slug": "molecular-mechanics",
+      "title": "Molecular mechanics and force fields",
+      "summary": "Bond, angle, torsion and non-bonded terms, parameterisation, and conformational searching.",
+      "requires": [
+        "computational-chemistry/potential-energy-surfaces"
+      ]
+    },
+    {
+      "slug": "hartree-fock",
+      "title": "The Hartree–Fock method",
+      "summary": "Slater determinants, the self-consistent field, the Roothaan–Hall equations and what Hartree–Fock leaves out.",
+      "requires": [
+        "quantum-chemistry/approximation-methods"
+      ]
+    },
+    {
+      "slug": "basis-sets",
+      "title": "Basis sets",
+      "summary": "Slater and Gaussian functions, minimal, split-valence, polarisation and diffuse basis sets, and basis-set superposition error.",
+      "requires": [
+        "computational-chemistry/hartree-fock"
+      ]
+    },
+    {
+      "slug": "electron-correlation",
+      "title": "Electron correlation",
+      "summary": "Configuration interaction, Møller–Plesset perturbation theory and coupled-cluster methods.",
+      "requires": [
+        "computational-chemistry/basis-sets"
+      ]
+    },
+    {
+      "slug": "density-functional-theory",
+      "title": "Density functional theory",
+      "summary": "The Hohenberg–Kohn theorems, the Kohn–Sham equations, exchange–correlation functionals and dispersion corrections.",
+      "requires": [
+        "computational-chemistry/hartree-fock"
+      ]
+    },
+    {
+      "slug": "molecular-dynamics",
+      "title": "Molecular dynamics",
+      "summary": "Integrating the equations of motion, periodic boundary conditions, thermostats and barostats, and analysing trajectories.",
+      "requires": [
+        "computational-chemistry/molecular-mechanics",
+        "statistical-thermodynamics/canonical-ensemble"
+      ]
+    },
+    {
+      "slug": "free-energy-sampling",
+      "title": "Monte Carlo and free-energy methods",
+      "summary": "Metropolis Monte Carlo, free-energy perturbation, thermodynamic integration and enhanced sampling.",
+      "requires": [
+        "computational-chemistry/molecular-dynamics"
+      ]
+    },
+    {
+      "slug": "solvation-qmmm",
+      "title": "Solvation and multiscale models",
+      "summary": "Continuum solvation models, QM/MM methods, and computing spectra and reaction mechanisms in solution.",
+      "requires": [
+        "computational-chemistry/density-functional-theory",
+        "computational-chemistry/molecular-dynamics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

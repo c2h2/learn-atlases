@@ -1,0 +1,97 @@
+{
+  "slug": "mechanisms",
+  "title": "Mechanisms",
+  "full_title": "Mechanisms and Machines",
+  "area": "dynamics",
+  "level": 2,
+  "order": 80,
+  "tagline": "Linkages and mobility, position, velocity and acceleration analysis, linkage synthesis, cams, gears and gear trains, and the dynamics and balancing of machines",
+  "summary": "Mechanisms turn one motion into another: the linkages of a car's suspension, the cams of an engine and the gears in a robot's joints. The course covers mobility and kinematic chains, position, velocity and acceleration analysis of linkages, linkage synthesis, cam design, gears and gear trains, and the dynamic forces, flywheels and balancing of machines.",
+  "overview": [],
+  "prerequisites": [
+    "dynamics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "mechanisms-mobility",
+      "title": "Mechanisms and mobility",
+      "summary": "Links, joints and kinematic chains, degrees of freedom by the Grübler–Kutzbach criterion, Grashof's condition and inversions.",
+      "requires": [
+        "dynamics/rigid-body-kinematics"
+      ]
+    },
+    {
+      "slug": "position-analysis",
+      "title": "Position analysis of linkages",
+      "summary": "Graphical and analytical position analysis of four-bar and slider–crank linkages by loop-closure equations.",
+      "requires": [
+        "mechanisms/mechanisms-mobility"
+      ]
+    },
+    {
+      "slug": "velocity-analysis",
+      "title": "Velocity analysis",
+      "summary": "Relative velocities, instant centres and analytical velocity analysis of linkages, and mechanical advantage.",
+      "requires": [
+        "mechanisms/position-analysis",
+        "dynamics/rigid-body-kinematics"
+      ]
+    },
+    {
+      "slug": "acceleration-analysis",
+      "title": "Acceleration analysis",
+      "summary": "Relative accelerations, the Coriolis component in sliding joints, and analytical acceleration analysis of linkages.",
+      "requires": [
+        "mechanisms/velocity-analysis"
+      ]
+    },
+    {
+      "slug": "linkage-synthesis",
+      "title": "Linkage synthesis",
+      "summary": "Designing linkages for function, path and motion generation, two- and three-position synthesis, and coupler curves.",
+      "requires": [
+        "mechanisms/position-analysis"
+      ]
+    },
+    {
+      "slug": "cams",
+      "title": "Cams and followers",
+      "summary": "Follower displacement, velocity, acceleration and jerk, the fundamental law of cam design, and cam profiles with pressure angle and radius of curvature.",
+      "requires": [
+        "mechanisms/velocity-analysis"
+      ]
+    },
+    {
+      "slug": "gears",
+      "title": "Gears",
+      "summary": "The fundamental law of gearing, involute tooth profiles, spur, helical, bevel and worm gears, contact ratio and interference.",
+      "requires": [
+        "mechanisms/velocity-analysis"
+      ]
+    },
+    {
+      "slug": "gear-trains",
+      "title": "Gear trains",
+      "summary": "Simple and compound gear trains, epicyclic (planetary) trains and transmissions.",
+      "requires": [
+        "mechanisms/gears"
+      ]
+    },
+    {
+      "slug": "machine-dynamics",
+      "title": "Dynamics and balancing of machines",
+      "summary": "Dynamic force analysis of linkages, flywheels, and the balancing of rotating and reciprocating masses.",
+      "requires": [
+        "mechanisms/acceleration-analysis",
+        "dynamics/rigid-body-kinetics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "machine-design",
+    "robotics"
+  ]
+}

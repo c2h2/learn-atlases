@@ -1,0 +1,98 @@
+{
+  "slug": "computer-systems",
+  "title": "Computer Systems",
+  "full_title": "Computer Systems: A Programmer’s View",
+  "area": "systems",
+  "level": 1,
+  "order": 40,
+  "tagline": "Bits and integers, floating point, C, machine-level programs, the memory hierarchy, linking, processes, dynamic memory and system-level input and output",
+  "summary": "Every program ultimately runs as machine instructions on real hardware, and knowing how makes programs faster, safer and easier to debug. This course follows a program from C source to a running process: how data are represented in bits, the C language and its memory model, x86-64 machine code, the memory hierarchy and caches, linking and loading, exceptional control flow and processes, dynamic memory allocation and system-level input and output.",
+  "overview": [],
+  "prerequisites": [
+    "programming-1"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "bits-integers",
+      "title": "Bits, bytes and integers",
+      "summary": "Binary and hexadecimal, unsigned and two’s-complement integers, bitwise operations and integer overflow.",
+      "requires": [
+        "programming-1/values-types"
+      ]
+    },
+    {
+      "slug": "floating-point",
+      "title": "Floating point",
+      "summary": "IEEE 754 representation, rounding, special values and the pitfalls of floating-point arithmetic.",
+      "requires": [
+        "computer-systems/bits-integers"
+      ]
+    },
+    {
+      "slug": "c-programming",
+      "title": "Programming in C",
+      "summary": "Types, pointers and arrays, structures, the stack and the heap, and undefined behaviour.",
+      "requires": [
+        "computer-systems/bits-integers",
+        "programming-1/functions"
+      ]
+    },
+    {
+      "slug": "machine-code",
+      "title": "Machine-level programs",
+      "summary": "x86-64 instructions and registers, control flow and procedure calls, and how C compiles to assembly.",
+      "requires": [
+        "computer-systems/c-programming"
+      ]
+    },
+    {
+      "slug": "memory-hierarchy",
+      "title": "The memory hierarchy and caches",
+      "summary": "Locality, cache organisation and performance, and writing cache-friendly code.",
+      "requires": [
+        "computer-systems/machine-code"
+      ]
+    },
+    {
+      "slug": "linking-loading",
+      "title": "Linking and loading",
+      "summary": "Object files, symbol resolution and relocation, and static and shared libraries.",
+      "requires": [
+        "computer-systems/machine-code"
+      ]
+    },
+    {
+      "slug": "exceptions-processes",
+      "title": "Exceptional control flow and processes",
+      "summary": "Interrupts, traps and system calls, processes, fork and exec, and signals.",
+      "requires": [
+        "computer-systems/machine-code"
+      ]
+    },
+    {
+      "slug": "dynamic-memory",
+      "title": "Dynamic memory allocation",
+      "summary": "The heap, malloc and free, allocator design, fragmentation, and memory errors such as leaks and use-after-free.",
+      "requires": [
+        "computer-systems/c-programming",
+        "computer-systems/memory-hierarchy"
+      ]
+    },
+    {
+      "slug": "system-io",
+      "title": "System-level input and output",
+      "summary": "File descriptors, Unix input and output, buffering, and how the standard library sits on system calls.",
+      "requires": [
+        "computer-systems/exceptions-processes"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "operating-systems",
+    "networks",
+    "compilers"
+  ]
+}

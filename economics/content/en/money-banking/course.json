@@ -1,0 +1,95 @@
+{
+  "slug": "money-banking",
+  "title": "Money and Banking",
+  "full_title": "Money, Banking and Financial Markets",
+  "area": "finance",
+  "level": 2,
+  "order": 80,
+  "tagline": "Money and payments, interest rates and bond prices, the term structure, financial intermediation, the business of banking, bank runs and crises, regulation, and central banks",
+  "summary": "Money and finance connect savers with borrowers and make modern economies work — and their breakdowns cause some of the deepest recessions. This course explains what money is and how payments work, how interest rates and bond prices are determined, why banks and other intermediaries exist, how banks manage risk and why they are fragile, how they are regulated, and how central banks control the supply of money and credit.",
+  "overview": [],
+  "prerequisites": [
+    "principles"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "money-and-payments",
+      "title": "Money and payment systems",
+      "summary": "The functions of money, commodity, fiat and digital money, and how payments are cleared and settled.",
+      "requires": [
+        "principles/macroeconomic-policy"
+      ]
+    },
+    {
+      "slug": "interest-rates",
+      "title": "Interest rates and bond prices",
+      "summary": "Present value, yield to maturity, real and nominal rates, and why bond prices fall when yields rise.",
+      "requires": [
+        "money-banking/money-and-payments"
+      ]
+    },
+    {
+      "slug": "term-structure",
+      "title": "The risk and term structure of interest rates",
+      "summary": "Default risk, liquidity and taxes, the yield curve, and the expectations and term-premium theories of the term structure.",
+      "requires": [
+        "money-banking/interest-rates"
+      ]
+    },
+    {
+      "slug": "financial-intermediation",
+      "title": "Financial markets and intermediaries",
+      "summary": "Why intermediaries exist: transaction costs, asymmetric information, adverse selection and moral hazard in lending.",
+      "requires": [
+        "money-banking/interest-rates"
+      ]
+    },
+    {
+      "slug": "banking",
+      "title": "The business of banking",
+      "summary": "Bank balance sheets, liquidity and credit risk, interest-rate risk and bank capital.",
+      "requires": [
+        "money-banking/financial-intermediation"
+      ]
+    },
+    {
+      "slug": "bank-runs-and-crises",
+      "title": "Bank runs and financial crises",
+      "summary": "The Diamond–Dybvig model of bank runs, contagion, shadow banking and the anatomy of financial crises.",
+      "requires": [
+        "money-banking/banking"
+      ]
+    },
+    {
+      "slug": "regulation",
+      "title": "Financial regulation",
+      "summary": "Deposit insurance and the lender of last resort, capital and liquidity requirements under the Basel accords, and macroprudential policy.",
+      "requires": [
+        "money-banking/bank-runs-and-crises"
+      ]
+    },
+    {
+      "slug": "central-banking",
+      "title": "Central banks and the money supply",
+      "summary": "Central bank balance sheets, reserves, the money multiplier and its limits, and the tools of monetary policy.",
+      "requires": [
+        "money-banking/banking"
+      ]
+    },
+    {
+      "slug": "monetary-policy-implementation",
+      "title": "Implementing monetary policy",
+      "summary": "Policy rates, corridor and floor systems, open-market operations, quantitative easing and central bank independence.",
+      "requires": [
+        "money-banking/central-banking"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "business-cycles",
+    "asset-pricing"
+  ]
+}

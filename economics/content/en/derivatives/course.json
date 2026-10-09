@@ -1,0 +1,95 @@
+{
+  "slug": "derivatives",
+  "title": "Derivatives",
+  "full_title": "Derivatives and Risk Management",
+  "area": "finance",
+  "level": 4,
+  "order": 250,
+  "tagline": "Forwards and futures, swaps, option payoffs and arbitrage bounds, binomial trees, the Black–Scholes model, the Greeks and hedging, numerical methods, credit derivatives and risk measurement",
+  "summary": "Derivatives — contracts whose value depends on the price of something else — are used to hedge risk, to speculate and to complete markets, and they played a central part in the financial crisis of 2008. This course prices them by no-arbitrage: forwards, futures and swaps, option payoffs and bounds, binomial trees, the Black–Scholes model and its Greeks, dynamic hedging and numerical methods, credit derivatives, and the measurement and management of financial risk.",
+  "overview": [],
+  "prerequisites": [
+    "asset-pricing"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "forwards-and-futures",
+      "title": "Forwards and futures",
+      "summary": "Forward and futures contracts, margining, cost-of-carry pricing and hedging with futures.",
+      "requires": [
+        "asset-pricing/stochastic-discount-factor",
+        "corporate-finance/time-value-of-money"
+      ]
+    },
+    {
+      "slug": "swaps",
+      "title": "Swaps",
+      "summary": "Interest-rate and currency swaps, how they are valued and what they are used for.",
+      "requires": [
+        "derivatives/forwards-and-futures",
+        "asset-pricing/fixed-income"
+      ]
+    },
+    {
+      "slug": "options",
+      "title": "Options: payoffs and arbitrage bounds",
+      "summary": "Calls and puts, payoff diagrams, spreads and combinations, put–call parity and no-arbitrage bounds.",
+      "requires": [
+        "derivatives/forwards-and-futures"
+      ]
+    },
+    {
+      "slug": "binomial-model",
+      "title": "The binomial model",
+      "summary": "One- and multi-period binomial trees, replication, risk-neutral valuation and American options.",
+      "requires": [
+        "derivatives/options"
+      ]
+    },
+    {
+      "slug": "black-scholes",
+      "title": "The Black–Scholes model",
+      "summary": "Lognormal prices, the Black–Scholes–Merton formula as the limit of binomial trees and from the hedging argument, and implied volatility.",
+      "requires": [
+        "derivatives/binomial-model"
+      ]
+    },
+    {
+      "slug": "greeks-and-hedging",
+      "title": "The Greeks and dynamic hedging",
+      "summary": "Delta, gamma, vega, theta and rho, and hedging a portfolio of options.",
+      "requires": [
+        "derivatives/black-scholes"
+      ]
+    },
+    {
+      "slug": "numerical-methods",
+      "title": "Numerical methods and exotic options",
+      "summary": "Monte Carlo simulation, finite-difference methods and path-dependent options.",
+      "requires": [
+        "derivatives/black-scholes"
+      ]
+    },
+    {
+      "slug": "credit-derivatives",
+      "title": "Credit risk and credit derivatives",
+      "summary": "Default probabilities and credit spreads, credit default swaps and securitisation.",
+      "requires": [
+        "derivatives/swaps"
+      ]
+    },
+    {
+      "slug": "risk-management",
+      "title": "Risk measurement and management",
+      "summary": "Value at risk and expected shortfall, stress testing, and the lessons of financial crises.",
+      "requires": [
+        "derivatives/greeks-and-hedging",
+        "derivatives/credit-derivatives"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

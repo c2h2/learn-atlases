@@ -1,0 +1,100 @@
+{
+  "slug": "climate-system",
+  "title": "The Climate System",
+  "full_title": "The Climate System",
+  "area": "climate",
+  "level": 3,
+  "order": 170,
+  "tagline": "Climate statistics, the global energy budget, the greenhouse effect, radiative forcing, feedbacks and sensitivity, heat transport, water and carbon in the climate system, natural variability",
+  "summary": "Climate is the statistics of weather, set by the flow of energy through the atmosphere, ocean, land and ice. This course builds the physics of climate: the global energy budget and the greenhouse effect, radiative forcing, feedbacks and climate sensitivity, the transport of heat by atmosphere and ocean, the water and carbon cycles as parts of the climate system, and natural variability from El Niño to volcanic eruptions.",
+  "overview": [],
+  "prerequisites": [
+    "atmospheric-dynamics",
+    "oceanography"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "climate-statistics",
+      "title": "Climate and its statistics",
+      "summary": "What climate is, climate normals and anomalies, the observed patterns of temperature and precipitation, and climate classification.",
+      "requires": []
+    },
+    {
+      "slug": "energy-budget",
+      "title": "The global energy budget",
+      "summary": "Energy flows at the top of the atmosphere and at the surface, albedo, and how satellites measure the budget.",
+      "requires": [
+        "atmospheric-dynamics/radiative-transfer",
+        "earth-system/energy-balance"
+      ]
+    },
+    {
+      "slug": "greenhouse-effect",
+      "title": "The greenhouse effect",
+      "summary": "Layer models, emission height and the lapse rate, and why carbon dioxide and water vapour warm the surface.",
+      "requires": [
+        "climate-system/energy-budget"
+      ]
+    },
+    {
+      "slug": "forcing",
+      "title": "Radiative forcing",
+      "summary": "Forcing by greenhouse gases, aerosols, land use, the Sun and volcanoes, and the logarithmic dependence on carbon dioxide.",
+      "requires": [
+        "climate-system/greenhouse-effect"
+      ]
+    },
+    {
+      "slug": "feedbacks-sensitivity",
+      "title": "Feedbacks and climate sensitivity",
+      "summary": "Planck, water-vapour, lapse-rate, surface-albedo and cloud feedbacks, and equilibrium and transient climate sensitivity.",
+      "requires": [
+        "climate-system/forcing"
+      ]
+    },
+    {
+      "slug": "heat-transport",
+      "title": "Heat transport by atmosphere and ocean",
+      "summary": "The poleward transport of energy, the roles of the atmospheric circulation and the ocean, and ocean heat uptake.",
+      "requires": [
+        "climate-system/energy-budget",
+        "atmospheric-dynamics/general-circulation",
+        "oceanography/overturning"
+      ]
+    },
+    {
+      "slug": "hydrological-cycle",
+      "title": "Water in the climate system",
+      "summary": "Evaporation, precipitation and the transport of water vapour, and why heavy rainfall intensifies as the climate warms.",
+      "requires": [
+        "climate-system/feedbacks-sensitivity",
+        "atmospheric-dynamics/moist-thermodynamics"
+      ]
+    },
+    {
+      "slug": "carbon-climate",
+      "title": "Carbon and climate",
+      "summary": "Land and ocean carbon sinks, the airborne fraction of emissions and carbon–climate feedbacks.",
+      "requires": [
+        "climate-system/forcing",
+        "oceanography/ocean-chemistry"
+      ]
+    },
+    {
+      "slug": "variability",
+      "title": "Natural climate variability",
+      "summary": "The El Niño–Southern Oscillation, the North Atlantic Oscillation, decadal variability and the climate response to volcanic eruptions.",
+      "requires": [
+        "climate-system/heat-transport"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "palaeoclimate",
+    "climate-modelling",
+    "climate-change"
+  ]
+}

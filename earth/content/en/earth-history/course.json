@@ -1,0 +1,92 @@
+{
+  "slug": "earth-history",
+  "title": "Earth History",
+  "full_title": "Earth History and Palaeontology",
+  "area": "history",
+  "level": 1,
+  "order": 30,
+  "tagline": "Relative and radiometric dating, fossils, and 4.5 billion years of the planet and its life, from the Hadean to the ice ages",
+  "summary": "Rocks and fossils record 4.5 billion years of Earth history. This course shows how geologists order and date rocks and how fossils form and are read, then tells the story of the planet: its formation and first oceans, the origin of life and the rise of oxygen, the Cambrian explosion, the great mass extinctions, the age of dinosaurs, and the Cenozoic world in which humans evolved.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "relative-dating",
+      "title": "Reading the rock record",
+      "summary": "Superposition, cross-cutting relationships and unconformities, and the correlation of rock layers from place to place.",
+      "requires": []
+    },
+    {
+      "slug": "geological-time",
+      "title": "Absolute ages and the geological timescale",
+      "summary": "Radiometric dating, the age of the Earth, and how the international geological timescale is built and calibrated.",
+      "requires": [
+        "earth-history/relative-dating"
+      ]
+    },
+    {
+      "slug": "fossils",
+      "title": "Fossils and palaeontology",
+      "summary": "How organisms become fossils, trace fossils, the completeness of the fossil record, and fossils as clocks and as clues to ancient environments.",
+      "requires": [
+        "earth-history/relative-dating"
+      ]
+    },
+    {
+      "slug": "early-earth",
+      "title": "The Hadean and Archaean Earth",
+      "summary": "The formation of the Earth and the Moon, the first crust and oceans, and the earliest evidence of life.",
+      "requires": [
+        "earth-history/geological-time"
+      ]
+    },
+    {
+      "slug": "oxygen-proterozoic",
+      "title": "The rise of oxygen and the Proterozoic",
+      "summary": "The Great Oxidation Event, banded iron formations, the first eukaryotes and the Snowball Earth glaciations.",
+      "requires": [
+        "earth-history/early-earth"
+      ]
+    },
+    {
+      "slug": "palaeozoic",
+      "title": "The Cambrian explosion and Palaeozoic life",
+      "summary": "The rapid appearance of animal body plans, reefs and the colonisation of the land, and the assembly of Pangaea.",
+      "requires": [
+        "earth-history/oxygen-proterozoic",
+        "earth-history/fossils"
+      ]
+    },
+    {
+      "slug": "mass-extinctions",
+      "title": "Mass extinctions",
+      "summary": "The five great mass extinctions, their causes — volcanism, impacts, climate and ocean change — and how life recovered.",
+      "requires": [
+        "earth-history/palaeozoic"
+      ]
+    },
+    {
+      "slug": "mesozoic",
+      "title": "The Mesozoic world",
+      "summary": "The break-up of Pangaea, dinosaurs, early mammals and flowering plants, greenhouse climates and the end-Cretaceous impact.",
+      "requires": [
+        "earth-history/mass-extinctions"
+      ]
+    },
+    {
+      "slug": "cenozoic",
+      "title": "The Cenozoic and the ice ages",
+      "summary": "The radiation of mammals, the long cooling of the climate, the Quaternary ice ages and the evolution of humans.",
+      "requires": [
+        "earth-history/mesozoic"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "sedimentology",
+    "palaeoclimate"
+  ]
+}

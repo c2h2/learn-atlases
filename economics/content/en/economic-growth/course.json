@@ -1,0 +1,88 @@
+{
+  "slug": "economic-growth",
+  "title": "Economic Growth",
+  "full_title": "Economic Growth",
+  "area": "macro",
+  "level": 3,
+  "order": 100,
+  "tagline": "The facts of growth, the Solow model, technology and growth accounting, convergence, optimal saving in the Ramsey model, overlapping generations, ideas and endogenous growth, and institutions",
+  "summary": "Small differences in growth rates compound into vast differences in living standards. This course asks why some countries are rich and others poor, and why growth happens at all: the stylised facts, capital accumulation in the Solow model and growth accounting, convergence, optimal saving in the Ramsey–Cass–Koopmans and overlapping-generations models, the economics of ideas and endogenous growth, and the deeper roles of institutions and geography.",
+  "overview": [],
+  "prerequisites": [
+    "macroeconomics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "growth-facts",
+      "title": "The facts of economic growth",
+      "summary": "Growth over two centuries, Kaldor’s stylised facts, the world distribution of income and the power of compounding.",
+      "requires": [
+        "macroeconomics/national-income"
+      ]
+    },
+    {
+      "slug": "solow-model",
+      "title": "The Solow model",
+      "summary": "Capital accumulation with diminishing returns, the steady state, the golden rule and transitional dynamics.",
+      "requires": [
+        "economic-growth/growth-facts",
+        "mathematical-economics/difference-and-differential-equations"
+      ]
+    },
+    {
+      "slug": "technology-and-growth-accounting",
+      "title": "Technological progress and growth accounting",
+      "summary": "Labour-augmenting technology, balanced growth, and the decomposition of growth into capital, labour and total factor productivity.",
+      "requires": [
+        "economic-growth/solow-model"
+      ]
+    },
+    {
+      "slug": "convergence",
+      "title": "Convergence",
+      "summary": "Absolute and conditional convergence, human capital in the augmented Solow model, and the evidence across countries.",
+      "requires": [
+        "economic-growth/technology-and-growth-accounting"
+      ]
+    },
+    {
+      "slug": "ramsey-model",
+      "title": "Optimal saving: the Ramsey–Cass–Koopmans model",
+      "summary": "Households that optimise over time, the Euler equation, the saddle path and the efficiency of the competitive equilibrium.",
+      "requires": [
+        "economic-growth/solow-model",
+        "mathematical-economics/dynamic-optimisation"
+      ]
+    },
+    {
+      "slug": "overlapping-generations",
+      "title": "Overlapping generations",
+      "summary": "The Diamond model, dynamic inefficiency, and the effects of pay-as-you-go pensions and public debt.",
+      "requires": [
+        "economic-growth/ramsey-model"
+      ]
+    },
+    {
+      "slug": "endogenous-growth",
+      "title": "Ideas and endogenous growth",
+      "summary": "The non-rivalry of ideas, the AK and Romer models, research and development, and scale effects.",
+      "requires": [
+        "economic-growth/technology-and-growth-accounting"
+      ]
+    },
+    {
+      "slug": "institutions-and-growth",
+      "title": "Institutions, geography and the deep causes of growth",
+      "summary": "Property rights, colonial origins, geography and culture, and the empirical debate over the fundamental causes of prosperity.",
+      "requires": [
+        "economic-growth/convergence"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "development-economics"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "slug": "poetry-metrics",
+  "title": "Classical Poetry",
+  "full_title": "Classical Chinese Poetry: Metre, Form and Appreciation",
+  "area": "ancient",
+  "level": 2,
+  "order": 130,
+  "tagline": "Level and oblique tones, rhyme and rhyme books, regulated verse, quatrains, parallelism and couplets, ancient-style verse, the forms of the *ci*, the *qu*, imagery and allusion, and how to read a poem",
+  "summary": "Classical Chinese poetry follows rules of tone, rhyme and parallelism that school lessons usually leave out, and knowing them changes how a poem is read and heard. This course explains level and oblique tones, including the entering tone that Putonghua has lost, rhyme and the rhyme books, the patterns of regulated verse and quatrains, parallel couplets, the freer ancient-style verse, the tune patterns of the *ci* and the *qu*, and then turns to imagery, allusion and the art of reading a poem closely.",
+  "overview": [],
+  "prerequisites": [
+    "sounds-of-mandarin",
+    "classical-chinese-1"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "level-oblique",
+      "title": "Level and oblique tones",
+      "summary": "The four tones of Middle Chinese, how they correspond to the tones of Putonghua, and how to recognise the entering tone that Putonghua has lost.",
+      "requires": [
+        "sounds-of-mandarin/tones",
+        "classical-chinese-1/what-is-wenyan"
+      ]
+    },
+    {
+      "slug": "rhyme",
+      "title": "Rhyme and the rhyme books",
+      "summary": "Rhyme in classical poetry, the rhyme groups of the Pingshui system, and the modern “new rhyme” systems based on Putonghua.",
+      "requires": [
+        "poetry-metrics/level-oblique"
+      ]
+    },
+    {
+      "slug": "regulated-verse",
+      "title": "Regulated verse",
+      "summary": "The four tonal patterns of the five- and seven-character regulated poem, the rules of opposition and adhesion, and licences and faults.",
+      "requires": [
+        "poetry-metrics/rhyme"
+      ]
+    },
+    {
+      "slug": "quatrains",
+      "title": "Quatrains",
+      "summary": "The regulated quatrain and the ancient-style quatrain, and why the quatrain suits a single moment.",
+      "requires": [
+        "poetry-metrics/regulated-verse"
+      ]
+    },
+    {
+      "slug": "couplets",
+      "title": "Parallelism and couplets",
+      "summary": "Matching word class, meaning and tone in the parallel lines of regulated verse, and the art of the couplet.",
+      "requires": [
+        "poetry-metrics/regulated-verse"
+      ]
+    },
+    {
+      "slug": "ancient-style",
+      "title": "Ancient-style verse",
+      "summary": "Five- and seven-character poems in the ancient style and the song form, free of the rules of regulated verse.",
+      "requires": [
+        "poetry-metrics/quatrains"
+      ]
+    },
+    {
+      "slug": "ci-forms",
+      "title": "The forms of the *ci*",
+      "summary": "Tune patterns (词牌), short and long lyrics, stanzas, and how to read a *ci* pattern book.",
+      "requires": [
+        "poetry-metrics/couplets"
+      ]
+    },
+    {
+      "slug": "qu",
+      "title": "The *qu*",
+      "summary": "Independent songs and the arias of drama, extra words (衬字), and the livelier language of the *qu*.",
+      "requires": [
+        "poetry-metrics/ci-forms"
+      ]
+    },
+    {
+      "slug": "imagery-allusion",
+      "title": "Imagery and allusion",
+      "summary": "Recurring images such as the moon, willows and wild geese, allusions and how to trace them, and the idea of *yijing*.",
+      "requires": [
+        "poetry-metrics/ancient-style",
+        "poetry-metrics/ci-forms"
+      ]
+    },
+    {
+      "slug": "reading-a-poem",
+      "title": "Reading a poem",
+      "summary": "A method for close reading — the poet and the occasion, form, language, images and feeling — and the stock phrases of exam-style appreciation to avoid.",
+      "requires": [
+        "poetry-metrics/imagery-allusion",
+        "poetry-metrics/qu"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "tang-literature",
+    "song-literature",
+    "phonology"
+  ]
+}

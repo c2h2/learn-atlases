@@ -1,0 +1,95 @@
+{
+  "slug": "reading-skills",
+  "title": "Reading Skills",
+  "full_title": "Reading Skills: Reading for Meaning",
+  "area": "reading",
+  "level": 2,
+  "order": 100,
+  "tagline": "Reading with a purpose, guessing words from context, main ideas, following the thread of a text, long sentences, inference and attitude, text types, numbers and charts, and extensive reading",
+  "summary": "Good readers read differently depending on what they need, and they use the structure of a text to understand it. This course teaches skimming, scanning and close reading, working out unknown words from context, finding main ideas, following the links between sentences, untangling long sentences, reading between the lines, recognising common text types, reading numbers and charts, and building fluency by reading a lot.",
+  "overview": [],
+  "prerequisites": [
+    "core-vocabulary",
+    "core-grammar"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "reading-with-a-purpose",
+      "title": "Reading with a purpose",
+      "summary": "Skimming for gist, scanning for details and reading closely, and how to choose the right approach for a text and a task.",
+      "requires": []
+    },
+    {
+      "slug": "words-from-context",
+      "title": "Guessing words from context",
+      "summary": "Using word class, nearby words, examples, contrasts and word parts to work out an unknown word, and knowing when to look it up.",
+      "requires": [
+        "reading-skills/reading-with-a-purpose",
+        "core-vocabulary/using-a-dictionary"
+      ]
+    },
+    {
+      "slug": "main-ideas",
+      "title": "Main ideas and supporting details",
+      "summary": "Topic sentences, paragraph structure, and how writers support a point with examples, reasons and evidence.",
+      "requires": [
+        "reading-skills/reading-with-a-purpose"
+      ]
+    },
+    {
+      "slug": "following-the-thread",
+      "title": "Following the thread",
+      "summary": "Pronouns, *this* and *that*, synonyms and linking words that connect sentences, and how to track what each one refers to.",
+      "requires": [
+        "reading-skills/main-ideas"
+      ]
+    },
+    {
+      "slug": "long-sentences",
+      "title": "Untangling long sentences",
+      "summary": "Finding the subject and main verb, setting aside phrases and clauses, and reading long noun phrases.",
+      "requires": [
+        "reading-skills/following-the-thread",
+        "core-grammar/sentence-patterns"
+      ]
+    },
+    {
+      "slug": "inference",
+      "title": "Inference and attitude",
+      "summary": "Reading between the lines, recognising the writer’s opinion and tone, and telling fact from opinion.",
+      "requires": [
+        "reading-skills/main-ideas"
+      ]
+    },
+    {
+      "slug": "text-types",
+      "title": "Text types",
+      "summary": "Narratives, descriptions, instructions, news reports, reviews and opinion pieces, and the features that signal each.",
+      "requires": [
+        "reading-skills/main-ideas"
+      ]
+    },
+    {
+      "slug": "numbers-and-charts",
+      "title": "Numbers, tables and charts",
+      "summary": "Understanding figures, percentages, tables and simple charts in texts, and the language used to describe them.",
+      "requires": [
+        "reading-skills/text-types"
+      ]
+    },
+    {
+      "slug": "extensive-reading",
+      "title": "Reading a lot",
+      "summary": "Graded readers, choosing texts at the right level, reading speed, and why reading large amounts of easy text builds vocabulary and fluency.",
+      "requires": [
+        "reading-skills/words-from-context"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "academic-reading"
+  ]
+}

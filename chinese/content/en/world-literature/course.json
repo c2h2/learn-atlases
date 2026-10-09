@@ -1,0 +1,110 @@
+{
+  "slug": "world-literature",
+  "title": "World Literature",
+  "full_title": "World Literature in Translation",
+  "area": "theory",
+  "level": 3,
+  "order": 230,
+  "tagline": "Greece and Rome, the Bible and the Middle Ages, the Renaissance, classicism and the Enlightenment, Romanticism, the realist novel, Russian literature, modernism, post-war and contemporary literature, Asian, African and Latin American literature, and translation and reception",
+  "summary": "Modern Chinese literature grew up in conversation with foreign literature, read mostly in translation. This course surveys the literatures of the world from Homer and Greek tragedy through Dante, Shakespeare, the Enlightenment, Romanticism and the great realist and Russian novels to modernism and contemporary writing, together with the literatures of Japan, India, the Arab world, Africa and Latin America, and asks what is gained and lost in translation.",
+  "overview": [],
+  "prerequisites": [
+    "literary-theory"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "greece-rome",
+      "title": "Greece and Rome",
+      "summary": "Homer’s epics, Greek tragedy and comedy, and Virgil and Ovid.",
+      "requires": [
+        "literary-theory/what-is-literature"
+      ]
+    },
+    {
+      "slug": "bible-middle-ages",
+      "title": "The Bible and the Middle Ages",
+      "summary": "The Bible as literature, heroic epic and romance, and Dante’s *Divine Comedy*.",
+      "requires": [
+        "world-literature/greece-rome"
+      ]
+    },
+    {
+      "slug": "renaissance",
+      "title": "The Renaissance",
+      "summary": "Boccaccio, Rabelais, Cervantes and Shakespeare.",
+      "requires": [
+        "world-literature/bible-middle-ages"
+      ]
+    },
+    {
+      "slug": "enlightenment",
+      "title": "Classicism and the Enlightenment",
+      "summary": "Molière and Racine, Voltaire and Rousseau, Defoe and Swift, and Goethe’s *Faust*.",
+      "requires": [
+        "world-literature/renaissance"
+      ]
+    },
+    {
+      "slug": "romanticism",
+      "title": "Romanticism",
+      "summary": "Wordsworth, Byron and Shelley, Hugo, Heine, and Pushkin.",
+      "requires": [
+        "world-literature/enlightenment"
+      ]
+    },
+    {
+      "slug": "realism",
+      "title": "The realist novel",
+      "summary": "Stendhal, Balzac and Flaubert, Dickens and the Brontës, and Mark Twain.",
+      "requires": [
+        "world-literature/romanticism"
+      ]
+    },
+    {
+      "slug": "russian",
+      "title": "Russian literature",
+      "summary": "Gogol, Turgenev, Dostoevsky, Tolstoy and Chekhov.",
+      "requires": [
+        "world-literature/realism"
+      ]
+    },
+    {
+      "slug": "modernism",
+      "title": "Modernism",
+      "summary": "Symbolist poetry, Kafka, Proust, Joyce, Woolf, Eliot and Faulkner.",
+      "requires": [
+        "world-literature/russian"
+      ]
+    },
+    {
+      "slug": "postwar-contemporary",
+      "title": "Post-war and contemporary literature",
+      "summary": "Existentialism and the theatre of the absurd, Camus and Beckett, postmodern fiction, and the Nobel laureates of recent decades.",
+      "requires": [
+        "world-literature/modernism"
+      ]
+    },
+    {
+      "slug": "asia-africa-latin-america",
+      "title": "Asian, African and Latin American literature",
+      "summary": "*The Tale of Genji* and modern Japanese fiction, Tagore, the *Thousand and One Nights*, Achebe, and Borges, García Márquez and the Latin American boom.",
+      "requires": [
+        "world-literature/postwar-contemporary"
+      ]
+    },
+    {
+      "slug": "translation-reception",
+      "title": "Translation and reception",
+      "summary": "How foreign literature reached China, from Lin Shu’s retellings to Lu Xun’s “hard translation” and the present day, and the beginnings of comparative literature.",
+      "requires": [
+        "world-literature/asia-africa-latin-america"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "academic-writing"
+  ]
+}

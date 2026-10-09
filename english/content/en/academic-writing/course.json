@@ -1,0 +1,107 @@
+{
+  "slug": "academic-writing",
+  "title": "Academic Writing",
+  "full_title": "Academic Writing and Research",
+  "area": "writing",
+  "level": 4,
+  "order": 200,
+  "tagline": "Academic style, research questions, finding sources, citation and referencing, academic integrity, literature reviews, methods and results, discussion and conclusions, abstracts and titles, and peer review",
+  "summary": "Academic writing follows conventions shared across disciplines: how to make a claim, position it among other work, credit sources and report research. This course covers academic style, research questions and planning, finding and citing sources, academic integrity, literature reviews, writing up methods and results, discussing findings with appropriate caution, abstracts and titles, and revising in response to peer review.",
+  "overview": [],
+  "prerequisites": [
+    "essay-writing",
+    "academic-reading",
+    "modality"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "academic-style",
+      "title": "Academic style",
+      "summary": "Formality, precision, nominalisation, the use of *I* and *we*, and how style varies between disciplines.",
+      "requires": [
+        "essay-writing/revising-editing"
+      ]
+    },
+    {
+      "slug": "research-questions",
+      "title": "Research questions and planning",
+      "summary": "Turning a topic into a question that can be researched, and planning a paper or dissertation.",
+      "requires": [
+        "academic-writing/academic-style"
+      ]
+    },
+    {
+      "slug": "finding-sources",
+      "title": "Finding and evaluating sources",
+      "summary": "Searching databases and libraries, reading strategically, and judging the quality of sources.",
+      "requires": [
+        "academic-writing/research-questions",
+        "academic-reading/evaluating-sources"
+      ]
+    },
+    {
+      "slug": "citation-referencing",
+      "title": "Citation and referencing",
+      "summary": "Why we cite, citing in the text and in reference lists, the main styles such as APA, MLA, Harvard and numbered styles, and reference managers.",
+      "requires": [
+        "academic-writing/finding-sources"
+      ]
+    },
+    {
+      "slug": "academic-integrity",
+      "title": "Academic integrity",
+      "summary": "What counts as plagiarism, using sources responsibly, paraphrase versus patchwriting, and using AI tools within the rules.",
+      "requires": [
+        "academic-writing/citation-referencing",
+        "academic-reading/paraphrase-and-quotation"
+      ]
+    },
+    {
+      "slug": "literature-review",
+      "title": "Literature reviews",
+      "summary": "Synthesising sources rather than summarising them one by one, and finding the gap a study addresses.",
+      "requires": [
+        "academic-writing/academic-integrity"
+      ]
+    },
+    {
+      "slug": "methods-results",
+      "title": "Methods and results",
+      "summary": "Reporting what was done and what was found, with the conventions of tense and voice for each section.",
+      "requires": [
+        "academic-writing/literature-review"
+      ]
+    },
+    {
+      "slug": "discussion-conclusions",
+      "title": "Discussion and conclusions",
+      "summary": "Interpreting results, comparing them with other studies, stating limitations, and hedging claims to match the strength of the evidence.",
+      "requires": [
+        "academic-writing/methods-results",
+        "modality/hedging-boosting"
+      ]
+    },
+    {
+      "slug": "abstracts-titles",
+      "title": "Abstracts and titles",
+      "summary": "Writing informative titles and abstracts, including structured abstracts.",
+      "requires": [
+        "academic-writing/discussion-conclusions"
+      ]
+    },
+    {
+      "slug": "peer-review",
+      "title": "Peer review and revision",
+      "summary": "Responding to feedback from tutors and reviewers, and revising a paper.",
+      "requires": [
+        "academic-writing/abstracts-titles"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "style-and-rhetoric"
+  ]
+}

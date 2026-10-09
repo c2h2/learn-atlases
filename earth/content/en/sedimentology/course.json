@@ -1,0 +1,98 @@
+{
+  "slug": "sedimentology",
+  "title": "Sedimentology",
+  "full_title": "Sedimentology and Stratigraphy",
+  "area": "surface",
+  "level": 2,
+  "order": 70,
+  "tagline": "Sediment grains and transport, bedforms, facies and depositional environments, carbonates and evaporites, stratigraphic correlation, basins and sequence stratigraphy",
+  "summary": "Sedimentary rocks preserve ancient rivers, deserts, coasts and seas. This course covers sediment grains and the physics of their transport, bedforms and sedimentary structures, facies and the main depositional environments on land and in the sea, carbonates and evaporites, the stratigraphy used to correlate and date layers, and how sedimentary basins form, subside and fill.",
+  "overview": [],
+  "prerequisites": [
+    "physical-geology",
+    "earth-history"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "sediment-grains",
+      "title": "Sediment grains and textures",
+      "summary": "Grain size, sorting and shape, and what they reveal about weathering and transport.",
+      "requires": [
+        "physical-geology/sedimentary-rocks"
+      ]
+    },
+    {
+      "slug": "sediment-transport",
+      "title": "Sediment transport",
+      "summary": "Fluid flow, settling velocity, the threshold of motion, and transport as bedload and in suspension.",
+      "requires": [
+        "sedimentology/sediment-grains"
+      ]
+    },
+    {
+      "slug": "bedforms",
+      "title": "Bedforms and sedimentary structures",
+      "summary": "Ripples, dunes and plane beds, cross-bedding, and the other structures that record ancient flows.",
+      "requires": [
+        "sedimentology/sediment-transport"
+      ]
+    },
+    {
+      "slug": "facies",
+      "title": "Facies and depositional environments",
+      "summary": "Facies, facies associations and Walther’s law: reading environments from vertical successions of beds.",
+      "requires": [
+        "sedimentology/bedforms"
+      ]
+    },
+    {
+      "slug": "continental-environments",
+      "title": "Continental environments",
+      "summary": "The deposits of rivers, alluvial fans, lakes, deserts and glaciers.",
+      "requires": [
+        "sedimentology/facies"
+      ]
+    },
+    {
+      "slug": "marine-environments",
+      "title": "Coastal and marine environments",
+      "summary": "Deltas, beaches, tidal flats and continental shelves, and deep-sea fans and turbidites.",
+      "requires": [
+        "sedimentology/facies"
+      ]
+    },
+    {
+      "slug": "carbonates",
+      "title": "Carbonates and evaporites",
+      "summary": "Carbonate factories, reefs and platforms, the diagenesis of limestones, and evaporite deposits.",
+      "requires": [
+        "sedimentology/marine-environments"
+      ]
+    },
+    {
+      "slug": "stratigraphy",
+      "title": "Stratigraphy and correlation",
+      "summary": "Lithostratigraphy, biostratigraphy, magnetostratigraphy and chronostratigraphy, and how layers are correlated between places.",
+      "requires": [
+        "sedimentology/facies",
+        "earth-history/geological-time",
+        "earth-history/fossils"
+      ]
+    },
+    {
+      "slug": "basins-sequences",
+      "title": "Basins and sequence stratigraphy",
+      "summary": "How sedimentary basins form, subside and fill, burial diagenesis, and how relative sea level and accommodation shape depositional sequences.",
+      "requires": [
+        "sedimentology/stratigraphy"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "geomorphology",
+    "earth-resources"
+  ]
+}

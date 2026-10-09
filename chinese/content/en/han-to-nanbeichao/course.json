@@ -1,0 +1,103 @@
+{
+  "slug": "han-to-nanbeichao",
+  "title": "Han–Six Dynasties Literature",
+  "full_title": "Literature from the Qin and Han to the Southern and Northern Dynasties",
+  "area": "ancient",
+  "level": 2,
+  "order": 110,
+  "tagline": "Han rhapsodies, Sima Qian and the *Records of the Grand Historian*, Han ballads, the *Nineteen Old Poems*, Jian’an literature, the Zhengshi and Jin poets, Tao Yuanming, landscape poetry and the Yongming style, Southern and Northern folk songs, and tales and criticism",
+  "summary": "Between the Qin unification and the Sui, Chinese literature found many of its lasting forms: the rhapsody, the great histories, five-character poetry, landscape and pastoral poetry, and the first collections of tales. This course follows that story from the Han rhapsodies and Sima Qian through the ballads of the Han and the *Nineteen Old Poems* to the Jian’an poets, Tao Yuanming, Xie Lingyun, the tonal experiments of the Yongming period, and the tales and literary criticism of the Six Dynasties.",
+  "overview": [],
+  "prerequisites": [
+    "pre-qin-literature"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "han-fu",
+      "title": "The Han rhapsody",
+      "summary": "Jia Yi, Mei Sheng, Sima Xiangru and Zhang Heng: the grand rhapsody of display and the shorter lyrical *fu*.",
+      "requires": [
+        "pre-qin-literature/songs-of-chu"
+      ]
+    },
+    {
+      "slug": "shiji",
+      "title": "Sima Qian and the *Shiji*",
+      "summary": "The structure of the *Records of the Grand Historian*, its biographies as literature, and Ban Gu’s *History of the Han*.",
+      "requires": [
+        "pre-qin-literature/zuo-zhuan"
+      ]
+    },
+    {
+      "slug": "han-yuefu",
+      "title": "Han ballads",
+      "summary": "The Music Bureau, ballads that “arise from events”, and long narrative poems such as *Southeast Flies the Peacock*.",
+      "requires": [
+        "han-to-nanbeichao/han-fu"
+      ]
+    },
+    {
+      "slug": "nineteen-old-poems",
+      "title": "The *Nineteen Old Poems*",
+      "summary": "The anonymous poems that established the five-character line, and their themes of parting and the brevity of life.",
+      "requires": [
+        "han-to-nanbeichao/han-yuefu"
+      ]
+    },
+    {
+      "slug": "jianan",
+      "title": "Jian’an literature",
+      "summary": "Cao Cao, Cao Pi, Cao Zhi and the Seven Masters of Jian’an, and the strength of style known as “Jian’an bone”.",
+      "requires": [
+        "han-to-nanbeichao/nineteen-old-poems"
+      ]
+    },
+    {
+      "slug": "zhengshi-jin",
+      "title": "From the Zhengshi era to the Jin",
+      "summary": "Ruan Ji and Ji Kang, the poets of the Taikang era and Zuo Si, and the metaphysical poetry of the Eastern Jin.",
+      "requires": [
+        "han-to-nanbeichao/jianan"
+      ]
+    },
+    {
+      "slug": "tao-yuanming",
+      "title": "Tao Yuanming",
+      "summary": "The poet of fields and gardens, his life in retirement, *The Peach Blossom Spring*, and how his reputation grew after his death.",
+      "requires": [
+        "han-to-nanbeichao/zhengshi-jin"
+      ]
+    },
+    {
+      "slug": "landscape-yongming",
+      "title": "Landscape poetry and the Yongming style",
+      "summary": "Xie Lingyun and Xie Tiao, the discovery of the four tones, the Yongming rules of prosody, and palace-style poetry.",
+      "requires": [
+        "han-to-nanbeichao/tao-yuanming"
+      ]
+    },
+    {
+      "slug": "folk-songs",
+      "title": "Southern and Northern folk songs",
+      "summary": "The love songs of the south, the vigorous songs of the north, and the *Ballad of Mulan*.",
+      "requires": [
+        "han-to-nanbeichao/han-yuefu"
+      ]
+    },
+    {
+      "slug": "tales-criticism",
+      "title": "Tales and criticism",
+      "summary": "The *Soushen Ji*, *A New Account of Tales of the World*, and the criticism of Cao Pi, Lu Ji, Liu Xie and Zhong Rong.",
+      "requires": [
+        "han-to-nanbeichao/landscape-yongming",
+        "han-to-nanbeichao/folk-songs"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "tang-literature"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "data-structures",
+  "title": "Data Structures",
+  "full_title": "Data Structures",
+  "area": "theory",
+  "level": 1,
+  "order": 30,
+  "tagline": "Asymptotic analysis, arrays and linked lists, stacks and queues, hash tables, trees, search trees, heaps and graph representations",
+  "summary": "Data structures organise information so that the operations a program needs are fast. This course introduces asymptotic analysis and then the essential structures — dynamic arrays and linked lists, stacks and queues, hash tables, binary search trees and their balanced variants, heaps and priority queues, and graph representations — with their costs and the trade-offs between them.",
+  "overview": [],
+  "prerequisites": [
+    "programming-1"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "asymptotic-analysis",
+      "title": "Asymptotic analysis",
+      "summary": "Counting operations, cost models, and big-O, big-Omega and big-Theta notation.",
+      "requires": [
+        "programming-1/control-flow"
+      ]
+    },
+    {
+      "slug": "arrays-lists",
+      "title": "Arrays and linked lists",
+      "summary": "Contiguous and linked storage, dynamic arrays with amortised doubling, and singly and doubly linked lists.",
+      "requires": [
+        "data-structures/asymptotic-analysis"
+      ]
+    },
+    {
+      "slug": "stacks-queues",
+      "title": "Stacks, queues and deques",
+      "summary": "Abstract interfaces with array and linked implementations, and applications such as expression evaluation.",
+      "requires": [
+        "data-structures/arrays-lists"
+      ]
+    },
+    {
+      "slug": "hash-tables",
+      "title": "Hash tables",
+      "summary": "Hash functions, separate chaining and open addressing, load factors and resizing.",
+      "requires": [
+        "data-structures/arrays-lists"
+      ]
+    },
+    {
+      "slug": "trees",
+      "title": "Trees and traversals",
+      "summary": "Rooted and binary trees, pre-, in- and post-order and level-order traversals, and representing hierarchies.",
+      "requires": [
+        "data-structures/stacks-queues"
+      ]
+    },
+    {
+      "slug": "binary-search-trees",
+      "title": "Binary search trees",
+      "summary": "Search, insertion and deletion, and why unbalanced trees can degrade to linear time.",
+      "requires": [
+        "data-structures/trees"
+      ]
+    },
+    {
+      "slug": "balanced-trees",
+      "title": "Balanced search trees",
+      "summary": "AVL trees, red–black trees and B-trees, rotations and guarantees on height.",
+      "requires": [
+        "data-structures/binary-search-trees"
+      ]
+    },
+    {
+      "slug": "heaps",
+      "title": "Heaps and priority queues",
+      "summary": "Binary heaps, building a heap in linear time, priority-queue operations and heapsort.",
+      "requires": [
+        "data-structures/trees"
+      ]
+    },
+    {
+      "slug": "graph-representations",
+      "title": "Graph representations",
+      "summary": "Graph terminology, adjacency lists and adjacency matrices, and the cost of basic graph operations.",
+      "requires": [
+        "data-structures/arrays-lists",
+        "data-structures/hash-tables"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "algorithms",
+    "databases"
+  ]
+}

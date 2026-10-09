@@ -1,0 +1,99 @@
+{
+  "slug": "analytical-chemistry",
+  "title": "Analytical Chemistry",
+  "full_title": "Quantitative Analytical Chemistry",
+  "area": "analytical",
+  "level": 2,
+  "order": 110,
+  "tagline": "The analytical process, statistics and calibration, equilibria, gravimetry and titrimetry, electroanalysis, spectrometry, chromatography and hyphenated methods",
+  "summary": "Analytical chemistry answers two questions — what is in a sample, and how much — with a known reliability. This course follows the analytical process from sampling to validated result, and covers statistics and calibration, equilibrium-based classical methods, electroanalytical techniques, molecular and atomic spectrometry, chromatography and detection by mass spectrometry.",
+  "overview": [],
+  "prerequisites": [
+    "general-chemistry-2",
+    "laboratory-methods"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "analytical-process",
+      "title": "The analytical process",
+      "summary": "Defining the problem, sampling and sample preparation, choosing a method and reporting a result that is fit for purpose.",
+      "requires": [
+        "laboratory-methods/volumetric-technique"
+      ]
+    },
+    {
+      "slug": "statistics-calibration",
+      "title": "Statistics, calibration and quality assurance",
+      "summary": "Significance tests, calibration curves, standard addition and internal standards, limits of detection and method validation.",
+      "requires": [
+        "laboratory-methods/data-graphs"
+      ]
+    },
+    {
+      "slug": "equilibria-in-analysis",
+      "title": "Equilibria in analysis",
+      "summary": "Activity, the systematic treatment of equilibria, fractional composition diagrams and the pH of complex mixtures.",
+      "requires": [
+        "general-chemistry-2/buffers-titrations",
+        "general-chemistry-2/solubility-equilibria"
+      ]
+    },
+    {
+      "slug": "classical-analysis",
+      "title": "Gravimetric and titrimetric analysis",
+      "summary": "Precipitation gravimetry, and acid–base, complexometric (EDTA), precipitation and redox titrations with their end points.",
+      "requires": [
+        "analytical-chemistry/equilibria-in-analysis"
+      ]
+    },
+    {
+      "slug": "electroanalytical",
+      "title": "Electroanalytical methods",
+      "summary": "Potentiometry and ion-selective electrodes, the glass pH electrode, voltammetry and coulometry.",
+      "requires": [
+        "general-chemistry-2/electrochemistry-intro",
+        "analytical-chemistry/statistics-calibration"
+      ]
+    },
+    {
+      "slug": "molecular-spectrometry",
+      "title": "Molecular absorption and fluorescence spectrometry",
+      "summary": "The Beer–Lambert law, UV–visible spectrometers, deviations from linearity, and quantitative fluorescence.",
+      "requires": [
+        "analytical-chemistry/statistics-calibration"
+      ]
+    },
+    {
+      "slug": "atomic-spectrometry",
+      "title": "Atomic spectrometry",
+      "summary": "Flame and graphite-furnace atomic absorption, inductively coupled plasma emission and mass spectrometry, and their interferences.",
+      "requires": [
+        "analytical-chemistry/molecular-spectrometry"
+      ]
+    },
+    {
+      "slug": "chromatography",
+      "title": "Chromatographic separations",
+      "summary": "Retention, plate height and resolution, gas chromatography, high-performance liquid chromatography and detectors.",
+      "requires": [
+        "laboratory-methods/chromatography-basics",
+        "analytical-chemistry/statistics-calibration"
+      ]
+    },
+    {
+      "slug": "hyphenated-methods",
+      "title": "Hyphenated techniques",
+      "summary": "Coupling chromatography with mass spectrometry, selected-ion monitoring, and quantification with isotope-labelled internal standards.",
+      "requires": [
+        "analytical-chemistry/chromatography"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "spectroscopy",
+    "environmental-chemistry"
+  ]
+}

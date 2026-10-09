@@ -1,0 +1,92 @@
+{
+  "slug": "evolution",
+  "title": "Evolution",
+  "full_title": "Evolutionary Biology",
+  "area": "evolution",
+  "level": 1,
+  "order": 40,
+  "tagline": "Evidence for evolution, natural and sexual selection, drift, coevolution, speciation, phylogenies, macroevolution and human origins",
+  "summary": "Nothing in biology makes sense except in the light of evolution, as Theodosius Dobzhansky put it. This course presents the evidence that life has evolved, the processes that change populations — natural and sexual selection, mutation, drift and gene flow — coevolution between species, the origin of species, how phylogenies are read and built, the large-scale patterns of the fossil record, and the evolution of our own species.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "evidence-for-evolution",
+      "title": "Evidence for evolution",
+      "summary": "Fossils, homology, biogeography and molecular evidence, and the development of evolutionary thought from Lamarck to Darwin.",
+      "requires": []
+    },
+    {
+      "slug": "natural-selection",
+      "title": "Natural selection and adaptation",
+      "summary": "Variation, heritability and differential reproduction, and what adaptation can and cannot achieve.",
+      "requires": [
+        "evolution/evidence-for-evolution"
+      ]
+    },
+    {
+      "slug": "mutation-drift-gene-flow",
+      "title": "Mutation, drift and gene flow",
+      "summary": "The other forces that change allele frequencies, and the neutral theory of molecular evolution in outline.",
+      "requires": [
+        "evolution/natural-selection"
+      ]
+    },
+    {
+      "slug": "sexual-selection",
+      "title": "Sexual selection",
+      "summary": "Competition for mates, mate choice and the evolution of differences between the sexes.",
+      "requires": [
+        "evolution/natural-selection"
+      ]
+    },
+    {
+      "slug": "coevolution",
+      "title": "Coevolution",
+      "summary": "Arms races between hosts and parasites and between predators and prey, and the coevolution of mutualists.",
+      "requires": [
+        "evolution/natural-selection"
+      ]
+    },
+    {
+      "slug": "speciation",
+      "title": "Species and speciation",
+      "summary": "Species concepts, reproductive isolation, and allopatric and sympatric speciation.",
+      "requires": [
+        "evolution/mutation-drift-gene-flow"
+      ]
+    },
+    {
+      "slug": "phylogenetics",
+      "title": "Phylogenetics: reading the tree of life",
+      "summary": "Tree thinking, homology and homoplasy, parsimony and the reconstruction of evolutionary history.",
+      "requires": [
+        "evolution/speciation"
+      ]
+    },
+    {
+      "slug": "macroevolution",
+      "title": "Macroevolution",
+      "summary": "Rates of evolution, adaptive radiation, mass extinction and the origin of evolutionary novelties.",
+      "requires": [
+        "evolution/phylogenetics"
+      ]
+    },
+    {
+      "slug": "human-evolution",
+      "title": "Human evolution",
+      "summary": "The hominin fossil record, ancient DNA, and the origin and spread of modern humans.",
+      "requires": [
+        "evolution/macroevolution"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "diversity-of-life",
+    "ecology",
+    "population-genetics"
+  ]
+}

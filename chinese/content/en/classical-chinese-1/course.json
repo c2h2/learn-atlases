@@ -1,0 +1,100 @@
+{
+  "slug": "classical-chinese-1",
+  "title": "Classical Chinese I",
+  "full_title": "Classical Chinese I: Reading Wenyan",
+  "area": "classical",
+  "level": 1,
+  "order": 50,
+  "tagline": "What classical Chinese is, dictionaries and reference tools, content words and changes of meaning, function words, word-class shifts, word order and special patterns, phonetic loans and variant characters, punctuating classical texts, translating into modern Chinese, and reading whole texts",
+  "summary": "Classical Chinese, the written language of more than two thousand years, is close enough to modern Chinese to look familiar and far enough to be misread. This course teaches the essentials of reading it: how words and their meanings differ from today, the common function words, word-class shifts, word order and special sentence patterns, phonetic loans, how to punctuate an unpunctuated text and how to translate accurately into modern Chinese, using passages from the standard classics.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "what-is-wenyan",
+      "title": "What classical Chinese is",
+      "summary": "Classical Chinese and the vernacular, how the written language stayed stable for two millennia while speech changed, and why it is still worth reading.",
+      "requires": []
+    },
+    {
+      "slug": "reference-tools",
+      "title": "Dictionaries and reference tools",
+      "summary": "The *Shuowen Jiezi*, the *Kangxi Dictionary*, the *Ciyuan*, the *Hanyu Da Cidian* and dictionaries of common classical characters, and digital databases.",
+      "requires": [
+        "classical-chinese-1/what-is-wenyan"
+      ]
+    },
+    {
+      "slug": "old-and-new-meanings",
+      "title": "Content words and changes of meaning",
+      "summary": "How meanings widened, narrowed or shifted (走 once meant ‘run’, 去 ‘leave’), how single-syllable words became compounds, and false friends between classical and modern Chinese.",
+      "requires": [
+        "classical-chinese-1/reference-tools"
+      ]
+    },
+    {
+      "slug": "function-words",
+      "title": "Function words",
+      "summary": "之, 其, 而, 以, 于, 为, 乃, 则, 者 and 所: their uses and how to translate them.",
+      "requires": [
+        "classical-chinese-1/old-and-new-meanings"
+      ]
+    },
+    {
+      "slug": "word-class-shifts",
+      "title": "Word-class shifts",
+      "summary": "Nouns used as verbs, causative and putative uses, and nouns used as adverbials.",
+      "requires": [
+        "classical-chinese-1/function-words"
+      ]
+    },
+    {
+      "slug": "special-patterns",
+      "title": "Word order and special sentence patterns",
+      "summary": "Judgement sentences, passive constructions, fronted objects, postposed modifiers and omission.",
+      "requires": [
+        "classical-chinese-1/word-class-shifts"
+      ]
+    },
+    {
+      "slug": "loans-variants",
+      "title": "Phonetic loans and variant characters",
+      "summary": "Characters borrowed for their sound, earlier and later forms of one word, and variant forms, and how to tell them apart.",
+      "requires": [
+        "classical-chinese-1/special-patterns"
+      ]
+    },
+    {
+      "slug": "punctuating",
+      "title": "Punctuating classical texts",
+      "summary": "Reading texts printed without punctuation, the clues that mark where sentences end, and classic mistakes of punctuation.",
+      "requires": [
+        "classical-chinese-1/loans-variants"
+      ]
+    },
+    {
+      "slug": "translating",
+      "title": "Translating into modern Chinese",
+      "summary": "Literal and free translation, keeping, replacing, supplying, deleting and reordering words, and the standard of faithfulness, clarity and elegance.",
+      "requires": [
+        "classical-chinese-1/punctuating"
+      ]
+    },
+    {
+      "slug": "reading-texts",
+      "title": "Reading whole texts",
+      "summary": "Close reading of complete passages from the *Zuo Zhuan*, the *Analects*, the *Mencius* and the *Zhuangzi*, using everything in the course.",
+      "requires": [
+        "classical-chinese-1/translating"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "pre-qin-literature",
+    "classical-chinese-2",
+    "poetry-metrics"
+  ]
+}

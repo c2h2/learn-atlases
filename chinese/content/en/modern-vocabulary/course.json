@@ -1,0 +1,91 @@
+{
+  "slug": "modern-vocabulary",
+  "title": "Modern Chinese Vocabulary",
+  "full_title": "Modern Chinese Vocabulary: Morphemes, Words and Meanings",
+  "area": "language",
+  "level": 1,
+  "order": 30,
+  "tagline": "Morphemes and words, word formation, word meaning, synonyms, antonyms and semantic fields, idioms and set phrases, the layers of the lexicon, loanwords, new words and internet language, and dictionaries",
+  "summary": "The vocabulary of Chinese is built from morphemes that are almost all one syllable and one character, combined in ways that native speakers handle by feel and rarely describe. This course explains morphemes and words, the main ways of forming words, how word meanings are structured and related, idioms and other fixed expressions, the historical layers of the lexicon from classical words to loanwords and internet coinages, and how to use dictionaries well.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "morphemes-words",
+      "title": "Morphemes and words",
+      "summary": "Morphemes, words and phrases, why the character is not the word, and how to tell a word from a phrase.",
+      "requires": []
+    },
+    {
+      "slug": "word-formation",
+      "title": "How words are formed",
+      "summary": "The five main types of compound, affixation with 老-, -子 and -化, and reduplication.",
+      "requires": [
+        "modern-vocabulary/morphemes-words"
+      ]
+    },
+    {
+      "slug": "word-meaning",
+      "title": "Word meaning",
+      "summary": "Lexical and grammatical meaning, denotation and connotation, polysemy, and how meanings extend and shift.",
+      "requires": [
+        "modern-vocabulary/morphemes-words"
+      ]
+    },
+    {
+      "slug": "sense-relations",
+      "title": "Synonyms, antonyms and semantic fields",
+      "summary": "Telling near-synonyms apart, kinds of antonym, homonyms, and semantic fields.",
+      "requires": [
+        "modern-vocabulary/word-meaning"
+      ]
+    },
+    {
+      "slug": "idioms",
+      "title": "Idioms and set phrases",
+      "summary": "*Chengyu*, their sources and structure, idiomatic phrases (惯用语), two-part allegorical sayings (歇后语) and proverbs, and how idioms are misused.",
+      "requires": [
+        "modern-vocabulary/word-formation"
+      ]
+    },
+    {
+      "slug": "lexicon-layers",
+      "title": "Layers of the lexicon",
+      "summary": "Basic and general vocabulary, classical words, dialect words and specialised terms, and how words enter and leave the standard language.",
+      "requires": [
+        "modern-vocabulary/word-meaning"
+      ]
+    },
+    {
+      "slug": "loanwords",
+      "title": "Loanwords",
+      "summary": "Words from Sanskrit, Japanese, English and other languages borrowed by sound, by meaning or both, and lettered words such as *CT* and *Wi-Fi*.",
+      "requires": [
+        "modern-vocabulary/lexicon-layers"
+      ]
+    },
+    {
+      "slug": "new-words",
+      "title": "New words and internet language",
+      "summary": "How new words are made and spread, the language of the internet, and the debate about norms.",
+      "requires": [
+        "modern-vocabulary/loanwords"
+      ]
+    },
+    {
+      "slug": "dictionaries",
+      "title": "Dictionaries",
+      "summary": "How the *Xinhua Zidian* and the *Xiandai Hanyu Cidian* are made and used, and what other dictionaries and corpora offer.",
+      "requires": [
+        "modern-vocabulary/lexicon-layers"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "modern-grammar",
+    "rhetoric"
+  ]
+}

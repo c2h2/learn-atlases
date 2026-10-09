@@ -1,0 +1,93 @@
+{
+  "slug": "sounds-of-mandarin",
+  "title": "The Sounds of Mandarin",
+  "full_title": "Modern Chinese Phonetics: The Sounds of Putonghua",
+  "area": "language",
+  "level": 1,
+  "order": 20,
+  "tagline": "Speech sounds, initials, finals, tones, syllables and Hanyu Pinyin, tone sandhi, the neutral tone and erhua, stress and intonation, Putonghua and the dialects, and the Putonghua Proficiency Test",
+  "summary": "Native speakers produce the sounds of Putonghua without thinking, but few can describe them. This course describes the sound system of standard Mandarin precisely — how its initials, finals and tones are made, how syllables are built, what Hanyu Pinyin does and does not show, and how sounds change in connected speech — and applies it to standard pronunciation, reading aloud and the differences between Putonghua and the reader’s own dialect.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "speech-sounds",
+      "title": "The nature of speech sounds",
+      "summary": "Speech as a physical, physiological and social fact: the organs of speech, pitch, loudness, length and timbre, and the idea of the phoneme.",
+      "requires": []
+    },
+    {
+      "slug": "initials",
+      "title": "Initials",
+      "summary": "The 21 consonant initials of Putonghua by place and manner of articulation, aspiration, and the zero initial.",
+      "requires": [
+        "sounds-of-mandarin/speech-sounds"
+      ]
+    },
+    {
+      "slug": "finals",
+      "title": "Finals",
+      "summary": "The 39 finals — simple, compound and nasal — the four classes of final by their medial (开齐合撮), and the special vowels after *z*, *c*, *s* and *zh*, *ch*, *sh*, *r*.",
+      "requires": [
+        "sounds-of-mandarin/initials"
+      ]
+    },
+    {
+      "slug": "tones",
+      "title": "Tones",
+      "summary": "The four tones of Putonghua, their pitch values on Chao Yuen Ren’s five-level scale, and how tones distinguish words.",
+      "requires": [
+        "sounds-of-mandarin/finals"
+      ]
+    },
+    {
+      "slug": "syllables-pinyin",
+      "title": "Syllables and Hanyu Pinyin",
+      "summary": "The structure of the Mandarin syllable, the Hanyu Pinyin scheme of 1958 and its spelling rules, and what it hides, such as the three different sounds written *i*.",
+      "requires": [
+        "sounds-of-mandarin/tones"
+      ]
+    },
+    {
+      "slug": "sandhi",
+      "title": "Tone sandhi, the neutral tone and erhua",
+      "summary": "Third-tone sandhi, the tone changes of 一 and 不, the neutral tone, rhotacised finals, and the sound changes of the particle 啊.",
+      "requires": [
+        "sounds-of-mandarin/syllables-pinyin"
+      ]
+    },
+    {
+      "slug": "stress-intonation",
+      "title": "Stress, rhythm and intonation",
+      "summary": "Word stress patterns, pauses, and how intonation works together with tone in questions and statements.",
+      "requires": [
+        "sounds-of-mandarin/sandhi"
+      ]
+    },
+    {
+      "slug": "dialect-differences",
+      "title": "Putonghua and the dialects",
+      "summary": "Common differences between Putonghua and regional pronunciation — *n* and *l*, front and back nasals, retroflex and flat initials, the entering tone — and how to correct them.",
+      "requires": [
+        "sounds-of-mandarin/tones"
+      ]
+    },
+    {
+      "slug": "putonghua-test",
+      "title": "Reading aloud and the Putonghua Proficiency Test",
+      "summary": "Reading aloud well, and the structure and grades of the national Putonghua Proficiency Test.",
+      "requires": [
+        "sounds-of-mandarin/stress-intonation",
+        "sounds-of-mandarin/dialect-differences"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "poetry-metrics",
+    "linguistics",
+    "phonology"
+  ]
+}

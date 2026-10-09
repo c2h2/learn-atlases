@@ -1,0 +1,96 @@
+{
+  "slug": "environmental-economics",
+  "title": "Environmental Economics",
+  "full_title": "Environmental and Resource Economics",
+  "area": "policy",
+  "level": 3,
+  "order": 210,
+  "tagline": "Pollution and policy instruments, valuing the environment, cost–benefit analysis and discounting, non-renewable and renewable resources, climate economics, international agreements and green growth",
+  "summary": "The environment provides resources and absorbs waste, but markets rarely price these services. This course applies economic tools to environmental problems: the choice between standards, taxes and tradable permits; the valuation of environmental goods; cost–benefit analysis and discounting over long horizons; the management of non-renewable and renewable resources such as minerals, fisheries and forests; and the economics of climate change, international environmental agreements and the energy transition.",
+  "overview": [],
+  "prerequisites": [
+    "microeconomics"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "environment-and-economy",
+      "title": "The environment and the economy",
+      "summary": "Pollution as an externality, the materials balance, sustainability and the measurement of green national income.",
+      "requires": [
+        "microeconomics/welfare-theorems"
+      ]
+    },
+    {
+      "slug": "policy-instruments",
+      "title": "Instruments of environmental policy",
+      "summary": "Standards, Pigouvian taxes and tradable permits, cost-effectiveness, and prices versus quantities under uncertainty.",
+      "requires": [
+        "environmental-economics/environment-and-economy"
+      ]
+    },
+    {
+      "slug": "valuing-the-environment",
+      "title": "Valuing the environment",
+      "summary": "Use and non-use values, revealed-preference methods such as travel cost and hedonic pricing, and stated-preference methods.",
+      "requires": [
+        "environmental-economics/environment-and-economy",
+        "microeconomics/slutsky-and-welfare"
+      ]
+    },
+    {
+      "slug": "cost-benefit-analysis",
+      "title": "Cost–benefit analysis and discounting",
+      "summary": "Appraising projects, the social discount rate, intergenerational equity and decisions under uncertainty.",
+      "requires": [
+        "environmental-economics/valuing-the-environment",
+        "mathematical-economics/integration"
+      ]
+    },
+    {
+      "slug": "non-renewable-resources",
+      "title": "Non-renewable resources",
+      "summary": "Hotelling’s rule, optimal extraction paths, scarcity and the evidence on resource prices.",
+      "requires": [
+        "environmental-economics/environment-and-economy",
+        "mathematical-economics/dynamic-optimisation"
+      ]
+    },
+    {
+      "slug": "renewable-resources",
+      "title": "Renewable resources: fisheries and forests",
+      "summary": "Biological growth, open access and the tragedy of the commons, optimal harvesting and forest rotation.",
+      "requires": [
+        "environmental-economics/non-renewable-resources"
+      ]
+    },
+    {
+      "slug": "climate-economics",
+      "title": "The economics of climate change",
+      "summary": "Integrated assessment models, the social cost of carbon, carbon pricing and the choice of mitigation path.",
+      "requires": [
+        "environmental-economics/cost-benefit-analysis",
+        "environmental-economics/policy-instruments"
+      ]
+    },
+    {
+      "slug": "international-agreements",
+      "title": "International environmental agreements",
+      "summary": "Transboundary pollution, free riding between countries, the stability of agreements and carbon leakage.",
+      "requires": [
+        "environmental-economics/climate-economics"
+      ]
+    },
+    {
+      "slug": "green-growth",
+      "title": "Energy, innovation and green growth",
+      "summary": "Directed technical change, energy transitions, and the debate over growth and the environment.",
+      "requires": [
+        "environmental-economics/climate-economics"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

@@ -1,0 +1,99 @@
+{
+  "slug": "classical-chinese-2",
+  "title": "Classical Chinese II",
+  "full_title": "Classical Chinese II: Words, Grammar and Culture",
+  "area": "classical",
+  "level": 2,
+  "order": 100,
+  "tagline": "Original and extended meanings, synonyms in classical Chinese, pronouns, numerals and forms of address, function words in depth, parallel prose and rhapsodies, traditional exegesis, ancient culture for readers, reading commentaries, and books and editions",
+  "summary": "The second course in classical Chinese moves from reading sentences to understanding words and texts as scholars do. It traces how meanings grew from a character’s original sense, studies synonyms, pronouns and particles in depth, introduces parallel prose and the rhapsody, the methods of traditional exegesis, the knowledge of institutions, calendars, names and customs that classical texts take for granted, how to read the old commentaries, and how ancient books were transmitted and edited.",
+  "overview": [],
+  "prerequisites": [
+    "classical-chinese-1",
+    "modern-grammar",
+    "chinese-characters"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "original-meanings",
+      "title": "Original and extended meanings",
+      "summary": "Finding a word’s original meaning from its character and its earliest uses, and the chains and networks along which meanings extend.",
+      "requires": [
+        "classical-chinese-1/old-and-new-meanings",
+        "chinese-characters/six-categories"
+      ]
+    },
+    {
+      "slug": "synonyms",
+      "title": "Synonyms in classical Chinese",
+      "summary": "Telling apart near-synonyms such as 言 and 语, 宫 and 室, 疾 and 病, and why the distinctions matter.",
+      "requires": [
+        "classical-chinese-2/original-meanings"
+      ]
+    },
+    {
+      "slug": "pronouns-numerals",
+      "title": "Pronouns, numerals and forms of address",
+      "summary": "Personal and demonstrative pronouns, humble and honorific forms of address, and how numbers were expressed.",
+      "requires": [
+        "classical-chinese-2/original-meanings"
+      ]
+    },
+    {
+      "slug": "particles",
+      "title": "Function words in depth",
+      "summary": "The full range of uses of the major function words, sentence-final particles and the moods they express, and how function words changed over time.",
+      "requires": [
+        "classical-chinese-2/pronouns-numerals"
+      ]
+    },
+    {
+      "slug": "parallel-prose-fu",
+      "title": "Parallel prose and rhapsodies",
+      "summary": "The rules of parallelism, allusion and tonal balance in parallel prose, and the rhapsody (赋) from the Han to the Song.",
+      "requires": [
+        "classical-chinese-2/particles"
+      ]
+    },
+    {
+      "slug": "exegesis",
+      "title": "Traditional exegesis",
+      "summary": "Explaining words through their graphs, their sounds and their contexts, the *Erya* and the commentarial tradition, and the methods of the Qing scholars.",
+      "requires": [
+        "classical-chinese-2/synonyms"
+      ]
+    },
+    {
+      "slug": "ancient-culture",
+      "title": "Ancient culture for readers",
+      "summary": "Calendars and the sexagenary cycle, official titles, personal and courtesy names, rites, dress and daily life — what classical texts take for granted.",
+      "requires": [
+        "classical-chinese-2/pronouns-numerals"
+      ]
+    },
+    {
+      "slug": "commentaries",
+      "title": "Reading commentaries",
+      "summary": "How the *Thirteen Classics with Commentaries* are laid out, the terms used in commentaries, and following a commentary through a difficult passage.",
+      "requires": [
+        "classical-chinese-2/exegesis",
+        "classical-chinese-2/ancient-culture"
+      ]
+    },
+    {
+      "slug": "books-editions",
+      "title": "Books and editions",
+      "summary": "How ancient books were made and handed down, catalogues and the four-branch classification, editions and collation, and finding reliable texts today.",
+      "requires": [
+        "classical-chinese-2/commentaries"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "phonology",
+    "classical-criticism"
+  ]
+}

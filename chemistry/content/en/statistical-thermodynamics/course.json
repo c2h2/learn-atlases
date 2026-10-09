@@ -1,0 +1,90 @@
+{
+  "slug": "statistical-thermodynamics",
+  "title": "Statistical Thermodynamics",
+  "full_title": "Statistical Thermodynamics",
+  "area": "physical",
+  "level": 3,
+  "order": 180,
+  "tagline": "The Boltzmann distribution, partition functions, thermodynamic functions, ensembles, equilibrium constants, real gases, quantum statistics and rate theory",
+  "summary": "Statistical thermodynamics connects the energy levels of molecules with the bulk properties measured in the laboratory. This course derives the Boltzmann distribution and the partition function, computes thermodynamic functions and equilibrium constants from molecular data, and extends the theory to interacting molecules, quantum statistics and the rates of reactions.",
+  "overview": [],
+  "prerequisites": [
+    "thermodynamics",
+    "quantum-chemistry"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "boltzmann-distribution",
+      "title": "The Boltzmann distribution",
+      "summary": "Configurations and weights, the most probable distribution, and the meaning of temperature.",
+      "requires": [
+        "quantum-chemistry/model-systems"
+      ]
+    },
+    {
+      "slug": "partition-function",
+      "title": "The molecular partition function",
+      "summary": "Translational, rotational, vibrational and electronic partition functions and how to evaluate them.",
+      "requires": [
+        "statistical-thermodynamics/boltzmann-distribution",
+        "quantum-chemistry/vibration-rotation"
+      ]
+    },
+    {
+      "slug": "thermodynamic-functions",
+      "title": "Thermodynamic functions from partition functions",
+      "summary": "Internal energy, heat capacity and entropy from the partition function, and the equipartition theorem.",
+      "requires": [
+        "statistical-thermodynamics/partition-function",
+        "thermodynamics/second-law"
+      ]
+    },
+    {
+      "slug": "canonical-ensemble",
+      "title": "The canonical ensemble",
+      "summary": "Ensembles, the canonical partition function, fluctuations, and independent and indistinguishable molecules.",
+      "requires": [
+        "statistical-thermodynamics/thermodynamic-functions"
+      ]
+    },
+    {
+      "slug": "equilibrium-from-molecules",
+      "title": "Equilibrium constants from molecular data",
+      "summary": "Equilibrium constants in terms of partition functions, with applications to dissociation and isotope exchange.",
+      "requires": [
+        "statistical-thermodynamics/canonical-ensemble",
+        "thermodynamics/reaction-equilibrium"
+      ]
+    },
+    {
+      "slug": "real-gases-liquids",
+      "title": "Interacting molecules: real gases and liquids",
+      "summary": "The configuration integral, virial coefficients and intermolecular potentials, and the radial distribution function of liquids.",
+      "requires": [
+        "statistical-thermodynamics/canonical-ensemble"
+      ]
+    },
+    {
+      "slug": "quantum-statistics",
+      "title": "Quantum statistics",
+      "summary": "Bose–Einstein and Fermi–Dirac statistics, electrons in metals, and the Einstein and Debye models of the heat capacity of solids.",
+      "requires": [
+        "statistical-thermodynamics/canonical-ensemble"
+      ]
+    },
+    {
+      "slug": "statistical-rate-theory",
+      "title": "Statistical theories of reaction rates",
+      "summary": "Transition-state theory from partition functions, and the Lindemann and RRKM theories of unimolecular reactions.",
+      "requires": [
+        "statistical-thermodynamics/equilibrium-from-molecules"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "computational-chemistry"
+  ]
+}

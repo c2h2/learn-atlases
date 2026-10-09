@@ -1,0 +1,103 @@
+{
+  "slug": "modern-literature",
+  "title": "Modern Chinese Literature",
+  "full_title": "Modern Chinese Literature, 1917–1949",
+  "area": "modern",
+  "level": 2,
+  "order": 150,
+  "tagline": "The literary revolution, Lu Xun’s fiction, his essays and prose poems, the new poetry, the modern essay, fiction of the 1920s and 1930s, the left-wing movement, modern drama, Shen Congwen and the Beijing and Shanghai schools, and literature of the war years",
+  "summary": "Modern Chinese literature began with the New Culture Movement’s call to write in the vernacular and to remake Chinese culture. This course reads the writers of the years from the literary revolution of 1917 to 1949 — Lu Xun above all, the new poets and essayists, the novelists and playwrights of the 1920s and 1930s such as Ba Jin, Mao Dun, Lao She, Cao Yu and Shen Congwen, the modernists of Shanghai and Eileen Chang, and the literature of the war years.",
+  "overview": [],
+  "prerequisites": [
+    "literary-theory"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "literary-revolution",
+      "title": "The literary revolution",
+      "summary": "Hu Shi’s and Chen Duxiu’s manifestos of 1917, *New Youth*, the May Fourth Movement and the victory of the vernacular.",
+      "requires": [
+        "literary-theory/what-is-literature"
+      ]
+    },
+    {
+      "slug": "lu-xun-fiction",
+      "title": "Lu Xun’s fiction",
+      "summary": "*A Madman’s Diary*, *The True Story of Ah Q* and the stories of *Call to Arms* and *Wandering*.",
+      "requires": [
+        "modern-literature/literary-revolution"
+      ]
+    },
+    {
+      "slug": "lu-xun-essays",
+      "title": "Lu Xun’s essays and prose poems",
+      "summary": "The polemical essays, *Wild Grass* and *Dawn Blossoms Plucked at Dusk*.",
+      "requires": [
+        "modern-literature/lu-xun-fiction"
+      ]
+    },
+    {
+      "slug": "new-poetry",
+      "title": "The new poetry",
+      "summary": "From Hu Shi’s experiments and Guo Moruo’s *The Goddesses* to the Crescent poets Xu Zhimo and Wen Yiduo, and Li Jinfa, Dai Wangshu and Ai Qing.",
+      "requires": [
+        "modern-literature/literary-revolution"
+      ]
+    },
+    {
+      "slug": "modern-essay",
+      "title": "The modern essay",
+      "summary": "Zhou Zuoren, Zhu Ziqing, Bing Xin, Yu Dafu and Lin Yutang, and the range of the vernacular essay.",
+      "requires": [
+        "modern-literature/lu-xun-essays"
+      ]
+    },
+    {
+      "slug": "fiction-20s-30s",
+      "title": "Fiction of the 1920s and 1930s",
+      "summary": "Yu Dafu, Mao Dun’s *Midnight*, Ba Jin’s *Family* and Lao She’s *Rickshaw Boy*.",
+      "requires": [
+        "modern-literature/lu-xun-fiction"
+      ]
+    },
+    {
+      "slug": "left-wing",
+      "title": "The left-wing movement",
+      "summary": "The League of Left-Wing Writers, the debates on revolutionary literature, and the place of politics in writing.",
+      "requires": [
+        "modern-literature/fiction-20s-30s"
+      ]
+    },
+    {
+      "slug": "modern-drama",
+      "title": "Modern drama",
+      "summary": "The spoken drama from its beginnings to Cao Yu’s *Thunderstorm* and *Sunrise*, and Tian Han and Xia Yan.",
+      "requires": [
+        "modern-literature/fiction-20s-30s"
+      ]
+    },
+    {
+      "slug": "beijing-shanghai",
+      "title": "Shen Congwen and the Beijing and Shanghai schools",
+      "summary": "Shen Congwen’s *Border Town*, the Beijing school, Shanghai’s New Sensationists, and Eileen Chang.",
+      "requires": [
+        "modern-literature/left-wing"
+      ]
+    },
+    {
+      "slug": "war-years",
+      "title": "Literature of the war years",
+      "summary": "Writing during the war against Japan, Yan’an and the *Talks at the Yan’an Forum on Literature and Art* of 1942, Zhao Shuli, and Qian Zhongshu’s *Fortress Besieged*.",
+      "requires": [
+        "modern-literature/beijing-shanghai",
+        "modern-literature/modern-drama"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "contemporary-literature"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "listening-and-conversation",
+  "title": "Listening and Conversation",
+  "full_title": "Listening and Conversation",
+  "area": "speaking",
+  "level": 2,
+  "order": 120,
+  "tagline": "How listening works, gist and detail, keeping a conversation going, clarification, opinions, telling stories, different accents, calls and online meetings, and learning from podcasts, films and TV",
+  "summary": "Listening is the skill learners practise least and need most, and conversation depends on small signals as much as on vocabulary. This course explains how listeners combine sounds with expectations, how to listen for gist and for detail, how conversations are managed through turn-taking, feedback and clarification, how to give opinions and tell stories, how to understand different accents, and how to keep learning from podcasts, films and television.",
+  "overview": [],
+  "prerequisites": [
+    "everyday-english",
+    "connected-speech"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "how-listening-works",
+      "title": "How listening works",
+      "summary": "Decoding sounds and words from the bottom up and using context and expectation from the top down, and why listening breaks down.",
+      "requires": [
+        "connected-speech/hearing-fast-speech"
+      ]
+    },
+    {
+      "slug": "gist-and-detail",
+      "title": "Listening for gist and detail",
+      "summary": "Predicting content, listening for the main idea first, then for specific information such as numbers, names and reasons.",
+      "requires": [
+        "listening-and-conversation/how-listening-works"
+      ]
+    },
+    {
+      "slug": "turn-taking",
+      "title": "Keeping a conversation going",
+      "summary": "Turn-taking, back-channelling with *mm*, *right* and *really?*, showing interest and asking follow-up questions.",
+      "requires": [
+        "everyday-english/small-talk"
+      ]
+    },
+    {
+      "slug": "clarification",
+      "title": "Asking for clarification",
+      "summary": "Saying that you have not understood, asking for repetition or explanation, and checking that you have been understood.",
+      "requires": [
+        "listening-and-conversation/turn-taking"
+      ]
+    },
+    {
+      "slug": "opinions",
+      "title": "Opinions, agreement and disagreement",
+      "summary": "Giving and asking for opinions, agreeing, and disagreeing politely with softeners such as *I see what you mean, but …*",
+      "requires": [
+        "listening-and-conversation/turn-taking"
+      ]
+    },
+    {
+      "slug": "storytelling",
+      "title": "Telling stories",
+      "summary": "Telling an anecdote with a clear beginning, middle and end, and reacting to other people’s stories.",
+      "requires": [
+        "listening-and-conversation/opinions"
+      ]
+    },
+    {
+      "slug": "accents",
+      "title": "Understanding different accents",
+      "summary": "The main features of common British, American and other accents, and strategies for listening to unfamiliar ones.",
+      "requires": [
+        "listening-and-conversation/gist-and-detail"
+      ]
+    },
+    {
+      "slug": "calls-online-meetings",
+      "title": "Calls and online meetings",
+      "summary": "Joining in, speaking up and dealing with technical problems in phone calls and video meetings.",
+      "requires": [
+        "listening-and-conversation/clarification"
+      ]
+    },
+    {
+      "slug": "learning-from-media",
+      "title": "Learning from podcasts, films and TV",
+      "summary": "Choosing material, using subtitles well, intensive and extensive listening, and shadowing.",
+      "requires": [
+        "listening-and-conversation/accents"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "presentations-and-discussion",
+    "pragmatics"
+  ]
+}

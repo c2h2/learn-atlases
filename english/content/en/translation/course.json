@@ -1,0 +1,114 @@
+{
+  "slug": "translation",
+  "title": "English–Chinese Translation",
+  "full_title": "Translation Between English and Chinese",
+  "area": "language",
+  "level": 4,
+  "order": 260,
+  "tagline": "What translation is, English and Chinese compared, translating words, long English sentences into Chinese, building English sentences from Chinese, structural shifts, idioms and culture, specialised and literary translation, interpreting, and machine translation",
+  "summary": "Translating between English and Chinese means moving between two languages that build sentences in very different ways: English links clauses explicitly with conjunctions and relative pronouns, while Chinese often leaves the connections to meaning and word order. This course covers the theory of translation, the main contrasts between the two languages, translating words, sentences and cultural references in both directions, specialised and literary texts, the basics of interpreting, and working with machine translation.",
+  "overview": [],
+  "prerequisites": [
+    "complex-sentences",
+    "collocation-and-register"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "what-translation-is",
+      "title": "What translation is",
+      "summary": "Equivalence, faithfulness and readability, from Yan Fu’s 信、达、雅 to modern translation studies.",
+      "requires": [
+        "collocation-and-register/false-friends-chinglish"
+      ]
+    },
+    {
+      "slug": "english-chinese-compared",
+      "title": "English and Chinese compared",
+      "summary": "Hypotaxis and parataxis (形合 and 意合), subject-prominent and topic-prominent sentences, and other contrasts that shape translation.",
+      "requires": [
+        "translation/what-translation-is",
+        "complex-sentences/clause-structure"
+      ]
+    },
+    {
+      "slug": "translating-words",
+      "title": "Translating words",
+      "summary": "Meaning in context, collocation, words with no direct equivalent, and terminology.",
+      "requires": [
+        "translation/english-chinese-compared"
+      ]
+    },
+    {
+      "slug": "english-into-chinese",
+      "title": "English into Chinese: long sentences",
+      "summary": "Breaking down long English sentences, reordering clauses, and turning a nominal style into a verbal one.",
+      "requires": [
+        "translation/english-chinese-compared"
+      ]
+    },
+    {
+      "slug": "chinese-into-english",
+      "title": "Chinese into English: building sentences",
+      "summary": "Choosing subjects, adding connectives, articles and tense, and joining short Chinese clauses into English sentences.",
+      "requires": [
+        "translation/english-chinese-compared"
+      ]
+    },
+    {
+      "slug": "structural-shifts",
+      "title": "Passives and other shifts",
+      "summary": "Passive and active, nouns and verbs, and other structural changes between the two languages.",
+      "requires": [
+        "translation/english-into-chinese",
+        "translation/chinese-into-english"
+      ]
+    },
+    {
+      "slug": "idioms-culture",
+      "title": "Idioms, metaphors and culture",
+      "summary": "Cultural references, idioms and metaphors, and the choice between domestication and foreignisation.",
+      "requires": [
+        "translation/translating-words"
+      ]
+    },
+    {
+      "slug": "specialised-translation",
+      "title": "Specialised translation",
+      "summary": "Technical, legal, business and academic texts, and managing terminology.",
+      "requires": [
+        "translation/structural-shifts"
+      ]
+    },
+    {
+      "slug": "literary-translation",
+      "title": "Literary translation",
+      "summary": "Translating fiction and poetry, with translations in the public domain as case studies.",
+      "requires": [
+        "translation/idioms-culture"
+      ]
+    },
+    {
+      "slug": "interpreting",
+      "title": "Interpreting",
+      "summary": "Consecutive and simultaneous interpreting, note-taking, and the skills behind them.",
+      "requires": [
+        "translation/structural-shifts"
+      ]
+    },
+    {
+      "slug": "machine-translation",
+      "title": "Machine translation and post-editing",
+      "summary": "How machine translation works, its typical errors between English and Chinese, and how to post-edit its output.",
+      "requires": [
+        "translation/specialised-translation"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "style-and-rhetoric",
+    "world-englishes"
+  ]
+}

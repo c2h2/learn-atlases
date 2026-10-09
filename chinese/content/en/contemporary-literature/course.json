@@ -1,0 +1,94 @@
+{
+  "slug": "contemporary-literature",
+  "title": "Contemporary Literature",
+  "full_title": "Contemporary Chinese Literature since 1949",
+  "area": "modern",
+  "level": 3,
+  "order": 200,
+  "tagline": "Literature of the 1950s and 1960s, the Cultural Revolution years, scar, reflection and reform literature, misty poetry, root-seeking and avant-garde fiction, new realism and the 1990s, major novelists since the 1980s, Hong Kong, Taiwan and overseas Chinese literature, and online literature",
+  "summary": "Chinese literature since 1949 has been shaped by politics, by the opening of the 1980s, and by the market and the internet. This course follows it from the literature of the 1950s and 1960s through the Cultural Revolution, the scar, reflection and reform literature and misty poetry of the late 1970s and 1980s, the root-seeking and avant-garde writers and the novelists who have led Chinese fiction since, to the literatures of Hong Kong, Taiwan and the Chinese-speaking world beyond, and the new world of online fiction.",
+  "overview": [],
+  "prerequisites": [
+    "modern-literature"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "fifties-sixties",
+      "title": "Literature of the 1950s and 1960s",
+      "summary": "Literature in the new state, the “red classics” such as *Red Crag* and *The Song of Youth*, and the campaigns that shaped writing.",
+      "requires": [
+        "modern-literature/war-years"
+      ]
+    },
+    {
+      "slug": "cultural-revolution",
+      "title": "The Cultural Revolution years",
+      "summary": "Model operas, underground writing and hand-copied manuscripts.",
+      "requires": [
+        "contemporary-literature/fifties-sixties"
+      ]
+    },
+    {
+      "slug": "scar-reflection-reform",
+      "title": "Scar, reflection and reform literature",
+      "summary": "Lu Xinhua’s *The Scar*, Liu Xinwu, Gao Xiaosheng and Jiang Zilong, and the literature of the late 1970s and early 1980s.",
+      "requires": [
+        "contemporary-literature/cultural-revolution"
+      ]
+    },
+    {
+      "slug": "misty-poetry",
+      "title": "Misty poetry",
+      "summary": "Bei Dao, Shu Ting and Gu Cheng, the debate over “obscure” poetry, and the poets who came after them.",
+      "requires": [
+        "contemporary-literature/scar-reflection-reform"
+      ]
+    },
+    {
+      "slug": "root-seeking-avant-garde",
+      "title": "Root-seeking and the avant-garde",
+      "summary": "Han Shaogong and Ah Cheng, and the formal experiments of Ma Yuan, Yu Hua, Su Tong and Ge Fei.",
+      "requires": [
+        "contemporary-literature/misty-poetry"
+      ]
+    },
+    {
+      "slug": "new-realism",
+      "title": "New realism and the 1990s",
+      "summary": "Chi Li and Liu Zhenyun, the market economy, and fiction’s return to everyday life.",
+      "requires": [
+        "contemporary-literature/root-seeking-avant-garde"
+      ]
+    },
+    {
+      "slug": "major-novelists",
+      "title": "Major novelists since the 1980s",
+      "summary": "Wang Zengqi, Lu Yao, Chen Zhongshi, Jia Pingwa, Mo Yan, Wang Anyi, Yu Hua and Liu Cixin.",
+      "requires": [
+        "contemporary-literature/new-realism"
+      ]
+    },
+    {
+      "slug": "hk-taiwan-overseas",
+      "title": "Hong Kong, Taiwan and overseas Chinese literature",
+      "summary": "Jin Yong and writing in Hong Kong, Taiwan’s modernist and nativist writers such as Bai Xianyong and Huang Chunming, and Chinese-language writers abroad.",
+      "requires": [
+        "contemporary-literature/major-novelists"
+      ]
+    },
+    {
+      "slug": "online-literature",
+      "title": "Online literature",
+      "summary": "The rise of web fiction, its genres and platforms, and how to read and judge it.",
+      "requires": [
+        "contemporary-literature/major-novelists"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "world-literature"
+  ]
+}
