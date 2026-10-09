@@ -7,7 +7,48 @@
   "order": 10,
   "tagline": "Linear algebra, calculus, probability, information theory and optimisation for machine learning",
   "summary": "Machine learning is applied mathematics. This course collects the linear algebra, multivariable calculus, probability, information theory and optimisation that the rest of the atlas uses, always with an eye on how they appear inside neural networks and language models.",
-  "overview": [],
+  "overview": {
+    "overview": [
+      "Mathematics for machine learning covers linear algebra, calculus, probability, and optimization as the foundations of LLMs.",
+      "The key insight is that gradients, probability distributions, and vector spaces are the substrate in which LLMs operate."
+    ],
+    "outcomes": [
+      "Explain vectors, matrices, and linear transformations.",
+      "Describe gradients, partial derivatives, and chain rule.",
+      "Analyze probability distributions, entropy, and likelihood.",
+      "Implement optimization: SGD, Adam, and learning rate schedules."
+    ],
+    "history": [
+      {
+        "year": 2016,
+        "title": "D2L",
+        "detail": "Zhang et al. introduced Dive into Deep Learning as a practical math-first approach.",
+        "people": [
+          "Zhang"
+        ]
+      },
+      {
+        "year": 2017,
+        "title": "Matrix Calculus",
+        "detail": "Parr and Howard formalized matrix calculus for ML practitioners.",
+        "people": [
+          "Parr"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Dive into Deep Learning",
+        "authors": "Zhang et al.",
+        "year": 2021
+      },
+      {
+        "title": "The Matrix Calculus You Need for Deep Learning",
+        "authors": "Parr and Howard",
+        "year": 2018
+      }
+    ]
+  },
   "prerequisites": [],
   "outcomes": [],
   "chapters": [
@@ -36,7 +77,7 @@
     {
       "slug": "probability",
       "title": "Probability for machine learning",
-      "summary": "Random variables, common distributions, expectation, conditional probability, Bayes’ rule and sampling.",
+      "summary": "Random variables, common distributions, expectation, conditional probability, Bayes\u2019 rule and sampling.",
       "requires": []
     },
     {

@@ -6,8 +6,57 @@
   "level": 3,
   "order": 140,
   "tagline": "Decoding and sampling, the KV cache, batching, quantisation, speculative decoding and long context",
-  "summary": "Every generated token costs time, memory and money. This course explains decoding and sampling strategies, the key–value cache, batching and memory management in serving systems, quantisation and distillation, speculative decoding, long-context inference, and how latency, throughput and cost trade off.",
-  "overview": [],
+  "summary": "Every generated token costs time, memory and money. This course explains decoding and sampling strategies, the key\u2013value cache, batching and memory management in serving systems, quantisation and distillation, speculative decoding, long-context inference, and how latency, throughput and cost trade off.",
+  "overview": {
+    "overview": [
+      "LLM inference is the process of generating text token by token. This course covers decoding, caching, speculative decoding, and efficient serving.",
+      "The key insight is that inference cost scales with sequence length. KV caching and speculative decoding trade compute for latency."
+    ],
+    "outcomes": [
+      "Explain token-by-token inference and the KV cache.",
+      "Describe speculative decoding and draft-verify schemes.",
+      "Implement efficient batched serving and continuous batching.",
+      "Analyze inference latency and memory trade-offs."
+    ],
+    "history": [
+      {
+        "year": 2023,
+        "title": "vLLM",
+        "detail": "Kwon et al. introduced PagedAttention and vLLM for efficient LLM serving.",
+        "people": [
+          "Kwon"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "Speculative decoding",
+        "detail": "Leviathan et al. showed draft models can speed up decoding without changing output distribution.",
+        "people": [
+          "Leviathan"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "Continuous batching",
+        "detail": "Anyscale introduced continuous batching for dynamic request scheduling.",
+        "people": [
+          "Anyscale"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Efficient Memory Management for LLM Serving with PagedAttention",
+        "authors": "Kwon et al.",
+        "year": 2023
+      },
+      {
+        "title": "Fast Inference from Transformers via Speculative Decoding",
+        "authors": "Leviathan et al.",
+        "year": 2023
+      }
+    ]
+  },
   "prerequisites": [
     "transformers",
     "scaling"
@@ -25,7 +74,7 @@
     },
     {
       "slug": "kv-cache",
-      "title": "The key–value cache",
+      "title": "The key\u2013value cache",
       "summary": "Incremental decoding, the memory of the cache, and multi-query and grouped-query attention at inference time.",
       "requires": [
         "inference/decoding-sampling",

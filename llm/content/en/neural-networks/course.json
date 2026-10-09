@@ -7,7 +7,56 @@
   "order": 30,
   "tagline": "Multilayer networks, backpropagation, optimisers, initialisation, normalisation and training practice",
   "summary": "Deep networks learn their own features. This course builds multilayer perceptrons, derives backpropagation and automatic differentiation, and covers the optimisers, initialisation, normalisation and regularisation that make deep networks trainable, with convolutional networks as a first architecture.",
-  "overview": [],
+  "overview": {
+    "overview": [
+      "Neural networks are layered linear transformations with nonlinearities. This course covers MLPs, backpropagation, and the architecture of deep networks.",
+      "The key insight is that depth enables composition: each layer transforms the representation, allowing exponential expressivity with polynomial parameters."
+    ],
+    "outcomes": [
+      "Explain MLPs: layers, activations, and weights.",
+      "Describe backpropagation and gradient flow.",
+      "Analyze activation functions and their failure modes.",
+      "Implement network initialization and normalization schemes."
+    ],
+    "history": [
+      {
+        "year": 1986,
+        "title": "Backpropagation",
+        "detail": "Rumelhart et al. introduced backpropagation for training multi-layer networks.",
+        "people": [
+          "Rumelhart"
+        ]
+      },
+      {
+        "year": 2012,
+        "title": "AlexNet",
+        "detail": "Krizhevsky et al. showed deep CNNs with ReLU and dropout on ImageNet.",
+        "people": [
+          "Krizhevsky"
+        ]
+      },
+      {
+        "year": 2015,
+        "title": "BatchNorm",
+        "detail": "Ioffe and Szegedy introduced batch normalization for training stability.",
+        "people": [
+          "Ioffe"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Learning representations by back-propagating errors",
+        "authors": "Rumelhart et al.",
+        "year": 1986
+      },
+      {
+        "title": "Batch Normalization",
+        "authors": "Ioffe and Szegedy",
+        "year": 2015
+      }
+    ]
+  },
   "prerequisites": [
     "ml-fundamentals"
   ],

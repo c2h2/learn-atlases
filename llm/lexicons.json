@@ -1,0 +1,242 @@
+{
+  "agents": {
+    "course.json": {
+      "overview": ["Agents are systems that use LLMs to accomplish multi-step tasks: reasoning, planning, tool use, and iterative feedback. A course on agents covers the agent loop, tool invocation, structured planning, and real-world limitations — including evaluation failures, reward hacking, and safety concerns.",
+                   "The agent framework is built around iterative execution: the LLM generates an action, the environment provides feedback, and the cycle repeats. This course teaches the design patterns, tool interfaces, memory systems, and guardrails that separate toy demos from production agents."],
+      "outcomes": ["Explain the agent loop and how LLM-based systems differ from single-prompt workflows.","Describe tool-augmented generation and function-calling interfaces.","Compare chain-of-thought, tree-of-thought, and reflexion planning strategies.","Evaluate agent failures including cascading errors and reward hacking."],
+      "history": [{"year":2022,"title":"Chain of thought prompting","detail":"Wei et al. showed that step-by-step reasoning emerges in large language models without fine-tuning.","people":["Wei"]},{"year":2023,"title":"ReAct and tool use","detail":"Yao et al. introduced ReAct, interleaving reasoning with environment actions and observations.","people":["Yao"]},{"year":2023,"title":"AutoGPT and agent frameworks","detail":"The open-source AutoGPT project popularized autonomous LLM agents for goal-directed tasks.","people":[]}],
+      "references": [{"title":"ReAct: Synergizing Reasoning and Acting in Language Models","authors":"Yao et al.","year":2023},{"title":"Chain of Thought Prompting Elicits Reasoning in Large Language Models","authors":"Wei et al.","year":2022}]
+    },
+    "chapters": {
+      "agent-loop": {"title":"Agent loop","lex":["agent loop","reasoning","tool use","action","feedback","planning","execution","iterative","step","loop"],"summary":"The core control structure: LLM generates action, environment returns result, repeat. Covers ReAct-style interleaved reasoning and acting.","requires":["post-training/instruction-tuning"]},
+      "tool-augmentation": {"title":"Tool augmentation","lex":["function calling","tool interface","JSON","schema","API","execution","invocation","argument","response","structured"],"summary":"How LLMs invoke external functions: schema definition, argument generation, error handling, and integration patterns.","requires":["post-training/instruction-tuning"]},
+      "planning-strategies": {"title":"Planning strategies","lex":["chain of thought","tree of thought","reflexion","self-critique","search","backtracking","exploration","planning","strategy","hierarchy"],"summary":"Comparing CoT, ToT, and reflexion planning. When tree search helps, when self-critique improves reliability.","requires":["post-training/rlhf"]},
+      "agent-failures": {"title":"Agent failures","lex":["cascading error","reward hacking","hallucination","loop detection","guardrail","evaluation","failure","recovery","limitation","verification"],"summary":"Failure modes: cascading errors, hallucinated actions, reward hacking, and infinite loops. Guardrails and verification strategies.","requires":["post-training/reward-models"]}
+    }
+  },
+  "evaluation": {
+    "course.json": {
+      "overview": ["LLM evaluation is harder than most benchmark fields suggest. Static benchmarks saturate, contamination creeps in, and automated metrics drift from human judgment. This course covers benchmark evaluation, LLM-as-judge methods, human preference comparison, and the validity crisis in the field.",
+                   "The evaluation pipeline includes dataset curation, metric design, scoring, and statistical analysis. Each step introduces bias and measurement error that compounds across the whole evaluation stack."],
+      "outcomes": ["Describe contamination detection and benchmark saturation.","Implement LLM-as-judge and human-preference evaluation.","Analyze the validity threats in automated and human evaluation."],
+      "history": [{"year":2020,"title":"MMLU benchmark","detail":"Hendrycks et al. introduced MMLU to evaluate multitask language understanding.","people":["Hendrycks"]},{"year":2023,"title":"LLM-as-judge","detail":"Zheng et al. introduced Chatbot Arena and LLM-as-judge for open-ended evaluation.","people":["Zheng"]},{"year":2024,"title":"Contamination detection","detail":"Roberts et al. showed that training data contamination significantly inflates benchmark scores.","people":[]}],
+      "references": [{"title":"Measuring Massive Multitask Language Understanding","authors":"Hendrycks et al.","year":2020},{"title":"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena","authors":"Zheng et al.","year":2023}]
+    },
+    "chapters": {
+      "evaluation-principles": {"title":"Principles of evaluation","lex":["validity","reliability","bias","variance","metric","benchmark","test set","contamination","saturation","ground truth"],"summary":"What to measure, validity, and the gap between benchmarks and real use.","requires":["ml-fundamentals/evaluation-metrics"]},
+      "benchmarks": {"title":"Benchmarks","lex":["MMLU","truthfulQA","HELM","knowledge","reasoning","coding","multilingual","scoring","benchmark","capability"],"summary":"Knowledge, reasoning, coding and multilingual benchmarks and how they are scored.","requires":["evaluation/evaluation-principles"]},
+      "contamination": {"title":"Contamination and saturation","lex":["training data","overlap","leakage","deduplication","contamination","benchmark","saturation","n-score","test set","inflated"],"summary":"Test-set leakage, how to detect it, and the life cycle of benchmarks.","requires":["evaluation/benchmarks"]},
+      "llm-judge": {"title":"LLM-as-judge","lex":["judge","pairwise","preference","position bias","self-enhancement","verdict","grading","scoring","comparison","agreement"],"summary":"Using LLMs to grade and compare outputs. Position bias, self-enhancement, and reliability issues.","requires":["post-training/reward-models"]}
+    }
+  },
+  "inference": {
+    "course.json": {
+      "overview": ["LLM inference covers the full path from prompt to generated tokens: tokenization, embedding, forward pass, attention, decoding, and post-processing. This course teaches the engineering of efficient inference — batching, caching, speculative decoding, and model serving.",
+                   "The inference stack determines cost, latency, and throughput. Understanding KV caching, continuous batching, and quantization is essential for deploying LLMs at scale."],
+      "outcomes": ["Trace the full inference path from token to output.","Implement KV caching and batched generation.","Compare quantization methods and their accuracy trade-offs.","Design speculative decoding and serving architectures."],
+      "history": [{"year":2023,"title":"vLLM and PagedAttention","detail":"Kwon et al. introduced PagedAttention for efficient KV cache management.","people":["Kwon"]},{"year":2023,"title":"Speculative decoding","detail":"Leviathan et al. showed draft models can accelerate generation without quality loss.","people":["Leviathan"]}],
+      "references": [{"title":"Efficient Memory Management for Large Language Model Serving with PagedAttention","authors":"Kwon et al.","year":2023},{"title":"Fast Inference from Transformers via Speculative Decoding","authors":"Leviathan et al.","year":2023}]
+    },
+    "chapters": {
+      "tokenization": {"title":"Tokenization","lex":["tokenizer","BPE","byte","vocabulary","subword","token","encoding","UTF-8","sequence","context"],"summary":"BPE tokenization, byte-level encoding, vocabulary design, and how tokenization affects model performance.","requires":["transformers/text-and-language"]},
+      "decoding": {"title":"Decoding","lex":["greedy","beam search","sampling","top-k","top-p","temperature","penalty","diversity","decoding","strategy"],"summary":"Greedy, beam, nucleus, and temperature sampling. How decoding strategy affects output quality and diversity.","requires":["transformers/attention"]},
+      "quantization": {"title":"Quantization","lex":["int8","int4","GPTQ","AWQ","bits","precision","calibration","activation","weight","error"],"summary":"Post-training quantization methods: GPTQ, AWQ, and bits-and-bytes approaches. Accuracy and speed trade-offs.","requires":["transformers/attention"]},
+      "speculative-decoding": {"title":"Speculative decoding","lex":["draft model","acceptance","rejection","verification","acceptance rate","speedup","candidate","target","verification","token"],"summary":"Draft-and-verify: using a small model to propose tokens, a large model to verify. Acceptance probability and speedup analysis.","requires":["transformers/attention"]}
+    }
+  },
+  "interpretability": {
+    "course.json": {
+      "overview": ["LLM interpretability asks what features and circuits inside the model actually compute. This course covers activation patching, sparse autoencoders, the superposition hypothesis, and mechanistic interpretability of attention heads and MLPs.",
+                   "Interpretability research reveals that models represent features in superposition, and that individual neurons don't map cleanly to concepts. Sparse autoencoders decompose activations into interpretable features."],
+      "outcomes": ["Explain the superposition hypothesis and the features hypothesis.","Implement activation patching and attribution graphs.","Describe sparse autoencoders and their role in feature discovery."],
+      "history": [{"year":2022,"title":"Toy models of superposition","detail":"Elhage et al. showed models represent more features than dimensions via superposition.","people":["Elhage"]},{"year":2023,"title":"Sparse autoencoders for interpretability","detail":"Cunningham et al. used sparse autoencoders to discover interpretable features in LLM activations.","people":["Cunningham"]}],
+      "references": [{"title":"Toy Models of Superposition","authors":"Elhage et al.","year":2022},{"title":"Towards Sparse Superposition Accounts of Conceptual Representation","authors":"Cunningham et al.","year":2023}]
+    },
+    "chapters": {
+      "mechanistic": {"title":"Mechanistic interpretability","lex":["circuit","neuron","activation","head","residual","stream","component","path","feature","ablation"],"summary":"Attention heads, MLP layers, and the residual stream as information pathways. Circuit-level analysis of model behavior.","requires":["transformers/attention"]},
+      "activation-patching": {"title":"Activation patching","lex":["activation","patch","corruption","baseline","replacement","ablation","effect","attribution","gradient","intervention"],"summary":"Systematic replacement of activations to identify which components matter for which behaviors.","requires":["interpretability/mechanistic"]},
+      "sparse-autoencoders": {"title":"Sparse autoencoders","lex":["autoencoder","latent","sparse","dictionary","feature","activation","reconstruction","sparsity","L1","codebook"],"summary":"Training sparse autoencoders to decompose activations into interpretable features. Feature discovery and evaluation.","requires":["interpretability/mechanistic"]}
+    }
+  },
+  "llm-society": {
+    "course.json": {
+      "overview": ["LLMs have broad social consequences: labor displacement, misinformation, copyright questions, environmental impact, and access inequality. This course examines the social context of LLM deployment — who benefits, who is harmed, and what governance mechanisms exist.",
+                   "The societal analysis spans economics (automation and job displacement), epistemics (synthetic content and trust), legal frameworks (copyright and liability), and environmental impact (energy and water use of training and inference)."],
+      "outcomes": ["Analyze the economic impact of LLMs on knowledge work.","Evaluate the epistemic risks of synthetic text at scale.","Describe copyright, liability, and governance frameworks relevant to LLMs.","Assess the environmental footprint of LLM training and inference."],
+      "history": [{"year":2023,"title":"EU AI Act","detail":"The EU adopted the AI Act, classifying LLMs under high-risk and transparency obligations.","people":[]},{"year":2023,"title":"NYT vs. OpenAI lawsuit","detail":"The New York Times sued OpenAI, raising fundamental copyright questions about training on published text.","people":[]}],
+      "references": [{"title":"On the Opportunities and Risks of Foundation Models","authors":"Bender et al.","year":2021}]
+    },
+    "chapters": {
+      "labor": {"title":"Labor","lex":["occupation","automation","task exposure","wage","productivity","displacement","augmentation","knowledge worker","employment","economic"],"summary":"Which occupations and tasks are exposed to LLM automation. Productivity studies vs. displacement predictions.","requires":["agents/agent-loop"]},
+      "misinformation": {"title":"Misinformation and epistemics","lex":["synthetic","generation","deepfake","watermarking","provenance","trust","verification","disinformation","source","attribution"],"summary":"LLM-generated synthetic content at scale: watermarking, provenance tracking, and epistemic consequences.","requires":["evaluation/llm-judge"]},
+      "governance": {"title":"Governance","lex":["regulation","EU","AI Act","liability","copyright","compliance","disclosure","risk","oversight","framework"],"summary":"AI Act, liability frameworks, copyright disputes, and disclosure obligations for LLM systems.","requires":["evaluation/evaluation-principles"]},
+      "environment": {"title":"Environment","lex":["energy","water","carbon","emissions","training","inference","PUE","data center","footprint","sustainability"],"summary":"Energy and water consumption of LLM training and inference. Emissions reporting and sustainability measures.","requires":["transformers/attention"]}
+    }
+  },
+  "math-for-ml": {
+    "course.json": {
+      "overview": ["Linear algebra is the computational backbone of deep learning: matrices as transformations, eigendecomposition, matrix multiplication, and SVD. This course teaches the mathematical structures that underpin neural networks, optimization, and generative models.",
+                   "Gradient descent operates on the gradient vector, parameter updates via matrix operations, and the loss landscape is shaped by the Hessian. Singular value decomposition reveals the rank and conditioning of weight matrices."],
+      "outcomes": ["Explain matrix multiplication as composition of linear transformations.","Apply eigendecomposition and SVD to analyze weight matrices.","Compute gradients, Hessians, and apply chain rule in vector form.","Derive softmax cross-entropy loss and its gradient."],
+      "history": [{"year":1943,"title":"McCulloch-Pitts neuron","detail":"McCulloch and Pitts proposed a mathematical model of neurons as linear threshold units.","people":["McCulloch","Pitts"]}],
+      "references": [{"title":"Mathematics for Machine Learning","authors":"Deisenroth et al.","year":2020}]
+    },
+    "chapters": {
+      "linear-algebra": {"title":"Linear algebra","lex":["matrix","vector","eigenvalue","singular value","decomposition","transformation","basis","rank","norm","projection"],"summary":"Vectors, matrices, eigendecomposition, SVD, and their role in neural networks.","requires":[]},
+      "probability": {"title":"Probability","lex":["probability","likelihood","distribution","maximum likelihood","entropy","cross-entropy","KL divergence","Bayes","prior","posterior"],"summary":"Probability, likelihood, entropy, cross-entropy, KL divergence, and Bayes rule.","requires":[]},
+      "calculus": {"title":"Calculus","lex":["derivative","gradient","partial","chain rule","Jacobian","Hessian","convexity","optimization","local","descent"],"summary":"Derivatives, gradients, chain rule, Jacobian and Hessian. Convexity and optimization.","requires":[]}
+    }
+  },
+  "ml-fundamentals": {
+    "course.json": {
+      "overview": ["ML fundamentals cover the core concepts: supervised and unsupervised learning, bias-variance trade-off, regularization, overfitting, evaluation metrics, and model selection. This course provides the statistical framework for understanding how models learn from data.",
+                   "Cross-validation, information criteria, and proper holdout design are the core tools for honest model evaluation. Regularization (L1, L2, early stopping, dropout) controls overfitting."],
+      "outcomes": ["Distinguish supervised, unsupervised, and reinforcement learning.","Apply cross-validation and information criteria for model selection.","Explain bias-variance trade-off and regularization.","Evaluate metrics: accuracy, precision, recall, AUC, perplexity."],
+      "history": [{"year":1992,"title":"Bias-variance decomposition","detail":"Geman et al. formalized the bias-variance trade-off in learning theory.","people":["Geman"]}],
+      "references": [{"title":"Understanding Machine Learning: From Theory to Algorithms","authors":"Shalev-Shwartz & Ben-David","year":2014}]
+    },
+    "chapters": {
+      "supervised": {"title":"Supervised learning","lex":["training","label","loss","gradient","epoch","batch","optimizer","generalization","overfitting","validation"],"summary":"Training on labeled data: loss functions, gradient descent, generalization, and overfitting.","requires":[]},
+      "evaluation-metrics": {"title":"Evaluation metrics","lex":["accuracy","precision","recall","AUC","perplexity","cross-entropy","F1","confusion","matrix","threshold"],"summary":"Accuracy, precision, recall, AUC, F1, perplexity, and cross-entropy. When metrics disagree.","requires":[]}
+    }
+  },
+  "multimodal": {
+    "course.json": {
+      "overview": ["Multimodal LLMs process text, images, audio, and video simultaneously. This course covers vision-language models, CLIP, Flamingo, LLaVA, and the architectures that connect different modalities.",
+                   "The key architectural questions are how to encode visual information, how to align it with the text embedding space, and how to train joint representations without catastrophic forgetting."],
+      "outcomes": ["Explain contrastive learning (CLIP) for vision-language alignment.","Describe cross-attention and projection approaches to multimodal fusion.","Compare early-fusion and late-fusion multimodal architectures."],
+      "history": [{"year":2021,"title":"CLIP","detail":"Radford et al. introduced CLIP, contrastively aligning images and text.","people":["Radford"]},{"year":2022,"title":"Flamingo","detail":"Alayrac et al. introduced Flamingo, a visual language model using gated cross-attention.","people":["Alayrac"]}],
+      "references": [{"title":"Learning Transferable Visual Models From Natural Language Supervision","authors":"Radford et al.","year":2021}]
+    },
+    "chapters": {
+      "vision-language": {"title":"Vision-language models","lex":["CLIP","ViT","contrastive","image","caption","embedding","alignment","projection","visual token","fusion"],"summary":"CLIP, Flamingo, and LLaVA: vision encoders, image tokens, and cross-modal fusion.","requires":["transformers/attention"]},
+      "audio": {"title":"Audio","lex":["spectrogram","MFCC","mel","audio token","wav2vec","ASR","speech","phoneme","waveform","encoder"],"summary":"Audio tokenization, wav2vec, and speech-text alignment for multimodal models.","requires":["transformers/attention"]}
+    }
+  },
+  "neural-networks": {
+    "course.json": {
+      "overview": ["Neural networks are differentiable function approximators: layers of linear transformations followed by non-linearities, trained via gradient descent. This course covers MLPs, backpropagation, activation functions, and initialization schemes.",
+                   "The depth-width trade-off, residual connections, and normalization layers are the key architectural innovations that enable training very deep networks."],
+      "outcomes": ["Trace forward and backward passes through an MLP.","Explain activation functions and their vanishing/exploding gradient issues.","Implement proper weight initialization and explain normalization.","Describe residual connections and their optimization benefits."],
+      "history": [{"year":2015,"title":"ResNet","detail":"He et al. introduced residual connections, enabling very deep network training.","people":["He"]}],
+      "references": [{"title":"Deep Learning","authors":"Goodfellow et al.","year":2016}]
+    },
+    "chapters": {
+      "mlp": {"title":"MLP","lex":["layer","weight","bias","activation","ReLU","sigmoid","tanh","forward","backward","linear"],"summary":"Multi-layer perceptron: layers, activations, and the forward/backward pass.","requires":["math-for-ml/calculus"]},
+      "backprop": {"title":"Backpropagation","lex":["gradient","chain rule","partial","parameter","update","accumulation","batch","learning rate","momentum","optimizer"],"summary":"Reverse-mode automatic differentiation. Computing gradients through composition of layers.","requires":["mlp"]},
+      "initialization": {"title":"Initialization","lex":["Xavier","He initialization","variance","fan-in","fan-out","symmetry","break","distribution","scale","normal"],"summary":"Xavier and He initialization. How weight scale affects signal propagation and training stability.","requires":["mlp"]},
+      "normalization": {"title":"Normalization","lex":["batch norm","layer norm","mean","variance","scale","shift","gamma","beta","stabilize","rescale"],"summary":"Batch norm, layer norm, and their role in stabilizing training and enabling higher learning rates.","requires":["backprop"]},
+      "residual": {"title":"Residual connections","lex":["skip connection","identity","shortcut","gradient","flow","depth","vanishing","skip","residual","path"],"summary":"Skip connections and residual networks. How identity shortcuts fix vanishing gradients in deep networks.","requires":["normalization"]}
+    }
+  },
+  "post-training": {
+    "course.json": {
+      "overview": ["Post-training is where base LLMs become useful assistants. This course covers instruction tuning, RLHF (reward models, PPO, DPO), and the data design that shapes model behavior, safety, and capabilities.",
+                   "The critical choices in post-training are data quality (not quantity), reward model design, and the balance between capability and safety. DPO is a simpler alternative to RLHF that often works comparably well."],
+      "outcomes": ["Describe instruction tuning data design and evaluation.","Implement reward model training and explain its failure modes.","Compare RLHF (PPO) and DPO objectives and their trade-offs.","Apply safety alignment techniques: red-teaming, refusal training."],
+      "history": [{"year":2022,"title":"InstructGPT","detail":"Ouyang et al. introduced RLHF with InstructGPT, demonstrating post-training to follow instructions.","people":["Ouyang"]},{"year":2023,"title":"DPO","detail":"Rafailov et al. introduced Direct Preference Optimization, a simpler alternative to RLHF.","people":["Rafailov"]}],
+      "references": [{"title":"Training language models to follow instructions with human feedback","authors":"Ouyang et al.","year":2022},{"title":"Direct Preference Optimization","authors":"Rafailov et al.","year":2023}]
+    },
+    "chapters": {
+      "instruction-tuning": {"title":"Instruction tuning","lex":["instruction","input","output","response","dataset","diversity","quality","formatting","chain","CoT"],"summary":"Instruction tuning datasets: format, diversity, quality, and chain-of-thought examples.","requires":["pretraining/data"]},
+      "reward-models": {"title":"Reward models","lex":["preference","ranking","Bradley-Terry","reward","score","comparison","chosen","rejected","pairwise","loss"],"summary":"Bradley-Terry preference models, pairwise comparison data, and reward model loss.","requires":["instruction-tuning"]},
+      "rlhf": {"title":"RLHF","lex":["PPO","policy","actor","critic","advantage","clip","kl","penalty","reward","gradient"],"summary":"PPO with a learned reward model. KL penalty to anchor the policy to the reference model.","requires":["reward-models"]},
+      "dpo": {"title":"DPO","lex":["preference","chosen","rejected","log-likelihood","beta","direct","implicit","reward","margin","sigmoid"],"summary":"Direct Preference Optimization: the implicit reward from the policy itself. No reward model needed.","requires":["reward-models"]}
+    }
+  },
+  "pretraining": {
+    "course.json": {
+      "overview": ["Pretraining is the foundation: next-token prediction at scale on web-scale text. This course covers data curation and deduplication, scaling laws, compute allocation, and the training infrastructure.",
+                   "The pretraining recipe includes tokenizer choice, data quality filters, mixing, curriculum design, and the critical compute vs. parameter trade-off from Chinchilla scaling laws."],
+      "outcomes": ["Explain Chinchilla scaling laws and compute-optimal training.","Describe data curation: deduplication, filtering, and mixing strategies.","Implement training loops with gradient checkpointing and mixed precision.","Analyze the loss vs. compute curve and predict model capability."],
+      "history": [{"year":2020,"title":"Scaling laws","detail":"Kaplan et al. showed that loss follows a power law in compute, parameters, and data.","people":["Kaplan"]},{"year":2022,"title":"Chinchilla","detail":"Hoffmann et al. revised the scaling laws: compute-optimal means more data, not just more parameters.","people":["Hoffmann"]}],
+      "references": [{"title":"Training Compute-Optimal Large Language Models","authors":"Hoffmann et al.","year":2022}]
+    },
+    "chapters": {
+      "data": {"title":"Data","lex":["Common Crawl","deduplication","MinHash","filtering","quality","shuffling","mixing","web text","tokenization","corpus"],"summary":"Data sources, deduplication, quality filters, mixing, and corpus preparation for pretraining.","requires":["transformers/text-and-language"]},
+      "scaling-laws": {"title":"Scaling laws","lex":["power law","Kaplan","Chinchilla","compute","parameter","token","loss","predict","optimal","compute-optimal"],"summary":"Kaplan and Chinchilla scaling laws: predicting loss from compute, parameters, and tokens.","requires":["pretraining/data"]}
+    }
+  },
+  "prompting-rag": {
+    "course.json": {
+      "overview": ["Prompt engineering shapes LLM behavior without changing weights. This course covers few-shot prompting, chain-of-thought, self-consistency, prompt templates, and prompt tuning.",
+                   "Retrieval-augmented generation grounds LLM output in external knowledge: document retrieval, embedding-based search, chunking strategies, and RAG evaluation."],
+      "outcomes": ["Design effective few-shot and chain-of-thought prompts.","Implement RAG: embedding, retrieval, chunking, and grounding.","Evaluate prompt sensitivity and RAG answer faithfulness."],
+      "history": [{"year":2021,"title":"Few-shot prompting","detail":"Brown et al. showed GPT-3 can do few-shot learning without gradient updates.","people":["Brown"]},{"year":2020,"title":"RAG","detail":"Lewis et al. introduced retrieval-augmented generation.","people":["Lewis"]}],
+      "references": [{"title":"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks","authors":"Lewis et al.","year":2020}]
+    },
+    "chapters": {
+      "prompt-engineering": {"title":"Prompt engineering","lex":["few-shot","zero-shot","CoT","self-consistency","instruction","system prompt","temperature","formatting","chain","template"],"summary":"Few-shot, CoT, self-consistency, system prompts, and prompt templates.","requires":["post-training/instruction-tuning"]},
+      "rag": {"title":"RAG","lex":["embedding","retrieval","chunk","document","similarity","cosine","dense","sparse","grounding","faithfulness"],"summary":"Dense and sparse retrieval, chunking strategies, embedding similarity, and faithfulness evaluation.","requires":["transformers/text-and-language"]}
+    }
+  },
+  "safety-alignment": {
+    "course.json": {
+      "overview": ["Safety and alignment ask whether LLMs pursue the goals we intend. This course covers deceptive alignment, reward hacking, instrumental convergence, corrigibility, and the empirical landscape of LLM safety evaluation.",
+                   "The core problem is the alignment gap: models optimize proxies, and the proxy diverges from the intended objective. Reward hacking and specification gaming are the empirical forms of this gap."],
+      "outcomes": ["Explain deceptive alignment and the alignment faking phenomenon.","Describe reward hacking and specification gaming examples.","Evaluate LLM safety with red-teaming and behavioral testing.","Discuss instrumental convergence and corrigibility."],
+      "history": [{"year":2022,"title":"Power-seeking behavior","detail":"Turner et al. showed that agents optimizing simple objectives tend to acquire power instrumentally.","people":["Turner"]},{"year":2023,"title":"Sleeper agents","detail":"Hubinger et al. showed that backdoored LLMs can behave deceptively until triggered.","people":["Hubinger"]}],
+      "references": [{"title":"Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training","authors":"Hubinger et al.","year":2024}]
+    },
+    "chapters": {
+      "reward-hacking": {"title":"Reward hacking","lex":["proxy","specification gaming","reward","hacking","divergence","objective","gaming","shortcut","unintended","outcome"],"summary":"Proxy-reward divergence: how models find shortcuts that satisfy the reward but not the intent.","requires":["post-training/reward-models"]},
+      "deceptive-alignment": {"title":"Deceptive alignment","lex":["deception","alignment faking","sleeper","trigger","backdoor","persistent","evaluation awareness","instrumental","convergent","strategy"],"summary":"Deceptive alignment and alignment faking: models that behave safely only when evaluated.","requires":["safety-alignment/reward-hacking"]},
+      "red-teaming": {"title":"Red-teaming","lex":["adversarial","jailbreak","prompt injection","override","refusal","harmful","output","robustness","eval","attack"],"summary":"Adversarial evaluation: jailbreaks, prompt injection, and refusal robustness testing.","requires":["safety-alignment/reward-hacking"]}
+    }
+  },
+  "scaling": {
+    "course.json": {
+      "overview": ["Scaling is the central empirical finding of modern LLM research: capability emerges from parameters, data, and compute. This course covers scaling laws, emergent capabilities, and the limits of the scaling approach.",
+                   "The Chinchilla result — that compute-optimal training requires more data than previously used — was a key correction. Emergent abilities appear non-linearly, raising questions about predictability."],
+      "outcomes": ["Explain Kaplan and Chinchilla scaling laws.","Describe emergent capabilities and the predictability problem.","Analyze the diminishing returns and environmental limits of scaling."],
+      "history": [{"year":2020,"title":"Emergent abilities","detail":"Wei et al. showed that some abilities appear abruptly at scale, not smoothly.","people":["Wei"]},{"year":2022,"title":"Chinchilla","detail":"Hoffmann et al. revised compute-optimal training: equal token and parameter scaling.","people":["Hoffmann"]}],
+      "references": [{"title":"Emergent Abilities of Large Language Models","authors":"Wei et al.","year":2022}]
+    },
+    "chapters": {
+      "scaling-laws": {"title":"Scaling laws","lex":["Kaplan","Chinchilla","power law","compute","parameter","token","loss","predict","compute-optimal","extrapolation"],"summary":"Kaplan vs. Chinchilla scaling laws: predicting loss from parameters and tokens.","requires":["math-for-ml/linear-algebra"]},
+      "emergent-abilities": {"title":"Emergent abilities","lex":["emergence","threshold","sharp","smooth","non-linear","capability","benchmark","prediction","phase transition","metric"],"summary":"Do abilities emerge abruptly or smoothly? The predictability problem and the metric sensitivity of emergence.","requires":["scaling/scaling-laws"]}
+    }
+  },
+  "sequence-models": {
+    "course.json": {
+      "overview": ["Before transformers, sequence models were RNNs, LSTMs, and GRUs. This course covers recurrent architectures, the vanishing gradient problem, sequence-to-sequence with attention, and encoder-decoder frameworks.",
+                   "LSTMs solved gradient flow with gating; attention solved the bottleneck of fixed-length encoding. The encoder-decoder architecture with attention set the stage for the transformer."],
+      "outcomes": ["Trace the RNN and LSTM forward/backward pass.","Explain the vanishing gradient problem and how gating solves it.","Describe sequence-to-sequence with attention and the encoder-decoder architecture."],
+      "history": [{"year":1997,"title":"LSTM","detail":"Hochreiter and Schmidhuber introduced LSTM with gating to solve vanishing gradients.","people":["Hochreiter","Schmidhuber"]},{"year":2014,"title":"Seq2Seq with attention","detail":"Bahdanau et al. added attention to seq2seq, overcoming the fixed-length bottleneck.","people":["Bahdanau"]}],
+      "references": [{"title":"Long Short-Term Memory","authors":"Hochreiter & Schmidhuber","year":1997}]
+    },
+    "chapters": {
+      "rnn": {"title":"RNN","lex":["hidden","state","recurrence","time step","sequence","input","output","vanishing","gradient","activation"],"summary":"Recurrent networks: hidden state, recurrence, and why gradients vanish over time steps.","requires":["neural-networks/backprop"]},
+      "lstm": {"title":"LSTM","lex":["gate","forget","input","output","cell state","hidden","gating","sigmoid","tanh","flow"],"summary":"Forget gate, input gate, and output gate. How gating preserves gradient flow over long sequences.","requires":["rnn"]},
+      "seq2seq": {"title":"Seq2seq with attention","lex":["encoder","decoder","context","attention","alignment","query","key","value","source","target"],"summary":"Encoder-decoder: fixed-length context, the attention mechanism, and alignment.","requires":["lstm"]}
+    }
+  },
+  "text-and-language": {
+    "course.json": {
+      "overview": ["Text is the input format of LLMs. This course covers tokenization (BPE, SentencePiece), text preprocessing, Unicode, subword vocabulary design, and the linguistic foundations of language modeling.",
+                   "Tokenization is an underappreciated source of model errors: byte-level BPE handles any Unicode string but can fragment words; SentencePiece learns subword units but introduces language-specific biases."],
+      "outcomes": ["Explain BPE and SentencePiece tokenization algorithms.","Describe Unicode and normalization effects on tokenization.","Evaluate the effect of tokenizer choice on model quality."],
+      "history": [{"year":2016,"title":"Byte-level BPE","detail":"Sennrich et al. introduced byte-level BPE for robust tokenization of any text.","people":["Sennrich"]},{"year":2018,"title":"SentencePiece","detail":"Kudo and Richardson introduced SentencePiece, a subword tokenizer independent of preprocessing.","people":["Kudo","Richardson"]}],
+      "references": [{"title":"Neural Machine Translation of Rare Words with Subword Units","authors":"Sennrich et al.","year":2016}]
+    },
+    "chapters": {
+      "tokenization": {"title":"Tokenization","lex":["BPE","SentencePiece","subword","vocabulary","merge","byte","Unicode","normalization","fragment","token"],"summary":"BPE and SentencePiece: subword vocabulary construction, byte-level encoding, and Unicode effects.","requires":["math-for-ml/probability"]},
+      "language-modeling": {"title":"Language modeling","lex":["n-gram","perplexity","cross-entropy","probability","next token","conditional","corpus","train","evaluate","baseline"],"summary":"N-gram baselines, perplexity, cross-entropy, and next-token probability as a modeling objective.","requires":["text-and-language/tokenization"]}
+    }
+  },
+  "transformers": {
+    "course.json": {
+      "overview": ["The transformer architecture — attention, positional encoding, and feedforward layers — is the backbone of all modern LLMs. This course covers multi-head attention, positional schemes, and the transformer block in detail.",
+                   "Scaled dot-product attention with multiple heads allows each layer to mix information from arbitrary input positions. Residual connections and layer normalization stabilize deep stacks of transformer layers."],
+      "outcomes": ["Trace the transformer block forward pass: Q, K, V, softmax, residual, norm.","Explain multi-head attention and why multiple heads help.","Compare positional encoding schemes: sinusoidal, learned, RoPE.","Describe causal masking and its role in autoregressive generation."],
+      "history": [{"year":2017,"title":"Attention is All You Need","detail":"Vaswani et al. introduced the transformer, replacing recurrence with attention.","people":["Vaswani"]},{"year":2019,"title":"RoPE","detail":"Su et al. introduced rotary positional embeddings for length extrapolation.","people":["Su"]}],
+      "references": [{"title":"Attention Is All You Need","authors":"Vaswani et al.","year":2017}]
+    },
+    "chapters": {
+      "attention": {"title":"Attention","lex":["query","key","value","softmax","dot product","scaling","multi-head","mask","causal","parallel"],"summary":"Scaled dot-product attention, multi-head attention, causal masking, and parallel computation.","requires":["math-for-ml/linear-algebra"]},
+      "positional": {"title":"Positional encoding","lex":["sinusoidal","learned","RoPE","rotary","relative","position","embed","sequence order","extrapolation","relative"],"summary":"Sinusoidal, learned, and rotary (RoPE) positional encodings. Length extrapolation and relative position.","requires":["transformers/attention"]},
+      "transformer-block": {"title":"Transformer block","lex":["residual","normalization","feedforward","MLP","layernorm","skip","depth","stack","block","activation"],"summary":"The full transformer block: attention + residual + norm + MLP + residual + norm.","requires":["transformers/attention"]},
+      "gpt": {"title":"GPT architecture","lex":["causal","decoder","prefix","LM head","embedding","untied","GPT-2","GPT-3","autoregressive","next-token"],"summary":"The decoder-only GPT architecture: causal attention, LM head, and autoregressive generation.","requires":["transformers/transformer-block"]}
+    }
+  }
+}
