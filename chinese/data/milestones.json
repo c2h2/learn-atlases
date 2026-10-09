@@ -1,4 +1,271 @@
 {
   "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC.",
-  "milestones": []
+  "milestones": [
+    {
+      "year": -1200,
+      "title": "Oracle-bone inscriptions",
+      "detail": "Shang diviners at Yinxu (modern Anyang) carve several thousand characters on turtle plastrons and ox scapulae — the earliest substantial corpus of Chinese writing.",
+      "people": [],
+      "area": "script"
+    },
+    {
+      "year": -800,
+      "title": "Bronze inscriptions reach maturity",
+      "detail": "Western Zhou ritual bronzes carry texts of up to nearly five hundred characters, fixing the graph shapes and the literary language in a monumental register.",
+      "people": [],
+      "area": "script"
+    },
+    {
+      "year": 30,
+      "title": "Classical becomes a written standard",
+      "detail": "By the Han, the spoken language had moved far from the idiom of the Five Classics, yet classical prose kept setting the norm for learned writing for the next two millennia.",
+      "people": [],
+      "area": "classical"
+    },
+    {
+      "year": 121,
+      "title": "Shuowen jiezi",
+      "detail": "Xu Shen completes the first systematic dictionary: 9,353 graphs analysed under 540 radicals, establishing the radical-and-stroke method used to this day.",
+      "people": [
+        "Xu Shen"
+      ],
+      "area": "script"
+    },
+    {
+      "year": 353,
+      "title": "Preface to the Orchid Pavilion Collection",
+      "detail": "Wang Xizhi writes the running-script draft that calligraphy ever since has treated as its supreme model of regular-cursive elegance.",
+      "people": [
+        "Wang Xizhi"
+      ],
+      "area": "script"
+    },
+    {
+      "year": 501,
+      "title": "Wenxin diaolong",
+      "detail": "Liu Xie's Literary Mind and the Carving of Dragons maps genre, style, imagery and craft — the most systematic work of Chinese literary theory.",
+      "people": [
+        "Liu Xie"
+      ],
+      "area": "classical"
+    },
+    {
+      "year": 601,
+      "title": "Qieyun rhyme book",
+      "detail": "Lu Fayan and colleagues compile a compromise system of literary readings for poetry; its category framework is the backbone all later reconstructions of Middle Chinese hang on.",
+      "people": [
+        "Lu Fayan",
+        "Liu Shang"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 868,
+      "title": "Dated printing: the Diamond Sutra",
+      "detail": "The earliest printed book with a colophon date rolls out of a woodblock shop — a technology that will make the character a standardised, mass-reproduced object.",
+      "people": [],
+      "area": "writing"
+    },
+    {
+      "year": 1045,
+      "title": "Movable type",
+      "detail": "Bi Sheng develops clay movable type, described by Shen Kuo; carved woodblocks remain the workhorse of Chinese printing for centuries more.",
+      "people": [
+        "Bi Sheng",
+        "Shen Kuo"
+      ],
+      "area": "writing"
+    },
+    {
+      "year": 1057,
+      "title": "The ancient-style prose ascendancy",
+      "detail": "Ouyang Xiu, as chief examiner, crowns the guwen candidates; the plain, argumentative prose of the model classicists becomes the prestige written style.",
+      "people": [
+        "Ouyang Xiu",
+        "Su Shi"
+      ],
+      "area": "classical"
+    },
+    {
+      "year": 1150,
+      "title": "Yunjing",
+      "detail": "The earliest surviving rhyme-classification diagram arranges syllables by initial, medial and tone — Chinese phonology acquires its generator grid.",
+      "people": [],
+      "area": "language"
+    },
+    {
+      "year": 1324,
+      "title": "Zhongyuan yinyun",
+      "detail": "Zhou Deqing's book of Yuefu rhymes records the living northern spoken system — level/rising/departing/entering reduced to four tones, entering tone distributed — a landmark for Mandarin historical phonology.",
+      "people": [
+        "Zhou Deqing"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1728,
+      "title": "Yongzheng edict on the correct sound",
+      "detail": "The court orders Zhengyin academies in Fujian and Guangdong to teach capital pronunciation to examination candidates — the empire's most systematic premodern pronunciation-standardisation drive.",
+      "people": [],
+      "area": "language"
+    },
+    {
+      "year": 1815,
+      "title": "Morrison's dictionary",
+      "detail": "Robert Morrison's A Dictionary of the Chinese and English Language, printed at Malacca, begins the era of Western lexicography keyed to the vernacular.",
+      "people": [
+        "Robert Morrison"
+      ],
+      "area": "theory"
+    },
+    {
+      "year": 1892,
+      "title": "Yimuliao chujie",
+      "detail": "Lu Shangzhang publishes at Fuzhou an alphabetic spelling scheme for the Zhangzhou-Quanzhou Min speech, with Mandarin in view — the opening of the late-Qing alphabetic (qieyinzi) movement.",
+      "people": [
+        "Lu Shangzhang"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1903,
+      "title": "Wang Zhao's alphabet published",
+      "detail": "Modelled on Japanese kana strokes, Wang Zhao's Guanhua hesheng zimu began circulating in Tianjin — the most politically influential of the qieyinzi schemes before 1911.",
+      "people": [
+        "Wang Zhao"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1915,
+      "title": "New Youth and the literary revolution",
+      "detail": "Chen Duxiu's journal gathers the writers who will demand that the spoken language of Beijing become the vehicle of all serious literature.",
+      "people": [
+        "Chen Duxiu",
+        "Hu Shi"
+      ],
+      "area": "modern"
+    },
+    {
+      "year": 1918,
+      "title": "A Madman's Diary; Zhuyin zimu promulgated",
+      "detail": "Lu Xun's vernacular masterpiece appears in New Youth the same year the state issues its first national phonetic alphabet (zhuyin) for textbook use.",
+      "people": [
+        "Lu Xun",
+        "Wu Zhihui"
+      ],
+      "area": "modern"
+    },
+    {
+      "year": 1920,
+      "title": "Vernacular in the schools",
+      "detail": "Following the 1919 orders, the school system replaces classical compositions with baihua essays — the single decisive institutional victory of the vernacular movement.",
+      "people": [],
+      "area": "modern"
+    },
+    {
+      "year": 1928,
+      "title": "Laboratory phonetics at the Academy",
+      "detail": "Zhao Yuanren, Luo Changpei and colleagues at the Institute of History and Philology record Chinese dialects with graphophones, founding empirical Chinese dialectology and the five-level tone scale.",
+      "people": [
+        "Zhao Yuanren",
+        "Luo Changpei",
+        "Li Fang-Kuei"
+      ],
+      "area": "theory"
+    },
+    {
+      "year": 1931,
+      "title": "Latinxua",
+      "detail": "A congress in Khabarovsk adopts a Latin-based Sinized writing designed with Soviet Chinese workers — the model that pushes Zhou Youguang toward the 1950s scheme.",
+      "people": [
+        "Wu Yu"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1932,
+      "title": "Modern Chinese Dictionary of National Language",
+      "detail": "The official Guoyu character dictionary establishes a Beijing-based standard for readings, becoming a reference point across the Chinese-speaking world.",
+      "people": [
+        "Qian Xuantong",
+        "Li Jinxi"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1949,
+      "title": "Script-reform debate",
+      "detail": "A spate of tracts on the difficulty of Chinese characters and the reform of the writing system appears around 1949; for a decade, alphabetisation seems within reach.",
+      "people": [],
+      "area": "language"
+    },
+    {
+      "year": 1955,
+      "title": "The definition of Putonghua",
+      "detail": "The National Language Unification Conference defines the standard: Beijing pronunciation as the norm, northern dialects as the base, exemplary modern vernacular as the grammatical model.",
+      "people": [
+        "Bo Duoping"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1958,
+      "title": "Hanyu Pinyin fang'an approved",
+      "detail": "The National People's Congress approves the Latin-based scheme chiefly drafted by Zhou Youguang; tone marks, spelling conventions and letter rules enter the schools.",
+      "people": [
+        "Zhou Youguang"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1964,
+      "title": "Table of Simplified Characters",
+      "detail": "The state issues 2,236 simplified forms, redrawing the graph inventory of the mainland and freezing traditional characters into heritage, calligraphy, and use beyond it.",
+      "people": [],
+      "area": "script"
+    },
+    {
+      "year": 1985,
+      "title": "Pronunciation review table",
+      "detail": "The Putonghua Yidu Shenyin Biao retabulates many readings (abolishing double pronunciations such as que3 for que4); textbook and dictionary readings follow it ever since.",
+      "people": [],
+      "area": "language"
+    },
+    {
+      "year": 1994,
+      "title": "Putonghua Proficiency Test founded",
+      "detail": "Language, education and broadcasting authorities jointly launch the PSC, turning pronunciation norms into scores for teachers, hosts and civil servants.",
+      "people": [],
+      "area": "language"
+    },
+    {
+      "year": 1998,
+      "title": "Promotion Week",
+      "detail": "The first national Putonghua Promotion Week puts the standard language on every province's poster wall each September.",
+      "people": [],
+      "area": "language"
+    },
+    {
+      "year": 2000,
+      "title": "National Common Language and Script Law",
+      "detail": "Legislation names Putonghua and the standardised character set state common language and script, and fixes occupational proficiency requirements.",
+      "people": [],
+      "area": "language"
+    },
+    {
+      "year": 2013,
+      "title": "Table of General Standard Chinese Characters",
+      "detail": "8,105 standard characters are promulgated after a decade of review — the first comprehensive standard graph list in the simplified-character era.",
+      "people": [],
+      "area": "script"
+    },
+    {
+      "year": 2023,
+      "title": "Chinese and the language model era",
+      "detail": "Large language models push machine handling of Chinese — segmentation, disambiguation, style — into the daily practice of writers and teachers.",
+      "people": [],
+      "area": "theory"
+    }
+  ]
 }
