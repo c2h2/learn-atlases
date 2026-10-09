@@ -1,0 +1,136 @@
+{
+  "slug": "evaluation",
+  "title": "Evaluation",
+  "full_title": "Evaluating Language Models",
+  "area": "safety",
+  "level": 3,
+  "order": 170,
+  "tagline": "Benchmarks, contamination, human and model judges, capability evaluations and the statistics of evaluation",
+  "summary": "Knowing what a model can do is surprisingly hard. This course covers benchmark evaluation and its pitfalls of contamination and saturation, human preference evaluation and arenas, models as judges, capability and dangerous-capability evaluations, robustness and calibration, and the statistics needed to compare models honestly.",
+  "overview": {
+    "overview": [
+      "LLM evaluation measures capability across tasks and benchmarks. This course covers benchmark design, contamination, saturation, and LLM-as-judge methods.",
+      "The key insight is that static benchmarks saturate and contamination creeps in. LLM-as-judge methods offer scalable evaluation but have their own biases."
+    ],
+    "outcomes": [
+      "Describe benchmark evaluation and its pitfalls.",
+      "Implement contamination detection and saturation analysis.",
+      "Compare LLM-as-judge and human evaluation methods.",
+      "Analyze benchmark design and statistical validity."
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "title": "SuperGLUE",
+        "detail": "Wang et al. introduced SuperGLUE as a harder successor to GLUE for NLP evaluation.",
+        "people": [
+          "Wang"
+        ]
+      },
+      {
+        "year": 2022,
+        "title": "HELM",
+        "detail": "Liang et al. introduced HELM for holistic evaluation of language models.",
+        "people": [
+          "Liang"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "MT-Bench",
+        "detail": "Zheng et al. introduced MT-Bench and LLM-as-judge for multi-turn evaluation.",
+        "people": [
+          "Zheng"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Holistic Evaluation of Language Models",
+        "authors": "Liang et al.",
+        "year": 2022
+      },
+      {
+        "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+        "authors": "Zheng et al.",
+        "year": 2023
+      },
+      {
+        "title": "SuperGLUE: A Stickier Benchmark",
+        "authors": "Wang et al.",
+        "year": 2019
+      }
+    ]
+  },
+  "prerequisites": [
+    "pretraining",
+    "ml-fundamentals"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "evaluation-principles",
+      "title": "Principles of evaluation",
+      "summary": "What to measure, validity, and the gap between benchmarks and real use.",
+      "requires": [
+        "ml-fundamentals/evaluation-metrics"
+      ]
+    },
+    {
+      "slug": "benchmarks",
+      "title": "Benchmarks",
+      "summary": "Knowledge, reasoning, coding and multilingual benchmarks and how they are scored.",
+      "requires": [
+        "evaluation/evaluation-principles"
+      ]
+    },
+    {
+      "slug": "contamination",
+      "title": "Contamination and saturation",
+      "summary": "Test-set leakage, how to detect it, and the life cycle of benchmarks.",
+      "requires": [
+        "evaluation/benchmarks",
+        "pretraining/training-data"
+      ]
+    },
+    {
+      "slug": "human-evaluation",
+      "title": "Human evaluation and arenas",
+      "summary": "Pairwise comparisons, Elo and Bradley\u2013Terry ratings, and their biases.",
+      "requires": [
+        "evaluation/evaluation-principles"
+      ]
+    },
+    {
+      "slug": "model-judges",
+      "title": "Models as judges",
+      "summary": "LLM-as-a-judge, rubrics, position and length bias, and agreement with humans.",
+      "requires": [
+        "evaluation/human-evaluation"
+      ]
+    },
+    {
+      "slug": "capability-evaluations",
+      "title": "Capability and dangerous-capability evaluations",
+      "summary": "Eliciting capabilities, agentic tasks and evaluations for high-risk capabilities.",
+      "requires": [
+        "evaluation/benchmarks"
+      ]
+    },
+    {
+      "slug": "evaluation-statistics",
+      "title": "Statistics of evaluation",
+      "summary": "Confidence intervals and significance, variance across seeds and prompts, and calibration.",
+      "requires": [
+        "evaluation/benchmarks",
+        "math-for-ml/estimation"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "safety-alignment",
+    "interpretability"
+  ]
+}

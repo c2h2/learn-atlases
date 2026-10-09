@@ -1,0 +1,139 @@
+{
+  "slug": "post-training",
+  "title": "Post-training",
+  "full_title": "Post-training and Alignment",
+  "area": "alignment",
+  "level": 3,
+  "order": 120,
+  "tagline": "Instruction tuning, reward models, RLHF, preference optimisation and parameter-efficient fine-tuning",
+  "summary": "A pretrained model predicts text; an assistant follows instructions. This course covers supervised instruction tuning, reward modelling and reinforcement learning from human feedback, direct preference optimisation, AI feedback and constitutional methods, and the parameter-efficient methods that make fine-tuning cheap.",
+  "overview": {
+    "overview": [
+      "Post-training aligns pretrained LLMs with human preferences. This course covers instruction tuning, RLHF, DPO, and reward modeling.",
+      "The key insight is that alignment is a fine-tuning problem: models learn preferences from preference data and reward signals."
+    ],
+    "outcomes": [
+      "Explain instruction tuning and supervised fine-tuning.",
+      "Describe RLHF: reward models, PPO, and KL constraints.",
+      "Analyze DPO and preference optimization without RL.",
+      "Evaluate alignment quality and helpfulness-harmlessness trade-offs."
+    ],
+    "history": [
+      {
+        "year": 2022,
+        "title": "InstructGPT",
+        "detail": "Ouyang et al. introduced RLHF with InstructGPT, aligning LLMs with human preferences.",
+        "people": [
+          "Ouyang"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "DPO",
+        "detail": "Rafailov et al. introduced Direct Preference Optimization as a simpler alignment method.",
+        "people": [
+          "Rafailov"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "KTO",
+        "detail": "Ethayarajh et al. introduced KTO for binary preference optimization.",
+        "people": [
+          "Ethayarajh"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Training language models to follow instructions",
+        "authors": "Ouyang et al.",
+        "year": 2022
+      },
+      {
+        "title": "Direct Preference Optimization",
+        "authors": "Rafailov et al.",
+        "year": 2023
+      }
+    ]
+  },
+  "prerequisites": [
+    "pretraining"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "instruction-tuning",
+      "title": "Instruction tuning",
+      "summary": "Supervised fine-tuning on instructions and dialogues, chat templates and system prompts.",
+      "requires": [
+        "pretraining/model-families"
+      ]
+    },
+    {
+      "slug": "rl-for-language-models",
+      "title": "Reinforcement learning for language models",
+      "summary": "Policies, rewards, policy gradients and the KL-regularised objective.",
+      "requires": [
+        "post-training/instruction-tuning",
+        "math-for-ml/optimisation"
+      ]
+    },
+    {
+      "slug": "reward-models",
+      "title": "Reward models",
+      "summary": "Learning rewards from human comparisons, the Bradley\u2013Terry model and reward over-optimisation.",
+      "requires": [
+        "post-training/rl-for-language-models"
+      ]
+    },
+    {
+      "slug": "rlhf",
+      "title": "Reinforcement learning from human feedback",
+      "summary": "The RLHF pipeline with PPO, its practical difficulties and what it changes in a model.",
+      "requires": [
+        "post-training/reward-models"
+      ]
+    },
+    {
+      "slug": "preference-optimisation",
+      "title": "Direct preference optimisation",
+      "summary": "DPO and related methods that learn from preferences without an explicit reward model.",
+      "requires": [
+        "post-training/rlhf"
+      ]
+    },
+    {
+      "slug": "ai-feedback",
+      "title": "AI feedback and constitutional methods",
+      "summary": "Learning from model-generated feedback guided by written principles.",
+      "requires": [
+        "post-training/rlhf"
+      ]
+    },
+    {
+      "slug": "parameter-efficient-tuning",
+      "title": "Parameter-efficient fine-tuning",
+      "summary": "Adapters, prefix tuning, LoRA and QLoRA.",
+      "requires": [
+        "post-training/instruction-tuning",
+        "math-for-ml/matrix-decompositions"
+      ]
+    },
+    {
+      "slug": "distillation",
+      "title": "Distillation and synthetic data",
+      "summary": "Training smaller models from larger ones, synthetic instruction data and model collapse.",
+      "requires": [
+        "post-training/instruction-tuning"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "reasoning",
+    "safety-alignment",
+    "multimodal"
+  ]
+}

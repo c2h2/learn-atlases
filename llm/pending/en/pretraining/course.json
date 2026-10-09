@@ -1,0 +1,140 @@
+{
+  "slug": "pretraining",
+  "title": "Pretraining",
+  "full_title": "Pretraining Language Models",
+  "area": "training",
+  "level": 2,
+  "order": 70,
+  "tagline": "Data, objectives, the training loop, stability and the families of pretrained models",
+  "summary": "A pretrained language model learns from trillions of tokens of text with a simple objective. This course covers how training data are collected, filtered and mixed, the causal and masked objectives, the training loop and its instabilities, evaluation during training, and the families of pretrained models from BERT and GPT to today\u2019s open and closed models.",
+  "overview": {
+    "overview": [
+      "Pretraining learns general representations from unlabeled text. This course covers data curation, training infrastructure, and scaling laws.",
+      "The key insight is that pretraining is the foundation: the model learns statistical structure that enables downstream tasks via prompting."
+    ],
+    "outcomes": [
+      "Explain data curation, deduplication, and quality filtering.",
+      "Describe training infrastructure: parallelism and checkpointing.",
+      "Analyze scaling laws and compute-optimal training.",
+      "Evaluate pretraining data mixtures and their effects."
+    ],
+    "history": [
+      {
+        "year": 2021,
+        "title": "The Pile",
+        "detail": "Gao et al. introduced The Pile, a 800GB diverse pretraining dataset.",
+        "people": [
+          "Gao"
+        ]
+      },
+      {
+        "year": 2022,
+        "title": "Chinchilla",
+        "detail": "Hoffmann et al. revised scaling laws: compute-optimal requires more data.",
+        "people": [
+          "Hoffmann"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "RedPajama",
+        "detail": "Together AI introduced RedPajama, an open pretraining dataset.",
+        "people": [
+          "Together"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Training Compute-Optimal Large Language Models",
+        "authors": "Hoffmann et al.",
+        "year": 2022
+      },
+      {
+        "title": "The Pile: An 800GB Dataset of Diverse Text",
+        "authors": "Gao et al.",
+        "year": 2021
+      }
+    ]
+  },
+  "prerequisites": [
+    "transformers"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "pretraining-objectives",
+      "title": "Pretraining objectives",
+      "summary": "Causal and masked language modelling, span corruption, and next-token prediction as compression.",
+      "requires": [
+        "transformers/architecture-families",
+        "text-and-language/perplexity"
+      ]
+    },
+    {
+      "slug": "training-data",
+      "title": "Training data",
+      "summary": "Web crawls, books, code and curated sources; filtering, quality classifiers and deduplication.",
+      "requires": [
+        "pretraining/pretraining-objectives"
+      ]
+    },
+    {
+      "slug": "data-mixtures",
+      "title": "Data mixtures and curricula",
+      "summary": "Mixing domains and languages, upsampling, synthetic data and the order of training data.",
+      "requires": [
+        "pretraining/training-data"
+      ]
+    },
+    {
+      "slug": "training-loop",
+      "title": "The training loop",
+      "summary": "Batches of sequences, learning-rate schedules, gradient clipping, checkpoints and monitoring.",
+      "requires": [
+        "pretraining/pretraining-objectives",
+        "neural-networks/training-practice"
+      ]
+    },
+    {
+      "slug": "training-stability",
+      "title": "Training stability",
+      "summary": "Loss spikes and divergence, numerical precision, and initialisation and normalisation choices at scale.",
+      "requires": [
+        "pretraining/training-loop"
+      ]
+    },
+    {
+      "slug": "in-training-evaluation",
+      "title": "Evaluation during pretraining",
+      "summary": "Validation loss, downstream probes and how abilities appear as training proceeds.",
+      "requires": [
+        "pretraining/training-loop"
+      ]
+    },
+    {
+      "slug": "model-families",
+      "title": "Families of pretrained models",
+      "summary": "BERT, GPT, T5 and their successors: the design choices of major open and closed model families.",
+      "requires": [
+        "transformers/architecture-families",
+        "pretraining/pretraining-objectives"
+      ]
+    },
+    {
+      "slug": "continued-pretraining",
+      "title": "Continued pretraining and adaptation",
+      "summary": "Adapting a pretrained model to new domains, languages or longer contexts.",
+      "requires": [
+        "pretraining/data-mixtures"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "post-training",
+    "scaling",
+    "evaluation"
+  ]
+}

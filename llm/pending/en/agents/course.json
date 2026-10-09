@@ -1,0 +1,142 @@
+{
+  "slug": "agents",
+  "title": "Agents",
+  "full_title": "Tool Use and Agents",
+  "area": "applications",
+  "level": 3,
+  "order": 150,
+  "tagline": "Function calling, agent loops, planning, memory, code execution, multi-agent systems and agent security",
+  "summary": "Language models become agents when they can act: call tools, run code, browse and operate computers over many steps. This course covers function calling, agent loops and planning, memory and context management, code and computer use, multi-agent systems, the evaluation of agents, and the security risks of autonomous action.",
+  "overview": {
+    "overview": [
+      "Agents are systems that plan, act, and reason with external tools. This course covers the agent loop, tool use, and evaluation of autonomous LLM systems.",
+      "The key insight is that agents combine reasoning with action: the model plans, executes, observes results, and revises."
+    ],
+    "outcomes": [
+      "Explain the agent loop: observe, plan, act, reflect.",
+      "Describe tool use and function-calling interfaces.",
+      "Evaluate agent systems on task completion and safety.",
+      "Analyze agent failures and failure recovery strategies."
+    ],
+    "history": [
+      {
+        "year": 2022,
+        "title": "ReAct",
+        "detail": "Yao et al. introduced ReAct, interleaving reasoning traces with tool actions and observations.",
+        "people": [
+          "Yao"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "Toolformer",
+        "detail": "Schick et al. showed LLMs can learn to call external APIs using supervised examples.",
+        "people": [
+          "Schick"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "AutoGen",
+        "detail": "Wu et al. introduced multi-agent conversational programming frameworks.",
+        "people": [
+          "Wu"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Yao et al.",
+        "year": 2022
+      },
+      {
+        "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+        "authors": "Schick et al.",
+        "year": 2023
+      },
+      {
+        "title": "AutoGen: Enabling Next-Gen LLM Applications",
+        "authors": "Wu et al.",
+        "year": 2023
+      }
+    ]
+  },
+  "prerequisites": [
+    "prompting-rag",
+    "reasoning"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "function-calling",
+      "title": "Function calling and tools",
+      "summary": "Tool schemas, calling conventions and training models to use tools.",
+      "requires": [
+        "prompting-rag/structured-output"
+      ]
+    },
+    {
+      "slug": "agent-loops",
+      "title": "Agent loops",
+      "summary": "ReAct, observation\u2013action cycles and the design of agent scaffolds.",
+      "requires": [
+        "agents/function-calling",
+        "reasoning/chain-of-thought"
+      ]
+    },
+    {
+      "slug": "planning",
+      "title": "Planning and task decomposition",
+      "summary": "Plans and subgoals, reflection, and recovering from errors.",
+      "requires": [
+        "agents/agent-loops"
+      ]
+    },
+    {
+      "slug": "memory-context",
+      "title": "Memory and context management",
+      "summary": "Short- and long-term memory, summarisation and context engineering.",
+      "requires": [
+        "agents/agent-loops",
+        "prompting-rag/retrieval-augmented-generation"
+      ]
+    },
+    {
+      "slug": "code-agents",
+      "title": "Code generation and execution",
+      "summary": "Code models, sandboxes, software-engineering agents and their benchmarks.",
+      "requires": [
+        "agents/agent-loops"
+      ]
+    },
+    {
+      "slug": "computer-use",
+      "title": "Browsing and computer use",
+      "summary": "Web agents, control of graphical interfaces and perception of screens.",
+      "requires": [
+        "agents/agent-loops"
+      ]
+    },
+    {
+      "slug": "multi-agent-systems",
+      "title": "Multi-agent systems",
+      "summary": "Orchestrators and workers, and debate and cooperation between agents.",
+      "requires": [
+        "agents/planning"
+      ]
+    },
+    {
+      "slug": "agent-security",
+      "title": "Agent evaluation and security",
+      "summary": "Benchmarks for agents, reliability, prompt injection and permissions.",
+      "requires": [
+        "agents/multi-agent-systems",
+        "agents/code-agents"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

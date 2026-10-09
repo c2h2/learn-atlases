@@ -1,0 +1,136 @@
+{
+  "slug": "scaling",
+  "title": "Scaling",
+  "full_title": "Scaling and Distributed Training",
+  "area": "training",
+  "level": 3,
+  "order": 110,
+  "tagline": "Scaling laws, compute budgets, parallelism, low-precision training and hardware",
+  "summary": "Language models improve predictably with scale. This course studies empirical scaling laws and compute-optimal training, estimates the FLOPs and memory of training runs, and explains how data, tensor, pipeline and expert parallelism, sharded optimisers and low-precision arithmetic spread training across thousands of accelerators.",
+  "overview": {
+    "overview": [
+      "Scaling is the central empirical finding of LLM research: capability emerges from parameters, data, and compute. This course covers scaling laws, emergent capabilities, and their limits.",
+      "The key insight is that the Chinchilla correction \u2014 compute-optimal training requires more data \u2014 was a key lesson. Emergent abilities appear non-linearly."
+    ],
+    "outcomes": [
+      "Explain Kaplan and Chinchilla scaling laws.",
+      "Describe emergent capabilities and the predictability problem.",
+      "Analyze diminishing returns and environmental limits of scaling.",
+      "Evaluate compute-optimal training and data quality trade-offs."
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "title": "Kaplan scaling laws",
+        "detail": "Kaplan et al. showed loss scales as a power law with parameters, data, and compute.",
+        "people": [
+          "Kaplan"
+        ]
+      },
+      {
+        "year": 2022,
+        "title": "Chinchilla",
+        "detail": "Hoffmann et al. revised compute-optimal training: equal token and parameter scaling.",
+        "people": [
+          "Hoffmann"
+        ]
+      },
+      {
+        "year": 2022,
+        "title": "Emergent abilities",
+        "detail": "Wei et al. showed some abilities appear abruptly at scale.",
+        "people": [
+          "Wei"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Scaling Laws for Neural Language Models",
+        "authors": "Kaplan et al.",
+        "year": 2020
+      },
+      {
+        "title": "Training Compute-Optimal LLMs",
+        "authors": "Hoffmann et al.",
+        "year": 2022
+      }
+    ]
+  },
+  "prerequisites": [
+    "pretraining"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "scaling-laws",
+      "title": "Scaling laws",
+      "summary": "Power laws relating loss to parameters, data and compute, and how they are measured.",
+      "requires": [
+        "pretraining/in-training-evaluation"
+      ]
+    },
+    {
+      "slug": "compute-optimal-training",
+      "title": "Compute-optimal training",
+      "summary": "Chinchilla-style allocation of compute between parameters and tokens, and over-training for cheaper inference.",
+      "requires": [
+        "scaling/scaling-laws"
+      ]
+    },
+    {
+      "slug": "flops-memory",
+      "title": "Counting FLOPs and memory",
+      "summary": "The arithmetic of a training step, activation memory, and estimating training time and cost.",
+      "requires": [
+        "transformers/transformer-block"
+      ]
+    },
+    {
+      "slug": "accelerators",
+      "title": "Accelerators",
+      "summary": "GPUs and TPUs, the memory hierarchy, arithmetic intensity and the roofline model.",
+      "requires": [
+        "scaling/flops-memory"
+      ]
+    },
+    {
+      "slug": "mixed-precision",
+      "title": "Low-precision training",
+      "summary": "Floating-point formats, bf16 and fp8 training, loss scaling and numerical stability.",
+      "requires": [
+        "scaling/accelerators"
+      ]
+    },
+    {
+      "slug": "data-parallelism",
+      "title": "Data parallelism and sharding",
+      "summary": "Data parallelism, all-reduce, ZeRO and fully sharded data parallelism.",
+      "requires": [
+        "scaling/flops-memory"
+      ]
+    },
+    {
+      "slug": "model-parallelism",
+      "title": "Tensor, pipeline and expert parallelism",
+      "summary": "Splitting layers and models across devices, pipeline schedules and expert parallelism.",
+      "requires": [
+        "scaling/data-parallelism",
+        "transformers/mixture-of-experts"
+      ]
+    },
+    {
+      "slug": "large-runs",
+      "title": "Running large training jobs",
+      "summary": "Clusters and networking, fault tolerance, checkpointing and the engineering of very large runs.",
+      "requires": [
+        "scaling/model-parallelism"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "inference"
+  ]
+}

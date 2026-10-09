@@ -1,3 +1,4 @@
+raise SystemExit("Retired: this script generated placeholder lessons; see pending/README.md. Lessons are written by hand.")
 """Generate substantive LLM lesson .md files for all empty courses.
 
 Each chapter gets a lexicon (key terms → definitions). The lesson follows the

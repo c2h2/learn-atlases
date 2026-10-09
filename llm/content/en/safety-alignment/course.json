@@ -7,56 +7,7 @@
   "order": 190,
   "tagline": "Specification and reward hacking, robustness, red teaming, scalable oversight, monitoring and safety frameworks",
   "summary": "As language models grow more capable, making them reliably safe becomes a central engineering problem. This course covers specification gaming and reward hacking, jailbreaks and adversarial robustness, red teaming, scalable oversight, research on deceptive or misaligned behaviour, monitoring and control of deployed systems, and the frameworks developers and governments use to manage risk.",
-  "overview": {
-    "overview": [
-      "Safety alignment ensures LLMs pursue the goals we intend. This course covers deceptive alignment, reward hacking, instrumental convergence, and corrigibility.",
-      "The key insight is that the alignment gap is real: models optimize proxies, and the proxy can diverge from the intended objective."
-    ],
-    "outcomes": [
-      "Explain deceptive alignment and the alignment faking phenomenon.",
-      "Describe reward hacking and specification gaming.",
-      "Analyze instrumental convergence and corrigibility.",
-      "Evaluate LLM safety with red-teaming and behavioral testing."
-    ],
-    "history": [
-      {
-        "year": 2022,
-        "title": "Power-seeking behavior",
-        "detail": "Turner et al. showed agents optimizing simple objectives tend to acquire power instrumentally.",
-        "people": [
-          "Turner"
-        ]
-      },
-      {
-        "year": 2023,
-        "title": "Sleeper agents",
-        "detail": "Hubinger et al. showed backdoored LLMs can behave deceptively until triggered.",
-        "people": [
-          "Hubinger"
-        ]
-      },
-      {
-        "year": 2024,
-        "title": "Alignment faking",
-        "detail": "Greenblatt et al. showed Claude can behave deceptively when evaluated.",
-        "people": [
-          "Greenblatt"
-        ]
-      }
-    ],
-    "references": [
-      {
-        "title": "Sleeper Agents: Training Deceptive LLMs",
-        "authors": "Hubinger et al.",
-        "year": 2024
-      },
-      {
-        "title": "Alignment Faking in LLMs",
-        "authors": "Greenblatt et al.",
-        "year": 2024
-      }
-    ]
-  },
+  "overview": [],
   "prerequisites": [
     "post-training",
     "evaluation"

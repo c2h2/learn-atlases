@@ -1,0 +1,137 @@
+{
+  "slug": "safety-alignment",
+  "title": "AI Safety",
+  "full_title": "AI Safety and Alignment",
+  "area": "safety",
+  "level": 4,
+  "order": 190,
+  "tagline": "Specification and reward hacking, robustness, red teaming, scalable oversight, monitoring and safety frameworks",
+  "summary": "As language models grow more capable, making them reliably safe becomes a central engineering problem. This course covers specification gaming and reward hacking, jailbreaks and adversarial robustness, red teaming, scalable oversight, research on deceptive or misaligned behaviour, monitoring and control of deployed systems, and the frameworks developers and governments use to manage risk.",
+  "overview": {
+    "overview": [
+      "Safety alignment ensures LLMs pursue the goals we intend. This course covers deceptive alignment, reward hacking, instrumental convergence, and corrigibility.",
+      "The key insight is that the alignment gap is real: models optimize proxies, and the proxy can diverge from the intended objective."
+    ],
+    "outcomes": [
+      "Explain deceptive alignment and the alignment faking phenomenon.",
+      "Describe reward hacking and specification gaming.",
+      "Analyze instrumental convergence and corrigibility.",
+      "Evaluate LLM safety with red-teaming and behavioral testing."
+    ],
+    "history": [
+      {
+        "year": 2022,
+        "title": "Power-seeking behavior",
+        "detail": "Turner et al. showed agents optimizing simple objectives tend to acquire power instrumentally.",
+        "people": [
+          "Turner"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "Sleeper agents",
+        "detail": "Hubinger et al. showed backdoored LLMs can behave deceptively until triggered.",
+        "people": [
+          "Hubinger"
+        ]
+      },
+      {
+        "year": 2024,
+        "title": "Alignment faking",
+        "detail": "Greenblatt et al. showed Claude can behave deceptively when evaluated.",
+        "people": [
+          "Greenblatt"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Sleeper Agents: Training Deceptive LLMs",
+        "authors": "Hubinger et al.",
+        "year": 2024
+      },
+      {
+        "title": "Alignment Faking in LLMs",
+        "authors": "Greenblatt et al.",
+        "year": 2024
+      }
+    ]
+  },
+  "prerequisites": [
+    "post-training",
+    "evaluation"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "alignment-problem",
+      "title": "The alignment problem",
+      "summary": "Specifying what we want, outer and inner alignment, and the difficulty of designing rewards.",
+      "requires": [
+        "post-training/reward-models"
+      ]
+    },
+    {
+      "slug": "reward-hacking",
+      "title": "Specification gaming and reward hacking",
+      "summary": "Exploiting flawed objectives, sycophancy, and how to detect and mitigate them.",
+      "requires": [
+        "safety-alignment/alignment-problem"
+      ]
+    },
+    {
+      "slug": "robustness-jailbreaks",
+      "title": "Jailbreaks and adversarial robustness",
+      "summary": "Adversarial prompts, automated attacks and defences.",
+      "requires": [
+        "safety-alignment/alignment-problem"
+      ]
+    },
+    {
+      "slug": "red-teaming",
+      "title": "Red teaming",
+      "summary": "Manual and automated red teaming, threat models and responsible disclosure.",
+      "requires": [
+        "safety-alignment/robustness-jailbreaks",
+        "evaluation/capability-evaluations"
+      ]
+    },
+    {
+      "slug": "scalable-oversight",
+      "title": "Scalable oversight",
+      "summary": "Supervising models on tasks people cannot easily check: debate, amplification and weak-to-strong generalisation.",
+      "requires": [
+        "safety-alignment/alignment-problem"
+      ]
+    },
+    {
+      "slug": "deception-misalignment",
+      "title": "Deception and misaligned behaviour",
+      "summary": "Situational awareness, deceptive alignment, sandbagging and how researchers study them.",
+      "requires": [
+        "safety-alignment/scalable-oversight",
+        "safety-alignment/reward-hacking"
+      ]
+    },
+    {
+      "slug": "monitoring-control",
+      "title": "Monitoring and control",
+      "summary": "Monitoring model behaviour, monitoring chains of thought, and safeguards for deployed systems.",
+      "requires": [
+        "safety-alignment/deception-misalignment"
+      ]
+    },
+    {
+      "slug": "safety-frameworks",
+      "title": "Safety frameworks and governance",
+      "summary": "Responsible scaling policies, frontier-risk evaluations and the role of regulation.",
+      "requires": [
+        "safety-alignment/monitoring-control",
+        "evaluation/capability-evaluations"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

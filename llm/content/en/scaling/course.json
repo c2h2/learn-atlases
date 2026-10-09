@@ -7,56 +7,7 @@
   "order": 110,
   "tagline": "Scaling laws, compute budgets, parallelism, low-precision training and hardware",
   "summary": "Language models improve predictably with scale. This course studies empirical scaling laws and compute-optimal training, estimates the FLOPs and memory of training runs, and explains how data, tensor, pipeline and expert parallelism, sharded optimisers and low-precision arithmetic spread training across thousands of accelerators.",
-  "overview": {
-    "overview": [
-      "Scaling is the central empirical finding of LLM research: capability emerges from parameters, data, and compute. This course covers scaling laws, emergent capabilities, and their limits.",
-      "The key insight is that the Chinchilla correction \u2014 compute-optimal training requires more data \u2014 was a key lesson. Emergent abilities appear non-linearly."
-    ],
-    "outcomes": [
-      "Explain Kaplan and Chinchilla scaling laws.",
-      "Describe emergent capabilities and the predictability problem.",
-      "Analyze diminishing returns and environmental limits of scaling.",
-      "Evaluate compute-optimal training and data quality trade-offs."
-    ],
-    "history": [
-      {
-        "year": 2020,
-        "title": "Kaplan scaling laws",
-        "detail": "Kaplan et al. showed loss scales as a power law with parameters, data, and compute.",
-        "people": [
-          "Kaplan"
-        ]
-      },
-      {
-        "year": 2022,
-        "title": "Chinchilla",
-        "detail": "Hoffmann et al. revised compute-optimal training: equal token and parameter scaling.",
-        "people": [
-          "Hoffmann"
-        ]
-      },
-      {
-        "year": 2022,
-        "title": "Emergent abilities",
-        "detail": "Wei et al. showed some abilities appear abruptly at scale.",
-        "people": [
-          "Wei"
-        ]
-      }
-    ],
-    "references": [
-      {
-        "title": "Scaling Laws for Neural Language Models",
-        "authors": "Kaplan et al.",
-        "year": 2020
-      },
-      {
-        "title": "Training Compute-Optimal LLMs",
-        "authors": "Hoffmann et al.",
-        "year": 2022
-      }
-    ]
-  },
+  "overview": [],
   "prerequisites": [
     "pretraining"
   ],

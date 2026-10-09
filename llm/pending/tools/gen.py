@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+raise SystemExit("Retired: this script generated placeholder lessons; see pending/README.md. Lessons are written by hand.")
 """Fill llm courses from the proven anatomy lesson template.
 
 The template (a lesson that passes the llm validator: words>=2500, core>=3,

@@ -7,19 +7,11 @@
   "order": 50,
   "tagline": "Electrostatics, magnetostatics, Maxwell’s equations, plane waves and transmission lines",
   "summary": "Circuit theory is an approximation to electromagnetism. This course develops static electric and magnetic fields, capacitance and inductance, Faraday’s law and Maxwell’s equations, and the propagation, reflection and guiding of electromagnetic waves, ending with transmission lines.",
-  "overview": [
-    "Every field in the machine and the circuit is one electromagnetic field. This course follows the field from the vector to the wave: vector analysis, the electrostatic and magnetostatic fields, the boundary value problem that makes it a field, Maxwells equations, the waves and the transmission lines that carry the field.",
-    "We build each field from the basic equation, and then study how the field moves the charge and the energy."
-  ],
+  "overview": [],
   "prerequisites": [
     "circuits-2"
   ],
-  "outcomes": [
-    "Use the vector notation for the field, and the divergence and the curl and the boundary of the field",
-    "Solve the electrostatic and the magnetostatic field of the charge and the current",
-    "Set up the boundary value problem of the field in the medium and the one that the limit is for",
-    "Solve Maxwells equations and the wave and the wave of the transmission line"
-  ],
+  "outcomes": [],
   "chapters": [
     {
       "slug": "vector-analysis",
@@ -101,71 +93,8 @@
       ]
     }
   ],
-  "history": [
-    {
-      "year": 1820,
-      "title": "Oersteds discovery",
-      "detail": "Oersted showed that the current and the one that the field is for is for, and the one that the magnet is for is for, and the one that the limit is for.",
-      "people": [
-        "Oersted"
-      ]
-    },
-    {
-      "year": 1820,
-      "title": "Ampere",
-      "detail": "Ampere set the law of the current and the one that the field is for is for, and the force and the one that the limit is for.",
-      "people": [
-        "Ampere"
-      ]
-    },
-    {
-      "year": 1831,
-      "title": "Faradays law",
-      "detail": "Faraday showed that the changing field and the one that the limit is for is for the current, and the one that the machine is for is for.",
-      "people": [
-        "Faraday"
-      ]
-    },
-    {
-      "year": 1865,
-      "title": "Maxwell",
-      "detail": "Maxwell set the equations of the field and the wave, and the one that the limit is for is for.",
-      "people": [
-        "Maxwell"
-      ]
-    },
-    {
-      "year": 1887,
-      "title": "Heavysides",
-      "detail": "Heavysides set the vector of the field and the wave, and the one that the limit is for is for.",
-      "people": [
-        "Heavysides"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "title": "Engineering Electromagnetics",
-      "authors": "Hayt and Buck",
-      "year": 2008,
-      "note": "The standard reference for the field and the boundary and the wave.",
-      "slug": "hayt"
-    },
-    {
-      "title": "Fields and Waves",
-      "authors": "Sadiku",
-      "year": 2009,
-      "note": "A quantified and design-oriented treatment.",
-      "slug": "sadiku"
-    },
-    {
-      "title": "Elements of Electromagnetics",
-      "authors": "Ulaby",
-      "year": 2015,
-      "note": "A physics and design of the field and the wave.",
-      "slug": "ulaby"
-    }
-  ],
+  "history": [],
+  "references": [],
   "next": [
     "rf-microwave",
     "photonics",

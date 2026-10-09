@@ -1,0 +1,123 @@
+{
+  "slug": "ml-fundamentals",
+  "title": "Machine Learning Fundamentals",
+  "full_title": "Machine Learning Fundamentals",
+  "area": "foundations",
+  "level": 1,
+  "order": 20,
+  "tagline": "Supervised learning, loss functions, generalisation, regularisation and evaluation",
+  "summary": "Before neural networks come the ideas that govern all of machine learning: learning a function from examples, choosing a loss, fitting by optimisation and making sure the result generalises. This course develops them with linear and logistic regression, evaluation metrics and the bias\u2013variance trade-off.",
+  "overview": {
+    "overview": [
+      "ML fundamentals cover supervised learning, generalization, bias-variance, and model evaluation. This course provides the conceptual foundations for understanding LLMs.",
+      "The key insight is that LLMs generalize via scale, but the underlying learning principles remain the same."
+    ],
+    "outcomes": [
+      "Explain supervised learning and loss functions.",
+      "Describe the bias-variance trade-off and overfitting.",
+      "Analyze generalization and the double descent phenomenon.",
+      "Evaluate model selection and cross-validation methods."
+    ],
+    "history": [
+      {
+        "year": 2019,
+        "title": "Double descent",
+        "detail": "Belkin et al. showed test error can decrease again after overparameterization.",
+        "people": [
+          "Belkin"
+        ]
+      },
+      {
+        "year": 2020,
+        "title": "Neural scaling laws",
+        "detail": "Kaplan et al. showed loss scales as a power law with model size.",
+        "people": [
+          "Kaplan"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Reconciling Modern Machine-Learning Practice",
+        "authors": "Belkin et al.",
+        "year": 2019
+      },
+      {
+        "title": "Scaling Laws for Neural Language Models",
+        "authors": "Kaplan et al.",
+        "year": 2020
+      }
+    ]
+  },
+  "prerequisites": [
+    "math-for-ml"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "learning-problem",
+      "title": "The learning problem",
+      "summary": "Data, hypotheses, losses and risk; supervised, unsupervised and self-supervised learning.",
+      "requires": [
+        "math-for-ml/probability"
+      ]
+    },
+    {
+      "slug": "linear-regression",
+      "title": "Linear regression",
+      "summary": "Least squares, the normal equations, the probabilistic view and gradient-based fitting.",
+      "requires": [
+        "ml-fundamentals/learning-problem",
+        "math-for-ml/optimisation"
+      ]
+    },
+    {
+      "slug": "logistic-regression",
+      "title": "Classification and logistic regression",
+      "summary": "The logistic and softmax functions, the cross-entropy loss and multiclass classification.",
+      "requires": [
+        "ml-fundamentals/linear-regression",
+        "math-for-ml/information-theory"
+      ]
+    },
+    {
+      "slug": "generalisation",
+      "title": "Generalisation",
+      "summary": "Training, validation and test sets, overfitting, the bias\u2013variance trade-off and double descent.",
+      "requires": [
+        "ml-fundamentals/linear-regression"
+      ]
+    },
+    {
+      "slug": "regularisation",
+      "title": "Regularisation",
+      "summary": "Weight decay, early stopping, data augmentation and the Bayesian view of priors.",
+      "requires": [
+        "ml-fundamentals/generalisation"
+      ]
+    },
+    {
+      "slug": "evaluation-metrics",
+      "title": "Evaluation and metrics",
+      "summary": "Accuracy, precision and recall, calibration, confidence intervals and comparing models fairly.",
+      "requires": [
+        "ml-fundamentals/logistic-regression",
+        "math-for-ml/estimation"
+      ]
+    },
+    {
+      "slug": "representations",
+      "title": "Features and representations",
+      "summary": "Feature engineering, kernels, embeddings and the idea of learning representations.",
+      "requires": [
+        "ml-fundamentals/logistic-regression"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "neural-networks",
+    "text-and-language"
+  ]
+}

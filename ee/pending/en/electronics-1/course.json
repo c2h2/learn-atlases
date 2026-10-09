@@ -1,0 +1,154 @@
+{
+  "slug": "electronics-1",
+  "title": "Electronics I: Analog Circuits",
+  "full_title": "Electronics I: Diodes, MOSFETs, BJT, and Amplifier Design",
+  "area": "electronics",
+  "level": 2,
+  "order": 6,
+  "tagline": "Diode, transistor, and amplifier design.",
+  "summary": "Electronics turns devices into useful circuits. This course models diodes and transistors for circuit design, biases MOSFET and BJT amplifiers, analyses single- and multistage amplifiers with small-signal models, and introduces current mirrors, differential pairs and the frequency response of amplifiers.",
+  "overview": [
+    "Analog electronics is the one that the diode and the transistor and the amplifier is for, of the signal, and the one that the limit is for. From the diode and the rectifier, through the bias and the small signal, to the amplifier and the frequency, and the one that the design is for.",
+    "The diode and the rectifier. The bias and the small signal. The amplifier and the frequency. The design and the limit. This course is the one that the analog is for, of the design, and the one that the limit is for."
+  ],
+  "prerequisites": [
+    "circuits-1",
+    "signals-systems"
+  ],
+  "outcomes": [
+    "Use the diode and the rectifier, together, for a power stage.",
+    "Use the bias and the small signal, together, for a transistor stage.",
+    "Use the amplifier and the frequency, together, for a system.",
+    "Use the current mirror and the differential, together, for a design."
+  ],
+  "chapters": [
+    {
+      "slug": "diode-circuits",
+      "title": "Diode circuits",
+      "summary": "Diode models, rectifiers, peak detectors, clippers, clampers and Zener regulators.",
+      "requires": [
+        "semiconductor-devices/pn-junction",
+        "circuits-1/resistive-circuits"
+      ]
+    },
+    {
+      "slug": "mosfet-circuits",
+      "title": "MOSFET circuits and biasing",
+      "summary": "Large-signal MOSFET models, DC analysis and biasing networks, and the MOSFET as a switch and as an amplifier.",
+      "requires": [
+        "semiconductor-devices/field-effect-transistor",
+        "electronics-1/diode-circuits"
+      ]
+    },
+    {
+      "slug": "bjt-circuits",
+      "title": "BJT circuits and biasing",
+      "summary": "Large-signal BJT models, DC analysis, bias stability, and the BJT as a switch and as an amplifier.",
+      "requires": [
+        "semiconductor-devices/bipolar-transistor",
+        "electronics-1/diode-circuits"
+      ]
+    },
+    {
+      "slug": "small-signal-amplifiers",
+      "title": "Small-signal models and amplifier basics",
+      "summary": "Small-signal equivalent circuits, voltage gain, input and output resistance, and amplifier models.",
+      "requires": [
+        "electronics-1/mosfet-circuits",
+        "electronics-1/bjt-circuits"
+      ]
+    },
+    {
+      "slug": "single-stage-amplifiers",
+      "title": "Single-stage amplifiers",
+      "summary": "Common-source and common-emitter, common-gate and common-base, and source- and emitter-follower amplifiers.",
+      "requires": [
+        "electronics-1/small-signal-amplifiers"
+      ]
+    },
+    {
+      "slug": "multistage-amplifiers",
+      "title": "Multistage amplifiers",
+      "summary": "Cascading stages, the cascode, Darlington pairs and the design of amplifier chains.",
+      "requires": [
+        "electronics-1/single-stage-amplifiers"
+      ]
+    },
+    {
+      "slug": "current-mirrors",
+      "title": "Current sources and mirrors",
+      "summary": "Current mirrors and improved mirrors, current sources as active loads, and biasing in integrated circuits.",
+      "requires": [
+        "electronics-1/single-stage-amplifiers"
+      ]
+    },
+    {
+      "slug": "differential-amplifiers",
+      "title": "Differential amplifiers",
+      "summary": "The differential pair, differential and common-mode gain, common-mode rejection, active loads and mismatch.",
+      "requires": [
+        "electronics-1/current-mirrors"
+      ]
+    },
+    {
+      "slug": "amplifier-frequency-response",
+      "title": "Frequency response of amplifiers",
+      "summary": "Low- and high-frequency transistor models, the Miller effect, open-circuit time constants and amplifier bandwidth.",
+      "requires": [
+        "electronics-1/multistage-amplifiers",
+        "circuits-2/frequency-response"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1947,
+      "title": "The transistor",
+      "detail": "The point, and the transistor, and the one that the solid state is for.",
+      "people": [
+        "Bardeen",
+        "Brattain",
+        "Shockley"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "The integrated circuit",
+      "detail": "The circuit, and the transistor, and the limiter, and the one that the amplifier is for.",
+      "people": [
+        "Kilby",
+        "Noyce"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Micron and the amplifier",
+      "detail": "The amplifier, and the gain, and the limit, and the one that the design is for."
+    }
+  ],
+  "references": [
+    {
+      "title": "Microelectronic Circuits",
+      "authors": "Sedra and Smith",
+      "year": 2015,
+      "note": "The diode, the transistor, and the amplifier, and the one that the design is for."
+    },
+    {
+      "title": "Electronics",
+      "authors": "R. Floyd",
+      "year": 2012,
+      "note": "The diode and the transistor, and the one that the limit is for."
+    },
+    {
+      "title": "Electronics",
+      "authors": "R. Floyd",
+      "year": 2012,
+      "note": "The diode and the transistor, and the one that the limit is for."
+    }
+  ],
+  "next": [
+    "electronics-2",
+    "power-electronics",
+    "instrumentation"
+  ]
+}

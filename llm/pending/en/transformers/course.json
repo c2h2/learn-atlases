@@ -1,0 +1,139 @@
+{
+  "slug": "transformers",
+  "title": "The Transformer",
+  "full_title": "The Transformer",
+  "area": "language",
+  "level": 2,
+  "order": 60,
+  "tagline": "Self-attention, multi-head attention, positional encodings, the Transformer block and its variants",
+  "summary": "Since 2017 the Transformer has been the architecture of language models. This course derives self-attention and multi-head attention, positional encodings, the residual Transformer block, the encoder, decoder and encoder\u2013decoder variants, the cost of attention, and the efficient and sparse variants used at scale.",
+  "overview": {
+    "overview": [
+      "The transformer architecture \u2014 attention, positional encoding, and feedforward layers \u2014 is the backbone of all modern LLMs. This course covers multi-head attention and the transformer block.",
+      "Scaled dot-product attention with multiple heads allows each layer to mix information from arbitrary input positions. Residual connections and layer normalization stabilize deep stacks."
+    ],
+    "outcomes": [
+      "Trace the transformer block forward pass: Q, K, V, softmax, residual, norm.",
+      "Explain multi-head attention and why multiple heads help.",
+      "Compare positional encoding schemes: sinusoidal, learned, RoPE.",
+      "Describe causal masking and its role in autoregressive generation."
+    ],
+    "history": [
+      {
+        "year": 2017,
+        "title": "Attention is All You Need",
+        "detail": "Vaswani et al. introduced the transformer, replacing recurrence with attention.",
+        "people": [
+          "Vaswani"
+        ]
+      },
+      {
+        "year": 2019,
+        "title": "RoPE",
+        "detail": "Su et al. introduced rotary positional embeddings for length extrapolation.",
+        "people": [
+          "Su"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "FlashAttention",
+        "detail": "Dao et al. introduced IO-aware attention for faster training and inference.",
+        "people": [
+          "Dao"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017
+      },
+      {
+        "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+        "authors": "Su et al.",
+        "year": 2021
+      }
+    ]
+  },
+  "prerequisites": [
+    "sequence-models"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "self-attention",
+      "title": "Self-attention",
+      "summary": "Queries, keys and values, scaled dot-product attention and attention as a weighted average.",
+      "requires": [
+        "sequence-models/attention-mechanism",
+        "math-for-ml/vectors-matrices"
+      ]
+    },
+    {
+      "slug": "multi-head-attention",
+      "title": "Multi-head attention",
+      "summary": "Heads and projections, causal masking and the shapes of attention computations.",
+      "requires": [
+        "transformers/self-attention"
+      ]
+    },
+    {
+      "slug": "positional-encoding",
+      "title": "Positional information",
+      "summary": "Sinusoidal and learned position embeddings, relative positions, RoPE and ALiBi.",
+      "requires": [
+        "transformers/self-attention"
+      ]
+    },
+    {
+      "slug": "transformer-block",
+      "title": "The Transformer block",
+      "summary": "The residual stream, layer normalisation and RMSNorm, feed-forward layers and gated activations such as SwiGLU.",
+      "requires": [
+        "transformers/multi-head-attention",
+        "neural-networks/initialisation-normalisation"
+      ]
+    },
+    {
+      "slug": "architecture-families",
+      "title": "Encoders, decoders and encoder\u2013decoders",
+      "summary": "BERT-style encoders, GPT-style decoders and T5-style encoder\u2013decoders, and what each is good for.",
+      "requires": [
+        "transformers/transformer-block"
+      ]
+    },
+    {
+      "slug": "attention-complexity",
+      "title": "The cost of attention",
+      "summary": "Quadratic cost in sequence length, memory traffic and FlashAttention.",
+      "requires": [
+        "transformers/multi-head-attention"
+      ]
+    },
+    {
+      "slug": "efficient-attention",
+      "title": "Efficient and long-context attention",
+      "summary": "Sparse, sliding-window and linear attention, and multi-query and grouped-query attention.",
+      "requires": [
+        "transformers/attention-complexity"
+      ]
+    },
+    {
+      "slug": "mixture-of-experts",
+      "title": "Mixture of experts",
+      "summary": "Sparse expert layers, routing, load balancing and the trade-offs of conditional computation.",
+      "requires": [
+        "transformers/transformer-block"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "pretraining",
+    "prompting-rag",
+    "interpretability"
+  ]
+}

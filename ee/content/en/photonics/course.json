@@ -7,19 +7,12 @@
   "order": 220,
   "tagline": "Optical waves, waveguides and fibres, light sources, photodetectors and optical communication",
   "summary": "Light carries most of the world’s data and converts sunlight into electricity. This course treats light as an electromagnetic wave, guides it in waveguides and optical fibres, and covers light-emitting diodes and lasers, photodetectors and receivers, optical communication systems and photovoltaics.",
-  "overview": [
-    "The light, and the one that the signal is for, is the one that the limit is for, and the one that the wavelength is for. This course follows the photon from the laser and the wave to the fiber and the one that the detector is for, and gives the method and the check that make it work.",
-    "We build the photon from the laser and the wave, and then study how the light moves and the one that the detector is for."
-  ],
+  "overview": [],
   "prerequisites": [
-    "electromagnetics"
+    "electromagnetics",
+    "semiconductor-devices"
   ],
-  "outcomes": [
-    "Describe the laser, and the one that the wavelength is for, of the light and the limit",
-    "Describe the fiber, and the one that the wave is for, in the limit",
-    "Describe the detector, and the one that the signal is for, in the light",
-    "Describe the modulator, and the one that the signal is for, in the limit"
-  ],
+  "outcomes": [],
   "chapters": [
     {
       "slug": "optical-waves",
@@ -51,7 +44,7 @@
       "title": "LEDs and lasers",
       "summary": "Light emission in semiconductors, light-emitting diodes, stimulated emission and semiconductor lasers.",
       "requires": [
-        "semiconductor-devices/pn-junction"
+        "semiconductor-devices/diodes-photonic-devices"
       ]
     },
     {
@@ -76,54 +69,11 @@
       "title": "Photovoltaics",
       "summary": "Solar-cell physics, efficiency limits, modules and photovoltaic systems.",
       "requires": [
-        "semiconductor-devices/pn-junction"
+        "semiconductor-devices/diodes-photonic-devices"
       ]
     }
   ],
-  "history": [
-    {
-      "year": 1960,
-      "title": "The laser",
-      "detail": "The laser and the one that the light is for, is the one that the limit is for, of the wave.",
-      "people": [
-        "Maiman"
-      ]
-    },
-    {
-      "year": 1970,
-      "title": "The fiber",
-      "detail": "The fiber and the one that the light is for, is the one that the limit is for, of the wave.",
-      "people": "Kao"
-    },
-    {
-      "year": 1980,
-      "title": "The LED",
-      "detail": "The LED and the one that the light is for, is the one that the limit is for, of the signal.",
-      "people": "LED"
-    }
-  ],
-  "references": [
-    {
-      "title": "Fiber Optics",
-      "authors": "Keiser",
-      "year": 2019,
-      "note": "The standard reference for the fiber and the light.",
-      "slug": "keiser"
-    },
-    {
-      "title": "Photonics",
-      "authors": "Osgood",
-      "year": 2016,
-      "note": "A rigorous treatment of the laser and the wave.",
-      "slug": "osgood"
-    },
-    {
-      "title": "Optical Communications",
-      "authors": "Gershofer",
-      "year": 2018,
-      "note": "A practical treatment of the modulator and the detector.",
-      "slug": "gershofer"
-    }
-  ],
+  "history": [],
+  "references": [],
   "next": []
 }

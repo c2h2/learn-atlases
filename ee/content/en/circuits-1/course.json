@@ -1,172 +1,167 @@
 {
- "slug": "circuits-1",
- "title": "Circuit Analysis I",
- "full_title": "Circuit Analysis I: DC Circuits and Transients",
- "area": "circuits",
- "level": 1,
- "order": 10,
- "tagline": "Circuit laws, network theorems, op-amps and first- and second-order transients",
- "summary": "Electric circuits are the language of electrical engineering. This course develops the laws of Ohm and Kirchhoff, systematic nodal and mesh analysis, the network theorems, ideal operational amplifiers, and the transient behaviour of circuits with capacitors and inductors.",
- "overview": [
-  "Circuits are the skeleton of every electronic device. A **circuit** is a closed path along which charge can flow, and this course gives you the tools to predict exactly what happens in one: the currents, the voltages and the time-dependence, from the first instant a switch is closed until everything settles. We begin with the fundamental physical quantities — charge, current, voltage and power — and the two universal rules, Kirchhoff's current and voltage laws, from which every circuit result follows.",
-  "The course then builds the practical methods: reducing resistive networks to a single equivalent element, solving any linear network systematically by nodal and mesh analysis, applying the powerful network theorems (superposition, Thévenin, Norton, maximum power transfer), and using the operational amplifier to realise ideal mathematical operations. Finally we add energy storage through capacitors and inductors, and learn how real circuits behave in time — the natural and forced responses of first- and second-order networks, and how to analyse any of them with a computer.",
-  "What makes circuits hard is not any single formula but the discipline of modelling: choosing a consistent sign convention, identifying the independent variables, writing the right equations and checking units and magnitudes. We work toward that discipline throughout, with fully worked examples that show every step, and exercises that take you from routine calculations to design."
- ],
- "prerequisites": [],
- "outcomes": [
-  "Model real electronic components as ideal circuit elements and apply the passive sign convention consistently.",
-  "Reduce any resistive network to an equivalent resistance, voltage or current divider and solve it exactly.",
-  "Set up and solve any linear resistive network by nodal analysis, mesh analysis or a combination of both.",
-  "Apply superposition, Thévenin and Norton theorems and maximum power transfer to simplify analysis and guide design.",
-  "Analyse circuits containing ideal operational amplifiers and realise summing, difference and integrating transfer functions.",
-  "Derive and solve the differential equations governing first- and second-order circuits, including the step, natural and forced responses.",
-  "Choose component values so that a circuit meets a given specification, and interpret the results in terms of time constants and damping.",
-  "Use a circuit simulator to verify hand analysis and to explore behaviour that is tractable only numerically."
- ],
- "chapters": [
-  {
-   "slug": "basic-concepts",
-   "title": "Charge, current, voltage and power",
-   "summary": "Electric charge and current, voltage, power and energy, the passive sign convention, and ideal independent and dependent sources.",
-   "requires": []
-  },
-  {
-   "slug": "resistive-circuits",
-   "title": "Resistive circuits",
-   "summary": "Ohm’s law, Kirchhoff’s current and voltage laws, series and parallel resistors, and voltage and current dividers.",
-   "requires": [
-    "circuits-1/basic-concepts"
-   ]
-  },
-  {
-   "slug": "nodal-mesh",
-   "title": "Nodal and mesh analysis",
-   "summary": "Systematic analysis with node voltages and mesh currents, supernodes and supermeshes, and circuits with dependent sources.",
-   "requires": [
-    "circuits-1/resistive-circuits"
-   ]
-  },
-  {
-   "slug": "network-theorems",
-   "title": "Network theorems",
-   "summary": "Linearity and superposition, source transformations, Thévenin and Norton equivalents, and maximum power transfer.",
-   "requires": [
-    "circuits-1/nodal-mesh"
-   ]
-  },
-  {
-   "slug": "operational-amplifiers",
-   "title": "Operational amplifiers",
-   "summary": "The ideal op-amp model and the inverting, non-inverting, summing, difference and buffer amplifiers.",
-   "requires": [
-    "circuits-1/network-theorems"
-   ]
-  },
-  {
-   "slug": "capacitors-inductors",
-   "title": "Capacitors and inductors",
-   "summary": "Capacitance and inductance, stored energy, series and parallel combinations, and continuity of capacitor voltage and inductor current.",
-   "requires": [
-    "circuits-1/resistive-circuits"
-   ]
-  },
-  {
-   "slug": "first-order-circuits",
-   "title": "First-order circuits",
-   "summary": "Natural and step responses of RC and RL circuits, time constants, switched circuits and op-amp integrators.",
-   "requires": [
-    "circuits-1/capacitors-inductors",
-    "circuits-1/network-theorems"
-   ]
-  },
-  {
-   "slug": "second-order-circuits",
-   "title": "Second-order circuits",
-   "summary": "Series and parallel RLC circuits, the characteristic equation, and overdamped, critically damped and underdamped responses.",
-   "requires": [
-    "circuits-1/first-order-circuits"
-   ]
-  },
-  {
-   "slug": "circuit-simulation",
-   "title": "Computer-aided circuit analysis",
-   "summary": "Matrix formulation of circuit equations, modified nodal analysis, and how circuit simulators such as SPICE compute DC and transient solutions.",
-   "requires": [
-    "circuits-1/nodal-mesh",
-    "circuits-1/second-order-circuits"
-   ]
-  }
- ],
- "history": [
-  {
-   "year": 1800,
-   "title": "Volta's pile",
-   "detail": "The stacking of alternate metal and brined card produced the first steady source of electric current, creating the field in its own right.",
-   "people": [
-    "Alessandro Volta"
-   ]
-  },
-  {
-   "year": 1827,
-   "title": "Ohm's law",
-   "detail": "Georg Ohm published Die galvanische Kette, giving the relation between current, voltage and resistance in a quantitative form.",
-   "people": [
-    "Georg Ohm"
-   ]
-  },
-  {
-   "year": 1845,
-   "title": "Kirchhoff's laws",
-   "detail": "Kirchhoff formulated the current and voltage conservation laws, providing the two equations that underlie all network analysis.",
-   "people": [
-    "Gustav Kirchhoff"
-   ]
-  },
-  {
-   "year": 1883,
-   "title": "Thévenin's theorem",
-   "detail": "The idea of replacing any linear network by a voltage source and resistance, later generalised by Norton, became a cornerstone of circuit design.",
-   "people": [
-    "Léon Charles Thévenin"
-   ]
-  },
-  {
-   "year": 1965,
-   "title": "SPICE",
-   "detail": "The Simulation Program with Integration Circuits appeared at UC Berkeley; it is the ancestor of essentially every circuit simulator used today.",
-   "people": [
-    "Lucien Chua"
-   ]
-  }
- ],
- "references": [
-  {
-   "title": "Fundamentals of Electric Circuits",
-   "authors": "Charles Alexander, Matthew Sadiku",
-   "year": 2019,
-   "note": "The standard first circuits text. Clear worked examples; the first three chapters map directly onto this course."
-  },
-  {
-   "title": "Electric Circuits",
-   "authors": "James Nilsson, Sullivan Riedel",
-   "year": 2019,
-   "note": "A more engineering-oriented treatment with strong emphasis on power and energy. Good for the AC-adjacent material."
-  },
-  {
-   "title": "Engineering Circuit Analysis",
-   "authors": "William Hayt, Jack Kemmerly, Stephen Durbin",
-   "year": 2018,
-   "note": "Rigorous and comprehensive; a good reference for nodal/mesh and operational amplifier coverage."
-  },
-  {
-   "title": "Linear Circuit Analysis",
-   "authors": "Ruth Leiser, James Kuffner",
-   "year": 1962,
-   "note": "Short and clear; useful for second-order and transient response intuition."
-  }
- ],
- "next": [
-  "circuits-2",
-  "semiconductor-devices"
- ]
+  "slug": "circuits-1",
+  "title": "Circuit Analysis I",
+  "full_title": "Circuit Analysis I: DC Circuits and Transients",
+  "area": "circuits",
+  "level": 1,
+  "order": 10,
+  "tagline": "Circuit laws, network theorems, op-amps and first- and second-order transients",
+  "summary": "Electric circuits are the language of electrical engineering. This course develops the laws of Ohm and Kirchhoff, systematic nodal and mesh analysis, the network theorems, ideal operational amplifiers, and the transient behaviour of circuits with capacitors and inductors.",
+  "overview": [
+    "Circuits are the skeleton of every electronic device. A **circuit** is a closed path along which charge can flow, and this course gives you the tools to predict exactly what happens in one: the currents, the voltages and the time-dependence, from the first instant a switch is closed until everything settles. We begin with the fundamental physical quantities — charge, current, voltage and power — and the two universal rules, Kirchhoff's current and voltage laws, from which every circuit result follows.",
+    "The course then builds the practical methods: reducing resistive networks to a single equivalent element, solving any linear network systematically by nodal and mesh analysis, applying the powerful network theorems (superposition, Thévenin, Norton, maximum power transfer), and using the operational amplifier to realise ideal mathematical operations. Finally we add energy storage through capacitors and inductors, and learn how real circuits behave in time — the natural and forced responses of first- and second-order networks, and how to analyse any of them with a computer.",
+    "What makes circuits hard is not any single formula but the discipline of modelling: choosing a consistent sign convention, identifying the independent variables, writing the right equations and checking units and magnitudes. We work toward that discipline throughout, with fully worked examples that show every step, and exercises that take you from routine calculations to design."
+  ],
+  "prerequisites": [],
+  "outcomes": [
+    "Model real electronic components as ideal circuit elements and apply the passive sign convention consistently.",
+    "Reduce any resistive network to an equivalent resistance, voltage or current divider and solve it exactly.",
+    "Set up and solve any linear resistive network by nodal analysis, mesh analysis or a combination of both.",
+    "Apply superposition, Thévenin and Norton theorems and maximum power transfer to simplify analysis and guide design.",
+    "Analyse circuits containing ideal operational amplifiers and realise summing, difference and integrating transfer functions.",
+    "Derive and solve the differential equations governing first- and second-order circuits, including the step, natural and forced responses.",
+    "Choose component values so that a circuit meets a given specification, and interpret the results in terms of time constants and damping.",
+    "Use a circuit simulator to verify hand analysis and to explore behaviour that is tractable only numerically."
+  ],
+  "chapters": [
+    {
+      "slug": "basic-concepts",
+      "title": "Charge, current, voltage and power",
+      "summary": "Electric charge and current, voltage, power and energy, the passive sign convention, and ideal independent and dependent sources.",
+      "requires": []
+    },
+    {
+      "slug": "resistive-circuits",
+      "title": "Resistive circuits",
+      "summary": "Ohm’s law, Kirchhoff’s current and voltage laws, series and parallel resistors, and voltage and current dividers.",
+      "requires": [
+        "circuits-1/basic-concepts"
+      ]
+    },
+    {
+      "slug": "nodal-mesh",
+      "title": "Nodal and mesh analysis",
+      "summary": "Systematic analysis with node voltages and mesh currents, supernodes and supermeshes, and circuits with dependent sources.",
+      "requires": [
+        "circuits-1/resistive-circuits"
+      ]
+    },
+    {
+      "slug": "network-theorems",
+      "title": "Network theorems",
+      "summary": "Linearity and superposition, source transformations, Thévenin and Norton equivalents, and maximum power transfer.",
+      "requires": [
+        "circuits-1/nodal-mesh"
+      ]
+    },
+    {
+      "slug": "operational-amplifiers",
+      "title": "Operational amplifiers",
+      "summary": "The ideal op-amp model and the inverting, non-inverting, summing, difference and buffer amplifiers.",
+      "requires": [
+        "circuits-1/network-theorems"
+      ]
+    },
+    {
+      "slug": "capacitors-inductors",
+      "title": "Capacitors and inductors",
+      "summary": "Capacitance and inductance, stored energy, series and parallel combinations, and continuity of capacitor voltage and inductor current.",
+      "requires": [
+        "circuits-1/resistive-circuits"
+      ]
+    },
+    {
+      "slug": "first-order-circuits",
+      "title": "First-order circuits",
+      "summary": "Natural and step responses of RC and RL circuits, time constants, switched circuits and op-amp integrators.",
+      "requires": [
+        "circuits-1/capacitors-inductors",
+        "circuits-1/network-theorems"
+      ]
+    },
+    {
+      "slug": "second-order-circuits",
+      "title": "Second-order circuits",
+      "summary": "Series and parallel RLC circuits, the characteristic equation, and overdamped, critically damped and underdamped responses.",
+      "requires": [
+        "circuits-1/first-order-circuits"
+      ]
+    },
+    {
+      "slug": "circuit-simulation",
+      "title": "Computer-aided circuit analysis",
+      "summary": "Matrix formulation of circuit equations, modified nodal analysis, and how circuit simulators such as SPICE compute DC and transient solutions.",
+      "requires": [
+        "circuits-1/nodal-mesh",
+        "circuits-1/second-order-circuits"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1800,
+      "title": "Volta's pile",
+      "detail": "The stacking of alternate metal and brined card produced the first steady source of electric current, creating the field in its own right.",
+      "people": [
+        "Alessandro Volta"
+      ]
+    },
+    {
+      "year": 1827,
+      "title": "Ohm's law",
+      "detail": "Georg Ohm published Die galvanische Kette, giving the relation between current, voltage and resistance in a quantitative form.",
+      "people": [
+        "Georg Ohm"
+      ]
+    },
+    {
+      "year": 1845,
+      "title": "Kirchhoff's laws",
+      "detail": "Kirchhoff formulated the current and voltage conservation laws, providing the two equations that underlie all network analysis.",
+      "people": [
+        "Gustav Kirchhoff"
+      ]
+    },
+    {
+      "year": 1883,
+      "title": "Thévenin's theorem",
+      "detail": "Thévenin showed that a linear network seen from two terminals behaves as a single voltage source in series with a resistance. The dual form, a current source in parallel with a resistance, followed in 1926 (Norton, and independently Mayer).",
+      "people": [
+        "Léon Charles Thévenin"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "SPICE",
+      "detail": "Laurence Nagel and Donald Pederson at UC Berkeley released SPICE (Simulation Program with Integrated Circuit Emphasis), the ancestor of essentially every circuit simulator used today.",
+      "people": [
+        "Laurence Nagel",
+        "Donald Pederson"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Fundamentals of Electric Circuits",
+      "authors": "Charles Alexander, Matthew Sadiku",
+      "year": 2019,
+      "note": "The standard first circuits text. Clear worked examples; the first three chapters map directly onto this course."
+    },
+    {
+      "title": "Electric Circuits",
+      "authors": "James Nilsson, Susan Riedel",
+      "year": 2019,
+      "note": "A more engineering-oriented treatment with strong emphasis on power and energy. Good for the AC-adjacent material."
+    },
+    {
+      "title": "Engineering Circuit Analysis",
+      "authors": "William Hayt, Jack Kemmerly, Steven Durbin",
+      "year": 2018,
+      "note": "Rigorous and comprehensive; a good reference for nodal/mesh and operational amplifier coverage."
+    }
+  ],
+  "next": [
+    "circuits-2",
+    "semiconductor-devices"
+  ]
 }

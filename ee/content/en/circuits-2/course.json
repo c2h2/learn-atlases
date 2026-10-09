@@ -1,170 +1,171 @@
 {
- "slug": "circuits-2",
- "title": "Circuit Analysis II",
- "full_title": "Circuit Analysis II: AC Circuits and Frequency Response",
- "area": "circuits",
- "level": 1,
- "order": 30,
- "tagline": "Phasors, AC power, three-phase systems, transformers, frequency response and the Laplace transform",
- "summary": "Most electrical energy and most signals are sinusoidal or built from sinusoids. This course analyses circuits in the sinusoidal steady state with phasors, treats AC power and three-phase systems, magnetically coupled circuits, frequency response and filters, and analyses general circuits with the Laplace transform.",
- "overview": [
-  "Alternating current is the form in which electrical power is generated, transmitted and, in most of the world, delivered. The mathematics of AC does not add new physics, it re-expresses the same Kirchhoff laws and element laws in a frequency domain where the sine steady-state response of a linear circuit becomes an algebra in the complex plane. This course gives you that algebra, the phasor transformation, and applies it to AC power, three-phase systems, and the magnetically coupled circuits that are the basis of the transformer. It closes with the frequency-domain design of filters, and with the Laplace transform as the general tool of which the phasor is a special case.",
-  "The phasor method, in which a sinusoid of a single frequency is represented by a complex number and the element currents by complex impedances, turns the differential equations of the first-order and second-order transients into the algebra of complex numbers, and the AC analysis of the second chapter is exactly that application. The result is a powerful, exact method for the steady-state, and the price is the loss of the time dependence, that you only get the amplitude and phase of the steady response and not the transient to reach it.",
-  "The course is the bridge between the time-domain analysis of the first course and the transform-domain design of the later courses: the phasor is the Laplace transform evaluated on the imaginary axis, the three-phase system is the power system of the next course, and the filter design closes the loop on the frequency response that the phasor made explicit."
- ],
- "prerequisites": [
-  "circuits-1"
- ],
- "outcomes": [
-  "Represent sinusoids as phasors and use the impedance and admittance of the resistor, capacitor and inductor at a given frequency.",
-  "Solve any linear, single-frequency AC network by phasor analysis, the AC dual of the node and mesh methods of the first course.",
-  "Analyse and design three-phase systems, balanced and unbalanced, with the Y and the delta connections and the power of a polyphase network.",
-  "Analyse the coupled circuits and the transformer, including the ideal and the non-ideal models, and compute the power transfer between them.",
-  "Analyze the frequency response of a circuit and design its filters, the low-pass, high-pass, band-pass and band-stop, with the passive and the active forms.",
-  "Use the Laplace transform to solve the AC and transient problems in a single, general domain, and recognise the phasor as a special case of it.",
-  "Analyze two-port networks with the impedance, admittance, transmission, and scattering parameters, and their interrelations.",
-  "Choose between the time-domain, the phasor, and the transform-domain methods for a given AC problem, and understand that they are the same mathematics in three forms."
- ],
- "chapters": [
-  {
-   "slug": "sinusoids-phasors",
-   "title": "Sinusoids and phasors",
-   "summary": "Sinusoidal sources, phasors, impedance and admittance, and Kirchhoff’s laws in the phasor domain.",
-   "requires": [
-    "circuits-1/second-order-circuits"
-   ]
-  },
-  {
-   "slug": "ac-analysis",
-   "title": "Sinusoidal steady-state analysis",
-   "summary": "Nodal and mesh analysis, superposition, source transformation and Thévenin equivalents with phasors.",
-   "requires": [
-    "circuits-2/sinusoids-phasors",
-    "circuits-1/network-theorems"
-   ]
-  },
-  {
-   "slug": "ac-power",
-   "title": "AC power",
-   "summary": "Instantaneous and average power, RMS values, apparent, reactive and complex power, and power-factor correction.",
-   "requires": [
-    "circuits-2/ac-analysis"
-   ]
-  },
-  {
-   "slug": "three-phase-circuits",
-   "title": "Three-phase circuits",
-   "summary": "Balanced three-phase sources and loads, wye and delta connections, line and phase quantities, and three-phase power.",
-   "requires": [
-    "circuits-2/ac-power"
-   ]
-  },
-  {
-   "slug": "magnetically-coupled-circuits",
-   "title": "Magnetically coupled circuits",
-   "summary": "Mutual inductance and the dot convention, energy in coupled coils, and linear and ideal transformers.",
-   "requires": [
-    "circuits-2/ac-analysis"
-   ]
-  },
-  {
-   "slug": "frequency-response",
-   "title": "Frequency response",
-   "summary": "Transfer functions, Bode plots, series and parallel resonance, bandwidth and quality factor.",
-   "requires": [
-    "circuits-2/ac-analysis"
-   ]
-  },
-  {
-   "slug": "filters",
-   "title": "Passive and active filters",
-   "summary": "Low-pass, high-pass, band-pass and band-stop filters, first- and second-order active filters, and frequency and magnitude scaling.",
-   "requires": [
-    "circuits-2/frequency-response",
-    "circuits-1/operational-amplifiers"
-   ]
-  },
-  {
-   "slug": "laplace-circuit-analysis",
-   "title": "Laplace transform in circuit analysis",
-   "summary": "s-domain models of circuit elements with initial conditions, transfer functions, poles and zeros, and the complete response.",
-   "requires": [
-    "circuits-2/frequency-response",
-    "circuits-1/second-order-circuits"
-   ]
-  },
-  {
-   "slug": "two-port-networks",
-   "title": "Two-port networks",
-   "summary": "Impedance, admittance, hybrid and transmission parameters, their conversions and the interconnection of two-ports.",
-   "requires": [
-    "circuits-2/ac-analysis"
-   ]
-  }
- ],
- "history": [
-  {
-   "year": 1831,
-   "title": "Faraday's law",
-   "detail": "The law of induction is the basis of AC power and of the transformer, the magnetic coupling treated in this course.",
-   "people": [
-    "Michael Faraday"
-   ]
-  },
-  {
-   "year": 1892,
-   "title": "The polyphase system",
-   "detail": "The three-phase AC system, the standard of power transmission, is the subject of the three-phase chapter.",
-   "people": [
-    "Nikola Tesla"
-   ]
-  },
-  {
-   "year": 1903,
-   "title": "The impedance concept",
-   "detail": "The complex impedance and the phasor method of algebraic AC analysis were consolidated as the standard engineering method.",
-   "people": [
-    "Charles Steinmetz"
-   ]
-  },
-  {
-   "year": 1965,
-   "title": "The active filter",
-   "detail": "The operational amplifier and the active filter made the arbitrary-shape low-pass, high-pass and band-pass realisable on a single chip.",
-   "people": [
-    ""
-   ]
-  }
- ],
- "references": [
-  {
-   "title": "Electric Circuits",
-   "authors": "James Nilsson, Susan Riedel",
-   "year": 2019,
-   "note": "The standard for AC analysis, power and three-phase, with worked examples following the same method as this course."
-  },
-  {
-   "title": "Fundamentals of Electric Circuits",
-   "authors": "Charles Alexander, Matthew Sadiku",
-   "year": 2019,
-   "note": "A complementary treatment of the phasor and AC power, and the coupled circuits."
-  },
-  {
-   "title": "Engineering Circuit Analysis",
-   "authors": "William Hayt, Jack Kemmerly",
-   "year": 2018,
-   "note": "Rigorous on the frequency response, the filter design and the two-port networks."
-  },
-  {
-   "title": "Signals and Systems",
-   "authors": "Alan Oppenheim, Alan Willsky",
-   "year": 2010,
-   "note": "For the Laplace and frequency-domain methods that close the course."
-  }
- ],
- "next": [
-  "signals-systems",
-  "electronics-1",
-  "electromagnetics"
- ]
+  "slug": "circuits-2",
+  "title": "Circuit Analysis II",
+  "full_title": "Circuit Analysis II: AC Circuits and Frequency Response",
+  "area": "circuits",
+  "level": 1,
+  "order": 30,
+  "tagline": "Phasors, AC power, three-phase systems, transformers, frequency response and the Laplace transform",
+  "summary": "Most electrical energy and most signals are sinusoidal or built from sinusoids. This course analyses circuits in the sinusoidal steady state with phasors, treats AC power and three-phase systems, magnetically coupled circuits, frequency response and filters, and analyses general circuits with the Laplace transform.",
+  "overview": [
+    "Alternating current is the form in which electrical power is generated, transmitted and, in most of the world, delivered. The mathematics of AC does not add new physics, it re-expresses the same Kirchhoff laws and element laws in a frequency domain where the sine steady-state response of a linear circuit becomes an algebra in the complex plane. This course gives you that algebra, the phasor transformation, and applies it to AC power, three-phase systems, and the magnetically coupled circuits that are the basis of the transformer. It closes with the frequency-domain design of filters, and with the Laplace transform as the general tool of which the phasor is a special case.",
+    "The phasor method, in which a sinusoid of a single frequency is represented by a complex number and the element currents by complex impedances, turns the differential equations of the first-order and second-order transients into the algebra of complex numbers, and the AC analysis of the second chapter is exactly that application. The result is a powerful, exact method for the steady-state, and the price is the loss of the time dependence, that you only get the amplitude and phase of the steady response and not the transient to reach it.",
+    "The course is the bridge between the time-domain analysis of the first course and the transform-domain design of the later courses: the phasor is the Laplace transform evaluated on the imaginary axis, the three-phase system is the power system of the next course, and the filter design closes the loop on the frequency response that the phasor made explicit."
+  ],
+  "prerequisites": [
+    "circuits-1"
+  ],
+  "outcomes": [
+    "Represent sinusoids as phasors and use the impedance and admittance of the resistor, capacitor and inductor at a given frequency.",
+    "Solve any linear, single-frequency AC network by phasor analysis, the AC dual of the node and mesh methods of the first course.",
+    "Analyse balanced three-phase systems with wye and delta connections, and the power of a polyphase network.",
+    "Analyse the coupled circuits and the transformer, including the ideal and the non-ideal models, and compute the power transfer between them.",
+    "Analyse the frequency response of a circuit and design its filters: low-pass, high-pass, band-pass and band-stop, in passive and active forms.",
+    "Use the Laplace transform to solve the AC and transient problems in a single, general domain, and recognise the phasor as a special case of it.",
+    "Analyse two-port networks with impedance, admittance, hybrid and transmission parameters, convert between them and interconnect two-ports.",
+    "Choose between the time-domain, the phasor, and the transform-domain methods for a given AC problem, and understand that they are the same mathematics in three forms."
+  ],
+  "chapters": [
+    {
+      "slug": "sinusoids-phasors",
+      "title": "Sinusoids and phasors",
+      "summary": "Sinusoidal sources, phasors, impedance and admittance, and Kirchhoff’s laws in the phasor domain.",
+      "requires": [
+        "circuits-1/second-order-circuits"
+      ]
+    },
+    {
+      "slug": "ac-analysis",
+      "title": "Sinusoidal steady-state analysis",
+      "summary": "Nodal and mesh analysis, superposition, source transformation and Thévenin equivalents with phasors.",
+      "requires": [
+        "circuits-2/sinusoids-phasors",
+        "circuits-1/network-theorems"
+      ]
+    },
+    {
+      "slug": "ac-power",
+      "title": "AC power",
+      "summary": "Instantaneous and average power, RMS values, apparent, reactive and complex power, and power-factor correction.",
+      "requires": [
+        "circuits-2/ac-analysis"
+      ]
+    },
+    {
+      "slug": "three-phase-circuits",
+      "title": "Three-phase circuits",
+      "summary": "Balanced three-phase sources and loads, wye and delta connections, line and phase quantities, and three-phase power.",
+      "requires": [
+        "circuits-2/ac-power"
+      ]
+    },
+    {
+      "slug": "magnetically-coupled-circuits",
+      "title": "Magnetically coupled circuits",
+      "summary": "Mutual inductance and the dot convention, energy in coupled coils, and linear and ideal transformers.",
+      "requires": [
+        "circuits-2/ac-analysis"
+      ]
+    },
+    {
+      "slug": "frequency-response",
+      "title": "Frequency response",
+      "summary": "Transfer functions, Bode plots, series and parallel resonance, bandwidth and quality factor.",
+      "requires": [
+        "circuits-2/ac-analysis"
+      ]
+    },
+    {
+      "slug": "filters",
+      "title": "Passive and active filters",
+      "summary": "Low-pass, high-pass, band-pass and band-stop filters, first- and second-order active filters, and frequency and magnitude scaling.",
+      "requires": [
+        "circuits-2/frequency-response",
+        "circuits-1/operational-amplifiers"
+      ]
+    },
+    {
+      "slug": "laplace-circuit-analysis",
+      "title": "Laplace transform in circuit analysis",
+      "summary": "s-domain models of circuit elements with initial conditions, transfer functions, poles and zeros, and the complete response.",
+      "requires": [
+        "circuits-2/frequency-response",
+        "circuits-1/second-order-circuits"
+      ]
+    },
+    {
+      "slug": "two-port-networks",
+      "title": "Two-port networks",
+      "summary": "Impedance, admittance, hybrid and transmission parameters, their conversions and the interconnection of two-ports.",
+      "requires": [
+        "circuits-2/ac-analysis"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1831,
+      "title": "Faraday's law",
+      "detail": "The law of induction is the basis of AC power and of the transformer, the magnetic coupling treated in this course.",
+      "people": [
+        "Michael Faraday"
+      ]
+    },
+    {
+      "year": 1888,
+      "title": "The polyphase system",
+      "detail": "Tesla's patents on the polyphase system and the induction motor laid the basis of three-phase power, the standard of transmission and the subject of the three-phase chapter.",
+      "people": [
+        "Nikola Tesla"
+      ]
+    },
+    {
+      "year": 1893,
+      "title": "The impedance concept",
+      "detail": "Steinmetz presented complex numbers as the way to calculate alternating currents: the phasor and the complex impedance, which became the standard engineering method.",
+      "people": [
+        "Charles Steinmetz"
+      ]
+    },
+    {
+      "year": 1955,
+      "title": "The Sallen–Key filter",
+      "detail": "Sallen and Key published a practical active RC filter: an amplifier with a few resistors and capacitors gives second-order low-pass, high-pass and band-pass responses without inductors.",
+      "people": [
+        "R. P. Sallen",
+        "E. L. Key"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Electric Circuits",
+      "authors": "James Nilsson, Susan Riedel",
+      "year": 2019,
+      "note": "The standard for AC analysis, power and three-phase, with worked examples following the same method as this course."
+    },
+    {
+      "title": "Fundamentals of Electric Circuits",
+      "authors": "Charles Alexander, Matthew Sadiku",
+      "year": 2019,
+      "note": "A complementary treatment of the phasor and AC power, and the coupled circuits."
+    },
+    {
+      "title": "Engineering Circuit Analysis",
+      "authors": "William Hayt, Jack Kemmerly, Steven Durbin",
+      "year": 2018,
+      "note": "Rigorous on the frequency response, the filter design and the two-port networks."
+    },
+    {
+      "title": "Signals and Systems",
+      "authors": "Alan Oppenheim, Alan Willsky, S. Hamid Nawab",
+      "year": 1997,
+      "note": "For the Laplace and frequency-domain methods that close the course."
+    }
+  ],
+  "next": [
+    "signals-systems",
+    "electronics-1",
+    "electromagnetics"
+  ]
 }

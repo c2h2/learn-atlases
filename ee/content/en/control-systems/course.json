@@ -1,185 +1,105 @@
 {
- "slug": "control-systems",
- "title": "Control Systems",
- "full_title": "Control Systems Engineering",
- "area": "control",
- "level": 3,
- "order": 140,
- "tagline": "Modelling, transient response, stability, root locus, frequency response, compensation and state space",
- "summary": "Feedback lets a system follow commands and reject disturbances despite uncertainty. This course models dynamic systems, analyses their transient response and stability, designs controllers with the root-locus and frequency-response methods, introduces state-space models and state feedback, and implements controllers digitally.",
- "overview": [
-  "Control is the art of making a physical system behave in a chosen way by adjusting the effort applied to it. A motor that must hold a speed, a valve that must hold a flow, a satellite that must hold a pointing, all share the same structure, and that structure is the feedback loop. This course models those systems in the form that exposes their behaviour, the differential equation, or the transfer function that it gives, and it studies how the behaviour changes as the feedback is varied. It is the course that turns the circuit and mechanical models of the earlier courses into systems that can be designed rather than merely analysed.",
-  "The central tool is the feedback loop, and the central result is that the closed-loop behaviour is a function of the open-loop behaviour and the feedback, in a way that the open-loop alone does not reveal. The course develops the transient response, the stability, the root locus, the frequency response, the PID controller, the compensator, and the state-space method, each of which is a different view of the same closed-loop system. The state-space view, the one that generalises to the nonlinear and the multivariable, is the one that carries over to the digital and the modern control of the later courses.",
-  "What makes control hard is not the mathematics but the design judgement, the choice of the gain, the choice of the zero and the pole, the choice of the compensator, so that the closed loop meets the specification, the settling, the overshoot, the steady-state error, without becoming unstable. The course is built around that judgement, and around the tools, the root locus, the frequency response, the state-space, that make it possible to make the judgement with confidence rather than by trial."
- ],
- "prerequisites": [
-  "signals-systems"
- ],
- "outcomes": [
-  "Model a physical system as a differential equation and transfer function, and read the poles and zeros from it.",
-  "Analyse the closed-loop transient response, settling time, overshoot, rise time, steady-state error, from the closed-loop poles.",
-  "Test the stability of a closed-loop system by the Routh-Hurwitz criterion, and read the margin from it.",
-  "Use the root locus to design the gain and to place the closed-loop poles, and to see the effect of a zero or a pole.",
-  "Use the frequency response, the Bode and the Nyquist, to assess the gain and the phase margin, and to design the controller.",
-  "Design a PID controller, and understand the effect of the proportional, the integral, and the derivative, on the response.",
-  "Use lead and the lag compensator to meet a specification that the gain alone cannot meet.",
-  "Represent a multivariable system in state space, and use the pole-placement and the observer to design the feedback.",
-  "Analyse the digital and the sampled control, and the effect of the sample and the hold on the closed loop."
- ],
- "chapters": [
-  {
-   "slug": "modelling-dynamic-systems",
-   "title": "Modelling dynamic systems",
-   "summary": "Transfer functions and block diagrams of electrical, mechanical and electromechanical systems, and linearisation.",
-   "requires": [
-    "signals-systems/laplace-transform"
-   ]
-  },
-  {
-   "slug": "time-response",
-   "title": "Time response",
-   "summary": "First- and second-order responses, transient specifications, the effect of zeros and extra poles, and steady-state error.",
-   "requires": [
-    "control-systems/modelling-dynamic-systems"
-   ]
-  },
-  {
-   "slug": "stability",
-   "title": "Stability",
-   "summary": "Bounded-input bounded-output stability, the Routh–Hurwitz criterion and the stability of feedback systems.",
-   "requires": [
-    "control-systems/time-response"
-   ]
-  },
-  {
-   "slug": "root-locus",
-   "title": "Root locus",
-   "summary": "Sketching the root locus and using it to choose gains and design compensators.",
-   "requires": [
-    "control-systems/stability"
-   ]
-  },
-  {
-   "slug": "frequency-response-methods",
-   "title": "Frequency-response methods",
-   "summary": "Bode plots of open-loop systems, the Nyquist criterion, and gain and phase margins.",
-   "requires": [
-    "control-systems/stability",
-    "circuits-2/frequency-response"
-   ]
-  },
-  {
-   "slug": "pid-control",
-   "title": "PID control",
-   "summary": "Proportional, integral and derivative action, tuning rules, integrator windup and practical PID implementation.",
-   "requires": [
-    "control-systems/root-locus"
-   ]
-  },
-  {
-   "slug": "compensator-design",
-   "title": "Lead and lag compensation",
-   "summary": "Design of lead, lag and lead–lag compensators with the root locus and Bode plots.",
-   "requires": [
-    "control-systems/frequency-response-methods",
-    "control-systems/root-locus"
-   ]
-  },
-  {
-   "slug": "state-space-models",
-   "title": "State-space models",
-   "summary": "State equations, solutions with the matrix exponential, and controllability and observability.",
-   "requires": [
-    "control-systems/modelling-dynamic-systems"
-   ]
-  },
-  {
-   "slug": "state-feedback",
-   "title": "State feedback and observers",
-   "summary": "Pole placement, state observers, the separation principle and an introduction to optimal control.",
-   "requires": [
-    "control-systems/state-space-models"
-   ]
-  },
-  {
-   "slug": "digital-control",
-   "title": "Digital control",
-   "summary": "Sampled-data systems, discretisation of controllers, z-domain design and implementation effects.",
-   "requires": [
-    "control-systems/compensator-design",
-    "signals-systems/z-transform"
-   ]
-  }
- ],
- "history": [
-  {
-   "year": 1868,
-   "title": "The governor",
-   "detail": "The flywheel, and the flyball, and the one that the engine is for, is the one that the feedback is for, and the one that the control is for, and the earliest automatic one.",
-   "people": [
-    "James Watt"
-   ]
-  },
-  {
-   "year": 1932,
-   "title": "The servo",
-   "detail": "The hydraulic, and the one that the servo is for, and the one that the radar is for, is the one that the feedback is for, and the one that the control is for, and the modern one.",
-   "people": [
-    ""
-   ]
-  },
-  {
-   "year": 1948,
-   "title": "The block diagram",
-   "detail": "The block, and the one that the signal is for, and the one that the system is for, is the one that the control is for.",
-   "people": [
-    ""
-   ]
-  },
-  {
-   "year": 1952,
-   "title": "The root locus",
-   "detail": "The root, and the one that the pole is for, and the one that the gain is for, is the one that the Evarts, and the one that the locus is for, is for.",
-   "people": [
-    "Walter R. Evans"
-   ]
-  },
-  {
-   "year": 1960,
-   "title": "The state space",
-   "detail": "The state, and the one that the variable is for, and the one that the system is for, is the one that the modern, and the one that the multivariable is for, is for.",
-   "people": [
-    ""
-   ]
-  }
- ],
- "references": [
-  {
-   "title": "Control Systems Engineering",
-   "authors": "Norman Nise",
-   "year": 2020,
-   "note": "The standard for the transient, the root, and the frequency response, with the worked examples and the block diagram method."
-  },
-  {
-   "title": "Modern Control Engineering",
-   "authors": "Katsuhiko Ogata",
-   "year": 2010,
-   "note": "For the state space, and the pole placement, and the observer, and the digital and the sampled."
-  },
-  {
-   "title": "Feedback Control of Dynamic Systems",
-   "authors": "Gene Franklin, J. Powell, Abbas Fawazi",
-   "year": 2014,
-   "note": "For the root locus, and the frequency response, and the PID and the compensator."
-  },
-  {
-   "title": "Digital Control of Dynamic Systems",
-   "authors": "Albert Medvedev",
-   "year": 2012,
-   "note": "For the digital and the sampled control of the last lesson."
-  }
- ],
- "next": [
-  "power-electronics"
- ]
+  "slug": "control-systems",
+  "title": "Control Systems",
+  "full_title": "Control Systems Engineering",
+  "area": "control",
+  "level": 3,
+  "order": 140,
+  "tagline": "Modelling, transient response, stability, root locus, frequency response, compensation and state space",
+  "summary": "Feedback lets a system follow commands and reject disturbances despite uncertainty. This course models dynamic systems, analyses their transient response and stability, designs controllers with the root-locus and frequency-response methods, introduces state-space models and state feedback, and implements controllers digitally.",
+  "overview": [],
+  "prerequisites": [
+    "signals-systems"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "modelling-dynamic-systems",
+      "title": "Modelling dynamic systems",
+      "summary": "Transfer functions and block diagrams of electrical, mechanical and electromechanical systems, and linearisation.",
+      "requires": [
+        "signals-systems/laplace-transform"
+      ]
+    },
+    {
+      "slug": "time-response",
+      "title": "Time response",
+      "summary": "First- and second-order responses, transient specifications, the effect of zeros and extra poles, and steady-state error.",
+      "requires": [
+        "control-systems/modelling-dynamic-systems"
+      ]
+    },
+    {
+      "slug": "stability",
+      "title": "Stability",
+      "summary": "Bounded-input bounded-output stability, the Routh–Hurwitz criterion and the stability of feedback systems.",
+      "requires": [
+        "control-systems/time-response"
+      ]
+    },
+    {
+      "slug": "root-locus",
+      "title": "Root locus",
+      "summary": "Sketching the root locus and using it to choose gains and design compensators.",
+      "requires": [
+        "control-systems/stability"
+      ]
+    },
+    {
+      "slug": "frequency-response-methods",
+      "title": "Frequency-response methods",
+      "summary": "Bode plots of open-loop systems, the Nyquist criterion, and gain and phase margins.",
+      "requires": [
+        "control-systems/stability",
+        "circuits-2/frequency-response"
+      ]
+    },
+    {
+      "slug": "pid-control",
+      "title": "PID control",
+      "summary": "Proportional, integral and derivative action, tuning rules, integrator windup and practical PID implementation.",
+      "requires": [
+        "control-systems/root-locus"
+      ]
+    },
+    {
+      "slug": "compensator-design",
+      "title": "Lead and lag compensation",
+      "summary": "Design of lead, lag and lead–lag compensators with the root locus and Bode plots.",
+      "requires": [
+        "control-systems/frequency-response-methods",
+        "control-systems/root-locus"
+      ]
+    },
+    {
+      "slug": "state-space-models",
+      "title": "State-space models",
+      "summary": "State equations, solutions with the matrix exponential, and controllability and observability.",
+      "requires": [
+        "control-systems/modelling-dynamic-systems"
+      ]
+    },
+    {
+      "slug": "state-feedback",
+      "title": "State feedback and observers",
+      "summary": "Pole placement, state observers, the separation principle and an introduction to optimal control.",
+      "requires": [
+        "control-systems/state-space-models"
+      ]
+    },
+    {
+      "slug": "digital-control",
+      "title": "Digital control",
+      "summary": "Sampled-data systems, discretisation of controllers, z-domain design and implementation effects.",
+      "requires": [
+        "control-systems/compensator-design",
+        "signals-systems/z-transform"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "power-electronics"
+  ]
 }

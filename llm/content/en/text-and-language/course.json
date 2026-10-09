@@ -6,58 +6,8 @@
   "level": 1,
   "order": 40,
   "tagline": "Text as data, tokenisation, n-gram language models, perplexity and word embeddings",
-  "summary": "A language model assigns probabilities to text. This course starts from text as data, builds tokenisers, n-gram language models and their evaluation by perplexity, and learns word embeddings \u2014 the ideas on which neural language models are built.",
-  "overview": {
-    "overview": [
-      "Text is the input format of LLMs. This course covers tokenization (BPE, SentencePiece), text preprocessing, Unicode, and subword vocabulary design.",
-      "The key insight is that tokenization is an underappreciated source of model errors: byte-level BPE handles any Unicode string but can fragment words."
-    ],
-    "outcomes": [
-      "Explain BPE and SentencePiece tokenization algorithms.",
-      "Describe Unicode and normalization effects on tokenization.",
-      "Analyze the effect of tokenizer choice on model quality.",
-      "Evaluate subword vocabulary design and its impact on inference."
-    ],
-    "history": [
-      {
-        "year": 2016,
-        "title": "Byte-level BPE",
-        "detail": "Sennrich et al. introduced byte-level BPE for robust tokenization of any text.",
-        "people": [
-          "Sennrich"
-        ]
-      },
-      {
-        "year": 2018,
-        "title": "SentencePiece",
-        "detail": "Kudo and Richardson introduced SentencePiece, a subword tokenizer independent of preprocessing.",
-        "people": [
-          "Kudo",
-          "Richardson"
-        ]
-      },
-      {
-        "year": 2021,
-        "title": "Unigram LM",
-        "detail": "Kudo introduced the unigram LM tokenizer as a probabilistic alternative to BPE.",
-        "people": [
-          "Kudo"
-        ]
-      }
-    ],
-    "references": [
-      {
-        "title": "Neural Machine Translation of Rare Words with Subword Units",
-        "authors": "Sennrich et al.",
-        "year": 2016
-      },
-      {
-        "title": "SentencePiece",
-        "authors": "Kudo and Richardson",
-        "year": 2018
-      }
-    ]
-  },
+  "summary": "A language model assigns probabilities to text. This course starts from text as data, builds tokenisers, n-gram language models and their evaluation by perplexity, and learns word embeddings — the ideas on which neural language models are built.",
+  "overview": [],
   "prerequisites": [
     "math-for-ml",
     "ml-fundamentals"
@@ -67,7 +17,7 @@
     {
       "slug": "text-as-data",
       "title": "Text as data",
-      "summary": "Characters and Unicode, words and corpora, Zipf\u2019s law and the statistics of language.",
+      "summary": "Characters and Unicode, words and corpora, Zipf’s law and the statistics of language.",
       "requires": []
     },
     {

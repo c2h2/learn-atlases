@@ -1,117 +1,86 @@
 {
   "slug": "semiconductor-devices",
+  "title": "Semiconductor Devices",
   "full_title": "Semiconductor Devices",
-  "title": "SEMI",
-  "tagline": "From the crystal to the transistor: the device physics that makes every circuit work.",
   "area": "electronics",
-  "level": 3,
-  "order": 17,
-  "overview": [
-    "The device, and the one that the semiconductor is for, is the one that the limit is for, and the one that the current is for. This course follows the carrier and the field, and the one that the limit is for, to the junction and the transistor, and gives the method and the check that make it work.",
-    "We build the device from the crystal and the doping, and then study how the diode and the transistor, and the one that the limit is for, are for."
-  ],
+  "level": 2,
+  "order": 60,
+  "tagline": "Energy bands, carriers, pn junctions, bipolar transistors and MOSFETs",
+  "summary": "Transistors and diodes are made from semiconductors whose behaviour follows from quantum mechanics and statistics. This course builds the physics of carriers in crystals and uses it to explain pn junctions, bipolar junction transistors, MOS capacitors and MOSFETs, the devices on which all of modern electronics is built.",
+  "overview": [],
   "prerequisites": [
-    "electronics-1"
+    "circuits-1"
   ],
-  "outcomes": [
-    "Describe the band, and the one that the gap is for, in the limit",
-    "Describe the doping, and the one that the carrier is for, in the limit",
-    "Describe the diode, and the one that the junction is for, in the limit",
-    "Describe the transistor, and the one that the current is for, in the limit"
-  ],
+  "outcomes": [],
   "chapters": [
     {
-      "slug": "band-theory",
-      "title": "Band Theory",
-      "summary": "The bands, and the one that the gap is for, is the one that the limit is for."
+      "slug": "crystals-energy-bands",
+      "title": "Crystals and energy bands",
+      "summary": "Crystal lattices, electrons in a periodic potential, energy bands, and why metals, semiconductors and insulators differ.",
+      "requires": []
     },
     {
-      "slug": "doping-and-carriers",
-      "title": "Doping and Carriers",
-      "summary": "The doping, and the one that the carrier is for, is the one that the limit is for."
+      "slug": "carrier-statistics",
+      "title": "Carriers in equilibrium",
+      "summary": "Electrons and holes, density of states, the Fermi–Dirac distribution, intrinsic and doped semiconductors and the Fermi level.",
+      "requires": [
+        "semiconductor-devices/crystals-energy-bands"
+      ]
+    },
+    {
+      "slug": "carrier-transport",
+      "title": "Carrier transport",
+      "summary": "Drift and mobility, diffusion and the Einstein relation, generation and recombination, and the continuity equations.",
+      "requires": [
+        "semiconductor-devices/carrier-statistics"
+      ]
     },
     {
       "slug": "pn-junction",
-      "title": "The PN Junction",
-      "summary": "The junction, and the one that the diode is for, is the one that the limit is for."
+      "title": "The pn junction",
+      "summary": "The junction in equilibrium, the depletion approximation, the ideal diode equation, junction capacitance and breakdown.",
+      "requires": [
+        "semiconductor-devices/carrier-transport"
+      ]
     },
     {
-      "slug": "diode-circuits",
-      "title": "Diode Circuits",
-      "summary": "The circuit, and the one that the diode is for, is the one that the limit is for."
+      "slug": "diodes-photonic-devices",
+      "title": "Diodes, contacts and optoelectronic devices",
+      "summary": "Real diodes, Schottky and ohmic contacts, light-emitting diodes, photodiodes and solar cells.",
+      "requires": [
+        "semiconductor-devices/pn-junction"
+      ]
     },
     {
-      "slug": "bipolar-transistor",
-      "title": "The Bipolar Transistor",
-      "summary": "The transistor, and the one that the current is for, is the one that the limit is for."
-    },
-    {
-      "slug": "field-effect-transistor",
-      "title": "The Field-Effect Transistor",
-      "summary": "The FET, and the one that the channel is for, is the one that the limit is for."
+      "slug": "bipolar-transistors",
+      "title": "Bipolar junction transistors",
+      "summary": "Operation of the BJT, current gain, the Ebers–Moll model, the Early effect, and high-injection and frequency limits.",
+      "requires": [
+        "semiconductor-devices/pn-junction"
+      ]
     },
     {
       "slug": "mos-capacitor",
-      "title": "The MOS Capacitor",
-      "summary": "The capacitor, and the one that the oxide is for, is the one that the limit is for."
-    },
-    {
-      "slug": "device-scaling",
-      "title": "Device Scaling",
-      "summary": "The scaling, and the one that the limit is for, is the one that the node is for."
-    }
-  ],
-  "history": [
-    {
-      "year": 1948,
-      "title": "The transistor",
-      "detail": "The transistor and the one that the current is for, is the one that the limit is for.",
-      "people": [
-        "Bardeen",
-        "Brattain",
-        "Shocroe"
+      "title": "The MOS capacitor",
+      "summary": "The metal–oxide–semiconductor structure, accumulation, depletion and inversion, threshold voltage and C–V characteristics.",
+      "requires": [
+        "semiconductor-devices/pn-junction"
       ]
     },
     {
-      "year": 1959,
-      "title": "The integrated circuit",
-      "detail": "The circuit and the one that the transistor is for, is the one that the limit is for.",
-      "people": [
-        "Kilby",
-        "Noyce"
-      ]
-    },
-    {
-      "year": 1964,
-      "title": "MOSFET scaling",
-      "detail": "The scaling and the one that the node is for, is the one that the limit is for.",
-      "people": [
-        "Moore"
+      "slug": "mosfets",
+      "title": "MOSFETs",
+      "summary": "MOSFET operation and current–voltage characteristics, body effect, channel-length modulation, short-channel effects and scaling.",
+      "requires": [
+        "semiconductor-devices/mos-capacitor"
       ]
     }
   ],
-  "references": [
-    {
-      "title": "Physics of Semiconductor Devices",
-      "authors": "Sze and Ng",
-      "year": 2018,
-      "note": "The standard reference for the diode and the transistor.",
-      "slug": "sze"
-    },
-    {
-      "title": "Semiconductor Device Fundamentals",
-      "authors": "Streetman and Banerjee",
-      "year": 2016,
-      "note": "A clear treatment of the band and the carrier.",
-      "slug": "streetman"
-    },
-    {
-      "title": "Physics of Semiconductor Devices",
-      "authors": "Crowell",
-      "year": 2017,
-      "note": "A physics-based treatment of the junction and the channel.",
-      "slug": "crowell"
-    }
-  ],
-  "summary": "The device, and the one that the semiconductor is for, is the one that the limit is for, and the one that the current is for. This course covers the band, and the diode, and the transistor."
+  "history": [],
+  "references": [],
+  "next": [
+    "electronics-1",
+    "digital-ic",
+    "photonics"
+  ]
 }

@@ -1,3 +1,4 @@
+raise SystemExit("Retired: this script generated placeholder lessons; see pending/README.md. Lessons are written by hand.")
 import json, os, glob, hashlib
 
 # For each course, build a lexicon per chapter. Lexicon = {term: definition}.

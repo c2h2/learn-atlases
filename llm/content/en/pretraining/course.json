@@ -6,57 +6,8 @@
   "level": 2,
   "order": 70,
   "tagline": "Data, objectives, the training loop, stability and the families of pretrained models",
-  "summary": "A pretrained language model learns from trillions of tokens of text with a simple objective. This course covers how training data are collected, filtered and mixed, the causal and masked objectives, the training loop and its instabilities, evaluation during training, and the families of pretrained models from BERT and GPT to today\u2019s open and closed models.",
-  "overview": {
-    "overview": [
-      "Pretraining learns general representations from unlabeled text. This course covers data curation, training infrastructure, and scaling laws.",
-      "The key insight is that pretraining is the foundation: the model learns statistical structure that enables downstream tasks via prompting."
-    ],
-    "outcomes": [
-      "Explain data curation, deduplication, and quality filtering.",
-      "Describe training infrastructure: parallelism and checkpointing.",
-      "Analyze scaling laws and compute-optimal training.",
-      "Evaluate pretraining data mixtures and their effects."
-    ],
-    "history": [
-      {
-        "year": 2021,
-        "title": "The Pile",
-        "detail": "Gao et al. introduced The Pile, a 800GB diverse pretraining dataset.",
-        "people": [
-          "Gao"
-        ]
-      },
-      {
-        "year": 2022,
-        "title": "Chinchilla",
-        "detail": "Hoffmann et al. revised scaling laws: compute-optimal requires more data.",
-        "people": [
-          "Hoffmann"
-        ]
-      },
-      {
-        "year": 2023,
-        "title": "RedPajama",
-        "detail": "Together AI introduced RedPajama, an open pretraining dataset.",
-        "people": [
-          "Together"
-        ]
-      }
-    ],
-    "references": [
-      {
-        "title": "Training Compute-Optimal Large Language Models",
-        "authors": "Hoffmann et al.",
-        "year": 2022
-      },
-      {
-        "title": "The Pile: An 800GB Dataset of Diverse Text",
-        "authors": "Gao et al.",
-        "year": 2021
-      }
-    ]
-  },
+  "summary": "A pretrained language model learns from trillions of tokens of text with a simple objective. This course covers how training data are collected, filtered and mixed, the causal and masked objectives, the training loop and its instabilities, evaluation during training, and the families of pretrained models from BERT and GPT to today’s open and closed models.",
+  "overview": [],
   "prerequisites": [
     "transformers"
   ],

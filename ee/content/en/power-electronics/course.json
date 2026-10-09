@@ -7,28 +7,20 @@
   "order": 180,
   "tagline": "Power semiconductors, rectifiers, DC–DC converters, inverters and converter control",
   "summary": "Power electronics processes electrical energy efficiently with switches. This course covers power semiconductor devices, rectifiers, non-isolated and isolated DC–DC converters, inverters and pulse-width modulation, the dynamics and control of converters, magnetic and thermal design, and applications from phone chargers to motor drives and solar inverters.",
-  "overview": [
-    "The converter, and the one that the power is for, is the one that the limit is for, and the one that the switch is for. This course follows the power from the switch and the rectifier to the converter and the one that the inverter is for, and gives the method and the check that make it work.",
-    "We build the converter from the switch and the power, and then study how the current moves and the one that the switch is for."
-  ],
+  "overview": [],
   "prerequisites": [
     "electronics-1",
     "electric-machines",
     "control-systems"
   ],
-  "outcomes": [
-    "Describe the switch, and the one that the power is for, of the current and the limit",
-    "Describe the rectifier, and the one that the voltage is for, in the signal",
-    "Describe the converter, and the one that the current is for, in the limit",
-    "Describe the inverter, and the one that the waveform is for, in the limit"
-  ],
+  "outcomes": [],
   "chapters": [
     {
       "slug": "power-switches",
       "title": "Power semiconductor switches",
       "summary": "Power diodes, MOSFETs, IGBTs, thyristors and wide-bandgap devices, switching losses and gate drives.",
       "requires": [
-        "semiconductor-devices/field-effect-transistor",
+        "semiconductor-devices/mosfets",
         "electronics-1/diode-circuits"
       ]
     },
@@ -93,55 +85,8 @@
       ]
     }
   ],
-  "history": [
-    {
-      "year": 1958,
-      "title": "The transistor",
-      "detail": "The transistor and the one that the switch is for, is the one that the limit is for, of the power.",
-      "people": [
-        "transistor"
-      ]
-    },
-    {
-      "year": 1965,
-      "title": "The rectifier",
-      "detail": "The rectifier and the one that the voltage is for, is the one that the limit is for, of the signal.",
-      "people": [
-        "rectifier"
-      ]
-    },
-    {
-      "year": 1980,
-      "title": "The converter",
-      "detail": "The converter and the one that the current is for, is the one that the limit is for, of the power.",
-      "people": [
-        "converter"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "title": "Power Electronics",
-      "authors": "Rashid",
-      "year": 2016,
-      "note": "The standard reference for the converter and the switch.",
-      "slug": "rashid"
-    },
-    {
-      "title": "Power Electronics",
-      "authors": "Erickson and Maksimovic",
-      "year": 2001,
-      "note": "A rigorous treatment of the converter and the current.",
-      "slug": "erickson"
-    },
-    {
-      "title": "Power Electronics",
-      "authors": "Hart",
-      "year": 2011,
-      "note": "A practical treatment of the inverter and the waveform.",
-      "slug": "hart"
-    }
-  ],
+  "history": [],
+  "references": [],
   "next": [
     "power-systems"
   ]

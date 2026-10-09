@@ -7,21 +7,12 @@
   "order": 210,
   "tagline": "Transmission lines and the Smith chart, matching, waveguides, S-parameters, microwave circuits and antennas",
   "summary": "At high frequencies every wire is a transmission line. This course treats transmission lines and the Smith chart, impedance matching, waveguides, scattering parameters, passive microwave components, amplifier design and antennas, ending with the link budgets of radio and radar systems.",
-  "overview": [
-    "The high-frequency design, and the one that the limit is for, is for, in the line and the one that the wave is for. This course follows the impedance, and the one that the reflection is for, to the antenna and the one that the radiation is for, and gives the method and the check that make it work.",
-    "We build the system from the line and the matching, and then study how the scattering and the gain, and the one that the limit is for, are for."
-  ],
+  "overview": [],
   "prerequisites": [
     "electromagnetics",
     "circuits-2"
   ],
-  "outcomes": [
-    "Design the matching, and the one that the reflection is for, in the limit",
-    "Design the waveguide, and the one that the mode is for, in the limit",
-    "Read the scattering, and the one that the port is for, in the limit",
-    "Design the amplifier, and the one that the gain is for, in the limit",
-    "Design the antenna, and the one that the radiation is for, in the limit"
-  ],
+  "outcomes": [],
   "chapters": [
     {
       "slug": "lines-smith-chart",
@@ -91,54 +82,7 @@
       ]
     }
   ],
-  "history": [
-    {
-      "year": 1931,
-      "title": "Smith chart",
-      "detail": "The Smith chart and the one that the impedance is for, is the one that the reflection is for.",
-      "people": [
-        "Smith"
-      ]
-    },
-    {
-      "year": 1941,
-      "title": "Waveguide",
-      "detail": "The waveguide and the one that the frequency is for, is the one that the mode is for.",
-      "people": [
-        "waveguide"
-      ]
-    },
-    {
-      "year": 1960,
-      "title": "S-parameters",
-      "detail": "The parameters and the one that the port is for, is the one that the network is for.",
-      "people": [
-        "parameters"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "title": "Microwave Engineering",
-      "authors": "Pozar",
-      "year": 2020,
-      "note": "The standard reference for the line and the wave.",
-      "slug": "pozarmw"
-    },
-    {
-      "title": "Antennas",
-      "authors": "Balanis",
-      "year": 2019,
-      "note": "A rigorous treatment of the radiation and the pattern.",
-      "slug": "balanis"
-    },
-    {
-      "title": "RF Microelectronics",
-      "authors": "Razavi",
-      "year": 2018,
-      "note": "A practical treatment of the amplifier and the noise.",
-      "slug": "razavi"
-    }
-  ],
+  "history": [],
+  "references": [],
   "next": []
 }

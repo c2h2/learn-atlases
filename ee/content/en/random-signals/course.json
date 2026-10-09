@@ -1,139 +1,80 @@
 {
- "slug": "random-signals",
- "title": "Random Signals and Noise",
- "full_title": "Random Signals and Noise",
- "area": "signals",
- "level": 3,
- "order": 145,
- "tagline": "The random, and the one that the signal is for: probability, spectra and the Kalman filter, and the one that the limit is for",
- "summary": "The random signal, and the one that the limit is for, of the process and the spectrum and the noise and the one that the limit is for. The probability, and the one that the random is for, and the spectrum, and the one that the frequency is for, and the Gaussian, and the one that the noise is for, and the Kalman, and the one that the estimate is for, of the estimate.",
- "overview": [
-  "The random signal, and the one that the limit is for, is the one that the process is for, of the signal, and the one that the frequency is for. This course gives the probability, and the one that the random is for, and the spectrum, and the one that the frequency is for, and the noise, and the one that the Gaussian is for, and the Kalman, and the one that the estimate is for.",
-  "The method, and the check, are the one for the spectrum and the estimate and the limit. The random process, and the one that the limit is for, is the one that the random is for. The spectrum, and the one that the frequency is for, is the one that the power is for. The estimation, and the one that the Kalman is for, is the one that the state is for."
- ],
- "prerequisites": [
-  "signals-systems"
- ],
- "outcomes": [
-  "Use the probability, and the random process, and the PSD, and the LTI, together, for a channel.",
-  "Use the Wiener, and the LMMSE, and the Kalman, together, for a state space.",
-  "Use the prediction, and the update, and the gain, together, for a Kalman filter.",
-  "Use the Gaussian, and the Rayleigh, and the innovation, together, for a measurement."
- ],
- "chapters": [
-  {
-   "slug": "probability-for-engineers",
-   "title": "Probability for engineers",
-   "summary": "Random variables, distributions, expectation, joint distributions and functions of random variables.",
-   "requires": []
-  },
-  {
-   "slug": "random-processes",
-   "title": "Random processes",
-   "summary": "Ensembles and sample functions, mean and autocorrelation, stationarity and ergodicity.",
-   "requires": [
-    "random-signals/probability-for-engineers"
-   ]
-  },
-  {
-   "slug": "correlation-spectra",
-   "title": "Correlation and power spectral density",
-   "summary": "Autocorrelation and cross-correlation, the Wiener–Khinchin theorem and power spectral densities.",
-   "requires": [
-    "random-signals/random-processes",
-    "signals-systems/fourier-transform"
-   ]
-  },
-  {
-   "slug": "random-signals-lti",
-   "title": "Random signals in linear systems",
-   "summary": "Output mean, correlation and spectrum of LTI systems driven by random inputs, and noise-equivalent bandwidth.",
-   "requires": [
-    "random-signals/correlation-spectra",
-    "signals-systems/convolution"
-   ]
-  },
-  {
-   "slug": "gaussian-noise",
-   "title": "Gaussian processes and noise",
-   "summary": "Gaussian processes, white noise, thermal and shot noise, and bandpass noise.",
-   "requires": [
-    "random-signals/random-signals-lti"
-   ]
-  },
-  {
-   "slug": "optimal-filtering",
-   "title": "Optimal filtering",
-   "summary": "The matched filter and the Wiener filter.",
-   "requires": [
-    "random-signals/gaussian-noise"
-   ]
-  },
-  {
-   "slug": "estimation-kalman",
-   "title": "Estimation and the Kalman filter",
-   "summary": "Minimum mean-square-error estimation, least squares and the discrete Kalman filter.",
-   "requires": [
-    "random-signals/optimal-filtering"
-   ]
-  }
- ],
- "history": [
-  {
-   "year": 1900,
-   "title": "The random",
-   "detail": "The random, and the one that the limit is for, of the signal, and the one that the limit is for.",
-   "people": []
-  },
-  {
-   "year": 1948,
-   "title": "The spectrum",
-   "detail": "The power spectrum, and the one that the frequency is for, of the noise, and the one that the limit is for.",
-   "people": [
-    "Shannon"
-   ]
-  },
-  {
-   "year": 1960,
-   "title": "The Kalman",
-   "detail": "The Kalman filter, and the one that the estimate is for, of the state, and the one that the limit is for.",
-   "people": [
-    "Kalman"
-   ]
-  },
-  {
-   "year": 2000,
-   "title": "The modern",
-   "detail": "The random signal, and the one that the method is for, of the processing, and the one that the limit is for.",
-   "people": []
-  }
- ],
- "references": [
-  {
-   "title": "Random Data, Analysis and Measurement Procedures",
-   "authors": "Brady",
-   "year": 1975,
-   "note": "The spectrum and the estimate, and the one that the limit is for.",
-   "slug": ""
-  },
-  {
-   "title": "Stochastic Processes in Signal Processing",
-   "authors": "Bennett",
-   "year": 1960,
-   "note": "The random process, and the one that the limit is for.",
-   "slug": ""
-  },
-  {
-   "title": "Kalman Filtering",
-   "authors": "Savage",
-   "year": 1967,
-   "note": "The state estimate, and the one that the method is for.",
-   "slug": ""
-  }
- ],
- "next": [
-  "communication-systems",
-  "information-theory",
-  "dsp"
- ]
+  "slug": "random-signals",
+  "title": "Random Signals and Noise",
+  "full_title": "Random Signals and Noise",
+  "area": "signals",
+  "level": 3,
+  "order": 145,
+  "tagline": "Probability for engineers, random processes, correlation and power spectra, noise and optimal filtering",
+  "summary": "Noise limits every measurement and every communication link. This course reviews probability for engineers and develops random processes: stationarity, correlation functions and power spectral densities, random signals in linear systems, Gaussian and thermal noise, and the matched, Wiener and Kalman filters that extract signals from noise.",
+  "overview": [],
+  "prerequisites": [
+    "signals-systems"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "probability-for-engineers",
+      "title": "Probability for engineers",
+      "summary": "Random variables, distributions, expectation, joint distributions and functions of random variables.",
+      "requires": []
+    },
+    {
+      "slug": "random-processes",
+      "title": "Random processes",
+      "summary": "Ensembles and sample functions, mean and autocorrelation, stationarity and ergodicity.",
+      "requires": [
+        "random-signals/probability-for-engineers"
+      ]
+    },
+    {
+      "slug": "correlation-spectra",
+      "title": "Correlation and power spectral density",
+      "summary": "Autocorrelation and cross-correlation, the Wiener–Khinchin theorem and power spectral densities.",
+      "requires": [
+        "random-signals/random-processes",
+        "signals-systems/fourier-transform"
+      ]
+    },
+    {
+      "slug": "random-signals-lti",
+      "title": "Random signals in linear systems",
+      "summary": "Output mean, correlation and spectrum of LTI systems driven by random inputs, and noise-equivalent bandwidth.",
+      "requires": [
+        "random-signals/correlation-spectra",
+        "signals-systems/convolution"
+      ]
+    },
+    {
+      "slug": "gaussian-noise",
+      "title": "Gaussian processes and noise",
+      "summary": "Gaussian processes, white noise, thermal and shot noise, and bandpass noise.",
+      "requires": [
+        "random-signals/random-signals-lti"
+      ]
+    },
+    {
+      "slug": "optimal-filtering",
+      "title": "Optimal filtering",
+      "summary": "The matched filter and the Wiener filter.",
+      "requires": [
+        "random-signals/gaussian-noise"
+      ]
+    },
+    {
+      "slug": "estimation-kalman",
+      "title": "Estimation and the Kalman filter",
+      "summary": "Minimum mean-square-error estimation, least squares and the discrete Kalman filter.",
+      "requires": [
+        "random-signals/optimal-filtering"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "communication-systems",
+    "information-theory",
+    "dsp"
+  ]
 }

@@ -1,149 +1,91 @@
 {
- "slug": "electronics-2",
- "title": "Electronics II",
- "full_title": "Electronics II: Feedback, Op-Amps, Filters, and Data Converters",
- "area": "electronics",
- "level": 3,
- "order": 110,
- "tagline": "Feedback, amplifier, and converter design.",
- "summary": "Building on single transistors and simple stages, this course designs complete analog systems: feedback amplifiers and their stability, the internal design of operational amplifiers, output stages, active filters, oscillators, data converters and the noise that limits them all.",
- "overview": [
-  "Advanced analog is the one that the feedback and the op, amp and the filter and the converter is for, of the design, and the one that the limit is for. From feedback and the stability, through the output and the filter, to the oscillator and the converter and the noise, and the one that the design is for.",
-  "The feedback and the stability. The op, amp and the output stage. The filter and the oscillator. The converter and the noise. This course is the one that the design, and the one that the limit is for."
- ],
- "prerequisites": [
-  "electronics-1",
-  "signals-systems"
- ],
- "outcomes": [
-  "Use the feedback and the stability, together, for a design.",
-  "Use the op, amp and the output stage, together, for a system.",
-  "Use the filter and the oscillator, together, for a signal.",
-  "Use the converter and the noise, together, for a design."
- ],
- "chapters": [
-  {
-   "slug": "feedback",
-   "title": "Feedback",
-   "summary": "Negative feedback, loop gain, the four feedback topologies and their effect on gain, bandwidth and impedances.",
-   "requires": [
-    "electronics-1/amplifier-frequency-response"
-   ]
-  },
-  {
-   "slug": "stability-compensation",
-   "title": "Stability and frequency compensation",
-   "summary": "Poles of feedback amplifiers, gain and phase margins, and dominant-pole and Miller compensation.",
-   "requires": [
-    "electronics-2/feedback"
-   ]
-  },
-  {
-   "slug": "operational-amplifier-design",
-   "title": "Operational amplifier design",
-   "summary": "Two-stage CMOS and bipolar op-amps, specifications, slew rate, offset and common-mode range.",
-   "requires": [
-    "electronics-2/stability-compensation",
-    "electronics-1/differential-amplifiers"
-   ]
-  },
-  {
-   "slug": "output-stages",
-   "title": "Output stages and power amplifiers",
-   "summary": "Class A, B and AB output stages, efficiency, distortion and thermal considerations.",
-   "requires": [
-    "electronics-1/multistage-amplifiers"
-   ]
-  },
-  {
-   "slug": "active-filters",
-   "title": "Active filter design",
-   "summary": "Butterworth and Chebyshev approximations, Sallen–Key and biquad realisations, and switched-capacitor filters.",
-   "requires": [
-    "circuits-2/filters",
-    "electronics-2/operational-amplifier-design"
-   ]
-  },
-  {
-   "slug": "oscillators",
-   "title": "Oscillators",
-   "summary": "The Barkhausen criterion, RC, LC and crystal oscillators, amplitude stabilisation and relaxation oscillators.",
-   "requires": [
-    "electronics-2/feedback"
-   ]
-  },
-  {
-   "slug": "data-converters",
-   "title": "Data converters",
-   "summary": "Sample-and-hold circuits, quantisation, DAC architectures, and flash, successive-approximation and sigma–delta ADCs.",
-   "requires": [
-    "electronics-2/operational-amplifier-design",
-    "digital-logic/number-systems"
-   ]
-  },
-  {
-   "slug": "electronic-noise",
-   "title": "Noise in electronic circuits",
-   "summary": "Thermal, shot and flicker noise, noise models of devices and amplifiers, noise figure and low-noise design.",
-   "requires": [
-    "electronics-2/operational-amplifier-design"
-   ]
-  }
- ],
- "history": [
-  {
-   "year": 1930,
-   "title": "The vacuum, tube amplifier",
-   "detail": "The tube, and the amplifier, and the one that the feedback is for.",
-   "people": [
-    "Hull",
-    "de Forest"
-   ]
-  },
-  {
-   "year": 1946,
-   "title": "The feedback amplifier",
-   "detail": "The feedback, and the amplifier, and the one that the stability is for, of the limit and the design.",
-   "people": [
-    "Nyquist"
-   ]
-  },
-  {
-   "year": 1964,
-   "title": "The op, amp",
-   "detail": "The op, amp, and the amplifier, and the one that the design is for, is for.",
-   "people": [
-    "Fairchild"
-   ]
-  },
-  {
-   "year": 1970,
-   "title": "The ADC and the DAC",
-   "detail": "The converter, and the code, and the one that the signal is for, is for."
-  }
- ],
- "references": [
-  {
-   "title": "Microelectronic Circuits",
-   "authors": "Sedra and Smith",
-   "year": 2015,
-   "note": "The feedback and the amplifier, and the one that the design is for."
-  },
-  {
-   "title": "Op, Amps and Linear Integrated Circuits",
-   "authors": "W. Boylestad",
-   "year": 2009,
-   "note": "The op, amp and the filter, and the one that the signal is for."
-  },
-  {
-   "title": "Data Converters, D. Finkelman",
-   "authors": "Finkelman",
-   "year": 2000,
-   "note": "The ADC and the DAC, and the one that the code is for."
-  }
- ],
- "next": [
-  "embedded-systems",
-  "instrumentation"
- ]
+  "slug": "electronics-2",
+  "title": "Electronics II",
+  "full_title": "Electronic Circuits II: Analog Circuit Design",
+  "area": "electronics",
+  "level": 3,
+  "order": 110,
+  "tagline": "Feedback, stability and compensation, op-amp design, output stages, active filters, oscillators and data converters",
+  "summary": "Building on single transistors and simple stages, this course designs complete analog systems: feedback amplifiers and their stability, the internal design of operational amplifiers, output stages, active filters, oscillators, data converters and the noise that limits them all.",
+  "overview": [],
+  "prerequisites": [
+    "electronics-1",
+    "digital-logic"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "feedback",
+      "title": "Feedback",
+      "summary": "Negative feedback, loop gain, the four feedback topologies and their effect on gain, bandwidth and impedances.",
+      "requires": [
+        "electronics-1/amplifier-frequency-response"
+      ]
+    },
+    {
+      "slug": "stability-compensation",
+      "title": "Stability and frequency compensation",
+      "summary": "Poles of feedback amplifiers, gain and phase margins, and dominant-pole and Miller compensation.",
+      "requires": [
+        "electronics-2/feedback"
+      ]
+    },
+    {
+      "slug": "operational-amplifier-design",
+      "title": "Operational amplifier design",
+      "summary": "Two-stage CMOS and bipolar op-amps, specifications, slew rate, offset and common-mode range.",
+      "requires": [
+        "electronics-2/stability-compensation",
+        "electronics-1/differential-amplifiers"
+      ]
+    },
+    {
+      "slug": "output-stages",
+      "title": "Output stages and power amplifiers",
+      "summary": "Class A, B and AB output stages, efficiency, distortion and thermal considerations.",
+      "requires": [
+        "electronics-1/multistage-amplifiers"
+      ]
+    },
+    {
+      "slug": "active-filters",
+      "title": "Active filter design",
+      "summary": "Butterworth and Chebyshev approximations, Sallen–Key and biquad realisations, and switched-capacitor filters.",
+      "requires": [
+        "circuits-2/filters",
+        "electronics-2/operational-amplifier-design"
+      ]
+    },
+    {
+      "slug": "oscillators",
+      "title": "Oscillators",
+      "summary": "The Barkhausen criterion, RC, LC and crystal oscillators, amplitude stabilisation and relaxation oscillators.",
+      "requires": [
+        "electronics-2/feedback"
+      ]
+    },
+    {
+      "slug": "data-converters",
+      "title": "Data converters",
+      "summary": "Sample-and-hold circuits, quantisation, DAC architectures, and flash, successive-approximation and sigma–delta ADCs.",
+      "requires": [
+        "electronics-2/operational-amplifier-design",
+        "digital-logic/number-systems"
+      ]
+    },
+    {
+      "slug": "electronic-noise",
+      "title": "Noise in electronic circuits",
+      "summary": "Thermal, shot and flicker noise, noise models of devices and amplifiers, noise figure and low-noise design.",
+      "requires": [
+        "electronics-2/operational-amplifier-design"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "embedded-systems",
+    "instrumentation"
+  ]
 }

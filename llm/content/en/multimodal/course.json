@@ -5,63 +5,9 @@
   "area": "applications",
   "level": 3,
   "order": 160,
-  "tagline": "Vision transformers, contrastive learning, vision\u2013language models, speech and image generation",
-  "summary": "Language models increasingly see, hear and speak. This course covers vision transformers and contrastive image\u2013text learning, vision\u2013language models, speech recognition and synthesis, audio and spoken-dialogue models, the diffusion and autoregressive models that generate images, and models trained natively on many modalities.",
-  "overview": {
-    "overview": [
-      "Multimodal LLMs process text, images, audio, and video together. This course covers vision-language models, CLIP, and cross-modal alignment.",
-      "The key insight is that modalities can be aligned by projecting them into a shared representation space."
-    ],
-    "outcomes": [
-      "Explain vision-language models and CLIP-style alignment.",
-      "Describe image-text pairing and contrastive learning.",
-      "Analyze multimodal grounding and visual question answering.",
-      "Evaluate multimodal benchmarks and hallucination."
-    ],
-    "history": [
-      {
-        "year": 2021,
-        "title": "CLIP",
-        "detail": "Radford et al. introduced CLIP, aligning images and text via contrastive learning.",
-        "people": [
-          "Radford"
-        ]
-      },
-      {
-        "year": 2023,
-        "title": "Flamingo",
-        "detail": "Alayrac et al. introduced Flamingo for multimodal few-shot learning.",
-        "people": [
-          "Alayrac"
-        ]
-      },
-      {
-        "year": 2023,
-        "title": "LLaVA",
-        "detail": "Liu et al. introduced LLaVA, a visual instruction-tuned LLM.",
-        "people": [
-          "Liu"
-        ]
-      }
-    ],
-    "references": [
-      {
-        "title": "Learning Transferable Visual Models From Natural Language Supervision",
-        "authors": "Radford et al.",
-        "year": 2021
-      },
-      {
-        "title": "Flamingo: a Visual Language Model",
-        "authors": "Alayrac et al.",
-        "year": 2022
-      },
-      {
-        "title": "Visual Instruction Tuning",
-        "authors": "Liu et al.",
-        "year": 2023
-      }
-    ]
-  },
+  "tagline": "Vision transformers, contrastive learning, vision–language models, speech and image generation",
+  "summary": "Language models increasingly see, hear and speak. This course covers vision transformers and contrastive image–text learning, vision–language models, speech recognition and synthesis, audio and spoken-dialogue models, the diffusion and autoregressive models that generate images, and models trained natively on many modalities.",
+  "overview": [],
   "prerequisites": [
     "transformers",
     "post-training"
@@ -79,7 +25,7 @@
     },
     {
       "slug": "contrastive-learning",
-      "title": "Contrastive image\u2013text learning",
+      "title": "Contrastive image–text learning",
       "summary": "CLIP-style training, shared embedding spaces and zero-shot classification.",
       "requires": [
         "multimodal/vision-transformers"
@@ -87,7 +33,7 @@
     },
     {
       "slug": "vision-language-models",
-      "title": "Vision\u2013language models",
+      "title": "Vision–language models",
       "summary": "Connecting image encoders to language models, visual instruction tuning and document understanding.",
       "requires": [
         "multimodal/contrastive-learning",
@@ -97,7 +43,7 @@
     {
       "slug": "speech",
       "title": "Speech recognition and synthesis",
-      "summary": "Audio features, encoder\u2013decoder speech recognition and neural text-to-speech.",
+      "summary": "Audio features, encoder–decoder speech recognition and neural text-to-speech.",
       "requires": [
         "transformers/architecture-families"
       ]

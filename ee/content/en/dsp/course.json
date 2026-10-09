@@ -1,155 +1,90 @@
 {
- "slug": "dsp",
- "title": "Digital Signal Processing",
- "full_title": "Digital Signal Processing",
- "area": "signals",
- "level": 3,
- "order": 160,
- "tagline": "The DFT and FFT, FIR and IIR filter design, filter structures, multirate processing and spectral analysis",
- "summary": "Digital signal processing computes with sampled signals. This course develops the discrete Fourier transform and the fast algorithms that compute it, the design of FIR and IIR digital filters, their realisation with finite precision, multirate systems, and the estimation of spectra from data.",
- "overview": [
-  "A filter, and the one that the signal is for, is the one that the transfer function is for, and the one that the design is for. This course is the one that the discrete LTI is for, and the one that the transform is for, of digital signal processing: the difference equation, and the one that the sequence is for, and the z and the DTFT and the DFT and the FFT, and the one that the frequency is for, and the FIR and the IIR, and the one that the design is for, and the multirate, and the one that the factor is for, and the spectrum, and the one that the analysis is for. It turns the algebraic, and the one that the system function is for, of the LTI and the z, that the signals course is for, into the design, and the one that the specification is for, and the implement, and the one that the structure is for, of the filter, and the one that the signal is for.",
-  "The central object is the system function H(z), and the one that the discrete is for, and the one that the sequence is for. The two that the design is for are the FIR and the IIR, and the one that the filter is for. The FIR is the one that the finite is for, and the one that the structure is for, of the difference equation. The IIR is the one that the pole is for, and the one that the transfer function is for. The design is the one that the frequency is for, and the one that the magnitude is for, and the one that the specification is for. The structure is the one that the implement is for, and the one that the direct and the cascade and the parallel is for."
- ],
- "prerequisites": [
-  "signals-systems",
-  "random-signals"
- ],
- "outcomes": [
-  "Recognise the discrete LTI, and the one that the difference equation is for, and the one that the system function is for, and the one that the z is for.",
-  "Use the DFT, and the one that the finite is for, and the FFT, and the one that the efficient is for, to analyse the discrete spectrum, and the one that the frequency is for.",
-  "Design the FIR filter, and the one that the window is for, and the one that the method is for, to the specification, and the one that the magnitude is for.",
-  "Design the IIR filter, and the one that the bilinear is for, and the one that the approximation is for, to the digital specification, from the analog prototype, and the one that the low pass is for.",
-  "Implement the filter, and the one that the structure is for, in the direct and the cascade and the parallel, and the one that the form is for.",
-  "Use the multirate, and the one that the decimation is for, and the upsampling, and the one that the factor is for, to the band, and the one that the frequency is for.",
-  "Perform the spectral analysis, and the one that the period is for, and the one that the average is for, to the discrete signal, and the one that the estimate is for.",
-  "Analyse the quantisation, and the one that the coefficient is for, and the one that the structure is for, on the response, and the one that the discrete is for."
- ],
- "chapters": [
-  {
-   "slug": "discrete-time-systems",
-   "title": "Discrete-time signals and systems",
-   "summary": "Sequences, difference equations, convolution, the DTFT and the z-transform from a DSP viewpoint.",
-   "requires": [
-    "signals-systems/z-transform"
-   ]
-  },
-  {
-   "slug": "discrete-fourier-transform",
-   "title": "The discrete Fourier transform",
-   "summary": "The DFT, its relation to the DTFT, circular convolution and linear filtering with the DFT.",
-   "requires": [
-    "dsp/discrete-time-systems"
-   ]
-  },
-  {
-   "slug": "fast-fourier-transform",
-   "title": "The fast Fourier transform",
-   "summary": "Decimation-in-time and decimation-in-frequency FFTs, computational cost and practical implementation.",
-   "requires": [
-    "dsp/discrete-fourier-transform"
-   ]
-  },
-  {
-   "slug": "fir-filter-design",
-   "title": "FIR filter design",
-   "summary": "Linear phase, the window method, frequency sampling and optimal equiripple design.",
-   "requires": [
-    "dsp/discrete-fourier-transform"
-   ]
-  },
-  {
-   "slug": "iir-filter-design",
-   "title": "IIR filter design",
-   "summary": "Analog prototypes, impulse invariance and the bilinear transform.",
-   "requires": [
-    "dsp/discrete-time-systems",
-    "circuits-2/filters"
-   ]
-  },
-  {
-   "slug": "filter-structures",
-   "title": "Filter structures and finite precision",
-   "summary": "Direct, cascade, parallel and lattice structures, coefficient quantisation and round-off noise.",
-   "requires": [
-    "dsp/fir-filter-design",
-    "dsp/iir-filter-design"
-   ]
-  },
-  {
-   "slug": "multirate-processing",
-   "title": "Multirate signal processing",
-   "summary": "Decimation, interpolation, polyphase implementations and filter banks.",
-   "requires": [
-    "dsp/fir-filter-design"
-   ]
-  },
-  {
-   "slug": "spectral-analysis",
-   "title": "Spectral analysis",
-   "summary": "Windowing, the periodogram, averaging methods and the short-time Fourier transform.",
-   "requires": [
-    "dsp/fast-fourier-transform",
-    "random-signals/correlation-spectra"
-   ]
-  }
- ],
- "history": [
-  {
-   "year": 1965,
-   "title": "The fast transform",
-   "detail": "The FFT, and the one that the efficient is for, makes the computation, and the one that the spectrum is for, possible in the practical, and the one that the digital is for.",
-   "people": [
-    "Cooley",
-    "Tukey"
-   ]
-  },
-  {
-   "year": 1971,
-   "title": "The IIR",
-   "detail": "The bilinear, and the one that the transform is for, is the one that the analog prototype is for, to the digital, and the one that the IIR is for.",
-   "people": ""
-  },
-  {
-   "year": 1971,
-   "title": "The FIR",
-   "detail": "The window, and the one that the method is for, is the one that the FIR is for, and the one that the design is for.",
-   "people": ""
-  },
-  {
-   "year": 1981,
-   "title": "The multirate",
-   "detail": "The decimation, and the one that the factor is for, and the upsampling, and the one that the frequency is for, is the one that the practical is for, and the one that the signal is for.",
-   "people": ""
-  }
- ],
- "references": [
-  {
-   "title": "Discrete-Time Signal Processing",
-   "authors": null,
-   "year": 1999,
-   "note": "The standard, and the one that the z and the transform and the filter and the design is for."
-  },
-  {
-   "title": "Digital Signal Processing",
-   "authors": null,
-   "year": 2010,
-   "note": "For the FIR and the IIR and the design and the structure, in detail."
-  },
-  {
-   "title": "Multirate Digital Signal Processing",
-   "authors": null,
-   "year": 2011,
-   "note": "For the decimation and the upsampling and the band and the frequency."
-  },
-  {
-   "title": "Spectral Analysis and Signal Modeling",
-   "authors": null,
-   "year": 2010,
-   "note": "For the period and the average and the spectral estimate and the discrete."
-  }
- ],
- "next": [
-  "communication-systems"
- ]
+  "slug": "dsp",
+  "title": "Digital Signal Processing",
+  "full_title": "Digital Signal Processing",
+  "area": "signals",
+  "level": 3,
+  "order": 160,
+  "tagline": "The DFT and FFT, FIR and IIR filter design, filter structures, multirate processing and spectral analysis",
+  "summary": "Digital signal processing computes with sampled signals. This course develops the discrete Fourier transform and the fast algorithms that compute it, the design of FIR and IIR digital filters, their realisation with finite precision, multirate systems, and the estimation of spectra from data.",
+  "overview": [],
+  "prerequisites": [
+    "signals-systems",
+    "random-signals"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "discrete-time-systems",
+      "title": "Discrete-time signals and systems",
+      "summary": "Sequences, difference equations, convolution, the DTFT and the z-transform from a DSP viewpoint.",
+      "requires": [
+        "signals-systems/z-transform"
+      ]
+    },
+    {
+      "slug": "discrete-fourier-transform",
+      "title": "The discrete Fourier transform",
+      "summary": "The DFT, its relation to the DTFT, circular convolution and linear filtering with the DFT.",
+      "requires": [
+        "dsp/discrete-time-systems"
+      ]
+    },
+    {
+      "slug": "fast-fourier-transform",
+      "title": "The fast Fourier transform",
+      "summary": "Decimation-in-time and decimation-in-frequency FFTs, computational cost and practical implementation.",
+      "requires": [
+        "dsp/discrete-fourier-transform"
+      ]
+    },
+    {
+      "slug": "fir-filter-design",
+      "title": "FIR filter design",
+      "summary": "Linear phase, the window method, frequency sampling and optimal equiripple design.",
+      "requires": [
+        "dsp/discrete-fourier-transform"
+      ]
+    },
+    {
+      "slug": "iir-filter-design",
+      "title": "IIR filter design",
+      "summary": "Analog prototypes, impulse invariance and the bilinear transform.",
+      "requires": [
+        "dsp/discrete-time-systems",
+        "circuits-2/filters"
+      ]
+    },
+    {
+      "slug": "filter-structures",
+      "title": "Filter structures and finite precision",
+      "summary": "Direct, cascade, parallel and lattice structures, coefficient quantisation and round-off noise.",
+      "requires": [
+        "dsp/fir-filter-design",
+        "dsp/iir-filter-design"
+      ]
+    },
+    {
+      "slug": "multirate-processing",
+      "title": "Multirate signal processing",
+      "summary": "Decimation, interpolation, polyphase implementations and filter banks.",
+      "requires": [
+        "dsp/fir-filter-design"
+      ]
+    },
+    {
+      "slug": "spectral-analysis",
+      "title": "Spectral analysis",
+      "summary": "Windowing, the periodogram, averaging methods and the short-time Fourier transform.",
+      "requires": [
+        "dsp/fast-fourier-transform",
+        "random-signals/correlation-spectra"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "communication-systems"
+  ]
 }

@@ -1,0 +1,114 @@
+{
+  "slug": "math-for-ml",
+  "title": "Mathematics for Machine Learning",
+  "full_title": "Mathematics for Machine Learning",
+  "area": "foundations",
+  "level": 1,
+  "order": 10,
+  "tagline": "Linear algebra, calculus, probability, information theory and optimisation for machine learning",
+  "summary": "Machine learning is applied mathematics. This course collects the linear algebra, multivariable calculus, probability, information theory and optimisation that the rest of the atlas uses, always with an eye on how they appear inside neural networks and language models.",
+  "overview": {
+    "overview": [
+      "Mathematics for machine learning covers linear algebra, calculus, probability, and optimization as the foundations of LLMs.",
+      "The key insight is that gradients, probability distributions, and vector spaces are the substrate in which LLMs operate."
+    ],
+    "outcomes": [
+      "Explain vectors, matrices, and linear transformations.",
+      "Describe gradients, partial derivatives, and chain rule.",
+      "Analyze probability distributions, entropy, and likelihood.",
+      "Implement optimization: SGD, Adam, and learning rate schedules."
+    ],
+    "history": [
+      {
+        "year": 2016,
+        "title": "D2L",
+        "detail": "Zhang et al. introduced Dive into Deep Learning as a practical math-first approach.",
+        "people": [
+          "Zhang"
+        ]
+      },
+      {
+        "year": 2017,
+        "title": "Matrix Calculus",
+        "detail": "Parr and Howard formalized matrix calculus for ML practitioners.",
+        "people": [
+          "Parr"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Dive into Deep Learning",
+        "authors": "Zhang et al.",
+        "year": 2021
+      },
+      {
+        "title": "The Matrix Calculus You Need for Deep Learning",
+        "authors": "Parr and Howard",
+        "year": 2018
+      }
+    ]
+  },
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "vectors-matrices",
+      "title": "Vectors, matrices and tensors",
+      "summary": "Vectors and matrices as data, matrix multiplication as composition, tensors and their shapes, and what linear algebra costs on hardware.",
+      "requires": []
+    },
+    {
+      "slug": "matrix-decompositions",
+      "title": "Eigenvalues, SVD and low rank",
+      "summary": "Eigendecompositions, the singular value decomposition, low-rank approximation and why weight matrices can be compressed.",
+      "requires": [
+        "math-for-ml/vectors-matrices"
+      ]
+    },
+    {
+      "slug": "gradients",
+      "title": "Gradients and the chain rule",
+      "summary": "Partial derivatives, gradients and Jacobians, the multivariable chain rule and identities of matrix calculus.",
+      "requires": [
+        "math-for-ml/vectors-matrices"
+      ]
+    },
+    {
+      "slug": "probability",
+      "title": "Probability for machine learning",
+      "summary": "Random variables, common distributions, expectation, conditional probability, Bayes\u2019 rule and sampling.",
+      "requires": []
+    },
+    {
+      "slug": "estimation",
+      "title": "Estimation and likelihood",
+      "summary": "Maximum likelihood and maximum a posteriori estimation, bias and variance, and the statistics of evaluation.",
+      "requires": [
+        "math-for-ml/probability"
+      ]
+    },
+    {
+      "slug": "information-theory",
+      "title": "Information theory",
+      "summary": "Entropy, cross-entropy, KL divergence and mutual information, and why language models minimise cross-entropy.",
+      "requires": [
+        "math-for-ml/probability"
+      ]
+    },
+    {
+      "slug": "optimisation",
+      "title": "Optimisation",
+      "summary": "Convexity, gradient descent and its convergence, stochastic gradients, momentum and constrained optimisation.",
+      "requires": [
+        "math-for-ml/gradients"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "ml-fundamentals",
+    "neural-networks"
+  ]
+}

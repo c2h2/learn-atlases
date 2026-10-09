@@ -27,7 +27,7 @@ $targets = ['words' => 2500, 'examples' => 4, 'exercises' => 8, 'widgets' => 1, 
 // Generated filler left over from the curriculum skeleton. A lesson or course record holding any of
 // these has not been written yet, whatever its word count; see tools/CONTENT_GUIDE.md.
 $FILLER = [
-    'en' => ['/\bthe one that the \w+ is for\b/i', '/\b(?:is|are) for, is for\b/i', '/^This lesson defines the /m', '/The method, and the check, are the one for/'],
+    'en' => ['/\bthe one that the \w+(?: \w+){0,2} is for\b/i', '/\b(?:is|are) for, is for\b/i', '/^This lesson defines the /m', '/The method, and the check, are the one for/', '/^Course: \*\*[a-z0-9-]+\*\* — chapter:? `/m'],
     'zh' => ['/以及者/', '/者（[^）]*所对应的）/', '/就是者（/', '/^该课程定义/'],
 ];
 $filler = function ($text, string $lang) use ($FILLER): bool {

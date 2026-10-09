@@ -1,0 +1,131 @@
+{
+  "slug": "sequence-models",
+  "title": "Sequence Models",
+  "full_title": "Sequence Models and Attention",
+  "area": "language",
+  "level": 2,
+  "order": 50,
+  "tagline": "Recurrent networks, LSTMs, sequence-to-sequence models and the invention of attention",
+  "summary": "Language unfolds in time. This course models sequences with recurrent networks, meets the difficulty of long-range dependencies with LSTMs and GRUs, builds sequence-to-sequence models for translation, and introduces attention \u2014 the idea that became the Transformer.",
+  "overview": {
+    "overview": [
+      "Before transformers, sequence models were RNNs, LSTMs, and GRUs. This course covers recurrent architectures, the vanishing gradient problem, and sequence-to-sequence learning.",
+      "The key insight is that LSTMs solved gradient flow with gating; attention solved the bottleneck of fixed-length encoding."
+    ],
+    "outcomes": [
+      "Trace the RNN and LSTM forward/backward pass.",
+      "Explain the vanishing gradient problem and how gating solves it.",
+      "Describe sequence-to-sequence with attention and the encoder-decoder architecture.",
+      "Analyze GRU vs. LSTM and when recurrent models suffice."
+    ],
+    "history": [
+      {
+        "year": 1997,
+        "title": "LSTM",
+        "detail": "Hochreiter and Schmidhuber introduced LSTM with gating to solve vanishing gradients.",
+        "people": [
+          "Hochreiter",
+          "Schmidhuber"
+        ]
+      },
+      {
+        "year": 2014,
+        "title": "GRU",
+        "detail": "Cho et al. introduced GRU as a simpler gated recurrent unit.",
+        "people": [
+          "Cho"
+        ]
+      },
+      {
+        "year": 2014,
+        "title": "Seq2seq with attention",
+        "detail": "Bahdanau et al. added attention to seq2seq, overcoming the fixed-length bottleneck.",
+        "people": [
+          "Bahdanau"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Long Short-Term Memory",
+        "authors": "Hochreiter and Schmidhuber",
+        "year": 1997
+      },
+      {
+        "title": "Learning Phrase Representations using RNN Encoder-Decoder",
+        "authors": "Cho et al.",
+        "year": 2014
+      }
+    ]
+  },
+  "prerequisites": [
+    "neural-networks",
+    "text-and-language"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "recurrent-networks",
+      "title": "Recurrent neural networks",
+      "summary": "Recurrence, unrolling, backpropagation through time and neural language models.",
+      "requires": [
+        "neural-networks/backpropagation",
+        "text-and-language/ngram-models"
+      ]
+    },
+    {
+      "slug": "long-range-dependencies",
+      "title": "LSTMs and GRUs",
+      "summary": "Vanishing gradients through time, gating, the LSTM and GRU cells and gradient clipping.",
+      "requires": [
+        "sequence-models/recurrent-networks"
+      ]
+    },
+    {
+      "slug": "seq2seq",
+      "title": "Sequence-to-sequence models",
+      "summary": "Encoder\u2013decoder architectures, teacher forcing and machine translation.",
+      "requires": [
+        "sequence-models/long-range-dependencies"
+      ]
+    },
+    {
+      "slug": "decoding-basics",
+      "title": "Decoding",
+      "summary": "Greedy and beam search, length normalisation and exposure bias.",
+      "requires": [
+        "sequence-models/seq2seq"
+      ]
+    },
+    {
+      "slug": "attention-mechanism",
+      "title": "Attention",
+      "summary": "Additive and multiplicative attention, alignment, and attention as a soft dictionary lookup.",
+      "requires": [
+        "sequence-models/seq2seq"
+      ]
+    },
+    {
+      "slug": "contextual-embeddings",
+      "title": "Contextual embeddings",
+      "summary": "ELMo, transfer learning and the move from static to contextual representations.",
+      "requires": [
+        "sequence-models/attention-mechanism",
+        "text-and-language/word-embeddings"
+      ]
+    },
+    {
+      "slug": "state-space-models",
+      "title": "Convolutions and state-space models",
+      "summary": "Temporal convolutions, linear recurrences and state-space models such as S4 and Mamba.",
+      "requires": [
+        "sequence-models/long-range-dependencies"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "transformers"
+  ]
+}

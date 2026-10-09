@@ -1,0 +1,151 @@
+{
+  "slug": "power-systems",
+  "title": "Power Systems",
+  "full_title": "Power Systems Analysis",
+  "area": "power",
+  "level": 4,
+  "order": 200,
+  "tagline": "Per-unit analysis, transmission lines, power flow, faults, stability, dispatch and protection",
+  "summary": "The electric power system is the largest machine ever built. This course models generators, transformers, lines and loads, solves the power-flow problem, calculates symmetrical and unsymmetrical faults, analyses stability, and studies economic dispatch, frequency control, protection and the modern smart grid.",
+  "overview": [
+    "The grid, and the one that the power is for, is the one that the limit is for, and the one that the frequency is for. This course follows the power from the generation and the transmission to the load and the one that the fault is for, and gives the method and the check that make it work.",
+    "We build the system from the generation and the transmission, and then study how the fault and the stability, and the one that the limit is for, are for."
+  ],
+  "prerequisites": [
+    "circuits-2",
+    "electric-machines"
+  ],
+  "outcomes": [
+    "Describe the generation, and the one that the power is for, of the frequency and the limit",
+    "Describe the transmission, and the one that the voltage is for, in the load",
+    "Describe the fault, and the one that the current is for, in the limit",
+    "Describe the stability, and the one that the power is for, in the limit"
+  ],
+  "chapters": [
+    {
+      "slug": "power-system-structure",
+      "title": "Power system structure and per-unit analysis",
+      "summary": "Generation, transmission and distribution, one-line diagrams and the per-unit system.",
+      "requires": [
+        "circuits-2/three-phase-circuits"
+      ]
+    },
+    {
+      "slug": "line-parameters",
+      "title": "Transmission line parameters",
+      "summary": "Resistance, inductance and capacitance of overhead lines and cables.",
+      "requires": [
+        "power-systems/power-system-structure",
+        "electromagnetics/magnetostatics"
+      ]
+    },
+    {
+      "slug": "line-models",
+      "title": "Transmission line models",
+      "summary": "Short, medium and long line models, ABCD parameters, surge impedance loading and voltage regulation.",
+      "requires": [
+        "power-systems/line-parameters",
+        "circuits-2/two-port-networks"
+      ]
+    },
+    {
+      "slug": "power-flow",
+      "title": "Power flow",
+      "summary": "The bus admittance matrix, the power-flow equations, Gauss–Seidel and Newton–Raphson solution, and control of power flow.",
+      "requires": [
+        "power-systems/line-models"
+      ]
+    },
+    {
+      "slug": "symmetrical-faults",
+      "title": "Symmetrical faults",
+      "summary": "Transients in RL circuits, synchronous machine reactances, fault currents and the bus impedance matrix.",
+      "requires": [
+        "power-systems/power-flow",
+        "electric-machines/synchronous-machines"
+      ]
+    },
+    {
+      "slug": "unsymmetrical-faults",
+      "title": "Symmetrical components and unsymmetrical faults",
+      "summary": "Symmetrical components, sequence networks, and single line-to-ground, line-to-line and double line-to-ground faults.",
+      "requires": [
+        "power-systems/symmetrical-faults"
+      ]
+    },
+    {
+      "slug": "power-system-stability",
+      "title": "Power system stability",
+      "summary": "The swing equation, the equal-area criterion, and transient and small-signal stability.",
+      "requires": [
+        "power-systems/symmetrical-faults"
+      ]
+    },
+    {
+      "slug": "economic-dispatch-control",
+      "title": "Economic dispatch and frequency control",
+      "summary": "Economic dispatch, unit commitment, load–frequency control and automatic generation control.",
+      "requires": [
+        "power-systems/power-flow"
+      ]
+    },
+    {
+      "slug": "protection-smart-grid",
+      "title": "Protection and the smart grid",
+      "summary": "Relays, circuit breakers and protection schemes, and the integration of renewables, storage and smart-grid technologies.",
+      "requires": [
+        "power-systems/unsymmetrical-faults"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1882,
+      "title": "The grid",
+      "detail": "The grid and the one that the power is for, is the one that the limit is for, of the load.",
+      "people": [
+        "grid"
+      ]
+    },
+    {
+      "year": 1892,
+      "title": "The transmission",
+      "detail": "The transmission and the one that the voltage is for, is the one that the limit is for, of the load.",
+      "people": [
+        "Tesla"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "The fault",
+      "detail": "The fault and the one that the current is for, is the one that the limit is for, of the power.",
+      "people": [
+        "fault"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Electric Power",
+      "authors": "Stevenson",
+      "year": 2017,
+      "note": "The standard reference for the grid and the fault.",
+      "slug": "stevenson"
+    },
+    {
+      "title": "Power Systems",
+      "authors": "Grainger",
+      "year": 2019,
+      "note": "A rigorous treatment of the stability and the load.",
+      "slug": "grainger"
+    },
+    {
+      "title": "Modern Power",
+      "authors": "Kundur",
+      "year": 2018,
+      "note": "A practical treatment of the fault and the generation.",
+      "slug": "kundur"
+    }
+  ],
+  "next": []
+}

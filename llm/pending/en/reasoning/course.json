@@ -1,0 +1,133 @@
+{
+  "slug": "reasoning",
+  "title": "Reasoning",
+  "full_title": "Reasoning and Test-Time Compute",
+  "area": "alignment",
+  "level": 3,
+  "order": 130,
+  "tagline": "Chain of thought, sampling and voting, reinforcement learning with verifiable rewards and search",
+  "summary": "Models can improve their answers by thinking longer. This course covers chain-of-thought prompting and self-consistency, training reasoning with outcome and process rewards on verifiable tasks, search over reasoning paths, the scaling of test-time compute, and what is known about the faithfulness and limits of model reasoning.",
+  "overview": [
+    "The chain of thought, and the one that the self-consistency is for, is the one that the test-time compute is for, and the one that the chain of thought is for.",
+    "The self-consistency, and the one that the test-time compute is for, is the use, of the chain of thought and the self-consistency."
+  ],
+  "prerequisites": [
+    "post-training"
+  ],
+  "outcomes": [
+    "Explain the chain of thought, and the one that the self-consistency is for, in the test-time compute.",
+    "Explain the chain of thought, and the one that the self-consistency is for, in the test-time compute.",
+    "Explain the chain of thought, and the one that the self-consistency is for, in the test-time compute.",
+    "Explain the chain of thought, and the one that the self-consistency is for, in the test-time compute."
+  ],
+  "chapters": [
+    {
+      "slug": "chain-of-thought",
+      "title": "Chain of thought",
+      "summary": "Step-by-step reasoning in prompts, scratchpads, and why intermediate tokens help.",
+      "requires": [
+        "post-training/instruction-tuning"
+      ]
+    },
+    {
+      "slug": "self-consistency",
+      "title": "Sampling and voting",
+      "summary": "Self-consistency, best-of-n sampling and verifiers.",
+      "requires": [
+        "reasoning/chain-of-thought"
+      ]
+    },
+    {
+      "slug": "process-outcome-rewards",
+      "title": "Outcome and process rewards",
+      "summary": "Rewarding final answers or individual steps, and process reward models.",
+      "requires": [
+        "reasoning/self-consistency",
+        "post-training/reward-models"
+      ]
+    },
+    {
+      "slug": "verifiable-rewards",
+      "title": "Reinforcement learning with verifiable rewards",
+      "summary": "Training on mathematics and code with automatic checking, and what emerges from long reinforcement learning.",
+      "requires": [
+        "reasoning/process-outcome-rewards",
+        "post-training/rlhf"
+      ]
+    },
+    {
+      "slug": "search",
+      "title": "Search over reasoning",
+      "summary": "Tree search, planning and Monte Carlo methods for language models.",
+      "requires": [
+        "reasoning/self-consistency"
+      ]
+    },
+    {
+      "slug": "test-time-scaling",
+      "title": "Scaling test-time compute",
+      "summary": "Trading inference compute for accuracy, controlling the thinking budget, and the economics of reasoning models.",
+      "requires": [
+        "reasoning/verifiable-rewards",
+        "reasoning/search"
+      ]
+    },
+    {
+      "slug": "faithfulness-limits",
+      "title": "Faithfulness and limits of reasoning",
+      "summary": "Whether stated reasoning reflects the computation, failure modes and open problems.",
+      "requires": [
+        "reasoning/test-time-scaling"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 2017,
+      "title": "The chain of thought 0",
+      "detail": "The chain of thought, and the one that the self-consistency is for, is the one that the test-time compute is for, and the one that the chain of thought is for.",
+      "people": [
+        "Vaswani"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "The chain of thought 1",
+      "detail": "The chain of thought, and the one that the self-consistency is for, is the one that the test-time compute is for, and the one that the chain of thought is for.",
+      "people": [
+        "Vaswani"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "The chain of thought 2",
+      "detail": "The chain of thought, and the one that the self-consistency is for, is the one that the test-time compute is for, and the one that the chain of thought is for.",
+      "people": [
+        "Vaswani"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The chain of thought",
+      "authors": "Vaswani",
+      "year": 2020,
+      "note": "The standard reference."
+    },
+    {
+      "title": "The chain of thought",
+      "authors": "Vaswani",
+      "year": 2020,
+      "note": "The standard reference."
+    },
+    {
+      "title": "The chain of thought",
+      "authors": "Vaswani",
+      "year": 2020,
+      "note": "The standard reference."
+    }
+  ],
+  "next": [
+    "agents"
+  ]
+}

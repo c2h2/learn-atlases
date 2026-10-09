@@ -7,20 +7,12 @@
   "order": 135,
   "tagline": "Measurement and uncertainty, sensors, bridges, signal conditioning, data acquisition and EMC",
   "summary": "Engineering depends on measuring things accurately. This course treats measurement errors and uncertainty, sensors and transducers, bridges and signal conditioning, instrumentation amplifiers, grounding and shielding, data acquisition, test instruments and electromagnetic compatibility.",
-  "overview": [
-    "The instrument, and the one that the signal is for, is the one that the limit is for, and the one that the error is for. This course follows the measurement from the signal and the error to the uncertainty and the one that the design is for, and gives the method and the check that make it work.",
-    "We build the instrument from the signal and the error, and then study how we measure the limit and the one that the signal is for."
-  ],
+  "overview": [],
   "prerequisites": [
     "electronics-1",
     "signals-systems"
   ],
-  "outcomes": [
-    "Describe the measurement, and the one that the error is for, of the signal and the limit",
-    "Describe the signal conditioning, and the one that the limit is for, in the instrument",
-    "Describe the acquisition, and the one that the number is for, in the code",
-    "Describe the electromagnetic compatibility, and the one that the time is for"
-  ],
+  "outcomes": [],
   "chapters": [
     {
       "slug": "measurement-uncertainty",
@@ -82,62 +74,7 @@
       ]
     }
   ],
-  "history": [
-    {
-      "year": 1831,
-      "title": "The thermocouple",
-      "detail": "The thermocouple and the one that the temperature is for, is the one that the signal is for, of the limit.",
-      "people": [
-        "Seebeck"
-      ]
-    },
-    {
-      "year": 1856,
-      "title": "The piezoelectric",
-      "detail": "The piezoelectric and the one that the force is for, is the one that the signal is for, of the charge.",
-      "people": [
-        "Curie"
-      ]
-    },
-    {
-      "year": 1903,
-      "title": "The oscilloscope",
-      "detail": "The oscilloscope and the one that the signal is for, is the one that the time is for, of the signal.",
-      "people": [
-        "Abraham"
-      ]
-    },
-    {
-      "year": 1950,
-      "title": "The ADC",
-      "detail": "The ADC and the one that the number is for, is the one that the limit is for, of the signal.",
-      "people": [
-        "ADC"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "title": "Electrical and Electronic Measurements",
-      "authors": "Kors",
-      "year": 2013,
-      "note": "The standard reference for the measurement and the error.",
-      "slug": "kors"
-    },
-    {
-      "title": "The Art of Electronics",
-      "authors": "Horowitz and Hill",
-      "year": 2015,
-      "note": "A practical treatment of the conditioning and the error.",
-      "slug": "horowitz"
-    },
-    {
-      "title": "Measurement and Instrumentation",
-      "authors": "Herd and Lumsdon",
-      "year": 2017,
-      "note": "A rigorous treatment of the uncertainty and the design.",
-      "slug": "herd"
-    }
-  ],
+  "history": [],
+  "references": [],
   "next": []
 }

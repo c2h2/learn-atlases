@@ -7,20 +7,13 @@
   "order": 200,
   "tagline": "Per-unit analysis, transmission lines, power flow, faults, stability, dispatch and protection",
   "summary": "The electric power system is the largest machine ever built. This course models generators, transformers, lines and loads, solves the power-flow problem, calculates symmetrical and unsymmetrical faults, analyses stability, and studies economic dispatch, frequency control, protection and the modern smart grid.",
-  "overview": [
-    "The grid, and the one that the power is for, is the one that the limit is for, and the one that the frequency is for. This course follows the power from the generation and the transmission to the load and the one that the fault is for, and gives the method and the check that make it work.",
-    "We build the system from the generation and the transmission, and then study how the fault and the stability, and the one that the limit is for, are for."
-  ],
+  "overview": [],
   "prerequisites": [
-    "circuits-2",
-    "electric-machines"
+    "electric-machines",
+    "electromagnetics",
+    "circuits-2"
   ],
-  "outcomes": [
-    "Describe the generation, and the one that the power is for, of the frequency and the limit",
-    "Describe the transmission, and the one that the voltage is for, in the load",
-    "Describe the fault, and the one that the current is for, in the limit",
-    "Describe the stability, and the one that the power is for, in the limit"
-  ],
+  "outcomes": [],
   "chapters": [
     {
       "slug": "power-system-structure",
@@ -98,54 +91,7 @@
       ]
     }
   ],
-  "history": [
-    {
-      "year": 1882,
-      "title": "The grid",
-      "detail": "The grid and the one that the power is for, is the one that the limit is for, of the load.",
-      "people": [
-        "grid"
-      ]
-    },
-    {
-      "year": 1892,
-      "title": "The transmission",
-      "detail": "The transmission and the one that the voltage is for, is the one that the limit is for, of the load.",
-      "people": [
-        "Tesla"
-      ]
-    },
-    {
-      "year": 1930,
-      "title": "The fault",
-      "detail": "The fault and the one that the current is for, is the one that the limit is for, of the power.",
-      "people": [
-        "fault"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "title": "Electric Power",
-      "authors": "Stevenson",
-      "year": 2017,
-      "note": "The standard reference for the grid and the fault.",
-      "slug": "stevenson"
-    },
-    {
-      "title": "Power Systems",
-      "authors": "Grainger",
-      "year": 2019,
-      "note": "A rigorous treatment of the stability and the load.",
-      "slug": "grainger"
-    },
-    {
-      "title": "Modern Power",
-      "authors": "Kundur",
-      "year": 2018,
-      "note": "A practical treatment of the fault and the generation.",
-      "slug": "kundur"
-    }
-  ],
+  "history": [],
+  "references": [],
   "next": []
 }

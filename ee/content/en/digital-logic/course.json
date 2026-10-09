@@ -1,158 +1,92 @@
 {
- "slug": "digital-logic",
- "title": "Digital Logic Design",
- "full_title": "Digital Logic Design: Number Systems, Gates, Minimization, and Sequential Design",
- "area": "digital",
- "level": 2,
- "order": 1,
- "tagline": "Number, gate, and state design.",
- "summary": "Digital logic is the one that the gate and the state is for, of the computation, and the one that the limit is for. It is the one that the binary and the gate and the state and the memory is for, of the design, and the one that the limit is for. From the binary and the code, through the gate and the minimization and the sequential, to the memory and the description and the timing, and the one that the system is for. The binary and the code. The gate and the minimization. The sequential and the memory. The description and the timing. This course is the one that the logic is for, of the design, and the one that the limit is for.",
- "overview": [
-  "Digital logic is the one that the gate and the state is for, of the computation, and the one that the limit is for. From the binary and the code, through the gate and the minimisation and the sequential, to the memory and the description and the timing, and the one that the system is for.",
-  "The binary and the code. The gate and the minimisation. The sequential and the memory. The description and the timing. This course is the one that the logic is for, of the design, and the one that the limit is for."
- ],
- "prerequisites": [
-  "circuits-1",
-  "dsp"
- ],
- "outcomes": [
-  "Use the binary and the code, together, for a word.",
-  "Use the gate and the minimisation, together, for the circuit.",
-  "Use the sequential and the memory, together, for the state.",
-  "Use the describe and the timing, together, for the design."
- ],
- "chapters": [
-  {
-   "slug": "number-systems",
-   "title": "Number systems and codes",
-   "summary": "Binary, octal and hexadecimal numbers, two’s complement arithmetic, fixed-point numbers and codes such as BCD and Gray code.",
-   "requires": []
-  },
-  {
-   "slug": "boolean-algebra",
-   "title": "Boolean algebra and logic gates",
-   "summary": "Boolean algebra, logic gates, truth tables, and sum-of-products and product-of-sums canonical forms.",
-   "requires": [
-    "digital-logic/number-systems"
-   ]
-  },
-  {
-   "slug": "logic-minimisation",
-   "title": "Logic minimisation",
-   "summary": "Karnaugh maps, prime implicants, don’t-care conditions, the Quine–McCluskey method and multilevel logic.",
-   "requires": [
-    "digital-logic/boolean-algebra"
-   ]
-  },
-  {
-   "slug": "combinational-building-blocks",
-   "title": "Combinational building blocks",
-   "summary": "Multiplexers, decoders, encoders, adders and subtractors, comparators and arithmetic logic units.",
-   "requires": [
-    "digital-logic/logic-minimisation"
-   ]
-  },
-  {
-   "slug": "latches-flip-flops",
-   "title": "Latches and flip-flops",
-   "summary": "Bistable elements, SR and D latches, edge-triggered flip-flops, and setup, hold and propagation timing.",
-   "requires": [
-    "digital-logic/combinational-building-blocks"
-   ]
-  },
-  {
-   "slug": "finite-state-machines",
-   "title": "Finite-state machines",
-   "summary": "Moore and Mealy machines, state diagrams and tables, state assignment and state minimisation.",
-   "requires": [
-    "digital-logic/latches-flip-flops"
-   ]
-  },
-  {
-   "slug": "registers-counters",
-   "title": "Registers and counters",
-   "summary": "Shift registers, synchronous and asynchronous counters, and register-transfer design of simple datapaths.",
-   "requires": [
-    "digital-logic/finite-state-machines"
-   ]
-  },
-  {
-   "slug": "memories-programmable-logic",
-   "title": "Memories and programmable logic",
-   "summary": "ROM, SRAM and DRAM organisation, programmable logic devices and FPGAs.",
-   "requires": [
-    "digital-logic/registers-counters"
-   ]
-  },
-  {
-   "slug": "hardware-description",
-   "title": "Hardware description and timing",
-   "summary": "Describing hardware in Verilog, simulation and synthesis, static timing analysis and synchronous design practice.",
-   "requires": [
-    "digital-logic/finite-state-machines",
-    "digital-logic/memories-programmable-logic"
-   ]
-  }
- ],
- "history": [
-  {
-   "year": 1937,
-   "title": "Boolean algebra to circuits",
-   "detail": "The Boolean algebra, and the one that the logic is for, of the gate, and the one that the limit is for.",
-   "people": [
-    "Shannon"
-   ]
-  },
-  {
-   "year": 1948,
-   "title": "The transistor",
-   "detail": "The transistor, and the one that the gate is for, of the logic, and the one that the limit is for.",
-   "people": [
-    "Bardeen",
-    "Brattain",
-    "Shockley"
-   ]
-  },
-  {
-   "year": 1958,
-   "title": "The integrated circuit",
-   "detail": "The integrated circuit, and the one that the gate is for, of the sequential, and the one that the memory is for.",
-   "people": [
-    "Kilby",
-    "Noyce"
-   ]
-  },
-  {
-   "year": 1985,
-   "title": "The FPGA",
-   "detail": "The field-programmable gate, and the one that the array is for, of the logic, and the one that the describe is for.",
-   "people": [
-    "Haiberg"
-   ]
-  }
- ],
- "references": [
-  {
-   "title": "Digital Design, M. Mano",
-   "year": 2019,
-   "source": "book",
-   "note": "The gate, and sequential, and memory, and the describe, and the timing."
-  },
-  {
-   "title": "Verilog HDL, S. Brown",
-   "year": 2014,
-   "source": "book",
-   "note": "The describe, and the timing, and the limit is for."
-  },
-  {
-   "title": "Digital Integrated Circuits, W. Westra",
-   "year": 2012,
-   "source": "book",
-   "note": "The gate, and the level, and the limit is for."
-  }
- ],
- "next": [
-  "computer-architecture",
-  "digital-ic"
- ]
+  "slug": "digital-logic",
+  "title": "Digital Logic",
+  "full_title": "Digital Logic Design",
+  "area": "digital",
+  "level": 1,
+  "order": 20,
+  "tagline": "Number systems, Boolean algebra, combinational and sequential logic, state machines and hardware description",
+  "summary": "Every digital system is built from logic gates and flip-flops. This course covers number representations, Boolean algebra and logic minimisation, combinational building blocks, sequential circuits and finite-state machines, memories and programmable logic, and the design of digital hardware with a hardware description language.",
+  "overview": [],
+  "prerequisites": [],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "number-systems",
+      "title": "Number systems and codes",
+      "summary": "Binary, octal and hexadecimal numbers, two’s complement arithmetic, fixed-point numbers and codes such as BCD and Gray code.",
+      "requires": []
+    },
+    {
+      "slug": "boolean-algebra",
+      "title": "Boolean algebra and logic gates",
+      "summary": "Boolean algebra, logic gates, truth tables, and sum-of-products and product-of-sums canonical forms.",
+      "requires": [
+        "digital-logic/number-systems"
+      ]
+    },
+    {
+      "slug": "logic-minimisation",
+      "title": "Logic minimisation",
+      "summary": "Karnaugh maps, prime implicants, don’t-care conditions, the Quine–McCluskey method and multilevel logic.",
+      "requires": [
+        "digital-logic/boolean-algebra"
+      ]
+    },
+    {
+      "slug": "combinational-building-blocks",
+      "title": "Combinational building blocks",
+      "summary": "Multiplexers, decoders, encoders, adders and subtractors, comparators and arithmetic logic units.",
+      "requires": [
+        "digital-logic/logic-minimisation"
+      ]
+    },
+    {
+      "slug": "latches-flip-flops",
+      "title": "Latches and flip-flops",
+      "summary": "Bistable elements, SR and D latches, edge-triggered flip-flops, and setup, hold and propagation timing.",
+      "requires": [
+        "digital-logic/combinational-building-blocks"
+      ]
+    },
+    {
+      "slug": "finite-state-machines",
+      "title": "Finite-state machines",
+      "summary": "Moore and Mealy machines, state diagrams and tables, state assignment and state minimisation.",
+      "requires": [
+        "digital-logic/latches-flip-flops"
+      ]
+    },
+    {
+      "slug": "registers-counters",
+      "title": "Registers and counters",
+      "summary": "Shift registers, synchronous and asynchronous counters, and register-transfer design of simple datapaths.",
+      "requires": [
+        "digital-logic/finite-state-machines"
+      ]
+    },
+    {
+      "slug": "memories-programmable-logic",
+      "title": "Memories and programmable logic",
+      "summary": "ROM, SRAM and DRAM organisation, programmable logic devices and FPGAs.",
+      "requires": [
+        "digital-logic/registers-counters"
+      ]
+    },
+    {
+      "slug": "hardware-description",
+      "title": "Hardware description and timing",
+      "summary": "Describing hardware in Verilog, simulation and synthesis, static timing analysis and synchronous design practice.",
+      "requires": [
+        "digital-logic/finite-state-machines",
+        "digital-logic/memories-programmable-logic"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": [
+    "computer-architecture",
+    "digital-ic"
+  ]
 }

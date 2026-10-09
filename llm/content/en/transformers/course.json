@@ -6,57 +6,8 @@
   "level": 2,
   "order": 60,
   "tagline": "Self-attention, multi-head attention, positional encodings, the Transformer block and its variants",
-  "summary": "Since 2017 the Transformer has been the architecture of language models. This course derives self-attention and multi-head attention, positional encodings, the residual Transformer block, the encoder, decoder and encoder\u2013decoder variants, the cost of attention, and the efficient and sparse variants used at scale.",
-  "overview": {
-    "overview": [
-      "The transformer architecture \u2014 attention, positional encoding, and feedforward layers \u2014 is the backbone of all modern LLMs. This course covers multi-head attention and the transformer block.",
-      "Scaled dot-product attention with multiple heads allows each layer to mix information from arbitrary input positions. Residual connections and layer normalization stabilize deep stacks."
-    ],
-    "outcomes": [
-      "Trace the transformer block forward pass: Q, K, V, softmax, residual, norm.",
-      "Explain multi-head attention and why multiple heads help.",
-      "Compare positional encoding schemes: sinusoidal, learned, RoPE.",
-      "Describe causal masking and its role in autoregressive generation."
-    ],
-    "history": [
-      {
-        "year": 2017,
-        "title": "Attention is All You Need",
-        "detail": "Vaswani et al. introduced the transformer, replacing recurrence with attention.",
-        "people": [
-          "Vaswani"
-        ]
-      },
-      {
-        "year": 2019,
-        "title": "RoPE",
-        "detail": "Su et al. introduced rotary positional embeddings for length extrapolation.",
-        "people": [
-          "Su"
-        ]
-      },
-      {
-        "year": 2023,
-        "title": "FlashAttention",
-        "detail": "Dao et al. introduced IO-aware attention for faster training and inference.",
-        "people": [
-          "Dao"
-        ]
-      }
-    ],
-    "references": [
-      {
-        "title": "Attention Is All You Need",
-        "authors": "Vaswani et al.",
-        "year": 2017
-      },
-      {
-        "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
-        "authors": "Su et al.",
-        "year": 2021
-      }
-    ]
-  },
+  "summary": "Since 2017 the Transformer has been the architecture of language models. This course derives self-attention and multi-head attention, positional encodings, the residual Transformer block, the encoder, decoder and encoder–decoder variants, the cost of attention, and the efficient and sparse variants used at scale.",
+  "overview": [],
   "prerequisites": [
     "sequence-models"
   ],
@@ -98,8 +49,8 @@
     },
     {
       "slug": "architecture-families",
-      "title": "Encoders, decoders and encoder\u2013decoders",
-      "summary": "BERT-style encoders, GPT-style decoders and T5-style encoder\u2013decoders, and what each is good for.",
+      "title": "Encoders, decoders and encoder–decoders",
+      "summary": "BERT-style encoders, GPT-style decoders and T5-style encoder–decoders, and what each is good for.",
       "requires": [
         "transformers/transformer-block"
       ]

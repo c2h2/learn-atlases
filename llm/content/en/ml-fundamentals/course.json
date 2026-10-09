@@ -6,49 +6,8 @@
   "level": 1,
   "order": 20,
   "tagline": "Supervised learning, loss functions, generalisation, regularisation and evaluation",
-  "summary": "Before neural networks come the ideas that govern all of machine learning: learning a function from examples, choosing a loss, fitting by optimisation and making sure the result generalises. This course develops them with linear and logistic regression, evaluation metrics and the bias\u2013variance trade-off.",
-  "overview": {
-    "overview": [
-      "ML fundamentals cover supervised learning, generalization, bias-variance, and model evaluation. This course provides the conceptual foundations for understanding LLMs.",
-      "The key insight is that LLMs generalize via scale, but the underlying learning principles remain the same."
-    ],
-    "outcomes": [
-      "Explain supervised learning and loss functions.",
-      "Describe the bias-variance trade-off and overfitting.",
-      "Analyze generalization and the double descent phenomenon.",
-      "Evaluate model selection and cross-validation methods."
-    ],
-    "history": [
-      {
-        "year": 2019,
-        "title": "Double descent",
-        "detail": "Belkin et al. showed test error can decrease again after overparameterization.",
-        "people": [
-          "Belkin"
-        ]
-      },
-      {
-        "year": 2020,
-        "title": "Neural scaling laws",
-        "detail": "Kaplan et al. showed loss scales as a power law with model size.",
-        "people": [
-          "Kaplan"
-        ]
-      }
-    ],
-    "references": [
-      {
-        "title": "Reconciling Modern Machine-Learning Practice",
-        "authors": "Belkin et al.",
-        "year": 2019
-      },
-      {
-        "title": "Scaling Laws for Neural Language Models",
-        "authors": "Kaplan et al.",
-        "year": 2020
-      }
-    ]
-  },
+  "summary": "Before neural networks come the ideas that govern all of machine learning: learning a function from examples, choosing a loss, fitting by optimisation and making sure the result generalises. This course develops them with linear and logistic regression, evaluation metrics and the bias–variance trade-off.",
+  "overview": [],
   "prerequisites": [
     "math-for-ml"
   ],
@@ -83,7 +42,7 @@
     {
       "slug": "generalisation",
       "title": "Generalisation",
-      "summary": "Training, validation and test sets, overfitting, the bias\u2013variance trade-off and double descent.",
+      "summary": "Training, validation and test sets, overfitting, the bias–variance trade-off and double descent.",
       "requires": [
         "ml-fundamentals/linear-regression"
       ]

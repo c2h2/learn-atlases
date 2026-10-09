@@ -4,9 +4,12 @@ A detailed, interactive course through university electrical and electronic engi
 English and Simplified Chinese, on the same engine as [Maths Atlas](../maths/). Plain PHP, no
 framework and no database.
 
-**Status: curriculum skeleton.** All 22 courses and 182 chapters are defined, with chapter
-summaries and prerequisites. Lessons, course overviews, outcomes, history, references, the
-timeline and EE-specific figures are still to be written; missing chapters show as "in preparation".
+**Status: being written.** All 22 courses and 182 chapters are defined, with chapter summaries and
+prerequisites. Circuit Analysis I is written (its nine lessons and course record), and so are the
+course record and first two lessons of Circuit Analysis II. The other lessons and course records,
+the Chinese lessons, the timeline and the EE-specific figures are still to be written; missing
+chapters show as "in preparation". Generated placeholder text that stood in for most lessons until
+2026-10-09 is kept in [`pending/`](pending/) for reference only.
 
 | Year | Courses |
 |---|---|
@@ -32,4 +35,6 @@ node tools/labcheck.js [--lessons] [--zh]       # load figures and report errors
 ```
 
 `tools/check.php` lists every missing lesson and empty course field as a warning, so its output is
-the to-do list.
+the to-do list. It reports as an **error** any lesson or course field that contains generated filler
+like the text in [`pending/`](pending/), so a page is either written by hand or visibly "in
+preparation".

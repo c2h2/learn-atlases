@@ -7,56 +7,7 @@
   "order": 80,
   "tagline": "In-context learning, prompt design, structured output, embeddings, vector search and retrieval-augmented generation",
   "summary": "Much of what a language model can do is unlocked by what you put in its context. This course covers in-context learning and prompt design, structured output, text embeddings and vector search, retrieval-augmented generation and its evaluation, and the problem of hallucination.",
-  "overview": {
-    "overview": [
-      "Prompting and retrieval augment LLMs at inference time. This course covers prompt engineering, chain-of-thought, self-consistency, and RAG.",
-      "The key insight is that prompts and retrieval can shape behavior without changing weights: the model adapts via context, not gradient updates."
-    ],
-    "outcomes": [
-      "Describe prompt engineering: few-shot, CoT, self-consistency.",
-      "Explain RAG: embedding, retrieval, reranking, and augmentation.",
-      "Analyze prompt sensitivity and the fragility of few-shot learning.",
-      "Evaluate retrieval quality and answer faithfulness."
-    ],
-    "history": [
-      {
-        "year": 2022,
-        "title": "Chain of Thought",
-        "detail": "Wei et al. showed chain-of-thought prompting elicits reasoning in LLMs.",
-        "people": [
-          "Wei"
-        ]
-      },
-      {
-        "year": 2022,
-        "title": "Self-consistency",
-        "detail": "Wang et al. introduced self-consistency decoding over multiple reasoning paths.",
-        "people": [
-          "Wang"
-        ]
-      },
-      {
-        "year": 2023,
-        "title": "RAG survey",
-        "detail": "Lewis et al. surveyed retrieval-augmented generation methods.",
-        "people": [
-          "Lewis"
-        ]
-      }
-    ],
-    "references": [
-      {
-        "title": "Chain-of-Thought Prompting Elicits Reasoning",
-        "authors": "Wei et al.",
-        "year": 2022
-      },
-      {
-        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP",
-        "authors": "Lewis et al.",
-        "year": 2020
-      }
-    ]
-  },
+  "overview": [],
   "prerequisites": [
     "transformers"
   ],

@@ -113,3 +113,8 @@ bash tools/check.sh <course> [<course> …]
 Fix every `ERROR`; depth `warn`ings must be gone for finished lessons. Preview at
 `http://f.g77k.com/learn/llm/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or `node tools/shot.js "lesson.php?c=…&l=…" out.png`).
+
+Generated text is an error, whatever its length: a lesson or course field containing the filler
+phrasing kept in `pending/` ("the one that the … is for", or a lesson that opens with
+"Course: **…** — chapter …") fails the check. Write every lesson by hand, and never copy text out of
+`pending/`.

@@ -7,19 +7,12 @@
   "order": 130,
   "tagline": "Microcontrollers, embedded C, timers and interrupts, interfaces, sensors and real-time systems",
   "summary": "Embedded computers control everything from washing machines to aircraft. This course programs microcontrollers close to the hardware: memory-mapped peripherals, timers and interrupts, serial interfaces, analog input and output, real-time operating systems and the design of reliable, low-power embedded systems.",
-  "overview": [
-    "Embedded systems and the one that the processor is for, are the one that the limit is for, and the one that the time is for. This course follows the system from the core and the memory to the real-time and the one that the design is for, and gives the method and the check that make it work.",
-    "We build the system from the parts and then study how it runs and the one that the time is for."
-  ],
+  "overview": [],
   "prerequisites": [
-    "computer-architecture"
+    "computer-architecture",
+    "electronics-2"
   ],
-  "outcomes": [
-    "Describe the core and the memory and the one that the time is for, of the system",
-    "Describe the real-time and the one that the limit is for, in the design",
-    "Describe the interface and the one that the limit is for, in the system",
-    "Describe the power and the one that the time is for, in the design"
-  ],
+  "outcomes": [],
   "chapters": [
     {
       "slug": "microcontrollers",
@@ -80,62 +73,7 @@
       ]
     }
   ],
-  "history": [
-    {
-      "year": 1971,
-      "title": "The microprocessor",
-      "detail": "The microprocessor and the one that the processor is for, is the one that the limit is for, of the system.",
-      "people": [
-        "Intel"
-      ]
-    },
-    {
-      "year": 1975,
-      "title": "The single-chip",
-      "detail": "The single-chip and the one that the system is for, is the one that the limit is for, of the time.",
-      "people": [
-        "Intel"
-      ]
-    },
-    {
-      "year": 1985,
-      "title": "The real-time",
-      "detail": "The real-time and the one that the time is for, is the one that the limit is for, of the design.",
-      "people": [
-        "Motorola"
-      ]
-    },
-    {
-      "year": 1995,
-      "title": "The low-power",
-      "detail": "The low-power and the one that the design is for, is the one that the time is for, of the system.",
-      "people": [
-        "ARM"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "title": "Embedded Systems",
-      "authors": "Grob and Bishop",
-      "year": 2012,
-      "note": "The standard reference for the system and the design.",
-      "slug": "grob"
-    },
-    {
-      "title": "Embedded C",
-      "authors": "Montgomery",
-      "year": 2015,
-      "note": "A practical treatment of the code and the time.",
-      "slug": "montgomery"
-    },
-    {
-      "title": "Real-Time",
-      "authors": "Sha and Liu",
-      "year": 2008,
-      "note": "A rigorous treatment of the time and the design.",
-      "slug": "sha"
-    }
-  ],
+  "history": [],
+  "references": [],
   "next": []
 }

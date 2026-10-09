@@ -7,6 +7,8 @@ used, and how to make them safe — in English and Simplified Chinese, on the sa
 **Status: curriculum skeleton.** All 18 courses and 137 chapters are defined, with chapter summaries
 and prerequisites. Lessons, course overviews, outcomes, history, references, the timeline and
 LLM-specific figures are still to be written; missing chapters show as "in preparation".
+Generated placeholder lessons that stood in for them until 2026-10-09 are kept in
+[`pending/`](pending/) for reference only.
 
 | Stage | Courses |
 |---|---|
@@ -32,4 +34,6 @@ node tools/labcheck.js [--lessons] [--zh]       # load figures and report errors
 ```
 
 `tools/check.php` lists every missing lesson and empty course field as a warning: its output is the
-to-do list.
+to-do list. It reports as an **error** any lesson or course field that contains generated filler
+like the text in [`pending/`](pending/), so a page is either written by hand or visibly "in
+preparation".

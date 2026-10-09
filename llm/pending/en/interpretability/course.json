@@ -1,0 +1,139 @@
+{
+  "slug": "interpretability",
+  "title": "Interpretability",
+  "full_title": "Interpretability",
+  "area": "safety",
+  "level": 4,
+  "order": 180,
+  "tagline": "Probing, the residual stream, circuits, superposition, sparse features and steering",
+  "summary": "What computations happen inside a language model? This course covers probing and attribution, the residual-stream view of Transformers, circuits such as induction heads, superposition, sparse dictionary learning of features, causal interventions and steering, and the open problems of understanding large models.",
+  "overview": {
+    "overview": [
+      "Interpretability asks whether we understand what LLMs actually compute. This course covers circuits, superposition, causal effects, and mechanistic interpretability.",
+      "The key insight is that individual neurons are not interpretable in isolation. Circuits, not neurons, are the unit of interpretation."
+    ],
+    "outcomes": [
+      "Explain mechanistic interpretability and circuit discovery.",
+      "Describe activation patching and causal mediation analysis.",
+      "Analyze superposition and polysemantic neurons.",
+      "Evaluate interpretability methods for faithfulness."
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "title": "Othello-GPT",
+        "detail": "Li et al. showed GPT develops internal world models for game state.",
+        "people": [
+          "Li"
+        ]
+      },
+      {
+        "year": 2021,
+        "title": "Toy Models",
+        "detail": "Elhage et al. studied toy models of superposition and polysemantic neurons.",
+        "people": [
+          "Elhage"
+        ]
+      },
+      {
+        "year": 2023,
+        "title": "Sparse Autoencoders",
+        "detail": "Cunningham et al. introduced sparse autoencoders for interpreting model internals.",
+        "people": [
+          "Cunningham"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Toy Models of Superposition",
+        "authors": "Elhage et al.",
+        "year": 2022
+      },
+      {
+        "title": "Towards Sparse Superposition Accounts",
+        "authors": "Cunningham et al.",
+        "year": 2023
+      },
+      {
+        "title": "Language Models Represent Space and Time",
+        "authors": "Goh et al.",
+        "year": 2023
+      }
+    ]
+  },
+  "prerequisites": [
+    "transformers"
+  ],
+  "outcomes": [],
+  "chapters": [
+    {
+      "slug": "interpretability-goals",
+      "title": "Goals and methods of interpretability",
+      "summary": "Behavioural, attributional and mechanistic approaches, and what an explanation should achieve.",
+      "requires": [
+        "transformers/transformer-block"
+      ]
+    },
+    {
+      "slug": "probing-attribution",
+      "title": "Probing and attribution",
+      "summary": "Linear probes, saliency, attention analysis and their pitfalls.",
+      "requires": [
+        "interpretability/interpretability-goals"
+      ]
+    },
+    {
+      "slug": "residual-stream",
+      "title": "The residual stream",
+      "summary": "Transformers as sums of paths, the logit lens and reading intermediate predictions.",
+      "requires": [
+        "interpretability/interpretability-goals"
+      ]
+    },
+    {
+      "slug": "circuits",
+      "title": "Circuits",
+      "summary": "Induction heads, indirect-object identification and reverse-engineering small mechanisms.",
+      "requires": [
+        "interpretability/residual-stream"
+      ]
+    },
+    {
+      "slug": "superposition",
+      "title": "Superposition and polysemanticity",
+      "summary": "Why neurons mix many features, and toy models of superposition.",
+      "requires": [
+        "interpretability/circuits"
+      ]
+    },
+    {
+      "slug": "sparse-features",
+      "title": "Sparse dictionary learning",
+      "summary": "Sparse autoencoders, transcoders and dictionaries of features in large models.",
+      "requires": [
+        "interpretability/superposition"
+      ]
+    },
+    {
+      "slug": "causal-interventions",
+      "title": "Causal interventions and steering",
+      "summary": "Activation patching, ablations and steering vectors.",
+      "requires": [
+        "interpretability/circuits"
+      ]
+    },
+    {
+      "slug": "open-problems",
+      "title": "Open problems in interpretability",
+      "summary": "Scaling interpretability, the faithfulness of explanations and uses for safety.",
+      "requires": [
+        "interpretability/sparse-features",
+        "interpretability/causal-interventions"
+      ]
+    }
+  ],
+  "history": [],
+  "references": [],
+  "next": []
+}

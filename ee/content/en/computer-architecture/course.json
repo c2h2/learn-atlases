@@ -7,19 +7,11 @@
   "order": 80,
   "tagline": "Instruction sets, processor datapaths, pipelining, memory hierarchy and parallelism",
   "summary": "A processor is a large finite-state machine that executes instructions. This course follows a program from its instruction set to the hardware: computer arithmetic, single-cycle and pipelined datapaths, hazards, caches and virtual memory, input and output, and the parallel architectures of multicore processors and GPUs.",
-  "overview": [
-    "A processor is a finite-state machine that runs your program. This course follows a program from its instruction set to the hardware that executes it.",
-    "We study computer arithmetic, single-cycle and pipelined datapaths, the hazards that limit them, the memory hierarchy from caches to virtual memory, input and output, and how multicore and GPU machines exploit parallelism."
-  ],
+  "overview": [],
   "prerequisites": [
     "digital-logic"
   ],
-  "outcomes": [
-    "Describe the instruction set architecture, registers, and addressing modes of a RISC-V-style processor",
-    "Build the datapath and control of a single-cycle and a pipelined processor",
-    "Identify and resolve data and control hazards with forwarding and stalls",
-    "Analyse the memory hierarchy, caches, and virtual memory, and measure performance with CPI and Amdahl's law"
-  ],
+  "outcomes": [],
   "chapters": [
     {
       "slug": "instruction-set-architecture",
@@ -89,66 +81,8 @@
       ]
     }
   ],
-  "history": [
-    {
-      "year": 1946,
-      "title": "ENIAC",
-      "detail": "One of the earliest general-purpose electronic computers, programmed by rewiring its plugboards.",
-      "people": [
-        "Mauchly",
-        "Eckert"
-      ]
-    },
-    {
-      "year": 1964,
-      "title": "IBM System/360",
-      "detail": "A unified instruction set that defined compatibility across a range of machines.",
-      "people": [
-        "IBM"
-      ]
-    },
-    {
-      "year": 1981,
-      "title": "MIPS",
-      "detail": "A reduced instruction set showing that a simple orthogonal set runs at high clock rates.",
-      "people": [
-        "Paterson",
-        "Hennessy",
-        "Patterson"
-      ]
-    },
-    {
-      "year": 1995,
-      "title": "Pentium Pro",
-      "detail": "An out-of-order superscalar that reordered and renamed instructions to fill pipeline stalls.",
-      "people": [
-        "Intel"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "title": "Computer Architecture: A Quantitative Approach",
-      "authors": "Hennessy and Patterson",
-      "year": 2019,
-      "note": "The standard reference, quantifying every design choice.",
-      "slug": "hennessy-patterson"
-    },
-    {
-      "title": "RISC-V ISA Manual, V",
-      "authors": "Krste Asanovic et al",
-      "year": 2019,
-      "note": "The open instruction set, the basis of this course.",
-      "slug": "riscv"
-    },
-    {
-      "title": "Digital Design and Computer Architecture",
-      "authors": "Harris and Harris",
-      "year": 2012,
-      "note": "A design-oriented treatment of datapaths and pipelines.",
-      "slug": "harris"
-    }
-  ],
+  "history": [],
+  "references": [],
   "next": [
     "embedded-systems",
     "digital-ic"
