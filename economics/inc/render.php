@@ -23,6 +23,20 @@ function brand_mark(): string
         . '</svg>';
 }
 
+/** The landing page with every atlas, in the language of this page. */
+function home_url(): string
+{
+    return '../?lang=' . lang();
+}
+
+/** The landing page's own mark, so the way back looks like the page it leads to. */
+function learn_mark(): string
+{
+    return '<svg class="learn-mark" viewBox="0 0 38 16" aria-hidden="true"><line x1="6" y1="8" x2="32" y2="8"/>'
+        . '<circle cx="6" cy="8" r="5.6" style="fill:#2a78d6"/><circle cx="19" cy="8" r="5.6" style="fill:#eda100"/>'
+        . '<circle cx="32" cy="8" r="5.6" style="fill:#4a3aa7"/></svg>';
+}
+
 function site_name(): string
 {
     return t('Economics & Finance Atlas') . (MA_SKELETON ? paren(t('skeleton')) : '');
@@ -60,13 +74,14 @@ function page_head(string $title, string $active = '', array $opt = []): void
     echo '</head><body>';
     echo '<a class="visually-hidden" href="#main">' . h(t('Skip to content')) . '</a>';
     echo '<header class="site-head"><div class="wrap">';
-    echo '<a class="brand" href="' . h(url('index.php')) . '">' . brand_mark() . '<span class="brand-name">' . h($site) . '</span></a>';
+    echo '<div class="head-crumbs"><a class="home-crumb" href="' . h(home_url()) . '" title="' . h(t('All atlases')) . '">' . learn_mark()
+        . '<span>' . h(t('Learn')) . '</span></a><span class="crumb-sep" aria-hidden="true">/</span>';
+    echo '<a class="brand" href="' . h(url('index.php')) . '">' . brand_mark() . '<span class="brand-name">' . h($site) . '</span></a></div>';
     echo '<nav class="site-nav" aria-label="' . h(t('Main')) . '">';
     foreach ($nav as $k => [$href, $label]) {
         echo '<a href="' . h(url($href)) . '"' . ($k === $active ? ' aria-current="page"' : '') . '>' . h(t($label)) . '</a>';
     }
     echo '</nav><div class="head-tools">';
-    echo '<a class="home-link" href="../" title="' . h(t('All atlases')) . '">' . h(t('Learn')) . '</a>';
     echo '<a class="lang-switch" href="' . h(lang_url($other)) . '" hreflang="' . h(LANGS[$other]['html']) . '" lang="' . h(LANGS[$other]['html']) . '" title="' . h($other === 'zh' ? '切换到中文' : 'Switch to English') . '">' . h(LANGS[$other]['switch']) . '</a>';
     echo '<button class="theme-toggle" type="button" aria-label="' . h(t('Toggle dark theme')) . '">' . icon('moon') . '</button>';
     echo '</div></div></header><main id="main">';
@@ -77,7 +92,7 @@ function page_foot(): void
     echo '</main><footer class="site-foot"><div class="wrap"><div>';
     echo '<p><b>' . h(site_name()) . '</b> — ' . h(t('a free, detailed and interactive tour of the undergraduate economics and finance curriculum, written to be read alongside lectures and textbooks. For education only — not investment or financial advice.')) . '</p>';
     echo '<p>' . h(t('Formulas are typeset with KaTeX. Interactive figures run in your browser; no data leave your device. Your reading progress is stored only in this browser.')) . '</p>';
-    echo '</div><div><p><a href="' . h(url('about.php')) . '">' . h(t('About and how to use')) . '</a></p><p><a href="../">' . h(t('All atlases')) . '</a></p></div></div></footer>';
+    echo '</div><div><p><a href="' . h(url('about.php')) . '">' . h(t('About and how to use')) . '</a></p><p><a href="' . h(home_url()) . '">' . h(t('All atlases')) . '</a></p></div></div></footer>';
     if (MathCtx::$misses > 0) {
         // formulas not yet in the build cache: typeset them in the browser
         echo '<script src="' . h(asset('assets/vendor/katex/katex.min.js')) . '"></script><script>MA.typesetFallback && MA.typesetFallback();</script>';

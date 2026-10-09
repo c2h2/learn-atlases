@@ -116,6 +116,20 @@ function brand_mark(): string
         . '<g class="bd c-noncanonical"><circle cx="32" cy="8" r="5.6"/></g></svg>';
 }
 
+/** The landing page with every atlas, in the language of this page. */
+function home_url(): string
+{
+    return '../?lang=' . lang();
+}
+
+/** The landing page's own mark, so the way back looks like the page it leads to. */
+function learn_mark(): string
+{
+    return '<svg class="learn-mark" viewBox="0 0 38 16" aria-hidden="true"><line x1="6" y1="8" x2="32" y2="8"/>'
+        . '<circle cx="6" cy="8" r="5.6" style="fill:#2a78d6"/><circle cx="19" cy="8" r="5.6" style="fill:#eda100"/>'
+        . '<circle cx="32" cy="8" r="5.6" style="fill:#4a3aa7"/></svg>';
+}
+
 function residue_legend(bool $withD = true): string
 {
     $d = read_json(ATLAS_DATA . '/residues.json');
@@ -159,13 +173,14 @@ function page_head(string $title, string $active = '', array $opt = []): void
     echo '</head><body>';
     echo '<a class="visually-hidden" href="#main">' . h(t('Skip to content')) . '</a>';
     echo '<header class="site-head"><div class="wrap">';
-    echo '<a class="brand" href="' . h(url('index.php')) . '">' . brand_mark() . '<span class="brand-name">' . h($site) . '</span></a>';
+    echo '<div class="head-crumbs"><a class="home-crumb" href="' . h(home_url()) . '" title="' . h(t('All atlases')) . '">' . learn_mark()
+        . '<span>' . h(t('Learn')) . '</span></a><span class="crumb-sep" aria-hidden="true">/</span>';
+    echo '<a class="brand" href="' . h(url('index.php')) . '">' . brand_mark() . '<span class="brand-name">' . h($site) . '</span></a></div>';
     echo '<nav class="site-nav" aria-label="' . h(t('Main')) . '">';
     foreach ($nav as $k => [$href, $label]) {
         echo '<a href="' . h(url($href)) . '"' . ($k === $active ? ' aria-current="page"' : '') . '>' . h(t($label)) . '</a>';
     }
     echo '</nav><div class="head-tools">';
-    echo '<a class="home-link" href="../" title="' . h(t('All atlases')) . '">' . h(t('Learn')) . '</a>';
     echo '<a class="lang-switch" href="' . h(lang_url($other)) . '" hreflang="' . h(LANGS[$other]['html']) . '" lang="' . h(LANGS[$other]['html']) . '" title="' . h($other === 'zh' ? '切换到中文' : 'Switch to English') . '">' . h(LANGS[$other]['switch']) . '</a>';
     echo '<button class="theme-toggle" type="button" aria-label="' . h(t('Toggle dark theme')) . '">' . icon('moon') . '</button>';
     echo '</div></div></header><main id="main">';

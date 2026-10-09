@@ -122,8 +122,14 @@ button, input, select { font: inherit; color: inherit; }
   .head-tools { grid-column: 2; grid-row: 1; }
 }
 .head-tools { display: flex; align-items: center; gap: 8px; }
-.home-link { font-size: 0.875rem; color: var(--ink-3); text-decoration: none; padding: 6px 8px; border-radius: 6px; }
-.home-link:hover { color: var(--ink); background: var(--hover); }
+.head-crumbs { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.head-crumbs .brand { min-width: 0; }
+.home-crumb { display: inline-flex; align-items: center; gap: 7px; flex: none; margin-left: -6px; padding: 5px 6px; border-radius: 6px; color: var(--ink-2); text-decoration: none; font-size: 0.9375rem; font-weight: 600; }
+.home-crumb:hover { color: var(--ink); background: var(--hover); }
+.learn-mark { width: 30px; height: 13px; flex: none; }
+.learn-mark line { stroke: var(--rule-2); stroke-width: 1.5; }
+.crumb-sep { flex: none; color: var(--rule-2); font-size: 1.15rem; line-height: 1; }
+@media (max-width: 520px) { .head-crumbs .brand-mark { display: none; } .head-crumbs { gap: 6px; } .home-crumb { font-size: 0.875rem; gap: 6px; } .head-crumbs .brand-name { font-size: 0.95rem; line-height: 1.2; } }
 .lang-switch {
   display: inline-grid; place-items: center; min-width: 34px; height: 34px; padding: 0 10px; border-radius: 999px;
   border: 1px solid var(--rule-2); color: var(--ink-2); text-decoration: none; font-size: 0.875rem; font-weight: 600;
