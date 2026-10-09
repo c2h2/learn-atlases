@@ -1,213 +1,183 @@
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The bone, and the one that the joint is for, is the one that the limit is for, of the muscle and the one that the nerve is for. This lesson defines the structure, and the one that the limb is for, of the bone and the one that the limit is for, and gives the nerve, and the one that the muscle is for. The method, and the check, are the one for the structure and the bone and the one that the limb is for.
+The back and the upper limb are one functional unit — an erect column that transmits weight, a sling of muscles that positions a prehensile end-organ, and a nerve plexus stretched between them that can be injured at every one of its named stations. Clinically the pair is taught as three stories: the spine and its discs (back pain, root lesions, the cauda that must be decompressed today), the brachial plexus and its terminal nerves (each with its fracture, its compression and its signature hand), and the hand's compartments (where infection and swelling obey fascial geometry, and where the difference between a splint and an operation is anatomical reading).
 
- The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The description, and the one that the bone is for, is the use, of the structure and the bone.
+This chapter covers the vertebral column and back muscles, the shoulder and scapular region, the brachial plexus and the nerves of the limb, the arm and forearm compartments, and the hand.
 
- The bone, and the one that the joint is for, is the one that the limit is for, is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone.
+## The vertebral column and the back
 
- The muscle, and the one that the function is for, is the one that the limit is for, is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle.
-
- The nerve, and the one that the control is for, is the one that the limit is for, is for, in the branch. The description, and the one that the branch is for, is the use, of the branch and the nerve.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, is for, in the region. The description, and the one that the region is for, is the use, of the region and the vessel.
-
- The tendon, and the one that the muscle is for, is the one that the limit is for, is for, in the insertion. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
-
-::: definition Region {#def-reg}
-The **egion** is the one, and the one that the limb is for, that is the bone, is for, and the one that the limit is for. The **one**, and the one that the joint is for, is the one that the limit is for, is for, in the articulation and the one that the muscle is for. The description, and the one that the bone is for, is the use, of the structure and the bone, and the one that the limit is for.
+::: definition The vertebral column {#def-spine}
+The column is 33 vertebrae — **7 cervical, 12 thoracic, 5 lumbar, 5 fused sacral, 4 coccygeal** — joined by **intervertebral discs** (nucleus pulposus, a notochordal remnant, in an annulus fibrosus; the discs are 25% of column length and thicker anteriorly in the lumbar region, which is one way lumbar lordosis is built), **facet (zygapophysial) joints** posteriorly, and the **anterior and posterior longitudinal ligaments**. The adult curvatures — thoracic and sacral **kyphoses** (primary, fetal), cervical and lumbar **lordoses** (secondary, acquired with head-lifting and walking) — make the column a spring whose load-bearing capacity rises faster than the sum of its parts. The **spinal cord** ends at **L1/L2 in adults** (lower in infants — hence the lower level chosen for infant lumbar puncture) as the **conus medullaris**, and the **cauda equina** and **filum terminale** continue in the **lumbar cistern** (subarachnoid space to S2), which is why needle work below L3/4 samples CSF without touching cord.
 :::
 
-::: proposition Nerve {#prop-nerve}
-The **erve** is the one that the control is for, is for, in the branch.
-$$
-\text{motor}:\ \text{muscle},\ \text{sensory}:\ \text{skin}.
-$$
-and the one that the limb is for. The description, and the one that the branch is for, is the use, of the branch and the nerve. So the nerve, and the one that the limit is for, is the one that the branch, is for, and the innervation, and the one that the muscle is for.
+::: definition The muscles of the back {#def-back-muscles}
+The back is arranged in layers. **Superficial** (limb-moved): trapezius (spinal accessory), levator scapulae, rhomboids, and — limb-moving in evolutionary terms but respiratory in function — latissimus dorsi and serratus posterior. **Intermediate** (axial body-wall derivatives): the respiratory erector-trunk bed and the **thoracolumbar (lumbar) fascia**, whose middle and posterior layers envelope **erector spinae** (iliocostalis laterally, longissimus, spinalis medially) and whose anterior layer lines quadratus lumborum; intra-abdominal pressure, transmitted through this fascia, is the reason the abdomen is a posterior wall of muscle, not just of the abdominal muscles in front. **Deep (intrinsic)**: erector spinae as the long brace, **transversospinalis** (semispinalis, multifidus — segmental, proprioceptive, first to inhibit and last to recover in chronic back pain), and the **interspinales and rotatores** closest to the joints. The intrinsic muscles are supplied by **posterior rami**, the limb and wall muscles by anterior rami — a division that determines which nerve lesion does what.
 :::
 
-::: proposition Vessel {#prop-vessel}
-The **essel** is the one that the supply is for, is for, in the region.
-$$
-\text{artery}: \text{supply},\ \text{vein}: \text{return}.
-$$
-and the one that the region is for. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vessel, and the one that the limit is for, is the one that the region, is for, and the circulation, and the one that the limb is for.
+::: theorem The disc herniates posterolaterally, and the traversing root pays {#thm-disc}
+The posterior longitudinal ligament is wide and strong centrally and narrows laterally; the annulus is weakest posterolaterally. A herniation therefore usually compresses in the lumbar spine not the root that exits at that level (which lies in the foramen above, protected) but the **traversing root** heading for the foramen below: an **L4/5 paracentral disc compresses the L5 root**, and an L5/S1 disc the S1 root. Central prolapse at lower levels threatens the cauda equina — an emergency. A **far-lateral** herniation, by contrast, catches the exiting root (L4/5 far-lateral: the L4 root), which is why the level of a motor deficit must be read against the disc's position, not just its height.
 :::
 
- The structure, and the one that the limb is for, is the one that the bone is for. The joint, and the one that the articulation is for, is the one that the limit is for, in the movement.
+::: proof
+The dermatomal and myotomal consequences follow the rule. **L5** (L4/5 paracentral): weakness of great-toe extension (extensor hallucis longus) and hip abduction, numbness over the lateral leg and dorsum of the foot, normal or reduced medial knee jerk, the root whose tension test is **straight-leg raise** (lifting the straight leg stretches L4–S1 across the disc). **S1** (L5/S1): weak plantarflexion and heel-walking, lost ankle jerk, lateral foot and small-toe numbness, positive crossed straight-leg raise carrying higher specificity. **Cauda equina syndrome** is the posteromedial disc's catastrophe — bilateral sciatica, **saddle anaesthesia (S3–5)**, bladder and bowel dysfunction (retention with overflow before incontinence, painless and late), and motor weakness variable in pattern; the lesion is the sac of nerve roots below the conus, and the operation is decompression **within 24–48 hours**, because bladder recovery falls steeply with delay: the most time-critical diagnosis in this chapter, and one the anatomy makes definable (the saddle dermatomes and painless retention are the two red flags out of ten). The same column explains referred pain: **somatic** pain from periosteum, facet joints and the posterior annulus (sinuvertebral nerve, the recurrent branch of the ventral ramus) is localised in the back; **root** pain is shooting below the knee in a line the patient can trace; and disc pain itself — the "chemical discitis" of nucleus acid and inflammatory mediators on the root — is why radicular pain can exist with little compression on imaging, a fact that protects patients from operations on pictures.
+:::
 
- The joint, and the one that the articulation is for, is the one that the limit is for, in the movement. The description, and the one that the articulation is for, is the use, of the articulation and the joint.
-
- The muscle, and the one that the contraction is for, is the one that the limit is for, in the function. The description, and the one that the function is for, is the use, of the function and the muscle.
-
- The nerve, and the one that the branch is for, is the one that the limit is for, in the control. The description, and the one that the branch is for, is the use, of the branch and the nerve.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel.
-
- The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
-
- The membrane, and the one that the joint is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane.
-
- The ligament, and the one that the joint is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament.
-
-## Worked cases
-
-::: example The bone, and the articulation {#ex-bone}
-A clinical note locates the finding at the articulation described.
+::: example Lumbar puncture, layer by layer {#ex-lp}
+A 24-year-old with suspected meningitis needs CSF. You choose the L3/4 (or L4/5) space, lateral decubitus, knees drawn up.
 ::: solution
-The bone, and the one that the articulation is for, is the one that the limit is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone. For the articulation, and the one that the bone is for, the joint, and the one that the limit is for, is the one that the movement is for, is for.
+The needle's path is the back's layer list: **skin, superficial fascia, supraspinous ligament, interspinous ligament, ligamentum flavum** (the first "give", the elastic membrane that seals the canal and is the target: miss it and the needle lies between laminae), **epidural space** (fat and the valveless internal vertebral venous plexus, which bleeds readily in coagulopathy), **dura** (the second give), **arachnoid**, and the **subarachnoid cistern** with its cauda equina roots floating aside of the bevel — which is the reason the procedure is safe at L3/4 or below: the cauda moves, the cord does not. The approach is median (flexion opens the horizontal lumbar spines like pages) or paramedian. The after-risk: a **post-dural puncture headache** from CSF leak, whose incidence falls with pencil-point needles and with bevel orientation parallel to the dural fibres. In infants the cord ends lower, so the sac is entered at **L4/5 or below**, located by the iliac-crest line (**Tuffier's line**, at the L4 spine or L4/5 space) — the universal pelvic landmark felt first when positioning.
 :::
 :::
 
-::: example The muscle, and the contraction {#ex-muscle}
-A person presents with a deficit that localises to the muscle examined.
+## The shoulder girdle and rotator cuff
+
+::: definition The shoulder complex {#def-shoulder}
+The **pectoral (shoulder) girdle** — clavicle (subcutaneous along its whole length and the strut that props the limb off the trunk; the first bone to ossify and the last to fuse medially, at 25) and scapula (floating on muscle, its **glenoid** a shallow socket enlarged by the fibrocartilaginous **labrum**) — trades stability for range. Stability is supplied by the **rotator cuff** (the four muscles whose tendons fuse with the capsule: **supraspinatus** — initiation of abduction, the tendon most often torn — **infraspinatus** and **teres minor** (external rotation), **subscapularis** (internal rotation), supplied by the suprascapular (supraspinatus, infraspinatus), upper and lower subscapular (subscapularis) and axillary (teres minor) nerves), the **long head of biceps** in its intertubercular groove (a humeral head depressor and a weak flexor), the glenohumeral ligaments and negative pressure, and the **coracoacromial arch** above (the roof against which the cuff impinges, with the **subacromial bursa** in between). The **quadrilateral space** (teres minor above, subscapularis/capsule in front, teres major below, humerus laterally) transmits the **posterior circumflex humeral artery and the axillary nerve** — the bundle compressed in the space's own syndrome and at risk in posterior dislocation.
+:::
+
+::: example The arm that will not go back in {#ex-shoulder}
+A 22-year-old rugby player's arm is abducted and externally rotated after a tackle; he supports the elbow with the other hand; the shoulder looks "squared", and there is numbness over the regimental-badge area.
 ::: solution
-The muscle, and the one that the contraction is for, is the one that the limit is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle. For the contraction, and the one that the muscle is for, the nerve, and the one that the limit is for, is the one that the branch is for, is for.
+This is an **anterior (subcoracoid) dislocation** — 95% of shoulder dislocations, the mechanism being the very position that abducts, extends and externally rotates — and the squared contour is the empty glenoid with the humeral head palpable under the coracoid. The **regimental-badge numbness** (the patch over the lower deltoid) marks **axillary nerve** injury (C5–6), the nerve wrapping the surgical neck: test sensation, and document it, before the reduction and again after (a post-reduction palsy that was not recorded becomes a complaint). Reduction (traction-countertraction with the heel in the axilla — the method of the Hippocratic corpus — or modern external-rotation techniques) puts the head back under the labrum; the recurrence rate in a young athlete reflects the **bankart lesion** (anteroinferior labrum with bone or periosteum stripped) and drives the surgical repair. Two footnotes: in patients over 40 the **rotator cuff** often tears at the same moment; and an unreduced **posterior** dislocation (seizure, electrocution, fall on the adducted arm) is missed on the standard AP film — the "light-bulb" of fixed internal rotation is the clue.
 :::
 :::
 
- The structure, and the one that the limb is for, is the one that the bone is for. The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle.
+## The brachial plexus and the limb's nerves
 
- The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
+::: definition The brachial plexus {#def-plexus}
+The plexus is the anterior rami of **C5–T1**, arranged **roots → trunks (upper, middle, lower) → divisions (anterior, posterior) → cords (lateral, medial, posterior — named for their relation to the axillary artery) → branches**, with its classic terminal five and their roots: **musculocutaneous (C5–7)** — flexor-compartment muscles of the arm and forearm's lateral cutaneous nerve; **axillary (C5–6)** — deltoid, teres minor, the badge skin; **median (C5–T1)** — most flexors of the forearm, thenar muscles, and the radial three-and-a-half digits' palmar skin; **ulnar (C8–T1)** — flexor carpi ulnaris, medial half of profundus, most hand intrinsics, and the little finger plus half the ring finger; **radial (C5–T1)** — all extensors, the dorsum's radial side via its superficial branch, the posterior arm and forearm by its cutaneous branches. Roots and trunks are tested by the **Erb (upper trunk, C5–6: "waiter's tip" — adducted, internally rotated, pronated; birth palsy and lateral head-and-neck injury)** and **Klumpke (lower trunk, C8–T1: intrinsic paralysis, claw, and — because the sympathetic chain travels with the subclavian — ipsilateral Horner's syndrome; upward-catch injuries)** patterns. The **long thoracic nerve (C5–7)**, running down the chest wall deep to the girdle muscles to serratus anterior, is the nerve whose division gives the **winged scapula** — and the one at risk in axillary node clearance; the **thoracodorsal** (latissimus, rear-axillotomy) and **suprascapular** (notch) are its named siblings in surgical anatomy.
+:::
 
- The membrane, and the one that the lining is for, is the one that the limit is for, in the joint. The description, and the one that the lining is for, is the use, of the lining and the membrane.
-
- The ligament, and the one that the bond is for, is the one that the limit is for, in the joint. The description, and the one that the bond is for, is the use, of the bond and the ligament.
-
- The branch, and the one that the nerve is for, is the one that the limit is for, in the control. The description, and the one that the control is for, is the use, of the nerve and the branch.
-
-::: example The ligament, and the bond {#ex-ligament}
-A description of the joint notes the stabilising bond described.
+::: example The broken arm and the dropped wrist {#ex-radial}
+A 30-year-old falls on the elbow; X-ray shows a transverse fracture of the humeral shaft at the junction of middle and distal thirds. On re-examination he cannot extend the wrist or the metacarpophalangeal joints and has numbness of the first dorsal web space.
 ::: solution
-The ligament, and the one that the bond is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament. For the bond, and the one that the ligament is for, the bone, and the one that the limit is for, is the one that the articulation is for, is for.
+The **radial nerve** is injured at the **radial (spiral) groove**, where it lies on the bone between the medial and lateral heads of triceps — a relationship that gives mid-shaft humeral fractures their 10–18% nerve-injury risk and produces Saturday-night palsy (compression against the groove) — while crutch palsy, compressed in the axilla, also paralyses triceps for a more complete wrist-drop. The pattern reads off the anatomy: wrist drop with **finger drop at the MCP joints but preserved interphalangeal extension** (the lumbricals and interossei extend the IP joints, and they are **ulnar**-supplied), **normal thenar-pad sensation** (that patch is musculocutaneous), and numbness of the **dorsal first web space** (superficial radial nerve). Most closed-fracture palsies are neurapraxic: observe three months with a wrist splint, planning tendon transfer if nothing recovers; open or penetrating injuries, or a palsy appearing after manipulation, are explored — the nerve's fate follows the bone's mechanism.
 :::
-:::
-
-::: example The membrane, and the lining {#ex-membrane}
-A clinical note describes the lining of the joint in question.
-::: solution
-The membrane, and the one that the lining is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane. For the lining, and the one that the membrane is for, the joint, and the one that the limit is for, is the one that the articulation is for, is for.
-:::
-:::
-
- The structure, the limb, and the bone, and the limit is for, are the one that the region is for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone.
-
- So the structure, and the one that the limit is for, is the one that the limb and the bone, are for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone, and the limb.
-
- The method, and the check, are the one for the structure and the bone and the one that the limb is for.
-
- The branch, and the one that the nerve is for, is the one that the limit is for, in the control. The description, and the one that the control is for, is the use, of the nerve and the branch.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel.
-
- The muscle, and the one that the contraction is for, is the one that the limit is for, in the function. The description, and the one that the function is for, is the use, of the function and the muscle.
-
-::: warning The tendon, and the limit {#warn-tendon}
-The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. If the contraction, and the one that the function is for, is for is for, the one that the muscle is for, is for. The description, and the one that the insertion is for, is the use, of the insertion and the tendon. So the insertion, and the one that the limit is for, is for, in the tendon, and the one that the muscle is for.
-:::
-
-::: widget plot
-f: sin(x)
-x: 0 10
-y: 0 11
-sliders:
-caption: The structure, and the one that the limb is for, is the one that the bone is for. The joint, and the one that the articulation is for, is the one that the limit is for, in the movement. The description, and the one that the bone is for, is the use, of the structure and the bone.
 :::
 
 ::: quiz
-The structure, and the one that the limb is for. Which part provides return of blood, and the one that the limit is for?
-- [x] The vein, and the one that the vessel is for
-- [ ] The artery, and the one that the supply is for
-- [ ] The tendon, and the one that the insertion is for
-- [ ] The membrane, and the one that the lining is for
+Which single lesion produces loss of abduction and adduction of the fingers, a claw of the ring and little fingers that worsens on attempted grip, and normal sensation on the dorsum of the hand?
+- [ ] Lower trunk of the brachial plexus
+- [x] Deep branch of the ulnar nerve at the wrist (hook of the hamate / Guyon's canal, motor division)
+- [ ] Posterior interosseous nerve
+- [ ] C8 radiculopathy
 ::: solution
-The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vein, and the one that the vessel is for, provides return of blood, and the one that the limit is for.
+Abduction and adduction of the fingers are the **interossei (deep ulnar nerve)**; a claw of ring and little fingers that **deepens on grip** is the classic ulnar claw (loss of the medial lumbricals and interossei lets the MCPs hyperextend on attempted IP flexion — the "ulnar paradox" says a **high** lesion claws worse because the long flexors are also paralysed, a **low** lesion claws less at rest but loses the intrinsics, and a lesion at the wrist's deep branch loses exactly the intrinsics). Sensation on the dorsum is spared because the **dorsal cutaneous branch of the ulnar leaves proximal to the wrist** (above Guyon's canal) — the sensory-sparing motor claw localises the lesion to the canal's deep terminal branch, and the same fact distinguishes it from a C8 root or lower-trunk lesion (where sensation, and often the median-innervated thenar muscles, are also involved).
 :::
 :::
 
-::: summary
-- The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for.
-- The bone, and the one that the joint is for, is the one that the articulation is for, is for.
-- The muscle, and the one that the function is for, is the one that the contraction is for, is for.
-- The nerve, and the one that the control is for, is the one that the branch is for, is for.
-- The vessel, and the one that the supply is for, is the one that the region is for, is for.
-- The description, and the one that the bone is for, is the use, of the structure and the bone.
+## Compartments: arm, forearm, and the pressure rule
+
+The **arm** has an **anterior compartment** (musculocutaneous: biceps, brachialis, coracobrachialis — flexion and the powerful supinator; lateral cutaneous nerve of the forearm its sensory remainder) and a **posterior compartment** (radial: triceps, anconeus — extension), separated by medial and lateral intermuscular septa; the **brachial artery** runs the medial bicipital groove with the median nerve deep and the medial cutaneous nerves, the site of brachial pulse palpation and of antecubital venepuncture's deep neighbour, the **lacertus fibrosus**, which makes a two-edged structure: it protects the artery and, in supracondylar injury, is the band against which the displaced proximal fragment and the entrapped neurovascular bundle are damaged.
+
+::: definition The forearm and the compartment syndrome {#def-compartment}
+The forearm is **anterior (volar; superficial — the antebrachial flexor-pronator mass from the medial epicondyle, deep — FDP, FPL, pronator quadratus; median nerve except FCU and the medial half of FDP, which are ulnar; the **anterior interosseous nerve** its pure-motor branch)** and **posterior (extensor; radial/posterior interosseous nerve)** compartments, divided by the interosseous membrane, with the **mobile wad** (brachioradialis, extensores carpi radialis longus and brevis — radial-supplied forearm flexors) lateral. Muscles, arteries and nerves run in **osteofascial compartments that do not expand**. A **compartment syndrome** — bleeding or swelling inside one, classically after a supracondylar fracture, a forearm crush, a tight cast, or reperfusion after vascular repair — raises intracompartmental pressure until capillary perfusion fails, muscle infarcts within hours and fibroses to the **Volkmann ischaemic contracture** (the clawed, functionless forearm of the nineteenth-century name). The clinical canon: **pain out of proportion, pain on passive stretch of the compartment's muscles, paraesthesia in the nerve running through it** (the median or anterior interosseous in the volar compartment), and pulselessness only very late — which is the sentence to know, because waiting for a pulseless hand converts a fasciotomy at four hours into a contracture at four days.
+:::
+
+::: example The child with the straight elbow {#ex-supra}
+A five-year-old falls off a swing onto a half-extended arm; the elbow is swollen, held slightly flexed, the radial pulse present but the child will not move the hand and complains of numb fingertips.
+::: solution
+This is a **supracondylar fracture** until the film says otherwise — the commonest elbow fracture of childhood, the extension type with the humeral shaft driven forwards through the weak supracondylar cortex. The anatomy of the danger: the **brachial artery and median nerve** lie directly on the proximal fragment's path, and **brachialis** is squeezed between fragment and periosteum — hence either an **intact-pulse limb with an ischaemic forearm** (collaterals keep the pulse while muscle perfusion fails) or a **pulseless limb that still lives** (arterial spasm plus the rich epicondylar anastomosis of the superior and inferior ulnar collateral and recurrent interosseous vessels). Hence the management: prompt referral for reduction (percutaneous K-wires, ulnar nerve out of the way — the pins go lateral-to-medial or divergent to avoid the medial bundle), and the post-reduction question is never "is there a pulse?" but **"is the hand painful on passive extension of the fingers?"** — the volar compartment's honest report. Numb fingertips in that history are a nerve-injury or pressure sign that belongs to the orthopaedic team within hours, not the emergency department's overnight note.
+:::
+:::
+
+## The hand and its spaces
+
+::: definition The hand's compartments and arches {#def-hand}
+The hand is divided by fascia into the **thenar compartment** (abductor pollicis brevis, flexor pollicis brevis superficial head, opposens — **recurrent branch of the median nerve**, C8–T1), the **hypothenar compartment** (palmaris brevis — the only cutaneous muscle in the region, and the sign of ulnar integrity — abductor and flexor of the little finger, opponens — deep ulnar), the **central compartment** (flexor tendons, lumbricals I–II median and III–IV ulnar, the **superficial and deep palmar spaces**, separated by the **midpalmar septum** that runs from the third metacarpal to the dorsal fascia), and the **adductor pollicis** (deep ulnar; the anatomical snuffbox's floor muscle, whose web-space wasting is the earliest visible ulnar sign). Arches: the **superficial palmar arch** (ulnar-dominant, at the hook's level, giving the common palmar digital arteries) and **deep arch** (radial-dominant, on metacarpals and interossei), with the **principle of two-vessel blood supply** (radial and ulnar via the arches, plus the dorsal carpal network) that underwrites every hand-surgery test — **Allen's test** occludes one artery and watches the palm refill through the other before the radial artery is harvested for a coronary bypass or a forearm flap.
+:::
+
+::: example The swallowed pen cap {#ex-snuffbox}
+A 19-year-old falls off a bicycle onto an outstretched hand, the wrist in extension; an hour later there is swelling and tenderness in the anatomical snuffbox, and pain on axial thumb pressure; first X-rays are normal.
+::: solution
+The **scaphoid** is the injured carpal until proven otherwise — its **tubercle lies in the floor of the snuffbox** (the space bounded by abductor pollicis longus and extensor pollicis brevis laterally and extensor pollicis longus medially), and scaphoid fractures after a fall on the outstretched hand are frequently invisible on initial films (up to a half of nondisplaced fractures; the bone's overlap and the trabecular line's interruption are the signs). The fracture matters because of the **blood supply**: the radial artery's branches enter **distally and run backwards**, so a fracture of the **waist or proximal pole** devascularises the proximal fragment, and the outcome is **avascular necrosis and non-union** with early arthritis — the reason "normal X-ray, snuffbox tender" is treated as a scaphoid fracture (thumb spica, immobilise, repeat imaging at two weeks, or immediate MRI which settles it at the first visit in modern units). The same anatomy answers the other scaphoid question — why the distal pole is excised with impunity while the proximal fracture is screwed and sometimes grafted — and states the general rule: **where the artery runs backwards, judge the fracture by the fragment furthest from the heart** (the femoral neck is the hip's version of this sentence).
+:::
+:::
+
+::: example Collar-stud and the deep spaces {#ex-hand-space}
+An intravenous drug user injects into the volar wrist; five days later there is a tender, boggy swelling in the thenar web and the thumb is held abducted, and the palmar arch is in the region of the track.
+::: solution
+The infection has two routes and the spaces define both. Superficial volar wrist penetrating trauma can seed the **superficial palmar space or the thenar space** (the latter continues with the thumb's flexor sheath and, around the flexor pollicis longus, into **Parona's fascial space of the forearm** — the reason a thumb-tip or sheath infection can present as a swollen distal forearm; the little finger's sheath is likewise prolonged as the ulnar bursa, which ends in the midpalmar region — which is why sheath sepsis of that digit declares itself as a midpalmar swelling). A **collar-stud abscess** — a collection pointing both palmar and dorsal through the palmar aponeurosis's fibrous septa — is the pus finding its least-resistance hourglass through those vertical septa, which is why palmar swellings look deceptively small: the space below is deeper than the skin above. Management is surgical anatomy: the incision avoids the **superficial branch of the radial nerve** over the radial side and the **common and proper palmar digital nerves** that run in the midline of each web, drains each space separately with counter-incisions, and — because the arches sit superficial in the palm (one reason palm-spanning lacerations are the classic ulnar-artery injury) — is done with a tourniquet, loupe magnification, and knowledge of which named vessel the track crossed. Flexor-sheath sepsis is the same lesson at its most urgent: irrigation within hours, because raised pressure inside the sheath strangulates the tendon's own blood — the intrasheath branches of the digital arteries that run with the vincula.
+:::
+:::
+
+::: widget plot
+f: 100 + 2.1*x
+x: 0, 60
+y: 90, 240
+labels: \text{trunk flexion from upright (degrees)},\ \text{relative L3 disc pressure (standing = 100)}
+caption: Schematic of the classic in-vivo intradiscal pressure measurements: relative L3 disc pressure rises with sitting and forward flexion — the upright-standing reference of 100 becomes roughly 140 sitting, and each degree of flexion recruits the trunk extensors' counter-moment that compresses the lumbar segments. The line is illustrative rather than fitted; its purpose is the two clinical sentences it encodes: why a disc patient cannot sit through a meeting but can walk, and why the ergonomics of the painful back is a lever-arm problem before it is a painkiller problem.
 :::
 
 ::: history
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The bone, and the one that the joint is for, is the one that the articulation is for, is for. The muscle, and the one that the function is for, is the one that the contraction is for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone. So the structure, and the one that the limit is for, is the one that the limb is for, is for.
+The limb's surgery grew from its nerves. Bell's law (1811) separated anterior and posterior root function on the pig's spinal cord; the nineteenth-century plexus descriptions and the military surgery of the ulnar and median nerves established the classic hand lesions; Sir Charles Bell's own hand is preserved in Edinburgh, a relic with a clinical history — a deformity whose cause is still debated. The scaphoid's vascular lesson came from the collision of railway injuries and early orthopaedics; Dupuytren (1832) described the palmar fascial contracture that carries his name; James Paget's observations on the trophic changes after nerve injury remain in the textbooks. The compartment syndrome's modern name is the First World War's — crushed, tightly-wounded limbs — and the argument about early fasciotomy was settled by the pressure gauge of the replantation era.
+:::
+
+## Where this leads
+
+Root lesions and the cord's syndromes continue in [[anatomy/neuroanatomy]]; the peripheral nerve injuries' clinical medicine in [[nervous-system/stroke]] and [[nervous-system/neuromuscular]]; fracture classification and operative fixation in [[surgery/orthopaedics]]; back pain's red-flag medicine in [[musculoskeletal/back-pain]]; compartment pressure measurement in [[emergency-critical-care/acute-assessment]] and [[surgery/trauma]].
+
+::: summary
+- The column's engineering is discs and curves and the posterior ramus's muscles; the disc herniates posterolaterally onto the traversing root (L4/5 disc → L5 root), and a posteromedial one at the cauda is an operation today.
+- The brachial plexus is a five-station map — roots, trunks, divisions, cords, branches — and every named lesion (Erb, Klumpke, groove, elbow, wrist, canal) is one station with one bone, one mechanism, one signature hand.
+- The radial nerve runs on the bone (spiral groove), the median nerve runs with the brachial artery through the elbow's danger zone, and the ulnar runs behind the medial epicondyle — three nerves, three fractures, three splints.
+- Fascia makes compartments and compartments make pressure syndromes: pain on passive stretch, paraesthesia, then contracture; pulses are the last to go and the worst thing to wait for.
+- The hand's spaces — thenar, midpalmar, sheath continuations, Parona's — are where infection is diagnosed by geometry and drained by named incisions; its blood supply is duplicated by design and tested by Allen.
+- In the limb's distal fragments — scaphoid, femoral neck — the artery runs backwards, and the fracture question is always the perfusion of the fragment furthest from the heart.
 :::
 
 ## Exercises
 
-::: exercise The structure {level=1}
-Which part provides return of blood, and the one that the vessel is for?
+::: exercise Root by reflex {level=1}
+Give the root, the nerve, and the reflex for: (a) absent biceps jerk; (b) absent ankle jerk; (c) weak wrist drop with intact triceps jerk; (d) numb lateral thigh without weakness.
 ::: solution
-The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vein, and the one that the vessel is for, provides return of blood.
+(a) **C5–6, musculocutaneous** (biceps and supinator jerk — the root of the upper trunk / musculocutaneous lesion if also weak on flexion-supination). (b) **S1, tibial nerve** (the ankle jerk is the tendon reflex of the root; with the plantar also absent and the lateral foot numb, S1 radiculopathy or the tibial/sural sensory pattern). (c) **Radial nerve at or below the spiral groove** — the triceps branch (high radial/axillary/cord level) spared, wrist and finger extensors gone: the classic mid-shaft lesion; a C7 root would usually involve the triceps and its jerk. (d) **Lateral femoral cutaneous nerve (L2–3), meralgia paraesthetica** — a pure sensory entrapment under the inguinal ligament near the anterior superior iliac spine; a L2–3 radiculopathy would add hip-flexor/adductor weakness and altered femoral jerk. Note the pattern that answers everything: **the deep tendon reflex localises to the segment, weakness to the nerve, numbness to the dermatome, and the combination separates root from trunk from peripheral nerve.**
 :::
 :::
 
-::: exercise The limb {level=1}
-What is the structure, and the one that the limb is for?
+::: exercise Trace the plexus {level=1}
+A tumour destroys the lower trunk of the right brachial plexus. Predict the motor loss (by named muscle group), the sensory loss, and the autonomic sign — and state which two named nerves are spared and why that matters diagnostically.
 ::: solution
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The description, and the one that the bone is for, is the use, of the structure and the bone. So the structure, and the one that the limit is for, is the one that the bone is for, is for.
+**Motor: all intrinsic hand muscles** (thenar, hypothenar, lumbricals, interossei — via both nerves' terminal branches) → flat, wasted hand with total claw of all four fingers; plus **flexor carpi ulnaris and the medial half of FDP** (ulnar-innervated forefinger flexors, C8–T1 root contributions) and the C8-innervated wrist and finger flexors weakened. **Sensory: the medial arm and forearm (medial cutaneous nerves, T1) and the ulnar one-and-a-half digits (ulnar) plus the median palm — the whole C8–T1 girdle.** **Autonomic: Horner's (ptosis, miosis, anhidrosis, dry face)** because the T1 white ramus feeds the stellate ganglion and the sympathetic chain travels with the subclavian — the sign that distinguishes a trunk/root lesion from a more distal one and, in a smoker, points at a Pancoast tumour (see [[anatomy/thorax]]). **Spared: the long thoracic, suprascapular, axillary and musculocutaneous nerves (C5–6, upper trunk and its branches) — shoulder and elbow function near-normal.** That sparing is the diagnostic answer to the alternative localisation: the same intrinsic wasting with C5–6 involvement would say lateral cord or upper lesions; total intrinsic loss with Horner's and a normal shoulder says **lower trunk or T1 root**, which on imaging is an apical lung or a thoracic inlet question.
 :::
 :::
 
-::: exercise The bone {level=2}
-Explain, the bone, and the one that the joint is for, in the articulation, and the one that the limit is for.
-::: hint
-The articulation.
-:::
+::: exercise Read the claw {level=2}
+Two patients present with a clawed ring and little finger: (a) an ulnar nerve lesion at the elbow; (b) a T1 root avulsion. What single feature of the claw, and what additional finding, distinguishes them?
 ::: solution
-The bone, and the one that the joint is for, is the one that the limit is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone. So the articulation, and the one that the limit is for, is for, in the bone, and the one that the joint is for.
+The **ulnar paradox** matters here. The paradox runs thus: a **high lesion (at the elbow) claws LESS**, because its paralysed FDP cannot flex the IP joints and drive the claw, whereas a **low lesion (at the wrist) claws WORST** — the FDP is intact and flexes the IP joints against denervated lumbricals. A T1 root avulsion behaves like a **very high** lesion plus, crucially, loss of the **medial cutaneous nerve of the arm and forearm (T1 — a proximal, root-level nerve)**, which the elbow lesion spares; and a root avulsion is **pre-ganglionic**, so the **dorsal root ganglion and its nerve remain intact** — sensation is lost clinically but nerve-action potentials (NAPs) are preserved on electrodiagnosis, the classic test separating root avulsion from plexus rupture, and the preganglionic lesion tells the surgeon the nerve cannot be repaired in the neck (it needs nerve transfer). So the two discriminators: **sensory loss extending up the medial arm (root, T1) versus confined to hand and forearm (ulnar at elbow)**, and the paradox's severity gradient plus electrodiagnostics. The exam answer is usually "median-ulnar claw = lower trunk (both nerves), pure ulnar claw = ulnar nerve; worse claw = lower lesion."
 :::
 :::
 
-::: exercise The muscle {level=2}
-Explain, the muscle, and the one that the function is for, in the contraction, and the one that the limit is for.
-::: hint
-The contraction.
-:::
+::: exercise The tight cast {level=2}
+Two nights after a forearm fracture is casted, a child has escalating pain requiring opioid, pain on passive finger extension, and swollen tight fingers. Write the differential, the one examination you would never rely on, and the two-step management.
 ::: solution
-The muscle, and the one that the function is for, is the one that the limit is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle. So the contraction, and the one that the limit is for, is for, in the muscle, and the one that the function is for.
+Differential: **rising compartment pressure beneath the cast** (the commonest actionable cause — pain out of proportion, opioid requirement escalating, pain on passive stretch of the compartment's muscles, tense swelling, early median/anterior-interosseous paraesthesia) versus a tight bandage alone, a malreduced fragment with arterial kinking, or (later) infection. The one examination you would never rely on: **the radial pulse** — pulses persist through pressures that have already infarcted muscle, because systolic pressure exceeds compartment pressure until very late; the same truth in reverse (the pulseless hand may be perfused via collaterals) was stated in this chapter's supracondylar section. The two steps: (1) **bivalve the cast and split all dressing to skin immediately** — half the pressure drop comes from releasing the circumferential envelope; re-examine in twenty minutes. (2) If pain and stretch signs persist, **measure compartment pressures** (a delta — diastolic minus compartment — of less than 30 mmHg is the common threshold) and proceed to **fasciotomy** of the involved compartments with a planning that spares nerves and the superficial veins, leaves the wound open, and covers it later. The sentence that prevents the malpractice claim is the time-stamped note: the escalation was recorded, the cast was opened at a known hour, and the surgeon was called when opening it failed.
 :::
 :::
 
-::: exercise The nerve {level=2}
-Explain, the nerve, and the one that the control is for, in the branch, and the one that the limit is for.
-::: hint
-The branch.
-:::
+::: exercise Localise the nerve at the elbow {level=2}
+A patient has weakness of flexion of the index finger's distal phalanx and of the thumb's interphalangeal joint, with normal sensation and a normal nerve-conduction study of the main median trunk at the wrist. Which branch, where, and what is the name of the syndrome's eponymous variant that follows an infection?
 ::: solution
-The nerve, and the one that the control is for, is the one that the limit is for, in the branch. The description, and the one that the branch is for, is the use, of the branch and the nerve. So the branch, and the one that the limit is for, is for, in the nerve, and the one that the control is for.
+The pattern is the **anterior interosseous nerve (AIN)** — the median nerve's pure motor branch to flexor pollicis longus, the lateral half of FDP and pronator quadratus, arising below the elbow: a **pure motor** palsy (the "OK sign" becomes a pinch with extended tips), **normal sensation** (the AIN carries no cutaneous territory — its articular fibres go to the wrist and intercarpal joints), and a routine wrist nerve-conduction study that is normal because the main trunk is intact. Proximal entrapment (ligament of Struthers, lacertus, the two-headed flexor digitorum superficialis) and post-infectious/post-vaccination **Parsonage-Turner (neuralgic amyotrophy)** — classically an acute shoulder-arm pain followed days later by selective AIN or other patchy palsy — are the two aetiologies. The exercise's method is the useful part: **a motor-only deficit in a named nerve's territory, with normal sensation and normal main-trunk conduction, is the nerve's named branch, not the trunk** — the same logic identifies the posterior interosseous and deep-branch-of-ulnar patterns above.
 :::
 :::
 
-::: exercise The tendon {level=3}
-Explain, the tendon, and the one that the insertion is for, in the muscle, and the one that the limit is for.
-::: hint
-The insertion.
-:::
+::: exercise The wing and the wire {level=2}
+A mastectomy with axillary clearance is followed by a scapula that wings on pushing against a wall, and separately, a patient with a fractured clavicle midshaft develops winging only when abducting overhead. Name each nerve and explain by mechanism why the second is not the first.
 ::: solution
-The tendon, and the one that the insertion is for, is the one that the limit is for, in the insertion. The description, and the one that the insertion is for, is the use, of the insertion and the tendon. So the insertion, and the one that the limit is for, is for, in the tendon, and the one that the muscle is for.
+First: **long thoracic nerve (C5–7, serratus anterior)** — the classic iatrogenic injury of axillary dissection (the nerve runs on the chest wall at the upper border of the clearance field); serratus anterior anchors the scapula to the thorax and rotates the glenoid up, so the **medial border wings when the arm is pushed forward** against resistance. Second: overhead-only winging after a clavicle fracture suggests **trapezius (spinal accessory, XI)** weakness — the nerve lies in the posterior triangle, at risk in neck dissections and in biopsy of posterior-triangle nodes — whose winging is **lateral** (the inferior angle drifts away from the spine) and worst on **abduction**, because trapezius completes the last 60 degrees of overhead elevation by rotating the glenoid; the scapula also droops and the shoulder aches in the shoulder-hike sign. The discriminator is direction and task: **serratus — forward push, medial wing; trapezius — overhead abduction, lateral wing**, with a third name (rhomboids, dorsal scapular nerve) producing mild lateral winging and pain medial to the scapula — the three nerves, three tasks, three clinical signs; and all three are tested by asking the patient to do the task the muscle performs and watching the scapula answer, which is physical examination as pure anatomy.
 :::
 :::
 
-::: exercise The ligament {level=3}
-Explain, the ligament, and the one that the joint is for, in the bond, and the one that the limit is for.
-::: hint
-The bond.
-:::
+::: exercise The lacerated palm {level=2}
+A knife cut crosses the palm just distal to the wrist crease on the ulnar side. List the structures at risk from superficial to deep on that side, and say which two injuries determine hand function most.
 ::: solution
-The ligament, and the one that the joint is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament. So the bond, and the one that the limit is for, is for, in the ligament, and the one that the joint is for.
+Superficial to deep: skin and palmar aponeurosis; **palmar cutaneous branch of the ulnar nerve** (arises proximal to the wrist, supplies the heel of the palm — spared in a canal lesion, at risk here); **ulnar nerve and artery in Guyon's canal** side by side (nerve superficial and medial to the artery at the canal's entry, then splitting into superficial/sensory and deep/motor branches around the hook of the hamate); **superficial palmar arch** and its common digital arteries and the median-innervated lumbricals; deeper, the flexor tendons, the **deep branch of the ulnar nerve** curling round the hook with the deep arch on metacarpals and interossei, and the midpalmar space's septa. The two injuries that dominate function: **the ulnar nerve's deep (motor) branch** — loss of all medial and most lateral intrinsics, the worst claw, paralysis of pinch and grip power (no single tendon transfer restores this well; hence early exploration and grafting of gapless nerve ends) — and **the ulnar artery with its arch**, because the arch supplies the common digital vessels: a combined artery-plus-two-digit ischaemia pattern needs vascular repair, and its absence makes any future radial-artery harvest or hand-flap planning Allen-dependent (see the arch principle). The lesson's last sentence is the operative one: a palm laceration is explored in theatre with a tourniquet, a magnifier, and the anatomy above written on the screen — not at the bedside under a dressing.
 :::
 :::
 
-::: exercise The membrane {level=3}
-Explain, the membrane, and the one that the joint is for, in the lining, and the one that the limit is for.
-::: hint
-The lining.
-:::
+::: exercise Lift the box {level=3}
+A warehouse worker with an L4/5 paracentral disc is offered conservative care. Explain in anatomical terms (a) why the pain is in the leg and not the back when the root is the problem, (b) why sitting hurts more than standing, (c) the physiological argument for time, and (d) the four findings that end the conservative argument.
 ::: solution
-The membrane, and the one that the lining is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane. So the lining, and the one that the limit is for, is for, in the membrane, and the one that the joint is for.
+(a) The **root**, not the disc, is the pain generator: the nucleus's acid and cytokine milieu plus mechanical compression inflame the **dorsal root ganglion and the traversing root's sheath**, and the brain reads root pain in the dermatome — the leg — exactly as cardiac pain is read in the arm; the disc's own posterior annulus (sinuvertebral nerve) gives a localised, deep back component, and the ratio of the two is the clinical history. (b) **Intradiscal and paraspinal loads are higher sitting than standing** (the classic Nachemson measurements: sitting with flexion raises lumbar disc pressure roughly 40–90% above standing, and standing above lying), because the trunk's weight line moves in front of the column and the extensors — through the very lever this chapter's spine is built on — must generate a counter-moment that compresses the segments; the same biomechanics make a flexed lift a hundred newton-metres of shear at L4/5. (c) Time helps because the **nucleus desiccates and shrinks** (proteoglycan loss with age is the same process in slow motion) and the inflammatory component settles; most radiculopathies improve over 6–12 weeks, which is why the guideline answer is analgesia, activity as tolerated, and physiotherapy before the surgeon is consulted. (d) The operation list: **cauda equina syndrome** (the sac's compression of all the sacral roots — saddle anaesthesia, painless retention — within hours); **progressive major motor deficit** (a foot-drop getting worse); **intractable pain unresponsive to medication**; and **a matching structural lesion with persistent deficit at six to twelve weeks**. Each is an anatomical statement about what is being lost and what can be recovered — the reason the surgeon and the physician agree on indications and disagree on timing.
 :::
 :::

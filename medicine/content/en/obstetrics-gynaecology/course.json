@@ -8,8 +8,9 @@
   "tagline": "Pregnancy and birth, complications of pregnancy, contraception, fertility and gynaecological disease",
   "summary": "Women’s health spans the reproductive years and beyond. This course covers normal pregnancy and antenatal care, complications of pregnancy, labour and birth, the postnatal period, early pregnancy problems, contraception and fertility, menstrual and pelvic disorders, gynaecological cancers and screening, and the menopause.",
   "overview": [
-    "The system, and the one that the system is for, is the one that the limit is for, and the one that the pregnancy is for. This course follows the system and the one that the pregnancy is for, from the mechanism and the one that the limit is for, to the practice and the one that the obstetrics is for, and gives the method and the check that make it work.",
-    "We build the system and the one that the pregnancy is for, from the process and the structure, and then study how the clinical and the obstetrics, and the one that the limit is for, are for."
+    "Obstetrics and gynaecology cover the medicine of pregnancy, childbirth and the female reproductive tract — areas where two patients are present at once, where physiology and pathology overlap, and where conditions can move from well to catastrophic within minutes. This course teaches the physiology first, so that the complications make sense: how placentation transforms the maternal circulation, why pregnancy alters every drug's pharmacokinetics, how the menstrual cycle is built.",
+    "The obstetric half runs from conception booking and antenatal care — screening, dating, fetal growth, the anatomy survey — through the hypertensive disorders, diabetes, bleeding, preterm labour, multiple pregnancy and reduced fetal movement, to labour itself: assessment of progress, partographs, instrumental birth and caesarean section, and the emergencies of postpartum haemorrhage and maternal collapse. The postnatal chapter covers puerperal complications, thromboprophylaxis, breastfeeding and perinatal mental health. The gynaecological half covers early pregnancy (miscarriage, ectopic, trophoblastic disease), contraception and fertility, menstrual and pelvic disorders including fibroids, endometriosis and polycystic ovary syndrome, gynaecological cancers with their screening logic, and the menopause.",
+    "Quantitative and safety-critical material recurs: blood loss estimation and shock indices in haemorrhage, magnesium and antihypertensive logic in pre-eclampsia, the curve of beta-hCG, risk-of-malignancy indices, WHO growth-based fetal growth charts, and the saving-mothers-audit findings that reduced deaths to record lows. All management statements describe principles under current guidelines; cases are fictional."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -17,11 +18,15 @@
     "anatomy"
   ],
   "outcomes": [
-    "Explain the system, and the one that the mechanism is for, in the limit",
-    "Explain the pregnancy, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the system is for, in the limit",
-    "Outline the management, and the one that the pregnancy is for, in the limit",
-    "Recognise the state, and the one that the system is for, in the limit"
+    "Describe maternal physiology in pregnancy — cardiovascular, respiratory, renal, haematological and endocrine — and its implications for drug handling and interpreting routine bloods.",
+    "Outline antenatal care: dating, routine screening (anaemia, infections, aneuploidy and anomaly), fetal growth surveillance and the evidence behind each element.",
+    "Recognise and initiate management of pre-eclampsia and the hypertensive disorders, antepartum haemorrhage, preterm labour, diabetes in pregnancy and rhesus disease, including the preventive strategies.",
+    "Manage normal labour — assessment, partograph, analgesia options — and the indications and principles of induction, instrumental birth and caesarean section; recognise obstructed labour and uterine rupture.",
+    "Diagnose and resuscitate the obstetric emergencies: postpartum haemorrhage with its causes and staged management, eclampsia, shoulder dystocia, cord prolapse, amniotic-fluid embolism and maternal collapse in pregnancy.",
+    "Assess early pregnancy: distinguish the types of miscarriage, diagnose ectopic and trophoblastic disease with hCG and ultrasound logic, and describe the management options for each.",
+    "Compare contraceptive methods by mechanism, efficacy and suitability, and outline subfertility investigation and the principles of assisted conception.",
+    "Investigate abnormal uterine bleeding, vaginal discharge and pelvic pain; manage fibroids, endometriosis, adenomyosis and polycystic ovary syndrome; and apply the screening and referral logic for cervical, endometrial, ovarian and vulval cancer.",
+    "Describe the menopause and perimenopause — symptoms, bone and cardiovascular consequences, and the benefits, risks and routes of hormone and non-hormone therapy."
   ],
   "chapters": [
     {
@@ -100,27 +105,83 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the system is for, is the one that the pregnancy is for, of the structure.",
+      "year": 1817,
+      "title": "Forceps and transfusion",
+      "detail": "James Blundell designs a spring-forceps delivery for obstructed labour and, the following year, performs the first successful human blood transfusion — defibrinated donor blood given to a patient dying of gastric bleeding; obstetrics, the specialty most likely to kill by haemorrhage, begins both its instrumental and its transfusion era.",
       "people": [
-        "Harvey"
+        "James Blundell"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the system is for, is the one that the pregnancy is for, of the process.",
+      "year": 1847,
+      "title": "Handwashing against childbed fever",
+      "detail": "Ignaz Semmelweis, at the Vienna general hospital, demonstrates that puerperal fever is carried on examiners' hands from cadavers and mandates chlorine hand-rubs; mortality in his clinic falls from around ten per cent to around one, though the profession's reception of the lesson takes another forty years.",
       "people": [
-        "Lister"
+        "Ignaz Semmelweis"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the system is for, is the one that the pregnancy is for, of the mechanism.",
+      "year": 1847,
+      "title": "Anaesthesia in labour",
+      "detail": "James Young Simpson's experiments with chloroform culminate in its use for childbirth in Edinburgh and, by 1853, royal acceptance; labour ceases to be an ordeal that must simply be endured, and the debate over analgesia's risks to mother and baby begins.",
       "people": [
-        "Koche"
+        "James Young Simpson"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "The cervical smear",
+      "detail": "Georgios Papanicolaou publishes his diagnostic smears in America; after the Toronto work of Bader, Saunders and Casson and the Berrill–Rank campaigns, cervical exfoliative cytology becomes the model of screening — population screening halves cervical-cancer mortality where it is organised well.",
+      "people": [
+        "Georgios Papanicolaou",
+        "William H. Bader"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Ultrasound sees the fetus",
+      "detail": "Ian Donald and Tom Brown in Aberdeen apply the pulse-echo 'wedge' scanner to obstetrics, distinguishing twin from hydrocephalic pregnancies by sound; obstetrics acquires its safest imaging modality, and the entire modern edifice of dating, anomaly and growth assessment follows.",
+      "people": [
+        "Ian Donald",
+        "Tom Brown"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "The pill",
+      "detail": "Following Gregory Pincus's and Min-Chueh Chang's rabbit experiments and John Rock's clinical trials, the first combined oral contraceptive is licensed; fertility becomes separable from intercourse on a scale that changes women's health, work and family timing — and the thrombotic risk of the early high-dose pills teaches the dose–risk lesson of hormonal pharmacology.",
+      "people": [
+        "Gregory Pincus",
+        "John Rock",
+        "Min-Chueh Chang"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Preventing rhesus disease",
+      "detail": "Clarke in Sheffield and, in parallel, Gorman in New York show that antenatal and postnatal anti-D immunoglobulin prevents rhesus haemolytic disease; a mass screen-and-treat programme turns the commonest cause of immune hydrops and kernicterus into a preventable event.",
+      "people": [
+        "Cyril Clarke",
+        "Vincent Gorman",
+        "Ronald Finn"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "A baby by in-vitro fertilisation",
+      "detail": "Louise Brown is born in Oldham after Patrick Steptoe's laparoscopic egg recovery and Robert Edwards's laboratory fertilisation; the field of assisted conception — and its ethics, regulation and multiple-pregnancy lessons — begins.",
+      "people": [
+        "Robert Edwards",
+        "Patrick Steptoe",
+        "Jean Purdy"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Papillomavirus causes cervical cancer",
+      "detail": "Harald zur Hausen detects hepatitis-B DNA in cervical-cancer tissue — the method — and then, in a decade of work, clones papillomavirus from cervical cancers, proving the aetiological link that makes HPV vaccination the first true anti-cancer vaccine (Nobel Prize 2008).",
+      "people": [
+        "Harald zur Hausen"
       ]
     }
   ],

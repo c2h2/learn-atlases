@@ -8,8 +8,9 @@
   "tagline": "Sensory and motor systems, stroke, epilepsy, headache, movement disorders, dementia and neuromuscular disease",
   "summary": "Neurological disease affects how people move, feel, think and communicate. This course links the organisation of the sensory and motor systems to the neurological examination and to the common disorders of the nervous system: stroke, epilepsy, headache, multiple sclerosis, movement disorders, dementia, and diseases of nerve and muscle.",
   "overview": [
-    "The neuron, and the one that the system is for, is the one that the limit is for, and the one that the brain is for. This course follows the neuron and the one that the brain is for, from the mechanism and the one that the limit is for, to the practice and the one that the nervous is for, and gives the method and the check that make it work.",
-    "We build the neuron and the one that the brain is for, from the process and the structure, and then study how the clinical and the nervous, and the one that the limit is for, are for."
+    "Neurology localises before it diagnoses: the nervous system's anatomy is a map on which symptoms acquire position, and a lesion's position narrows the diseases possible. This course teaches that method from the hardware up — the sensory and motor systems and their tracts, the cranial nerves, the muscle and nerve junction — and then applies it to the diseases that dominate practice.",
+    "Stroke gets the weight its burden deserves: vascular territories, the thrombolysis and thrombectomy time windows, intracerebral haemorrhage and subarachnoid haemorrhage. Then epilepsy — seizure classification by onset and network, the syndromes of childhood and adulthood, antiseizure drug mechanisms and the emergency of status. Headache and pain chapters cover migraine's vascular–neuronal mechanism, cluster, tension-type and secondary headaches, and the neurobiology of pain with its chronic-pain management principles. Movement disorders follow the basal-ganglia circuit: Parkinson's disease and the atypical parkinsonisms, tremor, dystonia, chorea and tics. Neuroinflammation covers multiple sclerosis and its mimics, optic neuritis, aquaporin-4 disease, and the inflammatory neuropathies; dementia and neurodegeneration covers Alzheimer's, vascular, Lewy-body and frontotemporal dementias, motor neuron disease and the ataxias; and a final chapter on the neuromuscular junction, muscle and peripheral nerve completes the system.",
+    "Every chapter demands the examination that localises — the pattern of weakness, the field defect, the reflex asymmetry, the cerebellar signs — and the investigation that confirms: imaging reading by territory, cerebrospinal fluid profiles, electroencephalography and nerve conduction studies at an interpretable level. Cases with differentials and lesion-localisation exercises are the spine of the course."
   ],
   "prerequisites": [
     "anatomy",
@@ -18,11 +19,14 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Explain the neuron, and the one that the mechanism is for, in the limit",
-    "Explain the brain, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the neuron is for, in the limit",
-    "Outline the management, and the one that the brain is for, in the limit",
-    "Recognise the state, and the one that the neuron is for, in the limit"
+    "Trace the anatomy and physiology of the sensory and motor pathways and use them to localise a lesion from a neurological examination — cortical, capsular, brainstem, spinal cord, root, plexus, nerve, junction, muscle.",
+    "Recognise and examine the cranial nerves and their syndromes, including the pupil pathways, the causes of double vision, facial weakness and dysphagia.",
+    "Diagnose acute stroke by territory and time, describe the indications, evidence and risks of thrombolysis and thrombectomy, and the secondary-prevention and rehabilitation principles; distinguish ischaemic from intracerebral and subarachnoid haemorrhage.",
+    "Classify seizures and epilepsies, explain the mechanisms of the main antiseizure medications and their key adverse effects and interactions, and manage status epilepticus by staged protocol.",
+    "Diagnose migraine and its variants, cluster and tension-type headache, apply the red-flag criteria for secondary headache, and describe acute and preventive treatment principles including medication-overuse headache.",
+    "Explain the basal-ganglia circuitry and the pathology of Parkinson's disease, the levodopa–carbidopa rationale and motor complications, and recognise the atypical parkinsonian syndromes, tremor, dystonia and choreas.",
+    "Apply dissemination-in-space-and-time logic to multiple sclerosis, recognise optic neuritis, transverse myelitis, Guillain–Barré syndrome and myasthenia gravis, and describe their acute and preventive management principles.",
+    "Differentiate the common dementias clinically, apply reversible-cause screening, and outline motor neuron disease, the cerebellar ataxias and the neuromuscular disorders with their diagnostic tests."
   ],
   "chapters": [
     {
@@ -105,27 +109,81 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the neuron is for, is the one that the brain is for, of the structure.",
+      "year": 1817,
+      "title": "An essay on the shaking palsy",
+      "detail": "London surgeon James Parkinson describes six cases of paralytic agitans with rest tremor, flexed posture and festination — a clinical entity that would wait until 1912 for the Lewy bodies that define it and 1960 for the dopamine explanation.",
       "people": [
-        "Harvey"
+        "James Parkinson"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the neuron is for, is the one that the brain is for, of the process.",
+      "year": 1861,
+      "title": "We speak with the left hemisphere",
+      "detail": "Paul Broca examines the brain of Leborgne ('Tan'), a patient with two decades of expressive aphasia and a frontal lesion, and locates speech production in the left inferior frontal gyrus — the first widely accepted cortical function localisation, and the founding gesture of clinical neuroscience.",
       "people": [
-        "Lister"
+        "Paul Broca"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the neuron is for, is the one that the brain is for, of the mechanism.",
+      "year": 1870,
+      "title": "Stimulating the motor map",
+      "detail": "Gustav Fritsch and Eduard Hitzig's electrical stimulation of a dog's cortex maps the motor areas; combined with Hughlings Jackson's clinical reasoning from the epileptic march, it gives the motor homunculus its evidence base.",
       "people": [
-        "Koche"
+        "Gustav Fritsch",
+        "Eduard Hitzig",
+        "John Hughlings Jackson"
+      ]
+    },
+    {
+      "year": 1891,
+      "title": "The neuron doctrine",
+      "detail": "Wilhelm Waldeyer names the neuron and, synthesising Camillo Golgi's silver stain and Santiago Ramón y Cajal's drawings, argues that the nervous system is a network of discrete cells communicating across gaps — the structural basis of everything from synaptic transmission to stroke deficits.",
+      "people": [
+        "Wilhelm Waldeyer",
+        "Santiago Ramón y Cajal",
+        "Camillo Golgi"
+      ]
+    },
+    {
+      "year": 1924,
+      "title": "The human electroencephalogram",
+      "detail": "Hans Berger, a psychiatrist in Jena, records the human brain's electrical rhythm through the intact skull — the alpha rhythm and the sleep spindle — after years of being dismissed; the technique becomes the workhorse of epilepsy and intensive-care neurology.",
+      "people": [
+        "Hans Berger"
+      ]
+    },
+    {
+      "year": 1937,
+      "title": "The cortical homunculus",
+      "detail": "Wilder Penfield's direct stimulation of exposed cortex during epilepsy surgery at the Montreal Neurological Institute maps sensory and motor representations as orderly, distorted body arrays — and with it, the safe boundaries of resection.",
+      "people": [
+        "Wilder Penfield"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "The ionic mechanism of the nerve impulse",
+      "detail": "Alan Hodgkin and Andrew Huxley, using the squid giant axon and the voltage clamp, quantify the sodium and potassium conductance changes underlying the action potential — neurophysiology becomes biophysics, and anaesthetic and antiseizure pharmacology gain their molecular vocabulary.",
+      "people": [
+        "Alan Hodgkin",
+        "Andrew Huxley"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "L-dopa for Parkinson's disease",
+      "detail": "Ole Hornykiewicz's demonstration of striatal dopamine deficiency in parkinsonian brains becomes therapy when George Cotzias pushes high-dose levodopa in the late 1960s; dopamine replacement transforms the wards and founds modern movement-disorder practice.",
+      "people": [
+        "Ole Hornykiewicz",
+        "George Cotzias"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "Time is brain",
+      "detail": "The NINDS rt-PA trial shows that intravenous alteplase within three hours of onset improves stroke outcome; later trials extend the window with imaging selection and prove thrombectomy for large-vessel occlusion (2015), making acute stroke the neurological emergency with a clock and a treatment.",
+      "people": [
+        "NINDS rt-PA Stroke Study Group"
       ]
     }
   ],

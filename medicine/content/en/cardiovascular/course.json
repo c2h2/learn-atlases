@@ -8,8 +8,9 @@
   "tagline": "The heart and circulation, the ECG, hypertension, coronary disease, heart failure and arrhythmias",
   "summary": "Cardiovascular disease is the leading cause of death worldwide. This course explains the heart and circulation and their control, the ECG and cardiac investigations, and the causes, presentation and treatment of hypertension, atherosclerosis and coronary disease, heart failure, arrhythmias, valve and congenital heart disease, and diseases of the blood vessels.",
   "overview": [
-    "The heart, and the one that the system is for, is the one that the limit is for, and the one that the blood is for. This course follows the heart and the one that the blood is for, from the mechanism and the one that the limit is for, to the practice and the one that the cardiovascular is for, and gives the method and the check that make it work.",
-    "We build the heart and the one that the blood is for, from the process and the structure, and then study how the clinical and the cardiovascular, and the one that the limit is for, are for."
+    "The cardiovascular system is two problems in one: a pump with its valves and chambers, and a plumbing tree whose pressures and resistances determine where blood goes. Clinical cardiology follows the same division — the patient with a failing pump, and the patient with an occluded or leaking vessel — and this course keeps both in view while teaching the underlying physiology.",
+    "It begins with the cardiac cycle and the pressure-volume loops that define systole and diastole, then electrophysiology and the ECG, because the electrocardiograph turned an invisible rhythm into a visible trace any clinician can read. From there: haemodynamics and blood pressure control; hypertension as the great population risk factor; coronary disease from plaque rupture to infarction; heart failure as the final common pathway, with its neurohormonal vicious circles; the arrhythmias by mechanism — re-entry, automaticity, triggered activity; and valve and congenital disease, where anatomy dictates the murmur and the physiology dictates the operation. A final chapter covers the aorta, arteries and veins: aneurysm, dissection, embolus, thrombosis and ischaemic limbs.",
+    "Each chapter works from mechanism to bedside to trial: why the JVP waveform looks as it does, why an aortic stenosis murmur radiates to the carotids, why four drug classes reduce mortality in heart failure, and what numbers an echocardiogram or an ejection fraction actually carries. Quantitative work — cardiac output by Fick, afterload, clearance of troponin, thrombolysis timing — is expected throughout."
   ],
   "prerequisites": [
     "anatomy",
@@ -18,11 +19,15 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Explain the heart, and the one that the mechanism is for, in the limit",
-    "Explain the blood, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the heart is for, in the limit",
-    "Outline the management, and the one that the blood is for, in the limit",
-    "Recognise the state, and the one that the heart is for, in the limit"
+    "Describe the cardiac cycle on pressure–volume terms, and explain heart sounds, the JVP waveform and the arterial pulse in terms of valvular and chamber events.",
+    "Explain cardiac electrophysiology — pacemaker and myocyte action potentials, conduction, the conducting axes — and construct the standard 12-lead ECG, recognising ischaemia, hypertrophy, bundle branch block and the common arrhythmias.",
+    "State the determinants of blood pressure and its short- and long-term regulation, including the renin–angiotensin–aldosterone system and baroreceptor reflexes.",
+    "Classify hypertension, explain end-organ damage, and outline the principles — not patient-specific instructions — by which current guidelines choose treatment.",
+    "Explain the pathogenesis of atherosclerosis and the acute coronary syndromes, the significance of troponin kinetics, and the reasoning behind reperfusion strategies and secondary prevention.",
+    "Define heart failure, distinguish systolic from diastolic dysfunction, trace the neurohormonal model that explains its progression, and list the drug classes that alter its natural history.",
+    "Classify arrhythmias by mechanism and origin, explain the logic of antiarrhythmic drug classes, and state the principles of anticoagulation in atrial fibrillation including stroke-risk scoring.",
+    "Correlate valve lesion anatomy and haemodynamics with murmur timing, radiation and dynamic manoeuvres, and recognise the physiology of the common congenital shunts.",
+    "Describe aneurysm, dissection, acute limb ischaemia, venous thrombosis and chronic venous disease, and the surgical and endovascular options in principle."
   ],
   "chapters": [
     {
@@ -105,27 +110,70 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the heart is for, is the one that the blood is for, of the structure.",
+      "year": 1628,
+      "title": "Exercitio Anatomica",
+      "detail": "William Harvey shows that the heart is a pump whose valves enforce one-way flow, that arterial blood flow is continuous and comes from the ventricle, and that blood returns in veins — closing the circle and moving physiology from qualitative to quantitative argument.",
       "people": [
-        "Harvey"
+        "William Harvey"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the heart is for, is the one that the blood is for, of the process.",
+      "year": 1733,
+      "title": "Measuring the pressure",
+      "detail": "Stephen Hales cannulates a horse's artery and watches the mercury column rise and fall with the pulse, recording pulse rate changes on exercise and describing experimental shock — blood pressure becomes a measurable quantity.",
       "people": [
-        "Lister"
+        "Stephen Hales"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the heart is for, is the one that the blood is for, of the mechanism.",
+      "year": 1816,
+      "title": "The stethoscope",
+      "detail": "René Laennec, unwilling to place his ear on a young woman's chest, rolls paper into a cylinder and finds sound travels well enough; he then spends years correlating chest sounds with findings at autopsy in the hospital where he works, founding cardiac auscultation.",
       "people": [
-        "Koche"
+        "René Laennec"
+      ]
+    },
+    {
+      "year": 1896,
+      "title": "The cuff at the clinic door",
+      "detail": "Scipione Riva-Rocci introduces the inflatable arm cuff that measures systolic pressure without opening an artery; with Nikolai Korotkoff's sounds (1905) it turns hypertension into a diagnosis any clinic can make — a condition that had barely existed before the instrument.",
+      "people": [
+        "Scipione Riva-Rocci",
+        "Nikolai Korotkoff"
+      ]
+    },
+    {
+      "year": 1903,
+      "title": "The electrocardiogram",
+      "detail": "Willem Einthoven at Leiden records the heart's electrical activity with a string galvanometer, names its waves, and formulates the triangle and the law that still define the limb leads; cardiology acquires its most-used investigation.",
+      "people": [
+        "Willem Einthoven"
+      ]
+    },
+    {
+      "year": 1944,
+      "title": "A shunt for blue babies",
+      "detail": "Alfred Blalock, guided by paediatrician Helen Taussig's reasoning that these infants need more pulmonary flow, anastomoses the subclavian artery to a pulmonary artery in a child with tetralogy of Fallot; congenital heart disease, previously untreatable, becomes a surgical subject.",
+      "people": [
+        "Alfred Blalock",
+        "Helen Taussig",
+        "Vivien Thomas"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "Running the circulation outside the body",
+      "detail": "John Gibbon uses a heart–lung machine to close an atrial septal defect at the Jefferson Medical College: with blood oxygenated and circulated mechanically, the surgeon can stop and open a living heart, and all later cardiac operations follow.",
+      "people": [
+        "John Gibbon"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "Opening a coronary with a balloon",
+      "detail": "Andreas Gruentzig performs the first percutaneous transluminal coronary angioplasty; combined later with stents and antiplatelet therapy, it turns acute myocardial infarction into a condition treated by opening the artery within hours.",
+      "people": [
+        "Andreas Gruentzig"
       ]
     }
   ],

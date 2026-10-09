@@ -8,18 +8,22 @@
   "tagline": "Homeostasis, body fluids, excitable tissues, muscle, the autonomic nervous system and hormones",
   "summary": "Physiology explains how the healthy body works and keeps itself stable. This course sets out the principles used by every organ system: homeostasis and body fluids, membrane potentials and excitable tissues, synapses and muscle, the autonomic nervous system, hormonal control, acid–base balance and the integrated responses to exercise and temperature.",
   "overview": [
-    "The process, and the one that the system is for, is the one that the limit is for, and the one that the organ is for. This course follows the process and the one that the organ is for, from the mechanism and the one that the limit is for, to the practice and the one that the physiology is for, and gives the method and the check that make it work.",
-    "We build the process and the one that the organ is for, from the process and the structure, and then study how the clinical and the physiology, and the one that the limit is for, are for."
+    "Physiology asks how the body keeps a constant internal environment while everything in it moves, and it answers in the language of flows, gradients, feedback loops and set points. This course is the quantitative heart of preclinical medicine: membrane potentials and action potentials, synapses and muscle, the autonomic nervous system and hormones as control systems, body fluids and their compartments, and acid–base balance as the classic problem of applied chemistry.",
+    "It begins with homeostasis and body fluid compartments — the volumes and compositions you must be able to sketch, osmosis and tonicity, and the hormonal control of water and sodium. Excitable tissue follows in two chapters: the ion-channel and Nernst–Goldman basis of the resting potential and the action potential, then synapses, neurotransmission and the reflex. Muscle physiology covers skeletal (sliding filaments, excitation–contraction coupling, fibre types, fatigue), cardiac (as a syncytium with its own pacemaker) and smooth muscle. The autonomic chapter maps the sympathetic and parasympathetic divisions and their transmitters — the foundation of a large part of pharmacology — and the hormones chapter treats the hypothalamic–pituitary axes, the steroid and thyroid chemistry and the integrated control of fuel, salt and water.",
+    "Acid–base physiology is taught as arithmetic with a clinical endpoint: Henderson–Hasselbalch, anion gap, delta ratios, compensation rules and the blood-gas interpretations that appear on every ward. The closing chapter integrates the systems — exercise physiology as the stress test that recruits them all, thermoregulation, and the feedback logic that links kidney, lung, heart and endocrine system in daily practice. Expect formulas, worked calculations and graphs throughout."
   ],
   "prerequisites": [
     "cell-biochemistry"
   ],
   "outcomes": [
-    "Explain the process, and the one that the mechanism is for, in the limit",
-    "Explain the organ, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the process is for, in the limit",
-    "Outline the management, and the one that the organ is for, in the limit",
-    "Recognise the state, and the one that the process is for, in the limit"
+    "Define homeostasis and negative and positive feedback, and describe body fluid compartments, their volumes and compositions, and the forces (Starling forces, osmotic pressures) that move water between them.",
+    "Explain the ionic basis of the resting membrane potential, use the Nernst and Goldman equations, and describe the phases of the action potential and refractory periods, with examples of channelopathies.",
+    "Describe synaptic transmission — synthesis, release, receptors, reuptake and degradation of transmitters — and the integration of excitatory and postsynaptic potentials, and neuromuscular transmission as a special case.",
+    "Explain skeletal muscle excitation–contraction coupling, the sliding-filament cycle, length–tension and force–velocity relations, fibre types and fatigue; contrast cardiac muscle as a functional syncytium and smooth muscle's mechanical and pharmacological properties.",
+    "Outline the autonomic nervous system's anatomy, transmitters and receptor subtypes, and predict the physiological effects of stimulating or blocking each; describe the adrenal medulla and autonomic reflexes including baroreceptor control.",
+    "Describe the hypothalamic–pituitary axes and the synthesis, transport, action and regulation of the major hormone classes, and relate feedback derangement to laboratory patterns.",
+    "Apply Henderson–Hasselbalch to arterial blood gases, classify acid–base disorders, calculate the anion gap and delta ratio, state compensation expectations and interpret mixed disorders.",
+    "Integrate the physiological responses to exercise, heat and cold, starvation and the standing position, and explain the control variables each system defends."
   ],
   "chapters": [
     {
@@ -91,27 +95,76 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the process is for, is the one that the organ is for, of the structure.",
+      "year": 1821,
+      "title": "Bell and Magendie divide the roots",
+      "detail": "Charles Bell's experiments and, independently, François Magendie's show that ventral spinal roots carry motor fibres and dorsal roots sensory fibres — the first fractionation of the nervous system into analysable channels, and the beginning of systems physiology.",
       "people": [
-        "Harvey"
+        "Charles Bell",
+        "François Magendie"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the process is for, is the one that the organ is for, of the process.",
+      "year": 1850,
+      "title": "The internal environment",
+      "detail": "Claude Bernard's lectures on the constancy of the internal milieu — the idea that the free-living organism keeps its internal sea stable while the external one changes — become physiology's organising principle, and his experimental method (ligature, denervation, assay) its toolkit.",
       "people": [
-        "Lister"
+        "Claude Bernard"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the process is for, is the one that the organ is for, of the mechanism.",
+      "year": 1897,
+      "title": "The heart's own law",
+      "detail": "Henry Newell Martin's school and, decisively, Francis Otto Starling's isolated heart–lung preparation show that the heart pumps what returns to it: increased diastolic stretch increases the force of contraction — the Starling law that underlies venous return, exercise and heart failure.",
       "people": [
-        "Koche"
+        "Ernest Starling",
+        "William Bayliss"
+      ]
+    },
+    {
+      "year": 1902,
+      "title": "Hormones",
+      "detail": "Bayliss and Starling's secretin experiment, and Starling's 1905 name for the class, establish chemical regulation at a distance; within two decades Starling's own crew (Bayliss, and later Dale's work on adrenaline and acetylcholine) supplies the model of humoral control that endocrinology fills in.",
+      "people": [
+        "William Bayliss",
+        "Ernest Starling"
+      ]
+    },
+    {
+      "year": 1921,
+      "title": "Chemical transmission of nerve impulses",
+      "detail": "Otto Loewi's two-heart frog preparation shows that vagal stimulation releases a diffusible substance ('Vagusstoff', later acetylcholine); with Henry Dale's parallel pharmacology, chemical synapses replace the electrical-only picture, and autonomic pharmacology becomes possible.",
+      "people": [
+        "Otto Loewi",
+        "Henry Dale"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "The action potential explained",
+      "detail": "Hodgkin and Huxley's squid-axon experiments, with Katz's quantal release at the endplate soon after, turn excitability into ion movement through gates — the quantitative, testable physiology on which anaesthetics, antiarrhythmics and channelopathy medicine rest.",
+      "people": [
+        "Alan Hodgkin",
+        "Andrew Huxley",
+        "Bernard Katz"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Single channels, recorded",
+      "detail": "Erwin Neher and Bert Sakmann develop the patch clamp so that the current through one ion channel can be recorded as it flickers open; the quantal, stochastic reality of membrane physiology becomes directly observable (Nobel Prize 1991), and with it the mechanism of hundreds of drugs.",
+      "people": [
+        "Erwin Neher",
+        "Bert Sakmann"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "A gas as a messenger",
+      "detail": "Robert Furchgott discovers that acetylcholine relaxes arteries only when the endothelium is intact, implicating a diffusible relaxing factor — identified in 1987 as nitric oxide; the endothelium joins the endocrine organs and a whole vascular pharmacology (from nitrates to sildenafil) is explained.",
+      "people": [
+        "Robert Furchgott",
+        "Ferid Murad",
+        "Louis Ignarro"
       ]
     }
   ],

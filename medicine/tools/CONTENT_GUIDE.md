@@ -105,6 +105,20 @@ figures (pharmacokinetics, ECG rhythms, the oxygen–haemoglobin curve, spiromet
 interpretation, the SIR epidemic, Kaplan–Meier curves, forest plots, growth charts, pedigrees …)
 are planned in `tools/WIDGET_GUIDE.md`; use a type only once it is in the catalogue.
 
+## 6.1 What the checker enforces, and two traps
+
+- **Generated filler is an error.** A lesson or course field containing the skeleton's phrasing
+  ("the one that the … is for", 以及者…) fails the check whatever its length; the originals live in
+  `pending/` for reference only and must never be copied from.
+- **Figure parameters** are validated by `tools/build.js` against `data/widgets.json`: ranges are
+  `"min, max"` with a comma (`x: 0.5, 100`), lists are separated by `; ` (`hlines: 50; 150`), and
+  `plot` functions must use the variable `x`. Only the 13 types in the catalogue exist — the
+  medicine-specific figures in `tools/WIDGET_GUIDE.md` have not been built.
+- **`check="…"` is compared numerically to 1e-6 relative.** Put exact values there; when the answer is
+  meant to be rounded, write the rounding in the attribute, e.g. `check="round(61.5*log10(8/150))"`.
+- Verify every calculation with `python3` before writing it into an exercise (the guide asks for this;
+  it is also the easiest way to find an error before a reader does).
+
 ## 7. Check your work
 
 ```

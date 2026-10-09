@@ -17,10 +17,18 @@ $lesson = ma_lesson($cslug, $lslug);
 $area = $course['area'];
 $chapters = $course['chapters'];
 $i = $ch['n'] - 1;
-$prev = $chapters[$i - 1] ?? null;
-$next = $chapters[$i + 1] ?? null;
 $idx = ma_index();
 $stats = $idx['chapters']["$cslug/$lslug"] ?? [];
+$is_missing = fn(string $c, string $l): bool => !empty($idx['chapters']["$c/$l"]['missing']);
+// previous and next written chapters, so navigation never lands on an empty page
+$prev = $next = null;
+foreach ($chapters as $i2 => $c2) {
+    if ($c2['slug'] === $lslug) {
+        for ($j = $i2 - 1; $j >= 0; $j--) { if (!$is_missing($cslug, $chapters[$j]['slug'])) { $prev = $chapters[$j]; break; } }
+        for ($j = $i2 + 1; $j < count($chapters); $j++) { if (!$is_missing($cslug, $chapters[$j]['slug'])) { $next = $chapters[$j]; break; } }
+        break;
+    }
+}
 
 // figure scripts for the types used on this page
 $scripts = ['assets/js/lesson.js'];
@@ -39,7 +47,7 @@ if ($lesson && $lesson['widgets']) {
     }
 }
 $titlePlain = md_plain($ch['title']);
-page_head($titlePlain . ' · ' . md_plain($course['title']), '', ['scripts' => $scripts, 'description' => md_plain($ch['summary'] ?? '')]);
+page_head($titlePlain . ' · ' . md_plain($course['title']), '', ['scripts' => $scripts, 'description' => md_plain($ch['summary'] ?? ''), 'robots' => $lesson ? '' : 'noindex']);
 ?>
 <div class="wrap">
   <?= crumbs([[h(t('Atlas')), url('index.php')], [ma_inline($course['title'], $cslug), url('course.php', ['c' => $cslug])], [h(t('Chapter %d', $ch['n'])), null]]) ?>
@@ -58,15 +66,61 @@ page_head($titlePlain . ' · ' . md_plain($course['title']), '', ['scripts' => $
     <?php endif; ?>
     <?php $req = ma_requires($ch); if ($req): ?>
     <div class="prereq"><span><?= h(t('Builds on')) ?></span>
-      <?php foreach ($req as $r): [$rc, $rl] = explode('/', $r); $rm = ma_chapter_meta($rc, $rl); ?>
-      <a href="<?= h(url('lesson.php', ['c' => $rc, 'l' => $rl])) ?>"><?= h(md_plain($rm['title'])) ?><?= $rc !== $cslug ? ' · ' . h(md_plain(ma_course($rc)['title'])) : '' ?></a>
+      <?php foreach ($req as $r): [$rc, $rl] = explode('/', $r); $rm = ma_chapter_meta($rc, $rl); $rReady = !$is_missing($rc, $rl); ?>
+      <?php if ($rReady): ?><a href="<?= h(url('lesson.php', ['c' => $rc, 'l' => $rl])) ?>"><?= h(md_plain($rm['title'])) ?><?= $rc !== $cslug ? ' · ' . h(md_plain(ma_course($rc)['title'])) : '' ?></a>
+      <?php else: ?><span class="muted"><?= h(md_plain($rm['title'])) ?><?= $rc !== $cslug ? ' · ' . h(md_plain(ma_course($rc)['title'])) : '' ?> · <?= h(t('in preparation')) ?></span><?php endif; ?>
       <?php endforeach; ?>
     </div>
     <?php endif; ?>
     <?php if ($lesson): ?><button class="done-toggle" type="button" aria-pressed="false" data-done="<?= h("$cslug/$lslug") ?>"><?= icon('check') ?><span><?= h(t('Mark as read')) ?></span></button><?php endif; ?>
   </header>
   <?php if (!$lesson): ?>
-    <p class="callout"><?= h(t('This chapter is being written. The outline below shows where it fits in the course.')) ?></p>
+    <?php
+    // An unwritten chapter: say so plainly, then make the page useful — what the chapter will cover,
+    // what to read instead, and the outline the notice refers to.
+    $others = is_zh() ? 'en' : 'zh';
+    $otherReady = is_file(MA_CONTENT . "/$others/$cslug/$lslug.md");
+    $ready = [];
+    foreach ($chapters as $k => $c2) {
+        if ($c2['slug'] !== $lslug && empty($idx['chapters']["$cslug/{$c2['slug']}"]['missing'])) {
+            $ready[] = $c2;
+        }
+    }
+    ?>
+    <p class="callout"><?= h(t('This chapter is still being written. It will follow the pattern of every other chapter here: definitions and principles, explanations of mechanism, worked clinical cases, interactive figures and exercises with full answers.')) ?></p>
+    <div class="related" style="margin:0 0 34px">
+      <?php if ($otherReady): ?>
+      <a href="<?= h(url('lesson.php', ['c' => $cslug, 'l' => $lslug, 'lang' => $others])) ?>" style="--c:var(--a-<?= h($area) ?>)"><i></i><?= h(is_zh() ? '用英文阅读本章' : 'Read this chapter in Chinese') ?></a>
+      <?php endif; ?>
+      <?php foreach ($ready as $r): ?>
+      <a href="<?= h(url('lesson.php', ['c' => $cslug, 'l' => $r['slug']])) ?>" style="--c:var(--a-<?= h($area) ?>)"><i></i><?= h(t('Chapter %d', $r['n'])) ?> · <?= ma_inline($r['title'], $cslug) ?></a>
+      <?php endforeach; ?>
+      <a href="<?= h(url('course.php', ['c' => $cslug])) ?>" style="--c:var(--a-<?= h($area) ?>)"><i></i><?= h(t('About this course')) ?> · <?= ma_inline($course['title'], $cslug) ?></a>
+    </div>
+    <?php if (!empty($course['summary'])): ?>
+    <section class="block" style="--c:var(--a-<?= h($area) ?>)">
+      <div class="block-head"><h2 class="section"><?= h(t('About this course')) ?></h2><p><?= h(t('%d of %d written', count($ready) + 0, count($chapters))) ?></p></div>
+      <div class="prose"><p><strong><?= ma_inline($course['summary'], $cslug) ?></strong></p></div>
+    </section>
+    <?php endif; ?>
+    <section class="block" style="--c:var(--a-<?= h($area) ?>)">
+      <div class="block-head"><h2 class="section"><?= h(t('Chapters')) ?></h2><p><?= h(t('Where this chapter fits.')) ?></p></div>
+      <ol class="chapter-list">
+        <?php foreach ($chapters as $c2):
+            $key = "$cslug/{$c2['slug']}";
+            $miss = !empty($idx['chapters'][$key]['missing']); ?>
+        <li class="<?= $miss ? 'is-missing' : '' ?><?= $c2['slug'] === $lslug ? ' is-current' : '' ?>"<?= $c2['slug'] === $lslug ? ' aria-current="step"' : '' ?>>
+          <span class="n"><?= (int)$c2['n'] ?></span>
+          <div>
+            <?php if ($miss): ?><span class="t"><?= ma_inline($c2['title'], $cslug) ?></span>
+            <?php else: ?><a class="t" href="<?= h(url('lesson.php', ['c' => $cslug, 'l' => $c2['slug']])) ?>"><?= ma_inline($c2['title'], $cslug) ?></a><?php endif; ?>
+            <div class="s"><?= ma_inline($c2['summary'] ?? '', $cslug) ?></div>
+          </div>
+          <div class="m"><?= $miss ? h(t('in preparation')) : h(t('%d min', reading_minutes((int)($idx['chapters'][$key]['words'] ?? 0)))) ?></div>
+        </li>
+        <?php endforeach; ?>
+      </ol>
+    </section>
   <?php else: ?>
     <?php if (is_zh() && $lesson['src_lang'] === 'en'): ?><p class="callout" lang="zh-CN">本章的中文版尚未完成，下面显示英文原文。界面、目录和课程信息均已翻译。</p><?php endif; ?>
   <div class="lesson-layout">

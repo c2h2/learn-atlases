@@ -8,8 +8,9 @@
   "tagline": "Growth and development, the newborn, immunisation, childhood illness and safeguarding",
   "summary": "Children are not small adults: their physiology, illnesses and needs change as they grow. This course covers growth and development, the newborn, immunisation, common acute illness in childhood, congenital and genetic conditions, neurodevelopmental conditions, adolescent health and safeguarding children.",
   "overview": [
-    "The child, and the one that the system is for, is the one that the limit is for, and the one that the development is for. This course follows the child and the one that the development is for, from the mechanism and the one that the limit is for, to the practice and the one that the paediatrics is for, and gives the method and the check that make it work.",
-    "We build the child and the one that the development is for, from the process and the structure, and then study how the clinical and the paediatrics, and the one that the limit is for, are for."
+    "Paediatrics is not adult medicine at smaller doses: children are continuously developing, so their normal ranges, drug handling, immune responses, illnesses and the way they decompensate all shift with age — a neonate with a fever is an emergency, a schoolboy's is usually not. This course teaches the moving target: growth and its measurement, development and its milestones, and the illness patterns of each age band from the first hours to adolescence.",
+    "The chapters run through the neonate — transition at birth, assessment, jaundice, prematurity and its care, sepsis and asphyxia — and immunisation, from mechanism and schedule to the communication of risk that keeps parents returning. Acute childhood illness is taught by the paediatric early-warning approach: the child who is 'just not right', the fever without source, dehydration and fluids, croup, bronchiolitis, seizure and the unresponsive child. Congenital and genetic disease covers the recognisable syndromes, the metabolic emergencies and newborn screening; neurodevelopment covers cerebral palsy, autism, attention deficit and learning disability with their assessments; adolescent health covers confidentiality, eating disorders, mood disorders, substance use and sexual health; and safeguarding teaches the recognition, documentation and legal duties around physical, sexual and emotional abuse and neglect, including non-accidental injury, fracture patterns and disclosure.",
+    "The culture of the subject is present throughout: weight before drug dose, growth chart before diagnosis, play and family-centred care, and the fact that most childhood mortality now traces to a handful of causes — prematurity, intrapartum events, congenital anomaly and, in adolescence, suicide and injury."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -17,11 +18,15 @@
     "immunology"
   ],
   "outcomes": [
-    "Explain the child, and the one that the mechanism is for, in the limit",
-    "Explain the development, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the child is for, in the limit",
-    "Outline the management, and the one that the development is for, in the limit",
-    "Recognise the state, and the one that the child is for, in the limit"
+    "Interpret growth charts and pubertal staging, distinguish familial short stature and constitutional delay from pathology, and investigate growth failure and precocity systematically.",
+    "Describe developmental milestones by domain and age, recognise the child with global delay or regression, and initiate assessment and early intervention pathways.",
+    "Manage the newborn: immediate assessment including Apgar, recognising the unwell neonate, interpreting jaundice and its thresholds, and the problems of prematurity — respiratory distress, feeding, thermoregulation and retinopathy.",
+    "Explain vaccine types and immune mechanisms in children, describe routine immunisation schedules and their rationale, manage minor adverse events, and respond to parental vaccine concerns with evidence and empathy.",
+    "Assess the acutely unwell child using paediatric early-warning scores: A-to-E examination, weight-based fluid and drug calculation, the febrile child pathway, and recognition of the septic, dehydrated or fitting child.",
+    "Recognise the common congenital and genetic syndromes, the principles of newborn screening and the presentations of inborn errors of metabolism including the acute encephalopathic presentations.",
+    "Describe cerebral palsy, autism spectrum conditions, attention-deficit/hyperactivity disorder, specific learning and language disorders and tic disorders, with their assessment, school-based support and family impact.",
+    "Conduct a young-person consultation with confidentiality: eating disorders, low mood and self-harm risk, substance use, sexual health and contraception — with the safeguarding duties that attach to each.",
+    "Recognise the physical and behavioural indicators of abuse and neglect, document findings appropriately, and describe the local and legal framework — capacity, competence, mandatory reporting where applicable, and child protection proceedings."
   ],
   "chapters": [
     {
@@ -91,27 +96,81 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the child is for, is the one that the development is for, of the structure.",
+      "year": 1852,
+      "title": "Children in hospital",
+      "detail": "Charles West founds the Hospital for the Sick Poor Children (Great Ormond Street) in London, and its example spreads: childhood disease becomes something treated in dedicated institutions by physicians who have decided to specialise in the young.",
       "people": [
-        "Harvey"
+        "Charles West"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the child is for, is the one that the development is for, of the process.",
+      "year": 1866,
+      "title": "A recognised syndrome",
+      "detail": "John Langdon Down describes the 'Mongolian' idiocy — the distinct phenotype of trisomy 21, later correctly karyotyped by Jérôme Lejeune in 1959 — the first moment a developmental disability was seen as a specific, definable medical condition.",
       "people": [
-        "Lister"
+        "John Langdon Down",
+        "Jérôme Lejeune"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the child is for, is the one that the development is for, of the mechanism.",
+      "year": 1880,
+      "title": "Keeping premature babies alive",
+      "detail": "Stéphane Tarnier, inspired by a henhouse incubator at the Paris zoo, and his colleague Pierre Budin install the first neonatal incubators at the Maternité de Paris; temperature control, feeding technique and hygiene — not drugs — make preterm survival a medical possibility.",
       "people": [
-        "Koche"
+        "Stéphane Tarnier",
+        "Pierre Budin"
+      ]
+    },
+    {
+      "year": 1907,
+      "title": "The school medical service",
+      "detail": "Britain's Education Act permits local authorities to provide school meals and medical inspection; child health becomes a population service — growth measurement, screening and the detection of neglect at scale, the origin of the school nurse and the health visitor.",
+      "people": [
+        "Board of Education"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "The child's point of view",
+      "detail": "John Bowlby's World Health Organization monograph on maternal care and mental health, and Donald Winnicott's BBC broadcasts, put attachment, separation and the ordinary devoted mother at the centre of child development — the foundation of today's attachment-aware ward practice.",
+      "people": [
+        "John Bowlby",
+        "Donald Winnicott"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "The battered child",
+      "detail": "C. Henry Kempe and colleagues' JAMA paper gives a name, a pattern and a syndrome to physically abused children — subdural haematoma, retinal haemorrhage and fractures in various stages of healing in the child who 'fell off the sofa' — and, with the ombudsman-like pressure it creates, mandatory reporting regimes.",
+      "people": [
+        "C. Henry Kempe"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Charts for the well child",
+      "detail": "Tanner, Whitehouse and Takaki publish child growth standards from the Berkeley longitudinal study, and the British 1958 and 1965 national birth surveys feed national centile charts: growth becomes a measurement repeated at every contact, its failure a sign that leads to diagnosis.",
+      "people": [
+        "James Tanner",
+        "Rosemary Whitehouse"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Surfactant for respiratory distress",
+      "detail": "Following Clements's 1957 discovery of lung surfactant and Avery and Mead's 1959 link to neonatal respiratory distress syndrome, Fujiwara's Japanese trial of bovine surfactant instillation shows dramatic benefit; surfactant replacement, with antenatal steroids and CPAP, transforms neonatal survival.",
+      "people": [
+        "Yoko Fujiwara",
+        "Mary Ellen Avery",
+        "Jere Mead"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "A standard for growth",
+      "detail": "The WHO Child Growth Standards, built on the multicentre growth-reference study of breastfed infants in six countries, replace national references that encoded the malnourished as average; stunting worldwide is redefined and re-measured against a biological norm.",
+      "people": [
+        "World Health Organization"
       ]
     }
   ],

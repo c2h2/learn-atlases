@@ -35,8 +35,18 @@ page_head(md_plain($c['full_title'] ?? $c['title']), '', ['description' => md_pl
       <p class="tagline"><?= ma_inline($c['tagline'] ?? '', $slug) ?></p>
     </div>
     <div class="hero-side"><?= chapter_chain($c, ['unit' => 30]) ?>
-      <?php $first = $c['chapters'][0]; $keys = []; foreach ($c['chapters'] as $ch) { if (empty($idx['chapters'][$slug . '/' . $ch['slug']]['missing'])) { $keys[] = ['k' => $slug . '/' . $ch['slug'], 'u' => url('lesson.php', ['c' => $slug, 'l' => $ch['slug']]), 't' => md_plain($ch['title']), 'n' => $ch['n']]; } } ?>
-      <a class="w-btn primary course-go" href="<?= h(url('lesson.php', ['c' => $slug, 'l' => $first['slug']])) ?>" data-chapters="<?= h(json_encode($keys, JSON_UNESCAPED_UNICODE)) ?>" data-continue="<?= h(t('Continue: chapter %d')) ?>"><?= h(t('Start the course')) ?> →</a>
+      <?php $firstWritten = null; $keys = [];
+      foreach ($c['chapters'] as $ch) {
+          if (empty($idx['chapters'][$slug . '/' . $ch['slug']]['missing'])) {
+              $firstWritten ??= $ch['slug'];
+              $keys[] = ['k' => $slug . '/' . $ch['slug'], 'u' => url('lesson.php', ['c' => $slug, 'l' => $ch['slug']]), 't' => md_plain($ch['title']), 'n' => $ch['n']];
+          }
+      } ?>
+      <?php if ($firstWritten !== null): ?>
+      <a class="w-btn primary course-go" href="<?= h(url('lesson.php', ['c' => $slug, 'l' => $firstWritten])) ?>" data-chapters="<?= h(json_encode($keys, JSON_UNESCAPED_UNICODE)) ?>" data-continue="<?= h(t('Continue: chapter %d')) ?>"><?= h(t('Start the course')) ?> →</a>
+      <?php else: ?>
+      <span class="muted small" style="display:block;padding:8px 0"><?= h(t('%d of %d written', $sum['written'], count($c['chapters']))) ?> · <?= h(t('in preparation')) ?></span>
+      <?php endif; ?>
     </div>
   </header>
 
@@ -77,7 +87,8 @@ page_head(md_plain($c['full_title'] ?? $c['title']), '', ['description' => md_pl
       <li class="<?= $missing ? 'is-missing' : '' ?>" data-key="<?= h($key) ?>">
         <span class="n"><?= (int)$ch['n'] ?></span>
         <div>
-          <a class="t" href="<?= h(url('lesson.php', ['c' => $slug, 'l' => $ch['slug']])) ?>"><?= ma_inline($ch['title'], $slug) ?></a>
+          <?php if ($missing): ?><span class="t"><?= ma_inline($ch['title'], $slug) ?></span>
+          <?php else: ?><a class="t" href="<?= h(url('lesson.php', ['c' => $slug, 'l' => $ch['slug']])) ?>"><?= ma_inline($ch['title'], $slug) ?></a><?php endif; ?>
           <div class="s"><?= ma_inline($ch['summary'] ?? '', $slug) ?></div>
         </div>
         <div class="m"><?php if ($missing): ?><?= h(t('in preparation')) ?><?php else: ?>

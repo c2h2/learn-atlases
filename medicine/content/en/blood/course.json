@@ -8,8 +8,9 @@
   "tagline": "Blood cells, anaemia, haemostasis and thrombosis, haematological cancers and transfusion",
   "summary": "Blood carries oxygen, fights infection and stops bleeding. This course covers haematopoiesis, the anaemias and haemoglobin disorders, haemostasis, bleeding disorders and thrombosis with their treatment, leukaemia, lymphoma and myeloma, and the safe use of blood transfusion.",
   "overview": [
-    "The cell, and the one that the system is for, is the one that the limit is for, and the one that the blood is for. This course follows the cell and the one that the blood is for, from the mechanism and the one that the limit is for, to the practice and the one that the blood is for, and gives the method and the check that make it work.",
-    "We build the cell and the one that the blood is for, from the process and the structure, and then study how the clinical and the blood, and the one that the limit is for, are for."
+    "Blood is the tissue every clinician orders a sample of. A few millilitres in an EDTA tube gives a cell count, a film, clotting times and a chemistry panel, and a competent haematologist reads in those numbers a story about the marrow, about destruction, about bleeding or thrombosis. This course teaches that reading from first principles: how the marrow makes cells, how those cells work, and what their absence, excess or malfunction means.",
+    "We begin with haematopoiesis — stem cell, progenitor, marrow environment, and the cytokines that drive each lineage, including erythropoietin — and with how to interpret a full blood count and blood film. Anaemias are then approached by mechanism and by cell size and reticulocyte count, with iron, folate and vitamin B12 biochemistry, haemolysis and the haemoglobin disorders in depth. Haemostasis follows: platelets and primary haemostasis, the coagulation cascade and its tests, thrombosis and the anticoagulants that prevent and treat it.",
+    "The second half deals with malignancy — the leukaemias, lymphomas and myeloma, classified by lineage, maturity and now by genetic lesion, because targeted treatment follows classification — and with transfusion medicine: blood groups, compatibility, component therapy and transfusion reactions. Throughout, quantitative reasoning is expected: red cell indices, reticulocyte production ratios, mixing studies, the indices that separate iron deficiency from trait, and the dosing logic of anticoagulants."
   ],
   "prerequisites": [
     "physiology",
@@ -17,11 +18,14 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Explain the cell, and the one that the mechanism is for, in the limit",
-    "Explain the blood, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the cell is for, in the limit",
-    "Outline the management, and the one that the blood is for, in the limit",
-    "Recognise the state, and the one that the cell is for, in the limit"
+    "Describe haematopoiesis, the marrow microenvironment and the growth factors that regulate each lineage, and recognise the appearances of normal and abnormal cells on a blood film.",
+    "Interpret a full blood count with red cell indices and a reticulocyte count, and classify anaemia by mechanism (blood loss, underproduction, haemolysis) and by cell size.",
+    "Explain iron, folate and vitamin B12 metabolism, diagnose and differentiate the microcytic and macrocytic anaemias, and state the reasoning behind each confirmatory test.",
+    "Describe the structure and genetics of the haemoglobins, and explain the pathophysiology, crises and management principles of sickle cell disease and the thalassaemias.",
+    "Outline primary and secondary haemostasis, interpret the platelet count, PT, APTT and thrombin time, and diagnose platelet disorders, haemophilia, von Willebrand disease and disseminated intravascular coagulation.",
+    "Explain the pathophysiology of venous thrombosis, Virchow's triad and risk assessment, and the mechanisms, indications, monitoring principles and reversal of the main anticoagulants.",
+    "Classify the acute and chronic leukaemias, lymphomas and myeloma by lineage, maturity, genetics and presentation, and relate classification to treatment strategy and prognosis.",
+    "Explain the ABO and Rhesus systems, indications for and components of transfusion, and the recognition and immediate management of transfusion reactions."
   ],
   "chapters": [
     {
@@ -97,27 +101,75 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the cell is for, is the one that the blood is for, of the structure.",
+      "year": 1665,
+      "title": "The first red cells",
+      "detail": "Jan Swammerdam and, improving on his lenses, Antonie van Leeuwenhoek describe the formed elements of blood seen through simple microscopes — the individual red cells that haematology would spend three centuries counting, staining and sorting.",
       "people": [
-        "Harvey"
+        "Jan Swammerdam",
+        "Antonie van Leeuwenhoek"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the cell is for, is the one that the blood is for, of the process.",
+      "year": 1901,
+      "title": "Human blood groups",
+      "detail": "Karl Landsteiner notes that sera from different people agglutinate each other's red cells, defines groups A, B and O (AB following with von Decastello and Sturli), and so explains the fatal transfusions of the nineteenth century and makes safe transfusion possible.",
       "people": [
-        "Lister"
+        "Karl Landsteiner"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the cell is for, is the one that the blood is for, of the mechanism.",
+      "year": 1916,
+      "title": "Blood that can be stored",
+      "detail": "Francis Rous and J. R. Turner show that citrate and glucose keep red cells viable in storage, and Oswald Robertson at the Western Front applies it; blood transfusion becomes a service that can be prepared in advance rather than an arm-to-arm emergency.",
       "people": [
-        "Koche"
+        "Francis Rous",
+        "J. R. Turner",
+        "Oswald Robertson"
+      ]
+    },
+    {
+      "year": 1940,
+      "title": "The Rhesus factor",
+      "detail": "Levine and Stetson, following a mother whose serum haemolysed her newborn's cells, and Landsteiner and Wiener working with Rhesus monkey red cells, converge on the antibody behind haemolytic disease of the newborn — the observation that leads to anti-D prophylaxis two decades later.",
+      "people": [
+        "Karl Landsteiner",
+        "Alexander Wiener",
+        "Philip Levine",
+        "Rufus Stetson"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "A molecular disease",
+      "detail": "Linus Pauling, Harvey Itano and colleagues show that sickle haemoglobin differs from normal haemoglobin in charge, and infer an altered molecule: for the first time a disease is traced not to an organ or a germ but to a single abnormal protein.",
+      "people": [
+        "Linus Pauling",
+        "Harvey Itano"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "The mutation written down",
+      "detail": "Vernon Ingram identifies the exact change in sickle haemoglobin — glutamic acid replaced by valine at position six of the beta globin chain — closing the loop from pedigree to amino acid and founding the era of molecular haematology and, later, haemoglobin gene therapy.",
+      "people": [
+        "Vernon Ingram"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "The stem cell demonstrated",
+      "detail": "James Till and Ernest McCulloch show that spleen colony-forming cells are self-renewing and give rise to multiple lineages, establishing the haematopoietic stem cell concept on which marrow transplantation, cord blood banking and leukaemia biology all rest.",
+      "people": [
+        "Ernest McCulloch",
+        "James Till"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Differentiation therapy",
+      "detail": "In Shanghai, Zhang Ting-Di's and Wang Zhenyi's group reports remissions in acute promyelocytic leukaemia using all-trans retinoic acid, driving malignant promyelocytes to mature rather than killing them — a new therapeutic idea born from the cell biology of a single translocation.",
+      "people": [
+        "Zhenyi Wang"
       ]
     }
   ],

@@ -8,8 +8,9 @@
   "tagline": "The surgical patient, anaesthesia, trauma, the acute abdomen and the main surgical specialties",
   "summary": "Surgery treats disease by operation, and every doctor looks after surgical patients. This course covers perioperative care and anaesthesia, wounds and surgical infection, the assessment of trauma, the acute abdomen, gastrointestinal, breast, endocrine, vascular and urological surgery, and orthopaedics.",
   "overview": [
-    "The procedure, and the one that the system is for, is the one that the limit is for, and the one that the organ is for. This course follows the procedure and the one that the organ is for, from the mechanism and the one that the limit is for, to the practice and the one that the surgery is for, and gives the method and the check that make it work.",
-    "We build the procedure and the one that the organ is for, from the process and the structure, and then study how the clinical and the surgery, and the one that the limit is for, are for."
+    "Surgery is medicine with controlled injury: the knife, the clamp and the suture trade immediate tissue damage for a larger physiological gain — the appendix removed before it ruptures, the artery tied, the fracture fixed so the limb can work again. This course teaches the general principles that underlie every operation, then the common emergency and elective presentations a junior surgical team actually manages.",
+    "The general part covers perioperative care — assessment and optimisation, fluids and fasting, thromboprophylaxis, and postoperative complications by timing (the day-by-day fever pattern, atelectasis, anastomotic leak); anaesthesia and analgesia from the physiology of general anaesthetic agents to regional blockade and multimodal pain plans; wounds and surgical infection — healing biology, dehiscence, surgical-site infection and necrotising soft-tissue infection; and trauma with its primary survey, haemorrhage control and damage-control logic. The regional chapters then run the surgical night shift: the acute abdomen and obstruction; gastrointestinal surgery (appendicitis, hernia, biliary disease, inflammatory bowel and bariatric principles); breast and endocrine surgery; vascular surgery and urology (the ischaemic limb, aneurysm, varicose veins, the urological emergencies); and orthopaedics with its fracture principles, joint sepsis and day-to-day presentations.",
+    "Throughout, the emphasis is on decision-making: which patient needs theatre now, which needs resuscitation first, which needs imaging, and how to say so concisely to the registrar on the phone. Anatomy is assumed (see the anatomy course); the taught threshold is recognising the surgical problem, stabilising, referring, and looking after the patient before and after the operation. All cases are fictional and all management is described as principle under current guidelines."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -17,11 +18,15 @@
     "musculoskeletal"
   ],
   "outcomes": [
-    "Explain the procedure, and the one that the mechanism is for, in the limit",
-    "Explain the organ, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the procedure is for, in the limit",
-    "Outline the management, and the one that the organ is for, in the limit",
-    "Recognise the state, and the one that the procedure is for, in the limit"
+    "Assess fitness for surgery — cardiopulmonary risk, medication review, malnutrition and frailty — and plan perioperative care including fasting, thromboprophylaxis, glycaemic and analgesic strategies.",
+    "Explain the physiology and pharmacology of general and regional anaesthesia, describe routine intraoperative monitoring, and manage postoperative nausea, pain and delirium.",
+    "Describe wound healing by primary and secondary intention, the factors that impair it, and the diagnosis and management of surgical-site infection, dehiscence, incisional hernia and necrotising soft-tissue infection.",
+    "Apply the trauma primary survey and resuscitation sequence (massive haemorrhage, airway, breathing, circulation, disability, exposure); describe the classes of haemorrhagic shock, damage-control surgery and the principles of head, chest, abdominal and pelvic injury management.",
+    "Take a surgical history of abdominal pain and vomiting and use examination, blood tests and imaging to build a differential of the acute abdomen; know the indications for emergency surgery — perforation, obstruction, ischaemia, strangulation, peritonitis, appendicitis.",
+    "Outline the presentation, investigation and surgical management principles of common conditions: appendicitis, abdominal wall hernias, cholecystitis and biliary disease, inflammatory bowel disease surgery, diverticular disease, colorectal and upper-gastrointestinal cancer pathways, and bariatric surgery.",
+    "Diagnose and stage breast disease and thyroid and parathyroid surgical disease, and state the multidisciplinary management principles including sentinel-node logic.",
+    "Recognise and initiate management of acute limb ischaemia, rupturing and symptomatic aortic aneurysm, deep-vein thrombosis and varicose vein complications; describe the urological emergencies — retention, renal colic, torsion, priapism and Fournier's gangrene.",
+    "Apply orthopaedic fracture principles — reduction, retention, rehabilitation — and recognise the emergencies: open fractures, compartment syndrome, septic arthritis, periprosthetic joint infection, dislocations and the fractured neck of femur pathway."
   ],
   "chapters": [
     {
@@ -103,27 +108,87 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the procedure is for, is the one that the organ is for, of the structure.",
-      "people": [
-        "Harvey"
-      ]
-    },
-    {
       "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the procedure is for, is the one that the organ is for, of the process.",
+      "title": "Public anaesthesia",
+      "detail": "William Morton's ether demonstration at the Massachusetts General Hospital — 'Gentlemen, this is no humbug' — follows Long's and Wells's earlier, less successful uses of ether and nitrous oxide; with pain, elective surgery and gentle technique become possible, and anaesthesia becomes a medical specialty within a generation.",
       "people": [
-        "Lister"
+        "William Morton",
+        "Crawford Long",
+        "Horace Wells"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the procedure is for, is the one that the organ is for, of the mechanism.",
+      "year": 1867,
+      "title": "Antisepsis",
+      "detail": "Joseph Lister, reading Pasteur, carbolises wounds and instruments at the Glasgow Royal Infirmary and reports falls in putrefaction and amputation mortality; antiseptic technique, refined into asepsis by Bergmann's steam sterilisation and by rubber gloves (Halsted's request, via the Goodyear company, in 1890), creates the conditions for modern operative surgery.",
       "people": [
-        "Koche"
+        "Joseph Lister",
+        "Eduard von Bergmann",
+        "William Halsted"
+      ]
+    },
+    {
+      "year": 1883,
+      "title": "Thyroid surgery made safe",
+      "detail": "Theodor Kocher's meticulous capsular technique and anatomical study at the Berne Inselspital bring thyroidectomy mortality under 1 per cent from near half; his systematic attention to the recurrent laryngeal nerve and the parathyroids is a model of audit-driven surgical improvement (Nobel Prize 1909).",
+      "people": [
+        "Theodor Kocher"
+      ]
+    },
+    {
+      "year": 1894,
+      "title": "Halsted's programme",
+      "detail": "William Stewart Halsted — who had already made vascular clamping, meticulous haemostasis and the silk suture standard at Roosevelt Hospital — performs radical mastectomy, and at the new Johns Hopkins helps build the residency training system that fuses aseptic technique, anatomical rigour and graded surgical education into academic surgery.",
+      "people": [
+        "William Halsted"
+      ]
+    },
+    {
+      "year": 1901,
+      "title": "Blood groups and transfusion",
+      "detail": "Karl Landsteiner's discovery of the human blood groups makes transfusion rational rather than Russian roulette; with Crile's direct-technique pioneer work, Hustin's and Robertson's citrate-glucose storage (1914–16) and the First World War's blood depots, haemorrhagic shock stops being routinely lethal on the table.",
+      "people": [
+        "Karl Landsteiner",
+        "George Crile",
+        "Albert Hustin",
+        "Oswald Robertson"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "Penicillin reaches patients",
+      "detail": "The first clinical trials of Florey and Chain's penicillin — including Police Constable Albert Alexander in Oxford — prove systemic antibacterial therapy; together with sulphonamides' wartime use, debridement and delayed primary closure, it transforms battle and postoperative surgical infection.",
+      "people": [
+        "Howard Florey",
+        "Ernst Boris Chain",
+        "Norman Heatley"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Accidental death and disability",
+      "detail": "The US National Research Council's report calls trauma 'the neglected disease of modern society' and finds early deaths driven by haemorrhage and airway failure in the first hours; the fix is systems — defined trauma regions and units, organised pre-hospital care, and the curriculum that becomes ATLS and the modern major-trauma centre.",
+      "people": [
+        "National Research Council"
+      ]
+    },
+    {
+      "year": 1987,
+      "title": "Keyhole cholecystectomy",
+      "detail": "After Erich Mühe's 1986 operation and the published series of Mouret in Lyon and Dubois in Marseille, laparoscopic gallbladder surgery spreads worldwide within years; the pattern repeats across general surgery — less access trauma, shorter stay, faster recovery — and forces the training, simulation and audit culture that now defines minimally invasive technique.",
+      "people": [
+        "Erich Mühe",
+        "Philippe Mouret",
+        "François Dubois"
+      ]
+    },
+    {
+      "year": 2008,
+      "title": "Safe surgery, checked",
+      "detail": "The WHO Surgical Safety Checklist's eight-hospital study reports falls in mortality and major complications; sign-in, time-out and sign-out with spoken confirmation become a global standard, and the checklist spreads to trauma, anaesthesia and ward handover as the simplest safety technology yet evaluated.",
+      "people": [
+        "World Health Organization",
+        "Alex Haynes"
       ]
     }
   ],

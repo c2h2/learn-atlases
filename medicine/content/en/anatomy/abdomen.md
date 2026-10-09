@@ -1,211 +1,183 @@
-The development, and the one that the embryo is for, is the one that the limit is for, and the one that the organ is for. The organ, and the one that the system is for, is the one that the limit is for, of the region and the one that the structure is for. This lesson defines the development, and the one that the embryo is for, of the organ and the one that the limit is for, and gives the structure, and the one that the body is for. The method, and the check, are the one for the development and the organ and the one that the embryo is for.
+The abdomen is a container that mostly contains its contents by pressure alone: a tube (gut) hung on a backbone (aorta, veins, kidneys) by double sheets of serous membrane (mesenteries), wrapped in a muscle-and-fascia wall whose design decides where the bowel will herniate, and lined by a serous bag whose recesses and gutters decide where infection goes. Everything clinical about it — the acute abdomen, the hernia, the portal hypertensive's bleeding, the stone's migrating colic, the ischaemic colon at exactly one bend — follows from that architecture.
 
- The development, and the one that the embryo is for, is the one that the limit is for, and the one that the organ is for. The description, and the one that the organ is for, is the use, of the development and the organ.
+This chapter covers the peritoneal cavity and its communications, the abdominal wall and inguinal region, and then the organs region by region: foregut, spleen-liver-biliary, midgut and hindgut, the retroperitoneum and its urinary tract, and the great vessels.
 
- The layer, and the one that the embryo is for, is the one that the limit is for, is for, in the tissue. The description, and the one that the tissue is for, is the use, of the tissue and the layer.
+## The peritoneum and its communications
 
- The week, and the one that the development is for, is the one that the limit is for, is for, of the stage. The description, and the one that the stage is for, is the use, of the stage and the week.
-
- The defect, and the one that the organ is for, is the one that the limit is for, is for, in the structure. The description, and the one that the structure is for, is the use, of the structure and the defect.
-
- The tube, and the one that the development is for, is the one that the limit is for, is for, in the organ. The description, and the one that the organ is for, is the use, of the organ and the tube.
-
- The field, and the one that the development is for, is the one that the limit is for, is for, in the effect. The description, and the one that the effect is for, is the use, of the effect and the field.
-
-::: definition Embryology {#def-emb}
-The **bryology** is the one, and the one that the embryo is for, that is the organ, is for, and the one that the limit is for. The **eek**, and the one that the development is for, is the one that the limit is for, is for, in the stage and the one that the layer is for. The description, and the one that the organ is for, is the use, of the development and the organ, and the one that the limit is for.
+::: definition Peritoneum, omenta and mesenteries {#def-peritoneum}
+The **peritoneum** is the serous membrane lining the abdominal wall (**parietal** — sensitive, segmental, localising) and investing the viscera (**visceral** — autonomic, poorly localising), with a potential space between. Where it doubles back on itself it forms sheets: the **greater omentum** (the "policeman of the abdomen", hanging from the greater curvature and enclosing the **lesser sac / omental bursa** behind the stomach, entered through the **epiploic (omental) foramen of Winslow** — the only natural communication, whose anterior boundary contains the **portal triad** and whose floor is the IVC); the **lesser omentum** (hepatogastric and hepatoduodenal ligaments, carrying the **left and right gastric vessels** and, in its free edge, the hepatic artery, bile duct and portal vein); and the **mesentery of the small bowel** (fan from the duodenojejunal flexure to the right iliac fossa), **transverse mesocolon**, **sigmoid mesocolon**, and the **phrenicocolic ligament** supporting the spleen. The duodenum (except D1), ascending and descending colon, pancreas, kidneys, ureters and aorta are **retroperitoneal**; the ascending and descending colon are secondarily retroperitoneal, fused to the posterior wall by **Toldt's fascia** — the surgical plane that lets them be mobilised by "unfusing" what development glued.
 :::
 
-::: proposition Germ {#prop-germ}
-The **erm** layers are
-$$
-\text{ectoderm},\ \text{mesoderm},\ \text{endoderm}.
-$$
-and the one that the embryo is for. The description, and the one that the tissue is for, is the use, of the layer and the tissue. So the layer, and the one that the limit is for, is the one that the tissue, is for, each, and the one that the development is for.
-:::
+The **paracolic gutters** — channels between the lateral colic edges and the abdominal wall — carry fluid with diaphragmatic movement and position: from the subphrenic spaces down to the iliac fossa (an appendicitis simulating a gallbladder, and vice versa: pelvic sepsis tracking upwards) and, across the midline via the mesentery root, from right pelvis to left. Above the transverse colon, the **supracolic compartment** (subphrenic and subhepatic spaces) and below it the **infracolic compartment** (paired paracolic and the pelvis) are the abscess map of a perforated viscus; the lesser sac is its hidden room, filled through Winslow's foramen and drained through the greater sac's abdomen.
 
-::: proposition Defect {#prop-defect}
-The **efect** is the one that the structure is for, is for, in the development.
-$$
-\text{incidence} \times \text{penetrance} \Rightarrow \text{expression}.
-$$
-and the one that the organ is for. The description, and the one that the structure is for, is the use, of the gene and the environment. So the expression, and the one that the limit is for, is the one that the predisposition, is for, with the insult, and the one that the defect is for.
-:::
-
- The development, and the one that the embryo is for, is the one that the organ is for. The neural, and the one that the tube is for, is the one that the limit is for, in the plate.
-
- The neural, and the one that the plate is for, is the one that the limit is for, in the tube. The description, and the one that the tube is for, is the use, of the tube and the neural.
-
- The somite, and the one that the segment is for, is the one that the limit is for, is for, in the mesoderm. The description, and the one that the mesoderm is for, is the use, of the mesoderm and the somite.
-
- The arch, and the one that the pharyngeal is for, is the one that the limit is for, is for, in the bar. The description, and the one that the bar is for, is the use, of the bar and the arch.
-
- The gut, and the one that the tube is for, is the one that the limit is for, is for, in the rotation. The description, and the one that the tube is for, is the use, of the rotation and the gut.
-
- The limb, and the one that the bud is for, is the one that the limit is for, is for, in the field. The description, and the one that the bud is for, is the use, of the field and the limb.
-
-## Worked cases
-
-::: example The week, and the stage {#ex-week}
-A person with a prenatal history shows the structure at the given stage.
+::: example Pancreatitis's back door {#ex-lesser-sac}
+A week after severe biliary pancreatitis, a patient develops early satiety, a palpable epigastric fullness and persistent fever; CT shows a large fluid collection behind the stomach.
 ::: solution
-The week, and the one that the development is for, is the one that the limit is for, is for, of the stage. The description, and the one that the stage is for, is the use, of the stage and the week. For the stage, and the one that the week is for, the organ, and the one that the limit is for, is the one that the development is for, is for.
+The collection is in the **lesser sac (omental bursa)**, and the anatomy explains both the disease's course and its treatment. The pancreas lies retroperitoneally across the bed of the lesser sac; exudate from an inflamed gland breaks through the peritoneal surface anteriorly into the bursa, bounded above by the stomach (early satiety — the stomach is compressed from behind), below by the transverse mesocolon (which can be the route the fluid pushes down into the greater sac), and communicating only through **Winslow's foramen** with the rest of the abdomen (which is why such a collection can wall off into a **pseudocyst** rather than generalise). A mature, symptomatic pseudocyst is drained **into the stomach or duodenum (transgastric, endoscopic or surgical)** — an operation that exists precisely because the cyst's wall abuts the posterior gastric wall, the same relation that made it symptomatic. And the foramen's clinical other face: internal herniation through Winslow's foramen (bowel herniating behind the portal triad) is the classic "closed-loop obstruction with a normal-looking rest of the bowel" and a named cause of ischaemia in the young and the elderly alike.
 :::
 :::
 
-::: example The defect, and the structure {#ex-defect}
-A person presents with a finding that traces to the development of the organ.
+## The wall and the inguinal region
+
+::: definition Layers and the rectus sheath {#def-wall}
+From skin inwards: **skin, superficial fascia (Camper's fatty layer and Scarpa's membranous layer), external oblique, internal oblique, transversus abdominis, transversalis fascia, extraperitoneal fat, parietal peritoneum**. The aponeuroses of the three flat muscles envelop **rectus abdominis** in the **rectus sheath**: above the **arcuate line** (roughly midway umbilicus–pubic tubercle) all three layers pass anterior and posterior to the muscle; below it all three pass **anterior**, leaving the muscle on transversalis fascia alone — the weak point at which, on occasion, a low midline wound opens or a rectus sheath haematoma dissects. The sheath's contents (superior and inferior epigastrics, the terminal intercostal nerves) are why the midline is **avascular** (the linea alba — the surgical approach) and the lateral edge is where vessels bleed (haematomas, and the rectus-sheath syndrome of nerve entrapment).
+:::
+
+::: definition The inguinal canal and the myopectineal orifice {#def-inguinal}
+The **inguinal canal** is a potential passage in the lower anterior wall, from the **deep (internal) ring** in the transversalis fascia (mid-inguinal point, 1.25 cm above the inguinal ligament) to the **superficial ring** in the external oblique aponeurosis (above the pubic tubercle); it carries the **spermatic cord** (vas, testicular/cremasteric arteries, pampiniform plexus, lymphatics, genital branch of the genitofemoral nerve) in men and the **round ligament** in women, plus the **ilioinguinal nerve** (C1) which it does not really "carry" — it is deliberately opened on. The **inguinal (Hesselbach's) triangle** — inferior epigastric vessels laterally, rectus margin medially, inguinal ligament inferiorly — is the floor's weak zone. Fruchaud's **myopectineal orifice** unifies the hernia anatomy: the single area of the abdominal wall bounded by the iliopectineal tract, anterior superior iliac spine, pubic tubercle and conjoined aponeurosis, covered only by transversalis fascia, and the common site of direct, indirect and femoral herniation; mesh repair (Lichtenstein, and preperitoneal approaches) is a deliberate reinforcement of this one orifice against abdominal pressure.
+:::
+
+::: theorem A hernia is defined by its relation to the vessels {#thm-hernia}
+The inferior epigastric vessels are the anatomist's landmark and the surgeon's: an **indirect** inguinal hernia enters the deep ring **lateral** to them (a patent processus vaginalis — the same structure whose failure to close is a congenital hydrocele); a **direct** hernia pushes through Hesselbach's triangle **medial** to them (acquired floor weakness); a **femoral** hernia passes **below** the inguinal ligament, through the femoral ring (lateral to lacunar ligament, medial to femoral vein, posterior to the ligament, anterior to pectineal ligament) and presents below the inguinal ligament, often small, often in multiparous women, and **strangulating early** because the femoral ring is unyielding.
+:::
+
+::: proof
+The rule earns its keep three ways. **Diagnosis**: a cough impulse appearing above and medial to the pubic tubercle is inguinal; below the ligament and lateral to the pubic tubercle is femoral — the tubercle and the ligament are the physical form of the vessel rule because the deep ring lies just above them and the femoral canal just below and lateral. **Risk**: the femoral ring's rigid boundaries (lacunar, pectineal, inguinal ligament, venous) explain why "a small lump in the groin of an elderly thin woman with bowel obstruction" is a femoral hernia until proven otherwise and why its obstruction is diagnosed late (Richter's — only the antimesenteric wall incarcerated, gut patent, strangulation occult). **Repair**: all inguinal repairs either close or bridge the defect and relieve the tension that will reopen it — the Shouldice sutures the transversalis to the inguinal ligament, the Lichtenstein lays mesh across the myopectineal orifice, and preperitoneal (Stoppa, laparoscopic TAPP/TEP) repairs push the abdominal pressure itself against the mesh, which is why "from behind" approaches treat direct, indirect and femoral hernias through one plane — the theorem in surgical form. The nerve geography (iliohypogastric, ilioinguinal, genital branch, and the lateral femoral cutaneous in laparoscopic ports) is the reason chronic groin pain after hernia repair exists and why the mesh is kept clear of the "triangle of pain" lateral to the cord structures.
+:::
+
+## Foregut: stomach, duodenum, and their arteries
+
+The **stomach** occupies the epigastrium and left hypochondrium: cardia, fundus, body, antrum, pylorus — the pylorus on the **transpyloric plane (L1)**, half-way between the suprasternal notch and pubic symphysis, the most useful horizontal plane in abdominal anatomy (it also passes the duodenojejunal flexure, the pancreatic neck, the renal hila, the spinal cord's conus, and the aortic bifurcation slightly below). Its blood supply — **left gastric** (coeliac), **right gastric** (hepatic), **gastroepiploic** arcade (splenic/gastroduodenal), **short gastrics** (splenic) — runs in the lesser and greater curvatures, which is why gastrectomy is a dissection along named vascular lines and why the short gastrics are the splenic-hilum hazard when dividing the greater omentum. The **posterior wall of the duodenal cap** is the classic bleeding ulcer site because the **gastroduodenal artery** runs directly behind it: erosion gives a **haematemesis and melaena**, whereas the anterior perforates into the peritoneum (free gas under the diaphragm). The duodenum is retroperitoneal except its first 2 cm, and its third part is crossed **anteriorly by the superior mesenteric vessels** between the aorta and SMA — the aortomesenteric angle, narrowed in extreme weight loss, obstructs D3 (**superior mesenteric artery syndrome**, vomiting after a celiac-artery-compression variant of the same geometry).
+
+## Liver, biliary tree, spleen
+
+::: definition Liver lobes, segments and the portal triad {#def-liver}
+The liver's true anatomical division is not the falciform ligament's two cosmetic lobes but the functional line from the **gallbladder fossa to the IVC (Cantlie's line)**: right and left lobes on **portal vascular territories**, further subdivided by portal vein branches into **eight Couinaud segments** — the language of hepatic resection, living donation and tumour reporting. The **portal triad** (portal vein, hepatic artery proper, bile duct) runs in the free edge of the lesser omentum (anterior), with the **IVC posterior** — the two structures between which the **Pringle manoeuvre** (clamping the hepatoduodenal ligament) controls hepatic arterial and portal inflow. The **portal vein** forms behind the pancreatic neck from the **superior mesenteric and splenic veins**, descends to the porta hepatis; because it has **no valves** and its pressure equals right-atrial pressure plus a small gradient, portal hypertension announces itself at the **portosystemic anastomoses**: oesophageal and gastric varices (**left gastric → azygos**), **caput medusae** (paraumbilical → epigastrics), anorectal (superior → middle/inferior rectal), retroperitoneal (veins of Retzius, colonic), and the bare area (phrenic). The **falciform ligament** (with the **ligamentum teres**, the obliterated umbilical vein) and the coronary and triangular ligaments tether the liver and define the subphrenic and subhepatic spaces.
+:::
+
+::: example Blood that goes where the doorbell was wired {#ex-varices}
+A 52-year-old with alcoholic cirrhosis has a massive haematemesis; the endoscopist finds oesophageal varices.
 ::: solution
-The defect, and the one that the structure is for, is the one that the limit is for, in the structure. The description, and the one that the structure is for, is the use, of the gene and the environment. For the structure, and the one that the defect is for, the development, and the one that the limit is for, is the one that the field is for, is for.
+The bleeding route is an anastomosis: **portal (left gastric/coronary vein) → submucosal oesophageal veins → azygos → superior vena cava**, opened at low pressure normally and engorged into submucosal columns when sinusoidal resistance rises — varices bleed at the **gastro-oesophageal junction and lower oesophagus**, are submucosal (so banding works and sclerotherapy scars), and their wall is thin overlying mucosa — trauma from food or retching causes the classic terminal bleed. The same portal hypertension reopens the **paraumbilical veins (caput medusae — radiating from the umbilicus, unlike the vertically-flowing superficial epigastrics of IVC obstruction: flow direction distinguishes them)**, and dilates the rectal plexus (haemorrhoids are common but not specifically portal). Resuscitation follows the anatomy in miniature: the immediate priorities are the airway and a large-bore line (the variceal bleed is venous-pressure bleeding — tamponade with a **Sengstaken-Blakemore tube**, a gastric balloon in the fundus and an oesophageal balloon along the lower oesophagus, is a physical application of the portal-azygos map), then vasoconstrictor therapy (terlipressin reduces portal inflow), then banding, then — for the refractory — a **TIPS** (transjugular intrahepatic portosystemic shunt: an artificial channel through the liver's parenchyma from **right hepatic vein to right portal vein**, radiologist's anatomy of Couinaud segments and hepatic veins, trading the bleed for encephalopathy by shunting ammonia past the liver). The long-term is transplant assessment, and the acute death rate is why the anastomosis, not the cirrhosis, is the thing named in the history.
 :::
 :::
 
- The development, and the one that the embryo is for, is the one that the organ is for. The somite, and the one that the segment is for, is the one that the limit is for, in the mesoderm.
+The **gallbladder** lies in its fossa on the visceral surface, fundus at the tip of the right 9th costal cartilage (the palpable point in cholecystitis, and Murphy's sign's finger), infundibulum (Hartmann's pouch — the neck's out-pouching that presses the common hepatic duct in impacted stones), body, and neck continuous with the cystic duct; the **cystic artery** arises from the right hepatic in **Calot's triangle** (cystic duct, common hepatic duct, liver — the surgeon's critical view, described in [[anatomy/anatomical-language]]). The **bile ducts** — right and left hepatic → common hepatic, + cystic → common bile — descend **posterior to the first part of the duodenum and in or behind the head of the pancreas**, joining the pancreatic duct at the **hepatopancreatic ampulla (of Oddi)** at the major duodenal papilla on the posteromedial D2: the reason a pancreatic head carcinoma or an impacted stone obstructs both flows — **painless obstructive jaundice with a palpable, non-tender gallbladder (Courvoisier's law)** is obstruction of the common bile duct distal to the cystic-duct insertion in a gallbladder that has never fibrosed, and the reason a "common bile duct stone + pancreatitis" combination exists at all.
 
- The somite, and the one that the mesoderm is for, is the one that the limit is for, in the segment. The description, and the one that the mesoderm is for, is the use, of the mesoderm and the somite.
+The **spleen** sits in the left hypochondrium against ribs 9–11, its long axis along the 10th, its **hilum on the visceral surface** related to the stomach, left kidney, pancreatic tail and splenic flexure. The **splenic artery** runs the pancreas's superior border (tortuous, retroperitoneal) and the short gastric and left gastroepiploic vessels are the gastrosplenic and splenorenal ligaments' contents — the two ligaments the surgeon divides to deliver the spleen, with the pancreatic tail the hazard inside the splenorenal. Splenosis, accessory spleens (10–20%, hilum and along the ligaments), and the **overwhelming post-splenectomy infection** risk (encapsulated organisms — pneumococcus, meningococcus, haemophilus — hence the vaccines before or two weeks after emergency splenectomy, and the lifelong fever-is-an-emergency card) are the spleen's whole clinical anatomy.
 
- The arch, and the one that the bar is for, is the one that the limit is for, in the pharyngeal. The description, and the one that the bar is for, is the use, of the bar and the arch.
+## Midgut, hindgut and the vascular borders
 
- The gut, and the one that the rotation is for, is the one that the limit is for, in the tube. The description, and the one that the tube is for, is the use, of the rotation and the gut.
+The **midgut** — duodenum distal to the bile-duct insertion to the proximal two-thirds of the transverse colon — hangs on the **superior mesenteric artery** (12–15 jejunal/ileal branches, ileocolic, right colic, middle colic) with lymphatics radiating to the coeliac-adjacent nodes at its root (why midgut cancer surgery is a high vascular ligation). The **jejunum** is left-upper, thicker-walled, more vascular, vasa recta long with few arcades; the **ileum** is pelvis and right iliac, thinner, aggregated Peyer's patches, shorter vasa recta with more arcades — differences that matter to the surgeon anastomosing and the radiologist reading a small-bowel study. The **appendix** is reliably found by following the **three taeniae coli** of the caecum to their convergence at the base; the **tip** wanders (retrocaecal ~65%, pelvic ~30%) and takes its symptoms with it — retrocaecal appendicitis lacks anterior tenderness and gives a positive **psoas sign**; pelvic appendicitis gives suprapubic or urinary symptoms (ureter and bladder irritated) with a soft abdomen, and is diagnosed late, especially in children, the elderly, pregnant women (the caecum rides up — [[anatomy/embryology]]), and patients on steroids.
 
- The field, and the one that the limb is for, is the one that the limit is for, in the bud. The description, and the one that the bud is for, is the use, of the field and the limb.
+::: definition The colon's vascular borders {#def-colon-vessels}
+The **hindgut** (distal transverse colon to the upper anal canal) is supplied by the **inferior mesenteric artery** — left colic, sigmoid branches, superior rectal. The **marginal artery of Drummond** (and the meandering **arc of Riolan**) connects SMA to IMA territories; between the middle colic and left colic territories, at the **splenic flexure (Griffiths' point)**, and between the sigmoid's last sigmoid branch and the superior rectal at the **rectosigmoid (Sudeck's point)**, the arcade is sparse — these are the **"watershed" zones** where low-flow states cause **ischaemic colitis** (segmental, "thumbprinting" on plain film, crampy left-sided pain with bloody diarrhoea in a vascularopath) and where vascular surgery's aortic cross-clamps threaten the descending/sigmoid colon (the reason the inferior mesenteric artery is re-implanted or preserved at open repair).
+:::
 
- The layer, and the one that the tissue is for, is the one that the limit is for, in the embryo. The description, and the one that the tissue is for, is the use, of the tissue and the layer.
-
-::: example The somite, and the segment {#ex-somite}
-A description of the segment shows the contribution of the mesoderm to the structure.
+::: example The watershed infarct {#ex-ischaemic-colitis}
+A 78-year-old on dialysis has an intradialytic hypotensive episode; twelve hours later, crampy left-sided pain and a bloody bowel motion. CT shows thickened descending colon to splenic flexure; flexible sigmoidoscopy shows segmental cyanotic mucosa with rectal sparing.
 ::: solution
-The somite, and the one that the segment is for, is the one that the limit is for, is for, in the mesoderm. The description, and the one that the mesoderm is for, is the use, of the mesoderm and the somite. For the mesoderm, and the one that the somite is for, the body, and the one that the limit is for, is the one that the development is for, is for.
+This is **non-occlusive ischaemic colitis at Griffiths' watershed**: low flow, not thrombus, in the border zone between SMA and IMA territories — hence the **segmental distribution ending at the splenic flexure and the rectal sparing** (the rectum's triple supply from superior, middle and inferior rectal arteries protects it, which is exactly the anatomical statement that separates ischaemic colitis from ulcerative colitis, whose proctitis starts at the anal verge and runs continuously upward). Management follows the anatomy's two verdicts: most non-gangrenous cases recover with bowel rest, antibiotics and perfusion correction; the ones that do not (peritonitis, persistent bleeding, stricturing) show a **thumbprint or single-axis strictures on follow-up contrast study** that need resection — the left hemicolectomy the acute event was rehearsing. The examination answer the case hides: "crampy left-sided pain + bloody stool in a patient whose colon has been low-flow for hours" is ischaemic colitis first, infectious and inflammatory differentials second.
 :::
 :::
 
-::: example The limb, and the field {#ex-limb}
-A clinical note traces the limb finding to the field effect during development.
+## Retroperitoneum, kidneys and ureters
+
+::: definition Kidneys, ureters and their hazards {#def-urinary}
+The **kidneys** lie on psoas and quadratus lumborum from T12 to L3, the left higher; the hila face anteromedially (so a posterior approach meets the posterior surface, and a lower-pole punch biopsy avoids the segmental vessels' avascular line of Brödel). Relations: right — liver, duodenum D2, hepatic flexure; left — stomach, spleen, pancreatic tail, jejunal loops, splenic flexure; both — suprarenal gland on the superomedial surface, diaphragm and pleura above (hence a subcostal incision's pleural risk, and the lower-lobe pneumonia that mimics renal pain). The **ureters** run down the psoas front, cross the pelvic brim at the **bifurcation of the common iliac**, and in the female base of the broad ligament pass **under the uterine artery** ("water under the bridge" — the ligature site in hysterectomy), before tunneling obliquely through the bladder wall (the anti-reflux mechanism whose failure in children causes vesicoureteric reflux and scarring). The three physiological constrictions — **pelviureteric junction, pelvic brim (where a vessel crosses), vesicoureteric junction** — are the three stone-impact sites, and each gives pain in its dermatomes: upper ureteric colic testicular/labial (L1–2, gonadal sharing), lower ureteric frequency and urgency (S2–4, bladder sharing).
+:::
+
+::: example Three stones, three presentations {#ex-stones}
+Three patients: (a) 30-year-old with sudden loin-to-groin colic, restless, microscopic haematuria; (b) 60-year-old with the same pain but fever and rigors; (c) 45-year-old with an incidentally found 12 mm pelvic-brim stone, no symptoms.
 ::: solution
-The limb, and the one that the bud is for, is the one that the limit is for, in the field. The description, and the one that the bud is for, is the use, of the field and the limb. For the field, and the one that the limb is for, the structure, and the one that the limit is for, is the one that the organ is for, is for.
+(a) An **obstructing ureteric stone** — the pain's migration is the stone's migration along the ureter with its referral changing (L1→S2-4 dermatomes); renal colic is **colic only in name** — ureteric peristalsis against obstruction gives near-constant pain with restless waves; patients writhe (contrast the still peritonitic patient). CT KUB is now the diagnostic standard (radio-opaque or not — urate stones are radiolucent on film, all stones show on CT). (b) **Obstruction with infected urine is a urological emergency**: the obstructed, infected kidney does not drain with antibiotics alone — **decompression within hours** (retrograde ureteric stent or percutaneous nephrostomy), then definitive stone treatment later — the anatomy of pus under pressure in a closed space translated into the only two operations that save it. (c) A **12 mm stone impacted at a constriction for months is a silent kidney-killer** (asymptomatic obstruction destroys function in weeks to months), and its size (>5–6 mm unlikely to pass) and impactation make intervention (ureteroscopy, stenting) the right answer — the reason "incidental" hydronephrosis is never incidental. Left gonadal vein drainage into the left renal vein at right angles — versus the right's direct IVC route — belongs with this case too: it is why **left varicoceles** are common and why a new left varicocele in an older patient raises the question of a renal-cell carcinoma thrombus in the renal vein (see [[anatomy/anatomical-language]] on variation).
 :::
 :::
 
- The development, the embryo, and the organ, and the limit is for, are the one that the structure is for, is for. The description, and the one that the organ is for, is the use, of the development and the organ.
+## The great vessels and the planes
 
- The neural, and the one that the tube is for, is the one that the limit is for, in the plate. The description, and the one that the tube is for, is the use, of the tube and the neural.
+The **abdominal aorta** enters at T12 behind the median arcuate ligament, gives the coeliac trunk (T12), superior mesenteric (L1, aortomesenteric angle — the D3 compression above), renal arteries (L1/2, the left longer, passing behind the renal vein; the right anterior to the IVC), gonadal (L2), and bifurcates at **L4** into common iliacs beside the left common iliac vein's crossing (the aortic bifurcation's compression of the left iliac vein — May-Thurner anatomy for the pelvic surgeon). **Infrarenal** is where aneurysms are repaired because the aorta can be clamped below the renals; the aneurysm's classic clinical anatomy is the **tripod of pain** (back, loin, leg) and the **rupture into the retroperitoneum** contained temporarily (a syncopal patient with a pulsatile mass who "recovers" — the contained rupture's lucid interval) versus free intraperitoneal rupture that does not recover. The **IVC** forms at **L5** from the common iliacs, ascends right of the aorta, receives the renals and middle hepatics, and pierces the diaphragm at **T8**; the **left renal vein** crosses anterior to the aorta between SMA and aorta — the vessel compressed in the nutcracker syndrome that causes left-sided varicocele and haematuria, an exercise in the same geometry as the syndrome's better-known cousin, superior mesenteric artery syndrome.
 
- So the development, and the one that the limit is for, is the one that the embryo and the organ, are for, is for. The description, and the one that the organ is for, is the use, of the development and the organ, and the embryo.
-
- The gut, and the one that the tube is for, is the one that the limit is for, in the rotation. The description, and the one that the tube is for, is the use, of the rotation and the gut.
-
- The arch, and the one that the pharyngeal is for, is the one that the limit is for, in the bar. The description, and the one that the bar is for, is the use, of the bar and the arch.
-
- The layer, and the one that the tissue is for, is the one that the limit is for, in the embryo. The description, and the one that the tissue is for, is the use, of the tissue and the layer.
-
-::: warning The field, and the limit {#warn-field}
-The field, and the one that the development is for, is the one that the limit is for, is for, in the effect. If the structure, and the one that the organ is for, is for is for, the one that the defect is for, is for. The description, and the one that the effect is for, is the use, of the effect and the field. So the effect, and the one that the limit is for, is for, in the field, and the one that the development is for.
+::: quiz
+A surgeon divides a vessel in the free edge of the lesser omentum, anterior to the epiploic foramen. Which triad of structures is at risk, and in what arrangement?
+- [ ] Hepatic artery (anterior), portal vein (anterior-right), bile duct (posterior)
+- [x] Bile duct (anterior-right), hepatic artery proper (anterior-left), portal vein (posterior)
+- [ ] Portal vein (anterior), hepatic artery (right), bile duct (left)
+- [ ] Cystic artery, cystic duct, portal vein
+::: solution
+The portal triad in the hepatoduodenal ligament runs, in standard teaching, **duct anterior and to the right, artery anterior and to the left, vein behind them** — a relation remembered by the operation (Pringle clamp across the free edge controls inflow; and the foramen's posterior wall is IVC, so a stray clamp carries it too). The right and left gastric vessels run in the lesser omentum's other part (hepatogastric), the right and left gastro-omental (gastroepiploic) vessels along the greater curvature — and a surgeon bleeding from the lesser curvature of a gastric ulcer is, by position, most likely facing the **left gastric artery**, while the posterior duodenal ulcer bleeds from the **gastroduodenal**. These five vessels and their positions are most of upper-GI haemorrhage surgery, and the whole chapter's arteries reduce to them.
+:::
 :::
 
 ::: widget plot
-f: 1/sqrt(x)
-x: 0.1 10
-y: 0 11
-sliders:
-caption: The development, and the one that the embryo is for, is the one that the organ is for. The week, and the one that the stage is for, is the one that the limit is for, of the development. The description, and the one that the organ is for, is the use, of the development and the organ.
-:::
-
-::: quiz
-The development, and the one that the embryo is for. Which germ layer gives the lining of the gut, and the one that the limit is for?
-- [x] The endoderm, and the one that the tube is for
-- [ ] The ectoderm, and the one that the plate is for
-- [ ] The somite, and the one that the segment is for
-- [ ] The arch, and the one that the bar is for
-::: solution
-The germ, and the one that the tissue is for, is the one that the limit is for, in the embryo. The description, and the one that the tissue is for, is the use, of the layer and the tissue. So the endoderm, and the one that the tube is for, gives the lining of the gut, and the one that the limit is for.
-:::
-:::
-
-::: summary
-- The development, and the one that the embryo is for, is the one that the limit is for, and the one that the organ is for.
-- The layer, and the one that the tissue is for, is the one that the embryo is for, is for.
-- The week, and the one that the development is for, is the one that the stage is for, is for.
-- The defect, and the one that the structure is for, is the one that the limit is for, is for.
-- The tube, and the one that the development is for, is the one that the organ is for, is for.
-- The description, and the one that the organ is for, is the use, of the development and the organ.
+f: 1/(1+exp(1.1*(x-5)))
+x: 1, 14
+y: 0, 1
+labels: \text{stone size (mm)},\ \text{probability of spontaneous passage}
+caption: Approximate spontaneous passage rates against ureteric stone size — a steep logistic falling through the 5 mm mark: small distal stones pass in the majority of cases (watch, hydrate, analgesia, strain), and above roughly 7–9 mm passage becomes the exception (intervention). The curve is schematic, but the thresholds it encodes are the ones that decide every ureteric colic admission: size, position (distal passes better than proximal at a given diameter), and infection — and infection overrules both.
 :::
 
 ::: history
-The development, and the one that the embryo is for, is the one that the limit is for, and the one that the organ is for. The tube, and the one that the development is for, is the one that the organ is for. The field, and the one that the effect is for, is the one that the development is for. The description, and the one that the organ is for, is the use, of the development and the organ. So the development, and the one that the limit is for, is the one that the embryo is for, is for.
+The abdomen's anatomy was built by three professions. The surgeons of the Great War taught the peritoneal recesses and gutters with their abscess maps; the radiologists of the barium era fixed the duodenojejunal flexure and the caecum's variants in the living; and the transplant and hepatobiliary surgeons of the 1960s–80s — Lortat-Jacob's hepatic vascular anatomy, the French school's segmentectomy, Starzl's portal-azygos disconnect — turned the cadaver's arteries into living surgical planes. The inguinal region's story is its own specialty: the Bassini, McVay and Shouldice repairs of 1887–1953 progressively identified the layers the anterior wall really has; Usher and Lichtenstein's mesh era (1958; 1986) and the laparoscopic preperitoneal repairs (1990s) converged on Fruchaud's single myopectineal orifice — the rare example of a 2,000-year-old operation improving because an anatomist drew the right map.
+:::
+
+## Where this leads
+
+Peritoneal fluid and abscess pathways continue into [[anatomy/pelvis-perineum]]; the gut's surgery in [[surgery/acute-abdomen]] and [[gastrointestinal/bowel-disease]]; the liver's physiology in [[gastrointestinal/liver-function]] and [[gastrointestinal/liver-disease]]; the kidney's in [[renal/filtration]] and [[renal/urinary-tract]]; the hernia's management in [[surgery/gastrointestinal-surgery]].
+
+::: summary
+- The peritoneum is a set of compartments connected by named routes — Winslow's foramen, the paracolic gutters — and those routes are the abscess map, the peritonitis map and the internal-hernia map.
+- The wall's arcuate line and the inguinal myopectineal orifice are the two weak points; a hernia's relation to the inferior epigastric vessels names it, and the femoral ring's rigidity makes it dangerous.
+- The transpyloric plane organises the upper abdomen; the posterior duodenal ulcer bleeds (gastroduodenal), the anterior one perforates (free gas), and the lesser curvature's artery is the left gastric.
+- Portal hypertension is an anatomy lesson in varices: lower oesophagus, umbilicus, rectum, retroperitoneum — and its treatment (band, balloon, terlipressin, TIPS, transplant) is the portosystemic map executed by other means.
+- The colon's watershed points (Griffiths, Sudeck) are where low flow causes ischaemia; the appendix's taenial convergence is where confusion ends; the ureter's three constrictions are where stones stop and its three referral patterns localise them.
+- Aorta T12–L4 with its five named branches' levels, IVC L5–T8; the left renal vein's crossing explains the nutcracker and the left varicocele; contained retroperitoneal rupture explains the aneurysm's lucid interval.
 :::
 
 ## Exercises
 
-::: exercise The development {level=1}
-Which germ layer forms the gut lining, and the one that the tube is for?
+::: exercise Visceral to somatic, twice {level=1}
+Describe the pain sequence and lateralisation for (a) a perforated duodenal ulcer and (b) acute appendicitis, in nerve terms.
 ::: solution
-The germ, and the one that the tissue is for, is the one that the limit is for, in the embryo. The description, and the one that the tissue is for, is the use, of the layer and the tissue. So the endoderm, and the one that the tube is for, forms the gut lining.
+(a) Periduodenal/epigastric **visceral** pain (T7–10 via coeliac and superior mesenteric plexuses, midline) followed within hours by **right-sided or generalised somatic pain** when gastric contents leak down the **right paracolic gutter** to irritate parietal peritoneum and the right iliac region — the mimic of appendicitis (and the reverse, appendicitis's high retrocaecal inflammation mimicking cholecystitis along the same gutter). The chemical peritonitis of acid is initially maximal in the **epigastrium and right side** before generalising. (b) As in [[anatomy/anatomical-language]]: T10 peri-umbilical visceral → right iliac fossa somatic — but here add the variants: retrocaecal (flank, psoas sign, less anterior peritonism), pelvic (suprapubic, urinary, less localised), and the infant and elderly whose omentum and immune response generalise or fail to localise. The gutter and the nerve, twice.
 :::
 :::
 
-::: exercise The organ {level=1}
-What is the embryology, and the one that the embryo is for?
+::: exercise The sheath and the bleed {level=1}
+An anticoagulated asthmatic coughing violently develops a painful para-umbilical lump that does not cross the midline and remains tender when she tenses her abdominal wall (Carnett's sign positive). What has happened, and why is it not intra-abdominal?
 ::: solution
-The embryology, and the one that the embryo is for, is the one that the limit is for, and the one that the organ is for. The description, and the one that the organ is for, is the use, of the development and the organ. So the development, and the one that the limit is for, is the one that the organ is for, is for.
+A **rectus sheath haematoma**, from rupture of the **inferior epigastric artery or its branches or the lateral perforators** within the sheath — below the arcuate line the muscle's posterior cover is only transversalis fascia, so the bleeding can dissect and be large without a peritoneal breach. The clinical rule the anatomy provides: the lump and tenderness are **in the wall** (positive Carnett: tensing the muscle increases or preserves the tenderness; intra-abdominal pain lessens), and the sheath's midline fusion (linea alba) means it **does not cross the midline**. Anticoagulation correction, imaging (CT shows the level and any active blush; angio-embolisation for continuing bleed), and the awareness that a low sheath bleed can be huge before tamponade, because below the arcuate line nothing is containing it. Differential: an incarcerated hernia at the linea semilunaris (Spigelian), which is also wall-based but has different boundaries — and neither needs laparotomy until they do.
 :::
 :::
 
-::: exercise The week {level=2}
-Explain, the week, and the one that the stage is for, in the development, and the one that the limit is for.
-::: hint
-The stage.
-:::
+::: exercise Follow the cord {level=1}
+Name the structures of the spermatic cord, the coverings each testicular investment came from, and explain the cremasteric reflex's pathway and its clinical use.
 ::: solution
-The week, and the one that the development is for, is the one that the limit is for, is for, of the stage. The description, and the one that the stage is for, is the use, of the stage and the week. So the stage, and the one that the limit is for, is for, in the week, and the one that the development is for.
+Cord contents: **vas deferens**, **testicular artery** (from aorta), **artery to vas and cremasteric artery** (from inferior epigastric/internal iliac systems), **pampiniform plexus** (→ renal vein left, IVC right), lymphatics, genital branch of the genitofemoral nerve and sympathetic fibres. Coverings from the wall layers: **external spermatic fascia** (external oblique aponeurosis), **cremaster and its fibres** (internal oblique — hence the cremasteric reflex: stroking the upper medial thigh, L1–2, contracts cremaster to elevate the testis; absent in **testicular torsion** — unreliable but classic — and useful in the acutely painful scrotum's differential), **internal spermatic fascia** (transversalis fascia, evaginated at the deep ring around the cord — which is why a congenital indirect hernia is inside the cord's coverings, while a direct hernia pushes the posterior wall medially and is not within the fascia of a preformed ring). The processus vaginalis — its proximal patency the indirect hernia, its distal the hydrocele — completes the list; the testicular artery's length and the vein's right-angle left drainage explain torsion's vascular emergency and the varicocele asymmetry.
 :::
 :::
 
-::: exercise The defect {level=2}
-Explain, the defect, and the one that the structure is for, in the development, and the one that the limit is for.
-::: hint
-The structure.
-:::
+::: exercise Which anastomosis is bleeding? {level=2}
+For each: name the portal-systemic anastomosis and the direction of portal flow: (a) variceal haematemesis; (b) caput medusae; (c) portal hypertensive rectal bleeding; (d) a retroperitoneal route that matters at nephrectomy.
 ::: solution
-The defect, and the one that the structure is for, is the one that the limit is for, in the structure. The description, and the one that the structure is for, is the use, of the gene and the environment. So the structure, and the one that the limit is for, is for, in the defect, and the one that the development is for.
+(a) **Left (coronary) gastric vein (portal) ↔ oesophageal veins → azygos (systemic/IVC)**: flow is **hepatofugal** up the short gastric/coronary route into the low-pressure azygos. (b) **Paraumbilical veins (portal, running in the ligamentum teres) ↔ superficial epigastrics (systemic)**: the classic distinction is flow direction — portal hypertension radiates **away from** the umbilicus in all directions with flow above the umbilicus toward the head; IVC obstruction keeps vertical flow **upward** below the umbilicus too, lateral thoracoepigastrics dominant. (c) **Superior rectal (portal, via inferior mesenteric) ↔ middle and inferior rectal (systemic, iliac/internal pudendal)**: engorged anorectal plexus. (d) **Renal and lumbar/ascitic retroperitoneal veins (portal capsular and duodenal tributaries ↔ renal, lumbar, phrenic)** — adhesions from retroperitoneal inflammation or a "retroperitoneal varices" field that bleeds in nephrectomy and liver-surgery dissections. The direction-of-flow point answers the therapeutic one: a **TIPS works because it lowers portal pressure, diverting flow toward the liver's outflow, not away from it** — and a transjugular route needs no open anatomy.
 :::
 :::
 
-::: exercise The neural {level=2}
-Explain, the neural, and the one that the tube is for, in the plate, and the one that the limit is for.
-::: hint
-The plate.
-:::
+::: exercise Localise the obstruction {level=2}
+A 70-year-old with three previous laparotomies has colicky central pain, vomiting, absolute constipation, and a distended, tympanitic abdomen with high-pitched bowel sounds; X-ray shows central dilated small-bowel loops with valvulae conniventes across the full width and no colon visible. Answer with anatomy: obstruction level, the two most likely causes given the history, and the specific anatomical reason a "strangulated" obstruction declares itself systemically.
 ::: solution
-The neural, and the one that the tube is for, is the one that the limit is for, in the plate. The description, and the one that the tube is for, is the use, of the tube and the neural. So the plate, and the one that the limit is for, is for, in the neural, and the one that the tube is for.
+**Small-bowel obstruction**: valvulae conniventes (plicae circulares) crossing the entire lumen distinguish small bowel from colonic haustra; central distribution and absent colonic gas place it in the small bowel; vomiting earlier and more prominent the higher the obstruction (proximal — bile and early; distal — faeculent, late). Causes here, in order: **adhesive bands** (previous laparotomies — the omentum and raw peritoneal surfaces' fibrous bridges, most commonly near previous incisions and the ileum) and **an internal hernia or obstructing band** (or a recurrence of whatever was operated for; a femoral or obturator hernia in a thin elderly woman is the missed one). Strangulation declares itself because the **occluded loop's mesenteric vein compresses first** at the neck (thin-walled, low-pressure), the loop congests, distends and becomes **closed-loop** (neither end drains), arterial inflow then fails, gut wall infarcts — bacterial translocation and endotoxin absorption produce fever, tachycardia, acidosis, continuous (not colicky) pain, and peritonism: the anatomical sequence "vein before artery, closed loop before simple" is why a febrile, tender, continuous-pain SBO is an operation, not a drip.
 :::
 :::
 
-::: exercise The somite {level=3}
-Explain, the somite, and the one that the mesoderm is for, in the segment, and the one that the limit is for.
-::: hint
-The mesoderm.
-:::
+::: exercise A pulsatile mass {level=2}
+An 80-year-old smoker presents with sudden severe back and loin pain and a collapsed, sweaty, briefly responsive episode before arrival. What is the event, what is the anatomy of the "brief response", and why is "tender pulsatile mass" both an examination finding and an indication?
 ::: solution
-The somite, and the one that the mesoderm is for, is the one that the limit is for, in the segment. The description, and the one that the mesoderm is for, is the use, of the mesoderm and the somite. So the mesoderm, and the one that the limit is for, is for, in the somite, and the one that the segment is for.
+A **leaking or ruptured abdominal aortic aneurysm**, most often infrarenal. The anatomy of the lucid interval: contained **retroperitoneal rupture**, where the haematoma and the body wall's tamponade hold the hole briefly — the "response" is the clot's blood pressure; the collapse is its first slip. The examination's value: a palpable **infrarenal aorta** is normally felt left of midline, above the umbilicus, with a width — not a pulsation — of ~2 cm (thin patients) — and a **tender, expansile** mass over that silhouette in a collapsing patient is not a finding to confirm by waiting: it is an indication for immediate vascular surgery involvement and resuscitative CT only if the patient is stable enough to survive the scanner's thirty minutes. The operative anatomy (infrarenal clamp, the left renal vein, the duodenum draped over the aorta at the fourth part, the common iliac veins' confluence at L5, the ureters laterally) explains why the repair is an aortic cross-clamp with a graft — and why the same anatomy risks renal failure, ischaemic colon (IMA), and the post-clamp acidosis whose washout causes cardiac arrest at unclamping.
 :::
 :::
 
-::: exercise The gut {level=3}
-Explain, the gut, and the one that the rotation is for, in the tube, and the one that the limit is for.
-::: hint
-The rotation.
-:::
+::: exercise Map the abscess {level=2}
+A subphrenic abscess after a perforated gastric ulcer on the left side: explain its location from the peritoneal routes, why the patient has hiccups and a left shoulder pain and a basal effusion, and why the drain's route is transcostal or anterior, guided by what the diaphragm's lymphatics do.
 ::: solution
-The gut, and the one that the rotation is for, is the one that the limit is for, in the tube. The description, and the one that the tube is for, is the use, of the rotation and the gut. So the rotation, and the one that the limit is for, is for, in the gut, and the one that the tube is for.
+Location: free fluid from a perforation on the stomach's posterior-inferior surface tracks via the **left subphrenic (perisplenic) space** — bounded by diaphragm above, spleen and stomach below, limited inferiorly by the phrenicocolic ligament — where negative intrathoracic pressure with respiration pumps infected fluid upward into the **subphrenic space**, whose bare-area-related lymphatics absorb fluid and bacteria (the old surgeons' "diaphragm sucks" — peritoneal fluid exits through the diaphragmatic stomata to the mediastinal lymphatics, which is why subdiaphragmatic collections cause mediastinal and pleural inflammation and why drains beside the diaphragm must be closed systems). The referred features are the **left phrenic nerve** (C3–5): hiccups from diaphragmatic irritation, shoulder-tip pain (supraclavicular C3–4), and a **sympathetic left basal effusion and splinting** with basal signs that mimic a chest primary — the classic "abdominal sepsis presenting as a chest infection", and a reminder that the diaphragm is an abdominal organ with thoracic nerves. Drainage is image-guided along a route that avoids the pleura (the recess reaches the 8th rib posteriorly, the 10th laterally, the 6th anteriorly), and a subphrenic space drained anteriorly under the costal margin rather than through the chest unless the collection is posterior and high.
 :::
 :::
 
-::: exercise The limb {level=3}
-Explain, the limb, and the one that the bud is for, in the field, and the one that the limit is for.
-::: hint
-The field.
-:::
+::: exercise Design the operation's planes {level=3}
+You are teaching a right hemicolectomy in one page. Give the operation's anatomy: vascular ligation points, the mobilisation planes, the anastomosis's blood and tension tests, and the two ureteric-crossing zones at risk.
 ::: solution
-The limb, and the one that the bud is for, is the one that the limit is for, in the field. The description, and the one that the bud is for, is the use, of the field and the limb. So the field, and the one that the limit is for, is for, in the limb, and the one that the bud is for.
+**Vascular ligation**: ileocolic vessels at their origin from the SMA (the node-bearing fat taken with them — the oncological specimen is the mesentery's lymphatic fan, so the ligation is high, near the pancreas neck, and this is the operation's danger to the **middle colic pedicle** and, on the right, to the **third part of the duodenum and the head of pancreas behind the mesentery's root**); right colic (often absent or shared) and the right branch of the middle colic; the **ileocolic pedicle's relation to the duodenum** is the reason the dissection proceeds medial-to-lateral with the duodenum identified first. **Mobilisation**: incise the white line of Toldt, reflect the colon medially in the avascular **Toldt's plane** (embryological fusion fascia), releasing the hepatic flexure (hepatocolic ligament — beware the gallbladder and duodenum anteriorly), with the **right gonadal vessels and the ureter swept posteriorly** off the specimen's bed. **Anastomosis**: ileo-transverse or ileocolic; the ileum's mesentery is mobilised to reach without tension; test the marginal arcade with the clamp — **peristalsis, bleeding cut edges, palpable pulses, and no tension** — and the two ends are the small bowel (thicker, single vessel arcade) to transverse colon (taeniae, appendices epiploicae). **Ureter zones at risk**: its pelvic-brim crossing of the common iliac bifurcation (where it is tented by the gonadal vessels and seen "in its fork") and its medial deviation at the duodenal/pancreatic head side during the high ligation (the right ureter lies behind the ascending colon's mobilisation plane throughout — it is the structure the teacher points out and the house surgeon ligates). The whole page is one sentence of the chapter's thesis: the operation runs in the spaces development left open, and the injuries happen where it forgot which nerve, vessel or duct should be in that space.
 :::
 :::

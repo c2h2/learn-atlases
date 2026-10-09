@@ -1,213 +1,189 @@
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The bone, and the one that the joint is for, is the one that the limit is for, of the muscle and the one that the nerve is for. This lesson defines the structure, and the one that the limb is for, of the bone and the one that the limit is for, and gives the nerve, and the one that the muscle is for. The method, and the check, are the one for the structure and the bone and the one that the limb is for.
+The head and neck pack more vital real estate per square centimetre than any other region: the airway and its recurrent nerves; the carotid and jugular carrying the brain's blood; the sympathetic chain on the vertebral gutter; the salivary glands whose ducts run beside the nerves that move the face; the pharynx, shared by air, food and infection. The surgical neck is a set of triangles and sheaths; the medical neck a set of nerves and spaces; and the region's emergencies — obstructed airway, deep-space infection, bleeding carotid — are all emergencies of this anatomy.
 
- The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The description, and the one that the bone is for, is the use, of the structure and the bone.
+This chapter covers the cervical skeleton and triangles, the carotid sheath and root of the neck, the pharynx, larynx and their nerves, the thyroid and salivary glands, the face, scalp and cavernous sinus, and the orbit.
 
- The bone, and the one that the joint is for, is the one that the limit is for, is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone.
+## Cervical skeleton and neck regions
 
- The muscle, and the one that the function is for, is the one that the limit is for, is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle.
-
- The nerve, and the one that the control is for, is the one that the limit is for, is for, in the branch. The description, and the one that the branch is for, is the use, of the branch and the nerve.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, is for, in the region. The description, and the one that the region is for, is the use, of the region and the vessel.
-
- The tendon, and the one that the muscle is for, is the one that the limit is for, is for, in the insertion. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
-
-::: definition Region {#def-reg}
-The **egion** is the one, and the one that the limb is for, that is the bone, is for, and the one that the limit is for. The **one**, and the one that the joint is for, is the one that the limit is for, is for, in the articulation and the one that the muscle is for. The description, and the one that the bone is for, is the use, of the structure and the bone, and the one that the limit is for.
+::: definition The cervical spine and its movements {#def-cspine}
+The **atlanto-occipital joint** (occipital condyles on the lateral masses of C1, the **atlas**, whose anterior arch articulates with the **dens (odontoid process)** of C2, the **axis**, bound by the **transverse ligament** and its alar and tectorial accessories) is the nodding joint; **C1–2** is the pivot of "no", together giving half of neck rotation and flexion-extension. The **vertebral arteries** ascend in the foramina transversaria (usually entering at C6), wind behind the lateral mass of C1 and pierce the dura to enter the skull. The lower cervical vertebrae carry **uncinate joints (of Luschka)** whose osteophytes impinge the exiting roots — the same foraminal logic as the lumbar spine ([[anatomy/back-upper-limb]]). The prevertebral muscles and the **deep cervical fascia** (investing, pretracheal, prevertebral, with the **carotid sheath** formed where they meet) enclose the neck, and the fascia's attachments decide where infection goes.
 :::
 
-::: proposition Nerve {#prop-nerve}
-The **erve** is the one that the control is for, is for, in the branch.
-$$
-\text{motor}:\ \text{muscle},\ \text{sensory}:\ \text{skin}.
-$$
-and the one that the limb is for. The description, and the one that the branch is for, is the use, of the branch and the nerve. So the nerve, and the one that the limit is for, is the one that the branch, is for, and the innervation, and the one that the muscle is for.
+::: definition The triangles {#def-triangles}
+The **sternocleidomastoid** divides each side into an **anterior** and **posterior triangle**. The posterior triangle (**trapezius, SCM, clavicle**; roof of skin and **spinal accessory nerve**, superficial and vulnerable — the classic casualty of the informal node biopsy, and the reason a posterior-triangle node is approached only with the nerve identified first; the **external jugular vein** crossing it; the **trunks of the brachial plexus** in its floor, the target of the interscalene block; and the **lymphatic chain** whose supraclavicular end hides **Virchow's node** — the left-sided sentinel of abdominal malignancy, its road the thoracic duct). The anterior triangle is quartered by the digastric and omohyoid into **submental** (lymph from lip tip and floor of mouth — the dental source of the "ludwig" territory), **submandibular** (the gland, the lingual and hypoglossal nerves, the duct), **carotid** (sheath and bifurcation at C4, the nerve relations below) and **muscular** (thyroid, parathyroid, trachea, oesophagus, larynx). The **root of the neck** behind the clavicle packs, medial to lateral, the great veins and artery, the **thoracic duct** arching on the left to join the subclavian-internal jugular junction, the **sympathetic trunk** on the neck of the first rib, and the **apex of the lung** — the four structures a Pancoast tumour (see [[anatomy/thorax]]) or a cervical rib compromises.
 :::
 
-::: proposition Vessel {#prop-vessel}
-The **essel** is the one that the supply is for, is for, in the region.
-$$
-\text{artery}: \text{supply},\ \text{vein}: \text{return}.
-$$
-and the one that the region is for. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vessel, and the one that the limit is for, is the one that the region, is for, and the circulation, and the one that the limb is for.
-:::
-
- The structure, and the one that the limb is for, is the one that the bone is for. The joint, and the one that the articulation is for, is the one that the limit is for, in the movement.
-
- The joint, and the one that the articulation is for, is the one that the limit is for, in the movement. The description, and the one that the articulation is for, is the use, of the articulation and the joint.
-
- The muscle, and the one that the contraction is for, is the one that the limit is for, in the function. The description, and the one that the function is for, is the use, of the function and the muscle.
-
- The nerve, and the one that the branch is for, is the one that the limit is for, in the control. The description, and the one that the branch is for, is the use, of the branch and the nerve.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel.
-
- The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
-
- The membrane, and the one that the joint is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane.
-
- The ligament, and the one that the joint is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament.
-
-## Worked cases
-
-::: example The bone, and the articulation {#ex-bone}
-A clinical note locates the finding at the articulation described.
+::: example The lymph node biopsy that left a dropped shoulder {#ex-spinal accessory}
+A 40-year-old has a "lymph node removed under local" from the right posterior triangle; weeks later the shoulder aches, and she cannot abduct the arm above horizontal or brush her hair.
 ::: solution
-The bone, and the one that the articulation is for, is the one that the limit is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone. For the articulation, and the one that the bone is for, the joint, and the one that the limit is for, is the one that the movement is for, is for.
+The **spinal accessory nerve (CN XI)** crosses the posterior triangle subcutaneously on the internal jugular vein's surface about two fingerbreadths above the clavicle, and is the classic casualty of an informal node biopsy in that field; division or scar-entrapment paralyses **trapezius** (the shoulder **sags**, lateral abduction past 90° fails because trapezius rotates the glenoid — see [[anatomy/back-upper-limb]]'s winging exercise) with scapular winging that is **lateral** and worse on abduction, distinguishing it from serratus palsy. Prevention is the rule: in the posterior triangle, a node biopsy means an open approach with the nerve identified, not a scoop under local. Treatment is a specialist referral — nerve graft or transfer in fresh injuries, and the physiotherapy programme (scapular bracing and strengthening of the levators and rhomboids) that at least restores function when the nerve is found late. The medico-legal anatomy is the same sentence the case wrote: the nerve is superficial, constant, and in the operative field; the injury is a statement that it was not looked for.
 :::
 :::
 
-::: example The muscle, and the contraction {#ex-muscle}
-A person presents with a deficit that localises to the muscle examined.
+## Carotid sheath, sympathetic trunk, and the deep spaces
+
+The **common carotid** bifurcates at **C4** (the upper border of the thyroid cartilage) into the **internal carotid** — **no branches in the neck**, enters the skull via the carotid canal — and the **external carotid**, whose eight branches (superior thyroid, ascending pharyngeal, lingual, facial, occipital, posterior auricular, maxillary, superficial temporal) map the arteries of face and mouth. The **carotid body** at the bifurcation is the peripheral chemoreceptor ([[cardiovascular/circulation-blood-pressure]]); the **carotid sinus** at the internal carotid's origin is the baroreceptor whose massage slows the heart, and whose irritation by tumour or collar causes syncope. The **internal jugular vein** lies posterolateral, the **vagus** behind and between, in a sheath whose fascia blends with the pericardium along the great vessels — hence the jugular pulse, and hence the cut jugular that can suck air. The **cervical sympathetic trunk** lies on longus capitis behind the sheath; its **stellate ganglion** (C7–T1, over the first rib's neck) carries the fibres whose interruption gives **Horner's syndrome** — ptosis, miosis, facial anhidrosis, apparent enophthalmos. The **deep cervical spaces** — retropharyngeal, "danger" (alar to prevertebral fascia, skull base to diaphragm), peritonsillar, parapharyngeal, submandibular — are the highways of neck sepsis, and their exits are the thorax: descending necrotising mediastinitis from a molar is this anatomy stated as an intensive-care admission.
+
+::: example The floor-of-mouth cellulitis {#ex-ludwig}
+A diabetic man presents with three days of a painful, woody, raised floor of the mouth after a lower molar infection; the tongue is pushed up and back, his voice is muffled, and he is drooling and anxious.
 ::: solution
-The muscle, and the one that the contraction is for, is the one that the limit is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle. For the contraction, and the one that the muscle is for, the nerve, and the one that the limit is for, is the one that the branch is for, is for.
+**Ludwig's angina** is a bilateral cellulitis of the **submandibular, sublingual and submental spaces** — the lower molars' roots, whose apices lie below the mylohyoid's insertion, drain into the submandibular space, and the infection crosses the midline in the loose tissue under the tongue. It kills by **airway obstruction**, not sepsis: the tongue is forced posteriorly against the pharyngeal wall, and the swelling does not fluctuate or point because it is cellulitis, not abscess — so "lancing" helps nothing and delay is the enemy. Management is the anatomy's order of priority: **secure the airway first** (awake fibreoptic intubation or, when the facial and neck anatomy forbids it, a surgical airway — the tracheostomy/cricothyroidotomy decisions below); then **broad-spectrum antibiotics covering oral anaerobes**; then **drainage of the teeth and any formed collections** once they form, with the submandibular incisions placed in a skin crease, keeping clear of the **marginal mandibular branch of the facial nerve** (which loops below the angle in some patients — the incision belongs two fingerbreadths below the mandible) and the submandibular duct and lingual nerve on the floor of the mouth inside. The lesson's one-line summary: a firm floor of mouth with a rising tongue is an airway emergency in a dental history, and the diabetics and the immunosuppressed get it fastest.
 :::
 :::
 
- The structure, and the one that the limb is for, is the one that the bone is for. The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle.
+## Pharynx, larynx and their nerves
 
- The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
+::: definition The pharynx and palate {#def-pharynx}
+The **pharynx** runs from skull base to C6 (the lower border of cricoid, where it becomes oesophagus): **naso-** (behind the nasal cavity, with the **pharyngeal (adenoid) tonsil** on its dome and the **auditory (Eustachian) tube** opening with its torus, the child's obstruction site), **oro-** (behind the mouth, the **palatine tonsil** between the palatoglossal and palatopharyngeal arches, its capsule lying on the superior constrictor — the plane of the peritonsillar abscess), and **hypo-** (the food-and-air common chamber, the piriform fossa on either side of the laryngeal inlet where a fishbone lodges and a foreign body must be sought, and the **laryngopharynx** whose recesses continue as oesophagus). The constrictors are supplied by the **pharyngeal plexus (vagus)** except **stylopharyngeus (IX)**; the palate likewise, except **tensor veli palatini (V3)** — "all is X except stylopharyngeus is IX, and all the palate is X except the tensor." The **tonsillar bed's artery is the tonsillar branch of the facial**, and its sensory line explains **referred ear pain via Jacobson's nerve (IX)**.
+:::
 
- The membrane, and the one that the lining is for, is the one that the limit is for, in the joint. The description, and the one that the lining is for, is the use, of the lining and the membrane.
+::: definition The larynx {#def-larynx}
+The larynx is the airway-defence sphincter: cartilages — **thyroid**, **cricoid** (the only complete ring, hence the cricothyroid membrane's role as the emergency's door, and hence the posterior-lamina necrosis and subglottic stenosis an over-tight tube causes), **arytenoids** on the cricoid's upper border, the **epiglottis** in front of the inlet — the **ventricle** with its **vestibular (false) and vocal (true) folds**, and the **glottis**; the airway's narrowest point is the **cricoid ring** in the child (which is why a paediatric tube must leak at 20–25 cmH₂O — the cricoid, not the cords, is the tight ring). Muscles: **cricothyroid** — the cord's tensor, supplied by the **external branch of the superior laryngeal nerve** (running with the superior thyroid artery — the surgeon's second nerve); **all other intrinsic muscles** by the **recurrent laryngeal nerve**; the **posterior cricoarytenoid is the only abductor**, which is why bilateral recurrent laryngeal palsy leaves the cords paramedian and the airway, not the voice, at risk. Sensory: **internal laryngeal** above the cords (the cough reflex's afferent), **recurrent** below. Lymphatics: above the cords to the **jugulodigastric/deep cervical** chain, below to **paratracheal** — laryngeal cancer's staging boundary. The **cricothyroid membrane** — subcutaneous, midline, crossed only by the small cricothyroid anastomosis — is the surgical airway because nothing important lies in it and the two cartilages make it palpable through blood and obesity.
+:::
 
- The ligament, and the one that the bond is for, is the one that the limit is for, in the joint. The description, and the one that the bond is for, is the use, of the bond and the ligament.
-
- The branch, and the one that the nerve is for, is the one that the limit is for, in the control. The description, and the one that the control is for, is the use, of the nerve and the branch.
-
-::: example The ligament, and the bond {#ex-ligament}
-A description of the joint notes the stabilising bond described.
+::: example Two hoarsenesses after thyroidectomy {#ex-thyroid-nerves}
+After a total thyroidectomy, patient A cannot produce high notes and her voice tires on the telephone; patient B is hoarse and breathy. A third, after a completion thyroidectomy, has stridor when agitated.
 ::: solution
-The ligament, and the one that the bond is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament. For the bond, and the one that the ligament is for, the bone, and the one that the limit is for, is the one that the articulation is for, is for.
+Patient A: **external laryngeal nerve** palsy — cricothyroid is paralysed, the cord cannot be tensed, and the loss is of pitch and projection rather than of phonation proper (the nerve runs with the superior thyroid artery; ligation of that vessel close to its origin is the injury). Patient B: **recurrent laryngeal nerve** palsy — a breathy, weak voice from a paralysed cord (the nerve lies in the tracheo-oesophageal groove, related to the inferior thyroid artery and to Berry's ligament, where most injuries occur; the surgeon identifies it in its lower neck course and follows it to the ligament). Patient C: **bilateral recurrent laryngeal injury** — the cords sit paramedian, the airway is narrow and the first crisis is stridor on exertion or emotion: an emergency, and the reason bilateral palsy is discussed with the surgeon before completion thyroidectomy or at the first sign after the first side (the standard of care is to stop and stage). Counselling before thyroid surgery names both nerves by function: "a change in your top register, and a hoarse voice" are the anatomical informed-consent sentences, and they are the reason the operation reports say "both recurrent laryngeal nerves identified and preserved".
 :::
 :::
 
-::: example The membrane, and the lining {#ex-membrane}
-A clinical note describes the lining of the joint in question.
+The **thyroid** wraps the trachea from the thyrohyoid down to the fifth tracheal ring, its **isthmus** over rings 2–4; its **superior thyroid artery** (from external carotid) is the first branch, the **inferior thyroid** (from thyrocervical trunk) the surgeon's posterior hazard, and the **thyroid ima** (a few per cent, from brachiocephalic/aortic arch) the bleeder in front of the trachea. Venous drainage — superior, middle and inferior thyroid veins — makes the inferior a short, wide channel to the brachiocephalic vein, and its tear during a substernal goitre's delivery is the operation's named danger, as is the **brachiocephalic artery and the pleural apex** that a retrosternal extension adheres to. The parathyroids sit behind the lobes in the plane between capsule and sheath; their search and preservation follows the descent lines of [[anatomy/embryology]].
+
+## Salivary glands and face
+
+::: definition The parotid and submandibular regions {#def-salivary}
+The **parotid** fills the fossa behind the jaw, pierced — deep to superficial — by the **external carotid**, the **retromandibular vein**, and the **facial nerve plexus** whose five terminal branches (temporal, zygomatic, buccal, marginal mandibular, cervical) fan across it; the **auriculotemporal nerve (V3)** carries its secretomotor fibres (otic ganglion, glossopharyngeal source) and is the nerve of Frey's syndrome. **Stensen's duct** crosses masseter and pierces buccinator opposite the **upper second molar** — the inspection point for saliva after cheek and duct injury. The **submandibular gland** wraps the posterior border of mylohyoid into the floor of mouth; **Wharton's duct** runs forward on the mylohyoid floor with the **lingual nerve looping under it from lateral to medial** (the loop the surgeon must know when clearing a duct stone at the papilla), and drains at the **sublingual papilla** beside the frenulum. The **sublingual gland** is the small pure-mucous gland under the tongue's mucosa, its many small ducts into the floor of mouth — the ranula's source (a mucus extravasation cyst that balloons the floor, treated by excision of the gland, not by deroofing the cyst).
+:::
+
+::: example The stone at the hilum {#ex-duct}
+A 55-year-old has painful swelling under the jaw "whenever she eats"; the swelling subsides within an hour of the meal.
 ::: solution
-The membrane, and the one that the lining is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane. For the lining, and the one that the membrane is for, the joint, and the one that the limit is for, is the one that the articulation is for, is for.
+This is **salivary colic** — a duct obstruction whose gland swells against saliva it cannot deliver — and it is the **submandibular gland** that does this nine times in ten, because its duct is long, uphill, and drains saliva that is alkaline, mucinous and calcium-rich into a dependent curve at the papilla; most stones are therefore **palpable bimanually** in the floor of mouth and visible on a radiograph (80% calcify enough). Management is the anatomy applied: hydration and massage for the small distal stone, intraoral extraction of a palpable duct stone (remembering the lingual nerve's loop under the duct), and **sialendoscopy** for the proximal mobile ones. The differential that must not be missed is the **hilum tumour** — a firm, non-colicky, persistent mass that demands imaging and parotid-style surgical planning because of the facial nerve's marginal mandibular branch and the lingual and hypoglossal nerves in the gland's deep surface, the neck-dissection territory it shares. The prevention sentence, because these patients recur: hydration, and the anticholinergic drugs that thicken saliva are the disease's friends.
 :::
 :::
 
- The structure, the limb, and the bone, and the limit is for, are the one that the region is for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone.
+The facial nerve's **intratemporal** course carries its own localising geography — the greater petrosal nerve (lacrimation), the nerve to stapedius (hyperacusis) and the chorda tympani (taste to the anterior two-thirds, secretion to submandibular and sublingual) are given off in that order, so the pattern of deficit says where in the temporal bone the lesion sits; the medicine of Bell's palsy is in [[nervous-system/sensory-systems]]. The **trigeminal** nerve's three divisions — ophthalmic (V1) through the superior orbital fissure to the forehead, cornea and eye; maxillary (V2) through the foramen rotundum, infraorbital nerve on the face's "canine fossa", and the posterior superior alveolar/pterygopalatine ganglion territory of the palate and upper teeth; mandibular (V3) through the foramen ovale, the muscles of mastication, the auriculotemporal, the inferior alveolar and its mental branch at the mental foramen (the dental anaesthesia landmark and the lower lip's numbness that should always be a radiograph of the third molar and the body of the mandible) — is the sensory map of the mouth, the face and the anterior scalp, and the motor branch's muscles the jaw-jerk and the deviation of the open jaw **to the paralysed side** (pterygoid weakness, unopposed contralateral push).
 
- So the structure, and the one that the limit is for, is the one that the limb and the bone, are for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone, and the limb.
+## Scalp, face, and the cavernous sinus
 
- The method, and the check, are the one for the structure and the bone and the one that the limb is for.
-
- The branch, and the one that the nerve is for, is the one that the limit is for, in the control. The description, and the one that the control is for, is the use, of the nerve and the branch.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel.
-
- The muscle, and the one that the contraction is for, is the one that the limit is for, in the function. The description, and the one that the function is for, is the use, of the function and the muscle.
-
-::: warning The tendon, and the limit {#warn-tendon}
-The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. If the contraction, and the one that the function is for, is for is for, the one that the muscle is for, is for. The description, and the one that the insertion is for, is the use, of the insertion and the tendon. So the insertion, and the one that the limit is for, is for, in the tendon, and the one that the muscle is for.
+::: definition The scalp and the face's danger {#def-scalp}
+The **scalp** is five layers — **skin, dense subcutaneous tissue (where the vessels run in fat pockets, which is why a scalp bleed gapes and will not tamponade, and why the arteries retract and re-bleed), the galea aponeurotica (the epicranial aponeurosis, occipitofrontalis's tendon — the layer that pulls wound edges apart and must be repaired), loose areolar tissue (the "subaponeurotic space" — the dangerous layer: emissary veins and the plane in which a scalp avulses, and in infants a potential subaponeurotic haemorrhage large enough to exsanguinate), and pericranium** (the layer that strips with the lid of a skull flap). The **face** drains valvelessly through the **angular vein into the ophthalmic veins and the cavernous sinus** — the sentence behind the "danger area of the face": a squeezed spot above the mouth-to-eye-angle line can seed septic thrombophlebitis inward, as can (more often) the sinuses and dental roots. The lymphatic map: forehead and anterior temple to **pre-/parotid** nodes, lower lids, nose and medial cheek to **submandibular**, lip and chin to **submental**, ear regions to **pre-/postauricular and upper deep cervical** — which is why a scalp lesion is staged with the neck palpated, and why a hard neck node sends someone to look at the scalp.
 :::
 
-::: widget plot
-f: sin(x)
-x: 0 10
-y: 0 11
-sliders:
-caption: The structure, and the one that the limb is for, is the one that the bone is for. The joint, and the one that the articulation is for, is the one that the limit is for, in the movement. The description, and the one that the bone is for, is the use, of the structure and the bone.
+::: definition The cavernous sinus and the orbit's apex {#def-cavernous}
+The **cavernous sinus** is the paired dural channel on either side of the sella, receiving the **ophthalmic veins**, the middle cerebral/sylvian veins and the pituitary venous blood, and draining via the **petrosal sinuses to the sigmoid sinus and the jugular**. Through its lateral wall run, top down, **III, IV, V1 and V2**; through its blood runs the **internal carotid with VI** beneath and lateral to it — the reason **VI is the first nerve lost** in a carotid-cavernous fistula or aneurysm within the sinus. Its clinical faces: **septic thrombosis** (from face, nose and sinuses — chemosis, proptosis, ipsilateral then contralateral ophthalmoplegias with fever; an emergency of imaging, anticoagulation and weeks of antibiotics); **carotid-cavernous fistula** (pulsatile proptosis, bruit, arterialised conjunctival vessels); and the **superior orbital fissure versus orbital apex syndrome** — fissure lesions spare II, apex lesions take the optic nerve, the sentence that separates the two.
+:::
+
+::: example The congested eye after a cold {#ex-cavernous}
+A teenage girl, day three of a frontal sinusitis, has a swollen shut right eye, double vision, a temperature of 39.2°C, and the left eye is beginning to look red.
+::: solution
+This is **cavernous sinus thrombosis** until an imaging study proves otherwise, and the second eye's involvement is the signature — the two sinuses communicate through the intercavernous circular sinuses, so a unilateral orbital congestion becomes bilateral cranial-nerve palsy over hours to days. The afferent route was the frontal/ethmoidal sinus → ophthalmic → superior ophthalmic vein valveless route the anatomy warns about (and why orbital cellulitis from ethmoiditis in a child is an admission and an ENT/ophthalmology decision about drainage in the same hour). The work-up is contrast CT or MR venography (thrombosed superior ophthalmic vein, sinus filling defect), blood cultures, and a search for the primary (sinus, face, dental); treatment is immediate broad antimicrobial cover (staphylococci, streptococci, sinus anaerobes), anticoagulation absent intracranial bleed (observational evidence, but most centres use it when cranial nerves are failing), and drainage of the primary focus. Mortality is now 20–30%; the cranial-nerve and visual morbidity that survives cure is the disease's true cost.
+:::
+:::
+
+## Orbit
+
+::: definition The orbit and its muscles {#def-orbit}
+The **orbital cavity** — a four-walled pyramid with its apex at the optic canal and superior orbital fissure — contains the globe, six extraocular muscles, levator, the lacrimal gland, fat and nerves. The four **recti** arise from the common tendinous ring at the apex (lateral rectus **VI**, the rest **III**), except that the **superior oblique — IV** — takes its pulley at the trochlea and intorts and depresses the adducted eye (the muscle you test in adduction, and the nerve whose long intracranial course makes it a head-injury casualty); the **inferior oblique** (III) rises from the orbital floor. The rule: **LR₆SO₄AO₃** — lateral rectus VI, superior oblique IV, all the rest III — and the head posture follows the palsy: IV tilts the head away from the lesion (the lost intorsion), III gives the "down and out" eye with ptosis and a dilated pupil (the parasympathetics ride the nerve's surface — see the pupil rule below), and VI turns the face towards the squint because the eye will not abduct.
 :::
 
 ::: quiz
-The structure, and the one that the limb is for. Which part provides return of blood, and the one that the limit is for?
-- [x] The vein, and the one that the vessel is for
-- [ ] The artery, and the one that the supply is for
-- [ ] The tendon, and the one that the insertion is for
-- [ ] The membrane, and the one that the lining is for
+A patient presents with loss of corneal reflex sensation on the right, jaw deviating to the right on opening, and numbness of the right upper lip — no hearing loss, no facial weakness. The lesion is:
+- [ ] Cavernous sinus
+- [x] The right trigeminal (semilunar) ganglion/nerus — V2 and V3 divisions with the motor root, sparing the nerve of the muscles of facial expression
+- [ ] Right facial nerve in the internal acoustic meatus
+- [ ] Right inferior orbital fissure
 ::: solution
-The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vein, and the one that the vessel is for, provides return of blood, and the one that the limit is for.
+The findings are all trigeminal: the **cornea's sensation is V1 (ophthalmic)**, the **jaw deviates to the weak side — V3's motor root to the pterygoids**, the **upper lip is V2 (infraorbital)** — a main trunk/ganglion lesion. The cavernous sinus (lateral wall III, IV, V1, V2) would spare V3's motor and the mandibular nerve (which leaves through the foramen ovale before the sinus); the facial nerve gives **no** facial sensation and its lesion is motor (and the corneal reflex loss there would be the **motor/efferent** arm — the blink failing, sensation intact — the clinical distinction of the same reflex in two nerves, which is the examiners' favourite). The inferior orbital fissure transmits V2's terminal branches, not V3.
 :::
 :::
 
-::: summary
-- The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for.
-- The bone, and the one that the joint is for, is the one that the articulation is for, is for.
-- The muscle, and the one that the function is for, is the one that the contraction is for, is for.
-- The nerve, and the one that the control is for, is the one that the branch is for, is for.
-- The vessel, and the one that the supply is for, is the one that the region is for, is for.
-- The description, and the one that the bone is for, is the use, of the structure and the bone.
+::: widget plot
+f: 1/x^4
+x: 0.35, 1
+y: 1, 100
+labels: \text{residual airway radius (fraction of normal)},\ \text{resistance (fraction of normal)}
+caption: The fourth-power law applied to the upper airway: an oedematous glottis or subglottis (post-extubation croup, epiglottitis, a burn) at half its radius already offers sixteenfold resistance, and the child's cricoid ring — narrowest point, complete circle — reaches that radius with millimetres of swelling that an adult tolerates. The curve is Poiseuille's, and it is why a stridulous child is watched with the room ready, why the tube is half a size smaller below the cords than size predicts, and why the emergency airway is cut before the airway is lost rather than after.
 :::
 
 ::: history
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The bone, and the one that the joint is for, is the one that the articulation is for, is for. The muscle, and the one that the function is for, is the one that the contraction is for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone. So the structure, and the one that the limit is for, is the one that the limb is for, is for.
+The neck's surgery is a graveyard of anatomists who mapped it to operate it: Astley Cooper's monograph on the glands (1830s), Theodor Kocher's thyroidectomies at Berne — mortality in his series fell below 1%, which he attributed to the ligature, the capsule and the nerve he taught surgeons to find (the Nobel Prize of 1909) — and Crile's radical neck dissection (1906), which took the nodes, the jugular, the SCM and the accessory as one block until the "modified" and selective dissections of the later century restored the structures the mortality no longer required. Laryngology's nerve anatomy is credited to the nineteenth-century clinicians' forked-tongue experiments and confirmed at operations; the cricothyroidotomy's place in military and anaesthetic doctrine was fixed by centuries of "tube the neck or lose the patient" cases, and the descriptions of the tract's avascularity are its evidence. The cavernous sinus and the danger area's infection doctrine was the penicillin-era clinicopathological literature's, written on the autopsy tables of the 1930s–50s — before antibiotics, the syndrome was a near-universal death, and the anatomy it left behind is the reason the face's triangles are still taught as surgical geography.
+:::
+
+## Where this leads
+
+The cranial nerve nuclei and their central lesions in [[anatomy/neuroanatomy]]; Bell's palsy and trigeminal neuralgia's medicine in [[nervous-system/sensory-systems]] and [[nervous-system/headache-pain]]; thyroid surgery and its complication management in [[surgery/breast-endocrine-surgery]] and [[endocrine/thyroid]]; airway obstruction's medicine in [[emergency-critical-care/airway-ventilation]]; dental sources of neck sepsis in [[infectious-diseases/fever-sepsis]]; and the ear's anatomy in [[nervous-system/sensory-systems]].
+
+::: summary
+- The neck is triangles and sheaths: the posterior triangle's nerve (XI), the carotid sheath's contents, the root of neck's four structures, and the fascial spaces that carry pus to the mediastinum.
+- The pharynx and palate obey the cranial-nerve rule (all X except stylopharyngeus IX; all X except tensor V3), and the larynx obeys two nerves: external laryngeal tenses, recurrent moves — and the posterior cricoarytenoid alone abducts.
+- Thyroid surgery is nerve and vessel geography: RLN in the groove and at Berry's ligament, external laryngeal with the superior pole, the inferior thyroid veins and the innominate in the substernal goitre's path.
+- The salivary glands' clinical anatomy is duct physics (submandibular stones) and nerve proximity (facial branches in the parotid, lingual loop under Wharton's).
+- The scalp's fifth layer and the face's valveless veins are infection and haemorrhage lessons; the cavernous sinus is the reason a pimple and a sinusitis have cranial-nerve consequences.
+- The orbit is three nerves and one rule (LR₆SO₄AO₃) plus the pupil-involving third = aneurysm until proven otherwise.
 :::
 
 ## Exercises
 
-::: exercise The structure {level=1}
-Which part provides return of blood, and the one that the vessel is for?
+::: exercise Trace the referred ear {level=1}
+List the four nerve routes by which disease outside the ear causes otalgia, and give one lesion for each.
 ::: solution
-The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vein, and the one that the vessel is for, provides return of blood.
+**V3 (auriculotemporal)** — TMJ and dental disease, the anterior auricle; **IX (tympanic branch, Jacobson's)** — base of tongue, tonsil, pharynx (the tonsillitis and the hypopharyngeal tumour); **X (auricular branch, Arnold's)** — larynx, hypopharynx, oesophagus, and the lung apex via the vagus (the smoker's ear pain with a normal ear is a panendoscopy's indication); **C2–3 (lesser occipital and great auricular)** — upper cervical spine and the posterior fossa dura. The common element is that the ear shares its sensory supply with the whole upper aerodigestive tract, and a normal otoscopic examination with persistent ear pain is a head and neck cancer until the fibrescope and the imaging say otherwise — the adult with a unilateral serous effusion and a normal ear is the same rule expressed otologically (the nasopharyngeal mass blocking the Eustachian tube).
 :::
 :::
 
-::: exercise The limb {level=1}
-What is the structure, and the one that the limb is for?
+::: exercise The mental foramen {level=1}
+A dentist's inferior alveolar nerve block fails to anaesthetise the lower lip; a second patient, three weeks after a third-molar extraction, has a numb lower lip. What is the anatomy in each, and what does the second patient need?
 ::: solution
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The description, and the one that the bone is for, is the use, of the structure and the bone. So the structure, and the one that the limit is for, is the one that the bone is for, is for.
+The block targets the **inferior alveolar nerve** in the mandibular foramen's soft tissue before it enters the canal; failure is usually position (the needle anterior to the foramen, or the lingula mistaken) or accessory innervation (mylohyoid nerve crossover, which spares chin skin despite a good block). The post-extraction numbness is **inferior alveolar or lingual nerve injury** — the roots' proximity to the canal (the lower third molar's roots often hook the canal on the panoramic film; the "dark line" crossing the roots is the warning) — and the patient needs **documentation (map the numb area, two-point discrimination), imaging of the site, referral to a microneurovascular unit if no recovery by 6–8 weeks**, and the honest statement that a complete, wallerian-degenerate lesion discovered late has a worse prognosis than the same nerve explored early. "Numb chin" without dental cause is a different sentence again: mental/inferior alveolar nerve pathology from mandibular or base-of-skull disease until proven otherwise — the dentist's red flag, and in medicine's book the "numb chin syndrome" of mandibular or skull-base malignancy.
 :::
 :::
 
-::: exercise The bone {level=2}
-Explain, the bone, and the one that the joint is for, in the articulation, and the one that the limit is for.
-::: hint
-The articulation.
-:::
+::: exercise Localise the Horner {level=1}
+A Horner's syndrome is found. Give the two bedside tests and the three segmental localisations, each with one lesion.
 ::: solution
-The bone, and the one that the joint is for, is the one that the limit is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone. So the articulation, and the one that the limit is for, is for, in the bone, and the one that the joint is for.
+The bedside tests: **cocaine or hydroxyamphetamine drops** (the postganglionic third-order neuron's stores fail to release noradrenaline — pharmacological localisation of first/second from third order), and **pholedrine/apraclonidine** variants; plus the history's segmental questions. The three segments: **first-order (hypothalamus to C8-T2)** — brainstem stroke, demyelination; **second-order (C8-T2 via the sympathetic chain and apex)** — Pancoast tumour (with the lower trunk of the plexus and Horner's together: see [[anatomy/thorax]]), cervical rib, neck surgery, the carotid sheath; **third-order (along the internal carotid to the eye)** — **internal carotid dissection** (painful Horner after neck trauma or spontaneously, with the headache or the cerebral ischaemia — the emergency of the triad), cavernous sinus lesions (with VI). The anhidrosis's distribution separates them: a second-order lesion above the carotid bifurcation loses facial sweating (the sudomotor fibres travel with the external carotid), while a postganglionic lesion leaves sweating normal (the fibres to the sweat glands join the carotid plexus below).
 :::
 :::
 
-::: exercise The muscle {level=2}
-Explain, the muscle, and the one that the function is for, in the contraction, and the one that the limit is for.
-::: hint
-The contraction.
-:::
+::: exercise The emergency airway {level=2}
+A trauma patient cannot be intubated or oxygenated ("can't intubate, can't oxygenate"); the team reaches for a scalpel at the cricothyroid membrane. Justify the site anatomically, then list three reasons the procedure is harder than the diagram, and the follow-up that prevents the complication.
 ::: solution
-The muscle, and the one that the function is for, is the one that the limit is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle. So the contraction, and the one that the limit is for, is for, in the muscle, and the one that the function is for.
+The site: the **cricothyroid membrane is subcutaneous, midline, identifiable between two cartilages, and relatively avascular** (the small cricothyroid artery and vein anastomosis crosses its upper third — the reason the incision is horizontal and midline and the care at the upper border), and the opening it gives enters the airway below the obstruction risks of the supraglottis and above the carina's uselessness. Three real-world difficulties: the **obese or oedematous or children's neck** where the landmarks cannot be palpated (ultrasound, when time exists, and the knowledge that the membrane lies lower and deeper than in the thin adult); the **distorted thyrohyoid anatomy of a laryngeal fracture or tumour airway** (the cricoid is not where the trachea is); and **the bleeding of a thyroid or a venous plexus in the field** in the patient already coagulopathic from trauma. The vertical midline skin incision with the horizontal membrane incision, the bougie or the introducer kept in place, and the tube secured with the cuff down are the technical answers. The follow-up is the complication: a **subglottic/tracheal stenosis** from high tracheostomy or cuff pressure, which is why the definitive airway conversion (formal tracheostomy through rings 2–4, or decannulation assessment once the cuff is down) is scheduled, and why the surgical team's note records the cuff pressure and the time the tube has been in situ.
 :::
 :::
 
-::: exercise The nerve {level=2}
-Explain, the nerve, and the one that the control is for, in the branch, and the one that the limit is for.
-::: hint
-The branch.
-:::
+::: exercise Gland and nerve {level=2}
+A superficial lobe parotidectomy for a pleomorphic adenoma is planned. Name the structures the facial nerve's main trunk lies between at its exit from the stylomastoid foramen, the dissection's landmark rule, and the two complications specific to this operation.
 ::: solution
-The nerve, and the one that the control is for, is the one that the limit is for, in the branch. The description, and the one that the branch is for, is the use, of the branch and the nerve. So the branch, and the one that the limit is for, is for, in the nerve, and the one that the control is for.
+The trunk exits the stylomastoid foramen **above the posterior belly of the digastric**, entering the gland between the **retromandibular vein and the external carotid** (the branches lie lateral to the vein); the operative rule is to find the trunk where it is constant — tragal pointer, tympanomastoid suture, digastric's border — and trace the branches from it. The two specific complications: **facial weakness** — temporary in a large fraction from traction, permanent if a branch is divided (the eye needs taping and lubrication; a graftable cut nerve is repaired immediately), and the marginal mandibular branch — which loops below the angle of the mandible in some patients, and is spared by an incision kept two fingerbreadths below the mandible — is the reason one side of the lip droops; and **Frey's (gustatory sweating) syndrome** — aberrant regeneration of the auriculotemporal's parasympathetic fibres to the sweat glands of the skin, so eating makes the cheek blush and sweat, treated/prevented by interposing a barrier (the SMAS flap) in the bed. The third-line issue is the **first, recurrent** tumour's higher facial-nerve risk: the capsule's violation at an inadequate first excision is why pleomorphic adenomas are not shelled out.
 :::
 :::
 
-::: exercise The tendon {level=3}
-Explain, the tendon, and the one that the insertion is for, in the muscle, and the one that the limit is for.
-::: hint
-The insertion.
-:::
+::: exercise The neck swelling {level=2}
+Give the differential and its anatomical clue for each of: (a) a soft, transilluminant swelling in the posterior triangle of an infant; (b) a firm, painless, fixed node at the left supraclavicular fossa in a 60-year-old; (c) a swelling at the angle of the jaw that enlarges at mealtimes; (d) a midline swelling that rises on tongue protrusion.
 ::: solution
-The tendon, and the one that the insertion is for, is the one that the limit is for, in the insertion. The description, and the one that the insertion is for, is the use, of the insertion and the tendon. So the insertion, and the one that the limit is for, is for, in the tendon, and the one that the muscle is for.
+(a) **Cystic hygroma (lymphatic malformation)** — transillumination is the clue (lymph-filled), the posterior triangle the common site, the airway and mediastinal extension the danger and the MRI its map. (b) **Virchow's node (Troisier's sign)** — a left supraclavicular node means the thoracic duct's territory: abdominal (gastric, pancreatic, renal) malignancy until proven otherwise, and the needle biopsy should be planned as if the primary will be sought by CT. (c) **Salivary stone or gland swelling** — mealtime enlargement is obstruction colic (Wharton's and the submandibular's nine-in-ten), the gland itself may be chronically infected and non-secretory. (d) **Thyroglossal duct cyst** — the tract's embryology ([[anatomy/embryology]]) makes tongue-protrusion elevation the diagnostic sign, and the Sistrunk procedure (tract plus mid-hyoid plus a cuff of tissue to the foramen caecum) the operation that prevents the recurrence that simple excision guarantees.
 :::
 :::
 
-::: exercise The ligament {level=3}
-Explain, the ligament, and the one that the joint is for, in the bond, and the one that the limit is for.
-::: hint
-The bond.
-:::
+::: exercise The carotid surgery field {level=2}
+At carotid endarterectomy, which named nerves are at risk in the standard incision and the exposure, and what does each lesion leave?
 ::: solution
-The ligament, and the one that the joint is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament. So the bond, and the one that the limit is for, is for, in the ligament, and the one that the joint is for.
+The standard high cervical exposure crosses or retracts the **marginal mandibular branch of VII** (lip asymmetry — the incision must keep its distance above the mandible's angle by the two-finger rule and the retractor must not stretch it upward), the **hypoglossal** (tongue deviates to the injured side and dysarthria/dysphagia; it hooks the lingual and facial arteries near the field's roof), the **vagus** with the **recurrent laryngeal** upstream (hoarseness; it lies posterior in the sheath and is the dissection's constant risk at the distal internal carotid), the **superior laryngeal** (voice fatigue and pitch — the external branch travels with the superior thyroid/lingual trunk), the **spinal accessory** (high dissections), and the **sympathetic trunk** (Horner's — posteromedial on the longus); plus the **ansa cervicalis** (innocuous), the **facial and lingual arteries and the retromandibular vein** as bleeding structures. Every named structure is on the sheath's wall or the field's roof — which is why the consent names the nerves by function, and why the clamp-time perfusion and the sinus-nerve infiltration belong to the anaesthetist's half of the same anatomy.
 :::
 :::
 
-::: exercise The membrane {level=3}
-Explain, the membrane, and the one that the joint is for, in the lining, and the one that the limit is for.
-::: hint
-The lining.
-:::
+::: exercise The pupil rule {level=2}
+Explain the pupil-involving rule in third-nerve palsy and its exception, in vessel and fibre anatomy.
 ::: solution
-The membrane, and the one that the lining is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane. So the lining, and the one that the limit is for, is for, in the membrane, and the one that the joint is for.
+The **parasympathetic pupilloconstrictor fibres run on the third nerve's surface** (superficial, in the fascicle's periphery, with the pial vessels), while the somatic fibres to the extraocular muscles are central. An **extrinsic compressive lesion** (the posterior communicating artery aneurysm, the uncus) takes the surface fibres first → a **dilated, fixed pupil with the ptosis-and-"down-and-out" eye**; a **medical/ischaemic lesion** (the diabetic microvasculopathy of the nerve's vasa nervorum) hits the core and typically **spares the pupil** because the pial-supplied surface fibres survive. Hence the rule: painful third with pupil involvement is an angiographic question (the aneurysm must be excluded urgently — the third-nerve palsy of a subarachnoid bleed carries its own mortality). The exception the pupil cannot rescue: a **partial or early compressive lesion may spare the pupil imperfectly**, and about 10–20% of compressive palsies present pupil-sparing — so the rule is a threshold for urgency, not a discharge, and the "diabetic third" is a diagnosis that still gets follow-up and blood pressure and glucose attention.
+:::
+:::
+
+::: exercise Plan the drainage {level=3}
+A 45-year-old with untreated dental sepsis has a swollen, hot, fluctuant left submandibular region with trismus, dysphagia and fever; CT shows a collection in the left submandibular space extending along the lateral pharyngeal wall into the mediastinum's upper border. Plan the surgical approach and name the structures that govern it.
+::: solution
+The diagnosis is a **descending deep-space infection with early descending necrotising mediastinitis** — the parapharyngeal → "danger space"/visceral compartment route from [[anatomy/head-neck]]'s fascial paragraph — and the plan is simultaneous airway, drainage and mediastinal control. **Airway**: awake fibreoptic intubation or tracheostomy under local if trismus forbids oral access (the trismus is the pterygoid inflammation, and the false passage risk in a distorted floor of mouth is Ludwig's lesson). **Neck drainage**: an incision along the inferior mandibular border (two fingerbreadths below it, the marginal mandibular rule), opening platysma and raising the subplatysmal flap, identifying and protecting the **facial vessels, hypoglossal nerve, lingual nerve and the submandibular duct**, entering the submandibular space and following the collection medially along the **styloglossus/mylohyoid plane** into the parapharyngeal space, with a second **cervical (cervicotomy) approach along the carotid sheath** to reach the mediastinal extension through the thoracic inlet. **Mediastinal control**: the decision is CT-guided and surgical — if the collection is above the carina, transcervical drainage with wide debridement and drains may suffice; below the carina (the classic "pass the tracheal bifurcation and go to the chest" rule) is a **thoracotomy or VATS debridement** with the thoracic surgeon. In all cases: broad antimicrobials, ICU, the second-look re-debridements at 24–48 hours the disease demands, and removal of the dental source when the patient is stabilised. The anatomical sentences that decide everything: which space the pus is in, whether it has passed the thoracic inlet, and whether the airway is still above the swelling.
 :::
 :::

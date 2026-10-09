@@ -8,18 +8,22 @@
   "tagline": "Ethical principles, consent and capacity, confidentiality, end-of-life decisions, research ethics and professionalism",
   "summary": "Medicine raises hard questions about what should be done, not only what can be done. This course covers the principles and theories of medical ethics, consent and mental capacity, confidentiality, ethical questions at the beginning and end of life, justice and resource allocation, research ethics, and professionalism and regulation, noting how laws differ between countries.",
   "overview": [
-    "The decision, and the one that the system is for, is the one that the limit is for, and the one that the principle is for. This course follows the decision and the one that the principle is for, from the mechanism and the one that the limit is for, to the practice and the one that the ethics is for, and gives the method and the check that make it work.",
-    "We build the decision and the one that the principle is for, from the process and the structure, and then study how the clinical and the ethics, and the one that the limit is for, are for."
+    "Clinical decisions are rarely only technical. Whether to transfuse, whether to disclose, whether to resuscitate, whether to test a relative, whether to allocate an intensive-care bed — each mixes evidence with values, and values need a method. Medical ethics supplies it: the principlist framework of autonomy, beneficence, non-maleficence and justice, its casuistic and narrative correctives, and the skills of justification, proportionality and conflict resolution under time pressure.",
+    "The course works through the places where the method matters. Ethical principles and their conflicts; consent — the move from paternalism through disclosure to genuine informed consent, and the assessment of capacity with its legal tests in major jurisdictions; confidentiality and its limits (public interest, safeguarding, communicable disease, genetics). Beginning-of-life ethics covers contraception, abortion, surrogacy, embryo research and preimplantation genetics; end-of-life ethics covers withholding and withdrawing treatment, palliative sedation, the euthanasia and assisted-dying debates and the law as it stands in different countries — with the explicit recognition that guidance differs by jurisdiction and changes.",
+    "Distributive justice brings resource limits into view: queueing, age, QALYs, priority setting and the pandemic triage experience. Research ethics runs from Nuremberg through Helsinki and Belmont to today's register- and consent-based trial ecosystem and data ethics. The final chapter covers professionalism: duties, fitness to practise, conflicts of interest, honesty after error and regulation. Throughout, the teaching uses cases and structured reasoning rather than slogans, and presents law descriptively — what different legal systems require — not as advice."
   ],
   "prerequisites": [
     "clinical-skills"
   ],
   "outcomes": [
-    "Explain the decision, and the one that the mechanism is for, in the limit",
-    "Explain the principle, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the decision is for, in the limit",
-    "Outline the management, and the one that the principle is for, in the limit",
-    "Recognise the state, and the one that the decision is for, in the limit"
+    "Apply the four-principles framework and its rivals (care ethics, narrative ethics, casuistry) to a clinical dilemma, and write out the reasoning — facts, principles, stakeholders, options — rather than asserting a position.",
+    "Explain informed consent — disclosure, comprehension, voluntariness — and its exceptions, and assess decision-making capacity using the functional test with its legal variants.",
+    "Describe the justification and limits of confidentiality, including disclosure in the public interest, communicable-disease reporting, genetic information about relatives, and duties in safeguarding.",
+    "Discuss the principal arguments in beginning-of-life debates — contraception, abortion, assisted conception, embryo research, preimplantation genetic testing — and summarise how different jurisdictions regulate them.",
+    "Analyse end-of-life decisions: advance directives and lasting powers of attorney, surrogate decision-making, withholding and withdrawing treatment including nutrition and hydration, sedation at the end of life, and the legal status of euthanasia and assisted dying across jurisdictions.",
+    "Explain approaches to justice in resource allocation — need, prognosis, cost-effectiveness, years of life, equity weights — and the ethics of triage in scarcity, including pandemic experience.",
+    "State the core requirements of research ethics: review, informed consent, equipoise, risk–benefit, vulnerable participants, registration and reporting, and the historical abuses that produced the codes.",
+    "Describe the duties of professionalism: candour after harm, conflicts of interest, probity and fitness to practise, boundaries, and how regulators approach impairment and misconduct."
   ],
   "chapters": [
     {
@@ -87,27 +91,80 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the decision is for, is the one that the principle is for, of the structure.",
+      "year": -400,
+      "title": "The Oath tradition",
+      "detail": "The Hippocratic corpus — oath and ethics writings — binds the physician to confidentiality, non-maleficence and fidelity, the profession's first explicit social contract, whose descendants still open medical-school graduation ceremonies.",
       "people": [
-        "Harvey"
+        "Hippocratic corpus"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the decision is for, is the one that the principle is for, of the process.",
+      "year": 1793,
+      "title": "The humane treatment argument",
+      "detail": "The great unwinding of the chains at Bicêtre, popularly attributed to Philippe Pinel (with Quincy's earlier reforms at York), begins the argument that the mad and the miserable are patients rather than captives — the ancestor of liberty and consent debates that run through mental-health law.",
       "people": [
-        "Lister"
+        "Philippe Pinel"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the decision is for, is the one that the principle is for, of the mechanism.",
+      "year": 1932,
+      "title": "The Tuskegee study begins",
+      "detail": "The US Public Health Service study of untreated syphilis in 400 Black men enrolls, continuing with deception until 1972; together with the Willowbrook hepatitis studies it becomes the paradigm case of research exploitation and the direct spur to the Belmont Report and institutional review.",
       "people": [
-        "Koche"
+        "United States Public Health Service"
+      ]
+    },
+    {
+      "year": 1947,
+      "title": "The Nuremberg Code",
+      "detail": "The judges at the doctors' trial set out ten requirements for permissible human experimentation, beginning with voluntary consent — a reaction to the medicine of the Holocaust that becomes the grammar of every subsequent research-ethics code.",
+      "people": [
+        "Military Tribunal Nuremberg"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "The Declaration of Helsinki",
+      "detail": "The World Medical Association adopts its ethical principles for medical research involving human subjects, revised repeatedly since (most recently 2013) — the living document that governs ethics-committee review, placebos and post-trial obligations.",
+      "people": [
+        "World Medical Association"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Karen Quinlan and the right to refuse",
+      "detail": "After Karen Quinlan's parents petition to remove her ventilator, the New Jersey Supreme Court allows it, grounding the decision in a constitutional right of privacy and recognising surrogate decision-making; the case launches advance directives, ethics committees and the whole end-of-life jurisprudence.",
+      "people": [
+        "Karen Quinlan",
+        "Joseph Quinlan"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "The Belmont Report",
+      "detail": "The US National Commission distils research ethics into respect for persons, beneficence and justice, and translates them into the requirements of informed consent, risk–benefit assessment and fair selection that now sit inside every ethics application; Beauchamp and Childress's principles approach appears the same year.",
+      "people": [
+        "National Commission for the Protection of Human Subjects",
+        "Tom Beauchamp",
+        "James Childress"
+      ]
+    },
+    {
+      "year": 1989,
+      "title": "Choosing death",
+      "detail": "The US Supreme Court, in Cruzan, accepts that a competent person may refuse life-sustaining treatment and that states may set evidentiary standards for surrogate decisions; the case — with the subsequent Patient Self-Determination Act — makes advance care planning a routine part of hospital admission.",
+      "people": [
+        "Nancy Cruzan",
+        "Supreme Court of the United States"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Global norms for research",
+      "detail": "WHO's international guidelines frame research ethics for low- and middle-income settings — community engagement, post-trial access, responsiveness of research to local health needs — responding to the 1990s controversies over placebo-controlled trials of perinatal HIV transmission prevention.",
+      "people": [
+        "World Health Organization",
+        "CIOMS"
       ]
     }
   ],

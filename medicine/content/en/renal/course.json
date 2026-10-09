@@ -8,8 +8,9 @@
   "tagline": "Filtration, tubular function, fluids and electrolytes, acid–base disorders, kidney disease and the urinary tract",
   "summary": "The kidneys keep the internal environment constant. This course covers glomerular filtration and tubular function, the regulation of water, sodium, potassium, calcium and acid–base balance, acute kidney injury, chronic kidney disease, dialysis and glomerular disease, and disorders of the urinary tract.",
   "overview": [
-    "The nephron, and the one that the system is for, is the one that the limit is for, and the one that the kidney is for. This course follows the nephron and the one that the kidney is for, from the mechanism and the one that the limit is for, to the practice and the one that the renal is for, and gives the method and the check that make it work.",
-    "We build the nephron and the one that the kidney is for, from the process and the structure, and then study how the clinical and the renal, and the one that the limit is for, are for."
+    "The kidney is the body's chemistry department: it filters, then chooses — reclaiming glucose and water, adjusting sodium, potassium, calcium, phosphate, acid and volume moment by moment under hormonal instruction. Almost every acutely ill patient's fluid, electrolyte and drug-dosing problem is therefore a renal problem, and this course makes the nephron an engineerable object rather than an anatomy exam.",
+    "It begins with the physics of filtration — Starling forces across the glomerulus, autoregulation and the tubuloglomerular feedback that keeps GFR steady, and the measurement and estimation of GFR with its equations and traps. Tubular physiology follows segment by segment: the proximal reabsorption work, the loop of Henle's counter-current multiplier, the distal tubule and collecting duct as the regulated final path under aldosterone and antidiuretic hormone. Water and sodium are then treated as the two clinical variables they are: osmolality control, the causes of abnormal sodium and their correction limits, and volume assessment with the effective arterial blood volume concept. Another chapter works through potassium, calcium and phosphate — why the ECG changes, the arrhythmia risk and the endocrine drivers.",
+    "Acid–base disorders apply the Henderson–Hasselbalch arithmetic of the physiology course to real blood gases with anion-gap and delta-ratio reasoning and urinary responses. The clinical chapters then cover acute kidney injury (phenotypes, prevention, the indications for emergency dialysis) and chronic kidney disease (staging, its systemic consequences from anaemia to bone and cardiovascular risk, and the slow-therapy toolbox), and urinary tract infection and obstructive uropathy with their anatomy-driven logic. Quantitative cases — clearances, free water deficits, sodium-correcting rates, potassium shifts — are the spine of the course."
   ],
   "prerequisites": [
     "anatomy",
@@ -19,11 +20,15 @@
     "microbiology"
   ],
   "outcomes": [
-    "Explain the nephron, and the one that the mechanism is for, in the limit",
-    "Explain the kidney, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the nephron is for, in the limit",
-    "Outline the management, and the one that the kidney is for, in the limit",
-    "Recognise the state, and the one that the nephron is for, in the limit"
+    "Describe renal blood supply and the anatomy of the nephron, explain glomerular filtration and Starling forces, and calculate and interpret creatinine clearance and estimated GFR including their limitations.",
+    "Explain renal autoregulation and tubuloglomerular feedback, and the hormonal and neural control of renal blood flow and filtration fraction.",
+    "Trace the handling of sodium, water, glucose, amino acids, urate, hydrogen and potassium along the nephron, and predict the consequences of blocking each transporter (diuretics as physiology in action).",
+    "Explain the counter-current mechanism, antidiuretic hormone physiology and the differential and management principles of abnormal plasma sodium, including safe correction rates.",
+    "Apply the physiology of potassium, calcium and phosphate balance to the common clinical disorders and their characteristic ECG and neurological features.",
+    "Interpret arterial blood gases and urinary electrolytes to classify acid–base disorders — including the anion gap, osmolal gap and delta ratio — and identify mixed pictures.",
+    "Define and stage acute kidney injury, identify prerenal, intrinsic and postrenal causes, describe prevention in high-risk inpatients, and list the indications for urgent renal replacement therapy.",
+    "Stage chronic kidney disease, explain the pathophysiology and management of its systemic consequences — anaemia, mineral and bone disorder, acidosis, hyperkalaemia, cardiovascular risk — and the principles of referral and renal replacement options.",
+    "Classify urinary tract infection by site and host, explain the ascending route and risk factors, apply investigation and imaging rules to children, pregnancy, men and recurrent infection, and describe obstructive uropathy and the postrenal emergency."
   ],
   "chapters": [
     {
@@ -98,27 +103,74 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the nephron is for, is the one that the kidney is for, of the structure.",
+      "year": 1827,
+      "title": "Bright's disease",
+      "detail": "Richard Bright, at Guy's Hospital, correlates dropsy, albuminuria and firm pale kidneys in his reports on medical cases — separating renal disease from the old category of dropsies and giving the nephropathies their first clinical description and eponym.",
       "people": [
-        "Harvey"
+        "Richard Bright"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the nephron is for, is the one that the kidney is for, of the process.",
+      "year": 1842,
+      "title": "The filters seen",
+      "detail": "William Bowman describes the minute globular bodies at the renal tubules' blind ends — the capsules that enclose the capillary tufts — identifying the glomerulus as the kidney's functional unit seventy years before electron microscopy reveals its three-layered filtration barrier.",
       "people": [
-        "Lister"
+        "William Bowman"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the nephron is for, is the one that the kidney is for, of the mechanism.",
+      "year": 1898,
+      "title": "A pressor substance from the kidney",
+      "detail": "Robert Tigerstedt and Per Bergman extract a pressor principle from rabbit kidney and find it raises blood pressure in other animals — renin's first demonstration, the observation that links the kidney to blood pressure and, sixty years on, to a whole class of cardiovascular drugs.",
       "people": [
-        "Koche"
+        "Robert Tigerstedt",
+        "Per Bergman"
+      ]
+    },
+    {
+      "year": 1934,
+      "title": "Goldblatt hypertension",
+      "detail": "Harry Goldblatt clamps one renal artery in dogs and produces sustained hypertension, proving that reduced renal perfusion raises systemic pressure; the experiment defines renovascular hypertension and points to a hormonal chain finally named the renin–angiotensin system by Page, Braun-Menendez and colleagues in the late 1930s.",
+      "people": [
+        "Harry Goldblatt",
+        "Irving Page"
+      ]
+    },
+    {
+      "year": 1937,
+      "title": "Physiology single-nephron by single-nephron",
+      "detail": "Granville Walker, William Bott and Paul Bradley micropuncture the renal tubules of rats, and with Homer W. Smith's clearance studies in humans, partition the nephron's work: what is filtered, what is reabsorbed where, and what is secreted — the data foundation that made the kidney an analyzable organ.",
+      "people": [
+        "Granville Walker",
+        "Paul Bradley",
+        "Homer W. Smith"
+      ]
+    },
+    {
+      "year": 1944,
+      "title": "The first dialyser",
+      "detail": "Willem Kolff, working in a Dutch basement with cellophane tubing and a rotating drum, builds the first practical artificial kidney; a wartime experiment of uncertain success becomes routine medicine after Belding Scribner's durable shunt (1960) made repeated dialysis possible for chronic patients.",
+      "people": [
+        "Willem Kolff",
+        "Belding Scribner"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "A kidney that lasts",
+      "detail": "After earlier failures, Joseph Murray's team at the Peter Bent Brigham Hospital transplants an identical-twin kidney and the recipient survives decades — proof that organ replacement is possible, and the start of transplant immunology, HLA matching and the azathioprine era of immunosuppression.",
+      "people": [
+        "Joseph Murray",
+        "John Merrill"
+      ]
+    },
+    {
+      "year": 1989,
+      "title": "The anaemia of renal failure treated",
+      "detail": "Recombinant human erythropoietin, cloned in 1985 and licensed for the anaemia of chronic kidney disease from 1989, for the first time replaces one of the kidney's endocrine functions rather than only its excretory one — transforming dialysis practice and, after a scandal over supraphysiological targets, teaching the discipline the difference between correcting a number and improving an outcome.",
+      "people": [
+        "Masayasu Miyazaki",
+        "Steven Lin"
       ]
     }
   ],

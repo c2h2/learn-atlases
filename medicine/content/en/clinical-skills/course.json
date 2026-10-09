@@ -8,8 +8,9 @@
   "tagline": "Communication, history taking, physical examination, clinical reasoning and interpreting tests",
   "summary": "Diagnosis starts with talking to and examining the patient. This course covers communication and history taking, physical examination, clinical reasoning and differential diagnosis, the interpretation of laboratory tests and medical imaging, records and handover, and patient safety.",
   "overview": [
-    "The skill, and the one that the system is for, is the one that the limit is for, and the one that the patient is for. This course follows the skill and the one that the patient is for, from the mechanism and the one that the limit is for, to the practice and the one that the clinical is for, and gives the method and the check that make it work.",
-    "We build the skill and the one that the patient is for, from the process and the structure, and then study how the clinical and the clinical, and the one that the limit is for, are for."
+    "Medicine is practised through conversations, examinations, results and notes. A diagnosis is usually made in the first ten minutes of a history; a deterioration is usually survived or missed in the first ten; and most serious harm in modern hospitals traces, on analysis, to a communication failure rather than unknown science. This course treats those skills — talking, examining, reasoning, investigating, recording and handing over — as teachable, testable and as important as any basic science.",
+    "It starts with communication: explaining, listening, breaking bad news, taking a history that is both humane and diagnostic. It then moves to the physical examination, taught system by system with the same discipline: inspect, palpate, percuss, auscultate, and know what each sign's sensitivity and specificity actually are. Clinical reasoning comes next — how hypotheses form, how Bayes' theorem lies behind every test request, and how cognitive biases derail good data. Laboratory and imaging chapters explain how to choose and read investigations: full blood count and chemistry, blood gases, urinalysis, inflammatory markers, the plain radiograph, CT, MRI, ultrasound, and when imaging harms.",
+    "The final chapters cover the infrastructure of safe practice: records and handover, and patient safety — error taxonomies, human factors, incident reporting, checklists and just culture. Every chapter uses worked examples, common pitfalls and quick checks, because these skills are learned by being practised against explicit standards and feedback, not absorbed by osmosis on a ward round."
   ],
   "prerequisites": [
     "anatomy",
@@ -17,11 +18,14 @@
     "pathology"
   ],
   "outcomes": [
-    "Explain the skill, and the one that the mechanism is for, in the limit",
-    "Explain the patient, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the skill is for, in the limit",
-    "Outline the management, and the one that the patient is for, in the limit",
-    "Recognise the state, and the one that the skill is for, in the limit"
+    "Structure a full medical history and communicate with patients across common challenging situations — explaining, eliciting the agenda, breaking bad news and exploring concordance.",
+    "Perform and present a systematic examination of each major system, and interpret the cardinal signs, stating what each sign does and does not exclude.",
+    "Apply models of clinical reasoning — hypothesis-driven and Bayes-based — and recognise the cognitive biases (anchoring, premature closure, availability) that produce diagnostic error.",
+    "Choose, perform and interpret core laboratory tests and blood gases, and understand reference ranges, predictive values and cause-and-effect of common derangements.",
+    "Interpret basic imaging: chest and abdominal radiographs, CT appearances of common emergencies, ultrasound indications and limitations, and MRI contrast principles.",
+    "Write problem-based notes and structured handovers (SBAR-style), and use tools such as problem lists and medication reconciliation to prevent information loss.",
+    "Describe the human-factors basis of patient safety, the main contributors to harm in hospitals, and countermeasures: checklists, reporting systems, escalation culture and formulary safeguards.",
+    "Practise giving and receiving constructive feedback and presenting a concise, accurate summary of a patient to a senior colleague."
   ],
   "chapters": [
     {
@@ -91,27 +95,69 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the skill is for, is the one that the patient is for, of the structure.",
+      "year": -400,
+      "title": "The bedside as method",
+      "detail": "The Hippocratic writings put observation and the recorded history at the centre of medicine: the epidemic notebooks describe individual cases with their course, and the physician's own demeanour and speech at the bedside are treated as part of the treatment.",
       "people": [
-        "Harvey"
+        "Hippocrates of Kos"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the skill is for, is the one that the patient is for, of the process.",
+      "year": 1816,
+      "title": "Indirect listening",
+      "detail": "Laennec's cylinder of rolled paper becomes the monaural stethoscope, and with it the idea that external signs — sounds, murmurs, rubs — stand in lawful relation to internal disease, so that the living patient can be examined as carefully as a cadaver.",
       "people": [
-        "Lister"
+        "René Laennec"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the skill is for, is the one that the patient is for, of the mechanism.",
+      "year": 1892,
+      "title": "The clinical method taught",
+      "detail": "William Osler's textbook and, more influentially, his bedside clinic at the new Johns Hopkins Hospital make the graded, presented case the unit of clinical teaching — students learn by taking the history themselves under questioning that climbs from symptom to sign to diagnosis.",
       "people": [
-        "Koche"
+        "William Osler"
+      ]
+    },
+    {
+      "year": 1917,
+      "title": "The intelligence of the examination",
+      "detail": "Osler's tradition is formalised in the differential diagnosis: Joseph Yale Johnston's 'The Method in Medicine' argues that a disciplined examination, not the laboratory, remains the generator of hypotheses, a claim still worth testing against every normal blood test.",
+      "people": [
+        "Joseph Yale Johnston"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "The doctor, his patient and the illness",
+      "detail": "Michael Balint's weekly seminar for GP principals, and the book that followed, put the relationship itself — the drug 'doctor', the patient who presents by symptom rather than disease — on the clinical curriculum, ancestor of today's Balint groups and communication teaching.",
+      "people": [
+        "Michael Balint",
+        "Enid Balint"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "To err is human",
+      "detail": "A report for the US Institute of Medicine reviews the evidence on preventable adverse events in hospitals and reframes error as a system property — latent conditions and active failures — shifting improvement from blaming individuals to redesigning processes.",
+      "people": [
+        "National Academies (Institute of Medicine)"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Handover made structured",
+      "detail": "Adapted from aviation crew resource management and popularised by the Institute for Healthcare Improvement, SBAR (situation, background, assessment, recommendation) becomes the standard structure for clinical handover and escalation in hospitals worldwide.",
+      "people": [
+        "Institute for Healthcare Improvement"
+      ]
+    },
+    {
+      "year": 2008,
+      "title": "The checklist",
+      "detail": "The World Health Organization's Surgical Safety Checklist, piloted in eight hospitals, reduces mortality and complications in a controlled before-and-after study; the lesson generalises: a short, structured, spoken confirmation at defined moments prevents omissions that memory alone will commit.",
+      "people": [
+        "World Health Organization",
+        "Alex Haynes"
       ]
     }
   ],

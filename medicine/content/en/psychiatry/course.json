@@ -8,8 +8,9 @@
   "tagline": "Psychiatric assessment, mood, anxiety and psychotic disorders, substance use and treatments",
   "summary": "Mental disorders are common and disabling, and every doctor meets them. This course covers psychiatric assessment and the mental state examination, mood, anxiety and psychotic disorders, substance use, eating and personality disorders, self-harm and suicide prevention, psychiatry across the lifespan, and psychological and drug treatments within the framework of mental health law.",
   "overview": [
-    "The state, and the one that the system is for, is the one that the limit is for, and the one that the mind is for. This course follows the state and the one that the mind is for, from the mechanism and the one that the limit is for, to the practice and the one that the psychiatry is for, and gives the method and the check that make it work.",
-    "We build the state and the one that the mind is for, from the process and the structure, and then study how the clinical and the psychiatry, and the one that the limit is for, are for."
+    "Psychiatry is the medicine of the mind, and it is practiced with the same clinical apparatus as the rest of the curriculum — history, examination, formulation, risk assessment, treatment and follow-up — applied to thoughts, mood, perception, belief and behaviour. This course teaches that apparatus without either the vagueness of opinion or the pretence that distress is merely biochemical.",
+    "It opens with psychiatric assessment: the history from patient and informant, the mental state examination as a structured record, and formulation — the biopsychosocial summary that links predisposing, precipitating, persevering and protective factors. The disorder chapters follow the classical groups: the mood disorders with their bipolar spectrum and suicide risk; the anxiety disorders and their learning-model and pharmacology, with OCD and trauma-related disorders; the psychoses, where schizophrenia's positive, negative and cognitive domains meet antipsychotic pharmacology and early-intervention services; substance use with its neuroadaptation, dependence criteria and medication-assisted treatment; eating disorders, personality disorders and the physical-health imperative that accompanies them; and self-harm and suicide prevention treated with the seriousness and the careful language safe-messaging guidance requires. Lifespan chapters cover child and adolescent, perinatal and old-age psychiatry, and a final chapter covers the treatments — psychological and pharmacological — and the mental-health law on detention, capacity and consent.",
+    "Everything is case-based, and risk is a constant thread: the quantitative reasoning of risk stratification, number-needed-to-treat for relapse prevention, lithium monitoring, and the evidence for interventions such as therapeutic communities and assisted outpatient treatment is presented as evidence, with its limits. People-first language throughout; all cases fictional."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -17,11 +18,15 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Explain the state, and the one that the mechanism is for, in the limit",
-    "Explain the mind, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the state is for, in the limit",
-    "Outline the management, and the one that the mind is for, in the limit",
-    "Recognise the state, and the one that the state is for, in the limit"
+    "Conduct a psychiatric history and mental state examination, document them as a professional record, and write a biopsychosocial formulation that informs a management plan.",
+    "Assess risk — suicide, self-harm, violence, neglect and vulnerability — structure that assessment, and know the immediate management and follow-up it entails.",
+    "Apply diagnostic frameworks (ICD and DSM style) to mood, anxiety, psychotic, eating, substance-use and personality disorders, recognising their specifiers, comorbidity and differentials including organic causes.",
+    "Explain the evidence-based psychological treatments by disorder (CBT, interpersonal therapy, dialectical behaviour therapy, trauma-focused work) and the main psychotropic drug classes with mechanisms, monitoring and key adverse effects.",
+    "Recognise and manage the psychiatric emergencies: acute psychosis and agitation, catatonia, delirium versus functional disorder, alcohol withdrawal and the medically unwell psychiatric patient.",
+    "Describe the epidemiology, neurobiology and treatment phases of schizophrenia and bipolar disorder, including relapse prevention, adherence support and early-intervention principles.",
+    "Discuss substance use disorders with the dependence syndrome framework, withdrawal management principles, medication-assisted treatment and harm reduction.",
+    "Outline the scope of mental-health law: criteria for detention and treatment without consent, capacity and best-interests decisions, advocacy, tribunal rights and least-restrictive practice — descriptively, as jurisdiction-specific law.",
+    "Address the physical health of people with mental illness — metabolic monitoring on antipsychotics, lifestyle intervention, and the mortality gap — as a treatment priority, not an afterthought."
   ],
   "chapters": [
     {
@@ -101,27 +106,78 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the state is for, is the one that the mind is for, of the structure.",
+      "year": 1793,
+      "title": "Unchaining the insane",
+      "detail": "Philippe Pinel at Bicêtre and, in Quaker England, the Tuke family at the York Retreat replace chains and confinement-in-misery with moral treatment — the idea that environment, occupation and kindness are therapy, the seed of the therapeutic community and of today's emphasis on ward climate.",
       "people": [
-        "Harvey"
+        "Philippe Pinel",
+        "William Tuke"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the state is for, is the one that the mind is for, of the process.",
+      "year": 1896,
+      "title": "A classification that thinks",
+      "detail": "Emil Kraepelin's textbook distinguishes dementia praecox from manic-depressive illness on course and outcome, making psychiatric diagnosis a matter of longitudinal observation and prognosis rather than moral failure — the ancestor of today's research classifications.",
       "people": [
-        "Lister"
+        "Emil Kraepelin"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the state is for, is the one that the mind is for, of the mechanism.",
+      "year": 1911,
+      "title": "Schizophrenia",
+      "detail": "Eugen Bleuler proposes the name and the concept — a group of split-minded disorders with characteristic disturbances of association, affect and boundary of self, not necessarily deteriorating; his 'basic symptoms' still shape how negative and cognitive domains are described.",
       "people": [
-        "Koche"
+        "Eugen Bleuler"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "Lithium",
+      "detail": "John Cade, a Melbourne psychiatrist working with the materials a wartime ward could spare — including lithium urate fed to guinea pigs — reports dramatic benefit in mania; the first targeted mood stabiliser arrives, with a narrow therapeutic index and a monitoring regimen that make psychopharmacology a precise, and precise-risk, craft.",
+      "people": [
+        "John Cade"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "The antipsychotic revolution",
+      "detail": "Henri Laborit's observation of a quieting effect leads Jean Delay and Pierre Deniker to trial chlorpromazine in psychosis; with reserpine and then the butyrophenones, admissions fall and community care becomes conceivable — and, decades later, the tardive dyskinesia and metabolic lessons arrive with it.",
+      "people": [
+        "Henri Laborit",
+        "Jean Delay",
+        "Pierre Deniker"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Antidepressants",
+      "detail": "Iproniazid's mood-elevating 'side effect' in tuberculosis care, reported by Nathan Kline and colleagues, and imipramine's discovery turn depression into a treatable condition by drug action on monoamines — the clinical fact that generated the monoamine hypothesis, the SSRIs and today's more nuanced neuroplasticity accounts.",
+      "people": [
+        "Nathan Kline"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Operational criteria",
+      "detail": "The DSM-III, following the Feighner criteria and Research Diagnostic Criteria, replaces descriptive prose with explicit diagnostic criteria and a multiaxial plan; diagnosis becomes reliable enough to research and to manage services — and the target of the debates about validity that continue.",
+      "people": [
+        "Robert Spitzer"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Cognitive therapy proposed",
+      "detail": "Aaron Beck, a psychoanalyst who had set out to falsify the turning-against-self model of depression, finds instead systematic negative thinking and publishes a time-limited, problem-focused psychotherapy; cognitive therapy and its descendants — the CBT of every modern guideline — begin there.",
+      "people": [
+        "Aaron Beck"
+      ]
+    },
+    {
+      "year": 1999,
+      "title": "Recovery and the national plan",
+      "detail": "England's National Service Framework for Mental Health commits the health service to standardised care pathways, suicide reduction and anti-stigma work, as the recovery movement — articulated by William Anthony from 1993 — shifts the stated goal from symptom removal to a meaningful life, with service-user involvement as a quality criterion.",
+      "people": [
+        "William Anthony"
       ]
     }
   ],

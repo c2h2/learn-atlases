@@ -8,8 +8,9 @@
   "tagline": "Bones and joints, fractures, arthritis, connective-tissue disease, back pain and the skin",
   "summary": "Musculoskeletal and skin conditions are among the commonest reasons people see a doctor. This course covers bone and joint biology, fractures, osteoarthritis and inflammatory arthritis, connective-tissue disease and vasculitis, back pain, and the structure, common diseases and cancers of the skin.",
   "overview": [
-    "The structure, and the one that the system is for, is the one that the limit is for, and the one that the muscle is for. This course follows the structure and the one that the muscle is for, from the mechanism and the one that the limit is for, to the practice and the one that the musculoskeletal is for, and gives the method and the check that make it work.",
-    "We build the structure and the one that the muscle is for, from the process and the structure, and then study how the clinical and the musculoskeletal, and the one that the limit is for, are for."
+    "The musculoskeletal system and the skin share a clinical grammar: a structure localises, a mechanism explains and a time course decides. Back pain, a swollen knee, a rash with joint pain, a fractured wrist — these are among the commonest reasons for consultation anywhere, and most of them are managed by non-specialists, so the syllabus is core clinical medicine rather than fringe detail.",
+    "The course begins with bones, joints and muscles as tissues and mechanics — bone remodelling and metabolism, cartilage and synovium, the joint as an organ — and with fractures: classification, healing biology, fixation principles and complications. Common then become specific: osteoarthritis as a whole-joint disease with its risk factors and end-stage surgery; the inflammatory arthritides, led by rheumatoid arthritis with its autoantibodies, treat-to-target strategy and biologics; and the connective-tissue diseases and vasculitides, where multisystem patterns and autoantibody panels do the diagnostic work. Back pain gets its own chapter — mechanical versus inflammatory, nerve-root examination, cauda equina as the red-flag emergency, and the evidence on imaging and surgery.",
+    "Two skin chapters close the course: skin structure, barrier function, the primary and secondary lesions and the itch–scratch cycle, and the common dermatoses (eczema, psoriasis, urticaria, infections, drug eruptions) with their management principles; then skin cancer, where melanoma's biology (BRAF and now immunotherapy) meets the simplest of screening examinations. Physical signs, risk calibration (FRAX), synovial-fluid interpretation and image reading are quantitative threads throughout."
   ],
   "prerequisites": [
     "anatomy",
@@ -18,11 +19,15 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Explain the structure, and the one that the mechanism is for, in the limit",
-    "Explain the muscle, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the structure is for, in the limit",
-    "Outline the management, and the one that the muscle is for, in the limit",
-    "Recognise the state, and the one that the structure is for, in the limit"
+    "Describe bone and joint structure and the cellular biology of remodelling, and interpret the biochemistry of bone turnover, calcium handling and inflammation (ESR, CRP) in musculoskeletal disease.",
+    "Classify fractures by site, pattern and communication, describe the stages and biology of healing, the methods of fixation and the complications — malunion, nonunion, avascular necrosis, compartment syndrome, fat embolism.",
+    "Explain the pathophysiology and risk factors of osteoarthritis, its diagnosis and management ladder, and the principles and complications of joint replacement.",
+    "Recognise inflammatory arthritis: classify rheumatoid arthritis and the spondyloarthropathies, apply ACR/EULAR-style classification logic, interpret autoantibodies and synovial fluid, and explain the treat-to-target strategy and the classes of disease-modifying drugs and biologics.",
+    "Diagnose the systemic autoimmune diseases — SLE, Sjögren's, systemic sclerosis, inflammatory myopathies, antiphospholipid syndrome — from patterns and antibody specificities, and manage flares with the right urgency (e.g. lupus nephritis).",
+    "Classify the vasculitides by vessel size with representative diseases, red flags (giant-cell arteritis as an emergency) and treatment principles.",
+    "Assess back pain: separate mechanical from inflammatory and specific causes, perform the nerve-root and cauda equina examination, and apply imaging and referral criteria; describe sciatica and disc disease management.",
+    "Describe skin structure and barrier function, name the primary and secondary lesions, and diagnose and manage atopic and contact eczema, psoriasis, urticaria, common skin infections and drug eruptions.",
+    "Apply the ABCDE rule and the history that matters to pigmented lesions, stage melanoma and non-melanoma skin cancer, and state prevention and follow-up principles."
   ],
   "chapters": [
     {
@@ -96,27 +101,86 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the structure is for, is the one that the muscle is for, of the structure.",
+      "year": -400,
+      "title": "Reductions and the spine",
+      "detail": "The Hippocratic writings describe shoulder reductions, traction for the spine and clubfoot treatment — two and a half millennia before orthopaedics is a specialty, its core manoeuvres are already taught.",
       "people": [
-        "Harvey"
+        "Hippocratic corpus"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the structure is for, is the one that the muscle is for, of the process.",
+      "year": 1775,
+      "title": "A chimney sweep's cancer",
+      "detail": "Percivall Pott attributes scrotal cancer in sweeps to soot, the first occupational carcinogenesis story — a skin cancer explained by environment, and a template for prevention that dermatology still uses.",
       "people": [
-        "Lister"
+        "Percivall Pott"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the structure is for, is the one that the muscle is for, of the mechanism.",
+      "year": 1877,
+      "title": "Paget's disease of bone",
+      "detail": "Sir James Paget distinguishes osteitis deformans clinically and histologically from rickets and tumour — a remodelling disease of middle age whose osteoclast lineage would later yield to bisphosphonates.",
       "people": [
-        "Koche"
+        "James Paget"
+      ]
+    },
+    {
+      "year": 1897,
+      "title": "Aspirin synthesised",
+      "detail": "Felix Hoffmann's acetylation of salicylic acid at Bayer gives the century its first mass synthetic anti-inflammatory; a century of COX biology, NSAID gastropathy and cardiovascular aspirin follows from that aspirin tube.",
+      "people": [
+        "Felix Hoffmann"
+      ]
+    },
+    {
+      "year": 1919,
+      "title": "Rickets explained",
+      "detail": "Edward Mellanby produces and cures rickets in dogs with cod-liver oil, identifying a dietary antirachitic factor — the line that leads to vitamin D, its activation by liver and kidney, and today's calcium–bone endocrinology.",
+      "people": [
+        "Edward Mellanby"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "Cortisone for arthritis",
+      "detail": "Philip Hench and colleagues report dramatic remission of rheumatoid arthritis with cortisone at the Mayo Clinic; the dramatic efficacy, the relapses and the toxicity teach the rheumatology of steroids that every generation relearns.",
+      "people": [
+        "Philip Hench",
+        "Edward Kendall",
+        "Tadeus Reich"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "The Charnley total hip",
+      "detail": "John Charnley's low-friction arthroplasty at Wrightington — a small metal head on high-molecular-weight polyethylene with bone cement and sterile-air technique — turns hip replacement into the operation of the century, in volume and in outcome.",
+      "people": [
+        "John Charnley"
+      ]
+    },
+    {
+      "year": 1989,
+      "title": "Methotrexate for rheumatoid arthritis",
+      "detail": "Weinblatt's short controlled report establishes low-dose methotrexate as the anchor drug of rheumatoid arthritis, inaugurating the era of disease-modifying therapy — and of treating early, because erosions begin before the diagnosis is made.",
+      "people": [
+        "Michael Weinblatt"
+      ]
+    },
+    {
+      "year": 1998,
+      "title": "Anti-TNF therapy",
+      "detail": "Following Feldmann and Elliott's demonstration that tumour necrosis factor drives rheumatoid synovitis, infliximab is licensed for rheumatoid arthritis; targeted biologic therapy arrives in rheumatology and, with it, the infection and immunogenicity lessons that shape every subsequent biologic.",
+      "people": [
+        "Marc Feldmann",
+        "Ravinder Maini"
+      ]
+    },
+    {
+      "year": 2011,
+      "title": "Melanoma immunotherapy",
+      "detail": "Ipilimumab's survival benefit in metastatic melanoma — decades after Coley's toxins were dismissed — opens checkpoint inhibition for a tumour with no prior effective systemic therapy, and BRAF-targeted combinations arrive in parallel within two years.",
+      "people": [
+        "James Allison"
       ]
     }
   ],

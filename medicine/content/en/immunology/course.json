@@ -8,18 +8,22 @@
   "tagline": "Innate and adaptive immunity, antibodies and T cells, hypersensitivity, autoimmunity and vaccines",
   "summary": "The immune system defends the body and, when it errs, causes disease. This course covers innate immunity, antigen recognition, B- and T-cell responses, tolerance and regulation, hypersensitivity, autoimmunity and immunodeficiency, transplantation and tumour immunology, and vaccines and immunotherapy.",
   "overview": [
-    "The cell, and the one that the system is for, is the one that the limit is for, and the one that the immune is for. This course follows the cell and the one that the immune is for, from the mechanism and the one that the limit is for, to the practice and the one that the immunology is for, and gives the method and the check that make it work.",
-    "We build the cell and the one that the immune is for, from the process and the structure, and then study how the clinical and the immunology, and the one that the limit is for, are for."
+    "Immunology explains two everyday facts that no other branch of medicine addresses: why you do not die from the microbes you inhale every minute, and why your body does not attack itself. Both answers are layered — an immediate innate system that reads general danger, and a learned adaptive system of staggering specificity that remembers, and between them a set of tolerance mechanisms whose failure is autoimmunity and whose manipulation is transplantation, cancer therapy and vaccination.",
+    "The course follows that architecture. Innate immunity: barriers, phagocytes, pattern recognition, complement and the inflammatory cascade. Antigen recognition: how T cells see processed peptide on MHC and B cells see native antigen, with the gene rearrangements that generate the repertoire. Adaptive responses: helper subsets, cytotoxic killing, antibody classes and switching, germinal centres and memory. Tolerance: central and peripheral deletion, regulation, and why breakdown produces specific diseases. The hypersensitivity reactions (anaphylaxis to granuloma, Arthus to graft rejection) then give the classic framework linking immune mechanism to tissue injury, followed by autoimmunity's genetic and environmental causation, the primary and secondary immunodeficiencies and their presentations by organism and age, tumour immunology and transplant immunology, and the practical immunology of vaccines and immunotherapy.",
+    "Clinical correlation drives every chapter: the recurrent infections that identify which arm of immunity is broken, the rash and nephritis of immune-complex disease, the graft lesion hyperacute rejection produces in minutes, checkpoint inhibition's autoimmune side effects, and the anaphylaxis protocol. Clinical cases, quick checks and graded exercises appear throughout; the numbers (counts, titres, thresholds) used for teaching are stated as illustrative."
   ],
   "prerequisites": [
     "cell-biochemistry"
   ],
   "outcomes": [
-    "Explain the cell, and the one that the mechanism is for, in the limit",
-    "Explain the immune, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the cell is for, in the limit",
-    "Outline the management, and the one that the immune is for, in the limit",
-    "Recognise the state, and the one that the cell is for, in the limit"
+    "Describe the physical and cellular barriers, the innate cells, pattern-recognition receptors, complement pathways and cytokine networks of the immediate response, and explain inflammation's cardinal signs immunologically.",
+    "Explain antigen processing and presentation on MHC class I and II, the generation of T-cell and immunoglobulin repertoire by gene rearrangement, and the two-signal model of lymphocyte activation.",
+    "Distinguish the helper T-cell subsets, cytotoxic mechanisms, antibody classes and switching, germinal-centre selection and the basis of immunological memory.",
+    "Explain central and peripheral tolerance and their failure: how self-reactive lymphocytes normally die or are regulated, and what breaks in systemic lupus, rheumatoid disease, type 1 diabetes, myasthenia and autoimmune thyroid disease.",
+    "Classify the four hypersensitivity reactions with prototype diseases and timings, and apply them to urticaria, transfusion reactions, serum sickness, contact dermatitis and granulomatous disease.",
+    "Recognise the immunodeficiency syndromes — humoral, combined, phagocytic, complement, and secondary (HIV, asplenia, malignancy, drugs) — from infection pattern, age at onset and screening tests.",
+    "Explain transplant rejection types and their pathology, the basis of histocompatibility and immunosuppression, and the principles of tumour immunosurveillance and immunotherapy.",
+    "Describe how the main vaccine platforms generate protection, correlate and combine, and outline immunotherapy examples: monoclonal antibodies, checkpoint inhibitors, CAR-T and interferons."
   ],
   "chapters": [
     {
@@ -97,27 +101,94 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the cell is for, is the one that the immune is for, of the structure.",
+      "year": 1883,
+      "title": "Cellular immunity",
+      "detail": "Élie Metchnikoff, observing motile cells surround rose thorns in starfish larvae, proposes that phagocytosis is the body's defence — the cellular school of immunology, opposed for a decade by the humoral school of Buchner and Behring and eventually fused with it.",
       "people": [
-        "Harvey"
+        "Élie Metchnikoff"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the cell is for, is the one that the immune is for, of the process.",
+      "year": 1890,
+      "title": "Serum therapy",
+      "detail": "Emil von Behring and Kitasato Shibasaburō show that blood serum from animals immunised against diphtheria and tetanus toxin transfers immunity, and that the active principle is a substance in serum — antitoxin, the first antibody, and the first serum therapies of childhood disease.",
       "people": [
-        "Lister"
+        "Emil von Behring",
+        "Kitasato Shibasaburō"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the cell is for, is the one that the immune is for, of the mechanism.",
+      "year": 1901,
+      "title": "The first Nobel Prize",
+      "detail": "Behring receives the first Nobel Prize in Physiology or Medicine for serum therapy; Metchnikoff shares the 1908 prize, the establishment of both arms of immunity — humoral and cellular — within a single decade of each other.",
       "people": [
-        "Koche"
+        "Emil von Behring",
+        "Élie Metchnikoff",
+        "Paul Ehrlich"
+      ]
+    },
+    {
+      "year": 1945,
+      "title": "A test for antibody on red cells",
+      "detail": "Coombs, Mourant and Race describe the antiglobulin test that detects antibody coating red cells too weakly to agglutinate — the tool behind haemolytic disease of the newborn investigation, transfusion compatibility and autoimmune haemolysis diagnosis.",
+      "people": [
+        "Cecily Coombs",
+        "Arthur Mourant",
+        "Ruth Race"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Clonal selection",
+      "detail": "Frank Macfarlane Burnet proposes that the body makes lymphocytes pre-equipped with random receptors, and antigen works by selecting and multiplying the matching clone rather than instructing antibody formation — the theory that makes self-tolerance a developmental problem and predicts the immunological self.",
+      "people": [
+        "Frank Macfarlane Burnet"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "IgE identified",
+      "detail": "Kimishige and Teruko Ishizaka identify the immunoglobulin E whose binding to mast cells explains immediate allergy, uniting precipitin chemistry with the atopic diseases and making measurable what had been a clinical entity.",
+      "people": [
+        "Kimishige Ishizaka",
+        "Teruko Ishizaka"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "MHC restriction",
+      "detail": "Rolf Zinkernagel and Peter Doherty show that cytotoxic T cells recognise viral peptide only in the context of the animal's own transplantation antigens — T-cell seeing is dual, peptide plus self-MHC — the discovery that organised transplant immunology and the MHC into a mechanism.",
+      "people": [
+        "Rolf Zinkernagel",
+        "Peter Doherty"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "Monoclonal antibodies",
+      "detail": "Georges Köhler and César Milstein fuse myeloma cells with sensitised spleen cells to make hybridomas that secrete a single antibody forever; within twenty years monoclonals and, later, humanised and engineered antibodies become a therapeutics industry.",
+      "people": [
+        "Georges Köhler",
+        "César Milstein"
+      ]
+    },
+    {
+      "year": 1996,
+      "title": "Innate recognition decoded",
+      "detail": "Bruce Beutler's work showing the Toll gene product is the lipopolysaccharide receptor in Drosophila, and Charles Janeway's and Ruslan Medzhitov's proposal and demonstration of human Toll-like receptors, reveal the germline-encoded pattern-recognition system Janeway had predicted — innate immunity becomes a molecular science.",
+      "people": [
+        "Bruce Beutler",
+        "Ruslan Medzhitov",
+        "Charles Janeway"
+      ]
+    },
+    {
+      "year": 2011,
+      "title": "Checkpoint therapy reaches the clinic",
+      "detail": "James Allison's work on blocking CTLA-4 and Tasuku Honjo's on PD-1, built on decades of tumour immunology that had been discounted for pessimism, produce durable remissions in advanced melanoma and lung cancer and share the Nobel Prize; anti-CTLA-4 (2011) and anti-PD-1 antibodies redefine cancer treatment.",
+      "people": [
+        "James Allison",
+        "Tasuku Honjo"
       ]
     }
   ],

@@ -1,9 +1,14 @@
 # Medicine Atlas — Chinese translation guide (简体中文)
 
-Target: mainland Simplified Chinese as used in Chinese university mathematics textbooks
-(e.g. 同济《高等数学》, 北大《高等代数》, 华东师大《数学分析》, 茆诗松《概率论与数理统计》).
-Neutral, precise textbook register. Faithful to the English: never add, drop or change mathematics,
-numbers, conditions or caveats. Translate meaning, not word order.
+Target: mainland Simplified Chinese as used in Chinese medical university textbooks (人卫版《系统解剖学》
+《生理学》《病理学》《药理学》《内科学》, 人卫版《医学微生物学》《医学免疫学》, and the terminology published by the
+全国科学技术名词审定委员会). Neutral, precise textbook register. Faithful to the English: never add, drop or
+change facts, numbers, criteria, caveats or safety wording. Translate meaning, not word order.
+
+Chinese is written **by hand, one lesson at a time**, from the finished English lesson. Never run a
+generator over the corpus and never copy phrasing out of `pending/`: the frame-transfer Chinese that
+used to live here was not Chinese, and `tools/check.php` now rejects it (and the English filler it
+was translated from) as an error.
 
 ## Files
 

@@ -8,18 +8,22 @@
   "tagline": "Bacteria, viruses, fungi and parasites, how they cause disease, diagnosis and antimicrobials",
   "summary": "Microorganisms cause much of the world’s disease. This course covers the biology of bacteria, viruses, fungi and parasites, how pathogens cause disease, the human microbiota, laboratory diagnosis, antimicrobial drugs and resistance, and infection prevention and control.",
   "overview": [
-    "The organism, and the one that the system is for, is the one that the limit is for, and the one that the microbe is for. This course follows the organism and the one that the microbe is for, from the mechanism and the one that the limit is for, to the practice and the one that the microbiology is for, and gives the method and the check that make it work.",
-    "We build the organism and the one that the microbe is for, from the process and the structure, and then study how the clinical and the microbiology, and the one that the limit is for, are for."
+    "Medical microbiology is the science of the enemies you cannot see and the allies you should not poison. It supplies the reasoning behind every antimicrobial prescription: what kind of organism this is, how it damages, how you find it, what kills it, and whether killing it is wise. This course teaches the organisms by groups and the methods that apply across them.",
+    "The bacteria chapter covers structure, Gram-positive and Gram-negative walls, growth and sporulation, and the classification by which a lab report becomes a diagnosis; bacterial pathogenesis adds adhesion, invasion, exo- and endotoxins, biofilms and immune evasion. Virology follows with virus architecture and replication strategies, the immune response to viruses, and the major families as clinical syndromes; mycology and parasitology present the fungi and the protozoa and helminths that matter clinically, grouped by the host they infect and the geography they need. The microbiota chapter treats the normal flora as an organ — digestion, colonisation resistance, the antibiotics' collateral damage.",
+    "The last three chapters are methods and management: laboratory diagnosis (staining, culture, susceptibility testing, antigen and molecular methods, serology and its interpretation) is taught as a decision tree you meet daily in a results portal; antimicrobials covers mechanisms, spectra, resistance by enzymatic, target, porin and pump, stewardship and toxicity principles; infection control covers chains of transmission, standard and transmission-based precautions, and the outbreak arithmetic of R-effective. Immunology pairs with this course; infectious diseases applies it."
   ],
   "prerequisites": [
     "immunology"
   ],
   "outcomes": [
-    "Explain the organism, and the one that the mechanism is for, in the limit",
-    "Explain the microbe, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the organism is for, in the limit",
-    "Outline the management, and the one that the microbe is for, in the limit",
-    "Recognise the state, and the one that the organism is for, in the limit"
+    "Relate bacterial structure — wall type, capsule, spores, flagella, biofilm — to staining, immune evasion and antimicrobial choice, and classify the major pathogens by shape and stain.",
+    "Explain mechanisms of bacterial pathogenicity: adhesion, invasion, toxin action (exotoxins and endotoxin pathways) and examples of each clinical syndrome they produce.",
+    "Describe virus architecture and replication strategies — receptor binding, entry, genome expression, assembly, release — and how they explain antiviral targets, interferon responses and viral interference.",
+    "Recognise the clinically important fungi (Candida, Aspergillus, Cryptococcus, endemic dimorphs, dermatophytes) and parasites (Plasmodium, Toxoplasma, helminths) with their life cycles, risk groups and diagnostic stages.",
+    "Explain the functions of the human microbiota and the consequences of its disruption, including C. difficile pathogenesis and the rationale of transplantation research.",
+    "Follow a specimen through the laboratory: microscopy, culture, sensitivity interpretation (MIC, breakpoints), antigen detection, PCR and sequencing, serology and its window periods — and read a real report critically.",
+    "Classify antimicrobials by mechanism and spectrum, explain the major resistance mechanisms with clinically important examples (MRSA, VRE, ESBL, carbapenemases, fluoroquinolone resistance, TB resistance), and the principles of combination therapy and duration.",
+    "Apply the chain of infection, standard and transmission-based precautions, and outbreak control logic, and compute the meaning of R0 and R-effective for control thresholds."
   ],
   "chapters": [
     {
@@ -92,27 +96,82 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the organism is for, is the one that the microbe is for, of the structure.",
+      "year": 1676,
+      "title": "Animalcules",
+      "detail": "Antonie van Leeuwenhoek's hand-ground lenses reveal bacteria and protozoa in rainwater and plaque; the microbial world is visible for the first time, and two centuries pass before anyone proves it matters.",
       "people": [
-        "Harvey"
+        "Antonie van Leeuwenhoek"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the organism is for, is the one that the microbe is for, of the process.",
+      "year": 1861,
+      "title": "The swan-neck flask",
+      "detail": "Louis Pasteur's flasks let air but not dust reach sterile broth; life does not arise spontaneously, and with the disproof, the germ theory becomes tenable — Pasteur goes on to develop attenuation and the first vaccines against chicken cholera, anthrax and rabies.",
       "people": [
-        "Lister"
+        "Louis Pasteur"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the organism is for, is the one that the microbe is for, of the mechanism.",
+      "year": 1867,
+      "title": "Antisepsis",
+      "detail": "Joseph Lister, reading Pasteur, introduces carbolic acid wound treatment in Glasgow and reports a fall in amputation-cluster mortality; surgery becomes possible beyond the swift and the desperate, and hospital infection becomes a measurable problem with a preventable route.",
       "people": [
-        "Koche"
+        "Joseph Lister"
+      ]
+    },
+    {
+      "year": 1882,
+      "title": "Solid media and postulates",
+      "detail": "Robert Koch's laboratory — using solid culture media (with Petri's plates, introduced 1887) and staining — isolates anthrax and tuberculosis and formulates the postulates linking a microbe to a disease, giving medical bacteriology its method.",
+      "people": [
+        "Robert Koch",
+        "Julius Richard Petri",
+        "Fanny Hesse"
+      ]
+    },
+    {
+      "year": 1884,
+      "title": "The Gram stain",
+      "detail": "Hans Christian Gram's crystal-violet and iodine differentiation, intended for tissue sections, sorts bacteria into the two great wall types that still organize empirical antibiotic choice; within a decade Ziehl–Neelsen follows for mycobacteria.",
+      "people": [
+        "Hans Christian Gram",
+        "Franz Ziehl"
+      ]
+    },
+    {
+      "year": 1892,
+      "title": "Filterable agents",
+      "detail": "Dmitri Ivanovsky's tobacco-mosaic filtrate passes a porcelain filter that retains bacteria; Beijerinck's 1898 replication conclusion names the contagium vivum — viruses, the entities that forced microbiology beyond cellular life.",
+      "people": [
+        "Dmitri Ivanovsky",
+        "Martinus Beijerinck"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "Penicillin and the antibiotics era",
+      "detail": "Fleming's contaminated plate, Florey and Chain's Oxford purification and the US deep-submerged fermentation programme make penicillin a mass-produced drug by 1943–45; the next two decades yield most antimicrobial classes still used, and the discovery of transferable resistance begins in the same decade.",
+      "people": [
+        "Alexander Fleming",
+        "Howard Florey",
+        "Ernst Boris Chain"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "Ecology returns: Helicobacter and the microbiome's predecessors",
+      "detail": "Warren and Marshall's gastric spiral bacterium (named in 1989) revives the idea that bacteria inhabit and disease the gut in unexpected ways, a precursor of the culture-independent microbiome science — 16S sequencing and gnotobiotic transfer experiments — that follows a quarter-century later.",
+      "people": [
+        "Robin Warren",
+        "Barry Marshall"
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "The microbiome project matures",
+      "detail": "The Human Microbiome Project's reference catalogue, with metagenomic studies of diversity and function, establishes the normal microbiota as a mapped, variable organ associated with digestion, immunity and antibiotic injury — and Fecal microbiota transplantation gains a formal indication for recurrent C. difficile.",
+      "people": [
+        "Human Microbiome Project Consortium"
       ]
     }
   ],

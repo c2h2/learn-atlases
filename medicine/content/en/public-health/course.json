@@ -8,19 +8,24 @@
   "tagline": "Determinants of health, prevention, screening, vaccination programmes, global health and health systems",
   "summary": "The health of populations depends as much on living conditions and policy as on medical care. This course covers the determinants of health and health inequalities, prevention and health promotion, screening and vaccination programmes, the control of communicable and non-communicable disease, environmental and occupational health, global health, and health systems and economics.",
   "overview": [
-    "The population, and the one that the system is for, is the one that the limit is for, and the one that the system is for. This course follows the population and the one that the system is for, from the mechanism and the one that the limit is for, to the practice and the one that the public health is for, and gives the method and the check that make it work.",
-    "We build the population and the one that the system is for, from the process and the structure, and then study how the clinical and the public health, and the one that the limit is for, are for."
+    "Public health is what keeps the average lifespan rising: clean water, vaccination, accident prevention, tobacco control, screening, and health systems that deliver treatment to populations rather than to individuals who happen to arrive. Its methods are epidemiology and statistics, its units are programmes and policies, and its ethic is the population — including the uncomfortable trade-offs that a clinical encounter never has to make.",
+    "The course starts with the distribution of health: the social determinants, the measurement of inequalities and why the gradient — not just the gap — matters. Prevention is then organised by level (upstream, primordial, primary, secondary, tertiary) with health-promotion theory and the evidence for the big interventions. Screening gets its own chapter, with Wilson–Jungner-style criteria, sensitivity and specificity in real programmes, lead time and length bias and the arithmetic of overdiagnosis; vaccination programmes follow, with herd immunity, coverage thresholds, cold chains, adverse-event surveillance and communication. Communicable-disease control covers surveillance, notifiable disease, contact tracing and outbreak response, and the non-communicable chapter the risk-factor approach to cardiovascular disease, cancer, diabetes and chronic respiratory disease, including tobacco, alcohol, diet and physical activity as policy targets.",
+    "Environmental and occupational health brings air pollution, heat, toxins and work-related disease; global health covers the disease-burden transition, the International Health Regulations, One Health and universal health coverage. The final chapter examines health systems and economics: financing models, primary care as the gate, quality improvement, QALYs and cost-effectiveness, and rationing by name. Every claim about guidelines or performance is dated, because national arrangements differ and change."
   ],
   "prerequisites": [
     "epidemiology-ebm",
     "infectious-diseases"
   ],
   "outcomes": [
-    "Explain the population, and the one that the mechanism is for, in the limit",
-    "Explain the system, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the population is for, in the limit",
-    "Outline the management, and the one that the system is for, in the limit",
-    "Recognise the state, and the one that the population is for, in the limit"
+    "Describe the determinants of health and the measurement of health inequalities, and explain the evidence for structural versus individual interventions.",
+    "Classify prevention (primordial to tertiary) and appraise major programmes — tobacco and alcohol control, road safety, diet and activity policy — by their study designs and effect sizes.",
+    "Apply the principles of screening: programme criteria, test performance in populations, lead-time and length bias, overdiagnosis, and the evaluation of screening by mortality versus incidence endpoints.",
+    "Explain vaccine types, schedules, herd immunity and coverage thresholds, pharmacovigilance of immunisation, and the communication strategies evidence supports when confidence wavers.",
+    "Describe surveillance and notifiable-disease systems, outbreak investigation steps, contact tracing, isolation and quarantine, and the International Health Regulations.",
+    "Summarise the risk-factor approach to non-communicable disease, the population versus high-risk strategies, and the policy levers (taxation, regulation, labelling, urban design) with their evidence.",
+    "Outline environmental and occupational exposures — air pollution, lead, asbestos, noise, heat, pesticides — their disease burdens, exposure limits and reporting duties, and the clinician's role in recognition.",
+    "Explain the global burden of disease, the health-related sustainable development goals, One Health, antimicrobial resistance as a global problem and the meaning of universal health coverage.",
+    "Compare health-system financing and delivery models, and use cost-effectiveness, QALY and budget-impact logic — and its critiques — in priority-setting debates."
   ],
   "chapters": [
     {
@@ -98,27 +103,78 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the population is for, is the one that the system is for, of the structure.",
+      "year": 1775,
+      "title": "An occupational cancer described",
+      "detail": "Percivall Pott attributes scrotal cancer among London chimney sweeps to soot and recommends washing and sweeping habits; the first clean demonstration that environment causes cancer — and that prevention, not therapy, is the answer.",
       "people": [
-        "Harvey"
+        "Percivall Pott"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the population is for, is the one that the system is for, of the process.",
+      "year": 1798,
+      "title": "Vaccination begins",
+      "detail": "Edward Jenner, basing himself on milkmaids' exemption from smallpox, inoculates James Phipps with cowpox and challenges him with smallpox; within 180 years the world's most deadly virus is declared eradicated after a coordinated global campaign — public health's founding proof that populations can be protected by design.",
       "people": [
-        "Lister"
+        "Edward Jenner"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the population is for, is the one that the system is for, of the mechanism.",
+      "year": 1848,
+      "title": "The sanitation report",
+      "detail": "Edwin Chadwick's report on the sanitary condition of the labouring populations, built from Poor Law evidence, turns miasma theory into sewers, water and factory inspection; the public-health acts that follow make disease prevention an object of state administration.",
       "people": [
-        "Koche"
+        "Edwin Chadwick"
+      ]
+    },
+    {
+      "year": 1854,
+      "title": "Cholera and the pump handle",
+      "detail": "John Snow's epidemiological argument against the water companies' supply, and his map of the Broad Street outbreak, show that a statistical comparison — not bacteriology, which came later — can justify removing an exposure; the template for environmental outbreak investigation.",
+      "people": [
+        "John Snow"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "Two new institutions",
+      "detail": "The World Health Organization is founded, defining health as complete well-being, and Britain's National Health Service opens care to all irrespective of payment; between them the postwar settlement makes health a state responsibility with an international coordinator.",
+      "people": [
+        "World Health Organization",
+        "Aneurin Bevan"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "The Black Report groundwork",
+      "detail": "Britain's government establishes research into class differences in health, culminating in the 1980 Black Report's conclusion that material conditions drive the gradient — the modern start of inequalities research and of the policy argument that health is mostly made outside clinics.",
+      "people": [
+        "Douglas Black"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Smallpox eradicated",
+      "detail": "The World Health Assembly certifies eradication — the first human disease destroyed by deliberate campaign, achieved through surveillance-and-containment rather than mass vaccination, and the existence proof that global public health action can succeed.",
+      "people": [
+        "Frank Fenner",
+        "William Foege",
+        "Donald Henderson"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "The Ottawa Charter",
+      "detail": "The first International Conference on Health Promotion issues the Ottawa Charter — build healthy public policy, create supportive environments, strengthen community action, develop personal skills, reorient services — the vocabulary of health promotion still used by the WHO and national programmes.",
+      "people": [
+        "World Health Organization"
+      ]
+    },
+    {
+      "year": 2015,
+      "title": "The sustainable development goals",
+      "detail": "UN member states adopt the 2030 agenda with health-related goals from maternal survival to universal health coverage and the two-thirds cut in premature NCD mortality — targets that let clinicians and economists argue for spending with an agreed scoreboard.",
+      "people": [
+        "United Nations"
       ]
     }
   ],

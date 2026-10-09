@@ -8,8 +8,9 @@
   "tagline": "The ABCDE approach, resuscitation, shock, poisoning, anaphylaxis and intensive care",
   "summary": "Emergencies leave little time to think, so they are managed with structured approaches. This course covers the assessment of the acutely ill patient, cardiac arrest and resuscitation, shock and fluid therapy, airway and ventilation, poisoning, anaphylaxis, the care of critically ill patients, and triage in major incidents.",
   "overview": [
-    "The patient, and the one that the system is for, is the one that the limit is for, and the one that the system is for. This course follows the patient and the one that the system is for, from the mechanism and the one that the limit is for, to the practice and the one that the emergency is for, and gives the method and the check that make it work.",
-    "We build the patient and the one that the system is for, from the process and the structure, and then study how the clinical and the emergency, and the one that the limit is for, are for."
+    "Emergency and critical care medicine is applied physiology under time pressure. The patient has not had time to develop a diagnosis; the clinician must instead recognise and reverse a threat to airway, breathing, circulation, neurological function or temperature in the order those systems will fail. This course teaches that ordered aggression: structured assessment, immediate resuscitation, and the specific emergencies that fill an acute medical take and a resus room.",
+    "It begins with the primary survey — the ABCDE approach and the recognition of the deteriorating patient — then resuscitation science, shock and fluids, the airway and mechanical ventilation, and the toxicology and anaphylaxis cases that arrive fastest. The final chapters widen to the intensive care unit, where ventilation, haemodynamic support, sedation, nutrition and the prevention of ICU-acquired complications are managed day by day, and to major incidents, where the same logic is turned from one patient to many: triage, command structures and the ethics of scarce resources.",
+    "Because these topics are procedural and quantitative, the course leans on numbers: shock indices, fluid balance and sodium correction limits, ventilation targets and driving pressure, toxin syndromes recognised by pupils and physiology rather than by history. Management details follow local and national guidelines — this is education about principles, and the doses that appear are illustrative only."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -18,11 +19,14 @@
     "renal"
   ],
   "outcomes": [
-    "Explain the patient, and the one that the mechanism is for, in the limit",
-    "Explain the system, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the patient is for, in the limit",
-    "Outline the management, and the one that the system is for, in the limit",
-    "Recognise the state, and the one that the patient is for, in the limit"
+    "Perform a structured ABCDE assessment of the acutely unwell adult, recognise the deteriorating patient early, and initiate escalation and treatment simultaneously.",
+    "Explain the physiology of cardiac arrest, the evidence for high-quality compressions, shockable rhythms, defibrillation, adrenaline and post-resuscitation care, and describe reversible causes (the Hs and Ts).",
+    "Classify shock — hypovolaemic, cardiogenic, distributive, obstructive — from history, examination and bedside data, and reason about fluid resuscitation, its monitoring and its harms.",
+    "Assess the airway (including the difficult airway plan), describe indications and complications of tracheal intubation and surgical airway, and outline modes and settings of mechanical ventilation with an eye to lung-protective strategy.",
+    "Recognise poisoning by toxidrome, apply general decontamination and elimination principles, name the specific antidotes and their indications, and manage the common overdose presentations according to poison-centre and guideline practice.",
+    "Recognise anaphylaxis, distinguish it from mimics, and describe adrenaline-based management, observation and follow-up; outline acute severe asthma and its escalation.",
+    "Describe the care of the ventilated intensive-care patient: sedation and delirium, weaning, nutrition, glycaemic control, prevention of line and ventilator-associated complications, and time-limited trials of treatment.",
+    "Apply triage systems and the incident command structure to a major incident or mass-casualty situation, and discuss the ethical differences between individual and mass-casualty medicine."
   ],
   "chapters": [
     {
@@ -98,28 +102,70 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the patient is for, is the one that the system is for, of the structure.",
+      "year": 1902,
+      "title": "Anaphylaxis described",
+      "detail": "Charles Richet and Paul Portier, injecting anemone toxin repeatedly in dogs, find that a previously tolerated dose now kills: they name the phenomenon anaphylaxis and open the immunological understanding of the fastest emergency in medicine.",
       "people": [
-        "Harvey"
+        "Charles Richet",
+        "Paul Portier"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the patient is for, is the one that the system is for, of the process.",
+      "year": 1947,
+      "title": "Defibrillation in the chest",
+      "detail": "Claude Beck at Case Western Reserve applies alternating current directly to the exposed heart of a child in arrest and restores a perfusing rhythm; within fifteen years anterior-posterior external shock with a pulsatile DC discharge (Lown and colleagues) brings defibrillation to the bedside.",
       "people": [
-        "Lister"
+        "Claude Beck"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the patient is for, is the one that the system is for, of the mechanism.",
+      "year": 1952,
+      "title": "Polio and the birth of intensive care",
+      "detail": "During the Copenhagen polio epidemic, anaesthetist Bjørn Ibsen replaces iron lungs with tracheostomy and manual positive-pressure ventilation, staffed by medical students in shifts around the clock — nursing-intensive, monitoring-heavy care of individually ventilated patients in a dedicated ward, the first modern ICU; that same year Virginia Apgar publishes her newborn scoring system.",
       "people": [
-        "Koche"
+        "Bjørn Ibsen",
+        "Virginia Apgar"
       ]
+    },
+    {
+      "year": 1960,
+      "title": "Closed-chest massage",
+      "detail": "William Kouwenhoven, Guy Jude and James Knickerbocker, studying electrical injury in dogs, demonstrate that external chest compression can maintain circulation without opening the chest; with mouth-to-mouth breathing revived by Peter Safar, it becomes the cardiopulmonary resuscitation taught to professionals and public alike.",
+      "people": [
+        "William Kouwenhoven",
+        "Guy Jude",
+        "James Knickerbocker"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "The synchronized shock",
+      "detail": "Bernard Lown's group in Boston introduces the damped direct-current discharge and R-wave synchronization, making cardioversion safe; the same group's work on lignocaine and the study of arrhythmias in monitored coronary patients define the modern coronary care unit.",
+      "people": [
+        "Bernard Lown"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "ABC — airway, breathing, circulation",
+      "detail": "Peter Safar, working in Baltimore with James Elam's earlier mouth-to-mouth experiments, systematises airway obstruction relief, rescue breathing and chest compression into a single sequence, writes the first intensive care textbook and founds the school of resuscitation research from which bystander-CPR programmes descend.",
+      "people": [
+        "Peter Safar"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "One set of international guidelines",
+      "detail": "The International Liaison Committee on Resuscitation, formed a decade earlier to reconcile national councils, publishes the first coordinated resuscitation guidelines; regular five-yearly review, with treatment recommendations graded by evidence, makes resuscitation practice a single teachable standard worldwide.",
+      "people": [
+        "ILCOR"
+      ]
+    },
+    {
+      "year": 2013,
+      "title": "ECMO for refractory arrest",
+      "detail": "Extracorporeal membrane oxygenation used during cardiac arrest (ECPR) and for refractory cardiogenic shock and respiratory failure moves from case series into selected-centre protocols, converting the ICU into a place where circulation and gas exchange can be replaced outright while the cause is treated.",
+      "people": []
     }
   ],
   "references": [

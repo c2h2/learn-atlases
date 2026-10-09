@@ -44,6 +44,9 @@ function page_head(string $title, string $active = '', array $opt = []): void
     echo '<!doctype html><html lang="' . h(LANGS[lang()]['html']) . '"><head><meta charset="utf-8">';
     echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
     echo '<title>' . h($fullTitle) . '</title><meta name="description" content="' . h($desc) . '">';
+    if (!empty($opt['robots'])) {
+        echo '<meta name="robots" content="' . h($opt['robots']) . '">';
+    }
     foreach (LANGS as $code => $L) {
         echo '<link rel="alternate" hreflang="' . h($L['html']) . '" href="' . h(lang_url($code)) . '">';
     }
@@ -125,7 +128,13 @@ function chapter_chain(array $course, array $opt = []): string
         $missing = !empty($idx['chapters'][$key]['missing']);
         $href = url('lesson.php', ['c' => $course['slug'], 'l' => $ch['slug']]);
         $label = ($i + 1) . '. ' . md_plain($ch['title']);
-        $o .= '<a role="listitem" href="' . h($href) . '" class="bead' . ($missing ? ' is-missing' : '') . '" data-key="' . h($key) . '"><title>' . h($label) . '</title>'
+        if ($missing) {
+            // a dashed bead is a place in the syllabus, not yet a page: do not link to an empty lesson
+            $o .= '<g role="listitem" class="bead is-missing" data-key="' . h($key) . '"><title>' . h($label . ' — ' . t('in preparation')) . '</title>'
+                . '<circle cx="' . $x . '" cy="' . $cy . '" r="' . round($r, 2) . '"/><text x="' . $x . '" y="' . $cy . '" font-size="' . round($unit * 0.34, 1) . '">' . ($i + 1) . '</text></g>';
+            continue;
+        }
+        $o .= '<a role="listitem" href="' . h($href) . '" class="bead" data-key="' . h($key) . '"><title>' . h($label) . '</title>'
             . '<circle cx="' . $x . '" cy="' . $cy . '" r="' . round($r, 2) . '"/><text x="' . $x . '" y="' . $cy . '" font-size="' . round($unit * 0.34, 1) . '">' . ($i + 1) . '</text></a>';
     }
     return $o . '</svg>';

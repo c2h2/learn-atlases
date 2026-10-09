@@ -8,8 +8,9 @@
   "tagline": "Breathing and gas exchange, lung function, asthma and COPD, infections, lung cancer and respiratory failure",
   "summary": "Breathing delivers oxygen and removes carbon dioxide; failure of either is quickly fatal. This course covers the mechanics of breathing, gas exchange and its control, lung function tests, and the common diseases of the lungs: asthma and COPD, infections including tuberculosis, interstitial and pulmonary vascular disease, lung cancer and respiratory failure.",
   "overview": [
-    "The lung, and the one that the system is for, is the one that the limit is for, and the one that the airway is for. This course follows the lung and the one that the airway is for, from the mechanism and the one that the limit is for, to the practice and the one that the respiratory is for, and gives the method and the check that make it work.",
-    "We build the lung and the one that the airway is for, from the process and the structure, and then study how the clinical and the respiratory, and the one that the limit is for, are for."
+    "Respiration is gas exchange engineered around two mechanics problems: moving air with pressure differences, and moving gases across a membrane thinner than a cell. Almost all clinical respiratory physiology follows from those two tasks and from the control system that adjusts ventilation to keep arterial carbon dioxide and oxygen near their set points. This course builds that framework first, because asthma, COPD, fibrosis, embolism and respiratory failure are all failures of one of its parts.",
+    "Mechanics covers compliance, resistance, the pressure–volume loops, the work of breathing and the equal-pressure point that traps air; lung volumes and capacities and what spirometry actually measures. Gas exchange follows — diffusion, ventilation/perfusion matching, the alveolar gas equation and the A–a gradient, and the oxygen–haemoglobin dissociation curve with its shifts. Control and testing come next: chemoreflexes, hypoxic drive, and the interpretation of spirometry, peak flow, transfer factor, exercise tests and sleep studies. The clinical chapters apply the framework: asthma as variable inflammation-driven airflow limitation; COPD as progressive small-airway and parenchymal destruction with its exacerbation and oxygen logic; the pneumonias by route and host; interstitial lung disease, pulmonary embolism and pulmonary hypertension; lung cancer by type and staging logic, and pleural disease; and finally respiratory failure, its type 1 and type 2 physiology, oxygen therapy, non-invasive ventilation and the intubation decision.",
+    "Numbers recur: FEV1/FVC ratios, transfer factor, predicted values, A–a gradients calculated from real blood gases, V/Q distributions shown in interactive figures, and the physiology of hypoxic pulmonary vasoconstriction. Cases walk each calculation through from raw numbers to diagnosis, and every management statement is framed as principle under current guidelines (BTS, GINA, GOLD) rather than instruction."
   ],
   "prerequisites": [
     "anatomy",
@@ -19,11 +20,16 @@
     "microbiology"
   ],
   "outcomes": [
-    "Explain the lung, and the one that the mechanism is for, in the limit",
-    "Explain the airway, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the lung is for, in the limit",
-    "Outline the management, and the one that the airway is for, in the limit",
-    "Recognise the state, and the one that the lung is for, in the limit"
+    "Explain the mechanics of breathing — compliance, resistance, pleural and transpulmonary pressures, surfactant, the work of breathing — and interpret flow–volume loops and the spirometric patterns of obstruction and restriction.",
+    "Describe ventilation/perfusion matching and diffusion, use the alveolar gas equation, calculate the A–a gradient and explain its clinical value in the assessment of hypoxaemia.",
+    "Explain the neural and chemical control of ventilation, the responses to hypoxia and hypercapnia, and the pathophysiology of periodic breathing and opioid-related respiratory depression.",
+    "Apply pulmonary function testing — spirometry, lung volumes, transfer factor, bronchial challenge, peak-flow variability, exercise and sleep studies — to defined clinical scenarios.",
+    "Explain the pathophysiology, severity assessment, stepwise management principles and exacerbation care of asthma and COPD, including the evidence and limits of oxygen therapy.",
+    "Classify pneumonias by route, setting and host, apply severity scores to disposition decisions, and recognise the complications — effusion, empyema, abscess.",
+    "Explain the pathogenesis, presentation, investigation and prevention of venous thromboembolism and pulmonary embolism, and the physiology and classification of pulmonary hypertension.",
+    "Describe the interstitial lung diseases by pattern (usual interstitial pneumonia, nonspecific interstitial pneumonia, organising pneumonia, hypersensitivity pneumonitis), their physiological signature and management principles.",
+    "Classify lung cancers, apply the staging and physiological-fitness logic that decides treatment modality, and manage pleural effusions and pneumothorax including aspiration and chest-drain principles.",
+    "Define type 1 and type 2 respiratory failure from blood gases, explain the physiology of oxygen delivery devices and non-invasive ventilation, and state the principles of intubation and lung-protective ventilation."
   ],
   "chapters": [
     {
@@ -99,27 +105,87 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the lung is for, is the one that the airway is for, of the structure.",
-      "people": [
-        "Harvey"
-      ]
-    },
-    {
       "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the lung is for, is the one that the airway is for, of the process.",
+      "title": "The vital capacity",
+      "detail": "John Hutchinson invents the spirometer and, from some 1,500 measurements — including workhouse inmates and army recruits — describes a single 'vital capacity' that rises with height and exercise; respiratory medicine acquires its first instrument, refined sixty years later into the forced expiratory manoeuvre.",
       "people": [
-        "Lister"
+        "John Hutchinson"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the lung is for, is the one that the airway is for, of the mechanism.",
+      "year": 1882,
+      "title": "The lobar-pneumonia coccus",
+      "detail": "Louis Pasteur and, independently, Sternberg each see diplococci in the saliva and sputum of lobar pneumonia; Antonio Fränkel then distinguishes the pneumococcus, and Oswald Avery's 1910s typing work defines serotypes — the basis of polysaccharide vaccines and of typing itself.",
       "people": [
-        "Koche"
+        "Louis Pasteur",
+        "George Sternberg",
+        "Antonio Fränkel",
+        "Oswald Avery"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "The lung measured at the catheter tip",
+      "detail": "André Cournand and Dickinson Richards develop right-heart and pulmonary-artery catheterisation with arterial blood gas analysis, turning emphysema, fibrosis and pulmonary hypertension from stethoscopic impressions into quantifiable cardiorespiratory failure (Nobel Prize 1956, with Werner Forssmann).",
+      "people": [
+        "André Cournand",
+        "Dickinson Richards",
+        "Werner Forssmann"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "The polio wards",
+      "detail": "During Copenhagen's polio epidemic, iron lungs run short and Bjørn Ibsen's alternative — tracheostomy, manual positive-pressure ventilation, students at the bedside in shifts — proves dramatically better; the epidemic founds the intensive-care model and establishes that respiratory failure can be survived with ventilatory support.",
+      "people": [
+        "Bjørn Ibsen"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "Surfactant discovered",
+      "detail": "John Clements shows that lung-lining fluid lowers surface tension and that a factor is deficient in neonatal respiratory distress; with von Neergaard's earlier elastance work, Pattle's 1955 observations and Avery and Mead's 1959 link, the insight underlies surfactant therapy and today's understanding of ARDS mechanics.",
+      "people": [
+        "John Clements",
+        "Mary Ellen Avery",
+        "Jere Mead"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "The Dutch hypothesis",
+      "detail": "Nicolaas Orie, Herman Sluiter and colleagues propose that asthma, chronic bronchitis and emphysema share a constitutional airway predisposition — wrong in its genetics, generative in its method: the argument reorganised airflow-disease research toward phenotypes and, decades later, the asthma–COPD overlap debate.",
+      "people": [
+        "Nicolaas Orie",
+        "Herman Sluiter"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "The adult respiratory distress syndrome",
+      "detail": "Ashbaugh, Bigler, Petty and Levine describe in The Lancet an acute hypoxaemic respiratory failure of adults whose stiff, wet lungs resembled neonatal distress; the syndrome (today 'ARDS'), its Berlin severity strata and the lung-protective ventilation trials of 2000 define critical-care respiratory medicine.",
+      "people": [
+        "Thomas Petty",
+        "H. Hugh Ashbaugh",
+        "John Bigler",
+        "Thomas Petty"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "Peak flow at home",
+      "detail": "Michael Wright's peak-flow meter brings objective self-measurement to asthma, enabling diary monitoring, diurnal-variability diagnosis and the written action plans that cut exacerbations — respiratory medicine's most successful patient-held instrument, and cheap enough for global use.",
+      "people": [
+        "Michael Wright"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "Guidelines become strategy",
+      "detail": "The GINA workshop with the US NHLBI and the British Thoracic Society guidelines make asthma a stepped, monitored condition with a written-plan standard; GOLD follows in 2001 for COPD — airflow limitation becomes a staged, treatable, auditable disease with spirometry targets and smoking-cessation policy attached.",
+      "people": [
+        "Global Initiative for Asthma",
+        "NHLBI"
       ]
     }
   ],

@@ -1,4 +1,512 @@
 {
   "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC.",
-  "milestones": []
+  "milestones": [
+    {
+      "year": -430,
+      "title": "Medicine as observation",
+      "detail": "The Hippocratic corpus treats disease as a natural event with natural causes, to be watched, recorded and reasoned about; the clinical history and the ethical tradition of the profession both descend from these writings.",
+      "people": [
+        "Hippocrates of Kos"
+      ],
+      "area": "population"
+    },
+    {
+      "year": -300,
+      "title": "Dissection at Alexandria",
+      "detail": "Herophilos and Erasistratos dissect human bodies, distinguish arteries from veins, map the nerves and place intelligence in the brain rather than the heart.",
+      "people": [
+        "Herophilos",
+        "Erasistratos"
+      ],
+      "area": "basic"
+    },
+    {
+      "year": 150,
+      "title": "Galen's synthesis",
+      "detail": "Galen of Pergamum writes hundreds of books of anatomy, physiology and pharmacology from animals and from earlier authorities; his account of the body and of the humours dominates European medicine for fourteen centuries.",
+      "people": [
+        "Claudius Galen"
+      ],
+      "area": "basic"
+    },
+    {
+      "year": 1543,
+      "title": "On the fabric of the human body",
+      "detail": "Andreas Vesalius publishes De humani corporis fabrica on the basis of dissections he performed himself, correcting Galen where the human body differs from the animals Galen had cut, and founding descriptive anatomy on first-hand observation.",
+      "people": [
+        "Andreas Vesalius"
+      ],
+      "area": "basic"
+    },
+    {
+      "year": 1628,
+      "title": "The circulation of the blood",
+      "detail": "In a short book, De motu cordis, William Harvey calculates that the heart ejects far more blood in an hour than the body could make or consume, and concludes that blood is pumped in a closed circuit: the first quantitative argument in physiology.",
+      "people": [
+        "William Harvey"
+      ],
+      "area": "systems"
+    },
+    {
+      "year": 1676,
+      "title": "The first microbes",
+      "detail": "Antonie van Leeuwenhoek grinds his own lenses, examines scrapings from his own teeth and writes to the Royal Society in Delft about tiny moving 'animalcules': the first observations of bacteria.",
+      "people": [
+        "Antonie van Leeuwenhoek"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 1747,
+      "title": "A comparison of treatments at sea",
+      "detail": "Aboard HMS Salisbury the ship's surgeon James Lind takes twelve scorbutic sailors, puts them in pairs and gives each pair a different supplement on top of the same diet; the two given citrus recover within days. The naval introduction of lemon juice follows half a century later.",
+      "people": [
+        "James Lind"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 1796,
+      "title": "Vaccination",
+      "detail": "Edward Jenner inoculates eight-year-old James Phipps with material from a cowpox sore and later challenges him with smallpox, which does not take; his self-published inquiry of 1798 founds vaccination.",
+      "people": [
+        "Edward Jenner"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 1816,
+      "title": "The stethoscope",
+      "detail": "René Laennec, reluctant to put his ear to a young woman's chest, rolls paper into a tube and finds he hears the heart and lungs more clearly than by immediate auscultation; his treatise of 1819 turns the signs of chest disease into a system.",
+      "people": [
+        "René Laennec"
+      ],
+      "area": "clinical"
+    },
+    {
+      "year": 1842,
+      "title": "Sanitary reform by the numbers",
+      "detail": "Edwin Chadwick reports on the sanitary condition of the labouring population of Britain, using death registration and local inquiries to show that drainage, water and housing determine how long people live; the report leads to the Public Health Act of 1848.",
+      "people": [
+        "Edwin Chadwick"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 1847,
+      "title": "Childbed fever is carried on hands",
+      "detail": "In the Vienna general hospital Ignaz Semmelweis makes students and doctors disinfect their hands with chlorinated lime before examining women in labour, after a colleague dies of the illness the women were dying of; mortality in his clinic falls sharply, and his evidence is rejected in his lifetime.",
+      "people": [
+        "Ignaz Semmelweis"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 1854,
+      "title": "Taking the handle off the pump",
+      "detail": "John Snow argues from the pattern of deaths in Soho that cholera is waterborne, and the Broad Street outbreak subsides after the pump handle is removed; his work founds outbreak investigation, and with Chadwick's the modern water and sewage services.",
+      "people": [
+        "John Snow"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 1858,
+      "title": "Disease lives in cells",
+      "detail": "Rudolf Virchow's Cellular Pathology replaces the humours with the cell as the seat of disease, and gives medicine its vocabulary of hyperplasia, metaplasia, embolism and thrombosis.",
+      "people": [
+        "Rudolf Virchow"
+      ],
+      "area": "disease"
+    },
+    {
+      "year": 1860,
+      "title": "Nursing as an occupation",
+      "detail": "Using money raised after the Crimean War, where she had cut death rates by sanitary reform and by statistics she could put in front of politicians, Florence Nightingale opens a training school for nurses at St Thomas's Hospital in London.",
+      "people": [
+        "Florence Nightingale"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 1867,
+      "title": "Antisepsis",
+      "detail": "Convinced by Pasteur that putrefaction is caused by living particles in the air, Joseph Lister dresses compound fractures with carbolic acid and reports in The Lancet a substantial fall in mortality; antiseptic, then aseptic, technique makes major surgery survivable.",
+      "people": [
+        "Joseph Lister"
+      ],
+      "area": "clinical"
+    },
+    {
+      "year": 1876,
+      "title": "One germ, one disease",
+      "detail": "Robert Koch grows the anthrax bacillus in pure culture outside the animal, shows that it causes anthrax when injected into healthy mice and describes the resistant spore stage: experimental proof that a specific organism causes a specific disease, and the origin of Koch's postulates.",
+      "people": [
+        "Robert Koch"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 1882,
+      "title": "The tuberculosis bacillus",
+      "detail": "Koch announces the identification of Mycobacterium tuberculosis; within a few years Edwin Klebs and Friedrich Löffler describe the diphtheria bacillus and Georg Gaffky the typhoid bacillus, and laboratory diagnosis of infection becomes routine.",
+      "people": [
+        "Robert Koch",
+        "Edwin Klebs",
+        "Friedrich Löffler",
+        "Georg Gaffky"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 1885,
+      "title": "A vaccine made in the laboratory",
+      "detail": "Nine-year-old Joseph Meister, bitten by a rabid dog, is given a series of injections of attenuated rabies virus grown in rabbit spinal cord by Louis Pasteur and his team in Paris; he does not fall ill, and laboratory vaccines become a branch of medicine.",
+      "people": [
+        "Louis Pasteur"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 1890,
+      "title": "Serum therapy",
+      "detail": "Emil von Behring and Kitasato Shibasaburō show that serum from animals immunised against diphtheria and tetanus transfers immunity and neutralises toxin in another animal: the first immunotherapy, and the work for which Behring receives the first Nobel Prize in Physiology or Medicine in 1901.",
+      "people": [
+        "Emil von Behring",
+        "Kitasato Shibasaburō"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 1895,
+      "title": "Seeing inside the living body",
+      "detail": "Investigating cathode rays in Würzburg, Wilhelm Röntgen finds a fluorescent screen glowing across the room and photographs the bones of his wife's hand; within a year X-rays are in hospitals, and the first radiation injuries are being described.",
+      "people": [
+        "Wilhelm Conrad Röntgen"
+      ],
+      "area": "clinical"
+    },
+    {
+      "year": 1897,
+      "title": "The synapse",
+      "detail": "Santiago Ramón y Cajal's silver-stained sections establish that the nervous system is made of discrete cells rather than a continuous net, and Charles Scott Sherrington reasons that reflexes must cross a junction with properties of its own, which he names the synapse; Sherrington shares the 1932 Nobel Prize with Edgar Adrian.",
+      "people": [
+        "Santiago Ramón y Cajal",
+        "Charles Scott Sherrington"
+      ],
+      "area": "systems"
+    },
+    {
+      "year": 1901,
+      "title": "Blood groups",
+      "detail": "Karl Landsteiner finds that human sera agglutinate some red cell suspensions and not others, defining groups A, B and O, so that deaths from incompatible transfusion stop being an unexplained hazard; donation, storage and cross-matching follow.",
+      "people": [
+        "Karl Landsteiner"
+      ],
+      "area": "systems"
+    },
+    {
+      "year": 1910,
+      "title": "Salvarsan, and chemotherapy",
+      "detail": "Paul Ehrlich and Sahachiro Hata report the cure of experimental trypanosome infection and the treatment of syphilis with arsenical compound 606, marketed as Salvarsan: the idea that a chemical may be chosen for its selective toxicity to a pathogen.",
+      "people": [
+        "Paul Ehrlich",
+        "Sahachiro Hata"
+      ],
+      "area": "disease"
+    },
+    {
+      "year": 1921,
+      "title": "Insulin",
+      "detail": "Frederick Banting and Charles Best, with J. J. R. Macleod's laboratory at Toronto, obtain a pancreatic extract that lowers blood glucose in depancreatectomised dogs; after James Collip's purification patients begin treatment in January 1922, and juvenile diabetes changes from a fatal wasting disease into a manageable one.",
+      "people": [
+        "Frederick Banting",
+        "Charles Best",
+        "James Collip",
+        "J. J. R. Macleod"
+      ],
+      "area": "systems"
+    },
+    {
+      "year": 1928,
+      "title": "Penicillin",
+      "detail": "Returning from a holiday, Alexander Fleming finds that a staphylococcal plate left near an open window has been contaminated by a mould and that no colonies grow around it; he describes the diffusible antibacterial substance in mould filtrate as penicillin, and cannot get enough of it.",
+      "people": [
+        "Alexander Fleming"
+      ],
+      "area": "disease"
+    },
+    {
+      "year": 1941,
+      "title": "Penicillin in patients",
+      "detail": "Howard Florey and Ernst Boris Chain, with Norman Heatley solving the production problem, carry penicillin from a curiosity to a medicine: the first patients treated at Oxford in 1941, a Medical Research Council trial against sulphonamides in war wounds, and large-scale manufacture in the United States.",
+      "people": [
+        "Howard Florey",
+        "Ernst Boris Chain",
+        "Norman Heatley"
+      ],
+      "area": "disease"
+    },
+    {
+      "year": 1944,
+      "title": "Streptomycin, and the search in soil",
+      "detail": "Albert Schatz, working in Selman Waksman's laboratory, obtains streptomycin from a soil actinomycete; it becomes the first reliable treatment for tuberculosis, and within a few years the first antibiotic whose usefulness is limited by resistance.",
+      "people": [
+        "Selman Waksman",
+        "Albert Schatz"
+      ],
+      "area": "disease"
+    },
+    {
+      "year": 1948,
+      "title": "A world health organisation, and a controlled trial",
+      "detail": "The constitution of the World Health Organization, with its definition of health as a state of complete physical, mental and social well-being, comes into force on 7 April. In the same year the Medical Research Council reports its randomised trial of streptomycin plus bed rest against bed rest alone in pulmonary tuberculosis, the allocation designed by the statistician Austin Bradford Hill.",
+      "people": [
+        "Austin Bradford Hill",
+        "WHO"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 1950,
+      "title": "Smoking and lung cancer",
+      "detail": "Richard Doll and Austin Bradford Hill publish a hospital-based comparison showing that carcinoma of the lung is very much commoner in smokers, and begin following some 40,000 British doctors prospectively; exposure, dose-response, latency and eventual decline are all in that one design.",
+      "people": [
+        "Richard Doll",
+        "Austin Bradford Hill"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 1953,
+      "title": "The double helix; and the heart-lung machine",
+      "detail": "James Watson and Francis Crick propose a base-paired structure for DNA, using Rosalind Franklin and Raymond Gosling's X-ray diffraction photographs and Erwin Chargaff's base ratios; in the same year John Gibbon uses a mechanical heart and lungs to close an atrial septal defect in a patient who survives.",
+      "people": [
+        "James Watson",
+        "Francis Crick",
+        "Rosalind Franklin",
+        "Maurice Wilkins",
+        "John Gibbon"
+      ],
+      "area": "basic"
+    },
+    {
+      "year": 1954,
+      "title": "The first successful transplant",
+      "detail": "At the Peter Bent Brigham Hospital Joseph Murray and J. Hartwell Harrison remove a kidney from one identical twin and place it in the other, where it works for eight years; transplantation is thereby defined as an immunological problem, and the era of immunosuppression begins.",
+      "people": [
+        "Joseph Murray",
+        "J. Hartwell Harrison"
+      ],
+      "area": "clinical"
+    },
+    {
+      "year": 1955,
+      "title": "Poliomyelitis vaccine",
+      "detail": "Enders, Weller and Robbins have grown poliovirus in non-nervous tissue culture, and Jonas Salk's inactivated vaccine is tested in a field trial on schoolchildren larger than any before; licensure in April 1955 is followed by Albert Sabin's attenuated oral vaccine, which makes mass campaigns feasible.",
+      "people": [
+        "Jonas Salk",
+        "John Enders",
+        "Albert Sabin"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 1960,
+      "title": "Chest compression, and dialysis for life",
+      "detail": "William Kouwenhoven, Guy Jude and James Knickerbocker report restoring circulation by external chest compression, the manoeuvre that makes resuscitation possible outside an operating theatre; in the same year Belding Scribner and Wayne Quinton fit a reusable vascular access so that patients with end-stage renal failure can be dialysed repeatedly rather than once.",
+      "people": [
+        "William Kouwenhoven",
+        "Guy Jude",
+        "Belding Scribner",
+        "Wayne Quinton"
+      ],
+      "area": "clinical"
+    },
+    {
+      "year": 1967,
+      "title": "A transplanted heart; and a determined eradication",
+      "detail": "Christiaan Barnard transplants a heart at Groote Schuur hospital in Cape Town on 3 December. The same year the World Health Organization launches an Intensified Smallpox Eradication Programme, which with surveillance and ring vaccination rather than blanket coverage reaches the last natural case in 1977.",
+      "people": [
+        "Christiaan Barnard",
+        "Donald Henderson",
+        "WHO"
+      ],
+      "area": "clinical"
+    },
+    {
+      "year": 1971,
+      "title": "Computed tomography",
+      "detail": "Godfrey Hounsfield at EMI, with the neurologist James Ambrose, reconstructs X-ray attenuation measured from many angles to display a slice of the living brain without opening the skull; computed tomography, and then magnetic resonance imaging, displace exploratory surgery in much of diagnosis.",
+      "people": [
+        "Godfrey Hounsfield",
+        "James Ambrose",
+        "Allan Cormack"
+      ],
+      "area": "clinical"
+    },
+    {
+      "year": 1974,
+      "title": "Immunisation becomes a global programme",
+      "detail": "The World Health Assembly establishes the Expanded Programme on Immunization so that children everywhere are protected against tuberculosis, diphtheria, pertussis, tetanus and measles, with poliomyelitis added later; its cold chain and coverage statistics become the backbone of child health.",
+      "people": [
+        "WHO"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 1977,
+      "title": "Reading DNA",
+      "detail": "Frederick Sanger develops chain-termination sequencing and, independently, Allan Maxam and Walter Gilbert a chemical degradation method; for the first time a gene can be read, and medical genetics moves from chromosomes and pedigrees to sequence.",
+      "people": [
+        "Frederick Sanger",
+        "Allan Maxam",
+        "Walter Gilbert"
+      ],
+      "area": "basic"
+    },
+    {
+      "year": 1978,
+      "title": "Fertilisation outside the body",
+      "detail": "Patrick Steptoe and Robert Edwards deliver Louise Brown by caesarean section in Oldham after fertilisation and early development in the laboratory; assisted reproduction becomes a specialty, and the embryo becomes a problem for medical ethics.",
+      "people": [
+        "Patrick Steptoe",
+        "Robert Edwards"
+      ],
+      "area": "life"
+    },
+    {
+      "year": 1980,
+      "title": "Smallpox eradicated",
+      "detail": "The World Health Assembly declares that the world has won freedom from smallpox, more than three years after the last natural case in Somalia: the only human disease eradicated, and the template for the polio and guinea worm campaigns since.",
+      "people": [
+        "Frank Fenner",
+        "WHO"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 1981,
+      "title": "An epidemic recognised; a retrovirus found",
+      "detail": "In June the Centers for Disease Control report five cases of Pneumocystis pneumonia in previously healthy young men in Los Angeles, the first published account of what becomes AIDS; in 1983 Françoise Barré-Sinoussi and Luc Montagnier at the Institut Pasteur, and independently Robert Gallo's group, isolate the retrovirus now called HIV.",
+      "people": [
+        "Françoise Barré-Sinoussi",
+        "Luc Montagnier",
+        "Robert Gallo"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 1985,
+      "title": "Amplifying DNA",
+      "detail": "Kary Mullis describes the polymerase chain reaction, cycling denaturation, primer annealing and extension so that a minute quantity of DNA is copied into a detectable one; with a heat-stable polymerase from 1988 it becomes the ordinary instrument of diagnostic microbiology, transplant typing and forensic medicine.",
+      "people": [
+        "Kary Mullis"
+      ],
+      "area": "basic"
+    },
+    {
+      "year": 1989,
+      "title": "A common genetic disease traced to a gene",
+      "detail": "John Riordan, Lap-Chee Tsui, Francis Collins and colleagues identify the gene encoding the chloride channel CFTR as the cause of cystic fibrosis, the first disease gene found by moving along a chromosome from a linked marker; carrier testing, newborn screening and eventually drugs that correct the defective channel follow.",
+      "people": [
+        "John Riordan",
+        "Lap-Chee Tsui",
+        "Francis Collins"
+      ],
+      "area": "basic"
+    },
+    {
+      "year": 1990,
+      "title": "Gene therapy, and the genome project",
+      "detail": "In September a four-year-old with severe combined immunodeficiency due to adenosine deaminase deficiency receives her own white cells modified with a normal copy of the gene at the US National Institutes of Health; in October Congress begins funding the Human Genome Project.",
+      "people": [
+        "W. French Anderson",
+        "Michael Blaese"
+      ],
+      "area": "basic"
+    },
+    {
+      "year": 1992,
+      "title": "Evidence-based medicine",
+      "detail": "The McMaster group led by Gordon Guyatt gives a name to a movement: the conscientious, explicit and judicious use of current best evidence in decisions about individual patients, combined with clinical expertise and the patient's values, with systematic review as its instrument; David Sackett's later formulation makes the triad canonical.",
+      "people": [
+        "Gordon Guyatt",
+        "David Sackett"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 1995,
+      "title": "Tuberculosis control where care is scarce",
+      "detail": "The World Health Organization adopts short-course chemotherapy with directly observed treatment, standardised recording and guaranteed drug supply, a strategy built on treatment studies in East Africa that had shown cure rates above 80% without expensive infrastructure; it remains the framework of global tuberculosis control.",
+      "people": [
+        "WHO"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 2001,
+      "title": "A draft of the human genome",
+      "detail": "The public Human Genome Project and a private consortium publish draft sequences of the human genome; the surprise is the small number of protein-coding genes, of the order of twenty thousand, which turns attention towards regulation, variation and non-coding DNA. The sequence is declared essentially complete in 2003 and gapless in 2022.",
+      "people": [
+        "International Human Genome Sequencing Consortium",
+        "Craig Venter"
+      ],
+      "area": "basic"
+    },
+    {
+      "year": 2003,
+      "title": "SARS, and global health security",
+      "detail": "Carlo Urbani in Hanoi recognises that a severe respiratory illness in a patient who had travelled from Guangzhou is a new and transmissible pathogen and warns the World Health Organization, which issues a global alert on 12 March. The outbreak is contained by classic public health measures with genomic identification, and the International Health Regulations are revised in 2005.",
+      "people": [
+        "Carlo Urbani",
+        "Malik Peiris",
+        "WHO"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 2011,
+      "title": "Immunity unleashed; treatment as prevention",
+      "detail": "Ipilimumab, an antibody that releases the CTLA-4 brake on T cells, is licensed for melanoma, beginning checkpoint inhibition in oncology; and a randomised trial shows that starting antiretroviral therapy early, while CD4 counts are still high, prevents most sexual transmission of HIV.",
+      "people": [
+        "James Allison",
+        "Myron Cohen"
+      ],
+      "area": "disease"
+    },
+    {
+      "year": 2014,
+      "title": "Ebola in West Africa",
+      "detail": "The largest Ebola outbreak on record exposes how little intensive care, how few isolation wards and no licensed vaccine were available in the affected countries — and, in the event, how quickly a candidate vaccine could be manufactured and tested by ring vaccination in Guinea.",
+      "people": [
+        "WHO",
+        "Marie-Paule Kieny"
+      ],
+      "area": "population"
+    },
+    {
+      "year": 2020,
+      "title": "mRNA vaccines",
+      "detail": "Vaccines using nucleoside-modified mRNA in lipid nanoparticles, resting on the work of Katalin Karikó and Drew Weissman and on the BioNTech and Moderna platforms, are licensed against SARS-CoV-2 within about a year of the virus's sequence being released, and are given in billions of doses.",
+      "people": [
+        "Katalin Karikó",
+        "Drew Weissman",
+        "Özlem Türeci",
+        "Uğur Şahin"
+      ],
+      "area": "defence"
+    },
+    {
+      "year": 2023,
+      "title": "An approved gene-edited medicine",
+      "detail": "A therapy that edits a patient's own blood stem cells at the erythroid enhancer of BCL11A, the repressor of fetal haemoglobin identified through work on inherited persistence of fetal haemoglobin, is licensed for severe sickle cell disease and transfusion-dependent beta-thalassaemia: gene editing becomes a prescription, written for one patient at a time.",
+      "people": [
+        "Stuart Orkin",
+        "Vijay Sankaran"
+      ],
+      "area": "basic"
+    }
+  ]
 }

@@ -8,18 +8,22 @@
   "tagline": "How drugs act, how the body handles drugs, adverse effects and safe prescribing",
   "summary": "Every treatment depends on understanding how drugs act and how the body handles them. This course covers receptors and pharmacodynamics, absorption, distribution, metabolism and excretion, the principles of dosing, drugs acting on the autonomic nervous system, adverse reactions and interactions, differences between patients, and how medicines are developed, regulated and prescribed safely.",
   "overview": [
-    "The drug, and the one that the system is for, is the one that the limit is for, and the one that the molecule is for. This course follows the drug and the one that the molecule is for, from the mechanism and the one that the limit is for, to the practice and the one that the pharmacology is for, and gives the method and the check that make it work.",
-    "We build the drug and the one that the molecule is for, from the process and the structure, and then study how the clinical and the pharmacology, and the one that the limit is for, are for."
+    "Pharmacology is the reason a prescription is an arithmetic as well as a decision. Every drug is a molecule with a target, a dose–response curve, a journey through absorption, distribution, metabolism and excretion, and a profile of effects — desired and otherwise — modified by the patient's genes, age, organs and other medicines. This course teaches that system so that prescribing, and the reading of a formulary, become predictable rather than memorised.",
+    "It starts with receptors: agonists, antagonists, potency and efficacy, the graded curves and spare-receptor logic behind clinical choices, and the signalling pathways drugs hijack. Pharmacokinetics follows in equations and in graphs — bioavailability, volume of distribution, clearance, half-life and the reasons steady state takes four or five half-lives, loading doses, first-order versus capacity-limited elimination, and the arithmetic of the dosing interval. Metabolism and excretion explain the interactions that fill emergency admissions: cytochrome P450 induction and inhibition, phase I and II reactions, renal clearance and dose adjustment. Dosing principles then apply it all: loading and maintenance, therapeutic drug monitoring, clearance-based adjustment and the interpretation of a drug level.",
+    "An autonomic-drugs chapter uses the divisions of the motor nervous system as a map of the major drug classes — cholinergic and adrenergic agonists and antagonists — because that system concentrates pharmacology's logic in one page. Adverse reactions, their classification and pharmacovigilance; patient variation through genetics (pharmacogenetics: TPMT, CYP2C19, CYP2D6, HLA types), age, pregnancy, disease and adherence; and a final chapter on drug development and prescribing — trials, licensing, post-marketing surveillance, antimicrobial and opioid stewardship, rational prescribing and the WHO-style list. Throughout, doses appear only as illustrative values; actual prescribing follows current formularies."
   ],
   "prerequisites": [
     "physiology"
   ],
   "outcomes": [
-    "Explain the drug, and the one that the mechanism is for, in the limit",
-    "Explain the molecule, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the drug is for, in the limit",
-    "Outline the management, and the one that the molecule is for, in the limit",
-    "Recognise the state, and the one that the drug is for, in the limit"
+    "Define receptor concepts — agonist, partial agonist, antagonist, inverse agonist, efficacy and potency — and read graded and quantal dose–response curves, including the meaning of therapeutic index.",
+    "Explain the absorption, distribution, metabolism and excretion of drugs, and calculate and interpret bioavailability, volume of distribution, clearance, half-life and time to steady state.",
+    "Use the one- and two-compartment logic of concentration–time curves to design and adjust dosing regimens, including loading doses, maintenance intervals and therapeutic drug monitoring.",
+    "Describe cytochrome P450 and conjugation metabolism and predict the clinical consequences of enzyme induction and inhibition, and adjust for renal and hepatic impairment.",
+    "Explain the autonomic nervous system's transmitter and receptor physiology as the organising map of cholinergic and adrenergic drugs, and predict the effects and uses of each class.",
+    "Classify adverse drug reactions (A–F type), describe mechanisms of hypersensitivity and idiosyncrasy, and explain how spontaneous reporting, phase IV studies and signal detection work.",
+    "Account for individual variation in drug response — pharmacogenetics with named examples, age, pregnancy, disease states, adherence and interactions — and apply it to a prescribing decision.",
+    "Outline drug development from target to phase IV, the ethics and design of each phase, and the principles of rational, safe prescribing and stewardship."
   ],
   "chapters": [
     {
@@ -90,27 +94,83 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the drug is for, is the one that the molecule is for, of the structure.",
+      "year": 1804,
+      "title": "A pure active principle",
+      "detail": "Friedrich Sertürner isolates morphine from opium, the first alkaloid obtained crystalline from a plant drug; pharmacology begins when the active molecule, rather than the herbal preparation, becomes the object of study — and with it a century of purifying digitalis, atropine and quinine.",
       "people": [
-        "Harvey"
+        "Friedrich Sertürner"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the drug is for, is the one that the molecule is for, of the process.",
+      "year": 1878,
+      "title": "Curare teaches the synapse",
+      "detail": "Ray Langley's experiments with curare and nicotine on salivary glands lead him to a 'receptive substance' beside the muscle cell, distinct from the nerve itself — the receptor as a pharmacological entity, twenty-seven years before Dale's chemical transmission.",
       "people": [
-        "Lister"
+        "John Newport Langley"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the drug is for, is the one that the molecule is for, of the mechanism.",
+      "year": 1908,
+      "title": "Side-chains and receptors",
+      "detail": "Paul Ehrlich receives the Nobel Prize for immunity work that embodies his side-chain theory: cells carry surface receptors that drugs and toxins bind like a lock and key, and disease can be treated by molecules chosen for their binding — the conceptual origin of receptor pharmacology and of the therapeutic-index idea that selectivity is everything.",
       "people": [
-        "Koche"
+        "Paul Ehrlich"
+      ]
+    },
+    {
+      "year": 1937,
+      "title": "The magic bullet becomes a class",
+      "detail": "Domagk reports Prontosil's cure of streptococcal infection, and the Pasteur Laboratory's work shows the dye releases sulphanilamide in the body — the first systemic chemotherapeutic class. The same year, a sulphanilamide elixir dissolved in diethylene glycol kills over a hundred Americans, and the resulting public outrage passes the 1938 Food, Drug and Cosmetic Act: safety evidence becomes a legal requirement.",
+      "people": [
+        "Gerhard Domagk",
+        "Daniel Bovet"
+      ]
+    },
+    {
+      "year": 1942,
+      "title": "Penicillin in patients",
+      "detail": "Florey, Chain and colleagues' MRC-supported trials prove penicillin cures human infection, and the US fermentation programme scales production; the antibiotic era also supplies pharmacology's first large-scale lesson in adverse reactions — allergic anaphylaxis — and in resistance.",
+      "people": [
+        "Howard Florey",
+        "Ernst Boris Chain"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Two drugs that changed regulation and psychiatry",
+      "detail": "Iproniazid's tuberculosis patients grow cheerful — antidepressant action is discovered by accident, and the monoamine hypothesis of mood disorders follows; meanwhile thalidomide is withdrawn as evidence of phocomelia mounts, and the 1962 Kefauver–Harris amendments require proof of efficacy and safety, founding modern clinical-trial regulation and reproductive-safety testing.",
+      "people": [
+        "Nathan Kline"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Rational drug design",
+      "detail": "James Black, working from histamine physiology, develops propranolol — the first beta-blocker and a template for receptor-directed drug design — and later cimetidine, the first anti-ulcer drug designed from a receptor; both earn him the 1988 Nobel Prize.",
+      "people": [
+        "James Black"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "Pharmacokinetics at the bedside",
+      "detail": "Routine serum-level measurement of aminoglycosides, phenytoin, lithium and theobromine-derived agents turns clearance, half-life and steady state from physiology texts into daily ward arithmetic, and therapeutic drug monitoring becomes a named discipline.",
+      "people": []
+    },
+    {
+      "year": 1957,
+      "title": "The idea of pharmacogenetics",
+      "detail": "Abram Motulsky, in a Lancet essay, argues that inherited variation in enzyme activity explains why patients respond unpredictably to the same drug dose — before most of the examples were known; the thiopurine-methyltransferase work of the 1980s, and today's CYP2C19, CYP2D6, HLA and warfarin dosing guidance, vindicate the idea.",
+      "people": [
+        "Abram Motulsky"
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "Checkpoint and targeted eras",
+      "detail": "Imatinib, trastuzumab and then checkpoint inhibitors prove that drugs designed against a molecular target can outperform empirical cytotoxics, converting pharmacology's receptor–target logic into cancer practice and making tumour molecular profiling part of prescribing.",
+      "people": [
+        "Brian Druker"
       ]
     }
   ],

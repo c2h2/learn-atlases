@@ -8,18 +8,26 @@
   "tagline": "Chromosomes, inheritance, genetic disease, genomics and genetic testing",
   "summary": "Genetic variation shapes health and disease. This course covers chromosomes and their abnormalities, patterns of inheritance, the genetics of rare and common disease, cancer genetics, genetic testing and counselling, and genomic medicine and its ethics.",
   "overview": [
-    "The gene, and the one that the system is for, is the one that the limit is for, and the one that the genome is for. This course follows the gene and the one that the genome is for, from the mechanism and the one that the limit is for, to the practice and the one that the genetics is for, and gives the method and the check that make it work.",
-    "We build the gene and the one that the genome is for, from the process and the structure, and then study how the clinical and the genetics, and the one that the limit is for, are for."
+    "Genetics explains two facts at once: why a family's diseases run in families, and why most disease is not like that. The first is the world of single genes — a change in one sequence, transmitted according to rules that can be read in a pedigree, sometimes with a predictable recurrence risk. The second is the world of common disease, in which dozens or thousands of variants each contribute a little, and environment, chance and development decide who is affected.",
+    "This course starts with the material: how the genome is packaged into chromosomes, how mitosis and meiosis distribute it, and what goes wrong when they do not — from trisomy 21 to a balanced translocation carried by an apparently healthy parent. We then learn to read pedigrees as diagnostic instruments: recognising autosomal dominant and recessive inheritance, X-linkage with its peculiarities, and the phenomena that break the neat pattern — penetrance, expressivity, imprinting, repeat expansion, mosaicism and mitochondrial transmission.",
+    "From there the course moves into practice. How a laboratory test is chosen and interpreted: karyotype, microarray, targeted sequencing, exome and genome sequencing; what a positive, a negative and a variant of uncertain significance each mean; how prenatal diagnosis, preimplantation testing and newborn screening work and differ; and how a genetics consultation handles risk, reproduction, uncertainty and family disclosure. The genetics of cancer gets its own chapter because tumour evolution follows the same rules with somatic cells, and because a child with retinoblastoma or a woman with a BRCA1 variant is a clinical genetics patient.",
+    "The last part is genomics as it is becoming part of ordinary medicine: pharmacogenetics and dose-changing variants, polygenic scores and what they can and cannot be used for, gene therapy and gene editing, and the ethics of genetic information — consent for a child's genome, the return of secondary findings, discrimination, confidentiality within a family, and the difference between treating a patient and altering a lineage.",
+    "You will need the machinery from [[cell-biochemistry/gene-expression]]: replication and repair, transcription, translation and how variants are classified. Where a genetic disorder has a metabolic or syndromic face, the details are worked out in the systems courses; here the aim is to be able to reason about inheritance, tests and risk."
   ],
   "prerequisites": [
     "cell-biochemistry"
   ],
   "outcomes": [
-    "Explain the gene, and the one that the mechanism is for, in the limit",
-    "Explain the genome, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the gene is for, in the limit",
-    "Outline the management, and the one that the genome is for, in the limit",
-    "Recognise the state, and the one that the gene is for, in the limit"
+    "Describe the organisation of the human genome and the chromosome cycle through mitosis and meiosis, and explain the origin and consequences of nondisjunction, translocation, deletion and inversion.",
+    "Recognise the pedigree signatures of autosomal dominant, autosomal recessive and X-linked inheritance, and calculate recurrence risks for simple situations including consanguinity and an unaffected parent of an affected child.",
+    "Explain penetrance, expressivity, variable age at onset, anticipation, imprinting, uniparental disomy, mitochondrial inheritance and mosaicism, and give an example of each.",
+    "Choose an appropriate genetic test for a clinical question — karyotype, microarray, single-gene or panel testing, exome or genome sequencing — and state what each cannot exclude.",
+    "Interpret a genetic laboratory report: pathogenic, likely pathogenic, variant of uncertain significance, likely benign, benign; and explain why the same variant may be reported differently over time or in different genes.",
+    "Outline prenatal diagnosis, preimplantation genetic testing, non-invasive prenatal testing and newborn screening, including their detection rates, false-positive rates, and the indications and limits of each.",
+    "Summarise the genetic basis of inherited cancer syndromes and the logic of tumour suppressor and oncogene involvement, and take a family history that identifies a hereditary cancer risk.",
+    "Explain multifactorial inheritance, heritability, relative risk to relatives, genome-wide association studies and polygenic risk scores, including the reasons a polygenic score performs differently between populations.",
+    "Describe the principles of pharmacogenetics and the mechanisms of gene therapy, enzyme replacement, antisense and RNA-based treatment, and gene editing.",
+    "Discuss the ethical and legal issues of genetic information: consent and the child's open future, predictive testing, confidentiality within families, discrimination, and the governance of genome editing."
   ],
   "chapters": [
     {
@@ -91,51 +99,179 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the gene is for, is the one that the genome is for, of the structure.",
+      "year": 1866,
+      "title": "Experiments on plant hybrids",
+      "detail": "Gregor Mendel counts the characters of pea plants in the garden of the Augustinian monastery at Brno and reports that hereditary determinants are transmitted in fixed ratios and segregate independently of one another. The paper is barely noticed in his lifetime.",
       "people": [
-        "Harvey"
+        "Gregor Mendel"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the gene is for, is the one that the genome is for, of the process.",
+      "year": 1900,
+      "title": "Mendel rediscovered",
+      "detail": "Hugo de Vries, Carl Correns and Erich von Tschermak each reach Mendel's conclusions and find his paper, giving heredity a law-like basis at the moment cytologists were describing chromosomes dividing.",
       "people": [
-        "Lister"
+        "Hugo de Vries",
+        "Carl Correns",
+        "Erich von Tschermak"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the gene is for, is the one that the genome is for, of the mechanism.",
+      "year": 1908,
+      "title": "Inborn errors of metabolism",
+      "detail": "In his Croonian lectures Archibald Garrod, drawing on families with alkaptonuria, proposes that heritable disease can be the absence of a chemical step — the individuality of metabolism — founding both biochemical genetics and the later gene-enzyme idea.",
       "people": [
-        "Koche"
+        "Archibald Garrod"
+      ]
+    },
+    {
+      "year": 1913,
+      "title": "Genes laid out along chromosomes",
+      "detail": "In Thomas Hunt Morgan's 'fly room', Alfred Sturtevant turns the frequency with which characters are inherited together into the first genetic linkage map, following the demonstration that the white-eye mutation sits on the X chromosome; Calvin Bridges's work on nondisjunction then proves that the chromosome carries the gene.",
+      "people": [
+        "Thomas Hunt Morgan",
+        "Alfred Sturtevant",
+        "Calvin Bridges"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "One gene, one enzyme",
+      "detail": "George Beadle and Edward Tatum use X-rays and nutritional mutants of bread mould to tie a gene to a single enzymatic step, making Garrod's insight experimentally tractable and molecular medicine imaginable.",
+      "people": [
+        "George Beadle",
+        "Edward Tatum"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "The human chromosome number is settled at 46",
+      "detail": "Joe Hin Tjio and Albert Levan, culturing cells and swelling them in hypotonic fluid before fixing and staining, show that human cells have 46 chromosomes rather than the accepted 48 — the prerequisite for recognising an extra or missing chromosome as a cause of disease.",
+      "people": [
+        "Joe Hin Tjio",
+        "Albert Levan"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "Down syndrome is a chromosome disorder",
+      "detail": "Jérôme Lejeune with Paul Michel and Raymond Turpin, and independently Claire Jacobs and John Strong in Edinburgh, report three copies of chromosome 21 in Down syndrome; within months an extra X chromosome is found in Klinefelter syndrome and a missing one in Turner syndrome. Clinical genetics and cytogenetics begin together.",
+      "people": [
+        "Jérôme Lejeune",
+        "Raymond Turpin",
+        "Claire Jacobs",
+        "John Strong"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "One X chromosome is silenced",
+      "detail": "Mary Lyon proposes that one X chromosome is inactivated early in female development, that the choice is random, and that the same X stays silent in the daughter cells — explaining the Barr body, the mosaic tissue of a carrier, and the variable expression of X-linked disease in females.",
+      "people": [
+        "Mary Lyon"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "Two hits to lose a tumour suppressor",
+      "detail": "Alfred Knudson explains the earlier onset and frequent bilaterality of hereditary retinoblastoma by an inherited first hit and a somatic second hit, giving the field its model of recessive damage at the cell level and of inherited cancer risk.",
+      "people": [
+        "Alfred Knudson"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "Mapping the human genome with restriction markers",
+      "detail": "David Botstein, Ray White, Mark Skolnick and David Davis propose restriction fragment length polymorphisms as markers dense enough to follow chromosomes through families, turning linkage analysis from cytology into a laboratory method.",
+      "people": [
+        "David Botstein",
+        "Raymond White",
+        "Mark Skolnick",
+        "David Davis"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "A disease gene located without knowing its protein",
+      "detail": "Using a single DNA marker in Venezuelan families with Huntington disease, James Gusella, Nancy Wexler and colleagues localise the gene to the short arm of chromosome 4 — the first position cloning of a human disease gene, and the moment predictive testing became an ethical problem before it became a test.",
+      "people": [
+        "James Gusella",
+        "Nancy Wexler",
+        "Peggy Conneally"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "The genome project begins; a gene is added to a patient",
+      "detail": "Congress funds the Human Genome Project, and at the US National Institutes of Health a girl with adenosine deaminase deficiency receives gene-modified white cells — the start of the long, uneven and finally successful history of gene therapy.",
+      "people": [
+        "Francis Collins",
+        "W. French Anderson",
+        "Michael Blaese"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Common disease by genome-wide association",
+      "detail": "Gregory Hageman's group, with two other teams reporting the same signal, finds that variation in complement factor H strongly predicts age-related macular degeneration: the first reproducible common-variant association in a frequent disease, and the beginning of complex-trait genomics and polygenic scores.",
+      "people": [
+        "Gregory Hageman"
+      ]
+    },
+    {
+      "year": 2011,
+      "title": "Prenatal screening from a tube of the mother's blood",
+      "detail": "Sequencing of cell-free DNA in maternal plasma, resting on Dennis Lo's discovery that fetal DNA circulates there, becomes clinically available for the common aneuploidies; screening moves earlier and safer, and the meaning of a 'high-risk' result becomes the central counselling problem.",
+      "people": [
+        "Dennis Lo"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "Genome-edited babies, and a reaction",
+      "detail": "A research team in Guangzhou announces children born after CRISPR editing of embryos; the scientific community's repudiation, Chinese regulatory action and World Health Organization expert advice on governing human genome editing follow within months, making the germline question a matter of policy rather than opinion.",
+      "people": [
+        "He Jiankui",
+        "World Health Organization"
       ]
     }
   ],
   "references": [
     {
-      "title": "The Genetics Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the gene and the genome.",
-      "slug": "ref1"
+      "title": "Thompson & Thompson Genetics in Medicine",
+      "authors": "Robert L. Nussbaum, Roderick R. McInnes and Huntingdon F. Willard",
+      "year": 2016,
+      "note": "Eighth edition. The clinical spine of the subject: taking a three-generation history, recognising an inheritance pattern, choosing the right test and saying what its result means."
     },
     {
-      "title": "The Genetics Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the gene and the system.",
-      "slug": "ref2"
+      "title": "Emery's Elements of Medical Genetics and Genomics",
+      "authors": "Peter S. Turnpenny and Siamak F. Ellard",
+      "year": 2012,
+      "note": "Fourteenth edition. Clear on mechanisms and unusually good on recurrence-risk arithmetic and on counselling scenarios; the book to read before a genetics examination."
     },
     {
-      "title": "Clinical Genetics",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the genome and the practice.",
-      "slug": "ref3"
+      "title": "Human Molecular Genetics",
+      "authors": "Tom Strachan and Andrew Read",
+      "year": 2011,
+      "note": "Fourth edition. The mechanistic reference — chromatin, transcription, splicing, repair and the molecular basis of disease — with the diagrams worth redrawing from memory."
+    },
+    {
+      "title": "OMIM: Online Mendelian Inheritance in Man",
+      "authors": "McKusick-Nathans Institute, Johns Hopkins Medicine",
+      "year": 2024,
+      "note": "The continuing catalogue of genes and phenotypes, with the primary literature behind each entry. Use it to check whether a gene has an associated disease, and how firmly."
+    },
+    {
+      "title": "GeneReviews",
+      "authors": "University of Washington, Seattle (editors include Margaret P. Adam, Roberta A. Pagon and Stephanie E. Wallace)",
+      "year": 2024,
+      "note": "Peer-reviewed, continually updated chapters on individual genetic disorders: diagnosis, management and counselling. The first stop when a report names a condition you have not met."
+    },
+    {
+      "title": "Nature Reviews Disease Primers",
+      "authors": "Springer Nature",
+      "year": 2024,
+      "note": "Authoritative single-article primers on genetic and other diseases, current at publication and useful when a syndromic diagnosis needs its whole clinical picture at once."
     }
   ],
   "next": [

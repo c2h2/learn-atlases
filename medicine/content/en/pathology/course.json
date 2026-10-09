@@ -8,8 +8,9 @@
   "tagline": "Cell injury, inflammation, repair, haemodynamic disorders and neoplasia",
   "summary": "Pathology studies how disease alters cells and tissues. This course develops the general processes behind disease in every organ: cell injury and death, acute and chronic inflammation, healing and repair, oedema, thrombosis, embolism and shock, the biology and classification of cancer, environmental and nutritional disease, and the work of the pathologist.",
   "overview": [
-    "The cell, and the one that the system is for, is the one that the limit is for, and the one that the process is for. This course follows the cell and the one that the process is for, from the mechanism and the one that the limit is for, to the practice and the one that the pathology is for, and gives the method and the check that make it work.",
-    "We build the cell and the one that the process is for, from the process and the structure, and then study how the clinical and the pathology, and the one that the limit is for, are for."
+    "Pathology is the bridge science: it explains what injury does to cells, how the body responds, how repair goes wrong, and what cancer is — and it supplies the diagnoses on which treatment depends. This course teaches general pathology as mechanism, then the diagnostic craft of the surgical pathologist and cytopathologist.",
+    "Cell injury starts with the reversibility boundary: ATP failure, membrane and mitochondrial damage, calcium influx and the point of no return, necrosis versus apoptosis, and the adaptive responses — hypertrophy, hyperplasia, metaplasia, dysplasia and their clinical meanings (Barrett's oesophagus, cervical intraepithelial neoplasia). Acute inflammation follows the vascular and cellular events of the response, its mediators and systemic effects, and why exudates and abscesses behave as they do; chronic inflammation covers macrophages and lymphocytes, granulomas and fibrosis, and the modern view of chronic inflammation in atherosclerosis, obesity and ageing. Haemodynamic disorders: oedema, hyperaemia and congestion, thrombosis, embolism and infarction, disseminated intravascular coagulation, shock and the pathology of fluid and electrolyte disturbance as the tissue counterpart.",
+    "Neoplasia is treated twice — cancer biology (definitions, nomenclature, grading and staging, carcinogenesis: oncogenes, tumour suppressors, DNA-repair genes, epigenetics; hallmarks; epidemiology and prevention; paraneoplastic syndromes), then cancer diagnosis: biopsy and cytology, histological grading, immunohistochemistry, molecular tests, screening and tumour markers and their pitfalls. An environmental and nutritional pathology chapter covers physical and chemical injury, toxic injury and radiation; the last chapter teaches how to read a histology or cytology report, the significance of margins and sentinel nodes, and what a multidisciplinary meeting decides with them. Robbins is the spine; every mechanism is tied to a diagnosis a reader will meet."
   ],
   "prerequisites": [
     "cell-biochemistry",
@@ -17,11 +18,14 @@
     "genetics"
   ],
   "outcomes": [
-    "Explain the cell, and the one that the mechanism is for, in the limit",
-    "Explain the process, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the cell is for, in the limit",
-    "Outline the management, and the one that the process is for, in the limit",
-    "Recognise the state, and the one that the cell is for, in the limit"
+    "Describe the cellular adaptations to stress — hypertrophy, hyperplasia, atrophy, metaplasia, dysplasia — with examples and the clinical risk each carries.",
+    "Explain the mechanisms of reversible and irreversible cell injury (ATP failure, mitochondrial damage, calcium influx, membrane and cytoskeletal injury, oxidative stress) and distinguish necrosis from apoptosis in mechanism, morphology and consequences.",
+    "Describe the vascular and cellular events of acute inflammation, its mediators and systemic features, the outcomes (resolution, abscess, organisation, chronic inflammation), and the causes and clinical meanings of the acute-phase proteins and leucocyte changes.",
+    "Explain the structure and causes of granulomatous inflammation, the macrophage–lymphocyte axis of chronic inflammation, and the role of chronic inflammation in disease from tuberculosis and sarcoidosis to atherosclerosis.",
+    "Trace the haemodynamic disorders — oedema, congestion, thrombosis with Virchow's triad, embolism and infarction, DIC and the forms of shock — from mechanism to clinical syndrome.",
+    "Define neoplasia and its nomenclature, contrast differentiation, grading and staging, and explain the multistep molecular basis of carcinogenesis: oncogenes, tumour suppressors, apoptotic and repair genes, and environmental carcinogens.",
+    "Summarise the hallmarks of cancer and how each is therapeutically targeted, and interpret tumour markers, screening programmes and paraneoplastic syndromes with their pitfalls.",
+    "Follow a specimen from biopsy to report: fixation, processing, histology, special stains, immunohistochemistry and molecular pathology, and read a report for grade, stage, margin and predictive-marker information."
   ],
   "chapters": [
     {
@@ -93,27 +97,72 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the cell is for, is the one that the process is for, of the structure.",
+      "year": 1761,
+      "title": "The seats and causes of diseases",
+      "detail": "Giambattista Morgagni, professor at Padua, publishes fifty cases in which he matched living symptoms to autopsy findings, relocating disease from the whole body to specific organs — the seat-of-disease era that physical diagnosis still maps.",
       "people": [
-        "Harvey"
+        "Giambattista Morgagni"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the cell is for, is the one that the process is for, of the process.",
+      "year": 1838,
+      "title": "Tissue chemistry begins",
+      "detail": "Matthias Schleiden and Theodor Schwann argue that all organisms are built of cells; within twenty years Rudolf Virchow's cellular pathology (1858) makes disease the behaviour of cells, and 'all cells from all cells' replaces spontaneous-generation thinking in medicine.",
       "people": [
-        "Lister"
+        "Matthias Schleiden",
+        "Theodor Schwann",
+        "Rudolf Virchow"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the cell is for, is the one that the process is for, of the mechanism.",
+      "year": 1867,
+      "title": "Seeing inflammation live",
+      "detail": "Julius Cohnheim observes leucocytes emigrating through mesenteric vessels in living tissue, proving that pus cells leave the blood — settling the old dispute about pus's origin and founding the cellular theory of inflammation that Metchnikoff then made into a defence system.",
       "people": [
-        "Koche"
+        "Julius Cohnheim"
+      ]
+    },
+    {
+      "year": 1876,
+      "title": "Cancer cells travel in the blood",
+      "detail": "Julius Cohnheim and Joseph Sandberg inject bone-marrow debris into the veins of rabbits and find embolus-like nodules in the lungs — the first experimental model of metastasis, making the circulation the road cancer takes and framing the seed-and-soil question that still drives tumour-biology research.",
+      "people": [
+        "Julius Cohnheim",
+        "Joseph Sandberg"
+      ]
+    },
+    {
+      "year": 1910,
+      "title": "Carcinoma of the rabbit",
+      "detail": "Johannes Fibiger claims a nematode causes stomach cancer, winning a Nobel Prize his successors quietly retract; but the episode drives experimental carcinogenesis — and by 1915 Yamagiwa and Ichikawa are producing skin cancer with tar, proving chemical carcinogenesis (with Chadwick's coal-tar work, and later the azo-dye liver cancers).",
+      "people": [
+        "Katsusaburo Yamagiwa",
+        "Koichi Ichikawa"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "Antibodies that see inside cells",
+      "detail": "Albert Coons attaches fluorescent dyes to antibodies, making proteins visible in tissue sections; immunohistochemistry becomes pathology's second eye — cytokeratins and lymphoid markers that decide a tumour's lineage when haematoxylin alone cannot.",
+      "people": [
+        "Albert Coons"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "Two hits",
+      "detail": "Alfred Knudson, studying retinoblastoma incidence, infers that the tumour needs two hits at one locus — a recessive cellular mechanism inherited dominantly — the logic that leads to the cloning of RB1 (1986) and the entire era of tumour-suppressor genes.",
+      "people": [
+        "Alfred Knudson"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "The hallmarks of cancer",
+      "detail": "Douglas Hanahan and Robert Weinberg reduce a thousand cancer facts to six capabilities — sustaining proliferation, evading growth suppressors, resisting death, enabling replicative immortality, inducing angiogenesis, invading and metastasising — and the organising language of modern cancer biology and its targeted therapies.",
+      "people": [
+        "Douglas Hanahan",
+        "Robert Weinberg"
       ]
     }
   ],

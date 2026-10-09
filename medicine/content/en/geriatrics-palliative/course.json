@@ -8,8 +8,9 @@
   "tagline": "Ageing and frailty, falls, delirium, polypharmacy, symptom control and care at the end of life",
   "summary": "An ageing population makes the care of older people central to medicine. This course covers ageing and frailty, comprehensive geriatric assessment, falls, delirium and dementia care, polypharmacy and deprescribing, and palliative care: symptom control, communication and care at the end of life.",
   "overview": [
-    "The patient, and the one that the system is for, is the one that the limit is for, and the one that the care is for. This course follows the patient and the one that the care is for, from the mechanism and the one that the limit is for, to the practice and the one that the geriatrics is for, and gives the method and the check that make it work.",
-    "We build the patient and the one that the care is for, from the process and the structure, and then study how the clinical and the geriatrics, and the one that the limit is for, are for."
+    "Older patients are not young patients with more diseases: physiology loses reserve, presentations flatten to 'confusion' or a fall, several conditions and a dozen drugs interact, and the ward environment itself becomes a hazard. Geriatric medicine is the specialty of the multifactorial problem — the same symptoms arising from many causes at once — and its methods are comprehensive assessment, an interdisciplinary team, and honesty about goals. This course teaches the core syndromes: frailty and ageing, falls, delirium and dementia care, and polypharmacy.",
+    "Palliative medicine is presented as the other half of the same skill: relieving suffering when cure is no longer on the table, which is a positive treatment for its own sake and applies early in disease, not only in the last days. Chapters cover palliative care principles and prognostication, symptom control — pain and the WHO ladder logic, breathlessness, nausea, delirium, fatigue — and end-of-life care: the dying patient, anticipatory prescribing, the last hours, bereavement, and the legal and ethical framework around advance planning and decisions to limit treatment.",
+    "The approach is practical and quantitative where possible: the assessment tools (AMT, 4AT, FRAX, Rockwood scale), falls-risk factors and multifactorial intervention, delirium screening, the deprescribing process, opioid conversion arithmetic and laxative prophylaxis, and the epidemiology of ageing that makes this the largest growing patient group in every hospital. All cases are fictional and all management statements describe principles under current guidance."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -17,11 +18,15 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Explain the patient, and the one that the mechanism is for, in the limit",
-    "Explain the care, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the patient is for, in the limit",
-    "Outline the management, and the one that the care is for, in the limit",
-    "Recognise the state, and the one that the patient is for, in the limit"
+    "Describe the physiology of ageing and its clinical consequences (reduced reserve, altered pharmacokinetics, atypical presentation), and use frailty concepts and assessment tools to stratify risk and plan care.",
+    "Carry out a comprehensive geriatric assessment across physical, cognitive, psychological and social domains, and formulate a multifactorial problem list and management plan.",
+    "Assess an older person after a fall — intrinsic, extrinsic and drug causes, syncope versus mechanical fall — and outline multifactorial prevention including strength and balance training and home hazard reduction.",
+    "Distinguish delirium from dementia and depression, apply a screening tool, identify and treat precipitants, and describe prevention and non-pharmacological management of delirium on general wards.",
+    "Explain the epidemiology and subtypes of dementia, the principles of dementia care including behavioural and psychological symptoms, and caregiver support.",
+    "Apply the logic of polypharmacy: identify prescribing cascades and potentially inappropriate medicines, conduct a structured medication review, and deprescribe safely with monitoring.",
+    "Define palliative care and its timing, discuss goals-of-care conversations and prognosis, and describe multidisciplinary and advance care planning practice.",
+    "Manage the common palliative symptoms — pain (analgesic ladder and opioid arithmetic including conversions and equi-antianalgesic dosing), breathlessness, nausea, secretions, constipation, itching and fatigue — and recognise the recognisable dying phase with its anticipatory symptom plan.",
+    "Discuss death, after-death care, bereavement support and the legal essentials (verification, certification, and the distinction between symptom control, sedation and hastening death under relevant law)."
   ],
   "chapters": [
     {
@@ -85,27 +90,70 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the patient is for, is the one that the care is for, of the structure.",
+      "year": 1906,
+      "title": "A disease of the cortex described",
+      "detail": "Alois Alzheimer presents the case of Auguste D. — presenile dementia with disorientation, memory failure and, at autopsy, cortical plaques and neurofibrillary tangles — turning 'second childhood' from a descriptive phrase into a pathological entity that would take a century to begin to explain.",
       "people": [
-        "Harvey"
+        "Alois Alzheimer",
+        "Emil Kraepelin"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the patient is for, is the one that the care is for, of the process.",
+      "year": 1909,
+      "title": "Geriatrics named",
+      "detail": "Ignatz Nascher, a New York physician, coins 'geriatrics' and argues that the ailments of old age form a coherent field requiring its own expertise, at a time when the pauper wards where most elderly people were cared for offered them little of any kind.",
       "people": [
-        "Lister"
+        "Ignatz Nascher"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the patient is for, is the one that the care is for, of the mechanism.",
+      "year": 1958,
+      "title": "Longitudinal study of ageing",
+      "detail": "Nathan Shock's Baltimore Longitudinal Study of Aging begins, following healthy volunteers of all ages with repeated physiological measurement — the design that established which functions decline with years and which with disease, and the model for a hundred cohort studies of ageing.",
       "people": [
-        "Koche"
+        "Nathan Shock"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "Measuring what patients can do",
+      "detail": "Sidney Katz's index of activities of daily living, developed with the geriatricians of the Jewish Geriatric Home in Brooklyn, gives the field its first standard outcome — can she dress, walk, eat, toilet, bathe, transfer — and makes functional assessment as routine as blood pressure.",
+      "people": [
+        "Sidney Katz"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "St Christopher's Hospice",
+      "detail": "Nurse-physician-social worker Cicely Saunders opens St Christopher's Hospice in Sydenham with the then-radical ideas that total pain — physical, psychological, social, spiritual — can be controlled by a dedicated team, that hospice is a place to live, and that dying need not mean dying alone in an unscheduled bed.",
+      "people": [
+        "Cicely Saunders"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "Hospice becomes an entitlement",
+      "detail": "The US Medicare hospice benefit, won after Florence Wald’s Connecticut Hospice (1974) proved the model's viability, makes interdisciplinary palliative care reimbursed rather than charitable; the specialty's growth in North America follows, alongside the hospice movements already spreading from Britain.",
+      "people": [
+        "Florence Wald"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "The get-up-and-go test",
+      "detail": "After George Isaacs's work on the post-fall syndrome and his 'get up and go' bedside test, Anne Podsiadlo and Susan Richardson formalise the Timed Up and Go: rise, walk three metres, turn, sit — with a measurable cut-off for fall risk, one of the rare bedside tests that predicts a hard outcome.",
+      "people": [
+        "Anne Podsiadlo",
+        "Susan Richardson",
+        "George Isaacs"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Frailty operationalised",
+      "detail": "Linda Fried and colleagues, using the Women's Health and Aging Studies cohorts, define the frailty phenotype — weight loss, exhaustion, weakness, slowness, low activity — and show it predicts falls, institutionalisation and death; geriatric medicine acquires a screenable syndrome rather than a vibes-based description.",
+      "people": [
+        "Linda Fried"
       ]
     }
   ],

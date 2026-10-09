@@ -8,16 +8,23 @@
   "tagline": "Cells, membranes, proteins, metabolism, nutrition and the molecular basis of disease",
   "summary": "Every disease begins with a change in cells and molecules. This course covers cell structure and membranes, proteins and enzymes, the metabolism of carbohydrates, lipids and amino acids, nutrition, gene expression, cell signalling and the cell cycle, always linking biochemistry to clinical medicine.",
   "overview": [
-    "The cell, and the one that the system is for, is the one that the limit is for, and the one that the molecule is for. This course follows the cell and the one that the molecule is for, from the mechanism and the one that the limit is for, to the practice and the one that the cell is for, and gives the method and the check that make it work.",
-    "We build the cell and the one that the molecule is for, from the process and the structure, and then study how the clinical and the cell, and the one that the limit is for, are for."
+    "Medicine is a science of cells. A patient's breathlessness, her sodium of 118 mmol/L, the insulin resistance of her liver and the blast cells in her blood film are all descriptions of what cells are failing to do. This course begins where the body actually is: with the compartments of a cell, the membranes that define them, and the molecules — proteins, lipids, sugars, nucleotides — that move through them and are made by them.",
+    "The first half is cell biology and biophysics. We look at how organelles work and what happens when one of them is missing an enzyme; why a lipid bilayer is an electrical insulator and what the cell has to spend to keep ions away from it; how a protein finds its shape, why misfolding is a disease mechanism, and what enzymes do when they are inhibited by a drug. The second half is metabolism: how glucose, fat and protein are broken down and rebuilt, how the body moves between the fed and the fasting state, what vitamins are for and what happens when they are absent, and how the information in DNA becomes a working protein under regulation.",
+    "Throughout, the aim is mechanism you can use. The clinical examples are chosen because they recur: the mitochondrial inheritance that explains a family in which diabetes, deafness and stroke cluster on one side; the receptor and second-messenger logic behind an inhaler, a beta-blocker and an antipsychotic; the enzyme kinetics that explain a drug interaction and a urine test; the metabolic chemistry that explains why a child with an inborn error of metabolism is well until a febrile illness unmasks it.",
+    "Biochemistry is also the course in which good habits of quantity begin. Estimating how much ATP the brain uses, how big a diffusion distance is, or what fraction of filtered glucose a transporter can recover is the arithmetic that later makes a blood gas, a clearance or a drug dose comprehensible rather than memorised."
   ],
   "prerequisites": [],
   "outcomes": [
-    "Explain the cell, and the one that the mechanism is for, in the limit",
-    "Explain the molecule, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the cell is for, in the limit",
-    "Outline the management, and the one that the molecule is for, in the limit",
-    "Recognise the state, and the one that the cell is for, in the limit"
+    "Describe the structure and function of the major organelles, and predict which tissues are affected when a given organelle fails.",
+    "Explain how the lipid bilayer, channels, carriers and pumps determine what crosses a membrane, and use the Nernst equation and Fick's law in simple physiological cases.",
+    "Relate protein structure at each level to folding, and explain how misfolding, aggregation and defective sorting cause disease.",
+    "Derive and use the Michaelis–Menten equation, and distinguish competitive, non-competitive and irreversible inhibition on a plot of rate against substrate concentration.",
+    "Trace the pathways of glycolysis, the citric acid cycle, oxidative phosphorylation, gluconeogenesis, glycogen metabolism, fatty-acid oxidation and synthesis, the urea cycle and ketone-body formation, naming the regulated steps and their hormones.",
+    "Explain how insulin and glucagon switch the body between the fed, fasting and starved states, and interpret the biochemistry of diabetic ketoacidosis and of a hypoglycaemic episode.",
+    "State the functions, deficiency states and toxicity of the major vitamins and minerals, and recognise the corresponding clinical and biochemical patterns.",
+    "Describe DNA replication and repair, transcription, translation and the principal mechanisms of regulation of gene expression, and link specific defects to disease.",
+    "Outline receptor and second-messenger signalling, the control of the cell cycle, and the difference between apoptosis and necrosis.",
+    "Calculate energy yield, osmolality, dilution and diffusion problems from first principles, and say which approximations are being made."
   ],
   "chapters": [
     {
@@ -94,51 +101,155 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the cell is for, is the one that the molecule is for, of the structure.",
+      "year": 1665,
+      "title": "Cells are seen for the first time",
+      "detail": "Looking at cork through a microscope in *Micrographia*, Robert Hooke sees a honeycomb of little boxes and calls them cells. Leeuwenhoek's lenses soon reveal living cells — sperm, red cells and bacteria — moving in a drop of water.",
       "people": [
-        "Harvey"
+        "Robert Hooke",
+        "Antonie van Leeuwenhoek"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the cell is for, is the one that the molecule is for, of the process.",
+      "year": 1839,
+      "title": "Every animal is made of cells",
+      "detail": "Matthias Schleiden argues that plants are composed of cells and Theodor Schwann extends the claim to animals in *Microscopical Researches*; the cell becomes the accepted unit of structure, and pathology acquires a place to locate disease.",
       "people": [
-        "Lister"
+        "Matthias Schleiden",
+        "Theodor Schwann"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the cell is for, is the one that the molecule is for, of the mechanism.",
+      "year": 1855,
+      "title": "Every cell from a cell",
+      "detail": "Rudolf Virchow's phrase *omnis cellula e cellula* closes the argument that organisms can arise spontaneously, and his Cellular Pathology of 1858 makes disordered cell function the explanation of disease.",
       "people": [
-        "Koche"
+        "Rudolf Virchow"
+      ]
+    },
+    {
+      "year": 1897,
+      "title": "Fermentation without cells",
+      "detail": "Eduard Buchner grinds yeast with sand and finds that the cell-free extract still turns sugar into alcohol and carbon dioxide. Fermentation is therefore chemistry carried out by molecules — the founding act of biochemistry, and a Nobel Prize in 1907.",
+      "people": [
+        "Eduard Buchner"
+      ]
+    },
+    {
+      "year": 1926,
+      "title": "An enzyme is a protein",
+      "detail": "James B. Sumner crystallises urease from jack bean and shows the crystals are enzymatically active protein, displacing the view that enzymes were invisible 'ferments' attached to cells; lectin and pepsin are purified by comparable methods shortly afterwards.",
+      "people": [
+        "James B. Sumner"
+      ]
+    },
+    {
+      "year": 1937,
+      "title": "The citric acid cycle",
+      "detail": "Working with pigeons' breast muscle, which respires intensely, Hans Krebs shows that a cyclic sequence of reactions oxidises acetate to carbon dioxide, and identifies most of its intermediates; Fritz Lipmann's coenzyme A, described in 1945, supplies the acetate that enters it.",
+      "people": [
+        "Hans Krebs",
+        "Fritz Lipmann"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "One gene, one enzyme",
+      "detail": "George Beadle and Edward Tatum use X-rays and nutritional mutants of bread mould to argue that a gene acts by specifying a single enzyme. The relation later needs correcting — genes specify polypeptides — but the causal chain from DNA to metabolism to phenotype is established.",
+      "people": [
+        "George Beadle",
+        "Edward Tatum"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "A protein is sequenced, and a double helix proposed",
+      "detail": "Frederick Sanger determines the amino-acid sequence of insulin, proving that a protein has a defined, genetically determined structure; in the same year Watson and Crick propose the base-paired structure of DNA, with Rosalind Franklin's diffraction data.",
+      "people": [
+        "Frederick Sanger",
+        "James Watson",
+        "Francis Crick",
+        "Rosalind Franklin"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "Chemiosmosis",
+      "detail": "Peter Mitchell proposes that mitochondria and chloroplasts make ATP by pumping protons across a membrane and letting them flow back through ATP synthase, an idea ridiculed for a decade before it was proved and awarded the 1978 Nobel Prize.",
+      "people": [
+        "Peter Mitchell"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "Second messengers",
+      "detail": "Earl Sutherland shows that adrenaline and glucagon act at the cell surface and raise an intracellular messenger, cyclic AMP, so that a hormone need not enter the cell at all; the receptor–messenger–effector scheme becomes the framework of endocrinology and of much pharmacology.",
+      "people": [
+        "Earl Sutherland"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "The signal hypothesis",
+      "detail": "Günter Blobel and David Sabatini propose that secreted proteins carry an N-terminal signal sequence that directs the ribosome to the endoplasmic reticulum, and in 1975 Blobel and David Dobberstein demonstrate co-translational targeting in a cell-free system; protein traffic becomes a problem of addresses, for which Blobel receives the 1999 Nobel Prize.",
+      "people": [
+        "Günter Blobel",
+        "David Sabatini",
+        "David Dobberstein"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Tagged for destruction",
+      "detail": "Avram Hershko, Aaron Ciechanover and Irwin Rose work out the ATP-dependent pathway in which a small protein, ubiquitin, is conjugated to substrates and marks them for the proteasome — the mechanism that now explains the action of a myeloma drug and fills a literature of its own in autoimmunity and transplant biology.",
+      "people": [
+        "Aaron Ciechanover",
+        "Avram Hershko",
+        "Irwin Rose"
       ]
     }
   ],
   "references": [
     {
-      "title": "The Cell Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the cell and the molecule.",
-      "slug": "ref1"
-    },
-    {
-      "title": "The Cell Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the cell and the system.",
-      "slug": "ref2"
-    },
-    {
-      "title": "Clinical Cell",
-      "authors": "Reference",
+      "title": "Harper's Illustrated Biochemistry",
+      "authors": "Robert K. Murray, Daryl K. Granner and Victor W. Rodwell",
       "year": 2018,
-      "note": "A practical treatment of the molecule and the practice.",
-      "slug": "ref3"
+      "note": "Thirty-first edition. Concise pathway-by-pathway accounts, with the short clinical boxes that make the regulated steps worth remembering."
+    },
+    {
+      "title": "Lippincott Illustrated Reviews: Biochemistry",
+      "authors": "Pamela C. Chiaverini and Bruce U. Finkle",
+      "year": 2021,
+      "note": "Eighth edition. The most readable of the illustrated reviews, and strong on enzyme deficiencies, hormones and the metabolic states; good for redrawing a pathway from memory."
+    },
+    {
+      "title": "Marks' Basic Medical Biochemistry: A Clinical Approach",
+      "authors": "Michael Lieberman and Mark D. Peet",
+      "year": 2022,
+      "note": "Sixth edition. Builds each topic from a patient problem, which is the right way to learn why the regulation of a pathway matters clinically."
+    },
+    {
+      "title": "Molecular Biology of the Cell",
+      "authors": "Bruce Alberts, Alexander Johnson, David Morgan and others",
+      "year": 2022,
+      "note": "Seventh edition. The reference for cell biology: membranes, the cytoskeleton, trafficking, signalling and the cell cycle, with figures worth copying."
+    },
+    {
+      "title": "Molecular Cell Biology",
+      "authors": "Harvey Lodish, Arnold Berk, Chris A. Kaiser and others",
+      "year": 2020,
+      "note": "Ninth edition. Fuller than Alberts on gene expression, DNA repair and proteomics: the place to check a mechanism when a textbook sentence is not enough."
+    },
+    {
+      "title": "Robbins and Cotran Pathologic Basis of Disease",
+      "authors": "Vinay Kumar, Abul K. Abbas, Jon C. Aster and Rebecca A. Feldman",
+      "year": 2021,
+      "note": "Tenth edition. Read the cell injury, adaptation and neoplasia chapters alongside this course: the same mechanisms, with the pathology named."
+    },
+    {
+      "title": "The Online Metabolic and Molecular Bases of Inherited Disease",
+      "authors": "Charles J. Valle and others (eds)",
+      "year": 2019,
+      "note": "The successor to Scriver's *OMMBID*: the definitive account of each inborn error, including the biochemistry of the diagnostic assay and the evidence for treatment."
     }
   ],
   "next": [

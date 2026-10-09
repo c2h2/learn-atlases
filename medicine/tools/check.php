@@ -24,6 +24,21 @@ foreach ($args as $a) {
     }
 }
 $targets = ['words' => 2500, 'examples' => 4, 'exercises' => 8, 'widgets' => 1, 'quizzes' => 1, 'core' => 3];
+// Generated filler left over from the curriculum skeleton. A lesson or course record holding any of
+// these has not been written yet, whatever its word count; see tools/CONTENT_GUIDE.md.
+$FILLER = [
+    'en' => ['/\bthe one that the \w+ is for\b/i', '/\b(?:is|are) for, is for\b/i', '/^This lesson defines the /m', '/The method, and the check, are the one for/'],
+    'zh' => ['/以及者/', '/者（[^）]*所对应的）/', '/就是者（/', '/^该课程定义/'],
+];
+$filler = function ($text, string $lang) use ($FILLER): bool {
+    $src = is_string($text) ? $text : json_encode($text, JSON_UNESCAPED_UNICODE);
+    foreach ($FILLER[$lang] ?? [] as $re) {
+        if (preg_match($re, (string) $src)) {
+            return true;
+        }
+    }
+    return false;
+};
 $errors = 0;
 $warns = 0;
 $E = function (string $where, string $msg) use (&$errors) { $errors++; echo "ERROR $where: $msg\n"; };
@@ -54,6 +69,9 @@ foreach ($courses as $slug => $c) {
         if (!in_array($p, $allSlugs, true)) {
             $E($where, "prerequisite '$p' is not a course");
         }
+    }
+    if ($filler($c, 'en')) {
+        $E($where, 'course record still holds generated filler (overview, outcomes, history or references) — rewrite those fields by hand');
     }
     if (count($c['overview'] ?? []) < 2) {
         $W($where, 'overview should have 2–4 paragraphs');
@@ -118,6 +136,11 @@ if (in_array('zh', $langs, true)) {
         foreach (array_diff(array_keys($ov), $allowed) as $k) {
             $E($where, "unexpected key '$k' (an overlay holds only the translated fields: " . implode(', ', $allowed) . ')');
         }
+        foreach (['title', 'full_title', 'tagline', 'summary', 'overview', 'outcomes', 'chapters', 'history', 'references'] as $k) {
+            if (isset($ov[$k]) && $filler($ov[$k], 'zh')) {
+                $E($where, "'$k' still holds generated filler — rewrite it by hand");
+            }
+        }
         foreach (['overview', 'outcomes', 'chapters', 'history', 'references'] as $k) {
             if (isset($ov[$k]) && count($ov[$k]) !== count($c[$k] ?? [])) {
                 $E($where, "'$k' has " . count($ov[$k]) . ' entries, the English has ' . count($c[$k] ?? []) . ' (lists are overlaid index by index)');
@@ -151,11 +174,20 @@ foreach ($langs as $lang) {
             if (!is_file($path)) {
                 if ($lang === 'en') {
                     ($strict ? $E : $W)($file, 'lesson not written yet');
+                } elseif (is_file(MA_CONTENT . "/en/$slug/{$ch['slug']}.md")) {
+                    $W($file, 'English lesson exists — the Chinese translation has not been written yet');
                 }
                 continue;
             }
             $doc = new MdDoc("$slug/{$ch['slug']}", (string)$ch['n'], true);
             $src = (string)file_get_contents($path);
+            if ($filler($src, $lang)) {
+                $E($file, 'lesson is generated filler — it has to be written by hand (see tools/CONTENT_GUIDE.md)');
+                if ($lang === 'en') {
+                    $enAnchors["$slug/{$ch['slug']}"] = [];
+                }
+                continue;
+            }
             md_render($src, $doc);
             foreach ($doc->errors as $e) {
                 $E("$file:{$e['line']}", $e['msg']);

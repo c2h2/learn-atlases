@@ -1,213 +1,177 @@
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The bone, and the one that the joint is for, is the one that the limit is for, of the muscle and the one that the nerve is for. This lesson defines the structure, and the one that the limb is for, of the bone and the one that the limit is for, and gives the nerve, and the one that the muscle is for. The method, and the check, are the one for the structure and the bone and the one that the limb is for.
+The nervous system's anatomy is the only regional anatomy a clinician uses to answer a question before examining the patient: where is the lesion. Every symptom of the neurology course — a hemiparesis, a sensory level, an internuclear ophthalmoplegia, a parkinsonian tremor — is a sentence in the structural grammar of this chapter: tracts and their crossings, nuclei and their segments, hemispheres and their arteries, and the skull's fixed box whose contents can swell only at someone's expense.
 
- The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The description, and the one that the bone is for, is the use, of the structure and the bone.
+This chapter covers the spinal cord and its tracts and syndromes, the brainstem and the cranial nerve nuclei, the cerebellum and basal ganglia and thalamus, the cerebral hemispheres and their arteries, the ventricles and CSF and herniations, and the meninges. The cranial nerves' peripheral courses are in [[anatomy/head-neck]]; the medicine of the diseases is in the [[nervous-system/stroke]]-and friends chapters.
 
- The bone, and the one that the joint is for, is the one that the limit is for, is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone.
+## Spinal cord: tracts and syndromes
 
- The muscle, and the one that the function is for, is the one that the limit is for, is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle.
-
- The nerve, and the one that the control is for, is the one that the limit is for, is for, in the branch. The description, and the one that the branch is for, is the use, of the branch and the nerve.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, is for, in the region. The description, and the one that the region is for, is the use, of the region and the vessel.
-
- The tendon, and the one that the muscle is for, is the one that the limit is for, is for, in the insertion. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
-
-::: definition Region {#def-reg}
-The **egion** is the one, and the one that the limb is for, that is the bone, is for, and the one that the limit is for. The **one**, and the one that the joint is for, is the one that the limit is for, is for, in the articulation and the one that the muscle is for. The description, and the one that the bone is for, is the use, of the structure and the bone, and the one that the limit is for.
+::: definition The cord's ascending and descending systems {#def-tracts}
+The cord is a butterfly of grey matter (anterior and posterior horns, lateral horn at thoracic levels — the sympathetic nucleus) around the central canal, wrapped in white columns. Three systems dominate the clinical exam. **Dorsal columns (fasciculi gracilis and cuneatus)**: large myelinated fibres ascend **ipsilaterally** to the medulla (nuclei gracilis and cuneatus), cross as the internal arcuate fibres, and rise as the medial lemniscus — carrying vibration, joint position and fine touch, and the sensory ataxia of their loss (positive Romberg, the stamping gait). **Lateral spinothalamic tract**: small fibres enter, ascend one or two segments in Lissauer's tract, synapse, and **cross in the anterior white commissure within a segment or two**, then ascend contralaterally — carrying pain and temperature; the crossing is why an **intracord** lesion (syrinx) destroys the crossing fibres at that level and gives a **cape-like, segmental, bilateral loss of pain and temperature with preserved dorsal-column touch**, and why an **extrinsic** compression produces a **sacral-sparing, ascending** sensory loss only as it grows across the lamination (sacral fibres are most peripheral). **Lateral corticospinal tract**: the pyramids of the medulla decussate (≈85%), so a lesion **above** the pyramidal decussation paralyses the **contralateral** body and a cord lesion paralyses **ipsilaterally** — with the tract's own lamination (cervical medial, sacral lateral) explaining why extrinsic compression again hits the legs first. **Anterior horn and root**: the lower motor neuron — flaccidity, wasting, fasciculations, lost reflexes; **spinocerebellar tracts** run the limb's unconscious proprioception in the lateral funiculus, and the **cord's own blood supply** (one anterior spinal artery, two posterolateral, with a critical T8–L1 watershed that aortic surgery threatens) is a vascular anatomy of its own.
 :::
 
-::: proposition Nerve {#prop-nerve}
-The **erve** is the one that the control is for, is for, in the branch.
-$$
-\text{motor}:\ \text{muscle},\ \text{sensory}:\ \text{skin}.
-$$
-and the one that the limb is for. The description, and the one that the branch is for, is the use, of the branch and the nerve. So the nerve, and the one that the limit is for, is the one that the branch, is for, and the innervation, and the one that the muscle is for.
+::: theorem Brown-Séquard: half a cord, two crossings, one diagnosis {#thm-sequard}
+A haemicord lesion at, say, T10 on the right produces: **ipsilateral** upper-motor-neuron weakness below the lesion (uncrossed corticospinal tract), **ipsilateral** loss of vibration and position (uncrossed dorsal column), a **segmental** lower-motor-neuron and dorsal-column sign at the level (the horn and root at T10), and **contralateral** pain-and-temperature loss beginning **a segment or two below** the lesion (the spinothalamic tract carries fibres that crossed in the commissure at the level they entered) — with a narrow ipsilateral band of all-modality loss at the level (posterior root). The pattern is the cord's wiring diagram tested in one patient; the commonest real causes are not the knife but disc, tumour, and demyelination.
 :::
 
-::: proposition Vessel {#prop-vessel}
-The **essel** is the one that the supply is for, is for, in the region.
-$$
-\text{artery}: \text{supply},\ \text{vein}: \text{return}.
-$$
-and the one that the region is for. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vessel, and the one that the limit is for, is the one that the region, is for, and the circulation, and the one that the limb is for.
+::: proof
+Every element of the syndrome is a crossing placed in space. The weakness is ipsilateral because the corticospinal fibres crossed in the **medulla**, a full segment-count above the cord; the sensory ataxia is ipsilateral because the dorsal columns do not cross until the **medulla's** nuclei — the two deficits share a side because the cord has not yet received the crossover. The pain-and-temperature loss is **contralateral and starts below the lesion** because the spinothalamic tract is a column of **already-crossed** second-order fibres; the fibres entering at the level of the lesion are still crossing in the anterior white commissure at that moment, which is why the contralateral spinothalamic deficit begins one or two segments **below** the anatomical lesion and why the segment of the lesion itself loses pain sensation **bilaterally** (the crossing fibres of both sides are cut — the "segmental" band that, if it affects a limb's segments bilaterally and centrally, is the **syringomyelic cape**). The Brown-Séquard patient in practice — classically a disc fragment, a tumour, or multiple sclerosis — shows a mixed and incomplete picture, because real lesions do not read textbooks' sagittal sections; but the incomplete picture is still read in the same syntax: **which side is weak, which side does not feel pin-prick, where is the band** — three answers that localise a cord lesion to a side and a segment before any imaging.
 :::
 
- The structure, and the one that the limb is for, is the one that the bone is for. The joint, and the one that the articulation is for, is the one that the limit is for, in the movement.
-
- The joint, and the one that the articulation is for, is the one that the limit is for, in the movement. The description, and the one that the articulation is for, is the use, of the articulation and the joint.
-
- The muscle, and the one that the contraction is for, is the one that the limit is for, in the function. The description, and the one that the function is for, is the use, of the function and the muscle.
-
- The nerve, and the one that the branch is for, is the one that the limit is for, in the control. The description, and the one that the branch is for, is the use, of the branch and the nerve.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel.
-
- The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
-
- The membrane, and the one that the joint is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane.
-
- The ligament, and the one that the joint is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament.
-
-## Worked cases
-
-::: example The bone, and the articulation {#ex-bone}
-A clinical note locates the finding at the articulation described.
+::: example The diabetic feet that stamp, and the hands that fumble in the dark {#ex-sacd}
+A 68-year-old metformin user has three months of unsteady, stamping gait, worse when washing in the shower with eyes closed, numb clumsy fingers, and glossitis; haemoglobin 96 g/L with MCV 112 fL.
 ::: solution
-The bone, and the one that the articulation is for, is the one that the limit is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone. For the articulation, and the one that the bone is for, the joint, and the one that the limit is for, is the one that the movement is for, is for.
+The picture is **subacute combined degeneration** — vitamin B12 deficiency damaging the **dorsal columns** (the sensory ataxia, the Romberg, the dark-and-wet-surface worsening — the visual substitution that fails when vision closes) and the **lateral corticospinal tracts** (the "combined": added spasticity, brisk jaw— no, brisk knee and ankle jerks with extensor plantars, and in late cases the anterior horn's contribution giving mixed flaccidity in the legs). The blood picture is the same lesion's other half — megaloblastic change from the folate-cycle arrest that B12's methionine-synthase role prevents — and the aetiology matters: metformin-associated malabsorption, pernicious anaemia, gastric surgery, vegan diet without supplementation. Confirmation: serum B12 (and methylmalonic acid and homocysteine, both raised in deficiency), the anti-intrinsic-factor and anti-parietal-cell antibodies, and the cord's MRI showing dorsal-column T2 signal — the anatomy making radiology. Treatment is B12 replacement with the neurological rule that matters to the patient: **treatment halts the march but the deficits recover only partially**, which is why the neurological ceiling is assessed early and why neurological symptoms are an indication for parenteral repletion regardless of the haemoglobin number.
 :::
 :::
 
-::: example The muscle, and the contraction {#ex-muscle}
-A person presents with a deficit that localises to the muscle examined.
+## Brainstem: the rule of fours and the crossed syndromes
+
+::: definition The brainstem's layout {#def-brainstem}
+The brainstem is the brainstem's nuclei arranged around the ventricle in **longitudinal columns**: **medially** — the somatic motor column (nuclei of III, IV, XII and the salivatory/lacrimal general-visceral efferents near them), the corticospinal tract (basis pedunculi, basis pontis, pyramids), the medial lemniscus, and the central tegmental tracts; **laterally** — the sensory columns (spinothalamic tract, spinal trigeminal nucleus and tract, the cochlear and vestibular nuclei, the sympathetic fibres running with them) and the cerebellar peduncles. The **rule of fours** organises the levels: at each of four transverse levels (midbrain, pons, caudal pons, medulla) the **four midline structures** (motor nuclei of the cranial nerves at that level, the medial lemniscus, the corticospinal tract, the IV-nucleus at the caudal level) and the **four lateral structures** (spinothalamic tract, trigeminal nucleus and tract, sympathetic fibres, the vestibular/cochlear nuclei and peduncles) fail in predictable combinations. Because the cranial nerves at each level are **above or at the level of the corticospinal tract's crossing**, a single brainstem lesion produces **crossed (alternating) deficits: cranial-nerve signs on the side of the lesion, body signs on the opposite side** — the signature that separates brainstem from hemisphere and is the reason the phrase "crossed signs" should send the clinician's mind to the brainstem before the cortex.
+:::
+
+::: example The stuttering, clumsy hand that is not a stroke's usual picture {#ex-lateral-medullary}
+A 61-year-old hypertensive wakes with vertigo and vomiting, a hoarse voice, difficulty swallowing with coughing, loss of pain and temperature on the left half of the face, loss of pain and temperature on the right half of the body, a drooping left eyelid with a small pupil, and left-sided limb incoordination. Strength in the limbs is normal.
 ::: solution
-The muscle, and the one that the contraction is for, is the one that the limit is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle. For the contraction, and the one that the muscle is for, the nerve, and the one that the limit is for, is the one that the branch is for, is for.
+This is **lateral medullary (Wallenberg) syndrome** — the posterior inferior cerebellar artery (or vertebral) territory, and the rule of fours' lateral set plus the nearby nucleus ambiguus: **vestibular nuclei** (vertigo, vomiting, the nystagmus), **inferior cerebellar peduncle** (ipsilateral ataxia), **spinothalamic tract** (contralateral body pain-temperature loss), **spinal trigeminal nucleus and tract** (ipsilateral facial pain-temperature loss — the crossed sensory pattern the brainstem's calling card), **descending sympathetic fibres** (ipsilateral Horner's), **nucleus ambiguus** (ipsilateral palatal and laryngeal paralysis — the hoarse, nasal voice, the coughing swallow, the loss of the gag), with **corticospinal tract and medial lemniscus spared** because they lie medially — hence the normal strength and preserved vibration. The aspiration risk is the immediate nursing problem (the swallow assessment is the first investigation), the vertigo's symptom control the second, and the stroke work-up — occluded vertebral, the neck's imaging, thrombophilia at age, the vascular risk factor ladder — the prevention. The localisation sentence to keep: **crossed pain-temperature loss (ipsilateral face, contralateral body) with bulbar signs and Horner's, strength preserved, is the lateral medulla**, and no other structure gives that combination.
 :::
 :::
 
- The structure, and the one that the limb is for, is the one that the bone is for. The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle.
+The brainstem's other classics read the same columns. **Medial medullary syndrome** (anterior spinal artery/vertebral branches): contralateral hemiparesis (pyramid), contralateral loss of position and vibration (medial lemniscus), and **ipsilateral tongue deviation to the lesion side** (XII) — "alternating hypoglossal hemiplegia". **Midbrain — Weber** (posterior cerebral branches): ipsilateral **III palsy** (the down-and-out eye, ptosis, the fixed dilated pupil — the pupil rule in [[anatomy/head-neck]]) with **contralateral hemiparesis** (cerebral peduncle); a red on the medial longitudinal fasciculus gives the **internuclear ophthalmoplegia** — the ipsilateral eye will not adduct on lateral gaze with a beating abducting fellow eye, and bilateral INO in a young patient is multiple sclerosis until proven otherwise. **Pons — Millard-Gubler and the lateral pontine syndromes**: the facial nucleus or its fascicle joins the corticospinal tract, giving **alternating facial paralysis with contralateral hemiparesis**, and the middle cerebellar peduncle, the trigeminal nuclei and the abducens nucleus (the latter destroying all ipsilateral horizontal gaze — the PPRF's neighbour) populate the level's signs. The **reticular formation and its ascending projections** (the noradrenergic locus coeruleus, the serotonergic raphe, the histaminergic tuberomammillary body, the cholinergic pedunculopontine-laterodorsal tegmentum) are the anatomy of consciousness, and bilateral tegmental dysfunction — or its diffuse metabolic suppression — is coma's structural counterpart in [[nervous-system/stroke]].
 
- The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
+## Cerebellum, basal ganglia, thalamus
 
- The membrane, and the one that the lining is for, is the one that the limit is for, in the joint. The description, and the one that the lining is for, is the use, of the lining and the membrane.
+::: definition The cerebellum and its signs {#def-cerebellum}
+The cerebellum modulates movement **ipsilaterally** (its output crosses twice — superior cerebellar peduncle decussation to the contralateral red nucleus and thalamus, then the descending projection — so a hemisphere lesion signs the same side). Its lesions give **hypotonia, intention tremor, dysdiadochokinesia, pendular reflexes, decomposed and overshooting movement, staccato or scanning speech, and nystagmus**, with limb signs from the hemisphere and **truncal ataxia and gait ataxia from the vermis and flocculonodular lobe (the vestibulocerebellum, whose lesion gives downbeat nystagmus and the titubation)**; the child's midline tumour (medulloblastoma, ependymoma of the fourth ventricle) presents with ataxia and the raised intracranial pressure of the aqueduct's or fourth ventricle's obstruction — the two halves of the cerebellum's clinical pair: coordination and the posterior fossa's arithmetic of space.
+:::
 
- The ligament, and the one that the bond is for, is the one that the limit is for, in the joint. The description, and the one that the bond is for, is the use, of the bond and the ligament.
+The **basal ganglia** — striatum (caudate and putamen), external and internal globus pallidus, subthalamic nucleus, substantia nigra pars compacta and reticulata — form the loops that select and gain-control cortical motor programmes; their lesions are **hypokinetic-rigid (the nigrostriental dopamine loss of parkinsonism — resting tremor, rigidity, bradykinesia, postural instability; see [[nervous-system/movement-disorders]])** or **hyperkinetic (subthalamic nucleus lesion → contralateral hemichorea-hemiballism; striatal patches and strokes → chorea, dystonia, and the movement disorders' whole pharmacology of dopamine's balance)**. The **thalamus** is the cortex's gateway — **VPL** (medial lemniscus and spinothalamic input from the body) and **VPM** (trigeminal), the pulvinar and lateral posterior nuclei (association), the anterior and lateral nuclei (limbic and cerebellar loops), and the intralaminar nuclei (arousal, and the site of the strategic infarct that mimics the disorders of consciousness); its lesions give **contralateral sensory loss of all modalities** (the medial lemniscus and spinothalamic tract have converged by the midbrain) and the **thalamic pain syndrome** — central post-stroke pain, the deafferentation burn that teaches why pain has a cortex as well as a receptor.
 
- The branch, and the one that the nerve is for, is the one that the limit is for, in the control. The description, and the one that the control is for, is the use, of the nerve and the branch.
+## Cerebrum: cortex, dominance, arteries
 
-::: example The ligament, and the bond {#ex-ligament}
-A description of the joint notes the stabilising bond described.
+::: definition The hemispheres and their faces {#def-cortex}
+The **primary motor cortex** (precentral gyrus, the face's representation lateral and inferior, the leg's medial in the paracentral lobule) and the **primary sensory cortex** (postcentral gyrus, the same homunculus) are supplied at their summit by the **anterior cerebral arteries** (the leg and the micturition centre) and on their lateral face by the **middle cerebral** (the face and arm, and in the dominant hemisphere Broca's area in the inferior frontal gyrus and Wernicke's in the superior temporal, whose vascular and functional separation is the aphasia syndromes' anatomy). The **occipital lobe** (calcarine cortex, the macula represented posteriorly — the reason macular sparing accompanies occipital infarcts) is **posterior cerebral**; the temporal lobe's superior surface is the auditory radiations' land and Meyer's loop's detour (the temporal lobe's "pie in the sky" — contralateral homonymous superior quadrantanopia), against the parietal lobe's optic radiations ("pie on the floor").
+:::
+
+::: theorem Each artery's stroke is a syndrome because the cortex's geography is functional {#thm-arteries}
+**ACA**: contralateral leg weakness and sensory loss, abulia and grasp reflexes, urinary incontinence — the medial strip. **MCA (superior division)**: contralateral face-arm weakness, gaze preference **towards** the lesion (the frontal eye field drives the eyes to the contralateral field, so a destructive lesion lets them deviate to the sick side), and — dominant hemisphere — Broca's aphasia. **MCA (inferior division)**: Wernicke's aphasia with superior quadrantanopia, or — non-dominant — **hemispatial neglect**, anosognosia, dressing apraxia. **MCA (stem/proximal)**: all of it plus hemianopia and the dense hemiplegia. **PCA**: contralateral homonymous hemianopia with macular sparing, and — dominant side — alexia with agraphia when the splenium joins the left occipital story, thalamic and midbrain signs when the deep branches go. **Border zones (watershed infarcts between ACA–MCA–PCA)**: bilateral shoulder-and-hip "man-in-the-barrel" weakness and the cognitive-visual disconnections of hypoperfusion — the hypotension's own anatomy.
+:::
+
+::: proof
+The syndromes' logic is two maps superimposed: the homunculus and the fibre tracts. The **eye deviation** follows the frontal eye field's crossed projection: a right-hemisphere infarct destroys the drive that turns the eyes left, so the gaze rests towards the lesion (and away from the paralysed side) — while a **pontine** lesion (the PPRF or abducens nucleus, the final common pathway of horizontal gaze, already past the decussation) turns the eyes **away from the lesion and towards the hemiplegic side** — the same sign mechanism read at two levels, which is why "wrong-way eyes" in a brainstem syndrome is a localisation clue and not a puzzle. **Neglect** is a right-parietal (and its frontal and cingulate network) disease — the patient does not attend to the left, denies the deficit, and draws the clock's numbers on the right; **anosognosia** and confabulation are its relatives, not denial in the psychological sense, and the distinction belongs in the ward round. **Aphasia**'s localisation follows the dominant temporal and frontal language fields: Broca's is non-fluent, effortful, agrammatic with comprehension relatively intact (and often a right inferior frontal sign because the face and arm's cortex neighbours the area — hence the classic aphasic hemiplegia); Wernicke's is fluent, empty, with paraphasia and impaired comprehension and no weakness (the lesion is lateral-inferior and spares the motor strip); conduction aphasia — repetition disproportionately lost — is the arcuate fasciculus between them. The **alexia without agraphia** of the left PCA territory is the disconnection argument made clinical: the words arrive in the right occipital cortex, cannot cross the infarcted splenium, and never reach the left hemisphere's language areas — and the writing is spared because the language output areas are intact. Each finding is the same theorem read twice: the brain is a map, and the arteries parcel the map.
+:::
+
+::: example The headache that is not a migraine {#ex-uncus}
+A 24-year-old is hit on the right temple, is briefly dazed, then talks normally for two hours; he then vomits, becomes confused, and the right pupil dilates and stops reacting; the left arm and leg grow weak.
 ::: solution
-The ligament, and the one that the bond is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament. For the bond, and the one that the ligament is for, the bone, and the one that the limit is for, is the one that the articulation is for, is for.
+This is the **extradural (epidural) haematoma with uncal herniation** — the middle meningeal artery torn against the temporal bone at the **pterion** (the thinnest point of the skull, whose fracture the plain films classically showed crossing the groove), the **lucid interval** of one to six hours before the expanding clot's intracranial pressure crosses a threshold, and then the herniation triad: the **ipsilateral fixed dilated pupil** (the uncus compressing III against the tentorial edge — the parasympathetic surface fibres first, the pupil-involving rule again), **contralateral hemiparesis** (the cerebral peduncle compressed — and occasionally **ipsilateral** when the contralateral peduncle is crushed against the tentorium, Kernohan's notch, the false localising sign that makes the hemiparesis side unreliable), and the **progressive obtundation** of the midbrain reticular formation losing its ascending drive. Management is the clock: immediate CT, immediate neurosurgical evacuation (craniotomy and the artery's coagulation, now often with middle meningeal embolisation for the chronic subdural's cousins), and airway and osmolar control on the way. The chapter's point for the emergency room: **a blow to the temple with any loss of consciousness and any pupil change is a scan, not a diagnosis of migraine or drunkenness** — extradural haematoma kills young people who were talking an hour before, and the anatomy of the pterion and the third nerve is the reason.
 :::
 :::
 
-::: example The membrane, and the lining {#ex-membrane}
-A clinical note describes the lining of the joint in question.
+::: example The morning headaches of a seven-year-old {#ex-posterior-fossa}
+A child has three weeks of early-morning headaches that ease by noon, two days of vomiting, and a new unsteadiness; on examination she sits with her head tilted, is broad-based, and has left-sided dysmetria and papilloedema.
 ::: solution
-The membrane, and the one that the lining is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane. For the lining, and the one that the membrane is for, the joint, and the one that the limit is for, is the one that the articulation is for, is for.
+The combination is a **posterior fossa mass until MRI proves otherwise**, and both halves of the syndrome are this chapter's anatomy. The **vermis and cerebellar hemisphere** give the truncal and limb ataxia and the dysmetria; the **fourth ventricle**, millimetres away, is compressed or invaded (medulloblastoma arises from the vermis's rhombic lip, ependymoma from the ventricle's floor), and the obstructed CSF pathway gives **raised intracranial pressure** — the morning headaches (overnight hypoventilation raises CO₂ and cerebral blood flow, the Monro-Kellie curve's daily rehearsal), the vomiting, the papilloedema, and the sixth-nerve palsy that may come and go (the nerve's long intracranial course makes it the pressure's false localiser). The head tilt asks to be checked for a posterior fossa tumour in a child, not labeled torticollis; and the fundus must be examined before any lumbar puncture — the tonsillar-herniation rule. Management is paediatric neurosurgical: the MRI (with the whole neuraxis for medulloblastoma's drop metastases through the fourth ventricle's outlet and the spinal subarachnoid space), the steroids and acetazolamide-free bridge to surgery, and the posterior fossa's own surgical anatomy — the sigmoid sinus, the vermis's midline vein, the facial colliculus on the floor where the abducens nucleus and the looping facial nerve live, and the aqueduct above — the same structures whose damage the post-operative notes count.
 :::
 :::
 
- The structure, the limb, and the bone, and the limit is for, are the one that the region is for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone.
+## Ventricles, CSF, and the skull's arithmetic
 
- So the structure, and the one that the limit is for, is the one that the limb and the bone, are for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone, and the limb.
-
- The method, and the check, are the one for the structure and the bone and the one that the limb is for.
-
- The branch, and the one that the nerve is for, is the one that the limit is for, in the control. The description, and the one that the control is for, is the use, of the nerve and the branch.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel.
-
- The muscle, and the one that the contraction is for, is the one that the limit is for, in the function. The description, and the one that the function is for, is the use, of the function and the muscle.
-
-::: warning The tendon, and the limit {#warn-tendon}
-The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. If the contraction, and the one that the function is for, is for is for, the one that the muscle is for, is for. The description, and the one that the insertion is for, is the use, of the insertion and the tendon. So the insertion, and the one that the limit is for, is for, in the tendon, and the one that the muscle is for.
+::: definition The CSF system and hydrocephalus {#def-csf}
+CSF is secreted by the **choroid plexuses** (lateral ventricles, roof of the third, fourth) — ~500 mL/day, ~150 mL resident, turnover three times daily — flowing **lateral ventricle → foramen of Monro → third ventricle → cerebral aqueduct → fourth ventricle → foramina of Luschka (lateral) and Magendie (midline) → subarachnoid space**, and out through the **arachnoid granulations into the superior sagittal sinus**. Obstruction at any point gives **obstructive (non-communicating) hydrocephalus** upstream — aqueductal stenosis (the infant's enlarging head; the posterior fossa tumour's fourth ventricle), the foramen of Monro (colloid cyst — the positional headache and sudden death), the fourth ventricle's outlets (the medulloblastoma); impaired absorption gives **communicating hydrocephalus** (post-haemorrhage and post-meningitis fibrosis of the granulations; **normal-pressure hydrocephalus** — the gait apraxia before the dementia before the incontinence, the triad whose order matters, "wet, wobbly, wild" being a memory hook for the last and least specific elements). The skull is a near-fixed box holding brain, blood and CSF in the **Monro-Kellie** balance — the compensatory displacement of CSF and blood buys about 10–15% of volume, after which pressure rises steeply along the intracranial compliance curve, and the contents begin to move: **subfalcine (cingulate) herniation** under the falx compressing the ACA (the leg-predominant infarct), **uncal (transtentorial)** as in the epidural example, **central downward** with the rostrocaudal graduation of consciousness loss and the changes of breathing and pupils that localise the level, and **tonsillar herniation** through the foramen magnum — the obex compressed, the respiratory arrest, the end of the chapter's first commandment: **do not lumbar-puncture a patient with a focal sign, a depressed consciousness or a posterior-fossa syndrome before imaging**, because the pressure difference a needle creates can be the last millilitre the herniation needs.
 :::
 
 ::: widget plot
-f: sin(x)
-x: 0 10
-y: 0 11
-sliders:
-caption: The structure, and the one that the limb is for, is the one that the bone is for. The joint, and the one that the articulation is for, is the one that the limit is for, in the movement. The description, and the one that the bone is for, is the use, of the structure and the bone.
+f: 2 + 0.10*exp(0.62*x)
+x: 0, 20
+y: 0, 70
+labels: \text{added intracranial volume (\% of baseline)},\ \text{ICP (mmHg)}
+caption: The Monro-Kellie curve drawn as the intracranial pressure–volume relation: compliance is generous while CSF and venous blood are displaced (the flat first third), then the same millilitres cost millimetres of mercury — and the knee of the curve is where a slow bleed becomes a sudden pupil. This is why the epidural patient "talks then dies", why the comatose patient's ICP is monitored against a threshold rather than an absolute number, and why the anaesthetist treats the head-of-bed elevation, the carbon dioxide and the jugular venous compression before reaching for mannitol.
 :::
+
+The **meninges and their bleedings** finish the surgery's list: **extradural** (arterial, the middle meningeal, lens-shaped, suture-limited); **subdural** (the **bridging veins** torn as they cross the subdural space — the deceleration of the infant, the alcoholic's falls, the elderly brain's shrinking cortex putting the veins on stretch; crescentic, vein-bridging, the chronic subdural of the old man on warfarin with a vague confusion and the fluent hemiparesis that turns out to be a one-sided collection); **subarachnoid** (the aneurysm at the circle's bifurcations — the posterior communicating, the middle cerebral, the anterior communicating with its frontal and leg-field and memory sequelae — the thunderclap headache and the CT's first-hour sensitivity and the lumbar puncture's xanthochromia behind it); and **intracerebral** (the hypertensive bleeds' favourite deep locations: putamen, thalamus, pons, cerebellum — the last two's surgical urgency written in their nearby brainstem).
 
 ::: quiz
-The structure, and the one that the limb is for. Which part provides return of blood, and the one that the limit is for?
-- [x] The vein, and the one that the vessel is for
-- [ ] The artery, and the one that the supply is for
-- [ ] The tendon, and the one that the insertion is for
-- [ ] The membrane, and the one that the lining is for
+A lesion at the right cerebral peduncle of the midbrain affects which combination?
+- [ ] Ipsilateral III, ipsilateral hemiparesis
+- [x] Ipsilateral III palsy with contralateral hemiparesis (Weber)
+- [ ] Contralateral III, ipsilateral hemiparesis
+- [ ] Bilateral VI with ipsilateral VII
 ::: solution
-The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vein, and the one that the vessel is for, provides return of blood, and the one that the limit is for.
+At the midbrain the corticospinal fibres are still in the cerebral peduncle, **above** the medullary pyramidal decussation, so a peduncle lesion paralyses the **opposite** limbs; the **third nerve fascicles run through the peduncle to exit between the cerebral and superior cerebellar arteries, ipsilaterally** — hence Weber's alternating oculomotor hemiplegia. The rule generalises to the whole brainstem: **cranial nerve at the level, ipsilateral; long tracks, contralateral** — the "crossed syndrome" of [[#def-brainstem]] and the reason the oculomotor palsy with a hemiplegia on the other side of the body is never a hemisphere lesion and always a midbrain one, until proved otherwise by the pupil's behaviour and the imaging.
 :::
-:::
-
-::: summary
-- The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for.
-- The bone, and the one that the joint is for, is the one that the articulation is for, is for.
-- The muscle, and the one that the function is for, is the one that the contraction is for, is for.
-- The nerve, and the one that the control is for, is the one that the branch is for, is for.
-- The vessel, and the one that the supply is for, is the one that the region is for, is for.
-- The description, and the one that the bone is for, is the use, of the structure and the bone.
 :::
 
 ::: history
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The bone, and the one that the joint is for, is the one that the articulation is for, is for. The muscle, and the one that the function is for, is the one that the contraction is for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone. So the structure, and the one that the limit is for, is the one that the limb is for, is for.
+The system's anatomy was built by arguing from deficits. Gall and the phrenologists' era gave way to Broca's 1861 removal experiment and autopsy (the inferior frontal speech ground) and Wernicke's 1874 centre concept; Brown-Séquard's 1850s hemisection experiments in dogs and his own clinically described cord told the crossing story; the reflex arc and neuron doctrine (Sherrington, His, Ramón y Cajal) fixed the synaptic grammar. The brainstem's crossed syndromes were named in Vienna and Edinburgh clinics between 1850 and 1920; the cerebellar and extrapyramidal clinical schools (Marie, Dejerine, the Wilsons and Kinnier Wilsons) filled the subcortical chapters. Moniz's prefrontal leucotomy (1935) and its abolition taught the frontal lobes' price; Penfield's cortical stimulation maps at Montreal drew the homunculus from awake patients; and the ventricles and CSF became physiology when Quincke's 1891 lumbar puncture and the era of ventricular drainage made pressure, not just structure, treatable.
+:::
+
+## Where this leads
+
+Stroke medicine and imaging in [[nervous-system/stroke]]; the cranial nerves' peripheral courses in [[anatomy/head-neck]]; the autonomic and pain pharmacology in [[pharmacology/autonomic-drugs]] and [[nervous-system/headache-pain]]; the spinal anaesthesia of the cord's segments in [[surgery/anaesthesia-pain]]; coma's metabolic anatomy in [[nervous-system/dementia-neurodegeneration]] and [[emergency-critical-care/critical-care]].
+
+::: summary
+- The cord is three crossings: dorsal columns cross in the medulla, corticospinal in the medulla (pyramids), spinothalamic in the cord as they enter — every sensory level and every hemisection question is those three sentences.
+- The brainstem is columns around a ventricle and a rule of fours; its signature is the crossed syndrome — cranial nerve on the lesion side, long tracts on the other.
+- The cerebellum signs ipsilaterally, the thalamus is everyone's gateway and nobody's friend, and the basal ganglia choose between hypokinesia and hyperkinesia.
+- Each cerebral artery is a syndrome because each supplies a named part of a functional map — ACA leg, MCA face-arm and language or neglect, PCA vision, watershed the shoulder girdles.
+- The skull obeys Monro-Kellie: compensation, then the knee of the curve, then herniation in named patterns — pupil-uncus, leg-ACA-falcine, breathless-tonsillar; image before you puncture.
+- The bleedings are anatomical: artery-extradural-pterion, vein-bridging-subdural, circle-aneurysm-subarachnoid, deep-perforator-intracerebral.
 :::
 
 ## Exercises
 
-::: exercise The structure {level=1}
-Which part provides return of blood, and the one that the vessel is for?
+::: exercise Level and side {level=1}
+Give the lesion (side and level) for each: (a) left hemiparesis, left loss of position sense, and a tongue that deviates to the right on protrusion; (b) bilateral loss of pain and temperature in a cape distribution with preserved touch and vibration in the hands; (c) left ptosis, a fixed dilated left pupil, and right hemiparesis; (d) vertigo, left Horner's, left facial numbness, right body numbness, hoarse voice, normal strength.
 ::: solution
-The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vein, and the one that the vessel is for, provides return of blood.
+(a) The answer to (a) is a **right medial medullary lesion (medial medullary syndrome)**: the pyramid (left hemiparesis, above the decussation), the medial lemniscus (left position and vibration loss), and the **right hypoglossal rootlets or nucleus — the tongue deviates to the side of the lesion**, the one cranial nerve that points at its own brainstem level in this syndrome. The method for every item is the same: list each side and each modality, ask where each tract crosses, and only then choose the level and side — three crossed tracts, three questions, one answer. (b) **Syringomyelia — the central cord at C2–T1 bilaterally**, the crossing commissural fibres destroyed (the cape), the dorsal columns spared (touch, vibration) and the corticospinal tract spared or later involved (the hands' wasting when the anterior horn joins the cavitation). (c) **Left midbrain (Weber)** — the III fascicle and the peduncle. (d) **Left lateral medulla (Wallenberg)** — the vestibular, trigeminal, sympathetic, ambiguus and spinothalamic columns with the pyramid spared.
 :::
 :::
 
-::: exercise The limb {level=1}
-What is the structure, and the one that the limb is for?
+::: exercise Homonymous or heteronymous {level=1}
+A patient cannot see the left half of the visual field in both eyes; pupillary light reflexes are normal; no eye disease. Where is the lesion in the pathway, and what findings would separate optic tract from occipital cortex?
 ::: solution
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The description, and the one that the bone is for, is the use, of the structure and the bone. So the structure, and the one that the limit is for, is the one that the bone is for, is for.
+A **left homonymous hemianopia** localises right of the chiasm — the right optic tract, the right lateral geniculate body and its radiations, or the right visual cortex. **Optic tract** lesions often show a relative afferent pupillary defect (the tract's pupillomotor fibres leaving for the pretectum) and, over time, bowing of the disc (retrograde trans-synaptic atrophy is mild but real), and the hemianopia is congruous or incongruous depending on the site: **radiations** carry the temporal (superior, Meyer's loop — the "pie in the sky") and parietal (inferior, "pie on the floor") halves, incongruous and often with the other signs of their lobe (neglect with parietal, the field defect worse with temporal lobe resections done carelessly); **occipital cortex** gives the most congruous defects, **macular sparing** (the dual PCA-MCA supply at the occipital pole), and normal pupils because the pupillary fibres left before the geniculate. The examiner separates tract from radiation from cortex with the fields' congruity, the pupils, and the lobe's company — the pathway's geography again.
 :::
 :::
 
-::: exercise The bone {level=2}
-Explain, the bone, and the one that the joint is for, in the articulation, and the one that the limit is for.
-::: hint
-The articulation.
-:::
+::: exercise The gait apraxia {level=2}
+A 76-year-old has three years of gradually broad-based, magnetic, shuffling gait, urinary frequency, and slowed thinking with apathy; MRI shows ventricles enlarged out of proportion to sulcal atrophy. What is the syndrome, why is the gait first, and what does the tap test predict?
 ::: solution
-The bone, and the one that the joint is for, is the one that the limit is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone. So the articulation, and the one that the limit is for, is for, in the bone, and the one that the joint is for.
+**Idiopathic normal-pressure hydrocephalus** — the communicating hydrocephalus whose triad is "wobbly, wet, wild" in that **order of appearance and of response to treatment**: the gait is first and best because the periventricular **coronar radiations of the frontal lobe and the descending leg fibres of the paracentral area are stretched around the enlarged ventricles** (the leg fibres run closest to the ventricle — the same somatotopy as the ACA's leg field), the incontinence follows the frontal micturition centre's disconnection, and the dementia — subcortical, apathetic, slowed — is last and least reversible. The tap test (large-volume lumbar puncture with pre- and post-gait measurement) helps select shunting candidates, with the honest statistics: a good tap test predicts response, a poor one does not exclude it, and the shunt's improvement is greatest in gait and least in cognition, which is why the operation is offered mainly for the gait. The differential that must not be missed is every imitator — parkinsonism, cervical myelopathy, the ACA's own legs, peripheral vestibular disease — because the diagnosis is made by the pattern, not the picture.
 :::
 :::
 
-::: exercise The muscle {level=2}
-Explain, the muscle, and the one that the function is for, in the contraction, and the one that the limit is for.
-::: hint
-The contraction.
-:::
+::: exercise Two internuclear ophthalmoplegias {level=2}
+A young woman has binocular horizontal diplopia on looking right: the left eye fails to adduct, the right eye abducts with nystagmus; convergence is normal. Name the tract and side; then explain why the same eye signs in a 74-year-old hypertensive after a sudden event means something else entirely.
 ::: solution
-The muscle, and the one that the function is for, is the one that the limit is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle. So the contraction, and the one that the limit is for, is for, in the muscle, and the one that the function is for.
+The lesion is the **left medial longitudinal fasciculus (MLF)**. On looking right, the right abducens nucleus fires the right lateral rectus and, at the same time, interneurones whose fibres cross immediately and ascend in the **left MLF** to the left oculomotor nucleus's medial-rectus subnucleus; a left MLF lesion therefore abolishes left adduction on right gaze while the right eye abducts with a beating nystagmus — a **left INO**, named, as INOs are, by the eye that fails to adduct. Convergence is normal because the medial-rectus motoneurones and their supranuclear convergence input (midbrain, not MLF) are intact — the sign that separates INO from a medial-rectus palsy. A young bilateral or unilateral INO is multiple sclerosis (the MLF's dense myelin and long tract's length make it a demyelination target); the same signs in an elderly vascular patient are a **pontine lacunar infarct**, and in a comatose patient with fixed pupils the brainstem lesion is structural and urgent — the rule being that INO localises to the MLF at any age, while the **aetiology** flips with the demographic, which is why "one INO, which age?" is a whole clinic.
 :::
 :::
 
-::: exercise The nerve {level=2}
-Explain, the nerve, and the one that the control is for, in the branch, and the one that the limit is for.
-::: hint
-The branch.
-:::
+::: exercise Watershed {level=2}
+After a cardiac arrest with prolonged hypotension, a patient can move arms and face but cannot raise the shoulders or move the legs except minimally; vision is impaired for motion and faces; and memory is severely impaired. Explain each by vascular territory.
 ::: solution
-The nerve, and the one that the control is for, is the one that the limit is for, in the branch. The description, and the one that the branch is for, is the use, of the branch and the nerve. So the branch, and the one that the limit is for, is for, in the nerve, and the one that the control is for.
+**The border zones.** The **ACA–MCA cortical border zone** runs along the high convexity between the leg area (ACA) and the face-arm area (MCA): its "man-in-the-barrel" syndrome is the shoulder-and-proximal-arm weakness (the homunculus's trunk and shoulder strip lies at the border) with face and hand relatively spared, and the leg's worse deficit when the deeper ACA stem territory also suffers. **The MCA–PCA border zone** at the temporo-parieto-occipital junction produces the visual-association deficits — the **cerebral visual impairment (motion and face), the Balint-like syndrome of impaired visuospatial attention and optic ataxia** of the bilateral parieto-occipital border infarcts. And the **hippocampus — Sommer's sector — is among the most selectively vulnerable grey to global ischaemia**, so the amnesic syndrome sits on top of whatever the cortical borders took: the classic teaching that hypoperfusion's memory injury is hippocampal (and, in the deepest insults, the laminar cortical necrosis and the watershed's internal — striatal — border). The anatomy here is not one vessel but two territories' shared margin — the brain's own map of its low-flow geography.
 :::
 :::
 
-::: exercise The tendon {level=3}
-Explain, the tendon, and the one that the insertion is for, in the muscle, and the one that the limit is for.
-::: hint
-The insertion.
-:::
+::: exercise The cord's stroke {level=2}
+An hour after an endovascular aortic repair a patient has flaccid paraplegia, loss of pain and temperature below the trunk, and preserved vibration and proprioception in the legs. Name the syndrome, the artery, and the mechanism.
 ::: solution
-The tendon, and the one that the insertion is for, is the one that the limit is for, in the insertion. The description, and the one that the insertion is for, is the use, of the insertion and the tendon. So the insertion, and the one that the limit is for, is for, in the tendon, and the one that the muscle is for.
+**Anterior spinal artery (anterior cord) syndrome** — the anterior two-thirds (corticospinal and spinothalamic tracts and the horn) infarct while the **posterior columns, supplied by the posterior spinal arteries, are spared**; the flaccidity is spinal shock's first hours, later the spastic paraplegia. The mechanism after aortic repair: the **artery of Adamkiewicz** — the great radiculomedicular feeder, usually left-sided and entering between T8 and L2 — covered, embolised or hypoperfused during the graft, the cord's own watershed (the mid-thoracic cord's tenuous supply) the reason this is the operation's nightmare complication; the prevention is the protocol (distal perfusion, CSF drainage lowering the cord's own extrinsic pressure, motor evoked potential monitoring), and the treatment is the same levers turned the other way (augment the mean arterial pressure, drain CSF to raise the cord's perfusion pressure) with the MRI's cord oedema and restricted diffusion confirming. The clinical rule is the chapter's last vascular lesson: **the cord has arterial territories like the brain, and aortic surgery is spinal-stroke surgery's highest-risk room.**
 :::
 :::
 
-::: exercise The ligament {level=3}
-Explain, the ligament, and the one that the joint is for, in the bond, and the one that the limit is for.
-::: hint
-The bond.
-:::
+::: exercise Aphasia at the bedside {level=2}
+Classify, and give the lesion: (a) fluent, empty, circumlocutory, paraphasic speech; cannot repeat; cannot name; comprehension impaired; no weakness. (b) non-fluent, effortful, telegraphic; comprehension good; repetition poor; right hemiparesis. (c) everything fluent and good except the inability to repeat — the patient corrects your error but cannot say the phrase.
 ::: solution
-The ligament, and the one that the joint is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament. So the bond, and the one that the limit is for, is for, in the ligament, and the one that the joint is for.
+(a) **Wernicke's (receptive/posterior) aphasia** — dominant superior posterior temporal lobe (the comprehension cortex's Wernicke area), the MCA's inferior division, often with the superior quadrantanopia of Meyer's loop's neighbourhood and **no weakness** because the motor strip is spared. (b) **Broca's (expressive/anterior) aphasia** — dominant inferior frontal gyrus (the face-arm motor cortex's neighbour — hence the hemiparesis), the MCA's superior division; the comprehension is preserved, the effort and the agrammatism are the lesion's signature. (c) **Conduction aphasia** — the **arcuate fasciculus** (or its supramarginal entry) between the two fields: spontaneous speech and comprehension are near-normal and the patient is frustratedly aware, but repetition fails — the disconnection syndrome that proved (and still proves) the classic language model's architecture better than any lesion map. The clinical habit worth keeping: **test repetition before naming**, because the repetition-preserving versus repetition-impaired split is the first fork of the aphasia algorithm — the fibre anatomy doing the diagnostic work.
 :::
 :::
 
-::: exercise The membrane {level=3}
-Explain, the membrane, and the one that the joint is for, in the lining, and the one that the limit is for.
-::: hint
-The lining.
-:::
+::: exercise Read the coma {level=3}
+A comatose patient has: right pupil 6 mm and fixed, left 3 mm reactive; extensor posturing of the left arm and leg to pain; irregular, periodic (Cheyne-Stokes) breathing; and no oculocephalic (doll's-eye) response on rightward head turning. Structure the localisation and the decision.
 ::: solution
-The membrane, and the one that the lining is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane. So the lining, and the one that the limit is for, is for, in the membrane, and the one that the joint is for.
+The **anisocoria with a fixed, dilated right pupil** is right **uncal (transtentorial) herniation** compressing the ipsilateral III — the pupil before the motor tract, because the parasympathetic fibres run superficially (the [[#thm-arteries]] and pupil-rule logic). The **left extensor posturing** is the contralateral corticospinal tract's failure at or above the red nucleus (decerebrate — midbrain/upper pontine level), the same compression's motor ledger (and remember Kernohan's notch's false localisation: the hemiparesis side is not infallible). The **Cheyne-Stokes respiration** places the respiratory generator's control still forebrain/upper-brainstem (it is the pattern of the hemispheric and diencephalic coma; ataxic, gasping breathing would say medulla and the end-stage). The **absent oculocephalic reflex** means the brainstem arc — vestibular nuclei, MLF, oculomotor and abducens nuclei — is failing at or below the pontomesencephalic junction; the manoeuvre requires a cleared cervical spine, and the ice-water caloric test completes the arithmetic when the tympanic membranes allow. The decision follows in one paragraph: this is a **surgical mass until proven otherwise** — immediate airway protection, mannitol or hypertonic saline, hyperventilation only as the brief bridge, and the CT on the table in minutes, because a fixed pupil from an extradural or a large hemisphere swelling is still reversible in the first hour and not in the third, and because the other comas (metabolic, toxic) do not pupil-dilate asymmetrically: **the asymmetry is the surgical pointer**, the rule that this whole chapter's anatomy is written for.
 :::
 :::

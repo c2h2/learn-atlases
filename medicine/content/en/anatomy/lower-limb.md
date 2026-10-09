@@ -1,213 +1,192 @@
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The bone, and the one that the joint is for, is the one that the limit is for, of the muscle and the one that the nerve is for. This lesson defines the structure, and the one that the limb is for, of the bone and the one that the limit is for, and gives the nerve, and the one that the muscle is for. The method, and the check, are the one for the structure and the bone and the one that the limb is for.
+The lower limb is built for two jobs the upper limb never has: weight-bearing and propulsion. Everything in its anatomy follows — the deep, angled hip with its blood supply threaded through the capsule; the knee, a hinge on a rotating platform with its ligaments crossing inside; the leg's osteofascial compartments wrapping muscles that work against gravity; the foot's arches, sprung on ligaments and held by tendons; and the veins, which must return blood uphill from the dependent position and therefore live by pumps and valves — and fail by them. Its clinical medicine is correspondingly mechanical: fractures that interrupt named blood supplies, ligaments whose tests are named manoeuvres, and veins whose failure writes itself on the skin of the gaiter area.
 
- The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The description, and the one that the bone is for, is the use, of the structure and the bone.
+This chapter covers the gluteal region and hip, the femoral triangle and thigh, the knee and popliteal fossa, the leg's arteries, compartments and veins, and the foot and ankle.
 
- The bone, and the one that the joint is for, is the one that the limit is for, is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone.
+## Gluteal region and hip
 
- The muscle, and the one that the function is for, is the one that the limit is for, is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle.
-
- The nerve, and the one that the control is for, is the one that the limit is for, is for, in the branch. The description, and the one that the branch is for, is the use, of the branch and the nerve.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, is for, in the region. The description, and the one that the region is for, is the use, of the region and the vessel.
-
- The tendon, and the one that the muscle is for, is the one that the limit is for, is for, in the insertion. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
-
-::: definition Region {#def-reg}
-The **egion** is the one, and the one that the limb is for, that is the bone, is for, and the one that the limit is for. The **one**, and the one that the joint is for, is the one that the limit is for, is for, in the articulation and the one that the muscle is for. The description, and the one that the bone is for, is the use, of the structure and the bone, and the one that the limit is for.
+::: definition The gluteal region and the sciatic notch {#def-gluteal}
+The gluteal muscles are abductors (gluteus medius and minimus, through the trochanters, supplied by the **superior gluteal nerve**) and the extensor-rotator mass (gluteus maximus — **inferior gluteal nerve**, the seat of intramuscular injection's upper-outer quadrant, set away from the **sciatic nerve** that runs from below piriformis to the mid-thigh; piriformis, obturator internus and gemelli — short external rotators, each with its own nerve from the S1–S2 plexus). The **greater sciatic foramen** transmits, above piriformis the superior gluteal vessels and nerve, and below it the inferior gluteal vessels and nerve, the **sciatic nerve**, the posterior femoral cutaneous nerve, and the nerve to obturator internus and gemelli; the **lesser sciatic foramen**, immediately below the sacrospinous ligament, transmits the **pudendal nerve** and internal pudendal vessels, which re-enter the perineum around the ischial spine — the landmark of the block described in [[anatomy/pelvis-perineum]]. The **sciatic nerve** (L4–S3) is the body's largest nerve: its **tibial division** carries the hamstrings (except the short head of biceps, which the **common peroneal division** takes) and all muscles below the knee, and its **common peroneal division** is the fibres most often injured in compression and the first to fail in the lesions of the nerve itself — the reason a hip-level sciatic injury may show a **foot-drop greater than the hamstrings' weakness** and why the two divisions recover unequally after a single lesion.
 :::
 
-::: proposition Nerve {#prop-nerve}
-The **erve** is the one that the control is for, is for, in the branch.
-$$
-\text{motor}:\ \text{muscle},\ \text{sensory}:\ \text{skin}.
-$$
-and the one that the limb is for. The description, and the one that the branch is for, is the use, of the branch and the nerve. So the nerve, and the one that the limit is for, is the one that the branch, is for, and the innervation, and the one that the muscle is for.
+::: definition The hip joint and its blood supply {#def-hip}
+The **hip** is a ball-and-socket synovial joint: the acetabulum, deepened by the fibrocartilaginous **labrum** and closed by the **transverse acetabular ligament**, receives the femoral head, whose ligament of the head (**foveal artery**, a branch of the obturator via the acetabular notch) is a variable and usually minor supply in adults. The **capsule** attaches anteriorly to the intertrochanteric line and posteriorly along the neck, so that the **femoral neck is intracapsular** and the intertrochanteric region is not — the single fact that governs fracture management. Arterial supply to the head is predominantly from the **medial circumflex femoral artery** via retinacular vessels ascending the neck's posterior surface (with the lateral circumflex contributing anteriorly), plus the foveal artery; the retinacular vessels run **distal to proximal within the capsule**, so displacement of an intracapsular fracture tears them. Its innervation (femoral and obturator anteriorly, the nerve to quadratus femoris posteriorly) is why hip disease refers to the **groin and — via the obturator's articular branch — the knee**: a child with a painful knee and a normal knee is a hip until the hip is examined.
 :::
 
-::: proposition Vessel {#prop-vessel}
-The **essel** is the one that the supply is for, is for, in the region.
-$$
-\text{artery}: \text{supply},\ \text{vein}: \text{return}.
-$$
-and the one that the region is for. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vessel, and the one that the limit is for, is the one that the region, is for, and the circulation, and the one that the limb is for.
+::: theorem Intracapsular femoral neck fractures avascularise the head — and the management follows the blood {#thm-neck}
+A **displaced intracapsular (subcapital) fracture** in an older adult usually tears the retinacular vessels, and internal fixation then fails twice over: the head undergoes **avascular necrosis**, and fixation of avascular bone does not unite. Hence the guideline logic — **replacement (hemiarthroplasty or total hip) for displaced intracapsular fractures in the fit older patient, internal fixation for undisplaced fractures and for young patients** (where any head-preserving attempt is worth the necrosis risk), and **extracapsular (intertrochanteric, subtrochanteric) fractures — whose blood supply is intact and whose cancellous surfaces bleed and heal — are fixed, not replaced.**
 :::
 
- The structure, and the one that the limb is for, is the one that the bone is for. The joint, and the one that the articulation is for, is the one that the limit is for, in the movement.
+::: proof
+The details are the proof. The retinacular vessels enter the neck posterosuperiorly, which is why **posterosuperior comminution is the worst pattern** and why the blood supply can be preserved in an undisplaced or impacted fracture — the reason "impacted in valgus" neck fractures in the young are fixed in situ with two screws and watched. The foveal artery matters only when the retinacular supply is intact and the patient is young — the anastomosis is real but small, and avascular necrosis in the young after displaced fractures still runs high, which is why reduction is an emergency (within hours, not days) in that group: not because the cartilage dies first, but because the bone's remaining channels clot if they tamponade too long. **Avascular necrosis follows in 10–30% of displaced neck fractures**, which is why every fixed neck fracture is followed radiographically to the union-and-viability endpoint, and why hip pain at 18 months after a "healed" fracture is a request for MRI. The arthroplasty anatomy completes the argument: replacement removes the dead bone and restores length and offset, and must respect what the fracture spared — the **sciatic nerve** posteriorly (why posterior-approach hips dislocate backwards, and why the short rotators are repaired), and the **abductor mechanism**, whose detachment is the limp the operation must not cause.
+:::
 
- The joint, and the one that the articulation is for, is the one that the limit is for, in the movement. The description, and the one that the articulation is for, is the use, of the articulation and the joint.
-
- The muscle, and the one that the contraction is for, is the one that the limit is for, in the function. The description, and the one that the function is for, is the use, of the function and the muscle.
-
- The nerve, and the one that the branch is for, is the one that the limit is for, in the control. The description, and the one that the branch is for, is the use, of the branch and the nerve.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel.
-
- The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
-
- The membrane, and the one that the joint is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane.
-
- The ligament, and the one that the joint is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament.
-
-## Worked cases
-
-::: example The bone, and the articulation {#ex-bone}
-A clinical note locates the finding at the articulation described.
+::: example The limp that names the nerve {#ex-trendelenburg}
+A 54-year-old woman has a painless limp; when she stands on the right leg the pelvis drops on the left.
 ::: solution
-The bone, and the one that the articulation is for, is the one that the limit is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone. For the articulation, and the one that the bone is for, the joint, and the one that the limit is for, is the one that the movement is for, is for.
+This is a positive **Trendelenburg sign**: the **abductors (gluteus medius and minimus, superior gluteal nerve)** cannot hold the pelvis level, so it falls towards the **unaffected** side — the sign names the lesion by the side that is standing. The differential sits at three points of the mechanism: the **nerve** (superior gluteal palsy — post-injection or post-surgical; or L5 root, when other L5 muscles join the picture), the **tendon** (abductor dehesion after a lateral-approach hip), or **mechanics** (a high-standing trochanter in coxa vara or malreduction shortens the lever; and any painful hip gives an antalgic, not a true, Trendelenburg). The lever explains it: the abductors pull the ilium down over the fixed femur to level the pelvis, and every operation on the neck and trochanter is judged years later by whether that pulley still works.
 :::
 :::
 
-::: example The muscle, and the contraction {#ex-muscle}
-A person presents with a deficit that localises to the muscle examined.
+## Femoral triangle, thigh, and the femoral canal
+
+::: definition The femoral triangle and sheath {#def-femoral}
+The **femoral triangle** — inguinal ligament above, sartorius laterally, adductor longus medially — is the gateway between abdomen, perineum and limb. From **lateral to medial** its contents are **NAVEL: Nerve (femoral), Artery, Vein, Empty space (the femoral canal), Lymphatics** — with the **femoral sheath** enclosing the artery, vein and canal but **not the femoral nerve**, divided into lateral (artery), intermediate (vein) and medial (**the femoral canal**, with the lymphatic lac of Rosenmüller) compartments. The canal is closed above by the **femoral ring** — bounded by inguinal ligament, lacunar ligament, pectineal ligament and rectus sheath edge: the narrow, unyielding ring that makes femoral hernias the strangulators described in [[anatomy/pelvis-perineum]]. The **great saphenous vein** joins the femoral vein 3–4 cm below and lateral to the pubic tubercle through the **saphenous opening (fossa ovalis)**, with the superficial epigastric, circumflex iliac and external pudendal veins and the superficial inguinal nodes around it — the groin's crossroads for vascular surgery and cancer staging: anogenital skin and lower limb drain to these nodes, and melanoma mapping begins here.
+:::
+
+::: definition Thigh compartments and the adductor canal {#def-thigh}
+**Anterior (femoral nerve):** quadriceps, sartorius, iliopsoas (the hip flexor, whose tendon makes the floor of the triangle), iliacus — hip flexion and knee extension; the **saphenous nerve**, the femoral's terminal cutaneous branch, runs through the **adductor (Hunter's) canal** with the femoral vessels — the canal being the aponeurotic tunnel (vastus medialis laterally, adductor longus and magnus medially, adductor hiatus above) through which the femoral artery leaves the thigh to become **popliteal** behind the knee; the saphenous nerve then accompanies the vein below the knee and is the sacrificial or harvested nerve of leg surgery, and the source of the medial leg pain of canal compartment problems. **Medial (obturator nerve):** adductors, gracilis, obturator externus — with the nerve's articular branch to hip and knee (the referral sentence above). **Posterior (tibial division of sciatic, except short head of biceps — common peroneal):** the hamstrings — hip extension and knee flexion; the ischial tuberosity is their origin and the sitting bone, and the proximal hamstring avulsion is the athlete's version of the same geography. Arterially the thigh lives on the **femoral** and its **profunda** (the perforating arteries that cross the adductors) and on the **geniculate network** around the patella — the collateral road that lets the leg survive a slowly occluding popliteal, and that let surgeons ligate the femoral artery in the age before grafts.
+:::
+
+::: example The pulsatile lump after a cardiac catheter {#ex-fa}
+Six weeks after a femoral-artery coronary angiogram a patient presents with a tender, expansile groin lump with a bruit; the puncture was recorded as "low".
 ::: solution
-The muscle, and the one that the contraction is for, is the one that the limit is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle. For the contraction, and the one that the muscle is for, the nerve, and the one that the limit is for, is the one that the branch is for, is for.
+A **femoral artery pseudoaneurysm** — a hole in the arterial wall that bleeds into a contained sac, and the classic consequence of puncturing **below the femoral sheath's reach or below the inferior epigastric takeoff**, where the artery lies on bone with no compressible tunnel and the puncture cannot seal: the safe zone is the **common femoral artery over the femoral head** (the mid-inguinal point, the line of the inguinal ligament as the upper limit, the bifurcation — which the sheath and the head's cartilage cap make compressible). The diagnosis is duplex (the "to-and-fro" neck), and management is anatomy-graded — ultrasound-guided thrombin injection (which must not enter the native artery — hence the neck's anatomy is the treatment's risk) or compression, with surgery for the infected, expanding or ischaemic sac. Two neighbouring complications complete the triangle's clinical list: **arteriovenous fistula** (through-and-through puncture of artery and the vein lying medial — the continuous-murmur mimic), and **retroperitoneal haematoma** (puncture above the inguinal ligament, where the vessel track opens into the abdomen — the patient who becomes hypotensive with a backache after a "clean groin") — all three complications of one line of skin, which is why the operator marks the ligament before the needle goes in.
 :::
 :::
 
- The structure, and the one that the limb is for, is the one that the bone is for. The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle.
+## Knee and popliteal fossa
 
- The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. The description, and the one that the insertion is for, is the use, of the insertion and the tendon.
+::: definition The knee and its tests {#def-knee}
+The knee is two articulations — **tibiofemoral** (condyles on plateaux, separated by the fibrocartilaginous **menisci**: the medial C-shaped and attached to the **tibial collateral ligament**, the lateral circular, mobile, and split by the popliteus tendon) and **patellofemoral**. Static stability is the **collateral ligaments** (medial — the superficial band to the tibia, the deep band fused to the medial meniscus; lateral — the cord-like **fibular collateral ligament**, free of the meniscus and of the biceps tendon that splits around it), the **capsule and posterolateral corner**, and the cruciates inside: the **anterior cruciate ligament** (anteromedial tibial insertion to posteromedial femoral insertion, taut in extension; resists anterior tibial translation and rotation — the **Lachman** and pivot-shift tests are its physical examination) and the **posterior cruciate** (the stronger; posterior sag and the posterior drawer). Displaced meniscal tears **lock** mechanically — a bucket-handle caught in the hinge — and the meniscus's blood runs **from the periphery inwards** (red-red, red-white, white-white zones), which is why peripheral tears are repaired and central degenerate ones trimmed — the scaphoid's vascular logic again. The bursae make their own clinic: prepatellar (housemaid's), infrapatellar (jumpers' — the patellar tendon's enthesopathy), anserine (the conjoined sartorius-gracilis-semitendinosus insertion, a frequent "medial knee pain"), and the **posterior (Baker's) cyst** — the gastrocnemius-semimembranosus bursa filled by a one-way valve from the joint, presenting as a calf swelling that mimics deep vein thrombosis, and rupturing to give the crescent sign below the malleolus.
+:::
 
- The membrane, and the one that the lining is for, is the one that the limit is for, in the joint. The description, and the one that the lining is for, is the use, of the lining and the membrane.
+::: definition The popliteal fossa {#def-popliteal}
+The diamond behind the knee — biceps laterally, semitendinosus and semimembranosus medially above, the gastrocnemius heads below — contains, **from superficial to deep: tibial nerve, popliteal vein, popliteal artery**, embedded in fat and nodes, with the **common peroneal nerve** escaping along biceps' medial border to the **fibular neck** (subcutaneous and injured there — see [[anatomy/anatomical-language]]'s plaster cast). The popliteal artery is **tethered** by its genicular branches and the soleal arcade, which is why knee dislocations tear or stretch it — and why the rule for those injuries is serial pulses **and** an ABI, with angiography for the pulse that was firm on admission and is soft now: an intimal flap keeps a pulse today and occludes tonight.
+:::
 
- The ligament, and the one that the bond is for, is the one that the limit is for, in the joint. The description, and the one that the bond is for, is the use, of the bond and the ligament.
-
- The branch, and the one that the nerve is for, is the one that the limit is for, in the control. The description, and the one that the control is for, is the use, of the nerve and the branch.
-
-::: example The ligament, and the bond {#ex-ligament}
-A description of the joint notes the stabilising bond described.
+::: example The unlocked knee and the swollen calf {#ex-acl}
+A 24-year-old footballer's knee "went", swelled within hours, and now gives way on turning; three days later the calf is swollen and painful.
 ::: solution
-The ligament, and the one that the bond is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament. For the bond, and the one that the ligament is for, the bone, and the one that the limit is for, is the one that the articulation is for, is for.
+Haemarthrosis **within hours** of a twisting injury with a positive Lachman is an **ACL tear** (the effusion is blood from the ligament's tibial-footplate avulsion and the synovial vessels; the history of "pop, swell, give way" is the diagnosis before the MRI — which exists here to find the company it keeps: **the lateral meniscus is the acute partner of ACL tears** — contrary to the old O'Donoghue "unhappy triad" teaching of the medial meniscus, and the MCL when the mechanism is valgus). The swollen calf on day three is the differential of **ruptured Baker's cyst and deep-vein thrombosis** — the ultrasound answers both because its compression test looks for thrombus and its grey-scale sees the fluid between the gastrocnemius and semimembranosus tracking down the fascial planes, the same dissection that gives the pseudo-thrombophlebitis of a ruptured cyst. Treatment is surgical anatomy: an acute ACL is reconstructed, not repaired — commonly with **bone–patellar tendon–bone** or **hamstring tendons** through tunnels placed at the native footprints (put the tunnel where the ligament was, not where it is convenient) — with return to sport at 9–12 months and the **re-tear rate highest in young athletes who return before the strength criteria are met**.
 :::
 :::
 
-::: example The membrane, and the lining {#ex-membrane}
-A clinical note describes the lining of the joint in question.
+## Leg: arteries, compartments, veins
+
+The popliteal artery divides at popliteus' lower border into the **anterior tibial artery** — through the interosseous membrane to the extensor compartment, emerging on the ankle as the **dorsalis pedis** (palpable lateral to the EHL tendon; congenitally absent in a few percent) — and the **posterior tibial artery**, the larger channel, running with the **tibial nerve** deep to soleus, giving the **peroneal artery** to the fibular compartment, and ending behind the **medial malleolus** (the posterior tibial pulse, with the **tarsal tunnel** its neighbour). The deep system's venae comitantes receive the superficial system — **great saphenous** (anterior to the medial malleolus; the cutdown and bypass-conduit vein, ending at the saphenofemoral junction) and **small saphenous** (behind the lateral malleolus to the popliteal vein) — through **perforating veins**, and the **muscle pump** with its one-way valves does the climbing.
+
+::: theorem Standing venous pressure is a column, and walking is its treatment {#thm-venous}
+With the patient still, the veins from right atrium to ankle are a continuous fluid column: ~**90 mmHg** at the ankle (**ambulatory venous pressure** of ~20–30 mmHg is what normal walking achieves as the calf pump empties the column against closed valves and the ankle's perforators fill the deep system). **Venous hypertension** — from valve failure (primary varices, post-thrombotic damage after DVT, or perforator incompetence) — produces the clinical ladder: oedema, the haemosiderin and lipodermatosclerosis of the **medial gaiter area**, and finally the **venous ulcer** — plus the varicose veins themselves. The ulcer's four-diagnosis differential is this chapter in one line: **venous** (gaiter, shallow, irregular, exudating, with the skin's pigment change and healed with compression), **arterial** (toes, foot, lateral malleolus, punched-out with exposed structures, painful, cold, pulseless — compression kills the limb), **neuropathic** (plantar pressure points under a callus, painless — the diabetic foot), and **mixed** (the majority in the old): the examination that separates them is pulses and capillary refill and the ABPI **before** the bandage goes on.
+:::
+
+::: proof
+The ladder is hydrodynamics written on skin: the ~90–100 mmHg standing column is normally unloaded to 20–30 mmHg with every step; with incompetent valves the foot spends the day at high pressure, the capillary bed leaks fibrinogen and growth factors, the **fibrin cuff and leucocyte trap** processes produce indurated, pigmented lipodermatosclerosis, and minor trauma opens an ulcer that cannot heal because the tissue's transport is diseased. The **perforators** are the surgical target: the largest communicating veins lie in the calf's cricoid fascia zone — the gaiter's culprit territory — and their ligation, with ablation of the saphenous trunks (the thermal-ablation trial era) and compression, turns recurrence down. Post-thrombotic limbs reach the same skin by the other route: organising thrombus destroys the valve leaflets themselves, which is why DVT prevention is the ulcer prevention of middle age — and why superficial venous surgery in a **post-thrombotic** limb is cautious: the superficial system may be the only outflow left, and removing it can worsen the swelling.
+:::
+
+::: warning The leg's four compartments, again
+The compartment syndrome was defined in [[anatomy/back-upper-limb]]; the leg is the classic limb because its fascia is tight and its four compartments are small boxes with names: **anterior** (tibialis anterior, the extensors, **deep peroneal nerve** — the first nerve to fail, giving the **first web-space numbness** that is the earliest sensory sign, and pain on passive plantarflexion of the toes), **lateral** (peronei, superficial peroneal nerve), **superficial posterior** (gastrocnemius-soleus, sural nerve), **deep posterior** (tibialis posterior, the flexors, tibial nerve and the posterior tibial vessels — the compartment whose pressure causes the clawing and the tibial-nerve signs of a "painful calf after vascular repair"). **The anterior and deep posterior compartments are the ones the vascular surgeon watches after a femoro-popliteal reconstruction or a popped popliteal embolus — reperfusion swells them; the pulse remains, and the foot is lost by the pressure inside, not by the absence at the ankle.**
+:::
+
+::: example The foot that will not lift {#ex-drop}
+A 48-year-old develops a painless right foot-drop after two days in a surgical ward's awkward bed position; on examination there is weakness of ankle dorsiflexion **and** eversion, with normal inversion and plantarflexion, and sensory loss over the anterolateral leg and the whole dorsum of the foot.
 ::: solution
-The membrane, and the one that the lining is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane. For the lining, and the one that the membrane is for, the joint, and the one that the limit is for, is the one that the articulation is for, is for.
+The pattern separates the two causes of foot-drop. **Common peroneal nerve at the fibular neck**: weakness of dorsiflexion (deep peroneal — tibialis anterior) **and eversion** (superficial peroneal — peroneus longus and brevis), **normal inversion** (tibial — tibialis posterior), sensory loss on the **anterolateral leg (lateral surtal cutaneous) and dorsum** (superficial peroneal), with no back pain — here, compression against the fibular head by the bed rail or the lithotomy strap. An **L5 root** lesion shares the tibialis anterior weakness but adds **inversion and hip-abduction involvement** (the L5 muscles that are not peroneal-innervated: tibialis posterior is L4–5 via the tibial nerve), often back pain and a positive tension sign, and — when severe — a foot that is weak in both directions with normal reflexes except the medial hamstring. The electrodiagnostic study, when the picture is borderline, localises by the fibular neck's conduction block and the sparing of the tibial-innervated L5 muscles. Management is the same in either case: remove the compression, an **ankle-foot orthosis** against toe-catch, stretching against plantarflexion contracture, and — without recovery by three months — the posterior tibial tendon transfer that gives the walking foot back: a tibial-innervated muscle rerouted to do a peroneal job, applied anatomy in one tendon.
 :::
 :::
 
- The structure, the limb, and the bone, and the limit is for, are the one that the region is for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone.
+## Foot and ankle
 
- So the structure, and the one that the limit is for, is the one that the limb and the bone, are for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone, and the limb.
-
- The method, and the check, are the one for the structure and the bone and the one that the limb is for.
-
- The branch, and the one that the nerve is for, is the one that the limit is for, in the control. The description, and the one that the control is for, is the use, of the nerve and the branch.
-
- The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel.
-
- The muscle, and the one that the contraction is for, is the one that the limit is for, in the function. The description, and the one that the function is for, is the use, of the function and the muscle.
-
-::: warning The tendon, and the limit {#warn-tendon}
-The tendon, and the one that the insertion is for, is the one that the limit is for, in the muscle. If the contraction, and the one that the function is for, is for is for, the one that the muscle is for, is for. The description, and the one that the insertion is for, is the use, of the insertion and the tendon. So the insertion, and the one that the limit is for, is for, in the tendon, and the one that the muscle is for.
+::: definition The arches and the ankle {#def-foot}
+The foot's **medial longitudinal arch** — the spring — is maintained by shape (the wedge of the talus in the vault of calcaneus, navicular and cuneiforms), the **plantar (long and short) ligaments, the plantar aponeurosis** (the bowstring that makes **plantar fasciitis** the traction overuse of its calcaneal origin — worse with the first steps of the morning, tender at the medial tubercle), and the tendons — **tibialis posterior** (the dynamic key: its failure is the adult-acquired flat foot, with loss of the arch, hindfoot valgus, and the "too many toes" sign seen from behind), tibialis anterior, the peroneus longus to the first metatarsal base, and the calf's triceps surae whose shortening compounds every deformity. The **lateral longitudinal arch** is low and static. The **ankle (talocrural) joint** is a hinge mortised between the malleoli; its **lateral ligaments** (anterior talofibular, calcaneofibular, posterior talofibular) are the inversion-injury sequence — the ATFL first (the anterior drawer at 90° of plantarflexion tests it), the calcaneofibular next (the talar tilt at neutral), and the deltoid (medial) ligament a single strong sheet whose injury accompanies the **bimalleolar and trimalleolar fractures** and the posterior malleolus's Volkmann fragment — the Weber classification (A below the syndesmosis, B at it, C above with the syndesmotic and often medial injury) being a statement about which ligaments failed and therefore which fractures are unstable and need operation. The sole is the foot's surgical stratigraphy — skin bound to plantar aponeurosis by septa (why plantar swelling is so painful and why incisions run with, not across, the septa), the three muscular layers, the **lateral and medial plantar nerves** (the tibial's terminal branches, whose entrapment in the **tarsal tunnel** behind the medial malleolus — the "carpal tunnel of the foot" — gives burning sole pain with a positive Tinel), and the **interosseous, lumbrical and adductor** layers with the metatarsal heads and the **Morton's neuroma** — a perineural fibrosis of the third web-space nerve, the click between the third and fourth heads.
 :::
 
-::: widget plot
-f: sin(x)
-x: 0 10
-y: 0 11
-sliders:
-caption: The structure, and the one that the limb is for, is the one that the bone is for. The joint, and the one that the articulation is for, is the one that the limit is for, in the movement. The description, and the one that the bone is for, is the use, of the structure and the bone.
+::: example The rolling ankle {#ex-ankle}
+A basketball player lands on another's foot; the ankle inverts hard; the lateral swelling and bruising below and in front of the lateral malleolus appear within minutes; she can take four steps but with pain.
+::: solution
+The Ottawa rules decide the X-ray (malleolar-zone tenderness, inability to bear-weight four steps — here imaging is not mandatory), and the anatomy decides what is torn: **inversion with the foot plantarflexed stretches the anterior talofibular ligament first** — the commonest ankle sprain, with the tenderness track from the malleolus to the cuboid line — and the **calcaneofibular** joins it at greater force (talar tilt in neutral, when the peroneal tendons' line makes the CFL the check-rein); the **syndesmosis** is injured by external rotation with the foot planted (the high fibular fracture, the squeeze test, the external-rotation test, and the mortise's widening on gravity stress view — which is the radiographic statement of the ligament's function), and the **peroneal tendons** dislocate anteriorly when the superior retinaculum tears behind the lateral malleolus. Management grades the same anatomy: grade I–II ATFL tears get a functional brace, early motion and proprioceptive retraining (the ligament's mechanoreceptors went with it; balance training replaces them), while the recurrent "giving-way" ankle with a positive anterior drawer despite full rehabilitation is the operative candidate — the Broström repair sutures the ligament back to bone, exactly where the initial injury would have been sewn.
+:::
 :::
 
 ::: quiz
-The structure, and the one that the limb is for. Which part provides return of blood, and the one that the limit is for?
-- [x] The vein, and the one that the vessel is for
-- [ ] The artery, and the one that the supply is for
-- [ ] The tendon, and the one that the insertion is for
-- [ ] The membrane, and the one that the lining is for
+An ulcer lies over the first metatarsal head, deep, surrounded by a callus ring, and painless; the foot is warm with bounding pulses. The diagnosis:
+- [ ] Venous ulcer
+- [x] Neuropathic (diabetic) ulcer at a pressure point
+- [ ] Arterial ulcer
+- [ ] Marjolin's ulcer
 ::: solution
-The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vein, and the one that the vessel is for, provides return of blood, and the one that the limit is for.
+Pressure point (metatarsal head — the weight-transferring callus), **callus ring, painlessness, and good circulation** together make the **neuropathic ulcer**: the sensory loss has removed the pain that normally forces off-loading, and the motor neuropathy's clawing has moved the pressure to the heads. Venous ulcers are gaiter-area, exudating, with the skin changes; arterial are distal (toes, nail folds, malleolus), punched-out, ischaemic and **painful**; Marjolin's is the carcinoma of a chronic scar or ulcer. The foot at risk is examined as the theorem prescribes — pulses, capillary refill, monofilament sensation, the shoe's pressure map, and the deformity — and the treatment, off-loading, follows the same anatomy: the total-contact cast works by moving the pressure off the ulcer and onto the whole foot.
 :::
 :::
 
-::: summary
-- The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for.
-- The bone, and the one that the joint is for, is the one that the articulation is for, is for.
-- The muscle, and the one that the function is for, is the one that the contraction is for, is for.
-- The nerve, and the one that the control is for, is the one that the branch is for, is for.
-- The vessel, and the one that the supply is for, is the one that the region is for, is for.
-- The description, and the one that the bone is for, is the use, of the structure and the bone.
+::: widget plot
+f: 0.74*x
+x: 0, 140
+y: 0, 105
+labels: \text{height above the ankle (cm)},\ \text{venous pressure (mmHg)}
+caption: The standing column: venous pressure at the ankle is the hydrostatic weight of the blood from the heart to the foot — roughly 0.74 mmHg per centimetre of column, so a 130 cm adult stands at ~96 mmHg in the ankle veins when still. Walking cuts this to the ambulatory range of 20–30 mmHg; the calf pump and the valves are the difference between the line and the floor of the graph, and every varicose vein, gaiter ulcer and ankle swelling in this chapter lives in the gap.
 :::
 
 ::: history
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The bone, and the one that the joint is for, is the one that the articulation is for, is for. The muscle, and the one that the function is for, is the one that the contraction is for, is for. The description, and the one that the bone is for, is the use, of the structure and the bone. So the structure, and the one that the limit is for, is the one that the limb is for, is for.
+The limb's modern anatomy is a collaboration between the surgeon and the engineer. The Hunterian anatomy of the adductor canal and the nineteenth-century ligature operations on the femoral and popliteal arteries made the deep vessels approachable; the saphenous vein's entry into arterial bypass in the 1950s–60s and the femoro-popliteal grafts of vascular surgery's golden age repurposed superficial anatomy for deep disease. The hip's vascular lesson — the avascular necrosis of the femoral neck — was learned on the fracture wards of the 1950s and met its answer in Thompson's and Charnley's replacements of the 1950s–60s (the low-friction arthroplasty whose bearing surfaces still follow his measurements). The Trendelenburg test (1884) and Lachman's and the pivot-shift's mid-century work turned examination into physical science; the meniscus's zones and the ACL's footprints were settled between arthroscopic surgeons and anatomists in the 1980s; and the Nachemson pressure measurements and the ambulatory-venous-pressure revolution (the work of the Lyon and Chalmers schools) gave the standing limb the physics this chapter quotes.
+:::
+
+## Where this leads
+
+DVT and its prophylaxis in [[cardiovascular/vascular-disease]]; arterial disease's management in [[cardiovascular/vascular-disease]] and [[surgery/vascular-urological-surgery]]; the diabetic foot in [[endocrine/diabetes]] and [[endocrine/diabetes-complications]]; fractures in [[surgery/orthopaedics]]; the varicose veins' surgery in [[surgery/vascular-urological-surgery]]; the ankle's radiology in [[clinical-skills/medical-imaging]].
+
+::: summary
+- The femoral neck's vessels run inside the capsule and distal-to-proximal: that one fact splits hip fractures into replace-and-fix groups and predicts the necrosis that decides follow-up.
+- NAVEL and the femoral sheath organise the groin's crossroads: the sheath takes the vessels and the canal, not the nerve; the puncture's height decides the pseudoaneurysm, the fistula and the retroperitoneal bleed.
+- The knee is ligaments outside, menisci between, cruciates inside; the tests (Lachman, drawer, tilt) are the ligaments' directions, and the meniscus's blood decides repair versus trimming.
+- The leg's veins are a hydrostatic column and a pump; venous hypertension is the gaiter ulcer's pathophysiology, and the ABPI-before-bandage rule is the arterial disease's veto.
+- Four compartments, four nerves, four pressures: the leg's pain with a pulse can still be a fasciotomy, and the first web-space's numbness is the anterior compartment's early alarm.
+- The foot's arch is a ligament-tendon composite whose tendon failures name the deformity (tibialis posterior → flat valgus foot), and its ankle's injuries are ligament sequences that the Weber classification sorts into stable and surgical.
 :::
 
 ## Exercises
 
-::: exercise The structure {level=1}
-Which part provides return of blood, and the one that the vessel is for?
+::: exercise Where does it refer? {level=1}
+Explain the referral by nerve: (a) hip disease felt in the knee; (b) obturator hernia felt medially in the thigh when the hip is extended; (c) L4 root pain in the medial leg and foot.
 ::: solution
-The vessel, and the one that the supply is for, is the one that the limit is for, in the region. The description, and the one that the supply is for, is the use, of the region and the vessel. So the vein, and the one that the vessel is for, provides return of blood.
+(a) The **obturator nerve's articular branch to the hip and its articular branch to the knee** (Hilton's law: nerves supplying a joint supply the adjacent muscle and joint too): the cortex reads the common segment (L2–4) as knee. (b) The **Howship-Romberg sign** — obturator hernia compressing the nerve in its canal, with pain along the obturator's distribution (medial thigh, to the knee), and hip extension and internal rotation tightening the canal: a thin elderly woman's bowel obstruction with this sign is the diagnosis, and the anatomy of the canal (obturator membrane, internus muscle, the nerve's division above and below the vessels) is why it happens there. (c) The **saphenous nerve**, the femoral's cutaneous branch, is the skin of the medial leg and foot — the L4 dermatome running with it — which is why the saphenous sensory loss below the knee after adductor-canal work, and the L4 root's medial-leg pain, map to the same strip.
 :::
 :::
 
-::: exercise The limb {level=1}
-What is the structure, and the one that the limb is for?
+::: exercise Pulse by pulse {level=1}
+Name the pulse point, the artery and its vertebral level of origin from the aortic arch/iliac order: (a) behind the medial malleolus; (b) on the dorsum of the foot; (c) in the adductor canal; (d) at the anterior superior iliac spine's tip line, halfway to the pubic symphysis.
 ::: solution
-The structure, and the one that the limb is for, is the one that the limit is for, and the one that the bone is for. The description, and the one that the bone is for, is the use, of the structure and the bone. So the structure, and the one that the limit is for, is the one that the bone is for, is for.
+(a) **Posterior tibial artery** — posterior to the medial malleolus between the flexor digitorum longus and hallucis tendons(the larger terminal branch of the popliteal. (b) **Dorsalis pedis** — the anterior tibial's continuation, lateral to EHL, first metatarsal space (the anaesthetist's and vascular exam's foot pulse). (c) **Femoral artery** in Hunter's canal, on adductor magnus's tendon — the occlusion point for thigh exsanguination in the old surgery, and the approach for distal superficial femoral disease. (d) The **femoral pulse at the mid-inguinal point** — the common femoral artery over the femoral head (between ASIS and pubic symphysis: the midline of the triangle) — the compression point for lower-limb haemorrhage, the catheterisation door, and the landmark whose surface anatomy the emergency physician, the anaesthetist and the interventionalist all use from different rooms.
 :::
 :::
 
-::: exercise The bone {level=2}
-Explain, the bone, and the one that the joint is for, in the articulation, and the one that the limit is for.
-::: hint
-The articulation.
-:::
+::: exercise Fix or replace? {level=1}
+For each: choose and give the vascular reason: (a) 82-year-old, displaced subcapital femoral neck fracture; (b) 26-year-old, displaced subcapital fracture; (c) 79-year-old, intertrochanteric fracture; (d) 70-year-old, undisplaced subcapital fracture.
 ::: solution
-The bone, and the one that the joint is for, is the one that the limit is for, in the articulation. The description, and the one that the articulation is for, is the use, of the articulation and the bone. So the articulation, and the one that the limit is for, is for, in the bone, and the one that the joint is for.
+(a) **Hemiarthroplasty (or total hip for the fit, active, cognitively intact)** — the retinacular vessels are torn and the head will not be re-vascularised at this age; replacement treats the fracture and its necrosis in one operation. (b) **Emergency open reduction and internal fixation** — every attempt to save the head is justified when 40 years of loading follow, and the delay is the clot's chance. (c) **Internal fixation (dynamic hip screw/cephalomedullary nail)** — the extracapsular fracture's blood supply is intact and the bone heals; the operation's job is mechanical. (d) **Internal fixation (screws) with viability follow-up** — undisplaced means the retinacular vessels are likely preserved, and the risk is iatrogenic displacement, which is why "watch it out" is not the answer to undisplaced.
 :::
 :::
 
-::: exercise The muscle {level=2}
-Explain, the muscle, and the one that the function is for, in the contraction, and the one that the limit is for.
-::: hint
-The contraction.
-:::
+::: exercise The nerve behind the knee {level=2}
+A posterior dislocation of the knee (high-energy dashboard injury) leaves the foot numb on the sole and the dorsum with total paralysis of all movements below the ankle; the pulse is present. Which structures, and what is the vascular trap?
 ::: solution
-The muscle, and the one that the function is for, is the one that the limit is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle. So the contraction, and the one that the limit is for, is for, in the muscle, and the one that the function is for.
+A **tibial nerve plus common peroneal nerve** palsy — the two divisions of the sciatic or the nerves themselves in the popliteal fossa stretched over the displaced tibia; the sole is tibial, the dorsum peroneal, and the motor paralysis of both is the fossa's complete list. The **vascular trap**: the popliteal artery is tethered by the genicular branches and the soleal arcade, and dislocation can stretch it to an **intimal tear with a preserved pulse** — thrombosis follows within hours, and the amputation rate climbs with every hour of delay. Management is the orthopaedic rule: reduce the dislocation, then examine pulses **before and after** with ABI, and have a low threshold for CT angiography or exploration with a vascular team — the lesion with a pulse is the lesion that will not have one.
 :::
 :::
 
-::: exercise The nerve {level=2}
-Explain, the nerve, and the one that the control is for, in the branch, and the one that the limit is for.
-::: hint
-The branch.
-:::
+::: exercise The vein harvest {level=2}
+A patient's great saphenous vein is harvested for a coronary bypass; afterwards there is numbness along the medial leg to the medial malleolus and a swollen foot on standing. Explain each, naming the nerve and the anatomy of the harvest field.
 ::: solution
-The nerve, and the one that the control is for, is the one that the limit is for, in the branch. The description, and the one that the branch is for, is the use, of the branch and the nerve. So the branch, and the one that the limit is for, is for, in the nerve, and the one that the control is for.
+The numbness is the **saphenous nerve**, which accompanies the lower great saphenous vein closely — below the knee it runs beside the vein between sartorius and gracilis and in front of the medial malleolus — so its branches are inevitably trapped or cut in the harvest tunnel: a nerve-sacrifice trade inherent to the field and worth consent. The swelling is the harvest itself: with the superficial trunk gone the dependent limb relies on the deep system, and the ankle oedema is the load the calf pump now redistributes — managed with the compression stocking that becomes the bypass patient's companion, and lessened by endoscopic harvest, while the groin dissection at the fossa ovalis (tributaries and nodes) remains the dangerous centimetre of the operation.
 :::
 :::
 
-::: exercise The tendon {level=3}
-Explain, the tendon, and the one that the insertion is for, in the muscle, and the one that the limit is for.
-::: hint
-The insertion.
-:::
+::: exercise Bandage first, ask later {level=2}
+A gaiter-area ulcer is dressed with high-compression bandaging by a nurse following the venous pathway. The patient develops rest pain in the foot two days later. What did the protocol miss, and what is the anatomy-graded rule for the bandage?
 ::: solution
-The tendon, and the one that the insertion is for, is the one that the limit is for, in the insertion. The description, and the one that the insertion is for, is the use, of the insertion and the tendon. So the insertion, and the one that the limit is for, is for, in the tendon, and the one that the muscle is for.
+The protocol skipped the **ABPI**: high compression applied to an ischaemic limb (the "mixed" ulcer — venous skin with arterial inflow) lowers the already marginal perfusion pressure below tissue viability and produces ischaemic rest pain — the danger of a good rule applied without the check. The graded rule (the compression-ulcer-care consensus): **ABPI 0.8–1.3 full compression (40 mmHg); 0.5–0.8 modified/reduced compression; <0.5 no compression, vascular referral; incompressible vessels (calcified diabetic medial disease, falsely high ABPI) use toe pressure and volume-recording plethysmography** — the same measurement first, always, because the leg's two systems can fail at once, and the bandage that heals the venous ulcer can demarcate the gangrene the arterial disease was keeping marginal.
 :::
 :::
 
-::: exercise The ligament {level=3}
-Explain, the ligament, and the one that the joint is for, in the bond, and the one that the limit is for.
-::: hint
-The bond.
-:::
+::: exercise Which sprain is which {level=2}
+Give the injured structure and the test: (a) pain and oedema at the base of the fifth metatarsal after an inversion injury; (b) pain behind the medial malleolus with a positive Tinel; (c) swelling of the first MTP joint in a middle-aged man; (d) tenderness between the malleoli's tips with pain on external rotation and a positive squeeze test.
 ::: solution
-The ligament, and the one that the joint is for, is the one that the limit is for, in the bond. The description, and the one that the bond is for, is the use, of the bond and the ligament. So the bond, and the one that the limit is for, is for, in the ligament, and the one that the joint is for.
+(a) **Peroneus brevis avulsion (pseudo-Jones) fracture of the fifth metatarsal base (the styloid)** — brevis and the lateral band of the plantar fascia pull the tuberosity off in inversion — versus the true **Jones fracture**, 1.5–2 cm distal at the metaphyseal–diaphyseal junction, the stress-prone, poorly vascularised zone the surgeon screws. (b) **Tarsal tunnel (posterior tibial nerve) entrapment**, with the medially-lying tendons' tendonitis in the differential — the tunnel's order from anterior/medial to posterior (behind the medial malleolus): **tibialis posterior, flexor digitorum longus, the posterior tibial artery and vein, the tibial nerve, and flexor hallucis longus** ("Tom, Dick And Very Nervous Harry") — the nerve the most superficial and easiest needle target. (c) **Gout of the first metatarso-phalangeal joint (podagra)** — the joint at the furthest dependent point and coolest temperature, the urate's favourite — the differential being the first MTP's hallux rigidus and the Freiberg's infraction of the second head. (d) **The high (syndesmotic) ankle injury / Weber B-C fracture pattern** — the interosseous and tibiofibular ligaments; the squeeze (compress the mid-calf, pain at the syndesmosis) and external-rotation tests are its physical examination, and the widened medial clear space on stress view is its radiographic verdict: an unstable mortise that needs fixation.
 :::
 :::
 
-::: exercise The membrane {level=3}
-Explain, the membrane, and the one that the joint is for, in the lining, and the one that the limit is for.
-::: hint
-The lining.
-:::
+::: exercise Design the nerve block {level=3}
+Map the five nerves of an ankle block, where each lies at the ankle, and three anatomical hazards of the technique.
 ::: solution
-The membrane, and the one that the lining is for, is the one that the limit is for, in the lining. The description, and the one that the lining is for, is the use, of the lining and the membrane. So the lining, and the one that the limit is for, is for, in the membrane, and the one that the joint is for.
+**Five points.** **Saphenous** (with the great saphenous vein anterior to the medial malleolus) — medial foot skin. **Sural** (behind the lateral malleolus with the small saphenous vein) — lateral margin and little toe. **Superficial peroneal** (subcutaneous over the anterior ankle, lateral to the retinaculum) — most of the dorsum. **Deep peroneal** (between EHL and EDL, lateral to the dorsalis pedis; the **first web space is its territory**, so a toe-web block finishes it). **Tibial** (behind the medial malleolus, superficial to FHL and lateral to the vessels — the workhorse block of the whole foot, done with aspiration, slow injection and minimum volume). Hazards: **intravascular injection** (posterior tibial vessels and venae comitantes — aspirate at every station); **intraneural injection** (the tight tibial sheath means: resistance means stop; a tourniquet then adds a compression palsy to the differential); and **the crossing anatomy at the lateral malleolus** (sural nerve and short saphenous vein lie exactly where the anaesthetised patient cannot tell you). In practice a good tibial block plus a superficial-peroneal field block covers forefoot surgery without the motor standstill of a sciatic block — the ankle is five nerves wide, but you need not block all five.
 :::
 :::

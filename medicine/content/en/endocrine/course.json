@@ -8,8 +8,9 @@
   "tagline": "The pituitary, thyroid and adrenals, diabetes, bone and calcium, and reproductive hormones",
   "summary": "Hormones coordinate growth, metabolism and reproduction. This course covers the hypothalamus and pituitary, thyroid and adrenal disease, diabetes mellitus and its complications, bone and calcium metabolism, reproductive endocrinology and endocrine emergencies.",
   "overview": [
-    "The gland, and the one that the system is for, is the one that the limit is for, and the one that the hormone is for. This course follows the gland and the one that the hormone is for, from the mechanism and the one that the limit is for, to the practice and the one that the endocrine is for, and gives the method and the check that make it work.",
-    "We build the gland and the one that the hormone is for, from the process and the structure, and then study how the clinical and the endocrine, and the one that the limit is for, are for."
+    "The endocrine system is the body's slow communication network: hormones secreted into blood, acting on receptors in distant cells, arranged in feedback loops that make the system behave like an engineering control circuit. This is what makes endocrine biochemistry so diagnosable — an axis, a set point, negative feedback, and a pattern of tests that locates the lesion between glands — and what makes its diseases so systemic, because no hormone has a single job.",
+    "The course runs through the axes in physiological order: hypothalamus and pituitary as the master circuits, with the tumours and the syndromes of too much and too little; the thyroid in health and in autoimmunity; the adrenal cortex and medulla, steroid biochemistry and the hypertensive presentations; diabetes mellitus in two chapters, one for pathophysiology and management, one for the acute and chronic complications; calcium and bone with parathyroid and vitamin D; and reproductive endocrinology from puberty to the menopause. A final chapter covers the emergencies — DKA, myxoedema coma, adrenal crisis, phaeochromocytoma, hypercalcaemia, pituitary apoplexy.",
+    "Quantitative reasoning is central throughout: free hormone fractions and binding proteins, the log-linear pituitary–thyroid relationship that makes TSH the screening test, osmolality and sodium correction limits, HbA1c as a weighted average of glycaemia, insulin pharmacokinetics, hormone half-lives and replacement timing. Every patient-facing statement is framed as principle; actual prescribing follows current guidelines and an individual plan."
   ],
   "prerequisites": [
     "anatomy",
@@ -18,11 +19,14 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Explain the gland, and the one that the mechanism is for, in the limit",
-    "Explain the hormone, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the gland is for, in the limit",
-    "Outline the management, and the one that the hormone is for, in the limit",
-    "Recognise the state, and the one that the gland is for, in the limit"
+    "Explain hypothalamic–pituitary control of each endocrine axis, the logic of short-loop and long-loop feedback, and how patterned hormone results localise a lesion to gland, pituitary or hypothalamus.",
+    "Diagnose and reason about the management of hypopituitarism, prolactinoma, acromegaly, Cushing's disease and syndrome, diabetes insipidus and the SIADH series.",
+    "Describe thyroid hormone synthesis, transport and action; investigate and interpret thyroid function tests; and manage hypothyroidism, thyrotoxicosis, thyroiditis and nodules including cancer principles.",
+    "Outline adrenal steroid biosynthesis and its regulation, and explain the presentations, diagnosis and long-term management of adrenal insufficiency, Cushing's syndrome, primary aldosteronism and phaeochromocytoma.",
+    "Distinguish type 1 from type 2 diabetes in mechanism and management, explain insulin and oral agent pharmacology, titration logic and sick-day rules, and interpret HbA1c and glucose monitoring data.",
+    "Explain the pathogenesis and screening of microvascular and macrovascular diabetic complications, and the recognition and management of hypoglycaemia, diabetic ketoacidosis and the hyperosmolar state.",
+    "Describe calcium and phosphate physiology with parathyroid hormone and vitamin D, diagnose the causes of abnormal corrected calcium, and reason about osteoporosis and Paget's disease.",
+    "Manage endocrine emergencies — myxoedema coma, thyroid crisis, adrenal crisis, phaeochromocytoma crisis, hypercalcaemia, pituitary apoplexy — according to resuscitation-first principles."
   ],
   "chapters": [
     {
@@ -95,27 +99,85 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the gland is for, is the one that the hormone is for, of the structure.",
+      "year": 1849,
+      "title": "The liver as an organ of sugar",
+      "detail": "Claude Bernard discovers glycogen in the liver, produces experimental diabetes by puncturing the floor of the fourth ventricle (the piqûre), and shows that the nervous system regulates blood sugar — physiology acquires the concept of a internal milieu under reflex control.",
       "people": [
-        "Harvey"
+        "Claude Bernard"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the gland is for, is the one that the hormone is for, of the process.",
+      "year": 1889,
+      "title": "Pancreatectomy and sugar",
+      "detail": "Oskar Minkowski, with Joseph von Mering, removes a dog's pancreas and produces fatal diabetes with glycosuria, proving that the pancreas secretes something that prevents diabetes and setting the search that Banting and Best would end in 1921.",
       "people": [
-        "Lister"
+        "Joseph von Mering",
+        "Oskar Minkowski"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the gland is for, is the one that the hormone is for, of the mechanism.",
+      "year": 1902,
+      "title": "Chemical messengers",
+      "detail": "William Bayliss and Ernest Starling, perfusing a isolated loop of dog intestine, show that acid in the duodenum releases a substance in the blood that commands the pancreas to secrete; Starling names such substances hormones in 1905, and the endocrine system becomes a communication system.",
       "people": [
-        "Koche"
+        "William Bayliss",
+        "Ernest Starling"
+      ]
+    },
+    {
+      "year": 1909,
+      "title": "Thyroid surgery made safe",
+      "detail": "Theodor Kocher receives the Nobel Prize for his work on the thyroid gland; goitre surgery at the Berne Insular Hospital had been lethal, and Kocher's capsular technique and systematic attention to the recurrent laryngeal nerves and parathyroids brought operative mortality under one per cent.",
+      "people": [
+        "Theodor Kocher"
+      ]
+    },
+    {
+      "year": 1921,
+      "title": "Isolation of insulin",
+      "detail": "At the University of Toronto, Frederick Banting, working with Charles Best under J. J. R. Macleod, isolates an islet extract that normalises glycaemia in the pancreatectomised dog; James Collip's purification makes it safe enough that Leonard Thompson, a seventeen-year-old in ketoacidosis, survives treatment in January 1922 — within a year insulin had turned diabetic ketoacidosis from a death sentence into a manageable event.",
+      "people": [
+        "Frederick Banting",
+        "Charles Best",
+        "James Collip",
+        "John Macleod"
+      ]
+    },
+    {
+      "year": 1936,
+      "title": "Cushing's syndrome",
+      "detail": "Harvey Cushing, the Boston neurosurgeon who had already named pituitary cachexia and the chromophobe adenoma, describes the syndrome of polyglandular dysfunction with adiposity, hypertension and glycosuria that bears his name, tying a clinical picture to a basophil pituitary tumour.",
+      "people": [
+        "Harvey Cushing"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "Cortisone",
+      "detail": "After Kendall's years of work isolating adrenal cortical extracts at Mayo and Reich's synthesis, Hench, Kendall and Reich receive the Nobel Prize for the discovery that cortisone relieves the manifestations of adrenal insufficiency and suppresses inflammation — the birth of steroid therapy and of its huge iatrogenic aftermath.",
+      "people": [
+        "Philip Hench",
+        "Edward Kendall",
+        "Tadeus Reich"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "Measuring the unmeasurable",
+      "detail": "Rosalyn Yalow and Solomon Berson develop radioimmunoassay using antibodies and radioactive insulin to measure peptide hormones at minute concentrations in blood; every subsequent hormone assay, and much of endocrinology as a precision specialty, rests on the technique (Yalow's Nobel Prize, 1977).",
+      "people": [
+        "Rosalyn Yalow",
+        "Solomon Berson"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "Human insulin made in bacteria",
+      "detail": "Teams at Genentech — working with Howard Goodman's laboratory — insert the human insulin gene into bacteria, and biosynthetic human insulin follows; the first genetically engineered medicine licensed for human use (approved 1982), opening the era of recombinant hormones from growth hormone to erythropoietin.",
+      "people": [
+        "Howard Goodman",
+        "David Goeddel",
+        "Dennis Kleid"
       ]
     }
   ],

@@ -8,19 +8,24 @@
   "tagline": "Fever and sepsis, HIV, tuberculosis, tropical and sexually transmitted infections, and antimicrobial stewardship",
   "summary": "Infections remain a leading cause of illness and death worldwide. This course approaches infection clinically: the febrile patient and sepsis, HIV and tuberculosis, malaria and other tropical infections, sexually transmitted infections, infections in healthcare and in people with weakened immunity, antimicrobial stewardship, and outbreaks and emerging infections.",
   "overview": [
-    "The pathogen, and the one that the system is for, is the one that the limit is for, and the one that the infection is for. This course follows the pathogen and the one that the infection is for, from the mechanism and the one that the limit is for, to the practice and the one that the infectious is for, and gives the method and the check that make it work.",
-    "We build the pathogen and the one that the infection is for, from the process and the structure, and then study how the clinical and the infectious, and the one that the limit is for, are for."
+    "Infectious diseases are the great mimics and the great levellers: every fever without a focus, every pneumonia, every traveller's rash and every line-related sepsis is caused by a living organism with its own epidemiology. This course teaches the clinical discipline — syndromic reasoning from fever syndrome to source, from exposure history to organism, from host defences to likely bug — together with the great individual infections that dominate global burden.",
+    "It opens with fever and sepsis: the systemic inflammatory response, the sepsis bundles, and the culture-negative fevers. Then the persistent pandemics: HIV from viral lifecycle to antiretroviral strategy, treatment as prevention and the complications of immunodeficiency; tuberculosis, the world's leading infectious killer, with its microbiology, latent infection, drug regimens and resistance. Chapters then cover tropical infections by mechanism (vector-borne, water-borne, helminths), sexually transmitted infections and their syndromic management, and the infections of healthcare: line and urinary sepsis, Clostridioides difficile, surgical wounds, MRSA and outbreak-prone organisms. A chapter on the immunocompromised host — the neutropenic, the splenectomised, the transplant recipient, the person with HIV — assembles the exposure-and-deficit reasoning that makes that group diagnosable, and the course closes with antimicrobial stewardship and outbreak investigation: the public-health half of the specialty.",
+    "Throughout, the emphasis is on the logic of specifying therapy — empirical then targeted — source control, and the infection-control consequences of each diagnosis, with guidance framed by WHO and national bodies because recommendations differ by country and change."
   ],
   "prerequisites": [
     "microbiology",
     "clinical-skills"
   ],
   "outcomes": [
-    "Explain the pathogen, and the one that the mechanism is for, in the limit",
-    "Explain the infection, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the pathogen is for, in the limit",
-    "Outline the management, and the one that the infection is for, in the limit",
-    "Recognise the state, and the one that the pathogen is for, in the limit"
+    "Apply the syndromic approach to fever: recognise the life-threatening causes of acute fever, localise a source, and choose empirical then targeted antimicrobials with correct use of cultures and imaging.",
+    "Define sepsis by current criteria, apply the initial management bundle, and describe the principles of organ support and de-escalation.",
+    "Describe HIV virology and lifecycle, natural history and immunodeficiency, diagnosis including acute seroconversion, the principles and classes of antiretroviral therapy, treatment as prevention, and the main opportunistic infections and their prophylaxis.",
+    "Explain Mycobacterium tuberculosis microbiology and pathogenesis, diagnose latent and active pulmonary and extrapulmonary disease, outline first- and second-line treatment principles, drug toxicity monitoring, and the epidemiology and management of drug resistance.",
+    "Recognise the major tropical infections — malaria first, with its severity criteria and emergency management — plus dengue, rickettsioses, typhoid, viral hepatitis, schistosomiasis, soil-transmitted helminths and the returning-fever differential, and use travel history systematically.",
+    "Diagnose and manage the common sexually transmitted infections including syphilis, gonorrhoea, chlamydia, genital herpes and HIV, apply contact tracing and partner notification, and understand antimicrobial-resistance pressures in gonorrhoea.",
+    "Identify healthcare-associated infections by device and site, apply the principles of line and urinary catheter care, recognise C. difficile infection and its management, and describe the control of multidrug-resistant organisms.",
+    "Reason about infection in the immunocompromised host from the nature and duration of immune deficit to likely organisms and diagnostic tests, including the neutropenic-sepsis pathway.",
+    "Explain antimicrobial resistance mechanisms and population consequences, and describe stewardship interventions and outbreak investigation step by step (case definition, curve, source, control measures)."
   ],
   "chapters": [
     {
@@ -93,27 +98,85 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the pathogen is for, is the one that the infection is for, of the structure.",
+      "year": 1882,
+      "title": "The tubercle bacillus",
+      "detail": "Robert Koch announces the aetiology of tuberculosis, with staining and culture methods and postulates for proving microbial causation; tuberculosis, the greatest killer of the age, acquires a target — though a treatment is still seventy years away.",
       "people": [
-        "Harvey"
+        "Robert Koch"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the pathogen is for, is the one that the infection is for, of the process.",
+      "year": 1898,
+      "title": "The mosquito theory of malaria",
+      "detail": "After Laveran's 1880 discovery of the parasite, Ronald Ross — and independently Giovanni Battista Grassi — work out the complete Plasmodium lifecycle in mosquitoes, converting Golgi's clinical malaria typology into a transmissible disease that could be attacked at the vector.",
       "people": [
-        "Lister"
+        "Ronald Ross",
+        "Giovanni Battista Grassi",
+        "Alphonse Laveran"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the pathogen is for, is the one that the infection is for, of the mechanism.",
+      "year": 1910,
+      "title": "The magic bullet",
+      "detail": "Paul Ehrlich's team introduces salvarsan (arsphenamine) for syphilis — the first synthetic systemic antimicrobial and the proof that a chemical could target a microbe in the body, with the trial-and-toxicity trade-off that names the whole field of chemotherapy.",
       "people": [
-        "Koche"
+        "Paul Ehrlich",
+        "Sahachiro Hata"
+      ]
+    },
+    {
+      "year": 1929,
+      "title": "Penicillin noticed",
+      "detail": "Alexander Fleming, back from holiday, notices a mould contaminant lysing staphylococci and describes the bacteriolysis; the observation sleeps a decade until Howard Florey and Ernst Boris Chain at Oxford purify, test and prove penicillin (with Norman Heatley's engineering), and the beta-lactam era begins.",
+      "people": [
+        "Alexander Fleming",
+        "Howard Florey",
+        "Ernst Boris Chain",
+        "Norman Heatley"
+      ]
+    },
+    {
+      "year": 1944,
+      "title": "Streptomycin — and its price",
+      "detail": "The first effective treatment for tuberculosis, isolated from soil bacteria by Albert Schatz working with Selman Waksman, proves chemotherapy of a chronic intracellular infection possible; its almost immediate emergence of resistance becomes the founding lesson of stewardship and combination therapy.",
+      "people": [
+        "Albert Schatz",
+        "Selman Waksman"
+      ]
+    },
+    {
+      "year": 1955,
+      "title": "Field trial of the polio vaccine",
+      "detail": "The largest medical experiment to date — 1.8 million children, placebo-controlled, double-blind for the injectable Salk vaccine — demonstrates efficacy and launches mass immunisation against paralytic poliomyelitis; Sabin's oral vaccine follows in the early 1960s and together they set the eradication agenda.",
+      "people": [
+        "Jonas Salk",
+        "Albert Sabin"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "A new syndrome reported",
+      "detail": "The CDC's MMWR reports Pneumocystis pneumonia and Kaposi sarcoma in five previously healthy young men in Los Angeles; within two years the aetiological retrovirus is identified (Gallo and Montagnier's groups) and named HIV, and the pandemic, its treatments and its stigma dominate two generations of medicine.",
+      "people": [
+        "Michael Gottlieb",
+        "Robert Gallo",
+        "Luc Montagnier"
+      ]
+    },
+    {
+      "year": 1996,
+      "title": "Combination antiretroviral therapy",
+      "detail": "David Ho and colleagues, joined by trials of protease-inhibitor combinations, show that potent multi-drug therapy suppresses HIV replication and reverses the epidemic's death curves in treated populations; HIV infection becomes a chronic disease where drugs are available and adherence is destiny.",
+      "people": [
+        "David Ho"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "Ebola and the limits of response",
+      "detail": "The West African Ebola epidemic — 28,000 cases, 11,000 deaths — exposes the gap between virological knowledge and health-system capacity, and provokes the WHO's International Health Regulations review, vaccine ring vaccination later proved in Guinea, and the 'research during outbreaks' agenda.",
+      "people": [
+        "World Health Organization"
       ]
     }
   ],

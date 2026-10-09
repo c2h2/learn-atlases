@@ -522,3 +522,9 @@ figure.widget > figcaption { border-top: 1px solid var(--rule); padding: 10px 16
 :lang(zh) i, :lang(zh) em { font-style: normal; font-weight: 600; }
 :lang(zh) .katex i, :lang(zh) .katex em { font-style: inherit; font-weight: inherit; }
 .lesson-body:lang(zh) p > .katex, .lesson-body:lang(zh) li > .katex, .lesson-body:lang(zh) td > .katex { margin: 0 0.18em; }
+
+/* unwritten chapters listed on an "in preparation" lesson page */
+.chapter-list li.is-missing .t::after { content: none; }
+.chapter-list li.is-missing:hover { background: none; }
+.chapter-list li.is-missing .t { color: var(--ink-2); }
+.chapter-list li.is-current { background: color-mix(in srgb, var(--c) 7%, transparent); box-shadow: inset 3px 0 0 var(--c); }

@@ -112,8 +112,8 @@ page_head(t('Map'), 'map', ['description' => t('How the courses depend on each o
       <div>
         <h3 class="sub" style="display:flex;align-items:center;gap:8px"><span class="area-chip" style="--c:var(--a-<?= h($c['area']) ?>)"><i></i></span><a href="<?= h(url('course.php', ['c' => $s])) ?>" style="color:var(--ink);text-decoration:none"><?= h(md_plain($c['title'])) ?></a></h3>
         <ol class="small" style="padding-left:1.4em;margin:6px 0 0;color:var(--ink-2)">
-          <?php foreach ($c['chapters'] as $ch): $req = ma_requires($ch); ?>
-          <li style="padding:2px 0"><a href="<?= h(url('lesson.php', ['c' => $s, 'l' => $ch['slug']])) ?>"><?= h(md_plain($ch['title'])) ?></a><?php
+          <?php foreach ($c['chapters'] as $ch): $req = ma_requires($ch); $miss = !empty($idx['chapters'][$s . '/' . $ch['slug']]['missing']); ?>
+          <li style="padding:2px 0"><?php if ($miss): ?><span class="muted"><?= h(md_plain($ch['title'])) ?> · <?= h(t('in preparation')) ?></span><?php else: ?><a href="<?= h(url('lesson.php', ['c' => $s, 'l' => $ch['slug']])) ?>"><?= h(md_plain($ch['title'])) ?></a><?php endif; ?><?php
             $ext = array_filter($req, fn($r) => !str_starts_with($r, $s . '/'));
             if ($ext): ?> <span class="muted">← <?= h(implode(list_sep(), array_map(function ($r) { [$rc, $rl] = explode('/', $r); return md_plain(ma_course($rc)['title']) . ': ' . md_plain(ma_chapter_meta($rc, $rl)['title']); }, $ext))) ?></span><?php endif; ?></li>
           <?php endforeach; ?>

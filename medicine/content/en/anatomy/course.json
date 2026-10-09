@@ -8,17 +8,21 @@
   "tagline": "Regional anatomy of the body, embryology and anatomy on medical images",
   "summary": "Clinical examination, imaging and surgery all rest on anatomy. This course describes the body region by region — thorax, abdomen, pelvis, back and limbs, head and neck, and the nervous system — together with the development of the embryo and how anatomy appears in medical images.",
   "overview": [
-    "The structure, and the one that the function is for, is the one that the limit is for, and the one that the region is for. This course follows the anatomy, and the one that the body is for, from the language and the plane, and the one that the position is for, to each region and the one that the organ is for, and gives the method and the check that make it work.",
-    "We build the body from the language and the tissue, and then study how the thorax and the abdomen, and the one that the limit is for, are for."
+    "Anatomy is the ground on which the rest of clinical medicine stands. Examination, imaging, surgery and procedures all presuppose a three-dimensional map of the body: what lies where, what separates it from its neighbours, and what a lesion of each structure would look like. A medical student's anatomy is therefore not a catalogue of parts but a set of clinical arguments — why a midshaft humeral fracture endangers the radial nerve, why an indirect inguinal hernia passes above the pubic tubercle, why a perforation behind the papilla of Vater gives right iliac fossa pain.",
+    "This course builds the map region by region. It begins with the language of anatomy and the embryo, because terms of position and an understanding of how organs form and descend explain both imaging planes and congenital anomalies. The thorax and abdomen follow, with their serous cavities, viscera and vessels; then the pelvis and perineum, the back and limbs with their nerve plexuses, the head and neck, and finally the nervous system itself — brain, membranes, blood supply and tracts.",
+    "Throughout, the emphasis is applied. Each region is presented through its surfaces, triangles and canals, its arterial and nervous supply, and the injuries and disease that follow when these are interrupted: fracture displacements, nerve palsy patterns, hernias, anastomoses that bleed in portal hypertension, and the anatomy that makes a chest drain, a lumbar puncture or a nerve block safe. Imaging — plain radiography, CT, MRI and ultrasound — is treated as anatomy in another medium, and every region is followed from the specimen to the scan."
   ],
   "prerequisites": [],
   "outcomes": [
-    "Explain the position, and the one that the plane is for, in the body",
-    "Explain the region, and the one that the structure is for, in the thorax and the abdomen",
-    "Explain the nerve, and the one that the muscle is for, in the limb",
-    "Explain the vessel, and the one that the region is for, in the body",
-    "Explain the organ, and the one that the system is for, in the region",
-    "Explain the imaging, and the one that the tissue is for, in the body"
+    "Use the standard terms of position, planes and movement correctly, and describe any structure in terms of its relations, blood supply, nerve supply and lymphatic drainage.",
+    "Outline the main stages of embryonic development — fertilisation to parturition, germ layers, folding, and the development of the gut, heart and urogenital systems — and relate common congenital anomalies to the stage at which development went wrong.",
+    "Describe the thorax — mediastinum, heart and pericardium, coronary circulation, lungs and pleural reflections — and apply this to chest pain, pleural effusion, pericardiocentesis and chest drain insertion.",
+    "Describe the abdominal wall, peritoneal cavity and viscera with their blood supply, and explain the anatomy of inguinal hernias, referred abdominal pain, portal-systemic anastomoses and McBurney's point.",
+    "Describe the pelvis and perineum, the pelvic floor and pelvic fasciae, and apply this to obstetric perineal tears, haemorrhoids, pelvic organ prolapse and catheterisation.",
+    "Describe the upper and lower limbs with the brachial and lumbosacral plexuses, and diagnose the common nerve lesions and fracture displacements of each region.",
+    "Describe the head and neck — skull, infratemporal fossa, orbit, pharynx, larynx, triangles of the neck and cranial nerves — and perform a cranial nerve examination on anatomical grounds.",
+    "Correlate the gross anatomy and vascular supply of the brain, brainstem, cerebellum and spinal cord with classic clinical syndromes, and localise a lesion from a set of signs.",
+    "Identify on plain radiographs, cross-sectional CT and MRI the structures relevant to each region, and state the anatomical basis of common imaging signs."
   ],
   "chapters": [
     {
@@ -95,27 +99,91 @@
   ],
   "history": [
     {
-      "year": -400,
-      "title": "The description",
-      "detail": "The description and the one that the body is for, is the one that the structure is for, of the part.",
+      "year": -300,
+      "title": "Human dissection at Alexandria",
+      "detail": "Herophilos of Chalcedon and Erasistratos, working with Ptolemaic patronage, dissect human bodies and describe the duodenum, the prostate, the sensory and motor divisions of the spinal roots and the brain's ventricles — anatomy founded on observation rather than authority.",
       "people": [
-        "Hippocrates"
+        "Herophilos of Chalcedon",
+        "Erasistratos of Ceos"
+      ]
+    },
+    {
+      "year": 150,
+      "title": "Galen's synthesis",
+      "detail": "Claudius Galen of Pergamon, drawing on animal dissection and his experience treating gladiators, produces an anatomical-physiological system so complete and so persuasive that it is treated as doctrine for fourteen centuries — corrected only when its errors became embarrassments rather than heresies.",
+      "people": [
+        "Claudius Galen"
       ]
     },
     {
       "year": 1543,
-      "title": "The Anatomy",
-      "detail": "The work and the one that the structure is for, is the one that the body is for, of the part.",
+      "title": "De humani corporis fabrica",
+      "detail": "Andreas Vesalius, professor at Padua, publishes seven books of human anatomy based on dissections performed by his own hand, with figures from a Venetian workshop; the book corrects Galen from the specimens and founds modern descriptive anatomy.",
       "people": [
-        "Vesalius"
+        "Andreas Vesalius"
+      ]
+    },
+    {
+      "year": 1628,
+      "title": "The circulation of the blood",
+      "detail": "William Harvey's Exercitio Anatomica shows by measurement and ligation experiments that the heart moves blood in a circle — the first sustained quantitative argument in physiology, and a demonstration of what anatomical method could settle.",
+      "people": [
+        "William Harvey"
+      ]
+    },
+    {
+      "year": 1811,
+      "title": "Bell's law",
+      "detail": "Charles Bell, examining the dorsal and ventral roots of the spinal cord in animals and in patients, argues that ventral roots carry motor fibres and dorsal roots sensory; anatomy begins to explain deficits rather than merely describe them (François Magendie reaches the same conclusion from experiments in 1822).",
+      "people": [
+        "Charles Bell",
+        "François Magendie"
+      ]
+    },
+    {
+      "year": 1858,
+      "title": "Gray's Anatomy",
+      "detail": "Henry Gray, with the illustrator Henry Vandyke Carter, publishes a Descriptive and Surgical Anatomy of the Human Body at a price students could afford; reissued through dozens of editions, it remains the standard reference of successive generations of medical students.",
+      "people": [
+        "Henry Gray",
+        "Henry Vandyke Carter"
       ]
     },
     {
       "year": 1895,
-      "title": "The ray",
-      "detail": "The ray and the one that the body is for, is the one that the imaging is for, of the structure.",
+      "title": "Anatomy visible in the living",
+      "detail": "Wilhelm Röntgen's discovery of the X ray is applied within months to fractures, bullets and the gastrointestinal tract, transforming anatomy from a post-mortem science into an imaging science and creating radiology as a clinical discipline.",
       "people": [
-        "Roentgen"
+        "Wilhelm Röntgen"
+      ]
+    },
+    {
+      "year": 1907,
+      "title": "Sections of the human brain",
+      "detail": "Franz Nissl's staining methods and, from 1901, Oskar and Cécile Vogt's systematic cytoarchitectonic atlas work let Korbinian Brodmann define his areas in 1909 — the cortex becomes a map of functionally distinct fields, the ancestor of every modern brain atlas.",
+      "people": [
+        "Franz Nissl",
+        "Korbinian Brodmann",
+        "Oskar Vogt"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "Thalidomide and the timetable of the embryo",
+      "detail": "Widukind Lenz and, independently, William McBride link limb malformations to the sedative thalidomide taken in early pregnancy; the observation that a drug can act at a critical window of organogenesis founds modern teratology and drug regulation in pregnancy.",
+      "people": [
+        "Widukind Lenz",
+        "William McBride"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "The genetic programme of development",
+      "detail": "Christiane Nüsslein-Volhard and Eric Wieschaus mutate the fruit-fly genome systematically and find the segmentation genes, and with Walter Gehring the homeobox, showing that the body plan is built by a conserved genetic programme — the mechanism behind the embryology taught since Vesalius.",
+      "people": [
+        "Christiane Nüsslein-Volhard",
+        "Eric Wieschaus",
+        "Walter Gehring"
       ]
     }
   ],

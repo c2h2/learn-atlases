@@ -8,8 +8,9 @@
   "tagline": "Digestion and absorption, the gut, the liver, the pancreas and biliary tract, and clinical nutrition",
   "summary": "The gut digests and absorbs food and the liver processes what is absorbed. This course covers the physiology of digestion, disorders of the oesophagus, stomach and bowel, gastrointestinal bleeding and cancer, the liver and its diseases, the pancreas and biliary tract, and clinical nutrition.",
   "overview": [
-    "The organ, and the one that the system is for, is the one that the limit is for, and the one that the gut is for. This course follows the organ and the one that the gut is for, from the mechanism and the one that the limit is for, to the practice and the one that the gastrointestinal is for, and gives the method and the check that make it work.",
-    "We build the organ and the one that the gut is for, from the process and the structure, and then study how the clinical and the gastrointestinal, and the one that the limit is for, are for."
+    "The gastrointestinal tract does one job — get fuel and water from outside the body to inside — and does it through motility, secretion, digestion, absorption and a mucosal barrier carrying the body's largest lymphoid mass, all while the liver metabolises, detoxifies, synthesises and regulates on an industrial scale. Diseases of the system present with a short list of symptoms (pain, altered bowel habit, bleeding, vomiting, jaundice, weight loss, dysphagia) whose combinations localise the lesion better than almost any other branch of medicine.",
+    "This course begins with the physiology you need: secretion and its control, motility, digestion and absorption, and the enterohepatic circulation. It then moves regionally — oesophagus and stomach (reflux, ulcer disease and Helicobacter, dyspepsia, cancer); the small and large bowel (coeliac disease, inflammatory bowel disease, coeliac's mimics, diverticular disease, obstruction, irritable bowel); gastrointestinal bleeding and cancer screening and surveillance. Liver chapters cover liver function tests as a physiological puzzle, then jaundice, hepatitis, cirrhosis and its complications, and liver failure; then pancreatitis and biliary disease. A final chapter on clinical nutrition ties it together: starvation metabolism, enteral and parenteral feeding, and the refeeding problem.",
+    "Quantitative work runs throughout: clearance and synthetic tests of liver function, the transtubular handling of bile salts, osmotic and faecal gap arithmetic in diarrhoea, rising bilirubin fractions, pancreatic enzyme kinetics, energy and nitrogen requirements. Clinical cases follow each mechanism, because in gastroenterology the history is the differential — and the differentials are long and the treatments frequently unromantic."
   ],
   "prerequisites": [
     "anatomy",
@@ -19,11 +20,14 @@
     "microbiology"
   ],
   "outcomes": [
-    "Explain the organ, and the one that the mechanism is for, in the limit",
-    "Explain the gut, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the organ is for, in the limit",
-    "Outline the management, and the one that the gut is for, in the limit",
-    "Recognise the state, and the one that the organ is for, in the limit"
+    "Explain the secretion, motility and absorptive functions of each gut region and their neural and hormonal control, and locate common drug targets (proton pump, prokinetic, antisecretory).",
+    "Evaluate dyspepsia, reflux and dysphagia: the mechanisms of lower oesophageal sphincter failure, peptic ulcer disease with Helicobacter and NSAIDs, and the alarm features that mandate endoscopy.",
+    "Work through acute and chronic upper and lower gastrointestinal bleeding: localise, estimate severity from observations and bloods, and describe resuscitation and endoscopic principles.",
+    "Explain the mechanisms of diarrhoea (osmotic, secretory, inflammatory, motility) and use stool osmotic gap and history to classify a case; outline coeliac disease pathogenesis and diagnosis.",
+    "Compare Crohn's disease and ulcerative colitis in pathology, distribution, manifestations outside the gut, investigation and treatment strategy, including biologics logic.",
+    "Interpret liver function tests — hepatocellular versus cholestatic — and work through jaundice, the causes of acute and chronic hepatitis, cirrhosis with its complications (varices, ascites, encephalopathy, spontaneous bacterial peritonitis, hepatocellular carcinoma) and acute liver failure.",
+    "Apply the pathophysiology and severity assessment of acute and chronic pancreatitis and of gallstone disease and its complications, including cholangitis.",
+    "Calculate energy, fluid and nitrogen requirements, describe enteral and parenteral nutrition and their complications, and recognise refeeding syndrome risk and prevention."
   ],
   "chapters": [
     {
@@ -100,27 +104,70 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the organ is for, is the one that the gut is for, of the structure.",
+      "year": 1822,
+      "title": "A window into the stomach",
+      "detail": "After a gunshot leaves Alexis St Martin's stomach fistulated, William Beaumont at Fort Hancock and later in New Haven performs controlled digestion experiments through the opening — the first direct observations of gastric secretion, motility and the effects of emotion and food on digestion.",
       "people": [
-        "Harvey"
+        "William Beaumont"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the organ is for, is the one that the gut is for, of the process.",
+      "year": 1868,
+      "title": "The first endoscope",
+      "detail": "Adolf Kussmaul builds a 'gastroscope' from a lion tamer's pharyngoscope and demonstrates it on a sword-swallower; gastrointestinal endoscopy has begun, though safe upper-tract examination must wait for Katsch and Schindler's semirigid instrument (1932) and then for fibreoptics.",
       "people": [
-        "Lister"
+        "Adolf Kussmaul"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the organ is for, is the one that the gut is for, of the mechanism.",
+      "year": 1897,
+      "title": "The psychosomatic stomach",
+      "detail": "Ivan Pavlov's chronic-denervation preparations ('sham feeding') show that appetite and gastric secretion are reflexes of the head — a discovery that made him a Nobel laureate and launched a century of work on brain–gut interaction that still frames functional dyspepsia and IBS.",
       "people": [
-        "Koche"
+        "Ivan Pavlov"
+      ]
+    },
+    {
+      "year": 1902,
+      "title": "Secretin — the first hormone",
+      "detail": "Bayliss and Starling's perfusion experiments in the dog gut identify a blood-borne messenger released from duodenal mucosa by acid; the finding, in the organ of digestion, gives physiology its concept of hormonal regulation.",
+      "people": [
+        "William Bayliss",
+        "Ernest Starling"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "The flexible endoscope",
+      "detail": "Basil Hirschowitz, with a Nikon micro-engineer and a University of Pittsburgh physicist, builds the first fibreoptic gastroduodenoscope; within a decade upper gastrointestinal endoscopy replaces the barium meal as the first investigation for dyspepsia and becomes a therapeutic instrument.",
+      "people": [
+        "Basil Hirschowitz"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "A new way to stop acid",
+      "detail": "Astra researchers building on receptor physiology and H+/K+-ATPase biology take omeprazole — the first proton pump inhibitor — into clinical use at the end of the decade; profound, long-lasting acid suppression transforms ulcer, reflux and bleeding disease, and becomes one of the world's best-selling drug classes.",
+      "people": [
+        "Astra (research team of Bengt-Ivar Wallmark and Lars-Henning Jönsson)"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "Helicobacter pylori",
+      "detail": "Barry Marshall and Robin Warren in Perth grow the curved bacterium from gastric biopsies and argue that it, not stress or acid alone, causes most peptic ulcer and predicts cancer; after Marshall's self-inoculation and worldwide trials, peptic ulcer becomes a curable infectious disease and Warren and Marshall share the 2005 Nobel Prize.",
+      "people": [
+        "Barry Marshall",
+        "Robin Warren"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Transplant becomes routine",
+      "detail": "After Starzl's early and disheartening Cleveland liver grafts and Calne's piggyback technique in Cambridge, orthotopic liver transplantation with cyclosporine-based immunosuppression is established for end-stage and acute liver disease — a niche for the model of MELD-based allocation adopted in 1999 that puts the sickest first.",
+      "people": [
+        "Thomas Starzl",
+        "Roy Calne"
       ]
     }
   ],

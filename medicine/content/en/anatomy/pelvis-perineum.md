@@ -1,205 +1,179 @@
-The region, and the one that the pelvis is for, is the one that the limit is for, and the one that the organ is for. The organ, and the one that the system is for, is the one that the limit is for, of the bone and the one that the muscle is for. This lesson defines the region, and the one that the pelvis is for, of the organ and the one that the limit is for, and gives the muscle, and the one that the joint is for. The method, and the check, are the one for the region and the organ and the one that the pelvis is for.
+The pelvis is a bony funnel, a muscular floor and three tubes — urinary, hindgut and genital — that run through it in close collaboration, which is why its diseases present as mixtures: the prostate that obstructs the bladder and invades the nerves of erection, the delivery that tears the sphincter, the fistula between rectum and vagina, the abscess that walks from the anal canal into the ischioanal fat. The regional anatomy is therefore taught as three questions: what is the bony and fascial architecture, where do the tubes cross each other and the nerves and vessels, and what leaks where when each breaks.
 
- The region, and the one that the pelvis is for, is the one that the limit is for, and the one that the organ is for. The description, and the one that the organ is for, is the use, of the region and the organ.
+This chapter covers the bony pelvis and pelvic floor, the fascial spaces and autonomic nerves, the bladder and urethra, the rectum and anal canal, the prostate and internal genitalia, the female pelvis and perineal body, and the perineal pouches and external genitalia.
 
- The bone, and the one that the pelvis is for, is the one that the limit is for, is for, in the joint. The description, and the one that the joint is for, is the use, of the joint and the bone.
+## Bony pelvis, inlet, outlet, and the floor
 
- The muscle, and the one that the region is for, is the one that the limit is for, is for, in the function. The description, and the one that the function is for, is the use, of the function and the muscle.
-
- The vessel, and the one that the region is for, is the one that the limit is for, is for, in the blood. The description, and the one that the blood is for, is the use, of the blood and the vessel.
-
- The nerve, and the one that the region is for, is the one that the limit is for, is for, in the control. The description, and the one that the control is for, is the use, of the control and the nerve.
-
- The perineum, and the one that the region is for, is the one that the limit is for, is for, in the boundary. The description, and the one that the boundary is for, is the use, of the boundary and the perineum.
-
-::: definition Pelvis {#def-pel}
-The **elvis** is the one, and the one that the bone is for, that is the organ, is for, and the one that the limit is for. The **egion**, and the one that the pelvis is for, is the one that the limit is for, is for, in the organ and the one that the muscle is for. The description, and the one that the organ is for, is the use, of the region and the organ, and the one that the limit is for.
+::: definition The bony and muscular pelvis {#def-bone}
+The **bony pelvis** is two hip bones (ilium, ischium, pubis), the **sacrum** (five fused segments, sacral foramina transmitting S1–S4 ventral rami) and the **coccyx**. The **pelvic brim (linea terminalis)** — sacral promontory, alae, iliopectineal lines, pubic crests and symphysis — divides the **false (greater) pelvis**, which carries abdominal viscera, from the **true (lesser) pelvis**, whose inlet, cavity and outlet matter obstetrically (the inlet planes' conjugate diameters: the **obstetric conjugate**, sacral promontory to the inner symphysis, ~10 cm, is the one the fetal head must negotiate). The **pelvic outlet** is the diamond between pubic symphysis, ischiopubic rami, ischial tuberosities, sacrotuberous ligaments and coccyx, divided by a line between the tuberosities into the anterior **urogenital triangle** and posterior **anal triangle**. The **pelvic diaphragm** — **levator ani** (puborectalis from the pubic body forming the anorectal sling, pubococcygeus, iliococcygeus from the tendinous arch, plus **ischiococcygeus/coccygeus**) with its fascial coverings — forms the muscular floor; defects in its anterior, middle and posterior compartments correspond exactly to cystocele, uterovaginal prolapse and rectocele. The **pudendal nerve (S2–4)** leaves the greater sciatic foramen below piriformis, hooks the **ischial spine** and sacrospinous ligament (the obstetrician's and anaesthetist's landmark — **pudendal block** is delivered around the spine), and runs in the **pudendal (Alcock's) canal** on the obturator fascia of the ischioanal fossa's lateral wall to perineal branches. The **internal iliac artery** and its venous plexus lie against the pelvic sidewall behind the peritoneum — the vascular control point for pelvic haemorrhage and the hazard of every iliac lymphadenectomy.
 :::
 
-::: proposition Joint {#prop-joint}
-The **oint** is the one that the bone is for, is for, in the movement.
-$$
-\text{acetabulum}: \text{hip},\ \text{pubic}: \text{symphysis}.
-$$
-and the one that the pelvis is for. The description, and the one that the bone is for, is the use, of the joint and the bone. So the joint, and the one that the limit is for, is the one that the bone, is for, each, and the one that the region is for.
-:::
-
- The region, and the one that the pelvis is for, is the one that the organ is for. The nerve, and the one that the control is for, is the one that the limit is for, in the plexus.
-
- The plexus, and the one that the nerve is for, is the one that the limit is for, in the root. The description, and the one that the root is for, is the use, of the root and the plexus.
-
- The vessel, and the one that the blood is for, is the one that the limit is for, in the artery. The description, and the one that the artery is for, is the use, of the artery and the vessel.
-
- The fascia, and the one that the region is for, is the one that the limit is for, in the layer. The description, and the one that the layer is for, is the use, of the layer and the fascia.
-
- The muscle, and the one that the function is for, is the one that the limit is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle.
-
- The skin, and the one that the perineum is for, is the one that the limit is for, in the membrane. The description, and the one that the membrane is for, is the use, of the membrane and the skin.
-
-::: example The bone, and the joint {#ex-bone}
-Explain, the bone, and the one that the pelvis is for, is for, in the joint, and the one that the limit is for.
+::: example The spine that is felt, not seen {#ex-spine}
+A woman in the second stage of labour, occipito-posterior position, has an ineffective contractions pattern and the head arrested above the brim; the registrar considers instrumental delivery and, first, performs a vaginal assessment of pelvic adequacy.
 ::: solution
-The bone, and the one that the pelvis is for, is the one that the limit is for, in the joint. The description, and the one that the joint is for, is the use, of the joint and the bone. For the joint, and the one that the bone is for, the muscle, and the one that the limit is for, is the one that the function is for, is for.
+Every number the registrar needs is bony anatomy palpated through soft tissue. The **sacral promontory** cannot be reached (if it can, the diagonal conjugate is short and the true conjugate — diagonal minus ~1.5 cm — is inadequate); the **ischial spines** are felt at the midpelvis, their prominence and the **subpubic angle** and the **sacrosciatic notch** describing the cavity and outlet; the **sacrum's curvature** and the **coccyx** define the posterior sagittal outlet dimensions. These are the same landmarks forceps and ventouse delivery are designed around: the instrument's curve follows the pelvic curve — head descending through the inlet in an oblique diameter, rotating to occipito-anterior under the pubic arch, extending under the symphysis — and an occipito-posterior head arrested at a flat posterior segment fails to rotate, which is the mechanical story behind "assess the pelvis, not just the contractions". The bladder is emptied first (its fundus, peritoneum-covered, rises out of the pelvis as it fills — a full bladder both obstructs the inlet and lies in the way of any uterine incision), and the urethra beneath the symphysis and the pubic arch is the structure the delivering head compresses — the reason post-partum urinary retention and stress incontinence are pelvic floor, not bladder, diseases.
 :::
 :::
 
-::: example The nerve, and the plexus {#ex-nerve}
-Explain, the nerve, and the one that the control is for, is for, in the plexus, and the one that the limit is for.
+## Fascial spaces and the autonomic plexuses
+
+The pelvic viscera hang in endopelvic fascia: the **superficial (subperitoneal) layer** condenses into the supporting ligaments (**pubovesical, puboprostatic, cardinal (transverse cervical/Mackenroth's) and uterosacral**) and the **vesico- and rectovaginal septa**, and the **hypogastric sheath** surrounds the vessels and nerves. Between organs and walls lie fat-filled spaces — **retropubic (Retzius)**, **retrovesical (rectovesical in men, rectouterine — pouch of Douglas)**, and the paired **ischioanal fossae** below the levator — which are routes for infection and fluid and planes for surgery. The **superior hypogastric plexus** (aortic plexus continuation, left and right **hypogastric nerves** running medial to the internal iliac vessels) and the **inferior (pelvic) hypogastric plexuses** beside the rectum, prostate and vagina carry sympathetic (T11–L2: emission, vasoconstriction) and parasympathetic (S2–4: erection, bladder contraction, rectal motility) fibres. Their topography is the reason **total mesorectal excision** preserves the hypogastric nerves and pelvic plexus on the mesorectal fascia's surface (urinary and sexual function after rectal cancer surgery is a report on whether the planes were right), and the reason radical hysterectomy and prostatectomy carry their specific functional costs — the **neurovascular bundle (caverno- sive nerves)** running posterolaterally at the prostate's 5 and 7 o'clock positions, the target of nerve-sparing technique.
+
+## Bladder and urethra
+
+::: definition The bladder and its neck {#def-bladder}
+The **bladder** is extraperitoneal, its fundus (trigone — smooth, between the two ureteric orifices and the internal urethral meatus, derived from the absorbed mesonephric ducts) related to the rectum (male) or vagina (female) through the rectovesical/rectouterine septum, and its **dome peritoneum-covered**: a distended bladder carries its peritoneal cover upward, which is why a **suprapubic tap** can enter the bladder extraperitoneally — if the patient is distended and the peritoneum reflected, and why the safe suprapubic route is paramedian and only with a truly full bladder. The **ureters** run along the pelvic sidewall (medial to the psoas and obturator internus, crossing the iliac bifurcation), then forwards to the bladder base, **under the uterine artery** in the woman (the "bridge over water" ligated with the uterine vessels at hysterectomy) and in the male crossed medially by the vas deferens at the bladder base ("recognise the ureter before you divide the vas"). The trigone's oblique intramural ureters form the anti-reflux mechanism; its failure in children gives **vesicoureteric reflux** and renal scarring. The bladder's **arterial supply** — superior and inferior vesical from internal iliac — and **venous plexus** explain prostatic/bladder surgery bleeding; its **lymphatics** run to the external iliac chain; its **sensory** nerve fibres travel with both sympathetic (fullness) and parasympathetic (distension, pain, micturition reflex arc S2–4).
+:::
+
+::: definition The male urethra and the extravasation map {#def-urethra}
+The male urethra is **prostatic** (internal sphincter mechanism, verumontanum with ejaculatory ducts), **membranous** (through the deep perineal pouch and the **external urethral sphincter** — the narrow, least distensible part, and the classic site of tear with pelvic fracture), **bulbar and penile (spongy)** (within the corpus spongiosum, the bulbar part being the usual site of a straddle rupture), opening at the fossa navicularis. The **female urethra** is 3–4 cm, closely anterior to the vagina (shared wall), with the **paraurethral (Skene's) glands** and the external sphincter as the main continence mechanism below the bladder neck — the reason childbearing, oestrogen loss and pelvic surgery each have their characteristic incontinence patterns and why ascending urinary infection is overwhelmingly female.
+:::
+
+::: theorem Extravasation follows the fascial envelope {#thm-extravasation}
+Urethral injury at the **membranous** part (pelvic fracture): urine escapes into the **deep perineal pouch and retropubic space**, the prostate rides high on rectal examination, and per-urethram catheterisation is hazardous. Injury of the **bulbar** urethra with **Buck's fascia intact**: swelling confined to the penis. With Buck's **torn**: urine enters the **superficial perineal pouch**, bounded behind by the perineal membrane — so it cannot go backwards into the anal triangle — but forward it is continuous with the space superficial to the membrane of the scrotum (Dartos) and the abdomen, because the membranous layer of the superficial fascia (**Colles'**) attaches to the fascia lata below and to the linea alba's superficial attachment above, so extravasate collects in scrotum, perineum and anterior abdominal wall but **not in the thighs and not backwards into the ischioanal fossa** — the "butterfly" perineal swelling with abdominal extension, which is a diagram of these three attachments.
+:::
+
+::: proof
+The theorem is three boundaries read off the fascia. The superficial perineal pouch is a bag whose floor is Colles' membrane (membranous superficial fascia) and whose roof is the perineal membrane, opening only forwards: behind, Colles' fuses with the posterior edge of the perineal membrane; laterally it attaches to the ischiopubic rami; below, it continues as Dartos of the scrotum and Scarpa's of the abdomen. The external urethral sphincter and compressor urethrae above the membrane explain why bulbomembranous continuity is the reconstruction's watershed: after pelvic-fracture distraction, the two ends scar apart across the deep pouch, and the repair (progressive perineal approach) is a dissection through the same planes that confined the urine. The female urethra's shortness, straightness and vaginal adjacency are the anatomical sentence behind a dozen clinical facts — post-coital cystitis, the urethro-vaginal reflex zone, the risk of kinking or denervation at prolapse repair, and the fact that a urethral diverticulum presents as a tender anterior vaginal wall swelling that expresses urine when milked. And the map applies to infection too: a superficial pouch collection (from a ruptured bulbar urethra or an infected periurethral gland) tracks by the same rules that guide the incision — counter-drainage through the dependent part of the involved space, not through the next space.
+:::
+
+## Rectum, anal canal, and the pectinate line
+
+::: definition Rectum and anal canal {#def-rectum}
+The **rectum** (12–15 cm) is peritoneum-covered on its upper third's front and sides, middle third's front only, and nowhere in its lower third — the sequence that sets the surgical approaches (anterior, posterior, transanal) and the "intraperitoneal perforation" risk of high anterior resection. Its three **valves of Houston** and its curves (sacral, perineal) matter endoscopically and obstetrically. The **anal canal** (3–4 cm, from anorectal ring to anal verge) is divided by the **pectinate (dentate) line** — the line of the anal valves and the last part of the hindgut mucosa. Above the line: **columnar/gut endoderm** epithelium, **visceral afferents (painless)**, arterial supply from the **superior rectal artery (IMA)**, venous drainage via the **superior rectal vein → IMV → splenic → portal**, lymphatics to the **internal iliac** nodes, and venous plexus that is the **internal haemorrhoid**. Below: **modified squamous (ectodermal)** epithelium, **somatic inferior anal nerves (painful)**, **inferior rectal artery (internal pudendal)**, **inferior and middle rectal veins to the systemic**, lymphatics to the **superficial inguinal** nodes, and the **external haemorrhoid** and skin. The **internal sphincter** (continuation of circular muscle, autonomic) and **external sphincter** (voluntary, inferior anal nerve) plus **puborectalis** form the **anorectal ring** whose division inverts continence.
+:::
+
+::: example The abscess that horseshoes {#ex-fistula}
+A patient with two weeks of perianal pain has a fluctuating swelling left of the anus; incised as a perianal abscess, it continues to discharge weeks later; a further admission finds a swelling in the opposite ischioanal fossa.
 ::: solution
-The nerve, and the one that the control is for, is the one that the limit is for, in the plexus. The description, and the one that the plexus is for, is the use, of the plexus and the nerve. For the plexus, and the one that the nerve is for, the root, and the one that the limit is for, is the one that the control is for, is for.
+The natural history is anatomy. Most anorectal sepsis begins in an **anal gland** at the pectinate line that obstructs and infects; the pus seeks the line of least resistance along the fascial planes: **perianal** (the commonest, at the verge), or through the weakness of the internal sphincter into the **intersphincteric** plane, or into the **ischioanal fossa** (the large fat-filled space, crossed by few septa — hence large collections), or upwards into the **supralevator** space. **Persistence after incision = fistula-in-ano** in a minority of patients — an epithelialised track from the same internal opening at the pectinate line; and the posterior midline route connects the two ischioanal fossae via the **deep postanal space**, allowing a unilateral collection to declare itself weeks later on the other side — a **horseshoe abscess**, drained by the Hanley procedure (posterior midline internal opening laid open with counter-drainage of each limb) precisely because the track runs in that named space. The surgeon's rules are the chapter's in miniature: **Goodsall's rule** (an external opening anterior to a transverse anal line tracks radially; posterior tracks curve to the midline) is a map of the sphincter's fiber direction, and the danger in every lay-open is the **anorectal ring and the sphincter mass** — setons that drain without cutting exist because continence is the operation's other success criterion.
 :::
 :::
 
-::: example The fascia, and the layer {#ex-fascia}
-Explain, the fascia, and the one that the region is for, is for, in the layer, and the one that the limit is for.
+The haemorrhoid follows the same line's economics: **internal haemorrhoids** are the vascular cushions of the upper canal (right anterior, right posterior, left lateral — the classic three positions reflecting the primary tributaries), painless and prolapsing (grading I–IV), treated by banding (which works because the cushion above the pectinate line is insensate visceral tissue) or haemorrhoidectomy below the dentate line's coverage by anoderm; **external haemorrhoids** are the lower cushions and perianal veins, thrombosed and acutely painful (somatic nerve supply), and the **portal-systemic anastomosis** at the rectal plexus (see [[anatomy/abdomen]]) is why anorectal varices are confused with — but distinct from — ordinary haemorrhoids in the cirrhotic patient.
+
+## Prostate, seminal vesicles, and the male genital tract
+
+::: definition The prostate and its zones {#def-prostate}
+The **prostate** (fibromuscular, ~20 mL) sits below the bladder neck, traversed by the **prostatic urethra** and the **ejaculatory ducts**, with the **ureters** crossing its superolateral aspect (the surgeon's "curtain" at open prostatectomy). The **McNeal zonal anatomy** is the clinical map: the **peripheral zone** (palpable on rectal exam, where ~70% of cancers arise, posterolateral — hence the hardness the finger feels and the biopsy's target), the **transitional zone** (the inner glands whose benign hyperplasia produces the obstructing median and lateral lobes of BPH), the **central zone** around the ejaculatory ducts, and the **anterior fibromuscular stump**. Relations: **levator ani and the neurovascular bundles posterolaterally** (erection), the **puboprostatic ligaments and dorsal venous complex anteriorly** (the Santorini plexus whose control opens a prostatectomy), and the **rectum posteriorly** separated by the rectovesical (Denonvilliers') fascia — the plane of rectal cancer surgery's anterior dissection and of the rare recto-urinary fistula. The **prostatic venous plexus** communicates with the **vertebral venous (Batson) plexus**, which is the route by which prostatic carcinoma presents as osteoblastic vertebral metastases (lumbar, pelvis, femur) before urinary symptoms. The **seminal vesicles** lie posterosuperior to the bladder with the vas ampullae between them; the **ejaculatory ducts** traverse the prostate to the verumontanum.
+:::
+
+::: example The gland that grows inward {#ex-bph}
+A 74-year-old has a poor stream, hesitancy, nocturia and terminal dribble; DRE finds a smooth, symmetrically enlarged, non-nodular gland; PSA 4.8 ng/mL; uroflow with a high post-void residual.
 ::: solution
-The fascia, and the one that the region is for, is the one that the limit is for, in the layer. The description, and the one that the layer is for, is the use, of the layer and the fascia. For the layer, and the one that the fascia is for, the organ, and the one that the limit is for, is the one that the pelvis is for, is for.
+The physiology is an anatomy of zones: **benign prostatic hyperplasia arises in the transitional zone**, which surrounds the urethra, so the gland's inward growth obstructs early (the peripheral-zone cancers that cause most of the mortality, by contrast, grow outward from the gland's palpable surface and obstruct late). The lower-urinary-tract symptom pattern separates storage (the detrusor's response to outlet obstruction — frequency, nocturia, urge) from voiding (the obstruction itself — hesitancy, weak stream, intermittency); the elevated residual urine is the decompensating pump's sign and, over time, the reason for the bladder's trabeculation, diverticula and the high-pressure bilateral vesicoureteric reflux and renal impairment that end this pathway (see [[renal/acute-kidney-injury]] on post-renal obstruction). The symmetrical smooth gland and modest PSA (which rises with volume and with retention/instrumentation/infection — the reason it is measured before DRE massage or after a wait) point away from carcinoma; the **venous plexus–vertebra route** belongs in the counselling of the alternative diagnosis because it explains why the dangerous disease is found late. Management — alpha-blockade, 5-alpha-reductase inhibition for large glands, surgery (TURP through the urethra, enucleation for big glands, simple prostatectomy through the capsule, or prostate urethral lift) — is a direct reading of the anatomy: which tissue obstructs and which route reaches it; and retrograde ejaculation after TURP (the bladder neck resected open) is the chapter's one-sentence consent.
 :::
 :::
 
-::: example The vessel, and the artery {#ex-vessel}
-Explain, the vessel, and the one that the blood is for, is for, in the artery, and the one that the limit is for.
+The **testis and scrotum**: the testis descends from the urogenital fold through the inguinal canal (see [[anatomy/abdomen]]) with its coverings; in the scrotum the **dartos** (smooth muscle, temperature) and the external spermatic, cremasteric and internal spermatic fascial layers are the wall's anatomy, the **tunica vaginalis** (processus vaginalis's distal remnant) encloses the testis except posteriorly where vessels and vas arrive — the surgical "bare" posterior that anchors the epididymis, and the reason hydroceles present anteriorly. The **epididymis** (head upwards, tail below, vas continuing at the testis's medial border), the **spermatic cord** and its arterial and venous arrangements (pampiniform plexus cooling, varicocele's left-sided dominance) are the scrotal contents' geography: torsion is a rotation of testis within tunica vaginalis (high ligation of the cord, and the bell-clap deformity is the horizontal lie that predisposes), and the cremasteric reflex's absence (see [[anatomy/anatomical-language]]) is the sign that sends the teenager to theatre, not to ultrasound, when the history is acute.
+
+## The female pelvis, perineal body, and childbirth
+
+::: definition Uterus, supports, and the perineal body {#def-uterus}
+The non-pregnant **uterus** is anteverted and anteflexed on the bladder; its **fundus** is peritoneum-covered, and from it run the **broad ligament** (peritoneal fold carrying tube, round ligament, ovarian and uterine vessels and the ureter at its base), the **round ligament** (to the labium majus through the inguinal canal — the pain line of pregnancy's groin), the **utero-ovarian**, **cardinal (transverse cervical)** and **uterosacral** ligaments: **cardinal ligament and the levator ani are the essential supports** of the cervix and upper vagina (the level at which hysterectomy must re-attach them or prolapse follows), the uterine **artery** ascends in the base of the broad ligament **over the ureter**, and the venous plexus, lymphatics (to external iliac, internal iliac and para-aortic chains — the staging map of cervical and endometrial cancer) accompany it. The **cervix** projects into the vagina (fornices around it — the posterior deeper, the route of culdocentesis and the pouch of Douglas's dependent point), the transformation zone (columnar–squamous junction, where most carcinoma arises) is on the ectocervix. The **vagina** runs postero-inferiorly, its anterior wall against the bladder base/urethra (hence cystocele with its defects: central or paravaginal — an avulsion of the pubocervical fascia from the arcus tendineus fasciae pelvis, the "white line"), its posterior against the rectum (rectocele, and the **perineal body** — the fibromuscular node between vagina and anal canal in which the bulbospongiosus, external sphincter and transverse perinei interdigitate — the structure an obstetric tear or episiotomy divides).
+:::
+
+::: example The third-degree tear {#ex-sphincter}
+An operative vertex delivery with a midline episiotomy results in bleeding despite a contracted uterus; examination under anaesthesia finds the episiotomy extended through the anal sphincter complex into, but not through, the anal epithelium.
 ::: solution
-The vessel, and the one that the blood is for, is the one that the limit is for, in the artery. The description, and the one that the artery is for, is the use, of the artery and the vessel. For the artery, and the one that the vessel is for, the organ, and the one that the limit is for, is the one that the region is for, is for.
+This is a **3b/3c–4° perineal tear** on the standard classification (3a >50% external anal sphincter (EAS) torn; 3b <50% EAS; 3c EAS plus internal anal sphincter (IAS); 4° through anal epithelium — the classification is the anatomy: two sphincters and the epithelium are the three structures being graded), and the repair is its reversal. Identification of the retracted sphincter ends (the EAS retracts laterally behind the transverse perinei — the reason the apex must be found, not just the visible edge), **end-to-end or overlapping EAS apposition**, separate IAS repair, vaginal and perineal mucosal closure, antibiotics and laxatives (the first bowel movement is the operation's test), and counselling about **anal incontinence rates** — flatus in a sizeable minority and passive incontinence in a smaller but real percentage — and about future delivery (elective caesarean or assisted vaginal delivery to avoid recurrence is the guideline answer; perineal ultrasound of the repair is how the next discussion starts). The preventive anatomy is equally standard: a **mediolateral episiotomy**, when indicated, is angled away from the midline precisely because the midline's next structure posteriorly is the sphincter the chapter just described; and the perineal body's decussating fibre plan is why "the cut that spares the sphincter" is a statement about angle, not skill alone.
 :::
 :::
 
- The region, and the one that the pelvis is for, is the one that the organ is for. The muscle, and the one that the contraction is for, is the one that the limit is for, in the function.
+## Perineal pouches and external genitalia
 
- The muscle, and the one that the function is for, is the one that the limit is for, in the contraction. The description, and the one that the contraction is for, is the use, of the contraction and the muscle.
-
- The perineum, and the one that the boundary is for, is the one that the limit is for, in the region. The description, and the one that the boundary is for, is the use, of the boundary and the perineum.
-
- The bone, and the one that the joint is for, is the one that the limit is for, in the pelvis. The description, and the one that the joint is for, is the use, of the joint and the bone.
-
- The nerve, and the one that the plexus is for, is the one that the limit is for, in the root. The description, and the one that the plexus is for, is the use, of the root and the nerve.
-
- The fascia, and the one that the layer is for, is the one that the limit is for, in the region. The description, and the one that the layer is for, is the use, of the layer and the fascia.
-
-::: warning The nerve, and the limit {#warn-nerve}
-The nerve, and the one that the control is for, is the one that the limit is for, in the plexus. If the root, and the one that the plexus is for, is for is for, the one that the control is for, is for. The description, and the one that the control is for, is the use, of the plexus and the nerve. So the plexus, and the one that the limit is for, is for, in the nerve, and the one that the control is for.
-:::
-
- The region, the pelvis, and the organ, and the limit is for, are the one that the structure is for, is for. The description, and the one that the organ is for, is the use, of the region and the organ.
-
- So the region, and the one that the limit is for, is the one that the pelvis and the organ, are for, is for. The description, and the one that the organ is for, is the use, of the region and the organ, and the pelvis.
-
- The method, and the check, are the one for the region and the organ and the one that the pelvis is for.
-
- The plexus, and the one that the root is for, is the one that the limit is for, in the nerve. The description, and the one that the root is for, is the use, of the nerve and the plexus.
-
-::: widget plot
-f: x
-x: 0 10
-y: 0 11
-sliders:
-caption: The region, and the one that the pelvis is for, is the one that the organ is for. The bone, and the one that the joint is for, is the one that the limit is for, in the pelvis. The description, and the one that the organ is for, is the use, of the region and the organ.
-:::
+The **perineal membrane** (the urogenital diaphragm's inferior fascia in the older usage; modern texts keep the membrane but not the "diaphragm") separates the **deep perineal pouch** (the **sphincter urethrae (external urethral sphincter)** with compressor urethrae — sphincter urethrovaginalis in the female — the membranous urethra, the **internal pudendal vessels**, and the **bulbourethral (Cowper's) glands** of the male) from the **superficial perineal pouch** (the **roots of the external genitalia**: bulb and crura with bulbospongiosus and ischiocavernosus muscles, the **bartholin's (greater vestibular) glands** in women — the homologues of the male bulbourethral glands, which by contrast sit in the deep pouch — and the superficial transverse perinei). The external genitalia are serially homologous: glans penis/clitoris, corpus spongiosum/bulb of vestibule, erectile crura/legs of clitoris, scrotum/labia majora, penile skin/labioscrotal folds, and the innervation is the perineum's map: **pudendal (inferior anal, perineal, dorsal nerve of clitoris/penis)** with the **ilioinguinal (L1, anterior labia/scrotum)** and **genitofemoral** covering the root's skin. The **bartholin's gland** drains by a duct between hymen and labium minus at the posterolateral vaginal orifice — its obstruction gives the classic unilateral, at the "5 or 7 o'clock position", swelling: infected or not, incision must not mistake it for an abscess to be simply lanced (Word-catheter marsupialisation is the standard because simple incision recurs).
 
 ::: quiz
-The region, and the one that the pelvis is for. Which structure forms the hip, and the one that the limit is for?
-- [x] The acetabulum, and the one that the bone is for
-- [ ] The symphysis, and the one that the pubic is for
-- [ ] The plexus, and the one that the nerve is for
-- [ ] The fascia, and the one that the layer is for
+A carcinoma of the vulva at the posterior fourchette; the surgeon plans inguinal node surgery. Which anatomy justifies that decision, and what is the exception?
+- [ ] Vulva drains to internal iliac nodes; the inguinal approach is for staging convenience
+- [x] Vulval lymphatics drain to superficial then deep inguinal and then external iliac nodes — except the clitoris, which runs with the internal pudendal axis to internal iliac nodes, an exception relevant to anterior lesions
+- [ ] All perineal structures drain to the superficial inguinal nodes without exception
+- [ ] The pectinate line diverts vulval drainage to the portal system
 ::: solution
-The joint, and the one that the bone is for, is the one that the limit is for, in the movement. The description, and the one that the bone is for, is the use, of the joint and the bone. So the acetabulum, and the one that the bone is for, forms the hip, and the one that the limit is for.
+The vulva and perineal skin, below the pectinate/anocutaneous line, are **ectodermal, somatic, and drain to the horizontal then vertical chain of inguinal nodes** (superficial → deep → external iliac), which is why vulval cancer management is an inguinal-femoral node operation (and why its morbidity — lymphoedema, wound breakdown — is the price of that map). The **clitoris**, developing with the urogenital sinus and carrying the deep dorsal vein/lymphatic route with the internal pudendal axis, can drain to **internal iliac (hypogastric)** nodes — the exception that matters for anterior lesions' planning; and the anal canal above the pectinate line drains inward to internal iliac nodes (the pectinate rule, applied to lymph), which is why high anal and low rectal cancers are staged on pelvic nodes while the low anal margin tumour is staged on inguinals.
 :::
 :::
 
-::: summary
-- The region, and the one that the pelvis is for, is the one that the limit is for, and the one that the organ is for.
-- The bone, and the one that the pelvis is for, is the one that the joint is for, is for.
-- The muscle, and the one that the region is for, is the one that the function is for, is for.
-- The nerve, and the one that the control is for, is the one that the plexus is for, is for.
-- The vessel, and the one that the region is for, is the one that the blood is for, is for.
-- The description, and the one that the organ is for, is the use, of the region and the organ.
+::: widget plot
+f: 12 + 55/(1+exp(-(x-74)/9))
+x: 20, 90
+y: 0, 80
+labels: \text{age (years)},\ \text{prostate volume (mL)}
+caption: Population-average prostate volume against age — near-static through the forties and fifties, then a Gompertzian climb driven by the transitional zone's hyperplasia. The curve is schematic: it exists to make two clinical sentences quantitative. First, symptoms depend on the inward-growing tissue and the urethra, not the total volume (a 40 mL gland with median-lobe can obstruct, a 120 mL peripheral gland may not); second, PSA is a volume marker as much as a cancer marker — which is exactly why a raised PSA is interpreted against the gland's size, age, and the presence of retention, infection or recent instrumentation.
 :::
 
 ::: history
-The region, and the one that the pelvis is for, is the one that the limit is for, and the one that the organ is for. The bone, and the one that the pelvis is for, is the one that the joint is for, is for. The muscle, and the one that the region is for, is the one that the function is for, is for. The description, and the one that the organ is for, is the use, of the region and the organ. So the region, and the one that the limit is for, is the one that the pelvis is for, is for.
+The perineum's anatomy was settled by the urologists and obstetricians who worked in it. The eighteenth- and nineteenth-century obstetric schools (Smellie, the Chamberlens and their forceps, Simpson's chloroform-era modifications) fixed the pelvic planes and the mechanism of labour as surgical facts; the pudendal block (Kieth and Östergren's interwar decades) made the nerve's ischial loop a day-to-day landmark. Urethral and bulbous extravasation's "butterfly" map comes from the era before catheters made straddle injuries rare in descriptions and common in theatres; Colles, Astley Cooper's student whose 1818 descriptions of the fascial layers still carry his name, wrote the classic account. The anal sepsis chapter's rules — Goodsall (1900), the ischioanal spaces' horseshoe drainage (Hanley, 1978), and the modern sphincter-preserving seton and fistula-plug era — were assembled by St Mark's Hospital and its school; and McNeal's zonal anatomy of the prostate (1968–72), worked out on whole-organ sections, rewrote the urological textbooks' single page about "lobes" within one career.
+:::
+
+## Where this leads
+
+The anal canal's surgery in [[gastrointestinal/bowel-disease]] and [[surgery/gastrointestinal-surgery]]; the prostate and bladder physiology in [[renal/urinary-tract]] and [[renal/filtration]]; pregnancy's pelvic changes in [[obstetrics-gynaecology/pregnancy-antenatal]] and delivery in [[obstetrics-gynaecology/labour-birth]]; pelvic floor and prolapse in [[obstetrics-gynaecology/menstrual-pelvic-disorders]] and gynaecological oncology staging logic in [[obstetrics-gynaecology/gynaecological-cancer]]; pudendal and obstetric anaesthesia in [[surgery/anaesthesia-pain]].
+
+::: summary
+- The pelvis is an inlet–cavity–outlet funnel with a muscular floor of levator ani and an autonomic wiring (hypogastric plexuses) that every radical pelvic surgery either preserves or sacrifices; the ischial spine is the landmark for all of it.
+- Extravasation — urine, pus, blood — follows fascial envelopes: Colles to Dartos to Scarpa forwards, the perineal membrane behind, the ischioanal septa laterally; read the swelling and you read the tear.
+- The pectinate line is the canal's two halves: painless/visceral/portal/internal iliac above, painful/somatic/systemic/inguinal below; haemorrhoids, abscesses, fistulae and cancers all sit on one side of it.
+- The prostate's zones predict disease and its complications: transitional zone obstructs (BPH), peripheral zone cancers (and the venous plexus carries them to the spine); the neurovascular bundle at 5 and 7 o'clock decides potency.
+- The female pelvis supports in three compartments on the levators and the cardinal-uterosacral complex; prolapse and obstetric trauma are compartment failures, and the perineal body is the node whose tears are graded by the sphincters they cross.
+- The external genitalia are homologous, the pouches are defined by the perineal membrane, and the perineum's nerves (pudendal S2–4, ilioinguinal L1) explain both its blocks and its referred patterns.
 :::
 
 ## Exercises
 
-::: exercise The region {level=1}
-Which structure forms the hip, and the one that the bone is for?
+::: exercise Catheter by anatomy {level=1}
+Explain, using anatomy, (a) why male urethral catheterisation meets a resistance at two points that female does not; (b) the danger of forcing a catheter at the bulbar urethra; (c) why a prostatic patient's catheter may need an introducer or a coude tip.
 ::: solution
-The joint, and the one that the bone is for, is the one that the limit is for, in the movement. The description, and the one that the bone is for, is the use, of the joint and the bone. So the acetabulum, and the one that the bone is for, forms the hip.
+(a) The male urethra's two physiological narrowings with angles: the **membranous urethra** (external sphincter, least distensible, at the urogenital diaphragm) and the **external meatus** — plus the fixed curvatures (subpubic) that the female 3–4 cm straight urethra lacks. (b) The bulbar urethra lies against the perineal membrane's under surface; force here risks a **false passage into the superficial perineal pouch** — in a normal patient a minor injury with per-urethral bleeding, in the strictured or infected urethra a extravasation disaster following Buck's/Colles' planes (theorem above). The rule: pass with gentle traction and the penis at right angles (straightening the subpubic curve), never against spasm. (c) The enlarged **median or lateral prostatic lobes** lift the bladder neck and create an anterior high channel that a straight tip catches; the **coude (elbow-tip) catheter** directed anteriorly rides over the elevated floor, and failure means suprapubic access or cystoscopic guidewire — each an application of the gland's zonal geometry.
 :::
 :::
 
-::: exercise The pelvis {level=1}
-What is the region, and the one that the pelvis is for?
+::: exercise Grade and spare {level=1}
+For each, name the structure and plane: (a) the node felt on DRE at the prostate's posterolateral aspect and the zone it lies in; (b) the space entered by a needle that goes too deep in a perineal (prostate) biopsy; (c) the nerve bundle a nerve-sparing radical prostatectomy preserves and where it runs.
 ::: solution
-The region, and the one that the pelvis is for, is the one that the limit is for, and the one that the organ is for. The description, and the one that the organ is for, is the use, of the region and the organ. So the region, and the one that the limit is for, is the one that the organ is for, is for.
+(a) Peripheral-zone nodule — the finger feels the peripheral zone's posterior surface across the rectovesical fascia; nodular, hard, fixed points at carcinoma and drives the transrectal ultrasound-guided template (which is a map of this palpable surface). (b) Too deep or posterior through the rectal wall: the needle crosses into the **mesorectum/rectovesical (Denonvilliers') space**, risking the mesorectal vessels, and in the infected gland the pelvic plexus plane — which is why the standard template counts cores and centres on the palpable/visible gland. (c) The **cavernous nerves (nervi erigentes) and pelvic plexus branches** in the neurovascular bundle along the prostate's **posterolateral (5 and 7 o'clock)** aspect beneath the levator fascia and outside the capsule — the dissection that spares them is performed under vision at the avascular plane lateral to the prostate's lateral pedicles, and the functional outcome is the chapter's argument that anatomy, not the cancer, decides potency.
 :::
 :::
 
-::: exercise The bone {level=2}
-Explain, the bone, and the one that the pelvis is for, in the joint, and the one that the limit is for.
-::: hint
-The joint.
-:::
+::: exercise The swelling's map {level=1}
+A straddle injury produces a swollen, bruised scrotum and perineum with blood at the meatus and an inability to pass urine; the abdomen is becoming distended. Trace the urine using the fascial attachments, and say why the thighs are spared.
 ::: solution
-The bone, and the one that the pelvis is for, is the one that the limit is for, in the joint. The description, and the one that the joint is for, is the use, of the joint and the bone. So the joint, and the one that the limit is for, is for, in the bone, and the one that the pelvis is for.
+Ruptured bulbar urethra with Buck's torn → urine and blood into the **superficial perineal pouch** → forwards into the scrotum (Dartos), up the penis (Buck's cover gone), and on into the **anterior abdominal wall deep to Scarpa's**; the abdominal distension is the extravasate's abdominal extension, not intraperitoneal urine (which would give peritonism and a rigid, silent abdomen). The **thighs are spared because Colles' membrane attaches to the fascia lata just below the inguinal ligament**, and the anal triangle is spared because Colles' fuses behind with the perineal membrane's posterior border. Management: deflection (suprapubic tube) and imaging (retrograde urethrogram first), because the diagnosis's whole content is the plane — and a per-urethral catheter placed blindly can convert a partial tear into a complete one.
 :::
 :::
 
-::: exercise The muscle {level=2}
-Explain, the muscle, and the one that the region is for, in the function, and the one that the limit is for.
-::: hint
-The function.
-:::
+::: exercise Ischioanal or peri-anal? {level=2}
+Distinguish clinically and surgically between an ischioanal and a peri-anal abscess, and give the anatomical reason the ischioanal type is bigger, more toxic and more likely to need examination under anaesthesia.
 ::: solution
-The muscle, and the one that the region is for, is the one that the limit is for, in the function. The description, and the one that the function is for, is the use, of the function and the muscle. So the function, and the one that the limit is for, is for, in the muscle, and the one that the region is for.
+Peri-anal: at the anal verge, obvious, pointing, often safely incised (the old rule: where it points, incise — but "where it points" for a perianal collection only). Ischioanal: in the **large fat-filled ischioanal fossa**, wedged between the obturator internus with the pudendal (Alcock's) canal laterally and the levator ani in its inferior fascia medially, apex at the meeting of levator and obturator fascia above, base at the perineal skin — a space whose loose fat and few septa let pus track several hundred millilitres and both upwards (towards the levator) and medially (towards the rectum/vagina), giving perineal fullness, systemic sepsis and an unimpressive external look: hence **examination under anaesthesia, drainage with a finger swept along the fossa's plane through a dependent incision placed laterally, away from the sensitive anal-margin skin, wide enough to prevent bridging and re-collection, counter-drainage for anterior or horseshoe extensions via the postanal space (the anatomy that made this chapter's fistula section) and awareness of the fossa's lateral wall content (pudendal nerve and internal pudendal vessels in Alcock's canal — the two structures a blind high clip can damage).**
 :::
 :::
 
-::: exercise The nerve {level=3}
-Explain, the nerve, and the one that the control is for, in the plexus, and the one that the limit is for.
-::: hint
-The plexus.
-:::
+::: exercise Prolapse by compartment {level=2}
+A 68-year-old with a bulge and "drag" has a positive Valsalva showing descent of the anterior vaginal wall with the urethral meatus opening, a separate posterior wall bulge, and a descended cervical rim. Name each defect, its fascial/muscular failure, and the compartment logic the examination follows.
 ::: solution
-The nerve, and the one that the control is for, is the one that the limit is for, in the plexus. The description, and the one that the plexus is for, is the use, of the plexus and the nerve. So the plexus, and the one that the limit is for, is for, in the nerve, and the one that the control is for.
+**Anterior (cystocele): a defect of the pubocervical fascia between bladder and vagina** — central (between the arcus tendineus fasciae pelvis, the "white line", on each side) or paravaginal (avulsion of the pubocervical fascia from that white line); reduced with the blade of the speculum and graded (II/III) — its extreme is a urethrocele–cystocele with the bladder base descending beside the urethra, which is why it can coexist with stress incontinence (or, when large, mask it by kinking the urethra). **Posterior (rectocele/enterocele): rectovaginal fascia (rectocele) or the pouch of Douglas's descent with small bowel (enterocele) — the defect is high, which is why enterocele coexists with post-hysterectomy vault prolapse (the vault is the new cervix and the cardinal-uterosacral complex must be reconstructed).** **Apical: failure of the cardinal-uterosacral support of the cervix/cuff (the true "pelvic floor" level; the levators and the muscular diaphragm are its hammock).** The examination's logic is the compartment rule of the summary: anterior, apical, posterior, and a standing Valsalva at the end, because prolapse descends to its maximum only against gravity.
 :::
 :::
 
-::: exercise The vessel {level=3}
-Explain, the vessel, and the one that the blood is for, in the artery, and the one that the limit is for.
-::: hint
-The artery.
-:::
+::: exercise Nodes and lines {level=2}
+Predict the nodal basin and explain from the embryological line: (a) a squamous carcinoma of the anal margin; (b) a basal cell or squamous carcinoma of the scrotum; (c) an adenocarcinoma of the upper rectum; (d) Krukenberg ovarian deposits from gastric cancer.
 ::: solution
-The vessel, and the one that the blood is for, is the one that the limit is for, in the artery. The description, and the one that the artery is for, is the use, of the artery and the vessel. So the artery, and the one that the limit is for, is for, in the vessel, and the one that the blood is for.
+(a) **Superficial then deep inguinal → external iliac** — ectodermal skin below the pectinate/anocutaneous line (the pectinate rule applied to lymph). (b) **Superficial inguinal (horizontal group)** — scrotal skin, again somatic ectoderm, and classically the chimney-sweep's cancer of the scrotal wall with its inguinal nodes (the first occupational cancer described, and its drainage is still the exam's favourite). (c) **Along the superior rectal → inferior mesenteric nodes** — the hindgut's arterial road (lymphatics follow arteries: this is why rectal cancer staging and high ligation are the same operation), with internal iliac nodes for the lower rectum. (d) **Transcoelomic and lymphatic from the stomach's submucosal plexus** — the Krukenberg tumour arrives at the ovary across the peritoneum or through the transverse mesocolon's lymphatics to the ovarian pedicle, the route that makes an ovarian mass in a young woman a stomach investigation. Each answer is one sentence of this chapter's lymphatic grammar: **somatic ectoderm to inguinals, gut and pelvic viscera to the nodes on their named artery, peritoneum everywhere.**
 :::
 :::
 
-::: proposition Muscle {#prop-muscle}
-The **uscle** is the one that the function is for, is for, in the contraction.
-$$
-T_{pelvis} = \text{obturator} + \text{iliacus}.
-$$
-and the one that the region is for. The description, and the one that the contraction is for, is the use, of the function and the muscle. So the muscle, and the one that the limit is for, is the one that the function, is for, and the contraction, and the one that the region is for.
-:::
-
-::: exercise The plexus {level=3}
-Explain, the plexus, and the one that the nerve is for, in the root, and the one that the limit is for.
-::: hint
-The root.
-:::
+::: exercise The pain line {level=2}
+Trace the pain and reflex pathways that explain (a) the urge and (b) the leakage of a full bladder in a spinal cord lesion at T10 versus a sacral cord lesion; and (c) why catheterisation is painless under local in the patient with a complete cord.
 ::: solution
-The plexus, and the one that the nerve is for, is the one that the limit is for, in the root. The description, and the one that the root is for, is the use, of the nerve and the plexus. So the root, and the one that the limit is for, is for, in the plexus, and the one that the nerve is for.
+(a) Fullness and the micturition reflex arc live at **S2–4** (parasympathetic afferents through the pelvic splanchnics and inferior hypogastric plexus). A **T10 cord lesion leaves the sacral arc intact** — the reflex bladder fills, the detrusor contracts under reflex control (upper-motor-neuron/hyperreflexic bladder) and leakage occurs when the reflex overcomes outlet resistance, with dyssynergia adding high-pressure storage; above T6 the distension can trigger **autonomic dysreflexia** (the hypertensive, sweating, flushing episode that is this anatomy's emergency). (b) A **sacral/conus/cauda lesion destroys the arc** — the sensory (no awareness of fullness) and motor (no contraction) limb is gone: a painless, overdistended, **areflexic (lower-motor-neuron) bladder** with overflow incontinence and a high residual, managed by clean intermittent catheterisation precisely because the bladder cannot be asked to empty. (c) A complete cord above the sacral segments means the **perineum and bladder neck are anaesthetic to pain but the autonomic reflexes are not**: hence painless catheterisation, and also the need to remember that pain-equivalent stimulation (catheter traction, impacted stone) still provokes dysreflexia — a lesion's sensory level never means "ignore the autonomic line", which is the practical lesson of the same three sentences.
 :::
 :::
 
-::: exercise The fascia {level=3}
-Explain, the fascia, and the one that the region is for, in the layer, and the one that the limit is for.
-::: hint
-The layer.
-:::
+::: exercise Design the dissection {level=3}
+You are teaching a pelvic lymphadenectomy for cervical cancer in one page: the boundaries of the external iliac packet, the structures at risk in order from lateral to medial, the obturator fossa's nerve, and the ureter's two danger points during the parametrial dissection.
 ::: solution
-The fascia, and the one that the region is for, is the one that the limit is for, in the layer. The description, and the one that the layer is for, is the use, of the layer and the fascia. So the layer, and the one that the limit is for, is for, in the fascia, and the one that the region is for.
+**Boundaries**: external iliac packet — psoas (genitofemoral nerve on its surface) laterally, the vessel's adventitia itself, the circumflex iliac vein and lymphatic tributaries superiorly (ligate them or expect a lymphocoele/lymphorrhoea), the lacunar region inferiorly; **obturator fossa** — obturator internus muscle with the **obturator nerve** running in its fascia (it may be duplicated or divided; identify before clearing), external iliac vessels medially, the internal (hypogastric) system posteriorly, and the **accessory obturator/aberrant obturator artery** (from inferior epigastric or external iliac, in up to a fifth) crossing the field — the classic unexpected bleeder. **Danger structures lateral→medial** on the pelvic sidewall and in the parametrium: genitofemoral nerve on psoas; the external iliac vein (retracted, not grabbed — its injury converts a clean dissection into a packed field); the internal iliac's arterial divisions and venous plexus; the **ureter at two points** — where it crosses the iliac bifurcation (identified on the sidewall, followed to the pelvic brim, and kept medial-to-lateral in view) and its tunnel beneath the **uterine artery at the base of the broad ligament**, where it must be skeletonised from the cardinal ligament before the artery is clipped ("water under the bridge" is a warning about the bridge's surgeon) and again at the bladder's lateral wall/vesicouterine fold during the anterior dissection; and finally, medially, the **inferior hypogastric plexus and its cavernous nerves** posterolateral to the vagina and cervix whose preservation is this operation's functional outcome. The one-page moral, as ever in this chapter: the oncological boundaries are drawn in arteries, the functional ones in nerves, and the ureter is asked to be safe in both.
 :::
 :::

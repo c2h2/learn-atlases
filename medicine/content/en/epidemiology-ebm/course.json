@@ -8,16 +8,20 @@
   "tagline": "Measuring disease, study designs, bias and confounding, trials, diagnostic tests and appraising evidence",
   "summary": "Good medicine rests on good evidence. This course covers how disease frequency and risk are measured, observational and experimental study designs, bias, confounding and causation, the evaluation of diagnostic tests, randomised trials and the statistics clinicians need, systematic reviews and meta-analysis, and how to appraise evidence and use guidelines.",
   "overview": [
-    "The study, and the one that the system is for, is the one that the limit is for, and the one that the population is for. This course follows the study and the one that the population is for, from the mechanism and the one that the limit is for, to the practice and the one that the epidemiology is for, and gives the method and the check that make it work.",
-    "We build the study and the one that the population is for, from the process and the structure, and then study how the clinical and the epidemiology, and the one that the limit is for, are for."
+    "Epidemiology is the physics of disease in populations, and evidence-based medicine is its clinical twin: the discipline of asking a question, choosing the design that can answer it, and reading the result without being deceived. A clinician meets both daily — a trial abstract quoted in clinic, a screening invitation, a new test with a sensitivity in its advertisement — and the difference between practising on evidence and being misled by it is technical, learnable and testable.",
+    "The course builds the measurement layer first: incidence, prevalence, rates and ratios, survival curves and the difference between them. Then study designs — cohort, case-control, cross-sectional, ecological — with their measures of association (risk ratio, odds ratio) and their characteristic biases. Confounding and bias get their own chapter, including the statistics of adjustment. Diagnostic testing is treated as applied Bayes: sensitivity, specificity, likelihood ratios and the prevalence that dominates post-test probability. Randomised trials, their allocation, blinding, power and intention-to-treat analysis, lead into confidence intervals and hypothesis testing; systematic reviews and meta-analysis close the methods; and a final chapter on critical appraisal ties it together with worked appraisals of real study types.",
+    "Every statistical idea appears with a clinical number attached — a number needed to treat, a positive predictive value at two different prevalences, a hazard ratio read off a Kaplan–Meier curve — and with its failure mode: regression to the mean, the baseline-risk fallacy, the odds ratio stretched to imitate the risk ratio, the funnel plot that hides heterogeneity. Interactive figures let you move prevalence, sensitivity and study size and watch the answers change."
   ],
   "prerequisites": [],
   "outcomes": [
-    "Explain the study, and the one that the mechanism is for, in the limit",
-    "Explain the population, and the one that the system is for, in the limit",
-    "Interpret the finding, and the one that the study is for, in the limit",
-    "Outline the management, and the one that the population is for, in the limit",
-    "Recognise the state, and the one that the study is for, in the limit"
+    "Define and calculate incidence, prevalence, and the main mortality and survival measures, and choose the right measure for a given question.",
+    "Describe cohort, case-control, cross-sectional and ecological designs, their measures of association (risk ratio, odds ratio, rate ratio), their biases and their proper uses, including the rare-disease logic of the odds ratio.",
+    "Identify sources of selection, information and confounding bias, distinguish confounding from effect modification, and explain how restriction, matching and adjustment deal with each.",
+    "Use sensitivity, specificity, predictive values and likelihood ratios to interpret a diagnostic test, and apply Bayes' reasoning to show why prevalence dominates post-test probability.",
+    "Explain the design of a randomised controlled trial — allocation concealment, blinding, sample size and power, intention-to-treat — and appraise reported trials for these features.",
+    "Interpret confidence intervals, p-values and hazard ratios correctly, and state what each does not mean.",
+    "Explain systematic reviews and meta-analysis: protocol, search, heterogeneity, forest plots, publication bias, and GRADE-style grading of evidence.",
+    "Appraise a research article — question, design, participants, measurement, analysis, conclusions — and summarise its applicability to a clinical decision."
   ],
   "chapters": [
     {
@@ -86,28 +90,82 @@
   ],
   "history": [
     {
-      "year": 1828,
-      "title": "The description",
-      "detail": "The work and the one that the study is for, is the one that the population is for, of the structure.",
+      "year": 1662,
+      "title": "Natural and political observations",
+      "detail": "John Graunt tabulates the London Bills of Mortality, notices regularities — sex ratios, urban excess of deaths, the shape of epidemic years — and invents the statistical study of human populations, including a life table and the first 'political arithmetic'.",
       "people": [
-        "Harvey"
+        "John Graunt"
       ]
     },
     {
-      "year": 1846,
-      "title": "The practice",
-      "detail": "The method and the one that the study is for, is the one that the population is for, of the process.",
+      "year": 1854,
+      "title": "The Broad Street pump",
+      "detail": "John Snow maps cholera deaths around Soho's Broad Street pump, tests the water company hypothesis by comparing mortality in houses supplied by two companies, and intervenes on the strength of argument while the aetiological agent remains invisible — the founding field study of epidemiology (with William Farr's vital statistics as its necessary companion).",
       "people": [
-        "Lister"
+        "John Snow",
+        "William Farr"
       ]
     },
     {
-      "year": 1895,
-      "title": "The discovery",
-      "detail": "The study and the one that the study is for, is the one that the population is for, of the mechanism.",
+      "year": 1898,
+      "title": "Experimental epidemiology",
+      "detail": "The US Army board of Reed, Carroll, Agramonte and Lazear tests Carlos Finlay's mosquito hypothesis in Havana by letting cultured Aedes aegypti bite volunteers — a controlled experiment, carried out with fatal seriousness (Lazear died of the disease he was studying): yellow fever transmission is proved, and Gorgas later clears Havana and the Panama Canal zone.",
       "people": [
-        "Koche"
+        "Walter Reed",
+        "James Carroll",
+        "Aristides Agramonte",
+        "Jesse Lazear",
+        "Carlos Finlay"
       ]
+    },
+    {
+      "year": 1935,
+      "title": "The design of experiments",
+      "detail": "Ronald Fisher's Design of Experiments, built on randomisation and replication argued from agricultural stations, supplies the statistical grammar of the controlled trial: why randomise, how to block, what a null hypothesis is and what a significance level does.",
+      "people": [
+        "Ronald Fisher"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "The first modern randomised trial",
+      "detail": "The Medical Research Council's trial of streptomycin in advanced pulmonary tuberculosis — random allocation by sealed envelopes, prespecified outcomes, and the frank admission that 'no strict comparison was planned' — sets the template, and Austin Bradford Hill becomes the subject's conscience for fifty years.",
+      "people": [
+        "Austin Bradford Hill",
+        "Medical Research Council"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "Smoking and lung cancer",
+      "detail": "Richard Doll and Bradford Hill publish a hospital-based case-control study from London, followed by the British doctors' prospective cohort (1954 onwards); the causal inference, argued against the alternatives of the day with consistency, dose–response and temporality, becomes the model for chronic-disease epidemiology and for public action on an exposure.",
+      "people": [
+        "Richard Doll",
+        "Austin Bradford Hill"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Effectiveness and efficiency",
+      "detail": "Archie Cochrane's short book argues that medicine squanders money on treatments never tested, and that where a treatment's effect is genuinely uncertain, randomisation is not only ethical but obligatory; a 1987 lecture repeats the challenge, and the systematic-review movement that follows takes him as its patron.",
+      "people": [
+        "Archie Cochrane"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "The Cochrane Collaboration",
+      "detail": "Following Iain Chalmers's decades of scepticism about unaccumulated trials (including his own obstetric work on antenatal steroids), the Cochrane Collaboration is founded in Oxford to maintain registered, collaborative systematic reviews of healthcare — evidence as a public, continuously updated good.",
+      "people": [
+        "Iain Chalmers",
+        "Archie Cochrane"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "Preregistration and replication",
+      "detail": "After a decade of replication failures in psychology and medicine, journals, funders and trial registries move towards prospective registration, published protocols and reporting of all outcomes; the episode teaches epidemiologists' oldest lesson — that unreported analysis is the largest bias in the literature.",
+      "people": []
     }
   ],
   "references": [
