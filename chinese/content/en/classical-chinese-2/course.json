@@ -1,99 +1,210 @@
 {
-  "slug": "classical-chinese-2",
-  "title": "Classical Chinese II",
-  "full_title": "Classical Chinese II: Words, Grammar and Culture",
-  "area": "classical",
-  "level": 2,
-  "order": 100,
-  "tagline": "Original and extended meanings, synonyms in classical Chinese, pronouns, numerals and forms of address, function words in depth, parallel prose and rhapsodies, traditional exegesis, ancient culture for readers, reading commentaries, and books and editions",
-  "summary": "The second course in classical Chinese moves from reading sentences to understanding words and texts as scholars do. It traces how meanings grew from a character’s original sense, studies synonyms, pronouns and particles in depth, introduces parallel prose and the rhapsody, the methods of traditional exegesis, the knowledge of institutions, calendars, names and customs that classical texts take for granted, how to read the old commentaries, and how ancient books were transmitted and edited.",
-  "overview": [],
-  "prerequisites": [
-    "classical-chinese-1",
-    "modern-grammar",
-    "chinese-characters"
-  ],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "original-meanings",
-      "title": "Original and extended meanings",
-      "summary": "Finding a word’s original meaning from its character and its earliest uses, and the chains and networks along which meanings extend.",
-      "requires": [
-        "classical-chinese-1/old-and-new-meanings",
-        "chinese-characters/six-categories"
-      ]
-    },
-    {
-      "slug": "synonyms",
-      "title": "Synonyms in classical Chinese",
-      "summary": "Telling apart near-synonyms such as 言 and 语, 宫 and 室, 疾 and 病, and why the distinctions matter.",
-      "requires": [
-        "classical-chinese-2/original-meanings"
-      ]
-    },
-    {
-      "slug": "pronouns-numerals",
-      "title": "Pronouns, numerals and forms of address",
-      "summary": "Personal and demonstrative pronouns, humble and honorific forms of address, and how numbers were expressed.",
-      "requires": [
-        "classical-chinese-2/original-meanings"
-      ]
-    },
-    {
-      "slug": "particles",
-      "title": "Function words in depth",
-      "summary": "The full range of uses of the major function words, sentence-final particles and the moods they express, and how function words changed over time.",
-      "requires": [
-        "classical-chinese-2/pronouns-numerals"
-      ]
-    },
-    {
-      "slug": "parallel-prose-fu",
-      "title": "Parallel prose and rhapsodies",
-      "summary": "The rules of parallelism, allusion and tonal balance in parallel prose, and the rhapsody (赋) from the Han to the Song.",
-      "requires": [
-        "classical-chinese-2/particles"
-      ]
-    },
-    {
-      "slug": "exegesis",
-      "title": "Traditional exegesis",
-      "summary": "Explaining words through their graphs, their sounds and their contexts, the *Erya* and the commentarial tradition, and the methods of the Qing scholars.",
-      "requires": [
-        "classical-chinese-2/synonyms"
-      ]
-    },
-    {
-      "slug": "ancient-culture",
-      "title": "Ancient culture for readers",
-      "summary": "Calendars and the sexagenary cycle, official titles, personal and courtesy names, rites, dress and daily life — what classical texts take for granted.",
-      "requires": [
-        "classical-chinese-2/pronouns-numerals"
-      ]
-    },
-    {
-      "slug": "commentaries",
-      "title": "Reading commentaries",
-      "summary": "How the *Thirteen Classics with Commentaries* are laid out, the terms used in commentaries, and following a commentary through a difficult passage.",
-      "requires": [
-        "classical-chinese-2/exegesis",
-        "classical-chinese-2/ancient-culture"
-      ]
-    },
-    {
-      "slug": "books-editions",
-      "title": "Books and editions",
-      "summary": "How ancient books were made and handed down, catalogues and the four-branch classification, editions and collation, and finding reliable texts today.",
-      "requires": [
-        "classical-chinese-2/commentaries"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "phonology",
-    "classical-criticism"
-  ]
+ "slug": "classical-chinese-2",
+ "title": "Classical Chinese II",
+ "full_title": "Classical Chinese II: Words, Grammar and Culture",
+ "area": "classical",
+ "level": 2,
+ "order": 100,
+ "tagline": "Original and extended meanings, synonyms in classical Chinese, pronouns, numerals and forms of address, function words in depth, parallel prose and rhapsodies, traditional exegesis, ancient culture for readers, reading commentaries, and books and editions",
+ "summary": "The second course in classical Chinese moves from reading sentences to understanding words and texts as scholars do. It traces how meanings grew from a character’s original sense, studies synonyms, pronouns and particles in depth, introduces parallel prose and the rhapsody, the methods of traditional exegesis, the knowledge of institutions, calendars, names and customs that classical texts take for granted, how to read the old commentaries, and how ancient books were transmitted and edited.",
+ "overview": [
+  "The second course in classical Chinese moves from reading sentences to understanding words and texts as scholars do: how a character's sense radiates from its original meaning, how synonym sets encode register and ritual, how the hardest function words finally get their full grammar.",
+  "The second half is a practicum in the Chinese commentary tradition itself — 传、注、疏、集解 and the Qing evidential method — because pre-modern reading was always reading-with-commentary; plus the material side: how books survived (editions, collation, dictators of deletion), and the culture-knowledge (names, timekeeping, geography, institutions) every reader must command.",
+  "By the end you should be able to date a commentary layer, trace a semantic extension through dictionaries, and read a parallel-prose or fu text with metric awareness. Prerequisites: Classical Chinese I, Modern Grammar, Chinese Characters."
+ ],
+ "prerequisites": [
+  "classical-chinese-1",
+  "modern-grammar",
+  "chinese-characters"
+ ],
+ "outcomes": [
+  "distinguish 本义、基本义、引申义、假借义 and trace common extensions (引、兵、治、道 type chains) through 说文-classic dictionary evidence",
+  "analyze classical synonym sets by register, dialect, and taboo (讳), and resolve 古今字、异体字、通假 in a running text",
+  "master pronoun systems (之、其、彼、是、斯、吾、尔、若、君、公、足下、卿、子足 and self-lowering forms), numeral conventions (奇数虚指、三五、八九、万千、再、倍、参), and address hierarchies",
+  "use the major function words in depth (其、之、而、以、于、为、所、者、焉、矣、耳、夫、盖、唯) including dialect and period variants",
+  "scan and appreciate parallel prose (对偶、四六、声律、用典) and fu (铺陈、兮字、韵位), and identify 文、笔 divisions",
+  "read an annotated classic through its commentary strata (经—传—注—疏—集解—校释), knowing what each layer contributes and its period style",
+  "apply the evidential method: 形训、声训、义训; 校勘四法; 举例归纳 (王氏父子) — and name its modern descendants",
+  "use culture-knowledge toolkits (称谓、字、号、谥、庙讳; 干支、月正、闰、时辰; 郡县、别称; 官职升降词汇) to date and locate a text; consult 中国历代人物传记资料库-class resources and edition catalogs"
+ ],
+ "chapters": [
+  {
+   "slug": "original-meanings",
+   "title": "Original and extended meanings",
+   "summary": "Finding a word’s original meaning from its character and its earliest uses, and the chains and networks along which meanings extend.",
+   "requires": [
+    "classical-chinese-1/old-and-new-meanings",
+    "chinese-characters/six-categories"
+   ]
+  },
+  {
+   "slug": "synonyms",
+   "title": "Synonyms in classical Chinese",
+   "summary": "Telling apart near-synonyms such as 言 and 语, 宫 and 室, 疾 and 病, and why the distinctions matter.",
+   "requires": [
+    "classical-chinese-2/original-meanings"
+   ]
+  },
+  {
+   "slug": "pronouns-numerals",
+   "title": "Pronouns, numerals and forms of address",
+   "summary": "Personal and demonstrative pronouns, humble and honorific forms of address, and how numbers were expressed.",
+   "requires": [
+    "classical-chinese-2/original-meanings"
+   ]
+  },
+  {
+   "slug": "particles",
+   "title": "Function words in depth",
+   "summary": "The full range of uses of the major function words, sentence-final particles and the moods they express, and how function words changed over time.",
+   "requires": [
+    "classical-chinese-2/pronouns-numerals"
+   ]
+  },
+  {
+   "slug": "parallel-prose-fu",
+   "title": "Parallel prose and rhapsodies",
+   "summary": "The rules of parallelism, allusion and tonal balance in parallel prose, and the rhapsody (赋) from the Han to the Song.",
+   "requires": [
+    "classical-chinese-2/particles"
+   ]
+  },
+  {
+   "slug": "exegesis",
+   "title": "Traditional exegesis",
+   "summary": "Explaining words through their graphs, their sounds and their contexts, the *Erya* and the commentarial tradition, and the methods of the Qing scholars.",
+   "requires": [
+    "classical-chinese-2/synonyms"
+   ]
+  },
+  {
+   "slug": "ancient-culture",
+   "title": "Ancient culture for readers",
+   "summary": "Calendars and the sexagenary cycle, official titles, personal and courtesy names, rites, dress and daily life — what classical texts take for granted.",
+   "requires": [
+    "classical-chinese-2/pronouns-numerals"
+   ]
+  },
+  {
+   "slug": "commentaries",
+   "title": "Reading commentaries",
+   "summary": "How the *Thirteen Classics with Commentaries* are laid out, the terms used in commentaries, and following a commentary through a difficult passage.",
+   "requires": [
+    "classical-chinese-2/exegesis",
+    "classical-chinese-2/ancient-culture"
+   ]
+  },
+  {
+   "slug": "books-editions",
+   "title": "Books and editions",
+   "summary": "How ancient books were made and handed down, catalogues and the four-branch classification, editions and collation, and finding reliable texts today.",
+   "requires": [
+    "classical-chinese-2/commentaries"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": -150,
+   "title": "Commentary becomes a trade",
+   "detail": "Han 经学博士官 sets commentary to curriculum: 传、说、故、训 proliferate; 毛传郑笺 will become the model stratigraphy of reading.",
+   "people": "毛亨 郑玄"
+  },
+  {
+   "year": 645,
+   "title": "One empire, one reading",
+   "detail": "Kong Yingda's 五经正义 unifies the commentary tradition under 疏 (sub-commentary), printing orthodoxy for the examination state — reading now has an official ceiling.",
+   "people": "孔颖达"
+  },
+  {
+   "year": 1190,
+   "title": "Commentary collected",
+   "detail": "Zhu Xi's 四书章句集注 welds 集解 and 义理 into a seven-century exam canon; his 诗集传 quietly overwrites 毛郑 for the Odes.",
+   "people": "朱熹"
+  },
+  {
+   "year": 1644,
+   "title": "Evidence before doctrine",
+   "detail": "Qing evidential scholarship (顾炎武开其先) makes 音韵、小学、校勘 the engine of exegesis: 戴震 '由字以通词，由词以通道'.",
+   "people": "顾炎武 戴震"
+  },
+  {
+   "year": 1780,
+   "title": "The dictionary man's century",
+   "detail": "段玉裁《说文解字注》、王念孙《广雅疏证》、《读书杂志》set the evidential standard — '故训之旨存乎声音', run-through-homophones as philology's nuclear option.",
+   "people": "段玉裁 王念孙 王引之"
+  },
+  {
+   "year": 1879,
+   "title": "The 文通 and the grammar turn",
+   "detail": "马建忠《马氏文通》 (published 1898) reads the classics through Latin grammar — the commentary tradition acquires, uncomfortably, a syntax.",
+   "people": "马建忠"
+  },
+  {
+   "year": 1907,
+   "title": "Old methods, new tools",
+   "detail": "王国维二重证据法 puts excavated bone and bronze beside the transmitted text; 俞樾《古书疑义举例》 had already catalogued how readers go wrong.",
+   "people": "王国维 俞樾"
+  },
+  {
+   "year": 1985,
+   "title": "Machines take the 校勘",
+   "detail": "《故训汇纂》-class aggregations and database search (and later OCR of 四库, 简帛 releases) make 例证 induction instant — the evidential method's bottleneck becomes asking good questions, not finding instances.",
+   "people": "辞书与数据库"
+  }
+ ],
+ "references": [
+  {
+   "title": "《孟子题辞》(赵岐)",
+   "authors": "赵岐",
+   "year": 150,
+   "note": "Early prologue on how to read a classic — the exegesis of exegesis, in nuce."
+  },
+  {
+   "title": "《五经正义》",
+   "authors": "孔颖达",
+   "year": 642,
+   "note": "The 疏 stratum itself — watch sub-commentary argue while pretending only to explain."
+  },
+  {
+   "title": "《四书章句集注》",
+   "authors": "朱熹",
+   "year": 1190,
+   "note": "Seven centuries of exam orthodoxy in one commentary; read it to see interpretation wield power."
+  },
+  {
+   "title": "《说文解字注》",
+   "authors": "段玉裁",
+   "year": 1815,
+   "note": "The Qing at full stretch — 注 of a 注, with the homophone weapon always cocked."
+  },
+  {
+   "title": "《古书疑义举例》",
+   "authors": "俞樾",
+   "year": 1879,
+   "note": "A catalogue raisonné of misreadings — the reader's immune system, systematically."
+  },
+  {
+   "title": "《诗词曲语词汇释》",
+   "authors": "张相",
+   "year": 1953,
+   "note": "Demonstrates inductive semantics on late classical and vernacular materials; method lessons throughout."
+  },
+  {
+   "title": "《故训汇纂》",
+   "authors": "宗福邦等主编",
+   "year": 2003,
+   "note": "Two thousand years of glosses aggregated — the commentary strata, searchable."
+  },
+  {
+   "title": "《史传通假字字典》-type aids",
+   "authors": "多种",
+   "year": 2000,
+   "note": "Loan-character dictionaries: carry one, trust it provisionally."
+  }
+ ],
+ "next": [
+  "phonology",
+  "classical-criticism"
+ ]
 }
