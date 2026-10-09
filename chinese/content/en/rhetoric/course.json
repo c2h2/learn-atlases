@@ -1,97 +1,197 @@
 {
-  "slug": "rhetoric",
-  "title": "Rhetoric and Style",
-  "full_title": "Rhetoric and Style in Modern Chinese",
-  "area": "language",
-  "level": 2,
-  "order": 90,
-  "tagline": "What rhetoric is, choosing words, choosing sentence forms, figures of meaning, figures of form, sound and rhythm, registers, style, and analysing rhetoric",
-  "summary": "Rhetoric in Chinese linguistics is the art of choosing among the ways the language offers to say something, so that what is said fits its purpose, its reader and its situation. This course covers the choice of words and sentence forms, the figures of speech from metaphor and personification to antithesis and parallelism, the use of sound and rhythm, the registers of spoken, literary, official, scientific and news language, personal and period style, and how to analyse the rhetoric of a text.",
-  "overview": [],
-  "prerequisites": [
-    "modern-grammar"
-  ],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "what-is-rhetoric",
-      "title": "What rhetoric is",
-      "summary": "Rhetoric as choice according to context, from Chen Wangdao’s *Xiucixue Fafan* of 1932 to modern rhetoric.",
-      "requires": [
-        "modern-grammar/what-is-grammar"
-      ]
-    },
-    {
-      "slug": "choosing-words",
-      "title": "Choosing words",
-      "summary": "Precision, colour, sound and freshness in the choice of words, and famous examples of refining a single word (炼字).",
-      "requires": [
-        "rhetoric/what-is-rhetoric"
-      ]
-    },
-    {
-      "slug": "choosing-sentences",
-      "title": "Choosing sentence forms",
-      "summary": "Long and short, loose and tight, active and passive, and regular and varied sentences, and their effects.",
-      "requires": [
-        "rhetoric/what-is-rhetoric"
-      ]
-    },
-    {
-      "slug": "figures-of-meaning",
-      "title": "Figures of meaning",
-      "summary": "Metaphor and simile, personification, metonymy, hyperbole and irony.",
-      "requires": [
-        "rhetoric/choosing-words"
-      ]
-    },
-    {
-      "slug": "figures-of-form",
-      "title": "Figures of form",
-      "summary": "Antithesis, parallelism, repetition, climax, and rhetorical questions and other figures of structure.",
-      "requires": [
-        "rhetoric/figures-of-meaning",
-        "rhetoric/choosing-sentences"
-      ]
-    },
-    {
-      "slug": "sound-rhythm",
-      "title": "Sound and rhythm",
-      "summary": "Matching syllables, level and oblique tones, rhyme, reduplication and onomatopoeia in prose.",
-      "requires": [
-        "rhetoric/figures-of-form"
-      ]
-    },
-    {
-      "slug": "registers",
-      "title": "Registers",
-      "summary": "Spoken and written language, and the literary, official, scientific, news and political registers of modern Chinese.",
-      "requires": [
-        "rhetoric/choosing-sentences"
-      ]
-    },
-    {
-      "slug": "style",
-      "title": "Style",
-      "summary": "Personal and period styles — plain and ornate, concise and expansive, humorous and solemn — and how to describe them.",
-      "requires": [
-        "rhetoric/registers"
-      ]
-    },
-    {
-      "slug": "rhetorical-analysis",
-      "title": "Analysing rhetoric",
-      "summary": "Analysing the rhetoric of speeches, advertisements, news reports and literary texts, and the line between rhetoric and manipulation.",
-      "requires": [
-        "rhetoric/style",
-        "rhetoric/sound-rhythm"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "argumentative-writing",
-    "literary-theory"
-  ]
+ "slug": "rhetoric",
+ "title": "Rhetoric and Style",
+ "full_title": "Rhetoric and Style in Modern Chinese",
+ "area": "language",
+ "level": 2,
+ "order": 90,
+ "tagline": "What rhetoric is, choosing words, choosing sentence forms, figures of meaning, figures of form, sound and rhythm, registers, style, and analysing rhetoric",
+ "summary": "Rhetoric in Chinese linguistics is the art of choosing among the ways the language offers to say something, so that what is said fits its purpose, its reader and its situation. This course covers the choice of words and sentence forms, the figures of speech from metaphor and personification to antithesis and parallelism, the use of sound and rhythm, the registers of spoken, literary, official, scientific and news language, personal and period style, and how to analyse the rhetoric of a text.",
+ "overview": [
+  "Rhetoric is not the decoration of already-written sentences; it is the science of the choice that precedes every sentence: choose language to fit the occasion, the purpose, and the audience. This is the slogan of Chen Wangdao's founding 1905 treatise, and the working definition of this course.",
+  "We walk the whole inventory of choice: the word (precision, colour, sound, freshness), the sentence (long and short, loose and periodic, active and passive), the figure (metaphor and its cousins, metonymy, hyperbole, pun, personification), the formal patterns (parallelism, antithesis, repetition, climax, allusion), and the rhythms of sound (rhyme, alliteration, tonal balance) that Chinese, as a tonal and syllabic language, cultivates more self-consciously than most. We then widen the lens to register (spoken/written, formal/casual) and style (personal and period), and finish with the applied craft of rhetorical analysis of real texts: speeches, ads, news, lyrics.",
+  "Prerequisites: the vocabulary and grammar courses. Rhetorical choice presupposes a stocked system — grammar gives the skeleton, rhetoric gives the stance."
+ ],
+ "prerequisites": [
+  "modern-vocabulary",
+  "modern-grammar"
+ ],
+ "outcomes": [
+  "state rhetoric as appropriateness-to-context and distinguish it from both ornamentation and grammar",
+  "analyze word choice along four axes: precision, colouring (emotive/stylistic), sound, freshness",
+  "choose sentence forms (length, layout, voice, order) with explicit rhetorical reasons",
+  "identify and discuss the major figures of meaning (metaphor/simile, metonymy, personification, hyperbole, pun, irony) and of form (parallelism, antithesis, repetition, climax, allusion, euphemism)",
+  "describe the sound resources of Chinese (rhyme, tone-patterning, syllable pairing, reduplication) and their rhythmic effects",
+  "map registers (spoken/written, formal/colloquial, public/private) and select appropriately for scene and role",
+  "compare styles (plain/ornate, concise/circumstantial, masculine/feminine) with period and personal style",
+  "produce an evidenced rhetorical analysis of a speech, advertisement, news item or poem"
+ ],
+ "chapters": [
+  {
+   "slug": "what-is-rhetoric",
+   "title": "What rhetoric is",
+   "summary": "Rhetoric as choice according to context, from Chen Wangdao’s *Xiucixue Fafan* of 1932 to modern rhetoric.",
+   "requires": [
+    "modern-grammar/what-is-grammar"
+   ]
+  },
+  {
+   "slug": "choosing-words",
+   "title": "Choosing words",
+   "summary": "Precision, colour, sound and freshness in the choice of words, and famous examples of refining a single word (炼字).",
+   "requires": [
+    "rhetoric/what-is-rhetoric"
+   ]
+  },
+  {
+   "slug": "choosing-sentences",
+   "title": "Choosing sentence forms",
+   "summary": "Long and short, loose and tight, active and passive, and regular and varied sentences, and their effects.",
+   "requires": [
+    "rhetoric/what-is-rhetoric"
+   ]
+  },
+  {
+   "slug": "figures-of-meaning",
+   "title": "Figures of meaning",
+   "summary": "Metaphor and simile, personification, metonymy, hyperbole and irony.",
+   "requires": [
+    "rhetoric/choosing-words"
+   ]
+  },
+  {
+   "slug": "figures-of-form",
+   "title": "Figures of form",
+   "summary": "Antithesis, parallelism, repetition, climax, and rhetorical questions and other figures of structure.",
+   "requires": [
+    "rhetoric/figures-of-meaning",
+    "rhetoric/choosing-sentences"
+   ]
+  },
+  {
+   "slug": "sound-rhythm",
+   "title": "Sound and rhythm",
+   "summary": "Matching syllables, level and oblique tones, rhyme, reduplication and onomatopoeia in prose.",
+   "requires": [
+    "rhetoric/figures-of-form"
+   ]
+  },
+  {
+   "slug": "registers",
+   "title": "Registers",
+   "summary": "Spoken and written language, and the literary, official, scientific, news and political registers of modern Chinese.",
+   "requires": [
+    "rhetoric/choosing-sentences"
+   ]
+  },
+  {
+   "slug": "style",
+   "title": "Style",
+   "summary": "Personal and period styles — plain and ornate, concise and expansive, humorous and solemn — and how to describe them.",
+   "requires": [
+    "rhetoric/registers"
+   ]
+  },
+  {
+   "slug": "rhetorical-analysis",
+   "title": "Analysing rhetoric",
+   "summary": "Analysing the rhetoric of speeches, advertisements, news reports and literary texts, and the line between rhetoric and manipulation.",
+   "requires": [
+    "rhetoric/style",
+    "rhetoric/sound-rhythm"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": -350,
+   "title": "Aristotle's Rhetoric",
+   "detail": "Rhetoric is born in Greece as the systematic counterpart of dialectic: invention, arrangement, style, delivery — and the doctrine of ethos, pathos, logos.",
+   "people": "Aristotle"
+  },
+  {
+   "year": -15,
+   "title": "Han voices on words",
+   "detail": "Yang Xiong's dictum that words are the voice-print of the heart, and the ritual-critical tradition of “loving words through their kinds”, seed the Chinese notion that style indexes the self.",
+   "people": "扬雄 (Yang Xiong)"
+  },
+  {
+   "year": 501,
+   "title": "Wenxin Diaolong on style and blemish",
+   "detail": "Liu Xie's chapters on ordering the text and on adornment ground rhetoric in genuine feeling and matter — with the flourish-ridden writing of his age already on the operating table.",
+   "people": "刘勰 (Liu Xie)"
+  },
+  {
+   "year": 1921,
+   "title": "A school textbook arrives",
+   "detail": "A rhetoric primer compiled for schools — Lao She's early vernacular textbook — brings rhetoric and its drills into the national curriculum.",
+   "people": "老舍 (Lao She)"
+  },
+  {
+   "year": 1932,
+   "title": "The Principles of Rhetoric",
+   "detail": "Chen Wangdao's founding synthesis: figures split into the two great classes, styles into the seven doctrines, all governed by the constitutional clause — fit the subject and the scene.",
+   "people": "陈望道 (Chen Wangdao)"
+  },
+  {
+   "year": 1951,
+   "title": "Rhetoric in the normalisation drive",
+   "detail": "The grammar-rhetoric column against faulty public prose recruits rhetoric to the language-standardisation project, embedding usage-correction in textbooks nationwide.",
+   "people": "《人民日报》"
+  },
+  {
+   "year": 1980,
+   "title": "A discipline re-founds",
+   "detail": "Post-Cultural-Revolution boom: the Chinese Rhetoric Society is founded; journals and textbook series multiply; pragmatics, stylistics and discourse analysis join the syllabus.",
+   "people": "中国修辞学会"
+  },
+  {
+   "year": 2000,
+   "title": "Cognitive and digital turns",
+   "detail": "Conceptual-metaphor studies, corpus stylistics, and internet rhetoric (memes as figures, platforms as register) renew the ancient “fit the occasion” problem.",
+   "people": "学界群体"
+  }
+ ],
+ "references": [
+  {
+   "title": "《修辞学发凡》",
+   "authors": "陈望道",
+   "year": 1932,
+   "note": "The founding system: two classes of figures, seven styles, occasion-centred definition — still the field's grammar."
+  },
+  {
+   "title": "《文心雕龙》(《宗经》《情采》等篇)",
+   "authors": "刘勰",
+   "year": 501,
+   "note": "The classical tradition's most disciplined account of figuration and its abuses."
+  },
+  {
+   "title": "Rhetoric",
+   "authors": "Aristotle",
+   "year": -350,
+   "note": "The comparator tradition: proof-types, character and emotion as artistic means."
+  },
+  {
+   "title": "《修辞学及文体学》",
+   "authors": "王希杰",
+   "year": 1937,
+   "note": "The first attempt to historicise the Chinese tradition of rhetoric and style."
+  },
+  {
+   "title": "《语法修辞讲话》",
+   "authors": "吕叔湘、朱德熙",
+   "year": 1952,
+   "note": "Not a treatise but a laboratory: the campaign that made “is this sentence sound?” a civic skill."
+  },
+  {
+   "title": "《中国文法要略》",
+   "authors": "吕叔湘",
+   "year": 1944,
+   "note": "The expressive-function map beneath every Chinese rhetoric textbook — ways of speaking as ways of meaning."
+  }
+ ],
+ "next": [
+  "argumentative-writing",
+  "literary-theory"
+ ]
 }
