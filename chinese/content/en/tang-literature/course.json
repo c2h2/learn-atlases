@@ -7,11 +7,24 @@
   "order": 120,
   "tagline": "Early Tang poetry and regulated verse, the High Tang, Li Bai, Du Fu, Bai Juyi and the mid-Tang poets, Han Yu, Liu Zongyuan and the ancient-prose movement, late Tang poetry, Tang tales, and the rise of the *ci*",
   "summary": "The Tang dynasty is the summit of Chinese poetry, when regulated verse took its final form and poets such as Wang Wei, Li Bai and Du Fu wrote the poems every Chinese reader knows. This course follows Tang literature from the early Tang poets through the High Tang, the mid-Tang reforms of Bai Juyi and Han Yu and the late Tang poetry of Li Shangyin and Du Mu, to the Tang tales and the song lyrics of the Five Dynasties.",
-  "overview": [],
+  "overview": [
+    "The hundred and thirty years from 618 to 750 are the great migration of Chinese poetry from the regulated to the sublime; from 750 to 907 it is the century when the sublime learns to keep house in ruins. This course walks the whole road: the court that made form, the frontier that made voice, the rebellion that made conscience, and the decline that made memory.",
+    "Two system shocks define the arc: the fixation of regulated verse (which turns poetry into a national examination skill) and the An Lushany Rebellion (which turns poets into witnesses). Between them stand Li Bai and Du Fu - not two styles but two answers to the same question: what can a poem do when the empire can no longer keep its promises?",
+    "Exit skills: date a Tang poem by its prosody and diction, read a regulated-verse middle couplet as an argument, use the Yuan-and-Bai debate and the guwen movement to explain why 'the prose' and 'the poetry' reform each other, and track how ci goes from banquette lyric to literature. Prerequisites: Han-Six Dynasties literature."
+  ],
   "prerequisites": [
     "han-to-nanbeichao"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "trace the completion of regulated verse from Shen Quanqi and Song Zhiwen back to the Yongming rules, and scan a jinti line with the four-tone checklist",
+    "narrate how the frontier and the examination system moved poetry from the palace to the road (Yanger, Wang Changling, Cen Shen, Gao Shi)",
+    "explain Li Bai's reception machinery - how a poet without a jinshi degree became the canonical 'banished immortal'",
+    "read Du Fu with the year on the page: how the sequential (lianian) method and 'poet-historian' writing work; assess the two great Tang syntheses (Du and Han Yu's 'old prose')",
+    "reconstruct the mid-Tang debates: Yuan Zhen and Bai Juyi's new yuefu programme, Han Yu's '词必己出' style, the Meng-Jiao oddness, Li He's imagery",
+    "summarize the guwen movement as an institution (teachers and disciples, circulation through collections), and why Liu Zongyuan is its quietest master",
+    "date the late-Tang moods: Li Shangyin's allusive density (and its interpretive history), Wen Tingyun's craftsmanship, and why 'decline' is a critical invention worth unpacking",
+    "describe the tale and the ci as parallel economies of entertainment (monk-shops, wine tables, the Shouguang score) and read Huajian ji against the rise of literary ci"
+  ],
   "chapters": [
     {
       "slug": "early-tang",
@@ -86,8 +99,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 690,
+      "title": "Poetry at court",
+      "detail": "Wu Zetian's reign makes poetry a promotion technology: the examination turns verse into the empire's newest currency; Shen Quanqi and Song Zhiwen fix the regulated line.",
+      "people": "武则天 沈佺期 宋之问"
+    },
+    {
+      "year": 701,
+      "title": "The year Li Bai is born",
+      "detail": "The century's two greatest poems are a frontier posting and a scholar's book bag; between them lives Li Bai - born this year, unexempted by the examination, famous in spite of the system.",
+      "people": "李白"
+    },
+    {
+      "year": 746,
+      "title": "Du Fu to the capital",
+      "detail": "The self-presenting poet arrives at Chang'an, fails, waits, and finally writes the poems of the empire's collapse - the career arc of the 'poet-historian' in one life.",
+      "people": "杜甫"
+    },
+    {
+      "year": 755,
+      "title": "An Lushan rebellion",
+      "detail": "The road from Chang'an to Shu becomes the century's most-commented route; poetry's job description changes from display to witness.",
+      "people": "玄宗 肃宗"
+    },
+    {
+      "year": 803,
+      "title": "The great reforms convene",
+      "detail": "Within a few years Han Yu, Liu Zongyuan, Bai Juyi and Yuan Zhen are all writing - prose, poetry, and their criticism at once: the mid-Tang is a generation that read each other.",
+      "people": "韩愈 柳宗元 白居易 元稹"
+    },
+    {
+      "year": 819,
+      "title": "The Buddha bone memorial",
+      "detail": "Han Yu risks exile over a relic; the episode becomes the template for the Confucian man of letters against the state - and his prose gets its spine.",
+      "people": "韩愈"
+    },
+    {
+      "year": 835,
+      "title": "The Ganlu incident",
+      "detail": "Late Tang court politics turns lethal and opaque; Li Shangyin writes his age in riddles - ambiguity becomes an aesthetics, not an accident.",
+      "people": "李商隐 令狐楚"
+    },
+    {
+      "year": 940,
+      "title": "The anthology of new songs",
+      "detail": "The 'Huajian ji' is compiled in Later Shu: banquet lyrics collected as a book - ci takes its first step from the singers to the litterati.",
+      "people": "赵崇祚"
+    }
+  ],
+  "references": [
+    {
+      "title": "Old Wang Changling-style 'poetry rules' (lost; known from recensions)",
+      "authors": "王昌龄（旧题）",
+      "year": 750,
+      "note": "Early 'poetry rules': how a Tang poet planned a poem - craft notes from inside the workshop."
+    },
+    {
+      "title": "《河岳英灵集》",
+      "authors": "殷璠",
+      "year": 753,
+      "note": "A High Tang selection made while the High Tang was still alive - taste as a running verdict; 'sound and flair' (声律风骨) as the criterion."
+    },
+    {
+      "title": "《诗式》",
+      "authors": "皎然",
+      "year": 785,
+      "note": "The monk-poet maps imagery, borrowing, and styles - Tang craft thinking before the word 'aesthetics' exists."
+    },
+    {
+      "title": "《答李翊书》",
+      "authors": "韩愈",
+      "year": 794,
+      "note": "Guwen's workshop note: how to spend a lifetime learning to write like no one else ('词必己出' in practice)."
+    },
+    {
+      "title": "《与元九书》",
+      "authors": "白居易",
+      "year": 814,
+      "note": "The new-yuefu manifesto: 'poetry to chronicle the times, songs to convey the message' - literature as journalism."
+    },
+    {
+      "title": "《进学解》",
+      "authors": "韩愈",
+      "year": 814,
+      "note": "A self-mockery essay that quotes the whole movement's programme - parody as manifesto."
+    },
+    {
+      "title": "《李翰林集序》",
+      "authors": "李阳冰",
+      "year": 764,
+      "note": "The first framing of Li Bai's legend, edited by his own kin: canonization begins with a relative."
+    },
+    {
+      "title": "《唐摭言》",
+      "authors": "王定保",
+      "year": 960,
+      "note": "Examination-world anecdotes: how Tang poetry was actually read, judged, and envied."
+    }
+  ],
   "next": [
     "song-literature"
   ]
