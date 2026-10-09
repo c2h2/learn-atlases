@@ -12,7 +12,9 @@
     "We follow one argument throughout: the character is a morpheme-syllable unit, and its shape is a compromise between meaning, sound and the physical habits of brush, chisel and keyboard. The liushu analysis of individual characters is therefore trained like a practical skill — you will classify real characters, catch readings invented from phonetic components, and date scripts from samples — while the cultural and political chapters (characters and culture; simplification; the standard character tables) keep one question in view: how a script shaped a civilization, and how a civilization has been reshaping its script ever since, most recently in Unicode code charts and the 2013 Table of General Standard Chinese Characters.",
     "The course presumes Mandarin phonology and grammar at the level of the first-year courses and leans on them constantly: an alphabetic way of thinking about sound is exactly what must be suspended to understand a xiesheng series, and the history of Chinese supplies the phonological background for every statement about what a bronze inscription sounded like. By the end, the thousand commonest characters should feel like worked machinery rather than given shapes, and dictionary, epigraphy and font questions should look like — and become answerable by — the tools covered in the last two chapters."
   ],
-  "prerequisites": [],
+  "prerequisites": [
+    "sounds-of-mandarin"
+  ],
   "outcomes": [
     "Distinguish word-mapping writing from language-representing writing, and explain why 'Chinese characters are pictographic' fails as a description of the system as a whole.",
     "Identify oracle-bone, bronze, seal, clerical and regular script from samples, and narrate the ancient-modern script change with its causes in writing materials and administration.",
