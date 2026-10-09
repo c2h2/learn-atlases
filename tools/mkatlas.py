@@ -10,7 +10,7 @@ README.md and tools/*.md are only created when missing (course.json as a stub wi
 Re-running it pulls later Maths Atlas engine fixes into the atlas without touching its content, so
 engine changes for these atlases belong here (or in maths/), not in the generated copies, which a
 re-run replaces. MA_SKELETON keeps its current value; a new atlas starts as a skeleton.
-Used for: chemistry, cs, biology, mechanical, economics, earth, english, chinese.
+Used for: llm, chemistry, cs, biology, mechanical, economics, earth, english, chinese.
 
 Optional spec keys: "sources" (the about page's sources paragraph), "levels" (names for levels 1–4
 instead of Year 1–4), "labels" (what theorem and proof blocks are called, with the pages that

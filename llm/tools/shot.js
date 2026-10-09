@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Screenshot an LLM Atlas page in headless Chromium and report JavaScript errors.
+/* Screenshot a LLM Atlas page in headless Chromium and report JavaScript errors.
  *
  *   node tools/shot.js "lab.php?w=riemann" /path/out.png [--full] [--width=1280] [--height=900] [--wait=2500] [--dark] [--click=selector]
  *
@@ -47,8 +47,9 @@ function chrome() {
   if (click) { try { await page.click(click); } catch (e) { problems.push('click failed: ' + click); } }
   await new Promise((r) => setTimeout(r, +opt('wait', 2500)));
   const figs = await page.evaluate(() => Array.from(document.querySelectorAll('figure.widget')).map((f) => {
-    const err = f.querySelector('.w-err, .widget-msg');
-    return { id: f.id, type: f.dataset.widget, state: err ? err.textContent.trim().slice(0, 200) : 'ok' };
+    // text inputs carry an empty .w-err slot: only a message with text is an error
+    const err = Array.from(f.querySelectorAll('.w-err, .widget-msg')).map((e) => e.textContent.trim()).find(Boolean);
+    return { id: f.id, type: f.dataset.widget, state: err ? err.slice(0, 200) : 'ok' };
   }));
   await page.screenshot({ path: out, fullPage: args.includes('--full') });
   await browser.close();

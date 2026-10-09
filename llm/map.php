@@ -43,9 +43,9 @@ foreach ($cols as $d => &$list) {
     }
 }
 unset($list);
-$nodeW = 196;
+$nodeW = 212;
 $nodeH = 54;
-$colGap = 76;
+$colGap = 62;
 $rowGap = 22;
 $maxRows = max(array_map('count', $cols));
 $W = count($cols) * $nodeW + (count($cols) - 1) * $colGap + 40;

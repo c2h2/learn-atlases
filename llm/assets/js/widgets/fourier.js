@@ -1,4 +1,4 @@
-/* LLM Atlas (engine shared with Maths Atlas) — interactive figures: Fourier series, the heat equation and the wave equation.
+/* Maths Atlas — interactive figures: Fourier series, the heat equation and the wave equation.
      fourier  partial sums S_N f of the 2π-periodic extension of f: presets with exact coefficients, or any
               expression on [−π, π] (Gauss–Legendre quadrature on panels split at the jumps and kinks of f);
               amplitude spectrum (linear or log scale), the Gibbs overshoot next to a jump, mean-square and sup errors

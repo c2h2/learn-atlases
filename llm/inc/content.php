@@ -13,10 +13,10 @@ const AREAS = [
     'foundations'  => ['label' => 'Maths & ML foundations', 'blurb' => 'The mathematics of machine learning, learning from data and neural networks.'],
     'language'     => ['label' => 'Language modelling', 'blurb' => 'Text and tokens, sequence models, attention and the Transformer.'],
     'training'     => ['label' => 'Pretraining & scaling', 'blurb' => 'Data, objectives, scaling laws and training across thousands of accelerators.'],
-    'alignment'    => ['label' => 'Post-training & reasoning', 'blurb' => 'Instruction tuning, learning from feedback and training models to reason.'],
-    'systems'      => ['label' => 'Inference & systems', 'blurb' => 'Decoding, serving, quantisation and the cost of every token.'],
     'applications' => ['label' => 'Applications', 'blurb' => 'Prompting, retrieval, tools, agents and multimodal models.'],
     'safety'       => ['label' => 'Evaluation, safety & society', 'blurb' => 'Measuring models, understanding them, making them safe and their effect on society.'],
+    'alignment'    => ['label' => 'Post-training & reasoning', 'blurb' => 'Instruction tuning, learning from feedback and training models to reason.'],
+    'systems'      => ['label' => 'Inference & systems', 'blurb' => 'Decoding, serving, quantisation and the cost of every token.'],
 ];
 
 const LEVELS = [1 => 'Foundations', 2 => 'Core', 3 => 'Advanced', 4 => 'Frontier'];

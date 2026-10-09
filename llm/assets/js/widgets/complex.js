@@ -1,4 +1,4 @@
-/* LLM Atlas (engine shared with Maths Atlas) — interactive figures: complex analysis.
+/* Maths Atlas — interactive figures: complex analysis.
      complexmap    domain colouring of f(z) (hue = arg f, brightness = |f|) or the images of a grid / polar grid
      complexplane  draggable z and w: sum, product, quotient (polar form), powers and n-th roots
      contourint    a movable circle over the domain colouring: ∮ f dz (trapezoid rule) against 2πi Σ residues

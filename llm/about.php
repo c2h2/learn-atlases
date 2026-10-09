@@ -24,7 +24,7 @@ page_head(t('About'), 'about');
         <div class="blk blk-intuition"><div class="blk-head"><span class="blk-kind"><?= h(t('Intuition')) ?></span></div><div class="blk-body"><p><?= h(t('The picture behind the formalism.')) ?></p></div></div>
         <div class="blk blk-warning"><div class="blk-head"><span class="blk-kind"><?= h(t('Common mistake')) ?></span></div><div class="blk-body"><p><?= h(t('Errors students often make, and why they are wrong.')) ?></p></div></div>
       </div>
-      <p><?= h(t('Interactive figures let you change a parameter, move a point or run a small model and watch the result change. All of them are collected in the Lab.')) ?></p>
+      <p><?= h(t('Interactive figures let you change a parameter, run a simulation or move a point and watch the result change. All of them are collected in the Lab.')) ?></p>
     </section>
     <section class="prose">
       <h2 class="section" style="margin-bottom:12px"><?= h(t('In numbers')) ?></h2>
@@ -35,11 +35,13 @@ page_head(t('About'), 'about');
         <div><dt><?= h(t('Exercises with solutions')) ?></dt><dd><?= fmt_num($tot['exercises']) ?></dd></div>
       </dl>
       <h2 class="section" style="margin-bottom:12px"><?= h(t('Sources and accuracy')) ?></h2>
-      <p><?= h(t('The lessons are original texts that follow the standard undergraduate syllabus and notation. Each course page recommends textbooks for further reading. Worked examples and solutions were checked by computation, and historical notes were checked against the original papers.')) ?></p>
-      <p><?= h(t('If you find an error, it is most useful to note the chapter and the number of the theorem, example or exercise.')) ?></p>
+      <p><?= h(t('The lessons are original texts that follow the standard textbooks and the original papers, and each course page recommends books and papers for further reading. This atlas is still a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.')) ?></p>
+      <p><?= sprintf(h(t('If you find an error, please report it on %s, noting the chapter and the number of the theorem, example or exercise.')), '<a href="' . h(MA_ISSUES_URL) . '">GitHub</a>') ?></p>
       <h2 class="section" style="margin:28px 0 12px"><?= h(t('How it is built')) ?></h2>
       <p><?= h(t('The site is plain PHP with no database. Lessons are written in a light markup language and every formula is typeset in advance with KaTeX; interactive figures are small self-contained scripts. Fonts, KaTeX and all scripts are served from this site, so it works where external services are blocked.')) ?></p>
       <p><?= h(t('The interface is available in English and Simplified Chinese.')) ?></p>
+      <h2 class="section" style="margin:28px 0 12px"><?= h(t('Licence')) ?></h2>
+      <p><?= sprintf(h(t('The lessons, figures and code are dedicated to the public domain under CC0 1.0: you may copy, adapt, translate and share them for any purpose without asking. The bundled libraries and fonts keep their own licences. The source is on %s.')), '<a href="https://github.com/c2h2/learn-atlases">GitHub</a>') ?></p>
     </section>
   </div>
 </div>

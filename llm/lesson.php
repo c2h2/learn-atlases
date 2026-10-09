@@ -66,7 +66,7 @@ page_head($titlePlain . ' · ' . md_plain($course['title']), '', ['scripts' => $
     <?php if ($lesson): ?><button class="done-toggle" type="button" aria-pressed="false" data-done="<?= h("$cslug/$lslug") ?>"><?= icon('check') ?><span><?= h(t('Mark as read')) ?></span></button><?php endif; ?>
   </header>
   <?php if (!$lesson): ?>
-    <p class="callout"><?= h(t('This chapter is being written. The outline below shows where it fits in the course.')) ?></p>
+    <p class="callout"><?= h(t('This chapter is still to be written: the atlas is a skeleton so far. The summary above and the chapters it builds on show where it fits in the course.')) ?></p>
   <?php else: ?>
     <?php if (is_zh() && $lesson['src_lang'] === 'en'): ?><p class="callout" lang="zh-CN">本章的中文版尚未完成，下面显示英文原文。界面、目录和课程信息均已翻译。</p><?php endif; ?>
   <div class="lesson-layout">
@@ -90,6 +90,14 @@ page_head($titlePlain . ' · ' . md_plain($course['title']), '', ['scripts' => $
         <?php if ($next): ?><a class="next" href="<?= h(url('lesson.php', ['c' => $cslug, 'l' => $next['slug']])) ?>"><div class="dir"><?= h(t('Next')) ?> →</div><div class="t"><?= ma_inline($next['title'], $cslug) ?></div></a>
         <?php else: ?><a class="next" href="<?= h(url('course.php', ['c' => $cslug])) ?>"><div class="dir"><?= h(t('End of course')) ?> →</div><div class="t"><?= ma_inline($course['title'], $cslug) ?></div></a><?php endif; ?>
       </nav>
+      <?php
+      $page_url = (($_SERVER['HTTPS'] ?? 'off') !== 'off' ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'f.g77k.com') . ($_SERVER['REQUEST_URI'] ?? '');
+      $issue = MA_ISSUES_URL . '/new?' . http_build_query([
+          'title' => "[llm] $cslug/$lslug: ",
+          'body' => "Page: $page_url\nWhere (theorem, example or exercise number):\nWhat is wrong:\n",
+      ]);
+      ?>
+      <p class="lesson-report"><?= sprintf(h(t('Found a mistake on this page? %s')), '<a href="' . h($issue) . '">' . h(t('Report it on GitHub')) . '</a>') ?></p>
     </article>
   </div>
   <?php endif; ?>

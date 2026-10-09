@@ -8,8 +8,12 @@ if ($one !== '' && !isset($cat[$one])) {
     $one = '';
 }
 $GROUPS = [
-    'calculus' => 'Graphs and functions', 'multivar' => 'Optimisation and loss landscapes', 'linalg' => 'Linear algebra',
-    'prob' => 'Probability and statistics', 'numerical' => 'Number formats', 'discrete' => 'Graphs',
+    'calculus' => 'Graphs and functions',
+    'multivar' => 'Optimisation and loss landscapes',
+    'linalg' => 'Linear algebra',
+    'prob' => 'Probability and statistics',
+    'numerical' => 'Number formats',
+    'discrete' => 'Graphs',
 ];
 
 /** "key: value" lines -> config array. */

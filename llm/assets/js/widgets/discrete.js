@@ -1,4 +1,4 @@
-/* LLM Atlas (engine shared with Maths Atlas) — interactive figures: discrete mathematics, number theory, algebra and topology.
+/* Maths Atlas — interactive figures: discrete mathematics, number theory, algebra and topology.
    graph, truthtable, venn, sieve, modular, euclid, permutation, cayley, pascal, cantor, mapping, relation, metricballs.
    Conventions: see tools/WIDGET_GUIDE.md. Extra CSS is injected once (classes prefixed w-dm-). */
 (function () {
@@ -125,8 +125,8 @@
   const lcm = (a, b) => (a && b ? Math.abs(a / gcd(a, b) * b) : 0);
 
   // categorical colours from the theme: six series-like hues, then mixes around a hue ring
-  const HUES = ['var(--series-1)', 'var(--series-2)', 'var(--series-3)', 'var(--series-4)', 'var(--a-safety)', 'var(--a-systems)'];
-  const RING = ['var(--series-1)', 'var(--series-3)', 'var(--a-systems)', 'var(--series-2)', 'var(--a-safety)', 'var(--series-4)'];
+  const HUES = ['var(--series-1)', 'var(--series-2)', 'var(--series-3)', 'var(--series-4)', 'var(--a-discrete)', 'var(--a-applied)'];
+  const RING = ['var(--series-1)', 'var(--series-3)', 'var(--a-applied)', 'var(--series-2)', 'var(--a-discrete)', 'var(--series-4)'];
   /** Colour at position t in [0, 1) on a hue ring built from theme colours. */
   function ring(t) {
     t = ((t % 1) + 1) % 1;
@@ -3623,7 +3623,7 @@
           : T('%s = %s has already been listed, so skip it.', label(m, n), ((m + 1) / gcd(m + 1, n + 1)) + '/' + ((n + 1) / gcd(m + 1, n + 1)));
       } else msg = T('Step %d: the pair %s.', k - 1, label(cur[0], cur[1]));
       const parts = [el('span', { class: 'w-dm-msg', text: msg })];
-      if (!rat) parts.push(el('span', null, MA.texEl(zig ? '\\pi(m,n) = \\tfrac{d(d+1)}{2} + \\begin{cases} m & d \\text{ even} \\\\ n & d \\text{ odd}\\end{cases},\\; d = m+n' : '\\pi(m,n) = \\tfrac{(m+n)(m+n+1)}{2} + n')));
+      if (!rat) parts.push(el('span', null, MA.texEl(zig ? '\\pi(m,n) = \\tfrac{d(d+1)}{2} + \\begin{cases} m & d \\text{ ' + T('even@@parity') + '} \\\\ n & d \\text{ ' + T('odd@@parity') + '}\\end{cases},\\; d = m+n' : '\\pi(m,n) = \\tfrac{(m+n)(m+n+1)}{2} + n')));
       info.set(...parts);
       if (rat) panel.replaceChildren(chipRow(T('The list so far:'), list.slice(-40), (i) => i === list.length - 1), el('div', { class: 'w-dm-hint', text: T('Every positive rational p/q sits in row q, column p, so the zig-zag reaches it after finitely many steps; skipping repeats makes the list a bijection ℕ → ℚ⁺.') }));
       else panel.replaceChildren(el('div', { class: 'w-dm-hint', text: T('Every pair lies on a finite diagonal m + n = d, so it receives a number after finitely many steps: ℕ × ℕ is countable. Hover a cell to see its number.') }));
@@ -4732,7 +4732,7 @@
     const pOf = (t) => { const q = t <= 0.2 ? 1 + (qMax - 1) * (0.2 - t) / 0.2 : (1 - t) / 0.8; return q <= 1e-6 ? Infinity : roundP(1 / q); };
     const tOf = (p) => { const q = 1 / p; return q >= 1 ? 0.2 - 0.2 * (q - 1) / (qMax - 1) : 1 - 0.8 * q; };
     let p = p0m.p, cx = 0, cy = 0, r = r0, showCopy = true;
-    const PAL = ['var(--series-1)', 'var(--series-3)', 'var(--series-2)', 'var(--a-safety)', 'var(--a-systems)', 'var(--series-4)'];
+    const PAL = ['var(--series-1)', 'var(--series-3)', 'var(--series-2)', 'var(--a-discrete)', 'var(--a-applied)', 'var(--series-4)'];
     const colOf = (k) => PAL[k % PAL.length];
     const mName = (m) => (m.kind === 'disc' ? 'd_{\\text{disc}}' : m.kind === 'rail' ? 'd_{\\text{rail}}' : 'd_{' + pTeX(m.p) + '}');
     const SUBS = { 1: '₁', 2: '₂', 3: '₃', 4: '₄', 5: '₅', 6: '₆', 7: '₇', 8: '₈', 9: '₉' };

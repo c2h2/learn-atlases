@@ -199,16 +199,18 @@
       ax.append(axg);
       if (!this.o.ticks) return;
       const tk = el('g', { class: 'tick' });
-      const fmt = (v, step) => (Math.abs(v) < 1e-12 ? '0' : MA.fmt(+v.toFixed(Math.max(0, -Math.floor(Math.log10(step)) + 1)), 6));
+      // zero relative to the tick step, so axes spanning ±3e-14 are labelled too
+      const zero = (v, step) => Math.abs(v) < 1e-9 * step;
+      const fmt = (v, step) => (zero(v, step) ? '0' : MA.fmt(+v.toFixed(Math.min(100, Math.max(0, -Math.floor(Math.log10(step)) + 1))), 6));
       xt.values.forEach((v) => {
-        if (Math.abs(v) < 1e-12 && yAxisX === this.X(0)) return;
+        if (zero(v, xt.step) && yAxisX === this.X(0)) return;
         const tx = this.X(v);
         if (tx < L + 4 || tx > R - 4) return;
         const lab = this.o.piTicks ? piLabel(v) : fmt(v, xt.step);
         tk.append(el('text', { x: tx, y: Math.min(B + 15, xAxisY + 15), 'text-anchor': 'middle', text: lab }));
       });
       yt.values.forEach((v) => {
-        if (Math.abs(v) < 1e-12 && xAxisY === this.Y(0)) return;
+        if (zero(v, yt.step) && xAxisY === this.Y(0)) return;
         const ty = this.Y(v);
         if (ty < T + 4 || ty > B - 4) return;
         tk.append(el('text', { x: Math.max(L - 6, yAxisX - 6), y: ty + 4, 'text-anchor': 'end', text: fmt(v, yt.step) }));
@@ -477,13 +479,25 @@
         return rec(a0, m, fa, flm, fm, left, eps / 2, depth - 1) + rec(m, b0, fm, frm, fb, right, eps / 2, depth - 1);
       };
       if (a === b) return 0;
-      const fa = f(a), fb = f(b), fm = f((a + b) / 2);
-      return rec(a, b, fa, fm, fb, simpson(fa, fm, fb, a, b), tol, 40);
+      // start from 16 panels: three samples can make a step or a narrow bump look linear, and the
+      // recursion would then stop at once (floor(4x)/4 + x/4 on [0, 1] gave 0.625 instead of 0.5)
+      const K = 16, h = (b - a) / K;
+      let sum = 0;
+      for (let i = 0; i < K; i++) {
+        const a0 = a + i * h, b0 = i === K - 1 ? b : a + (i + 1) * h;
+        const fa = f(a0), fb = f(b0), fm = f((a0 + b0) / 2);
+        sum += rec(a0, b0, fa, fm, fb, simpson(fa, fm, fb, a0, b0), tol / K, 36);
+      }
+      return sum;
     },
     /** Derivative by a 5-point stencil. */
     deriv(f, x, h) {
       h = h || 1e-4 * Math.max(1, Math.abs(x));
       return (-f(x + 2 * h) + 8 * f(x + h) - 8 * f(x - h) + f(x - 2 * h)) / (12 * h);
+    },
+    /** A finite-difference result that is zero up to rounding noise (−3.3e−12 at a critical point) reads as 0. */
+    snap(v, scale = 1) {
+      return Math.abs(v) < 1e-7 * Math.max(1, Math.abs(scale)) ? 0 : v;
     },
     /** Root of f in [a, b] by bisection (f(a), f(b) of opposite signs) or null. */
     bisect(f, a, b, tol = 1e-12) {
@@ -526,6 +540,8 @@
 
   // ------------------------------------------------------------------ controls
   const looksTeX = (s) => /[\\^_{}]/.test(s);
+  // a legend label such as y = x + 1, f'(x) or 1+nx is a formula even without TeX markup (but not RK4 or a word)
+  const formulaLike = (s) => /^[A-Za-z0-9\s+\-*/=()'.,<>|]+$/.test(s) && /[A-Za-z]/.test(s) && !/[A-Za-z]{3,}|[A-Z]{2}/.test(s);
   function labelEl(label, tex) {
     const nm = el('span', { class: 'nm' });
     if (tex || (label && looksTeX(label))) MA.tex(nm, label, false); else nm.textContent = label || '';
@@ -645,7 +661,7 @@
       const box = el('div', { class: 'w-legend' });
       items.forEach((it) => {
         const k = el('span', { class: 'k' }, el('span', { class: it.swatch ? 'sw' : 'ln', style: '--c:' + it.color }));
-        k.append(looksTeX(it.label) ? MA.texEl(it.label) : el('span', { text: it.label }));
+        k.append(looksTeX(it.label) || formulaLike(it.label) ? MA.texEl(it.label) : el('span', { text: it.label }));
         box.append(k);
       });
       stage.append(box);

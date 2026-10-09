@@ -1,4 +1,4 @@
-/* LLM Atlas (engine shared with Maths Atlas) — interactive figures: single-variable calculus.
+/* Maths Atlas — interactive figures: single-variable calculus.
    Reference implementations: plot, riemann, taylor (see tools/WIDGET_GUIDE.md).
    Also: parametric, limit (ε–δ), secant, sequence, newton (root finding), cobweb, unitcircle, curvature. */
 (function () {
@@ -25,9 +25,12 @@
     const scope = Object.assign({}, sl.values);
     const evalAt = (k) => (x) => { scope.x = x; return fns[k].f(scope); };
     const yr = C.range(cfg.y, null) || MA.autoRange(fns.map((_, k) => evalAt(k)), xr[0], xr[1]);
-    const labels = C.list(cfg.labels);
+    // one label per function, in order; an empty slot ("f; ; g") leaves that curve out of the legend without
+    // shifting the colours of the others
+    const labels = C.has(cfg.labels) ? String(cfg.labels).split(';').map((q) => q.trim()) : [];
     MA.ui.title(stage, cfg.title);
-    if (labels.length) MA.ui.legend(stage, labels.map((l, k) => ({ label: l, color: C.color(k) })));
+    const legendItems = labels.map((l, k) => ({ label: l, color: C.color(k) })).filter((it) => it.label);
+    if (legendItems.length) MA.ui.legend(stage, legendItems);
     const P = new MA.Plot(stage, { x: xr, y: yr, equal: C.bool(cfg.equal), piTicks: C.bool(cfg.piticks) });
     const shade = C.range(cfg.shade, null);
     const between = C.bool(cfg.between);
@@ -53,8 +56,9 @@
       if (hasTangent) {
         const f = evalAt(0);
         const y0 = f(tx);
-        const m = MA.num.deriv(f, tx);
-        P.slopeLine(tx, y0, m, { color: 'var(--series-2)', width: 1.8 });
+        const m = MA.num.snap(MA.num.deriv(f, tx), y0);
+        // neutral colour: the series colours belong to the graphs (the second one is often a secant or f′)
+        P.slopeLine(tx, y0, m, { color: 'var(--ink-2)', width: 1.6 });
         if (handle) handle.set(tx, y0); else handle = P.handle(tx, y0, { label: MA.t('Point of tangency'), constrain: (x) => [x, f(x)], onDrag: (x) => { tx = x; draw(); } });
         infoBox.set(MA.ui.kv('x_0 =', MA.fmt(tx)), MA.ui.kv('f(x_0) =', MA.fmt(y0)), MA.ui.kv("f'(x_0) =", MA.fmt(m)));
       }
@@ -931,9 +935,17 @@
       }
     }
     compute();
+    let checked = M;
+    // |x − L| < ε, with values within rounding error of the edge counted as on it: 1/10 in floating point is
+    // 0.09999999999999998 from 1, which must not count as inside the band ε = 0.1
+    const inBand = (v) => Math.abs(v - lim) < eps - 1e-12 * Math.max(1, Math.abs(lim), eps);
     function findN() {
       const X = track === 'S' ? S : A;
-      for (let i = X.length - 1; i >= 0; i--) if (!(Math.abs(X[i] - lim) < eps)) return i === X.length - 1 ? null : start + i + 1;
+      // terms that overflowed to NaN or ±∞ say nothing about convergence: check only up to the last finite term
+      let last = X.length - 1;
+      while (last > 0 && !fin(X[last])) last--;
+      checked = start + last;
+      for (let i = last; i >= 0; i--) if (!inBand(X[i])) return i === last ? null : start + i + 1;
       return start;
     }
     function ranges() {
@@ -990,7 +1002,7 @@
       }
       const w = N - start;
       const r = w > 160 ? 1.8 : w > 70 ? 2.4 : 3.4;
-      const out = (v) => band && !(Math.abs(v - lim) < eps);
+      const out = (v) => band && !inBand(v);
       if (showA) {
         const stems = w <= 150 && P.y0 <= 0 && P.y1 >= 0;
         for (let i = 0; i <= w; i++) {
@@ -1012,10 +1024,10 @@
       if (bandInfo) {
         const X = track === 'S' ? 'S_n' : 'a_n';
         if (!band) bandInfo.set(el('span', { class: 'w-calc-note', text: MA.t('No limit detected, so there is no ε-band.') }));
-        else if (Nn === null) bandInfo.set(el('span', { class: 'w-calc-bad', text: MA.t('No N found: the terms are still outside the band at n = %d.', M) }));
+        else if (Nn === null) bandInfo.set(el('span', { class: 'w-calc-bad', text: MA.t('No N found: the terms are still outside the band at n = %d.', checked) }));
         else {
           bandInfo.set({ tex: '\\lvert ' + X + ' - L\\rvert < ' + texNum(eps, 3) }, MA.t('for every n ≥ %d', Nn),
-            el('span', { class: 'w-calc-note', text: Nn > N ? MA.t('(N lies beyond the plotted terms; checked up to n = %d)', M) : MA.t('(checked up to n = %d; hollow points lie outside the band)', M) }));
+            el('span', { class: 'w-calc-note', text: Nn > N ? MA.t('(N lies beyond the plotted terms; checked up to n = %d)', checked) : MA.t('(checked up to n = %d; hollow points lie outside the band)', checked) }));
         }
       }
     }

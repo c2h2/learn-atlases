@@ -1,4 +1,4 @@
-/* LLM Atlas (engine shared with Maths Atlas) — interactive figures: ordinary differential equations.
+/* Maths Atlas — interactive figures: ordinary differential equations.
      slopefield  direction field of y' = f(x, y); click for solution curves (Euler / RK4 with step h)
      phaseplane  phase portraits: field, nullclines, equilibria (Newton + Jacobian), trajectories;
                  linear systems x' = Ax with eigenvalues, eigenvectors and the trace–determinant plane
@@ -1199,7 +1199,8 @@
     MA.ui.select(bar, { label: MA.t('Speed'), value: '1', options: [['0.5', '½×'], ['1', '1×'], ['2', '2×'], ['4', '4×']], onChange: (v) => { speed = +v; } });
     const sl = (label, key, min, max, step) => MA.ui.slider(bar2, { label, min, max, step, value: p[key], fmt: (v) => MA.fmt(v, 3), onInput: (v) => { p[key] = v; refresh(); } });
     sl('m', 'm', 0.1, Math.max(5, 2 * p.m), 0.05);
-    sl('c', 'c', 0, Math.max(4, 2 * p.c), 0.01);
+    // up to 1.5 × critical damping 2√(mk), so the overdamped regime can always be reached
+    sl('c', 'c', 0, Math.ceil(Math.max(4, 2 * p.c, 3 * Math.sqrt(p.m * p.k))), 0.01);
     sl('k', 'k', 0.1, Math.max(10, 2 * p.k), 0.05);
     sl('F_0', 'F', 0, Math.max(3, 2 * p.F), 0.05);
     const sW = sl('\\omega', 'w', 0, wMax, 0.01);

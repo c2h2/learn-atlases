@@ -782,10 +782,25 @@ function md_inline(string $s, ?MdDoc $doc = null, int $line = 0): string
     $s = str_replace('\\$', "\u{E002}", $s);
     $restoreDollar = fn(string $x) => str_replace("\u{E002}", '\\$', $x);
     $s = preg_replace_callback('/\$\$(.+?)\$\$/s', fn($m) => $put('<span class="math-display">' . math_html($restoreDollar($m[1]), true, $line) . '</span>'), $s);
-    $s = preg_replace_callback('/\$((?:[^$\\\\]|\\\\.)+?)\$/s', fn($m) => $put(math_html($restoreDollar($m[1]), false, $line)), $s);
+    $short = [];
+    $s = preg_replace_callback('/\$((?:[^$\\\\]|\\\\.)+?)\$/s', function ($m) use ($put, $restoreDollar, $line, &$short) {
+        $html = math_html($restoreDollar($m[1]), false, $line);
+        $slot = $put($html);
+        // safe to keep on one line: no break points inside (one KaTeX base), or short enough to fit anyway
+        if (substr_count($html, 'class="katex-base"') === 1 || strlen($m[1]) <= 24) {
+            $short[$slot] = true;
+        }
+        return $slot;
+    }, $s);
     $s = preg_replace_callback('/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/', fn($m) => $put(md_ref(trim($m[1]), isset($m[2]) ? trim($m[2]) : null, $doc, $line)), $s);
     $s = preg_replace_callback('/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/', fn($m) => $put('<a href="' . h($m[2]) . '" target="_blank" rel="noopener">' . md_emph(h($m[1])) . '</a>'), $s);
     $s = md_emph(h($s));
+    // Browsers may break a line between an inline formula and the punctuation around it, leaving "(" at the
+    // end of one line or "." at the start of the next: keep short formulas together with that punctuation.
+    if ($short) {
+        $s = preg_replace_callback('/([(\[“‘（「『【《]*)(\x{E000}\d+\x{E001})([.,;:!?)\]’”。，、；：！？）」』】》…]*)/u',
+            fn($m) => ($m[1] !== '' || $m[3] !== '') && isset($short[$m[2]]) ? '<span class="nobr">' . $m[0] . '</span>' : $m[0], $s);
+    }
     $s = str_replace("\u{E002}", '$', $s);
     for ($k = 0; $k < 4 && str_contains($s, "\u{E000}"); $k++) {
         $s = preg_replace_callback('/\x{E000}(\d+)\x{E001}/u', fn($m) => $slots[(int)$m[1]] ?? '', $s);

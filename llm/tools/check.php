@@ -63,7 +63,7 @@ foreach ($courses as $slug => $c) {
         $E($where, "area must be one of " . implode(', ', array_keys(AREAS)));
     }
     if (!in_array($c['level'] ?? 0, [1, 2, 3, 4], true)) {
-        $E($where, 'level must be 1–4 (year of study)');
+        $E($where, 'level must be 1–4 (see LEVELS in inc/content.php)');
     }
     foreach ($c['prerequisites'] ?? [] as $p) {
         if (!in_array($p, $allSlugs, true)) {

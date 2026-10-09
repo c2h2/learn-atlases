@@ -1,4 +1,4 @@
-/* LLM Atlas (engine shared with Maths Atlas) — interactive figures: numerical analysis.
+/* Maths Atlas — interactive figures: numerical analysis.
    interpolation (Runge, Chebyshev, splines), quadrature (log–log convergence), floatline (toy floating point),
    iterative (Jacobi, Gauss–Seidel, SOR on a 2×2 system). See tools/WIDGET_GUIDE.md. */
 (function () {

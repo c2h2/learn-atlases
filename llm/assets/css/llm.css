@@ -1,6 +1,6 @@
-/* Maths Atlas — design tokens, layout and components.
-   A sibling of Peptide Atlas: the same specimen-paper palette and indigo ink, with one colour per
-   area of mathematics (they reuse the residue-class hues) and lesson blocks typeset like a textbook. */
+/* LLM Atlas — design tokens, layout and components (engine and palette shared with Maths Atlas).
+   The seven area colours keep their Maths Atlas names, which figures use directly; the areas of
+   this atlas are mapped onto them at the end of the file. */
 
 :root {
   color-scheme: light;
@@ -17,12 +17,12 @@
   --hover: rgba(21, 25, 43, 0.045);
 
   --a-foundations: #6b7180;  --on-foundations: #ffffff;
-  --a-language: #2a78d6;     --on-language: #ffffff;
-  --a-training: #4a3aa7;      --on-training: #ffffff;
-  --a-applications: #1a9e6f;     --on-applications: #ffffff;
-  --a-safety: #d6457c;     --on-safety: #ffffff;
-  --a-alignment: #e0612d;  --on-alignment: #ffffff;
-  --a-systems: #d99400;      --on-systems: #15192b;
+  --a-analysis: #2a78d6;     --on-analysis: #ffffff;
+  --a-algebra: #4a3aa7;      --on-algebra: #ffffff;
+  --a-geometry: #1a9e6f;     --on-geometry: #ffffff;
+  --a-discrete: #d6457c;     --on-discrete: #ffffff;
+  --a-probability: #e0612d;  --on-probability: #ffffff;
+  --a-applied: #d99400;      --on-applied: #15192b;
 
   --good: #1a8f5f; --good-wash: #e3f4ec;
   --bad: #d23f3f;  --bad-wash: #fbe9e9;
@@ -50,10 +50,10 @@
     --paper: #0f121a; --sheet: #161a24; --ink: #edeff5; --ink-2: #b7bcca; --ink-3: #9197a7;
     --rule: #272c38; --rule-2: #3a4050; --accent: #b79be8; --accent-ink: #cbb5f0; --accent-wash: #261f38;
     --hover: rgba(237, 239, 245, 0.06);
-    --a-foundations: #8d93a3; --on-foundations: #0f121a; --a-language: #3987e5; --on-language: #ffffff;
-    --a-training: #8a7ff0; --on-training: #0f121a; --a-applications: #22b07c; --on-applications: #0f121a;
-    --a-safety: #e0628f; --on-safety: #0f121a; --a-alignment: #e8743f; --on-alignment: #0f121a;
-    --a-systems: #d9a21f; --on-systems: #0f121a;
+    --a-foundations: #8d93a3; --on-foundations: #0f121a; --a-analysis: #3987e5; --on-analysis: #ffffff;
+    --a-algebra: #8a7ff0; --on-algebra: #0f121a; --a-geometry: #22b07c; --on-geometry: #0f121a;
+    --a-discrete: #e0628f; --on-discrete: #0f121a; --a-probability: #e8743f; --on-probability: #0f121a;
+    --a-applied: #d9a21f; --on-applied: #0f121a;
     --good: #3cbf86; --good-wash: #143127; --bad: #f07474; --bad-wash: #3a1d22; --info: #5b9ff0; --info-wash: #14243b; --warm-wash: #2a2419;
     --series-1: #3987e5; --series-2: #e8743f; --series-3: #22b07c; --series-4: #8a7ff0; --deemph: #464c5b;
     --grid: #232833; --axis: #4a5162; --plot-bg: #161a24;
@@ -64,10 +64,10 @@
   --paper: #0f121a; --sheet: #161a24; --ink: #edeff5; --ink-2: #b7bcca; --ink-3: #9197a7;
   --rule: #272c38; --rule-2: #3a4050; --accent: #b79be8; --accent-ink: #cbb5f0; --accent-wash: #261f38;
   --hover: rgba(237, 239, 245, 0.06);
-  --a-foundations: #8d93a3; --on-foundations: #0f121a; --a-language: #3987e5; --on-language: #ffffff;
-  --a-training: #8a7ff0; --on-training: #0f121a; --a-applications: #22b07c; --on-applications: #0f121a;
-  --a-safety: #e0628f; --on-safety: #0f121a; --a-alignment: #e8743f; --on-alignment: #0f121a;
-  --a-systems: #d9a21f; --on-systems: #0f121a;
+  --a-foundations: #8d93a3; --on-foundations: #0f121a; --a-analysis: #3987e5; --on-analysis: #ffffff;
+  --a-algebra: #8a7ff0; --on-algebra: #0f121a; --a-geometry: #22b07c; --on-geometry: #0f121a;
+  --a-discrete: #e0628f; --on-discrete: #0f121a; --a-probability: #e8743f; --on-probability: #0f121a;
+  --a-applied: #d9a21f; --on-applied: #0f121a;
   --good: #3cbf86; --good-wash: #143127; --bad: #f07474; --bad-wash: #3a1d22; --info: #5b9ff0; --info-wash: #14243b; --warm-wash: #2a2419;
   --series-1: #3987e5; --series-2: #e8743f; --series-3: #22b07c; --series-4: #8a7ff0; --deemph: #464c5b;
   --grid: #232833; --axis: #4a5162; --plot-bg: #161a24;
@@ -256,6 +256,7 @@ svg.chain[style*="applied"] .bead:not(.is-missing) text { fill: #15192b; }
 .tl .ev-meta { font-size: 0.8125rem; color: var(--ink-3); margin-left: 8px; font-weight: 400; }
 .tl .ev-detail { color: var(--ink-2); margin: 3px 0 0; font-size: 0.9375rem; max-width: 72ch; }
 .tl .ev-course { font-size: 0.8125rem; font-weight: 600; text-decoration: none; }
+.tl .ev-course + .ev-course { margin-left: 14px; }
 
 /* tables */
 .data-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
@@ -340,7 +341,7 @@ a.ref { text-decoration-style: dotted; }
 .blk-definition { border-left-color: var(--accent); background: linear-gradient(90deg, var(--accent-wash), var(--sheet) 70%); }
 .blk-definition .blk-kind { color: var(--accent); }
 .blk-axiom { border-left-color: var(--a-foundations); }
-.blk-algorithm { border-left-color: var(--a-systems); }
+.blk-algorithm { border-left-color: var(--a-applied); }
 .blk-lemma, .blk-corollary, .blk-proposition { border-left-color: var(--ink-3); }
 .blk-proof { margin: -0.6em 0 1.6em; padding: 0 0 0 18px; border-left: 2px dotted var(--rule-2); border-radius: 0; }
 .blk-proof > summary, .blk-solution > summary, .blk-hint > summary, .blk-answer > summary { cursor: pointer; list-style: none; display: inline-flex; gap: 8px; align-items: baseline; padding: 4px 0; user-select: none; }
@@ -359,9 +360,9 @@ a.ref { text-decoration-style: dotted; }
 .blk-solution > .blk-body, .blk-hint > .blk-body, .blk-answer > .blk-body { padding: 4px 0 2px 16px; }
 .blk-exercise { border-top: 1px solid var(--rule); padding: 16px 0 6px; margin: 0; border-radius: 0; }
 .blk-exercise .blk-kind { color: var(--ink); }
-.blk-exercise .blk-hint > summary .blk-kind { color: var(--a-systems); }
+.blk-exercise .blk-hint > summary .blk-kind { color: var(--a-applied); }
 .blk-exercise .blk-solution > summary .blk-kind { color: var(--good); }
-.lvl { color: var(--a-systems); font-size: 0.72rem; letter-spacing: 1px; margin-left: 6px; vertical-align: 1px; }
+.lvl { color: var(--a-applied); font-size: 0.72rem; letter-spacing: 1px; margin-left: 6px; vertical-align: 1px; }
 .blk-remark, .blk-note { padding: 2px 0 2px 18px; border-left: 3px solid var(--rule-2); border-radius: 0; }
 .blk-remark .blk-kind, .blk-note .blk-kind { color: var(--ink-2); }
 .blk-warning { background: var(--bad-wash); border-left: 4px solid var(--bad); padding: 12px 18px; border-radius: 0 10px 10px 0; }
@@ -407,6 +408,8 @@ a.ref { text-decoration-style: dotted; }
 .lesson-foot .t { font-weight: 700; margin-top: 2px; }
 .lesson-foot .next { text-align: right; grid-column: 2; }
 @media (max-width: 640px) { .lesson-foot { grid-template-columns: minmax(0, 1fr); } .lesson-foot .next { grid-column: 1; } }
+.nobr { white-space: nowrap; }
+.lesson-report { margin-top: 20px; text-align: center; font-size: 0.8125rem; color: var(--ink-3); }
 
 /* ---------- interactive figures ---------- */
 figure.widget { margin: 1.8em 0; background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; max-width: 920px; }
@@ -512,7 +515,7 @@ figure.widget > figcaption { border-top: 1px solid var(--rule); padding: 10px 16
 .tt.on { opacity: 1; }
 
 @media print {
-  .site-head nav, .controls, .lesson-toc, .theme-toggle, .w-controls, .done-toggle, .lesson-foot { display: none !important; }
+  .site-head nav, .controls, .lesson-toc, .theme-toggle, .w-controls, .done-toggle, .lesson-foot, .lesson-report { display: none !important; }
   body { background: #fff; }
   .lesson-layout { display: block; }
   details { display: block; }
@@ -528,3 +531,13 @@ figure.widget > figcaption { border-top: 1px solid var(--rule); padding: 10px 16
 :lang(zh) i, :lang(zh) em { font-style: normal; font-weight: 600; }
 :lang(zh) .katex i, :lang(zh) .katex em { font-style: inherit; font-weight: inherit; }
 .lesson-body:lang(zh) p > .katex, .lesson-body:lang(zh) li > .katex, .lesson-body:lang(zh) td > .katex { margin: 0 0.18em; }
+
+/* ---------- areas of LLM Atlas → shared palette ---------- */
+:root {
+  --a-language: var(--a-analysis); --on-language: var(--on-analysis);
+  --a-training: var(--a-algebra); --on-training: var(--on-algebra);
+  --a-applications: var(--a-geometry); --on-applications: var(--on-geometry);
+  --a-safety: var(--a-discrete); --on-safety: var(--on-discrete);
+  --a-alignment: var(--a-probability); --on-alignment: var(--on-probability);
+  --a-systems: var(--a-applied); --on-systems: var(--on-applied);
+}

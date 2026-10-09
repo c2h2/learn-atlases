@@ -41,7 +41,7 @@ if (preg_match_all("/'label' => '([^']+)', 'blurb' => '([^']+)'/", $src, $m)) {
         $php[$m[2][$i]] = true;
     }
 }
-foreach (['Year 1', 'Year 2', 'Year 3', 'Year 4'] as $l) {
+foreach (['Foundations', 'Core', 'Advanced', 'Frontier'] as $l) {
     $php[$l] = true;
 }
 $jsRe = "/\\bMA\\.t\\(\\s*'((?:[^'\\\\]|\\\\.)*)'/";

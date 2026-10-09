@@ -18,10 +18,9 @@ function icon(string $name): string
 
 function brand_mark(): string
 {
-    // three tokens with attention arcs
-    return '<svg class="brand-mark" viewBox="0 0 38 16" aria-hidden="true"><path d="M5 9.5C9 1 29 1 33 9.5M19 9.5C22 4.5 30 4.5 33 9.5" style="fill:none;stroke:var(--rule-2);stroke-width:1.4"/>'
-        . '<circle cx="5" cy="11.6" r="3.7" style="fill:var(--a-language)"/><circle cx="19" cy="11.6" r="3.7" style="fill:var(--a-training)"/>'
-        . '<circle cx="33" cy="11.6" r="3.7" style="fill:var(--a-alignment)"/></svg>';
+    return '<svg class="brand-mark" viewBox="0 0 38 16" aria-hidden="true">'
+        . '<path d="M5 9.5C9 1 29 1 33 9.5M19 9.5C22 4.5 30 4.5 33 9.5" style="fill:none;stroke:var(--rule-2);stroke-width:1.4"/><circle cx="5" cy="11.6" r="3.7" style="fill:var(--a-language)"/><circle cx="19" cy="11.6" r="3.7" style="fill:var(--a-training)"/><circle cx="33" cy="11.6" r="3.7" style="fill:var(--a-alignment)"/>'
+        . '</svg>';
 }
 
 /** The landing page with every atlas, in the language of this page. */
@@ -40,7 +39,7 @@ function learn_mark(): string
 
 function site_name(): string
 {
-    return t('LLM Atlas');
+    return t('LLM Atlas') . (MA_SKELETON ? paren(t('skeleton')) : '');
 }
 
 /** Common page header. $active is the nav key. Options: description, scripts (deferred JS files), katex_js (bool). */
@@ -62,7 +61,7 @@ function page_head(string $title, string $active = '', array $opt = []): void
     foreach (LANGS as $code => $L) {
         echo '<link rel="alternate" hreflang="' . h($L['html']) . '" href="' . h(lang_url($code)) . '">';
     }
-    echo '<link rel="icon" href="data:image/svg+xml,' . rawurlencode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 16"><path d="M5 9.5C9 1 29 1 33 9.5M19 9.5C22 4.5 30 4.5 33 9.5" fill="none" stroke="#c3c9cf" stroke-width="1.4"/><circle cx="5" cy="11.6" r="3.7" fill="#2a78d6"/><circle cx="19" cy="11.6" r="3.7" fill="#4a3aa7"/><circle cx="33" cy="11.6" r="3.7" fill="#e0612d"/></svg>') . '">';
+    echo '<link rel="icon" href="data:image/svg+xml,' . rawurlencode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 16"><path d="M5 9.5C9 1 29 1 33 9.5M19 9.5C22 4.5 30 4.5 33 9.5" style="fill:none;stroke:#c3c9cf;stroke-width:1.4"/><circle cx="5" cy="11.6" r="3.7" style="fill:#2a78d6"/><circle cx="19" cy="11.6" r="3.7" style="fill:#4a3aa7"/><circle cx="33" cy="11.6" r="3.7" style="fill:#e0612d"/></svg>') . '">';
     echo '<link rel="stylesheet" href="' . h(asset('assets/fonts/fonts.css')) . '">';
     echo '<link rel="stylesheet" href="' . h(asset('assets/vendor/katex/katex-swap.min.css')) . '">';
     echo '<link rel="stylesheet" href="' . h(asset('assets/css/llm.css')) . '">';

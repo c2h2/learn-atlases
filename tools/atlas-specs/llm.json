@@ -1,0 +1,465 @@
+{
+  "slug": "llm",
+  "name": "LLM Atlas",
+  "name_zh": "大语言模型图谱",
+  "card_name": "LLM Atlas",
+  "card_name_zh": "大语言模型图谱",
+  "desc": "A detailed, interactive course on large language models: from the mathematics of machine learning and the Transformer to pretraining, alignment, inference, applications and safety.",
+  "desc_zh": "深入、可交互的大语言模型课程：从机器学习的数学基础和Transformer，到预训练、对齐、推理部署、应用与安全。",
+  "lede": "A detailed, interactive course on large language models — from the mathematics of machine learning, neural networks and the Transformer to pretraining, post-training, reasoning, inference, agents, evaluation and safety. Courses are arranged in four stages, from foundations to the research frontier. This is a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.",
+  "lede_zh": "深入、可交互的大语言模型课程——从机器学习的数学、神经网络和Transformer，到预训练、后训练、推理能力、推理部署、智能体、评测与安全。课程分为四个阶段，从基础一直到研究前沿。目前这是一个框架：课程与章节已经规划好，课文尚待编写。",
+  "foot": "a free, detailed and interactive course on large language models, from first principles to current research, written to be read alongside lectures, papers and textbooks.",
+  "foot_zh": "一套免费、详尽、可交互的大语言模型课程，从基本原理一直讲到当前研究，可配合课堂、论文和教材阅读。",
+  "about_lede": "LLM Atlas is a free, detailed course on how large language models work, how they are trained and used, and how to make them safe — written to be read alongside lectures, papers and textbooks, or on its own.",
+  "about_lede_zh": "大语言模型图谱是一套免费、详尽的课程，讲解大语言模型如何工作、如何训练和使用，以及如何让它们安全可靠——可以配合课堂、论文和教材阅读，也可以单独自学。",
+  "timeline_desc": "From information theory and the first neural networks to today’s language models: the ideas behind every course in the atlas.",
+  "timeline_desc_zh": "从信息论和最早的神经网络到今天的语言模型：图谱中每门课程背后的思想。",
+  "timeline_title": "Timeline of language models",
+  "timeline_title_zh": "语言模型时间线",
+  "timeline_lede": "The ideas behind the courses, from Markov’s chains of letters and Shannon’s information theory to neural networks, the Transformer and modern language models. Coloured dots show the area; links lead to the course where the idea is taught.",
+  "timeline_lede_zh": "各门课程背后的思想：从马尔可夫的字母链和香农的信息论，到神经网络、Transformer和现代语言模型。彩色圆点表示所属领域；链接指向讲授该内容的课程。",
+  "card_desc": "Large language models from first principles: the mathematics of machine learning, neural networks and the Transformer, pretraining and scaling, post-training and reasoning, inference, agents, evaluation, interpretability and safety. The curriculum is mapped out; the lessons are still to be written.",
+  "card_desc_zh": "从基本原理讲解大语言模型：机器学习的数学、神经网络与Transformer、预训练与规模化、后训练与推理能力、推理部署、智能体、评测、可解释性与安全。课程体系已经规划好，课文尚待编写。",
+  "sources": "The lessons are original texts that follow the standard textbooks and the original papers, and each course page recommends books and papers for further reading. This atlas is still a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.",
+  "sources_zh": "课文均为原创，依据标准教材和原始论文编写，每门课程页面都推荐了延伸阅读的书籍和论文。本图谱目前还只是框架：课程与章节已经规划好，课文尚待编写。",
+  "levels": {
+    "labels": [
+      "Foundations",
+      "Core",
+      "Advanced",
+      "Frontier"
+    ],
+    "labels_zh": [
+      "基础",
+      "核心",
+      "进阶",
+      "前沿"
+    ],
+    "filter": "Stage",
+    "filter_zh": "阶段",
+    "any": "Any stage",
+    "any_zh": "全部阶段"
+  },
+  "brand": "<path d=\"M5 9.5C9 1 29 1 33 9.5M19 9.5C22 4.5 30 4.5 33 9.5\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.4\"/><circle cx=\"5\" cy=\"11.6\" r=\"3.7\" style=\"fill:var(--a-language)\"/><circle cx=\"19\" cy=\"11.6\" r=\"3.7\" style=\"fill:var(--a-training)\"/><circle cx=\"33\" cy=\"11.6\" r=\"3.7\" style=\"fill:var(--a-alignment)\"/>",
+  "areas": [
+    {
+      "key": "foundations",
+      "palette": "foundations",
+      "label": "Maths & ML foundations",
+      "blurb": "The mathematics of machine learning, learning from data and neural networks.",
+      "label_zh": "数学与机器学习基础",
+      "blurb_zh": "机器学习的数学、从数据中学习以及神经网络。"
+    },
+    {
+      "key": "language",
+      "palette": "analysis",
+      "label": "Language modelling",
+      "blurb": "Text and tokens, sequence models, attention and the Transformer.",
+      "label_zh": "语言建模",
+      "blurb_zh": "文本与词元、序列模型、注意力机制与Transformer。"
+    },
+    {
+      "key": "training",
+      "palette": "algebra",
+      "label": "Pretraining & scaling",
+      "blurb": "Data, objectives, scaling laws and training across thousands of accelerators.",
+      "label_zh": "预训练与规模化",
+      "blurb_zh": "数据、训练目标、缩放定律以及在数千块加速器上的训练。"
+    },
+    {
+      "key": "applications",
+      "palette": "geometry",
+      "label": "Applications",
+      "blurb": "Prompting, retrieval, tools, agents and multimodal models.",
+      "label_zh": "应用",
+      "blurb_zh": "提示、检索、工具、智能体与多模态模型。"
+    },
+    {
+      "key": "safety",
+      "palette": "discrete",
+      "label": "Evaluation, safety & society",
+      "blurb": "Measuring models, understanding them, making them safe and their effect on society.",
+      "label_zh": "评测、安全与社会",
+      "blurb_zh": "评测模型、理解模型、让模型安全，以及模型对社会的影响。"
+    },
+    {
+      "key": "alignment",
+      "palette": "probability",
+      "label": "Post-training & reasoning",
+      "blurb": "Instruction tuning, learning from feedback and training models to reason.",
+      "label_zh": "后训练与推理能力",
+      "blurb_zh": "指令微调、从反馈中学习以及训练模型进行推理。"
+    },
+    {
+      "key": "systems",
+      "palette": "applied",
+      "label": "Inference & systems",
+      "blurb": "Decoding, serving, quantisation and the cost of every token.",
+      "label_zh": "推理部署与系统",
+      "blurb_zh": "解码、服务部署、量化以及每个词元的成本。"
+    }
+  ],
+  "widgets": [
+    "bayes",
+    "clt",
+    "confidence",
+    "contour",
+    "distribution",
+    "floatline",
+    "gradientdescent",
+    "graph",
+    "hypothesis",
+    "lln",
+    "markov",
+    "montecarlo",
+    "plot",
+    "projection",
+    "regression",
+    "surface",
+    "svd",
+    "transform2d"
+  ],
+  "lab_groups": {
+    "calculus": "Graphs and functions",
+    "multivar": "Optimisation and loss landscapes",
+    "linalg": "Linear algebra",
+    "prob": "Probability and statistics",
+    "numerical": "Number formats",
+    "discrete": "Graphs"
+  },
+  "lab_groups_zh": {
+    "calculus": "函数与图像",
+    "multivar": "优化与损失曲面",
+    "linalg": "线性代数",
+    "prob": "概率与统计",
+    "numerical": "数值格式",
+    "discrete": "图"
+  },
+  "paths": {
+    "zero": [
+      "From zero to Transformers",
+      [
+        "math-for-ml",
+        "ml-fundamentals",
+        "neural-networks",
+        "text-and-language",
+        "sequence-models",
+        "transformers"
+      ]
+    ],
+    "build": [
+      "Building with language models",
+      [
+        "text-and-language",
+        "transformers",
+        "prompting-rag",
+        "post-training",
+        "reasoning",
+        "agents",
+        "evaluation",
+        "inference"
+      ]
+    ],
+    "research": [
+      "Model research",
+      [
+        "math-for-ml",
+        "neural-networks",
+        "transformers",
+        "pretraining",
+        "scaling",
+        "post-training",
+        "reasoning",
+        "evaluation",
+        "interpretability"
+      ]
+    ],
+    "systems": [
+      "ML systems engineering",
+      [
+        "neural-networks",
+        "transformers",
+        "pretraining",
+        "scaling",
+        "inference",
+        "evaluation"
+      ]
+    ],
+    "safety": [
+      "Safety and alignment",
+      [
+        "transformers",
+        "post-training",
+        "evaluation",
+        "interpretability",
+        "safety-alignment",
+        "llm-society"
+      ]
+    ]
+  },
+  "paths_zh": {
+    "zero": "从零到Transformer",
+    "build": "基于大模型开发应用",
+    "research": "模型研究",
+    "systems": "机器学习系统工程",
+    "safety": "安全与对齐"
+  },
+  "courses": [
+    {
+      "slug": "math-for-ml",
+      "title": "Maths for Machine Learning",
+      "full_title": "Mathematics for Machine Learning",
+      "area": "foundations",
+      "level": 1,
+      "order": 10,
+      "prerequisites": [],
+      "next": [
+        "ml-fundamentals",
+        "neural-networks"
+      ]
+    },
+    {
+      "slug": "ml-fundamentals",
+      "title": "Machine Learning Basics",
+      "full_title": "Machine Learning Fundamentals",
+      "area": "foundations",
+      "level": 1,
+      "order": 20,
+      "prerequisites": [
+        "math-for-ml"
+      ],
+      "next": [
+        "neural-networks",
+        "text-and-language"
+      ]
+    },
+    {
+      "slug": "neural-networks",
+      "title": "Neural Networks",
+      "full_title": "Neural Networks and Deep Learning",
+      "area": "foundations",
+      "level": 1,
+      "order": 30,
+      "prerequisites": [
+        "ml-fundamentals"
+      ],
+      "next": [
+        "sequence-models"
+      ]
+    },
+    {
+      "slug": "text-and-language",
+      "title": "Text and Language",
+      "full_title": "Text, Tokens and Classical Language Models",
+      "area": "language",
+      "level": 1,
+      "order": 40,
+      "prerequisites": [
+        "math-for-ml",
+        "ml-fundamentals"
+      ],
+      "next": [
+        "sequence-models"
+      ]
+    },
+    {
+      "slug": "sequence-models",
+      "title": "Sequence Models",
+      "full_title": "Sequence Models and Attention",
+      "area": "language",
+      "level": 2,
+      "order": 50,
+      "prerequisites": [
+        "neural-networks",
+        "text-and-language"
+      ],
+      "next": [
+        "transformers"
+      ]
+    },
+    {
+      "slug": "transformers",
+      "title": "The Transformer",
+      "full_title": "The Transformer",
+      "area": "language",
+      "level": 2,
+      "order": 60,
+      "prerequisites": [
+        "sequence-models"
+      ],
+      "next": [
+        "pretraining",
+        "prompting-rag",
+        "interpretability"
+      ]
+    },
+    {
+      "slug": "pretraining",
+      "title": "Pretraining",
+      "full_title": "Pretraining Language Models",
+      "area": "training",
+      "level": 2,
+      "order": 70,
+      "prerequisites": [
+        "transformers"
+      ],
+      "next": [
+        "post-training",
+        "scaling",
+        "evaluation"
+      ]
+    },
+    {
+      "slug": "prompting-rag",
+      "title": "Prompting and Retrieval",
+      "full_title": "Prompting and Retrieval-Augmented Generation",
+      "area": "applications",
+      "level": 2,
+      "order": 80,
+      "prerequisites": [
+        "transformers"
+      ],
+      "next": [
+        "agents"
+      ]
+    },
+    {
+      "slug": "llm-society",
+      "title": "Language Models and Society",
+      "full_title": "Language Models and Society",
+      "area": "safety",
+      "level": 2,
+      "order": 90,
+      "prerequisites": [
+        "pretraining"
+      ],
+      "next": [
+        "safety-alignment"
+      ]
+    },
+    {
+      "slug": "scaling",
+      "title": "Scaling",
+      "full_title": "Scaling and Distributed Training",
+      "area": "training",
+      "level": 3,
+      "order": 110,
+      "prerequisites": [
+        "pretraining"
+      ],
+      "next": [
+        "inference"
+      ]
+    },
+    {
+      "slug": "post-training",
+      "title": "Post-training",
+      "full_title": "Post-training and Alignment",
+      "area": "alignment",
+      "level": 3,
+      "order": 120,
+      "prerequisites": [
+        "pretraining"
+      ],
+      "next": [
+        "reasoning",
+        "safety-alignment",
+        "multimodal"
+      ]
+    },
+    {
+      "slug": "reasoning",
+      "title": "Reasoning",
+      "full_title": "Reasoning and Test-Time Compute",
+      "area": "alignment",
+      "level": 3,
+      "order": 130,
+      "prerequisites": [
+        "post-training"
+      ],
+      "next": [
+        "agents"
+      ]
+    },
+    {
+      "slug": "inference",
+      "title": "Inference",
+      "full_title": "Inference and Serving",
+      "area": "systems",
+      "level": 3,
+      "order": 140,
+      "prerequisites": [
+        "transformers",
+        "scaling"
+      ],
+      "next": []
+    },
+    {
+      "slug": "agents",
+      "title": "Agents",
+      "full_title": "Tool Use and Agents",
+      "area": "applications",
+      "level": 3,
+      "order": 150,
+      "prerequisites": [
+        "prompting-rag",
+        "reasoning"
+      ],
+      "next": []
+    },
+    {
+      "slug": "multimodal",
+      "title": "Multimodal Models",
+      "full_title": "Multimodal Models",
+      "area": "applications",
+      "level": 3,
+      "order": 160,
+      "prerequisites": [
+        "transformers",
+        "post-training"
+      ],
+      "next": []
+    },
+    {
+      "slug": "evaluation",
+      "title": "Evaluation",
+      "full_title": "Evaluating Language Models",
+      "area": "safety",
+      "level": 3,
+      "order": 170,
+      "prerequisites": [
+        "pretraining",
+        "ml-fundamentals"
+      ],
+      "next": [
+        "safety-alignment",
+        "interpretability"
+      ]
+    },
+    {
+      "slug": "interpretability",
+      "title": "Interpretability",
+      "full_title": "Interpretability",
+      "area": "safety",
+      "level": 4,
+      "order": 180,
+      "prerequisites": [
+        "transformers"
+      ],
+      "next": []
+    },
+    {
+      "slug": "safety-alignment",
+      "title": "AI Safety",
+      "full_title": "AI Safety and Alignment",
+      "area": "safety",
+      "level": 4,
+      "order": 190,
+      "prerequisites": [
+        "post-training",
+        "evaluation"
+      ],
+      "next": []
+    }
+  ]
+}

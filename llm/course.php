@@ -80,7 +80,7 @@ page_head(md_plain($c['full_title'] ?? $c['title']), '', ['description' => md_pl
           <a class="t" href="<?= h(url('lesson.php', ['c' => $slug, 'l' => $ch['slug']])) ?>"><?= ma_inline($ch['title'], $slug) ?></a>
           <div class="s"><?= ma_inline($ch['summary'] ?? '', $slug) ?></div>
         </div>
-        <div class="m"><?php if ($missing): ?><?= h(t('in preparation')) ?><?php else: ?>
+        <div class="m"><?php if ($missing): ?><?= h(t('to be written')) ?><?php else: ?>
           <?= h(t('%d min', reading_minutes((int)($s['words'] ?? 0)))) ?><br><?= h(t('%d examples · %d exercises', (int)($s['examples'] ?? 0), (int)($s['exercises'] ?? 0))) ?><?php endif; ?></div>
       </li>
       <?php endforeach; ?>

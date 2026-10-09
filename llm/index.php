@@ -11,7 +11,7 @@ page_head(site_name(), 'index');
   <section class="intro">
     <div>
       <h1 class="display"><?= h(site_name()) ?></h1>
-      <p class="lede"><?= h(t('A detailed, interactive course on large language models — from the mathematics of machine learning, neural networks and the Transformer to pretraining, post-training, reasoning, inference, agents, evaluation and safety. Every chapter has definitions, derivations, worked examples, interactive figures and exercises with full solutions.')) ?></p>
+      <p class="lede"><?= h(t('A detailed, interactive course on large language models — from the mathematics of machine learning, neural networks and the Transformer to pretraining, post-training, reasoning, inference, agents, evaluation and safety. Courses are arranged in four stages, from foundations to the research frontier. This is a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.')) ?></p>
     </div>
     <dl class="tally">
       <div><dt><?= h(t('Courses')) ?></dt><dd><?= fmt_num($tot['courses']) ?></dd></div>
