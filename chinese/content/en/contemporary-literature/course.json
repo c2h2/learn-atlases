@@ -7,11 +7,24 @@
   "order": 200,
   "tagline": "Literature of the 1950s and 1960s, the Cultural Revolution years, scar, reflection and reform literature, misty poetry, root-seeking and avant-garde fiction, new realism and the 1990s, major novelists since the 1980s, Hong Kong, Taiwan and overseas Chinese literature, and online literature",
   "summary": "Chinese literature since 1949 has been shaped by politics, by the opening of the 1980s, and by the market and the internet. This course follows it from the literature of the 1950s and 1960s through the Cultural Revolution, the scar, reflection and reform literature and misty poetry of the late 1970s and 1980s, the root-seeking and avant-garde writers and the novelists who have led Chinese fiction since, to the literatures of Hong Kong, Taiwan and the Chinese-speaking world beyond, and the new world of online fiction.",
-  "overview": [],
+  "overview": [
+    "Chinese literature after 1949 runs inside an institution: writers are assigned to work units, publish in journals edited by the state, are graded by prizes and by membership, and are expected to serve a public task. Any account of the period that quotes texts but ignores the pay-slip, the editorial meeting and the criticism campaign is describing a stage while pretending the lighting engineer does not exist.",
+    "We follow three overlapping regimes of value - the state (literature as a branch of propaganda), the market (literature as commodity and, after the 1990s, as serialised contract labour), and autonomous literary prestige (journals, prizes, university canons, foreign translation). Most writers of the last seventy years worked under all three at once, and much of the interesting formal behaviour in these texts is the friction between them.",
+    "The period also has to be read against its discontinuities: the Seventeen Years (1949-1966), the Cultural Revolution, when officially sanctioned publication almost stops and writing goes private or underground, the scar and reflection literature of 1977-1979, the explosive programme-wars of the 1980s, the market turn of the 1990s, and the platform economy of online fiction since the late 1990s.",
+    "Finally, the course widens the map: Hong Kong, Taiwan and overseas writing are not appendices to a metropolitan centre but separate literary systems in which modern Chinese was experimented on first, often decades earlier - and which were folded back into the mainland canon only after 1978, when the definition of Chinese literature had to be renegotiated."
+  ],
   "prerequisites": [
     "modern-literature"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the institutional machinery of Chinese literature after 1949 - writers associations, work units, state journals, publishing quotas, criticism campaigns and prizes - and explain how it shapes form as well as topics.",
+    "Periodise the Seventeen Years and identify the conventions of the red canonical novel and the revolutionary model opera, together with the private and underground writing that coexists with them.",
+    "Explain the transition from the Cultural Revolution to the late 1970s: why scar literature's rhetoric of testimony and its family plot of restoration matter formally, and why reflection literature goes back further to the system.",
+    "Summarise the programme-wars of the 1980s - misty poetry, root-seeking, avant-garde experiments, new historicism and new realism - and date each camp's claims to a change in the literary field rather than to a change in talent.",
+    "Analyse the market and platform regimes of the 1990s and 2000s: privatisation of publishing, the game of literary self-fashioning, VIP subscription serialisation, IP adaptation, and the resulting change in narrative rhythm and length.",
+    "Situate Hong Kong, Taiwan and overseas writing within their own literary systems and trace the post-1978 process by which they were absorbed into a larger category of Chinese-language literature.",
+    "Read at least a dozen major works closely enough to cite them in argument, and state clearly which claims about the period rest on censorship, which on market incentives, and which on generational change."
+  ],
   "chapters": [
     {
       "slug": "fifties-sixties",
@@ -86,8 +99,118 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1942,
+      "title": "Yan'an framework issued",
+      "detail": "Mao Zedong's talks make 'who to serve' the first question of literature; after 1949 it ceases to be one position among many and becomes policy.",
+      "people": "Mao Zedong, Zhou Yang"
+    },
+    {
+      "year": 1949,
+      "title": "First All-China Congress of Literary and Art Workers",
+      "detail": "July, Beiping: the All-China Literature and Art Federation and the Writers Association are founded; Yan'an practice becomes national policy.",
+      "people": "Guo Moruo, Mao Dun, Zhou Yang"
+    },
+    {
+      "year": 1956,
+      "title": "Hundred Flowers",
+      "detail": "A short-lived relaxation produces probe fiction and reportage that intervenes in daily life; by 1957 many of its authors have been reassigned to labour.",
+      "people": "Lao She, Wang Meng, Liu Binyan"
+    },
+    {
+      "year": 1963,
+      "title": "Campaigns against literary lines",
+      "detail": "Parallel criticisms of bourgeois literary authorities and of socialist advertising push published literature towards the model formula.",
+      "people": "Zhou Yang, Lao She, Xia Yan"
+    },
+    {
+      "year": 1966,
+      "title": "Cultural Revolution begins",
+      "detail": "Most official periodicals close or merge; writing goes into the drawer, into hand-copied anthologies and into underground selections.",
+      "people": "-"
+    },
+    {
+      "year": 1977,
+      "title": "Class Teacher published",
+      "detail": "Liu Xinwu's short story in People's Literature opens the scar phase by naming a damage done to a person rather than to an institution.",
+      "people": "Liu Xinwu"
+    },
+    {
+      "year": 1979,
+      "title": "Fourth Congress and the magazine Today",
+      "detail": "October and November: the Fourth Congress replaces subordination to politics with a new struggle; Today is founded and the misty poets appear.",
+      "people": "Deng Xiaoping, Bei Dao, Mang Ke"
+    },
+    {
+      "year": 1985,
+      "title": "Roots and the avant-garde",
+      "detail": "Han Shaogong's essay on the roots of literature and a flood of programme texts coincide with experimental fiction: formal innovation is itself announced as content.",
+      "people": "Han Shaogong, A Cheng, Wang Meng"
+    },
+    {
+      "year": 1993,
+      "title": "The market takes the front list",
+      "detail": "Novels by Jia Pingwa and Chen Zhongshi appear under the new pricing system and the demand for adult realism; prizes and journals lose their monopoly on readers.",
+      "people": "Jia Pingwa, Chen Zhongshi, Wang Xiaobo"
+    },
+    {
+      "year": 2000,
+      "title": "Online fiction industrialises",
+      "detail": "VIP subscription serialisation converts Chinese narrative back into a performance economy: length, daily updates and reader comments become formal constraints.",
+      "people": "Online writers; Jin Yong canonisation"
+    }
+  ],
+  "references": [
+    {
+      "title": "The White-Haired Girl",
+      "author": "Yanan troupe; He Jingzhi, Ding Yi",
+      "year": 1945,
+      "note": "Opera: the model plot that turns a person into a ghost and a ghost back into a person."
+    },
+    {
+      "title": "Tracks in the Snowy Region",
+      "author": "Zhou Libo",
+      "year": 1948,
+      "note": "Land-reform novel: policy outline fused with dialect material."
+    },
+    {
+      "title": "Red Crag",
+      "author": "Luo Guangbin, Yang Yiyan",
+      "year": 1961,
+      "note": "Culmination of the revolutionary historical novel: memoir rewritten as legend."
+    },
+    {
+      "title": "Teahouse",
+      "author": "Lao She",
+      "year": 1957,
+      "note": "Three acts across generations: the old period buries itself on stage."
+    },
+    {
+      "title": "Class Teacher",
+      "author": "Liu Xinwu",
+      "year": 1977,
+      "note": "The opening text of scar literature."
+    },
+    {
+      "title": "Ordination",
+      "author": "Wang Zengqi",
+      "year": 1980,
+      "note": "Reconnects the lyric and custom-sketch tradition to the modern short story."
+    },
+    {
+      "title": "Life as a String",
+      "author": "Shi Tiesheng",
+      "year": 1985,
+      "note": "Fable: the aim is empty, the process real."
+    },
+    {
+      "title": "The Old Boat",
+      "author": "Zhang Wei",
+      "year": 1986,
+      "note": "Family epic after reflection and root-seeking merge."
+    }
+  ],
   "next": [
     "world-literature"
   ]
