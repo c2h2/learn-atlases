@@ -7,11 +7,24 @@
   "order": 180,
   "tagline": "Early Northern Song *ci*, Su Shi, Zhou Bangyan and Li Qingzhao, Xin Qiji, Jiang Kui and the late Southern Song, Song poetry, Lu You and the Southern Song poets, Song prose, and storytellers’ scripts",
   "summary": "In the Song dynasty the song lyric (*ci*) reached its height, poetry turned towards reflection and everyday life, and the prose essay became the scholar-official’s voice. This course reads the great lyricists from Liu Yong and Su Shi to Li Qingzhao, Xin Qiji and Jiang Kui, Song poetry from the reformers of the Northern Song to Lu You, the Song masters of ancient-style prose, and the storytellers’ scripts from which vernacular fiction grew.",
-  "overview": [],
+  "overview": [
+    "The literature of the Song (960–1279): how ci poetry became the age's central form, how Song poetry carved a second road beside Tang, and how the marketplace of the storytellers seeded Chinese fiction.",
+    "The course runs along three co-existing supply lines—ci, shi, and prose plus vernacular narrative—so that the dynasty reads not as a decline after Tang but as a successful diversification of literary investment.",
+    "Biographies carry the map: Yan Shu's study, Liu Yong's ferry crossings, Su Shi's demotions, Li Qingzhao's flight south, Xin Qiji's unused swords, Jiang Kui's patronage—position in the empire is always also position in poetics."
+  ],
   "prerequisites": [
     "tang-literature"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Periodise Song ci (early, Shuoshi, Huaxuan,婉约-reformists) and place key collections in it",
+    "Explain the mechanism of ci composition (qupai, tone-patterns, banquets, circulation) and its effect on style",
+    "Assess Su Shi's expansion of ci against its contemporary critics",
+    "Compare Zhou Bangyan's codification with Li Qingzhao's theory of ci's separate beauty",
+    "Characterise the Song-poetry way (liyi, lexical hardening, discourse, renyi) without the decline narrative",
+    "Compare Yang Wanli, Fan Chengda, Lu You and Liu Kezhuang as a sequence of replies to Tang prestige",
+    "Trace Song prose: guwen yiundong, essays, notes, and the political speech situation",
+    "Explain what huaben are, what they were not, and how the storyteller's craft enters fiction"
+  ],
   "chapters": [
     {
       "slug": "northern-song-ci",
@@ -86,8 +99,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 960,
+      "title": "A civil-service dynasty begins",
+      "detail": "Song Taizu's settlement hands culture to the examination state: academies, printing and an official compiled anthologies.",
+      "people": "Taizu of Song"
+    },
+    {
+      "year": 1057,
+      "title": "Ouyang Xiu fixes the examinations",
+      "detail": "As chief examiner he demotes the Taihao style; the guwen movement wins by controlling the grading key.",
+      "people": "Ouyang Xiu, Su Shi"
+    },
+    {
+      "year": 1082,
+      "title": "The Red Cliff years",
+      "detail": "After his Huangzhou exile, Su Shi redefines what ci may hold.",
+      "people": "Su Shi"
+    },
+    {
+      "year": 1100,
+      "title": "The board gets set",
+      "detail": "Zhou Bangyan systematises tune-patterns at the Bureau of Music;江西 rule-poetics forms the same decade.",
+      "people": "Zhou Bangyan, Huang Tingjian"
+    },
+    {
+      "year": 1135,
+      "title": "The southward catastrophe",
+      "detail": "Losing the north, the court re-founders literature at Lin'an; Li Qingzhao writes her ci essay in exile.",
+      "people": "Li Qingzhao"
+    },
+    {
+      "year": 1178,
+      "title": "The poet's archive",
+      "detail": "Lu You's ninety-four volumes;严羽's school of 'no trace' belongs to the following decades.",
+      "people": "Lu You"
+    },
+    {
+      "year": 1207,
+      "title": "An unused sword retired",
+      "detail": "Xin Qiji dies with 'Huo! Huo!' in his throat; the Han Zhou group's recovery dream is over.",
+      "people": "Xin Qiji"
+    },
+    {
+      "year": 1245,
+      "title": "Critics take over",
+      "detail": "Yan Yu's school of Canglang answers Song poetry with Tang worship; Jiang Kui's aesthetics circulate in circles.",
+      "people": "Yan Yu"
+    }
+  ],
+  "references": [
+    {
+      "title": "《乐章集》",
+      "author": "柳永",
+      "year": 1050,
+      "note": "Slow lyrics and the urban soundscape."
+    },
+    {
+      "title": "《珠玉词》",
+      "author": "晏殊",
+      "year": 1050,
+      "note": "The calm of the prime-minister's study."
+    },
+    {
+      "title": "《东坡乐府》",
+      "author": "苏轼",
+      "year": 1082,
+      "note": "Ci expanded by biography and argument."
+    },
+    {
+      "title": "《片玉词》",
+      "author": "周邦彦",
+      "year": 1100,
+      "note": "Codified tune-patterns and the craft of periphrasis."
+    },
+    {
+      "title": "《漱玉词》《词论》",
+      "author": "李清照",
+      "year": 1132,
+      "note": "Ci's separate beauty; criticism by a practitioner."
+    },
+    {
+      "title": "《剑南诗稿》《陆游记》",
+      "author": "陆游",
+      "year": 1178,
+      "note": "The largest surviving diary in verse."
+    },
+    {
+      "title": "《稼轩长短句》",
+      "author": "辛弃疾",
+      "year": 1205,
+      "note": "Argument, allusion and the soldier's ci."
+    },
+    {
+      "title": "《沧浪诗话》",
+      "author": "严羽",
+      "year": 1245,
+      "note": "Tang worship as a poetics of taste."
+    }
+  ],
   "next": [
     "yuan-ming-qing"
   ]
