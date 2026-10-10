@@ -7,12 +7,25 @@
   "order": 250,
   "tagline": "Dialect and language, classifying the dialects, Mandarin dialects, Wu, Cantonese, Min and Hakka, Xiang, Gan, Hui and Pinghua, dialect words and grammar, dialects today, and recording a dialect",
   "summary": "Most Chinese people grow up with a dialect as well as Putonghua, and the dialects differ from one another as much as the languages of Europe. This course explains how Chinese dialects are classified and described, surveys the major groups from the Mandarin dialects to Wu, Cantonese, Min and Hakka with their history and features, compares their words and grammar, and discusses dialects in today’s society and how to record one’s own.",
-  "overview": [],
+  "overview": [
+    "This course is about variation you can point at. A tone value, a word for 'toilet', a negation, a plural marker - all of them differ across forty kilometres of rice paddies, and none of the speakers is wrong. Dialectology is the branch of Chinese linguistics that comes closest to having a laboratory, because it lets you watch change happening instead of inferring it from old books.",
+    "We begin with the definitional mess: what separates a dialect from a language, why mutual intelligibility fails inside Chinese and works elsewhere between varieties speakers insist are one, and what the ten-zone map on the wall of every Chinese department actually is - a proposal, revised when the atlas was reissued.",
+    "Then the regions, one chapter each: Mandarin and its internal subdivisions; Wu with its voiced initials and tone sandhi; Yue with its tone categories and checked tones; Min with its layered literary and colloquial readings; Hakka, Xiang, Gan, Hui and Pinghua, including the argument over whether any of these are natural classes.",
+    "The last three chapters are the useful ones: dialect lexicon and grammar; what is happening to dialects now under mass schooling and migration; and how to actually record one - from the tone letters devised by a twentieth-century phoneticist to the awkward question of who owns a language nobody wrote down."
+  ],
   "prerequisites": [
     "linguistics",
     "phonology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain why mutual intelligibility cannot by itself decide whether two varieties are languages or dialects, and give Chinese and European counter-examples.",
+    "Summarise the main classifications of Chinese dialects and the phonological, lexical and grammatical criteria on which they were drawn.",
+    "Characterise the principal features of Mandarin, Wu, Yue, Min, Hakka, Xiang, Gan, Hui and Pinghua, and give at least one diagnostic for each.",
+    "Use tone values and a phonetic alphabet to describe an unfamiliar variety, and identify literary and colloquial reading layers.",
+    "Explain how dialect evidence is used in reconstructing earlier stages of Chinese, and state its limits.",
+    "Describe the social and institutional forces compressing dialect diversity, and distinguish recording from maintenance.",
+    "Conduct a short dialect survey: design a word list, elicit minimal pairs, transcribe, and report results with their uncertainty stated."
+  ],
   "chapters": [
     {
       "slug": "dialect-and-language",
@@ -98,8 +111,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": -1,
+      "title": "A Han handbook of regional words",
+      "detail": "An early compendium recorded everyday vocabulary from different regions, arranged by gloss rather than by map - the first dialect vocabulary, organised as a list.",
+      "people": "Yang Xiong (attributed compiler)"
+    },
+    {
+      "year": 601,
+      "title": "A rhyme book that refused to pick a capital",
+      "detail": "A single volume reconciled 'north and south, ancient and modern' for literary reading; its compromise system later became the starting point for all dialect comparison.",
+      "people": "Lu Fayan"
+    },
+    {
+      "year": 1879,
+      "title": "Romanised scriptures for the treaty ports",
+      "detail": "Missionary orthographies for Amoy, Swatow, Fuzhou and other varieties produced the first large corpora of written non-standard Chinese.",
+      "people": "Missionary printers"
+    },
+    {
+      "year": 1928,
+      "title": "The first modern survey of one dialect group",
+      "detail": "A phoneticist's field study of Wu varieties combined elicitation, transcription and mapping, and set the template for a century of Chinese dialectology.",
+      "people": "Yuen Ren Chao"
+    },
+    {
+      "year": 1946,
+      "title": "Language as culture",
+      "detail": "A short book used surnames, place names and loanwords to argue that lexical layers record migration and contact.",
+      "people": "Luo Changpei"
+    },
+    {
+      "year": 1956,
+      "title": "A draft classification and a national survey",
+      "detail": "A seven-zone scheme accompanied the launch of countrywide dialect surveys, tied to the promotion of a national language.",
+      "people": "Language-commission teams"
+    },
+    {
+      "year": 1987,
+      "title": "An atlas redraws the map",
+      "detail": "A language atlas fixed ten zones, promoting Jin out of Mandarin on the strength of its checked tones; a later edition redrew several lines.",
+      "people": "Atlas editors"
+    },
+    {
+      "year": 2015,
+      "title": "A resources-protection programme",
+      "detail": "With dialects receding faster than they can be described, a state programme began recording local speech at more than a thousand sites.",
+      "people": "Education and language authorities"
+    }
+  ],
+  "references": [
+    {
+      "title": "Handbook of Regional Speech",
+      "author": "Yang Xiong",
+      "year": -1,
+      "note": "The earliest dialect word-list; read it as evidence that regional difference was already a scholarly object."
+    },
+    {
+      "title": "Qieyun",
+      "author": "Lu Fayan",
+      "year": 601,
+      "note": "A compromise rhyme book explicitly above regional disagreement; the anchor of Middle Chinese."
+    },
+    {
+      "title": "Studies on the Modern Wu Dialects",
+      "author": "Y. R. Chao",
+      "year": 1928,
+      "note": "Field method, tone letters, and the first scientific description of a Chinese dialect group."
+    },
+    {
+      "title": "Outline of Chinese Dialects",
+      "author": "Yuan Jiahua and others",
+      "year": 1960,
+      "note": "The standard overview of the regional systems and their diagnostics."
+    },
+    {
+      "title": "Modern Chinese Dialects: A General Account",
+      "author": "Hou Jingyi",
+      "year": 2002,
+      "note": "A consolidated survey by the editor of the major dialect reference series."
+    },
+    {
+      "title": "Language Atlas of China",
+      "author": "Chinese Academy of Social Sciences",
+      "year": 1987,
+      "note": "The map everyone argues with; its second edition moved several boundaries."
+    },
+    {
+      "title": "Law on the Standard Spoken and Written Chinese Language",
+      "author": "Standing Committee",
+      "year": 2000,
+      "note": "The legal status of the standard language and the reserved domains of dialects."
+    },
+    {
+      "title": "Table for the Review of Polyphonic Readings",
+      "author": "Language commission",
+      "year": 1985,
+      "note": "Where standardisation meets pronunciation - and where the public argument still lives."
+    }
+  ],
   "next": [
     "history-of-chinese"
   ]

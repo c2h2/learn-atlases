@@ -7,12 +7,25 @@
   "order": 260,
   "tagline": "Periods of Chinese, Old Chinese, Middle Chinese, Early Mandarin, the history of the lexicon, the history of grammar, the formation of Mandarin, the vernacular movement, and modern standard Chinese",
   "summary": "Chinese has a written record of more than three thousand years, which lets us follow its changes in sound, vocabulary and grammar in unusual detail. This course divides the history of Chinese into periods and describes each, traces the history of the lexicon and of grammatical structures such as classifiers and the 把 construction, follows the vernacular from Buddhist translations to the novels, and ends with the rise of Mandarin and the twentieth-century reforms that made modern standard Chinese.",
-  "overview": [],
+  "overview": [
+    "This course follows one language across three thousand years, using whichever evidence survives at each stage: bronze inscriptions, rhymed verse, a rhyme book, Buddhist translations, Ming primers for foreign interpreters, and finally a state committee arguing about a third tone.",
+    "Old Chinese is the hardest and most disputed chapter: consonant clusters, no lexical tones (on the account that derives tones from endings), a case of prefixation, and a spelling system that hides all of it. Middle Chinese is the best documented premodern sound system anywhere, because a rhyme book was needed for examinations and a thousand years of scholars argued about its divisions.",
+    "The middle of the course is process: how the lexicon doubled from monosyllabic stems to disyllabic words, how grammar grew new functional items out of old content words, how Mandarin formed on roads and in garrisons rather than in a capital, and how one writing system kept a language together across varieties that cannot understand each other.",
+    "The last chapters bring us to now: the 1910s-1920s decision to make the spoken vernacular the language of schooling, the 1950s definition of Putonghua, and the ongoing business of what a standard language costs - in dialects, in readings of characters, and in the confidence of people told their grandmother's speech was a corruption."
+  ],
   "prerequisites": [
     "phonology",
     "linguistics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Give the standard periodisation of Chinese and name the principal evidence for each period.",
+    "Summarise the main features reconstructed for Old Chinese and the arguments behind the tone-origin hypothesis.",
+    "Describe the phonological system of the Qieyun layer and explain what a rhyme category, a initial class and a division (deng) are.",
+    "Trace key changes into early Mandarin: devoicing of voiced obstruents, loss of checked-tone endings, and the reassignment of entering-tone syllables.",
+    "Describe the growth of disyllabicity, suffixation and loan-word layers in the history of the lexicon.",
+    "Explain grammaticalisation with Chinese examples: the disposal construction, the passive, aspect markers and sentence-final particles.",
+    "Explain how a spoken koiné became a state standard in the twentieth century, and what was decided, by whom, and what it displaced."
+  ],
   "chapters": [
     {
       "slug": "periods",
@@ -89,8 +102,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": -1,
+      "title": "Rhymes as evidence",
+      "detail": "Scholars of the classical tradition began sorting the characters of ancient poems into rhyme groups, building a taxonomy of Old Chinese phonology three centuries before any sound was recorded.",
+      "people": "Qing analysts of ancient rhymes"
+    },
+    {
+      "year": 601,
+      "title": "One book of divisions",
+      "detail": "A rhyme handbook organised some eleven thousand characters by tone, final and initial; commentaries and rhyme tables turned it into the record of a sound system.",
+      "people": "Lu Fayan and his revisers"
+    },
+    {
+      "year": 1324,
+      "title": "A book of musical rhymes for northern lines",
+      "detail": "A handbook for writing lyrics recorded a living northern phonology: the level tone split by initial voicing, and checked-tone syllables redistributed among the other three tones.",
+      "people": "Zhou Deqing"
+    },
+    {
+      "year": 1626,
+      "title": "A European dictionary of Chinese",
+      "detail": " Jesuit transcriptions of Ming reading and spoken styles are used today to date the loss of final consonants and the merger of articulations.",
+      "people": "Missionary lexicographers"
+    },
+    {
+      "year": 1898,
+      "title": "A script for the people",
+      "detail": "Reformers proposed phonographic scripts designed to be learned in weeks, arguing that a difficult written language was why most people could not read.",
+      "people": "Reform movement"
+    },
+    {
+      "year": 1913,
+      "title": "A commission votes on each character",
+      "detail": "Delegates argued sound by sound to fix a national reading, blending northern and southern features - a compromise nobody could speak.",
+      "people": "Commission on Unification of Pronunciation"
+    },
+    {
+      "year": 1955,
+      "title": "A definition of the standard",
+      "detail": "A national conference defined the common language: Beijing pronunciation as the norm, Northern speech as the base, model modern vernacular writing as the grammatical standard.",
+      "people": "National conference on language reform"
+    },
+    {
+      "year": 2013,
+      "title": "A table of standard forms",
+      "detail": "A general table of standard characters, together with continuing argument over prescribed readings, shows that codification is a maintenance industry.",
+      "people": "Language and character commissions"
+    }
+  ],
+  "references": [
+    {
+      "title": "Shuowen Jiezi",
+      "author": "Xu Shen",
+      "year": 121,
+      "note": "The etymological dictionary whose analysis of forms is the starting point for all work on early meanings."
+    },
+    {
+      "title": "Qieyun",
+      "author": "Lu Fayan",
+      "year": 601,
+      "note": "The document at the centre of Chinese historical phonology."
+    },
+    {
+      "title": "An Introduction to the History of Chinese Phonology",
+      "author": "Li Fang-Kuei",
+      "year": 1973,
+      "note": "A clear account of the three-period framework by a major figure of the field."
+    },
+    {
+      "title": "Studies on the Chinese Language",
+      "author": "Bernhard Karlgren",
+      "year": 1915,
+      "note": "The work that brought comparative method and modern phonetics to Chinese historical study."
+    },
+    {
+      "title": "A Draft History of the Chinese Language",
+      "author": "Wang Li",
+      "year": 1957,
+      "note": "The founding synthesis of Chinese historical linguistics: phonology, grammar and lexicon in one frame."
+    },
+    {
+      "title": "An Introduction to Classical Chinese",
+      "author": "Wang Li (ed.)",
+      "year": 1962,
+      "note": "The textbook that taught several generations to read premodern Chinese in historical order."
+    },
+    {
+      "title": "Zhongyuan Yinyun (Sounds and Rhymes of the Central Plains)",
+      "author": "Zhou Deqing",
+      "year": 1324,
+      "note": "The mirror of early Mandarin phonology, compiled for lyric writers."
+    },
+    {
+      "title": "A Descriptive and Comparative Vocabulary of Early Mandarin",
+      "author": "Translators' bureau of the Mongol period",
+      "year": 1389,
+      "note": "Practical bilingual wordlists preserving four-tone northern speech of the fourteenth century."
+    }
+  ],
   "next": [
     "dialects"
   ]
