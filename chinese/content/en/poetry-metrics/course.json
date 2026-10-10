@@ -7,12 +7,25 @@
   "order": 130,
   "tagline": "Level and oblique tones, rhyme and rhyme books, regulated verse, quatrains, parallelism and couplets, ancient-style verse, the forms of the *ci*, the *qu*, imagery and allusion, and how to read a poem",
   "summary": "Classical Chinese poetry follows rules of tone, rhyme and parallelism that school lessons usually leave out, and knowing them changes how a poem is read and heard. This course explains level and oblique tones, including the entering tone that Putonghua has lost, rhyme and the rhyme books, the patterns of regulated verse and quatrains, parallel couplets, the freer ancient-style verse, the tune patterns of the *ci* and the *qu*, and then turns to imagery, allusion and the art of reading a poem closely.",
-  "overview": [],
+  "overview": [
+    "The course rebuilds the sound-grid of classical verse from tones: what level and oblique mean, where the entering tone went, and how rhyme books encode a pronunciation that poetry preserves.",
+    "It then teaches forms as machines: the four building blocks of regulated verse, the adhesion and opposition that bind them, the licenses and rescues that loosen them, and the ways quatrains, ancient-style poems, *ci* and *qu* each renegotiate the same contract.",
+    "Finally it turns from metre to meaning: imagery as a shared code, allusion as compressed collaboration, and a five-step method of close reading that replaces stock exam phrases with evidence."
+  ],
   "prerequisites": [
     "sounds-of-mandarin",
     "classical-chinese-1"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Determine the level-or-oblique class of any character in a poem, including lost entering-tone characters, and justify the call",
+    "Scan a regulated poem into its four tonal patterns, identify opposition, adhesion, and any licensed deviation",
+    "Diagnose whether a poem rhymes by Pingshui, by a living dialect, or by modern New Rhyme, and explain the difference",
+    "Explain what a couplet matches (word class, semantic field, tone) and compose a correct paired line",
+    "Distinguish ancient-style from regulated verse on formal grounds, and explain why song-form poetry breaks the rules on purpose",
+    "Read a *ci* score (词谱) and a *qu* score, and account for extra words and tone assimilation in *qu*",
+    "Trace a allusion to its source and evaluate whether the poem argues with it or leans on it",
+    "Produce an evidence-based reading of a poem that names its form, its images, and its turning-points"
+  ],
   "chapters": [
     {
       "slug": "level-oblique",
@@ -98,8 +111,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 500,
+      "title": "Shen Yue applies the four tones to verse",
+      "detail": "Drawing on the analysis of the *Qieyun* tradition and Buddhist chant, Shen Yue and colleagues propose the four tones and the rules of pre-formation; the court poets begin to organize the sounds of the five-character line.",
+      "people": "Shen Yue, Zhou Ya"
+    },
+    {
+      "year": 700,
+      "title": "Regulated verse is completed at the Hanlin Academy",
+      "detail": "Shen Quanqi and Song Zhiwen refine the tonal couplets, so that by the Kaiyuan era the examination poetry has a standard, scannable form.",
+      "people": "Shen Quanqi, Song Zhiwen"
+    },
+    {
+      "year": 753,
+      "title": "Examination poetry fixes the form",
+      "detail": "The ming-shi style examination poems make scanning a professional skill of the literati; the rules become muscle memory rather than theory.",
+      "people": "Tang examination candidates"
+    },
+    {
+      "year": 806,
+      "title": "The Literary Mirror, compiled in Chang'an",
+      "detail": "The Japanese monk Kukai compiles a massive manual of poetry rules that preserves Chinese theories of couplet and malady lost in China.",
+      "people": "Kukai"
+    },
+    {
+      "year": 1100,
+      "title": "Song scholars begin to scan Tang poems",
+      "detail": "Ge Lifeng's Bibo Lu records the fourfold classification of regulated lines; Song poets start writing New Rhyme by their own speech.",
+      "people": "Ge Lifeng"
+    },
+    {
+      "year": 1299,
+      "title": "Sources of Ci",
+      "detail": "Zhang Yan's *Ci Yuan* sets out the musical and textual rules of ci composition; Zhou Bangyan's earlier Hangzhou bureau work had already fixed the tonal maps of many slow airs.",
+      "people": "Zhang Yan, Zhou Bangyan"
+    },
+    {
+      "year": 1324,
+      "title": "The Zhongyuan Yin Yun and the new northern music",
+      "detail": "Zhou Deqing's rhyme book of the northern style reflects a spoken system without an entering tone and gives the *qu* its licence to add extra words.",
+      "people": "Zhou Deqing"
+    },
+    {
+      "year": 1958,
+      "title": "Modern scholarship scans the whole tradition",
+      "detail": "Wang Li's studies systematize the metrics of poetry and ci on the basis of Tang and Song practice, and textbooks since then teach scanning as a literacy.",
+      "people": "Wang Li"
+    }
+  ],
+  "references": [
+    {
+      "title": "Wenxin Diaolong, 'Voice and Form' (Shenglü)",
+      "author": "Liu Xie",
+      "year": 501,
+      "note": "The earliest treatise on tone in literature; the beauty of sound is one of its three perfections."
+    },
+    {
+      "title": "Manpishiki (Empty Mirror of the Literary Mirror)",
+      "author": "Kukai",
+      "year": 806,
+      "note": "Preserves Tang poetry-rule texts, including the eight diseases theory."
+    },
+    {
+      "title": "Pingshui mulian zhu (Pingshui rhyme-linked annotations)",
+      "author": "compiled from the Fang family system",
+      "year": 1200,
+      "note": "The 106-rhyme book behind nearly all surviving regulated verse."
+    },
+    {
+      "title": "Bibo Lu",
+      "author": "Ge Lifeng",
+      "year": 1100,
+      "note": "First clear record of the four regulated verse patterns."
+    },
+    {
+      "title": "Ci Yuan",
+      "author": "Zhang Yan",
+      "year": 1299,
+      "note": "Rules of ci with a musician's ear for melody and phrase."
+    },
+    {
+      "title": "Zhongyuan Yin Yun",
+      "author": "Zhou Deqing",
+      "year": 1324,
+      "note": "The rhyme book of northern music; entering tone redistributed among the other three tones."
+    },
+    {
+      "title": "Qinding Cipu / Qinding Qupu",
+      "author": "Imperial compilers",
+      "year": 1711,
+      "note": "Standard inventories of ci and qu patterns, still the working reference today."
+    },
+    {
+      "title": "Hanyu Shilvxue (Chinese Poetics)",
+      "author": "Wang Li",
+      "year": 1958,
+      "note": "The modern systematization of metre; the source of the standard textbook tables."
+    }
+  ],
   "next": [
     "tang-literature",
     "song-literature",
