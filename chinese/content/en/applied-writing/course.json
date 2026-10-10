@@ -7,11 +7,25 @@
   "order": 240,
   "tagline": "What practical writing is, letters and notes, official documents and their format, notices, reports and requests, official letters and minutes, plans, summaries and investigation reports, news writing, applications and personal statements, and writing for the screen",
   "summary": "Most of what educated people write at work is practical writing, with its own conventions and, for official documents in China, a national standard. This course covers letters and notes, the types and format of official documents, notices, reports, requests, official letters and minutes, plans, summaries and investigation reports, news writing, application letters and personal statements, and writing for websites and social media.",
-  "overview": [],
+  "overview": [
+    "This course is about writing whose success is measured outside itself. A letter succeeds if the person replies; a notice succeeds if people show up; a request succeeds if it is approved; a report succeeds if somebody acts. Practical writing is the only kind of text that can be rejected for a formatting error, which tells you at once what it really is: an institutional act performed in words.",
+    "We work through the genres in the order a clerk meets them: what practical writing is, letters and the small documents of private obligation (receipts, IOUs, leave notes), the fifteen document types and the national format standard, then notices, reports and requests, official letters and minutes, plans, summaries and survey reports, news copy, applications and personal statements, and finally writing for screens.",
+    "The organising idea is that format is a liability device. A document number, an issuing signature, a date and a seal exist so that a text can be found later and so that somebody can be asked about it. Once you see that, the rules stop being pedantry: they are the reason a request must contain exactly one matter and a report must not smuggle in a request.",
+    "Two threads run underneath. The first is that choosing a document type is choosing a power relation - upward, downward or between equals - and a wrong choice is a jurisdictional error, not a style error. The second is plain-language: accuracy, clarity, brevity and courtesy, and the arithmetic of what they cost each other."
+  ],
   "prerequisites": [
     "foundations-of-writing"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Identify the purpose, the reader and the format of a practical text, and state what its success would consist in.",
+    "Write correctly formed letters, notes, receipts, IOUs and leave applications, and explain which elements carry legal or evidentiary weight.",
+    "Distinguish the fifteen document types, choose among notice, report, request, reply and letter on the basis of direction and function, and apply the main format requirements.",
+    "Draft a notice, a work report, a request for instructions, an official letter and meeting minutes with the right register and the right amount of specificity.",
+    "Write a plan, a work summary and a survey report in which every claim has a number, a source and a date attached.",
+    "Compose a news story using the inverted pyramid, an informative headline and a lead, and distinguish it from a feature.",
+    "Prepare a curriculum vitae, a cover letter and a personal statement without dishonesty, and explain the trade-off between verifiable and unverifiable claims.",
+    "Write for screens - headline, opening lines, structure and length - while accepting responsibility for what a publishable text sets in motion."
+  ],
   "chapters": [
     {
       "slug": "practical-writing",
@@ -86,8 +100,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": -212,
+      "title": "Bamboo and wood administrative slips",
+      "detail": "Excavated county-office documents show that Chinese bureaucratic writing - registers, dispatches, receipts - was standardised earlier than any literary genre in the tradition.",
+      "people": "Qin commandery offices (as excavated)"
+    },
+    {
+      "year": 501,
+      "title": "A literary theory chapter on letters",
+      "detail": "A fifth-century study of writing devotes a chapter to documents: memorials, notes and correspondence are discussed as a craft with their own proprieties.",
+      "people": "Liu Xie"
+    },
+    {
+      "year": 1844,
+      "title": "The electric telegram",
+      "detail": "Charged by the word and interruptible by线路 failure, the telegram is one of several explanations offered for the inverted pyramid.",
+      "people": "Telegraph companies"
+    },
+    {
+      "year": 1912,
+      "title": "Republican document regulations",
+      "detail": "The new government issues rules on official document types and forms, abolishing several Qing genres within months of its proclamation.",
+      "people": "Provisional government"
+    },
+    {
+      "year": 1920,
+      "title": "Vernacular in the schools",
+      "detail": "An order replacing classical-language textbooks with vernacular ones eventually reaches government paperwork as well.",
+      "people": "Ministry of Education"
+    },
+    {
+      "year": 1951,
+      "title": "Interim rules on document handling",
+      "detail": "A national set of rules standardises how official documents are drafted, issued, filed and archived.",
+      "people": "Government administration"
+    },
+    {
+      "year": 2012,
+      "title": "Current regulations and format standard",
+      "detail": "A party-state regulation fixes fifteen document types; a national standard fixes their layout down to margins and type size.",
+      "people": "General offices; standardisers"
+    },
+    {
+      "year": 2012,
+      "title": "A messaging platform opens publishing to everyone",
+      "detail": "Account-based publishing makes every reader a recipient of a push notification, and the first fifty characters become the whole genre.",
+      "people": "Platform"
+    }
+  ],
+  "references": [
+    {
+      "title": "Wenxin diaolong, chapter on documents and letters",
+      "author": "Liu Xie",
+      "year": 501,
+      "note": "The earliest sustained Chinese discussion of practical genres, and a warning that style follows function."
+    },
+    {
+      "title": "Xiuci xue fanli",
+      "author": "Chen Wangdao",
+      "year": 1932,
+      "note": "The standard Chinese treatment of register: style as appropriateness to scene and purpose."
+    },
+    {
+      "title": "Wenxin",
+      "author": "Xia Mijun, Ye Shengtao",
+      "year": 1934,
+      "note": "Stories teaching composition, including practical writing, to secondary students."
+    },
+    {
+      "title": "The Elements of Style",
+      "author": "William Strunk Jr.",
+      "year": 1918,
+      "note": "A small handbook of economy in English prose; influential far beyond its merits."
+    },
+    {
+      "title": "The Art of Readable Writing",
+      "author": "Rudolf Flesch",
+      "year": 1946,
+      "note": "Readability as measurement: the origin of formulas that turn style into a score."
+    },
+    {
+      "title": "Regulations on the handling of official documents of party and government organs",
+      "author": "General offices",
+      "year": 2012,
+      "note": "The operative rule set: definitions, functions and the fifteen document types."
+    },
+    {
+      "title": "Format of official documents of party and government organs (GB/T 9704-2012)",
+      "author": "Standardisers",
+      "year": 2012,
+      "note": "Layout: zones, elements, fonts, dates, seals and page numbering."
+    },
+    {
+      "title": "Code of professional ethics for journalists",
+      "author": "Journalists' association",
+      "year": 1991,
+      "note": "Revised repeatedly; the reference point for source attribution and correction."
+    }
+  ],
   "next": [
     "academic-writing"
   ]
