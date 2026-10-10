@@ -7,12 +7,25 @@
   "order": 160,
   "tagline": "What an argument is, the claim, evidence, methods of reasoning, structure, refutation, the language of argument, commentary and editorials, reviews, and the examination essay",
   "summary": "An argumentative essay persuades by reasons, not by slogans, quotations or ornament. This course teaches how to form a clear claim, choose and use evidence, reason soundly by example, analogy, cause and comparison, organise an argument and answer the other side, and write in the forms readers meet every day — commentary, editorials and reviews — and looks critically at the formulas of the examination essay.",
-  "overview": [],
+  "overview": [
+    "The writing course the logic course was built to serve: turning premise–conclusion skeletons into finished prose that a sceptical reader will follow, test, and (ideally) revise.",
+    "It covers the whole production line: staking a claim, choosing and weighing evidence, reasoning methods, structure, refutation, style, and then three working genres—commentary, review, and the examination essay.",
+    "The Chinese argumentative tradition runs through every chapter: the Han policy essay, the Tang single-thesis 论, Liang Qichao's new prose, and today's exam room—Western argumentation theory is the skeleton key, not the landlord."
+  ],
   "prerequisites": [
     "foundations-of-writing",
     "logic"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish thesis, claim, topic, and slogan, and state a debatable claim in one sentence",
+    "Grade evidence by kind and strength, and cite it without cheating the reader",
+    "Choose reasoning methods (deduction, induction, analogy, example, cause) to fit the claim",
+    "Plan essays with proven structures (classical five-part, Toulmin, Rogerian) and know their failure modes",
+    "Refute responsibly: steelman, locate the load-bearing premise, concede what must be conceded",
+    "Write argumentative prose with disciplined connectives, concession, and emphasis",
+    "Draft commentary and reviews that carry an argument, not just a mood",
+    "Read the examination prompt as a contract and deliver against it under time pressure"
+  ],
   "chapters": [
     {
       "slug": "what-is-argument",
@@ -96,8 +109,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": -200,
+      "title": "The furore of the policy essays",
+      "detail": "Jia Yi's Guo Qin Lun diagnoses Qin's fall in rhetorical overdrive: the Han-led policy essay as argument by momentum.",
+      "people": "Jia Yi"
+    },
+    {
+      "year": 162,
+      "title": "Memoirs that argue",
+      "detail": "Chao Cuo's essay on grain: a technical argument (incentives, prices) embedded in courtly cadence.",
+      "people": "Chao Cuo"
+    },
+    {
+      "year": 800,
+      "title": "The single-thesis essay",
+      "detail": "Han Yu's Shishuo plants one thesis and circles it with definitions, examples and objections.",
+      "people": "Han Yu"
+    },
+    {
+      "year": 1060,
+      "title": "The strategist's essays",
+      "detail": "Su Xun and Su Shi: pick one angle, press it to the wall—angle is argument.",
+      "people": "Su Xun, Su Shi"
+    },
+    {
+      "year": 1902,
+      "title": "New prose, new audience",
+      "detail": "Liang Qichao's Xinmin Shuo serialised: the periodical essay as mass persuasion machinery.",
+      "people": "Liang Qichao"
+    },
+    {
+      "year": 1917,
+      "title": "A manifesto that practises itself",
+      "detail": "Hu Shi's essay on literary reform argues for plain argument in the plain style.",
+      "people": "Hu Shi"
+    },
+    {
+      "year": 1958,
+      "title": "The layout of reasoning",
+      "detail": "Toulmin's claim–ground–warrant–qualifier arrives from law; composition studies adopt it decades later.",
+      "people": "Stephen Toulmin"
+    },
+    {
+      "year": 1977,
+      "title": "The essay returns to the exam",
+      "detail": "The gaokao resumes with argument prompts: a generation relearns written argument in ninety minutes.",
+      "people": "Examination authority"
+    }
+  ],
+  "references": [
+    {
+      "title": "《过秦论》",
+      "author": "贾谊",
+      "year": -200,
+      "note": "The classic of the momentum essay."
+    },
+    {
+      "title": "《师说》《原道》",
+      "author": "韩愈",
+      "year": 800,
+      "note": "Single-thesis circling: the yuan-style essay."
+    },
+    {
+      "title": "《嘉祐集》几策",
+      "author": "苏洵",
+      "year": 1060,
+      "note": "Strategy essays: angle, concession, escalation."
+    },
+    {
+      "title": "《新民说》",
+      "author": "梁启超",
+      "year": 1902,
+      "note": "The new prose and its periodical audience."
+    },
+    {
+      "title": "《文心雕龙·论说》",
+      "author": "刘勰",
+      "year": 501,
+      "note": "Liu Xie's legislation of the lun genre."
+    },
+    {
+      "title": "The Uses of Argument",
+      "author": "Stephen E. Toulmin",
+      "year": 1958,
+      "note": "Argument laid out for working writers."
+    },
+    {
+      "title": "They Say / I Say",
+      "author": "Graff & Birkenstein",
+      "year": 2004,
+      "note": "Templates for entering a conversation."
+    },
+    {
+      "title": "《高考语文科考试说明》",
+      "author": "考试中心",
+      "year": 1999,
+      "note": "How the exam defines what counts as an argument."
+    }
+  ],
   "next": [
     "academic-writing"
   ]
