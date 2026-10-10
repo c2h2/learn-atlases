@@ -7,11 +7,24 @@
   "order": 150,
   "tagline": "The literary revolution, Lu Xun’s fiction, his essays and prose poems, the new poetry, the modern essay, fiction of the 1920s and 1930s, the left-wing movement, modern drama, Shen Congwen and the Beijing and Shanghai schools, and literature of the war years",
   "summary": "Modern Chinese literature began with the New Culture Movement’s call to write in the vernacular and to remake Chinese culture. This course reads the writers of the years from the literary revolution of 1917 to 1949 — Lu Xun above all, the new poets and essayists, the novelists and playwrights of the 1920s and 1930s such as Ba Jin, Mao Dun, Lao She, Cao Yu and Shen Congwen, the modernists of Shanghai and Eileen Chang, and the literature of the war years.",
-  "overview": [],
+  "overview": [
+    "A course on Chinese literature from 1917 to 1949: the republic of literature that was built when the written language fell off its throne.",
+    "It follows the decade-by-decade experiments of the new literature—the language revolution, the invention of the modern author, the quarrels between schools, and the way war reorganised the literary field—while reading major works closely alongside the theories of the previous course.",
+    "By the end, students should handle the modern period as a set of solved problems (form, institution, value) rather than a canon, and recognise the same problems still running beneath contemporary writing."
+  ],
   "prerequisites": [
     "literary-theory"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain the language revolution as an institutional event (institutions, print capitalism, education) and not only as an idea",
+    "Read Lu Xun's fiction and prose poems with a full apparatus of narrative voice, irony and figure",
+    "Reconstruct the field of the 1920s–30s—literary societies, journals, schools, quarrels—and interpret a work through its position",
+    "Analyse the forms of new poetry (free verse, the Crescent school, the modernists) as solutions to the metrical problem inherited from classical poetry",
+    "Trace the rise of the modern essay and its styles of subjectivity",
+    "Evaluate the left-wing turn, wartime re-organisation and the Yan'an settlement as changes in the rules of the game",
+    "Argue an interpretation of a major work (Border Town, Thunderstorm, Fortress Besieged) with textual evidence",
+    "Relate categories of literary theory—genre, institution, interpretation—to concrete modern cases"
+  ],
   "chapters": [
     {
       "slug": "literary-revolution",
@@ -95,8 +108,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1917,
+      "title": "The literary revolution begins",
+      "detail": "Hu Shi and Chen Duxiu in New Youth raise the slogan against archaic writing; the vernacular is proposed as the language of literature.",
+      "people": "Hu Shi, Chen Duxiu"
+    },
+    {
+      "year": 1918,
+      "title": "A Madman's Diary",
+      "detail": "Lu Xun's diary fiction appears in New Youth: the vernacular arrives already carrying its hardest masterpiece.",
+      "people": "Lu Xun"
+    },
+    {
+      "year": 1921,
+      "title": "Schools organise",
+      "detail": "The Literary Research Society and the Creation Society are founded; journals, societies and quarrels constitute the new field.",
+      "people": "Zheng Zhen duo, Guo Moruo and others"
+    },
+    {
+      "year": 1925,
+      "title": "Mass readership enters",
+      "detail": "Centenary enthusiasm for Dream of the Red Chamber and the rise of fiction readers make interpretation a public market.",
+      "people": "Readership of the Shanghai publications"
+    },
+    {
+      "year": 1928,
+      "title": "Regional colours",
+      "detail": "Borderland and local-colour writing redistribute literary geography away from the capital.",
+      "people": "Shen Congwen and others"
+    },
+    {
+      "year": 1930,
+      "title": "The Left-Wing Writers League",
+      "detail": "The League is founded in Shanghai; class literature becomes an organised programme with its own budgets and martyrs.",
+      "people": "Lu Xun, Mao Dun"
+    },
+    {
+      "year": 1936,
+      "title": "Fortress Besieged serialised",
+      "detail": "Qian Zhongshu's ironic novel of ideas begins in the weekly Frontier Trench; comedy survives inside the age of commitment.",
+      "people": "Qian Zhongshu"
+    },
+    {
+      "year": 1942,
+      "title": "The Yan'an Forum",
+      "detail": "Mao's talks define literature and art for workers, peasants and soldiers; the terms of the field are rewritten by policy.",
+      "people": "Mao Zedong"
+    }
+  ],
+  "references": [
+    {
+      "title": "Call to Arms",
+      "author": "Lu Xun",
+      "year": 1923,
+      "note": "The founding collection of modern Chinese fiction."
+    },
+    {
+      "title": "Wandering",
+      "author": "Lu Xun",
+      "year": 1926,
+      "note": "Second collection: festival, duty, solitude and death."
+    },
+    {
+      "title": "Wild Grass",
+      "author": "Lu Xun",
+      "year": 1927,
+      "note": "Prose poems: the dark interior of the vernacular."
+    },
+    {
+      "title": "Goddess",
+      "author": "Guo Moruo",
+      "year": 1921,
+      "note": "The romantic manifesto collection of the Creation Society."
+    },
+    {
+      "title": "Border Town",
+      "author": "Shen Congwen",
+      "year": 1934,
+      "note": "Pastoral at the edge of the empire of literature."
+    },
+    {
+      "title": "Thunderstorm",
+      "author": "Caoyu",
+      "year": 1934,
+      "note": "Well-made tragedy and household doom: modern drama's summit."
+    },
+    {
+      "title": "Fortress Besieged",
+      "author": "Qian Zhongshu",
+      "year": 1947,
+      "note": "The ironic novel of ideas."
+    },
+    {
+      "title": "Man, Beast and Ghost",
+      "author": "Qian Zhongshu",
+      "year": 1946,
+      "note": "War-time ironic stories and essays."
+    }
+  ],
   "next": [
     "contemporary-literature"
   ]
