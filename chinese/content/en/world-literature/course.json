@@ -7,11 +7,24 @@
   "order": 230,
   "tagline": "Greece and Rome, the Bible and the Middle Ages, the Renaissance, classicism and the Enlightenment, Romanticism, the realist novel, Russian literature, modernism, post-war and contemporary literature, Asian, African and Latin American literature, and translation and reception",
   "summary": "Modern Chinese literature grew up in conversation with foreign literature, read mostly in translation. This course surveys the literatures of the world from Homer and Greek tragedy through Dante, Shakespeare, the Enlightenment, Romanticism and the great realist and Russian novels to modernism and contemporary writing, together with the literatures of Japan, India, the Arab world, Africa and Latin America, and asks what is gained and lost in translation.",
-  "overview": [],
+  "overview": [
+    "This course is not a shorter history of every literature on earth; nobody can teach that honestly. It is a course about a relation: the relation between a text written in one place and the set of institutions - translation, schooling, prizes, copyright, publishing lists - that later make it available somewhere else. Once the relation is the object, the interesting questions change: not 'is this great' but 'how did it arrive'.",
+    "We move through the usual periods in a fast but honest sweep - Greece and Rome, the Bible and the Middle Ages, the Renaissance, the Enlightenment, Romanticism, realism, the Russian nineteenth century, modernism, the postwar period - and then turn to the literatures that the old European syllabus kept at the edge: the Arabic and Persian traditions, Sanskrit and classical Japanese, African writing, and the Latin American boom that taught the twentieth century how to read the twentieth century.",
+    "A second thread runs across the whole course: the material history of circulation. Oral poetry and its transcription, the codex and the scroll, paper and woodblock, print, the cheap serial, the paperback, the copyright act, the translation grant, the prize, the algorithmic shelf. Each of these changes what counts as literature before it changes what is written.",
+    "The final chapter is the course's test. We read the major recent proposals for 'world literature' as positions in an argument about the periphery and the centre, about translation as loss and as the condition of existence, and about who pays for the distance a text travels."
+  ],
   "prerequisites": [
     "literary-theory"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Summarise the major periods, genres and works of several literary traditions well enough to place a text in a genealogy rather than a country.",
+    "Analyse a literary work with attention to the conventions it inherits (epic, tragedy, romance, sonnet, novel, chronicle) and to the transaction those conventions make with an audience.",
+    "Explain how material conditions - orality, manuscript, print, serialisation, digitisation - shape form, and give period-specific examples.",
+    "Use the vocabulary of comparatism (influence, reception, translation, adaptation, borrowing, canon, world-system) without collapsing it into the vocabulary of influence-anxiety.",
+    "Read translation as a practice with costs and beneficiaries, and evaluate a translated text by stating what was traded.",
+    "Discuss the 'world literature' debate - canons, centres and peripheries, untranseliness, the single world and many public spheres - and take a position with evidence.",
+    "Argue from primary texts: build an essay that uses at least three works from three languages, and that names the mediations (translation, edition, adaptation) through which the argument reaches them."
+  ],
   "chapters": [
     {
       "slug": "greece-rome",
@@ -102,8 +115,124 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1915,
+      "title": "Chinese characters set in movable type",
+      "detail": "Chinese type with a small character set demonstrates that print does not require an alphabet: movable type is reinvented independently in two writing systems.",
+      "people": "Hua Sheng; later Korean and Japanese metal type"
+    },
+    {
+      "year": 868,
+      "title": "The Diamond Sutra printed",
+      "detail": "The earliest dated printed book is a Buddhist text distributed as merit: publication with an audience but no author income.",
+      "people": "Wang Jie (donor, colophon)"
+    },
+    {
+      "year": 1450,
+      "title": "Print in Europe",
+      "detail": "Movable type with an alphabet makes fixed editions cheap and errors visible, and creates the conditions for authorship as property.",
+      "people": "Johannes Gutenberg"
+    },
+    {
+      "year": 1709,
+      "title": "Statute of Anne",
+      "detail": "The first copyright statute vests rights in authors for a term: the text becomes a transferable asset.",
+      "people": "English Parliament"
+    },
+    {
+      "year": 1755,
+      "title": "A Dictionary of the English Language",
+      "detail": "A single scholar's dictionary stabilises spelling and quotation, making the canonical sentence an instrument of the language.",
+      "people": "Samuel Johnson"
+    },
+    {
+      "year": 1831,
+      "title": "Berne convention prelude and international copyright debates",
+      "detail": "The nineteenth century negotiates copyright across borders, and translation becomes a licensed right rather than an act of appropriation.",
+      "people": "Various delegations"
+    },
+    {
+      "year": 1901,
+      "title": "First Nobel Prize in Literature",
+      "detail": "The prize creates an annual mechanism for promoting the local to the world, with a jury sitting in one capital.",
+      "people": "Swedish Academy"
+    },
+    {
+      "year": 1927,
+      "title": "The Shape of the Novel in the Eighteenth Century",
+      "detail": "A scholarly history argues that the novel rose with the middle classes - and is later criticised for reading a whole continent through one country.",
+      "people": "Ian Watt"
+    },
+    {
+      "year": 1948,
+      "title": "UNESCO and the modern translation project",
+      "detail": "Postwar programmes fund translation and index major works, and world literature becomes a policy with a budget.",
+      "people": "UNESCO"
+    },
+    {
+      "year": 1992,
+      "title": "The Western Canon",
+      "detail": "A defence of the canon against 'schools of resentment' turns a curriculum argument into a public war about resentment and power.",
+      "people": "Harold Bloom"
+    },
+    {
+      "year": 2003,
+      "title": "What is World Literature",
+      "detail": "A proposal to treat world literature as a mode of reading and of circulation: a work becomes world literature in translation.",
+      "people": "David Damrosch"
+    }
+  ],
+  "references": [
+    {
+      "title": "Iliad / Odyssey",
+      "author": "Homer (as transmitted)",
+      "year": -700,
+      "note": "Epic formula, oral composition, and the long editorial life of a text that began as performance."
+    },
+    {
+      "title": "Aeneid",
+      "author": "Virgil",
+      "year": -19,
+      "note": "The imperial response to Homer: the second epic that taught Europe how to read the first."
+    },
+    {
+      "title": "Mahabharata (selected books)",
+      "author": "attributed to Vyasa",
+      "year": 400,
+      "note": "Encyclopic epic and continuous interpolation: a text that never closed."
+    },
+    {
+      "title": "The Tale of Genji",
+      "author": "Murasaki Shikibu",
+      "year": 1010,
+      "note": "Court narrative with no precedents in its own language: invention described as a diary."
+    },
+    {
+      "title": "Divine Comedy",
+      "author": "Dante Alighieri",
+      "year": 1320,
+      "note": "Vernacular theology and the invention of an author's own monument."
+    },
+    {
+      "title": "Don Quixote",
+      "author": "Miguel de Cervantes",
+      "year": 1605,
+      "note": "The novel reading itself; the founding case for a global genre."
+    },
+    {
+      "title": "Faust, Part One",
+      "author": "Johann Wolfgang von Goethe",
+      "year": 1808,
+      "note": "World literature as a concept coined by an author reading translations in Weimar."
+    },
+    {
+      "title": "Dream of the Red Chamber",
+      "author": "Cao Xueqin",
+      "year": 1791,
+      "note": "A manuscript culture's unfinished masterpiece; the case for translation without a fixed source."
+    }
+  ],
   "next": [
     "academic-writing"
   ]
