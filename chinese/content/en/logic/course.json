@@ -7,9 +7,22 @@
   "order": 170,
   "tagline": "The structure of arguments, concepts and definition, propositions, deductive reasoning, the syllogism, induction and analogy, causal reasoning, fallacies, evaluating information, and logic in ancient China",
   "summary": "Clear writing depends on clear thinking. This course introduces the logic taught in Chinese universities — concepts and definitions, propositions, deductive inference and the syllogism, induction, analogy and causal reasoning — together with the practical skills of critical thinking: recognising fallacies, weighing evidence and judging the claims met in the news and online. It ends with the logical traditions of ancient China.",
-  "overview": [],
+  "overview": [
+    "A first course in logic for writers: not a tour of formal systems, but the workshop manual of reasoning—how arguments are built, how they fail, and how to tell the difference in the wild.",
+    "It moves from the anatomy of an argument through definition, proposition, deduction, syllogism, induction, causation and fallacy, to the practical logic of evaluating information and the classical Chinese traditions of ming-bian and lian-bai.",
+    "Every technique is drilled on Chinese-language material: exam essays, editorials, ad copy, chat screenshots—logic is taught as a reading device for the texts students actually meet."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Reconstruct arguments into premise–conclusion form and separate inference from persuasion",
+    "Test definitions against the four classical rules and repair faulty ones",
+    "Distinguish valid from sound, and use truth-functional connectives correctly",
+    "Evaluate syllogisms with classical rules and simple diagramming; recognise the figures that fail",
+    "Assess induction, analogy and causal claims (Mill's methods, confounders, base rates)",
+    "Diagnose the standard fallacies by name and by repair, in authentic Chinese media texts",
+    "Apply evidential standards (source, sample, independence, relevance) to everyday information",
+    "Read Mohist and Ming-era logical texts as contributions to argument theory, not curiosities"
+  ],
   "chapters": [
     {
       "slug": "arguments",
@@ -91,8 +104,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": -340,
+      "title": "Aristotle founds the syllogistic",
+      "detail": "The Prior Analytics analyses deduction through figure and mood: the first formal science of inference.",
+      "people": "Aristotle"
+    },
+    {
+      "year": -300,
+      "title": "The Mohist Canon of disputation",
+      "detail": "The Xiao Qu and Da Qu chapters systematise cu, le, shuo and yan—Chinese induction, analogy, explanation and exemplum.",
+      "people": "Later Mohists"
+    },
+    {
+      "year": -260,
+      "title": "The white horse is not a horse",
+      "detail": "Gongsun Long's paradoxes separate name from object and thing from attribute; the School of Names at work.",
+      "people": "Gongsun Long"
+    },
+    {
+      "year": 1854,
+      "title": "An algebra of thought",
+      "detail": "Boole's Laws of Thought renders logic as calculation with 0, 1 and classes—foundation of the digital age.",
+      "people": "George Boole"
+    },
+    {
+      "year": 1879,
+      "title": "The concept-script",
+      "detail": "Frege's Begriffsschrift creates quantifiers and function–argument analysis: modern logic begins.",
+      "people": "Frege"
+    },
+    {
+      "year": 1910,
+      "title": "Principia Mathematica",
+      "detail": "Russell and Whitehead attempt to derive mathematics from logic; type theory tames the paradoxes.",
+      "people": "Russell, Whitehead"
+    },
+    {
+      "year": 1937,
+      "title": "Logic and native thought",
+      "detail": "Jin Yuelin's treatise situates the ancient Chinese schools—ming-bian, lian-bai, the Canon—in comparative logic.",
+      "people": "Jin Yuelin"
+    },
+    {
+      "year": 1953,
+      "title": "The logic textbook generation",
+      "detail": "Copi's symbolic course settles the modern intro syllabus; the informal-logic movement then returns argument to essays and newsrooms.",
+      "people": "Irving Copi"
+    }
+  ],
+  "references": [
+    {
+      "title": "Prior Analytics",
+      "author": "Aristotle",
+      "year": -340,
+      "note": "The founding analysis of deductive inference."
+    },
+    {
+      "title": "Mozi, Canon and Explains (Xiao Qu, Da Qu)",
+      "author": "Later Mohists",
+      "year": -300,
+      "note": "The Chinese classical corpus of disputation."
+    },
+    {
+      "title": "The Laws of Thought",
+      "author": "George Boole",
+      "year": 1854,
+      "note": "Logic as algebra; classes and calculation."
+    },
+    {
+      "title": "Begriffsschrift",
+      "author": "Gottlob Frege",
+      "year": 1879,
+      "note": "Quantification and the modern proof language."
+    },
+    {
+      "title": "Introduction to Logic",
+      "author": "Irving M. Copi",
+      "year": 1953,
+      "note": "The twentieth-century standard course textbook."
+    },
+    {
+      "title": "《逻辑哲学》",
+      "author": "金岳霖",
+      "year": 1937,
+      "note": "Reads ming-bian and the Mohist Canon comparatively; the Chinese classic of logic philosophy."
+    },
+    {
+      "title": "New Logic (Xin Lixue)",
+      "author": "Yan Fu",
+      "year": 1908,
+      "note": "Jevons via Yan Fu: the textbook that taught Republican China to reason."
+    },
+    {
+      "title": "Traité de l'argumentation (The New Rhetoric)",
+      "author": "Perelman & Olbrechts-Tyteca",
+      "year": 1958,
+      "note": "Argumentation restored to the domain of the probable."
+    }
+  ],
   "next": [
     "argumentative-writing"
   ]
