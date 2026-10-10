@@ -35,7 +35,7 @@ page_head(t('About'), 'about');
         <div><dt><?= h(t('Exercises with solutions')) ?></dt><dd><?= fmt_num($tot['exercises']) ?></dd></div>
       </dl>
       <h2 class="section" style="margin-bottom:12px"><?= h(t('Sources and accuracy')) ?></h2>
-      <p><?= h(t('The lessons are original texts that follow the standard textbooks and the original papers, and each course page recommends books and papers for further reading. This atlas is still a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.')) ?></p>
+      <p><?= h(t('The lessons are original texts that follow the standard textbooks and the original papers, and each course page recommends books and papers for further reading. The courses and chapters are all mapped out, and the lessons are being written; the atlas home page shows how many chapters of each course are written.')) ?></p>
       <p><?= sprintf(h(t('If you find an error, please report it on %s, noting the chapter and the number of the theorem, example or exercise.')), '<a href="' . h(MA_ISSUES_URL) . '">GitHub</a>') ?></p>
       <h2 class="section" style="margin:28px 0 12px"><?= h(t('How it is built')) ?></h2>
       <p><?= h(t('The site is plain PHP with no database. Lessons are written in a light markup language and every formula is typeset in advance with KaTeX; interactive figures are small self-contained scripts. Fonts, KaTeX and all scripts are served from this site, so it works where external services are blocked.')) ?></p>

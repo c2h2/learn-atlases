@@ -6,8 +6,8 @@
   "card_name_zh": "大语言模型图谱",
   "desc": "A detailed, interactive course on large language models: from the mathematics of machine learning and the Transformer to pretraining, alignment, inference, applications and safety.",
   "desc_zh": "深入、可交互的大语言模型课程：从机器学习的数学基础和Transformer，到预训练、对齐、推理部署、应用与安全。",
-  "lede": "A detailed, interactive course on large language models — from the mathematics of machine learning, neural networks and the Transformer to pretraining, post-training, reasoning, inference, agents, evaluation and safety. Courses are arranged in four stages, from foundations to the research frontier. This is a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.",
-  "lede_zh": "深入、可交互的大语言模型课程——从机器学习的数学、神经网络和Transformer，到预训练、后训练、推理能力、推理部署、智能体、评测与安全。课程分为四个阶段，从基础一直到研究前沿。目前这是一个框架：课程与章节已经规划好，课文尚待编写。",
+  "lede": "A detailed, interactive course on large language models — from the mathematics of machine learning, neural networks and the Transformer to pretraining, post-training, reasoning, inference, agents, evaluation and safety. Courses are arranged in four stages, from foundations to the research frontier. Every course and chapter is mapped out and the lessons are being written: each course below shows how many of its chapters are written.",
+  "lede_zh": "深入、可交互的大语言模型课程——从机器学习的数学、神经网络和Transformer，到预训练、后训练、推理能力、推理部署、智能体、评测与安全。课程分为四个阶段，从基础一直到研究前沿。每门课程和每一章都已规划好，课文正在编写中：下面每门课程都标明了已完成的章数。",
   "foot": "a free, detailed and interactive course on large language models, from first principles to current research, written to be read alongside lectures, papers and textbooks.",
   "foot_zh": "一套免费、详尽、可交互的大语言模型课程，从基本原理一直讲到当前研究，可配合课堂、论文和教材阅读。",
   "about_lede": "LLM Atlas is a free, detailed course on how large language models work, how they are trained and used, and how to make them safe — written to be read alongside lectures, papers and textbooks, or on its own.",
@@ -20,8 +20,8 @@
   "timeline_lede_zh": "各门课程背后的思想：从马尔可夫的字母链和香农的信息论，到神经网络、Transformer和现代语言模型。彩色圆点表示所属领域；链接指向讲授该内容的课程。",
   "card_desc": "Large language models from first principles: the mathematics of machine learning, neural networks and the Transformer, pretraining and scaling, post-training and reasoning, inference, agents, evaluation, interpretability and safety. The curriculum is mapped out; the lessons are still to be written.",
   "card_desc_zh": "从基本原理讲解大语言模型：机器学习的数学、神经网络与Transformer、预训练与规模化、后训练与推理能力、推理部署、智能体、评测、可解释性与安全。课程体系已经规划好，课文尚待编写。",
-  "sources": "The lessons are original texts that follow the standard textbooks and the original papers, and each course page recommends books and papers for further reading. This atlas is still a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.",
-  "sources_zh": "课文均为原创，依据标准教材和原始论文编写，每门课程页面都推荐了延伸阅读的书籍和论文。本图谱目前还只是框架：课程与章节已经规划好，课文尚待编写。",
+  "sources": "The lessons are original texts that follow the standard textbooks and the original papers, and each course page recommends books and papers for further reading. The courses and chapters are all mapped out, and the lessons are being written; the atlas home page shows how many chapters of each course are written.",
+  "sources_zh": "课文均为原创，依据标准教材和原始论文编写，每门课程页面都推荐了延伸阅读的书籍和论文。课程与章节都已规划好，课文正在编写中；图谱首页标明了每门课程已完成的章数。",
   "levels": {
     "labels": [
       "Foundations",

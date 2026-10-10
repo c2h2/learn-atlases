@@ -5,6 +5,7 @@ require __DIR__ . '/inc/bootstrap.php';
 $courses = ma_courses();
 $idx = ma_index();
 $tot = ma_totals();
+$planned = array_sum(array_map(fn($c) => count($c['chapters']), $courses)); // more than $tot['chapters'] while lessons are still being written
 page_head(site_name(), 'index');
 ?>
 <div class="wrap">
@@ -61,7 +62,7 @@ page_head(site_name(), 'index');
         </div>
         <div class="chain-cell"><?= chapter_chain($c, ['unit' => 28]) ?></div>
         <div class="stats">
-          <?= h(t('%d chapters', count($c['chapters']))) ?><?= $written < count($c['chapters']) ? ' · ' . h(t('%d written', $written)) : '' ?>
+          <?= h(t('%d chapters', count($c['chapters']))) ?><?= $written < count($c['chapters']) || $tot['chapters'] < $planned ? ' · ' . h(t('%d written', $written)) : '' ?>
           <span class="prog" data-progress="<?= h(implode(' ', $keys)) ?>"><i></i></span>
           <span class="muted" data-progress-label></span>
         </div>

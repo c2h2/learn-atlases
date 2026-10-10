@@ -5,13 +5,14 @@ require __DIR__ . '/inc/bootstrap.php';
 $courses = ma_courses();
 $idx = ma_index();
 $tot = ma_totals();
+$planned = array_sum(array_map(fn($c) => count($c['chapters']), $courses)); // more than $tot['chapters'] while lessons are still being written
 page_head(site_name(), 'index');
 ?>
 <div class="wrap">
   <section class="intro">
     <div>
       <h1 class="display"><?= h(site_name()) ?></h1>
-      <p class="lede"><?= h(t('A detailed, interactive course on large language models — from the mathematics of machine learning, neural networks and the Transformer to pretraining, post-training, reasoning, inference, agents, evaluation and safety. Courses are arranged in four stages, from foundations to the research frontier. This is a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.')) ?></p>
+      <p class="lede"><?= h(t('A detailed, interactive course on large language models — from the mathematics of machine learning, neural networks and the Transformer to pretraining, post-training, reasoning, inference, agents, evaluation and safety. Courses are arranged in four stages, from foundations to the research frontier. Every course and chapter is mapped out and the lessons are being written: each course below shows how many of its chapters are written.')) ?></p>
     </div>
     <dl class="tally">
       <div><dt><?= h(t('Courses')) ?></dt><dd><?= fmt_num($tot['courses']) ?></dd></div>
@@ -61,7 +62,7 @@ page_head(site_name(), 'index');
         </div>
         <div class="chain-cell"><?= chapter_chain($c, ['unit' => 28]) ?></div>
         <div class="stats">
-          <?= h(t('%d chapters', count($c['chapters']))) ?><?= $written < count($c['chapters']) ? ' · ' . h(t('%d written', $written)) : '' ?>
+          <?= h(t('%d chapters', count($c['chapters']))) ?><?= $written < count($c['chapters']) || $tot['chapters'] < $planned ? ' · ' . h(t('%d written', $written)) : '' ?>
           <span class="prog" data-progress="<?= h(implode(' ', $keys)) ?>"><i></i></span>
           <span class="muted" data-progress-label></span>
         </div>
