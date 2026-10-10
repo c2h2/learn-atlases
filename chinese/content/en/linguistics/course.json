@@ -7,12 +7,26 @@
   "order": 210,
   "tagline": "Language and linguistics, the nature of language, phonetics and phonology, morphology, syntax, semantics, pragmatics, language and society, language change, and the languages of the world and of China",
   "summary": "Linguistics studies human language in general, and seeing Chinese as one language among thousands changes how a native speaker understands it. This course introduces the nature of language and the core fields of linguistics — phonetics and phonology, morphology, syntax, semantics and pragmatics — with examples from Chinese and other languages, and then turns to language in society, how languages change, and the languages of the world and of China.",
-  "overview": [],
+  "overview": [
+    "This course is the toolbox. Earlier courses taught you to notice that a Chinese sentence is awkward, that a rhyme has shifted, that a character was misread; here we name the machinery that makes those judgements possible: the level of analysis (sound, form, sentence, meaning, use), and what each level is entitled to explain.",
+    "We move through the five core components in the standard order - phonetics and phonology, morphology, syntax, semantics, pragmatics - but each chapter is anchored in Chinese data, because Chinese is not a neutral illustration of textbook categories: it stresses them. Wordhood, tense, plurality, constituency and even the sentence itself all behave differently here, and that difference is the point.",
+    "Then we widen to the two dimensions that no grammar can hold: society (register, style, region, identity, prestige, language policy) and time (sound change, reanalysis, grammaticalisation, lexical turnover). A language is not a system that happens to change; it is a record of changes that have not yet been smoothed over.",
+    "Finally the course places the scientific study of Chinese in its own history: from philology and the Qieyun tradition to the Mashi Wentong, the Yuya Xuncode, the twentieth-century reconstruction of Old and Middle Chinese and the post-1980 reform of Chinese grammar - so that you can tell which of your intuitions about Chinese are linguistic facts and which are curriculum habits."
+  ],
   "prerequisites": [
     "sounds-of-mandarin",
     "modern-grammar"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish levels of analysis and state, for a given datum, which level can settle the question and which is being smuggled in.",
+    "Transcribe, describe and classify the sounds of Chinese with working IPA competence, and separate phonetic substance from phonological opposition.",
+    "Give a defensible test for wordhood and for constituency in Chinese, and explain why morphological criteria borrowed from Indo-European languages fail here.",
+    "Compare major syntactic frameworks on a fixed set of Chinese constructions (ba, bei, topic-comment, classifiers, shi...de) without pretending the frameworks are equivalent.",
+    "Analyse lexical and compositional meaning using sense relations, componential features and referential tools, and know their limits on figurative language.",
+    "Explain speech acts, implicature, deixis, politeness and discourse structure with Chinese examples, and identify which apparent semantic puzzle is in fact pragmatic.",
+    "Handle the sociolinguistic and diachronic vocabulary - variety, register, prestige, standardisation, reanalysis, grammaticalisation, lexical diffusion - well enough to read primary research.",
+    "Situate the study of Chinese historically and describe the languages of China non-politically, including the difference between script affiliation and genetic affiliation."
+  ],
   "chapters": [
     {
       "slug": "language-and-linguistics",
@@ -98,8 +112,136 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1898,
+      "title": "A grammar for Chinese appears",
+      "detail": "Ma Jianzhong's Mashi Wentong applies a Latin-derived part-of-speech frame to classical Chinese: the beginning of Chinese grammar as a discipline, and of a century-long argument about fit.",
+      "people": "Ma Jianzhong"
+    },
+    {
+      "year": 1916,
+      "title": "Course in General Linguistics",
+      "detail": "Published posthumously from student notes; sign, arbitrariness, langue and parole, synchrony and diachrony become the default vocabulary of linguistics.",
+      "people": "Ferdinand de Saussure"
+    },
+    {
+      "year": 601,
+      "title": "The Qieyun rhyme handbook",
+      "detail": "A character lookup arranged by reading; for the next millennium, phonology in China meant commenting on this one book.",
+      "people": "Lu Fay'an"
+    },
+    {
+      "year": 1924,
+      "title": "A Grammar of the National Language",
+      "detail": "Li Jinxi's grammar of vernacular Chinese supplies the subject-predicate-and-adjunct vocabulary still used in schools.",
+      "people": "Li Jinxi"
+    },
+    {
+      "year": 1923,
+      "title": "The Institute of History and Philology and its Bulletin",
+      "detail": "Modern research on Chinese historical phonology and dialects is institutionalised alongside the vernacular movement.",
+      "people": "Luo Changpei, Li Fanggui, Zhao Yuanren"
+    },
+    {
+      "year": 1915,
+      "title": "Étude sur l'ancienne phonétique chinoise",
+      "detail": "Karlgren brings the comparative method to the rhyme tables and reconstructions of old and middle Chinese follow.",
+      "people": "Bernhard Karlgren"
+    },
+    {
+      "year": 1933,
+      "title": "Language",
+      "detail": "Bloomfield's distributional method sets the standard for two decades of American work, and trains a generation of Chinese linguists.",
+      "people": "Leonard Bloomfield"
+    },
+    {
+      "year": 1939,
+      "title": "Principles of Phonology",
+      "detail": "The Prague School account of the phoneme, opposition and markedness gives phonology its structural apparatus.",
+      "people": "Nikolai Trubetzkoy"
+    },
+    {
+      "year": 1957,
+      "title": "Syntactic Structures",
+      "detail": "Grammar is redefined as a generative device rather than a catalogue of inspected sentences, reshaping syntax and, within a decade, work on Chinese.",
+      "people": "Noam Chomsky"
+    },
+    {
+      "year": 1958,
+      "title": "Essential Grammar of Chinese and the pinyin scheme",
+      "detail": "Lu Shuxiang's grammar organises Chinese around constructions and semantic roles; that year the state promulgates Hanyu Pinyin.",
+      "people": "Lu Shuxiang; the Writing Reform Committee"
+    },
+    {
+      "year": 1962,
+      "title": "How to Do Things with Words",
+      "detail": "Austin's lectures publish the doctrine that saying is doing; pragmatics begins as a discipline with a name.",
+      "people": "J. L. Austin"
+    },
+    {
+      "year": 1975,
+      "title": "Logic and Conversation",
+      "detail": "Grice's implicature supplies a general model of how speakers mean more than they say and how hearers work it out.",
+      "people": "H. P. Grice"
+    },
+    {
+      "year": 1982,
+      "title": "Lectures on Chinese Grammar",
+      "detail": "Zhu Dexi reformulates subject, predicate, phrase and construction using distributional tests drawn from Chinese itself.",
+      "people": "Zhu Dexi"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mashi Wentong (《马氏文通》)",
+      "author": "Ma Jianzhong",
+      "year": 1898,
+      "note": "The first systematic grammar of classical Chinese."
+    },
+    {
+      "title": "Course in General Linguistics",
+      "author": "F. de Saussure",
+      "year": 1916,
+      "note": "Sign, value, synchrony: the founding text of structuralism."
+    },
+    {
+      "title": "An Essay on the Phonology of the Chinese Languages",
+      "author": "Luo Changpei",
+      "year": 1940,
+      "note": "Chinese historical phonology argued with both the rhyme tradition and the comparative method."
+    },
+    {
+      "title": "Essential Grammar of Chinese (《中国文法要略》)",
+      "author": "Lü Shuxiang",
+      "year": 1942,
+      "note": "Construction and meaning in Chinese, written as a comparative grammar."
+    },
+    {
+      "title": "Syntactic Structures",
+      "author": "Noam Chomsky",
+      "year": 1957,
+      "note": "Grammar as a generative device, not a catalogue."
+    },
+    {
+      "title": "Spoken Chinese (《汉语口语》)",
+      "author": "Zhao Yuanren",
+      "year": 1948,
+      "note": "Descriptions of living spoken Chinese by its finest analyst."
+    },
+    {
+      "title": "Lectures on Chinese Grammar (《语法讲义》)",
+      "author": "Zhu Dexi",
+      "year": 1982,
+      "note": "Distributional tests applied to Chinese, in Chinese."
+    },
+    {
+      "title": "Elements of General Linguistics",
+      "author": "H. Hock (or: Xu Degong, Introduction to Linguistics)",
+      "year": 1988,
+      "note": "The standard Chinese textbook through which most readers meet the discipline."
+    }
+  ],
   "next": [
     "dialects",
     "history-of-chinese"
