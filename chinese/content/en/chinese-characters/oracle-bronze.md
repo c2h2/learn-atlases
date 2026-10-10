@@ -1,0 +1,155 @@
+---
+title: Oracle-bone and bronze inscriptions
+---
+
+At the previous stop we said “成熟汉字只能讲到甲骨为止” ('A mature Chinese character can be discussed only as far back as the oracle bones.') (Our translation.) — and this chapter drives the spade down into the two largest deposits: the turtle shells and animal bones of Yinxu 殷墟, and the cast inscriptions on the ranked *ding* and *pan* of the Western Zhou. They are not the same kind of thing. Oracle bones are an archive **drilled in order to question the spirits**; bronze is a monument **cast in order to hand on to sons and grandsons**. The scribes of the two, their tools, their carriers and their purposes, all differ, and so the character of the graphs differs too. When you have finished this chapter you should be able to recognise the temper of the graphs in each of the two materials, to see what every symbol means in a transcription of one oracle-bone plate and in a transcription of one bronze text, and to know the rules of the craft of decipherment — which graphs are ironclad cases, which are conjectures, and which people have talked a conjecture into a hit.
+
+## Oracle bones: graphs on the divination line
+
+::: definition Oracle bones and oracle-bone studies {#def-jiagu}
+**Oracle bones** are the turtle shells and animal bones (chiefly ox scapulae) used for royal divination in the late Shang (about 1300–1046 BC). They were worked beforehand (pared, ground, drilled and chiselled); when the occasion came they were **scorched**, so that the back split into omen-cracks; the king and the diviners judged good or ill fortune from the cracks; and afterwards the course of that divination was incised on the bone (a minority were written first and incised afterwards) — the inscribed preface, charge, prognostication, verification and ordinal numbers, that is, the **divination inscriptions**. The basic training of oracle-bone studies includes identifying single graphs, dating (Dong Zuobin 董作宾 set up the **five-period theory** from the diviners' names and from styles of writing; later scholars have kept revising it by stratum, by the position of the pit, and by divination groups), and deciphering graphs not yet identified. Of the material already published, *Jiaguwen heji* 甲骨文合集 (*Collected Oracle-Bone Inscriptions*), *Jiaguwen heji bubian* 甲骨文合集补编 (*Supplement to the Collected Oracle-Bone Inscriptions*) and the like make up the bulk; works of cataloguing have run on, unbroken, for a hundred years.
+:::
+
+::: definition The line from working the bone to finishing the text {#def-gongyi}
+Oracle-bone divination had a fixed craft: choose the material (turtle plastrons first, ox scapulae next) — pare and grind it flat — **drill and chisel** the back (round chisel-hollows and strip-shaped drill-hollows alternating, set out in rows) — scorch it with fire, whereupon the front splits into omen-cracks in the shape of “卜” — the king and the diviners **read** the good or ill fortune of the omen-cracks — incise this divination beside the cracks, and mark the **ordinal numbers** (which divination it was; from the lie of the crack-stem the whole order of scorching and divining can be restored); if the outcome is later fulfilled, add a **verification**. This "working beforehand" is itself evidence for decipherment: the arrangement of the drilled and chiselled hollows fixes the order of the cracks, and a disordered crack-sequence often means a **rejoining** (several pieces of one ox shoulder, or the front and back of one turtle plastron). When newly excavated oracle bones are sorted today, the first step is still "find the neighbours and fit the frame"; recognising the graphs comes only second.
+:::
+
+::: theorem Four keys to decipherment {#rule-shidu}
+To identify an oracle-bone graph not yet known, pass four gates in order. (1) **Comparison of graphic form** — the surest are those in one line of descent with the forms of small seal script and of the ancient script (the class of 王, 牛, 日 and 月: ironclad cases). (2) **Mutual corroboration by formulaic context** — the same graph comes up again and again in fixed sentence-patterns of the sort “干支卜，某贞：旬亡祸” ('On the stem-and-branch day it was divined; So-and-so tested the charge: no harm in the ten-day week?') (Our translation.); position is grammar, and grammar fences in the word class. (3) **Reading against transmitted texts** — ancient graphs entered in the *Shuowen jiezi* (*Explaining Graphs and Analysing Characters*), genealogies in the *Records of the Grand Historian* and the like can be jointed to them (Wang Guowei 王国维 testing the genealogy of the Shang kings is the highest application of this method). (4) **Linking by graphic structure** — argue from the system of components: graphs with “水” mostly have to do with water; graphs with “玉” (two jades, one following the other) mostly have to do with jades. Only with all four keys in hand may one say “释曰” ('the reading is'); to use only one (a likeness of shape) is called “臆说” ('a fanciful account'). More than two thousand graphs are already identified; more than a thousand (mostly personal names, clan names and place names) are still in the dark.
+:::
+
+::: example How to read one divination inscription {#ex-buci-read}
+Read one divination inscription, rewritten to the common pattern: “癸卯卜，殻贞：旬亡祸？在四月。王占曰：有祟。五日丁未，□雨。” ('Divined on the day *guimao*: 殻 tested the charge: no harm in the ten-day week? In the fourth month. The king read the cracks and said: there is a curse. On the fifth day, *dingwei*, □ rain.') (Our translation.) — mark the constituents one by one, and say what this inscription can tell a researcher.
+::: solution
+Every piece has its place. “癸卯” is the preface (a stem-and-branch day, the day of the charge; what is asked is the good or ill fortune of the coming ten days, the “旬”, and so the day is often a *gui* day). “殻贞” is the diviner's name in the charge (殻 was a scribe in the time of Wu Ding 武丁; dating a single inscription depends on him, and on the group of diviners found with him in the same pit). “旬亡祸” is the charge (the sentence-pattern of the question). “在四月” is the month entry. “王占曰有祟” is the prognostication. “五日丁未雨” is the verification (cut in afterwards, once the outcome had been fulfilled). What it can give: a date (the diviner, plus the month); language (the negative pattern “亡祸”, and the stem-and-branch count of days); religious ideas (the spirit of the ten-day week, and the king's reading of the cracks); a weather record (rain verified for that day — one entry in the weather archive of Yinxu). This is what is meant by “一片卜辞是多重证据的压缩包” ('One divination inscription is a compressed packet of evidence of more than one kind.') (Our translation.)
+:::
+:::
+
+::: remark The graphic character of oracle bones
+Cut with a knife, and done in haste: the lines are thin and straight, the turns mostly squared (a rounded turn costs the knife), the graphs uneven in size, and upright or reversed, full or simple, left to chance (“羊” written right way up or upside down, solid forms and outline forms side by side; “涉” made of two “止” and one “水”, or of more than one “水”). This is the **freedom of writing by hand**, and it is the first fence a beginner at decipherment has to clear: one graph in many forms is the normal state, and a settled form waits for metal and stone, and for the character books. Remember one rule. Any judgement that “甲、乙两形其实是同一个字” ('form A and form B are in fact the same graph') must have evidence that they **substitute for each other in the same formula**, or that later forms descend in one line — it will not do to look only at “长得很像” ('they look very much alike').
+:::
+
+## Bronze inscriptions: a script left to descendants
+
+::: definition Bronze inscriptions and the cataloguing of auspicious bronzes {#def-jinwen}
+**Bronze inscriptions** are the inscriptions on Shang and Zhou bronzes (“吉金”, 'auspicious metal', is a fine name for the metal). Inscriptions on Shang vessels are short (a clan emblem, the name of the person who had the vessel made); inscriptions on Zhou vessels are long, and record appointments, campaigns, gifts and lawsuits. First in number of graphs is the late Western Zhou **Mao Gong *ding*** 毛公鼎, four hundred and ninety-seven graphs, a full text in the manner of a proclamation and an oath. The study of cataloguing was opened by men of the Song (*Kaogu tu* 考古图, *Illustrated Catalogue of Antiquities*; *Xuanhe bogu tu* 宣和博古图, *Xuanhe Illustrated Catalogue of Antiquities*; Xue Shanggong 薛尚功, *Lidai zhongding yiqi kuanshi fatie* 历代钟鼎彝器款识法帖, *A Model Book of Inscriptions on Bells, Tripods and Ritual Vessels through the Ages*). After the Daoguang and Xianfeng reigns of the Qing it was drawn together (Ruan Yuan 阮元, *Jiguzhai zhongding yiqi kuanshi* 积古斋钟鼎彝器款识, *Inscriptions on Bells, Tripods and Ritual Vessels of the Studio for Accumulating Antiquities*, and the scholarship on form and sound of Wu Dacheng 吴大澂, Sun Yirang 孙诒让 and others). In modern times *Sandai jijin wencun* 三代吉金文存 (*Extant Inscriptions on Auspicious Bronzes of the Three Dynasties*), *Yin Zhou jinwen jicheng* 殷周金文集成 (*Collected Bronze Inscriptions of Yin and Zhou*) and the character book *Jinwen bian* 金文编 (*A Compilation of Bronze Graphs*) are the great repositories. The craft of a cast inscription: the model is cut on the mould in reversed writing, the moulds are joined and the metal poured, so the graphs are **round and thick**, a different face from the lean hardness of oracle bones cut with a knife. After the Spring and Autumn period there are incised inscriptions as well.
+:::
+
+::: theorem Three things to watch in reading bronze inscriptions {#rule-jinwen-du}
+(1) **Stock phrases in context.** Bronze inscriptions are highly formulaic — “隹（唯）九月” ('It was the ninth month.'), “王若曰” ('The king spoke to this effect.'), “用作朕皇考某公宝尊鼎” ('I thereby make, for my august deceased father Duke So-and-so, this precious honoured *ding*.'), “子子孙孙万年永宝用” ('May sons and grandsons, for ten thousand years, forever treasure and use it.') (Our translation.) Read the stock phrases through, and the skeleton of the whole piece shows itself. This is a "map of sentence-patterns", and it is not the same as reading oracle bones. (2) **Phonetic loans lie thick.** In Old Chinese, a loan between words close in sound is the ordinary case (“福” written as “畐”; “万” written as “万”, a loan of the graph in the shape of a scorpion; and each of the graphs in “对扬王休” has its own dispute over which graph is the proper one). Half the realm of bronze inscriptions lies in **sound**. Without Old Chinese phonology ([[phonology/mc-initials]] and above), one can only look at an inscription and sigh. (3) **How vessel and inscription belong together.** The vessels of one and the same royal generation have to be fitted into a "chronological table". Date one vessel wrong, and a continuous reading falls into disorder throughout. A "genealogy of the bronze inscriptions" is a collective work. A single person who, interpreting on his own, finishes a monument of a thousand years is, in the history of the field, told only as a joke.
+:::
+
+::: widget plot
+f: if(x < 1, 6, if(x < 2, 100, 300))
+x: 0, 3
+y: 0, 520
+labels: 单篇铭文平均体量的抬升（商·西周早期·西周晚期）
+caption: A sketch of inscriptions "climbing in length": Shang vessels are mostly clan emblems and makers' names of a few graphs (now and then one of twenty or thirty words); by the early Western Zhou there is already a format of a hundred graphs (one vessel differing a little from another); by the late Western Zhou they are full texts of proclamation and oath — the Mao Gong *ding*, at four hundred and ninety-seven graphs, stands at the top (the figure does not draw a line run on past the peak). How to read the figure: the "length" of bronze inscriptions is a product of **the rites, music and administration of the Zhou** — what had to be said (an appointment, a gift, a lawsuit) decided how many graphs there were. Length is itself evidence for the history of institutions ([[chinese-characters/characters-and-culture]] again).
+:::
+
+::: example One decipherment: the matter of “辰” and “农” {#ex-chen}
+The oracle-bone form of “辰” is said by some to be the shape of a scorpion, and by others the shape of a 蜃 (a tilling implement). It is the phonetic component (phonophore) of graphs of the class of “农” and “秾”. Judge how far this thread can be followed.
+::: solution
+The safe way. The two accounts of the original form of 辰 stand side by side (the shape of an insect, or the shape of a tool), and neither can be insisted on. The graphs it ties together as a **phonetic component** (农, 秾 and the like) are read, in Old Chinese, in the same rhyme group, and they are material one may use for "an archaeology of phonetic components" (set out in [[chinese-characters/phonetic-compounds]]). If one goes on to say “辰就是犁，故汉字见证原始农业” ('辰 simply is a plough, and therefore Chinese characters bear witness to primitive agriculture.') (Our translation.), one has stepped past the set of three and into imagination. The iron rule, when the ancient script is used to prove history: **graphic evidence may be signed only when it is corroborated in a triangle with archaeology and with texts** (Wang Guowei's "method of dual evidence" is the floor, not the ceiling). This question shows the measure of "go as far as you can, and let that be as far as it goes".
+:::
+:::
+
+::: warning Three abuses of material from underground
+The first is **reading culture off a shape**. One sees that “武” is made from 止 and 戈, and at once argues “中国人尚和” ('the Chinese esteem harmony') (Our translation.); one sees a single “女” inside “安”, and at once argues about marriage customs in high antiquity. The rationale of the structure (the rationale at the time the graph was made) is not a report of a social survey taken when the graph was made. Many components are only distinguishing symbols ([[chinese-characters/six-categories]]). The second is **putting a thing in the wrong age**. To take the small-seal forms, late in date, on which the *Shuowen jiezi* rests, and to turn them round so as to "correct" a reading of oracle bones or bronzes, or to decide “古人本义” ('the original meaning for the ancients') from the modern shape of a graph, is in either case to irrigate the upstream field with downstream water. The third is **forged historical material**. On the market in rubbings, nine in ten “甲骨” and “骨刻文” are fakes (the dispute over whether the so-called “骨刻文” are genuine has gone on for many years). "New material" that has not been seen in a scientific excavation and in a proper catalogue is, in every case, to be treated as a storytelling session.
+:::
+
+::: remark The "handwriting" problem in bronze inscriptions
+A bronze inscription was written first, and only then put on the mould. A Shang or Zhou scribe either wrote with the brush on the clay mould (reversed, waiting to be cast), or the writing passed through copying and re-cutting; and so the round turns and the thick, full places in bronze script often keep the **intent of the brush**. The solid blobs at the heads of “子” and “牛” (the so-called “肥笔”, 'thickened strokes') are fossils of the trace of a writing brush; while damage and flaking of the ornament, and shrinkage in the cast, add a random distortion to every text. Out of this comes a discipline, "the history of how script styles developed": take the vessels that have a coordinate in time, and set in order the sequence in which graphic form and style of writing change (the form of a single graph can be auxiliary evidence for a date, just as in identifying a hand), checking it against the chronological tables, each corroborating the other. When you read a rubbing of a bronze inscription, what you see is at once the "graph", the "hand in the graph", and the "craft of the hand" — three layers, one on another, which is exactly why the history of calligraphy and the study of the script share one and the same heap of material (set out in [[chinese-characters/seal-to-regular]]; for the cultural side of the graph, see [[chinese-characters/characters-and-culture]]).
+:::
+
+::: quiz
+That the graphs of the oracle bones are “正反繁简不拘” ('free as to upright or reversed, full or simple') shows ( ).
+- [ ] People of the Shang wrote as they pleased, and had no norms
+- [x] The system of graphs was already stable enough not to depend on detail, and only then did the writer have freedom of form
+- [ ] The oracle-bone script was not yet mature
+- [ ] Those are variant forms of different graphs, and must not be confused
+::: solution
+This is one dialectic in the study of the script: **only when the large system is stable are the small forms free** (the relation today between printed type and handwriting is of the same kind; "script style and graphic form" in [[chinese-characters/strokes-radicals]] will be taken up again).
+:::
+:::
+
+::: quiz
+The place of the “毛公鼎” in the history of the study of the script is fixed by two things. They are ( ).
+- [ ] The earliest in date, and the most beautiful in calligraphy
+- [x] The longest inscription (four hundred and ninety-seven graphs), and one of the anchor vessels of the late Western Zhou chronological tables
+- [ ] The earliest to be unearthed, and the most fully catalogued
+- [ ] The most graphs preserved, and a decipherment no longer in dispute
+::: solution
+"The longest" gives the genre, and the kind of writing, the standing of a solitary case; "an anchor of the chronological tables" gives the study of dating its coordinate ([[#rule-jinwen-du]], the third point). The earliest? The oracle-bone script is earlier. No longer in dispute? An account on which bronze inscriptions are undisputed hardly exists.
+:::
+:::
+
+::: history
+The childhood of oracle-bone studies came with a legend of its own. In 1899 Wang Yirong 王懿荣 recognised “龙骨” ('dragon bones') as antiquities, and the learning moved at once from the apothecary's shop into the study and the field. Over the twenty years that followed, Luo Zhenyu 罗振玉 tracked the place of finding to Yinxu at Anyang and deciphered the predynastic lords of the Shang; Wang Guowei tested the genealogy of the 'Annals of Yin' (*Yin benji*) against the divination inscriptions, and the two matched almost as the halves of a tally. "Material on paper" and "material from underground" took one another's fingerprints for the first time, and from this the historical profession laid down the house rule of the "method of dual evidence" (*Gushi xinzheng* 古史新证, *New Evidence on Ancient History*). From 1928 the Academia Sinica excavated Yinxu fifteen times. The YH127 pit in 1936, and the tomb of Fu Hao 妇好 in 1976, turned oracle bones from "curios" into "an archive lying in an archaeological stratum". After the 1950s the oracle bones of Xiaotun South 小屯南地, of Huayuanzhuang East 花园庄东 and of Zhouyuan 周原 carried the catalogues on. On the side of bronze inscriptions, from the Song *Kaogu tu* to the *Yin Zhou jinwen jicheng*, and from Wu Dacheng's *Shuowen guzhou bu* 说文古籀补 (*A Supplement of Ancient and Zhou Graphs to the Shuowen*) to the *Jinwen bian*, generation after generation copied, collated and interpreted, and divided the vessels by period. The "hardness" of this learning is written, all of it, in the honest “未详” ('not yet explained') and “阙疑” ('doubt left open') of the catalogues.
+:::
+
+## What comes next
+
+After oracle bones and bronze inscriptions comes the “隶变” (the clerical change) — graphic form moves from lines to strokes, and the age of the ancient script comes to an end ([[chinese-characters/seal-to-regular]]). Of the four keys to decipherment, the one that costs the most labour is "linking by graphic structure", and the theory of it is summed up in [[chinese-characters/six-categories]]. The tangle of bronze inscriptions with old pronunciation lies in [[phonology/mc-initials]] and in the section on Old Chinese. A suggestion for practice: find a *Jiaguwen changyongzi zidian* 甲骨文常用字字典 (*A Dictionary of Common Graphs in the Oracle-Bone Script*) and the *Jinwen bian*, and each day set ten examples side by side in a "diary of changes of form". After a month, your sense of "why a graph came to be written as it is now" will be entirely different.
+
+::: summary
+- Oracle bones = the royal archive of divination: working the bone — scorching it until it cracks — reading the cracks — incising the record (preface, charge, prognostication, verification). Dating rests on groups of diviners and on style of writing (the five-period theory).
+- Four keys to decipherment: comparison of forms, mutual corroboration by formulaic context, reading against texts, linking by graphic structure. Miss any one of them, and there is a risk of a fanciful account.
+- Oracle-bone graphs are "free" precisely because the system is stable. One graph in many forms is the normal state, and forms may be gathered together only on the evidence of formulaic context or of the system of graphs.
+- Bronze inscriptions = writing in the manner of a monument: a map of stock phrases, plus phonetic loans (sound), plus dating by chronological tables, a set of three. The Mao Gong *ding* is known for the longest inscription, and for its place in the chronological tables.
+- Three things forbidden with material from underground: reading culture off a shape, putting a thing in the wrong age, and forged material. "Dual evidence" is the floor.
+:::
+
+## Exercises
+
+::: exercise The longest inscription {level=1 check="497"}
+About how many graphs are there in the inscription of the Mao Gong *ding*? What part does it play in research on the dating of bronze inscriptions?
+::: solution
+Four hundred and ninety-seven graphs, the longest of the pre-Qin bronze inscriptions. It is at the same time one of the anchor vessels for the chronological tables of the late Western Zhou (the generation of King Xuan) and for the study of proclamation and oath as a kind of writing. Memorising "the longest" is worth less than memorising, together with it, the two things it is important for: a solitary case of a kind of writing, and a coordinate for dating.
+:::
+:::
+
+::: exercise Upright, reversed, right and wrong {level=1}
+Judge, and correct. (1) “甲骨文同一个字有正写反写，说明当时用字极不规范，释读只能靠猜。” ('One and the same oracle-bone graph is written upright and reversed, which shows that the use of graphs then was extremely irregular, and that decipherment can only depend on guessing.') (Our translation.) (2) “金文比甲骨文字形丰满，所以金文比甲骨文晚出。” ('Bronze graphs are fuller in form than oracle-bone graphs, so bronze script came later than the oracle-bone script.') (Our translation.) (3) “拓片里的缺字应据残笔与辞例补出，补不了就标注阙疑。” ('A missing graph in a rubbing should be supplied from the strokes that remain and from the formulaic context; if it cannot be supplied, mark it as doubt left open.') (Our translation.)
+::: solution
+(1) Wrong — freedom as to upright and reversed is precisely the sign of a stable system (see the remark "The graphic character of oracle bones"); decipherment relies on the four keys, not on guessing. (2) Wrong — a difference in the style of the script comes from the carrier and from the craft. Bronze inscriptions of the Shang and Zhou and the oracle bones **existed at the same time** (the Shang had both oracle bones and inscriptions on bronze); which came first has to be dated from the material, not from whether a graph is fat or thin. (3) Right — “阙疑” ('leaving a doubt open') is the professional ethic of a catalogue; to force a restoration is an accident of scholarship. For the mark: each of the three cases must cite one ground from the text of the lesson.
+:::
+:::
+
+::: exercise The procedure of decipherment {level=1}
+A newly excavated oracle bone has a graph made from “辵”, from “彳” and from “止” (schematic). The formulaic context is “王往至于□”. Write, in order, how each of the four keys is put to use, and give the grade of conclusion you are prepared to allow (ironclad case / received view / awaiting investigation).
+::: solution
+Comparison of forms: set the forms of the later graphs “徏”, “徂” and “往” into a comparison by line of descent (and so offer candidate graphs for what it properly is). Formulaic context: in “王往至于□”, the □ stands after “至于”, the word class is fenced in as a noun, and the probability that it is a place name is the highest. Texts: in the *Book of Songs* and the *Book of Documents*, the words “徂”, “适” and “格”, all of them words with the sense of “往” ('to go'), are matched against it in sound and in form (and so offer a hypothesis of the proper graph). Linking: graphs with “彳” and with “止” mostly have to do with going (supporting evidence). When the four grades of evidence are all present but do not point the same way, the conclusion can only be entered as “待考（倾向某）” ('awaiting investigation (leaning towards such-and-such)'). The mark for this question lies in **a complete procedure, plus a grade of conclusion that fits**, not in guessing one particular graph correctly.
+:::
+:::
+
+::: exercise A small case of dating {level=2}
+Divination inscriptions found together in the same pit belong to the diviner groups of “殻” and of “宾”, and the appellations include “父乙” and “母庚”. Using the five-period theory and the method of appellations, give this inscription a rough date, and state the limit of reliability of each method.
+::: solution
+Diviners in the same pit means colleagues of the same period (dating by group). Appellations of the type “父乙” and “母庚” limit the generation of the former kings who are sacrificed to (a coordinate of royal generation). Stack the two, and one may roughly date the piece to an interval of the sort “武丁世前后” ('about the generation of Wu Ding, before and after'). The limits: inside a diviner group there is continued use; appellations appear across groups; and if the position of the pit is disturbed, the method fails. Conclusions in the study of dating are mostly "an interval plus a probability", and when they are cited the margin of error has to be kept (which is also why a textbook writes "about 1300–1046 BC", and not one particular year).
+:::
+:::
+
+::: exercise The testimony of one bronze {level=2}
+Suppose a newly seen bronze, one piece: the inscription has “隹十又二月既生霸丁亥，王格于大室，荣赐贝十朋” ('It was the twelfth month, at the lunar phase 既生霸, on the day *dinghai*; the king arrived at the Great Chamber; Rong bestowed ten *peng* of cowries.') (Our translation.)? Draft it yourself in the stock phrases of an appointment, and you are told to date it. List the elements that can be used for dating (no fewer than five), and the norms for stating a conclusion.
+::: solution
+The list of elements: ① the calendrical date (royal year + the name of the month + the lunar phase “既生霸” + the stem and branch) — whether it can be taken into a chronological table that has royal generations, and whether it joins with vessels already known; ② official titles and the format of the appointment (“王格于大室” and phrases of that kind are the fingerprints of the grammar of a period); ③ the question of appellations and of posthumous titles (whether the title of a given king was already used in his lifetime); ④ graphic form and style of writing (set against the group of standard vessels, as an auxiliary line); ⑤ the shape of the vessel, its ornament, and the place of the inscription (an archaeological coordinate; the study of vessel types has a sequence of its own). The norms for stating it: give "an interval + a degree of confidence + the elements relied on", and set out the tie "if the dating of some vessel changes, this vessel moves with it". The dating of bronze inscriptions has always been a net in which pulling one vessel moves the whole, and a verdict on a single vessel, taken alone, is a layman's way of going on.
+:::
+:::
+
+::: exercise Telling a true rubbing from a false one {level=2}
+Some "rubbing of oracle-bone script" is for sale online. The divination inscription reads smoothly, the graphs are even, and the content includes “数字预测未来地震” ('numbers predicting a future earthquake'). List no fewer than four suspicious points, and give a procedure for deciding whether it is genuine.
+::: solution
+Examples of suspicious points: ① a modern notion of the “地震” ('earthquake') kind has no formulaic context in the divination inscriptions; ② the graphs are too even, with none of the chipping of a cut and none of the force of the knife; ③ the order of the cracks, the words by the cracks, and the layout of the drilling and chiselling do not agree with the procedure on a real object (the relation of the layers: scorched first, incised afterwards); ④ the source is not a scientific excavation, and there is no catalogue number; ⑤ the marks of artificial ageing do not agree with the ageing of the surface of the bone. The procedure: look in the catalogues for the same piece → ask an institution to examine the original (under the microscope, and the material) → compare what was found with it in the same pit. Forged pieces, for the most part, fail on the two counts of "too perfect" and "too modern".
+:::
+:::
+
+::: exercise A short essay {level=3}
+Write four hundred words on the topic “一片卜辞 vs 一篇尚书” ('one divination inscription versus one text of the *Book of Documents*'): Wang Guowei used the oracle bones to test the genealogy in the 'Annals of Yin', and it was “几若合符节” ('almost as the two halves of a tally fit') (Our translation.). Where do the excitement of this sentence, and its limit, each lie? You must use the "method of dual evidence", and at least one concrete link (for example the matching of the names and titles of the predynastic lords and the former kings, or a well-known discrepancy in which some one place in the succession does not agree).
+::: hint
+You may consult: the text of the general argument in *Gushi xinzheng*; a table setting the oracle-bone script against the genealogy in the 'Annals of Yin' (every textbook of general history has one; pick one, and see where it "fits without a gap" and where it "departs a little").
+:::
+::: solution
+A line the answer may follow. The excitement is this: the list of Shang kings from legend, for the first time, comes back as a continuous string in an underground archive of an **independent source**, and ancient history from then on has something that can be tested. The limit is this: what fits the tally is "the names and titles, and the rough order"; the detail of the succession already differs (the generational order of the predynastic lords and the former kings, and particular names and titles, differ as between the transmitted texts and the divination inscriptions, and scholars have already set them right). The divination inscriptions are, besides, an archive of divination, not made for the writing of history, and in using them to "prove history" one must take care not to read a religious record as if it were a chronicle. The conclusion ought to come down on a consciousness of method. Dual evidence is not “印证癖” ('a mania for corroboration'); it is **cross-collation** — only where two sources of different origin hold one another in check is it to be called history one can trust.
+:::
+:::
