@@ -7,9 +7,22 @@
   "order": 140,
   "tagline": "What literature is, literature and society, the creative process, the levels of a literary work, narrative, lyric, drama, genre and style, reading and interpretation, and the schools of modern theory",
   "summary": "Literary theory asks what literature is, how it is made, how a work is built and how readers make sense of it. This course introduces those questions through both the Chinese and the Western traditions: literature’s relation to society and to the writer, the levels of a literary work, the theory of narrative, lyric and drama, genre and style, the reader’s part in interpretation, and a map of the main twentieth-century schools from formalism to cultural studies.",
-  "overview": [],
+  "overview": [
+    "An entry course to thinking about literature: what counts as literature, what it does to societies and to readers, and what the work itself is made of.",
+    "It moves along three axes—the text (levels, genre, style), the utterance (creation, narrative, lyric, drama) and the reception (interpretation, schools)—so that a reader can locate any critical sentence inside one coherent map.",
+    "Chinese and Western materials are braided throughout: from Wenxin Diaolong and the schools of shifen and xiaopin to mimesis, formalism and postcolonialism, ending with an honest inventory of what theory can and cannot do for reading."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "State and test the classical definitions of literature (mimesis, expression, form, institution) against concrete cases",
+    "Explain the major models of the literary circuit—world, work, author, reader—and their signature blind spots",
+    "Analyse a narrative by voice, focalisation and time; a lyric by persona and address; a drama by speech-act and staging",
+    "Distinguish genre and style claims from value judgments, and use both sets of vocabularies precisely",
+    "Summarise the core theses of Russian Formalism, New Criticism, structuralism, psychoanalytic, Marxist, feminist and postcolonial criticism",
+    "Evaluate interpretations by their own criteria rather than by taste, and defend a reading with textual evidence",
+    "Read classical Chinese criticism (shifen, bixing, xingling, shenyun) as theory, not as impressionism",
+    "Position one's own critical instincts within the map and name their assumptions"
+  ],
   "chapters": [
     {
       "slug": "what-is-literature",
@@ -91,8 +104,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 380,
+      "title": "Plato expels the poets",
+      "detail": "The Republic charges imitative poetry with feeding the passions and removing readers from truth; Western theorising begins as a prosecution.",
+      "people": "Plato"
+    },
+    {
+      "year": -335,
+      "title": "Aristotle replies with the Poetics",
+      "detail": "Mimesis is redefined as a universalising, plot-making activity; catharsis gives the defence verdict that launches two millennia of debate.",
+      "people": "Aristotle"
+    },
+    {
+      "year": 217,
+      "title": "Literature as great enterprise",
+      "detail": "Cao Pi's On Literature declares literature the great enterprise of governing the world, an endless undertaking—China's first autonomy claim for letters.",
+      "people": "Cao Pi"
+    },
+    {
+      "year": 501,
+      "title": "The literary mind and its articulations",
+      "detail": "Liu Xie's Wenxin Diaolong maps textual styles, genres, creativity and the problem of expression in one systematic work.",
+      "people": "Liu Xie"
+    },
+    {
+      "year": 1798,
+      "title": "Reflection replaces expression",
+      "detail": "Wordsworth and Coleridge's Lyrical Ballads turns criticism toward the poet's mind and ordinary speech; Romantic expressivism opens the modern era.",
+      "people": "Wordsworth, Coleridge"
+    },
+    {
+      "year": 1917,
+      "title": "Defamiliarisation",
+      "detail": "Shklovsky makes estrangement the purpose of art; Russian Formalism turns criticism into a science of devices.",
+      "people": "Shklovsky"
+    },
+    {
+      "year": 1953,
+      "title": "The intentional fallacy",
+      "detail": "Wimsatt and Beardsley, followed by Barthes's death of the author, evict the writer from the courtroom of meaning.",
+      "people": "Wimsatt, Beardsley; later Barthes"
+    },
+    {
+      "year": 1978,
+      "title": "Orientalism",
+      "detail": "Said shows scholarship as an apparatus of the imperial encounter; postcolonial criticism reframes the canon as world literature in conflict.",
+      "people": "Edward W. Said"
+    }
+  ],
+  "references": [
+    {
+      "title": "Republic, book X",
+      "author": "Plato",
+      "year": 380,
+      "note": "The prosecution text: poetry as thrice-removed imitation."
+    },
+    {
+      "title": "Poetics",
+      "author": "Aristotle",
+      "year": -335,
+      "note": "The defence text: plot, universals, catharsis."
+    },
+    {
+      "title": "On Literature (Dianlun)",
+      "author": "Cao Pi",
+      "year": 217,
+      "note": "Literature as the enterprise of state; the origins debate and stylistic temperaments."
+    },
+    {
+      "title": "Wenxin Diaolong",
+      "author": "Liu Xie",
+      "year": 501,
+      "note": "Systematic Chinese literary theory: origins, genre, creativity, style."
+    },
+    {
+      "title": "The Mirror and the Lamp",
+      "author": "M. H. Abrams",
+      "year": 1953,
+      "note": "The four coordinates and the history of theories of poetry."
+    },
+    {
+      "title": "Norton Anthology of Theory and Criticism",
+      "author": "Vincent B. Leitch, ed.",
+      "year": 2001,
+      "note": "Standard classroom archive from Plato to the present."
+    },
+    {
+      "title": "Renjian Cihua (Poetics of the World)",
+      "author": "Wang Guowei",
+      "year": 1908,
+      "note": "Jingjie and wujing; the quoted-redevised as a working method."
+    },
+    {
+      "title": "The Location of Culture",
+      "author": "Homi K. Bhabha",
+      "year": 1994,
+      "note": "Hybridity and the third space; late postcolonial theory."
+    }
+  ],
   "next": [
     "modern-literature",
     "world-literature",
