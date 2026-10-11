@@ -75,7 +75,6 @@ To licence is to register: a protest that has been registered henceforth has an 
 Without it, reticence is merely inarticulacy; with it, inarticulacy becomes a grade.
 :::
 :::
-:::
 
 ::: quiz This lesson's attitude to the commonplace "Confucian and Daoist complement each other" is that ( ).
 - [ ] It is wholly correct
