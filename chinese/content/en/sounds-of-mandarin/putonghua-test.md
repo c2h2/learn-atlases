@@ -1,5 +1,5 @@
 ---
-title: Reading aloud and the Putonghua Proficiency Test
+title: "Reading aloud and the Putonghua Proficiency Test"
 ---
 
 The Putonghua Proficiency Test (PSC) is one of the largest language-standardisation examinations in the world. Since it was established in 1994, teachers, announcers, civil servants and ten million students in school have walked into the examination room and converted everything in the first eight sections of this chapter into a mark sheet on a scale of one hundred. For that reason it is also the best 'end-of-term simulator': each of the four main items checks one layer of the skill — monosyllables check the foundation of initials, finals and tones; word groups check whether the neutral tone, rhotacisation (*erhua*) and tone sandhi have become automatic; reading a passage aloud checks pausing and linking, and intonation, in connected speech; speaking on a set topic checks whether, once one is off the script, a dialect accent will 'come back'. This chapter sets the test out as a revision map one can follow and carry out, and along the way teaches you the craft of reading aloud itself.

@@ -1,5 +1,5 @@
 ---
-title: Oracle-bone and bronze inscriptions
+title: "Oracle-bone and bronze inscriptions"
 ---
 
 At the previous stop we said “成熟汉字只能讲到甲骨为止” ('A mature Chinese character can be discussed only as far back as the oracle bones.') (Our translation.) — and this chapter drives the spade down into the two largest deposits: the turtle shells and animal bones of Yinxu 殷墟, and the cast inscriptions on the ranked *ding* and *pan* of the Western Zhou. They are not the same kind of thing. Oracle bones are an archive **drilled in order to question the spirits**; bronze is a monument **cast in order to hand on to sons and grandsons**. The scribes of the two, their tools, their carriers and their purposes, all differ, and so the character of the graphs differs too. When you have finished this chapter you should be able to recognise the temper of the graphs in each of the two materials, to see what every symbol means in a transcription of one oracle-bone plate and in a transcription of one bronze text, and to know the rules of the craft of decipherment — which graphs are ironclad cases, which are conjectures, and which people have talked a conjecture into a hit.

@@ -1,5 +1,5 @@
 ---
-title: The nature of speech sounds
+title: "The nature of speech sounds"
 ---
 
 Say “妈（mā）” once, and you have already done three things that usually cannot be stated clearly until one has studied as far as a university department of Chinese. Physically, the vocal folds vibrate periodically, and produce a sound wave that an instrument can record. Physiologically, the lungs send air out under control, the vocal folds come together and vibrate, the tongue body lies flat, the lips open, and the passage through the nasal cavity is closed. Socially, from the inventory of the sounds of Chinese we have picked out this one sound, [ma⁵⁵], and not [ma⁵¹] (骂), and not [ma³⁵] (麻). The first two things belong to the sounds of every language; only the third — selection, convention, and the distinguishing of meaning — belongs peculiarly to speech sounds. This course sets out from here: what the sound system of Putonghua (standard Mandarin) actually is, how the sounds are produced, how they are heard and told apart, and how they distinguish meaning. Native speakers can already do all of this, yet almost no one can say it; to **say** it is the whole of the work of this lesson.

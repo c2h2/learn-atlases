@@ -1,5 +1,5 @@
 ---
-title: Tone sandhi, the neutral tone and erhua
+title: "Tone sandhi, the neutral tone and erhua"
 ---
 
 The dictionary says that 你好 is two third (dipping) tones (nǐ hǎo), yet your mouth has never read it that way — what comes out of its own accord is ní hǎo. Tone sandhi, the neutral tone and rhotacisation (*erhua*) are three side doors that connected speech opens onto the tone system: the sound of a character on its own is the system's file, and only continuous connected speech is the site where the system actually runs. This chapter says the rules of the three doors right through to the end: when third tones stand next to each other, which of them rises; what tone 一 and 不 change to; how sentence-final 啊 changes its face with the sound before it; which syllables grow light enough to lose their tone; and how 儿 shrinks from an affix into a single retroflex gesture on the final. Every one of them is grammar that is **systematic, obligatory, and of the kind teaching does not confer — present even with no teaching at all**: you can do it, but you cannot say it; this chapter says it for you to hear.

@@ -1,5 +1,5 @@
 ---
-title: Writing and language
+title: "Writing and language"
 ---
 
 You may be able to write five thousand Chinese characters (sinograms), and still never have seen what they look like when they are at work. This chapter does not discuss the history of any one character. It discusses the device that is the 'character' itself: what writing is, which layer of language it records, why Chinese characters alone have never come apart through three thousand years of violent sound change, and which word is wrong in the sentence everyone can say, 'Chinese characters record meaning, the Latin alphabet records sound.' A theory lesson? No — this is the very foundation you will be standing on later, when you learn the six categories (*liushu*), tell traditional characters from simplified ones, and wrestle with input methods.

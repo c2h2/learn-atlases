@@ -1,5 +1,5 @@
 ---
-title: Initials
+title: "Initials"
 ---
 
 To read the three characters 的, 哥 and 可 correctly, a foreigner must first learn three things: they are voiceless; they are unaspirated, or else strongly aspirated; and what their tongue root meets is the soft palate. These three pieces of information are exactly what any textbook of Putonghua (standard Mandarin) assumes you "know by nature" — because you are a native speaker, and your ear had this system installed long before you could speak. The task of this chapter is to take what has been installed and pull it apart: the 21 initials of Putonghua (plus the "zero initial"), the two coordinates of every articulatory gesture — place and manner — and why these two coordinates should happen to be just these. When you have finished this chapter, you should be able to give the "file" of any initial (for example ch: back-apical, aspirated, voiceless, affricate), to say which feature you are dropping when you cannot hear a difference, and to set the initials of your dialect against this table, one for one.
