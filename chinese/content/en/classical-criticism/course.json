@@ -7,12 +7,25 @@
   "order": 270,
   "tagline": "Poetry expresses intent, Confucian and Daoist views of literature, Cao Pi and Lu Ji, *The Literary Mind and the Carving of Dragons*, Zhong Rong’s *Grades of Poets*, Tang and Song poetry talks, Yan Yu and Chan, the criticism of fiction and drama, Ming and Qing theories of poetry, and Wang Guowei",
   "summary": "China has a long tradition of thinking about literature, set down in prefaces, treatises, letters and “poetry talks” rather than in systematic theory. This course reads its key texts and concepts: poetry as the expression of intent, the Confucian and Daoist views, Cao Pi’s *Discourse on Literature* and Lu Ji’s *Rhapsody on Literature*, Liu Xie’s *The Literary Mind and the Carving of Dragons*, Zhong Rong, the Tang and Song poetry talks, Yan Yu, the criticism of fiction and drama, and Wang Guowei’s idea of *jingjie*.",
-  "overview": [],
+  "overview": [
+    "Chinese literary criticism did not begin by asking what literature is. It began by asking what a poem does to a listener, what it says about the age, and whether a given line is fit to be remembered. This course follows that practical tradition from a three-character formula in an early text to a 1908 essay written in the shape of the lyric it analyses.",
+    "We read the canonical arguments in their own terms: poetry as the articulation of intent; the Confucian accounting of verse against government; the Daoist suspicion of language; the sudden turn in the third century when criticism began to describe craft - how a writer chooses, why a piece fails, what difficulty is worth having.",
+    "Then the great architectural works and their rivals: a systematic theory with a taxonomy of genres, a grading of poets with reasons, the Song invention of the informal notes on poetry, and a Southern Song book that borrowed religious vocabulary to say that a poem should not be explainable.",
+    "The last third deals with fiction and drama, whose critics had to invent categories because the tradition refused them legitimacy, and with the Ming-Qing schools whose quarrels - antiquarian modelling, spirit and resonance, individual temperament, learned texture - still structure how Chinese poetry is taught. We end with Wang Guowei, who read German aesthetics and wrote it back in the language of the ci."
+  ],
   "prerequisites": [
     "literary-theory",
     "classical-chinese-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain the earliest uses of the formula 'poetry expresses intent' and what work the formula was doing in its own period.",
+    "Summarise Confucian and Daoist arguments about language and value, and state what each makes criticism responsible for.",
+    "Analyse the third-century turn towards craft in Cao Pi and Lu Ji, and identify the new questions they opened.",
+    "Describe the architecture of the Wenxin Diaolong and the argumentative form of the Shipin.",
+    "Explain what a poetry-talk is as a genre, and what its form allows that a treatise does not.",
+    "Characterise the Ming-Qing critical vocabulary (spirit and resonance, temperament, texture, the innate and the learnt) and use it to read a poem.",
+    "Assess the import of European aesthetic terms in the late nineteenth and early twentieth centuries, and what was gained and lost in translation."
+  ],
   "chapters": [
     {
       "slug": "poetry-expresses-intent",
@@ -97,8 +110,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": -600,
+      "title": "A three-character programme",
+      "detail": "An early text puts forward the formula later read as 'poetry articulates intent', together with a ladder from feeling to song; it becomes the axis around which two millennia of argument is organised.",
+      "people": "Classical custodians of odes"
+    },
+    {
+      "year": 150,
+      "title": "A preface that became a constitution",
+      "detail": "A transmitted preface to the Odes links individual emotion to moral instruction and to the state's observation of popular feeling; for a thousand years its wording was treated as doctrine.",
+      "people": "The Mao school of the Odes"
+    },
+    {
+      "year": 220,
+      "title": "Writing as a matter of character",
+      "detail": "An essay among the first of its kind ranks writers, insists that genre has its own temper, and famously calls writing the great enterprise of unending affairs.",
+      "people": "Cao Pi"
+    },
+    {
+      "year": 501,
+      "title": "A theory with load-bearing walls",
+      "detail": "A systematic work derives letters from the classics, analyses style against time, and closes with an author's self-account of the labor of composition.",
+      "people": "Liu Xie"
+    },
+    {
+      "year": 1070,
+      "title": "The invention of the notes",
+      "detail": "A retired official begins jotting anecdotes, judgments and puzzles about lines of verse; the loose form becomes the standard vehicle of Chinese critical thought.",
+      "people": "Ouyang Xiu"
+    },
+    {
+      "year": 1230,
+      "title": "Comparison borrowed from religion",
+      "detail": "A critical treatise argues by grades of achievement and borrows terms from religious practice to insist that a poem's excellence cannot be delivered by explanation.",
+      "people": "Yan Yu"
+    },
+    {
+      "year": 1640,
+      "title": "A critic with a pen and a margin",
+      "detail": "A critic re-edits and annotates a playscript and a novel, supplying reading instructions, structural divisions and a claim that vernacular fiction deserves the older analytical vocabulary.",
+      "people": "Jin Shengtan and his circle"
+    },
+    {
+      "year": 1908,
+      "title": "A treatise in the old form",
+      "detail": "A young scholar publishes notes on lyrics that introduce borrowed aesthetic distinctions while keeping the aphoristic manner of the tradition they begin to end.",
+      "people": "Wang Guowei"
+    }
+  ],
+  "references": [
+    {
+      "title": "Great Preface to the Odes",
+      "author": "Mao tradition",
+      "year": 150,
+      "note": "Read as the earliest compact theory of the social use of verse."
+    },
+    {
+      "title": "On Discourse / Essays on Literature",
+      "author": "Cao Pi",
+      "year": 220,
+      "note": "The starting point of genre criticism and of criticism of contemporary writers."
+    },
+    {
+      "title": "The Art of Writing",
+      "author": "Lu Ji",
+      "year": 300,
+      "note": "A fu-poem on composition: difficulty, choice and the anxieties of making."
+    },
+    {
+      "title": "The Literary Mind and the Carving of Dragons",
+      "author": "Liu Xie",
+      "year": 501,
+      "note": "The indispensable systematic work; read the sections on style and on time together."
+    },
+    {
+      "title": "Grades of Poets",
+      "author": "Zhong Rong",
+      "year": 520,
+      "note": "Ranking with reasons, and one of the earliest defences of direct emotional writing."
+    },
+    {
+      "title": "Twenty-Four Categories of Poetic Power",
+      "author": "attributed to Sikong Tu",
+      "year": 900,
+      "note": "Influence far larger than its authorship, which remains debated."
+    },
+    {
+      "title": "Canglang's Talks on Poetry",
+      "author": "Yan Yu",
+      "year": 1230,
+      "note": "The most quoted and most misunderstood book of native criticism."
+    },
+    {
+      "title": "Remarks on Song Lyrics",
+      "author": "Wang Guowei",
+      "year": 1908,
+      "note": "The hinge text: old form, new questions."
+    }
+  ],
   "next": [
     "academic-writing"
   ]

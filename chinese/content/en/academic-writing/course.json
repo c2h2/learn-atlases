@@ -7,11 +7,24 @@
   "order": 280,
   "tagline": "What research is, choosing a topic, finding literature, reading and notes, the literature review, structure and argument, citation and references, academic integrity, the language of scholarship, and the thesis and its defence",
   "summary": "A thesis in Chinese language or literature asks a question that has not yet been answered, places it among earlier work and answers it with evidence. This course covers choosing a topic, searching databases such as CNKI, reading and taking notes, writing a literature review, structuring the argument of a paper, citing according to the national standard, academic integrity, the language of scholarship, and writing and defending a graduation thesis.",
-  "overview": [],
+  "overview": [
+    "This course is about writing that other people can check. That single requirement explains almost all of its customs: the citation, the definition, the concession, the limitations section, the dull prose. A claim that can be verified by a stranger is the basic unit of scholarship, and everything else is scaffolding.",
+    "We start with what counts as a research question - one that could be answered differently, and for which someone could name the material that would settle it. Then the machinery: searching, reading, note-taking as an auditable practice, and the literature review, which is not a summary of what has been said but a map of what has been agreed, disputed, and left unasked.",
+    "Half the course is structure and language: how a scholarly paragraph is built, how to hedge proportionally to your evidence, how to concede without losing the point, and how to write a limitations section that is neither an apology nor a concealment.",
+    "The last chapters are about the rules that carry sanctions: citation systems, the taxonomies of misconduct, the difference between carelessness and fabrication, and the defence - the oral exam in which your written argument has to survive being questioned by someone who has read it."
+  ],
   "prerequisites": [
     "argumentative-writing"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "State a research question that is answerable, falsifiable in practice, and small enough for the material you can actually reach.",
+    "Search systematically: choose databases and keywords, record what you searched and what you excluded, and keep a reproducible trail.",
+    "Take notes in a form that lets a stranger audit your claims a year later.",
+    "Write a literature review organised by argument rather than by author, and end it with the gap your work addresses.",
+    "Structure an article so that each section performs one function, and build paragraphs as claim, warrant, evidence, qualification.",
+    "Use hedging proportional to evidence, and distinguish what your material shows from what you infer.",
+    "Apply a citation standard, explain the categories of misconduct, and defend a thesis orally against objections you did not anticipate."
+  ],
   "chapters": [
     {
       "slug": "what-is-research",
@@ -95,8 +108,107 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": -350,
+      "title": "An inventory of argument",
+      "detail": "A Greek treatise sorts the kinds of reasoning, the places where arguments come from, and the emotions a speaker may use - the first lasting vocabulary for justifying a claim.",
+      "people": "Aristotle and the commentators"
+    },
+    {
+      "year": 1200,
+      "title": "The disputed question",
+      "detail": "Medieval schools develop a fixed procedure for handling an open question: state the question, list objections, answer, reply to each objection; students still learn its shape without knowing its origin.",
+      "people": "University masters"
+    },
+    {
+      "year": 1440,
+      "title": "A forgery proved by language",
+      "detail": "A scholar shows that a celebrated charter must be late, using the anachronisms of its Latin; philology becomes a tool of evidence rather than of erudition.",
+      "people": "Lorenzo Valla"
+    },
+    {
+      "year": 1620,
+      "title": "Against the idols of the mind",
+      "detail": "A philosophical work argues that inquiry must begin by cataloguing its own biases, and proposes induction from particulars as the alternative to syllogism.",
+      "people": "Francis Bacon"
+    },
+    {
+      "year": 1665,
+      "title": "The journal",
+      "detail": "The first periodicals for the publication of inquiries appear; priority, brevity and a dated record become properties of research.",
+      "people": "Early editors"
+    },
+    {
+      "year": 1810,
+      "title": "The seminar",
+      "title_note": "",
+      "detail": "A new university model joins research and teaching; students are trained by working on open problems under supervision, and the thesis becomes the credential.",
+      "people": "Humboldt and the Prussian reform"
+    },
+    {
+      "year": 1928,
+      "title": "Go and find the material",
+      "detail": "A research institute is founded with a programme that treats newly excavated documents, field records and objects as equal in standing to transmitted texts.",
+      "people": "Fu Sinian and the history-language institute"
+    },
+    {
+      "year": 2020,
+      "title": "Against counting only",
+      "detail": "Reform documents in several countries begin to restrict the use of publication counts and journal rankings as hiring criteria, after decades in which the metric became the objective.",
+      "people": "Education and research authorities"
+    }
+  ],
+  "references": [
+    {
+      "title": "How to Write a Thesis",
+      "author": "Umberto Eco",
+      "year": 1977,
+      "note": "Still the best account of the material crafts of scholarship: cards, files, and patience."
+    },
+    {
+      "title": "Writing for Social Scientists",
+      "author": "Howard S. Becker",
+      "year": 1986,
+      "note": "On writing anxiety as a social product; read before you draft your first article."
+    },
+    {
+      "title": "The Craft of Research",
+      "author": "Wayne C. Booth and others",
+      "year": 1995,
+      "note": "The claim-evidence-warrant frame in its most teachable form."
+    },
+    {
+      "title": "The Method of Chinese History",
+      "author": "Liang Qichao",
+      "year": 1921,
+      "note": "A foundational lecture course on evidence, error and the writing of history in modern China."
+    },
+    {
+      "title": "On the Investigation of Ancient Chinese History",
+      "author": "Gu Jiegang (ed.)",
+      "year": 1926,
+      "note": "A self-confessing preface that models how to show your reasoning and your doubts together."
+    },
+    {
+      "title": "The Literary Mind and the Carving of Dragons",
+      "author": "Liu Xie",
+      "year": 501,
+      "note": "Noted here for one thing: the oldest sustained analysis in Chinese of how arguments are built."
+    },
+    {
+      "title": "Information and Documentation: Rules for Diplomas and Patents (GB/T 7714)",
+      "author": "Standardisation Administration",
+      "year": 2015,
+      "note": "The national citation standard you will be required to follow; learn its two systems, not all of its examples."
+    },
+    {
+      "title": "Measures on Prevention and Handling of Academic Misconduct",
+      "author": "Ministry of Education",
+      "year": 2016,
+      "note": "Where the categories of misconduct acquire their institutional definitions."
+    }
+  ],
   "next": [
     "classical-criticism",
     "history-of-chinese"
