@@ -41,6 +41,25 @@ The English lesson has **exactly the same block structure** as the Chinese one:
   label `[[target|text]]` gets its `text` translated;
 - every `$…$` and `$$…$$` formula unchanged; tables keep their columns and rows.
 
+## Emphasis that survives the renderer
+
+CommonMark pairs `**` by a flanking rule, not by counting them: a `**` that sits between full-width
+punctuation and a Chinese or English letter can be unusable as an opener or a closer, and then the
+page prints the asterisks. The patterns that break are the same in both languages — `**通说：**中文`,
+or an English `(**standard account**; …)` where an earlier `**` has already been consumed as a
+closer — and the fix is to move the marker to a word boundary or to drop it, never to add another one
+somewhere else in the paragraph to "balance" it: pairs nest, so a marker added late re-bolds whatever
+lies between it and the previous stray. Check by rendering, not by counting:
+
+```sh
+php -r 'require "inc/bootstrap.php"; $d=new MdDoc("x/y","1",false); $l=$argv[1];
+  echo (md_render($l,$d))[0], "\n";' '**a (**b** c**'
+```
+
+Any `**` still visible in the HTML is one the reader will see. Removing markers never changes the
+text; adding or moving them can silently re-bold a sentence, so prefer removal and re-read the
+sentence afterwards.
+
 ## What is translated and what stays in Chinese
 
 | translate | keep in Chinese (with an English rendering where needed) |

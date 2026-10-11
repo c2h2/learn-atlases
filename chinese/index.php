@@ -11,7 +11,7 @@ page_head(site_name(), 'index');
   <section class="intro">
     <div>
       <h1 class="display"><?= h(site_name()) ?></h1>
-      <p class="lede"><?= h(t('A detailed, interactive course in Chinese language and literature, written for native speakers who grew up with the language — the curriculum of a university degree in Chinese (汉语言文学): characters and calligraphy, the sounds, words and grammar of modern Chinese, classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and clear writing and reasoning. This is a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.')) ?></p>
+      <p class="lede"><?= h(t('A detailed, interactive course in Chinese language and literature, written for native speakers who grew up with the language — the curriculum of a university degree in Chinese (汉语言文学): characters and calligraphy, the sounds, words and grammar of modern Chinese, classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and clear writing and reasoning. All 270 chapters are written in Chinese, and every chapter has an English version that mirrors its structure block for block.')) ?></p>
     </div>
     <dl class="tally">
       <div><dt><?= h(t('Courses')) ?></dt><dd><?= fmt_num($tot['courses']) ?></dd></div>

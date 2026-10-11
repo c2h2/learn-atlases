@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 /* Learn — landing page for the atlases under /learn (Maths, Physics, Electrical Engineering, LLM, Medicine, Peptide,
-   and the curriculum skeletons Chemistry, Computer Science, Biology, Mechanical & Aerospace, Economics & Finance, Earth & Climate, English, Chinese). Self-contained. */
+   and the curriculum skeletons Chemistry, Computer Science, Biology, Mechanical & Aerospace, Economics & Finance, Earth & Climate and English). Self-contained. */
 
 mb_internal_encoding('UTF-8');
 $q = $_GET['lang'] ?? null;
@@ -51,7 +51,7 @@ $T = [
     'English Language Atlas' => '英语图谱',
     'English for learners, especially Chinese speakers, from level A1 to C2: pronunciation, vocabulary and grammar, reading and writing up to academic papers, listening and speaking, the history and varieties of English, and English–Chinese translation. The curriculum is mapped out; the lessons are still to be written.' => '面向英语学习者、尤其是以中文为母语者的英语课程，从 A1 到 C2 级：语音、词汇与语法，直至学术论文的阅读与写作，听说，英语的历史与变体，以及英汉互译。课程体系已经规划好，课文尚待编写。',
     'Chinese Language and Literature Atlas' => '中国语言文学图谱',
-    'Chinese language and literature for native speakers, at the level of a university degree: characters and calligraphy, modern and classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and writing and reasoning. The curriculum is mapped out; the lessons are still to be written.' => '写给以中文为母语者的中国语言文学课程，相当于大学汉语言文学专业的水平：汉字与书法、现代汉语与古代汉语、从《诗经》到当代的中国文学、文学理论与外国文学，以及写作与思维。课程体系已经规划好，课文尚待编写。',
+    'Chinese language and literature for native speakers, at the level of a university degree: characters and calligraphy, modern and classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and writing and reasoning. All 270 chapters are written in Chinese, and every chapter has an English version that keeps the same figures, quizzes and exercises.' => '写给以中文为母语者的中国语言文学课程，相当于大学汉语言文学专业的水平：汉字与书法、现代汉语与古代汉语、从《诗经》到当代的中国文学、文学理论与外国文学，以及写作与思维。二百七十章课文均已用中文写成，每章另有保留同样图形、小测与练习的英文版本。',
 ];
 $t = fn(string $s): string => $zh ? ($T[$s] ?? $s) : $s;
 $h = fn(?string $s): string => htmlspecialchars((string)$s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
@@ -90,13 +90,20 @@ foreach (glob(__DIR__ . '/medicine/content/en/*/*.md') ?: [] as $f) {
 }
 // curriculum skeletons: courses and chapters are mapped out, the lessons are still to be written
 $sk = [];
-foreach (['llm', 'chemistry', 'cs', 'biology', 'mechanical', 'economics', 'earth', 'english', 'chinese'] as $dir) {
-    $src = $dir === 'chinese' ? 'zh' : 'en'; // the Chinese Atlas is written in Chinese first
+foreach (['llm', 'chemistry', 'cs', 'biology', 'mechanical', 'economics', 'earth', 'english'] as $dir) {
+    $src = 'en';
     $sk[$dir] = ['courses' => 0, 'chapters' => 0, 'written' => count(glob(__DIR__ . "/$dir/content/$src/*/*.md") ?: [])];
     foreach (glob(__DIR__ . "/$dir/content/en/*/course.json") ?: [] as $f) {
         $sk[$dir]['courses']++;
         $sk[$dir]['chapters'] += count(json_decode((string)file_get_contents($f), true)['chapters'] ?? []);
     }
+}
+// the Chinese Atlas is written in Chinese, and every chapter also has an English version
+$chCourses = count(glob(__DIR__ . '/chinese/content/zh/*/course.json') ?: []);
+$chChapters = count(glob(__DIR__ . '/chinese/content/zh/*/*.md') ?: []);
+$chFigures = 0;
+foreach (glob(__DIR__ . '/chinese/content/zh/*/*.md') ?: [] as $f) {
+    $chFigures += preg_match_all('/^:::\s*widget\b/m', (string)file_get_contents($f));
 }
 $skName = fn(string $name): string => $h($t($name)) . ($zh ? '<span class="sk">（' . $h($t('skeleton')) . '）</span>' : ' <span class="sk">(skeleton)</span>');
 $skStats = fn(string $dir): string => '<dl><div><dt>' . $sk[$dir]['courses'] . '</dt><dd>' . $h($t('courses')) . '</dd></div><div><dt>'
@@ -306,9 +313,9 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
         <?= $skDots([[186, 35], [186, 48], [162, 9], [162, 22], [162, 61], [138, 9], [138, 22], [138, 35], [114, 48], [114, 61]], 5.2) ?>
         <rect x="62" y="40" width="22" height="22" rx="2.5" style="fill:#d6457c"/><rect x="65.5" y="43.5" width="15" height="15" style="fill:none;stroke:#fff;stroke-width:1.2"/>
       </svg>
-      <h2><?= $skName('Chinese Language and Literature Atlas') ?></h2>
-      <p><?= $h($t('Chinese language and literature for native speakers, at the level of a university degree: characters and calligraphy, modern and classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and writing and reasoning. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
-      <?= $skStats('chinese') ?>
+      <h2><?= $h($t('Chinese Language and Literature Atlas')) ?></h2>
+      <p><?= $h($t('Chinese language and literature for native speakers, at the level of a university degree: characters and calligraphy, modern and classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and writing and reasoning. All 270 chapters are written in Chinese, and every chapter has an English version that keeps the same figures, quizzes and exercises.')) ?></p>
+      <dl><div><dt><?= $chCourses ?></dt><dd><?= $h($t('courses')) ?></dd></div><div><dt><?= $chChapters ?></dt><dd><?= $h($t('chapters')) ?></dd></div><div><dt><?= $chFigures ?></dt><dd><?= $h($t('interactive figures')) ?></dd></div></dl>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
   </div>

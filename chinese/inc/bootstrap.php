@@ -9,9 +9,10 @@ define('MA_CACHE', MA_DATA . '/cache');
 define('MA_RENDER_VERSION', 11);
 // Where readers report mistakes (the public repository's issue tracker).
 define('MA_ISSUES_URL', 'https://github.com/c2h2/learn-atlases/issues');
-/** Curriculum skeleton: the courses and chapters are mapped out and the lessons are still to be written.
- *  While true, the atlas says "skeleton" in its title. */
-define('MA_SKELETON', true);
+/** Curriculum skeleton: while true the atlas says "skeleton" in its title and lesson pages show a
+ *  "to be written" notice for chapters with no Chinese lesson. All 270 chapters are written, so this
+ *  is off; switch it on only if the atlas is ever republished before its lessons are complete. */
+define('MA_SKELETON', false);
 
 mb_internal_encoding('UTF-8');
 date_default_timezone_set('UTC');

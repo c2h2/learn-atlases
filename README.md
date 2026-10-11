@@ -25,7 +25,7 @@ lessons are still to be written. Each says "(skeleton)" in its title until it is
 | **[Economics and Finance Atlas](economics/)** (skeleton) | 25 courses and 220 chapters, for education only (not investment advice): micro- and macroeconomics, econometrics, game theory, finance, trade, development, and public and behavioural economics. |
 | **[Earth and Climate Science Atlas](earth/)** (skeleton) | 24 courses and 216 chapters: the Earth system, geology and geophysics, landscapes and water, the atmosphere, oceans and ice, Earth history and the climate system. |
 | **[English Language Atlas](english/)** (skeleton) | 26 courses and 251 chapters from CEFR level A1 to C2, for learners and especially Chinese speakers: pronunciation, vocabulary, grammar, reading, writing, listening and speaking, linguistics, the history and varieties of English, and English–Chinese translation. |
-| **[Chinese Language and Literature Atlas](chinese/)** (skeleton) | 28 courses and 270 chapters for native speakers, at the level of a university degree in Chinese: characters and calligraphy, modern Chinese, classical Chinese, literature from the *Book of Songs* to the present day, literary theory and world literature, and writing and reasoning. Written in Chinese first; the site opens in Chinese. |
+| **[Chinese Language and Literature Atlas](chinese/)** | 28 courses and 270 chapters for native speakers, at the level of a university degree in Chinese, every chapter written in Chinese with an English version: characters and calligraphy, modern Chinese, classical Chinese, literature from the *Book of Songs* to the present day, literary theory and world literature, and writing and reasoning. 264 interactive figures, 808 self-test questions and 905 exercises with solutions. Written in Chinese first; the site opens in Chinese. |
 
 All are plain PHP sites: no framework, no database, no build step needed to serve them, and every
 script, font and library is self-hosted. The thirteen course atlases share one lesson engine (each keeps
@@ -63,8 +63,9 @@ physics/               Physics Atlas
 ee/                    Electrical Engineering Atlas (curriculum; lessons being written)
 medicine/              Medicine Atlas
 peptides/              Peptide Atlas
-llm/  chemistry/  cs/  biology/  mechanical/  economics/  earth/  english/  chinese/
-                       the nine skeleton atlases (curricula; lessons to be written)
+llm/  chemistry/  cs/  biology/  mechanical/  economics/  earth/  english/
+                       the eight skeleton atlases (curricula; lessons to be written)
+chinese/               Chinese Atlas — 中文图谱 (written in Chinese, mirrored in English)
 tools/                 mkatlas.py, which generates the skeleton atlases from the Maths engine, and their specs
 ```
 

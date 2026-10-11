@@ -8,12 +8,16 @@ and world literature, and clear writing and reasoning. It is **not** a course in
 foreign language. It runs on the same engine as [Maths Atlas](../maths/): plain PHP, no framework
 and no database.
 
-**Status: curriculum skeleton.** All 28 courses and 270 chapters are defined, in Chinese and in
-English, with taglines, summaries, chapter summaries and prerequisites. Lessons, course overviews,
-outcomes, history, references, the timeline and the figures of our own are still to be written;
-missing chapters show as "待编写" / "to be written". While `MA_SKELETON` is `true` in
-`inc/bootstrap.php` the site calls itself "中文图谱（框架）" / "Chinese Atlas (skeleton)"; switch it
-off once the lessons are written.
+**Status: written.** All 28 courses and 270 chapters exist in Chinese (`content/zh/`) and in English
+(`content/en/`), with course overviews, outcomes, histories and reference lists, the 32 spine
+milestones of `data/milestones.json` (266 events on the timeline once the course histories are
+merged) and the glossary of numbered statements. `MA_SKELETON` in `inc/bootstrap.php` is `false`, so
+the site calls itself 中文图谱 / Chinese Atlas and no page shows "待编写" / "to be written". The English
+lessons are mirrors rather than adaptations — the same blocks in the same order with the same anchors
+and the same figure settings, which `tools/check.php` enforces as an ERROR against the Chinese file
+(`tools/TRANSLATION_GUIDE_EN.md`); the warnings it still reports for `--lang=en` are the engine's
+English depth targets, which a faithful mirror of a lesson written to the Chinese targets cannot
+meet, and they are advisory.
 
 **Chinese first.** The spec sets `default_lang: "zh"`, so pages open in Chinese unless the reader's
 browser asks for English first or the reader picks English (the choice is kept in the cookie
@@ -107,9 +111,9 @@ node tools/labcheck.js [--lessons] [--zh]       # load figures and report errors
 node tools/shot.js "lesson.php?c=…&l=…" out.png # screenshot a page and report JavaScript errors
 ```
 
-`tools/check.php` lists every missing English lesson and empty course field as a warning; until the
-source-language option exists, the to-do list for this atlas is the set of chapters without a
-`content/zh/<course>/<chapter>.md`.
+`tools/check.php` reports markup errors, broken references and any divergence between a Chinese
+lesson and its English mirror as errors, and the depth targets, empty course fields and unwritten
+lessons as warnings; `--lang=zh` runs the same checks with Chinese thresholds and is clean.
 
 The engine in this directory is a generated copy of the Maths Atlas engine: re-run
 `python3 tools/mkatlas.py tools/atlas-specs/chinese.json` from the repository root to bring in
