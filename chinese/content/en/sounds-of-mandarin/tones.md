@@ -1,3 +1,7 @@
+---
+title: "Tones"
+---
+
 The four characters 宇宙洪荒 happen to have the tone values (pitch contours) 214, 51, 35 and 55 — third (上), fourth (去), second (阳) and first (阴), one contour type to each character, as if teaching aids had been prepared in advance for a lesson on tone. Tone is the layer on which Chinese differs most from other languages, and the one most easily left by native speakers in the state 日用而不知 ('used every day without being known'): you can use the four tones, and yet may be unable to say clearly whether "the third tone really does fall and then rise", or "why someone hears your tone wrong and yet hears your stress right". This chapter puts tone on file: what it is (a contour of pitch), how it is recorded (the five-level notation), which ones Putonghua (standard Mandarin) has (the four tones, plus the neutral tone), what it governs (distinguishing meaning), and how it and the intonation of the sentence coexist.
 
 ## Tone is a contour of pitch

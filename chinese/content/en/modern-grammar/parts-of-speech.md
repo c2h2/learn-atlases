@@ -1,5 +1,5 @@
 ---
-title: "Content words"
+title: "Parts of speech"
 ---
 
 Word classes are the first periodic table in the study of grammar — hydrogen, helium, lithium and boron line up readily, while carbon, nitrogen and oxygen come to blows. This lesson inventories the content words of Chinese against the delivery note of the “twelve classes” of pedagogical grammar, then surveys in particular three boundary lines: noun and verb, verb and adjective, and that “distinguishing word” which nobody is willing to take in.

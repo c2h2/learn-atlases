@@ -1,5 +1,5 @@
 ---
-title: "The Romantics"
+title: "Romanticism"
 ---
 
 In the previous chapter literature learned to hold a meeting; in this chapter it declares that holding a meeting strangles the soul — **and the sentence that matters most in this chapter is this: the Romantics' struggle against institutions ended in the founding of new institutions; today we call that set of institutions 'creation' and 'copyright'**.

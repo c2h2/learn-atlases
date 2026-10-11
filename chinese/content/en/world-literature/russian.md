@@ -1,5 +1,5 @@
 ---
-title: "Nineteenth-century Russian literature"
+title: "Russian literature"
 ---
 
 In the previous chapter the novel learned, in France, to conceal its view; in Russia in the same period, the novel wrote the view as a character — **this chapter's explanation is one sentence only: France had four public forums, Russia had only one and a half (periodicals and the theatre, plus half the church); when debate cannot hold a meeting, the claim (thesis) has to come on stage disguised as a role**.

@@ -1,5 +1,5 @@
 ---
-title: "The ten great kings of function words"
+title: "Function words"
 ---
 
 The grammar of Classical Chinese (Literary Chinese; *wenyan*) wears no morphological clothes, and depends entirely on function words to light the lamp. **之其而于为乃则者所以** — ten characters govern the greater part of the realm of syntax, logic and mood. This lesson gives one card to each king: the throne (word class), the territory (uses), the criterion (how to recognise one), and the mnemonic (how to translate).

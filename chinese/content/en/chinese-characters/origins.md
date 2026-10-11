@@ -1,3 +1,7 @@
+---
+title: "The origins of Chinese writing"
+---
+
 “仓颉四目，见鸟兽之迹而造字” — 'Cang Jie had four eyes; seeing the tracks of birds and beasts, he made writing.' (Our translation.) The story is a moving one, but the answer under the archaeologist's spade is older, and more piecemeal: the characters were not made by one person; they were slowly ground out by generations of people who kept accounts, who divined, and who cast tripods. This chapter settles three questions: on what grounds one says 'this is writing' and 'that is only a sign'; whether the Jiahu incised marks, the Liangzhu incised marks and the Chengziya pottery graphs each come up to the mark; and why textbooks throughout China agree that **a mature system of Chinese characters can, as things stand, be traced only as far as the oracle bones of three thousand years ago** — and, for the 'childhood' of about a thousand years before that, where the evidence is, and where it is missing.
 
 ## Criteria of judgement: when a 'picture' becomes writing

@@ -1,3 +1,7 @@
+---
+title: "From seal script to regular script"
+---
+
 Set an oracle-bone 為 beside the regular-script 为: above, the hand that leads an elephant; below, only four strokes left, a horizontal-turning hook and dots. What happened across the three thousand years in between has a technical name, **the clerical change** — a "pulling the house down and rebuilding it" in the age of the ancient script, and the stretch of engineering history this lesson most needs to fix in the mind. This chapter makes clear what each of the four scripts in common use is (seal, clerical, cursive and regular), which came before which, why they changed, and, after the change, the fatal question: **why the places where today's characters "cannot be given a coherent rationale" lie, for the most part, on the knife-cut of the clerical change.**
 
 ## Script names: know the tiles before you play

@@ -1,5 +1,5 @@
 ---
-title: "Regular script and the eight principles of 永"
+title: "Regular script"
 ---
 
 Regular script (*kaishu* 楷书; also "standard script") is the **legal tender** among the five scripts: recognising characters depends on it, copybooks write it first, examinations and door plaques supply it — and it is also the script most easily written into **tracing a printed form**. This chapter puts "true script" back into the shape it originally had: **a system of movements with a mechanics of force**, the teaching aid still the single character 永.

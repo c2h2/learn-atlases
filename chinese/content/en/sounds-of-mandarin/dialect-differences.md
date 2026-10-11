@@ -1,3 +1,7 @@
+---
+title: "Putonghua and the dialects"
+---
+
 The same character “人”: a Beijinger says rén［ʐən³⁵］, a person from Chengdu says something close to ［zən²¹］, a person from Wenzhou says something close to ［nan³¹］ — three pronunciations for three ears, and yet all of them are Chinese. The gap between the dialects and Putonghua (standard Mandarin) is not a disorderly mass of ‘mistakes’, but **a neat set-for-set correspondence**: the initials have the initials' way of merging, the finals have the finals' way of being brought together, and the tone categories have the tone categories' table of displacements. The whole of the learning of correction is built on that neatness: first find out which sounds of Putonghua your dialect has ‘merged’, and where it has merged them, then change them in batches by the rules of correspondence — ten times faster than rote memorisation, one character at a time, and ten times more secure. This chapter teaches you to give yourself one ‘dialect-accent check-up’, and to issue a first prescription for standard pronunciation.
 
 ## Why a dialect accent is a ‘system’ and not a ‘collection of errors’

@@ -1,5 +1,5 @@
 ---
-title: "The *Zuo Tradition*"
+title: "Narrative in the *Zuo Zhuan*"
 ---
 
 The previous chapter drew the archive; this chapter enters the theatre: five hundred and forty years of rise and fall are written as a long work with shot division, with foreshadowing, and with the characters speaking for themselves — Han Yu 韩愈 said “《春秋》谨严，《左氏》浮夸” ('The *Spring and Autumn Annals* are strict and tight; the *Zuo* is florid and extravagant.' (Our translation.)), and this 'florid extravagance' is precisely the victory of narrative.

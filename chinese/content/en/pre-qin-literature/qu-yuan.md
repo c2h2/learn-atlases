@@ -1,5 +1,5 @@
 ---
-title: "Qu Yuan"
+title: "Qu Yuan and the *Li Sao*"
 ---
 
 Before him, the singers of the *Book of Songs* (*Classic of Poetry*, *Book of Odes*; *Shijing*) were mostly nameless; after him, Chinese poetry had its **first face**: a tall hat, a long sword, the haggard colour of one who paces and chants beside the marsh. Qu Yuan 屈原 wrote the "I" into the poem, and wrote his life outside the poem — *Encountering Sorrow* (*Li Sao*), in more than five hundred lines, is an autobiography, a political testament, and the birth certificate of romanticism in Chinese.

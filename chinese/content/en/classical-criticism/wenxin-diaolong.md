@@ -1,5 +1,5 @@
 ---
-title: "The Literary Mind and the Carving of Dragons"
+title: "*The Literary Mind and the Carving of Dragons*"
 ---
 
 The last two chapters were essays; this one is a book of fifty chapters — **its ambition was not to advance a thesis but to arrange everything a literate man of its day knew about writing into a catalogue with entries. This chapter says what the book achieved, and what completeness costs**.

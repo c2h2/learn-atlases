@@ -1,5 +1,5 @@
 ---
-title: "*The Story of the Western Wing*"
+title: "*The Western Chamber* and other playwrights"
 ---
 
 The end of the previous chapter said that the acoustic apparatus of the variety play (*zaju*) cannot handle "several people having an inner life at the same time"; this chapter writes the play that dismantles the apparatus from the inside — **the contribution of *The Story of the Western Wing* (*Romance of the Western Chamber*) is not that it wrote a pair of lovers, but that it rewrote *qíng* 情 ('feeling') from a state of mind into a qualification: from then on, Chinese narratives of love have one legislative clause: to have feeling is to have a ground**.

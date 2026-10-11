@@ -1,5 +1,5 @@
 ---
-title: "Phonetic loan characters and ancient and modern forms"
+title: "Phonetic loans and variant characters"
 ---
 
 “学而时习之，不亦**说**乎？” 'To learn and, at the due time, to practise it — is that not a **delight**?' (Our translation.) — in your mind you know that the character is 悦 ('delight'), but in your hand you suspect a misprint: **it is not a misprint**. The writing system of Classical Chinese (Literary Chinese; *wenyan*) was short of hands, and the standard characters were not yet fixed, so three regimes of "borrowed household registration" grew up: the phonetic loan (*tongjia*), ancient and modern forms of a word, and the variant form. Fail to tell them apart, and you cannot read the "wrong characters" of two thousand years ago.

@@ -1,5 +1,5 @@
 ---
-title: "Confucian and Daoist Views of Literature"
+title: "Confucian and Daoist views of literature"
 ---
 
 The previous chapter left one word behind: permission. This chapter names the two offices that issued licences — **Confucianism assigned literature a job, Daoism drew a boundary around language; for two thousand years Chinese criticism asked only two questions: what is literature for, and why must it concede that it cannot say everything**.

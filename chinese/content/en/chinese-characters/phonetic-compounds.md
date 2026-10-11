@@ -1,3 +1,7 @@
+---
+title: "Sound and meaning in characters"
+---
+
 'Reading one half' (读半边) is something teachers of Chinese have scolded for decades, yet linguists want to put in a fair word for it: **reading one half was, in the age of character-creation, basically accurate**; what is not accurate is three thousand years of sound change calling the account in. The phonetic component (phonophore) is a set of phonological archives buried in the system of Chinese characters — a person who can read it learns characters twice as fast, guesses an old pronunciation and is sure of it nine times out of ten, and even has an extra ear when memorising English onomatopoeia. This chapter does three things: it 'establishes title' for the phonetic component (on what ground it recorded this sound at the time), it 'opens a case' on what is 'not accurate' (a table of correspondences under the sound laws), and it draws the line for use (when one may read one half, and when reading one half is simply a wrong character).
 
 ## Establishing title for the phonetic component: what a phonetic series is

@@ -1,5 +1,5 @@
 ---
-title: "The *Qieyun* and the *Guangyun*"
+title: "The rhyme dictionaries"
 ---
 
 If *fanqie* spelling is the brick, the rhyme dictionary is the hall that has been venerated for two thousand years. The blueprint fixed by this "salon for judging sounds" in the Kaihuang years of the Sui was extended, under the two dynasties of the Tang and the Song, into the *Guangyun* 广韵 ('Expanded Rhymes'), and for the thirteen hundred years after that no one has been able to get round it — this lesson takes you into the hall: to see its frame clearly, and also to see clearly the dispute over its character.

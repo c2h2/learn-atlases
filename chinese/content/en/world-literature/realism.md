@@ -1,5 +1,5 @@
 ---
-title: "Realism and naturalism"
+title: "The realist novel"
 ---
 
 The people of the previous chapter demanded the infinite; the people of this chapter demand accounts — **but the first sentence of this chapter is a negation: realism is not a technique of 'describing things as they are', because no age has lacked people who describe things as they are; it is a declaration newly appeared, a public pledge of a contract between the novel and the real, and a political programme that was still being cited into the twentieth century**.

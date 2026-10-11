@@ -1,5 +1,5 @@
 ---
-title: "Zhong Rong's Grading the Poets"
+title: "Zhong Rong’s *Grades of Poets*"
 ---
 
 The last book refused to judge, because it was cataloguing a trade; this one does almost nothing else — **it puts the poets of five centuries into three grades and writes one sentence of reason for each man. The argument of the chapter: criticism became a discipline not when it produced definitions but when it adopted this refutable posture**.

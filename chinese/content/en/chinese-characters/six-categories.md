@@ -1,3 +1,7 @@
+---
+title: "The six categories"
+---
+
 Is 武, "from 止 and from 戈", a case of "止戈" ('halting the dagger-axe')? Is 忠 "中心" ('a heart in the centre')? — This is a way of splitting characters that anyone can manage, and it is also the afterglow, among ordinary people, of the analytical framework that Xu Shen 许慎 of the Eastern Han spent a lifetime putting in order. The six categories (*liushu*) — indicatives, pictographs, phono-semantic compounds (semantic-phonetic compounds), compound ideographs (associative compounds), *zhuanzhu* (mutually glossing characters; disputed) and phonetic loans (rebus) — are a "grammar" that Chinese linguists devised for the Chinese character. They have been in use for nearly two thousand years, and they are still, to this day, the common language of the compiling of dictionaries, the teaching of character recognition, and the explication of ancient scripts. What this chapter asks is not that the six definitions be recited, but that one learn **to use the framework and to know its boundaries**: which characters the six categories settle in a single move, which characters two thousand years of argument have not brought to a conclusion, and why the sentence "the six categories are methods of creating characters" is both right and wrong.
 
 ## The ledger of the six categories, and its origins

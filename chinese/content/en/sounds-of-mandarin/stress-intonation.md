@@ -1,3 +1,7 @@
+---
+title: "Stress, rhythm and intonation"
+---
+
 “我没说他拿了你的书。” ('I did not say that he took your book.' (Our translation.)) Move the stress in this sentence onto whichever word you will, and the meaning changes to that word's — move it onto “我” and you are making clear who the person concerned is; move it onto “书” and you are limiting the object. Six words sustain six sentences. Words have heavy and light; the sentence has pausing and linking; the whole sentence has an intonation of rise and fall. Tone governs the character; the set of three in this chapter governs all the music above the character. This chapter writes these 'designs one cannot see' out as rules and exercises one can work with, because they have two immediate uses: saying a thing clearly (stress misplaced is an accident of expression), and reading a piece of writing aloud so that it sounds well (reading aloud, and the third question of the test, depend on it entirely).
 
 ## Heavy and light in the word: the 'metronome' of Putonghua

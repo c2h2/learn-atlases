@@ -1,5 +1,5 @@
 ---
-title: "Languages within China"
+title: "Languages of the world and of China"
 ---
 
 The first nine chapters take Chinese as their object; this chapter pulls the lens back — **the languages within China do not belong to one family, nor do they share one script; and the hardest lesson of this chapter is not the classification table, but an admission at the level of definition: linguistics cannot draw, between "language" and "dialect" (*fangyan*; topolect), a line that is at once scientific and in keeping with people's intuition**.

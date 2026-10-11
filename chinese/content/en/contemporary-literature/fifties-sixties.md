@@ -1,5 +1,5 @@
 ---
-title: "Literature of the Seventeen Years"
+title: "Literature of the 1950s and 1960s"
 ---
 
 The previous course ended in 1949; this lesson has to begin from something earlier than 1949 — **in 1942 someone, in a cave dwelling, asked a question: the question of "for whom" (为什么人); for the thirty-seven years after that, almost every formal feature of Chinese literature was an answer given to that question, and an answer continually revised**.

@@ -1,5 +1,5 @@
 ---
-title: "Poetry Expresses Intent"
+title: "Poetry expresses intent"
 ---
 
 From here this course turns to what Chinese writers said about literature in their own words, and the first piece of evidence is three characters long — **诗言志, "poetry voices intent." The argument of this chapter is that Chinese literary criticism begins not with "how should one write" but with "who may say what, on poetry's authority"; its first chapter is therefore not aesthetics but a history of permission**.

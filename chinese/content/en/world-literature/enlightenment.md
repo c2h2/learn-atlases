@@ -1,5 +1,5 @@
 ---
-title: "Reason, the Enlightenment and the Rise of the Novel"
+title: "Classicism and the Enlightenment"
 ---
 
 In the previous chapter literature learned to defend itself; in this chapter it learned to hold meetings — **seventeenth-century France invented a thing that had not existed before: a standing body of review made up of the academy, the salon, the periodical and the auditorium; and the eighteenth century invented its successor: the public**.

@@ -1,5 +1,5 @@
 ---
-title: "Ming *chuanqi* and *The Peony Pavilion*"
+title: "Ming and Qing drama"
 ---
 
 The novel of the previous chapter swapped the hero for an accountant; this chapter lifts the camera back onto the stage — **Tang Xianzu's (汤显祖) contribution is not the celebration of love. It is to submit *qing* (*qíng* 情, 'feeling'; passion) as an actionable reason: thereafter, in Chinese narrative, 'I am willing' (我情愿) becomes for the first time an independent item of evidence; and the cost of that is written in *The Peach Blossom Fan*: when *qing* and the state lose their cases together, only one Daoist priest can declare the court adjourned**.

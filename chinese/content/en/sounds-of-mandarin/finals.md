@@ -1,3 +1,7 @@
+---
+title: "Finals"
+---
+
 The four everyday characters 姐, 略, 全 and 冬 are spelt jie, lue, quan and dong — and between the 'written form' of these four finals and the vowels actually pronounced there is a story at every point. The e in jie is in fact pronounced ê［ɛ］; the üe of lue hides a ü whose two dots are not written; the u of quan is round-mouth rather than closed; the o of dong is simply u with its face changed. The final is the stretch of the syllable that carries the most information: the medial it brings shows whether an initial can combine with it, the main vowel it brings shows whether the sound is bright, and the coda it brings shows whether a poem can rhyme. This chapter opens a three-layer file on the final — structure, category, and the four classes (*kaiqi hecuo*: open, even-teeth, closed and round-mouth) — and keeps apart two things that are constantly taken for one: the **final** (a constituent of the syllable) and the **rhyme** (a unit of poetic metre).
 
 ## The structure of the final: medial, nucleus and coda

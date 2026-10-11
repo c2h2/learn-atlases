@@ -1,5 +1,5 @@
 ---
-title: "Applications of historical phonology"
+title: "Phonology for readers"
 ---
 
 The examination does not test the *Qieyun*, but those who have memorised the *Qieyun* score at every turn. This lesson draws five prescriptions out of the instruments of the previous eight chapters: reading poetry, collating texts, explaining words, correcting pronunciation, and teaching Chinese — the floor of historical phonology's "applied finance".
