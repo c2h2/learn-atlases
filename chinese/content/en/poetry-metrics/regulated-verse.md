@@ -1,0 +1,105 @@
+---
+title: "Regulated verse"
+---
+
+The previous two chapters made the ruler (level and oblique tones; also called level and deflected) and the scales (rhyme). This chapter assembles the main unit: a machine of eight lines and fifty-six characters — the **regulated poem** (*lüshi*). Its blueprint is in fact only four lines of writing. **All the complexity comes from the arrangements and combinations of these four lines, and from a few exemption clauses that “must break the rules”.**
+
+## Four building blocks {#def-jimu}
+
+::: definition The four regulated lines and ‘opposition and adhesion’ {#def-siji}
+The whole foundation of the five-character line is four line-patterns: **①仄仄平平仄 ②平平仄仄平 ③平平平仄仄 ④仄仄仄平平** (the seven-character line = one foot of reversed tones added in front of each line: **a “shoe” with level and oblique swapped**, becoming ①'平平仄仄平平仄 ②'仄仄平平仄仄平 ③'仄仄平平平仄仄 ④'平平仄仄仄平平). The assembly of the eight lines obeys two mechanical laws. **‘Opposition’** (对) — within one couplet, the opening line and the answering line are opposite in level and oblique (the rise and fall inside the line: **a sentence such as 平仄仄仄平, which “stamps the rhythm to death”, is scrapped on the spot**). **‘Adhesion’** (粘) — the second character of the opening line of the next couplet is of the same tone-class as the second character of the answering line of the previous couplet, both level or both oblique (the join between couplets: **‘opposition’ makes the waves, and ‘adhesion’ lets the waves take up the relay — the two, alternating, are the profile of the road through a regulated poem**; look back at [[tang-literature/early-tang]], “the undulating road”). Four line-patterns multiplied by opposition and adhesion, enumerated to the end, yield **the four patterns of the five-character regulated poem (oblique-start / level-start × the first line rhymes / does not rhyme) and the four patterns of the seven-character regulated poem** — **the table is dead, and the derivation is alive: if you can derive the four patterns, you do not need to memorise sixteen formats**.
+:::
+
+::: definition The only grave offence: the lone level tone {#def-guping}
+Among the four regulated line-patterns, only a breach of the ②' kind (仄仄平平**仄**仄平), the kind in which “**a level tone is left all alone, pinched between oblique tones**”, has a name: the **lone level tone** (孤平). In the seven-character line it is “仄仄**仄**平仄仄平” (the third character ought to be level and is oblique, so that apart from the rhyme word only one level tone is left) — **the chief charge in recent-style poetry (regulated verse), named together with the “three level tones at the end of a line” (三平尾: three level tones used in a row at the end of the line, the fingerprint of ancient-style verse) as the two great taboos**. The moment the rule is clear, the mnemonic collapses at once: **“the first, third and fifth need not be fixed” is a lie of the folk-saying kind — the first, third and fifth are sometimes not fixed, and the third and fifth are often not fixed, but the third character of pattern ②' and the fifth character of pattern ③ (the position that rescues the lone level tone) are fixed more relentlessly than any of the others**. The lawful variations have a state catalogue: **① irregularity and compensation** (拗救) (rescue by the answering line / self-rescue within the line: a “should not be level” in one position is evened up by a “level supplied” in another — **metre is a bookkeeping system; debit and credit must be entered together**); **② specified formats** (“平平平仄仄” used as “平平仄平仄”, and the seven-character “仄仄平平平仄仄” used as “仄仄平平**仄平仄**”; **the Tang poets used them so often that they were recognised after the fact as lawful — an irregularity in common use simply is the orthodox form: try a case of breaching the constitution for the third time and it becomes a precedent**).
+:::
+
+::: example Scanning a whole poem: ‘Feelings Written on a Night of Travel’ {#ex-luye}
+Du Fu 杜甫: “**名岂文章著，官应老病休。星垂平野阔，月涌大江流。飘飘何所似，天地一沙鸥。**”
+
+How should a name be made by writings? Office, through age and illness, should end.
+Stars hang low, and the plain is vast; the moon surges, and the great river flows.
+Adrift and adrift, what am I like? In heaven and earth, one sand-gull.
+(Our translation.)
+
+Please ① mark level and oblique character by character (hints for the entering tone: 月, 阔, 一; “病” is a departing tone, not an entering tone — look it up yourself before you compare it with the answer); ② deduce which of the four patterns it belongs to, and verify opposition and adhesion; ③ check the rhyme group (休, 流, 鸥); ④ find where the parallelism is, and answer: **why this poem reads as “without a flaw, and yet an immense sorrow” — from the side of sound and metre, give one piece of evidence**.
+::: solution
+① **名岂文章著** = 平仄平平仄 (set against pattern ① “仄仄平平仄”; the first character is free to vary); **官应老病休** = 平平仄仄平; **星垂平野阔** = 平平平仄仄 (阔, entering); **月涌大江流** = 仄仄仄平平 (月, entering); **飘飘何所似** = 平平平仄仄; **天地一沙鸥** = 平仄仄平平 (一, entering). ② The opening line ends on an oblique tone, and the second character “岂” is oblique — **the oblique-start pattern in which the first line does not rhyme**; opposition: the level and oblique of the opening couplet are opposite ✓; adhesion: the second characters of “星垂” and “官应” are both level ✓ — the diagram of the machine is fully in order. ③ 休, 流 and 鸥 = **the eleventh You rhyme of the lower level tone (下平十一尤)**, one rhyme from start to finish ✓. ④ **The parallelism is in the jaw couplet (颔联; 星垂／月涌: nouns and verbs each in their proper places). For the neck couplet (颈联) of a five-character regulated poem (lines five and six), this poem uses flowing lines that are not parallel — the place of the parallelism may be elastic (a parallel opening couplet and a loose neck couplet is a usual pattern of Du Fu’s)**. Evidence for the sorrow in the sound and the metre: **the whole poem has no irregularity and no compensation, clean almost to the point of coldness — all five rhyme words are long vowels with a closing glide on -ou (悠, 流, 鸥: the mouth opens wide and then closes small, like long sighs swallowed back, one after another); in the syntax, the two verbs of “星垂／月涌” slam down on the third character (the drumbeat of level and oblique), while the “一” of “天地一沙鸥” is an entering tone — a space on the scale of the cosmos is drawn shut by one braking sound: the “flawlessness” of the metre is precisely the vessel of the sorrow (set beside the irregular fury of “感时花溅泪”, ‘Moved by the times, flowers splash tears.’ (Our translation.): both of Du Fu’s machines can be driven up to full marks)**.
+:::
+:::
+
+::: intuition Why the seven-character regulated poem matured latest {#int-qilv}
+The five-character regulated poem matured first, in the Early Tang; the seven-character regulated poem reached the summit only with Du Fu — **because every foot of the seven-character line has one further layer of freedom: the “fault-line in the way of reading”, four above and three below (in “晴川／历历——汉阳／樹”, ‘clear river / so distinct — Hanyang / trees’ (Our translation.), the pauses fight the grammatical grouping), needs a longer running-in**; **and still more because the information-slots of the seven-character line are wide: it can hold the syntax of prose and the tone of historical argument — function words (之, 于, 以, 其) squeezing into the cracks of the seven-character line are the start of the job of “以文为律” (‘taking prose as regulated verse’): trading the method of the brush for width**. Thus the seven-character regulated poem became **the hardest of the forms: eight lines and fifty-six characters, four couplets of which two are parallel, a fault-tolerance of zero — ‘Climbing High’ was advanced by Hu Yinglin 胡应麟 as “the first seven-character regulated poem, ancient or modern”**: the acclaim holds good before any prize citation does, and what it rests on is the pushing of parallelism to the limit at which all eight lines are parallel. And Cui Hao’s 崔颢 ‘Yellow Crane Tower’ — “**白雲千載空悠悠**” (‘White clouds, for a thousand years, drift emptily on and on.’ (Our translation.)), a blatant three level tones at the end of the line, the first half of the poem almost losing adhesion — **was nevertheless ranked by people of the Song as the first regulated poem of the Tang**. Read the two cases side by side, and a conclusion surfaces: **metre is a necessary condition, not a sufficient one; the standing of a famous piece can pardon a departure from the metre, but a departure from the metre has never ruined a famous piece — only because ‘Yellow Crane Tower’ came first is there a “policy of grace”, and the order cannot be reversed**.
+:::
+
+::: history The assembly history of one machine {#sec-zhuangpei}
+**500s** the four tones and eight ills of Yongming — **the blueprint roughly begun (the age of the taboo list)**; **700** Shen and Song (沈宋), “约句准篇” (‘regulating the line and fixing the piece to a standard’) — **the binary of level and oblique set as the mark, the five-character regulated poem formed first**; **720s** extended regulated verse (*pailü*) in vogue — **the examination hall and the matching of poems stretch the regulated poem out to several dozen rhymes: the limit test of the machine**; **740s—760s** Li Bai 李白 resists regulated form with ancient-style verse, and Wang Wei 王维 writes regulated verse to the point of “no technique” — **two routes: going round the machine vs making the machine invisible**; **760s—770s** Du Fu, “晚节渐于诗律细” (‘Late in life I have gradually grown precise in the metre of poetry.’ (Our translation.)) — **the seven-character regulated poem matures: the irregular form and the polished form on two tracks, a manual gearbox fitted to the machine**; **800s—900s** Li Shangyin 李商隐 brings dense allusion into the seven-character regulated poem — **the same gears, the load doubled**; **1000s** the Jiangxi school of poetry, “**换骨、点铁成金**” (‘changing the bone, and touching iron into gold’) — **reading Du Fu’s regulated verse as a store of parts that can be taken to pieces (a way of teaching: one poem, one tool)**; **Jin and Yuan** Yuan Haowen’s 元好问 *Lunshi sanshi shou* 论诗三十首 (‘Thirty Poems Discussing Poetry’) issues a brief for the defence of Li Shangyin’s recondite obscurity — **reception history issues a further supply of readers on behalf of the poet of dense allusion**; **Ming** Li Panlong 李攀龙 and his fellows copy the tones of the High Tang — **the metrical school turns the regulated poem into a copybook for tracing tones**; **Qing** Shen Deqian’s 沈德潜 *Tangshi biecai* 唐诗别裁 (‘A Discriminating Selection of Tang Poems’) and the theory of “**style and tone**” (*gediao* 格调), and **Wang Shizhen 王士禛, with his “study of the tones of level and oblique”, draws up the syllabus again** — criticism in the study of regulated verse reaches the peak of its reduction to handbooks; **today**, 120 years after the imperial examinations were abolished, **level and oblique go on governing in three forms, “poetry appreciation on the gaokao + the old-cadre style + the scoring standards for AI writing”** — **the machine has not retired; it has only changed to three new posts**.
+:::
+
+::: widget graph
+nodes: 律诗@0,3.0; 积木@-4.2,1.4; 刑法@-1.4,1.4; 扫描@1.4,1.4; 装配@4.2,1.4; 对粘公路@-4.2,0.0; 孤平与判例@-1.4,0.0; 无瑕疵之悲@1.4,0.0; 手动挡@4.2,0.0
+edges: 律诗>积木; 律诗>刑法; 律诗>扫描; 律诗>装配; 积木>对粘公路; 刑法>孤平与判例; 扫描>无瑕疵之悲; 装配>手动挡
+caption: Four building blocks, two mechanical laws, one penal code, and a machine to which Du Fu fitted a manual gearbox — plus a top graduate with three level tones at the end of the line.
+:::
+
+::: warning Four pitfalls of the regulated poem
+**Claiming an exemption from inspection by way of “the first, third and fifth need not be fixed”** (**that mnemonic fails entirely for pattern ②' (the position of the lone level tone) and for the positions that compensate an irregularity: memorise the four line-patterns first, and only then learn the exceptions; exceptions with no catalogue are an unauthorised side-path**); **the moment you see a departure from the metre, judging the piece a “spurious work”** (**‘Yellow Crane Tower’ has three level tones at the end of a line, and ‘Quiet Night Thoughts’ loses adhesion — the right of a famous piece to a pardon really does exist; but to turn it round and use a departure from the metre to prove that “Li Bai was free, and therefore I am free” is to take a medal for a pass**); **scanning only level and oblique, and not reading the pauses** (**in the seven-character line the foot of “four above and three below” often fights the grammatical grouping “two-two-three”: first divide the sentence by the grammar, then set it against the table of level and oblique — to misdivide a line is to misread the poem**); **ignoring the administrative structure of the “couplet”** (**opening, continuation, turn and closing are not mysticism: the four couplets of a regulated poem = introduction, two proofs, conclusion — parallelism is assigned to the middle two couplets precisely as the legacy, from official documents, of “the stage of producing evidence needs symmetry”**).
+:::
+
+::: quiz
+What the rule of ‘adhesion’ constrains is ( ).
+- [ ] The two lines within the same couplet
+- [x] The second characters of the opening line of the next couplet and of the answering line of the previous couplet
+- [ ] What lies between the rhyme words
+- [ ] The first line and the last line
+::: solution
+‘Opposition’ makes the waves; ‘adhesion’ lets the waves take up the relay — the profile of the road.
+:::
+:::
+
+::: quiz
+Which of the following is a “fingerprint of ancient-style verse” in recent-style poetry? ( )
+- [ ] Changing the rhyme midway
+- [x] Three level tones at the end of the line
+- [ ] Using a rhyme in an oblique tone
+- [ ] Parallelism that does not use function words
+::: solution
+Three level tones at the end of a line and the lone level tone are named together as the two great taboos: the former is the signature of ancient-style verse, the latter is a capital offence in the regulated form.
+:::
+:::
+
+::: quiz
+The problem, in the metre, with “白云千载空悠悠” in ‘Yellow Crane Tower’ is ( ).
+- [ ] A rhyme outside its group
+- [x] Three level tones at the end of the line, and a loss of adhesion before and after
+- [ ] A repeated rhyme
+- [ ] A lone level tone
+::: solution
+The famous line ranked by people of the Song as the first regulated poem of the Tang is precisely a departure from the metre: metre is a necessary condition, not a sufficient one.
+:::
+:::
+
+::: exercise Deriving the four patterns {level=1}
+Without a table, start from “仄仄平平仄” and, following opposition and adhesion, derive the complete eight-line skeletons of **the four patterns of the five-character regulated poem** (it is enough to mark the line-pattern numbers ①②③④). Then give each pattern, as an identity card, the **first line** of a five-character regulated poem you already know. For mutual marking: whose derivation has put ‘adhesion’ in the wrong place.
+::: solution
+Marking: **the chain of derivation is complete** (the rules: opposition = the lines of the same couplet oppose one another; adhesion = the second characters of neighbouring couplets are of the same tone-class; a sample answer — oblique start, the first line does not rhyme: ①④／③②／①④／③②; oblique start, the first line rhymes: ④②／③④／①②／③④; level start, the first line does not rhyme: ③②／①④／③②／①④; level start, the first line rhymes: ②④／③②／①④／③② — **the four patterns = an opening that starts oblique or starts level × whether or not the first line rhymes; two switches, and the enumeration stops there**); **the identity cards correspond** (“国破山河在”, ‘The state is broken, and the mountains and rivers remain.’ (Our translation.) = oblique start, the first line does not rhyme; “青山横北郭”, ‘Green hills lie across the northern wall.’ (Our translation.) = oblique start, the first line rhymes); extra marks for anyone who can discuss “why there is no fifth pattern” (opposition and adhesion squeeze the degrees of freedom out completely).
+:::
+:::
+
+::: exercise Choosing the rule for famous couplets {level=2}
+Du Fu’s “感时花溅泪，恨别鸟惊心” (‘Moved by the times, flowers splash tears; hating the parting, birds startle the heart.’ (Our translation.)) and “星垂平野阔，月涌大江流” (‘Stars hang low, and the plain is vast; the moon surges, and the great river flows.’ (Our translation.)): the former has all along been taken for “irregular fury”, the latter for “polished and steady”. Scan the level and oblique of each, **and point out whether the former has an irregularity, and where the compensation is**; then answer: **why one and the same poet needs two machines of sound and metre** (take the circumstances of the writing together: a spring spent trapped in Chang'an, against feelings while adrift on a boat at night).
+::: solution
+Marking: **the scan is correct** (“感时花溅泪” = 仄平平仄仄, matching the variant of “平平平仄仄” in which the first character is not fixed; “恨别鸟惊心” = 仄仄仄平平 (别, entering) — **it conforms**; the couplet of “星垂” wholly matches the orthodox pattern); the crux is the **conclusion**: part of what is called “irregular fury” is **an aural tension made by the twisting-together of syntax and meaning (flowers splash tears? birds startle the heart? subject and object out of their places), and it need not violate level and oblique — an “irregularity” can be read out of the line and need not be written into the metrical table**; the answer on the two machines: **the polished and steady is the vessel (drifting needs an order); irregular fury is the content (the sound at the place where order fails) — Du Fu’s greatness is in knowing which poem ought to use which machine**.
+:::
+:::
+
+::: exercise Short essay: metre is a protocol for collaboration {level=3}
+Write six hundred to a thousand characters, assessing the claim that “**the four-line blueprint of the regulated poem is the most bandwidth-saving protocol in the world: it standardises ‘pleasant to the ear’, and lets ten million examination candidates share one and the same pair of ears**”. You must draw on at least these four: **the four line-patterns, and opposition and adhesion**; **the taboo-function of the lone level tone and of three level tones at the end of a line**; **the settling of irregularity and compensation into precedent**; **the right of ‘Yellow Crane Tower’ to a pardon**. And answer: **will the protocol strangle innovation — rebut this with “a constraint is a generator” (give one example each from the sonnet, from five- and seven-character verse, and from the haiku), and then give one boundary that cannot be rebutted**.
+::: solution
+Marking points: the logic of the protocol (**level and oblique = a machine-readable standard for the ear: the provincial examination relies on it to mark scripts in batches, and poets rely on it to hear “skill and clumsiness” in one another — without a protocol, there is no comparable achievement of the kind “Du Fu’s regulated verse”**); the function of the taboos (**what the lone level tone prevents is a cave-in of the rhythm: level tones running out of food inside a line = the place to take a breath disappears — what the taboo protects is a physiological beat, not an authority**); the settling into precedent (**irregularity and compensation proves that the protocol has a supreme court: review of a breach of the constitution + case law = a living constitution**); the pardon (**a one-way pardon by status: it pardons only works that have already been canonised — “famous by departing from the metre” is survivorship bias; during the period of study, do not on any account imitate it**); the boundary (an honest answer, for example: **when the protocol has only a residual market left (the examinations have already been abolished), it no longer constrains most people who write — the “power to generate” of the regulated poem depends on rewards from institutions: a limit must be a limit that someone is keeping watch over**); if the conclusion can say “**innovation has always happened in the gaps of the protocol; the question is whether the gaps come first or the protocol — this lesson’s answer: what comes first is the ambition to be heard by ten million people**”, that is an A.
+:::
+:::
+
+::: summary
+Assembly of the machine is complete: four building blocks (**pairing them two by two + opposition and adhesion = the profile of the road**), a penal code (**the capital offence of the lone level tone, the fingerprint of three level tones at the end of a line, the case-book of irregularity and compensation**), a practical scan (**‘Feelings Written on a Night of Travel’, zero flaws + one stroke of the entering-tone brake**), and an assembly history (**the Yongming blueprint → Shen and Song setting the standard → Du Fu’s manual gearbox → re-employment today in three posts**). The method, in one sentence: **derive the blueprint first, and only then talk of exceptions; divide the sentence first, and only then set it against the table**. The next chapter is given to taking apart the joins between the parts the regulated poem treats most strictly: parallelism and the matched couplet.
+:::
