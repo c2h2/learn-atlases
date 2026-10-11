@@ -117,7 +117,7 @@
     },
     {
       "year": 1200,
-      "title": "The disputed question",
+      "title": "开放问题的程序",
       "detail": "Medieval schools develop a fixed procedure for handling an open question: state the question, list objections, answer, reply to each objection; students still learn its shape without knowing its origin.",
       "people": "University masters"
     },
@@ -142,7 +142,6 @@
     {
       "year": 1810,
       "title": "The seminar",
-      "title_note": "",
       "detail": "A new university model joins research and teaching; students are trained by working on open problems under supervision, and the thesis becomes the credential.",
       "people": "Humboldt and the Prussian reform"
     },
