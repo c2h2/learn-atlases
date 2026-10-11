@@ -107,8 +107,8 @@ Which comes first, a tool of the *Dictionary of Near-synonyms in Modern Chinese*
 ::: solution
 Points for marking: the writer can point out that the three kinds of user do not need the same thing (a native speaker wants prompts on collocation and pragmatics; a learner wants a bank of example sentences and warnings of errors; the training of a model relies on distribution rather than on definitions); the sememe-table example and the frame example are the writer's own and are not mistaken; a layered position is given on "a difference that cannot be marked" (what can be marked but has not been ≠ a false difference; pragmatic knowledge that cannot, in principle, be listed exhaustively ≠ the dictionary failing in its duty — a division of labour between the tool and the discipline); concepts are not mixed (marks are deducted from anyone who takes 标记性, 'markedness', for 标注, 'annotation').
 :::
-:::
 
 ::: summary
 Absolute synonymy is rare, and near-synonymy comes in groups: a synonym group takes the core word as its anchor, and differences unfold along three axes — sememes (range / light and heavy / collective and individual), colouring (affective feeling / register / image), and use (collocational frame and distribution); the three axes are the columns under which a dictionary of discriminations is written. Antonymy divides into four types, complementary, gradable, converse and directional; that the **positive term of gradable antonymy is unmarked** (多高, 多长, 'how tall', 'how long') is the most serviceable finding. Semantic fields let each word go to its own shelf: superordinate and subordinate (白菜—蔬菜), coordinates of the same kind, and whole and part; gaps and multiple values inside a field explain variation by dialect and variation through time. Two thousand years, from the mutual glossing of the *Erya* to co-occurrence in the corpus: "the difference is on the speaker" — the end of discrimination is not the definition, but the use.
+:::
 :::
