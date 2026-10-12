@@ -77,7 +77,7 @@ as **规则 / Rule** and **解释 / Explanation**, and the index of numbered sta
 - English versions: `tools/TRANSLATION_GUIDE_EN.md` (what is translated, classical quotations,
   romanisation, standard English titles, dynasties, and a term table).
 
-Engine work to do before the first lessons:
+Engine work still outstanding (every lesson is written; these are engine limits the content works around):
 
 - **Chinese as the source language.** The engine still treats English as the source.
   `tools/check.php` applies the depth targets, the summary and history checks and the
