@@ -7,12 +7,28 @@
   "order": 170,
   "tagline": "Climate statistics, the global energy budget, the greenhouse effect, radiative forcing, feedbacks and sensitivity, heat transport, water and carbon in the climate system, natural variability",
   "summary": "Climate is the statistics of weather, set by the flow of energy through the atmosphere, ocean, land and ice. This course builds the physics of climate: the global energy budget and the greenhouse effect, radiative forcing, feedbacks and climate sensitivity, the transport of heat by atmosphere and ocean, the water and carbon cycles as parts of the climate system, and natural variability from El Niño to volcanic eruptions.",
-  "overview": [],
+  "overview": [
+    "The climate system is the physical machine behind the climate. Where the earth-system course asks what the planet is made of and how its parts exchange matter, this course asks a narrower and more quantitative question: given the sunlight that arrives, what sets the temperature, the rainfall and the winds we actually get — and by how much does that temperature move when we change the composition of the air? The answer decomposes into four pieces that structure the course: the energy budget that sets the total, the radiation physics that decides where in the atmosphere the heat is deposited, the feedbacks that amplify or damp any perturbation, and the variability that hides the signal inside noise.",
+    "Two ideas carry most of the weight. The first is the **energy budget**: the Earth absorbs $240\\ \\mathrm{W\\,m^{-2}}$ of sunlight and must emit the same as infrared, so a change of one per cent in either term is a climate change. The second is **radiative forcing**, the standard yardstick for comparing causes: the watts per square metre by which a perturbation — doubled carbon dioxide, a volcanic aerosol layer, a change in land use, the eleven-year solar cycle — shifts the top-of-atmosphere balance, evaluated with stratospheric temperature adjusted and everything else held fixed. Forcing alone does not give warming; you must then multiply by the Planck response and run the feedbacks, and the whole of climate-sensitivity science lives in that multiplication.",
+    "The course is deliberately built around arithmetic that you can do in your head. A carbon-dioxide doubling is $3.7\\ \\mathrm{W\\,m^{-2}}$; the blackbody response to that is about $1.1\\ \\mathrm{K}$; the assessed feedbacks roughly triple it; the ocean then delays the answer by decades and hides nine tenths of the heat. From those four numbers you can derive most of what the assessment reports say, and you can tell immediately when a claim is inconsistent with them. Every chapter therefore carries worked numbers, and the exercises are calculations rather than essays.",
+    "Two cautions run throughout. First, the climate is a distribution and not a number: the statistics of what we measure, and of what we have not measured, is the subject of the first chapter, because the signal is smaller than the noise and is extracted rather than read off. Second, the system has memory and teleconnections, so a given forcing produces a different surface warming depending on where the ocean puts the heat that decade — which is what the chapters on variability, heat transport and the carbon sinks are about."
+  ],
   "prerequisites": [
     "atmospheric-dynamics",
     "oceanography"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define a climate normal, an anomaly and a climate standard deviation, and explain why global means are computed from anomalies.",
+    "Estimate the standard error of a trend in an autocorrelated series and state why trends over windows shorter than about twenty-five years carry little information.",
+    "Construct the global energy budget at the top of the atmosphere and at the surface, and account for every term in $\\mathrm{W\\,m^{-2}}$.",
+    "Explain emission height, the atmospheric window and the observed spectral fingerprint of increasing greenhouse gases, and rebut the saturation argument.",
+    "Compute the radiative forcing of a change in a greenhouse gas, aerosol burden or land albedo, and rank the anthropogenic forcing agents by magnitude and by uncertainty.",
+    "Set up the feedback equation $\\Delta T = \\Delta F /(\\lambda_0 + \\sum \\lambda_i)$, evaluate the amplification factor, and explain why cloud feedback dominates the spread of sensitivity estimates.",
+    "Account for the observed partitioning of the Earth's energy imbalance between ocean, land, ice and atmosphere.",
+    "Describe the El Niño–Southern Oscillation, the North Atlantic Oscillation, the Pacific and Atlantic multidecadal patterns and the annual cycle as filters on the forced trend.",
+    "Explain the marine and terrestrial carbon sinks, the airborne fraction, the Revelle factor and the reasons the sinks are weakening per unit of emissions.",
+    "Distinguish equilibrium climate sensitivity, transient response and realised warming, and state what each is used for."
+  ],
   "chapters": [
     {
       "slug": "climate-statistics",
@@ -90,8 +106,108 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1824,
+      "title": "Fourier states the planetary energy-balance problem",
+      "detail": "Joseph Fourier showed that a body illuminated by the Sun and radiating to space must be far colder than the Earth is, so the atmosphere must behave like a screen that admits sunlight and obstructs the terrestrial radiation. The framing — balance the fluxes, then ask what the air does to them — is still the first chapter of every climate textbook.",
+      "people": [
+        "Joseph Fourier"
+      ]
+    },
+    {
+      "year": 1859,
+      "title": "Tyndall finds which gases trap heat",
+      "detail": "Using a thermopile and a series of gas tubes, John Tyndall showed that water vapour, carbon dioxide, methane and ozone absorb and emit terrestrial radiation while nitrogen and oxygen do not, and that a trace of the former is enough to warm a surface. The greenhouse effect became a laboratory fact rather than an inference.",
+      "people": [
+        "John Tyndall"
+      ]
+    },
+    {
+      "year": 1896,
+      "title": "Arrhenius computes the first carbon-dioxide numbers",
+      "detail": "Svante Arrhenius, with the hand-computed absorption tables of Knut Ångström and Gerlianas, estimated that halving atmospheric carbon dioxide would cool the Earth by several degrees and that industrial coal use could raise it, and noted that the geological record supported the coupling. He also estimated the timescale as centuries, which was the right order of magnitude.",
+      "people": [
+        "Svante Arrhenius"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "The carbon dioxide bands are shown not to be saturated",
+      "detail": "Gilbert Plass, following Ernst Möller's band models, computed the infrared transfer of the atmosphere line by line and showed that the added absorption of more carbon dioxide occurs high in the atmosphere rather than at the surface, where the bands are already opaque. The result overturned the standard objection and made quantitative prediction possible.",
+      "people": [
+        "Gilbert Plass",
+        "Ernst Möller"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "The first radiative-convective model with feedbacks",
+      "detail": "Syukuro Manabe and Richard Wetherald built a one-dimensional model in which the atmosphere was kept in radiative-convective equilibrium and water vapour was diagnosed from a fixed relative humidity. Their carbon-dioxide doubling gave $2.9\\ ^\\circ\\mathrm{C}$ — within the range still assessed more than fifty years later.",
+      "people": [
+        "Syukuro Manabe",
+        "Richard Wetherald"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Charney: a consensus on sensitivity, and on uncertainty",
+      "detail": "An advisory panel chaired by Jule Charney concluded that the most probable equilibrium warming for a carbon-dioxide doubling was $3\\ ^\\circ\\mathrm{C}$ with a plausible range of $1.5$–$4.5\\ ^\\circ\\mathrm{C}$, and identified clouds and the ocean's uptake of heat as the two large open questions. The range has not narrowed since.",
+      "people": [
+        "Jule Charney"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "The ocean is weighed by float",
+      "detail": "The Argo array, eventually some four thousand profiling floats sampling the upper two thousand metres every ten days, turned ocean heat content into a measurement. It made the Earth's energy imbalance an observed quantity, located where the excess heat is going, and showed that the upper ocean is warming faster than surface temperature alone suggests.",
+      "people": []
+    },
+    {
+      "year": 2021,
+      "title": "AR6 assesses sensitivity with multiple lines of evidence",
+      "detail": "The IPCC Sixth Assessment Report combined palaeoclimate, the historical record and process understanding to assess an equilibrium climate sensitivity of $3.2\\ ^\\circ\\mathrm{C}$, extremely likely above $2\\ ^\\circ\\mathrm{C}$, and to state that human influence has warmed the climate at a rate unprecedented over at least two thousand years.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Global Physical Climatology",
+      "authors": "Dennis L. Hartmann",
+      "year": 2016,
+      "note": "The clearest physical account of the energy balance, radiation, convection and the general circulation of the climate system; the natural companion to this course."
+    },
+    {
+      "title": "Atmosphere, Ocean and Climate Dynamics",
+      "authors": "John Marshall and R. Alan Plumb",
+      "year": 2008,
+      "note": "The dynamics and the energy and angular-momentum budgets, with the worked estimates and the exercises that make the arithmetic stick."
+    },
+    {
+      "title": "An Introduction to Atmospheric Radiation",
+      "authors": "Knutson J. Liou",
+      "year": 2002,
+      "note": "Absorption, emission, band models and the two-stream method: the greenhouse-effect and radiative-forcing chapters in book form."
+    },
+    {
+      "title": "Physics of Climate",
+      "authors": "Jorge L. Peixoto and Abraham H. Oort",
+      "year": 1992,
+      "note": "The observed energy, water and angular-momentum budgets from the classical compilations — the numbers every model must reproduce."
+    },
+    {
+      "title": "Climate Change 2021: The Physical Science Basis",
+      "authors": "IPCC Sixth Assessment Report, Working Group I",
+      "year": 2021,
+      "note": "The assessed values of forcing, sensitivity, imbalance and variability used throughout this course, with the calibrated likelihood and confidence language."
+    },
+    {
+      "title": "El Niño, La Niña and the Southern Oscillation",
+      "authors": "S. George Philander",
+      "year": 1990,
+      "note": "The classic physical treatment of the coupled ocean–atmosphere system behind the largest year-to-year climate variation."
+    }
+  ],
   "next": [
     "palaeoclimate",
     "climate-modelling",

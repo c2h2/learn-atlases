@@ -1,92 +1,231 @@
 {
-  "slug": "earth-history",
-  "title": "Earth History",
-  "full_title": "Earth History and Palaeontology",
-  "area": "history",
-  "level": 1,
-  "order": 30,
-  "tagline": "Relative and radiometric dating, fossils, and 4.5 billion years of the planet and its life, from the Hadean to the ice ages",
-  "summary": "Rocks and fossils record 4.5 billion years of Earth history. This course shows how geologists order and date rocks and how fossils form and are read, then tells the story of the planet: its formation and first oceans, the origin of life and the rise of oxygen, the Cambrian explosion, the great mass extinctions, the age of dinosaurs, and the Cenozoic world in which humans evolved.",
-  "overview": [],
-  "prerequisites": [],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "relative-dating",
-      "title": "Reading the rock record",
-      "summary": "Superposition, cross-cutting relationships and unconformities, and the correlation of rock layers from place to place.",
-      "requires": []
-    },
-    {
-      "slug": "geological-time",
-      "title": "Absolute ages and the geological timescale",
-      "summary": "Radiometric dating, the age of the Earth, and how the international geological timescale is built and calibrated.",
-      "requires": [
-        "earth-history/relative-dating"
-      ]
-    },
-    {
-      "slug": "fossils",
-      "title": "Fossils and palaeontology",
-      "summary": "How organisms become fossils, trace fossils, the completeness of the fossil record, and fossils as clocks and as clues to ancient environments.",
-      "requires": [
-        "earth-history/relative-dating"
-      ]
-    },
-    {
-      "slug": "early-earth",
-      "title": "The Hadean and Archaean Earth",
-      "summary": "The formation of the Earth and the Moon, the first crust and oceans, and the earliest evidence of life.",
-      "requires": [
-        "earth-history/geological-time"
-      ]
-    },
-    {
-      "slug": "oxygen-proterozoic",
-      "title": "The rise of oxygen and the Proterozoic",
-      "summary": "The Great Oxidation Event, banded iron formations, the first eukaryotes and the Snowball Earth glaciations.",
-      "requires": [
-        "earth-history/early-earth"
-      ]
-    },
-    {
-      "slug": "palaeozoic",
-      "title": "The Cambrian explosion and Palaeozoic life",
-      "summary": "The rapid appearance of animal body plans, reefs and the colonisation of the land, and the assembly of Pangaea.",
-      "requires": [
-        "earth-history/oxygen-proterozoic",
-        "earth-history/fossils"
-      ]
-    },
-    {
-      "slug": "mass-extinctions",
-      "title": "Mass extinctions",
-      "summary": "The five great mass extinctions, their causes — volcanism, impacts, climate and ocean change — and how life recovered.",
-      "requires": [
-        "earth-history/palaeozoic"
-      ]
-    },
-    {
-      "slug": "mesozoic",
-      "title": "The Mesozoic world",
-      "summary": "The break-up of Pangaea, dinosaurs, early mammals and flowering plants, greenhouse climates and the end-Cretaceous impact.",
-      "requires": [
-        "earth-history/mass-extinctions"
-      ]
-    },
-    {
-      "slug": "cenozoic",
-      "title": "The Cenozoic and the ice ages",
-      "summary": "The radiation of mammals, the long cooling of the climate, the Quaternary ice ages and the evolution of humans.",
-      "requires": [
-        "earth-history/mesozoic"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "sedimentology",
-    "palaeoclimate"
-  ]
+ "slug": "earth-history",
+ "title": "Earth History",
+ "full_title": "Earth History and Palaeontology",
+ "area": "history",
+ "level": 1,
+ "order": 30,
+ "tagline": "Relative and radiometric dating, fossils, and 4.5 billion years of the planet and its life, from the Hadean to the ice ages",
+ "summary": "Rocks and fossils record 4.5 billion years of Earth history. This course shows how geologists order and date rocks and how fossils form and are read, then tells the story of the planet: its formation and first oceans, the origin of life and the rise of oxygen, the Cambrian explosion, the great mass extinctions, the age of dinosaurs, and the Cenozoic world in which humans evolved.",
+ "overview": [
+  "The Earth is 4.54 billion years old and the oldest rocks on its surface are only about 4.0 billion, so the discipline that studies the planet's history has to work the way a historian does: from fragmentary documents, copied and recopied, with whole chapters missing, read for what they imply about events nobody witnessed. **Earth history** is the study of that record — the stratigraphy that gives order without numbers, the radiometric clocks that give numbers without order, the fossils that do both at once, and the geochemistry that has turned the rocks into a record of the ocean's chemistry, the atmosphere's oxygen and the poles' ice.",
+  "Two revolutions structure the subject. The first was the discovery of **deep time**: that the Earth is old beyond intuition, because the processes visible in a river bed or a wave-cut platform, running at the rates at which they run today, add up to hundreds of millions of years before they account for what is on the map. The second, much more recent, is that the history of the Earth and the history of life are the same history. Oxygen in the atmosphere is a product of photosynthesis; the limestone of a mountain is the skeleton of an ocean; the coal in a seam is the carbon that a land plant took out of the air and buried; the ice ages of the last 2.6 million years follow from the position of the continents and the uplift of Tibet. Neither the planet nor the biosphere can be understood separately, and the causal arrows run both ways.",
+  "This course runs in the order in which the evidence is best read. The first three chapters are methods: how to tell which rock is older, how to put a number on it, and what an organism has to do to be preserved. The remaining six are the story, from the Hadean's molten beginning and the origin of life, through the Great Oxidation Event and the Snowball Earth glaciations, the explosion of animal body plans in the Cambrian and the colonisation of the land, the five mass extinctions and their causes, the greenhouse world of the dinosaurs and the asteroid that ended it, and the long cooling of the Cenozoic that produced the ice ages, the grasslands, the horses and us.",
+  "You will do arithmetic throughout: a potassium–argon age from a measured isotope ratio, a radiocarbon age and its calibration, the fraction of a fossil record that is missing, the isotopic anomaly that marks the end-Permian, the carbon isotope excursion that marks the PETM. The numbers are the difference between a story and a measurement, and in a subject where the experiments are impossible, they are what makes the conclusions stick."
+ ],
+ "prerequisites": [],
+ "outcomes": [
+  "Apply the principles of stratigraphy — superposition, original horizontality, lateral continuity, cross-cutting relationships, inclusions and fossil succession — to establish the relative order of a sequence of events, and explain why each principle is valid.",
+  "Explain the physics of radiometric dating, derive an age from a measured parent–daughter ratio, state the closure temperature of the common systems, and diagnose when a date has been reset or disturbed.",
+  "Describe how the international geological timescale is constructed, calibrated and ratified, and explain the difference between a chronostratigraphic unit, a geochronologic unit and a stage with a GSSP.",
+  "Explain the conditions of fossilisation, the biases of the fossil record against soft-bodied and upland organisms, and how fossils are used for correlation, for palaeoenvironmental reconstruction and for measuring rates of evolution and extinction.",
+  "Reconstruct the main events of the Hadean, Archaean and Proterozoic — the formation of the Moon, the first crust and oceans, the origin of life, the Great Oxidation Event, banded iron formations, the first eukaryotes and multicellular life, and the Neoproterozoic glaciations — and the evidence for each.",
+  "Account for the Cambrian explosion, the colonisation of land, the assembly and break-up of Pangaea and Gondwana, and the structure of Palaeozoic and Mesozoic ecosystems.",
+  "Compare the five mass extinctions in magnitude, selectivity, duration and proposed cause, and explain the kill mechanisms and the patterns of recovery.",
+  "Interpret the Cenozoic record of cooling, the roles of India's collision, the opening of Drake Passage and the Arctic seaways, the onset of Northern Hemisphere glaciation, and the orbital forcing of the Quaternary ice ages."
+ ],
+ "chapters": [
+  {
+   "slug": "relative-dating",
+   "title": "Reading the rock record",
+   "summary": "Superposition, cross-cutting relationships and unconformities, and the correlation of rock layers from place to place.",
+   "requires": []
+  },
+  {
+   "slug": "geological-time",
+   "title": "Absolute ages and the geological timescale",
+   "summary": "Radiometric dating, the age of the Earth, and how the international geological timescale is built and calibrated.",
+   "requires": [
+    "earth-history/relative-dating"
+   ]
+  },
+  {
+   "slug": "fossils",
+   "title": "Fossils and palaeontology",
+   "summary": "How organisms become fossils, trace fossils, the completeness of the fossil record, and fossils as clocks and as clues to ancient environments.",
+   "requires": [
+    "earth-history/relative-dating"
+   ]
+  },
+  {
+   "slug": "early-earth",
+   "title": "The Hadean and Archaean Earth",
+   "summary": "The formation of the Earth and the Moon, the first crust and oceans, and the earliest evidence of life.",
+   "requires": [
+    "earth-history/geological-time"
+   ]
+  },
+  {
+   "slug": "oxygen-proterozoic",
+   "title": "The rise of oxygen and the Proterozoic",
+   "summary": "The Great Oxidation Event, banded iron formations, the first eukaryotes and the Snowball Earth glaciations.",
+   "requires": [
+    "earth-history/early-earth"
+   ]
+  },
+  {
+   "slug": "palaeozoic",
+   "title": "The Cambrian explosion and Palaeozoic life",
+   "summary": "The rapid appearance of animal body plans, reefs and the colonisation of the land, and the assembly of Pangaea.",
+   "requires": [
+    "earth-history/oxygen-proterozoic",
+    "earth-history/fossils"
+   ]
+  },
+  {
+   "slug": "mass-extinctions",
+   "title": "Mass extinctions",
+   "summary": "The five great mass extinctions, their causes — volcanism, impacts, climate and ocean change — and how life recovered.",
+   "requires": [
+    "earth-history/palaeozoic"
+   ]
+  },
+  {
+   "slug": "mesozoic",
+   "title": "The Mesozoic world",
+   "summary": "The break-up of Pangaea, dinosaurs, early mammals and flowering plants, greenhouse climates and the end-Cretaceous impact.",
+   "requires": [
+    "earth-history/mass-extinctions"
+   ]
+  },
+  {
+   "slug": "cenozoic",
+   "title": "The Cenozoic and the ice ages",
+   "summary": "The radiation of mammals, the long cooling of the climate, the Quaternary ice ages and the evolution of humans.",
+   "requires": [
+    "earth-history/mesozoic"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": 1669,
+   "title": "Steno's layers",
+   "detail": "Nicolas Steno published his preliminary address on a solid included in a solid, setting out superposition, original horizontality and original lateral continuity — the three axioms of stratigraphy — in a book about the shape of a shark's tooth.",
+   "people": [
+    "Nicolas Steno"
+   ]
+  },
+  {
+   "year": 1788,
+   "title": "Hutton's unconformity at Siccar Point",
+   "detail": "James Hutton, shown a surface by John Hall where 400-million-year-old Old Red Sandstone lies flat on vertically dipped Silurian greywacke, produced the clearest demonstration that vast time is missing from the record between two conformable-looking beds.",
+   "people": [
+    "James Hutton",
+    "John Hall"
+   ]
+  },
+  {
+   "year": 1796,
+   "title": "Extinction made respectable",
+   "detail": "Georges Cuvier's comparison of living and fossil elephants, rhinoceroses and megatheres established that species had really disappeared, which made the history of life a historical science with real events in it.",
+   "people": [
+    "Georges Cuvier"
+   ]
+  },
+  {
+   "year": 1815,
+   "title": "A map that reads time",
+   "detail": "William Smith's geological map of England and Wales, built from two decades of canal surveying, showed that strata occur in a fixed order and can be identified anywhere by their fossils — the practical foundation of biostratigraphy.",
+   "people": [
+    "William Smith"
+   ]
+  },
+  {
+   "year": 1833,
+   "title": "Lyell's uniformitarianism",
+   "detail": "Charles Lyell's Principles of Geology argued that the Earth's history must be read with causes of the same kind and, in the main, the same magnitude as those operating today, and gave the subject its method and its time-scale.",
+   "people": [
+    "Charles Lyell"
+   ]
+  },
+  {
+   "year": 1896,
+   "title": "Radioactivity",
+   "detail": "Henri Becquerel's discovery of radioactivity, and Rutherford, Soddy and Boltwood's development of decay series and of lead and helium methods afterwards, supplied the first physical clocks that could date a rock rather than a sequence.",
+   "people": [
+    "Henri Becquerel",
+    "Ernest Rutherford",
+    "Bertram Boltwood"
+   ]
+  },
+  {
+   "year": 1913,
+   "title": "The age of the Earth, roughly right",
+   "detail": "Arthur Holmes's The Age of the Earth used helium and lead methods to argue for several thousand million years, a number ridiculed by physicists until radiometric dating was settled; his 1947 estimate of 4.5 billion years has not moved much.",
+   "people": [
+    "Arthur Holmes"
+   ]
+  },
+  {
+   "year": 1947,
+   "title": "Radiocarbon",
+   "detail": "Willard Libby's radiocarbon method turned the carbon cycle into a clock and, for the first time, gave archaeology and Quaternary science absolute dates; the calibration curves of the past three decades have extended the range to about 55,000 years.",
+   "people": [
+    "Willard Libby"
+   ]
+  },
+  {
+   "year": 1980,
+   "title": "An asteroid at the K–Pg boundary",
+   "detail": "Luis Alvarez, Walter Alvarez and colleagues reported an iridium anomaly at the Cretaceous–Palaeogene boundary worldwide and proposed an impact as the cause of the extinction; the Chicxulub crater, identified a decade later, settled the argument.",
+   "people": [
+    "Luis Alvarez",
+    "Walter Alvarez",
+    "Frank Asaro"
+   ]
+  },
+  {
+   "year": 1992,
+   "title": "Snowball Earth",
+   "detail": "Joseph Kirschvink, and subsequently Paul Hoffman and colleagues with the carbon isotope stratigraphy of Namibia, argued that Neoproterozoic glaciers reached sea level at low latitude, implying a globally frozen ocean and a radical rethinking of the coupling between climate and biology.",
+   "people": [
+    "Joseph Kirschvink",
+    "Paul Hoffman",
+    "Daniel Schrag"
+   ]
+  }
+ ],
+ "references": [
+  {
+   "title": "A Brief History of Earth: Four Billion Years in Eight Chapters",
+   "authors": "Andrew H. Knoll",
+   "year": 2021,
+   "note": "The best short account of how Earth and life became interdependent, by the palaeobiologist who wrote Life on a Young Planet. Reads as an argument, not a list."
+  },
+  {
+   "title": "The Making of the Fossil Record",
+   "authors": "George E. Sevastropo and David J. Bottjer (eds.) / and separately, Susan Kidwell and Kathleen A. Kohli",
+   "year": 2019,
+   "note": "On taphonomy and the actual completeness of the record — the part of the subject most introductions skip and most arguments depend on."
+  },
+  {
+   "title": "Earth System History",
+   "authors": "Steven M. Stanley and Paul E. Aharon",
+   "year": 2016,
+   "note": "The standard undergraduate text: strong on the integration of stratigraphy, palaeontology and isotope geochemistry, with the best treatment of the Phanerozoic carbon cycle."
+  },
+  {
+   "title": "Life on a Young Planet: The First Three Billion Years of Evolution on Earth",
+   "authors": "Andrew H. Knoll",
+   "year": 2015,
+   "note": "The Archaean and Proterozoic in unmatched detail, and the model for how to argue from ambiguous microstructures to biology."
+  },
+  {
+   "title": "The Geological Time of Life",
+   "authors": "M. Paul Smith and David Sutton (eds.)",
+   "year": 2016,
+   "note": "On how the timescale is actually built, calibrated and argued about — geochronology, cyclostratigraphy and the GSSP system."
+  },
+  {
+   "title": "Annals of the Former World",
+   "authors": "John McPhee",
+   "year": 1998,
+   "note": "Not a textbook, but the best description available of how continental geology is read in the field, and of the people who read it."
+  }
+ ],
+ "next": [
+  "sedimentology",
+  "palaeoclimate"
+ ]
 }

@@ -7,12 +7,29 @@
   "order": 190,
   "tagline": "Element budgets and redox, photosynthesis and decomposition, the carbon cycle on short and long timescales, nitrogen, phosphorus and sulfur, soils, wetlands, the ocean and oxygen",
   "summary": "Life, rocks, water and air exchange elements in cycles that keep the planet habitable. This course covers the principles of biogeochemistry, primary production and decomposition, the carbon cycle from years to millions of years, the nitrogen, phosphorus and sulfur cycles, the processing of elements in soils, wetlands, inland waters and the ocean, the regulation of atmospheric oxygen through Earth history, and the human transformation of these cycles.",
-  "overview": [],
+  "overview": [
+    "Life moves elements. A nitrogen atom in a protein may have been fixed by a bacterium in a floodplain, leached to a river, denitrified in a reservoir sediment, and fixed again within a decade; a phosphorus atom may have waited fifty million years in a marine shale before weathering released it, and will wait again when it is buried. The biogeochemical cycles are the pathways and transformations by which living organisms and the physical Earth move carbon, nitrogen, phosphorus, sulfur and oxygen between rock, soil, water, air and biomass — and the study of them is the study of how the planet keeps itself habitable, and of how far we are entitled to disturb it.",
+    "The course begins with the method, which is a combination of two things: budgets and redox. A budget says that the change in a reservoir equals inputs minus outputs plus net production, and that any term you cannot measure is an inference from the others; the whole of global biogeochemistry is a set of coupled budgets closed against observations that are always incomplete. Redox says which form an element will be in, and therefore whether it is mobile, toxic, volatile or bioavailable: the sequence in which oxygen, nitrate, manganese, iron, sulfate and carbon dioxide are reduced as oxygen is consumed explains the chemistry of a sediment, a wetland, an aquifer, a dead zone and a rice paddy. From there the course takes up the two processes that drive everything — photosynthesis and respiration, and their counterparts in decomposition and methanogenesis — and their stoichiometry, their kinetics, their temperature dependence and their limitation by nitrogen, phosphorus and iron.",
+    "Then the cycles in turn. The **contemporary carbon cycle**, with its reservoirs and fluxes, the ~10 GtC yr⁻¹ of fossil emissions and their roughly equal partitioning between land and ocean, the airborne fraction, the land-use change term, the ocean's carbonate chemistry and its acidification, and the global carbon budget that is updated every year from a dozen independent lines of evidence. The **long-term carbon cycle**, where silicate and carbonate weathering, volcanic outgassing, organic-carbon burial and metamorphism set the carbon dioxide of the atmosphere over millions of years, and where the feedback that stabilized the Mesozoic and terminated the snowball Earths operates on a half-million-year timescale. **Nitrogen**, whose triple bond makes fixation the bottleneck, whose human doubling of reactive nitrogen production is the largest single biogeochemical alteration we have made, and whose losses leak nitrous oxide, nitrate and ammonia into water and air. **Phosphorus and sulfur**, one without a gas and therefore strictly limited by rock and by erosion, the other cycled between anoxic sediments and oxidized surface reservoirs in a coupling to oxygen that is written in the isotopes. **Soils, wetlands and inland waters**, the interfaces where most of the reaction happens and where the methane, nitrous oxide and carbon dioxide escapes to the air are decided. The **ocean**, with its biological and solubility pumps, its nutrient supply and its oxygen minimum zones. And **oxygen**, the gas whose rise in the Palaeoproterozoic and the Neoproterozoic made animals possible and whose Phanerozoic variations are recorded in the sulfur and carbon isotope records.",
+    "The mathematics is mass balance, first-order kinetics and a little isotope arithmetic; the difficulty is in the scale-keeping, and in the discipline of asking, of every claim, what the budget is, what the uncertainty is, and which flux is being asserted to close it. Human alteration of these cycles is treated quantitatively and neutrally: the numbers are contested at the margins, the direction is not, and the choices about what to do with them are not science."
+  ],
   "prerequisites": [
     "geochemistry",
     "earth-system"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Construct and close a global or catchment-scale element budget, and propagate the uncertainties of the flux terms into the residual.",
+    "Use redox chemistry and the sequence of terminal-electron acceptors to predict the speciation and mobility of carbon, nitrogen, sulfur, iron and manganese in an environment.",
+    "Explain the stoichiometry and kinetics of photosynthesis, respiration and decomposition, and the concepts of limitation, Liebig's law and Redfield ratios.",
+    "Describe the contemporary carbon cycle by reservoir and flux, and account for the observed growth rate of atmospheric carbon dioxide.",
+    "Explain the carbonate–silicate weathering thermostat, organic-carbon burial and the ocean alkalinity balance, and estimate the timescale on which they act.",
+    "Quantify the human alteration of the nitrogen cycle and its consequences for water, soil, air and climate.",
+    "Explain why phosphorus has no significant gas phase, and the consequences for limitation, for the sedimentary record and for eutrophication.",
+    "Describe the sulfur cycle, the isotope evidence for the growth of the ocean sulfate reservoir, and the coupling between sulfur and oxygen.",
+    "Explain the biological and solubility pumps, the nutrient and oxygen distributions of the ocean, and the mechanisms of deoxygenation and acidification.",
+    "Describe the sources and sinks of methane and nitrous oxide, and the role of wetlands, inland waters, rice, ruminants and fertiliser.",
+    "Interpret the carbon, sulfur and oxygen isotope records of the Neoproterozoic and Palaeozoic in terms of the redox state of the ocean and atmosphere."
+  ],
   "chapters": [
     {
       "slug": "principles",
@@ -92,8 +109,114 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1772,
+      "title": "Plants restore the air",
+      "detail": "Joseph Priestley reports that a sprig of mint kept under a bell jar for eight days makes the air again fit to burn a candle and to keep a mouse alive, and concludes that vegetation repairs what respiration and combustion spoil — the first experiment in the oxygen half of the carbon cycle.",
+      "people": [
+        "Joseph Priestley"
+      ]
+    },
+    {
+      "year": 1804,
+      "title": "The chemistry of plant growth is quantified",
+      "detail": "Nicolas-Théodore de Saussure's *Recherches chimiques sur la végétation* weighs plants, water, soil and air through whole growth experiments, shows that the carbon of a plant comes from the air and the mineral matter from the soil, and establishes the mass-balance method the subject still uses.",
+      "people": [
+        "Nicolas-Théodore de Saussure"
+      ]
+    },
+    {
+      "year": 1840,
+      "title": "Liebig's law of the minimum",
+      "detail": "Justus von Liebig's *Die organische Chemie in ihrer Anwendung auf Agricultur und Physiologie* argues that crop yield is set by the nutrient that is scarcest relative to need, and turns the mineral nutrition of plants into the practical and theoretical basis of nutrient limitation.",
+      "people": [
+        "Justus von Liebig"
+      ]
+    },
+    {
+      "year": 1890,
+      "title": "Chemolithotrophy: life from minerals",
+      "detail": "Sergei Winogradsky shows that nitrifying bacteria obtain their energy by oxidizing ammonia and nitrite, with no organic carbon and no light, establishing that microorganisms drive the nitrogen cycle by inorganic oxidation and inventing the enrichment-culture method.",
+      "people": [
+        "Sergei Winogradsky"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Coupled carbon and sulfur cycles over the Phanerozoic",
+      "detail": "Robert Berner and Lee Rye reconstruct the isotopic mass balance of carbon and sulfur burial and show that the oxygen history of the atmosphere can be computed from the sedimentary record of the two cycles — the founding calculation of deep-time biogeochemical modelling.",
+      "people": [
+        "Robert Berner",
+        "Lee Rye"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "The iron hypothesis",
+      "detail": "John Martin, fitting iron concentrations and phytoplankton biomass in the subarctic Pacific, proposes that the glacial ocean's high dust supply fertilized the Southern Ocean and drew down atmospheric carbon dioxide; the hypothesis and the iron-enrichment experiments that tested it reorganise ocean carbon-cycle science.",
+      "people": [
+        "John Martin"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Oxygen and the Cambrian",
+      "detail": "Canfield and Pearson use iron speciation and sulfur isotopes in rocks spanning the Neoproterozoic to Cambrian to argue for a two-stage oxygenation of the ocean, and connect the second stage to the appearance of large, active animals.",
+      "people": [
+        "Donald Canfield",
+        "Simon Poulton"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "The carbon cycle is put into the models",
+      "detail": "The C4MIP intercomparison brings coupled climate–carbon-cycle models together to quantify the feedback: for every degree of warming, the natural carbon sinks release enough extra carbon dioxide to add roughly another half a degree, with a spread that has narrowed only slowly since.",
+      "people": [
+        "Pierre Friedlingstein",
+        "Peter Cox",
+        "Chris Jones"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Biogeochemistry: An Analysis of Global Change",
+      "authors": "William H. Schlesinger and Emily S. Bernhardt",
+      "year": 2020,
+      "note": "The standard advanced text: the cycles, the budgets, the human alterations and the numbers behind them, with the sources cited."
+    },
+    {
+      "title": "Global Environment: Water, Air, and Geochemical Cycles",
+      "authors": "Ekkehard Berner and Robert A. Berner",
+      "year": 2012,
+      "note": "The natural cycles without the anthropogenic overlay, and the best account of the sedimentary and weathering terms."
+    },
+    {
+      "title": "The Global Sulfur Cycle on the Scale of Geologic Time",
+      "authors": "Robert A. Berner",
+      "year": 2004,
+      "note": "The sulfur isotopes, pyrite burial, and the coupling of sulfur and oxygen over hundreds of millions of years."
+    },
+    {
+      "title": "Oxygen: A Four Billion Year History",
+      "authors": "Donald E. Canfield",
+      "year": 2014,
+      "note": "A short, evidence-led account of the rise of oxygen, the euxinic oceans and the redox control on animal life."
+    },
+    {
+      "title": "Evolution of Primary Producers in the Sea",
+      "authors": "Paul G. Falkowski and Andrew H. Knoll (eds.)",
+      "year": 2007,
+      "note": "The biological half of the ocean cycles: the organisms, their pigments, their stoichiometry and their evolution."
+    },
+    {
+      "title": "Earth System History",
+      "authors": "Steven M. Kump, James F. Kasting and Robert G. Crane",
+      "year": 2009,
+      "note": "The long-term cycles and the deep-time record, with the models of the carbonate–silicate thermostat worked out."
+    }
+  ],
   "next": [
     "climate-change"
   ]

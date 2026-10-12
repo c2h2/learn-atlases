@@ -7,9 +7,24 @@
   "order": 20,
   "tagline": "Minerals, igneous, sedimentary and metamorphic rocks, plate tectonics, volcanoes, earthquakes, deformation and the Earth’s interior",
   "summary": "Physical geology studies what the Earth is made of and the processes that build and change it. This course covers minerals and the three families of rocks, plate tectonics and the evidence for it, volcanoes and earthquakes, the deformation of rocks and the growth of mountains, and what seismic waves and other evidence reveal about the planet’s interior.",
-  "overview": [],
+  "overview": [
+    "Stand on a beach, a mountain road cutting or a river bank and you are looking at three separate stories written in the same rock: what it was made of, what happened to it afterwards, and how it came to lie where you are standing. Physical geology is the discipline that reads those stories. It starts with **minerals**, the crystalline building blocks whose chemistry and structure decide how a rock will behave when it is heated, squeezed, weathered or melted, and then works outwards through the three families of rocks — **igneous** frozen from melt, **sedimentary** built from the debris and dissolved load of older rocks, **metamorphic** reworked in the solid state — to the planet-scale machine that produces them all.",
+    "That machine is **plate tectonics**, the organizing theory of the Earth sciences, which explains why volcanoes and earthquakes trace narrow lines around the Pacific, why the oldest seafloor is only 180 million years old against the continents' four billion, why the Himalayas are still rising and why identical fossils occur on continents now separated by an ocean. In this course you will meet the evidence in the order it was found — continental drift, seafloor spreading, magnetic stripes, transform faults — because the reasoning matters more than the conclusion, and because the same style of argument (many weak, independent lines of evidence converging on one explanation) is what you will use throughout the rest of the curriculum.",
+    "The course is organised from small to large: minerals and the three rock families, then plate tectonics and its two most visible surface expressions, volcanoes and earthquakes, then the deformation of rock and mountain building, and finally what seismic waves, gravity, heat and magnetism tell us about the interior we cannot reach. Each chapter is built the same way: observations first, then the definitions and the physics that tie them together, then worked numbers. You will calculate a crystallisation age, a seismic moment, a paleodepth from isostasy and a magma's silica evolution, because geology is a quantitative science that happens to be carried out with a hand lens in one hand.",
+    "What makes the subject hard is not the mathematics, which is light, but the **stretching of time and the handling of complexity**: processes that run at millimetres per year have to be reasoned about over hundreds of millions of years, and any outcrop records several of them at once. The way through is to keep asking two questions of everything you see — *what process makes this, and how do we know?* — and to work with samples and maps as much as you can, because a described property you have not held in your hand is only half known."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Identify the twenty commonest rock-forming minerals from hardness, cleavage, colour, luster, density and other hand-specimen properties, and explain how each property follows from the mineral's bonding and structure.",
+    "Classify igneous, sedimentary and metamorphic rocks by texture and composition, and infer from a hand specimen the conditions and processes that formed it.",
+    "Explain the evidence for plate tectonics — the fit of the continents, the fossil and palaeoclimate record, the magnetic anomalies, the age and heat flow of the seafloor, the distribution of earthquakes and volcanoes — and say what each observation rules out.",
+    "Describe the main types of plate boundary and link them to the magmatism, deformation, seismicity and topography observed at each.",
+    "Relate eruption style, volcano shape and hazard to magma composition, temperature, volatile content and tectonic setting.",
+    "Locate an earthquake from seismic-station arrival times, explain the difference between magnitude and intensity, and estimate energy release from a seismic moment.",
+    "Interpret folds, faults and joints as the record of stress and strain in the crust, and read the structural history of a geological map or cross-section.",
+    "Use the behaviour of seismic waves, together with gravity, heat flow and the magnetic field, to describe the layers of the Earth's interior and defend the standard model of its composition and physical state.",
+    "Estimate rates and timescales of geological processes from field or published data, carrying units correctly and stating the assumptions."
+  ],
   "chapters": [
     {
       "slug": "minerals",
@@ -83,8 +98,26 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {"year": 1788, "title": "Theory of the Earth with no beginning and no end", "detail": "James Hutton's paper to the Royal Society of Edinburgh argued that the land is worn down and rebuilt by slow, observable processes over immensity of time, and that granites are crystallised from melt at depth rather than precipitated from water.", "people": ["James Hutton"]},
+    {"year": 1812, "title": "A scale of hardness", "detail": "Friedrich Mohs published the ten-mineral hardness scale still used in the field, the first systematic way to turn a physical property into a classification.", "people": ["Friedrich Mohs"]},
+    {"year": 1815, "title": "The first geological map of England and Wales", "detail": "William Smith, a canal surveyor, published a map showing the strata in outcrop and in their correct order of succession, establishing that the same layers recur everywhere in the same sequence.", "people": ["William Smith"]},
+    {"year": 1830, "title": "Principles of Geology, volume one", "detail": "Charles Lyell's argument that the present is the key to the past — that explanation must use causes still in operation, at no greater intensity than we can observe — set the method of the whole science.", "people": ["Charles Lyell"]},
+    {"year": 1911, "title": "Elastic rebound after the 1906 San Francisco earthquake", "detail": "Harry Fielding Reid's study of the geodetic surveys across the San Andreas fault before and after the earthquake showed that the crust had bent elastically and then snapped back, giving the mechanism of earthquakes.", "people": ["Harry Fielding Reid"]},
+    {"year": 1912, "title": "Continental drift proposed", "detail": "Alfred Wegener, a meteorologist, presented the fit of the continents, the matching fossils and the Palaeozoic ice sheets as evidence that continents move sideways through the ocean floor.", "people": ["Alfred Wegener"]},
+    {"year": 1915, "title": "The reaction series", "detail": "Norman L. Bowen's high-temperature experiments on silicate melts showed how one magma yields a suite of different rocks by crystallising minerals in a definite order, making igneous rocks a record of cooling history.", "people": ["Norman L. Bowen"]},
+    {"year": 1957, "title": "The first map of the ocean floor", "detail": "Marie Tharp and Bruce Heezen's physiographic map of the Atlantic revealed a continuous, unfilled valley along the crest of the mid-ocean ridge, the surface expression of a spreading centre.", "people": ["Marie Tharp", "Bruce Heezen"]},
+    {"year": 1963, "title": "Magnetic stripes and seafloor spreading", "detail": "Fred Vine and Drummond Matthews showed that the symmetric pattern of magnetic anomalies on either side of the East Pacific Rise records reversals of the field as new crust is born at the ridge, which turned drift from a hypothesis into a measured rate.", "people": ["Fred Vine", "Drummond Matthews"]},
+    {"year": 1968, "title": "The synthesis: plates in motion", "detail": "Isacks, Oliver and Sykes described the mechanics of mid-ocean ridges, island arcs and transform faults in one kinematic framework, and X-ray and surface-wave studies gave the first reliable slip directions — the moment plate tectonics became the standard model.", "people": ["Bruce Isacks", "Jack Oliver", "Lynn Sykes"]}
+  ],
+  "references": [
+    {"title": "Understanding Earth", "authors": "John P. Grotzinger and Thomas H. Jordan", "year": 2013, "note": "The most reasoning-first of the introductory texts: good on how evidence constrains models, with excellent figures on igneous and metamorphic processes. Follows the same order as this course."},
+    {"title": "The Dynamic Earth: An Introduction to Physical Geology", "authors": "Harold Robbins and Steven C. Porter", "year": 2015, "note": "Strongest on the processes — weathering, rivers, glaciers, coasts, mass movement — and on the classic field photographs that go with them."},
+    {"title": "Physical Geology", "authors": "Charles C. Plummer, Diane H. Carlson and David McGeary", "year": 2015, "note": "Very good on minerals and rocks as hand specimens, with the identification keys and the mineral photographs that make lab work possible."},
+    {"title": "Global Tectonics", "authors": "Philip Kearey, Keith A. Klepeis and Frank J. Vine", "year": 2009, "note": "The bridge to the upper-level courses: plate-kinematics arithmetic, ridge, arc and transform structure, and the sedimentary record of basins."},
+    {"title": "The Solid Earth", "authors": "C. M. R. Fowler", "year": 2005, "note": "The quantitative companion: gravity, isostasy, flexure, seismology and heat, derived rather than described. Use it for the last chapter of this course and for Geophysics."},
+    {"title": "International Chronostratigraphic Chart", "authors": "International Commission on Stratigraphy", "year": 2024, "note": "The official divisions of geological time with their boundary ages and Global Boundary Stratotype Section and Point (GSSP) localities; cite the version date, since boundaries move."}
+  ],
   "next": [
     "mineralogy-petrology",
     "structural-geology",

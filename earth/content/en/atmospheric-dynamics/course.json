@@ -7,11 +7,27 @@
   "order": 90,
   "tagline": "Atmospheric thermodynamics, radiative transfer, cloud physics, equations of motion on a rotating planet, balanced flow, vorticity, the boundary layer and the general circulation",
   "summary": "This course turns the physics behind the weather into equations. It covers the thermodynamics of dry and moist air, radiative transfer, cloud physics, the equations of motion on a rotating planet, geostrophic and thermal-wind balance, vorticity and Rossby waves, the turbulent boundary layer, and baroclinic instability and the general circulation of the atmosphere.",
-  "overview": [],
+  "overview": [
+    "A weather map is a solution of the equations of motion. That sentence is the reason this course exists: it says that the swirling cloud patterns over an ocean, the jet stream at 250 hPa and the thunderstorm building over a hill are not separate phenomena but consequences, at different scales, of the same few conservation laws applied to a thin, rotating, moist, shallow layer of gas. Meteorology became a science the day those laws were written down and their consequences worked out, and dynamic meteorology is where the qualitative vocabulary of the weather — high, front, trough, jet — acquires a mechanism.",
+    "The course has two halves. The first is thermodynamics and radiation: the equation of state of air, dry and moist adiabats, virtual temperature, the skew-T diagram, entropy and available potential energy; then radiative transfer, absorption and emission, the two-stream and grey results, and the microphysics of cloud droplet activation, the Bergeron process and precipitation formation. The second is dynamics. We derive the equations of motion in a rotating frame, and from them the hierarchy of balances that makes the atmosphere tractable: hydrostatic, geostrophic, gradient-wind, cyclostrophic, and the thermal-wind relation that links the wind to the horizontal temperature field. We then develop vorticity — conservation, stretching, potential vorticity — and with it Rossby waves, the beta effect, barotropic and baroclinic instability, and the explanation of why mid-latitude weather systems grow, break and decay. The boundary layer and the general circulation close the course: surface drag, the Ekman spiral, the energy and momentum budget of the planetary boundary layer, and the Hadley, Ferrel and polar cells read as the atmosphere's response to the heating computed in [[earth-system/energy-balance]].",
+    "The mathematics is more demanding than in any other year-one course in the atlas: partial derivatives, vectors in a rotating frame, a little complex algebra for wave solutions, and the calculus of variations only in passing. What matters more is the habit of scale analysis — writing the equations down, estimating the size of every term from observed values, and dropping the ones that are small. Nearly every result in dynamic meteorology is a scale analysis that was carried out carefully and then interpreted physically.",
+    "The reward is considerable. Everything in [[meteorology/fronts-cyclones]], [[meteorology/storms]] and [[meteorology/forecasting]] is an application of what is done here, as is the dynamical core of every general circulation model in [[climate-modelling/earth-system-models]]. Numerical weather prediction is the single most successful application of the differential equations of physics, and this course is its prerequisite."
+  ],
   "prerequisites": [
     "meteorology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Apply the equation of state, the first law and the concepts of potential temperature and virtual temperature to a column of dry or moist air.",
+    "Read a skew-T log-p diagram and determine stability, lifting condensation level, level of free convection, inversion strength and CAPE.",
+    "State the two-stream and grey-atmosphere results for radiative transfer and estimate heating rates from absorption and emission.",
+    "Explain cloud droplet activation, the growth of droplets by condensation and collision–coalescence, and the Bergeron process, and why each is needed for rain.",
+    "Derive the equations of motion in a rotating frame, identify the Coriolis acceleration and estimate the Rossby number for a given motion.",
+    "Derive and apply the geostrophic, gradient-wind, cyclostrophic and Ekman balances, and the thermal-wind relation, stating where each fails.",
+    "Use potential vorticity conservation to explain lee troughs, the intensification of a cyclone aloft and the behaviour of a stratospheric intrusion.",
+    "Derive the Rossby wave dispersion relation and explain westward propagation of long waves, the generation of transient eddies by baroclinic instability and the resulting eddy heat transport.",
+    "Describe the structure of the planetary boundary layer, the logarithmic wind profile and the Ekman pumping that forces ascent in a cyclone.",
+    "Explain the Hadley, Ferrel and polar cells, the angular-momentum budget that requires them, and the role of the jets and of the storm tracks in closing that budget."
+  ],
   "chapters": [
     {
       "slug": "thermodynamics",
@@ -88,8 +104,129 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1835,
+      "title": "Ferrel proposes a mechanical theory of the winds",
+      "detail": "In a series of short papers, and in his 1856 book, Ferrel argues that the rotation of the Earth deflects moving air to the right in the northern hemisphere, supplying the missing term in Hadley's single-cell picture and making a three-cell circulation possible.",
+      "people": [
+        "William Ferrel"
+      ]
+    },
+    {
+      "year": 1856,
+      "title": "Buys Ballot's law",
+      "detail": "From observations at Dutch weather stations, Buys Ballot states the empirical rule that with the back to the wind in the northern hemisphere the low pressure lies on the left — the first widely used statement of what we now call geostrophy.",
+      "people": [
+        "Christines Buys Ballot"
+      ]
+    },
+    {
+      "year": 1904,
+      "title": "Vilhelm Bjerknes sets out the problem",
+      "detail": "In *Dynamic Meteorology and Hydrography*, Bjerknes writes down the six governing equations for pressure, density, temperature and the two wind components, together with the equations of state and continuity, and observes that the system is closed and that its solution is therefore a problem in numerical integration.",
+      "people": [
+        "Vilhelm Bjerknes"
+      ]
+    },
+    {
+      "year": 1912,
+      "title": "The Norwegian cyclone model",
+      "detail": "Jacob Bjerknes, working on the daily maps of the Norwegian forecast service, describes the wave cyclone with warm and cold fronts, an occlusion and a life cycle, and with his father Halvor and Tor Bergeron supplies the polar-front theory that organises mid-latitude forecasting.",
+      "people": [
+        "Jacob Bjerknes",
+        "Halvor Bjerknes",
+        "Tor Bergeron"
+      ]
+    },
+    {
+      "year": 1922,
+      "title": "Lewis Fry Richardson integrates the weather",
+      "detail": "Richardson performs a six-hour numerical forecast by hand from a single station profile, obtains a wildly wrong pressure change, and in the process invents numerical weather prediction and, in his posthumous *Forecast of Weather by Numerical Process*, the modern idea of a forecast model.",
+      "people": [
+        "Lewis Fry Richardson"
+      ]
+    },
+    {
+      "year": 1939,
+      "title": "Rossby's planetary waves",
+      "detail": "Carl-Gustaf Rossby, using the newly available upper-air observations from airplanes and kites, identifies the long waves of the westerlies, derives their phase speed from the variation of the Coriolis parameter with latitude, and explains the steering of surface weather — the discovery that made monthly and seasonal thinking possible.",
+      "people": [
+        "Carl-Gustaf Rossby"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "Charney's scaling and quasi-geostrophy",
+      "detail": "Jule Charney's scale analysis of the large-scale motion shows which terms in the equations of motion are small, yielding the quasi-geostrophic equations that underlie both theory and operational models, and with it the concept of a balanced flow whose fast waves are filtered rather than damped.",
+      "people": [
+        "Jule Charney"
+      ]
+    },
+    {
+      "year": 1947,
+      "title": "Baroclinic instability explained",
+      "detail": "In two papers, Eady and Charney develop the instability of a uniformly stratified, vertically sheared flow: the growth rate, the most unstable wavelength of about 4000 km and the conversion of available potential energy into eddy kinetic energy that powers the weather.",
+      "people": [
+        "E. T. Eady",
+        "Jule Charney"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "The first computer forecast",
+      "detail": "Charney, Fjørtoft and von Neumann integrate the barotropic vorticity equation on the ENIAC and produce a skillful 24-hour upper-level forecast in about five weeks of work; within a decade operational forecasting has moved from hand analysis to the machine.",
+      "people": [
+        "Jule Charney",
+        "Fjørtoft",
+        "John von Neumann"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "An Introduction to Dynamic Meteorology",
+      "authors": "James R. Holton and Gregory J. Hakim",
+      "year": 2012,
+      "note": "The standard text for this course: scale analysis, balanced flow, vorticity, waves and instability, with the physical argument always in front."
+    },
+    {
+      "title": "An Introduction to Atmospheric Dynamics",
+      "authors": "David G. Andrews",
+      "year": 2010,
+      "note": "Shorter and more elegant than the big texts, and the best route into vorticity, potential vorticity and wave–mean flow interaction."
+    },
+    {
+      "title": "Atmospheric Convection",
+      "authors": "Kerry A. Emanuel",
+      "year": 1994,
+      "note": "Moist thermodynamics and convective instability done with thermodynamic care; the source for CAPE, neutral entropy distribution and the thermodynamics of storms."
+    },
+    {
+      "title": "An Introduction to Atmospheric Radiation",
+      "authors": "Knutson J. Liou",
+      "year": 2002,
+      "note": "Absorption, emission, two-stream methods, heating rates and the remote sensing of the atmosphere: the radiative-transfer chapter in book form."
+    },
+    {
+      "title": "Microphysics of Clouds and Precipitation",
+      "authors": "Hans R. Pruppacher and James D. Klett",
+      "year": 2005,
+      "note": "The reference work on cloud physics, from activation and growth by condensation to the electrification and glaciation of clouds."
+    },
+    {
+      "title": "Atmospheric Modeling, Data Assimilation and Predictability",
+      "authors": "Eugenia Kalnay",
+      "year": 2002,
+      "note": "How the equations of this course become an operational forecast: the model hierarchy, the filter and the limits of predictability."
+    },
+    {
+      "title": "Atmosphere, Ocean and Climate Dynamics",
+      "authors": "John Marshall and R. Alan Plumb",
+      "year": 2008,
+      "note": "The general-circulation chapters: the angular-momentum budget, the jets, the storm tracks, the energy cycle and the overturning, with the exercises that make you work."
+    }
+  ],
   "next": [
     "climate-system"
   ]

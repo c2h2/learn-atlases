@@ -1,94 +1,231 @@
 {
-  "slug": "meteorology",
-  "title": "Meteorology",
-  "full_title": "Weather and Meteorology",
-  "area": "atmosphere",
-  "level": 1,
-  "order": 40,
-  "tagline": "The atmosphere’s structure, radiation and temperature, humidity, stability, clouds and precipitation, winds, fronts, storms and forecasting",
-  "summary": "Meteorology explains the weather from the physics of the air. This course covers the composition and layers of the atmosphere, radiation and temperature, water vapour and stability, clouds and precipitation, pressure and winds, air masses, fronts and mid-latitude cyclones, thunderstorms and tropical cyclones, and how the weather is observed and forecast.",
-  "overview": [],
-  "prerequisites": [],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "atmosphere-structure",
-      "title": "Composition and structure of the atmosphere",
-      "summary": "The gases of the air, how pressure and density fall with height, and the layers from the troposphere to the thermosphere.",
-      "requires": []
-    },
-    {
-      "slug": "radiation-temperature",
-      "title": "Radiation and temperature",
-      "summary": "Solar and terrestrial radiation, the surface energy budget, and the daily and seasonal cycles of temperature.",
-      "requires": [
-        "meteorology/atmosphere-structure"
-      ]
-    },
-    {
-      "slug": "moisture",
-      "title": "Water vapour and humidity",
-      "summary": "Measures of humidity, saturation and the dew point, and the ways in which air is cooled to condensation.",
-      "requires": [
-        "meteorology/atmosphere-structure"
-      ]
-    },
-    {
-      "slug": "stability",
-      "title": "Atmospheric stability",
-      "summary": "Adiabatic processes, the dry and moist lapse rates, stable and unstable air, and convection.",
-      "requires": [
-        "meteorology/moisture",
-        "meteorology/radiation-temperature"
-      ]
-    },
-    {
-      "slug": "clouds-precipitation",
-      "title": "Clouds and precipitation",
-      "summary": "How clouds form and are classified, and how droplets and ice crystals grow into rain, snow and hail.",
-      "requires": [
-        "meteorology/stability"
-      ]
-    },
-    {
-      "slug": "winds",
-      "title": "Pressure and winds",
-      "summary": "The pressure-gradient, Coriolis and friction forces, the geostrophic wind and the global pattern of winds.",
-      "requires": [
-        "meteorology/atmosphere-structure"
-      ]
-    },
-    {
-      "slug": "fronts-cyclones",
-      "title": "Air masses, fronts and mid-latitude cyclones",
-      "summary": "Air masses, warm and cold fronts, and the life cycle of extratropical cyclones.",
-      "requires": [
-        "meteorology/winds",
-        "meteorology/stability"
-      ]
-    },
-    {
-      "slug": "storms",
-      "title": "Thunderstorms and tropical cyclones",
-      "summary": "How thunderstorms, tornadoes and hurricanes form, and what makes them dangerous.",
-      "requires": [
-        "meteorology/clouds-precipitation",
-        "meteorology/winds"
-      ]
-    },
-    {
-      "slug": "forecasting",
-      "title": "Observing and forecasting the weather",
-      "summary": "Weather stations, balloons, satellites and radar, weather maps, and numerical weather prediction and its limits.",
-      "requires": [
-        "meteorology/fronts-cyclones"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "atmospheric-dynamics",
-    "atmospheric-chemistry"
-  ]
+ "slug": "meteorology",
+ "title": "Meteorology",
+ "full_title": "Weather and Meteorology",
+ "area": "atmosphere",
+ "level": 1,
+ "order": 40,
+ "tagline": "The atmosphere’s structure, radiation and temperature, humidity, stability, clouds and precipitation, winds, fronts, storms and forecasting",
+ "summary": "Meteorology explains the weather from the physics of the air. This course covers the composition and layers of the atmosphere, radiation and temperature, water vapour and stability, clouds and precipitation, pressure and winds, air masses, fronts and mid-latitude cyclones, thunderstorms and tropical cyclones, and how the weather is observed and forecast.",
+ "overview": [
+  "Meteorology is the only branch of the earth sciences in which the public reads the output every day, judges it, and complains about it — and the only one whose predictions are verified, by everyone, within forty-eight hours. That exposure is not an embarrassment. It is the reason the subject developed, later than the others, into a quantitative science of the atmosphere: because a forecast is an hypothesis with a deadline, and because the twentieth century's argument about whether weather could be predicted at all was settled not by philosophy but by arithmetic, in a hand calculation that took six weeks and produced a six-hour forecast of a depression that had already happened.",
+  "This course builds the physics from the bottom. The air is a shallow, rotating, moist shell less than one per cent of the planet's radius, whose pressure falls by half in the first $5.5\\ \\mathrm{km}$, whose temperature profile decides whether a cloud will form, and whose water vapour — a gas that makes up between $0.1$ and $4$ per cent of the atmosphere by volume and up to ninety per cent of the trouble — condenses, freezes and releases heat as the air moves. From the ideal gas law, the hydrostatic balance and the first law of thermodynamics you can derive the lapse rate, the height of the cloud base, the strength of a thunderstorm's updraught and the wind round a low. From the rotation of the Earth you get the geostrophic wind, which is the single most useful approximation in the subject, and from the instability of the westerlies you get the fronts, the cyclones and the weather of the mid-latitudes.",
+  "The course then works outwards from the individual parcel to the storm. Humidity and stability explain why one summer afternoon is clear and the next produces a hailstorm. Cloud microphysics explains why most clouds never rain and how a droplet grows a million times in volume. Synoptic-scale dynamics explain the air masses, the fronts and the life cycle of the extratropical cyclone, and the thermodynamics of condensation explain the tropical cyclone, which is a heat engine running on sea-surface temperature. The last chapter is about how we observe and predict all of it: the radiosonde, the satellite, the radar, the analysis, and the numerical model whose forecast skill improves by about one day per decade and whose limits are set by chaos.",
+  "Two other courses take the subject further. [[atmospheric-dynamics/planetary-boundary-layer]] and its siblings do the mathematics of motion in the rotating frame properly, including the quasi-geostrophic theory that makes the weather map intelligible; [[climate-system/energy-budget]] and its siblings take the same physics and average it over the globe and the year, which is where climatology begins. This course stays with the weather map, the sounding and the sky."
+ ],
+ "prerequisites": [],
+ "outcomes": [
+  "State the composition of the atmosphere, explain how pressure, density and temperature fall with height, and use the hypsometric and hydrostatic equations to compute thicknesses, scale heights and altimeter readings.",
+  "Account for the heating of the surface and the atmosphere by solar and terrestrial radiation, construct a surface energy budget, and explain the daily and seasonal cycles of temperature, including the phase lag and the effect of cloud, wind and moisture.",
+  "Convert between the measures of humidity — vapour pressure, mixing ratio, relative humidity, dew point, potential temperature and virtual temperature — and compute the lifting condensation level and the level of free convection from a skew-T diagram.",
+  "Apply the dry and moist adiabatic lapse rates to determine stability, compute cape and convective inhibition from a sounding, and explain the roles of inversion, entrainment and evaporative cooling in convection.",
+  "Classify clouds by form and height, explain the formation of cloud droplets by nucleation on aerosol, the Bergeron process and the collision-coalescence mechanism, and account for the types of precipitation and their measurement.",
+  "Derive the geostrophic and thermal wind from the pressure-gradient and Coriolis forces, read a surface and upper-air chart, and explain the three-cell circulation, the jet streams and the seasonal migration of the wind and pressure belts.",
+  "Describe the classification of air masses, the structure and weather of warm and cold fronts, and the life cycle of an extratropical cyclone in the Norwegian and the modern model.",
+  "Explain the mechanism of a thunderstorm and a supercell, the hazards of hail, tornado, lightning and microburst, and the thermodynamic limit on the intensity of a tropical cyclone."
+ ],
+ "chapters": [
+  {
+   "slug": "atmosphere-structure",
+   "title": "Composition and structure of the atmosphere",
+   "summary": "The gases of the air, how pressure and density fall with height, and the layers from the troposphere to the thermosphere.",
+   "requires": []
+  },
+  {
+   "slug": "radiation-temperature",
+   "title": "Radiation and temperature",
+   "summary": "Solar and terrestrial radiation, the surface energy budget, and the daily and seasonal cycles of temperature.",
+   "requires": [
+    "meteorology/atmosphere-structure"
+   ]
+  },
+  {
+   "slug": "moisture",
+   "title": "Water vapour and humidity",
+   "summary": "Measures of humidity, saturation and the dew point, and the ways in which air is cooled to condensation.",
+   "requires": [
+    "meteorology/atmosphere-structure"
+   ]
+  },
+  {
+   "slug": "stability",
+   "title": "Atmospheric stability",
+   "summary": "Adiabatic processes, the dry and moist lapse rates, stable and unstable air, and convection.",
+   "requires": [
+    "meteorology/moisture",
+    "meteorology/radiation-temperature"
+   ]
+  },
+  {
+   "slug": "clouds-precipitation",
+   "title": "Clouds and precipitation",
+   "summary": "How clouds form and are classified, and how droplets and ice crystals grow into rain, snow and hail.",
+   "requires": [
+    "meteorology/stability"
+   ]
+  },
+  {
+   "slug": "winds",
+   "title": "Pressure and winds",
+   "summary": "The pressure-gradient, Coriolis and friction forces, the geostrophic wind and the global pattern of winds.",
+   "requires": [
+    "meteorology/atmosphere-structure"
+   ]
+  },
+  {
+   "slug": "fronts-cyclones",
+   "title": "Air masses, fronts and mid-latitude cyclones",
+   "summary": "Air masses, warm and cold fronts, and the life cycle of extratropical cyclones.",
+   "requires": [
+    "meteorology/winds",
+    "meteorology/stability"
+   ]
+  },
+  {
+   "slug": "storms",
+   "title": "Thunderstorms and tropical cyclones",
+   "summary": "How thunderstorms, tornadoes and hurricanes form, and what makes them dangerous.",
+   "requires": [
+    "meteorology/clouds-precipitation",
+    "meteorology/winds"
+   ]
+  },
+  {
+   "slug": "forecasting",
+   "title": "Observing and forecasting the weather",
+   "summary": "Weather stations, balloons, satellites and radar, weather maps, and numerical weather prediction and its limits.",
+   "requires": [
+    "meteorology/fronts-cyclones"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": 1643,
+   "title": "The weight of the air",
+   "detail": "Torricelli's barometer and Pascal's experiment on the Puy-de-Dôme established that the atmosphere has weight and that pressure falls with height, which made the air an object of mechanics rather than of philosophy.",
+   "people": [
+    "Evangelista Torricelli",
+    "Blaise Pascal"
+   ]
+  },
+  {
+   "year": 1803,
+   "title": "Luke Howard names the clouds",
+   "detail": "Howard's nomenclature of cirrus, cumulus, stratus and nimbus, proposed to the Askesian Society in a lecture delivered under the pseudonym, gave the observation of clouds a language and made cloud statistics possible.",
+   "people": [
+    "Luke Howard"
+   ]
+  },
+  {
+   "year": 1838,
+   "title": "The Coriolis force",
+   "detail": "Gaspard-Gustave de Coriolis described the apparent forces in a rotating frame, and Ferrel, von Bezold and Buys Ballot applied them to the atmosphere over the next forty years, explaining why the wind blows across the isobars rather than down the gradient.",
+   "people": [
+    "Gaspard-Gustave de Coriolis",
+    "William Ferrel",
+    "Christoph Buys Ballot"
+   ]
+  },
+  {
+   "year": 1873,
+   "title": "The first synoptic charts",
+   "detail": "The International Meteorological Organisation, founded at Vienna, and the national services that followed, began the simultaneous plotting of observations on maps — the technology that made the front, the anticyclone and the air mass visible.",
+   "people": []
+  },
+  {
+   "year": 1904,
+   "title": "Vilhelm Bjerknes's programme",
+   "detail": "Bergen's founder set out the ideal of weather prediction as a problem in mechanics and thermodynamics: given the state of the atmosphere, solve the equations forward. It took sixty years and the electronic computer to do it.",
+   "people": [
+    "Vilhelm Bjerknes"
+   ]
+  },
+  {
+   "year": 1919,
+   "title": "The Norwegian model",
+   "detail": "Vilhelm and Jacob Bjerknes, Halvor Solberg and Tor Bergeron, working from the dense telegraph network of wartime Norway, described the polar front, the air masses and the life cycle of the mid-latitude cyclone in a single decade.",
+   "people": [
+    "Vilhelm Bjerknes",
+    "Jacob Bjerknes",
+    "Tor Bergeron",
+    "Halvor Solberg"
+   ]
+  },
+  {
+   "year": 1922,
+   "title": "The cloud physics of rain",
+   "detail": "Tor Bergeron's explanation of precipitation by the ice-crystal process in mixed-phase clouds, completed with Walter Findeisen, resolved a question that had stood for two centuries: why clouds with droplets too small to fall nevertheless rain.",
+   "people": [
+    "Tor Bergeron",
+    "Walter Findeisen"
+   ]
+  },
+  {
+   "year": 1950,
+   "title": "The first numerical forecast",
+   "detail": "Jule Charney, Fjørtoft and von Neumann ran a barotropic model on the ENIAC and produced a usable twelve-hour forecast, sixty years after Bjerknes's programme and six weeks of hand calculation by Lewis Richardson.",
+   "people": [
+    "Jule Charney",
+    "Ragnar Fjørtoft",
+    "John von Neumann"
+   ]
+  },
+  {
+   "year": 1960,
+   "title": "TIROS and the radiosonde network",
+   "detail": "The first successful television infrared observation satellite began the continuous monitoring of the cloud cover of the oceans and the tropics, where the surface observations had never reached; the radiosonde, flown operationally since 1929, supplied the sounding.",
+   "people": []
+  },
+  {
+   "year": 1982,
+   "title": "Chaos and the limits of prediction",
+   "detail": "The recognition that the atmosphere's error doubling time is about two days, formalised from Edward Lorenz's 1963 model and demonstrated operationally by the spread of ensemble forecasts, set the horizon of deterministic prediction at about ten days.",
+   "people": [
+    "Edward Lorenz"
+   ]
+  }
+ ],
+ "references": [
+  {
+   "title": "The Atmosphere: An Introduction to Meteorology",
+   "authors": "Frederick K. Lutgens and Edward J. Tarbuck",
+   "year": 2022,
+   "note": "The standard introductory text, and the best of them at connecting the physics to the sky. Use it alongside this course for the illustrations of cloud and weather types."
+  },
+  {
+   "title": "Meteorology Today: An Introduction to Weather, Climate, and the Environment",
+   "authors": "C. Donald Ahrens",
+   "year": 2022,
+   "note": "More encyclopaedic than Lutgens and stronger on the observational and warning side; the standard American classroom text."
+  },
+  {
+   "title": "The Atmospheric Boundary Layer",
+   "authors": "John R. Garratt",
+   "year": 1992,
+   "note": "The bridge from fluid mechanics to weather: radiation, turbulence, surface energy balance and the layer the rest of this course treats as a boundary condition. Short and exacting."
+  },
+  {
+   "title": "A Short Course in Cloud Physics",
+   "authors": "Richard R. Rogers and H. R. Prabhakara K. Rao",
+   "year": 1989,
+   "note": "The classic: thermodynamics, cloud microphysics and electrification worked through with numbers you can follow. Third edition, and still the best value in the subject."
+  },
+  {
+   "title": "Synoptic Weather Forecasting",
+   "authors": "Lewis J. Battan",
+   "year": 1976,
+   "note": "Old, clear and still the best short account of how a weather map is actually read; the chapter on the upper-air chart is worth the price."
+  },
+  {
+   "title": "The Storm King: The Extraordinary Life of the Great Scientist Who Uncloaked the Mystery of Weather",
+   "authors": "Jack Williams",
+   "year": 2003,
+   "note": "The life of Vilhelm Bjerknes and the founding of forecasting, by the curator who wrote the best short history of the subject. Explains why Bergen matters."
+  }
+ ],
+ "next": [
+  "atmospheric-dynamics",
+  "atmospheric-chemistry"
+ ]
 }

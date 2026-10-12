@@ -7,11 +7,28 @@
   "order": 150,
   "tagline": "Snow and firn, mass and energy balance, ice flow and basal sliding, ice sheets and ice shelves, sea ice, permafrost and observing the cryosphere",
   "summary": "Ice covers about a tenth of the land and much of the polar oceans, and the ice sheets hold enough water to raise sea level by tens of metres. This course covers how snow becomes glacier ice, the mass and energy balance of glaciers, the physics of ice flow and basal sliding, the Greenland and Antarctic ice sheets and their ice shelves, sea ice, permafrost, and how the cryosphere is observed and how it is changing.",
-  "overview": [],
+  "overview": [
+    "At the last glacial maximum, ice more than three kilometres thick lay over London and sea level stood 120 m lower. Today the Greenland and Antarctic ice sheets hold 65 % of the world's fresh water and, if both melted, about 65 m of sea level; the glaciers of mountains and subpolar regions hold less than half a millimetre of sea-equivalent but supply water to a sixth of humanity, and Arctic sea-ice extent in September has shrunk by roughly a quarter since 1979. Glaciology is the study of ice as a geological and climatic agent: how snow becomes ice, how ice deforms and slides, how it gains and loses mass, how it responds to climate on timescales from a season to a millennium, and how it records and drives climate.",
+    "The course follows the physical chain. Snow accumulates, buries itself, and turns to firn and then to ice by the closure of air pores — a process that also traps the atmosphere above the ice sheet and makes the ice core an archive. The surface **mass and energy balance** determines whether ice grows or wastes, and it is a radiation and turbulence problem with a strong elevation feedback: melt rises with altitude lapse rate and with cloud, and the albedo of snow is the highest and most variable in the system. Ice is a soft solid whose **flow** obeys Glen's empirical power law, so an ice sheet is a gravity current whose thickness and slope set its velocity; where the bed is at pressure-melting point, water lubricates it and **basal sliding** can dominate, producing the ice streams of West Antarctica and the seasonal speed-ups of alpine and Greenlandic glaciers. **Ice sheets** are then treated as systems: their dynamics, the marine ice-sheet instability, the sediment and topographic controls, the isostatic response of the crust beneath them, and the reconstructions and the modelling of their collapse. **Ice shelves** float, and their buttressing is what keeps the interior of West Antarctica where it is; their melt and calving are ocean-driven, which puts the ocean at the centre of the ice problem. **Sea ice** is a different material and a different problem — thermodynamic growth, ridging, deformation, leads, and the albedo and insulation it provides. **Permafrost** is the frozen ground, and its thaw is a heat-conduction problem with a latent-heat and a carbon consequence. The last chapter is **observation**: mass balance from the field, from repeat altimetry and gravimetry, from input–output; velocity from feature tracking and InSAR; thickness from radar; and the record of the cryosphere in the observing systems that now monitor it.",
+    "The physics is elementary — viscosity, creep, heat conduction, hydrostatics — but applied with care to systems whose properties are poorly known and whose boundaries are the ocean floor and the bed. The exercises ask for real numbers: a velocity from Glen's law, a flux through a gate, a mass balance from altimetry, a retreat rate from a climate sensitivity.",
+    "Two things make this course timely. The cryosphere is the part of the climate system whose observed change is most directly connected to a global, measurable consequence — sea level — and it is also the part whose future is least constrained, because the instabilities that matter operate on scales that models still resolve poorly. The course says which numbers are solid, which are debated, and why."
+  ],
   "prerequisites": [
     "oceanography"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the transformation of snow to firn to ice, the closure of the firn pore space, and what the firn column does to a mass-balance record and to an altimetric signal.",
+    "Compute the surface energy balance of a snow or ice surface and a melt rate from the turbulent and radiative terms.",
+    "State and apply the continuity equation for mass balance, and compute the balance from stakes, from snow-pit accumulation and from altimetry.",
+    "Derive the shallow-ice-approximation velocity profile from Glen's flow law and compute the flux through a gate.",
+    "Explain the physics of deformational and frictional sliding, the effective pressure concept, and the observed seasonal and tidally forced speed-ups.",
+    "Describe the dynamics, structure and stability of an ice sheet, including the marine ice-sheet and marine ice-cliff instabilities and the role of buttressing.",
+    "Explain ice-shelf melange, rift propagation and calving, and the ocean-driven melt that controls them.",
+    "Model the thermodynamic growth of sea ice, the snow–ice and ridged facies, and the albedo–insulation feedbacks; interpret a sea-ice extent record.",
+    "Describe the thermal regime of permafrost, active-layer processes, thermokarst, and the carbon and infrastructure consequences of thaw.",
+    "Choose among the spaceborne and airborne methods for measuring ice velocity, elevation, thickness and mass change, and state what each can and cannot resolve.",
+    "Reconcile a field mass balance, a flux-gate discharge and a gravimetric mass change for the same glacier or ice sheet, and account for the difference."
+  ],
   "chapters": [
     {
       "slug": "snow-firn",
@@ -84,8 +101,138 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1837,
+      "title": "Agassiz proposes an ice age",
+      "detail": "At the first meeting of the Société Helvétique des Sciences Naturelles in Neuchâtel, Louis Agassiz argues that Alpine glaciers once covered the Jura and the Swiss plateau, carrying erratics and polishing the bedrock, and that the Earth had been glaciated — a claim most geologists rejected for a decade.",
+      "people": [
+        "Louis Agassiz"
+      ]
+    },
+    {
+      "year": 1840,
+      "title": "Études sur les glaciers is published",
+      "detail": "Agassiz's systematic volume assembles the evidence for past ice extent, the mechanics of glacier motion and the classification of glacial landforms, and makes the glacial theory respectable.",
+      "people": [
+        "Louis Agassiz"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "The first ice core reaches bedrock",
+      "detail": "At Camp IV on the Greenland ice sheet, a French expedition led by Paul-Émile Victor and glaciologist Max Aubert drills 936 m to bedrock, the first deep borehole through an ice sheet, and establishes that the ice is layered, old and drillable.",
+      "people": [
+        "Paul-Émile Victor",
+        "Max Aubert"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "A flow law for ice",
+      "detail": "John Nye, working on the deformation of Alpine glaciers, proposes the power-law relation between strain rate and stress that bears his name and derives the velocity profile of a glacier over a rigid bed; the exponent of about three has been measured ever since.",
+      "people": [
+        "John Nye"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Sliding and the effective pressure",
+      "detail": "Johannes Weertman derives a sliding law in which regelation at the upstream side of a bedrock bump and melting downstream set the slip rate, and shows that basal sliding can exceed internal deformation — the beginning of the modern understanding of fast-flowing ice.",
+      "people": [
+        "Johannes Weertman"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "The ice core becomes a climate record",
+      "detail": "Dansgaard and colleagues report the isotope and dust stratigraphy of the 2164 m Camp Century core, including the abrupt terminal change of the Younger Dryas, and demonstrate that an ice sheet preserves a long, dated record of temperature and circulation.",
+      "people": [
+        "Willie Dansgaard",
+        "Chester Langway"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "The Physics of Glaciers",
+      "detail": "W. Stanley Paterson's *The Physics of Glaciers* assembles the mechanics, thermodynamics, hydrology and dynamics of ice masses into one quantitative text, and defines the discipline for the satellite era that followed.",
+      "people": [
+        "W. Stanley Paterson"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "GISP2 reaches bedrock",
+      "detail": "The Greenland Ice Sheet Project 2 borehole reaches 3028.5 m at Summit, recovering more than 100 000 years of layered ice with annual resolution through the last glacial, and with it the record of abrupt climate change that anchors the palaeoclimate literature.",
+      "people": [
+        "Chester Langway",
+        "Paul Mayewski",
+        "Richard Alley"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "Ice sheets weighed from orbit",
+      "detail": "Velicogna and Wahr use GRACE gravity differences to measure the mass loss of Greenland and Antarctica directly, and report accelerations in both; the gravimetric method becomes one of the three independent lines of evidence on ice-sheet mass balance.",
+      "people": [
+        "Isabella Velicogna",
+        "John Wahr"
+      ]
+    },
+    {
+      "year": 2010,
+      "title": "NEEM drills the oldest dated ice",
+      "detail": "The North Greenland Eemian Ice Drilling project reaches bedrock at 2541 m after crossing the ice divide from a new camp, recovering ice from the last interglacial and, in the deepest metres, the oldest continuously dated ice yet obtained.",
+      "people": [
+        "Dorthe Dahl-Jensen",
+        "Anders Svensson"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Physics of Glaciers",
+      "authors": "Richard Cuffey and W. Stanley Paterson",
+      "year": 2010,
+      "note": "The reference text for the physics of this course: flow, deformation, sliding, thermodynamics, mass balance and dynamics, with the derivations."
+    },
+    {
+      "title": "Glaciers and Glaciation",
+      "authors": "Andrew M. Benn and David I. Glasser",
+      "year": 2010,
+      "note": "The other half — the processes seen in the field, the landforms, the landsystems and the Quaternary record."
+    },
+    {
+      "title": "Fundamentals of Glacier Dynamics",
+      "authors": "C. J. van der Veen",
+      "year": 2013,
+      "note": "The dynamics worked through: flow laws, velocity solutions, stability, streaming and the marine ice-sheet problem."
+    },
+    {
+      "title": "Principles of Glacier Mechanics",
+      "authors": "R. LeB. Hooke",
+      "year": 2003,
+      "note": "A clear, physical route into stress, strain and deformation for readers who want the mechanics before the models."
+    },
+    {
+      "title": "Sea Ice",
+      "authors": "Horner, Ackley, Dieckmann, Gerbi and Tison (eds.)",
+      "year": 2017,
+      "note": "The standard advanced text on sea ice: growth, deformation, biogeochemistry, remote sensing and the observed decline."
+    },
+    {
+      "title": "The Periglacial Environment",
+      "authors": "Hugh M. French",
+      "year": 2017,
+      "note": "Frozen ground, the active layer, thermokarst and ice-wedge processes, and the carbon and engineering consequences of thaw."
+    },
+    {
+      "title": "Special Report on the Ocean and Cryosphere in a Changing Climate",
+      "authors": "IPCC (convening lead authors Hans-Otto Pörtner and Debra Roberts)",
+      "year": 2019,
+      "note": "The assessed numbers for glacier and ice-sheet mass balance, sea ice, permafrost and sea level, with the calibrated uncertainty language."
+    }
+  ],
   "next": [
     "palaeoclimate"
   ]

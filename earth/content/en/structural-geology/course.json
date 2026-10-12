@@ -7,11 +7,27 @@
   "order": 60,
   "tagline": "Stress, strain, rock rheology, fractures and faults, folds and foliations, shear zones, geological maps and the structure of rifts and mountain belts",
   "summary": "Structural geology reconstructs how rocks have been deformed, from single grains to whole mountain belts. This course covers stress and strain, how rocks deform by fracture and by flow, joints and faults, folds, foliations and shear zones, reading and drawing geological maps and cross-sections, and the large-scale structure of rifts, mountain belts and strike-slip zones.",
-  "overview": [],
+  "overview": [
+    "A sedimentary basin, a fault scarp, a folded road cutting, the line of a ridge: each is a record of forces that acted on rock, and structural geology is the craft of reading that record. It begins with the observation that rocks which now lie flat were deposited horizontally, that beds which now dip were moved, and that the geometry of the movement can be recovered from the geometry of the deformed rock. From that beginning it runs to the reconstruction of whole mountain belts — where the collision was, how much crust was shortened, which way the rocks moved, and at what depth and temperature it happened.",
+    "The subject has a reputation for being descriptive, and it is; but the description is geometry in the service of mechanics. This course therefore moves in a deliberate order. First the quantities: **stress**, the force per unit area acting on planes of every orientation inside a rock, and **strain**, the change of shape and size. Both are tensors, and both can be summarised by a circle or an ellipse you can draw by hand. Then the materials: how rocks respond — elastically at low stress, by frictional failure when the Coulomb criterion is met, by slow crystal creep when they are hot enough — and why the same limestone is brittle at 3 km depth and ductile at 12 km. Then the structures themselves: joints, faults, folds, cleavages and mylonites, each read as the trace of a particular combination of stress, strain and material. Finally the large scale: extensional rift systems, contractional fold-and-thrust belts, strike-slip zones, and the maps and balanced cross-sections on which exploration, groundwater and hazard work all depend.",
+    "What makes the course hard is the need to hold three things at once: a three-dimensional geometry in your head, a mechanical criterion on paper, and a field or borehole dataset that is always incomplete. The remedy is the same as it has been for a century of structural geologists — draw constantly, measure quantitatively, and ask of every structure what it implies about the others around it. A fault needs a fold somewhere; a fold needs a shortening; a shortening needs a sink.",
+    "Expect to use trigonometry, a little linear algebra and the elementary continuum mechanics of [[physics/continuum]] if you have met it, and to practise the graphical constructions — the Mohr circle, the stereonet, the strain ellipse — until they are quick. Nothing in this course is more useful, in geology jobs of every kind, than the ability to build a defensible cross-section from a map and a few boreholes."
+  ],
   "prerequisites": [
     "physical-geology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Resolve the state of stress at a point into principal stresses, draw the Mohr circle, and read the traction on any plane.",
+    "Describe a finite deformation as a strain ellipse or ellipsoid, and measure extension, shear and shortening from markers in a rock.",
+    "Predict whether a rock will fracture or flow for given conditions, using the Coulomb criterion, Byerlee's law and the rough dependence of creep on temperature and strain rate.",
+    "Classify faults and joints from their geometry and slickenlines, and reconstruct the paleostress field that produced them.",
+    "Classify folds from their interlimb angle, axial surface, profile and layer-parallel shear, and distinguish buckling from flexural slip and flow.",
+    "Identify the mesoscopic and microscopic kinematic indicators of a shear zone and state the sense of shear they record.",
+    "Solve three-point problems, draw structure contours and construct a geological cross-section of consistent depth from a map.",
+    "Use a stereonet to measure the orientation of planes and lineations, find intersection lineations and fold axes from limb data, and read a contoured pole diagram.",
+    "Describe the architecture of a normal-faulted rift, a fold-and-thrust belt and a strike-slip system, and estimate the crustal shortening or extension each accommodates.",
+    "Estimate the slip on a fault from its throw, heave and along-strike extent, and explain why displacement is limited by fault length."
+  ],
   "chapters": [
     {
       "slug": "stress",
@@ -89,8 +105,121 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1669,
+      "title": "Steno states the geometry of strata",
+      "detail": "Nicolaus Steno's short treatise on a solid contained in a solid sets out original horizontality, original lateral continuity and superposition — the three geometric rules that make a deformed sequence measurable against its original state.",
+      "people": [
+        "Nicolaus Steno"
+      ]
+    },
+    {
+      "year": 1788,
+      "title": "Siccar Point and the discordance",
+      "detail": "James Hutton, with John Hall and James Hall of Glenbuchie, examines the unconformity where Silurian strata lie on steeply dipping greywacke, and publishes the argument that strata were once deposited, then tilted and eroded, then deposited again — deformation as an event with a date.",
+      "people": [
+        "James Hutton",
+        "John Hall"
+      ]
+    },
+    {
+      "year": 1875,
+      "title": "Folding distinguished from overthrusting",
+      "detail": "Eduard Suess separates folds from low-angle breaks of the surface in the Eastern Alps and names the Überschiebung, the overthrust, forcing the Alps to be a pile of transported sheets rather than a squeezed succession.",
+      "people": [
+        "Eduard Suess"
+      ]
+    },
+    {
+      "year": 1912,
+      "title": "The Moine Thrust is mapped",
+      "detail": "After two decades of fieldwork and drilling, Peach, Horne, Clough and colleagues publish the structure of the North-West Highlands of Scotland: a low-angle fault along which ancient Lewisian and Moine rocks have been carried west over young Cambrian and Cambrian-Ordovician strata, the first great thrust documented in the field.",
+      "people": [
+        "Ben Peach",
+        "John Horne",
+        "Clifford Clough"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "The strength of the Earth",
+      "detail": "M. King Hubbert shows that the frictional strength of a dry crust is far too high for the observed low-angle faults unless pore pressure is high, and revives E. M. Anderson's analysis of faulting — the beginning of quantitative stress in the upper crust.",
+      "people": [
+        "M. King Hubbert",
+        "E. M. Anderson"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "Strain recorded by passive markers",
+      "detail": "Dan McKenzie formalises what a deformed ooid, oolith or porphyroblast records, treating the marker population as a set of lines carried by the deformation and showing how the strain ellipse is recovered from their orientations and lengths.",
+      "people": [
+        "Dan McKenzie"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "Byerlee's law",
+      "detail": "From the triaxial friction experiments of the previous decade, Charles Byerlee publishes the empirical relation that the differential strength of crustal rock rises at about 0.85 times the normal effective stress up to some 2 kbar, above which it is nearly constant — the failure envelope used in every fault-mechanics calculation since.",
+      "people": [
+        "Charles Byerlee"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Balanced cross-sections in the Overthrust Belt",
+      "detail": "John Elliott and John Johnson demonstrate that the thrust sheets of Wyoming, Utah and Idaho can be restored to a section of constant area and constant length, turning structural maps into testable three-dimensional models with real implications for hydrocarbon exploration.",
+      "people": [
+        "John Elliott",
+        "John Johnson"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Structural Geology",
+      "authors": "Haakon Fossen",
+      "year": 2016,
+      "note": "The modern classroom text: clear mechanics, excellent photographs and map and section problems. The first book to read alongside this course."
+    },
+    {
+      "title": "Structural Analysis: A Concise Introduction",
+      "authors": "Richard Twiss and Eldridge Moores",
+      "year": 2007,
+      "note": "The continuum mechanics and the tensor and Mohr-circle geometry, done properly and compactly. Use it when you want the derivation."
+    },
+    {
+      "title": "Structural Geology of Rocks and Regions",
+      "authors": "George Davis, Stephen J. Reynolds and Chuck Kluth",
+      "year": 2012,
+      "note": "The regional examples and the map-scale geometry of rifts, thrust belts and salt tectonics."
+    },
+    {
+      "title": "The Techniques of Modern Structural Geology, volumes 1–3",
+      "authors": "John Ramsay and Martin Huber",
+      "year": 1987,
+      "note": "The classic reference on strain, folds and fractures, and on the field methods of measurement. Demanding but irreplaceable."
+    },
+    {
+      "title": "Microtectonics",
+      "authors": "Rob Passchier and Reiners Trouw",
+      "year": 2005,
+      "note": "Thin-section-scale kinematic indicators and the microstructures of shear zones, with the mechanisms behind them."
+    },
+    {
+      "title": "Deformation of Rocks",
+      "authors": "Peter Price and Michael Cosgrove",
+      "year": 1991,
+      "note": "The mechanics-first treatment: stress, failure criteria, and the mechanics of folding and faulting at every scale."
+    },
+    {
+      "title": "Understanding Deformation: The Purves Text in Structural Geology",
+      "authors": "Peter Hudleston",
+      "year": 2016,
+      "note": "A gentler route into strain and rheology, with worked examples close to those in the exercises here."
+    }
+  ],
   "next": [
     "geophysics",
     "natural-hazards"

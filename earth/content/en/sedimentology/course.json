@@ -7,12 +7,28 @@
   "order": 70,
   "tagline": "Sediment grains and transport, bedforms, facies and depositional environments, carbonates and evaporites, stratigraphic correlation, basins and sequence stratigraphy",
   "summary": "Sedimentary rocks preserve ancient rivers, deserts, coasts and seas. This course covers sediment grains and the physics of their transport, bedforms and sedimentary structures, facies and the main depositional environments on land and in the sea, carbonates and evaporites, the stratigraphy used to correlate and date layers, and how sedimentary basins form, subside and fill.",
-  "overview": [],
+  "overview": [
+    "Every sedimentary rock is a report on a place and a time. A cross-bedded sandstone says something about the depth, the current and the sorting of the water it fell through; a mudstone with dropstones says the ice was calving into a lake; a palaeosol says the basin was, for a while, dry land. Sedimentology is the study of how sediment is made, moved, deposited, buried and turned to stone, and of how to read the resulting rock back into the environment that formed it. It is the discipline that turns a borehole log into a landscape.",
+    "The course follows the sediment through its life. It starts with the grains themselves — what they are made of, how round and how sorted they are, and what that says about how far they travelled and how many times they were reworked. It then takes up the physics of transport: why grains of different size move at different thresholds, why the bed forms ripples, dunes and antidunes, and how a turbidity current, being denser than the water it runs through, can cross a deep-sea fan. From individual bedforms it steps up to facies: the association of sedimentary characteristics that describes a process, and the vertical stacking of facies into a facies model for a river, a delta, a carbonate platform or a deep-marine fan. It ends with the two great syntheses — stratigraphy, which uses the geometry of facies and the arrows of time in the rock to correlate and to date, and sequence stratigraphy, which reads the surface of the basin itself as the record of relative sea-level change.",
+    "Sedimentology is quantitative where it can be — grain-size distributions, flow regimes, transport rates, subsidence and compaction — and interpretive where it must be, because the environment is gone and only its deposit remains. Learning to keep the two apart, and to say how confident an interpretation is, is the main intellectual skill the course teaches.",
+    "The subject is also the most directly employable branch of geology. Reservoir characterisation, aquifer assessment, CO₂ storage, aggregate resources, the geotechnics of foundations and the interpretation of seismic facies are all applied sedimentology, and the course points at each of them."
+  ],
   "prerequisites": [
     "physical-geology",
     "earth-history"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe a sediment or sedimentary rock in terms of grain size, sorting, roundness, sphericity and composition, and quantify each from measurements.",
+    "Explain the entrainment, transport and deposition of clastic grains in terms of the fluid-flow regime and the Hjulström and Shields criteria.",
+    "Recognise bedforms and their internal stratification, and infer flow direction, flow depth and flow velocity from them.",
+    "Define a sedimentary facies and build a facies model for a fluvial, deltaic, shallow-marine, carbonate or deep-marine system.",
+    "Distinguish the depositional environments of continental, transitional and marine sedimentary successions from their sedimentary structures and ichnofabrics.",
+    "Explain the processes of compaction, pressure solution and cementation, and account for the loss of porosity with depth.",
+    "Apply the principles of stratigraphy and the types of unconformity to correlate sections and to reconstruct the geometry of a basin.",
+    "Identify a sequence-stratigraphic surface and its systems tracts in a well or outcrop succession, and explain the forcing that produced it.",
+    "Estimate the maturity, provenance and tectonic setting of a clastic succession from petrographic and geochemical data.",
+    "Interpret a sedimentary basin fill in terms of the balance between sediment supply, subsidence and relative sea-level change."
+  ],
   "chapters": [
     {
       "slug": "sediment-grains",
@@ -89,8 +105,123 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1863,
+      "title": "Sorby puts sediment under the microscope",
+      "detail": "Henry Clifton Sorby applies the petrographic microscope to English sandstones and grits, and shows that the cements, the overgrowths and the corroded grains record events long after deposition — the beginning of sedimentary petrography and of paragenesis.",
+      "people": [
+        "Henry Clifton Sorby"
+      ]
+    },
+    {
+      "year": 1911,
+      "title": "Ripples, bars and the mechanics of bedforms",
+      "detail": "G. K. Gilbert's study of the Lake Bonneville deltas, and his earlier work on the ripples and bars of rivers and lakes, establishes that bedforms are hydraulic features whose shape records flow conditions — the foundation of sedimentary dynamics.",
+      "people": [
+        "Grove Karl Gilbert"
+      ]
+    },
+    {
+      "year": 1936,
+      "title": "The graded turbidite and the origin of greywacke",
+      "detail": "Arnold Kuenen and R. R. B. Coombs argue that the great flysch and greywacke successions were deposited from density currents, and in 1950 Kuenen and D. V. Migliori reproduce graded bedding and sole markings with a turbidity current in a laboratory stream table.",
+      "people": [
+        "Arnold Kuenen",
+        "R. R. B. Coombs",
+        "D. V. Migliori"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "Sedimentary Rocks becomes a textbook",
+      "detail": "F. J. Pettijohn's *Sedimentary Rocks* brings together grain-size analysis, petrography, provenance and the classification of sandstones into a single advanced text that defines the subject for a generation.",
+      "people": [
+        "Frederick J. Pettijohn"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "The deep-sea fan and the Bouma sequence",
+      "detail": "Arnold Bouma describes the sand deposits of the deep sea and the characteristic fining-upward division of a turbidite bed, later formalised as the Bouma divisions Ta–Te, which remain the shorthand of deep-water stratigraphy.",
+      "people": [
+        "Arnold Bouma"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "Sand composition as a tectonic indicator",
+      "detail": "Roland Dott argues that the framework composition of a sandstone records the terrain it drained from and the basin it entered into, so that sandstones can be used as tectonic discriminants; the idea is made quantitative by Dickinson and Suczek's provenance re-evaluation of 1979.",
+      "people": [
+        "Roland Dott",
+        "William Dickinson",
+        "George Suczek"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "Seismic stratigraphy and eustatic cycles",
+      "detail": "Vail, Mitchum, Todd, Widmier, Thompson, Sangree, Bubb and Pyeke publish the fourth part of the Exxon seismic stratigraphy series, arguing that onlap and downlap surfaces seen in seismic record global cycles of sea-level change — and launching sequence stratigraphy.",
+      "people": [
+        "Peter Vail",
+        "L. L. Mitchum"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Systems tracts and the sequence",
+      "detail": "Van Wagoner, Posamentier, Mitchum, Miall, Armentrout, Suguie and Haq set out the sequence-stratigraphic model in its modern form — lowstand, transgressive and highstand systems tracts bounded by surfaces of erosion or non-deposition — as both a predictive framework and a contested one.",
+      "people": [
+        "Erle Van Wagoner",
+        "Mark Posamentier",
+        "Peter Vail"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Sedimentary Petrology",
+      "authors": "Maurice E. Tucker",
+      "year": 2001,
+      "note": "The standard advanced text on the grains, cements and classification of clastic and carbonate sedimentary rocks."
+    },
+    {
+      "title": "Principles of Sedimentology and Stratigraphy",
+      "authors": "Sam Boggs Jr",
+      "year": 2014,
+      "note": "Comprehensive and quantitative: grain transport, provenance, diagenesis and basin analysis in one volume."
+    },
+    {
+      "title": "Sedimentary Environments and Facies",
+      "authors": "Peter Reading (ed.)",
+      "year": 1996,
+      "note": "The reference work on environments, chapter by chapter, written by the people who defined each model."
+    },
+    {
+      "title": "The Geology of Fluvial Deposits",
+      "authors": "Michael R. Miall",
+      "year": 1996,
+      "note": "The rivers volume of the facies-model literature: architectures, styles, and the sedimentology of ancient river deposits."
+    },
+    {
+      "title": "Carbonate Sedimentology",
+      "authors": "Maurice E. Tucker and Viv P. Wright",
+      "year": 2009,
+      "note": "Carbonate platforms, facies belts, early marine cements and the sequence stratigraphy of platform and slope."
+    },
+    {
+      "title": "Principles of Sequence Stratigraphy",
+      "authors": "Octavian Catuneanu",
+      "year": 2006,
+      "note": "A clear, critical account of the sequence-stratigraphic approach, its surfaces, its systems tracts and its disagreements."
+    },
+    {
+      "title": "Sedimentology and Stratigraphy",
+      "authors": "Gary Nichols",
+      "year": 2009,
+      "note": "Concise, well illustrated and close to the field; the best first book for this course."
+    }
+  ],
   "next": [
     "geomorphology",
     "earth-resources"

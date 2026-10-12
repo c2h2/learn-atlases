@@ -1,97 +1,225 @@
 {
-  "slug": "mineralogy-petrology",
-  "title": "Mineralogy and Petrology",
-  "full_title": "Mineralogy and Petrology",
-  "area": "solid",
-  "level": 2,
-  "order": 50,
-  "tagline": "Crystal symmetry and chemistry, the silicate minerals, optical mineralogy, phase diagrams, magmas, igneous rocks and metamorphic reactions",
-  "summary": "Mineralogy studies the crystals that rocks are made of; petrology explains how the rocks form. This course covers crystal symmetry and structure, crystal chemistry and the silicate minerals, identifying minerals under the polarising microscope, phase diagrams and the melting and crystallisation of magmas, the origin of igneous rocks in their tectonic settings, and metamorphic reactions, facies and pressure–temperature paths.",
-  "overview": [],
-  "prerequisites": [
-    "physical-geology"
-  ],
-  "outcomes": [],
-  "chapters": [
-    {
-      "slug": "crystallography",
-      "title": "Crystals and symmetry",
-      "summary": "Lattices, unit cells, symmetry elements, the crystal systems and Miller indices.",
-      "requires": [
-        "physical-geology/minerals"
-      ]
-    },
-    {
-      "slug": "crystal-chemistry",
-      "title": "Crystal chemistry",
-      "summary": "Ionic radii, coordination, bonding and solid solution, and how chemistry controls the structures of minerals.",
-      "requires": [
-        "mineralogy-petrology/crystallography"
-      ]
-    },
-    {
-      "slug": "silicates",
-      "title": "The silicate minerals",
-      "summary": "Silica tetrahedra and the ways they link, and the structures and chemistry of the major silicate groups.",
-      "requires": [
-        "mineralogy-petrology/crystal-chemistry"
-      ]
-    },
-    {
-      "slug": "optical-mineralogy",
-      "title": "Optical mineralogy",
-      "summary": "Light in crystals, the polarising microscope, birefringence and identifying minerals in thin section.",
-      "requires": [
-        "mineralogy-petrology/silicates"
-      ]
-    },
-    {
-      "slug": "phase-diagrams",
-      "title": "Phase diagrams and melting",
-      "summary": "Binary and ternary phase diagrams, eutectics and solid solutions, and how rocks begin to melt.",
-      "requires": [
-        "mineralogy-petrology/silicates"
-      ]
-    },
-    {
-      "slug": "magma-evolution",
-      "title": "Magma generation and evolution",
-      "summary": "Partial melting of the mantle, fractional crystallisation, assimilation and magma mixing.",
-      "requires": [
-        "mineralogy-petrology/phase-diagrams",
-        "physical-geology/igneous-rocks"
-      ]
-    },
-    {
-      "slug": "igneous-settings",
-      "title": "Igneous rocks and tectonic settings",
-      "summary": "How the chemistry of basalts, andesites and granites records mid-ocean ridges, subduction zones and hotspots.",
-      "requires": [
-        "mineralogy-petrology/magma-evolution",
-        "physical-geology/plate-tectonics"
-      ]
-    },
-    {
-      "slug": "metamorphic-reactions",
-      "title": "Metamorphic reactions and facies",
-      "summary": "Mineral reactions, index minerals and isograds, and the metamorphic facies.",
-      "requires": [
-        "mineralogy-petrology/phase-diagrams",
-        "physical-geology/metamorphic-rocks"
-      ]
-    },
-    {
-      "slug": "pt-paths",
-      "title": "Pressure–temperature paths",
-      "summary": "Geothermometry and geobarometry, and what pressure–temperature–time paths reveal about burial, mountain building and exhumation.",
-      "requires": [
-        "mineralogy-petrology/metamorphic-reactions"
-      ]
-    }
-  ],
-  "history": [],
-  "references": [],
-  "next": [
-    "geochemistry"
-  ]
+ "slug": "mineralogy-petrology",
+ "title": "Mineralogy and Petrology",
+ "full_title": "Mineralogy and Petrology",
+ "area": "solid",
+ "level": 2,
+ "order": 50,
+ "tagline": "Crystal symmetry and chemistry, the silicate minerals, optical mineralogy, phase diagrams, magmas, igneous rocks and metamorphic reactions",
+ "summary": "Mineralogy studies the crystals that rocks are made of; petrology explains how the rocks form. This course covers crystal symmetry and structure, crystal chemistry and the silicate minerals, identifying minerals under the polarising microscope, phase diagrams and the melting and crystallisation of magmas, the origin of igneous rocks in their tectonic settings, and metamorphic reactions, facies and pressure–temperature paths.",
+ "overview": [
+  "A mineral is a chemical element or compound, formed by natural processes, with a definite composition within limits and an ordered internal arrangement of atoms. Every clause of that definition has been argued about, but the last is the one that matters: the ordering is not incidental to the mineral but is the reason it has a shape, a hardness, a cleavage, a density, an optical behaviour and a set of angles between its faces that no specimen in the world deviates from by more than a fraction of a degree. This course begins with that ordering, which is a mathematical subject that happens to describe rocks, and ends with the rocks that minerals make when they grow together in the presence of heat, pressure and melt.",
+  "The first half is mineralogy. From the requirement that the atomic arrangement repeat in three dimensions you can prove that only fourteen lattices, thirty-two point groups and 230 space groups exist, that a crystal can appear to have a five-fold face but never a five-fold axis, and that the angles between the faces of a quartz from Brazil and a quartz from Snowdon are identical. From the sizes of ions and the geometry of the oxygen octahedron and tetrahedron you can predict which elements go into which minerals and which are excluded, which is the reason the mantle is olivine and the crust is feldspar, and the reason a whole branch of geochemistry can be written as a study of ionic radii. Then comes the polarising microscope, which turns a slice of rock thirty micrometres thick into a map of its minerals, their shapes, their deformation and their order of growth, and which has been the petrologist's principal instrument for a hundred and fifty years.",
+  "The second half is petrology. Phase diagrams tell you what melts at what temperature and in what proportions, and the eutectic and the reaction relationship explain why granites melt at seven hundred degrees and peridotite at eighteen hundred, why the ocean crust is basalt and nothing else, and why the two are the same fact. Magmatic evolution, meaning fractional crystallisation, assimilation, mixing and immiscibility, explains how one parent produces a thousand rocks, and the chemistry of a basalt records the depth, the temperature and the setting of its parent's last equilibrium. Metamorphic petrology does the same for the rocks that never melted: a pelite that passes through the garnet, staurolite, kyanite and sillimanite isograds records a burial and an exhumation, and the iron-magnesium exchange between garnet and biotite is a thermometer with a precision of twenty degrees.",
+  "Two earlier courses give the background: [[physical-geology/minerals]] for the descriptive mineralogy and [[physical-geology/igneous-rocks]] and [[physical-geology/metamorphic-rocks]] for the rock groups. This course is the quantitative layer beneath them, and it is the necessary equipment for everything that follows in the solid earth: [[geochemistry/trace-elements]] uses the partition coefficients that follow from ionic radius and site geometry, [[geochemistry/geochronology]] uses the closure temperatures of the minerals you will learn to identify, and [[structural-geology/folds]] uses the fabrics that the microscope reads."
+ ],
+ "prerequisites": [
+  "physical-geology"
+ ],
+ "outcomes": [
+  "Derive the metrics of the seven crystal systems and the thirty-two point groups from the requirement of translational symmetry, and apply the crystallographic restriction theorem to show why five-fold axes are impossible in a crystal.",
+  "Index faces and directions with Miller and Miller-Bravais indices, compute the angle between faces from the unit-cell parameters, and use a stereographic projection to measure interfacial angles and symmetry.",
+  "Explain the structures of the silicate groups in terms of the linking of silica tetrahedra, apply Pauling's rules and the ionic-radius-ratio rule to predict coordination, and account for the substitution mechanisms that control solid solution in the feldspars, pyroxenes, amphiboles and garnets.",
+  "Identify the common rock-forming minerals in thin section using relief, cleavage, colour, habit, twinning, birefringence, extinction angle, interference colour, optic sign and 2V, and interpret the sequence of crystallisation and the deformation recorded in a rock's fabric.",
+  "Read binary and ternary phase diagrams including eutectic, peritectic and solid-solution systems, apply the phase rule, and explain the origin of the calc-alkaline basalt-andesite-dacite-rhyolite series from melting in the presence of water.",
+  "Model partial melting and fractional crystallisation with distribution coefficients and the Rayleigh and batch equations, and distinguish the chemical signatures of fractional crystallisation from those of crustal assimilation and magma mixing.",
+  "Classify igneous rocks by the total-alkalis-silica diagram and relate their chemistry to mid-ocean ridges, ocean islands, island arcs, continental arcs and continental rifts.",
+  "Apply the phase rule to metamorphic mineral assemblages, use the index minerals and the facies to map pressure-temperature conditions, and construct and interpret pressure-temperature-time paths from garnet zoning and thermobarometry."
+ ],
+ "chapters": [
+  {
+   "slug": "crystallography",
+   "title": "Crystals and symmetry",
+   "summary": "Lattices, unit cells, symmetry elements, the crystal systems and Miller indices.",
+   "requires": [
+    "physical-geology/minerals"
+   ]
+  },
+  {
+   "slug": "crystal-chemistry",
+   "title": "Crystal chemistry",
+   "summary": "Ionic radii, coordination, bonding and solid solution, and how chemistry controls the structures of minerals.",
+   "requires": [
+    "mineralogy-petrology/crystallography"
+   ]
+  },
+  {
+   "slug": "silicates",
+   "title": "The silicate minerals",
+   "summary": "Silica tetrahedra and the ways they link, and the structures and chemistry of the major silicate groups.",
+   "requires": [
+    "mineralogy-petrology/crystal-chemistry"
+   ]
+  },
+  {
+   "slug": "optical-mineralogy",
+   "title": "Optical mineralogy",
+   "summary": "Light in crystals, the polarising microscope, birefringence and identifying minerals in thin section.",
+   "requires": [
+    "mineralogy-petrology/silicates"
+   ]
+  },
+  {
+   "slug": "phase-diagrams",
+   "title": "Phase diagrams and melting",
+   "summary": "Binary and ternary phase diagrams, eutectics and solid solutions, and how rocks begin to melt.",
+   "requires": [
+    "mineralogy-petrology/silicates"
+   ]
+  },
+  {
+   "slug": "magma-evolution",
+   "title": "Magma generation and evolution",
+   "summary": "Partial melting of the mantle, fractional crystallisation, assimilation and magma mixing.",
+   "requires": [
+    "mineralogy-petrology/phase-diagrams",
+    "physical-geology/igneous-rocks"
+   ]
+  },
+  {
+   "slug": "igneous-settings",
+   "title": "Igneous rocks and tectonic settings",
+   "summary": "How the chemistry of basalts, andesites and granites records mid-ocean ridges, subduction zones and hotspots.",
+   "requires": [
+    "mineralogy-petrology/magma-evolution",
+    "physical-geology/plate-tectonics"
+   ]
+  },
+  {
+   "slug": "metamorphic-reactions",
+   "title": "Metamorphic reactions and facies",
+   "summary": "Mineral reactions, index minerals and isograds, and the metamorphic facies.",
+   "requires": [
+    "mineralogy-petrology/phase-diagrams",
+    "physical-geology/metamorphic-rocks"
+   ]
+  },
+  {
+   "slug": "pt-paths",
+   "title": "Pressure–temperature paths",
+   "summary": "Geothermometry and geobarometry, and what pressure–temperature–time paths reveal about burial, mountain building and exhumation.",
+   "requires": [
+    "mineralogy-petrology/metamorphic-reactions"
+   ]
+  }
+ ],
+ "history": [
+  {
+   "year": 1669,
+   "title": "The constancy of interfacial angles",
+   "detail": "Nicolaus Steno, comparing crystals, noticed that the angles between the faces of quartz are always the same although the crystals themselves differ in size and shape: the first law of crystallography, and a statement that the shape is governed by something other than the shape.",
+   "people": [
+    "Nicolaus Steno"
+   ]
+  },
+  {
+   "year": 1783,
+   "title": "Hauy's fall in the museum",
+   "detail": "Rene-Just Hauy, then a schoolmaster, dropped a specimen of Iceland spar and noticed that every fragment was a rhombohedron with the same angles as the original. He went on to propose that the crystal is built of identical 'integral molecules' stacked in rows, which is the lattice, and to derive the law of rational indices.",
+   "people": [
+    "Rene-Just Hauy"
+   ]
+  },
+  {
+   "year": 1848,
+   "title": "The fourteen lattices",
+   "detail": "Whewell, Herschel and Hausmann had reduced the known crystals to six or seven systems by 1830; Auguste Bravais proved in 1848 that only fourteen space lattices are mathematically possible, and that the geometry of a crystal is a theorem rather than a catalogue.",
+   "people": [
+    "Auguste Bravais",
+    "William Whewell"
+   ]
+  },
+  {
+   "year": 1891,
+   "title": "The 230 space groups",
+   "detail": "Fedorov in Saratov and Schonflies in Frankfurt independently derived the complete list of the three-dimensional space groups, the last of the great classifications of nineteenth-century mathematics and the framework of every structure determination since.",
+   "people": [
+    "Evgraf Fedorov",
+    "Arthur Moritz Schonflies"
+   ]
+  },
+  {
+   "year": 1912,
+   "title": "Diffraction of X-rays by crystals",
+   "detail": "Max von Laue passed X-rays through copper sulphate and saw a pattern of spots, proving both that X-rays are waves and that crystals are periodic. Within a year the Braggs, father and son, had the law n lambda = 2 d sin theta and the first structures, and by 1914 the carbon positions in diamond.",
+   "people": [
+    "Max von Laue",
+    "William Henry Bragg",
+    "William Lawrence Bragg"
+   ]
+  },
+  {
+   "year": 1928,
+   "title": "The silicate structures",
+   "detail": "Linus Pauling's three papers on the ionic radii and the structures of ionic crystals, and the parallel work of Norman Bowen and J. F. Schairer on silicate melts, gave mineralogy its explanatory chemistry: the tetrahedron, the octahedron, the radius-ratio rule and the phase diagrams of Mg2SiO4-SiO2 and CaO-MgO-SiO2.",
+   "people": [
+    "Linus Pauling",
+    "Norman L. Bowen"
+   ]
+  },
+  {
+   "year": 1929,
+   "title": "The metamorphic facies",
+   "detail": "Pentti Eskola, working on the rocks of the Swedish High Valley in the Scandinavian Caledonides, defined the facies, meaning groups of assemblages formed over the same range of pressure and temperature, and gave petrology a map of the crust's interior that has been refined but not replaced.",
+   "people": [
+    "Pentti Eskola"
+   ]
+  },
+  {
+   "year": 1990,
+   "title": "Pressure-temperature-time paths",
+   "detail": "The interpretation of prograde and retrograde garnet zoning as the record of a rock's pressure-temperature trajectory, and the use of diffusion profiles as clocks, turned a single porphyroblast into a record of the rate of mountain building; the techniques are associated with Spear, England, Rubie and Vicenzi.",
+   "people": [
+    "Frank Spear",
+    "Matt England"
+   ]
+  },
+  {
+   "year": 2004,
+   "title": "The quartz-in-garnet inclusion",
+   "detail": "The measurement of the Raman shift of a quartz or zircon inclusion trapped inside a garnet gives the pressure at which it was trapped, and hence the depth of burial, without any assumption about the surrounding assemblage; the method has since been applied to some of the deepest rocks exhumed on Earth.",
+   "people": []
+  }
+ ],
+ "references": [
+  {
+   "title": "Structure of Silicates: An Introduction to the Principles",
+   "authors": "Charles T. Prewitt",
+   "year": 1985,
+   "note": "Short, correct and unafraid of symmetry; the best introduction to why silicate structures are the way they are, and the necessary companion to the descriptive chapters."
+  },
+  {
+   "title": "Light Microscopy in Mineralogy, Petrology and Clay Geology",
+   "authors": "W. S. MacKenzie and C. Guilford",
+   "year": 1980,
+   "note": "The book that taught a generation of petrologists the microscope, with photographs rather than diagrams. Still the most useful thing to keep beside the microscope."
+  },
+  {
+   "title": "Igneous Rocks: A Classification and Glossary of Terms",
+   "authors": "Roger W. Le Maitre and the IUGS Subcommission on the Systematics of Igneous Rocks",
+   "year": 2002,
+   "note": "The rules, in the form in which they must be applied to a paper. Read it once and refer to it for the rest of your career."
+  },
+  {
+   "title": "Metamorphic Phase Equilibria and Pressure-Temperature-Time Paths",
+   "authors": "Frank S. Spear",
+   "year": 1993,
+   "note": "The standard advanced text on metamorphic petrology: thermodynamics, activity models, thermobarometry and pressure-temperature paths, worked with the numbers."
+  },
+  {
+   "title": "The Phase Rule and the Phase Equilibria of Ceramics, Silicates and Carbonates",
+   "authors": "Norman L. Bowen",
+   "year": 1956,
+   "note": "Written by the man who measured most of the silicate systems, and still the fastest way to learn to read a phase diagram, because it assumes you will draw the diagrams yourself."
+  },
+  {
+   "title": "Dana's System of Mineralogy",
+   "authors": "Edward S. Dana and Cornelis S. Hurlbut",
+   "year": 1951,
+   "note": "Old, immense and unbeatable on the descriptive detail of species, their forms, twins and occurrences. In most libraries, and worth walking to."
+  }
+ ],
+ "next": [
+  "geochemistry"
+ ]
 }

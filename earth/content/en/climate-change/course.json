@@ -7,11 +7,29 @@
   "order": 220,
   "tagline": "Observed change, detection and attribution, emissions and carbon budgets, projections, extremes, sea-level rise, tipping points, impacts, mitigation and adaptation",
   "summary": "This course examines what is known about human-caused climate change and how it is known. It covers the observed changes across the climate system, detection and attribution, greenhouse-gas emissions and carbon budgets, projections of future climate and extremes, sea-level rise and tipping points, impacts on ecosystems and people, and the evidence on options for mitigation and adaptation — with the uncertainty ranges of the assessed literature, and keeping physical science separate from policy choices.",
-  "overview": [],
+  "overview": [
+    "This course is about the change that is happening now, how we know its cause, what is likely to follow, and what the options are. It is the point at which every other course in the atlas converges: the radiation and the feedbacks of the climate-system course, the ocean and ice of the glaciology and oceanography courses, the carbon cycle of biogeochemistry, the models of the modelling course, the statistics of the climate-statistics chapter, and the palaeoclimate evidence that the system can do this sort of thing — only faster than almost anything in the record.",
+    "It is organised as an argument, and the argument is worth stating before the chapters. One: the world has warmed, by about 1.2 °C between 1850–1900 and the 2011–2020 decade, and the warming is measured independently by surface stations, by ships and buoys over the ocean, by satellites, by the upper troposphere, by the oceans' heat content, by retreating glaciers, by shrinking ice sheets and sea ice, by rising sea level and by shifts in phenology; the datasets, their coverage and their uncertainties are named in the first chapter. Two: the cause is the increase in long-lived greenhouse gases, overwhelmingly carbon dioxide from fossil fuels and cement and, secondarily, from land-use change, because the physics is settled, because the isotopic and atmospheric-oxygen fingerprints identify the carbon as fossil, because the pattern of change — nights warming faster than days, the stratosphere cooling while the surface warms — is the pattern greenhouse forcing predicts and not the patterns proposed instead, and because the observed warming is reproduced by models only when the anthropogenic forcings are included. Three: the change will continue for decades regardless of what is done, because of the inertia of the ocean and the lifetime of carbon dioxide, and the amount of further warming is therefore set mainly by cumulative emissions. Four: the consequences are larger the more warming there is, and are assessed chapter by chapter — extremes, sea level, ecosystems, water, food, health, cities, and the poor and the coastal bearing most of it. Five: the options divide into mitigation, adaptation and, increasingly, the deliberate removal of carbon dioxide, each with assessed costs, benefits, co-benefits, risks and distributional consequences.",
+    "That argument is scientific up to the fifth point and political after it, and this course keeps the two separate and visible. The physical and biological science is assessed against the literature — principally the IPCC Sixth Assessment Report and the primary datasets — with the calibrated language of that report used in its defined sense and in italics. The economics and ethics of what to do are presented as a disagreement among reasonable people about values and about discounting the future, with the numbers given and the advocacy withheld. Where scientists disagree — the size of cloud feedback, the probability of a large Antarctic contribution to sea level, whether a tipping point has been crossed — the positions and their evidence are stated, and claims that the assessed literature has rejected are not given equal weight.",
+    "You should finish the course able to read a summary for policymakers and know which sentence in it is an observation, which is a model result, which is an inference from both, and which is a judgement; and able to say, about any public claim about climate, what the evidence for it is and how strong that evidence is."
+  ],
   "prerequisites": [
     "climate-system"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Summarise the observed change in surface and ocean temperature, cryosphere, sea level and the hydrological cycle, naming the dataset, the baseline and the period of each figure.",
+    "Explain how a global temperature series is constructed from stations, ships, buoys and satellites, and identify the main sources of uncertainty and bias.",
+    "Explain the logic and the method of detection and attribution, and interpret an optimal-fingerprint result and its assumptions.",
+    "Account for the carbon cycle of anthropogenic emissions, and use the airborne fraction, cumulative emissions and the remaining carbon budget.",
+    "Interpret an emissions pathway and a shared socioeconomic pathway, and distinguish a scenario, a projection, a prediction and a forecast.",
+    "Summarise the assessed projections of temperature, precipitation, sea level and extremes for the SSP scenarios, with their uncertainty ranges and their sources.",
+    "Explain what has and has not been attributed to human influence in extreme events, and describe the methods and limits of extreme-event attribution.",
+    "Separate the contributions to sea-level rise and explain why regional sea level differs from the global mean.",
+    "Explain the concept of a tipping point and irreversibility, and assess the evidence for each candidate in the assessed literature.",
+    "Describe the assessed impacts on ecosystems, water, food, health and cities, and the role of exposure and vulnerability as well as of the hazard.",
+    "Compare mitigation and adaptation options on their assessed costs, potential, co-benefits, risks and distributional consequences, without advocating any of them.",
+    "Read an IPCC summary for policymakers and identify the evidence, the confidence level and the likelihood statement behind each key finding."
+  ],
   "chapters": [
     {
       "slug": "observed-change",
@@ -93,7 +111,133 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1864,
+      "title": "Eunice Foote measures the heat of sunbeams in gases",
+      "detail": "In a paper read to the American Association for the Advancement of Science, Foote reports that cylinders of carbon dioxide and of rare moist air heat far more in the sun than common air and cool more slowly, and infers that an atmosphere rich in carbon dioxide would give the Earth 'a great increase of temperature'.",
+      "people": [
+        "Eunice Foote"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "The ocean will not absorb it all",
+      "detail": "Hans Suess and Roger Revelle compute the ocean's buffer factor and show that seawater takes up added carbon dioxide only slowly and in limited amount, so that a large fraction of fossil emissions must remain in the atmosphere — the finding that turned carbon dioxide from a curiosity into a prediction.",
+      "people": [
+        "Roger Revelle",
+        "Hans Suess"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "A presidential advisory committee warns",
+      "detail": "The United States President's Science Advisory Committee panel on environmental pollution, *Restoring the Quality of Our Environment*, devotes a chapter to 'Inadvertent Climate Modification' and concludes that man is inadvertently conducting a large-scale geophysical experiment whose results may be difficult to reverse.",
+      "people": []
+    },
+    {
+      "year": 1971,
+      "title": "The MIT study and the birth of 'climate impact'",
+      "detail": "Singer and Singer's *Man's Impact on the Global Water Balance and Climate* and the following year's *Inadvertent Climate Modification* assemble the first interdisciplinary assessment of the question, and coin the term 'climate impact' in its modern sense.",
+      "people": [
+        "S. Fred Singer"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "The Villach conference projects the century",
+      "detail": "The WMO/ICSU/UNEP conference on the 'Assessment of the Role of Carbon Dioxide and of Other Greenhouse Gases in Climate Variability and Associated Impacts' at Villach projects carbon dioxide of 400 ppm and warming of 1–2 °C by 2030, and calls for an international energy-use strategy; it is the direct ancestor of the IPCC.",
+      "people": [
+        "Bert Bolin"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "The United Nations Framework Convention on Climate Change",
+      "detail": "Signed at Rio de Janeiro and entering into force in 1994, the convention commits its parties to stabilise greenhouse-gas concentrations at a level that would prevent dangerous anthropogenic interference with the climate system, without defining that level — a deliberate ambiguity that has shaped the negotiations since.",
+      "people": []
+    },
+    {
+      "year": 2008,
+      "title": "The remaining carbon budget is defined",
+      "detail": "Allen, Frame, Huntingford, Jones, Lowe, Meinzer and Reisinger show that peak warming depends almost linearly on cumulative carbon dioxide emissions rather than on the rate or the date of emissions, and introduce the carbon-budget framework that makes a 1.5 or 2 °C target an arithmetic statement about emissions.",
+      "people": [
+        "Myles Allen",
+        "David Frame"
+      ]
+    },
+    {
+      "year": 2015,
+      "title": "The Paris Agreement",
+      "detail": "Parties to the convention agree to hold the increase in global average temperature to well below 2 °C above pre-industrial levels and to pursue efforts to limit it to 1.5 °C, on a basis of equity, with nationally determined contributions reviewed every five years — a target expressed in the language of the physical science.",
+      "people": []
+    },
+    {
+      "year": 2018,
+      "title": "The Special Report on 1.5 °C",
+      "detail": "The IPCC special report assesses the impacts of 1.5 °C against 2 °C and the pathways that could achieve either, and concludes that limiting warming to 1.5 °C requires anthropogenic carbon dioxide emissions to fall about 45 % by 2030 from 2010 and reach net zero around 2050 — the first time an assessment had stated the arithmetic of a temperature target in years.",
+      "people": [
+        "Jim Skea",
+        "Valérie Masson-Delmotte",
+        "Panmao Zhai"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "It is unequivocal",
+      "detail": "The Sixth Assessment Report of Working Group I states that it is *unequivocal* that human influence has warmed the atmosphere, ocean and land, and that *very likely* human activity is the dominant cause of observed warming since the mid-twentieth century, while narrowing the range of equilibrium climate sensitivity to 2.5–4 °C (*likely*).",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Climate Change 2021: The Physical Science Basis",
+      "authors": "IPCC Sixth Assessment Report, Working Group I",
+      "year": 2021,
+      "note": "The assessment of observed change, attribution, carbon cycle, projections and sea level; read Chapters 2–5 and 12 with the Summary for Policymakers."
+    },
+    {
+      "title": "Climate Change 2022: Impacts, Adaptation and Vulnerability",
+      "authors": "IPCC Sixth Assessment Report, Working Group II",
+      "year": 2022,
+      "note": "The assessed impacts and risks by sector and region, and the assessment of adaptation options and their limits."
+    },
+    {
+      "title": "Climate Change 2022: Mitigation of Climate Change",
+      "authors": "IPCC Sixth Assessment Report, Working Group III",
+      "year": 2022,
+      "note": "The assessed costs, potentials and barriers of mitigation options by sector, and the emissions pathways — read as an inventory of options, not as a recommendation."
+    },
+    {
+      "title": "Climate Change 2023: Synthesis Report",
+      "authors": "IPCC Sixth Assessment Report, Synthesis Report",
+      "year": 2023,
+      "note": "The one document that states the assessed position of the whole assessment, with the likelihood and confidence language used deliberately; the best single thing to read first."
+    },
+    {
+      "title": "Global Warming: The Complete Briefing",
+      "authors": "John Houghton",
+      "year": 2015,
+      "note": "A clear, physically grounded introduction by a physicist who chaired the scientific assessment for a decade."
+    },
+    {
+      "title": "The Discovery of Global Warming",
+      "authors": "Spencer R. Weart",
+      "year": 2008,
+      "note": "The history of how the science was assembled, written from the archives; the best account of why the community concluded what it concluded."
+    },
+    {
+      "title": "State of the Global Climate",
+      "authors": "World Meteorological Organization",
+      "year": 2025,
+      "note": "The annual update of temperature, greenhouse gases, ocean heat, sea level, ice and extremes, with the datasets and their baselines named."
+    },
+    {
+      "title": "The Climate Casino: Risk, Uncertainty, and Economics for a Warming World",
+      "authors": "William D. Nordhaus",
+      "year": 2013,
+      "note": "The economic case for carbon pricing by its leading architect; read alongside the IPCC Working Group III chapters and its critics, as one position in a values debate."
+    }
+  ],
   "next": []
 }

@@ -7,12 +7,30 @@
   "order": 200,
   "tagline": "Hazard, exposure, vulnerability and risk; earthquakes, tsunamis, volcanoes, landslides, floods, storms, wildfire, drought and heat; reducing disaster risk",
   "summary": "Natural hazards become disasters when they meet exposed and vulnerable people. This course introduces the science of risk — hazard, exposure, vulnerability and probability — and applies it to earthquakes, tsunamis, volcanic eruptions, landslides, floods, tropical cyclones and severe storms, wildfire, drought and heat, before turning to early warning, planning and how societies reduce disaster risk. It is for education and never replaces official warnings.",
-  "overview": [],
+  "overview": [
+    "There is no such thing as a natural disaster. There are earthquakes, volcanoes, cyclones, rivers and slopes, and there are people, buildings, farms, hospitals and coastlines; a disaster happens where the two meet, and its size is set at least as much by the second as by the first. The 2010 earthquake in Haiti and the 2010 earthquake in Chile were of similar size and depth; one killed perhaps 160 000 people, the other a few hundred. The difference was not geophysics. This course is about the whole chain — hazard, exposure, vulnerability, risk, and what can be done about each link — and about the quantitative methods used at every stage.",
+    "It begins with the framework and the vocabulary, because the words carry the method. A **hazard** is a physical event with a probability; **exposure** is who and what is in the place where it can happen; **vulnerability** is the fraction of the exposed that is damaged, which is a function of construction, of poverty, of age, of gender, of warning and of the ability to leave; **capacity** is what reduces the loss; **risk** is the expected loss over a period, and is the product of all of them. From that framework come the two things the course teaches you to compute: the **hazard model**, which gives the frequency–magnitude or intensity–duration curve for a place, and the **vulnerability or fragility function**, which converts intensity into damage. Multiply and integrate over the exposed assets and you have a loss estimate with an uncertainty range; that number, not a map of scary colours, is what a building code, an insurance premium, a land-use plan and a contingency plan are built on.",
+    "The course then works through the hazards. **Earthquakes**: seismic hazard analysis in its probabilistic and deterministic forms, ground motion and site response, the building types that fail and why, liquefaction and the design of a scenario. **Tsunamis**: generation, the Green law and its limits, propagation and amplification, run-up and inundation, and the warning systems that work on the ten-minute-to-several-hour notice a real source allows. **Volcanoes**: the eruption styles and the products they make, the hazard map and its zones, lahar and pyroclastic density current modelling, tephra fall and its effects on aviation and on power, volcanic gases, and the long-running problem of forecasting an eruption. **Landslides**: the hydrological and seismic triggers, the empirical rainfall thresholds and the physically based models, the inventory and susceptibility map, and the difference between susceptibility, hazard and risk. **Floods**: design floods, flood-frequency analysis and its non-stationarity, hydrodynamic modelling of inundation, the floodplain and the levee and the levee effect, and the economics of the 1-in-100-year event. **Storms**: tropical cyclone genesis and intensity, track and intensity forecasting, storm surge and the Saffir–Simpson scale and its limitations, and the wind and rainfall hazards inland. **Wildfire, drought and heat**: fire weather and the fire environment, the spread models and the ember-attack problem; the several definitions of drought and the indices; and the heat mortality literature that turned heat waves into the deadliest weather hazard in Europe.",
+    "The last chapter is **risk reduction**: the Sendai Framework and its targets, the sequence of prevention, mitigation, preparedness, response and recovery; the evidence on what works — land-use zoning, building codes and their enforcement, retrofit, warning systems that reach people in time and prompt them to act, insurance and risk transfer, ecosystem-based approaches and their limits, and the post-disaster rebuild that either reduces or reproduces the risk. It also treats the ethics honestly: risk reduction is not neutral, it redistributes, and the communities that bear the most risk usually have the least say in the decision.",
+    "Two rules run through the whole course. First, everything here is educational: nothing in these pages is a forecast, an assessment of a specific place or event, or a substitute for the warnings and instructions of the national meteorological, geological and civil-protection services, which are the only bodies that can tell you what to do today. Second, past disasters are described factually and with respect, with dated figures and their sources, and never as spectacle."
+  ],
   "prerequisites": [
     "structural-geology",
     "meteorology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish hazard, exposure, vulnerability, capacity and risk, and express risk as an expected loss with an uncertainty range.",
+    "Carry out a simplified probabilistic seismic hazard analysis and interpret a hazard map, a uniform hazard spectrum and the return period of a ground motion.",
+    "Explain site response, the amplification of soft sediments, liquefaction and the earthquake-resistant design principles that follow.",
+    "Model tsunami generation, propagation and run-up, and explain the timescales on which a warning can be issued and acted on.",
+    "Link eruption style and volcano type to the products and hazards, and read and construct a volcanic hazard map with its zones and its uncertainties.",
+    "Estimate landslide susceptibility and hazard from inventory, topography, geology and rainfall, and apply an empirical rainfall threshold.",
+    "Perform a flood-frequency analysis, state its assumptions and its non-stationarity problem, and interpret a flood hazard map and a design flood.",
+    "Describe tropical cyclone structure, intensity and track forecasting, storm surge and the inland rainfall and wind hazards, and the limits of the intensity scales.",
+    "Describe the fire environment and fire weather indices, the spread models, and the physical and social drivers of wildfire loss.",
+    "Define and measure drought and heat hazard, and connect a heat-wave intensity–duration threshold to observed mortality.",
+    "Describe the risk-reduction sequence and appraise an intervention — a code, a warning system, a levee, an insurance scheme, a restoration — on evidence of what it achieves and for whom."
+  ],
   "chapters": [
     {
       "slug": "risk",
@@ -92,7 +110,105 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1755,
+      "title": "The Lisbon earthquake and the first disaster response",
+      "detail": "The 1 November earthquake, the fires and the tsunami destroy much of Lisbon; the marquis of Pombal's rebuilding imposes an anti-seismic frame and the first systematic survey of the effects, and the event provokes a European debate on nature, theodicy and the built environment.",
+      "people": [
+        "Sebastião de Carvalho e Melo (marquis of Pombal)"
+      ]
+    },
+    {
+      "year": 1883,
+      "title": "Krakatoa and the first global hazard record",
+      "detail": "The collapse of the Krakatoa caldera produces a pyroclastic density current that reaches the coast and cross-ocean surges, kills more than 35 000 people on Java and Sumatra, and is recorded by barographs and ships around the world — the first eruption whose global atmospheric effects were measured.",
+      "people": [
+        "Rogier Verbeek"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "The Pacific tsunami warning system",
+      "detail": "After the 1960 Chile earthquake's tsunami crossed the Pacific and the 1964 Alaska tsunami followed, the Intergovernmental Oceanographic Commission establishes the Pacific Tsunami Warning System, with a seismological and tide-gauge network and a national-warning responsibility model still in use.",
+      "people": []
+    },
+    {
+      "year": 1970,
+      "title": "The Bhola cyclone and the scale of what is possible",
+      "detail": "A cyclone and its storm surge strike the low-lying coast of East Pakistan on 12 November; estimates of the dead range from about 300 000 to 500 000, making it the deadliest tropical cyclone on record, and the disaster becomes the founding argument for cyclone preparedness and evacuation programmes.",
+      "people": []
+    },
+    {
+      "year": 1985,
+      "title": "Armero: a lahar destroys a town",
+      "detail": "A relatively small eruption of Nevado del Ruiz melts part of the ice cap and sends lahars down the Lagunillas valley; about 23 000 people die in Armero and Chinchiná, although a hazard map had been produced and the volcano had been monitored. Volcanic risk assessment becomes a discipline of communication and land use, not only of geophysics.",
+      "people": [
+        "Nevado del Ruiz Volcanological Observatory"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "The Yokohama Strategy",
+      "detail": "The World Conference on Natural Disaster Reduction, closing the International Decade for the Natural Disaster Reduction, adopts the Yokohama Strategy, the first international agreement to place prevention, mitigation and preparedness — rather than response — at the centre, and to name vulnerability as part of the problem.",
+      "people": []
+    },
+    {
+      "year": 2005,
+      "title": "The Indian Ocean warning system is built",
+      "detail": "The 26 December 2004 earthquake and tsunami, which killed about 228 000 people in fourteen countries with no warning issued, leads within a year to the adoption of an Indian Ocean tsunami warning and mitigation system and to the demonstration that a system can be built in months when the political will exists.",
+      "people": []
+    },
+    {
+      "year": 2015,
+      "title": "The Sendai Framework for Disaster Risk Reduction",
+      "detail": "The third world conference adopts a fifteen-year framework with seven global targets and an explicit focus on understanding risk, strengthening governance, investing in reduction and 'building back better'; its monitoring definitions — deaths, affected people, economic loss, disaster damage to critical infrastructure — become the standard statistics.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Natural Hazards",
+      "authors": "David A. McEntire",
+      "year": 2012,
+      "note": "A genuinely all-hazard text with the risk framework, the methodologies and the case studies treated consistently."
+    },
+    {
+      "title": "Natural Disasters",
+      "authors": "David Alexander",
+      "year": 2014,
+      "note": "The standard advanced undergraduate survey of the hazards themselves, with the physical processes and the emergency-management context."
+    },
+    {
+      "title": "Natural Hazards: Explanation and Integration",
+      "authors": "Gary T. Tobin and Belinda E. Montz",
+      "year": 2013,
+      "note": "The human and integrated-modelling half: vulnerability, perception, risk governance and the social science of the hazard."
+    },
+    {
+      "title": "The Routledge Handbook of Hazards and Disaster Risk Reduction",
+      "authors": "Ben Wisner, J. C. Gaillard and Kelman (eds.)",
+      "year": 2012,
+      "note": "The field as it was assessed at the end of the 2000s, including the debates about the pressure-and-release model and about 'natural' disasters."
+    },
+    {
+      "title": "Managing the Risks of Extreme Events and Disasters to Advance Climate Change Adaptation",
+      "authors": "IPCC, Special Report; co-chairing authors Christopher B. Field and Vicente Barros",
+      "year": 2012,
+      "note": "The assessed evidence on which extreme events can and cannot be attributed to climate change, and on exposure and vulnerability as the dominant drivers of loss."
+    },
+    {
+      "title": "Global Assessment Report on Disaster Risk Reduction",
+      "authors": "United Nations Office for Disaster Risk Reduction",
+      "year": 2023,
+      "note": "The current global statistics and the state of progress against the Sendai targets, with the loss data and their limitations described openly."
+    },
+    {
+      "title": "Building Resilience: Social Capital in Post-Disaster Recovery",
+      "authors": "Daniel P. Aldrich",
+      "year": 2012,
+      "note": "On what actually saves people and communities after a disaster — networks, trust and information — and why technical fixes alone do not."
+    }
+  ],
   "next": []
 }

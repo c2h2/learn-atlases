@@ -7,11 +7,28 @@
   "order": 120,
   "tagline": "Electromagnetic radiation, sensors and orbits, image processing and classification, thermal, microwave, radar and lidar sensing, maps, projections and GIS",
   "summary": "Satellites and aircraft observe the whole planet, and geographic information systems turn those observations into maps and analysis. This course covers how radiation interacts with the surface and the atmosphere, sensors, platforms and orbits, image processing and classification, thermal and microwave sensing, radar and lidar, map projections and coordinate systems, and spatial data and analysis in GIS, with examples from across the Earth sciences.",
-  "overview": [],
+  "overview": [
+    "Almost everything we know about the Earth as a whole — its temperature, its ice, its vegetation, its sea level, the extent of its floods and the speed at which its glaciers move — comes from instruments that have never touched it. Remote sensing is the science of extracting quantitative information about the surface and the atmosphere from measured electromagnetic radiation, and it has two halves that must be kept together: the physics of the radiation, and the geometry and statistics of the data. Get the first wrong and you interpret a shadow as a lithology; get the second wrong and you mistake a classification artefact for deforestation.",
+    "The course begins with the physics. Solar and thermal radiation interact with surfaces in ways described by reflectance, emissivity, the bidirectional reflectance distribution function, and the spectral signatures of the three great surface materials — vegetation, water and bare soil — whose combination and mixing within a pixel is what makes an image both informative and difficult. Sensors and platforms follow: the radiometric, spatial, spectral and temporal resolutions that trade against one another; the push-broom and whiskbroom designs; the sun-synchronous, geostationary and polar orbits, and the constellations of Sentinel, Landsat, MODIS and their successors that give the continuous record. Then the image as data: radiometric and atmospheric correction, geometric correction and registration, resampling, filtering, Fourier and wavelet ideas, and the fusion of images of different resolution. Classification and change detection occupy a central place, from maximum-likelihood and support-vector-machine classifiers to deep convolutional networks, and with them the whole problem of accuracy assessment — error matrices, the kappa statistic, and why a map that is 95 % accurate can still be useless if the classes are unbalanced. Thermal and passive microwave sensing reach through cloud and into the top centimetre of the soil; active radar, with its coherent phase, gives backscatter, interferometry and the measurement of millimetre ground motion; lidar gives the vertical structure of forests and the bare earth beneath them; radar altimetry gives sea-surface height and ice-sheet elevation.",
+    "The second half of the course is geographic information science: the datums and map projections that make coordinates meaningful, the vector and raster data models, topology, the error that creeps in when data of different resolution and accuracy are combined, and the spatial analysis — overlay, buffering, interpolation, kriging, terrain analysis, spatial statistics — that turns layers into answers.",
+    "You will need the statistics of sampling and regression, and a working familiarity with matrices for image transforms and with the idea of a convolution. The practical component matters as much as the theory: every chapter points at freely available imagery and open-source tools, and the exercises are meant to be done on real scenes."
+  ],
   "prerequisites": [
     "earth-system"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain the interaction of electromagnetic radiation with the atmosphere and the surface, and identify the atmospheric windows and the absorption features that define them.",
+    "Describe the spectral reflectance and emissivity behaviour of vegetation, water, soil, snow and built materials, and interpret a spectral mixture.",
+    "Compare sensor designs and orbital regimes in terms of spatial, spectral, radiometric and temporal resolution, and choose an appropriate dataset for a stated task.",
+    "Perform radiometric calibration, atmospheric correction, geometric correction and co-registration on a real image, and state the residual error.",
+    "Apply supervised and unsupervised classification methods, and assess accuracy with a confusion matrix, producer's and user's accuracy, and an appropriate summary statistic.",
+    "Detect and map change between two dates, and distinguish real change from differences in illumination, phenology, atmosphere or registration.",
+    "Explain the principles of synthetic aperture radar, backscatter, dielectric control of the signal, and the use of interferometric phase to measure deformation.",
+    "Explain lidar waveform returns and the derivation of canopy height and digital terrain models, and radar altimetry of ice sheets and oceans.",
+    "Choose and justify a map projection and coordinate reference system for a given area and analysis, and transform between them without introducing error.",
+    "Build a raster and vector data model for a spatial question, and apply overlay, buffering, interpolation and terrain analysis to answer it.",
+    "Quantify the propagation of error through a spatial analysis, and state the effect of resolution, scale and the modifiable areal unit problem on the result."
+  ],
   "chapters": [
     {
       "slug": "em-radiation",
@@ -85,8 +102,114 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1858,
+      "title": "The first aerial photograph",
+      "detail": "Gaspard-Félix Tournachon, known as Nadar, photographs the village of Petit-Bec from a balloon at about 80 m; a single image survives, but the idea that the ground can be seen and measured from above begins here.",
+      "people": [
+        "Gaspard-Félix Tournachon"
+      ]
+    },
+    {
+      "year": 1924,
+      "title": "The precision aerial survey camera",
+      "detail": "Sherman Fairchild's cameras, and the multicamera rigs developed with the United States Army Air Service, make aerial photography geometrically rigorous enough for mapping, and the stereoscope makes relief measurable from overlapping pairs.",
+      "people": [
+        "Sherman Fairchild"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "TIROS-1 sees the whole weather system",
+      "detail": "The first successful weather satellite returns television pictures of cloud patterns over the eastern Pacific; within a decade the synoptic view of the planet is routine, and it makes clear how much of the Earth is never observed from the ground.",
+      "people": [
+        "Verner Suomi"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Landsat 1 and continuous land observation",
+      "detail": "The Earth Resources Technology Satellite is launched on 23 July 1972 and begins the longest continuous record of moderate-resolution land imaging in existence; the free release of the archive in 2008 turns it into the backbone of global land-change science.",
+      "people": [
+        "William Pecora"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "Seasat and the radar ocean",
+      "detail": "The first civilian satellite carrying a synthetic aperture radar, a scatterometer and an altimeter demonstrates in 105 days that radar sees through cloud and night and measures wind, waves, ice and sea-surface height; the lineage runs on through ERS, Envisat and Sentinel-1.",
+      "people": []
+    },
+    {
+      "year": 1993,
+      "title": "Interferometry measures an earthquake",
+      "detail": "Massonnet and colleagues combine a pair of ERS-1 radar images to map surface displacement across the Landers earthquake, and establish radar interferometry as a tool for measuring faults, volcanoes, subsidence and glaciers.",
+      "people": [
+        "Didier Massonnet",
+        "Khaled Feigl"
+      ]
+    },
+    {
+      "year": 2003,
+      "title": "ICESat measures the ice sheets",
+      "detail": "The Ice, Cloud and land Elevation Satellite begins precise laser altimetry of ice-sheet surface elevation and sea-ice freeboard; two decades of ICESat and ICESat-2 data now give the mass balance of Greenland and Antarctica independently of the gravity mission.",
+      "people": [
+        "H. Jay Zwally",
+        "Thomas Neumann"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "Sentinel-1 and Sentinel-2 open the data",
+      "detail": "The Copernicus programme's Sentinel satellites begin a free, systematic record at 10 m optical and radar resolution with a five-day revisit, and with it the era of continental-scale, near-real-time land and ice monitoring by anyone with a computer.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Remote Sensing and Image Interpretation",
+      "authors": "Thomas M. Lillesand, Ralph W. Kiefer, Andrew J. Chapman and Jonathan M. Cherry",
+      "year": 2022,
+      "note": "The standard advanced text: the physics, the sensors, the visual and digital interpretation, and the case studies."
+    },
+    {
+      "title": "Introductory Digital Image Processing: A Remote Sensing Perspective",
+      "authors": "John R. Jensen",
+      "year": 2015,
+      "note": "The image-processing and classification chapters, with the algorithms stated precisely enough to implement."
+    },
+    {
+      "title": "Remote Sensing Digital Image Analysis",
+      "authors": "John A. Richards",
+      "year": 2013,
+      "note": "The computational side — filtering, transforms, segmentation, classification and the statistics behind them — in a compact, modern form."
+    },
+    {
+      "title": "Earth Observation Remote Sensing: A Textbook",
+      "authors": "Paul M. Mather and Anne Lucchesse",
+      "year": 2014,
+      "note": "The physical route in: radiometry, atmospheric interaction, the spectral behaviour of surface materials and the sensor designs."
+    },
+    {
+      "title": "Radar Interferometry: Earth Deformation and Elevation",
+      "authors": "Ramón F. Hanssen",
+      "year": 2001,
+      "note": "The coherent signal, the interferogram, the error budget and the inversion of deformation time series — the standard treatment of InSAR."
+    },
+    {
+      "title": "Geographic Information Science and Systems",
+      "authors": "Paul A. Longley, Michael F. Goodchild, David J. Maguire and David W. Rhind",
+      "year": 2015,
+      "note": "The GIS half of the course: data models, topology, projections, spatial analysis, uncertainty, and the social and ethical questions."
+    },
+    {
+      "title": "Geographically Weighted Regression: The Analysis of Spatially Varying Relationships",
+      "authors": "A. Stewart Fotheringham, Chris Brunsdon and Martin Charlton",
+      "year": 2002,
+      "note": "Spatial non-stationarity, spatial dependence and the cautionary statistics that every spatial analysis needs."
+    }
+  ],
   "next": [
     "natural-hazards"
   ]

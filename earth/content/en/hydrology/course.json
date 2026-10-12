@@ -7,11 +7,28 @@
   "order": 140,
   "tagline": "The catchment water balance, precipitation and evapotranspiration, snow, soil water, runoff, floods and droughts, groundwater flow, aquifers and contaminant transport",
   "summary": "Hydrology follows water through the land part of the water cycle, above and below the ground. This course covers the catchment water balance, precipitation and evapotranspiration, snow, infiltration and soil water, runoff and streamflow, floods and droughts, the physics of groundwater flow, aquifers and wells, and how dissolved contaminants move with water.",
-  "overview": [],
+  "overview": [
+    "Ask where the rain goes and you have the whole of hydrology. Some of it is intercepted and evaporates where it lands; some infiltrates, feeds the soil moisture that keeps a crop alive and the groundwater that keeps a river running in August; some runs over the land or through shallow pipes and reaches the channel within hours. The proportions decide whether a field floods, whether a well yields, whether a river has a summer flow, whether a wetland survives, and whether a spill reaches the sea clean or dirty. Hydrology is the science of that partitioning and of the movement and quality of the water afterwards, and it is the Earth science with the most direct and continuous bearing on public decisions.",
+    "The course is organised as the path of a drop through a catchment. It starts with the **water balance** as an accounting identity and with the observations on which all of it rests — rain gauges, weather radar, snow pillows, evaporation pans, eddy-covariance towers, groundwater wells, stream gauges — and with the errors in each. It then treats the two fluxes at the top of the profile: **precipitation**, its measurement, its variability and its orography, and **evapotranspiration**, from the Penman combination equation to the remote-sensing of actual evaporation and the distinction between potential and actual rates. **Snow** gets a chapter of its own because it stores the water and releases it on a schedule that the melt energy, not the rainfall, controls. Then the subsurface: infiltration from surface to soil, unsaturated flow and Richards' equation, the water that plants take, and the deep percolation that becomes groundwater. **Runoff and streamflow** bring the hillslope and the channel together through the unit hydrograph, the infiltration- and saturation-excess mechanisms, and the baseflow separation that reveals the aquifer underneath the river. **Floods and droughts** are treated as the statistics of that system: annual maxima, the return period and its confidence interval, the Palmer and standardised indices, and the way a changing climate or a changing forest changes the distribution. **Groundwater flow** and **aquifers and wells** give the physics and the engineering — Darcy, continuity, Laplace and Theis, and the interpretation of a pumping test. The course ends with **water quality and contaminant transport**, where advection, dispersion, retardation and decay decide what a plume looks like after a decade.",
+    "The quantitative content is real and continuous: differential equations for unsaturated and groundwater flow, exponential and gamma functions for unit hydrographs, extreme-value statistics for floods, and mass balance for solutes. The exercises use real catchments, real floods and real pumping tests, and they ask for numbers with units.",
+    "Two cautions run through the course. First, hydrology is a science of the heterogeneous and the unmeasured: the parameters that matter most — the conductivity of the soil you did not sample, the transmissivity between two wells — are the ones you estimate. Second, water is a resource and a hazard, and the difference between a hydrological statement and a policy is that the statement can be checked. This course states, and leaves the deciding to others."
+  ],
   "prerequisites": [
     "geomorphology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Write and close a catchment water balance over a stated period, and quantify the uncertainty in each term.",
+    "Reduce, correct and interpolate precipitation from gauges, radar and satellites, and estimate areal precipitation for a catchment.",
+    "Compute potential and actual evapotranspiration with the Penman–Monteith and Priestley–Taylor equations and explain the difference between the two.",
+    "Describe snow accumulation, the energy balance of a snowpack, degree-day and energy-balance melt, and the runoff from a snowmelt-dominated catchment.",
+    "Apply Darcy's law to unsaturated soil, and explain infiltration, redistribution, field capacity, wilting point and plant-available water.",
+    "Derive a unit hydrograph from a storm hydrograph, apply it to a new storm, and use the SCS curve-number method to estimate runoff volume.",
+    "Separate baseflow from a stream hydrograph and estimate the recession constant and the contributing aquifer.",
+    "Estimate flood magnitude and frequency from a record of annual maxima, and state the confidence interval and the assumptions of the fit.",
+    "Solve steady radial and confined flow to a well, and interpret a pumping test with Theis or Cooper–Jacob to obtain transmissivity and storage coefficient.",
+    "Construct a flow net or a simple numerical model of a groundwater system and predict the effect of pumping or of a change in recharge.",
+    "Model one-dimensional advective–dispersive solute transport with retardation and decay, and interpret a breakthrough curve."
+  ],
   "chapters": [
     {
       "slug": "water-balance",
@@ -87,8 +104,125 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1674,
+      "title": "Springs come from rain",
+      "detail": "Pierre Perrault's *Des sources des fontaines* reports three years of rainfall measurements in the Seine basin, computes the runoff of the Cote d'Or, and shows that the rain exceeds the river's flow several times over — the first quantitative water balance.",
+      "people": [
+        "Pierre Perrault"
+      ]
+    },
+    {
+      "year": 1686,
+      "title": "Halley measures the sea's evaporation",
+      "detail": "Edmond Halley estimates the evaporation from the Mediterranean from a simple pan experiment and shows that it balances the inflow of the rivers, closing the loop of the water cycle that Perrault had opened.",
+      "people": [
+        "Edmond Halley"
+      ]
+    },
+    {
+      "year": 1856,
+      "title": "Darcy's law",
+      "detail": "In *Les Fontaines publiques de Dijon*, Henry Darcy reports his sand-column experiments and gives the linear relation between flow and hydraulic gradient that bears his name, together with the concept of hydraulic head that still organises the subject.",
+      "people": [
+        "Henry Darcy"
+      ]
+    },
+    {
+      "year": 1914,
+      "title": "The first flood-frequency curve",
+      "detail": "W. B. Fuller fits a frequency distribution to the annual maximum floods of 25 United States rivers and introduces the idea of a flood of a given recurrence interval — the origin of a design practice still used, and still misused, everywhere.",
+      "people": [
+        "William B. Fuller"
+      ]
+    },
+    {
+      "year": 1932,
+      "title": "Sherman's unit hydrograph",
+      "detail": "G. K. Sherman's bulletin on the streamflow of Green River and New England's storm runoff shows that a catchment responds to a unit of rainfall excess with a fixed, scalable, superposable hydrograph, and gives forecasters their workhorse tool.",
+      "people": [
+        "Leroy K. Sherman"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Horton's infiltration",
+      "detail": "Robert E. Horton publishes *The role of infiltration in the hydrologic cycle* and, in 1941, the capacity–time equation, establishing infiltration as a decaying capacity set by soil and by the water already in it, and with it the concept of infiltration-excess overland flow.",
+      "people": [
+        "Robert E. Horton"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "The combination equation for evaporation",
+      "detail": "Howard Penman derives an expression for evaporation from open water that combines the energy available with the aerodynamic and humidity terms, and shows it reproduces lysimeter and pan data; with the 1965 Monteith canopy resistance it becomes the standard.",
+      "people": [
+        "Howard Penman"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "Quantitative hydrology",
+      "detail": "Arthur Strahler's paper on the quantitative analysis of watershed geomorphology systematises stream order, drainage density, bifurcation ratio and basin relief, and turns the shape of a catchment into a set of numbers that hydrologists still report.",
+      "people": [
+        "Arthur Strahler"
+      ]
+    },
+    {
+      "year": 2002,
+      "title": "GRACE weighs the land",
+      "detail": "The Gravity Recovery and Climate Experiment pair of satellites begins measuring monthly changes in the Earth's gravitational field, giving total water storage — ice, groundwater, snow, soil moisture and surface water — as a single observable over large basins for the first time.",
+      "people": [
+        "Byron Tapley",
+        "Michael Watkins"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Physical Hydrology",
+      "authors": "Peter Wigneron, Ming Dingman and John B. Davie",
+      "year": 2015,
+      "note": "The broadest process-based text: precipitation, infiltration, evaporation, snow, hillslope and channel flow, flood frequency and water quality, with worked examples."
+    },
+    {
+      "title": "Hydrology: An Introduction",
+      "authors": "Wilfried Brutsaert",
+      "year": 2005,
+      "note": "The rigorous version of the same ground, with the physics and the mathematics done properly and the history accurately told."
+    },
+    {
+      "title": "Groundwater",
+      "authors": "R. Allan Freeze and John A. Cherry",
+      "year": 1979,
+      "note": "Still the reference for groundwater physics, aquifer tests, flow systems and contaminant hydrogeology; a book worth reading straight through."
+    },
+    {
+      "title": "Applied Hydrogeology",
+      "authors": "C. W. Fetter",
+      "year": 2001,
+      "note": "A gentler, more applied route into the groundwater chapters, with the field methods and the well hydraulics worked out."
+    },
+    {
+      "title": "Rainfall-Runoff Modelling: The Primer",
+      "authors": "Keith Beven",
+      "year": 2012,
+      "note": "How catchment models are built, calibrated and doubted, including the equifinality problem that every modeller must face."
+    },
+    {
+      "title": "Handbook of Hydrology",
+      "authors": "David R. Maidment (ed.)",
+      "year": 1993,
+      "note": "The specialist reference for every chapter, and the standard source for the frequency and regionalisation methods."
+    },
+    {
+      "title": "Statistical Methods in the Atmospheric Sciences",
+      "authors": "Daniel S. Wilks",
+      "year": 2019,
+      "note": "The statistics this course needs: distributions, regression, autocorrelation, extremes and resampling, with hydrological and climatological examples."
+    }
+  ],
   "next": [
     "earth-resources"
   ]

@@ -7,11 +7,27 @@
   "order": 80,
   "tagline": "Weathering, soils, hillslopes, rivers and drainage basins, glacial, periglacial, aeolian and coastal landscapes, and long-term landscape evolution",
   "summary": "Geomorphology explains the shape of the land surface and the processes that change it. This course covers weathering and soils, hillslopes and landslides, rivers and drainage networks, glacial and periglacial landscapes, wind and deserts, coasts, and how tectonic uplift, climate and erosion together drive the evolution of landscapes over long timescales.",
-  "overview": [],
+  "overview": [
+    "Ask why a valley is V-shaped, why a river meanders, why a cliff retreats at a rate you can measure from repeat surveys, or why one hillside is smooth and convex while its neighbour is a wall of broken rock, and you are doing geomorphology. The subject is the study of landforms and of the processes that make and unmake them, on a planet where uplift creates relief and climate and gravity take it away again. Its central quantity is the denudation rate, and its central question is whether a landscape is in equilibrium with the processes acting on it or still adjusting to a change in climate, base level or rock uplift.",
+    "This course is organised by process, because process is what you can measure. It begins with weathering — the chemical and physical preparation of sediment — and with soils, the critical natural resource that takes ten times longer to form than it takes to erode. It then takes up the slopes, where diffusion, creep, wash and rapid failure move material from divide to valley, and the rivers, which sort, transport and deposit sediment and whose profiles, channels and floodplains are the most quantitatively studied landforms on Earth. Groundwater and karst follow, then glaciers and the extraordinary family of glacial landforms, then wind, then coasts, where waves refract around headlands and build and destroy beaches on timescales of a season. The course closes with the two syntheses: drainage basins as integrated systems whose sediment flux can be measured at the outlet and compared with the denudation rate computed from cosmogenic nuclides, and landscape evolution, in which the whole subject becomes a problem in dynamics with a steady state, a threshold and a transient.",
+    "The quantitative content is substantial and deliberately central: stream-power incision, the area–slope relation, the Coulomb and infinite-slope stability criteria, the diffusion equation for hillcrests, wave energy flux, and the exponential decay of soil production with hillslope depth. The mathematics is first-year calculus and a little differential equations; the difficulty is in knowing which process dominates where, and in arguing from landform evidence to process.",
+    "Humans are now a dominant geomorphic agent — of erosion rates on cultivated land, of sediment flux to the sea behind dams, of coastlines behind seawalls. The course treats that honestly, with numbers, and separates the physical science from the policy arguments that follow from it."
+  ],
   "prerequisites": [
     "physical-geology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe and classify landforms from field or map evidence, and infer the process or processes that formed them.",
+    "Explain and quantify chemical and physical weathering, and use the soil production function and the critical hillslope angle to interpret hillslope form.",
+    "Apply the sediment-transport relations of open-channel flow to a river, and compute competence, capacity and a bedload transport rate.",
+    "Explain channel morphology — width, depth, slope, meander wavelength, gradient — in terms of discharge, sediment load and boundary material.",
+    "Use the stream-power incision law to interpret river profiles, knickpoints, and bedrock-channel concavity and steepness.",
+    "Assess the condition of a hillslope with the infinite-slope stability criterion and interpret landslide types from their geometry and deposits.",
+    "Describe glacial, periglacial, aeolian and coastal process regimes and the landforms diagnostic of each.",
+    "Read a topographic map or digital elevation model for drainage density, hypsometry, catchment area and channel steepness.",
+    "Explain the concept of geomorphic equilibrium and distinguish steady state, threshold behaviour and transient adjustment to a change in forcing.",
+    "Estimate catchment-averaged denudation rates from cosmogenic nuclide concentrations, river sediment loads or repeat survey, and state what each method averages over."
+  ],
   "chapters": [
     {
       "slug": "weathering",
@@ -87,8 +103,148 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1802,
+      "title": "Hutton's theory of the soil",
+      "detail": "In *Theory of the Earth* James Hutton argues that soils are produced by the weathering of rock and removed by erosion, and that the two proceed at rates that make the present landscape a temporary condition — the first steady-state argument in geomorphology.",
+      "people": [
+        "James Hutton"
+      ]
+    },
+    {
+      "year": 1877,
+      "title": "The erosion cycle",
+      "detail": "Grove Karl Gilbert's report on the mesas of the American West and, in the same decade, William Morris Davis's scheme of youth, maturity and old age put landforms into a sequence. Davis's model dominated the subject for eighty years and is still the thing the subject had to get away from.",
+      "people": [
+        "William Morris Davis",
+        "Grove Karl Gilbert"
+      ]
+    },
+    {
+      "year": 1909,
+      "title": "A real critique of the erosion cycle",
+      "detail": "Franz Leydecker's paper on the value of the geomorphic approach to physiographic research, translated and reissued in 1953, argues that Davis's stages are not time-dependent and that slope form records the relative rates of slope processes — the modern view, fifty years early.",
+      "people": [
+        "Franz Leydecker"
+      ]
+    },
+    {
+      "year": 1944,
+      "title": "Nature of man's impact on the land",
+      "detail": "George Perkins Marsh's revised *Man and Nature* and, later in the decade, the reaction to the US Dust Bowl force geomorphology to take human-driven erosion rates seriously and to begin measuring them.",
+      "people": [
+        "George Perkins Marsh"
+      ]
+    },
+    {
+      "year": 1945,
+      "title": "The hydraulic geometry of streams",
+      "detail": "Luna Leopold and Thomas Maddock formalise the downstream relations between width, depth, velocity and drainage area, and with B. F. Miller's 1953 paper on the hydraulic geometry of river channels turn channel form into a quantitative, testable subject.",
+      "people": [
+        "Luna Leopold",
+        "Thomas Maddock"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "Peltier's climate diagram",
+      "detail": "Louis Peltier's paper on the role of climate in the development of slopes classifies the world's climates by the balance of frost, moisture and vegetation and assigns to each a characteristic weathering regime and slope process — the standard framework for periglacial geomorphology.",
+      "people": [
+        "Louis Peltier"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Slope dependence of soil production and creep",
+      "detail": "Dickson and Kirkby, and in the following decade the model calculations of Dietrich, Wilson and Hovius, establish the coupled soil-production and diffusive-transport model of hillslope evolution that links soil thickness, slope and bedrock lowering.",
+      "people": [
+        "William Dietrich",
+        "Tim Wilson"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "A stream-power law for bedrock incision",
+      "detail": "Howard, Dietrich and Seidl, and then Whipple and Meade, develop the shear-stress-based incision law and show that it predicts the concave equilibrium profiles observed in mountain rivers, moving channel-profile analysis from description to dynamics.",
+      "people": [
+        "Alan Howard",
+        "William Dietrich",
+        "Todd Whipple"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Cosmogenic nuclides date a landscape",
+      "detail": "The application of in-situ-produced ¹⁰Be in quartz to catchment-average denudation rates, consolidated by Bierman and Caffee's edited volume of that year, gives geomorphology its first direct measurement of long-term erosion over 10³–10⁵ years.",
+      "people": [
+        "Marcus Caffee",
+        "Paul Bierman"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Global Geomorphology: Introduction to the Study of Landscapes",
+      "authors": "Mike Summerfield",
+      "year": 1991,
+      "note": "The process-and-structure framework, a global survey of landform regions, and the best treatment of landscape evolution and steady state."
+    },
+    {
+      "title": "Geomorphology and Global Tectonics",
+      "authors": "Karl-Heinz Wegmann (ed., after Tricart and Cailleux)",
+      "year": 1967,
+      "note": "The classic climate-and-structure classification of the world's morphogenetic regions; historically important and still useful for the zonal schemes."
+    },
+    {
+      "title": "Geomorphology: The Mechanics and Chemistry of Landscapes",
+      "authors": "Jon D. Pelletier",
+      "year": 2008,
+      "note": "The quantitative route in: slope stability, debris flows, stream incision, dune and hillcrest dynamics, all derived from first principles with exercises."
+    },
+    {
+      "title": "The Physics of Blown Sand and Desert Dunes",
+      "authors": "Ralph Alger Bagnold",
+      "year": 1941,
+      "note": "Written from the Libyan desert and still read today; the origin of the transport laws and of the idea that a dune is a bedform."
+    },
+    {
+      "title": "Karst Geomorphology",
+      "authors": "Derek Ford and Paul Williams",
+      "year": 1987,
+      "note": "The standard treatment of dissolutional landforms, conduit hydrology and the speleothem record."
+    },
+    {
+      "title": "Landslides: Investigation and Mitigation",
+      "authors": "Randolph L. Schuster and Robert L. Higman (eds.)",
+      "year": 1996,
+      "note": "Special Report 247 of the Transportation Research Board: classification, investigation and the practice of stability assessment."
+    },
+    {
+      "title": "Cosmogenic Nuclides: Principles, Concepts and a Practical Guide to the Field",
+      "authors": "David Small",
+      "year": 2019,
+      "note": "The practical route into ¹⁰Be and ²⁶Al exposure and inheritance dating, and hence into long-term denudation rates."
+    },
+    {
+      "title": "River Sedimentology",
+      "authors": "L. E. Frostick and John Lewin",
+      "year": 2017,
+      "note": "The fluvial record: channel process and form, sediment transport and the interpretation of alluvial successions."
+    },
+    {
+      "title": "Beach Processes and Sedimentation",
+      "authors": "Paul Komar",
+      "year": 1998,
+      "note": "The quantitative coast: waves, longshore transport, equilibrium profiles and the mathematics of littoral drift."
+    },
+    {
+      "title": "Glacial Geology and Geomorphology",
+      "authors": "Andrew Bennett and David Glasser",
+      "year": 2009,
+      "note": "The standard modern account of glacial landsystems, subglacial processes and ice-marginal landforms."
+    }
+  ],
   "next": [
     "hydrology",
     "glaciology"

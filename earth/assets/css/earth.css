@@ -411,6 +411,14 @@ a.ref { text-decoration-style: dotted; }
 .nobr { white-space: nowrap; }
 .lesson-report { margin-top: 20px; text-align: center; font-size: 0.8125rem; color: var(--ink-3); }
 
+/* ---------- static vector figures (:::svg) ---------- */
+figure.svg-figure { margin: 1.8em 0; background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; max-width: 920px; }
+.svg-stage { padding: 14px 16px 6px; }
+.svg-stage svg { display: block; width: 100%; height: auto; overflow: visible; }
+figure.svg-figure > figcaption { border-top: 1px solid var(--rule); padding: 10px 16px 12px; font-size: 0.875rem; color: var(--ink-2); line-height: 1.5; }
+.svg-figure .figno { font-weight: 700; color: var(--ink); margin-right: 0.45em; }
+.svg-figure text { font-family: var(--font); }
+
 /* ---------- interactive figures ---------- */
 figure.widget { margin: 1.8em 0; background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; max-width: 920px; }
 .widget-stage { position: relative; min-height: 120px; }

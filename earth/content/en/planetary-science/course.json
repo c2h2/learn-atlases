@@ -7,11 +7,28 @@
   "order": 240,
   "tagline": "Formation of the Solar System, meteorites, impact cratering, the Moon, the terrestrial planets, interiors and magnetic fields, atmospheres, giant planets, icy moons, small bodies and exoplanets",
   "summary": "Comparing the Earth with other worlds shows which of its features are universal and which are unusual. This course covers the formation of the Solar System and the evidence of meteorites, impact cratering, the Moon, the surfaces and interiors of Mercury, Venus and Mars, planetary atmospheres and climates, the giant planets, icy moons and small bodies, and what exoplanets reveal about planets in general.",
-  "overview": [],
+  "overview": [
+    "The Earth is one data point. Planetary science exists because we now have more than one: nine worlds, several hundred moons, thousands of small bodies and, since 1995, some five thousand planets around other stars, with atmospheres we can begin to measure. Comparing them is the closest thing the Earth sciences have to an experiment, because it lets us vary the parameters we cannot vary at home — mass, distance from the star, rotation rate, presence of a moon, presence of water, presence of life — and watch what happens to the atmosphere, the interior, the magnetic field and the surface.",
+    "The course begins with origin. **Formation**: the collapse of the solar nebula, the condensation sequence and the snow line, the growth from dust to planetesimals to planetary embryos, the core-accretion and disk-instability models for the giants, the giant-impact origin of the Moon, the late heavy bombardment and the delivery of water and volatiles. **Meteorites** are the laboratory: chondrules and calcium-aluminium inclusions, the 4.567-billion-year age of the solids, the isotopic evidence for nucleosynthetic heterogeneity and for the short-lived radionuclides, the differentiated achondrites that are pieces of destroyed planets, and the Antarctic and fall collections that make the statistics possible. **Impact cratering** supplies the surface-history method used on every solid body: the crater production and degradation functions, the counting isochrones that turn crater density into an absolute age, the scaling laws, the ejecta and the basins, and the mass extinctions and the Chicxulub evidence.",
+    "Then the bodies. The **Moon**, still the best-known planetary surface and the calibration point for everything else: its magma ocean and anorthositic crust, its maria and their ages, its polar volatiles, its seismic record from the Apollo network and GRAIL's gravity map of its thin, fractured crust. The **terrestrial planets**: Mercury's huge core and tenuous exosphere; Venus as the control experiment on the runaway greenhouse, with its 92-bar carbon-dioxide atmosphere, its 735 K surface, its resurfaced plains and its slow superrotation; Mars with its hemispheric dichotomy, its 22-km volcano, its outflow channels and dry river valleys, its polar caps and subsurface ice, its lost magnetic field and its thin remaining atmosphere, and the rover evidence for ancient habitable environments. **Interiors and magnetic fields**, where the comparison is decisive: why Mars lost its dynamo, why the Moon's is fossil, why Io is molten and Europa's ocean persists, and what a stagnant-lid versus plate-tectonic regime does to a planet's long-term climate. **Atmospheres and climates**, where the same radiative-convective and dynamical machinery of the Earth courses is run with different compositions and rotation rates, and where the concepts of the habitable zone, the runaway and the maximum greenhouse limits, and the faint young Sun paradox are worked out. The **outer Solar System** — the giants' interiors, metallic hydrogen, the dynamo and magnetospheres, the rings, the tidally heated moons, the plumes of Enceladus, the methane cycle of Titan, the comets and the Kuiper belt. And **exoplanets**: the transit and radial-velocity methods, the radius valley and the population statistics, the atmospheres now being measured by transmission and emission spectroscopy, and what the emerging demographics say about how ordinary or extraordinary the Earth's configuration is.",
+    "The quantitative content is substantial and mostly elementary — hydrostatics, scale height, blackbody and grey atmospheres, escape parameter, crater scaling, radiometric ages, orbital mechanics — applied to data from spacecraft. The point throughout is comparison: the same physics, different boundary conditions, and the chance to see which features of the Earth are necessary and which are contingent."
+  ],
   "prerequisites": [
     "geophysics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the condensation and accretion sequence in the solar nebula and explain the compositional zoning of the Solar System by the snow line and by photoevaporation.",
+    "Classify meteorites and explain what chondrules, inclusions, chondrite groups and achondrites tell us about the age and early differentiation of the Solar System.",
+    "Apply the radiometric systems to meteoritic material and explain why the lead–lead age of inclusions is taken as the age of the Solar System.",
+    "Use crater size–frequency distributions and production functions to date a planetary surface, and state the assumptions and the calibration of the method.",
+    "Describe the interior structure, thermal state and magnetic field of each class of body, and explain the differences in terms of size, composition and heat flow.",
+    "Explain the origin and evolution of a planetary atmosphere: outgassing, escape by each mechanism, hydrodynamic loss, and the loss recorded on Mars and Venus.",
+    "Compute the scale height, the exobase temperature, the Jeans escape parameter and the greenhouse forcing for a planetary atmosphere.",
+    "Compare the climates of Venus, Earth and Mars with radiative–convective and general circulation models, and define the inner and outer edges of the habitable zone.",
+    "Describe the giant planets' interiors, dynamos, magnetospheres, rings and satellites, and the tidal heating that drives Io and Enceladus.",
+    "Explain the transit and radial-velocity detection methods, the transit-depth and mass-determination geometry, and the radius valley and its interpretation.",
+    "Assess the habitability of a body or planet from its energy, solvent, chemistry and timescales, and state what the current evidence does and does not support."
+  ],
   "chapters": [
     {
       "slug": "formation",
@@ -87,7 +104,127 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1610,
+      "title": "The telescope opens the Solar System",
+      "detail": "Galileo's observations of the lunar mountains, the four largest moons of Jupiter, the phases of Venus and the unresolved stars of the Milky Way, published in *Sidereus Nuncius*, destroy the perfection of the heavens and establish that other worlds are physical bodies with their own histories.",
+      "people": [
+        "Galileo Galilei"
+      ]
+    },
+    {
+      "year": 1846,
+      "title": "A planet found by calculation",
+      "detail": "Le Verrier and, independently, Adams predict from the residuals in Uranus's orbit where a perturbing planet must be; Galle finds Neptune within a degree of the prediction within hours of receiving the letter — the triumph of celestial mechanics and the first planetary discovery by mathematics.",
+      "people": [
+        "Urbain Le Verrier",
+        "John Couch Adams",
+        "Johann Galle"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Mariner 2 reaches Venus",
+      "detail": "The first successful interplanetary flyby measures a hot, cloud-covered, carbon-dioxide-dominated planet with no measurable magnetic field and a solar-wind-deflecting bow shock, ending the hope of a warm, wet, possibly living Venus and beginning the comparative study of planetary atmospheres.",
+      "people": []
+    },
+    {
+      "year": 1969,
+      "title": "The Moon is dated",
+      "detail": "Apollo 11 and the five following landings return 382 kg of rock and soil and deploy the first seismometer network on another world; the samples date the lunar crust and the maria, show the Moon is depleted in volatiles and isotopically similar to the Earth, and calibrate the crater-counting chronology used on every other solid body.",
+      "people": [
+        "Harrison Schmitt",
+        "Gerald Wasserburg",
+        "Glen Dalrymple"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Active volcanism on Io",
+      "detail": "Morabito and colleagues notice, in a Voyager 1 image taken months earlier, a 300-km plume above Io; the confirmation of active volcanism on a small satellite of a giant planet establishes tidal heating as a major energy source and makes the icy moons, with their subsurface oceans, into potential habitats.",
+      "people": [
+        "Linda Morabito",
+        "Stanley Peale"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "The Kuiper belt is found",
+      "detail": "Jewitt and Luu discover 1992 QB1 beyond Neptune, the first confirmed member of the trans-Neptunian population, and with it the reservoir of the short-period comets; the discovery rewrites the outer Solar System and, eventually, the definition of a planet.",
+      "people": [
+        "David Jewitt",
+        "Jane Luu"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "The first exoplanet around a sun-like star",
+      "detail": "Mayor and Queloz report 51 Pegasi b, a half-Jupiter-mass planet on a 4.2-day orbit found in the radial-velocity wobble of its star; the result is unexpected, forces a revision of migration theory, and opens the field whose demographics are now constraining planet formation.",
+      "people": [
+        "Michel Mayor",
+        "Didier Queloz"
+      ]
+    },
+    {
+      "year": 2015,
+      "title": "New Horizons flies past Pluto",
+      "detail": "After a nine-year cruise, the spacecraft returns the first close images of Pluto and Charon: nitrogen-ice glaciers flowing from a mountain range, a possible cryovolcano, a blue haze and a crater-count age suggesting geological activity within the last hundred million years at 40 K.",
+      "people": [
+        "Alan Stern",
+        "Leslie Young"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Planetary Sciences",
+      "authors": "Ingrid da Pater and Jack Lissauer",
+      "year": 2015,
+      "note": "The standard advanced text across the whole subject: dynamics, interiors, surfaces, atmospheres, rings, small bodies and the detection of exoplanets."
+    },
+    {
+      "title": "The New Solar System",
+      "authors": "J. Kelly Beatty, Carolyn Collins Petersen and Andrew Chaikin (eds.)",
+      "year": 2009,
+      "note": "The mission-by-mission survey, written by the scientists who ran them; the best account of what we actually measured."
+    },
+    {
+      "title": "Impact Cratering: A Geologic Process",
+      "authors": "H. Jay Melosh",
+      "year": 2011,
+      "note": "The mechanics of crater formation, the scaling laws, the modification and the chronology, with the geological consequences worked out."
+    },
+    {
+      "title": "Origin of the Earth and the Moon",
+      "authors": "Robin Canup and Kevin Righter (eds.)",
+      "year": 2005,
+      "note": "The accretion and giant-impact literature, the isotope constraints and the volatile-delivery debate, in one volume."
+    },
+    {
+      "title": "How to Build a Habitable Planet",
+      "authors": "James F. Kasting and David C. Catling",
+      "year": 2013,
+      "note": "The Earth as a case study in habitability: the delivery of volatiles, the loss of the atmosphere, the oxidation of the surface and the long-term climate feedbacks."
+    },
+    {
+      "title": "Exoplanets",
+      "authors": "Sara Seager (ed.)",
+      "year": 2011,
+      "note": "The detection methods, the structure and atmospheres of close-in planets, the demographics and the observational prospects."
+    },
+    {
+      "title": "Theory of Reflectance and Emittance of Planetary Surfaces",
+      "authors": "Bruce Hapke",
+      "year": 2012,
+      "note": "The radiative-transfer and scattering physics that turns a telescope or spacecraft measurement into a surface composition."
+    },
+    {
+      "title": "Treatise on Geophysics, volumes 2, 3, 8 and 10",
+      "authors": "Gerald Schubert (ed.-in-chief)",
+      "year": 2015,
+      "note": "The specialist reference for planetary interiors, heat, impact processes and the surfaces and interiors of the planets."
+    }
+  ],
   "next": []
 }

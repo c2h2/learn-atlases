@@ -7,11 +7,28 @@
   "order": 160,
   "tagline": "Trace gases and lifetimes, transport, photochemistry, stratospheric ozone, the oxidising power of the troposphere, smog, aerosols, acid deposition and air quality",
   "summary": "Trace gases and particles are a tiny fraction of the air but control its chemistry, the ozone layer, air quality and part of the climate. This course covers the sources, sinks and lifetimes of trace gases, atmospheric transport, kinetics and photochemistry, stratospheric ozone and its depletion, the hydroxyl radical and tropospheric oxidation, ozone and smog near the ground, aerosols, acid deposition, and the science behind air-quality monitoring and regulation.",
-  "overview": [],
+  "overview": [
+    "The atmosphere is a dilute, flowing, sunlit reactor in which the products of volcanoes, oceans, soils, fires and engines react with each other and with sunlight over timescales from seconds to centuries. It is also the only planetary shield of its kind that we know of: a layer of ozone in the stratosphere absorbs the ultraviolet that would otherwise reach the surface, and the hydroxyl radical, present at a few parts in 10¹⁴, is the detergent that keeps the troposphere from filling with the gases life and industry emit. Atmospheric chemistry asks what is in the air, how it got there, how long it stays, what it becomes, and what it does to climate, to ecosystems and to human health.",
+    "The course begins with the bookkeeping that makes the subject quantitative: mixing ratios and their conversion, emission inventories, the lifetime and the lifetime budget, the steady-state mass balance that connects a global emission to an observed concentration, and the top-down method of inferring emissions from observations. Transport follows — the timescales of mixing within the boundary layer, between the boundary layer and the free troposphere, between hemispheres and between the troposphere and the stratosphere — because a chemical problem in the atmosphere is never only chemical, and because the ratio of lifetime to transport time decides whether a gas is well mixed or shows sharp gradients. Then the physics and physical chemistry: the kinetics of elementary reactions and their temperature and pressure dependence, photolysis and the J-values that drive the whole system, the third-body and radical-chain mechanisms, and the competition between reaction, deposition and dilution.",
+    "With the tools in hand the course takes up the problems. **Stratospheric ozone**: Chapman's mechanism, the catalytic cycles, the odd-oxygen budget, the chlorine and bromine chemistry of the polar stratospheric clouds, the ozone hole and its annual cycle, and the assessed trajectory of recovery. **The oxidising power of the troposphere**: the chemistry of the hydroxyl radical, its sources and its sinks, the methane lifetime as a diagnostic, and the observational campaigns that have tested our understanding. **Tropospheric ozone and smog**: the nitrogen-oxide-catalysed production of ozone, the volatile-organic-compound and carbon monoxide dependence, the HOx and ROx cycles, the regimes of ozone production, and the history of photochemical smog from Los Angeles to the present. **Aerosols**: their nucleation, growth, composition, mixing state, size distributions, direct and indirect radiative effects, and the largest single uncertainty in the forcing of climate change. **Acid deposition**: sulfur and nitrogen emissions, long-range transport, the chemistry of cloud and fog water, the critical-load concept, and the international agreements that reduced the deposition. The course ends with **air quality**: the standards and the health evidence behind them, the air-quality models and their evaluation, the emissions controls that work, and the way the composition of the air has changed over the last half-century.",
+    "The chemistry is genuine organic and inorganic mechanism chemistry, and the exercises ask you to compute photolysis rates, steady-state concentrations, lifetimes, production and loss, and the response of a model box to a change in emissions. The course also insists on the difference between a chemical fact, a health-based guideline and a policy choice, and keeps them apart."
+  ],
   "prerequisites": [
     "meteorology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Convert between mixing ratios, number densities, partial pressures and column amounts, and compute a total emission from a concentration and a lifetime.",
+    "Explain the difference between well-mixed and short-lived species using the ratio of chemical lifetime to atmospheric transport timescales.",
+    "Write and solve the kinetics of an elementary reaction sequence, apply the steady-state approximation, and evaluate a temperature- and pressure-dependent rate coefficient.",
+    "Compute a photolysis frequency from an absorption cross-section, a quantum yield and an actinic flux, and explain its dependence on solar zenith angle, cloud and ozone.",
+    "Describe Chapman chemistry and the catalytic odd-oxygen loss cycles, and account for the observed ozone profile and its seasonal and latitudinal variation.",
+    "Explain the formation of polar stratospheric clouds, the activation of chlorine, and the annual development and decay of the Antarctic ozone hole.",
+    "Describe the sources and sinks of the hydroxyl radical and the concept of the oxidising capacity of the troposphere, and use methane as its integrator.",
+    "Work the NOx–HOx–VOC mechanism of tropospheric ozone production, identify whether a region is in a NOx- or a VOC-limited regime, and predict the effect of an emissions change.",
+    "Describe the sources, size distributions, composition, mixing state and fates of atmospheric aerosol, and distinguish its direct, semi-direct and indirect effects on radiation.",
+    "Explain the acidification of precipitation and surface waters, the critical-load concept, and the evidence for and against the effectiveness of emission controls.",
+    "Interpret an air-quality standard, an exceedance statistic and a model evaluation, and state what the health evidence does and does not support."
+  ],
   "chapters": [
     {
       "slug": "trace-gases",
@@ -88,8 +105,131 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1930,
+      "title": "Chapman's ozone mechanism",
+      "detail": "Sydney Chapman shows that ultraviolet photolysis of oxygen followed by the association of an oxygen atom with O₂ produces ozone, and that ozone both absorbs the ultraviolet and is destroyed by it, giving the four-reaction mechanism that still underlies every stratospheric model.",
+      "people": [
+        "Sydney Chapman"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "Photochemical smog is explained",
+      "detail": "Arie Haagen-Smit, working at the California Institute of Technology on the Los Angeles episodes, shows that the irritant is ozone and other oxidants formed when nitrogen oxides and hydrocarbons from vehicles are irradiated, and identifies the role of sunlight and of temperature inversions.",
+      "people": [
+        "Arie Haagen-Smit"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Nitrogen oxides catalyse ozone loss",
+      "detail": "Paul Crutzen and Gösta Nordlund, and independently Shih-Chieh Liu and colleagues, calculate the odd-nitrogen catalytic cycle and show that nitrous oxide from the soil is its stratospheric source, so that the ozone layer is sensitive to the nitrogen cycle of the surface.",
+      "people": [
+        "Paul Crutzen",
+        "Shih-Chieh Liu"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "Chlorofluorocarbons and the ozone layer",
+      "detail": "Mario Molina and F. Sherwood Rowland point out that the chlorofluorocarbons, chemically inert in the troposphere and therefore long-lived, reach the stratosphere intact and there release chlorine atoms that catalytically destroy ozone — a prediction made from mechanism and lifetime alone, years before it was confirmed.",
+      "people": [
+        "Mario Molina",
+        "F. Sherwood Rowland"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "The ozone hole is reported",
+      "detail": "Joseph Farman, Brian Gardiner and Jonathan Shanklin report in *Nature* that total ozone over Halley Bay in October has fallen by 40 % since 1977, and suggest a chlorine mechanism involving the polar stratosphere; the satellite record, already showing the same thing, had been filtered out as an instrument error.",
+      "people": [
+        "Joseph Farman",
+        "Brian Gardiner",
+        "Jonathan Shanklin"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "The mechanism is confirmed",
+      "detail": "Susan Solomon, Garcia, Rowland and Wuebbles show that the heterogeneous chemistry of polar stratospheric clouds converts reservoir chlorine into active forms, and a National Oceanic and Atmospheric Administration–NASA expedition to Chile measures the chlorine monoxide over the Antarctic in the exact pattern the theory predicts.",
+      "people": [
+        "Susan Solomon",
+        "Mario Molina",
+        "James Anderson"
+      ]
+    },
+    {
+      "year": 1987,
+      "title": "The Montreal Protocol is agreed",
+      "detail": "Forty-six governments agree to control the production and consumption of the principal ozone-depleting substances; the protocol and its amendments, and the scientific assessments that feed them, become the case study in using an assessed chemical mechanism as the basis of an international agreement.",
+      "people": []
+    },
+    {
+      "year": 1995,
+      "title": "The Nobel Prize in Chemistry",
+      "detail": "Crutzen, Molina and Rowland share the prize for the chemistry of stratospheric ozone, and the same year marks the maturation of the field's central method: a mechanism, a set of rate constants, a three-dimensional model and an aircraft campaign to test it.",
+      "people": [
+        "Paul Crutzen",
+        "Mario Molina",
+        "F. Sherwood Rowland"
+      ]
+    },
+    {
+      "year": 2009,
+      "title": "Nitrous oxide becomes the dominant ozone-depleting emission",
+      "detail": "Ravishankara, Daniel and Portmann show that, with the chlorofluorocarbons controlled, nitrous oxide — from agriculture and fertiliser — has become the largest remaining anthropogenic emission of an ozone-depleting substance, an example of the assessment changing as the emissions do.",
+      "people": [
+        "A. Ravishankara",
+        "Stephen Daniel"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Atmospheric Chemistry and Physics: From Air Pollution to Climate Change",
+      "authors": "John H. Seinfeld and Spyros N. Pandis",
+      "year": 2016,
+      "note": "The comprehensive text: kinetics, photochemistry, aerosols, deposition, air quality and the models, with the mechanisms written out."
+    },
+    {
+      "title": "Introduction to Atmospheric Chemistry",
+      "authors": "Daniel J. Jacob",
+      "year": 1999,
+      "note": "The best first book, and still the clearest on box models, lifetimes, the odd-oxygen budget and the use of observations to infer emissions. Freely available online."
+    },
+    {
+      "title": "Chemistry of the Stratosphere and Troposphere",
+      "authors": "Barbara J. Finlayson-Pitts and James N. Pitts Jr",
+      "year": 2000,
+      "note": "The laboratory physical chemistry behind the mechanisms, with the rate data and the surface and aerosol chemistry."
+    },
+    {
+      "title": "Chemistry of the Natural Atmosphere",
+      "authors": "Peter Warneck",
+      "year": 2000,
+      "note": "The natural, unpolluted atmosphere: the source gases, the radical budgets, the ion chemistry and the isotope and tracer methods."
+    },
+    {
+      "title": "Scientific Assessment of Ozone Depletion: 2022",
+      "authors": "World Meteorological Organization and United Nations Environment Programme, Global Ozone Research and Monitoring Project Report 58",
+      "year": 2023,
+      "note": "The quadrennial assessment of the ozone layer, the chlorine and bromine loading and the recovery projections — the model for how to assess a chemical problem."
+    },
+    {
+      "title": "Microphysics of Clouds and Precipitation",
+      "authors": "Hans R. Pruppacher and James D. Klett",
+      "year": 2005,
+      "note": "Aerosol activation, cloud processing and the aqueous chemistry that removes gases and particles."
+    },
+    {
+      "title": "WHO Global Air Quality Guidelines",
+      "authors": "World Health Organization",
+      "year": 2021,
+      "note": "The guideline values for particulate matter, ozone, nitrogen dioxide, sulfur dioxide and their bases in the health literature; read as an assessment, not as a standard."
+    }
+  ],
   "next": [
     "climate-change"
   ]

@@ -7,11 +7,28 @@
   "order": 210,
   "tagline": "The model hierarchy, energy-balance and box models, numerical methods, parameterisation, general circulation and Earth system models, evaluation, ensembles, scenarios and downscaling",
   "summary": "Climate models turn the physics of the climate system into numbers on a computer. This course builds a hierarchy of models from energy-balance and box models to general circulation and Earth system models, explains the numerical methods and the parameterisation of processes too small to resolve, and shows how models are tuned and evaluated against observations, combined in ensembles and intercomparison projects, driven by scenarios and downscaled to regions.",
-  "overview": [],
+  "overview": [
+    "A climate model is a hypothesis written in a language that cannot be ambiguous. It says: given these equations, these parameters, this grid and these initial and boundary conditions, the climate will do this. That is why models, and not only observations, are how the climate problem is quantified — the forcing of a doubling of carbon dioxide, the pattern of warming that results, the fraction of emitted carbon that stays in the air, the sea-level rise of a given emissions pathway — and why the credibility of a projection rests entirely on how well the model reproduces the world it was not built to reproduce.",
+    "This course is about how those models are built, and how they are doubted. It starts with the **hierarchy**: why a one-line energy balance, a box model, a one-dimensional radiative–convective column, a general circulation model and a fully coupled Earth system model each exist, what each can and cannot say, and how the cheap models are used to interpret the expensive ones. The **energy-balance models** are worked out in full — the zero-dimensional model, the diffusive one-dimensional model, the Budyko–Sellers ice–albedo model with its two stable states and its hysteresis, and the time-dependent version with an ocean mixed layer. The **box models** give the ocean's uptake of heat and carbon, the thermohaline circulation as a two-box system with its multiple equilibria, and the carbon-cycle feedbacks. Then the **numerical methods** that make a real model possible: the finite-difference discretisation of the advection–diffusion equation, the CFL stability condition, truncation and phase errors, upwinding and its diffusion, spectral methods, the vertical coordinates of atmosphere and ocean models, and the parameterisation of the timescales that cannot be resolved.",
+    "**Parameterisation** is where most of the uncertainty lives, and it gets its own chapter: the distinction between resolved and sub-grid, the closure problem, the convective and boundary-layer and cloud and microphysical and land-surface schemes, tuning and its limits, and the question of whether a scheme that was tuned to today's climate can be trusted in a different one. The **general circulation and Earth system model** chapter takes a real model apart: the dynamical core, the physics, the sea ice, the ocean, the land surface, the carbon cycle, the chemistry, the aerosols, the routing of rivers, the coupling and the flux corrections, and the computational cost that sets all of it. **Evaluation** is the heart of the subject: the observables a model must reproduce, the distinction between tuning and evaluation, the emergent-constraint method, the pitfalls of evaluating a model against the data it was tuned on, and the way model skill for the present relates to skill for the future. **Ensembles, intercomparisons and scenarios** cover the two irreducible uncertainties — internal variability, explored by running the same model many times, and model structural uncertainty, explored by many models — and the scenario framework: the RCPs and the SSPs, the shared socioeconomic pathways, and the difference between a projection, a prediction and a forecast. The course ends with **downscaling**: why the resolution of a global model is not enough for a river basin or a city, dynamical downscaling with a regional model and its boundary-condition and lateral-boundary problems, statistical downscaling and its assumption of stationarity, and the emerging middle ground of convection-permitting models.",
+    "You will need the differential equations and the numerical analysis, and you will be asked to write and run simple models yourself: an energy balance, a two-box ocean, a diffusive carbon cycle, a one-dimensional column. Nothing in this course replaces doing that. A model you have written and broken once teaches you more about model uncertainty than a hundred pages of description."
+  ],
   "prerequisites": [
     "climate-system"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain the model hierarchy and choose the appropriate level of model complexity for a stated question.",
+    "Formulate, solve and analyse zero- and one-dimensional energy-balance models, including the ice–albedo feedback, multiple equilibria and the bifurcation structure.",
+    "Build and solve box models of the ocean's heat and carbon uptake, and of the thermohaline circulation, and identify their equilibria and their timescales.",
+    "Discretise an advection–diffusion equation, state and apply the CFL condition, and diagnose the truncation, dispersion and monotonicity errors of a scheme.",
+    "Explain the closure problem and the structure of convective, boundary-layer, cloud, microphysical, radiation and land-surface parameterisations, and the risks of tuning.",
+    "Describe the components and coupling of a modern Earth system model, and the sources of its structural and parametric uncertainty.",
+    "Evaluate a model against observations and against palaeoclimate states, and explain the difference between tuning, evaluation and validation.",
+    "Design and interpret a model ensemble, and separate internal variability, scenario uncertainty and model uncertainty in the spread of a projection.",
+    "Explain the SSP and RCP scenario framework, and the difference between a projection, a near-term prediction, a scenario and a forecast.",
+    "Compare dynamical and statistical downscaling, and state the assumptions and the added value of each.",
+    "Read a chapter of an IPCC assessment and identify which statements rest on models, which on observations, and on what evidence the confidence level rests."
+  ],
   "chapters": [
     {
       "slug": "model-hierarchy",
@@ -88,8 +105,124 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1956,
+      "title": "The first general circulation model of the climate",
+      "detail": "Norman Phillips integrates the primitive equations over a simplified, seasonally varying Earth at the Institute for Advanced Study in Princeton for a simulated month, and reproduces the broad features of the observed circulation and the jet streams — the first time a climate was produced by a machine rather than assumed.",
+      "people": [
+        "Norman Phillips"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "The atmosphere and the ocean are coupled",
+      "detail": "Syukuro Manabe and, separately, Smagorinsky's group at the Geophysical Fluid Dynamics Laboratory build the first general circulation models with a simple land and radiation scheme; Smagorinsky's 1963 paper also introduces the turbulence closure that carries his name and the idea of a model as a research instrument.",
+      "people": [
+        "Syukuro Manabe",
+        "Joseph Smagorinsky"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "A coupled ocean–atmosphere model",
+      "detail": "Manabe and Kirk Bryan combine an atmospheric general circulation model with a coarse ocean general circulation model and integrate the coupled system to equilibrium, finding a thermohaline circulation and a heat transport that are recognisably the real ones.",
+      "people": [
+        "Syukuro Manabe",
+        "Kirk Bryan"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "CLIMPACTS: the carbon cycle joins the climate model",
+      "detail": "The Royal Swedish Academy of Sciences' report *Climate Models and the Impact of Carbon Dioxide* couples a simple atmospheric carbon-cycle model to a general circulation model for the first time, and introduces the term 'climate impact' into the assessment literature.",
+      "people": [
+        "Bert Bolin"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "The Charney report and the two-decade consensus",
+      "detail": "The United States National Academy of Sciences' *Carbon Dioxide and Climate: A Scientific Assessment*, chaired by Jule Charney, reviews the models and the observations and concludes a warming of about 3 °C for a doubling of carbon dioxide, with an uncertainty of ±1.5 °C — a range that the field has not moved far from since.",
+      "people": [
+        "Jule Charney"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "The second assessment finds a human influence",
+      "detail": "The IPCC Second Assessment concludes that 'the balance of evidence suggests a discernible human influence on global climate', the first time an ensemble of models and detection studies is held to support a statement about cause; the modelling and the statistics of detection are now inseparable.",
+      "people": [
+        "John Houghton"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "The carbon cycle becomes part of the model",
+      "detail": "Cox, Betts, Jones, Spall and colleagues couple a dynamic terrestrial carbon cycle to the Hadley Centre model and show that the carbon–climate feedback adds roughly 15 % to the carbon dioxide rise by 2100 under one scenario — the beginning of the Earth system model as the standard instrument.",
+      "people": [
+        "Peter Cox",
+        "Richard Betts",
+        "Chris Jones"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "CMIP6 and the deep-pause problem",
+      "detail": "The sixth coupled model intercomparison exercise delivers high-resolution runs with aerosol microphysics and palaeoclimate periods, and its higher equilibrium sensitivities force the community to confront the disagreement with the historical record — resolved by combining models with observations and palaeoclimate evidence rather than by choosing a side.",
+      "people": []
+    },
+    {
+      "year": 2021,
+      "title": "Assessment with an evidence hierarchy",
+      "detail": "The IPCC Sixth Assessment Working Group I report states its findings against explicit lines of evidence — palaeoclimate, historical observations, emergent constraints, physical reasoning and multi-model projections — and reports the model spread separately from the scenario spread, setting the modern standard for how a model-based assessment is written.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "The Climate Modelling Primer",
+      "authors": "Kendal McGuffie and Ann Henderson-Sellers",
+      "year": 2014,
+      "note": "The gentlest route into the hierarchy, with the simple models written out and code to run; the right first book for this course."
+    },
+    {
+      "title": "A First Course in Climate",
+      "authors": "Norman Loeb and Bennett Maring",
+      "year": 2019,
+      "note": "The physical background — radiation, convection, dynamics, the carbon cycle — at exactly the level the modelling chapters assume."
+    },
+    {
+      "title": "An Introduction to Numerical Weather Prediction",
+      "authors": "F. J. Haltiner and R. T. Williams",
+      "year": 1980,
+      "note": "Older, but the clearest derivation of the discretisations, the stability conditions and the filter problems that every model still uses."
+    },
+    {
+      "title": "Numerical Methods for Fluid Dynamics: With Applications to Geophysics",
+      "authors": "Joseph P. Durran",
+      "year": 2010,
+      "note": "The serious treatment of the numerics: advection schemes, stability, stiffness, time splitting and the soundproof approximations."
+    },
+    {
+      "title": "Physics of Climate",
+      "authors": "Jorge L. Peixoto and Abraham H. Oort",
+      "year": 1992,
+      "note": "Jorge L. Peixoto and Abraham H. Oort, *Physics of Climate*, 1992: the observed energy and angular-momentum budget that every model must reproduce."
+    },
+    {
+      "title": "Principles of Planetary Climate",
+      "authors": "Raymond T. Pierrehumbert",
+      "year": 2010,
+      "note": "The radiation and the energy-balance theory done to the end, with the history of the subject and the exercises that make you do it."
+    },
+    {
+      "title": "Climate Change 2021: The Physical Science Basis, Chapter 4 and Chapter 10",
+      "authors": "IPCC AR6 Working Group I",
+      "year": 2021,
+      "note": "Chapter 4 for the scenario-based projections and how they are produced; Chapter 10 for how model spread, internal variability and scenario uncertainty are separated."
+    }
+  ],
   "next": [
     "climate-change"
   ]

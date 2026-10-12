@@ -7,11 +7,28 @@
   "order": 130,
   "tagline": "Elastic waves, the seismic structure of the Earth, earthquake sources, gravity and isostasy, lithospheric flexure, geomagnetism, palaeomagnetism, heat flow and exploration methods",
   "summary": "Geophysics measures the physical fields of the Earth to see inside it. This course covers elastic waves and the seismic structure of the Earth, earthquake sources and magnitudes, gravity, the geoid and isostasy, the flexure of the lithosphere, the geomagnetic field and palaeomagnetism, heat flow and mantle convection, and the geophysical methods used to image the shallow subsurface.",
-  "overview": [],
+  "overview": [
+    "We have drilled barely twelve kilometres into a planet of 6371 km, and no instrument has ever touched the mantle. Almost everything we know about the inside of the Earth is inferred from physics applied at a distance: from the travel times of seismic waves, from milligals of gravity, from nanoteslas of magnetic field, from the geoid, from heat flow measured in boreholes and in sediment, and from the orbital decay of satellites. Geophysics is the discipline that turns those measurements into a model of the interior, and it is the most quantitative of the Earth sciences because the observables are so precisely measurable and the physics so well understood.",
+    "The course is organised by the field you measure. It begins with **elastic waves**, because seismology has taught us most: wave equations for P and S motion, Snell's law and its spherical version, reflection, refraction, conversion, shadow zones, surface waves, and the ray-theory inverse problem that yields the velocity profile. From there to the **seismic structure of the Earth** — the crust and its two discontinuities, the mantle transition zone, the low-velocity layer, the core and the inner core, and what radial anisotropy, attenuation and tomography say about flow and about the continents' roots. Then **earthquake sources**: the elastic rebound and dislocation model, fault slip and moment, the moment tensor and its decomposition, focal mechanisms, and why magnitude is a logarithm of moment rather than of anything you can feel. Gravity and **isostasy** follow, with the free-air and Bouguer anomalies and the Airy and Pratt hypotheses, and then **flexure**, which turns the lithosphere into an elastic plate of finite thickness and explains why a seamount sits in a moat and a foreland basin deepens towards the load. The **geomagnetic field** and **palaeomagnetism** supply the only direct evidence for a convecting, electrically conducting core, and the record of reversals in the seafloor that made plate tectonics a fact. **Heat flow** and mantle convection close the physics, with the thermal structure of the lithosphere, the secular cooling budget of the planet and the Rayleigh number of the mantle. The last chapter is **exploration geophysics** — seismic reflection, gravity, magnetics, resistivity, electromagnetics and borehole physics — where the same fields are used at metre scale to find something.",
+    "You will need vector calculus and differential equations, and comfort with Fourier analysis for the signal-processing parts. Several chapters involve genuine inverse problems, and the honest message of the course is that the interior is not observed but inferred, that models are non-unique, and that the reason we trust them is that independent fields — gravity, free oscillations, normal-mode splitting, geodynamics, mineral physics — agree.",
+    "Geophysics is also the discipline with the largest employment footprint after petroleum: earthquake hazard assessment, engineering site response, mineral and groundwater exploration, carbon-dioxide and waste-site characterisation, permafrost and ice monitoring, and the magnetic navigation and satellite-orbit work that everything else depends on."
+  ],
   "prerequisites": [
     "structural-geology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Derive the elastic wave equations from Hooke's law and Newton's second law, and compute P and S velocities from laboratory elastic moduli and density.",
+    "Apply ray theory — Snell's law, the ray parameter, travel-time curves, critical reflection and conversion — to a layered and to a spherically stratified Earth.",
+    "Interpret a seismogram and a travel-time curve to locate an event and to read the discontinuities of the Earth, and explain the P-wave shadow zone.",
+    "Describe the radial velocity, density, attenuation and anisotropy structure of the Earth and the mineralogical and thermal transitions that cause it.",
+    "Estimate the seismic moment, magnitude and source dimensions of an earthquake from its spectrum or its fault parameters, and read a focal mechanism.",
+    "Reduce gravity observations to free-air and Bouguer anomalies, and interpret them with an Airy or Pratt isostatic model.",
+    "Compute the flexural response of an elastic plate to a load, obtain the flexural parameter and flexural wavelength, and estimate effective elastic thickness from observed topography and geoid.",
+    "Describe the geomagnetic field, its secular variation and the geodynamo, and compute a palaeomagnetic pole and an apparent polar wander path from site data.",
+    "Use the Fisher statistic and the reversal test to assess a palaeomagnetic dataset, and apply the polarity time scale to correlate marine and continental sections.",
+    "Compute surface heat flow from a temperature gradient and conductivity, correct for circulation and radiogenic heat production, and estimate the secular cooling rate of the planet.",
+    "Choose and design a gravity, magnetic, seismic-reflection, resistivity or electromagnetic survey for a stated target, and state its resolution and depth limits."
+  ],
   "chapters": [
     {
       "slug": "elastic-waves",
@@ -87,8 +104,129 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1600,
+      "title": "The Earth is a magnet",
+      "detail": "William Gilbert's *De Magnete*, built on years of experiments with lodestones and a spherical magnet, concludes that the Earth itself is a great magnet and that the compass needle responds to it — the first field model of the planet.",
+      "people": [
+        "William Gilbert"
+      ]
+    },
+    {
+      "year": 1798,
+      "title": "The density of the Earth is weighed",
+      "detail": "Henry Cavendish uses a torsion balance of the type John Michell designed to measure the attraction between lead spheres, and obtains the mean density of the Earth to within a few per cent — the first geophysical determination of a deep property.",
+      "people": [
+        "Henry Cavendish",
+        "John Michell"
+      ]
+    },
+    {
+      "year": 1839,
+      "title": "A global network measures the field",
+      "detail": "Gauss and Weber found the Göttingen Magnetic Union and persuade stations from Göttingen to Kazan, Hobart and Toronto to observe simultaneously; Gauss shows that the main field is external to the crust and originates inside the Earth, and computes its first spherical-harmonic representation.",
+      "people": [
+        "Carl Friedrich Gauss",
+        "Wilhelm Weber"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "Oldham finds the core",
+      "detail": "From the seismograms of the 1906 San Francisco earthquake and of other distant events, Richard Oldham identifies a late, long-period P arrival that has travelled through the centre and an S-wave shadow, and infers a core of much lower velocity.",
+      "people": [
+        "Richard Oldham"
+      ]
+    },
+    {
+      "year": 1909,
+      "title": "The boundary of the crust",
+      "detail": "Andrija Mohorovičić explains the two sets of arrivals from the Zagreb earthquake of 22 October as a refraction at a surface some 54 km deep at which velocity jumps from 6 to 8 km/s — the discontinuity that carries his name.",
+      "people": [
+        "Andrija Mohorovičić"
+      ]
+    },
+    {
+      "year": 1936,
+      "title": "The inner core is discovered",
+      "detail": "Inge Lehmann, analysing European seismograms of the great 1934 and 1929 events, accounts for weak P arrivals inside the shadow zone by a solid inner boundary within the liquid core at about 1395 km radius.",
+      "people": [
+        "Inge Lehmann"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "A reference model of the Earth",
+      "detail": "Dziewonski and Anderson publish PREM, a spherically symmetric model of velocity, density, attenuation and anisotropy fitted to thousands of body-wave travel times and to the normal-mode frequencies; thirty years of tomography have been measured against it since.",
+      "people": [
+        "Adam Dziewonski",
+        "Don L. Anderson"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "Moment tensors for many earthquakes",
+      "detail": "Dziewonski, Chou and Woodhouse invert long-period waveforms for the full moment tensor of large earthquakes, giving the Harvard centroid moment tensor catalogue and a standard, physical measure of size and mechanism.",
+      "people": [
+        "Adam Dziewonski",
+        "Hiroo Kanamori"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "The mantle is imaged in three dimensions",
+      "detail": "Woodhouse and Dziewonski map lateral variations in upper-mantle shear velocity from surface-wave overtones, and the resulting images of slabs and of the Pacific superzone turn seismic tomography into the principal tool of mantle dynamics.",
+      "people": [
+        "John Woodhouse",
+        "Adam Dziewonski"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Fundamentals of Geophysics",
+      "authors": "W. Lowrie and A. Fichtner",
+      "year": 2020,
+      "note": "The best single volume across all the fields of this course, at the right level, with the derivations and the units kept straight."
+    },
+    {
+      "title": "An Introduction to Seismology, Earthquakes, and Earth Structure",
+      "authors": "Seth Stein and Michael Wysession",
+      "year": 2003,
+      "note": "Seismology with the physical reasoning first and the mathematics in support; the source of most of the worked estimates in the seismic chapters."
+    },
+    {
+      "title": "Introduction to Seismology",
+      "authors": "Peter M. Shearer",
+      "year": 2019,
+      "note": "The compact, modern treatment of wave propagation, sources, spectra and tomography, with the best figures on waveforms anywhere."
+    },
+    {
+      "title": "Geodynamics",
+      "authors": "Donald L. Turcotte and Gerald Schubert",
+      "year": 2014,
+      "note": "Heat, convection, flexure, isostasy and the rheology of the lithosphere, with the order-of-magnitude estimates that make the subject intuitive."
+    },
+    {
+      "title": "Potential Theory in Gravity and Magnetic Applications",
+      "authors": "Richard J. Blakely",
+      "year": 1996,
+      "note": "The potential-field chapters in the form needed for real interpretation: anomalies, derivatives, upward continuation and inversion."
+    },
+    {
+      "title": "An Introduction to Geophysical Exploration",
+      "authors": "Philip Kearey, Michael Brooks and Graham Hill",
+      "year": 2016,
+      "note": "The exploration chapter extended: seismic refraction and reflection, gravity, magnetics, resistivity, electromagnetics and their resolution."
+    },
+    {
+      "title": "The Magnetic Field of the Earth",
+      "authors": "Ronald Merrill, Malcolm McElhinny and Peter McFadden",
+      "year": 1996,
+      "note": "The geomagnetism and palaeomagnetism chapters in depth: the field and its secular variation, the geodynamo, and the reversal record."
+    }
+  ],
   "next": [
     "natural-hazards",
     "planetary-science"

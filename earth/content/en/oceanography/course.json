@@ -7,11 +7,28 @@
   "order": 100,
   "tagline": "Ocean basins, seawater, air–sea fluxes, wind-driven and overturning circulation, waves and tides, ocean chemistry, productivity and sea level",
   "summary": "The ocean covers seven-tenths of the planet and holds far more heat and carbon than the atmosphere. This course covers the shape of the ocean basins, the physical properties of seawater, the exchange of heat and fresh water with the atmosphere, wind-driven currents and Ekman transport, water masses and the overturning circulation, waves and tides, the carbonate chemistry of seawater, nutrients and biological productivity, and sea level.",
-  "overview": [],
+  "overview": [
+    "The ocean covers 71 % of the planet, holds 97 % of its water, takes up about a quarter of the carbon dioxide we emit and more than 90 % of the extra heat, and drives the weather of half the globe through what it stores and releases at its surface. It is also the least-observed large system on Earth: until the 1990s almost everything known about the deep circulation came from a handful of ships and a few hundred bottles. Physical oceanography is the study of how this water moves and what sets its properties, and it is now, more than at any time since the *Challenger* expedition, an observational science — with moored arrays, drifting floats, satellite altimeters and Argo profilers returning a profile every ten days from a fixed depth of 2000 m.",
+    "This course begins with the container and its contents: the bathymetry of the basins, the shape of the mid-ocean ridge system and the fracture zones, and the thermodynamic properties of seawater — density as a function of temperature, salinity and pressure, the non-linearity of the equation of state that makes mixing denser, the temperature and salinity of maximum density, and the sound speed on which acoustic thermometry depends. It then treats the surface as a boundary: the fluxes of heat, fresh water and momentum, the bulk formulae that compute them, and the Ekman layer that turns a wind into a transport at ninety degrees to it. From there the two great circulations. The wind-driven gyres, with Sverdrup balance, western boundary currents and the Gulf Stream and Kuroshio as intense, eddy-shedding jets. And the thermohaline or overturning circulation: how surface waters become dense enough to sink, the water masses of the world ocean and their potential-temperature and property relationships, the global conveyor and its renewal time of a thousand years, and the Southern Ocean, where wind and mixing do the work of upwelling. Waves and tides follow — the dispersion relation of gravity waves, group velocity and the shoaling and refraction that make waves break parallel to a beach, and the equilibrium theory of tides and the reality of amphidromic systems. The course closes with the ocean as a chemical and biological system: the carbonate system, the solubility and biological pumps, the nutrient distributions and their supply by upwelling, and the oxygen minimum zones; and with sea level, its steric and mass components, its measurement by tide gauge and radar altimeter, and its regional pattern of rise.",
+    "The quantitative level is high and deliberately so. Geostrophy, continuity, the beta effect, the Sverdrup relation and the water-mass property relations are all within reach of the mathematics you already have, and the exercises ask you to compute real numbers: a transport in sverdrups, a density in kg m⁻³, a thermocline depth, a nutrient ratio, a steric rise in millimetres.",
+    "Physical oceanography is where the climate courses get their boundary condition. Read with [[climate-system/heat-transport]], [[climate-change/sea-level-rise]] and [[climate-change/tipping-points]], and with the biogeochemistry course, it explains both the ocean's great usefulness as a buffer and the reasons that buffer is finite."
+  ],
   "prerequisites": [
     "earth-system"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the bathymetry and geometry of the world ocean basins and relate them to plate tectonics.",
+    "Compute seawater density, steric anomaly, and the effects of temperature, salinity and pressure, and explain the anomalous behaviour of cold fresh water.",
+    "Estimate the air–sea fluxes of heat, fresh water and momentum from bulk formulae, and explain the roles of evaporation, latent heat and the Ekman layer.",
+    "Derive Ekman transport and Sverdrup balance, and explain why western boundary currents are intense, narrow and eddy-shedding.",
+    "Trace the water masses of the world ocean on a potential-temperature versus salinity diagram and identify their source regions.",
+    "Describe the meridional overturning circulation, its transport in sverdrups, its drivers in the North Atlantic and the Southern Ocean, and what can weaken it.",
+    "Derive the dispersion relation for surface gravity waves in shallow and deep water, and apply group velocity, refraction and shoaling to coastal wave climate.",
+    "Explain the equilibrium theory of tides, the M2 constituent and the existence of amphidromic points in real basins.",
+    "Work the seawater carbonate system: alkalinity, dissolved inorganic carbon, pH, saturation state, and the ocean's uptake of anthropogenic carbon dioxide and its consequences for pH.",
+    "Explain the distribution of nutrients and oxygen, the Redfield ratio, the roles of the solubility and biological pumps, and the formation and widening of oxygen minimum zones.",
+    "Separate the steric and mass contributions to sea-level change and interpret a tide-gauge or altimetric sea-level record with its uncertainties."
+  ],
   "chapters": [
     {
       "slug": "ocean-basins",
@@ -87,8 +104,122 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1875,
+      "title": "The Challenger sails",
+      "detail": "For three and a half years HMS Challenger sounds, samples and analyses the world ocean, discovering that the deep sea floor is deep and flat rather than shallow, finding life at 5500 fathoms, and describing the manganese nodules and red clays; the fifty-volume report defines the discipline.",
+      "people": [
+        "Charles Wyville Thomson",
+        "John Murray"
+      ]
+    },
+    {
+      "year": 1904,
+      "title": "The Norwegian deep soundings",
+      "detail": "Helland-Hansen and Nansen introduce the cast net, the bottle rosette and the property–property diagram, and show that the water column is stratified, layered and moving rather than the stagnant pond it had been assumed to be.",
+      "people": [
+        "Björn Helland-Hansen",
+        "Fridtjof Nansen"
+      ]
+    },
+    {
+      "year": 1942,
+      "title": "The mid-ocean ridge is a rift valley",
+      "detail": "Heezen, Tharp and Ewing map the floor of the North Atlantic from wartime echo-sounder records, find a valley along the ridge crest and infer that it is a tectonic rift — the observation that turns the ridge system into the site of seafloor spreading.",
+      "people": [
+        "Bruce Heezen",
+        "Marie Tharp",
+        "Maurice Ewing"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "The Gulf Stream described",
+      "detail": "Hans Stommel's *The Gulf Stream: A Physical and Dynamical Description* assembles the observations and the theory of the western boundary current, and his lectures of the period put the abyssal circulation, the vorticity balance and the Southern Ocean at the centre of physical oceanography.",
+      "people": [
+        "Henry Stommel"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "Seasat opens the sea surface to satellites",
+      "detail": "Ninety-five days of radar altimetry, scatterometry and synthetic aperture radar measure the shape of the sea surface to a few centimetres and reveal the geostrophic eddy field and the meanders of the Gulf Stream, beginning the continuous satellite record of sea-surface height.",
+      "people": []
+    },
+    {
+      "year": 1991,
+      "title": "WOCE begins",
+      "detail": "The World Ocean Circulation Experiment sails for a decade with the largest observing programme in the history of the subject — some 60 000 hydrographic stations, thousands of drifting floats and moored arrays — and delivers the modern synthesis of the global circulation and its transports.",
+      "people": [
+        "James McCartney",
+        "Sydney Levitus"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "Argo begins to profile the upper ocean",
+      "detail": "The first Argo float is deployed in July 2000; by 2007 an array of nearly 4000 autonomous profilers returns a temperature and salinity profile from 2000 m every ten days, and for the first time the upper ocean is observed continuously and globally.",
+      "people": [
+        "Dean Roemmich",
+        "Toshio Suga"
+      ]
+    },
+    {
+      "year": 2004,
+      "title": "The Atlantic overturning is measured",
+      "detail": "The RAPID-MOCHA array of moorings and a cable transport across 26°N begins continuous observation of the Atlantic meridional overturning; its first decade shows large interannual and decadal variability and no confirmed long-term collapse — an early, and necessary, test of model projections.",
+      "people": [
+        "Harry Bryden",
+        "Joël Marotzke",
+        "Tor Kanzow"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Descriptive Physical Oceanography: An Introduction",
+      "authors": "George L. Talley, Robert E. Pickart, John H. Swift and Ko-ying Tai",
+      "year": 2019,
+      "note": "The standard advanced text: water masses, circulation, waves and the global observing system, with the property maps that make it concrete."
+    },
+    {
+      "title": "Atmosphere, Ocean and Climate Dynamics",
+      "authors": "John Marshall and R. Alan Plumb",
+      "year": 2008,
+      "note": "The dynamics of both fluids in one place, at the right level: geostrophy, Sverdrup, the omega equation, the overturning and the energy cycle."
+    },
+    {
+      "title": "Physical Processes in the Ocean",
+      "authors": "Robert Pinkel",
+      "year": 2016,
+      "note": "The physical mechanisms — mixing, internal waves, tides, bubbles, rotation — developed from first principles with worked estimates."
+    },
+    {
+      "title": "Water Wave Mechanics for Engineers and Scientists",
+      "authors": "Robert G. Dean and Robert A. Dalrymple",
+      "year": 1991,
+      "note": "The waves and tides chapters in the form you can calculate with: linear theory, shoaling, refraction, run-up and set-up."
+    },
+    {
+      "title": "Chemical Oceanography",
+      "authors": "Frank J. Millero and Miriam N. Creamer",
+      "year": 2013,
+      "note": "Seawater chemistry, the carbonate system, redox and trace metals, with the equilibrium constants and their salinity dependence."
+    },
+    {
+      "title": "Ocean Biogeochemical Dynamics",
+      "authors": "Jorge L. Sarmiento and Nicolas Gruber",
+      "year": 2006,
+      "note": "The carbon, nutrient, gas-exchange and tracer chapters, and the transport-based interpretation of what the ships measure."
+    },
+    {
+      "title": "Special Report on the Ocean and Cryosphere in a Changing Climate",
+      "authors": "IPCC (convening lead authors Hans-Otto Pörtner and Debra Roberts)",
+      "year": 2019,
+      "note": "The assessed numbers for sea level, ocean heat content, ice loss and the overturning, with the calibrated uncertainty language this course uses."
+    }
+  ],
   "next": [
     "climate-system",
     "glaciology"

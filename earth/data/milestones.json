@@ -1,4 +1,299 @@
 {
-  "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC.",
-  "milestones": []
+  "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC. area is one of: system, solid, surface, atmosphere, ocean, climate, history.",
+  "milestones": [
+    {
+      "year": 1669,
+      "title": "Steno states the laws of strata",
+      "detail": "A short treatise on a solid contained within a solid sets out original horizontality, original lateral continuity and superposition — the geometric rules that make a deformed rock sequence measurable against its original state, and the foundation of stratigraphy.",
+      "people": [
+        "Nicolaus Steno"
+      ],
+      "area": "history"
+    },
+    {
+      "year": 1687,
+      "title": "Newton gives the Earth a shape",
+      "detail": "The Principia argues that a rotating, fluid Earth must be an oblate spheroid, flattening at the poles, and predicts the amount; the geodetic expeditions to Lapland and Peru over the next thirty years confirm it and establish that the planet can be treated as a physical body.",
+      "people": [
+        "Isaac Newton"
+      ],
+      "area": "solid"
+    },
+    {
+      "year": 1788,
+      "title": "Hutton's theory of the Earth",
+      "detail": "Read to the Royal Society of Edinburgh and published in 1788, James Hutton's theory argues that the Earth is a system with no vestige of a beginning and no prospect of an end, in which rock is weathered to soil, buried, hardened and raised again — deep time, and uniformitarianism, in one argument.",
+      "people": [
+        "James Hutton"
+      ],
+      "area": "history"
+    },
+    {
+      "year": 1815,
+      "title": "William Smith's geological map of England and Wales",
+      "detail": "A canal surveyor's map colours the surface of a whole country by the rocks beneath it and shows that the same sequence of strata recurs everywhere, each identifiable by its fossils — the first geological map of a large region and the practical birth of the discipline.",
+      "people": [
+        "William Smith"
+      ],
+      "area": "solid"
+    },
+    {
+      "year": 1830,
+      "title": "Lyell's Principles of Geology begins",
+      "detail": "The first volume argues that the Earth is explained by causes whose effects are still observable — volcanoes, earthquakes, rivers, glaciers, subsidence and uplift — operating at present rates over immense time; the three-volume work sets the method, and the controversy, of the next century.",
+      "people": [
+        "Charles Lyell"
+      ],
+      "area": "history"
+    },
+    {
+      "year": 1840,
+      "title": "Agassiz's glacial theory",
+      "detail": "Études sur les glaciers and the address at Neuchâtel argue that Alpine glaciers once overrode the Jura and the Swiss plateau, carrying erratics and polishing bedrock, and that the Earth had been glaciated; within a decade the ice age is accepted and the Quaternary becomes a science.",
+      "people": [
+        "Louis Agassiz"
+      ],
+      "area": "surface"
+    },
+    {
+      "year": 1856,
+      "title": "Darcy's law",
+      "detail": "In a book on the public fountains of Dijon, Henry Darcy reports sand-column experiments giving the linear relation between flow and hydraulic gradient that bears his name, together with the concept of hydraulic head — the basis of groundwater hydrology, filtration and reservoir flow.",
+      "people": [
+        "Henry Darcy"
+      ],
+      "area": "surface"
+    },
+    {
+      "year": 1896,
+      "title": "Arrhenius estimates warming by carbon dioxide",
+      "detail": "Using hand-computed absorption tables, Svante Arrhenius calculates that halving atmospheric carbon dioxide would cool the Earth by several degrees and that industrial coal use could raise it, and estimates the timescale in centuries — the first quantitative model of the greenhouse effect by a human agency.",
+      "people": [
+        "Svante Arrhenius"
+      ],
+      "area": "climate"
+    },
+    {
+      "year": 1904,
+      "title": "Bjerknes makes forecasting a problem in physics",
+      "detail": "Dynamic Meteorology and Hydrography writes down the governing equations for pressure, density, temperature and wind, notes that the system is closed, and observes that a forecast is therefore a problem in integration — the programme that Lewis Fry Richardson and, half a century later, every weather service pursued.",
+      "people": [
+        "Vilhelm Bjerknes"
+      ],
+      "area": "atmosphere"
+    },
+    {
+      "year": 1912,
+      "title": "Wegener proposes continental drift",
+      "detail": "In two papers and then in 1915 in The Origin of Continents and Oceans, Alfred Wegener argues that the continents have moved across the globe, citing the fit of the coastlines, matching fossils and strata across ocean gaps, and the palaeoclimate of the Gondwana glacial deposits; the mechanism he lacked kept the idea rejected for fifty years.",
+      "people": [
+        "Alfred Wegener"
+      ],
+      "area": "solid"
+    },
+    {
+      "year": 1922,
+      "title": "Richardson integrates the weather by hand",
+      "detail": "A six-hour numerical forecast worked out over weeks from a single station profile gives a wildly wrong pressure change and, in the posthumous Forecast of Weather by Numerical Process, the design of a forecasting factory — the founding document of numerical weather prediction.",
+      "people": [
+        "Lewis Fry Richardson"
+      ],
+      "area": "atmosphere"
+    },
+    {
+      "year": 1932,
+      "title": "The unit hydrograph",
+      "detail": "A study of storm runoff shows that a catchment responds to a unit depth of rainfall excess with a fixed, scalable and superposable hydrograph, giving forecasters and engineers a tool that is still the backbone of design flood estimation.",
+      "people": [
+        "Leroy K. Sherman"
+      ],
+      "area": "surface"
+    },
+    {
+      "year": 1936,
+      "title": "The inner core is discovered",
+      "detail": "Inge Lehmann accounts for weak P arrivals inside the seismic shadow zone by a solid boundary within the liquid core at about 1395 km radius — a structure inferred from a handful of seismograms and confirmed by every model since.",
+      "people": [
+        "Inge Lehmann"
+      ],
+      "area": "solid"
+    },
+    {
+      "year": 1946,
+      "title": "Radiocarbon dating",
+      "detail": "Willard Libby proposes that carbon-14 made by cosmic rays is taken up by living carbon and decays measurably after death, and demonstrates the method on samples of known age; with the calibration curves built from tree rings and corals it becomes the chronometer of the last 50 000 years.",
+      "people": [
+        "Willard Libby"
+      ],
+      "area": "history"
+    },
+    {
+      "year": 1952,
+      "title": "A flow law for ice",
+      "detail": "John Nye proposes the power-law relation between strain rate and stress measured in Alpine glaciers and derives the velocity profile of a glacier over a rigid bed; the exponent of about three makes an ice sheet a slow gravity current and puts glacier dynamics on a quantitative footing.",
+      "people": [
+        "John Nye"
+      ],
+      "area": "ocean"
+    },
+    {
+      "year": 1956,
+      "title": "The age of the Earth",
+      "detail": "Clair Patterson uses the lead isotope composition of the Canyon Diablo troilite as a cogenetic reference to date the Earth at 4.55 billion years, and in the same work demonstrates the lead contamination of the modern environment from leaded gasoline.",
+      "people": [
+        "Clair Patterson"
+      ],
+      "area": "history"
+    },
+    {
+      "year": 1957,
+      "title": "The ocean will not absorb it all",
+      "detail": "Roger Revelle and Hans Suess compute the ocean's buffer factor and show that seawater takes up added carbon dioxide slowly and in limited amount, so that a large fraction of fossil emissions must stay in the atmosphere — the calculation that turned carbon dioxide from a curiosity into a prediction.",
+      "people": [
+        "Roger Revelle",
+        "Hans Suess"
+      ],
+      "area": "ocean"
+    },
+    {
+      "year": 1958,
+      "title": "The Keeling curve begins",
+      "detail": "Charles David Keeling begins continuous measurements of atmospheric carbon dioxide at Mauna Loa and on the South Pole, and within two years has the record that shows both the steady rise and the seasonal breathing of the Northern Hemisphere; the record continues, from the same site and by the same method, today.",
+      "people": [
+        "Charles David Keeling"
+      ],
+      "area": "climate"
+    },
+    {
+      "year": 1963,
+      "title": "Magnetic stripes on the seafloor",
+      "detail": "Fred Vine and Drummond Matthews show that the symmetric pattern of magnetic anomalies about the mid-ocean ridge is the record of reversals of the geomagnetic field written into new crust as it spreads — the observation that converted most of the geological community to plate tectonics within a few years.",
+      "people": [
+        "Fred Vine",
+        "Drummond Matthews"
+      ],
+      "area": "solid"
+    },
+    {
+      "year": 1967,
+      "title": "The radiative–convective model",
+      "detail": "Syukuro Manabe and Richard Wetherald put a carbon-dioxide band model into a one-dimensional column in radiative–convective equilibrium with water vapour diagnosed from fixed relative humidity, and obtain 2.9 °C for a doubling — the first modern estimate of climate sensitivity.",
+      "people": [
+        "Syukuro Manabe",
+        "Richard Wetherald"
+      ],
+      "area": "climate"
+    },
+    {
+      "year": 1972,
+      "title": "Landsat begins continuous land observation",
+      "detail": "The Earth Resources Technology Satellite is launched on 23 July and starts the longest continuous record of moderate-resolution land imaging in existence; the free release of the archive in 2008 makes global, decadal land-change science routine.",
+      "people": [
+        "William Pecora"
+      ],
+      "area": "system"
+    },
+    {
+      "year": 1976,
+      "title": "The pacemaker of the ice ages",
+      "detail": "James Hays, John Imbrie and Nicholas Shackleton show that the dominant periodicities of the deep-sea oxygen-isotope record are the 100, 41 and 23 thousand-year orbital periods, and that the record can be tuned to them — orbital forcing becomes the standard theory of the ice ages.",
+      "people": [
+        "James Hays",
+        "John Imbrie",
+        "Nicholas Shackleton"
+      ],
+      "area": "climate"
+    },
+    {
+      "year": 1980,
+      "title": "The impact hypothesis",
+      "detail": "Luis Alvarez and colleagues report an iridium anomaly, shocked quartz and microspherules at the Cretaceous–Palaeogene boundary and propose an extraterrestrial impact as the cause of the extinction; the crater itself is located at Chicxulub in 1991, and the mechanism is now the reference case for abrupt global change.",
+      "people": [
+        "Luis Alvarez",
+        "Walter Alvarez",
+        "Frank Asaro",
+        "Helen Michel"
+      ],
+      "area": "history"
+    },
+    {
+      "year": 1985,
+      "title": "The ozone hole is discovered",
+      "detail": "Joseph Farman, Brian Gardiner and Jonathan Shanklin report that total ozone over Halley Bay has fallen by 40 % since 1977 each October; the satellite record had shown the same thing but had been filtered as instrument error. Within a year the mechanism — heterogeneous chlorine chemistry on polar stratospheric clouds — was identified.",
+      "people": [
+        "Joseph Farman",
+        "Brian Gardiner",
+        "Jonathan Shanklin"
+      ],
+      "area": "atmosphere"
+    },
+    {
+      "year": 1988,
+      "title": "The IPCC is founded",
+      "detail": "The World Meteorological Organization and the United Nations Environment Programme establish the Intergovernmental Panel on Climate Change to assess, without conducting new research, the scientific, technical and socio-economic literature relevant to human influence on the climate; its assessment reports become the reference framework of the whole field.",
+      "people": [],
+      "area": "climate"
+    },
+    {
+      "year": 1991,
+      "title": "Pinatubo cools the planet",
+      "detail": "The June eruption injects some 20 million tonnes of sulfur into the stratosphere; the resulting aerosol layer lowers global mean surface temperature by about 0.5 °C for a year or two, gives the first clear test of how well models simulate a volcanic forcing, and provides the aerosol layer whose radiative effect was measured from aircraft and satellites.",
+      "people": [],
+      "area": "atmosphere"
+    },
+    {
+      "year": 1993,
+      "title": "GISP2 reaches bedrock in Greenland",
+      "detail": "The Greenland Ice Sheet Project 2 borehole reaches 3028.5 m at Summit, recovering more than 100 000 years of layered ice with annual resolution through the last glacial, and with it the record of abrupt, decade-scale climate change that constrains how fast the system can move.",
+      "people": [
+        "Chester Langway",
+        "Paul Mayewski"
+      ],
+      "area": "ocean"
+    },
+    {
+      "year": 2000,
+      "title": "Argo begins to profile the upper ocean",
+      "detail": "The first profiling float is deployed in July; within seven years nearly 4000 floats return a temperature and salinity profile from 2000 m every ten days, and for the first time the upper ocean is observed continuously and globally — the basis of every estimate of ocean heat content and of sea-level rise since.",
+      "people": [
+        "Dean Roemmich",
+        "Toshio Suga"
+      ],
+      "area": "ocean"
+    },
+    {
+      "year": 2002,
+      "title": "GRACE weighs the land and the ice",
+      "detail": "The Gravity Recovery and Climate Experiment pair of satellites begins measuring monthly changes in the Earth's gravitational field, giving total water storage — ice sheets, groundwater, snow, soil moisture and surface water — as a single observable over whole basins for the first time.",
+      "people": [
+        "Byron Tapley",
+        "Michael Watkins"
+      ],
+      "area": "system"
+    },
+    {
+      "year": 2007,
+      "title": "Eight hundred thousand years of trapped air",
+      "detail": "The EPICA Dome C team publishes 800 000 years of atmospheric carbon dioxide, methane and nitrous oxide together with the deuterium temperature record: over that entire span carbon dioxide stayed between 172 and 300 ppm, and today's value is above 420 ppm.",
+      "people": [
+        "Étienne Jouzel",
+        "Valérie Masson-Delmotte"
+      ],
+      "area": "climate"
+    },
+    {
+      "year": 2015,
+      "title": "The Paris Agreement",
+      "detail": "Parties to the UN Framework Convention on Climate Change agree to hold the increase in global average temperature to well below 2 °C above pre-industrial levels and to pursue efforts to limit it to 1.5 °C, with nationally determined contributions reviewed every five years — a target stated in the language of the physical science.",
+      "people": [],
+      "area": "climate"
+    },
+    {
+      "year": 2021,
+      "title": "It is unequivocal",
+      "detail": "The IPCC Sixth Assessment Report Working Group I states that it is unequivocal that human influence has warmed the atmosphere, ocean and land, narrows equilibrium climate sensitivity to a likely range of 2.5–4 °C, and puts the Earth's remaining carbon budget for 1.5 °C in explicit arithmetic.",
+      "people": [],
+      "area": "climate"
+    }
+  ]
 }

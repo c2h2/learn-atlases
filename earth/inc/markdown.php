@@ -278,7 +278,7 @@ function md_parse_blocks(array $lines, int $base, MdDoc $doc): array
                 if ($inCode) {
                     continue;
                 }
-                if ($kind === 'widget') {
+                if ($kind === 'widget' || $kind === 'svg') {
                     if ($t === ':::') {
                         break;
                     }
@@ -298,6 +298,8 @@ function md_parse_blocks(array $lines, int $base, MdDoc $doc): array
             $inner = array_slice($lines, $i + 1, max(0, $j - $i - 1));
             if ($kind === 'widget') {
                 $out[] = md_widget_node($title, $attrs, $inner, $ln, $doc);
+            } elseif ($kind === 'svg') {
+                $out[] = md_svg_node($title, $attrs, $inner, $ln, $doc);
             } else {
                 if (!isset(MD_KINDS[$kind])) {
                     $doc->err($ln, "unknown block kind ':::$kind'");
@@ -439,6 +441,42 @@ function md_parse_list(array $lines, int $start, int $base, MdDoc $doc): array
     return [['t' => 'list', 'ordered' => $ordered, 'start' => $first, 'items' => $items, 'line' => $base + $start], max(1, $i - $start)];
 }
 
+/**
+ * A static vector figure: `:::svg` with an optional `caption:` line and one raw <svg> element.
+ * Used for schematic diagrams (block diagrams, fault geometry, landform sketches) that no
+ * interactive type draws; anything with a slider or a draggable point belongs in :::widget.
+ */
+function md_svg_node(string $title, array $attrs, array $inner, int $ln, MdDoc $doc): array
+{
+    $cfg = [];
+    $body = [];
+    $started = false;
+    foreach ($inner as $k => $raw) {
+        $t = trim($raw);
+        if (!$started && $t !== '' && !str_starts_with($t, '<')) {
+            if (preg_match('/^(caption|title)\s*:\s?(.*)$/', $t, $m)) {
+                $cfg[$m[1]] = trim($m[2]);
+                continue;
+            }
+            $doc->err($ln + 1 + $k, "svg figure: expected <svg …> or 'caption: …', got: " . substr($t, 0, 40));
+            continue;
+        }
+        $started = true;
+        $body[] = $raw;
+    }
+    $raw = trim(implode("\n", $body));
+    if ($raw === '' || !preg_match('/^<svg\b/i', $raw)) {
+        $doc->err($ln, 'svg figure has no <svg> element');
+    }
+    if (preg_match('/<\s*\/?\s*(script|foreignObject|image|iframe)\b|\son[a-z]+\s*=|javascript:|<!ENTITY|<\?xml/i', $raw)) {
+        $doc->err($ln, 'svg figure: scripts, external references, event attributes and entity declarations are not allowed');
+    }
+    if ($title !== '' && ($cfg['caption'] ?? '') === '') {
+        $cfg['caption'] = $title;
+    }
+    return ['t' => 'svg', 'config' => $cfg, 'raw' => $raw, 'attrs' => $attrs, 'line' => $ln];
+}
+
 function md_widget_node(string $head, array $attrs, array $inner, int $ln, MdDoc $doc): array
 {
     $type = trim($head);
@@ -519,6 +557,7 @@ function md_number(array &$nodes, MdDoc $doc): void
                 md_number($node['children'], $doc);
                 break;
             case 'widget':
+            case 'svg':
                 $node['num'] = $doc->next('w');
                 break;
         }
@@ -602,6 +641,8 @@ function md_emit_node(array $node, MdDoc $doc, array $ctx): string
             return $o . '</tbody></table></div>';
         case 'widget':
             return md_emit_widget($node, $doc);
+        case 'svg':
+            return md_emit_svg($node, $doc);
         case 'blk':
             return md_emit_block($node, $doc, $ctx);
     }
@@ -762,6 +803,17 @@ function md_emit_widget(array $node, MdDoc $doc): string
     return '<figure class="widget" id="' . h($id) . '" data-widget="' . h($node['type']) . '" data-config="' . h(json_encode($cfg, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)) . '">'
         . '<div class="widget-stage"><div class="widget-msg">' . h(t('Loading interactive figure…')) . '</div>'
         . '<noscript><div class="widget-msg">' . h(t('This interactive figure needs JavaScript.')) . '</div></noscript></div>' . $cap . '</figure>';
+}
+
+function md_emit_svg(array $node, MdDoc $doc): string
+{
+    $caption = $node['config']['caption'] ?? '';
+    $id = $node['attrs']['id'] ?? ('fig-' . ($node['num'] ?? '0'));
+    $cap = $caption !== ''
+        ? '<figcaption><span class="figno">' . h(t('Figure')) . ' ' . h((string)($node['num'] ?? '')) . '</span>'
+          . md_inline($caption, $doc, $node['line']) . '</figcaption>'
+        : '';
+    return '<figure class="svg-figure" id="' . h($id) . '"><div class="svg-stage">' . $node['raw'] . '</div>' . $cap . '</figure>';
 }
 
 // --------------------------------------------------------------------------------------------

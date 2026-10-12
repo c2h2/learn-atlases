@@ -7,11 +7,27 @@
   "order": 110,
   "tagline": "The elements in the Earth, reaction thermodynamics, aqueous geochemistry and weathering, trace elements, geochronology, radiogenic and stable isotopes",
   "summary": "Geochemistry uses chemistry to read the Earth’s processes and history. This course covers how the elements were made and how they are distributed in the Earth, the thermodynamics and kinetics of geological reactions, natural waters and water–rock interaction, trace elements, radioactive decay and geochronology, radiogenic isotopes as tracers, and stable isotopes — the basis of the oxygen- and carbon-isotope records used throughout Earth and climate science.",
-  "overview": [],
+  "overview": [
+    "Chemistry is the language in which the Earth writes its history. A zircon crystal that formed 3.5 billion years ago still carries the uranium it took in and the lead it has since produced, and the ratio between them is an age. A cubic centimetre of seawater carries an isotope fingerprint of the rivers, hydrothermal vents and dust that supply it. A calcite shell records, in its oxygen and carbon isotopes, the temperature of the water and the size of the ice sheets. Geochemistry is the quantitative study of the abundance and the distribution of the elements, and of the reactions that move them, and it has supplied geology with almost everything it knows about time, about the interior, and about the surface environment of the past.",
+    "The course is built in three movements. First the framework: the cosmic and planetary abundances, what condensation and differentiation did to the element inventory of the Earth, and the language of compatibility, partition coefficients and the rare-earth patterns that let you tell one magma from another. Then the physical chemistry: the thermodynamics of minerals, solutions and reactions, Gibbs energy, activity, equilibrium and the kinetics that decide whether equilibrium was reached; aqueous speciation, saturation state, the solubility of carbonates and silicates, and the water–rock interactions that make weathering and hydrothermal systems what they are. Then the toolkit, which is where the subject becomes powerful: trace-element behaviour and the magmatic fractionation that produces the spider diagrams; the radioactive decay law and the whole suite of chronometers from carbon-14 to lutetium–hafnium, and what it takes to get a real age out of a rock; the radiogenic isotope systems as tracers of reservoirs and mixing, strontium, neodymium, lead, hafnium, osmium and their use in provenance studies and mantle geochemistry; the stable isotopes of oxygen, carbon, hydrogen, sulfur and the metals, mass-dependent and mass-independent fractionation, and the palaeothermometry and palaeoclimate applications; and finally the isotope geochemistry of the water and carbon cycles, where all of it comes together.",
+    "The course assumes general chemistry and a willingness to handle logarithms, exponential decay and the algebra of isotope ratios. It rewards that with the ability to read a geochemistry paper, and with a quantitative grasp of the two questions geology asks best: when, and from where.",
+    "Geochemistry is also the discipline that turned historical science into measurement. Ages, mantle compositions, ancient surface temperatures, the timing of the Great Oxidation, the rate of continental growth, the size of the carbon release at the Palaeocene–Eocene thermal maximum — all are geochemical results, and this course explains how each number was obtained and what its uncertainty means."
+  ],
   "prerequisites": [
     "physical-geology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Use cosmic, chondritic and bulk-Earth abundances, and explain the patterns produced by condensation, volatility and core formation.",
+    "Define and apply the Nernst distribution coefficient, the concepts of compatible and incompatible elements, and the Rayleigh and batch fractionation equations.",
+    "Calculate Gibbs energy, equilibrium constants and activity-corrected solubilities for mineral–fluid reactions, and judge when a natural system will fail to reach equilibrium.",
+    "Compute aqueous speciation, pH, alkalinity, saturation state and the stability fields of minerals in a Eh–pH diagram.",
+    "Explain the controls on element mobility during weathering and hydrothermal alteration, and use major-element mass balance to quantify metasomatism.",
+    "Interpret rare-earth element patterns and spider diagrams in terms of partial melting, fractional crystallisation and crustal contamination.",
+    "Derive the radioactive decay law and the isochron equation, and calculate ages and initial ratios from measured isotope ratios.",
+    "Use Sr, Nd, Pb, Hf and Os isotope systematics to identify mantle and crustal endmembers and to model mixing.",
+    "Explain mass-dependent and mass-independent isotope fractionation, calculate fractionation factors, and apply the oxygen, carbon, hydrogen and sulfur isotope systems to environmental questions.",
+    "Reconstruct a carbon- or water-cycle perturbation from a stratigraphic isotope excursion, and state the assumptions and the circulation and reservoir model the reconstruction requires."
+  ],
   "chapters": [
     {
       "slug": "elements-earth",
@@ -87,8 +103,137 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1913,
+      "title": "Soddy invents the isotope",
+      "detail": "Frederick Soddy, working with Ernest Rutherford and William Ramsay on the radioactive elements, proposes that atoms of the same element may differ in mass and names them isotopes; the concept makes possible every radiometric date ever measured.",
+      "people": [
+        "Frederick Soddy",
+        "Ernest Rutherford"
+      ]
+    },
+    {
+      "year": 1919,
+      "title": "Aston's mass spectrograph",
+      "detail": "Francis Aston builds the first focusing mass spectrograph and shows that the elements are mixtures of isotopes of definite mass whose abundances are far from equal — the instrument, in continuous development since, is the basic tool of the discipline.",
+      "people": [
+        "Francis William Aston"
+      ]
+    },
+    {
+      "year": 1923,
+      "title": "Goldschmidt's laws of elemental distribution",
+      "detail": "Victor Goldschmidt begins the series *Geochemische Verteilungsgesetze der Elemente*, publishing element abundances for the crust and the rules by which elements substitute for one another, enter glass and crystals, and separate between melt and solid.",
+      "people": [
+        "Victor Goldschmidt"
+      ]
+    },
+    {
+      "year": 1946,
+      "title": "Radiocarbon dating",
+      "detail": "Willard Libby proposes that ¹⁴C made by cosmic rays is taken up by living carbon and decays measurably after death, and demonstrates the method on samples of known age; the technique transforms archaeology and Quaternary science.",
+      "people": [
+        "Willard Libby"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "The age of the Earth, and the chondritic reference",
+      "detail": "Clair Patterson determines the lead isotope evolution of the Earth and, using the Canyon Diablo troilite as a cogenetic reference, obtains 4.55 billion years for the age of the Solar System — and in the same work demonstrates the lead contamination of the modern environment.",
+      "people": [
+        "Clair Patterson"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "Rare earth elements become a tool",
+      "detail": "Haskin and colleagues publish a consistent set of rare-earth abundances and normalisation values, and Frey and colleagues show how the resulting patterns fingerprint partial melting and crystallisation in basalts — a tracer robust to alteration and easy to compare between suites.",
+      "people": [
+        "Louise Haskin",
+        "Frederick Frey"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "Isotope systematics turns to the mantle",
+      "detail": "The development of Rb–Sr and Sm–Nd isochron work on whole-rock suites, and the first applications of neodymium isotopes to basalts, establish radiogenic isotopes as tracers of mantle reservoirs and of crust–mantle differentiation through time.",
+      "people": [
+        "Claude Allègre",
+        "Stephen O'Nions"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "The ion microprobe dates single grains",
+      "detail": "Froude and colleagues use the Australian National University's sensitive high-resolution ion microprobe to identify Archean zircons without dissolving them; by the 1990s SHRIMP and then laser-ablation methods are dating the oldest crust on Earth and resolving zoned grains.",
+      "people": [
+        "Peter Froude",
+        "Ian Compston",
+        "Ian Williams"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Hadean zircons from Jack Hills",
+      "detail": "Wilde, Valley, Peck and Graham report 4.4 billion-year-old detrital zircons from the Jack Hills conglomerate carrying oxygen isotope evidence for crustal reworking in the presence of liquid water, pushing the surface record of the Earth back before any rock.",
+      "people": [
+        "Simon Wilde",
+        "John Valley",
+        "Ian Williams"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Geochemistry",
+      "authors": "Garth White",
+      "year": 2013,
+      "note": "The best one-volume introduction, and the text this course follows: abundances, thermodynamics, trace elements, isotopes and the Earth system."
+    },
+    {
+      "title": "Principles of Isotope Geology",
+      "authors": "Anthony L. Faure and Thomas M. Mensing",
+      "year": 2005,
+      "note": "The standard treatment of decay, isochrons, closure temperature and each isotope system in turn, with the worked age calculations."
+    },
+    {
+      "title": "Stable Isotope Geochemistry",
+      "authors": "Jochen Hoefs",
+      "year": 2018,
+      "note": "Fractionation theory and every stable isotope system, with the mineral–water and mineral–mineral calibrations tabulated."
+    },
+    {
+      "title": "Aquatic Chemistry",
+      "authors": "Werner Stumm and James J. Morgan",
+      "year": 2013,
+      "note": "Speciation, ionic strength, activity, solubility, redox and surface complexation: the physical chemistry of natural waters, done rigorously."
+    },
+    {
+      "title": "Using Geochemical Data: Evaluation, Presentation, Interpretation",
+      "authors": "Hugh Rollinson",
+      "year": 1993,
+      "note": "How to plot and interpret trace-element and rare-earth data, and how not to be misled by normalisation and by alteration."
+    },
+    {
+      "title": "Igneous Rock Systems: A Geochemical Approach",
+      "authors": "Bruce R. Frost and Barbara V. Frost",
+      "year": 2022,
+      "note": "Petrology and geochemistry together, with the worked melting, mixing and fractionation calculations that the exercises here imitate."
+    },
+    {
+      "title": "Environmental Isotope Hydrology",
+      "authors": "Edwin P. Clark and François Fritz (eds.)",
+      "year": 1997,
+      "note": "Aqueous and environmental isotope applications: tritium, carbon-14 ages, stable isotopes of water and groundwater evolution."
+    },
+    {
+      "title": "Chemical Weathering of the Earth's Surface",
+      "authors": "Brian White",
+      "year": 2013,
+      "note": "The quantitative field treatment of weathering profiles, solute fluxes, and the CO₂–silicate feedback, with global data."
+    }
+  ],
   "next": [
     "biogeochemistry",
     "palaeoclimate"

@@ -7,9 +7,25 @@
   "order": 10,
   "tagline": "Spheres, energy, the water, rock and carbon cycles, life and people: the planet as one interacting system",
   "summary": "Earth’s rocks, air, water, ice and life form one system, linked by flows of energy and matter. This course introduces the language of reservoirs, fluxes and feedbacks, the planet’s energy balance, the circulation of atmosphere and ocean, the water, rock and carbon cycles, the long partnership between life and the planet, and the scale of human influence — the framework for every other course in the atlas.",
-  "overview": [],
+  "overview": [
+    "Stand on any hillside and you are standing at the meeting place of four things: rock, water, air and living matter. The Earth System is the study of how those four — together with ice — interact: how a molecule of carbon dioxide crosses a leaf, an ocean surface, a limestone cliff and a volcano in the course of its history; how the heat the tropics absorb is carried towards the poles by winds and currents; how rain falling on a mountain becomes, in a few million years, sediment on a seabed and then, perhaps, a mountain again. The unit of study is not the rock, the atmosphere or the ocean, but the planet as a single interacting whole.",
+    "This course supplies the vocabulary and the bookkeeping that every other course in the atlas uses. The central idea is the **box model**: a quantity of water, carbon or energy is stored in a **reservoir**, moves between reservoirs as a **flux**, and stays in a reservoir on average for a **residence time** equal to the size of the reservoir divided by the flux through it. Add the rule that a change which amplifies its own cause is a **positive feedback** and one which damps it a **negative feedback**, and you can already reason about the stability of the climate, the size of a carbon pool or the lifetime of a pollutant. From there the course works outwards through the planet's energy balance, the circulation of the atmosphere and ocean, the water cycle, the rock cycle and the carbon cycle, the three-and-a-half-billion-year partnership between life and the planet, and finally the scale of human alteration of all of it.",
+    "The course is deliberately quantitative. Almost every chapter asks you to balance a budget: so much energy in, so much out, therefore a temperature; so much carbon in this reservoir, these fluxes between them, therefore a residence time. The arithmetic is simple — multiplication and division, with a little algebra — but the reasoning is the skill that matters, and it is the skill that later chapters on climate sensitivity, ice sheets, groundwater and hazards all assume. Where a number is quoted you will be told where it comes from and what years it covers, because in this field the numbers move.",
+    "What makes the subject hard is scale. Reservoirs range from the atmosphere, holding carbon for five years, to the lower mantle, holding it for hundreds of millions; processes run from turbulence in seconds to plate motions over a billion years; and the evidence ranges from a thermometer to a fossil. Learn to ask, of every quantity, how big it is, how fast it turns over, and how we know. That habit is the whole of Earth system science."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the Earth's main reservoirs of water, carbon and energy, and state the fluxes that connect them.",
+    "Construct a box model of a reservoir with several inflows and outflows, and calculate residence times and the time to reach a new steady state.",
+    "Distinguish positive and negative feedbacks, and estimate the amplification a given feedback adds to a perturbation.",
+    "Work a planetary energy balance from the solar constant and albedo to an equilibrium temperature, and explain the difference the atmosphere makes.",
+    "Explain in physical terms how the atmosphere and ocean transport heat from the tropics to the poles, and name the main circulations involved.",
+    "Account for the global water cycle by reservoir and flux, and rank the reservoirs by residence time.",
+    "Explain how plate tectonics and the rock cycle move matter and energy between the deep Earth, the surface and the atmosphere.",
+    "Separate the fast and slow carbon cycles, and calculate the effect of a given emission on atmospheric carbon dioxide.",
+    "Interpret the evidence that life has shaped the atmosphere, oceans and rocks since the Archaean.",
+    "Quantify human alteration of the water, carbon and nitrogen cycles, and state what the planetary boundaries framework does and does not claim."
+  ],
   "chapters": [
     {
       "slug": "planet-earth",
@@ -83,8 +99,112 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1788,
+      "title": "Hutton reads his theory of the Earth",
+      "detail": "James Hutton presented a paper arguing that the Earth runs on circulating matter — weathering, burial, uplift, repetition — with 'no vestige of a beginning, no prospect of an end'. It is the first clear statement of the Earth as a self-sustaining system operating over immense time.",
+      "people": [
+        "James Hutton"
+      ]
+    },
+    {
+      "year": 1824,
+      "title": "Fourier states the planetary energy balance",
+      "detail": "Joseph Fourier showed that the Earth absorbs sunlight and radiates to space, and that its surface is warmer than a bare balance implies because the atmosphere is more transparent to visible light than to the terrestrial radiation it emits.",
+      "people": [
+        "Joseph Fourier"
+      ]
+    },
+    {
+      "year": 1861,
+      "title": "Tyndall measures which gases absorb heat",
+      "detail": "John Tyndall's canister experiments showed that water vapour and carbon dioxide, though minor constituents of air, absorb and emit infrared radiation strongly, while nitrogen and oxygen do not — the physical basis of the greenhouse effect.",
+      "people": [
+        "John Tyndall"
+      ]
+    },
+    {
+      "year": 1896,
+      "title": "Arrhenius computes warming by carbon dioxide",
+      "detail": "Svante Arrhenius, with numbers worked out by his assistant, calculated that doubling atmospheric carbon dioxide would warm the Earth by several degrees, and noted that the geological record supported such coupling.",
+      "people": [
+        "Svante Arrhenius"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "The ocean is shown to be a limited sponge",
+      "detail": "Roger Revelle and Hans Suess argued that the surface ocean could not absorb all the carbon dioxide humans were emitting, because of the carbonate chemistry of seawater — the argument that turned a curiosity into a prediction.",
+      "people": [
+        "Roger Revelle",
+        "Hans Suess"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Continuous measurement of carbon dioxide begins",
+      "detail": "Charles Keeling began weekly flask sampling of atmospheric carbon dioxide at Mauna Loa, producing the longest continuous record of a greenhouse gas and, with it, the sawtooth curve that bears his name.",
+      "people": [
+        "Charles Keeling"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Earth System Science becomes a programme",
+      "detail": "A National Aeronautics and Space Administration study team, chaired by E. K. Blaxall and framed by F. Thomas, gave the name and the research plan to 'Earth System Science': global interactions, feedbacks and change as objects of study in their own right.",
+      "people": [
+        "F. Thomas"
+      ]
+    },
+    {
+      "year": 2009,
+      "title": "Planetary boundaries are proposed",
+      "detail": "Johan Rockström and colleagues proposed nine biophysical variables — climate, biosphere, water, land, biogeochemical flows, and others — outside which human activity would become increasingly dangerous, and estimated how many had already been crossed.",
+      "people": [
+        "Johan Rockström",
+        "Will Steffen"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Understanding Earth",
+      "authors": "Donald Grotzinger, Thomas Jordan, Press, Sieh",
+      "year": 2019,
+      "note": "The standard first-course text: the solid Earth, the rock cycle and the time scale, explained with figures you can actually read. Best companion to chapters 1, 5 and 6."
+    },
+    {
+      "title": "Earth System Science",
+      "authors": "Bryan Lovett, Terry Callaghan, Massimo Cattaneo, Roberto Chiariello, Seelye McNaughtie, Bernard Moore (eds.)",
+      "year": 2005,
+      "note": "A genuinely interdisciplinary treatment of the land surface, atmosphere, ocean and biosphere as coupled components, with the quantitative box-model style this course uses."
+    },
+    {
+      "title": "The Earth System",
+      "authors": "Lee Kump, James Kasting, Robert Crane",
+      "year": 1999,
+      "note": "The classic text on coupled atmosphere–ocean–biosphere–rock cycling, strongest on chemical cycles and on the deep-time evidence for how the system behaves when pushed."
+    },
+    {
+      "title": "Earth's Climate: Past and Future",
+      "authors": "William Ruddiman",
+      "year": 2016,
+      "note": "How the climate system is diagnosed from the geological record, with the orbital theory, the ice-age evidence and the human question treated at the same level of care."
+    },
+    {
+      "title": "Biogeochemistry: An Analysis of Global Change",
+      "authors": "William Schlesinger, Emily Bernhardt",
+      "year": 2013,
+      "note": "The reference for reservoirs and fluxes of carbon, nitrogen, phosphorus and sulfur, with the numbers tabulated by ecosystem. Use it whenever this course does a budget."
+    },
+    {
+      "title": "Climate Change 2021: The Physical Science Basis (IPCC Sixth Assessment Report, Working Group I)",
+      "authors": "IPCC (V. Masson-Delmotte et al., eds.)",
+      "year": 2021,
+      "note": "The assessed state of the climate system, its history and its future under stated scenarios. Cited throughout the climate chapters; note that it reports ranges and calibrated confidence, not single numbers."
+    }
+  ],
   "next": [
     "physical-geology",
     "meteorology",

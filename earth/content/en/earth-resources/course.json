@@ -7,12 +7,30 @@
   "order": 230,
   "tagline": "Resources and reserves, ore deposits, critical minerals, petroleum systems, oil, gas and coal, geothermal energy, subsurface storage, groundwater and the impacts of extraction",
   "summary": "Almost every material society uses, and most of its energy, comes out of the ground. This course explains how resources and reserves are estimated, how mineral deposits and fossil fuels form and are found, the geology of critical minerals, geothermal energy and storing carbon dioxide underground, groundwater as a resource, and the environmental and social effects of extraction.",
-  "overview": [],
+  "overview": [
+    "Everything a civilisation uses is a rock, a fluid in a rock, or something made from one. The steel in a bridge, the copper in a cable, the lithium in a battery, the aggregate in concrete, the water in an irrigation scheme, the heat under a spa town, the pore space into which carbon dioxide might be injected and the aquifer from which a city draws — all are Earth materials, and all are obtained, used and disposed of under a set of economic, legal and environmental constraints. Economic geology is the study of where those materials are concentrated, why they are there, how to find and quantify them, what it costs and what it does to get them, and how much of the planet is left.",
+    "The course begins with the distinction that organises everything else: a **resource** is a concentration of material with some prospect of eventual economic extraction, a **reserve** is that part of a resource that is currently economically and technically mineable under defined conditions and with defined confidence. Reserves grow with price and with technology and shrink with depletion and with redefinition, so a reserve figure is a statement about economics as much as about geology, and the reporting codes — JORC, SAMREC, the CRIRSCO family, SEC rules — exist precisely to stop the two being confused. It then treats the **ore-forming processes** in the order a economic geologist thinks: magmatic segregation and immiscible sulfide liquids; hydrothermal systems, from porphyry copper and epithermal gold to sediment-hosted and orogenic deposits, with the fluids, the temperatures, the wall-rock alteration and the traps; and the surface and sedimentary processes — banded iron formations, supergene enrichment, placers, evaporites, laterites and the manganese crusts and nodules of the deep sea. **Critical minerals** are treated as a policy category with a real geological content: elements whose supply risk is high relative to their economic importance, whose by-product nature, geographic concentration, and low concentration factors make them hard to supply quickly.",
+    "The second half is the subsurface as a volume to be used. **Petroleum systems** — source rock, migration, reservoir, seal, trap, timing — and the exploration and production technology that follows from them, including unconventional reservoirs and what makes them different; **coal** and its geology; **geothermal energy** and the subsurface as a store, for heat, for gas, for hydrogen and for carbon dioxide, with the containment and monitoring problems that storage implies; and **groundwater**, the most heavily used and least valued of the resources, with its recharge rates, its overdraft, its subsidence and its quality. The course ends with **impacts**: land disturbance and waste rock and tailings, acid rock drainage and its chemistry and its persistence, water use and water pollution, energy and emissions, induced seismicity, the social and human-rights dimension of mining in fragile regions, closure and rehabilitation, and the material flows that make recycling and circularity a geological question as much as an industrial one.",
+    "Numbers are dated and sourced throughout, because they change: reserves, production, prices, recycling rates and the lists of critical minerals differ between agencies and definitions, and this course names the source and the definition every time. The environmental and social material is presented factually, with the evidence and the disagreements, and without advocacy for or against any particular project or policy."
+  ],
   "prerequisites": [
     "sedimentology",
     "hydrology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish resource, reserve, ore, gangue, grade and cut-off grade, and explain how price, technology and the reporting codes change a reserve estimate.",
+    "Classify ore deposits by genetic process and by the deposit model, and use the model to design an exploration programme.",
+    "Explain the formation of magmatic sulfide, chromite and pegmatite deposits, and the elements each concentrates.",
+    "Describe hydrothermal ore-forming systems — fluid sources and evolution, boiling, mixing, wall-rock alteration and the traps — and apply them to porphyry, epithermal, VMS, MVT, orogenic-gold and sediment-hosted deposits.",
+    "Explain the origin of banded iron formations, supergene enrichment, laterites, placers and evaporites, and the paleoenvironmental information they carry.",
+    "Define critical and technology-critical minerals, and evaluate supply risk using concentration, by-product status, geographic distribution and recyclability.",
+    "Work a petroleum system: source-rock maturity and kinetics, migration, reservoir and seal properties, trap and timing, and the chance of success of an exploration prospect.",
+    "Describe conventional and unconventional reservoirs, the production lifecycle, and the reserve and production decline behaviour of a field.",
+    "Explain geothermal systems and engineered geothermal systems, and the resource, corrosion, seismicity and economics constraints on development.",
+    "Assess a subsurface storage site for carbon dioxide, hydrogen, gas or waste, and describe the containment, monitoring and leakage risks.",
+    "Describe groundwater as a renewable and non-renewable resource, and quantify recharge, sustainable yield, overdraft, subsidence and quality degradation.",
+    "Quantify the environmental footprint of extraction — waste, water, energy, emissions, land, induced seismicity — and evaluate the options for reducing it, including closure and rehabilitation."
+  ],
   "chapters": [
     {
       "slug": "resources-reserves",
@@ -89,7 +107,119 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1556,
+      "title": "Agricola writes down the mining and metallurgy of his day",
+      "detail": "*De Re Metallica*, published posthumously in Basel, describes prospecting, mining, assaying, smelting and the drainage and ventilation problems of the Saxon and Hungarian mines, and is the first systematic account of the earth resources industry — including the first clear complaints about the pollution it caused.",
+      "people": [
+        "Georgius Agricola"
+      ]
+    },
+    {
+      "year": 1859,
+      "title": "The first commercial oil well",
+      "detail": "Edwin Drake's well at Titusville, Pennsylvania, reached by cable tool at 21 m, flows about 15 barrels a day and shows that oil can be obtained by drilling rather than by gathering surface seeps; the industry, the engineering and the geology of petroleum begin there.",
+      "people": [
+        "Edwin Drake"
+      ]
+    },
+    {
+      "year": 1901,
+      "title": "Spindletop and the age of oil",
+      "detail": "A salt dome on the Texas coast flows uncontrolled at some 100 000 barrels a day for nine days, and within a year the United States has the largest oil field in the world and the price of kerosene has halved; the salt dome becomes the first great petroleum play.",
+      "people": [
+        "Patillo Higgins",
+        "Curtis Hamill"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "Prudhoe Bay and the scale of what is left",
+      "detail": "The discovery well on the North Slope of Alaska finds the largest onshore field in North America, with something like 25 billion barrels originally in place; its development, its pipeline and its environmental conditions become the reference case for large projects in sensitive environments.",
+      "people": [
+        "Robert Doran"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "The limits debate and the first environmental conference",
+      "detail": "The Club of Rome's *The Limits to Growth* runs resource depletion and pollution on a systems model to 2100, and the United Nations Conference on the Human Environment at Stockholm produces the first international environmental institutional framework; both put finite-planet arguments on the political agenda, and both remain contested.",
+      "people": [
+        "Donella Meadows",
+        "Dennis Meadows"
+      ]
+    },
+    {
+      "year": 1989,
+      "title": "Exxon Valdez and the tanker rules",
+      "detail": "A grounded tanker releases about 41 million litres of crude into Prince William Sound; the spill, its litigation and its slow ecological recovery lead to the United States Oil Pollution Act and to the international phase-out of single-hull tankers, and make transport risk part of every oil-spill risk assessment.",
+      "people": []
+    },
+    {
+      "year": 2008,
+      "title": "The shale revolution",
+      "detail": "The combination of horizontal drilling and multi-stage hydraulic fracturing, developed over two decades by George Mitchell's company in the Barnett shale, makes US dry-gas output overtake that of the Russian Federation; oil follows a decade later, and with it a debate about water, methane, induced seismicity and energy independence that has not settled.",
+      "people": [
+        "George Mitchell"
+      ]
+    },
+    {
+      "year": 2010,
+      "title": "Deepwater Horizon",
+      "detail": "A blowout in 1500 m of water in the Gulf of Mexico kills eleven people and releases an estimated 4.9 million barrels over 87 days, the largest marine oil spill on record; the accident and its investigation reshape well-control regulation, blowout-preventer standards and the response planning for deep water.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Resources and Energy",
+      "authors": "Brian White",
+      "year": 2013,
+      "note": "The whole of this course in one volume: energy and mineral resources, reserves and their statistics, depletion, demand, recycling and the environmental consequences, with the numbers sourced."
+    },
+    {
+      "title": "Ore Geology and Industrial Minerals: An Introduction",
+      "authors": "Anthony M. Evans (ed.)",
+      "year": 1993,
+      "note": "The clearest survey of deposit types and their processes, written deposit class by deposit class."
+    },
+    {
+      "title": "Economic Geology, 100th Anniversary Volume",
+      "authors": "Jeremy Hedenquist, John Thompson, F. Robert Henley and John W. Valley (eds.)",
+      "year": 2005,
+      "note": "The deposit-model literature in its modern form, written by the people who defined each class; the reference for the ore-deposit chapters."
+    },
+    {
+      "title": "Petroleum Geology",
+      "authors": "Colin North, K. Lohmann and J. McCulloch",
+      "year": 2022,
+      "note": "Source rocks, migration, traps, reservoirs, seals and the petroleum-system approach, in the standard third edition."
+    },
+    {
+      "title": "The Petroleum System",
+      "authors": "L. B. Magoon and G. E. G. Dow (eds.), American Association of Petroleum Geologists",
+      "year": 1994,
+      "note": "The volume that made 'the petroleum system' the unit of exploration assessment, with the timing and chance-of-success methodology."
+    },
+    {
+      "title": "Groundwater Hydrology",
+      "authors": "David K. Todd and Larry W. Mays",
+      "year": 2005,
+      "note": "The groundwater-resource chapters: aquifer properties, well hydraulics, regional flow, sustainable yield, seawater intrusion and contamination."
+    },
+    {
+      "title": "Geothermal Energy: Renewable Energy and the Environment",
+      "authors": "Mary H. Dickson and Mario Fanelli",
+      "year": 2003,
+      "note": "Resource assessment, reservoir engineering, plant types, enhanced systems, and the economics and risks of geothermal development."
+    },
+    {
+      "title": "Mineral Commodity Summaries",
+      "authors": "United States Geological Survey (annual)",
+      "year": 2025,
+      "note": "The annual world production, reserves and country data for every mineral commodity, with definitions; the source for the reserve and production figures used in this course."
+    }
+  ],
   "next": []
 }

@@ -7,13 +7,30 @@
   "order": 180,
   "tagline": "Climate archives and proxies, dating, ocean-sediment and ice-core records, greenhouse and icehouse climates, orbital cycles and ice ages, abrupt change, the Holocene and the last two millennia",
   "summary": "Past climates are natural experiments that test our understanding of the climate system. This course covers the archives and proxies that record past climate and how they are dated, the records from ocean sediments and ice cores, and then follows climate through time: greenhouse and icehouse worlds over hundreds of millions of years, the ice ages paced by the Earth’s orbit, abrupt changes, the Holocene and the climate of the last two thousand years.",
-  "overview": [],
+  "overview": [
+    "Instruments give us a century and a half of weather records and a half-century of satellites. The climate system operates on timescales from a season to a hundred million years, and for all of them we have only the Earth's own archives: the annual layers of ice and coral, the shells of foraminifera buried in marine mud, the pollen in a lake, the rings of a tree, the speleothem in a cave, the dust of a loess plateau, the isotope chemistry of a stalagmite, the fossils of a coal swamp. Palaeoclimatology is the discipline that turns those archives into quantitative estimates of past temperature, rainfall, ice volume, carbon dioxide and circulation — and then asks what the past can tell us about the future.",
+    "The course has three parts. The first is method. A proxy is a measured property of an archive that is related, through a calibration or a mechanism, to a climate variable; every proxy has a sensitivity, a seasonality, a timescale of averaging, a chronological uncertainty and a set of failure modes. We treat the archives and their proxies in turn — isotopic, biological, chemical and physical — and with them the statistical machinery of transfer functions, calibration and validation, and the reconstruction of a variable from many imperfect indicators. The second part is dating, which is where the subject either stands or falls: radiocarbon and its calibration, uranium–thorium, argon–argon, cosmogenic nuclides, varve and tree-ring counting, tephrochronology, magnetic stratigraphy and orbital tuning, and the honest treatment of age–depth models and their uncertainty. The third part is the record itself, in order of increasing age: the last two thousand years, with the instrumental overlap and the question of how unusual the present is; the Holocene and its orbitally paced monsoons and its abrupt terminations; the last glacial cycle and its millennial-scale oscillations, ice-rafting episodes and the bipolar seesaw; the ice-core records of carbon dioxide, methane and temperature over 800 000 years; the deep ocean-sediment record of the Plio-Pleistocene ice ages; and the deep time of greenhouse worlds, snowball Earths, anoxic oceans and mass extinctions. Orbital forcing and the theory of the ice ages run through all of it, as does the question of abrupt change — what the palaeorecord says about rates of change, thresholds and hysteresis.",
+    "The course is deliberately critical about evidence. You will learn to ask, of any reconstruction, what the archive is, how it is dated, what the proxy responds to and when, how big the calibration uncertainty is, whether the chronology can support the claimed synchronicity, and whether the reconstruction is being read as a global statement when it is a local one. Much of the recent history of the subject consists of apparently robust reconstructions being revised when better chronologies or better calibrations appeared.",
+    "The reason it matters to a climate scientist is specific. The past is the only experiment we have on the climate system at CO₂ concentrations like and above today's, at different ocean configurations, and with different forcings. Climate sensitivity is estimated from the Pliocene and from the last glacial maximum as well as from models; sea-level rise is bounded by the last interglacial; the behaviour of the carbon cycle under perturbation is read from the Palaeocene–Eocene thermal maximum; and the range of possible rates of change is written in the sediment. The palaeoclimate record is not a curiosity. It is the longest dataset in the science."
+  ],
   "prerequisites": [
     "climate-system",
     "earth-history",
     "geochemistry"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define a proxy, a calibration, a transfer function and a reconstruction, and state the sensitivity, seasonality, timescale and uncertainty of the main proxies.",
+    "Explain the physical, chemical and biological basis of the major isotope, biological and lithic proxies, and the assumptions each requires.",
+    "Choose an appropriate dating method for an archive and an age range, and construct and interpret an age–depth model with its uncertainty.",
+    "Calibrate a proxy against instrumental data, validate it against withheld data, and avoid the regression dilution and spectral artefacts that plague the practice.",
+    "Combine multiple proxies into a spatial reconstruction and state what the averaging, the regularization and the choice of sites do to the result.",
+    "Describe the glacial–interglacial record of the last 800 000 years from ice cores and marine sediments, and the orbital theory of the ice ages and its difficulties.",
+    "Explain the millennial-scale variability of the last glacial — Dansgaard–Oeschger events, Heinrich events and the bipolar seesaw — and the candidate mechanisms.",
+    "Reconstruct the Holocene monsoon, the Holocene Thermal Maximum and the 8.2-kiloyear event, and explain their forcing.",
+    "Describe the climate of the Pliocene, the Eocene, the Cretaceous and the 'snowball' Neoproterozoic, and what each implies for carbon dioxide, sea level and feedbacks.",
+    "Use the palaeoclimate record to constrain equilibrium climate sensitivity, and state the assumptions and the range of published estimates.",
+    "Assess a published reconstruction critically: archive, dating, calibration, chronology, spatial coverage and the strength of the inference drawn."
+  ],
   "chapters": [
     {
       "slug": "proxies",
@@ -95,8 +112,140 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1890,
+      "title": "Brückner's climate fluctuations since 1700",
+      "detail": "Eduard Brückner assembles river, harvest, glacier and documentary evidence for multi-decadal climate swings over the last three centuries, and argues that the little ice age was a real, synchronous, global-ish phenomenon — the founding work of historical climatology.",
+      "people": [
+        "Eduard Brückner"
+      ]
+    },
+    {
+      "year": 1920,
+      "title": "Milankovitch computes the ancient sunlight",
+      "detail": "Milutin Milankovitch publishes the first calculation of past insolation at the top of the atmosphere at 55° north latitude over hundreds of thousands of years, and links the summer energy at high latitude, not the annual total, to the growth and decay of ice sheets.",
+      "people": [
+        "Milutin Milankovitch"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "The canon of radiation",
+      "detail": "Milankovitch's *Kanon der Erdbestrahlung und seine Anwendung auf das Eiszeitenproblem* collects the orbital calculations and the insolation curves; the theory is largely rejected for thirty years, and then becomes the standard.",
+      "people": [
+        "Milutin Milankovitch"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Drilling begins at Vostok",
+      "detail": "The Soviet Antarctic Expedition begins drilling at Vostok, in the deepest part of the East Antarctic ice sheet; the borehole eventually reaches 3753 m in 1983 and yields the first long record of the gas occluded in glacial ice.",
+      "people": [
+        "Andrei Kapitsa"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "The pacemaker of the ice ages",
+      "detail": "Hays, Imbrie and Shackleton apply the new spectral and cross-spectral methods to two deep-sea cores and show that the dominant periodicities of the oxygen-isotope record are 100, 41 and 23 thousand years — the orbital periods — and that the record can be tuned to them.",
+      "people": [
+        "James Hays",
+        "John Imbrie",
+        "Nicholas Shackleton"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "The irregular oscillations of the last glacial",
+      "detail": "Oeschger and colleagues describe, in the Camp Century and Dye 3 isotope records, a sawtooth pattern of abrupt warmings and slower coolings with a recurrence of about 1500 years, and name the class of events that now carries their names.",
+      "people": [
+        "Hans Oeschger",
+        "Urs Siegenthaler",
+        "Willie Dansgaard"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "Icebergs as climate events",
+      "detail": "Bond and colleagues document the repeated layers of ice-rafted debris and of distinctive 'IRD' surface-water conditions in North Atlantic cores, showing that the glacial Atlantic was punctuated by massive discharges of icebergs — the Heinrich events — on a roughly millennial pace.",
+      "people": [
+        "Gerard Bond"
+      ]
+    },
+    {
+      "year": 1999,
+      "title": "Reconstructing a millennium of temperature",
+      "detail": "Mann, Bradley and Hughes use a network of tree rings, ice cores, corals and sediments to reconstruct Northern Hemisphere temperature over the past six centuries and argue that the 1990s were anomalous in that context; the resulting debate transforms proxy-climate statistics, and the methods improve accordingly.",
+      "people": [
+        "Michael Mann",
+        "Raymond Bradley",
+        "Malcolm Hughes"
+      ]
+    },
+    {
+      "year": 2007,
+      "title": "Eight hundred thousand years of air",
+      "detail": "The EPICA Dome C team publishes the 800 000-year record of atmospheric carbon dioxide, methane and nitrous oxide from the EDML and EDC cores, with the deuterium temperature record: carbon dioxide stayed between 172 and 300 ppm for that entire span.",
+      "people": [
+        "Étienne Jouzel",
+        "Valérie Masson-Delmotte",
+        "Thomas Stocker"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "An astronomical timescale for the Cenozoic",
+      "detail": "Westerhold and colleagues tune the benthic foraminiferal isotope record of Ocean Drilling Program Site 1209 to a solution for the orbits, giving a continuous astronomically tuned record of the past 66 million years and a common timescale for the whole Cenozoic.",
+      "people": [
+        "Thomas Westerhold"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Paleoclimatology: Reconstructing Climates of the Quaternary",
+      "authors": "Raymond S. Bradley",
+      "year": 2014,
+      "note": "The standard advanced text on the Quaternary archives and proxies, organized by proxy and covering the methods with care."
+    },
+    {
+      "title": "Paleoclimatology",
+      "authors": "Thomas J. Crowley and Gerald R. North",
+      "year": 1991,
+      "note": "Older but conceptually the best: the physics of the proxies and of the climate models used to interpret them, in one argument."
+    },
+    {
+      "title": "Earth System History",
+      "authors": "Steven M. Kump, James F. Kasting and Robert G. Crane",
+      "year": 2009,
+      "note": "The deep-time half of the course: the tectonic, chemical and biological evolution of the Earth system, with the numbers."
+    },
+    {
+      "title": "Earth's Climate: Past and Future",
+      "authors": "William F. Ruddiman",
+      "year": 2014,
+      "note": "The orbital and ice-age material, told by the person who wrote much of the modern synthesis, with the data shown honestly."
+    },
+    {
+      "title": "Ice Core Lessons on the Climate System",
+      "authors": "Jean-Robert Petit, Michel Legrand and others",
+      "year": 2000,
+      "note": "Gas extraction, the age–gas difference, diffusive loss, dust and aerosols, and the greenhouse-gas records."
+    },
+    {
+      "title": "Radiogenic Isotope Geology",
+      "authors": "Alan P. Dickin",
+      "year": 2005,
+      "note": "The dating methods this course needs — uranium–thorium, argon–argon, radiocarbon — with the decay physics and the pitfalls."
+    },
+    {
+      "title": "The Great Dying: Cosmic Catastrophe, Dinosaurs and the Theory of Mass Extinction",
+      "authors": "Paul B. Wignall",
+      "year": 2016,
+      "note": "A readable, evidence-led account of the end-Permian extinction and of how the geochemical and fossil evidence are combined."
+    }
+  ],
   "next": [
     "climate-change"
   ]
