@@ -58,6 +58,35 @@ to-do list. It reports as an **error** any lesson or course field that still con
 filler described in [`pending/`](pending/), so a page is either written by hand or visibly "in
 preparation" — never machine filler.
 
+## Listening
+
+Every lesson has a **Listen** button: a recording of the chapter, read by a synthesised voice
+(Microsoft's Edge neural voices — `en-GB-SoniaNeural` and `zh-CN-XiaoxiaoNeural`), plays in a bar at
+the foot of the page while the passage being read is highlighted and kept in view. Readers can skip
+15 seconds, change the speed, start from any section heading and come back to where they stopped.
+
+The recordings are made in advance, on this server, by [`tools/tts.py`](tools/tts.py) with
+[edge-tts](https://github.com/rany2/edge-tts), and are served from `audio/<lang>/<course>/<chapter>.mp3`;
+nothing is sent from the reader's browser. For each lesson the tool reads the rendered page, writes a
+reading script — formulas, units, ions, gas tensions and symbols spelt out as a clinician would say
+them — synthesises it section by section, in pieces of one request each (the service sometimes ends a
+stream early without an error, so every piece is checked to have been read to its last word and is
+retried if not), and saves the start time of every paragraph, list item,
+table row and heading in a `.json` beside the MP3. `lesson.php` shows the button only for lessons
+that have audio, and `assets/js/audio.js` matches the timings to the page by position (the selector
+is shared with the tool; an edited page whose elements no longer line up plays without highlighting).
+
+```sh
+python3 -m venv ~/.venvs/edge-tts && ~/.venvs/edge-tts/bin/pip install edge-tts beautifulsoup4 html5lib
+~/.venvs/edge-tts/bin/python tools/tts.py --text blood/anaemia   # print the reading script
+~/.venvs/edge-tts/bin/python tools/tts.py --scan                  # characters the scripts leave unread
+~/.venvs/edge-tts/bin/python tools/tts.py --jobs 10               # make or update every recording
+```
+
+A lesson whose script is unchanged is skipped, so after editing lessons the last command remakes only
+those. The audio (about 285 hours, 6 GB for both languages, 48 kbit/s mono MP3) is not in git — see
+`/.gitignore`.
+
 ## Chinese lessons
 
 `content/zh/**` mirrors `content/en/**`: a Chinese lesson per English lesson, plus a

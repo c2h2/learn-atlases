@@ -14,6 +14,7 @@ if (!$course || !$ch) {
     exit;
 }
 $lesson = ma_lesson($cslug, $lslug);
+$audio = $lesson ? ma_audio($cslug, $lslug, $lesson['src_lang']) : null; // the chapter read aloud (tools/tts.py)
 $area = $course['area'];
 $chapters = $course['chapters'];
 $i = $ch['n'] - 1;
@@ -46,6 +47,9 @@ if ($lesson && $lesson['widgets']) {
         $scripts[] = "assets/js/widgets/$f.js";
     }
 }
+if ($audio) {
+    $scripts[] = 'assets/js/audio.js';
+}
 $titlePlain = md_plain($ch['title']);
 page_head($titlePlain . ' · ' . md_plain($course['title']), '', ['scripts' => $scripts, 'description' => md_plain($ch['summary'] ?? ''), 'robots' => $lesson ? '' : 'noindex']);
 ?>
@@ -72,7 +76,12 @@ page_head($titlePlain . ' · ' . md_plain($course['title']), '', ['scripts' => $
       <?php endforeach; ?>
     </div>
     <?php endif; ?>
-    <?php if ($lesson): ?><button class="done-toggle" type="button" aria-pressed="false" data-done="<?= h("$cslug/$lslug") ?>"><?= icon('check') ?><span><?= h(t('Mark as read')) ?></span></button><?php endif; ?>
+    <?php if ($lesson): ?>
+    <div class="lesson-actions">
+      <?php if ($audio): ?><button class="listen-toggle" type="button" data-tts-open aria-controls="tts-bar" title="<?= h(t('Listen to this chapter, read aloud by a synthesised voice')) ?>"><?= icon('listen') ?><span><?= h(t('Listen')) ?></span><span class="muted"><?= h(t('%d min', max(1, (int)round($audio['duration'] / 60)))) ?></span></button><?php endif; ?>
+      <button class="done-toggle" type="button" aria-pressed="false" data-done="<?= h("$cslug/$lslug") ?>"><?= icon('check') ?><span><?= h(t('Mark as read')) ?></span></button>
+    </div>
+    <?php endif; ?>
   </header>
   <?php if (!$lesson): ?>
     <?php
@@ -146,6 +155,23 @@ page_head($titlePlain . ' · ' . md_plain($course['title']), '', ['scripts' => $
       </nav>
     </article>
   </div>
+  <?php if ($audio): ?>
+  <div class="tts-bar" id="tts-bar" role="region" aria-label="<?= h(t('Audio player')) ?>" hidden
+       data-title="<?= h($titlePlain) ?>" data-course="<?= h(md_plain($course['title'])) ?>" data-site="<?= h(site_name()) ?>"
+       data-l-play="<?= h(t('Play')) ?>" data-l-pause="<?= h(t('Pause')) ?>" data-l-from="<?= h(t('Listen from here')) ?>" data-l-follow="<?= h(t('Follow the text as it is read')) ?>" data-l-back="<?= h(t('Back to the passage being read')) ?>" data-l-error="<?= h(t('The audio could not be loaded.')) ?>">
+    <button class="tts-btn" type="button" data-skip="-15" aria-label="<?= h(t('Back 15 seconds')) ?>" title="<?= h(t('Back 15 seconds')) ?>"><?= icon('back15') ?></button>
+    <button class="tts-btn tts-play" type="button" aria-label="<?= h(t('Play')) ?>"><span class="i-play"><?= icon('play') ?></span><span class="i-pause"><?= icon('pause') ?></span></button>
+    <button class="tts-btn" type="button" data-skip="15" aria-label="<?= h(t('Forward 15 seconds')) ?>" title="<?= h(t('Forward 15 seconds')) ?>"><?= icon('fwd15') ?></button>
+    <div class="tts-info">
+      <div class="tts-line"><span class="tts-sec"><?= h($titlePlain) ?></span><span class="tts-time"><span class="tts-pos">0:00</span> / <span class="tts-dur"><?= h(sprintf('%d:%02d', intdiv((int)round($audio['duration']), 60), (int)round($audio['duration']) % 60)) ?></span></span></div>
+      <div class="tts-track"><input class="tts-seek" type="range" min="0" max="<?= (int)ceil($audio['duration']) ?>" step="1" value="0" aria-label="<?= h(t('Position in the recording')) ?>"><div class="tts-ticks" aria-hidden="true"></div></div>
+    </div>
+    <button class="tts-btn tts-rate" type="button" aria-label="<?= h(t('Playback speed')) ?>" title="<?= h(t('Playback speed')) ?>">1×</button>
+    <button class="tts-btn tts-follow" type="button" aria-pressed="true" aria-label="<?= h(t('Follow the text as it is read')) ?>" title="<?= h(t('Follow the text as it is read')) ?>"><?= icon('follow') ?></button>
+    <button class="tts-btn tts-close" type="button" aria-label="<?= h(t('Close the player')) ?>" title="<?= h(t('Close the player')) ?>"><?= icon('close') ?></button>
+  </div>
+  <script type="application/json" id="tts-data"><?= json_embed(['src' => $audio['src'], 'key' => $audio['key'], 'duration' => $audio['duration'], 'n' => $audio['n'], 'segs' => $audio['segs'], 'sections' => $audio['sections']]) ?></script>
+  <?php endif; ?>
   <?php endif; ?>
 </div>
 <?php

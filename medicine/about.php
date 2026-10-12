@@ -40,6 +40,7 @@ page_head(t('About'), 'about');
       <h2 class="section" style="margin:28px 0 12px"><?= h(t('How it is built')) ?></h2>
       <p><?= h(t('The site is plain PHP with no database. Lessons are written in a light markup language and every formula is typeset in advance with KaTeX; interactive figures are small self-contained scripts. Fonts, KaTeX and all scripts are served from this site, so it works where external services are blocked.')) ?></p>
       <p><?= h(t('The interface is available in English and Simplified Chinese.')) ?></p>
+      <p><?= h(t('Every chapter can also be listened to. The recordings are synthesised speech, made in advance with Microsoft\'s neural text-to-speech voices (a British English voice and a Mandarin voice) and served from this site; while one plays, the passage being read is highlighted. Formulas, units and symbols are read out in words, so the recording follows the text but is not a word-for-word copy of it.')) ?></p>
     </section>
   </div>
 </div>

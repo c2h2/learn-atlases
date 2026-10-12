@@ -14,6 +14,9 @@
 /english/data/cache/
 /chinese/data/cache/
 
+# Read-aloud audio for the Medicine Atlas lessons (~6 GB): remade by medicine/tools/tts.py
+/medicine/audio/
+
 # Raw downloads for the peptide attention data (Wikimedia pageview dumps, ~400 MB)
 /peptides/data/raw/
 

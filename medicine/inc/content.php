@@ -255,6 +255,28 @@ function ma_lesson(string $course, string $chapter): ?array
     return $out;
 }
 
+/**
+ * The read-aloud audio of a lesson in one language, made by tools/tts.py: what the player needs (file,
+ * length, the start time of each readable element and of each section), or null when there is none.
+ */
+function ma_audio(string $course, string $chapter, string $lang): ?array
+{
+    $base = "audio/$lang/$course/$chapter";
+    $mp3 = MA_ROOT . "/$base.mp3";
+    $meta = is_file($mp3) ? read_json(MA_ROOT . "/$base.json") : null;
+    if (!$meta || empty($meta['segs'])) {
+        return null;
+    }
+    return [
+        'src' => "$base.mp3?v=" . base_convert((string)filemtime($mp3), 10, 36),
+        'key' => "$lang/$course/$chapter",
+        'duration' => (float)$meta['duration'],
+        'n' => (int)$meta['n'],
+        'segs' => $meta['segs'],
+        'sections' => $meta['sections'] ?? [],
+    ];
+}
+
 /** Inline markup from a course record (titles, summaries…), with that course's formula cache. */
 function ma_inline(string $s, string $course): string
 {
