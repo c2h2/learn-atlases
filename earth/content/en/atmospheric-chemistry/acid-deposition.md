@@ -26,6 +26,19 @@ Exceedance $= 36 - 10 = 26$ meq m⁻² yr⁻¹; after the cut, $36\times0.30 = 1
 :::
 :::
 
+## Recovery, engineering, and the nitrogen successor
+
+::: definition Liming, nitrogen saturation, and the ammonia era {#def-recovery}
+Between emissions control and ecosystem recovery lies a technology the world uses openly on thousands of water bodies: **liming** — helicopter and boat applications of calcium carbonate (and, experimentally, wollastonite, the calcium silicate that weathers to bicarbonate while sequestering CO₂) to lakes, catchment soils and even lake sediments, Sweden's and Norway's four-decade operational programmes keeping several thousand acidified waters fishable at an annual cost per lake that buys less than a kilometre of highway. Liming is triage, not cure — it must be repeated as long as the load exceeds the load the landscape can neutralise — and its limits define the frontier: **nitrogen saturation**, the state in which a forest ecosystem's capacity to immobilise nitrogen is exceeded and nitrate leaks to drainage water (documented at Hubbard Brook and across the intensively fertilised plains of Europe, China and the eastern US), converts the nutrient problem into an acidification and eutrophication problem at once, and marks the ecosystems where even today's reduced deposition will not restore ANC on human timescales. And the successor pollutant is **ammonia**: with SO₂ cut, the base cation–to–acid anion balance of deposition is increasingly set by NH₃ from livestock and fertiliser, which neutralises acidity locally (raising particle pH, accelerating sulfate formation, and — a twist the models are still settling — enhancing aqueous sulfate production in ammonia-rich aerosol water), deposits as ammonium, and is nitrified in soil to nitric acid, delivering the proton downstream of the field. The policy consequence is the Gothenburg protocol's inclusion of ammonia and the current European litigation over nitrogen in Natura 2000 habitats: the acid-rain endgame is a farming negotiation, and the cleanest air in the world now carries a non-trivial acidifying load from food.
+:::
+
+::: example Liming a lake {#ex-liming}
+A 20-ha lake (mean depth 5 m) has ANC −40 µeq L⁻¹ and must be raised to +50 µeq L⁻¹. Find the lime requirement in kg of CaCO₃ (equivalent weight 50 g eq⁻¹), and explain why real applications are 2–5 times the water-column figure.
+::: solution
+Water volume $= 2\times10^{5}\times5 = 10^{6}\ \mathrm{m^{3}} = 10^{9}$ L; the required rise is $90\ \mathrm{\mu eq\,L^{-1}} = 9\times10^{-5}$ eq L⁻¹, so $9\times10^{4}$ eq, or $4.5\times10^{6}$ g — **4.5 tonnes** of CaCO₃ for the water alone. Real doses are multiples larger because the **sediment and soils are the real acid reservoir** — aluminium hydroxides and the exchange complex consume base long after the water column looks fixed — which is why Swedish programmes dose by catchment diagnosis, not by lake volume, and why a limed lake is a patient on medication rather than a patient cured.
+:::
+:::
+
 ## From treaty to cap-and-trade
 
 ::: definition The policy arc, and the recovery lag {#def-acid-policy}
