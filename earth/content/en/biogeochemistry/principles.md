@@ -33,9 +33,9 @@ The human experiment is diagnosed with **isotope fingerprints** because every ca
 :::
 
 ::: example The Suess arithmetic {#ex-suess}
-Preindustrial air: CO₂ 280 ppm, δ¹³C −7.0 ‰. Fossil carbon: δ¹³C −25 ‰, ¹⁴C-dead. If all 145 ppm of the rise to today's 425 ppm were fossil and stayed in the air, find the expected δ¹³C of the mixture; then repeat for 45 per cent airborne (65 ppm retained) and compare with the observed ~−11 ‰.
+Preindustrial air: CO₂ 280 ppm, δ¹³C −6.5 ‰. Fossil carbon: δ¹³C −25 ‰, ¹⁴C-dead. If all 145 ppm of the rise to today's 425 ppm were fossil and stayed in the air, find the expected δ¹³C of the mixture; then repeat for 45 per cent airborne (65 ppm retained) and compare with the observed ~−11 ‰.
 ::: solution
-Mass balance: $\delta = (280\times(-7.0) + 145\times(-25))/425 = -13.1$ ‰ if all the emitted carbon stayed in the air unprocessed. The observed −11 ‰ is **isotopically heavier** because the airborne fraction is less than one — the emitted carbon that left the atmosphere (into ocean and biosphere) took its −25 ‰ with it, leaving a smaller dilution: with 45 per cent airborne, $(280\times(-7.0)+65\times(-25))/345 = -10.4$ ‰, within error of observation. The exercise is the isotope budget's core logic: **the Suess effect measures the airborne fraction in a second, independent currency** — and the agreement of the two currencies is why the carbon budget is called closed.
+Mass balance: $\delta = (280\times(-6.5) + 145\times(-25))/425 = -12.8$ ‰ if all the emitted carbon stayed in the air unprocessed. The observed ~−10.8 ‰ is **isotopically heavier** because the airborne fraction is less than one — the emitted carbon that left the atmosphere (into ocean and biosphere) took its −25 ‰ with it, leaving a smaller dilution: with 45 per cent airborne, $(280\times(-6.5)+65\times(-25))/345 = -10.0$ ‰, within error of observation. The exercise is the isotope budget's core logic: **the Suess effect measures the airborne fraction in a second, independent currency** — and the agreement of the two currencies is why the carbon budget is called closed.
 :::
 :::
 
@@ -53,11 +53,11 @@ $19/56 = 34$ per cent of total, $19/40 = 48$ per cent of accessible NPP; adding 
 :::
 
 ::: widget plot
-f: -7-6/(1+exp(-0.045*(x-1985)))
+f: -6.5-4.3/(1+exp(-0.045*(x-1995)))
 x: 1850, 2020
 y: -14, -6
 labels: \delta^{13}\mathrm{C}\ (\permil)
-caption: The Suess effect in tree rings and air — δ¹³C of atmospheric CO₂ falling from −7 ‰ toward −12.5 ‰ as ¹³C-poor fossil carbon dilutes the atmosphere, the curve's shape tracking the emissions history itself. The decline is the fingerprint that convicts combustion: no natural source combines this much carbon with this isotope signature, and the match between the dilution arithmetic and the measurements is the carbon cycle's most elegant proof.
+caption: The Suess effect in tree rings and air — δ¹³C of atmospheric CO₂ falling from −6.5 ‰ toward −10.8 ‰ as ¹³C-poor fossil carbon dilutes the atmosphere, the curve's shape tracking the emissions history itself. The decline is the fingerprint that convicts combustion: no natural source combines this much carbon with this isotope signature, and the match between the dilution arithmetic and the measurements is the carbon cycle's most elegant proof.
 :::
 
 ::: warning Residence time is not persistence, the budget closes but is not safe, Redfield is a tendency not a law, and the land sink is a partner not a servant
@@ -125,10 +125,10 @@ $0.3\times106 = 32$ µM C — whose respiration consumes ~32 µM O₂, the dead-
 :::
 :::
 
-::: exercise {level=3 check="10.4"}
-With 65 ppm of airborne fossil carbon (δ¹³C −25 ‰) added to 280 ppm at −7.0 ‰, find the mixture's δ¹³C (‰, one decimal).
+::: exercise {level=3 check="10.0"}
+With 65 ppm of airborne fossil carbon (δ¹³C −25 ‰) added to 280 ppm at −6.5 ‰, find the mixture's δ¹³C (absolute value, one decimal).
 ::: solution
-$(280\times7.0 + 65\times25)/345$ with signs: $(-1960 - 1625)/345 = -10.4$ ‰ — the Suess prediction for a 45-per-cent-airborne world, matching observation and closing the isotopic budget.
+$(280\times6.5 + 65\times25)/345 = (1820+1625)/345 = 10.0$ ‰ (negative) — the Suess prediction for a 45-per-cent-airborne world, matching observation and closing the isotopic budget.
 :::
 :::
 
