@@ -39,6 +39,19 @@ Expected annual damage $= 2{,}000/50 = 40$ M$/yr; uninsured share $= 0.88\times4
 :::
 :::
 
+## The risk-information industry
+
+::: definition From hazard maps to loss models: the risk-information stack {#def-risk-information}
+Risk is governed through **inscriptions**: the hazard map, the building code, the insurance tariff, the early-warning message — and the stack that produces them is the discipline's modern industrial base. **Hazard mapping** runs from the deterministic (the flood inundation model of the design storm, the seismic microzonation that tells a city which district amplifies — the Mexico City lake-bed zones, the Seattle basin effect) to the **probabilistic** (PSHA maps of peak ground acceleration at the 2-per-cent-in-50-year level that anchor modern seismic codes — the **USGS national hazard map** program, the **GLOBAL-PSHA and GEM** global harmonisation effort) to the **statistical-dynamical** (storm-surge ensembles, wildfire-spread cellular models, the landslide susceptibility maps of Europe's national surveys). **Exposure inventories** (the building-stock census — the Achilles and GEM global exposure databases, the OpenStreetMap and satellite-derived footprints of the 2020s) and **vulnerability functions** (the fragility curves of the risk-model industry — the **RMS/CoreLogic lineage, the RAMRISK and OpenQuake open-source counterweight**) complete the stack, and their product is the **loss model**: expected annual loss, the loss exceedance curve that prices reinsurance, and the scenario exercise (the ShakeOut and EuroQuake simulations, the Atlantic Windstorm scenarios) that turns statistics into preparedness theatre with real budget effects. The stack's governance edges are the lesson's last word: **the risk-model industry's opacity** (proprietary models governing public safety — the post-Katrina and post-Northridge transparency fights, the **EU Solvency II and US SB 848 model-validation statutes** that made regulators audit the black boxes), **the map's political economy** (the FEMA flood-map redrawing that becomes a mortgage-eligibility fight, the property-value capitalisation of every mapped zone — the **risk-information paradox**: the better the map, the more contested it is), and **the last mile** (the early-warning literature's settled finding — the last-mile studies of the Indian and Caribbean cyclone programs — that the technical warning is cheap and the **actionable** warning (understood, trusted, acted on by named people with named pre-planned responses) is the unsolved, human half).
+:::
+
+::: example Building a loss exceedance curve {#ex-elt}
+A city faces three modelled events: a 1-in-10 event costing $100 M, a 1-in-100 event costing $1.5 B, and a 1-in-500 event costing $6 B. Compute the expected annual loss, and explain in one sentence what the **loss exceedance curve** (probability versus loss) tells the reinsurer that the expected annual loss hides — and which number the finance minister actually needs.
+::: solution
+Expected annual loss $= 100/10 + 1500/100 + 6000/500 = 10+15+12 = 37$ M$; the exceedance curve's message is the **tail** (the 1-in-500 event is a third of the expectation but the entire solvency question — the reinsurer prices the 1-in-250 and 1-in-500 points, not the mean), while the finance minister needs the **fiscal stress point** (the loss the budget can absorb — here $150 M — and the instruments that move the tail beyond it into insurance and capital markets): three numbers, three institutions, one curve — the risk-information stack's reason for existing.
+:::
+:::
+
 ::: widget plot
 f: 20+55/(1+exp(-0.06*(x-1985)))
 x: 1900, 2030
