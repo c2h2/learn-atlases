@@ -39,6 +39,19 @@ PETM: $10{,}000/10{,}000 = 1$ GtC yr⁻¹; modern: $400/175 \approx 2.3$ GtC yr�
 :::
 :::
 
+## Reading ancient CO₂
+
+::: definition Palaeo-CO₂ proxies and the boron bridge {#def-paleo-co2}
+The slow cycle's theory is only as good as its measurements, and **palaeo-CO₂ reconstruction** is the young, argumentative core of the field. Four proxy families carry the load. **Boron isotopes** (δ¹¹B of foraminiferal shells): seawater borate/boric-acid ratio is pH-dependent (the borate fraction is $1/(1+10^{pK_a-pH})$, $pK_a \approx 8.6$), and borate — the only boron species incorporated into calcite — is isotopically lighter by ~25 ‰, so shell δ¹¹B gives pH, and pH plus an alkalinity estimate gives pCO₂; the method's 1990s–2020s refinement (the vital-effect corrections, the culture-calibration generation) delivered the PETM's 0.3 pH units, the Eocene's 500–1,000 ppm, and the challenge to the "high-CO₂, mild-Eocene" paradox. **Alkenone δ¹³C** (the CO₂-dependence of the carbon-isotope fractionation in haptophyte lipids) and **phytol δ¹³C** give surface-ocean pCO₂ from the middle Miocene back ~40 Ma. **Stomatal frequency** (the inverse relation between atmospheric CO₂ and stomatal density in fossil leaves) is the onshore workhorse for the deep past, its calibration contested between species-specific curves and mechanistic models. **Palaeosol carbonate** (the Ward-Johnson-Royer and **Daniel Royer and Gregory Retallack** lineage) and **boron in nodule and soil carbonates** extend the curve into the Devonian–Triassic, where the marine proxies thin out. The composite curve — **GEOCARL/BERYL/GEOCLIM** (the 2001–2019 syntheses of **Yves France-Lanord, Tim Lenton, Dana Royer, Peter Berner** and colleagues) — shows Phanerozoic CO₂ falling from >2,000 ppm (Silurian) to the preindustrial 280, with the Devonian-Carboniferous crash (the roots and the coal swamps' drawdown) and the Cenozoic decline toward today's low (the icehouse's admission fee) as its two great features — and error bars of ±a factor of two in the deep past, which is why the field's debates (the Ordovician's 4,000-versus-300-ppm argument of the 2020s, the "high-CO₂ Eocene" reconciliation) are proxy-methods arguments wearing climate clothes.
+:::
+
+::: example The boron bridge, one link at a time {#ex-boron}
+Borate fraction in seawater is $f_B = 1/(1+10^{pK_a-pH})$ with $pK_a = 8.6$. Find $f_B$ at pH 8.0 and at pH 7.7, and explain in one sentence why a proxy built on this ratio is unusually sensitive in the ocean's pH range.
+::: solution
+At pH 8.0: $f_B = 1/(1+10^{0.6}) = 1/4.99 = 0.20$; at pH 7.7: $1/(1+10^{0.9}) = 1/8.9 = 0.11$ — a 0.3-pH-unit acidification nearly **halves** the borate fraction, and shell δ¹¹B (a ~2–3 ‰ shift for that change, well above analytical noise) therefore reads the PETM and anthropocene acidifications with real resolution: the proxy's gift is that the ocean's carbonate buffer puts the boron equilibrium exactly where the action is, in the steep part of the curve.
+:::
+:::
+
 ::: widget plot
 f: 1+9/(1+exp(-0.09*(x-1990)))
 x: 1850, 2030
