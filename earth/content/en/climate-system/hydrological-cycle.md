@@ -49,9 +49,9 @@ Of the $88{,}000\ \mathrm{km^{3}}$ of rain that falls on land, roughly $29{,}000
 ::: example Reading a moisture history {#ex-isotope}
 Moisture arrives at a valley station with $\delta^{18}\mathrm{O} = -4\permil$. It is lifted $2000\ \mathrm{m}$ up a windward slope and rains out to $40$ per cent of its original vapour amount. Estimate the $\delta^{18}\mathrm{O}$ of the vapour remaining at the summit assuming a Rayleigh distillation with effective fractionation $\varepsilon^{*} = 10\permil$, and say what the residual deuterium excess would tell you.
 ::: solution
-Rayleigh distillation gives $\delta = \delta_0 - \varepsilon^{*}\ln f$, with $f = 0.4$ the remaining fraction:
+Rayleigh distillation gives $\delta = \delta_0 + \varepsilon^{*}\ln f$, with $f = 0.4$ the remaining fraction:
 $$
-\delta = -4 - 10\times\ln 0.4 = -4 + 9.2 = -13.2\permil .
+\delta = -4 + 10\times(-0.92) = -13.2\permil .
 $$
 The rain collected along the way is heavier than the residual vapour at every instant, so the valley's storm-average rain sits near $-8$ to $-9\permil$ and the summit's near $-14$: the observed steepening of isotopic composition with elevation is the fingerprint of progressive rainout, and the arithmetic explains why the highest stations record the most extreme values. The **deuterium excess** of the vapour — the deviation from the slope-8 line — is set at evaporation and nearly conserved thereafter, so a summit rain with excess near $10\permil$ came from a normal oceanic source, while one with excess $18\permil$ was recycled from a cold, dry continental source: the isotope microscope reads the moisture's biography, not just its temperature.
 :::
