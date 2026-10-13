@@ -41,6 +41,10 @@ Redfield demand for 0.05 µM P is 0.8 µM N — a shortfall of $0.8-0.3 = 0.5$ �
 
 ## Sulfur's local ledger: acid rock drainage
 
+::: definition Acid rock drainage: sulfur's mined legacy {#def-acid-drainage}
+When mining exposes sulfide-bearing rock — the pyrite ($\mathrm{FeS_2}$) of coal measures, metal veins and tailings — to air and water, the sulfur cycle runs its oxidation circuit at laboratory speed: $\mathrm{FeS_2 + 3.75\,O_2 + 3.75\,H_2O \rightarrow Fe(OH)_3 + 2\,SO_4^{2-} + 4\,H^+}$, producing **1.67 tonnes of limestone-equivalent acid per tonne of pyrite**, mobilising the copper, zinc, arsenic and uranium carried in the same rock, and precipitating the orange "yellow boy" iron flocs that coat the streams below. The reaction is **autocatalytic**: below pH ~3 ferric iron replaces oxygen as the oxidant, the microbial iron-oxidisers (*Acidithiobacillus* and the acidophile iron-oxidisers of the **Johnson and Kelly school's** ecophysiology) accelerate it further, and the pile drains **for centuries** whether or not the mine works — the Rhine's Abensberg, the Welsh coalfields, the Appalachian and South African cases, with global treatment liabilities in the tens of billions of dollars and the mine-water pumps of the Ruhr running on schedules older than the war. Acid rock drainage is the sulfur lesson's local twin to phosphorus's soil legacy — **both cycles punish the mobilisation century with a remediation tail measured in generations** — and its prevention (dry caps, submerged tailings, alkalinity addition at the source) costs a fraction of the end-of-pipe treatment, the same economics as the cascade's, learned twice.
+:::
+
 ::: example Acid rock drainage: pyrite's bill {#ex-pyrite-acid}
 Pyrite oxidation proceeds $\mathrm{FeS_2 + 3.75\,O_2 + 3.75\,H_2O \rightarrow Fe(OH)_3 + 2\,SO_4^{2-} + 4\,H^+}$: each mole of pyrite (120 g) releases 4 moles of acid, equivalent (2 H⁺ per CaCO₃) to 2 moles (200 g) of limestone. Find the acid load, as CaCO₃-equivalent, of 1 tonne of exposed mine-waste pyrite, and state why the reaction's autocatalysis (the Fe³⁺ oxidiser at low pH) makes abandoned mines the sulfur cycle's slowest legacy.
 ::: solution
