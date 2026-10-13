@@ -39,6 +39,15 @@ Redfield demand for 0.05 µM P is 0.8 µM N — a shortfall of $0.8-0.3 = 0.5$ �
 :::
 :::
 
+## Sulfur's local ledger: acid rock drainage
+
+::: example Acid rock drainage: pyrite's bill {#ex-pyrite-acid}
+Pyrite oxidation proceeds $\mathrm{FeS_2 + 3.75\,O_2 + 3.75\,H_2O \rightarrow Fe(OH)_3 + 2\,SO_4^{2-} + 4\,H^+}$: each mole of pyrite (120 g) releases 4 moles of acid, equivalent (2 H⁺ per CaCO₃) to 2 moles (200 g) of limestone. Find the acid load, as CaCO₃-equivalent, of 1 tonne of exposed mine-waste pyrite, and state why the reaction's autocatalysis (the Fe³⁺ oxidiser at low pH) makes abandoned mines the sulfur cycle's slowest legacy.
+::: solution
+$200/120 = 1.67$ tonnes of CaCO₃-equivalent acid per tonne of pyrite — and unlike a smokestack, the source cannot be switched off: once a waste pile is ventilated and the pH drops below ~3, ferric iron does the oxidising, the reaction runs at its own pace, and the drainage continues for **centuries** (the Rhine's Abensberg and the Welsh and Appalachian coal-field cases, the treatment bills running into billions of dollars per site) — the sulfur lesson's local twin to phosphorus's soil legacy: both cycles punish the century that mobilised them with a remediation tail measured in generations.
+:::
+:::
+
 ::: widget plot
 f: 30+48*exp(-0.5*((x-1978)/25)^2)
 x: 1950, 2040
