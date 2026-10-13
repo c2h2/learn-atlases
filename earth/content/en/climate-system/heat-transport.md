@@ -130,7 +130,7 @@ $\tau = 12{,}900/505{,}000\times365 = 9\ \mathrm{days}$. The atmosphere holds ni
 :::
 :::
 
-::: exercise Gulf Stream heat flux {level=2 check="1.2"}
+::: exercise Gulf Stream heat flux {level=2 check="1.8"}
 The Kuroshio at $30\ ^\circ\mathrm{N}$ carries $45\ \mathrm{Sv}$ with a $10\ \mathrm{K}$ anomaly relative to its surroundings. Find the heat transport in PW ($\rho c_p = 4\times10^{6}\ \mathrm{J\,m^{-3}\,K^{-1}}$). (Enter to one decimal.)
 ::: solution
 $F = 4\times10^{6}\times4.5\times10^{7}\times10 = 1.8\times10^{15}\ \mathrm{W} = 1.8\ \mathrm{PW}$. The Kuroshio and Gulf Stream are each of order a petawatt — together with the Agulhas, the bulk of the ocean's northward heat transport in the subtropics, all of it concentrated in jets a hundred kilometres wide.
