@@ -39,6 +39,15 @@ S-wave travel to Tokyo $\approx 130/3.5 = 37$ s; detection at ~7 s (40 km of P a
 :::
 :::
 
+## The aftershock calculus
+
+::: example Omori's ledger {#ex-omori}
+Aftershock rate follows the modified Omori law $n(t) = c/(t+p)^{p'}$; for the mainshock sequence use $c = 100$ day⁻¹·day and $p = p' = 1$ (so day 1 aftershocks number 100). Find the expected number of aftershocks on (a) day 10 and (b) day 100, and explain in two sentences why the **2016 Kaikōura** double rupture (M7.4 then M7.8 twelve hours later, on adjacent structures) and the **2023 Kahramanmaraş** doublet (M7.8 then M7.5 nine hours later) turned the law's largest uncertainty — "is this the mainshock?" — into an operational crisis for responders and for early-warning automation.
+::: solution
+Day 10: $100/10 = 10$ day⁻¹; day 100: $100/100 = 1$ day⁻¹ — the decay that lets re-entry schedules be written, **provided the first event was the largest**; the doublets broke that assumption (the second shock was larger, the "mainshock" label is retrospective, and the cumulative triggering — the **Reasenberg and the "triggered aftershock"** rate-and-state models, the **Toda and the "Coulomb stress transfer"** school whose calculations anticipated the 2016 Kaikōura second rupture on the adjacent fault years before it — means the first event's stress change **loaded** the second), so the operational rules now carry a "larger may follow" caveat (the USGS and GNS science advisories of 2016 and 2023), and the automation designed for a decaying sequence must tolerate a second, larger jolt — the statistical comfort of Omori's law purchased at the price of its one honest caveat.
+:::
+:::
+
 ::: widget plot
 f: 2*(8.2-x)
 x: 5, 8.2
