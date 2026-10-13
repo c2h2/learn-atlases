@@ -39,6 +39,19 @@ Accumulation $= 42\ \mathrm{cm}/3000\ \mathrm{yr} = 0.14\ \mathrm{cm\,yr^{-1}}$;
 :::
 :::
 
+## The scanner revolution
+
+::: definition XRF core scanners and the rapid-chemistry revolution {#def-xrf}
+The 2000s brought the archive's CT scan: **X-ray fluorescence core scanners** run a beam along an unwrapped core and return elemental ratios (Ca/Ti for carbonate content, Fe/Ti for terrigenous input, Mn/Al for redox, Zr/Rb for grain size, Ca/S for sulphides and authigenic carbonates) at sub-millimetre spacing — thousands of analyses per core at a fraction of the cost of sampling mass spectrometry. The method turned the sediment core from a handful of isotope points into a continuous chemical profile, made varve-scale stratigraphy possible in varve-free baselines, and created a genuine interpretive discipline of its own: scanner ratios are **surface- and moisture-sensitive** (the water in the sediment attenuates the beam; drying changes results), grain-size and sorting effects masquerade as provenance changes, and every ratio must be ground-truthed against shipboard measurements — the low-cost-sensor lesson replayed in the cleanest labs on Earth. Paired with hyperspectral imaging (colour as clay-mineral and organic-matter proxy), computed tomography (burrows, laminae, turbidite structure counted automatically), and in-situ pore-water and microscale isotope sampling (laser ablation of foraminiferal chambers at seasonal resolution), the scanner generation has made **event stratigraphy at the annual-to-decadal scale** routine in well-laminated settings — varved lakes, sapropels, the anoxic basins — and pushed the discipline's frontier from "can we measure it?" to "can we believe the fifth decimal of a beam on wet mud?" (answer: with ground truth, yes; without, never).
+:::
+
+::: example Grain size from a beam {#ex-zrrb}
+A scanner Zr/Rb ratio (coarse-fraction zirconium vs clay-borne rubidium) rises from a background of 0.6 to 1.4 during a turbidite bed, and the site's calibration is $\log(d\,[\mu\mathrm{m}]) = 1.0 + 1.5\,\mathrm{Zr/Rb}$. Find the background and event grain sizes in µm and classify both.
+::: solution
+Background: $\log d = 1.0 + 0.9 = 1.9$, $d = 10^{1.9} \approx 79$ µm — coarse silt, ordinary hemipelagic rain. Event: $\log d = 1.0 + 2.1 = 3.1$, $d \approx 1260$ µm — very coarse sand, a true turbidity current. Two lessons in one calibration: scanner ratios are **site-calibrated** relations (the intercept and slope come from this basin's sieved samples, not from theory), and the grain-size jump — not the ratio itself — is the geological statement, since the same ratio shift could mean sorting, provenance, or current speed anywhere the calibration has not been run.
+:::
+:::
+
 ::: widget plot
 f: 3.3+2.0/(1+exp(-0.02*(x-13)))
 x: 0, 30
