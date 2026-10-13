@@ -59,7 +59,7 @@ PAN's thermal decomposition has an activation energy of $\sim 120\ \mathrm{kJ\,m
 ::: solution
 The Arrhenius ratio is
 $$
-\exp\!\left[\frac{E_a}{R}\left(\frac{1}{233}-\frac{1}{298}\right)\right] = \exp\!\left[14{,}400\times9.34\times10^{-4}\right] = e^{13.4} \approx 6.5\times10^{5}.
+\exp\!\left[\frac{E_a}{R}\left(\frac{1}{233}-\frac{1}{298}\right)\right] = \exp\!\left[14{,}400\times9.36\times10^{-4}\right] = e^{13.5} \approx 7.4\times10^{5}.
 $$
 A PAN molecule that survives minutes at ground level survives **months** aloft — long enough for the global circulation to carry it from a pollution outflow to a remote receptor, where slower sinking air and warmer temperatures re-release its NOx. The consequence is the fact that upper-tropospheric ozone — the greenhouse-forcing ozone, radiatively the most valuable per molecule — is made mostly **from shipped NOx**, over oceans and forests, and why satellite NO₂ maps of power plants matter to a farmer in Hokkaido: the ozone problem is no longer local, and PAN is its courier.
 :::
