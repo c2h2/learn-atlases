@@ -32,6 +32,13 @@ labels: \mathrm{potential\ intensity\ (m\,s^{-1})}
 caption: A toy potential-intensity scaling, $V_p \propto \sqrt{\mathrm{SST}-26.5}$ — the square-root thermodynamic ceiling against sea surface temperature. At 27 °C the ceiling sits near Category 1; at 30 °C it is Category 4; at 31 °C the ceiling passes 78 m s⁻¹ and Category 5 becomes reachable. The curve is why "the best predictor of a strong hurricane is a warm eddy" and why the *proportion* of major cyclones is rising faster than their number: warming does not create storms so much as it unlocks the top of the distribution.
 :::
 
+::: example The 30–60-day heartbeat {#example-maddenjulian}
+During boreal summer 2022 the Madden–Julian Oscillation — a 30–60-day envelope of enhanced and suppressed convection marching eastward across the Indian and Pacific Oceans at ~5 m/s — arrived over South Asia in late June, and the monsoon low over Gujarat intensified into a pre-monsoon cyclone that struck the coast days later, the first such strike in four decades. Explain how MJO phase modulates tropical-cyclone formation by factors of 3–4 basinwide, and why MJO phase now counts as the largest single source of *subseasonal* cyclone-risk forecast skill in both the Indian Ocean and the Atlantic.
+::: solution
+The MJO's ascending branch brings low-level convergence, mid-level moisture and reduced vertical wind shear as it passes — the three ingredients a cyclone seed most lacks — while the descending half a hemisphere away does the opposite. A seed storm's odds therefore swing 3–4× with phase, and because operational models now forecast MJO phase 2–3 weeks ahead, a "quiet week" in a monsoon basin is forecastable news that expires in days: risk follows the envelope, not the calendar.
+:::
+:::
+
 ## Forecasting, and the tornado and hail cousins
 
 ::: definition Track, intensity, and the warning chain {#def-forecast-chain}
