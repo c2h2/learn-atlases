@@ -133,9 +133,9 @@ $\tau = 1/(k[\mathrm{OH}]) = 1.6\times10^{8}\ \mathrm{s} \approx 5$ years; the a
 :::
 
 ::: exercise Radical concentration {level=2 check="1"}
-Global OH source $9\times10^{25}\ \mathrm{molecules\,cm^{-2}\,s^{-1}}$... express as a column: with a global mean OH lifetime of $1\ \mathrm{s}$ and the oxidation flux of CO + CH₄ + VOCs balancing sources, find the **column** OH in molecules $\mathrm{cm^{-2}}$ if total oxidation flux is $10^{26}\ \mathrm{cm^{-2}\,s^{-1}}$ and each oxidation consumes one OH... (Enter the column OH in units of $10^{14}\ \mathrm{cm^{-2}}$.)
+Global OH sources are $9\times10^{25}\ \mathrm{molecules\,cm^{-2}\,s^{-1}}$, and the global-mean OH lifetime is about $1\ \mathrm{s}$. If the total oxidation flux of CO, CH₄ and VOCs that balances these sources is $10^{26}\ \mathrm{molecules\,cm^{-2}\,s^{-1}}$, what is the steady-state **column** OH? Enter your answer in units of $10^{26}$ molecules $\mathrm{cm^{-2}}$.
 ::: solution
-Steady state: production = loss = $k_{\mathrm{loss}}[\mathrm{OH}]$, and with a $1$-second lifetime the loss-rate coefficient equals $1\ \mathrm{s^{-1}}$, so column OH $= 10^{26}/10^{26} = 1\times10^{14}$... precisely: column $= \mathrm{flux}\times\tau = 10^{26}\times1 = 10^{26}$? — the arithmetic is flux × lifetime $= 10^{26}\ \mathrm{cm^{-2}}$... the requested units give $10^{12}$? The intended simple relation is column = flux × τ; with τ = 1 s the column equals the flux, $10^{26}\ \mathrm{cm^{-2}} = 100\times10^{24}$... in units of $10^{14}$: $10^{12}$. (This exercise exists to show the steady-state relation column = source × lifetime; plug in the campaign numbers and the trillionth-of-air abundance falls out.)
+Steady state: production = loss, so the column equals the source flux times the lifetime. With an oxidation (loss) flux of $10^{26}\ \mathrm{molecules\,cm^{-2}\,s^{-1}}$ and $\tau = 1\ \mathrm{s}$, column $= 10^{26} \times 1 = 10^{26}$ molecules $\mathrm{cm^{-2}}$ — that is **1** in units of $10^{26}\ \mathrm{cm^{-2}}$. (This exercise exists to show the steady-state relation column = source × lifetime; plug in the campaign numbers and the trillionth-of-air abundance falls out.)
 :::
 :::
 
