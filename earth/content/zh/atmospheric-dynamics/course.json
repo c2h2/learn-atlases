@@ -1,0 +1,176 @@
+{
+  "title": "大气动力学",
+  "full_title": "大气物理学与动力学",
+  "tagline": "大气热力学、辐射传输、云物理、旋转行星上的运动方程、平衡流、涡量、边界层与一般环流",
+  "summary": "本课程把天气背后的物理写成方程。内容涵盖干空气与湿空气的热力学、辐射传输、云物理、旋转行星上的运动方程、地转与热成风平衡、涡量与Rossby波、湍流边界层，以及斜压不稳定与大气一般环流。",
+  "overview": [
+    "一张天气图就是运动方程的一个解。这句话就是本课程存在的理由：它说洋面上盘旋的云型、250 hPa的急流和山头上发展的雷暴不是彼此分离的现象，而是同几条守恒律施加在一层薄、旋转、潮湿、浅薄的气体层上、在不同尺度上的推论。气象学在那几条定律被写下、其后果被算出的那一天成为科学，而动力气象学正是天气的定性词汇——高压、锋、槽、急流——获得机制的地方。",
+    "本课程有半部热力学半部动力学。前半是热力学与辐射：空气的状态方程、干与湿绝热、虚温、skew-T图、熵与可用位能；然后是辐射传输、吸收与发射、两流法与灰色结果，以及云滴活化的微物理、Bergeron过程和降水的形成。后半是动力学。我们在旋转参考系中导出运动方程，并从它们导出让大气可解的平衡层级：静力、地转、梯度风、旋回风和把风与水平温度场联系起来的热成风关系。然后发展涡量——守恒、拉伸、位涡——并随之发展Rossby波、beta效应、正压与斜压不稳定，以及中纬度天气系统为何增长、破碎和消亡的解释。边界层与一般环流收尾：表面阻力、Ekman螺旋、行星边界层的能量和动量收支，以及读作大气对 [[earth-system/energy-balance]] 所算加热之响应的Hadley、Ferrel和极地环流圈。",
+    "本课程对数学的要求高于图谱中任何其他一年级课程：偏导数、旋转参考系中的矢量、波解需要的一点复代数，变分法只是偶然一遇。同样重要的是尺度分析的习惯——写下方程、用观测值估计每一项的大小、扔掉小的那几项。动力气象学几乎每个结果都是一次认真做完再作物理解读的尺度分析。",
+    "回报相当可观。[[meteorology/fronts-cyclones]]、[[meteorology/storms]] 和 [[meteorology/forecasting]] 里的一切都是本课内容的应用，[[climate-modelling/earth-system-models]] 里每台一般环流模型的动力核也是如此。数值天气预报是物理微分方程最成功的一次应用，而本课程是它的先修课。"
+  ],
+  "outcomes": [
+    "把状态方程、热力学第一定律以及位温和虚温概念应用于干空气或湿空气气柱。",
+    "阅读skew-T log-p图并判定稳定度、抬升凝结高度、自由对流高度、逆温强度和CAPE。",
+    "陈述辐射传输的两流法与灰色大气结果，并由吸收与发射估计加热率。",
+    "解释云滴活化、凝结增长与碰撞-并合、Bergeron过程，以及为什么造雨每一步都少不了它们。",
+    "推导旋转参考系中的运动方程，辨认科里奥利加速度，并估计给定运动的Rossby数。",
+    "推导并应用地转、梯度风、旋回风和Ekman平衡以及热成风关系，并说明各自的失效处。",
+    "用位涡守恒解释背风槽、高空气旋加强和平流层入侵体的行为。",
+    "推导Rossby波频散关系，解释长波的西传、斜压不稳定对瞬变涡的生成以及由此产生的涡热输送。",
+    "描述行星边界层的结构、对数风廓线，以及在气旋中强迫上升的Ekman抽运。",
+    "解释Hadley、Ferrel和极地环流圈、要求它们存在的角动量收支，以及急流和风暴路径在闭合该收支中的作用。"
+  ],
+  "chapters": [
+    {
+      "title": "大气热力学",
+      "summary": "气体定律、气团的热力学第一定律、位温与静力平衡。"
+    },
+    {
+      "title": "湿空气热力学",
+      "summary": "Clausius–Clapeyron关系、相当位温、热力学图与对流有效位能。"
+    },
+    {
+      "title": "辐射传输",
+      "summary": "气体、气溶胶和云的吸收、发射与散射，以及大气的辐射加热与冷却。"
+    },
+    {
+      "title": "云物理",
+      "summary": "成核、液滴的凝结与碰撞增长、冰过程与降水的形成。"
+    },
+    {
+      "title": "旋转地球上的运动方程",
+      "summary": "气团受力、科里奥利力、尺度分析与原始方程。"
+    },
+    {
+      "title": "平衡流",
+      "summary": "地转风、梯度风与热成风，以及摩擦的效应。"
+    },
+    {
+      "title": "涡量与Rossby波",
+      "summary": "环流、涡量、位涡与行星Rossby波。"
+    },
+    {
+      "title": "大气边界层",
+      "summary": "湍流、热、汽、动量的表面通量与边界层的日循环。"
+    },
+    {
+      "title": "斜压不稳定与一般环流",
+      "summary": "Hadley环流圈、急流与中纬度涡，以及大气如何输送热和动量。"
+    }
+  ],
+  "history": [
+    {
+      "title": "Ferrel提出风的机械理论",
+      "detail": "在一系列短文和1856年的书中，Ferrel论证地球旋转使北半球运动空气右偏，补上了Hadley单圈图景缺失的一项，让三圈环流成为可能。",
+      "people": [
+        "William Ferrel"
+      ]
+    },
+    {
+      "title": "Buys Ballot定律",
+      "detail": "根据荷兰气象站的观测，Buys Ballot陈述了经验规则：北半球背风而立、低压在左——民间形式的地转定律。",
+      "people": [
+        "Christines Buys Ballot"
+      ]
+    },
+    {
+      "title": "Vilhelm Bjerknes提出问题",
+      "detail": "在《动力气象学与水文学》中，Bjerknes写下了气压、密度、温度和两个风分量的六条控制方程，以及把预报改写为积分问题的纲领。",
+      "people": [
+        "Vilhelm Bjerknes"
+      ]
+    },
+    {
+      "title": "挪威气旋模型",
+      "detail": "Jacob Bjerknes依据挪威预报业务的每日天气图，描述了带暖锋冷锋、锢囚和生命史的波动气旋，并与父亲一起奠定了现代天气学。",
+      "people": [
+        "Jacob Bjerknes",
+        "Halvor Bjerknes",
+        "Tor Bergeron"
+      ]
+    },
+    {
+      "title": "Lewis Fry Richardson积分天气",
+      "detail": "Richardson用单个探空廓线手工完成一次六小时数值预报，得到错得离谱的气压变化，却在过程中发明了数值天气预报。",
+      "people": [
+        "Lewis Fry Richardson"
+      ]
+    },
+    {
+      "title": "Rossby的行星波",
+      "detail": "Carl-Gustaf Rossby利用飞机和风筝新获得的高空观测，辨认出西风的长波，由其科里奥利参数随纬度的变化导出相速度——本课核心思想的发现。",
+      "people": [
+        "Carl-Gustaf Rossby"
+      ]
+    },
+    {
+      "title": "Charney的标度分析与准地转",
+      "detail": "Jule Charney对大尺度运动的尺度分析指出运动方程中哪些项小，得出理论与业务共同依赖的准地转方程。",
+      "people": [
+        "Jule Charney"
+      ]
+    },
+    {
+      "title": "斜压不稳定获解",
+      "detail": "Eady和Charney在两篇论文中发展了均匀层结、垂直切变流的不稳定理论：增长率、约4000公里的最不稳定波长，以及天气尺度生命史的解释。",
+      "people": [
+        "E. T. Eady",
+        "Jule Charney"
+      ]
+    },
+    {
+      "title": "第一次计算机预报",
+      "detail": "Charney、Fjørtoft和von Neumann在ENIAC上积分正压涡度方程，约五周工作产出有技巧的24小时高空预报；十年内数值预报成为全球业务。",
+      "people": [
+        "Jule Charney",
+        "Fjørtoft",
+        "John von Neumann"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "An Introduction to Dynamic Meteorology",
+      "authors": "James R. Holton and Gregory J. Hakim",
+      "year": 2012,
+      "note": "The standard text for this course: scale analysis, balanced flow, vorticity, waves and instability, with the physical argument always in front."
+    },
+    {
+      "title": "An Introduction to Atmospheric Dynamics",
+      "authors": "David G. Andrews",
+      "year": 2010,
+      "note": "Shorter and more elegant than the big texts, and the best route into vorticity, potential vorticity and wave–mean flow interaction."
+    },
+    {
+      "title": "Atmospheric Convection",
+      "authors": "Kerry A. Emanuel",
+      "year": 1994,
+      "note": "Moist thermodynamics and convective instability done with thermodynamic care; the source for CAPE, neutral entropy distribution and the thermodynamics of storms."
+    },
+    {
+      "title": "An Introduction to Atmospheric Radiation",
+      "authors": "Knutson J. Liou",
+      "year": 2002,
+      "note": "Absorption, emission, two-stream methods, heating rates and the remote sensing of the atmosphere: the radiative-transfer chapter in book form."
+    },
+    {
+      "title": "Microphysics of Clouds and Precipitation",
+      "authors": "Hans R. Pruppacher and James D. Klett",
+      "year": 2005,
+      "note": "The reference work on cloud physics, from activation and growth by condensation to the electrification and glaciation of clouds."
+    },
+    {
+      "title": "Atmospheric Modeling, Data Assimilation and Predictability",
+      "authors": "Eugenia Kalnay",
+      "year": 2002,
+      "note": "How the equations of this course become an operational forecast: the model hierarchy, the filter and the limits of predictability."
+    },
+    {
+      "title": "Atmosphere, Ocean and Climate Dynamics",
+      "authors": "John Marshall and R. Alan Plumb",
+      "year": 2008,
+      "note": "The general-circulation chapters: the angular-momentum budget, the jets, the storm tracks, the energy cycle and the overturning, with the exercises that make you work."
+    }
+  ]
+}
