@@ -69,7 +69,7 @@ $$
 
 ::: svg
 caption: 一个浅的岩浆系统，按几千米一个的垂直比例画。同一个液体制造每一种结构的岩石，只取决于它在哪里停下：熔流中与岩床的骤冷的边缘里是玻璃与细的晶体，一个岩浆房分两个阶段冷却之处是斑状的结构，而在冷却花了几十万年的岩体中是粗粒的辉长岩与花岗岩。岩墙垂直地切过序列而补给表面；通道是唯一曾经是一个连续的开放的管的部分——这个体的大部分是一个晶体的糊状物。
-<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-section of a shallow magma system with sill, dyke, laccolith, conduit and pluton">
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="浅部岩浆系统剖面，含岩床、岩墙、岩盖、通道与岩体">
   <style>
     .rock { fill: var(--deemph); stroke: var(--rule-2); stroke-width: 1; }
     .melt { fill: var(--series-2); opacity: 0.85; }
