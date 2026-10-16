@@ -1,0 +1,195 @@
+{
+  "title": "地貌学",
+  "full_title": "地貌学：景观与地表过程",
+  "tagline": "风化、土壤、坡地、河流与排水流域、冰川、冰缘、风成与海岸景观、以及长期的地貌演化",
+  "summary": "地貌学解释陆地表面的形状与改变它的过程。本课程涵盖风化与土壤、坡地与滑坡、河流与水系、冰川与冰缘景观、风与沙漠、海岸、以及构造抬升、气候与侵蚀如何一起驱动景观在长时间尺度上的演化。",
+  "overview": [
+    "问为什么一条谷地是V形的、为什么一条河弯曲、为什么一个崖以一个你能从重复测量测量的速率后退、或为什么一个山坡平滑、凸、而它的邻居是一堵破碎的岩石的墙、你就在做地貌学。这个学科是对地貌、与制造、拆解它们的过程的研究、在一个抬升创造起伏、而气候与重力再把它拿走的星球上。它的中心量是剥蚀速率、而它的中心问题是一个景观是否与作用于它的过程处于平衡、还是仍在对一个气候、基准面或岩石抬升的改变调整。",
+    "本课程按过程组织、因为过程是你能测量的。它始于风化——沉积的物理、化学的准备——与土壤、形成比侵蚀慢十倍的关键自然资源。然后处理坡、扩散、蠕动、冲洗与快速的破坏在那里把材料从分水岭移到谷地、与河流、分选、输移、沉积沉积、而其剖面、河道与洪泛区是地球上被定量研究最多的地貌。地下水与喀斯特随后、然后冰川与冰川地貌的非凡的家族、然后风、然后海岸、浪在那里绕岬角折射、在一个季节的时间尺度上建造、摧毁海滩。课程以两个集成结束：排水流域作为一个集成的系统、其沉积通流能在出口测量、与从宇宙成因核素计算的剥蚀速率比较、与地貌演化、整个学科在其中成为一个有稳态、阈值与瞬态的动力学问题。",
+    "定量的内容是大量的、而刻意是中心的：河流功率下切、面积-坡度关系、Coulomb与无限坡的稳定性判据、岭脊的扩散方程、波的能量通量、与土壤产生随坡地深度的指数衰减。数学是一年的微积分、与一点微分方程；困难在于知道哪个过程在哪里主导、与从地貌的证据论证到过程。",
+    "人类现在是一个主导的地貌营力——耕地上侵蚀速率的、坝之后向海的沉积通流的、海堤之后海岸线的。本课程诚实地、以数对待它、而把物理科学与随之的政策争论分开。"
+  ],
+  "outcomes": [
+    "从野外或图的证据描述、分类地貌、而推断形成它们的一个或多个过程。",
+    "解释、量化化学与物理的风化、而使用土壤产生函数与临界坡角解释坡的形态。",
+    "把明渠流的沉积输移关系应用于一条河、而计算能力、容量与一个推移质的输移速率。",
+    "以流量、沉积载荷与边界材料解释河道形态——宽度、深度、坡度、曲流波长、梯度。",
+    "使用河流功率下切定律解释河道剖面、裂点、与基岩河道的凹度与陡度。",
+    "以无限坡的稳定性判据评估一个坡的状态、而从它们的几何与沉积解释滑坡的类型。",
+    "描述冰川、冰缘、风成与海岸的过程制度、与每一个有诊断性的地貌。",
+    "读一个地形图或数字高程模型的水系密度、高度、集水区面积与河道陡度。",
+    "解释地貌平衡的概念、而区分稳态、阈值行为、与对一个强迫的改变的瞬态调整。",
+    "从宇宙成因核素浓度、河的沉积载荷、或重复测量估计集水区平均的剥蚀速率、而说明每个方法在什么上平均。"
+  ],
+  "chapters": [
+    {
+      "title": "风化",
+      "summary": "岩石的物理、化学与生物的破坏、与控制它的速率的东西。"
+    },
+    {
+      "title": "土壤",
+      "summary": "土壤如何形成、土壤剖面与发生层、土壤分类与土壤侵蚀。"
+    },
+    {
+      "title": "坡地与重力地貌",
+      "summary": "土壤蠕动、滑坡、崩塌与泥石流、与坡的稳定性。"
+    },
+    {
+      "title": "河流",
+      "summary": "河道、流量与沉积载荷、河道型式与洪泛区。"
+    },
+    {
+      "title": "排水流域与河道剖面",
+      "summary": "水系、河流功率、纵剖面、裂点与河道下切。"
+    },
+    {
+      "title": "冰川与冰缘景观",
+      "summary": "冰川的侵蚀与沉积、先前冰盖留下的地貌、与寒冷地区的冻害过程。"
+    },
+    {
+      "title": "风与沙漠",
+      "summary": "风对砂与尘的输移、沙丘、黄土与沙漠景观。"
+    },
+    {
+      "title": "海岸",
+      "summary": "浪、潮与沿岸输沙、海滩、崖与河口、与海岸的改变。"
+    },
+    {
+      "title": "地貌演化",
+      "summary": "构造抬升、气候与侵蚀如何相互作用、用宇宙成因核素给景观定年、与长期地貌改变的模型。"
+    }
+  ],
+  "history": [
+    {
+      "title": "Hutton的土壤理论",
+      "detail": "在《Theory of the Earth》里James Hutton论证土壤由岩石的风化产生、被侵蚀移除、而两者以使现在的地形成为一个暂时的状态的速率进行——地貌学里第一个稳态的论证。",
+      "people": [
+        "James Hutton"
+      ]
+    },
+    {
+      "title": "侵蚀循环",
+      "detail": "Grove Karl Gilbert对美国西部的方山的报告、与在同一个十年的十年里、William Morris Davis的幼年、壮年与老年的方案把地貌放进一个序列。Davis的模型主导这个学科八十年、而仍是这个学科必须摆脱的东西。",
+      "people": [
+        "William Morris Davis",
+        "Grove Karl Gilbert"
+      ]
+    },
+    {
+      "title": "对侵蚀循环的一个真正的批评",
+      "detail": "Franz Leydecker关于地貌方法对地貌学研究的价值、1953年被翻译、重印的论文、论证Davis的阶段不依赖时间、而坡的形态记录坡过程的相对速率——现代的视图、早了五十年。",
+      "people": [
+        "Franz Leydecker"
+      ]
+    },
+    {
+      "title": "人类对土地的影响的本质",
+      "detail": "George Perkins Marsh修订的《Man and Nature》、与在十年的晚些时候、对美国Dust Bowl的反应迫使地貌学严肃地对待人类驱动的侵蚀速率、而开始测量它们。",
+      "people": [
+        "George Perkins Marsh"
+      ]
+    },
+    {
+      "title": "河流的水力几何",
+      "detail": "Luna Leopold与Thomas Maddock形式化宽度、深度、速度与排水面积之间的向下游的关系、与B. F. Miller 1953年关于河道的水力几何的论文把河道形态变成一个定量的、可检验的学科。",
+      "people": [
+        "Luna Leopold",
+        "Thomas Maddock"
+      ]
+    },
+    {
+      "title": "Peltier的气候图",
+      "detail": "Louis Peltier关于气候在坡的发展里的作用的论文按冻、湿与植被的平衡给世界的气候分类、而给每一个分配一个典型的风化制度与坡过程——冰缘地貌学的标准的框架。",
+      "people": [
+        "Louis Peltier"
+      ]
+    },
+    {
+      "title": "土壤产生与蠕动的坡依赖",
+      "detail": "Dickson与Kirkby、与在下一个十年的Dietrich、Wilson与Hovius的模型计算、确立联系土壤厚度、坡度与基岩降低的耦合的土壤产生与扩散输移的坡地演化模型。",
+      "people": [
+        "William Dietrich",
+        "Tim Wilson"
+      ]
+    },
+    {
+      "title": "一个基岩下切的河流功率定律",
+      "detail": "Howard、Dietrich与Seidl、然后Whipple与Meade、发展基于剪切应力的下切定律、而表明它预测山区河流观察到的凹的平衡剖面、把河道剖面的分析从描述移到动力学。",
+      "people": [
+        "Alan Howard",
+        "William Dietrich",
+        "Todd Whipple"
+      ]
+    },
+    {
+      "title": "宇宙成因核素给一个景观定年",
+      "detail": "石英里原地产生的¹⁰Be向集水区平均的剥蚀速率的应用、被Bierman与Caffee那一年编辑的卷巩固、给地貌学它的第一个在10³–10⁵年上长期侵蚀的直接测量。",
+      "people": [
+        "Marcus Caffee",
+        "Paul Bierman"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Global Geomorphology: Introduction to the Study of Landscapes",
+      "authors": "Mike Summerfield",
+      "year": 1991,
+      "note": "过程与构造的框架、一个地貌区域全球的调查、与地貌演化和稳态的最好的处理。"
+    },
+    {
+      "title": "Geomorphology and Global Tectonics",
+      "authors": "Karl-Heinz Wegmann (ed., after Tricart and Cailleux)",
+      "year": 1967,
+      "note": "世界的形态发生区域经典的气候与构造的分类；历史上重要、而对带的方案仍有用的。"
+    },
+    {
+      "title": "Geomorphology: The Mechanics and Chemistry of Landscapes",
+      "authors": "Jon D. Pelletier",
+      "year": 2008,
+      "note": "定量的入门的路：坡的稳定性、泥石流、河道下切、沙丘与岭脊的动力学、全部从第一性原理推导、带练习。"
+    },
+    {
+      "title": "The Physics of Blown Sand and Desert Dunes",
+      "authors": "Ralph Alger Bagnold",
+      "year": 1941,
+      "note": "从利比亚沙漠写成、而今天仍被阅读；输移定律与一个沙丘是一个床形态的想法的起源。"
+    },
+    {
+      "title": "Karst Geomorphology",
+      "authors": "Derek Ford and Paul Williams",
+      "year": 1987,
+      "note": "溶蚀地貌、管道水文与洞穴次生沉积记录的标准处理。"
+    },
+    {
+      "title": "Landslides: Investigation and Mitigation",
+      "authors": "Randolph L. Schuster and Robert L. Higman (eds.)",
+      "year": 1996,
+      "note": "运输研究委员会的特别报告247：分类、调查、与稳定性评估的实践。"
+    },
+    {
+      "title": "Cosmogenic Nuclides: Principles, Concepts and a Practical Guide to the Field",
+      "authors": "David Small",
+      "year": 2019,
+      "note": "进入¹⁰Be与²⁶Al的暴露与继承定年、因此进入长期剥蚀速率的实用的路。"
+    },
+    {
+      "title": "River Sedimentology",
+      "authors": "L. E. Frostick and John Lewin",
+      "year": 2017,
+      "note": "河流的记录：河道的过程与形态、沉积输移、与冲积序列的解释。"
+    },
+    {
+      "title": "Beach Processes and Sedimentation",
+      "authors": "Paul Komar",
+      "year": 1998,
+      "note": "定量的海岸：浪、沿岸输移、平衡剖面、与沿岸漂移的数学。"
+    },
+    {
+      "title": "Glacial Geology and Geomorphology",
+      "authors": "Andrew Bennett and David Glasser",
+      "year": 2009,
+      "note": "冰川土地系统、冰下过程与冰缘地貌的标准现代记述。"
+    }
+  ]
+}
