@@ -1,5 +1,4 @@
 {
-  "slug": "biogeochemistry",
   "title": "生物地球化学",
   "full_title": "生物地球化学循环",
   "tagline": "元素收支与氧化还原、光合与分解、长短时标的碳循环、氮磷硫、土壤、湿地、海洋与氧气",
@@ -25,81 +24,40 @@
   ],
   "chapters": [
     {
-      "slug": "principles",
       "title": "生物地球化学原理",
-      "summary": "元素收支、生命的化学计量、氧化还原反应与生物地球化学循环中的质量平衡。",
-      "requires": [
-        "earth-system/reservoirs-fluxes",
-        "geochemistry/aqueous-geochemistry"
-      ]
+      "summary": "元素收支、生命的化学计量、氧化还原反应与生物地球化学循环中的质量平衡。"
     },
     {
-      "slug": "production-decomposition",
       "title": "光合、呼吸与分解",
-      "summary": "初级生产、有机质的归宿，以及驱动元素循环的能量。",
-      "requires": [
-        "biogeochemistry/principles"
-      ]
+      "summary": "初级生产、有机质的归宿，以及驱动元素循环的能量。"
     },
     {
-      "slug": "carbon-today",
       "title": "现代碳循环",
-      "summary": "今天大气、陆地、海洋与化石储库中的碳，及其间的通量。",
-      "requires": [
-        "biogeochemistry/production-decomposition",
-        "earth-system/carbon-cycle"
-      ]
+      "summary": "今天大气、陆地、海洋与化石储库中的碳，及其间的通量。"
     },
     {
-      "slug": "carbon-deep-time",
       "title": "长时标碳循环",
-      "summary": "硅酸盐风化、碳酸盐与有机碳埋藏、火山脱气，以及在数百万年上调节二氧化碳的恒温器。",
-      "requires": [
-        "biogeochemistry/carbon-today",
-        "geochemistry/weathering-chemistry"
-      ]
+      "summary": "硅酸盐风化、碳酸盐与有机碳埋藏、火山脱气，以及在数百万年上调节二氧化碳的恒温器。"
     },
     {
-      "slug": "nitrogen",
       "title": "氮循环",
-      "summary": "固氮、硝化与反硝化，以及工业与农业如何把活性氮供应大致翻倍。",
-      "requires": [
-        "biogeochemistry/principles"
-      ]
+      "summary": "固氮、硝化与反硝化，以及工业与农业如何把活性氮供应大致翻倍。"
     },
     {
-      "slug": "phosphorus-sulfur",
       "title": "磷循环与硫循环",
-      "summary": "作为长期限制营养盐的磷，以及来自火山、海洋、微生物与燃料的硫。",
-      "requires": [
-        "biogeochemistry/principles"
-      ]
+      "summary": "作为长期限制营养盐的磷，以及来自火山、海洋、微生物与燃料的硫。"
     },
     {
-      "slug": "soils-wetlands",
       "title": "土壤、湿地与内陆水体",
-      "summary": "土壤有机质、湿地甲烷，以及河流和湖泊对碳与营养盐的处理。",
-      "requires": [
-        "biogeochemistry/carbon-today",
-        "biogeochemistry/nitrogen"
-      ]
+      "summary": "土壤有机质、湿地甲烷，以及河流和湖泊对碳与营养盐的处理。"
     },
     {
-      "slug": "ocean-cycles",
       "title": "全球元素循环中的海洋",
-      "summary": "海洋的生产、输出与埋藏如何把海洋耦合到全球碳、营养盐与氧循环。",
-      "requires": [
-        "biogeochemistry/carbon-today"
-      ]
+      "summary": "海洋的生产、输出与埋藏如何把海洋耦合到全球碳、营养盐与氧循环。"
     },
     {
-      "slug": "oxygen",
       "title": "氧与耦合循环",
-      "summary": "大气氧如何被调节、其在地球历史中的上升，以及碳、硫、氧循环的耦合。",
-      "requires": [
-        "biogeochemistry/carbon-deep-time",
-        "biogeochemistry/phosphorus-sulfur"
-      ]
+      "summary": "大气氧如何被调节、其在地球历史中的上升，以及碳、硫、氧循环的耦合。"
     }
   ],
   "history": [
