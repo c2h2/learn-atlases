@@ -208,6 +208,40 @@ A $6210$ deep-groove ball bearing is pressed into a cast housing and retained by
 :::
 :::
 
+::: example A sheet-metal bracket and its flat pattern {#ex-flat}
+A $1.5\ \mathrm{mm}$ mild-steel bracket has three legs of $80$, $40$ and $60\ \mathrm{mm}$ measured to the outside corners, with two $90^{\circ}$ bends at an inside radius of $1.5\ \mathrm{mm}$. Give the flat pattern, the bend notes and the section that shows the bend.
+::: solution
+**The flat length.** With $K = 0.33$ for an air bend in mild steel:
+$$
+SB = (R + t) \tan 45^{\circ} = 1.5 + 1.5 = 3.00\ \mathrm{mm}, \qquad
+BA = \frac{\pi}{2} (R + Kt) = \frac{\pi}{2} (1.5 + 0.495) = 3.134\ \mathrm{mm}
+$$
+$$
+BD = 2\,SB - BA = 6.00 - 3.134 = 2.87\ \mathrm{mm} \ \text{per bend}, \qquad
+L = 180 - 2 \times 2.87 = 174.3\ \mathrm{mm} .
+$$
+**The bend layout, which the press brake needs and the flat length does not give.** The **miter line** — the point the operator centres the bend on — is at
+$$
+80 - SB = 77.0\ \mathrm{mm} \quad \text{and} \quad 77.0 + 40 - 2\,SB = 111.0\ \mathrm{mm}
+$$
+from the flat's leading edge, and the drawing shows **both** the flat length and the two miter dimensions, because a brake operator bends to the miter line and not to the flat length.
+**The bend notes.**
+$$
+\begin{array}{l l}
+\text{Bend radius} & R\ 1.5\ \text{typ., min. } 1.0\ \text{(across the grain)} \\
+\text{Bend angle} & 90^{\circ} \pm 0.5^{\circ} \\
+\text{Inside dimension} & \text{the drawing dimensions the } \textbf{inside} \text{ legs, because that is what the brake controls} \\
+\text{Hole distance} & \text{every hole is dimensioned from the } \textbf{bend relief} \text{ face and never across a bend} \\
+\text{Hole to bend} & \ge 2t = 3.0\ \mathrm{mm}; \text{ a hole at } 2.0\ \mathrm{mm} \text{ becomes an ellipse} \\
+\text{Material} & \text{grain direction noted; a bend } \textbf{with} \text{ the grain cracks at } R\ 1.5
+\end{array}
+$$
+**The section that shows the bend.** A **removed section** at $2 : 1$ through each bend, drawn **unhatched** because the $1.5\ \mathrm{mm}$ cut is below the $2\ \mathrm{mm}$ thin-section limit — and if the section is drawn at $1 : 1$ it is **painted solid black** with a $2\ \mathrm{mm}$ gap at the cutting plane.
+**The one thing that must not be dimensioned.** The **diagonal** from the end of leg $1$ to the end of leg $3$. It is a derived value, it changes with the $K$ factor, and a dimension on it is a second instruction that contradicts the two bends.
+*Sanity.* The $2.87\ \mathrm{mm}$ bend deduction is $1.9$ times the thickness, and the $K$ factor's plausible range of $0.33$ to $0.50$ moves it to $3.13$ — a $9\ \%$ change, or $0.5\ \mathrm{mm}$ over two bends. That is why a first article is always bent, measured and the $K$ factor recalculated, and why the drawing says "$R\ 1.5\ \text{typ.}$" and not "$R\ 1.50 \pm 0.05$".
+:::
+:::
+
 ::: history
 The section convention descends from the **17th-century military engineers**' "plan de coupe" for fortifications, in which a **horizontal** cut through a bastion at a stated height was the only way to show the internal galleries; **Sébastien Le Prestre de Vauban**'s 17th-century drawings already use the hatched cut face and the arrow of sight. **Gaspard Monge**'s 1795 *Géométrie descriptive* gave the section its geometry, and the **$45\ {}^{\circ}$ hatch at a fixed pitch** was settled in the **British Standards Institution**'s 1901 provisional general-terms specification, whose practical motive was that a rolled-up drawing had to be legible at arm's length through a gap in a bundle. **The "never hatch a rib or a shaft" rule** is attributed to the **1890s American machine-shop practice** codified in **John Brown**'s and **Charles MacCord's** 1890 *Mechanical Drawing and Elementary Machine Design*, which records that the rule was adopted after a boiler-maker built a **solid** bedplate from a drawing whose ribs had been hatched. **The assembly-section fastener rule** — that a bolt in the cutting plane is drawn whole — is in **Thomas Ewing**'s 1878 *Handbook of Mechanical Drawing* and is unchanged. **The thread convention** — the crest thick, the root thin, the hole deeper than the thread — was standardised by the **ASA** (now **ASME**) **Y14.6** of 1940 and the **ISO 6410** series of 1982, after two decades in which American and European drawings drew the **root** thick and the **crest** thin, which is to say, exactly backwards. **The developed sheet-metal pattern** and its neutral-axis arithmetic descend from **the sheet-metal trades'** 19th-century **stretch-out** practice and were put on a quantitative footing by the **K** factor studies of **Almen** and **Bentz** at **US Steel** in 1931, whose "bendability" data are still the basis of every press-brake catalogue.
 :::
