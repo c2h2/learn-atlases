@@ -6,6 +6,17 @@ The practical payoff is three numbers that engineers actually specify. The **fre
 A random signal is described by a **distribution**, not by a number, and quoting "the vibration level" without saying whether it is the root-mean-square, the peak, the $3 \sigma$ value or the power spectral density is the commonest source of error in environmental testing. For a narrow-band Gaussian process the peaks follow a **Rayleigh** distribution, so the ratio of the largest expected peak to the RMS depends on how many cycles you are prepared to wait for: $3.7 \sigma$ for one peak in a thousand, $4.7 \sigma$ for one in a million. A test specified as "$4.5\ \mathrm{g}$ RMS for two minutes" and one specified as "$4.5\ \mathrm{g}$ peak" are not near-equivalent — the first contains peaks of $17\ \mathrm{g}$ and the second contains none above $4.5$.
 :::
 
+::: quiz
+A machine is mounted on isolators whose natural frequency is $5\ \mathrm{Hz}$, and the supporting structure has its own natural frequency of $4\ \mathrm{Hz}$. The isolation begins:
+- [ ] Above $7.1\ \mathrm{Hz}$, that is $\sqrt{2}$ times the mount frequency
+- [x] Above the upper **coupled** natural frequency of the two-mass system, not above $\sqrt{2} \times 5\ \mathrm{Hz}$
+- [ ] Above $5\ \mathrm{Hz}$, because that is when transmissibility falls below unity
+- [ ] Immediately, because any resilience isolates
+::: solution
+Two masses and two springs give **two** natural frequencies, and the isolation is governed by the higher of them together with a large amplification at the lower. For the case worked in Example 4 the coupled frequencies are $3.0$ and $6.7\ \mathrm{Hz}$, and the transmitted force per newton of applied force is $1.15$ at $1\ \mathrm{Hz}$, $800$ at the lower mode, $1.28$ at $5\ \mathrm{Hz}$ and only $0.079$ at $10\ \mathrm{Hz}$. The rule of thumb $\sqrt{2} f_n$ assumes a **rigid** foundation, and a foundation that is not rigid both moves the isolation threshold and creates a low-frequency mode at which the isolation makes the problem far worse. This is why a machine isolated on a lightweight steel floor is often worse isolated than the same machine bolted to a concrete inertia block, and why a vibration specification always states the impedance of the surface to be isolated from.
+:::
+:::
+
 ## Decomposing the excitation
 
 ::: definition Frequency-domain description {#def-frequency-domain}
