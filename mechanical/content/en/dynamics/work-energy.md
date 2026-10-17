@@ -71,11 +71,11 @@ $$
 :::
 
 ::: widget plot
-f: (196.2+sqrt(38490+7848*x))/(4000*0.001)
-x: 0, 500
-y: 50, 500
+f: (196.2+sqrt(38494+1569.6*x))/4
+x: 0, 400
+y: 50, 300
 labels: \text{maximum spring deflection } \left( \mathrm{mm} \right)
-caption: Maximum deflection of the $4\ \mathrm{kN / m}$ spring under a $20\ \mathrm{kg}$ collar dropped from $x\ \mathrm{mm}$, against the drop height. The curve starts at $98\ \mathrm{mm}$ — twice the static deflection, for zero drop height — and rises as $\sqrt{h}$, reaching $490\ \mathrm{mm}$ at a drop of half a metre. The **square-root** shape is the reason a small increase in drop height is treated so seriously in lifting operations and so lightly in static design: doubling the height from $100$ to $200\ \mathrm{mm}$ raises the deflection by $40$ per cent, and the peak force rises with it.
+caption: Maximum deflection of the $4\ \mathrm{kN / m}$ spring under a $20\ \mathrm{kg}$ collar dropped from $x\ \mathrm{mm}$, against the drop height. The curve starts at $98\ \mathrm{mm}$ — twice the static deflection, for zero drop height — and rises as $\sqrt{h}$, reaching $253\ \mathrm{mm}$ at a drop of $400\ \mathrm{mm}$. The **square-root** shape is the reason a small increase in drop height is treated so seriously in lifting operations and so lightly in static design: doubling the height from $100$ to $200\ \mathrm{mm}$ raises the deflection from $160$ to $198\ \mathrm{mm}$, and the peak spring force rises with it.
 :::
 
 ## Conservative forces, potential and stability
@@ -120,6 +120,89 @@ $$
 **$E = + 2.5\ \mathrm{J}$:** the particle passes over the barrier and escapes to $x \rightarrow - \infty$, since $V \rightarrow - \infty$; if it comes from $- \infty$ it slows, climbs the barrier, and is reflected back if $E < 2$.
 
 *Sanity.* The picture — a well, a barrier, a separatrix, escape — is the picture of every one-degree-of-freedom conservative system: a molecule in a Lennard-Jones well, a pendulum below and above the horizontal, a mass on a snap-through buckle, a rocket below and above escape velocity. Reading a $V \left( q \right)$ curve is a skill worth more than the algebra that produced it, because the curve answers the qualitative questions — is it stable, can it escape, what is the critical energy — without a single integration.
+:::
+:::
+
+::: proof Force from a potential, and the stability criterion {#proof-from-potential}
+If the work is path-independent, define
+$$
+V \left( \mathbf{r} \right) = - \int_{\mathbf{r}_0}^{\mathbf{r}} \mathbf{F} \cdot \mathrm{d} \mathbf{r} ,
+$$
+with the integral taken along any path. Then for a displacement $\mathrm{d} \mathbf{r}$,
+$$
+\mathrm{d} V = - \mathbf{F} \cdot \mathrm{d} \mathbf{r}
+= - \left( F_x \, \mathrm{d} x + F_y \, \mathrm{d} y + F_z \, \mathrm{d} z \right) ,
+$$
+and since $\mathrm{d} V = \left( \partial V / \partial x \right) \mathrm{d} x + \cdots$, comparison gives
+$$
+\mathbf{F} = - \nabla V .
+$$
+Path-independence requires the mixed partials to agree, so $\partial F_x / \partial y = \partial F_y / \partial x$ and its cyclic partners, that is $\nabla \times \mathbf{F} = \mathbf{0}$ — the test for a conservative force.
+
+**Stability.** For one degree of freedom, expand about an equilibrium $q_0$ where $V' \left( q_0 \right) = 0$:
+$$
+V \left( q \right) = V \left( q_0 \right) + \tfrac{1}{2} V'' \left( q_0 \right) \left( q - q_0 \right)^{2} + \cdots ,
+$$
+so the energy integral $T + V = E$ becomes
+$$
+\tfrac{1}{2} m_{\text{eff}} \dot{q}^{2} + \tfrac{1}{2} V'' \left( q_0 \right) \left( q - q_0 \right)^{2} = \text{constant} .
+$$
+If $V'' > 0$ this is the energy integral of a simple harmonic oscillator with $\omega_n^{2} = V'' / m_{\text{eff}}$, and the motion is bounded: the equilibrium is **stable**. If $V'' < 0$ the "spring" is negative, the solution is exponential, and the equilibrium is **unstable**. If $V'' = 0$ the quadratic term carries no information and the sign of the first non-vanishing even-order derivative decides — which is why a flat-topped potential is called **neutral** only when every derivative vanishes, as it does for a particle on a horizontal plane.
+:::
+
+::: example Spring-launched plunger {#ex-plunger}
+A $3\ \mathrm{kg}$ component is launched up a $25^{\circ}$ chute by a spring of stiffness $1.2\ \mathrm{kN / m}$ released from a compression $\delta$. The kinetic friction coefficient is $0.22$ and the component must travel $600\ \mathrm{mm}$ along the chute before stopping. Find $\delta$, and the speed at which it leaves the spring.
+::: solution
+Take the state at maximum compression and the state at the point of stopping. The spring does work $\tfrac{1}{2} k \delta^{2}$, gravity $- m g \sin\theta \left( s + \delta \right)$ and friction $- \mu m g \cos\theta \left( s + \delta \right)$, where $s = 0.6\ \mathrm{m}$ is the travel **after** leaving the spring. Both end states have zero kinetic energy:
+$$
+\tfrac{1}{2} k \delta^{2} = \left( m g \sin\theta + \mu m g \cos\theta \right) \left( s + \delta \right) ,
+$$
+$$
+600 \delta^{2} = \left( 29.43 \times 0.4226 + 0.22 \times 29.43 \times 0.9063 \right) \left( 0.6 + \delta \right)
+= 18.31 \left( 0.6 + \delta \right) ,
+$$
+$$
+600 \delta^{2} - 18.31 \delta - 10.99 = 0
+\quad\Longrightarrow\quad
+\delta = \frac{18.31 + \sqrt{335 + 26\,366}}{1200} = 0.151\ \mathrm{m}.
+$$
+**Speed on leaving the spring.** Apply the energy equation between maximum compression and the natural length, over a distance $\delta$:
+$$
+\tfrac{1}{2} m v^{2} = \tfrac{1}{2} k \delta^{2} - 20.06 \delta
+= 0.5 \times 1200 \times 0.02293 - 18.31 \times 0.1514 = 13.76 - 2.77 = 10.99\ \mathrm{J},
+$$
+$$
+v = \sqrt{2 \times 10.99 / 3} = 2.71\ \mathrm{m / s}.
+$$
+*Check.* The remaining $18.31 \times 0.6 = 10.99\ \mathrm{J}$ is exactly dissipated over the $600\ \mathrm{mm}$ run, bringing the component to rest as required. $\checkmark$
+
+*Sanity.* Note that the spring must supply $13.8\ \mathrm{J}$ of which only $11.0\ \mathrm{J}$, $80$ per cent, reaches the travel — the rest is spent pushing the component up the incline while the spring is still acting. That is why a pneumatic or spring stop is nearly always **over-travelled** in the design sense and why the practical way to set the stroke is to specify the terminal condition and solve for the compression, as here, rather than to guess a compression and check. It is also why a real feeder has an adjustable mechanical stop rather than an adjustable spring preload: the answer is far more sensitive to $\delta$ than to $k$, since $\partial \delta / \partial s \approx 0.11$ while a $10$ per cent error in $k$ moves the required compression by only $5$ per cent.
+:::
+:::
+
+::: example Belt conveyor starting load {#ex-belt-energy}
+A belt conveyor $120\ \mathrm{m}$ long carries $40\ \mathrm{kg / m}$ of material and has an empty-line resistance of $180\ \mathrm{N}$ per metre of belt at any speed. It runs at $2.5\ \mathrm{m / s}$ up a $12\ \mathrm{m}$ lift. Find the driving power at steady speed, and the extra power needed to bring the $1500\ \mathrm{kg}$ belt-and-load system up to speed in $8\ \mathrm{s}$.
+::: solution
+**Steady power.** The resistive force is
+$$
+F = 180 \times 120 + 40 \times 9.81 \times 120 \times \sin\theta, \qquad
+\sin\theta = \frac{12}{120} = 0.1 ,
+$$
+$$
+F = 21\,600 + 4709 = 26\,309\ \mathrm{N}, \qquad
+P = F v = 26\,309 \times 2.5 = 65.8\ \mathrm{kW}.
+$$
+**Acceleration.** The kinetic energy to be supplied is
+$$
+\Delta T = \tfrac{1}{2} \times 1500 \times 2.5^{2} = 4688\ \mathrm{J},
+$$
+delivered over $8\ \mathrm{s}$ at an average rate of $586\ \mathrm{W}$, but the **peak** at the end of the run is
+$$
+P_{\text{acc}} = \frac{2 \Delta T}{t} = 1172\ \mathrm{W} = 1.2\ \mathrm{kW}.
+$$
+**Total** $65.8 + 1.2 = 67.0\ \mathrm{kW}$ at the belt, or $67.0 / 0.9 = 74.4\ \mathrm{kW}$ at the motor shaft with $90$ per cent drive efficiency.
+
+*Sanity.* The acceleration term is $1.8$ per cent of the steady load and can be ignored — which is the general rule for long conveyors, where the running resistance over hundreds of metres dwarfs the kinetic energy of the line. The opposite is true of a **short** high-speed line: a $2\ \mathrm{m}$ packaging conveyor with $20\ \mathrm{kg}$ of product at $3\ \mathrm{m / s}$ carries $90\ \mathrm{J}$ of kinetic energy against a friction load of a few newtons, so its acceleration term dominates and its motor is sized on the start, not the run. Getting that ratio backwards is a common and expensive error, and it is why conveyor motors are rated on the steady load with a service factor while packaging-machine motors are rated on the worst-case acceleration.
 :::
 :::
 
@@ -191,38 +274,47 @@ The time integral of the same equation gives [[dynamics/impulse-momentum]], and 
 - A load dropped onto a spring deflects it at least twice the static deflection, and by $\sqrt{h}$ more for a drop height $h$.
 :::
 
+::: quiz
+A block slides from rest down two frictionless ramps of the same vertical height but different lengths and angles. Which statement is true at the bottom?
+- [ ] The steeper ramp gives the greater speed
+- [x] Both give the same speed, but the steeper ramp takes less time
+- [ ] Both give the same speed and the same time
+- [ ] The longer ramp gives the greater speed, because the force acts longer
+::: solution
+Both give the same speed, $v = \sqrt{2 g h}$, but the steeper ramp takes less time. Energy fixes the **speed** and nothing else: the work of gravity is $m g h$ whatever the path, so the final kinetic energy and hence the speed are the same. The **time** is not fixed by energy and depends on the whole history of the acceleration — which is why the classical demonstration that the speed at the bottom of a frictionless chute is independent of its shape cannot be proved by energy alone and needs $\sum F_t = m \dot{v}$ integrated along the arc. The brachistochrone is the extreme case: of all frictionless paths between two points the cycloid gives the shortest time, while every one of them gives the same speed.
+:::
+:::
+
 ## Exercises
 
-::: exercise Work of a force {level=1 check="60"}
+::: exercise Work of a force {level=1 check="24"}
 A force $\mathbf{F} = \left( 3 x, 2 y^{2} \right)\ \mathrm{N}$ acts on a particle that moves from $\left( 0, 0 \right)$ to $\left( 2, 3 \right)\ \mathrm{m}$ along a straight line. Find the work.
 ::: solution
-Along the line $y = 1.5 x$, $\mathrm{d} y = 1.5 \mathop{}\mathrm{d} x\mathop{}\limits$:
+Along the line $y = 1.5 x$, $\mathrm{d} y = 1.5 \, \mathrm{d} x$:
 $$
 U = \int_0^2 \left[ 3 x + 2 \left( 1.5 x \right)^{2} \times 1.5 \right] \mathrm{d} x
 = \int_0^2 \left( 3 x + 6.75 x^{2} \right) \mathrm{d} x
 = \left[ 1.5 x^{2} + 2.25 x^{3} \right]_0^2 = 6 + 18 = 24\ \mathrm{J}.
 $$
-*Note.* The answer to enter is $24\ \mathrm{J}$. The work is path-dependent for this force — along the two-segment path $\left( 0, 0 \right) \rightarrow \left( 2, 0 \right) \rightarrow \left( 2, 3 \right)$ it is $6 + 18 = 24\ \mathrm{J}$ by one route and $6 + 54 = 60\ \mathrm{J}$ by the other — so the force is **not** conservative, which is confirmed by $\partial F_x / \partial y = 0 \ne \partial F_y / \partial x = 0$... 
-
-*Correction.* Here $\partial F_x / \partial y = 0$ and $\partial F_y / \partial x = 0$, so the curl test is inconclusive in the sense that both vanish; the correct test is that $F_y = 2 y^{2}$ depends only on $y$ and $F_x = 3x$ only on $x$, so a potential $V = - 1.5 x^{2} - \tfrac{2}{3} y^{3}$ does exist and the work **is** path-independent at $24\ \mathrm{J}$. The two-segment figure of $60\ \mathrm{J}$ above is wrong: the second segment contributes $\int_0^3 2 y^{2} \mathrm{d} y = 18$, not $54$.
+*Note.* The answer to enter is $24\ \mathrm{J}$. The force **is** conservative, since $F_x = 3x$ depends only on $x$ and $F_y = 2y^{2}$ only on $y$, so a potential $V = -1.5 x^{2} - \tfrac{2}{3} y^{3}$ exists and the work is path-independent. Verify this on the two-segment path $\left(0,0\right) \rightarrow \left(2,0\right) \rightarrow \left(2,3\right)$: the first segment contributes $\int_0^2 3x \, \mathrm{d}x = 6\ \mathrm{J}$ and the second $\int_0^3 2y^{2} \, \mathrm{d}y = 18\ \mathrm{J}$, totalling $24\ \mathrm{J}$ as required.
 :::
 :::
 
-::: exercise Conservation of energy {level=1 check="7.0"}
+::: exercise Conservation of energy {level=1 check="20.4"}
 A $2\ \mathrm{kg}$ ball is thrown straight up at $20\ \mathrm{m / s}$. How high does it go, neglecting drag?
 ::: solution
 $h = v^{2} / \left( 2 g \right) = 400 / 19.62 = 20.4\ \mathrm{m}$.
-*Note.* The answer to enter is $20.4\ \mathrm{m}$.
+
 :::
 :::
 
-::: exercise Spring {level=1 check="0.2"}
+::: exercise Spring {level=1 check="3.16"}
 A spring of stiffness $500\ \mathrm{N / m}$ is compressed $200\ \mathrm{mm}$ and released against a $2\ \mathrm{kg}$ mass on a frictionless surface. Find the launch speed.
 ::: solution
 $$
 v = \sqrt{\frac{k \delta^{2}}{m}} = \sqrt{\frac{500 \times 0.04}{2}} = 3.16\ \mathrm{m / s}.
 $$
-*Note.* The answer to enter is $3.16\ \mathrm{m / s}$.
+
 :::
 :::
 
@@ -243,20 +335,7 @@ $$
 ::: exercise Stability {level=2}
 A bead of mass $m$ slides on a smooth circular hoop of radius $R$ rotating about a vertical diameter at constant $\omega$. Find the equilibrium positions and their stability, and the critical speed.
 ::: solution
-In the rotating frame the effective potential is
-$$
-V \left( \theta \right) = - \tfrac{1}{2} m \omega^{2} R^{2} \sin^{2} \theta
-$$
-measured from the bottom of the hoop, with $\theta$ from the downward vertical. Then
-$$
-\frac{\mathrm{d} V}{\mathrm{d} \theta} = - m \omega^{2} R^{2} \sin \theta \cos \theta = 0
-\quad\Longrightarrow\quad
-\theta = 0, \; \frac{\pi}{2} , \; \pi ,
-$$
-$$
-\frac{\mathrm{d}^{2} V}{\mathrm{d} \theta^{2}} = - m \omega^{2} R^{2} \cos 2 \theta .
-$$
-This says $\theta = \pi / 2$ is always stable and $\theta = 0$ always unstable, which is wrong — the hoop's own gravity has been left out. Including it,
+With $\theta$ measured from the downward vertical, the effective potential in the rotating frame — gravity plus the centrifugal potential — is
 $$
 V \left( \theta \right) = m g R \left( 1 - \cos \theta \right) - \tfrac{1}{2} m \omega^{2} R^{2} \sin^{2} \theta ,
 $$
@@ -310,15 +389,18 @@ $$
 $$
 k = \frac{m a_{\max}}{\delta_{\max}} = \frac{15\,000 \times 3.924}{0.177} = 333\ \mathrm{kN / m}.
 $$
-**At $6\ \mathrm{km / h}$** the speed doubles, so $\delta_{\max} = 0.708\ \mathrm{m}$ and $a_{\max} = 1.6\ \mathrm{m / s^{2}} \times 4 = 1.6\ g$.
-
-*Note.* With a **linear** spring the compression is proportional to $v$ and the deceleration to $v^{2}$, so doubling the impact speed quadruples the load. That is the wrong scaling for a buffer, because the design case is a heavy wagon at low speed and the accidental case is a light wagon at high speed, and a linear spring overloads the structure in the second.
+**At $6\ \mathrm{km / h}$** the natural frequency is unchanged at $\omega_n = \sqrt{k / m} = 4.71\ \mathrm{rad / s}$, so
+$$
+\delta_{\max} = \frac{v}{\omega_n} = \frac{1.667}{4.71} = 0.354\ \mathrm{m}, \qquad
+a_{\max} = \omega_n v = 7.85\ \mathrm{m / s^{2}} = 0.80\ g .
+$$
+*Note.* With a **linear** spring both the compression and the force are proportional to $v$, so doubling the impact speed doubles the load on the wagon frame while the **energy** to be absorbed quadruples — which means the stroke must double as well. That is the wrong scaling for a buffer, because the design case is a heavy wagon at low speed and the accidental case is a light wagon at high speed, and a linear spring either over-travels or over-loads depending on which you design for.
 
 **Remedy.** A real buffer is **not** linear. A conical Bellevuss spring, a friction ring or a hydro-pneumatic unit gives a nearly **constant** force over the stroke, for which
 $$
 \delta = \frac{m v^{2}}{2 F_{\max}},
 $$
-so the force is proportional to $v^{2}$ and the stroke to $v^{2}$ as well, but the force can be capped by a relief valve. Railway buffing gear is designed to a **buffing diagram** — force against compression, with a plateau — and the wagon's frame is designed for the plateau force, not for a spring rate. That is also why modern freight cars use hydraulic cushioning gear rather than a simple spring, and why the buffer stroke on a modern wagon is $450$ to $650\ \mathrm{mm}$ rather than the $150\ \mathrm{mm}$ of a linear spring of the same capacity.
+so the stroke grows as $v^{2}$ while the force stays exactly at the plateau value and can be capped by a relief valve. Railway buffing gear is designed to a **buffing diagram** — force against compression, with a plateau — and the wagon's frame is designed for the plateau force, not for a spring rate. That is also why modern freight cars use hydraulic cushioning gear rather than a simple spring, and why the buffer stroke on a modern wagon is $450$ to $650\ \mathrm{mm}$ rather than the $150\ \mathrm{mm}$ of a linear spring of the same capacity.
 :::
 :::
 
