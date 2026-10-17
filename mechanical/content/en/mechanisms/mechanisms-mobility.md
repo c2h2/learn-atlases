@@ -244,10 +244,10 @@ $$
 \begin{array}{c c c c}
 n & 4 & 6 & 8 \\
 \text{dwell} & 0.750 & 0.667 & 0.625 \\
-\ddot{\psi}_{\max} / \omega_d^2 & 1.48 & 0.73 & 0.42
+\ddot{\psi}_{\max} / \omega_d^2 & 5.38 & 1.35 & 0.70
 \end{array}
 $$
-**The trade that makes the Geneva a compromise.** More slots means a **lower peak acceleration** — and therefore a higher permissible speed and a heavier permissible payload — and a **shorter dwell**, which is the part of the cycle in which the workpiece is worked on. **The number that makes a four-slot Geneva a fast machine and a bad one is that its dwell fraction is the highest of the family while its peak angular acceleration is three and a half times an eight-slot's**, and the reason a packaging line that needs a long dwell and a gentle index uses a **globoid cam** or a **servo-driven index** is that the Geneva cannot give both.
+**The trade that makes the Geneva a compromise.** More slots means a **lower peak acceleration** — and therefore a higher permissible speed and a heavier permissible payload — and a **shorter dwell**, which is the part of the cycle in which the workpiece is worked on. **The number that makes a four-slot Geneva a fast machine and a bad one is that its dwell fraction is the highest of the family while its peak angular acceleration is seven and a half times an eight-slot's**, and the reason a packaging line that needs a long dwell and a gentle index uses a **globoid cam** or a **servo-driven index** is that the Geneva cannot give both. **The peak acceleration does not occur at the middle of the index, where the velocity is greatest and the acceleration is zero, but at about $13^\circ$ of crank rotation after entry** — and the reason it is largest for the fewest slots is that the slot entry throws the wheel's angular velocity down most steeply there.
 :::
 
 ## Worked cases
@@ -559,16 +559,16 @@ $$
 \omega_{\mathrm{driver}} = \frac{45}{60} = 0.75\ \mathrm{rev / s} = 45\ \mathrm{rev / min}
 \qquad \Rightarrow \qquad \omega_d = 4.712\ \mathrm{rad / s}
 $$
-**The acceleration.** Taking the tabulated coefficient for an eight-slot wheel,
+**The acceleration.** From the motion law, at the point of maximum slope of the velocity curve, about $13^\circ$ of crank rotation after slot entry:
 $$
-\ddot{\psi}_{\max} = 0.42\, \omega_d^2 = 0.42 \times 22.2 = 9.3\ \mathrm{rad / s^2}
+\ddot{\psi}_{\max} = 0.70\, \omega_d^2 = 0.70 \times 22.2 = 15.6\ \mathrm{rad / s^2}
 $$
 **The torque at the table.** The table's own inertia plus eight stations of $12\ \mathrm{kg}$ at a mean radius of $0.5\ \mathrm{m}$:
 $$
 I = 8 \times 12 \times 0.5^2 + I_{\mathrm{table}} = 24 + 9 = 33\ \mathrm{kg \cdot m^2}
-\qquad \Rightarrow \qquad T = 33 \times 9.3 = 307\ \mathrm{N \cdot m}
+\qquad \Rightarrow \qquad T = 33 \times 15.6 = 515\ \mathrm{N \cdot m}
 $$
-**The number that makes the Geneva's torque acceptable and its timing not.** $307\ \mathrm{N \cdot m}$ is a servable figure, but the eight-slot's $0.625$ dwell fraction gives an index time of $0.50\ \mathrm{s}$ against the $0.433\ \mathrm{s}$ available, and **a Geneva's dwell fraction cannot be tuned — it is fixed by the slot count**, which is the difference between a cam and a Geneva. **The four-slot wheel would give the dwell but a peak of $1.48 \times 22.2 = 32.9\ \mathrm{rad / s^2}$ and $1{,}085\ \mathrm{N \cdot m}$, and the reason that is rejected is not the torque but the $12\ \mathrm{kg}$ of loose payload**, which at $0.5\ \mathrm{m}$ radius sees $16.5\ \mathrm{m / s^2}$ — one and a half times $g$ — and walks off its fixture. **The reason the repeatability requirement then becomes easy is that a servo's positioning error is a function of its encoder and not of the mechanism's clearances**, and the reason the cam is retained at all is that a servo holding a vertical table against a side load for $0.9\ \mathrm{s}$ every cycle creeps, and a form-closed cam does not.
+**The number that makes the Geneva's torque acceptable and its timing not.** $515\ \mathrm{N \cdot m}$ is a servable figure, but the eight-slot's $0.625$ dwell fraction gives an index time of $0.50\ \mathrm{s}$ against the $0.433\ \mathrm{s}$ available, and **a Geneva's dwell fraction cannot be tuned — it is fixed by the slot count**, which is the difference between a cam and a Geneva. **The four-slot wheel would give the dwell but a peak of $5.38 \times 22.2 = 119\ \mathrm{rad / s^2}$ and $3{,}930\ \mathrm{N \cdot m}$, and the reason that is rejected is not the torque but the $12\ \mathrm{kg}$ of loose payload**, which at $0.5\ \mathrm{m}$ radius sees $59.7\ \mathrm{m / s^2}$ — six times $g$ — and walks off its fixture. **The reason the repeatability requirement then becomes easy is that a servo's positioning error is a function of its encoder and not of the mechanism's clearances**, and the reason the cam is retained at all is that a servo holding a vertical table against a side load for $0.9\ \mathrm{s}$ every cycle creeps, and a form-closed cam does not.
 **The chosen scheme: a servo-driven globoid (parallel) cam index drive**, whose motion law is set by the ground profile and whose dwell fraction is therefore a free parameter. Setting $45^{\circ}$ of index into $0.433\ \mathrm{s}$ on a **4-5-6-7 polynomial**, whose peak-acceleration coefficient is $5.77$:
 $$
 \ddot{\psi}_{\max} = 5.77 \frac{\Delta \psi}{t^2} = 5.77 \times \frac{0.7854}{0.433^2} = 24.2\ \mathrm{rad / s^2}
