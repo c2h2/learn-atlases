@@ -129,16 +129,6 @@
       ]
     },
     {
-      "year": 1643,
-      "title": "Vacuum, pressure and the barometer",
-      "detail": "Evangelista Torricelli balances a column of mercury against the atmosphere and Blaise Pascal's 1648 Puy-de-Dôme experiment shows the balance failing with height. Pressure becomes a measurable quantity rather than a horror vacui, and hydrostatics acquires its fundamental variable.",
-      "people": [
-        "Evangelista Torricelli",
-        "Blaise Pascal",
-        "Otto von Guericke"
-      ]
-    },
-    {
       "year": 1738,
       "title": "Hydrodynamica",
       "detail": "Daniel Bernoulli publishes Hydrodynamica in Strasbourg, deriving the relation between pressure and speed along a streamtube from a crude conservation-of-vis-viva argument, and his father Johann independently obtains the same result in 1743. The equation is named after the son; the modern form, with the head-loss term, is d'Alembert's and Euler's.",
@@ -146,6 +136,15 @@
         "Daniel Bernoulli",
         "Johann Bernoulli",
         "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1755,
+      "title": "The equations of motion of an ideal fluid",
+      "detail": "Leonhard Euler reads Daniel Bernoulli's vis-viva relation, rejects the idea that pressure and speed trade through a conserved living force, and instead writes Newton's second law for a fluid element in his papers of 1755 and 1757. The result is a set of partial differential equations, the first appearance of the acceleration of a fluid particle as we still write it, and of the theorem on circulation that bears his name. They are exact for an inviscid fluid and they predict zero drag on a body moving through it, which is d'Alembert's paradox of 1752 and it took a century and a half to resolve.",
+      "people": [
+        "Leonhard Euler",
+        "Jean le Rond d'Alembert"
       ]
     },
     {
@@ -166,23 +165,22 @@
       ]
     },
     {
+      "year": 1904,
+      "title": "The boundary layer",
+      "detail": "Ludwig Prandtl reads a three-page paper to the Third International Mathematical Congress in Heidelberg, arguing that a fluid's viscosity, however small, is confined near a wall to a layer whose thickness goes as the inverse square root of the Reynolds number, and that outside it the flow may be treated as inviscid. The paradox of d'Alembert disappears, drag acquires a mechanism, and separation, stall and the design of the airfoil all follow. G. I. Taylor called it the most important idea in twentieth-century fluid mechanics; it took thirty years for the mathematics of the layer to be made rigorous.",
+      "people": [
+        "Ludwig Prandtl",
+        "Theodore von Karman",
+        "Heinrich Blasius"
+      ]
+    },
+    {
       "year": 1932,
       "title": "Turbulent friction and the rough wall",
       "detail": "Johann Nikuradse publishes the sand-grain roughness measurements made at the Kaiser Wilhelm Institute for Flow Research in Gottingen, which reveal the logarithmic law of the wall, the hydraulically smooth and fully rough regimes, and the failure of the smooth-wall law on a fouled surface. Chester Colebrook's 1939 implicit equation and Lewis Ferry Moody's 1944 chart turn it into the design tool every piping engineer uses; the universal law of the wall is only convincingly explained forty years later.",
       "people": [
         "Johann Nikuradse",
         "Chester R. Colebrook",
-        "Lewis Ferry Moody"
-      ]
-    },
-    {
-      "year": 1939,
-      "title": "Turbulent friction and the rough wall",
-      "detail": "Johann Nikuradse publishes the sand-grain roughness measurements made at the Kaiser Wilhelm Institute, which reveal the logarithmic law of the wall and the fully rough regime. Colebrook's 1939 implicit equation and Moody's 1944 chart turn it into the design tool every piping engineer uses, and the universal law of the wall is only fully explained forty years later.",
-      "people": [
-        "Johann Nikuradse",
-        "Gerhard Harries",
-        "Chester Colebrook",
         "Lewis Ferry Moody"
       ]
     },
