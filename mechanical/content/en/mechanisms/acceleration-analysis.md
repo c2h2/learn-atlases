@@ -334,17 +334,19 @@ $$
 
 $$
 \begin{array}{l c c c l}
-\text{Cam law} & v_{\max} k_v & a_{\max} k_a & j & \text{use} \\
-\text{Parabolic} & 2.00 & 4.00 & \infty \text{ at 3 points} & \text{low speed only} \\
-\text{Harmonic} & 1.57 & 4.93 & \infty \text{ at 2 points} & \text{rise of a moderate cam} \\
-\text{Cycloidal} & 2.00 & 6.28 & \infty \text{ at 2 points} & \text{reversals, no dwell error} \\
-\text{4-5-6-7 polynomial} & 1.88 & 5.77 & \text{finite} & \text{high-speed cams} \\
-\text{Modified sine} & 1.76 & 5.19 & \infty \text{ at 2 points} & \text{a good compromise} \\
-\text{Double-dwell cycloidal} & 2.00 & 6.28 & \text{finite at the ends} & \text{indexing}
+\text{Cam law} & k_v & k_a & k_j & \text{use} \\
+\text{Uniform} & 1.000 & 0 & \infty \text{ at 2 points} & \text{never, except in a discussion} \\
+\text{Parabolic} & 2.000 & 4.000 & \infty \text{ at 3 points} & \text{low speed only} \\
+\text{Harmonic} & 1.571 & 4.935 & \infty \text{ at 2 points} & \text{rise of a moderate cam} \\
+\text{Cycloidal} & 2.000 & 6.283 & 39.5 & \text{reversals, no dwell error} \\
+\text{3-4-5 polynomial} & 1.500 & 6.000 & 12.0 \text{ (} \infty \text{ at ends)} & \text{the general-purpose compromise} \\
+\text{4-5-6-7 polynomial} & 2.188 & 7.513 & 52.5 & \text{high-speed cams, dwell-to-dwell} \\
+\text{5-6-7-8-9 polynomial} & 2.461 & 9.372 & 78.8 & \text{where jerk, not acceleration, rules} \\
+\text{Modified sine} & 1.761 & 5.189 & 33.5 & \text{a good compromise, eight segments}
 \end{array}
 $$
 
-**The number that makes the four-five-six-seven polynomial the standard for high-speed cams is that its jerk is finite everywhere at the cost of a twelve per cent higher peak velocity than the modified sine**, and the reason a cam running at three thousand revolutions per minute is cut on the polynomial and a cam running at three hundred is cut on the cycloidal is that the infinite jerk of the latter produces a force step of $m \Delta a$ across one control period of the machine's own dynamics, and at three thousand revolutions that step is $167$ times per second.
+**The number that decides between them is not the peak acceleration but which derivative first goes discontinuous.** The 4-5-6-7 polynomial buys a jerk that is finite everywhere — $k_j = 52.5$, against the cycloidal's $39.5$ and the 3-4-5's infinite steps at the ends — at the cost of a peak acceleration $20\ \%$ above the cycloidal and a peak velocity $9\ \%$ above it. **That trade is right when the follower is spring-closed and lightly loaded, because then the acceleration is what floats it and the jerk is what rings it; and it is wrong when the follower is heavy and the cam is slow, because then a $20\ \%$ acceleration penalty costs more spring force than a jerk step costs fatigue.** The reason a cam running at three thousand revolutions per minute is cut on the polynomial and a cam running at three hundred is cut on the cycloidal is that the infinite jerk of the latter produces a force step of $m \Delta a$ across one control period of the machine's own dynamics, and at three thousand revolutions that step is $167$ times per second.
 
 **The contact force.** A cam's follower is held by a spring, and the force the cam must transmit is
 $$
@@ -383,11 +385,11 @@ $$
 \begin{array}{l l l}
 \text{1. Stiffer spring} & k \to 30\ \mathrm{N / mm} & \omega_{\mathrm{float}} \to 840\ \mathrm{rev / min}, \text{ but the contact stress rises and the cam wears} \\
 \text{2. Lighter follower} & m \to 0.5\ \mathrm{kg} \text{ by rolling-element design} & \omega_{\mathrm{float}} \to 820\ \mathrm{rev / min}, \text{ at the cost of stiffness} \\
-\text{3. Flatter cam law} & 4\text{-}5\text{-}6\text{-}7,\; k_a = 5.77 \text{ against } 6.28 & \omega_{\mathrm{float}} \to 513\ \mathrm{rev / min}, \text{ a gain of only four per cent} \\
+\text{3. Flatter cam law} & \text{modified sine, } k_a = 5.19 \text{ against } 6.28 & \omega_{\mathrm{float}} \to 541\ \mathrm{rev / min}, \text{ a gain of ten per cent} \\
 \text{4. Slower cam, more lobes} & \text{two lobes at half the speed} & \omega_{\mathrm{float}} \text{ unchanged, but the machine meets its rate}
 \end{array}
 $$
-**The reading.** **Option 3 is nearly useless and the reason it is always the first one proposed is that it is the cheapest.** **The cam's peak acceleration coefficient is a property of the motion law and can only be moved by about ten per cent; the float speed goes as $\sqrt{k s_0 / m}$, so mass and spring are the levers that work.** **The number that makes option 4 the right answer is that the machine's requirement is a displacement rate, not a lift per event: splitting $18\ \mathrm{mm}$ into two $9\ \mathrm{mm}$ rises on a two-lobe cam halves the lift and, because $a_{\max} \propto h / \beta^2$ while $\beta$ is unchanged in cam angle, halves the acceleration and doubles the float speed to $984\ \mathrm{rev / min}$ — and the reason that clears the requirement with margin is that the follower mass is untouched.**
+**The reading.** **Option 3 is nearly useless and the reason it is always the first one proposed is that it is the cheapest.** **The cam's peak acceleration coefficient is a property of the motion law and can only be moved by about ten per cent — and note that the four-five-six-seven polynomial, so often recommended for high speed, is worse than the cycloidal on this particular criterion, $k_a = 7.51$ against $6.28$; it is chosen for its finite jerk, not its low acceleration.** The float speed goes as $\sqrt{k s_0 / m}$, so mass and spring are the levers that work. **The number that makes option 4 the right answer is that the machine's requirement is a displacement rate, not a lift per event: splitting $18\ \mathrm{mm}$ into two $9\ \mathrm{mm}$ rises on a two-lobe cam halves the lift and, because $a_{\max} \propto h / \beta^2$ while $\beta$ is unchanged in cam angle, halves the acceleration and doubles the float speed to $984\ \mathrm{rev / min}$ — and the reason that clears the requirement with margin is that the follower mass is untouched.**
 *Sanity.* The reason $\omega_{\mathrm{float}}$ goes as the square root of the spring force is that the demand is $m a \propto \omega^2$ and the supply is a constant, and the reason a cam's maximum speed is quoted in the literature as a "valve float limit" with a scatter of a factor of two between published values is that the loss of contact is gradual, not sudden: the follower begins to leave the profile at one point of the lift long before it leaves at every point.
 :::
 :::
