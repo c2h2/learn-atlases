@@ -78,10 +78,9 @@ which has a pair of roots at $\pm \mathrm{j} \sqrt{a_2}$. The stability boundary
 :::
 
 ::: widget plot
-f: x => 1/(2*x*Math.sqrt(1-x*x))
+f: 1/(2*x*sqrt(1-x*x))
 x: 0.15, 0.95
 y: 0.95, 3.0
-n: 300
 labels: Mr
 caption: Resonant peak of the closed-loop magnitude against damping ratio for the standard second-order loop. The minimum of 1.0 occurs at a damping ratio of 0.707 and the peak rises steeply on both sides, to 2.5 at a damping ratio of 0.2 and to 1.3 at 0.9. The peak is the height of the closed-loop bump, it is directly the amplification a disturbance at that frequency receives, and it is measurable from a Nyquist plot as the reciprocal of the shortest distance from the critical point to the curve, which is why it is quoted as a design target in preference to a damping ratio the designer never measured.
 :::

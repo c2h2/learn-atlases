@@ -239,10 +239,9 @@ The skin's resonance falls from $180$ to $163\ \mathrm{Hz}$ and a second peak ap
 :::
 
 ::: widget plot
-f: 1/(1+Math.abs((0.1 - x*x)/((1.1 - x*x)*(0.1 - x*x) - 0.01)))
+f: 1/(1+abs((0.1 - x*x)/((1.1 - x*x)*(0.1 - x*x) - 0.01)))
 x: 0.05, 2.5
 y: 0, 1
-n: 600
 labels: 1/(1+|X1|/static)
 caption: "Driving-point response of a two-degree-of-freedom system: a primary oscillator with a light attachment of mass ratio 0.10 tuned to it. The plot shows 1/(1+|X1|) so that the two resonances appear as minima and the antiresonance as the maximum of unity. The single resonance of the primary splits into a doublet, and between the two peaks the primary mass is held exactly still at its own natural frequency by the reaction of the attachment."
 :::

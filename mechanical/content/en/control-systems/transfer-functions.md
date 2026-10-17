@@ -61,10 +61,9 @@ A transfer function all of whose zeros are in the left half-plane is **minimum p
 :::
 
 ::: widget plot
-f: x => 2+3*Math.exp(-x)-5*Math.exp(-x/2)
+f: 2+3*exp(-x)-5*exp(-x/2)
 x: 0, 10
 y: -0.15, 2.3
-n: 400
 labels: y(t)
 caption: Step response of the non-minimum-phase system (2 - s) / ((1 + s)(1 + 2s)). The output falls to minus four per cent of its final value before turning, because the right-half-plane zero at s = 2 contributes an initial slope of minus one half; the area under the initial undershoot is exactly the integral of the zero's contribution, and no linear controller can remove it, only move it.
 :::

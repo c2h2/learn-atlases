@@ -80,10 +80,9 @@ The counting is what makes the difference between a structure and a room. For a 
 :::
 
 ::: widget plot
-f: x => (Math.cosh(1.8751*x)-Math.cos(1.8751*x)-1.3622*(Math.sinh(1.8751*x)-Math.sin(1.8751*x)))/0.5993
+f: (cosh(1.8751*x)-cos(1.8751*x)-1.3622*(sinh(1.8751*x)-sin(1.8751*x)))/0.5993
 x: 0, 1
 y: -0.1, 1.35
-n: 300
 labels: phi(x/L) / phi(L)
 caption: The first bending mode of a uniform cantilever, from the exact expression with beta L = 1.8751. The shape is not the static deflection curve — it rises more steeply near the root and its maximum lies at 0.78 of the span rather than at the tip — which is why Rayleigh's method with the static curve overestimates the first frequency by one and a half per cent and why the error grows for higher modes.
 :::

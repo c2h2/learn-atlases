@@ -82,10 +82,9 @@ The **impedance** or force-voltage analogy puts force with voltage and velocity 
 :::
 
 ::: widget plot
-f: x => (1/(0.00002*x+0.05/x))/500
+f: (1/(0.00002*x+0.05/x))/500
 x: 1, 150
 y: 0, 1.05
-n: 400
 labels: alpha_L / alpha_max
 caption: Load acceleration against gear ratio for a motor of 2e-5 kg m squared inertia and one newton-metre of torque driving a 0.05 kg m squared load. The curve peaks at the ratio 50, which is the square root of the inertia ratio, and falls off as 1/N on either side — a factor of two loss of acceleration for a factor of four error in the gear ratio, in either direction.
 :::

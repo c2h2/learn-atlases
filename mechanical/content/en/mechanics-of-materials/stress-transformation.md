@@ -136,7 +136,7 @@ $$
 The circle drawn through $\sigma_1$ and $\sigma_2$ is only one of three. The **absolute maximum shear stress** is half the difference of the largest and smallest principal stresses of all three, and for a plane-stress state with $\sigma_3 = 0$ that means
 $$
 \tau_{\text{abs}} = \begin{cases}
-\dfrac{\sigma_1 - \sigma_2}{2} & \sigma_1, \sigma_2 \text{ of opposite sign} \[6pt]
+\dfrac{\sigma_1 - \sigma_2}{2} & \sigma_1, \sigma_2 \text{ of opposite sign} \\[6pt]
 \dfrac{\sigma_{\max}}{2} & \sigma_1, \sigma_2 \text{ of the same sign}
 \end{cases}
 $$

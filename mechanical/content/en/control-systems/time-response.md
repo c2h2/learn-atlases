@@ -95,10 +95,9 @@ finite only if $s L$ tends to a non-zero constant, which needs at least one inte
 :::
 
 ::: widget plot
-f: x => Math.exp(-Math.PI*z/Math.sqrt(1-z*z))
+f: exp(-pi*x/sqrt(1-x*x))
 x: 0.2, 0.95
 y: 0, 0.55
-n: 300
 labels: Mp / 1
 caption: Percentage overshoot of a second-order system against damping ratio. The curve is steep at low damping and flat above 0.7, which is why overshoot is a good measuring instrument for zeta below 0.5 and a poor one above 0.8 — a five per cent error in reading a five per cent overshoot near zeta of 0.7 is a fifteen per cent error in the damping ratio, and near zeta of 0.9 the overshoot is too small to measure against noise at all.
 :::

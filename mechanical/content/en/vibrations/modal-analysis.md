@@ -66,10 +66,9 @@ By the Cauchy–Schwarz inequality this lies between $0$ and $1$, with the upper
 :::
 
 ::: widget plot
-f: r => 1/Math.sqrt((1-r*r)*(1-r*r)+0.0016*r*r) + 0.4/Math.sqrt((4-r*r)*(4-r*r)+0.0036*r*r)
+f: 1/sqrt((1-x*x)*(1-x*x)+0.0016*x*x) + 0.4/sqrt((4-x*x)*(4-x*x)+0.0036*x*x)
 x: 0.05, 2.4
 y: 0, 26
-n: 600
 labels: |X/F| (arbitrary)
 caption: A synthesized driving-point frequency response function built from two modes with residues of 1 and 0.4 and damping of one and three per cent. The second peak is at twice the first mode's frequency and is much smaller because the second mode has a node close to the drive point — reducing its residue without changing its frequency. A modal survey driven at the wrong point finds a mode that is plainly there in the roving-accelerometer record and entirely absent from the input.
 :::
@@ -287,15 +286,15 @@ $$
 ::: exercise Model updating {level=3}
 A model predicts $f_1 = 118\ \\mathrm{Hz}$ and the test gives $108.7\ \\mathrm{Hz}$; the mode shape is dominated by **root rotation** rather than by beam bending. Estimate the rotational stiffness of the clamp that explains the difference.
 ::: solution
-Treat the beam as a single degree of freedom with a rotational spring $K_\\theta$ at the root. The frequency ratio gives
+Treat the beam as a single degree of freedom with a rotational spring $K_{\\theta}$ at the root. The frequency ratio gives
 $$
 \\left( \\frac{108.7}{118} \\right)^{2} = 0.848
 $$
-as the ratio of the effective stiffnesses. Writing the cantilever's own tip rotational compliance as $\\theta / M = L / EI$ and adding the clamp's $1 / K_\\theta$,
+as the ratio of the effective stiffnesses. Writing the cantilever's own tip rotational compliance as $\\theta / M = L / EI$ and adding the clamp's $1 / K_{\\theta}$,
 $$
-\\frac{k_{\\text{clamped}}}{k_{\\text{rigid}}} = \\frac{1}{1 + EI / \\left( K_\\theta L \\right)} = 0.848
+\\frac{k_{\\text{clamped}}}{k_{\\text{rigid}}} = \\frac{1}{1 + EI / \\left( K_{\\theta} L \\right)} = 0.848
 \\quad\\Longrightarrow\\quad
-K_\\theta = \\frac{EI}{L} \\times \\frac{0.848}{1 - 0.848} = 60 \\times 5.6 = 340\ \\mathrm{N\, m / rad} .
+K_{\\theta} = \\frac{EI}{L} \\times \\frac{0.848}{1 - 0.848} = 60 \\times 5.6 = 340\ \\mathrm{N\, m / rad} .
 $$
 *Sanity.* A clamp rotational stiffness of $340\ \\mathrm{N\, m / rad}$ is a moderately tight bolted joint, not a rigid built-in condition, and it is entirely typical of a specimen in a vice. The lesson generalises into the standard advice on **model updating**: update the parameters you can point at. A single frequency tells you nothing about which stiffness is wrong; a frequency **and** a shape tell you which deformation the error is in, and updating the joint that resists that deformation is a defensible model change, whereas scaling every element's modulus by a single factor to match the frequencies is curve-fitting that will not survive a change of design.
 :::

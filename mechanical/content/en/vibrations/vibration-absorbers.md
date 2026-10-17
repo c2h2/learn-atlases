@@ -87,10 +87,9 @@ In every case the design question is the same two questions: what is the absorbe
 :::
 
 ::: widget plot
-f: x => Math.sqrt(1+2/x)
+f: sqrt(1+2/x)
 x: 0.01, 0.40
 y: 2.5, 15
-n: 300
 labels: peak amplification sqrt(1 + 2/mu)
 caption: The peak amplification of an optimally tuned and damped vibration absorber as a function of its mass ratio. The curve is hyperbolic at small mass ratio, which is why absorbers are rarely made lighter than a few per cent of the primary mass: going from one to two per cent buys a factor of two, and going from twenty to forty per cent buys only a fifth.
 :::
@@ -148,7 +147,7 @@ A $10\ \mathrm{MN}$ wind-induced lateral force acts at the top of a tower whose 
 ::: solution
 $$
 \begin{array}{c|ccccc}
-\mu & 0.01 & 0.05 & 0.10 & 0.20 & 0.25 \ \hline
+\mu & 0.01 & 0.05 & 0.10 & 0.20 & 0.25 \\ \hline
 m_2 \left( \mathrm{t} \right) & 20 & 100 & 200 & 400 & 500 \\
 f_{\text{opt}} & 0.990 & 0.952 & 0.909 & 0.833 & 0.800 \\
 \zeta_{\text{opt}} & 0.060 & 0.127 & 0.168 & 0.208 & 0.219 \\

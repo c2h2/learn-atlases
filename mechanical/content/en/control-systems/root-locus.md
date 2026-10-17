@@ -67,10 +67,9 @@ The design procedure is the same in every case: choose the desired dominant-pole
 :::
 
 ::: widget plot
-f: x => Math.sqrt(2-(x+2)*(x+2))
+f: sqrt(2-(x+2)*(x+2))
 x: -3.414, -0.586
 y: 0, 1.5
-n: 400
 labels: Im(s)
 caption: The complex part of the root locus of K(s + 2) / (s(s + 1)) is an exact circle centred on the zero at minus two with radius the square root of two, and its rightmost point at minus 0.586 is the breakaway computed from dK/ds = 0. Adding a zero to a plant with two poles bends the locus into a circle that runs to the left of the unmodified locus, which is the geometric reason a derivative term improves damping: the branches that would have gone vertical now curve away toward the zero.
 :::
@@ -272,10 +271,10 @@ $\left( 0 - 1 - 5 \right) / 3 = - 2$.
 :::
 :::
 
-::: exercise Real axis {level=1 check="odd"}
-On the standard $180^{\circ}$ locus, the real axis belongs to the locus where the number of open-loop poles and zeros to the right is what?
+::: exercise Real axis {level=1 check="1"}
+For the locus of $K / \left[ s \left( s + 1 \right)\left( s + 5 \right) \right]$, how many separate intervals of the real axis belong to the locus?
 ::: solution
-Odd.
+Two: $\left( - 1 , 0 \right)$, where one pole lies to the right, and $\left( - \infty , - 5 \right)$, where three do. The rule is an odd count of real poles and zeros to the right, because each contributes $180^{\circ}$ and only an odd number adds to $180^{\circ}$ modulo $360^{\circ}$. Complex pairs contribute nothing since their angles cancel in pairs.
 :::
 :::
 
