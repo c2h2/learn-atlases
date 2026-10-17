@@ -22,10 +22,10 @@ $$
 
 $$
 \begin{pmatrix} - b \sin \theta_3 & c \sin \theta_4 \\ b \cos \theta_3 & - c \cos \theta_4 \end{pmatrix}
-\begin{pmatrix} \alpha_3 \ \alpha_4 \end{pmatrix} =
-\begin{pmatrix} A_x \ A_y \end{pmatrix}, \qquad
-\begin{pmatrix} A_x \ A_y \end{pmatrix} =
-\begin{pmatrix} a \omega_2^2 \sin \theta_2 + b \omega_3^2 \sin \theta_3 - c \omega_4^2 \sin \theta_4 \ - a \omega_2^2 \cos \theta_2 - b \omega_3^2 \cos \theta_3 + c \omega_4^2 \cos \theta_4 \end{pmatrix}
+\begin{pmatrix} \alpha_3 \\ \alpha_4 \end{pmatrix} =
+\begin{pmatrix} A_x \\ A_y \end{pmatrix}, \qquad
+\begin{pmatrix} A_x \\ A_y \end{pmatrix} =
+\begin{pmatrix} a \omega_2^2 \sin \theta_2 + b \omega_3^2 \sin \theta_3 - c \omega_4^2 \sin \theta_4 \\ - a \omega_2^2 \cos \theta_2 - b \omega_3^2 \cos \theta_3 + c \omega_4^2 \cos \theta_4 \end{pmatrix}
 $$
 
 **and the reading is that a mechanism which is singular in velocity is singular in acceleration too, and its angular accelerations do not merely grow, they blow up as $1 / \sin \mu$ while the angular velocities stay finite.** **The number that makes that a machine-shop fact is that a four-bar at $\mu = 20^\circ$ has angular accelerations $2.9$ times their nominal values and a toggle at $\mu = 2^\circ$ has them twenty-nine times — and the reason a linkage that jams at a toggle does not jam from the load but from the inertia of its own coupler is that the coupler's angular acceleration is what the load is measured against.**

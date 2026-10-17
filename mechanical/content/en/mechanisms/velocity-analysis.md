@@ -28,8 +28,8 @@ a \omega_2 \cos \theta_2 + b \omega_3 \cos \theta_3 - c \omega_4 \cos \theta_4 &
 \end{aligned}
 \qquad
 \begin{pmatrix} - b \sin \theta_3 & c \sin \theta_4 \\ b \cos \theta_3 & - c \cos \theta_4 \end{pmatrix}
-\begin{pmatrix} \omega_3 \ \omega_4 \end{pmatrix} =
-\begin{pmatrix} a \omega_2 \sin \theta_2 \ - a \omega_2 \cos \theta_2 \end{pmatrix}
+\begin{pmatrix} \omega_3 \\ \omega_4 \end{pmatrix} =
+\begin{pmatrix} a \omega_2 \sin \theta_2 \\ - a \omega_2 \cos \theta_2 \end{pmatrix}
 $$
 
 **The determinant of that matrix is the same object as the transmission-angle sine.** Expanding:

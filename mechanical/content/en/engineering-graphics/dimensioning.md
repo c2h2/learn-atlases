@@ -12,10 +12,10 @@ The arithmetic of dimensioning is the arithmetic of tolerance accumulation, and 
 $$
 \begin{array}{l l l l}
 \text{Kind} & \text{Notation} & \text{Means} & \text{Checked?} \\
-\text{Limiting} & 40\ \left( \begin{smallmatrix} + 0.1 \ - 0.0 \end{smallmatrix} \right) & \text{a two-sided tolerance} & \text{yes} \\
+\text{Limiting} & 40\ \left( \begin{smallmatrix} + 0.1 \\ - 0.0 \end{smallmatrix} \right) & \text{a two-sided tolerance} & \text{yes} \\
 \text{Bilateral} & 40\ \pm\ 0.1 & \text{symmetric} & \text{yes} \\
 \text{Unilateral} & 40\ {}^{+ 0.2}_{+ 0.1} & \text{asymmetric, one-sided} & \text{yes} \\
-\text{Limit} & \begin{smallmatrix} 40.2 \ 39.8 \end{smallmatrix} & \text{max over min, no nominal} & \text{yes} \\
+\text{Limit} & \begin{smallmatrix} 40.2 \\ 39.8 \end{smallmatrix} & \text{max over min, no nominal} & \text{yes} \\
 \text{Basic} & \boxed{40} & \text{theoretically exact; the tolerance is in a feature-control frame} & \text{yes, by GDT} \\
 \text{Reference} & ( 40 ) & \text{information only, from a CAD measurement} & \textbf{no} \\
 \text{Not-to-scale} & \sim 40\ \text{or } 40\ [2] & \text{approximate; do not scale} & \text{no} \\

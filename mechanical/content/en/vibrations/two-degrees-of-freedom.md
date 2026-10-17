@@ -122,8 +122,8 @@ $$
 \omega_1 = 20\ \mathrm{rad / s} \left( 3.18\ \mathrm{Hz} \right), \quad
 \omega_2 = 34.64\ \mathrm{rad / s} \left( 5.51\ \mathrm{Hz} \right),
 \qquad
-\boldsymbol{\phi}_1 = \begin{pmatrix} 1 \ 1 \end{pmatrix}, \quad
-\boldsymbol{\phi}_2 = \begin{pmatrix} 1 \ - 1 \end{pmatrix} .
+\boldsymbol{\phi}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}, \quad
+\boldsymbol{\phi}_2 = \begin{pmatrix} 1 \\ - 1 \end{pmatrix} .
 $$
 *Check.* $\omega_1^{2} = k / m$ and $\omega_2^{2} = 3 k / m$ for this symmetric system, and $3 \times 800 / 2 = 1200$ $\checkmark$
 
@@ -202,7 +202,7 @@ A shaker test on a bracket gives damping ratios of $1.2$ per cent at the first m
 The damping matrix is not proportional, so the modes are not exactly orthogonal to it and the equations do not decouple. Writing $\mathbf{C} = \alpha \mathbf{M} + \beta \mathbf{K}$ and fitting the two measured values,
 $$
 \zeta_r = \frac{\alpha}{2 \omega_r} + \frac{\beta \omega_r}{2}, \qquad
-\begin{cases} 0.012 = \alpha / \left( 2 \omega_1 \right) + \beta \omega_1 / 2 \ 0.038 = \alpha / \left( 2 \omega_3 \right) + \beta \omega_3 / 2 \end{cases}
+\begin{cases} 0.012 = \alpha / \left( 2 \omega_1 \right) + \beta \omega_1 / 2 \\ 0.038 = \alpha / \left( 2 \omega_3 \right) + \beta \omega_3 / 2 \end{cases}
 $$
 with $\omega_1 = 2 \pi \times 60$ and $\omega_3 = 2 \pi \times 240$ gives
 $$

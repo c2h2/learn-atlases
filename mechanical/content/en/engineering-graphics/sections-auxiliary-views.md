@@ -173,8 +173,8 @@ $$
 $$
 \begin{array}{l l}
 2{,}800 & \text{overall, between the two breaks and dimensioned as if unbroken} \\
-\phi 60\ \mathrm{h6}\ \left( \begin{smallmatrix} - 0.019 \ 0 \end{smallmatrix} \right) & \text{the body} \\
-\phi 55\ \mathrm{g6}\ \left( \begin{smallmatrix} - 0.009 \ - 0.029 \end{smallmatrix} \right) & \text{each journal, with a } 1 : 10 \text{ taper at the shoulder} \\
+\phi 60\ \mathrm{h6}\ \left( \begin{smallmatrix} - 0.019 \\ 0 \end{smallmatrix} \right) & \text{the body} \\
+\phi 55\ \mathrm{g6}\ \left( \begin{smallmatrix} - 0.009 \\ - 0.029 \end{smallmatrix} \right) & \text{each journal, with a } 1 : 10 \text{ taper at the shoulder} \\
 18\ \mathrm{N}9 \times 70\ \mathrm{h}11 \text{ keyway} & 120\ \text{from the left face, to the keyway's centre} \\
 2 \times 45\ {}^{\circ} \times 1.5 & \text{chamfers} \\
 \mathrm{Ra}\ 0.8\ \text{on the journals},\ \mathrm{Ra}\ 1.6\ \text{on the body} & \text{and the grind relief groove } R 0.5

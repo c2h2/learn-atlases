@@ -61,7 +61,7 @@ $$
 At the built-in end $\phi = \phi' = 0$, and at the free end the bending moment and shear vanish, $\phi'' = \phi''' = 0$. The first two give $A = - C$ and $B = - D$, and the last two give
 $$
 \begin{pmatrix} \cosh \beta L + \cos \beta L & \sinh \beta L + \sin \beta L \\ \sinh \beta L - \sin \beta L & \cosh \beta L - \cos \beta L \end{pmatrix}
-\begin{pmatrix} A \ B \end{pmatrix} = \mathbf{0} .
+\begin{pmatrix} A \\ B \end{pmatrix} = \mathbf{0} .
 $$
 Setting the determinant to zero and using $\cosh^{2} - \sinh^{2} = 1$ and $\cos^{2} + \sin^{2} = 1$ collapses everything to
 $$

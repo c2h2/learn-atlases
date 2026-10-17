@@ -27,20 +27,20 @@ Write the state model of a DC motor position axis with an inner current loop, $J
 ::: solution
 **Physical states** $x = \left[ \theta , \omega \right]^{T}$ with $K / J = 800\ \mathrm{rad\, s^{- 2} / A}$ and $b / J = 0.1\ \mathrm{s^{- 1}}$:
 $$
-\dot{x} = \begin{bmatrix} 0 & 1 \\ 0 & - 0.1 \end{bmatrix} x + \begin{bmatrix} 0 \ 800 \end{bmatrix} i,
+\dot{x} = \begin{bmatrix} 0 & 1 \\ 0 & - 0.1 \end{bmatrix} x + \begin{bmatrix} 0 \\ 800 \end{bmatrix} i,
 \qquad y = \begin{bmatrix} 1 & 0 \end{bmatrix} x .
 $$
 **Controllable canonical form**, reading the transfer function $G = 800 / \left( s^{2} + 0.1 s \right)$ directly:
 $$
 A_c = \begin{bmatrix} 0 & 1 \\ 0 & - 0.1 \end{bmatrix}, \quad
-B_c = \begin{bmatrix} 0 \ 1 \end{bmatrix}, \quad
+B_c = \begin{bmatrix} 0 \\ 1 \end{bmatrix}, \quad
 C_c = \begin{bmatrix} 0 & 800 \end{bmatrix},
 $$
 which is the same $A$ because the physical states happened to be the phase variables.
 **Modal form.** The eigenvalues are $0$ and $- 0.1$; with $T$ the modal matrix,
 $$
 A_\Lambda = \begin{bmatrix} 0 & 0 \\ 0 & - 0.1 \end{bmatrix}, \quad
-B_\Lambda = \begin{bmatrix} - 8000 \ 8000 \end{bmatrix}, \quad
+B_\Lambda = \begin{bmatrix} - 8000 \\ 8000 \end{bmatrix}, \quad
 C_\Lambda = \begin{bmatrix} 1 & 1 \end{bmatrix} .
 $$
 The modal $B$ is the useful one: the two entries have **equal magnitude**, which says the integrator mode and the friction mode are equally controllable, and the modal $C$ says both are equally observable. Had the friction been zero, the two eigenvalues would have coalesced at the origin and the modal form would not exist — a defective matrix, a repeated pole with one eigenvector, and the reason a frictionless motor's model is best left in the physical coordinates.
@@ -58,7 +58,7 @@ The **controllability matrix** and the **observability matrix** are
 $$
 \mathcal{C} = \begin{bmatrix} B & A B & \cdots & A^{n - 1} B \end{bmatrix} \in \mathbb{R}^{n \times n m},
 \qquad
-\mathcal{O} = \begin{bmatrix} C \ C A \ \vdots \ C A^{n - 1} \end{bmatrix} \in \mathbb{R}^{n p \times n} .
+\mathcal{O} = \begin{bmatrix} C \\ C A \\ \vdots \\ C A^{n - 1} \end{bmatrix} \in \mathbb{R}^{n p \times n} .
 $$
 The system is controllable when $\operatorname{rank} \mathcal{C} = n$ and observable when $\operatorname{rank} \mathcal{O} = n$. Equivalently, the **Popov-Belevitch-Hautus** tests: uncontrollable if and only if some left eigenvector $w$ of $A$ satisfies $w^{H} B = 0$, and unobservable if and only if some right eigenvector $v$ satisfies $C v = 0$. A mode that is both uncontrollable and unobservable is hidden from the design entirely and appears in the closed loop whether the designer likes it or not; a mode that is uncontrollable but observable is stable and irrelevant; a mode that is **controllable but unobservable** is the dangerous one, because the observer will estimate it wrongly and the controller will act on the error.
 :::
@@ -120,7 +120,7 @@ K = \begin{bmatrix} 0 & \cdots & 0 & 1 \end{bmatrix} \mathcal{C}^{- 1} \alpha_d 
 \qquad
 \alpha_d (s ) = \prod_i \left( s - p_i \right) .
 $$
-For the double integrator $A = \left[ \begin{smallmatrix} 0 & 1 \\ 0 & 0 \end{smallmatrix} \right]$, $B = \left[ \begin{smallmatrix} 0 \ 1 \end{smallmatrix} \right]$ this reduces to the textbook result $K = \left[ \omega_n^{2} , 2 \zeta \omega_n \right]$.
+For the double integrator $A = \left[ \begin{smallmatrix} 0 & 1 \\ 0 & 0 \end{smallmatrix} \right]$, $B = \left[ \begin{smallmatrix} 0 \\ 1 \end{smallmatrix} \right]$ this reduces to the textbook result $K = \left[ \omega_n^{2} , 2 \zeta \omega_n \right]$.
 The **full-order observer** propagates a model of the plant and corrects it by the output error,
 $$
 \dot{\hat{x}} = A \hat{x} + B u + L \left( y - C \hat{x} \right),
@@ -137,9 +137,9 @@ $$
 $$
 so in the coordinates $\left[ x , e \right]$ the system matrix is **block triangular**,
 $$
-\begin{bmatrix} \dot{x} \ \dot{e} \end{bmatrix}
+\begin{bmatrix} \dot{x} \\ \dot{e} \end{bmatrix}
 = \begin{bmatrix} A - B K & B K \\ 0 & A - L C \end{bmatrix}
-\begin{bmatrix} x \ e \end{bmatrix} .
+\begin{bmatrix} x \\ e \end{bmatrix} .
 $$
 The eigenvalues of a block-triangular matrix are the union of the diagonal blocks' eigenvalues, and the off-diagonal $B K$ affects the **modes' shapes** and the transient weighting but not the poles. $\checkmark$
 **What the principle does not say.** It says nothing about the **transient response**, and the off-diagonal block is exactly where the trouble lives: the closed-loop transfer function from $r$ to $y$ is not the transfer function of the state-feedback design, because the estimator's dynamics appear in it. Written out, the controller is a dynamic compensator
@@ -177,7 +177,7 @@ A tank level is measured, but the **inflow** — the disturbance that matters �
 ::: solution
 **Model.** With $h$ the level, $q_{in}$ the unknown inflow and $u$ the measured outflow, $A \dot{h} = q_{in} - u$, so with $x = \left[ h , q_{in} \right]^{T}$ and $q_{in}$ modelled as a constant,
 $$
-\dot{x} = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} x + \begin{bmatrix} - 1 / A \ 0 \end{bmatrix} u,
+\dot{x} = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} x + \begin{bmatrix} - 1 / A \\ 0 \end{bmatrix} u,
 \qquad y = \begin{bmatrix} 1 & 0 \end{bmatrix} x .
 $$
 **Observability.** $\mathcal{O} = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ — full rank. The inflow is observable because it shows up as the **slope** of the level, which is exactly what an integrator-based estimator extracts.
@@ -283,7 +283,7 @@ Write the controllable canonical form of $G = \left( 3 s + 5 \right) / \left( s^
 ::: solution
 $$
 A = \begin{bmatrix} 0 & 1 \\ - 7 & - 2 \end{bmatrix}, \quad
-B = \begin{bmatrix} 0 \ 1 \end{bmatrix}, \quad
+B = \begin{bmatrix} 0 \\ 1 \end{bmatrix}, \quad
 C = \begin{bmatrix} 5 & 3 \end{bmatrix}, \quad D = 0 .
 $$
 *Sanity.* The last row of $A$ is the negative of the denominator's coefficients and $C$ is the numerator read in descending powers, which is the whole construction; the check is $C \left( sI - A \right)^{- 1} B = \left( 3 s + 5 \right) / \left( s^{2} + 2 s + 7 \right)$, and a designer who has done the multiplication once never again doubts the recipe.
@@ -332,9 +332,9 @@ A first-order plant $\dot{x} = - x + 2 u$, $y = x$, is to be controlled by state
 ::: solution
 **Augment.** With $\dot{z} = r - x$ and $u = - k_1 x - k_2 z$,
 $$
-\begin{bmatrix} \dot{x} \ \dot{z} \end{bmatrix}
+\begin{bmatrix} \dot{x} \\ \dot{z} \end{bmatrix}
 = \begin{bmatrix} - 1 - 2 k_1 & - 2 k_2 \\ - 1 & 0 \end{bmatrix}
-\begin{bmatrix} x \ z \end{bmatrix} + \begin{bmatrix} 0 \ 1 \end{bmatrix} r ,
+\begin{bmatrix} x \\ z \end{bmatrix} + \begin{bmatrix} 0 \\ 1 \end{bmatrix} r ,
 $$
 whose characteristic polynomial is $s^{2} + \left( 1 + 2 k_1 \right) s + 2 k_2$. Matching $s^{2} + 6 s + 18$ gives
 $$
