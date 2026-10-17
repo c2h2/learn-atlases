@@ -7,9 +7,22 @@
   "order": 60,
   "tagline": "Properties of pure substances, energy balances for closed systems and control volumes, the second law, entropy and exergy, power cycles, mixtures and combustion",
   "summary": "Thermodynamics governs every engine, power station, refrigerator and compressor. The course develops the properties of pure substances and ideal gases, energy balances on closed systems and control volumes, the second law, entropy and exergy, and applies them to gas and vapour power cycles, ideal-gas mixtures and combustion.",
-  "overview": [],
+  "overview": [
+    "Thermodynamics is an accounting discipline. It opens with one law that says energy is conserved and a second that says it cannot all be used, and it spends the rest of the subject being exact about the difference between the two — first by learning what a quantity of matter can store, then by balancing what crosses a boundary, then by charging for what is destroyed on the way.",
+    "The course is built around the two things that make the subject hard for beginners: the fact that the properties you need are almost never available from a formula, so they are looked up in a table and the skill is classification and not algebra; and the fact that the second law is not a second book-keeping rule but a statement about the **quality** of energy, which turns out to be the number that decides what a power plant, a refrigerator and a fuel cell can each be worth.",
+    "Everything is worked on real working fluids at real plant conditions — steam at 25 MPa and 600 C, carbon dioxide at 10 MPa, refrigerants near their critical point — because the shortcuts that are safe in the textbook are unsafe exactly where the interesting machines operate. The gas and vapour power cycles are then derived, compared and discounted, and the course closes on mixtures and combustion, where the composition changes and the accounting has to follow it.",
+    "Calculus is used but not relied on: partial derivatives appear in the derivation of the property relations and nowhere else, and every derived result is evaluated numerically on a real substance so that the reader can see what the approximation cost."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Choose a system boundary and a sign convention, and write a closed-system or control-volume energy balance that accounts for every crossing",
+    "Classify the state of a pure substance, read the saturation, superheated and compressed-liquid tables, and decide when the ideal-gas model is admissible from the reduced state and the compressibility factor",
+    "Compute boundary, shaft, spring and electrical work for the standard quasi-equilibrium processes, and evaluate the polytropic approximation against a real measured curve",
+    "Apply conservation of mass and energy to nozzles, throttling devices, turbines, compressors, heat exchangers and unsteady filling and emptying, and justify every term retained or dropped",
+    "Apply the Kelvin–Planck and Clausius statements, the Carnot limit and the Clausius inequality, and compute entropy change and entropy generation for real processes",
+    "Compute reversible work, irreversibility, exergy and second-law efficiency for closed systems and control volumes, and locate where a machine destroys the most work",
+    "Analyse the Otto, Diesel, Brayton, Rankine and combined cycles with their real-component corrections, and evaluate gas mixtures and combustion stoichiometry, enthalpy of formation and adiabatic flame temperature"
+  ],
   "chapters": [
     {
       "slug": "basic-concepts",
@@ -82,8 +95,82 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1824,
+      "title": "Réflexions sur la puissance motrice du feu",
+      "detail": "Sadi Carnot analysed a fixed quantity of air confined in a cylinder with a movable piston and asked only how much work it could give — an idealised closed system and a reversible cycle, invented before the concept of heat as energy existed. The book was unread for fifteen years.",
+      "people": "Sadi Carnot"
+    },
+    {
+      "year": 1843,
+      "title": "The mechanical equivalent of heat",
+      "detail": "Joule's paddle-wheel measurement gave 818.6 J/cal against today's 4186, and thirty-five years of repetition established that work and heat are equivalent in amount and not in kind. Kelvin read the result and at once saw that it destroyed the caloric theory.",
+      "people": "James Prescott Joule"
+    },
+    {
+      "year": 1850,
+      "title": "Two statements of the second law",
+      "detail": "Clausius stated that heat does not of itself pass from a colder to a hotter body; Kelvin, reading Joule's paper, stated the impossibility of extracting work from a cycle whose only effect is the cooling of a reservoir. The two were shown equivalent within a decade and are the whole content of the second law.",
+      "people": "Rudolf Clausius, William Thomson (Lord Kelvin)"
+    },
+    {
+      "year": 1873,
+      "title": "The surface and the equation of state",
+      "detail": "Gibbs gave a substance's properties a geometric representation and with it the phase rule and the criterion of phase equilibrium; van der Waals's equation of state reproduced a critical point and a two-phase region from a molecular model for the first time, and the dome became a drawn object.",
+      "people": "Josiah Willard Gibbs, Johannes Diderik van der Waals"
+    },
+    {
+      "year": 1897,
+      "title": "The property table becomes an instrument",
+      "detail": "Carrier's psychrometric chart and the first engineering steam tables turned Regnault's scattered measurements into a usable tool, and established that the working method of thermodynamics is to look a property up and to know which region you are in.",
+      "people": "Willis Carrier"
+    },
+    {
+      "year": 1997,
+      "title": "IAPWS-95 and IF97",
+      "detail": "The International Association for the Properties of Water and Steam issued a fundamental equation of state accurate to 0.025 % in specific volume and an industrial formulation for computation, which are the basis of every power-plant design and performance test in the world.",
+      "people": "IAPWS Task Group"
+    }
+  ],
+  "references": [
+    {
+      "title": "Thermodynamics: An Engineering Approach",
+      "author": "Yunus A. Cengel and Michael A. Boles",
+      "year": 2019,
+      "url": ""
+    },
+    {
+      "title": "Fundamentals of Engineering Thermodynamics",
+      "author": "M. J. Moran, H. N. Shapiro, D. D. Boettner and M. B. Bailey",
+      "year": 2018,
+      "url": ""
+    },
+    {
+      "title": "IAPWS-IF97: Revised Release on the Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam",
+      "author": "IAPWS",
+      "year": 2007,
+      "url": "http://www.iapws.org/relguide/IF97-Rev.html"
+    },
+    {
+      "title": "Properties of Gases and Liquids",
+      "author": "Bruce E. Poling, John M. Prausnitz and John P. O'Connell",
+      "year": 2001,
+      "url": ""
+    },
+    {
+      "title": "Refrigeration and Air Conditioning",
+      "author": "C. P. Arora",
+      "year": 2017,
+      "url": ""
+    },
+    {
+      "title": "NIST Chemistry WebBook: thermophysical properties of fluid systems",
+      "author": "NIST",
+      "year": 2023,
+      "url": "https://webbook.nist.gov/chemistry/fluid/"
+    }
+  ],
   "next": [
     "heat-transfer",
     "propulsion",
