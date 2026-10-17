@@ -303,7 +303,7 @@ $$
 — a **$36\ \%$** penalty — and the $64\ \mathrm{kJ / kg}$ of difference is thrown away as aftercooler heat at $40\ {}^{\circ}\mathrm{C}$, a temperature at which its exergy content is $1 - 298 / 313 = 5\ \%$.
 *Sanity.* Convert the duty to a mass flow: $1\ \mathrm{m^{3} / min}$ of **free** air is
 $$
-\dot{m} = \frac{P_0 \dot{V}_0}{R T_0} = \frac{101.325 \times \left( 1 / 60 \\right)}{0.287 \times 298.15} = 0.01974\ \mathrm{kg / s}
+\dot{m} = \frac{P_0 \dot{V}_0}{R T_0} = \frac{101.325 \times \left( 1 / 60 \right)}{0.287 \times 298.15} = 0.01974\ \mathrm{kg / s}
 $$
 so the **isothermal ideal** power is $0.01974 \times 177 = 3.49\ \mathrm{kW}$ and the **single-stage adiabatic ideal** is $0.01974 \times 241 = 4.76\ \mathrm{kW}$. A $7.5\ \mathrm{kW}$ motor driving this duty is therefore at **$47\ \%$** of the isothermal ideal and **$63\ \%$** of the adiabatic one — and the $63\ \%$ is the number a compressor vendor will quote, because it is the larger and the more flattering denominator. The $2.7\ \mathrm{kW}$ that is neither ideal leaves as jacket, oil and aftercooler heat, and in winter it is a **heat source worth more than the air**.
 :::
