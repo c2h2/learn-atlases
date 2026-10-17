@@ -53,6 +53,19 @@ $$
 The crossing of the imaginary axis is found by substituting $s = \mathrm{j} \omega$ and separating real and imaginary parts, or more quickly by the Routh test of the previous lesson. The **dominant-pole region** is the wedge about the negative real axis within which the closed-loop damping ratio exceeds the specification and whose distance from the origin sets the settling time: the design point is chosen in it and the gain read off by the magnitude condition.
 :::
 
+::: definition Compensator structures on the locus {#def-comp}
+Four networks cover most of root-locus design, and each has a picture rather than a formula:
+
+| Compensator | Form | Geometry | Buys | Costs |
+|---|---|---|---|---|
+| Proportional-derivative | $K \left( s + z \right)$ | one zero, pulls branches left | damping and speed | high-frequency noise |
+| Lead | $K \dfrac{s + z}{s + p}, \ z < p$ | zero nearer origin, net phase lead | transient response | gain at high frequency |
+| Lag | $K \dfrac{s + z}{s + p}, \ z > p$ | pole nearer origin, near-cancellation | low-frequency gain | a slow closed-loop pole |
+| Lead-lag | two pairs | lead for shape, lag for gain | both | two more poles and zeros |
+
+The design procedure is the same in every case: choose the desired dominant-pole location from the time-domain specification, evaluate the angle the plant contributes there, place a **zero** to make up the deficiency, then place the compensator's pole far enough away that its own angle costs less than five or ten degrees. The gain follows from the magnitude condition.
+:::
+
 ::: widget plot
 f: x => Math.sqrt(2-(x+2)*(x+2))
 x: -3.414, -0.586
@@ -196,6 +209,23 @@ $$
 
 *Design comment.* A double integrator with a PD gives a second-order closed loop with two poles and no zeros in the response, so the design is exact and the specification is met by construction — which is why joint servos really are built this way. What the arithmetic does not show is the three things that decide the machine. The first is the **friction** neglected in the model: at low speeds the Stribeck effect produces a limit cycle of a few hundredths of a degree, and the cure is a dither or a friction observer, not more gain. The second is the **gear compliance**: the $0.05\ \mathrm{kg\, m^{2}}$ is reflected through a harmonic drive whose torsional stiffness of about $2000\ \mathrm{N\, m / rad}$ puts a torsional resonance at $\sqrt{2000 / 0.05} / 2 \pi = 32\ \mathrm{Hz}$, a good deal above the $2.3\ \mathrm{Hz}$ crossover but not infinitely so, and a lighter arm link moves it down. The third is that the zero at $- 9.7$ is a **derivative**, and a derivative of a position measured by a resolver on the motor side differentiates the gear's wind-up rather than the load's motion — which is why high-performance joints put the position sensor on the **output** flange and why the second loop of a real robot is a current loop and not a velocity loop.
 :::
+:::
+
+::: proof Why dominant poles dominate {#proof-dominant}
+For a pair of poles $p_{1,2}$ and a distant pole $p_3$ the step response is
+$$
+y (t ) = 1 + A e^{p_1 t} + A^{*} e^{p_2 t} + B e^{p_3 t},
+\qquad
+B = \lim_{s \to p_3} \left( s - p_3 \right) \frac{T (s )}{s} .
+$$
+Writing $T = \omega_n^{2} \left( s + z \right) / \left[ \left( s^{2} + 2 \zeta \omega_n s + \omega_n^{2} \right)\left( s + p \right) \right]$ with $p \gg \omega_n$, the distant residue is
+$$
+B = \frac{\omega_n^{2} \left( p_3 + z \right)}{p_3 \left( p_3^{2} + 2 \zeta \omega_n p_3 + \omega_n^{2} \right)}
+\approx \frac{\omega_n^{2} \left( p_3 + z \right)}{p_3^{3}} \rightarrow 0
+$$
+as $p_3$ grows, while the dominant residues tend to constants of order unity. The distant pole contributes a term of relative size $\omega_n^{2} / p_3^{2}$, so a pole at five times the dominant real part contributes under four per cent and one at ten times under one per cent. $\checkmark$
+
+*Note.* The estimate is of the residue and not of the **derivative** of the response, and that is where the approximation breaks. A closed-loop zero near the dominant pair multiplies its residue by $\left| p_1 + z \right| / \left| p_1 - p_3 \right|$ and can make a nominally distant zero dominant in the transient: a zero within one natural frequency of the dominant poles can triple the overshoot while leaving the pole locations untouched, which is why a design placed by pole location alone sometimes overshoots by twice what the damping ratio promised. The rule that follows is to check the **zeros** of the closed-loop transfer function as well as its poles, and to regard any closed-loop zero that lies within $1.5 \omega_n$ of the origin as part of the design rather than as a detail.
 :::
 
 ::: history
