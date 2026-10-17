@@ -111,19 +111,17 @@ caption: Shear diagram for the beam of Example 1: $V = 8\\ \\mathrm{kN}$ from $A
 :::
 
 ::: proposition Standard results worth memorising {#prop-standard-beams}
-For a prismatic beam of span $L$, all maxima of the bending moment:
-$$
-\\begin{array}{lcc}
-\\text{Uniform load } w & V_{\\max} = w L / 2 & M_{\\max} = w L^{2} / 8 \\\\
-\\text{Central point load } P & V_{\\max} = P / 2 & M_{\\max} = P L / 4 \\\\
-\\text{Point load at } a, b & V_{\\max} = P b / L & M_{\\max} = P a b / L \\\\
-\\text{Central couple } C & V = C / L & M_{\\max} = C \text{ beside the couple} \\\\
-\\text{Cantilever, tip load } P & V = P & M_{\\max} = P L \\\\
-\\text{Cantilever, uniform } w & V_{\\max} = w L & M_{\\max} = w L^{2} / 2 \\\\
-\\text{Cantilever, end couple } C & V = 0 & M = C \\text{ constant}
-\\end{array}
-$$
-Every one of these follows in two lines from $\\mathrm{d} M / \\mathrm{d} x = V$ and the area rule, and being able to write them down cold is the difference between checking a design in thirty seconds and rebuilding it from scratch.
+For a prismatic beam of span $L$, the maxima of the bending moment are:
+
+- **Uniformly distributed load $w$:** $V_{\max} = w L / 2$, $M_{\max} = w L^{2} / 8$ at mid-span.
+- **Central point load $P$:** $V_{\max} = P / 2$, $M_{\max} = P L / 4$ under the load.
+- **Point load at $a$ from one end, $b$ from the other:** $V_{\max} = P b / L$, $M_{\max} = P a b / L$ under the load.
+- **Applied central couple $C$:** $V = C / L$ constant, $M_{\max} = C$ immediately beside the couple.
+- **Cantilever with tip load $P$:** $V = P$ constant, $M_{\max} = P L$ at the wall.
+- **Cantilever with uniform load $w$:** $V_{\max} = w L$, $M_{\max} = w L^{2} / 2$ at the wall.
+- **Cantilever with end couple $C$:** $V = 0$, $M = C$ constant over the whole length.
+
+Every one of these follows in two lines from $\mathrm{d} M / \mathrm{d} x = V$ and the area rule, and being able to write them down cold is the difference between checking a design in thirty seconds and rebuilding it from scratch.
 :::
 
 ::: proof
