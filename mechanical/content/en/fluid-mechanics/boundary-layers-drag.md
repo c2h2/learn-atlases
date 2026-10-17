@@ -380,39 +380,39 @@ $$
 ::: exercise Derivation {level=3}
 Derive the von Kármán momentum integral equation from the boundary-layer equations, and use it to show that separation requires an adverse pressure gradient.
 ::: solution
-**Write the momentum equation in conservative form.** Using continuity, $u\, \\partial u / \\partial x + v\, \\partial u / \\partial y = \\partial \\left( u^2 \\right) / \\partial x + \\partial \\left( u v \\right) / \\partial y$, so
+**Write the momentum equation in conservative form.** Using continuity, $u\, \partial u / \partial x + v\, \partial u / \partial y = \partial \left( u^2 \right) / \partial x + \partial \left( u v \right) / \partial y$, so
 $$
-\\frac{\\partial \\left( u^2 \\right)}{\\partial x} + \\frac{\\partial \\left( u v \\right)}{\\partial y}
-= U_e \\frac{d U_e}{d x} + \\frac{1}{\\rho} \\frac{\\partial \\tau}{\\partial y}, \\qquad \\tau = \\mu \\frac{\\partial u}{\\partial y}
+\frac{\partial \left( u^2 \right)}{\partial x} + \frac{\partial \left( u v \right)}{\partial y}
+= U_e \frac{d U_e}{d x} + \frac{1}{\rho} \frac{\partial \tau}{\partial y}, \qquad \tau = \mu \frac{\partial u}{\partial y}
 $$
-**Subtract** $U_e$ **times the continuity equation.** Since $U_e = U_e \\left( x \\right)$ only,
+**Subtract** $U_e$ **times the continuity equation.** Since $U_e = U_e \left( x \right)$ only,
 $$
-\\frac{\\partial \\left[ u \\left( u - U_e \\right) \\right]}{\\partial x} + \\frac{\\partial \\left[ v \\left( u - U_e \\right) \\right]}{\\partial y}
-= \\frac{d U_e}{d x} \\left( U_e - u \\right) + \\frac{1}{\\rho} \\frac{\\partial \\tau}{\\partial y}
+\frac{\partial \left[ u \left( u - U_e \right) \right]}{\partial x} + \frac{\partial \left[ v \left( u - U_e \right) \right]}{\partial y}
+= \frac{d U_e}{d x} \left( U_e - u \right) + \frac{1}{\rho} \frac{\partial \tau}{\partial y}
 $$
-**Integrate from** $y = 0$ **to** $y = \\infty$. **The wall terms vanish** because $u = v = 0$ at $y = 0$; **the edge terms vanish** because $u - U_e \\to 0$ and $\\tau \\to 0$; and $\\partial / \\partial x$ may be taken outside the integral:
+**Integrate from** $y = 0$ **to** $y = \infty$. **The wall terms vanish** because $u = v = 0$ at $y = 0$; **the edge terms vanish** because $u - U_e \to 0$ and $\tau \to 0$; and $\partial / \partial x$ may be taken outside the integral:
 $$
-\\frac{d}{d x} \\int_0^{\\infty} u \\left( u - U_e \\right) dy = \\frac{d U_e}{d x} \\int_0^{\\infty} \\left( U_e - u \\right) dy - \\frac{\\tau_w}{\\rho}
+\frac{d}{d x} \int_0^{\infty} u \left( u - U_e \right) dy = \frac{d U_e}{d x} \int_0^{\infty} \left( U_e - u \right) dy - \frac{\tau_w}{\rho}
 $$
-**Recognise the two integrals.** Since $u \\left( u - U_e \\right) = - U_e^2 \\left( u / U_e \\right) \\left( 1 - u / U_e \\right)$ and $U_e - u = U_e \\left( 1 - u / U_e \\right)$:
+**Recognise the two integrals.** Since $u \left( u - U_e \right) = - U_e^2 \left( u / U_e \right) \left( 1 - u / U_e \right)$ and $U_e - u = U_e \left( 1 - u / U_e \right)$:
 $$
-- \\frac{d}{d x} \\left( U_e^2 \\theta \\right) = U_e \\frac{d U_e}{d x} \\delta^{*} - \\frac{\\tau_w}{\\rho}
+- \frac{d}{d x} \left( U_e^2 \theta \right) = U_e \frac{d U_e}{d x} \delta^{*} - \frac{\tau_w}{\rho}
 $$
 **Expand the derivative and divide by** $U_e^2$:
 $$
-- \\frac{d \\theta}{d x} - \\frac{2 \\theta}{U_e} \\frac{d U_e}{d x} = \\frac{\\delta^{*}}{U_e} \\frac{d U_e}{d x} - \\frac{\\tau_w}{\\rho U_e^2}
+- \frac{d \theta}{d x} - \frac{2 \theta}{U_e} \frac{d U_e}{d x} = \frac{\delta^{*}}{U_e} \frac{d U_e}{d x} - \frac{\tau_w}{\rho U_e^2}
 $$
-**and with** $H = \\delta^* / \\theta$ **and** $C_f = 2 \\tau_w / \\left( \\rho U_e^2 \\right)$:
+**and with** $H = \delta^* / \theta$ **and** $C_f = 2 \tau_w / \left( \rho U_e^2 \right)$:
 $$
-\\boxed{ \\frac{d \\theta}{d x} + \\left( 2 + H \\right) \\frac{\\theta}{U_e} \\frac{d U_e}{d x} = \\frac{C_f}{2} }
+\boxed{ \frac{d \theta}{d x} + \left( 2 + H \right) \frac{\theta}{U_e} \frac{d U_e}{d x} = \frac{C_f}{2} }
 $$
 **Separation.** At separation $C_f = 0$, so
 $$
-\\frac{d \\theta}{d x} = - \\left( 2 + H \\right) \\frac{\\theta}{U_e} \\frac{d U_e}{d x}
+\frac{d \theta}{d x} = - \left( 2 + H \right) \frac{\theta}{U_e} \frac{d U_e}{d x}
 $$
-**The right-hand side must be positive** because $d \\theta / dx > 0$ for a growing layer, and since $\\left( 2 + H \\right) > 0$, $\\theta > 0$ and $U_e > 0$, this requires
+**The right-hand side must be positive** because $d \theta / dx > 0$ for a growing layer, and since $\left( 2 + H \right) > 0$, $\theta > 0$ and $U_e > 0$, this requires
 $$
-\\boxed{ \\frac{d U_e}{d x} < 0 }
+\boxed{ \frac{d U_e}{d x} < 0 }
 $$
 **an adverse pressure gradient.** **A favourable gradient can delay but never cause separation, and a zero-gradient layer can never separate** — which is the reason a flat plate has no pressure drag and a diffuser has all of its failure modes.
 *Sanity.* The reason the derivation needs a closure is that the equation contains $H$ and $C_f$, both of which depend on the **shape** of the profile, which the equation does not know. **Every boundary-layer method is a statement about the shape** — Pohlhausen's quartic, Thwaites' correlation, Head's two-layer, Cebeci's algebraic, Spalart's one-equation — and the reason they differ by tens of per cent near separation is that the shape is precisely what is changing there.

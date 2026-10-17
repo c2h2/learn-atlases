@@ -385,7 +385,7 @@ $$
 $$
 T_g = 2\, T_{\mathrm{air}} \quad \left[ \mathrm{K} \right]
 $$
-For $10\ {}^{\circ}\mathrm{C}$ air that is $566\ \\mathrm{K} = 293\ {}^{\circ}\mathrm{C}$ — **remarkably close to the $250$ to $350\ {}^{\circ}\mathrm{C}$ at which boilers are actually run**, so a chimney's natural draught and a boiler's stack-heat loss happen to be optimised together, which is a coincidence and not a design. Note that the **draught itself** rises monotonically with $T_g$; it is the **flow** that peaks.
+For $10\ {}^{\circ}\mathrm{C}$ air that is $566\ \mathrm{K} = 293\ {}^{\circ}\mathrm{C}$ — **remarkably close to the $250$ to $350\ {}^{\circ}\mathrm{C}$ at which boilers are actually run**, so a chimney's natural draught and a boiler's stack-heat loss happen to be optimised together, which is a coincidence and not a design. Note that the **draught itself** rises monotonically with $T_g$; it is the **flow** that peaks.
 **The velocity and the loss.** For a gas flow of $8\ \mathrm{kg / s}$:
 $$
 \dot{V} = \frac{8}{0.638} = 12.54\ \mathrm{m^{3} / s}, \qquad

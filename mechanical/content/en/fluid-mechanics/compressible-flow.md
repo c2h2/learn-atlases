@@ -319,30 +319,30 @@ $$
 \dot m_0 = 0.6847 \times \frac{10 \times 10^5}{\sqrt{287 \times 300}} \times 250 \times 10^{- 6}
 = 0.6847 \times 3{,}408 \times 2.5 \times 10^{- 4} = 0.584\ \mathrm{kg / s}
 $$
-**The initial depressurisation rate.** With $m = p V / R T$ and an isentropic blowdown $T = T_0 \\left( p / p_0 \\right)^{\\left( \\gamma - 1 \\right) / \\gamma}$:
+**The initial depressurisation rate.** With $m = p V / R T$ and an isentropic blowdown $T = T_0 \left( p / p_0 \right)^{\left( \gamma - 1 \right) / \gamma}$:
 $$
-m = \\frac{V p_0^{1 / \\gamma}}{R T_0} p^{1 - 1 / \\gamma}
-\\qquad \\Rightarrow \\qquad
-\\frac{d m}{d p} = \\frac{V p_0^{1 / \\gamma}}{\\gamma R T_0} p^{- 1 / \\gamma}
-= 2.149 \\times 10^{- 3} p^{- 0.2857}
+m = \frac{V p_0^{1 / \gamma}}{R T_0} p^{1 - 1 / \gamma}
+\qquad \Rightarrow \qquad
+\frac{d m}{d p} = \frac{V p_0^{1 / \gamma}}{\gamma R T_0} p^{- 1 / \gamma}
+= 2.149 \times 10^{- 3} p^{- 0.2857}
 $$
-At $p = p_0 = 10\\ \\mathrm{bar}$ this is $4.15 \\times 10^{- 5}\\ \\mathrm{kg / Pa}$, so
+At $p = p_0 = 10\ \mathrm{bar}$ this is $4.15 \times 10^{- 5}\ \mathrm{kg / Pa}$, so
 $$
-\\left| \\frac{d p}{d t} \\right|_0 = \\frac{0.584}{4.15 \\times 10^{- 5}} = 14.1\\ \\mathrm{kPa / s}
+\left| \frac{d p}{d t} \right|_0 = \frac{0.584}{4.15 \times 10^{- 5}} = 14.1\ \mathrm{kPa / s}
 $$
 **The blowdown time.** Because the gas cools as it expands, the mass flux is not proportional to $p$ but to
 $$
-\\dot m = 0.6847\\, A\\, \\frac{p}{\\sqrt{R T_0}} \\left( \\frac{p}{p_0} \\right)^{- \\left( \\gamma - 1 \\right) / 2 \\gamma}
-\\qquad \\Rightarrow \\qquad \\dot m \\propto p^{0.857}
+\dot m = 0.6847\, A\, \frac{p}{\sqrt{R T_0}} \left( \frac{p}{p_0} \right)^{- \left( \gamma - 1 \right) / 2 \gamma}
+\qquad \Rightarrow \qquad \dot m \propto p^{0.857}
 $$
-**and integrating $dt = - \\left( d m / d p \\right) dp / \\dot m$ from $10$ to $2\\ \\mathrm{bar}$ gives**
+**and integrating $dt = - \left( d m / d p \right) dp / \dot m$ from $10$ to $2\ \mathrm{bar}$ gives**
 $$
-t = 511.6 \\times 7 \\left[ \\left( 2 \\times 10^5 \\right)^{- 0.1429} - \\left( 10^6 \\right)^{- 0.1429} \\right]
-= 3{,}581 \\times \\left( 0.1749 - 0.1389 \\right) = \\mathbf{129\\ s}
+t = 511.6 \times 7 \left[ \left( 2 \times 10^5 \right)^{- 0.1429} - \left( 10^6 \right)^{- 0.1429} \right]
+= 3{,}581 \times \left( 0.1749 - 0.1389 \right) = \mathbf{129\ s}
 $$
-**The check that makes the integral trustworthy.** The vessel holds $m_0 = p_0 V / R T_0 = 58.1\\ \\mathrm{kg}$ initially and $m = 18.4\\ \\mathrm{kg}$ at $2\\ \\mathrm{bar}$, so $39.7\\ \\mathrm{kg}$ must leave; **the mean discharge over the $129\\ \\mathrm{s}$ is $0.31\\ \\mathrm{kg / s}$, which is $53\\ \\%$ of the initial rate — exactly what a $p^{0.857}$ law integrated over a five-fold pressure drop should give.**
-**The number that makes the valve's response time a sizing item.** The valve opens in $60$ to $120\\ \\mathrm{ms}$ and the vessel blows down in $129\\ \\mathrm{s}$, so the quasi-steady assumption is excellent — **but a small receiver, say $0.05\\ \\mathrm{m^3}$, blows down in $1.3\\ \\mathrm{s}$, which is ten valve-response times, and the reason a compressed-air system's relief sizing must include the receiver volume is that a small receiver with a large valve chatters and a chattering valve loses its set pressure.**
-**The temperature at the throat.** $T^* = 300 \\times 0.833 = 250\\ \\mathrm{K}$ at the start, and the vessel's gas cools to $T = 300 \\times 0.2^{0.2857} = 189\\ \\mathrm{K}$ at $2\\ \\mathrm{bar}$. **The number that makes a blowdown a materials problem is that $189\\ \\mathrm{K}$ is below the ductile–brittle transition of a carbon-steel vessel**, and the reason a compressed-air receiver's blowdown valve is specified with a minimum wall temperature is that a vessel that can be depressurised to atmosphere must be tested for the resulting metal temperature.
+**The check that makes the integral trustworthy.** The vessel holds $m_0 = p_0 V / R T_0 = 58.1\ \mathrm{kg}$ initially and $m = 18.4\ \mathrm{kg}$ at $2\ \mathrm{bar}$, so $39.7\ \mathrm{kg}$ must leave; **the mean discharge over the $129\ \mathrm{s}$ is $0.31\ \mathrm{kg / s}$, which is $53\ \%$ of the initial rate — exactly what a $p^{0.857}$ law integrated over a five-fold pressure drop should give.**
+**The number that makes the valve's response time a sizing item.** The valve opens in $60$ to $120\ \mathrm{ms}$ and the vessel blows down in $129\ \mathrm{s}$, so the quasi-steady assumption is excellent — **but a small receiver, say $0.05\ \mathrm{m^3}$, blows down in $1.3\ \mathrm{s}$, which is ten valve-response times, and the reason a compressed-air system's relief sizing must include the receiver volume is that a small receiver with a large valve chatters and a chattering valve loses its set pressure.**
+**The temperature at the throat.** $T^* = 300 \times 0.833 = 250\ \mathrm{K}$ at the start, and the vessel's gas cools to $T = 300 \times 0.2^{0.2857} = 189\ \mathrm{K}$ at $2\ \mathrm{bar}$. **The number that makes a blowdown a materials problem is that $189\ \mathrm{K}$ is below the ductile–brittle transition of a carbon-steel vessel**, and the reason a compressed-air receiver's blowdown valve is specified with a minimum wall temperature is that a vessel that can be depressurised to atmosphere must be tested for the resulting metal temperature.
 *Sanity.* The reason the flow is independent of the back pressure once choked is that the throat is sonic and a pressure disturbance downstream cannot travel upstream past it. **The reason a choked valve's capacity is quoted at a $10\ \%$ overpressure and not at the set pressure is that a valve lifts only partially, and the certified capacity of a safety valve is $0.9 \times$ the theoretical choked flow** — the $0.9$ being the discharge coefficient, and the reason it is $0.9$ and not $0.7$ is that a well-rounded nozzle approaches the ideal.
 :::
 :::
@@ -359,28 +359,28 @@ $$
 $$
 c_d = \frac{2}{\sqrt{M^2 - 1}} \cdot \frac{1}{c} \int_0^c \left[ \left( \frac{d y_u}{d x} \right)^2 + \left( \frac{d y_l}{d x} \right)^2 \right] dx
 $$
-**The Ackeret drag integral.** The pressure coefficient on a slender surface inclined at $\\theta$ to the stream is $C_p = 2 \\theta / \\sqrt{M^2 - 1}$ in compression and $- 2 \\theta / \\sqrt{M^2 - 1}$ in expansion, and integrating the streamwise component of the surface pressure over both faces gives
+**The Ackeret drag integral.** The pressure coefficient on a slender surface inclined at $\theta$ to the stream is $C_p = 2 \theta / \sqrt{M^2 - 1}$ in compression and $- 2 \theta / \sqrt{M^2 - 1}$ in expansion, and integrating the streamwise component of the surface pressure over both faces gives
 $$
-c_d = \\frac{2}{\\sqrt{M^2 - 1}} \\cdot \\frac{1}{c} \\int_0^c \\left[ \\left( \\frac{d y_u}{d x} \\right)^2 + \\left( \\frac{d y_l}{d x} \\right)^2 \\right] dx
+c_d = \frac{2}{\sqrt{M^2 - 1}} \cdot \frac{1}{c} \int_0^c \left[ \left( \frac{d y_u}{d x} \right)^2 + \left( \frac{d y_l}{d x} \right)^2 \right] dx
 $$
-**The mean square slope.** For a symmetric biconvex section $y_u = \\left( t / 2 \\right) \\left[ 1 - \\left( 2 x / c - 1 \\right)^2 \\right]$, so $d y_u / d x = - \\left( 2 t / c \\right) \\left( 2 x / c - 1 \\right)$ and, writing $\\tau = t / c$,
+**The mean square slope.** For a symmetric biconvex section $y_u = \left( t / 2 \right) \left[ 1 - \left( 2 x / c - 1 \right)^2 \right]$, so $d y_u / d x = - \left( 2 t / c \right) \left( 2 x / c - 1 \right)$ and, writing $\tau = t / c$,
 $$
-\\frac{1}{c} \\int_0^c \\left[ \\left( y_u^\\prime \\right)^2 + \\left( y_l^\\prime \\right)^2 \\right] dx
-= 2 \\times 4 \\tau^2 \\int_0^1 \\left( 2 \\xi - 1 \\right)^2 d \\xi = \\frac{8 \\tau^2}{3} = \\frac{8 \\times 0.01}{3} = 0.02667
+\frac{1}{c} \int_0^c \left[ \left( y_u^\prime \right)^2 + \left( y_l^\prime \right)^2 \right] dx
+= 2 \times 4 \tau^2 \int_0^1 \left( 2 \xi - 1 \right)^2 d \xi = \frac{8 \tau^2}{3} = \frac{8 \times 0.01}{3} = 0.02667
 $$
 $$
-\\boxed{ c_d = \\frac{16 \\tau^2}{3 \\sqrt{M^2 - 1}} }
+\boxed{ c_d = \frac{16 \tau^2}{3 \sqrt{M^2 - 1}} }
 $$
-**At** $M = 1.6$, $\\sqrt{M^2 - 1} = 1.249$:
+**At** $M = 1.6$, $\sqrt{M^2 - 1} = 1.249$:
 $$
-c_d = \\frac{16 \\times 0.01}{3 \\times 1.249} = 4.27 \\times 10^{- 2} \\qquad \\left( 427 \\text{ drag counts} \\right)
+c_d = \frac{16 \times 0.01}{3 \times 1.249} = 4.27 \times 10^{- 2} \qquad \left( 427 \text{ drag counts} \right)
 $$
-**At** $M = 1.2$, $\\sqrt{M^2 - 1} = 0.663$:
+**At** $M = 1.2$, $\sqrt{M^2 - 1} = 0.663$:
 $$
-c_d = \\frac{0.16}{3 \\times 0.663} = 8.04 \\times 10^{- 2} \\qquad \\left( 804 \\text{ counts} \\right)
+c_d = \frac{0.16}{3 \times 0.663} = 8.04 \times 10^{- 2} \qquad \left( 804 \text{ counts} \right)
 $$
-**The number that makes a $10\\ \\%$-thick section at $M = 1.2$ an impossibility.** **Linear theory gives $804$ counts of wave drag for a section that a subsonic aircraft would carry without comment** — and the reason the real measured value is lower is that linear theory overpredicts the drag within about $\\left| M - 1 \\right| < 0.15$, where the perturbation potential equation changes type, the shocks strengthen beyond the linear value and then the theory breaks down altogether. **The reason an airliner's drag-divergence Mach number is defined at a $10$-count drag rise rather than at the theoretical singularity is that the theory is useless in the last $0.1$ of Mach number and the experiment is the only arbiter.**
-**The two scalings that govern supersonic shape.** $c_d \\propto \\tau^2$: **halving the thickness quarters the wave drag**, and the reason a supersonic aircraft's wing is $3$ to $5\\ \\%$ thick and its structure a torsion box of near-constant depth is that the drag saving of a thin wing is worth the structural weight of a deep spar. And $c_d \\propto 1 / \\sqrt{M^2 - 1}$: **the drag falls as the Mach number rises above $1.4$**, and the reason a Mach $2$ reconnaissance aircraft is easier to fly than a Mach $1.2$ one is that its wave drag per unit thickness is $2.4$ times lower — the transonic region, not the supersonic region, is the expensive one.
+**The number that makes a $10\ \%$-thick section at $M = 1.2$ an impossibility.** **Linear theory gives $804$ counts of wave drag for a section that a subsonic aircraft would carry without comment** — and the reason the real measured value is lower is that linear theory overpredicts the drag within about $\left| M - 1 \right| < 0.15$, where the perturbation potential equation changes type, the shocks strengthen beyond the linear value and then the theory breaks down altogether. **The reason an airliner's drag-divergence Mach number is defined at a $10$-count drag rise rather than at the theoretical singularity is that the theory is useless in the last $0.1$ of Mach number and the experiment is the only arbiter.**
+**The two scalings that govern supersonic shape.** $c_d \propto \tau^2$: **halving the thickness quarters the wave drag**, and the reason a supersonic aircraft's wing is $3$ to $5\ \%$ thick and its structure a torsion box of near-constant depth is that the drag saving of a thin wing is worth the structural weight of a deep spar. And $c_d \propto 1 / \sqrt{M^2 - 1}$: **the drag falls as the Mach number rises above $1.4$**, and the reason a Mach $2$ reconnaissance aircraft is easier to fly than a Mach $1.2$ one is that its wave drag per unit thickness is $2.4$ times lower — the transonic region, not the supersonic region, is the expensive one.
 **The area rule.** The same $1 / \sqrt{M^2 - 1}$ factor applies to the whole aircraft's volume distribution, and the wave drag is minimised when the **cross-sectional area distribution** along the fuselage is as smooth as possible:
 $$
 C_{D, w} \propto \frac{S_{\max}^2}{\ell^2} \cdot \frac{1}{\sqrt{M^2 - 1}} \cdot K \left( \text{area-law shape} \right)

@@ -323,12 +323,12 @@ Every index in this lesson rests on the mechanisms of [[materials-science/disloc
 
 ::: quiz
 A stiffness-limited panel of free thickness is to be made as light as possible. Which index ranks the candidates?
-- [ ] $E / \\rho$
-- [x] $E^{1/3} / \\rho$
-- [ ] $E^{1/2} / \\rho$
-- [ ] $E \\rho$
+- [ ] $E / \rho$
+- [x] $E^{1/3} / \rho$
+- [ ] $E^{1/2} / \rho$
+- [ ] $E \rho$
 ::: solution
-The second. Eliminating the thickness between $m = \\rho b L t$ and $EI = E b t^{3} / 12 = $ const gives $m \\propto \\rho / E^{1/3}$, so the index is $E^{1/3} / \\rho$. The $E / \\rho$ index is the **tie-rod's**, where the section is fixed and only the material can change; using it for a panel overstates the value of a stiff material by the cube of the thickness freedom, which is why it puts titanium ahead of magnesium and aluminium.
+The second. Eliminating the thickness between $m = \rho b L t$ and $EI = E b t^{3} / 12 = $ const gives $m \propto \rho / E^{1/3}$, so the index is $E^{1/3} / \rho$. The $E / \rho$ index is the **tie-rod's**, where the section is fixed and only the material can change; using it for a panel overstates the value of a stiff material by the cube of the thickness freedom, which is why it puts titanium ahead of magnesium and aluminium.
 :::
 :::
 

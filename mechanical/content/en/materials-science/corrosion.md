@@ -409,7 +409,7 @@ A stainless steel pipe is found perforated under a bolted clamp, the rest of the
 - [ ] Erosion-corrosion at the clamp
 - [ ] Microbiologically-influenced corrosion
 ::: solution
-The first option. Under the clamp the dissolved oxygen is consumed by the cathodic reaction and cannot diffuse back in, so the gap becomes the anode of a differential-aeration cell; the ferrous ions that form hydrolyse to give a local pH near 2 and the chloride migrates in as the counter-ion, giving an autocatalytic ferrous-chloride solution that eats metal while the large external surface, at a potential $300\ \\mathrm{mV}$ more noble, carries the cathodic reaction. General thinning would have attacked the whole surface; the untouched surface outside the clamp is the diagnostic.
+The first option. Under the clamp the dissolved oxygen is consumed by the cathodic reaction and cannot diffuse back in, so the gap becomes the anode of a differential-aeration cell; the ferrous ions that form hydrolyse to give a local pH near 2 and the chloride migrates in as the counter-ion, giving an autocatalytic ferrous-chloride solution that eats metal while the large external surface, at a potential $300\ \mathrm{mV}$ more noble, carries the cathodic reaction. General thinning would have attacked the whole surface; the untouched surface outside the clamp is the diagnostic.
 :::
 :::
 

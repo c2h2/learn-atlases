@@ -245,13 +245,13 @@ A reduction of area of $70\ \%$ is a true local fracture strain of $\ln \left[ 1
 :::
 
 ::: quiz
-A tensile test on a ductile steel gives an elongation of $12\ \\%$ on a $50\ \\mathrm{mm}$ gauge and a reduction of area of $70\ \\%$. What does the combination indicate?
+A tensile test on a ductile steel gives an elongation of $12\ \%$ on a $50\ \mathrm{mm}$ gauge and a reduction of area of $70\ \%$. What does the combination indicate?
 - [x] Heavy early necking: the ductility is local, and the gauge-length average understates it
 - [ ] The specimen was misaligned
 - [ ] The material is brittle
 - [ ] The extensometer slipped
 ::: solution
-A reduction of area of $70\ \\%$ is a true local fracture strain of $\\ln \\left[ 1 / \\left( 1 - 0.70 \\right) \\right] = 1.20$, four times the gauge-average value. The metal is very ductile where it broke and the elongation is low because the neck was narrow and formed early — a low $n$-value with a high fracture strain, which is the signature of a precipitation-hardened or heavily included material.
+A reduction of area of $70\ \%$ is a true local fracture strain of $\ln \left[ 1 / \left( 1 - 0.70 \right) \right] = 1.20$, four times the gauge-average value. The metal is very ductile where it broke and the elongation is low because the neck was narrow and formed early — a low $n$-value with a high fracture strain, which is the signature of a precipitation-hardened or heavily included material.
 :::
 :::
 

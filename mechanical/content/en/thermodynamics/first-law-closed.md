@@ -127,7 +127,7 @@ f: ln(x); (1-pow(x,-0.4))/0.4
 x: 1, 8
 y: 0, 2.4
 labels: isothermal W/mRT1; adiabatic W/mRT1
-caption: Reversible boundary work of an expansion of an ideal gas, normalised by $m R T_1$, against the volume ratio $V_2 / V_1$. The isothermal curve is $\\ln \\left( V_2 / V_1 \\right)$ and the adiabatic curve is $\\left[ 1 - r^{1 - \\gamma} \\right] / \\left( \\gamma - 1 \\right)$ with $\\gamma = 1.4$. At a ratio of $8$ the isothermal expansion gives **$47\ \\%$ more work** than the adiabatic one, because the heat supplied keeps the pressure up. The same gas, the same endpoints in volume, and a factor of $1.47$ in the work — which is why the phrase "the work of expansion" is meaningless until the path is stated.
+caption: Reversible boundary work of an expansion of an ideal gas, normalised by $m R T_1$, against the volume ratio $V_2 / V_1$. The isothermal curve is $\ln \left( V_2 / V_1 \right)$ and the adiabatic curve is $\left[ 1 - r^{1 - \gamma} \right] / \left( \gamma - 1 \right)$ with $\gamma = 1.4$. At a ratio of $8$ the isothermal expansion gives **$47\ \%$ more work** than the adiabatic one, because the heat supplied keeps the pressure up. The same gas, the same endpoints in volume, and a factor of $1.47$ in the work — which is why the phrase "the work of expansion" is meaningless until the path is stated.
 :::
 
 

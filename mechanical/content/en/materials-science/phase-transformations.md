@@ -254,7 +254,7 @@ The nucleation barrier of this lesson is the Gibbs-Thomson length of [[materials
 :::
 
 ::: quiz
-A transformation is $50\ \\%$ complete in one tenth of the time it takes to be $99\ \\%$ complete. What is the mechanism?
+A transformation is $50\ \%$ complete in one tenth of the time it takes to be $99\ \%$ complete. What is the mechanism?
 - [x] Nucleation-controlled, with nucleation continuing throughout — an Avrami exponent near one
 - [ ] Site-saturated three-dimensional growth
 - [ ] Diffusion-controlled thickening of a single plate
