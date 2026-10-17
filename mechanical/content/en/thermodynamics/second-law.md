@@ -354,6 +354,7 @@ A device is claimed to take $500\ \mathrm{kJ}$ from a $600\ \mathrm{K}$ reservoi
 ::: solution
 $\eta = 250 / 500 = 50\ \%$ against $\eta_C = 1 - 300 / 600 = 50\ \%$: the claim **attains** the Carnot limit, and $\oint \delta Q / T = 500 / 600 - 250 / 300 = 0.833 - 0.833 = 0$ exactly. A zero Clausius integral means **reversible**, so the device is not impossible — it is a **Carnot engine**, which is to say an idealisation no real machine reaches. Claims that *meet* the limit are as suspicious as claims that exceed it, and the difference is that meeting it is only unreachable rather than contradictory.
 :::
+:::
 
 ## Exercises
 
