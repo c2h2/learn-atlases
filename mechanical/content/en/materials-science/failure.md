@@ -12,7 +12,7 @@ Three mechanisms account for almost every engineering fracture. **Brittle fractu
 A crack of length $2a$ in an infinite sheet under a stress $\sigma$ releases elastic strain energy at a rate
 $$
 G = \frac{\pi \sigma^{2} a}{E^{\prime}}, \qquad
-E^{\prime} = \left\{ \begin{array}{l l} E & \text{plane stress} \ E / \left( 1 - \nu^{2} \right) & \text{plane strain} \end{array} \right.
+E^{\prime} = \left\{ \begin{array}{l l} E & \text{plane stress} \\ E / \left( 1 - \nu^{2} \right) & \text{plane strain} \end{array} \right.
 $$
 and creates two new surfaces at a cost of $2 \gamma_s$ per unit area of crack advance. Equating gives **Griffith**'s result,
 $$

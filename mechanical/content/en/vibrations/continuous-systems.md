@@ -13,7 +13,7 @@ A taut string of tension $T$ and mass per unit length $\mu$, a uniform bar of mo
 $$
 \frac{\partial^{2} u}{\partial x^{2}} = \frac{1}{c^{2}} \frac{\partial^{2} u}{\partial t^{2}},
 \qquad
-c^{2} = \begin{cases} T / \mu & \text{string} \ E / \rho & \text{longitudinal bar} \ G / \rho & \text{shaft in torsion} \ p / \rho & \text{sound in a fluid} \end{cases}
+c^{2} = \begin{cases} T / \mu & \text{string} \\ E / \rho & \text{longitudinal bar} \\ G / \rho & \text{shaft in torsion} \\ p / \rho & \text{sound in a fluid} \end{cases}
 $$
 with the same consequence: waves travel at $c$ in both directions without changing shape, and a finite system of length $L$ has natural frequencies at multiples of $c / 2 L$ for both ends fixed or both free, and at odd multiples of $c / 4 L$ for one of each. The spectrum is **harmonic**, which is why a string sounds a note and a beam does not.
 :::
@@ -60,7 +60,7 @@ $$
 $$
 At the built-in end $\phi = \phi' = 0$, and at the free end the bending moment and shear vanish, $\phi'' = \phi''' = 0$. The first two give $A = - C$ and $B = - D$, and the last two give
 $$
-\begin{pmatrix} \cosh \beta L + \cos \beta L & \sinh \beta L + \sin \beta L \ \sinh \beta L - \sin \beta L & \cosh \beta L - \cos \beta L \end{pmatrix}
+\begin{pmatrix} \cosh \beta L + \cos \beta L & \sinh \beta L + \sin \beta L \\ \sinh \beta L - \sin \beta L & \cosh \beta L - \cos \beta L \end{pmatrix}
 \begin{pmatrix} A \ B \end{pmatrix} = \mathbf{0} .
 $$
 Setting the determinant to zero and using $\cosh^{2} - \sinh^{2} = 1$ and $\cos^{2} + \sin^{2} = 1$ collapses everything to

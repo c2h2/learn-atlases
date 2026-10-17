@@ -108,7 +108,7 @@ Two masses of $2\ \mathrm{kg}$ each are joined by a spring of $800\ \mathrm{N / 
 ::: solution
 $$
 \mathbf{M} = 2 \mathbf{I}, \qquad
-\mathbf{K} = 800 \begin{pmatrix} 2 & - 1 \ - 1 & 2 \end{pmatrix} ,
+\mathbf{K} = 800 \begin{pmatrix} 2 & - 1 \\ - 1 & 2 \end{pmatrix} ,
 \qquad
 \det \left( \mathbf{K} - \omega^{2} \mathbf{M} \right) = 0 .
 $$
@@ -158,9 +158,9 @@ At that instant mass 2 carries the whole motion and mass 1 is exactly still.
 A $100\ \mathrm{kg}$ machine on a $10\ \mathrm{MN / m}$ support carries a $10\ \mathrm{kg}$ bracket attached by a $1\ \mathrm{MN / m}$ bolted joint. Find the frequencies at which the machine resonates and the frequency at which it does not move at all when a force is applied to it.
 ::: solution
 $$
-\mathbf{K} = \begin{pmatrix} 11 \times 10^{6} & - 10^{6} \ - 10^{6} & 10^{6} \end{pmatrix},
+\mathbf{K} = \begin{pmatrix} 11 \times 10^{6} & - 10^{6} \\ - 10^{6} & 10^{6} \end{pmatrix},
 \qquad
-\mathbf{M} = \begin{pmatrix} 100 & 0 \ 0 & 10 \end{pmatrix} .
+\mathbf{M} = \begin{pmatrix} 100 & 0 \\ 0 & 10 \end{pmatrix} .
 $$
 **Resonances.** Solving gives $43.0\ \mathrm{Hz}$ and $58.9\ \mathrm{Hz}$.
 **Antiresonance.** The machine alone has $\sqrt{k_1 / m_1} / 2 \pi = 50.3\ \mathrm{Hz}$, and the bracket alone $\sqrt{k_2 / m_2} / 2 \pi = 50.3\ \mathrm{Hz}$; the antiresonance of the driven point is at exactly that frequency.
@@ -297,7 +297,7 @@ One — $n - 1$ for an $n$ degree-of-freedom system.
 Two $5\ \mathrm{kg}$ masses are connected in series between rigid walls by three springs of $2\ \mathrm{kN / m}$ each. Find the natural frequencies and mode shapes.
 ::: solution
 $$
-\mathbf{K} = 2000 \begin{pmatrix} 2 & - 1 \ - 1 & 2 \end{pmatrix}, \quad
+\mathbf{K} = 2000 \begin{pmatrix} 2 & - 1 \\ - 1 & 2 \end{pmatrix}, \quad
 \mathbf{M} = 5 \mathbf{I}, \qquad
 \omega^{2} = \frac{2000}{5} \times \left\{ 1 , 3 \right\},
 $$

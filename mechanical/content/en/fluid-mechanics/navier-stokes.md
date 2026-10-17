@@ -386,8 +386,8 @@ $$
 **The stress tensor** (with $\nabla \cdot \mathbf{V} = 0$, so $\lambda$ does not enter):
 $$
 \boldsymbol{\tau} = - p \mathbf{I} + 2 \mu \mathbf{S}
-= \begin{pmatrix} - 200{,}000 + 0.1 \times 4 & 0.1 \times \left( - 1.5 \right) & 0 \ 0.1 \times \left( - 1.5 \right) & - 200{,}000 - 0.4 & 0 \ 0 & 0 & - 200{,}000 \end{pmatrix}
-= \begin{pmatrix} - 199{,}999.6 & - 0.15 & 0 \ - 0.15 & - 200{,}000.4 & 0 \ 0 & 0 & - 200{,}000 \end{pmatrix}
+= \begin{pmatrix} - 200{,}000 + 0.1 \times 4 & 0.1 \times \left( - 1.5 \right) & 0 \\ 0.1 \times \left( - 1.5 \right) & - 200{,}000 - 0.4 & 0 \\ 0 & 0 & - 200{,}000 \end{pmatrix}
+= \begin{pmatrix} - 199{,}999.6 & - 0.15 & 0 \\ - 0.15 & - 200{,}000.4 & 0 \\ 0 & 0 & - 200{,}000 \end{pmatrix}
 $$
 **The principal stresses.** The $z$-direction is already principal with $\sigma_3 = - 200{,}000\ \mathrm{Pa}$. In the $x$–$y$ plane:
 $$

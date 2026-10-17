@@ -16,7 +16,7 @@ $$
 $$
 with the **inertia tensor**
 $$
-\mathbf{I}_O = \begin{pmatrix} I_{xx} & - I_{xy} & - I_{xz} \ - I_{xy} & I_{yy} & - I_{yz} \ - I_{xz} & - I_{yz} & I_{zz} \end{pmatrix},
+\mathbf{I}_O = \begin{pmatrix} I_{xx} & - I_{xy} & - I_{xz} \\ - I_{xy} & I_{yy} & - I_{yz} \\ - I_{xz} & - I_{yz} & I_{zz} \end{pmatrix},
 \qquad I_{xx} = \int \left( y^{2} + z^{2} \right) \mathrm{d} m,
 \qquad I_{xy} = \int x y \, \mathrm{d} m .
 $$
@@ -44,7 +44,7 @@ $$
 In the principal frame $\mathbf{H} = \left( I_1 \omega_1, I_2 \omega_2, I_3 \omega_3 \right)$, so the body-frame derivative is $\left( I_1 \dot{\omega}_1, I_2 \dot{\omega}_2, I_3 \dot{\omega}_3 \right)$ and
 $$
 \boldsymbol{\omega} \times \mathbf{H}
-= \begin{vmatrix} \mathbf{e}_1 & \mathbf{e}_2 & \mathbf{e}_3 \ \omega_1 & \omega_2 & \omega_3 \ I_1 \omega_1 & I_2 \omega_2 & I_3 \omega_3 \end{vmatrix}
+= \begin{vmatrix} \mathbf{e}_1 & \mathbf{e}_2 & \mathbf{e}_3 \\ \omega_1 & \omega_2 & \omega_3 \\ I_1 \omega_1 & I_2 \omega_2 & I_3 \omega_3 \end{vmatrix}
 = \left( \left( I_3 - I_2 \right) \omega_2 \omega_3, \ \left( I_1 - I_3 \right) \omega_3 \omega_1, \ \left( I_2 - I_1 \right) \omega_1 \omega_2 \right) .
 $$
 Equating components gives Euler's equations. $\checkmark$
@@ -146,7 +146,7 @@ Two point masses, $3\ \mathrm{kg}$ at $\left( 0.2, 0.1, 0 \right)$ and $2\ \math
 ::: solution
 Building the tensor from $\mathbf{I} = \sum m \left( r^{2} \mathbf{1} - \mathbf{r} \mathbf{r}^{\mathrm{T}} \right)$,
 $$
-\mathbf{I} = \begin{pmatrix} 0.200 & - 0.060 & 0 \ - 0.060 & 0.245 & - 0.075 \ 0 & - 0.075 & 0.195 \end{pmatrix} \mathrm{kg\,m^{2}} ,
+\mathbf{I} = \begin{pmatrix} 0.200 & - 0.060 & 0 \\ - 0.060 & 0.245 & - 0.075 \\ 0 & - 0.075 & 0.195 \end{pmatrix} \mathrm{kg\,m^{2}} ,
 $$
 $$
 \mathbf{H} = \mathbf{I} \boldsymbol{\omega}

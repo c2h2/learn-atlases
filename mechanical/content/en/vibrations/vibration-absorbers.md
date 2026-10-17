@@ -351,7 +351,7 @@ Show that for an undamped absorber tuned to the primary, the absorber's amplitud
 ::: solution
 With $\mathbf{F} = \left( F , 0 \right)$ and no damping,
 $$
-\begin{pmatrix} k_1 + k_2 - \omega^{2} m_1 & - k_2 \ - k_2 & k_2 - \omega^{2} m_2 \end{pmatrix}
+\begin{pmatrix} k_1 + k_2 - \omega^{2} m_1 & - k_2 \\ - k_2 & k_2 - \omega^{2} m_2 \end{pmatrix}
 \begin{pmatrix} X_1 \ X_2 \end{pmatrix}
 = \begin{pmatrix} F \ 0 \end{pmatrix} .
 $$

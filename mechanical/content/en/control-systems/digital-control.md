@@ -118,13 +118,13 @@ A point mass with $\ddot{x} = u$, driven through a zero-order hold of period $T$
 **Discrete model.** With the state $\left[ x , v \right]^{T}$,
 $$
 \begin{bmatrix} x \ v \end{bmatrix}_{k + 1}
-= \begin{bmatrix} 1 & T \ 0 & 1 \end{bmatrix}
+= \begin{bmatrix} 1 & T \\ 0 & 1 \end{bmatrix}
 \begin{bmatrix} x \ v \end{bmatrix}_k
 + \begin{bmatrix} T^{2} / 2 \ T \end{bmatrix} u_k .
 $$
 **Two steps is the minimum**, because one step has one degree of freedom and two conditions to satisfy. Requiring $x_2 = v_2 = 0$ from $\left[ x_0 , 0 \right]$ gives
 $$
-\begin{bmatrix} 1.5 T^{2} & 0.5 T^{2} \ T & T \end{bmatrix}
+\begin{bmatrix} 1.5 T^{2} & 0.5 T^{2} \\ T & T \end{bmatrix}
 \begin{bmatrix} u_0 \ u_1 \end{bmatrix}
 = - \begin{bmatrix} x_0 \ 0 \end{bmatrix}
 \quad\Longrightarrow\quad

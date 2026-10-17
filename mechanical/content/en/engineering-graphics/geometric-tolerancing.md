@@ -223,7 +223,7 @@ T = 0.6\ \mathrm{mm} \ \Rightarrow\ \text{margin } 0.2\ \mathrm{mm}. \checkmark
 $$
 **Way 3 — geometric, composite, with dowels.** Two $\phi 6\ \mathrm{H}7 / \mathrm{m}6$ **dowel** holes at $\boxed{\oplus \mid \varnothing 0.05 \mid A \mid B \mid C}$ and six $\phi 6.6$ clearance holes at
 $$
-\boxed{\begin{array}{c|c|c}\boxed{\oplus} & \varnothing 1.0 & A \ \boxed{\oplus} & \varnothing 0.5 & \left[ A \mid B \mid C \right]\end{array}}
+\boxed{\begin{array}{c|c|c}\boxed{\oplus} & \varnothing 1.0 & A \\ \boxed{\oplus} & \varnothing 0.5 & \left[ A \mid B \mid C \right]\end{array}}
 $$
 **The dowels locate the cover to $0.05$ and the clearance holes are allowed $\varnothing 0.5$ each**, because they no longer locate anything.
 **The cost.**

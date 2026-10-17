@@ -27,19 +27,19 @@ Write the state model of a DC motor position axis with an inner current loop, $J
 ::: solution
 **Physical states** $x = \left[ \theta , \omega \right]^{T}$ with $K / J = 800\ \mathrm{rad\, s^{- 2} / A}$ and $b / J = 0.1\ \mathrm{s^{- 1}}$:
 $$
-\dot{x} = \begin{bmatrix} 0 & 1 \ 0 & - 0.1 \end{bmatrix} x + \begin{bmatrix} 0 \ 800 \end{bmatrix} i,
+\dot{x} = \begin{bmatrix} 0 & 1 \\ 0 & - 0.1 \end{bmatrix} x + \begin{bmatrix} 0 \ 800 \end{bmatrix} i,
 \qquad y = \begin{bmatrix} 1 & 0 \end{bmatrix} x .
 $$
 **Controllable canonical form**, reading the transfer function $G = 800 / \left( s^{2} + 0.1 s \right)$ directly:
 $$
-A_c = \begin{bmatrix} 0 & 1 \ 0 & - 0.1 \end{bmatrix}, \quad
+A_c = \begin{bmatrix} 0 & 1 \\ 0 & - 0.1 \end{bmatrix}, \quad
 B_c = \begin{bmatrix} 0 \ 1 \end{bmatrix}, \quad
 C_c = \begin{bmatrix} 0 & 800 \end{bmatrix},
 $$
 which is the same $A$ because the physical states happened to be the phase variables.
 **Modal form.** The eigenvalues are $0$ and $- 0.1$; with $T$ the modal matrix,
 $$
-A_\Lambda = \begin{bmatrix} 0 & 0 \ 0 & - 0.1 \end{bmatrix}, \quad
+A_\Lambda = \begin{bmatrix} 0 & 0 \\ 0 & - 0.1 \end{bmatrix}, \quad
 B_\Lambda = \begin{bmatrix} - 8000 \ 8000 \end{bmatrix}, \quad
 C_\Lambda = \begin{bmatrix} 1 & 1 \end{bmatrix} .
 $$
@@ -120,7 +120,7 @@ K = \begin{bmatrix} 0 & \cdots & 0 & 1 \end{bmatrix} \mathcal{C}^{- 1} \alpha_d 
 \qquad
 \alpha_d (s ) = \prod_i \left( s - p_i \right) .
 $$
-For the double integrator $A = \left[ \begin{smallmatrix} 0 & 1 \ 0 & 0 \end{smallmatrix} \right]$, $B = \left[ \begin{smallmatrix} 0 \ 1 \end{smallmatrix} \right]$ this reduces to the textbook result $K = \left[ \omega_n^{2} , 2 \zeta \omega_n \right]$.
+For the double integrator $A = \left[ \begin{smallmatrix} 0 & 1 \\ 0 & 0 \end{smallmatrix} \right]$, $B = \left[ \begin{smallmatrix} 0 \ 1 \end{smallmatrix} \right]$ this reduces to the textbook result $K = \left[ \omega_n^{2} , 2 \zeta \omega_n \right]$.
 The **full-order observer** propagates a model of the plant and corrects it by the output error,
 $$
 \dot{\hat{x}} = A \hat{x} + B u + L \left( y - C \hat{x} \right),
@@ -138,7 +138,7 @@ $$
 so in the coordinates $\left[ x , e \right]$ the system matrix is **block triangular**,
 $$
 \begin{bmatrix} \dot{x} \ \dot{e} \end{bmatrix}
-= \begin{bmatrix} A - B K & B K \ 0 & A - L C \end{bmatrix}
+= \begin{bmatrix} A - B K & B K \\ 0 & A - L C \end{bmatrix}
 \begin{bmatrix} x \ e \end{bmatrix} .
 $$
 The eigenvalues of a block-triangular matrix are the union of the diagonal blocks' eigenvalues, and the off-diagonal $B K$ affects the **modes' shapes** and the transient weighting but not the poles. $\checkmark$
@@ -161,7 +161,7 @@ $$
 k_1 = 0.500\ \mathrm{A / rad}, \qquad k_2 = 0.0352\ \mathrm{A\, s / rad} .
 $$
 **Feedforward.** The plant's DC gain from $i$ to $\theta$ is infinite, so $k_r$ is set by requiring the closed-loop DC gain to be unity: $k_r = 0.500\ \mathrm{A / rad}$ of reference.
-**Observer.** $A - LC = \begin{bmatrix} - L_1 & 1 \ - L_2 & - 0.1 \end{bmatrix}$ with characteristic polynomial
+**Observer.** $A - LC = \begin{bmatrix} - L_1 & 1 \\ - L_2 & - 0.1 \end{bmatrix}$ with characteristic polynomial
 $$
 s^{2} + \left( L_1 + 0.1 \right) s + \left( 0.1 L_1 + L_2 \right) = s^{2} + 180 s + 10^{4},
 $$
@@ -177,11 +177,11 @@ A tank level is measured, but the **inflow** — the disturbance that matters �
 ::: solution
 **Model.** With $h$ the level, $q_{in}$ the unknown inflow and $u$ the measured outflow, $A \dot{h} = q_{in} - u$, so with $x = \left[ h , q_{in} \right]^{T}$ and $q_{in}$ modelled as a constant,
 $$
-\dot{x} = \begin{bmatrix} 0 & 1 \ 0 & 0 \end{bmatrix} x + \begin{bmatrix} - 1 / A \ 0 \end{bmatrix} u,
+\dot{x} = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} x + \begin{bmatrix} - 1 / A \ 0 \end{bmatrix} u,
 \qquad y = \begin{bmatrix} 1 & 0 \end{bmatrix} x .
 $$
-**Observability.** $\mathcal{O} = \begin{bmatrix} 1 & 0 \ 0 & 1 \end{bmatrix}$ — full rank. The inflow is observable because it shows up as the **slope** of the level, which is exactly what an integrator-based estimator extracts.
-**Observer.** $A - LC = \begin{bmatrix} - L_1 & 1 \ - L_2 & 0 \end{bmatrix}$ with $s^{2} + L_1 s + L_2$. Choosing a double pole at $- \omega_o$ gives $L_1 = 2 \omega_o$, $L_2 = \omega_o^{2}$, and the estimator is recognisably a **second-order generalisation of a phase-locked loop**: the level error drives the level estimate, and the level error also integrates into the inflow estimate.
+**Observability.** $\mathcal{O} = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ — full rank. The inflow is observable because it shows up as the **slope** of the level, which is exactly what an integrator-based estimator extracts.
+**Observer.** $A - LC = \begin{bmatrix} - L_1 & 1 \\ - L_2 & 0 \end{bmatrix}$ with $s^{2} + L_1 s + L_2$. Choosing a double pole at $- \omega_o$ gives $L_1 = 2 \omega_o$, $L_2 = \omega_o^{2}$, and the estimator is recognisably a **second-order generalisation of a phase-locked loop**: the level error drives the level estimate, and the level error also integrates into the inflow estimate.
 **Time scale.** With $A = 4\ \mathrm{m^{2}}$ and a nominal inflow of $0.02\ \mathrm{m^{3} / s}$, choosing $\omega_o = 0.02\ \mathrm{rad / s}$ (a $50\ \mathrm{s}$ time constant) gives $L_1 = 0.04$, $L_2 = 4 \times 10^{- 4}$, and an inflow estimate that settles to within five per cent in about $250\ \mathrm{s}$ after a step change of inflow.
 
 *Check.* The estimator's transfer function from $y$ to $\hat{q}_{in}$ is $L_2 / \left( s^{2} + L_1 s + L_2 \right) \times s$, which at low frequency gives $\hat{q}_{in} \approx s \hat{h}$ — the derivative of the level — and the whole design is a **filtered derivative** with the filter placed by $\omega_o$. $\checkmark$
@@ -282,7 +282,7 @@ Two — one per state.
 Write the controllable canonical form of $G = \left( 3 s + 5 \right) / \left( s^{2} + 2 s + 7 \right)$ and read off $A , B , C$.
 ::: solution
 $$
-A = \begin{bmatrix} 0 & 1 \ - 7 & - 2 \end{bmatrix}, \quad
+A = \begin{bmatrix} 0 & 1 \\ - 7 & - 2 \end{bmatrix}, \quad
 B = \begin{bmatrix} 0 \ 1 \end{bmatrix}, \quad
 C = \begin{bmatrix} 5 & 3 \end{bmatrix}, \quad D = 0 .
 $$
@@ -293,17 +293,17 @@ $$
 ::: exercise Ackermann {level=2}
 Use Ackermann's formula on the double integrator with desired poles at $- 10 \pm 10\ \mathrm{j}$ and give $K$.
 ::: solution
-$\alpha_d (s ) = s^{2} + 20 s + 200$, and $\mathcal{C} = \left[ B , AB \right] = \left[ \begin{smallmatrix} 0 & 1 \ 1 & 0 \end{smallmatrix} \right]$, so
+$\alpha_d (s ) = s^{2} + 20 s + 200$, and $\mathcal{C} = \left[ B , AB \right] = \left[ \begin{smallmatrix} 0 & 1 \\ 1 & 0 \end{smallmatrix} \right]$, so
 $$
 K = \begin{bmatrix} 0 & 1 \end{bmatrix} \mathcal{C}^{- 1} \left( A^{2} + 20 A + 200 I \right)
-= \begin{bmatrix} 1 & 0 \end{bmatrix} \begin{bmatrix} 200 & 20 \ 20 & 20 \end{bmatrix} = \begin{bmatrix} 200 & 20 \end{bmatrix} .
+= \begin{bmatrix} 1 & 0 \end{bmatrix} \begin{bmatrix} 200 & 20 \\ 20 & 20 \end{bmatrix} = \begin{bmatrix} 200 & 20 \end{bmatrix} .
 $$
 *Sanity.* $\omega_n = \sqrt{200} = 14.1$ and $2 \zeta \omega_n = 20$ give $\zeta = 0.707$, and the general rule $K = \left[ \omega_n^{2} , 2 \zeta \omega_n \right]$ for a double integrator follows immediately — which is the same answer as placing a PD controller by matching coefficients, and the first indication that state feedback on a system whose states are all measured is not a new technique but a systematic version of the old one.
 :::
 :::
 
 ::: exercise Observer gain {level=2}
-For $A = \left[ \begin{smallmatrix} 0 & 1 \ 0 & - 3 \end{smallmatrix} \right]$, $C = \left[ 1 \; 0 \right]$, find $L$ for observer poles at $- 6 \pm 6\ \mathrm{j}$.
+For $A = \left[ \begin{smallmatrix} 0 & 1 \\ 0 & - 3 \end{smallmatrix} \right]$, $C = \left[ 1 \; 0 \right]$, find $L$ for observer poles at $- 6 \pm 6\ \mathrm{j}$.
 ::: solution
 $A - LC$ has characteristic polynomial $s^{2} + \left( L_1 + 3 \right) s + \left( 3 L_1 + L_2 \right)$; matching $s^{2} + 12 s + 72$ gives $L_1 = 9$ and $L_2 = 45$.
 *Sanity.* The observer's poles are $0.6\ \mathrm{Hz}$-equivalent faster than the plant's own at $- 3$, which is a modest and defensible ratio; the gain $L_2 = 45$ is the equivalent derivative action and is the number to check against the measurement noise before the design is accepted.
@@ -333,7 +333,7 @@ A first-order plant $\dot{x} = - x + 2 u$, $y = x$, is to be controlled by state
 **Augment.** With $\dot{z} = r - x$ and $u = - k_1 x - k_2 z$,
 $$
 \begin{bmatrix} \dot{x} \ \dot{z} \end{bmatrix}
-= \begin{bmatrix} - 1 - 2 k_1 & - 2 k_2 \ - 1 & 0 \end{bmatrix}
+= \begin{bmatrix} - 1 - 2 k_1 & - 2 k_2 \\ - 1 & 0 \end{bmatrix}
 \begin{bmatrix} x \ z \end{bmatrix} + \begin{bmatrix} 0 \ 1 \end{bmatrix} r ,
 $$
 whose characteristic polynomial is $s^{2} + \left( 1 + 2 k_1 \right) s + 2 k_2$. Matching $s^{2} + 6 s + 18$ gives

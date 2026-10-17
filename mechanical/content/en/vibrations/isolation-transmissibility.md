@@ -110,7 +110,7 @@ k_2 = 200 \times \left( 2 \pi \times 4 \right)^{2} = 126\,300\ \mathrm{N / m},
 $$
 and the two natural frequencies from
 $$
-\det \begin{pmatrix} k_1 - m_1 \omega^{2} & - k_1 \ - k_1 & k_1 + k_2 - m_2 \omega^{2} \end{pmatrix} = 0
+\det \begin{pmatrix} k_1 - m_1 \omega^{2} & - k_1 \\ - k_1 & k_1 + k_2 - m_2 \omega^{2} \end{pmatrix} = 0
 $$
 are $3.00\ \mathrm{Hz}$ and $6.67\ \mathrm{Hz}$. The transmitted force per newton of applied force is:
 
@@ -185,8 +185,8 @@ V = \tfrac{1}{2} \sum_i \left( \mathbf{u} + \boldsymbol{\theta} \times \mathbf{r
 $$
 Writing $\boldsymbol{\theta} \times \mathbf{r}_i = - \left[ \mathbf{r}_i \right]_{\times} \boldsymbol{\theta}$ and collecting terms in the generalised coordinates $\left( \mathbf{u}, \boldsymbol{\theta} \right)$,
 $$
-\begin{pmatrix} \mathbf{K}_{uu} & \mathbf{K}_{u\theta} \ \mathbf{K}_{\theta u} & \mathbf{K}_{\theta\theta} \end{pmatrix}
-= \sum_i \begin{pmatrix} \mathbf{K}_i & - \mathbf{K}_i \left[ \mathbf{r}_i \right]_{\times} \ - \left[ \mathbf{r}_i \right]_{\times}^{\mathrm{T}} \mathbf{K}_i & \left[ \mathbf{r}_i \right]_{\times}^{\mathrm{T}} \mathbf{K}_i \left[ \mathbf{r}_i \right]_{\times} \end{pmatrix} .
+\begin{pmatrix} \mathbf{K}_{uu} & \mathbf{K}_{u\theta} \\ \mathbf{K}_{\theta u} & \mathbf{K}_{\theta\theta} \end{pmatrix}
+= \sum_i \begin{pmatrix} \mathbf{K}_i & - \mathbf{K}_i \left[ \mathbf{r}_i \right]_{\times} \\ - \left[ \mathbf{r}_i \right]_{\times}^{\mathrm{T}} \mathbf{K}_i & \left[ \mathbf{r}_i \right]_{\times}^{\mathrm{T}} \mathbf{K}_i \left[ \mathbf{r}_i \right]_{\times} \end{pmatrix} .
 $$
 **Decoupling.** If the mounts are identical and arranged symmetrically about the centre of mass, then $\sum_i \left[ \mathbf{r}_i \right]_{\times} = 0$ because the $\mathbf{r}_i$ occur in equal and opposite pairs, and the off-diagonal block $\mathbf{K}_{u\theta} = - \mathbf{K} \sum_i \left[ \mathbf{r}_i \right]_{\times}$ vanishes. Translation and rotation then separate, and
 $$

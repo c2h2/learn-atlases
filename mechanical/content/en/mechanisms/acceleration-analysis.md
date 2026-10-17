@@ -21,7 +21,7 @@ $$
 **in which everything on the left of the $\alpha$ terms is known from the position and velocity analyses.** Written as a linear system with the **same coefficient matrix as the velocity analysis**, and therefore the **same determinant** $- b c \sin \mu$:
 
 $$
-\begin{pmatrix} - b \sin \theta_3 & c \sin \theta_4 \ b \cos \theta_3 & - c \cos \theta_4 \end{pmatrix}
+\begin{pmatrix} - b \sin \theta_3 & c \sin \theta_4 \\ b \cos \theta_3 & - c \cos \theta_4 \end{pmatrix}
 \begin{pmatrix} \alpha_3 \ \alpha_4 \end{pmatrix} =
 \begin{pmatrix} A_x \ A_y \end{pmatrix}, \qquad
 \begin{pmatrix} A_x \ A_y \end{pmatrix} =

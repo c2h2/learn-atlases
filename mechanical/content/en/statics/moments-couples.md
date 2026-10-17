@@ -113,7 +113,7 @@ that is $12.0\ \mathrm{N\,m}$ clockwise.
 The moment of a force about a *line* through $O$ in the direction of the unit vector $\mathbf{u}$ is the component of $\mathbf{M}_O$ along that line,
 $$
 M_{\mathbf{u}} = \mathbf{u} \cdot (\mathbf{r} \times \mathbf{F})
-= \begin{vmatrix} u_x & u_y & u_z \ r_x & r_y & r_z \ F_x & F_y & F_z \end{vmatrix} ,
+= \begin{vmatrix} u_x & u_y & u_z \\ r_x & r_y & r_z \\ F_x & F_y & F_z \end{vmatrix} ,
 $$
 where $\mathbf{r}$ runs from *any* point on the axis to any point on the line of action of the force. It is a scalar, signed by the sense of $\mathbf{u}$, and it measures the tendency to turn the body *about that axis* — the only component the body can use if it is pinned to it.
 :::
@@ -131,7 +131,7 @@ A force $\mathbf{F} = (30, -20, 50)\ \mathrm{N}$ acts at $P(2, 3, 1)\ \mathrm{m}
 ::: solution
 The axis direction is $\mathbf{u}_{AB} = (\mathbf{i} + 2 \mathbf{j} + 2 \mathbf{k}) / \sqrt{1 + 4 + 4} = (0.333, 0.667, 0.667)$. Take $\mathbf{r}$ from $A$ to $P$: $\mathbf{r} = (2, 3, 1)\ \mathrm{m}$. First
 $$
-\mathbf{M}_A = \mathbf{r} \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \ 2 & 3 & 1 \ 30 & -20 & 50 \end{vmatrix}
+\mathbf{M}_A = \mathbf{r} \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & 3 & 1 \\ 30 & -20 & 50 \end{vmatrix}
 = (3 \times 50 - 1 \times (-20)) \mathbf{i} - (2 \times 50 - 1 \times 30) \mathbf{j} + (2 \times (-20) - 3 \times 30) \mathbf{k}
 $$
 $$
@@ -294,7 +294,7 @@ A force $\mathbf{F} = (10, -8, 12)\ \mathrm{N}$ acts at the point $(2, 1, 3)\ \m
 ::: solution
 $$
 \mathbf{M}_O = \mathbf{r} \times \mathbf{F}
-= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \ 2 & 1 & 3 \ 10 & -8 & 12 \end{vmatrix}
+= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & 1 & 3 \\ 10 & -8 & 12 \end{vmatrix}
 = (1 \times 12 - 3 \times (-8)) \mathbf{i} - (2 \times 12 - 3 \times 10) \mathbf{j} + (2 \times (-8) - 1 \times 10) \mathbf{k}
 $$
 $$
