@@ -383,3 +383,292 @@ and its recommended values for a well-made, properly floating stage are:
 The physical reason is that the planets can only share load if they all take up the same position, and they cannot, because the carrier's pin holes are bored to $\pm 0.02\ \mathrm{mm}$, the sun and ring are positioned to $\pm 0.03\ \mathrm{mm}$, and the mesh stiffness is $20\ \mathrm{N / \mu m}$ per millimetre of face width — so a $0.03\ \mathrm{mm}$ position error is $60\ \mathrm{N / \mu m \times mm}$ of load imbalance per millimetre of width, which is tens of per cent of the working load. **The remedies are all versions of the same idea: make the load paths compliant enough that elastic deformation equalises them, or make one member able to float.** In order of effectiveness: **axially floating ring gear** (the ring is free to move along its axis by a fraction of a tooth depth, so it finds its own best position — this alone recovers most of the ideal), **torsionally soft carrier** (a deliberately thin-walled carrier plate whose twist is large compared with the tooth spacing error), **spherical planet bearings** that let each planet tilt, and **gear crowning** that tolerates the misalignment the imbalance produces. **A stage with a floating ring and a soft carrier reaches $K_\gamma = 1.05$ at six planets. A stage with a rigid ring and a stiff carrier reaches $K_\gamma = 2.5$ at four and the designer spends the rest of his life explaining why the gearbox is rated at a third of what the teeth could take.**
 :::
 :::
+
+## Choosing the ratio: inertia, speed and the ceiling
+
+::: example Servo axis: the optimum ratio and why you will not use it {#ex-inertia}
+A rotary table carries $0.40\ \mathrm{kg \cdot m^2}$ of fixturing and parts. The motor is a $3\ \mathrm{kW}$ AC servo with $J_m = 2.0 \times 10^{-4}\ \mathrm{kg \cdot m^2}$ and $19\ \mathrm{N \cdot m}$ of peak torque, and its speed ceiling is $3000\ \mathrm{rev / min}$. What ratio maximises the table's acceleration, and what ratio will the design use?
+
+**Answer.** $\boxed{i_{\mathrm{opt}} = 44.7}$ for acceleration; the design uses $i \approx 20$.
+
+::: solution
+Reflect the load to the motor and differentiate: the load-side acceleration produced by a motor torque $T_m$ through a ratio $i$ is
+
+$$
+\alpha_L = \frac{ T_m \, i }{ J_m i^{2} + J_L }
+$$
+
+which is maximised where its derivative vanishes, i.e. at $J_m i^{2} = J_L$,
+
+$$
+i_{\mathrm{opt}} = \sqrt{ \frac{ J_L }{ J_m } } = \sqrt{ \frac{ 0.40 }{ 2.0 \times 10^{- 4 } } } = \sqrt{ 2000 } = 44.7 \ , \qquad \alpha_L = \frac{ 19 \times 44.7 }{ 0.40 + 0.40 } = 1062\ \mathrm{rad / s^2}
+$$
+
+::: widget plot
+title: Load acceleration against gear ratio, for one motor and one load
+f: 19*x/(0.0002*x*x+0.4)
+x: 1, 120
+y: 0, 1100
+caption: $\alpha_L = T_m i / ( J_m i^2 + J_L )$ for the servo above. **The curve is remarkably flat near the peak** — $i = 30$ gives $983\ \mathrm{rad / s^2}$ and $i = 60$ gives $1018$, both within $8\ \%$ of the optimum — **and it falls off a cliff on the low-ratio side**, where $i = 10$ yields only $452$. **This asymmetry is the practical content of the inertia-matching rule: getting the ratio too low is a serious loss, getting it too high is a mild one, and the "optimum" is the middle of a wide plateau.** So the rule should be read as "keep $i$ within a factor of two of $\sqrt{ J_L / J_m }$", not as a target to be hit.
+:::
+
+**Why the design will not use 44.7.** At $i = 44.7$ the table's maximum speed of, say, $60\ \mathrm{rev / min}$ demands $2680\ \mathrm{rev / min}$ from the motor — inside the ceiling, but only just, and the peak-torque speed is what actually limits a positioning axis. More importantly:
+
+1. **The gearbox has inertia of its own.** A three-stage train at $i = 45$ contributes a further $15$–$25\ \%$ of $J_m i^2$ at the motor flange, which pulls the true optimum down by $7$–$12\ \%$ and makes the flat plateau even flatter.
+2. **The plateau is flat, the backlash is not.** Reflected backlash at the load is $j_{\mathrm{out}} = j_{\mathrm{in}} \times i$; at $i = 45$ with $8$ arc-min of lost motion per stage and three stages, the table has $24 \times 45 / 60 = 18$ arc-min of dead band, which for a $500\ \mathrm{mm}$-diameter table is $1.3\ \mathrm{mm}$ at the rim. **Positioning accuracy, not acceleration, is what sets the ratio in most servo axes.**
+3. **The plateau is flat and the price is not.** Each additional stage costs $1.5\ \%$ of the power, one seal, one natural frequency and one set of teeth to go wrong.
+
+**The honest statement of the rule is: choose $i$ to be within a factor of two of $\sqrt{ J_L / J_m }$, then choose it as small as the speed and accuracy requirements allow.**
+:::
+:::
+
+## The differential: a gear train with two answers
+
+::: example Open differential, one wheel on ice {#ex-diff}
+A front axle with a $1.6\ \mathrm{m}$ track turns a $12\ \mathrm{m}$-radius corner at $14\ \mathrm{m / s}$ on dry tarmac. Wheel radius $0.31\ \mathrm{m}$. Find the two wheel speeds and the speed at which the differential's spider gears spin. Then: on ice, with $\mu_{\mathrm{ice}} = 0.10$, $\mu_{\mathrm{dry}} = 0.90$ and $4000\ \mathrm{N}$ on each driven wheel, what fraction of a $3000\ \mathrm{N \cdot m}$ axle torque reaches the road?
+
+**Answer.** $442.5$ and $420.1\ \mathrm{rev / min}$, spider at $11.2\ \mathrm{rev / min}$ relative; and **$8.3\ \%$** of the torque reaches the road.
+
+::: solution
+The kinematics are pure geometry. The two wheels travel arcs in the ratio of their radii,
+
+$$
+\frac{ \omega_{\mathrm{in}} }{ \omega_{\mathrm{out} } } = \frac{ R - t / 2 }{ R + t / 2 } = \frac{ 11.2 }{ 11.8 } = 0.9492
+$$
+
+and the open differential's defining property is that its carrier speed is the **mean** of the two half-shaft speeds — the $2:1$ spider relation $\omega_L + \omega_R = 2\omega_c$, which is exactly the $\alpha = 1$ case of the Willis equation. With $\omega_{\mathrm{mean}} = V/r = 45.16\ \mathrm{rad/s} = 431.3\ \mathrm{rev/min}$, the two conditions $(\omega_{\mathrm{in}} + \omega_{\mathrm{out}})/2 = 431.3$ and $\omega_{\mathrm{in}}/\omega_{\mathrm{out}} = 11.2/11.8$ give
+
+$$
+\omega_{\mathrm{out}} = 431.3 \times \frac{ 2 \times 11.8 }{ 11.2 + 11.8 } = 442.5\ \mathrm{rev/min} \ , \qquad
+\omega_{\mathrm{in}} = 431.3 \times \frac{ 2 \times 11.2 }{ 23.0 } = 420.1\ \mathrm{rev/min}
+$$
+
+and the spider's speed relative to its carrier is $\left( 442.5 - 420.1 \right) / 2 = 11.2\ \mathrm{rev/min}$ on each side.
+**The differential is doing almost nothing in steady cornering — a $5.1\ \%$ speed difference — and that is the whole point: an open differential is a machine that spends its life nearly locked-up, which is why its efficiency is $98$–$99\ \%$ and why nobody notices it is there until it is needed.**
+
+**Now the ice.** An open differential splits torque equally, always, because the spider gears have no way to react a torque difference — the torque split is a *kinematic* consequence of $\alpha = 1$, not a tunable parameter. So both wheels get $1500\ \mathrm{N \cdot m}$, the ice wheel breaks traction at
+
+$$
+T_{\mathrm{ice}} = \mu_{\mathrm{ice}} W r = 0.10 \times 4000 \times 0.31 = 124\ \mathrm{N \cdot m}
+$$
+
+and the total tractive torque collapses to $2 \times 124 = 248\ \mathrm{N \cdot m}$ out of $3000$ available — **$8.3\ \%$.** The dry wheel, which could have taken $1116\ \mathrm{N \cdot m}$, is deliberately given only $124$.
+
+| Differential | Torque to the pair | Fraction of axle torque |
+|---|---|---|
+| Open (torque bias 1:1) | $248\ \mathrm{N \cdot m}$ | $8.3\ \%$ |
+| Limited-slip, bias 3.5:1 | $124 + 3.5 \times 124 = 558\ \mathrm{N \cdot m}$ | $18.6\ \%$ |
+| Locked (100 %) | $( 0.1 + 0.9 ) \times 4000 \times 0.31 = 1240\ \mathrm{N \cdot m}$ | $41.3\ \%$ |
+
+**and the last row is why a locked differential is illegal to use on dry roads:** with both wheels at full grip the locked axle forces them to turn at the same speed, which in a corner means one of them must slip at $3.5\ \%$ continuously, and that is a tyre-eating, steering-knocking, axle-winding state that the driveline's stored torsional energy pays for in one shock. **The whole art of the limited-slip unit is to be the third row when it is needed and the first row when it is not, and every version of it — clutch pack, gear-coupled, Torsen, viscous — is a different way of making torque bias depend on speed difference rather than on nothing at all.**
+:::
+:::
+
+## When one stage must do the work of three
+
+::: definition Special epicyclics {#def-special}
+Two families trade the ordinary planetary's robustness for a ratio that would otherwise need several stages.
+
+**Harmonic (strain-wave) drive.** A thin-walled flexible cup with $Z_f$ external teeth is deformed into an ellipse by a wave generator and meshes at the two ends of the major axis with a rigid circular spline of $Z_c$ internal teeth and with a rigid output. Because the flexspline is *internal* to the circular spline and has two fewer teeth, one revolution of the wave generator advances it by two tooth pitches:
+
+$$
+i = - \frac{ Z_f }{ Z_c - Z_f } = - \frac{ Z_f }{ 2 } \qquad \Rightarrow \qquad Z_f = 198 , \ Z_c = 200 \ \Longrightarrow \ i = - 99
+$$
+
+**Zero backlash by construction** (the flexspline is elastically preloaded against the spline), essentially infinite positional repeatability, and a torsional stiffness of $5$–$15\ \mathrm{N \cdot m / arcmin}$. The costs: the flexspline is a **fatigue component**, rated against roughly $10^{8}$ flexure cycles, which at a continuous $100\ \mathrm{rev / min}$ input is **under two years**; efficiency $0.75$–$0.85$; a hysteresis loss of $0.05$–$0.15\ \mathrm{N \cdot m}$ that is independent of torque and dominates the efficiency at light load; and no shock tolerance whatever.
+
+**Cycloidal (pin-wheel) drive.** A disc with $Z_r - 2$ rollers rolls inside $Z_r$ fixed pins, driven through an eccentric. Ratio $i = Z_r / ( Z_r - Z_{\mathrm{disc}} )$, typically $9$–$119$ in one stage, with **all teeth in contact simultaneously** — the load-sharing factor is $K_\gamma \approx 1.01$, the best of any gear family, because the contact pattern is forced by the geometry rather than equalised by compliance. Torsional stiffness is several times a planetary's at the same size, life is $30\,000$–$100\,000$ hours, efficiency is $0.90$–$0.95$. The costs are a **rectification-like velocity ripple** at the roller-passing frequency (which is why a cycloidal axis needs a fine-resolution encoder on the output, not the motor), expensive ground eccentric rollers, and a price per unit torque two to four times a planetary's.
+:::
+
+| Family | Ratio / stage | $\eta$ | $K_\gamma$ | Backlash | Life | Relative cost |
+|---|---|---|---|---|---|---|
+| Involute spur / helical | $\le 7$ | 0.985 | 1.00 | 8–20 arc-min | $10^{9}$ cycles | 1.0 |
+| Planetary (3–4 planets) | $\le 8$ | 0.984 | 1.05–1.15 | 5–15 arc-min | $10^{9}$ cycles | 1.5 |
+| Cycloidal | $\le 119$ | 0.92 | 1.01 | $< 1$ arc-min | $3 \times 10^{4}$–$10^{5}\ \mathrm{h}$ | 3.0 |
+| Harmonic | $\le 200$ | 0.80 | 1.00 | 0 | $10^{8}$ cycles | 4.0 |
+| Worm, self-locking | $\le 60$ | 0.40–0.77 | n/a | 15–40 arc-min | wear-limited | 1.2 |
+
+::: exercise Harmonic drive life {level=2 check="1.9"}
+A harmonic drive has $Z_f = 198$ flexspline teeth and $Z_c = 200$ circular-spline teeth. State the ratio, and estimate the continuous life at a $100\ \mathrm{rev / min}$ input if the flexspline is rated for $10^{8}$ flexure cycles.
+
+::: solution
+$$
+i = - \frac{ Z_f }{ Z_c - Z_f } = - \frac{ 198 }{ 2 } = - 99
+$$
+
+**and the life is the number that decides the application.** The flexspline completes one full bending cycle for every revolution of the wave generator, so at $100\ \mathrm{rev / min}$ it consumes $100$ of its $10^{8}$ cycles every minute:
+
+$$
+\frac{ 10^{8} \ \text{cycles} }{ 100 \ \mathrm{rev / min} } = 1.0 \times 10^{6} \ \mathrm{min} = 16{,}700 \ \mathrm{h} = \boxed{ 1.9 \ \text{years of continuous running} }
+$$
+
+**This single division is why harmonic drives are in robot wrists, telescope drives and antenna mounts, and are not in conveyor drives and wind turbines.** They are the only gear family whose life is set by cycles of elastic bending rather than by contact fatigue — and bending cycles are consumed by *time*, not by *load*, so a harmonic drive idling unloaded all night is wearing out at exactly the same rate as one doing work. **Contact-fatigue gears can be saved by a duty cycle; a flexure cannot.**
+:::
+:::
+
+## Design: a $100 : 1$ gearbox for a $1.5\ \mathrm{MW}$ wind turbine {#sec-winddesign}
+
+::: example Proportioning the three stages {#ex-wind}
+A $1.5\ \mathrm{MW}$ turbine runs its rotor at $15.0\ \mathrm{rev / min}$ and its generator at $1500\ \mathrm{rev / min}$. Total ratio $100 : 1$. Proportion the stages, find the torques, the ring reactions and the heat the lubrication system must remove.
+
+**Answer.** Planetary–planetary–helical at $5.500 \times 4.600 \times 3.952 = 99.995$; rotor shaft $955\ \mathrm{kN \cdot m}$; largest ring reaction $781\ \mathrm{kN \cdot m}$; heat $69\ \mathrm{kW}$.
+
+::: solution
+**Stage ratios.** Two planetary stages plus one helical, chosen so that each stage's tooth counts survive the three conditions of [[#thm-assembly]]:
+
+| Stage | Type | $Z_s$ | $Z_p$ | $Z_r$ | $n_p$ | Ratio | $\eta$ |
+|---|---|---|---|---|---|---|---|
+| 1 | Planetary, ring held | 24 | 42 | 108 | 4 | 5.500 | 0.9836 |
+| 2 | Planetary, ring held | 20 | 26 | 72 | 4 | 4.600 | 0.9844 |
+| 3 | Helical, $83 / 21$ | — | — | — | — | 3.952 | 0.9850 |
+| | | | | | **Total** | **99.995** | **0.9537** |
+
+Check stage 1: $( 24 + 108 ) / 4 = 33$ integer ✓; $\sin 45^{\circ} = 0.7071 > 42 / 66 = 0.6364$ ✓. Stage 2: $( 20 + 72 ) / 4 = 23$ ✓; $0.7071 > 26 / 46 = 0.5652$ ✓. **Both stages are carrier-in, sun-out, ring-held — a speed *increaser*, which is what a turbine needs, and which the first curve of [[#ex-eff4]] shows is the efficient direction for that arrangement.**
+
+**Torque flow.** Rotor torque $= 1.5 \times 10^{6} / ( 15.0 \times 2\pi / 60 ) = 954.9\ \mathrm{kN \cdot m}$:
+
+| Member | Speed | Torque | Note |
+|---|---|---|---|
+| Rotor shaft = stage-1 carrier | 15.0 | $954.9\ \mathrm{kN \cdot m}$ | 4 arms, so $239\ \mathrm{kN \cdot m}$ per planet pin |
+| Stage-1 ring (held) | 0 | $781.3\ \mathrm{kN \cdot m}$ | **reacted into the housing, transmitting nothing** |
+| Stage-1 sun = stage-2 carrier | 82.5 | $170.8\ \mathrm{kN \cdot m}$ | |
+| Stage-2 ring (held) | 0 | $133.7\ \mathrm{kN \cdot m}$ | |
+| Stage-2 sun = stage-3 pinion | 379.5 | $36.5\ \mathrm{kN \cdot m}$ | |
+| Generator | 1499.9 | $9.11\ \mathrm{kN \cdot m}$ | $1.431\ \mathrm{MW}$ out of $1.500$ |
+
+**The housing carries $781\ \mathrm{kN \cdot m}$ that never appears at any shaft.** That is the structural content of the design: the ring is shrunk into a nodular-iron housing whose job is to be a closed torque frame, and the whole casting is sized by this reaction rather than by the weight it supports.
+
+**Teeth.** Stage 1 at module $m = 16\ \mathrm{mm}$: sun pitch radius $0.016 \times 24 / 2 = 0.192\ \mathrm{m}$, so the sun-planet mesh carries $170.8 \times 10^{3} / 0.192 = 889\ \mathrm{kN}$ in total, $222\ \mathrm{kN}$ per planet. Lewis at $\sigma_{\mathrm{allow}} = 850\ \mathrm{MPa}$ and $Y = 0.40$:
+
+$$
+b = \frac{ W_t }{ \sigma_{\mathrm{allow}} \, m \, Y } \times K_\gamma = \frac{ 222 \times 10^{3} }{ 850 \times 10^{6} \times 0.016 \times 0.40 } \times 1.10 = 45\ \mathrm{mm}
+$$
+
+**and the design uses $b = 70\ \mathrm{mm}$, because pitting, not bending, governs** — the same conclusion [[mechanisms/gears]] reached for the $55\ \mathrm{kW}$ industrial gearbox, at two thousand times the torque. Ring pitch diameter $0.016 \times 108 = 1.73\ \mathrm{m}$, which is what a $1.5\ \mathrm{MW}$ first stage actually is.
+
+**Heat.** $1.500 \times ( 1 - 0.9537 ) = 69\ \mathrm{kW}$ of heat in a gearbox weighing about $3\ \mathrm{t}$ — enough to require $120$–$150\ \mathrm{l / min}$ of filtered, cooled oil and a $90\ \mathrm{kW}$ water cooler with the turbine's own cooling loop. **The lubrication system is not an accessory to a wind-turbine gearbox; it is the subsystem whose failure mode — a blocked filter, a pump seal, a cooler fouled by a maize field — is the failure mode of the turbine.**
+
+**Why not one stage?** $i = 100$ needs $\alpha = 99$, so $Z_p = ( 99 - 1 ) Z_s / 2 = 49 \, Z_s$ and the adjacency condition demands
+
+$$
+\sin \frac{ \pi }{ n_p } > \frac{ 49 Z_s }{ Z_s + 49 Z_s } = 0.980 \quad \Longrightarrow \quad n_p < 2.29
+$$
+
+**so a single $100 : 1$ planetary stage can have only two planets.** Its load-sharing factor would be $K_\gamma = 1.05$ — respectable — but it would have no redundancy, an unbalanced two-arm carrier, planets too large to allow more than two, and a ring of $99 \times 17 = 1683$ teeth. **The adjacency condition, not the strength and not the size, is what forces the wind-turbine gearbox to be three stages.**
+:::
+:::
+
+::: exercise Why three stages and not two {level=3 check="2"}
+Could the $1.5\ \mathrm{MW}$ gearbox above be built as two planetary stages of $10 : 1$ each? Test the adjacency condition for $\alpha = 9$ with three and with four planets, and state the largest number of planets that will go in.
+
+::: solution
+With $\alpha = 9$: $Z_p = ( 9 - 1 ) Z_s / 2 = 4 Z_s$, so
+
+$$
+\frac{ Z_p }{ Z_s + Z_p } = \frac{ 4 }{ 5 } = 0.800 \quad \Rightarrow \quad \sin \frac{ \pi }{ n_p } > 0.800 \ \Rightarrow \ \frac{ \pi }{ n_p } > 0.9273\ \mathrm{rad} \ \Rightarrow \ n_p < 3.39
+$$
+
+$$
+n_p = 3 : \ \sin 60^{\circ} = 0.8660 > 0.800 \ \checkmark \qquad n_p = 4 : \ \sin 45^{\circ} = 0.7071 < 0.800 \ \times
+$$
+
+**so $\boxed{ 3 }$ planets is the maximum, and the two-stage alternative is not impossible — it is just worse.** Three planets gives $K_\gamma = 1.07$ against the four-planet design's $1.10$, so the load sharing is if anything better; what you lose is that **all of the $955\ \mathrm{kN \cdot m}$ now passes through three planet pins instead of four, so each pin carries $318$ rather than $239\ \mathrm{kN \cdot m}$, and the planet bearings — which are the actual life-limited component in a wind-turbine planetary — are being asked for $33\ \%$ more $L_{10}$ life at the same diameter.** The second thing you lose is the redundancy: at $\alpha = 9$ the ring reaction is $9 / 10$ of the carrier torque, so a single $10 : 1$ stage holds $859\ \mathrm{kN \cdot m}$ in one ring instead of $781$ in one and $134$ in another, and the housing becomes a single casting sized by one enormous reaction. **Two stages is cheaper and worse; three stages is what the adjacency condition and the bearing life arrive at.**
+:::
+:::
+
+::: quiz Idlers and tooth counts {#quiz-idler}
+A compound train's first stage is $19 / 95$ and its second is $17 / 95$. Which statement is true?
+
+- [ ] Both stages are equally good, because both pinions are prime
+- [x] The first stage is the bad one: $95 = 5 \times 19$, so $\gcd = 19$ and each wheel tooth is struck by exactly one pinion tooth for the life of the gearbox
+- [ ] The second is worse, because $17$ does not divide $95$
+- [ ] Neither matters, because the contact pattern always walks around both gears
+
+::: solution
+**The first stage is the bad one.** $\gcd ( 19 , 95 ) = 19$, so each of the wheel's 95 teeth is visited by exactly $95 / 19 = 5$ pinion teeth — and, worse, **each wheel tooth is struck by exactly one pinion tooth and by no other, forever.** $\gcd ( 17 , 95 ) = 1$, so the second stage hunts: pinion tooth 1 walks through all 95 wheel teeth before it returns home, and every tooth pair meets once in 95 revolutions of the wheel.
+
+**The point of the question is that you cannot tell by looking, and primality is no help.** $19$ is prime and $19 / 95$ is the worst pairing available, because $95$ happens to be a multiple of it; $17$ is prime and $17 / 95$ is perfect. **The test is $\gcd ( N_1 , N_2 ) = 1$ and nothing else.** Changing the first wheel from 95 to 96 teeth moves the ratio by $1.05\ \%$ and takes the visited count from 5 to 95 — **the cheapest reliability improvement available in gear-train design, and the one that never appears in a strength calculation.**
+:::
+:::
+
+::: quiz Recirculating power {#quiz-circ}
+An epicyclic with $\alpha = 6$ has its ring driven at $+ 600\ \mathrm{rev / min}$ by a $3600\lambda$-unit source and its sun driven at $- 3000\ \mathrm{rev / min}$ by a second source, where $\lambda$ is the torque scale factor $T_s : T_r : T_c = 1 : 6 : - 7$. What is the carrier speed, and roughly what is the efficiency?
+
+- [x] $+ 86\ \mathrm{rev / min}$ and about $8\ \%$ — the useful output is small because it is the difference of two large numbers, while the loss is not
+- [ ] $+ 86\ \mathrm{rev / min}$ and about $98\ \%$, because efficiency is a property of the meshes and not of the speeds
+- [ ] $- 343\ \mathrm{rev / min}$ and about $98\ \%$
+- [ ] The arrangement is impossible: a planetary cannot have two inputs
+
+::: solution
+**$+ 86\ \mathrm{rev / min}$ and about $8\ \%$.** Willis gives $\omega_c = ( \omega_s + \alpha \omega_r ) / ( 1 + \alpha ) = ( - 3000 + 3600 ) / 7 = + 85.7$. The power balance is
+
+$$
+P_{\mathrm{ring}} = 6 \lambda \times 600 = 3600 \lambda \quad \text{in}, \qquad
+P_{\mathrm{sun}} = 1 \lambda \times ( - 3000 ) = - 3000 \lambda \quad \text{out of the sun}, \qquad
+P_c = - 7 \lambda \times 85.7 = 600 \lambda \ \text{out}
+$$
+
+and the loss, evaluated in the carrier frame, is $0.02 \times | \omega_s - \omega_c | = 0.02 \times 3086 = 61.7 \lambda$. Against a total external input of $6600 \lambda$ the efficiency is $\left( 600 - 61.7 \right) / 6600 = 8.2\ \%$.
+
+**Option 2 is the tempting wrong answer, and it is wrong for a reason worth stating exactly: $\eta_0$ is a property of the meshes, but the *loss* is $\eta_0$ times the relative velocity at the mesh, and the relative velocity is set by the designer's choice of which member to hold and how fast to turn the others.** Push the sun to $- 3600\ \mathrm{rev / min}$ and the carrier stops dead: the ring's $3600 \lambda$ is delivered straight back out at the sun, $72 \lambda$ is destroyed as heat, and the machine transmits nothing at all. **That is a stall, and every split-path transmission has one somewhere in its map — the design question is whether the control system is allowed to steer into it.**
+:::
+:::
+
+
+::: exercise What a rigid ring costs {level=2 check="0.61"}
+A four-planet stage is designed with an axially floating ring gear and achieves $K_\gamma = 1.10$. A purchasing change substitutes a rigidly located ring and the same drawing gives $K_\gamma = 1.80$. By what factor must the stage's torque rating be reduced?
+
+::: solution
+Capacity goes as $n_p / K_\gamma$, and $n_p$ has not changed, so
+
+$$
+\frac{ T_{\mathrm{rigid}} }{ T_{\mathrm{floating}} } = \frac{ K_{\gamma, \mathrm{floating}} }{ K_{\gamma, \mathrm{rigid}} } = \frac{ 1.10 }{ 1.80 } = \boxed{ 0.61 }
+$$
+
+**a $39\ \%$ cut in torque rating, bought by a drawing change that removed one sliding fit and one clearance.** The mechanism is worth being explicit about, because it is the reason the floating ring is not an optional refinement. With a rigid ring, the four planets must each be positioned to a small fraction of a tooth thickness by the carrier's pin holes and the ring's bore at the same time; a $0.03\ \mathrm{mm}$ composite error at a mesh stiffness of $20\ \mathrm{N / \mu m}$ per millimetre of face width puts tens of per cent of the working load onto the luckiest planet. **A floating ring removes that constraint entirely: the ring slides along its axis until its own teeth are carrying uniformly, and the tolerance stack-up disappears from the load path.** The cost is a spline or a crown-tooth location, a seal that must tolerate the float, and an assembly instruction that says "do not tighten the ring retaining plate until the gears are meshed" — which is exactly the instruction that gets ignored, and the resulting gearbox is a $0.61$ machine wearing a $1.00$ nameplate.
+:::
+:::
+
+## Where this leads
+
+- **Efficiency is a map, not a number.** The variator curve of [[#ex-variator]] is the same shape for every split-path transmission, and the machines that failed — the hydrostatic-mechanical CVTs of the 1970s, the differential-fed belt drives of the 1980s — failed because a control system was allowed to park in the flat part of the curve. The design deliverable is the map with a forbidden region drawn on it, not a nameplate percentage.
+- **The next layer up is the control system.** A planetary with two driven members is a differential, and a differential with one member driven by a machine rather than braked is a *power-split device* — which is the reason a hybrid-electric car has no gearbox at all, and the reason its engine can run at one speed while the wheels run at another. That is the subject of [[control-systems]] applied to a drivetrain.
+- **Elasticity is what makes the arithmetic work.** Load sharing, crowning, floating rings and torsionally soft carriers are all the same trick: letting deformation do what the tolerance stack cannot. The quantitative version lives in [[materials-science/mechanical-properties]] and in [[vibrations/two-degrees-of-freedom]], where the mesh stiffness of $20\ \mathrm{N / \mu m}$ per millimetre reappears as the spring in the classic three-mass torsional model that decides whether a gearbox's first torsional natural frequency sits under a gear-mesh frequency.
+- **Tooth form is a separate subject and a separate failure mode.** Everything here treats a gear as a ratio. [[mechanisms/gears]] treats it as a contact, and the two views disagree about which stage in the wind-turbine gearbox of [[#ex-wind]] will fail first — the arithmetic says none of them, the pitting calculation says stage 3, and the field data say the planet bearings.
+- **The integer problem does not go away; it becomes a design-space search.** When the ratio is one constraint among twenty — noise, mass, efficiency, packaging, commonality with a sibling product — the answer comes from enumerating legal tooth counts on a computer, which is exactly what the planetary searches behind every commercial gearbox reduce to.
+
+::: history
+| Year | Event |
+|---|---|
+| 1657, 1680s | **Robert Hooke** builds watches on epicyclic trains and uses the planetary arrangement as a working model of the solar system — the reason the small wheels are still called *planets* and the frame an *arm*. |
+| 1695 | **Philippe de La Hire** gives the first mathematical treatment of epicyclic gear trains, written for clockmakers; the theory of the subject exists for sixty years before its engineering does. |
+| 1804 | **Joseph-Marie Jacquard** patents a differential for his loom, to wind two threads at unequal rates — the first industrial use of a two-input gear train, and a mechanism that predates the motor car by ninety years. |
+| 1827 | **Cornélis and Jean-Joseph Merens** of The Hague patent the road-vehicle differential after a celebrated dispute with Christiaan Beyeren over who thought of it first; the question is still open. |
+| 1841, 1849 | **Robert Willis**, *Principes de la cinématique* (1841) and *The Principles of Mechanism* (1849), reduces every epicyclic train to one linear relation between three angular velocities, coins the word *kinematics*, and gives the superposition argument that is still taught as the "tabular method". |
+| 1939 | **General Motors Hydra-Matic**, fitted to the Oldsmobile Custom Cruiser, becomes the first mass-produced fully automatic transmission: four speeds from three planetary sets and a band, at $3.685 / 2.068 / 1.000 / 0.700$, with the ratios obtained by holding a different member of the same gear set each time. |
+| 1957, granted 1963 | **C.F. Musin's** US patent 3,095,752 describes the strain-wave drive: two teeth of difference between a flexible cup and a rigid spline, and a ratio of $- 99$ in one stage with zero backlash. The flexspline's fatigue life becomes a design constraint that no gear had ever had before. |
+| 1958–63 | **AGMA 218 and 6102** publish load distribution factors for multi-planet stages, converting load sharing from a matter of shop practice into a number that can be put into a rating equation — and making the difference between $K_\gamma = 1.05$ and $K_\gamma = 2.5$ a contractual one. |
+:::
+
+::: summary Key takeaways
+- **A gear ratio is an exact ratio of two integers.** That is the whole reason gears are used, and the whole reason gear-train design is a problem in number theory before it is one in strength.
+- **An idler changes only the sign and the centre distance.** Its tooth count cancels identically out of the train value; its mesh, bearings, seal, loss and natural frequency do not cancel.
+- **Make adjacent tooth counts coprime.** $\gcd ( N_1 , N_2 ) = 1$ is the test; primality of either count is not. A non-hunting pair wears a periodic pattern and reports it as a vibration at the wheel's own frequency.
+- **Willis: $\omega_s + \alpha \omega_r = ( 1 + \alpha ) \omega_c$.** One linear equation in three velocities; the tabular method is its superposition form and works on any epicyclic however complicated.
+- **The torques are $1 : \alpha : - ( 1 + \alpha )$, and the held member carries torque without power.** In a wind-turbine gearbox the biggest torque in the machine never reaches a shaft.
+- **Efficiency depends on which member you hold**, because the loss is proportional to the *relative* velocity at the mesh. Holding the sun instead of the ring is worth a factor of four in loss at $\alpha = 4$.
+- **Two driven members means recirculating power.** As the required ratio approaches the locked-up value, the useful output becomes the difference of two large numbers while the loss stays large, and the efficiency goes to zero and then negative. Every split-path transmission has this stall somewhere in its map.
+- **Three conditions decide a planetary: assembly, adjacency, phase.** $( Z_s + Z_r ) / n_p$ integer, $\sin ( \pi / n_p ) > Z_p / ( Z_s + Z_p )$, and matching tooth phase. **The adjacency condition, not the strength, is what forces a $100 : 1$ wind-turbine gearbox to be three stages** — at $\alpha = 99$ it permits only two planets.
+- **Planets do not share load unless you let them.** Capacity goes as $n_p / K_\gamma$; a floating ring buys $K_\gamma = 1.05$–$1.10$ and a rigid ring costs you $39\ \%$ of the rating.
+- **Choose the ratio within a factor of two of $\sqrt{ J_L / J_m }$, then choose it as small as speed and accuracy allow.** The acceleration plateau is wide; the reflected backlash is proportional to $i$ and is not.
+:::
+
+## Further reading
+
+- **R. Willis**, *The Principles of Mechanism, Manufactures and Arts* (London, 1841; 2nd ed. 1849) — the epicyclic relation, the classification of mechanisms, and the origin of the word *kinematics*. Read the chapters on "momental force" to see the subject being founded.
+- **J.J. Uicker, G.R. Pennock & J.E. Shigley**, *Theory of Machines and Mechanisms*, 5th ed. (Oxford University Press, 2015) — the cleanest treatment of the tabular method and of the difference between train value and ratio, with the gear-train chapter that most courses assign.
+- **R.C. Norton**, *Design of Machinery*, 6th ed. (McGraw-Hill, 2020) — planetary examples worked the way a designer works them, and the best available figures for load distribution factors and their dependence on the floating arrangement.
+- **F.L. Litvin & A. Fuentes**, *Gear Geometry and Applied Theory*, 2nd ed. (Cambridge University Press, 2004) — the theory of tooth forms, profile shift and the ground-finish geometry that makes $K_\gamma$ achievable at all.
+- **D.P. Tennent**, *Gearless Drives* (Cambridge University Press, 1993) — the variator and the recirculating-power problem, treated as a mechanism-design subject rather than a control one.
+- **AGMA 6102-F19**, *Principles of Relations for Calculating the Tooth Loading of Parallel Axis Gear Drives* — where the $K_\gamma$ figures come from, what they assume, and how far they can be trusted outside the range of the tests behind them.
+- **C.F. Musin**, "Flexible shaft transmission," US Patent 3,095,752 (granted 3 December 1963) — four pages that created the harmonic drive, and a model example of a patent worth reading as engineering rather than as prior art.
