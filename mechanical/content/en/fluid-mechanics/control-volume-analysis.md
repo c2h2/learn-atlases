@@ -130,7 +130,7 @@ $$
 $$
 F = \rho A \left( V - u \right)^{2}, \qquad P = F u = \rho A u \left( V - u \right)^{2}
 $$
-**The maximum power** is at $u = V / 3$ with $P_{\max} = 4 \rho A V^{3} / 27 = 0.148\ \rho A V^{3}$ — **only $14.8\ \%$ of the jet's power**, because two thirds of the jet's kinetic energy leaves with the plate's wake.
+**The maximum power** is at $u = V / 3$ with $P_{\max} = 4 \rho A V^{3} / 27 = 0.148\ \rho A V^{3}$ — **$29.6\%$ of the jet's own power $\tfrac{1}{2}\rho A V^{3}$**, because the plate's wake still carries most of the kinetic energy away.
 **A jet on a curved vane that turns it through an angle $\theta$** (measuring the exit relative velocity's component against the direction of motion):
 $$
 \boxed{ F_x = \rho A \left( V - u \right)^{2} \left( 1 - \cos \theta \right) }
@@ -147,7 +147,11 @@ $$
 = 0.296 \quad \left( \text{flat plate} \right), \qquad
 0.593 \quad \left( \text{semicircular bucket} \right)
 $$
-**The number that is usually quoted and usually misquoted.** Pelton-wheel texts quote $\eta_{\max} \approx 0.98$ because they measure the efficiency against the **intercepted** jet power $\tfrac{1}{2} \rho A \left( V - u \right) V^{2}$ and not the jet's own power $\tfrac{1}{2} \rho A V^{3}$, and because they take $u / V = 1 / 2$ — the value that maximises the **power at fixed $u / V$** once the wheel is running away — and hold $\beta_2$ near $180^{\circ}$. **Both conventions are in the literature; state which one you are using.**
+**The number that is usually quoted and usually misquoted.** Pelton-wheel texts quote $\eta_{\max} \approx 0.98$ because they divide by the **intercepted** jet power $\tfrac{1}{2} \rho A \left( V - u \right) V^{2}$ and not by the jet's own power $\tfrac{1}{2} \rho A V^{3}$, which removes one factor of $\left( 1 - u / V \right)$ and turns $2 x \left( 1 - x \right)^{2}$ into $2 x \left( 1 - x \right)$ — a parabola whose maximum is at $x = 1 / 2$ with
+$$
+\eta_{\mathrm{intercepted}, \max} = \tfrac{1}{2} \left( 1 - \cos \beta_2 \right) = 0.983 \quad \text{for} \quad \beta_2 = 165^{\circ}
+$$
+**Both conventions are in the literature, they differ by $44\%$ at the design point, and neither is wrong; state which one you are using.** The practical consequence is that a runner quoted at "$92\%$ efficiency" on the intercepted basis is at $0.92 \times \left( 1 - 0.46 \right) = 0.50$ on the jet basis, and a hydraulic-efficiency guarantee written without the definition is unenforceable.
 **The worked Pelton case.** A jet of $d = 100\ \mathrm{mm}$ at $V = 100\ \mathrm{m / s}$ on buckets with $\beta_2 = 165^{\circ}$ running at $u = 45\ \mathrm{m / s}$:
 $$
 \dot{m} = \rho A \left( V - u \right) = 1{,}000 \times 7.854 \times 10^{- 3} \times 55 = 432\ \mathrm{kg / s}
@@ -477,7 +481,7 @@ $$
 F = \rho A \left( V - u \right)^{2} = 1{,}000 \times 1.963 \times 10^{- 3} \times 400 = 785\ \mathrm{N}, \qquad
 P = F u = 7{,}850\ \mathrm{W}
 $$
-**The jet's own power is** $\tfrac{1}{2} \rho A V^{3} = 26.5\ \mathrm{kW}$, so the efficiency is $0.296$ — and the maximum possible for a flat plate is $0.148$ **of the intercepted jet power**, which is $\rho A \left( V - u \right) V^{2} / 2 = 17.7\ \mathrm{kW}$, giving $0.44$ of that. **The two efficiency definitions differ by a factor of three and both appear in the literature; state which you are using.**
+**The jet's own power is** $\tfrac{1}{2} \rho A V^{3} = 26.5\ \mathrm{kW}$, so the efficiency on the jet basis is $7.85 / 26.5 = 0.296$. **The power actually intercepted by the plate** is $\tfrac{1}{2} \rho A \left( V - u \right) V^{2} = 17.7\ \mathrm{kW}$, giving $7.85 / 17.7 = 0.444$ on the intercepted basis — against a theoretical maximum of $0.500$ for a flat plate at $u / V = 1 / 2$. **The two definitions differ by $1/(1 - u/V) = 1.5$ here and both appear in the literature; state which you are using.**
 :::
 :::
 
