@@ -21,74 +21,74 @@ where $Q = \int_{A'} y \, \mathrm{d} A = A' \bar y'$ is taken over the area $A'$
 Take a slice of beam between sections at $x$ and $x + \mathrm{d} x$, and cut it horizontally at a level $y_1$, isolating the top part of area $A'$. The bending stress on that part is $\sigma = M y / I$ on the left face and $(M + \mathrm{d} M) y / I$ on the right, so the net horizontal force pushing the block forward is
 $$
 \int_{A'} \frac{(M + \mathrm{d} M) y}{I} \mathrm{d} A - \int_{A'} \frac{M y}{I} \mathrm{d} A
-= \frac{\\mathrm{d} M}{I} \int_{A'} y \, \mathrm{d} A = \frac{\\mathrm{d} M}{I} Q .
+= \frac{\mathrm{d} M}{I} \int_{A'} y \, \mathrm{d} A = \frac{\mathrm{d} M}{I} Q .
 $$
 The block is in equilibrium, so a horizontal shear force of the same magnitude must act along the cut. Its intensity per unit length is
 $$
-q = \frac{1}{\\mathrm{d} x} \\cdot \\frac{\\mathrm{d} M}{I} Q = \\frac{V Q}{I} ,
+q = \frac{1}{\mathrm{d} x} \cdot \frac{\mathrm{d} M}{I} Q = \frac{V Q}{I} ,
 $$
-using $\\mathrm{d} M / \\mathrm{d} x = V$. Dividing by the cut width $t$ gives $\\tau = V Q / I t$. The complementary shear stress on the transverse plane equals the longitudinal one, which is why a beam split lengthways along a horizontal plane is the classic demonstration: the two halves slide past each other under load.
+using $\mathrm{d} M / \mathrm{d} x = V$. Dividing by the cut width $t$ gives $\tau = V Q / I t$. The complementary shear stress on the transverse plane equals the longitudinal one, which is why a beam split lengthways along a horizontal plane is the classic demonstration: the two halves slide past each other under load.
 :::
 
 ::: proposition Shear-stress shape factors {#prop-shape-shear}
 For the common solid sections the maximum shear stress, on the neutral axis, is a fixed multiple of the average $V / A$:
 $$
-\\tau_{\\max} = \\frac{3}{2} \\frac{V}{A} \\text{ (rectangle)}, \\qquad
-\\tau_{\\max} = \\frac{4}{3} \\frac{V}{A} \\text{ (circle)}, \\qquad
-\\tau_{\\max} \\approx \\frac{V}{A_{\\text{web}}} \\text{ to } 1.25 \\frac{V}{A_{\\text{web}}} \\text{ (I-section)} .
+\tau_{\max} = \frac{3}{2} \frac{V}{A} \text{ (rectangle)}, \qquad
+\tau_{\max} = \frac{4}{3} \frac{V}{A} \text{ (circle)}, \qquad
+\tau_{\max} \approx \frac{V}{A_{\text{web}}} \text{ to } 1.25 \frac{V}{A_{\text{web}}} \text{ (I-section)} .
 $$
 For a rolled steel I-section the web alone carries $90$ to $95$ per cent of the shear, and the ratio of peak to mean web shear is $1.2$ to $1.3$.
 :::
 
 ::: proof
-For a **rectangle** of width $b$ and depth $d$, at distance $y$ from the neutral axis the first moment of the area below is $Q = b (d / 2 - y) \\times \\tfrac{1}{2} (d / 2 + y) = \\tfrac{b}{2} \\left( d^{2} / 4 - y^{2} \\right)$, so with $I = b d^{3} / 12$,
+For a **rectangle** of width $b$ and depth $d$, at distance $y$ from the neutral axis the first moment of the area below is $Q = b (d / 2 - y) \times \tfrac{1}{2} (d / 2 + y) = \tfrac{b}{2} \left( d^{2} / 4 - y^{2} \right)$, so with $I = b d^{3} / 12$,
 $$
-\\tau = \\frac{V Q}{I b} = \\frac{6 V}{b d^{3}} \\left( \\frac{d^{2}}{4} - y^{2} \\right),
+\tau = \frac{V Q}{I b} = \frac{6 V}{b d^{3}} \left( \frac{d^{2}}{4} - y^{2} \right),
 $$
-a parabola with $\\tau = 0$ at the surfaces and
+a parabola with $\tau = 0$ at the surfaces and
 $$
-\\tau_{\\max} = \\frac{6 V}{b d^{3}} \\cdot \\frac{d^{2}}{4} = \\frac{3 V}{2 b d} = \\frac{3}{2} \\frac{V}{A} .
+\tau_{\max} = \frac{6 V}{b d^{3}} \cdot \frac{d^{2}}{4} = \frac{3 V}{2 b d} = \frac{3}{2} \frac{V}{A} .
 $$
-For a **circle**, $Q = \\tfrac{2}{3} \\left( R^{2} - y^{2} \\right)^{3 / 2}$ and $b = 2 \\sqrt{R^{2} - y^{2}}$, giving $\\tau = 4 V (R^{2} - y^{2}) / (3 \\pi R^{4})$ and $\\tau_{\\max} = 4 V / (3 \\pi R^{2}) = \\tfrac{4}{3} V / A$. For an **I-section**, $Q$ is dominated by the flanges' contribution, which is nearly constant over the web depth, so $\\tau = V Q / I t_w$ varies only slightly across the web and the peak sits at the neutral axis.
+For a **circle**, $Q = \tfrac{2}{3} \left( R^{2} - y^{2} \right)^{3 / 2}$ and $b = 2 \sqrt{R^{2} - y^{2}}$, giving $\tau = 4 V (R^{2} - y^{2}) / (3 \pi R^{4})$ and $\tau_{\max} = 4 V / (3 \pi R^{2}) = \tfrac{4}{3} V / A$. For an **I-section**, $Q$ is dominated by the flanges' contribution, which is nearly constant over the web depth, so $\tau = V Q / I t_w$ varies only slightly across the web and the peak sits at the neutral axis.
 :::
 
 ::: example Rectangular beam {#ex-timber-shear}
-A timber beam $100\\ \\mathrm{mm}$ wide and $200\\ \\mathrm{mm}$ deep carries a shear of $40\\ \\mathrm{kN}$. Find the maximum shear stress and compare it with the maximum bending stress if the beam's span-to-depth ratio is $12$ with a central load.
+A timber beam $100\ \mathrm{mm}$ wide and $200\ \mathrm{mm}$ deep carries a shear of $40\ \mathrm{kN}$. Find the maximum shear stress and compare it with the maximum bending stress if the beam's span-to-depth ratio is $12$ with a central load.
 ::: solution
 $$
-\\tau_{\\max} = \\frac{3 V}{2 A} = \\frac{3 \\times 40\,000}{2 \\times 100 \\times 200} = 3.0\\ \\mathrm{MPa},
+\tau_{\max} = \frac{3 V}{2 A} = \frac{3 \times 40\,000}{2 \times 100 \times 200} = 3.0\ \mathrm{MPa},
 $$
-against a mean of $V / A = 2.0\\ \\mathrm{MPa}$. For a central load on a span $L$, $M_{\\max} = P L / 4$ and $V = P / 2$, so with $L = 12 d = 2400\\ \\mathrm{mm}$ and $P = 80\\ \\mathrm{kN}$,
+against a mean of $V / A = 2.0\ \mathrm{MPa}$. For a central load on a span $L$, $M_{\max} = P L / 4$ and $V = P / 2$, so with $L = 12 d = 2400\ \mathrm{mm}$ and $P = 80\ \mathrm{kN}$,
 $$
-M_{\\max} = \\frac{80 \\times 2.4}{4} = 48\\ \\mathrm{kN\,m}, \\qquad
-\\sigma_{\\max} = \\frac{6 M}{b d^{2}} = \\frac{6 \\times 48 \\times 10^{6}}{100 \\times 200^{2}} = 7.2\\ \\mathrm{MPa}.
+M_{\max} = \frac{80 \times 2.4}{4} = 48\ \mathrm{kN\,m}, \qquad
+\sigma_{\max} = \frac{6 M}{b d^{2}} = \frac{6 \times 48 \times 10^{6}}{100 \times 200^{2}} = 7.2\ \mathrm{MPa}.
 $$
 *Sanity.* The shear stress is $42$ per cent of the bending stress, which is far higher than the designer's instinct. Timber is unusually weak in horizontal shear — parallel to the grain the shear strength is only $0.6$ to $1.0$ times the bending strength in many species, against a ratio of $0.58$ for tension in steel — so a short, heavily loaded timber beam fails by **horizontal shear** along the neutral axis, not by bending. This is why notched beams fail at the corner of the notch, why a bolt hole near the soffit of a deep glulam beam splits it lengthways, and why Eurocode and the National Design Specification both require a separate shear check at a change of depth.
 :::
 :::
 
 ::: example Rolled I-section {#ex-i-shear}
-For the $254 \\times 102\\ \\mathrm{UB}\\ 22$ of the previous chapter ($I_x = 28.2 \\times 10^{6}\\ \\mathrm{mm^{4}}$, depth $254.9\\ \\mathrm{mm}$, flange $101.7 \\times 8.4\\ \\mathrm{mm}$, web $6.0\\ \\mathrm{mm}$), find the shear stress at the neutral axis and just above the flange–web junction for $V = 150\\ \\mathrm{kN}$.
+For the $254 \times 102\ \mathrm{UB}\ 22$ of the previous chapter ($I_x = 28.2 \times 10^{6}\ \mathrm{mm^{4}}$, depth $254.9\ \mathrm{mm}$, flange $101.7 \times 8.4\ \mathrm{mm}$, web $6.0\ \mathrm{mm}$), find the shear stress at the neutral axis and just above the flange–web junction for $V = 150\ \mathrm{kN}$.
 ::: solution
 **First moment at the neutral axis.** Take the area above the neutral axis: the flange plus the web down to the axis,
 $$
-Q = \\underbrace{101.7 \\times 8.4 \\times 123.25}_{\\text{flange}} + \\underbrace{6.0 \\times 119.05 \\times 59.5}_{\\text{half web}}
-= 105.4 \\times 10^{3} + 42.5 \\times 10^{3} = 147.9 \\times 10^{3}\\ \\mathrm{mm^{3}},
+Q = \underbrace{101.7 \times 8.4 \times 123.25}_{\text{flange}} + \underbrace{6.0 \times 119.05 \times 59.5}_{\text{half web}}
+= 105.4 \times 10^{3} + 42.5 \times 10^{3} = 147.9 \times 10^{3}\ \mathrm{mm^{3}},
 $$
 $$
-\\tau_{\\max} = \\frac{150\,000 \\times 147.9 \\times 10^{3}}{28.2 \\times 10^{6} \\times 6.0} = 131\\ \\mathrm{MPa}.
+\tau_{\max} = \frac{150\,000 \times 147.9 \times 10^{3}}{28.2 \times 10^{6} \times 6.0} = 131\ \mathrm{MPa}.
 $$
-**Just above the junction**, only the flange contributes, $Q = 105.4 \\times 10^{3}\\ \\mathrm{mm^{3}}$, and the width is the web thickness:
+**Just above the junction**, only the flange contributes, $Q = 105.4 \times 10^{3}\ \mathrm{mm^{3}}$, and the width is the web thickness:
 $$
-\\tau_{\\text{junction, web side}} = \\frac{150\,000 \\times 105.4 \\times 10^{3}}{28.2 \\times 10^{6} \\times 6.0} = 93.3\\ \\mathrm{MPa}.
+\tau_{\text{junction, web side}} = \frac{150\,000 \times 105.4 \times 10^{3}}{28.2 \times 10^{6} \times 6.0} = 93.3\ \mathrm{MPa}.
 $$
-**Just inside the flange**, the same $Q$ divided by the flange width $101.7\\ \\mathrm{mm}$ gives
+**Just inside the flange**, the same $Q$ divided by the flange width $101.7\ \mathrm{mm}$ gives
 $$
-\\tau = 5.5\\ \\mathrm{MPa}.
+\tau = 5.5\ \mathrm{MPa}.
 $$
-**Mean web shear** over the clear web depth $238.1\\ \\mathrm{mm}$ is $150\,000 / (6.0 \\times 238.1) = 105\\ \\mathrm{MPa}$, so the peak is $1.25$ times the mean.
+**Mean web shear** over the clear web depth $238.1\ \mathrm{mm}$ is $150\,000 / (6.0 \times 238.1) = 105\ \mathrm{MPa}$, so the peak is $1.25$ times the mean.
 
-*Sanity.* Three things to notice. The stress **jumps by a factor of $17$** across the flange–web junction, because $Q$ is continuous but the width changes by $101.7 / 6.0$ — and that jump is a real stress concentration at the weld or roll junction, which is where an I-beam's web sometimes tears. The web carries essentially all the shear: the flanges contribute $105 / 148 = 71$ per cent of $Q$ but almost none of the shear force, because their stress is resolved mostly along their own thin axis. And $131\\ \\mathrm{MPa}$ against a yield shear of $0.58 \\times 355 = 206\\ \\mathrm{MPa}$ means this section is at $64$ per cent of its web shear capacity while its bending capacity is barely touched — which is why a **beam with a heavy bearing reaction and a short span** is checked for web bearing and web buckling, not for bending.
+*Sanity.* Three things to notice. The stress **jumps by a factor of $17$** across the flange–web junction, because $Q$ is continuous but the width changes by $101.7 / 6.0$ — and that jump is a real stress concentration at the weld or roll junction, which is where an I-beam's web sometimes tears. The web carries essentially all the shear: the flanges contribute $105 / 148 = 71$ per cent of $Q$ but almost none of the shear force, because their stress is resolved mostly along their own thin axis. And $131\ \mathrm{MPa}$ against a yield shear of $0.58 \times 355 = 206\ \mathrm{MPa}$ means this section is at $64$ per cent of its web shear capacity while its bending capacity is barely touched — which is why a **beam with a heavy bearing reaction and a short span** is checked for web bearing and web buckling, not for bending.
 :::
 :::
 
@@ -97,7 +97,7 @@ f: 131*(1-(x/127.45)^2)
 x: -127.45, 127.45
 y: 0, 135
 labels: \text{shear stress (MPa) across a rectangular section}
-caption: Parabolic shear stress distribution for a rectangular section, here drawn to the same peak as the I-section of Example 2 for comparison. The stress is zero at the outer fibres, where $Q$ vanishes, and $1.5$ times the mean at the neutral axis. Overlay the I-section's distribution and the difference is instructive: the I-section's curve is nearly flat across the web and drops abruptly in the flanges, because $Q$ grows very little between the junction and the neutral axis while the width collapses from $101.7$ to $6.0\\ \\mathrm{mm}$.
+caption: Parabolic shear stress distribution for a rectangular section, here drawn to the same peak as the I-section of Example 2 for comparison. The stress is zero at the outer fibres, where $Q$ vanishes, and $1.5$ times the mean at the neutral axis. Overlay the I-section's distribution and the difference is instructive: the I-section's curve is nearly flat across the web and drops abruptly in the flanges, because $Q$ grows very little between the junction and the neutral axis while the width collapses from $101.7$ to $6.0\ \mathrm{mm}$.
 :::
 
 ::: definition Shear centre {#def-shear-centre}
@@ -157,51 +157,51 @@ so the shear term is $21$ per cent of the total.
 
 ::: algorithm Fastener spacing in a built-up beam {#alg-shearflow}
 1. Compute $I$ and $Q$ for the **connected** part — the area that would slide off if the fasteners failed — about the neutral axis of the whole transformed section.
-2. Compute the shear flow $q = V Q / I$ in $\\mathrm{N / mm}$.
-3. Divide the fastener's **single-shear** capacity $F$ by $q$ to get the spacing: $s \\le F / q$. If the fasteners are in $n$ rows, use $n F$.
+2. Compute the shear flow $q = V Q / I$ in $\mathrm{N / mm}$.
+3. Divide the fastener's **single-shear** capacity $F$ by $q$ to get the spacing: $s \le F / q$. If the fasteners are in $n$ rows, use $n F$.
 4. Check the fastener in the **other** direction too: a nail in the flange of a bending beam also sees the vertical shear, and a bolt group sees both shear and the moment of any eccentricity.
 5. Check the **member** as well as the connector: the wood or plate between fasteners fails by bearing, by splitting along the grain, or by a plug tearing out, and in timber these usually govern before the fastener's own strength.
 :::
 
 ::: example Nailed built-up beam {#ex-nailed}
-A built-up beam has a $20 \\times 250\\ \\mathrm{mm}$ plywood web with two $140 \\times 30\\ \\mathrm{mm}$ flanges, giving $I = 191.3 \\times 10^{6}\\ \\mathrm{mm^{4}}$. It is nailed with two rows of nails of $1.5\\ \\mathrm{kN}$ single-shear capacity at the flange–web interfaces. Find the nail spacing for a shear of $30\\ \\mathrm{kN}$.
+A built-up beam has a $20 \times 250\ \mathrm{mm}$ plywood web with two $140 \times 30\ \mathrm{mm}$ flanges, giving $I = 191.3 \times 10^{6}\ \mathrm{mm^{4}}$. It is nailed with two rows of nails of $1.5\ \mathrm{kN}$ single-shear capacity at the flange–web interfaces. Find the nail spacing for a shear of $30\ \mathrm{kN}$.
 ::: solution
 The flange's first moment about the neutral axis is
 $$
-Q = 140 \\times 30 \\times 140 = 588 \\times 10^{3}\\ \\mathrm{mm^{3}},
+Q = 140 \times 30 \times 140 = 588 \times 10^{3}\ \mathrm{mm^{3}},
 $$
-with $\\bar y' = 125 + 15 = 140\\ \\mathrm{mm}$. The shear flow at each interface is
+with $\bar y' = 125 + 15 = 140\ \mathrm{mm}$. The shear flow at each interface is
 $$
-q = \\frac{V Q}{I} = \\frac{30\,000 \\times 588 \\times 10^{3}}{191.3 \\times 10^{6}} = 92.2\\ \\mathrm{N / mm}.
+q = \frac{V Q}{I} = \frac{30\,000 \times 588 \times 10^{3}}{191.3 \times 10^{6}} = 92.2\ \mathrm{N / mm}.
 $$
-With two rows of nails the resistance per unit length is $2 \\times 1500 / s$, so
+With two rows of nails the resistance per unit length is $2 \times 1500 / s$, so
 $$
-s \\le \\frac{2 \\times 1500}{92.2} = 32.5\\ \\mathrm{mm}.
+s \le \frac{2 \times 1500}{92.2} = 32.5\ \mathrm{mm}.
 $$
-Use $30\\ \\mathrm{mm}$ centres.
+Use $30\ \mathrm{mm}$ centres.
 
-*Sanity.* $30\\ \\mathrm{mm}$ centres is dense, and it is why a nailed built-up beam is a poor substitute for a rolled section: the nails must be closely spaced near the ends where the shear is high, and the labour cost swamps the material saving. Real practice tapers the spacing towards the supports, where $V$ is large, and opens it at mid-span, where $V$ is nearly zero — the same logic as a leaf spring's graduated clips or a steel girder's web stiffeners. Note also that the calculation gives the force **along** the beam; the nail must also resist the vertical shear that tries to split the flange off, and in timber the governing mode is usually the flange splitting, not the nail shearing.
+*Sanity.* $30\ \mathrm{mm}$ centres is dense, and it is why a nailed built-up beam is a poor substitute for a rolled section: the nails must be closely spaced near the ends where the shear is high, and the labour cost swamps the material saving. Real practice tapers the spacing towards the supports, where $V$ is large, and opens it at mid-span, where $V$ is nearly zero — the same logic as a leaf spring's graduated clips or a steel girder's web stiffeners. Note also that the calculation gives the force **along** the beam; the nail must also resist the vertical shear that tries to split the flange off, and in timber the governing mode is usually the flange splitting, not the nail shearing.
 :::
 :::
 
 ::: example Shear centre of a channel {#ex-shear-centre}
-A channel $150\\ \\mathrm{mm}$ deep with $50\\ \\mathrm{mm}$ flanges has a $6\\ \\mathrm{mm}$ web and $8\\ \\mathrm{mm}$ flanges. Find the shear centre.
+A channel $150\ \mathrm{mm}$ deep with $50\ \mathrm{mm}$ flanges has a $6\ \mathrm{mm}$ web and $8\ \mathrm{mm}$ flanges. Find the shear centre.
 ::: solution
 The shear flow in a flange at distance $s$ from its free tip is $q (s) = V (t_f s) (h / 2) / I$, so the total force in one flange is
 $$
-F = \\int_0^b q \, \\mathrm{d} s = \\frac{V t_f h b^{2}}{4 I} .
+F = \int_0^b q \, \mathrm{d} s = \frac{V t_f h b^{2}}{4 I} .
 $$
 The two flange forces form a couple about the web's centreline, and the shear centre lies at $e$ from the web where $V e = F h$:
 $$
-e = \\frac{t_f h^{2} b^{2}}{4 I} .
+e = \frac{t_f h^{2} b^{2}}{4 I} .
 $$
-With $I = t_w h^{3} / 12 + 2 b t_f (h / 2)^{2} = 6 \\times 150^{3} / 12 + 2 \\times 50 \\times 8 \\times 75^{2} = 1.688 \\times 10^{6} + 4.500 \\times 10^{6} = 6.188 \\times 10^{6}\\ \\mathrm{mm^{4}}$,
+With $I = t_w h^{3} / 12 + 2 b t_f (h / 2)^{2} = 6 \times 150^{3} / 12 + 2 \times 50 \times 8 \times 75^{2} = 1.688 \times 10^{6} + 4.500 \times 10^{6} = 6.188 \times 10^{6}\ \mathrm{mm^{4}}$,
 $$
-e = \\frac{8 \\times 150^{2} \\times 50^{2}}{4 \\times 6.188 \\times 10^{6}} = 18.2\\ \\mathrm{mm}
+e = \frac{8 \times 150^{2} \times 50^{2}}{4 \times 6.188 \times 10^{6}} = 18.2\ \mathrm{mm}
 $$
-on the side **away** from the flanges' open face — equivalently, $e = 3 b^{2} t_f / \\left( 6 b t_f + h t_w \\right) = 60\,000 / 3300 = 18.2\\ \\mathrm{mm}$. $\checkmark$
+on the side **away** from the flanges' open face — equivalently, $e = 3 b^{2} t_f / \left( 6 b t_f + h t_w \right) = 60\,000 / 3300 = 18.2\ \mathrm{mm}$. $\checkmark$
 
-*Sanity.* A load applied through the centroid, $18.2\\ \\mathrm{mm}$ from the shear centre, applies a torque of $18.2\\ \\mathrm{mm}$ times the shear, and the beam twists as well as bends. For a thin-walled channel the eccentricity is of the order of the flange width, so a channel used as a beam with a load hanging from its top flange — the natural thing to do — is **always** torsionally loaded, and codes require either a strap across the top or an allowance for the twisting. This is why purlins are tied to the roof deck, why a cantilevered channel bracket is loaded through its web and not its tip, and why closed sections, whose shear centre is well defined and often inside the section, are preferred wherever load position cannot be controlled.
+*Sanity.* A load applied through the centroid, $18.2\ \mathrm{mm}$ from the shear centre, applies a torque of $18.2\ \mathrm{mm}$ times the shear, and the beam twists as well as bends. For a thin-walled channel the eccentricity is of the order of the flange width, so a channel used as a beam with a load hanging from its top flange — the natural thing to do — is **always** torsionally loaded, and codes require either a strap across the top or an allowance for the twisting. This is why purlins are tied to the roof deck, why a cantilevered channel bracket is loaded through its web and not its tip, and why closed sections, whose shear centre is well defined and often inside the section, are preferred wherever load position cannot be controlled.
 :::
 :::
 
@@ -236,11 +236,11 @@ $$
 :::
 
 ::: warning Long beams and short beams
-Euler–Bernoulli beam theory, and therefore $\\sigma = M c / I$ and $\\tau = V Q / I t$ as derived from it, is exact only in the limit of a long, slender beam. For a beam shorter than about five depths, the assumption that plane sections remain plane becomes poor, the shear stress is not parabolic, and the deflection from shear deformation is comparable with that from bending. The correction is Timoshenko beam theory, which adds a shear-rotation term
+Euler–Bernoulli beam theory, and therefore $\sigma = M c / I$ and $\tau = V Q / I t$ as derived from it, is exact only in the limit of a long, slender beam. For a beam shorter than about five depths, the assumption that plane sections remain plane becomes poor, the shear stress is not parabolic, and the deflection from shear deformation is comparable with that from bending. The correction is Timoshenko beam theory, which adds a shear-rotation term
 $$
-\\frac{\\mathrm{d} w}{\\mathrm{d} x} = \\theta + \\frac{V}{k A G}, \\qquad k = \\frac{5}{6} \\text{ for a rectangle}, \\; \\frac{10}{9} \\text{ for a circle},
+\frac{\mathrm{d} w}{\mathrm{d} x} = \theta + \frac{V}{k A G}, \qquad k = \frac{5}{6} \text{ for a rectangle}, \; \frac{10}{9} \text{ for a circle},
 $$
-and it matters in practice for deep reinforced concrete coupling beams between shear walls, for short fibre-composite beams where the interlaminar shear strength is low, for rubber and elastomeric bearings, and for the deep "links" in eccentrically braced steel frames. A rule of thumb: if the shear deflection exceeds about $10$ per cent of the bending deflection, use Timoshenko; the ratio is of order $\\left( E / G \\right) \\left( A / A_w \\right) (d / L)^{2}$, which reaches $10$ per cent at $L / d$ near $5$ for steel and near $8$ for a composite.
+and it matters in practice for deep reinforced concrete coupling beams between shear walls, for short fibre-composite beams where the interlaminar shear strength is low, for rubber and elastomeric bearings, and for the deep "links" in eccentrically braced steel frames. A rule of thumb: if the shear deflection exceeds about $10$ per cent of the bending deflection, use Timoshenko; the ratio is of order $\left( E / G \right) \left( A / A_w \right) (d / L)^{2}$, which reaches $10$ per cent at $L / d$ near $5$ for steel and near $8$ for a composite.
 :::
 
 ::: history
@@ -267,92 +267,92 @@ Shear stress combines with bending stress in the principal-stress calculation of
 ::: summary
 - Shear flow $q = V Q / I$ is a force per unit length along the beam; the shear stress is $q$ divided by the width at the level of the cut.
 - $Q$ is the first moment of the area between the cut and the free surface; it vanishes at the outer fibres, so the shear stress is zero there and maximum at the neutral axis.
-- Peak shear is $1.5 V / A$ for a rectangle, $1.33 V / A$ for a circle, and about $1.25 V / A_{\\text{web}}$ for an I-section, whose web carries $90$ per cent or more of the shear.
+- Peak shear is $1.5 V / A$ for a rectangle, $1.33 V / A$ for a circle, and about $1.25 V / A_{\text{web}}$ for an I-section, whose web carries $90$ per cent or more of the shear.
 - The stress jumps at a change of width by the ratio of the widths, which is why I-beams tear at the flange–web junction.
-- Fastener spacing follows from $s \\le n F / q$; taper it towards the supports where the shear is large.
+- Fastener spacing follows from $s \le n F / q$; taper it towards the supports where the shear is large.
 - A load not applied through the **shear centre** twists the beam; for a channel the eccentricity is of the order of the flange width.
 :::
 
 ## Exercises
 
 ::: exercise Maximum shear {level=1 check="26.5"}
-A circular bar of $40\\ \\mathrm{mm}$ diameter carries $25\\ \\mathrm{kN}$ of shear. Find the maximum shear stress in MPa.
+A circular bar of $40\ \mathrm{mm}$ diameter carries $25\ \mathrm{kN}$ of shear. Find the maximum shear stress in MPa.
 ::: solution
-$A = 1257\\ \\mathrm{mm^{2}}$, $\\tau_{\\max} = \\tfrac{4}{3} V / A = \\tfrac{4}{3} \\times 25\,000 / 1257 = 26.5\\ \\mathrm{MPa}$.
-*Note.* The mean is $19.9\\ \\mathrm{MPa}$; the peak is a third higher, on the neutral axis.
+$A = 1257\ \mathrm{mm^{2}}$, $\tau_{\max} = \tfrac{4}{3} V / A = \tfrac{4}{3} \times 25\,000 / 1257 = 26.5\ \mathrm{MPa}$.
+*Note.* The mean is $19.9\ \mathrm{MPa}$; the peak is a third higher, on the neutral axis.
 :::
 :::
 
 ::: exercise Rectangle {level=1 check="4.0"}
-A $75 \\times 150\\ \\mathrm{mm}$ rectangular beam carries $30\\ \\mathrm{kN}$ of shear. Find the maximum shear stress in MPa.
+A $75 \times 150\ \mathrm{mm}$ rectangular beam carries $30\ \mathrm{kN}$ of shear. Find the maximum shear stress in MPa.
 ::: solution
-$\\tau_{\\max} = 3 V / (2 A) = 3 \\times 30\,000 / (2 \\times 75 \\times 150) = 4.0\\ \\mathrm{MPa}$.
-*Note.* The answer is $4.0\\ \\mathrm{MPa}$, which is close to the parallel-to-grain shear strength of many softwoods — a reminder that timber beams are shear-critical at spans where a steel beam would never be checked for shear.
+$\tau_{\max} = 3 V / (2 A) = 3 \times 30\,000 / (2 \times 75 \times 150) = 4.0\ \mathrm{MPa}$.
+*Note.* The answer is $4.0\ \mathrm{MPa}$, which is close to the parallel-to-grain shear strength of many softwoods — a reminder that timber beams are shear-critical at spans where a steel beam would never be checked for shear.
 :::
 :::
 
 ::: exercise Shear flow {level=1 check="60"}
-A built-up section has $I = 120 \\times 10^{6}\\ \\mathrm{mm^{4}}$ and the connected flange has $Q = 240 \\times 10^{3}\\ \\mathrm{mm^{3}}$. What is the shear flow for $V = 30\\ \\mathrm{kN}$, in $\\mathrm{N / mm}$?
+A built-up section has $I = 120 \times 10^{6}\ \mathrm{mm^{4}}$ and the connected flange has $Q = 240 \times 10^{3}\ \mathrm{mm^{3}}$. What is the shear flow for $V = 30\ \mathrm{kN}$, in $\mathrm{N / mm}$?
 ::: solution
-$q = V Q / I = 30\,000 \\times 240 \\times 10^{3} / (120 \\times 10^{6}) = 60\\ \\mathrm{N / mm}$.
+$q = V Q / I = 30\,000 \times 240 \times 10^{3} / (120 \times 10^{6}) = 60\ \mathrm{N / mm}$.
 :::
 :::
 
 ::: exercise Fastener spacing {level=2}
-For the beam of the previous exercise, what nail spacing is needed if each nail carries $1.2\\ \\mathrm{kN}$ in single shear, with one row each side?
+For the beam of the previous exercise, what nail spacing is needed if each nail carries $1.2\ \mathrm{kN}$ in single shear, with one row each side?
 ::: solution
-$s = F / q = 1200 / 60 = 20\\ \\mathrm{mm}$.
-*Sanity.* $20\\ \\mathrm{mm}$ centres is below the minimum edge and end distance for most nails, so the connection is not feasible as drawn: the designer must use two rows, higher-capacity fasteners, or a glued joint. Shear flow calculations in timber routinely produce this answer, which is why glulam and plywood webs replaced nailed built-up sections.
+$s = F / q = 1200 / 60 = 20\ \mathrm{mm}$.
+*Sanity.* $20\ \mathrm{mm}$ centres is below the minimum edge and end distance for most nails, so the connection is not feasible as drawn: the designer must use two rows, higher-capacity fasteners, or a glued joint. Shear flow calculations in timber routinely produce this answer, which is why glulam and plywood webs replaced nailed built-up sections.
 :::
 :::
 
 ::: exercise I-section {level=2}
-For the $254 \\times 102\\ \\mathrm{UB}\\ 22$ of Example 2, find the shear force that produces a web shear stress of $100\\ \\mathrm{MPa}$, and compare it with the section's design shear capacity of $215\\ \\mathrm{kN}$.
+For the $254 \times 102\ \mathrm{UB}\ 22$ of Example 2, find the shear force that produces a web shear stress of $100\ \mathrm{MPa}$, and compare it with the section's design shear capacity of $215\ \mathrm{kN}$.
 ::: solution
-From $\\tau = V Q / I t_w$ with $Q = 147.9 \\times 10^{3}\\ \\mathrm{mm^{3}}$,
+From $\tau = V Q / I t_w$ with $Q = 147.9 \times 10^{3}\ \mathrm{mm^{3}}$,
 $$
-V = \\frac{100 \\times 28.2 \\times 10^{6} \\times 6.0}{147.9 \\times 10^{3}} = 114.5\\ \\mathrm{kN}.
+V = \frac{100 \times 28.2 \times 10^{6} \times 6.0}{147.9 \times 10^{3}} = 114.5\ \mathrm{kN}.
 $$
-The design capacity of $215\\ \\mathrm{kN}$ corresponds to a mean web stress of $215\,000 / (6.0 \\times 238.1) = 151\\ \\mathrm{MPa}$, which is $0.58 \\times 355 / 1.35$ — the code's shear yield divided by the partial factor. The peak is $1.25$ times that, $189\\ \\mathrm{MPa}$, still below shear yield.
+The design capacity of $215\ \mathrm{kN}$ corresponds to a mean web stress of $215\,000 / (6.0 \times 238.1) = 151\ \mathrm{MPa}$, which is $0.58 \times 355 / 1.35$ — the code's shear yield divided by the partial factor. The peak is $1.25$ times that, $189\ \mathrm{MPa}$, still below shear yield.
 *Sanity.* Codes design the web on the **mean** stress, not the peak, because the peak is local and the material redistributes. That is the same argument that makes a stress concentration harmless under static load in a ductile section.
 :::
 :::
 
 ::: exercise Shear centre {level=2}
-Find the shear centre of a channel $200\\ \\mathrm{mm}$ deep with $70\\ \\mathrm{mm}$ flanges, $8\\ \\mathrm{mm}$ flange thickness and $6\\ \\mathrm{mm}$ web thickness.
+Find the shear centre of a channel $200\ \mathrm{mm}$ deep with $70\ \mathrm{mm}$ flanges, $8\ \mathrm{mm}$ flange thickness and $6\ \mathrm{mm}$ web thickness.
 ::: solution
 $$
-e = \\frac{3 b^{2} t_f}{6 b t_f + h t_w}
-= \\frac{3 \\times 70^{2} \\times 8}{6 \\times 70 \\times 8 + 200 \\times 6}
-= \\frac{117\,600}{3360 + 1200} = 25.6\\ \\mathrm{mm}.
+e = \frac{3 b^{2} t_f}{6 b t_f + h t_w}
+= \frac{3 \times 70^{2} \times 8}{6 \times 70 \times 8 + 200 \times 6}
+= \frac{117\,600}{3360 + 1200} = 25.6\ \mathrm{mm}.
 $$
-A load applied at the centroid, $25.6\\ \\mathrm{mm}$ from the web, applies a torque of $0.0256 V$; for a $50\\ \\mathrm{kN}$ shear that is $1.28\\ \\mathrm{kN\,m}$, which is not a rounding error.
+A load applied at the centroid, $25.6\ \mathrm{mm}$ from the web, applies a torque of $0.0256 V$; for a $50\ \mathrm{kN}$ shear that is $1.28\ \mathrm{kN\,m}$, which is not a rounding error.
 :::
 :::
 
 ::: exercise Design {level=3}
-A glulam beam $120\\ \\mathrm{mm}$ wide and $360\\ \\mathrm{mm}$ deep spans $4.8\\ \\mathrm{m}$ simply supported and carries a central load of $45\\ \\mathrm{kN}$. Check bending for an allowable $24\\ \\mathrm{MPa}$ and horizontal shear for an allowable $2.0\\ \\mathrm{MPa}$. Then check a $60\\ \\mathrm{mm}$ deep notch $120\\ \\mathrm{mm}$ long at mid-span on the soffit.
+A glulam beam $120\ \mathrm{mm}$ wide and $360\ \mathrm{mm}$ deep spans $4.8\ \mathrm{m}$ simply supported and carries a central load of $45\ \mathrm{kN}$. Check bending for an allowable $24\ \mathrm{MPa}$ and horizontal shear for an allowable $2.0\ \mathrm{MPa}$. Then check a $60\ \mathrm{mm}$ deep notch $120\ \mathrm{mm}$ long at mid-span on the soffit.
 ::: solution
-$M_{\\max} = 45 \\times 4.8 / 4 = 54\\ \\mathrm{kN\,m}$, $V = 22.5\\ \\mathrm{kN}$.
+$M_{\max} = 45 \times 4.8 / 4 = 54\ \mathrm{kN\,m}$, $V = 22.5\ \mathrm{kN}$.
 **Bending.**
 $$
-\\sigma = \\frac{6 M}{b d^{2}} = \\frac{6 \\times 54 \\times 10^{6}}{120 \\times 360^{2}} = 20.8\\ \\mathrm{MPa} < 24 \\quad \\checkmark
+\sigma = \frac{6 M}{b d^{2}} = \frac{6 \times 54 \times 10^{6}}{120 \times 360^{2}} = 20.8\ \mathrm{MPa} < 24 \quad \checkmark
 $$
 **Shear, unnotched.**
 $$
-\\tau = \\frac{3 V}{2 b d} = \\frac{3 \\times 22\,500}{2 \\times 120 \\times 360} = 0.78\\ \\mathrm{MPa} < 2.0 \\quad \\checkmark
+\tau = \frac{3 V}{2 b d} = \frac{3 \times 22\,500}{2 \times 120 \times 360} = 0.78\ \mathrm{MPa} < 2.0 \quad \checkmark
 $$
-**Notched.** At the notch the remaining depth is $300\\ \\mathrm{mm}$ and the horizontal shear stress at the neutral axis of the reduced section is
+**Notched.** At the notch the remaining depth is $300\ \mathrm{mm}$ and the horizontal shear stress at the neutral axis of the reduced section is
 $$
-\\tau = \\frac{3 V}{2 b d'} = \\frac{3 \\times 22\,500}{2 \\times 120 \\times 300} = 0.94\\ \\mathrm{MPa},
+\tau = \frac{3 V}{2 b d'} = \frac{3 \times 22\,500}{2 \times 120 \times 300} = 0.94\ \mathrm{MPa},
 $$
 but the notch also creates a **perpendicular-to-grain tension** at its inner corner. The standard estimate for that stress is
 $$
-f_{t,\\perp} = \\frac{1.5 V}{b d'} \\left( \\frac{d}{d'} \\right)^{2} \\frac{e_r}{d} \\times 3
+f_{t,\perp} = \frac{1.5 V}{b d'} \left( \frac{d}{d'} \right)^{2} \frac{e_r}{d} \times 3
 $$
-with $e_r$ the horizontal distance from the load or reaction to the notch corner; here $e_r = 2400 - 120 = 2280\\ \\mathrm{mm}$ gives a large value, and the notch must be detailed with a radius and a steel plate, or moved to the support where the bending is low.
+with $e_r$ the horizontal distance from the load or reaction to the notch corner; here $e_r = 2400 - 120 = 2280\ \mathrm{mm}$ gives a large value, and the notch must be detailed with a radius and a steel plate, or moved to the support where the bending is low.
 
-*Design comment.* The beam is at $87$ per cent of its bending capacity and $39$ per cent of its shear capacity, so the notch — which costs nothing in shear and everything in tension perpendicular to the grain — is what fails. Glulam splits perpendicular to the grain at $0.5$ to $1.0\\ \\mathrm{MPa}$, and a square-cornered notch at mid-span of a fully stressed beam reliably produces a crack that runs horizontally to the nearest support and drops the load. The rule is: never notch a glulam beam in the middle third of the span, and if you must, radius the corner and reinforce it.
+*Design comment.* The beam is at $87$ per cent of its bending capacity and $39$ per cent of its shear capacity, so the notch — which costs nothing in shear and everything in tension perpendicular to the grain — is what fails. Glulam splits perpendicular to the grain at $0.5$ to $1.0\ \mathrm{MPa}$, and a square-cornered notch at mid-span of a fully stressed beam reliably produces a crack that runs horizontally to the nearest support and drops the load. The rule is: never notch a glulam beam in the middle third of the span, and if you must, radius the corner and reinforce it.
 :::
 :::
 
@@ -361,27 +361,27 @@ Derive the parabolic shear stress distribution for a rectangular section, show t
 ::: solution
 At distance $y$ from the neutral axis the first moment of the area above the cut is
 $$
-Q = b \\left( \\frac{d}{2} - y \\right) \\cdot \\frac{1}{2} \\left( \\frac{d}{2} + y \\right)
-= \\frac{b}{2} \\left( \\frac{d^{2}}{4} - y^{2} \\right),
+Q = b \left( \frac{d}{2} - y \right) \cdot \frac{1}{2} \left( \frac{d}{2} + y \right)
+= \frac{b}{2} \left( \frac{d^{2}}{4} - y^{2} \right),
 $$
 so with $I = b d^{3} / 12$ and $t = b$,
 $$
-\\tau (y) = \\frac{V Q}{I b} = \\frac{6 V}{b d^{3}} \\left( \\frac{d^{2}}{4} - y^{2} \\right).
+\tau (y) = \frac{V Q}{I b} = \frac{6 V}{b d^{3}} \left( \frac{d^{2}}{4} - y^{2} \right).
 $$
 The shear force carried above the neutral axis is
 $$
-\\int_0^{d/2} \\tau b \, \\mathrm{d} y
-= \\frac{6 V}{d^{3}} \\left[ \\frac{d^{2} y}{4} - \\frac{y^{3}}{3} \\right]_0^{d/2}
-= \\frac{6 V}{d^{3}} \\left( \\frac{d^{3}}{8} - \\frac{d^{3}}{24} \\right)
-= \\frac{6 V}{d^{3}} \\cdot \\frac{d^{3}}{12} = \\frac{V}{2} .
+\int_0^{d/2} \tau b \, \mathrm{d} y
+= \frac{6 V}{d^{3}} \left[ \frac{d^{2} y}{4} - \frac{y^{3}}{3} \right]_0^{d/2}
+= \frac{6 V}{d^{3}} \left( \frac{d^{3}}{8} - \frac{d^{3}}{24} \right)
+= \frac{6 V}{d^{3}} \cdot \frac{d^{3}}{12} = \frac{V}{2} .
 $$
-By symmetry each half carries half the shear; the shear stress **transmitted across the horizontal interface at the neutral axis** is the peak value $\\tau_{\\max} = 3 V / (2 b d)$ integrated over nothing, and the shear flow on that plane is $q = V Q_{\\max} / I = 3 V / (2 d)$.
+By symmetry each half carries half the shear; the shear stress **transmitted across the horizontal interface at the neutral axis** is the peak value $\tau_{\max} = 3 V / (2 b d)$ integrated over nothing, and the shear flow on that plane is $q = V Q_{\max} / I = 3 V / (2 d)$.
 
 The shear flow on the neutral plane is therefore
 $$
 q = \frac{V Q_{\max}}{I} = \frac{V \times b d^{2} / 8}{b d^{3} / 12} = \frac{3 V}{2 d} .
 $$
 
-*Why it matters.* Two planks stacked loosely and simply resting on each other act as two independent beams, each taking half the load and each stressed to $\\sigma = 6 (P / 2) / (b (d / 2)^{2})$, four times the stress of the composite section. To make them act together, the connection must transmit the shear flow $q = 3 V / (2 d)$ along the interface — a substantial force, concentrated on a plane where the two planks want to slide past each other by the largest relative amount. This is why a bolted or glued built-up beam must be designed for slip, why Eurocode 5 requires a deformation check with a slip modulus for a nailed or bolted composite beam, and why a beam whose connectors are sized only for the vertical shear is a beam that will not composite.
+*Why it matters.* Two planks stacked loosely and simply resting on each other act as two independent beams, each taking half the load and each stressed to $\sigma = 6 (P / 2) / (b (d / 2)^{2})$, four times the stress of the composite section. To make them act together, the connection must transmit the shear flow $q = 3 V / (2 d)$ along the interface — a substantial force, concentrated on a plane where the two planks want to slide past each other by the largest relative amount. This is why a bolted or glued built-up beam must be designed for slip, why Eurocode 5 requires a deformation check with a slip modulus for a nailed or bolted composite beam, and why a beam whose connectors are sized only for the vertical shear is a beam that will not composite.
 :::
 :::

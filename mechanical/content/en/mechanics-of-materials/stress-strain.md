@@ -347,7 +347,7 @@ so the strain energy per unit volume is $\sigma^{2} / 2 E$, the area under the s
 For the tapered bar, at distance $x$ from the small end the diameter is $d (x) = d_1 + (d_2 - d_1) x / L$ and the area is $A (x) = \pi d (x)^{2} / 4$. Since the force is $P$ everywhere,
 $$
 \delta = \int_0^L \frac{P\, \mathrm{d} x}{E A (x)}
-= \frac{4 P}{\pi E} \int_0^L \frac{\\mathrm{d} x}{\left[ d_1 + (d_2 - d_1) x / L \right]^{2}}
+= \frac{4 P}{\pi E} \int_0^L \frac{\mathrm{d} x}{\left[ d_1 + (d_2 - d_1) x / L \right]^{2}}
 = \frac{4 P L}{\pi E} \cdot \frac{1}{d_1 d_2}
 = \frac{4 P L}{\pi E d_1 d_2} .
 $$

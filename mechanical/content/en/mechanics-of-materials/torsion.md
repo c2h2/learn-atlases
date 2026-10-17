@@ -204,7 +204,7 @@ q = \frac{T}{2 A}, \qquad \tau = \frac{T}{2 t A},
 $$
 where $A$ is the area **enclosed** by the wall centre-line. The angle of twist per unit length is
 $$
-\theta = \\frac{T}{4 A^{2} G} \oint \frac{\\mathrm{d} s}{t} .
+\theta = \frac{T}{4 A^{2} G} \oint \frac{\mathrm{d} s}{t} .
 $$
 For a circular tube of mean radius $r$ and uniform wall $t$ these give $\tau = T / (2 \pi r^{2} t)$ and $J = 4 \pi r^{3} t$, which is the thin-wall limit of $\pi (D_o^{4} - D_i^{4}) / 32$.
 :::
@@ -216,15 +216,15 @@ q(s_1) = q(s_2) \quad\Longrightarrow\quad q = \tau t = \text{constant}.
 $$
 This is **Bredt's first equation**. The torque is the moment of this constant shear flow about any interior point; a flow $q$ acting along an element $\mathrm{d} s$ contributes $q \cdot r\, \mathrm{d} s$, and $r\, \mathrm{d} s = 2\, \mathrm{d} A$, so
 $$
-T = \oint q r\, \mathrm{d} s = 2 q \oint \\mathrm{d} A = 2 q A
+T = \oint q r\, \mathrm{d} s = 2 q \oint \mathrm{d} A = 2 q A
 \quad\Longrightarrow\quad
 q = \frac{T}{2 A},
 $$
 which is Bredt's second result. For the twist, equate the complementary energy per unit length, $\oint q^{2} \mathrm{d} s / (2 G t)$, to $T \theta / 2$, or integrate the shear strain $\gamma = q / (G t)$ round the centre-line and require the total rotation to be single-valued:
 $$
-\theta \oint \\frac{\\mathrm{d} s}{t} = \oint \\frac{q}{G t}\, \\mathrm{d} s \\times \\ldots
+\theta \oint \frac{\mathrm{d} s}{t} = \oint \frac{q}{G t}\, \mathrm{d} s \times \ldots
 $$
-giving $\theta = q / (2 A G) \oint \\mathrm{d} s / t = T / (4 A^{2} G) \oint \\mathrm{d} s / t$.
+giving $\theta = q / (2 A G) \oint \mathrm{d} s / t = T / (4 A^{2} G) \oint \mathrm{d} s / t$.
 :::
 
 ::: example Closed versus slit {#ex-slit}
@@ -235,7 +235,7 @@ $$
 \tau = \frac{1500}{2 \times 0.003 \times 5.027 \times 10^{-3}} = 49.7\ \mathrm{MPa},
 $$
 $$
-J_{\text{closed}} = \frac{4 A^{2}}{\oint \\mathrm{d} s / t}
+J_{\text{closed}} = \frac{4 A^{2}}{\oint \mathrm{d} s / t}
 = \frac{4 A^{2} t}{2 \pi r} = \frac{4 \times 2.527 \times 10^{-5} \times 0.003}{0.2513}
 = 1.206 \times 10^{-6}\ \mathrm{m^{4}} .
 $$
@@ -365,7 +365,7 @@ $$
 \tau = \frac{2000}{2 \times 0.004 \times 6.0 \times 10^{-3}} = 41.7\ \mathrm{MPa},
 $$
 $$
-\oint \frac{\\mathrm{d} s}{t} = \frac{2 (0.100 + 0.060)}{0.004} = 80\ \mathrm{m^{-1}}, \qquad
+\oint \frac{\mathrm{d} s}{t} = \frac{2 (0.100 + 0.060)}{0.004} = 80\ \mathrm{m^{-1}}, \qquad
 \theta = \frac{2000}{4 \times 3.6 \times 10^{-5} \times 70 \times 10^{9}} \times 80 = 1.587 \times 10^{-4}\ \mathrm{rad / m} = 0.0091^{\circ} / \mathrm{m}.
 $$
 *Sanity.* The stress is uniform all round the wall because the wall is uniform; where the wall thickens the stress drops in proportion and the shear flow stays the same. That constancy of $q$ is what makes closed sections so efficient, and what makes a thickened corner useless for torsional strength — it is worth thickening only where buckling or a fitting demands it.

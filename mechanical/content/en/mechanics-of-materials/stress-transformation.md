@@ -16,86 +16,86 @@ The transformation equations above use the **continuum mechanics** convention: t
 ::: definition Plane stress transformation {#def-transformation}
 For a state of plane stress $(\sigma_x, \sigma_y, \tau_{xy})$, the stresses on a plane whose normal is at angle $\theta$ counter-clockwise from the $x$-axis are
 $$
-\sigma_{x'} = \\frac{\\sigma_x + \\sigma_y}{2} + \\frac{\\sigma_x - \\sigma_y}{2} \\cos 2\\theta + \\tau_{xy} \\sin 2\\theta ,
+\sigma_{x'} = \frac{\sigma_x + \sigma_y}{2} + \frac{\sigma_x - \sigma_y}{2} \cos 2\theta + \tau_{xy} \sin 2\theta ,
 $$
 $$
-\\tau_{x'y'} = - \\frac{\\sigma_x - \\sigma_y}{2} \\sin 2\\theta + \\tau_{xy} \\cos 2\\theta ,
-\\qquad
-\\sigma_{y'} = \\sigma_x + \\sigma_y - \\sigma_{x'} .
+\tau_{x'y'} = - \frac{\sigma_x - \sigma_y}{2} \sin 2\theta + \tau_{xy} \cos 2\theta ,
+\qquad
+\sigma_{y'} = \sigma_x + \sigma_y - \sigma_{x'} .
 $$
 Two invariants hold for every $\theta$:
 $$
-\\sigma_{x'} + \\sigma_{y'} = \\sigma_x + \\sigma_y = \\text{constant}, \\qquad
-\\left( \\sigma_{x'} - \\sigma_{\\text{avg}} \\right)^{2} + \\tau_{x'y'}^{2} = R^{2} .
+\sigma_{x'} + \sigma_{y'} = \sigma_x + \sigma_y = \text{constant}, \qquad
+\left( \sigma_{x'} - \sigma_{\text{avg}} \right)^{2} + \tau_{x'y'}^{2} = R^{2} .
 $$
 :::
 
 ::: proof
-Cut a prismatic element by a plane at angle $\theta$ and isolate the wedge whose inclined face has area $A$. The two other faces have areas $A \\cos \\theta$ and $A \\sin \\theta$. Resolve the forces on those faces along the inclined normal and along the inclined plane:
+Cut a prismatic element by a plane at angle $\theta$ and isolate the wedge whose inclined face has area $A$. The two other faces have areas $A \cos \theta$ and $A \sin \theta$. Resolve the forces on those faces along the inclined normal and along the inclined plane:
 $$
-\\sigma_{x'} A = \\sigma_x (A \\cos \\theta) \\cos \\theta + \\sigma_y (A \\sin \\theta) \\sin \\theta
-+ \\tau_{xy} (A \\cos \\theta) \\sin \\theta + \\tau_{xy} (A \\sin \\theta) \\cos \\theta ,
+\sigma_{x'} A = \sigma_x (A \cos \theta) \cos \theta + \sigma_y (A \sin \theta) \sin \theta
++ \tau_{xy} (A \cos \theta) \sin \theta + \tau_{xy} (A \sin \theta) \cos \theta ,
 $$
 $$
-\\tau_{x'y'} A = - \\sigma_x (A \\cos \\theta) \\sin \\theta + \\sigma_y (A \\sin \\theta) \\cos \\theta
-+ \\tau_{xy} (A \\cos \\theta) \\cos \\theta - \\tau_{xy} (A \\sin \\theta) \\sin \\theta .
+\tau_{x'y'} A = - \sigma_x (A \cos \theta) \sin \theta + \sigma_y (A \sin \theta) \cos \theta
++ \tau_{xy} (A \cos \theta) \cos \theta - \tau_{xy} (A \sin \theta) \sin \theta .
 $$
-Using $\\cos^{2} \\theta = (1 + \\cos 2 \\theta) / 2$, $\\sin^{2} \\theta = (1 - \\cos 2 \\theta) / 2$ and $2 \\sin \\theta \\cos \\theta = \\sin 2 \\theta$ gives the two transformation equations. The first invariant follows by adding $\\sigma_{x'}$ and $\\sigma_{y'}$; the second by squaring and adding, since $\\cos^{2} 2 \\theta + \\sin^{2} 2 \\theta = 1$.
+Using $\cos^{2} \theta = (1 + \cos 2 \theta) / 2$, $\sin^{2} \theta = (1 - \cos 2 \theta) / 2$ and $2 \sin \theta \cos \theta = \sin 2 \theta$ gives the two transformation equations. The first invariant follows by adding $\sigma_{x'}$ and $\sigma_{y'}$; the second by squaring and adding, since $\cos^{2} 2 \theta + \sin^{2} 2 \theta = 1$.
 :::
 
 ::: theorem Principal stresses and maximum shear {#thm-principal}
 The **principal stresses**, the extreme normal stresses, occur on planes where the shear vanishes and have values
 $$
-\\sigma_{1,2} = \\frac{\\sigma_x + \\sigma_y}{2} \\pm \\sqrt{\\left( \\frac{\\sigma_x - \\sigma_y}{2} \\right)^{2} + \\tau_{xy}^{2}}
-= \\sigma_{\\text{avg}} \\pm R ,
+\sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left( \frac{\sigma_x - \sigma_y}{2} \right)^{2} + \tau_{xy}^{2}}
+= \sigma_{\text{avg}} \pm R ,
 $$
 at an orientation
 $$
-\\tan 2 \\theta_p = \\frac{2 \\tau_{xy}}{\\sigma_x - \\sigma_y} .
+\tan 2 \theta_p = \frac{2 \tau_{xy}}{\sigma_x - \sigma_y} .
 $$
 The **maximum in-plane shear stress** is the radius of the circle,
 $$
-\\tau_{\\max, \\text{in-plane}} = R = \\frac{\\sigma_1 - \\sigma_2}{2},
+\tau_{\max, \text{in-plane}} = R = \frac{\sigma_1 - \sigma_2}{2},
 $$
-on planes at $45^{\circ}$ to the principal planes, where the normal stress is $\\sigma_{\\text{avg}}$.
+on planes at $45^{\circ}$ to the principal planes, where the normal stress is $\sigma_{\text{avg}}$.
 :::
 
 ::: example Principal stresses {#ex-principal}
-At a point $\sigma_x = 80\\ \\mathrm{MPa}$, $\sigma_y = - 40\\ \\mathrm{MPa}$, $\tau_{xy} = 30\\ \\mathrm{MPa}$. Find the principal stresses and their orientations, the maximum in-plane shear, and the stresses on a plane at $25^{\circ}$.
+At a point $\sigma_x = 80\ \mathrm{MPa}$, $\sigma_y = - 40\ \mathrm{MPa}$, $\tau_{xy} = 30\ \mathrm{MPa}$. Find the principal stresses and their orientations, the maximum in-plane shear, and the stresses on a plane at $25^{\circ}$.
 ::: solution
 $$
-\\sigma_{\\text{avg}} = \\frac{80 - 40}{2} = 20\\ \\mathrm{MPa}, \\qquad
-R = \\sqrt{60^{2} + 30^{2}} = 67.1\\ \\mathrm{MPa},
+\sigma_{\text{avg}} = \frac{80 - 40}{2} = 20\ \mathrm{MPa}, \qquad
+R = \sqrt{60^{2} + 30^{2}} = 67.1\ \mathrm{MPa},
 $$
 $$
-\\sigma_1 = 87.1\\ \\mathrm{MPa}, \\qquad \\sigma_2 = - 47.1\\ \\mathrm{MPa}.
+\sigma_1 = 87.1\ \mathrm{MPa}, \qquad \sigma_2 = - 47.1\ \mathrm{MPa}.
 $$
 **Orientation.**
 $$
-\\tan 2 \\theta_p = \\frac{2 \\times 30}{80 + 40} = 0.500
-\\quad\\Longrightarrow\\quad
-\\theta_p = 13.3^{\circ} \\text{ and } 103.3^{\circ}.
+\tan 2 \theta_p = \frac{2 \times 30}{80 + 40} = 0.500
+\quad\Longrightarrow\quad
+\theta_p = 13.3^{\circ} \text{ and } 103.3^{\circ}.
 $$
 **Maximum in-plane shear.**
 $$
-\\tau_{\\max} = 67.1\\ \\mathrm{MPa}, \\qquad
-\\sigma_{\\text{on that plane}} = 20\\ \\mathrm{MPa}, \\qquad
-\\theta_s = 13.3 + 45 = 58.3^{\circ}.
+\tau_{\max} = 67.1\ \mathrm{MPa}, \qquad
+\sigma_{\text{on that plane}} = 20\ \mathrm{MPa}, \qquad
+\theta_s = 13.3 + 45 = 58.3^{\circ}.
 $$
-**At $25^{\circ}$**, with $2 \\theta = 50^{\circ}$:
+**At $25^{\circ}$**, with $2 \theta = 50^{\circ}$:
 $$
-\\sigma_{x'} = 20 + 60 \\cos 50 + 30 \\sin 50 = 20 + 38.6 + 23.0 = 81.6\\ \\mathrm{MPa},
+\sigma_{x'} = 20 + 60 \cos 50 + 30 \sin 50 = 20 + 38.6 + 23.0 = 81.6\ \mathrm{MPa},
 $$
 $$
-\\tau_{x'y'} = - 60 \\sin 50 + 30 \\cos 50 = - 46.0 + 19.3 = - 26.7\\ \\mathrm{MPa}.
+\tau_{x'y'} = - 60 \sin 50 + 30 \cos 50 = - 46.0 + 19.3 = - 26.7\ \mathrm{MPa}.
 $$
-*Check.* $\\sigma_{x'} + \\sigma_{y'} = 40 = \\sigma_x + \\sigma_y$ requires $\\sigma_{y'} = - 41.6\\ \\mathrm{MPa}$, and
+*Check.* $\sigma_{x'} + \sigma_{y'} = 40 = \sigma_x + \sigma_y$ requires $\sigma_{y'} = - 41.6\ \mathrm{MPa}$, and
 $$
-(81.6 - 20)^{2} + 26.7^{2} = 3794 + 713 = 4507 = 67.1^{2} . \\checkmark
+(81.6 - 20)^{2} + 26.7^{2} = 3794 + 713 = 4507 = 67.1^{2} . \checkmark
 $$
 The point lies on the circle, as it must.
 
-*Sanity.* Note that the maximum normal stress, $87.1\\ \\mathrm{MPa}$, is $9$ per cent above the largest applied component and $9$ per cent below the arithmetic sum — a state of stress that looks like $80$ and $- 40$ is really a state of $87$ and $- 47$ acting on planes nobody drew. This is why a pressure vessel's longitudinal weld, which carries no load in the axial direction, still has to be checked: the stress on it is the hoop stress, which is the larger of the two principal stresses.
+*Sanity.* Note that the maximum normal stress, $87.1\ \mathrm{MPa}$, is $9$ per cent above the largest applied component and $9$ per cent below the arithmetic sum — a state of stress that looks like $80$ and $- 40$ is really a state of $87$ and $- 47$ acting on planes nobody drew. This is why a pressure vessel's longitudinal weld, which carries no load in the axial direction, still has to be checked: the stress on it is the hoop stress, which is the larger of the two principal stresses.
 :::
 :::
 
@@ -104,7 +104,7 @@ f: sqrt(67.08^2-(x-20)^2)
 x: -47.1, 87.1
 y: 0, 68
 labels: \text{shear stress (MPa)}
-caption: Upper half of Mohr's circle for Example 1: centre at $\\sigma_{\\text{avg}} = 20\\ \\mathrm{MPa}$, radius $R = 67.1\\ \\mathrm{MPa}$, cutting the horizontal axis at the principal stresses $87.1$ and $- 47.1\\ \\mathrm{MPa}$. The top of the circle is the maximum in-plane shear of $67.1\\ \\mathrm{MPa}$ acting on a plane at $58.3^{\\circ}$, and the point at $25^{\\circ}$ sits at $(81.6, - 26.7)$. Angles on the circle are $2 \\theta$, so a $25^{\\circ}$ physical rotation is a $50^{\\circ}$ move round the circle — the single most common error in reading one.
+caption: Upper half of Mohr's circle for Example 1: centre at $\sigma_{\text{avg}} = 20\ \mathrm{MPa}$, radius $R = 67.1\ \mathrm{MPa}$, cutting the horizontal axis at the principal stresses $87.1$ and $- 47.1\ \mathrm{MPa}$. The top of the circle is the maximum in-plane shear of $67.1\ \mathrm{MPa}$ acting on a plane at $58.3^{\circ}$, and the point at $25^{\circ}$ sits at $(81.6, - 26.7)$. Angles on the circle are $2 \theta$, so a $25^{\circ}$ physical rotation is a $50^{\circ}$ move round the circle — the single most common error in reading one.
 :::
 
 ::: example Combined bending and torsion {#ex-shaft-element}
@@ -133,28 +133,28 @@ $$
 ## Absolute maximum shear and 3-D effects
 
 ::: proposition In-plane is not the whole story {#prop-abs-shear}
-The circle drawn through $\\sigma_1$ and $\\sigma_2$ is only one of three. The **absolute maximum shear stress** is half the difference of the largest and smallest principal stresses of all three, and for a plane-stress state with $\\sigma_3 = 0$ that means
+The circle drawn through $\sigma_1$ and $\sigma_2$ is only one of three. The **absolute maximum shear stress** is half the difference of the largest and smallest principal stresses of all three, and for a plane-stress state with $\sigma_3 = 0$ that means
 $$
-\\tau_{\\text{abs}} = \\begin{cases}
-\\dfrac{\\sigma_1 - \\sigma_2}{2} & \\sigma_1, \\sigma_2 \\text{ of opposite sign} \\\\[6pt]
-\\dfrac{\\sigma_{\\max}}{2} & \\sigma_1, \\sigma_2 \\text{ of the same sign}
-\\end{cases}
+\tau_{\text{abs}} = \begin{cases}
+\dfrac{\sigma_1 - \sigma_2}{2} & \sigma_1, \sigma_2 \text{ of opposite sign} \[6pt]
+\dfrac{\sigma_{\max}}{2} & \sigma_1, \sigma_2 \text{ of the same sign}
+\end{cases}
 $$
 When the two in-plane principal stresses have the **same sign**, the true maximum shear is larger than the in-plane value and acts on a plane tilted $45^{\circ}$ **out of** the plane of the stresses. A pressure vessel head, a thin disc and a biaxially loaded plate are all in this condition.
 :::
 
 ::: example Pure shear and brittle failure {#ex-pure-shear}
-A shaft in pure torsion has a surface shear stress of $40\\ \\mathrm{MPa}$. Find the principal stresses. Predict the failure surface for (a) mild steel, (b) cast iron.
+A shaft in pure torsion has a surface shear stress of $40\ \mathrm{MPa}$. Find the principal stresses. Predict the failure surface for (a) mild steel, (b) cast iron.
 ::: solution
-With $\\sigma_x = \\sigma_y = 0$ and $\\tau_{xy} = 40\\ \\mathrm{MPa}$,
+With $\sigma_x = \sigma_y = 0$ and $\tau_{xy} = 40\ \mathrm{MPa}$,
 $$
-\\sigma_{\\text{avg}} = 0, \\qquad R = 40\\ \\mathrm{MPa}, \\qquad
-\\sigma_1 = + 40\\ \\mathrm{MPa}, \\quad \\sigma_2 = - 40\\ \\mathrm{MPa},
+\sigma_{\text{avg}} = 0, \qquad R = 40\ \mathrm{MPa}, \qquad
+\sigma_1 = + 40\ \mathrm{MPa}, \quad \sigma_2 = - 40\ \mathrm{MPa},
 $$
 $$
-\\tan 2 \\theta_p = \\frac{2 \\times 40}{0} \\rightarrow \\infty
-\\quad\\Longrightarrow\\quad
-\\theta_p = 45^{\circ}.
+\tan 2 \theta_p = \frac{2 \times 40}{0} \rightarrow \infty
+\quad\Longrightarrow\quad
+\theta_p = 45^{\circ}.
 $$
 **(a) Mild steel** yields by shear-flow sliding on planes of maximum shear, which for pure shear are the planes of zero shear — the transverse and longitudinal planes. A mild-steel shaft in torsion fails on a **flat transverse** face, and the fracture surface is bright and fibrous with the metal visibly twisted.
 
@@ -188,46 +188,46 @@ $$
 ::: definition Strain transformation and the rosette {#def-rosette}
 Strain transforms by the same equations with one substitution:
 $$
-\\frac{\\gamma_{x'y'}}{2} = \\frac{\\varepsilon_x + \\varepsilon_y}{2} - \\frac{\\varepsilon_x - \\varepsilon_y}{2} \\cos 2\\theta - \\frac{\\gamma_{xy}}{2} \\sin 2\\theta .
+\frac{\gamma_{x'y'}}{2} = \frac{\varepsilon_x + \varepsilon_y}{2} - \frac{\varepsilon_x - \varepsilon_y}{2} \cos 2\theta - \frac{\gamma_{xy}}{2} \sin 2\theta .
 $$
-Note the **minus** sign and the factor of one half — engineering shear strain $\\gamma$ is twice the tensor component, which is why Mohr's strain circle is plotted with $\\gamma / 2$. A rectangular $45^{\circ}$ rosette measuring $\\varepsilon_0$, $\\varepsilon_{45}$, $\\varepsilon_{90}$ gives
+Note the **minus** sign and the factor of one half — engineering shear strain $\gamma$ is twice the tensor component, which is why Mohr's strain circle is plotted with $\gamma / 2$. A rectangular $45^{\circ}$ rosette measuring $\varepsilon_0$, $\varepsilon_{45}$, $\varepsilon_{90}$ gives
 $$
-\\varepsilon_x = \\varepsilon_0, \\qquad
-\\varepsilon_y = \\varepsilon_{90}, \\qquad
-\\gamma_{xy} = 2 \\varepsilon_{45} - \\varepsilon_0 - \\varepsilon_{90} .
+\varepsilon_x = \varepsilon_0, \qquad
+\varepsilon_y = \varepsilon_{90}, \qquad
+\gamma_{xy} = 2 \varepsilon_{45} - \varepsilon_0 - \varepsilon_{90} .
 $$
 For plane stress the stresses follow from Hooke's law:
 $$
-\\sigma_1 = \\frac{E \\left( \\varepsilon_1 + \\nu \\varepsilon_2 \\right)}{1 - \\nu^{2}}, \\qquad
-\\sigma_2 = \\frac{E \\left( \\varepsilon_2 + \\nu \\varepsilon_1 \\right)}{1 - \\nu^{2}} .
+\sigma_1 = \frac{E \left( \varepsilon_1 + \nu \varepsilon_2 \right)}{1 - \nu^{2}}, \qquad
+\sigma_2 = \frac{E \left( \varepsilon_2 + \nu \varepsilon_1 \right)}{1 - \nu^{2}} .
 $$
 :::
 
 ::: example Strain rosette {#ex-rosette}
-A $45^{\circ}$ rosette on a steel surface reads $\\varepsilon_0 = 200$, $\\varepsilon_{45} = 300$, $\\varepsilon_{90} = 100$ in microstrain. Take $E = 200\\ \\mathrm{GPa}$, $\\nu = 0.3$. Find the principal stresses.
+A $45^{\circ}$ rosette on a steel surface reads $\varepsilon_0 = 200$, $\varepsilon_{45} = 300$, $\varepsilon_{90} = 100$ in microstrain. Take $E = 200\ \mathrm{GPa}$, $\nu = 0.3$. Find the principal stresses.
 ::: solution
 $$
-\\varepsilon_x = 200, \\qquad \\varepsilon_y = 100, \\qquad
-\\gamma_{xy} = 2 \\times 300 - 200 - 100 = 300 \\ \\mu ,
+\varepsilon_x = 200, \qquad \varepsilon_y = 100, \qquad
+\gamma_{xy} = 2 \times 300 - 200 - 100 = 300 \ \mu ,
 $$
 $$
-\\varepsilon_{\\text{avg}} = 150, \\qquad
-R_\\varepsilon = \\sqrt{50^{2} + 150^{2}} = 158.1 \\ \\mu ,
+\varepsilon_{\text{avg}} = 150, \qquad
+R_\varepsilon = \sqrt{50^{2} + 150^{2}} = 158.1 \ \mu ,
 $$
 $$
-\\varepsilon_1 = 308 \\ \\mu, \\qquad \\varepsilon_2 = - 8.1 \\ \\mu, \\qquad
-\\tan 2 \\theta_p = \\frac{300}{200 - 100} = 3.0 \\Rightarrow \\theta_p = 35.3^{\\circ}.
+\varepsilon_1 = 308 \ \mu, \qquad \varepsilon_2 = - 8.1 \ \mu, \qquad
+\tan 2 \theta_p = \frac{300}{200 - 100} = 3.0 \Rightarrow \theta_p = 35.3^{\circ}.
 $$
 **Stresses.**
 $$
-\\sigma_1 = \\frac{200\,000 \\left( 308 - 0.3 \\times 8.1 \\right) \\times 10^{-6}}{1 - 0.09}
-= \\frac{200\,000 \\times 305.6 \\times 10^{-6}}{0.91} = 67.1\\ \\mathrm{MPa},
+\sigma_1 = \frac{200\,000 \left( 308 - 0.3 \times 8.1 \right) \times 10^{-6}}{1 - 0.09}
+= \frac{200\,000 \times 305.6 \times 10^{-6}}{0.91} = 67.1\ \mathrm{MPa},
 $$
 $$
-\\sigma_2 = \\frac{200\,000 \\left( - 8.1 + 0.3 \\times 308 \\right) \\times 10^{-6}}{0.91}
-= \\frac{200\,000 \\times 84.3 \\times 10^{-6}}{0.91} = 18.5\\ \\mathrm{MPa}.
+\sigma_2 = \frac{200\,000 \left( - 8.1 + 0.3 \times 308 \right) \times 10^{-6}}{0.91}
+= \frac{200\,000 \times 84.3 \times 10^{-6}}{0.91} = 18.5\ \mathrm{MPa}.
 $$
-*Check.* The sum $\\sigma_1 + \\sigma_2 = 85.6\\ \\mathrm{MPa}$, and $E (\\varepsilon_x + \\varepsilon_y) / (1 - \\nu) = 200\,000 \\times 300 \\times 10^{-6} / 0.7 = 85.7\\ \\mathrm{MPa}$. $\checkmark$
+*Check.* The sum $\sigma_1 + \sigma_2 = 85.6\ \mathrm{MPa}$, and $E (\varepsilon_x + \varepsilon_y) / (1 - \nu) = 200\,000 \times 300 \times 10^{-6} / 0.7 = 85.7\ \mathrm{MPa}$. $\checkmark$
 
 *Sanity.* Three strain gauges, two minutes of arithmetic, and you know the complete two-dimensional stress state at a point on a machine that is running, loaded and inaccessible. This is why experimental stress analysis is done with rosettes rather than with theory: the theory is exact and the geometry is not. The one thing the rosette cannot tell you is the **out-of-plane** strain, so if the point is near a free edge, a hole or a weld, the "plane stress" assumption behind the last two lines may be false and the stresses may be $30$ per cent out.
 :::
@@ -238,10 +238,10 @@ $$
 ::: theorem Membrane stresses in a thin vessel {#thm-vessel}
 For a vessel of internal radius $r$, wall thickness $t$ and pressure $p$ with $r / t > 10$, the wall carries a uniform **membrane** stress and negligible through-thickness stress:
 $$
-\\sigma_{\\text{hoop}} = \\frac{p r}{t}, \\qquad
-\\sigma_{\\text{long}} = \\frac{p r}{2 t} \\quad \\text{(cylinder)},
-\\qquad
-\\sigma_{\\text{hoop}} = \\sigma_{\\text{long}} = \\frac{p r}{2 t} \\quad \\text{(sphere)}.
+\sigma_{\text{hoop}} = \frac{p r}{t}, \qquad
+\sigma_{\text{long}} = \frac{p r}{2 t} \quad \text{(cylinder)},
+\qquad
+\sigma_{\text{hoop}} = \sigma_{\text{long}} = \frac{p r}{2 t} \quad \text{(sphere)}.
 $$
 The hoop stress is twice the longitudinal stress, so a cylindrical vessel splits **lengthways**.
 :::
@@ -249,48 +249,48 @@ The hoop stress is twice the longitudinal stress, so a cylindrical vessel splits
 ::: proof
 **Longitudinal.** Cut the cylinder on a plane normal to its axis and balance the pressure force on the end cap against the wall force:
 $$
-p \\pi r^{2} = \\sigma_{\\text{long}} \\times 2 \\pi r t
-\\quad\\Longrightarrow\\quad
-\\sigma_{\\text{long}} = \\frac{p r}{2 t} .
+p \pi r^{2} = \sigma_{\text{long}} \times 2 \pi r t
+\quad\Longrightarrow\quad
+\sigma_{\text{long}} = \frac{p r}{2 t} .
 $$
-**Hoop.** Cut a unit length of cylinder along a diametral plane and balance the pressure on the projected area $2 r \\times 1$ against the wall force on two walls:
+**Hoop.** Cut a unit length of cylinder along a diametral plane and balance the pressure on the projected area $2 r \times 1$ against the wall force on two walls:
 $$
-p \\times 2 r \\times 1 = 2 \\sigma_{\\text{hoop}} t \\times 1
-\\quad\\Longrightarrow\\quad
-\\sigma_{\\text{hoop}} = \\frac{p r}{t} .
+p \times 2 r \times 1 = 2 \sigma_{\text{hoop}} t \times 1
+\quad\Longrightarrow\quad
+\sigma_{\text{hoop}} = \frac{p r}{t} .
 $$
-For the sphere, cut any hemisphere: the pressure force is $p \\pi r^{2}$ and the wall force is $\\sigma \\times 2 \\pi r t$, giving $\\sigma = p r / (2 t)$ in every direction by symmetry.
+For the sphere, cut any hemisphere: the pressure force is $p \pi r^{2}$ and the wall force is $\sigma \times 2 \pi r t$, giving $\sigma = p r / (2 t)$ in every direction by symmetry.
 :::
 
 ::: example Pressure vessel {#ex-vessel}
-A cylindrical pressure vessel of $2\\ \\mathrm{m}$ internal diameter and $12\\ \\mathrm{mm}$ wall contains $2.5\\ \\mathrm{MPa}$. Find the two membrane stresses, the maximum shear stress in the wall, and the stress normal to a helical weld made at $30^{\circ}$ to the circumferential direction.
+A cylindrical pressure vessel of $2\ \mathrm{m}$ internal diameter and $12\ \mathrm{mm}$ wall contains $2.5\ \mathrm{MPa}$. Find the two membrane stresses, the maximum shear stress in the wall, and the stress normal to a helical weld made at $30^{\circ}$ to the circumferential direction.
 ::: solution
 $$
-\\sigma_{\\text{hoop}} = \\frac{2.5 \\times 1000}{12} = 208.3\\ \\mathrm{MPa}, \\qquad
-\\sigma_{\\text{long}} = 104.2\\ \\mathrm{MPa}.
+\sigma_{\text{hoop}} = \frac{2.5 \times 1000}{12} = 208.3\ \mathrm{MPa}, \qquad
+\sigma_{\text{long}} = 104.2\ \mathrm{MPa}.
 $$
 **Maximum shear.** The three principal stresses are $208.3$, $104.2$ and $0$ (through the thickness). Hence
 $$
-\\tau_{\\text{in-plane}} = \\frac{208.3 - 104.2}{2} = 52.1\\ \\mathrm{MPa}, \\qquad
-\\tau_{\\text{abs}} = \\frac{208.3 - 0}{2} = 104.2\\ \\mathrm{MPa},
+\tau_{\text{in-plane}} = \frac{208.3 - 104.2}{2} = 52.1\ \mathrm{MPa}, \qquad
+\tau_{\text{abs}} = \frac{208.3 - 0}{2} = 104.2\ \mathrm{MPa},
 $$
 and the absolute maximum acts on a plane at $45^{\circ}$ **through the thickness**, at the inner and outer surfaces.
 
-**Helical weld.** Take $x$ as the axial direction, so $\\sigma_x = 104.2$, $\\sigma_y = 208.3$ and the weld line at $30^{\circ}$ to the circumferential direction is at $\\theta = 60^{\circ}$ to the axis. With $\\tau_{xy} = 0$,
+**Helical weld.** Take $x$ as the axial direction, so $\sigma_x = 104.2$, $\sigma_y = 208.3$ and the weld line at $30^{\circ}$ to the circumferential direction is at $\theta = 60^{\circ}$ to the axis. With $\tau_{xy} = 0$,
 $$
-\\sigma_{x'} = \\frac{104.2 + 208.3}{2} + \\frac{104.2 - 208.3}{2} \\cos 120^{\\circ}
-= 156.3 + 52.1 = 208.3 \\times \\ldots
+\sigma_{x'} = \frac{104.2 + 208.3}{2} + \frac{104.2 - 208.3}{2} \cos 120^{\circ}
+= 156.3 + 52.1 = 208.3 \times \ldots
 $$
 More directly, the stress **normal** to the weld is the stress along the circumferential direction resolved onto the weld plane. With the weld normal at $30^{\circ}$ to the hoop direction,
 $$
-\\sigma_n = \\sigma_{\\text{long}} \\cos^{2} 30^{\\circ} + \\sigma_{\\text{hoop}} \\sin^{2} 30^{\\circ}
-= 104.2 \\times 0.75 + 208.3 \\times 0.25 = 78.2 + 52.1 = 130.3\\ \\mathrm{MPa},
+\sigma_n = \sigma_{\text{long}} \cos^{2} 30^{\circ} + \sigma_{\text{hoop}} \sin^{2} 30^{\circ}
+= 104.2 \times 0.75 + 208.3 \times 0.25 = 78.2 + 52.1 = 130.3\ \mathrm{MPa},
 $$
 $$
-\\tau_{\\text{weld}} = \\left( \\sigma_{\\text{hoop}} - \\sigma_{\\text{long}} \\right) \\sin 30^{\\circ} \\cos 30^{\\circ}
-= 104.2 \\times 0.433 = 45.1\\ \\mathrm{MPa}.
+\tau_{\text{weld}} = \left( \sigma_{\text{hoop}} - \sigma_{\text{long}} \right) \sin 30^{\circ} \cos 30^{\circ}
+= 104.2 \times 0.433 = 45.1\ \mathrm{MPa}.
 $$
-*Sanity.* Three results worth carrying away. The hoop stress is twice the longitudinal, so the **longitudinal** weld — the one running along the vessel — carries twice the load of the circumferential one and must be the better weld; a vessel with an X-rayed seam and an unchecked girth weld is a vessel that will split along its length. The absolute maximum shear is twice the in-plane value and acts through the thickness, which is why a vessel's failure is a through-thickness shear problem at the inner surface when the material is ductile. And the helical weld at $30^{\circ}$ carries $130\\ \\mathrm{MPa}$ normal and $45\\ \\mathrm{MPa}$ shear, which is why spiral-seam pipes are wound at about $54^{\circ}$, where the hoop and axial loadings are shared in proportion to the strength of the two fibre directions.
+*Sanity.* Three results worth carrying away. The hoop stress is twice the longitudinal, so the **longitudinal** weld — the one running along the vessel — carries twice the load of the circumferential one and must be the better weld; a vessel with an X-rayed seam and an unchecked girth weld is a vessel that will split along its length. The absolute maximum shear is twice the in-plane value and acts through the thickness, which is why a vessel's failure is a through-thickness shear problem at the inner surface when the material is ductile. And the helical weld at $30^{\circ}$ carries $130\ \mathrm{MPa}$ normal and $45\ \mathrm{MPa}$ shear, which is why spiral-seam pipes are wound at about $54^{\circ}$, where the hoop and axial loadings are shared in proportion to the strength of the two fibre directions.
 :::
 :::
 
@@ -318,136 +318,136 @@ The absolute criterion. The in-plane circle gives $\tau = (100 - 60) / 2 = 20\ \
 Principal stresses are the input to every failure theory in [[machine-design/static-failure]], to the fatigue criteria of [[machine-design/fatigue]], and to the contact-stress calculation of [[machine-design/gear-design]]. The three-dimensional generalisation is in [[solid-mechanics/stress-strain-3d]], and the thick-wall case where the membrane assumption fails is in [[solid-mechanics/thick-cylinders-discs]].
 
 ::: summary
-- Stresses transform with $2 \\theta$, so a physical rotation of $\\theta$ is a movement of $2 \\theta$ round Mohr's circle; the sum of the normal stresses is invariant.
-- Principal stresses are $\\sigma_{\\text{avg}} \\pm R$ with $R = \\sqrt{\\left[ \\left( \\sigma_x - \\sigma_y \\right) / 2 \\right]^{2} + \\tau_{xy}^{2}}$, on planes where the shear vanishes.
+- Stresses transform with $2 \theta$, so a physical rotation of $\theta$ is a movement of $2 \theta$ round Mohr's circle; the sum of the normal stresses is invariant.
+- Principal stresses are $\sigma_{\text{avg}} \pm R$ with $R = \sqrt{\left[ \left( \sigma_x - \sigma_y \right) / 2 \right]^{2} + \tau_{xy}^{2}}$, on planes where the shear vanishes.
 - The maximum in-plane shear is $R$, on planes at $45^{\circ}$ to the principal planes, and it acts together with the average normal stress.
-- When the two in-plane principal stresses have the same sign, the **absolute** maximum shear is $\\sigma_{\\max} / 2$ and acts out of plane — the pressure-vessel case.
-- Strain transforms the same way with $\\gamma / 2$; a $45^{\circ}$ rosette plus Hooke's law gives the full plane stress state.
+- When the two in-plane principal stresses have the same sign, the **absolute** maximum shear is $\sigma_{\max} / 2$ and acts out of plane — the pressure-vessel case.
+- Strain transforms the same way with $\gamma / 2$; a $45^{\circ}$ rosette plus Hooke's law gives the full plane stress state.
 - A thin cylinder has hoop stress twice the longitudinal, so it splits lengthways and its longitudinal weld is the critical one.
 :::
 
 ## Exercises
 
 ::: exercise Read the circle {level=1 check="100"}
-Mohr's circle for a point has its centre at $60\\ \\mathrm{MPa}$ and a radius of $40\\ \\mathrm{MPa}$. What is the larger principal stress?
+Mohr's circle for a point has its centre at $60\ \mathrm{MPa}$ and a radius of $40\ \mathrm{MPa}$. What is the larger principal stress?
 ::: solution
-$\\sigma_1 = 60 + 40 = 100\\ \\mathrm{MPa}$, and $\\sigma_2 = 20\\ \\mathrm{MPa}$. The maximum in-plane shear is $40\\ \\mathrm{MPa}$.
+$\sigma_1 = 60 + 40 = 100\ \mathrm{MPa}$, and $\sigma_2 = 20\ \mathrm{MPa}$. The maximum in-plane shear is $40\ \mathrm{MPa}$.
 :::
 :::
 
 ::: exercise Principal angle {level=1 check="45"}
 For what state of stress are the principal planes at $45^{\circ}$ to the $x$ and $y$ axes?
 ::: solution
-When $\\sigma_x = \\sigma_y$, because $\\tan 2 \\theta_p = 2 \\tau_{xy} / (\\sigma_x - \\sigma_y) \\rightarrow \\infty$ requires $\\sigma_x = \\sigma_y$. Pure shear is the special case, and it is why a torsioned shaft and a chalk bar break at $45^{\circ}$.
+When $\sigma_x = \sigma_y$, because $\tan 2 \theta_p = 2 \tau_{xy} / (\sigma_x - \sigma_y) \rightarrow \infty$ requires $\sigma_x = \sigma_y$. Pure shear is the special case, and it is why a torsioned shaft and a chalk bar break at $45^{\circ}$.
 :::
 :::
 
 ::: exercise Maximum shear {level=1 check="40"}
-The principal stresses at a point are $80\\ \\mathrm{MPa}$ and $20\\ \\mathrm{MPa}$, both tensile, with the third zero. Find the absolute maximum shear stress.
+The principal stresses at a point are $80\ \mathrm{MPa}$ and $20\ \mathrm{MPa}$, both tensile, with the third zero. Find the absolute maximum shear stress.
 ::: solution
-$\\tau_{\\text{abs}} = 80 / 2 = 40\\ \\mathrm{MPa}$, acting on a plane tilted $45^{\circ}$ out of the plane of the two given stresses. The in-plane value would be $30\\ \\mathrm{MPa}$, which is not the answer.
-*Note.* The answer is $40\\ \\mathrm{MPa}$. This is the trap in pressure-vessel design: the in-plane circle gives $30$ and the true maximum is $40$.
+$\tau_{\text{abs}} = 80 / 2 = 40\ \mathrm{MPa}$, acting on a plane tilted $45^{\circ}$ out of the plane of the two given stresses. The in-plane value would be $30\ \mathrm{MPa}$, which is not the answer.
+*Note.* The answer is $40\ \mathrm{MPa}$. This is the trap in pressure-vessel design: the in-plane circle gives $30$ and the true maximum is $40$.
 :::
 :::
 
 ::: exercise Transform {level=2}
-For $\\sigma_x = 60$, $\\sigma_y = - 20$, $\\tau_{xy} = - 35\\ \\mathrm{MPa}$, find the stresses on a plane at $30^{\circ}$.
+For $\sigma_x = 60$, $\sigma_y = - 20$, $\tau_{xy} = - 35\ \mathrm{MPa}$, find the stresses on a plane at $30^{\circ}$.
 ::: solution
-$\\sigma_{\\text{avg}} = 20$, $R = \\sqrt{40^{2} + 35^{2}} = 53.2\\ \\mathrm{MPa}$, $\\tan 2 \\theta_p = - 70 / 80$.
-At $2 \\theta = 60^{\circ}$:
+$\sigma_{\text{avg}} = 20$, $R = \sqrt{40^{2} + 35^{2}} = 53.2\ \mathrm{MPa}$, $\tan 2 \theta_p = - 70 / 80$.
+At $2 \theta = 60^{\circ}$:
 $$
-\\sigma_{x'} = 20 + 40 \\cos 60 - 35 \\sin 60 = 20 + 20.0 - 30.3 = 9.7\\ \\mathrm{MPa},
+\sigma_{x'} = 20 + 40 \cos 60 - 35 \sin 60 = 20 + 20.0 - 30.3 = 9.7\ \mathrm{MPa},
 $$
 $$
-\\tau_{x'y'} = - 40 \\sin 60 - 35 \\cos 60 = - 34.6 - 17.5 = - 52.1\\ \\mathrm{MPa}.
+\tau_{x'y'} = - 40 \sin 60 - 35 \cos 60 = - 34.6 - 17.5 = - 52.1\ \mathrm{MPa}.
 $$
 *Check.* $(9.7 - 20)^{2} + 52.1^{2} = 106 + 2714 = 2820 = 53.1^{2}$. $\checkmark$
 :::
 :::
 
 ::: exercise Rosette {level=2}
-A $45^{\circ}$ rosette reads $\\varepsilon_0 = - 150$, $\\varepsilon_{45} = 250$, $\\varepsilon_{90} = 400$ microstrain. Find $\\varepsilon_x$, $\\varepsilon_y$, $\\gamma_{xy}$ and the principal strains.
+A $45^{\circ}$ rosette reads $\varepsilon_0 = - 150$, $\varepsilon_{45} = 250$, $\varepsilon_{90} = 400$ microstrain. Find $\varepsilon_x$, $\varepsilon_y$, $\gamma_{xy}$ and the principal strains.
 ::: solution
-$\\varepsilon_x = - 150$, $\\varepsilon_y = 400$,
+$\varepsilon_x = - 150$, $\varepsilon_y = 400$,
 $$
-\\gamma_{xy} = 2 \\times 250 - ( - 150 ) - 400 = 500 + 150 - 400 = 250 \\ \\mu .
-$$
-$$
-\\varepsilon_{\\text{avg}} = 125, \\qquad
-R_\\varepsilon = \\sqrt{275^{2} + 125^{2}} = 302 \\ \\mu,
+\gamma_{xy} = 2 \times 250 - ( - 150 ) - 400 = 500 + 150 - 400 = 250 \ \mu .
 $$
 $$
-\\varepsilon_1 = 427 \\ \\mu, \\qquad \\varepsilon_2 = - 177 \\ \\mu .
+\varepsilon_{\text{avg}} = 125, \qquad
+R_\varepsilon = \sqrt{275^{2} + 125^{2}} = 302 \ \mu,
 $$
-*Sanity.* The principal strains have opposite signs, so the point is in a state of nearly pure shear, and the principal directions are close to $45^{\circ}$ from gauge 1 — which the large $\\varepsilon_{45}$ reading already hinted at. A rosette whose $45^{\circ}$ gauge reads highest is telling you the principal axes are near $45^{\circ}$ before you do any algebra.
+$$
+\varepsilon_1 = 427 \ \mu, \qquad \varepsilon_2 = - 177 \ \mu .
+$$
+*Sanity.* The principal strains have opposite signs, so the point is in a state of nearly pure shear, and the principal directions are close to $45^{\circ}$ from gauge 1 — which the large $\varepsilon_{45}$ reading already hinted at. A rosette whose $45^{\circ}$ gauge reads highest is telling you the principal axes are near $45^{\circ}$ before you do any algebra.
 :::
 :::
 
 ::: exercise Pressure vessel {level=2}
-A spherical gas holder of $8\\ \\mathrm{m}$ diameter is made from $10\\ \\mathrm{mm}$ plate with an allowable stress of $140\\ \\mathrm{MPa}$. Find the maximum pressure, and the maximum shear stress in the wall at that pressure.
+A spherical gas holder of $8\ \mathrm{m}$ diameter is made from $10\ \mathrm{mm}$ plate with an allowable stress of $140\ \mathrm{MPa}$. Find the maximum pressure, and the maximum shear stress in the wall at that pressure.
 ::: solution
 $$
-p = \\frac{2 \\sigma t}{r} = \\frac{2 \\times 140 \\times 10}{4000} = 0.70\\ \\mathrm{MPa}.
+p = \frac{2 \sigma t}{r} = \frac{2 \times 140 \times 10}{4000} = 0.70\ \mathrm{MPa}.
 $$
 The principal stresses are $140$, $140$ and $0$, so the in-plane Mohr's circle is a **point** — there is no in-plane shear at all — and
 $$
-\\tau_{\\text{abs}} = \\frac{140}{2} = 70\\ \\mathrm{MPa},
+\tau_{\text{abs}} = \frac{140}{2} = 70\ \mathrm{MPa},
 $$
 acting on planes at $45^{\circ}$ through the thickness.
-*Sanity.* A sphere is the ideal pressure vessel because its membrane stress state is equibiaxial and its wall is uniformly loaded, which is why gas holders, submarine hulls and gas bottles are spherical or nearly so. It is also the worst possible case for the in-plane-versus-absolute shear trap: the in-plane circle gives zero and the true maximum is $70\\ \\mathrm{MPa}$, half the yield in shear for a steel yielding at $140$ in tension by Tresca.
+*Sanity.* A sphere is the ideal pressure vessel because its membrane stress state is equibiaxial and its wall is uniformly loaded, which is why gas holders, submarine hulls and gas bottles are spherical or nearly so. It is also the worst possible case for the in-plane-versus-absolute shear trap: the in-plane circle gives zero and the true maximum is $70\ \mathrm{MPa}$, half the yield in shear for a steel yielding at $140$ in tension by Tresca.
 :::
 :::
 
 ::: exercise Design {level=3}
-A welded steel plate of $20\\ \\mathrm{mm}$ thickness contains a straight fillet weld running at $55^{\circ}$ to the plate's longitudinal axis. The plate carries a uniform tensile stress of $120\\ \\mathrm{MPa}$ along its axis. Find the normal and shear stresses on the weld, and check them against an allowable of $160\\ \\mathrm{MPa}$ normal and $90\\ \\mathrm{MPa}$ shear.
+A welded steel plate of $20\ \mathrm{mm}$ thickness contains a straight fillet weld running at $55^{\circ}$ to the plate's longitudinal axis. The plate carries a uniform tensile stress of $120\ \mathrm{MPa}$ along its axis. Find the normal and shear stresses on the weld, and check them against an allowable of $160\ \mathrm{MPa}$ normal and $90\ \mathrm{MPa}$ shear.
 ::: solution
-Take $x$ along the plate axis, so $\\sigma_x = 120$, $\\sigma_y = 0$, $\\tau_{xy} = 0$. The weld **plane** is at $55^{\circ}$ to the axis, so its **normal** is at $\\theta = 55 + 90 = 145^{\circ}$, or equivalently $\\theta = 35^{\circ}$ measured from the transverse direction. Using the normal at $35^{\circ}$ to the load axis:
+Take $x$ along the plate axis, so $\sigma_x = 120$, $\sigma_y = 0$, $\tau_{xy} = 0$. The weld **plane** is at $55^{\circ}$ to the axis, so its **normal** is at $\theta = 55 + 90 = 145^{\circ}$, or equivalently $\theta = 35^{\circ}$ measured from the transverse direction. Using the normal at $35^{\circ}$ to the load axis:
 $$
-\\sigma_n = 120 \\cos^{2} 35^{\\circ} = 120 \\times 0.671 = 80.5\\ \\mathrm{MPa},
+\sigma_n = 120 \cos^{2} 35^{\circ} = 120 \times 0.671 = 80.5\ \mathrm{MPa},
 $$
 $$
-\\tau = 120 \\sin 35^{\\circ} \\cos 35^{\\circ} = 120 \\times 0.470 = 56.4\\ \\mathrm{MPa}.
+\tau = 120 \sin 35^{\circ} \cos 35^{\circ} = 120 \times 0.470 = 56.4\ \mathrm{MPa}.
 $$
 Both are below the allowables of $160$ and $90$. $\checkmark$
 
 **Worst orientation.** The shear on the weld is maximised at $45^{\circ}$, where
 $$
-\\tau_{\\max} = 120 / 2 = 60\\ \\mathrm{MPa}, \\qquad \\sigma_n = 60\\ \\mathrm{MPa},
+\tau_{\max} = 120 / 2 = 60\ \mathrm{MPa}, \qquad \sigma_n = 60\ \mathrm{MPa},
 $$
 and the normal stress is maximised at $0^{\circ}$. A weld at $55^{\circ}$ to the axis is therefore at $81$ per cent of its shear capacity and $50$ per cent of its normal capacity.
 
-*Design comment.* This is why a lifting-eye plate is welded with two fillets at about $45^{\circ}$ rather than one transverse weld: at $45^{\circ}$ the weld carries equal normal and shear, and a fillet weld's throat is designed on a combined vector sum. It is also why a code checks a fillet weld on the **resultant** stress through the throat rather than resolving it into components, and why a longitudinal weld in a plate loaded transversely is the worst detail in the shop drawing — the weld carries the full $120\\ \\mathrm{MPa}$ normal to its own axis, and a defect in it is a through-thickness crack in the plate.
+*Design comment.* This is why a lifting-eye plate is welded with two fillets at about $45^{\circ}$ rather than one transverse weld: at $45^{\circ}$ the weld carries equal normal and shear, and a fillet weld's throat is designed on a combined vector sum. It is also why a code checks a fillet weld on the **resultant** stress through the throat rather than resolving it into components, and why a longitudinal weld in a plate loaded transversely is the worst detail in the shop drawing — the weld carries the full $120\ \mathrm{MPa}$ normal to its own axis, and a defect in it is a through-thickness crack in the plate.
 :::
 :::
 
 ::: exercise Derivation {level=3}
-Show that the principal stresses are the roots of $\\lambda^{3} - I_1 \\lambda^{2} + I_2 \\lambda - I_3 = 0$, define the three invariants, and use them to show that a state of pure shear has principal stresses $\\pm \\tau$ and zero mean stress, while a hydrostatic state has zero deviatoric stress. Why does the distinction between the spherical and deviatoric parts explain the difference between ductile and brittle failure?
+Show that the principal stresses are the roots of $\lambda^{3} - I_1 \lambda^{2} + I_2 \lambda - I_3 = 0$, define the three invariants, and use them to show that a state of pure shear has principal stresses $\pm \tau$ and zero mean stress, while a hydrostatic state has zero deviatoric stress. Why does the distinction between the spherical and deviatoric parts explain the difference between ductile and brittle failure?
 ::: solution
-Setting the traction on a plane with normal $\\mathbf{n}$ to be purely normal, $\\sigma_{ij} n_j = \\lambda n_i$, gives an eigenvalue problem with non-trivial solutions when
+Setting the traction on a plane with normal $\mathbf{n}$ to be purely normal, $\sigma_{ij} n_j = \lambda n_i$, gives an eigenvalue problem with non-trivial solutions when
 $$
-\\det \\left| \\begin{array}{ccc}
-\\sigma_x - \\lambda & \\tau_{xy} & \\tau_{xz} \\\\\\\\
-\\tau_{xy} & \\sigma_y - \\lambda & \\tau_{yz} \\\\\\\\
-\\tau_{xz} & \\tau_{yz} & \\sigma_z - \\lambda
-\\end{array} \\right| = 0 ,
+\det \left| \begin{array}{ccc}
+\sigma_x - \lambda & \tau_{xy} & \tau_{xz} \\
+\tau_{xy} & \sigma_y - \lambda & \tau_{yz} \\
+\tau_{xz} & \tau_{yz} & \sigma_z - \lambda
+\end{array} \right| = 0 ,
 $$
 which expands to the **characteristic equation** with the invariants
 $$
-I_1 = \\sigma_x + \\sigma_y + \\sigma_z, \\qquad
-I_2 = \\sigma_x \\sigma_y + \\sigma_y \\sigma_z + \\sigma_z \\sigma_x - \\tau_{xy}^{2} - \\tau_{yz}^{2} - \\tau_{zx}^{2}, \\qquad
-I_3 = \\det \\sigma .
+I_1 = \sigma_x + \sigma_y + \sigma_z, \qquad
+I_2 = \sigma_x \sigma_y + \sigma_y \sigma_z + \sigma_z \sigma_x - \tau_{xy}^{2} - \tau_{yz}^{2} - \tau_{zx}^{2}, \qquad
+I_3 = \det \sigma .
 $$
-Because the roots are the principal stresses, $I_1 = \\sigma_1 + \\sigma_2 + \\sigma_3$ is the same on every plane, which is the three-dimensional form of the invariant used throughout this chapter.
+Because the roots are the principal stresses, $I_1 = \sigma_1 + \sigma_2 + \sigma_3$ is the same on every plane, which is the three-dimensional form of the invariant used throughout this chapter.
 
-**Pure shear.** $\\sigma_x = \\sigma_y = \\sigma_z = 0$, $\\tau_{xy} = \\tau$, all else zero. Then $I_1 = 0$, $I_2 = - \\tau^{2}$, $I_3 = 0$, so
+**Pure shear.** $\sigma_x = \sigma_y = \sigma_z = 0$, $\tau_{xy} = \tau$, all else zero. Then $I_1 = 0$, $I_2 = - \tau^{2}$, $I_3 = 0$, so
 $$
-\\lambda \\left( \\lambda^{2} - \\tau^{2} \\right) = 0
-\\quad\\Longrightarrow\\quad
-\\sigma_1 = \\tau, \\quad \\sigma_2 = 0, \\quad \\sigma_3 = - \\tau .
+\lambda \left( \lambda^{2} - \tau^{2} \right) = 0
+\quad\Longrightarrow\quad
+\sigma_1 = \tau, \quad \sigma_2 = 0, \quad \sigma_3 = - \tau .
 $$
 The mean (spherical) stress is $I_1 / 3 = 0$: pure shear changes shape but not volume.
 
-**Hydrostatic pressure.** $\\sigma_{ij} = - p \\delta_{ij}$ gives $\\sigma_1 = \\sigma_2 = \\sigma_3 = - p$, so the deviatoric stress $s_{ij} = \\sigma_{ij} - \\tfrac{1}{3} I_1 \\delta_{ij}$ is identically zero: a hydrostatic state changes volume but not shape.
+**Hydrostatic pressure.** $\sigma_{ij} = - p \delta_{ij}$ gives $\sigma_1 = \sigma_2 = \sigma_3 = - p$, so the deviatoric stress $s_{ij} = \sigma_{ij} - \tfrac{1}{3} I_1 \delta_{ij}$ is identically zero: a hydrostatic state changes volume but not shape.
 
 *Why it matters.* Plastic flow in a metal is the sliding of atomic planes past each other, which is a **shape**-changing, volume-preserving process driven by the deviatoric stress — which is why ductile yield criteria (Tresca, von Mises) depend only on the stress differences and are completely insensitive to superimposed pressure. Brittle fracture is the opening of a crack against the **tensile** normal stress, which is a volume-changing process driven by the spherical part — which is why brittle criteria (maximum normal stress, Mohr) depend on the largest principal tension and are strongly affected by pressure. The practical consequence is enormous: a carbide tool, a concrete core under confining pressure and a rock at depth all behave plastically under a hydrostatic compression that would shatter them at the surface, and a pressure vessel made of a nominally ductile steel can fracture in a state of triaxial tension at a crack tip where the local stress state is nearly hydrostatic.
 :::

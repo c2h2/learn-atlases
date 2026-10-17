@@ -41,7 +41,7 @@ M_O = r F \sin\theta = 0.25 \times 250 \times \sin 60^\circ = 62.5 \times 0.866 
 $$
 Equivalently, resolve the force: the component perpendicular to the handle is $250 \sin 60^\circ = 216.5\ \mathrm{N}$ with arm $0.25\ \mathrm{m}$, giving $54.1\ \mathrm{N\,m}$; the component along the handle is $250 \cos 60^\circ = 125\ \mathrm{N}$ with zero arm, contributing nothing but a useless bending of the bolt shank.
 
-The moment is greatest when $\sin\theta = 1$, that is at $\theta = 90^\circ$, giving $M_{\\max} = 62.5\ \mathrm{N\,m}$. Pushing at $60^\circ$ rather than squarely loses $13$ per cent of the available torque, and pushing at $30^\circ$ loses half of it.
+The moment is greatest when $\sin\theta = 1$, that is at $\theta = 90^\circ$, giving $M_{\max} = 62.5\ \mathrm{N\,m}$. Pushing at $60^\circ$ rather than squarely loses $13$ per cent of the available torque, and pushing at $30^\circ$ loses half of it.
 
 *Sanity check.* $54\ \mathrm{N\,m}$ is a typical road-car wheel-bearing torque; a mechanic's one-handed push of $250\ \mathrm{N}$ on a $0.25\ \mathrm{m}$ bar is exactly the right order to reach it. The answer is between $0$ and $62.5\ \mathrm{N\,m}$ as it must be, and it has units of force times length, not force.
 :::
@@ -113,7 +113,7 @@ that is $12.0\ \mathrm{N\,m}$ clockwise.
 The moment of a force about a *line* through $O$ in the direction of the unit vector $\mathbf{u}$ is the component of $\mathbf{M}_O$ along that line,
 $$
 M_{\mathbf{u}} = \mathbf{u} \cdot (\mathbf{r} \times \mathbf{F})
-= \begin{vmatrix} u_x & u_y & u_z \\ r_x & r_y & r_z \\ F_x & F_y & F_z \end{vmatrix} ,
+= \begin{vmatrix} u_x & u_y & u_z \ r_x & r_y & r_z \ F_x & F_y & F_z \end{vmatrix} ,
 $$
 where $\mathbf{r}$ runs from *any* point on the axis to any point on the line of action of the force. It is a scalar, signed by the sense of $\mathbf{u}$, and it measures the tendency to turn the body *about that axis* — the only component the body can use if it is pinned to it.
 :::
@@ -131,7 +131,7 @@ A force $\mathbf{F} = (30, -20, 50)\ \mathrm{N}$ acts at $P(2, 3, 1)\ \mathrm{m}
 ::: solution
 The axis direction is $\mathbf{u}_{AB} = (\mathbf{i} + 2 \mathbf{j} + 2 \mathbf{k}) / \sqrt{1 + 4 + 4} = (0.333, 0.667, 0.667)$. Take $\mathbf{r}$ from $A$ to $P$: $\mathbf{r} = (2, 3, 1)\ \mathrm{m}$. First
 $$
-\mathbf{M}_A = \mathbf{r} \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & 3 & 1 \\ 30 & -20 & 50 \end{vmatrix}
+\mathbf{M}_A = \mathbf{r} \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \ 2 & 3 & 1 \ 30 & -20 & 50 \end{vmatrix}
 = (3 \times 50 - 1 \times (-20)) \mathbf{i} - (2 \times 50 - 1 \times 30) \mathbf{j} + (2 \times (-20) - 3 \times 30) \mathbf{k}
 $$
 $$
@@ -294,7 +294,7 @@ A force $\mathbf{F} = (10, -8, 12)\ \mathrm{N}$ acts at the point $(2, 1, 3)\ \m
 ::: solution
 $$
 \mathbf{M}_O = \mathbf{r} \times \mathbf{F}
-= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & 1 & 3 \\ 10 & -8 & 12 \end{vmatrix}
+= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \ 2 & 1 & 3 \ 10 & -8 & 12 \end{vmatrix}
 = (1 \times 12 - 3 \times (-8)) \mathbf{i} - (2 \times 12 - 3 \times 10) \mathbf{j} + (2 \times (-8) - 1 \times 10) \mathbf{k}
 $$
 $$

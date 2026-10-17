@@ -20,7 +20,7 @@ $$
 where $k$ is the **axial stiffness** in $\mathrm{N / m}$. The general form for a varying bar is
 $$
 \delta = \int_0^L \frac{P(x)}{E A(x)}\, \mathrm{d} x, \qquad
-\frac{1}{k} = \int_0^L \frac{\\mathrm{d} x}{E A(x)} ,
+\frac{1}{k} = \int_0^L \frac{\mathrm{d} x}{E A(x)} ,
 $$
 so that axial compliances add in series exactly as springs in series, and stiffnesses add in parallel.
 :::
@@ -46,10 +46,10 @@ The factor one half is the average of a linearly varying force, and the same arg
 
 For the taper, $d (x) = d_1 + (d_2 - d_1) x / L$ and $A (x) = \pi d (x)^{2} / 4$, so with $P$ constant
 $$
-\delta = \frac{4 P}{\pi E} \int_0^L \frac{\\mathrm{d} x}{d (x)^{2}}
+\delta = \frac{4 P}{\pi E} \int_0^L \frac{\mathrm{d} x}{d (x)^{2}}
 = \frac{4 P}{\pi E} \cdot \frac{L}{d_1 d_2},
 $$
-using $\int_0^L \\mathrm{d} x / (a + b x)^{2} = (1 / b)(1 / a - 1 / (a + b L))$ with $a = d_1$, $b = (d_2 - d_1) / L$. Setting $d_1 = d_2 = d$ recovers the prismatic result.
+using $\int_0^L \mathrm{d} x / (a + b x)^{2} = (1 / b)(1 / a - 1 / (a + b L))$ with $a = d_1$, $b = (d_2 - d_1) / L$. Setting $d_1 = d_2 = d$ recovers the prismatic result.
 :::
 
 ::: example Stepped bar {#ex-stepped-bar}
