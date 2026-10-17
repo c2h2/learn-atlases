@@ -180,11 +180,11 @@ A stiff, light, flat panel of given thickness must deflect as little as possible
 **The index.** For a panel of fixed thickness, fixed span and given stiffness, the deflection is minimised by maximising $E$; for a panel of fixed **mass**, by maximising $E^{1 / 3}$ for a fixed-thickness panel and $E^{1 / 2}$ for a fixed-width beam. The relevant ranking is therefore not $E$ but $E^{1 / 3} / \rho$:
 $$
 \begin{array}{l c c c}
-\text{Material} & E\ \left[ \mathrm{GPa} \right] & \rho\ \left[ \mathrm{g / cm^{3}} \right] & E^{1 / 3} / \rho \
-\text{Steel} & 207 & 7.85 & 0.68 \
-\text{Aluminium} & 69 & 2.70 & 0.75 \
-\text{CFRP quasi-isotropic} & 50 & 1.55 & 1.35 \
-\text{GFRP} & 30 & 1.90 & 1.18 \
+\text{Material} & E\ \left[ \mathrm{GPa} \right] & \rho\ \left[ \mathrm{g / cm^{3}} \right] & E^{1 / 3} / \rho \\
+\text{Steel} & 207 & 7.85 & 0.68 \\
+\text{Aluminium} & 69 & 2.70 & 0.75 \\
+\text{CFRP quasi-isotropic} & 50 & 1.55 & 1.35 \\
+\text{GFRP} & 30 & 1.90 & 1.18 \\
 \text{Balsa (end-grain)} & 10 & 0.15 & 14.4
 \end{array}
 $$
@@ -358,11 +358,11 @@ $$
 so the material index is $\sigma_y^{2} / E$, and unlike stiffness this one **can** be improved by processing, because $\sigma_y$ is a defect property.
 $$
 \begin{array}{l c c c}
-\text{Material} & \sigma_y\ \left[ \mathrm{MPa} \right] & E\ \left[ \mathrm{GPa} \right] & U_r\ \left[ \mathrm{MJ / m^{3}} \right] \
-\text{Music wire, hardened and tempered} & 1900 & 205 & 8.8 \
-\text{Stainless 17-7 PH, aged} & 1650 & 200 & 6.8 \
-\text{Phosphor bronze} & 600 & 110 & 1.6 \
-\text{CFRP rod} & 1500 & 140 & 8.0 \
+\text{Material} & \sigma_y\ \left[ \mathrm{MPa} \right] & E\ \left[ \mathrm{GPa} \right] & U_r\ \left[ \mathrm{MJ / m^{3}} \right] \\
+\text{Music wire, hardened and tempered} & 1900 & 205 & 8.8 \\
+\text{Stainless 17-7 PH, aged} & 1650 & 200 & 6.8 \\
+\text{Phosphor bronze} & 600 & 110 & 1.6 \\
+\text{CFRP rod} & 1500 & 140 & 8.0 \\
 \text{Natural rubber} & 5 & 0.0012 & 7.5
 \end{array}
 $$

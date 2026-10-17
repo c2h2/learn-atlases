@@ -47,9 +47,9 @@ $$
 a **necessary** condition is that all coefficients be present and of one sign. The **Routh array** is constructed by writing the coefficients in two rows and generating the rest by
 $$
 \begin{array}{c|ccc}
-s^{n} & a_n & a_{n - 2} & a_{n - 4} \
-s^{n - 1} & a_{n - 1} & a_{n - 3} & a_{n - 5} \
-s^{n - 2} & b_1 & b_2 & \
+s^{n} & a_n & a_{n - 2} & a_{n - 4} \\
+s^{n - 1} & a_{n - 1} & a_{n - 3} & a_{n - 5} \\
+s^{n - 2} & b_1 & b_2 & \\
 \vdots & & &
 \end{array}
 \qquad
@@ -62,9 +62,9 @@ and the system is stable if and only if the **first column has no sign change**;
 For $p (s ) = s^{3} + a_1 s^{2} + a_2 s + a_3$ the array is
 $$
 \begin{array}{c|cc}
-s^{3} & 1 & a_2 \
-s^{2} & a_1 & a_3 \
-s^{1} & \left( a_1 a_2 - a_3 \right) / a_1 & 0 \
+s^{3} & 1 & a_2 \\
+s^{2} & a_1 & a_3 \\
+s^{1} & \left( a_1 a_2 - a_3 \right) / a_1 & 0 \\
 s^{0} & a_3 &
 \end{array}
 $$

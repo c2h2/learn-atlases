@@ -116,8 +116,8 @@ and the direction $\left[ uvw \right]$ is normal to the plane $\left( uvw \right
 **Plastic slip occurs on the closest-packed plane in the closest-packed direction**, because that combination has the widest dislocation core and the lowest Peierls stress. The count of slip systems decides ductility:
 $$
 \begin{array}{l l l l}
-\text{FCC} & \left\{ 111 \right\} \left\langle 110\right\rangle & 4 \times 3 & = 12 \ \text{systems, very ductile} \
-\text{BCC} & \left\{ 110 \right\} \left\langle 111\right\rangle + \left\{ 112 \right\} + \left\{ 123 \right\} & \text{many} & \text{ductile but strongly temperature-dependent} \
+\text{FCC} & \left\{ 111 \right\} \left\langle 110\right\rangle & 4 \times 3 & = 12 \ \text{systems, very ductile} \\
+\text{BCC} & \left\{ 110 \right\} \left\langle 111\right\rangle + \left\{ 112 \right\} + \left\{ 123 \right\} & \text{many} & \text{ductile but strongly temperature-dependent} \\
 \text{HCP} & \left\{ 0001 \right\} \left\langle 11\bar{2} 0\right\rangle & 1 \times 3 & = 3 \ \text{systems, brittle unless } c / a \ne 1.633
 \end{array}
 $$
@@ -132,8 +132,8 @@ $$
 with $\lambda_{\mathrm{Cu}\, K \alpha} = 0.15406\ \mathrm{nm}$, gives the diffractometer's peak positions, and the **structure factor** decides which reflections are present:
 $$
 \begin{array}{l l}
-\text{FCC} & hkl \ \text{all odd or all even} \
-\text{BCC} & h + k + l \ \text{even} \
+\text{FCC} & hkl \ \text{all odd or all even} \\
+\text{BCC} & h + k + l \ \text{even} \\
 \text{HCP} & - h + k + l \ \text{even for the first two-index families} .
 \end{array}
 $$
@@ -150,9 +150,9 @@ An unknown metal gives X-ray peaks at $2 \theta = 43.32^{\circ}$, $50.45^{\circ}
 **The ratio test.** With $\sin^{2} \theta$ proportional to $h^2 + k^2 + l^2$:
 $$
 \begin{array}{c c c c c}
-2 \theta & 43.32 & 50.45 & 74.13 & 89.99 \
-\sin^{2} \theta & 0.1362 & 0.1816 & 0.3632 & 0.4995 \
-\text{ratio} & 1.000 & 1.333 & 2.667 & 3.667 \
+2 \theta & 43.32 & 50.45 & 74.13 & 89.99 \\
+\sin^{2} \theta & 0.1362 & 0.1816 & 0.3632 & 0.4995 \\
+\text{ratio} & 1.000 & 1.333 & 2.667 & 3.667 \\
 \times 3 & 3 & 4 & 8 & 11
 \end{array}
 $$
@@ -198,12 +198,12 @@ Select the crystal structure and processing route for a component that must comb
 **Screen on specific stiffness.** The candidates and their $E / \rho$ in $\mathrm{GN\, m\, kg^{- 1}}$:
 $$
 \begin{array}{l c c c}
-\text{Material} & E\ \left[ \mathrm{GPa} \right] & \rho\ \left[ \mathrm{g / cm^{3}} \right] & E / \rho \
-\text{Magnesium AZ31, HCP} & 45 & 1.77 & 25 \
-\text{Aluminium 6061, FCC} & 69 & 2.70 & 26 \
-\text{Titanium Ti-6Al-4V, HCP} & 114 & 4.43 & 26 \
-\text{Steel, BCC} & 207 & 7.85 & 26 \
-\text{CFRP, unidirectional T800} & 163 & 1.58 & 103 \
+\text{Material} & E\ \left[ \mathrm{GPa} \right] & \rho\ \left[ \mathrm{g / cm^{3}} \right] & E / \rho \\
+\text{Magnesium AZ31, HCP} & 45 & 1.77 & 25 \\
+\text{Aluminium 6061, FCC} & 69 & 2.70 & 26 \\
+\text{Titanium Ti-6Al-4V, HCP} & 114 & 4.43 & 26 \\
+\text{Steel, BCC} & 207 & 7.85 & 26 \\
+\text{CFRP, unidirectional T800} & 163 & 1.58 & 103 \\
 \text{Beryllium, HCP} & 287 & 1.85 & 155
 \end{array}
 $$
@@ -343,11 +343,11 @@ A space mechanism needs a structural member of $500\ \mathrm{mm}$ length that mu
 **Thermal.** The allowance is $10 / 500{,}000 = 20\ \mu\varepsilon$ over $100\ \mathrm{K}$, so $\alpha \le 0.2 \times 10^{- 6}\ \mathrm{K^{- 1}}$.
 $$
 \begin{array}{l c c}
-\text{Material} & \alpha\ \left[ 10^{- 6}\ \mathrm{K^{- 1}} \right] & \Delta L\ \left[ \mu\mathrm{m} \right] \
-\text{Aluminium} & 23 & 1150 \
-\text{Steel} & 12 & 600 \
-\text{Invar} & 1.2 & 60 \
-\text{CFRP, unidirectional along fibres} & - 0.9 & - 45 \
+\text{Material} & \alpha\ \left[ 10^{- 6}\ \mathrm{K^{- 1}} \right] & \Delta L\ \left[ \mu\mathrm{m} \right] \\
+\text{Aluminium} & 23 & 1150 \\
+\text{Steel} & 12 & 600 \\
+\text{Invar} & 1.2 & 60 \\
+\text{CFRP, unidirectional along fibres} & - 0.9 & - 45 \\
 \text{CFRP, quasi-isotropic} & 5 & 250
 \end{array}
 $$
