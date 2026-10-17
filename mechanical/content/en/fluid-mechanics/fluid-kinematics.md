@@ -428,6 +428,19 @@ $$
 **The material derivative** is **Euler**'s distinction of **1755** between following a particle and watching a point, and its modern notation $D / D t$ is **Lagrange**'s of **1788** applied to fluids by **Stokes** in **1845**. **The stream function** is **Stokes**'s again, of **1842** (though **Rankine** used it earlier in a private note), and **the velocity potential** is **Rankine**'s of **1858** — the same man who, with **Green**'s **1838** theorem in hand, built the whole apparatus of sources, sinks and images that still fills the middle chapter of every aerodynamics text. **The Cauchy–Riemann route into fluid mechanics** was opened by **Lamott** in **1845** and exploited by **Kirchhoff, Helmholtz and Rayleigh** through the **1870s**; **Milne-Thomson**'s *Circulation Airfoils and Other Fluid Jets by the Method of Conformal Transformation* of **1933** is the most complete statement of the technique and is still readable. **Helmholtz's three vortex theorems** are of **1858**, and the third — that a vortex filament cannot end in the fluid — is the topological statement that makes a wing's trailing vortices, a tornado's funnel and a smoke ring's closed loop the same phenomenon. **The Kutta–Joukowski theorem** was published by **Kutta** in **1902** (as his Stuttgart doctoral thesis, supervised by **Lilienthal**'s contemporary) and independently by **Joukowsky** in **1906**, and the **laminar boundary layer** that reconciles it with d'Alembert's paradox is **Prandtl**'s **1904** Heidelberg congress paper — three pages, and the birth of modern fluid mechanics. **Bell and Mehta**'s contraction profile is of **1935**, from the Guggenheim wind tunnel at Caltech, and is still the shape every tunnel is built to.
 :::
 
+::: quiz
+A plane flow has velocity potential $\phi = K ( x^{ 2 } - y^{ 2 } )$ and streamfunction $\psi = 2 K x y$. A small square of fluid released in the first quadrant will:
+
+- [ ] Rotate, because the streamlines $x y = $ const are curved
+- [x] Stretch along $x$ and flatten along $y$ with no rotation and no change of area — the flow is irrotational and incompressible, so the motion is pure strain
+- [ ] Translate along $x$, because $\nabla \phi$ is a velocity
+- [ ] Do nothing, because the flow is steady
+
+::: solution
+**Pure strain.** $u = \partial \phi / \partial x = 2 K x$, $v = - 2 K y$, so $\partial u / \partial x = 2 K$, $\partial v / \partial y = - 2 K$ — the volume dilation is zero — and the vorticity is $\omega_z = \partial v / \partial x - \partial u / \partial y = 0 - 0 = 0$. **The point being tested is the first option: curved streamlines do not imply rotation.** This is one of the most durable misconceptions in the subject. A potential vortex $\psi = K \ln r$ has circular streamlines and zero vorticity everywhere except at the origin, and a fluid element going round it deforms continuously without rotating, in exactly the way a long boat on a circular current turns end over end while its keel stays non-rotating in the kinematic sense. **Vorticity is the average angular velocity of two perpendicular material lines, not the curvature of the path**, and the distinction is the reason a wing's trailing vortex sheet carries all the flow's rotation while the flow around the wing itself is treated as potential.
+:::
+:::
+
 ## Where this leads
 
 The material derivative is the left-hand side of [[fluid-mechanics/navier-stokes]]; the stream function and potential are the unknowns of [[fluid-mechanics/dimensional-analysis]]'s similarity arguments and of every panel and potential-flow code in [[aerodynamics]]; the circulation is the quantity that [[aerodynamics]]'s lifting-line theory solves for and [[propulsion]]'s blade-element method integrates; and the flow net is the same Laplace equation that [[heat-transfer]]'s conduction shapes and [[manufacturing]]'s seepage-under-dam problems solve.

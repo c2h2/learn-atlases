@@ -58,6 +58,15 @@ A ratio below 1 leaves the film in tension and porous; a ratio above 2 puts it i
 $$
 i_p \sim 10^{- 8}\ \mathrm{A / m^{2}} \ \Rightarrow\ 0.01\ \mu\mathrm{m / yr} \quad \text{for 316 in nitric acid}.
 $$
+
+::: widget plot
+title: Anodic polarisation curve of a passive alloy, 316 in chloride
+f: log10(360*exp(-60*max(0,x+0.1)+6*min(0,x+0.1))+0.02+0.02*exp(8*(x-0.6)))
+x: -0.5, 1.2
+y: -2, 3
+caption: $\log_{10} i$ in $\mathrm{mA / m^2}$ against applied potential in volts. **The curve is the whole of passivity in one line: a current that rises to a critical value of $360\ \mathrm{mA / m^2}$ at $- 0.1\ \mathrm{V}$ and then falls by four and a half decades to a passive plateau of $0.02\ \mathrm{mA / m^2}$, before turning up again in the transpassive region past $+ 0.6\ \mathrm{V}$.** Read the three design numbers off it. The **critical current density** is the current a scratch must be re-passivated through, and an alloy whose $i_{\mathrm{crit}}$ is high cannot re-passivate a large scratch at all. The **passive current** is the corrosion rate in service, and four and a half decades below $i_{\mathrm{crit}}$ is why a passive alloy that was nearly destroyed in the pickling bath lasts fifty years. And the **transpassive potential** is the ceiling: above it the film dissolves, and a cathodic protection system or a stray current can push a structure over that ceiling in a millisecond.
+:::
+
 **The two engineering consequences.** A passive alloy must be **re-passivated** after a scratch, and it can only do so if oxygen or a cathodic reaction is present — which is why a crevice, where the oxygen is gone, is the death of a passive alloy. And a passive alloy's transpassive potential is the ceiling of its usefulness: 316 in hot concentrated sulfuric acid goes passive and then transpassive and corrodes faster than carbon steel.
 :::
 

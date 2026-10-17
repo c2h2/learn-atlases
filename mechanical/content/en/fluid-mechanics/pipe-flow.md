@@ -335,6 +335,25 @@ $$
 **Darcy** measured pipe friction between **1854 and 1857** in the aqueduct mains of **Dijon**, and the friction factor is his and not Moody's; **Poiseuille**'s laminar law is of **1840** and was measured on tubes of drawn **capillary glass** with mercury manometers and a graduated tube, at flow rates he set by the height of a constant-head tank. **Nikuradse**'s 1933 dissertation, supervised by **Prandtl** at Göttingen, glued **uniform sand grains** to the inside of pipes in eight graded sizes and produced the diagram that made the roughness concept quantitative; **the third volume of *Forschungsheft* 356 ran to fewer than two hundred copies and was unknown in English until the NACA translation of 1950**, by which time its content had been reinvented several times. **Colebrook** was a **British** engineer working on the **London** water works, and his 1939 paper — thirty-one pages, of which the equation is one line and the rest is a discussion of what to do about **ageing** — is the most-used equation in fluid mechanics and was written without a computer, by hand-fitting to **2,000** data points. **Moody**'s 1944 *Transactions of the ASME* chart was a **practitioner's** document and is the most-reproduced figure in engineering; **Rouse** and **Ranga Raju** produced the open-channel analogue in the 1960s. **The Hazen–Williams formula of 1905 and the Manning formula of 1890 remain in use in water-supply and open-channel practice respectively, and both are dimensionally inhomogeneous** — a fact that **Frederick** and **Eagson** demonstrated in a 1968 paper recommending their abolition, which was not adopted. **The equivalent sand-grain roughness is a fiction that works: no commercial pipe has sand grains, and no two authors agree on the value for the same material, which is why a hydraulic calculation should report its assumed $k_s$ and its $k_s^+$ and not only its answer.**
 :::
 
+::: quiz
+Doubling the diameter of a long turbulent water pipe, holding the flow rate and length fixed, reduces the frictional head loss by approximately:
+
+- [ ] A factor of two, because the velocity halves
+- [x] A factor of about twenty-eight: $h_f \propto f / D^{ 5 }$, and the larger diameter also lowers the Reynolds number and therefore $f$ slightly
+- [ ] A factor of thirty-two exactly
+- [ ] A factor of sixteen
+
+::: solution
+**About twenty-eight.** From Darcy–Weisbach with $V = 4 Q / \pi D^{ 2 }$,
+
+$$
+h_f = f \frac{ L }{ D } \frac{ V^{ 2 } }{ 2 g } = \frac{ 8 f L Q^{ 2 } }{ \pi^{ 2 } g D^{ 5 } } \ \Rightarrow \ \frac{ h_{f, 2 } }{ h_{f, 1 } } = \frac{ f_2 }{ f_1 } \left( \frac{ D_1 }{ D_2 } \right)^{ 5 } = \frac{ 1 }{ 2^{ 5 } } \times \frac{ 1 }{ 2^{ 0.2 } } \approx \frac{ 1 }{ 28 }
+$$
+
+using Blasius, $f \propto \mathrm{Re}^{- 0.2 } \propto D^{ 0.2 }$ for a smooth pipe. **The exact exponent depends on whether the pipe is hydraulically smooth or fully rough — in the fully rough regime $f$ is independent of Reynolds number and the factor is exactly $32$ — and that difference is itself the reason the Moody chart is a chart and not a formula.** The design consequence is the most valuable number in piping: **head loss goes as the inverse fifth power of diameter, so diameter is worth far more than anything else you can change.** Halving a flow rate costs $75\ \%$ of the loss; going one standard pipe size up costs $40$–$60\ \%$. This is why the economic optimum pipe size, computed over the life of the plant against the pump's energy bill, is almost always one size larger than the one a fitter would install by habit.
+:::
+:::
+
 ## Where this leads
 
 The same loss budget with a compressibility correction is [[fluid-mechanics/compressible-flow]]; the unsteady version of the last worked case is the whole of [[fluid-mechanics]]' surge analysis and [[energy-systems]]' hydro penstock design; the network solution is [[energy-systems]]' district-heating and [[manufacturing]]'s compressed-air design; the two-phase version is [[propulsion]]'s fuel and [[energy-systems]]' steam lines; and the open-channel limit — the same equations with a free surface and the Froude number in place of the Reynolds number as the governing group — is the river and canal hydraulics of the Earth atlas.
