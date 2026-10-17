@@ -47,9 +47,9 @@ $$
 a **necessary** condition is that all coefficients be present and of one sign. The **Routh array** is constructed by writing the coefficients in two rows and generating the rest by
 $$
 \begin{array}{c|ccc}
-s^{n} & a_n & a_{n - 2} & a_{n - 4} \\
-s^{n - 1} & a_{n - 1} & a_{n - 3} & a_{n - 5} \\
-s^{n - 2} & b_1 & b_2 & \\
+s^{n} & a_n & a_{n - 2} & a_{n - 4} \
+s^{n - 1} & a_{n - 1} & a_{n - 3} & a_{n - 5} \
+s^{n - 2} & b_1 & b_2 & \
 \vdots & & &
 \end{array}
 \qquad
@@ -62,9 +62,9 @@ and the system is stable if and only if the **first column has no sign change**;
 For $p (s ) = s^{3} + a_1 s^{2} + a_2 s + a_3$ the array is
 $$
 \begin{array}{c|cc}
-s^{3} & 1 & a_2 \\
-s^{2} & a_1 & a_3 \\
-s^{1} & \left( a_1 a_2 - a_3 \right) / a_1 & 0 \\
+s^{3} & 1 & a_2 \
+s^{2} & a_1 & a_3 \
+s^{1} & \left( a_1 a_2 - a_3 \right) / a_1 & 0 \
 s^{0} & a_3 &
 \end{array}
 $$
@@ -75,6 +75,22 @@ s^{3} + a_1 s^{2} + a_2 s + a_1 a_2
 = \left( s + a_1 \right)\left( s^{2} + a_2 \right),
 $$
 which has a pair of roots at $\pm \mathrm{j} \sqrt{a_2}$. The stability boundary is therefore crossed through a **pair of purely imaginary roots at $\omega = \sqrt{a_2}$**, never through a single root, and the frequency at which the loop goes unstable is determined by the coefficients and not by the gain that got it there.
+:::
+
+::: definition Gain margin and phase margin {#def-margins}
+Let $\omega_{gc}$ be the **gain crossover frequency** where $\left| L \left( \mathrm{j} \omega \right) \right| = 1$, and $\omega_{pc}$ the **phase crossover frequency** where $\angle L = - 180^{\circ}$. Then
+$$
+\text{phase margin} \quad \varphi_m = 180^{\circ} + \angle L \left( \mathrm{j} \omega_{gc} \right),
+\qquad
+\text{gain margin} \quad g_m = \frac{1}{\left| L \left( \mathrm{j} \omega_{pc} \right) \right|} .
+$$
+A loop is closed-loop stable (for a stable open-loop plant) when both are positive. Typical specifications are $\varphi_m \ge 45^{\circ}$ and $g_m \ge 6\ \mathrm{dB}$, and for a well-behaved second-order-dominated loop the phase margin relates to damping by
+$$
+\zeta \approx \frac{\varphi_m / 100}{1 + \varphi_m / 100} \quad\text{with } \varphi_m \text{ in degrees},
+\qquad
+M_p \approx \frac{1}{2 \sin \left( \varphi_m / 2 \right)} \ \text{for } \varphi_m < 60^{\circ} .
+$$
+The **sensitivity peak** $M_s = \max_\omega \left| S \left( \mathrm{j} \omega \right) \right|$ is the single-number summary that ties the two margins together, and a common design target is $M_s \le 1.4$, equivalent to roughly $\varphi_m \ge 50^{\circ}$.
 :::
 
 ::: widget plot
