@@ -158,6 +158,11 @@ $$
 $$
 v_{\text{centre}} = \omega R = 11.11 \times 0.12 = 1.333\ \mathrm{m / s} \quad \text{forwards} .
 $$
+*Sanity.* The spool moves in the **same** direction as the pull, more slowly than it. The general rule is that the spool rolls towards the side of the contact point on which the cord's line of action falls: pull horizontally at the top and it comes to you, and pull at an angle $\alpha$ to the horizontal with
+$$
+\sin \alpha = \frac{r}{R} = 0.5 \quad\Longrightarrow\quad \alpha = 30^{\circ}
+$$
+and the line of action passes exactly through the contact point, so the pull has no moment about the instantaneous centre and the spool does not roll at all.
 *Sanity.* The spool moves in the **same** direction as the pull, more slowly than it. The general rule is that the spool rolls towards the side of the contact point on which the cord's line of action falls: pull horizontally at the top and it comes to you, pull at just the right angle and it does not move at all. That critical angle is where the cord's line of action passes through the contact point, at
 $$
 \cos \alpha = - \frac{r}{R} = - 0.5 \quad\Longrightarrow\quad \alpha = 120^{\circ}
