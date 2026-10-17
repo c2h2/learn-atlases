@@ -7,9 +7,25 @@
   "order": 10,
   "tagline": "Forces and moments, equilibrium of particles and rigid bodies, trusses, frames and machines, friction, centroids and moments of inertia of areas",
   "summary": "Statics is the mechanics of bodies that do not accelerate, and every bridge, crane and machine frame must first be in equilibrium. The course builds the vector tools of mechanics — forces, moments, couples and free-body diagrams — and applies the equations of equilibrium to particles, rigid bodies, trusses, frames and machines, friction, centroids and distributed loads, and the second moments of area used throughout structural design.",
-  "overview": [],
+  "overview": [
+    "Statics is the study of bodies that do not accelerate, and it is not an approximation to dynamics. It is the design case. Almost every artefact an engineer will ever sign for — a roof truss, a machine frame, a bracket, a foundation, a bolt group, a shelf bracket — is sized not by how it moves but by how it sits still, and the whole subject follows from two vector equations that Newton wrote down in 1687 and that Archimedes had, in effect, used for the lever two thousand years earlier: the sum of the forces is zero and the sum of the moments is zero.",
+    "The subject's real content is not the algebra but the isolation. A free-body diagram is an argument about what is touching what, and getting it wrong is not a small error but a total one: a missing reaction gives a structure that cannot stand, a spurious one gives a problem with more unknowns than equations and no way to know that the extra unknown is imaginary. The course therefore spends its first four lessons on force systems and their equivalents — resolving, reducing a system to a force and a couple, replacing a distributed load by a resultant with a stated line of action — and only then applies the equilibrium equations to a body, and then to systems of bodies, where the discipline of dismembering the system and drawing a separate diagram for each part is the difference between a solvable problem and an insoluble one.",
+    "The three great applications are treated at length. **Trusses** are frameworks of two-force members, in which the entire analysis is the observation that a member loaded at two points carries load only along the line joining them; the method of joints, the method of sections and the inspection rules for zero-force members are then arithmetic, and the arithmetic is what let nineteenth-century engineers design spans of two hundred feet with a slide rule and a drawing board. **Frames and machines** are frameworks of multi-force members, where the members bend, where the dismemberment must be chosen with care, and where the difference between a three-force member in equilibrium and a two-force member is the difference between a mechanism and a structure. **Friction** is the only irreversible force in the subject, and it is the reason a wedge holds, a belt drives, a screw lifts a tonne with one hand and a self-locking toggle stays shut when the load tries to open it.",
+    "The last two lessons build the section properties that mechanics of materials will spend a course consuming. The **centroid** is the point through which a uniform stress distribution's resultant acts, and the **second moment of area** is the quantity that decides how much a beam bends and how much stress a given bending moment produces; both are pure geometry, both are computed by the same integrals, and both are misunderstood by every student who has ever applied the parallel-axis theorem to a composite section without noticing that the theorem is about moving the axis and not about adding numbers. The course closes with **principal axes and Mohr's circle for area**, which is the first appearance in the curriculum of the idea that a quantity can depend on the orientation of the axes you measure it with — an idea that will reappear as stress, as strain, as inertia and as nothing else all the way to the end of the degree."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Reduce an arbitrary system of forces and couples acting on a rigid body to a single resultant force and couple at a chosen point, and locate the line of action of a single-force or wrench resultant where one exists",
+    "Draw a complete free-body diagram for a particle or a rigid body in two or three dimensions, listing every applied load, reaction and couple, and state before solving whether the number of unknowns matches, exceeds or falls short of the number of independent equilibrium equations",
+    "Apply the equilibrium equations to rigid bodies in plane and space, and identify a partially constrained or improperly constrained body from the geometry of its reactions rather than from the count",
+    "Compute the moment of a force about a point and about a specified axis, use Varignon's theorem and the vector triple product interchangeably, and recognise a couple as a free vector whose moment is the same about every point",
+    "Analyse a plane truss by the method of joints and the method of sections, identify zero-force members by inspection, and classify a truss as statically determinate, statically indeterminate or a mechanism from the relation between joints, members and reactions",
+    "Dismember a frame or a machine into its members, distinguish a two-force member from a multi-force member before writing an equation, and carry the correct reaction components at each connection type — pin, roller, fixed, smooth surface, ball-and-socket",
+    "Apply Coulomb's friction laws to wedges, screws, flat and V-belts, band brakes, clutches and journal collars, compute the belt tension ratio from the capstan formula, and determine whether a machine or fastener is self-locking from the friction angle alone",
+    "Locate the centroid of a line, area or volume by integration and by the composite-body method, compute the resultant and line of action of a one-, two- or three-dimensional distributed load, and apply the theorems of Pappus to surfaces and solids of revolution",
+    "Compute the second moments of area and the product of inertia of a general section about any set of axes, apply the parallel-axis theorem correctly to a built-up section, and find the principal axes, the principal moments and the radius of gyration",
+    "Judge whether a real built-up structure should be idealised as a truss, a frame or a shell, trace the load path from the point of application to the foundation, and state which members are in tension, which in compression and which are carrying load only because the idealisation forbade them from being straight"
+  ],
   "chapters": [
     {
       "slug": "forces-vectors",
@@ -83,8 +99,123 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1586,
+      "title": "Stevin, the parallelogram of forces, and a chain over a prism",
+      "detail": "Simon Stevin, an engineer of the Dutch water-works, published *De Beghinselen des Waterwichts* at Leiden in 1586 and the *Staticorum Elementorum* two years later among his *Elements of Architecture*, and in them gave the first correct statement of the composition of forces — the parallelogram law, proved by a thought experiment with a bead on a wire — together with the laws of the inclined plane and the lever. His proof of the inclined plane is the most elegant thing in Renaissance mechanics: a smooth chain draped over a triangular prism, which cannot move without violating the impossibility of perpetual motion, from which the sine law of the plane follows in four lines. **Two thousand years earlier Archimedes of Syracuse had stated the principle of the lever, discovered the centre of gravity and computed the areas and centroids of parabolic segments by a method that anticipated the integral calculus; Stevin's achievement is not that he went further than Syracuse but that the intervening two millennia went so little further.**",
+      "people": [
+        "Simon Stevin",
+        "Archimedes of Syracuse"
+      ]
+    },
+    {
+      "year": 1687,
+      "title": "The Principia, and Varignon's project",
+      "detail": "Newton's *Principia* appeared in 1687 and with it the three laws whose first gives statics its whole content. In the same year Pierre Varignon published the *Projet d'une Mecanique*, in which he replaced the geometric reasoning of Stevin and Roberval with the composition of rectangular components, stated the theorem that the moment of a force about a point equals the sum of the moments of its components, and announced an intention to write the whole of mechanics as algebra. He died before finishing it, and the *Projet* was edited into the *Elements de mecanique* by his brother in 1725. **Every free-body diagram drawn since is Varignon's idea, and so is every equation in this course: the theorem of moments is not a theorem about forces but a theorem about the distributive law of the cross product, and recognising that is most of what a first course in statics has to teach.**",
+      "people": [
+        "Isaac Newton",
+        "Pierre Varignon"
+      ]
+    },
+    {
+      "year": 1744,
+      "title": "Euler, and the analytic theory of frames",
+      "detail": "Leonhard Euler, in the *Methodus inveniendi lineas curvas maximi minimive proprietate gaudentes*, published at Lausanne in 1744 and the *De curvis elasticis* that accompanied it, solved the problem of the column and founded the elastic curve; in the same decade he wrote down the equilibrium equations for a flexible cord, a cable and an arch, and was the first to state the problem of the redundant structure - a problem his contemporaries could not solve and which occupied the next hundred years. His 1773 paper on the strength of columns introduced the secant formula that still governs the design of struts. **Euler's column is the first example in engineering of a structure that fails at a load far below the material's crushing strength and for a reason that has nothing to do with the material, and the two centuries of struts, webs, flanges, thin shells and aircraft panels that followed are the working out of the fact that a structure's weakness is usually geometric.**",
+      "people": [
+        "Leonhard Euler",
+        "Daniel Bernoulli"
+      ]
+    },
+    {
+      "year": 1785,
+      "title": "Coulomb's friction",
+      "detail": "Charles-Augustin de Coulomb read three memoirs to the Academie des Sciences between 1781 and 1785 in which he established the empirical laws of dry friction — that the limiting friction is proportional to the normal load, independent of the apparent area of contact, and dependent on the sliding speed in a way he measured but did not explain. The friction angle, the coefficient, the distinction between static and kinetic friction, and the theory of the wedge, the screw and the retaining wall are all his, and engineers use them unchanged. **That friction is independent of apparent area is a statement about asperities, and it took until the 1950s for Bowden and Tabor to explain it by the real area of contact being proportional to load; that Coulomb measured it with a beam balance and a block of wood on a board and got numbers engineers still quote is a monument to the man's care.**",
+      "people": [
+        "Charles-Augustin de Coulomb",
+        "Frank Philip Bowden",
+        "David Tabor"
+      ]
+    },
+    {
+      "year": 1805,
+      "title": "The capstan formula",
+      "detail": "Johann August Eytelwein, a Prussian hydraulic engineer, published in 1805 in his *Handbuch der Mechanik* the exponential relation between the tensions at the two ends of a rope wrapped on a capstan, which Leonhard Euler had obtained in the 1760s and which is still called the Euler-Eytelwein formula in German engineering. **It is the most counter-intuitive result in statics — that the holding force on a mooring line wrapped twice round a bollard is smaller than the load by two orders of magnitude for a couple of turns of hemp on iron — and it is why one sailor can hold a ship, why a belt drive can be light, and why a capstan must never be eased under load, because the ratio collapses the moment the rope begins to slip and the whole load comes back.**",
+      "people": [
+        "Johann August Eytelwein",
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1863,
+      "title": "Ritter's method of sections",
+      "detail": "August Ritter, a Saxon professor of engineering, published in 1863 the method of sections, in which a truss is cut by a straight line and the forces in the cut members follow from the equilibrium of the whole portion on one side. It reduces the analysis of a determinate truss from one joint at a time to three equations and a straightedge, and it made the design of a pin-jointed railway bridge a matter of an afternoon rather than a week. **The null-point construction for the worst position of a moving load on a truss - still the fastest way to see where a girder is most heavily stressed, and standard equipment in every bridge office in Europe for eighty years - is the work of a different and younger Ritter: Wilhelm Ritter, Culmann's assistant at Zurich and afterwards the first professor of structural engineering at the ETH. Confusing August Ritter of Dresden with Wilhelm Ritter of Zurich is a rite of passage in every history of structures course, and this atlas commits it in its own sources often enough to be worth naming.**",
+      "people": [
+        "August Ritter"
+      ]
+    },
+    {
+      "year": 1866,
+      "title": "Culmann and graphical statics",
+      "detail": "Karl Culmann published *Die Graphische Statik* at Zurich in 1866, and for the next eighty years it was how bridges, roofs and cranes were designed. The funicular polygon, the force polygon, Maxwell's reciprocal diagram and Cremona's construction are all children of that book, and Culmann's Zurich school trained the generation that built the Swiss railways and, at one remove through his assistant Wilhelm Ritter, the generation of Robert Maillart. **Graphical statics was not a primitive numerical method but a genuine geometric theory: the funicular polygon is a bending-moment diagram, the reciprocal figure is a statement of static duality, and Maxwell's use of the reciprocal diagram in 1864 to find the forces in a pin-jointed space frame is the first matrix formulation of a structure's behaviour - and the reciprocal theorem it rests on is nothing other than the symmetry of the flexibility matrix, the same symmetry every modern stiffness program inherits. It was displaced not by being wrong but by the electronic calculator, and its disappearance from the curriculum is one of the more complete losses in the history of engineering education.**",
+      "people": [
+        "Karl Culmann",
+        "James Clerk Maxwell",
+        "Otto Mohr",
+        "Wilhelm Ritter"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "author": "J. L. Meriam, L. G. Kraige and J. N. Bolton",
+      "title": "Engineering Mechanics: Statics",
+      "publisher": "Wiley, 9th edition",
+      "year": 2019
+    },
+    {
+      "author": "F. P. Beer, E. R. Johnston, D. F. Mazurek and P. J. Cornwell",
+      "title": "Vector Mechanics for Engineers: Statics",
+      "publisher": "McGraw-Hill, 13th edition",
+      "year": 2022
+    },
+    {
+      "author": "R. C. Hibbeler",
+      "title": "Engineering Mechanics: Statics",
+      "publisher": "Pearson, 15th edition",
+      "year": 2022
+    },
+    {
+      "author": "Jacques Heyman",
+      "title": "The Stone Skeleton: Structural Engineering of Masonry Architecture",
+      "publisher": "Cambridge University Press",
+      "year": 1995
+    },
+    {
+      "author": "Karl Culmann",
+      "title": "Die Graphische Statik",
+      "publisher": "Meyer and Zorn, Zurich",
+      "year": 1866
+    },
+    {
+      "author": "Stephen Timoshenko",
+      "title": "A History of the Strength of Materials",
+      "publisher": "McGraw-Hill (Dover reprint 1983)",
+      "year": 1953
+    },
+    {
+      "author": "A. P. French",
+      "title": "Newtonian Mechanics",
+      "publisher": "W. W. Norton",
+      "year": 1971
+    },
+    {
+      "author": "J. E. Gordon",
+      "title": "Structures: Or Why Things Don't Fall Down",
+      "publisher": "Penguin",
+      "year": 1978
+    }
+  ],
   "next": [
     "dynamics",
     "mechanics-of-materials"

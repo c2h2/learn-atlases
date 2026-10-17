@@ -7,12 +7,28 @@
   "order": 50,
   "tagline": "Stress and strain, axial load, torsion, shear-force and bending-moment diagrams, bending and shear stresses, stress transformation, beam deflection and buckling",
   "summary": "Mechanics of materials asks how much a loaded member deforms and when it will fail. Starting from stress, strain and Hooke's law, the course treats axially loaded bars, torsion of shafts, shear-force and bending-moment diagrams, bending and shear stresses in beams, combined loading, pressure vessels and stress transformation with Mohr's circle, the deflection of beams and the buckling of columns.",
-  "overview": [],
+  "overview": [
+    "Statics told you the forces a structure must carry. This course tells you what those forces do to the material, and it rests on a single act of idealisation: that a solid body, however complicated its shape and however varied its loading, can be replaced by a distribution of force per unit area over imaginary cut surfaces. Once stress and strain exist as concepts, the whole of strength of materials becomes a chain of four questions — what are the internal resultants, how are they distributed over the section, what is the state of stress at the critical point, and is that state enough to cause failure — and every lesson in the course is one link in that chain.",
+    "The course opens with the material itself: the tensile test, the stress-strain curve, the distinction between elastic and plastic strain, and the handful of constants — $E$, $G$, $\\nu$, $\\sigma_y$, $\\sigma_u$ — that describe an isotropic solid well enough to design with. It then works through the four basic load cases in the order a designer meets them: **axial load**, the only case with a uniform stress and therefore the only one that can be understood without a theory; **torsion**, where the circular shaft's exact solution is the one beautiful closed form in the subject and everything else is warping and membrane analogy; **shear force and bending moment**, which are not stresses at all but the internal resultants whose diagrams are the single most useful engineering drawing in existence; and then **bending stress** and **transverse shear**, which turn those resultants into stresses over a section.",
+    "The middle of the course is the transformation of stress, and it is the intellectual centre of the whole subject. A point in a loaded body has a different pair of normal and shear stresses on every plane through it, and the question 'what is the stress at this point' has no meaning until a plane is named. Mohr's circle answers the question completely and in two minutes; principal stresses and maximum shear stress answer it in words; and the failure theories — maximum normal stress, maximum shear stress, distortion energy, Mohr-Coulomb — answer the harder question of when a combination of principal stresses is worth as much as a simple tensile test. **Every one of those theories is wrong in a slightly different way, and knowing which way is the difference between a safe design and an over-built one.**",
+    "The last two lessons are the two ways a structure can fail without the material ever reaching its yield stress. **Deflection** is a stiffness and serviceability question, and it is solved by integration, by superposition and by the energy methods that make a hard case a one-line application of Castigliano; and **buckling** is a stability question, in which a perfectly straight strut under a perfectly centric load stands still until a sudden load and then does not, and in which the answer depends on the square of the slenderness and not at all on the strength of the steel. **The commonest catastrophic failure in the history of structures has been buckling, and the commonest design error in student work is treating it as a stress problem; the two lessons are placed last for that reason.**"
+  ],
   "prerequisites": [
     "statics",
     "materials-science"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Reduce a general state of stress at a point to its principal values and orientations, draw and read Mohr's circle for stress and for strain, and compute the maximum in-plane and out-of-plane shear stresses",
+    "Interpret a tensile test: extract $E$, the proportional limit, the $0.2\\ \\%$ proof stress, the ultimate strength, the reduction of area and the true stress and strain at fracture, and explain why the engineering and true curves diverge after necking",
+    "Compute the axial deformation of prismatic and stepped bars, bars under self weight and statically indeterminate assemblies including thermal and misfit effects, and identify the stress concentration factor and its limits of validity",
+    "Derive the torsion formula for a circular shaft from the linear shear-strain distribution, apply it to stepped and hollow shafts and to statically indeterminate shafts, and extend the treatment to thin-walled closed and open sections by the membrane analogy",
+    "Construct shear-force and bending-moment diagrams by area integration and by the differential relations $\\mathrm{d}V / \\mathrm{d}x = - w$ and $\\mathrm{d}M / \\mathrm{d}x = V$, and use them to locate the critical section of a beam without solving the whole problem",
+    "Derive the flexure formula from the plane-sections hypothesis, apply it to unsymmetric and composite sections with the transformed-area method, and compute the transverse shear flow to size welds, adhesives and glue lines in built-up beams",
+    "Combine axial, bending, torsional and shear loadings by superposition at a point, reduce the resulting state of stress to principal values, and select and apply the appropriate failure criterion for a ductile or brittle material under static loading",
+    "Compute beam deflections and slopes by double integration, by superposition of standard cases, and by the energy methods of Castigliano and of the unit-load method, including the contribution of shear and axial deformation where they matter",
+    "Compute the critical load of an ideal column for the end conditions in Euler's table, decide whether a real strut is short, intermediate or long, and apply the tangent-modulus and reduced-modulus ideas and the straight-line and parabolic column formulas to a real section",
+    "Judge when an elementary beam or shaft formula is admissible and when it is not — where plane sections cease to be plane, where Saint-Venant's principle makes a boundary condition irrelevant, where stress concentration governs instead of nominal stress, and where the failure will be by stiffness, stability or strength"
+  ],
   "chapters": [
     {
       "slug": "stress-strain",
@@ -91,8 +107,125 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1638,
+      "title": "Galileo breaks a cantilever, and gets it wrong in a useful way",
+      "detail": "Galileo's *Discorsi e dimostrazioni matematiche* was smuggled to the Leiden press of the Elzevirs while its author was under house arrest, and its second day is the founding document of the strength of materials. He poses the right question — how long a bar of its own material can hang from a wall before breaking under its own weight, and how much load a cantilever will carry — and answers both by assuming that the fibres resist in proportion to their distance from the fulcrum, which is exactly right, and then taking the whole of that resistance to act at the outermost fibre, which is exactly wrong and puts his answer out by a simple numerical factor. **The error is instructive rather than embarrassing: Galileo had the strain distribution and not the stress distribution, and the missing idea was that a material can only resist what it is strained enough to mobilise. It took another century and a half and a theory of elasticity to supply it, and even then the correct formula for a cantilever's strength was published by someone who did not know Galileo had been there.**",
+      "people": [
+        "Galileo Galilei",
+        "Edme Mariotte"
+      ]
+    },
+    {
+      "year": 1678,
+      "title": "Ut tensio sic vis",
+      "detail": "Robert Hooke announced his law of elasticity in a two-line Latin anagram in 1676 - ceiiinosssttuv - and published the solution and the law in *De Potentia Restitutiva* in 1678, twenty-two years after discovering it and after Edme Mariotte had independently stated and experimentally verified it about 1680. **The law is not a statement about springs, which is how it is usually taught, but a statement about the existence of a linear range at all: that for small deformations the resistance of a solid is proportional to its deformation and independent of the size and shape of the specimen. Everything in this course - every formula for a beam, a shaft or a column - is that one sentence multiplied by geometry, and every formula in this course fails the moment the sentence stops being true.**",
+      "people": [
+        "Robert Hooke",
+        "Edme Mariotte"
+      ]
+    },
+    {
+      "year": 1750,
+      "title": "The Bernoulli-Euler beam",
+      "detail": "Jacob Bernoulli had already set up the cantilever in 1694 on the hypothesis that the longitudinal fibres strain in proportion to their distance from a neutral surface and that the axis therefore takes a curve whose curvature is proportional to the moment; his son Daniel brought the hypothesis to maturity in papers of 1742-1751, and Euler, in the Berlin Memoirs of 1750, put the whole theory into the form $EI \\, d^{4}v / dx^{4} = q$ that is still the first differential equation every engineering student solves. **The hypothesis that plane sections remain plane is the most consequential assumption in applied mechanics, because it is only approximately true and yet gives results accurate enough to build bridges; the corrections - shear deformation, warping, restrained torsion, shear lag - occupy the rest of a graduate education and are, for most practical beams, a few per cent.**",
+      "people": [
+        "Daniel Bernoulli",
+        "Leonhard Euler",
+        "Jacob Bernoulli"
+      ]
+    },
+    {
+      "year": 1807,
+      "title": "Thomas Young and the modulus",
+      "detail": "Thomas Young, in the first of the lectures that became his *Course of Lectures on Natural Philosophy and the Mechanical Arts*, pointed out that Hooke's law needs a constant, that the constant belongs to the material and not to the specimen, and that it can be measured from the extension of a wire. He named it the modulus of elasticity, and in the same lecture series - delivered to a paying London audience at the Royal Institution - he introduced the surface-energy theory of capillarity, the interference explanation of colour, and the term 'energy' in its modern sense. **The reason Young's modulus rather than Hooke's law is the number on a material data sheet is that a law is a relationship and a modulus is a property, and only properties can be tabulated, specified and bought.**",
+      "people": [
+        "Thomas Young"
+      ]
+    },
+    {
+      "year": 1852,
+      "title": "Mohr's circle",
+      "detail": "Otto Mohr, then a young teacher at a trade school on the lower Rhine, devised a graphical method for determining the principal stresses and the maximum shear stress at a point, taught it to his classes for eighteen years, and - after Carlo Alberto Pilotti had demonstrated the construction in Italy and Karl Culmann had written urging him to publish - finally printed it in 1870 in his *Abhandlungen aus den Gebieten der technischen Mechanik und Ingenieur-Baukunde*. **The circle is the most durable piece of graphical reasoning in engineering, and it survives every algebraic alternative because it is not a calculation but a picture of the whole solution: one circle shows every plane, both principal stresses, the maximum shear, the sign conventions and the fact that shear stress on two perpendicular planes is equal, and it does so in a diagram a student can draw in twenty seconds and think about for the rest of their career.**",
+      "people": [
+        "Otto Mohr",
+        "Carlo Alberto Pilotti",
+        "Karl Culmann"
+      ]
+    },
+    {
+      "year": 1856,
+      "title": "Saint-Venant, torsion, and the principle that bears his name",
+      "detail": "Adhemar Jean-Claude Barre de Saint-Venant, a career military engineer who had spent thirty years on roads and canals before he was permitted to publish, read in 1853 - sixty years old and newly elected to the Institut - the memoir on the torsion and flexure of prismatic bars that he had written in the 1840s, that had won the Academie's Grand Prize in 1846 and that had sat in a drawer since, and with it introduced the stress function, the multiply-connected section, and - most consequentially - the observation that the stress distribution produced by any statically equivalent loading becomes indistinguishable from the true one within a distance of the order of the cross-section's dimensions. **The principle is not a theorem and has never been proved in general; it is a statement about the decay of self-equilibrating stress systems, and it is the reason an engineer may replace a complicated actual load by a simple resultant and expect the answer to be right everywhere except near the load. Every formula in this course depends on it, and almost no textbook says so.**",
+      "people": [
+        "Adhemar Jean-Claude Barre de Saint-Venant",
+        "George Green",
+        "Barlow"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "Shanley settles the column controversy, forty years late",
+      "detail": "Between 1910 and 1950 the theory of the inelastic column was the subject of one of the longest and most acrimonious arguments in engineering science. Engesser's tangent-modulus load of 1889 and the reduced-modulus load of the 1920s could not both be right, the experiments supported the tangent-modulus value, and the theoretical defence of the reduced modulus, championed by Considine in 1920 and by Wallenberg in 1937 and written into the early steel specifications, filled pages. In 1950 A. M. Shanley published 'A correct interpretation of the classical tests in column strength' and showed that both loads are correct for different idealisations - the reduced modulus for a perfectly straight, perfectly centric column, the tangent modulus for any column with the smallest possible imperfection - and that real columns follow the tangent modulus because no real column is perfect. **The lesson is not about columns. It is that a fifty-year argument in applied mechanics is usually an argument about which idealisation the experiment was, and that the resolution of such an argument is very often a sentence rather than an equation.**",
+      "people": [
+        "Arne M. Shanley",
+        "Friedrich Engesser",
+        "Considine",
+        "Wallenberg"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "author": "F. P. Beer, E. R. Johnston, J. T. DeWolf and D. F. Mazurek",
+      "title": "Mechanics of Materials",
+      "publisher": "McGraw-Hill, 8th edition",
+      "year": 2020
+    },
+    {
+      "author": "R. C. Hibbeler",
+      "title": "Mechanics of Materials",
+      "publisher": "Pearson, 11th edition",
+      "year": 2022
+    },
+    {
+      "author": "S. Timoshenko and J. N. Goodier",
+      "title": "Theory of Elasticity",
+      "publisher": "McGraw-Hill, 3rd edition",
+      "year": 1970
+    },
+    {
+      "author": "S. Timoshenko and J. M. Gere",
+      "title": "Theory of Elastic Stability",
+      "publisher": "McGraw-Hill, 2nd edition",
+      "year": 1961
+    },
+    {
+      "author": "A. P. Boresi and R. J. Schmidt",
+      "title": "Advanced Mechanics of Materials",
+      "publisher": "Wiley, 6th edition",
+      "year": 2003
+    },
+    {
+      "author": "S. Timoshenko and D. H. Young",
+      "title": "Elements of Strength of Materials",
+      "publisher": "Van Nostrand Reinhold, 5th edition",
+      "year": 1983
+    },
+    {
+      "author": "H. Ford",
+      "title": "Advanced Mechanics of Materials",
+      "publisher": "Longman, 2nd edition",
+      "year": 1999
+    },
+    {
+      "author": "M. F. Ashby",
+      "title": "Materials Selection in Mechanical Design",
+      "publisher": "Butterworth-Heinemann, 6th edition",
+      "year": 2016
+    }
+  ],
   "next": [
     "machine-design",
     "solid-mechanics"

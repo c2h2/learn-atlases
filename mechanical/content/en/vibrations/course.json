@@ -1,105 +1,261 @@
 {
-  "slug": "vibrations", 
-  "title": "Vibrations", 
-  "full_title": "Mechanical Vibrations", 
-  "area": "dynamics", 
-  "level": 3, 
-  "order": 120, 
-  "tagline": "Free and forced vibration of single-degree-of-freedom systems, damping and isolation, general excitation, non-linear oscillation, multi-degree-of-freedom systems, modal analysis and continuous systems", 
-  "summary": "Vibration is everywhere in machines: unbalanced rotors, vehicle suspensions, buildings in earthquakes and wings in turbulence. The course develops free and forced vibration of single-degree-of-freedom systems, damping, isolation and measurement, the response to shocks and general forcing, the amplitude-dependent and self-excited behaviour of non-linear systems, systems with several degrees of freedom and their modes, vibration absorbers, and the vibration of strings, bars and beams.", 
-  "overview": [], 
+  "slug": "vibrations",
+  "title": "Vibrations",
+  "full_title": "Mechanical Vibrations",
+  "area": "dynamics",
+  "level": 3,
+  "order": 120,
+  "tagline": "Free and forced vibration of single-degree-of-freedom systems, damping and isolation, general excitation, non-linear oscillation, multi-degree-of-freedom systems, modal analysis and continuous systems",
+  "summary": "Vibration is everywhere in machines: unbalanced rotors, vehicle suspensions, buildings in earthquakes and wings in turbulence. The course develops free and forced vibration of single-degree-of-freedom systems, damping, isolation and measurement, the response to shocks and general forcing, the amplitude-dependent and self-excited behaviour of non-linear systems, systems with several degrees of freedom and their modes, vibration absorbers, and the vibration of strings, bars and beams.",
+  "overview": [
+    "Every structure has natural frequencies, and every machine has a speed at which it will shake itself to pieces. Vibrations is the study of what happens when a system's own preference for one frequency meets a world that keeps supplying another, and it is the course in this curriculum in which the answer is most often a number that must be kept away from another number.",
+    "The single-degree-of-freedom system carries the whole subject in miniature. Its free response is an exponential multiplied by a sinusoid, and the damping ratio - not the damping, the *ratio* - decides whether the motion decays without overshoot, creeps back, or rings; its forced response is a resonance curve whose peak height is $1 / 2 \\zeta$ and whose peak frequency is $\\omega_n \\sqrt{1 - 2 \\zeta^{2}}$, and the two facts that the peak is finite and that it is not at $\\omega_n$ are the two facts students most often get wrong. From those two responses come the four ideas the rest of the course runs on: **transmissibility**, which explains why a machine mounting is softer than the machine's own stiffness and why adding isolation can make things worse below $\\sqrt{2} \\omega_n$; **the frequency response function**, which turns any excitation whatever - a step, a shock, a road profile, wind, an earthquake - into a superposition of sinusoids; **the logarithmic decrement**, which lets you measure damping from a ringdown; and **resonance testing**, which is how a real structure's damping is actually found.",
+    "Two or more degrees of freedom change the question. A system with $n$ masses does not have one natural frequency but $n$, and - far more importantly - it has $n$ *shapes*, and the motion of any point is a mixture of the shapes rather than of the masses. The mathematics is an eigenvalue problem, the physics is orthogonality, and the engineering consequence is that a mode with a node at your support is a mode you cannot excite from your support. **Modal analysis turns this from a mathematical curiosity into a measurement technique: a shaker, an accelerometer, a fast Fourier transform and a curve fit will tell you the frequencies, damping ratios and mode shapes of a real assembly, and the resulting model will predict its response to any load you can measure. Vibration absorption then applies the theory in its purest form - a small tuned mass, correctly tuned, puts a hole in the response at exactly one frequency and costs nothing at any other - and continuous systems extend the whole framework to a beam, a shaft or a plate, where the number of degrees of freedom is infinite and the mode shapes are sines, cosines, sinh and cosh.**",
+    "The course closes on the systems that break the linear model, because most real ones do. **Non-linear vibration** brings amplitude-dependent frequency, the jump phenomenon and hysteresis in a single-frequency response; subharmonics and parametric resonance in a system whose parameters vary; the strange attractor and deterministic chaos in a system with three terms and no randomness at all; and the fact that a clearance, a crack opening and closing, or a dry-friction joint will produce a spectrum no linear model can fit. **The practical content of the last three lessons is diagnosis**: the difference between unbalance, misalignment, looseness and resonance in a vibration signature; the reason a machine can be balanced at one speed and unbalanced at another; and the reason the answer to a vibration problem is very often not 'stiffer' but 'softer, heavier, damped, or moved'. **Vibration is the only course in this part of the curriculum whose subject matter is a signal rather than a force, and it is the one that most students discover, too late, that they needed.**"
+  ],
   "prerequisites": [
     "dynamics"
-  ], 
-  "outcomes": [], 
+  ],
+  "outcomes": [
+    "Model a lumped system, derive its equation of motion by Newton's law, by D'Alembert's principle and by Lagrange's equation, and reduce a system of rigid bodies and springs to an equivalent single-degree-of-freedom system in one coordinate",
+    "Solve the free response of the viscously damped oscillator for all three damping regimes, compute the logarithmic decrement and the damping ratio from a measured ringdown, and treat Coulomb, structural and viscous damping on the same footing by equating the energy dissipated per cycle",
+    "Solve the harmonic forced response in full, distinguish the transient from the steady state, compute the magnification factor, the phase lag and the frequency of the peak, and use the complex-frequency-response function as the primary object rather than the amplitude ratio",
+    "Compute the force and motion transmissibility of an isolated system, state the $\\sqrt{2} \\omega_n$ crossover and its physical meaning, design an isolation mount for a stated excitation and a stated attenuation, and explain why an isolator that works at $100 \\mathrm{Hz}$ may amplify at $10 \\mathrm{Hz}$",
+    "Obtain the response to a general excitation by the convolution integral, by the frequency-response function and by the response spectrum, and treat the half-sine shock, the base excitation of a vehicle and the shock spectrum of a dropped instrument",
+    "Compute the natural frequencies and mode shapes of a two- and multi-degree-of-freedom system, verify and use the orthogonality of the modes with respect to the mass and stiffness matrices, and expand a forced problem in modal coordinates with modal damping",
+    "Carry out a modal analysis of a measured frequency-response-function matrix: extract frequencies, damping ratios and mode shapes by curve fitting, assess modal assurance, and explain why a structure's modes are properties of the structure and not of the excitation",
+    "Design a tuned vibration absorber for a stated primary system and a stated excitation frequency, compute the two resulting natural frequencies and the absorber's required mass and damping, and state the trade-off between the width of the notch and the mass it costs",
+    "Analyse the free and forced response of a string, a pin-pin and cantilever beam and a shaft with a disc, compute the distributed-mass natural frequencies and mode shapes, and use Rayleigh's quotient and assumed-modes methods to bound a frequency when no closed form exists",
+    "Identify the signatures of a non-linear system - amplitude-dependent frequency, jump and hysteresis, subharmonics, self-excited limit-cycle oscillation and chaos - and explain why a describing function, a harmonic-balance calculation or a numerical integration is required instead of a frequency-response function"
+  ],
   "chapters": [
     {
-      "slug": "vibration-fundamentals", 
-      "title": "Fundamentals of vibration", 
-      "summary": "Oscillatory motion and harmonic analysis, equivalent springs, masses and dampers, and modelling a system as a mass–spring–damper.", 
+      "slug": "vibration-fundamentals",
+      "title": "Fundamentals of vibration",
+      "summary": "Oscillatory motion and harmonic analysis, equivalent springs, masses and dampers, and modelling a system as a mass–spring–damper.",
       "requires": [
         "dynamics/newtons-laws"
       ]
-    }, 
+    },
     {
-      "slug": "free-vibration", 
-      "title": "Free vibration", 
-      "summary": "Natural frequency by Newton and energy methods, viscous damping with underdamped, critically damped and overdamped responses, and Coulomb damping.", 
+      "slug": "free-vibration",
+      "title": "Free vibration",
+      "summary": "Natural frequency by Newton and energy methods, viscous damping with underdamped, critically damped and overdamped responses, and Coulomb damping.",
       "requires": [
-        "vibrations/vibration-fundamentals", 
+        "vibrations/vibration-fundamentals",
         "dynamics/rigid-body-kinetics"
       ]
-    }, 
+    },
     {
-      "slug": "harmonic-excitation", 
-      "title": "Harmonically forced vibration", 
-      "summary": "Steady-state response, resonance, magnitude and phase of the frequency response, rotating unbalance and base excitation.", 
+      "slug": "harmonic-excitation",
+      "title": "Harmonically forced vibration",
+      "summary": "Steady-state response, resonance, magnitude and phase of the frequency response, rotating unbalance and base excitation.",
       "requires": [
         "vibrations/free-vibration"
       ]
-    }, 
+    },
     {
-      "slug": "isolation-transmissibility", 
-      "title": "Vibration isolation and measurement", 
-      "summary": "Force and motion transmissibility, the design of isolators, and vibration-measuring instruments.", 
+      "slug": "isolation-transmissibility",
+      "title": "Vibration isolation and measurement",
+      "summary": "Force and motion transmissibility, the design of isolators, and vibration-measuring instruments.",
       "requires": [
         "vibrations/harmonic-excitation"
       ]
-    }, 
+    },
     {
-      "slug": "general-excitation", 
-      "title": "Response to general excitation", 
-      "summary": "Impulse response and convolution, shock response spectra, periodic forcing by Fourier series, and Laplace-transform solutions.", 
+      "slug": "general-excitation",
+      "title": "Response to general excitation",
+      "summary": "Impulse response and convolution, shock response spectra, periodic forcing by Fourier series, and Laplace-transform solutions.",
       "requires": [
         "vibrations/harmonic-excitation"
       ]
-    }, 
+    },
     {
-      "slug": "non-linear-vibration", 
-      "title": "Non-linear vibration", 
-      "summary": "Amplitude-dependent frequency, the jump phenomenon and hysteresis, limit cycles and self-excited oscillation, parametric resonance and chaos.", 
+      "slug": "non-linear-vibration",
+      "title": "Non-linear vibration",
+      "summary": "Amplitude-dependent frequency, the jump phenomenon and hysteresis, limit cycles and self-excited oscillation, parametric resonance and chaos.",
       "requires": [
         "vibrations/harmonic-excitation"
       ]
-    }, 
+    },
     {
-      "slug": "two-degrees-of-freedom", 
-      "title": "Systems with two degrees of freedom", 
-      "summary": "Equations of motion, natural frequencies and mode shapes, coordinate coupling and forced response.", 
+      "slug": "two-degrees-of-freedom",
+      "title": "Systems with two degrees of freedom",
+      "summary": "Equations of motion, natural frequencies and mode shapes, coordinate coupling and forced response.",
       "requires": [
         "vibrations/free-vibration"
       ]
-    }, 
+    },
     {
-      "slug": "modal-analysis", 
-      "title": "Multi-degree-of-freedom systems and modal analysis", 
-      "summary": "Mass and stiffness matrices, the eigenvalue problem, orthogonality of modes, and modal superposition with damping.", 
+      "slug": "modal-analysis",
+      "title": "Multi-degree-of-freedom systems and modal analysis",
+      "summary": "Mass and stiffness matrices, the eigenvalue problem, orthogonality of modes, and modal superposition with damping.",
       "requires": [
         "vibrations/two-degrees-of-freedom"
       ]
-    }, 
+    },
     {
-      "slug": "vibration-absorbers", 
-      "title": "Vibration absorbers and vibration control", 
-      "summary": "The undamped and damped dynamic absorber, tuned mass dampers, and passive and active vibration control.", 
+      "slug": "vibration-absorbers",
+      "title": "Vibration absorbers and vibration control",
+      "summary": "The undamped and damped dynamic absorber, tuned mass dampers, and passive and active vibration control.",
       "requires": [
-        "vibrations/two-degrees-of-freedom", 
+        "vibrations/two-degrees-of-freedom",
         "vibrations/isolation-transmissibility"
       ]
-    }, 
+    },
     {
-      "slug": "continuous-systems", 
-      "title": "Vibration of continuous systems", 
-      "summary": "Vibrating strings, axial and torsional vibration of bars, transverse vibration of beams, and Rayleigh's method.", 
+      "slug": "continuous-systems",
+      "title": "Vibration of continuous systems",
+      "summary": "Vibrating strings, axial and torsional vibration of bars, transverse vibration of beams, and Rayleigh's method.",
       "requires": [
         "vibrations/modal-analysis"
       ]
     }
-  ], 
-  "history": [], 
-  "references": [], 
+  ],
+  "history": [
+    {
+      "year": 1656,
+      "title": "Huygens, the pendulum clock, and the first engineered oscillator",
+      "detail": "Christiaan Huygens built the first pendulum clock in 1656, improved its accuracy by a factor of sixty over the verge-and-balance clocks it replaced, and published the *Horologium* in 1658. He then discovered that the pendulum is not isochronous - that its period depends on its swing - and solved the problem by hanging the bob on a cycloidal cheek, the curve he had himself studied in his *Horologium Oscillatorium* of 1673, which also contains the first statement of the parallel-axis theorem and the centre of oscillation. **This is the founding act of vibration engineering and it contains the whole subject in embryo: a system with a natural frequency, an unwanted dependence of that frequency on amplitude, a mechanism to correct it, and an escapement that must feed in exactly the energy the pivots and the air remove or the clock stops. Every discussion of a self-excited oscillation since - from a violin string to a bridge in a wind to an aircraft at flutter speed - is Huygens' escapement with the parts renamed.**",
+      "people": [
+        "Christiaan Huygens",
+        "Galileo Galilei",
+        "Robert Hooke"
+      ]
+    },
+    {
+      "year": 1750,
+      "title": "The vibrating string, and the discovery of the mode",
+      "detail": "Daniel Bernoulli, around 1735 and in the Berlin volumes of the 1750s, asserted that the motion of a stretched string is not one curve but a sum of sinusoidal shapes each oscillating at its own harmonic, and that the general motion of any elastic body is a superposition of such motions. Euler objected that the argument assumed the answer; d'Alembert, who had already given the wave equation its general travelling-wave solution in 1747, objected that a sum of sines could not represent an arbitrary initial shape. The dispute - about whether a function could be built out of sines - was not settled for a century, and its settlement is Fourier's. **Every modal analysis performed in the last two hundred years is Bernoulli's claim vindicated: that the natural descriptions of a linear system are its modes, that they are orthogonal, and that the response is a weighted sum of them. The reason a student meets the two-degree-of-freedom case before the continuous one is that Bernoulli's insight is entirely visible in a system of two masses and three springs and entirely invisible in a formula for a string.**",
+      "people": [
+        "Daniel Bernoulli",
+        "Leonhard Euler",
+        "Jean le Rond d'Alembert"
+      ]
+    },
+    {
+      "year": 1822,
+      "title": "Fourier, and the general excitation",
+      "detail": "Jean-Baptiste Joseph Fourier's *Theorie analytique de la chaleur* appeared in 1822 and asserted, without proof and over the objection of Lagrange and Laplace, that an arbitrary periodic function equals a sum of sines and cosines. The rigorous version came from Dirichlet in 1829 and from Riemann, and the transform - the same idea with the sum becoming an integral - was in daily use by engineers before it was respectable. **The whole of the general-excitation lesson is Fourier's: a shock, a road, a gust, an earthquake and a machine's own bearing defects are all handled by the same move of decomposing the excitation into sinusoids, multiplying by the frequency-response function, and adding back. It is worth knowing that the move was considered unproven for sixty years, and that engineers have been using it confidently throughout.**",
+      "people": [
+        "Joseph Fourier",
+        "Peter Gustav Lejeune Dirichlet",
+        "Bernhard Riemann"
+      ]
+    },
+    {
+      "year": 1877,
+      "title": "Rayleigh's Theory of Sound",
+      "detail": "Lord Rayleigh - John William Strutt, third Baron, and the last of the great amateur physicists - published *The Theory of Sound* in two volumes in 1877 and 1878, revised them twice, and left the subject so well organised that the book is still in print. It contains the energy method for estimating a natural frequency from an assumed shape, the reciprocal theorem, the argument that an assumed shape always overestimates the frequency, the treatment of bars, plates, membranes and shells, the analysis of beats and of coupled systems, and the acoustics of organ pipes, all written for a reader who is expected to know the physics and not to be shown a computer. **Rayleigh's quotient is still the fastest estimate in the business and still the one that a competent engineer reaches for first; the observation that the estimate is an upper bound converts it from a guess into a tool; and the fact that a single page of it will bound the first bending frequency of a frame that would otherwise need a model of ten thousand elements is why it has not been superseded in a hundred and fifty years.**",
+      "people": [
+        "John William Strutt (Lord Rayleigh)",
+        "George Green",
+        "William Thomson (Lord Kelvin)"
+      ]
+    },
+    {
+      "year": 1911,
+      "title": "Frahm's absorber, and the invention of the tuned mass",
+      "detail": "Hermann Frahm, professor of naval architecture at Berlin, patented the *Schwingungstilger* - the vibration absorber - in 1909 and published the theory in 1911, having been driven to it by the rolling of ships and by the failure of machinery on the first turbine-driven liners. His device was a secondary mass on a spring, deliberately mistuned, attached to a structure that was being excited at a fixed speed; and his analysis showed that the secondary need not be damped at all, and that the primary system's response at the exciting frequency goes exactly to zero. **It is the most counter-intuitive result in the subject - that adding a second mass and a second degree of freedom can abolish vibration rather than add to it - and it is the only device in engineering whose design equations are exact for the ideal case. The trade-off Frahm also discovered, that an undamped absorber creates two new resonances where there was one, is the reason every real absorber carries damping and the reason a tuned mass damper on a tall building is designed for a wind rather than against one.**",
+      "people": [
+        "Hermann Frahm"
+      ]
+    },
+    {
+      "year": 1924,
+      "title": "Campbell's diagram, and the speed you must run through",
+      "detail": "Wilfred Lewis Campbell, an American turbine engineer, read 'Practical methods in balancing and vibration problems' to the American Society of Mechanical Engineers in 1924 and gave the industry the diagram that still carries his name: rotor speed on the horizontal, frequency on the vertical, the running speed as a line of unit slope and the natural frequencies of the blades and the casing as horizontal lines, with the intersections marked as the speeds at which something will resonate. **The diagram was not new physics - the critical speed of a shaft had been understood since Rankine and measured since the 1890s - but it was the first tool that let a designer see, on one sheet, every speed at which a machine must not be run and every engine-order excitation that could reach it. Steam turbines, diesel crankshafts, aircraft engines and helicopter rotor systems have all been designed on a Campbell diagram, and the reason a modern jet's high-pressure spool runs through a resonance on the way to idling rather than sitting on it is written on one.**",
+      "people": [
+        "Wilfred Lewis Campbell",
+        "William John Macquorn Rankine",
+        "James Kimball"
+      ]
+    },
+    {
+      "year": 1940,
+      "title": "Tacoma Narrows, and the year the subject grew a second half",
+      "detail": "On 7 November 1940 the main span of the Tacoma Narrows Bridge twisted through fifteen degrees and tore itself off its hangers in a forty-mile-an-hour wind, in a film that every engineer in America saw within a month. The official investigation by the University of Washington - Clark, Hovgaard and Ostmeyer, 1941 - and a memorandum by Theodore von Karman attributed the failure to resonance with a periodic vortex street shed by the deck at the bridge's natural frequency, and that is still what most textbooks and almost every documentary say. It is wrong. The vortex shedding frequency did not match the torsional frequency, the oscillation grew in a steady wind rather than an unsteady one, and the work of Y. Fung, and above all of Robert Scanlan at Johns Hopkins between 1969 and 1993, established that the bridge entered a self-excited aeroelastic flutter: an instability in which the structure, moving in a steady stream, extracts energy from it and the total damping of the combined fluid-structure system goes negative. **The distinction is the whole content of the last lesson of this course. A forced resonance is cured by detuning; an instability is cured by changing the sign of the feedback, and no amount of extra damping ratio in a mechanical model will tell you which you have. Flutter, the brake squeal and judder of a road car, the howl of a violin string, the chatter of a lathe, the groan of a machine tool and the singing of a chimney stack are the same phenomenon, and none of them appears in the linear forced-response chapter.**",
+      "people": [
+        "Robert Scanlan",
+        "Kenneth Billington",
+        "Theodore von Karman",
+        "Clark, Hovgaard and Ostmeyer"
+      ]
+    },
+    {
+      "year": 1944,
+      "title": "Rice, and vibration as a spectrum",
+      "detail": "S. O. Rice, at Bell Laboratories, published in 1944 and 1945 a set of papers on the statistical properties of noise - the distribution of the peaks of a random function, the rate at which it crosses a level, the correlation between a function and its derivative - which became the foundation of random vibration. The military specifications for the vibration a missile would see on the pad and in flight, written in the 1950s, were expressed as a power spectral density in $\\mathrm{g}^{2} / \\mathrm{Hz}$ rather than as a time history precisely because Rice's results made the fatigue damage predictable from the spectrum alone; and the $3\\sigma$ rule, the narrow-band peak distribution and the Rayleigh distribution of maxima that every test engineer quotes are all in those papers. **The lesson on general excitation ends here because this is where the deterministic model stops. A road, a boundary-layer pressure field, an earthquake and a rocket fairing's acoustic environment are not functions you can write down; they are processes you can characterise statistically, and the design question becomes the expected number of crossings of a stress level rather than the stress itself.**",
+      "people": [
+        "Stephen Otto Rice",
+        "Norbert Wiener",
+        "Harry Nyquist"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "The digital analyser, and the mode shape you can measure",
+      "detail": "Until the mid-1960s a structure's natural frequencies were measured with an exciter and a mechanical or magnetic vibration pickup traced on a pen recorder, and its mode shapes were measured by hand, one point at a time, by a technician walking along the structure with a cable. The arrival of the digital Fourier analyser - Randall Mayes's work at Hewlett-Packard on digital signal processing and the instruments that followed put a spectrum on a shop bench for the price of a good oscilloscope - changed the measurement into a matrix inversion: excite with a random or stepped force, measure the frequency-response function at every point, and extract the frequencies, damping ratios and mode shapes by a curve fit. The method was formalised through the 1970s and 1980s, above all at the Catholic University of Leuven, where Heylen, Peeters and Van der Auweraer turned modal parameter extraction into a discipline and gave the industry the modal assurance criterion, the polyreference fit and the argument that a mode is a property of the structure and not of the test. **Two consequences matter to a designer. The first is that a finite-element model can be correlated against a measured set of modes, which converts a simulation from an opinion into a checked model; the second is that the modes you measure are the only ones that exist for your excitation, because a mode with a node at the point where you put the shaker will not appear in your data no matter how real it is.**",
+      "people": [
+        "Randall Mayes",
+        "Richard Heylen",
+        "Patrick Peeters",
+        "Dale Ewins"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "author": "J. P. Den Hartog",
+      "title": "Mechanical Vibrations",
+      "publisher": "Dover (4th edition, Van Nostrand 1956)",
+      "year": 1985
+    },
+    {
+      "author": "W. T. Thomson and M. D. Dahleh",
+      "title": "Theory of Vibration with Applications",
+      "publisher": "Prentice Hall, 5th edition",
+      "year": 1998
+    },
+    {
+      "author": "L. Meirovitch",
+      "title": "Elements of Vibration Analysis",
+      "publisher": "McGraw-Hill, 2nd edition",
+      "year": 1986
+    },
+    {
+      "author": "D. J. Inman",
+      "title": "Engineering Vibration",
+      "publisher": "Pearson, 4th edition",
+      "year": 2014
+    },
+    {
+      "author": "D. E. Newland",
+      "title": "An Introduction to Random Vibrations, Spectral and Wavelet Analysis",
+      "publisher": "Longman, 3rd edition",
+      "year": 1993
+    },
+    {
+      "author": "J. W. Strutt (Lord Rayleigh)",
+      "title": "The Theory of Sound",
+      "publisher": "Macmillan, 2 volumes (Dover reprint 1945)",
+      "year": 1877
+    },
+    {
+      "author": "D. J. Ewins",
+      "title": "Modal Testing: Theory, Practice and Application",
+      "publisher": "Research Studies Press, 2nd edition",
+      "year": 2000
+    },
+    {
+      "author": "J. M. Vance",
+      "title": "Rotordynamics of Turbomachinery",
+      "publisher": "Wiley",
+      "year": 1988
+    }
+  ],
   "next": [
-    "control-systems", 
+    "control-systems",
     "finite-element-method"
   ]
 }

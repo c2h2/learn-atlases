@@ -7,11 +7,27 @@
   "order": 20,
   "tagline": "Kinematics and kinetics of particles and rigid bodies: Newton's second law, work and energy, impulse and momentum, impact and motion in three dimensions",
   "summary": "Dynamics explains how forces produce motion. The course treats the kinematics of particles in rectangular, normal–tangential and polar coordinates, Newton's second law, work and energy, impulse, momentum and impact, and then the planar kinematics and kinetics of rigid bodies, ending with rotating frames, Euler's equations and gyroscopic motion in three dimensions.",
-  "overview": [],
+  "overview": [
+    "Statics was the special case. This course is the general one, and its single proposition is Newton's second law applied to whatever you choose to isolate - a particle, a system of particles, a rigid body, or a collection of rigid bodies connected by joints. Everything else is bookkeeping: the choice of coordinate system, the choice of method, and the choice of what to call the system.",
+    "The course is organised around the two great decompositions of the subject. The first is **kinematics before kinetics**: you cannot write $\\sum \\mathbf{F} = m \\mathbf{a}$ until you know $\\mathbf{a}$, and knowing $\\mathbf{a}$ is a purely geometric exercise that most students skip and most errors come from. Kinematics of a particle in rectangular, normal-tangential and cylindrical components; the relative-motion framework for translating and rotating axes, with the Coriolis term that appears whenever an observer turns; and then rigid-body kinematics, in which every motion is a translation plus a rotation and every velocity is $\\mathbf{v}_B + \\boldsymbol{\\omega} \\times \\mathbf{r}_{B/A}$. The second decomposition is **the three methods**, and knowing which to use is the actual skill: $\\sum \\mathbf{F} = m \\mathbf{a}$ when forces and accelerations are asked for and time matters; work and energy when the question is speed against position and the forces do no work or do known work; impulse and momentum when the question is speed against time, or when an impact makes the forces unknowable.",
+    "Rigid-body kinetics is where the subject becomes mechanical rather than merely mathematical. A rigid body's equations carry an inertia tensor whether you want one or not, and the plane-motion equations $\\sum M_G = I_G \\alpha$ and $\\sum M_P = I_P \\alpha +$ a transport term differ in exactly the way that makes the difference between a correct answer and a plausible one. The general plane-kinetics problem - a rolling spool, a slipping ladder, a two-plate mechanism - is solved by drawing one kinetic diagram per body and equating force systems rather than moments, because moments about an arbitrary point are a trap. **The work-energy and impulse-momentum methods then return for rigid bodies, and with them the two terms students least expect: that a rolling body's kinetic energy contains $I_G \\omega^2 / 2$ and not $mv^2 / 2$ alone, and that the power of a friction force at a point of zero velocity is zero however large the force.**",
+    "The course closes on three-dimensional motion, where the vector equations become matrix equations and two new phenomena appear that have no plane analogue. **Gyroscopic action** is not a mystery but the statement that $\\sum \\mathbf{M} = d\\mathbf{H}/dt$ and that $\\mathbf{H}$ need not point along $\\boldsymbol{\\omega}$; the steady-precession formula, the bearing reactions of a tilted disc and the steering torque of a motorcycle are all one equation. **Dynamic balancing** is the statement that a rotating body can have zero resultant force and a non-zero resultant couple, and that the couple is what shakes a turbine. And **the relative acceleration in rotating frames** - centripetal, tangential and Coriolis together - is the equation that runs weather forecasting, artillery, the Foucault pendulum and the design of every mechanism in the next course. **Dynamics is the last course in this part of the curriculum that adds a new idea; everything after it is the same three equations applied to deformable bodies, to many degrees of freedom, and to machines.**"
+  ],
   "prerequisites": [
     "statics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the motion of a particle in rectangular, normal-tangential, cylindrical and path coordinates, convert between them, and compute the velocity and acceleration components for a stated trajectory without differentiating the wrong unit vector",
+    "Analyse constrained motion of connected particles and of blocks on cords, pulleys and slots, write the dependent-motion constraints correctly, and extend them to two and three degrees of freedom",
+    "Solve the equation of motion for a particle under a force that is a function of time, position or velocity, including rectilinear and curvilinear motion with quadratic drag, and identify which of the three functional forms makes the equation separable",
+    "Apply work and energy to particles and to systems of particles, distinguish conservative from non-conservative forces, use the potential function, and compute the efficiency and the power of a machine from the rate of work",
+    "Apply linear and angular impulse and momentum to particles and to systems, treat central-force motion and the conservation of angular momentum about a fixed centre, and solve direct and oblique impact with the coefficient of restitution and the correct line of impact",
+    "Analyse the plane motion of a rigid body by drawing the free-body and kinetic diagrams together and equating the two force systems, and use the moment equation about an arbitrary point correctly, including the transport term",
+    "Combine translation and rotation in the relative-motion description of a rigid body, resolve velocities and accelerations in rotating axes including the Coriolis component, and choose between the translating and rotating frames from what is asked",
+    "Solve rigid-body problems by work and energy and by impulse and momentum, computing the general plane-motion kinetic energy and the angular momentum about an arbitrary point, and treat the eccentric blow and the oblique central impact of a rigid body",
+    "Write the angular momentum and the equations of motion of an unsymmetrical body in three dimensions, compute the products of inertia and the principal axes, and analyse the steady precession of a gyroscope and the bearing reactions of a rotating unbalanced rotor",
+    "Select the appropriate method - force and acceleration, work and energy, or impulse and momentum - from the form of the question, and justify the choice by stating which quantities are conserved, which do no work, and which are impulsive"
+  ],
   "chapters": [
     {
       "slug": "particle-kinematics",
@@ -90,8 +106,119 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1687,
+      "title": "The three laws, and the first problem in the Principia",
+      "detail": "Newton's *Philosophiae Naturalis Principia Mathematica* was written, on Edmond Halley's insistence and at his expense, in eighteen months, and its three laws are the whole of this course. What is less often noticed is that the *Principia* is a book about astronomy and almost never writes an equation in the form an engineer would use; the machinery of components, of normal and tangential resolution and of the moment equation was added by d'Alembert in 1743, by Euler through the 1750s, and above all by Monge, Carnot and the engineers of the Ecole Polytechnique around 1800, whose published *Cours de mecanique* of the 1810s is the ancestor of every textbook now in use. **The free-body diagram is not in Newton. It is an invention of the nineteenth century, and it is arguably a harder idea than the second law, because it requires you to see a body as separate from everything it touches.**",
+      "people": [
+        "Isaac Newton",
+        "Edmond Halley",
+        "Leonhard Euler",
+        "Jean le Rond d'Alembert"
+      ]
+    },
+    {
+      "year": 1788,
+      "title": "Lagrange, and mechanics without vectors",
+      "detail": "Joseph-Louis Lagrange's *Mechanique analytique* of 1788 - the first edition contains not one figure, an omission he boasted about - recast the whole of mechanics as a set of equations in generalised coordinates, obtained by differentiating one scalar function, in which the constraint forces never appear because the coordinates are chosen so that they can do no work. Fifty years later Hamilton and Jacobi showed that the same equations follow from the stationarity of an integral of the difference between two scalar quantities, kinetic and potential energy. **Every multibody dynamics code, every robot manipulator equation and every vibration textbook in the next course is Lagrangian, because for a mechanism with ten links the vector approach produces thirty equations and the Lagrangian produces ten; the reason this course is nevertheless Newtonian is that the vector approach teaches you what the forces are, and the Lagrangian teaches you what the motion is, and a designer needs both.**",
+      "people": [
+        "Joseph-Louis Lagrange",
+        "William Rowan Hamilton",
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1835,
+      "title": "Coriolis, and the acceleration of a turning observer",
+      "detail": "Gaspard-Gustave Coriolis read to the Academie des Sciences in 1835 a memoir on the calculation of the effect of forces in the case of machines in motion, in which he identified the extra term that appears when the work done by a force on a body moving relative to a rotating frame is computed. The term was known to Euler eighty years earlier and it had appeared in the analysis of water wheels, but Coriolis gave it its name and its physical interpretation, and it was his - not Euler's - name that Laplace's followers attached to the deflection of winds and projectiles on the rotating Earth. **The reason the term is taught twice, once here and once in every mechanism course, is that it has two independent origins and both are correct: it is a kinematic consequence of differentiating a rotating unit vector, and it is a dynamical consequence of conserving angular momentum in a fluid that is moving towards the axis. Understanding that these are the same statement is the point of the lesson, and it is not obvious.**",
+      "people": [
+        "Gaspard-Gustave Coriolis",
+        "Leonhard Euler",
+        "Pierre-Simon Laplace"
+      ]
+    },
+    {
+      "year": 1852,
+      "title": "The Foucault pendulum, and dynamics you can stand in",
+      "detail": "Leon Foucault, a twenty-two-year-old microscopist with no degree and no post, set a brass bob swinging on a twenty-metre wire in the Meridian Hall of the Paris Observatory before Francois Arago in March 1851, and the plane of swing turned by an amount that matched the Earth's rotation at Paris to within the accuracy of the seconds pendulum. A sixty-seven-metre version followed within the month, drawn to a church nave by a crowd that came to watch the Earth turn, and within a year copies had been built in every capital in Europe. **The pendulum is the clearest demonstration in physics that the Earth is a rotating reference frame and not an inertial one, and it is the reason the equations of this course carry a term that nobody can switch off. Every weather map, every long-range shell table and every inertial navigation system is the Foucault pendulum written as a differential equation.**",
+      "people": [
+        "Leon Foucault",
+        "Francois Arago",
+        "Andre-Marie Ampere"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "The inertia tensor, and why a body does not spin the way you throw it",
+      "detail": "The idea that angular momentum need not point along the angular velocity is due to the mathematicians of the eighteenth century - Euler's equations for a rigid body date from the 1760s and the principal axes to Lagrange and Poinsot - but its engineering consequences were worked out only when rotating machinery became fast. The critical speed of a shaft, the balancing of a rotor in two planes, the whirling of a turbine and the dynamical instability of a high-speed spindle are all consequences of the products of inertia, and the classical treatment - Rankine's 1869 paper on the centrifugal force of a rotating shaft - was doubted for a generation before the shaft failures of the 1890s and the measurements of Jamieson and Aspinall established the critical speed beyond argument. **A rigid body has three principal axes, and only two of them are stable: throw a remote control or a spanner and watch it flip. That the intermediate axis is unstable is a one-line consequence of Euler's equations and one of the most beautiful results in elementary dynamics.**",
+      "people": [
+        "William John Macquorn Rankine",
+        "Louis Poinsot",
+        "William Macquorn Jamieson"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "The space flight problem, and dynamics without a ground",
+      "detail": "For sixty years the practical problems of dynamics were the motion of vehicles on the Earth, and the Earth could be treated as flat, inertial and infinite. Between 1957 and 1965 the same three laws had to be applied to a body whose reference frame is the Earth, whose propellant is most of its mass, whose trajectory is an ellipse and whose control authority is a few newton-metres of reaction-wheel torque. The result was not new physics but a wholesale re-examination of what the assumptions had been: variable-mass systems, the restricted three-body problem, gravity-gradient torque, the Jacobi integral, and the attitude dynamics of a body with a moving internal mass. **This course ends where that revolution began, because the three-dimensional dynamics of a body with products of inertia and an applied couple is the same mathematics as the pointing of a telescope, and because the student who has solved the tumbling-block problem has already solved, in miniature, the problem of why a satellite with a fuel tank half full is harder to point than one that is full or empty.**",
+      "people": [
+        "Henri Poincare",
+        "Viktor Glushko",
+        "Wernher von Braun"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "author": "J. L. Meriam, L. G. Kraige and J. N. Bolton",
+      "title": "Engineering Mechanics: Dynamics",
+      "publisher": "Wiley, 9th edition",
+      "year": 2019
+    },
+    {
+      "author": "F. P. Beer, E. R. Johnston, D. F. Mazurek and P. J. Cornwell",
+      "title": "Vector Mechanics for Engineers: Dynamics",
+      "publisher": "McGraw-Hill, 13th edition",
+      "year": 2022
+    },
+    {
+      "author": "R. C. Hibbeler",
+      "title": "Engineering Mechanics: Dynamics",
+      "publisher": "Pearson, 15th edition",
+      "year": 2022
+    },
+    {
+      "author": "H. Baruh",
+      "title": "Analytical Dynamics",
+      "publisher": "McGraw-Hill",
+      "year": 1999
+    },
+    {
+      "author": "E. J. Routh",
+      "title": "The Elementary Part of a Treatise on the Dynamics of a System of Rigid Bodies",
+      "publisher": "Macmillan (Dover reprint 1961)",
+      "year": 1905
+    },
+    {
+      "author": "H. Goldstein, C. Poole and J. Safko",
+      "title": "Classical Mechanics",
+      "publisher": "Addison-Wesley, 3rd edition",
+      "year": 2002
+    },
+    {
+      "author": "A. P. French",
+      "title": "Newtonian Mechanics",
+      "publisher": "W. W. Norton",
+      "year": 1971
+    },
+    {
+      "author": "D. T. Greenwood",
+      "title": "Dynamics with ODEs, MAPLE, and MATLAB",
+      "publisher": "Butterworth-Heinemann",
+      "year": 2003
+    }
+  ],
   "next": [
     "mechanisms",
     "vibrations",
