@@ -131,11 +131,11 @@ f_{\text{opt}} = \frac{1}{1.1} = 0.909, \qquad
 k_2 = 50 \times 22.85^{2} = 26\,100\ \mathrm{N / m},
 $$
 $$
-\zeta_{\text{opt}} = \sqrt{\frac{3 \times 0.1}{8 \times 1.331}} = 0.168, \qquad
-$$
+\zeta_{\text{opt}} = \sqrt{\frac{3 \times 0.1}{8 \times 1.331}} = 0.168,
+\qquad
 H_{\text{peak}} = \sqrt{1 + 20} = 4.58 \quad \text{(numerically } 4.68 \text{)},
 \qquad
-c_2 = 2 \zeta \sqrt{k_2 m_2} = 2 \times 0.168 \sqrt{26\,100 \times 50} = 384\ \mathrm{N\, s / m} .
+c_2 = 2 \zeta \sqrt{k_2 m_2} = 384\ \mathrm{N\, s / m} .
 $$
 **Primary amplitude against static deflection:** $4.5$ at $3.4\ \mathrm{Hz}$, $4.0$ at $4.0\ \mathrm{Hz}$, $3.1$ at $4.7\ \mathrm{Hz}$, with the two equal peaks of $4.6$ and $4.7$ at $3.35$ and $4.30\ \mathrm{Hz}$.
 
