@@ -7,11 +7,27 @@
   "order": 80,
   "tagline": "Linkages and mobility, position, velocity and acceleration analysis, linkage synthesis, cams, gears and gear trains, and the dynamics and balancing of machines",
   "summary": "Mechanisms turn one motion into another: the linkages of a car's suspension, the cams of an engine and the gears in a robot's joints. The course covers mobility and kinematic chains, position, velocity and acceleration analysis of linkages, linkage synthesis, cam design, gears and gear trains, and the dynamic forces, flywheels and balancing of machines.",
-  "overview": [],
+  "overview": [
+    "A mechanism is a machine reduced to its geometry. Strip a sewing machine of its motor, its frame and its needle and what remains is four rigid bodies joined by four turning pairs, and that skeleton — not the motor — decides whether the stitch forms, whether the machine can run at five thousand stitches a minute, and whether the whole thing walks itself off the bench. This course is about that skeleton: how to count its mobility, how to find where every point on it is and how fast it is moving and accelerating, how to design one to a specification, and how to keep the resulting inertia forces from shaking it apart.",
+    "The analysis half of the course runs in a fixed order, because each step is the input to the next. Mobility comes first, by the Gruebler–Kutzbach criterion, since a mechanism with the wrong number of degrees of freedom cannot be analysed at all; then position, by closing a vector loop and solving a quadratic or iterating Newton–Raphson on a mechanism that has no closed form; then velocity, where the relative-velocity equation, Kennedy's theorem of instant centres and the velocity image each solve a different class of problem and a competent analyst knows which; then acceleration, which uses the same coefficient matrix as the velocity and adds a Coriolis term wherever a slider runs on a rotating link. Every one of these is worked on the same handful of mechanisms — the four-bar, the slider-crank, the offset slider-crank, the quick-return and the Geneva — so that the differences between the methods are visible rather than rhetorical.",
+    "The synthesis half asks the reverse question, and the answer is largely negative: a four-bar has nine independent dimensions, so it can be made to satisfy nine scalar conditions exactly and no more, and the whole art lies in spending them well. Function generation by Freudenstein's equation, three precision points in closed form and five by iteration; straight-line generation by Watt and by Chebyshev, with the deviation measured rather than asserted; path generation, motion generation, and the Roberts cognate theorem which says that every coupler curve belongs to exactly three four-bars. Then Burmester's circle-point curve, which is the one-parameter family of solutions that classical synthesis leaves behind and which is the reason a hand-synthesised mechanism can be chosen for its transmission angle rather than merely for its accuracy. The lesson closes with the defects — branch, order and monotonicity — that no classical method detects, and with a table of what to reach for when synthesis says no.",
+    "The remaining lessons are the mechanisms that are not linkages and the dynamics that all of them produce. Cams, where the motion is prescribed rather than negotiated and the whole design problem is the pressure angle, the undercut radius and the onset of float at the square root of stiffness over mass. Gears, where the law of gearing, the involute, the minimum tooth count, the contact ratio and the Lewis and surface-durability strengths decide whether a drive is quiet, and gear trains, where the Willis equation makes an epicyclic a linear machine in three variables and the arithmetic of assembly, adjacency and phasing decides whether it can be built at all. And machine dynamics, where equivalent inertia turns a linkage into one number and one torque, a flywheel turns a punch press's hundred kilowatts into twenty-five, and the arithmetic of primary and secondary inertia forces explains why an engine with no unbalanced rotating mass still shakes at twice crank speed. Every mechanism in the course is finally judged by the same three numbers: the force it puts into its frame, the load it puts into its bearings, and the speed at which it stops being able to follow its own geometry."
+  ],
   "prerequisites": [
     "dynamics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Count the mobility of a planar mechanism by the Gruebler–Kutzbach criterion, identify and remove passive freedoms, redundant constraints and higher pairs, and state whether a proposed chain is a structure, a mechanism or a mechanism that cannot be assembled",
+    "Classify a four-bar by Grashof's condition and by which link is fixed, and explain why a non-Grashof double-rocker cannot be driven continuously through a full turn",
+    "Solve the position of a four-bar, a slider-crank and a general n-bar loop by vector-loop closure, distinguishing the two circuits and the two branches, and detect numerically when a loop cannot close at all",
+    "Find the velocity of any point on a mechanism by the relative-velocity equation, by Kennedy's theorem and instant centres, or by the velocity image, and choose the method from what is asked rather than from what is easiest",
+    "Compute angular velocities and sliding rates in mechanisms with sliding pairs on rotating links, and state when the Coriolis term is present, in which direction it acts, and why it reverses with the sliding",
+    "Obtain angular accelerations and centre-of-mass accelerations from the acceleration loop and the acceleration image, locate the instant centre of acceleration, and compute the shaking force and shaking couple of a complete mechanism",
+    "Synthesise a four-bar for function generation by Freudenstein's equation at three precision points in closed form and at five by iteration, and for straight-line motion by Watt's or Chebyshev's linkage, reporting the maximum deviation over the working window rather than the peak-to-peak error",
+    "Diagnose branch, order and monotonicity defects in a synthesised mechanism, and state which of a geared five-bar, a six-bar, a cam, a Geneva drive or a servo should replace a four-bar that cannot do the job",
+    "Produce a cam profile from a prescribed motion law, compute the pressure angle and the radius of curvature, detect and correct undercutting, and compute the cam-float speed and the spring needed to prevent it",
+    "Select a gear pair or gear train for a duty: apply the law of gearing, the interference limit and the contact ratio to the geometry; Lewis bending and surface durability to the strength; the Willis equation, the assembly, adjacency and phase conditions and the circulating-power test to an epicyclic; and the balance-grade and flywheel formulas to the resulting dynamics"
+  ],
   "chapters": [
     {
       "slug": "mechanisms-mobility",
@@ -88,8 +104,132 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1784,
+      "title": "Watt's parallel motion, and the linkage as intellectual property",
+      "detail": "James Watt had kept a steam engine's piston rod truly straight for fifteen years with a chain and a pair of arcs, and in 1784 he patented instead a three-bar linkage that does the same thing with rigid links. His specification describes the crossed parallelogram, and his reason for patenting it is the most honest sentence in the history of mechanism design: a competitor had begun building engines to the same purpose, and the linkage was the only part of the machine he could still claim. Boulton and Watt enforced the patent until it expired in 1800 and thereby delayed the high-pressure engine by a generation. **Watt's linkage is the first mechanism whose significance was legal rather than kinematic, and it established a pattern — the cam, the differential, the balance shaft, the constant-velocity joint — in which the history of mechanisms is partly a history of patent law.**",
+      "people": [
+        "James Watt",
+        "Matthew Boulton"
+      ]
+    },
+    {
+      "year": 1695,
+      "title": "The geometry of the tooth",
+      "detail": "Philippe de la Hire published in 1695 the epicycloidal tooth form, generated by a circle rolling on a circle, which became the standard for two centuries because it could be laid out with compasses. Robert Hooke had already proposed the involute in a 1657 anagram and had built working examples, and Leonhard Euler gave the involute its equation in 1754 and showed that it alone gives a constant velocity ratio for any centre distance. **The two curves are the whole history of gear manufacture in one line: the epicycloid is easy to draw and hard to cut accurately, the involute is hard to draw and easy to cut once a generating machine exists — and gears became an involute technology in the nineteenth century precisely because the shaping machine had arrived.**",
+      "people": [
+        "Robert Hooke",
+        "Philippe de la Hire",
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1841,
+      "title": "Robert Willis systematises the mechanism",
+      "detail": "Robert Willis, the Cambridge mathematician who had also built the crystallography of quartz, published the first volume of *Principles of Mechanisms* in 1841 and the second in 1849, delivered as the first mechanical-philosophy lectures ever given at Cambridge. He classified mechanisms by their parts rather than by their uses, gave the first systematic account of epicyclic trains including the tabular method still used to solve them, and analysed the linkwork of steam locomotives with a rigour that no one had previously thought to bring to a railway. **Willis is the reason the epicyclic gear train is taught as algebra rather than as a drawing, and the reason a mechanism is treated in the nineteenth century as an object of mathematical study rather than as a piece of millwrighting.**",
+      "people": [
+        "Robert Willis"
+      ]
+    },
+    {
+      "year": 1876,
+      "title": "Reuleaux and the kinematic chain",
+      "detail": "Franz Reuleaux of the Berlin Gewerbeakademie published *Die Kinematik der Maschine* in 1875 and its English translation, *The Kinematics of Machinery*, in 1876, and in about two hundred pages founded a discipline. He named the kinematic chain, distinguished lower pairs from higher pairs, showed that a mechanism is a kinematic chain with one link fixed and that choosing a different fixed link gives an inversion with the same relative motions and a different machine, and built several hundred wooden models of every mechanism he could think of. **Those models, bought from his estate in 1876 and now at Cornell, are the physical basis of the whole subject; and the inversion principle they demonstrate is why a slider-crank, an oscillating-cylinder engine, a Whitworth quick-return and a rotary engine are one mechanism and four machines.**",
+      "people": [
+        "Franz Reuleaux",
+        "Charles Hutton Penny (translator)",
+        "A. B. W. Kennedy"
+      ]
+    },
+    {
+      "year": 1878,
+      "title": "Chebyshev on straight lines and on the summation of errors",
+      "detail": "Pafnuty Chebyshev, in a series of papers from 1853 to 1878 including the 1878 memoir on parallelograms, solved the two problems that had occupied linkage designers since Watt: how to make a linkage trace a straight line as nearly as possible over a stated distance, and how to make one link's rotation a prescribed function of another's. His straight-line linkage of 1878 — links in the ratio 1.5 : 3.5 : 1.5 on a ground of 4 — departs from a straight line by less than one four-thousandth of its span, and his treatment of function generation, in which the errors at the precision points are made to alternate in sign, is the first appearance of minimax approximation in mechanics. **It is the same mathematical idea as his eponymous polynomials, and it is why a Chebyshev-spaced set of precision points beats equally spaced ones for a four-bar logarithm generator; the connection between the two was obvious to him and had to be rediscovered by mechanism designers a century later.**",
+      "people": [
+        "Pafnuty Lvovich Chebyshev"
+      ]
+    },
+    {
+      "year": 1886,
+      "title": "The theorem of three centres",
+      "detail": "A. B. W. Kennedy, professor of engineering at Glasgow, published a short note in *Nature* in 1886 pointing out that an armature winding is an example of a theorem about three bodies in planar motion: their three instant centres lie on a straight line. The theorem itself is Aronhold's of 1872, but Kennedy's note and his textbook made it a working tool, because it reduces the velocity analysis of any pin-jointed mechanism to straightedge construction and a handful of similar triangles, and it generates the N(N-1)/2 instant centres of a mechanism one line at a time. **For eighty years it was the fastest way to analyse a mechanism by hand, and it remains the only method that gives an engineer an answer on the back of an envelope before committing to a computer model.**",
+      "people": [
+        "A. B. W. Kennedy",
+        "Wilhelm Aronhold"
+      ]
+    },
+    {
+      "year": 1888,
+      "title": "Burmester and the geometry of displacement",
+      "detail": "Ludwig Burmester's *Lehrbuch der Kinematik*, published in two volumes in 1888, is the summit of the geometric method. His result — that the plane positions a body must pass through determine a curve of circle points and a curve of centre points, so that a linkage guiding a body through five positions is not unique but a one-parameter family — is the deepest theorem in the kinematics of machinery and it was stated fifty years before anyone could compute one. **The practical content survives every numerical method since: the family lets the designer choose a solution for its transmission angle, its compactness or its freedom from branch defects rather than merely for its accuracy, and the middle third of Burmester's curve, where the curvature is high, is where the hypersensitive mechanisms are that classical synthesis produces and then cannot explain.**",
+      "people": [
+        "Ludwig Burmester",
+        "Ferdinand Pietzker"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "Freudenstein, and synthesis on a machine",
+      "detail": "Ferdinand Freudenstein, at Columbia, published *Structural Kinematics of Mechanisms* in 1959 and with Arthur Sandor a series of papers that did two things at once. The first was an equation: an input–output relation for the four-bar, linear in three constants, which turns three-position function generation into three linear equations and makes the whole classical theory a matrix inversion. The second was a programme: Freudenstein and Sandor wrote the first digital-computer programs for the automatic synthesis of planar mechanisms in the early 1960s, and in doing so ended the era of the graphical method and started the era of optimum design by numerical minimisation of a weighted error. **Every mechanism design package in use today, and every linkage optimised by least squares against a motion specification, is a descendant of those programs; and the defects they cannot detect — branch, order, reversal — are the price of automating a theory that never asked whether the mechanism could be assembled.**",
+      "people": [
+        "Ferdinand Freudenstein",
+        "Arthur G. Erdman",
+        "George N. Sandor",
+        "Kenneth C. Smith"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "author": "Robert Willis",
+      "title": "Principles of Mechanisms: Compiled from Those of M. Pecqueur, and Arranged with Considerable Additions and Modifications",
+      "publisher": "John W. Parker, London (2nd ed. 1849; reprint Cambridge University Press 2011)",
+      "year": 1841
+    },
+    {
+      "author": "Franz Reuleaux",
+      "title": "The Kinematics of Machinery (trans. A. B. W. Kennedy)",
+      "publisher": "Macmillan (reprint Dover, 1963)",
+      "year": 1876
+    },
+    {
+      "author": "E. S. Hartenberg and J. Denavit",
+      "title": "Kinematic Synthesis of Linkages",
+      "publisher": "McGraw-Hill (reprint Dover, 2013)",
+      "year": 1964
+    },
+    {
+      "author": "J. J. Uicker, G. R. Pennock and J. E. Shigley",
+      "title": "Theory of Machines and Mechanisms",
+      "publisher": "Oxford University Press, 5th edition",
+      "year": 2015
+    },
+    {
+      "author": "A. S. Erdman, G. N. Sandor and S. Kota",
+      "title": "Mechanism Design: An Analysis and Synthesis",
+      "publisher": "CRC Press, 4th edition",
+      "year": 2001
+    },
+    {
+      "author": "R. L. Norton",
+      "title": "Design of Machinery: An Introduction to the Synthesis and Analysis of Mechanisms and Machines",
+      "publisher": "Wiley, 6th edition",
+      "year": 2020
+    },
+    {
+      "author": "F. L. Litvin and A. Fuentes",
+      "title": "Gear Geometry and Applied Theory",
+      "publisher": "Cambridge University Press, 2nd edition",
+      "year": 2004
+    },
+    {
+      "author": "V. A. Artobolevsky",
+      "title": "Mechanisms in Modern Engineering Design, vols. I–V",
+      "publisher": "Mir Publishers (trans. A. E. Mandrusiak)",
+      "year": 1975
+    }
+  ],
   "next": [
     "machine-design",
     "robotics"

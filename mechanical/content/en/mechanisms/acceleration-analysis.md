@@ -394,6 +394,19 @@ $$
 :::
 :::
 
+::: quiz
+A slider moves with relative speed $v_{\mathrm{rel}}$ along a link rotating at $\omega$. The Coriolis acceleration $2 \omega v_{\mathrm{rel}}$ appears in the acceleration equation:
+
+- [ ] For any two points on the same rigid body, whatever the joint between them
+- [x] Only when the sliding pair is observed from a frame that is itself rotating; it is perpendicular to the sliding direction, turned $90^{ \circ }$ in the sense of $\omega$, and it reverses sign when the sliding reverses
+- [ ] Only when $\omega$ is constant, because a varying $\omega$ is already carried by the tangential term
+- [ ] Only in spatial mechanisms, where the extra rotation couples the axes
+
+::: solution
+**Only at a sliding pair on a rotating link.** The term comes from differentiating $\boldsymbol{\omega} \times \mathbf{r}$ twice and is $2 \boldsymbol{\omega} \times \mathbf{v}_{\mathrm{rel}}$, so it vanishes when either factor does: a pin joint has $v_{\mathrm{rel}} = 0$, and a slider on a non-rotating guide has $\omega = 0$. **Its practical importance is out of all proportion to its size.** It is why the ram of a shaper, in which a slider block rides on a rotating slotted link, needs a bearing length set by $2 \omega v_{\mathrm{rel}}$ and not by the direct acceleration — the Coriolis component is a sideways load on the slideway, and it reverses twice per revolution, so a short block rocks and the machine's finish degrades at the ends of the stroke where $v_{\mathrm{rel}}$ is largest. It is why a quick-return's slotted-link pin is loaded in fatigue even though the ram's mean acceleration is zero. And it is why the term must be included in the acceleration polygon at all: it is not a correction, and dropping it does not make the answer slightly wrong, it makes the polygon not close.
+:::
+:::
+
 ::: history
 **Coriolis presented his term in 1835 in a memoir on the relative motion of systems of bodies, and it was adopted into engineering mechanics within a decade by Rankine, who needed it for the slotted-lever mechanisms then appearing in shaping machines.** **The acceleration polygon is in Willis's *Principles of Mechanism* of 1841 and in Rankine's *Applied Mechanics* of 1858, and the acceleration image — the similar figure in the polygon — is Reuleaux's.** **The instant centre of acceleration and the circle of inflection are due to de la Vallée Poussin and are usually attributed to Bresme, whose 1885 paper gives the circle on which the points of zero normal acceleration lie; Langer's point, the coupler point of zero acceleration, was identified in 1865 and remained a curiosity until the 1950s, when the demand for exact-motion couplings made it a design tool.** **The theory of complete force balancing of linkages — the counterweight conditions and the impossibility of balancing force and moment simultaneously over a whole cycle — is the work of Chelidze and of Dimentberg in the 1950s, and the proof that no four-bar can be fully balanced over more than a finite set of positions is Sherman's of 1960.** **The four-five-six-seven cam law is a numerical convenience of the 1960s; the double-cycloidal and modified-sine laws are earlier, and the tabulated coefficients of this lesson are those of the 1958 Hrovat and Durein catalogue, which is still the source most cam-grinding software uses.**
 :::

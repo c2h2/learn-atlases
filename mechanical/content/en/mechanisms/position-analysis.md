@@ -387,6 +387,19 @@ $$
 :::
 :::
 
+::: quiz
+Solving the four-bar position quadratic at $\theta_2 = 60^{ \circ }$ returns $\theta_4 = 41.2^{ \circ }$ and $118.6^{ \circ }$. A Newton–Raphson solver seeded with $\theta_4 = 120^{ \circ }$ at $\theta_2 = 60^{ \circ }$ is stepped in $1^{ \circ }$ increments to $\theta_2 = 61^{ \circ }$ and returns $41.9^{ \circ }$. What has happened?
+
+- [ ] Accumulated round-off error in the iteration
+- [x] The solver has jumped branch: $41.9^{ \circ }$ is the other root of the same loop equation, a geometrically valid position of a mechanism that cannot be reached from $118.6^{ \circ }$ without passing through a toggle
+- [ ] The loop does not close at $\theta_2 = 61^{ \circ }$, so the solver has returned a spurious root
+- [ ] The transmission angle has passed through zero and the Jacobian has become singular
+
+::: solution
+**Both roots are always real when the loop closes**, because the quadratic comes from squaring the loop equation twice; the two roots are the open and crossed circuits, and a solver that is told only "solve this equation" has no way to know which one the mechanism is in. Seeding with $120^{ \circ }$ and stepping by $1^{ \circ }$ is exactly the arrangement that fails, because the basin of attraction of the two roots changes as $\theta_2$ moves and at some step the previous answer stops being a good enough guess. **The two defences are mandatory and cheap: always seed from the previous solution rather than from a fixed value, and always substitute the returned angle back into the unsquared loop and check the residual.** A solver that reports a residual of $10^{- 1 3 }$ has found a real position of the mechanism; a solver that reports a residual of $10^{- 2 }$ has found a complex number dressed up as a real one, and the difference between those two outcomes is the difference between a mechanism and a drawing of one.
+:::
+:::
+
 ::: history
 **Freudenstein** published his equation in **1954** in the Transactions of the ASME, and with it the first systematic method of **dimensional synthesis** — choosing link lengths to satisfy prescribed input–output pairs. **He followed it in 1955 with the "structural error" formulation and in 1963 with the first use of a digital computer in mechanism design**, which is the reason the Columbia University group he led is where modern mechanism synthesis begins. **Chebyshev's 1853 paper on Watt's parallel motions proved both the straight-line result and the general theorem that a mechanism with $n$ adjustable parameters can satisfy $n$ precision conditions exactly — twenty years before Chebyshev's approximation theory, of which it is a special case.** **Gruebler's 1883 paper introduced the terms circuit and branch defect along with the mobility criterion; Artobolevskii's five-volume Mechanisms in Modern Engineering Design, published in Russian between 1951 and 1976, is still the largest catalogue of linkage geometries in existence and contains several hundred straight-line mechanisms, of which perhaps forty are used.** **The Newton–Raphson method as applied to linkages is due to Hrones and Nelson, whose 1951 MIT monograph on the four-bar was the first engineering use of a mechanical differential analyser to plot coupler curves, and whose charts were the design tool of the subject until the spreadsheet displaced them in 1990.**
 :::

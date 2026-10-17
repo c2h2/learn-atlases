@@ -395,6 +395,19 @@ $$
 :::
 :::
 
+::: quiz
+A planar mechanism of eight links and ten turning pairs gives $M = 3 ( 8 - 1 ) - 2 ( 10 ) = 1$ by Gruebler's criterion. Built to the drawing, it will not move. What is the most likely explanation?
+
+- [ ] Gruebler's criterion systematically over-counts planar mechanisms and must be corrected by one
+- [x] The criterion counts a *generic* geometry; special proportions — a parallelogram, equal opposite links, concurrent or parallel axes — introduce redundant constraints that lock the chain the formula says has a freedom
+- [ ] One of the joints is a higher pair that has been miscounted as a turning pair
+- [ ] The mechanism is in fact spatial and the planar formula does not apply
+
+::: solution
+**The criterion is necessary, not sufficient.** It counts the constraint equations a chain *generically* imposes, and a special geometry can make some of those equations linearly dependent — the constraint is then redundant, the true mobility is lower than the count, and the mechanism is a structure. The Peaucellier cell is the same phenomenon in the other direction: $N = 7$, $J_1 = 8$ gives $M = 3 ( 6 ) - 16 = 2$, but the parallelogram's closure makes one constraint redundant and the true mobility is $1$. **The practical rule is that Gruebler tells you what a mechanism may do and the drawing tells you what it does; whenever the count and the assembly disagree, look first for equal lengths, parallel axes and concurrent axes, which are the three geometries that lie to the formula — and look second for a joint whose clearance is doing the job the formula assigned to a freedom.**
+:::
+:::
+
 ::: history
 **Chebyshov** (Chebyshev) read a paper in **1853** on the translational linkages of James Watt and showed that a four-bar could guide a point along a straight line to within one part in four thousand — and then went much further, proving in the same work that a hinge mechanism with $n$ parameters can fit $n$ precision points exactly, which is the theorem every function-generation chapter still uses and which antedates by a decade the approximation theory for which he is actually famous. **Sarkis Gruebler** published his criterion in **1883** in a paper on the construction of mechanisms; **Karl Kutzbach** generalised it to three dimensions in **1916** in the same journal, and both were reacting to a practical need — the classification of the textile and printing machinery of the period. **The Peaucellier–Lipkin cell is of 1864: a schoolboy of sixteen named I. M. S. Lipkin submitted the design to the Imperial Technical School in St Petersburg a few weeks after Peaucellier published it in a French engineering journal, and the priority dispute was never settled.** **Aronhold stated his theorem on the collinearity of three instant centres in 1872 and Kennedy published it in 1886; Reuleaux had by then built the kinematic model of the machine from the pair concept, and his 1876 Kinematics der Maschinen is the book that made the subject a discipline rather than a collection of devices.** **Grashof's condition was published in 1883 in the same volume as Gruebler's criterion, and Huntington's proof that planar linkages of binary and ternary links have no passive freedoms did not appear until 1975 — ninety-two years after the criterion it repairs.**
 :::

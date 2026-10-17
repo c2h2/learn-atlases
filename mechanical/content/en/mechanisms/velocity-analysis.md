@@ -316,6 +316,25 @@ $$
 :::
 :::
 
+::: quiz
+In a four-bar with links numbered $1 =$ ground, $2 =$ input crank, $3 =$ coupler, $4 =$ output rocker, Kennedy's theorem locates the instant centre $I_{13}$ at:
+
+- [ ] The midpoint of the line joining $I_{12}$ and $I_{34}$
+- [x] The intersection of the line through $I_{12}$ and $I_{23}$ with the line through $I_{14}$ and $I_{34}$
+- [ ] The intersection of the line through $I_{12}$ and $I_{34}$ with the line through $I_{14}$ and $I_{23}$
+- [ ] Nowhere; it must be found by solving the velocity equations
+
+::: solution
+**The intersection of $I_{12} I_{23}$ with $I_{14} I_{34}$.** Kennedy's theorem says the three instant centres of three bodies in planar motion are collinear, so applying it to bodies $\{ 1 , 2 , 3 \}$ puts $I_{13}$ on the line $I_{12} I_{23}$, and applying it to $\{ 1 , 3 , 4 \}$ puts it on $I_{14} I_{34}$; the intersection is $I_{13}$. **The construction is worth knowing cold, because one more application of the same theorem gives the mechanical advantage of a four-bar in four straightedge strokes.** Applied to the two moving links, Kennedy puts $I_{24}$ on $I_{12} I_{14}$, the line of the two fixed pivots, and on $I_{23} I_{34}$, the coupler produced; the angular-velocity-ratio theorem then gives
+
+$$
+M A = \frac{ T_4 }{ T_2 } = \frac{ \omega_2 }{ \omega_4 } = \frac{ \overline{ I_{14 } I_{24 } } }{ \overline{ I_{12 } I_{24 } } }
+$$
+
+**and with it the reason a linkage at a toggle has infinite advantage and unbounded shaking force: at the output toggle the coupler and the rocker fall in line, so $I_{24}$ arrives at $I_{14}$, the output link's instant centre becomes its own pivot, and it cannot turn whatever torque is applied.** Its limitation is the same as the graphical method's: it is exact at an instant, it degrades when two of the four centres are far apart or nearly coincident, and it gives no accelerations at all.
+:::
+:::
+
 ::: history
 **Kennedy's 1886 paper on the velocities of mechanisms was a systematisation of what had been done graphically since Watt**, and the theorem itself is Aronhold's of **1872** — but the practical method, the velocity polygon, was already in the engineering textbooks of **Rankine (1858)** and **Willis (1841)**, and Willis's *Principles of Mechanism* contains a correct graphical velocity construction for a four-bar drawn with a compass and published before the word "velocity ratio" had a standard meaning. **The centrode concept is due to Poinsot, whose 1809 treatment of the moving and fixed polodes is the oldest part of the subject still in daily use, and its application to gears — the pitch circle as a centrode — is Reuleaux's.** **The Geneva mechanism's velocity law was first published by Ferri in 1880 in a paper on watch mechanisms; the peak-to-mean ratio of $2.41$ for the four-slot wheel appears in Artobolevskii's 1951 catalogue and in no earlier Western source.** **The cam pressure-angle limit of $25^\circ$ for a roller follower is a convention of the 1940s, and the $40^\circ$ for a flat follower is a convention of the same decade; neither is derived from anything, and the reason both survive is that no one has produced a better rule and the reason they are safe is that they are conservative by a factor of about two.**
 :::

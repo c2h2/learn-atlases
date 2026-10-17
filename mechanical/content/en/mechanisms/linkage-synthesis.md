@@ -21,6 +21,19 @@ Everything so far in this course has been **analysis**: given the links, find th
 
 Mechanism synthesis is divided by what the specification asks for, and the division matters because it sets how many requirements you can satisfy.
 
+::: definition The three problems of mechanism synthesis {#def-synthproblems}
+Given a family of mechanisms, **analysis** asks what motion a given member of the family produces; **synthesis** asks which member produces a given motion. Synthesis is traditionally split three ways, and the split is not cosmetic — it is a statement about how many equations you will have.
+
+| Problem | Specification | Equations per prescribed position |
+|---|---|---|
+| **Function generation** | output angle is a given function of input angle, $\theta_4 = f(\theta_2)$ | **1** |
+| **Path generation, no timing** | a coupler point passes through given points, or along a given curve | **1** |
+| **Path generation, with timing** | the same, and the mechanism must arrive at each point at a given crank angle | **2** |
+| **Motion generation** (rigid-body guidance) | the coupler attains given positions *and orientations* | **2** without timing, **3** with |
+
+**The count is the whole point.** A four-bar has nine independent dimensions, so it can satisfy nine scalar conditions exactly: nine function-generation points in principle and three in closed form, five path-generation points with timing, four motion-generation positions with timing. **Every other conclusion in this lesson is arithmetic built on that table.**
+:::
+
 **Function generation.** The mechanism's job is to make the output angle a specified function of the input angle. A pointer on a pressure gauge, a logarithmic scale on a meter, a valve lift that is a particular function of crank angle, a calculator's $y = \log x$ dial. Each precision point contributes **one** equation, because only the correspondence $\theta_2 \mapsto \theta_4$ is prescribed.
 
 **Path generation.** A point on the coupler must pass through a set of prescribed points, or along a prescribed curve. A gripper picking items off a conveyor, a sewing-machine needle, the platform of a parallel manipulator. If the times are prescribed too, each point contributes **two** equations ($x$ and $y$); if only the geometry matters, each contributes **one**.
@@ -82,6 +95,18 @@ The extra parameters come from the second crank and the gear ratio, and they buy
 
 ## Precision points and Chebyshev spacing
 
+::: definition Precision points and their spacing {#def-precision}
+A **precision point** is a value of the input at which the synthesised mechanism is made to reproduce the desired function *exactly*, the residual being forced to zero by construction. Between them the mechanism errs, and the entire design decision is where to put them.
+
+For $n$ precision points spanning $[ x_0 , x_f ]$ the **Chebyshev spacing** places them at the roots of the Chebyshev polynomial $T_n$ mapped onto the interval,
+
+$$
+x_j = \frac{ x_0 + x_f }{ 2 } - \frac{ x_f - x_0 }{ 2 } \cos \frac{ ( 2 j - 1 ) \pi }{ 2 n } \ , \qquad j = 1 , \dots , n
+$$
+
+**which are the minimax-optimal abscissae for polynomial interpolation.** Their defining property is that they avoid the ends of the interval: for $n = 3$ on $[ 1 , 10 ]$ they are $1.603 , 5.500 , 9.397$, and for $n = 4$ they are $1.343 , 3.778 , 7.222 , 9.657$, whereas equally spaced points march to the boundaries at $1$ and $10$. **The reason is that the error of interpolation between the points grows towards the ends of the range — Runge's phenomenon in miniature — so a point placed at the very end is spent defending the least valuable ground.**
+:::
+
 When you cannot match the function exactly, you choose *where* to match it exactly. The obvious choice — equally spaced points — is close to the worst possible, because the interpolation error between the points blows up at the ends of the range. This is Runge's phenomenon in miniature, and the cure is the same.
 
 **Chebyshev spacing.** For $n$ precision points over $[x_0, x_f]$,
@@ -106,6 +131,22 @@ f: 4*pow(x,3)-3*x
 x: -1, 1
 y: -1.15, 1.15
 caption: The Chebyshev polynomial $T_3(x) = 4x^3 - 3x$ on $[-1, 1]$. **Its three zeros, at $x = -0.866$, $0$ and $+0.866$, are the three Chebyshev precision points**, and they are bunched towards the ends of the interval relative to the equally spaced $-0.5, 0, +0.5$. **Note also that the curve reaches $+1$ and $-1$ exactly four times between them** — that flat alternation of the extrema is the equiripple property that makes Chebyshev interpolation nearly minimax, and it is the reason the same spacing is used for the precision points of a function generator.
+:::
+:::
+
+::: exercise Four-point Chebyshev spacing {level=1 check="3.78"}
+Find the four Chebyshev precision points on $x \in [ 1 , 10 ]$ and compare them with four equally spaced points including the endpoints.
+
+::: solution
+The angles $\alpha_j = ( 2 j - 1 ) \pi / 8$ are $22.5^\circ$, $67.5^\circ$, $112.5^\circ$ and $157.5^\circ$, so
+
+$$
+x_j = 5.5 - 4.5 \cos \alpha_j = 1.343 \ , \ 3.778 \ , \ 7.222 \ , \ 9.657
+$$
+
+against the equally spaced $1.000 , 4.000 , 7.000 , 10.000$. **The Chebyshev set pulls the outer points inward by $0.34$ and $0.34$ of a decade and pushes the inner pair outward by $0.22$ each**, and the four-point maximum interpolation error of a smooth monotone function over $[ 1 , 10 ]$ falls by roughly a factor of two as a result.
+
+**Two practical notes.** First, the Chebyshev points are *not* the endpoints-inclusive set that a naive designer assumes; if your specification demands exactness at $x = 1$ and $x = 10$ you cannot also have Chebyshev spacing, and the honest choice is to take the endpoints as two of the points and space the remainder as evenly as the constraint allows. Second, the improvement is real but modest — a factor of $1.35$ for the three-point logarithm generator of [[#ex-cheb-vs-equi]] and a factor of $2.1$ for the square-root generator of [[#ex-sqrt-design]]. **Chebyshev spacing is worth taking and not worth arguing about, and it is nowhere near as important as choosing the input and output angle ranges, which is worth a factor of seven.**
 :::
 :::
 
@@ -173,6 +214,30 @@ A $26.9^\circ$ transmission angle fails the $40^\circ$ rule of [[mechanisms/mech
 | $\ge 40^\circ$ | $30$–$140^\circ$ | $130$–$175^\circ$ | 0.805 | 0.812 | 0.608 | 3.79 % |
 
 The table is the honest face of synthesis: **holding the transmission angle above the textbook $40^\circ$ costs a factor of seven in accuracy.** The decision is not "which is better" but "is this mechanism a computer or a lever". A function generator is nearly always a computer, and $27^\circ$ is fine.
+
+::: exercise Transmission angle of the synthesised generator {level=2 check="27.0"}
+The three-point logarithm generator has $a = 1.0000$, $b = 0.6378$, $c = 1.3648$, $d = 1.0043$. Compute the transmission angle at $\theta_2 = 50^\circ$ and confirm the $\mu_{\min}$ quoted in the table.
+
+::: solution
+The transmission angle is the angle between the coupler $b$ and the rocker $c$, and it is found from the diagonal $s = A O_4$, which the cosine rule on the input triangle gives:
+
+$$
+s^{ 2 } = a^{ 2 } + d^{ 2 } - 2 a d \cos \theta_2 = 1 + 1.00862 - 2 ( 1.0043 ) ( 0.64279 ) = 0.71751 \ \Rightarrow \ s = 0.84706
+$$
+
+and the cosine rule on the triangle $A B O_4$ then gives
+
+$$
+\cos \mu = \frac{ b^{ 2 } + c^{ 2 } - s^{ 2 } }{ 2 b c } = \frac{ 0.40679 + 1.86268 - 0.71751 }{ 2 ( 0.6378 ) ( 1.3648 ) } = \frac{ 1.55196 }{ 1.74145 } = 0.89118
+$$
+
+$$
+\mu = \boxed{ 27.0^{ \circ } }
+$$
+
+**which is the minimum over the whole $50^\circ$–$150^\circ$ range and occurs at the first crank angle of the range.** Two things are worth noticing. The first is that $s$ is smallest at $\theta_2 = 50^\circ$, and $\mu$ is smallest when $s$ is smallest — **the transmission angle of a function generator is worst where the input crank is most nearly folded onto the ground link**, which is a geometric fact you can see on a drawing in five seconds and which no amount of optimisation can repeal. The second is that the same $\theta_2 = 50^\circ$ is where the function error is largest, because it is where the Chebyshev point sits nearest the end of the range. **Accuracy and force transmission fail together, at the same place, for the same reason: the mechanism is being asked to turn through its smallest diagonal.**
+:::
+:::
 
 ::: example When the trade-off is not available {#ex-force-fg}
 A mechanical computer adds two inputs by the four-bar summation linkage and drives a hydraulic valve spool that needs $40\ \mathrm{N}$ of axial force with $2\ \mathrm{mm}$ of stroke.
@@ -246,6 +311,18 @@ Now plot the coupler curve of a non-Grashof four-bar with a long coupler. It has
 ## Defects: valid geometry, broken machine
 
 A synthesised linkage can satisfy every equation and still be unusable. Three failure modes have names.
+
+::: definition Branch, order and monotonicity defects {#def-defects}
+A synthesised mechanism may reproduce every precision point and still be a machine you cannot build. The three failure modes are independent of each other and of the residuals.
+
+**Branch defect.** A four-bar has two *circuits* — open and crossed — separated by a toggle at which the input and output links become collinear, and each circuit has two *branches*. If two precision points are reproduced on different circuits or different branches, the mechanism would have to be disassembled and re-assembled through a toggle to get from one to the other. **Detection:** the discriminant $B'^{ 2 } - 4 A' C'$ of the position quadratic must stay positive over the whole range, and the same sign of $\pm \sqrt{ \ }$ must reproduce every precision point.
+
+**Order defect.** The mechanism visits all the prescribed positions, but not in the prescribed sequence, or it visits one of them twice per revolution. **Detection:** plot the output against the input over the full range and read the sequence off the curve.
+
+**Monotonicity defect.** The output reverses inside the working range. For a function generator this is fatal — the dial reads the same angle at two different inputs — and it is completely invisible in a table of precision-point residuals.
+
+**None of the three is detected by any classical synthesis procedure, and only two of the three are detected by a least-squares optimiser, because a reversal costs almost nothing in sum of squares.** The rule is that a synthesis is not finished until the whole output curve has been plotted over the whole input range, and that the plot — not the residual — is the deliverable.
+:::
 
 **Branch defect.** The four-bar has two circuits (open and crossed, see [[mechanisms/position-analysis]]). If two of your precision points lie on different circuits, the mechanism must pass through a toggle to reach them, and it will not. *Detection:* check that the discriminant $B'^2 - 4A'C'$ stays positive and that the same sign of $\pm\sqrt{\ }$ reproduces all the precision points.
 
@@ -342,6 +419,36 @@ over the nine parameters $\mathbf{p}$, with weights $c_j$ that let you demand ac
 - **Weight by use, not by index.** A linkage that dwells at three positions of a six-position indexing cycle should have those three weighted roughly three times the others.
 - **Add the transmission angle as a penalty, not a constraint.** Solvers handle $\lambda \max(0, 40 - \mu)^2$ far better than a hard constraint, and the penalty coefficient can be annealed up.
 - **Check the residual at the *endpoints* of the range, not just the sum of squares.** A design can have a beautiful RMS error and a catastrophic endpoint, exactly as the logarithm generator above does.
+
+::: exercise Weighted against unweighted {level=2 check="0.58"}
+A linkage is used $80\ \%$ of the time with $x$ between $3$ and $6$, and $10\ \%$ each at the bottom and top of its range. Two candidate designs have the following root-mean-square errors in those three bands:
+
+| Design | $x \in [ 1 , 3 ]$ | $x \in [ 3 , 6 ]$ | $x \in [ 6 , 10 ]$ |
+|---|---|---|---|
+| A | $1.20\ \%$ | $0.30\ \%$ | $1.10\ \%$ |
+| B | $0.40\ \%$ | $0.90\ \%$ | $0.50\ \%$ |
+
+Which design wins on unweighted RMS, and which on a duty-weighted mean square with weights $0.1 , 0.8 , 0.1$?
+
+::: solution
+**Unweighted**, treating the bands as equally representative:
+
+$$
+A : \sqrt{ \frac{ 1.44 + 0.09 + 1.21 }{ 3 } } = 0.956\ \% \ , \qquad B : \sqrt{ \frac{ 0.16 + 0.81 + 0.25 }{ 3 } } = 0.638\ \%
+$$
+
+**B wins by half.** Weighted:
+
+$$
+A : \sqrt{ 0.1 ( 1.44 ) + 0.8 ( 0.09 ) + 0.1 ( 1.21 ) } = \sqrt{ 0.337 } = \boxed{ 0.58\ \% } \ , \qquad
+B : \sqrt{ 0.1 ( 0.16 ) + 0.8 ( 0.81 ) + 0.1 ( 0.25 ) } = \sqrt{ 0.689 } = 0.83\ \%
+$$
+
+**and A wins by forty per cent.** The two designs are not better or worse in any absolute sense; they are different mechanisms shaped by the objective function that produced them, and the objective function is a statement about the machine's duty cycle that the synthesiser has no way to guess.
+
+**Three consequences for how you actually run an optimisation.** Write the weights down before you run it, because a designer who chooses the weights afterwards has not optimised a mechanism but justified one. Check whether the duty is really uniform — a linkage on a packaging index table spends $70$–$90\ \%$ of its life within a few degrees of two or three positions, and a uniform weighting will happily sacrifice those positions to improve a transition that takes a tenth of a second. And report the weighted and unweighted numbers side by side in the design review, because the difference between them is the size of the risk you are taking on the part of the cycle nobody watched.
+:::
+:::
 
 ## When synthesis says no: choosing the next mechanism
 
@@ -455,6 +562,20 @@ Monotonicity is not checked by any of the classical synthesis procedures, becaus
 - **1959 — Ferdinand Freudenstein.** Emigrating from Germany in 1940 and taking his doctorate at Columbia, he published *Structural Kinematics of Mechanisms* in 1959 and turned linkage design from a graphical craft into a branch of engineering mathematics. His $K_1, K_2, K_3$ made the three-point problem linear, and his insistence on *structural* rather than *dimensional* synthesis — classifying mechanisms by their kinematic chains — is why this course opens with Gruebler's formula rather than with triangles.
 - **1964 — Hartenberg and Denavit, *Kinematic Synthesis of Linkages*.** The first modern textbook, and the source of the iterative weighted-least-squares method still used for five- and six-point synthesis. Hartenberg was Dutch, Denavit American, and the book is the meeting of the European geometric school and the American computational one.
 - **1975 — G. N. Huntington's theorem** closed the question of passive freedoms in planar linkages built from binary and ternary links, a result needed because Gruebler's formula silently over-counts them (see the Peaucellier cell in [[mechanisms/mechanisms-mobility]]).
+:::
+
+::: summary
+- **The three synthesis problems differ only in how many equations each prescribed position contributes** — one for function generation and untimed path generation, two for timed path generation, three for timed motion generation — and a four-bar has nine dimensions to spend. Every other number in this lesson is arithmetic on that fact.
+- **Three precision points is not a theoretical limit; it is the size of the linear system.** Freudenstein's equation is linear in exactly three constants, so three points give a closed-form solution and five give a nonlinear one that Newton–Raphson solves in under two hundred iterations.
+- **Chebyshev spacing beats equally spaced points by a factor of $1.35$ to $2.1$, and choosing the input and output angle ranges beats Chebyshev by a factor of seven.** Spend your effort in that order.
+- **A five-point synthesis with a datum offset on both links gives $9$ times the accuracy of a three-point design** — $0.058\ \%$ against $0.53\ \%$ — because it has two more constants and because the offset lets the error curve develop interior extrema of alternating sign, which is what minimax means.
+- **Accuracy and force transmission trade against each other directly.** Holding $\mu \ge 40^{ \circ }$ instead of $\mu \ge 25^{ \circ }$ costs a factor of seven in accuracy, and the transmission angle is worst where the input crank is most nearly folded onto the ground link — which is usually also where the error is worst.
+- **A zero residual is not a mechanism.** Branch, order and monotonicity defects are invisible to every classical synthesis procedure, and the only detector is a plot of the whole output curve over the whole input range.
+- **A coupler curve is a sextic**, so no four-bar traces an exact straight line or an exact circle; Watt's and Chebyshev's linkages are approximations good to $1 / 600$ and $1 / 1200$ of the span over the windows quoted, and that is the state of the art in 1878 and in 2024.
+- **Roberts' theorem gives three four-bars for every coupler curve**, and the choice among them is free — which is the one place in synthesis where you may optimise the transmission angle without touching the accuracy.
+- **Burmester's circle-point curve is a one-parameter family, not a unique answer**, and the middle third of it produces hypersensitive mechanisms. Take solutions from the flat outer thirds and use the freedom to place the fixed pivots where the machine has room for them.
+- **Weight the objective by duty, not by index.** A weighted and an unweighted optimisation of the same specification produce different mechanisms, and the difference between their weighted scores is the size of the risk you are running on the part of the cycle nobody measured.
+- **When synthesis says no, it is usually asking for a different mechanism class rather than a better four-bar**: dwell means a cam or a Geneva, exact straight line means a sliding pair or a flexure, a monotonicity defect means a six-bar, and a transmission angle below $20^{ \circ }$ means a different set of angle ranges rather than a different optimiser.
 :::
 
 ## Further reading
