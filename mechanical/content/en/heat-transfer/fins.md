@@ -133,9 +133,9 @@ $$
 R _ { \text{fin+contact} } = { \frac { 1 } { \eta _ { f } h A _ { f } } } + R _ { \text{contact} } = 0 . 0 1 2 7 + 0 . 0 1 9 1 = 0 . 0 3 1 8 \qquad { \frac { 1 } { R } } = { \frac { 1 } { 0 . 0 3 1 8 } } + { \frac { 1 } { 1 / ( 4 5 \times 0 . 0 5 2 4 ) } } = 3 1 . 4 + 2 . 4 = 3 3 . 8
 $$
 $$
-R _ { \text{with joint} } = \mathbf { 0 . 0 2 9 6 \ \mathrm { K / W } } \ \text{per metre} \qquad \text{a factor of } \mathbf { 2 . 4 } \text{ worse, and } \mathbf { 6 0 \ \\% } \text{ of the fins' work gone}
+R _ { \text{with joint} } = \mathbf { 0 . 0 2 9 6 \ \mathrm { K / W } } \ \text{per metre} \qquad \text{a factor of } \mathbf { 2 . 4 } \text{ worse, and } \mathbf { 6 0 \ \% } \text{ of the fins' work gone}
 $$
-**The fin efficiency never changed; the array efficiency never changed; every dimension is exactly as the tables prescribe.** **What killed $6 0 \ \ \%$ of the surface is a film of air $1 0 \ \mu\mathrm { m }$ thick between two machined metals — which is why fins are welded, extruded, millimetre-interfered and pressed-on with a shoulder, and why Kern in 1950 measured attached-fin resistances at all.** **The design rule follows: put the contact area where the current is, not where the metal is. A fin whose joint is $1 \ \\%$ of its surface area may still carry all its heat through a joint $1 0 0$ times smaller than that surface, and the joint then costs $1 0 0$ times more per watt than the convection it feeds.**
+**The fin efficiency never changed; the array efficiency never changed; every dimension is exactly as the tables prescribe.** **What killed $6 0 \ \ \%$ of the surface is a film of air $1 0 \ \mu\mathrm { m }$ thick between two machined metals — which is why fins are welded, extruded, millimetre-interfered and pressed-on with a shoulder, and why Kern in 1950 measured attached-fin resistances at all.** **The design rule follows: put the contact area where the current is, not where the metal is. A fin whose joint is $1 \ \%$ of its surface area may still carry all its heat through a joint $1 0 0$ times smaller than that surface, and the joint then costs $1 0 0$ times more per watt than the convection it feeds.**
 :::
 :::
 
