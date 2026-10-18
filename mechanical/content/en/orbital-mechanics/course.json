@@ -7,11 +7,26 @@
   "order": 230,
   "tagline": "The two-body problem, Kepler's equation, orbital elements, orbit determination, manoeuvres and transfers, rendezvous, interplanetary trajectories, perturbations and attitude dynamics",
   "summary": "Orbital mechanics describes how satellites and spacecraft move under gravity and how to change their orbits with as little propellant as possible. The course develops the two-body problem and conic orbits, position as a function of time, orbital elements and orbit determination, impulsive manoeuvres and transfers, relative motion and rendezvous, interplanetary trajectories, orbital perturbations, and the attitude dynamics and control of spacecraft.",
-  "overview": [],
+  "overview": [
+    "Orbital mechanics is the branch of celestial mechanics that describes the motion of artificial satellites and spacecraft under the influence of gravity and other forces. The course begins with the two-body problem, where Newton's law of gravitation and the conservation of energy and angular momentum lead to conic-section orbits, and develops the full mathematical machinery needed to predict where a satellite will be at any time, how to change its orbit with the least propellant, and how to design missions that visit other planets.",
+    "The course covers the classical orbital elements and their use in describing orbits in three dimensions, orbit determination from observations, impulsive manoeuvres including Hohmann and bi-elliptic transfers, relative motion and rendezvous using the Clohessy-Wiltshire equations, and interplanetary trajectories using the patched conic approximation and gravity assists. The final lessons cover orbital perturbations (J2 oblateness, atmospheric drag, solar radiation pressure) and spacecraft attitude dynamics and control.",
+    "The mathematical tools include Kepler's equation and its numerical solution, the state transition matrix for relative motion, Gauss's planetary equations for perturbation analysis, and Euler's equations for rigid body rotation. Students will learn to calculate delta-v budgets for orbital transfers, design sun-synchronous and frozen orbits, estimate orbital lifetimes under atmospheric drag, and size reaction wheels for attitude control.",
+    "Orbital mechanics is the foundation of satellite mission design, space traffic management and deep space exploration. The course prepares students for graduate study in astrodynamics, careers in spacecraft guidance and control, and work in the space industry where orbital mechanics calculations are performed daily for constellation design, collision avoidance and mission planning."
+  ],
   "prerequisites": [
     "dynamics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Derive the conic-section orbit equation from Newton's law of gravitation and the conservation of energy and angular momentum",
+    "Solve Kepler's equation for elliptic, parabolic and hyperbolic orbits using Newton-Raphson iteration",
+    "Convert between state vectors and classical orbital elements, and propagate orbits using the state transition matrix",
+    "Calculate delta-v requirements for Hohmann transfers, plane changes, phasing manoeuvres and rendezvous",
+    "Apply the Clohessy-Wiltshire equations to design proximity operations and formation flying trajectories",
+    "Design interplanetary trajectories using the patched conic method, hyperbolic excess velocities and gravity assists",
+    "Calculate J2 perturbation effects including nodal regression, apsidal rotation and sun-synchronous orbit design",
+    "Estimate orbital lifetimes under atmospheric drag and size reaction wheels for attitude control",
+    "Apply Euler's equations to analyse torque-free motion, spin stabilization and gravity gradient stabilization"
+  ],
   "chapters": [
     {
       "slug": "two-body-problem",
@@ -56,7 +71,7 @@
     {
       "slug": "relative-motion-rendezvous",
       "title": "Relative motion and rendezvous",
-      "summary": "The Clohessy–Wiltshire equations, and rendezvous and docking manoeuvres.",
+      "summary": "The Clohessy\u2013Wiltshire equations, and rendezvous and docking manoeuvres.",
       "requires": [
         "orbital-mechanics/orbital-manoeuvres"
       ]
@@ -88,7 +103,102 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1619,
+      "title": "Kepler publishes Harmonices Mundi",
+      "detail": "Johannes Kepler publishes his third law of planetary motion, establishing the relationship between orbital period and semi-major axis that bears his name."
+    },
+    {
+      "year": 1687,
+      "title": "Newton publishes Principia",
+      "detail": "Isaac Newton publishes Philosophiae Naturalis Principia Mathematica, deriving Kepler's laws from the inverse-square law of gravitation and laying the foundation for celestial mechanics."
+    },
+    {
+      "year": 1788,
+      "title": "Lagrange publishes Mecanique Analytique",
+      "detail": "Joseph-Louis Lagrange publishes the analytical mechanics formulation, introducing the Lagrangian and the restricted three-body problem with its five libration points."
+    },
+    {
+      "year": 1882,
+      "title": "Darwin publishes satellite perturbation theory",
+      "detail": "George Darwin publishes the theory of the periodical perturbations of satellites, providing the mathematical framework for J2 perturbation analysis."
+    },
+    {
+      "year": 1957,
+      "title": "Sputnik reveals J2 effects",
+      "detail": "The orbit of Sputnik 1 reveals the effects of Earth's oblateness on satellite orbits, confirming J2 perturbation predictions and launching the field of satellite geodesy."
+    },
+    {
+      "year": 1965,
+      "title": "Gemini 6 and 7 perform first orbital rendezvous",
+      "detail": "NASA's Gemini 6 and 7 achieve the first orbital rendezvous, demonstrating the Clohessy-Wiltshire relative motion equations in practice."
+    },
+    {
+      "year": 1977,
+      "title": "Voyager launches on Grand Tour trajectory",
+      "detail": "Voyager 1 and 2 launch on trajectories using rare planetary alignments for gravity assists to visit the outer planets, demonstrating interplanetary trajectory design."
+    },
+    {
+      "year": 1998,
+      "title": "ISS assembly begins",
+      "detail": "The International Space Station assembly begins with a series of orbital rendezvous and docking missions, demonstrating precision relative navigation and control."
+    },
+    {
+      "year": 2021,
+      "title": "James Webb Space Telescope reaches L2",
+      "detail": "The James Webb Space Telescope is inserted into a halo orbit around the Sun-Earth L2 libration point, demonstrating precision station-keeping in the three-body problem."
+    }
+  ],
+  "references": [
+    {
+      "author": "R. Bate, D. D. Mueller and J. E. White",
+      "title": "Fundamentals of Astrodynamics",
+      "year": 2020,
+      "publisher": "Dover"
+    },
+    {
+      "author": "H. Curtis",
+      "title": "Orbital Mechanics for Engineering Students",
+      "year": 2013,
+      "publisher": "Butterworth-Heinemann"
+    },
+    {
+      "author": "G. Vallado",
+      "title": "Fundamentals of Astrodynamics and Applications",
+      "year": 2013,
+      "publisher": "Microcosm Press"
+    },
+    {
+      "author": "J. E. Prussing and B. A. Conway",
+      "title": "Orbital Mechanics",
+      "year": 2012,
+      "publisher": "Oxford University Press"
+    },
+    {
+      "author": "H. Schaub and J. L. Junkins",
+      "title": "Analytical Mechanics of Space Systems",
+      "year": 2006,
+      "publisher": "AIAA"
+    },
+    {
+      "author": "B. Wie",
+      "title": "Space Vehicle Dynamics and Control",
+      "year": 2005,
+      "publisher": "AIAA"
+    },
+    {
+      "author": "V. Szebehely",
+      "title": "Theory of Orbits: The Restricted Problem of Three Bodies",
+      "year": 1967,
+      "publisher": "Academic Press"
+    },
+    {
+      "author": "O. Montenbruck and E. Gill",
+      "title": "Satellite Orbits: Models, Methods, Applications",
+      "year": 2000,
+      "publisher": "Springer"
+    }
+  ],
   "next": []
 }
