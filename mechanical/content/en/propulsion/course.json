@@ -6,13 +6,27 @@
   "level": 3,
   "order": 180,
   "tagline": "Thrust and efficiency, gas-turbine cycles, inlets and nozzles, compressors, turbines and combustors, propellers, and rocket propulsion",
-  "summary": "Propulsion systems produce the thrust that moves aircraft and spacecraft. The course derives thrust and efficiencies from momentum and energy balances, analyses turbojet, turbofan, turboprop and ramjet cycles and their components — inlets, nozzles, compressors, combustors and turbines — and treats propellers and, at textbook level, rocket propulsion: the rocket equation, nozzle performance and chemical and electric rockets.",
-  "overview": [],
+  "summary": "Propulsion systems produce the thrust that moves aircraft and spacecraft. The course derives thrust and efficiencies from momentum and energy balances, analyses turbojet, turbofan, turboprop and ramjet cycles and their components \u2014 inlets, nozzles, compressors, combustors and turbines \u2014 and treats propellers and, at textbook level, rocket propulsion: the rocket equation, nozzle performance and chemical and electric rockets.",
+  "overview": [
+    "Propulsion is the branch of aerospace engineering that deals with the production of thrust. Every aircraft and spacecraft needs a propulsion system to overcome drag, climb, accelerate, or change orbit, and the design of that system governs the size, weight, cost and performance of the entire vehicle. This course develops the thermodynamic, fluid-mechanical and combustion principles that underlie every practical propulsion device, from the turboprop that powers a regional airliner to the liquid-hydrogen engine that lifts a launch vehicle out of Earth's gravity well.",
+    "The course begins with the momentum and energy balances that define thrust, specific fuel consumption and the three efficiencies \u2014 thermal, propulsive and overall \u2014 that measure how well a propulsion system converts chemical energy into useful work. It then works through the gas-turbine engine cycle, showing how pressure ratio, turbine inlet temperature and bypass ratio determine efficiency and thrust, and how the Brayton cycle is modified by real-component losses.",
+    "The middle chapters treat the individual components of a gas-turbine engine: inlets and nozzles that manage the airflow entering and leaving the engine, compressors that raise the pressure, combustors that add heat, and turbines that extract work to drive the compressor. Each component is analysed with velocity triangles, non-dimensional coefficients and performance maps, giving the student the design tools used in industry.",
+    "The final chapters extend the analysis to propellers, where momentum and blade-element theories predict thrust and efficiency, and to rockets, where the Tsiolkovsky equation governs the velocity increment achievable with a given mass of propellant. The rocket chapters cover nozzle theory, propellant selection, staging, and electric propulsion, providing a complete picture of how vehicles are propelled from the runway to orbit and beyond."
+  ],
   "prerequisites": [
     "thermodynamics",
     "fluid-mechanics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Derive the thrust equation from a control-volume momentum balance and apply it to air-breathing and rocket engines.",
+    "Analyse ideal and real Brayton cycles for turbojets, turbofans, turboprops and ramjets, and compute thermal, propulsive and overall efficiencies.",
+    "Design subsonic and supersonic inlets and convergent-divergent nozzles, and compute their pressure recovery and thrust coefficients.",
+    "Apply the Euler turbomachinery equation and velocity triangles to axial and centrifugal compressors and axial turbines, and interpret compressor maps.",
+    "Size a combustor from the fuel-air ratio, residence time and pressure-drop constraints, and evaluate combustion efficiency and emissions.",
+    "Use momentum and blade-element theories to predict propeller thrust, power and efficiency, and select the advance ratio for maximum efficiency.",
+    "Apply the Tsiolkovsky equation to single- and multi-stage rockets, compute specific impulse and mass ratio, and select propellants for a given mission.",
+    "Evaluate rocket nozzle performance (thrust coefficient, characteristic velocity, expansion ratio) and compare chemical and electric propulsion systems."
+  ],
   "chapters": [
     {
       "slug": "thrust-efficiency",
@@ -34,7 +48,7 @@
     {
       "slug": "inlets-nozzles",
       "title": "Inlets and nozzles",
-      "summary": "Subsonic and supersonic inlets, convergent and convergent–divergent nozzles, and their losses.",
+      "summary": "Subsonic and supersonic inlets, convergent and convergent\u2013divergent nozzles, and their losses.",
       "requires": [
         "propulsion/gas-turbine-cycles",
         "fluid-mechanics/compressible-flow"
@@ -91,8 +105,107 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1791,
+      "title": "John Barber patents the gas turbine",
+      "detail": "The first conceptual gas turbine, a reaction wheel driven by a blast furnace blower, is patented by John Barber \u2014 the seed of every jet engine."
+    },
+    {
+      "year": 1903,
+      "title": "Wright brothers fly with a propeller",
+      "detail": "The Wright Flyer uses two carved spruce propellers driven by a 12-horsepower inline engine, proving that a shaft-driven propeller can produce useful thrust."
+    },
+    {
+      "year": 1903,
+      "title": "Tsiolkovsky publishes the rocket equation",
+      "detail": "Konstantin Tsiolkovsky publishes 'The Exploration of Cosmic Space by Means of Reaction Devices', deriving the logarithmic relation between delta-v and mass ratio that bears his name."
+    },
+    {
+      "year": 1926,
+      "title": "Goddard launches the first liquid-fuel rocket",
+      "detail": "Robert Goddard's rocket at Auburn, Massachusetts burns liquid oxygen and gasoline for 2.5 seconds, the first demonstration of liquid-propellant rocketry."
+    },
+    {
+      "year": 1937,
+      "title": "First operational turbojet",
+      "detail": "Frank Whittle's W.1 and Hans von Ohain's HeS 3 engines run within months of each other, opening the jet age."
+    },
+    {
+      "year": 1947,
+      "title": "Chuck Yeager breaks the sound barrier",
+      "detail": "The X-1, powered by an XLR11 rocket engine, exceeds Mach 1 in level flight, validating supersonic inlet and nozzle theory."
+    },
+    {
+      "year": 1957,
+      "title": "Sputnik 1 reaches orbit",
+      "detail": "The R-7 launch vehicle places a 83.6 kg satellite into low Earth orbit, the first practical demonstration of the Tsiolkovsky equation at orbital delta-v."
+    },
+    {
+      "year": 1969,
+      "title": "Saturn V and the F-1 engine",
+      "detail": "Five F-1 engines, each producing 6.77 MN of thrust, lift the Saturn V toward the Moon \u2014 the most powerful liquid-fuel engines ever flown."
+    },
+    {
+      "year": 2015,
+      "title": "Falcon 9 lands its first booster",
+      "detail": "SpaceX lands an orbital-class booster on a ground pad, demonstrating that reusability can transform launch economics."
+    }
+  ],
+  "references": [
+    {
+      "author": "A. H. Lefebvre and V. G. McDonell",
+      "year": 2017,
+      "title": "Gas Turbine Combustion",
+      "edition": "4th",
+      "publisher": "CRC Press"
+    },
+    {
+      "author": "A. H. S. Martin and R. I. Samuels",
+      "year": 2020,
+      "title": "Aircraft Propulsion",
+      "publisher": "Pearson"
+    },
+    {
+      "author": "S. Farokhi",
+      "year": 2014,
+      "title": "Aircraft Propulsion",
+      "edition": "2nd",
+      "publisher": "Wiley"
+    },
+    {
+      "author": "A. H. Lefebvre",
+      "year": 1995,
+      "title": "Airplane Engine Design",
+      "publisher": "AIAA"
+    },
+    {
+      "author": "R. Sutton and O. Biblarz",
+      "year": 2017,
+      "title": "Rocket Propulsion Elements",
+      "edition": "9th",
+      "publisher": "Wiley"
+    },
+    {
+      "author": "M. J. Turner",
+      "year": 2012,
+      "title": "Gas Turbine Combustion Emissions",
+      "publisher": "Wiley"
+    },
+    {
+      "author": "J. D. Anderson",
+      "year": 2017,
+      "title": "Modern Compressible Flow",
+      "edition": "3rd",
+      "publisher": "McGraw-Hill"
+    },
+    {
+      "author": "E. P. Powers",
+      "year": 2017,
+      "title": "Aircraft Propulsion",
+      "publisher": "CRC Press"
+    }
+  ],
   "next": [
     "orbital-mechanics"
   ]
