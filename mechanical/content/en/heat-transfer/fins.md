@@ -113,6 +113,32 @@ $$
 where $h _ { b }$ is the **contact** conductance between the sink base and the housing or the cold plate, typically $3 0 0 0$ to $8 0 0 0\ \mathrm { W / m ^ { 2 } K }$ for a greased, torqued joint and $2 0 0$ to $8 0 0$ for a dry, flat, unmachined one. **Note what the chain does when you add fins: it shrinks the last term and leaves the middle two exactly as they were.** That is the arithmetic behind the most demoralising sentence in thermal engineering — **"the sink you have chosen is only a third of the problem."**
 :::
 
+::: example The joint under the fin {#ex-contact}
+Annular aluminium fins of $2 0 \ \mathrm { m m }$ radial height and $1 \ \mathrm { m m }$ thickness are pressed onto a $2 5 \ \mathrm { m m }$ OD tube at a pitch of $3 \ \mathrm { m m }$ and cooled by forced air at $h = 4 5 \ \mathrm { W / m ^ { 2 } K }$. Take $k = 1 8 0 \ \mathrm { W / m \, K }$ for the fins and a contact conductance of $2 0 0 0 \ \mathrm { W / m ^ { 2 } K }$ (a resistance of $0 . 0 0 0 5 \ \mathrm { m ^ { 2 } K / W }$) for the pressed joint. What is the resistance per metre of tube, with and without that joint?
+
+::: solution
+**Fin efficiency first.** $m = { \sqrt { 2 h / k t } } = { \sqrt { 2 	imes 4 5 / ( 1 8 0 	imes 0 . 0 0 1 ) } } = 2 2 . 4 \ \mathrm { m ^ { - 1 } }$ , and with $r _ { 1 } = 1 2 . 5 \ \mathrm { m m }$ , $r _ { 2 c } = 3 3 \ \mathrm { m m }$:
+$$
+\psi = 1 + 0 . 3 5 \ln \left( { \frac { 3 3 } { 1 2 . 5 } } \right) = 1 . 3 4 \qquad m L _ { c } \psi = 2 2 . 4 \times 0 . 0 2 0 \times 1 . 3 4 = 0 . 6 0 \qquad \eta _ { f } = { \frac { \tanh 0 . 6 0 } { 0 . 6 0 } } = 0 . 8 9 5
+$$
+**Areas per metre of tube** ($3 3 3$ fins per metre):
+$$
+A _ { f } = 3 3 3 \times 2 \pi \left( 0 . 0 3 3 ^ { 2 } - 0 . 0 1 2 5 ^ { 2 } \right) = 1 . 9 5 4 \ \mathrm { m ^ { 2 } } \qquad A _ { b } = \pi \times 0 . 0 2 5 \times ( 1 - 3 3 3 \times 0 . 0 0 1 ) = 0 . 0 5 2 4 \ \mathrm { m ^ { 2 } }
+$$
+$$
+\eta _ { o } = 1 - { \frac { 1 . 9 5 4 } { 2 . 0 0 6 } } ( 1 - 0 . 8 9 5 ) = 0 . 8 9 8 \qquad R _ { \text{array} } = { \frac { 1 } { 0 . 8 9 8 \times 4 5 \times 2 . 0 0 6 } } = \mathbf { 0 . 0 1 2 3 \ \mathrm { K / W } } \ \text{per metre}
+$$
+**Now the joint.** The contact area of one fin is the annulus $2 \pi r _ { 1 } t = 7 . 8 5 \times 1 0 ^ { - 5 } \ \mathrm { m ^ { 2 } }$ , so one fin carries $0 . 0 0 0 5 / 7 . 8 5 \times 1 0 ^ { - 5 } = 6 . 4 \ \mathrm { K / W }$ of contact resistance, and the $3 3 3$ fins in parallel reduce it to $0 . 0 1 9 1 \ \mathrm { K / W }$ per metre of tube:
+$$
+R _ { \text{fin+contact} } = { \frac { 1 } { \eta _ { f } h A _ { f } } } + R _ { \text{contact} } = 0 . 0 1 2 7 + 0 . 0 1 9 1 = 0 . 0 3 1 8 \qquad { \frac { 1 } { R } } = { \frac { 1 } { 0 . 0 3 1 8 } } + { \frac { 1 } { 1 / ( 4 5 \times 0 . 0 5 2 4 ) } } = 3 1 . 4 + 2 . 4 = 3 3 . 8
+$$
+$$
+R _ { \text{with joint} } = \mathbf { 0 . 0 2 9 6 \ \mathrm { K / W } } \ \text{per metre} \qquad \text{a factor of } \mathbf { 2 . 4 } \text{ worse, and } \mathbf { 6 0 \ \\% } \text{ of the fins' work gone}
+$$
+**The fin efficiency never changed; the array efficiency never changed; every dimension is exactly as the tables prescribe.** **What killed $6 0 \ \ \%$ of the surface is a film of air $1 0 \ \mu\mathrm { m }$ thick between two machined metals — which is why fins are welded, extruded, millimetre-interfered and pressed-on with a shoulder, and why Kern in 1950 measured attached-fin resistances at all.** **The design rule follows: put the contact area where the current is, not where the metal is. A fin whose joint is $1 \ \\%$ of its surface area may still carry all its heat through a joint $1 0 0$ times smaller than that surface, and the joint then costs $1 0 0$ times more per watt than the convection it feeds.**
+:::
+:::
+
 ::: example Which of two heat sinks, at the same mass of aluminium {#ex-sink}
 A $6 0\ \mathrm{W}$ device runs from a $1 2 0 \times 1 2 0 \times 6\ \mathrm { m m }$ aluminium base plate ($k = 1 8 0$) with straight fins $1 2 0\ \mathrm{mm}$ long, forced air at $3\ \mathrm { m / s }$ giving $h \approx 4 0$ to $4 2\ \mathrm { W / m ^ { 2 } K }$ depending on how dense the array is. Ambient is $4 5\ \ {} ^ { \circ } \mathrm { C }$; $R _ { j c } = 0 . 3 5$ and the interface adds $0 . 2 5\ \mathrm { K / W }$. Compare (a) $1 2$ fins of $1 . 5\ \mathrm{mm}$ thickness and (b) $1 8$ fins of $1 . 0\ \mathrm{mm}$, both $6 0\ \mathrm{mm}$ tall. **The two arrays contain exactly the same volume of aluminium.**
 

@@ -509,6 +509,7 @@ A large steel forging at $\mathrm { B i } = 4 0$ is quenched. The plant doubles 
 ## What this lesson must leave behind
 
 - **Two numbers rule everything: $\mathrm { B i } = h L _ { c } / k$ decides whether the body has one temperature or a profile, and $\mathrm { F o } = \alpha t / L ^ { 2 }$ decides how far it has got.** Their product is the exponent of the lumped solution, so the whole subject is a function of $\mathrm { F o }$ with $\mathrm { B i }$ as a parameter.
+::: summary
 - **Lumped capacitance is $\tau = \rho c V / ( h A )$ and contains no conductivity.** It is an RC circuit, exactly. Get $A$ right — $L _ { c } = V / A$ counts only the faces that exchange.
 - **The $0 . 1$ criterion is a tolerance, not a law**: it says the internal gradient is $10\ \ \%$ of the driving difference. For a cooling time you may stretch it; for a thermal stress you may not.
 - **The one-term series is valid for $\mathrm { F o } > 0 . 2$ and nowhere else**, because $C _ { 1 } > 1$ and the formula predicts temperatures above the initial one at small $\mathrm { F o }$.
@@ -518,6 +519,8 @@ A large steel forging at $\mathrm { B i } = 4 0$ is quenched. The plant doubles 
 - **A thermal wave damps by $1 / e$ per $\delta = \sqrt { \alpha P / \pi }$ and lags by one radian per $\delta$** — which is why a massive wall delays a summer afternoon by hours and does nothing at all about winter.
 - **Product solutions are exact for intersections of one-dimensional bodies with uniform boundary conditions**, and the answer to "how long in the furnace" is set by the corner, not the centre.
 - **Every formula here assumes $T _ { \infty }$ and $h$ are constants.** A quench tank that warms, a spray that changes regime, or a part that generates its own transformation heat all break the exponential — and the first thing to check is whether the bath has more heat capacity than the part.
+:::
+
 
 ## Further reading
 
