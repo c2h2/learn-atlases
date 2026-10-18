@@ -7,9 +7,25 @@
   "order": 40,
   "tagline": "Bonding and crystal structures, defects and diffusion, mechanical properties and strengthening, phase diagrams and heat treatment, failure, corrosion and materials selection",
   "summary": "The properties of a material follow from its structure, from atomic bonds and crystals up to grains and phases. The course connects the two: crystal structures and defects, diffusion, mechanical behaviour and how metals are strengthened, phase diagrams and the heat treatment of steels, fracture, fatigue, creep and corrosion, the families of engineering materials, and how to select a material for a design.",
-  "overview": [],
+  "overview": [
+    "Materials science is the study of why a material is the way it is, and it rests on one proposition with four terms: properties are set by structure, structure is set by processing, processing is set by thermodynamics and kinetics, and thermodynamics and kinetics are set by bonding. Every lesson in this course is one of those four terms read from both ends.",
+    "The first third is the atom. **Bonding** - ionic, covalent, metallic, molecular - explains at a stroke why diamond is the hardest known solid and graphite a lubricant, why metals conduct and ceramics do not, why polymers stretch and metals do not, and why the elastic modulus of every engineering metal lies between 45 and 210 GPa while the yield strength ranges over five orders of magnitude: the modulus is a bond-stiffness property and the strength is a defect property, and the whole of the middle of this course is the difference between the two. **Structure** - the fourteen Bravais lattices reduced to the three that matter, the packing factors, the interstitial sites, the diffraction condition - supplies the geometry, and X-ray diffraction supplies the proof, which is worth having because the alternative is believing that a piece of iron is the same thing at 20 and at 900 degrees C when it is not. **Defects** are the point: a perfect crystal is a mathematician's object, and every mechanical property worth having comes from vacancies, from substitutional and interstitial solutes, from dislocations and from grain boundaries - and from the fact that all four move, which is what diffusion is and what heat treatment manipulates.",
+    "The middle of the course is mechanics at the scale where it becomes metallurgy. Elastic deformation is the slope of the interatomic potential; plastic deformation is the motion of dislocations, and nothing else, which is why the theoretical shear strength of a perfect lattice is a thousand times the yield strength of real iron and why every strengthening mechanism in engineering - solid solution, grain refinement, precipitation, work hardening - is a device for stopping dislocations and can be written as a stress proportional to a defect spacing to a negative power. **Phase diagrams** then tell you what is stable at equilibrium, and the lever rule and the eutectic are the arithmetic of a microstructure; **transformation diagrams** tell you what you actually get when you do not wait, and the time-temperature-transformation curve, the martensite start temperature and the continuous-cooling diagram are the reason a steel can be water-quenched into a hard metastable structure or furnace-cooled into a soft equilibrium one from the same austenite at the same temperature. **The iron-carbon diagram and the TTT diagram are the two most-used charts in the history of engineering, and the fact that a hundred years of alloy design has not made either of them wrong is the strongest argument for the subject.**",
+    "The last third is the engineer's end of it. **Failure** is treated in three modes: fracture, where Griffith's energy argument and Irwin's stress-intensity factor turn a crack's length into a design variable and make possible the astonishing statement that a structure can be designed to be safe at a crack length rather than at a stress; fatigue, where the S-N curve, the Basquin and Coffin-Manson relations and the Paris law between them account for the ninety per cent of mechanical failures that begin at a stress far below yield; and creep, where diffusion becomes a deformation mechanism and the Arrhenius factor stops being a correction and becomes the answer. **Material families** then surveys the eight great classes - metals, ceramics, glasses, polymers, elastomers, composites, foams, and hybrids - on the Ashby premise that what distinguishes them is not what they are made of but which combination of stiffness, strength, density and cost they occupy. **Corrosion** is electrochemistry, and it is the largest single consumer of the world's steel. And **selection** is the point of all of it: the property chart, the index, and the discipline of writing down the constraints and the objective before you open a catalogue - because the answer to 'what material should this be?' is never a material, it is a formula and a ranking."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Classify a material by its bonding - ionic, covalent, metallic, molecular - and predict from the bond type and the bond energy whether it will be stiff, brittle, conducting, ductile or transparent, and estimate the elastic modulus from the interatomic potential",
+    "Describe the face-centred-cubic, body-centred-cubic and close-packed-hexagonal structures, compute the coordination number, the atomic packing factor, the linear and planar densities and the radius ratio, and explain why the packing factor is 0.74 and not 1",
+    "Apply the Bragg condition to a diffraction pattern, index the peaks of a cubic metal, determine the lattice parameter and the crystal structure from the peak positions, and explain the systematic absences",
+    "Identify the point, line, planar and volume defects in a real material, write the Arrhenius expression for the equilibrium vacancy concentration and for the diffusion coefficient, and solve Fick's first and second laws for a steady-state flux and for a non-steady carburising or doping treatment",
+    "State and apply the Hall-Petch, Taylor, solid-solution and precipitation strengthening relations, compute the critical resolved shear stress and the Schmid factor for a given orientation, and explain why each mechanism contributes a term proportional to a defect spacing to a negative power",
+    "Read a binary phase diagram: identify the phases, apply the lever rule and the tie line, trace an equilibrium and a non-equilibrium cooling path, and recognise a eutectic, a peritectic, a eutectoid and a monotectic and state what each looks like under a microscope",
+    "Use a time-temperature-transformation and a continuous-cooling-transformation diagram to predict the microstructure and hardness of a steel given a cooling path, compute the martensite start and finish temperatures, and explain the difference between hardenability and hardness",
+    "Compute the stress-intensity factor for a through-crack, edge-crack and surface-crack geometry, apply the fracture toughness and the critical-crack-length criterion, and use the Paris law to predict a fatigue life between two crack lengths",
+    "Construct and interpret an S-N diagram, apply the Basquin, Goodman and Coffin-Manson relations and the Miner sum, and explain the endurance limit, the fatigue strength at $10^{7}$ cycles and the meaning of a stress ratio",
+    "Select a material for a stated duty by translating the requirement into a constraint and an objective, deriving the performance index, reading the property chart, and stating the screening step, the ranking step and the attributes that no chart can rank"
+  ],
   "chapters": [
     {
       "slug": "bonding-structure",
@@ -92,8 +108,137 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1863,
+      "title": "Sorby puts steel under a microscope",
+      "detail": "Henry Clifton Sorby, a Sheffield steelmaker's son who had made a fortune in cutlery and was looking for a hobby, ground a slice of steel thin enough to see through - or, failing that, polished it and looked at it in reflected light - and found that the fracture surface of a hard piece of steel was covered in tiny plates of a second phase. His paper of 1864, 'On the microscopical appearance of fractured iron and steel', founded metallography, and within twenty years every iron and steel laboratory in the world had a microscope and a set of standard photomicrographs. **Sorby's method is unchanged: cut, mount, grind, polish, etch, look. His discovery is unchanged: what a metal does is decided by what you can see in it, and what you can see in it is a record of everything that has been done to it. Every heat-treatment specification, every failure investigation and every weld inspection in the world is Sorby's paper with better optics.**",
+      "people": [
+        "Henry Clifton Sorby"
+      ]
+    },
+    {
+      "year": 1897,
+      "title": "Roberts-Austen, and the iron-carbon diagram",
+      "detail": "William Chandler Roberts-Austen, professor of metallurgy at the Royal School of Mines, adapted Le Chatelier's recording optical pyrometer and thermally analysed a series of iron-carbon alloys of known composition, cooling each one at a steady rate and recording the arrest temperatures at which a phase change released latent heat. Plotting the arrests against carbon content gave the iron-iron-carbide diagram, published in the decade either side of 1900 and completed in its modern form by the work of the American Steel Association's committees in the 1920s and 1930s. **It is the most used chart in engineering. Every steel - every car body, rail, crankshaft, bearing, bolt, ship's plate and pressure vessel - is specified by a composition on that diagram and a cooling path through it, and the fact that Roberts-Austen drew it from cooling curves recorded on a drum of smoked paper, with a pyrometer he built himself, is the reason the diagram's eutectoid composition sat at 0.85 per cent carbon for fifty years before someone weighed it properly.**",
+      "people": [
+        "William Chandler Roberts-Austen",
+        "Floris Osmond",
+        "Jean Werth"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "Wilm, and the strength that appears while you wait",
+      "detail": "Alfred Wilm, a metallurgist at the Dürener Metallwerke outside Cologne, found that a copper-bearing aluminium alloy containing a little magnesium could be quenched from a red heat, cold-rolled, and then left on a shelf - and that it hardened over some days at room temperature, or in a few hours in a warm oven, reaching a strength three times that of the pure metal. The alloy was Duralumin, from Düren; it was in Zeppelin airframes by 1911 and in every stressed-aircraft structure until the 1950s. **Age hardening is the mechanism this course is built around: a supersaturated solid solution, held below the solvus, throws out a dispersion of coherent precipitates so fine and so closely spaced that a dislocation cannot cut them and must bow round them, and the resulting strength is inversely proportional to their spacing. Every high-strength aluminium, every maraging steel, every nickel superalloy turbine blade and every copper beryllium spring is Wilm's shelf.**",
+      "people": [
+        "Alfred Wilm",
+        "Adolf Neufeld"
+      ]
+    },
+    {
+      "year": 1913,
+      "title": "Bragg, and the proof that metals are crystals",
+      "detail": "William Lawrence Bragg, aged twenty-two, read a paper to the Manchester Literary and Philosophical Society in November 1913 giving the condition for the reflection of X-rays from a crystal plane - $n\\lambda = 2 d \\sin\\theta$ - and his father William Henry Bragg built the spectrometer that used it. Within three years the method had determined the structures of sodium chloride, diamond, quartz and the sulphides, and had shown - the result that matters to this course - that a metal that has been cast, rolled, forged, machined and filed is nevertheless built of blocks of a few tens of micrometres across, each one a perfect lattice, each differently oriented from its neighbour. **The lattice is the reason the modulus is a constant of the material; the grain boundary is the reason the yield strength is not. That single fact, established by a father and son with an X-ray tube and a photographic plate in the four years before the First World War, organises everything in the middle of this book.**",
+      "people": [
+        "William Lawrence Bragg",
+        "William Henry Bragg",
+        "Max von Laue"
+      ]
+    },
+    {
+      "year": 1920,
+      "title": "Griffith, and the reason glass is weak",
+      "detail": "Alan Arnold Griffith, a British aeronautical inspector working at the Royal Aircraft Factory in Farnborough with no post, no laboratory and no salary, published in 1920 and 1921 a paper on the rupture of solids which explained why the tensile strength of glass is a hundred times smaller than the theoretical cohesive strength calculated from its surface energy. The answer was that glass contains cracks, that the stress at the tip of a sharp crack is many times the applied stress, and - the part that took thirty years to be accepted - that a crack will extend when the elastic energy it releases exceeds the surface energy it creates, which gives a critical stress proportional to the square root of the inverse crack length. **Griffith's paper was ignored, then rediscovered by Orowan and Polanyi in 1920-21, then ignored again, then made the foundation of a design discipline by G. R. Irwin at the Naval Research Laboratory between 1950 and 1958 in response to the brittle fracturing of twenty thousand Liberty ships. The chain from a neglected paper in the Philosophical Magazine to a fracture-mechanics requirement in every airworthiness code is the best argument in engineering science for the proposition that a good idea is worth more than a well-connected one.**",
+      "people": [
+        "Alan Arnold Griffith",
+        "Geoffrey Ingram Taylor",
+        "Egon Orowan",
+        "George Irwin"
+      ]
+    },
+    {
+      "year": 1934,
+      "title": "The dislocation, invented three times in one year",
+      "detail": "In the same volume of Nature in 1934 - and in a Zeitschrift fur Physik paper of the same year - Geoffrey Ingram Taylor, Egon Orowan and Michael Polanyi each proposed, independently and from a different direction, that plastic flow in a crystal is the motion of a line defect: an extra half-plane of atoms whose core can be walked through the lattice by the breaking of one bond at a time, so that the stress required is a thousand times smaller than the stress required to slide a whole plane at once. Taylor's estimate of the dislocation density in an annealed metal, made from the difference between the observed and theoretical strengths and from the stored energy of cold work, was within an order of magnitude of the value measured by transmission electron microscopy twenty years later. **The dislocation is the reason this course has to be about defects rather than about crystals. Every strengthening mechanism in engineering is a way of stopping one, every creep mechanism is a way of moving one past an obstacle it cannot cut, and every fatigue crack begins where dislocations have piled up against a grain boundary and made an extrusion. That three men of three different temperaments - a British theoretical physicist, a German-Austrian physicist in Bristol, and a Hungarian chemist in Berlin - arrived at it in the same twelve months is the best-known example in science of an idea whose time had come.**",
+      "people": [
+        "Geoffrey Ingram Taylor",
+        "Egon Orowan",
+        "Michael Polanyi"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "Hall and Petch, and the strength of a grain boundary",
+      "detail": "Edward O. Hall, a young physicist at the Massachusetts Institute of Technology working on the yield point of mild steel, and Norman J. Petch, a Canadian working on the fracture of polycrystalline alpha-manganese at the Royal Arsenal, found independently in 1951 and 1953 that the yield strength of a polycrystalline metal varies as the inverse square root of the grain diameter. The relation is one of the few quantitative laws in the subject, it holds over five orders of magnitude of grain size from coarse annealed iron to electrodeposited nanocrystalline nickel, and its physical basis - a dislocation pile-up against a boundary must build enough stress to activate a source in the next grain - and its physical basis - a dislocation pile-up against a boundary must build enough stress at its head to activate a source in the neighbouring grain - was supplied by Li and by Cottrell. **The engineering consequence is the only grain-refining treatment in the world that improves strength and toughness at the same time, which is why every steel specification carries a grain-size number and why normalising, controlled rolling and microalloying are in the business of making grains small rather than making them something else.**",
+      "people": [
+        "Edward O. Hall",
+        "Norman J. Petch",
+        "J. C. M. Li",
+        "Adrian Cottrell"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Ashby, and the material property chart",
+      "detail": "Michael Ashby, who had spent twenty years building the deformation-mechanism maps of metals and the physics of materials at Cambridge, turned in the 1980s to a different question: given that there are perhaps two hundred thousand engineering materials and that a designer needs to eliminate all but three of them in an afternoon, what is the least information a material can be reduced to? The answer was the property chart - log modulus against log density, log strength against log toughness, and so on, on axes chosen so that a performance index becomes a family of parallel straight lines - together with the discipline of writing the requirement as a constraint and an objective before choosing anything. **The method is old - the idea of a stiffness-limited minimum-mass panel goes back to the airship designers of the 1920s and the specific-modulus criterion to the jet engine - but it had never been made systematic, teachable or checkable. Its real content is the observation that a material selection problem has a formula, that the formula can be derived in three lines from the same beam equation a first-year solves, and that the ranking it produces is robust to the errors in the numbers, which is why it survives contact with a real design office.**",
+      "people": [
+        "Michael Ashby",
+        "David Jones",
+        "Hugh Shercliff"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "author": "W. D. Callister and D. G. Rethwisch",
+      "title": "Materials Science and Engineering: An Introduction",
+      "publisher": "Wiley, 11th edition",
+      "year": 2023
+    },
+    {
+      "author": "G. E. Dieter",
+      "title": "Mechanical Metallurgy",
+      "publisher": "McGraw-Hill, SI edition",
+      "year": 1988
+    },
+    {
+      "author": "T. H. Courtney",
+      "title": "Mechanical Behavior of Materials",
+      "publisher": "Waveland Press, 2nd edition",
+      "year": 2005
+    },
+    {
+      "author": "D. A. Porter, K. E. Easterling and M. Sherif",
+      "title": "Phase Transformations in Metals and Alloys",
+      "publisher": "CRC Press, 3rd edition",
+      "year": 2009
+    },
+    {
+      "author": "D. Hull and D. J. Bacon",
+      "title": "Introduction to Dislocations",
+      "publisher": "Butterworth-Heinemann, 5th edition",
+      "year": 2011
+    },
+    {
+      "author": "S. Suresh",
+      "title": "Fatigue of Materials",
+      "publisher": "Cambridge University Press, 2nd edition",
+      "year": 1998
+    },
+    {
+      "author": "M. F. Ashby and H. D. Jones",
+      "title": "Engineering Materials 1: An Introduction to Properties, Applications and Deformation",
+      "publisher": "Butterworth-Heinemann, 5th edition",
+      "year": 2016
+    },
+    {
+      "author": "R. Winston Revie",
+      "title": "Uhlig's Corrosion Handbook",
+      "publisher": "Wiley, 4th edition",
+      "year": 2018
+    }
+  ],
   "next": [
     "mechanics-of-materials",
     "manufacturing"
