@@ -1,11 +1,3 @@
----
-id: heat-transfer/fins
-title: "Extended Surfaces and Two-Dimensional Conduction"
-summary: "The fin equation, efficiency and effectiveness, why a 60 per cent efficient fin is still an excellent idea, the optimum spacing of a fin array, and the flux plot and shape-factor methods for two-dimensional conduction."
-translated: false
-tags: ["fin efficiency", "fin effectiveness", "annular fin", "flux plot", "spreading resistance", "heat sink"]
----
-
 A fin is a wall that has been given more area, and the whole of fin theory is the accounting of what that area is really worth. The idea is obvious and the arithmetic is easy; what is not obvious is that **the added area is never fully effective**, because the heat has to travel along the fin to reach it, and the temperature at the end of the fin is lower than the temperature at its base, so the far end works less hard than the near end. The single number that measures this is the **fin efficiency**, the ratio of the heat the fin actually throws to the heat it would throw if the whole fin were at the base temperature, and it is the most misread quantity in thermal engineering.
 
 The reason fins work at all is a comparison of two resistances. Conduction along a fin of cross-section $A_c$ and perimeter $P$ offers $L ^ { 2 } / ( k A _ { c } )$; convection from its surface offers $1 / ( h P L )$. Their ratio, squared, is the parameter that governs everything:

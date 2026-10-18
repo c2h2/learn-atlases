@@ -1,16 +1,3 @@
----
-title: "Thermal radiation: heat without a medium"
-slug: "radiation"
-overview: "Radiation is the only heat transfer that needs no material: it is electromagnetic, it travels in straight lines, it goes as the fourth power of absolute temperature, and it is selective in wavelength. This lesson builds the machinery engineers actually use — blackbody emission, Planck and Wien and Stefan-Boltzmann, emissivity and Kirchhoff's law, view factors and the network method, grey enclosures and radiation shields, and the band radiation of combustion gases — and the two problems those tools exist to solve: how much heat a hot part loses to a cold room, and how to stop it."
-objectives:
-  - "State and apply Planck's law, Wien's displacement law and the Stefan-Boltzmann law, and use blackbody band fractions to decide what wavelength range matters at a given temperature"
-  - "Distinguish emissivity, absorptivity, reflectivity and transmissivity, apply Kirchhoff's law correctly, and explain why a solar absorber can have $\alpha = 0.95$ and $\varepsilon = 0.10$ at the same time"
-  - "Compute view factors from the definition and from reciprocity, summation, symmetry and the crossed-strings rule, and say when the view factor, not the surface, is the limiting resistance"
-  - "Set up and solve two- and three-surface grey enclosures with the electrical-network analogy, including radiation shields and the small-object-in-a-large-enclosure case"
-  - "Estimate gas radiation with mean beam lengths and band emissivities, and explain why carbon dioxide and water vapour radiate while nitrogen and oxygen do not"
-  - "Solve the coupled radiation-convection problems that appear in practice: thermocouple error, hot pipework in a cold plant room, insulation design, and spacecraft thermal control"
----
-
 Put a red-hot forging on a steel bench and the bench scorches before the forging cools. No material connects them, the gap is a few micrometres of nearly still air, and the heat arrives at a rate proportional to the *fourth power* of the forging's absolute temperature — a law with no analogue anywhere else in this curriculum. Radiation is not a correction to conduction and convection; it is a different mechanism with different rules, and it is the mechanism that carries the Sun's energy across a hundred and fifty million kilometres of nothing, sets the temperature of every spacecraft, dominates every flame, every furnace and every glass of hot tea, and decides whether your engine bay runs twenty degrees too hot.
 
 The engineering difficulty is that radiation is *selective* and *directional*. A surface does not have one emissivity; it has a different one for every wavelength and every direction, and the exchange between two surfaces depends on the geometry that joins them. The machinery that makes this tractable — the blackbody, the grey body, the view factor, and the network analogy — is one of the most elegant pieces of applied physics in the subject, and it is all built on a formula Max Planck wrote in 1900 to solve a problem nobody else could, in the course of which he invented quantum mechanics.

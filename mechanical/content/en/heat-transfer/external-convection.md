@@ -1,11 +1,3 @@
----
-id: heat-transfer/external-convection
-title: "External Convection"
-summary: "Forced flow over flat plates, cylinders and spheres: the Nusselt number as a dimensionless wall gradient, the Prandtl number, the friction analogy, and the correlations that follow."
-translated: false
-tags: ["Nusselt number", "Reynolds number", "Prandtl number", "flat plate", "cross-flow", "Colburn analogy"]
----
-
 Every convection coefficient in engineering is a number that somebody earned by solving the boundary-layer equations, and the way to carry them is to remember how they were made. **Convection is conduction with a boundary condition you had to solve for**: the heat crosses the wall by molecular diffusion, exactly as in a solid, and the entire content of a convection correlation is the size of the gradient the flow happens to set up at the wall. Write it out and the whole subject organises itself:
 $$
 h = - { \frac { k _ { f } } { T _ { w } - T _ { \infty } } } \left( { \frac { \partial T } { \partial n } } \right) _ { w } \qquad \Longleftrightarrow \qquad \mathrm { N u } = { \frac { h L } { k _ { f } } } = - \, { \frac { \left( \partial T / \partial n \right ) _ { w } } { \left( T _ { w } - T _ { \infty } \right ) / L } }

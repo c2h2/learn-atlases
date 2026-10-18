@@ -1,11 +1,3 @@
----
-id: heat-transfer/steady-conduction
-title: "Steady Conduction"
-summary: "The heat equation from a shell balance, one-dimensional walls, cylinders and spheres as a resistance network, uniform generation, the critical radius of insulation, and the shape factors that turn three-dimensional puzzles into arithmetic."
-translated: false
-tags: ["heat equation", "thermal resistance", "critical radius", "shape factor", "heat generation", "composite wall"]
----
-
 Steady conduction is the case in which nothing changes with time, so the heat that enters a body leaves it and the temperature field is a solution of a purely geometric problem. That single simplification is worth an enormous amount: it converts a partial differential equation with an initial condition into Laplace's equation with boundary conditions, it makes the temperature field in a composite wall as computable as the current in a resistor network, and it means that **for a very large class of real engineering — every wall, every lagged pipe, every heat sink base, every building envelope in winter — the answer is a sum of reciprocals.**
 
 The resistance analogy is not a metaphor and it is not an approximation. In one dimension, with constant conductivity and no generation, the heat rate through a plane wall, a cylindrical shell and a spherical shell each take the form "driving temperature difference divided by a resistance," the resistances add in series exactly as they do in a circuit, and parallel paths add as conductances. **The analogy fails in exactly two situations, and both are worth knowing by name: when conductivity depends strongly on temperature (a furnace lining of carbon or a cryogenic one of aluminium, where $k$ can vary by an order of magnitude across the wall), and when the paths are not one-dimensional (a bolt through insulation, a bracket through a cold wall), where the two- and three-dimensional spreading has to be handled by shape factors or by numerical solution.**

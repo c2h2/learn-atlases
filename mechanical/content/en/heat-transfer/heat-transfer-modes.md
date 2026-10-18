@@ -1,11 +1,3 @@
----
-id: heat-transfer/heat-transfer-modes
-title: "Modes of Heat Transfer"
-summary: "Conduction, convection and radiation, their three rate equations, the surface energy balance that joins them, and the properties \u2014 conductivity, diffusivity and effusivity \u2014 that decide which one you are fighting."
-translated: false
-tags: ["Fourier law", "Newton cooling", "Stefan-Boltzmann", "surface energy balance", "effusivity", "contact resistance"]
----
-
 Thermodynamics tells you how much heat must move for a process to happen. It is silent about how fast, and the rate is the whole of the engineering: the same $60\ \mathrm{W}$ of chip loss that a $200\ \mathrm{mm}$ finned block carries with a $17\ \mathrm{K}$ rise will, on a bare board, produce a temperature rise that vaporises the solder. Heat transfer is the study of the three mechanisms by which thermal energy crosses a boundary, of the rate equation each of them obeys, and of the arithmetic of putting them in series and in parallel.
 
 The three mechanisms are not three versions of one thing. **Conduction** is diffusion of energy through a stationary medium by molecular and electronic motion, and its rate is proportional to a temperature *gradient*. **Convection** is conduction plus bulk motion, and its rate is proportional to a temperature *difference* across a boundary layer whose thickness the flow happens to have produced. **Radiation** is electromagnetic emission, requires no medium at all, is proportional to the difference of the **fourth powers** of absolute temperature, and can go from cold to hot as easily as hot to cold, which is why a room at $21\ {}^{\circ}\mathrm{C}$ still receives heat from a wall at $15\ {}^{\circ}\mathrm{C}$ and why the net exchange is what matters.

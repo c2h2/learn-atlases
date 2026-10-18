@@ -1,11 +1,3 @@
----
-id: heat-transfer/internal-convection
-title: "Internal Convection"
-summary: "Flow inside ducts: the mean temperature and why it is the only temperature you can measure, entry lengths, the laminar Graetz problem, the turbulent correlations of Dittus–Boelter and Gnielinski, and the pumping-power bargain that sizes every tube."
-translated: false
-tags: ["Dittus–Boelter", "Gnielinski", "Graetz problem", "mean temperature", "entry length", "hydraulic diameter", "pumping power"]
----
-
 A tube is the most common heat-exchanger element ever invented, and it has one property no flat plate has: **the fluid that leaves the tube has remembered everything that happened to it.** Over a flat plate the free stream is infinite, unchanging and forgetful; inside a duct the same molecules that entered at the inlet are still in the duct, absorbing heat, thickening boundary layers, and dragging the whole thermal field along with them. **Internal convection is therefore a problem in bookkeeping — an energy balance on the fluid itself, a length over which the wall's influence reaches, and a correlation that says how well mixed the flow is.** Get those three things straight and every tube-side calculation in this course reduces to arithmetic.
 
 The bookkeeping starts with a temperature you cannot measure with a thermometer. **The mean (bulk, mixing-cup) temperature $T _ { m } ( x )$ is defined so that $\dot { m } c _ { p } T _ { m }$ is the thermal energy flux carried across a section, and it is the temperature a cup placed at that section would collect — not the area-average of the profile, because fast fluid near the axis carries more energy per second than slow fluid at the wall.** **Every internal-flow correlation is evaluated at $T _ { m }$, every wall-to-fluid temperature difference is $T _ { s } - T _ { m }$, and the governing equation of the whole subject is one line: $\mathrm { d } T _ { m } / \mathrm { d } x = q _ { s } ^ { \prime } / ( \dot { m } c _ { p } )$ — the mean temperature rises at the rate the wall feeds it, divided by the thermal capacity rate of the stream.** Everything else in this lesson is commentary on that line: what $h$ is when you try to use it, and what the wall condition does to the answer.

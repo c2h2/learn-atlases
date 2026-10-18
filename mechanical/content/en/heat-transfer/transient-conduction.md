@@ -1,11 +1,3 @@
----
-id: heat-transfer/transient-conduction
-title: "Transient Conduction"
-summary: "The lumped-capacitance method, the Biot and Fourier numbers, one-term series solutions for slabs, cylinders and spheres, and the semi-infinite solid."
-translated: false
-tags: ["lumped capacitance", "Biot number", "Fourier number", "semi-infinite solid", "thermal shock", "thermal penetration"]
----
-
 Steady conduction asks where the heat is going; transient conduction asks **how long it takes to get there**, and the answer turns out to depend on a different material property than the one the steady problem uses. A steady temperature field cares only about $k$. A changing one cares about $k$ and about how much heat the material has to absorb on the way, $\rho c$: the ratio
 $$
 \alpha = { \frac { k } { \rho c } } \qquad \left[ \mathrm { m ^ { 2 } / s } \right]

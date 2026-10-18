@@ -1,11 +1,3 @@
----
-id: mechanisms/gears
-title: "Spur, Helical and Bevel Gears"
-summary: "The law of gearing, why the involute won, minimum teeth and interference, contact ratio, bending and pitting strength, helical geometry and how to choose a gear."
-translated: false
-tags: ["involute", "pressure angle", "contact ratio", "Lewis bending", "pitting", "helical gears"]
----
-
 ::: warning The gear is the only positive-drive return mechanism
 A cam can push and cannot pull, and everything in [[mechanisms/cams]] is an argument about what happens when that asymmetry is pushed hard enough. A gear has no such problem: **its teeth are form-closed in both directions**, so a gear pair transmits torque through a reversal, through a stall, through an oscillation, with no spring, no gravity and no second mechanism holding the contact. That is the whole reason the gear is the most widely used machine element in existence and the reason its failure — not a broken cam, but a spalled tooth flank or a sheared tooth root — takes a machine out of service just as completely.
 

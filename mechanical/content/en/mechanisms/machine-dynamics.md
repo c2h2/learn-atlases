@@ -1,11 +1,3 @@
----
-id: mechanisms/machine-dynamics
-title: "Machine Dynamics: Flywheels and Balancing"
-summary: "Equivalent inertia and torque, the turning-moment diagram, flywheel sizing and what a flywheel cannot do, two-plane balancing, and why a four-cylinder engine shakes at twice crankshaft speed."
-translated: false
-tags: ["flywheel", "balancing", "equivalent inertia", "shaking force", "primary and secondary", "ISO 1940"]
----
-
 ::: warning The torque is not the power divided by the speed
 Every previous lesson in this course has computed accelerations from a given motion. This lesson computes the motion that a given torque produces — and the first thing you discover is that the answer is not what the nameplate says.
 

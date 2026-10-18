@@ -1,11 +1,3 @@
----
-id: mechanisms/gear-trains
-title: "Gear Trains, Epicyclics and Planetary Gears"
-summary: "Train value and integer arithmetic, hunting tooth counts, the tabular method for epicyclics, torque split, recirculating power, and the three conditions that decide whether a planetary can be assembled at all."
-translated: false
-tags: ["gear trains", "epicyclic", "planetary", "Willis equation", "load sharing", "recirculating power"]
----
-
 ::: warning The ratio is exact. Everything else is approximate.
 A belt drive's ratio drifts with slip, a chain's oscillates by $\pm 2\%$ at the chordal pitch every link, and a friction drive's depends on the load. **A gear train's ratio is an exact ratio of two integers, and it is exact at every instant, not on average.** That single property is why every machine that must know where something is — a clock, a dividing head, a lead screw, a robot wrist, an aircraft control unit — is geared rather than belted, and it is also the source of the subject's central frustration:
 

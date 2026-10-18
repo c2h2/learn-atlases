@@ -1,11 +1,3 @@
----
-id: mechanisms/cams
-title: "Cam Design"
-summary: "Displacement diagrams, the continuity hierarchy, pressure angle, undercutting, contact stress and valve float: how a cam is actually sized rather than drawn."
-translated: false
-tags: ["cams", "pressure angle", "undercutting", "cam float", "Hertz contact", "motion laws"]
----
-
 ::: warning The mechanism that does exactly what you ask
 A four-bar gives you a curve and you find out afterwards what it is. A cam gives you the curve you specify, which is why it is the mechanism of choice when the motion is the requirement rather than the means of achieving it — the valve train, the printing cylinder, the knitting machine, the assembly index. That freedom has a price, and it is not paid in design time but in **force**. Every millimetre of the profile you drew so freely is a surface that must transmit a Hertzian contact pressure of several hundred megapascals through a film of oil a tenth the thickness of a human hair, at a sliding speed that changes sign twice per lift, with a follower that the cam is only allowed to push. **A cam is a geometry problem wrapped around a contact-mechanics problem wrapped around a vibration problem, and the geometry is the easy third.**
 :::

@@ -1,11 +1,3 @@
----
-id: mechanisms/linkage-synthesis
-title: "Linkage Synthesis"
-summary: "Given the motion you want, find the mechanism that makes it: precision points, Chebyshev spacing, Freudenstein's linear system, Burmester's curves, and the straight-line mechanisms."
-translated: false
-tags: ["mechanisms", "synthesis", "precision points", "Chebyshev", "Burmester", "coupler curve"]
----
-
 ::: warning Analysis versus synthesis
 Everything so far in this course has been **analysis**: given the links, find the position, the velocity, the acceleration. Synthesis runs the other way, and it is a different kind of problem. It is usually under-determined (many mechanisms do the job), frequently over-determined (too many requirements for the mechanism to satisfy exactly), and almost never has a unique answer. What follows is the standard set of tools for turning a motion specification into link lengths — together with an honest account of how often they leave you with a mechanism that is geometrically valid and completely useless.
 :::

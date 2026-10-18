@@ -1,11 +1,3 @@
----
-id: heat-transfer/natural-convection
-title: "Natural Convection"
-summary: "Flow that the heat makes: buoyancy as a body force, the Grashof and Rayleigh numbers, the vertical plate and its many orientations, enclosures that have nowhere to go, and the spacing optimum that sizes every passive heat sink."
-translated: false
-tags: ["natural convection", "Grashof number", "Rayleigh number", "buoyancy", "enclosure", "passive cooling"]
----
-
 Take the fan away and the fluid still moves, because the fluid that has been warmed is lighter than the fluid that is coming to replace it. **Natural convection is the same boundary-layer physics as forced convection with the pressure gradient supplied by gravity and the velocity no longer known in advance** — and that single change turns a problem with one control knob (the speed) into a problem in which the heat transfer, the flow rate and the temperature difference are all determined together. **The velocity is not an input; it is part of the answer.**
 
 The consequences are worth stating before any equation. **For a laminar thermal boundary layer the coefficient turns out to be almost independent of size** — $h \propto L ^ { - 1 / 4 }$ on a vertical plate, against $L ^ { - 1 / 2 }$ for a forced laminar layer — **which is why a natural-convection heat sink can be scaled up almost for free and why a small model in a laboratory tells you so little about the full-size object it represents.** **The coefficient depends on the temperature difference as $\Delta T ^ { 1 / 4 }$ , so the heat flux goes as $\Delta T ^ { 5 / 4 }$ : doubling the allowed temperature rise more than doubles the cooling, and the "thermal resistance" of a natural-convection part is not a constant but a curve.** **And the flow is slow — centimetres per second, not metres — so it is easily destroyed by a draught, by the fan in the next box, or by the motion of the vehicle the box is in, which is why every natural-convection calculation has to be accompanied by the question "and is there really no wind?"**
