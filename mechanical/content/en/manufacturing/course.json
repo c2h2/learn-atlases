@@ -7,11 +7,25 @@
   "order": 90,
   "tagline": "Process selection, casting, bulk and sheet-metal forming, machining, joining, polymer and composite processing, additive manufacturing, metrology and quality",
   "summary": "Every design has to be made, and how it is made shapes what it can be. The course surveys the main manufacturing processes — casting, forging, rolling and sheet forming, machining, welding and other joining methods, polymer and composite processing and additive manufacturing — with the mechanics and materials science behind them, and closes with measurement, quality control and automation.",
-  "overview": [],
+  "overview": [
+    "Every design has to be made, and how it is made shapes what it can be. A turbine blade that is cast, a bracket that is machined from billet, a housing that is welded from plate, and a bracket that is printed from powder are four different parts that happen to share a nominal geometry: they have different microstructures, different residual stresses, different surface finishes, different anisotropies, and different costs. The manufacturing process is not a downstream detail that turns a CAD model into metal; it is the decision that determines what the part is, what it can carry, and what it costs to make. This course is about that decision and the physics behind it.",
+    "The course is organised by the way material is processed, not by the material itself. Casting and solidification (lessons 2–3) start with liquid metal and a mould, and the physics is heat transfer, nucleation, fluid flow in the gating system, and the shrinkage that makes a riser necessary. Bulk and sheet forming (lessons 3–4) start with solid metal and a die, and the physics is plasticity, friction, the yield criterion, and the forming limit diagram that tells you when the sheet will tear. Machining (lesson 5) starts with a solid block and a cutting edge, and the physics is shear-plane mechanics, the Taylor tool-life equation, and the economics of cutting speed. Joining (lesson 6) starts with two pieces and a heat source, and the physics is the thermal cycle, the heat-affected zone, the carbon equivalent, and the fatigue categories that do not care what grade of steel you paid for.",
+    "Polymer and composite processing (lesson 7) introduces a different class of materials with a different physics: non-Newtonian melt rheology, the cooling square law, the cure kinetics of thermosets, and Darcy flow in a fibre preform. Additive manufacturing (lesson 8) is the newest family and the one that breaks every rule in the preceding seven lessons: the part is built layer by layer, the thermal history is a million micro-welds, the residual stress is at yield before the part leaves the plate, and the properties are a process variable, not a material constant. Metrology and quality (lesson 9) closes the loop: the tolerance on the drawing is a statement about a measurement that has not been made yet, the measurement has an uncertainty, and the process has a distribution. The control of geometric error — from the gauge block to the CMM to the control chart to the capability index — is what makes interchangeable manufacturing possible.",
+    "The thread that runs through all nine lessons is the relationship between process physics and engineering economics. A process that produces a part to ±0.01 mm is useless if it takes 40 hours and costs £50 000; a process that costs £5 per part is useless if it can only hold ±0.5 mm. The process-selection lesson (lesson 1) frames the trade-off, and every subsequent lesson quantifies it: Chvorinov's rule tells you how thick a casting can be before it freezes, the Taylor equation tells you how fast you can cut before the tool wears, the cooling square law tells you how thick a moulding can be before the cycle time kills the economics, and the break-even formula tells you at what volume the fixture is paid for. The engineer who understands both the physics and the economics can choose the process; the engineer who understands only one of them can only follow a rule.",
+    "The course assumes a working knowledge of materials science (phase diagrams, dislocations, phase transformations, mechanical properties) and of the mechanics of materials (yield criteria, stress-strain behaviour, fracture). The mathematics is at the level of a second-year engineering student: differential equations for heat transfer and solidification, algebra and geometry for gating and riser design, and statistics for process capability. The physics is not hard; the difficulty is in holding twenty processes, their design rules, their failure modes, and their cost structures in your head at the same time and knowing which one to reach for when the drawing lands on your desk."
+  ],
   "prerequisites": [
     "materials-science"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Select a manufacturing process for a given part geometry, material, tolerance, surface finish, and production volume, and justify the selection against at least two alternatives using cost, capability, and risk arguments.",
+    "Design a casting system — gating, feeding, and risering — using Chvorinov's rule, fluid-flow constraints, and solidification principles, and predict the likely defects (shrinkage, porosity, misrun, hot tearing) from the geometry and the alloy.",
+    "Calculate the forces, power, and number of passes required for bulk forming (rolling, forging, extrusion, drawing) and sheet forming (bending, deep drawing, stretch forming), and assess formability using the forming limit diagram and the Considère criterion.",
+    "Apply the mechanics of chip formation (Merchant's circle, shear-plane model), the Taylor tool-life equation, and the surface-finish model to select cutting parameters for turning, milling, drilling, and grinding, and to optimise for minimum cost or maximum production rate.",
+    "Evaluate the weldability of a steel from its carbon equivalent, estimate the heat-affected zone width and the residual stress from the thermal cycle, design a welded joint to the appropriate fatigue category, and specify the inspection and acceptance standard.",
+    "Model the processing of polymers and composites: the cooling time in injection moulding, the extruder characteristic line, the Darcy infusion time for a composite laminate, and the cure kinetics and vitrification of a thermoset.",
+    "Specify an additive manufacturing process, build orientation, and post-processing route for a metal or polymer part, estimate the residual stress and distortion, design a lattice structure using Gibson-Ashby scaling, and construct a cost model that includes powder, machine time, post-processing, and inspection."
+  ],
   "chapters": [
     {
       "slug": "process-selection",
@@ -91,8 +105,116 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1822,
+      "title": "Fourier's heat equation makes solidification calculable",
+      "detail": "Joseph Fourier's Théorie analytique de la chaleur provides the mathematical framework for heat conduction that underpins every subsequent analysis of solidification, cooling curves, Chvorinov's rule, and the thermal cycle in welding. Without Fourier, a riser is a guess; with him, it is a calculation.",
+      "people": [
+        "Jean-Baptiste Joseph Fourier"
+      ]
+    },
+    {
+      "year": 1886,
+      "title": "The Ellis forging press and the first quantitative forging force",
+      "detail": "The Ellis forging plant in Buffalo, New York, installs a 3 000-ton steam hammer and begins the first systematic measurement of forging forces. The data show that the force is not proportional to the projected area times the flow stress — friction at the die face raises it by a factor of two to five, and the friction hill is the reason a closed-die forging needs a flash.",
+      "people": [
+        "Junius Richards"
+      ]
+    },
+    {
+      "year": 1907,
+      "title": "Taylor's tool-life equation turns cutting into a science",
+      "detail": "Frederick Winslow Taylor publishes On the Art of Cutting Metals, the product of 26 years of experiments at Bethlehem Steel. The equation VT^n = C relates cutting speed to tool life and provides the first quantitative basis for selecting machining parameters. The economic optimum (maximum production rate, minimum cost) follows from Taylor's law and a few minutes of algebra.",
+      "people": [
+        "Frederick Winslow Taylor"
+      ]
+    },
+    {
+      "year": 1924,
+      "title": "Shewhart's control chart makes quality a statistical problem",
+      "detail": "Walter A. Shewhart at Bell Telephone Laboratories invents the X-bar control chart, distinguishing common-cause variation (inherent to the process) from special-cause variation (assignable to a specific event). The ±3σ control limit gives a 0.27% false-alarm rate and a method for deciding when to adjust a process and when to leave it alone. The control chart is the foundation of statistical process control, Six Sigma, and the entire quality profession.",
+      "people": [
+        "Walter A. Shewhart"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "The transistor and the birth of polymer electronics drive injection moulding",
+      "detail": "The invention of the transistor at Bell Labs and the subsequent explosion of consumer electronics create an unprecedented demand for precision-moulded polymer enclosures, connectors, and bobbins. The injection moulding machine, which had been a curiosity in the 1930s, becomes the most widely used manufacturing machine in the world. The reciprocating-screw plasticising unit (introduced by Paul Murer in 1946) makes the process controllable and repeatable.",
+      "people": [
+        "Paul Murer"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Friction stir welding is invented — and ignored for 20 years",
+      "detail": "Wayne Thomas, David Williams, and Peter Ashley at The Welding Institute (TWI) in Cambridge, England, file a patent for a solid-state joining process in which a non-consumable rotating tool generates frictional heat and forges the metal together below the melting point. The process eliminates the solidification defects, the hot cracking, and the residual stress of fusion welding, but it is not adopted industrially until 1991, when Mazda uses it to join aluminium car doors. Today FSW joins the SpaceX Falcon 9 fuel tank, the Airbus A350 fuselage panels, and the Toyota Supra roof.",
+      "people": [
+        "Wayne Thomas",
+        "David Williams",
+        "Peter Ashley"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "Chuck Hull invents stereolithography and founds 3D Systems",
+      "detail": "Charles Hull files US Patent 4 575 330 for 'Apparatus for Production of Three-Dimensional Objects by Stereolithography' — a UV laser scanned by galvanometers across a vat of photopolymer resin, curing a layer at a time. The patent is granted in 1986 and 3D Systems is founded. The process is dismissed as a prototyping curiosity for 30 years, until the GE LEAP fuel nozzle (2016) proves that additive manufacturing can make a certified, production, flight-critical part that is lighter and more durable than the 20-part welded assembly it replaces.",
+      "people": [
+        "Charles Hull"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "author": "Mikell P. Groover",
+      "title": "Fundamentals of Modern Manufacturing: Materials, Processes, and Systems",
+      "publisher": "Wiley",
+      "year": 2020
+    },
+    {
+      "author": "Serope Kalpakjian and Steven R. Schmid",
+      "title": "Manufacturing Engineering and Technology",
+      "publisher": "Pearson",
+      "year": 2019
+    },
+    {
+      "author": "John A. Schey",
+      "title": "Introduction to Manufacturing Processes",
+      "publisher": "McGraw-Hill",
+      "year": 1987
+    },
+    {
+      "author": "Omar W. Dilke",
+      "title": "Physical Metallurgy in Welding and Joining",
+      "publisher": "Woodhead Publishing / Elsevier",
+      "year": 2023
+    },
+    {
+      "author": "Reza J. Sedlák and David E. Hardt",
+      "title": "Welding: Fundamentals and Applications",
+      "publisher": "McGraw-Hill",
+      "year": 2009
+    },
+    {
+      "author": "Donald V. Neff",
+      "title": "Metrology, Inspection, and Quality Control",
+      "publisher": "SME (Society of Manufacturing Engineers)",
+      "year": 2014
+    },
+    {
+      "author": "Michael Ashby and Hugh Shercliff",
+      "title": "Materials and Manufacturing",
+      "publisher": "Butterworth-Heinemann / Elsevier",
+      "year": 2023
+    },
+    {
+      "author": "Milton C. Shaw",
+      "title": "Metal Cutting Principles",
+      "publisher": "Oxford University Press",
+      "year": 2005
+    }
+  ],
   "next": [
     "design-process",
     "machine-design"
