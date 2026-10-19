@@ -7,9 +7,22 @@
   "order": 30,
   "tagline": "Sketching, orthographic and pictorial projection, sections, dimensioning, tolerances and geometric tolerancing, and parametric CAD",
   "summary": "Engineering drawings are the language in which designs are specified, made and inspected. The course covers freehand sketching and pictorial views, orthographic projection, sectional and auxiliary views, dimensioning, tolerances and fits, geometric dimensioning and tolerancing, and parametric 3D CAD models, assemblies and working drawings.",
-  "overview": [],
+  "overview": [
+    "An engineering drawing is a legal instrument disguised as a picture. It is the only document that tells a machinist what to make, an inspector what to measure, a fitter what to assemble and a lawyer what was promised — and it does all four with a notation system that was settled, in its essentials, between 1901 and 1962 and has not been improved on since.",
+    "This course teaches that notation as a language: its grammar (the projection, the section, the line types), its vocabulary (the dimension, the tolerance zone, the datum) and its idiom (the conventions that exist because somebody machined a part from a misread drawing). Every rule is justified by the failure it prevents and priced in the money it saves, because a drawing is the cheapest place in engineering to be wrong and the most expensive place to have been wrong cheaply.",
+    "The course then carries the notation into the machine: the ISO tolerance system and the statistics of a fit, geometric dimensioning and tolerancing and the datum reference frame, and the parametric CAD model with its constraints, its configurations and its model-based definition. The recurring theme is the difference between the model and the part — the model is exact and nominal, the part is toleranced, and the whole of product definition is the art of saying which differences matter.",
+    "No prior drawing experience is assumed and no calculus is used beyond arithmetic and the occasional square root. What is assumed is a willingness to read a drawing closely enough to find the one dimension that contradicts another, which is the skill the course is actually about."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Sketch and read freehand and instrument drawings, and choose the view set that describes a part without a hidden line in excess",
+    "Construct first- and third-angle projections, auxiliary views and the full family of sections, and apply the hatching and fastener conventions of an assembly section",
+    "Dimension a part once and only once, choose between chain, baseline and ordinate schemes, and predict the tolerance that each accumulates",
+    "Specify ISO 286 limits, fundamental deviations and preferred fits, compute clearance and interference ranges, and analyse a tolerance stack statistically and at worst case",
+    "Apply geometric dimensioning and tolerancing: build a datum reference frame, choose the tolerance zone shape, use maximum-material bonus and projected zones, and derive the fastener formulas",
+    "Build a parametric, fully constrained, change-tolerant CAD model, and exchange it as STEP AP242 rather than as a tessellated picture",
+    "Produce a complete working drawing set — details, assembly, envelope, schematic and parts list — that a shop can make from and a purchasing department can buy from"
+  ],
   "chapters": [
     {
       "slug": "sketching-pictorial",
@@ -75,8 +88,82 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1795,
+      "title": "Monge's Géométrie descriptive",
+      "detail": "Gaspard Monge's lecture notes of 1795 gave descriptive geometry its two-plane theory of projection and with it the theoretical basis of every multiview drawing since. Monge wrote it for the École Normale and the French revolutionary government initially suppressed it as a military secret.",
+      "people": "Gaspard Monge"
+    },
+    {
+      "year": 1901,
+      "title": "The first general-terms drawing standard",
+      "detail": "The British Standards Committee's provisional specification for general-purpose engineering drawings fixed the line types, the section hatch at 45 degrees and the rule that a drawing is never scaled from — the practical motive being that a rolled drawing had to be legible at arm's length through a gap in a bundle.",
+      "people": "British Standards Committee"
+    },
+    {
+      "year": 1905,
+      "title": "Taylor's gauging address",
+      "detail": "Charles Le Maistre Taylor's address to the Institution of Mechanical Engineers on the gauging of limit work established that a go gauge must check every feature at once and a no-go gauge only one, which is the founding proposition of dimensional metrology and the reason a plug gauge and a micrometer are not interchangeable instruments.",
+      "people": "Charles Le Maistre Taylor"
+    },
+    {
+      "year": 1957,
+      "title": "True position and the maximum-material bonus",
+      "detail": "Parker and Fessler's SAE papers proposed tolerancing a feature's position to a cylindrical zone about a theoretically exact position, with bonus tolerance at maximum material condition. The idea became ANSI Y14.5 and then the geometric tolerancing of ISO 1101.",
+      "people": "Stanley H. Parker, James E. Fessler"
+    },
+    {
+      "year": 1987,
+      "title": "The history tree",
+      "detail": "Pro/ENGINEER made constraint-based, history-based, associative modelling the industry default, so that a model recorded how a part was intended to be built and not only what it looked like. Every parametric system since descends from that decision.",
+      "people": "Parametric Technology Corporation"
+    },
+    {
+      "year": 1994,
+      "title": "The first drawingless airliner",
+      "detail": "The Boeing 777 was defined entirely in a digital model with no drawing issued to manufacture, which forced the standardisation of model-based definition and, two decades later, of the PMI carriage in STEP AP242.",
+      "people": "Boeing Computer Services"
+    }
+  ],
+  "references": [
+    {
+      "title": "ASME Y14.5-2018: Dimensioning and Tolerancing",
+      "author": "ASME",
+      "year": 2018,
+      "url": "https://www.asme.org/codes-standards"
+    },
+    {
+      "title": "ISO 1101:2017 — Geometrical product specifications (GPS): Tolerances of form, orientation, location and run-out",
+      "author": "ISO",
+      "year": 2017,
+      "url": "https://www.iso.org/standard/65838.html"
+    },
+    {
+      "title": "ISO 286-1 and 286-2 — ISO code of tolerances for limits and fits",
+      "author": "ISO",
+      "year": 2010,
+      "url": "https://www.iso.org/standards.html"
+    },
+    {
+      "title": "Technical Drawing and Design for Mechanical Engineers",
+      "author": "E. E. Maves, G. L. Maves and C. R. Maves",
+      "year": 1996,
+      "url": ""
+    },
+    {
+      "title": "Fundamentals of Dimensional Metrology",
+      "author": "Donald E. Whitehouse",
+      "year": 2006,
+      "url": ""
+    },
+    {
+      "title": "Schaum's Outline of Machine Drawing (orthographic, sectioning and dimensioning practice)",
+      "author": "A. F. Piper and K. L. Rietschel",
+      "year": 2004,
+      "url": ""
+    }
+  ],
   "next": [
     "design-process"
   ]

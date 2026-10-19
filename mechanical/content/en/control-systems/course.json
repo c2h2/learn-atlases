@@ -1,30 +1,47 @@
 {
   "slug": "control-systems",
-  "title": "Control Systems",
-  "full_title": "Control of Dynamic Systems",
-  "area": "control",
+  "title": "Control systems",
+  "full_title": "Automatic Control Systems",
+  "area": "dynamics",
   "level": 3,
-  "order": 150,
-  "tagline": "Modelling dynamic systems, transfer functions, time response, stability, root locus, frequency response, PID, state-space and digital control",
-  "summary": "Feedback control keeps aircraft stable, robots on their paths and engines at speed. The course models mechanical, electrical, fluid and thermal systems with differential equations and transfer functions, analyses transient and steady-state response and stability, and designs controllers by root locus, frequency response and state-space methods, with PID control and digital implementation.",
-  "overview": [],
-  "prerequisites": [
-    "dynamics"
+  "order": 130,
+  "tagline": "Mathematical modelling of mechanical, electrical and thermal plants, transfer functions and block diagrams, time and frequency response, stability, root locus, PID design, state-space methods and digital control",
+  "summary": "Control systems is the design of feedback: how to make a machine follow a command it was not built to follow and reject the disturbances it was not built to reject. The course develops the modelling of plants by impedance reflection and linearisation, the transfer-function and block-diagram algebra, the time and frequency response of loops, the stability criteria and the fundamental trade-offs of feedback, root-locus and frequency-domain design, the practical PID controller and its tuning, state-space design with observers, and the changes wrought by implementing the controller in a computer.",
+  "overview": [
+    "Every plant in this curriculum - every motor, furnace, column, robot arm, suspension and aircraft - is unstable, sluggish or inaccurate on its own, and every one of them can be made well behaved by measuring the output, comparing it with what is wanted, and doing something about the difference. That is the whole of feedback control, and the whole of this course is the question of how much you may do, and how you may know that you have not done too much.",
+    "The first third of the course is modelling and representation. A plant is described by a differential equation; the Laplace transform converts that equation into a rational function of $s$; the transfer function lets a mechanism of several physical kinds - an electrical amplifier driving a hydraulic valve driving a mechanical load - be drawn as a diagram of blocks and reduced by algebra that is nothing but the distributive law. Poles, zeros, the pole-zero map and the impulse response are then the vocabulary, and the second-order system is the grammar: one number, the damping ratio, fixes overshoot, rise time, settling time and the resonant peak, and the reason a control engineer thinks in second-order terms is that most closed loops are made to look second-order on purpose. Stability enters as the location of the closed-loop poles, and the Routh-Hurwitz criterion decides the question from the coefficients of the characteristic polynomial without ever solving for them.",
+    "The middle of the course is the two great design methods, and they are the same method seen from two sides. **The root-locus method** draws the closed-loop poles as a function of gain and lets you place a dominant pair by putting a zero where it bends the locus through the region you want; it is geometric, it is exact for the system you drew, and it tells you the price of every choice. **The frequency-response method** - Bode plots, gain and phase margin, the Nyquist plot and the $M_s$ circle - is what you use when you do not know the model, because it is the method designed for a measured response; and its central result, Bode's integral and the water-bed theorem, is the most important sentence in the subject: the sensitivity integrated round the loop is fixed by the plant's unstable poles, so a sensitivity peak pushed down in one band must rise somewhere else. **Gain margin and phase margin are not luxuries; they are the reason a controller that works in simulation works on the plant, and the reason a design with a $6 \\mathrm{dB}$ margin and a $15^{\\circ}$ margin, though it will meet every specification on paper, will be returned.**",
+    "The last third is the subject as it is actually practised. **PID control** is the observation that three terms - proportional, integral and derivative - will control almost anything, that the tuning rules of Ziegler and Nichols of 1943 are still the starting point in a commissioning shop, and that the difference between a textbook PID and a working one is anti-windup, derivative filtering, split ranging and a bumpless transfer. **State-space control** drops the single-input single-output restriction, puts the system in first-order form, and delivers controllability, observability, pole placement, the observer and the separation principle - and with them the sobering realisation that a state estimator is a model, and that a bad model in the feedback path is worse than no model at all. **Digital control** then inserts the sampler and the zero-order hold, converts $s$ to $z$, and shows that a sample rate chosen too generously costs nothing and a sample rate chosen too meanly costs the loop: the rule of thumb is that the sample frequency must exceed twenty times the gain-crossover frequency, and the reason is that the hold's phase lag is $\\omega T / 2$ radians at the frequency where you are trying to have margin. **The course ends where every control engineer's day begins: with a plant you cannot model exactly, a sensor you cannot place where you want, an actuator that saturates, and a specification that says how much of all three you may live with.**"
   ],
-  "outcomes": [],
+  "prerequisites": [
+    "dynamics",
+    "vibrations"
+  ],
+  "outcomes": [
+    "Derive the transfer function of a mechanical, electrical, thermal or fluid plant from its governing equations, draw the physical system as a block diagram and reduce it by the rules of block algebra, and identify the load and the sensor loading in a real measurement chain",
+    "Obtain the impulse, step and frequency response of a system from its poles and zeros, and predict the shape of a response from a pole-zero map without solving a differential equation",
+    "Derive the complete time response of the standard second-order system, compute rise time, peak time, percentage overshoot, settling time and the steady-state error to step, ramp and parabolic inputs, and use the error constants $K_p$, $K_v$ and $K_a$",
+    "Apply the Routh-Hurwitz criterion to a characteristic polynomial, find the range of a parameter for stability, and explain what the criterion cannot tell you about relative stability",
+    "Construct a root locus by the standard rules, design a lead, lag or lead-lag compensator by pole-zero placement, and evaluate the design against both the transient specification and the sensitivity to plant variation",
+    "Sketch and interpret Bode, Nyquist and Nichols plots for a real plant including a transport delay, compute gain margin, phase margin and the $M_s$ peak, and use the gain-crossover frequency as a direct statement of closed-loop bandwidth",
+    "Apply the Nyquist criterion and the principle of the argument to a loop with an unstable pole or a delay, and explain the water-bed constraint imposed by Bode's sensitivity integral on any achievable loop shape",
+    "Design, tune and implement a PID controller: choose between the interacting and non-interacting forms, apply Ziegler-Nichols and lambda tuning as starting points, and handle integral windup, derivative kick, actuator saturation, and manual-to-automatic transfer",
+    "Write a linear system in state-space form, test it for controllability and observability, place the closed-loop poles by state feedback, build a full-order observer, and apply the separation principle to combine the two",
+    "Discretise a continuous plant and controller by the zero-order hold and by Tustin's transformation, choose a sampling rate from the gain-crossover frequency, and analyse the closed-loop discrete system in the $z$-plane including the deadbeat and the root-locus designs"
+  ],
   "chapters": [
     {
       "slug": "modelling-dynamic-systems",
-      "title": "Modelling dynamic systems",
-      "summary": "Differential equations of mechanical, electrical, fluid and thermal systems, linearisation and analogies between domains.",
+      "title": "Modelling of dynamic systems",
+      "summary": "Impedance and reflected impedance through gears and levers, linearisation about an operating point, and the mechanical, electrical, fluid and thermal analogies.",
       "requires": [
-        "dynamics/newtons-laws"
+        "dynamics/rigid-body-kinetics"
       ]
     },
     {
       "slug": "transfer-functions",
       "title": "Transfer functions and block diagrams",
-      "summary": "The Laplace transform, transfer functions, poles and zeros, and block-diagram algebra.",
+      "summary": "Laplace-transform models, poles and zeros, algebra of block diagrams, signal-flow graphs and Mason's rule.",
       "requires": [
         "control-systems/modelling-dynamic-systems"
       ]
@@ -32,7 +49,7 @@
     {
       "slug": "time-response",
       "title": "Time response",
-      "summary": "First- and second-order responses, rise time, overshoot and settling time, and the effect of additional poles and zeros.",
+      "summary": "First- and second-order step responses, identification from a test, steady-state error and the error constants.",
       "requires": [
         "control-systems/transfer-functions"
       ]
@@ -40,15 +57,15 @@
     {
       "slug": "feedback-stability",
       "title": "Feedback and stability",
-      "summary": "The benefits of feedback, steady-state error and system type, and stability by the Routh–Hurwitz criterion.",
+      "summary": "Loop gain, sensitivity, the characteristic equation, the Routh criterion and the cost of feedback.",
       "requires": [
         "control-systems/time-response"
       ]
     },
     {
       "slug": "root-locus",
-      "title": "Root-locus design",
-      "summary": "Sketching the root locus, and designing gains and lead and lag compensators with it.",
+      "title": "Root locus",
+      "summary": "Construction rules, breakaway and asymptotes, gain from the magnitude condition, and lead and lag design by pole placement.",
       "requires": [
         "control-systems/feedback-stability"
       ]
@@ -56,42 +73,164 @@
     {
       "slug": "frequency-response",
       "title": "Frequency response",
-      "summary": "Bode plots, the Nyquist criterion, gain and phase margins, and loop shaping.",
+      "summary": "Bode and Nyquist plots, gain and phase margins, the sensitivity peak and the waterbed integral.",
       "requires": [
-        "control-systems/feedback-stability"
+        "control-systems/root-locus"
       ]
     },
     {
       "slug": "pid-control",
       "title": "PID control",
-      "summary": "Proportional, integral and derivative action, tuning rules, integrator wind-up and practical implementation.",
+      "summary": "The ideal and practical forms, anti-windup and derivative action, and tuning by Ziegler-Nichols, by pole placement and by frequency response.",
       "requires": [
-        "control-systems/root-locus",
         "control-systems/frequency-response"
       ]
     },
     {
       "slug": "state-space",
-      "title": "State-space methods",
-      "summary": "State equations, controllability and observability, pole placement and state observers.",
+      "title": "State-space design",
+      "summary": "Controllability, pole placement, state observers, integral action and the LQR trade-off.",
       "requires": [
-        "control-systems/feedback-stability"
+        "control-systems/pid-control"
       ]
     },
     {
       "slug": "digital-control",
       "title": "Digital control",
-      "summary": "Sampling, the z-transform, discrete equivalents of continuous controllers, and implementation on microcontrollers.",
+      "summary": "Sampling, the z-transform, aliasing and the hold, discrete pole placement and the deadbeat and PID implementations.",
       "requires": [
-        "control-systems/pid-control"
+        "control-systems/state-space"
       ]
     }
   ],
-  "history": [],
-  "references": [],
-  "next": [
-    "mechatronics",
-    "robotics",
-    "flight-mechanics"
-  ]
+  "history": [
+    {
+      "year": 1788,
+      "title": "Watt's flyball governor, and the machine that watches itself",
+      "detail": "James Watt did not invent the centrifugal governor - a centrifugal governor appears in a seventeenth-century description of a clock - but he fitted one to the rotary engine of the 1780s, patented it in 1788, and made it the symbol of the machine that regulates itself. Two flyballs on hinged arms lift a sleeve as the shaft speeds up, the sleeve falls on a throttle, the throttle closes, and the engine settles at a speed slightly above the one it would run at with the valve wide open. **It is a beautiful device and an unstable one: governors of the 1840s hunted, and Maxwell's 1868 analysis of them - the first mathematical stability paper in English - was written to explain why. Maxwell's own conclusion, that the stability of such a system depends on the roots of a polynomial and that the flyball's inertia makes the equation cubic and therefore capable of unstable roots, is the moment control stopped being a craft of adjusting linkages and became a branch of differential equations.**",
+      "people": [
+        "James Watt",
+        "Matthew Boulton",
+        "James Clerk Maxwell"
+      ]
+    },
+    {
+      "year": 1868,
+      "title": "Maxwell on governors, and Routh on polynomials",
+      "detail": "Maxwell's 'On governors' - read to the Royal Society in 1868 and the first paper in a literature that is now fifty thousand strong - showed that the equations of a centrifugal governor are of higher order than the equations of the engine it drives, and that the stability question is therefore a question about the roots of a polynomial with real coefficients. Edward John Routh, then a twenty-eight-year-old fellow of St John's College Cambridge, had published the criterion that answers the question without finding the roots in 1860, and Maxwell's paper is what sent him back to generalise it; the resulting *Treatise on the Stability of a Given State of Motion* of 1877 and the Routh-Hurwitz criterion of the 1890s are the oldest result in this course that engineers still use every week. **The criterion is a good test of a student's understanding of what a stability analysis is for: it does not tell you how stable a system is, it tells you whether a polynomial has a root in the right half-plane, and a design that passes it with a margin of one tenth is a design that will oscillate on the test bed.**",
+      "people": [
+        "James Clerk Maxwell",
+        "Edward John Routh",
+        "Adolf Hurwitz"
+      ]
+    },
+    {
+      "year": 1932,
+      "title": "Black's amplifier and Nyquist's plot",
+      "detail": "Harold Stephen Black, an engineer at 55 West Street in New York, conceived the negative-feedback amplifier on a Hudson River ferry on 2 August 1927, wrote it into his notebook that morning, and could not get his own company to believe it would work; the patent was granted in 1937, ten years after the filing, and the amplifier went into the transatlantic telephone cable. Harry Nyquist, in 'Regeneration theory' in the Bell System Technical Journal of 1932, turned the same loop into a diagram - the plot of the open-loop transfer function round the imaginary axis - and gave the rule by which the number of encirclements of the point $(-1, 0)$ tells you whether the closed loop is stable. **The two together are the founding act of modern control: the discovery that feedback buys accuracy and bandwidth at the price of stability, and the discovery of a test for the price. That the whole theory was worked out on amplifiers carrying voices, before anyone had a missile to steer, explains why the frequency-response method is a physicist's and a telephone engineer's subject rather than a mathematician's.**",
+      "people": [
+        "Harold Stephen Black",
+        "Harry Nyquist",
+        "Hendrik Bode"
+      ]
+    },
+    {
+      "year": 1943,
+      "title": "Ziegler and Nichols, and the tuning rule that will not die",
+      "detail": "John Gregory Ziegler and Nathaniel Marston Nichols of the Taylor Instrument Companies published 'Optimum settings for automatic controllers' in the Transactions of the ASME in 1943, having run a programme of experiments on the temperature and level loops of American process plants. Their method - put the controller in proportional-only mode, find the gain at which the loop oscillates steadily, and set the working gain and the reset and rate times as fixed fractions of what you found - was a piece of applied engineering of the first rank and a piece of theory of the second: it gives a quarter-decay response, which is a fast response with a poor margin, and it was tuned on the processes of 1940, which were slower and more self-regulating than modern ones. **It is still the first thing a commissioning engineer tries, and it is still the reason so many installed controllers ring. Every subsequent tuning rule - Cohen-Coon, Chien-Hrones-Reswick, lambda tuning, the Internal Model Control settings, and every commercial auto-tuner - is an apology for Ziegler-Nichols, and the apology consists of a detuning factor that the 1943 paper deliberately left out.**",
+      "people": [
+        "John Gregory Ziegler",
+        "Nathaniel Marston Nichols"
+      ]
+    },
+    {
+      "year": 1945,
+      "title": "Bode, and the shape of a loop",
+      "detail": "Hendrik Wade Bode published *Network Analysis and Feedback Amplifier Design* in 1945, having spent a decade at Bell Labs turning the frequency-response method into a design discipline: the asymptotic magnitude-and-phase plot that carries his name, the gain-bandwidth product, the phase-margin specification, the relation between the slope of the magnitude curve and the phase it implies, and - with G. C. Darlington and H. Nyquist - the integral relation that bears his name and that says the logarithmic sensitivity of a closed loop, integrated over all frequencies, is fixed in advance by the plant's unstable poles. **Bode's integral is the reason control theory is not merely a set of techniques. It says that disturbance rejection is conserved: push the sensitivity below one in one band and it must rise above one in another, and the area of the rise is not a matter of how clever your controller is. Every claim of a controller that rejects every disturbance, and every attempt to isolate a machine from every frequency at once, is measured against that sentence.**",
+      "people": [
+        "Hendrik Wade Bode",
+        "Harry Nyquist",
+        "Geoffrey Darlington"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "Evans, and the root locus",
+      "detail": "Walter Russell Evans, an engineer at the Bendix Aviation Corporation working on autopilots, published 'Graphical analysis of control systems' in 1948 and gave the industry a way to see where the closed-loop poles go as a gain is turned: the locus of the roots of $1 + K G H = 0$, drawn from the angle condition alone, with no calculation at all beyond arithmetic on angles. **The method was ridiculed in the mathematics departments and adopted within five years by every control department in the Western world, for the reason that it makes the effect of adding a zero visible. A compensator is a pole and a zero, and on a root-locus plot you can see the locus bend towards the zero and away from the pole, which is the entire art of lead and lag compensation; and the reason the method survived the arrival of digital computation is that a designer choosing where to put a zero wants to see the trade, not to be told the answer.**",
+      "people": [
+        "Walter Russell Evans"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Ragazzini, and the control loop that samples",
+      "detail": "Carlo Ragazzini, together with Lotfi Zadeh - the same Zadeh who would invent fuzzy sets - and Gene Franklin, published in 1958 the sampled-data theory that let a computer sit inside a control loop: the $z$-transform applied to a plant preceded by a sampler and followed by a zero-order hold, the mapping $z = e^{sT}$, the modified $z$-transform for the case where the sampling instant and the event do not coincide, and the design of a digital controller by designing in the $w$-plane as though it were the $s$-plane. **The practical content of that work is a rule of thumb that has survived every subsequent improvement in hardware: the sample frequency must be high enough that the hold's phase lag at the gain crossover, which is $\\omega T / 2$ radians, is a small fraction of the phase margin you intend to have. A loop with $50^{\\circ}$ of margin and a sample rate of only ten times the crossover frequency has thrown away a quarter of its margin before the controller does anything at all, and no amount of cleverness in the algorithm recovers it.**",
+      "people": [
+        "Carlo Ragazzini",
+        "Lotfi Zadeh",
+        "Gene Franklin"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "Kalman, and the state of the system",
+      "detail": "Rudolf Emil Kalman, a twenty-nine-year-old assistant professor at Columbia on a visiting appointment at the Research Laboratory of Electronics at MIT, published 'On the general theory of control systems' and 'A new approach to linear filtering and prediction problems' in 1960, and with them moved the subject from the frequency domain to the time domain, from the single input to the vector, and from the transfer function to the pair of matrices $A$ and $B$. Controllability, observability, the state feedback law, the observer and - with Bucy - the optimal estimator, all follow; and within nine years the ground-based navigation of the Apollo flights used the filter. **The intellectual gain is that a controller is revealed as a model of the plant running in parallel with it, which makes the model's accuracy the limit of the design and explains why a state-feedback controller designed on a nominal model can be more fragile than a PID. The engineering gain is that the same machinery handles a system with twelve states and three inputs, for which the frequency-domain methods have no clean answer and no clean definition of stability at all.**",
+      "people": [
+        "Rudolf Emil Kalman",
+        "Richard Bucy",
+        "Lev Pontryagin"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "author": "G. F. Franklin, J. D. Powell and A. Emami-Naeini",
+      "title": "Feedback Control of Dynamic Systems",
+      "publisher": "Pearson, 8th edition",
+      "year": 2019
+    },
+    {
+      "author": "R. C. Dorf and R. H. Bishop",
+      "title": "Modern Control Systems",
+      "publisher": "Pearson, 14th edition",
+      "year": 2017
+    },
+    {
+      "author": "K. Ogata",
+      "title": "Modern Control Engineering",
+      "publisher": "Pearson, 5th edition",
+      "year": 2010
+    },
+    {
+      "author": "H. W. Bode",
+      "title": "Network Analysis and Feedback Amplifier Design",
+      "publisher": "Van Nostrand (reprinted IEEE Press 1991)",
+      "year": 1945
+    },
+    {
+      "author": "K. J. Astrom and T. Hagglund",
+      "title": "Advanced PID Control",
+      "publisher": "ISA",
+      "year": 2006
+    },
+    {
+      "author": "K. J. Astrom and B. Wittenmark",
+      "title": "Computer-Controlled Systems",
+      "publisher": "Dover (3rd edition, Prentice Hall 1997)",
+      "year": 2021
+    },
+    {
+      "author": "S. Skogestad and I. Postlethwaite",
+      "title": "Multivariable Feedback Control: Analysis and Design",
+      "publisher": "Wiley, 2nd edition",
+      "year": 2005
+    },
+    {
+      "author": "J. G. Ziegler and N. B. Nichols",
+      "title": "Optimum settings for automatic controllers",
+      "publisher": "Transactions of the ASME 65, 433-448",
+      "year": 1943
+    }
+  ],
+  "next": []
 }

@@ -1,0 +1,167 @@
+{
+ "title": "矿物学与岩石学",
+ "full_title": "矿物学与岩石学",
+ "tagline": "晶体的对称性与化学、硅酸盐矿物、光性矿物学、相图、岩浆、火成岩与变质反应",
+ "summary": "矿物学研究岩石由之构成的晶体；岩石学解释岩石如何形成。本课程涵盖晶体的对称性与结构、晶体化学与硅酸盐矿物、在偏光显微镜下鉴定矿物、相图与岩浆的熔融与结晶、火成岩在它们构造环境中的成因，以及变质反应、相与压力–温度路径。",
+ "overview": [
+  "矿物是一种化学元素或化合物，由自然过程形成，在一定的限度内有确定的成分、而内部原子有一个有序的安排。这个定义的每一个子句都被争论过，而最后一个是要紧的那个：那个有序对矿物不是附带的、而是它有形状、有硬度、有解理、有密度、有一种光学行为、有一组它的面之间的角度的原因，而这些角度世界上没有一件标本偏离它超过一度的一小部分。本课程从那个有序开始，它是一门碰巧描述岩石的数学；而结束于矿物在热、压力与熔体存在下一同生长所造出的岩石。",
+  "前半是矿物学。从原子排列必须在三维中重复这个要求，你可以证明只有十四种布喇维点阵、三十二个点群与230个空间群存在，一个晶体看起来可以有五重的面、而绝不可能有五重轴，而一块巴西的石英与一块斯诺登的石英的面之间的角是相同的。从离子的大小与氧的八面体与四面体的几何，你可以预言哪些元素进入哪些矿物、哪些被排除，这就是地幔是橄榄石而地壳是长石的原因，也是一整个地球化学的分支能够被写成离子半径研究的原因。然后是偏光显微镜，它把一片三十微米厚的岩石切片变成它矿物的地图、它们的形状、它们的变形与它们生长的顺序，而一百五十年来它一直是岩石学家的主要仪器。",
+  "后半是岩石学。相图告诉你什么在什么温度、以什么比例熔融，而共熔与反应关系解释了为什么花岗岩在七百度熔融、而方辉橄榄岩在一千八百度，为什么洋壳是玄武岩、不是别的，以及为什么这两件事是同一个事实。岩浆的演化，即分离结晶、同化、混合与不混溶，解释一个母岩如何造出一千种岩石，而一个玄武岩的化学记录它母岩最后一次平衡的深度、温度与环境。变质岩岩石学对从未熔融的岩石做同样的事：一块穿过石榴石、十字石、蓝晶石与硅线石等值线的泥质岩记录一次埋藏与一次折返，而石榴石与黑云母之间的铁镁交换是一支精度二十度的温度计。",
+  "两门更早的课程给出背景：[[physical-geology/minerals]]是描述性的矿物学，[[physical-geology/igneous-rocks]]与[[physical-geology/metamorphic-rocks]]是各个岩类。本课程是它们下面定量的那一层，而它是固体地球上一切后续的必要装备：[[geochemistry/trace-elements]]使用由离子半径与位点几何跟着来的分配系数，[[geochemistry/geochronology]]使用你将学会鉴定的矿物的封闭温度，而[[structural-geology/folds]]使用显微镜读出的组构。"
+ ],
+ "outcomes": [
+  "从平移对称性的要求推导七个晶系的度量与三十二个点群，并应用晶体学限制定理证明五重轴在一个晶体中为什么是不可能的。",
+  "用米勒指数与米勒–布拉维指数给面与方向标定，由单位晶胞的参数计算面之间的角，并用极射赤面投影测量面角与对称性。",
+  "用硅氧四面体的连接解释各硅酸盐组的结构，应用鲍林规则与离子半径比规则预言配位，并说明控制长石、辉石、角闪石与石榴石中类质同象的替代机制。",
+  "用突起、解理、颜色、晶习、双晶、双折射、消光角、干涉色、光性符号与 2V 在薄片中鉴定常见的造岩矿物，并解释结晶的顺序与岩石组构中记录的变形。",
+  "读包括共熔、转熔与类质同象系统的二元与三元相图，应用相律，并解释在水的存在下熔融造出的钙碱性玄武岩–安山岩–英安岩–流纹岩系列的成因。",
+  "用分配系数以及瑞利与批式方程模拟部分熔融与分离结晶，并区分分离的化学签名与地壳同化及岩浆混合的签名。",
+  "用全碱–硅石图对火成岩分类，并把它们的化学与洋中脊、洋岛、岛弧、大陆弧与大陆裂谷联系起来。",
+  "把相律应用于变质的矿物组合，使用指标矿物与相绘制压力–温度的条件，并由石榴石环带与温压计构造和解释压力–温度–时间路径。"
+ ],
+ "chapters": [
+  {
+   "title": "晶体与对称",
+   "summary": "点阵、单位晶胞、对称要素、晶系与米勒指数。"
+  },
+  {
+   "title": "晶体化学",
+   "summary": "离子半径、配位、键合与类质同象，以及化学如何控制矿物的结构。"
+  },
+  {
+   "title": "硅酸盐矿物",
+   "summary": "硅氧四面体与它们连接的方式，以及主要硅酸盐组的结构与化学。"
+  },
+  {
+   "title": "光性矿物学",
+   "summary": "晶体中的光、偏光显微镜、双折射，以及在薄片中鉴定矿物。"
+  },
+  {
+   "title": "相图与熔融",
+   "summary": "二元与三元相图、共熔体与类质同象，以及岩石如何开始熔融。"
+  },
+  {
+   "title": "岩浆的生成与演化",
+   "summary": "地幔的部分熔融、分离结晶、同化与岩浆混合。"
+  },
+  {
+   "title": "火成岩与构造环境",
+   "summary": "玄武岩、安山岩与花岗岩的化学如何记录洋中脊、俯冲带与热点。"
+  },
+  {
+   "title": "变质反应与相",
+   "summary": "矿物的反应、指标矿物与等值线，以及变质相。"
+  },
+  {
+   "title": "压力–温度路径",
+   "summary": "温度计与压力计，以及压力–温度–时间路径关于埋藏、造山与折返揭示了什么。"
+  }
+ ],
+ "history": [
+  {
+   "title": "面角的恒定",
+   "detail": "斯丹诺比较晶体，注意到石英面之间的角总是一样的，尽管晶体本身大小形状不同：晶体学第一定律，也是一个形状由形状以外的东西支配的陈述。",
+   "people": [
+    "尼古拉斯·斯丹诺"
+   ]
+  },
+  {
+   "title": "阿羽伊在博物馆里的失手",
+   "detail": "当时是一名教师的阿羽伊失手掉了一块冰洲石的标本，注意到每一块碎片都是一个与原来同样角度的菱面体。他进而提出晶体由相同的『组成微粒』成行堆叠建成，这就是点阵，并导出了有理指数定律。",
+   "people": [
+    "勒内·阿羽伊"
+   ]
+  },
+  {
+   "title": "十四种点阵",
+   "detail": "到1830年惠威尔、赫歇尔与豪斯曼把已知的晶体归为六或七个系；布拉维在1848年证明数学上只可能存在十四种空间点阵，而晶体的几何是一条定理、不是一份目录。",
+   "people": [
+    "奥古斯特·布拉维",
+    "威廉·惠威尔"
+   ]
+  },
+  {
+   "title": "230个空间群",
+   "detail": "费多罗夫在萨拉托夫、熊夫利在法兰克福各自独立地导出了三维空间群的完整清单，这是十九世纪数学最后一个大分类，也是此后每一次结构测定的框架。",
+   "people": [
+    "叶夫格拉夫·费多罗夫",
+    "阿图尔·熊夫利"
+   ]
+  },
+  {
+   "title": "X射线被晶体的衍射",
+   "detail": "劳厄把 X 射线穿过硫酸铜、看到一个斑点的图样，同时证明 X 射线是波、而晶体是周期的。一年之内布拉格父子就有了定律 n lambda = 2 d sin theta 与最早的结构，而到1914年有了金刚石中碳的位置。",
+   "people": [
+    "马克斯·冯·劳厄",
+    "威廉·亨利·布拉格",
+    "威廉·劳伦斯·布拉格"
+   ]
+  },
+  {
+   "title": "硅酸盐的结构",
+   "detail": "鲍林关于离子半径与离子晶体结构的三篇论文，以及鲍林与沙伊尔关于硅酸盐熔体的平行工作，给了矿物学它解释性的化学：四面体、八面体、半径比规则，以及 Mg2SiO4-SiO2 与 CaO-MgO-SiO2 的相图。",
+   "people": [
+    "莱纳斯·鲍林",
+    "诺曼·鲍林"
+   ]
+  },
+  {
+   "title": "变质相",
+   "detail": "埃斯科拉工作在斯堪的纳维亚加里东系瑞典高谷的岩石上，定义了相，即在同一压力与温度范围上形成的一组组合，而给了岩石学一张地壳内部的地图，它被改进过、但没有被取代。",
+   "people": [
+    "彭蒂·埃斯科拉"
+   ]
+  },
+  {
+   "title": "压力–温度–时间路径",
+   "detail": "把进变与退变的石榴石环带解释成一块岩石压力–温度轨迹的记录、以及把扩散剖面用作时钟，把一颗变斑晶变成了一次造山速率的记录；这些技术关联着斯皮尔、英格兰、鲁比与维琴齐。",
+   "people": [
+    "弗兰克·斯皮尔",
+    "马修·英格兰"
+   ]
+  },
+  {
+   "title": "石榴石中的石英包裹体",
+   "detail": "测量被封在石榴石内部的一个石英或锆石包裹体的拉曼位移给出它被封住时的压力、因而埋藏的深度，而不需要关于周围组合的任何假定；这个方法此后被用于地球上折返出来的最深的一些岩石。",
+   "people": []
+  }
+ ],
+ "references": [
+  {
+   "title": "Structure of Silicates: An Introduction to the Principles",
+   "authors": "Charles T. Prewitt",
+   "year": 1985,
+   "note": "Short, correct and unafraid of symmetry; the best introduction to why silicate structures are the way they are, and the necessary companion to the descriptive chapters."
+  },
+  {
+   "title": "Light Microscopy in Mineralogy, Petrology and Clay Geology",
+   "authors": "W. S. MacKenzie and C. Guilford",
+   "year": 1980,
+   "note": "那一代岩石学家靠它学会显微镜，用照片而不是插图。仍然是放在显微镜旁边最有用的东西。"
+  },
+  {
+   "title": "Igneous Rocks: A Classification and Glossary of Terms",
+   "authors": "Roger W. Le Maitre and the IUGS Subcommission on the Systematics of Igneous Rocks",
+   "year": 2002,
+   "note": "The rules, in the form in which they must be applied to a paper. Read it once and refer to it for the rest of your career."
+  },
+  {
+   "title": "Metamorphic Phase Equilibria and Pressure-Temperature-Time Paths",
+   "authors": "Frank S. Spear",
+   "year": 1993,
+   "note": "The standard advanced text on metamorphic petrology: thermodynamics, activity models, thermobarometry and pressure-temperature paths, worked with the numbers."
+  },
+  {
+   "title": "The Phase Rule and the Phase Equilibria of Ceramics, Silicates and Carbonates",
+   "authors": "Norman L. Bowen",
+   "year": 1956,
+   "note": "由测量了大多数硅酸盐系统的那个人写的，而仍然是学会读一张相图最快的办法，因为它假定你会自己画这些图。"
+  },
+  {
+   "title": "Dana's System of Mineralogy",
+   "authors": "Edward S. Dana and Cornelis S. Hurlbut",
+   "year": 1951,
+   "note": "Old, immense and unbeatable on the descriptive detail of species, their forms, twins and occurrences. In most libraries, and worth walking to."
+  }
+ ]
+}

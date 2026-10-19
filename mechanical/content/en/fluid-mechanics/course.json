@@ -7,12 +7,28 @@
   "order": 70,
   "tagline": "Fluid properties and statics, control-volume analysis, Bernoulli's equation, the Navier–Stokes equations, dimensional analysis, pipe flow, boundary layers, drag and compressible flow",
   "summary": "Fluid mechanics explains how liquids and gases move and the forces they exert, from water in pipes to air over a wing. The course covers fluid properties and hydrostatics, the kinematics of flow, the integral laws for control volumes, Bernoulli's equation, the differential equations of motion, dimensional analysis and similitude, viscous flow in pipes, boundary layers, lift and drag, and an introduction to compressible flow.",
-  "overview": [],
+  "overview": [
+    "Fluid mechanics is the study of what liquids and gases do to the things they touch, and the course is organised around one idea: that the equations of motion are simple and their consequences are not. Continuity says mass is conserved, Newton's second law says momentum is conserved, and between those two statements sit the whole of pipe-network design, the whole of lift and drag, and the whole of the difference between a siphon that runs and one that does not. The difficulty is not the algebra but the choices — what to call the control volume, where to cut the streamline, when viscosity may be neglected and when it may not — and every lesson in the course is built around making those choices on a real geometry with real numbers.",
+    "The course moves from the static to the moving, from the integral to the differential, and from the ideal to the viscous. It opens with what a fluid is and what a fluid at rest does — a subject that turns out to include the stability of a barge, the divergence angle of a wind-tunnel wall and the maximum height of a chimney — and then develops the kinematics and the three integral conservation laws, which are the tools an engineer actually uses on a pipe bend, a vane, a nozzle or a turbine stage. Bernoulli's equation follows as the first integral of the momentum equation along a streamline, with its seven assumptions stated so that each can be checked and dropped in turn.",
+    "The differential equations then arrive not as a destination but as a way of seeing why the integral results have the form they do, and the four exact solutions — Couette, Poiseuille, Stokes and the stagnation point — are worked in full because they are the only places where the nonlinear term vanishes and because they set the scale for everything that follows. Dimensional analysis and similitude come next, and with them the honest admission that much of the subject is correlation and model testing; the Buckingham Pi theorem is derived, the dimensionless groups are catalogued, and the model-ship correlation line is used to show what a scale model can and cannot tell you.",
+    "The last third is the viscous and compressible world that the earlier lessons were quietly preparing: turbulent pipe flow with the Colebrook equation, minor losses, system curves and pump matching, water hammer; then the boundary layer, without which there is no drag, no separation, no stall and no diffuser; and finally compressible flow, where density becomes a variable and a Mach number turns out to be a statement about how much kinetic energy has been converted into pressure. Everything is computed at real conditions — water at twenty degrees, air at sea level, steam at a turbine inlet — and every formula is checked against a hand calculation, because the commonest failure in this subject is a plausible number from a misapplied equation."
+  ],
   "prerequisites": [
     "dynamics",
     "thermodynamics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define a fluid by its response to shear, distinguish Newtonian from non-Newtonian behaviour, and decide when the continuum assumption fails from the Knudsen number and when the compressible terms may be neglected from the Mach number",
+    "Compute hydrostatic force and its centre of pressure on plane and curved submerged surfaces, size a gravity dam and a sluice gate, and evaluate the metacentric height and roll period of a floating body including the free-surface and loading corrections",
+    "Describe a flow field by pathlines, streaklines and streamlines, compute the material derivative, the rate-of-strain tensor and the vorticity, and distinguish a flow net's Laplace problem from a potential-flow solution",
+    "Select a control volume and apply the integral forms of conservation of mass, momentum, angular momentum and energy to find forces on bends, vanes, nozzles and anchors, and the power and head of turbines and pumps",
+    "State every assumption behind Bernoulli's equation, apply it with a head-loss and a pump or turbine term, and use Pitot tubes, Venturi meters, orifices and nozzles to measure flow with the correct discharge coefficient",
+    "Derive the continuity and Navier–Stokes equations, non-dimensionalise them to expose the Reynolds number, and solve Couette, Poiseuille, Stokes and stagnation flows exactly, stating where each breaks down",
+    "Apply the Buckingham Pi theorem to reduce a stated problem to dimensionless groups, identify the governing groups from the physics, and design a scale model with an honest statement of which similarity cannot be satisfied",
+    "Compute laminar and turbulent pipe friction from the Moody chart and the Colebrook equation, account for minor and entrance losses, solve series and parallel networks against a system curve, and estimate the water-hammer pressure and its mitigation",
+    "Use the boundary-layer equations and the momentum integral to compute displacement and momentum thickness, skin friction and the drag of flat and mixed boundary layers, and diagnose separation from the shape factor",
+    "Apply the isentropic, normal-shock and area–Mach relations to choked nozzles, safety and relief valves, supersonic inlets and wind tunnels, and state where the incompressible approximation ceases to be admissible"
+  ],
   "chapters": [
     {
       "slug": "fluid-properties",
@@ -100,8 +116,133 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1643,
+      "title": "Vacuum, pressure and the birth of hydrostatics",
+      "detail": "Twenty-two centuries earlier Archimedes of Syracuse had stated the principle of buoyancy and Hero of Alexandria had built siphons, force pumps and a steam reaction wheel; the missing idea was that the atmosphere pushes. Evangelista Torricelli balances a column of mercury against the air in 1643, Otto von Guericke's Magdeburg hemispheres of 1654 demonstrate the same pressure publicly, and Blaise Pascal's Puy-de-Dome experiment shows the balance failing with height. Pressure becomes a measurable quantity rather than a horror vacui, and hydrostatics acquires its fundamental variable.",
+      "people": [
+        "Archimedes of Syracuse",
+        "Evangelista Torricelli",
+        "Blaise Pascal",
+        "Otto von Guericke"
+      ]
+    },
+    {
+      "year": 1738,
+      "title": "Hydrodynamica",
+      "detail": "Daniel Bernoulli publishes Hydrodynamica in Strasbourg, deriving the relation between pressure and speed along a streamtube from a crude conservation-of-vis-viva argument, and his father Johann independently obtains the same result in 1743. The equation is named after the son; the modern form, with the head-loss term, is d'Alembert's and Euler's.",
+      "people": [
+        "Daniel Bernoulli",
+        "Johann Bernoulli",
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1755,
+      "title": "The equations of motion of an ideal fluid",
+      "detail": "Leonhard Euler reads Daniel Bernoulli's vis-viva relation, rejects the idea that pressure and speed trade through a conserved living force, and instead writes Newton's second law for a fluid element in his papers of 1755 and 1757. The result is a set of partial differential equations, the first appearance of the acceleration of a fluid particle as we still write it, and of the theorem on circulation that bears his name. They are exact for an inviscid fluid and they predict zero drag on a body moving through it, which is d'Alembert's paradox of 1752 and it took a century and a half to resolve.",
+      "people": [
+        "Leonhard Euler",
+        "Jean le Rond d'Alembert"
+      ]
+    },
+    {
+      "year": 1822,
+      "title": "The equations of motion with viscosity",
+      "detail": "C.-L.-M.-H. Navier writes down momentum equations with an molecular-cohesion term; G. G. Stokes rederives them rigorously in 1845 with the constitutive relation between stress and rate of strain that still bears both names. The equations are nonlinear, and no general solution has been found in two centuries.",
+      "people": [
+        "Claude-Louis Navier",
+        "George Gabriel Stokes"
+      ]
+    },
+    {
+      "year": 1883,
+      "title": "Transition, and a dyed jet",
+      "detail": "Osborne Reynolds performs the dye-injection experiment in a Manchester laboratory and identifies the dimensionless number that decides whether a pipe flow is laminar or turbulent. His 1895 paper on the averaging of turbulent motion — the Reynolds stresses and the transport theorem — is the foundation of every turbulence model still in use.",
+      "people": [
+        "Osborne Reynolds"
+      ]
+    },
+    {
+      "year": 1904,
+      "title": "The boundary layer",
+      "detail": "Ludwig Prandtl reads a three-page paper to the Third International Mathematical Congress in Heidelberg, arguing that a fluid's viscosity, however small, is confined near a wall to a layer whose thickness goes as the inverse square root of the Reynolds number, and that outside it the flow may be treated as inviscid. The paradox of d'Alembert disappears, drag acquires a mechanism, and separation, stall and the design of the airfoil all follow. G. I. Taylor called it the most important idea in twentieth-century fluid mechanics; it took thirty years for the mathematics of the layer to be made rigorous.",
+      "people": [
+        "Ludwig Prandtl",
+        "Theodore von Karman",
+        "Heinrich Blasius"
+      ]
+    },
+    {
+      "year": 1932,
+      "title": "Turbulent friction and the rough wall",
+      "detail": "Johann Nikuradse publishes the sand-grain roughness measurements made at the Kaiser Wilhelm Institute for Flow Research in Gottingen, which reveal the logarithmic law of the wall, the hydraulically smooth and fully rough regimes, and the failure of the smooth-wall law on a fouled surface. Chester Colebrook's 1939 implicit equation and Lewis Ferry Moody's 1944 chart turn it into the design tool every piping engineer uses; the universal law of the wall is only convincingly explained forty years later.",
+      "people": [
+        "Johann Nikuradse",
+        "Chester R. Colebrook",
+        "Lewis Ferry Moody"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "The area rule",
+      "detail": "Richard Whitcomb at NACA Langley publishes the discovery that the transonic wave drag of an aircraft is set by its longitudinal cross-sectional area distribution and not by its wing thickness alone, and the F-102 is redesigned around it in fourteen months. The same 1/sqrt(M^2-1) factor that governs a two-dimensional section governs the whole airframe.",
+      "people": [
+        "Richard Whitcomb"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "author": "G. K. Batchelor",
+      "title": "An Introduction to Fluid Dynamics",
+      "publisher": "Cambridge University Press",
+      "year": 1967
+    },
+    {
+      "author": "P. K. Kundu, I. M. Cohen and P. K. Dowling",
+      "title": "Fluid Mechanics",
+      "publisher": "Academic Press",
+      "year": 2016
+    },
+    {
+      "author": "F. M. White",
+      "title": "Fluid Mechanics",
+      "publisher": "McGraw-Hill",
+      "year": 2021
+    },
+    {
+      "author": "H. Schlichting and K. Gersten",
+      "title": "Boundary-Layer Theory",
+      "publisher": "Springer",
+      "year": 2017
+    },
+    {
+      "author": "L. Prandtl and O. G. Tietjens",
+      "title": "Fundamentals of Hydro- and Aeromechanics",
+      "publisher": "Dover",
+      "year": 1934
+    },
+    {
+      "author": "I. G. Currie",
+      "title": "Fundamental Mechanics of Fluids",
+      "publisher": "CRC Press",
+      "year": 1993
+    },
+    {
+      "author": "J. D. Anderson",
+      "title": "Modern Compressible Flow",
+      "publisher": "McGraw-Hill",
+      "year": 2003
+    },
+    {
+      "author": "A. J. Smits and T. T. Lim",
+      "title": "Flow Measurement for Experimental Fluid Dynamics",
+      "publisher": "Springer",
+      "year": 2000
+    }
+  ],
   "next": [
     "heat-transfer",
     "aerodynamics",

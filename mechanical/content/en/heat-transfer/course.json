@@ -7,12 +7,26 @@
   "order": 110,
   "tagline": "Steady and transient conduction, fins, forced and natural convection, boiling and condensation, heat exchangers and thermal radiation",
   "summary": "Heat transfer asks how fast thermal energy moves, which sets the size of a radiator, the cooling of a chip and the insulation of a building. The course covers steady and transient conduction, extended surfaces, forced convection in external and internal flows, natural convection, boiling and condensation, heat-exchanger analysis and thermal radiation between surfaces.",
-  "overview": [],
+  "overview": [
+    "Heat transfer is the part of thermodynamics that has to answer a question thermodynamics refuses to: not how much energy is available, but how fast it arrives. A kilowatt of steam and a kilowatt of cooling water are energetically equivalent and engineeringly useless to each other until someone has provided the area, the coefficient and the temperature difference to move the one into the other, and that provision is the whole of this course. Every lesson is built on one rate equation and one resistance network — conduction across a wall, convection across a boundary layer, radiation across a gap of light — and on the observation that the resistances add in series, so that the design problem is almost always to find the largest one and attack it.",
+    "The course begins where the physics is easiest and the answers most often taken for granted: one-dimensional steady conduction, in which Fourier's law, a thermal-resistance circuit and a little algebra will size a lagged pipe, a furnace wall or a microprocessor heat-spreader, and will tell you — usually for the first time in a student's career — that a layer of insulation can make a pipe hotter. Fins and two-dimensional shape factors follow, and with them the two ideas that recur everywhere in the subject: that adding surface is a trade between area and the coefficient that drives it, and that a conduction problem you cannot solve can often be read off a table of shape factors computed once and for all by someone who could solve it. Transient conduction then introduces the two dimensionless numbers that govern every heating and cooling operation, Biot and Fourier, the lumped-capacitance method and its failure, the semi-infinite solid that describes a hot ingot dropped on a concrete floor, and the penetration-depth scaling that decides how deep a quench hardens a shaft and how fast a skin burns.",
+    "Convection is where the course meets fluid mechanics, and it is honest about the fact that almost everything usable is measured rather than derived. The thermal boundary layer is developed alongside the velocity layer that is its cause, the Reynolds, Prandtl and Nusselt numbers are derived by scaling the energy equation rather than asserted, and the analogy between heat and momentum transfer is used to predict coefficients from friction factors before any correlation is quoted. External flow over plates, cylinders, spheres and tube banks; internal flow in tubes at constant heat flux and constant wall temperature, laminar and turbulent, developing and fully developed; and natural convection, in which buoyancy replaces the pump and the Grashof and Rayleigh numbers replace the Reynolds — three lessons, one method: find the mechanism, find the dimensionless groups, read the correlation, and know its range of validity well enough to know when you are outside it.",
+    "The last three lessons are the ones that turn the subject into design. Boiling and condensation supply the largest coefficients in engineering and the most dangerous failure modes, because a surface that crosses the critical heat flux stops being a heat-transfer problem and becomes a metallurgy problem at two thousand degrees; the boiling curve, the Rohsenow and Nusselt analyses and the film-boiling limit are worked until the shape of the curve is memorised, because it is the shape that keeps pressurised water reactors, cryogenic tanks and re-entry vehicles intact. Heat exchangers combine every coefficient in the course into an overall conductance and give the two methods — log-mean temperature difference for sizing, effectiveness–NTU for rating — together with the fouling allowances, correction factors and approach-temperature economics that decide what a plant costs. Radiation, finally, is the only mechanism that needs no material, and it is treated with the machinery it deserves: Planck, Wien and Stefan–Boltzmann, Kirchhoff's law and the selective surfaces it licenses, view factors and the network method, radiation shields, and the band radiation of combustion gases that makes a furnace work and a planet habitable.",
+    "The ten lessons are written to be used, not merely read. Every correlation is quoted with its range and its error; every worked example is a machine, a component or an accident rather than a slab of algebra; and every lesson ends with problems in which the answer is a decision — how thick to lag it, how fast to pump it, how far to approach the cold stream, whether to trust the coefficient you have just calculated — because that is the form the question arrives in when you are the one holding the drawing."
+  ],
   "prerequisites": [
     "thermodynamics",
     "fluid-mechanics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Set up and solve lumped and distributed thermal-resistance networks for conduction with contact resistances, internal heat generation and critical insulation radii, and state when the one-dimensional assumption fails and by how much",
+    "Classify a transient conduction problem by the Biot and Fourier numbers, choose between lumped capacitance, the one-term approximation and the semi-infinite solid, and use penetration-depth scaling to answer hardening, quenching, skin-burn and thermal-cycling questions",
+    "Derive the governing dimensionless groups of convection by scaling the energy equation, select the appropriate correlation for external or internal flow with the correct property temperature and characteristic length, and apply the Reynolds–Colburn analogy to obtain heat transfer from friction data",
+    "Compute buoyancy-driven flow from the Grashof and Rayleigh numbers, decide whether forced, natural or mixed convection dominates, and size finned and channel-cooled electronics packages using enclosure and optimum-spacing results",
+    "Sketch and interpret the pool-boiling curve with its nucleate, transition and film regimes and the critical heat flux, apply the Rohsenow and Nusselt analyses, and explain why a heat exchanger or a reactor core must be designed with margin against the Leidenfrost point",
+    "Analyse a heat exchanger by both the log-mean temperature difference method with correction factors and the effectiveness–NTU method, allocate the resistances that control the overall coefficient, apply fouling allowances, and choose an approach temperature from economic rather than optimistic reasoning",
+    "Apply Planck's, Wien's and Stefan–Boltzmann's laws with band fractions, use Kirchhoff's law correctly for surfaces exchanging radiation with sources at different temperatures, and solve grey-enclosure problems by the network method including shields and gas radiation"
+  ],
   "chapters": [
     {
       "slug": "heat-transfer-modes",
@@ -97,8 +111,130 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1822,
+      "title": "Fourier gives heat a differential equation",
+      "detail": "Joseph Fourier's Theorie analytique de la chaleur, read to the Institut de France in 1807 and published in 1822, states the heat-flux law that carries his name, writes the diffusion equation for a continuous medium, and — decisively for engineering — solves it by superposing sinusoidal modes whose amplitudes are found from the initial condition. The method of separation of variables, the idea of a thermal conductivity as a material property, and the first thermal-resistance reasoning all come from one book written by a man who had been a schoolteacher and an administrator in Egypt.",
+      "people": [
+        "Jean-Baptiste Joseph Fourier"
+      ]
+    },
+    {
+      "year": 1851,
+      "title": "Stokes, and the ancestor of the penetration depth",
+      "detail": "George Gabriel Stokes obtains the exact solution for oscillating flow over a flat plate, showing that a viscous disturbance penetrates a distance proportional to the square root of the kinematic viscosity divided by the frequency. The same square-root-of-time penetration appears in Lord Kelvin's 1860 calculation of the depth of the Earth's daily surface temperature swing, and it is the origin of the semi-infinite-solid method that every quench, weld and food-freezing calculation still uses.",
+      "people": [
+        "George Gabriel Stokes",
+        "William Thomson (Lord Kelvin)"
+      ]
+    },
+    {
+      "year": 1900,
+      "title": "Planck quantises the blackbody, and radiation becomes physics",
+      "detail": "Josef Stefan's empirical T-fourth law of 1879 and Boltzmann's derivation of it leave the spectrum unexplained; Wilhelm Wien's formula of 1896 fits the short wavelengths and fails the long ones. On 14 December 1900 Max Planck presents an interpolation that fits every measurement by assuming that the wall oscillators of a blackbody exchange energy only in quanta of h nu — the birth of quantum mechanics, and the reason a heat-transfer course contains constants named after him.",
+      "people": [
+        "Josef Stefan",
+        "Ludwig Boltzmann",
+        "Wilhelm Wien",
+        "Max Planck",
+        "Heinrich Rubens",
+        "Ferdinand Kurlbaum"
+      ]
+    },
+    {
+      "year": 1904,
+      "title": "Prandtl's boundary layer fuses heat and fluid mechanics",
+      "detail": "At the Heidelberg mathematics congress Ludwig Prandtl reads a two-page paper explaining that at high Reynolds number the viscosity matters only in a thin wall layer, so that the flow splits into a nearly inviscid exterior and a diffusive interior. Within thirty years his school — Nusselt, Blasius, Hilsch, Schmidt, Sieder, Colburn, von Karman — turns that observation into the convection coefficients of the whole course, and the analogy between the momentum and thermal boundary layers into the tool that predicts one from the other.",
+      "people": [
+        "Ludwig Prandtl",
+        "Wilhelm Nusselt",
+        "Theodor Blasius"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Nusselt's film analysis, and boiling becomes a curve",
+      "detail": "Wilhelm Nusselt derives the laminar-film condensation coefficient by balancing the drainage of the condensate against the conduction through it, obtaining the famous minus-one-quarter power of the film thickness and the tube-array inundation correction still used to size surface condensers. Samuel Nukiyama's 1934 experiments on boiling mercury and nickel define the boiling curve, its nucleate peak and its Leidenfrost minimum, and Johann Nikuradse's 1926 bubble-nucleation photographs supply the mechanism that Hans Heinrich Rohsenow's 1952 correlation finally quantifies.",
+      "people": [
+        "Wilhelm Nusselt",
+        "Samuel Nukiyama",
+        "Johann Nikuradse",
+        "Hans Heinrich Rohsenow"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "Effectiveness, and the aircraft radiator",
+      "detail": "The design of radiators for high-altitude aircraft engines forces the German and British schools to answer the rating question — known area, known inlets, unknown outlets — rather than the sizing question, and the effectiveness–NTU chart is the by-product. Arthur Colburn and E. R. Rosson's j-factor formulation for compact surfaces follows in 1935, Warren Kays and AL London's Compact Heat Exchangers consolidates the data in 1955, and TEMA and the VDI Heat Atlas turn the whole into the standard practice that a heat-exchanger datasheet still obeys.",
+      "people": [
+        "Arthur P. Colburn",
+        "Warren M. Kays",
+        "A. L. London",
+        "E. N. Sieder"
+      ]
+    },
+    {
+      "year": 1947,
+      "title": "Boiling under pressure, and the reactor's limit",
+      "detail": "The wartime need to cool a chain-reacting pile without boiling it, and then the post-war need to boil water deliberately inside a reactor, generate the largest experimental programme in the subject's history: Hans Zuber's 1958 hydrodynamic theory of the critical heat flux, the Bergles–Rohsenow forced-convection boiling map, and the vendor charts that let a reactor designer quote a critical heat flux with a stated margin of uncertainty. The same curves, read the other way, explain why a cryogenic transfer line chokes and why a turbine blade's impingement cooling fails.",
+      "people": [
+        "Hans Zuber",
+        "Warren M. Rohsenow",
+        "Arthur E. Bergles"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "author": "F. P. Incropera, D. P. DeWitt, T. L. Bergman and A. S. Lavine",
+      "title": "Fundamentals of Heat and Mass Transfer",
+      "publisher": "Wiley",
+      "year": 2017
+    },
+    {
+      "author": "Y. A. Cengel and A. J. Ghajar",
+      "title": "Heat and Mass Transfer: Fundamentals and Applications",
+      "publisher": "McGraw-Hill",
+      "year": 2020
+    },
+    {
+      "author": "J. P. Holman and A. Bejan",
+      "title": "Heat Transfer",
+      "publisher": "CRC Press",
+      "year": 2020
+    },
+    {
+      "author": "R. K. Shah and D. P. Sekulic",
+      "title": "Fundamentals of Heat Exchanger Design",
+      "publisher": "Wiley",
+      "year": 2003
+    },
+    {
+      "author": "R. Siegel, J. R. Howell and M. P. Menguc",
+      "title": "Thermal Radiation Heat Transfer",
+      "publisher": "CRC Press",
+      "year": 2021
+    },
+    {
+      "author": "W. M. Kays, M. E. Crawford and B. Weigand",
+      "title": "Convective Heat and Mass Transfer",
+      "publisher": "McGraw-Hill",
+      "year": 2005
+    },
+    {
+      "author": "VDI e.V.",
+      "title": "VDI Heat Atlas",
+      "publisher": "Springer",
+      "year": 2010
+    },
+    {
+      "author": "S. Whitaker",
+      "title": "Fundamentals of Heat Transfer Design",
+      "publisher": "Prentice Hall",
+      "year": 1996
+    }
+  ],
   "next": [
     "energy-systems",
     "computational-fluid-dynamics"

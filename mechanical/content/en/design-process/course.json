@@ -7,11 +7,26 @@
   "order": 100,
   "tagline": "Requirements, concept generation and selection, embodiment design, design for manufacture and assembly, reliability and risk, sustainability, standards and ethics",
   "summary": "Design turns a need into a product that can be made, used safely and maintained. The course follows the design process from customer needs and specifications through concept generation and selection to embodiment and detail design, and covers design for manufacture and assembly, reliability and risk, sustainable design, standards and the professional responsibilities of engineers.",
-  "overview": [],
+  "overview": [
+    "The engineering design process is the discipline that turns a customer need into a product that can be manufactured, used safely, maintained economically, and disposed of responsibly. The discipline is not a sequence of steps but a structured iteration: the designer moves from the vague need to the precise specification, from the specification to the concept, from the concept to the embodiment, and from the embodiment to the detail, and each step is a decision that constrains the next. The cost of changing a decision grows by a factor of ten with each step, and the growth is the reason the early decisions are the most important decisions the engineer makes.",
+    "The course follows the design process from the customer need through the requirements specification, the function structure, the morphological chart, the concept selection matrix, the embodiment layout, the sizing calculation, the tolerance stack-up, the design for manufacture and assembly, the reliability and risk assessment, the life-cycle assessment, and the standards and ethics that govern the engineer's obligation to the public. Each lesson is a stage in the process, and the stages are connected by the deliverables: the specification is the input to the concept generation, the concept selection is the input to the embodiment, the embodiment is the input to the DFM, and the DFM is the input to the production.",
+    "The quantitative tools of the design process are the quality function deployment (QFD), the morphological chart, the Pugh matrix, the weighted-objective matrix, the Pareto front, the tolerance stack-up (worst-case and RSS), the Boothroya-Dewhurst assembly time model, the piece-cost model, the Weibull reliability model, the FMEA/RPN, the fault tree, the life-cycle assessment, and the carbon footprint. The tools are not the design; the tools are the language in which the design decision is expressed, and the language is the reason the decision is defensible in a review, a court of law, and a regulatory investigation.",
+    "The course also covers the professional context of the design process: the engineering code of ethics, the standards hierarchy (ISO, EN, national, industry), the CE marking and the EU Directives, the intellectual property (patents, trademarks, copyrights, trade secrets), the professional indemnity, the chartered status, and the continuous professional development. The professional context is the reason the engineer's signature is a legal document, not a formality, and the legal document is the reason the engineer's obligation is to the public, not to the customer."
+  ],
   "prerequisites": [
     "engineering-graphics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Model the design process as a structured iteration (Pahl & Beitz, V-model, stage-gate) and identify the cost-of-change curve that justifies the early investment in design.",
+    "Elicit, prioritise, and document the customer requirements using SMART criteria, MoSCoW prioritisation, and quality function deployment (QFD).",
+    "Generate concepts using function structures, morphological charts, brainstorming, brainwriting, TRIZ, and analogical transfer, and document the concepts on concept sheets.",
+    "Select concepts using screening matrices, Pugh matrices, weighted-objective matrices, and Pareto fronts, and perform the weight sensitivity analysis.",
+    "Develop the embodiment design: layout, packaging, architecture, interface control, sizing calculations, tolerance stack-up (worst-case and RSS), and prototype hierarchy.",
+    "Apply design for manufacture and assembly (DFM/DFA) rules, the Boothroya-Dewhurst assembly time model, and the piece-cost model to minimise the manufacturing cost.",
+    "Assess reliability and risk using the Weibull distribution, the FMEA/RPN, the fault tree, the reliability block diagram, the derating analysis, and the risk matrix.",
+    "Conduct a life-cycle assessment (LCA), calculate the carbon footprint, and apply the circular economy principles (design for disassembly, remanufacture, recycling) to minimise the environmental impact.",
+    "Identify the applicable standards and regulations (ISO, EN, CE marking, EU Directives), understand the intellectual property framework (patents, trademarks, FTO), and apply the engineering code of ethics to the design decision."
+  ],
   "chapters": [
     {
       "slug": "design-process-overview",
@@ -85,8 +100,103 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1775,
+      "title": "Watt's separate condenser patent",
+      "detail": "Matthew Boulton and James Watt patent the separate condenser, the first industrial patent to be enforced in court. The patent gives Watt a 25-year monopoly on the steam engine."
+    },
+    {
+      "year": 1879,
+      "title": "Tay Bridge disaster",
+      "detail": "The railway bridge collapses in a storm, killing 75 people. The inquiry finds inadequate design, poor construction, and negligent inspection. The disaster is the reason the engineer's signature is a legal document."
+    },
+    {
+      "year": 1927,
+      "title": "Shewhart's PDCA cycle",
+      "detail": "Walter Shewhart publishes 'The Economic Control of Quality of Manufactured Product', introducing the PDCA (Plan-Do-Check-Act) cycle, the foundation of the iterative design process."
+    },
+    {
+      "year": 1947,
+      "title": "IMechE Royal Charter",
+      "detail": "The Institution of Mechanical Engineers is granted its Royal Charter, establishing the chartered engineer (CEng) as a legal qualification."
+    },
+    {
+      "year": 1963,
+      "title": "Pugh's concept selection matrix",
+      "detail": "Edward Pugh publishes 'Total Design', introducing the concept selection matrix (the Pugh matrix), the most widely used concept selection tool in engineering."
+    },
+    {
+      "year": 1986,
+      "title": "Challenger disaster",
+      "detail": "The space shuttle breaks apart 73 seconds after launch, killing 7 astronauts. The O-ring seals failed because the launch temperature was below the certification limit, and the engineers' recommendation to postpone was overruled."
+    },
+    {
+      "year": 1987,
+      "title": "Brundtland Report",
+      "detail": "The World Commission on Environment and Development defines sustainable development as 'development that meets the needs of the present without compromising the ability of future generations to meet their own needs.'"
+    },
+    {
+      "year": 2009,
+      "title": "EU Ecodesign Directive",
+      "detail": "The EU Ecodesign Directive (2009/125/EC) sets the minimum energy performance standards for energy-related products, covering 14 product groups and saving 10% of the EU's primary energy by 2020."
+    }
+  ],
+  "references": [
+    {
+      "authors": "Gerhard Pahl, Wolfgang Beitz, Karl-Heinz Feldt and Wolfgang Pehkonen",
+      "title": "Engineering Design: A Systematic Approach",
+      "edition": "4th",
+      "publisher": "Springer",
+      "year": "2007"
+    },
+    {
+      "authors": "Stuart Pugh",
+      "title": "Total Design: A Compendium of Design Methodology and Organisation",
+      "publisher": "Addison-Wesley",
+      "year": "1990"
+    },
+    {
+      "authors": "Graham P. Hammond and Michael F. Ashby",
+      "title": "Materials Selection in Mechanical Design",
+      "edition": "6th",
+      "publisher": "Butterworth-Heinemann",
+      "year": "2021"
+    },
+    {
+      "authors": "Geoffrey Boothroya, Dewhurst and Winston",
+      "title": "Product Design for Manufacture and Assembly",
+      "edition": "3rd",
+      "publisher": "CRC Press",
+      "year": "2010"
+    },
+    {
+      "authors": "Nigel Cross",
+      "title": "Engineering Design Methods: Strategies for Product Design",
+      "edition": "4th",
+      "publisher": "Wiley",
+      "year": "2011"
+    },
+    {
+      "authors": "Mike Martin and Roland Schinzinger",
+      "title": "Ethics in Engineering",
+      "edition": "4th",
+      "publisher": "McGraw-Hill",
+      "year": "2005"
+    },
+    {
+      "authors": "IMechE",
+      "title": "The Institution of Mechanical Engineers: Rules and Regulations",
+      "publisher": "IMechE",
+      "year": "2023"
+    },
+    {
+      "authors": "EU",
+      "title": "Directive 2006/42/EC on Machinery (Machinery Directive)",
+      "publisher": "European Parliament",
+      "year": "2006"
+    }
+  ],
   "next": [
     "machine-design"
   ]
