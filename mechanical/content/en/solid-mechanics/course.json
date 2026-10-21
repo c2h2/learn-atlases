@@ -7,11 +7,27 @@
   "order": 140,
   "tagline": "Stress and strain tensors, linear elasticity, energy methods, thick cylinders and rotating discs, thin-walled structures, plates, plasticity, fracture and composites",
   "summary": "Solid mechanics goes beyond bars, shafts and beams to the general theory of deformable solids. The course develops stress and strain in three dimensions, the equations of linear elasticity and their classical solutions, energy methods, thick cylinders and rotating discs, thin-walled aircraft-type structures, the bending of plates, plasticity and limit loads, linear-elastic fracture mechanics and the mechanics of composite laminates.",
-  "overview": [],
+  "overview": [
+    "Solid mechanics is the study of the stress, strain, and displacement of deformable solids under load. It is the foundation of mechanical engineering design, because every structural component — from a bolt to an aircraft wing — is designed using the principles of solid mechanics. This course develops the general theory of deformable solids, going beyond the elementary bar, shaft, and beam theories of mechanics of materials to the full three-dimensional theory of elasticity, plasticity, and fracture.",
+    "The course begins with the Cauchy stress tensor and the small-strain tensor, which are the mathematical foundations of the theory. The equilibrium equations, the compatibility equations, and the constitutive equations are derived from first principles, and the boundary-value problem of elasticity is formulated. The Airy stress function is introduced as a powerful tool for solving two-dimensional elasticity problems, and the biharmonic equation is derived.",
+    "The course then develops the classical solutions of elasticity: the Lamé solution for thick-walled cylinders and rotating discs, the membrane theory for thin-walled pressure vessels, the Kirchhoff theory for the bending of plates, and the shear flow theory for thin-walled beams. These solutions are the foundation of pressure vessel design, aircraft structural design, and turbomachinery design.",
+    "The course covers energy methods, which are the most powerful tools in solid mechanics. The strain energy, Castigliano's theorems, the principle of virtual work, and the principle of minimum potential energy are developed, and the Rayleigh-Ritz method is introduced as an approximate method for solving boundary-value problems. The finite element method is presented as the numerical implementation of the minimum potential energy principle.",
+    "The course concludes with the advanced topics of plasticity, fracture mechanics, and composite mechanics. The yield criteria, hardening rules, limit analysis, and shakedown are developed for the plasticity. The stress intensity factor, fracture toughness, J-integral, and fatigue crack growth are developed for the fracture mechanics. The classical lamination theory, failure criteria, and delamination are developed for the composite mechanics."
+  ],
   "prerequisites": [
     "mechanics-of-materials"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Formulate the three-dimensional stress and strain tensors, the equilibrium equations, and the compatibility equations for a deformable solid.",
+    "Solve the boundary-value problem of linear elasticity using the Airy stress function and the biharmonic equation for plane stress and plane strain problems.",
+    "Apply the Lamé solution to calculate the stress distribution in thick-walled cylinders, shrink fits, and rotating discs.",
+    "Use the membrane theory, shear flow, and Bredt formula to analyse thin-walled pressure vessels and thin-walled beams.",
+    "Apply the Kirchhoff plate equation to calculate the deflection, stress, and buckling load of rectangular and circular plates.",
+    "Use energy methods (Castigliano's theorems, virtual work, minimum potential energy) to calculate displacements and solve boundary-value problems.",
+    "Apply yield criteria, hardening rules, and limit analysis to calculate the collapse load of structures.",
+    "Calculate the stress intensity factor, fracture toughness, and fatigue crack growth rate to design damage-tolerant structures.",
+    "Apply the classical lamination theory and failure criteria to analyse composite laminates."
+  ],
   "chapters": [
     {
       "slug": "stress-strain-3d",
@@ -91,8 +107,108 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1687,
+      "title": "Newton's Principia",
+      "detail": "Isaac Newton publishes the Principia, which establishes the foundations of classical mechanics and the concept of stress as force per unit area."
+    },
+    {
+      "year": 1821,
+      "title": "Cauchy's stress tensor",
+      "detail": "Augustin-Louis Cauchy introduces the stress tensor, which is the mathematical foundation of continuum mechanics."
+    },
+    {
+      "year": 1833,
+      "title": "Lamé's elasticity theory",
+      "detail": "Gabriel Lamé publishes the theory of elasticity, including the Lamé equations for thick-walled cylinders."
+    },
+    {
+      "year": 1850,
+      "title": "Kirchhoff's plate theory",
+      "detail": "Gustav Kirchhoff publishes the Kirchhoff plate theory, which is the foundation of the plate bending theory."
+    },
+    {
+      "year": 1864,
+      "title": "Tresca yield criterion",
+      "detail": "Henri Tresca publishes the Tresca yield criterion, which is the foundation of the plasticity theory."
+    },
+    {
+      "year": 1913,
+      "title": "von Mises yield criterion",
+      "detail": "Richard von Mises publishes the von Mises yield criterion, which is the most widely used yield criterion for ductile materials."
+    },
+    {
+      "year": 1920,
+      "title": "Griffith's fracture theory",
+      "detail": "A.A. Griffith publishes the energy balance theory of fracture, which is the foundation of the fracture mechanics."
+    },
+    {
+      "year": 1957,
+      "title": "Irwin's stress intensity factor",
+      "detail": "G.R. Irwin publishes the stress intensity factor, which is the foundation of the linear elastic fracture mechanics."
+    },
+    {
+      "year": 1965,
+      "title": "Classical lamination theory",
+      "detail": "S.G. Lekhnitskii publishes the classical lamination theory, which is the foundation of the composite mechanics."
+    }
+  ],
+  "references": [
+    {
+      "author": "Stephen P. Timoshenko and James N. Goodier",
+      "title": "Theory of Elasticity",
+      "edition": "3rd ed.",
+      "year": 1970,
+      "publisher": "McGraw-Hill"
+    },
+    {
+      "author": "S.P. Timoshenko and S. Woinowsky-Krieger",
+      "title": "Theory of Plates and Shells",
+      "edition": "2nd ed.",
+      "year": 1959,
+      "publisher": "McGraw-Hill"
+    },
+    {
+      "author": "Y. Fung",
+      "title": "A First Course in Continuum Mechanics",
+      "year": 1965,
+      "publisher": "Prentice-Hall"
+    },
+    {
+      "author": "Morris Dolph",
+      "title": "Mechanics of Materials",
+      "year": 1977,
+      "publisher": "Wiley"
+    },
+    {
+      "author": "O.C. Zienkiewicz and R.L. Taylor",
+      "title": "The Finite Element Method",
+      "edition": "6th ed.",
+      "year": 2005,
+      "publisher": "Butterworth-Heinemann"
+    },
+    {
+      "author": "L.E. Malvern",
+      "title": "Introduction to the Mechanics of a Continuous Medium",
+      "year": 1969,
+      "publisher": "Prentice-Hall"
+    },
+    {
+      "author": "T.L. Anderson",
+      "title": "Fracture Mechanics: Fundamentals and Applications",
+      "edition": "4th ed.",
+      "year": 2017,
+      "publisher": "CRC Press"
+    },
+    {
+      "author": "R.M. Jones",
+      "title": "Mechanics of Composite Materials",
+      "edition": "2nd ed.",
+      "year": 1999,
+      "publisher": "Taylor & Francis"
+    }
+  ],
   "next": [
     "finite-element-method"
   ]

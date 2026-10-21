@@ -7,11 +7,27 @@
   "order": 200,
   "tagline": "The direct stiffness method, weak forms and Galerkin's method, frame, plane and isoparametric elements, convergence, field problems, structural dynamics and nonlinear analysis",
   "summary": "The finite element method turns the equations of mechanics into matrix problems a computer can solve, and is the main tool for analysing real structures. The course starts from springs, bars and trusses with the direct stiffness method, develops weak forms and Galerkin's method, builds frame, plane and isoparametric elements with numerical integration, studies convergence and meshing, extends the method to heat conduction, vibration and nonlinear problems, and ends with the verification of models.",
-  "overview": [],
+  "overview": [
+    "The finite element method is the most important computational tool in mechanical engineering. It turns the partial differential equations of solid and structural mechanics into systems of algebraic equations that a computer can solve, and it is the only practical way to analyse the complex geometries, loading conditions and material behaviour that real engineering structures present. This course builds the method from the ground up, starting with the direct stiffness method for springs and bars, and progressing through weak forms, two-dimensional elements, isoparametric mapping, convergence theory, field problems, structural dynamics and nonlinear analysis.",
+    "The course begins with the direct stiffness method, which introduces the three fundamental ideas of the finite element method: the element stiffness matrix, the assembly of element matrices into a global system, and the application of boundary conditions. These ideas are first developed for springs and bars, where the mathematics is simple enough to work through by hand, and then extended to trusses and frames, where coordinate transformations and beam elements introduce additional degrees of freedom. The weak forms and Galerkin's method lesson provides the mathematical foundation that unifies all the element types and shows why the method works.",
+    "Two-dimensional elements — the constant-strain triangle and the bilinear quadrilateral — introduce the isoparametric concept, in which the same shape functions describe both the geometry and the field variable. Gauss quadrature provides the numerical integration machinery, and the Jacobian matrix connects the parent element to the physical element. Convergence theory quantifies how quickly the finite element solution approaches the exact solution as the mesh is refined, and mesh quality metrics tell the engineer when the mesh is good enough. These lessons transform the finite element method from a recipe into a rigorous numerical method.",
+    "The final three lessons extend the method to new problem classes. Heat conduction and other field problems show that the same element technology applies to thermal, fluid flow and electromagnetic problems. Structural dynamics introduces the mass matrix, the eigenvalue problem for natural frequencies and mode shapes, and time integration schemes for transient response. Nonlinear analysis introduces the tangent stiffness matrix, Newton-Raphson iteration, and the arc-length method for tracking load-displacement paths through limit points and snap-through instabilities.",
+    "Throughout the course, the emphasis is on understanding what the method does, why it works, and when it fails. The engineer who can assemble a stiffness matrix but cannot judge whether the answer is right has learned the mechanics but not the method. The engineer who can look at a deformed mesh, a stress contour, or a convergence history and tell whether the analysis is trustworthy has learned the method. This course is designed to produce that engineer."
+  ],
   "prerequisites": [
     "solid-mechanics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Assemble the global stiffness matrix for a system of springs, bars, truss elements and frame elements, apply boundary conditions, and solve for displacements, stresses and reactions.",
+    "Derive the weak form of a boundary value problem, construct Galerkin finite element approximations, and explain why the method converges.",
+    "Construct shape functions for triangular and quadrilateral elements, compute the strain-displacement matrix B, and evaluate the element stiffness matrix by numerical integration.",
+    "Apply the isoparametric concept to map a parent element to a physical element, compute the Jacobian matrix, and select the appropriate Gauss quadrature rule.",
+    "Perform a convergence study, compute error norms, assess mesh quality using aspect ratio and skewness, and select between h-refinement and p-refinement.",
+    "Formulate finite element models for heat conduction, electrostatics and other scalar field problems, and solve transient problems using implicit time integration.",
+    "Assemble the consistent mass matrix, solve the generalized eigenvalue problem for natural frequencies and mode shapes, and integrate the equations of motion using the Newmark scheme.",
+    "Implement the Newton-Raphson iteration for nonlinear equilibrium, compute the tangent stiffness matrix, and use the arc-length method to trace load-displacement paths through limit points.",
+    "Judge the reliability of a finite element analysis by checking convergence, equilibrium, boundary conditions, and physical plausibility of the results."
+  ],
   "chapters": [
     {
       "slug": "direct-stiffness",
@@ -90,7 +106,108 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1941,
+      "title": "Turner, Clough, Martin and Topp publish the first finite element paper",
+      "detail": "The direct stiffness method for aircraft structures introduces the three fundamental ideas: element stiffness, assembly, and boundary conditions."
+    },
+    {
+      "year": 1956,
+      "title": "The term finite element is coined",
+      "detail": "Turner, Clough, Martin and Topp name the method that would become the dominant computational tool in structural mechanics."
+    },
+    {
+      "year": 1963,
+      "title": "Besseling publishes the first finite element textbook",
+      "detail": "The method moves from aerospace research laboratories to engineering practice."
+    },
+    {
+      "year": 1965,
+      "title": "Zienkiewicz and Cheung publish The Finite Element Method in Engineering Science",
+      "detail": "The first comprehensive textbook extends the method beyond structural mechanics to heat transfer, fluid flow and field problems."
+    },
+    {
+      "year": 1969,
+      "title": "Bathe, Wilson and Peterson develop the first general-purpose nonlinear FEM code",
+      "detail": "ADINA brings geometric and material nonlinearity to practical engineering analysis."
+    },
+    {
+      "year": 1975,
+      "title": "Hughes develops isoparametric elements and numerical integration",
+      "detail": "The isoparametric concept and Gauss quadrature become the standard for industrial finite element codes."
+    },
+    {
+      "year": 1983,
+      "title": "Belytschko and Tsay develop explicit dynamics codes",
+      "detail": "Central-difference time integration enables crash simulation and impact analysis."
+    },
+    {
+      "year": 1991,
+      "title": "Crisfield publishes Non-Linear Finite Element Analysis of Solids and Structures",
+      "detail": "The arc-length method and Newton-Raphson iteration become standard tools for post-buckling and collapse analysis."
+    },
+    {
+      "year": 2000,
+      "title": "Hughes publishes The Finite Element Method: Linear Static and Dynamic Finite Element Analysis",
+      "detail": "The Dover edition makes the rigorous mathematical treatment of the method accessible to a new generation."
+    }
+  ],
+  "references": [
+    {
+      "author": "O. C. Zienkiewicz, R. L. Taylor and J. Z. Zhu",
+      "year": 2013,
+      "title": "The Finite Element Method: Its Basis and Fundamentals",
+      "publisher": "Butterworth-Heinemann",
+      "edition": "7th"
+    },
+    {
+      "author": "T. J. R. Hughes",
+      "year": 2000,
+      "title": "The Finite Element Method: Linear Static and Dynamic Finite Element Analysis",
+      "publisher": "Dover"
+    },
+    {
+      "author": "K. J. Bathe",
+      "year": 2006,
+      "title": "Finite Element Procedures",
+      "publisher": "Prentice Hall"
+    },
+    {
+      "author": "J. N. Reddy",
+      "year": 2019,
+      "title": "An Introduction to the Finite Element Method",
+      "publisher": "Routledge",
+      "edition": "4th"
+    },
+    {
+      "author": "S. C. Brenner and L. R. Scott",
+      "year": 2008,
+      "title": "The Mathematical Theory of Finite Element Methods",
+      "publisher": "Springer",
+      "edition": "3rd"
+    },
+    {
+      "author": "M. A. Crisfield",
+      "year": 1991,
+      "title": "Non-Linear Finite Element Analysis of Solids and Structures: Essentials",
+      "publisher": "Wiley",
+      "volume": "1"
+    },
+    {
+      "author": "T. Belytschko, W. K. Liu and B. Moran",
+      "year": 2014,
+      "title": "Nonlinear Finite Elements for Continua and Structures",
+      "publisher": "Wiley",
+      "edition": "2nd"
+    },
+    {
+      "author": "R. L. Taylor",
+      "year": 2003,
+      "title": "The Finite Element Method: The Basis",
+      "publisher": "Butterworth-Heinemann",
+      "volume": "1"
+    }
+  ],
   "next": []
 }

@@ -7,12 +7,27 @@
   "order": 220,
   "tagline": "Energy resources, steam and gas-turbine power plants, combined cycles, engines, refrigeration and air conditioning, solar, wind and hydro power, storage, cost and emissions",
   "summary": "Energy systems convert fuels, heat, wind and sunlight into the electricity, heating and cooling that society uses. The course applies thermodynamics and heat transfer to steam and gas-turbine power plants, combined cycles and cogeneration, internal combustion engines, refrigeration, heat pumps and air conditioning, solar, wind and hydropower and energy storage, and compares systems by efficiency, cost and emissions.",
-  "overview": [],
+  "overview": [
+    "Energy systems is the study of how fuels, heat, wind and sunlight are converted into the electricity, heating and cooling that society uses. The course applies the first and second laws of thermodynamics, heat transfer and fluid mechanics to the design and analysis of power plants, engines, refrigeration systems and renewable energy technologies. Every energy conversion device — from a coal-fired boiler to a rooftop solar panel — is governed by the same conservation laws, and the engineer's task is to maximize the useful output while minimizing waste, cost and emissions.",
+    "The course begins with the energy overview: primary energy sources, conversion chains and their efficiencies, and the units and statistics of global energy use. It then proceeds through the major conversion technologies in order of thermodynamic temperature: steam power plants (Rankine cycle), gas turbines and combined cycles (Brayton cycle), internal combustion engines (Otto and Diesel cycles), and refrigeration and heat pumps (reverse Rankine cycle). Each technology is analyzed from first principles — cycle analysis, component design, performance optimization — and placed in its industrial and environmental context.",
+    "The renewable energy chapters cover solar energy (photovoltaic and solar thermal), wind and hydropower (Betz limit, turbine selection, capacity factor), and energy storage (batteries, pumped hydro, thermal storage, hydrogen). These chapters introduce the stochastic and variable nature of renewable resources, the role of storage in matching supply to demand, and the grid integration challenges that distinguish renewable systems from conventional dispatchable plants.",
+    "The final chapter addresses energy economics and emissions: the levelized cost of energy (LCOE), the social cost of carbon (SCC), carbon intensity of electricity, and life cycle assessment (LCA). These tools allow the engineer to compare technologies on a common economic and environmental basis, and to make informed decisions about the energy transition. The course assumes a solid foundation in thermodynamics and heat transfer, and prepares students for advanced work in power engineering, renewable energy, HVAC, and energy policy."
+  ],
   "prerequisites": [
     "thermodynamics",
     "heat-transfer"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Analyze steam and gas turbine power plant cycles (Rankine, Brayton, combined cycle) and calculate thermal efficiency, net work and heat rate",
+    "Design and evaluate internal combustion engine cycles (Otto, Diesel, dual) and calculate indicated and brake thermal efficiency, MEP and BSFC",
+    "Analyze vapour-compression refrigeration and heat pump cycles, calculate COP, and size HVAC cooling loads",
+    "Calculate solar irradiance, photovoltaic cell efficiency, and solar thermal collector performance using the Hottel-Whillier-Bliss equation",
+    "Apply the Betz limit and Weibull distribution to wind turbine performance, and calculate hydroelectric power from head and flow rate",
+    "Compare energy storage technologies (batteries, pumped hydro, thermal, hydrogen) by energy density, power density, round-trip efficiency and cost",
+    "Calculate the levelized cost of energy (LCOE), social cost of carbon (SCC), and carbon intensity of electricity for technology comparison",
+    "Perform life cycle assessment (LCA) and energy payback time calculations for energy systems",
+    "Evaluate the environmental impact of energy systems including CO2 emissions, air pollutants, and resource depletion"
+  ],
   "chapters": [
     {
       "slug": "energy-overview",
@@ -91,7 +106,103 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1712,
+      "title": "Newcomen atmospheric engine",
+      "detail": "The first practical steam engine marks the beginning of mechanical energy conversion."
+    },
+    {
+      "year": 1769,
+      "title": "Watt separate condenser",
+      "detail": "James Watt's improvement doubles the efficiency of the steam engine, enabling the Industrial Revolution."
+    },
+    {
+      "year": 1824,
+      "title": "Carnot cycle published",
+      "detail": "Sadi Carnot establishes the theoretical maximum efficiency of heat engines, founding thermodynamics."
+    },
+    {
+      "year": 1876,
+      "title": "Otto four-stroke engine",
+      "detail": "Nikola Otto builds the first practical four-stroke internal combustion engine."
+    },
+    {
+      "year": 1892,
+      "title": "Diesel engine patented",
+      "detail": "Rudolf Diesel patents the compression-ignition engine, achieving 26% thermal efficiency."
+    },
+    {
+      "year": 1939,
+      "title": "First utility gas turbine",
+      "detail": "The Neuchatel gas turbine enters service, inaugurating the era of gas turbine power generation."
+    },
+    {
+      "year": 1954,
+      "title": "First nuclear power plant",
+      "detail": "Obninsk nuclear power plant in the USSR becomes the first to generate electricity for a national grid."
+    },
+    {
+      "year": 2015,
+      "title": "Paris Agreement",
+      "detail": "195 nations agree to limit global warming to well below 2°C, driving the global energy transition."
+    }
+  ],
+  "references": [
+    {
+      "author": "Y. A. Cengel and M. A. Boles",
+      "year": 2019,
+      "title": "Thermodynamics: An Engineering Approach",
+      "publisher": "McGraw-Hill",
+      "edition": "9th"
+    },
+    {
+      "author": "M. J. Moran, H. N. Shapiro, D. D. Boettcher, M. B. Bailey and J. M. Munson",
+      "year": 2018,
+      "title": "Fundamentals of Engineering Thermodynamics",
+      "publisher": "Wiley",
+      "edition": "9th"
+    },
+    {
+      "author": "J. B. Heywood",
+      "year": 2018,
+      "title": "Internal Combustion Engine Fundamentals",
+      "publisher": "McGraw-Hill",
+      "edition": "2nd"
+    },
+    {
+      "author": "J. A. Duffie and W. A. Beckman",
+      "year": 2013,
+      "title": "Solar Engineering of Thermal Processes",
+      "publisher": "Wiley",
+      "edition": "4th"
+    },
+    {
+      "author": "T. Burton, D. Sharpe, N. Jenkins and E. Bossanyi",
+      "year": 2011,
+      "title": "Wind Energy Handbook",
+      "publisher": "Wiley",
+      "edition": "2nd"
+    },
+    {
+      "author": "P. K. Nag",
+      "year": 2008,
+      "title": "Power Plant Engineering",
+      "publisher": "McGraw-Hill",
+      "edition": "3rd"
+    },
+    {
+      "author": "W. Nordhaus",
+      "year": 2018,
+      "title": "The Climate Casino: Risk, Uncertainty, and Economics for a Warming World",
+      "publisher": "Yale University Press"
+    },
+    {
+      "author": "IEA",
+      "year": 2022,
+      "title": "World Energy Outlook",
+      "publisher": "International Energy Agency"
+    }
+  ],
   "next": []
 }

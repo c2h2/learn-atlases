@@ -7,12 +7,28 @@
   "order": 240,
   "tagline": "Rigid-body motions, forward and inverse kinematics, Jacobians, manipulator dynamics, trajectory planning, motion and force control, mobile robots and motion planning",
   "summary": "Robots are mechanisms under computer control. The course describes rigid-body motion with rotation matrices and homogeneous transformations, solves the forward and inverse kinematics of manipulators, derives velocity Jacobians and singularities, formulates manipulator dynamics, plans trajectories, designs joint-space, task-space and force controllers, and introduces mobile robots, perception and motion planning.",
-  "overview": [],
+  "overview": [
+    "Robots are mechanisms under computer control. The course describes rigid-body motion with rotation matrices and homogeneous transformations, solves the forward and inverse kinematics of manipulators, derives velocity Jacobians and singularities, formulates manipulator dynamics, plans trajectories, designs joint-space, task-space and force controllers, and introduces mobile robots, perception and motion planning.",
+    "The course begins with the mathematical description of rigid-body motions: rotation matrices, Euler angles, quaternions and homogeneous transformations. These tools are then applied to the forward kinematics of serial manipulators using the Denavit-Hartenberg convention and the product-of-exponentials formula. The inverse kinematics is solved geometrically for simple robots and numerically for general 6-axis manipulators, with attention to multiple solutions, workspace boundaries and singularities.",
+    "Velocity kinematics is described by the manipulator Jacobian, which maps joint velocities to end-effector twist and joint torques to end-effector wrenches. The manipulability ellipsoid and Yoshikawa index characterize the robot's velocity and force capabilities. Manipulator dynamics is formulated using the Euler-Lagrange and Newton-Euler approaches, yielding the mass matrix, Coriolis and gravity terms that govern the robot's dynamic behavior.",
+    "Trajectory planning generates smooth joint-space and Cartesian-space motion using polynomial, trapezoidal and s-curve profiles. Robot control encompasses joint-space PID, computed-torque feedback linearization, operational-space control, and impedance and hybrid position/force control for contact tasks. The course concludes with mobile robot kinematics, odometry, path-following control, configuration-space motion planning and probabilistic state estimation.",
+    "The course emphasizes the geometric and algebraic structures underlying robot kinematics and dynamics, the computational complexity of forward and inverse problems, and the practical implementation of real-time control algorithms on industrial and research platforms."
+  ],
   "prerequisites": [
     "mechanisms",
     "control-systems"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe rigid-body motions using rotation matrices, Euler angles, quaternions and homogeneous transformations",
+    "Solve the forward kinematics of serial manipulators using the DH convention and the product-of-exponentials formula",
+    "Solve the inverse kinematics geometrically and numerically, identifying multiple solutions and singularities",
+    "Derive the manipulator Jacobian and analyze singularities, manipulability and static force mapping",
+    "Formulate manipulator dynamics using Euler-Lagrange and Newton-Euler methods",
+    "Plan joint-space and Cartesian-space trajectories using polynomial, trapezoidal and s-curve profiles",
+    "Design joint-space, computed-torque, impedance and hybrid position/force controllers",
+    "Analyze mobile robot kinematics, odometry and path-following control",
+    "Apply configuration-space motion planning and probabilistic state estimation to autonomous navigation"
+  ],
   "chapters": [
     {
       "slug": "rigid-motions",
@@ -25,7 +41,7 @@
     {
       "slug": "forward-kinematics",
       "title": "Forward kinematics",
-      "summary": "Joint variables, Denavit–Hartenberg parameters and the product-of-exponentials formula.",
+      "summary": "Joint variables, Denavit\u2013Hartenberg parameters and the product-of-exponentials formula.",
       "requires": [
         "robotics/rigid-motions",
         "mechanisms/mechanisms-mobility"
@@ -50,7 +66,7 @@
     {
       "slug": "manipulator-dynamics",
       "title": "Manipulator dynamics",
-      "summary": "The Euler–Lagrange and Newton–Euler equations of motion of robot arms.",
+      "summary": "The Euler\u2013Lagrange and Newton\u2013Euler equations of motion of robot arms.",
       "requires": [
         "robotics/jacobians",
         "dynamics/rigid-body-kinetics"
@@ -91,7 +107,103 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1876,
+      "title": "Cayley's theory of screw displacements",
+      "detail": "Arthur Cayley publishes the theory of screw displacements, which is the mathematical foundation of rigid-body kinematics and the product-of-exponentials formula."
+    },
+    {
+      "year": 1955,
+      "title": "Denavit-Hartenberg convention",
+      "detail": "Jacques Denavit and Richard-Hartenberg publish their robot kinematics convention, providing a systematic method for describing the forward kinematics of serial manipulators."
+    },
+    {
+      "year": 1968,
+      "title": "Pieper's closed-form inverse kinematics",
+      "detail": "Donald Pieper's PhD thesis proves that a 6R manipulator with a spherical wrist has a closed-form inverse kinematics solution, enabling real-time control of industrial robots."
+    },
+    {
+      "year": 1974,
+      "title": "Paul's robot manipulator programming",
+      "detail": "Richard Paul publishes Robot Manipulators: Mathematics, Programming and Control, the first comprehensive textbook on robot kinematics, dynamics and control."
+    },
+    {
+      "year": 1985,
+      "title": "Yoshikawa's manipulability",
+      "detail": "Tsuneo Yoshikawa introduces the manipulability measure, providing a quantitative index for robot dexterity and singularity analysis."
+    },
+    {
+      "year": 1987,
+      "title": "Khatib's operational space formulation",
+      "detail": "Oussama Khatib publishes the operational space formulation, unifying motion and force control of robot manipulators in task space."
+    },
+    {
+      "year": 1992,
+      "title": "PRM probabilistic roadmaps",
+      "detail": "Kavraki, Svestka, Latombe and Overmars publish the Probabilistic Roadmap method, enabling motion planning for high-dimensional robots."
+    },
+    {
+      "year": 1998,
+      "title": "LaValle's RRT",
+      "detail": "Steven LaValle publishes Rapidly-exploring Random Trees, providing a practical sampling-based motion planner for single-query problems."
+    },
+    {
+      "year": 2010,
+      "title": "KUKA LBR iiwa collaborative robot",
+      "detail": "KUKA introduces the LBR iiwa, a 7-axis redundant robot with torque sensors in every joint, enabling compliant impedance control for collaborative assembly."
+    }
+  ],
+  "references": [
+    {
+      "author": "J. J. Craig",
+      "title": "Introduction to Robotics: Mechanics and Control",
+      "publisher": "Pearson",
+      "year": 2005,
+      "edition": "3rd"
+    },
+    {
+      "author": "K. M. Lynch and F. C. Park",
+      "title": "Modern Robotics: Mechanics, Planning, and Control",
+      "publisher": "Cambridge University Press",
+      "year": 2017
+    },
+    {
+      "author": "B. Siciliano and O. Khatib (eds.)",
+      "title": "Springer Handbook of Robotics",
+      "publisher": "Springer",
+      "year": 2016
+    },
+    {
+      "author": "R. Murray, Z. Li and S. Sastry",
+      "title": "A Mathematical Introduction to Robotic Manipulation",
+      "publisher": "CRC Press",
+      "year": 1994
+    },
+    {
+      "author": "M. W. Spong, S. Hutchinson and M. Vidyasagar",
+      "title": "Robot Modeling and Control",
+      "publisher": "Wiley",
+      "year": 2006
+    },
+    {
+      "author": "S. M. LaValle",
+      "title": "Planning Algorithms",
+      "publisher": "Cambridge University Press",
+      "year": 2006
+    },
+    {
+      "author": "S. Thrun, W. Burgard and D. Fox",
+      "title": "Probabilistic Robotics",
+      "publisher": "MIT Press",
+      "year": 2005
+    },
+    {
+      "author": "R. Featherstone",
+      "title": "Rigid Body Dynamics Algorithms",
+      "publisher": "Springer",
+      "year": 2008
+    }
+  ],
   "next": []
 }

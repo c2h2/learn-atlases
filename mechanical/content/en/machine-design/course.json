@@ -7,12 +7,26 @@
   "order": 130,
   "tagline": "Static failure theories, fatigue, shafts, bearings, gears, fasteners and welded joints, springs, clutches, brakes, belts and chains",
   "summary": "Machine design sizes the components that make machines work so that they neither break nor wear out too soon. Building on mechanics of materials, the course covers failure theories for static loading, fatigue under fluctuating loads, and the design and selection of shafts, rolling and journal bearings, gears, threaded fasteners and welded joints, springs, and clutches, brakes, belts and chains.",
-  "overview": [],
+  "overview": [
+    "Machine design is the discipline that transforms the stresses, deflections, and fatigue limits of mechanics of materials into the geometry, tolerances, and material specifications of real components. The course begins with the failure theories that tell the engineer when a component is about to yield or fracture: the maximum shear stress (Tresca) and distortion energy (von Mises) criteria for ductile materials, the maximum normal stress and Mohr-Coulomb criteria for brittle materials, and the stress concentration factors that turn a nominal stress into a peak stress. These theories are the foundation on which every subsequent lesson builds, and the foundation is the reason the engineer can size a shaft, select a bearing, or specify a bolt without guessing.",
+    "The second group of lessons covers the components that rotate: shafts, bearings, and gears. The shaft is sized by the ASME equation, which combines the bending moment and the torque into an equivalent moment and then solves for the diameter. The bearing is selected by the L10 life equation, which relates the applied load to the basic dynamic load rating and the desired life. The gear is rated by the Lewis bending equation and the Hertzian contact stress, which together determine whether the tooth will break at the root or pit at the surface. These three components are the heart of every gearbox, and the gearbox is the reason the machine can change speed and torque.",
+    "The third group of lessons covers the components that join, store, and transmit: fasteners, springs, clutches, brakes, belts, and chains. The bolted joint is designed by the preload and joint stiffness model, which determines how much of the external load is carried by the bolt and how much by the joint. The spring is designed by the Wahl-corrected stress and the Goodman fatigue criterion. The clutch and brake are designed by the friction torque and the thermal capacity. The belt and chain are designed by the Euler-Eytelwein equation and the fatigue life. These components are the reason the machine can be assembled, can store energy, and can transmit power over a distance.",
+    "Throughout the course, the emphasis is on the calculation, not the rule of thumb. Every lesson includes worked examples with verified numerical answers, exercises with check values, and derivations that show where the formulas come from. The student who completes this course will be able to size a complete gearbox — shaft, bearings, gears, keys, and housing — and justify every dimension with a calculation."
+  ],
   "prerequisites": [
     "mechanics-of-materials",
     "design-process"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Apply the Tresca, von Mises, and Mohr-Coulomb failure theories to size a component under static loading",
+    "Construct and interpret S-N curves, apply Marin modifying factors, and use the Goodman and Gerber criteria for fluctuating stresses",
+    "Size a shaft using the ASME equation, check its deflection and critical speed, and design the key and keyway",
+    "Select a rolling bearing by the L10 life equation and analyse a journal bearing using the Sommerfeld number",
+    "Rate a gear using the Lewis bending equation and the Hertzian contact stress, and check the pitting and bending safety factors",
+    "Design a bolted joint by calculating the preload, joint stiffness, and fatigue safety factor using the Goodman criterion",
+    "Design a helical compression spring by calculating the rate, the Wahl-corrected stress, and the fatigue safety factor",
+    "Size a clutch, brake, belt, or chain drive by calculating the torque capacity, heat generation, and fatigue life"
+  ],
   "chapters": [
     {
       "slug": "static-failure",
@@ -83,7 +97,110 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1773,
+      "title": "Coulomb's friction law",
+      "detail": "Charles-Augustin de Coulomb publishes the law of friction, which becomes the foundation of clutch, brake, and belt design."
+    },
+    {
+      "year": 1807,
+      "title": "Thomas Tredgold's machinery",
+      "detail": "Thomas Tredgold publishes 'Elements of Machinery', the first English-language textbook on machine design, covering shafts, gears, and bearings."
+    },
+    {
+      "year": 1853,
+      "title": "Wohler's fatigue experiments",
+      "detail": "August Wohler begins his systematic fatigue experiments on railway axles in Berlin, establishing the S-N curve and the endurance limit."
+    },
+    {
+      "year": 1892,
+      "title": "Lewis bending equation",
+      "detail": "Wilfred Lewis publishes the bending equation for gear teeth, the first quantitative gear design equation."
+    },
+    {
+      "year": 1921,
+      "title": "Griffith's fracture theory",
+      "detail": "A.A. Griffith publishes the energy-based fracture theory, which explains why brittle materials fail at stresses far below their theoretical strength."
+    },
+    {
+      "year": 1942,
+      "title": "AGMA gear standard",
+      "detail": "The American Gear Manufacturers Association publishes the first gear design standard, extending the Lewis equation to account for dynamic load, load distribution, and size."
+    },
+    {
+      "year": 1953,
+      "title": "Miner's cumulative damage rule",
+      "detail": "M.A. Miner publishes his linear cumulative damage rule, which allows the engineer to calculate the fatigue life under variable amplitude loading."
+    },
+    {
+      "year": 1966,
+      "title": "Shigley's machine design textbook",
+      "detail": "Joseph Shigley publishes 'Mechanical Engineering Design', which becomes the standard machine design textbook for the next six decades."
+    }
+  ],
+  "references": [
+    {
+      "type": "book",
+      "title": "Fundamentals of Machine Component Design",
+      "author": "Robert C. Juvinall and Kurt M. Marshek",
+      "year": 2020,
+      "publisher": "Wiley",
+      "edition": "7th"
+    },
+    {
+      "type": "book",
+      "title": "Mechanical Engineering Design",
+      "author": "Joseph E. Shigley, Charles R. Mischke and Richard G. Budynas",
+      "year": 2015,
+      "publisher": "McGraw-Hill",
+      "edition": "11th"
+    },
+    {
+      "type": "book",
+      "title": "Machinery's Handbook",
+      "author": "Erik Oberg, Franklin D. Jones and Holbrook L. Horton",
+      "year": 2020,
+      "publisher": "Industrial Press",
+      "edition": "31st"
+    },
+    {
+      "type": "book",
+      "title": "Rolling Bearings in Technical Computations",
+      "author": "Theodor A. Harris and MN Kotzalas",
+      "year": 2006,
+      "publisher": "Wiley",
+      "edition": "2nd"
+    },
+    {
+      "type": "book",
+      "title": "Fundamentals of Gear Design",
+      "author": "Faydor L. Litvin and Alfonso Fuentes",
+      "year": 2004,
+      "publisher": "Cambridge University Press",
+      "edition": "2nd"
+    },
+    {
+      "type": "book",
+      "title": "The Design of Bolted Joints",
+      "author": "W. Maurice",
+      "year": 2000,
+      "publisher": "Marcel Dekker"
+    },
+    {
+      "type": "book",
+      "title": "Spring Design and Application",
+      "author": "Donald V.",
+      "year": 2000,
+      "publisher": "Springer"
+    },
+    {
+      "type": "standard",
+      "title": "VDI 2230: Systematic Calculation of High Duty Bolted Joints",
+      "author": "VDI",
+      "year": 2015,
+      "publisher": "VDI"
+    }
+  ],
   "next": []
 }
