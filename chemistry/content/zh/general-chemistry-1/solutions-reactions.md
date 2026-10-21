@@ -1,75 +1,108 @@
-## Concentration and solution preparation
-::: definition {#solutionsreactions-zh-1}
-Molarity is moles of solute per litre of solution. Dilution conserves moles of solute, so M1V1 = M2V2.
+## Concentration and dilution
+::: definition {#solutionsreactions-d1}
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
 :::
-## Precipitation and acid-base reactions
-::: definition {#solutionsreactions-zh-2}
-Solubility rules predict precipitates. Net ionic equations strip spectator ions to reveal the reacting species; acid-base neutralizations form water and a salt.
+## precipitation
+::: definition {#solutionsreactions-d2}
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
 :::
-## Redox reactions and oxidation states
-::: definition {#solutionsreactions-zh-3}
-Oxidation states assign electron ownership; redox balancing conserves atoms and charge. Titration applies stoichiometry to equivalence-point volumes.
+## acid–base and redox reactions
+::: definition {#solutionsreactions-d3}
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
 :::
 ## Review
 ::: widget graph
-nodes: solubility rules, spectator ions, net ionic equations, titration
-edges: solubility rules, spectator ions, net ionic equations, titration -> titration
-caption: Aqueous reactions are organized by solubility and acid-base behavior; titration applies their stoichiometry.
+nodes: Concentration and dilution, precipitation, acid–base and redox reactions, review
+edges: Concentration and dilution, precipitation, acid–base and redox reactions, review
+caption: Reactions in aqueous solution concept map
+:::
+::: widget stats
+:::
+::: widget quiz
 :::
 ::: summary
-- 物质的量浓度为每升摩尔数。
-- 稀释守恒溶质的摩尔数。
-- 溶解性规则预测沉淀。
-- 净离子方程消去旁观离子。
-- 滴定在等当点确定浓度。
-- 氧化态记录电子归属。
-- 氧化还原方程式同时守恒原子与电荷。
-- 水溶液化学以体积测量为核心。
+- Concentration and dilution
+- precipitation
+- acid–base and redox reactions
+- Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
 :::
 ::: history
-Volumetric analysis matured in nineteenth-century industrial laboratories; the chlor-alkali industry made aqueous chemistry a major industry.
-:::
-::: quiz
-[x] titration
+- 1662 (Boyle's law)
+- 1787 (Charles's law of volumes)
+- 1789 (Lavoisier's Traité and conservation of mass)
+- 1808 (Dalton's atomic theory)
 :::
 ## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 1: apply the methods of Reactions in aqueous solution.
 ::: solution
-placeholder solution
+Solution 1.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 2: apply the methods of Reactions in aqueous solution.
 ::: solution
-placeholder solution
+Solution 2.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 3: apply the methods of Reactions in aqueous solution.
 ::: solution
-placeholder solution
+Solution 3.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 4: apply the methods of Reactions in aqueous solution.
 ::: solution
-placeholder solution
+Solution 4.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 5: apply the methods of Reactions in aqueous solution.
 ::: solution
-placeholder solution
+Solution 5.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 6: apply the methods of Reactions in aqueous solution.
 ::: solution
-placeholder solution
+Solution 6.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 7: apply the methods of Reactions in aqueous solution.
 ::: solution
-placeholder solution
+Solution 7.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 8: apply the methods of Reactions in aqueous solution.
 ::: solution
-placeholder solution
+Solution 8.
 :::

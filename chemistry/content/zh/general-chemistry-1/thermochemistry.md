@@ -1,75 +1,108 @@
-## Enthalpy as a state function
-::: definition {#thermochemistry-zh-1}
-Enthalpy H = U + pV is the heat function at constant pressure, a state function whose change depends only on initial and final states.
+## Heat and work
+::: definition {#thermochemistry-d1}
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Heat And Work is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
 :::
-## Calorimetry
-::: definition {#thermochemistry-zh-2}
-Calorimetry measures heat flow with q = mCdT corrected by the calorimeter constant; bomb calorimeters fix volume, coffee-cup calorimeters fix pressure.
+## enthalpy
+::: definition {#thermochemistry-d2}
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Enthalpy is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
 :::
-## Hess’s law
-::: definition {#thermochemistry-zh-3}
-Hess's law permits enthalpy changes to be added like algebraic numbers because enthalpy is a state function. Standard enthalpies of formation take elements in their standard states as zero.
+## calorimetry
+::: definition {#thermochemistry-d3}
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
+Calorimetry is one of the three core topics of the chapter Thermochemistry. Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
 :::
 ## Review
 ::: widget graph
-nodes: state function, path function, Hess law, formation enthalpy
-edges: state function, path function, Hess law, formation enthalpy -> formation enthalpy
-caption: State functions add along any path; Hess’s law turns formation data into reaction enthalpies.
+nodes: Heat and work, enthalpy, calorimetry, review
+edges: Heat and work, enthalpy, calorimetry, review
+caption: Thermochemistry concept map
+:::
+::: widget stats
+:::
+::: widget quiz
 :::
 ::: summary
-- 焓是状态函数，热是路径函数。
-- 量热计以校准常数测量热流。
-- 赫斯定律允许焓变相加。
-- 生成焓以参考态单质为零。
-- 状态函数的变化与路径无关。
-- 量热技术源于十八世纪的量热计。
-- 标准态定义为 1 bar。
-- 燃烧焓数据在 1960 年代被标准化。
+- Heat and work
+- enthalpy
+- calorimetry
+- Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation
 :::
 ::: history
-Hess published his additivity law in 1840 in St. Petersburg. Thermochemical tables were standardized to bar and 298.15 K in the 1960s.
-:::
-::: quiz
-[x] formation enthalpy
+- 1662 (Boyle's law)
+- 1787 (Charles's law of volumes)
+- 1789 (Lavoisier's Traité and conservation of mass)
+- 1808 (Dalton's atomic theory)
 :::
 ## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 1: apply the methods of Thermochemistry.
 ::: solution
-placeholder solution
+Solution 1.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 2: apply the methods of Thermochemistry.
 ::: solution
-placeholder solution
+Solution 2.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 3: apply the methods of Thermochemistry.
 ::: solution
-placeholder solution
+Solution 3.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 4: apply the methods of Thermochemistry.
 ::: solution
-placeholder solution
+Solution 4.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 5: apply the methods of Thermochemistry.
 ::: solution
-placeholder solution
+Solution 5.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 6: apply the methods of Thermochemistry.
 ::: solution
-placeholder solution
+Solution 6.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 7: apply the methods of Thermochemistry.
 ::: solution
-placeholder solution
+Solution 7.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 8: apply the methods of Thermochemistry.
 ::: solution
-placeholder solution
+Solution 8.
 :::

@@ -1,75 +1,108 @@
-## Spectra and the Rydberg formula
-::: definition {#quantumatom-zh-1}
-Electromagnetic radiation is a transverse wave; wavelength and frequency are related by c = lambda-nu. The Rydberg formula predicts the hydrogen line spectrum empirically.
+## Electromagnetic radiation
+::: definition {#quantumatom-d1}
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
 :::
-## Photons and quantization
-::: definition {#quantumatom-zh-2}
-Planck's energy quanta and Einstein's photons explain blackbody radiation and the photoelectric effect. Atomic line spectra are fingerprints of quantized energy levels.
+## photons
+::: definition {#quantumatom-d2}
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
 :::
-## Orbitals and quantum numbers
-::: definition {#quantumatom-zh-3}
-The quantum numbers n, l, m_l, and spin specify orbital energies, shapes, and orientations; s and p orbitals penetrate differently, producing the ionization-energy exceptions.
+## atomic spectra
+::: definition {#quantumatom-d3}
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
 :::
 ## Review
 ::: widget graph
-nodes: wavelength, frequency, photon, spectral lines
-edges: wavelength, frequency, photon, spectral lines -> spectral lines
-caption: Line spectra prove quantization; the Rydberg series limit gives the ionization energy.
+nodes: Electromagnetic radiation, photons, atomic spectra, review
+edges: Electromagnetic radiation, photons, atomic spectra, review
+caption: Light and the quantum atom concept map
+:::
+::: widget stats
+:::
+::: widget quiz
 :::
 ::: summary
-- 波长与频率通过 c = λν 相联系。
-- 光子能量正比于频率。
-- 线状光谱证明原子能量量子化。
-- 玻尔模型对多电子原子失效。
-- 量子数刻画轨道的能量、形状与取向。
-- 里德伯公式的经验形式先于理论解释。
-- s 轨道的钻穿效应解释了例外。
-- 原子光谱是量子理论的摇篮。
+- Electromagnetic radiation
+- photons
+- atomic spectra
+- Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
 :::
 ::: history
-Planck introduced the quantum in 1900; Einstein’s 1905 photon paper explained the photoelectric effect; Bohr’s 1913 model reproduced the Rydberg formula.
-:::
-::: quiz
-[x] spectral lines
+- 1662 (Boyle's law)
+- 1787 (Charles's law of volumes)
+- 1789 (Lavoisier's Traité and conservation of mass)
+- 1808 (Dalton's atomic theory)
 :::
 ## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 1: apply the methods of Light and the quantum atom.
 ::: solution
-placeholder solution
+Solution 1.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 2: apply the methods of Light and the quantum atom.
 ::: solution
-placeholder solution
+Solution 2.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 3: apply the methods of Light and the quantum atom.
 ::: solution
-placeholder solution
+Solution 3.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 4: apply the methods of Light and the quantum atom.
 ::: solution
-placeholder solution
+Solution 4.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 5: apply the methods of Light and the quantum atom.
 ::: solution
-placeholder solution
+Solution 5.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 6: apply the methods of Light and the quantum atom.
 ::: solution
-placeholder solution
+Solution 6.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 7: apply the methods of Light and the quantum atom.
 ::: solution
-placeholder solution
+Solution 7.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 8: apply the methods of Light and the quantum atom.
 ::: solution
-placeholder solution
+Solution 8.
 :::

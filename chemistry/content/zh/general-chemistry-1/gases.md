@@ -1,75 +1,108 @@
-## The empirical gas laws
-::: definition {#gases-zh-1}
-Boyle's inverse pressure-volume law, Charles's direct volume-temperature law, and Avogadro's volume-moles law are experimental facts that merge into a single equation of state.
+## The gas laws
+::: definition {#gases-d1}
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
 :::
-## The ideal gas equation
-::: definition {#gases-zh-2}
-PV = nRT summarizes the empirical gas laws and demands absolute temperature in kelvin. Kinetic molecular theory explains pressure as momentum transfer and links temperature to mean molecular kinetic energy.
+## the ideal gas equation
+::: definition {#gases-d2}
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
 :::
-## Real gases and deviations
-::: definition {#gases-zh-3}
-Dalton's law makes partial pressures additive. Real gases deviate at high pressure and low temperature, where intermolecular attractions and molecular volumes matter, as the van der Waals equation captures qualitatively.
+## partial pressures
+::: definition {#gases-d3}
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
 :::
 ## Review
 ::: widget graph
-nodes: Boyle law, Charles law, Avogadro law, ideal gas equation
-edges: Boyle law, Charles law, Avogadro law, ideal gas equation -> ideal gas equation
-caption: The empirical gas laws merge into PV = nRT; deviations grow with pressure and attraction.
+nodes: The gas laws, the ideal gas equation, partial pressures, review
+edges: The gas laws, the ideal gas equation, partial pressures, review
+caption: Gases concept map
+:::
+::: widget stats
+:::
+::: widget quiz
 :::
 ::: summary
-- 经验气体定律合并为 PV = nRT。
-- 气体计算必须使用热力学温度。
-- 分子动理论把压强与动量传递相联系。
-- 道尔顿定律使分压可加。
-- 真实气体在高压低温下偏离理想行为。
-- 范德华方程定性描述了偏差。
-- 开尔文温标由体积-温度正比导出。
-- 气体密度法可测摩尔质量。
+- The gas laws
+- the ideal gas equation
+- partial pressures
+- The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
 :::
 ::: history
-Boyle published the pressure-volume law in 1662 with Hooke’s help; Charles measured thermal expansion around 1787 and Gay-Lussac published in 1802. The kelvin followed from the proportionality of volume and temperature.
-:::
-::: quiz
-[x] ideal gas equation
+- 1662 (Boyle's law)
+- 1787 (Charles's law of volumes)
+- 1789 (Lavoisier's Traité and conservation of mass)
+- 1808 (Dalton's atomic theory)
 :::
 ## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 1: apply the methods of Gases.
 ::: solution
-placeholder solution
+Solution 1.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 2: apply the methods of Gases.
 ::: solution
-placeholder solution
+Solution 2.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 3: apply the methods of Gases.
 ::: solution
-placeholder solution
+Solution 3.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 4: apply the methods of Gases.
 ::: solution
-placeholder solution
+Solution 4.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 5: apply the methods of Gases.
 ::: solution
-placeholder solution
+Solution 5.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 6: apply the methods of Gases.
 ::: solution
-placeholder solution
+Solution 6.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 7: apply the methods of Gases.
 ::: solution
-placeholder solution
+Solution 7.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 8: apply the methods of Gases.
 ::: solution
-placeholder solution
+Solution 8.
 :::

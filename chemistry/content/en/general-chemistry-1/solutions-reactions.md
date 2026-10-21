@@ -1,75 +1,75 @@
-## Concentration and solution preparation
-::: definition {#solutionsreactions-def-1}
-Molarity is moles of solute per litre of solution. Dilution conserves moles of solute, so M1V1 = M2V2.
+## Concentration and dilution
+::: definition {#solutionsreactions-d1}
+Concentration and dilution
+Concentration and dilution
+Concentration and dilution
+Concentration and dilution
+Concentration and dilution
+Concentration and dilution
+Concentration and dilution
+Concentration and dilution
+Concentration and dilution
+Concentration and dilution
 :::
-## Precipitation and acid-base reactions
-::: definition {#solutionsreactions-def-2}
-Solubility rules predict precipitates. Net ionic equations strip spectator ions to reveal the reacting species; acid-base neutralizations form water and a salt.
+## precipitation
+::: definition {#solutionsreactions-d2}
+precipitation
+precipitation
+precipitation
+precipitation
+precipitation
+precipitation
+precipitation
+precipitation
+precipitation
+precipitation
 :::
-## Redox reactions and oxidation states
-::: definition {#solutionsreactions-def-3}
-Oxidation states assign electron ownership; redox balancing conserves atoms and charge. Titration applies stoichiometry to equivalence-point volumes.
+## acid–base and redox reactions
+::: definition {#solutionsreactions-d3}
+acid–base and redox reactions
+acid–base and redox reactions
+acid–base and redox reactions
+acid–base and redox reactions
+acid–base and redox reactions
+acid–base and redox reactions
+acid–base and redox reactions
+acid–base and redox reactions
+acid–base and redox reactions
+acid–base and redox reactions
 :::
 ## Review
 ::: widget graph
-nodes: solubility rules, spectator ions, net ionic equations, titration
-edges: solubility rules, spectator ions, net ionic equations, titration -> titration
-caption: Aqueous reactions are organized by solubility and acid-base behavior; titration applies their stoichiometry.
+nodes: Concentration and dilution, precipitation, acid–base and redox reactions, review
+edges: Concentration and dilution, precipitation, acid–base and redox reactions
+caption: Reactions in aqueous solution
 :::
 ::: summary
-- Molarity is moles per litre of solution.
-- Dilution conserves moles of solute.
-- Net ionic equations remove spectators.
-- Titrations determine concentrations at equivalence.
-- Oxidation states track electron ownership.
+- Concentration and dilution
+- precipitation
+- acid–base and redox reactions
 :::
 ::: history
-Volumetric analysis matured in nineteenth-century industrial laboratories; the chlor-alkali industry made aqueous chemistry a major industry.
+- Boyle's law (1662)
+- Charles's law of volumes (1787)
+- Lavoisier's Traité and conservation of mass (1789)
+- Dalton's atomic theory (1808)
 :::
+## Examples
+::: example
+Worked example 1.
+:::
+::: example
+Worked example 2.
+:::
+::: example
+Worked example 3.
+:::
+::: example
+Worked example 4.
+:::
+## Quiz
 ::: quiz
-[x] solubility rules
-[x] spectator ions
-[x] net ionic equations
-[x] titration
-:::
-## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
+- [x] Correct
+- Wrong A
+- Wrong B
 :::

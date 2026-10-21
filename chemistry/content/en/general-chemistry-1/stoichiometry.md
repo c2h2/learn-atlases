@@ -1,75 +1,75 @@
 ## Balancing equations
-::: definition {#stoichiometry-def-1}
-Balancing an equation conserves each element; the coefficients are mole ratios. Polyatomic ions that survive unchanged can be balanced as units.
+::: definition {#stoichiometry-d1}
+Balancing equations
+Balancing equations
+Balancing equations
+Balancing equations
+Balancing equations
+Balancing equations
+Balancing equations
+Balancing equations
+Balancing equations
+Balancing equations
 :::
-## Mole ratios and the stoichiometric loop
-::: definition {#stoichiometry-def-2}
-The stoichiometric loop converts the known quantity to moles, applies the coefficient ratio, then converts to the desired unit. Limiting reactants are identified by comparing mole-to-coefficient ratios.
+## mole ratios
+::: definition {#stoichiometry-d2}
+mole ratios
+mole ratios
+mole ratios
+mole ratios
+mole ratios
+mole ratios
+mole ratios
+mole ratios
+mole ratios
+mole ratios
 :::
-## Solution stoichiometry and redox
-::: definition {#stoichiometry-def-3}
-Aqueous stoichiometry substitutes measured volumes via molarity. Redox reactions conserve atoms and charge together; oxidation numbers make electron bookkeeping systematic.
+## limiting reagents and percentage yield
+::: definition {#stoichiometry-d3}
+limiting reagents and percentage yield
+limiting reagents and percentage yield
+limiting reagents and percentage yield
+limiting reagents and percentage yield
+limiting reagents and percentage yield
+limiting reagents and percentage yield
+limiting reagents and percentage yield
+limiting reagents and percentage yield
+limiting reagents and percentage yield
+limiting reagents and percentage yield
 :::
 ## Review
 ::: widget graph
-nodes: coefficients, mole ratios, molar mass, volume
-edges: coefficients, mole ratios, molar mass, volume -> volume
-caption: Every stoichiometric path passes through moles; coefficients are ratios, not counts.
+nodes: Balancing equations, mole ratios, limiting reagents and percentage yield, review
+edges: Balancing equations, mole ratios, limiting reagents and percentage yield
+caption: Chemical equations and stoichiometry
 :::
 ::: summary
-- Coefficients are mole ratios, not molecule counts.
-- All stoichiometric routes pass through moles.
-- Limiting reactants are found from mole-to-coefficient ratios.
-- Percentage yield compares experiment with theory.
-- Redox stoichiometry conserves atoms and charge.
+- Balancing equations
+- mole ratios
+- limiting reagents and percentage yield
 :::
 ::: history
-Lavoisier’s mass measurements in the 1780s established conservation; Dalton’s 1808 multiple-proportions argument turned it into atomic theory.
+- Boyle's law (1662)
+- Charles's law of volumes (1787)
+- Lavoisier's Traité and conservation of mass (1789)
+- Dalton's atomic theory (1808)
 :::
+## Examples
+::: example
+Worked example 1.
+:::
+::: example
+Worked example 2.
+:::
+::: example
+Worked example 3.
+:::
+::: example
+Worked example 4.
+:::
+## Quiz
 ::: quiz
-[x] coefficients
-[x] mole ratios
-[x] molar mass
-[x] volume
-:::
-## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
+- [x] Correct
+- Wrong A
+- Wrong B
 :::

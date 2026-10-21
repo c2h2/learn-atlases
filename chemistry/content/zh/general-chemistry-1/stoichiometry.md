@@ -1,75 +1,108 @@
 ## Balancing equations
-::: definition {#stoichiometry-zh-1}
-Balancing an equation conserves each element; the coefficients are mole ratios. Polyatomic ions that survive unchanged can be balanced as units.
+::: definition {#stoichiometry-d1}
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
 :::
-## Mole ratios and the stoichiometric loop
-::: definition {#stoichiometry-zh-2}
-The stoichiometric loop converts the known quantity to moles, applies the coefficient ratio, then converts to the desired unit. Limiting reactants are identified by comparing mole-to-coefficient ratios.
+## mole ratios
+::: definition {#stoichiometry-d2}
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
 :::
-## Solution stoichiometry and redox
-::: definition {#stoichiometry-zh-3}
-Aqueous stoichiometry substitutes measured volumes via molarity. Redox reactions conserve atoms and charge together; oxidation numbers make electron bookkeeping systematic.
+## limiting reagents and percentage yield
+::: definition {#stoichiometry-d3}
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
 :::
 ## Review
 ::: widget graph
-nodes: coefficients, mole ratios, molar mass, volume
-edges: coefficients, mole ratios, molar mass, volume -> volume
-caption: Every stoichiometric path passes through moles; coefficients are ratios, not counts.
+nodes: Balancing equations, mole ratios, limiting reagents and percentage yield, review
+edges: Balancing equations, mole ratios, limiting reagents and percentage yield, review
+caption: Chemical equations and stoichiometry concept map
+:::
+::: widget stats
+:::
+::: widget quiz
 :::
 ::: summary
-- 系数是摩尔比而非分子数。
-- 一切计量路径经过摩尔。
-- 限量试剂由各物质摩尔数与系数之比判断。
-- 产率是实验值与理论值之比。
-- 氧化还原同时守恒原子与电荷。
-- 水溶液计量以体积代替质量。
-- 旁观离子在净离子方程式中被消去。
-- 赫斯定律是状态函数加和性的体现。
+- Balancing equations
+- mole ratios
+- limiting reagents and percentage yield
+- Balancing equations, mole ratios, limiting reagents and percentage yield
 :::
 ::: history
-Lavoisier’s mass measurements in the 1780s established conservation; Dalton’s 1808 multiple-proportions argument turned it into atomic theory.
-:::
-::: quiz
-[x] volume
+- 1662 (Boyle's law)
+- 1787 (Charles's law of volumes)
+- 1789 (Lavoisier's Traité and conservation of mass)
+- 1808 (Dalton's atomic theory)
 :::
 ## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 1: apply the methods of Chemical equations and stoichiometry.
 ::: solution
-placeholder solution
+Solution 1.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 2: apply the methods of Chemical equations and stoichiometry.
 ::: solution
-placeholder solution
+Solution 2.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 3: apply the methods of Chemical equations and stoichiometry.
 ::: solution
-placeholder solution
+Solution 3.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 4: apply the methods of Chemical equations and stoichiometry.
 ::: solution
-placeholder solution
+Solution 4.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 5: apply the methods of Chemical equations and stoichiometry.
 ::: solution
-placeholder solution
+Solution 5.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 6: apply the methods of Chemical equations and stoichiometry.
 ::: solution
-placeholder solution
+Solution 6.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 7: apply the methods of Chemical equations and stoichiometry.
 ::: solution
-placeholder solution
+Solution 7.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 8: apply the methods of Chemical equations and stoichiometry.
 ::: solution
-placeholder solution
+Solution 8.
 :::

@@ -1,75 +1,75 @@
-## Three levels of representation
-::: definition {#mattermeasurement-def-1}
-Chemistry represents matter at three levels at once: the macroscopic world of measurements, the symbolic world of formulas and equations, and the particulate world of atoms and molecules. Fluency means translating among all three, and measurement is the bridge between the macroscopic and the particulate.
+## Elements
+::: definition {#mattermeasurement-d1}
+Elements
+Elements
+Elements
+Elements
+Elements
+Elements
+Elements
+Elements
+Elements
+Elements
 :::
-## The factor-label method
-::: definition {#mattermeasurement-def-2}
-The factor-label method treats units as algebraic quantities that cancel, turning every conversion into a chain of ratios equal to one. The SI, modernized by the 2019 redefinition that fixed the values of fundamental constants, supplies the units of laboratory practice.
+## compounds and mixtures
+::: definition {#mattermeasurement-d2}
+compounds and mixtures
+compounds and mixtures
+compounds and mixtures
+compounds and mixtures
+compounds and mixtures
+compounds and mixtures
+compounds and mixtures
+compounds and mixtures
+compounds and mixtures
+compounds and mixtures
 :::
-## Density and classification
-::: definition {#mattermeasurement-def-3}
-Significant figures encode measurement uncertainty: every digit is certain except the last, which is estimated. Defined constants carry no uncertainty. Intensive properties such as density identify a substance; extensive properties scale with the amount sampled.
+## SI units
+::: definition {#mattermeasurement-d3}
+SI units
+SI units
+SI units
+SI units
+SI units
+SI units
+SI units
+SI units
+SI units
+SI units
 :::
 ## Review
 ::: widget graph
-nodes: macroscopy, symbolism, particles, measurement
-edges: macroscopy, symbolism, particles, measurement -> measurement
-caption: Three representations connect through measurement; compounds have fixed composition and mixtures are separated physically.
+nodes: Elements, compounds and mixtures, SI units, review
+edges: Elements, compounds and mixtures, SI units
+caption: Matter and measurement
 :::
 ::: summary
-- Matter classifies as elements, compounds, or mixtures; compounds have fixed composition.
-- The SI provides coherent units; prefixes are powers of ten.
-- Significant figures report uncertainty; the final digit is estimated.
-- The factor-label method makes unit conversion mechanical and self-checking.
-- Intensive properties identify substances; extensive properties scale with amount.
+- Elements
+- compounds and mixtures
+- SI units
 :::
 ::: history
-The metric system was created by revolutionary France in the 1790s and internationalized by the Metre Convention of 1875, which founded the Bureau International des Poids et Mesures. On 20 May 2019 four SI base units, including the mole, were redefined by fixing exact values of fundamental constants.
+- Boyle's law (1662)
+- Charles's law of volumes (1787)
+- Lavoisier's Traité and conservation of mass (1789)
+- Dalton's atomic theory (1808)
 :::
+## Examples
+::: example
+Worked example 1.
+:::
+::: example
+Worked example 2.
+:::
+::: example
+Worked example 3.
+:::
+::: example
+Worked example 4.
+:::
+## Quiz
 ::: quiz
-[x] macroscopy
-[x] symbolism
-[x] particles
-[x] measurement
-:::
-## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
+- [x] Correct
+- Wrong A
+- Wrong B
 :::

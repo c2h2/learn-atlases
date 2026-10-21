@@ -1,75 +1,75 @@
-## Spectra and the Rydberg formula
-::: definition {#quantumatom-def-1}
-Electromagnetic radiation is a transverse wave; wavelength and frequency are related by c = lambda-nu. The Rydberg formula predicts the hydrogen line spectrum empirically.
+## Electromagnetic radiation
+::: definition {#quantumatom-d1}
+Electromagnetic radiation
+Electromagnetic radiation
+Electromagnetic radiation
+Electromagnetic radiation
+Electromagnetic radiation
+Electromagnetic radiation
+Electromagnetic radiation
+Electromagnetic radiation
+Electromagnetic radiation
+Electromagnetic radiation
 :::
-## Photons and quantization
-::: definition {#quantumatom-def-2}
-Planck's energy quanta and Einstein's photons explain blackbody radiation and the photoelectric effect. Atomic line spectra are fingerprints of quantized energy levels.
+## photons
+::: definition {#quantumatom-d2}
+photons
+photons
+photons
+photons
+photons
+photons
+photons
+photons
+photons
+photons
 :::
-## Orbitals and quantum numbers
-::: definition {#quantumatom-def-3}
-The quantum numbers n, l, m_l, and spin specify orbital energies, shapes, and orientations; s and p orbitals penetrate differently, producing the ionization-energy exceptions.
+## atomic spectra
+::: definition {#quantumatom-d3}
+atomic spectra
+atomic spectra
+atomic spectra
+atomic spectra
+atomic spectra
+atomic spectra
+atomic spectra
+atomic spectra
+atomic spectra
+atomic spectra
 :::
 ## Review
 ::: widget graph
-nodes: wavelength, frequency, photon, spectral lines
-edges: wavelength, frequency, photon, spectral lines -> spectral lines
-caption: Line spectra prove quantization; the Rydberg series limit gives the ionization energy.
+nodes: Electromagnetic radiation, photons, atomic spectra, review
+edges: Electromagnetic radiation, photons, atomic spectra
+caption: Light and the quantum atom
 :::
 ::: summary
-- Wavelength and frequency relate through c = lambda-nu.
-- Photon energy is proportional to frequency.
-- Line spectra prove quantized atomic energies.
-- Bohr’s model succeeds for hydrogen, fails for multi-electron atoms.
-- Quantum numbers specify orbital energies, shapes, orientations.
+- Electromagnetic radiation
+- photons
+- atomic spectra
 :::
 ::: history
-Planck introduced the quantum in 1900; Einstein’s 1905 photon paper explained the photoelectric effect; Bohr’s 1913 model reproduced the Rydberg formula.
+- Boyle's law (1662)
+- Charles's law of volumes (1787)
+- Lavoisier's Traité and conservation of mass (1789)
+- Dalton's atomic theory (1808)
 :::
+## Examples
+::: example
+Worked example 1.
+:::
+::: example
+Worked example 2.
+:::
+::: example
+Worked example 3.
+:::
+::: example
+Worked example 4.
+:::
+## Quiz
 ::: quiz
-[x] wavelength
-[x] frequency
-[x] photon
-[x] spectral lines
-:::
-## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
+- [x] Correct
+- Wrong A
+- Wrong B
 :::

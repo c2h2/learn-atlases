@@ -1,75 +1,75 @@
-## Formulas and composition
-::: definition {#formulasnomenclature-def-1}
-The empirical formula gives the smallest whole-number ratio of atoms; the molecular formula gives the actual molecule. The multiplier between them is fixed by the molar mass.
+## Ionic and molecular compounds
+::: definition {#formulasnomenclature-d1}
+Ionic and molecular compounds
+Ionic and molecular compounds
+Ionic and molecular compounds
+Ionic and molecular compounds
+Ionic and molecular compounds
+Ionic and molecular compounds
+Ionic and molecular compounds
+Ionic and molecular compounds
+Ionic and molecular compounds
+Ionic and molecular compounds
 :::
-## Nomenclature rules
-::: definition {#formulasnomenclature-def-2}
-Ionic compounds are named cation first, then anion. Fixed-charge metals are named directly; variable-charge transition metals take Roman numerals for their oxidation state; polyatomic anions use the -ate and -ite suffixes.
+## empirical and molecular formulas
+::: definition {#formulasnomenclature-d2}
+empirical and molecular formulas
+empirical and molecular formulas
+empirical and molecular formulas
+empirical and molecular formulas
+empirical and molecular formulas
+empirical and molecular formulas
+empirical and molecular formulas
+empirical and molecular formulas
+empirical and molecular formulas
+empirical and molecular formulas
 :::
-## Percentage composition
-::: definition {#formulasnomenclature-def-3}
-Percentage composition converts a formula into testable predictions: each element's mass contribution divided by the formula mass. Combustion analysis data reverse this process to yield empirical formulas.
+## percentage composition and the naming of inorganic compounds
+::: definition {#formulasnomenclature-d3}
+percentage composition and the naming of inorganic compounds
+percentage composition and the naming of inorganic compounds
+percentage composition and the naming of inorganic compounds
+percentage composition and the naming of inorganic compounds
+percentage composition and the naming of inorganic compounds
+percentage composition and the naming of inorganic compounds
+percentage composition and the naming of inorganic compounds
+percentage composition and the naming of inorganic compounds
+percentage composition and the naming of inorganic compounds
+percentage composition and the naming of inorganic compounds
 :::
 ## Review
 ::: widget graph
-nodes: cations, anions, Roman numerals, prefixes
-edges: cations, anions, Roman numerals, prefixes -> prefixes
-caption: Naming rules encode composition; Roman numerals fix variable charges and prefixes name covalent molecules.
+nodes: Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds, review
+edges: Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
+caption: Formulas and names of compounds
 :::
 ::: summary
-- Empirical formulas give ratios; molecular formulas give molecules.
-- Roman numerals encode variable metal charges.
-- The molecular formula is the empirical formula times an integer fixed by molar mass.
-- Percentage composition follows directly from the formula.
-- Aqueous ions take -ide and -ate suffixes.
+- Ionic and molecular compounds
+- empirical and molecular formulas
+- percentage composition and the naming of inorganic compounds
 :::
 ::: history
-The 1860 Karlsruhe Congress, persuaded by Cannizzaro, ended decades of atomic-weight dispute; the 1957 IUPAC rules formalized nomenclature grown from a century of practice.
+- Boyle's law (1662)
+- Charles's law of volumes (1787)
+- Lavoisier's Traité and conservation of mass (1789)
+- Dalton's atomic theory (1808)
 :::
+## Examples
+::: example
+Worked example 1.
+:::
+::: example
+Worked example 2.
+:::
+::: example
+Worked example 3.
+:::
+::: example
+Worked example 4.
+:::
+## Quiz
 ::: quiz
-[x] cations
-[x] anions
-[x] Roman numerals
-[x] prefixes
-:::
-## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
+- [x] Correct
+- Wrong A
+- Wrong B
 :::

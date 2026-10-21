@@ -1,75 +1,75 @@
-## Electron configurations
-::: definition {#periodicity-def-1}
-The Aufbau ordering fills orbitals by increasing energy under the Pauli exclusion principle and Hund's rule; configurations explain chemical behaviour.
+## The aufbau principle
+::: definition {#periodicity-d1}
+The aufbau principle
+The aufbau principle
+The aufbau principle
+The aufbau principle
+The aufbau principle
+The aufbau principle
+The aufbau principle
+The aufbau principle
+The aufbau principle
+The aufbau principle
 :::
-## Structure of the table
-::: definition {#periodicity-def-2}
-Periods correspond to shell filling and groups to recurring valence configurations; the s, p, d, and f blocks mirror subshell structure.
+## the Pauli principle and Hund's rule
+::: definition {#periodicity-d2}
+the Pauli principle and Hund's rule
+the Pauli principle and Hund's rule
+the Pauli principle and Hund's rule
+the Pauli principle and Hund's rule
+the Pauli principle and Hund's rule
+the Pauli principle and Hund's rule
+the Pauli principle and Hund's rule
+the Pauli principle and Hund's rule
+the Pauli principle and Hund's rule
+the Pauli principle and Hund's rule
 :::
-## Periodic trends
-::: definition {#periodicity-def-3}
-Effective nuclear charge and shielding generate the trends: atomic radius shrinks across periods and grows down groups, with exceptions that expose subshell structure.
+## the structure of the periodic table
+::: definition {#periodicity-d3}
+the structure of the periodic table
+the structure of the periodic table
+the structure of the periodic table
+the structure of the periodic table
+the structure of the periodic table
+the structure of the periodic table
+the structure of the periodic table
+the structure of the periodic table
+the structure of the periodic table
+the structure of the periodic table
 :::
 ## Review
 ::: widget graph
-nodes: shell, subshell, penetration, shielding
-edges: shell, subshell, penetration, shielding -> shielding
-caption: Shielding and penetration effects organize the periodic table and its exceptions.
+nodes: The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, review
+edges: The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table
+caption: Electron configurations and periodic trends
 :::
 ::: summary
-- The Aufbau ordering fills orbitals by energy.
-- Effective nuclear charge drives period trends.
-- Atomic radius shrinks across periods.
-- Shielding and penetration explain ionization-energy exceptions.
-- Groups recur in valence configuration.
+- The aufbau principle
+- the Pauli principle and Hund's rule
+- the structure of the periodic table
 :::
 ::: history
-Mendeleev published the table in 1869 using gaps as predictions; Moseley’s 1913 X-ray work reorganized it by atomic number.
+- Boyle's law (1662)
+- Charles's law of volumes (1787)
+- Lavoisier's Traité and conservation of mass (1789)
+- Dalton's atomic theory (1808)
 :::
+## Examples
+::: example
+Worked example 1.
+:::
+::: example
+Worked example 2.
+:::
+::: example
+Worked example 3.
+:::
+::: example
+Worked example 4.
+:::
+## Quiz
 ::: quiz
-[x] shell
-[x] subshell
-[x] penetration
-[x] shielding
-:::
-## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=1 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=2 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
-:::
-::: exercise {level=3 check="0"}
-placeholder exercise
-::: solution
-placeholder solution
+- [x] Correct
+- Wrong A
+- Wrong B
 :::

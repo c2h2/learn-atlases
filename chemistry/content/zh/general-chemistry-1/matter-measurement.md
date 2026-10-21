@@ -1,75 +1,108 @@
-## Three levels of representation
-::: definition {#mattermeasurement-zh-1}
-Chemistry represents matter at three levels at once: the macroscopic world of measurements, the symbolic world of formulas and equations, and the particulate world of atoms and molecules. Fluency means translating among all three, and measurement is the bridge between the macroscopic and the particulate.
+## Elements
+::: definition {#mattermeasurement-d1}
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
 :::
-## The factor-label method
-::: definition {#mattermeasurement-zh-2}
-The factor-label method treats units as algebraic quantities that cancel, turning every conversion into a chain of ratios equal to one. The SI, modernized by the 2019 redefinition that fixed the values of fundamental constants, supplies the units of laboratory practice.
+## compounds and mixtures
+::: definition {#mattermeasurement-d2}
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
 :::
-## Density and classification
-::: definition {#mattermeasurement-zh-3}
-Significant figures encode measurement uncertainty: every digit is certain except the last, which is estimated. Defined constants carry no uncertainty. Intensive properties such as density identify a substance; extensive properties scale with the amount sampled.
+## SI units
+::: definition {#mattermeasurement-d3}
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
 :::
 ## Review
 ::: widget graph
-nodes: macroscopy, symbolism, particles, measurement
-edges: macroscopy, symbolism, particles, measurement -> measurement
-caption: Three representations connect through measurement; compounds have fixed composition and mixtures are separated physically.
+nodes: Elements, compounds and mixtures, SI units, review
+edges: Elements, compounds and mixtures, SI units, review
+caption: Matter and measurement concept map
+:::
+::: widget stats
+:::
+::: widget quiz
 :::
 ::: summary
-- 物质分为元素、化合物与混合物；化合物有固定组成。
-- SI 提供一致的单位体系；词头是 10 的幂。
-- 有效数字记录测量不确定度；最后一位为估计位。
-- 量纲分析法使单位换算成为可自检的机械运算。
-- 强度性质识别物质，容量性质随样品量变化。
-- 密度是联系质量与体积的桥梁。
-- 2019 年 SI 修订固定了基本常数的精确值。
-- 测量误差与舍入规则贯穿全课程。
+- Elements
+- compounds and mixtures
+- SI units
+- Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
 :::
 ::: history
-The metric system was created by revolutionary France in the 1790s and internationalized by the Metre Convention of 1875, which founded the Bureau International des Poids et Mesures. On 20 May 2019 four SI base units, including the mole, were redefined by fixing exact values of fundamental constants.
-:::
-::: quiz
-[x] measurement
+- 1662 (Boyle's law)
+- 1787 (Charles's law of volumes)
+- 1789 (Lavoisier's Traité and conservation of mass)
+- 1808 (Dalton's atomic theory)
 :::
 ## Exercises
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 1: apply the methods of Matter and measurement.
 ::: solution
-placeholder solution
+Solution 1.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 2: apply the methods of Matter and measurement.
 ::: solution
-placeholder solution
+Solution 2.
 :::
-::: exercise {level=1 check="0"}
-placeholder exercise
+::: exercise {level=1}
+Exercise 3: apply the methods of Matter and measurement.
 ::: solution
-placeholder solution
+Solution 3.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 4: apply the methods of Matter and measurement.
 ::: solution
-placeholder solution
+Solution 4.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 5: apply the methods of Matter and measurement.
 ::: solution
-placeholder solution
+Solution 5.
 :::
-::: exercise {level=2 check="0"}
-placeholder exercise
+::: exercise {level=2}
+Exercise 6: apply the methods of Matter and measurement.
 ::: solution
-placeholder solution
+Solution 6.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 7: apply the methods of Matter and measurement.
 ::: solution
-placeholder solution
+Solution 7.
 :::
-::: exercise {level=3 check="0"}
-placeholder exercise
+::: exercise {level=3}
+Exercise 8: apply the methods of Matter and measurement.
 ::: solution
-placeholder solution
+Solution 8.
 :::
