@@ -190,6 +190,18 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
       <dl><div><dt><?= $dCourses ?></dt><dd><?= $h($t('courses')) ?></dd></div><div><dt><?= $dChapters ?></dt><dd><?= $h($t('chapters')) ?></dd></div><div><dt><?= $dFigures ?></dt><dd><?= $h($t('interactive figures')) ?></dd></div></dl>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
+    <a class="card" href="chinese/<?= $L ?>">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <?php /* the tones of a five-character quatrain, read in columns from the right: filled = level (平), open = oblique (仄); and a seal */ ?>
+        <?php foreach ([[186, 9], [186, 22], [186, 61], [162, 35], [162, 48], [138, 48], [138, 61], [114, 9], [114, 22], [114, 35]] as [$x, $y]): ?><circle cx="<?= $x ?>" cy="<?= $y ?>" r="4.6" class="curve"/><?php endforeach; ?>
+        <?= $skDots([[186, 35], [186, 48], [162, 9], [162, 22], [162, 61], [138, 9], [138, 22], [138, 35], [114, 48], [114, 61]], 5.2) ?>
+        <rect x="62" y="40" width="22" height="22" rx="2.5" style="fill:#d6457c"/><rect x="65.5" y="43.5" width="15" height="15" style="fill:none;stroke:#fff;stroke-width:1.2"/>
+      </svg>
+      <h2><?= $h($t('Chinese Language and Literature Atlas')) ?></h2>
+      <p><?= $h($t('Chinese language and literature for native speakers, at the level of a university degree: characters and calligraphy, modern and classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and writing and reasoning. All 270 chapters are written in Chinese, and every chapter has an English version that keeps the same figures, quizzes and exercises.')) ?></p>
+      <dl><div><dt><?= $chCourses ?></dt><dd><?= $h($t('courses')) ?></dd></div><div><dt><?= $chChapters ?></dt><dd><?= $h($t('chapters')) ?></dd></div><div><dt><?= $chFigures ?></dt><dd><?= $h($t('interactive figures')) ?></dd></div></dl>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
     <a class="card" href="peptides/<?= $L ?>">
       <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
         <line x1="14" y1="40" x2="286" y2="40" class="curve"/>
@@ -304,18 +316,6 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
       <h2><?= $skName('English Language Atlas') ?></h2>
       <p><?= $h($t('English for learners, especially Chinese speakers, from level A1 to C2: pronunciation, vocabulary and grammar, reading and writing up to academic papers, listening and speaking, the history and varieties of English, and English–Chinese translation. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('english') ?>
-      <span class="open"><?= $h($t('Open')) ?> →</span>
-    </a>
-    <a class="card" href="chinese/<?= $L ?>">
-      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
-        <?php /* the tones of a five-character quatrain, read in columns from the right: filled = level (平), open = oblique (仄); and a seal */ ?>
-        <?php foreach ([[186, 9], [186, 22], [186, 61], [162, 35], [162, 48], [138, 48], [138, 61], [114, 9], [114, 22], [114, 35]] as [$x, $y]): ?><circle cx="<?= $x ?>" cy="<?= $y ?>" r="4.6" class="curve"/><?php endforeach; ?>
-        <?= $skDots([[186, 35], [186, 48], [162, 9], [162, 22], [162, 61], [138, 9], [138, 22], [138, 35], [114, 48], [114, 61]], 5.2) ?>
-        <rect x="62" y="40" width="22" height="22" rx="2.5" style="fill:#d6457c"/><rect x="65.5" y="43.5" width="15" height="15" style="fill:none;stroke:#fff;stroke-width:1.2"/>
-      </svg>
-      <h2><?= $h($t('Chinese Language and Literature Atlas')) ?></h2>
-      <p><?= $h($t('Chinese language and literature for native speakers, at the level of a university degree: characters and calligraphy, modern and classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and writing and reasoning. All 270 chapters are written in Chinese, and every chapter has an English version that keeps the same figures, quizzes and exercises.')) ?></p>
-      <dl><div><dt><?= $chCourses ?></dt><dd><?= $h($t('courses')) ?></dd></div><div><dt><?= $chChapters ?></dt><dd><?= $h($t('chapters')) ?></dd></div><div><dt><?= $chFigures ?></dt><dd><?= $h($t('interactive figures')) ?></dd></div></dl>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
   </div>
