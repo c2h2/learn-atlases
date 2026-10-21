@@ -7,11 +7,26 @@
   "order": 20,
   "tagline": "Solutions, reaction rates, equilibrium, acids and bases, solubility, free energy, electrochemistry and nuclear chemistry",
   "summary": "Why do reactions stop, how fast do they go, and which way do they run? This course introduces solutions and colligative properties, reaction rates and chemical equilibrium with its applications to acids, bases, buffers and solubility, then connects equilibrium to entropy and free energy, electrochemical cells and nuclear processes.",
-  "overview": [],
+  "overview": [
+    "Equilibrium, energy and rate are the three questions every chemical system answers. General Chemistry II is the second year of the first-year curriculum, and it turns the atomic and stoichiometric foundations of the first course into the quantitative science of solutions, equilibria and energy. Almost every chemical phenomenon a first-year student meets — the pH of a buffer, the voltage of a battery, the solubility of a kidney stone, the rate at which food spoils — is an application of one of the nine chapters that follow.",
+    "The subject matters far beyond the first year. Aqueous equilibrium governs the chemistry of the oceans, of blood and of the environment; the free-energy change tells an engineer whether a process will run at all; electrochemistry underpins the transport system the world is moving to; nuclear chemistry underpins both medical imaging and a waste problem that will outlast our civilisation. The chapters are also the prerequisite for every later course in the atlas: the thermodynamics and kinetics courses, the titrimetry of analytical chemistry, and the buffered chemistry of living things all begin here.",
+    "The course is organised as a spiral rather than a list. The first three chapters build the tools — the behaviour of liquids and solutions, the rate of reaction, and the equilibrium constant — and the next three apply them to the acid–base and solubility equilibria that dominate aqueous chemistry. The last three widen the view to entropy and free energy, to electrochemical cells, and to the nucleus. Each chapter assumes the ones before it, and the whole course assumes General Chemistry I.",
+    "What makes the subject hard is not the mathematics — it is algebra with logarithms — but the number of decisions: which equilibrium is operating, which approximation is legitimate, which species is present in excess. The remedy is the same in every chapter: write the balanced equation, write the equilibrium expression, tabulate the concentrations honestly, and check that the answer has the right order of magnitude. Every worked example in these lessons is chosen to exercise exactly that decision."
+  ],
   "prerequisites": [
     "general-chemistry-1"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain how intermolecular forces determine vapour pressure, boiling point and phase behaviour, and use the Clausius–Clapeyron equation.",
+    "Calculate colligative properties — vapour-pressure lowering, boiling-point elevation, freezing-point depression and osmotic pressure — for ideal and dilute solutions.",
+    "Express reaction rates, determine rate laws and reaction orders from experimental data, and use integrated rate laws, half-lives and the Arrhenius equation.",
+    "Write equilibrium-constant expressions (Kc and Kp), convert between them, and use the reaction quotient to predict the direction of a reaction.",
+    "Apply Le Chatelier's principle to changes in concentration, pressure and temperature, and solve equilibrium problems by the ICE-table method.",
+    "Calculate the pH of strong and weak acids and bases, of salt solutions and of buffers, and analyse titration curves and the choice of indicators.",
+    "Use solubility products and complex-formation constants to predict precipitation, dissolution and selective separation.",
+    "Connect ΔH, ΔS and ΔG, predict the sign and temperature dependence of spontaneity, and derive the relation between the standard Gibbs energy change and the equilibrium constant.",
+    "Balance redox equations, calculate standard cell potentials and apply the Nernst equation, and describe radioactive decay kinetics, binding energy and the uses of radioisotopes."
+  ],
   "chapters": [
     {
       "slug": "liquids-solutions",
@@ -91,8 +106,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1800,
+      "title": "Volta builds the pile",
+      "detail": "Alessandro Volta stacks discs of zinc and silver separated by brine-soaked cardboard and produces the first source of continuous electric current, settling the dispute with Galvani and showing that chemical affinity can be converted directly into electricity.",
+      "people": ["Alessandro Volta"]
+    },
+    {
+      "year": 1834,
+      "title": "Faraday's laws of electrolysis",
+      "detail": "Michael Faraday publishes the quantitative laws of electrolysis — the mass of substance liberated at an electrode is proportional to the quantity of electricity passed — and with them the vocabulary of electrodes, electrolytes, anions and cations.",
+      "people": ["Michael Faraday", "William Prout"]
+    },
+    {
+      "year": 1884,
+      "title": "Le Chatelier's principle",
+      "detail": "Henri Le Chatelier states the principle that a system in equilibrium responds to a constraint by shifting so as to partly oppose it, turning qualitative equilibrium chemistry into a predictive science.",
+      "people": ["Henri Le Chatelier"]
+    },
+    {
+      "year": 1887,
+      "title": "Dissociation and osmotic pressure",
+      "detail": "Svante Arrhenius's theory of electrolytic dissociation and Jacobus Henricus van 't Hoff's application of the gas laws to dilute solutions appear together in the first volume of the Zeitschrift für physikalische Chemie, giving solution equilibrium its quantitative form.",
+      "people": ["Svante Arrhenius", "Jacobus Henricus van 't Hoff"]
+    },
+    {
+      "year": 1889,
+      "title": "The Arrhenius equation",
+      "detail": "Arrhenius proposes the exponential dependence of the rate constant on temperature, defining the activation energy and turning the empirical science of reaction rates into the science of chemical kinetics.",
+      "people": ["Svante Arrhenius"]
+    },
+    {
+      "year": 1896,
+      "title": "Becquerel discovers radioactivity",
+      "detail": "Henri Becquerel finds that uranium salts fog photographic plates through black paper, revealing an atomic property unrelated to chemical state — the first evidence that the atom has an internal structure and an internal energy.",
+      "people": ["Henri Becquerel"]
+    },
+    {
+      "year": 1898,
+      "title": "The Curies isolate radium",
+      "detail": "Marie and Pierre Curie announce radium, hundreds of times more active than uranium, and show that radioactivity is an atomic property; the work leads to the 1903 Nobel Prize and to the measurement of the enormous energy stored in the nucleus.",
+      "people": ["Marie Curie", "Pierre Curie"]
+    },
+    {
+      "year": 1923,
+      "title": "The proton theory of acids and bases",
+      "detail": "Johannes Nicolaus Brønsted and Martin Johannes Lowry, independently, recast acidity as proton donation and define acids and bases as conjugate pairs, while Gilbert Lewis's electron-pair definition appears the same year.",
+      "people": ["Johannes Nicolaus Brønsted", "Martin Johannes Lowry", "Gilbert N. Lewis"]
+    },
+    {
+      "year": 1938,
+      "title": "Fission discovered",
+      "detail": "Otto Hahn and Fritz Strassmann identify barium among the products of neutron-bombarded uranium, and over the winter Lise Meitner and Otto Frisch interpret the result as the splitting of the nucleus — the origin of both nuclear power and the nuclear age.",
+      "people": ["Otto Hahn", "Fritz Strassmann", "Lise Meitner", "Otto Frisch"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Chemical Principles",
+      "authors": "Peter Atkins, Loretta Jones and Ronald Laverman",
+      "year": 2022,
+      "note": "The natural text for this course: equilibrium, entropy and electrochemistry treated with mathematical care but at first-year level."
+    },
+    {
+      "title": "Chemistry: The Central Science",
+      "authors": "Theodore L. Brown, H. Eugene LeMay, Bruce E. Bursten and Catherine Murphy",
+      "year": 2018,
+      "note": "The broadest of the mainstream texts; good worked examples for aqueous equilibrium and acid–base chemistry."
+    },
+    {
+      "title": "Chemistry: A Molecular Approach",
+      "authors": "Nivaldo J. Tro",
+      "year": 2020,
+      "note": "Clear on the microscopic picture behind colligative properties and equilibrium; strong end-of-chapter problems."
+    },
+    {
+      "title": "Chemistry",
+      "authors": "Julia Burdge and Alison Overby",
+      "year": 2021,
+      "note": "A companion text with many worked buffer and titration examples."
+    },
+    {
+      "title": "Chemistry",
+      "authors": "Steven S. Zumdahl, Susan A. Zumdahl and Donald J. DeCoste",
+      "year": 2014,
+      "note": "A problem-heavy text; its treatment of stoichiometry and equilibrium algebra is good practice for this course."
+    },
+    {
+      "title": "General Chemistry: Principles and Modern Applications",
+      "authors": "Ralph H. Petrucci, F. Geoffrey Herring, Jeffry D. Rait and Maureen Ryan",
+      "year": 2017,
+      "note": "Detailed on solubility equilibria and electrochemistry; useful for the harder exercises."
+    },
+    {
+      "title": "Physical Chemistry",
+      "authors": "Peter Atkins and Julio de Paula",
+      "year": 2022,
+      "note": "The next step up: read the chapters on entropy, the Boltzmann distribution and electrode potentials alongside the corresponding chapters here."
+    }
+  ],
   "next": [
     "thermodynamics",
     "kinetics",

@@ -7,9 +7,24 @@
   "order": 10,
   "tagline": "Atoms and molecules, the mole, stoichiometry, solutions, gases, thermochemistry and the quantum atom",
   "summary": "Chemistry is the science of substances and how they change. This course builds the quantitative foundations — measurement, the mole and stoichiometry — then follows reactions in solution, the behaviour of gases and the energy of reactions, and ends with the quantum picture of the atom that explains the periodic table.",
-  "overview": [],
+  "overview": [
+    "Chemistry is the science of substances — what matter is made of, how it behaves, and how it changes — and General Chemistry I is the first course of the curriculum. Its job is to build the quantitative foundations everything else rests on: the atom as the unit of chemical change, the mole as the chemist's way of counting atoms by weighing, and the balanced equation as the statement of exactly which substances react in what proportions.",
+    "These foundations matter far beyond the first year. Stoichiometry reappears in every later course — in the equilibrium calculations of general chemistry II, the enthalpy bookkeeping of the thermochemistry course, the concentration algebra of analytical chemistry, and the stoichiometric steps of organic synthesis mechanisms. A student who is fluent in the mole, comfortable with units, and able to read a balanced equation as a recipe in moles will find the rest of the curriculum a sequence of applications rather than a sequence of new difficulties.",
+    "The course is organised in three movements. The first three chapters establish what matter is and how to measure it: elements, compounds and mixtures, the SI system, and the mole. The middle chapters follow chemical reactions — balancing equations, reactions in aqueous solution, the behaviour of gases, and the energy changes that accompany every reaction. The last two chapters turn to the atom itself: the quantum picture that emerged from atomic spectra, and the periodic trends that follow from it.",
+    "What makes this subject hard is not its mathematics — which is mostly algebra and a little trigonometry — but its bookkeeping. Success depends on tracking units through every calculation, keeping the right number of significant figures, deciding which species is the limiting reagent, and knowing when a formula applies and when it does not. The chapters practise these habits deliberately, because they are the skills that separate a chemist from someone who has merely read chemistry."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish elements, compounds and mixtures at the particulate level, and describe what a chemical formula says and does not say about a substance.",
+    "Express measurements in SI units with the correct number of significant figures, and use dimensional analysis (the factor-label method) to convert between units reliably.",
+    "Use the mole as a counting unit, convert between mass, amount of substance and number of entities using molar mass and the Avogadro constant, and compute relative atomic masses from isotopic abundances.",
+    "Name inorganic compounds using IUPAC nomenclature, and derive empirical and molecular formulas from percentage composition data.",
+    "Balance chemical equations and perform stoichiometric calculations, including limiting-reagent problems, percentage yield and solution stoichiometry.",
+    "Apply the gas laws and the ideal gas equation, use Dalton's law of partial pressures, and explain the kinetic-molecular picture of pressure and temperature.",
+    "Calculate enthalpy changes from calorimetric data and from standard enthalpies of formation, and apply Hess's law to reactions that cannot be measured directly.",
+    "Relate the frequencies and wavelengths of atomic spectral lines to differences between electron energy levels, and explain the successes and failures of the Bohr model.",
+    "Write ground-state electron configurations and rationalise the structure of the periodic table, including trends in atomic radius, ionisation energy, electron affinity and electronegativity."
+  ],
   "chapters": [
     {
       "slug": "matter-measurement",
@@ -60,7 +75,7 @@
     {
       "slug": "thermochemistry",
       "title": "Thermochemistry",
-      "summary": "Heat and work, enthalpy, calorimetry, Hess’s law and standard enthalpies of formation.",
+      "summary": "Heat and work, enthalpy, calorimetry, Hess's law and standard enthalpies of formation.",
       "requires": [
         "general-chemistry-1/stoichiometry"
       ]
@@ -76,14 +91,118 @@
     {
       "slug": "periodicity",
       "title": "Electron configurations and periodic trends",
-      "summary": "The aufbau principle, the Pauli principle and Hund’s rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity.",
+      "summary": "The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity.",
       "requires": [
         "general-chemistry-1/quantum-atom"
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1662,
+      "title": "Boyle's law",
+      "detail": "Robert Boyle and his assistants, using a J-shaped tube and mercury, showed that the volume of a fixed amount of air varies inversely with the pressure — the first quantitative law of matter discovered in Britain since antiquity.",
+      "people": ["Robert Boyle"]
+    },
+    {
+      "year": 1787,
+      "title": "Charles's law of volumes",
+      "detail": "Jacques Charles found in secret that the volumes of gases expand proportionally to temperature, in unpublished work later reported by his collaborator; Gay-Lussac published the law in 1802 and credited him.",
+      "people": ["Jacques Charles", "Joseph Louis Gay-Lussac"]
+    },
+    {
+      "year": 1789,
+      "title": "Lavoisier's Traité and conservation of mass",
+      "detail": "Antoine Laurent Lavoisier's Traité élémentaire de chimie laid out chemistry as a quantitative science with a new nomenclature, and established the conservation of mass as the foundation of stoichiometry.",
+      "people": ["Antoine Laurent Lavoisier"]
+    },
+    {
+      "year": 1808,
+      "title": "Dalton's atomic theory",
+      "detail": "John Dalton's A New System of Chemical Philosophy proposed that elements consist of indivisible atoms with characteristic weights, and that compounds are combinations of atoms in simple whole-number ratios — turning the law of multiple proportions into atomic evidence.",
+      "people": ["John Dalton"]
+    },
+    {
+      "year": 1811,
+      "title": "Avogadro's hypothesis",
+      "detail": "Amedeo Avogadro proposed that equal volumes of gases at the same temperature and pressure contain equal numbers of molecules, resolving the confusion in Dalton's atomic weights — though the chemistry world ignored the paper for fifty years.",
+      "people": ["Amedeo Avogadro"]
+    },
+    {
+      "year": 1869,
+      "title": "The periodic system",
+      "detail": "Dmitri Mendeleev arranged the elements by atomic weight and predicted the properties of the missing elements — the success of the predictions turned a pattern into a law of nature.",
+      "people": ["Dmitri Mendeleev"]
+    },
+    {
+      "year": 1885,
+      "title": "Balmer's formula",
+      "detail": "Johann Balmer found a simple arithmetic formula for the wavelengths of the four visible lines of hydrogen, a numerical pattern that waited thirty years for a physical explanation.",
+      "people": ["Johann Balmer"]
+    },
+    {
+      "year": 1900,
+      "title": "Planck's quantum hypothesis",
+      "detail": "Max Planck explained the spectrum of hot cavities by assuming that oscillators exchange energy only in discrete packets $E = h\\nu$, introducing the constant that now carries his name and founding quantum theory.",
+      "people": ["Max Planck"]
+    },
+    {
+      "year": 1913,
+      "title": "Bohr's model of the atom",
+      "detail": "Niels Bohr postulated electrons in quantised orbits and derived the Rydberg formula for hydrogen's spectral lines from fundamental constants, in the same year Henry Moseley showed that X-ray frequencies order the periodic table by nuclear charge.",
+      "people": ["Niels Bohr", "Henry Moseley"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Chemistry: The Central Science",
+      "authors": "Theodore L. Brown, H. Eugene LeMay, Bruce E. Bursten and Catherine Murphy",
+      "year": 2018,
+      "note": "The most widely used first-year text; its worked examples on stoichiometry and solution chemistry are excellent practice."
+    },
+    {
+      "title": "Chemical Principles",
+      "authors": "Peter Atkins, Loretta Jones and Ronald Laverman",
+      "year": 2022,
+      "note": "Bridges this course and the later ones; treats the quantum atom and periodicity with more depth than most first-year books."
+    },
+    {
+      "title": "Chemistry: A Molecular Approach",
+      "authors": "Nivaldo J. Tro",
+      "year": 2020,
+      "note": "Strong on the microscopic pictures behind macroscopic measurements, and on units and significant figures."
+    },
+    {
+      "title": "Chemistry",
+      "authors": "Steven S. Zumdahl, Susan A. Zumdahl and Donald J. DeCoste",
+      "year": 2018,
+      "note": "A large problem set; its treatment of dimensional analysis and limiting reagents is worth working through."
+    },
+    {
+      "title": "General Chemistry: Principles and Modern Applications",
+      "authors": "Ralph H. Petrucci, F. Geoffrey Herring, Jeffry D. Rait and Maureen Ryan",
+      "year": 2017,
+      "note": "Careful with significant figures and measurement; good exercises on gas laws and calorimetry."
+    },
+    {
+      "title": "Chemistry: The Molecular Nature of Matter and Change",
+      "authors": "Paul M. Silberberg",
+      "year": 2021,
+      "note": "A modern alternative with strong visual treatments of particulate-level diagrams."
+    },
+    {
+      "title": "General Chemistry",
+      "authors": "John C. Kotz, Paul M. Treichel and Gabriel O. Townsend",
+      "year": 2019,
+      "note": "Worked examples with a strong emphasis on problem-solving strategy."
+    },
+    {
+      "title": "Physical Chemistry",
+      "authors": "Peter Atkins and Julio de Paula",
+      "year": 2022,
+      "note": "The next step up: read its chapters on gases and the first law alongside the corresponding lessons here."
+    }
+  ],
   "next": [
     "general-chemistry-2",
     "bonding-structure"

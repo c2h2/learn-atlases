@@ -7,11 +7,26 @@
   "order": 80,
   "tagline": "Structures and functional groups, conformations, stereochemistry, curly arrows, substitution, elimination, addition and radical reactions",
   "summary": "Organic chemistry is the chemistry of carbon compounds, from fuels to medicines. This course teaches how to draw and name organic molecules, analyse their shapes and stereochemistry, and describe reactions with curly-arrow mechanisms, through substitution, elimination, addition to alkenes and alkynes, the chemistry of alcohols and ethers, and radical reactions.",
-  "overview": [],
+  "overview": [
+    "Organic chemistry is the chemistry of carbon compounds, and carbon's gift to the subject is the sheer variety its compounds display: chains, rings, branches, and every combination of hydrogen, oxygen, nitrogen, sulfur and the halogens. What makes the variety tractable is that it is not really variety at all but a small number of recurring structural units \\u2014 functional groups \\u2014 each with a characteristic, teachable reactivity. Learn the behaviour of a handful of groups and you can predict, to a useful approximation, the behaviour of millions of molecules.",
+    "The organizing idea of the course is that structure determines reactivity, and that both are expressed through electron flow. Every reaction we study \\u2014 substitution, elimination, addition, radical halogenation \\u2014 is a rearrangement of electrons in which electrons flow from a site of high electron density to a site of low electron density, and the curly-arrow formalism is the grammar of that statement. This is why the course begins with structure, conformation and stereochemistry: the three-dimensional arrangement of a molecule is not a detail of the subject, it is the subject.",
+    "The course runs in nine chapters. The first three build the structural language: skeletal formulae and functional groups, conformational analysis, and stereochemistry. The fourth introduces acidity and the curly-arrow language itself. The middle chapters cover the two great bimolecular pathways, nucleophilic substitution and elimination, and the chemistry of alkenes, alkynes, alcohols and ethers. The last chapter treats radical reactions. Each chapter assumes the ones before it, so work through them in order.",
+    "What makes organic chemistry hard for beginners is not its difficulty but its apparent arbitrariness: a thousand reactions seem to demand a thousand memories. The antidote is the same here as everywhere in science \\u2014 replace memory with mechanism. Almost every outcome in this course follows from four ideas: electrons flow towards what is electron-poor, better leaving groups leave faster, more stable intermediates form faster, and geometry constrains mechanism. Learn to ask those questions of every reaction and the subject stops being encyclopedic."
+  ],
   "prerequisites": [
     "bonding-structure"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Draw skeletal formulae of any organic structure given its name or molecular formula, and read condensed formulae fluently.",
+    "Name organic compounds systematically using IUPAC rules, including branched chains, multiple bonds and multiple functional groups.",
+    "Analyse the conformational energy of alkanes and cyclohexane derivatives, and rank chair conformations by their substituent positions.",
+    "Assign $R/S$ configurations to stereocentres and $E/Z$ configurations to alkenes, and identify enantiomers, diastereomers and meso compounds.",
+    "Rank the acidity of organic compounds using $\\mathrm{p}K_\\mathrm{a}$ values and the effects of atom, resonance, induction and orbitals.",
+    "Predict whether a given substrate reacts by $\\mathrm{S_N1}$ or $\\mathrm{S_N2}$ and predict the products, including stereochemical outcome.",
+    "Predict the products of elimination reactions and apply Zaitsev's and Hofmann's rules to choose conditions.",
+    "Explain the regiochemistry and stereochemistry of electrophilic additions to alkenes, including Markovnikov's rule and its physical basis.",
+    "Propose complete curly-arrow mechanisms for substitution, elimination, addition and radical chain reactions, and account for each step."
+  ],
   "chapters": [
     {
       "slug": "organic-structures",
@@ -66,7 +81,7 @@
     {
       "slug": "alkenes-alkynes",
       "title": "Addition to alkenes and alkynes",
-      "summary": "Electrophilic addition and Markovnikov’s rule, carbocation rearrangements, halogenation, hydration, hydroboration, oxidation and hydrogenation.",
+      "summary": "Electrophilic addition and Markovnikov's rule, carbocation rearrangements, halogenation, hydration, hydroboration, oxidation and hydrogenation.",
       "requires": [
         "organic-1/acidity-mechanism",
         "organic-1/elimination"
@@ -90,8 +105,112 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1828,
+      "title": "Wöhler synthesizes urea",
+      "detail": "Friedrich Wöhler boiled ammonium cyanate and obtained urea, a compound previously associated with living organisms, undermining the vitalist doctrine that organic compounds required a life force and opening the way to synthesis.",
+      "people": ["Friedrich Wöhler"]
+    },
+    {
+      "year": 1861,
+      "title": "Butlerov introduces chemical structure",
+      "detail": "Alexander Butlerov formulated the doctrine of chemical structure, arguing that the properties of a molecule follow from the arrangement of its atoms, and predicted the existence of tert-butyl alcohol, later synthesized.",
+      "people": ["Alexander Butlerov"]
+    },
+    {
+      "year": 1865,
+      "title": "Kekulé proposes the ring structure of benzene",
+      "detail": "August Kekulé proposed that the six carbons of benzene form a ring with alternating double bonds, solving the puzzle of why all monosubstituted benzenes give one product and founding aromatic chemistry.",
+      "people": ["August Kekulé"]
+    },
+    {
+      "year": 1874,
+      "title": "The tetrahedral carbon",
+      "detail": "In independent papers published within months of each other, Jacobus van 't Hoff and Joseph Le Bel proposed that the four bonds of a carbon atom point to the corners of a tetrahedron, making molecular asymmetry the structural basis of optical activity.",
+      "people": ["Jacobus van 't Hoff", "Joseph Le Bel"]
+    },
+    {
+      "year": 1900,
+      "title": "Grignard discovers organomagnesium reagents",
+      "detail": "François-Auguste Victor Grignard showed that magnesium inserts into carbon–halogen bonds to give reactive organometallics that add to carbonyl groups, a reaction family that earned him the 1912 Nobel Prize in Chemistry.",
+      "people": ["François-Auguste Victor Grignard"]
+    },
+    {
+      "year": 1935,
+      "title": "Hughes and Ingold dissect substitution kinetically",
+      "detail": "Eric Hughes and Christopher Ingold showed that nucleophilic substitutions fall into first-order and second-order classes, with bimolecular ones inverting and unimolecular ones racemizing, establishing physical organic chemistry as a discipline.",
+      "people": ["Eric Hughes", "Christopher Ingold"]
+    },
+    {
+      "year": 1950,
+      "title": "Barton founds conformational analysis",
+      "detail": "Derek Barton's papers on the conformations of saturated rings, building on Odd Hassel's electron-diffraction structures, established conformational analysis and showed that the chair is the preferred form of cyclohexane.",
+      "people": ["Derek Barton", "Odd Hassel"]
+    },
+    {
+      "year": 1965,
+      "title": "The Woodward–Hoffmann rules",
+      "detail": "Robert Burns Woodward and Roald Hoffmann formulated orbital-symmetry rules predicting when pericyclic reactions are allowed on orbital grounds, a synthesis of organic and quantum chemistry honored by the 1981 Nobel Prize.",
+      "people": ["Robert Burns Woodward", "Roald Hoffmann"]
+    },
+    {
+      "year": 1979,
+      "title": "The Nobel Prize to Brown and Wittig",
+      "detail": "Herbert C. Brown and Georg Wittig shared the Nobel Prize in Chemistry for their developments of boron- and phosphorus-containing reagents, the basis of hydroboration and the Wittig reaction.",
+      "people": ["Herbert C. Brown", "Georg Wittig"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Organic Chemistry",
+      "authors": "Jonathan Clayden, Nick Greeves and Stuart Warren",
+      "year": 2012,
+      "note": "The mechanistic, reasoning-first textbook; the best companion to this course's emphasis on mechanism over memorization."
+    },
+    {
+      "title": "Organic Chemistry",
+      "authors": "John McMurry",
+      "year": 2016,
+      "note": "A broad, well-illustrated standard course text; useful for worked nomenclature and synthesis examples."
+    },
+    {
+      "title": "Organic Chemistry",
+      "authors": "Janice Smith",
+      "year": 2012,
+      "note": "Exercise-rich, with strong drill on drawing and naming; good for building fluency."
+    },
+    {
+      "title": "Organic Chemistry as a Second Language, First Semester Topics",
+      "authors": "David R. Klein",
+      "year": 2012,
+      "note": "Explicitly written for students who find the subject arbitrary; excellent on curved arrows and resonance."
+    },
+    {
+      "title": "Modern Physical Organic Chemistry",
+      "authors": "Eric Anslyn and Dennis Dougherty",
+      "year": 2006,
+      "note": "The quantitative layer: free energy, kinetics, isotope effects and physical evidence for mechanisms."
+    },
+    {
+      "title": "Molecular Orbitals and Organic Chemical Reactions",
+      "authors": "Ian Fleming",
+      "year": 1982,
+      "note": "The frontier-orbital view of reactivity; for when you want the orbital picture behind the curly arrows."
+    },
+    {
+      "title": "Organic Synthesis: The Disconnection Approach",
+      "authors": "Stuart Warren and Paul Wyatt",
+      "year": 2009,
+      "note": "Retrosynthetic thinking, building on the reactivity learned here."
+    },
+    {
+      "title": "Advanced Organic Chemistry, Part A: Structure and Mechanism",
+      "authors": "Michael Carey and Richard Sundberg",
+      "year": 2007,
+      "note": "The advanced reference; deeper treatments of every topic in this course."
+    }
+  ],
   "next": [
     "organic-2",
     "biochemistry"

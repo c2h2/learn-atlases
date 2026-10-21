@@ -5,13 +5,28 @@
   "area": "physical",
   "level": 2,
   "order": 60,
-  "tagline": "Rate laws, mechanisms, collision and transition-state theory, chain reactions, catalysis, surfaces, photochemistry and dynamics",
-  "summary": "Kinetics asks how fast reactions go and by what path. This course turns rate measurements into rate laws and mechanisms, explains rates with collision theory and transition-state theory, and treats chain reactions, catalysis and oscillations, reactions at surfaces, photochemical kinetics and the dynamics of single reactive encounters.",
-  "overview": [],
+  "tagline": "Rate laws, mechanisms, collision and transition-state theory, chain reactions, catalysis, oscillations, surfaces, photochemistry and dynamics",
+  "summary": "Kinetics asks how fast reactions go and by what path. This course turns rate measurements into rate laws and mechanisms, explains rates with collision and transition-state theory, and treats chain reactions, catalysis and oscillations, reactions at surfaces, photochemical kinetics and the dynamics of single reactive encounters.",
+  "overview": [
+    "Thermodynamics tells us which reactions are possible; kinetics tells us what actually happens, and on what timescale. Diamond is metastable in air, yet the diamond in a ring lasts a human lifetime, while an explosion of hydrogen and oxygen is over in milliseconds. Chemical kinetics is the science of that span: how fast a reaction proceeds, how the rate depends on concentration and temperature, and what sequence of molecular events — the mechanism — produces the observed rate law.",
+    "The course begins where measurement does. Rates are measured by following concentration in time — spectrophotometrically, conductimetrically, by pressure — and from those curves we extract rate laws, rate constants and half-lives. We then learn that a rate law is evidence for a mechanism, not proof of one, and we build the machinery that connects mechanisms to rates: the steady-state approximation, the pre-equilibrium approximation, and the identification of rate-determining steps.",
+    "The middle of the course explains what the rate constant means. Collision theory counts molecular encounters; transition-state theory (Eyring) recasts the rate constant in terms of the free energy of the activated complex, so that activation enthalpies and entropies become measurable. From there we branch outward: radical chain reactions and combustion, homogeneous catalysis and oscillating reactions, adsorption and catalysis at surfaces, photochemical kinetics, and finally molecular beam experiments and reaction dynamics.",
+    "What makes kinetics hard is not the mathematics — mostly first-order differential equations and some statistical averaging — but the bookkeeping: many intermediates, several approximations in play at once, and the need to check that every derived rate law reproduces the observed orders. The remedy is the same throughout this atlas: derive every result yourself, check its limiting behaviour, and read the numbers of real experiments. By the end you should be able to take a published rate law and say what mechanism it supports, and what it cannot tell you."
+  ],
   "prerequisites": [
     "general-chemistry-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Measure reaction rates by following concentration in time — spectrophotometrically, conductimetrically, or by pressure — and convert a measured signal into a concentration–time record.",
+    "Derive the integrated rate laws for zero-, first- and second-order reactions, extract rate constants from linear plots, and compute half-lives.",
+    "Apply the method of initial rates and the isolation method to determine reaction orders experimentally.",
+    "Apply the steady-state and pre-equilibrium approximations to multi-step mechanisms and derive their composite rate laws.",
+    "Estimate collision frequencies and Arrhenius parameters, and explain steric factors and the temperature dependence of rate constants.",
+    "Use the Eyring equation to obtain enthalpies and entropies of activation, and interpret kinetic isotope effects.",
+    "Analyse chain reactions, catalytic cycles and oscillating reactions with the steady-state approximation, and explain explosion limits.",
+    "Derive the Langmuir and BET adsorption isotherms and distinguish Langmuir–Hinshelwood from Eley–Rideal surface kinetics.",
+    "Interpret Stern–Volmer quenching data, quantum yields and photochemical rate laws, and relate them to excited-state lifetimes."
+  ],
   "chapters": [
     {
       "slug": "rate-laws",
@@ -87,8 +102,72 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1850,
+      "title": "Wilhelmy formulates the law of active masses",
+      "detail": "In his doctoral dissertation at Heidelberg, Wilhelm Wilhelmy showed that the rate of inversion of sucrose by acid is proportional to the concentration of sucrose, and that the catalyst is not consumed — the first quantitative rate law.",
+      "people": ["Wilhelm Wilhelmy"]
+    },
+    {
+      "year": 1864,
+      "title": "Guldberg and Waage publish the law of mass action",
+      "detail": "Cato Maximilian Guldberg and Peter Waage, in a memoir to the Christiania Videnskabsselskab, proposed that chemical affinity is proportional to active mass, laying the foundation of both equilibrium and kinetics.",
+      "people": ["Cato Maximilian Guldberg", "Peter Waage"]
+    },
+    {
+      "year": 1889,
+      "title": "Arrhenius introduces the exponential temperature dependence",
+      "detail": "Svante Arrhenius, studying the inversion of cane sugar by acids, found that rate constants grow exponentially with temperature and introduced the activation energy and the equation that carries his name.",
+      "people": ["Svante Arrhenius"]
+    },
+    {
+      "year": 1916,
+      "title": "Langmuir develops the theory of adsorption",
+      "detail": "Irving Langmuir derived the isotherm for monolayer adsorption and showed that surface reactions follow the coverage of the adsorbed layer, founding surface kinetics — work recognised by the 1932 Nobel Prize in Chemistry.",
+      "people": ["Irving Langmuir"]
+    },
+    {
+      "year": 1935,
+      "title": "Eyring publishes transition-state theory",
+      "detail": "Henry Eyring's paper 'The Activated Complex in Chemical Reactions' recast the rate constant as the flux of an activated complex in quasi-equilibrium with reactants; Evans and Polanyi arrived at the same idea independently.",
+      "people": ["Henry Eyring", "M. G. H. Evans", "Michael Polanyi"]
+    },
+    {
+      "year": 1951,
+      "title": "Belousov discovers the oscillating reaction",
+      "detail": "Boris Belousov found that the bromate–cerium citrate system oscillates in a well-stirred solution, a result rejected by journals for years and published only as a footnote in 1959.",
+      "people": ["Boris Belousov"]
+    },
+    {
+      "year": 1967,
+      "title": "Eigen receives the Nobel Prize for kinetic methods",
+      "detail": "Manfred Eigen, Ronald Norrish and George Porter shared the Nobel Prize in Chemistry for the study of extremely fast reactions — the relaxation method, flash photolysis and pulse radiolysis — which opened the microsecond and shorter timescale.",
+      "people": ["Manfred Eigen", "Ronald Norrish", "George Porter"]
+    },
+    {
+      "year": 1986,
+      "title": "The Nobel Prize for reaction dynamics",
+      "detail": "Dudley Herschbach and Yuan T. Lee shared half of the Nobel Prize in Chemistry for the development of the crossed molecular beam method, which resolves individual reactive scattering events; Marcus Polanyi shared the other half for energy disposal in elementary reactions.",
+      "people": ["Dudley Herschbach", "Yuan T. Lee", "J. C. Polanyi"]
+    },
+    {
+      "year": 1999,
+      "title": "Femtochemistry makes the transition state observable",
+      "detail": "Ahmed Zewail's Nobel Prize recognised femtosecond laser pulses that record molecular motion during the reaction itself, turning the transition state from an inference into something that can, in principle, be watched.",
+      "people": ["Ahmed Zewail"]
+    }
+  ],
+  "references": [
+    {"title": "Physical Chemistry", "authors": "Peter Atkins, Julio de Paula and Jonathan Keeler", "year": 2018, "note": "The standard companion text; chapters on rate laws, chain reactions and photochemistry align with this course."},
+    {"title": "Chemical Kinetics", "authors": "Kevin J. Laidler", "year": 1987, "note": "The classic specialist text, 3rd edition; still the best treatment of homogeneous gas kinetics and chain reactions."},
+    {"title": "Chemical Kinetics and Reaction Mechanisms", "authors": "James H. Espenson", "year": 2002, "note": "A 2nd-edition undergraduate book with worked mechanisms and a careful discussion of the steady-state approximation."},
+    {"title": "Chemical Kinetics and Dynamics", "authors": "Jeffrey I. Steinfeld, Joseph S. Francisco and William L. Hase", "year": 1999, "note": "2nd edition; bridges kinetics and molecular dynamics, with the crossed-beam and laser material."},
+    {"title": "Chemical Kinetics and Reaction Dynamics", "authors": "Paul L. Houston", "year": 2001, "note": "A modern undergraduate text, clear on elementary steps, falloff and molecular beams."},
+    {"title": "Physical Chemistry", "authors": "Thomas Engel and Philip Reid", "year": 2013, "note": "4th edition; many worked kinetic examples and good tables of rate data."},
+    {"title": "Physical Chemistry", "authors": "Keith J. Laidler and John H. Meiser", "year": 1999, "note": "A broad physical chemistry text with a strong kinetics section."},
+    {"title": "Physical Chemistry", "authors": "G. M. Barrow", "year": 1996, "note": "6th edition; concise and mathematically careful, useful for the statistical side."}
+  ],
   "next": [
     "organometallics-catalysis",
     "environmental-chemistry"

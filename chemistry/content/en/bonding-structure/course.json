@@ -7,11 +7,26 @@
   "order": 30,
   "tagline": "Ionic and covalent bonds, Lewis structures, VSEPR, hybridisation, molecular orbitals, metals, intermolecular forces and solids",
   "summary": "Chemical bonds hold matter together and decide its shape and properties. This course moves from ionic bonding and Lewis structures through VSEPR theory, valence bond theory and molecular orbitals to bonding in metals, the forces between molecules and the structures of solids.",
-  "overview": [],
+  "overview": [
+    "Every bulk property of a substance — its shape, its melting point, its colour, its hardness, whether it conducts electricity — follows from how its atoms are joined and how the molecules arrange themselves in space. Chemical bonding is the bridge between the periodic table, which organises the elements, and the behaviour of the substances those elements form. This course builds that bridge in one continuous argument: electrons arrange themselves to fill shells and minimise energy, and that single idea, applied carefully, explains ionic salts, covalent molecules, metals, and the molecular crystals held together by weak forces.",
+    "The course is deliberately organised as a progression. It opens with ionic bonding, where the energetics are explicit and measurable through Born–Haber cycles, then turns to covalent bonding and the Lewis structures that remain the working language of chemistry. VSEPR theory turns Lewis structures into three-dimensional shapes; valence bond theory explains those shapes through hybrid orbitals; molecular orbital theory goes deeper still, explaining why some molecules are paramagnetic and what the HOMO and LUMO are. The final chapters treat metals, the weak forces between molecules, and the structures of crystalline solids, so that the course ends where the materials courses begin.",
+    "What makes the subject hard is not the mathematics, which stays elementary, but the multiplicity of models. Lewis structures, VSEPR, hybridisation and molecular orbital theory are not competing theories but layers of approximation, each useful in its place, and knowing which layer to reach for is a skill that has to be learned explicitly. Students who memorise shapes without understanding why the models differ end up unable to handle the cases where the models disagree.",
+    "Expect to draw constantly — Lewis structures, three-dimensional sketches, molecular orbital diagrams — and to check every prediction against real data: bond lengths, bond angles, dipole moments, lattice energies, boiling points. The numbers are the court of appeal. A model that predicts the shape of methane is worth little unless you can also say why xenon difluoride is linear and why the bond angle in water is 104.5° and not 109.5°."
+  ],
   "prerequisites": [
     "general-chemistry-1"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Construct Lewis structures for main-group molecules and ions, assign formal charges, and judge which resonance contributor dominates.",
+    "Explain the formation of ionic compounds and calculate lattice energies with the Born–Landé and Kapustinskii equations.",
+    "Build and use Born–Haber cycles to extract lattice energies from ionisation energies, electron affinities and enthalpies of formation.",
+    "Predict molecular shapes, bond angles and deviations from ideal angles using VSEPR theory, including molecules with lone pairs and expanded octets.",
+    "Describe bonding in terms of hybrid atomic orbitals, distinguishing σ and π bonds in single, double and triple bonds.",
+    "Construct molecular orbital diagrams for diatomic and small polyatomic molecules, determine bond order, and predict magnetic behaviour from the orbital occupancy.",
+    "Explain metallic bonding through band theory and account for the difference between conductors, semiconductors and insulators.",
+    "Rank boiling points, melting points, solubilities and viscosities using dipole–dipole interactions, hydrogen bonding and London dispersion forces.",
+    "Classify crystalline solids as ionic, metallic, covalent-network or molecular, and relate unit-cell geometry and packing to density and diffraction data."
+  ],
   "chapters": [
     {
       "slug": "ionic-bonding",
@@ -82,8 +97,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1916,
+      "title": "Lewis publishes the shared electron pair",
+      "detail": "Gilbert N. Lewis's paper in the Journal of the American Chemical Society puts forward the cubical atom and the shared electron pair as the basis of the covalent bond, together with the rule of eight that bears his name.",
+      "people": ["Gilbert N. Lewis"]
+    },
+    {
+      "year": 1918,
+      "title": "The Born–Landé lattice energy formula",
+      "detail": "Max Born and Klaus Landé derive an expression for the electrostatic energy of an ionic crystal in terms of the ion charges, the nearest-neighbour distance and the Madelung constant, making lattice energy a calculable quantity.",
+      "people": ["Max Born", "Klaus Landé"]
+    },
+    {
+      "year": 1927,
+      "title": "Heitler and London apply quantum mechanics to the chemical bond",
+      "detail": "Walter Heitler and Fritz London apply the new wave mechanics to the hydrogen molecule, showing that the bond arises from electron pairing and exchange energy — the first quantum theory of the covalent bond.",
+      "people": ["Walter Heitler", "Fritz London"]
+    },
+    {
+      "year": 1930,
+      "title": "London explains the forces between nonpolar molecules",
+      "detail": "Fritz London shows that fluctuating, correlated electron distributions in neighbouring atoms produce an attractive force, giving the quantum-mechanical origin of the dispersion forces that condense noble gases.",
+      "people": ["Fritz London"]
+    },
+    {
+      "year": 1931,
+      "title": "Pauling introduces hybridisation",
+      "detail": "Linus Pauling's early papers on valence introduce the mixing of atomic orbitals into directed hybrid orbitals, accounting for the equivalent bonds and definite bond angles of polyatomic molecules.",
+      "people": ["Linus Pauling"]
+    },
+    {
+      "year": 1932,
+      "title": "Mulliken develops molecular orbital theory",
+      "detail": "Robert S. Mulliken's papers of the early 1930s construct molecular orbitals as combinations of atomic orbitals and introduce the concepts of bonding and antibonding orbitals, ionisation energies from orbital energies, and the spectroscopy of molecular electronic states.",
+      "people": ["Robert S. Mulliken"]
+    },
+    {
+      "year": 1939,
+      "title": "Pauling publishes The Nature of the Chemical Bond",
+      "detail": "Pauling's book synthesises thermodynamic, diffraction and spectroscopic evidence into a single quantitative theory of bonding, with bond order, bond length, electronegativity and hybridisation as its central tools.",
+      "people": ["Linus Pauling"]
+    },
+    {
+      "year": 1954,
+      "title": "Pauling receives the Nobel Prize in Chemistry",
+      "detail": "Linus Pauling is awarded the Nobel Prize in Chemistry for his work on chemical bonding, and the structural basis of biological molecules, at a time when his structural programme had already solved proteins, silicates and many inorganic structures.",
+      "people": ["Linus Pauling"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Chemical Principles: The Quest for Insight",
+      "authors": "Peter Atkins, Loretta Jones and Leroy Laverman",
+      "year": 2022,
+      "note": "The natural companion to this course: bonding, shape and intermolecular forces treated with quantitative care and many data tables."
+    },
+    {
+      "title": "Inorganic Chemistry",
+      "authors": "Catherine Housecroft and Alan G. Sharpe",
+      "year": 2018,
+      "note": "A strong fifth edition with excellent chapters on structure, lattice energetics and the solid state."
+    },
+    {
+      "title": "Molecular Quantum Mechanics",
+      "authors": "Peter Atkins and Ronald Friedman",
+      "year": 2011,
+      "note": "Where the molecular orbital ideas of this course are developed properly, with the mathematics turned up."
+    },
+    {
+      "title": "The Nature of the Chemical Bond",
+      "authors": "Linus Pauling",
+      "year": 1939,
+      "note": "The classic itself; the original source for electronegativity, hybridisation and bond order."
+    },
+    {
+      "title": "Physical Chemistry",
+      "authors": "Ira N. Levine",
+      "year": 2009,
+      "note": "Quantum chapters with worked derivations, useful when the qualitative pictures need to be checked against calculation."
+    },
+    {
+      "title": "Physical Chemistry: A Molecular Approach",
+      "authors": "Donald A. McQuarrie and Jack Simon",
+      "year": 1997,
+      "note": "Clear on spectroscopy and molecular orbitals; good for checking bond lengths and rotational constants."
+    },
+    {
+      "title": "Inorganic Chemistry",
+      "authors": "Gary L. Miessler, Paul J. Fischer and Donald A. Tarr",
+      "year": 2014,
+      "note": "A fifth edition with a good treatment of molecular orbital diagrams and the structures of solids."
+    },
+    {
+      "title": "Solid State Chemistry and its Applications",
+      "authors": "Anthony R. West",
+      "year": 2014,
+      "note": "The reference for unit cells, packing, diffraction and defect chemistry once the solid-state chapters are done."
+    }
+  ],
   "next": [
     "organic-1",
     "main-group",

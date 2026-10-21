@@ -7,11 +7,26 @@
   "order": 50,
   "tagline": "The first and second laws, heat capacity, entropy, free energy, phase equilibria, mixtures, chemical equilibrium and ions in solution",
   "summary": "Thermodynamics predicts which changes can happen and how far they go, from energy and entropy alone. This course develops the first and second laws, the Gibbs and Helmholtz energies and the chemical potential, and applies them to phase transitions, mixtures, chemical equilibrium and solutions of ions.",
-  "overview": [],
+  "overview": [
+    "Thermodynamics is the science of energy and of the conditions under which change is possible. Unlike the other sciences of matter it does not ask what molecules are made of or how they move; it asks what must be true of any system, whatever its microscopic constitution, once energy is conserved and entropy tends to a maximum. From those two facts one can predict the direction of every chemical change, the equilibrium composition of a reacting mixture, the shape of every phase diagram and the efficiency of every engine, without detailed knowledge of molecular structure.",
+    "For the chemist this makes thermodynamics the science of the possible. Kinetics tells us how fast; thermodynamics tells us how far, and no catalyst, clever synthesis or industrial process can push a reaction beyond the equilibrium its thermodynamics allows. The subject therefore underpins the rest of the curriculum: the phase diagrams of materials, the folding of proteins, the voltage of batteries, the behaviour of solutions and the energy flows of living things are all applications of the same formalism.",
+    "This course builds that formalism in a single direction. It begins with the first law and the state functions, continues through heat capacity, enthalpy and the second law, and then treats the free energies, the chemical potential and the phase rule as tools to be applied. The later chapters — phase equilibria, mixtures, chemical equilibrium and ions in solution — are applications of the first four. The order matters: the chemical potential is unmanageable until the first and second laws are secure.",
+    "What makes thermodynamics hard is not the mathematics, which is mostly one- and two-variable calculus, but the conceptual reorganisation it demands. Heat and work are not substances and not state functions; temperature and entropy are not the same thing as heat; and the sign of a quantity depends on whether one follows the system or the surroundings. The remedy is the one that has always worked: derive every relation by hand, test every formula against a limiting case, and say out loud what each symbol means before using it."
+  ],
   "prerequisites": [
     "general-chemistry-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Apply the first law to compute changes in internal energy, heat and work for expansions, compressions and heating of gases, and explain why ΔU is a state function while q and w are not.",
+    "Calculate heat capacities and enthalpy changes, and work out the temperature dependence of a reaction enthalpy with Kirchhoff’s law.",
+    "Compute entropy changes for heating, phase transitions and mixing, and apply the Clausius inequality and the third law.",
+    "Analyse the Carnot cycle and derive the efficiency limit that bears its name.",
+    "Derive the fundamental equation, the Maxwell relations and the Gibbs–Helmholtz equation from the total differentials of the thermodynamic potentials.",
+    "Apply the phase rule and the Clapeyron and Clausius–Clapeyron equations to the phase diagrams of pure substances.",
+    "Work with partial molar quantities, activities and activity coefficients in ideal and non-ideal solutions.",
+    "Calculate equilibrium constants from standard Gibbs energies and predict the effect of temperature on equilibrium with the van ’t Hoff equation.",
+    "Estimate ionic strengths and mean activity coefficients with the Debye–Hückel limiting law."
+  ],
   "chapters": [
     {
       "slug": "first-law",
@@ -82,8 +97,126 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1824,
+      "title": "Sadi Carnot’s Réflexions",
+      "detail": "Nicolas Léonard Sadi Carnot’s Réflexions sur la puissance motrice du feu set out the ideal heat engine and argued that its efficiency depends only on the temperatures between which it works — the first departure of thermodynamics from the caloric theory it was written within.",
+      "people": [
+        "Sadi Carnot",
+        "Hippolyte Carnot"
+      ]
+    },
+    {
+      "year": 1847,
+      "title": "Joule’s paddle-wheel apparatus",
+      "detail": "James Prescott Joule announced at the British Association meeting at Oxford that the mechanical equivalent of heat is constant, on the basis of a decade of experiments in which falling weights turned paddles in water and raised its temperature.",
+      "people": [
+        "James Prescott Joule"
+      ]
+    },
+    {
+      "year": 1850,
+      "title": "Clausius restates the laws",
+      "detail": "Rudolf Clausius, in his first paper on the mechanical theory of heat, restated the laws as the conservation of energy and the equivalence of transformations, rescuing the second law from Carnot’s now-failed caloric premise.",
+      "people": [
+        "Rudolf Clausius"
+      ]
+    },
+    {
+      "year": 1865,
+      "title": "Clausius names entropy",
+      "detail": "In a paper to the Poggendorff Annalen Clausius defined the cyclic integral of dQ/T as a state function and named it entropy, deliberately echoing the Greek entropē for a transformation, as energy had been named for work.",
+      "people": [
+        "Rudolf Clausius"
+      ]
+    },
+    {
+      "year": 1876,
+      "title": "Gibbs publishes the phase rule",
+      "detail": "In the second part of On the Equilibrium of Heterogeneous Substances, Josiah Willard Gibbs applied his 1873 fundamental equation to multiphase systems and derived the phase rule, which counts the degrees of freedom of any system in equilibrium.",
+      "people": [
+        "Josiah Willard Gibbs"
+      ]
+    },
+    {
+      "year": 1877,
+      "title": "Boltzmann’s statistical definition",
+      "detail": "Ludwig Boltzmann identified the entropy of a macrostate with the logarithm of the number of microscopic arrangements compatible with it, giving entropy a combinatorial meaning and the second law a probabilistic one.",
+      "people": [
+        "Ludwig Boltzmann"
+      ]
+    },
+    {
+      "year": 1884,
+      "title": "van ’t Hoff’s chemical equilibrium",
+      "detail": "Jacobus Henricus van ’t Hoff’s Études de dynamique chimique applied the second law to chemical change, deriving the equation for the temperature dependence of the equilibrium constant and founding chemical thermodynamics as a separate discipline.",
+      "people": [
+        "Jacobus Henricus van ’t Hoff"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "Nernst’s heat theorem",
+      "detail": "Walther Nernst, unable to bring his calculations of equilibrium constants into agreement with experiment, proposed that the entropy change of any isothermal process tends to zero as the temperature approaches absolute zero — the third law.",
+      "people": [
+        "Walther Nernst"
+      ]
+    },
+    {
+      "year": 1923,
+      "title": "Lewis and Randall’s activity",
+      "detail": "The American edition of Lewis and Randall’s Thermodynamics and the Free Energy of Chemical Substances replaced the ideal-solution formalism with the activity and the standard state, making the thermodynamics of real solutions practical for the first time.",
+      "people": [
+        "Gilbert N. Lewis",
+        "Merle Randall"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Physical Chemistry",
+      "authors": "Peter Atkins, Julio de Paula and Jonathan Reid",
+      "year": 2018,
+      "note": "The standard intermediate text; its treatment of the potentials, phase equilibria and electrochemistry sets the notation used throughout this atlas."
+    },
+    {
+      "title": "Chemical Principles: The Quest for Insight",
+      "authors": "Peter Atkins, Loretta Jones and Leron Laverman",
+      "year": 2016,
+      "note": "The first-course companion; useful for the thermochemistry and equilibrium foundations this course assumes."
+    },
+    {
+      "title": "Physical Chemistry",
+      "authors": "Ira N. Levine",
+      "year": 2014,
+      "note": "The most explicit on the mathematics — total differentials and the derivation of every Maxwell relation — and generous with worked numerical examples."
+    },
+    {
+      "title": "The Principles of Chemical Equilibrium",
+      "authors": "Peter Denbigh",
+      "year": 1981,
+      "note": "A mature treatment of equilibrium and solution thermodynamics, strong on the phase rule and on the meaning of standard states."
+    },
+    {
+      "title": "Thermodynamics and an Introduction to Thermostatistics",
+      "authors": "Herbert B. Callen",
+      "year": 1985,
+      "note": "The axiomatic, postulate-based formulation; rewarding once the first four chapters of this course are done."
+    },
+    {
+      "title": "Advanced Thermodynamics for Chemists",
+      "authors": "Robert de Levie",
+      "year": 2001,
+      "note": "Written for chemistry students, with explicit attention to the conventions and to the errors that trip students up."
+    },
+    {
+      "title": "Thermodynamics and the Free Energy of Chemical Substances",
+      "authors": "Gilbert N. Lewis and Merle Randall",
+      "year": 1923,
+      "note": "The original source of the activity and of the American notation; historically interesting and still correct."
+    }
+  ],
   "next": [
     "statistical-thermodynamics",
     "electrochemistry"
