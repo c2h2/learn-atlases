@@ -1,4 +1,236 @@
 {
-  "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC.",
-  "milestones": []
+  "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC. area is one of: general, physical, inorganic, organic, analytical, biological, materials.",
+  "milestones": [
+    {
+      "year": 1661,
+      "title": "Boyle dissolves the alchemical elements",
+      "detail": "The Sceptical Chymist attacks the Aristotelian and Paracelsian element doctrines as useless for explaining real experiments, and proposes instead that matter consists of corpuscles whose arrangements define what we call an element — the practical, operational idea that chemistry has used ever since.",
+      "people": ["Robert Boyle"],
+      "area": "general"
+    },
+    {
+      "year": 1754,
+      "title": "Black isolates a gas and discovers latent heat",
+      "detail": "Joseph Black shows that 'fixed air' (carbon dioxide) is a distinct substance held in magnesia and released by acids, the first of the elastic fluids to be pinned down as a chemical individual, and his measurements of heat absorbed in melting introduce the idea that energy hides in changes of state.",
+      "people": ["Joseph Black"],
+      "area": "physical"
+    },
+    {
+      "year": 1789,
+      "title": "Lavoisier founds modern chemistry",
+      "detail": "The Traité élémentaire de chimie sets the balance at the centre of the science: combustion is combination with oxygen, mass is conserved through every change, and a rewritten nomenclature makes compounds speak their composition — the overthrow of phlogiston in a single book.",
+      "people": ["Antoine Lavoisier", "Marie-Anne Paulze Lavoisier"],
+      "area": "general"
+    },
+    {
+      "year": 1799,
+      "title": "Proust's law of definite proportions",
+      "detail": "Analysing copper carbonates from mines and from the artificial malachite of the laboratory, Joseph Proust insists that a compound always contains the same elements in the same mass ratios, whatever its source — composition is fixed, and therefore atoms are thinkable.",
+      "people": ["Joseph Proust"],
+      "area": "general"
+    },
+    {
+      "year": 1803,
+      "title": "Dalton's atomic theory",
+      "detail": "John Dalton explains the laws of definite and multiple proportions by supposing that each element is a cloud of identical indivisible atoms and that compounds are small whole-number assemblies of them — the first quantitative theory of the invisible, and the beginning of stoichiometry.",
+      "people": ["John Dalton"],
+      "area": "general"
+    },
+    {
+      "year": 1811,
+      "title": "Avogadro distinguishes atoms from molecules",
+      "detail": "Amedeo Avogadro proposes that equal volumes of gases contain equal numbers of particles, and that those particles may be molecules of two or more atoms — the distinction that would take fifty years to be accepted but without which atomic weights stay contradictory.",
+      "people": ["Amedeo Avogadro"],
+      "area": "general"
+    },
+    {
+      "year": 1828,
+      "title": "Wöhler makes urea from ammonium cyanate",
+      "detail": "Heating an inorganic salt, Friedrich Wöhler crystallises urea, a compound long associated with living bodies — the first striking demonstration that organic compounds obey ordinary chemical laws and can be made in the flask, a watershed for the chemistry of life.",
+      "people": ["Friedrich Wöhler"],
+      "area": "organic"
+    },
+    {
+      "year": 1860,
+      "title": "Spectrum analysis finds elements in sunlight",
+      "detail": "Gustav Kirchhoff and Robert Bunsen show that each element emits and absorbs its own pattern of spectral lines, and use it to discover caesium and rubidium; within a decade the method finds thallium, indium and helium, and turns the solar spectrum into a chemical analysis.",
+      "people": ["Gustav Kirchhoff", "Robert Bunsen"],
+      "area": "analytical"
+    },
+    {
+      "year": 1865,
+      "title": "Kekulé proposes the ring of benzene",
+      "detail": "August Kekulé puts the six carbons of benzene in a closed chain with alternating single and double bonds, solving the strange compactness of aromatic chemistry and opening the vast coal-tar dye industry that made German chemical supremacy later in the century.",
+      "people": ["August Kekulé"],
+      "area": "organic"
+    },
+    {
+      "year": 1869,
+      "title": "Mendeleev orders the elements",
+      "detail": "Dmitri Mendeleev arranges the known elements by atomic weight and recurring valence, and — crucially — leaves gaps and predicts the properties of the missing ones; the discoveries of gallium, scandium and germanium turn a table into a law of nature.",
+      "people": ["Dmitri Mendeleev", "Lothar Meyer"],
+      "area": "inorganic"
+    },
+    {
+      "year": 1874,
+      "title": "The carbon atom is given a shape",
+      "detail": "Jacobus van 't Hoff and, independently, Joseph Le Bel place carbon's four bonds at the corners of a tetrahedron, so that mirror-image molecules become inevitable and optical isomerism in tartaric acid finally makes sense — stereochemistry, and with it molecular handedness in biology, is born.",
+      "people": ["Jacobus van 't Hoff", "Joseph Le Bel"],
+      "area": "organic"
+    },
+    {
+      "year": 1876,
+      "title": "Gibbs invents chemical thermodynamics",
+      "detail": "Working almost unnoticed in New Haven, Josiah Willard Gibbs shows that the direction and limit of every chemical change follow from a single function, later called the free energy, and his phase rule connects the states of a system to its components — equilibrium becomes a calculable thing.",
+      "people": ["Josiah Willard Gibbs"],
+      "area": "physical"
+    },
+    {
+      "year": 1884,
+      "title": "Arrhenius lets salts fall apart in water",
+      "detail": "Svante Arrhenius proposes that electrolytes dissociate into ions in solution — the reason salt water conducts — and his later equation for the temperature dependence of reaction rates becomes the working tool of every kineticist; the ionic theory wins him chemistry's first Nobel Prize.",
+      "people": ["Svante Arrhenius"],
+      "area": "physical"
+    },
+    {
+      "year": 1887,
+      "title": "van 't Hoff gives solutions their laws",
+      "detail": "In his Études de dynamique chimique Jacobus van 't Hoff shows that dilute solutions obey the same pressure laws as gases, ties osmotic pressure to molecular weight, and applies thermodynamics to equilibrium and reaction rate — physical chemistry appears as a discipline with its own journal.",
+      "people": ["Jacobus van 't Hoff"],
+      "area": "physical"
+    },
+    {
+      "year": 1893,
+      "title": "Werner explains the coordination compounds",
+      "detail": "Alfred Werner proposes that metal atoms carry a fixed coordination number with bonds directed in space, so that cobalt ammines are understood as compact ions with ligands at the corners of octahedra — the foundation of coordination chemistry and of molecular geometry at metals.",
+      "people": ["Alfred Werner"],
+      "area": "inorganic"
+    },
+    {
+      "year": 1898,
+      "title": "The Curies isolate radium",
+      "detail": "Working in a shed with tonnes of pitchblende residue, Marie and Pierre Curie concentrate and measure their way to decigram quantities of radium, proving a new element by its radioactivity — and inventing the patient, quantitative radiochemistry that would follow.",
+      "people": ["Marie Curie", "Pierre Curie"],
+      "area": "inorganic"
+    },
+    {
+      "year": 1900,
+      "title": "Grignard puts magnesium between carbon and halogen",
+      "detail": "Victor Grignard's organomagnesium halides add to carbonyl groups with a selectivity no one had matched, making carbon–carbon bond construction a routine operation; the reagent class that bears his name remains the most used in the synthesis of alcohols and fine chemicals.",
+      "people": ["Victor Grignard"],
+      "area": "organic"
+    },
+    {
+      "year": 1909,
+      "title": "Haber fixes nitrogen from the air",
+      "detail": "Fritz Haber demonstrates the catalytic synthesis of ammonia from nitrogen and hydrogen at high pressure and temperature, and BASF's engineers scale it up within four years — a high-pressure catalytic process that now feeds half the world and reshaped the nitrogen cycle of the planet.",
+      "people": ["Fritz Haber", "Carl Bosch"],
+      "area": "materials"
+    },
+    {
+      "year": 1912,
+      "title": "Aston weighs the isotopes",
+      "detail": "Francis Aston's focusing mass spectrograph separates ions by mass-to-charge with unprecedented resolution, showing that the elements are mixtures of isotopes of definite mass — the mass spectrometer becomes chemistry's scale for the invisible.",
+      "people": ["Francis Aston"],
+      "area": "analytical"
+    },
+    {
+      "year": 1913,
+      "title": "Bragg diffracts X-rays off crystals",
+      "detail": "William Henry Bragg and William Lawrence Bragg turn Max von Laue's diffraction photographs into a method, nλ = 2d sin θ, and solve the structures of NaCl, diamond and the sulfides — for the first time the arrangement of atoms in a solid is measured, not imagined.",
+      "people": ["William Henry Bragg", "William Lawrence Bragg"],
+      "area": "analytical"
+    },
+    {
+      "year": 1927,
+      "title": "The chemical bond meets quantum mechanics",
+      "detail": "Walter Heitler and Fritz London apply the new wave mechanics to H₂ and show that the bond is the lowering of electronic energy when two electron spins pair across the nuclei — valence bond theory, followed within two years by Hund, Mulliken and the molecular orbital method.",
+      "people": ["Walter Heitler", "Fritz London"],
+      "area": "physical"
+    },
+    {
+      "year": 1928,
+      "title": "Fleming's mould and the antibiotic era",
+      "detail": "Alexander Fleming notices that a contaminating Penicillium kills the staphylococci on his plates; a decade later Howard Florey and Ernst Chain purify the penicillins and prove them in patients, launching both antibiotic medicine and the era of structure-guided natural-product chemistry.",
+      "people": ["Alexander Fleming", "Howard Florey", "Ernst Chain"],
+      "area": "biological"
+    },
+    {
+      "year": 1938,
+      "title": "Uranium is split",
+      "detail": "Otto Hahn and Fritz Strassmann find barium among the products of neutron-bombarded uranium; Lise Meitner and Otto Frisch interpret it as the nucleus splitting in two, releasing enormous energy — chemistry and nuclear physics become inseparable, for medicine, power and weapons.",
+      "people": ["Otto Hahn", "Fritz Strassmann", "Lise Meitner", "Otto Frisch"],
+      "area": "inorganic"
+    },
+    {
+      "year": 1939,
+      "title": "Pauling writes the bond into words",
+      "detail": "The Nature of the Chemical Bond assembles hybridisation, resonance, electronegativity and bond energy into one quantitative picture of how molecules hold together; its scale of electronegativities and its habit of reasoning with orbitals still organise every textbook.",
+      "people": ["Linus Pauling"],
+      "area": "physical"
+    },
+    {
+      "year": 1941,
+      "title": "Martin and Synge invent partition chromatography",
+      "detail": "Archer Martin and Richard Synge separate amino acids by letting them partition between two liquid phases, one held on a support — a counter-current method that becomes column and gas chromatography, and the workhorse separation of every laboratory that measures mixtures.",
+      "people": ["Archer Martin", "Richard Synge"],
+      "area": "analytical"
+    },
+    {
+      "year": 1946,
+      "title": "Nuclear magnetic resonance is observed",
+      "detail": "Felix Bloch and, independently, Edward Purcell detect the precession of nuclear spins in a magnetic field; within twenty years chemical shift and coupling turn NMR into the principal method for determining molecular structure, and later into medical imaging.",
+      "people": ["Felix Bloch", "Edward Purcell"],
+      "area": "analytical"
+    },
+    {
+      "year": 1951,
+      "title": "Ferrocene breaks the sandwich",
+      "detail": "Peter L. Pauson and Thomas J. Kealy make a startlingly stable orange compound from cyclopentadiene and iron; the sandwich structure proposed independently by Wilkinson, Fischer and by Rice and Ruff settles it, and organometallic chemistry of the transition metals opens as a central field.",
+      "people": ["Thomas Kealy", "Peter L. Pauson", "Geoffrey Wilkinson", "Ernst Otto Fischer"],
+      "area": "inorganic"
+    },
+    {
+      "year": 1953,
+      "title": "The structure of DNA",
+      "detail": "James Watson and Francis Crick build the double helix from Rosalind Franklin's and Maurice Wilkins's X-ray diffraction patterns and Chargaff's base ratios — two hydrogen-bonded chains whose copying mechanism is written in the structure itself, and chemical biology acquires its central fact.",
+      "people": ["James Watson", "Francis Crick", "Rosalind Franklin", "Maurice Wilkins"],
+      "area": "biological"
+    },
+    {
+      "year": 1953,
+      "title": "Ziegler and Natta tame the olefins",
+      "detail": "Karl Ziegler's titanium–aluminium catalysts polymerise ethylene at ordinary pressure, and Giulio Natta extends them to stereoregular polypropylene — coordination polymerisation begins, giving the plastics that dominate the modern material world and a Nobel Prize in 1963.",
+      "people": ["Karl Ziegler", "Giulio Natta"],
+      "area": "materials"
+    },
+    {
+      "year": 1965,
+      "title": "Orbital symmetry rules pericyclic reactions",
+      "detail": "Robert Burns Woodward and Roald Hoffmann show that whether a thermal or photochemical cycloaddition or electrocyclisation is allowed follows from the symmetry of the orbitals that move — a qualitative theory that lets chemists plan stereospecific reactions on paper.",
+      "people": ["Robert Burns Woodward", "Roald Hoffmann"],
+      "area": "organic"
+    },
+    {
+      "year": 1965,
+      "title": "Merrifield builds peptides on a bead",
+      "detail": "Robert Merrifield anchors the growing chain to an insoluble resin and drives each coupling to completion by washing away the excess reagent — solid-phase synthesis automates peptides and, later, oligonucleotides, making sequence-defined molecules a routine supply item.",
+      "people": ["Robert Bruce Merrifield"],
+      "area": "biological"
+    },
+    {
+      "year": 1985,
+      "title": "C₆₀: a third form of carbon",
+      "detail": "Kroto, Curl, Smalley and co-workers find a remarkably stable C₆₀ cluster in their laser-vaporised graphite, and the buckminsterfullerene cage is confirmed by bulk synthesis in 1990 — nanotubes, fullerenes and the whole nanocarbon field follow from that 720 amu peak.",
+      "people": ["Harold Kroto", "Robert Curl", "Richard Smalley"],
+      "area": "materials"
+    },
+    {
+      "year": 1998,
+      "title": "Green chemistry writes its twelve principles",
+      "detail": "Paul Anastas and John Warner set out twelve principles — prevention, atom economy, safer solvents, design for degradation, catalysis over stoichiometric reagents — turning an attitude of reducing harm into a checkable design methodology now embedded in industrial and academic practice.",
+      "people": ["Paul Anastas", "John Warner"],
+      "area": "materials"
+    }
+  ]
 }
