@@ -7,11 +7,26 @@
   "order": 40,
   "tagline": "Safety and hazards, measurement and uncertainty, data and graphs, quantitative technique, separation, chromatography and reporting",
   "summary": "Chemistry is an experimental science, and good results start with safe, careful practice. This course covers hazard assessment and safety information, measurement uncertainty and the treatment of data, quantitative technique, the standard ways of separating and purifying compounds, simple methods of identification and the honest reporting of results.",
-  "overview": [],
+  "overview": [
+    "Chemistry is an experimental science, and this course teaches the craft on which every other course in the atlas depends: how to work safely, measure honestly, separate cleanly and report truthfully. It begins where the bench begins — with hazards — and builds the habits that keep both people and results intact: risk assessment, the GHS pictogram system and safety data sheets, protective equipment, the segregation of incompatible chemicals and the disposal of waste. From safety it turns to measurement: what an uncertainty actually claims, how random and systematic errors behave, how significant figures and the propagation of uncertainty keep a final answer honest, and how a graph with a least-squares line turns a table of numbers into a physical constant.",
+    "The subject matters because no result in any later course is better than the technique behind it. A titration is only as good as the cleaning and rinsing of its glassware; a yield is only as good as the last filtration and the dryness of the solid; an equilibrium constant measured in General Chemistry II is only as good as the calibration that produced it; and a research finding is only as good as its honest, complete reporting — a point the reproducibility difficulties of recent decades have made a public concern rather than a professional footnote. The techniques here are also the whole working equipment of the analytical, organic, physical and biological laboratories you will enter next: standard solutions, extractions, recrystallisations, chromatography plates and melting points are not preliminary exercises but the daily practice of working chemists.",
+    "The course is organised in three movements. The first three chapters lay the groundwork: laboratory safety and hazard communication, measurement and uncertainty, and the recording and graphical treatment of data. The next three build quantitative technique: the balance and volumetric glassware, the standard methods of separation and purification, and the introduction to chromatography. The last two close the circle of the experiment: identifying a compound from its physical properties and simple qualitative tests, and writing the whole thing up honestly, with uncertainties, sources and a notebook that lets someone else repeat it. The course assumes General Chemistry I, and it is the direct prerequisite of Analytical Chemistry.",
+    "What makes this subject hard is not difficulty but discipline: the concepts are few and simple, while the standards are exact. The remedy is a small set of habits, repeated until they are automatic — assess the hazards before you touch a bottle, write numbers in the notebook as they happen, carry an uncertainty through every calculation the way you carry units, plan a separation from the properties of the mixture rather than from a recipe, and report what you observed rather than what you hoped. Every worked example in these lessons is chosen to exercise one of those habits, and the exercises ask you to apply them to numbers you will plausibly meet at the bench."
+  ],
   "prerequisites": [
     "general-chemistry-1"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Carry out a risk assessment for a teaching-laboratory experiment, interpret GHS pictograms and safety data sheets, and choose appropriate protective equipment, storage and waste handling.",
+    "Distinguish accuracy from precision and random from systematic error, and estimate the uncertainty of a measurement from instrument tolerances and repeated readings.",
+    "Apply the rules of significant figures and propagate uncertainties through sums, products, dilutions and logarithms.",
+    "Keep a laboratory notebook to professional standard and present data in tables and graphs with labelled axes, sensible scales and honest captions.",
+    "Fit a straight line by least squares, report slope and intercept with their uncertainties, and use a calibration line to determine an unknown concentration.",
+    "Use an analytical balance and volumetric glassware correctly, prepare standard solutions by weighing and by dilution, and carry out titrations and weighings to constant mass with a full uncertainty budget.",
+    "Choose and justify a separation or purification method — filtration, recrystallisation, distillation, liquid–liquid extraction — from the physical properties of the mixture.",
+    "Calculate partition coefficients, extraction efficiencies and retention factors, and use thin-layer and column chromatography to follow a separation.",
+    "Identify a pure compound from melting point, mixed melting point, boiling point, density, refractive index and optical rotation supported by simple qualitative tests, and report results with their uncertainties and sources."
+  ],
   "chapters": [
     {
       "slug": "lab-safety",
@@ -77,8 +92,112 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1661,
+      "title": "Boyle publishes The Sceptical Chymist",
+      "detail": "Robert Boyle argues in dialogue form that chemistry must rest on well-performed and openly reported experiments rather than on Aristotelian elements or alchemical principles, making the replicable, fully described experiment — the ancestor of the laboratory report — the foundation of chemical knowledge.",
+      "people": ["Robert Boyle"]
+    },
+    {
+      "year": 1754,
+      "title": "Black puts the balance to work",
+      "detail": "Joseph Black's dissertation on magnesia alba weighs the 'fixed air' driven off from carbonates and the alkali left behind, showing that careful weighing turns qualitative transformations into quantitative chemistry and founding the gravimetric method.",
+      "people": ["Joseph Black"]
+    },
+    {
+      "year": 1789,
+      "title": "Lavoisier's Traité makes the balance central",
+      "detail": "Antoine-Laurent Lavoisier's Traité élémentaire de chimie puts the balance at the centre of the laboratory and the conservation of mass at the centre of chemistry, with Marie-Anne Paulze Lavoisier's precise engravings of the apparatus setting the standard for reporting how an experiment was actually done.",
+      "people": ["Antoine-Laurent Lavoisier", "Marie-Anne Paulze Lavoisier"]
+    },
+    {
+      "year": 1805,
+      "title": "Legendre publishes least squares",
+      "detail": "Adrien-Marie Legendre proposes minimising the sum of squared errors to fit a curve to over-determined observations; Carl Friedrich Gauss supplies the probabilistic justification in 1809, and the straight-line fit of every calibration graph since is the method of these two men.",
+      "people": ["Adrien-Marie Legendre", "Carl Friedrich Gauss"]
+    },
+    {
+      "year": 1825,
+      "title": "Liebig's teaching laboratory at Giessen",
+      "detail": "Justus von Liebig begins systematic hands-on training in a purpose-built laboratory at the University of Giessen, admitting students from across Europe to learn technique by doing it; the model — with its bench discipline and its logbook of accidents — is that of the modern teaching laboratory.",
+      "people": ["Justus von Liebig"]
+    },
+    {
+      "year": 1855,
+      "title": "The Bunsen burner reaches the bench",
+      "detail": "Robert Bunsen and the mechanic Peter Desaga equip the laboratory at Heidelberg with a burner whose air-hole mixes gas and air before ignition, giving a clean, controllable and smokeless flame that replaced the smoky candles and oil lamps of earlier benches.",
+      "people": ["Robert Bunsen", "Peter Desaga"]
+    },
+    {
+      "year": 1906,
+      "title": "Tswett separates plant pigments on a chalk column",
+      "detail": "Mikhail Tsvet, working in Heidelberg and publishing in 1906, passes a solution of plant pigments through a column of calcium carbonate and collects the separated coloured bands of chlorophylls and carotenes — the first chromatogram, though the technique sleeps for thirty years.",
+      "people": ["Mikhail Tsvet"]
+    },
+    {
+      "year": 1941,
+      "title": "Martin and Synge's theory of partition",
+      "detail": "Archer Martin and Richard Synge explain separations as the partition of solutes between two liquid phases, turning Tswett's coloured bands into a general theory that yields paper chromatography in 1944 and gas–liquid chromatography in 1952, and wins the Nobel Prize of 1952.",
+      "people": ["Archer Martin", "Richard Synge"]
+    },
+    {
+      "year": 2003,
+      "title": "The Globally Harmonized System is first issued",
+      "detail": "The United Nations publishes the first edition of the Globally Harmonized System of Classification and Labelling of Chemicals, replacing a patchwork of national hazard symbols with one set of pictograms, signal words and a standard sixteen-section safety data sheet now used in laboratories worldwide.",
+      "people": ["United Nations Economic Commission for Europe"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Quantitative Chemical Analysis",
+      "authors": "Daniel C. Harris and Charles A. Lucy",
+      "year": 2022,
+      "note": "The standard undergraduate text for this course's measurement chapters: significant figures, propagation of uncertainty, calibration lines, balances and glassware, each with worked examples."
+    },
+    {
+      "title": "Fundamentals of Analytical Chemistry",
+      "authors": "Douglas A. Skoog, Donald M. West, F. James Holler and Stanley R. Crouch",
+      "year": 2014,
+      "note": "Broad and dependable on classical analysis: gravimetry, titrimetry, equilibrium in analysis and the statistics of replicate measurements."
+    },
+    {
+      "title": "Statistics and Chemometrics for Analytical Chemistry",
+      "authors": "Joel Miller and Stephen Townsend",
+      "year": 2018,
+      "note": "The companion for the data chapters: means and standard deviations, the t-test and Q-test, least-squares calibration and method comparison, in the order an undergraduate meets them."
+    },
+    {
+      "title": "Principles of Instrumental Analysis",
+      "authors": "Douglas A. Skoog, F. James Holler and Stanley R. Crouch",
+      "year": 2007,
+      "note": "The bridge to the instruments behind the techniques of this course — what a chromatograph, a refractometer or a polarimeter actually measures, in careful detail."
+    },
+    {
+      "title": "Introduction to Organic Laboratory Techniques: A Microscale Approach",
+      "authors": "Donald L. Pavia, Gary M. Lampen and George T. Kriz",
+      "year": 2006,
+      "note": "A practical manual for the separation and identification chapters: recrystallisation, distillation, extraction, TLC and qualitative tests, each with the technique photographs and checklists that make them work."
+    },
+    {
+      "title": "Macroscale and Microscale Organic Experiments",
+      "authors": "Keith J. Williamson and Katherine M. Masters",
+      "year": 2017,
+      "note": "Full procedures with hazard notes for the standard teaching preparations; good models of the risk assessment and the waste handling this course insists on."
+    },
+    {
+      "title": "Vogel's Textbook of Practical Organic Chemistry",
+      "authors": "Arthur Israel Vogel, Brian S. Furniss, Arnold J. Hannaford, Peter W. G. Smith and Austin R. Tatchell",
+      "year": 1989,
+      "note": "The classic reference for preparation, purification and identification by physical constants; its tables of melting and boiling points are still the bench companion."
+    },
+    {
+      "title": "Laboratory Safety for Chemistry Students",
+      "authors": "John W. Roberts and Marilyne Jo Dilly",
+      "year": 2016,
+      "note": "The safety backbone: hazard classes and exposure, the fume cupboard, personal protective equipment, risk assessment and emergency response, written for students rather than managers."
+    }
+  ],
   "next": [
     "analytical-chemistry"
   ]
