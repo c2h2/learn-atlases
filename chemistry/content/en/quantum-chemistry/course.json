@@ -7,11 +7,26 @@
   "order": 70,
   "tagline": "The Schrödinger equation, model systems, the hydrogen atom, many-electron atoms, approximation methods, the chemical bond, Hückel theory and symmetry",
   "summary": "Quantum mechanics is the foundation of chemical structure and spectroscopy. This course develops the Schrödinger equation from first principles, solves the model systems behind translation, vibration and rotation, treats atoms and the approximation methods needed for molecules, and ends with the quantum description of the chemical bond, π systems and molecular symmetry.",
-  "overview": [],
+  "overview": [
+    "Chemistry is, at bottom, a quantum-mechanical science: the shapes of molecules, the colours of their spectra, the strength of their bonds and the very structure of the periodic table are consequences of one equation — the Schrödinger equation — applied to nuclei and electrons. This course builds that equation from the experimental facts that destroyed classical physics (black-body radiation, line spectra, the photoelectric effect), gives the wavefunction its Born probability interpretation, and learns to solve the equation exactly for the model systems that stand behind every real molecule: the particle in a box for translation, the harmonic oscillator for vibration, the rigid rotor for rotation and the hydrogen atom itself. Along the way the same formal language — operators, eigenvalues, commutators and uncertainty — becomes the chemist's everyday vocabulary.",
+    "The subject matters because everything the rest of the atlas takes for granted is derived here. The molecular orbitals of [[bonding-structure/molecular-orbitals]] are approximations to solutions of the Schrödinger equation; the rotational, vibrational and electronic selection rules used in [[spectroscopy/spectroscopy-principles]] follow from symmetry and transition moments; the Hartree–Fock and density-functional machinery of [[computational-chemistry/hartree-fock]] is the approximation programme of this course carried out on a computer. A chemist who can solve the model systems and the two approximation methods can read a computational paper, interpret a spectrum and understand why benzene is stable rather than merely memorising that it is.",
+    "The course runs in a deliberate order. The first chapter lays the foundations: the failures of classical physics, the Schrödinger equation, operators and the uncertainty principle. Chapters 2–4 solve the exactly tractable systems — boxes and rings, the oscillator and the rotor, the hydrogen atom — where every result can be checked against experiment. Chapters 5–6 leave exact solutions behind: many-electron atoms demand the orbital approximation and shielding, and molecules demand the two great approximation methods, the variation principle and perturbation theory. Chapters 7–9 apply the machinery to chemistry itself: the quantum theory of the chemical bond (Born–Oppenheimer, $\\mathrm{H_2^+}$, valence-bond and molecular-orbital wavefunctions), Hückel theory of conjugated $\\pi$ systems with the $4n + 2$ rule, and molecular symmetry and group theory, the chemist's most powerful shortcut.",
+    "What makes quantum chemistry hard is not the amount of mathematics but the constant translation between three registers — the mathematics of differential equations, the physical interpretation in terms of probability and measurement, and the chemical vocabulary of orbitals, bonds and spectra. The remedy is to solve every model system by hand at least once, to check every result in its limits (large quantum numbers, large mass, weak perturbation), to carry units through every calculation, and to attach one measurable number — a spectral line, an ionisation energy, a bond length — to every formula you derive. The worked examples in these lessons are chosen to model exactly that discipline, and the exercises ask you to reproduce it."
+  ],
   "prerequisites": [
     "bonding-structure"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "State the experimental failures of classical physics and use the Schrödinger equation, operators and eigenvalue problems to obtain quantised energies, with the uncertainty principle as a working estimate rather than a slogan.",
+    "Solve the particle in a box and the particle on a ring, apply them to conjugated molecules and ring currents, and estimate tunnelling probabilities through thin barriers.",
+    "Derive the energy levels, wavefunctions and selection rules of the harmonic oscillator and the rigid rotor, and extract force constants and bond lengths from infrared and microwave spectra.",
+    "Separate the Schrödinger equation for the hydrogen atom, interpret the quantum numbers, sketch radial and angular wavefunctions, and account for the hydrogen spectrum including reduced-mass shifts.",
+    "Build electron configurations of many-electron atoms from the Pauli principle, shielding and penetration, and derive atomic term symbols with Hund's rules.",
+    "Apply the variation principle with trial functions and first-order perturbation theory to systems that cannot be solved exactly, and estimate their errors honestly.",
+    "Explain the covalent bond in $\\mathrm{H_2^+}$ and $\\mathrm{H_2}$ with molecular-orbital and valence-bond wavefunctions under the Born–Oppenheimer approximation.",
+    "Set up and solve Hückel secular determinants for conjugated $\\pi$ systems, and derive delocalisation energies, charge distributions and the $4n + 2$ rule for aromaticity.",
+    "Assign a molecule to its point group, reduce representations with character tables, and use symmetry to classify orbitals and predict which vibrations and transitions are spectroscopically active."
+  ],
   "chapters": [
     {
       "slug": "quantum-foundations",
@@ -87,8 +102,112 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1900,
+      "title": "Planck quantises the oscillator",
+      "detail": "Trying to fit the spectrum of black-body radiation, Max Planck finds that his formula works only if the wall oscillators exchange energy in packets $h\\nu$; he introduces the constant $h = 6.626\\times10^{-34}\\ \\mathrm{J\\,s}$, reluctantly, as a formal device.",
+      "people": ["Max Planck"]
+    },
+    {
+      "year": 1913,
+      "title": "Bohr's atom explains the hydrogen spectrum",
+      "detail": "Niels Bohr postulates stationary circular orbits with angular momentum $nh/2\\pi$ and derives the Rydberg formula for hydrogen's lines from classical mechanics plus one quantum condition — a hybrid theory whose success demanded a deeper mechanics.",
+      "people": ["Niels Bohr"]
+    },
+    {
+      "year": 1924,
+      "title": "de Broglie's matter waves",
+      "detail": "In his doctoral thesis Louis de Broglie proposes that every particle of momentum $p$ carries a wave of wavelength $h/p$, explaining Bohr's quantisation as a standing-wave condition; the idea is confirmed by electron diffraction in 1927.",
+      "people": ["Louis de Broglie"]
+    },
+    {
+      "year": 1925,
+      "title": "Matrix mechanics and electron spin",
+      "detail": "Werner Heisenberg, with Max Born and Pascual Jordan, rebuilds mechanics from arrays of observable transition quantities, while George Uhlenbeck and Samuel Goudsmit propose the electron's intrinsic spin — the two moves that make a two-electron world possible.",
+      "people": ["Werner Heisenberg", "Max Born", "Pascual Jordan", "George Uhlenbeck", "Samuel Goudsmit"]
+    },
+    {
+      "year": 1926,
+      "title": "Schrödinger's wave equation",
+      "detail": "Erwin Schrödinger writes a wave equation for the electron, solves the hydrogen atom in his second paper, and shows his mechanics reproduces Bohr's levels; Max Born reads $|\\psi|^{2}$ as a probability density the same year.",
+      "people": ["Erwin Schrödinger", "Max Born"]
+    },
+    {
+      "year": 1927,
+      "title": "The chemical bond becomes quantum mechanics",
+      "detail": "Walter Heitler and Fritz London apply the new mechanics to $\\mathrm{H_2}$, showing that the bond energy comes from symmetric spin-aligned electron pairs, and Linus Pauling begins the programme of chemistry-by-wavefunction; Max Born and J. Robert Oppenheimer justify separating nuclear and electronic motion.",
+      "people": ["Walter Heitler", "Fritz London", "Max Born", "J. Robert Oppenheimer"]
+    },
+    {
+      "year": 1928,
+      "title": "Hartree's self-consistent field",
+      "detail": "Douglas Hartree publishes the iterative scheme that bears his name — each electron moves in the field of the nucleus plus the averaged charge of the others, recomputed until stable — the ancestor of every modern electronic-structure calculation; Paul Dirac's relativistic equation, with spin built in, appears the same year.",
+      "people": ["Douglas Hartree", "Paul Dirac"]
+    },
+    {
+      "year": 1931,
+      "title": "Hückel's theory of conjugated molecules",
+      "detail": "Erich Hückel reduces the $\\pi$ electrons of planar conjugated hydrocarbons to a one-electron problem with two parameters and obtains the level pattern of benzene, the delocalisation energy and, in the $4n + 2$ count, the first theoretical face of aromaticity.",
+      "people": ["Erich Hückel"]
+    },
+    {
+      "year": 1932,
+      "title": "Mulliken forges molecular-orbital language",
+      "detail": "Robert Mulliken systematisises molecular-orbital theory, introduces the terms molecular orbital, bonding and antibonding, and works out the orbital configurations of the diatomic molecules — the vocabulary every chemist still uses — for which he later receives the 1966 Nobel Prize.",
+      "people": ["Robert S. Mulliken"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Quantum Chemistry",
+      "authors": "Donald A. McQuarrie",
+      "year": 1983,
+      "note": "The classic undergraduate route through this whole course: postulates, model systems, atoms, the variation method and Hückel theory, with derivations never skipped."
+    },
+    {
+      "title": "Molecular Quantum Mechanics",
+      "authors": "Peter Atkins and Ronald S. Friedman",
+      "year": 2014,
+      "note": "The sixth edition of Atkins's molecular quantum mechanics: spectroscopy applications, group theory and computational context in a compact, example-rich format."
+    },
+    {
+      "title": "Quantum Chemistry",
+      "authors": "Ira N. Levine",
+      "year": 2014,
+      "note": "The seventh edition; the most explicit step-by-step mathematics of any undergraduate text, useful whenever a derivation here feels too fast."
+    },
+    {
+      "title": "Quantum Chemistry and Spectroscopy",
+      "authors": "Thomas Engel and Philip Reid",
+      "year": 2017,
+      "note": "The fourth edition; ties every quantum result to the spectrum it explains, the pairing this course aims at from the oscillator and rotor onward."
+    },
+    {
+      "title": "Modern Quantum Chemistry: Introduction to Advanced Electronic Structure Theory",
+      "authors": "Attila Szabo and Neil S. Ostlund",
+      "year": 1996,
+      "note": "The bridge to the computational course: the second-quantisation-free development of Hartree–Fock theory and configuration interaction, worked from first principles."
+    },
+    {
+      "title": "Valence",
+      "authors": "Charles A. Coulson, revised by R. D. Brown",
+      "year": 1979,
+      "note": "The third edition of the most elegant account of the chemical bond as quantum mechanics; the chapters on $\\mathrm{H_2}$, valence-bond theory and alternant hydrocarbons are still unsurpassed."
+    },
+    {
+      "title": "Symmetry and Spectroscopy: An Introduction to Vibrational and Electronic Spectroscopy",
+      "authors": "Daniel C. Harris and Michael D. Bertolucci",
+      "year": 1978,
+      "note": "The standard companion for the symmetry chapter and its spectroscopic pay-off: character tables, representations and selection rules taught through worked examples."
+    },
+    {
+      "title": "Molecular Symmetry and Group Theory",
+      "authors": "Alan Vincent",
+      "year": 2012,
+      "note": "The second edition; the gentlest full introduction to point groups and character tables, with the orbital and vibrational applications this course needs."
+    }
+  ],
   "next": [
     "spectroscopy",
     "computational-chemistry"
