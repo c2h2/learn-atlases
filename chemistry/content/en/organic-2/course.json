@@ -7,11 +7,26 @@
   "order": 90,
   "tagline": "Conjugation, aromaticity, aromatic substitution, carbonyl chemistry, enolates, condensations, amines and heterocycles",
   "summary": "This course continues organic chemistry with the reactions that build most molecules: conjugated systems and aromatic rings, nucleophilic addition and substitution at carbonyl groups, the chemistry of enols and enolates and the condensations they make possible, amines, and the aromatic heterocycles found throughout biology and medicine.",
-  "overview": [],
+  "overview": [
+    "The first course taught you that reactions are electron flow, from a filled orbital to an empty one. This course adds the two structural ideas that make that flow interesting on a larger scale: conjugation, in which neighbouring $\\pi$ systems merge into molecular orbitals spread over several atoms, and aromaticity, the exceptional stability that some cyclic conjugated systems attain. Together they explain why benzene substitutes instead of adding, why a diene gives two different addition products depending on the temperature, and why a carbonyl group is simultaneously the electron-poor centre of a molecule and, once deprotonated beside it, an electron-rich one. Everything after the first chapter is built on these two ideas.",
+    "The heart of the course is carbonyl chemistry, and it is worth stating the organizing principle once so that nine chapters look like one argument. A carbonyl group offers two electrophilic sites — the carbon and, more weakly, the $\\beta$-carbon of an $\\alpha,\\beta$-unsaturated system — and the product is decided by what the nucleophile does after it adds: aldehydes and ketones have no leaving group, so addition stops at the alcohol; acyl compounds have one, so addition is followed by elimination and the net result is substitution. Between these poles sit the enolates: species made by removing a proton $\\alpha$ to a carbonyl, which are nucleophilic at carbon and are the reason organic chemistry can build carbon–carbon bonds at will. The aldol, Claisen, Michael and Robinson reactions are four settings of the same theme, and the chapter on condensations shows them combining into a synthetic logic.",
+    "The course is organised in three movements. The first three chapters build the $\\pi$-system story: conjugation and dienes, aromaticity, and the substitution reactions of aromatic rings. The next four are the carbonyl sequence: addition to aldehydes and ketones, substitution at carboxylic acid derivatives, the enols and enolates that make $\\alpha$-carbons nucleophilic, and the condensations and conjugate additions that follow. The last two chapters bring in nitrogen: amines and diazonium salts, and the aromatic heterocycles — pyridine, pyrrole, indole and their relatives — that dominate dyes, drugs and biochemistry. The order matters; each chapter assumes the ones before it, and the two final chapters assume almost everything.",
+    "What makes this material hard is that the same reagent can now do several things, and choosing between them requires judgement rather than recall: does hydroxide add, or deprotonate, or nothing at all? Does an enolate form at the kinetic or the thermodynamic position? Does a nucleophile attack a carbonyl carbon or a $\\beta$-carbon? The remedy is the same physical argument in every chapter — orbital coefficients say where, charges say when, and reversibility says which product you actually isolate — and every lesson here works examples until the argument is automatic. Work the mechanisms by hand, keep a running table of $\\mathrm{p}K_\\mathrm{a}$ values and of the reactions each chapter adds, and check every prediction against the guiding questions rather than against memory."
+  ],
   "prerequisites": [
     "organic-1"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain the extra stability of conjugated and aromatic systems with molecular orbitals and resonance, and apply Hückel's rule to classify rings as aromatic, antiaromatic or nonaromatic.",
+    "Predict the 1,2- and 1,4-addition products of conjugated dienes and decide, from temperature and reversibility, whether the kinetic or the thermodynamic product dominates.",
+    "Devise complete mechanisms for electrophilic aromatic substitution — nitration, halogenation, sulfonation, Friedel–Crafts reactions — including the arenium ion and the role of the catalyst.",
+    "Predict the orientation of further substitution on a disubstituted benzene from the activating or deactivating, ortho/para- or meta-directing character of the groups already present.",
+    "Predict the products and mechanisms of nucleophilic addition to aldehydes and ketones (hydration, acetal and imine formation, cyanohydrins, hydride and organometallic addition) and of nucleophilic acyl substitution among the carboxylic acid derivatives.",
+    "Rank the carboxylic acid derivatives by reactivity using leaving-group and acyl-electrophilicity arguments, and interconvert them through the acyl substitution manifold.",
+    "Write keto–enol tautomerisation mechanisms, choose conditions that give kinetic or thermodynamic enolates, and predict the products of $\\alpha$-halogenation, enolate alkylation and the aldol reaction.",
+    "Design syntheses using the Claisen condensation, Michael (conjugate) addition and the Robinson annulation, and explain the hard/soft choice between 1,2- and 1,4-addition.",
+    "Compare the basicity and nucleophilicity of amines, plan amine syntheses by alkylation, reductive amination and diazonium chemistry, and predict the substitution patterns of pyridine, pyrrole, furan, thiophene and indole."
+  ],
   "chapters": [
     {
       "slug": "conjugation",
@@ -89,8 +104,112 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1825,
+      "title": "Faraday isolates the 'bicarburet of hydrogen'",
+      "detail": "Michael Faraday, investigating the oily residue deposited by illuminating gas at the King's Theatre in London, separates a liquid whose analysis gives the empirical formula CH and whose vapour density implies $\\mathrm{C_6H_6}$ — the first isolation of benzene, which Mitscherlich names and correctly formulates in 1834.",
+      "people": ["Michael Faraday", "Eilhard Mitscherlich"]
+    },
+    {
+      "year": 1865,
+      "title": "Kekulé proposes the ring of benzene",
+      "detail": "August Kekulé publishes the cyclic structure of benzene, and in 1866 adds the oscillation between two triene formulae that alone explains why all six positions are equivalent and why only one monosubstituted benzene is ever found — the founding act of aromatic chemistry.",
+      "people": ["August Kekulé"]
+    },
+    {
+      "year": 1877,
+      "title": "Friedel and Crafts couple benzene to alkyl halides",
+      "detail": "Charles Friedel and James Mason Crafts, working in Paris with aluminium chloride, discover that benzene takes up alkyl and (from 1878) acyl groups from halides — the Friedel–Crafts reactions, still the standard way to build substituted aromatics and a landmark in the use of catalysts.",
+      "people": ["Charles Friedel", "James Mason Crafts"]
+    },
+    {
+      "year": 1887,
+      "title": "Claisen condenses esters into β-keto esters",
+      "detail": "Ludwig Claisen reports that esters treated with sodium metal condense to β-keto esters — the Claisen condensation — extending the idea that the hydrogen beside a carbonyl is acidic and turning esters into carbon–carbon bond-forming reagents.",
+      "people": ["Ludwig Claisen"]
+    },
+    {
+      "year": 1894,
+      "title": "Michael discovers conjugate addition",
+      "detail": "In a series of papers completed in 1894, Arthur Michael shows that some nucleophiles add to the far end of an $\\alpha,\\beta$-unsaturated carbonyl compound rather than to the carbonyl group itself — the 1,4- or Michael addition, the first clear case of what we now call soft–hard matching.",
+      "people": ["Arthur Michael"]
+    },
+    {
+      "year": 1900,
+      "title": "Grignard publishes the organomagnesium reagents",
+      "detail": "François Auguste Victor Grignard's doctoral work shows that magnesium inserts into carbon–halogen bonds to give reagents that add cleanly to carbonyl groups; the reaction makes carbon–carbon bond construction routine and wins the 1912 Nobel Prize in Chemistry.",
+      "people": ["François Auguste Victor Grignard"]
+    },
+    {
+      "year": 1931,
+      "title": "Hückel states the 4n + 2 rule",
+      "detail": "Erich Hückel applies the new quantum mechanics to planar monocyclic conjugated systems and finds that those with $4n+2$ $\\pi$ electrons are the stable, aromatic ones — a rule stated before most of its examples (the cyclopentadienyl anion, the tropylium cation) had been made.",
+      "people": ["Erich Hückel"]
+    },
+    {
+      "year": 1953,
+      "title": "Roberts proves the benzyne mechanism with carbon-14",
+      "detail": "Lothrop Roberts treats chlorobenzene labelled with $^{14}\\mathrm{C}$ at C1 with amide ion and finds the label scrambled evenly between C1 and C2 of the aniline product — direct proof of a symmetrical intermediate, benzyne, and of elimination–addition as a third mechanism of aromatic substitution.",
+      "people": ["Lothrop Roberts"]
+    },
+    {
+      "year": 1963,
+      "title": "Stork tames enolates with enamines",
+      "detail": "Gilbert Stork reports that ketones converted to their cyclic enamines alkylate cleanly at the $\\alpha$-carbon on hydrolysis, solving the over-alkylation problem of direct enolate chemistry and completing the toolkit of carbonyl enolate synthesis sketched by Claisen and Michael.",
+      "people": ["Gilbert Stork"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Organic Chemistry",
+      "authors": "Jonathan Clayden, Nick Greeves and Stuart Warren",
+      "year": 2012,
+      "note": "The mechanism-first partner to this whole course: aromaticity, carbonyl chemistry and enolates are argued from orbitals and curly arrows rather than memorised."
+    },
+    {
+      "title": "Modern Physical Organic Chemistry",
+      "authors": "Eric Anslyn and Dennis Dougherty",
+      "year": 2006,
+      "note": "The quantitative layer beneath the arguments used here: free energy, equilibria, nucleophilicity scales and the physical evidence for mechanisms."
+    },
+    {
+      "title": "Advanced Organic Chemistry, Part B: Reactions and Synthesis",
+      "authors": "Michael Carey and Richard Sundberg",
+      "year": 2007,
+      "note": "The standard advanced treatment of exactly this course's reactions, chapter by chapter, with the selectivity data behind the rules of thumb."
+    },
+    {
+      "title": "March's Advanced Organic Chemistry: Reactions, Mechanisms, and Structure",
+      "authors": "Michael B. Smith",
+      "year": 2007,
+      "note": "The encyclopaedia to consult when a lesson's summary is not enough: every named reaction in these chapters has its own section with references."
+    },
+    {
+      "title": "Strategic Applications of Named Reactions in Organic Synthesis",
+      "authors": "László Kürti and Barbara Czakó",
+      "year": 2005,
+      "note": "One page per named reaction — Claisen, Michael, Robinson, Friedel–Crafts, Sandmeyer and the rest — with mechanism, variants and examples; the best desk companion for this course."
+    },
+    {
+      "title": "Organic Synthesis: The Disconnection Approach",
+      "authors": "Stuart Warren and Paul Wyatt",
+      "year": 2009,
+      "note": "Turns the reactions of this course into synthesis: how to recognise an aldol or a Michael product in a target and take it apart."
+    },
+    {
+      "title": "Organic Chemistry as a Second Language, Second Semester Topics",
+      "authors": "David R. Klein",
+      "year": 2016,
+      "note": "Worked through the carbonyl and enolate chapters of a second-semester course slowly and explicitly; the best remedy when mechanisms will not stick."
+    },
+    {
+      "title": "Frontier Orbitals and Organic Chemical Reactions",
+      "authors": "Ian Fleming",
+      "year": 1976,
+      "note": "The HOMO–LUMO account of conjugation, aromaticity and the 1,2/1,4 choice, written for organic chemists rather than physicists."
+    }
+  ],
   "next": [
     "organic-synthesis",
     "spectroscopy",
