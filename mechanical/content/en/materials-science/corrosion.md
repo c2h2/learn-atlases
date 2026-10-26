@@ -1,414 +1,409 @@
-Corrosion is not an accident. It is the metal returning to the mineral it was smelted from, and the direction is fixed by thermodynamics before any design is drawn. The whole of corrosion engineering is therefore a contest with the second law, and it is won by four levers and no others: **change the material, change the environment, change the potential, or change the design** — and the fourth is free.
+Corrosion is not an accident. It is the metal returning towards the oxide or salt it was smelted from, and the direction is fixed by thermodynamics before any design is drawn. Corrosion engineering therefore cannot stop the reaction; it controls the rate, and it has four levers: **change the material, change the environment, change the electrode potential, or change the design** — and the last is cheapest when it is done on the drawing board.
 
-The one number to carry away is the **Faraday conversion**: a corrosion current of $1\ \mu\mathrm{A / cm^{2}}$ on iron is **$11.6\ \mu\mathrm{m}$ per year**. A passive film passes $10^{- 8}\ \mathrm{A / m^{2}}$ and grows $0.01\ \mu\mathrm{m}$ a year; a pitting pit passes $10^{- 2}\ \mathrm{A / cm^{2}}$ locally and eats $12\ \mathrm{mm}$ a year. **Corrosion is not a rate, it is a rate multiplied by an area ratio**, and a square millimetre of anode against a square metre of cathode is a thousand-fold multiplication of the current density and therefore of the penetration rate.
+The one number to carry away is the **Faraday conversion**: a corrosion current density of $1\ \mu\mathrm{A / cm^{2}}$ ($10^{-2}\ \mathrm{A / m^{2}}$) on iron removes **$11.6\ \mu\mathrm{m}$ per year**. A passive stainless steel in neutral water passes of the order of $0.01\ \mu\mathrm{A / cm^{2}}$ and loses about $0.1\ \mu\mathrm{m}$ a year; an active pit can pass $1\ \mathrm{mA / cm^{2}}$ locally and penetrates about $12\ \mathrm{mm}$ a year. **The damage is a current divided by an area**, and a square millimetre of anode coupled to a square metre of cathode concentrates the current a millionfold.
 
-::: warning Six design errors that cause most corrosion failures
-**A large cathode and a small anode.** A steel rivet in an aluminium plate corrodes in a month; an aluminium rivet in a steel plate corrodes in a decade. The **area ratio** $A_c / A_a$ sets the current density on the anode, and every galvanic table in the world omits it. **A crevice.** Under a gasket, a bolt head, a deposit, a paint blister or a lap joint the oxygen is consumed and not replaced, the pH falls to 2 and the chloride concentrates ten-fold, and 316 stainless — immune on the open surface — pits through in a year. **Stagnation.** Seawater in a pipe at $0.1\ \mathrm{m / s}$ loses its protective film and the pipe wall goes in a season; at $2\ \mathrm{m / s}$ it lasts forty years, and at $8\ \mathrm{m / s}$ it fails by erosion-corrosion. Every material has a velocity window and the design must sit in it. **A dead leg, a sump or a downward-facing flange** where a liquid collects and never moves — the single most common cause of a plant shutdown, and free to design out. **A weld and no post-weld treatment.** A 304 weld cools through $650\ {}^{\circ}\mathrm{C}$ at $10\ {}^{\circ}\mathrm{C}$ per minute and precipitates chromium carbide on the boundaries in seconds; the sensitised zone is $2\ \mathrm{mm}$ wide, invisible, and $100$ times more corrosion-prone than the parent. **A cathodic-protection system designed for the bare metal and left running on the coated one.** Overprotection disbands the coating and generates hydrogen at a high-strength steel's surface, and the failure is a hydrogen embrittlement fracture of a part the corrosion engineer thought was protected.
+::: warning Six design errors behind many corrosion failures
+**A large cathode and a small anode.** An aluminium rivet in a steel plate corrodes quickly; a steel rivet in an aluminium plate does little harm. The **area ratio** $A_c / A_a$ sets the current density on the anode, and a galvanic series does not show it. **A crevice.** Under a gasket, a bolt head, a deposit or in a lap joint the oxygen is consumed and not replaced, the trapped solution becomes acidic and rich in chloride, and a 316 stainless steel that resists the open surface can suffer crevice attack in warm seawater. **The wrong flow velocity.** Seawater systems suffer deposits, fouling and under-deposit pitting when the flow is slow or stagnant, and **erosion-corrosion** when it is too fast; every material has a velocity window and the design must sit in it. **A dead leg, a sump or a pocket** where liquid collects and never moves — a common source of leaks, and free to design out. **A weld in a sensitisable stainless steel.** The heat-affected zone of a standard-carbon 304 can spend long enough between about $425$ and $815\ {}^{\circ}\mathrm{C}$ to precipitate chromium carbides on its grain boundaries, leaving a band near the weld open to intergranular attack ("weld decay"). **Over-protection.** Cathodic protection driven too negative generates hydrogen at the steel surface; it **disbonds** coatings and can embrittle high-strength steel, so the part the engineer thought was protected fails by hydrogen cracking.
 :::
 
 ## Thermodynamics: what can happen
 
 ::: definition The electrode potential and the Pourbaix diagram {#def-nernst}
-A metal in contact with its ions reaches an equilibrium potential given by **Nernst**,
+A metal in contact with its ions reaches an equilibrium potential given by the **Nernst** equation,
 $$
 E = E^{\circ} + \frac{R T}{n F} \ln a_{\mathrm{M}^{n+}}
 = E^{\circ} + \frac{0.05916}{n} \log a_{\mathrm{M}^{n+}} \quad \text{at } 25\ {}^{\circ}\mathrm{C} ,
 $$
-with $E^{\circ}$ the **standard electrode potential** against the standard hydrogen electrode:
+with $E^{\circ}$ the **standard electrode potential** in volts against the standard hydrogen electrode (SHE):
 $$
-\begin{array}{l c l c l}
+\begin{array}{l c l c}
 \mathrm{Mg^{2 +} / Mg} & - 2.37 & \mathrm{Ni^{2 +} / Ni} & - 0.25 \\
 \mathrm{Al^{3 +} / Al} & - 1.66 & \mathrm{Cr^{3 +} / Cr} & - 0.74 \\
 \mathrm{Ti^{2 +} / Ti} & - 1.63 & \mathrm{Fe^{2 +} / Fe} & - 0.44 \\
 \mathrm{Zn^{2 +} / Zn} & - 0.76 & \mathrm{Cu^{2 +} / Cu} & + 0.34 \\
-\mathrm{Cr^{3 +} / Cr} & - 0.74 & \mathrm{Ag^{+} / Ag} & + 0.80 \\
+\mathrm{2 H^{+} / H_2} & 0.00 & \mathrm{Ag^{+} / Ag} & + 0.80 \\
 \mathrm{Fe^{3 +} / Fe^{2 +}} & + 0.77 & \mathrm{Au^{3 +} / Au} & + 1.50
 \end{array}
 $$
-A **Pourbaix** diagram plots $E$ against pH for a metal-water system at $25\ {}^{\circ}\mathrm{C}$ and $10^{- 6}\ \mathrm{molal}$ dissolved metal, and divides the plane into **immunity**, **corrosion** and **passivity** fields. The three lines to remember are:
+A **Pourbaix** diagram plots $E$ against pH for a metal-water system at $25\ {}^{\circ}\mathrm{C}$, conventionally with $10^{- 6}\ \mathrm{mol/kg}$ of dissolved metal as the boundary of "corrosion", and divides the plane into **immunity**, **corrosion** and **passivity** fields. Two lines bound the stability of water itself:
 $$
-\mathrm{O_2} + 2 \mathrm{H_2 O} + 4 e \rightarrow 4\, \mathrm{OH}^{-}, \quad E = 1.23 - 0.082\, \mathrm{pH} ; \qquad
-2 \mathrm{H}^{+} + 2 e \rightarrow \mathrm{H_2}, \quad E = - 0.059\, \mathrm{pH} ;
+\mathrm{O_2} + 4 \mathrm{H}^{+} + 4 e \rightarrow 2 \mathrm{H_2 O}, \quad E = 1.23 - 0.059\, \mathrm{pH} ; \qquad
+2 \mathrm{H}^{+} + 2 e \rightarrow \mathrm{H_2}, \quad E = - 0.059\, \mathrm{pH} ,
 $$
-and the metal's own line. **The two lines bracket the thermodynamic stability of water**, $1.23\ \mathrm{V}$ apart, and everything in between is a metastable aqueous world.
-**The three readings of a Pourbaix diagram.** Iron at pH 7 and $- 0.4\ \mathrm{V}$ is in the immunity field and will not corrode — which is what a cathodic protection system aims for. Iron at pH 7 and open-circuit in aerated water sits at $- 0.2\ \mathrm{V}$, in the corrosion field, and rusts. Aluminium at pH 7 is **passive**, which is why an aluminium can holds a soft drink, and aluminium at pH 13 is soluble, which is why caustic cleaner destroys it. **The diagram says what is possible, never what happens**: it gives no rate, no kinetics, and no information about pitting, which is a kinetic breakdown of a thermodynamically stable film.
+(in volts vs SHE, at $1\ \mathrm{atm}$ of gas), parallel and $1.23\ \mathrm{V}$ apart; oxygen reduction is the cathodic reaction of most corrosion in aerated water, and hydrogen evolution that of corrosion in acids.
+**Reading the diagram.** For iron with $10^{-6}$ of dissolved $\mathrm{Fe^{2+}}$ the immunity boundary is $E = -0.44 + 0.0296 \log 10^{-6} = -0.62\ \mathrm{V}$; below it iron cannot corrode, which is what cathodic protection aims for. Iron corroding freely in aerated neutral water sits near $-0.4\ \mathrm{V}$ (SHE), in the corrosion field, and rusts. Aluminium between about pH 4 and 8.5 is **passive**, which is why an aluminium window frame survives rain; outside that range its oxide dissolves, which is why a drinks can needs an internal lacquer and why caustic cleaners etch aluminium. **The diagram says what is possible, never how fast**: it gives no rate and says nothing about pitting, which is a local breakdown of a thermodynamically stable film.
 :::
 
 ::: definition Passivity and the Pilling-Bedworth ratio {#def-passivity}
-A metal is **passive** when it is covered by a coherent, adherent, insoluble oxide that grows so slowly that the metal is effectively insulated from the environment. Two things decide whether the oxide does the job.
-**The Pilling-Bedworth ratio** is the volume of oxide formed per volume of metal consumed:
+A metal is **passive** when it is covered by a thin, adherent, poorly soluble oxide through which ions move so slowly that the metal is effectively insulated from the environment.
+**The Pilling-Bedworth ratio** (1923) is the volume of oxide formed per volume of metal consumed:
 $$
-R_{\mathrm{PB}} = \frac{V_{\mathrm{oxide}}}{V_{\mathrm{metal}}} .
+R_{\mathrm{PB}} = \frac{V_{\mathrm{oxide}}}{V_{\mathrm{metal}}} = \frac{M_{\mathrm{oxide}}\, \rho_{\mathrm{metal}}}{k\, M_{\mathrm{metal}}\, \rho_{\mathrm{oxide}}} ,
 $$
+where $k$ is the number of metal atoms per formula unit of oxide. Values computed from handbook densities:
 $$
 \begin{array}{l c l}
-\mathrm{Na},\ \mathrm{K} & 0.33 & \text{the film is porous and the metal powders} \\
-\mathrm{MgO} / \mathrm{Mg} & 0.81 & \text{slightly porous; a partial film} \\
-\mathrm{Al_2 O_3} / \mathrm{Al} & 1.28 & \text{coherent and adherent — the reason aluminium exists as an engineering material} \\
-\mathrm{Cr_2 O_3} / \mathrm{Cr} & 2.01 & \text{protective despite the mismatch, because it creeps} \\
-\mathrm{FeO} / \mathrm{Fe} & 1.77 & \text{porous and non-protective} \\
-\mathrm{Fe_3 O_4} / \mathrm{Fe} & 2.10 & \text{the mill scale, protective while intact and hot} \\
-\mathrm{Fe_2 O_3} / \mathrm{Fe} & 2.14 & \text{cracked; rust is } 6\times \text{ the metal's volume and falls off} \\
-\mathrm{NiO} / \mathrm{Ni} & 1.65 & \text{protective to } 800\ {}^{\circ}\mathrm{C} \\
-\mathrm{WO_3} / \mathrm{W} & 3.40 & \text{cracks and spalls; the reason a tungsten filament fails in air}
+\mathrm{K_2 O} / \mathrm{K} & 0.44 & \text{film in tension, porous} \\
+\mathrm{Na_2 O} / \mathrm{Na} & 0.57 & \text{film in tension, porous} \\
+\mathrm{MgO} / \mathrm{Mg} & 0.80 & \text{slightly porous; only partly protective} \\
+\mathrm{Al_2 O_3} / \mathrm{Al} & 1.29 & \text{coherent and adherent} \\
+\mathrm{TiO_2} / \mathrm{Ti} & 1.78 & \text{protective at ambient temperature} \\
+\mathrm{FeO} / \mathrm{Fe} & 1.76 & \text{highly defective; grows fast at high temperature} \\
+\mathrm{SiO_2} / \mathrm{Si} & 1.88 & \text{protective} \\
+\mathrm{Cr_2 O_3} / \mathrm{Cr} & 2.01 & \text{protective} \\
+\mathrm{Fe_3 O_4} / \mathrm{Fe} & 2.10 & \text{mill scale; protective only while intact} \\
+\mathrm{Fe_2 O_3} / \mathrm{Fe} & 2.15 & \text{cracks and spalls} \\
+\mathrm{WO_3} / \mathrm{W} & 3.39 & \text{spalls, and volatile at high temperature}
 \end{array}
 $$
-A ratio below 1 leaves the film in tension and porous; a ratio above 2 puts it in compression and cracks it. **The window is 1 to 2, and only four oxides sit in it and are insoluble: $\mathrm{Al_2 O_3}$, $\mathrm{Cr_2 O_3}$, $\mathrm{SiO_2}$ and $\mathrm{TiO_2}$** — which is why chromium, aluminium, silicon and titanium are the four elements that make a metal corrosion-resistant.
-**The passivation curve.** An anodic polarisation sweep on a passive alloy shows an **active** region, a **critical current density** $i_{\mathrm{crit}}$, an abrupt drop to a **passive current** $i_p$ of $10^{- 2}$ to $10^{0}\ \mathrm{mA / m^{2}}$, and at a high enough potential a rise called the **transpassive** region where the film dissolves as an oxy-anion or the water breaks down to oxygen:
+A ratio below 1 leaves the film in tension and porous; a ratio well above 2 builds compressive stresses that buckle and spall it. The ratio is only a first guide — $\mathrm{FeO}$ lies in the favourable range but is non-protective because ions diffuse through it quickly — but the oxides that make engineering alloys corrosion-resistant, $\mathrm{Cr_2 O_3}$, $\mathrm{Al_2 O_3}$, $\mathrm{SiO_2}$ and $\mathrm{TiO_2}$, all have ratios between about 1.3 and 2, low ionic conductivity and low solubility in neutral water.
+**The passivation curve.** An anodic polarisation sweep on a passive alloy shows an **active** region, a **critical current density** $i_{\mathrm{crit}}$, an abrupt drop to a **passive current density** $i_p$, and at a high enough potential a rise called the **transpassive** region, where the film dissolves as an oxy-anion or water is oxidised to oxygen. Typical passive current densities are $10^{- 5}$ to $10^{- 3}\ \mathrm{A / m^{2}}$, which by the Faraday conversion is
 $$
-i_p \sim 10^{- 8}\ \mathrm{A / m^{2}} \ \Rightarrow\ 0.01\ \mu\mathrm{m / yr} \quad \text{for 316 in nitric acid}.
+i_p \sim 10^{- 5} \text{ to } 10^{-3}\ \mathrm{A / m^{2}} \ \Rightarrow\ \text{about } 0.01 \text{ to } 1\ \mu\mathrm{m / yr} .
 $$
 
 ::: widget plot
-title: Anodic polarisation curve of a passive alloy, 316 in chloride
+title: Anodic polarisation curve of a passive alloy (schematic)
 f: log10(360*exp(-60*max(0,x+0.1)+6*min(0,x+0.1))+0.02+0.02*exp(8*(x-0.6)))
 x: -0.5, 1.2
 y: -2, 3
-caption: $\log_{10} i$ in $\mathrm{mA / m^2}$ against applied potential in volts. **The curve is the whole of passivity in one line: a current that rises to a critical value of $360\ \mathrm{mA / m^2}$ at $- 0.1\ \mathrm{V}$ and then falls by four and a half decades to a passive plateau of $0.02\ \mathrm{mA / m^2}$, before turning up again in the transpassive region past $+ 0.6\ \mathrm{V}$.** Read the three design numbers off it. The **critical current density** is the current a scratch must be re-passivated through, and an alloy whose $i_{\mathrm{crit}}$ is high cannot re-passivate a large scratch at all. The **passive current** is the corrosion rate in service, and four and a half decades below $i_{\mathrm{crit}}$ is why a passive alloy that was nearly destroyed in the pickling bath lasts fifty years. And the **transpassive potential** is the ceiling: above it the film dissolves, and a cathodic protection system or a stray current can push a structure over that ceiling in a millisecond.
+caption: $\log_{10} i$, with $i$ in $\mathrm{mA / m^2}$, against applied potential in volts for a schematic passive alloy. Follow the curve from left to right: the current rises to a critical value of $360\ \mathrm{mA / m^2}$ at $- 0.1\ \mathrm{V}$, falls by more than four decades to a passive plateau of about $0.02\ \mathrm{mA / m^2}$, and turns up again in the transpassive region beyond about $+ 0.6\ \mathrm{V}$. The **critical current density** is what the cathodic reaction must supply for the alloy to passivate (or re-passivate a scratch); the **passive current density** sets the corrosion rate in service; and the **transpassive potential** is the upper limit of useful passivity.
 :::
 
-**The two engineering consequences.** A passive alloy must be **re-passivated** after a scratch, and it can only do so if oxygen or a cathodic reaction is present — which is why a crevice, where the oxygen is gone, is the death of a passive alloy. And a passive alloy's transpassive potential is the ceiling of its usefulness: 316 in hot concentrated sulfuric acid goes passive and then transpassive and corrodes faster than carbon steel.
+**The two engineering consequences.** A passive alloy must **re-passivate** after a scratch, and it can do so only if oxygen or another oxidant supplies enough cathodic current to exceed $i_{\mathrm{crit}}$ — which is why a crevice, where the oxygen is used up, is the weak point of a passive alloy. And the transpassive potential is a ceiling: in strongly oxidising media such as hot nitric acid containing dissolved chromium(VI), stainless steel can be driven into the transpassive range and suffer rapid intergranular attack.
 :::
 
 ## Kinetics: how fast
 
 ::: definition Mixed potential, Tafel and the corrosion rate {#def-mixed}
-A corroding metal is a short-circuited cell in which an anodic and a cathodic reaction proceed at the same total rate, and the potential it settles at is the **corrosion potential** $E_{\mathrm{corr}}$ where the two currents are equal. Each reaction obeys a **Tafel** law,
+A corroding metal is a short-circuited cell in which an anodic and a cathodic reaction proceed at the same total rate, and it settles at the **corrosion potential** $E_{\mathrm{corr}}$ where the two currents are equal (Wagner and Traud's mixed-potential theory). Far enough from equilibrium each reaction obeys a **Tafel** law,
 $$
-\eta = a + b \log i , \qquad b_a = \frac{2.303\, R T}{\alpha_a n F} \approx 118\ \mathrm{mV} \ \text{per decade at } 25\ {}^{\circ}\mathrm{C} \quad \left( \alpha = 0.5,\ n = 1 \right),
+\eta = a + b \log i , \qquad b = \frac{2.303\, R T}{\alpha n F} = 118\ \mathrm{mV} \ \text{per decade at } 25\ {}^{\circ}\mathrm{C} \quad \left( \alpha = 0.5,\ n = 1 \right),
 $$
-and the intersection of the two Tafel lines gives $i_{\mathrm{corr}}$. The **Stern-Geary** relation converts the easily-measured **polarisation resistance** to the rate:
+and the intersection of the anodic and cathodic Tafel lines gives $i_{\mathrm{corr}}$. The **Stern-Geary** relation converts the easily measured **polarisation resistance** near $E_{\mathrm{corr}}$ to the corrosion rate:
 $$
-R_p = \left( \frac{\mathrm{d} E}{\mathrm{d} i} \right)_{E_{\mathrm{corr}}} = \frac{b_a \left| b_c \right|}{2.303\, i_{\mathrm{corr}} \left( b_a + \left| b_c \right| \right)} = \frac{B}{i_{\mathrm{corr}}}, \qquad B \approx 26\ \mathrm{mV} .
+R_p = \left( \frac{\mathrm{d} E}{\mathrm{d} i} \right)_{E_{\mathrm{corr}}} = \frac{b_a \left| b_c \right|}{2.303\, i_{\mathrm{corr}} \left( b_a + \left| b_c \right| \right)} = \frac{B}{i_{\mathrm{corr}}}, \qquad B = 26\ \mathrm{mV}\ \text{for } b_a = \left| b_c \right| = 118\ \mathrm{mV} .
 $$
-**The Faraday conversion**, the number that turns an electrochemical measurement into an engineering one:
+**The Faraday conversion** turns an electrochemical measurement into a penetration rate:
 $$
 \dot{x} = \frac{i_{\mathrm{corr}}\, M}{n\, F\, \rho}
 \quad \Rightarrow \quad
 \boxed{ 1\ \mu\mathrm{A / cm^{2}} \equiv 11.6\ \mu\mathrm{m / yr}\ \text{on iron} } ,
 $$
-and $15\ \mu\mathrm{m / yr}$ on zinc, $11\ \mu\mathrm{m / yr}$ on copper and $11\ \mu\mathrm{m / yr}$ on aluminium.
+and $15.0\ \mu\mathrm{m / yr}$ on zinc, $11.6\ \mu\mathrm{m / yr}$ on copper ($n = 2$) and $10.9\ \mu\mathrm{m / yr}$ on aluminium. For iron:
 $$
 \begin{array}{l c l}
 i_{\mathrm{corr}} & \text{Rate} & \text{Verdict} \\
-10^{- 8}\ \mathrm{A / m^{2}} & 0.01\ \mu\mathrm{m / yr} & \text{passive; a hundred-year component} \\
-10^{- 4}\ \mathrm{A / m^{2}} & 0.12\ \mu\mathrm{m / yr} & \text{excellent; a coated structure} \\
-10^{- 2}\ \mathrm{A / m^{2}} & 1.2\ \mu\mathrm{m / yr} & \text{acceptable; a well-coated hull} \\
-1\ \mathrm{A / m^{2}} & 120\ \mu\mathrm{m / yr} & \text{unacceptable; bare steel in acid} \\
-10^{2}\ \mathrm{A / m^{2}} & 12\ \mathrm{mm / yr} & \text{a localised pit; weeks to failure}
+10^{- 5}\ \mathrm{A / m^{2}} & 0.012\ \mu\mathrm{m / yr} & \text{passive; negligible} \\
+10^{- 4}\ \mathrm{A / m^{2}} & 0.12\ \mu\mathrm{m / yr} & \text{excellent} \\
+10^{- 3}\ \mathrm{A / m^{2}} & 1.2\ \mu\mathrm{m / yr} & \text{good} \\
+10^{- 2}\ \mathrm{A / m^{2}} & 11.6\ \mu\mathrm{m / yr} & \text{acceptable with a corrosion allowance} \\
+10^{- 1}\ \mathrm{A / m^{2}} & 116\ \mu\mathrm{m / yr} & \text{bare steel in aerated seawater, order of magnitude} \\
+10\ \mathrm{A / m^{2}} & 11.6\ \mathrm{mm / yr} & \text{an active pit; months to perforation}
 \end{array}
 $$
 :::
 
 ::: definition Concentration, aeration and the area rule {#def-aeration}
-Most aqueous corrosion is **cathodically controlled** — the anodic reaction can go faster than the oxygen can arrive — so the rate is set by oxygen **supply**, and the two consequences are the most important in the practice.
+Much aqueous corrosion in neutral water is **cathodically controlled** — the anodic reaction could go faster than oxygen can diffuse to the cathode — so the rate is set by the oxygen **supply**. Two consequences matter most in practice.
 **Differential aeration.** A crevice, a deposit or a droplet becomes oxygen-depleted and therefore **anodic** to the aerated surroundings. The cell is
 $$
 \text{aerated (cathode)}: \mathrm{O_2} + 2 \mathrm{H_2 O} + 4 e \rightarrow 4\, \mathrm{OH}^{-}, \qquad
 \text{depleted (anode)}: \mathrm{Fe} \rightarrow \mathrm{Fe}^{2 +} + 2 e .
 $$
-The anode's $\mathrm{Fe^{2 +}}$ hydrolyses and makes the solution **acid**, which attracts chloride as the counter-ion, and the local chemistry becomes $\mathrm{FeCl_2}$ at pH 2 — autocatalytic, because the acid dissolves the film and exposes fresh metal. **This is the mechanism of every pit and every crevice attack**, and it is why a stainless steel that is perfect on a flat panel fails under a washer.
-**The area rule.** The corrosion current is set by the cathode's oxygen-supply capacity and is **concentrated onto the anode's area**:
+The metal ions produced in the occluded region hydrolyse and acidify the solution, chloride migrates in to balance the charge, and the local chemistry becomes an acidic metal-chloride solution — autocatalytic, because the acid prevents the film from re-forming. **This is the mechanism of pitting and crevice attack**, and it is why a stainless steel that is perfect on a flat panel can fail under a washer.
+**The area rule.** The galvanic current is set by what the cathode can supply and is **concentrated onto the anode's area**:
 $$
 i_{\mathrm{anode}} = \frac{i_{\mathrm{cathode}} A_c}{A_a} , \qquad
-\dot{x}_{\mathrm{anode}} = 11.6\ \mu\mathrm{m / yr} \times \frac{i_{\mathrm{cathode}}}{1\ \mu\mathrm{A / cm^{2}}} \times \frac{A_c}{A_a} .
+\dot{x}_{\mathrm{anode}} = \frac{i_{\mathrm{cathode}} M}{n F \rho} \times \frac{A_c}{A_a} .
 $$
-A steel rivet in an aluminium sheet has an area ratio of $1 : 100$ and corrodes at $1\ \mathrm{mm}$ a year; an aluminium rivet in a steel sheet has a ratio of $100 : 1$ and is barely attacked. **The galvanic series tells you which metal is the anode; only the area ratio tells you whether it matters.**
+An aluminium rivet in a steel sheet ($A_c / A_a \approx 100$) sees a hundred times the cathode's current density and is consumed quickly; a steel rivet in an aluminium sheet ($A_c / A_a \approx 1/100$) spreads the same attack over a hundred times the area and does little harm. **The galvanic series tells you which metal is the anode; the area ratio tells you whether it matters.**
 :::
 
 ## The forms of corrosion
 
 ::: definition Galvanic corrosion and the seawater series {#def-galvanic}
+The **galvanic series** ranks metals by their corrosion potential in a particular environment. Approximate ranges in flowing seawater at ambient temperature, from the widely reproduced data of F. L. LaQue and co-workers:
 $$
 \begin{array}{l c l}
-\text{Material (still seawater, } 25\ {}^{\circ}\mathrm{C}\text{)} & E_{\mathrm{corr}}\ [\mathrm{V\ vs\ Ag / AgCl}] & \text{Note} \\
-\text{Magnesium} & - 1.50 & \text{the sacrificial anode of choice in fresh water} \\
-\text{Zinc} & - 1.03 & \text{the classic anode} \\
-\text{Al 5052-H32} & - 0.95 & \\
-\text{Al 1100} & - 0.91 & \\
-\text{Al 2024-T3} & - 0.87 & \text{the most anodic of the common aluminium alloys} \\
-\text{Al 7075-T6} & - 0.79 & \text{and the most cathodic — a 2024 rivet in a 7075 plate is the wrong way round} \\
-\text{Cadmium} & - 0.70 & \text{the traditional fastener coating on steel} \\
-\text{Mild steel} & - 0.61 & \\
-\text{Tin (passive)} & - 0.45 & \\
-\text{Stainless 316, active} & - 0.40 & \text{before it passivates} \\
-\text{Lead} & - 0.40 & \\
-\text{Naval brass} & - 0.30 & \\
-\text{Copper-nickel 90/10} & - 0.28 & \\
-\text{Nickel, active} & - 0.25 & \\
-\text{Copper} & - 0.22 & \\
-\text{Copper-nickel 70/30} & - 0.20 & \\
-\text{Titanium, active} & - 0.80 & \text{but passive and noble in practice} \\
-\text{Stainless 316, passive} & + 0.10 & \text{the design problem: it is a cathode} \\
-\text{Titanium, passive} & + 0.25 & \\
-\text{Silver} & + 0.45 & \\
-\text{Graphite} & + 0.40 & \text{in a gasket: a cathode the size of a dinner plate} \\
-\text{Platinum} & + 0.75 &
+\text{Material} & E_{\mathrm{corr}}\ [\mathrm{V\ vs\ SCE}] & \text{Note} \\
+\text{Magnesium} & - 1.60\ \text{to}\ - 1.63 & \text{sacrificial anode for soil and fresh water} \\
+\text{Zinc} & - 0.98\ \text{to}\ - 1.03 & \text{the classic sacrificial anode} \\
+\text{Aluminium alloys} & - 0.76\ \text{to}\ - 1.00 & \text{copper-bearing alloys (2xxx) at the noble end} \\
+\text{Cadmium} & - 0.70\ \text{to}\ - 0.73 & \text{the traditional fastener coating on steel} \\
+\text{Mild steel, cast iron} & - 0.60\ \text{to}\ - 0.72 & \\
+\text{Stainless 316, active (in a crevice)} & - 0.43\ \text{to}\ - 0.54 & \\
+\text{Copper} & - 0.30\ \text{to}\ - 0.36 & \\
+\text{Copper-nickel 90/10} & - 0.21\ \text{to}\ - 0.28 & \\
+\text{Copper-nickel 70/30} & - 0.18\ \text{to}\ - 0.23 & \\
+\text{Stainless 316, passive} & 0.00\ \text{to}\ - 0.10 & \text{a cathode to steel and aluminium} \\
+\text{Titanium} & - 0.05\ \text{to}\ + 0.06 & \\
+\text{Platinum} & + 0.19\ \text{to}\ + 0.25 & \\
+\text{Graphite} & + 0.20\ \text{to}\ + 0.30 & \text{including graphite gaskets and carbon-fibre composites}
 \end{array}
 $$
-**The four rules.** **The further apart, the worse** — but only if the anode is not passive, so a titanium-to-steel pair is worse than the $1.4\ \mathrm{V}$ separation suggests and a graphite-to-steel pair is worse than the $1.0\ \mathrm{V}$ one. **The area ratio** decides the damage. **The conductivity** of the electrolyte decides the reach: in seawater a galvanic couple acts over metres, in fresh water over centimetres, and in humid air only at the joint. **A passivating alloy can reverse the polarity**: carbon steel coupled to stainless is anodic in cold aerated water and becomes **cathodic** if the stainless is in hot nitric acid and the couple is driven hard.
+(The saturated calomel electrode and the silver/silver-chloride electrode in seawater differ by only a few millivolts.)
+**The four rules.** **The further apart, the larger the driving force** — but the damage also depends on how readily the cathode reduces oxygen, and passive cathodes such as titanium and stainless steel are often poorer cathodes than copper. **The area ratio** decides the penetration rate. **The conductivity** of the electrolyte decides the reach: in seawater a couple acts over large distances, in fresh water over short ones, and in humid air only close to the joint. **Polarity can reverse**: a metal that is active in one environment can be passive in another, and zinc, anodic to steel at room temperature, can become cathodic to it in some hot waters.
 :::
 
 ::: definition Localised attack: pitting, crevice, intergranular and dealloying {#def-localised}
-**Pitting** is the growth of an autocatalytic occluded cell. The design numbers are the **critical pitting temperature** (CPT) at a fixed chloride and the **pitting resistance equivalent number**
+**Pitting** is the growth of an autocatalytic occluded cell. For stainless steels and nickel alloys the usual composition index is the **pitting resistance equivalent number**
 $$
 \mathrm{PREN} = \% \mathrm{Cr} + 3.3\, \% \mathrm{Mo} + 16\, \% \mathrm{N} ,
 $$
+evaluated here for typical compositions:
 $$
-\begin{array}{l c c}
-\text{Alloy} & \mathrm{PREN} & \text{CPT in } 6\%\ \mathrm{FeCl_3} \\
-\text{304} & 19 & \text{pits in seawater at any temperature} \\
-\text{316L} & 26 & 22\ {}^{\circ}\mathrm{C} \\
-\text{2205 duplex} & 34 & 32\ {}^{\circ}\mathrm{C} \\
-\text{2507 super-duplex} & 42 & 45\ {}^{\circ}\mathrm{C} \\
-\text{6Mo (254 SMO)} & 44 & 50\ {}^{\circ}\mathrm{C} \\
-\text{Alloy 625} & 46 & 60\ {}^{\circ}\mathrm{C} \\
-\text{Alloy C-276} & 62 & > 85\ {}^{\circ}\mathrm{C}
+\begin{array}{l l c}
+\text{Alloy} & \text{Typical composition (wt\%)} & \mathrm{PREN} \\
+\text{304} & 18\,\mathrm{Cr} & 18 \\
+\text{316L} & 16.5\,\mathrm{Cr},\ 2.1\,\mathrm{Mo} & 23 \\
+\text{2205 duplex} & 22\,\mathrm{Cr},\ 3.1\,\mathrm{Mo},\ 0.17\,\mathrm{N} & 35 \\
+\text{2507 super-duplex} & 25\,\mathrm{Cr},\ 4\,\mathrm{Mo},\ 0.27\,\mathrm{N} & 43 \\
+\text{6Mo super-austenitic (254 SMO)} & 20\,\mathrm{Cr},\ 6.1\,\mathrm{Mo},\ 0.2\,\mathrm{N} & 43 \\
+\text{Alloy 625} & 21.5\,\mathrm{Cr},\ 9\,\mathrm{Mo} & 51 \\
+\text{Alloy C-276} & 15.5\,\mathrm{Cr},\ 16\,\mathrm{Mo} & 68
 \end{array}
 $$
-**Crevice corrosion** is the same chemistry under a gap, and it happens at a potential $200$ to $400\ \mathrm{mV}$ **below** the pitting potential — so a crevice is always worse than the open surface, and the **crevice corrosion temperature** of a 316 in seawater is $10\ {}^{\circ}\mathrm{C}$ where its pitting temperature is $22\ {}^{\circ}\mathrm{C}$. **A gasket, a thread, a lap joint, a bolt washer, a product deposit and a paint holiday are crevices.**
-**Intergranular attack** is the precipitation of a second phase on a grain boundary and the depletion of an alloying element in the zone beside it. The classic is **sensitisation** of an austenitic stainless: at $500$ to $800\ {}^{\circ}\mathrm{C}$, peaking at $650\ {}^{\circ}\mathrm{C}$, chromium carbide precipitates on the boundaries and leaves a $100\ \mathrm{nm}$ band below $12\ \%$ chromium that is no longer stainless. A 304 weld's heat-affected zone spends twenty minutes in the sensitising range and is sensitised; the fixes are a **low-carbon L grade** at under $0.03\ \%\ \mathrm{C}$, a **titanium- or niobium-stabilised** 321 or 347, or a **solution anneal at $1{,}050\ {}^{\circ}\mathrm{C}$ with a water quench**. The equivalent in aluminium is the grain-boundary precipitate of $7\mathrm{xxx}$, and in nickel alloys it is the weld decay of alloy 600.
-**Dealloying** is the selective leaching of one element from an alloy. **Dezincification** of a brass with more than $15\ \%$ zinc leaves a porous copper skeleton that looks like brass and has the strength of wet blotting paper; the fix is an **arsenic or antimony inhibitor** of $0.02$ to $0.05\ \%$ (the red-tube CW07R grade) or a **gunmetal or a silicon-bronze** fitting. **Graphitic corrosion** of a cast-iron pipe leaves the graphite flake network intact and the pipe looking sound and feeling like charcoal.
+The ranking is borne out by the **critical pitting temperature** measured in standard tests such as ASTM G48, and seawater service commonly calls for a PREN of at least 40 (for example the 25Cr super-duplex and 6Mo grades).
+**Crevice corrosion** is the same chemistry under a gap. It starts at lower potentials and lower temperatures than pitting on the open surface, so the **critical crevice temperature** of an alloy is below its critical pitting temperature. **Gaskets, threads, lap joints, washers, deposits and paint holidays are crevices.**
+**Intergranular attack** follows grain-boundary precipitation and the depletion of an alloying element beside the boundary. The classic case is **sensitisation** of an austenitic stainless steel: between about $425$ and $815\ {}^{\circ}\mathrm{C}$ chromium carbide precipitates on the grain boundaries and leaves a narrow chromium-depleted zone, below about $12\ \%$ chromium, that is no longer stainless. The remedies are a **low-carbon L grade** (at most $0.03\ \%$ C), a **titanium- or niobium-stabilised** grade (321 or 347), or a **solution anneal** at about $1{,}050\ {}^{\circ}\mathrm{C}$ followed by rapid cooling. Analogous attack occurs in some aluminium alloys (grain-boundary $\beta$ phase in over-sensitised 5xxx alloys) and nickel alloys.
+**Dealloying** is the selective leaching of one element. **Dezincification** of brasses with more than about $15\ \%$ zinc leaves a porous, weak copper residue that keeps the component's shape; the fixes are a **dezincification-resistant (DZR) brass** inhibited with a few hundredths of a per cent of arsenic, or a gunmetal or silicon-bronze fitting. **Graphitic corrosion** of grey cast iron leaves the graphite network and corrosion products in place, so a pipe looks sound but has little strength.
 :::
 
 ::: definition Stress and environment: SCC, hydrogen and corrosion fatigue {#def-scc}
-**Stress-corrosion cracking** needs three things at once — a susceptible material, a specific environment and a tensile stress — and none of the three alone will do it. The pairings are almost chemical:
+**Stress-corrosion cracking** needs three things at once — a susceptible material, a specific environment and a tensile stress — and removing any one prevents it. Classic pairings:
 $$
 \begin{array}{l l}
-\text{Austenitic stainless} & \text{chloride above } 60\ {}^{\circ}\mathrm{C}; \text{ the "60}^{\circ}\mathrm{C} \text{ rule"} \\
-\text{Carbon and low-alloy steel} & \text{nitrate, hot caustic, carbonate-bicarbonate at pH 9-11} \\
-\text{Copper, brass, bronze} & \text{ammonia or amine — "season cracking" of cartridge cases} \\
-\text{Aluminium alloys} & \text{chloride, and the 7xxx in the short-transverse orientation} \\
-\text{Titanium} & \text{methanol with a halide, and red fuming nitric acid} \\
-\text{Nickel alloys} & \text{hot concentrated caustic, and molten salts} \\
-\text{Cast iron in steam condensate} & \text{the "steam-hammer" cracking of old boiler stays}
+\text{Austenitic stainless} & \text{chloride, usually above about } 60\ {}^{\circ}\mathrm{C} \\
+\text{Carbon and low-alloy steel} & \text{hot caustic (``caustic embrittlement'' of riveted boilers), nitrate,} \\
+ & \text{carbonate-bicarbonate (high-pH pipeline SCC), anhydrous ammonia} \\
+\text{Brass} & \text{ammonia — the ``season cracking'' of cold-drawn cartridge cases} \\
+\text{High-strength aluminium alloys} & \text{chloride; 7xxx alloys are worst in the short-transverse direction} \\
+\text{Titanium alloys} & \text{methanol containing halides; red fuming nitric acid} \\
+\text{Nickel alloys (e.g. 600)} & \text{hot caustic; high-temperature water in nuclear plant}
 \end{array}
 $$
-**The stress is almost never the applied stress.** A cold-worked, welded or cold-bent component carries $0.5$ to $1.0$ times its yield as **residual** stress, and the standard test for whether a stress-corrosion problem is a residual-stress problem is to **stress-relieve** the part and re-test. A $20\ \%$ cold-work of a sensitised 304 raises its susceptibility by two orders of magnitude, and a shot-peened surface — with $- 400\ \mathrm{MPa}$ at the surface — suppresses a surface crack entirely.
-**Hydrogen damage** has four distinct forms and they are not the same problem. **Hydrogen embrittlement** is the loss of ductility of a high-strength steel charged with atomic hydrogen, with the reduction in area collapsing and the fracture going intergranular; the threshold is a **hydrogen partial pressure** and a **strength**, and the strength above which it becomes serious is $1{,}200\ \mathrm{MPa}$ tensile. **Hydrogen blistering** is the aggregation of hydrogen at an inclusion into a pressurised methane bubble and a visible blister in a pipeline plate. **Hydrogen attack** is the high-temperature reaction $\mathrm{H_2} + \mathrm{C} \rightarrow \mathrm{CH_4}$ that decarburises a steel and cracks it irreversibly, and it is the reason a hydrogenation reactor shell is a $2\tfrac{1}{4}\mathrm{Cr}\text{-}1\mathrm{Mo}$ steel and not a carbon steel above the **Nelson curve**. **Hydride formation** is the room-temperature embrittlement of titanium, zirconium and niobium, and it is why a titanium part must not be pickled in an acid that generates hydrogen.
-**Corrosion fatigue** is the ordinary fatigue life multiplied by a factor of $2$ to $10$ in a wet environment, and — critically — **it has no endurance limit**. A steel with a $500\ \mathrm{MPa}$ fatigue limit in air has a $150\ \mathrm{MPa}$ fatigue **strength** at $10^{8}$ cycles in seawater, and the design must therefore be a finite-life design with an S-N curve measured in the environment.
+**The stress is often not the applied stress.** A cold-worked, welded or cold-bent component can carry residual stresses approaching its yield strength, so stress relief is a standard remedy, and **shot peening**, which puts the surface in compression, strongly suppresses crack initiation.
+**Hydrogen damage** takes several distinct forms. **Hydrogen embrittlement** is the loss of ductility and toughness of a high-strength steel charged with atomic hydrogen (from pickling, electroplating, cathodic protection or corrosion); susceptibility rises steeply with strength and is serious above roughly $1{,}000$ to $1{,}200\ \mathrm{MPa}$ tensile strength, and in sour ($\mathrm{H_2 S}$) service carbon steels are limited to $22\ \mathrm{HRC}$ by NACE MR0175/ISO 15156. **Hydrogen blistering** occurs when atomic hydrogen diffuses to an inclusion or lamination in a plate and recombines to $\mathrm{H_2}$ gas at high pressure. **High-temperature hydrogen attack** is the reaction of hydrogen with carbides to form methane inside the steel, which decarburises and fissures it irreversibly; the **Nelson curves** (API 941) set the temperature and hydrogen partial pressure limits, and are why hydrogen-service reactors are built from Cr-Mo steels such as $2\tfrac{1}{4}\mathrm{Cr}\text{-}1\mathrm{Mo}$. **Hydride formation** embrittles titanium and zirconium, which is why titanium must not be pickled in acids that charge it with hydrogen.
+**Corrosion fatigue** shortens fatigue life in a corrosive environment and — critically — **removes the endurance limit** of steels: the fatigue strength at $10^{8}$ cycles in seawater can be a small fraction of the endurance limit in air, so the design must be a finite-life design using S-N data measured in the environment.
 :::
 
 ::: definition Mechanical-chemical and microbiological forms {#def-mechchem}
-**Erosion-corrosion** is the removal of a protective film by a flowing fluid, and the design number is the **velocity limit**:
+**Erosion-corrosion** is the removal of a protective film by a flowing fluid, and the design number is a **velocity limit**. Indicative maximum velocities in seawater piping:
 $$
 \begin{array}{l c}
-\text{Material (seawater)} & \text{Maximum velocity} \\
-\text{Carbon steel} & 1\ \mathrm{m / s} \\
-\text{Copper} & 1.5\ \mathrm{m / s} \\
-\text{Copper-nickel 90/10} & 3\ \mathrm{m / s} \\
-\text{Duplex 2205} & 6\ \mathrm{m / s} \\
-\text{Titanium} & 25\ \mathrm{m / s} \\
-\text{Cast iron with a protective film} & 2\ \mathrm{m / s}
+\text{Material (seawater)} & \text{Indicative maximum velocity} \\
+\text{Copper} & \approx 1\ \mathrm{m / s} \\
+\text{Aluminium brass} & \approx 2.5\ \mathrm{m / s} \\
+\text{Copper-nickel 90/10} & \approx 3.5\ \mathrm{m / s}\ \text{(larger pipes; less in small ones)} \\
+\text{Copper-nickel 70/30} & \approx 4.5\ \mathrm{m / s} \\
+\text{Super-duplex, 6Mo stainless, titanium} & \text{no practical limit in normal service}
 \end{array}
 $$
-**Impingement attack** is its severe form at a turbulence promoter — the U-bend of a condenser tube, the inlet of a heat-exchanger tube plate, a valve seat — and it is defeated by a **velocity-inhibiting ferrule**, a **hydrodynamic inlet profile** and by not putting a weld root on the inside of a bend. **Cavitation** is the same mechanism driven by a collapsing bubble, whose micro-jet reaches $500\ \mathrm{MPa}$; it is defeated by a harder surface, a lower suction head and by not designing a pump with a net positive suction head margin below $3\ \mathrm{m}$. **Fretting** is the oxidation of the surfaces of a tight-fitting joint under a micrometre-scale oscillatory motion, and its product is the red $\mathrm{Fe_2 O_3}$ powder of a keyed shaft or a riveted lap joint; the fix is a **sufficient interference**, a **dry-film lubricant** or a **shot-peened** surface, and never a lubricant that washes out.
-**Microbiologically-influenced corrosion** is corrosion whose initiation or acceleration is caused by microorganisms, and it is now recognised as the **dominant cause of carbon-steel pitting under deposits and in soil**. **Sulphate-reducing bacteria** convert $\mathrm{SO_4^{2 -}}$ to $\mathrm{H_2 S}$ under a deposit, and the $\mathrm{H_2 S}$ and the iron sulphide film it builds make a local cell that pits carbon steel at $0.5\ \mathrm{mm}$ a year under a $2\ \mathrm{mm}$ biofilm in water that would otherwise be benign. The tell-tale is a **black ferrous-sulphide deposit** with a rust ring, and the diagnosis is a **culture or a DNA test** of the deposit, not a water analysis.
+**Impingement attack** is its severe form at a disturbance — a condenser tube inlet, a bend, a valve seat — and is reduced by inlet inserts, smooth inlet profiles and avoiding weld protrusions inside the bore. **Cavitation** is damage by collapsing vapour bubbles, whose micro-jets and shock waves produce local pressures of hundreds of megapascals; it is reduced by harder, tougher surfaces and by keeping the available net positive suction head comfortably above the pump's requirement. **Fretting** is the wear and oxidation of tightly fitting surfaces under micrometre-scale oscillation, producing the red-brown oxide debris seen at keyed shafts and riveted laps; it is reduced by increasing the clamping or interference to stop the slip, by dry-film lubricants and by shot peening.
+**Microbiologically influenced corrosion** (MIC) is corrosion initiated or accelerated by microorganisms. **Sulphate-reducing bacteria** under deposits and in soil convert $\mathrm{SO_4^{2 -}}$ to sulphide, and the sulphide and the iron sulphide film produce rapid local pitting of carbon steel in water that would otherwise be mild. A tell-tale is a **black iron-sulphide deposit** over a shiny pit; diagnosis needs analysis of the deposit itself (microbiological and chemical), not only of the bulk water.
 :::
 
 ## Concrete, coatings and cathodic protection
 
 ::: definition Reinforced concrete {#def-concrete}
-Concrete's pore solution is saturated calcium hydroxide at **pH 13**, at which the rebar is passive and stable. Two things destroy the passivity.
-**Carbonation** is the diffusion of $\mathrm{CO_2}$ in and the reaction $\mathrm{Ca(OH)_2} + \mathrm{CO_2} \rightarrow \mathrm{CaCO_3} + \mathrm{H_2 O}$, which drops the pH to 9 and depassivates the steel **only where the carbonation front has passed**. The front advances as $\sqrt{t}$, at $2$ to $5\ \mathrm{mm}$ per decade in a sheltered exposure, and the design cover of $40\ \mathrm{mm}$ is a **forty-year** allowance.
-**Chloride ingress** — from seawater, de-icing salt or a contaminated mix — depassivates at any pH once the **chloride-to-hydroxide ratio at the steel exceeds 0.6 by weight**, and the threshold is commonly taken as **$0.4\ \mathrm{kg}$ of acid-soluble chloride per cubic metre of concrete**. Chloride is a catalyst and not consumed, so a single ingress event corrodes for the life of the structure.
-**The damage is mechanical, not chemical.** The corrosion product occupies **six times** the volume of the steel, and the resulting radial pressure cracks the cover along the bar and spalls it. **A $7\ \%$ loss of bar area is a structural limit**, and it can occur with no visible sign until the spall. The design responses are a **cover of 50 to $75\ \mathrm{mm}$**, a **low water-to-cement ratio below 0.45**, a **calcium-aluminate or a blended slag cement**, a **corrosion-inhibiting admixture** (calcium nitrite, at $2\ \%$ by mass of cement), **epoxy-coated** or **galvanised** or **manganese-based** rebar, **stainless** rebar at the bridge deck, and **cathodic protection** on anything already in trouble.
+Concrete's pore solution is a calcium (and alkali) hydroxide solution at **pH 12.5 to 13.5**, in which the reinforcing steel is passive. Two processes destroy the passivity.
+**Carbonation** is the diffusion of $\mathrm{CO_2}$ into the concrete and the reaction $\mathrm{Ca(OH)_2} + \mathrm{CO_2} \rightarrow \mathrm{CaCO_3} + \mathrm{H_2 O}$, which lowers the pore-solution pH to about 9 and depassivates the steel **once the carbonation front reaches it**. Because it is diffusion-controlled the front advances as $x = k \sqrt{t}$, with $k$ of a few $\mathrm{mm / yr^{1/2}}$ for good-quality concrete and more for porous concrete; the cover thickness therefore buys time in proportion to its square.
+**Chloride ingress** — from seawater, de-icing salt or contaminated mix ingredients — depassivates the steel even at high pH once the chloride at the bar exceeds a threshold, often taken as a chloride-to-hydroxide ratio of about $0.6$ or roughly $0.4\ \%$ chloride by mass of cement. Chloride is not consumed by the corrosion, so once it is present it keeps acting.
+**The damage is mechanical as well as chemical.** The corrosion products occupy two to six times the volume of the steel they replace, and the expansion cracks and spalls the cover. The design responses are **adequate cover** (typically $40$ to $75\ \mathrm{mm}$ depending on exposure), a **low water-to-cement ratio** (about 0.40 to 0.45 for chloride exposure), **blended cements** with slag, fly ash or silica fume that slow chloride diffusion, **corrosion-inhibiting admixtures** such as calcium nitrite, **epoxy-coated, galvanised or stainless** reinforcement in the most exposed members, and **cathodic protection** for structures already corroding.
 :::
 
 ::: definition Coatings {#def-coatings}
-A coating does four jobs and a specification must say which: **barrier** (keep the electrolyte out), **sacrificial** (corrode instead of the steel), **inhibitive** (leak an inhibitor), and **passivating** (hold the metal in the passive field).
+A coating protects in up to four ways and a specification should say which: **barrier** (keep the electrolyte out), **sacrificial** (corrode instead of the steel), **inhibitive** (release an inhibitor), and **passivating** (hold the metal in its passive range).
 $$
 \begin{array}{l c l l}
-\text{Coating} & \text{Dry film thickness} & \text{Job} & \text{Failure mode} \\
-\text{Hot-dip zinc} & 55\text{–}85\ \mu\mathrm{m} & \text{barrier + sacrificial} & \text{the first rust at 28 yr in C3, 120 yr rural} \\
-\text{Zinc-rich epoxy} & 75\text{–}125\ \mu\mathrm{m} & \text{sacrificial, } 92\text{–}96\%\ \text{zinc in the dry film} & \text{needs a Sa 2.5 blast profile or it is just paint} \\
-\text{Zinc-flake (Geomet)} & 8\text{–}15\ \mu\mathrm{m} & \text{barrier, no hydrogen} & \text{the fastener answer} \\
-\text{Epoxy} & 150\text{–}300\ \mu\mathrm{m} & \text{barrier} & \text{chalking in UV; always a topcoat} \\
-\text{Coal-tar epoxy} & 300\text{–}500\ \mu\mathrm{m} & \text{barrier, buried} & \text{brittle; banned in some waters} \\
+\text{Coating} & \text{Typical thickness} & \text{Job} & \text{Remark} \\
+\text{Hot-dip zinc} & 55\text{–}85\ \mu\mathrm{m} & \text{barrier + sacrificial} & \text{life} \approx \text{thickness / zinc rate for the site} \\
+\text{Zinc-rich epoxy primer} & 50\text{–}100\ \mu\mathrm{m} & \text{sacrificial} & \text{needs a high zinc loading and a blast-cleaned surface} \\
+\text{Zinc-flake} & 8\text{–}15\ \mu\mathrm{m} & \text{barrier + sacrificial} & \text{no hydrogen charging: used on high-strength fasteners} \\
+\text{Epoxy} & 150\text{–}300\ \mu\mathrm{m} & \text{barrier} & \text{chalks in sunlight; needs a topcoat outdoors} \\
 \text{Polyurethane} & 50\text{–}80\ \mu\mathrm{m} & \text{topcoat, gloss and colour} & \text{not a barrier on its own} \\
-\text{Flake-glass epoxy} & 500\text{–}1{,}500\ \mu\mathrm{m} & \text{chemical lining} & \text{the flake makes a tortuous path} \\
+\text{Glass-flake epoxy} & 500\text{–}1{,}500\ \mu\mathrm{m} & \text{chemical and splash-zone lining} & \text{the flakes lengthen the diffusion path} \\
 \text{Anodic oxide on Al} & 10\text{–}25\ \mu\mathrm{m} & \text{barrier + wear} & \text{sealed by hydrothermal hydration} \\
-\text{Chromate conversion} & 0.1\text{–}1\ \mu\mathrm{m} & \text{inhibitive + paint primer} & \text{Cr(VI) — REACH-restricted} \\
-\text{Trivalent conversion} & 0.1\text{–}0.5\ \mu\mathrm{m} & \text{primer} & \text{10\% worse salt-spray, and legal}
+\text{Chromate conversion} & < 1\ \mu\mathrm{m} & \text{inhibitive + paint adhesion} & \text{contains Cr(VI); restricted under REACH} \\
+\text{Trivalent chromium conversion} & < 1\ \mu\mathrm{m} & \text{paint adhesion, mild inhibition} & \text{the Cr(VI)-free replacement}
 \end{array}
 $$
-**The three rules.** **Surface preparation is $80\ \%$ of the life**: a zinc-rich primer on a $Sa\ 2\tfrac{1}{2}$ blast profile lasts ten times as long as the same primer on a hand-cleaned surface, and the specification must state the **profile depth** of $50$ to $75\ \mu\mathrm{m}$ as well as the standard. **A coating is not a barrier but a resistor**, and its life is proportional to its **low-frequency impedance** and to the **$30^{\circ}$-per-decade** slope of its Bode plot; a coating that has taken up water still looks perfect and protects nothing. **A holiday is a pinhole and a pinhole is a failure**, which is why a lining is **holiday-tested** at $100\ \mathrm{V}$ per $100\ \mu\mathrm{m}$ and a buried pipeline is tested at $5\ \mathrm{kV}$.
+**The three rules.** **Surface preparation is the largest single factor in coating life**: the specification must state the cleanliness grade (for example $\mathrm{Sa}\ 2\tfrac{1}{2}$ to ISO 8501-1) and the **surface profile**, typically $50$ to $75\ \mu\mathrm{m}$ for thick coatings, as well as the paint system. **A coating is an imperfect barrier**: water and oxygen permeate it, and electrochemical impedance measurements show its low-frequency impedance falling as it absorbs water, often long before it looks damaged. **A holiday is a defect through which the steel is bare**, which is why linings and pipeline coatings are **holiday-tested** — with a low-voltage wet sponge for thin films and a high-voltage spark tester (several kilovolts for pipeline coatings) for thick ones.
 :::
 
 ::: definition Cathodic protection {#def-cp}
-Cathodic protection drives the structure's potential into the immunity field, and the criteria are:
+Cathodic protection supplies electrons to the structure so that its potential falls to where the corrosion rate is negligible. The common criteria for steel are:
 $$
-E \le - 0.85\ \mathrm{V\ vs\ Cu / CuSO_4}\ (\text{or } \mathrm{Ag / AgCl}) \text{, polarised and IR-free;} \qquad
+E \le - 0.85\ \mathrm{V\ vs\ Cu / CuSO_4}\ \left( - 0.80\ \mathrm{V\ vs\ Ag / AgCl\ in\ seawater} \right) \text{, polarised and IR-free;} \qquad
 \Delta E \ge 100\ \mathrm{mV}\ \text{of polarisation shift;}
 $$
-with $- 0.80\ \mathrm{V}$ for a **sulfate-reducing-bacteria** soil and $- 1.05\ \mathrm{V}$ for a **high-strength steel** where hydrogen embrittlement is the risk, and a **lower limit of $- 1.10\ \mathrm{V}$** beyond which the coating disbands and the steel is cathodically damaged.
-**The current demand** is the design number, and it is dominated by the coating:
+with a more negative criterion, $- 0.95\ \mathrm{V}$ vs $\mathrm{Cu / CuSO_4}$, where **sulphate-reducing bacteria** are active, and a **negative limit** — typically about $-1.1$ to $-1.2\ \mathrm{V}$ vs $\mathrm{Cu / CuSO_4}$ polarised, and less negative for high-strength steels — beyond which hydrogen evolution disbonds coatings and risks hydrogen embrittlement.
+**The current demand** is the design number, and it is dominated by the coating. Indicative values for steel in seawater:
 $$
 \begin{array}{l c}
 \text{Condition (seawater)} & \text{Current density} \\
-\text{Bare steel} & 100\text{–}150\ \mathrm{A / m^{2}} \\
-\text{Bare, cathodically protected from installation} & 30\text{–}50\ \mathrm{A / m^{2}} \\
-\text{Coated, 1\% disbonded} & 1\text{–}2\ \mathrm{A / m^{2}} \\
-\text{Coated, new} & 0.01\text{–}0.05\ \mathrm{A / m^{2}}
+\text{Bare steel, initial polarisation} & 0.15\text{–}0.25\ \mathrm{A / m^{2}} \\
+\text{Bare steel, mean over the design life} & 0.07\text{–}0.12\ \mathrm{A / m^{2}} \\
+\text{Coated, } 1\ \%\ \text{of the area bare} & \approx 0.001\ \mathrm{A / m^{2}}
 \end{array}
 $$
-**A $99\ \%$-coated structure needs a hundredth of the anode**, which is why a cathodic-protection design is a coating specification.
-**The anode materials**, with their practical capacities:
+**A $99\ \%$-coated structure needs about a hundredth of the current**, which is why a cathodic-protection design is also a coating specification.
+**The anode materials**, with typical practical capacities (the annual consumption is $8{,}760\ \mathrm{h}$ divided by the capacity):
 $$
 \begin{array}{l c c l}
-\text{Anode} & \text{Capacity} & \text{Consumption} & \text{Use} \\
-\text{Zinc} & 738\ \mathrm{Ah / kg} & 11.9\ \mathrm{kg / A \cdot yr} & \text{the classic; not above } 25\ {}^{\circ}\mathrm{C} \text{ (it becomes passive)} \\
-\text{Aluminium In-Sn} & 2{,}680\ \mathrm{Ah / kg} & 3.3\ \mathrm{kg / A \cdot yr} & \text{the offshore answer; } 3.6\times \text{ zinc per kilogram} \\
-\text{Magnesium high-potential} & 1{,}100\ \mathrm{Ah / kg} & 7.9\ \mathrm{kg / A \cdot yr} & \text{soil and fresh water (high driving voltage)} \\
-\text{Mixed metal oxide} & \text{insoluble} & \text{net shape loss} & \text{impressed current; } 20\text{–}30\ \mathrm{A / kg} \text{ duty} \\
-\text{Cast iron (high Si)} & \text{insoluble} & 0.5\ \mathrm{kg / A \cdot yr} & \text{impressed current in soil}
+\text{Anode} & \text{Practical capacity} & \text{Consumption} & \text{Use} \\
+\text{Zinc} & \approx 780\ \mathrm{Ah / kg} & 11.2\ \mathrm{kg / (A \cdot yr)} & \text{seawater; not above about } 50\ {}^{\circ}\mathrm{C} \\
+\text{Aluminium-zinc-indium} & \approx 2{,}500\ \mathrm{Ah / kg} & 3.5\ \mathrm{kg / (A \cdot yr)} & \text{offshore structures} \\
+\text{Magnesium} & \approx 1{,}100\ \mathrm{Ah / kg} & 8.0\ \mathrm{kg / (A \cdot yr)} & \text{soil and fresh water (high driving voltage)} \\
+\text{Mixed metal oxide on titanium} & \text{nearly inert} & \text{very small} & \text{impressed current} \\
+\text{High-silicon cast iron} & \text{slowly consumed} & \approx 0.1\text{–}0.5\ \mathrm{kg / (A \cdot yr)} & \text{impressed current in soil}
 \end{array}
 $$
-**The two failure modes of a protection system.** **Under-protection** leaves the structure in the pitting field, and it is invisible because the potential reads $- 0.75\ \mathrm{V}$ and looks nearly right. **Over-protection** on a coated structure generates hydrogen at the steel-coating interface, which **disbands the coating** by osmotic and blister mechanics, and on a high-strength steel it charges the metal with hydrogen and causes a cathodic-disbondment hydrogen fracture. The $- 1.10\ \mathrm{V}$ ceiling is a fracture-mechanics limit and not a coating one.
+**The two failure modes of a protection system.** **Under-protection** leaves parts of the structure corroding, often unnoticed because a reading of $- 0.75\ \mathrm{V}$ looks nearly right or because the measurement includes an IR drop. **Over-protection** generates hydrogen at the steel-coating interface, which **disbonds the coating**, and on high-strength steel it charges the metal with hydrogen.
 :::
 
 ::: example The Faraday conversion in practice {#ex-faraday}
-A steel plate is coated with $85\ \mu\mathrm{m}$ of hot-dip zinc. Give the life in a rural and in an industrial atmosphere, and the current density that would consume the coating in five years.
+A steel plate is coated with $85\ \mu\mathrm{m}$ of hot-dip zinc. Estimate the coating life in a rural (ISO 9223 category C2) and in an industrial (C4) atmosphere, and the zinc corrosion current density that would consume the coating in five years.
 ::: solution
-**The consumption rates.** Zinc corrodes at $0.7\ \mu\mathrm{m / yr}$ in a C2 rural atmosphere and $3\ \mu\mathrm{m / yr}$ in a C3 industrial one, so
+**The consumption rates.** Take zinc corrosion rates of $0.7\ \mu\mathrm{m / yr}$ (the upper end of C2) and $3\ \mu\mathrm{m / yr}$ (within the C4 band of $2.1$ to $4.2$), so
 $$
-t_{\mathrm{rural}} = \frac{85}{0.7} = 120\ \mathrm{yr}, \qquad
+t_{\mathrm{rural}} = \frac{85}{0.7} = 121\ \mathrm{yr}, \qquad
 t_{\mathrm{ind}} = \frac{85}{3} = 28\ \mathrm{yr} .
 $$
-**The equivalent current.** A $3\ \mu\mathrm{m / yr}$ zinc loss is
+**The equivalent current.** For zinc $1\ \mu\mathrm{A / cm^{2}}$ is $15.0\ \mu\mathrm{m / yr}$, so a $3\ \mu\mathrm{m / yr}$ loss is
 $$
-i = 1\ \mu\mathrm{A / cm^{2}} \times \frac{3}{15} = 0.20\ \mu\mathrm{A / cm^{2}} = 2\ \mathrm{mA / m^{2}} .
+i = 1\ \mu\mathrm{A / cm^{2}} \times \frac{3}{15.0} = 0.20\ \mu\mathrm{A / cm^{2}} = 2\ \mathrm{mA / m^{2}} .
 $$
-**Five years' life** would require $60\ \mu\mathrm{m}$ consumed in five years, $12\ \mu\mathrm{m / yr}$, or $0.8\ \mu\mathrm{A / cm^{2}}$ — a rate reached only where the coating is coupled to a large cathode or is in a splash zone.
-**The galvanic protection of a scratch.** A $1\ \mathrm{mm}$ scratch in a zinc-coated steel sheet exposes steel to an electrolyte; the zinc around it becomes the anode and protects the $1\ \mathrm{mm}^{2}$ of steel. The zinc consumed is
-$$
-m = \frac{i\, t\, M}{n F} ,
-$$
-and with the whole $1\ \mathrm{cm}^{2}$ of surrounding zinc supplying the $1\ \mathrm{mm}^{2}$ of steel at $11.6\ \mu\mathrm{m / yr}$, the zinc loss is $0.116\ \mu\mathrm{m}$ per year of steel loss — the coating will protect the scratch for **seven hundred years** of its own life.
+**Five years' life** would require $85 / 5 = 17\ \mu\mathrm{m / yr}$, or $17 / 15.0 = 1.1\ \mu\mathrm{A / cm^{2}}$ ($11\ \mathrm{mA / m^{2}}$) — a rate reached in a marine splash zone or where the zinc is coupled to a large area of bare steel.
+**The galvanic protection of a scratch.** A scratch exposing $1\ \mathrm{mm}^{2}$ of steel is protected by the surrounding zinc. If the steel needs a cathodic current density of $1\ \mu\mathrm{A / cm^{2}}$ and the current is drawn from $1\ \mathrm{cm}^{2}$ ($100\ \mathrm{mm^{2}}$) of surrounding zinc, the zinc current density is $1 / 100 = 0.01\ \mu\mathrm{A / cm^{2}}$, an extra zinc loss of $0.01 \times 15.0 = 0.15\ \mu\mathrm{m / yr}$ — small beside the atmospheric rate, so the scratch costs the coating almost nothing.
 
-*Check.* The ratio of the two penetration rates is the ratio of $M / (n \rho)$: zinc $65.4 / (2 \times 7.14) = 4.58$ against iron $55.85 / (2 \times 7.87) = 3.55$, a factor of $1.29$, and $15.0 / 11.6 = 1.29$. $\checkmark$
+*Check.* The ratio of the zinc and iron conversions is the ratio of $M / (n \rho)$: zinc $65.4 / (2 \times 7.14) = 4.58$ against iron $55.85 / (2 \times 7.87) = 3.55$, a factor of $1.29$, and $15.0 / 11.6 = 1.29$. $\checkmark$
 
-*Sanity.* This is why a galvanised bucket survives a scratch and a tin-plated can, once scratched, rusts through at the scratch: **tin is noble to steel, so the scratch becomes the anode and the concentration factor is the whole $100 : 1$ area ratio**. The same arithmetic is why a **nickel-chromium** coating on a plastic bumper works only as a barrier and why a **zinc-nickel** plating on a fastener works as a sacrificial one.
+*Sanity.* This is why a scratched galvanised bucket does not rust at the scratch, while scratched tin plate exposed to the weather rusts there: in air and water **tin is noble to steel**, so the exposed steel becomes the anode and the large tin-coated area the cathode. Zinc and zinc-alloy platings on fasteners protect sacrificially for the same reason.
 :::
 :::
 
 ::: example Galvanic couple: aluminium stringer to steel bracket {#ex-galv}
-An aluminium 2024 stringer is bolted to a carbon-steel bracket with a steel bolt in a humid-marine atmosphere. Give the driving force, the expected damage, and the design fix.
+An aluminium 2024 stringer is bolted to a carbon-steel bracket with a steel bolt in a humid marine atmosphere. Give the driving force, the expected damage, and the design fix.
 ::: solution
-**The driving force.** In a chloride-contaminated electrolyte the 2024 sits at $- 0.87\ \mathrm{V}$ and the steel at $- 0.61\ \mathrm{V}$ against $\mathrm{Ag / AgCl}$, so the couple potential is $260\ \mathrm{mV}$ and the **aluminium is the anode**.
-**The damage, and why the area ratio decides it.** If the steel bracket is $100\ \mathrm{cm^{2}}$ and the aluminium's exposed area at the joint is $1\ \mathrm{cm^{2}}$ — a bare, scratched or anodised-but-scratched patch — the current density on the aluminium is $100$ times the couple's average. At a modest average of $0.1\ \mu\mathrm{A / cm^{2}}$ the local rate is $10\ \mu\mathrm{A / cm^{2}}$, which is
+**The driving force.** In a chloride-contaminated electrolyte aluminium alloys sit at about $-0.76$ to $-1.00\ \mathrm{V}$ and steel at about $-0.60$ to $-0.72\ \mathrm{V}$ (vs SCE), so the couple has a driving force of the order of $0.1$ to $0.3\ \mathrm{V}$ and the **aluminium is the anode**.
+**The damage, and why the area ratio decides it.** Suppose the wetted steel is $100\ \mathrm{cm^{2}}$ and the aluminium exposed at the joint — a scratched or bare patch — is $1\ \mathrm{cm^{2}}$. If oxygen reduction on the steel supplies $0.1\ \mu\mathrm{A / cm^{2}}$, the current density on the aluminium is $100 \times 0.1 = 10\ \mu\mathrm{A / cm^{2}}$, and with $10.9\ \mu\mathrm{m / yr}$ per $\mu\mathrm{A / cm^{2}}$ for aluminium
 $$
 \dot{x} = 10.9\ \mu\mathrm{m / yr} \times 10 = 109\ \mu\mathrm{m / yr} ,
 $$
-and a $3\ \mathrm{mm}$ stringer wall is gone in **twenty-eight years** — or in **three years** at a splash-zone current density.
+so a $3\ \mathrm{mm}$ stringer wall would be penetrated in about $3{,}000 / 109 = 28$ years — and much sooner where the joint stays wet or the cathodic current density is higher.
 **The design fix, in order of preference.**
-1. **Insulate.** A **glass-fibre reinforced nylon washer and sleeve** at the bolt, a **non-hygroscopic** sealant bead of polysulphide or polyurethane around the joint, and a **primer** on both faying surfaces. The sleeve must be **full-length**, not a head washer, or the shank is a short-circuit.
-2. **Reverse the area ratio.** Make the aluminium the big member and the steel the small one — a steel rivet in an aluminium plate is a design; an aluminium rivet in a steel plate is a design; a steel bolt in a big aluminium plate is a **problem**.
-3. **Coat the cathode, not the anode.** A coating on the steel bracket reduces the cathode's area and therefore the current; a coating on the aluminium is fine until it has a holiday, and a holiday on a coated anode against a bare cathode is the **worst** configuration in corrosion engineering.
-4. **Change one material.** A stainless bolt is worse than a steel one in this couple, because it is more noble; a **zinc**, **cadmium** or **zinc-nickel plated** steel bolt is better, because it becomes the anode and sacrifices itself.
-5. **Drain.** A joint that holds water is a joint that corrodes; a weep hole and a slope are free.
+1. **Insulate.** Non-conducting washers and a full-length sleeve at the bolt (a head washer alone leaves the shank as a short circuit), a sealant around the joint, and primer on both faying surfaces.
+2. **Keep the anode large and the cathode small.** A small steel fastener in a large aluminium member is tolerable; a small aluminium part on a large steel member is not.
+3. **Coat the cathode, not only the anode.** A coating on the steel reduces the cathode area and therefore the current; a coated anode against a bare cathode concentrates all the current at the first holiday in the anode's coating — the **worst** configuration.
+4. **Change one material.** A stainless bolt is no improvement, since it is still more noble than aluminium; a **zinc-, cadmium- or zinc-nickel-plated** steel bolt is closer in potential and its plating is sacrificial.
+5. **Drain.** A joint that holds water corrodes; weep holes and slopes cost nothing.
 
-*Check.* The measured open-circuit potential of the couple, with the two metals bonded in a wet salt fog, settles near $- 0.75\ \mathrm{V}$ — between the two, and closer to the aluminium because the aluminium's exchange current is low. $\checkmark$
+*Check.* Units: $(\mu\mathrm{A / cm^{2}}) \times (\mu\mathrm{m / yr}$ per $\mu\mathrm{A / cm^{2}}) = \mu\mathrm{m / yr}$, and $3\ \mathrm{mm} / 0.109\ \mathrm{mm / yr} = 28\ \mathrm{yr}$. The couple settles at a mixed potential between the two metals; when oxygen reduction is diffusion-limited the cathode polarises strongly and the mixed potential lies close to the aluminium's. $\checkmark$
 
-*Sanity.* The rule that follows from this example is the one every airframe and marine design manual states: **never coat the anode and leave the cathode bare**. It is the reason an aluminium boat hull is painted and a **sacrificial zinc anode** is bolted to it, and the reason a **tin-plated** steel food can is lacquered inside and out and cannot be allowed a scratch.
+*Sanity.* The rule that follows is the one airframe and marine design manuals state: **never coat the anode and leave the cathode bare**. Aluminium boat hulls are painted and fitted with sacrificial anodes (zinc or aluminium alloy) for the same reason: the anodes, not the hull, become the anodic area.
 :::
 :::
 
 ::: example Cathodic protection of a pipeline {#ex-cp}
-A $50\ \mathrm{km}$ of $900\ \mathrm{mm}$ diameter buried pipeline, coated with a $300\ \mu\mathrm{m}$ fusion-bonded epoxy with a $1\ \%$ holiday allowance, must be protected by impressed current. Give the current, the number of rectifier stations, and the anode.
+A $50\ \mathrm{km}$ length of $900\ \mathrm{mm}$ diameter buried steel pipeline (wall $12\ \mathrm{mm}$), coated with fusion-bonded epoxy and designed for $1\ \%$ of its surface bare, is to be protected by impressed current. Estimate the current, the number of rectifier stations, and choose the anodes.
 ::: solution
-**The area and the current.** The surface is $\pi \times 0.9 \times 50{,}000 = 1.41 \times 10^{5}\ \mathrm{m^{2}}$. At a $1\ \%$ holiday and a bare-steel demand of $0.1\ \mathrm{mA / m^{2}}$ in aerated soil — a conservative figure for a **coated** line, where the design current is $1$ to $2\ \mathrm{mA / m^{2}}$ of **holiday** area —
+**The area and the current.** The surface is $\pi \times 0.9 \times 50{,}000 = 1.41 \times 10^{5}\ \mathrm{m^{2}}$. Taking a protective current density of $10\ \mathrm{mA / m^{2}}$ for bare steel in aerated soil, applied to the $1\ \%$ bare area,
 $$
-I = 1.41 \times 10^{5} \times 0.01 \times 1.5\ \mathrm{mA} = 2.1\ \mathrm{A} .
+I = 1.41 \times 10^{5} \times 0.01 \times 0.010\ \mathrm{A} = 14\ \mathrm{A} ,
 $$
-**The rectifier stations.** A single station can protect $10$ to $20\ \mathrm{km}$ of a coated line before the **coating's resistance** attenuates the potential; the attenuation length is
+an average of $0.1\ \mathrm{mA / m^{2}}$ over the whole surface.
+**The rectifier stations.** The protection decays with distance from a drain point because current flows along the pipe wall (resistance per unit length $r$) and leaks out through the coating (conductance per unit length $g$). The attenuation length is
 $$
-\lambda = \sqrt{\frac{r}{g}} , \qquad r = \frac{\rho_{\mathrm{soil}}}{\pi D}, \quad g = \frac{2 \pi}{\rho_{\mathrm{coating}}} \frac{1}{D} ,
+\lambda = \frac{1}{\sqrt{r g}} , \qquad r = \frac{\rho_{\mathrm{steel}}}{\pi D w}, \quad g = \frac{\pi D}{R_{\mathrm{c}}} ,
 $$
-which for a $100\ \Omega\,\mathrm{m}$ soil and a $10^{6}\ \Omega\,\mathrm{m^{2}}$ coating gives $\lambda \approx 4\ \mathrm{km}$, so **six to eight stations** at $0.4\ \mathrm{A}$ each.
-**The anodes.** **Mixed-metal-oxide on niobium or titanium** ribbon or sticks, backfilled with a high-coke-butt **cokeleze** filler, driven in pairs at each station, each rated $15\ \mathrm{A}$ at $50\ \mathrm{V}$ with a $20$-year design life at a $60\ \%$ duty.
-**The three design traps.** **Stray-current interference**: a nearby railway or cathodically-protected structure's current collects on the pipeline at a **discharge** point and eats it in months; the fix is a **drainage cable** and an **interference survey** before construction. **Shielding**: a rock pad, a concrete weight coating, a disbonded tape or a **sleeve** at a road crossing shields the steel from the current and the potential reads $- 0.9\ \mathrm{V}$ at the test post while the metal under the shield is at $- 0.4\ \mathrm{V}$ and corroding; the fix is an **off-potential-gradient survey** and an **A-frame** or **CIPS** survey. **Overprotection at the rectifier**: the potential $200\ \mathrm{m}$ from the station is $- 2.0\ \mathrm{V}$ and the coating is disbanding; the fix is an **IR-free** measurement and a **current-on/current-off** switch at $0.1\ \mathrm{s}$.
+where $w$ is the wall thickness and $R_c$ the specific coating resistance. An average current density of $0.1\ \mathrm{mA / m^{2}}$ at a polarisation of about $0.3\ \mathrm{V}$ corresponds to $R_c = 0.3 / 10^{-4} = 3{,}000\ \Omega\,\mathrm{m^{2}}$. With $\rho_{\mathrm{steel}} = 2 \times 10^{-7}\ \Omega\,\mathrm{m}$:
+$$
+r = \frac{2 \times 10^{-7}}{\pi \times 0.9 \times 0.012} = 5.9 \times 10^{-6}\ \Omega / \mathrm{m}, \qquad
+g = \frac{\pi \times 0.9}{3{,}000} = 9.4 \times 10^{-4}\ \mathrm{S / m}, \qquad
+\lambda = 13\ \mathrm{km} .
+$$
+A station can therefore protect roughly one attenuation length on each side, so **two stations**, at about $12.5$ and $37.5\ \mathrm{km}$, each supplying about $7\ \mathrm{A}$, are a reasonable first layout; a design would add margin for coating deterioration over the life.
+**The anodes.** Impressed-current anodes of **mixed metal oxide on titanium** or **high-silicon cast iron** in a carbonaceous (coke-breeze) backfill, in a groundbed at each station sized for the station current with margin, a low resistance to earth and the design life.
+**The three design traps.** **Stray-current interference**: current from a nearby DC railway or another protected structure can be picked up by the pipeline and discharged elsewhere, where it corrodes the steel rapidly; the remedies are interference surveys and drainage bonds. **Shielding**: rock, concrete weight coatings, disbonded tape or casings at road crossings shield the steel from the protective current, so the test post can read well while the steel beneath the shield corrodes; close-interval potential surveys (CIPS) and direct-current voltage gradient (DCVG) surveys find such places. **Over-protection near the drain point**: the potential close to the groundbed is the most negative on the line and can disbond the coating; potentials are judged by **IR-free** ("instant-off") measurements with the rectifiers interrupted.
 
-*Check.* The total current of $2.1\ \mathrm{A}$ over $1.41 \times 10^{5}\ \mathrm{m^{2}}$ is $0.015\ \mathrm{mA / m^{2}}$ of total surface, which is the $1\ \%$ holiday times $1.5\ \mathrm{mA / m^{2}}$ — consistent. $\checkmark$
+*Check.* $14\ \mathrm{A}$ over $1.41 \times 10^{5}\ \mathrm{m^{2}}$ is $0.1\ \mathrm{mA / m^{2}}$, which is $1\ \%$ of $10\ \mathrm{mA / m^{2}}$ — consistent. Units of $\lambda$: $(\Omega\,\mathrm{m^{-1}} \cdot \mathrm{S\, m^{-1}})^{-1/2} = \mathrm{m}$. $\checkmark$
 
-*Sanity.* The $1\ \%$ holiday allowance is the whole design: an uncoated line would need $14\ \mathrm{kA}$ and a small power station. It is also why a pipeline's **coating** is inspected and repaired by the same crew that installs it, why the **holiday detector** is a mandatory item on the spread, and why the industry's corrosion budget is a **coating** budget and not a **current** budget.
+*Sanity.* The $1\ \%$ bare allowance is the whole design: an uncoated line would need $1.41 \times 10^{5} \times 0.010 = 1.4\ \mathrm{kA}$, a hundred times more. That is why pipeline coatings are holiday-tested and repaired during construction, and why the corrosion budget of a pipeline is mostly a coating budget.
 :::
 :::
 
 ::: example Design: a seawater cooling system {#ex-design-cor}
-Design the materials and the corrosion control for a $5\ \mathrm{MW}$ seawater-cooled heat exchanger and its $200\ \mathrm{m}$ of pipework, at $3\ \mathrm{m / s}$ design velocity and a twenty-year life with no chemical treatment.
+Select materials and corrosion control for a seawater-cooled heat exchanger and its $200\ \mathrm{m}$ of pipework, at about $3\ \mathrm{m / s}$ design velocity and a twenty-year life with no chemical treatment.
 ::: solution
-**The environment.** Filtered seawater at $25\ {}^{\circ}\mathrm{C}$, $3.5\ \%$ chloride, $3\ \mathrm{m / s}$, intermittently stagnant at a shutdown, oxygenated at $7\ \mathrm{mg / l}$, and at a metal temperature that rises $10\ {}^{\circ}\mathrm{C}$ above the water in the exchanger.
-**The material selection, member by member.**
+**The environment.** Filtered seawater at up to $25\ {}^{\circ}\mathrm{C}$, about $3.5\ \%$ dissolved salts, aerated, flowing at $3\ \mathrm{m / s}$ in normal service and stagnant during shutdowns, with metal temperatures in the exchanger above the water temperature.
+**The material selection, item by item.**
 $$
 \begin{array}{l l l}
 \text{Item} & \text{Material} & \text{Why} \\
-\text{Seawater pipework} & \text{CuNi 90/10 with a 25-year allowance, or duplex 2205} & 3\ \mathrm{m / s} \text{ is the CuNi limit; duplex has margin} \\
-\text{Tube plate and shell} & \text{duplex 2205, or carbon steel with a lining} & \text{the cheapest section is the biggest} \\
-\text{Tubes} & \text{CuNi 90/10 (or Ti Gr.2 if } > 3.5\ \mathrm{m / s}\text{)} & \text{fouling-resistant and erosion-tolerant} \\
-\text{Water box} & \text{duplex, or carbon steel with a rubber lining} & \text{impingement at the inlet} \\
-\text{Bolts} & \text{super-duplex or UNS N06625} & \text{316 pits under a washer at a crevice} \\
-\text{Gaskets} & \text{PTFE-encapsulated or spiral-wound 316/graphite} & \textbf{no graphite: a graphite gasket is a cathode} \\
-\text{Pump impeller} & \text{duplex or CD4MCuN} & \text{cavitation + erosion + chloride} \\
-\text{Valve trim} & \text{Alloy 6 or Stellite on a duplex body} & \text{galling and erosion at the seat}
+\text{Seawater pipework} & \text{CuNi 90/10, or super-duplex} & 3\ \mathrm{m / s} \text{ is within the CuNi window for large pipes; super-duplex has margin} \\
+\text{Tube plate and shell} & \text{CuNi or super-duplex, or lined carbon steel} & \text{the largest wetted area; cost drives the choice} \\
+\text{Tubes} & \text{CuNi 90/10, or titanium at higher velocity} & \text{fouling resistance and erosion tolerance} \\
+\text{Water box} & \text{rubber-lined carbon steel or super-duplex} & \text{impingement at the inlet} \\
+\text{Bolts} & \text{super-duplex or alloy 625} & \text{316 suffers crevice attack under washers} \\
+\text{Gaskets} & \text{non-graphite (e.g. PTFE-based)} & \text{a graphite gasket is a large cathode} \\
+\text{Pump casing and impeller} & \text{duplex (e.g. CD4MCuN) or super-duplex} & \text{cavitation, erosion and chloride} \\
+\text{Valve trim} & \text{hard-faced (Stellite 6) on a duplex body} & \text{galling and erosion at the seat}
 \end{array}
 $$
 **The five design rules that decide the outcome.**
-1. **Velocity.** $3\ \mathrm{m / s}$ is the CuNi limit and the duplex limit is $6\ \mathrm{m / s}$; the design must **not** exceed the limit at a **blocked-tube** condition, when the flow redistributes and the remaining tubes run at twice the velocity.
-2. **No crevice.** A tube-to-tubesheet joint is a crevice; the fix is a **roll-plus-weld** joint and no O-ring where a chloride can sit.
-3. **No galvanic pair.** A copper-nickel tube in a steel tube plate is a $400\ \mathrm{mV}$ couple with a huge cathode-to-anode ratio; the fix is an **insulating sleeve** at the tube, or a **duplex** tube plate, or a **zinc** anode in the water box.
-4. **No stagnation.** A shutdown with a full, static, warm, oxygenated pipe is the worst condition of the plant's life and the pitting starts there; the fix is a **drain at every low point**, a **downward slope**, and a **nitrite or amine inhibitor** charged at shutdown.
-5. **Cathodic protection of the water box.** A **zinc** or **aluminium** anode in each water box, replaced annually, protects the tube-plate and the shell and — critically — **does not** protect the copper-nickel tubes, which must not be over-protected or they lose their protective oxide and start to foul.
-**The monitoring.** A **coupons rack** at the return, an **electrical-resistance probe** at the exchanger outlet, a **linear-polarisation probe** in the water box, and a **tube pull** at five years with a metallographic examination of the crevice at the tubesheet.
+1. **Velocity.** Keep CuNi within its window; check the velocity when tubes are plugged or blocked, because the flow redistributes and the remaining tubes run faster.
+2. **No crevices.** Tube-to-tubesheet joints, gaskets and threads are crevices; choose crevice-resistant alloys there and avoid O-rings where seawater can stagnate.
+3. **No unmanaged galvanic pairs.** A copper-nickel tube bundle in a carbon-steel tube plate makes the tube plate the anode of a large cathode; use a compatible tube plate, insulate, or protect the water box cathodically.
+4. **No stagnation.** A shutdown with a full, static, warm pipe is the most damaging condition the plant sees; provide drains at every low point and drain and flush with fresh water for longer shutdowns.
+5. **Cathodic protection of the water boxes.** Sacrificial anodes (iron, zinc or aluminium alloy) in each water box protect the tube plate and the box; the copper-nickel tubes should not be strongly protected, because the copper ions released by free corrosion are what keep the tubes fouling-resistant.
+**The monitoring.** Coupon racks, electrical-resistance and linear-polarisation probes, and periodic tube pulls with metallographic examination of the tube-to-tubesheet region.
 
-*Design comment.* The general rule is that **a seawater system is designed by its velocity and its stagnation, not by its alloy**. Every material on the list above is a good material in the wrong place; the failures of seawater systems are almost never a wrong alloy and almost always a **design** — a dead leg, a crevice, a graphite gasket, a blocked tube, a shutdown with no inhibitor, and a copper-nickel tube in a steel plate.
+*Design comment.* Seawater systems usually fail not because of a wrong alloy but because of a **design detail** — a dead leg, a crevice, a graphite gasket, a blocked tube, a stagnant shutdown, a galvanic pair. Velocity and stagnation deserve as much attention as alloy selection.
 :::
 :::
 
 ::: example Design: a carbon capture solvent loop {#ex-design-co2}
-Select the materials for an amine-based $\mathrm{CO_2}$ capture plant's absorber, regenerator and the interconnecting loop at $120\ {}^{\circ}\mathrm{C}$.
+Select the materials for an amine-based $\mathrm{CO_2}$ capture plant's absorber, regenerator and the interconnecting loop at up to $120\ {}^{\circ}\mathrm{C}$.
 ::: solution
-**The environment, and why it is worse than it looks.** A $30\ \%$ monoethanolamine solution at $40\ {}^{\circ}\mathrm{C}$ in the absorber and $120\ {}^{\circ}\mathrm{C}$ in the regenerator, loaded with $\mathrm{CO_2}$, containing **heat-stable salts** — acetate, formate, oxalate, glycolate, thiocyanate and **thiosulphate** — from the amine's oxidative and thermal degradation, plus **oxygen** carried in from the flue gas and **chloride** and **sulphate** from the make-up water. The degradation products are the corrosion driver, and a plant that runs well for two years and then corrodes has a **reclaimer** problem and not a materials problem.
+**The environment, and why it is worse than it looks.** An aqueous monoethanolamine solution (about $30\ \%$ by mass) at about $40\ {}^{\circ}\mathrm{C}$ in the absorber and up to about $120\ {}^{\circ}\mathrm{C}$ in the regenerator and reboiler, loaded with $\mathrm{CO_2}$, and accumulating **heat-stable salts** — formate, acetate, oxalate, thiosulphate and others — from oxidative and thermal degradation of the amine, plus **oxygen** from the flue gas and **chloride** and **sulphate** from make-up water and flue-gas carry-over. The degradation products drive much of the corrosion, so solvent management is as important as material selection.
 **The material selection.**
 $$
 \begin{array}{l l l}
 \text{Item} & \text{Material} & \text{Comment} \\
-\text{Absorber shell} & \text{carbon steel} & \text{mild corrosion, a 3 mm allowance is standard} \\
-\text{Absorber internals, high-duty zone} & \text{316L or duplex 2205} & \text{the rich-solvent entry is the hottest and fastest-corroding point} \\
-\text{Regenerator shell and head} & \text{316L clad, or 2205} & 120\ {}^{\circ}\mathrm{C}\text{, low } \mathrm{CO_2} \text{ partial pressure at the top, and this is the SCC risk} \\
-\text{Reboiler tubes} & \text{316L or Alloy 20 for a high-chloride feed} & \text{under-deposit and crevice at the tubesheet} \\
-\text{Pump and pipework} & \text{carbon steel with a 3 mm allowance} & \text{velocity below 2 m/s; erosion-corrosion above it} \\
-\text{Reclaimer} & \text{Alloy 20, Hastelloy C-276 or a lining} & \text{the concentrated, hot, acid, oxidising worst case} \\
-\text{Gaskets} & \text{spiral-wound 316 / PTFE-face} & \text{no graphite with an amine} \\
-\text{Bolts} & \text{B8M or N06625} & \text{carbon steel bolts in a hot amine corrode and seize}
+\text{Absorber shell} & \text{carbon steel with allowance, or stainless} & \text{lean, cool solvent; mild conditions} \\
+\text{Rich-solvent lines, rich/lean exchanger} & \text{stainless (304L/316L)} & \text{hot, CO}_2\text{-rich solvent attacks carbon steel} \\
+\text{Regenerator and reboiler} & \text{316L, or duplex where chloride is high} & \text{hottest, most aggressive zone} \\
+\text{Reclaimer} & \text{high-alloy (e.g. alloy C-276) or lined} & \text{concentrated degradation products} \\
+\text{Bolting} & \text{stainless (e.g. B8M)} & \text{resists external and leak corrosion}
 \end{array}
 $$
-**The three failure modes.** **Erosion-corrosion** at a **$2\ \mathrm{m / s}$** velocity limit, at an elbow, a valve trim or a pump impeller, and it is the dominant loss of wall in a rich-solvent line. **Chloride stress-corrosion cracking** of the 316L at the regenerator where the temperature exceeds $60\ {}^{\circ}\mathrm{C}$ and the chloride concentrates by evaporation at a weld or a deposit; the fix is a **duplex** or an **Alloy 825** in that section and a **chloride limit of $50\ \mathrm{ppm}$** in the make-up water. **Under-deposit corrosion** at the reboiler tubesheet and at the absorber's liquid distributor.
-**The corrosion control.** A **reclaimer** that removes the heat-stable salts and keeps them below $6\ \%$ by mass of amine; a **carbon filter and a coalescer** to remove the degradation oils and the iron; a **chloride limit** on the make-up; a **velocity limit**; a **corrosion-inhibiting amine package** (a nitrite-free, molybdate-based or a proprietary inhibitor); and **coupon racks** at six locations with a quarterly reading.
-**The monitoring that actually works.** A **hydrogen-flush probe** on the reboiler, **electrochemical-noise** sensors at the welds, and a **quarterly solvent analysis** for the heat-stable salts, iron and chloride. A plant that measures its solvent measures its corrosion.
+**The three failure modes.** **Erosion-corrosion** at bends, valves, pumps and flashing points in rich-solvent lines, controlled by velocity limits and stainless steel. **Chloride stress-corrosion cracking** of austenitic stainless where the temperature exceeds about $60\ {}^{\circ}\mathrm{C}$ and chloride concentrates; controlled by limiting chloride in the solvent and by duplex steels in the worst places. **Amine stress-corrosion cracking** of carbon steel welds, controlled by post-weld heat treatment as in API 945 practice.
+**The corrosion control.** A **reclaimer** that removes heat-stable salts and keeps them below a set limit, filtration, a **chloride limit** on make-up water, **velocity limits**, and corrosion monitoring (coupons and probes, plus regular solvent analysis for heat-stable salts, dissolved iron and chloride — a rising iron content is an early sign of active corrosion).
 
-*Design comment.* The general rule is that **a closed-loop chemical plant is designed on its degradation products and not on its process chemistry**, and that the corrosion specification must include a **water quality** and a **solvent management** clause. The materials on the list above are the industry standard and are adequate; the plants that fail have a reclaimer that was never commissioned and a make-up water with $200\ \mathrm{ppm}$ of chloride.
+*Design comment.* In a closed solvent loop the corrosion specification must include **solvent-quality and water-quality limits**, not only materials: the same plant that runs well with its reclaimer in service can corrode quickly when degradation products are allowed to accumulate.
 :::
 :::
 
 ::: history
-**Humphry Davy**'s 1824 invention of sacrificial protection — the zinc and iron strips he bolted to the copper sheathing of the Admiralty's ships, after **Joseph Banks**'s 1796 report on the fast decay of the copper of HMS *Salamander* — is the first corrosion engineering, and it was rejected by the Royal Navy for sixty years because it was thought to increase friction. **Michael Faraday**'s 1836-37 Bakerian lectures on the chemical condition of iron in contact with water, which established the **passivity** of iron in concentrated nitric acid and the role of oxygen, are the foundation of the science. **Ulick Richardson Evans**'s 1914 *Proceedings of the Royal Society* paper on the rusting of iron, written while he was a student and rejected twice, established the **electrochemical** mechanism with a ferricylide-phenolphthalein gel and a visible anode-cathode pattern, and his 1929 monograph *The Corrosion and Rusting of Metals* was the standard text for thirty years; **Evans** also invented the **Evans balance** for high-temperature oxidation. **Marcel Pourbaix**'s 1945 atlas of electrochemical equilibria, produced at the Institut de Corrosion in Brussels, turned Faraday's chemistry into a design chart and is still the first thing a corrosion engineer opens. **Herbert H. Uhlig**'s 1953 *Journal of the Electrochemical Society* paper on the critical pitting potential and **John Kruger**'s and **Morris J. Cohen**'s 1960s passivity work gave localised attack its quantitative form; **H. H. Uhlig** and **D. N. Triadja**'s 1972 book and **M. G. Fontana**'s 1967 *Corrosion Engineering* trained two generations. **M. H. Peters** and the **NACE** group that established the **$- 0.85\ \mathrm{V}$** criterion, **R. C. Nelson**'s curves of 1949 for high-temperature hydrogen attack; **C. E. (Cy) Johnson**'s 1930s discovery of the **season cracking** of brass cartridge cases in ammonia fumes and **A. T. Fry**'s 1940s work on the same; and **F. L. (Fred) LaQue**'s 1950 *Marine Corrosion* and the **LaQue Center for Marine Corrosion** at Key West, which measured the galvanic series in flowing seawater by mooring instrumented panels to a dock for sixty years, are the empirical foundation of every marine design manual in use.
+**Humphry Davy** in 1824 proposed protecting the copper sheathing of Royal Navy ships by attaching zinc or iron — the first deliberate cathodic protection — but the protected copper fouled, because the copper ions that poison marine growth were no longer released, and the method was abandoned. **Christian Friedrich Schönbein** and **Michael Faraday** studied the **passivity** of iron in concentrated nitric acid in the 1830s. **Julius Tafel** published the logarithmic relation between overpotential and current in 1905, and **N. B. Pilling** and **R. E. Bedworth** their oxide-volume ratio in 1923. **Ulick R. Evans** at Cambridge demonstrated the electrochemical nature of aqueous corrosion and differential aeration with drop experiments in the 1920s. **Robert J. Kuhn** proposed the $-0.85\ \mathrm{V}$ (vs $\mathrm{Cu/CuSO_4}$) protection criterion in 1933 from his work on cast-iron water mains in New Orleans. **Carl Wagner** and **W. Traud** formulated the mixed-potential theory in 1938, and **Milton Stern** and **A. L. Geary** the polarisation-resistance method in 1957. **Marcel Pourbaix** developed potential-pH diagrams and collected them in his *Atlas of Electrochemical Equilibria in Aqueous Solutions* (French 1963, English 1966). **Frank L. LaQue** of International Nickel set up long-term marine test sites at Kure Beach and Wrightsville Beach, North Carolina, whose seawater data underpin galvanic series and marine materials selection, and summarised them in *Marine Corrosion: Causes and Prevention* (1975). **Mars G. Fontana** and **Norbert D. Greene**'s *Corrosion Engineering* (1967) organised the subject into the forms of corrosion used in this lesson.
 :::
 
 ## Where this leads
 
-The passivity that saves a stainless is the oxide of [[materials-science/bonding-structure]] and the alloying of [[materials-science/material-families]], the stress-corrosion and hydrogen thresholds are the fracture mechanics of [[materials-science/failure]], the sensitisation of a weld is the precipitation of [[materials-science/phase-transformations]], and the corrosion allowance and the coating life are the economics of [[materials-science/materials-selection]].
+The passivity that saves a stainless steel is the oxide chemistry of [[materials-science/bonding-structure]] and the alloying of [[materials-science/material-families]], the stress-corrosion and hydrogen thresholds are the fracture mechanics of [[materials-science/failure]], the sensitisation of a weld is the precipitation of [[materials-science/phase-transformations]], and the corrosion allowance and the coating life are the economics of [[materials-science/materials-selection]].
 
 ::: summary
-- Corrosion is thermodynamically inevitable; the Pourbaix diagram says what is possible and never what happens, and gives no rate.
-- Passivity requires an oxide with a Pilling-Bedworth ratio of 1 to 2 that is insoluble, and only $\mathrm{Al_2 O_3}$, $\mathrm{Cr_2 O_3}$, $\mathrm{SiO_2}$ and $\mathrm{TiO_2}$ qualify.
-- The rate is a Faraday conversion: $1\ \mu\mathrm{A / cm^{2}}$ is $11.6\ \mu\mathrm{m / yr}$ on iron, and a passive film passes $10^{- 8}\ \mathrm{A / m^{2}}$.
-- Most aqueous corrosion is cathodically controlled, so the area ratio and the oxygen supply set the damage, not the potential difference.
+- Corrosion is thermodynamically favoured; the Pourbaix diagram says what is possible, never how fast.
+- Passivity requires a thin, adherent, poorly soluble, poorly conducting oxide; $\mathrm{Cr_2 O_3}$, $\mathrm{Al_2 O_3}$, $\mathrm{SiO_2}$ and $\mathrm{TiO_2}$ are the films that make alloys corrosion-resistant, and the Pilling-Bedworth ratio is only a first guide.
+- The rate is a Faraday conversion: $1\ \mu\mathrm{A / cm^{2}}$ is $11.6\ \mu\mathrm{m / yr}$ on iron, and passive alloys pass about $10^{-5}$ to $10^{-3}\ \mathrm{A / m^{2}}$.
+- Much aqueous corrosion is cathodically controlled, so the area ratio and the oxygen supply set the damage, not the potential difference alone.
 - Localised attack — pit, crevice, grain boundary, dealloying — is where the failures are, and a crevice is always worse than the open surface.
-- Stress-corrosion cracking needs material, environment and stress together, and the stress is usually residual.
-- A coating's life is set by its surface preparation and its holidays, and a holiday is a failure.
-- Cathodic protection is a coating specification: a $99\ \%$-coated structure needs a hundredth of the current.
-- Most corrosion failures are design failures — a crevice, a dead leg, a graphite gasket, a coated anode — and are free to design out.
+- Stress-corrosion cracking needs material, environment and stress together, and the stress is often residual.
+- A coating's life is set by its surface preparation and its holidays.
+- Cathodic protection is also a coating specification: a $99\ \%$-coated structure needs about a hundredth of the current.
+- Many corrosion failures are design failures — a crevice, a dead leg, a graphite gasket, a coated anode — and are cheapest to design out.
 :::
 
 ::: quiz
@@ -418,119 +413,126 @@ A stainless steel pipe is found perforated under a bolted clamp, the rest of the
 - [ ] Erosion-corrosion at the clamp
 - [ ] Microbiologically-influenced corrosion
 ::: solution
-The first option. Under the clamp the dissolved oxygen is consumed by the cathodic reaction and cannot diffuse back in, so the gap becomes the anode of a differential-aeration cell; the ferrous ions that form hydrolyse to give a local pH near 2 and the chloride migrates in as the counter-ion, giving an autocatalytic ferrous-chloride solution that eats metal while the large external surface, at a potential $300\ \mathrm{mV}$ more noble, carries the cathodic reaction. General thinning would have attacked the whole surface; the untouched surface outside the clamp is the diagnostic.
+The first option. Under the clamp the dissolved oxygen is consumed and cannot diffuse back in, so the gap becomes the anode of a differential-aeration cell; the metal ions formed there hydrolyse and acidify the solution, chloride migrates in, and the acidic chloride solution keeps the gap active while the large, still-passive external surface carries the cathodic reaction. General thinning would have attacked the whole surface; the untouched surface outside the clamp is the diagnostic.
 :::
 :::
 
 ## Exercises
 
 ::: exercise Faraday {level=1 check="11.6"}
-A corrosion current of $1\ \mu\mathrm{A / cm^{2}}$ on iron corresponds to what penetration rate in micrometres per year?
+A corrosion current density of $1\ \mu\mathrm{A / cm^{2}}$ on iron corresponds to what penetration rate? (Enter the rate in $\mu\mathrm{m / yr}$ to one decimal place.)
 ::: solution
-$11.6\ \mu\mathrm{m / yr}$.
+$\dot x = iM / (nF\rho) = 10^{-2} \times 0.05585 / (2 \times 96{,}485 \times 7{,}870) = 3.68 \times 10^{-13}\ \mathrm{m/s} = 11.6\ \mu\mathrm{m / yr}$.
 :::
 :::
 
-::: exercise Passivity {level=1 check="1.28"}
-Give the Pilling-Bedworth ratio of alumina on aluminium.
+::: exercise Passivity {level=1 check="1.29"}
+Compute the Pilling-Bedworth ratio of $\mathrm{Al_2 O_3}$ on aluminium, taking $M = 101.96\ \mathrm{g/mol}$ and $\rho = 3.95\ \mathrm{g/cm^3}$ for the oxide and $M = 26.98\ \mathrm{g/mol}$ and $\rho = 2.70\ \mathrm{g/cm^3}$ for the metal. (Enter the ratio to two decimal places.)
 ::: solution
-$1.28$ — slightly expansive, coherent, adherent and insoluble.
+$$
+R_{\mathrm{PB}} = \frac{101.96 / 3.95}{2 \times 26.98 / 2.70} = \frac{25.81}{19.99} = 1.29 ,
+$$
+slightly expansive — a coherent, adherent film.
 :::
 :::
 
 ::: exercise Tafel {level=1 check="118"}
-Give the Tafel slope in millivolts per decade for a one-electron reaction with a transfer coefficient of $0.5$ at $25\ {}^{\circ}\mathrm{C}$.
+Give the Tafel slope $2.303 RT / (\alpha n F)$ for a one-electron reaction with a transfer coefficient of $0.5$ at $25\ {}^{\circ}\mathrm{C}$. (Enter the slope in mV per decade, to the nearest whole number.)
 ::: solution
-$118\ \mathrm{mV}$ per decade.
+$2.303 \times 8.314 \times 298.15 / (0.5 \times 96{,}485) = 0.118\ \mathrm{V}$, i.e. $118\ \mathrm{mV}$ per decade.
 :::
 :::
 
 ::: exercise Stainless {level=1 check="60"}
-Above what temperature in degrees Celsius does the chloride stress-corrosion of austenitic stainless become a design concern?
+Above roughly what temperature does chloride stress-corrosion cracking of austenitic stainless steel become a design concern? (Enter the temperature in °C.)
 ::: solution
-About $60\ {}^{\circ}\mathrm{C}$ — the "60 degree rule".
+About $60\ {}^{\circ}\mathrm{C}$ — a widely used rule of thumb; cracking below it is possible where chloride concentrates and stresses are high.
 :::
 :::
 
-::: exercise Anodes {level=1 check="3.6"}
-By what factor does an aluminium sacrificial anode beat a zinc anode per kilogram?
+::: exercise Anodes {level=1 check="140"}
+An aluminium-zinc-indium anode with a practical capacity of $2{,}500\ \mathrm{Ah / kg}$ must deliver a mean current of $2\ \mathrm{A}$ for $20$ years. What mass of anode material is consumed? (Enter the mass in kg, to the nearest whole number.)
 ::: solution
-About $3.6$ — $2{,}680$ against $738\ \mathrm{Ah / kg}$.
+Charge $= 2 \times 20 \times 8{,}760 = 350{,}400\ \mathrm{Ah}$, so $m = 350{,}400 / 2{,}500 = 140\ \mathrm{kg}$. A zinc anode at $780\ \mathrm{Ah / kg}$ would need $449\ \mathrm{kg}$, about $3.2$ times as much — the reason offshore structures use aluminium anodes. A real design adds a utilisation factor, because an anode cannot be consumed completely.
 :::
 :::
 
-::: exercise Coating life {level=2}
-A zinc coating survives 120 years in a C2 rural atmosphere. Give its thickness if the rural zinc corrosion rate is $0.7\ \mu\mathrm{m / yr}$, and its life in a C4 industrial atmosphere at $7\ \mu\mathrm{m / yr}$.
+::: exercise Coating life {level=2 check="12"}
+A zinc coating survives 120 years in a rural atmosphere where zinc corrodes at $0.7\ \mu\mathrm{m / yr}$. What is its thickness, and what is its life in a very aggressive (C5) atmosphere where zinc corrodes at $7\ \mu\mathrm{m / yr}$? (Enter the C5 life in years.)
 ::: solution
-$t = 0.7 \times 120 = 84\ \mu\mathrm{m}$, a typical hot-dip thickness. In C4, $t / 7 = 12\ \mathrm{yr}$.
-*Sanity.* A hundred-fold change in atmosphere gives a ten-fold change in life, because the atmospheric corrosion rate is roughly linear in the $\mathrm{SO_2}$ and chloride deposition. It is why a galvanised transmission tower in a rural setting is a fifty-year design and the same tower in a coastal industrial setting is repainted at fifteen, and why the ISO 9223 category is a **site** classification and not a material one.
+Thickness $= 0.7 \times 120 = 84\ \mu\mathrm{m}$, a typical hot-dip thickness. In C5 the life is $84 / 7 = 12\ \mathrm{yr}$.
+*Sanity.* The life is inversely proportional to the site's zinc corrosion rate, which depends mainly on sulphur dioxide and chloride deposition and on time of wetness. That is why ISO 9223 corrosivity categories classify the **site**, and why the same galvanised structure can last a century inland and need maintenance within a decade or two on an industrial coast.
 :::
 :::
 
 ::: exercise Galvanic {level=2}
-A $2\ \mathrm{cm^{2}}$ patch of bare steel is riveted to a $2\ \mathrm{m^{2}}$ aluminium-alloy panel in marine service. With a couple current density on the aluminium of $0.05\ \mu\mathrm{A / cm^{2}}$, give the penetration rate of the aluminium around the patch.
+A $2\ \mathrm{cm^{2}}$ patch of bare steel is riveted to a $2\ \mathrm{m^{2}}$ aluminium-alloy panel in marine service. With a galvanic current density on the aluminium of $0.05\ \mu\mathrm{A / cm^{2}}$, give the penetration rate of the aluminium. Then estimate the current density on the aluminium if the areas were reversed, taking an oxygen-limited cathodic current density of $10\ \mu\mathrm{A / cm^{2}}$ on the steel.
 ::: solution
-The area ratio is $A_c / A_a = 20{,}000 / 2 = 10{,}000$, so the current density on the **steel** — which is the **cathode** here — is not the problem; the aluminium panel is the anode and its area is the large one.
+Here the steel is the **cathode** ($A_c = 2\ \mathrm{cm^{2}}$) and the aluminium panel the **anode** ($A_a = 20{,}000\ \mathrm{cm^{2}}$), so $A_c / A_a = 10^{-4}$: the small cathode's current is spread over a huge anode.
 $$
-i_{\mathrm{Al}} = 0.05\ \mu\mathrm{A / cm^{2}} \ \Rightarrow\ \dot{x} = 10.9 \times 0.05 = 0.55\ \mu\mathrm{m / yr} .
+i_{\mathrm{Al}} = 0.05\ \mu\mathrm{A / cm^{2}} \ \Rightarrow\ \dot{x} = 10.9 \times 0.05 = 0.54\ \mu\mathrm{m / yr} .
 $$
-*Sanity.* The **large-anode-small-cathode** arrangement is the safe one and gives half a micrometre a year. Reverse it — a $2\ \mathrm{m^{2}}$ steel plate with a $2\ \mathrm{cm^{2}}$ aluminium patch — and the same total current is concentrated a thousand-fold into the aluminium at $0.55\ \mathrm{mm / yr}$. The example is the whole of the area rule in two lines.
+**Reversed** — a $2\ \mathrm{m^{2}}$ steel plate with a $2\ \mathrm{cm^{2}}$ aluminium patch — the total cathodic current is $10 \times 20{,}000 = 2 \times 10^{5}\ \mu\mathrm{A} = 0.2\ \mathrm{A}$, and concentrated on $2\ \mathrm{cm^{2}}$ it gives
+$$
+i_{\mathrm{Al}} = \frac{2 \times 10^{5}}{2} = 10^{5}\ \mu\mathrm{A / cm^{2}} \ \Rightarrow\ \dot{x} \approx 10.9 \times 10^{5}\ \mu\mathrm{m / yr} \approx 1\ \mathrm{m / yr} .
+$$
+In practice the patch polarises and the cathode does not reach its limit everywhere, so the real current is lower, but the patch is still consumed within weeks to months.
+*Sanity.* The **large-anode, small-cathode** arrangement is safe and gives about half a micrometre a year; the reverse concentrates the whole cathode's current onto a tiny anode. The example is the area rule in two lines.
 :::
 :::
 
-::: exercise Concrete {level=2}
-A carbonation front advances at $3\ \mathrm{mm}$ per decade in a $40\ \mathrm{mm}$-cover structure. Give the time to depassivation of the rebar and the time to a visible spall, and comment.
+::: exercise Concrete {level=2 check="160"}
+Carbonation has reached a depth of $10\ \mathrm{mm}$ after $10$ years in a structure with $40\ \mathrm{mm}$ cover. Assuming $x = k \sqrt{t}$, when will the front reach the reinforcement? (Enter the age in years.)
 ::: solution
-The front advances as $x = k \sqrt t$, so $k = 3 / \sqrt{10} = 0.95\ \mathrm{mm / yr^{0.5}}$ and the $40\ \mathrm{mm}$ cover is reached at $t = \left( 40 / 0.95 \right)^{2} = 1{,}800\ \mathrm{yr}$.
-*Sanity.* A $40\ \mathrm{mm}$ cover is therefore a **millennium** design against carbonation in a sheltered exposure — and yet a bridge deck spalls in twenty-five years. The reason is that **chloride**, not carbonation, is the mechanism, and that chloride reaches the $0.4\ \mathrm{kg / m^{3}}$ threshold in a splash-zone deck in ten to twenty years at a $40\ \mathrm{mm}$ cover. The carbonation calculation is a useful check that the cover is not the problem; the chloride calculation is the design.
+$k = 10 / \sqrt{10} = 3.16\ \mathrm{mm / yr^{1/2}}$, and the $40\ \mathrm{mm}$ cover is reached at $t = \left( 40 / 3.16 \right)^{2} = 160\ \mathrm{yr}$.
+*Sanity.* Quadrupling the cover multiplies the time sixteen-fold, so cover is the cheapest durability measure against carbonation. Yet bridge decks treated with de-icing salt can corrode within a few decades, because **chloride**, not carbonation, depassivates the steel there; the carbonation calculation checks one mechanism, and the chloride-ingress calculation is usually the one that governs exposed structures.
 :::
 :::
 
 ::: exercise Derivation {level=3}
-Derive the Faraday penetration-rate conversion from first principles and evaluate it for iron, zinc and aluminium. Then derive the area-ratio rule for a galvanic couple.
+Derive the Faraday penetration-rate conversion from first principles and evaluate it for iron, zinc and aluminium. Then derive the area-ratio rule for a galvanic couple and state when it holds.
 ::: solution
-**The conversion.** A current $i$ over an area $A$ dissolves metal at
+**The conversion.** A current $i$ (A/m²) over an area $A$ dissolves metal at
 $$
-\frac{\mathrm{d} n}{\mathrm{d} t} = \frac{i A}{n F} \quad \Rightarrow \quad \frac{\mathrm{d} m}{\mathrm{d} t} = \frac{i A M}{n F} .
+\frac{\mathrm{d} N}{\mathrm{d} t} = \frac{i A}{n F}\ \mathrm{mol/s} \quad \Rightarrow \quad \frac{\mathrm{d} m}{\mathrm{d} t} = \frac{i A M}{n F} .
 $$
-The penetration rate is the mass rate divided by the area, the density and the time:
+The penetration rate is the volume lost per unit area per unit time:
 $$
-\dot{x} = \frac{1}{\rho} \frac{\mathrm{d} m / \mathrm{d} t}{A} \frac{1}{1} = \frac{i M}{n F \rho} \quad \left[ \mathrm{m / s} \right] \text{ for } i \text{ in } \mathrm{A / m^{2}} .
+\dot{x} = \frac{1}{\rho A} \frac{\mathrm{d} m}{\mathrm{d} t} = \frac{i M}{n F \rho} \quad \left[ \mathrm{m / s} \right] \text{ for } i \text{ in } \mathrm{A / m^{2}} .
 $$
 For iron with $i = 10^{- 2}\ \mathrm{A / m^{2}}$ ($1\ \mu\mathrm{A / cm^{2}}$), $M = 0.05585\ \mathrm{kg / mol}$, $n = 2$, $\rho = 7{,}870\ \mathrm{kg / m^{3}}$:
 $$
-\dot{x} = \frac{10^{- 2} \times 0.05585}{2 \times 96{,}485 \times 7{,}870} = 3.67 \times 10^{- 13}\ \mathrm{m / s}
+\dot{x} = \frac{10^{- 2} \times 0.05585}{2 \times 96{,}485 \times 7{,}870} = 3.68 \times 10^{- 13}\ \mathrm{m / s}
 = 11.6\ \mu\mathrm{m / yr} . \quad \checkmark
 $$
-For zinc, $M / (n \rho) = 0.06538 / (2 \times 7{,}140) = 4.58 \times 10^{- 6}$ against iron's $3.55 \times 10^{- 6}$, giving $15.0\ \mu\mathrm{m / yr}$; for aluminium, $0.02698 / (3 \times 2{,}700) = 3.33 \times 10^{- 6}$, giving $10.9\ \mathrm{\mu m / yr}$.
-**The area rule.** A galvanic couple has one current $I$ and two areas. The cathode's rate is limited by oxygen supply, so $I \approx j_{\mathrm{O_2}} A_c$ where $j_{\mathrm{O_2}}$ is the oxygen-supply-limited current density of about $10$ to $100\ \mu\mathrm{A / m^{2}}$ in still seawater. The anode's penetration rate is therefore
+For zinc, $M / (n \rho) = 0.06538 / (2 \times 7{,}140) = 4.58 \times 10^{- 6}\ \mathrm{m^{3}/mol}$ against iron's $3.55 \times 10^{- 6}$, giving $15.0\ \mu\mathrm{m / yr}$; for aluminium, $0.02698 / (3 \times 2{,}700) = 3.33 \times 10^{- 6}$, giving $10.9\ \mu\mathrm{m / yr}$.
+**The area rule.** A galvanic couple carries one current $I$ through two areas. If the cathodic reaction is oxygen reduction at its diffusion limit, $I \approx j_{\mathrm{O_2}} A_c$, where $j_{\mathrm{O_2}}$ is the limiting current density — of the order of $0.1\ \mathrm{A / m^{2}}$ ($10\ \mu\mathrm{A / cm^{2}}$) in still, aerated seawater. If the anode carries all of it, the anode's penetration rate is
 $$
-\boxed{ \dot{x}_a = \frac{j_{\mathrm{O_2}} M}{n F \rho} \times \frac{A_c}{A_a} } ,
+\boxed{ \dot{x}_a = \frac{j_{\mathrm{O_2}} M}{n F \rho} \times \frac{A_c}{A_a} } .
 $$
-independent of the potential difference and of the exchange current density. **The driving force sets whether the couple acts; the area ratio sets how fast it eats.**
-*Sanity.* The independence from the potential is the fact that surprises every new practitioner and is the reason a **titanium-to-steel** couple and a **copper-to-steel** couple do the same damage at the same area ratio, and why a **copper-nickel** tube in a **steel** tube plate is a design problem however noble the alloy's potential is claimed to be.
+**When it holds.** The result does not contain the potential difference: provided the couple is driven hard enough for the cathode to reach its diffusion limit, the damage is set by the oxygen supply and the area ratio. It fails when the cathode reduces oxygen sluggishly — passive titanium and stainless steel are poorer cathodes than copper — or when the potential difference is too small to polarise the cathode to its limit; then the potential difference and the electrode kinetics matter, and the rule gives an upper bound.
+*Sanity.* With $j_{\mathrm{O_2}} = 10\ \mu\mathrm{A / cm^{2}}$ and $A_c / A_a = 1$, iron would corrode at $116\ \mu\mathrm{m / yr}$ — the order of magnitude observed for bare steel in seawater, which is a check that the limiting-current picture is right.
 :::
 :::
 
 ::: exercise Design {level=3}
 Select the materials and the corrosion control for a lithium-ion battery pack's coolant plate and its loop, and justify against the alternatives.
 ::: solution
-**The environment, and the two requirements that conflict.** A $50\ \%$ ethylene-glycol-water mixture at $- 20$ to $60\ {}^{\circ}\mathrm{C}$ with a carboxylate- or OAT-type inhibitor, electrically **conductive**, in permanent contact with **aluminium** cells and their **aluminium** casing, and required to have **zero** metal-ion contamination because a copper or iron ion plated onto a cell's anode causes an internal short.
+**The environment, and the requirements that conflict.** A water-glycol coolant (typically about $50\ \%$ ethylene glycol) at roughly $- 30$ to $60\ {}^{\circ}\mathrm{C}$ with an organic-acid (OAT) inhibitor package, in contact with the aluminium of the cooling plates; the loop must last the vehicle's life with little maintenance, and because the coolant is electrically conductive and runs close to a high-voltage battery, its conductivity and any leakage path matter for electrical safety.
 **The candidates and their elimination.**
 $$
 \begin{array}{l l}
-\text{Copper or brass} & \text{copper ions migrate and plate on the cell anode; } \textbf{forbidden by the cell chemistry} \\
-\text{Carbon steel} & \text{corrodes in glycol without an inhibitor and the inhibitor depletes; rejected} \\
-\text{304 stainless} & \text{chloride pitting from a single bad coolant fill; and it is a cathode to aluminium} \\
-\text{Aluminium 3003 braze with a sacrificial core} & \text{the automotive answer; a } \mathrm{Zn} \text{ layer and a } \mathrm{Mn} \text{ dispersoid} \\
-\text{PA66-GF or a PPS plastic plate} & \text{no corrosion at all, and the emerging answer} \\
-\text{Titanium} & \text{immune, and 20 times the cost of the aluminium it replaces}
+\text{Copper or brass plate} & \text{good thermally, but dissolved copper plates out on aluminium elsewhere in the loop and pits it} \\
+\text{Carbon steel} & \text{relies wholly on the inhibitor; heavy; rejected} \\
+\text{Stainless steel} & \text{resistant, but heavy, and a cathode to the aluminium parts it touches} \\
+\text{Brazed aluminium (3xxx core, Al-Si clad)} & \text{light, cheap, mass-produced; compatible with modern coolants} \\
+\text{Polymer (e.g. glass-filled PA or PPS)} & \text{no corrosion, but poor thermal conductivity; used for manifolds and under development for plates} \\
+\text{Titanium} & \text{immune, but many times the cost}
 \end{array}
 $$
-**Choice: an aluminium braze — a 3003-1 core with an $\mathrm{Al\text{-}Si}$ braze cladding and a **zinc-rich** wash-coat — with an OAT coolant containing no silicate, no borate, no nitrite and no amine, and a **plastic** expansion tank.**
-**The four design problems.** **Galvanic between the plate and the cell housing**: both aluminium, but different alloys and different tempers, and a $100\ \mathrm{mV}$ couple in a hot glycol is enough to pit a braze seam; the fix is a **conductive but insulating** thermal pad and a **fastener** that does not pierce the cladding. **Erosion-corrosion at the inlet of a cast manifold**: the glycol at $2\ \mathrm{m / s}$ with a $5\ \%$ air entrainment strips a braze surface; the fix is a **radiused inlet** and a **velocity of $1\ \mathrm{m / s}$** at the manifold. **Cavitation at the pump**: a small centrifugal pump at a low NPSH cavitates and eats the impeller and the plate; the fix is a **magnetic-drive** or a **regenerative** pump and a **pressurised** suction. **Inhibitor depletion**: an OAT inhibitor protects by forming a carboxylate film on the aluminium, and the film is consumed by the copper of the radiator's solder and by the brass of a heater core; the fix is **no copper and no brass anywhere in the loop**, and a **coolant test strip** in the service schedule.
-**The galvanic isolation of the high-voltage system.** A coolant that is electrically conductive bridging a $400\ \mathrm{V}$ cell stack to an aluminium housing is a shock and an arc hazard, so the loop is designed with a **resistive** path — a long narrow tube, a plastic section, or a **coolant with a specified conductivity of $< 1{,}500\ \mu\mathrm{S / cm}$** — and a **insulation-resistance** test is a production check.
+**Choice: a brazed aluminium plate** — a 3xxx-series core with Al-Si braze cladding, with a sacrificial zinc-enriched layer or core design on the coolant side so that any pitting spreads laterally instead of perforating — with an aluminium-compatible OAT coolant and **no copper or brass anywhere in the loop**.
+**The four design problems.** **Galvanic contact**: keep dissimilar metals out of the wetted loop, and isolate aluminium plates from steel or copper components with thermally conductive, electrically insulating interfaces. **Erosion-corrosion and cavitation**: limit velocities at inlets and manifolds, round inlet edges, and give the pump adequate suction pressure. **Inhibitor depletion**: OAT inhibitors protect aluminium by adsorbing on it and are slowly consumed; specify the coolant and its service-life checks. **Electrical safety**: specify a coolant of controlled, low conductivity and verify insulation resistance between the high-voltage system and the cooling circuit in production.
 
-*Design comment.* The general rule is that **a corrosion specification written for a chemical plant is the wrong specification for a battery**, because the constraint is not the metal's life but the **ion's purity**, and because the design life is fifteen years with no maintenance. The answer is not a better alloy but a **plastic** coolant plate, and the industry is moving there for exactly this reason: the corrosion problem is designed out rather than managed.
+*Design comment.* A corrosion specification written for a chemical plant is the wrong one for a battery: the constraints are a long, maintenance-free life, compatibility of every wetted metal with aluminium, and electrical isolation, so the answer is chosen as a system — plate alloy, braze, coolant chemistry and loop materials together — rather than as a single alloy.
 :::
 :::

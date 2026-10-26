@@ -3,7 +3,7 @@ One test produces almost every number on a materials data sheet. A cylindrical b
 This lesson sorts the conventions from the properties and puts the mechanics around them: why the yield point is defined at $0.2\ \%$ offset and not at anything else, why the ultimate tensile strength is a **necking** instability rather than a fracture stress, why hardness is a strength and what it costs to say so, why two clean pieces of metal weld together on contact and why the friction force is proportional to the load, and why a material that is tough in the Charpy test can be brittle in the structure.
 
 ::: warning The tensile test measures four things and the datasheet lists forty
-Every number in a metals handbook is a tensile test done at one strain rate, one temperature, one specimen geometry and one definition of yield, on a material of one particular temper, and the same alloy from the next heat differs by ten per cent. Three traps follow. **The ultimate tensile strength is not a fracture stress** — it is the stress at which the bar becomes geometrically unstable, and the true stress at that point is higher by the factor $\left( 1 + \epsilon_u \right)$; designing to the UTS of a ductile metal is conservative by that factor and the conservatism is wasted, because the metal has already necked. **Elongation and reduction of area are not material properties** — they depend on the gauge length and the specimen diameter, and a $50\ \mathrm{mm}$-gauge elongation of $25\ \%$ becomes $35\ \%$ on an $8\ \mathrm{mm}$ gauge of the same bar, which is why a specification that quotes "elongation" without the gauge length is unenforceable. And **strength and ductility trade**, so a datasheet that lists a high strength and a high elongation for the same condition has usually taken the strength from one specimen and the elongation from another. Where the trade must be quantified, the number to ask for is not either property but the product, or the **formability** — the forming-limit diagram, the $n$-value and the $r$-value — which are measured for the purpose and mean what they say.
+Every number in a metals handbook is a tensile test done at one strain rate, one temperature, one specimen geometry and one definition of yield, on a material of one particular temper, and the same alloy from the next heat differs by ten per cent. Three traps follow. **The ultimate tensile strength is not a fracture stress** — it is the stress at which the bar becomes geometrically unstable, and the true stress at that point is higher by the factor $\left( 1 + e_u \right)$, $e_u$ being the engineering uniform elongation, and the true stress at fracture is higher still. **Elongation and reduction of area are not material properties** — they depend on the gauge length and the specimen diameter, and because the neck contributes a fixed extension, the same bar shows a larger elongation on a short gauge than on a long one, which is why a specification that quotes "elongation" without the gauge length is unenforceable. And **strength and ductility trade**, so a high strength and a high elongation quoted for the same alloy should be checked to refer to the same temper and the same specimen. Where the trade must be quantified, the number to ask for is not either property but the product, or the **formability** — the forming-limit diagram, the $n$-value and the $r$-value — which are measured for the purpose and mean what they say.
 :::
 
 ## The tensile test
@@ -20,7 +20,7 @@ $$
 \sigma_{\mathrm{true}} = \sigma_{\mathrm{eng}} \left( 1 + \epsilon_{\mathrm{eng}} \right), \qquad
 \epsilon_{\mathrm{true}} = \ln \left( 1 + \epsilon_{\mathrm{eng}} \right) ,
 $$
-and after necking **neither pair is valid** without a correction for the triaxial stress state in the neck — the Bridgman correction, which reduces the true stress by up to ten per cent at the point of fracture. The reduction of area
+and after necking **neither pair is valid** without a correction for the triaxial stress state in the neck — the Bridgman correction, which reduces the true stress at fracture by ten per cent or more. The reduction of area
 $$
 \mathrm{RA} = \frac{A_0 - A_f}{A_0}
 $$
@@ -28,7 +28,7 @@ is the one ductility measure that is genuinely local and genuinely independent o
 :::
 
 ::: definition Yield, and why it is defined at $0.2\ \%$ {#def-yield}
-For a material without a sharp yield point, the **proof stress** $\sigma_{0.2}$ is the stress at which a load-and-unload cycle leaves $0.2\ \%$ of permanent strain. The choice of $0.2\ \%$ is a convention with no deeper justification than that it is large enough to measure reliably on an extensometer of 1920s vintage and small enough to be near the proportional limit; the aluminium industry also quotes $\sigma_{0.1}$ and $\sigma_{0.5}$, and the two differ by five to ten per cent.
+For a material without a sharp yield point, the **proof stress** $\sigma_{0.2}$ is the stress at which a load-and-unload cycle leaves $0.2\ \%$ of permanent strain. The choice of $0.2\ \%$ is a convention: large enough to measure reliably with a clip-on extensometer and small enough to be near the onset of plastic flow. Other offsets ($\sigma_{0.1}$, $\sigma_{0.5}$, or a total-strain definition) are also used, and for a strongly work-hardening alloy they can differ by several per cent.
 Mild steel is the exception: it shows an **upper and lower yield point** because interstitial carbon and nitrogen atoms pin dislocations by forming Cottrell atmospheres, and once a dislocation breaks away it moves at a lower stress. The consequence is a load drop and a **Lüders band** that propagates along the bar at nearly constant load, giving up to $5\ \%$ of strain at constant stress — the mechanism of the stretcher strains and Lüders lines that ruin a car door panel, and the reason a skin-pass or temper-rolling pass is given to sheet steel before forming.
 :::
 
@@ -38,16 +38,16 @@ $$
 \sigma_{\mathrm{true}} = K \epsilon_{\mathrm{true}}^{n} \qquad \text{or} \qquad
 \sigma_{\mathrm{true}} = \sigma_y + K \epsilon_{p}^{n} ,
 $$
-with $n$ the strain-hardening exponent, typically $0.5$ for annealed copper, $0.25$ for austenitic stainless, $0.15$ for a mild steel, $0.1$ for a high-strength aluminium sheet and $0.02$ for a fully aged precipitation-hardened alloy. The strain-rate sensitivity is
+with $n$ the strain-hardening exponent, typically about $0.5$ for annealed copper, $0.45$ for annealed austenitic stainless steel, $0.2$ for an annealed low-carbon steel, $0.1$ for a high-strength aluminium alloy in the peak-aged temper, and only a few hundredths for a heavily cold-worked metal. The strain-rate sensitivity is
 $$
 m = \frac{\partial \ln \sigma}{\partial \ln \dot{\epsilon}} \Big|_{\epsilon , T} ,
 $$
-with $m \approx 0.005$ for a BCC metal at room temperature, $0.01$ for an FCC metal, $0.2$ for a superplastic fine-grained alloy and $0.02$ to $0.3$ for polymers above their glass transition.
+with $m \approx 0.005$ for an FCC metal at room temperature, $0.01$ to $0.02$ for a BCC metal, $0.3$ to $0.8$ for a superplastic fine-grained alloy at its forming temperature and $0.02$ to $0.3$ for polymers above their glass transition.
 **Considère's criterion** states that a tensile bar becomes unstable when
 $$
 \frac{\mathrm{d} \sigma_{\mathrm{true}}}{\mathrm{d} \epsilon_{\mathrm{true}}} = \sigma_{\mathrm{true}} ,
 $$
-which for $\sigma = K \epsilon^{n}$ gives the elegant result $\epsilon_u = n$: **the strain-hardening exponent is the uniform elongation**, and a metal with $n = 0.1$ cannot be drawn more than ten per cent no matter how good the press, the lubricant or the operator.
+which for $\sigma = K \epsilon^{n}$ gives the elegant result $\epsilon_u = n$: **the strain-hardening exponent is the uniform elongation**, and a metal with $n = 0.1$ cannot be stretched uniformly in uniaxial tension beyond a true strain of $0.1$, however carefully the test is run.
 :::
 
 ::: proof The Considère criterion {#proof-considere}
@@ -61,11 +61,11 @@ Constant volume gives $\mathrm{d} V = 0$, so $\mathrm{d} A / A + \mathrm{d} l / 
 $$
 \boxed{ \frac{\mathrm{d} \sigma}{\mathrm{d} \epsilon} = \sigma } \quad \text{at the ultimate tensile strength} . \quad \checkmark
 $$
-**The consequences.** For $\sigma = K \epsilon^{n}$, $\mathrm{d} \sigma / \mathrm{d} \epsilon = n K \epsilon^{n - 1} = \sigma$ gives $\epsilon_u = n$ exactly, which is why $n$ is called the **tensile-test forming-limit exponent** and why a deep-drawing quality steel is specified by its $n$-value and its plastic-strain ratio $r$ rather than by its strength. For a material with rate sensitivity, the criterion becomes
+**The consequences.** For $\sigma = K \epsilon^{n}$, $\mathrm{d} \sigma / \mathrm{d} \epsilon = n K \epsilon^{n - 1} = \sigma$ gives $\epsilon_u = n$ exactly, which is why sheet for stretch forming is specified by its $n$-value and sheet for deep drawing by its plastic-strain ratio $r$ as well as its strength. For a material with rate sensitivity, Hart's analysis gives the onset of unstable necking as
 $$
-\frac{\mathrm{d} \sigma}{\mathrm{d} \epsilon} = \frac{\sigma}{1 + m} ,
+\frac{1}{\sigma} \frac{\mathrm{d} \sigma}{\mathrm{d} \epsilon} + m = 1 ,
 $$
-so a superplastic material with $m = 0.5$ necks at three times the strain-hardening rate and can be stretched by several hundred per cent — the whole of the superforming industry in one term of an equation. And for a material whose curve is **flat**, $n = 0$, the criterion is met at yield: it cannot work-harden at all, it necks immediately, and it has no useful tensile ductility.
+so a positive $m$ delays the instability, and above all a high $m$ makes a neck grow only slowly once it has formed, because the faster-straining neck becomes stronger. A superplastic alloy with $m \approx 0.5$ can be stretched by several hundred per cent — the basis of superplastic forming. And for a material whose curve is **flat**, $n = 0$, the criterion is met at yield: it cannot work-harden at all, it necks immediately, and it has no useful tensile ductility.
 :::
 
 ::: widget plot
@@ -73,7 +73,7 @@ f: x^0.5; x^0.15; x^0.02
 x: 0.02, 1.0
 y: 0, 1.05
 labels: n = 0.50; n = 0.15; n = 0.02
-caption: True stress against true plastic strain for three strain-hardening exponents, all normalised to the same stress at $\epsilon = 1$. The straight line from the origin to each curve's end is the construction of the Considère criterion: instability occurs where the slope equals the stress, which for a power law is at $\epsilon = n$. The copper curve is still rising at a strain of one; the aged-alloy curve with $n = 0.02$ has already peaked at a strain of two per cent and necks immediately.
+caption: True stress against true plastic strain for three strain-hardening exponents, all normalised to the same stress at $\epsilon = 1$. By the Considère criterion a power-law material becomes unstable where the slope of its curve falls to the stress, which is at $\epsilon = n$: the $n = 0.5$ curve (annealed copper) keeps hardening steeply and necks only at a true strain of $0.5$, while the nearly flat $n = 0.02$ curve necks at two per cent.
 :::
 
 ## Hardness, contact and friction
@@ -88,8 +88,8 @@ The three scales overlap by design: Brinell with a $10\ \mathrm{mm}$ hardened-st
 $$
 \sigma_{\mathrm{UTS}} \approx 3.2\ \mathrm{HV}\ \left[ \mathrm{MPa} \right]
 $$
-is good to ten per cent up to about $1400\ \mathrm{MPa}$ and fails above it, because a very hard steel fractures under the indentor and the hardness reads low.
-**The catch is the indentation size effect.** Below a few micron of indentor diagonal the measured hardness **rises**, because the geometrically necessary dislocations required to accommodate the strain gradient cost energy that a coarse-grained specimen does not pay. A microhardness measurement of a case depth is therefore not comparable with a macrohardness measurement of the same case, and a specification that mixes the two is unenforceable.
+is good to about ten per cent for ductile steels and becomes unreliable for very hard steels, whose tensile strength is limited by brittle fracture rather than by plastic flow.
+**The catch is the indentation size effect.** For indents a few micrometres across or smaller the measured hardness **rises**, because the steep strain gradient beneath a small indent requires extra geometrically necessary dislocations, which harden the material locally. A microhardness measurement of a case depth is therefore not comparable with a macrohardness measurement of the same case, and a specification that mixes the two is unenforceable.
 :::
 
 ::: definition Hertzian contact {#def-hertz}
@@ -109,21 +109,22 @@ F = \tau A_{\mathrm{real}} = \frac{\tau}{H} W
 \quad\Longrightarrow\quad
 \mu = \frac{\tau}{H} .
 $$
-For steel on steel $H \approx 3\ \mathrm{GPa}$ and the interfacial shear strength $\tau \approx 1\ \mathrm{MPa}$ to $300\ \mathrm{MPa}$ depending on whether the surfaces are oxidised, lubricated or clean, giving $\mu$ from $0.003$ to $0.1$ for a lubricated pair and $0.4$ to $1.0$ for clean metal, where the junctions are full-welded. A $100\ \mathrm{N}$ load on steel of $3\ \mathrm{GPa}$ hardness gives a real contact area of $33\ \mathrm{mm^{2}}$ — a third of a nominally flat $10\ \mathrm{mm}$-square face, and enough that two clean metal surfaces in vacuum **cold weld** and cannot be pulled apart, which is why every space mechanism uses a bonded-solid lubricant, a soft-metal plating or a polymer.
+For steel on steel $H \approx 3\ \mathrm{GPa}$ and the interfacial shear strength $\tau \approx 1\ \mathrm{MPa}$ to $300\ \mathrm{MPa}$ depending on whether the surfaces are oxidised, lubricated or clean, giving $\mu = \tau / H$ from below $0.001$ to $0.1$. The simple model underestimates $\mu$ for unlubricated metal (typically $0.4$ to $0.8$ in air) because the junctions grow when a tangential force is added to the normal one; in vacuum, with the surface films removed, this junction growth is unchecked and clean metals **cold weld**. A $100\ \mathrm{N}$ load on steel of $3\ \mathrm{GPa}$ hardness gives a real contact area of only $100 / 3 \times 10^{9}\ \mathrm{m^{2}} = 0.033\ \mathrm{mm^{2}}$ — a three-thousandth of a nominally flat $10\ \mathrm{mm}$-square face. Because clean junctions weld, space mechanisms use solid lubricants, soft-metal platings or polymers.
 :::
 
 ::: example A tensile curve read completely {#ex-curve}
-A $12.8\ \mathrm{mm}$-diameter, $50\ \mathrm{mm}$-gauge mild-steel specimen gives: proportional limit $210\ \mathrm{MPa}$, lower yield $250\ \mathrm{MPa}$, maximum load $53\ \mathrm{kN}$, fracture at $38\ \mathrm{kN}$ with a final gauge length of $64\ \mathrm{mm}$ and a final diameter of $7.9\ \mathrm{mm}$. Report every property and say which of them are not properties.
+A $12.8\ \mathrm{mm}$-diameter, $50\ \mathrm{mm}$-gauge mild-steel specimen gives: proportional limit $210\ \mathrm{MPa}$ at a strain of $0.105\ \%$, lower yield $250\ \mathrm{MPa}$, maximum load $53\ \mathrm{kN}$, fracture at $38\ \mathrm{kN}$ with a final gauge length of $64\ \mathrm{mm}$ and a final diameter of $7.9\ \mathrm{mm}$. Report every property and say which of them are not properties.
 ::: solution
-**Areas.** $A_0 = \pi \times 6.4^{2} = 128.7\ \mathrm{mm^{2}}$, $A_f = \pi \times 3.95^{2} = 48.9\ \mathrm{mm^{2}}$.
+**Areas.** $A_0 = \pi \times 6.4^{2} = 128.7\ \mathrm{mm^{2}}$, $A_f = \pi \times 3.95^{2} = 49.0\ \mathrm{mm^{2}}$.
 **Modulus.** $E = 210 / 0.00105 = 200\ \mathrm{GPa}$ from the proportional limit at $0.105\ \%$ strain. A property.
 **Yield.** $\sigma_y = 250\ \mathrm{MPa}$ at the lower yield point. A property of this heat and temper.
 **Ultimate.** $\sigma_{\mathrm{UTS}} = 53{,}000 / 128.7 = 412\ \mathrm{MPa}$.
-**Uniform strain.** At the ultimate, $\sigma_{\mathrm{true}} = 412 \times \left( 1 + \epsilon_u \right)$ and by Considère $\sigma_{\mathrm{true}} = K \epsilon_u^{n}$ with $\epsilon_u = n$; taking $n = 0.24$ gives $\epsilon_u = 0.24$ and $\sigma_{\mathrm{true}, u} = 511\ \mathrm{MPa}$.
-**Fracture.** $\epsilon_f = \ln \left( 64 / 50 \right) = 0.241$ of true strain, so the post-necking strain is $\epsilon_f - \epsilon_u = 0$ — the specimen fractured almost immediately on necking, which is unusual and points to an inclusion population or a hydrogen effect.
-**Reduction of area.** $\mathrm{RA} = \left( 128.7 - 48.9 \right) / 128.7 = 62\ \%$, which is genuinely ductile and contradicts the elongation.
+**Uniform strain.** By Considère the true uniform strain equals $n$; taking $n = 0.20$, typical of an annealed mild steel, gives $\epsilon_u = 0.20$, an engineering uniform elongation $e_u = \mathrm{e}^{0.20} - 1 = 22\ \%$, and a true stress at maximum load $\sigma_{\mathrm{true}, u} = 412 \times 1.221 = 503\ \mathrm{MPa}$. Not measured here, so an estimate.
+**Elongation.** $\left( 64 - 50 \right) / 50 = 28\ \%$ on a $50\ \mathrm{mm}$ gauge, a gauge-average true strain of $\ln \left( 64 / 50 \right) = 0.247$. Of the $14\ \mathrm{mm}$ extension, about $11\ \mathrm{mm}$ ($22\ \%$) is uniform and the rest is the neck. **Not a property**: it depends on the gauge length.
+**Reduction of area.** $\mathrm{RA} = \left( 128.7 - 49.0 \right) / 128.7 = 62\ \%$, a local true fracture strain of $\ln \left( 128.7 / 49.0 \right) = 0.97$.
+**Fracture stresses.** Engineering $38{,}000 / 128.7 = 295\ \mathrm{MPa}$, which is not a property of anything; true $38{,}000 / 49.0 = 776\ \mathrm{MPa}$ before the Bridgman correction.
 
-*Check.* The elongation is $\left( 64 - 50 \right) / 50 = 28\ \%$; the true fracture strain from the areas is $\ln \left( 128.7 / 48.9 \right) = 0.968$, which is four times the gauge-length strain. $\checkmark$
+*Check.* The local fracture strain $0.97$ is $3.9$ times the gauge-average $0.247$ — the neck, not the gauge, is where the ductility is. $\checkmark$
 
 *Sanity.* The contradiction between a $62\ \%$ reduction of area and a $28\ \%$ elongation is not a contradiction: the reduction is **local** at the fracture and the elongation is **averaged** over $50\ \mathrm{mm}$, and a specimen that necks early and hard has a large RA and a modest elongation. This is why a specification for a pressure-vessel forging quotes the reduction of area and a specification for a car body panel quotes the elongation and the $n$-value — the first cares whether the material tears, the second cares where it thins.
 :::
@@ -132,66 +133,64 @@ A $12.8\ \mathrm{mm}$-diameter, $50\ \mathrm{mm}$-gauge mild-steel specimen give
 ::: example Contact stress and the depth of a case {#ex-hertz}
 A $10\ \mathrm{mm}$-radius steel ball presses on a flat of the same steel, $E = 207\ \mathrm{GPa}$, $\nu = 0.3$, with $100\ \mathrm{N}$. Find the contact radius, the peak pressure and the maximum shear stress, and compare it with the shear yield of a $60\ \mathrm{HRC}$ bearing steel.
 ::: solution
-**Equivalent properties.** $R^{*} = 5\ \mathrm{mm}$ and
+**Equivalent properties.** For a ball on a flat $1 / R^{*} = 1 / R + 1 / \infty$, so $R^{*} = 10\ \mathrm{mm}$, and
 $$
 E^{*} = \left[ \frac{2 \left( 1 - 0.09 \right)}{207} \right]^{- 1} = 114\ \mathrm{GPa} .
 $$
 **Contact radius.**
 $$
-a = \left( \frac{3 \times 100 \times 0.005}{4 \times 114 \times 10^{9}} \right)^{1 / 3} = 149\ \mu\mathrm{m} .
+a = \left( \frac{3 \times 100 \times 0.010}{4 \times 114 \times 10^{9}} \right)^{1 / 3} = 188\ \mu\mathrm{m} .
 $$
 **Peak pressure.**
 $$
-p_0 = \frac{3 \times 100}{2 \pi \times 149^{2} \times 10^{- 12}} = 2.16\ \mathrm{GPa} .
+p_0 = \frac{3 \times 100}{2 \pi \times 188^{2} \times 10^{- 12}} = 1.36\ \mathrm{GPa} .
 $$
-**Maximum shear.** $\tau_{\max} = 0.31 p_0 = 0.67\ \mathrm{GPa}$ at a depth of $0.48 a = 71\ \mu\mathrm{m}$.
-**Comparison.** A $60\ \mathrm{HRC}$ through-hardening bearing steel has a yield strength near $2.0\ \mathrm{GPa}$ and a shear yield of $1.15\ \mathrm{GPa}$, so at $100\ \mathrm{N}$ the contact is elastic. At $1000\ \mathrm{N}$ the pressure rises by $10^{1 / 3} = 2.15$ to $4.6\ \mathrm{GPa}$ and the shear to $1.4\ \mathrm{GPa}$ — **the subsurface yields while the surface is still elastic**, and repeated cycling works the yielded layer until a pit forms.
+**Maximum shear.** $\tau_{\max} = 0.31 p_0 = 0.42\ \mathrm{GPa}$ at a depth of $0.48 a = 90\ \mu\mathrm{m}$.
+**Comparison.** A $60\ \mathrm{HRC}$ through-hardening bearing steel has a yield strength near $2.0\ \mathrm{GPa}$ and a shear yield of about $1.15\ \mathrm{GPa}$, so at $100\ \mathrm{N}$ the contact is comfortably elastic. Because $p_0 \propto F^{1 / 3}$, at $1000\ \mathrm{N}$ the pressure rises by $10^{1 / 3} = 2.15$ to $2.93\ \mathrm{GPa}$ and the maximum shear to $0.91\ \mathrm{GPa}$ — still elastic. For a sphere with $\nu = 0.3$ first yield occurs, **below the surface**, when $p_0 = 1.60\ \sigma_y = 3.2\ \mathrm{GPa}$, that is at $F = 100 \times \left( 3.2 / 1.36 \right)^{3} \approx 1300\ \mathrm{N}$; above that load **the subsurface yields while the surface is still elastic**.
 
-*Check.* The contact is elastic while $p_0 < 3.7\ \sigma_y$, the classical shakedown limit for a Hertzian contact on a ductile metal; with $\sigma_y = 2.0\ \mathrm{GPa}$ that gives $p_0 = 7.4\ \mathrm{GPa}$, well above the $4.6\ \mathrm{GPa}$ reached at $1000\ \mathrm{N}$, so the correct verdict is that this contact **shakes down** and does not yield cumulatively. $\checkmark$
+*Check.* Yielding on the first pass is not yet failure. For repeated rolling of a point contact on an elastic-perfectly-plastic material the shakedown limit is about $p_0 = 4.7 k = 4.7 \sigma_y / \sqrt{3} = 2.7\ \sigma_y = 5.4\ \mathrm{GPa}$, reached at $F = 100 \times \left( 5.4 / 1.36 \right)^{3} \approx 6300\ \mathrm{N}$. Between about $1300$ and $6300\ \mathrm{N}$ the first passes yield the subsurface, but the residual stresses they leave make later passes elastic: the contact **shakes down**. Above $6300\ \mathrm{N}$ every pass adds plastic strain and the subsurface ratchets towards a pit. $\checkmark$
 
-*Sanity.* The shakedown limit of $3.7\ \sigma_y$ assumes an infinite half-space, no defects and no lubricant. Real bearings are limited at a third of it by inclusions, which is why bearing-steel cleanliness ratings — the number of $10\ \mu\mathrm{m}$ inclusions per kilogram — are the property that decides a bearing's $L_{10}$ life and why a vacuum-degassed, electroslag-remelted steel lasts five times as long as an air-melted one of identical composition. And the $0.7\ \mathrm{mm}$ case depth of a carburised gear exists because the Hertzian shear maximum in a gear contact of $1.5\ \mathrm{GPa}$ lies $0.3$ to $0.5\ \mathrm{mm}$ down, where a $0.1\ \mathrm{mm}$ case would leave soft core beneath and the case would collapse into it.
+*Sanity.* These limits assume a smooth, defect-free half-space. Real rolling bearings run at much lower contact pressures in service, and their fatigue life is governed by subsurface cracks starting at non-metallic inclusions, which is why bearing-steel cleanliness ratings matter so much and why vacuum-degassed or remelted bearing steels last considerably longer than air-melted ones of the same composition. And the $0.7\ \mathrm{mm}$ case depth of a carburised gear exists because the Hertzian shear maximum in a gear contact of $1.5\ \mathrm{GPa}$ lies $0.3$ to $0.5\ \mathrm{mm}$ down, where a $0.1\ \mathrm{mm}$ case would leave soft core beneath and the case would collapse into it.
 :::
 :::
 
 ::: example Friction, real area and cold welding {#ex-friction}
 Two clean steel flats of apparent area $100\ \mathrm{mm^{2}}$ carry $100\ \mathrm{N}$. Give the real contact area, the mean junction pressure and the force to slide them, in vacuum and in air.
 ::: solution
-**Real area.** With $H = 3\ \mathrm{GPa}$, $A_{\mathrm{real}} = W / H = 100 / 3 \times 10^{9} = 33\ \mathrm{mm^{2}}$ — a third of the apparent area, because a lapped flat really is that flat.
-**Junction pressure.** Every junction is at the hardness, $3\ \mathrm{GPa}$, whatever the load.
-**In air.** Adsorbed oxide and hydrocarbon films are a few nanometres thick and shear at $\tau \approx 20\ \mathrm{MPa}$, so
+**Real area.** With $H = 3\ \mathrm{GPa}$, $A_{\mathrm{real}} = W / H = 100 / \left( 3 \times 10^{9} \right) = 3.3 \times 10^{- 8}\ \mathrm{m^{2}} = 0.033\ \mathrm{mm^{2}}$ — about $0.03\ \%$ of the apparent area, even for flats that look perfectly smooth.
+**Junction pressure.** Every junction is at the hardness, $3\ \mathrm{GPa}$, whatever the load; more load makes more junctions, not more pressure.
+**In air.** The simplest Bowden–Tabor estimate takes the junctions to shear at the shear yield strength of the steel. With $H \approx 3 \sigma_y$, $\sigma_y \approx 1\ \mathrm{GPa}$ and $\tau = \sigma_y / \sqrt{3} = 0.58\ \mathrm{GPa}$,
 $$
-F = \tau A_{\mathrm{real}} = 20 \times 10^{6} \times 33 \times 10^{- 6} = 0.66\ \mathrm{N}, \qquad \mu = 0.007 .
+F = \tau A_{\mathrm{real}} = 0.58 \times 10^{9} \times 3.3 \times 10^{- 8} = 19\ \mathrm{N}, \qquad \mu = \frac{\tau}{H} = \frac{1}{3 \sqrt{3}} = 0.19 .
 $$
-**In vacuum.** Bake the surfaces, and the films desorb, the junctions become metal-metal bonds with $\tau$ approaching $H / \sqrt{3} = 1.7\ \mathrm{GPa}$, and
-$$
-F = 1.7 \times 10^{9} \times 33 \times 10^{- 6} = 56\ \mathrm{kN},
-$$
-five hundred times the applied load. The joint does not slide; it is a weld.
+Measured values for unlubricated steel in air are higher, about $0.5$ to $0.8$, because the junctions grow under the combined normal and tangential load until the oxide film at the interface gives way in shear.
+**In vacuum.** Clean the surfaces in ultra-high vacuum and the films are gone: the junctions are metal-to-metal bonds, junction growth is no longer limited by a weak interface film, and $\mu$ rises well above $1$. The surfaces seize; the contact is a cold weld.
 
-*Check.* The measured coefficient of friction for clean steel on steel in vacuum is $3$ to $10$ rather than the $0.6$ of air, and the transition happens as the vacuum improves past $10^{- 5}\ \mathrm{mbar}$, which is the pressure at which a monolayer of gas forms in a few seconds rather than a few hours. $\checkmark$
+*Check.* A surface only stays clean in a good vacuum: at $10^{- 6}\ \mathrm{mbar}$ a monolayer of gas re-adsorbs in about a second, and only near $10^{- 10}\ \mathrm{mbar}$ does it take hours. $\checkmark$
 
-*Sanity.* This is not a laboratory curiosity but the design rule of every space mechanism, and the reason stainless-on-stainless bearings and slip rings in vacuum seize, and the fix is a **solid lubricant** — $\mathrm{MoS_2}$, $\mathrm{WS_2}$ or diamond-like carbon, a few hundred nanometres, which shears at $\tau \approx 5\ \mathrm{MPa}$ and gives $\mu \approx 0.02$ in vacuum because, unlike a graphite grease, a lamellar solid does not need adsorbed water to work. The same physics is why a bolted flange is lubricated on its threads — not to make it easier to turn but to make the **preload** predictable, since a $\mu$ of $0.15$ against $0.25$ changes the torque-tension relation by forty per cent and an under-preloaded flange leaks.
+*Sanity.* This is not a laboratory curiosity but the design rule of every space mechanism, and the reason stainless-on-stainless bearings and slip rings in vacuum seize, and the fix is a **solid lubricant** — $\mathrm{MoS_2}$, $\mathrm{WS_2}$ or diamond-like carbon, a few hundred nanometres, which gives $\mu$ of a few hundredths in vacuum. Molybdenum disulphide works best in vacuum and dry gas, whereas graphite needs adsorbed water vapour to lubricate and fails in vacuum. The same physics is why a bolted flange is lubricated on its threads — not to make it easier to turn but to make the **preload** predictable, since most of the tightening torque is spent on thread and under-head friction, so a $\mu$ of $0.25$ instead of $0.15$ gives a much lower preload for the same torque, and an under-preloaded flange leaks.
 :::
 :::
 
 ::: example Property limits and the search for a light stiff panel {#ex-limits}
-A stiff, light, flat panel of given thickness must deflect as little as possible in three-point bending. Rank aluminium, steel, CFRP quasi-isotropic, balsa-core sandwich and a polymer foam, and state where each fails.
+A flat panel of given span and width, loaded in three-point bending, must reach a specified bending stiffness at minimum mass; its thickness is free. Rank steel, aluminium, quasi-isotropic CFRP, GFRP, balsa and a polymer foam, consider a sandwich, and state where each fails.
 ::: solution
-**The index.** For a panel of fixed thickness, fixed span and given stiffness, the deflection is minimised by maximising $E$; for a panel of fixed **mass**, by maximising $E^{1 / 3}$ for a fixed-thickness panel and $E^{1 / 2}$ for a fixed-width beam. The relevant ranking is therefore not $E$ but $E^{1 / 3} / \rho$:
+**The index.** The bending stiffness of the panel is proportional to $E t^{3}$ and its mass to $\rho t$. Fixing the stiffness gives $t \propto E^{- 1 / 3}$, so the mass is proportional to $\rho / E^{1 / 3}$, and the material to choose maximises $E^{1 / 3} / \rho$ (units $\mathrm{GPa^{1/3}\, cm^{3} / g}$):
 $$
 \begin{array}{l c c c}
 \text{Material} & E\ \left[ \mathrm{GPa} \right] & \rho\ \left[ \mathrm{g / cm^{3}} \right] & E^{1 / 3} / \rho \\
-\text{Steel} & 207 & 7.85 & 0.68 \\
-\text{Aluminium} & 69 & 2.70 & 0.75 \\
-\text{CFRP quasi-isotropic} & 50 & 1.55 & 1.35 \\
-\text{GFRP} & 30 & 1.90 & 1.18 \\
-\text{Balsa (end-grain)} & 10 & 0.15 & 14.4
+\text{Steel} & 207 & 7.85 & 0.75 \\
+\text{Aluminium} & 69 & 2.70 & 1.52 \\
+\text{CFRP quasi-isotropic} & 50 & 1.55 & 2.38 \\
+\text{GFRP} & 30 & 1.90 & 1.64 \\
+\text{Balsa (along grain)} & 4 & 0.15 & 10.6 \\
+\text{PVC foam} & 0.1 & 0.10 & 4.6
 \end{array}
 $$
-**The sandwich is not in the ranking and is the answer.** A panel's bending stiffness is $E I$ and $I$ goes as the cube of the thickness, so putting a thin, stiff skin on a thick, light core multiplies the stiffness by the square of the thickness ratio at almost no mass: two $2\ \mathrm{mm}$ skins on a $50\ \mathrm{mm}$ core are **eight hundred times** stiffer than the same mass of solid laminate, at the cost of a shear-limited core and a debonding-prone interface.
+**The sandwich is not in the ranking and is the answer.** A panel's bending stiffness is $E I$ and $I$ goes as the cube of the thickness, so putting thin, stiff skins on a thick, light core raises the stiffness enormously for little extra mass: per unit width, two $2\ \mathrm{mm}$ skins on a $50\ \mathrm{mm}$ core have $I = 2 \left( 2^{3} / 12 + 2 \times 26^{2} \right) = 2707\ \mathrm{mm^{4} / mm}$ against $4^{3} / 12 = 5.3\ \mathrm{mm^{4} / mm}$ for the same skins laid together as a $4\ \mathrm{mm}$ solid laminate — about **five hundred times** stiffer, before the core's own (small) mass is counted, at the cost of a shear-limited core and a debonding-prone interface. Balsa and foam rank highest on the index precisely because they are low-density, and their place is as the core.
 **Where each fails.** Steel yields at $350\ \mathrm{MPa}$ and is heavy. Aluminium is isotropic, cheap and fatigue-notch-sensitive. CFRP is anisotropic, so the panel is stiff in the fibre directions and soft in the transverse, and it fails by **delamination** after a tool drop, which is invisible from outside. Balsa and foam cores crush under a point load and absorb water at a cut edge.
 
-*Sanity.* The index arithmetic is right and the ranking is right, and it is the reason an aircraft wing skin is a CFRP laminate on a spar rather than a steel plate, and the reason a wind-turbine blade is a CFRP spar cap on a balsa or PET-foam core. What the index does not capture is **damage**: a steel panel that is dented is still ninety per cent of its strength, and a CFRP panel that is dented may be thirty per cent, which is why every composite structure carries a damage-tolerance specification, a tap-test or a thermography inspection, and a maximum permissible delamination size.
+*Sanity.* The index arithmetic is right and the ranking is right, and it is the reason an aircraft wing skin is a CFRP laminate on a spar rather than a steel plate, and the reason a wind-turbine blade is a CFRP spar cap on a balsa or PET-foam core. What the index does not capture is **damage**: a dented steel panel keeps most of its strength, while an impact on a CFRP panel can leave barely visible internal delamination that removes a large part of its compressive strength, which is why every composite structure carries a damage-tolerance specification, a tap-test or a thermography inspection, and a maximum permissible delamination size.
 :::
 :::
 
@@ -200,36 +199,36 @@ Write the material specification for a hydraulic manifold block that must be mac
 ::: solution
 **Screen on the requirements.**
 - **Pressure tightness at $35\ \mathrm{MPa}$** with a typical wall of $8\ \mathrm{mm}$ and a bore of $20\ \mathrm{mm}$ puts a hoop stress of $35 \times 10 / 8 = 44\ \mathrm{MPa}$ on the wall; with a safety factor of four that is a yield of $175\ \mathrm{MPa}$, which eliminates nothing common.
-- **Machinability** in $500$-piece quantities favours a free-cutting alloy: a leaded or lead-free free-cutting steel, or $356$ aluminium with its $12\ \%$ silicon, or $6061$-T6.
+- **Machinability** in $500$-piece quantities favours a free-cutting alloy: a leaded or lead-free free-cutting steel, or $356$ aluminium with its $7\ \%$ silicon, or $6061$-T6.
 - **Weldability to steel** eliminates aluminium outright — there is no economical way to weld aluminium to steel, and a bimetallic transition insert is a cost item that a $500$-piece run cannot carry.
 - **Dimensional stability after machining** eliminates anything with residual stress: a sand casting will move as it is stress-relieved, and a cold-drawn bar will bow as the cutting releases the surface stress.
 **Choice.** A **stress-relieved, hot-rolled low-carbon plate** — S355 or $16\ \mathrm{Mo}$ — machined from a plate of the same heat, stress-relieved after rough machining and before finishing, with the finishing cut taking $0.5\ \mathrm{mm}$.
 **The specification, in the order that matters.**
 1. Material and heat: EN $10025$ S355J2+N, one heat lot, with the mill certificate.
 2. Condition: $+ N$ normalised, and a **subsequent stress relief** at $600\ {}^{\circ}\mathrm{C}$ for two hours after rough machining.
-3. Mechanical: $R_{\mathrm{el}} \ge 355\ \mathrm{MPa}$, $R_m = 470$ to $630$, $A \ge 20\ \%$, Charpy V at $- 20\ {}^{\circ}\mathrm{C} \ge 27\ \mathrm{J}$ in the transverse direction.
-4. Soundness: ultrasonic examination to EN $10160$ class $\mathrm{E}/3$, because a laminar inclusion in a manifold is a leak path.
+3. Mechanical: $R_{\mathrm{eH}} \ge 355\ \mathrm{MPa}$ (thinner sections; the minimum falls with thickness), $R_m = 470$ to $630$, $A \ge 20\ \%$, Charpy V at $- 20\ {}^{\circ}\mathrm{C} \ge 27\ \mathrm{J}$ in the transverse direction.
+4. Soundness: ultrasonic examination to EN $10160$ at an agreed acceptance class, because a laminar inclusion in a manifold is a leak path.
 5. Flatness after stress relief, measured and recorded, because it is the property the machining depends on.
 6. No plating unless it is specified **before** the dimensional check, because electroless nickel grows the part by its own thickness and a plated manifold that was finished to size before plating is oversize.
 
-*Design comment.* The two clauses that a careless specification omits are the stress relief and the ultrasonic examination, and each omission costs more than it saves: without the first, a manifold that measured correctly on the table measures wrongly a week later, and without the second, a $35\ \mathrm{MPa}$ system leaks from a inclusion that was in the plate before anyone drew the part. The second point of substance is that **the strength requirement is not what selects the material** — every candidate has four times the required yield — and what selects it is weldability, machinability and dimensional stability, which is the general pattern in mechanical design and the reason a materials selection is nearly always a manufacturing selection wearing a mechanics disguise.
+*Design comment.* The two clauses that a careless specification omits are the stress relief and the ultrasonic examination, and each omission costs more than it saves: without the first, a manifold that measured correctly on the table measures wrongly a week later, and without the second, a $35\ \mathrm{MPa}$ system leaks from an inclusion that was in the plate before anyone drew the part. The second point of substance is that **the strength requirement is not what selects the material** — every candidate has at least twice the required yield — and what selects it is weldability, machinability and dimensional stability, which is the general pattern in mechanical design and the reason a materials selection is nearly always a manufacturing selection wearing a mechanics disguise.
 :::
 :::
 
 ::: history
-The tensile test is older than the science. **Thomas Tredgold** specified test bars in his 1822 *Principles of Carpentry*, and **William Fairbairn** and **Edwin Clark**'s iron-testing programme of the 1840s at Manchester produced the first systematic tables, from a machine that measured extension with a scale and dividers. **James Christie**'s 1856 paper on the elasticity of wires introduced the proportional limit as a distinct concept. The yield point's time dependence and the ageing of strained mild steel were established by **Carl Heyn and Otto Bauer**'s work of 1908 to 1912, and understood only in 1949 when **H. Cottrell and B. A. Bilby** proposed the solute-atmosphere mechanism that explains why a steel left at $100\ {}^{\circ}\mathrm{C}$ after being strained comes back harder. The $0.2\ \%$ proof stress was fixed by the **ASTM** and **ISO** bar-specimen conventions of the 1920s and has not been revised since. **Percy Bridgman**'s 1952 book *Studies in Large Plastic Flow and Fracture* measured the triaxial correction in the neck and gave the fracture strain its first honest value. **A. Considère**'s 1891 criterion was only put on a mechanical footing by **Geoffrey Taylor**'s 1915 paper on the necking of ductile metals, twenty-four years later. **Heinrich Hertz**'s 1881 contact theory grew out of his 1880 measurements of the interference fringes between a lens and a flat and of the hardness of glass. **Bowden and Tabor**'s *The Friction and Lubrication of Solids* of 1950, from the Cavendish Laboratory, established the asperity-junction picture by measuring the real area of contact electrically and by showing that two clean metal surfaces in vacuum weld. The strain-hardening exponent's identity with the uniform strain is **Considère**'s 1891 result, and the plastic-strain ratio $r$-value that governs deep drawing was introduced by **W. T. Lankford**, **S. C. Ford** and **J. H. Hollomon** in their 1950 drawing-depth studies at Armour Research Foundation.
+Systematic strength testing grew up with the railways and iron bridges of nineteenth-century Britain: **William Fairbairn** and **Eaton Hodgkinson**'s tests of the mid-1840s on wrought-iron tubes and plates fed the design of the Britannia Bridge, and **David Kirkaldy** opened his commercial testing works in London in 1866 around a large hydraulic testing machine. **Armand Considère** analysed the instability of the tension test in 1885, in a memoir on the use of iron and steel in construction. **Heinrich Hertz**'s theory of elastic contact (1881) arose from his study of the interference fringes between two glass lenses pressed together, and in 1882 he proposed a definition of hardness based on it. **Johan August Brinell** introduced his ball-indentation test in 1900, **Hugh** and **Stanley Rockwell** patented the depth-reading Rockwell tester in 1919, and **Robert Smith** and **George Sandland** introduced the diamond-pyramid test, made by Vickers, in the early 1920s. **John Hollomon**'s paper of 1945 gave the power-law hardening relation that carries his name. **Alan Cottrell** and **Bruce Bilby** explained the sharp yield point and strain ageing of mild steel in 1949 by the locking of dislocations by carbon and nitrogen atmospheres. **Frank Philip Bowden** and **David Tabor**'s *The Friction and Lubrication of Solids* (1950), from their laboratory at Cambridge, established the asperity-junction picture of friction, with real contact areas measured by electrical conductance. In the same year **W. T. Lankford**, **S. C. Snyder** and **J. A. Bauscher** introduced the plastic-strain ratio as a predictor of deep-drawing performance, and **Percy Bridgman**'s *Studies in Large Plastic Flow and Fracture* (1952) gave the correction for the triaxial stress in the neck.
 :::
 
 ## Where this leads
 
-The strain-hardening exponent is the dislocation storage argument of [[materials-science/dislocations-strengthening]], the hardness of a case-hardened layer is the diffusion profile of [[materials-science/defects-diffusion]], the contact shear maximum of Example 2 is the crack-nucleation site of [[materials-science/failure]], and the $n$- and $r$-values of Example 5 are the texture consequence of [[materials-science/bonding-structure]] applied to a rolling mill.
+The strain-hardening exponent is the dislocation storage argument of [[materials-science/dislocations-strengthening]], the hardness of a case-hardened layer is the diffusion profile of [[materials-science/defects-diffusion]], the contact shear maximum of [[#ex-hertz]] is the crack-nucleation site of [[materials-science/failure]], and the $r$-value of Exercise 9 is the texture consequence of [[materials-science/bonding-structure]] applied to a rolling mill.
 
 ::: summary
 - One tensile curve gives the modulus, the yield, the ultimate strength, the uniform strain and the local ductility, but the elongation is specimen-dependent and the ultimate strength is an instability, not a fracture stress.
 - Yield is defined at a $0.2\ \%$ offset by convention; mild steel's sharp yield point is a Cottrell-atmosphere effect and produces Lüders bands.
 - The Considère criterion $\mathrm{d}\sigma / \mathrm{d}\epsilon = \sigma$ puts the ultimate tensile strain at $\epsilon_u = n$, so the strain-hardening exponent is the forming limit and rate sensitivity $m$ raises it.
 - Hardness is a plastic strength measured through an indentor, converts to tensile strength at a factor of about three for steels, and is not size-independent below a few microns.
-- Hertzian contact puts the maximum shear below the surface, which is why gears and bearings pit from underneath and why cases are $0.7\ \mathrm{mm}$ deep.
+- Hertzian contact puts the maximum shear below the surface, which is why gears and bearings pit from underneath and why carburised cases are typically $0.5$ to $1\ \mathrm{mm}$ deep.
 - Friction is proportional to load because asperity junctions yield at the hardness, and removing the surface films makes the friction exceed unity and the joint cold-weld.
 :::
 
@@ -240,29 +239,7 @@ A tensile test on a ductile steel gives an elongation of $12\ \%$ on a $50\ \mat
 - [ ] The material is brittle
 - [ ] The extensometer slipped
 ::: solution
-A reduction of area of $70\ \%$ is a true local fracture strain of $\ln \left[ 1 / \left( 1 - 0.70 \right) \right] = 1.20$, four times the gauge-average value. The metal is very ductile where it broke and the elongation is low because the neck was narrow and formed early — a low $n$-value with a high fracture strain, which is the signature of a precipitation-hardened or heavily included material.
-:::
-:::
-
-::: quiz
-A tensile test on a ductile steel gives an elongation of $12\ \%$ on a $50\ \mathrm{mm}$ gauge and a reduction of area of $70\ \%$. What does the combination indicate?
-- [x] Heavy early necking: the ductility is local, and the gauge-length average understates it
-- [ ] The specimen was misaligned
-- [ ] The material is brittle
-- [ ] The extensometer slipped
-::: solution
-A reduction of area of $70\ \%$ is a true local fracture strain of $\ln \left[ 1 / \left( 1 - 0.70 \right) \right] = 1.20$, four times the gauge-average value. The metal is very ductile where it broke and the elongation is low because the neck was narrow and formed early — a low $n$-value with a high fracture strain, which is the signature of a precipitation-hardened or heavily included material.
-:::
-:::
-
-::: quiz
-A tensile test on a ductile steel gives an elongation of $12\ \%$ on a $50\ \mathrm{mm}$ gauge and a reduction of area of $70\ \%$. What does the combination indicate?
-- [x] Heavy early necking: the ductility is local, and the gauge-length average understates it
-- [ ] The specimen was misaligned
-- [ ] The material is brittle
-- [ ] The extensometer slipped
-::: solution
-A reduction of area of $70\ \%$ is a true local fracture strain of $\ln \left[ 1 / \left( 1 - 0.70 \right) \right] = 1.20$, four times the gauge-average value. The metal is very ductile where it broke and the elongation is low because the neck was narrow and formed early — a low $n$-value with a high fracture strain, which is the signature of a precipitation-hardened or heavily included material.
+A reduction of area of $70\ \%$ is a true local fracture strain of $\ln \left[ 1 / \left( 1 - 0.70 \right) \right] = 1.20$, about ten times the gauge-average true strain of $\ln 1.12 = 0.11$. The metal is very ductile where it broke and the elongation is low because it necked early — a low $n$-value with a high fracture strain, typical of a cold-worked or quenched-and-tempered steel.
 :::
 :::
 
@@ -276,7 +253,7 @@ $1 + \epsilon = 1.25$.
 :::
 
 ::: exercise Uniform strain {level=1 check="0.15"}
-What is the uniform elongation of a metal with a strain-hardening exponent of $0.15$?
+What is the uniform elongation, as a true strain, of a metal obeying $\sigma = K \epsilon^{n}$ with $n = 0.15$? (Enter the true strain.)
 ::: solution
 $0.15$ — the true strain at the ultimate equals $n$.
 :::
@@ -317,9 +294,10 @@ Annealed copper has $K = 315\ \mathrm{MPa}$ and $n = 0.54$. Give the true stress
 $\epsilon_u = n = 0.54$, so
 $$
 \sigma_u = 315 \times 0.54^{0.54} = 226\ \mathrm{MPa}, \qquad
-\sigma_{\mathrm{eng}} = \frac{226}{1.54} = 147\ \mathrm{MPa} .
+\sigma_{\mathrm{eng}} = \frac{\sigma_u}{1 + e_u} = \frac{226}{\mathrm{e}^{0.54}} = \frac{226}{1.716} = 132\ \mathrm{MPa} .
 $$
-*Sanity.* The measured UTS of annealed copper is $210$ to $220\ \mathrm{MPa}$, not $147$, because commercial annealed copper is not fully recrystallised and has a residual $n$-value and a yield contribution that the pure Hollomon law omits; the Ludwick form with a $60\ \mathrm{MPa}$ yield term gives $190\ \mathrm{MPa}$, which is closer. The lesson is that a power-law fit extrapolated below its measured strain range always under-predicts.
+Note that the engineering strain is $\mathrm{e}^{0.54} - 1 = 0.716$, not $0.54$: dividing by $1.54$ would mix true and engineering strain.
+*Sanity.* Handbook UTS values for annealed copper are about $210$ to $220\ \mathrm{MPa}$, well above $132$. A Hollomon fit is only as good as the strain range it was fitted over, and extrapolating it to the necking strain can be badly wrong; the measured curve is the authority.
 :::
 :::
 
@@ -327,12 +305,12 @@ $$
 A $500\ \mathrm{N}$ load is carried by a brass washer on a steel plate, hardness $1.2\ \mathrm{GPa}$ and apparent area $800\ \mathrm{mm^{2}}$. Give the real contact area and the fraction of the apparent area it represents.
 ::: solution
 $A_{\mathrm{real}} = 500 / 1.2 \times 10^{9} = 0.42\ \mathrm{mm^{2}}$, which is $0.05\ \%$ of the apparent area.
-*Sanity.* Ninety-nine point nine five per cent of the interface is not touching, which is why a gasket works, why a flange needs a surface finish specified as an $R_a$ and a waviness, and why a bolted joint's contact conductance is a tenth of the bulk metal's — the heat has to cross $0.42\ \mathrm{mm^{2}}$ of metal and $799.6\ \mathrm{mm^{2}}$ of oxide and air.
+*Sanity.* Ninety-nine point nine five per cent of the interface is not touching, which is why a gasket works, why a flange needs a surface finish specified as an $R_a$ and a waviness, and why a bolted joint conducts heat far worse than solid metal — the heat has to cross $0.42\ \mathrm{mm^{2}}$ of metal contact and $799.6\ \mathrm{mm^{2}}$ of air gap.
 :::
 :::
 
 ::: exercise Derivation {level=3}
-Show that the plastic-strain ratio $r = \mathrm{d} \epsilon_w / \mathrm{d} \epsilon_t$ for a sheet under uniaxial tension, with $w$, $t$ and $l$ the width, thickness and length directions, satisfies $r = \sigma_l$-related flow rule for an isotropic material, and explain why $r > 1$ is good for deep drawing.
+Show that the plastic-strain ratio $r = \mathrm{d} \epsilon_w / \mathrm{d} \epsilon_t$ for a sheet under uniaxial tension, with $w$, $t$ and $l$ the width, thickness and length directions, equals $1$ for an isotropic material obeying the Lévy–Mises flow rule, and explain why $r > 1$ is good for deep drawing.
 ::: solution
 **The flow rule.** With plastic incompressibility $\mathrm{d} \epsilon_l + \mathrm{d} \epsilon_w + \mathrm{d} \epsilon_t = 0$ and the Levy-Mises relation for a uniaxial stress $\sigma_l$,
 $$
@@ -341,10 +319,10 @@ $$
 \mathrm{d} \epsilon_t = - \tfrac{1}{2} \mathrm{d} \lambda \sigma_l ,
 $$
 so for an isotropic material $r = 1$ exactly. Any departure is **anisotropy**, and for a rolled sheet the texture makes the through-thickness direction harder or easier to deform than the in-plane ones.
-**Why $r > 1$ is good.** Deep drawing requires the flange to thin **radially** and thicken slightly, but must not thin **through the thickness** at the cup wall, where the load is carried. $r = \mathrm{d}\epsilon_w / \mathrm{d}\epsilon_t > 1$ means the sheet prefers to change its width to its thickness, so the wall resists thinning and the cup draws deeper before it fractures. Drawing quality steels are specified at $\bar{r} = 1.6$ to $2.2$.
-**The catch.** A strong $\gamma$-fibre texture that raises $\bar{r}$ also raises the planar anisotropy $\Delta r$, which makes the blank draw faster in some directions than others and produces the four **ears** at $45^{\circ}$ or $0^{\circ}$ around a drawn cup, which are trimmed away — twenty per cent of the purchase price of the sheet.
+**Why $r > 1$ is good.** In deep drawing the flange is pulled in under circumferential compression while the cup wall carries the punch load in tension and must not thin **through the thickness**. $r = \mathrm{d}\epsilon_w / \mathrm{d}\epsilon_t > 1$ means the sheet deforms more readily in its plane than through its thickness, so the flange draws in easily while the wall resists thinning, and a deeper cup can be drawn before the wall fails. Drawing quality steels are specified at $\bar{r} = 1.6$ to $2.2$.
+**The catch.** A strong $\gamma$-fibre texture that raises $\bar{r}$ also raises the planar anisotropy $\Delta r$, which makes the blank draw in faster in some directions than others and produces **ears** — usually four, at $0^{\circ}$ and $90^{\circ}$ or at $\pm 45^{\circ}$ to the rolling direction — around the rim of a drawn cup, which must be trimmed away as scrap.
 
-*Sanity.* The measurement of $r$ requires a $90\ \mathrm{mm}$ tensile specimen and a grid of $5\ \mathrm{mm}$ circles punched on the width and the surface, and the thickness strain is inferred from volume constancy, so the number is only as good as the assumption that no damage porosity opened during the test. A high-strength steel with $r = 0.6$ cannot be deep-drawn at all, which is the whole of the difficulty of putting third-generation automotive steels into body panels and the reason the industry uses hot forming of boron steel for the parts that need both strength and shape.
+*Sanity.* In practice $r$ is measured (ISO 10113) from the width and length strains of a tensile specimen at a specified elongation, the thickness strain being inferred from volume constancy, because the thickness change of a thin sheet is too small to measure accurately. A steel with $r$ well below $1$ draws poorly, which is the whole of the difficulty of putting third-generation automotive steels into body panels and the reason the industry uses hot forming of boron steel for the parts that need both strength and shape.
 :::
 :::
 
@@ -363,13 +341,13 @@ $$
 \text{Stainless 17-7 PH, aged} & 1650 & 200 & 6.8 \\
 \text{Phosphor bronze} & 600 & 110 & 1.6 \\
 \text{CFRP rod} & 1500 & 140 & 8.0 \\
-\text{Natural rubber} & 5 & 0.0012 & 7.5
+\text{Natural rubber} & 5 & 0.0012 & 10.4
 \end{array}
 $$
-**Choice.** Music wire has the highest resilience but corrodes; **17-7 PH precipitation-hardening stainless** at $6.8\ \mathrm{MJ / m^{3}}$ is the answer, since it is hardened by aging at $565\ {}^{\circ}\mathrm{C}$, is comfortable to $315\ {}^{\circ}\mathrm{C}$, and is the standard material for a corrosion-resistant high-stress spring. Where the price forbids it, a **silicon-manganese** or **chrome-silicon** spring steel with a zinc-flake or Dacromet coating is used, and the coating's hydrogen must be baked out within four hours or the spring fails in a week.
-**The section.** A helical spring's mass for a given stiffness and stress is minimised by a **constant-stress** section — a tapered or conical coil, or better a leaf spring of triangular plan — because a uniform round wire uses its material at only one third of the allowable stress on average.
-**The failure.** Springs fail at the **inside of the coil at the scale pit or the decarburised surface**, because the inside of a coil sees $15\ \%$ higher stress than the outside and a decarburised skin has no compressive residual stress from the shot peen. So the specification must include the peening and forbid the decarburised layer.
+**Choice.** Music wire has the highest resilience but corrodes; **17-7 PH precipitation-hardening stainless** at $6.8\ \mathrm{MJ / m^{3}}$ is the answer, since it is hardened by aging at $565\ {}^{\circ}\mathrm{C}$, is comfortable to $315\ {}^{\circ}\mathrm{C}$, and is the standard material for a corrosion-resistant high-stress spring. Where the price forbids it, a **silicon-manganese** or **chrome-silicon** spring steel with a zinc-flake coating is used; zinc-flake coatings are applied without electrolysis and introduce no hydrogen, whereas an electroplated high-strength spring must be baked promptly after plating to drive out hydrogen or it may fail by hydrogen embrittlement.
+**The section.** Energy per unit volume is greatest when all the material works at the allowable stress. A helical spring loads its wire in torsion, where the stress rises linearly from zero at the centre, so a round wire stores on average half of $\tau_{\max}^{2} / 2 G$ per unit volume; a uniform rectangular leaf under a central load stores only one ninth of $\sigma_{\max}^{2} / 2 E$, and a leaf of triangular plan, at constant maximum stress along its length, one third — which is why leaf springs are tapered.
+**The failure.** Springs fail at the **inside of the coil at the scale pit or the decarburised surface**, because curvature raises the stress at the inside of the coil, by about $15$ to $25\ \%$ for common spring indices (the Wahl factor), and a decarburised skin has no compressive residual stress from the shot peen. So the specification must include the peening and forbid the decarburised layer.
 
-*Sanity.* Rubber's apparent resilience of $7.5\ \mathrm{MJ / m^{3}}$ is illusory, because the calculation assumes a linear elastic solid and rubber is neither linear nor elastic — it hystereses, and the hysteretic loss at $300\ \%$ strain is half the stored energy, which turns into heat and destroys the spring. Rubber is used where **damping** is wanted and steel where **storage** is wanted, and the two are opposite requirements.
+*Sanity.* Rubber's apparent resilience of $10\ \mathrm{MJ / m^{3}}$ is misleading, because the calculation assumes a linear elastic solid: rubber is strongly non-linear at large strain and hysteretic, so a substantial fraction of the energy put in each cycle is lost as heat, which warms and eventually degrades the part. Rubber is used where **damping** is wanted and steel where **storage** is wanted, and the two are opposite requirements.
 :::
 :::

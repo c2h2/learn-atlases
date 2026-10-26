@@ -3,7 +3,7 @@ Before a system can be controlled it has to be written down, and writing it down
 Three techniques carry the whole modelling business. **Impedance reflection** moves inertias, dampings and stiffnesses through gears, levers and screws so that a multi-shaft mechanism collapses to one equivalent inertia at one shaft. **Linearisation about an operating point** turns a non-linear law into a gain and a time constant valid over a stated range. And the **analogy** between mechanical, electrical, thermal and fluid systems means that one solution serves four problems — with the caveat, which is where engineers go wrong, that the analogy fixes which variable is the "across" variable and the wrong choice inverts every impedance in the diagram.
 
 ::: warning A linear model is valid over a range, not at a point
-Every linearisation is a tangent, and the useful statement is not the tangent but the range over which the tangent is close. A tank's linearised time constant of nineteen minutes is good to five per cent for level changes of about ten per cent and wrong by a factor of two for a change of eighty. A pendulum's $\sin \theta \approx \theta$ is good to one per cent at $7^{\circ}$. An actuator's "linear" force–current curve ends at the knee of its magnetic circuit, and a valve's at the point where the flow chokes. The professional habit is therefore to state the linearisation **with its band**, and to design the controller's range of authority to stay inside it — because a controller designed against a model that is wrong at large error is the standard explanation for a loop that behaves beautifully on the test bench and hunts the moment it is asked to do real work.
+Every linearisation is a tangent, and the useful statement is not the tangent but the range over which the tangent is close. A tank's linearised time constant of nineteen minutes is good to five per cent for level changes of about ten per cent and wrong by a factor of two for a change of eighty. A pendulum's $\sin \theta \approx \theta$ is good to one per cent up to about $14^{\circ}$. An actuator's "linear" force–current curve ends at the knee of its magnetic circuit, and a valve's at the point where the flow chokes. The professional habit is therefore to state the linearisation **with its band**, and to design the controller's range of authority to stay inside it — because a controller designed against a model that is wrong at large error is the standard explanation for a loop that behaves beautifully on the test bench and hunts the moment it is asked to do real work.
 :::
 
 ## Building models
@@ -36,7 +36,7 @@ J_m - \frac{J_L}{N^{2}} = 0
 $$
 and at that ratio the motor's own inertia is exactly half the reflected total. $\checkmark$
 
-*Note.* The result is the reason a servo axis is nearly always under-geared rather than over-geared: a designer who puts a 5:1 box on a load whose inertia is 2500 times the rotor's has thrown away most of the available acceleration, and the same $N^2$ law means the fault is invisible in the torque rating, which looks comfortable. The mirror-image fault is worse: as $N$ grows past the optimum the reflected load inertia vanishes and the loop becomes dominated by the **gear mesh**, whose stiffness and backlash are then the plant, and a high-resolution servo axis can be made unstable by nothing but the wind-up of a compliant gear train between the motor and the encoder.
+*Note.* The optimum is flat but not forgiving of large errors: a designer who puts a 5:1 box on a load whose inertia is 2500 times the rotor's (optimum $N = 50$) gets only $2 / (0.1 + 10) = 20$ per cent of the available acceleration, and the same $N^2$ law means the fault is invisible in the torque rating, which looks comfortable. The mirror-image fault is worse: as $N$ grows past the optimum the reflected load inertia vanishes and the loop becomes dominated by the **gear mesh**, whose stiffness and backlash are then the plant, and a high-resolution servo axis can be made unstable by nothing but the wind-up of a compliant gear train between the motor and the encoder.
 :::
 
 ::: definition Linearisation about an operating point {#def-linearisation}
@@ -78,7 +78,7 @@ Every one-port model in engineering pairs an **across** variable that is common 
 | Fluid (lumped) | pressure $p$ | flow $Q$ | compliance | inertance | resistance |
 | Thermal | temperature $T$ | heat flow $\dot{Q}$ | capacitance | — | conductance |
 
-The **impedance** or force-voltage analogy puts force with voltage and velocity with current, so that series mechanical elements are series electrical ones and the transformer rule is the $n^{2}$ of the previous definition. The **mobility** or force-current analogy reverses it, and is natural for loudspeakers and for structural vibration because a mass then behaves as an inductor and a mechanical parallel connection maps to a series one. The two are duals and both are correct; mixing them in one model is not.
+The table is the **mobility** or force–current analogy: velocity pairs with voltage and force with current, so a mass behaves as a capacitor, a spring as an inductor and a damper as a conductance, and a mechanical network keeps its topology — elements in parallel mechanically are in parallel electrically. It is natural for loudspeakers and for structural vibration. The **impedance** or force–voltage analogy used in the definition above reverses it: force pairs with voltage and velocity with current, a mass behaves as an inductor and a spring as a capacitor, mechanical parallel connections become series electrical ones, and the transformer rule is the $n^{2}$ of the previous definition. The two are duals and both are correct; mixing them in one model is not.
 :::
 
 ::: widget plot
@@ -86,7 +86,7 @@ f: (1/(0.00002*x+0.05/x))/500
 x: 1, 150
 y: 0, 1.05
 labels: alpha_L / alpha_max
-caption: Load acceleration against gear ratio for a motor of 2e-5 kg m squared inertia and one newton-metre of torque driving a 0.05 kg m squared load. The curve peaks at the ratio 50, which is the square root of the inertia ratio, and falls off as 1/N on either side — a factor of two loss of acceleration for a factor of four error in the gear ratio, in either direction.
+caption: Load acceleration against gear ratio for a motor of 2e-5 kg m squared inertia and one newton-metre of torque driving a 0.05 kg m squared load. The curve peaks at the ratio 50, which is the square root of the inertia ratio; it rises roughly in proportion to N below the optimum and falls roughly as 1/N above it — about a factor of two loss of acceleration for a factor of four error in the gear ratio, in either direction.
 :::
 
 ::: example A position stage {#ex-stage}
@@ -110,7 +110,7 @@ J_{\text{motor}} = \frac{1.267 \times 10^{- 4} + 2.02 \times 10^{- 5}}{25}
 $$
 *Check.* A typical $400\ \mathrm{W}$ servo rotor has $1.1 \times 10^{- 5}\ \mathrm{kg\, m^{2}}$, so the reflected load is fifty-three per cent of the rotor's own inertia — a comfortable ratio, and the design is well geared. $\checkmark$
 
-*Sanity.* The table's inertia is reflected through the **square** of the lead, so halving the lead quarter the reflected inertia and double the position-loop bandwidth — and simultaneously halves the speed and doubles the torque required. That is the whole of the ball-screw sizing trade in one line, and it is why a fast positioning stage uses a **large lead** and a big motor rather than a fine screw and a small one. The second thing this example hides is the screw's **torsional** compliance: a $400\ \mathrm{mm}$ shaft in torsion has $k_t = GJ / L = 1276\ \mathrm{N\, m / rad}$, which with the reflected load gives a torsional resonance at $\sqrt{1276 / 1.47 \times 10^{- 4}} / 2 \pi = 469\ \mathrm{Hz}$ — comfortably above a typical $100\ \mathrm{Hz}$ position loop, but only just, and a longer screw would put the resonance inside the loop's crossover and force a notch filter.
+*Sanity.* The table's inertia is reflected through the **square** of the lead, so halving the lead quarters the reflected table inertia and halves the motor torque needed for a given thrust — but also halves the table speed for a given motor speed. That is the ball-screw sizing trade in one line: the lead buys thrust at the expense of speed, which is why a fast positioning stage uses a **large lead** and a correspondingly larger motor. The second thing this example hides is the screw's **torsional** compliance: with $G = 79.3\ \mathrm{GPa}$ and $J = \pi d^{4} / 32 = 6.43 \times 10^{- 9}\ \mathrm{m^{4}}$, the $400\ \mathrm{mm}$ shaft has $k_t = G J / L = 1276\ \mathrm{N\, m / rad}$, which with the table and screw inertia at the screw ($1.47 \times 10^{- 4}\ \mathrm{kg\, m^{2}}$) gives a torsional resonance near $\sqrt{1276 / 1.47 \times 10^{- 4}} / 2 \pi = 469\ \mathrm{Hz}$ — comfortably above a $100\ \mathrm{Hz}$ position loop. Because $k_t \propto 1 / L$, a screw four times as long would bring the resonance down to about half that, and the mode would then have to be checked against the loop's crossover and possibly notched.
 :::
 :::
 
@@ -133,7 +133,7 @@ $$
 $$
 t = \frac{2 A \sqrt{h_0}}{k} = 1159\ \mathrm{s}.
 $$
-*Check.* The two agree exactly, which is not a coincidence: the linearised time constant of a square-root process equals the full drain-down time from that level, because the tangent to $\sqrt{h}$ at $h_0$ reaches zero at $t = 2 A \sqrt{h_0} / k$. $\checkmark$
+*Check.* The two agree exactly, which is not a coincidence: with $Q_0 = k \sqrt{h_0}$, both $\tau = A \cdot 2 \sqrt{h_0} / k$ and the drain time equal $2 A h_0 / Q_0$, twice the stored volume divided by the initial outflow. $\checkmark$
 
 *Sanity.* The equality is a warning rather than a comfort. The linear model says the level falls exponentially with a nineteen-minute time constant, and the truth is that the level reaches **zero** in nineteen minutes and stays there — the linear model predicts a level of $37$ per cent after nineteen minutes and never reaches empty. For a control loop that only ever moves the level by ten per cent this is harmless; for a design that must know the overflow time or the pump-down time it is wrong by a factor that grows with the excursion. The rule for square-root processes is that the linear model is good for **small perturbations about the level** and useless for **excursions through it**, and the difference between the two is the difference between a control problem and a design problem.
 :::
@@ -160,9 +160,9 @@ $$
 $$
 \frac{\Omega}{V} \approx \frac{1 / K}{1 + \tau_m s} = \frac{12.5}{1 + 0.0078\, s} ,
 $$
-which is a fair approximation because the exact pair has no overshoot at all.
+which is a fair approximation because the exact pair has a negligible overshoot ($\zeta = 0.99$) and the sum of its two time constants, $R_a J / K^{2}$, is exactly $\tau_m$.
 
-*Sanity.* A damping ratio of $0.99$ is the reason a plain DC motor needs no current loop to behave itself and why the reduced first-order model is so widely used. The approximation fails when the separation collapses — a high-inertia load multiplies $\tau_m$ and moves the pair toward lighter damping in the opposite sense, and a low-inductance brushless or air-core motor shrinks $\tau_e$ to a fraction of a millisecond while the driver's current loop bandwidth rises to match. In every such case the current loop must be closed around the motor before the position loop is closed around the current loop, and that cascade — current inside velocity inside position — is the standard servo architecture.
+*Sanity.* The pair is real when $\tau_m \ge 4 \tau_e$; here the ratio is $3.9$, so the poles are only just complex. A large load inertia raises $\tau_m$ ($\zeta \propto \sqrt{J}$), separates the poles and makes the first-order model better; a light load or a large inductance brings them together and the pair becomes lightly damped, and then the electrical pole cannot be ignored. In practice a servo drive closes a fast current loop around the motor, then a velocity loop around the current loop and a position loop around that — the cascade that is the standard servo architecture.
 :::
 :::
 
@@ -177,7 +177,7 @@ $$
 which in deviations gives, with $\tau_i = A_i R_i$,
 $$
 \frac{H_2}{Q_{\text{in}}}
-= \frac{R_2}{\tau_1 \tau_2 s^{2} + \left( \tau_1 + \tau_2 + \tau_2 R_2 / R_1 \right) s + 1} .
+= \frac{R_2}{\tau_1 \tau_2 s^{2} + \left( \tau_1 + \tau_2 + \tau_1 R_2 / R_1 \right) s + 1} .
 $$
 For equal tanks and equal resistances, $\tau_1 = \tau_2 = \tau$ and $R_1 = R_2$,
 $$
@@ -188,7 +188,7 @@ $$
 $$
 *Check.* The product of the two time constants is $2.618 \times 0.382\ \tau^{2} = \tau^{2}$, which must equal the ratio of the constant to the $s^{2}$ coefficient. $\checkmark$
 
-*Sanity.* Two **non-interacting** tanks would each keep its own time constant and give a response beginning flat and curved; interaction splits the pair to $2.6\,\tau$ and $0.38\,\tau$, so the slow one is two and a half times slower than either tank on its own. The extra term $\tau_2 R_2 / R_1$ in the damping is the mathematical signature of the coupling, and it always makes the system **more** damped and **slower**. This is the reason a plant test on a single vessel systematically under-predicts the tuning a pair of vessels needs, and why the classical step test on a large interacting plant is fitted as "dead time plus first order" even when there is no dead time at all: the first seconds of a heavily overdamped second-order response are indistinguishable from a pure delay, and a controller tuned on a model with an invented delay is conservative in exactly the direction that keeps a large plant stable.
+*Sanity.* Two **non-interacting** tanks would each keep its own time constant and give a response beginning flat and curved; interaction splits the pair to $2.6\,\tau$ and $0.38\,\tau$, so the slow one is two and a half times slower than either tank on its own. The extra term $\tau_1 R_2 / R_1 = A_1 R_2$ in the damping is the mathematical signature of the coupling, and it always makes the system **more** damped and **slower**. Testing a single vessel therefore under-predicts how sluggish the pair will be, and the classical step test on a large interacting plant is fitted as "dead time plus first order" even when there is no dead time at all: the first seconds of a heavily overdamped second-order response are indistinguishable from a pure delay, and a controller tuned on a model with an invented delay is conservative in exactly the direction that keeps a large plant stable.
 :::
 :::
 
@@ -198,17 +198,17 @@ An oven with a $1\ \mathrm{kW}$ heater holds $20\ \mathrm{K}$ above ambient at f
 $$
 \tau = \frac{C}{G} = \frac{10\,000}{50} = 200\ \mathrm{s}, \qquad
 K = \frac{1}{G} = 0.02\ \mathrm{K / W}, \qquad
-t_{63\%} = 3\ \mathrm{min}, \quad t_{98\%} = 13\ \mathrm{min}.
+t_{63\%} = 3.3\ \mathrm{min}, \quad t_{98\%} = 4 \tau = 13.3\ \mathrm{min}.
 $$
-**Model.** $G /(C s + G) = 1 /(\tau s + 1)$ in watts per kelvin — a single first-order lag with a $200\ \mathrm{s}$ time constant and a $50\ \mathrm{mK / W}$ gain.
-**Control.** A time constant of $200\ \mathrm{s}$ against a measurement noise of $50\ \mathrm{mK}$ and a supply that must be switched, not modulated, gives a **three-position or time-proportional** controller with a hysteresis band of $\pm 0.25\ \mathrm{K}$ rather than a continuous PID. The equivalent switching frequency follows from the energy balance: at a $0.25\ \mathrm{K}$ band the duty cycle changes by $50 / 1000 \times 0.5 = 2.5$ per cent per $0.25\ \mathrm{K}$, so a one-minute cycle is enough resolution.
+**Model.** $\Theta / P = 1 / (C s + G) = K / (\tau s + 1)$ in kelvin per watt — a single first-order lag with a $200\ \mathrm{s}$ time constant and a $20\ \mathrm{mK / W}$ gain.
+**Control.** A slow, single-lag process driven by a heater that is switched rather than modulated (a contactor or a zero-crossing solid-state relay) suits a **time-proportional** controller: a PI law computes the required power and the switch delivers it as a duty cycle $d$ over a fixed cycle time $T_c$. The steady duty cycle at temperature rise $\Delta T$ is $G \Delta T / P_{\max} = 50 \Delta T / 1000$, so a $0.5\ \mathrm{K}$ change of setpoint changes it by $2.5$ per cent. The cycle time follows from the ripple it causes: during the on-time the oven warms at up to $P_{\max} / C = 0.1\ \mathrm{K / s}$, and the peak-to-peak ripple is about $P_{\max} d (1 - d) T_c / C$, which at $d = 0.5$ is $0.025\, T_c\ \mathrm{K}$ — so $T_c = 10\ \mathrm{s}$ keeps the ripple to $0.25\ \mathrm{K}$, while a one-minute cycle would give $1.5\ \mathrm{K}$.
 
-*Design comment.* The dominant non-linearity is not the radiation loss, which is only ten per cent of the total at these temperatures, but the **heater's own quantisation** and the fact that the thermocouple is not where the heat is. A $200\ \mathrm{s}$ process with a $60\ \mathrm{s}$ sensor lag is a system whose phase is lost before the controller sees anything, and the fix is not a better controller but a better sensor position — the junction moved from the air to the wall, or a second sensor used as a feedforward measurement of the disturbance. The second design decision is the **loss conductance**, which is not constant: an oven's $G$ rises with temperature through radiation, so the process gain and the time constant both change by twenty per cent across the operating range, and a controller tuned at $20\ \mathrm{K}$ above ambient is over-aggressive at $200\ \mathrm{K}$. This is the standard case for **gain scheduling** on the setpoint, which is the cheapest and most honest of non-linear control strategies and remains the most used in industry.
+*Design comment.* The model has two weaknesses that matter more than the controller's structure. The first is **sensor placement**: a thermocouple in a thick sheath or far from the heater adds a lag of its own, and a $200\ \mathrm{s}$ process measured through a sensor lag of tens of seconds loses phase that no tuning can recover — the fix is a better sensor position, or a second sensor used as a feedforward measurement of the disturbance. The second is the **loss conductance**, which is not constant: radiation and convection both make $G$ rise with temperature, so the process gain and time constant drift across the operating range. Where the range is wide, scheduling the controller gains on the setpoint (**gain scheduling**) is the cheapest of the non-linear control strategies and one of the most widely used in industry.
 :::
 :::
 
 ::: history
-Feedback was engineered long before it was analysed: **Cornelius Drebbel**'s thermostat of about 1620, **Watt**'s centrifugal governor of 1788 and the float valve of the ancients are all closed loops with no theory behind them. The theory begins with **Maxwell**'s 1868 paper *"On governors"*, the first stability analysis of a feedback system and the first recognition that the question is the sign of the roots of a polynomial; **Routh**'s criterion of 1876 and **Hurwitz**'s of 1895 made that question decidable without computing the roots, and **Lyapunov**'s 1892 thesis put stability on its modern geometric footing. The industrial era of control begins with **Cameron**'s automatic controllers at the American Telephone and Telegraph Company and **Ziegler and Nichols**' 1942 tuning rules, which are still the first thing tried on a plant, and with **Minorsky**'s 1922 ship-autopilot design, the first published use of what we now call a PID structure. **Nyquist**'s 1932 criterion and **Bode**'s and **Nichols**' frequency-domain work at the same laboratory gave the design method, **Evans**' 1948 root locus another, and the **Bode integral** the reason none of it is free. The state-space and optimal-control edifice is the work of **Kalman**'s 1960 papers, **Bellman**'s dynamic programming and **Pontryagin**'s maximum principle; the robust-control revival of the late 1980s is the $H_{\infty}$ of **Zames**, **Doyle** and **Glover**. The **optimum gear ratio** result of Example 1 is a standard of electromechanical design textbooks from the 1970s, and the impedance analogy of **Kennelly** of 1920 and the mobility analogy of **Lautermann** and **Thier** of the 1950s are the two competing conventions whose confusion still ruins models.
+Feedback was engineered long before it was analysed: **Ktesibios**'s float-regulated water clock of the third century BC, **Cornelius Drebbel**'s thermostatically controlled furnace of the early seventeenth century and **Watt**'s centrifugal governor of 1788 are all closed loops with no theory behind them. The theory begins with **Maxwell**'s 1868 paper *"On governors"*, the first stability analysis of a feedback system and the first recognition that the question is the sign of the real parts of the roots of a polynomial; **Routh**'s criterion of 1877 and **Hurwitz**'s of 1895 made that question decidable without computing the roots, and **Lyapunov**'s 1892 thesis put stability on its modern geometric footing. **Minorsky**'s 1922 analysis of automatic ship steering was the first published use of what we now call a PID structure, and **Ziegler and Nichols**' 1942 tuning rules are still the first thing tried on a plant. **Nyquist**'s 1932 criterion and **Bode**'s frequency-domain work at Bell Telephone Laboratories, **Nichols**' chart of the 1940s and **Evans**' root locus of 1948 gave the classical design methods, and the **Bode integral** the reason none of it is free. The state-space and optimal-control edifice is the work of **Kalman**'s 1960 papers, **Bellman**'s dynamic programming and **Pontryagin**'s maximum principle; the robust-control revival of the 1980s is the $H_{\infty}$ theory of **Zames**, **Doyle** and **Glover**. On the modelling side, the force–voltage (impedance) analogy grew out of early twentieth-century electromechanical work such as **Kennelly**'s motional impedance of telephone receivers, and **Firestone**'s 1933 paper introduced the force–current (mobility) analogy — the two competing conventions whose confusion still ruins models.
 :::
 
 ::: quiz
@@ -238,14 +238,14 @@ The second-order model that dominates everything here is the spring–mass–dam
 ## Exercises
 
 ::: exercise Reflected inertia {level=1 check="0.002"}
-A load of $0.05\ \mathrm{kg\, m^{2}}$ is driven through a gear ratio of $5$. What inertia does the motor see?
+A load of $0.05\ \mathrm{kg\, m^{2}}$ is driven through a gear ratio of $5$. What inertia does the motor see? (Enter it in kg m².)
 ::: solution
 $0.05 / 25 = 0.002\ \mathrm{kg\, m^{2}}$.
 :::
 :::
 
-::: exercise Screw {level=1 check="0.0159"}
-A screw of $10\ \mathrm{mm}$ lead converts rotation to translation. What is the equivalent radius $p / 2 \pi$ in metres?
+::: exercise Screw {level=1 check="0.00159"}
+A screw of $10\ \mathrm{mm}$ lead converts rotation to translation. What is the equivalent radius $p / 2 \pi$? (Enter it in metres.)
 ::: solution
 $0.010 / 6.283 = 1.59 \times 10^{- 3}\ \mathrm{m}$.
 :::
@@ -274,7 +274,7 @@ N_{\text{opt}} = \sqrt{\frac{0.02}{5 \times 10^{- 6}}} = 63.2,
 \frac{J_L}{N^{2}} = \frac{0.02}{4000} = 5 \times 10^{- 6} = J_m ,
 $$
 so the rotor contributes exactly one half.
-*Sanity.* The half-and-half result is the design rule, and it is worth restating in words: the gear ratio that maximises acceleration is the one that makes the load look as heavy as the motor. A ratio of $20$ instead of $63$ leaves the load looking fifty times heavier than the rotor and wastes most of the torque in accelerating it; a ratio of $200$ leaves the load looking weightless and puts the axis at the mercy of the gear mesh. Real designs compromise, because the optimum for acceleration is not the optimum for maximum speed, and because a ratio of $63$ in a single stage is not available — it is a $8:1$ planetary followed by an $8:1$ harmonic drive, and the second stage's compliance is then the plant.
+*Sanity.* The half-and-half result is the design rule, and it is worth restating in words: the gear ratio that maximises acceleration is the one that makes the load look as heavy as the motor. A ratio of $20$ instead of $63$ leaves the load looking ten times heavier than the rotor ($0.02 / 400 = 5 \times 10^{- 5}$) and wastes most of the torque in accelerating it; a ratio of $200$ makes the load look a tenth of the rotor and puts the axis at the mercy of the gear mesh. Real designs compromise, because the optimum for acceleration is not the optimum for maximum speed, and because the exact ratio is rarely available — $64$ from two $8:1$ planetary stages, or a standard $50:1$ or $80:1$ harmonic drive, and the gearbox's compliance then becomes part of the plant.
 :::
 :::
 
@@ -295,7 +295,7 @@ The period is $T / T_0 = 1 + \theta_0^{2} / 16$, so one per cent needs $\theta_0
 :::
 
 ::: exercise Motor {level=2}
-For the motor of Example 4, find the steady-state speed for $12\ \mathrm{V}$ and the electrical and mechanical time constants.
+For the motor of [[#ex-motor]], find the steady-state speed for $12\ \mathrm{V}$ and the electrical and mechanical time constants.
 ::: solution
 $$
 \omega_{\infty} = \frac{V}{K} = \frac{12}{0.08} = 150\ \mathrm{rad / s} = 1430\ \mathrm{rev / min},
@@ -308,7 +308,7 @@ $$
 :::
 
 ::: exercise Two tanks {level=2}
-For the interacting pair of Example 5 with $\tau = 100\ \mathrm{s}$, find the two time constants of the response and compare them with the non-interacting case.
+For the interacting pair of [[#ex-two-tanks]] with $\tau = 100\ \mathrm{s}$, find the two time constants of the response and compare them with the non-interacting case.
 ::: solution
 $$
 \tau^{2} s^{2} + 3 \tau s + 1 = 0
@@ -335,7 +335,7 @@ $$
 Z_{\text{mot}} = \frac{\left( B l \right)^{2}}{Z_{\text{mech}}},
 $$
 so at $f_s$, where $Z_{\text{mech}}$ is minimal and resistive, $Z_{\text{mot}}$ is a **peak** in the impedance magnitude.
-*Sanity.* This is the reason a loudspeaker's impedance curve has a peak at its resonance and why that peak is used to measure the box's air compliance and the driver's damping — the technique called **T/S parameter measurement** is nothing but a mechanical impedance measurement made electrically, and it is the clearest everyday demonstration of the impedance analogy. The same reflection appears in every electromechanical system: a piezoelectric actuator's impedance shows a dip at its antiresonance and a peak at its resonance, a microphone's output drops at the diaphragm's resonance, and an energy harvester's electrical damping is exactly the mechanical damping its impedance creates.
+*Sanity.* A loudspeaker's impedance curve therefore has a peak at its resonance, and that peak is used to measure the driver's damping and, mounted in a box, the box's air compliance — **Thiele–Small parameter measurement** is a mechanical impedance measurement made electrically, and it is the clearest everyday demonstration of the analogy. The same reflection appears in other electromechanical systems: a piezoelectric transducer's electrical impedance shows a minimum at its resonance and a maximum at its antiresonance, and an energy harvester's electrical load appears to the structure as added mechanical damping.
 :::
 :::
 
@@ -352,6 +352,6 @@ $$
 \left| Z \right|_{\min} = c, \qquad
 Q = \frac{\omega_n M}{c} = \frac{1}{2 \zeta} .
 $$
-*Sanity.* The depth of the impedance dip — or peak, in the mobility — is a **direct measure of the damping**, and this is the basis of every resonance-based damping measurement: the half-power bandwidth of the impedance curve gives $2 \zeta$ without any reference to the mass or the stiffness. The same relation makes the loudspeaker's impedance peak a quality-control test for the glue in a surround, makes a piezoelectric transducer's admittance sweep a test of the adhesive bonding it to a structure, and makes a quartz crystal's series resonance a thermometer, because the crystal's $Q$ and its resonant frequency both depend on the load applied to its surface. A mechanical property read from an electrical curve is the analogy paying for itself.
+*Sanity.* The minimum of the impedance — the peak of the mobility — is a **direct measure of the damping**, and this is the basis of resonance-based damping measurement: $|Z| = \sqrt{2}\, c$ where $M \omega - k / \omega = \pm c$, so the width of the curve between those points is $\Delta \omega = c / M$ and $\Delta \omega / \omega_n = 2 \zeta$, without any separate knowledge of the mass or the stiffness. The same relation makes a loudspeaker's impedance peak a production test of its suspension, and a piezoelectric transducer's admittance sweep a test of the adhesive bonding it to a structure: a mechanical property read from an electrical curve is the analogy paying for itself.
 :::
 :::

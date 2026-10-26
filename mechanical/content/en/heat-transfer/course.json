@@ -115,7 +115,7 @@
     {
       "year": 1822,
       "title": "Fourier gives heat a differential equation",
-      "detail": "Joseph Fourier's Theorie analytique de la chaleur, read to the Institut de France in 1807 and published in 1822, states the heat-flux law that carries his name, writes the diffusion equation for a continuous medium, and — decisively for engineering — solves it by superposing sinusoidal modes whose amplitudes are found from the initial condition. The method of separation of variables, the idea of a thermal conductivity as a material property, and the first thermal-resistance reasoning all come from one book written by a man who had been a schoolteacher and an administrator in Egypt.",
+      "detail": "Joseph Fourier's Théorie analytique de la chaleur, built on a memoir read to the Institut de France in 1807 and published in 1822, states the heat-flux law that carries his name, writes the diffusion equation for a continuous medium, and — decisively for engineering — solves it by superposing sinusoidal modes whose amplitudes are found from the initial condition. Separation of variables and the idea of thermal conductivity as a material property both come from this book, written by a mathematician who had taught at the École Polytechnique, served with Napoleon's expedition to Egypt and then governed the department of Isère as prefect.",
       "people": [
         "Jean-Baptiste Joseph Fourier"
       ]
@@ -123,7 +123,7 @@
     {
       "year": 1851,
       "title": "Stokes, and the ancestor of the penetration depth",
-      "detail": "George Gabriel Stokes obtains the exact solution for oscillating flow over a flat plate, showing that a viscous disturbance penetrates a distance proportional to the square root of the kinematic viscosity divided by the frequency. The same square-root-of-time penetration appears in Lord Kelvin's 1860 calculation of the depth of the Earth's daily surface temperature swing, and it is the origin of the semi-infinite-solid method that every quench, weld and food-freezing calculation still uses.",
+      "detail": "George Gabriel Stokes's 1851 paper on the internal friction of fluids and the motion of pendulums contains the exact solution for a fluid above an oscillating flat plate, showing that a viscous disturbance penetrates a distance proportional to the square root of the kinematic viscosity divided by the frequency. Heat obeys the same square-root law with the thermal diffusivity: Fourier had already treated the periodic heating of the ground, and around 1860 William Thomson (Lord Kelvin) used the solution to reduce J. D. Forbes's Edinburgh underground-temperature records. It is the penetration-depth scaling behind quench, weld and food-freezing estimates.",
       "people": [
         "George Gabriel Stokes",
         "William Thomson (Lord Kelvin)"
@@ -132,7 +132,7 @@
     {
       "year": 1900,
       "title": "Planck quantises the blackbody, and radiation becomes physics",
-      "detail": "Josef Stefan's empirical T-fourth law of 1879 and Boltzmann's derivation of it leave the spectrum unexplained; Wilhelm Wien's formula of 1896 fits the short wavelengths and fails the long ones. On 14 December 1900 Max Planck presents an interpolation that fits every measurement by assuming that the wall oscillators of a blackbody exchange energy only in quanta of h nu — the birth of quantum mechanics, and the reason a heat-transfer course contains constants named after him.",
+      "detail": "Josef Stefan's empirical T-fourth law of 1879 and Boltzmann's 1884 derivation of it leave the spectrum unexplained; Wilhelm Wien's formula of 1896 fits the short wavelengths and fails the long ones, as the measurements of Heinrich Rubens and Ferdinand Kurlbaum showed. In October 1900 Max Planck proposes a formula that fits all the data, and on 14 December 1900 he derives it by assuming that the oscillators of a blackbody exchange energy only in quanta of h nu — the birth of quantum theory, and the reason a heat-transfer course contains constants named after him.",
       "people": [
         "Josef Stefan",
         "Ludwig Boltzmann",
@@ -145,41 +145,42 @@
     {
       "year": 1904,
       "title": "Prandtl's boundary layer fuses heat and fluid mechanics",
-      "detail": "At the Heidelberg mathematics congress Ludwig Prandtl reads a two-page paper explaining that at high Reynolds number the viscosity matters only in a thin wall layer, so that the flow splits into a nearly inviscid exterior and a diffusive interior. Within thirty years his school — Nusselt, Blasius, Hilsch, Schmidt, Sieder, Colburn, von Karman — turns that observation into the convection coefficients of the whole course, and the analogy between the momentum and thermal boundary layers into the tool that predicts one from the other.",
+      "detail": "At the Heidelberg International Congress of Mathematicians Ludwig Prandtl reads a short paper explaining that at high Reynolds number the viscosity matters only in a thin wall layer, so that the flow splits into a nearly inviscid exterior and a diffusive interior. Within two decades his student Heinrich Blasius had solved the laminar flat plate (1908), Theodore von Kármán had given the momentum integral (1921) and Ernst Pohlhausen had solved the thermal layer (1921), while Wilhelm Nusselt's similarity analysis of 1915 supplied the dimensionless groups in which convection coefficients are still correlated.",
       "people": [
         "Ludwig Prandtl",
-        "Wilhelm Nusselt",
-        "Theodor Blasius"
+        "Heinrich Blasius",
+        "Theodore von Kármán",
+        "Ernst Pohlhausen",
+        "Wilhelm Nusselt"
       ]
     },
     {
-      "year": 1933,
+      "year": 1916,
       "title": "Nusselt's film analysis, and boiling becomes a curve",
-      "detail": "Wilhelm Nusselt derives the laminar-film condensation coefficient by balancing the drainage of the condensate against the conduction through it, obtaining the famous minus-one-quarter power of the film thickness and the tube-array inundation correction still used to size surface condensers. Samuel Nukiyama's 1934 experiments on boiling mercury and nickel define the boiling curve, its nucleate peak and its Leidenfrost minimum, and Johann Nikuradse's 1926 bubble-nucleation photographs supply the mechanism that Hans Heinrich Rohsenow's 1952 correlation finally quantifies.",
+      "detail": "In 1916 Wilhelm Nusselt derives the laminar-film condensation coefficient by balancing the drainage of the condensate against conduction across it, obtaining a coefficient that varies as the minus one-quarter power of the temperature difference and of the surface height, with a correction for vertical columns of tubes still used to size condensers. Shiro Nukiyama's 1934 experiments with electrically heated wires in saturated water define the boiling curve and its peak heat flux; T. B. Drew and A. C. Mueller measure the transition region in 1937, and Warren M. Rohsenow's 1952 correlation quantifies nucleate boiling.",
       "people": [
         "Wilhelm Nusselt",
-        "Samuel Nukiyama",
-        "Johann Nikuradse",
-        "Hans Heinrich Rohsenow"
+        "Shiro Nukiyama",
+        "Warren M. Rohsenow"
       ]
     },
     {
-      "year": 1930,
-      "title": "Effectiveness, and the aircraft radiator",
-      "detail": "The design of radiators for high-altitude aircraft engines forces the German and British schools to answer the rating question — known area, known inlets, unknown outlets — rather than the sizing question, and the effectiveness–NTU chart is the by-product. Arthur Colburn and E. R. Rosson's j-factor formulation for compact surfaces follows in 1935, Warren Kays and AL London's Compact Heat Exchangers consolidates the data in 1955, and TEMA and the VDI Heat Atlas turn the whole into the standard practice that a heat-exchanger datasheet still obeys.",
+      "year": 1955,
+      "title": "Effectiveness–NTU and compact surfaces",
+      "detail": "The rating question — known area and inlet temperatures, unknown outlets — is awkward with the log-mean temperature difference, and the effectiveness–NTU method answers it directly. A. L. London and R. A. Seban set the method out in a 1942 report that was published only in 1980, and W. M. Kays and A. L. London's Compact Heat Exchangers (1955), built on their Stanford tests of compact surfaces reported as Colburn j-factors and friction factors, made it standard practice.",
       "people": [
-        "Arthur P. Colburn",
-        "Warren M. Kays",
         "A. L. London",
-        "E. N. Sieder"
+        "R. A. Seban",
+        "Warren M. Kays"
       ]
     },
     {
-      "year": 1947,
-      "title": "Boiling under pressure, and the reactor's limit",
-      "detail": "The wartime need to cool a chain-reacting pile without boiling it, and then the post-war need to boil water deliberately inside a reactor, generate the largest experimental programme in the subject's history: Hans Zuber's 1958 hydrodynamic theory of the critical heat flux, the Bergles–Rohsenow forced-convection boiling map, and the vendor charts that let a reactor designer quote a critical heat flux with a stated margin of uncertainty. The same curves, read the other way, explain why a cryogenic transfer line chokes and why a turbine blade's impingement cooling fails.",
+      "year": 1958,
+      "title": "Boiling, the critical heat flux and the reactor's limit",
+      "detail": "Post-war reactor programmes, which had to cool fuel with water near or at its boiling point, funded the largest experimental effort in the subject's history. S. S. Kutateladze's dimensional analysis of the critical heat flux (1948–51) and Novak Zuber's hydrodynamic-instability theory of it (1958–59) give the pool-boiling limit, Bergles and Rohsenow's 1964 method predicts the onset of flow boiling, and empirical critical-heat-flux correlations let a reactor designer quote the heat-flux limit with a stated margin.",
       "people": [
-        "Hans Zuber",
+        "S. S. Kutateladze",
+        "Novak Zuber",
         "Warren M. Rohsenow",
         "Arthur E. Bergles"
       ]
@@ -199,10 +200,10 @@
       "year": 2020
     },
     {
-      "author": "J. P. Holman and A. Bejan",
+      "author": "J. P. Holman",
       "title": "Heat Transfer",
-      "publisher": "CRC Press",
-      "year": 2020
+      "publisher": "McGraw-Hill",
+      "year": 2010
     },
     {
       "author": "R. K. Shah and D. P. Sekulic",
@@ -211,7 +212,7 @@
       "year": 2003
     },
     {
-      "author": "R. Siegel, J. R. Howell and M. P. Menguc",
+      "author": "J. R. Howell, M. P. Mengüç, K. Daun and R. Siegel",
       "title": "Thermal Radiation Heat Transfer",
       "publisher": "CRC Press",
       "year": 2021
@@ -230,9 +231,9 @@
     },
     {
       "author": "S. Whitaker",
-      "title": "Fundamentals of Heat Transfer Design",
-      "publisher": "Prentice Hall",
-      "year": 1996
+      "title": "Fundamental Principles of Heat Transfer",
+      "publisher": "Pergamon",
+      "year": 1977
     }
   ],
   "next": [

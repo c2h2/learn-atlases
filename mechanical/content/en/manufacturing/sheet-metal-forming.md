@@ -1,230 +1,228 @@
-Sheet-metal forming is the process family that makes the largest number of metal parts in the world and the least understood: a car body is 350 pieces of it, an aircraft is 2,000, a washing machine is forty, and a laptop case is six. It is also the family in which the *material* decides the design most brutally, because a sheet is not a solid. In [[manufacturing/bulk-forming|bulk forming]] the work is confined, triaxially compressed, and free to be pushed into any shape the die can cut; a sheet is a **two-dimensional object loaded in its own plane**, and it has exactly two ways to fail — **it wrinkles where it is compressed and it tears where it is stretched** — and a good drawing die spends its whole life holding the sheet precisely at the boundary between those two.
+Sheet-metal forming is the process family that makes more metal parts than any other: a car body-in-white is a few hundred stampings, a washing machine a few dozen, a laptop case a handful. It is also the family in which the *material* decides the design most directly, because a sheet is not a solid. In [[manufacturing/bulk-forming|bulk forming]] the work is confined and largely compressed; a sheet is a **two-dimensional object loaded in its own plane**, and it has essentially two ways to fail — **it wrinkles where it is compressed and it tears where it is stretched**. A good drawing die holds the sheet between those two limits.
 
-Everything in this lesson follows from that one sentence. Wrinkling is buckling, and buckling gets worse as the sheet gets thinner, so thin sheets are wonderful for drawing and hopeless for stretching. Tearing is a neck, and a neck stops growing only if the metal work-hardens, so **drawability is measured by two metallurgical constants — the strain-hardening exponent $n$, which decides whether a neck stops growing, and the plastic strain ratio $\bar { r }$ , which decides whether the sheet thins or thickens** — both of them metallurgical quantities that a steelworks controls by annealing temperature and inclusion chemistry and that a designer cannot change. And because the sheet is thin, the forces are small — a car door outer is drawn at 400 tonnes where a connecting rod is forged at 4,000 — but the *energy* is in the tooling, not the press: a single body-side die set is a 40-tonne casting of tool steel that takes six months of a skilled man's life to cut and try out, which is why a car model costs £100 million in body tooling and why the panels are designed by the die shop as much as by the styling studio.
+Most of this lesson follows from that statement. Wrinkling is buckling, and a thin sheet buckles easily, so thin sheets need firm restraint to be drawn without wrinkles. Tearing begins as a local neck, and a neck stops growing only if the metal work-hardens fast enough, so **drawability is described by two material constants — the strain-hardening exponent $n$, which delays necking, and the plastic strain ratio $\bar r$, which says whether the sheet prefers to get narrower or thinner** — both set by the steelworks through composition, rolling and annealing, and both outside the designer's control. Because the sheet is thin, the forces are moderate (a large body panel is drawn on a press of a few hundred to a couple of thousand tonnes); the cost and the lead time are in the **tooling**, which is why sheet-metal parts are designed together with the die shop.
 
 ::: warning Six ways sheet-metal design goes wrong
-**Specifying a bend radius smaller than the material will allow.** The minimum inside radius is a multiple of the thickness and of the material's reduction of area: $r _ { \min } \approx t$ for annealed mild steel, $2 t$ for normalised high-strength steel, $4 t$ for hard brass, and $6 { - } 1 2 t$ for a 1,000 MPa hot-stamped boron steel that must be bent cold after forming or not at all. Ask for $0 . 5 t$ and the outside fibre, whose strain is $t / ( 2 r + t ) = 3 3 \ \ \%$ , simply cracks — and it cracks on the visible face, after the paint. **Bending parallel to the rolling direction.** Sheet has a texture, and a texture means the strain to crack across the fibres is half that along them; the drawing office rule is that **every bend line is drawn at right angles to the rolling direction marked on the blank**, and the blank-holder's orientation mark is not a suggestion. **Ignoring springback.** A bend is made plastically and released elastically, and the angle you get is not the angle the tool had. For mild steel air-bent to a sharp radius it is $1 { - } 3 ^ { \circ }$ , which a press-brake operator corrects by eye; for a 1,000 MPa steel it is $5 { - } 1 0 ^ { \circ }$ , which no operator corrects, and it is why high-strength steel is either **hot stamped** (formed at $9 0 0 \ \mathrm { ^ { \circ } C }$ and quenched in the die, so that it springs back by the amount the die was designed for and then not at all) or **coined and ironed** at the end of the stroke at four times the tonnage. **Drawing a cup that is too deep for one draw.** The limit draw ratio of mild steel is $D / d \approx 2 . 1$ ; ask for 3 and the wall thins, then splits at the punch radius, and the answer is two draws with an anneal between, which is two die sets, two presses and one more tolerance stack. **Confusing the material's tensile ductility with its forming capability.** A steel with 30 % elongation in a tensile bar can be a poor drawing steel, because a tensile bar measures stretching in one direction and a flange measures *thickening* while stretching in another: the number that matters is the **Lankford $r$ -value**, the ratio of the true width strain to the true thickness strain, and a steel with $r = 0 . 6$ will not draw what a steel with $r = 2 . 0$ draws easily. **And designing the part before the die is designed.** A drawing die cannot make a corner with a radius smaller than the sheet plus the die's own wear, cannot make an undercut, cannot hold a dimension across a draw, and cannot be repaired cheaply once it has been hand-polished and try-out-corrected. **The sheet-metal part that costs money is the one whose drawing office has never watched a die being tried out.**
+**Specifying a bend radius smaller than the material will allow.** The minimum inside radius is a multiple of the thickness that depends on the alloy and its temper: roughly $0.5t$ for annealed low-carbon steel, $t$–$2t$ for as-rolled and high-strength low-alloy (HSLA) steel, $4t$ or more for hard-rolled grades and high-strength aluminium. Ask for $0.5t$ on a grade that needs $2t$ and the outside fibre, whose strain is $t/(2r+t) = 50\ \%$, cracks — on the visible face. **Bending parallel to the rolling direction.** Sheet has a rolling texture and elongated inclusions, so a bend line parallel to the rolling direction cracks at a smaller strain than one across it; drawings of critical bends specify the grain direction. **Ignoring springback.** A bend is made plastically and released elastically, so the angle you get is not the angle the tool had: for mild steel in air bending it is typically $1$–$3^\circ$; for 1,000 MPa steels it can be $5$–$10^\circ$, which is why such steels are either **hot stamped** (formed at about $900\ ^\circ\mathrm{C}$ and quenched in the die) or bottomed and coined at the end of the stroke at several times the tonnage. **Drawing a cup that is too deep for one draw.** The limiting drawing ratio of mild steel is $D/d \approx 2.1$; ask for 2.5 and the wall splits at the punch radius, and the answer is a first draw plus redraws — more die sets, more press stations, more tolerance stack-up. **Confusing tensile ductility with drawability.** A steel with 30 % elongation in a tensile test can still draw poorly, because deep drawing needs the flange to shrink in width rather than the wall to thin: the number that matters is the **Lankford $r$-value**, the ratio of true width strain to true thickness strain, and a steel with $\bar r = 0.6$ will not draw what a steel with $\bar r = 2.0$ draws easily. **And designing the part before thinking about the die.** A drawing die cannot form an undercut, needs generous radii, and is expensive to change once it has been tried out — so the part designer should talk to the die designer before the geometry is frozen.
 :::
 
-## 1. Shearing: cutting a sheet without cutting it
+## 1. Shearing: cutting a sheet without a chip
 
 ::: definition Blanking, punching and the clearance that decides the edge {#def-shear}
-Blanking (the slug is the part) and punching (the slug is scrap) are the same operation: two hardened edges, a punch and a die, with a **clearance** between them of $c = 0 . 0 5 { - } 0 . 1 3 t$ per side depending on the material — 5-8 % of the thickness for stainless, 6-10 % for mild steel and aluminium, 10-13 % for the soft, gummy ones. The punch pushes the edge into the sheet, a **rollover** of about $0 . 0 5 t$ forms, a burnished band of plastic shear grows down (or up) as the crack nucleates at the die edge and again at the punch edge, and the two cracks meet. **If the clearance is right the two crack lines line up and the edge is half burnish, half fracture, with a small burr; if it is too small the cracks do not meet and you get a double burnish and a large secondary shear; if it is too large the sheet is pulled and bent over and the edge is rolled, wide and dished.** The four zones — rollover, burnish, fracture, burr — are a diagnosis: a maintenance engineer reads a stamped part's edge the way a doctor reads a tongue.
+Blanking (the piece cut out is the part) and punching or piercing (the piece cut out is scrap) are the same operation: a hardened punch and die with a **clearance** between them of about $c = 0.05$–$0.13\,t$ per side, depending on the material and the edge wanted — smaller for soft, ductile metals and thin stock, larger for hard and thick stock. As the punch enters, the edge first rolls over (**rollover**), then a **burnished** band of plastic shear forms, then cracks start at the punch and die edges and run through the sheet (**fracture zone**), leaving a **burr** on the die side. **If the clearance is right the two cracks meet cleanly and the edge is part burnish, part fracture, with a small burr; if it is too small the cracks miss each other and a secondary burnished band appears; if it is too large the sheet is bent into the gap, the rollover and burr grow and the fracture zone becomes rough and tapered.** The four zones are therefore a diagnosis of clearance and tool wear.
 
-The force is a pure shear-area calculation, and it is the reason blanking dies are built with a staggered cutting line:
-
-$$
-F \; = \; \tau _ { \text{UTS } } A _ { \text{shear } } \; \approx \; 0 . 8 \, \sigma _ { \text{UTS } } \, P \, t \qquad ( P \ \text{the perimeter of the cut} )
-$$
-
-with the peak occurring at about 60 % of the punch stroke and dropping to nothing the moment the cracks link. **Shearing the punch face at an angle of $1 { - } 3 ^ { \circ }$ , or stepping the punches to different heights by $h = t / ( 2 \tan \phi )$ , cuts the peak force to $F t / ( t + h )$ and lets a small press do a big hole** — at the cost of a slightly dished part and a punch that regrinds more often. A stripper plate above the sheet holds the part down and, more importantly, keeps the sheet flat while the next hole is punched; a spring or urethane pad does the same below.
+The force is a shear-area calculation:
 
 $$
-\begin{array} { l c c c c }
+F \;=\; \tau_{\text{s}}\, A_{\text{shear}} \;\approx\; 0.7\text{–}0.8\, \sigma_{\text{UTS}}\, P\, t \qquad (P \ \text{the perimeter of the cut})
+$$
+
+and in this lesson the factor 0.8 is used. The force peaks once the punch has penetrated part of the thickness and falls to almost nothing when the cracks link. **Grinding a shear (an angled or rooftop face) on the punch, or stepping several punches to different heights, spreads the cut over a longer stroke and lowers the peak force; a common rule of thumb for a shear depth $h$ is $F_{\text{peak}} \approx F\, t/(t+h)$.** The work done, force times effective stroke, is not reduced. For a rooftop (double) shear across a punch of diameter $d$ with face angle $\phi$, the shear depth is $h = (d/2)\tan\phi$. A stripper plate holds the sheet down and strips it off the punch on the return stroke.
+
+$$
+\begin{array}{l c c c l}
 \text{Operation} & \text{What is the part} & \text{Typical clearance} & \text{Edge quality} & \text{Note} \\ \hline
-\text{Punching} & \text{the hole} & 8 \ \% \ t & \text{good} & \text{slug must be ejected or it marks the sheet} \\
-\text{Blanking} & \text{the blank} & 6 \ \% \ t & \text{good, one face bright} & \text{the die is the gauge} \\
-\text{Fine blanking} & \text{the blank} & 0 . 5 \ \% \ t & 9 5 \ \ \% \ \text{shear face} & \text{V-ring holder, counter-punch, no fracture at all} \\
-\text{Shearing on a guillotine} & \text{the strip} & 4 \ \% \ t & \text{poor, work-hardened} & \text{the edge must be ground before forming} \\
-\text{Laser / waterjet} & \text{the blank} & \text{kerf} & \text{good, HAZ} & \text{no tooling, slow, prototype and short run}
+\text{Punching} & \text{the hole} & 5\text{–}10\ \%\ t & \text{good} & \text{slug must be ejected cleanly} \\
+\text{Blanking} & \text{the blank} & 5\text{–}10\ \%\ t & \text{good, one burnished band} & \text{the die sets the blank size} \\
+\text{Fine blanking} & \text{the blank} & \approx 0.5\ \%\ t & \text{almost fully sheared} & \text{V-ring holder, counter-punch} \\
+\text{Guillotine shearing} & \text{the strip} & \text{a few \% } t & \text{fair, burred} & \text{straight cuts only} \\
+\text{Laser / waterjet} & \text{the blank} & \text{kerf} & \text{good; laser leaves a HAZ} & \text{no tooling; prototypes and short runs}
 \end{array}
 $$
 
-**Fine blanking is the exception that proves the rule**: with a V-shaped **cognet ring** clamping the blank hard, a small clearance of $0 . 5 \ \ \% \ t$ , and a counter-pressure on the punch face, the hydrostatic pressure suppresses the fracture entirely and the cut is 95 % burnish with an as-sheared $R _ { a }$ of $1 . 6 \ \mu \mathrm { m }$ and dimensional tolerance of $\pm 0 . 0 5 \ \mathrm { m m }$ — parts that would otherwise be machined, at 2,000 a minute.
+**Fine blanking** is the exception: a V-shaped **impingement ring** (V-ring) pressed into the sheet around the cut, a very small clearance and a counter-punch under the part keep the shear zone in hydrostatic compression, so fracture is suppressed and the cut edge is almost entirely burnished, smooth and square enough to replace machining on parts such as gears, cams and seat-adjuster components.
 :::
 
-::: example Punching a flange: force, and what the shear buys {#ex-blank level=3 check="40"}
-A $2 0 \ \mathrm { m m }$ diameter hole is punched through $2 \ \mathrm { m m }$ of mild steel sheet, $\sigma _ { \text{UTS } } = 4 0 0 \ \mathrm { M P a }$ , with a clearance of $6 \ \ \%$ per side.
+::: example Punching a hole: force, and what a shear buys {#ex-blank level=3 check="40"}
+A $20\ \mathrm{mm}$ diameter hole is punched through $2\ \mathrm{mm}$ of mild steel, $\sigma_{\text{UTS}} = 400\ \mathrm{MPa}$, with a clearance of $6\ \%$ of the thickness per side. Find the peak punch force in kN.
 
 $$
-F \; = \; \pi d \, t \, ( 0 . 8 \sigma _ { \text{UTS } } ) \; = \; { \frac { \pi \times 2 0 \times 2 \times 3 2 0 } { 1 0 ^ { 3 } } } \; = \; { \bf 4 0 \ k N }
+F \;=\; \pi d\, t\, (0.8\,\sigma_{\text{UTS}}) \;=\; \frac{\pi \times 20 \times 2 \times 320}{10^{3}} \;=\; 40.2\ \mathrm{kN} \;\approx\; \mathbf{40\ kN}
 $$
 
-**Forty kilonewtons — four tonnes — for a hole that costs a fraction of a penny**, which is why blanking is never a force problem and always a **die problem**: the punch is $2 0 \ \mathrm { m m }$ of tool steel with a $9 0 \ \ \mu \mathrm { m }$ clearance band that must not buckle, must not gall, and must be regrindable forty times; the stripper must not mar; and the slug must be allowed to leave, because a trapped slug in a die will crack the die block on the next stroke and put a £4,000 repair into a part worth £0.03. Shearing the punch to a $2 ^ { \circ }$ land (an offset of $h = 0 . 3 5 \ \mathrm { m m }$ ) drops the peak to $4 0 \times 2 / ( 2 + 0 . 3 5 ) = 3 4 \ \mathrm { k N }$ and, more importantly, spreads the load over a longer stroke so the press flywheel barely notices. **The clearance of $6 \ \ \%$ is $0 . 1 2 \ \mathrm { m m }$ per side, and the die is made to that dimension plus the punch wear allowance: a blanking die is a gauge, and after 300,000 strokes the punch has shortened and the clearance has opened and the burr has grown, which is the maintenance signal.**
+About four tonnes-force — a modest load for any press, so the design effort in a piercing tool goes into the tool itself: a slender punch that must not buckle or gall, a die that must be reground many times, and a clear path for the slug, because a slug trapped in the die can crack it. The clearance of $6\ \%$ is $0.12\ \mathrm{mm}$ per side; as the edges wear the burr grows, and burr height is the usual signal for regrinding. Grinding a rooftop shear of $2^\circ$ on the punch gives $h = 10 \tan 2^\circ = 0.35\ \mathrm{mm}$ and, by the rule of thumb, a peak of about $40 \times 2/(2+0.35) = 34\ \mathrm{kN}$. **Check:** stress on the punch $= 40.2\ \mathrm{kN}/(\pi \times 10^2\ \mathrm{mm^2}) = 128\ \mathrm{MPa}$, far below the compressive strength of hardened tool steel, so the punch is safe in compression (buckling of slender punches is checked separately).
 :::
 
-## 2. Bending: the neutral axis that is not where you think
+## 2. Bending: the neutral axis that is not in the middle
 
 ::: definition Bend allowance, the K-factor and the minimum radius {#def-bend}
-A sheet bent to a radius $r$ about a punch of that radius keeps its **inner surface** at the punch radius and its **outer surface** at $r + t$ , but somewhere in between a surface does not change length: the **neutral axis**, at a radius $r + K t$ . It is not at the mid-thickness, because the inner half is compressed and thickens while the outer half stretches and thins, and volume constancy moves the neutral axis **inwards**. The empirical **$K$ -factor** is
+A sheet bent to an inside radius $r$ keeps its **inner surface** at radius $r$ and its **outer surface** at $r + t$; somewhere in between a surface keeps its length: the **neutral surface**, at radius $r + Kt$. For tight bends it lies inside the mid-thickness, because the sheet thins on the outside and the neutral surface shifts towards the inside of the bend. The empirical **$K$-factor** is roughly
 
 $$
-K \; \approx \; { \left\{ \begin{array} { l l } { 0 . 3 3 } & { r / t < 1 \text{ (sharp, heavy forming)} } \\ { 0 . 4 0 } & { 1 \leq r / t \leq 3 \text{ (ordinary)} } \\ { 0 . 5 0 } & { r / t > 3 \text{ (nearly pure bending)} } \end{array} \right. } \qquad \text{and the } \textbf{bend allowance} \text{ is } \; B A \; = \; { \frac { \pi \theta } { 1 8 0 } } ( r + K t )
+K \;\approx\; \begin{cases} 0.33 & r/t < 1 \\ 0.40 & 1 \le r/t \le 3 \\ 0.50 & r/t > 3 \end{cases} \qquad\text{and the } \textbf{bend allowance} \text{ is } \; BA \;=\; \frac{\pi \theta}{180}\,(r + Kt) \quad (\theta \text{ in degrees})
 $$
 
-The flat pattern is built from the **setback** $S B = ( r + t ) \tan ( \theta / 2 )$ — the distance by which each outside leg overshoots the tangent point — and the **bend deduction** $B D = 2 S B - B A$ , which is what one bend actually costs in length:
+The flat pattern is built from the **outside setback** $SB = (r+t)\tan(\theta/2)$ — the distance from the tangent point to the virtual sharp corner of the outside surfaces — and the **bend deduction** $BD = 2\,SB - BA$, which is what one bend costs in length:
 
 $$
-L _ { \text{flat } } \; = \; \sum ( \text{outside legs, to the virtual corner} ) \; - \; \sum B D
+L_{\text{flat}} \;=\; \sum(\text{outside leg dimensions, to the virtual corners}) \;-\; \sum BD
 $$
 
-For a single $9 0 ^ { \circ }$ bend this is $L = A + B - 2 ( r + t ) + B A$ , and for two bends $L = A + B + C - 2 B D$ . **Every CAD system and every press-brake back-gauge does this arithmetic, and every argument about a scrapped blank is an argument about which of $r$ , $K$ and $t$ the two parties disagreed about.**
+For a single $90^\circ$ bend this is $L = A + B - 2(r+t) + BA$, and for two equal bends $L = A + B + C - 2BD$. **CAD systems and press-brake controls do this arithmetic from a bend table; disagreements about a blank length are usually disagreements about $r$, $K$ or $t$.** Good shops build their bend tables by bending coupons of the actual material on the actual tools, because $K$ varies with alloy, temper and tooling.
 
-**Get this wrong by a millimetre and the part is scrap at the press and the argument is about whose millimetre it was; get it right and the drawing office and the die shop share one number, which is the entire point of the K-factor.** CAD systems carry a bend table, the table is built by bending coupons of each lot of each alloy, and the good shops rebuild it per coil, because $K$ moves with the lot.
-
-The **minimum inside radius** is set by the strain on the outer surface, which for a pure bend is
+The **minimum inside radius** is set by the strain on the outer surface. With the neutral surface at mid-thickness,
 
 $$
-\varepsilon _ { \text{outer } } \; = \; \ln \! \left( { \frac { r + t } { r } } \right) \approx { \frac { t } { 2 r + t } } \quad \text{(engineering form)} \qquad \Longrightarrow \qquad r _ { \min } \; = \; t \, \left( { \frac { 1 } { 2 \varepsilon _ { \text{allow } } } } - { \frac { 1 } { 2 } } \right)
+\varepsilon_{\text{outer}} \;=\; \frac{(r+t) - (r + t/2)}{r + t/2} \;=\; \frac{t}{2r + t} \quad \text{(engineering strain)} \qquad \Longrightarrow \qquad r_{\min} \;=\; t\left(\frac{1}{2\varepsilon_{\text{allow}}} - \frac{1}{2}\right)
 $$
 
-and $\varepsilon _ { \text{allow } }$ is a good deal less than the tensile reduction of area, because the outer surface of a bend is in plane strain and carries scratches, sheared-edge microcracks and rolling-direction texture. Hence the shop table: $r _ { \min } = 0 . 2 5 t$ for annealed low-carbon steel bent across the grain, $t$ for as-rolled mild steel, $2 t$ for normalised HSLA, $3 { - } 4 t$ for 500-700 MPa grades, $4 { - } 6 t$ for 700-1,000 MPa cold-formed grades, and **no cold bending at all** for 1,500 MPa press-hardened boron steel, which is formed hot and quenched in the die.
+and $\varepsilon_{\text{allow}}$ is well below the strain implied by the tensile reduction of area, because the outer surface carries scratches, sheared-edge damage and texture. Hence the shop tables: about $0.5t$ for annealed low-carbon steel, $t$–$2t$ for as-rolled and HSLA steel, larger multiples for high-strength and hard-tempered grades, and **no cold bending at all** for 1,500 MPa press-hardened boron steel, which is formed hot and quenched in the die.
 :::
 
 ::: proof The air-bending force {#proof-bendforce}
-Air bending is a three-point bend: the sheet rests on a die of shoulder span $V$ and is pushed at midspan by a punch of radius $r _ { p }$ . At the end of the stroke the sheet has become a plastic hinge at the punch, so equating the external moment to the fully plastic moment of the strip,
+Air bending is a three-point bend: the sheet rests on a V-die of shoulder span $V$ and is pushed at midspan by the punch. Near the end of the stroke the sheet under the punch has become a plastic hinge, so equating the midspan moment to the fully plastic moment of a strip of width $w$ (rigid–perfectly plastic material, yield stress $\sigma_y$),
 
 $$
-{ \frac { F _ { \text{total } } V } { 4 } } \; = \; M _ { p } \; = \; \sigma _ { y } \, w \, { \frac { t ^ { 2 } } { 4 } } \qquad \Longrightarrow \qquad F \; = \; { \frac { \sigma _ { y } \, w \, t ^ { 2 } } { V } }
+\frac{F\, V}{4} \;=\; M_p \;=\; \sigma_y\, w\, \frac{t^2}{4} \qquad \Longrightarrow \qquad F \;=\; \frac{\sigma_y\, w\, t^2}{V}
 $$
 
-Two corrections turn this into the formula on every press-brake catalogue. The deformation is not at yield but at the tensile strength, because the strip has rotated through a large angle and the strain at the outer surface is $t / ( 2 r + t ) \sim 2 0 \ \ \%$ ; and the strain state is plane strain, which raises the flow stress by the factor $2 / \sqrt { 3 } = 1 . 1 5$ , while the friction of the sheet sliding on the die shoulders raises it again. Together they give the standard **1.42**:
+Real sheet is bent in plane strain, which raises the flow stress by $2/\sqrt3 = 1.15$; it work-hardens towards the tensile strength as the outer-fibre strain grows; and the sheet rubs on the die shoulders. Press-brake makers absorb all of this into an empirical factor applied to the tensile strength, typically about **1.3–1.4** for a die opening of about $8t$. This lesson uses the common catalogue form
 
 $$
-\boxed { \; F \; = \; { \frac { 1 . 4 2 \; \sigma _ { \text{UTS } } \; w \; t ^ { 2 } } { V } } \quad \Longleftrightarrow \quad F \ [ \mathrm { k N / m } ] \; = \; { \frac { 1 . 4 2 \; \sigma _ { \text{UTS } } \ [ \mathrm { M P a } ] \; t ^ { 2 } \ [ \mathrm { m m } ] } { V \ [ \mathrm { m m } ] \; \times \; 1 0 0 0 } } \times 1 0 0 0 \; }
+\boxed{\; F \;=\; \frac{1.42\; \sigma_{\text{UTS}}\; w\; t^2}{V} \qquad \Longleftrightarrow \qquad \frac{F}{w}\ [\mathrm{kN/m}] \;=\; \frac{1.42\; \sigma_{\text{UTS}}\,[\mathrm{MPa}]\; t^2\,[\mathrm{mm^2}]}{V\,[\mathrm{mm}]} \;}
 $$
 
-**Note the two things this formula says about a press brake.** The force is **inversely proportional to the die opening**, so halving the $V$-block to get a sharper bend doubles the tonnage — and the $V$ -block must be at least $8 t$ wide or the sheet is drawn into the die and the bend is scored and the die shoulder wears a groove. And the force is **linear in the thickness squared**, so a 25 % thicker sheet is a 56 % heavier job: the reason a brake rated at 100 tonnes over 3 m can bend $6 \ \mathrm { m m }$ mild steel but only $2 . 5 \ \mathrm { m m }$ of 1,000 MPa steel, and why a shop that buys a brake for its current job and then takes a high-strength job is buying a second brake.
+(N/mm and kN/m are the same unit). It is an estimate for air bending; bottoming needs several times more and coining more still.
+
+**Two consequences.** The force is **inversely proportional to the die opening**, so halving $V$ doubles the tonnage — and $V$ is normally kept at about $6$–$12t$ ($8t$ is the usual choice), because a narrow die marks the sheet and overloads the tooling. And the force goes as **thickness squared**, so a 25 % thicker sheet needs $1.25^2 = 1.56$ times the force. A brake rated at 100 tonnes over 3 m ($\approx 327\ \mathrm{kN/m}$) can air-bend about $4.6\ \mathrm{mm}$ of 400 MPa steel on an $8t$ die, but only about $1.8\ \mathrm{mm}$ of 1,000 MPa steel.
 :::
 
 ::: widget plot
-title: Press-brake tonnage against die opening — the 1/V that ends the argument
-f: 2272/x; 5680/x; 333
+title: Press-brake force against die opening
+f: 2272/x; 5680/x; 327
 x: 6,30
 y: 0,400
-labels: 2 mm mild steel, 400 MPa; 2 mm HSLA, 1000 MPa; the capacity of a 1000 kN/m brake
-caption: Force per metre of bend against the die shoulder span $V$ , for $2 \ \mathrm { m m }$ sheet of two alloys, from $F = 1 . 4 2 \sigma _ { \text{UTS } } t ^ { 2 } / V$ . The mild-steel curve is comfortably inside a 100-tonne brake at every die opening; the 1,000 MPa curve only crosses the press limit at $V = 1 7 \ \mathrm { m m }$ , and **the die-opening rule of $V \geq 8 t$ means the smallest die you may use on $2 \ \mathrm { m m }$ stock is $1 6 \ \mathrm { m m }$ — so high-strength steel is bought at the very edge of the machine's capacity, with no margin for a harder coil.** The corollary that surprises nobody in a shop: **the same brake, the same tooling and a coil 40 MPa harder than certified can turn a good week into a week of cracked bends and stalled rams**, which is why the material certificate is a process document and not paperwork.
+labels: 2 mm mild steel, 400 MPa; 2 mm high-strength steel, 1000 MPa; capacity of a 100-tonne, 3 m brake
+caption: Force per metre of bend (kN/m) against the die opening $V$ (mm) for $2\ \mathrm{mm}$ sheet, from $F/w = 1.42\,\sigma_{\text{UTS}}\, t^2/V$. With the usual rule $V \ge 8t = 16\ \mathrm{mm}$, the mild steel needs at most $142\ \mathrm{kN/m}$, well within the brake's $327\ \mathrm{kN/m}$. The 1,000 MPa steel needs $355\ \mathrm{kN/m}$ on a $16\ \mathrm{mm}$ die — more than the brake can give — and drops below the limit only for $V$ above about $17.4\ \mathrm{mm}$; on a $20\ \mathrm{mm}$ die it needs $284\ \mathrm{kN/m}$, a margin of about 15 %. A coil at the top of its strength tolerance eats into that margin, which is why the material certificate matters to the press shop.
 :::
 
 ## 3. Springback: the bend you did not make
 
-::: definition Why the angle is never the angle {#def-spring}
-Under the punch the sheet is plastically bent; when the punch withdraws, the *elastic* part of the strain, which was being carried as a residual stress field by the elastic core, springs back out. The classical estimate comes from unloading a beam whose moment is the fully plastic one, $M _ { p } = \sigma _ { y } w t ^ { 2 } / 4$ , whose curvature change is
+::: definition Why the angle is never the tool angle {#def-spring}
+Under the punch the sheet is bent plastically; when the punch withdraws, the bending moment is removed and the sheet unbends elastically. The classical estimate unloads a rectangular section from the fully plastic moment $M_p = \sigma_y w t^2/4$ with elastic stiffness $EI = E w t^3/12$:
 
 $$
-\Delta \kappa \; = \; { \frac { M _ { p } } { E I } } \; = \; { \frac { \sigma _ { y } w t ^ { 2 } / 4 } { E \, w t ^ { 3 } / 1 2 } } \; = \; { \frac { 3 \sigma _ { y } } { E t } } \qquad \Longrightarrow \qquad \Delta \theta \; = \; \Delta \kappa \, L _ { b } \; = \; { \frac { 3 \sigma _ { y } } { E t } } \, L _ { b }
+\Delta\kappa \;=\; \frac{M_p}{EI} \;=\; \frac{\sigma_y w t^2/4}{E\, w t^3/12} \;=\; \frac{3\sigma_y}{E t} \qquad \Longrightarrow \qquad \Delta\theta \;=\; \Delta\kappa\, L_b \;=\; \frac{3\sigma_y\, L_b}{E\, t}
 $$
 
-where $L _ { b }$ is the length of the bent arc. **Springback is therefore proportional to the yield strength and to the bend angle, and inversely proportional to the thickness and to nothing you control about the elastic modulus** — which is the sentence that decides whether a part is made of steel, aluminium or composite. Since $E$ is the same for every aluminium alloy and one third of steel's, **aluminium springs back about three times as much as steel at the same $\sigma _ { y } / t$ , and high-strength steel three times as much as mild steel at the same $E$ and $t$**. The empirical **springback factor** $X = \theta _ { \text{loaded } } / \theta _ { \text{final } }$ runs 1.05-1.15 for coining and stretch bending, 1.1-1.3 for air bending mild steel, and 1.3-1.8 for 700-1,000 MPa grades.
+where $L_b$ is the length of the bent arc, taken here at mid-thickness: $L_b = \theta\,(r + t/2)$ with $\theta$ in radians. **Springback therefore grows with the yield strength, the bend radius and the bend angle, and falls with the thickness and the elastic modulus.** Since aluminium alloys have about one third of steel's modulus, **aluminium springs back about three times as much as steel at the same $\sigma_y$, $r$ and $t$, and a 1,000 MPa steel about three times as much as a 350 MPa mild steel.** Shops often quote a **springback factor**, the ratio of the bend angle under load to the final bend angle; it is close to 1 for coining and stretch bending and grows with strength and with $r/t$.
 
-The countermeasures, in the order a shop reaches for them: **overbend** (cut the die to the angle that springs back to the right one, and re-cut it when the coil lot changes — the normal answer for mild steel); **bottom and coin** (drive the punch into the sheet at the bottom of the stroke so the die's included angle is ironed into the part — accurate to $0 . 5 ^ { \circ }$ , at three to five times the tonnage and a die that must be re-hardened); **increase the bend radius** so that a smaller fraction of the section is elastic (which is why a big radius is *easier* to hold than a small one, against every beginner's instinct); **planar flange ironing** (a flat flange squeezed between punch and die, so the part cannot rotate); **stretch forming**, which pulls the whole sheet past yield in tension before and during bending so there is no elastic gradient to release; **hot stamping**, which forms at $9 0 0 \ \mathrm { ^ { \circ } C }$ where $\sigma _ { y }$ is $3 0 \ \mathrm { M P a }$ and quenches to $1 { , } 5 0 0 \ \mathrm { M P a }$ inside the die, so the part leaves the die at the die's angle and never springs at all; and **compensate in the die**, which is what actually happens: the die is cut with a deliberate overangle, tried out on presses with coupons from the actual coil lot, and hand-corrected up to twenty times before it is signed off.
+The countermeasures, in roughly the order a shop reaches for them: **overbend** (bend past the target so the part springs back to it — the usual answer on a CNC press brake, which corrects the stroke from a measured angle); **bottom or coin** (drive the punch into the sheet at the bottom of the stroke so the bend zone is yielded through its thickness — accurate to a fraction of a degree, at several times the air-bending force); **keep the bend radius small**, as small as the minimum-radius rule allows, since springback grows with $r/t$; **stretch forming**, which pulls the whole sheet past yield in tension during bending so that there is little elastic bending stress to release; **hot stamping**, in which boron steel is formed at about $900\ ^\circ\mathrm{C}$, where its flow stress is a small fraction of its room-temperature strength, and quenched in the die to about $1{,}500\ \mathrm{MPa}$ tensile strength, so springback is very small; and **compensation in the die**, in which the die surface is cut with a deliberate over-angle predicted by simulation and corrected during try-out on the production coil.
 :::
 
 ::: widget plot
-title: Springback against thickness — and the two alloys that will not share a die
-f: 0.47*(3+x)/x; 1.35*(3+x)/x; 2
+title: Springback against thickness for two steels
+f: 0.4725*(3+x/2)/x; 1.35*(3+x/2)/x; 2
 x: 0.7,4
 y: 0,6
-labels: mild steel, 350 MPa yield; HSLA, 1000 MPa yield; the ±2° tolerance a body panel must hold
-caption: Predicted springback $\Delta \theta = 3 \sigma _ { y } L _ { b } / E t$ in degrees for a $9 0 ^ { \circ }$ bend to a $3 \ \mathrm { m m }$ inside radius on $E = 2 0 0 \ \mathrm { G P a }$ steel, against sheet thickness. Both curves fall with thickness, because a thicker sheet has proportionally less elastic core to unload; both are proportional to $\sigma _ { y }$ , which is why the horizontal line at $2 ^ { \circ }$ — the angle tolerance a body panel must hold over a 1 m flange — is met by mild steel at anything above $1 . 5 \ \mathrm { m m }$ and is **never** met by 1,000 MPa steel in cold air bending. **This one figure is why the automotive industry's lightweighting programme had to invent an entirely new process, hot stamping, rather than simply substituting a thinner, stronger grade into the existing press tools: the presses were fine, the dies were not, and the £40 million of die compensation and try-out that a high-strength body needs is larger than the £8 million the presses cost.**
+labels: mild steel, 350 MPa yield; high-strength steel, 1000 MPa yield; a ±2° angle tolerance
+caption: Predicted springback $\Delta\theta = 3\sigma_y L_b/(E t)$, in degrees, for a $90^\circ$ bend to a $3\ \mathrm{mm}$ inside radius on steel with $E = 200\ \mathrm{GPa}$, against sheet thickness $t$ (mm), with $L_b = (\pi/2)(r + t/2)$. Both curves fall with thickness and scale with $\sigma_y$. The mild steel stays inside $2^\circ$ for any thickness above about $0.8\ \mathrm{mm}$; the 1,000 MPa steel needs more than about $3.1\ \mathrm{mm}$, so thin high-strength parts must be overbent, coined, stretch-formed or hot stamped. The simple model ignores work hardening and the reduced bending moment of a partly elastic section, so treat it as a trend, not a die setting.
 :::
 
 ::: example A bracket, its flat pattern, and its angle {#ex-bendallow level=3 check="61.0"}
-A bracket is $4 0 \ \mathrm { m m }$ and $2 5 \ \mathrm { m m }$ over its two outside legs, $9 0 ^ { \circ }$ , in $2 \ \mathrm { m m }$ mild steel with a $3 \ \mathrm { m m }$ inside radius. Find the blank length and the loaded angle needed to get $9 0 . 0 ^ { \circ }$ .
+A bracket measures $40\ \mathrm{mm}$ and $25\ \mathrm{mm}$ over its two outside legs, with one $90^\circ$ bend, in $2\ \mathrm{mm}$ mild steel ($\sigma_y = 350\ \mathrm{MPa}$, $\sigma_{\text{UTS}} = 400\ \mathrm{MPa}$) with a $3\ \mathrm{mm}$ inside radius. Find the blank length in mm, the springback, and the force to air-bend a $100\ \mathrm{mm}$ wide part on a $16\ \mathrm{mm}$ die.
 
-With $r / t = 1 . 5$ the $K$ -factor is $0 . 4 0$ , so the neutral-axis radius is $3 + 0 . 4 \times 2 = 3 . 8 \ \mathrm { m m }$ and
+With $r/t = 1.5$ the $K$-factor is $0.40$, so the neutral radius is $3 + 0.4 \times 2 = 3.8\ \mathrm{mm}$ and
 
 $$
-B A = { \frac { \pi \times 9 0 } { 1 8 0 } } \times 3 . 8 = 5 . 9 7 \ \mathrm { m m } , \qquad S B = ( 3 + 2 ) \tan 4 5 ^ { \circ } = 5 . 0 0 \ \mathrm { m m }
+BA = \frac{\pi \times 90}{180} \times 3.8 = 5.97\ \mathrm{mm}, \qquad SB = (3+2)\tan 45^\circ = 5.00\ \mathrm{mm}
 $$
 $$
-B D = 2 \times 5 . 0 0 - 5 . 9 7 = 4 . 0 3 \ \mathrm { m m } \qquad \Longrightarrow \qquad L _ { \text{flat } } = 4 0 + 2 5 - 4 . 0 3 = { \bf 6 1 . 0 \ m m }
+BD = 2 \times 5.00 - 5.97 = 4.03\ \mathrm{mm} \qquad \Longrightarrow \qquad L_{\text{flat}} = 40 + 25 - 4.03 = \mathbf{61.0\ mm}
 $$
 
-**Sixty-one millimetres, against the 65 mm a designer gets by adding the two legs — a $4 \ \ \%$ error in the blank, which in a 200 mm blank is 8 mm of scrap and in a drawn part is a wrinkle.** The angle: the springback estimate gives $\Delta \theta = 3 \times 3 5 0 \times ( \pi / 2 \times 4 ) / ( 2 0 0 { , } 0 0 0 \times 2 ) = 1 . 2 ^ { \circ }$ , so the die is cut to $8 8 . 8 ^ { \circ }$ ; the shop will then try it and, finding $8 9 . 4 ^ { \circ }$ because the coil was hard, weld and re-cut the punch to $8 8 . 2 ^ { \circ }$ . **And the bend force, on a $1 0 0 \ \mathrm { m m }$ width with a $1 6 \ \mathrm { m m }$ die: $F = 1 . 4 2 \times 4 0 0 \times 0 . 1 \times 4 / 1 6 = 1 4 \ \mathrm { k N }$ — 1.5 tonnes, which is nothing; the cost of this part is not the press, it is the £18,000 die and the £6 of material and the 4 seconds of loading.**
+Adding the two legs would give 65 mm, 4 mm (about 6 %) too long. **Springback:** $L_b = (\pi/2)(3 + 1) = 6.28\ \mathrm{mm}$, so $\Delta\theta = 3 \times 350 \times 6.28/(200{,}000 \times 2) = 0.0165\ \mathrm{rad} = 0.9^\circ$; the punch must take the bend to about $90.9^\circ$, and try-out on the actual coil fixes the final setting. **Force:** $F = 1.42 \times 400 \times 100 \times 2^2/16 = 14{,}200\ \mathrm{N} = 14\ \mathrm{kN}$, about 1.5 tonnes-force — trivial for any press brake. **Check:** the blank must be shorter than the sum of the outside legs and longer than the sum of the inside legs ($37 + 22 = 59\ \mathrm{mm}$); 61.0 mm lies between.
 :::
 
-## 4. Deep drawing: the cup, and the war fought in the flange
+## 4. Deep drawing: the cup, and the contest in the flange
 
-::: definition What a drawing die actually does {#def-draw}
-A drawing die has three working radii and one clamp. The **punch** pushes a disc of diameter $D$ into a **cavity** of diameter $d$ ; the **die radius** $r _ { d } \approx 4 { - } 8 t$ at the cavity mouth is where the flange bends, then unbends, then slides inward; the **punch radius** $r _ { p } \approx r _ { d } - t$ is where the wall bends around the punch and where the cup finally tears if it is going to; and the **blank holder** clamps the flange with a force $F _ { bh }$ and presses it against the die face, which is the die's only control over the process.
+::: definition What a drawing die does {#def-draw}
+A drawing die has a punch, a die cavity and a clamp. The **punch** of diameter $d$ pushes a disc of diameter $D$ into the **die**; the **die radius** $r_d$ (typically $5$–$10t$) at the cavity mouth is where the flange bends, unbends and slides in; the **punch radius** $r_p$ is where the wall wraps around the punch nose and where the cup usually tears if it is going to; and the **blank holder** clamps the flange with a force $F_{bh}$ against the die face.
 
-The mechanics are a tug of war across the die radius. **Out in the flange** the metal is being pulled radially inward and, because a disc being pulled to a smaller circle must also shrink circumferentially, it is simultaneously **hoop-compressed** — and a thin disc under radial tension and hoop compression is the textbook case for **wrinkling**, which is what a blank holder exists to prevent. **In the wall** the same tension is carried as a simple membrane stress, and the wall can tear at the punch radius, where it is thinnest and least work-hardened. **The blank-holder force is the knob between the two: too little and the flange wrinkles, too much and the wall splits.** Everything else — the lubricant, the die radii, the draw beads, the multi-action press — is a way of putting that one number in the middle of a narrower window.
+The mechanics are a contest across the die radius. **In the flange** the metal is pulled radially inwards and, because each ring must shrink to a smaller circumference, it is also **compressed in the hoop direction** — and a thin annulus under hoop compression wrinkles, which the blank holder exists to prevent. **In the wall** the punch load is carried as a membrane tension, and the wall can neck and tear near the punch radius, where it has thinned most and hardened least. **The blank-holder force sits between the two failures: too little and the flange wrinkles, too much and the friction it adds tears the wall.** Lubrication, die radii and draw beads all widen or shift that window.
 
-The quantitative statement of drawability is the **limit drawing ratio**
-
-$$
-\left( { \frac { D } { d } } \right) _ { \max } \; \approx \; 2 . 0 { - } 2 . 2 \ \ \text{for mild steel} , \qquad 1 . 8 { - } 2 . 0 \ \text{for stainless} , \qquad 2 . 2 { - } 2 . 6 \ \text{for aluminium}
-$$
-
-and the reason it is so small and so universal is derived below: the wall can only carry so much before it yields, and the flange needs more than that to be drawn in. The material parameters that move the limit are the **strain-hardening exponent $n$** (which spreads the thinning instead of localising it), the **strain-rate sensitivity $m$** (which is large for aluminium and for hot steel and which is why magnesium and aluminium are so forgiving), and above all the **Lankford plastic strain ratio**
+Drawability is measured by the **limiting drawing ratio** (LDR), the largest blank-to-punch diameter ratio that can be drawn in one operation:
 
 $$
-\bar { r } \; = \; { \frac { \varepsilon _ { \text{width } } } { \varepsilon _ { \text{thickness } } } } \; = \; { \frac { \ln ( w / w _ { 0 } ) } { \ln ( t / t _ { 0 } ) } } \qquad \text{measured at } 1 5 \ \ \% \ \text{strain, in three directions}
+\left(\frac{D}{d}\right)_{\max} \;\approx\; 2.0\text{–}2.2 \ \text{ for drawing-quality steel}, \qquad \text{about } 1.9\text{–}2.1 \ \text{ for aluminium alloys and stainless steel}
 $$
 
-which says whether the sheet prefers to get wider or thinner when pulled. A perfectly isotropic sheet has $\bar { r } = 1$ ; a good drawing steel has $\bar { r } = 1 . 6 { - } 2 . 2$ , because the iron–carbide texture of a cold-rolled, annealed low-carbon sheet makes thickening easy; a steel with $\bar { r } = 0 . 6$ thins instead of widening and will not draw. **And the difference between the three measured directions, $\Delta r = ( r _ { 0 } + r _ { 9 0 } - 2 r _ { 4 5 } ) / 2$ , is what makes a drawn cup develop "ears" — four of them in aluminium-killed steel, two in interstitial-free steel, at the corners of a rectangular pan, at the ends of a battery can, and at the top of an aerosol shell where the trim press has to cut them off.**
+and the reason it is so similar across materials is derived below. The material property that moves it most is the **Lankford plastic strain ratio**
 
-A cup that must be deeper than one draw allows is **redrawn** — at a reduced ratio of 1.6-1.9 — with an intermediate **anneal** to undo the work hardening that made the first draw possible and would make the second impossible, and with a **shell anneal** in between if the wall has been ironed. **Ironing** is deliberate: when the die and punch clearances are set below the sheet thickness, the wall is squeezed to a uniform gauge on the way past the punch, which is how an aerosol can or a cartridge case gets a wall thinner than its blank and a smooth inside. **Draw beads** — a groove-and-tongue in the blank holder — add a fixed, repeatable restraint to a region where a flat clamp cannot hold, which is how a car outer panel with a 1,200 mm span and a 40 mm draw keeps its surface class A.
+$$
+r \;=\; \frac{\varepsilon_{\text{width}}}{\varepsilon_{\text{thickness}}} \;=\; \frac{\ln(w/w_0)}{\ln(t/t_0)}, \qquad \bar r = \frac{r_0 + 2r_{45} + r_{90}}{4}, \qquad \Delta r = \frac{r_0 + r_{90} - 2r_{45}}{2}
+$$
+
+measured in tensile tests cut at $0^\circ$, $45^\circ$ and $90^\circ$ to the rolling direction, usually at 15–20 % strain. A sheet with $\bar r > 1$ resists thinning: the wall is stronger in the through-thickness direction than the flange is resistant to drawing in, and the LDR rises. Isotropic material has $\bar r = 1$; good drawing steels (aluminium-killed and interstitial-free) reach $\bar r \approx 1.6$–$2.5$ thanks to a crystallographic texture with $\{111\}$ planes parallel to the sheet surface, produced by cold rolling and annealing; aluminium alloys typically have $\bar r \approx 0.6$–$0.8$. **The planar anisotropy $\Delta r$ makes a drawn cup develop "ears" — usually four, at $0^\circ$ and $90^\circ$ to the rolling direction when $\Delta r > 0$ and at $\pm 45^\circ$ when $\Delta r < 0$ — which must be trimmed off.** The strain-hardening exponent $n$ matters less for the LDR than for stretching (section 5).
+
+A cup deeper than one draw allows is **redrawn**, at a smaller ratio (typically about 1.2–1.5 per redraw), often with an intermediate anneal to restore ductility. **Ironing** squeezes the wall between punch and die set at a clearance below the wall thickness, thinning it to a uniform gauge; drawing followed by ironing is how beverage-can bodies are made. **Draw beads** — a ridge on the blank holder running in a groove in the die — add a controlled restraint where a flat clamp cannot, and are standard on large, shallow automotive panels.
 :::
 
-::: proof Why the drawing ratio stops at about two {#proof-ldr}
-The wall of the cup between the die radius and the punch radius carries the whole punch load as a membrane tension. If the wall's flow stress is ${ \bar { \sigma } } _ { w }$ and its gauge is $t$ , the maximum force the wall can carry without yielding is
+::: proof Why the limiting drawing ratio is about two {#proof-ldr}
+Assume a rigid–perfectly plastic sheet of uniform thickness $t$, flow stress $\bar\sigma$ (Tresca, so that $\sigma_r - \sigma_\theta = \bar\sigma$ in the flange, where $\sigma_\theta$ is compressive), no friction and no bending losses. Radial equilibrium of a flange element at radius $\rho$ is
 
 $$
-F _ { \max } \; = \; \pi d \, t \, { \bar { \sigma } } _ { w }
+\frac{d\sigma_r}{d\rho} + \frac{\sigma_r - \sigma_\theta}{\rho} \;=\; 0 \qquad \Longrightarrow \qquad \frac{d\sigma_r}{d\rho} = -\frac{\bar\sigma}{\rho}
 $$
 
-(the classic form uses the tensile strength, since the necked region of a tensile test is what actually arrests the deformation). The force needed to pull the flange in is the ideal work of drawing plus the work of bending and unbending at the die radius and the work of friction against the blank holder; the first term dominates and is
+With $\sigma_r = 0$ at the free outer edge $\rho = D/2$, integration gives the radial stress at the die throat $\rho = d/2$:
 
 $$
-F _ { \text{draw } } \; = \; \pi d \, t \, { \bar { \sigma } } _ { f } \, \psi \, \ln \! \left( { \frac { D } { d } } - 0 . 2 5 \right) \qquad ( \psi \approx 1 . 1 { - } 1 . 3 \ \text{for the redundant work and the bends} )
+\sigma_r\big|_{d/2} \;=\; \bar\sigma \ln\frac{D}{d}, \qquad F_{\text{draw}} \;=\; \pi d\, t\, \bar\sigma \ln\frac{D}{d}
 $$
 
-Equating the two, and writing ${ \bar { \sigma } } _ { w } \approx { \bar { \sigma } } _ { f }$ because the wall has been through the same average strain whatever the ratio, gives
+This is largest at the start of the draw, when the flange is widest. Friction, bending and unbending at the die radius and the blank-holder add to it; lumping them into a **drawing efficiency** $\eta$ gives $F_{\text{draw}} = \pi d t \bar\sigma \ln(D/d)/\eta$. The wall can carry at most $F_{\max} = \pi d\, t\, \sigma_w$, where $\sigma_w$ is the stress at which the wall itself yields and necks. Setting $\sigma_w \approx \bar\sigma$ (both regions have similar flow stress; anisotropy with $\bar r > 1$ raises $\sigma_w$ relative to $\bar\sigma$),
 
 $$
-\ln \! \left( { \frac { D } { d } } - 0 . 2 5 \right) \; = \; { \frac { 1 } { \psi } } \; = \; 0 . 8 3 \qquad \Longrightarrow \qquad { \frac { D } { d } } \; = \; e ^ { 0 . 8 3 } + 0 . 2 5 \; = \; 2 .  7 9
+\ln\left(\frac{D}{d}\right)_{\max} \;=\; \eta \qquad\Longrightarrow\qquad \text{LDR} = e^{\eta}
 $$
 
-**The prediction is 2.8 and the shop figure is 2.1**, and the gap is exactly the terms the ideal analysis left out: friction under the blank holder, which alone costs 20-40 % of the load; the bending and unbending at the die radius, which scales as $\sqrt { t / r _ { d } }$ and is why a die radius smaller than $4 t$ destroys drawability; the fact that the wall is thinnest at the punch radius where it is *least* work-hardened; and the fact that the flange must not wrinkle on the way in, which requires a blank-holder force and therefore more friction. **The lesson is not that the arithmetic is wrong but that it is the right arithmetic: it says the limit is a ratio and not a depth, it says the limit is set by the wall and not by the punch, and it says the only ways to beat it are to reduce the friction, reduce the strain in the flange, or strengthen the wall — which is precisely the list of everything a drawing die designer can do.**
+With no losses ($\eta = 1$) the ideal LDR is $e = 2.72$. Real efficiencies of about $0.7$–$0.8$ give $e^{0.7}$–$e^{0.8} = 2.0$–$2.2$, the observed range. **The analysis shows that the limit is a ratio, not a depth; that it is set by the strength of the wall, not by the punch; and that the ways to raise it are to reduce friction and bending losses (raise $\eta$) or strengthen the wall relative to the flange (high $\bar r$).** That is the list of what a die designer and a steelmaker can actually do.
 :::
 
-::: example Drawing a 100 mm cup 60 mm deep {#ex-drawcup level=3 check="108"}
-A cup $1 0 0 \ \mathrm { m m }$ in diameter and $6 0 \ \mathrm { m m }$ deep is drawn from $1 \ \mathrm { m m }$ mild steel sheet, $\sigma _ { \text{UTS } } = 3 4 0 \ \mathrm { M P a }$ , from a blank of the minimum diameter that will do it in one draw at a limit ratio of 2.1.
+::: example Drawing a 100 mm cup 60 mm deep {#ex-drawcup level=3 check="84"}
+A cup $100\ \mathrm{mm}$ in diameter and $60\ \mathrm{mm}$ deep, with a $9\ \mathrm{mm}$ punch corner radius, is to be drawn from $1\ \mathrm{mm}$ drawing-quality steel, $\sigma_{\text{UTS}} = 340\ \mathrm{MPa}$, LDR = 2.1. Find the blank diameter, check whether one draw suffices, and estimate the drawing force in kN (take $\bar\sigma \approx \sigma_{\text{UTS}}$ and $\eta = 0.75$).
 
-The blank diameter follows from the surface areas (with the corner allowance folded into the standard formula):
-
-$$
-D \; = \; { \sqrt { d ^ { 2 } + 4 d h - 3 . 4 4 d r _ { p } } } \; = \; { \sqrt { 1 0 ^ { 2 } + 4 \times 1 0 \times 0 . 9 \times 1 0 - 3 . 4 4 \times 1 0 \times 0 . 9 } } \; = \; { \sqrt { 3 0 9 } } \; = \; 1 7 . 6 \ \mathrm { c m } \; = \; 1 7 6 \ \mathrm { m m }
-$$
-
-which gives a drawing ratio $D / d = 1 . 7 6$ — **inside the limit of 2.1, so one draw will do it.** The press load, from $F = \pi d \, t \, \sigma _ { \text{UTS } } ( D / d - 0 . 7 5 )$ , is
+The blank diameter follows from equal surface areas (thickness assumed constant), using the standard formula for a cup with a corner radius $r$:
 
 $$
-F \; = \; \pi \times 1 0 0 \times 1 \times 3 4 0 \times ( 1 . 7 6 - 0 . 7 5 ) \; = \; { \bf 1 0 8 \ k N } \quad \text{for the draw, plus } 4 0 { - } 6 0 \ \mathrm { k N } \text{ of blank-holder force}
+D \;=\; \sqrt{d^2 + 4dh - 1.72\, d\, r} \;=\; \sqrt{100^2 + 4 \times 100 \times 60 - 1.72 \times 100 \times 9} \;=\; \sqrt{32{,}452} \;=\; 180\ \mathrm{mm}
 $$
 
-**A 200 kN (20-tonne) triple-action press, then — but a 200 kN press costs £120,000 and the die costs £25,000, and the steel costs 9p.** Now the design change that makes the example worth having: if the cup must be $8 0 \ \mathrm { m m }$ deep, $D = { \sqrt { 1 0 0 + 3 2 0 - 3 1 } } = 1 9 7 \ \mathrm { m m }$ and $D / d = 1 . 9 7$ , still one draw; if it must be $1 1 0 \ \mathrm { m m }$ deep, $D = 2 2 6 \ \mathrm { m m }$ and $D / d = 2 . 2 6$ — **over the limit, and the part becomes two draws, an anneal, a second die set and a second press station, which is the difference between a £25,000 tooling charge and a £60,000 one.** **This is why the drawing office's rule is that the depth of a cup is not a design parameter; the drawing ratio is.**
+so $D/d = 1.80$ — **inside the limit of 2.1: one draw.** The drawing force from the proof is
+
+$$
+F \;=\; \frac{\pi d\, t\, \bar\sigma \ln(D/d)}{\eta} \;=\; \frac{\pi \times 100 \times 1 \times 340 \times \ln 1.80}{0.75} \;=\; 83{,}800\ \mathrm{N} \;\approx\; \mathbf{84\ kN}
+$$
+
+against a wall capacity of $\pi d t \sigma_{\text{UTS}} = 107\ \mathrm{kN}$, a margin of about 1.3. The blank-holder force comes on top of this (see the exercises), so a press of about 20 tonnes would be chosen. **Design changes:** for a depth of $80\ \mathrm{mm}$, $D = 201\ \mathrm{mm}$ and $D/d = 2.01$, still one draw but close to the limit; for $110\ \mathrm{mm}$, $D = 229\ \mathrm{mm}$ and $D/d = 2.29$ — **over the limit, so the part needs a first draw and a redraw, with a second die set.** **Check:** the ideal formula with $\eta = 0.75$ predicts failure when $\ln(D/d) = 0.75$, i.e. $D/d = 2.12$, consistent with the stated LDR of 2.1.
 :::
 
 ## 5. Stretching, and the diagram that says when it stops
 
 ::: definition The forming limit diagram {#def-fld}
-Stretch forming — a dome, a corner, a double-curvature panel, the roof of a car — has no flange and no blank holder, and its only limit is **localised necking**. A sheet stretched biaxially thins until a groove in it becomes easier to extend than the surrounding metal, and then all the further strain goes into the groove and the part splits in a second. The strain state at which that happens depends on the **strain ratio** $\rho = \varepsilon _ { 2 } / \varepsilon _ { 1 }$ (minor over major principal surface strain): uniaxial tension gives $\rho = - 0 . 5$ , plane strain gives $\rho = 0$ , and equibiaxial stretching gives $\rho = + 1$ . Plotting the **major limit strain** against $\rho$ gives the **forming limit diagram**, whose shape is one of the most useful empirical results in the whole of manufacturing:
+Stretch forming — a dome, a corner, a doubly curved panel — has little or no flange draw-in, and its limit is **localised necking**: the sheet thins until a band becomes easier to deform than the surrounding metal, all further strain goes into the band, and the part splits. The strain at which that happens depends on the **strain path**, described by the ratio $\rho = \varepsilon_2/\varepsilon_1$ of minor to major principal surface strain: uniaxial tension of an isotropic sheet gives $\rho = -0.5$, plane strain $\rho = 0$ and equibiaxial stretching $\rho = +1$. Plotting the **limit major strain** against the minor strain gives the **forming limit diagram** (FLD) and its **forming limit curve** (FLC). Its characteristic V shape has its **lowest point at plane strain**, $\varepsilon_2 = 0$, called $\mathrm{FLD}_0$.
+
+For low-carbon and conventional high-strength steels the empirical **Keeler–Brazier** relation (engineering strain, per cent) gives the plane-strain limit from the strain-hardening exponent and the thickness:
 
 $$
-\mathrm { FLD } ( \rho ) \; = \; { \left\{ \begin{array} { l l } { \mathrm { FLD } _ { 0 } \, ( 1 + \rho ) ^ { \, 0 . 6 } } & { - 1 \leq \rho \leq 0 \quad \text{(left, sloping branch)} } \\ { \mathrm { FLD } _ { 0 } \left[ 1 + \beta \rho \right] } & { 0 \leq \rho \leq 1 \quad \text{(right, nearly flat branch, } \beta \approx 0 { - } 0 . 1 \text{)} } \end{array} \right. }
+\mathrm{FLD}_0\ [\%] \;=\; \left(23.3 + 14.13\, t\,[\mathrm{mm}]\right)\frac{n}{0.21} \qquad (n \le 0.21,\ t \text{ up to about } 3\ \mathrm{mm})
 $$
 
-with the **forming limit at plane strain** given by the **Keeler–Goodwin** relation
+The standard construction then draws the **left branch** ($\varepsilon_2 < 0$) as a line of constant thickness strain, $\varepsilon_1 + \varepsilon_2 = \varepsilon_0$ in true strain (where $\varepsilon_0 = \ln(1 + \mathrm{FLD}_0/100)$), so the limit major strain *rises* as the minor strain becomes more negative; and the **right branch** ($\varepsilon_2 > 0$) rising more gently, with a slope of about 0.6, up to minor strains of about 20 %. The relation does not apply to most advanced high-strength steels, whose curves must be measured.
 
-$$
-\mathrm { FLD } _ { 0 } \; = \; { \frac { 2 3 . 3 + 4 2 n } { 1 + 0 . 2 1 6 6 f } } \times \left( { \frac { n } { 0 . 0 4 } } \right) ^ { \! 0 . 3 } \ \text{for } n < 0 . 0 4 \text{ only}, \qquad f = { \frac { t \ [ \mathrm { m m } ] } { 2 0 } }
-$$
+**Three facts follow.** **Plane strain is the worst case**: a feature that stretches in one direction while the other is held — a long radius, the wall of a shallow draw, a character line — fails at the lowest major strain. **Allowing the sheet to contract sideways ($\varepsilon_2 < 0$) raises the limit**, because the thickness then falls more slowly for the same major strain. **And the whole curve scales with $n$**, which is the same physics as Considère's criterion $\varepsilon_u = n$ (derived in the exercises): **the most valuable thing a steelmaker can give a stretch-forming sheet is a high strain-hardening exponent.**
 
-**Read the diagram, not the equation, and three facts come out.** **The left branch is steep**: a strain state moving from plane strain toward uniaxial tension loses formability fast, which is why a corner radius that stretches in one direction only is so much harder than a dome. **The right branch is flat**: once you are in biaxial tension, more biaxiality costs nothing, which is why a well-designed dome is easy and why hydroforming, which superimposes pressure on the sheet, can stretch a metal that tears on a punch. **And the whole curve scales with $n$** — Goodwin's equation is essentially $\mathrm { FLD } _ { 0 } \approx 2 3 + 4 2 n$ , which is the same physics as Considère's $n = \varepsilon _ { u }$ and says that **the single most valuable thing a steelmaker can do for a formable sheet is to give it a high strain-hardening exponent**, which is exactly what a dual-phase, TRIP or TWIP steel is: a microstructure engineered to keep hardening to enormous strains at the price of yield strength you then fight in the springback.
-
-A production part is judged by measuring a grid (a 2 mm circle grid etched or printed on the blank, then measured after forming) at the critical point and plotting the ellipse's major and minor strains on the FLD. **The acceptance rule is a margin: the point must lie below the curve by at least $10 \ \ \%$ of the limit, or 3 percentage points, whichever is greater** — because the curve itself is a scatter band, the measurement is a $\pm 1$ point uncertainty, and the coil's $n$ varies by 0.02 from one heat to the next.
+A production part is checked by printing or etching a grid of small circles on the blank, forming it, and measuring the ellipses at the critical points: $\varepsilon_1 = \ln(\text{major axis}/d_0)$, $\varepsilon_2 = \ln(\text{minor axis}/d_0)$. **The acceptance rule is a margin: a common shop practice is to require the measured point to lie about 10 percentage points of major strain below the curve**, because the curve is a scatter band, the measurement has an uncertainty of about one point, and $n$ and thickness vary from coil to coil.
 :::
 
 ::: widget plot
-title: The forming limit diagram — the sheet designer's material-selection chart
-f: min(31.4,31.4*pow(1+x,0.6)); min(28.3,28.3*pow(1+x,0.6)); min(17.5,17.5*pow(1+x,0.6))
-x: -1,1
-y: 0,40
-labels: mild steel, n = 0.20, 1 mm (FLD₀ = 31.4 %); 10 % safety margin; hard HSLA, n = 0.015, 1.5 mm (FLD₀ = 17.5 %)
-caption: Limit major strain (per cent) against the strain ratio $\rho = \varepsilon _ { 2 } / \varepsilon _ { 1 }$ for two sheets, from the Keeler–Goodwin relation, with the middle curve the usual 10 % design margin. The steep left branch is the region of stretching in one direction — a corner, a flange radius, the wall of a shallow draw; the flat right branch is stretching in two — a dome, a double-curvature panel, a hydroformed bulge. **Read a part, not a coupon: a body-side outer has one point that is a plane-strain stretch over a wheel arch, another that is a near-uniaxial stretch at a boss, and a third that is a compression-dominated flange, and all three must lie under the curve.** **The gap between the two curves is the whole content of a steel company's "formable" grade: 14 points of extra limit strain, bought with $n$ , and worth a press station and an anneal.**
+title: The forming limit diagram
+f: max(30.5-x,30.5+0.6*x); max(20.5-x,20.5+0.6*x); max(22.7-x,22.7+0.6*x)
+x: -40,40
+y: 0,80
+labels: drawing steel, n = 0.20, t = 1 mm; the same with a 10-point safety margin; dual-phase steel, n = 0.12, t = 1.5 mm
+caption: Limit major strain $\varepsilon_1$ (true strain, per cent) against minor strain $\varepsilon_2$ (per cent), constructed from the Keeler–Brazier $\mathrm{FLD}_0$ with a left branch of constant thickness ($\varepsilon_1 + \varepsilon_2 = \varepsilon_0$) and a right branch of slope 0.6. (Keeler's construction is in engineering strain; drawing both branches in true strain is a simplification that matters little below about 20 % minor strain.) The drawing steel has $\mathrm{FLD}_0 = 35.6\ \%$ engineering, $\varepsilon_0 = 30.5\ \%$ true; the dual-phase steel $\mathrm{FLD}_0 = 25.4\ \%$, $\varepsilon_0 = 22.7\ \%$, and its curve would in practice be measured rather than estimated. Every point is lowest at plane strain, which is why a part is judged by where each critical point sits on the diagram, not by its major strain alone.
 :::
 
 ::: widget plot
@@ -232,206 +230,225 @@ title: What the strain-hardening exponent buys
 f: 100*(exp(x)-1); 30
 x: 0.05,0.6
 y: 0,90
-labels: uniform elongation = eⁿ − 1 (per cent); the 30 % stretch a drawn shell needs
-caption: Uniform elongation in tension against the strain-hardening exponent, from Considère's criterion (derived in the exercises): a tensile specimen necks when $d \sigma / d \varepsilon = \sigma$ , which for $\sigma = K \varepsilon ^ { n }$ gives $\varepsilon _ { u } = n$ exactly, so the stretch a sheet can take before necking is $e ^ { n } - 1$ . **The horizontal line is the strain a drawn and ironed shell needs in its wall; the curve says you need $n \approx 0 . 2 6$ to get it from a single-phase metal.** Mild steel has $n = 0 . 2 0 { - } 0 . 2 4$ , an IF drawing steel $0 . 2 4 { - } 0 . 2 8$ , a 304 stainless $0 . 4 5 { - } 0 . 6$ (and it work-hardens so fast that a drawn cup is harder than the blank by a factor of three), a 1,000 MPa dual-phase steel $0 . 1 0 { - } 0 . 1 2$ , and a 1,500 MPa press-hardened boron steel essentially none — **which is the entire reason the automotive strength hierarchy is also a process hierarchy: mild steel is drawn, dual-phase is drawn and springbacks, and martensite is formed hot and quenched, because after that there is no $n$ left to form with.**
+labels: uniform elongation e^n − 1 (per cent); a 30 % stretch
+caption: Uniform elongation in a tensile test, in per cent, against the strain-hardening exponent $n$, from Considère's criterion (derived in the exercises): a specimen of a material with $\sigma = K\varepsilon^n$ starts to neck when $d\sigma/d\varepsilon = \sigma$, i.e. at true strain $\varepsilon_u = n$, which is an engineering elongation of $e^n - 1$. To reach a 30 % uniform stretch needs $n \approx \ln 1.3 = 0.26$. Typical values: low-carbon drawing steel $n \approx 0.20$–$0.24$, interstitial-free steel $0.22$–$0.28$, austenitic stainless steel 304 about $0.4$–$0.5$, a 1,000 MPa dual-phase steel about $0.1$, and as-quenched martensitic press-hardened steel very little — which is why the strongest automotive grades are formed hot, before they become martensite.
 :::
 
-::: example Is the panel safe? {#ex-fld level=3 check="25.9"}
-A drawn outer panel is measured at three critical points after a circle-grid print of $4 . 0 \ \mathrm { m m }$ diameter: point A has become an ellipse of $5 . 4 \ \mathrm { m m } \times 3 . 7 \ \mathrm { m m }$ , and point B an ellipse of $5 . 1 \ \mathrm { m m } \times 4 . 4 \ \mathrm { m m }$ . The sheet is $1 \ \mathrm { m m }$ mild steel with $n = 0 . 2 0$ , so $\mathrm { FLD } _ { 0 } = 3 1 . 4 \ \ \%$ .
+::: example Is the panel safe? {#ex-fld level=3 check="30.5"}
+A drawn panel is printed with $4.0\ \mathrm{mm}$ circles before forming. Afterwards, at point A the circle has become an ellipse of $5.2\ \mathrm{mm} \times 4.0\ \mathrm{mm}$, and at point B one of $5.6\ \mathrm{mm} \times 3.4\ \mathrm{mm}$. The sheet is $1\ \mathrm{mm}$ drawing steel with $n = 0.20$. Find the limit major strain at A (true strain, in per cent) and judge both points with a 10-point margin.
+
+$\mathrm{FLD}_0 = (23.3 + 14.13 \times 1)(0.20/0.21) = 35.6\ \%$ engineering, so $\varepsilon_0 = \ln 1.356 = 0.305$.
 
 $$
-\text{A: } \varepsilon _ { 1 } = \ln ( 5 . 4 / 4 . 0 ) = 0 . 3 0 0 , \quad \varepsilon _ { 2 } = \ln ( 3 . 7 / 4 . 0 ) = - 0 . 0 7 7 \qquad \Longrightarrow \qquad \rho = - 0 . 2 6
+\text{A: } \varepsilon_1 = \ln(5.2/4.0) = 0.262, \quad \varepsilon_2 = \ln(4.0/4.0) = 0 \qquad \text{(plane strain)}
 $$
 $$
-\text{B: } \varepsilon _ { 1 } = \ln ( 5 . 1 / 4 . 0 ) = 0 . 2 4 1 , \quad \varepsilon _ { 2 } = \ln ( 4 . 4 / 4 . 0 ) = 0 . 0 9 5 \qquad \Longrightarrow \qquad \rho = + 0 . 4 0
+\text{B: } \varepsilon_1 = \ln(5.6/4.0) = 0.336, \quad \varepsilon_2 = \ln(3.4/4.0) = -0.163 \qquad (\rho = -0.48)
 $$
 
-Point A sits on the sloping branch, where the limit is $\mathrm { FLD } = 3 1 . 4 \times ( 1 - 0 . 2 6 ) ^ { 0 . 6 } = { \bf 2 5 . 9 \ \ \% }$ against a measured $3 0 . 0 \ \ \%$ — **it is above the curve, and the panel splits at that point, or will, on a coil at the soft end of the tolerance.** Point B sits on the flat branch, where the limit is $3 1 . 4 \ \ \%$ against a measured $2 4 . 1 \ \ \%$ — **a comfortable 7 points of margin, even though B has been stretched almost as far as A.** **That is the whole practical content of the FLD: two points that look equally bad in a tensile test, one of which is failing and one of which is safe, distinguished only by the direction of the second strain.** **The fix for A is not a better steel; it is a bigger radius at that feature, or a draw bead that moves the strain there into the flat branch, or a blank that is 4 mm larger so the metal arrives with less stretching left to do.**
+Point A is at plane strain, where the limit is $\varepsilon_0 = \mathbf{30.5\ \%}$ against a measured $26.2\ \%$: below the curve, but **only 4.3 points below it, inside the 10-point margin — a marginal point that will split on a soft or thin coil.** Point B is on the left branch, where the limit is $30.5 + 16.3 = 46.8\ \%$ against a measured $33.6\ \%$: **13 points of margin, safe — although B has been stretched further than A.** **That is the practical content of the FLD: the direction of the minor strain matters as much as the size of the major strain.** The fix at A is to move the strain path away from plane strain or reduce the stretch there — a larger radius at the feature, a change in blank shape or draw-bead restraint that lets more metal flow in.
 
-Had point A's ellipse been $5 . 1 \times 3 . 7 \ \mathrm { m m }$ , the strains would be $2 4 . 1 \ \ \% / - 7 . 7 \ \ \%$ , $\rho = - 0 . 3 2$ , limit $3 1 . 4 \times 0 . 6 8 ^ { 0 . 6 } = 2 2 . 9 \ \ \%$ — **below the limit but inside the 3-point margin, which is the state engineers call "safe today".**
+**Check:** at B the thickness strain is $-(0.336 - 0.163) = -0.173$, at A it is $-0.262$, so A has thinned more ($e^{-0.262} = 0.77$ of the original thickness) despite its smaller major strain — consistent with A being the critical point.
 :::
 
 ## 6. The rest of the family
 
 ::: definition The sheet-metal processes and what each is for {#def-rest}
 $$
-\begin{array} { l l l l l }
+\begin{array}{l l l l l}
 \textbf{Process} & \textbf{Stress state} & \textbf{Limit} & \textbf{Typical part} & \textbf{Rate} \\ \hline
-\text{Press-brake bending} & \text{bend, then spring} & \text{springback, } r _ { \min } & \text{brackets, panels, chassis rails} & 1 0 { - } 6 0 / \mathrm { h } \\
-\text{Roll bending} & \text{progressive bend} & \text{springback, end lead-in} & \text{tubes, large cylinders} & \text{slow} \\
-\text{Deep drawing} & \text{tension + hoop compression} & D / d , \text{ wrinkling} & \text{cans, sinks, sumps, battery cases} & 1 0 { - } 6 0 / \mathrm { m i n } \\
-\text{Redrawing / ironing} & \text{tension, wall ironing} & \text{work hardening, anneals} & \text{aerosol cans, cartridge cases} & 4 0 0 / \mathrm { m i n } \\
-\text{Stretch forming} & \text{biaxial tension} & \text{FLD, overstretch} & \text{aircraft skin, double-curvature} & \text{slow} \\
-\text{Hydroforming (sheet)} & \text{tension + superposed pressure} & \text{FLD } \times 2 & \text{wing skins, titanium fittings} & \text{slow} \\
-\text{Tube hydroforming} & \text{internal pressure + axial feed} & \text{bulge limit, wrinkling} & \text{bicycle frames, exhaust manifolds} & \text{minutes} \\
-\text{Spin forming} & \text{local bending, roller tool} & \text{thinning, tool path} & \text{nose cones, rocket tanks, domes} & \text{minutes} \\
-\text{Shear spinning} & \text{local shear} & \text{shear band cracking} & \text{pressure vessels, missile cases} & \text{minutes} \\
-\text{Roll forming} & \text{progressive bending, flat product} & \text{edge strain, springback} & \text{gutters, rails, sections, 100 m coils} & 1 0 { - } 6 0 \ \mathrm { m / m i n } \\
-\text{Hot stamping} & \text{form hot, quench in die} & \text{no springback, no } n & \text{bumper beams, A-pillars, roof rails} & 4 { - } 1 2 / \mathrm { m i n } \\
-\text{Magnetron / explosive} & \text{strain rate } 1 0 ^ { 2 } { - } 1 0 ^ { 4 } \ \mathrm { s ^ { - 1 } } & \text{adiabatic shear} & \text{one-off panels, titanium, armour} & \text{one a day} \\
-\text{Incremental (ISF)} & \text{local stretching, point tool} & \text{FLD, wall angle} & \text{one-off medical and marine panels} & \text{hours}
+\text{Press-brake bending} & \text{bending} & \text{springback, } r_{\min} & \text{brackets, enclosures, chassis rails} & \text{tens per hour} \\
+\text{Roll bending} & \text{progressive bending} & \text{springback, flat ends} & \text{cylinders, large tubes} & \text{slow} \\
+\text{Deep drawing} & \text{tension + hoop compression} & D/d, \text{ wrinkling} & \text{cups, sinks, sumps, battery cases} & 10\text{–}60/\mathrm{min} \\
+\text{Redrawing / ironing} & \text{tension, wall ironing} & \text{work hardening, anneals} & \text{beverage cans, deep shells} & \text{hundreds}/\mathrm{min} \text{ (cans)} \\
+\text{Stretch forming} & \text{biaxial tension} & \text{FLD} & \text{aircraft skins} & \text{slow} \\
+\text{Sheet hydroforming} & \text{tension + fluid pressure} & \text{FLD (raised by pressure)} & \text{aircraft fittings, panels} & \text{minutes} \\
+\text{Tube hydroforming} & \text{internal pressure + axial feed} & \text{bursting, wrinkling} & \text{frame rails, exhaust parts, bicycle frames} & \text{tens of seconds} \\
+\text{Spinning} & \text{local bending, roller tool} & \text{thinning, tool path} & \text{reflectors, cookware, tank ends} & \text{minutes} \\
+\text{Shear spinning} & \text{local shear} & \text{wall cracking} & \text{cones, pressure-vessel heads} & \text{minutes} \\
+\text{Roll forming} & \text{progressive bending} & \text{edge strain, springback} & \text{gutters, rails, profiles} & 10\text{–}60\ \mathrm{m/min} \\
+\text{Hot stamping} & \text{form hot, quench in die} & \text{cycle time, coating} & \text{B-pillars, bumper beams, roof rails} & \text{a few strokes/min} \\
+\text{Electromagnetic forming} & \text{pulsed, strain rate } 10^{3}\text{–}10^{4}\ \mathrm{s^{-1}} & \text{coil life, conductivity} & \text{tube crimps, aluminium panels} & \text{seconds} \\
+\text{Incremental (ISF)} & \text{local stretching, point tool} & \text{FLD, wall angle} & \text{prototypes, one-off panels} & \text{hours}
 \end{array}
 $$
 
-Four of these deserve a sentence each because they change what a designer can ask for. **Hydroforming** replaces the punch with a pressurised fluid diaphragm, so the sheet is supported by pressure on its outer surface throughout the stretch: the groove that would become a neck is pressed shut as fast as it forms, and the limit strain roughly doubles — a titanium wing fitting that would tear at 25 % on a punch stretches to 55 % in a fluid cell, at the cost of a vessel that holds 100 MPa and a cycle time in minutes. **Roll forming** bends the strip progressively through ten to twenty stands, each taking a few degrees of the bend, so that the force that would need a 5,000-tonne press becomes a 50-tonne one and the part becomes a hundred metres long and straight; the price is that the section must be constant along its length and that every hole must be punched before the strip is formed. **Hot stamping** (press hardening of boron steel, 22MnB4) heats a blank to $9 2 0 \ \mathrm { ^ { \circ } C }$ , transfers it in four seconds to a water-cooled die, forms it at $3 0 \ \mathrm { M P a }$ flow stress with no springback whatever, and holds it closed for eight seconds so the die quenches it at $3 0 \ \mathrm { K / s }$ to $1 { , } 5 0 0 \ \mathrm { M P a }$ martensite: **a part that is formed with the forces of mild steel and comes out at five times its strength, and that cannot be bent, drilled or trimmed cold afterwards** — which is why every hot-stamped part needs a laser or a punch operation done while it is still hot. **Tailor-welded blanks** laser-weld two or three gauges, or two alloys, into one blank before forming, so a single drawn part is thick where it must be stiff and thin where it must be drawn — the trick being that the weld must be positioned in a region that only stretches and never wrinkles, and that the two materials must be drawn at the same rate or the blank shears at the weld.
+Four of these change what a designer can ask for. **Hydroforming** replaces the punch or die with fluid pressure. In sheet hydroforming (fluid-cell or rubber-pad forming) one rigid tool and a pressurised diaphragm form the part, so one tool serves for low-volume aircraft parts; the superposed pressure also delays necking. In tube hydroforming a tube is expanded into a die by internal pressure while its ends are pushed in to feed material, making closed sections with varying cross-section in one piece. **Roll forming** bends strip progressively through a series of roll stands, each adding a few degrees, so long constant sections are made continuously and cut to length; holes are usually punched in line before the forming stands. **Hot stamping** (press hardening) heats a boron steel blank such as 22MnB5 to about $900$–$950\ ^\circ\mathrm{C}$ to make it austenitic, transfers it in a few seconds to a water-cooled die, forms it while it is soft and holds the die closed for several seconds so the part is quenched faster than the critical cooling rate (about $27\ \mathrm{K/s}$) to martensite of about $1{,}500\ \mathrm{MPa}$ tensile strength: **formed with modest forces and almost no springback, it comes out about three times as strong as mild steel, and is then trimmed and pierced by laser (or punched in the die while still hot), because cold-trimming the hardened part wears dies very fast.** **Tailor-welded blanks** laser-weld sheets of different thickness or grade into one blank before forming, so one drawn part is thick where it must be stiff and thin elsewhere; the weld line must be placed where the forming strains are moderate.
 :::
 
-::: example Hot stamping against cold high-strength steel {#ex-hss level=3 check="1.8"}
-A bumper reinforcement, 1,400 mm long, is to be made at 1,500 MPa. Route A: cold-form a 1,000 MPa dual-phase steel and use more material. Route B: hot stamp 22MnB4 to 1,500 MPa.
+::: example Hot stamping against cold-formed high-strength steel {#ex-hss level=3 check="1.47"}
+A bumper reinforcement, 1,400 mm long with a developed (flat) width of 300 mm, is made either (A) cold-formed from a 1,000 MPa dual-phase steel or (B) hot stamped from 22MnB5 to 1,500 MPa, $1.2\ \mathrm{mm}$ thick. If the crash requirement is taken as an equal fully plastic bending moment per unit width, $M_p \propto \sigma\, t^2$, what thickness does route A need, and how much heavier is it? (Enter the route-A thickness in mm to two decimal places; steel density $7{,}850\ \mathrm{kg/m^3}$.)
 
-**Route A** needs a wall of $2 . 2 \ \mathrm { m m }$ to match the crash energy of $1 . 2 \ \mathrm { m m }$ of hot-stamped steel, so its wall is $2 . 2 / 1 . 2 = { \bf 1 . 8 }$ times as thick and it weighs 83 % more; it is formed on an existing 1,000-tonne press at 12 parts a minute, but it springs back $6 ^ { \circ }$ on every flange, so the four flange angles must be held to $\pm 1 ^ { \circ }$ by coining pads that add 25 % to the tonnage and a die that must be re-cut twice per programme. **Route B** weighs $1 . 2 \ \mathrm { m m }$ , has no springback at all, and holds $\pm 0 . 3 \ \mathrm { m m }$ on the bore faces — but the blank must be heated for four minutes in a tunnel furnace, transferred in under four seconds before the temperature falls $8 0 \ \mathrm { K }$ (which is enough to make martensite with a soft band in it), formed in a water-cooled die at two parts a minute, then **hot-trimmed by laser or hot-punched**, because a 1,500 MPa steel cannot be cold-trimmed without shattering the die.
+Equal $\sigma t^2$ gives
 
-The costed comparison at 120,000 a year: **Route A £14.80 a part with £380,000 of tooling; Route B £17.40 with £1,150,000 of tooling and a £2.1 M furnace and press line** — and Route B saves $0 . 9 \ \mathrm { k g }$ per car, which at a fleet of 120,000 and a $1 . 8 \ \mathrm { g / g }$ CO₂-linked penalty is worth £3.10 a car over the programme. **The decision goes to Route B, and it goes there because of the mass and the tolerance, not the unit cost — which is the normal outcome whenever a forming process is chosen for a property rather than a price.**
+$$
+t_A \;=\; t_B\sqrt{\frac{\sigma_B}{\sigma_A}} \;=\; 1.2\sqrt{\frac{1500}{1000}} \;=\; \mathbf{1.47\ mm}
+$$
+
+22 % thicker, and the extra mass is $7{,}850 \times 1.4 \times 0.30 \times (1.47 - 1.20) \times 10^{-3} = 0.89\ \mathrm{kg}$ per part. **Route A** runs on an existing cold press line at several parts per minute, but its springback must be controlled by over-bending and die compensation. **Route B** saves the mass and holds its shape, but needs a furnace, a cooled die, a cycle of several seconds closed in the die, and laser trimming. Which wins depends on volume, on the value placed on mass, and on dimensional tolerance; for safety cage parts such as B-pillars, carmakers have widely chosen hot stamping. **Check:** if the requirement were tensile strength alone ($\propto \sigma t$) the ratio would be $1.5$ and the thickness $1.80\ \mathrm{mm}$; bending-dominated loading favours the thinner, stronger sheet less strongly than pure tension does.
 :::
 
 ## 7. Tooling, presses and the shape of the cost
 
-::: definition What a sheet-metal part actually costs {#def-econ}
-The press is bought for **tonnage, bed length and shut height**; the die is bought for **steel, months and hands**. A press-brake tool is a hardened steel punch and V-die at £600 a metre and is changed in four minutes; a drawing die for a car outer is a 12-tonne casting of EN3B or tool steel, cut on a five-axis mill for three months, then **trialled** — fitted, run, inspected, welded, hand-ground, run again, twenty to forty times — by a die sinker whose skill is the reason a body panel has a surface class and not a waviness map. That try-out is 30-50 % of the die's cost and cannot be bought back.
+::: definition What a sheet-metal part costs {#def-econ}
+The press is bought for **tonnage, bed size and shut height**; the die is bought for **material, machining time and try-out**. Press-brake tooling is standard and changed in minutes; a drawing die for a large car panel is a substantial casting (often nodular cast iron with hardened steel inserts on the working edges), machined on five-axis mills and then **tried out** — run, inspected, adjusted and re-run many times — before it makes good panels. Try-out is a large share of the die cost and lead time. Indicative figures (2020s, wide variation):
 
 $$
-\begin{array} { l c c c c }
-& \text{laser + brake} & \text{prototype press tool} & \text{production press tool} & \text{transfer-line tool} \\
-\text{Tooling} & \pounds 0 { - } 2 \mathrm { k } & \pounds 8 { - } 2 5 \mathrm { k } & \pounds 6 0 { - } 2 5 0 \mathrm { k } & \pounds 3 0 0 \mathrm { k } \text{ per die, } \times 5 \\
-\text{Lead time} & \text{days} & 4 { - } 8 \ \text{weeks} & 1 6 { - } 3 0 \ \text{weeks} & 4 0 { - } 6 0 \ \text{weeks} \\
-\text{Life} & \infty \ \text{(machine time)} & 5 { \mathrm { k } } { - } 2 0 \mathrm { k } \ \text{parts} & 3 0 0 \mathrm { k } { - } 1 \mathrm { M } & 1 0 \mathrm { M } + \\
-\text{Tolerance} & \pm 0 . 5 \ \mathrm { m m } & \pm 0 . 5 \ \mathrm { m m } & \pm 0 . 2 \ \mathrm { m m } & \pm 0 . 1 \ \mathrm { m m } \\
-\text{Rate} & \text{one an hour} & 2 { - } 8 / \mathrm { h } & 6 { - } 2 0 / \mathrm { m i n } & 1 2 { - } 2 5 \ \text{strokes/min} \\
-\text{Surface} & \text{brake marks} & \text{fair} & \text{class A} & \text{class A, oiled}
+\begin{array}{l c c c c}
+& \text{laser + brake} & \text{prototype tool} & \text{production die} & \text{transfer / tandem line die} \\
+\text{Tooling} & \pounds 0\text{–}2\mathrm{k} & \pounds 8\text{–}25\mathrm{k} & \pounds 60\text{–}250\mathrm{k} & \sim\pounds 300\mathrm{k} \text{ per die, several dies} \\
+\text{Lead time} & \text{days} & 4\text{–}8 \text{ weeks} & 16\text{–}30 \text{ weeks} & 40\text{–}60 \text{ weeks} \\
+\text{Life} & \text{machine time} & 5\mathrm{k}\text{–}20\mathrm{k} \text{ parts} & 300\mathrm{k}\text{–}1\mathrm{M} & \text{millions} \\
+\text{Tolerance} & \pm 0.5\ \mathrm{mm} & \pm 0.5\ \mathrm{mm} & \pm 0.2\ \mathrm{mm} & \pm 0.1\ \mathrm{mm} \\
+\text{Rate} & \text{a few per hour} & \text{a few per hour} & 6\text{–}20/\mathrm{min} & 10\text{–}25 \text{ strokes/min}
 \end{array}
 $$
 
-**The break-even arithmetic is the same as in [[manufacturing/process-selection|process selection]] and it is brutal:** a production drawing die at £150,000 against a prototype tool at £15,000 with a per-part penalty of £3.20 gives a break-even of $( 1 5 0 , 0 0 0 - 1 5 , 0 0 0 ) / 3 . 2 0 = 4 2 , 0 0 0$ parts. **Below that quantity the right way to make a drawn part is badly; above it the right way to make it badly is to keep making it that way.** The second number that decides everything is the **press line**: a five-die tandem line for outer panels is 40 m long, runs at 15-20 strokes a minute with a magnetic transfer table, and cost £25-40 million in 2024 money; a 6-station transfer press for small parts runs 25 strokes a minute and costs a fifth of that. **This is why a car maker wants 200,000 a year for a body, why two car makers share a plant, and why a new entrant at 20,000 a year buys its body-in-white from a contract stamper or makes it in aluminium with fewer, simpler, slower parts.**
+**The break-even arithmetic is the same as in [[manufacturing/process-selection|process selection]]:** a production die at £150,000 against a prototype tool at £15,000 with a per-part penalty of £3.20 breaks even at $(150{,}000 - 15{,}000)/3.20 \approx 42{,}000$ parts. Below that quantity the cheaper tool wins even though each part costs more. Large panels are made on tandem or transfer press lines costing tens of millions of pounds, which is why car bodies need high annual volumes, and why low-volume makers buy stampings from contract stampers or use aluminium extrusions and castings with fewer, simpler sheet parts.
 :::
 
 ::: example 4,000 electric scooter body panels {#ex-scoot level=3 check="20000"}
-A scooter's front fairing is a 600 mm drawn panel in 1.2 mm aluminium, 4,000 a year for four years.
+A scooter's front fairing is a 600 mm drawn panel in 1.2 mm aluminium, 4,000 a year for four years (16,000 in all). Production tooling costs £190,000 and gives £11.40 a panel. A **soft tool** — a cast zinc-alloy or aluminium die run on a slower press with a separate trim operation — costs £22,000 and gives £19.80 a panel. Find the break-even quantity between the two (enter the number of panels).
 
-Production tooling in a transfer line is £190,000 and gives £11.40 a panel. A **soft tool** — a cast-aluminium drawing die run on a 250-tonne press at 4 an hour, with a hand-laid fibre plug as the form block — is £22,000 and gives £19.80 a panel including the extra press time and the trim die. A **hydroform/diaphragm tool** (an elastomeric diaphragm instead of a punch, one tool for both sides) is £9,000 and gives £26. **The break-even between production and soft tooling is $( 1 9 0 , 0 0 0 - 2 2 , 0 0 0 ) / ( 1 9 . 8 0 - 1 1 . 4 0 ) = { \bf 2 0 { , } 0 0 0 }$ panels — five times the whole programme.** So the answer is the soft tool, at £79,000 more than the production tool's per-part cost would have been and £168,000 less than its tooling, and the fairing is designed from that decision: **the radius on the draw is opened from $5 t$ to $8 t$ because the soft tool cannot hold a sharp one, the trim lines are moved to where a hand router can reach, and the panel is split into two pressings and a bonded join because 4,000 a year cannot pay for a draw that needs a redraw.** **Four thousand a year is not a small quantity in sheet metal; it is the quantity at which the process stops being chosen by the part and starts choosing it.**
+$$
+N^{*} \;=\; \frac{190{,}000 - 22{,}000}{19.80 - 11.40} \;=\; \frac{168{,}000}{8.40} \;=\; \mathbf{20{,}000 \ \text{panels}}
+$$
+
+**More than the whole four-year programme of 16,000**, so the soft tool wins: over the programme it costs $22{,}000 + 16{,}000 \times 19.80 = \pounds 338{,}800$ against $190{,}000 + 16{,}000 \times 11.40 = \pounds 372{,}400$ — it pays £134,400 more in part cost but saves £168,000 in tooling, a net saving of £33,600. The part is then designed for the soft tool: larger draw radii, trim lines that are easy to reach, and possibly a split into two shallower pressings joined afterwards. **Check:** at exactly 20,000 panels both routes would cost $\pounds 418{,}000$.
 :::
 
 ## Exercises
 
 ::: exercise Blanking force with a shear {#ex-blankforce level=2 check="150"}
-A hexagon 60 mm across flats is blanked from $1 . 5 \ \mathrm { m m }$ hardened stainless, $\sigma _ { \text{UTS } } = 6 0 0 \ \mathrm { M P a }$ . Estimate the peak blanking force. (Enter kN, to the nearest 10.)
+A hexagon 60 mm across flats is blanked from $1.5\ \mathrm{mm}$ hardened stainless steel, $\sigma_{\text{UTS}} = 600\ \mathrm{MPa}$. Estimate the peak blanking force with $F = 0.8\sigma_{\text{UTS}} P t$. (Enter kN, to the nearest 10.)
 ::: solution
-The perimeter is $6 \times 6 0 / \sqrt { 3 } = 2 0 8 \ \mathrm { m m }$ , so $F = 0 . 8 \times 6 0 0 \times 2 0 8 \times 1 . 5 / 1 0 ^ { 3 } = { \bf 1 5 0 \ k N }$ . **Put a $2 \ \mathrm { m m }$ shear offset on the punches and the peak falls to $1 5 0 \times 1 . 5 / 3 . 5 = 6 4 \ \mathrm { k N }$ , at the cost of a dished blank — and note that the *energy* is unchanged, which is why shearing works on a crank press with a flywheel and not on a slow hydraulic one.**
+The side of a regular hexagon is (across flats)$/\sqrt3 = 34.6\ \mathrm{mm}$, so the perimeter is $6 \times 60/\sqrt3 = 208\ \mathrm{mm}$ and $F = 0.8 \times 600 \times 208 \times 1.5/10^3 = 149.6 \approx \mathbf{150\ kN}$. With a shear depth of $2\ \mathrm{mm}$ ground on the punch, the rule of thumb $F t/(t+h)$ gives about $150 \times 1.5/3.5 = 64\ \mathrm{kN}$ peak, at the cost of a slightly bowed blank; the work of cutting is not reduced.
 :::
 :::
 
 ::: exercise Flat pattern of a channel {#ex-channel level=2 check="134.2"}
-A channel is formed by two $9 0 ^ { \circ }$ bends: outside legs $3 0 \ \mathrm { m m }$ , web $8 0 \ \mathrm { m m }$ , outside leg $3 0 \ \mathrm { m m }$ , in $1 . 5 \ \mathrm { m m }$ sheet with a $2 \ \mathrm { m m }$ inside radius and $K = 0 . 4 0$ . Find the blank length. (Enter mm to one decimal place.)
+A channel is formed by two $90^\circ$ bends: outside dimensions $30\ \mathrm{mm}$ (leg), $80\ \mathrm{mm}$ (web), $30\ \mathrm{mm}$ (leg), in $1.5\ \mathrm{mm}$ sheet with a $2\ \mathrm{mm}$ inside radius and $K = 0.40$. Find the blank length. (Enter mm to one decimal place.)
 ::: solution
-$S B = ( 2 + 1 . 5 ) \tan 4 5 ^ { \circ } = 3 . 5 0 \ \mathrm { m m }$ , $B A = ( \pi / 2 ) ( 2 + 0 . 4 \times 1 . 5 ) = 4 . 0 8 \ \mathrm { m m }$ , $B D = 2 \times 3 . 5 0 - 4 . 0 8 = 2 . 9 2 \ \mathrm { m m }$ , so $L = 1 4 0 - 2 \times 2 . 9 2 = { \bf 1 3 4 . 2 \ m m }$ . **The designer's 140 mm is $4 . 3 \ \ \%$ too long, and on a coil that is 1,200 mm wide and produces 8 parts per pitch, that error is 5 % of the material bill.**
+$SB = (2 + 1.5)\tan 45^\circ = 3.50\ \mathrm{mm}$, $BA = (\pi/2)(2 + 0.4 \times 1.5) = 4.08\ \mathrm{mm}$, $BD = 2 \times 3.50 - 4.08 = 2.92\ \mathrm{mm}$, so $L = 140 - 2 \times 2.92 = \mathbf{134.2\ mm}$. Summing the outside dimensions (140 mm) would be $4.3\ \%$ too long.
 :::
 :::
 
-::: exercise Minimum bend radius {#ex-rmin level=2 check="8.1"}
-A steel has $2 5 \ \ \%$ reduction of area in tension. Taking the allowable outer-fibre engineering strain as one third of the value implied by that reduction, find the minimum inside radius for $2 \ \mathrm { m m }$ sheet. (Enter mm, to one decimal place.)
+::: exercise Minimum bend radius {#ex-rmin level=2 check="8.0"}
+A steel has $25\ \%$ reduction of area in tension. Taking the allowable outer-fibre engineering strain as one third of the engineering strain implied by that reduction of area, find the minimum inside radius for $2\ \mathrm{mm}$ sheet. (Enter mm, to one decimal place.)
 ::: solution
-A $2 5 \ \ \%$ reduction of area corresponds to an outer-fibre strain capacity of about $0 . 2 5 / ( 1 - 0 . 2 5 ) \approx 0 . 3 3$ in the ideal case; taking a third of it gives $\varepsilon _ { \text{allow } } = 0 . 1 1$ , and $\varepsilon = t / ( 2 r + t )$ gives $r = t ( 1 / 2 \varepsilon - 1 / 2 ) = 2 ( 4 . 5 5 - 0 . 5 ) = 8 . 1 \ \mathrm { m m }$ , so $r _ { \min } \approx 4 t = { \bf 8 . 1 \ m m }$ . **Four thicknesses, which is the shop table's answer for a 500-700 MPa grade — and the reason a designer who specifies "break all sharp edges, $R 1$ typical" on a high-strength bracket is specifying a part that cannot be made.**
+By volume constancy a 25 % reduction of area corresponds to a local length ratio $1/(1 - 0.25)$, i.e. an engineering strain of $0.25/0.75 = 0.333$. One third of it is $\varepsilon_{\text{allow}} = 0.111$, and $\varepsilon = t/(2r+t)$ gives
+
+$$
+r = t\left(\frac{1}{2\varepsilon} - \frac12\right) = 2\,(4.5 - 0.5) = \mathbf{8.0\ mm} = 4t
+$$
+
+Four thicknesses — in line with shop tables for high-strength and hard-tempered grades, and a reminder that a drawing note such as "all bends R1" on a high-strength part may be impossible to make.
 :::
 :::
 
-::: exercise Overbending a high-strength bend {#ex-overbend level=2 check="4.7"}
-A $1 . 2 \ \mathrm { m m }$ sheet of 1,000 MPa yield steel is air-bent to a $3 \ \mathrm { m m }$ inside radius through $9 0 ^ { \circ }$ . Estimate the springback from $\Delta \theta = 3 \sigma _ { y } L _ { b } / E t$ and state the loaded angle. Take $E = 2 0 0 \ \mathrm { G P a }$ . (Enter the springback in degrees to one decimal place.)
+::: exercise Overbending a high-strength bend {#ex-overbend level=2 check="4.1"}
+A $1.2\ \mathrm{mm}$ sheet of 1,000 MPa yield steel is air-bent to a $3\ \mathrm{mm}$ inside radius through $90^\circ$. Estimate the springback from $\Delta\theta = 3\sigma_y L_b/(E t)$ with $L_b$ at mid-thickness, and state the angle to which it must be bent. Take $E = 200\ \mathrm{GPa}$. (Enter the springback in degrees to one decimal place.)
 ::: solution
-$L _ { b } = ( \pi / 2 ) ( r + t ) = 1 . 5 7 1 \times 4 . 2 = 6 . 6 0 \ \mathrm { m m }$ , so $\Delta \theta = 3 \times 1 { , } 0 0 0 \times 6 . 6 0 / ( 2 0 0 { , } 0 0 0 \times 1 . 2 ) = 0 . 0 8 2 5 \ \mathrm { r a d } = { \bf 4 . 7 \ \ ^ { \circ } }$ , and the tool must produce $9 4 . 7 ^ { \circ }$ . **The widget's curve gives $5 . 4 ^ { \circ }$ for the same case, the difference being the arc length used; either way the answer is that a $5 ^ { \circ }$ error on a 100 mm flange is $8 . 7 \ \mathrm { m m }$ of misalignment at the free end, which no assembly can absorb — hence coining, hot stamping, or a design change.**
+$L_b = (\pi/2)(r + t/2) = 1.571 \times 3.6 = 5.65\ \mathrm{mm}$, so $\Delta\theta = 3 \times 1{,}000 \times 5.65/(200{,}000 \times 1.2) = 0.0707\ \mathrm{rad} = \mathbf{4.1^\circ}$, and the tool must bend to about $94.1^\circ$. This agrees with the springback figure at $t = 1.2\ \mathrm{mm}$. A $4^\circ$ error on a 100 mm flange moves its free end by $100 \tan 4.05^\circ = 7.1\ \mathrm{mm}$ — far too much for assembly, hence overbending under angle control, coining or hot stamping.
 :::
 :::
 
 ::: exercise Number of draws {#ex-redraw level=2 check="3"}
-A $2 5 0 \ \mathrm { m m }$ blank must become a $7 0 \ \mathrm { m m }$ diameter cup. Taking a first-draw limit of 2.1 and redraw limits of 1.8, how many draws, and what are the intermediate diameters?
+A $250\ \mathrm{mm}$ blank must become a $70\ \mathrm{mm}$ diameter cup. Taking a first-draw limit of 2.1 and a redraw limit of 1.4, how many drawing operations are needed, and what are suitable intermediate diameters? (Enter the number of draws.)
 ::: solution
-$2 5 0 / 2 . 1 = 1 1 9 \ \mathrm { m m }$ , $1 1 9 / 1 . 8 = 6 6 \ \mathrm { m m }$ — so **two draws would just reach 66 mm, and since 70 mm is above that, the answer is two draws if the redraw can be held at 1.70, and three if the shop is honest**: $2 5 0 	o 1 1 9 	o 8 8 	o 7 0$ . **Two anneals, three die sets, three press stations — for a part whose only crime is being 180 mm deep.** **This is why the drawing office's most valuable intervention on a deep part is a boss, a rib or a change of section that lets the ratio come down by 0.2.**
+First draw: $250/2.1 = 119\ \mathrm{mm}$ at the smallest. First redraw: $119/1.4 = 85\ \mathrm{mm}$. A second redraw could reach $85/1.4 = 61\ \mathrm{mm}$, so 70 mm is reached in the third operation: $250 \to 120 \to 86 \to 70\ \mathrm{mm}$, i.e. $\mathbf{3}$ draws (ratios 2.08, 1.40, 1.23). In practice the reductions would be spread more evenly, and the shop decides whether intermediate anneals are needed.
 :::
 :::
 
-::: exercise Blank-holder force and the two failures {#ex-bh level=3 check="2"}
-In the cup of the worked example the wall can carry $1 0 8 \ \mathrm { k N }$ before it yields, and the flange needs $7 0 \ \mathrm { k N }$ to draw in with no blank-holder force at all. If the blank-holder pressure must be at least $0 . 8 \ \mathrm { M P a }$ on the flange annulus to stop wrinkling, and the annulus area is $1 2 { , } 0 0 0 \ \mathrm { m m } ^ { 2 }$ , does the part draw?
+::: exercise Blank-holder force and the two failures {#ex-bh level=3 check="1.4"}
+In the cup of the worked example the wall can carry $\pi d t \sigma_{\text{UTS}} = 107\ \mathrm{kN}$, and the flange needs $75\ \mathrm{kN}$ to draw in without blank-holder friction. To stop wrinkling the blank-holder pressure must be at least $0.8\ \mathrm{MPa}$ on the flange annulus, whose area is $\pi(180^2 - 100^2)/4 = 17{,}600\ \mathrm{mm}^2$; the friction coefficient is 0.1 on each face. Find the ratio of wall capacity to total drawing force. (Enter it to one decimal place.)
 ::: solution
-The blank-holder force is $0 . 8 \times 1 2 { , } 0 0 0 = 9 . 6 \ \mathrm { k N }$ , and the friction it adds is roughly $2 \mu F _ { b h }$ (two interfaces) $= 2 \times 0 . 1 \times 9 . 6 = 1 . 9 \ \mathrm { k N }$ , so the draw force rises to about $7 2 \ \mathrm { k N }$ against a wall capacity of $1 0 8 \ \mathrm { k N }$ : **it draws, with a 1.5 margin.** **Now double the blank-holder pressure to $1 . 6 \ \mathrm { M P a }$ because a wrinkle appeared on trial: the draw force rises to $7 3 \ \mathrm { k N }$ — hardly changed, because friction is only a fraction of the load — and the wrinkle is still there, because the answer was never the force but the draw bead.** **That is the practical lesson: blank-holder force is a coarse knob, and when it is not enough the die needs geometry.**
+The blank-holder force is $0.8 \times 17{,}600 = 14.1\ \mathrm{kN}$, and the friction acts on both faces of the flange: $2\mu F_{bh} = 2 \times 0.1 \times 14.1 = 2.8\ \mathrm{kN}$. The drawing force becomes $75 + 2.8 = 77.8\ \mathrm{kN}$, and the ratio is $107/77.8 = \mathbf{1.4}$: the cup draws. Doubling the pressure to $1.6\ \mathrm{MPa}$ (because wrinkles appeared on try-out) adds another $2.8\ \mathrm{kN}$, giving $80.6\ \mathrm{kN}$ and a ratio of 1.3 — still safe. Here the friction is a small part of the load; with a larger blank, a higher friction coefficient or draw beads the same margin can vanish, which is when splitting appears.
 :::
 :::
 
-::: exercise FLD check {#ex-fldchk level=3 check="20.7"}
-A point on a panel shows $\varepsilon _ { 1 } = 1 4 . 0 \ \ \%$ , $\varepsilon _ { 2 } = - 7 . 0 \ \ \%$ . For $\mathrm { FLD } _ { 0 } = 3 1 . 4 \ \ \%$ and the left branch $\mathrm { FLD } = \mathrm { FLD } _ { 0 } ( 1 + \rho ) ^ { 0 . 6 }$ , find the limit strain and say whether the point passes the 3-point margin rule. (Enter the limit strain in per cent to one decimal place.)
+::: exercise FLD check {#ex-fldchk level=3 check="34.0"}
+A panel is pressed from $0.8\ \mathrm{mm}$ steel with $n = 0.18$. A critical point shows true strains $\varepsilon_1 = 30.0\ \%$, $\varepsilon_2 = -8.0\ \%$. Using the Keeler–Brazier $\mathrm{FLD}_0$ and a left branch of constant thickness strain, find the limit major strain (true, per cent) at this minor strain and say whether the point passes a 10-point margin. (Enter the limit strain in per cent to one decimal place.)
 ::: solution
-$\rho = - 0 . 5 0$ , so $\mathrm { FLD } = 3 1 . 4 \times 0 . 5 ^ { 0 . 6 } = 3 1 . 4 \times 0 . 6 6 = { \bf 2 0 . 7 \ \ \% }$ , against $1 4 . 0 \ \ \%$ measured — **a margin of 6.7 points, so it passes.** **Note how much thinner the ice is than the numbers suggest: the same point at $\rho = - 0 . 8$ (nearly uniaxial) would have a limit of $3 1 . 4 \times 0 . 2 ^ { 0 . 6 } = 1 2 . 0 \ \ \%$ and would already have failed, and $\rho$ at that feature moves with a $0 . 5 \ \mathrm { m m }$ change in the blank-holder land. The FLD is a map, and the part has to sit in the middle of the safe country, not on the border.**
+$\mathrm{FLD}_0 = (23.3 + 14.13 \times 0.8)(0.18/0.21) = 29.7\ \%$ engineering, $\varepsilon_0 = \ln 1.297 = 0.260$. On the left branch $\varepsilon_1^{*} = \varepsilon_0 - \varepsilon_2 = 26.0 + 8.0 = \mathbf{34.0\ \%}$. The point, at $30.0\ \%$, is below the curve by $4.0$ points — **it does not split, but it fails the 10-point margin.** Had the same major strain occurred at plane strain, the limit would be only $26.0\ \%$ and the panel would split; the minor strain at a feature depends on blank shape and restraint, so the remedy is to change those, or to use a thicker or higher-$n$ sheet.
 :::
 :::
 
 ::: exercise Derive Considère's criterion and the uniform elongation {#ex-derive-considere level=4 check="22"}
-Show that a tensile specimen of material $\sigma = K \varepsilon ^ { n }$ begins to neck at $\varepsilon _ { u } = n$ , and find the uniform elongation (as a per cent engineering extension) for $n = 0 . 2 0$ . (Enter per cent to the nearest whole number.)
+Show that a tensile specimen of material $\sigma = K\varepsilon^n$ (true stress, true strain) begins to neck at $\varepsilon_u = n$, and find the uniform elongation (as a per cent engineering extension) for $n = 0.20$. (Enter per cent to the nearest whole number.)
 ::: solution
-At the onset of necking the load $F = \sigma A$ is stationary, so $d ( \sigma A ) = 0$ , and with constant volume $d \varepsilon = - d V / V = - d A / A$ , giving
+At the onset of necking the load $F = \sigma A$ reaches a maximum, so $dF = A\,d\sigma + \sigma\, dA = 0$. Volume constancy, $A l = \text{const}$, gives $dA/A = -dl/l = -d\varepsilon$. Hence
+
 $$
-{ \frac { d \sigma } { \sigma } } = { \frac { d A } { A } } = d \varepsilon \qquad \Longrightarrow \qquad { \frac { d \sigma } { d \varepsilon } } = \sigma
+\frac{d\sigma}{\sigma} \;=\; -\frac{dA}{A} \;=\; d\varepsilon \qquad \Longrightarrow \qquad \frac{d\sigma}{d\varepsilon} = \sigma
 $$
-With $\sigma = K \varepsilon ^ { n }$ , $d \sigma / d \varepsilon = n K \varepsilon ^ { n - 1 } = \sigma / \varepsilon = K \varepsilon ^ { n }$ gives $\varepsilon _ { u } = n = 0 . 2 0$ , an engineering extension of $e ^ { 0 . 2 0 } - 1 = { \bf 2 2 \ \ \% }$ . **And this is why $n$ is the formability exponent: the strain a sheet can take before it localises is the strain it has already taken when the hardening stops paying for the thinning. It is also why a dual-phase steel with $n = 0 . 1 0$ necks at $1 1 \ \ \%$ and is a poor drawing steel despite 25 % total elongation — the remaining 14 % happens inside the neck, which is exactly where a forming operation cannot use it.**
+
+With $\sigma = K\varepsilon^n$: $nK\varepsilon^{n-1} = K\varepsilon^n$, so $\varepsilon_u = n = 0.20$, an engineering extension of $e^{0.20} - 1 = 0.221 = \mathbf{22\ \%}$. This is why $n$ is the formability exponent for stretching. A dual-phase steel with $n = 0.10$ necks at $e^{0.10} - 1 = 11\ \%$ uniform elongation even if its total elongation is over 20 %; the rest happens inside the neck, where a forming operation cannot use it.
 :::
 :::
 
 ::: exercise Derive the outer-fibre bend strain {#ex-derivebendstrain level=4 check="33"}
-Show that the outer-surface engineering strain in a bend of inside radius $r$ and thickness $t$ is $\varepsilon = t / ( 2 r + t )$ , and evaluate it for $r = t$ . (Enter per cent, to the nearest whole number.)
+Show that the outer-surface engineering strain in a bend of inside radius $r$ and thickness $t$, with the neutral surface at mid-thickness, is $\varepsilon = t/(2r+t)$, and evaluate it for $r = t$. (Enter per cent, to the nearest whole number.)
 ::: solution
-The outer fibre moves from a neutral-axis length $r + t / 2$ … more directly: the outer surface, at radius $r + t$ , spans an arc $( r + t ) \theta$ while the neutral surface spans $( r + K t ) \theta$ ; taking the neutral surface at $K = 0 . 5$ for pure bending, the true strain is $\ln [ ( r + t ) / ( r + t / 2 ) ]$ and the engineering strain is
+Over a bend angle $\theta$ the outer surface, at radius $r + t$, has length $(r+t)\theta$, and the neutral surface, at $r + t/2$, keeps its original length $(r + t/2)\theta$. The engineering strain of the outer surface is
+
 $$
-\varepsilon = { \frac { ( r + t ) - ( r + t / 2 ) } { r + t / 2 } } = { \frac { t / 2 } { r + t / 2 } } = { \frac { t } { 2 r + t } } = { \frac { 1 } { 3 } } = { \bf 3 3 \ \ \% }
+\varepsilon = \frac{(r + t) - (r + t/2)}{r + t/2} = \frac{t/2}{r + t/2} = \frac{t}{2r + t} \;\xrightarrow{\;r = t\;}\; \frac13 = \mathbf{33\ \%}
 $$
-**A third, at $r = t$ , which is why $r = t$ is close to the limit for a material with 35 % reduction of area and why the shop rule "never bend inside radius less than one thickness" is not a rule about the tool but about the metal's own ductility.** **It also explains the two standard tricks: a larger radius is a smaller strain, and a smaller *thickness* is a much smaller strain — which is why a bent sheet is often milled, machined or chem-milled thinner in the bend zone before forming, and why sheet-metal formability improves so dramatically with the thinner gauges that lightweighting forces on the designer.**
+
+A third at $r = t$ — which is why $r = t$ is close to the limit for many as-rolled steels, and why the minimum radius is a property of the material rather than of the tool. For a given radius a thinner sheet has a smaller outer-fibre strain; for a given $r/t$ the strain is the same at every thickness.
 :::
 :::
 
 ::: quiz A cup splits at the punch radius. Which change will *not* help? {#quiz-split}
 - [ ] A larger punch radius
 - [ ] A larger die radius
-- [ ] A lower blank-holder force
+- [ ] A lower blank-holder force (if wrinkling allows)
 - [x] A larger blank diameter
 ::: solution
-**A larger blank increases the drawing ratio, which is the one thing that makes splitting worse.** **The other three all reduce the wall stress: a bigger punch radius spreads the bend and the friction over a larger arc and moves the critical section away from the point of maximum tension; a bigger die radius reduces the bending strain at the flange entry, which scales as $\sqrt { t / r _ { d } }$ ; and a lower blank-holder force reduces the friction the wall must carry. The full list of split-cure actions, in the order a die shop tries them: more and better lubricant, larger die and punch radii, lower blank-holder force, a softer or more $n$ -rich coil, a smaller drawing ratio (redraw), and finally a design change.**
+**A larger blank raises the drawing ratio and with it the load the wall must carry — the one change that makes splitting worse.** The other three reduce the wall stress or the strain concentration: a larger punch radius spreads the bending at the critical section; a larger die radius reduces the bending strain $t/(2r_d + t)$ and the bending-unbending work at the die entry; and a lower blank-holder force reduces friction. The usual list of remedies for splitting is: better lubrication, larger radii, lower blank-holder force, a higher-$\bar r$ or higher-$n$ sheet, a smaller drawing ratio (a redraw), and finally a design change.
 :::
 :::
 
-::: quiz Why does a wrinkle appear in the flange and a split appear in the wall of the same cup? {#quiz-wrinkle}
+::: quiz Why does a wrinkle appear in the flange and a split in the wall of the same cup? {#quiz-wrinkle}
 - [ ] Because the flange is thinner than the wall
-- [x] Because the flange is hoop-compressed while the wall is tensioned, and the two failures have opposite causes
+- [x] Because the flange is hoop-compressed while the wall is in tension, and the two failures have opposite causes
 - [ ] Because the lubricant only reaches the wall
 - [ ] Because the punch is hotter than the die
 ::: solution
-**Radial drawing tension is necessarily accompanied by hoop compression in the flange — a disc shrinking to a smaller circumference must squeeze its circles together — and a thin disc under hoop compression buckles. The same tension, arriving in the now-cylindrical wall, is a simple membrane stress that the wall carries until it yields and necks.** **So the two defects are the two ends of one knob, and a die try-out is the search for the middle of a window that is often only 20 % wide. This is also why thicker sheet is easier to stretch and harder to draw: thickening raises the buckling resistance of the flange as $t ^ { 2 }$ and the wall's load capacity only as $t$ , and it raises the bending strain at the die radius as $1 / r _ { d }$ .**
+**Radial drawing tension in the flange is necessarily accompanied by hoop compression — each ring must shrink to a smaller circumference — and a thin annulus under hoop compression buckles. In the wall the same pull is carried as a membrane tension, which the wall supports until it necks.** The blank-holder force trades one failure against the other. Thicker sheet wrinkles less, because a plate's buckling resistance rises steeply with thickness, while the drawing load and the wall's capacity both rise only in proportion to $t$, leaving the drawing ratio limit roughly unchanged.
 :::
 :::
 
 ## Where this lesson leads
 
-- **[[manufacturing/bulk-forming|Bulk deformation processes]]** is the companion half: the same flow stress, the same friction, the same recrystallisation, in a stress state where the work cannot buckle and cannot neck.
-- **[[manufacturing/machining|Machining]]** is what happens to the trim lines, the bolt holes and the datum faces of a drawn part — and, in laser cutting and waterjet blanking, is how the blank is made before it is formed.
-- **[[manufacturing/joining|Joining]]** assembles the panels: spot welding 5,000 times into a car body, and the special problem of welding coated and high-strength grades.
-- **[[manufacturing/polymer-composite-processing|Polymer and composite processing]]** uses the same forming-limit thinking on a material whose $n$ is a function of temperature and whose wrinkles are called print-through.
-- **[[manufacturing/metrology-quality|Metrology, quality and automation]]** is how a body shop holds $\pm 0 . 3 \ \mathrm { m m }$ across 350 parts, and how springback is fed back into the die.
-- **[[materials-science/mechanical-properties|Mechanical properties]]** is where $n$ , $m$ and the Lankford $r$ -value are measured, and where the tensile test that defines them is derived — including Considère's criterion, which is the necking condition the forming limit diagram is a map of.
-- **[[solid-mechanics/plasticity|Plasticity]]** supplies the flow rule and the concept of a limit load that the FLD is an empirical picture of.
+- **[[manufacturing/bulk-forming|Bulk deformation processes]]** is the companion: the same flow stress, friction and work hardening, in stress states where the work can neither buckle nor neck.
+- **[[manufacturing/machining|Machining]]** finishes the holes and datum faces of formed parts; laser and waterjet cutting make many blanks before forming.
+- **[[manufacturing/joining|Joining]]** assembles the panels: resistance spot welding of car bodies, and the special problems of coated and high-strength grades.
+- **[[manufacturing/polymer-composite-processing|Polymer and composite processing]]** meets similar wrinkling and thinning limits when sheets and fabrics are formed.
+- **[[manufacturing/metrology-quality|Metrology, quality and automation]]** covers how stamped assemblies are measured and how springback measurements are fed back into the die.
+- **[[materials-science/mechanical-properties|Mechanical properties]]** is where $n$, the $r$-value and the tensile test are measured, including Considère's criterion.
+- **[[solid-mechanics/plasticity|Plasticity]]** supplies the yield criteria and flow rules behind the anisotropy and limit-strain analyses.
 
 ::: history
-**1400s.** The **draw bench** makes wire, and with it the first quantitative study of a forming process: the maximum reduction per pass, which is the same inequality as the drawing limit of §4 and was known to Renaissance wire-drawers by rule of thumb. **1818.** The first **deep-drawn brass cartridge case**, and with it the process's arrival as a mass product: a drawn case replaced a hand-turned one, and by 1868 a drawn brass case was being made at 40,000 a day, in a sequence of draws and anneals that is still exactly how a cartridge case and an aerosol can are made. **1913.** Stamped steel automobile bodies replace wood, and by **1927** all-metal bodies have created the two institutions of the industry: the **die shop**, with its pattern shops, its planishing hammers and its try-out presses, and the **panel problem** — that a large, thin, doubly-curved part is a surface-class object whose shape is defined by eye and made by hand-finishing a die for three months. **1948.** **S. C. Hill** publishes his theory of plastic flow in anisotropic media, and **W. Lankford, D. G. Nickrin and R. M. Kline** at the Bureau of Standards measure the width and thickness strains of drawn steel sheets, finding that the ratio between them — the **$r$ -value** — predicts drawability and that its variation with direction predicts earing. Drawability stops being an art and becomes a steel specification. **1960s.** **G. R. Keeler** at Ford and, independently, **W. C. Emge** and later **M. G. Hecker** at GM, build the **forming limit diagram** from circle-grid experiments, and **S. P. Keeler and Z. Marciniak** turn sheet-metal forming into a strain-space discipline; **Marciniak and K. Kuczyński** publish in 1967 the groove analysis that still underlies the left-hand branch. **1977.** **P. Plamennac** patents **press hardening** of boron steel; the idea sleeps for twenty-five years because no crash-structure specification demanded 1,500 MPa and no laser cutter was cheap enough to trim it, and then arrives in the 2000s as the answer to a Euro-NCAP world. **1995.** **Audi** introduces **tailor-welded blanks** in series production, and the blank becomes a designed object rather than a purchased one. **2002.** **F. Goodwin's** update of the Keeler relation puts the FLD on every sheet-metal engineer's spreadsheet, and **hot stamping** enters volume production with the Volvo and then the Volkswagen Golf B-pillar — the first time since 1927 that a new sheet-metal process had been adopted across the whole industry in a single decade.
+**1910s.** The **Budd Company** of Philadelphia, founded by Edward G. Budd, develops all-steel pressed car bodies; after discussions from 1913, Dodge Brothers bought tens of thousands of all-steel touring bodies from Budd (70,000 in 1916 alone), and pressed and welded steel bodies gradually displaced wood-framed construction. **1948.** **Rodney Hill** publishes "A theory of the yielding and plastic flow of anisotropic metals" (*Proceedings of the Royal Society A*), the anisotropic yield criterion still used to model sheet. **1950.** **W. T. Lankford, S. C. Snyder and J. A. Bausher** publish "New criteria for predicting the press performance of deep drawing sheets" (*Transactions of the ASM*), introducing the plastic strain ratio now called the Lankford $r$-value. **1960s.** **Stuart Keeler**, measuring circle grids on stretched sheet, and **Gorton Goodwin**, extending the measurements to negative minor strains, establish the **forming limit diagram**; in **1967** **Zdzisław Marciniak and K. Kuczyński** publish their analysis of necking from an initial groove (*International Journal of Mechanical Sciences*), still the basis of many forming-limit calculations. **1970s.** Press hardening of boron steel is developed in Sweden and later adopted, from the 1980s and on a large scale from the 2000s, for automotive safety-cage parts; in the same period Keeler and Brazier publish the empirical $\mathrm{FLD}_0$ relation used in section 5.
 :::
 
 ::: summary
-**A sheet has two ways to fail and a die has one knob.** It wrinkles where it is hoop-compressed and tears where it is stretched, and the blank-holder force sits between them; the whole craft of die try-out is holding a sheet in the 20 % of the force window between the two.
-**Shearing is a shear-area calculation and a clearance diagnosis.** $F = 0 . 8 \sigma _ { \text{UTS } } P t$ , clearance $5 { - } 1 3 \ \ \% \ t$ per side, and an edge whose rollover, burnish, fracture and burr tell you which of the two has worn. Fine blanking suppresses the fracture altogether with a cognet ring and a $0 . 5 \ \ \%$ clearance.
-**Bending is arithmetic about a neutral axis that is not in the middle.** $B A = ( \pi \theta / 1 8 0 ) ( r + K t )$ with $K = 0 . 3 3 { - } 0 . 5$ , $B D = 2 S B - B A$ , and the blank length is $\sum$ legs $- \sum B D$ . The outer-fibre strain is $t / ( 2 r + t )$ , so $r = t$ means $3 3 \ \ \%$ and the minimum radius is a property of the alloy, not of the tool.
-**Bending force goes as $t ^ { 2 } / V$ and springback as $\sigma _ { y } / t$.** $F = 1 . 4 2 \sigma _ { \text{UTS } } w t ^ { 2 } / V$ , so a sharper die costs tonnage; $\Delta \theta = 3 \sigma _ { y } L _ { b } / E t$ , so a stronger, thinner, more-bent part springs more, and nothing you can do to the tool changes the elastic modulus. Overbend, coin, stretch, or form it hot.
-**Drawability is a ratio, not a depth.** $D / d \approx 2 . 1$ for mild steel, set by the wall's load, not the punch's; deeper needs redraws and anneals. The material constants are $n$ , $m$ and above all $\bar { r }$ , and the anisotropy $\Delta r$ is what makes ears.
-**The forming limit diagram says when stretching stops.** $\mathrm { FLD } _ { 0 } \approx 2 3 . 3 + 4 2 n$ , steep on the left, flat on the right, and the acceptance rule is a 10 % or 3-point margin. Two points with the same major strain, one failing and one safe, are distinguished only by the sign of the minor strain.
-**Sheet metal is cheap to form and expensive to tool.** A part costs pennies of steel and a fraction of a press; the die costs £10,000-250,000 and a third of it is try-out that cannot be bought back. Below 20,000-40,000 a year the right process is the one you can afford to change, and the part should be designed for it.
+**A sheet has two ways to fail.** It wrinkles where it is compressed and tears where it is stretched; in deep drawing the blank-holder force trades one against the other.
+**Shearing is a shear-area calculation and a clearance diagnosis.** $F \approx 0.8\sigma_{\text{UTS}} P t$, clearance about $5$–$13\ \%$ of $t$ per side, and the rollover, burnish, fracture and burr of the edge show the state of the tool. Fine blanking suppresses the fracture with a V-ring and a very small clearance.
+**Bending is arithmetic about a neutral surface that is not exactly in the middle.** $BA = (\pi\theta/180)(r + Kt)$ with $K \approx 0.33$–$0.5$, $BD = 2SB - BA$, and the blank is the sum of the outside legs minus $\sum BD$. The outer-fibre strain is $t/(2r+t)$, so $r = t$ means $33\ \%$, and the minimum radius is a property of the material.
+**Bending force goes as $t^2/V$, springback as $\sigma_y r/(E t)$.** $F = 1.42\sigma_{\text{UTS}} w t^2/V$; $\Delta\theta = 3\sigma_y L_b/(E t)$. Overbend, coin, stretch, or form hot.
+**Drawability is a ratio, not a depth.** The ideal analysis gives $\ln(\text{LDR}) = \eta$, so LDR $\approx 2.0$–$2.2$; deeper cups need redraws. A high $\bar r$ raises the LDR, and $\Delta r$ makes ears.
+**The forming limit diagram says when stretching stops.** The lowest limit is at plane strain, $\mathrm{FLD}_0 = (23.3 + 14.13t)\,n/0.21$ for ordinary steels; the limit rises on both sides, and parts are checked with a safety margin below the curve.
+**Sheet metal is cheap to form and expensive to tool.** Tooling and try-out dominate; break-even quantities decide between soft and production tools, and the part should be designed for the tool that the volume can pay for.
 :::
 
 ## Further reading
 
-- Z. Marciniak, J. L. Duncan and S. J. Hu, *Mechanics of Sheet Metal Forming*, 2nd ed., Butterworth-Heinemann, 2002 — the definitive account of §4 and §5, written by the man whose groove analysis is the left-hand branch.
-- W. Johnson and M. A. Hill, *Mechanics of Sheet Metal Forming*, Edward Arnold, 1973 — the classical mechanics, and the derivation of every formula in §2 to §4 that this lesson states without proving.
-- *ASM Handbook, Volume 14B: Sheet Metal Forming*, ASM International, 2017 — the process data, the tool steels, the lubricants and the defect atlas, and the place to look up a failure you have never seen.
-- F. B. Kelsall and W. Johnson, *Technology of Plasticity*, and T. Altan et al., *Sheet Metals: Properties, Forming and Applications*, ASM International, 2012 — the shop-floor numbers behind the K-factor, the springback factor and the die-radius rules.
-- L. S. Tóth, J. J. Jonas and others on texture and $r$-values, and W. Lankford, D. G. Nickrin and R. M. Kline, "Drawing characteristics of sheet steel", *Metals Industry* 59 (1948) — the paper that made drawability a metallurgy.
-- M. Geiger and P. Manhardt, *Hot Stamping of Ultra High Strength Steels*, and the Plamennac patent literature, for the process of §6; and R. K. Bhadeshia, *Boron-processed steels*, *Science and Technology of Welding Manufacture* (2022) for the free and excellent online treatment of the metallurgy.
+- Z. Marciniak, J. L. Duncan and S. J. Hu, *Mechanics of Sheet Metal Forming*, 2nd ed., Butterworth-Heinemann, 2002 — the mechanics of bending, drawing, stretching and forming limits, by authors including the originator of the groove analysis.
+- W. F. Hosford and R. M. Caddell, *Metal Forming: Mechanics and Metallurgy*, 4th ed., Cambridge University Press, 2011 — clear derivations of the limiting drawing ratio, anisotropy and forming limits.
+- S. Kalpakjian and S. R. Schmid, *Manufacturing Engineering and Technology*, 8th ed., Pearson, 2020 — the standard undergraduate survey of sheet-metal processes, with shop data on clearances, bend radii and press forces.
+- T. Altan and A. E. Tekkaya (eds), *Sheet Metal Forming: Fundamentals* and *Sheet Metal Forming: Processes and Applications*, ASM International, 2012 — industrial practice, presses, tooling, hot stamping and hydroforming.
+- W. T. Lankford, S. C. Snyder and J. A. Bausher, "New criteria for predicting the press performance of deep drawing sheets", *Transactions of the ASM* 42 (1950) — the origin of the $r$-value.
+- H. Karbasian and A. E. Tekkaya, "A review on hot stamping", *Journal of Materials Processing Technology* 210 (2010) 2103–2118 — the process, the metallurgy of 22MnB5 and the tooling.

@@ -1,20 +1,20 @@
 A perfect crystal is impossible, and not because manufacturing is imperfect. The free energy of a crystal containing no vacancies is higher than that of a crystal containing a few, because mixing the vacancies over the lattice sites contributes an entropy term that no enthalpy can beat at any temperature above absolute zero. The equilibrium concentration of vacancies in aluminium at its melting point is one in four thousand sites, and every engineering consequence of this lesson — diffusion, creep, sintering, precipitation, hardening, radiation swelling, the failure of a turbine blade after ten thousand hours — follows from the fact that the lattice is riddled with defects and that atoms therefore move.
 
-Diffusion is the reason a steel gear can be hard outside and tough inside, the reason a semiconductor dopant sits where it was implanted and not where it was intended, the reason a hydrogen atom produced by cathodic cleaning embrittles a high-strength fastener, and the reason a uranium fuel pellet swells. It is governed by one exponential, $D = D_0 \exp \left( - Q / RT \right)$, whose activation energy is set by the defect concentration and the jump frequency, and whose consequences span thirty orders of magnitude between hydrogen in iron at room temperature and iron in iron at the melting point.
+Diffusion is the reason a steel gear can be hard outside and tough inside, the reason a semiconductor dopant sits where it was implanted and not where it was intended, the reason a hydrogen atom produced by cathodic cleaning embrittles a high-strength fastener, and the reason a uranium fuel pellet swells. It is governed by one exponential, $D = D_0 \exp \left( - Q / RT \right)$, whose activation energy is set by the defect concentration and the jump frequency, and whose values span some forty orders of magnitude between hydrogen in iron and iron in iron, both at room temperature.
 
 ::: warning Diffusion is exponential, so intuition about it is worthless
-A $580\ {}^{\circ}\mathrm{C}$ carburising treatment takes ten hours to put a one-millimetre case on a gear; the same treatment at $900\ {}^{\circ}\mathrm{C}$ takes forty minutes. A ten per cent error in the furnace thermocouple changes the case depth by twenty per cent, and a twenty per cent error changes it by forty-four. Conversely, a material that diffuses measurably in a week at $500\ {}^{\circ}\mathrm{C}$ may be perfectly static at $20\ {}^{\circ}\mathrm{C}$, and a designer who reasons by linear extrapolation from a high-temperature test will condemn an alloy that is fine and approve one that is not. Three rules follow. **Never extrapolate an Arrhenius line beyond the decade of temperature it was measured over**, because a change of mechanism — from lattice to grain-boundary diffusion, from extrinsic to intrinsic, from vacancy to interstitial — bends the line and usually bends it downward. **Never assume a diffusion process is frozen at room temperature** if the diffusing species is hydrogen, lithium, sodium or carbon in iron, all of which move fast enough at ambient to matter over weeks. And **never trust a diffusion distance computed without checking the boundary condition**, because the case depth goes as $\sqrt{D t}$ for a constant-surface-concentration treatment and as $\sqrt{D t}$ for a constant-total-content treatment with a completely different constant — a factor of three between them, which is the difference between a gear that passes and one that is scrapped.
+A carburising treatment that puts a one-millimetre case on a gear in about seven and a half hours at $1000\ {}^{\circ}\mathrm{C}$ needs about twenty-five hours at $900\ {}^{\circ}\mathrm{C}$ ([[#ex-carburising]] and Exercise 7). A thermocouple that reads only $10\ {}^{\circ}\mathrm{C}$ low at $1000\ {}^{\circ}\mathrm{C}$ changes $D$ by twelve per cent, and a $20\ {}^{\circ}\mathrm{C}$ error changes it by twenty-five per cent. Conversely, a material that diffuses measurably in a week at $500\ {}^{\circ}\mathrm{C}$ may be perfectly static at $20\ {}^{\circ}\mathrm{C}$, and a designer who reasons by linear extrapolation from a high-temperature test will condemn an alloy that is fine and approve one that is not. Three rules follow. **Never extrapolate an Arrhenius line beyond the decade of temperature it was measured over**, because a change of mechanism — from lattice to grain-boundary diffusion, from extrinsic to intrinsic, from vacancy to interstitial — bends the line and usually bends it downward. **Never assume a diffusion process is frozen at room temperature** if the diffusing species is hydrogen, lithium, sodium or carbon in iron, all of which move fast enough at ambient to matter over weeks. And **never trust a diffusion distance computed without checking the boundary condition**, because the case depth goes as $\sqrt{D t}$ for both a constant-surface-concentration treatment and a constant-total-content treatment but with a different multiplying constant: the depth at which the concentration has fallen to half its surface value is $0.95 \sqrt{D t}$ for the first (the error-function profile) and $1.67 \sqrt{D t}$ for the second (the Gaussian), and confusing them is the difference between a gear that passes and one that is scrapped.
 :::
 
 ## Point defects
 
 ::: definition The point defects and their names {#def-point}
-A **vacancy** is a missing atom on a lattice site; a **self-interstitial** is an extra atom of the same kind pushed into a site that is not normally occupied. A **Frenkel defect** is a vacancy-interstitial pair produced when an atom leaves its site for an interstitial one, common in ionic solids where the cation is small (silver bromide). A **Schottky defect** is a paired set of cation and anion vacancies that preserves charge neutrality (sodium chloride). An **impurity** is **substitutional** if it replaces a host atom and **interstitial** if it sits in a hole; carbon, nitrogen, hydrogen, boron, oxygen and carbon in iron are all interstitial, and their atoms are $30$ to $40\ \%$ too large for the hole they occupy, which is the whole of steel's strength.
-**Energetics.** A vacancy costs an enthalpy $\Delta H_f^{V}$ of $0.5$ to $3\ \mathrm{eV}$, of which about half is the broken bonds and half the relaxation of the neighbours. A self-interstitial costs three to four times as much, because it must push four neighbours aside, and its equilibrium concentration is therefore $10^{8}$ times lower and it exists mainly as a radiation product. The **formation volume** of a vacancy is about half an atomic volume, which is why quenching a metal from above the recrystallisation temperature can condense vacancies into dislocation loops and stacking-fault tetrahedra.
+A **vacancy** is a missing atom on a lattice site; a **self-interstitial** is an extra atom of the same kind pushed into a site that is not normally occupied. A **Frenkel defect** is a vacancy-interstitial pair produced when an atom leaves its site for an interstitial one, common in ionic solids where the cation is small (silver bromide). A **Schottky defect** is a paired set of cation and anion vacancies that preserves charge neutrality (sodium chloride). An **impurity** is **substitutional** if it replaces a host atom and **interstitial** if it sits in a hole; carbon, nitrogen, hydrogen, boron and oxygen in iron are all interstitial. Their atoms are much too large for the hole they occupy — in BCC iron the octahedral hole has a radius of $0.019\ \mathrm{nm}$ against carbon's $0.077\ \mathrm{nm}$ — and the distortion they cause is a major source of the strength of steel.
+**Energetics.** A vacancy costs an enthalpy $\Delta H_f^{V}$ of $0.5$ to $3\ \mathrm{eV}$, roughly in proportion to the melting point. A self-interstitial costs two to four times as much, because it must push its neighbours aside, so its equilibrium concentration is negligible beside the vacancy concentration and it exists mainly as a radiation product. Vacancies retained by quenching from near the melting point can condense into dislocation loops and, in low-stacking-fault-energy metals, stacking-fault tetrahedra.
 :::
 
 ::: proof Why vacancies are unavoidable {#proof-vacancies}
-Take a crystal of $N$ atomic sites containing $n$ vacancies. The enthalpy is $n \Delta H_f$ and the configurational entropy is, by Boltzmann's formula with $\left( \begin{array}{c} N \ n \end{array} \right)$ arrangements,
+Take a crystal of $N$ atomic sites containing $n$ vacancies. The enthalpy is $n \Delta H_f$ and the configurational entropy is, by Boltzmann's formula with $\binom{N}{n}$ arrangements,
 $$
 S = k \ln \frac{N !}{n ! \left( N - n \right)!} \approx - N k \left[ c \ln c + \left( 1 - c \right) \ln \left( 1 - c \right) \right], \qquad c = \frac{n}{N} .
 $$
@@ -27,7 +27,7 @@ $$
 \boxed{ c = \exp \left( - \frac{\Delta H_f}{k T} \right) }
 $$
 having neglected the vacancy-vacancy interaction and included the vibrational entropy in a prefactor. $\checkmark$
-**The generalisation.** The same argument applies to any point defect and to any dilute solute: the equilibrium state is a **disordered** state, and a material made defect-free by any process — molecular-beam epitaxy, low-temperature deposition, ion-beam synthesis — is thermodynamically unstable and will acquire its defects as soon as it is warm enough for atoms to move. The corollary that matters in practice is that a **quench** freezes the high-temperature concentration, because $c$ falls by ten orders of magnitude between the melting point and room temperature and the vacancies have nowhere to go before the metal is cold.
+**The generalisation.** The same argument applies to any point defect and to any dilute solute: the equilibrium state is a **disordered** state, and a material made defect-free by any process — molecular-beam epitaxy, low-temperature deposition, ion-beam synthesis — is thermodynamically unstable and will acquire its defects as soon as it is warm enough for atoms to move. The corollary that matters in practice is that a **quench** freezes the high-temperature concentration, because $c$ falls by many orders of magnitude between the melting point and room temperature — nearly eight for aluminium ([[#ex-vacancies]]) — and the vacancies cannot reach a sink before the metal is cold.
 :::
 
 ::: definition Diffusion and Fick's laws {#def-fick}
@@ -72,7 +72,7 @@ with $Q$ the activation enthalpy for diffusion. For **self-diffusion by the vaca
 $$
 Q_{\mathrm{self}} \approx 18 R T_m , \qquad D_0 \approx 10^{- 5}\ \mathrm{m^{2} / s}, \qquad D \left( T_m \right) \approx 10^{- 13}\ \mathrm{m^{2} / s} .
 $$
-The third is remarkable: **every metal diffuses at about $10^{- 13}\ \mathrm{m^{2} / s}$ at its own melting point**, from zinc to tungsten, which is why a sintering schedule is quoted as a fraction of the absolute melting temperature and why homologous temperature $T / T_m$ is the only temperature a metallurgist uses. Interstitial diffusion has $Q$ of $0.1$ to $1.2\ \mathrm{eV}$ with no vacancy term, and is therefore $10^{4}$ to $10^{10}$ times faster; hydrogen in iron at room temperature diffuses at $2 \times 10^{- 8}\ \mathrm{m^{2} / s}$, which is a hundred times faster than iron in iron at $1000\ {}^{\circ}\mathrm{C}$.
+The third is remarkable: **every metal diffuses at about $10^{- 13}\ \mathrm{m^{2} / s}$ at its own melting point**, from zinc to tungsten, which is why a sintering schedule is quoted as a fraction of the absolute melting temperature and why homologous temperature $T / T_m$ is the only temperature a metallurgist uses. Interstitial diffusion has $Q$ of $0.1$ to $1.2\ \mathrm{eV}$ with no vacancy term, and is therefore $10^{4}$ to $10^{10}$ times faster; hydrogen in BCC iron at room temperature diffuses at about $10^{- 8}\ \mathrm{m^{2} / s}$, some $10^{8}$ times faster than iron in iron at $1000\ {}^{\circ}\mathrm{C}$ ($\approx 10^{- 16}\ \mathrm{m^{2} / s}$).
 :::
 
 ::: example Equilibrium and quenched vacancies {#ex-vacancies}
@@ -88,11 +88,11 @@ $$
 c = \exp \left( - 8.19 \right) = 2.7 \times 10^{- 4}
 $$
 one per $3700$ sites, or $1.6 \times 10^{25}$ vacancies per cubic metre against $6.0 \times 10^{28}$ sites.
-**After quenching to $20\ {}^{\circ}\mathrm{C}$:** the equilibrium value at $293\ \mathrm{K}$ is $7 \times 10^{- 12}$, but the vacancies cannot diffuse to a sink during a quench fast enough to annihilate, so the metal retains a **supersaturation of four to five orders of magnitude**. On the next ageing treatment at $150$ to $200\ {}^{\circ}\mathrm{C}$ the supersaturation collapses by forming dislocation loops, and the loops are visible in the electron microscope as perfect prismatic interstitial or vacancy loops of a few nanometres.
+**After quenching to $20\ {}^{\circ}\mathrm{C}$:** the equilibrium value at $293\ \mathrm{K}$ is $\exp \left( - 26.1 \right) = 4.4 \times 10^{- 12}$, but the vacancies cannot diffuse to a sink fast enough during a quench, so the metal retains a **supersaturation** that, if the whole high-temperature population survived, would be $2.7 \times 10^{- 4} / 4.4 \times 10^{- 12} \approx 6 \times 10^{7}$ — nearly eight orders of magnitude. On subsequent ageing the excess vacancies migrate to sinks, speed up solute diffusion, and partly condense into vacancy loops of a few nanometres that are visible in the electron microscope.
 
-*Check.* The number of vacancies per cubic metre at the melting point, $1.6 \times 10^{25}$, corresponds to a volume of $1.6 \times 10^{25} \times 1.66 \times 10^{- 29} = 2.7 \times 10^{- 4}\ \mathrm{m^{3}}$ per cubic metre — the same fraction as the concentration, as it must be, and equal to the **measured** density difference between a slowly cooled and a quenched specimen, which is how $c$ was first measured. $\checkmark$
+*Check.* The number of vacancies per cubic metre at the melting point, $1.6 \times 10^{25}$, multiplied by the atomic volume $1 / \left( 6.0 \times 10^{28} \right) = 1.66 \times 10^{- 29}\ \mathrm{m^{3}}$, gives $2.7 \times 10^{- 4}$ — the same fraction as the concentration, as it must be. This extra volume is what makes the macroscopic length of a hot specimen grow slightly faster than its X-ray lattice parameter, and comparing the two (the differential dilatometry of Simmons and Balluffi, 1960) is the standard absolute measurement of $c$. $\checkmark$
 
-*Sanity.* The quench-vacancy method measures $c$ to a few per cent and requires quenching fast enough that the metal passes through the temperature range where diffusion is fast before it becomes slow. For aluminium a water quench is enough; for a refractory metal with $\Delta H_f = 2\ \mathrm{eV}$ the concentration at the midpoint of the quench is already low and the method fails, which is why the vacancy data for tungsten and molybdenum come from dilatometry and positron annihilation rather than from density.
+*Sanity.* The measured concentration in aluminium at its melting point is of order $10^{- 3}$, a few times this estimate, because the full expression carries a prefactor $\exp \left( S_f / k \right)$ from the vibrational entropy of formation, $S_f$ being about one to two $k$ in metals. The simple formula gets the order of magnitude and, more usefully, the temperature dependence right.
 :::
 :::
 
@@ -107,17 +107,19 @@ $$
 $$
 \frac{C_x - C_0}{C_s - C_0} = \frac{0.3}{0.9} = 0.333 = \operatorname{erfc} (z )
 \quad\Longrightarrow\quad
-z = 0.595 .
+\operatorname{erf} (z ) = 0.667, \quad z = 0.684 .
 $$
 **The time.** With $x = 2 z \sqrt{D t}$:
 $$
-t = \frac{x^{2}}{4 z^{2} D} = \frac{10^{- 6}}{4 \times 0.354 \times 1.94 \times 10^{- 11}} = 3.64 \times 10^{4}\ \mathrm{s} = 10.1\ \mathrm{h} .
+t = \frac{x^{2}}{4 z^{2} D} = \frac{10^{- 6}}{4 \times 0.468 \times 1.94 \times 10^{- 11}} = 2.75 \times 10^{4}\ \mathrm{s} = 7.6\ \mathrm{h} .
 $$
-**Sensitivity.** A $10\ {}^{\circ}\mathrm{C}$ error in temperature changes $D$ by $\exp \left[ 17{,}800 \times 6.1 \times 10^{- 6} \right] = 1.12$, an eleven per cent change in $D$ and a **five and a half per cent** change in case depth at fixed time. The same eleven per cent in $D$ at fixed depth changes the required time by eleven per cent, and a furnace that drifts twenty degrees puts eleven per cent on the case depth of every gear in the load.
+**Sensitivity.** A $10\ {}^{\circ}\mathrm{C}$ error in temperature changes $D$ by a factor $\exp \left[ 17{,}800 \times \left( 1 / 1263 - 1 / 1273 \right) \right] = \exp \left( 0.111 \right) = 1.12$, a twelve per cent change in $D$ and a **six per cent** change in case depth at fixed time. At fixed depth the required time changes by the same twelve per cent, and a furnace that drifts twenty degrees changes $D$ by twenty-five per cent and the case depth of every gear in the load by twelve.
 
-*Check.* After ten hours the diffusion distance is $2 \sqrt{D t} = 2 \times 8.4 \times 10^{- 4} = 1.68\ \mathrm{mm}$, and the depth of the $0.4\ \%$ contour is $0.595 \times 1.68 = 1.00\ \mathrm{mm}$ $\checkmark$
+**Case depth after ten hours.** $2 \sqrt{D t} = 2 \sqrt{1.94 \times 10^{- 11} \times 36{,}000} = 2 \times 8.36 \times 10^{- 4} = 1.67\ \mathrm{mm}$, and the $0.4\ \%$ contour lies at $z \times 1.67 = 0.684 \times 1.67 = 1.14\ \mathrm{mm}$.
 
-*Sanity.* The square root of time is the whole of the economics of carburising: doubling the case depth takes four times the time and four times the furnace hours, which is why the industry runs hot ($900$ to $950\ {}^{\circ}\mathrm{C}$, near the $\gamma$-to-$\alpha$ limit) and why **low-pressure carburising** with acetylene at a few millibar achieves the same case in a third of the time — not by raising $D$, which is a material property, but by raising the surface carbon activity to the point where the process is diffusion-limited rather than reaction-limited. A carburising cycle that will not go faster no matter how long it runs is **surface-limited**, and the diagnosis is that the carbon potential is too low, not the temperature.
+*Check.* The ratio of depths should be the square root of the ratio of times: $\sqrt{10 / 7.6} = 1.15$ and $1.14 / 1.00 = 1.14$ $\checkmark$
+
+*Sanity.* The square root of time is the whole of the economics of carburising: doubling the case depth takes four times the time and four times the furnace hours, which is why the industry runs as hot as furnace life and austenite grain growth allow (typically $900$ to $950\ {}^{\circ}\mathrm{C}$ for gas carburising, hotter in vacuum furnaces) and why **low-pressure carburising** with acetylene at a few millibar shortens cycles, partly by running hotter and partly by boost-and-diffuse sequences that keep the surface near carbon saturation, so that the process is diffusion-limited rather than limited by the surface reaction. A carburising cycle that will not go faster no matter how long it runs is **surface-limited**, and the diagnosis is that the carbon potential is too low, not the temperature.
 :::
 :::
 
@@ -131,12 +133,12 @@ D_\alpha = 6.2 \times 10^{- 7} \exp \left( - 8.11 \right) = 1.84 \times 10^{- 10
 D_\gamma = 2.3 \times 10^{- 5} \exp \left( - 15.01 \right) = 6.9 \times 10^{- 12}\ \mathrm{m^{2} / s} .
 $$
 Carbon diffuses **twenty-seven times faster in the more closely packed iron**, the counter-intuitive one.
-**Why.** The activation enthalpy is the energy to squeeze past the neighbouring atoms, and in BCC iron the window between the atoms along the $\left\langle 110\right\rangle$ direction is larger than the window in FCC along $\left\langle 110\right\rangle$, because BCC is not close-packed at all — it is a structure with big holes and few of them, whereas FCC is close-packed with small holes. The packing factor of $0.68$ versus $0.74$ is a statement about the **average** and the BCC interstitial site is $0.019\ \mathrm{nm}$ across against carbon's $0.077\ \mathrm{nm}$, so the carbon sits in a severely distorted site and moves easily.
-**The consequence.** On quenching, austenite transforms to martensite by a **diffusionless** shear because the carbon has no time to move: at $D_\alpha = 10^{- 10}\ \mathrm{m^{2} / s}$ the diffusion distance in one second is $2.7 \times 10^{- 5}\ \mathrm{m}$, twenty-seven micrometres, and in a ferrite grain or pearlite colony a few micrometres across that is more than enough — which is why a water quench of a thin specimen still gives some pearlite and why the hardenability of a steel is a race between the diffusion distance and the plate spacing.
+**Why.** The activation enthalpy is the energy needed to squeeze through the gap between neighbouring iron atoms at the saddle point of a jump. FCC iron has the **larger** interstitial holes — the octahedral hole has a radius of $0.052\ \mathrm{nm}$ against $0.019\ \mathrm{nm}$ in BCC, which is why austenite dissolves a hundred times more carbon — but the gaps between neighbouring holes are tight. In the less densely packed BCC lattice the octahedral sites are close together and the path between them is comparatively open, so $Q$ is $80$ rather than $148\ \mathrm{kJ / mol}$. Solubility and mobility are different questions with opposite answers.
+**The consequence.** At $912\ {}^{\circ}\mathrm{C}$ carbon moves $2 \sqrt{1.84 \times 10^{- 10} \times 1} = 2.7 \times 10^{- 5}\ \mathrm{m}$, twenty-seven micrometres, in one second in ferrite — far more than the fraction of a micrometre needed to form a pearlite lamella. Austenite transforms to martensite by a **diffusionless** shear only because a fast quench carries the steel through the temperature range where diffusion is fast in a second or two, down to temperatures where carbon cannot move on the time scale of the transformation. The hardenability of a steel is a race between the cooling rate and the diffusion distance.
 
-*Check.* The diffusion distance in $\gamma$-iron at $912\ {}^{\circ}\mathrm{C}$ in one second is $2 \sqrt{6.9 \times 10^{- 12}} = 5.3\ \mu\mathrm{m}$, and the pearlite interlamellar spacing at that undercooling is $0.1\ \mu\mathrm{m}$ — so pearlite **can** form and does, given a few seconds. At $550\ {}^{\circ}\mathrm{C}$, $D_\gamma$ has fallen by a factor of $700$ and the diffusion distance in one second is $0.19\ \mu\mathrm{m}$, comparable with the spacing of the ferrite plates of bainite, which is why the transformation there is far slower than pearlite and far faster than martensite. $\checkmark$
+*Check.* The diffusion distance in $\gamma$-iron at $912\ {}^{\circ}\mathrm{C}$ in one second is $2 \sqrt{6.9 \times 10^{- 12} \times 1} = 5.2\ \mu\mathrm{m}$, against a pearlite interlamellar spacing of order $0.1$ to $1\ \mu\mathrm{m}$ — so pearlite **can** form, given a few seconds. At $550\ {}^{\circ}\mathrm{C}$ ($823\ \mathrm{K}$), $D_\gamma$ has fallen by a factor of $740$ to $9.3 \times 10^{- 15}\ \mathrm{m^{2} / s}$ and the distance in one second is $0.19\ \mu\mathrm{m}$, still comparable with the spacing of fine pearlite, which is why this temperature is near the nose of the transformation curve; well below it the diffusion distance falls far short of any lamellar spacing and diffusionless martensite takes over. $\checkmark$
 
-*Sanity.* The same twenty-seven-fold asymmetry explains why a carburised steel is carburised in the $\gamma$ range despite the low solubility there — $1.4\ \%$ carbon in $\gamma$ against $0.02\ \%$ in $\alpha$ — because the concentration driving force more than compensates for the lower $D$. It also explains why **nitriding** is done at $500\ {}^{\circ}\mathrm{C}$ in the $\alpha$ range, where nitrogen diffuses fast and forms hard nitrides, and gives a harder, thinner case at a lower temperature with no quench distortion at all.
+*Sanity.* A steel is nevertheless carburised in the $\gamma$ range, despite the twenty-seven-fold lower $D$, because austenite dissolves more than $1\ \%$ carbon at carburising temperatures against at most $0.022\ \%$ in ferrite, and the much larger concentration difference more than compensates for the lower $D$. It also explains why **nitriding** is done at $500\ {}^{\circ}\mathrm{C}$ in the $\alpha$ range, where nitrogen diffuses fast and forms hard nitrides, and gives a harder, thinner case at a lower temperature with no quench distortion at all.
 :::
 :::
 
@@ -144,34 +146,34 @@ Carbon diffuses **twenty-seven times faster in the more closely packed iron**, t
 A diffusion couple of pure copper and pure nickel is annealed at $1000\ {}^{\circ}\mathrm{C}$ with a row of inert molybdenum markers at the interface. Which way do the markers move, and by how much after ten hours?
 ::: solution
 **The diffusivities.** At $1273\ \mathrm{K}$, $D_{\mathrm{Cu}\rightarrow \mathrm{Ni}} \approx 7 \times 10^{- 14}$ and $D_{\mathrm{Ni}\rightarrow \mathrm{Cu}} \approx 4 \times 10^{- 14}\ \mathrm{m^{2} / s}$: copper moves into nickel about twice as fast as nickel moves into copper.
-**The consequence.** The net atom flux is toward the copper side, which therefore loses lattice planes and **shrinks**, so the markers — which are carried by the lattice — move into the copper. This is the **Kirkendall effect**, and it is impossible if the two diffusivities are equal, which is the assumption of Fick's original treatment.
-**The voids.** The vacancy supersaturation left on the shrinking side condenses into a row of voids along the original interface, visible in the microscope as a band of porosity that will be the fatigue crack's starting point.
+**The consequence.** More copper atoms leave the copper side than nickel atoms arrive, so the net atom flux is toward the nickel side and is balanced by a net vacancy flux toward the copper side. The copper side loses lattice planes and **shrinks**, the nickel side gains them and swells, and the markers — which are carried by the lattice — move toward the copper. This is the **Kirkendall effect**; it does not occur if the two intrinsic diffusivities are equal.
+**The voids.** The vacancy supersaturation left on the shrinking side condenses into a row of voids along the original interface, visible in the microscope as a band of porosity that weakens the joint.
 **The mathematics.** The Darken equations give the marker velocity and the composition-dependent interdiffusivity:
 $$
 \tilde{D} = D_B N_A + D_A N_B , \qquad
-v = \left( D_A - D_B \right) \frac{\mathrm{d} \ln C_A}{\mathrm{d} x} ,
+v = \left( D_A - D_B \right) \frac{\partial N_A}{\partial x} ,
 $$
-and the **Matano-Boltzmann** method extracts $\tilde{D} (C )$ from a single diffusion couple's composition profile by integrating about the Matano plane, which is the plane across which the net flux is zero.
+with $N_A$ and $N_B$ the atom fractions, and the **Boltzmann–Matano** method extracts $\tilde{D} (C )$ from a single diffusion couple's composition profile by integrating about the Matano plane, which is the plane across which the net flux is zero.
 
-*Check.* With $\Delta D = 3 \times 10^{- 14}\ \mathrm{m^{2} / s}$ and a composition gradient of one atomic fraction per $50\ \mu\mathrm{m}$, $v = 3 \times 10^{- 14} \times 2 \times 10^{4} = 6 \times 10^{- 10}\ \mathrm{m / s}$, giving a marker displacement of $22\ \mu\mathrm{m}$ in ten hours — easily measured optically, and of just the size reported for copper-nickel couples. $\checkmark$
+*Check.* With $\Delta D = 3 \times 10^{- 14}\ \mathrm{m^{2} / s}$ and a composition gradient of one atomic fraction per $50\ \mu\mathrm{m}$, $v = 3 \times 10^{- 14} \times 2 \times 10^{4} = 6 \times 10^{- 10}\ \mathrm{m / s}$, giving a marker displacement of $6 \times 10^{- 10} \times 36{,}000 = 2.2 \times 10^{- 5}\ \mathrm{m} = 22\ \mu\mathrm{m}$ in ten hours, if the gradient stayed constant — easily measured optically. (The diffusivities here are order-of-magnitude values for illustration.) $\checkmark$
 
 *Sanity.* The Kirkendall effect is not a laboratory curiosity; it is the reason a **diffusion bond** between two different alloys has a band of voids at the interface unless the bonding is done under pressure, and it is the reason nanoscale **Kirkendall voids** are made deliberately to hollow out metal nanoshells for catalysis. It is also the reason a solder joint between copper and a tin-silver alloy grows intermetallic layers of unequal thickness on the two sides, and why the joint fails in the intermetallic rather than in the solder.
 :::
 :::
 
 ::: example Design {#ex-design-barrier}
-A copper interconnect on silicon must be diffusion-barrriered so that less than one per cent of a monolayer of copper reaches the silicon during sixty minutes at $450\ {}^{\circ}\mathrm{C}$. Choose between a $50\ \mathrm{nm}$ film of tantalum, of $\mathrm{TiN}$ and of $\mathrm{Ta_2 O_5}$.
+A copper interconnect on silicon needs a diffusion barrier so that less than one per cent of a monolayer of copper reaches the silicon during sixty minutes at $450\ {}^{\circ}\mathrm{C}$. Choose between a $50\ \mathrm{nm}$ film of tantalum, of $\mathrm{TiN}$ and of $\mathrm{Ta_2 O_5}$.
 ::: solution
 **The requirement.** The fraction transmitted by a film of thickness $L$ with a constant source on one side and a perfect sink on the other is approximately
 $$
 f \approx \frac{2 \sqrt{D t}}{L} \exp \left( - \frac{L^{2}}{4 D t} \right) \quad \text{for} \ L \gg 2 \sqrt{D t} .
 $$
-Writing $u = L^{2} / \left( 4 D t \right)$ makes this $f = \mathrm{e}^{- u} / \sqrt{u}$, and $f < 10^{- 2}$ requires $u > 4.0$. With $L = 50\ \mathrm{nm}$ and $t = 3600\ \mathrm{s}$,
+Writing $u = L^{2} / \left( 4 D t \right)$ makes this $f = \mathrm{e}^{- u} / \sqrt{u}$, and $f < 10^{- 2}$ requires $u > 3.9$; take $u = 4.0$. With $L = 50\ \mathrm{nm}$ and $t = 3600\ \mathrm{s}$,
 $$
 D < \frac{L^{2}}{4 u t} = \frac{2.5 \times 10^{- 15}}{4 \times 4.0 \times 3600} = 4 \times 10^{- 20}\ \mathrm{m^{2} / s}
 $$
 at $450\ {}^{\circ}\mathrm{C} = 723\ \mathrm{K}$.
-**The candidates.** Taking $D_0 \approx 10^{- 5}\ \mathrm{m^{2} / s}$ and $Q$ from the measured values:
+**The candidates.** Taking $D_0 \approx 10^{- 5}\ \mathrm{m^{2} / s}$ and illustrative activation energies for the fastest path through each film:
 $$
 \begin{array}{l c c}
 \text{Barrier} & Q\ \left[ \mathrm{eV} \right] & D \left( 723\ \mathrm{K} \right)\ \left[ \mathrm{m^{2} / s} \right] \\
@@ -180,28 +182,28 @@ $$
 \mathrm{TiN} & 3.0 & 1 \times 10^{- 26}
 \end{array}
 $$
-**Choice.** Tantalum fails by six orders of magnitude because copper diffuses along its columnar grain boundaries with an activation energy of about $1.2\ \mathrm{eV}$; this is exactly why a pure-tantalum barrier was abandoned. Tantalum pentoxide passes by two orders and titanium nitride by seven, and titanium nitride is what was used, because it is also an adhesion layer and a diffusion barrier for the tungsten plug beneath it.
+**Choice.** Tantalum fails by six orders of magnitude ($4 \times 10^{- 14}$ against $4 \times 10^{- 20}$) because copper diffuses along its columnar grain boundaries with a low activation energy. Tantalum pentoxide passes by two orders, but it is an insulator and would sit in the current path of a via; titanium nitride passes by six and is conducting, so on these numbers it is the choice.
 **The real specification.** The barrier is not tested by the calculation but by **stress migration** and **electromigration** tests, and the failure mode is not bulk diffusion at all: it is the copper that leaks along the **interface** between the barrier and the via wall, which is why the modern answer is a **tantalum/tantalum-nitride bilayer** — the Ta wets the copper and the $\mathrm{TaN_x}$ blocks the interface path — deposited by reactive sputtering to $25\ \mathrm{nm}$ total.
 
-*Design comment.* Three lessons generalise. **The barrier that fails is the one whose failure path was not the one designed for**, and grain-boundary and interface diffusion are $10^{6}$ to $10^{12}$ times faster than lattice diffusion in a nanocrystalline sputtered film. **Amorphous or nanocrystalline barriers beat crystalline columnar ones** for exactly this reason, and the industry's move from CVD to PVD barrier films in the 1990s bought nothing until the films were made amorphous. And **a diffusion barrier is a mechanical layer as well**, so its thickness is set by step coverage and adhesion at $25\ \mathrm{nm}$ and not by the diffusion calculation, which would be satisfied by $2\ \mathrm{nm}$ of titanium nitride.
+*Design comment.* Three lessons generalise. **The barrier that fails is the one whose failure path was not the one designed for**, and grain-boundary and interface diffusion at these temperatures are many orders of magnitude faster than lattice diffusion in a fine-grained sputtered film. **Amorphous or nanocrystalline barriers without continuous columnar boundaries beat columnar ones** for exactly this reason. And **a diffusion barrier is a mechanical layer as well**, so its thickness is set by continuity, step coverage and adhesion and not by the bulk diffusion calculation, which with $D = 1 \times 10^{- 26}\ \mathrm{m^{2} / s}$ would be satisfied by $L = \sqrt{4 u D t} = 0.03\ \mathrm{nm}$ — less than one atomic layer.
 :::
 :::
 
 ::: history
-The experimental fact that solids diffuse was established twice and believed neither time. **Robert Hare** in 1826 welded a cylinder of gold on one of lead, kept it at a gentle heat for five years and found each metal in the other; **William Freeston** read the same experiment to the Manchester Literary and Philosophical Society in 1878 with the same experiment and the same conclusion, and both were treated as curiosities. **William Chandler Roberts-Austen** made the first quantitative measurements in 1896 by sectioning gold-lead couples and weighing the layers, and drew the first Arrhenius line. **Carl Wagner** gave the theory its modern form in a series of papers of 1938 on interdiffusion in metals, and **Ernest Kirkendall and A. E. Smigelskas**'s 1947 paper reported the inert-marker experiments that proved the two intrinsic diffusivities differ — a result Wagner's theory had already permitted and that most metallurgists refused for a decade because it implied the lattice is not fixed. **Linus Pauling**'s 1929 rules on ionic crystals set the scale of the Schottky and Frenkel energies. **C. Matano**'s 1933 method of analysing an interdiffusion couple and **E. Boltzmann**'s 1894 similarity transformation were combined by **Matano** in a single construction that is still the standard. **F. A. Cottrell**'s *Dislocations and Plastic Flow in Crystals* of 1953 made the vacancy-dislocation connection ordinary textbook material, and **A. D. Le Claire**'s 1963 review of grain-boundary diffusion, in *Progress in Metal Physics*, is the document against which every measurement of the last sixty years has been checked.
+**Adolf Fick**, a physiologist in Zürich, stated his laws in 1855 by analogy with Fourier's law of heat conduction, from experiments on salt diffusing through water. The first quantitative measurements of diffusion in a solid metal were made by **William Chandler Roberts-Austen**, who in 1896 reported the diffusion of gold into solid lead. **Yakov Frenkel** introduced the vacancy-interstitial pair in 1926, and **Carl Wagner** and **Walter Schottky** the paired vacancies of ionic crystals in 1930. **Ludwig Boltzmann**'s similarity transformation of 1894 was turned by **Chujiro Matano** in 1933 into the standard method of extracting a concentration-dependent diffusivity from a single couple. **Ernest Kirkendall** and **Alice Smigelskas**'s 1947 paper reported that molybdenum wires placed at the interface of a copper-brass couple moved during annealing, and **Lawrence Darken**'s analysis of 1948 explained the motion by unequal intrinsic diffusivities — a result many metallurgists at first resisted, because it meant that diffusion was not a simple exchange of atoms. **R. O. Simmons** and **R. W. Balluffi** measured the equilibrium vacancy concentration of aluminium directly in 1960 by comparing length and lattice-parameter changes, and **Alan Cottrell**'s *Dislocations and Plastic Flow in Crystals* (1953) and **J. C. Fisher**'s 1951 model of grain-boundary diffusion brought defects and fast diffusion paths into the standard picture.
 :::
 
 ## Where this leads
 
-The vacancy concentration of this lesson is the mobility term in the precipitation kinetics of [[materials-science/phase-transformations]], the carbon-in-iron asymmetry of Example 4 is the reason the iron-carbon diagram of [[materials-science/phase-diagrams]] is drawn for the metastable cementite rather than the stable graphite, the diffusion distance $\sqrt{Dt}$ is the length scale of the creep cavities of [[materials-science/failure]], and the interstitial carbon that makes steel strong is the same atom that makes it age after forming in [[materials-science/dislocations-strengthening]].
+The vacancy concentration of this lesson is the mobility term in the precipitation kinetics of [[materials-science/phase-transformations]], the carbon diffusivities of [[#ex-two-irons]] set the time scale of the eutectoid reaction of the iron-carbon diagram in [[materials-science/phase-diagrams]], the diffusion distance $\sqrt{Dt}$ is the length scale of the creep cavities of [[materials-science/failure]], and the interstitial carbon that makes steel strong is the same atom that makes it age after forming in [[materials-science/dislocations-strengthening]].
 
 ::: summary
-- A crystal must contain vacancies: the entropy of mixing diverges at zero concentration, so the free-energy minimum is at $c = \exp \left( - \Delta H_f / k T \right)$, about one site in four thousand at the melting point and none at room temperature.
+- A crystal must contain vacancies: the entropy of mixing diverges at zero concentration, so the free-energy minimum is at $c = \exp \left( - \Delta H_f / k T \right)$, about one site in four thousand for aluminium at its melting point and a negligible number at room temperature.
 - Diffusion distance goes as $\sqrt{Dt}$, so doubling a treatment time gains forty per cent of depth and quadrupling it doubles the depth.
 - Self-diffusion obeys three universal rules: $Q \approx 18 R T_m$, $D_0 \approx 10^{- 5}\ \mathrm{m^{2} / s}$ and $D \approx 10^{- 13}\ \mathrm{m^{2} / s}$ at the melting point of every metal.
 - Interstitials diffuse $10^{4}$ to $10^{10}$ times faster than vacancies, and carbon moves twenty-seven times faster in open-structured BCC iron than in close-packed FCC iron.
 - Intrinsic diffusivities differ, so the lattice itself moves: the Kirkendall effect, marker motion and interface voids are the proof that Fick's symmetric picture is incomplete.
-- Real diffusion at device-relevant temperatures goes by grain boundaries and interfaces, not through the lattice, and a barrier designed against lattice diffusion fails by thirteen orders of magnitude.
+- Real diffusion at device-relevant temperatures goes by grain boundaries and interfaces, not through the lattice, and a barrier designed against lattice diffusion can fail by six orders of magnitude or more.
 :::
 
 ::: quiz
@@ -217,17 +219,17 @@ If the temperature is right, $D$ is right, and the only remaining lever is the s
 
 ## Exercises
 
-::: exercise Vacancy concentration {level=1 check="0.5"}
-Roughly what fraction of the enthalpy of vacancy formation is recovered by the relaxation of the neighbouring atoms?
+::: exercise Vacancy concentration {level=1 check="1.55"}
+Using $\Delta H_f = 0.66\ \mathrm{eV}$, give the equilibrium vacancy concentration in aluminium at $600\ {}^{\circ}\mathrm{C}$. (Enter $c$ in units of $10^{- 4}$.)
 ::: solution
-About half.
+$c = \exp \left( - 0.66 / \left( 8.617 \times 10^{- 5} \times 873 \right) \right) = \exp \left( - 8.77 \right) = 1.55 \times 10^{- 4}$, about one site in $6500$.
 :::
 :::
 
-::: exercise Orders of magnitude {level=1 check="6"}
-By roughly how many orders of magnitude is interstitial diffusion faster than vacancy diffusion in the same metal?
+::: exercise Orders of magnitude {level=1 check="7.8"}
+Using $Q_{\mathrm{self}} \approx 18 R T_m$, by how many orders of magnitude is the self-diffusion coefficient of a metal at half its absolute melting temperature smaller than at the melting point? (Enter $\log_{10}$ of the ratio.)
 ::: solution
-Six — the range quoted is four to ten.
+$D \left( T_m \right) / D \left( T_m / 2 \right) = \exp \left( 36 - 18 \right) = \mathrm{e}^{18} = 6.6 \times 10^{7}$, and $\log_{10} \mathrm{e}^{18} = 18 / 2.303 = 7.8$ — nearly eight orders of magnitude, which is why creep and diffusion matter above about $0.4 T_m$ and hardly at all below it.
 :::
 :::
 
@@ -256,10 +258,10 @@ Two — one sodium and one chloride, so that charge neutrality is preserved.
 Copper has $\Delta H_f = 1.11\ \mathrm{eV}$ and melts at $1085\ {}^{\circ}\mathrm{C}$. Give the equilibrium vacancy concentration at the melting point and the number per cubic metre.
 ::: solution
 $$
-c = \exp \left( - \frac{1.11}{8.617 \times 10^{- 5} \times 1358} \right) = 8.4 \times 10^{- 5} ,
+c = \exp \left( - \frac{1.11}{8.617 \times 10^{- 5} \times 1358} \right) = \exp \left( - 9.49 \right) = 7.6 \times 10^{- 5} ,
 $$
-and with $8.5 \times 10^{28}$ sites per cubic metre, $n_v = 7.1 \times 10^{24}\ \mathrm{m^{- 3}}$.
-*Sanity.* One vacancy in twelve thousand sites is a fifth of aluminium's value at its own melting point, because copper's melting point is higher and its bond stronger; the density difference between an annealed and a quenched copper specimen is $8.4 \times 10^{- 5}$, or $0.7\ \mathrm{mg}$ per cubic centimetre, which is measurable on a good balance and was how the number was first obtained.
+and with $8.5 \times 10^{28}$ sites per cubic metre, $n_v = 6.4 \times 10^{24}\ \mathrm{m^{- 3}}$.
+*Sanity.* One vacancy in thirteen thousand sites is about a quarter of aluminium's value at its own melting point: the ratio $\Delta H_f / k T_m$ is $9.5$ for copper against $8.2$ for aluminium. The corresponding density deficit, $7.6 \times 10^{- 5}$ of $8.93\ \mathrm{g / cm^{3}}$, is $0.68\ \mathrm{mg}$ per cubic centimetre.
 :::
 :::
 
@@ -269,19 +271,19 @@ A steel is carburised as in Example 2 but at $900\ {}^{\circ}\mathrm{C}$. Give t
 $$
 D = 2.3 \times 10^{- 5} \exp \left( - \frac{148{,}000}{8.314 \times 1173} \right) = 5.9 \times 10^{- 12}\ \mathrm{m^{2} / s} ,
 $$
-a factor of $3.3$ below the $1000\ {}^{\circ}\mathrm{C}$ value, so the time rises by the same factor to $33\ \mathrm{h}$.
-*Sanity.* A hundred degrees costs a factor of three in time, which is the whole of the case for running carburising as hot as the $\gamma$-field allows and the whole of the case against it, since $912\ {}^{\circ}\mathrm{C}$ is the $\alpha$-to-$\gamma$ boundary for a plain-carbon steel and above it the surface melts as the carbon potential rises. The industry's compromise is $900$ to $930\ {}^{\circ}\mathrm{C}$ with a carbon potential ramped down as the cycle ends.
+a factor of $3.3$ below the $1000\ {}^{\circ}\mathrm{C}$ value, so the time rises by the same factor, from $7.6$ to $25\ \mathrm{h}$.
+*Sanity.* A hundred degrees costs a factor of three in time, which is the case for carburising hot. The limits are set not by a phase boundary but by furnace life, austenite grain growth and distortion, and conventional gas carburising runs at about $900$ to $950\ {}^{\circ}\mathrm{C}$, often with the carbon potential lowered towards the end of the cycle to set the surface carbon content.
 :::
 :::
 
-::: exercise Drive-in {level=2}
-A boron implant places a plane source of dopant at the surface of a silicon wafer. After a drive-in of one hour at a temperature where $D = 10^{- 17}\ \mathrm{m^{2} / s}$, give the junction depth if the background concentration requires the dopant to fall a factor of $10^{4}$ below its peak.
+::: exercise Drive-in {level=2 check="1.15"}
+A boron implant places a plane source of dopant at the surface of a silicon wafer. After a drive-in of one hour at a temperature where $D = 10^{- 17}\ \mathrm{m^{2} / s}$, give the junction depth if the background concentration requires the dopant to fall a factor of $10^{4}$ below its peak. (Enter the depth in µm.)
 ::: solution
 With $C / C_{\max} = \exp \left( - x^{2} / 4 D t \right) = 10^{- 4}$:
 $$
 x = 2 \sqrt{9.21\, D t} = 2 \sqrt{9.21 \times 10^{- 17} \times 3600} = 1.15\ \mu\mathrm{m} .
 $$
-*Sanity.* The peak concentration itself falls as $1 / \sqrt{t}$, so a longer drive-in makes the profile both deeper and shallower in the two senses of the word, and this is why modern devices use **rapid thermal processing** — ten seconds at $1050\ {}^{\circ}\mathrm{C}$ instead of thirty minutes at $900\ {}^{\circ}\mathrm{C}$ — which diffuses the damage away while the square-root law keeps the junction where it was put.
+*Sanity.* The peak concentration itself falls as $1 / \sqrt{t}$, so a longer drive-in makes the profile deeper but lower, and this is why modern devices use **rapid thermal processing** — seconds at about $1050\ {}^{\circ}\mathrm{C}$ instead of tens of minutes at a lower temperature — which anneals the implant damage while keeping $D t$, and so the junction depth, small.
 :::
 :::
 
@@ -291,7 +293,7 @@ Derive the error-function solution of Fick's second law for constant surface con
 **The scaling argument first.** In $\partial C / \partial t = D \partial^{2} C / \partial x^{2}$ the two sides must have the same dimensions, so $x^{2} / t \sim D$ and the only length the problem contains is $\sqrt{D t}$. A solution can therefore depend only on the single variable $\eta = x / \left( 2 \sqrt{D t} \right)$, and the partial differential equation must reduce to an ordinary one.
 **The reduction.** With $C (x , t ) = C_0 + \left( C_s - C_0 \right) \left[ 1 - f (\eta ) \right]$ and $\eta = x / \left( 2 \sqrt{D t} \right)$,
 $$
-\frac{\partial C}{\partial t} = \left( C_s - C_0 \right) \left( - f^{\prime} \right) \left( - \frac{\eta}{t} \right),
+\frac{\partial C}{\partial t} = \left( C_s - C_0 \right) \left( - f^{\prime} \right) \left( - \frac{\eta}{2 t} \right),
 \qquad
 \frac{\partial^{2} C}{\partial x^{2}} = \left( C_s - C_0 \right) \left( - f^{\prime\prime} \right) \frac{1}{4 D t} ,
 $$
@@ -307,7 +309,7 @@ $$
 $$
 \boxed{ \frac{C - C_0}{C_s - C_0} = 1 - \operatorname{erf} \eta = \operatorname{erfc} \eta } . \quad \checkmark
 $$
-*Sanity.* The similarity form is the reason a diffusion profile measured at two different times collapses onto one curve when plotted against $x / \sqrt{t}$, and the collapse is the standard experimental check that the process is **diffusion-controlled** rather than limited by the surface reaction. A profile that does not collapse is either reaction-limited or has a concentration-dependent $D$, and the two are distinguished by the Matano construction. The same similarity structure governs the heat-conduction problems of [[materials-science/failure]] creep and of any transient conduction, which is why the error function appears in five different engineering subjects with the same table behind it.
+*Sanity.* The similarity form is the reason a diffusion profile measured at two different times collapses onto one curve when plotted against $x / \sqrt{t}$, and the collapse is the standard experimental check that the process is **diffusion-controlled** rather than limited by the surface reaction. A profile that does not collapse is either reaction-limited or has a concentration-dependent $D$, and the two are distinguished by the Matano construction. The same similarity structure governs transient heat conduction into a semi-infinite solid, which is why the error function appears in several engineering subjects with the same table behind it.
 :::
 :::
 
@@ -319,9 +321,9 @@ $$
 2 \sqrt{D t} = 2 \sqrt{10^{- 18} \times 3.6 \times 10^{7}} = 12\ \mu\mathrm{m} .
 $$
 **The verdict.** The aluminium in the coating has moved twelve micrometres in ten thousand hours; the coating is twenty-five times thicker than the diffusion distance and diffusion through it is not the mechanism that will kill it.
-**What does.** Three things, in order of how often they decide. **Oxide scale spallation** on thermal cycling, which strips the coating mechanically and is the reason a coating's thermal-cyclic life, not its isothermal life, is the specification. **Interdiffusion** with the substrate, which converts the $\beta$-NiAl coating into a brittle $\delta$-Ni₂Al₃ and, more importantly, depletes the substrate's aluminium and chromium and lets the substrate itself oxidise. And **the substrate's own depletion zone**, which is a diffusion problem with the substrate's much lower diffusivity and a much longer diffusion distance because the substrate is a millimetre thick, not a micrometre.
-**The design.** The coating is thick enough; the life is set by the thermal-cycle specification and by the reactive-element effect — a few tens of parts per million of yttrium or hafnium, which peg the oxide to the metal and multiply the cyclic life by a factor of five.
+**What does.** Three things, in order of how often they decide. **Oxide scale spallation** on thermal cycling, which strips the coating mechanically and is the reason a coating's thermal-cyclic life, not its isothermal life, is the specification. **Interdiffusion** with the substrate, which progressively converts the $\beta$-NiAl coating to $\gamma^{\prime}$-Ni₃Al as its aluminium is lost and, more importantly, depletes the substrate's aluminium and chromium and lets the substrate itself oxidise. And **the substrate's own depletion zone**, which is a diffusion problem with the substrate's much lower diffusivity and a much longer diffusion distance because the substrate is a millimetre thick, not a micrometre.
+**The design.** The coating is thick enough; the life is set by the thermal-cycle specification and by the reactive-element effect — small additions of yttrium or hafnium that improve the adhesion of the oxide scale and multiply its cyclic life several-fold.
 
-*Sanity.* The arithmetic here is the same arithmetic that says a thermal-barrier coating's ceramic layer, at $100\ \mu\mathrm{m}$ and $D = 10^{- 20}\ \mathrm{m^{2} / s}$, equilibrates its oxygen in $10^{4}\ \mathrm{h}$ over a distance of $1.2\ \mu\mathrm{m}$ — which is why a thermal-barrier coating's failure is always at the **thermally grown oxide** interface and never in the ceramic. Diffusion in a coating system is never about the coating; it is about the two interfaces and the thin oxide between them.
+*Sanity.* The same arithmetic warns against assuming a ceramic top coat is a diffusion barrier. Yttria-stabilised zirconia, the ceramic of thermal-barrier coatings, is an oxygen-ion conductor and passes oxygen readily, so the bond coat beneath it oxidises anyway, and such coatings usually fail at or near the **thermally grown oxide** between bond coat and ceramic. In a coating system the life is decided at the interfaces.
 :::
 :::

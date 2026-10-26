@@ -1,15 +1,15 @@
 A fin is a wall that has been given more area, and the whole of fin theory is the accounting of what that area is really worth. The idea is obvious and the arithmetic is easy; what is not obvious is that **the added area is never fully effective**, because the heat has to travel along the fin to reach it, and the temperature at the end of the fin is lower than the temperature at its base, so the far end works less hard than the near end. The single number that measures this is the **fin efficiency**, the ratio of the heat the fin actually throws to the heat it would throw if the whole fin were at the base temperature, and it is the most misread quantity in thermal engineering.
 
-The reason fins work at all is a comparison of two resistances. Conduction along a fin of cross-section $A_c$ and perimeter $P$ offers $L ^ { 2 } / ( k A _ { c } )$; convection from its surface offers $1 / ( h P L )$. Their ratio, squared, is the parameter that governs everything:
+The reason fins work at all is a comparison of two resistances. Conduction along a fin of length $L$, cross-section $A_c$ and perimeter $P$ offers a resistance $L / ( k A _ { c } )$; convection from its surface offers $1 / ( h P L )$. Their ratio is the parameter that governs everything:
 $$
-m ^ { 2 } L ^ { 2 } = \frac { h P L ^ { 2 } / ( k A _ { c } ) } { 1 } \qquad \Longleftrightarrow \qquad m = \sqrt { \frac { h P } { k A _ { c } } }
+m ^ { 2 } L ^ { 2 } = \frac { L / ( k A _ { c } ) } { 1 / ( h P L ) } = \frac { h P L ^ { 2 } } { k A _ { c } } \qquad \Longleftrightarrow \qquad m = \sqrt { \frac { h P } { k A _ { c } } }
 $$
 **When $mL \ll 1$ the fin is short and fat, its whole surface is near the base temperature, and it is doing nothing that a slightly thicker wall would not do. When $mL \gg 1$ the fin is long and thin, its temperature falls away within a short distance of the base, and most of its surface is at the ambient temperature and is doing nothing at all.** The useful range is $mL$ between about $0.3$ and $1.5$, and the whole craft of fin design is putting a piece of metal in that window.
 
-Two consequences decide most real designs. **Fin effectiveness** — the ratio of the heat a fin carries to the heat the same base area would have carried without it — is $\sqrt { P k / ( h A _ { c } ) }$ for a long fin, and it is **large whenever $h$ is small**: fins are how you fix a bad fluid, which is why every air-cooled thing is bristling with metal and almost nothing water-cooled is. And **the optimum spacing of an array** is set not by the fins at all but by the boundary layers between them: **the pitch that works is of order twice the equivalent film thickness $k / h$, which is why natural-convection heat sinks have $8$ to $12\ \mathrm{mm}$ fin spacing and forced-air ones have $2$ to $3\ \mathrm{mm}$ — the same rule, applied to two values of $h$ that differ by a factor of eight.**
+Two consequences decide most real designs. **Fin effectiveness** — the ratio of the heat a fin carries to the heat the same base area would have carried without it — is $\sqrt { P k / ( h A _ { c } ) }$ for a long fin, and it is **large whenever $h$ is small**: fins are how you fix a bad fluid, which is why every air-cooled thing is bristling with metal and almost nothing water-cooled is. And **the optimum spacing of an array** is set not by the fins at all but by the boundary layers between them: **the pitch that works is of order twice the equivalent film thickness $k / h$, which is why natural-convection heat sinks have $8$ to $12\ \mathrm{mm}$ fin spacing and forced-air ones have $2$ to $3\ \mathrm{mm}$ — the same rule, applied to two values of $h$ that differ by a factor of about four.**
 
 ::: warning Five fin errors that are made in every industry
-**Confusing efficiency with effectiveness.** A fin that is $60\ \ \%$ efficient and $22$ times more effective than the bare surface it replaces is a **good fin**: it is throwing $13\ \ \%$ more heat than a hypothetical perfect one would, and $2200\ \ \%$ more than the wall it stands on. **Efficiency measures the metal; effectiveness measures the decision.** **Judging a fin by its efficiency alone is like judging a power station by its copper losses and never asking what it generates.** **Assuming more fins are better.** For a long fin the dissipation is $\sqrt { h P k A _ { c } } \, \Delta T$ and **does not contain the length at all**: doubling a fin whose $mL > 2$ buys a few per cent and doubles the mass. In an array, adding fins at fixed pitch adds area and then stops, because the boundary layers merge and $h$ collapses. **The optimum spacing of a natural-convection heat sink is broad and flat — within $\pm 40\ \ \%$ of the optimum pitch the performance changes by less than $10\ \ \%$ — so buy the sink that fits and stop optimising.** **Ignoring the base.** A fin is attached, and the attachment has a contact resistance. A typical pressed-in or epoxied fin array has an interface conductance of $3000$ to $8000\ \mathrm { W / m ^ { 2 } K }$, which on a $0.08\ \mathrm { m ^ { 2 } }$ fin array at an effective $h$ of $40\ \mathrm { W / m ^ { 2 } K }$ is $0.4\ \ \%$ of the resistance — invisible. **On the same array cooled by natural convection at $h = 5$ it is $3\ \%$, and on a fin soldered to a heat pipe with a $25\ \mu\mathrm{m}$ air gap it is the whole design.** **Using a one-dimensional fin equation on a fin that is not thin.** The fin equation assumes the temperature is uniform across the thickness, which requires the Biot number on the half-thickness, $h t / 2 k$, to be small. For aluminium in air it is $1 0 ^ { - 4 }$ and the assumption is superb. **For a thin stainless or titanium fin in boiling water it is not, and for a polymer fin it never was** — and the correction is not to solve the fin equation better but to stop using it. **Assuming the fin tip does not matter.** For a fin of thickness $t$ the tip carries roughly $t / ( 2 L )$ of the total, which is negligible for a plate fin and **not** negligible for a pin fin that is as thick as it is long. The standard remedy, the **corrected length** $L _ { c } = L + t / 2$, is a one-line fix and is always worth taking.
+**Confusing efficiency with effectiveness.** A fin that is $58\ \%$ efficient and has an effectiveness of $20$ is a **good fin**: it throws $58\ \%$ of what an isothermal fin of the same shape would, and twenty times what the bare wall under it would. **Efficiency measures the metal; effectiveness measures the decision.** **Assuming more fins are better.** For a long fin the dissipation is $\sqrt { h P k A _ { c } } \, \Delta T$ and **does not contain the length at all**: doubling a fin whose $mL > 2$ buys a few per cent and doubles the mass. In an array, adding fins at fixed pitch adds area and then stops, because the boundary layers merge and $h$ collapses. **The optimum spacing of a natural-convection heat sink is broad and flat — from about two-thirds to one and a half times the optimum spacing the performance changes by less than $10\ \%$ — so buy the sink that fits and stop optimising.** **Ignoring the base.** A fin is attached, and the attachment has a contact resistance, typically $3000$ to $8000\ \mathrm { W / m ^ { 2 } K }$ for a pressed-in or epoxied joint. Spread over a broad base it is usually negligible; concentrated in the narrow root contact of each pressed-on fin it can cost more than half the array's performance — see [[#ex-contact]]. **Using a one-dimensional fin equation on a fin that is not thin.** The fin equation assumes the temperature is uniform across the thickness, which requires the Biot number on the half-thickness, $h t / 2 k$, to be small. For a $1\ \mathrm{mm}$ aluminium fin in air it is about $10^{-5}$ and the assumption is superb. **For a thin stainless or titanium fin in boiling water it is not, and for a polymer fin it never was** — and the correction is not to solve the fin equation better but to stop using it. **Assuming the fin tip does not matter.** For a fin of thickness $t$ the tip carries roughly $t / ( 2 L )$ of the total, which is negligible for a plate fin and **not** negligible for a pin fin that is as thick as it is long. The standard remedy, the **corrected length** $L _ { c } = L + t / 2$, is a one-line fix and is always worth taking.
 :::
 
 ## The fin equation
@@ -39,8 +39,8 @@ $$
 $$
 **Three things the derivation makes visible that the boxed equation hides.**
 **(i) There is no assumption that $h$ is constant**, only that it is given. If $h$ varies along the fin — and in a natural-convection array it varies from the root to the tip by a factor of two — the equation still holds with $h ( x )$ inside $m ( x )$, and only the closed-form solution is lost.
-**(ii) The transverse gradient has been assumed away.** The derivation used a one-dimensional conduction term across $d x$ only. The error this introduces is of order the Biot number on the half-thickness, $h t / 2 k$: **for aluminium in air, $1 0 ^ { - 4 }$; for aluminium in boiling water at $h = 5 0 0 0$, $0 . 0 7$; for a PTFE fin in air, $0 . 0 0 5$; for a PTFE fin in water, $0 . 6$ and the theory is finished.**
-**(iii) The perimeter $P$ counts the tip's contribution nowhere**, which is why the fourth boundary condition in the table is handled by lengthening the fin rather than by solving again. Adding $A_c / 2$ of extra length — the corrected length $L_c = L + t/2$ for a rectangular fin, $L + d/4$ for a pin — reproduces the convection-tip answer to within a few per cent for every fin a normal engineer designs, and it is the reason the adiabatic-tip formula is the one printed on heat-sink catalogues.
+**(ii) The transverse gradient has been assumed away.** The derivation used a one-dimensional conduction term across $d x$ only. The error this introduces is of order the Biot number on the half-thickness, $h t / 2 k$: for a $1\ \mathrm{mm}$ fin, **aluminium in air ($h = 8$), $2 \times 10^{-5}$; aluminium in boiling water at $h = 5 0 0 0$, $0 . 0 1 4$; PTFE ($k \approx 0.25$) in air, $0 . 0 1 6$; PTFE in water at $h = 3000$, $6$, and the theory is finished.**
+**(iii) The perimeter $P$ counts the tip's contribution nowhere**, which is why the fourth boundary condition in the table is handled by lengthening the fin rather than by solving again. Adding $A_c / P$ of extra length — the corrected length $L_c = L + t/2$ for a thin rectangular fin, $L + d/4$ for a pin — reproduces the convection-tip answer to within a few per cent for ordinary fin proportions, so the adiabatic-tip formula with $L_c$ covers almost every practical case.
 :::
 :::
 
@@ -51,15 +51,15 @@ $$
 $$
 \begin{array} { c c c c c c c c c c }
 m L _ { c } & 0 . 1 & 0 . 2 & 0 . 3 & 0 . 5 & 0 . 7 5 & 1 . 0 & 1 . 5 & 2 . 0 & 3 . 0 & 5 . 0 \\
-\eta _ { f } & 0 . 9 9 7 & 0 . 9 8 7 & 0 . 9 7 0 & 0 . 9 2 4 & 0 . 8 5 1 & 0 . 7 6 2 & 0 . 6 0 4 & 0 . 4 8 2 & 0 . 3 3 4 & 0 . 2 0 0
+\eta _ { f } & 0 . 9 9 7 & 0 . 9 8 7 & 0 . 9 7 1 & 0 . 9 2 4 & 0 . 8 4 7 & 0 . 7 6 2 & 0 . 6 0 3 & 0 . 4 8 2 & 0 . 3 3 2 & 0 . 2 0 0
 \end{array}
 $$
-**The design window is $\eta _ { f } = 0 . 8 5$ to $0 . 9 5$, i.e. $m L _ { c } = 0 . 3$ to $0 . 7 5$.** Below that you are paying for metal that is not working; above it you are paying for metal that is nearly isothermal and could have been spent on another fin instead.
-**For an annular fin of rectangular profile** the exact answer is a combination of modified Bessel functions, $I _ { 1 }$ and $K _ { 1 }$, and nobody evaluates it at a desk. The standard approximation is due to Harper and Kunz and is good to about $2\ \ \%$:
+**A common design window is $m L _ { c } \approx 0 . 5$ to $1 . 0$, i.e. $\eta _ { f } \approx 0 . 9 2$ to $0 . 7 6$.** Much below it the fin is nearly isothermal and the metal could have been made taller or spent on another fin; much above it the outer part of the fin is close to the fluid temperature and is paying for little.
+**For an annular fin of rectangular profile** the exact answer is a combination of modified Bessel functions, $I _ { 1 }$ and $K _ { 1 }$, and nobody evaluates it at a desk. A widely used approximation is Schmidt's (1949), good to a few per cent over the usual range:
 $$
 \eta _ { f } \approx { \frac { \tanh \left( m L _ { c } \psi \right) } { m L _ { c } \psi } } , \qquad \psi = 1 . 0 + 0 . 3 5 \ln \left( { \frac { r _ { 2 c } } { r _ { 1 } } } \right) , \qquad L _ { c } = L + { \frac { t } { 2 } } , \quad r _ { 2 c } = r _ { 2 } + { \frac { t } { 2 } }
 $$
-**The factor $\psi$ is the annular fin's reward for being annular**: the area grows with radius, so the outer part of the fin is worth more per unit length than the inner part, and the fin behaves as though it were shorter than it is. For a fin twice the root radius, $\psi = 1 . 1 2$; for one five times, $\psi = 1 . 4 6$.
+**The factor $\psi > 1$ is the annular fin's penalty for being annular**: the area grows with radius, so more of the fin's area lies far from the root, where the fin is coolest, and the fin behaves as though it were longer than it is. For $r_{2c} / r_1 = 2$, $\psi = 1 . 2 4$; for $r_{2c} / r_1 = 5$, $\psi = 1 . 5 6$.
 :::
 
 ::: definition Fin effectiveness {#def-fin-effec}
@@ -78,7 +78,7 @@ $$
 \text{Copper in still air} & 4 0 1 & 6 & 3 6 6
 \end{array}
 $$
-**Read the last two rows against the first.** A copper fin in air is $50\ \ \%$ more effective than an aluminium one and costs perhaps eight times as much and three times as much mass per unit stiffness — **which is why almost every heat sink in the world is aluminium, and the small number that are copper are there for their $k$ only where the volume is fixed and the conduction path is long.** **And read the water rows: at $h = 3 0 0 0$ the effectiveness is $1 1$ and falling, and at boiling it is $6$. Fins in water are marginal; fins in boiling water are usually a mistake, because they also choke the bubble escape and lower the critical heat flux.**
+**Read the last two rows against the first.** A copper fin in air is $50\ \%$ more effective than an aluminium one, but copper is more than three times as dense and several times as expensive per kilogram — **which is why most heat sinks are aluminium, and copper is used where the volume is fixed and the conduction path is long.** **And read the water rows: at $h = 3 0 0 0$ the effectiveness is $1 1$ and falling, and at boiling it is $6$. Fins in water still help, but far less; in boiling water long fins add little, and boiling surfaces are usually enhanced with fine structure that promotes nucleation instead.**
 :::
 
 ::: widget plot
@@ -87,7 +87,7 @@ f: tanh(x)/x; tanh(1.35*x)/(1.35*x)
 x: 0, 4
 y: 0, 1.05
 labels: straight fin, tanh(mL)/(mL); annular fin, psi = 1.35
-caption: The efficiency of a straight uniform-section fin against $mL_c$, with the annular-fin approximation drawn for a fin whose tip radius is $2.5$ times its root radius ($\psi = 1.35$). **The curve is flat to $0.99$ out to $mL = 0.2$ and then falls almost linearly, crossing $0.76$ at $mL = 1$ and $0.48$ at $mL = 2$.** The practical reading is the shape of the left-hand end: **between $mL = 0$ and $mL = 0.5$ you lose almost nothing, and beyond $mL = 1.5$ you are throwing away more than half the metal you have installed.** The design target of $mL \approx 0.5$ to $1.0$ sits exactly on the knee, which is why it is the target. **The annular curve is the same shape shifted right, and the shift is the annular fin's structural bonus: because its area grows with radius, an annular fin of the same radial height as a straight fin behaves as though it were shorter, and can therefore be made taller for the same efficiency.**
+caption: The efficiency of a straight uniform-section fin against $mL_c$, with the annular-fin approximation drawn for a fin whose corrected tip radius is about $2.7$ times its root radius ($\psi = 1.35$). **The curve is flat to $0.99$ out to $mL = 0.2$ and then falls almost linearly, crossing $0.76$ at $mL = 1$ and $0.48$ at $mL = 2$.** The practical reading is the shape of the left-hand end: **between $mL = 0$ and $mL = 0.5$ you lose almost nothing, and beyond $mL \approx 2$ more than half the metal you have installed is idle.** The design window of $mL \approx 0.5$ to $1.0$ sits on the knee. **The annular curve lies below the straight one: because its area grows with radius, an annular fin of the same radial height behaves as though it were longer, and must be made shorter for the same efficiency.**
 :::
 
 ## Arrays of fins
@@ -100,57 +100,57 @@ $$
 **The structure of the correction is worth staring at: the penalty is the fin area fraction times the fin inefficiency.** Since a dense array has $A _ { f } / A _ { t } = 0 . 9 0$ to $0 . 9 7$, **the base is almost irrelevant and the whole array is the fins** — so a fin efficiency of $0 . 7 0$ in a dense array gives $\eta _ { o } = 0 . 7 2$, and no amount of attention to the bare base will help.
 **The complete resistance of a mounted heat sink is then a series chain**, and writing it out is the single most useful five minutes of any electronics thermal design:
 $$
-R _ { j \to \infty } = R _ { j c } + { \frac { t _ { \text{interface} } } { k _ { \text{interface} } A _ { c } } } + { \frac { 1 } { h _ { b } A _ { b } } } + { \frac { 1 } { \eta _ { o } h A _ { t } } }
+R _ { j \to \infty } = R _ { j c } + { \frac { t _ { \text{interface} } } { k _ { \text{interface} } A _ { \text{case} } } } + { \frac { 1 } { h _ { b } A _ { \text{base} } } } + { \frac { 1 } { \eta _ { o } h A _ { t } } }
 $$
-where $h _ { b }$ is the **contact** conductance between the sink base and the housing or the cold plate, typically $3 0 0 0$ to $8 0 0 0\ \mathrm { W / m ^ { 2 } K }$ for a greased, torqued joint and $2 0 0$ to $8 0 0$ for a dry, flat, unmachined one. **Note what the chain does when you add fins: it shrinks the last term and leaves the middle two exactly as they were.** That is the arithmetic behind the most demoralising sentence in thermal engineering — **"the sink you have chosen is only a third of the problem."**
+where $h _ { b }$ is the **contact** conductance across a further joint in the path (for example a spreader block bolted to the sink base) and $A_{\text{base}}$ its area, typically $3 0 0 0$ to $8 0 0 0\ \mathrm { W / m ^ { 2 } K }$ for a greased, torqued joint and $2 0 0$ to $8 0 0$ for a dry, flat, unmachined one. **Note what the chain does when you add fins: it shrinks the last term and leaves the middle two exactly as they were.** That is the arithmetic behind the most demoralising sentence in thermal engineering — **"the sink you have chosen is only a third of the problem."**
 :::
 
 ::: example The joint under the fin {#ex-contact}
 Annular aluminium fins of $2 0 \ \mathrm { m m }$ radial height and $1 \ \mathrm { m m }$ thickness are pressed onto a $2 5 \ \mathrm { m m }$ OD tube at a pitch of $3 \ \mathrm { m m }$ and cooled by forced air at $h = 4 5 \ \mathrm { W / m ^ { 2 } K }$. Take $k = 1 8 0 \ \mathrm { W / m \, K }$ for the fins and a contact conductance of $2 0 0 0 \ \mathrm { W / m ^ { 2 } K }$ (a resistance of $0 . 0 0 0 5 \ \mathrm { m ^ { 2 } K / W }$) for the pressed joint. What is the resistance per metre of tube, with and without that joint?
 
 ::: solution
-**Fin efficiency first.** $m = { \sqrt { 2 h / k t } } = { \sqrt { 2 	imes 4 5 / ( 1 8 0 	imes 0 . 0 0 1 ) } } = 2 2 . 4 \ \mathrm { m ^ { - 1 } }$ , and with $r _ { 1 } = 1 2 . 5 \ \mathrm { m m }$ , $r _ { 2 c } = 3 3 \ \mathrm { m m }$:
+**Fin efficiency first.** $m = { \sqrt { 2 h / k t } } = { \sqrt { 2 \times 4 5 / ( 1 8 0 \times 0 . 0 0 1 ) } } = 2 2 . 4 \ \mathrm { m ^ { - 1 } }$ , and with $r _ { 1 } = 1 2 . 5 \ \mathrm { m m }$ , $r _ { 2 c } = 3 3 \ \mathrm { m m }$:
 $$
-\psi = 1 + 0 . 3 5 \ln \left( { \frac { 3 3 } { 1 2 . 5 } } \right) = 1 . 3 4 \qquad m L _ { c } \psi = 2 2 . 4 \times 0 . 0 2 0 \times 1 . 3 4 = 0 . 6 0 \qquad \eta _ { f } = { \frac { \tanh 0 . 6 0 } { 0 . 6 0 } } = 0 . 8 9 5
+\psi = 1 + 0 . 3 5 \ln \left( { \frac { 3 3 } { 1 2 . 5 } } \right) = 1 . 3 4 \qquad m L _ { c } \psi = 2 2 . 4 \times 0 . 0 2 0 5 \times 1 . 3 4 = 0 . 6 1 4 \qquad \eta _ { f } = { \frac { \tanh 0 . 6 1 4 } { 0 . 6 1 4 } } = 0 . 8 9 1
 $$
 **Areas per metre of tube** ($3 3 3$ fins per metre):
 $$
 A _ { f } = 3 3 3 \times 2 \pi \left( 0 . 0 3 3 ^ { 2 } - 0 . 0 1 2 5 ^ { 2 } \right) = 1 . 9 5 4 \ \mathrm { m ^ { 2 } } \qquad A _ { b } = \pi \times 0 . 0 2 5 \times ( 1 - 3 3 3 \times 0 . 0 0 1 ) = 0 . 0 5 2 4 \ \mathrm { m ^ { 2 } }
 $$
 $$
-\eta _ { o } = 1 - { \frac { 1 . 9 5 4 } { 2 . 0 0 6 } } ( 1 - 0 . 8 9 5 ) = 0 . 8 9 8 \qquad R _ { \text{array} } = { \frac { 1 } { 0 . 8 9 8 \times 4 5 \times 2 . 0 0 6 } } = \mathbf { 0 . 0 1 2 3 \ \mathrm { K / W } } \ \text{per metre}
+\eta _ { o } = 1 - { \frac { 1 . 9 5 4 } { 2 . 0 0 6 } } ( 1 - 0 . 8 9 1 ) = 0 . 8 9 4 \qquad R _ { \text{array} } = { \frac { 1 } { 0 . 8 9 4 \times 4 5 \times 2 . 0 0 6 } } = \mathbf { 0 . 0 1 2 4 \ \mathrm { K / W } } \ \text{per metre}
 $$
 **Now the joint.** The contact area of one fin is the annulus $2 \pi r _ { 1 } t = 7 . 8 5 \times 1 0 ^ { - 5 } \ \mathrm { m ^ { 2 } }$ , so one fin carries $0 . 0 0 0 5 / 7 . 8 5 \times 1 0 ^ { - 5 } = 6 . 4 \ \mathrm { K / W }$ of contact resistance, and the $3 3 3$ fins in parallel reduce it to $0 . 0 1 9 1 \ \mathrm { K / W }$ per metre of tube:
 $$
-R _ { \text{fin+contact} } = { \frac { 1 } { \eta _ { f } h A _ { f } } } + R _ { \text{contact} } = 0 . 0 1 2 7 + 0 . 0 1 9 1 = 0 . 0 3 1 8 \qquad { \frac { 1 } { R } } = { \frac { 1 } { 0 . 0 3 1 8 } } + { \frac { 1 } { 1 / ( 4 5 \times 0 . 0 5 2 4 ) } } = 3 1 . 4 + 2 . 4 = 3 3 . 8
+R _ { \text{fin+contact} } = { \frac { 1 } { \eta _ { f } h A _ { f } } } + R _ { \text{contact} } = 0 . 0 1 2 8 + 0 . 0 1 9 1 = 0 . 0 3 1 9 \qquad { \frac { 1 } { R } } = { \frac { 1 } { 0 . 0 3 1 9 } } + { \frac { 1 } { 1 / ( 4 5 \times 0 . 0 5 2 4 ) } } = 3 1 . 4 + 2 . 4 = 3 3 . 7
 $$
 $$
 R _ { \text{with joint} } = \mathbf { 0 . 0 2 9 6 \ \mathrm { K / W } } \ \text{per metre} \qquad \text{a factor of } \mathbf { 2 . 4 } \text{ worse, and } \mathbf { 6 0 \ \% } \text{ of the fins' work gone}
 $$
-**The fin efficiency never changed; the array efficiency never changed; every dimension is exactly as the tables prescribe.** **What killed $6 0 \ \ \%$ of the surface is a film of air $1 0 \ \mu\mathrm { m }$ thick between two machined metals — which is why fins are welded, extruded, millimetre-interfered and pressed-on with a shoulder, and why Kern in 1950 measured attached-fin resistances at all.** **The design rule follows: put the contact area where the current is, not where the metal is. A fin whose joint is $1 \ \%$ of its surface area may still carry all its heat through a joint $1 0 0$ times smaller than that surface, and the joint then costs $1 0 0$ times more per watt than the convection it feeds.**
+**The fin efficiency never changed; the array efficiency never changed; every dimension is exactly as the tables prescribe.** **What removed $6 0 \ \%$ of the fins' contribution is a joint equivalent to an air film about $1 3 \ \mu\mathrm { m }$ thick ($0.0005 \times 0.026$) — which is why finned tubes are made with integral, extruded, welded or shoulder-wrapped fins wherever performance matters.** **The design rule follows: each fin's root contact is only $1.3\ \%$ of that fin's own surface area, yet all of the fin's heat must cross it, so the contact conductance must be some $75$ times $h$ merely to match the convection it feeds. Whenever heat funnels through a small contact, check the contact first.**
 :::
 :::
 
 ::: example Which of two heat sinks, at the same mass of aluminium {#ex-sink}
-A $6 0\ \mathrm{W}$ device runs from a $1 2 0 \times 1 2 0 \times 6\ \mathrm { m m }$ aluminium base plate ($k = 1 8 0$) with straight fins $1 2 0\ \mathrm{mm}$ long, forced air at $3\ \mathrm { m / s }$ giving $h \approx 4 0$ to $4 2\ \mathrm { W / m ^ { 2 } K }$ depending on how dense the array is. Ambient is $4 5\ \ {} ^ { \circ } \mathrm { C }$; $R _ { j c } = 0 . 3 5$ and the interface adds $0 . 2 5\ \mathrm { K / W }$. Compare (a) $1 2$ fins of $1 . 5\ \mathrm{mm}$ thickness and (b) $1 8$ fins of $1 . 0\ \mathrm{mm}$, both $6 0\ \mathrm{mm}$ tall. **The two arrays contain exactly the same volume of aluminium.**
+A $6 0\ \mathrm{W}$ device runs from a $1 2 0 \times 1 2 0 \times 6\ \mathrm { m m }$ aluminium base plate ($k = 1 8 0$) with straight fins $1 2 0\ \mathrm{mm}$ long, forced air at $3\ \mathrm { m / s }$ giving $h \approx 3 8$ to $4 2\ \mathrm { W / m ^ { 2 } K }$ depending on how dense the array is. Ambient is $4 5\ {} ^ { \circ } \mathrm { C }$; $R _ { j c } = 0 . 3 5$ and the interface adds $0 . 2 5\ \mathrm { K / W }$. Compare (a) $1 2$ fins of $1 . 5\ \mathrm{mm}$ thickness and (b) $1 8$ fins of $1 . 0\ \mathrm{mm}$, both $6 0\ \mathrm{mm}$ tall. **The two arrays contain exactly the same volume of aluminium.**
 
 ::: solution
-**(a) Twelve fins of $1 . 5\ \mathrm{mm}$.** $A _ { f } = 1 2 \times 2 \times 0 . 0 6 0 \times 0 . 1 2 0 = 0 . 1 7 2 8\ \mathrm { m ^ { 2 } }$; $A _ { b } = 0 . 1 4 4 ^ { 2 } - 1 2 \times 0 . 0 0 1 5 \times 0 . 1 2 0 = 0 . 0 1 2 9 6\ \mathrm { m ^ { 2 } }$; $A _ { t } = 0 . 1 8 5 8\ \mathrm { m ^ { 2 } }$, $A _ { f } / A _ { t } = 0 . 9 3 0$.
+**(a) Twelve fins of $1 . 5\ \mathrm{mm}$.** $A _ { f } = 1 2 \times 2 \times 0 . 0 6 0 \times 0 . 1 2 0 = 0 . 1 7 2 8\ \mathrm { m ^ { 2 } }$; $A _ { b } = 0 . 1 2 0 ^ { 2 } - 1 2 \times 0 . 0 0 1 5 \times 0 . 1 2 0 = 0 . 0 1 2 2 4\ \mathrm { m ^ { 2 } }$; $A _ { t } = 0 . 1 8 5 0\ \mathrm { m ^ { 2 } }$, $A _ { f } / A _ { t } = 0 . 9 3 4$.
 $$
 m = { \sqrt { \frac { 2 \times 3 8 } { 1 8 0 \times 0 . 0 0 1 5 } } } = 1 6 . 7 8 \ \mathrm { m ^ { - 1 } } , \qquad m L _ { c } = 1 6 . 7 8 \times 0 . 0 6 0 7 5 = 1 . 0 1 9 , \qquad \eta _ { f } = { \frac { \tanh 1 . 0 1 9 } { 1 . 0 1 9 } } = 0 . 7 5 5
 $$
 $$
-\eta _ { o } = 1 - 0 . 9 3 0 \times 0 . 2 4 5 = 0 . 7 7 2 \qquad \Longrightarrow \qquad R _ { \text{sink} } = { \frac { 1 } { 0 . 7 7 2 \times 3 8 \times 0 . 1 8 5 8 } } = \mathbf { 0 . 1 8 3 \ K / W }
+\eta _ { o } = 1 - 0 . 9 3 4 \times 0 . 2 4 5 = 0 . 7 7 1 \qquad \Longrightarrow \qquad R _ { \text{sink} } = { \frac { 1 } { 0 . 7 7 1 \times 3 8 \times 0 . 1 8 5 0 } } = \mathbf { 0 . 1 8 4 \ K / W }
 $$
-**(b) Eighteen fins of $1 . 0\ \mathrm{mm}$, pitch $6 . 7\ \mathrm{mm}$.** $A _ { f } = 1 8 \times 2 \times 0 . 0 6 0 \times 0 . 1 2 0 = 0 . 2 5 9 2\ \mathrm { m ^ { 2 } }$; $A _ { b } = 0 . 0 1 1 1 6\ \mathrm { m ^ { 2 } }$; $A _ { t } = 0 . 2 7 0 4\ \mathrm { m ^ { 2 } }$, $A _ { f } / A _ { t } = 0 . 9 5 9$. The denser array runs at $h \approx 4 2$.
+**(b) Eighteen fins of $1 . 0\ \mathrm{mm}$, pitch $6 . 7\ \mathrm{mm}$.** $A _ { f } = 1 8 \times 2 \times 0 . 0 6 0 \times 0 . 1 2 0 = 0 . 2 5 9 2\ \mathrm { m ^ { 2 } }$; $A _ { b } = 0 . 1 2 0 ^ { 2 } - 1 8 \times 0 . 0 0 1 0 \times 0 . 1 2 0 = 0 . 0 1 2 2 4\ \mathrm { m ^ { 2 } }$; $A _ { t } = 0 . 2 7 1 4\ \mathrm { m ^ { 2 } }$, $A _ { f } / A _ { t } = 0 . 9 5 5$. The denser array runs at $h \approx 4 2$.
 $$
-m = { \sqrt { \frac { 2 \times 4 2 } { 1 8 0 \times 0 . 0 0 1 } } } = 2 1 . 6 0 \ \mathrm { m ^ { - 1 } } , \qquad m L _ { c } = 1 . 0 9 6 , \qquad \eta _ { f } = 0 . 7 3 7
+m = { \sqrt { \frac { 2 \times 4 2 } { 1 8 0 \times 0 . 0 0 1 } } } = 2 1 . 6 0 \ \mathrm { m ^ { - 1 } } , \qquad m L _ { c } = 2 1 . 6 0 \times 0 . 0 6 0 5 = 1 . 3 0 7 , \qquad \eta _ { f } = 0 . 6 6 1
 $$
 $$
-\eta _ { o } = 1 - 0 . 9 5 9 \times 0 . 2 6 3 = 0 . 7 4 8 \qquad \Longrightarrow \qquad R _ { \text{sink} } = { \frac { 1 } { 0 . 7 4 8 \times 4 2 \times 0 . 2 7 0 4 } } = \mathbf { 0 . 1 1 8 \ K / W }
+\eta _ { o } = 1 - 0 . 9 5 5 \times 0 . 3 3 9 = 0 . 6 7 6 \qquad \Longrightarrow \qquad R _ { \text{sink} } = { \frac { 1 } { 0 . 6 7 6 \times 4 2 \times 0 . 2 7 1 4 } } = \mathbf { 0 . 1 3 0 \ K / W }
 $$
-**Same metal, same height, same footprint: $36\ \ \%$ less resistance and $4\ \mathrm{K}$ cooler junction** ($T _ { j } = 4 5 + 6 0 \times ( 0 . 1 1 8 + 0 . 6 0 ) = 8 8 . 1\ {} ^ { \circ } \mathrm { C }$ against $9 2 . 0\ {} ^ { \circ } \mathrm { C }$). **The reason is that the extra area is worth more than the efficiency it costs: the thinner array gains $4 2\ \ \%$ in fin area and loses only $2\ \ \%$ in fin efficiency.**
-**Now the two caveats that stop this being a recipe.** First, the bare base would give $R = 1 / ( 4 2 \times 0 . 0 1 4 4 ) = 1 . 6 5\ \mathrm { K / W }$, so the fins are doing a factor of $1 4$ of the work and the $0 . 6 0\ \mathrm { K / W }$ of joint and package is doing the rest — **at $6 0\ \mathrm{W}$ the interface and package now own $8 4\ \ \%$ of the remaining temperature rise, and the next $4\ \mathrm{K}$ will have to come from better grease, not better fins.** Second, the $1 . 0\ \mathrm{mm}$ fins at $6 . 7\ \mathrm{mm}$ pitch are thin, tall and fragile, and they are a dust trap; **the reason real heat sinks are $1 . 5$ to $2 . 5\ \mathrm{mm}$ thick is extrusion, stamping and handling, not heat transfer.**
+**Same metal, same height, same footprint: $30\ \%$ less sink resistance and a junction $3.3\ \mathrm{K}$ cooler** ($T _ { j } = 4 5 + 6 0 \times ( 0 . 1 3 0 + 0 . 6 0 ) = 8 8 . 8\ {} ^ { \circ } \mathrm { C }$ against $4 5 + 6 0 \times ( 0 . 1 8 4 + 0 . 6 0 ) = 9 2 . 1\ {} ^ { \circ } \mathrm { C }$). **The extra area is worth more than the efficiency it costs: the thinner array gains $5 0\ \%$ in fin area and loses $1 2\ \%$ in fin efficiency.**
+**Now the two caveats that stop this being a recipe.** First, the bare base would give $R = 1 / ( 4 2 \times 0 . 0 1 4 4 ) = 1 . 6 5\ \mathrm { K / W }$, so the fins cut the sink resistance by a factor of $1 3$ — **and the $0 . 6 0\ \mathrm { K / W }$ of interface and package now owns $8 2\ \%$ of the remaining temperature rise, so the next few kelvin will have to come from a better interface, not better fins.** Second, the $1 . 0\ \mathrm{mm}$ fins at $6 . 7\ \mathrm{mm}$ pitch are thin, tall and fragile, and they are a dust trap; **extruded heat-sink fins are usually thicker than the thermal optimum for reasons of extrusion, handling and robustness, not heat transfer.**
 :::
 :::
 
@@ -159,7 +159,7 @@ Nothing in the fin equations fixes the pitch. What fixes it is that **$h$ is not
 $$
 h ( S ) \approx h _ { \infty } \, \frac { S ^ { 2 } } { S ^ { 2 } + S _ { m } ^ { 2 } } , \qquad S _ { m } \sim \frac { 2 k _ { f } } { h _ { \infty } }
 $$
-where $h _ { \infty }$ is the isolated-fin coefficient and $S _ { m }$ is the spacing at which adjacent films just meet. The heat rejected per unit **plan** area of a plate-fin array of height $L$ and thickness $t$ is then
+where $S$ is the gap between adjacent fins, $h _ { \infty }$ is the isolated-fin coefficient and $S _ { m }$ is the gap at which adjacent films just meet. The heat rejected per unit **plan** area of a plate-fin array of height $L$ and thickness $t$ is then
 $$
 q ^ { \prime \prime } = h ( S ) \, \eta _ { f } \, { \frac { 2 L } { S + t } } \, \Delta T \qquad \Longrightarrow \qquad { \frac { d q ^ { \prime \prime } } { d S } } = 0 \quad \Longrightarrow \quad S _ { \text{opt} } ^ { 3 } - S _ { \text{opt} } S _ { m } ^ { 2 } - 2 S _ { m } ^ { 2 } t = 0
 $$
@@ -173,10 +173,10 @@ h \left( \mathrm { W / m ^ { 2 } K } \right) & S _ { \text{opt} } & \text{typica
 5 \text{ to } 8 \text{ (natural convection) } & 7 \text{ to } 1 0 \ \mathrm { m m } & \text{extruded natural-convection sinks, power resistors} \\
 2 0 \text{ (gentle fan) } & 2 . 6 \ \mathrm { m m } & \text{low-profile forced-air sinks} \\
 4 0 \text{ (3 m/s axial fan) } & 1 . 3 \ \mathrm { m m } & \text{CPU and inverter sinks, skived fins} \\
-5 0 0 0 \text{ (water) } & 1 0 \ \mu\mathrm { m } & \text{absurd — hence microchannels at } 0 . 2 \text{ to } 0 . 5 \ \mathrm { m m }
+5 0 0 0 \text{ (water, } k _ { f } = 0 . 6 \text{) } & 0 . 2 4 \ \mathrm { m m } & \text{microchannel cold plates, } 0 . 2 \text{ to } 0 . 5 \ \mathrm { m m }
 \end{array}
 $$
-**The last row is the important one and it is a proof by reductio that fins are an air-cooling technology.** In water the rule asks for a $1 0 \ \mu\mathrm{m}$ fin, at which thickness the conduction resistance along the fin would be enormous and the fin would be a membrane; the engineering response is to give up on the "many thin fins" limit and go to **microchannels**, which are not fins at all but a manifold, with a real pressure drop and a real fouling problem attached. **The general statement is that extended surfaces pay for themselves in inverse proportion to $h$, and there is a value of $h$ — somewhere around $1 0 0 0$ to $2 0 0 0\ \mathrm { W / m ^ { 2 } K }$ for aluminium — past which more metal is the wrong answer and more flow, or a phase change, is the right one.**
+**The last row needs the water's own conductivity, $k_f = 0.6$, not the air's.** With it the rule asks for channels about a quarter of a millimetre wide — which is exactly the scale of a **microchannel** cold plate, bought at the price of a real pressure drop and a real fouling problem. **The general statement is that extended surfaces pay for themselves roughly in proportion to $1/\sqrt{h}$ (the effectiveness), so in liquids the fins must be short, thick relative to their height, and closely spaced.**
 :::
 
 ::: widget plot
@@ -184,18 +184,18 @@ title: Heat rejected per unit plan area against fin pitch
 f: 5.5*x*x/(x*x+104.04)*(100/(x+1))*tanh(0.05*sqrt(11.111*5.5*x*x/(x*x+104.04)))/(0.05*sqrt(11.111*5.5*x*x/(x*x+104.04)))
 x: 1, 30
 y: 0, 26
-caption: Natural-convection plate-fin array, fins $5 0\ \mathrm{mm}$ tall and $1\ \mathrm{mm}$ thick in aluminium, isolated-fin coefficient $h _ { \infty } = 5 . 5\ \mathrm { W / m ^ { 2 } K }$ so that $S _ { m } = 2 k / h _ { \infty } = 1 0 . 2 \ \mathrm { m m }$. The vertical axis is $h ( S ) \, \eta _ { f } \, ( 2 L / ( S + t ) )$ in $\mathrm { W / m ^ { 2 } K }$ per unit plan area. **The peak is $2 4\ \mathrm { W / m ^ { 2 } K }$ at a pitch of $1 0 . 5 \ \mathrm { m m }$ — within $5\ \ \%$ of the $S _ { m } = 1 0 . 2 \ \mathrm { m m }$ the rule predicts — and the curve is within $10\ \ \%$ of the peak from $7\ \mathrm{mm}$ to $1 7 \ \mathrm{mm}$ pitch.** **Read the left-hand cliff, not the peak: at $4\ \mathrm{mm}$ pitch the array rejects $1 5\ \mathrm { W / m ^ { 2 } K }$, $3 9\ \ \%$ less than it could, and the loss is entirely the merged boundary layers.** **The flat top is the practical lesson: a heat-sink catalogue that offers you $8$, $1 0$ and $1 2\ \mathrm{mm}$ pitch is offering you the same part three times, and you should choose on dust, on cost per square metre of fin, and on whether a finger can clean it.**
+caption: Natural-convection plate-fin array, fins $5 0\ \mathrm{mm}$ tall and $1\ \mathrm{mm}$ thick in aluminium, isolated-fin coefficient $h _ { \infty } = 5 . 5\ \mathrm { W / m ^ { 2 } K }$ and air at $k_f = 0.028$ so that $S _ { m } = 2 k_f / h _ { \infty } = 1 0 . 2 \ \mathrm { m m }$; the horizontal axis is the gap $S$ in millimetres. The vertical axis is $h ( S ) \, \eta _ { f } \, ( 2 L / ( S + t ) )$ in $\mathrm { W / m ^ { 2 } K }$ per unit plan area. **The peak is $2 4\ \mathrm { W / m ^ { 2 } K }$ at a gap of about $1 1 \ \mathrm { m m }$ — the root of the cubic above, $S_{\text{opt}} = 11.1\ \mathrm{mm} = 1.09\,S_m$ — and the curve is within $10\ \%$ of the peak from $7\ \mathrm{mm}$ to $1 7 \ \mathrm{mm}$.** **Read the left-hand cliff, not the peak: at a $4\ \mathrm{mm}$ gap the array rejects $1 5\ \mathrm { W / m ^ { 2 } K }$, $3 9\ \%$ less than it could, and the loss is entirely the merged boundary layers.** **The flat top is the practical lesson: a heat-sink catalogue that offers you $8$, $1 0$ and $1 2\ \mathrm{mm}$ pitch is offering you the same part three times, and you should choose on dust, on cost per square metre of fin, and on whether a finger can clean it.**
 :::
 
 ::: example A fin that is 60 per cent efficient and completely correct {#ex-60}
 A stainless steel ($k = 1 6 \ \mathrm { W / m \, K }$) fin of thickness $1 . 5\ \mathrm{mm}$ and height $2 5\ \mathrm{mm}$ sits in a duct where $h = 4 5 \ \mathrm { W / m ^ { 2 } K }$. Its efficiency is $0 . 5 8$. Should it be replaced?
 
 ::: solution
-Compute the other number before answering. Effectiveness for a rectangular fin:
+Compute the other number before answering. Effectiveness for a rectangular fin, with $m L_c = 1.58$ from [[#ex-ss]]:
 $$
-\varepsilon _ { f } = { \sqrt { \frac { 2 k } { h t } } } = { \sqrt { \frac { 3 2 } { 4 5 \times 0 . 0 0 1 5 } } } = { \sqrt { 4 7 4 } } = 2 1 . 8
+\varepsilon _ { f } = { \sqrt { \frac { 2 k } { h t } } } \tanh m L _ { c } = { \sqrt { \frac { 3 2 } { 4 5 \times 0 . 0 0 1 5 } } } \times 0 . 9 1 8 = 2 1 . 8 \times 0 . 9 1 8 = 2 0 . 0
 $$
-**Replace nothing.** The fin throws $5 8\ \ \%$ as much as a perfect fin of the same shape, and $2 1 8 0\ \ \%$ as much as the $1 . 5\ \mathrm{mm}$ of wall it occupies. **The efficiency is low because the metal is bad at conducting, not because the fin is badly proportioned** — and the ways to fix a low-efficiency fin are, in order of cost-effectiveness: **make it shorter** ($m L _ { c }$ from $1 . 5 8$ to $0 . 8 1$ by halving the height, $\eta _ { f }$ to $0 . 8 3$, at the price of half the area), **make it thicker** ($t$ to $8\ \mathrm{mm}$: $\eta _ { f } = 0 . 8 4$, at the price of five times the mass and five times fewer fins per metre), or **change the metal** (copper at $k = 4 0 1$ gives $\eta _ { f } = 0 . 9 7$ and costs about six times as much per kilogram and is three times as dense).
+**Replace nothing.** The fin throws $5 8\ \%$ as much as an isothermal fin of the same shape, and twenty times as much as the $1 . 5\ \mathrm{mm}$ strip of wall it occupies. **The efficiency is low because the metal is bad at conducting, not because the fin is badly proportioned** — and the ways to fix a low-efficiency fin are, in order of cost-effectiveness: **make it shorter** ($m L _ { c }$ from $1 . 5 8$ to $0 . 8 1$ by halving the height, $\eta _ { f }$ to $0 . 8 3$, at the price of half the area), **make it thicker** ($t$ to $8\ \mathrm{mm}$: $\eta _ { f } = 0 . 8 4$, at the price of five times the mass and five times fewer fins per metre), or **change the metal** (copper at $k = 4 0 1$ gives $\eta _ { f } = 0 . 9 7$, if the service conditions allow copper at all).
 **The reason the fin is stainless in the first place is almost always corrosion, temperature or strength — and in all three cases the material is not negotiable, so the only lever is geometry.** **The correct design move is the one the efficiency number points at and the effectiveness number permits: keep the stainless, and shorten the fins until $m L _ { c } \approx 1$.**
 :::
 :::
@@ -207,7 +207,7 @@ For steady two-dimensional conduction with no generation, $T$ satisfies Laplace'
 $$
 \boxed { \; q = { \frac { M } { N } } \, k \, \Delta T \, w \; }
 $$
-where $M$ is the number of flow channels, $N$ the number of temperature increments, and $w$ the thickness normal to the plane of the plot. **The comparison with $q = S k \Delta T w$ identifies $M / N$ as the shape factor per unit thickness** — so a flux plot is a shape-factor measurement made with a pencil, and it is accurate to $2$ to $5\ \ \%$ in competent hands.
+where $M$ is the number of flow channels, $N$ the number of temperature increments, and $w$ the thickness normal to the plane of the plot. **The comparison with $q = S k \Delta T w$ identifies $M / N$ as the shape factor per unit thickness** — so a flux plot is a shape-factor measurement made with a pencil, and it is accurate to $2$ to $5\ \%$ in competent hands.
 **The construction rules are four, and the fourth is the one that catches people.**
 **(i) Draw the adiabats first where the symmetry demands them**, not where they are convenient: a line of symmetry in geometry and temperature is an adiabat, and an isothermal boundary is an isotherm.
 **(ii) Make the squares square.** A curvilinear square has approximately equal diagonal lengths; check by drawing both diagonals of a sample of cells.
@@ -221,12 +221,12 @@ $$
 \boxed { \; R _ { \text{spread} } = { \frac { 1 } { 4 k { \sqrt { A _ { s } / \pi } } } } \; } \qquad \text{(half-space, source on the surface)}
 $$
 **The result is independent of the source shape to within a few per cent once the shape is roundish, and it has two properties that dominate electronics thermal design.**
-**(i) It does not contain the thickness of the body.** Halving a copper lid from $5\ \mathrm{mm}$ to $2 . 5\ \mathrm{mm}$ changes the spreading resistance hardly at all, provided the lid is still much wider than the source — **which is why "make the lid thicker" is such a common and such a useless response to a hot spot.**
-**(ii) It goes as $1 / \sqrt { A _ { s } }$, not $1 / A _ { s }$.** **Doubling the side of a square source halves the spreading resistance; doubling its area only reduces it by $29\ \ \%$.** The corollary is the one that gets built: **the cheapest large reduction is to make the heat arrive over a larger area in the first place**, which is what a vapour chamber, a copper lid, or a graphite spreader does — and none of them conduct better than the copper they replace, they simply move the isotherm outward.
+**(i) It does not contain the thickness of the body.** Once a lid is several source-sizes thick and wide it behaves as a half-space, and making it thicker still changes the spreading resistance hardly at all — **which is why "make the lid thicker" is so often a useless response to a hot spot.** (A lid much thinner than the source size is a different matter: there the spreading resistance rises as the lid thins.)
+**(ii) It goes as $1 / \sqrt { A _ { s } }$, not $1 / A _ { s }$.** **Doubling the side of a square source halves the spreading resistance; doubling its area only reduces it by $29\ \%$.** The corollary is the one that gets built: **the cheapest large reduction is to make the heat arrive over a larger area in the first place**, which is what a vapour chamber, a copper lid or a graphite spreader does: each moves the isotherm outward before the heat enters the main path.
 :::
 
 ::: example The hot spot under a die {#ex-spread}
-A $3 \times 3 \ \mathrm{mm}$ silicon die dissipates $1 8 \ \mathrm{W}$ uniformly and is soldered to a $5\ \mathrm{mm}$ thick, $4 0 \times 4 0 \ \mathrm{mm}$ copper lid ($k = 4 0 1 \ \mathrm { W / m \, K }$), whose outer face is cooled at $h = 9 0 0 0 \ \mathrm { W / m ^ { 2 } K }$ by a cold plate at $4 0 \ \ {} ^ { \circ } \mathrm { C }$. Estimate the temperature difference between the die and the lid's outer face.
+A $3 \times 3 \ \mathrm{mm}$ silicon die dissipates $1 8 \ \mathrm{W}$ uniformly and is soldered to a $5\ \mathrm{mm}$ thick, $4 0 \times 4 0 \ \mathrm{mm}$ copper lid ($k = 4 0 1 \ \mathrm { W / m \, K }$), whose outer face is cooled at $h = 9 0 0 0 \ \mathrm { W / m ^ { 2 } K }$ by a cold plate at $4 0 \ {} ^ { \circ } \mathrm { C }$. Estimate the temperature difference between the die and the cold plate.
 
 ::: solution
 **Three resistances in series.** Spreading from the die into the lid, bounded by the half-space value:
@@ -235,15 +235,15 @@ a = { \sqrt { \frac { 9 \times 1 0 ^ { - 6 } } { \pi } } } = 1 . 6 9 3 \times 1 
 $$
 One-dimensional through the lid, $R = t / ( k A ) = 0 . 0 0 5 / ( 4 0 1 \times 0 . 0 0 1 6 ) = 0 . 0 0 7 8 \ \mathrm { K / W }$. Cold-plate film, $R = 1 / ( 9 0 0 0 \times 0 . 0 0 1 6 ) = 0 . 0 6 9 4 \ \mathrm { K / W }$.
 $$
-\Delta T = 1 8 \times ( 0 . 3 6 8 + 0 . 0 0 7 8 + 0 . 0 6 9 4 ) = 1 8 \times 0 . 4 4 5 = \mathbf { 8 . 0 \ K } , \qquad T _ { \text{die} } \approx 4 8 \ \ {} ^ { \circ } \mathrm { C }
+\Delta T = 1 8 \times ( 0 . 3 6 8 + 0 . 0 0 7 8 + 0 . 0 6 9 4 ) = 1 8 \times 0 . 4 4 5 = \mathbf { 8 . 0 \ K } , \qquad T _ { \text{die} } \approx 4 8 \ {} ^ { \circ } \mathrm { C }
 $$
-**The spreading term is $8 3\ \ \%$ of the total, the $5\ \mathrm{mm}$ of copper lid contributes $1 . 8\ \ \%$, and the very expensive cold plate contributes $1 6\ \ \%$.** **This is the arithmetic behind every lid, spreader and vapour chamber in the industry: the way to fix a hot spot is not to make the conduction path shorter or the coolant colder, it is to make the source electrically bigger — that is, to spread it before it has to conduct.** A vapour chamber lid with an effective in-plane conductivity of $5 0 0 0 \ \mathrm { W / m \, K }$ over the same $4 0 \times 4 0 \ \mathrm{mm}$ footprint reduces the spreading term to about $0 . 0 2 \ \mathrm { K / W }$ and moves the whole $8\ \mathrm{K}$ problem into the interface and the cold plate, where it can be attacked with grease and flow rate.
+**The spreading term is $8 3\ \%$ of the total, the $5\ \mathrm{mm}$ of copper lid contributes $1 . 8\ \%$, and the very expensive cold plate contributes $1 6\ \%$.** **This is the arithmetic behind every lid, spreader and vapour chamber in the industry: the way to fix a hot spot is not to make the conduction path shorter or the coolant colder, it is to make the source thermally bigger — that is, to spread the heat before it has to conduct through.** A vapour-chamber lid with an effective in-plane conductivity of order $5 0 0 0 \ \mathrm { W / m \, K }$ would, by the same half-space estimate, cut the spreading term to about $0 . 0 3 \ \mathrm { K / W }$ and moves the whole $8\ \mathrm{K}$ problem into the interface and the cold plate, where it can be attacked with grease and flow rate.
 :::
 :::
 
 ## Doing it yourself
 
-::: exercise An aluminium fin in still air {#ex-al level=1 check="0.996"}
+::: exercise An aluminium fin in still air {#ex-al level=1 check="0.995"}
 A flat aluminium fin ($k = 1 8 0 \ \mathrm { W / m \, K }$) is $1 . 0 \ \mathrm{mm}$ thick and $1 2 \ \mathrm{mm}$ tall, and the surrounding air gives $h = 8 \ \mathrm { W / m ^ { 2 } K }$. What is its efficiency?
 
 ::: solution
@@ -252,9 +252,9 @@ $$
 m = { \sqrt { \frac { 2 h } { k t } } } = { \sqrt { \frac { 1 6 } { 1 8 0 \times 0 . 0 0 1 } } } = 9 . 4 3 \ \mathrm { m ^ { - 1 } } , \qquad L _ { c } = 0 . 0 1 2 5 \ \mathrm { m } , \qquad m L _ { c } = 0 . 1 1 8
 $$
 $$
-\eta _ { f } = { \frac { \tanh 0 . 1 1 8 } { 0 . 1 1 8 } } = \mathbf { 0 . 9 9 6 }
+\eta _ { f } = { \frac { \tanh 0 . 1 1 8 } { 0 . 1 1 8 } } = \mathbf { 0 . 9 9 5 }
 $$
-**Effectively perfect, and that is the normal answer for aluminium in air.** The reason is the ratio $k / h = 2 2 . 5 \ \mathrm { m }$, which is enormous: heat runs along an aluminium fin roughly twenty-two metres before the air has taken enough of it to matter, and a $1 2\ \mathrm{mm}$ fin is not trying. **The corollary is that in air, aluminium fins are limited by how much area you can buy, not by how well the area works — which is exactly the situation the optimum-spacing rule is about.**
+**Effectively perfect, and that is the normal answer for aluminium in air.** The fin's own length scale $1/m = 106\ \mathrm{mm}$ is nearly nine times its height, so the temperature barely falls along it. **The corollary is that in air, aluminium fins are limited by how much area you can buy, not by how well the area works — which is exactly the situation the optimum-spacing rule is about.**
 :::
 :::
 
@@ -268,19 +268,19 @@ $$
 $$
 \eta _ { f } = { \frac { \tanh 1 . 5 8 } { 1 . 5 8 } } = { \frac { 0 . 9 1 8 } { 1 . 5 8 } } = \mathbf { 0 . 5 8 }
 $$
-**Four per cent of the conductivity and eight times the surface coefficient combine to move the fin from $m L _ { c } = 0 . 1 2$ to $m L _ { c } = 1 . 5 8$ — a factor of thirteen in the governing parameter, and $4 2$ percentage points of efficiency.** **The lesson generalises into a rule of thumb worth more than any formula: a fin is only as good as $k / ( h t )$ allows, and switching from aluminium to stainless at constant geometry costs you about a factor of four in usable fin height.**
+**A ninth of the conductivity, $5.6$ times the surface coefficient and a thicker, taller fin combine to move the parameter from $m L _ { c } = 0 . 1 2$ in [[#ex-al]] to $1 . 5 8$ — a factor of thirteen, and $4 1$ percentage points of efficiency.** **A rule of thumb: a fin is only as good as $k / ( h t )$ allows, and since $1/m \propto \sqrt{k}$, switching from aluminium to stainless at the same $h$ and thickness cuts the usable fin height by a factor of about three.**
 :::
 :::
 
-::: exercise How much is that stainless fin worth? {#ex-effec level=1 check="21.8"}
-For the stainless fin of [[#ex-ss|the stainless-fin exercise]], what is its effectiveness relative to the bare wall it stands on?
+::: exercise How much is that stainless fin worth? {#ex-effec level=1 check="20.0"}
+For the stainless fin of [[#ex-ss|the stainless-fin exercise]], what is its effectiveness relative to the bare wall it stands on (adiabatic-tip result with the corrected length)?
 
 ::: solution
-For a long rectangular fin of unit depth, $P = 2$ and $A _ { c } = t$:
+For a rectangular fin of unit depth, $P = 2$ and $A _ { c } = t$, and $m L_c = 1.58$:
 $$
-\varepsilon _ { f } = { \sqrt { \frac { P k } { h A _ { c } } } } = { \sqrt { \frac { 2 \times 1 6 } { 4 5 \times 0 . 0 0 1 5 } } } = { \sqrt { 4 7 4 } } = \mathbf { 2 1 . 8 }
+\varepsilon _ { f } = { \sqrt { \frac { P k } { h A _ { c } } } } \tanh m L _ { c } = { \sqrt { \frac { 2 \times 1 6 } { 4 5 \times 0 . 0 0 1 5 } } } \times 0 . 9 1 8 = 2 1 . 8 \times 0 . 9 1 8 = \mathbf { 2 0 . 0 }
 $$
-**Twenty-two times the bare wall, at $5 8\ \ \%$ efficiency.** **The two numbers are not in conflict: efficiency asks how well the fin's own area is used, effectiveness asks whether the fin should exist, and the second question is the one that has to be answered first.** **The formula also shows why effectiveness improves as $h$ falls: $\varepsilon _ { f } \propto 1 / { \sqrt { h } }$, so the same fin in still air at $h = 6$ would be $4 2$ times effective instead of $2 2$ — extended surfaces are a remedy whose potency is greatest exactly where the underlying disease is worst.**
+**Twenty times the bare wall, at $5 8\ \%$ efficiency** (the long-fin limit alone would give $21.8$). **The two numbers are not in conflict: efficiency asks how well the fin's own area is used, effectiveness asks whether the fin should exist, and the second question is the one that has to be answered first.** **The formula also shows why effectiveness improves as $h$ falls: $\varepsilon _ { f } \propto 1 / { \sqrt { h } }$, so in the long-fin limit the same fin in still air at $h = 6$ would reach about $6 0$ instead of $2 2$ — extended surfaces are a remedy whose potency is greatest exactly where the underlying disease is worst.**
 :::
 :::
 
@@ -288,7 +288,7 @@ $$
 A steel ($k = 1 6 \ \mathrm { W / m \, K }$) annular fin of thickness $1 . 5 \ \mathrm{mm}$ runs from $r _ { 1 } = 1 5 \ \mathrm { m m }$ to $r _ { 2 } = 2 5 \ \mathrm { m m }$, with $h = 2 0 \ \mathrm { W / m ^ { 2 } K }$. Estimate its efficiency.
 
 ::: solution
-Use the Harper approximation with the corrected radius and length:
+Use Schmidt's approximation with the corrected radius and length:
 $$
 L _ { c } = 0 . 0 1 0 + 0 . 0 0 0 7 5 = 0 . 0 1 0 7 5 \ \mathrm { m } , \qquad m = { \sqrt { \frac { 2 \times 2 0 } { 1 6 \times 0 . 0 0 1 5 } } } = 4 0 . 8 \ \mathrm { m ^ { - 1 } } , \qquad m L _ { c } = 0 . 4 3 9
 $$
@@ -298,23 +298,23 @@ $$
 $$
 \eta _ { f } = { \frac { \tanh 0 . 5 2 2 } { 0 . 5 2 2 } } = \mathbf { 0 . 9 2 }
 $$
-**Compare with [[#ex-ss|the stainless-fin exercise]]: a straight stainless fin of the same thickness in a *better* coefficient ($h = 4 5$) reaches only $0 . 6 0$ at $2 5 \ \mathrm{mm}$, while this annular fin in a worse coefficient ($h = 2 0$) reaches $0 . 9 2$ at $1 0 \ \mathrm{mm}$.** Part of that is the shorter fin, and part is $\psi$ : **the annular fin's area is concentrated where it is most effective, at large radius, and the geometry pays for itself by a factor of $1 . 1 9$ in effective length.** **This is why finned pipe is nearly always made with annular or spiral fins rather than straight ones, and why the same logic — put the area where the temperature is — is behind the tapered and stepped fins of air-cooled engine cylinders.**
+**Compare with [[#ex-ss|the stainless-fin exercise]]: a straight fin of the same metal and thickness at a higher coefficient ($h = 4 5$) reaches only $0 . 5 8$ at $2 5 \ \mathrm{mm}$, while this annular fin at $h = 2 0$ reaches $0 . 9 2$ at $1 0 \ \mathrm{mm}$.** That is the shorter fin and the lower $h$; the annular geometry itself works the other way, $\psi = 1.19$ making the fin behave as though it were $19\ \%$ longer. Without $\psi$, a straight fin with $m L_c = 0.439$ would be $0.94$ efficient.
 :::
 :::
 
 ::: exercise The array, not the fin {#ex-array level=1 check="0.83"}
-A heat sink's fins account for $9 2\ \ \%$ of its total surface area and have an efficiency of $0 . 8 2$. What is the overall surface efficiency?
+A heat sink's fins account for $9 2\ \%$ of its total surface area and have an efficiency of $0 . 8 2$. What is the overall surface efficiency?
 
 ::: solution
 $$
 \eta _ { o } = 1 - { \frac { A _ { f } } { A _ { t } } } \left( 1 - \eta _ { f } \right ) = 1 - 0 . 9 2 \times 0 . 1 8 = \mathbf { 0 . 8 3 }
 $$
-**The bare base contributes almost nothing to the correction: had the base been $8\ \ \%$ of the area instead of $2\ \ \%$, $\eta _ { o }$ would be $0 . 8 6$.** **The formula is a warning about where to look.** In a dense array the whole surface is the fins, so any improvement must come from $\eta _ { f }$ — thicker metal, shorter fins, or a better conductivity — and **the corollary is the one that saves the most money: if you are choosing between a better fin material and a better base joint in a dense array, you are choosing between something that affects $100\ \ \%$ of the surface and something that affects $8\ \ \%$ of it.**
+**The bare base changes the answer only a little: had the fins been $80\ \%$ of the area instead of $92\ \%$, $\eta _ { o }$ would be $0 . 8 6$.** **The formula is a warning about where to look.** In a dense array the whole surface is the fins, so any improvement must come from $\eta _ { f }$ — thicker metal, shorter fins, or a better conductivity — and **the corollary is the one that saves the most money: if you are choosing between a better fin material and a better base joint in a dense array, you are choosing between something that affects $92\ \%$ of the surface and something that affects $8\ \%$ of it.**
 :::
 :::
 
 ::: exercise A flux plot for a bracket {#ex-net level=2 check="12"}
-A steel bracket of thickness $2 0 0 \ \mathrm{mm}$ normal to the plane of the plot and conductivity $1 . 2 \ \mathrm { W / m \, K }$ is solved by a flow net with $8$ flow channels and $1 6$ temperature increments between faces held $1 0 0 \ \mathrm{K}$ apart. What is the heat flow?
+A concrete bracket of thickness $2 0 0 \ \mathrm{mm}$ normal to the plane of the plot and conductivity $1 . 2 \ \mathrm { W / m \, K }$ is solved by a flow net with $8$ flow channels and $1 6$ temperature increments between faces held $1 0 0 \ \mathrm{K}$ apart. What is the heat flow, in W?
 
 ::: solution
 $$
@@ -325,13 +325,13 @@ $$
 :::
 
 ::: exercise Spreading a smaller source {#ex-spread2 level=2 check="0.37"}
-A square heat source $3 . 0 \times 3 . 0 \ \mathrm{mm}$ sits on the surface of a large copper block ($k = 4 0 1 \ \mathrm { W / m \, K }$). Estimate the spreading resistance.
+A square heat source $3 . 0 \times 3 . 0 \ \mathrm{mm}$ sits on the surface of a large copper block ($k = 4 0 1 \ \mathrm { W / m \, K }$). Estimate the spreading resistance, in K/W.
 
 ::: solution
 $$
 a = { \sqrt { \frac { A _ { s } } { \pi } } } = { \sqrt { \frac { 9 . 0 \times 1 0 ^ { - 6 } } { \pi } } } = 1 . 6 9 3 \times 1 0 ^ { - 3 } \ \mathrm { m } , \qquad R _ { \text {spread } } = { \frac { 1 } { 4 k a } } = { \frac { 1 } { 4 \times 4 0 1 \times 1 . 6 9 3 \times 1 0 ^ { - 3 } } } = \mathbf { 0 . 3 7 \ K / W }
 $$
-**At $1 8 \ \mathrm{W}$ that is $6 . 6 \ \mathrm{K}$ — more than a typical cold plate's whole drop.** **Now halve the source to $1 . 5 \times 1 . 5 \ \mathrm{mm}$, which quarters the area:** $a$ halves and $R$ doubles to $0 . 7 4 \ \mathrm { K / W }$. **The scaling $R \propto 1 / \sqrt { A _ { s } }$ is the whole reason that shrinking a chip makes it hotter than its power density alone would predict: at constant power density, the temperature rise of the spreading term goes as $1 / \sqrt { \text { area } }$, so a die shrunk to a quarter of its area at the same $\mathrm { W / c m ^ { 2 } }$ runs $2 \ \mathrm{K}$ hotter per watt from spreading alone.** **It is also why the industry's answer to shrinking dies has been packaging rather than cooling — flip-chip, thermal through-silicon vias, and spreader lids all work by enlarging $A _ { s }$ before the heat has to conduct, which is the only lever that moves this resistance.**
+**At $1 8 \ \mathrm{W}$ that is $6 . 6 \ \mathrm{K}$ — more than a typical cold plate's whole drop.** **Now halve the source to $1 . 5 \times 1 . 5 \ \mathrm{mm}$, which quarters the area:** $a$ halves and $R$ doubles to $0 . 7 4 \ \mathrm { K / W }$. **The scaling $R \propto 1 / \sqrt { A _ { s } }$ means that concentrating the same power into a smaller source raises its spreading temperature rise: a quarter of the area doubles it.** Spreader lids and vapour chambers work by enlarging the effective source area before the heat enters the main conduction path.
 :::
 :::
 
@@ -346,21 +346,21 @@ $$
 $$
 m L _ { c 2 } = 1 6 . 7 8 \times 0 . 1 2 0 7 5 = 2 . 0 2 6 \quad \Longrightarrow \quad \operatorname { t a n h } = 0 . 9 6 6 \qquad \Longrightarrow \qquad \mathbf { 1 . 2 6 }
 $$
-**Twenty-six per cent more heat for twice the metal, twice the volume and twice the height of the enclosure.** **Double it again to $2 4 0 \ \mathrm{mm}$ and the answer is $1 . 3 0$ — the fin has asymptoted, because a long fin's heat flow is $\sqrt { h P k A _ { c } } \, \Delta T$ and contains no length at all.** **The same arithmetic in the other direction is the better design move: cutting to $3 0 \ \mathrm{mm}$ keeps $6 1\ \ \%$ of one fin's output while halving its metal, so twice as many fins fit across the same base — and the array then rejects $2 3\ \ \%$ more heat for exactly the same mass of aluminium.** **At $1 0 \ \mathrm{mm}$ pitch this array is nowhere near the merged-boundary-layer region, so halving the pitch costs nothing in $h$ (see the optimum-spacing figure: the curve is flat from $7$ to $1 7 \ \mathrm{mm}$).** **This is the single most common waste in heat-sink specification: fins sized by what the extrusion press can do rather than by $1 / m$.**
+**Twenty-six per cent more heat for twice the metal and twice the height of the enclosure.** **Double it again to $2 4 0 \ \mathrm{mm}$ and the answer is $1 . 3 0$ — the fin has asymptoted, because a long fin's heat flow is $\sqrt { h P k A _ { c } } \, \Delta T$ and contains no length at all.** **The same arithmetic in the other direction is the better design move: cutting to $3 0 \ \mathrm{mm}$ keeps $6 1\ \%$ of one fin's output while halving its metal, so twice as many fins fit across the same base — and the array then rejects $2 3\ \%$ more heat for exactly the same mass of aluminium.** **This assumes $h$ is unchanged: in forced air at $h \approx 38$ the spacing rule gives $2 k_f / h \approx 1.4\ \mathrm{mm}$, so halving the pitch from $10$ to $5\ \mathrm{mm}$ (a $3.5\ \mathrm{mm}$ gap) still leaves the boundary layers apart — though the fan's pressure drop rises, and that must be checked.** Fins sized by what the extrusion press can do rather than by $1 / m$ are a common waste.
 :::
 :::
 
 ::: quiz The good fin {#quiz-good}
 A fin has an efficiency of $0 . 5 8$ and an effectiveness of $2 4$. A second fin has an efficiency of $0 . 9 7$ and an effectiveness of $1 . 6$. Both occupy the same base area. Which should be installed?
 
-- [ ] The first, because its effectiveness is larger
-- [x] The first — but for the opposite reason from the one usually given: it is the effectiveness that decides, not the efficiency, and the second fin is nearly isothermal and therefore nearly useless
-- [ ] The second, because $9 7\ \ \%$ efficient metal is obviously better than $5 8\ \ \%$ efficient metal
+- [ ] The second, because $9 7\ \%$ efficient metal is obviously better than $5 8\ \%$ efficient metal
+- [x] The first, because effectiveness — the heat carried relative to the bare base it covers — is what decides whether a fin is worth installing
 - [ ] Either: the two numbers are two ways of measuring the same thing
+- [ ] Neither: any fin below $60\ \%$ efficiency should be redesigned first
 
 ::: solution
-**The first, and the reason is effectiveness.** The first fin throws $2 4$ times what the bare base would; the second throws $1 . 6$ times. **The second fin's high efficiency is the diagnosis of its own failure: $\eta _ { f } \to 1$ means the fin is nearly isothermal, which for a fin of normal proportions means $m L \ll 1$, which means it is short and fat and its extra area is barely warmer than the base it is attached to and barely cooler than the fluid it is trying to cool.**
-**The two numbers are not two measures of one thing: $\eta _ { f }$ is a property of the fin's shape and $\varepsilon _ { f }$ is a property of the decision.** **The combination to look for is a high product $\eta _ { f } \varepsilon _ { f }$, which is the actual conductance added per unit base area — and a $0 . 5 8 / 2 4$ fin scores $1 4$ where the $0 . 9 7 / 1 . 6$ fin scores $1 . 5$.** **The trap the question sets is the word "efficient": in ordinary speech a $5 8\ \ \%$ efficient anything is a bad anything, and in fin work a $5 8\ \ \%$ efficient fin is often the better fin.**
+**The first, and the reason is effectiveness.** The first fin throws $2 4$ times what the bare base would; the second throws $1 . 6$ times. **The second fin's high efficiency is the diagnosis of its own failure: $\eta _ { f } \to 1$ means $m L \ll 1$, a short, fat fin that is nearly isothermal but adds very little area to the base it covers — and an effectiveness of $1.6$ says exactly that.**
+**The two numbers are not two measures of one thing: $\eta _ { f }$ is a property of the fin's shape and $\varepsilon _ { f }$ is a property of the decision.** **The trap the question sets is the word "efficient": in ordinary speech a $5 8\ \%$ efficient anything is a bad anything, and in fin work a $5 8\ \%$ efficient fin is often the better fin.**
 :::
 :::
 
@@ -373,7 +373,7 @@ A natural-convection heat sink has fins $5 0 \ \mathrm{mm}$ tall, $1 \ \mathrm{m
 - [ ] It depends on the ambient temperature
 
 ::: solution
-**It gets much better.** For natural convection in air the optimum pitch is $S _ { \text{opt} } \approx 2 k _ { f } / h _ { \infty } \approx 2 \times 0 . 0 2 6 / 6 \approx 9 \ \mathrm { m m }$, and at $3 \ \mathrm{mm}$ the array is rejecting about $1 1 \ \mathrm { W / m ^ { 2 } K }$ per unit plan area against $2 4$ at the optimum — **under half of what the same base could do**. **Cutting the fin count to a third removes two thirds of the area and multiplies the coefficient several times over, and the product goes up by a factor of about $2 . 2$; the fin efficiency goes *up* as well, because $m \propto \sqrt { h }$ rises only as the square root while the fin thickness is unchanged.**
+**It gets much better.** For natural convection in air the optimum gap is $S _ { \text{opt} } \approx 2 k _ { f } / h _ { \infty } \approx 2 \times 0 . 0 2 8 / 5 . 5 \approx 1 0 \ \mathrm { m m }$, and with the model of the figure above (which has exactly these fins) the array at a $3 \ \mathrm{mm}$ gap rejects about $1 1 \ \mathrm { W / m ^ { 2 } K }$ per unit plan area against $2 4$ at $1 0 \ \mathrm{mm}$ — **under half of what the same base could do**. **Cutting the fin count to about a third removes two thirds of the area but multiplies the coefficient several times over, and the product rises by a factor of about $2 . 2$.** The fin efficiency falls slightly, since $m \propto \sqrt{h}$, but $50\ \mathrm{mm}$ aluminium fins stay above $90\ \%$ efficient at these coefficients.
 **The reason the wrong answer is tempting is that it uses the right formula and the wrong $h$:** $R = 1 / ( \eta _ { o } h A _ { t } )$ says "less area, more resistance" **only if $h$ is a constant, and $h$ is not a constant across an array.** **The general lesson is the one this lesson exists to teach: a fin array is not a collection of independent fins, and any calculation that treats it as one will tell you to add fins for ever.**
 :::
 :::
@@ -389,37 +389,34 @@ And one warning is worth repeating, because it is the most common error in the f
 ::: history
 | Year | Event |
 |---|---|
-| 1822 | **Fourier**, *Théorie analytique de la chaleur*, Part I Chapter VII treats the **"épingles" (needles)** used as thermometers in a stream: the exposed part of a thermometer loses heat along its length, and Fourier derives the exponential decay of temperature along the needle and corrects the reading accordingly. **The fin equation is therefore older than the heat exchanger, and was invented to fix an instrument error.** |
-| 1926 | **E. Schmidt**, "Die Wärmeübertragung durch Rippen", *Gesundheitsingenieur* 49 — the first industrial treatment of fin and array efficiency, written for the makers of air-cooled condensers and finned-tube heaters, and the origin of the $\eta _ { o } = 1 - ( A _ { f } / A _ { t } ) ( 1 - \eta _ { f } )$ formula still printed in every heat-exchanger standard. |
-| 1945 | **F. R. Gardner**, "Efficiency of calcuated and triangular fins", *Journal of Heat Transfer* 67, 621–631 — closed-form efficiencies for straight, triangular and stepped profiles, and the first optimum-profile results: **for a given volume the triangular fin of equal strength beats the rectangular fin by about $20\ \ \%$ in dissipation and by $50\ \ \%$ in mass-specific dissipation.** |
-| 1950 | **D. Q. Kern**, *Process Heat Transfer*, McGraw-Hill — fin efficiency for pin, plate and longitudinal fins in exchanger service, and, more consequentially, **the first systematic allowance for the contact resistance of mechanically attached fins**, which he measured at $0 . 0 0 0 4$ to $0 . 0 0 1 5 \ \mathrm { m ^ { 2 } K / W }$ for pressed-on steel fins: **enough on its own to halve the value of a high-fin-density surface, and the reason exchanger fins are now usually welded, extruded or integral.** |
-| 1957 | **A. M. Kraus**, "Design of extended heat transfer surfaces", *Transactions of the ASME* — fin arrays for gas-turbine and air-cooled-engine cylinders, and the engineering case for **tapered, stepped and spine fins** where the geometry must carry structural load as well as heat. |
-| 1970 | **T. J. Berea**, "The optimum geometry for natural convection fins", ASME Paper 70-HT/Am3A-49 — measurements on vertical parallel-plate channels showing a clear maximum in heat per unit width against spacing, and the empirical optimum-spacing formula that every natural-convection heat-sink catalogue still quietly follows. |
-| 1984 | **A. Bar-Cohen & W. M. Rohsenow**, "Thermally optimum spacing of vertical, natural convection cooled, parallel plates", *Journal of Heat Transfer* 106, 116–124 — the theoretical version of Berea's result, and with it the **volume-to-point** formulation: given a volume in which heat is generated at a uniform rate and one point at which it may leave, what distribution of a small amount of high-conductivity material minimises the peak temperature? **The answer is a tree, and this paper is the origin of constructal design.** |
-| 2003 | **A. Bejan & S. Lorente** develop **constructal theory** into a general design method: the tendency of flow systems to evolve toward tree-shaped access is proposed as a physics of configuration, not a metaphor. **Tree-shaped fins, branching microchannels and additively manufactured lattices are all descendants of the 1984 question, and the fin — the oldest object in heat transfer — is once again the frontier.** |
+| 1804, 1822 | **Jean-Baptiste Biot** measures the steady temperatures along an iron bar heated at one end and finds them falling off geometrically with distance; **Joseph Fourier**'s *Théorie analytique de la chaleur* gives the exponential solution for a thin bar losing heat from its surface — the fin equation of this lesson. |
+| 1926 | **Ernst Schmidt**, "Die Wärmeübertragung durch Rippen", *Zeitschrift des VDI* — asks which fin profile carries a given heat flow with the least material, and finds that it is, to a first approximation, parabolic: the start of optimum-fin theory. |
+| 1942 | **W. Elenbaas**, "Heat dissipation of parallel plates by free convection", *Physica* 9 — measurements on vertical parallel-plate channels that show the maximum in heat dissipation against spacing on which natural-convection heat-sink design still rests. |
+| 1945 | **K. A. Gardner**, "Efficiency of extended surface", *Transactions of the ASME* 67 — the general solutions and efficiency charts for straight, annular and tapered fins that the textbooks reproduce. |
+| 1984 | **A. Bar-Cohen and W. M. Rohsenow**, "Thermally optimum spacing of vertical, natural convection cooled, parallel plates", *Journal of Heat Transfer* 106 — composite correlations for the channel and the optimum spacing for several thermal boundary conditions. |
+| 1997 | **Adrian Bejan** poses the volume-to-point problem — how to arrange a small amount of high-conductivity material to cool a heat-generating volume through one point — and finds tree-shaped paths, the starting point of what he calls constructal theory. |
 :::
 
 ::: summary
 - **The fin equation is $\theta ^ { \prime \prime } = m ^ { 2 } \theta$ with $m = \sqrt { h P / k A _ { c } }$**, and $1 / m$ is the distance over which the fin's excess temperature dies. **A fin several times longer than $1 / m$ is decoration.**
-- **Efficiency $\eta _ { f } = \tanh m L _ { c } / m L _ { c }$ measures the metal; effectiveness $\varepsilon _ { f } \approx \sqrt { P k / h A _ { c } }$ measures the decision.** Answer the second question first, and never reject a fin for being $6 0 \ \ \%$ efficient.
-- **The design window is $m L _ { c } \approx 0 . 3$ to $1 . 0$, $\eta _ { f } = 0 . 8 5$ to $0 . 9 6$.** Below it the fin is isothermal and useless; above it the tip is dead.
-- **Effectiveness goes as $1 / \sqrt { h }$.** Fins are the remedy for a bad fluid: $2 4 5$ times in still air, $1 1$ times in water, $6$ times in boiling water — and in boiling water they also trap vapour, so the honest answer is usually no fins.
+- **Efficiency $\eta _ { f } = \tanh m L _ { c } / m L _ { c }$ measures the metal; effectiveness $\varepsilon _ { f } = \sqrt { P k / h A _ { c } } \tanh m L_c$ measures the decision.** Answer the second question first, and never reject a fin for being $6 0 \ \%$ efficient.
+- **A common design window is $m L _ { c } \approx 0 . 5$ to $1 . 0$, $\eta _ { f } \approx 0 . 9 2$ to $0 . 7 6$.** Well below it the fin is nearly isothermal and could be taller or thinner; well above it the tip does little.
+- **Effectiveness goes as $1 / \sqrt { h }$.** Fins are the remedy for a bad fluid: for a $1\ \mathrm{mm}$ aluminium fin, up to $2 4 5$ times in still air, $1 1$ times in water, $6$ times in boiling water.
 - **An array is $\eta _ { o } = 1 - ( A _ { f } / A _ { t } ) ( 1 - \eta _ { f } )$, and in a dense array the base is irrelevant.** Everything is the fins, and the joint under the base is a separate resistance that no fin can help.
-- **Optimum pitch is $S \approx 2 k _ { f } / h _ { \infty }$** — about $9 \ \mathrm{mm}$ for natural convection in air, $1 . 3 \ \mathrm{mm}$ at $3 \ \mathrm { m / s }$, and $1 0 \ \mu\mathrm{m}$ in water, which is the proof that fins are an air-cooling technology.
-- **The optimum is flat.** Within $\pm 4 0 \ \ \%$ of the best pitch the performance changes by less than $10\ \ \%$, so choose the sink that fits, cleans and costs least.
-- **Doubling a fin's height buys $\tanh$ of the increase, not the increase**: $+ 2 6\ \ \%$ for a fin at $m L _ { c } = 1 . 0$, and $+ 3 \ \ \%$ for one at $m L _ { c } = 4$.
+- **Optimum pitch is $S \approx 2 k _ { f } / h _ { \infty }$** — about $1 0 \ \mathrm{mm}$ for natural convection in air, $1 . 3 \ \mathrm{mm}$ at $h = 40$, and about $0 . 2 5 \ \mathrm{mm}$ in water — the scale of microchannel cold plates.
+- **The optimum is flat.** From about two-thirds to one and a half times the best gap the performance changes by less than $10\ \%$, so choose the sink that fits, cleans and costs least.
+- **Doubling a fin's height buys $\tanh$ of the increase, not the increase**: $+ 2 6\ \%$ for a fin at $m L _ { c } = 1 . 0$, and $+ 3 . 5 \ \%$ for one at $m L _ { c } = 2$.
 - **A flux plot gives $q = ( M / N ) k \Delta T w$** by counting curvilinear squares, is good to a few per cent, and identifies $M / N$ as the shape factor per unit thickness.
-- **Spreading resistance is $1 / ( 4 k \sqrt { A _ { s } / \pi } )$, independent of the thickness of the body it spreads into.** You cannot fix a hot spot with a thicker lid; you can only fix it with a bigger source area.
+- **Spreading resistance into a half-space is $1 / ( 4 k \sqrt { A _ { s } / \pi } )$**, independent of the body's thickness once it is several source-sizes thick. A thicker lid does little for a hot spot; a bigger effective source area does a lot.
 :::
 
 ## Further reading
 
 - **F. P. Incropera, D. P. DeWitt, T. L. Bergman & A. S. Lavine**, *Fundamentals of Heat and Mass Transfer*, 8th ed. (Wiley, 2017) — Chapter 3 on fins including the annular-fin figure and the optimum-fin-length discussion, and Chapter 9 for natural-convection fin arrays.
-- **A. M. Kraus, A. Aziz & J. Mayhew**, *Extended Surface Heat Transmission* (McGraw-Hill, 1967) — the monograph on fins: every profile, every boundary condition, every approximation, with the accuracy of each stated. Still the reference.
-- **F. R. Gardner**, "Efficiency of calcuated and triangular fins", *J. Heat Transfer* 67 (1945) 621–631 — short, and the origin of optimum-profile theory.
-- **A. Bar-Cohen & W. M. Rohsenow**, "Thermally optimum spacing of vertical, natural convection cooled, parallel plates", *J. Heat Transfer* 106 (1984) 116–124 — the optimum-spacing derivation, and the volume-to-point problem in its original form.
-- **T. J. Berea**, "The optimum geometry for natural convection fins", ASME Paper 70-HT/Am3A-49 (1970) — the measurements behind the rule of thumb.
-- **D. Q. Kern**, *Process Heat Transfer* (McGraw-Hill, 1950; reprinted) — fin efficiency in exchanger service and the classic fin-contact-resistance allowances.
-- **A. Bejan & S. Lorente**, *Design in Motion: The Making of Devices, Nature and Life* (Ashgate, 2013) — constructal theory written for engineers, with the fin as the elementary example throughout.
-- **E. E. Josyln, R. J. Gagnon & A. Azar (eds.)**, or in its place **B. Micander, H. Berg & M. McNutt (eds.)**, *Thermal Management of Microelectronics Equipment* (Academic Press, 1998) — heat sinks as they are actually specified: array data, orientation, by-height versus by-footprint, and the measurement standards behind the catalogue numbers.
-- **JEDEC JESD51 series** — *Thermal Measurement Guidelines for Integrated Circuit Packages*: how a heat-sink resistance is actually measured, why the number depends on the test die size, and why two vendors' catalogues are not comparable.
+- **A. D. Kraus, A. Aziz & J. Welty**, *Extended Surface Heat Transfer* (Wiley, 2001) — the monograph on fins: profiles, boundary conditions, arrays and approximations, with their accuracy stated.
+- **K. A. Gardner**, "Efficiency of extended surface", *Transactions of the ASME* 67 (1945) — short, and the source of the classic efficiency charts.
+- **A. Bar-Cohen & W. M. Rohsenow**, "Thermally optimum spacing of vertical, natural convection cooled, parallel plates", *J. Heat Transfer* 106 (1984) — the optimum-spacing correlations.
+- **W. Elenbaas**, "Heat dissipation of parallel plates by free convection", *Physica* 9 (1942) — the measurements behind the rule of thumb.
+- **D. Q. Kern**, *Process Heat Transfer* (McGraw-Hill, 1950; reprinted) — fin efficiency in exchanger service, including finned double-pipe exchangers.
+- **A. Bejan & S. Lorente**, *Design with Constructal Theory* (Wiley, 2008) — tree-shaped conducting paths and fin assemblies treated as a design method.
+- **JEDEC JESD51 series** — the thermal test standards for integrated-circuit packages: how junction-to-case and junction-to-ambient resistances are measured, and why numbers from different test conditions are not comparable.

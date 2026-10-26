@@ -3,7 +3,7 @@ The root locus is the picture that made classical control a visual art: as a sin
 The method rests on two conditions. The **angle condition** decides which points of the plane are on the locus, and it involves only the *angles* subtended by the open-loop poles and zeros — so the locus is a geometric object determined by the plant alone. The **magnitude condition** then supplies the gain at each point, and it involves only the *distances*, so the gain at a chosen pole location is read off a ruler. Everything else — the asymptotes, the breakaway points, the imaginary-axis crossings, the departure angles — is a corollary of those two.
 
 ::: warning The locus is drawn for one parameter and one model
-A root locus answers exactly one question: where do the closed-loop poles go as **one** real gain goes from zero to infinity, with everything else in the model held fixed. Four failures follow from taking the answer too widely. A compensator's pole-zero pair moved by hand changes the locus, so a design is a sequence of sketches and not one. A gain that is complex — a rate feedback term, an inertia-coupled aerospace loop, a structural gyro — produces a **generalised** locus with none of the symmetry and none of the construction rules. A plant with a delay has a locus with infinitely many branches, of which the three or four nearest the origin are drawn and the rest are assumed harmless, an assumption that fails when a badly designed compensator pushes the outer branches in. And the model itself is uncertain: a locus that passes a tenth of a unit from the imaginary axis is a locus whose crossing gain is uncertain by a factor, which is why the professional use of the method is to **choose a design point** and then check its margins by an independent method, not to trust the sketch.
+A root locus answers exactly one question: where do the closed-loop poles go as **one** real gain goes from zero to infinity, with everything else in the model held fixed. Four failures follow from taking the answer too widely. A compensator's pole-zero pair moved by hand changes the locus, so a design is a sequence of sketches and not one. A parameter that is not an overall loop gain — a time constant, a tachogenerator gain inside an inner loop — must first be rearranged into the form $1 + K P' (s ) = 0$ (a **parameter** or contour locus), and a parameter that cannot be so arranged gives a locus to which the construction rules do not apply. A plant with a delay has a locus with infinitely many branches, of which the three or four nearest the origin are drawn and the rest are assumed harmless, an assumption that fails when a badly designed compensator pushes the outer branches in. And the model itself is uncertain: a locus that passes a tenth of a unit from the imaginary axis is a locus whose crossing gain is uncertain by a factor, which is why the professional use of the method is to **choose a design point** and then check its margins by an independent method, not to trust the sketch.
 :::
 
 ## The angle condition and its consequences
@@ -27,8 +27,8 @@ The angle condition involves no gain at all, so it alone decides the **shape** o
 
 ::: proof Where the locus comes from and where it goes {#proof-locus-rules}
 **Start and end.** As $K \rightarrow 0$ the characteristic equation $1 + K P = 0$ requires $P \rightarrow \infty$, which happens at the open-loop **poles**; as $K \rightarrow \infty$ it requires $P \rightarrow 0$, which happens at the open-loop **zeros**, finite or infinite. There are $n$ branches, $m$ of them ending at finite zeros and $n - m$ at zeros at infinity. $\checkmark$
-**Real-axis segments.** A test point on the real axis receives an angle of $180^{\circ}$ from every real pole or zero to its left and $0^{\circ}$ from every one to its right, while a complex-conjugate pair contributes $\pm \theta$ and $\mp \theta$, cancelling. The angle condition therefore reduces to "an **odd** number of real poles and zeros lie to the right", which is the whole rule. $\checkmark$
-**Asymptotes.** For $\left| s \right|$ large the $n - m$ extra poles behave as though the zeros were at the origin, so the branches at infinity satisfy $s^{n-m} = - K$, giving angles
+**Real-axis segments.** A test point on the real axis receives an angle of $180^{\circ}$ from every real pole or zero to its right and $0^{\circ}$ from every one to its left, while a complex-conjugate pair contributes $\pm \theta$ and $\mp \theta$, cancelling. The angle condition therefore reduces to "an **odd** number of real poles and zeros lie to the right", which is the whole rule. $\checkmark$
+**Asymptotes.** For $\left| s \right|$ large the zeros cancel $m$ of the poles and $P (s ) \approx 1 / s^{n - m}$, so the branches at infinity satisfy $s^{n-m} \approx - K$, giving angles
 $$
 \theta_k = \frac{\left( 2 k + 1 \right) \pi}{n - m},
 $$
@@ -36,9 +36,9 @@ and expanding $\prod \left( s - p_j \right) \approx s^{n} - s^{n-1} \sum p_j$ sh
 $$
 \sigma_a = \frac{\sum_j p_j - \sum_i z_i}{n - m} . \qquad \checkmark
 $$
-**Departure.** The angle of departure $\theta_p$ from a complex pole $p$ satisfies $\theta_p = 180^{\circ} - \left( \sum_i \angle \left( p - z_i \right) - \sum_{j \ne p} \angle \left( p - p_j \right) \right)$, which is the angle condition evaluated at a point an infinitesimal distance from $p$, where every other pole and zero contributes its exact angle and only the pole itself contributes the unknown. $\checkmark$
+**Departure.** The angle of departure $\theta_p$ from a complex pole $p$ satisfies $\theta_p = 180^{\circ} + \sum_i \angle \left( p - z_i \right) - \sum_{j \ne p} \angle \left( p - p_j \right)$, which is the angle condition evaluated at a point an infinitesimal distance from $p$, where every other pole and zero contributes its exact angle and only the pole itself contributes the unknown. $\checkmark$
 
-*Note.* The centroid formula carries the method's central qualitative message in one line: adding a **zero** raises $\sum z_i$ and pulls the centroid left, adding a **pole** pulls it right. Every compensator design is an application — a lead or a PD adds a zero near the origin and pulls the branches into a better damping region, a lag adds a pole near the origin and gives back a little of what the zero took, and an extra unmodelled high-frequency pole, which the designer did not ask for, pulls the whole locus toward instability. This is why the phrase "the extra pole at the amplifier's bandwidth will cost us phase" is not a vague worry but a statement about a centroid that has moved.
+*Note.* The rules carry the method's central qualitative message: **zeros attract the branches and poles repel them**. Adding a zero reduces the pole excess $n - m$, so there are fewer asymptotes and they lean less toward the right half-plane (two poles and no zeros give vertical asymptotes; two poles and one zero give a single asymptote along the negative real axis); adding a pole increases $n - m$, and with three or more excess poles the asymptotes at $\pm 60^{\circ}$ must cross into the right half-plane at some gain. Every compensator design is an application — a lead or a PD adds a zero and pulls the branches into a better damping region, a lag adds a pole–zero pair near the origin that barely moves them, and an extra unmodelled high-frequency pole, which the designer did not ask for, bends the whole locus toward instability. This is why the phrase "the extra pole at the amplifier's bandwidth will cost us phase" is not a vague worry.
 :::
 
 ::: definition Breakaway, crossing and the dominant-pole region {#def-breakaway}
@@ -93,7 +93,7 @@ $$
 
 *Check.* The two branches that break away at $- 0.472$ must reach the asymptotes, and the asymptote at $60^{\circ}$ from $\sigma = - 2$ passes through the crossing point $\left( 0 , 2.24 \right)$ only approximately — at a real part of zero the asymptote predicts $\omega = 2 \tan 60^{\circ} = 3.46$, so the true branch bows inward by a third. $\checkmark$
 
-*Sanity.* The inward bow is the reason asymptotes are a **guide** and not the locus, and why the crossing must always be computed rather than read: an asymptote that predicts a crossing at a gain of eight when the true value is thirty will mislead a designer into a conservative and sluggish loop, and one that predicts a crossing at thirty when the truth is eight will produce an oscillator. The rule of thumb that survives is that the asymptotes are good within about twenty per cent of their own centroid and useless near the imaginary axis, which is exactly where the answer is needed.
+*Sanity.* The inward bow is the reason asymptotes are a **guide** and not the locus, and why the crossing must always be computed rather than read: the asymptotes describe the branches only far from the poles and zeros, while the crossing happens at a moderate distance from them, exactly where the asymptotes are least accurate — here they would put it at $3.46\ \mathrm{rad / s}$ instead of $2.24$.
 :::
 :::
 
@@ -116,7 +116,7 @@ s^{2} + 4 s + 2 = 0 ,
 $$
 whose root in $\left( - 1 , 0 \right)$ is $- 0.586$. $\checkmark$
 
-*Sanity.* Without the zero the two poles of $K / \left[ s \left( s + 1 \right) \right]$ break away at $- 0.5$ and travel **vertically** — the real part is pinned at $- 0.5$ for every gain, so the settling time is fixed at eight seconds and only the overshoot changes. Adding a zero at $- 2$ curves the branches left, and at the point where the circle crosses the $45^{\circ}$ damping line the real part is $- 1.4$ against $- 0.5$: the same damping specification is met four times faster. That is the whole of derivative action in one picture, and it is why the construction rule "put a zero near the dominant poles" is the first move in every root-locus design.
+*Sanity.* Without the zero the two poles of $K / \left[ s \left( s + 1 \right) \right]$ break away at $- 0.5$ and travel **vertically** — the real part is pinned at $- 0.5$ for every gain, so the settling time is fixed at eight seconds and only the overshoot changes. Adding a zero at $- 2$ curves the branches left: the least-damped point of the circle is where it touches the $\zeta = 0.707$ line, at $- 1 \pm \mathrm{j}$, so the closed-loop damping never falls below $0.707$ at any gain, and at that point the real part is $- 1$ against $- 0.5$ — twice as fast. That is the whole of derivative action in one picture, and it is why the construction rule "put a zero near the dominant poles" is the first move in every root-locus design.
 :::
 :::
 
@@ -141,15 +141,16 @@ $$
 **Check.** The characteristic equation is $s^{2} + \left( 1 + K \right) s + 2.67 K = s^{2} + 4 s + 8$, with roots exactly at $- 2 \pm 2\ \mathrm{j}$. $\checkmark$
 $$
 \omega_n = 2.83\ \mathrm{rad / s}, \quad \zeta = 0.707, \quad
-M_p = 4.3\ \%, \quad t_s = 2.0\ \mathrm{s}, \quad
+M_p = 4.3\ \% \ \text{(pole pair alone)}, \quad t_s = 2.0\ \mathrm{s}, \quad
 K_v = K z = 8.0\ \mathrm{s^{- 1}} .
 $$
-*Sanity.* The proportional-only loop at the same natural frequency would need $K = 8$ and would have $\zeta = 1 / \left( 2 \sqrt{8} \right) = 0.18$, a fifty-eight per cent overshoot. The derivative has bought a factor of three in speed and forty in overshoot for the price of one zero — and of the noise that zero amplifies, since a real derivative must be filtered and the filter takes back some of the phase at high frequency. Note also that $K_v$ has risen to eight: the PD has improved the steady-state error as a side effect, which is unusual and is a consequence of the zero being to the **left** of the origin.
+The closed loop $T = 3 \left( s + 2.67 \right) / \left( s^{2} + 4 s + 8 \right)$ also has the controller's **zero** at $- 2.67$, close to the dominant pair, and a simulated step overshoots by $11.9$ per cent rather than $4.3$ — see [[#proof-dominant]].
+*Sanity.* The proportional-only loop at the same natural frequency would need $K = 8$ and would have $\zeta = 1 / \left( 2 \sqrt{8} \right) = 0.18$, a fifty-seven per cent overshoot and a real part pinned at $- 0.5$. The derivative has bought a factor of four in settling time and of about five in overshoot ($57$ to $12$ per cent) for the price of one zero — and of the noise that zero amplifies, since a real derivative must be filtered and the filter takes back some of the phase at high frequency. Note also that $K_v = 8$ is the same as the proportional-only loop's: the PD has bought the damping without giving up any steady-state accuracy.
 :::
 :::
 
 ::: example Lag compensation {#ex-lag}
-The design of Example 3 has $K_v = 8\ \mathrm{s^{- 1}}$ but the specification demands $80\ \mathrm{s^{- 1}}$. Add a lag without disturbing the dominant poles.
+The design of [[#ex-lead]] has $K_v = 8\ \mathrm{s^{- 1}}$ but the specification demands $80\ \mathrm{s^{- 1}}$. Add a lag without disturbing the dominant poles.
 ::: solution
 A lag network of ratio $\beta = 10$ placed very near the origin,
 $$
@@ -158,15 +159,15 @@ $$
 multiplies the low-frequency gain by ten while contributing at the design point
 $$
 \angle \left( s + 0.10 \right) - \angle \left( s + 0.010 \right)
-= 133.4^{\circ} - 134.7^{\circ} = - 1.3^{\circ}
+= 133.5^{\circ} - 134.9^{\circ} = - 1.3^{\circ}
 $$
 of phase, which moves the locus by less than the drawing's line width. The velocity constant becomes
 $$
 K_v = 8 \times \frac{0.10}{0.010} = 80\ \mathrm{s^{- 1}} .
 $$
-*Check.* The lag's own closed-loop pole is near $- 0.09$, a decade and a half to the right of the dominant pair's real part of $- 2$ but with a residue in the step response of order $1 / \left( 2 - 0.09 \right)^{2} \approx 0.27$ per cent of the dominant term, so it contributes a slow tail of less than one per cent. $\checkmark$
+*Check.* The closed-loop poles are $- 1.95 \pm 2.02\ \mathrm{j}$ — barely moved — and $- 0.101$, the lag's own slow pole, which sits just below the lag zero at $- 0.10$. Its residue in the step response is $0.011$, so it contributes a slow tail of about one per cent of the step, decaying with a time constant of about $10\ \mathrm{s}$. $\checkmark$
 
-*Sanity.* The lag's cost is not the $1.3^{\circ}$ of phase but the **slow tail** it inserts: the closed loop acquires a pole near $- 0.09$ and a zero near $- 0.10$ which almost, but not quite, cancel, and the residue of the near-cancellation is a long low exponential that is invisible on a settling-time plot and dominant in a temperature loop that must be within one tenth of a degree. The design rule is that the lag's break frequencies should be at least a decade below the dominant pair's real part **and** that the pair should be separated from each other by no more than a factor of three, and the reason a lag compensator is refused in favour of a bigger derivative or a feedforward path whenever the specification is on the tail rather than on the settling time.
+*Sanity.* The lag's cost is not the $1.3^{\circ}$ of phase but the **slow tail** it inserts: the closed loop acquires a pole near $- 0.101$ and a zero at $- 0.10$ which almost, but not quite, cancel, and the residue of the near-cancellation is a long low exponential that is invisible on a two-per-cent settling-time plot and dominant in a loop that must settle to a tenth of a per cent. The design rule is to keep the lag's zero at least a decade below the dominant pair's real part, so that its phase cost is small, and to accept or explicitly specify the tail — or to use a feedforward path instead when the specification is on the tail rather than on the settling time.
 :::
 :::
 
@@ -183,15 +184,15 @@ s^{3} + 8 s^{2} + 17 s + \left( 10 - K \right) = 0,
 $$
 whose necessary condition requires $K < 10$. At $K = 10$ it factors as $s \left( s^{2} + 8 s + 17 \right)$, so the crossing is at the **origin** and the other two roots are at $- 4 \pm \mathrm{j}$.
 
-*Sanity.* The instability is through a **real** pole and not through an oscillation: the branch that starts at $- 1$ walks right along the real axis, crosses at $K = 10$ and diverges monotonically. This is the diagnostic that distinguishes a sign error from a tuning error in the field — a loop that diverges without oscillating has the wrong sign or a positive stiffness term, while a loop that oscillates at a finite frequency has simply been over-gained — and it is worth knowing because a reversed sense lead is one of the commonest commissioning faults and the multimeter will not find it. The $\pm 120^{\circ}$ asymptotes also cross into the right half-plane at higher gain, so the loop is doubly unstable there, but the first failure is always the real branch.
+*Sanity.* The instability is through a **real** pole and not through an oscillation: the branch that starts at $- 1$ walks right along the real axis, crosses at $K = 10$ and diverges monotonically. This is the diagnostic that distinguishes a sign error from a tuning error in the field — a loop that diverges without oscillating has the wrong sign or a positive stiffness term, while a loop that oscillates at a finite frequency has simply been over-gained — and it is worth knowing because a reversed sense lead is a common commissioning fault. The other two branches leave the breakaway at $- 3.87$ along the $\pm 120^{\circ}$ asymptotes into the left half-plane, so the real branch is the only route to instability.
 :::
 :::
 
 ::: example Design {#ex-design-joint}
-A robot joint has inertia $J = 0.02\ \mathrm{kg\, m^{2}}$, negligible friction and a motor whose electrical dynamics are fast enough to be a gain of $K_m = 5\ \mathrm{N\, m / V}$. The gearbox reflects a load and gives a total inertia of $0.05\ \mathrm{kg\, m^{2}}$ at the motor. The specification is a two-per-cent settling time of $0.4\ \mathrm{s}$, an overshoot under five per cent and a ramp error under $0.5^{\circ}$ at $1\ \mathrm{rad / s}$. Design the loop.
+A robot joint has inertia $J = 0.02\ \mathrm{kg\, m^{2}}$, negligible friction and a motor whose electrical dynamics are fast enough to be a gain of $K_m = 5\ \mathrm{N\, m / V}$. The gearbox reflects a load and gives a total inertia of $0.05\ \mathrm{kg\, m^{2}}$ at the motor. The specification is a two-per-cent settling time of $0.4\ \mathrm{s}$, closed-loop poles with a damping ratio of at least $0.69$ (the value that gives five per cent overshoot for a pole pair alone) and a ramp error under $0.5^{\circ}$ at $1\ \mathrm{rad / s}$. Design the loop.
 ::: solution
-**Plant.** $G = K_m / \left( J s^{2} \right) = 100 / s^{2}$ — a double integrator, which no proportional or proportional-derivative feedback can fully stabilise in the sense of giving both damping and a finite ramp error.
-**Specification.** $t_s = 4 / \zeta \omega_n \le 0.4$ and $M_p \le 5\ \%$ give $\zeta \ge 0.69$ and $\zeta \omega_n \ge 10$, so $\omega_n \ge 14.5\ \mathrm{rad / s}$ and the design point is
+**Plant.** $G = K_m / \left( J s^{2} \right) = 5 / \left( 0.05 s^{2} \right) = 100 / s^{2}$ — a double integrator, whose proportional-only locus lies on the imaginary axis, so a zero is required.
+**Specification.** $t_s = 4 / \zeta \omega_n \le 0.4$ gives $\zeta \omega_n \ge 10$, and with $\zeta \ge 0.69$, so $\omega_n \ge 14.5\ \mathrm{rad / s}$ and the design point is
 $$
 s = - 10 \pm 10.3\ \mathrm{j} .
 $$
@@ -204,31 +205,32 @@ $$
 K = \frac{\left| s \right|^{2}}{100 \left| s + 10.31 \right|} = \frac{206.1}{100 \times 10.31} = 0.20 .
 $$
 **Check.** The characteristic equation is $s^{2} + 100 K \left( s + z \right) = s^{2} + 20 s + 206$, with roots $- 10 \pm 10.3\ \mathrm{j}$, $\omega_n = 14.4\ \mathrm{rad / s}$ and $\zeta = 0.70$.
-**Ramp error.** $K_v = \lim_{s \to 0} s \times 0.20 \left( s + 10.31 \right) \times 100 / s^{2} = \infty$, so the ramp error is **zero** and the specification is met with room; the acceleration constant is $K_a = 206\ \mathrm{s^{- 2}}$, giving $0.28^{\circ}$ of error at one revolution per second squared.
+**Ramp error.** $K_v = \lim_{s \to 0} s \times 0.20 \left( s + 10.31 \right) \times 100 / s^{2} = \infty$, so the ramp error is **zero** and the specification is met with room; the acceleration constant is $K_a = 206\ \mathrm{s^{- 2}}$, giving $1 / 206\ \mathrm{rad} = 0.28^{\circ}$ of error at an acceleration of $1\ \mathrm{rad / s^{2}}$.
+**Step response.** The closed loop $T = \left( 20 s + 206 \right) / \left( s^{2} + 20 s + 206 \right)$ has a zero at $- 10.3$, and a simulated step settles in $0.34\ \mathrm{s}$ but overshoots by $21$ per cent. That is unavoidable in a type-2 loop: for a step, $\int_0^{\infty} e \,\mathrm{d}t = 1 / K_v = 0$, so the error must change sign.
 
-*Design comment.* A double integrator with a PD gives a second-order closed loop with two poles and no zeros in the response, so the design is exact and the specification is met by construction — which is why joint servos really are built this way. What the arithmetic does not show is the three things that decide the machine. The first is the **friction** neglected in the model: at low speeds the Stribeck effect produces a limit cycle of a few hundredths of a degree, and the cure is a dither or a friction observer, not more gain. The second is the **gear compliance**: the $0.05\ \mathrm{kg\, m^{2}}$ is reflected through a harmonic drive whose torsional stiffness of about $2000\ \mathrm{N\, m / rad}$ puts a torsional resonance at $\sqrt{2000 / 0.05} / 2 \pi = 32\ \mathrm{Hz}$, a good deal above the $2.3\ \mathrm{Hz}$ crossover but not infinitely so, and a lighter arm link moves it down. The third is that the zero at $- 9.7$ is a **derivative**, and a derivative of a position measured by a resolver on the motor side differentiates the gear's wind-up rather than the load's motion — which is why high-performance joints put the position sensor on the **output** flange and why the second loop of a real robot is a current loop and not a velocity loop.
+*Design comment.* The pole placement is exact, but the step overshoot shows why robot joints are not commanded with steps: a trajectory generator supplies a smooth position reference, usually with velocity and acceleration feedforward, and the type-2 loop then tracks it with very small error. What the arithmetic does not show is three things that decide the machine. The first is the **friction** neglected in the model: with PD control Coulomb friction leaves a small steady position error, and once integral action is added to remove it the joint can stick–slip in a limit cycle; the cures are friction compensation or an observer, not simply more gain. The second is the **gear compliance**: if the gearbox's torsional stiffness referred to the motor is about $2000\ \mathrm{N\, m / rad}$, the torsional resonance is near $\sqrt{2000 / 0.05} / 2 \pi = 32\ \mathrm{Hz}$, about nine times the $3.5\ \mathrm{Hz}$ crossover — enough, but not infinitely so. The third is that the zero at $- 10.3$ is a **derivative**, and a derivative of a position measured on the motor side sees the gear's wind-up rather than the load's motion, which is one reason high-performance joints add a position sensor on the **output** flange.
 :::
 :::
 
 ::: proof Why dominant poles dominate {#proof-dominant}
-For a pair of poles $p_{1,2}$ and a distant pole $p_3$ the step response is
+For a pair of poles $p_{1,2}$ and a distant real pole $p_3 = - p$ the step response is
 $$
 y (t ) = 1 + A e^{p_1 t} + A^{*} e^{p_2 t} + B e^{p_3 t},
 \qquad
 B = \lim_{s \to p_3} \left( s - p_3 \right) \frac{T (s )}{s} .
 $$
-Writing $T = \omega_n^{2} \left( s + z \right) / \left[ \left( s^{2} + 2 \zeta \omega_n s + \omega_n^{2} \right)\left( s + p \right) \right]$ with $p \gg \omega_n$, the distant residue is
+Writing $T = \omega_n^{2} p / \left[ \left( s^{2} + 2 \zeta \omega_n s + \omega_n^{2} \right)\left( s + p \right) \right]$ (unit DC gain, no zeros) with $p \gg \omega_n$, the distant residue is
 $$
-B = \frac{\omega_n^{2} \left( p_3 + z \right)}{p_3 \left( p_3^{2} + 2 \zeta \omega_n p_3 + \omega_n^{2} \right)}
-\approx \frac{\omega_n^{2} \left( p_3 + z \right)}{p_3^{3}} \rightarrow 0
+B = - \frac{\omega_n^{2}}{p^{2} - 2 \zeta \omega_n p + \omega_n^{2}}
+\approx - \frac{\omega_n^{2}}{p^{2}} \rightarrow 0
 $$
-as $p_3$ grows, while the dominant residues tend to constants of order unity. The distant pole contributes a term of relative size $\omega_n^{2} / p_3^{2}$, so a pole at five times the dominant real part contributes under four per cent and one at ten times under one per cent. $\checkmark$
+as $p$ grows, while the dominant residues tend to constants of order unity. The distant pole contributes a term of relative size about $\omega_n^{2} / p^{2}$: for $\zeta = 0.7$, a pole at $p = 5 \omega_n$ gives $\left| B \right| = 1 / 19 = 5$ per cent and one at $p = 10 \omega_n$ gives $1 / 87 = 1.1$ per cent, both decaying much faster than the dominant terms. $\checkmark$
 
-*Note.* The estimate is of the residue and not of the **derivative** of the response, and that is where the approximation breaks. A closed-loop zero near the dominant pair multiplies its residue by $\left| p_1 + z \right| / \left| p_1 - p_3 \right|$ and can make a nominally distant zero dominant in the transient: a zero within one natural frequency of the dominant poles can triple the overshoot while leaving the pole locations untouched, which is why a design placed by pole location alone sometimes overshoots by twice what the damping ratio promised. The rule that follows is to check the **zeros** of the closed-loop transfer function as well as its poles, and to regard any closed-loop zero that lies within $1.5 \omega_n$ of the origin as part of the design rather than as a detail.
+*Note.* The estimate assumes that the closed loop has no **zero** near the dominant pair, and that is where the approximation breaks. A zero at $- z$ multiplies the pair's response by $\left( s / z + 1 \right)$, adding $1 / z$ times the **derivative** of the zero-free step response to it: for $\zeta = 0.5$ the overshoot of $16$ per cent becomes $22$ per cent with a zero at $- 1.5 \omega_n$ and $30$ per cent with one at $- \omega_n$, while the pole locations are untouched — which is why a design placed by pole location alone (as in [[#ex-lead]]) can overshoot by more than the damping ratio promised. The rule that follows is to check the **zeros** of the closed-loop transfer function as well as its poles, and to regard any closed-loop zero that lies within $1.5 \omega_n$ of the origin as part of the design rather than as a detail.
 :::
 
 ::: history
-The method is **Walter Russell Evans**'s, and its history is a lesson in the sociology of engineering. Evans was a Purdue-trained radar engineer at the Radiation Laboratory working on the gun-laying and fire-control servos of the Second World War, and between 1939 and 1948 he developed a graphical procedure that let a designer see the whole closed-loop behaviour as one parameter moved, where the frequency methods of **Nyquist** and **Bode** gave the answer only one frequency at a time. His 1948 paper *"Graphical analysis of control systems"* in AIEE Transactions was met with indifference — the Bell Laboratory school was established, the method looked like a drawing trick, and reviewers objected to its rigour. Evans persisted, self-edited and published his *Control System Dynamics* in 1948 to few sales; the method was taken up in the late 1950s by the aerospace and missile industry, where the requirement was explicitly to place poles, and by the time of the second edition in 1959 the root locus was the standard method in American universities. Evans lived to see it taught to more engineers than any other technique in the field, and his own account of the reception is printed in the preface to the 1959 edition. The **zero-degree locus** is a footnote of the same literature, and the **generalised locus** for a complex parameter is due to **D'zzo** and to **Chin** in the 1950s.
+The method is **Walter R. Evans**'s. Working on aircraft guidance and control problems at North American Aviation in the late 1940s, he wanted to see how all the closed-loop poles moved as a gain was changed, where the frequency methods of **Nyquist** and **Bode** gave the answer one frequency at a time. He published the idea as "Graphical analysis of control systems" in the *Transactions of the AIEE* in 1948 and the design procedure as "Control system synthesis by root locus method" in the same journal in 1950; his textbook *Control-System Dynamics* followed in 1954. Evans also devised the **Spirule**, a transparent protractor with a pivoting arm for adding angles and multiplying distances on the $s$-plane, which made the construction quick by hand in the decades before computers drew the locus. Within about a decade the root locus had joined the frequency-response methods as a standard part of control courses.
 :::
 
 ::: quiz
@@ -244,14 +246,14 @@ Breakaway and entry points are the extrema of $K$ along the real axis, so $\math
 
 ## Where this leads
 
-The damping ratio and settling time read off the design region are the time-domain quantities of [[control-systems/time-response]], the crossing gain computed by Routh is the subject of [[control-systems/feedback-stability]], the same design point read from a Bode plot is the frequency-domain equivalent developed in [[control-systems/frequency-response]], and the flexible mode that limits the joint design of Example 6 is the two-degree-of-freedom resonance of [[vibrations/two-degrees-of-freedom]].
+The damping ratio and settling time read off the design region are the time-domain quantities of [[control-systems/time-response]], the crossing gain computed by Routh is the subject of [[control-systems/feedback-stability]], the same design point read from a Bode plot is the frequency-domain equivalent developed in [[control-systems/frequency-response]], and the flexible mode that limits the joint design of [[#ex-design-joint]] is the two-degree-of-freedom resonance of [[vibrations/two-degrees-of-freedom]].
 
 ::: summary
 - The angle condition decides the shape of the locus and involves no gain; the magnitude condition supplies the gain and involves only distances.
-- Branches start at open-loop poles and end at zeros; the real-axis rule is an odd count to the right; the asymptotes meet at the centroid, which a zero pulls left and a pole pulls right.
+- Branches start at open-loop poles and end at zeros; the real-axis rule is an odd count to the right; the asymptotes meet at the centroid; zeros attract branches and poles repel them.
 - Breakaway points come from dK/ds = 0 and imaginary-axis crossings from Routh — both must be computed, because asymptotes are wrong exactly where the answer is needed.
 - A zero near the origin bends the locus left and buys damping; a pole near the origin in a lag pair buys low-frequency gain and costs a slow tail.
-- Positive feedback reverses the angle condition and gives a zero-degree locus whose asymptotes point into the right half-plane.
+- Positive feedback reverses the angle condition and gives a zero-degree locus, one of whose asymptotes runs along the positive real axis.
 - The method designs for one parameter and one model; the professional use is to choose a design point and verify it independently.
 :::
 
@@ -271,7 +273,7 @@ $\left( 0 - 1 - 5 \right) / 3 = - 2$.
 :::
 :::
 
-::: exercise Real axis {level=1 check="1"}
+::: exercise Real axis {level=1 check="2"}
 For the locus of $K / \left[ s \left( s + 1 \right)\left( s + 5 \right) \right]$, how many separate intervals of the real axis belong to the locus?
 ::: solution
 Two: $\left( - 1 , 0 \right)$, where one pole lies to the right, and $\left( - \infty , - 5 \right)$, where three do. The rule is an odd count of real poles and zeros to the right, because each contributes $180^{\circ}$ and only an odd number adds to $180^{\circ}$ modulo $360^{\circ}$. Complex pairs contribute nothing since their angles cancel in pairs.
@@ -292,7 +294,7 @@ $n - m = 3$, so angles of $\pm 60^{\circ}$ and $180^{\circ}$, and
 $$
 \sigma_a = \frac{\left( 0 + 0 - 2 - 6 \right) - \left( - 3 \right)}{3} = - 1.67 .
 $$
-*Sanity.* The double pole at the origin contributes two branches that leave at $\pm 90^{\circ}$ — the departure angle from a double pole at the origin is $\pm 90^{\circ}$ by the departure rule — so the two integrator branches immediately enter the left half-plane and the loop is stable for small gains, which is what a type-2 plant should do. The third and fourth poles at $- 2$ and $- 6$ supply the rest, and the zero at $- 3$ pulls one branch in from the left. Sketching takes ninety seconds and predicts the whole shape.
+*Sanity.* The double pole at the origin contributes two branches that leave at $\pm 90^{\circ}$ by the departure rule — and they bend into the **right** half-plane, because the zero at $- 3$ lies to the left of the pole at $- 2$ and cannot pull them back. Routh confirms it: the characteristic polynomial $s^{4} + 8 s^{3} + 12 s^{2} + K s + 3 K$ has an $s^{1}$ entry $K \left[ 1 - 192 / \left( 96 - K \right) \right]$, negative for every $K > 0$, so the loop is unstable at every gain. A type-2 loop needs its lead zero closer to the origin than the other plant poles; a sketch that takes ninety seconds shows this before any algebra.
 :::
 :::
 
@@ -300,7 +302,7 @@ $$
 Find the breakaway point of $K / \left[ s \left( s + 4 \right) \right]$.
 ::: solution
 $K = - s \left( s + 4 \right)$, so $\mathrm{d} K / \mathrm{d} s = - \left( 2 s + 4 \right) = 0$ gives $s = - 2$, which is the midpoint of the two poles.
-*Sanity.* For a two-pole plant with no zeros the breakaway is always the midpoint and the locus is the vertical line through it, which is the reason a plain proportional controller on a second-order plant can change the overshoot but never the settling time — the real part of the closed-loop pair is pinned at the average of the open-loop poles. Every lead, rate-feedback or notch design exists to break that pin, and the picture of it breaking is the single most useful thing the root locus teaches.
+*Sanity.* For a two-pole plant with no zeros the breakaway is always the midpoint and the locus is the vertical line through it, which is the reason a plain proportional controller on a second-order plant can change the overshoot but never the settling time — the real part of the closed-loop pair is pinned at the average of the open-loop poles. Every lead or rate-feedback design exists to break that pin, and the picture of it breaking is the single most useful thing the root locus teaches.
 :::
 :::
 
@@ -317,11 +319,11 @@ and the auxiliary equation $6 s^{2} + 66 = 0$ gives $\omega = 3.32\ \mathrm{rad 
 :::
 
 ::: exercise Design {level=3}
-For the plant of Example 3, place the closed-loop poles at $s = - 3 \pm 3\ \mathrm{j}$ instead and find the PD settings.
+For the plant of [[#ex-lead]], place the closed-loop poles at $s = - 3 \pm 3\ \mathrm{j}$ instead and find the PD settings.
 ::: solution
-The plant contributes $\angle s + \angle \left( s + 1 \right) = 135.0^{\circ} + 116.6^{\circ}$ at $- 2 + 2\ \mathrm{j}$ and
+At the new design point the plant contributes
 $$
-\angle s = 135.0^{\circ}, \qquad \angle \left( s + 1 \right) = 135.0^{\circ} \ \text{at} \ s = - 3 + 3\ \mathrm{j},
+\angle s = 135.0^{\circ}, \qquad \angle \left( s + 1 \right) = 123.7^{\circ} \ \text{at} \ s = - 3 + 3\ \mathrm{j},
 $$
 so the total is $258.7^{\circ}$ and the zero must supply $78.7^{\circ}$, placing it at
 $$
@@ -330,26 +332,26 @@ z = 3 + \frac{3}{\tan 78.7^{\circ}} = 3.60,
 K = \frac{\left| s \right| \left| s + 1 \right|}{\left| s + 3.60 \right|} = \frac{4.243 \times 3.606}{3.060} = 5.00 .
 $$
 The characteristic equation is $s^{2} + 6 s + 18 = 0$, with roots $- 3 \pm 3\ \mathrm{j}$ exactly.
-*Sanity.* The zero must supply $78.7^{\circ}$, and a zero on the real axis can supply $90^{\circ}$ only when it lies directly below the design point; needing less than a right angle, it sits a little to the left. The general rule follows — the further the design point lies from the plant's poles, the less angle the zero must supply and the further left it may be placed — and a designer who finds the required zero to the **right** of the design point has asked for a pole location the plant cannot reach with a single zero.
+*Sanity.* The zero must supply $78.7^{\circ}$, and a zero on the real axis can supply $90^{\circ}$ only when it lies directly below the design point; needing less than a right angle, it sits a little to the left. The general rule follows: if the deficiency exceeds $90^{\circ}$ the zero must sit to the **right** of the design point, and if it would have to lie in the right half-plane — or the deficiency approaches $180^{\circ}$ — a single zero cannot do the job and a lead pair or a second zero is needed.
 :::
 :::
 
 ::: exercise Lag {level=3}
-For the design of Example 3, the specification now demands $K_v = 40\ \mathrm{s^{- 1}}$. Choose the lag pair and estimate the phase it costs at the design point.
+For the design of [[#ex-lead]], the specification now demands $K_v = 40\ \mathrm{s^{- 1}}$. Choose the lag pair and estimate the phase it costs at the design point.
 ::: solution
-The required ratio is $40 / 8 = 5$. Placing the pair a decade and a half below the dominant real part of $- 2$, take
+The required ratio is $40 / 8 = 5$. Placing the zero more than a decade below the dominant real part of $- 2$, take
 $$
 \frac{s + 0.12}{s + 0.024},
 \qquad
 \angle \left( s + 0.12 \right) - \angle \left( s + 0.024 \right)
-= 133.2^{\circ} - 134.7^{\circ} = - 1.5^{\circ}.
+= 133.2^{\circ} - 134.7^{\circ} = - 1.4^{\circ}.
 $$
-*Sanity.* A degree and a half of phase at the design point is worth about three per cent of damping ratio, which is negligible; the real cost is the closed-loop pole near $- 0.11$, whose exponential tail is still at two per cent of its initial value after $36\ \mathrm{s}$ — eighteen times the settling time of the dominant pair. A specification written as "settles in two seconds" is met; one written as "within one per cent" is not, and the difference is the lag.
+*Sanity.* A degree and a half of phase at the design point barely moves the dominant pair; the real cost is the closed-loop pole near $- 0.12$, whose exponential tail is still at two per cent of its initial value after $\ln 50 / 0.12 = 32\ \mathrm{s}$ — sixteen times the settling time of the dominant pair. A specification written as "settles in two seconds" is met; one written as "within one per cent" is not, and the difference is the lag.
 :::
 :::
 
 ::: exercise Derivation {level=3}
-Derive the circle result of Example 4 for a general zero at $- z$ and poles at $0$ and $- 1$, and state for which values of $z$ the locus has complex branches at all.
+Derive the circle result of [[#ex-circle]] for a general zero at $- z$ and poles at $0$ and $- 1$, and state for which values of $z$ the locus has complex branches at all.
 ::: solution
 The angle condition
 $$
@@ -363,7 +365,7 @@ which on clearing denominators reduces to
 $$
 \left( \sigma + z \right)^{2} + \omega^{2} = z \left( z - 1 \right) .
 $$
-The radius is real only for $z > 1$ or $z < 0$: with the zero **between** the two poles, or between the poles and infinity on the right, the branches stay on the real axis and there is no overshoot at any gain.
-*Sanity.* The condition $z > 1$ is the derivative term's design rule in one inequality — a zero placed to the **left** of the slower pole bends the locus and buys damping, while a zero placed between the poles merely changes the real-axis distribution and can never produce oscillation. The degenerate case $z = 1$ cancels the plant's pole exactly and gives a single first-order closed loop for every gain, which is the "pole-zero cancellation" design that works perfectly in arithmetic and badly in practice, because the cancelled pole is still there in every state variable the output does not show.
+The radius is real only for $z > 1$ or $z < 0$ (a right-half-plane zero, whose circle reaches into the right half-plane): with the zero **between** the two poles, $0 < z < 1$, the branches stay on the real axis and there is no overshoot from complex poles at any gain.
+*Sanity.* The condition $z > 1$ is the derivative term's design rule in one inequality — a zero placed to the **left** of the pole at $- 1$ bends the locus and buys damping, while a zero placed between the poles merely changes the real-axis distribution and can never produce oscillation. The degenerate case $z = 1$ cancels the plant's pole exactly and gives a single first-order closed loop for every gain, which is the "pole-zero cancellation" design that works perfectly in arithmetic and badly in practice, because the cancelled pole is still there in every state variable the output does not show.
 :::
 :::

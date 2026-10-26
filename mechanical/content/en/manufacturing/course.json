@@ -109,23 +109,23 @@
     {
       "year": 1822,
       "title": "Fourier's heat equation makes solidification calculable",
-      "detail": "Joseph Fourier's Théorie analytique de la chaleur provides the mathematical framework for heat conduction that underpins every subsequent analysis of solidification, cooling curves, Chvorinov's rule, and the thermal cycle in welding. Without Fourier, a riser is a guess; with him, it is a calculation.",
+      "detail": "Joseph Fourier's Théorie analytique de la chaleur provides the mathematical framework for heat conduction that underpins later analyses of solidification, cooling curves, Chvorinov's rule and the thermal cycle in welding.",
       "people": [
         "Jean-Baptiste Joseph Fourier"
       ]
     },
     {
-      "year": 1886,
-      "title": "The Ellis forging press and the first quantitative forging force",
-      "detail": "The Ellis forging plant in Buffalo, New York, installs a 3 000-ton steam hammer and begins the first systematic measurement of forging forces. The data show that the force is not proportional to the projected area times the flow stress — friction at the die face raises it by a factor of two to five, and the friction hill is the reason a closed-die forging needs a flash.",
+      "year": 1842,
+      "title": "Nasmyth's steam hammer makes heavy forging controllable",
+      "detail": "James Nasmyth patents the steam hammer (François Bourdon had built one at Le Creusot in 1840). A steam-lifted ram whose blow can be varied from a tap to a heavy strike makes it possible to forge large shafts and forgings with control over each blow, and steam and later hydraulic presses carry closed-die forging into mass production.",
       "people": [
-        "Junius Richards"
+        "James Nasmyth"
       ]
     },
     {
       "year": 1907,
-      "title": "Taylor's tool-life equation turns cutting into a science",
-      "detail": "Frederick Winslow Taylor publishes On the Art of Cutting Metals, the product of 26 years of experiments at Bethlehem Steel. The equation VT^n = C relates cutting speed to tool life and provides the first quantitative basis for selecting machining parameters. The economic optimum (maximum production rate, minimum cost) follows from Taylor's law and a few minutes of algebra.",
+      "title": "Taylor's cutting experiments turn machining into a science",
+      "detail": "Frederick Winslow Taylor publishes On the Art of Cutting Metals, the product of about 26 years of experiments begun at Midvale Steel and continued at Bethlehem Steel, where he and Maunsel White also developed high-speed steel. His empirical relations between cutting speed and tool life, now usually written VT^n = C, provide the first quantitative basis for selecting machining parameters.",
       "people": [
         "Frederick Winslow Taylor"
       ]
@@ -133,35 +133,33 @@
     {
       "year": 1924,
       "title": "Shewhart's control chart makes quality a statistical problem",
-      "detail": "Walter A. Shewhart at Bell Telephone Laboratories invents the X-bar control chart, distinguishing common-cause variation (inherent to the process) from special-cause variation (assignable to a specific event). The ±3σ control limit gives a 0.27% false-alarm rate and a method for deciding when to adjust a process and when to leave it alone. The control chart is the foundation of statistical process control, Six Sigma, and the entire quality profession.",
+      "detail": "Walter A. Shewhart, working on inspection at Western Electric, sketches the first control chart in a memo of May 1924. Control charts separate common-cause variation, inherent to the process, from special-cause (assignable) variation, and ±3σ limits give a false-alarm rate of about 0.27 % for a normally distributed, stable process — a rule for deciding when to adjust a process and when to leave it alone. The control chart is the foundation of statistical process control.",
       "people": [
         "Walter A. Shewhart"
       ]
     },
     {
-      "year": 1948,
-      "title": "The transistor and the birth of polymer electronics drive injection moulding",
-      "detail": "The invention of the transistor at Bell Labs and the subsequent explosion of consumer electronics create an unprecedented demand for precision-moulded polymer enclosures, connectors, and bobbins. The injection moulding machine, which had been a curiosity in the 1930s, becomes the most widely used manufacturing machine in the world. The reciprocating-screw plasticising unit (introduced by Paul Murer in 1946) makes the process controllable and repeatable.",
+      "year": 1946,
+      "title": "Hendry's screw injection machine",
+      "detail": "James Watson Hendry builds the first screw injection moulding machine, in which a rotating screw mixes and plasticises the polymer before injection, replacing the plunger machines descended from John Wesley Hyatt's 1872 patent. Screw plasticising gives better control of melt temperature and shot size, and with the reciprocating screw it becomes the basis of modern injection moulding.",
       "people": [
-        "Paul Murer"
-      ]
-    },
-    {
-      "year": 1970,
-      "title": "Friction stir welding is invented — and ignored for 20 years",
-      "detail": "Wayne Thomas, David Williams, and Peter Ashley at The Welding Institute (TWI) in Cambridge, England, file a patent for a solid-state joining process in which a non-consumable rotating tool generates frictional heat and forges the metal together below the melting point. The process eliminates the solidification defects, the hot cracking, and the residual stress of fusion welding, but it is not adopted industrially until 1991, when Mazda uses it to join aluminium car doors. Today FSW joins the SpaceX Falcon 9 fuel tank, the Airbus A350 fuselage panels, and the Toyota Supra roof.",
-      "people": [
-        "Wayne Thomas",
-        "David Williams",
-        "Peter Ashley"
+        "James Watson Hendry"
       ]
     },
     {
       "year": 1984,
-      "title": "Chuck Hull invents stereolithography and founds 3D Systems",
-      "detail": "Charles Hull files US Patent 4 575 330 for 'Apparatus for Production of Three-Dimensional Objects by Stereolithography' — a UV laser scanned by galvanometers across a vat of photopolymer resin, curing a layer at a time. The patent is granted in 1986 and 3D Systems is founded. The process is dismissed as a prototyping curiosity for 30 years, until the GE LEAP fuel nozzle (2016) proves that additive manufacturing can make a certified, production, flight-critical part that is lighter and more durable than the 20-part welded assembly it replaces.",
+      "title": "Chuck Hull files the stereolithography patent",
+      "detail": "Charles Hull files the patent for 'Apparatus for Production of Three-Dimensional Objects by Stereolithography' — an ultraviolet laser scanned across a vat of photopolymer resin, curing one layer at a time. US Patent 4,575,330 is granted in 1986, the year he founds 3D Systems. Additive manufacturing is used mostly for prototypes for decades; production parts such as GE's additively manufactured LEAP fuel-nozzle tip, which entered service in 2016, show that it can also make certified flight hardware.",
       "people": [
         "Charles Hull"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "Friction stir welding is invented at TWI",
+      "detail": "Wayne Thomas and colleagues at The Welding Institute (TWI) in Cambridge, England, invent friction stir welding: a non-consumable rotating tool heats the metal by friction and stirs the two parts together in the solid state, below the melting point, avoiding the solidification defects of fusion welding. The first commercial application, in 1996, was hollow aluminium panels for fishing-boat freezers; the process is now used for aluminium rocket tanks, ship and rail-car panels and vehicle structures.",
+      "people": [
+        "Wayne Thomas"
       ]
     }
   ],

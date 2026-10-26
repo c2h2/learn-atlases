@@ -112,7 +112,7 @@
     {
       "year": 1863,
       "title": "Sorby puts steel under a microscope",
-      "detail": "Henry Clifton Sorby, a Sheffield steelmaker's son who had made a fortune in cutlery and was looking for a hobby, ground a slice of steel thin enough to see through - or, failing that, polished it and looked at it in reflected light - and found that the fracture surface of a hard piece of steel was covered in tiny plates of a second phase. His paper of 1864, 'On the microscopical appearance of fractured iron and steel', founded metallography, and within twenty years every iron and steel laboratory in the world had a microscope and a set of standard photomicrographs. **Sorby's method is unchanged: cut, mount, grind, polish, etch, look. His discovery is unchanged: what a metal does is decided by what you can see in it, and what you can see in it is a record of everything that has been done to it. Every heat-treatment specification, every failure investigation and every weld inspection in the world is Sorby's paper with better optics.**",
+      "detail": "Henry Clifton Sorby, a Sheffield man of independent means who had already applied the microscope to thin sections of rocks, turned it on iron and steel in 1863: he polished a section, etched it with dilute acid and looked at it in reflected light, and in 1864 reported to the British Association that the structure of a steel could be seen and recorded. In the 1880s he described the 'pearly constituent' of steel, the lamellar mixture later named pearlite. **Sorby's method is still the method: cut, mount, grind, polish, etch, look. And his discovery is still the point: what a metal does is decided by what can be seen in it, and what can be seen in it is a record of everything that has been done to it. Every heat-treatment specification, failure investigation and weld inspection is Sorby's method with better optics.**",
       "people": [
         "Henry Clifton Sorby"
       ]
@@ -120,26 +120,25 @@
     {
       "year": 1897,
       "title": "Roberts-Austen, and the iron-carbon diagram",
-      "detail": "William Chandler Roberts-Austen, professor of metallurgy at the Royal School of Mines, adapted Le Chatelier's recording optical pyrometer and thermally analysed a series of iron-carbon alloys of known composition, cooling each one at a steady rate and recording the arrest temperatures at which a phase change released latent heat. Plotting the arrests against carbon content gave the iron-iron-carbide diagram, published in the decade either side of 1900 and completed in its modern form by the work of the American Steel Association's committees in the 1920s and 1930s. **It is the most used chart in engineering. Every steel - every car body, rail, crankshaft, bearing, bolt, ship's plate and pressure vessel - is specified by a composition on that diagram and a cooling path through it, and the fact that Roberts-Austen drew it from cooling curves recorded on a drum of smoked paper, with a pyrometer he built himself, is the reason the diagram's eutectoid composition sat at 0.85 per cent carbon for fifty years before someone weighed it properly.**",
+      "detail": "William Chandler Roberts-Austen, professor of metallurgy at the Royal School of Mines, built a recording pyrometer around Le Chatelier's platinum thermocouple and, for the Alloys Research Committee of the Institution of Mechanical Engineers, recorded the cooling curves of iron-carbon alloys of known composition, reading the arrest temperatures at which a phase change released latent heat. His diagrams of 1897 and 1899, building on Floris Osmond's discovery of the allotropic changes of iron, were put into a thermodynamically consistent form by Hendrik Willem Bakhuis Roozeboom in 1900 using the phase rule. **It is one of the most used charts in engineering. Every steel - every car body, rail, crankshaft, bearing, bolt, ship's plate and pressure vessel - is specified by a composition on that diagram and a cooling path through it.**",
       "people": [
         "William Chandler Roberts-Austen",
         "Floris Osmond",
-        "Jean Werth"
+        "Hendrik Willem Bakhuis Roozeboom"
       ]
     },
     {
       "year": 1906,
       "title": "Wilm, and the strength that appears while you wait",
-      "detail": "Alfred Wilm, a metallurgist at the Dürener Metallwerke outside Cologne, found that a copper-bearing aluminium alloy containing a little magnesium could be quenched from a red heat, cold-rolled, and then left on a shelf - and that it hardened over some days at room temperature, or in a few hours in a warm oven, reaching a strength three times that of the pure metal. The alloy was Duralumin, from Düren; it was in Zeppelin airframes by 1911 and in every stressed-aircraft structure until the 1950s. **Age hardening is the mechanism this course is built around: a supersaturated solid solution, held below the solvus, throws out a dispersion of coherent precipitates so fine and so closely spaced that a dislocation cannot cut them and must bow round them, and the resulting strength is inversely proportional to their spacing. Every high-strength aluminium, every maraging steel, every nickel superalloy turbine blade and every copper beryllium spring is Wilm's shelf.**",
+      "detail": "Alfred Wilm, working at a government research institute at Neubabelsberg near Berlin, found in 1906 that an aluminium alloy containing a few per cent of copper and a little magnesium, quenched from a high temperature, went on hardening for several days at room temperature. The Dürener Metallwerke at Düren took a licence and produced the alloy from 1909 as Duralumin; it was used in the frames of Zeppelin airships during the First World War and, through its successors, in metal aircraft ever since. **Age hardening is a mechanism this course returns to again and again: a supersaturated solid solution, held below the solvus, throws out a dispersion of fine precipitates that obstruct dislocations, and the resulting strength rises as the spacing of the obstacles falls. Every high-strength aluminium alloy, every maraging steel, every nickel superalloy turbine blade and every copper-beryllium spring relies on it.**",
       "people": [
-        "Alfred Wilm",
-        "Adolf Neufeld"
+        "Alfred Wilm"
       ]
     },
     {
-      "year": 1913,
-      "title": "Bragg, and the proof that metals are crystals",
-      "detail": "William Lawrence Bragg, aged twenty-two, read a paper to the Manchester Literary and Philosophical Society in November 1913 giving the condition for the reflection of X-rays from a crystal plane - $n\\lambda = 2 d \\sin\\theta$ - and his father William Henry Bragg built the spectrometer that used it. Within three years the method had determined the structures of sodium chloride, diamond, quartz and the sulphides, and had shown - the result that matters to this course - that a metal that has been cast, rolled, forged, machined and filed is nevertheless built of blocks of a few tens of micrometres across, each one a perfect lattice, each differently oriented from its neighbour. **The lattice is the reason the modulus is a constant of the material; the grain boundary is the reason the yield strength is not. That single fact, established by a father and son with an X-ray tube and a photographic plate in the four years before the First World War, organises everything in the middle of this book.**",
+      "year": 1912,
+      "title": "The Braggs, and the proof that metals are crystals",
+      "detail": "In 1912 Max von Laue showed that X-rays are diffracted by a crystal, and in November of the same year William Lawrence Bragg, aged twenty-two, gave the Cambridge Philosophical Society the condition for the reflection of X-rays from a set of crystal planes, $n\\lambda = 2 d \\sin\\theta$. His father William Henry Bragg built the X-ray spectrometer that used it, and in 1913 the two determined the structures of sodium chloride and diamond; within a few years the method had been applied to metals, which proved to be aggregates of small crystals, each a regular lattice, each differently oriented from its neighbours. **The lattice is why the modulus is a constant of the material; the grain boundary is part of why the yield strength is not. That distinction organises everything in the middle of this course.**",
       "people": [
         "William Lawrence Bragg",
         "William Henry Bragg",
@@ -147,20 +146,19 @@
       ]
     },
     {
-      "year": 1920,
+      "year": 1921,
       "title": "Griffith, and the reason glass is weak",
-      "detail": "Alan Arnold Griffith, a British aeronautical inspector working at the Royal Aircraft Factory in Farnborough with no post, no laboratory and no salary, published in 1920 and 1921 a paper on the rupture of solids which explained why the tensile strength of glass is a hundred times smaller than the theoretical cohesive strength calculated from its surface energy. The answer was that glass contains cracks, that the stress at the tip of a sharp crack is many times the applied stress, and - the part that took thirty years to be accepted - that a crack will extend when the elastic energy it releases exceeds the surface energy it creates, which gives a critical stress proportional to the square root of the inverse crack length. **Griffith's paper was ignored, then rediscovered by Orowan and Polanyi in 1920-21, then ignored again, then made the foundation of a design discipline by G. R. Irwin at the Naval Research Laboratory between 1950 and 1958 in response to the brittle fracturing of twenty thousand Liberty ships. The chain from a neglected paper in the Philosophical Magazine to a fracture-mechanics requirement in every airworthiness code is the best argument in engineering science for the proposition that a good idea is worth more than a well-connected one.**",
+      "detail": "Alan Arnold Griffith, working at the Royal Aircraft Factory in Farnborough, published in the Philosophical Transactions of the Royal Society in 1921 a paper on the phenomena of rupture and flow in solids, which explained why the tensile strength of glass is far below the theoretical strength of its bonds. Glass contains cracks, the stress at the tip of a sharp crack is many times the applied stress, and a crack extends when the elastic energy it releases exceeds the surface energy it creates - which gives a fracture stress proportional to the inverse square root of the crack length. **Griffith's theory was largely neglected for a quarter of a century. In the late 1940s Egon Orowan and George Irwin extended it to metals by adding the plastic work done at the crack tip, and in the 1950s Irwin, at the Naval Research Laboratory, recast it in terms of the stress-intensity factor - work prompted by the brittle fractures of welded ships in the Second World War. The chain from a paper on glass to a fracture-mechanics requirement in every airworthiness code is one of the clearest examples of a scientific idea becoming a design method.**",
       "people": [
         "Alan Arnold Griffith",
-        "Geoffrey Ingram Taylor",
         "Egon Orowan",
         "George Irwin"
       ]
     },
     {
       "year": 1934,
-      "title": "The dislocation, invented three times in one year",
-      "detail": "In the same volume of Nature in 1934 - and in a Zeitschrift fur Physik paper of the same year - Geoffrey Ingram Taylor, Egon Orowan and Michael Polanyi each proposed, independently and from a different direction, that plastic flow in a crystal is the motion of a line defect: an extra half-plane of atoms whose core can be walked through the lattice by the breaking of one bond at a time, so that the stress required is a thousand times smaller than the stress required to slide a whole plane at once. Taylor's estimate of the dislocation density in an annealed metal, made from the difference between the observed and theoretical strengths and from the stored energy of cold work, was within an order of magnitude of the value measured by transmission electron microscopy twenty years later. **The dislocation is the reason this course has to be about defects rather than about crystals. Every strengthening mechanism in engineering is a way of stopping one, every creep mechanism is a way of moving one past an obstacle it cannot cut, and every fatigue crack begins where dislocations have piled up against a grain boundary and made an extrusion. That three men of three different temperaments - a British theoretical physicist, a German-Austrian physicist in Bristol, and a Hungarian chemist in Berlin - arrived at it in the same twelve months is the best-known example in science of an idea whose time had come.**",
+      "title": "The dislocation, proposed three times in one year",
+      "detail": "In 1934 Geoffrey Ingram Taylor, in the Proceedings of the Royal Society, and Egon Orowan and Michael Polanyi, in separate papers in the Zeitschrift für Physik, each proposed independently that plastic flow in a crystal is the motion of a line defect - the edge of an extra half-plane of atoms, which can be moved through the lattice by breaking one row of bonds at a time, so that the stress required is far smaller than the stress needed to slide a whole plane at once. Dislocations were not seen directly until the 1950s, when transmission electron microscopy confirmed the idea. **The dislocation is why this course has to be about defects rather than about perfect crystals. Every strengthening mechanism in engineering is a way of obstructing one, every power-law creep mechanism is a way of moving one past an obstacle, and many fatigue cracks begin where slip has concentrated in persistent bands at the surface.**",
       "people": [
         "Geoffrey Ingram Taylor",
         "Egon Orowan",
@@ -170,18 +168,18 @@
     {
       "year": 1951,
       "title": "Hall and Petch, and the strength of a grain boundary",
-      "detail": "Edward O. Hall, a young physicist at the Massachusetts Institute of Technology working on the yield point of mild steel, and Norman J. Petch, a Canadian working on the fracture of polycrystalline alpha-manganese at the Royal Arsenal, found independently in 1951 and 1953 that the yield strength of a polycrystalline metal varies as the inverse square root of the grain diameter. The relation is one of the few quantitative laws in the subject, it holds over five orders of magnitude of grain size from coarse annealed iron to electrodeposited nanocrystalline nickel, and its physical basis - a dislocation pile-up against a boundary must build enough stress to activate a source in the next grain - and its physical basis - a dislocation pile-up against a boundary must build enough stress at its head to activate a source in the neighbouring grain - was supplied by Li and by Cottrell. **The engineering consequence is the only grain-refining treatment in the world that improves strength and toughness at the same time, which is why every steel specification carries a grain-size number and why normalising, controlled rolling and microalloying are in the business of making grains small rather than making them something else.**",
+      "detail": "E. O. Hall, studying the yield point of mild steel, in 1951, and N. J. Petch, studying the cleavage strength of iron, in 1953, showed that the yield strength of a polycrystalline metal rises linearly with the inverse square root of the grain diameter. The relation holds from coarse annealed grains down to grain sizes of a few tens of nanometres, below which it breaks down, and its physical basis - a pile-up of dislocations against a boundary must build enough stress at its head to operate a source in the neighbouring grain - was developed by Cottrell and by Li among others. **The engineering consequence is that grain refinement is the one strengthening mechanism that also raises toughness, which is why steel specifications carry a grain-size requirement and why normalising, controlled rolling and microalloying are in the business of making grains small.**",
       "people": [
-        "Edward O. Hall",
-        "Norman J. Petch",
+        "E. O. Hall",
+        "N. J. Petch",
         "J. C. M. Li",
-        "Adrian Cottrell"
+        "Alan Cottrell"
       ]
     },
     {
-      "year": 1988,
+      "year": 1989,
       "title": "Ashby, and the material property chart",
-      "detail": "Michael Ashby, who had spent twenty years building the deformation-mechanism maps of metals and the physics of materials at Cambridge, turned in the 1980s to a different question: given that there are perhaps two hundred thousand engineering materials and that a designer needs to eliminate all but three of them in an afternoon, what is the least information a material can be reduced to? The answer was the property chart - log modulus against log density, log strength against log toughness, and so on, on axes chosen so that a performance index becomes a family of parallel straight lines - together with the discipline of writing the requirement as a constraint and an objective before choosing anything. **The method is old - the idea of a stiffness-limited minimum-mass panel goes back to the airship designers of the 1920s and the specific-modulus criterion to the jet engine - but it had never been made systematic, teachable or checkable. Its real content is the observation that a material selection problem has a formula, that the formula can be derived in three lines from the same beam equation a first-year solves, and that the ranking it produces is robust to the errors in the numbers, which is why it survives contact with a real design office.**",
+      "detail": "Michael Ashby, who with Harold Frost had built the deformation-mechanism maps of metals and ceramics at Cambridge, turned in the 1980s to a different question: given tens of thousands of engineering materials, how does a designer narrow them to a short list? The answer, published in Acta Metallurgica in 1989 and in his book Materials Selection in Mechanical Design in 1992, was the property chart - log modulus against log density, log strength against log toughness, and so on, on axes chosen so that a performance index becomes a family of parallel straight lines - together with the discipline of writing the requirement as constraints and an objective before choosing anything. **Its real content is the observation that a material selection problem has a formula, that the formula can be derived in a few lines from the same beam equations a first-year student solves, and that the ranking it produces is robust to the scatter in the property data.**",
       "people": [
         "Michael Ashby",
         "David Jones",
@@ -227,16 +225,16 @@
       "year": 1998
     },
     {
-      "author": "M. F. Ashby and H. D. Jones",
-      "title": "Engineering Materials 1: An Introduction to Properties, Applications and Deformation",
+      "author": "D. R. H. Jones and M. F. Ashby",
+      "title": "Engineering Materials 1: An Introduction to Properties, Applications and Design",
       "publisher": "Butterworth-Heinemann, 5th edition",
-      "year": 2016
+      "year": 2019
     },
     {
       "author": "R. Winston Revie",
       "title": "Uhlig's Corrosion Handbook",
-      "publisher": "Wiley, 4th edition",
-      "year": 2018
+      "publisher": "Wiley, 3rd edition",
+      "year": 2011
     }
   ],
   "next": [

@@ -1,6 +1,6 @@
-A crystal of iron a centimetre across contains a hundred billion kilometres of dislocation — long enough to reach from the Earth to the Sun and back, in a specimen you could hold between two fingers. That absurd number is the reason metals are useful, because a dislocation is a line defect that moves at a stress a thousand times below the one needed to slide a perfect crystal, and every one of the strengthening mechanisms in this lesson is a way of making it harder to move.
+A cubic centimetre of heavily cold-worked iron, with a dislocation density of $10^{16}\ \mathrm{m^{- 2}}$, contains $10^{16} \times 10^{- 6} = 10^{10}\ \mathrm{m}$ — ten million kilometres, some twenty-six times the distance to the Moon — of dislocation line, in a specimen you could hold between two fingers; even annealed it holds about a thousand kilometres. That absurd number is the reason metals are useful, because a dislocation is a line defect that moves at a stress a thousand times below the one needed to slide a perfect crystal, and every one of the strengthening mechanisms in this lesson is a way of making it harder to move.
 
-The intellectual architecture is unusually compact. One equation, the balance between the applied force on a dislocation and the line tension of its own curvature, generates the Frank-Read source, the Orowan bowing stress, the grain-boundary barrier and the forest hardening law. One parameter, the dislocation density, explains the entire range of yield strengths of a single metal from $35$ to $700\ \mathrm{MPa}$. And one universal number, the Stage II hardening rate of $G / 600$, holds for every crystal of every structure at every temperature, which is the most striking generalisation in the mechanics of materials.
+The intellectual architecture is unusually compact. One equation, the balance between the applied force on a dislocation and the line tension of its own curvature, generates the Frank-Read source, the Orowan bowing stress, the grain-boundary barrier and the forest hardening law. One parameter, the dislocation density, explains the entire range of yield strengths of a single metal from $35$ to $700\ \mathrm{MPa}$. And one nearly universal number, the Stage II hardening rate of about $G / 300$ in face-centred cubic crystals, is almost independent of the metal and of the temperature.
 
 ::: warning Strength is not a property; it is a population of obstacles
 Two facts make the whole of this lesson dangerous to a designer. First, **every strengthening mechanism costs something else**: solid solution costs conductivity and ductility, precipitation costs weldability and creep resistance above the aging temperature, grain refinement costs creep and fatigue-crack growth, work hardening costs formability and dimensional stability. There is no free strength, and the choice of mechanism is a choice of what to sacrifice. Second, **strength is thermally labile in a way that stiffness is not**: a cold-worked part recrystallises at $0.4\ T_m$, a peak-aged part over-ages at its service temperature, a fine-grained part grows grains by diffusion at $0.5\ T_m$, and a designer who specifies a strength without specifying the thermal history is specifying a number that will not survive the first elevated-temperature service exposure. The rule that follows is to ask, for every strength requirement, **what the microstructure is, how it was produced, and what it will have become after the design life at the design temperature** — and if the answer is "different", to design against the final microstructure and not the initial one.
@@ -16,7 +16,7 @@ $$
 \vec t \parallel \vec b \quad \text{screw}, \qquad
 \text{anything between} \quad \text{mixed} .
 $$
-An edge dislocation has an extra half-plane, a long-range **dilational** stress field, and climbs by diffusion; a screw has a pure **shear** field, no dilational field, cannot climb, and cross-slips onto any plane containing its line. The slip direction is always the close-packed direction and the slip plane the close-packed plane, because those have the widest spacing and therefore the lowest Peierls stress: $\left\langle 110\right\rangle \left\{ 110\right\}$ for BCC iron with $48$ systems, $\left\langle 110\right\rangle \left\{ 111\right\}$ for FCC with $12$, $\left\langle 11\bar 2 0\right\rangle \left\{ 0001\right\}$ basal for HCP magnesium with $3$, which is why magnesium is hard to form and titanium, with its additional pyramidal $\left\langle c + a\right\rangle$ systems at $600\ {}^{\circ}\mathrm{C}$, is only slightly less so.
+An edge dislocation has an extra half-plane, a long-range **dilational** stress field, and climbs by diffusion; a screw has a pure **shear** field, no dilational field, cannot climb, and cross-slips onto any plane containing its line. The slip direction is always the close-packed direction and the slip plane the close-packed plane, because those have the widest spacing and therefore the lowest Peierls stress: $\left\langle 111\right\rangle \left\{ 110\right\}$ for BCC iron (with $\left\{ 112\right\}$ and $\left\{ 123\right\}$ planes as well, up to $48$ systems), $\left\langle 110\right\rangle \left\{ 111\right\}$ for FCC with $12$, $\left\langle 11\bar 2 0\right\rangle \left\{ 0001\right\}$ basal for HCP magnesium with $3$, which is why magnesium is hard to form at room temperature, while titanium, which slips readily on prismatic planes and also has pyramidal $\left\langle c + a\right\rangle$ systems, is considerably more formable.
 :::
 
 ::: definition Force, line tension and the Peach-Koehler equation {#def-pk}
@@ -44,15 +44,15 @@ Sliding one half of a perfect crystal over the other requires every atom to be l
 $$
 \tau_{\mathrm{th}} = \frac{G b}{2 \pi a} \approx \frac{G}{2 \pi} ,
 $$
-where $a$ is the interplanar spacing — $13\ \mathrm{GPa}$ for iron. The measured critical resolved shear stress of high-purity iron at low temperature is $20$ to $50\ \mathrm{MPa}$, a factor of **three hundred to six hundred** lower, and of annealed copper $0.6\ \mathrm{MPa}$, a factor of **twelve thousand** lower.
+where $a$ is the interplanar spacing — $82 / 2 \pi = 13\ \mathrm{GPa}$ for iron. The measured critical resolved shear stress of high-purity iron at room temperature is $20$ to $50\ \mathrm{MPa}$, a factor of **three hundred to six hundred** lower, and of annealed copper $0.6\ \mathrm{MPa}$, a factor of **twelve thousand** lower.
 **The mechanism.** A dislocation moves by breaking bonds only along its line, one atomic spacing at a time, and the stress needed is set by the **Peierls-Nabarro** lattice-friction force,
 $$
-\tau_{P} = \frac{2 G}{1 - \nu} \exp \left( - \frac{2 \pi}{1 - \nu} \frac{w}{b} \right),
+\tau_{P} = \frac{2 G}{1 - \nu} \exp \left( - \frac{2 \pi w}{b} \right),
 \qquad
-w = \frac{b}{2 \left( 1 - \nu \right)} \sqrt{1 - \nu} ,
+w = \frac{d}{1 - \nu} ,
 $$
-where $w$ is the **width of the dislocation core** — the distance over which the displacement across the slip plane changes from zero to $b$. The exponential is everything: a core of two Burgers vectors gives $\tau_{P} / G \sim 10^{- 8}$ and a core of half a Burgers vector gives $\tau_{P} / G \sim 10^{- 2}$, a factor of a million, which is the difference between a metal that bends and a ceramic that shatters.
-**The measured range.** $\tau_{P} / G$ is $10^{- 8}$ for the close-packed FCC metals, $10^{- 6}$ for the alkali halides, $10^{- 4}$ for germanium and silicon, and $10^{- 2}$ for graphite across its basal planes and for sapphire. The formula over-predicts the metals by an order of magnitude, because the sinusoidal misfit potential it assumes is too crude, and under-predicts the covalent crystals, because it ignores the directional bonds; both errors are less than the factor of a million the formula explains. $\checkmark$
+where $d$ is the spacing of the slip planes and $w$ the **width of the dislocation core** — the distance over which the displacement across the slip plane changes from zero to $b$. The exponential is everything: with $\nu = 0.3$, a core three Burgers vectors wide gives $\tau_{P} / G = 2.9 \times \mathrm{e}^{- 6 \pi} = 2 \times 10^{- 8}$, a core one Burgers vector wide gives $2.9 \times \mathrm{e}^{- 2 \pi} = 5 \times 10^{- 3}$ — a factor of over $10^{5}$, which is the difference between a metal that bends and a ceramic that shatters.
+**The measured range.** Lattice friction is negligible in the close-packed FCC metals, whose wide, planar cores glide at very low stresses; it is significant in BCC metals at low temperature, where the compact screw-dislocation core makes the yield stress rise steeply on cooling; and in covalent crystals such as silicon and germanium, with narrow cores and directional bonds, it is so high that they are brittle at room temperature and deform plastically only when hot. The Peierls–Nabarro formula, which assumes a sinusoidal misfit potential, is quantitatively crude, but it explains this enormous range by one exponential. $\checkmark$
 :::
 
 ::: definition Dislocation density and Taylor hardening {#def-taylor}
@@ -60,7 +60,7 @@ The **dislocation density** $\rho$ is the total line length per unit volume, mea
 $$
 \begin{array}{l c l}
 \text{Perfect whisker, annealed silicon} & 10^{4} \text{ to } 10^{8}\ \mathrm{m^{- 2}} & \text{whisker strength} \approx G / 30 \\
-\text{Annealed metal} & 10^{12}\ \mathrm{m^{- 2}} & \text{soft, formable} \\
+\text{Annealed metal} & 10^{10} \text{ to } 10^{12}\ \mathrm{m^{- 2}} & \text{soft, formable} \\
 \text{Lightly worked} & 10^{14}\ \mathrm{m^{- 2}} & \\
 \text{Severely cold-worked} & 10^{16} \text{ to } 10^{17}\ \mathrm{m^{- 2}} & \text{the practical ceiling}
 \end{array}
@@ -69,7 +69,7 @@ Dislocations repel each other elastically at $G b^{2} / (2 \pi r)$, so a forest 
 $$
 \boxed{ \sigma_{y} = \sigma_{0} + \alpha G b \sqrt{\rho} }
 $$
-with $\alpha \approx 0.3$ for a random forest and $0.5$ for aligned arrays. For iron, $\alpha G b = 6.1\ \mathrm{MPa}$ per unit of $\sqrt{\rho}$ in units of $\mathrm{m}$, so $\rho = 10^{12}$ adds $6\ \mathrm{MPa}$, $10^{14}$ adds $61\ \mathrm{MPa}$ and $10^{16}$ adds $610\ \mathrm{MPa}$ — and the whole range from annealed to drawn iron wire is accounted for by one parameter.
+with $\alpha$ an empirical constant; fitted to the tensile flow stress of polycrystals (it then absorbs the Taylor factor) it typically lies between about $0.3$ and $1$, and this lesson uses the conservative $\alpha = 0.3$. For iron, with $G = 82\ \mathrm{GPa}$ and $b = 0.248\ \mathrm{nm}$, $\alpha G b = 0.3 \times 82 \times 10^{9} \times 0.248 \times 10^{- 9} = 6.1\ \mathrm{N / m}$, so $\rho = 10^{12}$ adds $6\ \mathrm{MPa}$, $10^{14}$ adds $61\ \mathrm{MPa}$ and $10^{16}$ adds $610\ \mathrm{MPa}$ — and the whole range from annealed to drawn iron wire is accounted for by one parameter.
 :::
 
 ::: widget plot
@@ -77,22 +77,22 @@ f: 30 + 6.1*x/1e6; 30
 x: 0, 1e8
 y: 20, 700
 labels: iron; annealed base
-caption: Yield strength of iron against the square root of the dislocation density, the Taylor relation $\sigma = 30 + 6.1 \sqrt{\rho}$. The horizontal line is the annealed base. Four orders of magnitude of density — from $10^{12}$ to $10^{16}\ \mathrm{m^{-2}}$ — buy only two of strength, from $36$ to $640\ \mathrm{MPa}$, which is why the dislocation is a weak strengthener per unit defect and why the industry adds solutes, precipitates and grain boundaries on top of it. The measured points lie on the line to within ten per cent for iron, molybdenum, silicon iron and nickel.
+caption: Yield strength of iron against the square root of the dislocation density, the Taylor relation $\sigma = 30 + 6.1 \sqrt{\rho}$. The horizontal line is the annealed base. Four orders of magnitude of density — from $10^{12}$ to $10^{16}\ \mathrm{m^{-2}}$ — raise the strength only from $36$ to $640\ \mathrm{MPa}$, because the strength goes as the square root of the density; this is why the industry adds solutes, precipitates and grain boundaries on top of work hardening.
 :::
 
 ## The four mechanisms
 
 ::: definition Solid-solution strengthening {#def-solution}
-A solute atom differs from the host in size and in modulus, so it sits in a stress field at an interaction energy of $\pm A c$ and is drawn to or repelled from a dislocation's field. The **size misfit** $\delta = \left( 1 / r \right) \mathrm{d} r / \mathrm{d} c$ and the **modulus misfit** $\eta = \left( 1 / G \right) \mathrm{d} G / \mathrm{d} c$ give a Labusch-type strengthening
+A solute atom differs from the host in size and in modulus, so it interacts with a dislocation's stress field and is drawn to or repelled from it. The **size misfit** $\delta = \left( 1 / a \right) \mathrm{d} a / \mathrm{d} c$ and the **modulus misfit** $\eta = \left( 1 / G \right) \mathrm{d} G / \mathrm{d} c$ combine into a single misfit parameter $\varepsilon_L$, and Labusch's statistical theory of a dislocation moving through a random array of weak obstacles gives
 $$
-\Delta \tau \approx 0.01\, G\, c^{2 / 3} \left( \delta^{2} + \eta^{2} \right)^{1 / 2} ,
+\Delta \tau \propto G\, \varepsilon_L^{4 / 3} c^{2 / 3} ,
 $$
-with the $c^{2 / 3}$ exponent from the statistics of a random obstacle array. Substitutional solid solution in copper-nickel, aluminium-magnesium and titanium-aluminium-vanadium follows it; **interstitial** solution in iron is far stronger per atom because the size misfit of carbon in $\alpha$-iron is $\delta \approx 0.35$ rather than $0.02$, and $0.1\ \%$ carbon raises iron's yield from $130$ to $250\ \mathrm{MPa}$ — a gigapascal and a half per weight per cent, against a few megapascals per weight per cent for a substitutional solute.
+with the $c^{2 / 3}$ exponent from the statistics of the random array (Fleischer's earlier theory gave $c^{1 / 2}$). Substitutional solid solution in copper-nickel, aluminium-magnesium and titanium-aluminium-vanadium follows it; **interstitial** solution in iron is far stronger per atom because carbon and nitrogen distort their octahedral sites tetragonally and interact with both edge and screw dislocations: in ferrite they add of order $1\ \mathrm{GPa}$ or more per weight per cent, against a few tens of megapascals per weight per cent for substitutional manganese or silicon. But the solubility of carbon in ferrite at room temperature is only a few thousandths of a per cent, so the direct solution-strengthening effect in a real steel is tens of megapascals at most.
 **The cost.** Every solid solution scatters electrons, so a copper alloy that is strong by solution is a poor conductor; and every solute diffuses, so a solid solution softens and a precipitation-hardened alloy over-ages.
 :::
 
 ::: definition Precipitation and Orowan bowing {#def-precip}
-A second phase blocks a dislocation absolutely, and there are two ways round it. If the particle is **shearable** — coherent, small, cuttable — the dislocation cuts it and pays the particle's internal energy, giving a strength that **rises** with the particle radius as $r^{1 / 2}$ for ordered precipitates and as $r$ for chemically hard ones. If it is **unshearable**, the dislocation bows between particles and leaves an Orowan loop, giving a strength that **falls** with the inter-particle spacing as $1 / \lambda$, and since the particles at fixed volume fraction $f$ are spaced as $\lambda \propto r / f^{1 / 2}$,
+A second phase blocks a dislocation absolutely, and there are two ways round it. If the particle is **shearable** — coherent, small, cuttable — the dislocation cuts it and pays the particle's internal energy, giving a strength that **rises** with the particle radius, roughly as $\left( f r \right)^{1 / 2}$ for coherency, modulus and order strengthening. If it is **unshearable**, the dislocation bows between particles and leaves an Orowan loop, giving a strength that **falls** with the inter-particle spacing as $1 / \lambda$, and since spherical particles of radius $r$ at volume fraction $f$ are spaced in a slip plane at $\lambda \approx r \sqrt{2 \pi / \left( 3 f \right)}$,
 $$
 \Delta \sigma_{\mathrm{Orowan}} \approx \frac{0.8\, M\, G\, b}{2 \pi \left( 1 - \nu \right)^{1 / 2}} \frac{1}{\lambda} \propto \frac{f^{1 / 2}}{r} .
 $$
@@ -103,23 +103,23 @@ The two curves cross at a **critical radius** of $1$ to $5\ \mathrm{nm}$, and th
 $$
 \sigma_{y} = \sigma_{0} + \frac{k_y}{\sqrt{d}}
 $$
-with $k_y$ of $0.06$ to $0.10\ \mathrm{MPa\, m^{1 / 2}}$ for a soft metal and $0.5$ to $2\ \mathrm{MPa\, m^{1 / 2}}$ for a ceramic or an intermetallic. The mechanism is a **pile-up**: $n$ dislocations of one slip system press against a boundary under a stress $\tau$ and concentrate at the head a stress $n \tau$, so a slip source in the next grain fires when
+with $k_y$ of roughly $0.04$ to $0.2\ \mathrm{MPa\, m^{1 / 2}}$ for FCC metals such as aluminium, copper and nickel and $0.6$ to $0.8\ \mathrm{MPa\, m^{1 / 2}}$ for ferritic steels. The mechanism is a **pile-up**: $n$ dislocations of one slip system press against a boundary under a stress $\tau$ and concentrate at the head a stress $n \tau$, so a slip source in the next grain fires when
 $$
 n \tau \approx \tau_{0} , \qquad n = \frac{\tau d}{\alpha G b}
 \quad\Longrightarrow\quad
 \tau = \tau_{0}^{1 / 2} \left( \frac{\alpha G b}{d} \right)^{1 / 2} ,
 $$
-which is the Hall-Petch form with $k_y \propto \left( \tau_{0} \alpha G b \right)^{1 / 2}$. Modern simulations put the mechanism less in pile-ups, which are short in real materials, than in the **back-stress** a boundary builds up as geometrically necessary dislocations accumulate beneath it, but the $d^{- 1 / 2}$ law survives and holds down to a grain size of about $15\ \mathrm{nm}$.
-**Below $15\ \mathrm{nm}$ the relation reverses**, because the deformation changes mechanism from dislocation glide inside grains to sliding and rotation **of** the grains, and the material softens. This is the **inverse Hall-Petch effect**, and it is the reason electrodeposited nanocrystalline nickel with a $10\ \mathrm{nm}$ grain size is weaker than the same nickel at $30\ \mathrm{nm}$ and has no ductility at all.
+which is the Hall-Petch form with $k_y \propto \left( \tau_{0} \alpha G b \right)^{1 / 2}$. Modern simulations put the mechanism less in pile-ups, which are short in real materials, than in the **back-stress** a boundary builds up as geometrically necessary dislocations accumulate beneath it, but the $d^{- 1 / 2}$ law survives empirically down to grain sizes of a few tens of nanometres.
+**Below roughly $10$ to $20\ \mathrm{nm}$ the relation can reverse**, as deformation shifts from dislocation glide inside grains to processes at the boundaries — sliding and rotation **of** the grains — and the material softens. This **inverse Hall-Petch effect** has been reported in several nanocrystalline metals, although where exactly it begins, and how much of it is due to processing artefacts such as porosity, is still debated.
 :::
 
 ::: definition Work hardening and the universal Stage II rate {#def-workhard}
-A tensile crystal deforms in three stages. **Stage I**, easy glide, at a hardening rate of $G / 10^{4}$ as dislocations sweep to the surface. **Stage II**, linear hardening, at
+A face-centred cubic single crystal oriented for single slip deforms in three stages. **Stage I**, easy glide, at a hardening rate of order $G / 10^{4}$ as dislocations on one system sweep out to the surface. **Stage II**, linear hardening, at
 $$
-\theta_{\mathrm{II}} = \frac{1}{\sigma} \frac{\mathrm{d} \sigma}{\mathrm{d} \epsilon} \approx \frac{G}{600} \quad \left( \theta_{\mathrm{II}} / G = 1.7 \times 10^{- 3} \right)
+\theta_{\mathrm{II}} = \frac{\mathrm{d} \tau}{\mathrm{d} \gamma} \approx \frac{G}{300} \quad \left( \theta_{\mathrm{II}} / G \approx 3 \times 10^{- 3} \right)
 $$
-— the same number, to within a factor of two, for FCC copper, nickel and silver, for BCC iron and tungsten, for HCP zinc, for the salts, and for the intermetallics $\mathrm{Ni_3 Al}$ and $\mathrm{Co}$ at low temperature. **Stage III**, parabolic recovery, in which dislocations **cross-slip** out of their planes because the stress is high enough to make the activation enthalpy small, and the density saturates.
-Stage II is the forest: a dislocation on one plane must cut through the forest of dislocations on intersecting planes, creating jogs and leaving debris, and the rate at which it does so is set by the geometry of the forest, not by the metal. Stage III is the reason a metal's strength depends on the **temperature** at which it is deformed and not only on its purity, and the reason hot working at $T > 0.5\ T_m$ does not harden at all.
+in resolved shear stress and shear strain — roughly the same fraction of $G$ for copper, nickel, silver, aluminium and their solid solutions, and nearly independent of temperature. **Stage III**, parabolic recovery, in which dislocations **cross-slip** out of their planes because the stress is high enough to make the activation enthalpy small, and the density saturates.
+Stage II is the forest: a dislocation on one plane must cut through the forest of dislocations on intersecting planes, creating jogs and leaving debris, and the rate at which it does so is set by the geometry of the forest, not by the metal. Stage III is the reason a metal's strength depends on the **temperature** at which it is deformed and not only on its purity, and the reason hot working at $T > 0.5\ T_m$ hardens little, the stored dislocations being removed by dynamic recovery and recrystallisation as fast as they are made.
 :::
 
 ::: example Which mechanism, and by how much {#ex-sum}
@@ -133,70 +133,69 @@ $$
 $$
 \Delta \sigma_{d} = \frac{0.75}{\sqrt{8 \times 10^{- 6}}} = 265\ \mathrm{MPa} .
 $$
-**Precipitation (Orowan).** With a spacing from $\lambda = 4 r \sqrt{\pi / \left( 3 f \right)} / \sqrt{f}$ — using the standard $\lambda \approx 4 r / f^{1 / 2}$ —
+**Precipitation (Orowan).** With $\lambda = r \sqrt{2 \pi / \left( 3 f \right)}$ and $\sqrt{1 - \nu} = 0.85$,
 $$
-\lambda = \frac{2 \times 10^{- 8}}{\sqrt{0.001}} = 6.3 \times 10^{- 7}\ \mathrm{m}, \qquad
-\Delta \sigma_{p} = \frac{0.8 \times 3.06 \times 80 \times 10^{9} \times 0.25 \times 10^{- 9}}{2 \pi \times 0.85 \times 7.3 \times 10^{- 7}} = 13\ \mathrm{MPa} .
+\lambda = 5 \times 10^{- 9} \sqrt{\frac{2 \pi}{0.003}} = 2.29 \times 10^{- 7}\ \mathrm{m}, \qquad
+\Delta \sigma_{p} = \frac{0.8 \times 3.06 \times 80 \times 10^{9} \times 0.25 \times 10^{- 9}}{2 \pi \times 0.85 \times 2.29 \times 10^{- 7}} = 40\ \mathrm{MPa} .
 $$
 **Solid solution.** $0.04\ \%$ V is $4.4 \times 10^{- 4}$ atomic, and vanadium strengthens ferrite at about $40\ \mathrm{MPa}$ per atomic per cent, giving $\Delta \sigma_{s} = 1.8\ \mathrm{MPa}$ — negligible, and the reason a microalloying addition is made for its precipitate and its boundary pinning rather than for its solution.
-**Sum.** The mechanisms are additive to first order because they act on different length scales and are statistically independent:
+**Sum.** Adding the contributions linearly is the usual first approximation (some models add the forest and particle terms in quadrature instead):
 $$
-\sigma_{y} = 80 + 134 + 265 + 15 + 2 = 496\ \mathrm{MPa} .
+\sigma_{y} = 80 + 134 + 265 + 40 + 2 = 521\ \mathrm{MPa} .
 $$
-**Ranking.** Of the $416\ \mathrm{MPa}$ increment, grain refinement is $64\ \%$, dislocations $32\ \%$, precipitation $3.6\ \%$ and solution $0.4\ \%$.
+**Ranking.** Of the $441\ \mathrm{MPa}$ increment, grain refinement is $60\ \%$, dislocations $30\ \%$, precipitation $9\ \%$ and solution $0.5\ \%$.
 
-*Check.* A real $\mathrm{Nb}$ microalloyed steel at $8\ \mu\mathrm{m}$ has a yield of $490$ to $550\ \mathrm{MPa}$, so the sum is right and the ranking is right. $\checkmark$
+*Check.* The result lies in the range typical of high-strength low-alloy (HSLA) structural steels, roughly $350$ to $550\ \mathrm{MPa}$, and the grain-size term alone, $265\ \mathrm{MPa}$, is the largest contribution, as it is in such steels. $\checkmark$
 
-*Sanity.* The result is the whole of the physical metallurgy of a modern HSLA steel: **grain refinement does the work and precipitation does the pinning**. The vanadium's job is not to strengthen by solution or even by its own precipitate but to **stop the grains growing** during rolling and in the heat-affected zone of a weld, and $15\ \mathrm{MPa}$ of Orowan hardening is a rounding error against $265\ \mathrm{MPa}$ of grain-boundary hardening. This is why the alloy design question is never "how much vanadium strengthens" but "how much vanadium is needed to pin the boundary", and the answer is a few hundredths of a per cent.
+*Sanity.* The result is the physical metallurgy of a modern HSLA steel in outline: **grain refinement does most of the work**. In practice the grain refinement comes from controlled rolling, with niobium (and titanium) precipitates pinning the austenite grain boundaries so that the ferrite forms fine; vanadium is used mainly for precipitation strengthening, and with finer particles or a larger volume fraction than assumed here it can contribute $100\ \mathrm{MPa}$ or more. Grain refinement is also the one mechanism that lowers the ductile-to-brittle transition temperature while it raises the strength, which is why it is the first one an alloy designer reaches for.
 :::
 :::
 
 ::: example Peak aging {#ex-peak}
-In an an aluminium-4 per cent copper alloy alloy the $\theta^{\prime}$ precipitates are discs of diameter $D$ and thickness $t = D / 5$ at a number density of $10^{22}\ \mathrm{m^{- 3}}$. Given $G = 26\ \mathrm{GPa}$, $b = 0.286\ \mathrm{nm}$, $M = 3.06$, find the diameter at which cutting gives way to bowing and the corresponding strength.
+In an aged aluminium-copper alloy the precipitates reach a volume fraction $f = 0.02$ early in ageing and then coarsen at constant $f$. While they are small, dislocations cut them, and measurements on under-aged material fit $\Delta \sigma_{\mathrm{cut}} = K \sqrt{r}$ with $K = 160\ \mathrm{MPa\, nm^{- 1 / 2}}$. Treating the precipitates as spheres of radius $r$ and taking $G = 26\ \mathrm{GPa}$, $b = 0.286\ \mathrm{nm}$, $\nu = 0.33$, $M = 3.06$, find the radius at which cutting gives way to bowing and the corresponding peak strength increment.
 ::: solution
-**Volume fraction.**
-$$
-f = N \times \frac{\pi}{4} D^{2} \times \frac{D}{5} = 10^{22} \times 0.157\, D^{3} = 1.57 \times 10^{21} D^{3} .
-$$
-**Cutting.** For a coherent ordered precipitate the cutting stress goes as $\Delta \tau \propto \sqrt{f}\, \sqrt{r}$, so $\Delta \sigma_{\mathrm{cut}} = A \sqrt{f D}$ with $A$ set by the antiphase-boundary energy of $\theta^{\prime}$, about $0.1\ \mathrm{J / m^{2}}$:
-$$
-\Delta \sigma_{\mathrm{cut}} = M \sqrt{\frac{f \gamma_{\mathrm{APB}} \pi}{2 b D}} \cdot D \propto D^{1 / 2} .
-$$
-**Bowing.** With $\lambda \approx 4 r / \sqrt{f} = 2 D / \sqrt{f}$,
+**Bowing.** With $\lambda = r \sqrt{2 \pi / \left( 3 f \right)} = r \sqrt{2 \pi / 0.06} = 10.2\, r$,
 $$
 \Delta \sigma_{\mathrm{Orowan}} = \frac{0.8 M G b}{2 \pi \left( 1 - \nu \right)^{1 / 2} \lambda}
-= \frac{0.8 \times 3.06 \times 26 \times 10^{9} \times 0.286 \times 10^{- 9}}{2 \pi \times 0.87 \times 2 D / \sqrt{f}}
-\propto D^{- 3 / 2} .
+= \frac{0.8 \times 3.06 \times 26 \times 10^{9} \times 0.286 \times 10^{- 9}}{2 \pi \times 0.819 \times 10.2\, r}
+= \frac{0.346\ \mathrm{N / m}}{r} ,
 $$
-**The crossing.** Equating the two with the measured constants gives $D^{*} \approx 8\ \mathrm{nm}$ and a peak increment of $330\ \mathrm{MPa}$, on a matrix yield of $40\ \mathrm{MPa}$, for a peak-aged yield of $370\ \mathrm{MPa}$.
-**The measured value.** $2024\text{-}\mathrm{T}4$ is $345\ \mathrm{MPa}$, and the precipitates in it are $8$ to $12\ \mathrm{nm}$ across and $2\ \mathrm{nm}$ thick.
+which with $r$ in nanometres is $\Delta \sigma_{\mathrm{Orowan}} = 346 / r\ \mathrm{MPa}$.
+**The crossing.** Dislocations take whichever path needs the lower stress, so the alloy's increment is the lower of the two curves, and the peak is where they cross:
+$$
+160 \sqrt{r^{*}} = \frac{346}{r^{*}}
+\quad\Longrightarrow\quad
+r^{*} = \left( \frac{346}{160} \right)^{2 / 3} = 1.67\ \mathrm{nm}, \qquad
+\Delta \sigma_{\max} = 160 \sqrt{1.67} = 207\ \mathrm{MPa} .
+$$
+**Over-ageing.** At $r = 3\ \mathrm{nm}$ cutting would need $160 \sqrt{3} = 277\ \mathrm{MPa}$ but bowing only $346 / 3 = 115\ \mathrm{MPa}$, so the particles are bypassed and the increment has fallen to $115\ \mathrm{MPa}$; at $r = 1\ \mathrm{nm}$ cutting needs only $160\ \mathrm{MPa}$, less than the $346\ \mathrm{MPa}$ of bowing, so the alloy is under-aged.
 
-*Check.* The peak-aged plate diameter of $8\ \mathrm{nm}$ is the critical radius predicted by the crossing of a $D^{1 / 2}$ and a $D^{- 3 / 2}$ law, and the aging practice — nine hours at $495\ {}^{\circ}\mathrm{C}$, quench, natural age — puts the population there. $\checkmark$
+*Check.* At $r^{*}$ both expressions give $207\ \mathrm{MPa}$: $346 / 1.67 = 207$ $\checkmark$. A peak at a radius of one or two nanometres is consistent with the small, closely spaced precipitates found in peak-aged aluminium-copper alloys.
 
-*Sanity.* The precipitate spacing at peak aging is $30$ to $50\ \mathrm{nm}$, and the mean free path of a **conduction electron** in aluminium is $15\ \mathrm{nm}$, so a peak-aged aluminium alloy has lost a third of its conductivity to the same precipitates that gave it its strength. This is why an electrical contact cannot be precipitation-hardened and why a bondwire is aluminium with a controlled **soft** temper, and why the aerospace industry checks a 7000-series extrusion's **electrical conductivity** as a non-destructive proxy for its temper and its stress-corrosion susceptibility: conductivity measures precipitate size, and precipitate size measures everything else.
+*Sanity.* As the precipitates form and grow, solute leaves the matrix, and since solute atoms scatter conduction electrons far more strongly than a sparse array of larger particles does, the electrical conductivity of a heat-treatable aluminium alloy rises with ageing. The aerospace industry uses this: eddy-current conductivity measurements are a standard non-destructive check on the temper of 7000-series parts, the over-aged T73 temper being markedly more conductive than T6.
 :::
 :::
 
 ::: example Grain refinement to the limit {#ex-nanograin}
-Electrodeposited nickel is made with grain sizes from $100\ \mathrm{nm}$ to $20\ \mathrm{nm}$. With $\sigma_{0} = 60\ \mathrm{MPa}$ and $k_y = 0.6\ \mathrm{MPa\, m^{1 / 2}}$, give the yield strength at each and compare with the theoretical shear strength.
+Electrodeposited nickel is made with grain sizes down to $20\ \mathrm{nm}$ and below. With $\sigma_{0} = 60\ \mathrm{MPa}$ and $k_y = 0.16\ \mathrm{MPa\, m^{1 / 2}}$, extrapolate the Hall-Petch line from $100$ to $5\ \mathrm{nm}$ and compare with the theoretical shear strength.
 ::: solution
 $$
 \begin{array}{c c}
 d\ \left[ \mathrm{nm} \right] & \sigma_{y}\ \left[ \mathrm{MPa} \right] \\
-100 & 120 \\
-50 & 145 \\
-20 & 194 \\
-10 & 250 \\
-5 & 329
+100 & 566 \\
+50 & 776 \\
+20 & 1191 \\
+10 & 1660 \\
+5 & 2323
 \end{array}
 $$
-against a coarse-grained value of $80\ \mathrm{MPa}$ and a theoretical shear strength of $G / 2 \pi = 12\ \mathrm{GPa}$.
-**The observation.** Real nanocrystalline nickel peaks at about $1{,}300\ \mathrm{MPa}$ at $30\ \mathrm{nm}$ and then **softens**, so the Hall-Petch line is not even close to the measurement at the fine end and the extrapolation to $5\ \mathrm{nm}$ is meaningless.
-**Why.** At $30\ \mathrm{nm}$ the grain contains no dislocation source at all — a Frank-Read source needs a length of at least $10\ \mathrm{nm}$ and a grain of $30\ \mathrm{nm}$ cannot hold one with its image forces — so the material is **source-limited** rather than obstacle-limited, and its strength is set by nucleating a dislocation at a boundary, not by moving one. Below $15\ \mathrm{nm}$ the grains slide and rotate, the strain-rate sensitivity rises from $0.002$ to $0.02$, and the work-hardening capacity vanishes because there is no volume in which to store a forest.
+against a coarse-grained value of about $80\ \mathrm{MPa}$ and a theoretical shear strength of $G / 2 \pi = 76 / 2 \pi = 12\ \mathrm{GPa}$.
+**The observation.** Measured strengths of nanocrystalline nickel at a few tens of nanometres are of the order of a gigapascal, broadly in line with the extrapolation, but the rise does not continue indefinitely: at the finest grain sizes the strength levels off and may fall, so the extrapolation to $5\ \mathrm{nm}$ should not be trusted.
+**Why.** A Frank-Read source of length $L$ operates at $G b / L$, which for $L = 10\ \mathrm{nm}$ in nickel is $76 \times 10^{9} \times 0.25 \times 10^{- 9} / 10^{- 8} = 1.9\ \mathrm{GPa}$; grains a few tens of nanometres across cannot hold useful sources, so dislocations are nucleated at the grain boundaries and cross the grain without being stored. The material is **source-limited** rather than obstacle-limited, its strain-rate sensitivity rises by about an order of magnitude, and its work-hardening capacity largely vanishes because there is no volume in which to store a forest. At the finest sizes boundary sliding and grain rotation take over.
 
-*Check.* The predicted $194\ \mathrm{MPa}$ at $20\ \mathrm{nm}$ against a measured $1{,}300\ \mathrm{MPa}$ at $30\ \mathrm{nm}$ is a factor of six out, and the discrepancy is not an error in the constants but a change of mechanism: electrodeposited nanocrystalline nickel also contains a strong texture, residual stress and a porosity of one to two per cent, and the Hall-Petch constants measured on coarse material do not transfer. $\checkmark$
+*Check.* $\sigma_{y} \left( 20\ \mathrm{nm} \right) = 60 + 0.16 / \sqrt{2 \times 10^{- 8}} = 60 + 1131 = 1191\ \mathrm{MPa}$, and at $100\ \mu\mathrm{m}$ the same law gives $60 + 16 = 76\ \mathrm{MPa}$, about the coarse-grained value: four decades of grain size, a factor of sixteen in strength. Even the extrapolated $2.3\ \mathrm{GPa}$ at $5\ \mathrm{nm}$ is a fifth of the theoretical shear strength, so the theoretical limit is not what stops the line. $\checkmark$
 
-*Sanity.* The engineering lesson is that **grain refinement is the only strengthening mechanism that raises strength and toughness together**, because a fine grain both stops the dislocation and stops the crack — the cleavage fracture stress of a ferrite goes as $d^{- 1 / 2}$ for the same reason the yield does, which is why a fine-grained pressure-vessel steel has both a higher yield and a lower ductile-to-brittle transition temperature. It is also the only mechanism that is **not thermally stable**, since grain growth is diffusion-controlled and a $20\ \mathrm{nm}$ grain boundary area of $10^{8}\ \mathrm{m^{2} / m^{3}}$ is a stored energy of $2\ \mathrm{MJ / m^{3}}$ waiting to be released.
+*Sanity.* The engineering lesson is that **grain refinement is the only strengthening mechanism that raises strength and toughness together**, because a fine grain both stops the dislocation and stops the crack — the cleavage fracture stress of a ferrite goes as $d^{- 1 / 2}$ for the same reason the yield does, which is why a fine-grained pressure-vessel steel has both a higher yield and a lower ductile-to-brittle transition temperature. It is also the only mechanism that is **not thermally stable**, since grain growth is diffusion-controlled and a $20\ \mathrm{nm}$ grain size means a boundary area of order $10^{8}\ \mathrm{m^{2} / m^{3}}$, which at a boundary energy of about $0.6\ \mathrm{J / m^{2}}$ is a stored energy of some $60\ \mathrm{MJ / m^{3}}$ waiting to be released.
 :::
 :::
 
@@ -204,33 +203,33 @@ against a coarse-grained value of $80\ \mathrm{MPa}$ and a theoretical shear str
 Select the strengthening mechanism for a $25\ \mathrm{mm}$-diameter shaft that must yield at $700\ \mathrm{MPa}$, be weldable at both ends, survive $200\ {}^{\circ}\mathrm{C}$ continuous service, and be made from a $60\ \mathrm{mm}$-diameter forged bar.
 ::: solution
 **Screen the mechanisms against the requirements.**
-- **Cold work** is excluded: a $25\ \mathrm{mm}$ bar cannot be drawn from $60\ \mathrm{mm}$ without a $55\ \%$ reduction, and any cold work is lost at the weld and anneals out at $200\ {}^{\circ}\mathrm{C}$ over years of service.
-- **Grain refinement** cannot reach $700\ \mathrm{MPa}$: Hall-Petch in ferrite tops out near $600\ \mathrm{MPa}$ at a $1\ \mu\mathrm{m}$ grain, and a $1\ \mu\mathrm{m}$ ferrite grain is not achievable in a forged bar.
+- **Cold work** is excluded: drawing $60\ \mathrm{mm}$ down to $25\ \mathrm{mm}$ is a reduction of area of $1 - \left( 25 / 60 \right)^{2} = 83\ \%$, far more than a forged bar can take in one go, and any cold work is lost at the weld and anneals out at $200\ {}^{\circ}\mathrm{C}$ over years of service.
+- **Grain refinement** alone cannot reach $700\ \mathrm{MPa}$ here: with $\sigma_0 = 80\ \mathrm{MPa}$ and $k_y = 0.75\ \mathrm{MPa\, m^{1/2}}$ it needs $d = \left( 0.75 / 620 \right)^{2}\ \mathrm{m} = 1.5\ \mu\mathrm{m}$ ferrite, which cannot be produced through the section of a forged bar.
 - **Solid solution** to $700\ \mathrm{MPa}$ needs so much substitutional solute that the weldability and the toughness both fail.
 - **Precipitation or transformation** is what is left.
-**Choice.** A **low-alloy quenched-and-tempered martensitic steel**, $4130$ or $34CrNiMo6$, tempered at $600\ {}^{\circ}\mathrm{C}$ to $750\ \mathrm{MPa}$: the strength comes from a tempered carbide dispersion plus a sub-micron lath substructure, and the $600\ {}^{\circ}\mathrm{C}$ temper means $200\ {}^{\circ}\mathrm{C}$ service cannot over-age it.
-**The section, and the trap.** A $60\ \mathrm{mm}$ bar quenched to a $25\ \mathrm{mm}$ finished size is a **hardenability** problem, not a strength problem. At $25\ \mathrm{mm}$ equivalent diameter, a plain $1045$ bar reaches only $50\ \%$ martensite at the centre and its centre yield is $350\ \mathrm{MPa}$; a $4130$ reaches $95\ \%$ and its centre yield is $700\ \mathrm{MPa}$. The specification must therefore quote the **ideal critical diameter** $D_I$ and the end-quench curve, not only the chemistry.
-**The weld.** A $700\ \mathrm{MPa}$ quenched-and-tempered steel has a carbon equivalent near $0.6$, cold-cracks on welding, and its heat-affected zone tempers back to $400\ \mathrm{MPa}$. The specification must state a preheat of $150\ {}^{\circ}\mathrm{C}$, a low-hydrogen electrode, a post-weld temper at $600\ {}^{\circ}\mathrm{C}$ — which drops the whole shaft back to the temper strength and is why the shaft is specified at $700\ \mathrm{MPa}$ **after** the final temper — and a hardness limit of $350\ \mathrm{HV}$ in the weld.
+**Choice.** A **low-alloy quenched-and-tempered martensitic steel**, such as $4140$ or 34CrNiMo6, tempered at about $600\ {}^{\circ}\mathrm{C}$ to a yield strength of about $750\ \mathrm{MPa}$: the strength comes from a tempered carbide dispersion plus a sub-micron lath substructure, and the $600\ {}^{\circ}\mathrm{C}$ temper means $200\ {}^{\circ}\mathrm{C}$ service cannot over-age it.
+**The section, and the trap.** Whether the centre of the section reaches the strength is a **hardenability** problem, not a strength problem: a plain-carbon $1045$ bar does not harden through even a $25\ \mathrm{mm}$ section in an oil quench, whereas Cr–Mo and Ni–Cr–Mo steels such as $4140$ and 34CrNiMo6 do, which is what their alloying is for. The specification must therefore quote the **ideal critical diameter** $D_I$ and the end-quench curve, not only the chemistry.
+**The weld.** A medium-carbon quenched-and-tempered steel has a carbon equivalent of $0.6$ or more and is prone to hydrogen cold cracking; its heat-affected zone contains both a hard, crack-prone zone and an over-tempered soft zone. The specification must state a preheat, a low-hydrogen process, a post-weld temper at or slightly below the original tempering temperature — so that the whole shaft ends at the temper strength, and is specified at $700\ \mathrm{MPa}$ **after** that final heat treatment — and a hardness limit of $350\ \mathrm{HV}$ in the weld.
 
 *Design comment.* The requirement "yield at $700\ \mathrm{MPa}$" is met by a dozen materials and the requirement "welded at both ends and still $700\ \mathrm{MPa}$ at the weld" is met by two or three, and the second is the specification. The general rule is that **a strength requirement stated without a thermal cycle is not a requirement**, and the general failure of a design review is that the strength is quoted for the mill condition and the part is used in the welded condition.
 :::
 :::
 
 ::: history
-The dislocation was inferred, not seen. **E. G. Taylor** proposed it in 1934 to explain why a worked metal's flow stress was so much higher than a perfect crystal's and so much lower than the theoretical one, computing the stress field of an edge dislocation and predicting the stored energy of cold work, which **G. I. Taylor and C. F. Elam** measured a year later from the specific heat of drawn wire and found within ten per cent. **Polanyi** and **Orowan** proposed the same line independently in the same year, and **Orowan, Atkinson, East and Teague** photographed slip lines in zinc in 1943 and showed they were one atomic spacing high, which was the direct evidence. **Burgers**' vector and **Peierls**' lattice-friction calculation of 1940 and **Nabarro**'s 1947 reformulation gave the theory its quantitative form; **Frank** and **Read**'s 1950 paper on the multiplication source was Read's undergraduate project, supervised by Frank, who was twenty-nine. **Taylor hardening** is **G. I. Taylor**'s 1934 result; the **Hall-Petch** relation is **E. O. Hall**'s 1951 note on the yield strength of polycrystalline metals and **N. J. Petch**'s 1953 paper on the cleavage strength of notched mild steel, published independently and within two years. The universal Stage II rate is **V. N. Gridnev** and **V. N. Boiko**'s 1960s work on Soviet iron crystals and **H. Mecking** and **U. F. Kocks**'s 1981 synthesis. **Orowan**'s bowing mechanism was published in 1948 in a discussion remark that was not written down until 1957, and **Guinier** and **Preston**'s 1938-1940 discovery of the clusters that bear their names, made by X-ray diffuse scattering in the middle of the Second World War, is the origin of precipitation hardening and of the entire age-hardening industry.
+The dislocation was inferred long before it was seen. In 1934 **G. I. Taylor**, **Egon Orowan** and **Michael Polanyi** independently proposed the edge dislocation to explain why real crystals yield at a tiny fraction of their theoretical shear strength, and Taylor's paper of that year also gave the first theory of work hardening by dislocation interaction. **J. M. Burgers** introduced the screw dislocation and the vector that bears his name in 1939; **Rudolf Peierls** (1940) and **Frank Nabarro** (1947) calculated the lattice friction on a moving dislocation. Precipitation hardening had been discovered empirically by **Alfred Wilm**, whose aluminium-copper-magnesium alloy hardened on standing at room temperature (1906) and became Duralumin; **Paul Merica** and co-workers attributed the effect to precipitation in 1919, and in 1938 **André Guinier** and **George Preston** independently detected, by X-ray diffuse scattering, the solute-rich zones that now carry their names. **Orowan** gave the bowing mechanism of particle strengthening in 1948. **Charles Frank** and **Thornton Read** conceived the dislocation multiplication source independently and published it jointly in 1950. **E. O. Hall** (1951) and **N. J. Petch** (1953) established the inverse-square-root dependence of the yield and cleavage strengths on grain size. Dislocations were first seen directly in the 1950s, decorated by precipitates in silver halide crystals by **J. M. Hedges** and **J. W. Mitchell** (1953) and moving in thin metal foils in the electron microscope by **Peter Hirsch**, **Robert Horne** and **Michael Whelan** in 1956. **H. Mecking** and **U. F. Kocks**'s 1981 paper gave the widely used model of work hardening by dislocation storage and dynamic recovery.
 :::
 
 ## Where this leads
 
-The dislocation's climb and cross-slip are the diffusional machinery of [[materials-science/defects-diffusion]] and the mechanism of the creep of [[materials-science/failure]], the precipitate of Example 2 is a point on the iron-carbon and aluminium-copper diagrams of [[materials-science/phase-diagrams]] and a nucleation-and-growth problem of [[materials-science/phase-transformations]], and the texture that makes a sheet's $r$-value is the crystallography of [[materials-science/bonding-structure]] acted on by a rolling mill.
+The dislocation's climb and cross-slip are the diffusional machinery of [[materials-science/defects-diffusion]] and the mechanism of the creep of [[materials-science/failure]], the precipitate of [[#ex-peak]] is a point on the iron-carbon and aluminium-copper diagrams of [[materials-science/phase-diagrams]] and a nucleation-and-growth problem of [[materials-science/phase-transformations]], and the texture that makes a sheet's $r$-value is the crystallography of [[materials-science/bonding-structure]] acted on by a rolling mill.
 
 ::: summary
 - A dislocation moves at a stress set by the balance $\tau b = T / R$, which generates the Frank-Read source, the Orowan bowing stress and the grain-boundary barrier as one equation with different lengths.
-- The Peierls stress depends exponentially on the core width, which is why $\tau_{P} / G$ spans a million-fold range and why metals bend and ceramics shatter.
+- The Peierls stress depends exponentially on the core width, which is why $\tau_{P} / G$ spans many orders of magnitude and why metals bend and ceramics shatter.
 - Taylor hardening $\sigma = \sigma_{0} + \alpha G b \sqrt{\rho}$ accounts for the whole strength range of a single metal by one parameter.
 - Solid solution strengthens as $c^{2 / 3}$ and costs conductivity; precipitation strengthens to a maximum at a critical radius of a few nanometres and then over-ages.
-- Grain boundaries strengthen as $d^{- 1 / 2}$, are the only mechanism that improves toughness at the same time, and reverse below $15\ \mathrm{nm}$.
-- Stage II hardening at $G / 600$ is universal; Stage III recovery is why hot working does not harden.
+- Grain boundaries strengthen as $d^{- 1 / 2}$, are the only mechanism that improves toughness at the same time, and can reverse below roughly $10$ to $20\ \mathrm{nm}$.
+- Stage II hardening at about $G / 300$ is nearly universal in FCC crystals; Stage III dynamic recovery is why hot working hardens little.
 :::
 
 ::: quiz
@@ -240,16 +239,16 @@ A precipitation-hardened alloy is over-aged well past its peak. Which statement 
 - [ ] The precipitates have shrunk, so they are easier to cut
 - [ ] The matrix has recrystallised
 ::: solution
-Over-aging coarsens the precipitates at roughly constant volume fraction, so the inter-particle spacing grows and the Orowan stress falls as $1 / \lambda$. The precipitates do not dissolve — the equilibrium volume fraction at the aging temperature is set by the solvus — and recrystallisation is a recovery phenomenon that requires stored cold work, which an aged alloy does not have.
+Over-aging coarsens the precipitates at roughly constant volume fraction, so the inter-particle spacing grows and the Orowan stress falls as $1 / \lambda$. The precipitates do not dissolve — the equilibrium volume fraction at the aging temperature is set by the solvus — and recrystallisation needs stored cold work as its driving force, which an aged alloy does not have.
 :::
 :::
 
 ## Exercises
 
-::: exercise Character {level=1 check="1"}
-How many of the components of a dislocation's Burgers vector are perpendicular to its line for a pure screw dislocation?
+::: exercise Character {level=1 check="90"}
+What is the angle, in degrees, between the Burgers vector and the line direction of a pure edge dislocation?
 ::: solution
-One — none; the Burgers vector is parallel to the line.
+$90^{\circ}$ — the Burgers vector of an edge dislocation is perpendicular to its line (for a screw it is parallel, $0^{\circ}$).
 :::
 :::
 
@@ -260,10 +259,10 @@ One hundred — the strength goes as the square root of the density.
 :::
 :::
 
-::: exercise Stage II {level=1 check="600"}
-The Stage II hardening rate of a crystal is $G$ divided by what number?
+::: exercise Stage II {level=1 check="300"}
+The Stage II hardening rate $\mathrm{d} \tau / \mathrm{d} \gamma$ of an FCC single crystal is roughly $G$ divided by what number?
 ::: solution
-About $600$.
+About $300$.
 :::
 :::
 
@@ -274,10 +273,10 @@ Four.
 :::
 :::
 
-::: exercise Mechanism {level=1 check="2"}
-Below what fraction of a micrometre does the Hall-Petch relation reverse in nanocrystalline metals?
+::: exercise Mechanism {level=1 check="15"}
+Below roughly what grain size has inverse Hall-Petch softening been reported in nanocrystalline metals? (Enter the grain size in nm, using the middle of the range quoted in this lesson.)
 ::: solution
-About $0.015\ \mu\mathrm{m}$, fifteen nanometres.
+About $15\ \mathrm{nm}$ — reports range from roughly $10$ to $20\ \mathrm{nm}$.
 :::
 :::
 
@@ -289,50 +288,49 @@ $$
 \qquad
 \sigma_{y} = M \tau = 3.06 \times 40 = 122\ \mathrm{MPa} .
 $$
-*Sanity.* That is close to the yield strength of pure annealed iron, and the sources in it are indeed half a micrometre long. It also explains why a grain smaller than the source cannot work: at a $0.1\ \mu\mathrm{m}$ grain the same expression gives $610\ \mathrm{MPa}$, and the material is then limited by nucleating dislocations rather than by moving them.
+*Sanity.* That is of the order of the yield strength of pure annealed iron, consistent with source lengths of a fraction of a micrometre. It also explains why a grain smaller than the source cannot work: at a $0.1\ \mu\mathrm{m}$ grain the same expression gives $610\ \mathrm{MPa}$, and the material is then limited by nucleating dislocations rather than by moving them.
 :::
 :::
 
-::: exercise Interstitials {level=2}
-$0.05\ \%$ carbon is dissolved in $\alpha$-iron. Estimate the yield strength increment if the interstitial strengthening is $1.2\ \mathrm{GPa}$ per weight per cent of carbon.
+::: exercise Interstitials {level=2 check="6"}
+A ferritic sheet steel holds $0.005\ \%$ ($50\ \mathrm{ppm}$ by weight) carbon in solid solution. Estimate the yield strength increment if the interstitial strengthening is $1.2\ \mathrm{GPa}$ per weight per cent of carbon. (Enter the increment in MPa.)
 ::: solution
-$60\ \mathrm{MPa}$, on a base of $130\ \mathrm{MPa}$, giving $190\ \mathrm{MPa}$.
-*Sanity.* That is the whole of the difference between rimmed killed low-carbon sheet steel and rimmed low-carbon sheet steel, and it is why a **bake-hardening** steel — which holds $40\ \mathrm{ppm}$ of carbon in solution and is supplied soft for forming — gains $30\ \mathrm{MPa}$ in the stoving bake at $170\ {}^{\circ}\mathrm{C}$ that precipitates the carbon as epsilon-carbide on dislocations. The same carbon that gives the strength also gives the yield-point elongation and the stretcher strains, which is why the steel is skin-passed, and why the bake hardening is desirable and the yield point is not.
+$1200 \times 0.005 = 6\ \mathrm{MPa}$ — small, because so little carbon can stay in solution in ferrite.
+*Sanity.* The same few tens of ppm matter far more once they segregate to dislocations. A **bake-hardening** steel holds a controlled amount of carbon in solution and is supplied soft for forming; in the paint-stoving bake at about $170\ {}^{\circ}\mathrm{C}$ the carbon diffuses to the dislocations introduced by pressing and pins them, raising the yield strength by some tens of megapascals. The same mechanism gives the yield-point elongation and stretcher strains of ordinary low-carbon sheet, which is why that sheet is skin-passed before forming: the pinning is welcome after forming and unwelcome before it.
 :::
 :::
 
-::: exercise Overaging {level=2}
-A peak-aged aluminium alloy is over-aged so that its precipitate radius doubles at constant volume fraction. By what factor does the Orowan strength change?
+::: exercise Overaging {level=2 check="0.5"}
+A peak-aged aluminium alloy is over-aged so that its precipitate radius doubles at constant volume fraction. By what factor does the Orowan strength change? (Enter the ratio of new to old.)
 ::: solution
 The spacing goes as $r / \sqrt{f}$, so it doubles, and the strength **halves**.
-*Sanity.* A real 7075-T6 at $500\ \mathrm{MPa}$ over-aged one hour at $230\ {}^{\circ}\mathrm{C}$ falls to $380\ \mathrm{MPa}$, a factor of $0.76$ rather than $0.5$, because the volume fraction also falls as the matrix continues to supply solute to the growing particles and because the size distribution broadens. The direction is right and the exponent is the useful part: over-aging is a trade of strength for **toughness and stress-corrosion resistance**, and the T73 and T7351 tempers of aerospace 7050 and 7075 are deliberately over-aged for exactly that trade.
+*Sanity.* Real alloys lose less than this simple estimate predicts in the early stages of over-ageing, because the size distribution broadens and part of the strength comes from other sources (solid solution, grain structure), but the direction is right. Over-ageing trades strength for **stress-corrosion resistance and toughness**: the T73 and T7351 tempers of aerospace 7075, for example, are deliberately over-aged for exactly that trade.
 :::
 :::
 
 ::: exercise Derivation {level=3}
 Derive the Hall-Petch relation from a pile-up of $n$ dislocations against a grain boundary, and state the two assumptions that the derivation makes and that are known to fail.
 ::: solution
-**The pile-up.** Under a resolved shear stress $\tau$, a dislocation source in a grain of diameter $d$ operates and pushes dislocations against the boundary. The back-stress from $n$ dislocations at the head of a pile-up of length $d$ cancels the applied stress when
+**The pile-up.** Under a resolved shear stress $\tau$, a dislocation source at the centre of a grain of diameter $d$ operates and pushes edge dislocations against the boundary, forming a pile-up of length $L = d / 2$. The equilibrium of the piled-up dislocations under the applied stress and their mutual repulsion (Eshelby, Frank and Nabarro) gives the number in a pile-up of length $L$ as
 $$
-n \tau \approx \frac{n G b}{2 \pi \left( 1 - \nu \right) d} \quad\text{(self-equilibrium)}
-\quad\Longrightarrow\quad
-n = \frac{2 \pi \left( 1 - \nu \right) \tau d}{G b} .
+n = \frac{\pi \left( 1 - \nu \right) \tau L}{G b} = \frac{\pi \left( 1 - \nu \right) \tau d}{2 G b} ,
 $$
+and the stress at its head is magnified to $n \tau$.
 **The transmission criterion.** Slip fires in the next grain when the stress concentration at the head reaches a critical value $\tau_{0}$ needed to move a dislocation across the boundary or to operate a source there:
 $$
 n \tau = \tau_{0}
 \quad\Longrightarrow\quad
-\frac{2 \pi \left( 1 - \nu \right) \tau^{2} d}{G b} = \tau_{0}
+\frac{\pi \left( 1 - \nu \right) \tau^{2} d}{2 G b} = \tau_{0}
 \quad\Longrightarrow\quad
-\tau = \left( \frac{\tau_{0} G b}{2 \pi \left( 1 - \nu \right)} \right)^{1 / 2} d^{- 1 / 2} .
+\tau = \left( \frac{2 \tau_{0} G b}{\pi \left( 1 - \nu \right)} \right)^{1 / 2} d^{- 1 / 2} .
 $$
 Multiplying by the Taylor factor $M$ and adding the lattice friction $\sigma_{0}$,
 $$
-\boxed{ \sigma_{y} = \sigma_{0} + \left( \frac{m M^{3} \tau_{0} G b}{2 \pi \left( 1 - \nu \right)} \right)^{1 / 2} \frac{1}{\sqrt{d}} } ,
+\boxed{ \sigma_{y} = \sigma_{0} + M \left( \frac{2 \tau_{0} G b}{\pi \left( 1 - \nu \right)} \right)^{1 / 2} \frac{1}{\sqrt{d}} } ,
 $$
 which is the Hall-Petch form with $k_y$ containing $G$, $b$ and the boundary strength. $\checkmark$
-**The two assumptions that fail.** First, that a **pile-up** forms: in a real material with a forest, a pile-up of more than three or four dislocations is unstable to cross-slip or to emission from the boundary, and electron microscopy of fine-grained material sees one or two dislocations, not fifty. Second, that the boundary is an **absolute barrier**: in fact a boundary can absorb a dislocation, emit one, or transmit one onto a new system at a stress that depends on the misorientation, and grain-boundary character, not grain size, controls the stress in a textured or columnar material.
-*Sanity.* Despite both failures the $d^{- 1 / 2}$ law holds empirically over five decades of grain size, because the alternative mechanisms — the back-stress of a geometrically necessary dislocation zone of size $d$, and the source-size limitation of a grain that contains no Frank-Read source — give the same exponent for independent reasons. A relation that survives three wrong derivations is usually telling you something about a length scale rather than about a mechanism.
+**The two assumptions that fail.** First, that a **pile-up** forms: in a real material with a forest, long pile-ups are relieved by cross-slip and by the boundary absorbing dislocations, and electron microscopy of fine-grained material usually shows short pile-ups or none. Second, that the boundary is an **absolute barrier**: in fact a boundary can absorb a dislocation, emit one, or transmit one onto a new system at a stress that depends on the misorientation, and grain-boundary character, not grain size, controls the stress in a textured or columnar material.
+*Sanity.* Despite both failures the $d^{- 1 / 2}$ law holds empirically over several decades of grain size, because the alternative mechanisms — the back-stress of a geometrically necessary dislocation zone of size $d$, and the source-size limitation of a grain that contains no Frank-Read source — give the same exponent for independent reasons. A relation that several different derivations reproduce is usually telling you something about a length scale rather than about a particular mechanism.
 :::
 :::
 
@@ -340,11 +338,11 @@ which is the Hall-Petch form with $k_y$ containing $G$, $b$ and the boundary str
 A copper busbar must carry current with the minimum $I^{2} R$ loss while supporting its own weight against sag over a $2\ \mathrm{m}$ span at $100\ {}^{\circ}\mathrm{C}$. Select the condition of the copper and justify it against the alternatives.
 ::: solution
 **The conflict.** The conductivity and the strength are opposed: cold work raises the yield from $60$ to $400\ \mathrm{MPa}$ and drops the conductivity by two to three per cent, because dislocations scatter electrons; solute strengthening drops it by tens of per cent, because solute atoms scatter electrons far more strongly than dislocations do.
-**The requirement.** A busbar of $2\ \mathrm{m}$ span carrying its own weight needs a design stress of only about $20\ \mathrm{MPa}$ at $100\ {}^{\circ}\mathrm{C}$, so **the strength requirement is trivial** and the conductivity requirement is everything.
+**The requirement.** A busbar of $2\ \mathrm{m}$ span carrying its own weight sees a bending stress of only a few to a few tens of megapascals at $100\ {}^{\circ}\mathrm{C}$, depending on its section, so **the strength requirement is trivial** and the conductivity requirement is everything.
 **Choice.** **Annealed high-conductivity copper** (C11000, $99.9\ \%$ O$_2$-free electronic grade C10200 where hydrogen is a hazard), at $101\ \%$ IACS and $60\ \mathrm{MPa}$, which is more than enough.
-**The trap.** Annealed copper **creeps** at $100\ {}^{\circ}\mathrm{C}$ under a $20\ \mathrm{MPa}$ stress at a strain rate of $10^{- 9}\ \mathrm{s^{- 1}}$, which is $3\ \%$ per year, and the busbar sags into the next phase. So the answer is not the softest copper but the **least work that will not creep**: a lightly cold-worked, stress-relieved copper — $90\ \%$ cold worked then annealed at a temperature that recovers the dislocations without recrystallising, giving $250\ \mathrm{MPa}$ and $97\ \%$ IACS — or a **cadmium-copper** or **chromium-zirconium-copper** alloy at $80$ to $90\ \%$ IACS and $400\ \mathrm{MPa}$, which is the standard for a trolley wire.
-**The rule.** Precipitation hardening costs less conductivity than solid solution for the same strength, because the solute is tied up in particles and the matrix is nearly pure copper. This is why every high-conductivity high-strength copper alloy — $\mathrm{Cu - Be}$, $\mathrm{Cu - Cr}$, $\mathrm{Cu - NiSi}$, $\mathrm{Cu - Ti}$ — is precipitation-hardened and none is solid-solution-strengthened.
+**The trap.** Over decades at $100\ {}^{\circ}\mathrm{C}$, soft annealed copper can sag by slow creep and its bolted joints lose clamping force by stress relaxation, and it is easily damaged in handling. So the usual answer is not the softest copper but a **half-hard** temper, which keeps nearly all of the conductivity (about $97\ \%$ IACS) at several times the annealed yield strength, or a **silver-bearing copper**, whose small silver addition raises the softening temperature at almost no cost in conductivity. Where real strength is needed with good conductivity, as in a contact wire, precipitation-hardened **chromium-zirconium copper** (around $80\ \%$ IACS) is used.
+**The rule.** Precipitation hardening costs less conductivity than solid solution for the same strength, because the solute is tied up in particles and the matrix is nearly pure copper. This is why the copper alloys that combine the highest strength with useful conductivity — $\mathrm{Cu - Be}$, $\mathrm{Cu - Cr}$, $\mathrm{Cu - Cr - Zr}$, $\mathrm{Cu - Ni - Si}$ — are precipitation-hardened.
 
-*Sanity.* The numbers are the reason a printed circuit board's copper is rolled and annealed rather than alloyed, why a connector spring is beryllium copper at $1{,}200\ \mathrm{MPa}$ and $22\ \%$ IACS and nobody cares about the conductivity there, and why the fusion-research community's copper-alloy first wall — $\mathrm{CuCrZr}$ and the oxide-dispersion-strengthened $\mathrm{Cu - Al_2 O_3}$ alloys GlidCop and $\mathrm{Cu - Al_2 O_3}$-Cu — is an exercise in buying back the two per cent of conductivity that every strengthening mechanism takes away. Oxide dispersion strengthening is the extreme case: an insulating oxide at $0.1\ \%$ that pins the dislocations and blocks recrystallisation at $900\ {}^{\circ}\mathrm{C}$, at a conductivity cost of one per cent, because the oxide takes the solute out of solution.
+*Sanity.* The same trade explains why a connector spring is beryllium copper, at around $1\ \mathrm{GPa}$ and roughly $20\ \%$ IACS, where strength matters more than conductivity, and why heat-sink components in fusion devices use $\mathrm{CuCrZr}$ or oxide-dispersion-strengthened copper. Oxide dispersion strengthening is the extreme case: a fraction of a per cent of fine alumina particles (GlidCop) keeps copper strong even after exposure near $900\ {}^{\circ}\mathrm{C}$, because the stable oxide blocks recrystallisation, while the conductivity stays near $90\ \%$ IACS because the matrix is almost pure copper.
 :::
 :::

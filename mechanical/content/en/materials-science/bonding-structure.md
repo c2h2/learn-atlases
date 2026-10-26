@@ -3,7 +3,7 @@ Every property of every engineering material is a consequence of one thing: the 
 This lesson puts numbers on that argument for the two families of facts that follow from it: the four kinds of atomic bond and their strengths, and the ways atoms stack into crystals. Everything after this — the defects of [[materials-science/defects-diffusion]], the dislocations of [[materials-science/dislocations-strengthening]], the phase diagrams of [[materials-science/phase-diagrams]] — is a story about how the ideal stacking shown here is imperfect, and how much good that imperfection does.
 
 ::: warning Stiffness is the one property you cannot improve
-The elastic modulus is $\left. r_0 \, \mathrm{d}^{2} U / \mathrm{d} r^{2} \right|_{r_0}$, a property of the bond alone. No heat treatment, no alloying addition, no amount of cold work, no fibre orientation in a properly designed laminate and no manufacturing process changes it by more than a few per cent, because all of them act on the defects and none of them acts on the bond. Steel is $200\ \mathrm{GPa}$; the strongest maraging steel ever made is $195$; the cheapest mild steel is $207$. The corollaries are worth stating plainly, because students keep hoping otherwise. **A stiffer part is made with more material or a better shape, never with a better metal** — within a family. And **a stronger part is made with a worse crystal**: every strengthening mechanism in [[materials-science/dislocations-strengthening]] works by obstructing dislocation motion, which means by introducing defects, which means by making the metal more brittle, less fatigue-resistant at a crack tip, and further from the equilibrium its phase diagram predicts. Stiffness is a bond property and is fixed; strength is a defect property and is negotiable. The whole of materials selection is the negotiation.
+The elastic modulus is $\left. \left( 1 / r_0 \right) \mathrm{d}^{2} U / \mathrm{d} r^{2} \right|_{r_0}$, a property of the bond alone. No heat treatment, no alloying addition, no amount of cold work, no fibre orientation in a properly designed laminate and no manufacturing process changes it by more than a few per cent, because all of them act on the defects and none of them acts on the bond. Steel is $200\ \mathrm{GPa}$; the strongest maraging steel ever made is $195$; the cheapest mild steel is $207$. The corollaries are worth stating plainly, because students keep hoping otherwise. **A stiffer part is made with more material or a better shape, never with a better metal** — within a family. And **a stronger part is made with a worse crystal**: every strengthening mechanism in [[materials-science/dislocations-strengthening]] works by obstructing dislocation motion, which means by introducing defects, which means by making the metal more brittle, less fatigue-resistant at a crack tip, and further from the equilibrium its phase diagram predicts. Stiffness is a bond property and is fixed; strength is a defect property and is negotiable. The whole of materials selection is the negotiation.
 :::
 
 ## Bonding
@@ -17,7 +17,7 @@ Bond energies run $600\text{–}1000\ \mathrm{kJ / mol}$ for covalent and ionic,
 :::
 
 ::: definition The bonding-energy curve and what it decides {#def-curve}
-The pair potential is written in the Lennard-Jones form
+The pair potential is written in the general (Mie) form, of which the Lennard-Jones $6$–$12$ potential is the best-known case,
 $$
 U (r ) = - \frac{A}{r^{m}} + \frac{B}{r^{n}}, \qquad m = 1 \ \text{or} \ 6, \quad n = 9 \ \text{to} \ 12,
 $$
@@ -27,7 +27,7 @@ E_{\mathrm{melt}} \propto E_0 , \qquad
 \alpha_{\mathrm{thermal}} \propto \frac{1}{\mathrm{d}^{3} U / \mathrm{d} r^{3}} \ \text{(asymmetry)}, \qquad
 E_{\mathrm{modulus}} = \frac{1}{r_0} \left. \frac{\mathrm{d}^{2} U}{\mathrm{d} r^{2}} \right|_{r_0} .
 $$
-The modulus is a **curvature**, the melting point a **depth**, and the expansion coefficient an **asymmetry** — which is why they correlate loosely and can be decoupled deliberately. Invar $\mathrm{Fe} - 36\ \%\mathrm{Ni}$ has a normal bond and a near-zero expansion because a magnetic ordering transition supplies a contraction that cancels the lattice's own; a few engineering alloys reach $\alpha \approx 0$ and cost a fortune per kilogram.
+The modulus is a **curvature**, the melting point a **depth**, and the expansion coefficient an **asymmetry** — which is why they correlate loosely and can be decoupled deliberately. Invar $\mathrm{Fe} - 36\ \%\mathrm{Ni}$ has a normal bond and a near-zero expansion because a magnetic ordering transition supplies a contraction that cancels the lattice's own; a few such alloys reach $\alpha \approx 0$ over a limited temperature range.
 :::
 
 ::: widget plot
@@ -42,15 +42,15 @@ caption: Two pair potentials normalised to the same well depth and the same mini
 Diamond, iron, aluminium and polyethylene have moduli of $1050$, $207$, $69$ and $0.8\ \mathrm{GPa}$ and melting or softening points of $3550$, $1538$, $660$ and $130\ {}^{\circ}\mathrm{C}$. Show that the two properties track the bond type and not the density or the atomic mass.
 ::: solution
 **The ranking is the bond.** Diamond is network covalent with an enthalpy of atomisation of $717\ \mathrm{kJ}$ per mole of atoms — twice the $346\ \mathrm{kJ / mol}$ carbon-carbon bond energy, because each atom owns four half-bonds; iron is metallic with a partially filled $3d$ band and $416\ \mathrm{kJ / mol}$; aluminium is metallic with a free-electron bond of $326\ \mathrm{kJ / mol}$; polyethylene has a $346\ \mathrm{kJ / mol}$ carbon-carbon backbone but softens by **interchain van der Waals** forces of $5\ \mathrm{kJ / mol}$, which is why it softens at $130\ {}^{\circ}\mathrm{C}$ and not at $4000$.
-**Density is not the cause.** Lead is denser than aluminium and has a modulus a fifth of aluminium's; magnesium is lighter than steel and stiffer per kilogram than steel is. The correct comparison is modulus **per unit density**, which for a covalent solid is unbeatable:
+**Density is not the cause.** Lead is denser than aluminium and has a modulus a fifth of aluminium's; magnesium is a quarter of the density of steel and has almost exactly the same stiffness per kilogram. The correct comparison is modulus **per unit density**, which for a covalent solid is unbeatable:
 $$
 \frac{E}{\rho}: \quad \text{diamond} \ 299, \quad \mathrm{B_4 C} \ 179, \quad \mathrm{Be} \ 155, \quad \mathrm{SiC} \ 132, \quad \text{steel, Al, Ti} \ 26\ \left[ \mathrm{GN\, m\, kg^{- 1}} \right] .
 $$
 **The asymmetry shows up as expansion.** $\alpha$ at room temperature is $1 \times 10^{- 6}\ \mathrm{K^{- 1}}$ for diamond, $12$ for iron, $23$ for aluminium, $29$ for lead and $200$ for polyethylene, in $10^{- 6}\ \mathrm{K^{- 1}}$ — a two-hundred-fold range that tracks the well's asymmetry and the well depth together, and that has made diamond the substrate of choice for high-power electronics where the heat has to go somewhere and the part must not move.
 
-*Check.* A useful scaling: $E \approx 6 E_0 / \left( \pi N_A r_0 a^{2} \right)$ with $a$ the interatomic spacing, which for diamond with $r_0 = 0.154\ \mathrm{nm}$ gives an order-of-magnitude $10^{3}\ \mathrm{GPa}$ and for polyethylene's interchain spacing of $0.4\ \mathrm{nm}$ and $5\ \mathrm{kJ / mol}$ gives $10^{0}\ \mathrm{GPa}$ $\checkmark$
+*Check.* A modulus is an energy per unit volume, so a crude scaling is the bond energy per atomic volume, $E \sim E_0 / \left( N_A r_0^{3} \right)$. For diamond with $717\ \mathrm{kJ / mol}$ and $r_0 = 0.154\ \mathrm{nm}$ this gives $7.17 \times 10^{5} / \left( 6.022 \times 10^{23} \times \left( 1.54 \times 10^{- 10} \right)^{3} \right) = 3.3 \times 10^{11}\ \mathrm{Pa} = 330\ \mathrm{GPa}$, and for polyethylene's interchain bond of $5\ \mathrm{kJ / mol}$ at $0.4\ \mathrm{nm}$ it gives $0.13\ \mathrm{GPa}$. Both are within a factor of a few of the measured $1050$ and $0.8\ \mathrm{GPa}$ — the right order of magnitude and, more importantly, the right ratio of nearly four decades $\checkmark$
 
-*Sanity.* The one place this argument is routinely misapplied is the hope that a new alloy will be stiffer than an old one. The largest modulus change achievable by alloying a metal is about ten per cent — tungsten in iron raises the modulus of some steels from $200$ to $210\ \mathrm{GPa}$, and the same tungsten costs thirty times what the iron does. Where stiffness is the constraint the answer is geometry, a different crystal family, or a fibre composite in which the stiff phase carries the load along the fibres and the polymer matrix does nothing but hold them apart.
+*Sanity.* The one place this argument is routinely misapplied is the hope that a new alloy will be stiffer than an old one. Ordinary alloying moves a metal's modulus by a few per cent — compare the $195$ to $210\ \mathrm{GPa}$ spread of all the steels — while the alloying additions cost many times what the iron does. Where stiffness is the constraint the answer is geometry, a different crystal family, or a fibre composite in which the stiff phase carries the load along the fibres and the polymer matrix does nothing but hold them apart.
 :::
 :::
 
@@ -78,11 +78,11 @@ Most engineering elements and all ceramics adopt different structures at differe
 **Iron**: BCC $\alpha$ to $912\ {}^{\circ}\mathrm{C}$, FCC $\gamma$ to $1394$, BCC $\delta$ to the melt. The $\alpha \rightarrow \gamma$ transformation on heating **contracts** the metal by about one per cent, because the packing factor rises from $0.68$ to $0.74$; on cooling it expands, and every heat-treatment distortion and quench crack in the steel industry descends from that one per cent.
 **Titanium**: HCP $\alpha$ to $882\ {}^{\circ}\mathrm{C}$, then BCC $\beta$. The $\beta$ phase is the one that can be solution-treated and aged, which is why every titanium alloy is named for the phase it retains at room temperature.
 **Carbon**: graphite at ambient pressure, $\rho = 2.26$; diamond at high pressure, $\rho = 3.51$. The fifty per cent density difference is why a diamond anvil cell reaches a megabar and why a graphite inclusion in cast iron makes the casting expand as it solidifies and therefore cast to close tolerance.
-**Zirconia**: monoclinic to tetragonal at $1170\ {}^{\circ}\mathrm{C}$ with a four per cent volume change that cracks a pure-zirconia refractory to powder; the addition of eight per cent yttria retains the cubic structure to room temperature and gives the transformation-toughened ceramic of dental crowns and thermal-barrier coatings.
+**Zirconia**: monoclinic to tetragonal at $1170\ {}^{\circ}\mathrm{C}$ with a four per cent volume change that cracks a pure-zirconia refractory to powder; about $3\ \mathrm{mol}\ \%$ yttria retains the tetragonal phase metastably to room temperature and gives the transformation-toughened ceramic of dental crowns, about $7$–$8\ \mathrm{wt}\ \%$ gives the non-transforming tetragonal phase of thermal-barrier coatings, and larger additions stabilise the cubic phase completely.
 :::
 
 ::: example Theoretical density of copper and of iron's two phases {#ex-density}
-Copper is FCC with $a = 0.3615\ \mathrm{nm}$ and $A = 63.546$. Iron is BCC with $a = 0.2866\ \mathrm{nm}$ at room temperature and FCC with $a = 0.3663\ \mathrm{nm}$ at $912\ {}^{\circ}\mathrm{C}$; $A = 55.845$. Compute the densities and the volume per atom of each.
+Copper is FCC with $a = 0.3615\ \mathrm{nm}$ and $A = 63.546$. Iron is BCC with $a = 0.2866\ \mathrm{nm}$ at room temperature (and $0.2904\ \mathrm{nm}$ just below the transformation) and FCC with $a = 0.3647\ \mathrm{nm}$ just above it, at about $912\ {}^{\circ}\mathrm{C}$; $A = 55.845$. Compute the densities and the volume per atom of each.
 ::: solution
 **Copper.** Four atoms per cell:
 $$
@@ -95,11 +95,11 @@ $$
 $$
 **$\gamma$-iron.** Four atoms per cell:
 $$
-\rho_\gamma = 7.55\ \mathrm{g / cm^{3}} \quad \text{at} \ 912\ {}^{\circ}\mathrm{C} .
+\rho_\gamma = \frac{4 \times 55.845}{6.022 \times 10^{23} \times \left( 3.647 \times 10^{- 8} \right)^{3}} = 7.65\ \mathrm{g / cm^{3}} \quad \text{at} \ 912\ {}^{\circ}\mathrm{C} .
 $$
-**Volume per atom.** $V_\alpha = a^{3} / 2 = 0.01177\ \mathrm{nm^{3}}$ and $V_\gamma = a^{3} / 4 = 0.01229\ \mathrm{nm^{3}}$, a difference of $4.4\ \%$ — but the $\gamma$ value is measured at $912\ {}^{\circ}\mathrm{C}$ and includes about $4\ \%$ of thermal expansion, so the two structures at the transformation temperature occupy very nearly the same volume and the true transformation strain is the residual one per cent.
+**Volume per atom.** At room temperature $V_\alpha = a^{3} / 2 = 0.01177\ \mathrm{nm^{3}}$; just below $912\ {}^{\circ}\mathrm{C}$, after about $4\ \%$ of thermal expansion, $V_\alpha = 0.2904^{3} / 2 = 0.01225\ \mathrm{nm^{3}}$, while just above it $V_\gamma = 0.3647^{3} / 4 = 0.01213\ \mathrm{nm^{3}}$. The $\alpha \rightarrow \gamma$ change at the transformation temperature is therefore a **contraction** of $1.0\ \%$ in volume, the one per cent quoted in [[#def-allotropy]]; comparing the room-temperature $\alpha$ cell with the hot $\gamma$ cell would wrongly suggest an expansion of $3\ \%$.
 
-*Check.* The atomic radius implied by each structure: copper $R = a / \left( 2 \sqrt{2} \right) = 0.1278\ \mathrm{nm}$, $\alpha$-iron $R = a \sqrt{3} / 4 = 0.1241\ \mathrm{nm}$, $\gamma$-iron $R = a / \left( 2 \sqrt{2} \right) = 0.1295\ \mathrm{nm}$. The radius is not a constant — it is $4\ \%$ larger in the more closely packed structure, which is the coordination-radius correction every table of ionic radii carries and which a first-year calculation of this kind ignores. $\checkmark$
+*Check.* The atomic radius implied by each structure: copper $R = a / \left( 2 \sqrt{2} \right) = 0.1278\ \mathrm{nm}$, $\alpha$-iron $R = a \sqrt{3} / 4 = 0.1241\ \mathrm{nm}$, $\gamma$-iron $R = a / \left( 2 \sqrt{2} \right) = 0.1289\ \mathrm{nm}$. The hard-sphere radius is not a constant — it is about $4\ \%$ larger in $\gamma$ than in room-temperature $\alpha$, partly thermal expansion and partly the higher coordination ($12$ against $8$), the same coordination correction that tables of atomic and ionic radii carry. $\checkmark$
 
 *Sanity.* The measured density of electrolytic copper is $8.89$ against the theoretical $8.93$, a $0.5\ \%$ deficit that is grain-boundary volume and quench vacancies. In a sintered part the same calculation gives the relative density directly, and a sintered bearing advertised at "ninety per cent theoretical density" has ten per cent porosity that will hold oil — which is the point of making it that way.
 :::
@@ -134,7 +134,7 @@ $$
 \begin{array}{l l}
 \text{FCC} & hkl \ \text{all odd or all even} \\
 \text{BCC} & h + k + l \ \text{even} \\
-\text{HCP} & - h + k + l \ \text{even for the first two-index families} .
+\text{HCP} & \text{absent when} \ h + 2 k = 3 N \ \text{and} \ l \ \text{odd} .
 \end{array}
 $$
 The consequence is that the first three peaks of an FCC pattern come from $\left( 111 \right), \left( 200 \right), \left( 220 \right)$ and the first three of a BCC pattern from $\left( 110 \right), \left( 200 \right), \left( 211 \right)$, and the **ratio of the squared sines** of the half-angles identifies the structure without knowing the lattice parameter:
@@ -149,18 +149,18 @@ An unknown metal gives X-ray peaks at $2 \theta = 43.32^{\circ}$, $50.45^{\circ}
 ::: solution
 **The ratio test.** With $\sin^{2} \theta$ proportional to $h^2 + k^2 + l^2$:
 $$
-\begin{array}{c c c c c}
-2 \theta & 43.32 & 50.45 & 74.13 & 89.99 \\
-\sin^{2} \theta & 0.1362 & 0.1816 & 0.3632 & 0.4995 \\
-\text{ratio} & 1.000 & 1.333 & 2.667 & 3.667 \\
-\times 3 & 3 & 4 & 8 & 11
+\begin{array}{c c c c c c}
+2 \theta & 43.32 & 50.45 & 74.13 & 89.94 & 95.15 \\
+\sin^{2} \theta & 0.1362 & 0.1816 & 0.3633 & 0.4995 & 0.5449 \\
+\text{ratio} & 1.000 & 1.333 & 2.667 & 3.667 & 4.000 \\
+\times 3 & 3 & 4 & 8 & 11 & 12
 \end{array}
 $$
-The sequence $3, 4, 8, 12$ — with no $5$, $6$ or $7$ — is the FCC sequence $\left( 111 \right), \left( 200 \right), \left( 220 \right), \left( 311 \right)$ $\checkmark$
+The sequence $3, 4, 8, 11, 12$ — with no $5$, $6$ or $7$ — is the FCC sequence $\left( 111 \right), \left( 200 \right), \left( 220 \right), \left( 311 \right), \left( 222 \right)$ $\checkmark$
 **The lattice parameter.** From $\left( 111 \right)$, $d = \lambda / \left( 2 \sin \theta \right) = 0.15406 / 0.7382 = 0.2087\ \mathrm{nm}$ and $a = d \sqrt{3} = 0.3615\ \mathrm{nm}$.
 **The element.** FCC with $a = 0.3615\ \mathrm{nm}$ is copper, whose tabulated value is $0.36150\ \mathrm{nm}$; the atomic radius follows as $a / \left( 2 \sqrt{2} \right) = 0.1278\ \mathrm{nm}$ and the theoretical density as $8.93\ \mathrm{g / cm^{3}}$.
 
-*Check.* The $\left( 200 \right)$ reflection predicts $\sin^{2} \theta = \left( 0.15406 / \left( 2 \times 0.3615 / 2 \right) \right)^{2} = 0.1817$ against the measured $0.1817$ $\checkmark$
+*Check.* With $d_{200} = a / 2$ the $\left( 200 \right)$ reflection predicts $\sin^{2} \theta = \left( \lambda / a \right)^{2} = \left( 0.15406 / 0.3615 \right)^{2} = 0.1816$ against the measured $0.1816$ $\checkmark$
 
 *Sanity.* The peak positions were computed from the same lattice parameter used to identify the metal, so this example is a closed loop; the real procedure is the reverse and the real difficulty is not the indexing but the **preferred orientation**. A rolled sheet of copper has its $\left( 111 \right)$ planes parallel to the surface, and a powder-scan of that sheet gives a $\left( 111 \right)$ peak five times too strong and a $\left( 220 \right)$ peak half as strong as the tables say. The fix is to grind the surface, rotate the sample, or use a diffractometer with the sample spinning about two axes — and the fact that the texture is measurable at all is the reason a rolling mill can make a transformer core a thousand times better in one direction than in the other.
 :::
@@ -186,9 +186,9 @@ E_{\mathrm{Hill}} = \frac{9 K G}{3 K + G} = 211\ \mathrm{GPa} ,
 $$
 against the measured $207$ for a random polycrystal. A **textured** sheet departs from this by tens of per cent between directions, which is the whole of the difference between a steel that deep-draws a car door and one that ears at the corners.
 
-*Check.* The Voigt and Reuss moduli for iron are $227$ and $194\ \mathrm{GPa}$, a spread of $17\ \%$ that scales with the anisotropy; for aluminium the two are $71.5$ and $71.3$, a spread of $0.3\ \%$, and an aluminium sheet is isotropic whatever the mill does to it. $\checkmark$
+*Check.* The Voigt and Reuss moduli for iron are $227$ and $194\ \mathrm{GPa}$, a spread of $17\ \%$ that scales with the anisotropy; for aluminium the two are $71.3$ and $70.7\ \mathrm{GPa}$, a spread under $1\ \%$, and an aluminium sheet is isotropic whatever the mill does to it. $\checkmark$
 
-*Sanity.* Two technologies live on this anisotropy and one dies by it. Silicon for microelectromechanical systems is cut on $\left\langle 111\right\rangle$-oriented wafers because $E_{111} / E_{100} = 1.45$ changes the deflection of a diaphragm by half. Transformer steel is rolled into a Goss texture $\left\{ 110 \right\} \left\langle 001\right\rangle$ because iron's magnetic easy axis is $\left\langle 100\right\rangle$, and the texture roughly halves the core loss in the rolling direction at the cost of making the transverse direction much worse. And a single-crystal turbine blade, grown without grain boundaries at all and oriented with $\left\langle 001\right\rangle$ along the stress, deliberately uses the **softest** direction of a nickel superalloy — the one chosen for creep and thermal-fatigue life rather than for stiffness, because the $\gamma^{\prime}$ precipitates shear more easily on that orientation and the blade tolerates the resulting strain by having no grain boundary at which cavities could nucleate.
+*Sanity.* Two technologies live on this anisotropy and one dies by it. In silicon for microelectromechanical systems the modulus runs from $130\ \mathrm{GPa}$ along $\left\langle 100\right\rangle$ to $188\ \mathrm{GPa}$ along $\left\langle 111\right\rangle$, a ratio of $1.45$, so the deflection of a beam or diaphragm depends on how it is aligned to the wafer's crystal axes and must be designed with the right modulus. Transformer steel is rolled into a Goss texture $\left\{ 110 \right\} \left\langle 001\right\rangle$ because iron's magnetic easy axis is $\left\langle 100\right\rangle$, and the texture roughly halves the core loss in the rolling direction at the cost of making the transverse direction much worse. And a single-crystal turbine blade, grown without grain boundaries at all and oriented with $\left\langle 001\right\rangle$ along the stress, deliberately uses the **softest** direction of a nickel superalloy: the low modulus along $\left\langle 001\right\rangle$ lowers the thermal stress produced by a given temperature gradient and so lengthens thermal-fatigue life, while the absence of grain boundaries removes the sites at which creep cavities nucleate.
 :::
 :::
 
@@ -209,15 +209,15 @@ $$
 $$
 **The first result is a shock and is exactly right.** Every isotropic metal has the same specific stiffness to within ten per cent, because $E / \rho$ is set by the bond energy, the atomic mass and the atomic volume, and those three scale together across the whole periodic table. There is no metal that is both light and stiff, and the search for one is the shortest dead end in materials engineering.
 **The second result is the design.** Specific stiffness can be raised only by (i) putting the stiffness where the load goes, with a fibre, which is why CFRP reaches $103$ along the fibres, or (ii) using a stiff **shape**, for which the relevant index is $E^{1 / 3} / \rho$ for a stiff panel and $E^{1 / 2} / \rho$ for a stiff beam.
-**Formability at modest temperature.** Magnesium's three basal slip systems make it hard to form cold and it is warm-formed at $200$ to $300\ {}^{\circ}\mathrm{C}$; aluminium's twelve FCC systems make it the easiest engineering metal to form; titanium's HCP $\alpha$ needs $500\ {}^{\circ}\mathrm{C}$ and an argon atmosphere.
-**Choice.** For a formed, complex, light, moderately stiff part the answer is aluminium, and the reason is not its modulus but its twelve slip systems, its $400\ {}^{\circ}\mathrm{C}$ recrystallisation and its price. Where the stiffness index dominates, the answer is CFRP or beryllium, and the forming question becomes a lay-up question or a machining question, because beryllium is made by powder metallurgy and its dust is a chronic lung hazard that has ended more than one laboratory.
+**Formability at modest temperature.** Magnesium's three basal slip systems make it hard to form cold and it is warm-formed at $200$ to $300\ {}^{\circ}\mathrm{C}$; aluminium's twelve FCC systems make it the easiest engineering metal to form; titanium alloys are usually hot-formed several hundred degrees higher, with protection against oxidation.
+**Choice.** For a formed, complex, light, moderately stiff part the answer is aluminium, and the reason is not its modulus but its twelve slip systems, its $400\ {}^{\circ}\mathrm{C}$ recrystallisation and its price. Where the stiffness index dominates, the answer is CFRP or beryllium, and the forming question becomes a lay-up question or a machining question, because beryllium is made by powder metallurgy and its dust causes chronic beryllium disease, so machining it needs strict controls.
 
 *Design comment.* The lesson of the table is the single most useful idea in materials selection and it is worth stating as a rule: **for stiffness-limited, weight-limited design, all metals are the same material.** The corollary is that the choice among metals is never made on stiffness — it is made on strength, cost, corrosion, formability, conductivity, toughness, temperature capability or fatigue, in that order of how often it decides. The choice of metal **matrix** for a composite is made on the matrix's own properties, which are then almost irrelevant, because the fibre carries the load and the matrix only distributes it; and the choice of **fibre** is made on $E / \rho$, where carbon at $103$ beats steel at $26$ and glass-epoxy at $23$ does not beat steel at all — the reason glass fibre is chosen for strength, stiffness-per-pound-of-cost and damage tolerance, and never for stiffness alone.
 :::
 :::
 
 ::: history
-The idea that atoms sit on a lattice is **René Just Haüy**'s, who in 1784 dropped a crystal of calcite in a fireplace, noticed that every fragment was a rhombohedron, and inferred a structure of identical building blocks; his *Traité de minéralogie* of 1801 stated the law of rational indices that still carries his name. **William Hyde Wollaston** proposed the cubic, face-centred and body-centred cubic lattices in 1813 by counting the angles of real crystals. The eleven lattice types of two dimensions and the fourteen of three were proved independently by **Evgraf Fedorov** in 1885 and **Arthur Morley Schoenflies** in 1891; **William Lawrence Bragg** derived his law at twenty-two in 1912, in a sentence written on a scrap of paper for his father **William Henry Bragg**, and the two shared the 1915 Nobel Prize. **Max von Laue**, **Paul Knipping** and **Walter Friedrich**'s 1912 diffraction photograph of copper sulphate proved the lattice and the wavelength at once. The close-packed structures and their stacking sequences were worked out by **Peter Debye and Paul Scherrer** in 1918 and by **William Lawrence Bragg** in 1913, and the identification of FCC and HCP as the two stackings $ABCABC$ and $ABAB$ is in Bragg's 1913 paper. **William Hume-Rothery**'s rules of 1926-1934 on solubility, from a career begun as a schoolmaster without a degree, connected the structures to the electron concentration and the atomic size. The Goss texture of transformer steel is **George Goss**'s 1935 paper, and the single-crystal turbine blade was **Pratt & Whitney**'s alloy PWA 1480, developed through the 1970s for the F100 engine, which replaced the directionally solidified MarM-247 blades whose grain boundaries had limited the turbine-entry temperature by two hundred degrees.
+The idea that crystals are built of identical units is **René Just Haüy**'s: the story is that around 1781 he dropped a crystal of calcite, noticed that the fragments were all rhombohedra, and inferred a structure of identical building blocks, which he set out in his *Essai d'une théorie sur la structure des crystaux* of 1784 and his *Traité de minéralogie* of 1801; the law of rational indices is still called Haüy's law. **Auguste Bravais** showed in 1848 that there are exactly fourteen space lattices in three dimensions, and **Evgraf Fedorov** and **Arthur Schoenflies** independently derived the 230 space groups in 1891. In 1912 **Max von Laue**, with **Walter Friedrich** and **Paul Knipping**, obtained the first X-ray diffraction photograph, of copper sulphate, which proved at once that crystals are lattices and that X-rays are waves; later that year **William Lawrence Bragg**, aged twenty-two, gave the reflection condition that bears his name, and in 1913 he and his father **William Henry Bragg** solved the first crystal structures, among them sodium chloride and diamond. The two shared the 1915 Nobel Prize in Physics. **Peter Debye** and **Paul Scherrer** (1916) and, independently, **Albert Hull** (1917) introduced the powder method, which made the structures of the metals routine to determine. **William Hume-Rothery**'s work from 1926 onwards connected alloy structures and solubility to atomic size and electron concentration. The Goss texture of grain-oriented transformer steel is named after **Norman P. Goss**, who patented the process in 1934, and single-crystal turbine blades were developed at **Pratt & Whitney** through the 1970s, the first-generation alloy PWA 1480 entering airline service in the early 1980s.
 :::
 
 ## Where this leads
@@ -275,7 +275,7 @@ Five.
 :::
 
 ::: exercise Extinction {level=1 check="2"}
-Which value of $h + k + l$ is allowed for a body-centred cubic reflection?
+Body-centred cubic reflections require $h + k + l$ to be even. What is $h + k + l$ for the first (lowest-angle) reflection of a BCC metal? (Enter an integer.)
 ::: solution
 Even only — the first reflection is $\left( 110 \right)$ with $h + k + l = 2$.
 :::
@@ -286,9 +286,9 @@ Silver is FCC with $a = 0.4086\ \mathrm{nm}$ and $A = 107.87$. Give the atomic r
 ::: solution
 $R = a / \left( 2 \sqrt{2} \right) = 0.1445\ \mathrm{nm}$ and
 $$
-\rho = \frac{4 \times 107.87}{6.022 \times 10^{23} \times \left( 4.086 \times 10^{- 8} \right)^{3}} = 10.51\ \mathrm{g / cm^{3}} .
+\rho = \frac{4 \times 107.87}{6.022 \times 10^{23} \times \left( 4.086 \times 10^{- 8} \right)^{3}} = 10.50\ \mathrm{g / cm^{3}} .
 $$
-*Sanity.* The measured density of silver is $10.49$, a $0.2\ \%$ deficit; silver is one of the few metals whose theoretical and measured densities agree to better than a third of a per cent, because it is normally made and annealed free of both porosity and dissolved gas.
+*Sanity.* The handbook density of silver is $10.49\ \mathrm{g / cm^{3}}$, about $0.1\ \%$ below the theoretical value — the usual small deficit of a fully dense wrought metal.
 :::
 :::
 
@@ -300,7 +300,7 @@ $$
 \rho_{100} = \frac{2}{a^{2}} = 15.30\ \mathrm{nm^{- 2}},
 $$
 a ratio of $1.155$.
-*Sanity.* The $\left( 111 \right)$ plane covers $90.7\ \%$ of its area with atomic circles, which is the densest possible packing of equal circles in a plane and the reason slip goes there; the $15\ \%$ difference in planar density is also the $15\ \%$ difference in the surface energy of the two faces, which is why an annealed copper crystal etches with $\left( 111 \right)$ facets and why a silicon solar cell textured in alkaline solution becomes a pyramid of $\left\{ 111 \right\}$ faces that traps light.
+*Sanity.* The $\left( 111 \right)$ plane covers $90.7\ \%$ of its area with atomic circles, which is the densest possible packing of equal circles in a plane and the reason slip goes there; the densest planes also have the lowest surface energy and are the slowest to etch, which is why a silicon solar cell textured in alkaline solution becomes a pyramid of $\left\{ 111 \right\}$ faces that traps light.
 :::
 :::
 
@@ -309,9 +309,9 @@ Tungsten is BCC with $a = 0.3165\ \mathrm{nm}$. At what $2\theta$ does its secon
 ::: solution
 The BCC sequence gives $\left( 110 \right)$ then $\left( 200 \right)$; $d_{200} = 0.3165 / 2 = 0.1583\ \mathrm{nm}$ and
 $$
-\sin \theta = \frac{0.15406}{2 \times 0.1583} = 0.4867, \qquad \theta = 29.12^{\circ}, \qquad 2 \theta = 58.24^{\circ} .
+\sin \theta = \frac{0.15406}{2 \times 0.15825} = 0.4868, \qquad \theta = 29.13^{\circ}, \qquad 2 \theta = 58.26^{\circ} .
 $$
-*Sanity.* The $\left( 200 \right)$ peak of tungsten at $58.2^{\circ}$ sits close to the $\left( 111 \right)$ peak of iron at $44.7^{\circ}$ and the $\left( 200 \right)$ of iron at $65.0^{\circ}$, which is why a tungsten filament in a high-temperature diffractometer produces its own peaks beside the specimen's and why the pattern must be taken with the filament off, or the peaks indexed out.
+*Sanity.* The first peak, $\left( 110 \right)$, falls at $2 \theta = 40.27^{\circ}$, and the ratio $\sin^{2} \theta_2 / \sin^{2} \theta_1 = 4 / 2 = 2$ is the BCC signature. Iron, with its smaller cell, gives the same pair at $44.7^{\circ}$ and $65.0^{\circ}$: a larger lattice parameter moves every peak to a lower angle.
 :::
 :::
 
@@ -333,7 +333,7 @@ $$
 = \frac{\pi a^{3}}{4.2426\, a^{3}} = 0.7405 ,
 $$
 identical to the face-centred cubic value, as it must be since both are close packings of the same spheres and differ only in stacking sequence. $\checkmark$
-*Sanity.* Real HCP metals depart from the ideal ratio because the bond is not a sphere: magnesium has $c / a = 1.624$, zinc $1.856$ and cadmium $1.886$. The large ratios of zinc and cadmium mean the basal planes are further apart than hard spheres require, which is why their interlayer bonding is weak, why they cleave along the basal plane, and why a block of zinc can be split with a knife — a property no FCC or BCC metal shares. Titanium's ratio of $1.587$ is **below** ideal, which pushes atoms into the basal plane, activates non-basal slip at modest temperatures, and makes titanium, with zirconium, formable into sheet at temperatures where magnesium, zinc and cadmium cannot be.
+*Sanity.* Real HCP metals depart from the ideal ratio because the bond is not a sphere: magnesium has $c / a = 1.624$, zinc $1.856$ and cadmium $1.886$. The large ratios of zinc and cadmium mean the basal planes are further apart than hard spheres require, and zinc single crystals cleave readily on the basal plane at low temperature. Titanium's ratio of $1.587$ is **below** ideal; in titanium and zirconium prismatic slip on $\left\{ 10\bar{1} 0 \right\}$ is easier than basal slip, which supplies the extra slip systems that make them far more formable at room temperature than magnesium.
 :::
 :::
 
@@ -352,9 +352,9 @@ $$
 \end{array}
 $$
 **No isotropic metal passes**, and Invar fails by a factor of six.
-**The composite.** A carbon fibre has a **negative** axial expansion coefficient of $- 0.9 \times 10^{- 6}\ \mathrm{K^{- 1}}$ and a large positive transverse one of $+ 28$, so a laminate's expansion is a lay-up variable. A $\left[ 0 / \pm 60 \right]$ laminate of intermediate-modulus fibre reaches $\alpha \approx 0$ and can be tuned to within $\pm 0.5 \times 10^{- 6}$ by adjusting the angle.
+**The composite.** A unidirectional carbon-epoxy ply has a slightly **negative** expansion coefficient along the fibres, about $- 0.9 \times 10^{- 6}\ \mathrm{K^{- 1}}$, and a large positive one across them, about $+ 28 \times 10^{- 6}\ \mathrm{K^{- 1}}$, so a laminate's expansion is a lay-up variable. A $\left[ 0 / \pm 60 \right]$ laminate of intermediate-modulus fibre reaches $\alpha \approx 0$ and can be tuned to within $\pm 0.5 \times 10^{- 6}$ by adjusting the angle.
 **Mass.** A $200\ \mathrm{g}$ tube of $500\ \mathrm{mm}$ length and $20\ \mathrm{mm}$ diameter has a mean circumference of $62.8\ \mathrm{mm}$, so the available wall is $200 / \left( 500 \times 62.8 \rho \right)$: $4.0\ \mathrm{mm}$ in CFRP and $0.79\ \mathrm{mm}$ in Invar. Mass is not the binding constraint for either; the thermal allowance is, and only the composite meets it.
-**Choice.** CFRP with a tuned lay-up, and the design constraint is not the expansion but the **joint**: bonding CFRP to an aluminium fitting gives a bimetallic couple that both corrodes and, at $- 40\ {}^{\circ}\mathrm{C}$, shears the adhesive because aluminium shrinks $\left( 23 - 0 \right) \times 10^{- 6} \times 140 = 3200\ \mu\varepsilon$ more than the tube.
+**Choice.** CFRP with a tuned lay-up, and the design constraint is not the expansion but the **joint**: bonding CFRP to an aluminium fitting gives a galvanic couple that corrodes the aluminium and, if the adhesive was cured at $100\ {}^{\circ}\mathrm{C}$, by $- 40\ {}^{\circ}\mathrm{C}$ the aluminium has shrunk $\left( 23 - 0 \right) \times 10^{- 6} \times 140\ \mathrm{K} = 3200\ \mu\varepsilon$ more than the tube, a mismatch the adhesive must carry in shear.
 
 *Sanity.* This is the actual design problem of an optical bench, and the real answer is CFRP with a controlled cure-induced residual strain, because the **cure** shrinkage of the resin, which produces part-level strains of the order of a thousand microstrains, dwarfs the thermal allowance and must be measured on a witness panel and compensated in the tool geometry. The second real answer is silicon carbide or a glass-ceramic such as Zerodur for a mirror, where the requirement is not low expansion alone but low expansion **and** isotropy **and** polishability, and where CFRP cannot be made smooth enough to figure.
 :::

@@ -1,9 +1,9 @@
 A structure does not fail at the stress at which the material yields. It fails at the stress at which the largest crack in it becomes unstable, and that stress is set by the square root of the crack's length. The consequence is the single most counter-intuitive fact in engineering: **a component can be over-designed and still fail**, because raising the yield strength lowers the stress at which a given crack runs, and because the strongest available metals are the ones with the shortest tolerable cracks.
 
-Three mechanisms account for almost every engineering fracture. **Brittle fracture** is one equation, $K_{Ic} = Y \sigma \sqrt{\pi a}$, and is a race between the toughness of the material and the size of the flaw the shop floor can be trusted to leave in. **Fatigue** is an integral of a power law, and because the exponent is three or four, a small error in the applied stress is a large error in the life. **Creep** is an exponential in temperature, and because the activation energy is two or three hundred kilojoules, a fifty-degree error in a furnace thermocouple is a factor of seventeen in the design life.
+Three mechanisms account for almost every engineering fracture. **Brittle fracture** is one equation, $K_{Ic} = Y \sigma \sqrt{\pi a}$, and is a race between the toughness of the material and the size of the flaw the shop floor can be trusted to leave in. **Fatigue** is an integral of a power law, and because the exponent is three or four, a small error in the applied stress is a large error in the life. **Creep** is an exponential in temperature, and because the activation energy is two or three hundred kilojoules, a fifty-degree error in a furnace thermocouple is a factor of eight in the creep rate and nearly eighteen in the design life.
 
 ::: warning Three ways to misuse a fracture toughness
-**$K_{Ic}$ is a plane-strain property and most specimens do not measure it.** The standard requires a thickness of $B$ at least $2.5 \left( K_{Ic} / \sigma_y \right)^{2}$, which for a tough structural steel at $K_{Ic} = 200\ \mathrm{MPa\, m^{1/2}}$ is $80\ \mathrm{mm}$ — so a $10\ \mathrm{mm}$ plate tested in the laboratory gives an apparent toughness two or three times the plane-strain value, and a designer who uses it has no margin at all. Ask for the **thickness and orientation** with the number, and use the lower-bound value for the thickness you will actually have. **A fracture-mechanics calculation is only as good as the flaw size, and the flaw size is a statement about the inspection.** The honest form is "if a crack of depth $a$ is present the critical stress is $\sigma_c$, and the inspection finds cracks larger than $a_{\min}$ with probability $P$"; a calculation that quotes a critical stress without an $a_{\min}$ and an inspection interval is not a calculation but an assertion. And **$K_{Ic}$ is not a constant at low temperature or high rate**: a ferrite steel's toughness falls from $200$ to $20\ \mathrm{MPa\, m^{1/2}}$ between $+ 20$ and $- 50\ {}^{\circ}\mathrm{C}$, and a Charpy test on the actual plate at the actual minimum service temperature is the only defensible evidence. The Liberty ships of 1943 broke in the North Atlantic at a stress well below yield, near $0\ {}^{\circ}\mathrm{C}$, in a steel whose Charpy transition was a few degrees too high, and the whole of modern fracture mechanics descends from the investigations that followed.
+**$K_{Ic}$ is a plane-strain property and most specimens do not measure it.** The standard requires a thickness of $B$ at least $2.5 \left( K_{Ic} / \sigma_y \right)^{2}$, which for a tough steel at $K_{Ic} = 200\ \mathrm{MPa\, m^{1/2}}$ and $\sigma_y = 500\ \mathrm{MPa}$ is $400\ \mathrm{mm}$ — so a $10\ \mathrm{mm}$ plate tested in the laboratory gives an apparent toughness two or three times the plane-strain value, and a designer who uses it has no margin at all. Ask for the **thickness and orientation** with the number, and use the lower-bound value for the thickness you will actually have. **A fracture-mechanics calculation is only as good as the flaw size, and the flaw size is a statement about the inspection.** The honest form is "if a crack of depth $a$ is present the critical stress is $\sigma_c$, and the inspection finds cracks larger than $a_{\min}$ with probability $P$"; a calculation that quotes a critical stress without an $a_{\min}$ and an inspection interval is not a calculation but an assertion. And **$K_{Ic}$ is not a constant at low temperature or high rate**: a ferrite steel's toughness falls from $200$ to $20\ \mathrm{MPa\, m^{1/2}}$ between $+ 20$ and $- 50\ {}^{\circ}\mathrm{C}$, and a Charpy test on the actual plate at the actual minimum service temperature is the only defensible evidence. The Liberty ships of 1943 broke in the North Atlantic at a stress well below yield, near $0\ {}^{\circ}\mathrm{C}$, in a steel whose Charpy transition was a few degrees too high, and the whole of modern fracture mechanics descends from the investigations that followed.
 :::
 
 ## Brittle fracture
@@ -18,7 +18,7 @@ and creates two new surfaces at a cost of $2 \gamma_s$ per unit area of crack ad
 $$
 \sigma_f = \left( \frac{2 E \gamma_s}{\pi a \left( 1 - \nu^{2} \right)} \right)^{1 / 2} ,
 $$
-which explains the whole of the strength of glass and ceramics: the strength is not a material property but a function of the largest surface flaw, and a glass fibre of $5\ \mu\mathrm{m}$ diameter is strong because it cannot contain a large flaw, while the same glass in a $5\ \mathrm{mm}$ plate is forty times weaker.
+which explains the whole of the strength of glass and ceramics: the strength is not a material property but a function of the largest surface flaw, and a glass fibre of $5\ \mu\mathrm{m}$ diameter is strong because it cannot contain a large flaw, while the same glass in a $5\ \mathrm{mm}$ plate, whose largest flaw can be a thousand times longer, is some thirty times weaker ($\sqrt{1000} \approx 32$).
 **Orowan** and **Irwin** replaced the surface energy with the plastic work at the crack tip, $\gamma_{\mathrm{eff}} = \gamma_s + \gamma_p$, where $\gamma_p$ is a thousand to a hundred thousand times $\gamma_s$ in a metal — which is why a steel is tough and glass is not, and why the plastic work is the whole of the design problem.
 :::
 
@@ -54,7 +54,7 @@ $$
 r_p = \frac{1}{2 \pi} \left( \frac{K_I}{\sigma_y} \right)^{2} \quad \text{plane stress}, \qquad
 r_p = \frac{1}{6 \pi} \left( \frac{K_I}{\sigma_y} \right)^{2} \quad \text{plane strain} ,
 $$
-and the requirement is that $r_p$ be less than a tenth of both the crack depth and the remaining ligament. For a tough steel at $K = 200$ and $\sigma_y = 500$ the plane-strain zone is $8.4\ \mathrm{mm}$, so a $25\ \mathrm{mm}$ crack is at the edge of validity and a $5\ \mathrm{mm}$ crack is not a valid test at all.
+and the requirement is that $r_p$ be less than a tenth of both the crack depth and the remaining ligament. For a tough steel at $K = 200\ \mathrm{MPa\, m^{1/2}}$ and $\sigma_y = 500\ \mathrm{MPa}$ the plane-strain zone is $8.5\ \mathrm{mm}$, so the crack and the ligament must each be at least $85\ \mathrm{mm}$; a $25\ \mathrm{mm}$ crack, with a zone a third of its length, is not a valid test at all.
 When the zone is large, the **$J$-integral** replaces $K$:
 $$
 J = \int_{\Gamma} \left( W\, \mathrm{d} y - T_i\, \frac{\partial u_i}{\partial x}\, \mathrm{d} s \right)
@@ -68,7 +68,7 @@ f: 1.12*460*sqrt(x/1000*3.14159); 1.12*250*sqrt(x/1000*3.14159); 1.12*1930*sqrt(
 x: 0.1, 60
 y: 0, 260
 labels: 7075-T651 at 460 MPa; A36 at 250 MPa; AerMet 100 at 1930 MPa
-caption: The stress-intensity factor against crack depth for three materials loaded to their own yield strengths. The horizontal lines are their toughnesses — 24, 200 and $145\ \mathrm{MPa\, m^{1/2}}$. The crossings are the critical crack depths: $0.7\ \mathrm{mm}$ for the high-strength aluminium, $1.4\ \mathrm{mm}$ for the strongest steel and $162\ \mathrm{mm}$ for the mild steel. The mild steel is the only one of the three that can be designed against a crack a workman can see.
+caption: The stress-intensity factor against crack depth for three materials loaded to their own yield strengths. The horizontal lines are their toughnesses — 24, 200 and $145\ \mathrm{MPa\, m^{1/2}}$. The crossings are the critical crack depths: $0.7\ \mathrm{mm}$ for the high-strength aluminium and $1.4\ \mathrm{mm}$ for the strongest steel, while the mild-steel curve does not reach its toughness until $162\ \mathrm{mm}$, far beyond the right edge of the plot. The mild steel is the only one of the three that can be designed against a crack a workman can see.
 :::
 
 ::: definition The ductile-to-brittle transition {#def-dbtt}
@@ -90,7 +90,7 @@ Mean stress is corrected by **Goodman**,
 $$
 \frac{\sigma_a}{\sigma_{-1}} + \frac{\sigma_m}{\sigma_{\mathrm{UTS}}} = 1 ,
 $$
-or by the parabolic **Gerber** law $\sigma_a / \sigma_{-1} = 1 - \left( \sigma_m / \sigma_{\mathrm{UTS}} \right)^{2}$. Goodman is conservative and Gerber fits ductile data; the difference at a mean stress of half the ultimate is a factor of $1.33$ in life, which is why the choice is a contract matter.
+or by the parabolic **Gerber** law $\sigma_a / \sigma_{-1} = 1 - \left( \sigma_m / \sigma_{\mathrm{UTS}} \right)^{2}$. Goodman is conservative and Gerber fits ductile data; at a mean stress of half the ultimate Goodman allows an amplitude of $0.5\, \sigma_{-1}$ and Gerber $0.75\, \sigma_{-1}$, a factor of $1.5$ in the allowable amplitude and far more than that in life, which is why the choice is a contract matter.
 **The three killers of a fatigue calculation** are not the stress but the **surface** — a $0.2\ \mathrm{mm}$ scratch cuts the endurance limit of a high-strength steel by a third; **residual stress**, so that a shot-peened or carburised surface carries a mean compressive stress the Goodman correction cannot see and that is worth a factor of three in life; and **environment**, because corrosion fatigue in a chloride has no threshold at all and reduces the life to a tenth.
 :::
 
@@ -136,11 +136,12 @@ $$
 n = 1 & \text{Nabarro-Herring diffusion creep (lattice diffusion)} & \dot{\epsilon} \propto D_v / d^{2} \\
 n = 1,\ p = 3 & \text{Coble diffusion creep (boundary diffusion)} & \dot{\epsilon} \propto D_b \delta / d^{3} \\
 n = 5 & \text{dislocation climb (power-law creep)} & \text{the common case above } 0.4\, T_m \\
-n = 7,\ 11 & \text{low-temperature climb, or solute-stalled} & \\
-n = 23 & \text{grain-boundary sliding (superplasticity)} & \text{fine stable grain, high } T
+n \approx 3 & \text{solute-drag (viscous-glide) creep} & \text{some solid-solution alloys} \\
+n > 7 & \text{power-law breakdown} & \text{high stress, lower } T \\
+n \approx 2 & \text{grain-boundary sliding (superplasticity)} & \text{fine stable grain, high } T
 \end{array}
 $$
-The activation energy $Q_c$ is the **self-diffusion** enthalpy of the matrix — $285\ \mathrm{kJ / mol}$ for nickel, $190$ for aluminium, $240$ for $\alpha$-iron — which is the fingerprint that identifies the mechanism, and the reason a creep test's temperature control must be $\pm 2\ {}^{\circ}\mathrm{C}$: at $600\ {}^{\circ}\mathrm{C}$ a $50\ {}^{\circ}\mathrm{C}$ error changes the rate by a factor of six.
+The activation energy $Q_c$ is the **self-diffusion** enthalpy of the matrix — $285\ \mathrm{kJ / mol}$ for nickel, $142$ for aluminium, $250$ for $\alpha$-iron — which is the fingerprint that identifies the mechanism, and the reason a creep test's temperature control must be $\pm 2\ {}^{\circ}\mathrm{C}$: for nickel at $600\ {}^{\circ}\mathrm{C}$ a $50\ {}^{\circ}\mathrm{C}$ error changes the rate by a factor of eight.
 :::
 
 ::: definition Cavitation and the creep life {#def-cavitation}
@@ -173,7 +174,7 @@ $$
 **The verdict.** Only the mild steel has a critical crack larger than a visual inspection can be trusted to miss. A $7075$ wing spar at yield tolerates a $0.7\ \mathrm{mm}$ crack, which is smaller than the $1\ \mathrm{mm}$ a good eddy-current inspection reliably finds — so a $7075$ part **cannot** be designed to survive a crack and must be designed to exclude one, by proof testing, by fracture-control drawings that keep the loads out of the through-thickness direction, and by not using it where a crack would be a hazard.
 **The design response.** The aerospace industry moved from $7075$ to **2024-T3** and **2524** for fuselage skin and to **7050** and **7150** for wing lower booms precisely on this trade, and moved the whole design philosophy from **safe-life** — a calculation that no crack reaches critical size in the life — to **damage tolerance**, a calculation that a detectable crack does not reach critical size between inspections, after the 1954 Comet accidents.
 
-*Check.* The plastic zone at $a_c$ for $7075$ is $r_p = \left( 1 / 6 \pi \right) \left( 24 / 460 \right)^{2} = 0.14\ \mathrm{mm}$, a fifth of $a_c$, so small-scale yielding holds and the linear-elastic calculation is valid. For A36, $r_p = 8.4\ \mathrm{mm}$ against $a_c = 162\ \mathrm{mm}$, also valid. $\checkmark$
+*Check.* The plastic zone at $a_c$ for $7075$ is $r_p = \left( 1 / 6 \pi \right) \left( 24 / 460 \right)^{2} = 0.14\ \mathrm{mm}$, a fifth of $a_c$. For A36, $r_p = 34\ \mathrm{mm}$ against $a_c = 162\ \mathrm{mm}$, again a fifth. The ratio is the same for every material, $r_p / a_c = 1.12^{2} / 6 = 0.21$, because both scale as $\left( K_{Ic} / \sigma_y \right)^{2}$: at a stress equal to yield the plastic zone is twice the one-tenth limit, so these linear-elastic critical depths are upper estimates, and a plastic-zone correction makes them somewhat smaller. That is one more reason a design stress sits well below yield. $\checkmark$
 
 *Sanity.* The $162\ \mathrm{mm}$ figure is why a ship, a bridge and a pressure vessel can be designed against yield and inspected by eye, and why an airframe cannot. It is also why the **through-thickness** toughness, which is a third of the in-plane value in a plate, is the property that decides whether a lugged joint is damage-tolerant — and why a lugged joint in a high-strength aluminium forging is a fracture-critical item by definition.
 :::
@@ -184,19 +185,19 @@ An aluminium lap joint is loaded to a maximum of $150\ \mathrm{MPa}$ at $R = 0$.
 ::: solution
 **The critical crack.** Take the $2024\text{-}\mathrm{T}3$ value $K_{Ic} = 34\ \mathrm{MPa\, m^{1/2}}$, appropriate to a riveted lap joint in a frame-stressed panel:
 $$
-a_c = \frac{1}{\pi} \left( \frac{34}{1.12 \times 150} \right)^{2} = 43.5\ \mathrm{mm} .
+a_c = \frac{1}{\pi} \left( \frac{34}{1.12 \times 150} \right)^{2} = 13.0\ \mathrm{mm} .
 $$
 **The life.** With $C = 0.86 \times 10^{- 11}$ and $m = 3$, and $\left( 1.12 \times 150 \times 1.772 \right)^{3} = 297.7^{3} = 2.64 \times 10^{7}$,
 $$
 N = \frac{a_0^{- 0.5} - a_c^{- 0.5}}{0.5 \times 0.86 \times 10^{- 11} \times 2.64 \times 10^{7}}
-= \frac{22.36 - 0.152}{1.135 \times 10^{- 4}} = 1.6 \times 10^{5}\ \text{cycles} .
+= \frac{22.36 - 8.76}{1.135 \times 10^{- 4}} = 1.2 \times 10^{5}\ \text{cycles} .
 $$
-**The stress sensitivity.** The life goes as $\sigma^{- 3}$, so dropping to $100\ \mathrm{MPa}$ multiplies it by $1.5^{3} = 3.4$, giving $5.3 \times 10^{5}$ cycles.
-**The crack-size sensitivity.** Starting from $0.5\ \mathrm{mm}$ instead of $2\ \mathrm{mm}$ gives $3.5 \times 10^{5}$ cycles — a factor of $2.2$, not the factor of four a naive reading suggests, because $a^{- 0.5}$ is a weak function.
+**The stress sensitivity.** At a fixed critical crack the life goes as $\sigma^{- 3}$, so dropping to $100\ \mathrm{MPa}$ would multiply it by $1.5^{3} = 3.4$; in addition the critical crack grows to $\left( 1 / \pi \right) \left( 34 / 112 \right)^{2} = 29.3\ \mathrm{mm}$, so the exact life is $4.9 \times 10^{5}$ cycles, a factor of $4.1$.
+**The crack-size sensitivity.** Starting from $0.5\ \mathrm{mm}$ instead of $2\ \mathrm{mm}$ gives $3.2 \times 10^{5}$ cycles — a factor of $2.6$, not the factor of four a naive reading suggests, because $a^{- 0.5}$ is a weak function.
 
-*Check.* The growth rate at the start is $0.86 \times 10^{- 11} \times \left( 1.12 \times 150 \sqrt{\pi \times 0.002} \right)^{3} = 1.1 \times 10^{- 9}\ \mathrm{m / cycle}$ and at the end $6.9 \times 10^{- 6}\ \mathrm{m / cycle}$, a factor of six thousand, which is why the life is dominated by the last few millimetres. $\checkmark$
+*Check.* The growth rate at the start is $0.86 \times 10^{- 11} \times \left( 1.12 \times 150 \sqrt{\pi \times 0.002} \right)^{3} = 2.0 \times 10^{- 8}\ \mathrm{m / cycle}$ and at the end $3.4 \times 10^{- 7}\ \mathrm{m / cycle}$, a factor of $\left( 13.0 / 2 \right)^{1.5} = 17$, which is why most of the life is spent while the crack is still short and the last few millimetres go in a few thousand cycles. $\checkmark$
 
-*Sanity.* A $1.6 \times 10^{5}$-cycle life from a detectable crack is the reason an airliner's fuselage skin is inspected by eddy current every few hundred flight hours, and the reason damage-tolerance certification requires that a structure with a **maximum-assumed-flaw** still carry two thirds of ultimate load. It is also why the sensitivity to stress is the number to quote: a $10\ \%$ overload cuts the life by $27\ \%$, so a fleet that flies $10\ \%$ harder than the assumed spectrum needs an inspection interval $27\ \%$ shorter, not $10\ \%$.
+*Sanity.* A $1.2 \times 10^{5}$-cycle life from a detectable crack is the reason an airliner's fuselage skin is inspected by eddy current every few hundred flight hours, and the reason damage-tolerance certification requires that a structure with a **maximum-assumed-flaw** still carry two thirds of ultimate load. It is also why the sensitivity to stress is the number to quote: a $10\ \%$ overload cuts the life by $25\ \%$ ($1 / 1.1^{3} = 0.75$), so a fleet that flies $10\ \%$ harder than the assumed spectrum needs an inspection interval $25\ \%$ shorter, not $10\ \%$.
 :::
 :::
 
@@ -207,19 +208,19 @@ A turbine disk alloy has $Q_c = 285\ \mathrm{kJ / mol}$ and $n = 5$. Give the ch
 $$
 \frac{\dot{\epsilon}_2}{\dot{\epsilon}_1}
 = \exp \left[ \frac{285{,}000}{8.314} \left( \frac{1}{873} - \frac{1}{923} \right) \right]
-= \exp \left( 1.87 \right) = 6.5 .
+= \exp \left( 2.13 \right) = 8.4 .
 $$
 **Stress.** $1.2^{5} = 2.5$.
-**The comparison.** A $50\ {}^{\circ}\mathrm{C}$ temperature error is worth a factor of $6.5$ and a $20\ \%$ stress error a factor of $2.5$: **temperature control is the dominant variable in creep design**, and a furnace with $\pm 10\ {}^{\circ}\mathrm{C}$ uniformity is worth more than a $10\ \%$ better alloy.
+**The comparison.** A $50\ {}^{\circ}\mathrm{C}$ temperature error is worth a factor of $8.4$ and a $20\ \%$ stress error a factor of $2.5$: **temperature control is the dominant variable in creep design**, and a furnace with $\pm 10\ {}^{\circ}\mathrm{C}$ uniformity is worth more than a $10\ \%$ better alloy.
 **The Larson-Miller life.** At $150\ \mathrm{MPa}$, $873\ \mathrm{K}$ and $1{,}000\ \mathrm{h}$,
 $$
 P = \frac{873 \times \left( 20 + 3 \right)}{1000} = 20.1 .
 $$
-At the same stress and $923\ \mathrm{K}$, $\log_{10} t = 20{,}100 / 923 - 20 = 1.76$, so $t = 57\ \mathrm{h}$ — a factor of **seventeen** in life for fifty degrees.
+At the same stress and $923\ \mathrm{K}$, $\log_{10} t = 20{,}100 / 923 - 20 = 1.76$, so $t = 57\ \mathrm{h}$ — a factor of **eighteen** in life for fifty degrees.
 
-*Check.* The Monkman-Grant relation gives the same answer by another route: a rate $6.5$ times higher at the same strain to failure gives a life $6.5$ times shorter, and the extra factor of $2.6$ is the loss of ductility that accompanies the higher temperature. $\checkmark$
+*Check.* The Monkman-Grant relation gives the same answer by another route: a rate $8.4$ times higher at the same strain to failure gives a life $8.4$ times shorter, and the remaining factor of $2.1$ is the loss of ductility that accompanies the higher temperature. $\checkmark$
 
-*Sanity.* This is why every creep code specifies a **metal temperature** rather than a gas temperature and requires the part to be instrumented or the stress derated, why a blade's **thermal-barrier coating** is a life-limited component and not a convenience, and why a $10\ \%$ life knock-down is applied to the Larson-Miller curve of a cast blade containing pores. It is also why the industry's long-run tests — the $100{,}000\ \mathrm{h}$ exposures started in the 1960s on alloys still in service — are irreplaceable, because a twenty-year extrapolation of a $10{,}000\ \mathrm{h}$ test is exactly the seventeen-fold kind of error computed above.
+*Sanity.* This is why every creep code specifies a **metal temperature** rather than a gas temperature and requires the part to be instrumented or the stress derated, why a blade's **thermal-barrier coating** is a life-limited component and not a convenience, and why a $10\ \%$ life knock-down is applied to the Larson-Miller curve of a cast blade containing pores. It is also why the industry's long-run tests — the $100{,}000\ \mathrm{h}$ exposures started in the 1960s on alloys still in service — are irreplaceable, because a twenty-year extrapolation of a $10{,}000\ \mathrm{h}$ test is exactly the eighteen-fold kind of error computed above.
 :::
 :::
 
@@ -229,40 +230,41 @@ A landing-gear component in $7075\text{-}\mathrm{T}651$ is exposed to a marine a
 **The criterion.** Under a sustained load in a specific environment the relevant property is the **threshold stress-intensity factor for stress-corrosion cracking**, $K_{\mathrm{ISCC}}$, which for $7075\text{-}\mathrm{T}651$ in a marine atmosphere is $10$ to $14\ \mathrm{MPa\, m^{1/2}}$ against a $K_{Ic}$ of $24$ — **less than half**.
 **The critical crack.**
 $$
-a_c = \frac{1}{\pi} \left( \frac{12}{1.12 \times 300} \right)^{2} = 1.4\ \mathrm{mm} .
+a_c = \frac{1}{\pi} \left( \frac{12}{1.12 \times 300} \right)^{2} = 0.41\ \mathrm{mm} ,
 $$
+below the $1\ \mathrm{mm}$ that an eddy-current inspection reliably finds, so the part cannot be protected by inspection.
 **The mechanism.** In $7075\text{-}\mathrm{T}651$ the peak-aged $\eta^{\prime}\ \mathrm{MgZn_2}$ matrix precipitates are anodic to the grain boundaries, along which the coarse equilibrium $\mathrm{MgZn_2}$ and the solute-denuded zones form a continuous anode-cathode-anode array. The crack runs **intergranularly** along the boundary, and its path is set by the boundary orientation and not by the stress — which is why the **short-transverse** orientation is $40\ \%$ worse than the long-transverse and why a specification must state the orientation.
 **The design response, in order of preference.**
 1. **Change the temper.** $\mathrm{T}7351$ is **over-aged**, which coarsens the boundary precipitate and thickens the denuded zone, at a cost of $12\ \%$ in strength and a gain of a factor of three in $K_{\mathrm{ISCC}}$. This is the standard aerospace answer and it is a deliberate trade of strength for the environment property.
 2. **Remove the sustained stress.** Shot-peen the surface to leave $- 400\ \mathrm{MPa}$ of residual compression, which subtracts from the applied mean and can take $K_{\max}$ below $K_{\mathrm{ISCC}}$ entirely.
 3. **Exclude the environment.** A zinc-flake or cadmium plating, a chromate-sealed primer, and a design with no crevice and no drain hole that can clog.
-4. **Change the alloy.** A $7050$-T7451, a lower zinc-to-copper ratio, or a $2000$- or $4000$-series where the loads allow.
+4. **Change the alloy.** A $7050$-T7451, with a lower zinc-to-copper ratio, or a $2000$-series alloy in an artificially aged temper where the loads allow.
 **The same mechanism, different species.** **Hydrogen embrittlement** is the identical argument with hydrogen instead of chloride: a $1{,}900\ \mathrm{MPa}$ steel's threshold falls from $60$ to $15\ \mathrm{MPa\, m^{1/2}}$ in a cathodic or acid environment, and the industry's rule that **no fastener above $1{,}500\ \mathrm{MPa}$ may be electroplated without a four-hour bake at $190\ {}^{\circ}\mathrm{C}$** is the whole of the design response to a plating bath that is itself a hydrogen source.
 
-*Design comment.* The general rule is that **a sustained-load environment property is neither the fatigue property nor the toughness**, and that a designer who reaches for $K_{Ic}$ when the load is static and the environment aggressive has made an error of two or three. The three environment properties are $K_{\mathrm{ISCC}}$ for stress-corrosion, $\Delta K_{\mathrm{th}}$ in the relevant environment for corrosion fatigue — where the value can be $1\ \mathrm{MPa\, m^{1/2}}$ rather than $3$ — and the hydrogen threshold $K_{\mathrm{TH}}$, which for the strongest steels is below $20\ \mathrm{MPa\, m^{1/2}}$ and is the reason the strongest fasteners in airframe service are $1{,}600\ \mathrm{MPa}$ and not $2{,}000$.
+*Design comment.* The general rule is that **a sustained-load environment property is neither the fatigue property nor the toughness**, and that a designer who reaches for $K_{Ic}$ when the load is static and the environment aggressive has made an error of a factor of two or three. The three environment properties are $K_{\mathrm{ISCC}}$ for stress-corrosion, $\Delta K_{\mathrm{th}}$ in the relevant environment for corrosion fatigue — where the value can be $1\ \mathrm{MPa\, m^{1/2}}$ rather than $3$ — and the hydrogen threshold $K_{\mathrm{TH}}$, which for the strongest steels is below $20\ \mathrm{MPa\, m^{1/2}}$ and is the reason the strongest fasteners in airframe service are $1{,}600\ \mathrm{MPa}$ and not $2{,}000$.
 :::
 :::
 
 ::: example Design {#ex-design-fail}
-Select the material and the design basis for a bolted ground-structure joint that must hold a $1{,}200\ \mathrm{MPa}$ preload, survive outdoor service, and tolerate being over-torqued in assembly.
+Select the material and the design basis for a bolted ground-structure joint that uses $1{,}200\ \mathrm{MPa}$-class (property class 12.9) bolts, must survive outdoor service, and must tolerate being over-torqued in assembly.
 ::: solution
 **The failure modes, in the order they actually happen.**
 1. **Hydrogen embrittlement** at assembly, from an electroplated fastener loaded within forty-eight hours.
 2. **Thread stripping** in the weaker member, which is the design limit for a steel bolt in an aluminium or a cast housing.
 3. **Fatigue from the preload scatter**, because a friction coefficient of $0.10$ against $0.20$ changes the tension by $40\ \%$ and the joint's load range by more.
 4. **Over-torque yielding**, which is the requirement in the question.
-**Material.** A $1{,}200\ \mathrm{MPa}$-class fastener is a **medium-carbon quenched-and-tempered alloy steel**, $35\mathrm{CrMo}$ or $42\mathrm{CrMo4}$, at $110$ to $125\ \mathrm{ksi}$ proof, or an **A286** or **Inconel 718** stainless where corrosion governs. At $1{,}200\ \mathrm{MPa}$ the hydrogen threshold is about $40\ \mathrm{MPa\, m^{1/2}}$ and the material is usable; at $1{,}500$ it is $25$ and the design becomes a plating specification.
+**Material.** A $1{,}200\ \mathrm{MPa}$-class fastener is a **medium-carbon quenched-and-tempered alloy steel**, $35\mathrm{CrMo}$ or $42\mathrm{CrMo4}$, with a proof stress of $970\ \mathrm{MPa}$ ($140\ \mathrm{ksi}$), or an **A286** or **Inconel 718** stainless where corrosion governs. At $1{,}200\ \mathrm{MPa}$ the hydrogen threshold is about $40\ \mathrm{MPa\, m^{1/2}}$ and the material is usable; at $1{,}500$ it is $25$ and the design becomes a plating specification.
 **The coating.** **Zinc-flake applied non-electrolytically** or **mechanical galvanising**, neither of which deposits hydrogen. If electrolytic zinc is unavoidable, bake at $190\ {}^{\circ}\mathrm{C}$ for four hours **within four hours** of plating. Never cadmium on a high-strength steel, and never in contact with aluminium in a wet chloride.
 **The design against over-torque.** Specify **yield-on-demand** tightening — the torque-angle method with the yield point detected in the tool — rather than a torque, because torque-tension scatter is $\pm 30\ \%$ and angle-preload scatter is $\pm 5\ \%$. The over-torque case is then bounded by the tool's shut-off at a defined angle, and the joint is designed to the **proof** load and not the ultimate.
 **The design against fatigue.** The bolt's alternating stress is only about one ninth of the applied load range, because the bolt is roughly nine times softer than the clamp — which is why a **long, slender** bolt with **washers** to lengthen the grip is the fatigue answer, and why a short stubby bolt in a stiff joint fails and a slender one in a soft joint does not.
 **The design against stripping.** The female thread must have $1.5$ times the bolt's thread-shear area, which for an aluminium housing means a **threaded insert** or a **steel bushing**, and for a cast housing means the section is designed for the thread root and not for the bolt.
 
-*Design comment.* The general rule is that **a bolted joint fails by assembly and not by service**, and that the specification's most important clauses are the coating process, the bake-out, the tightening method and the lubricant — none of which is a material property. The $1{,}200\ \mathrm{MPa}$ requirement is the easy part; the requirement that survives is the one about hydrogen.
+*Design comment.* The general rule is that **a bolted joint fails by assembly and not by service**, and that the specification's most important clauses are the coating process, the bake-out, the tightening method and the lubricant — none of which is a material property. The $1{,}200\ \mathrm{MPa}$ strength is the easy part; the requirement that survives is the one about hydrogen.
 :::
 :::
 
 ::: history
-**A. A. Griffith**'s 1920 paper on the phenomena of rupture and propagation in solids, written at the National Projectile Factory at Woolwich, was a physicist's answer to a question no engineer had posed, and it was ignored for twenty years. **G. R. Irwin** at the Naval Research Laboratory turned it into an engineering method between 1948 and 1957, with **M. L. Williams** and **C. F. Kuhn** at Brown, and the **$K$-dominance** argument of Irwin's 1957 paper is the reason fracture mechanics is a stress analysis and not a surface science. The occasion was the **Liberty ships** — 2,700 welded cargo vessels of which 1,500 developed cracks and 233 broke apart or suffered a major fracture between 1942 and 1946 — and the **Conrad** and **Schady** fracture tests of 1950 to 1952 on wrecked hulls at Sparrows Point, which measured the Charpy energies of the actual plates and established the transition-temperature explanation. **E. Orowan**'s 1949 plastic-work modification and **C. E. Inglis**'s 1913 elastic stress-concentration solution for an elliptical hole, which Griffith had used, complete the theory; **N. F. Mott** applied it to metals in 1948. **A. N. Orchard**'s and **R. E. McEvily**'s small-crack work of the 1960s and **W. Elber**'s 1967 to 1971 crack-closure measurements from strain gauges bonded at a crack's mouth, and **K. Tanaka**'s 1974 short-crack threshold data are the modern correction. **C. E. Feltner** and **C. Laird**'s 1961 blunting-and-re-sharpening mechanism gave fatigue its physical picture, after **W. A. Wood**'s electron-microscope striations of 1944; **J. Bauschinger**'s and **A. Thüring**'s work and the **Wöhler** tests of the 1850s on railway axles at Aix-la-Chapelle are the origin of the whole subject, and **Wöhler**'s conclusion that the **stress range** and not the maximum stress governs is still the first clause of every fatigue standard. **F. R. Larson** and **S. J. Miller**'s 1952 time-stress parameter, **R. L. Hull** and **D. E. Rimmer**'s 1959 to 1960 cavity-growth theory, and **E. Orowan**, **C. Zener** and **F. R. N. Nabarro**'s creep papers gave the high-temperature half.
+**August Wöhler**, in charge of rolling stock on a Prussian railway at Frankfurt an der Oder, tested railway axles under rotating bending through the 1850s and 1860s and drew the first S-N curves; his conclusion that the **stress range** and not the maximum stress governs fatigue is still the first clause of every fatigue standard, and **O. H. Basquin** gave the finite-life power law in 1910. **C. E. Inglis**'s 1913 solution for the stress around an elliptical hole gave **A. A. Griffith**, at the Royal Aircraft Factory in Farnborough, the starting point for his 1921 paper in the *Philosophical Transactions of the Royal Society* on the phenomena of rupture and flow in solids, which explained the weakness of glass by its cracks. The welded **Liberty ships** and **T2 tankers** of the Second World War, several of which broke in two — the tanker *Schenectady* at her fitting-out berth in 1943 — made brittle fracture an engineering problem. **E. Orowan** and **G. R. Irwin** independently extended Griffith's energy balance to metals by adding the plastic work at the crack tip in the late 1940s, and Irwin, at the Naval Research Laboratory, introduced the stress-intensity factor in his 1957 paper on the stresses near the end of a crack. The **de Havilland Comet** accidents of 1954 turned the same ideas on fatigue. **P. C. Paris**, with **M. P. Gomez** and **W. E. Anderson** in 1961 and with **F. Erdogan** in 1963, showed that the fatigue crack growth rate is a power law in $\Delta K$, and **W. Elber**'s measurements of 1970 and 1971 discovered crack closure. For creep, **F. R. N. Nabarro** (1948) and **C. Herring** (1950) gave lattice-diffusion creep and **R. L. Coble** (1963) its grain-boundary form, **F. R. Larson** and **J. Miller** published their time-temperature parameter in 1952, **F. C. Monkman** and **N. J. Grant** their rupture-life relation in 1956, and **D. Hull** and **D. E. Rimmer** their theory of diffusional cavity growth in 1959.
 :::
 
 ## Where this leads
@@ -273,9 +275,9 @@ The toughness of this lesson is the grain size and texture of [[materials-scienc
 - Fracture is controlled by $K_I = Y\sigma\sqrt{\pi a}$ and not by the yield strength, so the strongest materials tolerate the smallest cracks and cannot be designed damage-tolerantly.
 - $K_{Ic}$ is a plane-strain property with a thickness requirement, and an apparent toughness measured on a thin specimen is not a property.
 - Ferrite steels have a ductile-to-brittle transition because the yield rises with falling temperature and the cleavage stress does not; FCC metals have none.
-- Fatigue life is an integral of a cube or fourth power, so it is dominated by the largest stress range and by the last few millimetres of growth.
+- Fatigue life is an integral of a cube or fourth power, so it is dominated by the largest stress range and by the early growth of the short crack.
 - Small cracks grow faster than the long-crack law and below its threshold, which is why a pit or an inclusion is worse than the diagram says.
-- Creep rate is exponential in $1/T$ with a self-diffusion activation energy, so a $50\ {}^{\circ}\mathrm{C}$ error is worth a factor of six in rate and seventeen in life.
+- Creep rate is exponential in $1/T$ with a self-diffusion activation energy, so a $50\ {}^{\circ}\mathrm{C}$ error is worth a factor of eight in rate and eighteen in life.
 - Under sustained load in an aggressive environment the governing property is $K_{\mathrm{ISCC}}$ or $K_{\mathrm{TH}}$, which can be half the toughness or less.
 :::
 
@@ -292,10 +294,10 @@ Below the transition the yield strength has risen above the cleavage fracture st
 
 ## Exercises
 
-::: exercise Griffith {level=1 check="0.5"}
-By what power of the crack length does the brittle fracture stress scale?
+::: exercise Griffith {level=1 check="-0.5"}
+By what power of the crack length does the brittle fracture stress scale? (Enter the exponent.)
 ::: solution
-The minus one half — $\sigma_f \propto a^{- 1 / 2}$.
+The minus one half — $\sigma_f \propto a^{- 1 / 2}$, an exponent of $-0.5$.
 :::
 :::
 
@@ -327,39 +329,44 @@ Three.
 :::
 :::
 
-::: exercise Critical crack {level=2}
-A $25\ \mathrm{mm}$-thick plate of $K_{Ic} = 60\ \mathrm{MPa\, m^{1/2}}$ and $\sigma_y = 900\ \mathrm{MPa}$ contains a $4\ \mathrm{mm}$ edge crack. Give the fracture stress and say whether the failure is brittle.
+::: exercise Critical crack {level=2 check="478"}
+A $25\ \mathrm{mm}$-thick plate of $K_{Ic} = 60\ \mathrm{MPa\, m^{1/2}}$ and $\sigma_y = 900\ \mathrm{MPa}$ contains a $4\ \mathrm{mm}$ edge crack. Give the fracture stress and say whether the failure is brittle. (Enter the fracture stress in MPa.)
 ::: solution
 $$
-\sigma_c = \frac{60}{1.12 \sqrt{\pi \times 0.004}} = 601\ \mathrm{MPa} < 900\ \mathrm{MPa} ,
+\sigma_c = \frac{60}{1.12 \sqrt{\pi \times 0.004}} = 478\ \mathrm{MPa} < 900\ \mathrm{MPa} ,
 $$
-so it fractures at two thirds of yield and the failure is **nominally** brittle.
-*Sanity.* The plastic zone is $r_p = \left( 1 / 6 \pi \right) \left( 60 / 900 \right)^{2} = 0.24\ \mathrm{mm}$, a sixteenth of the crack, so linear-elastic fracture mechanics is valid and the calculation is sound. The $25\ \mathrm{mm}$ thickness passes the $2.5 \left( K_{Ic} / \sigma_y \right)^{2} = 11\ \mathrm{mm}$ requirement, so the $K_{Ic}$ used is a genuine plane-strain value.
+so it fractures at about half of yield and the failure is **nominally** brittle.
+*Sanity.* The plastic zone is $r_p = \left( 1 / 6 \pi \right) \left( 60 / 900 \right)^{2} = 0.24\ \mathrm{mm}$, a seventeenth of the crack, so linear-elastic fracture mechanics is valid and the calculation is sound. The $25\ \mathrm{mm}$ thickness passes the $2.5 \left( K_{Ic} / \sigma_y \right)^{2} = 11\ \mathrm{mm}$ requirement, so the $K_{Ic}$ used is a genuine plane-strain value.
 :::
 :::
 
-::: exercise Inspection interval {level=2}
-A steel tie rod is inspected for cracks larger than $3\ \mathrm{mm}$, and the inspection is reliable. With $K_{Ic} = 100\ \mathrm{MPa\, m^{1/2}}$, $\sigma_y = 700\ \mathrm{MPa}$, $C = 2.85 \times 10^{- 14}$, $m = 4$ and a stress range of $350\ \mathrm{MPa}$ at $R = 0.1$, give the critical crack and the life from the detectable crack.
+::: exercise Inspection interval {level=2 check="4.1e4"}
+A steel tie rod is inspected for edge cracks larger than $3\ \mathrm{mm}$, and the inspection is reliable. With $K_{Ic} = 100\ \mathrm{MPa\, m^{1/2}}$, $\sigma_y = 700\ \mathrm{MPa}$, $Y = 1.12$, $C = 2.85 \times 10^{- 14}$, $m = 4$ and a stress range of $350\ \mathrm{MPa}$ at $R = 0.1$, give the critical crack and the life from the detectable crack. (Enter the life in cycles.)
 ::: solution
+The maximum stress is $\sigma_{\max} = \Delta \sigma / \left( 1 - R \right) = 350 / 0.9 = 389\ \mathrm{MPa}$, well below yield, and the crack becomes critical when $K_{\max}$ reaches $K_{Ic}$:
 $$
-a_c = \frac{1}{\pi} \left( \frac{100}{1.12 \times 700} \right)^{2} = 5.8\ \mathrm{mm} ,
+a_c = \frac{1}{\pi} \left( \frac{100}{1.12 \times 389} \right)^{2} = 16.8\ \mathrm{mm} .
 $$
-and taking $\Delta K$ at $0.9\times$ the $R = 0$ value,
+The growth law is driven by the range $\Delta K = Y \Delta \sigma \sqrt{\pi a}$ with $\Delta \sigma = 350\ \mathrm{MPa}$:
 $$
 N = \frac{a_0^{- 1} - a_c^{- 1}}{C \left( Y \Delta \sigma \sqrt{\pi} \right)^{4}}
-= \frac{333 - 172}{2.85 \times 10^{- 14} \times \left( 1.12 \times 315 \times 1.772 \right)^{4}} = 1.1 \times 10^{5}\ \text{cycles} .
+= \frac{333 - 60}{2.85 \times 10^{- 14} \times \left( 1.12 \times 350 \times 1.772 \right)^{4}} = 4.1 \times 10^{4}\ \text{cycles} .
 $$
-*Sanity.* The critical crack is only twice the detectable crack, so the interval must be short: the growth from $3$ to $5.8\ \mathrm{mm}$ is a fifth of the total life, or $20{,}000$ cycles. That is the whole of damage-tolerance design — the interval is not the life divided by a safety factor but the growth between the largest crack you can miss and the smallest crack that is dangerous.
+*Sanity.* The same formula from $3$ to $6\ \mathrm{mm}$ gives $2.5 \times 10^{4}$ cycles, so $61\ \%$ of the life is spent while the crack merely doubles, and the last $11\ \mathrm{mm}$ take the rest. The inspection interval is therefore set as a fraction — commonly half — of the growth life from the detectable to the critical crack, here about $20{,}000$ cycles, so that a crack missed at one inspection is found at the next. That is the whole of damage-tolerance design — the interval is not the life divided by a safety factor but the growth between the largest crack you can miss and the smallest crack that is dangerous.
 :::
 :::
 
-::: exercise Creep design {level=2}
-A component must survive $20{,}000\ \mathrm{h}$ at $650\ {}^{\circ}\mathrm{C}$ at a stress where the Larson-Miller parameter is $22.0$ with $C = 20$. Give the temperature at which the same stress gives $200{,}000\ \mathrm{h}$, and comment.
+::: exercise Creep design {level=2 check="596"}
+A component runs at a stress at which the Larson-Miller parameter for rupture is $22.0$ (with $C = 20$). Give the highest metal temperature for a $20{,}000\ \mathrm{h}$ life and the temperature at which the same stress gives $200{,}000\ \mathrm{h}$, and comment. (Enter the second temperature in ${}^{\circ}\mathrm{C}$.)
 ::: solution
 $$
-T = \frac{22{,}000}{20 + \log_{10} 20{,}000} = \frac{22{,}000}{24.30} = 905\ \mathrm{K} = 632\ {}^{\circ}\mathrm{C} .
+T_{20\,000} = \frac{22{,}000}{20 + \log_{10} 20{,}000} = \frac{22{,}000}{24.30} = 905\ \mathrm{K} = 632\ {}^{\circ}\mathrm{C} ,
 $$
-*Sanity.* A **twenty-degree** drop buys a factor of ten in life, which is the arithmetic of Example 3 read backwards. It is why a blade's cooling-air flow is a life-limited feature, why a hot-section inspection is scheduled on **equivalent operating hours** accumulated from a temperature-time integral rather than on calendar time, and why a single $50\ {}^{\circ}\mathrm{C}$ overtemperature excursion of ten minutes can consume a week of a component's life. The extrapolation from $20{,}000$ to $200{,}000\ \mathrm{h}$ is also outside the range over which $C = 20$ was fitted, and a code would require a long-term run-out test before allowing it.
+$$
+T_{200\,000} = \frac{22{,}000}{20 + \log_{10} 200{,}000} = \frac{22{,}000}{25.30} = 870\ \mathrm{K} = 596\ {}^{\circ}\mathrm{C} .
+$$
+(At $650\ {}^{\circ}\mathrm{C}$ the same stress would give only $\log_{10} t = 22{,}000 / 923 - 20 = 3.84$, or $6{,}800\ \mathrm{h}$.)
+*Sanity.* A drop of **thirty-six degrees** buys a factor of ten in life, which is the arithmetic of Example 3 read backwards. It is why a blade's cooling-air flow is a life-limited feature, why a hot-section inspection is scheduled on **equivalent operating hours** accumulated from a temperature-time integral rather than on calendar time, and why a single $50\ {}^{\circ}\mathrm{C}$ overtemperature excursion of ten minutes can consume a week of a component's life. The extrapolation from $20{,}000$ to $200{,}000\ \mathrm{h}$ is also outside the range over which $C = 20$ was fitted, and a code would require a long-term run-out test before allowing it.
 :::
 :::
 
@@ -376,13 +383,13 @@ For $m$ greater than two the exponent $1 - m / 2$ is negative, so
 $$
 N = \frac{a_0^{\, 1 - m / 2} - a_c^{\, 1 - m / 2}}{\left( m / 2 - 1 \right) C \left( Y \sigma \sqrt{\pi} \right)^{m}} . \quad \checkmark
 $$
-**The stress dependence.** Every other factor is independent of the stress, so $N \propto \sigma^{- m}$ exactly: with $m = 3$ a $20\ \%$ overload costs $49\ \%$ of the life and with $m = 4$ it costs $59\ \%$.
+**The stress dependence.** Every other factor is independent of the stress, so $N \propto \sigma^{- m}$ exactly: with $m = 3$ a $20\ \%$ overload costs $42\ \%$ of the life ($1 / 1.2^{3} = 0.58$) and with $m = 4$ it costs $52\ \%$ ($1 / 1.2^{4} = 0.48$).
 **The distribution over crack length.** The number of cycles per unit $\log a$ is
 $$
 \frac{\mathrm{d} N}{\mathrm{d} \log a} = \frac{a}{C \left( Y \sigma \sqrt{\pi} \right)^{m} a^{m / 2}} \propto a^{\, 1 - m / 2} ,
 $$
-so for $m = 3$ each factor of ten in crack length contributes $10^{- 0.5} = 0.32$ times the previous one — the decades are **unequal**, and the early ones dominate; while for $m = 4$ the exponent is exactly $- 1$ and **every decade contributes equally**. Meanwhile the growth rate itself rises as $a^{m / 2}$, by a factor of $1{,}800$ over $a_c / a_0 = 20$ at $m = 3$.
-*Sanity.* The practical consequence is the one an inspection programme lives by: at $m = 4$ a crack found at twice the depth of the previous find has consumed **half** the remaining life, and at $m = 3$ it has consumed $70\ \%$. A steel, with its higher exponent, is therefore the more forgiving material to find late — which is the opposite of the intuition that a slower-growing crack is always the safer one.
+so for $m = 3$ each factor of ten in crack length contributes $10^{- 0.5} = 0.32$ times the previous one, and for $m = 4$ only $10^{- 1} = 0.1$ times — the decades are **unequal**, and the early ones dominate; only at $m = 2$ would every decade contribute equally. Meanwhile the growth rate itself rises as $a^{m / 2}$, by a factor of $20^{1.5} = 89$ over $a_c / a_0 = 20$ at $m = 3$.
+*Sanity.* The practical consequence is the one an inspection programme lives by: when $a_c$ is much larger than $a$, the remaining life goes as $a^{1 - m / 2}$, so at $m = 4$ a crack found at twice the depth of the previous find has consumed **half** the remaining life, and at $m = 3$ it has consumed $1 - 2^{- 0.5} = 29\ \%$. A steel, with its higher exponent, is therefore the **less** forgiving material to find late, because more of its life is concentrated in the short-crack stage.
 :::
 :::
 
@@ -402,8 +409,8 @@ $$
 \end{array}
 $$
 **Choice.** **316L austenitic stainless** for a ground test tank and **9 % nickel steel** for a production vehicle where mass matters, with **5083-O aluminium** where the tank is a pressure liner and not a structural one.
-**Why 316L is the safe answer.** Its $K_{Ic}$ at $20\ {}^{\circ}\mathrm{C}$ is $220$ and at $20\ \mathrm{K}$ it is **higher**, because the FCC lattice work-hardens rather than embrittles and the stacking-fault energy falls, so that deformation twinning absorbs energy. Austenitic stainless gets **tougher** as it gets colder, which is the only family of structural materials that does.
-**The traps.** **Sensitisation**: the weld heat-affected zone of a 304 precipitates chromium carbide at $600$ to $800\ {}^{\circ}\mathrm{C}$ and becomes attackable; the fix is the **L** low-carbon grade and a solution anneal at $1{,}050\ {}^{\circ}\mathrm{C}$ with a water quench after welding. **Hydrogen embrittlement of the weld filler**: a ferrite-containing 309 or 312 filler is tougher and less crack-sensitive than a fully austenitic one, so the filler is specified by its **ferrite number** of $5$ to $12$. **Permeability**: liquid hydrogen diffuses through titanium and through several steels at a measurable rate, and a ten-day hold test is a specification item. **The proof test at $1.25$ times design pressure is the fracture control**, because it proves that no crack larger than the critical size for the proof stress exists anywhere in the vessel — which is why a cryogenic tank is proof-tested **after** welding and **after** any repair.
+**Why 316L is the safe answer.** Its $K_{Ic}$ at $20\ {}^{\circ}\mathrm{C}$ is $220$ and it stays high at $20\ \mathrm{K}$, because the FCC lattice has no ductile-to-brittle transition: it work-hardens rather than embrittles, while its yield strength rises steeply on cooling. Austenitic stainless, like the FCC aluminium alloys, keeps its toughness as it gets colder.
+**The traps.** **Sensitisation**: the weld heat-affected zone of a 304 precipitates chromium carbide at $600$ to $800\ {}^{\circ}\mathrm{C}$ and becomes attackable; the fix is the **L** low-carbon grade and a solution anneal at $1{,}050\ {}^{\circ}\mathrm{C}$ with a water quench after welding. **The weld filler**: a little delta ferrite in an austenitic weld prevents solidification (hot) cracking, but ferrite is BCC and loses its toughness at cryogenic temperature, so the filler is specified by a controlled, low **ferrite number** and qualified by an impact test at the service temperature. **Permeability**: liquid hydrogen diffuses through titanium and through several steels at a measurable rate, and a ten-day hold test is a specification item. **The proof test at $1.25$ times design pressure is the fracture control**, because it proves that no crack larger than the critical size for the proof stress exists anywhere in the vessel — which is why a cryogenic tank is proof-tested **after** welding and **after** any repair.
 
 *Design comment.* The general rule is that **a cryogenic design is a fracture design**, because the strength is available and the toughness is the question, and that the proof test is not a formality but the load-bearing element of the argument. The $1.25$ factor is chosen so that the proof stress puts the largest tolerable crack at $0.8\, K_{Ic}$ with the material at its coldest and its toughness at its lower bound — which is why the proof test is done at ambient, where the toughness of an FCC metal is *lower* than at cryogenic and the argument is conservative in the right direction.
 :::
