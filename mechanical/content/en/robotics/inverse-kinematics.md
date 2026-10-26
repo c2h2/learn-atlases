@@ -1,507 +1,301 @@
-Inverse kinematics is the foundation of robot position control: the inverse kinematics problem computes the joint variables from the desired end-effector pose, the geometric solution exploits the robot's kinematic structure, and the numerical solution uses iterative methods like Newton-Raphson or Jacobian transpose. **The engineer who designs a robot control system without solving the inverse kinematics is not designing a control system; they are guessing.** The inverse kinematics calculation is the reason the engineer can plan trajectories, implement servo control and design task-space controllers, and the inverse kinematics is the reason robot control is a practical engineering tool, not a theoretical abstraction.
+Forward kinematics answers "where is the tool, given the joints?"; the question a robot is actually asked is the reverse: "here is where the tool must be — what should the joints do?" A welding program specifies a seam in space, a vision system reports a part's pose, a teleoperator moves a hand controller; in each case the controller must find joint values $\boldsymbol\theta$ with $T(\boldsymbol\theta) = T_d$ for a desired pose $T_d$. This is the **inverse kinematics** (IK) problem, and it is genuinely harder than the forward one: it is a system of nonlinear trigonometric equations that may have no solution (the target is out of reach), several (the elbow can be up or down), or infinitely many (a redundant arm). This chapter solves it in two ways. **Analytically**, for the planar arm and — through Pieper's wrist-centre decoupling — for the six-axis arms with spherical wrists that dominate industry, giving every solution in closed form so the controller can choose among them. **Numerically**, by Newton–Raphson iteration and its damped-least-squares variant, which work for any arm but return one solution near the initial guess and need care near singularities. The forward kinematics and frame conventions are those of [[robotics/forward-kinematics]]; the Jacobian used by the numerical methods is developed fully in [[robotics/jacobians]].
 
-The quantitative tools of inverse kinematics are the **geometric solution** (the closed-form solution for simple robots), the **numerical solution** (the iterative solution using Jacobians), and the **wrist-decoupled solution** (the Pieper solution for spherical-wrist robots). The tools are the language in which the inverse kinematics analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+## The inverse problem {#sec-problem}
 
-::: warning Nine ways inverse kinematics calculation goes wrong
-**Not solving the inverse kinematics.** The engineer who designs a robot control system without solving the inverse kinematics is not designing a control system; they are guessing. **The inverse kinematics is the reason robotics is designed for the inverse, not the forward, and the inverse is the reason robot control is a practical engineering tool, not a theoretical abstraction.** **Not checking the geometric solution.** The engineer who designs a robot control system without checking the geometric solution is not designing a control system; they are guessing. **The geometric solution is the reason robotics is designed for the geometric, not the algebraic, and the geometric is the reason robot control is a practical engineering tool, not a theoretical abstraction.** **Not checking the numerical solution.** The engineer who designs a robot control system without checking the numerical solution is not designing a control system; they are guessing. **The numerical solution is the reason robotics is designed for the numerical, not the analytical, and the numerical is the reason robot control is a practical engineering tool, not a theoretical abstraction.** **Not checking the wrist decoupling.** The engineer who designs a robot control system without checking the wrist decoupling is not designing a control system; they are guessing. **The wrist decoupling is the reason robotics is designed for the wrist, not the arm, and the wrist is the reason robot control is a practical engineering tool, not a theoretical abstraction.** **Not checking the multiple solutions.** The engineer who designs a robot control system without checking the multiple solutions is not designing a control system; they are guessing. **The multiple solutions are the reason robotics is designed for the multiple, not the unique, and the multiple is the reason robot control is a practical engineering tool, not a theoretical abstraction.** **Not checking the singularity.** The engineer who designs a robot control system without checking the singularity is not designing a control system; they are guessing. **The singularity is the reason robotics is designed for the singularity, not the regularity, and the singularity is the reason robot control is a practical engineering tool, not a theoretical abstraction.** **Not checking the joint limits.** The engineer who designs a robot control system without checking the joint limits is not designing a control system; they are guessing. **The joint limits are the reason robotics is designed for the joint, not the Cartesian, and the joint is the reason robot control is a practical engineering tool, not a theoretical abstraction.** **Not checking the redundancy resolution.** The engineer who designs a robot control system without checking the redundancy resolution is not designing a control system; they are guessing. **The redundancy resolution is the reason robotics is designed for the redundancy, not the determinacy, and the redundancy is the reason robot control is a practical engineering tool, not a theoretical abstraction.** **Not checking the operational space.** The engineer who designs a robot control system without checking the operational space is not designing a control system; they are guessing. **The operational space is the reason robotics is designed for the operational, not the joint, and the operational is the reason robot control is a practical engineering tool, not a theoretical abstraction.**
+::: definition Inverse kinematics {#def-ik}
+Given a forward kinematics map $\boldsymbol\theta\mapsto T(\boldsymbol\theta)$ and a desired end-effector pose $T_d\in SE(3)$ (or a desired position only, or a planar position and angle), the **inverse kinematics problem** is to find all $\boldsymbol\theta$ in the allowed joint ranges with $T(\boldsymbol\theta) = T_d$. Each such $\boldsymbol\theta$ is an **IK solution**; the set of all solutions may be empty, finite, or a continuum.
 :::
 
-## 1. Geometric inverse kinematics
+Counting equations and unknowns explains the three cases. A pose has six independent components; an arm with $n$ joints has $n$ unknowns. If $n < 6$ a general pose cannot be reached at all, and one asks for less (position only, or position and one direction). If $n = 6$, six equations in six unknowns generically have a finite number of solutions: for a general 6R arm the solutions are the roots of a polynomial of degree 16 (Primrose showed in 1986 that there are at most 16, and examples reaching 16 exist), while arms with a spherical wrist have at most 8. If $n > 6$ the arm is redundant and the solutions form a family of dimension $n - 6$, from which a secondary criterion selects one ([[robotics/jacobians]]).
 
-::: definition The geometric solution {#def-geometric-ik}
-The **geometric solution** computes the joint variables from the desired end-effector pose using geometric relationships, and the geometric solution is the reason the engineer can plan trajectories, implement servo control and design task-space controllers.
+Analytical (closed-form) solutions are preferred in industry: they are fast and deterministic, they list every solution, and they make it possible to keep a robot in one "configuration" (elbow up, wrist not flipped) throughout a motion. Numerical solutions are preferred in research and for arms without special geometry.
 
-The **two-link planar IK** is:
+## The planar two-link arm {#sec-2r}
 
-$$
-\\\\theta _ { 2 } \; = \; \\\\arccos { \\frac { x ^ { 2 } + y ^ { 2 } - a _ { 1 } ^ { 2 } - a _ { 2 } ^ { 2 } } { 2 a _ { 1 } a _ { 2 } } }
-$$
+Every closed-form method rests on two tools: the law of cosines, which turns a distance into a joint angle, and the two-argument arctangent $\operatorname{atan2}(y, x)$, which returns the angle of the point $(x, y)$ in $(-\pi, \pi]$ with the correct quadrant. The planar 2R arm uses both.
 
+::: proposition Inverse kinematics of the planar 2R arm {#prop-2r-ik}
+Let a planar 2R arm with link lengths $L_1, L_2 > 0$ have tip position $(x, y)$, and let
 $$
-\\\\theta _ { 1 } \; = \; \\\\mathrm { atan2 } ( y , x ) - \\\\mathrm { atan2 } ( a _ { 2 } \\\\sin \\\\theta _ { 2 } , a _ { 1 } + a _ { 2 } c \\\\theta _ { 2 } )
+D = \frac{x^2 + y^2 - L_1^2 - L_2^2}{2L_1L_2}.
 $$
-
-The **elbow-up and elbow-down** solutions are:
-
+If $\lvert D\rvert > 1$ there is no solution. If $\lvert D\rvert \le 1$ the solutions are
 $$
-\\\\theta _ { 2 } ^ { \\\\pm } \; = \; \\\\pm \\\\arccos ( \\\\cdot )
-$$
-
-The **workspace condition** is:
-
-$$
-( a _ { 1 } - a _ { 2 } ) ^ { 2 } \\\\le x ^ { 2 } + y ^ { 2 } \\\\le ( a _ { 1 } + a _ { 2 } ) ^ { 2 }
-$$
-
-The **number of solutions** for a planar 2R robot is:
-
-$$
-n _ { \\\\text{solutions } } \; = \; 2 \\\\quad ( \\\\text{elbow-up and elbow-down})
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Robot type} & \textbf{ Solutions} & \textbf{ Method} & \textbf{ Closed form} \\\\hline
-\text{Planar 2R} & 2 & \\\\text{Geometric} & \\\\text{Yes} \\\\
-\text{SCARA} & 2 & \\\\text{Geometric} & \\\\text{Yes} \\\\
-\text{6-axis spherical wrist} & 8 & \\\\text{Pieper} & \\\\text{Yes} \\\\
-\text{General 6R} & \\\\le 1 6 & \\\\text{Elimination} & \\\\text{Sometimes} \\\\
-\text{Redundant 7R} & \\\\infty & \\\\text{Optimization} & \\\\text{No} \\\\
-\end{array}
-$$
-
-**The inverse kinematics is the reason robotics is designed for the inverse, not the forward, and the inverse is the reason robot control is a practical engineering tool, not a theoretical abstraction. The engineer who designs a robot control system without solving the inverse kinematics is not designing a control system; they are guessing.**
+\theta_2 = \operatorname{atan2}\!\big(\pm\sqrt{1 - D^2},\ D\big),\qquad
+\theta_1 = \operatorname{atan2}(y, x) - \operatorname{atan2}\!\big(L_2\sin\theta_2,\ L_1 + L_2\cos\theta_2\big),
+$$ {#eq-2r-ik}
+two distinct solutions ("elbow up" and "elbow down") when $\lvert D\rvert < 1$, and one when $\lvert D\rvert = 1$ (arm stretched or folded). If $(x, y) = (0, 0)$ and $L_1 = L_2$, $\theta_2 = \pi$ and $\theta_1$ is arbitrary.
 :::
 
-::: definition The wrist-decoupled solution {#def-wrist-decoupled}
-The **wrist-decoupled solution** separates the position and orientation sub-problems for robots with a spherical wrist, and the wrist-decoupled solution is the reason the engineer can plan trajectories, implement servo control and design task-space controllers.
-
-The **wrist position** is:
-
+::: proof
+From the forward kinematics $x = L_1c_1 + L_2c_{12}$, $y = L_1s_1 + L_2s_{12}$, the tip distance satisfies $x^2 + y^2 = L_1^2 + L_2^2 + 2L_1L_2\cos\theta_2$ (as in [[robotics/forward-kinematics]]), so $\cos\theta_2 = D$; a real $\theta_2$ exists if and only if $\lvert D\rvert \le 1$, and then $\sin\theta_2 = \pm\sqrt{1 - D^2}$. Using `atan2` of the pair $(\sin\theta_2, \cos\theta_2)$ rather than $\arccos D$ keeps both signs and avoids the poor conditioning of $\arccos$ near $\pm1$. For $\theta_1$, expand $c_{12}$ and $s_{12}$:
 $$
-\\\\mathbf { p } _ { \\\\text{wrist } } \; = \; \\\\mathbf { p } _ { \\\\text{ee } } - d _ { 6 } \\\\mathbf { R } _ { \\\\text{ee } } \\\\hat { \\\\mathbf { z } }
+\begin{bmatrix} x\\ y\end{bmatrix} = \begin{bmatrix} k_1 & -k_2\\ k_2 & k_1\end{bmatrix}\begin{bmatrix} c_1\\ s_1\end{bmatrix},
+\qquad k_1 = L_1 + L_2\cos\theta_2,\quad k_2 = L_2\sin\theta_2 .
 $$
-
-The **arm angles** ($\\\\theta_1$, $\\\\theta_2$, $\\\\theta_3$) are found from the wrist position.
-
-The **wrist angles** ($\\\\theta_4$, $\\\\theta_5$, $\\\\theta_6$) are found from the orientation:
-
-$$
-\\\\mathbf { R } _ { \\\\text{wrist } } \; = \; \\\\mathbf { R } _ { \\\\text{ee } } ( \\\\mathbf { R } _ { \\\\text{arm } } ) ^ { T }
-$$
-
-The **Pieper criterion** states that a 6R robot has a closed-form IK if the last three axes intersect at a point.
-
-The **number of solutions** for a 6-axis spherical-wrist robot is:
-
-$$
-n _ { \\\\text{solutions } } \; = \; 8 \\\\quad ( 2 ^ { 3 } \\\\text{ from shoulder, elbow, wrist})
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Sub-problem} & \textbf{ Variables} & \textbf{ Equations} & \textbf{ Solutions } \\\\hline
-\text{Arm (position)} & \\\\theta _ { 1 } , \\\\theta _ { 2 } , \\\\theta _ { 3 } & 3 \\\\text{ position eqs} & 2 \\\\text{ (shoulder, elbow)} \\\\
-\text{Wrist (orientation)} & \\\\theta _ { 4 } , \\\\theta _ { 5 } , \\\\theta _ { 6 } & 3 \\\\text{ orientation eqs} & 4 \\\\text{ (flip, no-flip)} \\\\
-\text{Total} & 6 & 6 & 8 \\\\
-\end{array}
-$$
-
-**The geometric solution is the reason robotics is designed for the geometric, not the algebraic, and the geometric is the reason robot control is a practical engineering tool, not a theoretical abstraction. The engineer who designs a robot control system without checking the geometric solution is not designing a control system; they are guessing.**
+Write $(k_1, k_2) = \rho(\cos\gamma, \sin\gamma)$ with $\gamma = \operatorname{atan2}(k_2, k_1)$, $\rho = \sqrt{k_1^2 + k_2^2}$. Then $x = \rho\cos(\theta_1 + \gamma)$, $y = \rho\sin(\theta_1 + \gamma)$, so $\theta_1 + \gamma = \operatorname{atan2}(y, x)$, which is [[#eq-2r-ik]]. This needs $\rho > 0$; $\rho = 0$ happens only when $L_1 = L_2$ and $\theta_2 = \pi$, i.e. the tip is at the base, where $x = y = 0$ for every $\theta_1$. Geometrically, $\operatorname{atan2}(y, x)$ is the direction of the target and $\gamma$ the angle between the first link and the line from base to tip.
 :::
 
-::: widget plot
-title: The elbow angle vs reach
-f: acos(max(-1, min(1, (x^2 - 5) / 4)))
-x: 1,3
-y: 0,3.14
-labels: theta2
-caption: The elbow angle against the reach for a two-link planar robot with $a_1 = 2$, $a_2 = 1$. **The elbow angle decreases with reach, and the elbow angle is the reason robotics is designed for the numerical solution, not the wrist decoupling.** **The numerical solution is the reason robot control is a practical engineering tool, not a theoretical abstraction.**
+::: example Elbow-up and elbow-down {#ex-2r-ik}
+A 2R arm has $L_1 = 0.6\,\mathrm m$, $L_2 = 0.5\,\mathrm m$. Find all joint angles that put the tip at $(0.7, 0.6)\,\mathrm m$.
+::: solution
+$x^2 + y^2 = 0.49 + 0.36 = 0.85\,\mathrm{m^2}$, so
+$$
+D = \frac{0.85 - 0.36 - 0.25}{2(0.6)(0.5)} = \frac{0.24}{0.60} = 0.4, \qquad \sqrt{1 - D^2} = 0.9165 .
+$$
+$\lvert D\rvert < 1$: two solutions, $\theta_2 = \operatorname{atan2}(\pm0.9165, 0.4) = \pm66.42^\circ$. The target direction is $\operatorname{atan2}(0.6, 0.7) = 40.60^\circ$.
+For $\theta_2 = +66.42^\circ$: $\gamma = \operatorname{atan2}(0.5\times0.9165,\ 0.6 + 0.5\times0.4) = \operatorname{atan2}(0.4583, 0.8) = 29.81^\circ$, so $\theta_1 = 40.60^\circ - 29.81^\circ = 10.80^\circ$.
+For $\theta_2 = -66.42^\circ$: $\gamma = -29.81^\circ$ and $\theta_1 = 70.41^\circ$.
+Check the first: $x = 0.6\cos10.80^\circ + 0.5\cos77.22^\circ = 0.5894 + 0.1106 = 0.700\,\mathrm m$, $y = 0.6\sin10.80^\circ + 0.5\sin77.22^\circ = 0.1124 + 0.4876 = 0.600\,\mathrm m$ ✓. The two solutions are mirror images in the line from the base to the target: $\theta_1$ values are symmetric about $40.60^\circ$ ($40.60 \mp 29.81$).
+:::
 :::
 
-::: example Two-link planar IK {#ex-two-link-ik level=3 check="2"}
-A two-link planar robot has $a_1 = 2$ m, $a_2 = 1$ m. Calculate the joint angles for the end-effector position $(x, y) = (2, 1.5)$ m.
+The picture behind the two solutions is visible in the error landscape. Plot the squared distance between the tip and the target as a function of $(\theta_1, \theta_2)$: it has two zeros, one per solution, separated by a ridge.
 
-**The squared distance is:**
-
-$$
-r ^ { 2 } = 2 ^ { 2 } + 1 . 5 ^ { 2 } = 4 + 2 . 2 5 = 6 . 2 5
-$$
-
-**The elbow angle is:**
-
-$$
-\\\\theta _ { 2 } = \\\\arccos { \\frac { 6 . 2 5 - 4 - 1 } { 2 \\\\times 2 \\\\times 1 } } = \\\\arccos ( 0 . 3 1 2 5 ) = { \\bf 7 1 . 8 ° }
-$$
-
-**The shoulder angle is:**
-
-$$
-\\\\theta _ { 1 } = \\\\mathrm { atan2 } ( 1 . 5 , 2 ) - \\\\mathrm { atan2 } ( 1 \\\\times \\\\sin 7 1 . 8 ° , 2 + 1 \\\\times \\\\cos 7 1 . 8 ° )
-$$
-
-$$
-\\\\theta _ { 1 } = 3 6 . 9 ° - 2 2 . 0 ° = { \\bf 1 4 . 9 ° }
-$$
-
-**The engineer would design the structure for the multiple solutions, because the multiple solutions are the reason robot control is a practical engineering tool, not a theoretical abstraction.**
+::: widget contour
+f: (0.6*cos(x) + 0.5*cos(x + y) - px)^2 + (0.6*sin(x) + 0.5*sin(x + y) - py)^2
+x: -3.1416, 3.1416
+y: -3.1416, 3.1416
+levels: 18
+sliders: px=0.7:-1.2:1.2:0.05; py=0.6:-1.2:1.2:0.05
+point: 0, 1.57
+caption: Squared position error $\lVert\mathbf f(\boldsymbol\theta) - \mathbf p_d\rVert^2$ of the 2R arm ($L_1 = 0.6$, $L_2 = 0.5\,\mathrm m$) over joint space, $x = \theta_1$, $y = \theta_2$ in radians, for the target $(p_x, p_y)$. With the default target there are two minima with error zero, at $(0.188, 1.159)$ and $(1.229, -1.159)$ rad — elbow up and elbow down. Drag the point: the gradient arrow is the direction a gradient-based IK step would take, and which minimum you slide into depends on where you start. Move the target outside the reach ($p_x = 1.2$, $p_y = 0$): the zeros disappear and a single minimum remains, the stretched arm pointing at the target. Move it close to the base: the minima merge as the arm folds.
 :::
 
-## 2. Numerical inverse kinematics
+### Adding orientation: the planar 3R arm
 
-::: definition The numerical solution {#def-numerical-ik}
-The **numerical solution** computes the joint variables iteratively using the Jacobian matrix, and the numerical solution is the reason the engineer can plan trajectories, implement servo control and design task-space controllers.
-
-The **Jacobian transpose method** is:
-
+A planar 3R arm can place its tool at $(x, y)$ with orientation $\phi$. The trick that generalises to six-axis arms is to work backwards from the tool to the **wrist point** — the position of joint 3 — which does not depend on $\theta_3$:
 $$
-\\\\boldsymbol { \\\\theta } _ { k + 1 } \; = \; \\\\boldsymbol { \\\\theta } _ { k } + \\\\alpha \\\\mathbf { J } ^ { T } \\\\mathbf { e }
+x_w = x - L_3\cos\phi, \qquad y_w = y - L_3\sin\phi .
 $$
+Solve the 2R problem for $(x_w, y_w)$, then $\theta_3 = \phi - \theta_1 - \theta_2$.
 
-where $\\\\mathbf { e }$ is the task-space error and $\\\\alpha$ is the step size.
-
-The **Newton-Raphson method** is:
-
-$$
-\\\\boldsymbol { \\\\theta } _ { k + 1 } \; = \; \\\\boldsymbol { \\\\theta } _ { k } + \\\\mathbf { J } ^ { - 1 } \\\\mathbf { e }
-$$
-
-The **damped least-squares (Levenberg-Marquardt) method** is:
-
-$$
-\\\\boldsymbol { \\\\theta } _ { k + 1 } \; = \; \\\\boldsymbol { \\\\theta } _ { k } + \\\\mathbf { J } ^ { T } ( \\\\mathbf { J } \\\\mathbf { J } ^ { T } + \\\\lambda ^ { 2 } \\\\mathbf { I } ) ^ { - 1 } \\\\mathbf { e }
-$$
-
-The **convergence condition** is:
-
-$$
-| | \\\\mathbf { e } | | \; < \\\\epsilon
-$$
-
-The **singularity measure** is:
-
-$$
-\\\\mu \; = \; { \\sqrt { \\\\det ( \\\\mathbf { J } \\\\mathbf { J } ^ { T } ) } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Method} & \textbf{ Convergence} & \textbf{ Singularity} & \textbf{ Application } \\\\hline
-\text{Jacobian transpose} & \\\\text{Linear} & \\\\text{Poor} & \\\\text{Simple, slow} \\\\
-\text{Newton-Raphson} & \\\\text{Quadratic} & \\\\text{Poor} & \\\\text{Fast, near solution} \\\\
-\text{Damped LS} & \\\\text{Quadratic} & \\\\text{Good} & \\\\text{Near singularity} \\\\
-\text{GN (Gauss-Newton)} & \\\\text{Quadratic} & \\\\text{Moderate} & \\\\text{General purpose} \\\\
-\end{array}
-$$
-
-**The numerical solution is the reason robotics is designed for the numerical, not the analytical, and the numerical is the reason robot control is a practical engineering tool, not a theoretical abstraction. The engineer who designs a robot control system without checking the numerical solution is not designing a control system; they are guessing.**
+::: example Planar 3R with orientation {#ex-3r-ik}
+For the 3R arm of [[robotics/forward-kinematics]] ($L_1 = 0.4$, $L_2 = 0.3$, $L_3 = 0.1\,\mathrm m$), find all solutions for the tool pose $(x, y, \phi) = (0.4948\,\mathrm m, 0.5605\,\mathrm m, 45^\circ)$.
+::: solution
+Wrist point: $x_w = 0.4948 - 0.1\cos45^\circ = 0.4241\,\mathrm m$, $y_w = 0.5605 - 0.0707 = 0.4898\,\mathrm m$. Then $D = (0.4241^2 + 0.4898^2 - 0.16 - 0.09)/(2\times0.4\times0.3) = (0.4197 - 0.25)/0.24 = 0.7073$, so $\theta_2 = \pm45.0^\circ$. Target direction $\operatorname{atan2}(0.4898, 0.4241) = 49.1^\circ$; for $\theta_2 = 45^\circ$, $\gamma = \operatorname{atan2}(0.3\sin45^\circ, 0.4 + 0.3\cos45^\circ) = \operatorname{atan2}(0.2121, 0.6121) = 19.1^\circ$, giving $\theta_1 = 30.0^\circ$ and $\theta_3 = 45^\circ - 30.0^\circ - 45.0^\circ = -30.0^\circ$. The other solution is $\theta_1 = 68.2^\circ$, $\theta_2 = -45.0^\circ$, $\theta_3 = 45^\circ - 68.2^\circ + 45.0^\circ = 21.8^\circ$. The first solution recovers the configuration $(30^\circ, 45^\circ, -30^\circ)$ from which the target was computed in [[robotics/forward-kinematics]] ✓.
+:::
 :::
 
-::: definition Singularity and redundancy resolution {#def-singularity-redundancy}
-The **singularity** is a configuration where the Jacobian loses rank, and the singularity is the reason the engineer can plan trajectories, implement servo control and design task-space controllers.
+## Six-axis arms: kinematic decoupling {#sec-pieper}
 
-The **manipulability** is:
+Six nonlinear equations in six angles have no general closed-form solution, but most industrial arms are built so that they do: their last three joint axes intersect at one point, the **wrist centre**, forming a spherical wrist. Then the problem splits into a position problem for the first three joints and an orientation problem for the last three.
 
-$$
-w \; = \; { \\sqrt { \\\\det ( \\\\mathbf { J } \\\\mathbf { J } ^ { T } ) } }
-$$
-
-The **condition number** is:
-
-$$
-\\\\kappa \; = \; { \\frac { \\\\sigma _ { \\\\max } } { \\\\sigma _ { \\\\min } } }
-$$
-
-The **redundancy resolution** using the null-space projection is:
-
-$$
-\\\\dot { \\\\boldsymbol { \\\\theta } } \; = \; \\\\mathbf { J } ^ { + } \\\\mathbf { v } + ( \\\\mathbf { I } - \\\\mathbf { J } ^ { + } \\\\mathbf { J } ) \\\\mathbf { z }
-$$
-
-The **gradient projection method** optimizes a criterion $H$:
-
-$$
-\\\\mathbf { z } \; = \; - k \\\\nabla H ( \\\\boldsymbol { \\\\theta } )
-$$
-
-The **joint limit avoidance** criterion is:
-
-$$
-H \; = \; { \\frac { 1 } { 4 } } \\\\sum _ { i = 1 } ^ { n } \\\\left( { \\frac { \\\\theta _ { i } - \\\\theta _ { i , c } } { \\\\theta _ { i , \\\\max } - \\\\theta _ { i , \\\\min } } } \\right) ^ { 2 }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Singularity type} & \textbf{ Condition} & \textbf{ Effect} & \textbf{ Avoidance } \\\\hline
-\text{Boundary} & w = 0 & \\\\text{Lost DOF} & \\\\text{Stay in interior} \\\\
-\text{Interior} & \\\\kappa \\\\to \\\\infty & \\\\text{Infinite velocity} & \\\\text{Damped LS} \\\\
-\text{Redundant} & \\\\text{Always} & \\\\text{Infinite solutions} & \\\\text{Null-space optimization} \\\\
-\end{array}
-$$
-
-**The wrist decoupling is the reason robotics is designed for the wrist, not the arm, and the wrist is the reason robot control is a practical engineering tool, not a theoretical abstraction. The engineer who designs a robot control system without checking the wrist decoupling is not designing a control system; they are guessing.**
+::: proposition Kinematic decoupling at the wrist centre {#prop-decoupling}
+Suppose the axes of joints 4, 5, 6 intersect at a point $\mathbf o_c$, and the tool frame's origin lies a distance $d_6$ from $\mathbf o_c$ along the tool's $z$-axis. For a desired pose $T_d = (R_d, \mathbf p_d)$:
+1. The wrist centre must be at $\mathbf p_c = \mathbf p_d - d_6R_d\hat{\mathbf z}$; this depends only on $\theta_1, \theta_2, \theta_3$, which are found by solving $\mathbf o_c(\theta_1,\theta_2,\theta_3) = \mathbf p_c$.
+2. With $\theta_1, \theta_2, \theta_3$ known, the wrist must supply the rotation $R_{36} = R_{03}(\theta_1,\theta_2,\theta_3)^{\mathsf T}R_d$, which for a spherical wrist is a set of Euler angles in $(\theta_4, \theta_5, \theta_6)$.
 :::
 
-::: widget plot
-title: The manipulability vs joint angle
-f: sin(x)
-x: 0,3.14
-y: 0,1
-labels: w
-caption: The manipulability against the elbow angle for a two-link planar robot. **The manipulability is zero at full extension and full flexion, and the manipulability is the reason robotics is designed for the singularity, not the joint limits.** **The singularity is the reason robot control is a practical engineering tool, not a theoretical abstraction.**
+::: proof
+Joints 4, 5 and 6 rotate the outboard links about axes through $\mathbf o_c$, so they cannot move $\mathbf o_c$: its position is a function of the first three joints only. The tool origin is $\mathbf o_6 = \mathbf o_c + d_6R_{06}\hat{\mathbf z}$ (the offset is $d_6$ along the tool's own $z$-axis, whose space direction is the third column of $R_{06}$). Setting $\mathbf o_6 = \mathbf p_d$ and $R_{06} = R_d$ gives $\mathbf o_c = \mathbf p_d - d_6R_d\hat{\mathbf z}$, which is part 1. For part 2, $R_{06} = R_{03}R_{36}$ with $R_{36}$ depending only on $\theta_4, \theta_5, \theta_6$; multiplying $R_{03}R_{36} = R_d$ on the left by $R_{03}^{\mathsf T}$ gives the stated $R_{36}$. For the standard spherical wrist (DH rows $(0, -90^\circ, 0, \theta_4)$, $(0, 90^\circ, 0, \theta_5)$, $(0, 0, d_6, \theta_6)$), the product of the three rotation blocks is $\mathrm{Rot}_z(\theta_4)\mathrm{Rot}_y(\theta_5)\mathrm{Rot}_z(\theta_6)$, so $(\theta_4,\theta_5,\theta_6)$ are the ZYZ Euler angles of $R_{36}$, extracted as in [[robotics/rigid-motions]].
 :::
 
-::: example Damped least-squares IK {#ex-damped-ls-ik level=3 check="2"}
-A 2-DOF robot has Jacobian $\\\\mathbf{J} = [1, 2; 0, 1]$ and task-space error $\\\\mathbf{e} = [0.1, 0.05]^T$. Calculate the joint update using damped least-squares with $\\\\lambda = 0.1$.
-
-**The product $\\\\mathbf{J}\\\\mathbf{J}^T$ is:**
-
+The position problem for the elbow arm of [[robotics/forward-kinematics]] (waist $\theta_1$, shoulder $\theta_2$ and elbow $\theta_3$, with $\mathbf o_c = \mathbf o_3$) is solved by geometry: the waist angle points the arm's vertical plane at the target,
 $$
-\\\\mathbf { J } \\\\mathbf { J } ^ { T } = [ 1 , 2 ; 0 , 1 ] [ 1 , 0 ; 2 , 1 ] = [ 5 , 2 ; 2 , 1 ]
+\theta_1 = \operatorname{atan2}(y_c, x_c)\quad\text{or}\quad \theta_1 = \operatorname{atan2}(y_c, x_c) + \pi ,
 $$
+and in that plane shoulder and elbow form a 2R arm with links $a_2, a_3$ that must reach the point at horizontal distance $r = \pm\sqrt{x_c^2 + y_c^2}$ (the sign negative for the "reaching backwards" choice of $\theta_1$) and height $s = z_c - d_1$ above the shoulder. [[#prop-2r-ik]] gives two solutions for each $\theta_1$: four arm solutions in all, each combined with two wrist solutions, for **eight** IK solutions.
 
-**The damped matrix is:**
-
-$$
-\\\\mathbf { J } \\\\mathbf { J } ^ { T } + \\\\lambda ^ { 2 } \\\\mathbf { I } = [ 5 . 0 1 , 2 ; 2 , 1 . 0 1 ]
-$$
-
-**The inverse is:**
-
-$$
-( \\\\mathbf { J } \\\\mathbf { J } ^ { T } + \\\\lambda ^ { 2 } \\\\mathbf { I } ) ^ { - 1 } = { \\frac { 1 } { 5 . 0 1 \\\\times 1 . 0 1 - 4 } } [ 1 . 0 1 , - 2 ; - 2 , 5 . 0 1 ] = [ 1 . 0 2 , - 2 . 0 2 ; - 2 . 0 2 , 5 . 0 7 ]
-$$
-
-**The joint update is:**
-
-$$
-\\\\Delta \\\\boldsymbol { \\\\theta } = \\\\mathbf { J } ^ { T } ( \\\\mathbf { J } \\\\mathbf { J } ^ { T } + \\\\lambda ^ { 2 } \\\\mathbf { I } ) ^ { - 1 } \\\\mathbf { e } = [ 1 , 0 ; 2 , 1 ] [ 1 . 0 2 , - 2 . 0 2 ; - 2 . 0 2 , 5 . 0 7 ] [ 0 . 1 , 0 . 0 5 ] ^ { T }
-$$
-
-$$
-\\\\Delta \\\\boldsymbol { \\\\theta } = [ { \\bf 0 . 0 5 1 } , { \\bf 0 . 0 5 3 } ] ^ { T } \\\\text{ rad }
-$$
-
-**The engineer would design the structure for the redundancy resolution, because the redundancy resolution is the reason robot control is a practical engineering tool, not a theoretical abstraction.**
+::: example The four arm solutions of an elbow manipulator {#ex-elbow-ik}
+The elbow arm with $d_1 = 0.50$, $a_2 = 0.60$, $a_3 = 0.50\,\mathrm m$ must place its wrist centre at $\mathbf p_c = (0.7857, 0.4536, 0.7949)\,\mathrm m$. Find all $(\theta_1, \theta_2, \theta_3)$.
+::: solution
+$\theta_1 = \operatorname{atan2}(0.4536, 0.7857) = 30.0^\circ$ (front) or $210.0^\circ$ (back). Horizontal distance $\sqrt{0.7857^2 + 0.4536^2} = 0.9073\,\mathrm m$; height above the shoulder $s = 0.7949 - 0.50 = 0.2949\,\mathrm m$. Elbow: $D = (0.9073^2 + 0.2949^2 - 0.36 - 0.25)/(2\times0.6\times0.5) = (0.9100 - 0.61)/0.60 = 0.500$, so $\theta_3 = \pm60.0^\circ$.
+*Front* ($r = +0.9073$): direction to target in the arm plane $\operatorname{atan2}(0.2949, 0.9073) = 18.0^\circ$; for $\theta_3 = -60^\circ$, $\gamma = \operatorname{atan2}(0.5\sin(-60^\circ), 0.6 + 0.5\cos60^\circ) = \operatorname{atan2}(-0.4330, 0.85) = -27.0^\circ$, so $\theta_2 = 45.0^\circ$; for $\theta_3 = +60^\circ$, $\theta_2 = 18.0^\circ - 27.0^\circ = -9.0^\circ$.
+*Back* ($\theta_1 = 210^\circ$, $r = -0.9073$): direction $\operatorname{atan2}(0.2949, -0.9073) = 162.0^\circ$, giving $\theta_2 = 135.0^\circ$ with $\theta_3 = +60^\circ$ and $\theta_2 = 189.0^\circ$ ($= -171.0^\circ$) with $\theta_3 = -60^\circ$.
+The solution $(30^\circ, 45^\circ, -60^\circ)$ is the configuration from which $\mathbf p_c$ was computed in [[robotics/forward-kinematics]] ✓. The others are "elbow down" ($(30^\circ, -9^\circ, 60^\circ)$) and two "reaching over the top" solutions, which on a real arm would usually violate the shoulder's joint limits. Check one by forward kinematics: for $(30^\circ, -9^\circ, 60^\circ)$, $r = 0.6\cos(-9^\circ) + 0.5\cos51^\circ = 0.5926 + 0.3147 = 0.9073$ ✓ and $s = 0.6\sin(-9^\circ) + 0.5\sin51^\circ = -0.0939 + 0.3886 = 0.2947 \approx 0.2949$ ✓ (rounding).
+:::
 :::
 
-::: example Wrist-decoupled IK {#ex-wrist-decoupled-ik level=3 check="2"}
-A 6-axis robot has a spherical wrist with $d_6 = 0.2$ m. The desired end-effector pose has $\\mathbf{p}_{\\text{ee}} = [1.0, 0.5, 0.8]^T$ m and $\\mathbf{R}_{\\text{ee}} = \\mathbf{I}$. Calculate the wrist center position.
-
-**The wrist center is:**
-
+::: example Wrist angles {#ex-wrist}
+After the arm angles are found, the required wrist rotation is computed as
 $$
-\\mathbf { p } _ { \\text{wrist } } = \\mathbf { p } _ { \\text{ee } } - d _ { 6 } \\mathbf { R } _ { \\text{ee } } \\hat { \\mathbf { z } } = [ 1 . 0 , 0 . 5 , 0 . 8 ] ^ { T } - 0 . 2 [ 0 , 0 , 1 ] ^ { T }
+R_{36} = R_{03}^{\mathsf T}R_d = \begin{bmatrix} 0.5798 & -0.4730 & 0.6634\\ 0.0400 & 0.8298 & 0.5567\\ -0.8138 & -0.2962 & 0.5000\end{bmatrix}.
 $$
-
-$$
-\\mathbf { p } _ { \\text{wrist } } = [ { \bf 1 . 0 } , { \bf 0 . 5 } , { \bf 0 . 6 } ] ^ { T } \\text{ m }
-$$
-
-**The arm angles are then found from the wrist position, and the wrist angles from the orientation.**
-
-**The engineer would design the structure for the operational space, because the operational space is the reason robot control is a practical engineering tool, not a theoretical abstraction.**
+Find both sets of wrist angles $(\theta_4, \theta_5, \theta_6)$ for a ZYZ spherical wrist.
+::: solution
+With the ZYZ extraction formulas of [[robotics/rigid-motions]]: $\theta_5 = \operatorname{atan2}(\pm\sqrt{r_{13}^2 + r_{23}^2},\ r_{33}) = \operatorname{atan2}(\pm\sqrt{0.4401 + 0.3099},\ 0.5) = \operatorname{atan2}(\pm0.8660, 0.5) = \pm60.0^\circ$.
+For $\theta_5 = +60^\circ$ ($\sin\theta_5 > 0$): $\theta_4 = \operatorname{atan2}(r_{23}, r_{13}) = \operatorname{atan2}(0.5567, 0.6634) = 40.0^\circ$, $\theta_6 = \operatorname{atan2}(r_{32}, -r_{31}) = \operatorname{atan2}(-0.2962, 0.8138) = -20.0^\circ$.
+For $\theta_5 = -60^\circ$, all signs of $\sin\theta_5$ flip: $\theta_4 = \operatorname{atan2}(-r_{23}, -r_{13}) = -140.0^\circ$, $\theta_6 = \operatorname{atan2}(-r_{32}, r_{31}) = 160.0^\circ$.
+The two solutions differ by $180^\circ$ in $\theta_4$ and $\theta_6$ and in the sign of $\theta_5$ — the "wrist flip". Check: $r_{33} = \cos\theta_5 = 0.5$ for both ✓; $r_{13} = \cos\theta_4\sin\theta_5 = \cos40^\circ\sin60^\circ = 0.6634$ ✓. At $\theta_5 = 0$ the wrist is singular: axes 4 and 6 align and only $\theta_4 + \theta_6$ is determined.
+:::
 :::
 
-::: example Jacobian transpose IK {#ex-jacobian-transpose-ik level=3 check="2"}
-A 2-DOF robot has Jacobian $\\mathbf{J} = [1, 1; 0, 1]$ and task-space error $\\mathbf{e} = [0.1, 0.05]^T$. Calculate the joint update using the Jacobian transpose method with step size $\\alpha = 0.5$.
+::: warning Use atan2, and choose the solution deliberately
+Writing $\theta = \arctan(y/x)$ loses the quadrant (it cannot tell $(1,1)$ from $(-1,-1)$) and fails at $x = 0$; writing $\theta = \arccos(D)$ loses the sign. Every closed-form IK in this chapter uses $\operatorname{atan2}$ of a sine–cosine pair. Second, an IK routine that returns "a" solution is not enough on a real robot: consecutive targets along a path must be solved with the *same* branch (elbow up, wrist not flipped), or the arm will swing through a large motion between two nearby poses. Choose the branch once, check joint limits, and between path points prefer the solution nearest the current joint vector, taking angle wrap-around into account ($179^\circ$ and $-179^\circ$ are $2^\circ$ apart).
+:::
 
-**The Jacobian transpose is:**
+## Numerical inverse kinematics {#sec-numerical}
 
+For arms without a spherical wrist, for redundant arms, and for tasks that specify only part of the pose, the IK equations are solved iteratively. Write the task as finding a root of $\mathbf e(\boldsymbol\theta) = \mathbf x_d - \mathbf f(\boldsymbol\theta)$, where $\mathbf f$ is the forward kinematics expressed as a vector of task coordinates (position, or position and a suitable orientation error). Near a guess $\boldsymbol\theta_k$, Taylor's theorem gives $\mathbf f(\boldsymbol\theta_k + \Delta\boldsymbol\theta) \approx \mathbf f(\boldsymbol\theta_k) + J(\boldsymbol\theta_k)\Delta\boldsymbol\theta$, with $J = \partial\mathbf f/\partial\boldsymbol\theta$ the Jacobian; setting the linearised error to zero gives Newton's method ([numerical analysis in Maths Atlas](/learn/maths/lesson.php?c=numerical-analysis)).
+
+::: algorithm Newton–Raphson inverse kinematics {#alg-newton-ik}
+Input: target $\mathbf x_d$, initial guess $\boldsymbol\theta_0$ (usually the current joint vector), tolerance $\varepsilon$, iteration limit $k_{\max}$.
+1. Compute $\mathbf e_k = \mathbf x_d - \mathbf f(\boldsymbol\theta_k)$. If $\lVert\mathbf e_k\rVert < \varepsilon$, stop and return $\boldsymbol\theta_k$.
+2. Compute $J_k = J(\boldsymbol\theta_k)$ and solve $J_k\Delta\boldsymbol\theta = \mathbf e_k$ (square $J$), or take $\Delta\boldsymbol\theta = J_k^{+}\mathbf e_k$ with the pseudoinverse (non-square $J$).
+3. Set $\boldsymbol\theta_{k+1} = \boldsymbol\theta_k + \Delta\boldsymbol\theta$, wrap revolute angles into $(-\pi, \pi]$, and repeat. If $k > k_{\max}$, report failure.
+:::
+
+Near a solution at which $J$ is invertible, Newton's method converges **quadratically**: the number of correct digits roughly doubles each step. Far from a solution, or near a singular configuration, it can take huge steps and wander.
+
+::: example Newton iteration for the 2R arm {#ex-newton}
+Solve [[#ex-2r-ik]] numerically from the guess $\boldsymbol\theta_0 = (0, \pi/2)$.
+::: solution
+The 2R Jacobian (derived in [[robotics/jacobians]]) is
 $$
-\\mathbf { J } ^ { T } = [ 1 , 0 ; 1 , 1 ]
+J = \begin{bmatrix} -L_1s_1 - L_2s_{12} & -L_2s_{12}\\ L_1c_1 + L_2c_{12} & L_2c_{12}\end{bmatrix}.
 $$
+*Step 0.* $\mathbf f(\boldsymbol\theta_0) = (0.6 + 0.5\cos90^\circ,\ 0 + 0.5\sin90^\circ) = (0.6, 0.5)$, so $\mathbf e_0 = (0.1, 0.1)\,\mathrm m$, $\lVert\mathbf e_0\rVert = 0.141\,\mathrm m$, and $J_0 = \begin{bmatrix} -0.5 & -0.5\\ 0.6 & 0\end{bmatrix}$. The second row gives $0.6\,\Delta\theta_1 = 0.1$, so $\Delta\theta_1 = 0.1667$; the first, $-0.5(0.1667) - 0.5\,\Delta\theta_2 = 0.1$, gives $\Delta\theta_2 = -0.3667$. New guess $\boldsymbol\theta_1 = (0.1667, 1.2041)\,\mathrm{rad}$.
+*Subsequent steps* (computed the same way):
 
-**The joint update is:**
+| $k$ | $\theta_1$ (rad) | $\theta_2$ (rad) | $\lVert\mathbf e_k\rVert$ (m) |
+|---|---|---|---|
+| 0 | 0 | 1.5708 | $1.4\times10^{-1}$ |
+| 1 | 0.1667 | 1.2041 | $1.4\times10^{-2}$ |
+| 2 | 0.1881 | 1.1600 | $2.2\times10^{-4}$ |
+| 3 | 0.1884 | 1.1593 | $6.3\times10^{-8}$ |
+| 4 | 0.1884 | 1.1593 | $4.9\times10^{-15}$ |
 
+The limit $(0.1884, 1.1593)\,\mathrm{rad} = (10.80^\circ, 66.42^\circ)$ is the elbow-up solution of [[#ex-2r-ik]]. The error exponent roughly doubles each step ($10^{-2}, 10^{-4}, 10^{-8}, 10^{-15}$) — quadratic convergence. Starting from $(\pi/2, -\pi/2)$ instead, the iteration converges just as fast to the elbow-down solution $(70.41^\circ, -66.42^\circ)$; starting from $(0, -\pi/2)$, where the guess sits on the far side of the ridge in the error landscape below, the first steps are large, the iterates wander for about ten steps, and they finally converge to the elbow-*up* solution. Newton returns the solution in whose basin of attraction the guess lies, which is why the current joint vector is the natural initial guess.
+:::
+:::
+
+When the target is unreachable, or the arm passes near a singularity, $J$ is nearly singular and $J^{-1}\mathbf e$ is huge. The remedy is to ask for a step that reduces the error *and* stays small.
+
+::: proposition Damped least-squares step {#prop-dls}
+For $\lambda > 0$, the step that minimises
 $$
-\\Delta \\boldsymbol { \\theta } = \\alpha \\mathbf { J } ^ { T } \\mathbf { e } = 0 . 5 [ 1 , 0 ; 1 , 1 ] [ 0 . 1 , 0 . 0 5 ] ^ { T }
+\lVert J\Delta\boldsymbol\theta - \mathbf e\rVert^2 + \lambda^2\lVert\Delta\boldsymbol\theta\rVert^2
 $$
-
+is unique and equals
 $$
-\\Delta \\boldsymbol { \\theta } = 0 . 5 [ 0 . 1 , 0 . 1 5 ] ^ { T } = [ { \bf 0 . 0 5 } , { \bf 0 . 0 7 5 } ] ^ { T } \\text{ rad }
-$$
+\Delta\boldsymbol\theta = (J^{\mathsf T}J + \lambda^2I)^{-1}J^{\mathsf T}\mathbf e = J^{\mathsf T}(JJ^{\mathsf T} + \lambda^2I)^{-1}\mathbf e .
+$$ {#eq-dls}
+Along a singular direction of $J$ with singular value $\sigma$, the gain is $\sigma/(\sigma^2 + \lambda^2) \le 1/(2\lambda)$, instead of $1/\sigma$ for the exact inverse.
+:::
 
-**The Jacobian transpose method converges linearly and is simple to implement.**
+::: proof
+The objective is a convex quadratic in $\Delta\boldsymbol\theta$: $\Delta\boldsymbol\theta^{\mathsf T}(J^{\mathsf T}J + \lambda^2I)\Delta\boldsymbol\theta - 2\mathbf e^{\mathsf T}J\Delta\boldsymbol\theta + \mathbf e^{\mathsf T}\mathbf e$. Its Hessian $2(J^{\mathsf T}J + \lambda^2I)$ is positive definite for $\lambda > 0$ (since $\mathbf u^{\mathsf T}J^{\mathsf T}J\mathbf u = \lVert J\mathbf u\rVert^2 \ge 0$), so the unique minimiser is where the gradient vanishes: $(J^{\mathsf T}J + \lambda^2I)\Delta\boldsymbol\theta = J^{\mathsf T}\mathbf e$. The second form follows from the identity $J^{\mathsf T}(JJ^{\mathsf T} + \lambda^2I) = (J^{\mathsf T}J + \lambda^2I)J^{\mathsf T}$, multiplied on the left by $(J^{\mathsf T}J + \lambda^2I)^{-1}$ and on the right by $(JJ^{\mathsf T} + \lambda^2I)^{-1}$; it requires inverting only an $m\times m$ matrix ($m$ = task dimension), which is cheaper for redundant arms. For the gain, write the singular value decomposition $J = U\Sigma V^{\mathsf T}$ ([SVD](/learn/maths/lesson.php?c=linear-algebra&l=svd)); then [[#eq-dls]] becomes $\Delta\boldsymbol\theta = \sum_i \frac{\sigma_i}{\sigma_i^2 + \lambda^2}\mathbf v_i\mathbf u_i^{\mathsf T}\mathbf e$. The function $\sigma/(\sigma^2 + \lambda^2)$ has maximum $1/(2\lambda)$ at $\sigma = \lambda$ and tends to zero as $\sigma\to0$, while $1/\sigma \to \infty$.
+:::
 
-**The engineer would design the structure for the redundancy resolution, because the redundancy resolution is the reason robot control is a practical engineering tool, not a theoretical abstraction.**
+The **damping** $\lambda$ (units of the task coordinates, here metres) trades accuracy for robustness: far from singularities ($\sigma_i \gg \lambda$) the step is nearly the Newton step; near them it is limited. As $\lambda\to\infty$, $\Delta\boldsymbol\theta \approx J^{\mathsf T}\mathbf e/\lambda^2$, which is a small step along the negative gradient of $\frac12\lVert\mathbf e\rVert^2$ — the **Jacobian-transpose** method, robust but slow (linear convergence).
+
+::: example Damped least squares for an unreachable target {#ex-dls}
+The 2R arm ($L_1 = 0.6$, $L_2 = 0.5\,\mathrm m$, maximum reach $1.1\,\mathrm m$) is asked to put its tip at $(1.3, 0)\,\mathrm m$, starting from $\boldsymbol\theta_0 = (0.3, 0.6)\,\mathrm{rad}$. Compare Newton with damped least squares, $\lambda = 0.3\,\mathrm m$.
+::: solution
+The target is $0.2\,\mathrm m$ beyond reach, so no exact solution exists; the best possible is the stretched arm pointing along $+x$, $\boldsymbol\theta = (0, 0)$, with error $0.2\,\mathrm m$. Iterating (numbers from a short script):
+
+| $k$ | Newton $\lVert\mathbf e_k\rVert$ (m) | Newton $\lVert\Delta\boldsymbol\theta\rVert$ (rad) | DLS $\lVert\mathbf e_k\rVert$ (m) | DLS $\boldsymbol\theta_k$ (rad) |
+|---|---|---|---|---|
+| 0 | 0.705 | 0.61 | 0.705 | $(0.300, 0.600)$ |
+| 1 | 0.245 | 2.54 | 0.227 | $(-0.219, 0.360)$ |
+| 2 | 0.670 | 1.64 | 0.206 | $(-0.090, 0.201)$ |
+| 3 | 0.229 | 2.13 | 0.201 | $(-0.048, 0.099)$ |
+| 4 | 0.490 | 1.45 | 0.200 | $(-0.024, 0.050)$ |
+| 5 | 0.206 | 4.95 | 0.200 | $(-0.012, 0.025)$ |
+
+Newton keeps trying to stretch the arm beyond its length: as $\theta_2\to0$ the Jacobian becomes singular, the steps grow to several radians and the iterates jump between configurations. Damped least squares settles smoothly on the stretched configuration, with the error at its minimum $0.200\,\mathrm m$ and steps halving each iteration. In an online controller the Newton behaviour would mean violent joint motion; this is why commercial IK solvers damp (often with $\lambda$ increased only near singularities). With $\lambda = 0.1\,\mathrm m$ the same DLS iteration still oscillates (the damping is too weak for this geometry), while $\lambda = 0.2$–$0.5\,\mathrm m$ all converge.
+:::
+:::
+
+::: widget gradientdescent
+f: (0.6*cos(x) + 0.5*cos(x + y) - 0.7)^2 + (0.6*sin(x) + 0.5*sin(x + y) - 0.6)^2
+start: -1, -2.5
+rate: 0.5
+steps: 60
+x: -3.1416, 3.1416
+y: -3.1416, 3.1416
+caption: The Jacobian-transpose method is gradient descent on half the squared error, here for the 2R arm and the target $(0.7, 0.6)\,\mathrm m$ ($x = \theta_1$, $y = \theta_2$ in radians). Drag the start point and change the rate. From most starts the iterates slide into one of the two zero-error minima (elbow up or elbow down), but slowly and along a curved valley — compare the four Newton steps of the worked example. Too large a rate makes the iterates overshoot and zig-zag; too small a rate makes progress glacial.
+:::
+
+::: quiz
+A six-axis arm with a spherical wrist is asked to reach a pose well inside its workspace and away from singularities. Ignoring joint limits, how many IK solutions should a complete closed-form solver return?
+- [ ] 1
+- [ ] 2
+- [ ] 4
+- [x] 8
+::: solution
+Two choices of waist angle (front or back), two elbow configurations for each, and two wrist configurations (wrist flip) for each arm solution: $2\times2\times2 = 8$. Joint limits usually remove several of them; at singular poses some coincide.
+:::
+:::
+
+::: history
+Donald Pieper's 1968 Stanford PhD thesis, *The Kinematics of Manipulators under Computer Control*, showed that a six-axis arm whose last three axes intersect can be solved in closed form by separating position and orientation — the design rule followed by almost every industrial arm since, beginning with Victor Scheinman's Stanford Arm of 1969. Daniel Whitney's 1969 paper on resolved-motion rate control introduced the iterative use of the inverse Jacobian to drive an arm towards a target. The general six-revolute problem resisted closed-form solution for two decades: Primrose proved in 1986 that it has at most 16 solutions, and in the late 1980s Lee and Liang, and Raghavan and Roth, reduced it to a polynomial of degree 16 in one joint variable.
+:::
+
+::: summary
+- Inverse kinematics finds $\boldsymbol\theta$ with $T(\boldsymbol\theta) = T_d$; there may be none, finitely many (up to 16 for general 6R arms, up to 8 with a spherical wrist) or a continuum (redundant arms).
+- Planar 2R: $D = (x^2 + y^2 - L_1^2 - L_2^2)/(2L_1L_2)$; reachable iff $\lvert D\rvert\le1$; $\theta_2 = \operatorname{atan2}(\pm\sqrt{1 - D^2}, D)$, $\theta_1 = \operatorname{atan2}(y, x) - \operatorname{atan2}(L_2s_2, L_1 + L_2c_2)$.
+- With orientation, subtract the last link to get the wrist point, solve for the arm, and recover the last angle.
+- Pieper decoupling: wrist centre $\mathbf p_c = \mathbf p_d - d_6R_d\hat{\mathbf z}$ fixes $\theta_1,\theta_2,\theta_3$; then $R_{36} = R_{03}^{\mathsf T}R_d$ gives the wrist's Euler angles (two solutions, the wrist flip).
+- Newton–Raphson converges quadratically from a good guess and returns the nearby solution; damped least squares $\Delta\boldsymbol\theta = J^{\mathsf T}(JJ^{\mathsf T} + \lambda^2I)^{-1}\mathbf e$ limits steps near singularities and for unreachable targets.
+- Always use atan2, choose and keep a solution branch, and respect joint limits and angle wrap-around.
 :::
 
 ## Exercises
 
-::: exercise Inverse kinematics {#ex-inverse-kinematics-ex level=3 check="2"}
-The inverse kinematics problem maps:
-
+::: exercise The elbow angle {#exr-elbow level=1 check="87.71"}
+A 2R arm with $L_1 = L_2 = 0.5\,\mathrm m$ must reach $(0.6, 0.4)\,\mathrm m$. Find the positive solution for $\theta_2$. (Enter $\theta_2$ in degrees, rounded to two decimal places.)
 ::: solution
-**Cartesian space to joint space.** The IK computes the joint variables from the desired end-effector pose.
+$D = (0.36 + 0.16 - 0.25 - 0.25)/(2\times0.25) = 0.02/0.5 = 0.04$, so $\theta_2 = \operatorname{atan2}(\sqrt{1 - 0.0016}, 0.04) = 87.71^\circ$. The target is at $0.721\,\mathrm m$ from the base, a little over $\sqrt2\times0.5 = 0.707\,\mathrm m$ (the reach at a right-angled elbow), so $\theta_2$ slightly under $90^\circ$ is consistent.
 :::
 :::
 
-::: exercise Number of solutions {#ex-number-solutions-ex level=3 check="2"}
-A two-link planar robot has how many IK solutions?
-
+::: exercise Reachable or not? {#exr-reach level=1 check="0.88/0.56"}
+A 2R arm has $L_1 = 0.7\,\mathrm m$, $L_2 = 0.4\,\mathrm m$. Compute $D$ for the target $(1.2, 0.3)\,\mathrm m$ and decide whether it is reachable. (Enter $D$ exactly, for example as a fraction.)
 ::: solution
-**Two (elbow-up and elbow-down).** The two solutions correspond to the two possible configurations of the elbow joint.
+$D = (1.44 + 0.09 - 0.49 - 0.16)/(2\times0.7\times0.4) = 0.88/0.56 = 1.571 > 1$: unreachable. Indeed the target is $\sqrt{1.53} = 1.237\,\mathrm m$ away and the reach is $1.1\,\mathrm m$. A numerical solver should report failure or return the nearest reachable configuration (stretched arm pointing at the target), not a fabricated angle.
 :::
 :::
 
-::: exercise Pieper criterion {#ex-pieper-criterion-ex level=3 check="2"}
-The Pieper criterion guarantees a closed-form IK when:
-
+::: exercise Waist angle {#exr-waist level=1 check="126.87"}
+The wrist centre of an elbow arm must be at $(-0.3, 0.4, 0.8)\,\mathrm m$. Find the "front" waist angle $\theta_1$. (Enter it in degrees, in $(-180, 180]$, rounded to two decimal places.)
 ::: solution
-**The last three joint axes intersect at a point (spherical wrist).** This allows the position and orientation sub-problems to be decoupled.
+$\theta_1 = \operatorname{atan2}(0.4, -0.3) = 126.87^\circ$; the "back" solution is $126.87^\circ - 180^\circ = -53.13^\circ$ with the arm reaching over. Note that $\arctan(0.4/(-0.3)) = -53.13^\circ$ — the plain arctangent returns the back solution, a classic quadrant error.
 :::
 :::
 
-::: exercise Singularity {#ex-singularity-ex level=3 check="2"}
-At a singularity, the Jacobian:
-
+::: exercise Planar 3R target {#exr-3r level=2 check="21.11"}
+For the 3R arm with $L_1 = 0.4$, $L_2 = 0.3$, $L_3 = 0.1\,\mathrm m$, find both solutions for $(x, y, \phi) = (0.5\,\mathrm m, 0.3\,\mathrm m, 90^\circ)$. (Enter $\theta_3$, in degrees, for the solution with $\theta_2 > 0$, rounded to two decimal places.)
 ::: solution
-**Loses rank.** The manipulability $w = \sqrt{\det(\mathbf{J}\mathbf{J}^T)}$ becomes zero, and the robot loses one or more degrees of freedom in Cartesian space.
+Wrist point $(0.5 - 0.1\cos90^\circ,\ 0.3 - 0.1\sin90^\circ) = (0.5, 0.2)\,\mathrm m$. $D = (0.25 + 0.04 - 0.16 - 0.09)/0.24 = 0.1667$, $\theta_2 = \pm80.41^\circ$. Direction $\operatorname{atan2}(0.2, 0.5) = 21.80^\circ$. For $\theta_2 = +80.41^\circ$: $\gamma = \operatorname{atan2}(0.3\sin80.41^\circ, 0.4 + 0.3\cos80.41^\circ) = \operatorname{atan2}(0.2958, 0.4500) = 33.32^\circ$, $\theta_1 = -11.52^\circ$, $\theta_3 = 90^\circ + 11.52^\circ - 80.41^\circ = 21.11^\circ$. For $\theta_2 = -80.41^\circ$: $\theta_1 = 55.12^\circ$, $\theta_3 = 90^\circ - 55.12^\circ + 80.41^\circ = 115.29^\circ$. Check the first by forward kinematics: $x = 0.4\cos(-11.52^\circ) + 0.3\cos68.89^\circ + 0.1\cos90^\circ = 0.3919 + 0.1081 + 0 = 0.500$ ✓.
 :::
 :::
 
-::: exercise Damped least-squares {#ex-damped-ls-ex level=3 check="2"}
-The damped least-squares method is preferred over Newton-Raphson when:
-
+::: exercise One Newton step by hand {#exr-newton level=2 check="1/6"}
+Carry out the first Newton–Raphson step of [[#ex-newton]] yourself: from $\boldsymbol\theta_0 = (0, \pi/2)$, target $(0.7, 0.6)\,\mathrm m$, $L_1 = 0.6$, $L_2 = 0.5\,\mathrm m$. (Enter $\theta_1$ after the step, in rad, exactly — a fraction is accepted.)
 ::: solution
-**The robot is near a singularity.** The damping term $\lambda^2 \mathbf{I}$ prevents large joint velocities near singularities.
+$\mathbf f(\boldsymbol\theta_0) = (0.6, 0.5)$, $\mathbf e_0 = (0.1, 0.1)$; at $\boldsymbol\theta_0$, $s_1 = 0$, $c_1 = 1$, $s_{12} = 1$, $c_{12} = 0$, so $J_0 = \begin{bmatrix} -0.5 & -0.5\\ 0.6 & 0\end{bmatrix}$. Solving $J_0\Delta\boldsymbol\theta = \mathbf e_0$: $\Delta\theta_1 = 0.1/0.6 = 1/6$, $\Delta\theta_2 = -(0.1 + 0.5/6)/0.5 = -0.3667$. Hence $\theta_1 = 0.1667\,\mathrm{rad}$, $\theta_2 = 1.2041\,\mathrm{rad}$, and the error drops from $0.141$ to $0.0138\,\mathrm m$.
 :::
 :::
 
-::: exercise Derivation: the two-link planar IK {#ex-derive-two-link-ik level=4 check="2"}
-Derive the inverse kinematics for a two-link planar robot. Write the expression for $\\\\theta_2$.
-
+::: exercise Wrist angles from a rotation matrix {#exr-wrist level=2 check="100"}
+A spherical ZYZ wrist must produce
+$$
+R_{36} = \begin{bmatrix} 0.3861 & -0.6899 & 0.6124\\ 0.9143 & 0.1978 & -0.3536\\ 0.1228 & 0.6964 & 0.7071\end{bmatrix}.
+$$
+Find both solutions. (Enter $\theta_6$ in degrees for the solution with $\theta_5 > 0$.)
 ::: solution
-The **forward kinematics** is:
-
-$$
-x = a _ { 1 } c _ { 1 } + a _ { 2 } c _ { 1 2 } , \\\\quad y = a _ { 1 } s _ { 1 } + a _ { 2 } s _ { 1 2 }
-$$
-
-**Squaring and adding:**
-
-$$
-x ^ { 2 } + y ^ { 2 } = a _ { 1 } ^ { 2 } + a _ { 2 } ^ { 2 } + 2 a _ { 1 } a _ { 2 } ( c _ { 1 } c _ { 1 2 } + s _ { 1 } s _ { 1 2 } ) = a _ { 1 } ^ { 2 } + a _ { 2 } ^ { 2 } + 2 a _ { 1 } a _ { 2 } c _ { 2 }
-$$
-
-**Solving for $c_2$:**
-
-$$
-c _ { 2 } = { \\frac { x ^ { 2 } + y ^ { 2 } - a _ { 1 } ^ { 2 } - a _ { 2 } ^ { 2 } } { 2 a _ { 1 } a _ { 2 } } }
-$$
-
-**Therefore:**
-
-$$
-\\\\theta _ { 2 } = \\\\pm \\\\arccos { \\frac { x ^ { 2 } + y ^ { 2 } - a _ { 1 } ^ { 2 } - a _ { 2 } ^ { 2 } } { 2 a _ { 1 } a _ { 2 } } }
-$$
-
-**The $\\\\pm$ gives the elbow-up and elbow-down solutions.** $\blacksquare$
+$\theta_5 = \operatorname{atan2}(\pm\sqrt{0.6124^2 + 0.3536^2}, 0.7071) = \operatorname{atan2}(\pm0.7071, 0.7071) = \pm45^\circ$. With $\theta_5 = 45^\circ$: $\theta_4 = \operatorname{atan2}(-0.3536, 0.6124) = -30^\circ$, $\theta_6 = \operatorname{atan2}(0.6964, -0.1228) = 100^\circ$. With $\theta_5 = -45^\circ$: $\theta_4 = 150^\circ$, $\theta_6 = -80^\circ$. Check: $r_{31} = -\sin\theta_5\cos\theta_6 = -0.7071\cos100^\circ = 0.1228$ ✓.
 :::
 :::
 
-::: exercise Derivation: the damped least-squares update {#ex-derive-damped-ls level=4 check="2"}
-Derive the damped least-squares IK update from the optimization problem. Write the expression for the cost function.
-
+::: exercise The Jacobian-transpose step is a descent direction {#exr-jt level=3}
+Let $E(\boldsymbol\theta) = \frac12\lVert\mathbf x_d - \mathbf f(\boldsymbol\theta)\rVert^2$. Show that $\nabla E = -J^{\mathsf T}\mathbf e$, and hence that the step $\Delta\boldsymbol\theta = \alpha J^{\mathsf T}\mathbf e$ decreases $E$ for small enough $\alpha > 0$ unless $J^{\mathsf T}\mathbf e = \mathbf 0$. Interpret the condition $J^{\mathsf T}\mathbf e = \mathbf 0$ for the unreachable target of [[#ex-dls]], and show that the damped least-squares step is also a descent direction.
 ::: solution
-The **optimization problem** is:
-
-$$
-\\\\min _ { \\\\Delta \\\\boldsymbol { \\\\theta } } | | \\\\mathbf { J } \\\\Delta \\\\boldsymbol { \\\\theta } - \\\\mathbf { e } | | ^ { 2 } + \\\\lambda ^ { 2 } | | \\\\Delta \\\\boldsymbol { \\\\theta } | | ^ { 2 }
-$$
-
-**Expanding the cost function:**
-
-$$
-C = ( \\\\mathbf { J } \\\\Delta \\\\boldsymbol { \\\\theta } - \\\\mathbf { e } ) ^ { T } ( \\\\mathbf { J } \\\\Delta \\\\boldsymbol { \\\\theta } - \\\\mathbf { e } ) + \\\\lambda ^ { 2 } \\\\Delta \\\\boldsymbol { \\\\theta } ^ { T } \\\\Delta \\\\boldsymbol { \\\\theta }
-$$
-
-**Setting the gradient to zero:**
-
-$$
-\\\\mathbf { J } ^ { T } ( \\\\mathbf { J } \\\\Delta \\\\boldsymbol { \\\\theta } - \\\\mathbf { e } ) + \\\\lambda ^ { 2 } \\\\Delta \\\\boldsymbol { \\\\theta } = 0
-$$
-
-**Rearranging:**
-
-$$
-( \\\\mathbf { J } ^ { T } \\\\mathbf { J } + \\\\lambda ^ { 2 } \\\\mathbf { I } ) \\\\Delta \\\\boldsymbol { \\\\theta } = \\\\mathbf { J } ^ { T } \\\\mathbf { e }
-$$
-
-**Using the identity $(\\\\mathbf{J}^T\\\\mathbf{J} + \\\\lambda^2\\\\mathbf{I})^{-1}\\\\mathbf{J}^T = \\\\mathbf{J}^T(\\\\mathbf{J}\\\\mathbf{J}^T + \\\\lambda^2\\\\mathbf{I})^{-1}$:**
-
-$$
-\\\\Delta \\\\boldsymbol { \\\\theta } = \\\\mathbf { J } ^ { T } ( \\\\mathbf { J } \\\\mathbf { J } ^ { T } + \\\\lambda ^ { 2 } \\\\mathbf { I } ) ^ { - 1 } \\\\mathbf { e }
-$$
-
-**This is the damped least-squares update.** $\blacksquare$
+$E = \frac12\mathbf e^{\mathsf T}\mathbf e$ with $\partial\mathbf e/\partial\boldsymbol\theta = -J$, so $\nabla E = -J^{\mathsf T}\mathbf e$ by the chain rule. For $\Delta\boldsymbol\theta = \alpha J^{\mathsf T}\mathbf e$, $E(\boldsymbol\theta + \Delta\boldsymbol\theta) = E(\boldsymbol\theta) + \nabla E^{\mathsf T}\Delta\boldsymbol\theta + O(\alpha^2) = E - \alpha\lVert J^{\mathsf T}\mathbf e\rVert^2 + O(\alpha^2)$, which is smaller than $E$ for small $\alpha$ when $J^{\mathsf T}\mathbf e \ne \mathbf 0$. The condition $J^{\mathsf T}\mathbf e = \mathbf 0$ means the error is orthogonal to every achievable tip velocity: a stationary point of $E$. For the unreachable target, at $\boldsymbol\theta = (0,0)$ the arm is stretched along $x$, every tip velocity is along $y$ (both columns of $J$ are $(0, \cdot)$), and the error $(0.2, 0)$ is along $x$, so $J^{\mathsf T}\mathbf e = \mathbf 0$: the best the arm can do. For DLS, $\nabla E^{\mathsf T}\Delta\boldsymbol\theta = -\mathbf e^{\mathsf T}J(J^{\mathsf T}J + \lambda^2I)^{-1}J^{\mathsf T}\mathbf e = -\mathbf w^{\mathsf T}(J^{\mathsf T}J + \lambda^2I)^{-1}\mathbf w < 0$ for $\mathbf w = J^{\mathsf T}\mathbf e \ne \mathbf 0$, because $(J^{\mathsf T}J + \lambda^2I)^{-1}$ is positive definite. (A descent direction guarantees progress only for a short enough step; the oscillation found with $\lambda = 0.1\,\mathrm m$ shows that the full DLS step can still be too long.)
 :::
 :::
 
-::: exercise Redundancy resolution {#ex-redundancy-resolution-ex level=3 check="2"}
-The null-space projection $(\\\\mathbf{I} - \\\\mathbf{J}^+\\\\mathbf{J})\\\\mathbf{z}$ produces:
-
+::: exercise Choosing among IK solutions {#exr-choose level=3}
+An elbow arm with a spherical wrist must follow a straight welding seam. At the start of the seam your closed-form solver returns eight solutions. (a) List criteria for picking one. (b) Halfway along the seam, the wrist passes close to $\theta_5 = 0$. Explain what happens to $\theta_4$ and $\theta_6$ if the solver always picks the solution nearest the previous joint vector, and propose a remedy. (c) Why do most industrial arms use a spherical wrist even though it creates this singularity inside the workspace?
 ::: solution
-**Motion that does not change the end-effector pose.** The null-space velocity is orthogonal to the row space of $\\\\mathbf{J}$, so it produces no end-effector motion.
+(a) Joint limits (discard solutions outside them); collision with the base, fixtures and the robot itself; distance from singularities over the whole seam (prefer solutions whose $\theta_5$ and elbow angle stay away from $0$); continuity (the same branch for the whole seam); cable and hose wrap on the wrist; and secondary preferences such as minimum joint motion from the current pose or best manipulability.
+(b) Near $\theta_5 = 0$ only $\theta_4 + \theta_6$ is well determined ([[#ex-wrist]]). A small change in the tool orientation around the singular direction requires a large, fast, opposite rotation of $\theta_4$ and $\theta_6$ (up to $180^\circ$ in a short time) — "wrist flip". Nearest-solution tracking follows it and demands joint rates beyond the motors' limits. Remedies: re-plan the path to keep $\lvert\theta_5\rvert$ above a few degrees (tilt the torch slightly — the weld usually tolerates a few degrees of work angle), slow down near the singularity, use damped least squares so that a small orientation error is accepted instead of an unbounded rate, or, on a redundant arm, use the extra joint to avoid the singularity.
+(c) Decoupling makes IK closed-form, fast and complete (all eight solutions, which matters for choosing branches and checking limits); the wrist is compact and the three wrist motors can be mounted on the forearm, reducing moving mass; and the wrist singularity is easy to describe ($\theta_5 = 0$) and therefore easy to avoid in planning. Arms without a spherical wrist (some collaborative arms with offset wrists) trade these benefits for other advantages such as fewer singularities inside the workspace, and need numerical or more elaborate analytical IK.
 :::
-:::
-
-::: quiz Inverse kinematics {#quiz-inverse-kinematics}
-The reason robot control is a practical engineering tool, not a theoretical abstraction, is:
-
-- [ ] Springs, bars and the direct stiffness method
-- [ ] Trusses and frames
-- [x] Inverse kinematics
-- [ ] Structural dynamics
-
-::: solution
-**Inverse kinematics.** Inverse kinematics is the foundation of robot position control, because the inverse kinematics problem computes the joint variables from the desired end-effector pose, the geometric solution exploits the robot's kinematic structure, and the numerical solution uses iterative methods like Newton-Raphson or Jacobian transpose. The engineer who designs a robot control system without solving the inverse kinematics is not designing a control system; they are guessing.
-:::
-:::
-
-::: quiz Singularity {#quiz-singularity}
-At a singularity, the manipulability $w$ is:
-
-- [ ] Maximum
-- [x] Zero
-- [ ] Equal to 1
-- [ ] Negative
-
-::: solution
-**Zero.** The manipulability $w = \sqrt{\det(\mathbf{J}\mathbf{J}^T)}$ is zero at a singularity because the Jacobian loses rank, and the joint limits are the reason robotics is designed for the joint, not the Cartesian. The engineer who designs a robot control system without checking the joint limits is not designing a control system; they are guessing.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[robotics/rigid-motions]]** — Rigid-body motions and transformations are the foundation of robotics.
-- **[[robotics/forward-kinematics]]** — Forward kinematics is the foundation of robotics.
-- **[[robotics/jacobians]]** — Velocity kinematics and Jacobians are the foundation of robotics.
-- **[[robotics/manipulator-dynamics]]** — Manipulator dynamics is the foundation of robotics.
-- **[[robotics/trajectory-planning]]** — Trajectory planning is the foundation of robotics.
-- **[[robotics/robot-control]]** — Motion and force control is the foundation of robotics.
-- **[[robotics/mobile-robots]]** — Mobile robots are the foundation of robotics.
-- **[[robotics/motion-planning-perception]]** — Motion planning and perception are the foundation of robotics.
-- **[[robotics/rigid-motions]]** — Rigid-body motions and transformations are the foundation of robotics.
-- **[[control-systems/pid-control]]** — PID control is the foundation of robotics.
-
-::: history Inverse kinematics: from Pieper to KUKA {#history-inverse-kinematics}
-**1876** — **Arthur Cayley publishes the theory of screw displacements**, which is the foundation of inverse kinematics. **Cayley's theory is the reason inverse kinematics is the oldest concept in robotics, and the age is the reason inverse kinematics is the most refined concept in robotics.**
-
-**1968** — **Donald Pieper publishes his PhD thesis on closed-form IK**, and Pieper's thesis is the reason inverse kinematics is the most historic concept in robotics. **Pieper's thesis is the reason inverse kinematics is the most refined concept in robotics, and inverse kinematics is the reason Pieper's thesis is the most historic concept in robotics.**
-
-**1974** — **Richard Paul publishes robot manipulator kinematics**, and Paul's kinematics is the reason inverse kinematics is the most practical concept in robotics. **Paul's kinematics is the reason inverse kinematics is the most refined concept in robotics, and inverse kinematics is the reason Paul's kinematics is the most practical concept in robotics.**
-
-**1986** — **John Craig publishes Introduction to Robotics**, and Craig's book is the reason inverse kinematics is the most powerful concept in robotics. **Craig's book is the reason inverse kinematics is the most refined concept in robotics, and inverse kinematics is the reason Craig's book is the most powerful concept in robotics.**
-
-**1990** — **Y. Nakamura publishes "Inverse Kinematics Solutions Using Singularity-Avoidance Function"**, and Nakamura's method is the reason inverse kinematics is the most efficient concept in robotics. **Nakamura's method is the reason inverse kinematics is the most refined concept in robotics, and inverse kinematics is the reason Nakamura's method is the most efficient concept in robotics.**
-
-**2000** — **KUKA and ABB industrial robots** use closed-form IK for real-time control, and industrial robots are the reason inverse kinematics is the most advanced concept in robotics. **Industrial robots are the reason inverse kinematics is the most refined concept in robotics, and inverse kinematics is the reason industrial robots are the most advanced concept in robotics.**
-
-**2010** — **KUKA LBR iiwa** 7-axis redundant robot uses null-space optimization, and the iiwa is the reason inverse kinematics is the most modern concept in robotics. **The iiwa is the reason inverse kinematics is the most refined concept in robotics, and inverse kinematics is the reason the iiwa is the most modern concept in robotics.**
-
-**2020s** — **Collaborative robots** use real-time IK with joint limit avoidance, and collaborative robots are the reason inverse kinematics is the most futuristic concept in robotics. **Collaborative robots are the reason inverse kinematics is the most refined concept in robotics, and inverse kinematics is the reason collaborative robots are the most futuristic concept in robotics.**
-:::
-
-::: summary Inverse kinematics {#summary-inverse-kinematics}
-- **The two-link planar IK is $\\\\theta _ { 2 } = \\\\arccos ( ( x ^ { 2 } + y ^ { 2 } - a _ { 1 } ^ { 2 } - a _ { 2 } ^ { 2 } ) / ( 2 a _ { 1 } a _ { 2 } ) )$ and $\\\\theta _ { 1 } = \\\\mathrm { atan2 } ( y , x ) - \\\\mathrm { atan2 } ( a _ { 2 } s _ { 2 } , a _ { 1 } + a _ { 2 } c _ { 2 } )$ , the workspace condition is $( a_1 - a_2 )^2 \\\\le x^2 + y^2 \\\\le (a_1 + a_2)^2$, and there are two solutions (elbow-up and elbow-down).** The inverse kinematics is the reason robotics is designed for the inverse, not the forward, and the inverse is the reason robot control is a practical engineering tool, not a theoretical abstraction.
-- **The wrist position is $\\\\mathbf { p } _ { \\\\text{wrist } } = \\\\mathbf { p } _ { \\\\text{ee } } - d _ { 6 } \\\\mathbf { R } _ { \\\\text{ee } } \\\\hat { \\\\mathbf { z } }$ , the Pieper criterion guarantees closed-form IK for spherical-wrist robots, and the number of solutions is 8 for a 6-axis spherical-wrist robot.** The geometric solution is the reason robotics is designed for the geometric, not the algebraic, and the geometric is the reason robot control is a practical engineering tool, not a theoretical abstraction.
-- **The Jacobian transpose method is $\\\\boldsymbol { \\\\theta } _ { k + 1 } = \\\\boldsymbol { \\\\theta } _ { k } + \\\\alpha \\\\mathbf { J } ^ { T } \\\\mathbf { e }$ , the Newton-Raphson method is $\\\\boldsymbol { \\\\theta } _ { k + 1 } = \\\\boldsymbol { \\\\theta } _ { k } + \\\\mathbf { J } ^ { - 1 } \\\\mathbf { e }$ , and the damped least-squares method is $\\\\boldsymbol { \\\\theta } _ { k + 1 } = \\\\boldsymbol { \\\\theta } _ { k } + \\\\mathbf { J } ^ { T } ( \\\\mathbf { J } \\\\mathbf { J } ^ { T } + \\\\lambda ^ { 2 } \\\\mathbf { I } ) ^ { - 1 } \\\\mathbf { e }$ .** The numerical solution is the reason robotics is designed for the numerical, not the analytical, and the numerical is the reason robot control is a practical engineering tool, not a theoretical abstraction.
-- **The manipulability is $w = \sqrt{\det(\mathbf{J}\mathbf{J}^T)}$, the condition number is $\\\\kappa = \sigma_{\max}/\sigma_{\min}$, and the singularity occurs when $w = 0$ or $\\\\kappa \\\\to \\\\infty$.** The wrist decoupling is the reason robotics is designed for the wrist, not the arm, and the wrist is the reason robot control is a practical engineering tool, not a theoretical abstraction.
-- **The redundancy resolution is $\\\\dot { \\\\boldsymbol { \\\\theta } } = \\\\mathbf { J } ^ { + } \\\\mathbf { v } + ( \\\\mathbf { I } - \\\\mathbf { J } ^ { + } \\\\mathbf { J } ) \\\\mathbf { z }$ , the gradient projection method uses $\\\\mathbf { z } = - k \\\\nabla H ( \\\\boldsymbol { \\\\theta } )$ , and the joint limit avoidance criterion is $H = \\\\frac{1}{4} \\\\sum ( ( \\\\theta_i - \\\\theta_{i,c} ) / ( \\\\theta_{i,\max} - \\\\theta_{i,\min} ) )^2$.** The multiple solutions are the reason robotics is designed for the multiple, not the unique, and the multiple is the reason robot control is a practical engineering tool, not a theoretical abstraction.
-- **The number of IK solutions for a planar 2R robot is 2, for a 6-axis spherical-wrist robot is 8, and for a redundant 7R robot is infinite.** The singularity is the reason robotics is designed for the singularity, not the regularity, and the singularity is the reason robot control is a practical engineering tool, not a theoretical abstraction.
-- **The inverse kinematics calculation is the most important position calculation in robot control, because the inverse kinematics calculation determines the joint variables from the desired end-effector pose.** The joint variables are the reason the engineer can plan trajectories, implement servo control and design task-space controllers.
-- **Inverse kinematics is the foundation of robot position control, because the inverse kinematics problem computes the joint variables from the desired end-effector pose, the geometric solution exploits the robot's kinematic structure, and the numerical solution uses iterative methods like Newton-Raphson or Jacobian transpose.** The robotics is the reason the engineer can plan trajectories, implement servo control and design task-space controllers.
 :::
 
 ## Further reading
 
-- **J. J. Craig (2005)** — *Introduction to Robotics: Mechanics and Control*, 3rd ed. Pearson. The geometric IK and the wrist decoupling.
-- **K. M. Lynch and F. C. Park (2017)** — *Modern Robotics: Mechanics, Planning, and Control*. Cambridge. The numerical IK and the Jacobian methods.
-- **B. Siciliano and O. Khatib (2016)** — *Springer Handbook of Robotics*. Springer. The inverse kinematics and the singularity analysis.
-- **D. Pieper (1968)** — *The Kinematics of Manipulators under Computer Control*. PhD thesis, Stanford. The Pieper criterion.
-- **R. Paul (1981)** — *Robot Manipulators: Mathematics, Programming and Control*. MIT Press. The geometric IK and the wrist decoupling.
-- **Y. Nakamura (1991)** — *Advanced Robotics: Redundancy and Optimization*. Addison-Wesley. The redundancy resolution and the null-space optimization.
-- **M. W. Spong, S. Hutchinson and M. Vidyasagar (2006)** — *Robot Modeling and Control*. Wiley. The numerical IK and the Jacobian methods.
-- **O. Khatib (1987)** — "A Unified Approach for Motion and Force Control of Robot Manipulators." *IEEE Journal of Robotics and Automation*, 3, 43. The operational space and the redundancy resolution.
+Spong, Hutchinson and Vidyasagar solve the inverse kinematics of the elbow and Stanford arms with spherical wrists in the DH convention used here; Siciliano et al. treat numerical inverse kinematics, damped least squares and redundancy in depth; Lynch and Park give the Newton–Raphson method in the exponential-coordinates setting.

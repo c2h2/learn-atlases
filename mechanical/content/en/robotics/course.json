@@ -8,26 +8,24 @@
   "tagline": "Rigid-body motions, forward and inverse kinematics, Jacobians, manipulator dynamics, trajectory planning, motion and force control, mobile robots and motion planning",
   "summary": "Robots are mechanisms under computer control. The course describes rigid-body motion with rotation matrices and homogeneous transformations, solves the forward and inverse kinematics of manipulators, derives velocity Jacobians and singularities, formulates manipulator dynamics, plans trajectories, designs joint-space, task-space and force controllers, and introduces mobile robots, perception and motion planning.",
   "overview": [
-    "Robots are mechanisms under computer control. The course describes rigid-body motion with rotation matrices and homogeneous transformations, solves the forward and inverse kinematics of manipulators, derives velocity Jacobians and singularities, formulates manipulator dynamics, plans trajectories, designs joint-space, task-space and force controllers, and introduces mobile robots, perception and motion planning.",
-    "The course begins with the mathematical description of rigid-body motions: rotation matrices, Euler angles, quaternions and homogeneous transformations. These tools are then applied to the forward kinematics of serial manipulators using the Denavit-Hartenberg convention and the product-of-exponentials formula. The inverse kinematics is solved geometrically for simple robots and numerically for general 6-axis manipulators, with attention to multiple solutions, workspace boundaries and singularities.",
-    "Velocity kinematics is described by the manipulator Jacobian, which maps joint velocities to end-effector twist and joint torques to end-effector wrenches. The manipulability ellipsoid and Yoshikawa index characterize the robot's velocity and force capabilities. Manipulator dynamics is formulated using the Euler-Lagrange and Newton-Euler approaches, yielding the mass matrix, Coriolis and gravity terms that govern the robot's dynamic behavior.",
-    "Trajectory planning generates smooth joint-space and Cartesian-space motion using polynomial, trapezoidal and s-curve profiles. Robot control encompasses joint-space PID, computed-torque feedback linearization, operational-space control, and impedance and hybrid position/force control for contact tasks. The course concludes with mobile robot kinematics, odometry, path-following control, configuration-space motion planning and probabilistic state estimation.",
-    "The course emphasizes the geometric and algebraic structures underlying robot kinematics and dynamics, the computational complexity of forward and inverse problems, and the practical implementation of real-time control algorithms on industrial and research platforms."
+    "A robot arm is a mechanism whose joints are driven by motors under computer control, and a mobile robot is a vehicle that must work out where it is before it can decide where to go. Both rest on the same small set of ideas: the position and orientation of a rigid body are described by a $4\\times4$ homogeneous transformation; the geometry of a robot is a function from joint variables to such transformations; its velocities are related by a Jacobian matrix; its motion obeys Lagrange's or Newton–Euler's equations; and a controller closes the loop around sensors that are never perfect.",
+    "The course follows that chain. It starts with rotation matrices, exponential coordinates, Euler angles, unit quaternions and homogeneous transformations, then builds the forward kinematics of serial manipulators with Denavit–Hartenberg parameters and the product-of-exponentials formula. Inverse kinematics is solved in closed form for the planar arm and for six-axis arms with a spherical wrist, and numerically by Newton–Raphson and damped least squares. The Jacobian links joint rates to end-effector velocities and, by the principle of virtual work, end-effector forces to joint torques; its singularities and manipulability ellipsoids explain where a robot is weak. Manipulator dynamics, trajectory generation, and motion, impedance and force control follow. The last two chapters move to wheeled robots — nonholonomic constraints, odometry and path following — and to configuration-space motion planning, sensing and Kalman filtering.",
+    "Two habits make the subject manageable. The first is to be explicit about frames: every vector and transform carries the names of the frames it relates, and most errors in robotics software are frame errors. The second is to test every formula on a robot small enough to check by hand — the planar two-link arm appears in nearly every chapter for that reason. The prerequisites are rigid-body kinematics and kinetics from [[dynamics]], mobility and linkage analysis from [[mechanisms]], and feedback control from [[control-systems]]; the linear algebra (matrix exponentials, eigenvalues, the singular value decomposition, least squares) is taught in Maths Atlas."
   ],
   "prerequisites": [
     "mechanisms",
     "control-systems"
   ],
   "outcomes": [
-    "Describe rigid-body motions using rotation matrices, Euler angles, quaternions and homogeneous transformations",
-    "Solve the forward kinematics of serial manipulators using the DH convention and the product-of-exponentials formula",
-    "Solve the inverse kinematics geometrically and numerically, identifying multiple solutions and singularities",
-    "Derive the manipulator Jacobian and analyze singularities, manipulability and static force mapping",
-    "Formulate manipulator dynamics using Euler-Lagrange and Newton-Euler methods",
-    "Plan joint-space and Cartesian-space trajectories using polynomial, trapezoidal and s-curve profiles",
-    "Design joint-space, computed-torque, impedance and hybrid position/force controllers",
-    "Analyze mobile robot kinematics, odometry and path-following control",
-    "Apply configuration-space motion planning and probabilistic state estimation to autonomous navigation"
+    "Represent orientations and poses with rotation matrices, exponential coordinates, Euler angles, unit quaternions and homogeneous transformations, and convert between them.",
+    "Assign Denavit–Hartenberg frames to a serial manipulator and compute its forward kinematics, and derive the same map with the product-of-exponentials formula.",
+    "Solve the inverse kinematics of planar arms and of six-axis arms with a spherical wrist in closed form, and apply Newton–Raphson and damped-least-squares iterations to general arms.",
+    "Derive the geometric Jacobian, locate singular configurations, and compute manipulability and the joint torques that balance an end-effector force.",
+    "Formulate the equations of motion of a serial manipulator with the Euler–Lagrange and recursive Newton–Euler methods and use their structural properties.",
+    "Design point-to-point, via-point and Cartesian trajectories with polynomial and trapezoidal time scalings that respect velocity and acceleration limits.",
+    "Design and analyse independent-joint PID, PD-plus-gravity, computed-torque, impedance and hybrid position/force controllers.",
+    "Model wheeled mobile robots with nonholonomic constraints, compute odometry and design a path-following controller.",
+    "Plan collision-free paths in configuration space with graph search and sampling-based planners, and fuse noisy sensor data with Bayes and Kalman filters."
   ],
   "chapters": [
     {
@@ -41,7 +39,7 @@
     {
       "slug": "forward-kinematics",
       "title": "Forward kinematics",
-      "summary": "Joint variables, Denavit\u2013Hartenberg parameters and the product-of-exponentials formula.",
+      "summary": "Joint variables, Denavit–Hartenberg parameters and the product-of-exponentials formula.",
       "requires": [
         "robotics/rigid-motions",
         "mechanisms/mechanisms-mobility"
@@ -66,7 +64,7 @@
     {
       "slug": "manipulator-dynamics",
       "title": "Manipulator dynamics",
-      "summary": "The Euler\u2013Lagrange and Newton\u2013Euler equations of motion of robot arms.",
+      "summary": "The Euler–Lagrange and Newton–Euler equations of motion of robot arms.",
       "requires": [
         "robotics/jacobians",
         "dynamics/rigid-body-kinetics"
@@ -109,100 +107,147 @@
   ],
   "history": [
     {
-      "year": 1876,
-      "title": "Cayley's theory of screw displacements",
-      "detail": "Arthur Cayley publishes the theory of screw displacements, which is the mathematical foundation of rigid-body kinematics and the product-of-exponentials formula."
+      "year": 1776,
+      "title": "Euler's rotation theorem",
+      "detail": "Leonhard Euler shows that any displacement of a rigid body with one point fixed is a rotation about an axis through that point — the basis of axis–angle and exponential coordinates.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
+      "year": 1843,
+      "title": "Quaternions",
+      "detail": "William Rowan Hamilton discovers the quaternions; unit quaternions are now the standard singularity-free representation of orientation in robot and attitude software.",
+      "people": [
+        "William Rowan Hamilton"
+      ]
     },
     {
       "year": 1955,
-      "title": "Denavit-Hartenberg convention",
-      "detail": "Jacques Denavit and Richard-Hartenberg publish their robot kinematics convention, providing a systematic method for describing the forward kinematics of serial manipulators."
+      "title": "Denavit–Hartenberg notation",
+      "detail": "Jacques Denavit and Richard Hartenberg publish a matrix notation for lower-pair mechanisms in the Journal of Applied Mechanics, describing each joint–link pair with four parameters.",
+      "people": [
+        "Jacques Denavit",
+        "Richard S. Hartenberg"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "First industrial robot at work",
+      "detail": "A Unimate, designed by George Devol and commercialised by Joseph Engelberger's Unimation, unloads a die-casting press at General Motors' Ternstedt plant in Trenton, New Jersey.",
+      "people": [
+        "George Devol",
+        "Joseph Engelberger"
+      ]
     },
     {
       "year": 1968,
-      "title": "Pieper's closed-form inverse kinematics",
-      "detail": "Donald Pieper's PhD thesis proves that a 6R manipulator with a spherical wrist has a closed-form inverse kinematics solution, enabling real-time control of industrial robots."
+      "title": "Closed-form inverse kinematics",
+      "detail": "Donald Pieper's Stanford thesis shows that six-axis arms with three intersecting wrist axes have inverse kinematics solvable in closed form, the design rule followed by most industrial arms since.",
+      "people": [
+        "Donald L. Pieper"
+      ]
     },
     {
-      "year": 1974,
-      "title": "Paul's robot manipulator programming",
-      "detail": "Richard Paul publishes Robot Manipulators: Mathematics, Programming and Control, the first comprehensive textbook on robot kinematics, dynamics and control."
+      "year": 1969,
+      "title": "The Stanford Arm",
+      "detail": "Victor Scheinman builds a six-axis, all-electric, computer-controlled arm at the Stanford Artificial Intelligence Laboratory; its design line led through Vicarm to Unimation's PUMA.",
+      "people": [
+        "Victor Scheinman"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Recursive Newton–Euler dynamics",
+      "detail": "Luh, Walker and Paul publish a recursive Newton–Euler scheme whose cost grows linearly with the number of links, making computed-torque control feasible in real time.",
+      "people": [
+        "J. Y. S. Luh",
+        "M. W. Walker",
+        "R. P. C. Paul"
+      ]
     },
     {
       "year": 1985,
-      "title": "Yoshikawa's manipulability",
-      "detail": "Tsuneo Yoshikawa introduces the manipulability measure, providing a quantitative index for robot dexterity and singularity analysis."
+      "title": "Impedance control",
+      "detail": "Neville Hogan's three-part paper argues that a manipulator in contact should control the relation between motion and force — its mechanical impedance — rather than either alone.",
+      "people": [
+        "Neville Hogan"
+      ]
     },
     {
-      "year": 1987,
-      "title": "Khatib's operational space formulation",
-      "detail": "Oussama Khatib publishes the operational space formulation, unifying motion and force control of robot manipulators in task space."
-    },
-    {
-      "year": 1992,
-      "title": "PRM probabilistic roadmaps",
-      "detail": "Kavraki, Svestka, Latombe and Overmars publish the Probabilistic Roadmap method, enabling motion planning for high-dimensional robots."
+      "year": 1996,
+      "title": "Probabilistic roadmaps",
+      "detail": "Kavraki, Švestka, Latombe and Overmars publish the probabilistic roadmap planner, making motion planning practical for robots with many degrees of freedom.",
+      "people": [
+        "Lydia Kavraki",
+        "Petr Švestka",
+        "Jean-Claude Latombe",
+        "Mark Overmars"
+      ]
     },
     {
       "year": 1998,
-      "title": "LaValle's RRT",
-      "detail": "Steven LaValle publishes Rapidly-exploring Random Trees, providing a practical sampling-based motion planner for single-query problems."
-    },
-    {
-      "year": 2010,
-      "title": "KUKA LBR iiwa collaborative robot",
-      "detail": "KUKA introduces the LBR iiwa, a 7-axis redundant robot with torque sensors in every joint, enabling compliant impedance control for collaborative assembly."
+      "title": "Rapidly-exploring random trees",
+      "detail": "Steven LaValle introduces the RRT, a sampling-based planner that grows a tree from the start configuration and became the basis of many single-query planners.",
+      "people": [
+        "Steven M. LaValle"
+      ]
     }
   ],
   "references": [
     {
-      "author": "J. J. Craig",
-      "title": "Introduction to Robotics: Mechanics and Control",
-      "publisher": "Pearson",
-      "year": 2005,
-      "edition": "3rd"
-    },
-    {
-      "author": "K. M. Lynch and F. C. Park",
       "title": "Modern Robotics: Mechanics, Planning, and Control",
-      "publisher": "Cambridge University Press",
-      "year": 2017
+      "authors": "K. M. Lynch and F. C. Park",
+      "year": 2017,
+      "note": "Cambridge University Press. Screw theory, exponential coordinates and the product-of-exponentials formula from the start; a free preprint and videos accompany it."
     },
     {
-      "author": "B. Siciliano and O. Khatib (eds.)",
-      "title": "Springer Handbook of Robotics",
-      "publisher": "Springer",
-      "year": 2016
-    },
-    {
-      "author": "R. Murray, Z. Li and S. Sastry",
-      "title": "A Mathematical Introduction to Robotic Manipulation",
-      "publisher": "CRC Press",
-      "year": 1994
-    },
-    {
-      "author": "M. W. Spong, S. Hutchinson and M. Vidyasagar",
       "title": "Robot Modeling and Control",
-      "publisher": "Wiley",
-      "year": 2006
+      "authors": "M. W. Spong, S. Hutchinson and M. Vidyasagar",
+      "year": 2020,
+      "note": "Wiley, 2nd edition. The standard undergraduate text for Denavit–Hartenberg kinematics, Jacobians, Lagrangian dynamics and independent-joint and computed-torque control; the conventions of this course follow it."
     },
     {
-      "author": "S. M. LaValle",
-      "title": "Planning Algorithms",
-      "publisher": "Cambridge University Press",
-      "year": 2006
+      "title": "Introduction to Robotics: Mechanics and Control",
+      "authors": "J. J. Craig",
+      "year": 2018,
+      "note": "Pearson, 4th edition. Clear worked treatment of frames, kinematics and Newton–Euler dynamics; uses the modified Denavit–Hartenberg convention."
     },
     {
-      "author": "S. Thrun, W. Burgard and D. Fox",
-      "title": "Probabilistic Robotics",
-      "publisher": "MIT Press",
-      "year": 2005
+      "title": "Robotics: Modelling, Planning and Control",
+      "authors": "B. Siciliano, L. Sciavicco, L. Villani and G. Oriolo",
+      "year": 2009,
+      "note": "Springer. Thorough on differential kinematics, redundancy, trajectory planning and interaction (force and impedance) control."
     },
     {
-      "author": "R. Featherstone",
+      "title": "A Mathematical Introduction to Robotic Manipulation",
+      "authors": "R. M. Murray, Z. Li and S. S. Sastry",
+      "year": 1994,
+      "note": "CRC Press. The rigorous Lie-group treatment of rigid motions, twists and wrenches; for readers who want the proofs behind the exponential coordinates."
+    },
+    {
       "title": "Rigid Body Dynamics Algorithms",
-      "publisher": "Springer",
-      "year": 2008
+      "authors": "R. Featherstone",
+      "year": 2008,
+      "note": "Springer. Spatial vector algebra and the recursive algorithms (Newton–Euler, articulated-body) used in simulators and controllers."
+    },
+    {
+      "title": "Planning Algorithms",
+      "authors": "S. M. LaValle",
+      "year": 2006,
+      "note": "Cambridge University Press (also free online). Configuration space, graph search and sampling-based planning in depth."
+    },
+    {
+      "title": "Probabilistic Robotics",
+      "authors": "S. Thrun, W. Burgard and D. Fox",
+      "year": 2005,
+      "note": "MIT Press. Bayes, Kalman and particle filters for localisation and mapping."
+    },
+    {
+      "title": "Introduction to Autonomous Mobile Robots",
+      "authors": "R. Siegwart, I. R. Nourbakhsh and D. Scaramuzza",
+      "year": 2011,
+      "note": "MIT Press, 2nd edition. Wheeled-robot kinematics, sensors, perception and navigation at an introductory level."
     }
   ],
   "next": []
