@@ -1,147 +1,376 @@
-Infection prevention and control is clinical medicine extended to populations of patients: **every chain of transmission you break is a diagnosis you never have to make, and the specialty's tools - hand hygiene, isolation, cleaning, ventilation, screening, tracing and the laws around notification - are ordinary medicine applied with epidemiological rigour and unusual vulnerability to complacency.** This chapter covers transmission science, healthcare-associated infection, the control bundle, antimicrobial resistance containment and outbreak management.
+Infections acquired in healthcare harm patients who came in for something else. A person admitted for a hip replacement can leave with a surgical site infection; a person with a stroke can develop pneumonia, a catheter-associated urinary infection or *Clostridioides difficile* diarrhoea. At any time, several per cent of hospital inpatients have an infection acquired in hospital, and many of these infections are preventable.
 
-This chapter covers routes and chains of transmission, healthcare-associated infections by device and site, precautions and personal protective equipment, cleaning and ventilation, surveillance and outbreak control, and the legal and human layers.
+**Infection prevention and control** (IPC) is the set of practices that stops organisms passing from one person or place to another. Much of it is simple: clean hands, appropriate protective equipment, clean equipment and environments, and careful handling of devices. Its success depends on doing these things every time, which is why IPC is a discipline of systems as well as of individual behaviour.
 
-## Transmission science
+This chapter covers the chain of infection and the routes of transmission, standard and transmission-based precautions, decontamination and sterilisation, healthcare-associated infections and care bundles, surveillance and outbreak management, the arithmetic of reproduction numbers and herd immunity, and the protection of healthcare workers. As of 2026, practice in England follows the **National Infection Prevention and Control Manual** (NIPCM), published by NHS England.
 
-::: definition Routes, chains and the healthcare ecosystem {#def-transmission}
-**The chain (reservoir-portal-of-exit-transmission-portal-of-entry-susceptible-host with each link an intervention target and the reservoir question's modern answers - human-skills-and-GI-and-respiratory-tract-carriers-and-the-environmental-sinks (sinks-drains-water-systems-humidifiers-soil-plant-matter-dry-food) that make hospitals ecosystems in the ecological sense) - [[microbiology/bacteria]], [[microbiology/fungi-parasites]]; the transmission categories that drive policy (contact-direct-and-indirect-fomites-and-the-environmental-load-of-C.diff-spores-and-norovirus-and-scabies-and-the-MDR-organisms and droplet-the-large-particle-short-reach-classic and airborne-the-particle-stays-suspended-question-now-settled-differently-for-measles-TB-chickenpox-and-respiratory-viruses-than-the-old-six-foot-droplet-doctrine assumed and the recent-ventilation-and-aerosol-science-revision and vehicle-common-source-food-water-and-blood-and-tissue-transmission (the transfusion-transmitted-infections' history-of-lessons - [[blood/transfusion]] and the healthcare-water-infections-Legionella-and-Pseudomonas-and-Mycobacterium-avium-complex-associations)); the susceptibility tail (the-innate-barrier-breaks-lines-tubes-wounds-surgery-and-the-immunocompromised-host-received-its-own-chapter-and-the-antibiotic-exposure-as-risk-factor-for-colonisation - the ecosystem's selection pressure covered in [[microbiology/antimicrobials]] and [[microbiology/microbiota]]); and the behavioural core (hand-hygiene's-5-moments-and-the-technique-versus-volume-versus-duration-versus-skin-health-evidence-and-the-alcohol-handrub-revolution-which-was-behavioural-science-as-much-as-microbiology and the WHO-multimodal-framework-and-audit-with-auditor-bias-correction-and-the-safe-care-is-clean-care-campaign-heritage  - the hand-hygiene evidence base assembled from observation, audit and outcome linkage) - [[clinical-skills/patient-safety]].**
+## The chain of infection {#chain}
+
+::: definition The chain of infection {#def-transmission}
+Transmission of infection requires six links:
+
+1. an **infectious agent**;
+2. a **reservoir** where it lives and multiplies: a person, an animal or the environment;
+3. a **portal of exit** from the reservoir, such as the respiratory tract, gut, skin or blood;
+4. a **mode of transmission**;
+5. a **portal of entry** into the new host, such as a wound, mucous membrane or device;
+6. a **susceptible host**.
+
+Breaking any one link stops transmission. IPC measures can be grouped by the link they break.
 :::
 
-## Healthcare-associated infection
+The main **modes of transmission** are:
 
-::: definition Devices, bundles and the surgical wound {#def-hai}
-**The device-associated trinity (CLABSI - the insertion-bundle (full-barrier-precautions-and-chlorhexidine-in-alcohol-skin-prep-and-maximal-sterile-field-and-timers-and-clipped-area-avoidance) and the maintenance-bundle (scrub-the-hub-and-dressing-intervals-and-connection-technique-and-daily-necessity-review-and-antiseptic-containing-locks-debate) and the organism-epidemiology (CoNS-and-S.aureus-and-Candida-and-GBS in neonates) with the lab-interpretation-of-one-CoNS-bottle nuance from [[microbiology/laboratory-diagnosis]] - [[infectious-diseases/healthcare-infections]], [[emergency-critical-care/critical-care]]; CAUTI - the place-and-maintain-versus-remove-incontinence-management-versus-intermittent-catheterisation-hierarchy and the closed-system-and-securement-and-emptying-technique-and-the-no-bag-above-bladder-myth-versus-reflux-science and the asymptomatic-bacteriuria-testing-storm-it-creates (see [[renal/urinary-tract]] and the stewardship chapter); and VAP-versus-HAP with the ventilator-bundle-head-of-bed-and-cuff-pressure-and-subglottic-suctioning-and-oral-care-chlorhexidine-controversy-and-sedation-interruption-and-early-extubation-and-the-steam-humidifier-versus-HME-ecology question) - [[respiratory/respiratory-infections]]; the surgical site (the SSI prevention bundle - normothermia-and-glycaemic-control-and-oxygen-tension-adjacency-and-alcohol-chlorhexidine-skin-prep-and-clip-versus-shave-and-bowel-prep-and-antibiotic-prophylaxis-timing-within-60-minutes-and-redosing-by-blood-loss-and-procedure-length-and-the-closing-of-fascia-versus-skin-debates and the negative-pressure-dressing-and-triclosan-coated-suture-evidence-graded) - [[surgery/perioperative-care]], [[surgery/wounds-surgical-infection]]; and the environmental and organisational determinants (the bed-space-and-isolation-capacity-and-admission-through-wards-and-nurse-to-patient-ratios-and-the-cleanliness-audits-and-the-ward-deep-clean-evidence-and-the-robotic-disinfection-devices-read-honestly-and-the-design-questions-sink-splash-zones-and-en-suite-provision) - [[public-health/environmental-occupational]], [[public-health/health-systems-economics]].**
+- **contact**: direct, from person to person, usually by hands; or indirect, by contaminated equipment or surfaces. This is the commonest route in hospitals, for organisms such as MRSA, carbapenemase-producing Enterobacterales, *C. difficile* and norovirus;
+- **droplet**: larger respiratory particles that travel a short distance, usually up to about a metre, before falling, as with many respiratory viruses and *Neisseria meningitidis*;
+- **airborne**: small particles that remain suspended in air and can be inhaled at a distance or after the source has left, as with *Mycobacterium tuberculosis*, measles and varicella-zoster virus;
+- **common vehicle**: contaminated food, water, medication or blood products;
+- **vector-borne**: insects such as mosquitoes and ticks; rare in UK hospitals.
+
+The distinction between droplet and airborne spread is less sharp than these categories suggest. People exhale a continuous range of particle sizes, and the COVID-19 pandemic showed that respiratory viruses can spread by inhalation of small particles at short range and in poorly ventilated rooms. In practice, the categories remain useful for choosing precautions, and ventilation is now recognised as an important part of control.
+
+## Standard precautions {#standard}
+
+::: definition Standard infection control precautions {#def-standard}
+**Standard infection control precautions** (SICPs) are used by all staff, for all patients, at all times, whether or not infection is known or suspected. In the NIPCM they include:
+
+- assessing each patient's infection risk and placing them appropriately;
+- **hand hygiene**;
+- respiratory and cough hygiene;
+- **personal protective equipment** (PPE) chosen for the task;
+- safe management of care equipment;
+- safe management of the care environment;
+- safe management of linen;
+- safe management of blood and body fluid spills;
+- safe disposal of waste, including sharps;
+- prevention of occupational exposure, including sharps injuries.
 :::
 
-::: definition Precautions, screening and the air {#def-precautions}
-**The precautions architecture (standard-plus-transmission-based and the honest evidence-hierarchy problem - most isolation rules rest on outbreak empiricism and animal models and before-after data not RCTs - and the practical grammar: the surgical-mask-for-the-source-and-eye-protection-for-the-recipient logic of droplet versus the respirator-for-the-recipient-airborne-rules and the fit-testing-and-FitCheck-and-patient-tolerance-and-DSEY-communication-accessibility-and-the-explanation-visit-that-preserves-dignity-and-the-single-room-versus-cohorting-versus-nothing-realistic-when-occupied and the PPE-sequence-donning-and-doffing-with-training-and-a-buddy-and-a-mirror-and-the-disinfection-adjacent-chemical-exposure-safety-and-reprocessing-standards-for-reusable-elastomers and the decontamination-of-reusable-devices-with-high-level-disinfectant-versus-sterilization-critical-semicritical-noncritical-classification-Spaulding-and-the-endoscope-reprocessing-failures-whose-outbreaks-fill-the-latest-letters); the screening and decolonisation layer (the MRSA-targeted-versus-universal-screening-by-unit-risk and admission-versus-transfer-screening-and-the-interpretation-caveats (the nasal-PCR's-negative-predictive-limits-by-site) and the contact-precautions-and-decolonisation-in-regions-where-MRSA-prevalence-is-low-honest-impact-limits and the C. difficile-and-ESBL-and-CPE-and-Scabies-and-bedbug-and-norovirus-and-respiratory-virus-cluster-rules-with-their-notification-clock) - [[microbiology/antimicrobials]] for resistance epidemiology, [[microbiology/fungi-parasites]] for the crusted scabies management); and the ventilation and engineering layer (the air-exchange-rates-and-direction-and-the-negative-pressure-room-reality-check-many-are-not-functional-and-the-natural-ventilation-and-window-science-and-HEPA-portable-cleaners-where mechanical ventilation cannot reach and the UVGI-heritage-and-revival-in-TB-and-measles-eras and the humidity-40-60%-range-for-viral-transmission-and-superfungal-hazards-and-the-ASHE-and-HTM-standards-literature-you-are-expected-not-to-read-but-to-know-who-to-ask) - [[public-health/environmental-occupational]], [[respiratory/mechanics-breathing]] for the respiratory-physiology adjacency of mask-fit-and-patient-tolerance.**
+Standard precautions exist because most people carrying transmissible organisms are not known to carry them. Applying the same basic measures to everyone protects against the unknown.
+
+**Hand hygiene** is the single most important measure. Hands carry organisms from patient to patient, from contaminated surfaces to patients, and from a patient's colonised site to a vulnerable site such as a line. The World Health Organization describes **five moments** for hand hygiene:
+
+1. before touching a patient;
+2. before a clean or aseptic procedure;
+3. after exposure to body fluids;
+4. after touching a patient;
+5. after touching a patient's surroundings.
+
+**Alcohol-based hand rub** is the method of choice for hands that are not visibly dirty. It is quick, kills most bacteria and enveloped viruses, and is less damaging to skin than repeated washing. **Soap and water** is needed when hands are visibly soiled, after caring for patients with diarrhoea or vomiting, and in outbreaks of *C. difficile* or norovirus, because alcohol does not kill spores and is less effective against non-enveloped viruses. Gloves do not replace hand hygiene; hands are contaminated when gloves are removed.
+
+## Transmission-based precautions {#precautions}
+
+::: definition Transmission-based precautions {#def-precautions}
+**Transmission-based precautions** (TBPs) are added to standard precautions when a patient is known or suspected to have an infection that spreads by a particular route.
+
+- **Contact precautions**: single room, or cohorting with patients carrying the same organism; gloves and apron or gown for contact with the patient or surroundings; dedicated equipment; enhanced cleaning. Used for MRSA, carbapenemase-producing organisms, *C. difficile* and norovirus.
+- **Droplet precautions**: single room or cohort; a fluid-resistant surgical mask for close contact. Used for influenza, many other respiratory viruses and meningococcal disease in the first 24 hours of treatment.
+- **Airborne precautions**: single room, ideally a negative-pressure isolation room; a **respirator** (FFP3 in the UK) that has been **fit tested** for the wearer; limiting staff to those with immunity where relevant. Used for infectious pulmonary tuberculosis, measles and chickenpox or disseminated shingles, and during aerosol-generating procedures on patients with some respiratory infections.
 :::
 
-## Outbreaks and the law
+Isolation is a trade-off. Patients in single rooms are seen less often, may feel lonely and anxious, and have more falls and pressure injuries in some studies. Precautions should therefore be started promptly when needed and stopped when no longer justified, according to local policy.
 
-::: definition Surveillance, outbreaks and notification {#def-outbreak}
-**Surveillance as infrastructure (the case-definitions-NHSN-ECDC-and-WHO-and-their-definitions-changing-a-rate-without-anything-changing-clinically and the denominators-patient-days-versus-admissions-versus-device-days-and-incidence-density-arithmetic and the lab-report-based-versus-clinical-review-with-syndromic-surveillance-in-the-gap and the point-prevalence-versus-continuous-and-the-evidence-competitions (the SHEA-and-ESCMID-lineage) and the dashboard-that-changes-behaviour-versus-the-dashboard-people-ignore-feedback-funnel-plots-and-unit-level-comparisons); the outbreak playbook (the verify-and-define-prevalence-and-draw-the-epidemic-curve-and-build-the-line-list-and-generate-hypothesis-with-a-cases-versus-controls-on-a-napkin-then-test-it (the common-source-rapid-attack-rate-versus-propagated-patient-zero-phenomena) and the control-measures-deployed-before-proof-and-the-protect-the-vulnerable-ward-mix-decision-and-the-halt-admissions-versus-cohort-versus-screen-versus-close-thresholds-and-the-ethical-review-of-research-during-outbreaks (the remote-consent-questions) and the genomic-epidemiology-with-snp-thresholds-and-plasmid-tracking-and-metagenomics-for-novel-agents and the incident-communication-plan-daily-briefings-and-family-communications-and-staff-support) - [[epidemiology-ebm/observational-studies]], [[clinical-skills/patient-safety]]; and the legal-professional layer (the notifiable-disease-and-events-regulations-with-their-country-by-country-lists (the UK Health Protection Legislation and the US state-by-state reporting and the IHR-2005-international-serial-points-of-entry) and the doctor's-personal-duty-to-report-individually-plus-the-laboratory's-duty-plus-the-manager's-duty and the confidential-patient-identifiable-data-flows-done-lawfully (the public-health-exemptions-to-consent-and-the-GDPR-and-DPA-adjacency) - [[medical-ethics-law/confidentiality]] - and the the hospital-episode-attribution-audit (the point-of-care-of-infection-debate: community-versus-hospital-onset-classification's limits-after-2010s-thinking) and the blame-versus-system-tension-in-every-episode-review because control fails fastest when staff hide colonisation - [[public-health/communicable-disease-control]], [[medical-ethics-law/professionalism-regulation]].**
-:::
-
-::: example The ward with seven C. difficile cases {#ex-cdiff-cluster}
-Your 28-bed surgical ward reports seven lab-confirmed C. difficile episodes in three weeks, five with the same ribotype; two patients were on PPIs and cephalosporins; the cleaning contract audit is overdue and three patients shared an en-suite.
+::: example Measles in the emergency department {#ex-measles-ed}
+A 24-year-old man who has not been vaccinated waits for three hours in a busy emergency department with fever, cough, conjunctivitis and a new maculopapular rash. Measles is later confirmed by PCR. During his wait he shared the room with about 40 patients and staff. Explain why this is a serious exposure and outline the response.
 ::: solution
-**A-CDI-cluster-investigation ([[#def-outbreak]], [[#def-hai]], [[microbiology/infection-control]]): the confirmation - the case-definition-and-lab-positivity-trend-versus-expected-and-the-testing-behaviour-change-check (a new PCR-assay-or-send-out-can-create-a-"cluster"-without-any-change-in-disease - see [[microbiology/laboratory-diagnosis]]) and the epidemiological curve-by-onset-and-bed-and-week-and-the-overlap-map-and-shared-equipment-and-staff-assignment-review and the severity-and-outcome-tally (recurrences, ICU, deaths, colectomies) for the incident's real weight; the parallel controls (never wait for proof) - the antibiotic-prescribing-review (the cephalosporin-and-fluoroquinolone-consumption-on-the-ward-this-month-and-the-surgical-prophylaxis-vs-treatment-drift) and the PPI-audit-and-deprescribing (the indication-gradings) and the laxative-and-anti-motility-review and the hand-hygiene-with-soap-and-water-for-CDI-audit-and-the-alcohol-gel-signage-change and the sporicidal-cleaning-verification-with-the-product-and-contact-time-and-the-cleanliness-standards-and-the-shared-en-suite-closure-versus-deep-clean-schedule-decision and the cohorting-and-contact-precautions-compliance-and-the-single-room-advocacy-with-bed-management; the investigation - the ribotype-and-then-genome-typing (the same-ribotype-does-not-equal-one-transmission-chain - the SNP analysis settles it, and the staff-carrier-sampling-question-answered-no-routinely and the environment-sampling-surface-and-fomites-with-purpose-not-panic) and the case-control-for-modifiable-risks (the shared-room-and-bed-adjacency and the PPIs with their confounding-by-indication) and the line-list-with-travel-and-community-onset-boundaries and the incident-reporting-and-communication (the patient-and-family-communication-with-dignity-about-contagion-words and the board-reporting-with-the-learning-not-the-blame and the publication-and-superbugs-report-transparency-duty); and the after-action - the sustained-reduction-metrics (the CDI-rate-and-antibiotic-days-and-cleaning-audit-scores-and-hand-hygiene-sustained-over-6-months) and the bundle-hardening (the admission-review-antibiotic-timeout-and-CDI-risk-flags and the test-of-cure-removal-from-order-sets) and the staff-support-and-recognition-because-CDI-work-is-unpleasant-and-invisible-when-it-works - [[clinical-skills/patient-safety]], [[infectious-diseases/stewardship-outbreaks]], [[geriatrics-palliative/polypharmacy]].**
+Measles is one of the most transmissible human infections. It spreads by the **airborne** route; virus remains in the air of a room for up to about two hours after the patient has left. People are infectious from about four days before to four days after the onset of the rash, so he was infectious throughout his visit.
+
+The response, led by the infection prevention and local health protection teams, follows UKHSA guidance:
+
+- **notify** the case to the local health protection team, as measles is notifiable;
+- **identify exposed people**: everyone who shared the waiting area during his visit and for a period afterwards;
+- **assess their immunity**: two documented doses of MMR vaccine, or a positive measles IgG, count as evidence of protection;
+- **offer post-exposure protection** to susceptible contacts: MMR vaccine within 72 hours of exposure for eligible people, and human normal immunoglobulin for those at high risk who cannot have the live vaccine, such as susceptible pregnant women, severely immunosuppressed people and young infants, within six days;
+- **exclude** exposed staff without evidence of immunity from work from day 5 after the first exposure to day 21 after the last.
+
+The episode also shows a system failure. Febrile people with a rash should be identified at arrival and moved to a side room, which is why many departments screen for rash and fever at triage.
 :::
 :::
 
-::: example The measles exposure at the emergency triage door {#ex-measles-ed}
-A febrile rash child was triaged in the ED waiting room for 90 minutes before "suspected measles" was flagged; 40 people were exposed including two pregnant women and an immunosuppressed visitor; the child's family declined isolation "because she is breathing fine".
+## Decontamination {#decontamination}
+
+::: definition Cleaning, disinfection and sterilisation {#def-decontamination}
+**Decontamination** is the process of removing or killing microorganisms so that an item is safe to use. It has three levels:
+
+- **cleaning** physically removes dirt, organic material and many organisms, usually with detergent and water; it must come first, because organic material shields organisms from disinfectants and sterilants;
+- **disinfection** kills or inactivates most microorganisms but not necessarily bacterial spores;
+- **sterilisation** kills all microorganisms, including spores.
+
+The **Spaulding classification** matches the level to the risk:
+
+| Category | Use | Required process | Examples |
+|---|---|---|---|
+| Critical | enters sterile tissue or the vascular system | sterilisation | surgical instruments, implants |
+| Semi-critical | contacts mucous membranes or non-intact skin | high-level disinfection or sterilisation | flexible endoscopes, laryngoscope blades |
+| Non-critical | contacts intact skin only | cleaning, with low-level disinfection if needed | blood pressure cuffs, stethoscopes |
+:::
+
+In UK sterile services departments, surgical instruments are usually sterilised by **steam under pressure** in an autoclave. Current English guidance specifies a temperature of 134–137 °C held for at least 3 minutes for porous loads. Heat-sensitive items are sterilised by other methods, such as low-temperature hydrogen peroxide. Flexible endoscopes cannot be autoclaved and are cleaned and disinfected in automated washer-disinfectors, which is why errors in endoscope reprocessing are a recurring cause of incidents.
+
+Organisms differ in their resistance. **Prions** are the most resistant of all, followed by bacterial spores, mycobacteria, non-enveloped viruses and fungi, with vegetative bacteria and enveloped viruses the easiest to kill. Prions are not reliably inactivated by standard sterilisation, so instruments used on high-risk tissue in people at risk of Creutzfeldt–Jakob disease are handled under specific national guidance, sometimes by quarantine or disposal.
+
+## Healthcare-associated infection {#hai}
+
+::: definition Healthcare-associated infection and care bundles {#def-hai}
+A **healthcare-associated infection** (HAI) is an infection that develops as a result of healthcare, in hospital or in another care setting. The main types are:
+
+- **bloodstream infections**, especially those associated with central venous catheters;
+- **catheter-associated urinary tract infections**;
+- **surgical site infections**;
+- **hospital-acquired and ventilator-associated pneumonia**;
+- **C. difficile infection**, and infections with resistant organisms such as MRSA and carbapenemase producers.
+
+A **care bundle** is a small set of evidence-based practices for a procedure, usually three to five, that are applied together every time. Compliance is measured as all-or-nothing: the bundle counts only if every element was done.
+:::
+
+Bundles work because infections from devices follow predictable routes. For central lines, organisms from the skin migrate along the outside of the catheter, and organisms from hands enter through the hub. A typical **insertion bundle** therefore includes hand hygiene, full barrier precautions, skin preparation with 2% chlorhexidine in 70% alcohol, choice of the most suitable site and a sterile dressing. A **maintenance bundle** adds daily review of whether the line is still needed, hub decontamination before access and dressing care. In 2006 Peter Pronovost and colleagues reported that a programme built around such a checklist in over 100 intensive care units in Michigan reduced catheter-related bloodstream infections substantially and sustained the reduction.
+
+The single most effective step for any device is often to **remove it**. Every day a urinary catheter or line remains in place adds risk, which is why bundles include a daily review of need.
+
+Surveillance reports infection rates per unit of exposure, so that units of different sizes and case mix can be compared over time:
+
+$$
+\text{rate per 1,000 device-days} = \frac{\text{number of infections}}{\text{total device-days}} \times 1000
+$$ {#eq-rate}
+
+::: example Line infections in an intensive care unit {#ex-clabsi}
+In one year an intensive care unit records 6 central line-associated bloodstream infections. Its patients had central lines in place for a total of 2,400 line-days. Calculate the rate per 1,000 line-days, and explain why this measure is used rather than the number of infections per patient.
 ::: solution
-**Airborne-exposure-management-in-a-real-building ([[#def-precautions]], [[#def-outbreak]], [[public-health/communicable-disease-control]]): the containment-in-minutes - the mask-the-child-if-tolerated-and-move-to-a-negative-pressure-room-or-single-room-with-door-closed-and-windows-open-if-that-is-what-your-building-can-do and the stop-the-adjacent-department-flow-and-the-air-exchange-calculator-for-re-entry-rules (the 90-minutes-at-6-ACH-classic-still-drives-policy-read-the-variant-evidence) and the staff-with-airborne-precautions-for-entries-and-the-immune-status-tag-on-shift-rosters; the exposure list and the clock - the infectious-period-mapping-from-4-days-before-rash and the register-review-CCTV-and-visit-records-with-privacy-lawfulness-and-the-public-announcement-template (the "someone with measles sat in the X waiting room on the Y day between Z hours" message that only works with fast turnaround and clear instructions); the exposed-persons medicine - the immunity-triage (two-documented-doses or birth-year-policy) and the MMR-for-susceptible-contacts-within-72-hours-and-HNIG-for-pregnant-and-immunocompromised-and-infants-within-6-days-with-the-muscle-versus-surface-injection-pharmacology and the exclusion-from-work-school-days-5-21-and-the-pregnant-women's-rubella-and-fetal-questions-and-the-immunosuppressed-visitor's-transplant-team-call and the unvaccinated-family's-barrier-and-observation-education; the system failure analysis - the triage-questions-that-were-not-asked (travel-and-rash-contact-questions-in-the-vitals-set and the immunisation-status-record-gap and the door-screening-signage-in-five-languages and the pre-notification-by-ambulance-protocol) and the staff-immunisation-programme-honesty-check (the-HepB-and-varicella-and-MMR-2-dose-records-and-the-titres-versus-revaccinate-versus-exclude-during-exposures-policy-applied-consistently) - [[clinical-skills/patient-safety]], [[public-health/vaccination-programmes]]; and the community-bridge - the-notification-within-the-hour-and-the-health-protection-team-partnership-and-the-school-and-nursery-closure-questions-decided-by-public-health-not-your-ward-and-the-data-quality-that-makes-or-breaks-the-contact-list (the right-phone-number-and-the-spelling-and-the-address-of-temporary-accommodation) and the equity-lens on who-cannot-self-isolate - [[public-health/determinants-inequalities]].**
+$$
+\frac{6}{2400} \times 1000 = 2.5 \text{ per 1,000 line-days}
+$$
+
+The risk of a line infection depends on how long the line is in place, so infections per patient would penalise a unit whose patients stay longer or are sicker. Using line-days as the denominator measures the risk per day of exposure. The unit can then follow its rate over time and compare it with national surveillance data. A rising rate would prompt a review of insertion and maintenance practice and of how long lines remain in place.
 :::
 :::
 
-::: example The unit that could not wash its hands {#ex-sink-cluster}
-Six weeks after refurbishment, three ICU beds grow Pseudomonas aeruginosa with identical WGS profile from sputum and environment; the plumbers used the new sinks while installing; the audit finds splash droplets two metres wide.
+## Surveillance and outbreaks {#outbreaks}
+
+::: definition Surveillance and outbreaks {#def-outbreak}
+**Surveillance** is the continuous, systematic collection, analysis and interpretation of data on infections, with feedback to those who can act on it. In England, healthcare organisations report MRSA, MSSA and Gram-negative bacteraemias and *C. difficile* infections through mandatory surveillance, and clinicians must notify certain infectious diseases to the local health protection team on clinical suspicion.
+
+An **outbreak** is two or more cases of the same infection linked in time and place, or a rise in cases above the number usually expected. Outbreak management follows a common sequence:
+
+1. confirm the diagnosis and that there is a true increase;
+2. write a **case definition** (person, place, time and clinical or laboratory criteria);
+3. find cases and draw an **epidemic curve**;
+4. form a hypothesis about the source and route, and test it, for example with typing or sequencing of isolates;
+5. put **control measures** in place as early as possible, without waiting for proof;
+6. communicate with staff, patients and the public;
+7. declare the outbreak over and record the lessons.
+:::
+
+::: example A cluster of C. difficile on a ward {#ex-cdiff-cluster}
+A 28-bed medical ward for older people records four new cases of *C. difficile* infection in three weeks; all developed more than three days after admission. The usual rate is about one case every two months. What steps should the infection prevention team take?
 ::: solution
-**Water-in-the-building-as-clinical-hazard ([[#def-transmission]], [[#def-hai]], [[public-health/environmental-occupational]]): the science - the plumbing-sink-as-reservoir (the drain-U-bend-biofilm and the splash-bioreactor literature - the terminal-outlet-colonisation after stagnation and the splash radius studies and the tap-aerator-and-shower-head-adjacency and the Sinks-versus-sinks-not-equal-design-question (the deep-versus-shallow-bowl-and-trapped-versus-open-overflow)) and the organism-ecology (Pseudomonas-and-Stenotrophomonas-and-Acinetobacter-and-the water nontuberculous mycobacteria and Legionella and what makes them hard to kill) - [[microbiology/bacteria]]; the intervention menu read honestly - the sink-isolation-or-bagging-controversies (the disinfection of splashing zones versus the sink-and-waste-plug removal versus the gel caps which failed certification and the UK health-technical-memorandum derived debates and the manufacturer-IFU-versus-water-regulations-tension on stagnation flushing) and the temporary measures (no-patient-care-near-sinks-with-these-organisms and the dedicated handwash-rooms and the movement restrictions) and the engineering fixes (the splash-guard-design and the waste-overflow-sealed-and-short-traps-and-the-hot-cold-and-circulating-temperatures-50C-and-thermometric-draws-and-the-chlorination-or-copper-silver-ionization-in-refractory-Legionella-situations and the flushing regimes post-commissioning with the sampling before occupancy) - [[public-health/communicable-disease-control]]; the outbreak mechanics - the WGS-driven case-environment linkage and the environmental sampling plan a balanced environmental sampling design and the case-finding-on-the-unit-and-transfer-notifications and the risk-communication to patients and families (the "the water is safe to drink, the problem is the sink near the bed" explanation that needs a clear voice) - [[microbiology/laboratory-diagnosis]]; and the governance - the design-and-commissioning-standards-as-patient-safety-documents (the rivalry of technical memoranda and water-regs documents explained to estates people and the handover-with-sampling-records and the refurbishment-risk-assessments-before-the-first-tiler-and-the-liquid-management-plans) and the rule of never blaming a nurse for a sink that grows Pseudomonas - [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]].**
+Two or more new hospital-onset cases on one ward within 28 days meet the usual UK definition of a **period of increased incidence**, so the team investigates without waiting to prove an outbreak.
+
+- **Control measures** start at once: isolation of cases with contact precautions, soap-and-water hand washing, enhanced cleaning with a sporicidal agent, and review of commodes and other shared equipment, which are frequent reservoirs.
+- **Typing**: isolates are sent for ribotyping or sequencing. The same type in several patients suggests transmission on the ward; different types suggest that cases arose independently, often reflecting antibiotic use.
+- **Antibiotic review**: the team audits prescribing on the ward, especially of high-risk drugs such as cephalosporins, clindamycin, fluoroquinolones and co-amoxiclav, and reviews proton pump inhibitor use.
+- **Audit**: hand hygiene and cleaning are audited and fed back to staff.
+
+If typing shows a common strain, an outbreak is declared and further measures, such as closing the ward to admissions, may follow. Every case should be reviewed to find what could have been done differently.
 :::
 :::
 
-::: example The infected surgeon {#ex-carrier}
-An orthopaedic surgeon with recurrent itchy hands has four patients with MSSA surgical-site infections after his lists; screening shows the same strain anterior nares and herpetic Whitlow? - no: he also has chronic hand dermatitis with intermittent vesicles.
+::: example Carbapenemase producers from the sinks {#ex-sink-cluster}
+Over eight months, a haematology unit identifies carbapenemase-producing *Klebsiella pneumoniae* in nine patients, despite good hand hygiene audits and contact precautions. Sequencing shows the patients' isolates are closely related, and environmental sampling finds the same organism in the drains of several hand-wash sinks. Explain the source and the control measures.
 ::: solution
-**Healthcare-worker-as-reservoir-medicine ([[#def-transmission]], [[#def-hai]], [[public-health/communicable-disease-control]]): the epidemiology - the SSI-cluster-detection (the routine surgeon-level-SSSI-surveillance-with-funnel-plots that made this visible and the WGS-linkage-pairing-patient-to-surgeon-to-nasal-colonisation) and the hand-dermatitis-carriage-escalator (the intact-skin-barrier-medicine: dermatitis doubles shedding and the glove-related and wash-related skin damage cycle) and the herpetic-whitlow-recurrence-transmission-risk-with-severe-neonatal-and-eczema-patients-implications - [[musculoskeletal/skin]]; the occupational process - the confidential-occupational-health-referral (not the accusation-laden ward-conversation) and the assessment (the nasal-and-hand-and-herpes-lesion-swabs-and-typing and the adherence-to-treatment-and-skin-care-review) and the temporary-work-restriction-decisions-proportionate-to-risk (the stop-operating-with-open-lesions-and-the-restriction-versus-duties-assignment-and-the-return-to-work-criteria-with-culture-negativity-protocols-read-as-evidence-limited-but-practice-standard) and the legal-employment-and-equality-layers (the reasonable-adjustments-for-hand-dermatitis-and-the-e.g. latex-and-wet-work and the confidentiality-versus-patient-safety-disclosure-balance with the occupational-health-doctor's-dual-duty-explicit) - [[medical-ethics-law/confidentiality]], [[medical-ethics-law/professionalism-regulation]]; the treatment and prevention - the decolonisation-regimen-and-skin-treatment-plan (the emollient-and-topical-steroid-or-calcineurin-and-antistaphylococcal-washes-and-mupirocin-and-the-household-parallel-decolonisation-questions) and the hand-care-engineering (the alcohol-based-rub-preferred-over-soap-when-not-visibly-soiled-because-water-and-soap-destroy-skin-and-the-glove-liner-and-moisturiser-protocols-and-the-nail-policy) and the herpes-lesion-do-not-touch-patients rule enforced by a no-blame-reporting-culture that actually reports; and the patients - the-affected-four'-notification-and-treatment-and-testing-and-the-risk-explanation-and-the-SHIN-imported? honest: the national-lookback-process-if-needed and the post-cluster-audit (the theatre-skim-and-gown-technique-and-hair-and-jewellery-and-the-hand-hygiene-moment-1-reliability) with the surgeon-as-colleague-not-villain-lesson: this is a system that let a treatable skin disease become a transmission route - [[clinical-skills/patient-safety]], [[infectious-diseases/healthcare-infections]].**
+**Sink drains** are an established reservoir for Gram-negative bacteria, including carbapenemase producers. Organisms form **biofilms** in the drain and waste trap, which resist routine cleaning. Water from the tap striking the drain splashes organisms onto the sink, surrounding surfaces, hands and items placed nearby, and the problem worsens when sinks are used to dispose of fluids or nutrients that feed the biofilm.
+
+Control measures include stopping the disposal of fluids in hand-wash sinks, keeping patient items away from sinks, cleaning and treating drains, replacing contaminated plumbing, and redesigning sinks so that water does not flow directly into the drain. Some units have removed sinks from patient rooms altogether and rely on alcohol rub. Screening of patients and continued surveillance show whether the measures have worked. The case shows why the environment, not only people, must be considered when standard measures fail.
 :::
 :::
 
-::: quiz
-The most effective single intervention to reduce transmission of methicillin-resistant Staphylococcus aureus between patients on a ward is:
-- [x] Hand hygiene at the point of care
-- [ ] Daily Chlorhexidine bathing of all patients
-- [ ] Universal mupirocin decolonisation
-- [ ] Closing the ward
-::: solution
-**Contact transmission is dominated by hands; the WHO multimodal hand-hygiene strategies and the French "multimodal" and UK and US studies that achieved large MRSA reductions bundled hand hygiene with isolating and cleaning - but hand hygiene is the load-bearing wall. Decolonisation and bathing are adjuncts with their own resistance and selection caveats ([[#def-transmission]], [[#def-precautions]], [[microbiology/antimicrobials]]).**
+## Reproduction numbers and herd immunity {#herd}
+
+The spread of an infection in a population can be summarised by the number of new infections each case causes.
+
+::: theorem Reproduction numbers and the herd-immunity threshold {#thm-herd}
+The **basic reproduction number** $R_0$ is the average number of secondary cases caused by one infectious person in a fully susceptible population. The **effective reproduction number** $R_e$ is the average number in the actual population, where some people are immune. If a fraction $s$ of the population is susceptible and mixing is random,
+
+$$
+R_e = R_0 \cdot s
+$$ {#eq-re}
+
+An outbreak grows when $R_e > 1$ and declines when $R_e < 1$. The **herd-immunity threshold**, the immune fraction at which $R_e = 1$, is
+
+$$
+H = 1 - \frac{1}{R_0}
+$$ {#eq-hit}
+
+If a vaccine prevents infection in a fraction $E$ of those vaccinated, the vaccination coverage needed is $V_c = H/E$.
 :::
+
+::: proof
+Each infectious person makes enough contacts to infect $R_0$ people if all of them are susceptible. If only a fraction $s$ are susceptible, only that fraction of the contacts lead to infection, giving $R_e = R_0 s$.
+
+Transmission declines when each case is replaced by fewer than one new case, $R_0 s < 1$, so $s < 1/R_0$. The immune fraction must therefore exceed $1 - 1/R_0$.
+
+If coverage is $V$ and the vaccine protects a fraction $E$, the immune fraction is $VE$. Setting $VE = 1 - 1/R_0$ gives $V_c = (1 - 1/R_0)/E$. When $V_c$ exceeds 1, vaccination alone cannot interrupt transmission, however complete the coverage. The model assumes random mixing; clusters of unvaccinated people, such as a school or community with low uptake, can sustain outbreaks even when national coverage is above the threshold.
 :::
 
 ::: widget plot
-f: 100*exp(-0.4*x); 100*exp(-0.15*x); 100*(1-exp(-0.3*x))*exp(-0.35*x)
-x: 0, 10
-y: 0, 110
-labels: \text{days from first case identified},\ \%\text{relative index};\ \text{new cases - controls day 0};\ \text{new cases - controls day 4};\ \text{outbreak-fatality tail (late starts)}
-caption: Speed is the intervention ([[#def-outbreak]]): modelled outbreak trajectories fall steeply when control begins within a day or two of the index case and flatten late - the quantitative reason notification clocks are measured in hours and why "wait for confirmation" strategies cost admissions that confirmation was supposed to prevent ([[epidemiology-ebm/observational-studies]], [[public-health/communicable-disease-control]]).
+f: 1 - 1/x; (1 - 1/x)/e
+x: 1, 20
+y: 0, 1.1
+sliders: e=0.95:0.5:1:0.01
+labels: H = 1 - 1/R_0; V_c = H/E
+caption: The herd-immunity threshold $H$ (lower curve) and the vaccination coverage $V_c$ needed with a vaccine of effectiveness $E$ (upper curve), plotted against $R_0$. Seasonal influenza, with $R_0$ not much above 1, needs only a modest immune fraction; measles, with $R_0$ commonly quoted as 12–18, needs more than 90%. Lower the vaccine effectiveness with the slider and watch the required coverage pass 100% for highly transmissible infections. The model assumes random mixing.
+:::
+
+For measles with $R_0 = 15$, $H = 1 - 1/15 \approx 0.93$, so about 93% of the population must be immune. With two doses of MMR protecting about 97% of recipients, the coverage needed is $0.933/0.97 \approx 0.96$, or 96%. This is why the WHO target for measles is 95% coverage with two doses, and why small falls in uptake are followed by outbreaks.
+
+## Protecting healthcare workers {#staff}
+
+Healthcare workers are both at risk and a risk. Occupational health services offer vaccination against hepatitis B, influenza and, where needed, measles, mumps, rubella and varicella, and screen for tuberculosis on appointment.
+
+**Sharps injuries** and splashes of blood can transmit blood-borne viruses. The approximate risks of transmission after a needlestick injury from an infected source, commonly quoted in UK guidance, are about 1 in 3 for hepatitis B (from a highly infectious source to a non-immune person), about 1 in 30 for hepatitis C and about 1 in 300 for HIV. The risk is higher with hollow needles, deep injuries and visible blood. Safe practice prevents most injuries: never re-sheathing needles, using safety devices and disposing of sharps at the point of use.
+
+::: example A needlestick injury {#ex-needlestick}
+A 26-year-old junior doctor sustains a deep needlestick injury with a hollow needle after taking blood from a patient. The patient is later found to have HIV with a detectable viral load and to be hepatitis B surface antigen negative and hepatitis C antibody negative. The doctor completed a hepatitis B vaccine course with a documented response. Outline the immediate actions and the reasoning.
+::: solution
+**Immediate first aid**: encourage the wound to bleed gently, wash it with soap and running water, and do not scrub or suck it. Cover it with a dressing.
+
+**Report** the injury at once to occupational health or, out of hours, the emergency department, because some interventions are time-critical.
+
+**Assess the risk**: a deep injury with a hollow needle containing blood from a source with detectable HIV viral load is a significant exposure. HIV **post-exposure prophylaxis** (PEP) is recommended, started as soon as possible, ideally within hours and no later than 72 hours, and continued for 28 days according to national guidance. PEP is not needed if the source has a sustained undetectable viral load on treatment.
+
+**Hepatitis B**: the doctor has documented immunity and the source is HBsAg negative, so no further action is needed. **Hepatitis C**: the source is antibody negative, so the risk is very low; no PEP exists for hepatitis C in any case, and follow-up testing would be offered if the source were positive.
+
+**Follow-up**: baseline blood tests, testing for HIV after the window period, support, and advice about safer sex until HIV infection is excluded. The incident should also be reviewed to prevent recurrence.
+:::
+:::
+
+::: warning Gloves are not hand hygiene
+Gloves protect the wearer from contamination, but they are often worn too long. A gloved hand that touches a patient, then the bed rail, then a computer keyboard, then a second patient carries organisms the whole way. Gloves should be put on for a specific task, removed immediately afterwards, and followed by hand hygiene. Wearing gloves for routine contact with intact skin is not recommended and is associated with poorer hand hygiene.
+:::
+
+::: quiz
+A 40-year-old man is admitted with a three-week cough, weight loss and a cavity on chest X-ray. Sputum microscopy shows acid-fast bacilli. Which precautions are needed until he is assessed as no longer infectious?
+- [ ] Standard precautions only
+- [ ] Contact precautions with gloves and apron
+- [ ] Droplet precautions with a surgical mask for staff
+- [x] Airborne precautions: a single room, ideally negative pressure, and fit-tested FFP3 respirators for staff in specified situations
+::: solution
+Smear-positive pulmonary tuberculosis spreads by the **airborne** route: small particles carrying *M. tuberculosis* remain suspended and can be inhaled at a distance. He needs a single room with the door closed, ideally a negative-pressure room, and staff need fit-tested respirators in line with local policy, especially if drug-resistant tuberculosis is possible or aerosol-generating procedures are performed. Contacts are traced by the tuberculosis service.
+:::
+:::
+
+::: history
+In 1847 Ignaz Semmelweis showed in Vienna that the maternity ward staffed by doctors and medical students, who came from performing autopsies, had far higher mortality from puerperal fever than the ward staffed by midwives. Hand washing in chlorinated lime brought deaths down sharply. His ideas were largely rejected during his lifetime. In the 1850s Florence Nightingale used mortality statistics from the Crimean War to argue for sanitation, ventilation and clean hospitals. In 1867 Joseph Lister introduced antiseptic surgery with carbolic acid.
+
+In 1927 William Kermack and Anderson McKendrick published the mathematical model of epidemics from which reproduction numbers and herd-immunity thresholds are derived. In 1968 Earle Spaulding described the classification of medical devices by infection risk that still guides decontamination. The modern era of infection control, with infection control nurses, surveillance and care bundles, developed from the 1960s onwards, and was accelerated in England by the MRSA and *C. difficile* epidemics of the early 2000s and by the COVID-19 pandemic.
 :::
 
 ## Where this leads
 
-The organisms behind the outbreaks in [[microbiology/bacteria]] and [[microbiology/viruses]]; the resistance dynamics they contain in [[microbiology/antimicrobials]]; the public health laws and systems in [[public-health/communicable-disease-control]]; safety-science methods in [[clinical-skills/patient-safety]]; laboratory surrogates and definitions in [[microbiology/laboratory-diagnosis]].
-
-::: history
-**Infection control is applied humiliation and applied science: the Semmelweis-1847-observation-as-moral-crusade-told-accurately (the puerperal-fever-mortality-drop-with-chlorinated-lime-hand-rinses and the Viennese-reception-and-his-1861-book's-uncompromising-rhetoric-and-his-death-in-an-asylum - the cautionary tale about evidence fighting authority, and the pre-germ-theory-framework-problem often omitted) - [[medical-ethics-law/professionalism-regulation]]; the Nightingale-Craven-and-the-Crimea-sore-epidemiology (the mortality-polar-areas-diagram-as-statistical-graphic-invention-and-the-sanitation-argument-that-beat-the-hospital-into-existence and the medical-officer-of-health and sewerage era that cut diarrhoeal and typhoid deaths more than any drug) - [[public-health/environmental-occupational]], [[public-health/prevention-promotion]]; the hand-hygiene evidence era - the Larson studies and the Pittet Geneva programme that made hand hygiene a measurable clinical activity (the alcohol-handrub-rollout-2000s and the WHO-5-Moments-campaign-and-the-global-award-network) and the 2008 UK MRSA and C. difficile panic with its national benchmarking and cleanyourhands campaign and the birth of infection prevention as a board-level function and the Francis-Report-after-Mid-Staffs-which-named-compassion-and-infection-together; the isolation-science-era - Duguid's 1946 droplet-nuclei physics and the airborne-transmission experiment lineage, with the 1983 and 1990s CDC guideline iterations and the 1994-TB-ventilation-revival-after-MDR-TB-nosocomial-outbreaks in Florida hospitals (the Florida and New York nosocomial MDR-TB ward outbreaks and the CDC recommendations rebuilding airborne precautions) and the N95-fit-testing-occupational-health-machinery); the molecular-epidemiology-turn - the PFGE-and-ribotyping-then-WGS-outbreak-resolution (the genome detective work of the 2011 German EHEC outbreak and the superspreading rethink from the 2015 Korean MERS ward epidemiology) and the 2020s-pandemic-lessons-in-a-single-lesson-set - the airborne-recognition-lag and the PPE-scarcity-logistics-and-equity (the LMIC-supply-chain-collapse) and the ventilation-coming-inside-the-building-code-debate and the genomic-surveillance-as-public-infrastructure (the national-serotyping-consortia) and the data-quality-crises-in-real-time (the-contact-tracing-apps-versus-human-interviewers-evidence-weighing) and the vaccine-legacy-prevention-funding-cliff - all-now-standard-IPC-teaching; and the unfinished business - the global-IPC-programmes-where-clean-water-and-handwash-baseline-still-gaps (the WHO-Clean-Hand-Save-Lives-global-application-and-the-IPC-gap-in-LMIC-hospitals-and-the-injection-safety-reuse-epidemics) and the one-health-AMR-containment-in-food-chains and the AMR-Vision-Zero-political-slogan-versus-operational-reality and the next-pandemic-preparedness-checklist-now-written-in-red - [[public-health/global-health]], [[public-health/environmental-occupational]].**
-:::
+The organisms behind healthcare-associated infection are described in [[microbiology/bacteria]] and [[microbiology/microbiota]], and the sequencing and typing used to investigate outbreaks in [[microbiology/laboratory-diagnosis]]. Clinical management of healthcare-associated infections and outbreaks is covered in [[infectious-diseases/healthcare-infections]] and [[infectious-diseases/stewardship-outbreaks]]. Notification, contact tracing and the population side of transmission are in [[public-health/communicable-disease-control]] and [[public-health/vaccination-programmes]].
 
 ::: summary
-- Transmission routes are policy grammar: contact, droplet, airborne and vehicle each have an evidence history, an PPE corollary and an engineering control.
-- Device-associated infection is bundle medicine - insertion and maintenance compliance measured together beats any single clever product.
-- Most control measures rest on outbreak empiricism; say so honestly and measure locally, because isolation and screening fail quietly when badly implemented.
-- Cleaning, ventilation and water-system management are clinical services; the sink splash zone and the broken negative-pressure room are patient-safety hazards.
-- Outbreak control is a clock: case definitions, line lists, curves and hypotheses deployed in hours, with control started before proof and genomics settling what typing only hinted.
-- Notification is a legal duty and a moral one; the system fails fastest where blame makes colonisation hidden, so just culture is an infection-control intervention.
-:::
-
-::: exercise Advise the school nurse {level=1}
-Two children with confirmed scabies in a primary school; parents demand closure. Advise using evidence.
-::: solution
-**Common-disease-advice-medicine ([[#def-precautions]], [[microbiology/fungi-parasites]], [[public-health/prevention-promotion]]): the science - scabies-transmission-requires-prolonged-skin-to-skin (the hugging-and-cuddling-and-hand-holding-not-desk-sharing) and the itch-versus-infestation-timeline (the 2-6-week-sensitisation-itch-for-first-episode and the weeks-of-itch-after-successful-treatment-that-parents-read-as-failure) and the crusted-scabies-exception-with-its-environmental-contamination-and-contact-list-breadth; the control advice - no-school-exclusion-after-treatment (the treat-and-attend-the-next-day-rule and the mass screening and closure that the evidence does not support) and the household-and-close-contact-treatment-simultaneity-with-the-permethrin-or-ivermectin-regimens-and-the-repeat-dose-at-day-8-and-the-nail-polish-and-washing-advice-proportionate (the 60-C-wash-or-bag-for-72-hours-versus-environmental-sprays-myth-busting) and the itching-after-treatment-explanation-letter-the-school-can-give-everyone - [[musculoskeletal/skin]]; and the communication - the one-explanation-in-three-places (the letter-and-the-phone-and-the-website-saying-identical-things) and the stigma-management (the "unclean" reflex and the dignified language) and the paediatric-and-baby-treatment-safety-questions (the permethrin-in-young-infants and the age-appropriate regimen choices) and the crusted-scabies-or-treatment-failure-threshold-for-dermatology-and-infection-team-escalation - and the audit-of-the-advice (the re-attendance-rates and the "did the contacts get treated" telephone-checks because reinfection means the advice chain broke, not the parasite won) - [[public-health/communicable-disease-control]], [[clinical-skills/communication]].**
-:::
-:::
-
-::: exercise Set the screening policy {level=1}
-Write your admission-screening policy for MRSA, CPE and scabies/lice for: acute medical ward, ICU, transplant ward, and maternity.
-::: solution
-**Risk-proportionate-screening ([[#def-precautions]], [[#def-outbreak]], [[microbiology/antimicrobials]]): the principles - prevalence-drives-yield-and-consequence-drives-intensity (the pre-test-probability-of-each-organism-per-unit-and-the-harms-of-false-positives-isolation-labels-versus-false-negatives-transmission) and the transfer-history-risk-geography (the European-and-Asian-and-US-ICU-differences-and-the-test-for-all-transfer-from-abroad-versus-risk-factor-questionnaires-with-evidence-read-honestly) - [[public-health/global-health]]; the unit answers - acute-medical: usually-no-universal-MRSA-swabbing-with-low-prevalence-and-high-isolation-burden and the targeted-approach-for-high-risk (the dialysis-and-long-term-care-and-recent-overseas-hospital-and-known-carrier) and the syndromic-testing-not-screening; ICU: the admission-CDI-and-CPE-and-Resistant-GNB-screening-depending-on-local-endemicity-and-the-outbreak-triggered-universal-screening-plus-contact-precautions-decisions-with-the-SHEA-compendium-versions; transplant: the pre-transplant-latent-infection-and-carriage-panels (the MRSA-and-VRE-and-CPE-and-Strongyloides-and-endemic-fungi-and-the-donor-derived-questions) - [[immunology/transplant-tumour-immunology]] for the prehab-lists; maternity: the Group-B-Strep-screen-versus-universal-intrapartum-prophylaxis-policy-comparison-and-rubella-immunity-record-checks-and-epidemiology-triggers - [[obstetrics-gynaecology/labour-birth]]; the scabies-and-lice layer - the head-lice-as-nuisance-not-danger (the no-exclusion-and-comb-survey-and-the-otc-treatment-resistance-reality and the school-screen-ban-science) and scabies-cluster-with-contact-listing-and-simultaneous-treatment-not-ward-closure; and the implementation - the swab-kit-and-order-set-and-who-reads-and-who-acts-and-the-result-while-admitted-vs-referred-and-the-decolonisation-or-isolation-after-hours-decision-protocol and the audit (the screen-compliance-and-time-to-result-and-action-and-the-isolation-days-avoided-versus-added-by-false-positives) - [[clinical-skills/patient-safety]].**
-:::
-:::
-
-::: exercise Communicate during an outbreak {level=2}
-Your neurosurgical unit has Klebsiella pneumoniae ST258 in nine patients, two deaths; a journalist has a leaked list; families demand to know "who gave it to whom". Draft the communication and boundary plan.
-::: solution
-**Outbreak-communication-medicine ([[#def-outbreak]], [[clinical-skills/communication]], [[medical-ethics-law/confidentiality]]): the internal-external-consistency-rule - the same facts in the family letter and the press statement and the staff briefing, released together or sequenced deliberately with an embargo plan and the incident-group sign-off and the one-spokesperson-plus-clinician-available-for-clinical-questions-model and the pre-drafting-before-the-leak-becomes-the-story (the holding-statement-with-compassion-and-facts-and-actions-with-no-speculation) and the human-rights-and-data-law-bounds (no-patient-identifiable-information-in-any-communication-without-consent-or-legal-duty and the family-communications-first-out-of-respect-and-their-right-to-know); the honest-science-questions - the "who gave it to whom" answered by what genomics can and cannot say (the same-ST-is-not-the-same-cell and the plasmid-sharing-and-the-background-colonisation and the directional-inference-limits and the difference between a cluster-signal and a proven transmission pair) and the named-strain-lessons (the Klebsiella ST258 biology and why it is hard to treat and the mortality-context-with-underlying-condition-honesty-and-the-CI-ranges) - [[microbiology/laboratory-diagnosis]]; and the learning-and-accountability-package - the-affected-families-liaison-with-named-contacts-and-in-person-options-and-translation-and-advocacy and the Duty-of-Candour-process and the serious-incident investigation with patient and family participation and published terms of reference and the staff-support-and-protecting-them-from-blame-in-the-press (the "no-nurse-is-carrier-of-ST258-alone" line prepared) - [[clinical-skills/patient-safety]], [[public-health/communicable-disease-control]].**
-:::
-:::
-
-::: exercise Build the antimicrobial-governance dashboard {level=3}
-Design a board-level antimicrobial resistance and consumption dashboard for a multi-site trust with measured indicators, escalation rules and equity checks.
-::: solution
-**Board-governance-of-AMR ([[#def-outbreak]], [[microbiology/antimicrobials]], [[public-health/health-systems-economics]], [[clinical-skills/patient-safety]]): the consumption panel - the DID-defined-daily-doses-and-DDDs-versus-weight-adjusted-paediatric-denominators-and-the-AWaRe-access-watch-reserve-split-and-the-unit-and-consultant-level-views-with-small-numbers-caveats and the IV-to-oral-switch-rate and OPAT volumes and the peri-operative prophylaxis-compliance (the timing-and-single-dose-versus-continuation-metrics) and the empiric-therapy-guideline-concordance-sampled-quarterly and the antibiotic-timeout-completion; the resistance and infection panel - the annual-antibiogram-with-3-year-trends-and-target-organisms (the E. coli blood-isolate third-generation cephalosporin resistance and the S. aureus MRSA proportion and the Klebsiella carbapenem resistance and the C.diff counts-and-severity-strata) and the healthcare-associated-infection-rates-with-definitions-frozen-between-years (the surveillance-definition-change-alert-line-on-the-chart) and the incident-requiring-action list with the outbreak-days-and-harms-tally; the enablers and the escalation - the stewardship-round-frequency-and-ID-consult-coverage-and-antibiogram-literacy-training-and-the-microbiology-staff-vacancy-risk and the lab-capability-and-turnaround-SLAs and the AMR-committee-terms-of-reference-with-a-named-executive-owner and the trigger-rules (a unit exceeding its 95% control limit on consumption or resistance auto-generates an audit-not-an-accusation) and the board-education-note (what a funnel plot is and what an antibiogram is not); and the equity and transparency - the resistance-burden-by-deprivation-and-ethnicity-and-learning-disability-hospital-admission-overlap (the AMR is an inequality story) and the publication-of-rates-with-interpretation (the compare-carefully-definitions-matter caveat that keeps the local press honest) and the patient-and-carer-voice-on-the-committee and the annual-system-review-reporting-to-the-board-risk-register - [[public-health/determinants-inequalities]], [[infectious-diseases/stewardship-outbreaks]].**
-:::
+- Transmission needs an agent, reservoir, portal of exit, mode of transmission, portal of entry and susceptible host; breaking any link stops it.
+- Contact spread, mostly on hands, dominates in hospitals. Droplet and airborne spread form a continuum, and ventilation matters.
+- Standard precautions apply to every patient, every time. Hand hygiene at the WHO five moments is the most important measure; use soap and water for spores and norovirus.
+- Transmission-based precautions add contact, droplet or airborne measures; airborne precautions need fit-tested FFP3 respirators and ideally negative-pressure rooms.
+- Cleaning precedes disinfection and sterilisation. The Spaulding classification sets critical, semi-critical and non-critical items to sterilisation, high-level disinfection and cleaning.
+- Care bundles and early removal of devices prevent line, catheter and surgical infections; rates are reported per 1,000 device-days.
+- $R_e = R_0 s$, the herd-immunity threshold is $1 - 1/R_0$ and the coverage needed is $(1 - 1/R_0)/E$; measles needs about 95% two-dose coverage.
+- Sharps injuries are prevented by safe practice and managed promptly, with HIV post-exposure prophylaxis when indicated.
 :::
 
 ## Exercises
 
-::: exercise Write the isolation order {level=1}
-Convert these diagnoses into orders: pulmonary TB on arrival; confirmed norovirus in a bay; crusted scabies; a MEASLES-suspect; MRSA-wound.
+::: exercise Choose the precautions {level=1}
+Which transmission-based precautions are needed for: (a) a patient with norovirus; (b) a patient with influenza; (c) a patient with chickenpox; (d) a patient colonised with MRSA?
+::: hint
+Think about the main route of spread of each organism.
+:::
 ::: solution
-**Precaution-prescribing ([[#def-precautions]], [[infectious-diseases/healthcare-infections]]): TB - airborne, negative-pressure-if-available-N95-for-entries-and-the-door-closed-and-treatment-started-reduces-infectiousness-within-days-practically-with-protocol-and-the-PPE-and-ventilation-and-TB-team-notification-package - [[infectious-diseases/tuberculosis]]; norovirus - contact-and-enteric with the norovirus-appropriate-disinfectant (the EN14476-virucidal-standard) and the vomit-kit-and-48-hour-rule-and-the-ward-admission-mix-and-episode-cleaning - [[gastrointestinal/bowel-disease]]; crusted scabies - contact-with-long-gown-glove-and-the-environmental-fabric-management-and-the-ivermectin-permethrin-regimen-and-the-staff-screening-and-the-treatment-of-contacts-even-when-simple-scabies-is-awkward (the close-skin-contact-rule) - [[musculoskeletal/skin]], [[microbiology/fungi-parasites]]; suspected measles - airborne-plus-contact-where-aerosol-generating-with-the-mask-the-patient-first-and-the-exposure-clock-above; MRSA-wound - contact-with-the-dressing-intact-and-the-laundry-and-equipment-rules-and-the-screening-and-decolonisation-debate-per-unit-policy - [[microbiology/bacteria]]; and the human-craft - the isolation-explanation-card (why the PPE and why it is safe to visit) and the-visual-alert-fatigue (the over-signage that gets ignored) and the dignity-preserving-rounds (the daily-review-of-continued-necessity rule and the isolation-day-count-and-window-cover-balance) and the mental-health-delirium-risk-in-isolation-with-a-daily-de-isolation-check - [[clinical-skills/patient-safety]], [[geriatrics-palliative/delirium-dementia-care]].**
+(a) **Contact** precautions, with soap-and-water hand washing and enhanced cleaning; vomiting can also generate infectious aerosols, so masks may be added locally. (b) **Droplet** precautions, with airborne precautions for aerosol-generating procedures. (c) **Airborne** and contact precautions, with care given by staff immune to varicella. (d) **Contact** precautions, according to local policy, often with decolonisation.
 :::
 :::
 
-::: exercise Interpret a hand-hygiene audit {level=1}
-Unit A: 91% compliance, WHO moments; Unit B: 72%; MRSA rates are similar; C.diff rates higher on B. What does and does not follow?
+::: exercise A herd-immunity threshold {level=1 check="0.75"}
+An infection has $R_0 = 4$. What fraction of the population must be immune to prevent sustained transmission, assuming random mixing? Give the exact decimal.
+::: hint
+Use $H = 1 - 1/R_0$.
+:::
 ::: solution
-**Metric-interpretation ([[#def-transmission]], [[#def-outbreak]], [[epidemiology-ebm/measuring-disease]]): the compliance-number's properties - the observer-effect-inflation (the-audit-is-an-intervention-and-the-observation-window-bias) and the-technique-quality-beyond-presence (the volume-and-duration-and-coverage-versus-just-rubbing-hands-and-the-skin-condition-and-glove-overuse-confounds) and the unit-mix-confounders (acuity-and-device-density-and-isolation-burden-and-age-and-ward-geography-sinks-and-en-suites) - the outcome-linkage-is-multifactorial so the C.diff-difference is a hypothesis-generating flag not a verdict; the honest actions - the-undercover-versus-overt-audit-blending-and-the-5-moments-versus-my-moments-context-and-the-unit-level-qualitative-work (why-don't-people-hygienise-at-moment-3 - the sink-distance-and-alcohol-dispenser-position-and-glove-culture-and-workload-and-moral-permissioning-diagnosable-with-a-walk-round) and the outcome-measures-widened (hand-hygiene-process-plus-CDI-and-MRSA-and-CPE-and-SSI-and-the-nurse-sensitive-safety-climate-scores) - [[clinical-skills/patient-safety]]; and the improvement package - the point-of-care-alcohol-gel-at-bedside-and-pharmacy-and-cleaners-and-patient-and-family-empowerment-campaign-done-well-versus-done-as-blame-transfer (the relatives-ask-the-doctor-ethics) and the-named-champion-and-feedback-funnels-with-senior-clinician-role-modelling-and-the-education-as-adjunct-to-access-not-substitute-for-it and the sustainability-checks-beyond-campaign-bumps - [[public-health/prevention-promotion]], [[public-health/health-systems-economics]].**
+$H = 1 - 1/4 = 0.75$. Three-quarters of the population must be immune.
 :::
 :::
 
-::: exercise Manage the endoscope incident {level=2}
-A duodenoscope is implicated in a cluster of carbapenem-resistant organism infections post-ERCP. Manage the incident: patients, device, regulator, communication.
+::: exercise Classify the equipment {level=1}
+Using the Spaulding classification, state the category and the level of decontamination needed for: (a) a surgical scalpel handle used in theatre, (b) a flexible gastroscope, (c) a commode.
+::: hint
+Ask what tissue each item touches.
+:::
 ::: solution
-**Device-reprocessing-failure-medicine ([[#def-hai]], [[#def-outbreak]], [[microbiology/laboratory-diagnosis]]): the device - the duodenoscope's elevator-and-capillary-channel-design-and-the-lift-and-detach-versus-fixed-versions-and-the-failure-of-high-level-disinfection-to-clear-biofilm-in-vitro-data-and-the-ADA-and-EASG-and-SHEA-adjacency-and-sterilization-versus-glutaraldehyde-versus-peracetic-acid-versus-UVC-docking-station-versus-etO-for-heat-sensitive-versus-duplicate-scopes-and-culturing-protocols-with-holding-the-scope-from-use-until-cleared; the patients - the-exposed-cohort-definition-and-notification-with-the-infection-disease-and-risk-explained (the asymptomatic-carriage-what-it-means-and-the-hygiene-and-healthcare-access-counselling-not-ostracism) and the-screening-offer-and-what-early-treatment-would-even-mean and the-cluster-cases'-treatment-pathway-and-severe-outcome-prevention and the-equity-check (who gets the phone call and who reads it in the press first) - [[gastrointestinal/pancreas-biliary]]; the system - the root-cause-analysis (the-compliance-audit-replay-and-the-technical-service-records-and-the-manufacturer-IFU-versus-reality-gap-and-the-brush-size-mismatch-classic-and-the-transport-and-storage-and-drying-conditions-and-the-point-of-use-filters) and the-safety-communication-channels (the-MHRA-FDA-vigilance-reports-and-the-field-safety-notices-and-the-clinical-director's-registration-duty) and the-reprocessing-training-and-competency-rebuild-and-decontamination-unit-access-and-scope-numbers-vs-demand-reality; and the governance - the-incident-group-with-patient-representatives-and-the-minutes-public-and-the-lookback-data-quality-audit (the procedure logs with implant tracking done properly because they are the only exposure list you have) and the-never-event-debate-honestly-placed-and-the-forgiveness-of-a-service-that-learns - [[clinical-skills/patient-safety]], [[medical-ethics-law/professionalism-regulation]].**
+(a) **Critical**: it enters sterile tissue, so it must be **sterilised**. (b) **Semi-critical**: it contacts mucous membranes, so it needs at least **high-level disinfection**, in practice by an automated endoscope washer-disinfector. (c) **Non-critical**: it contacts intact skin, so it needs **cleaning**, with disinfection; in *C. difficile* or norovirus settings, a chlorine-releasing agent or other sporicidal product is used.
 :::
 :::
 
-::: exercise Design the pandemic-resilient ward {level=3}
-Post-pandemic, your trust wants one design and operations standard that copes with the next respiratory pathogen without collapsing routine care. Specify it.
+::: exercise The effective reproduction number {level=2 check="1.8"}
+An infection has $R_0 = 6$. In a community, 70% of people are immune. What is $R_e$, and will an outbreak grow?
+::: hint
+The susceptible fraction is $s = 1 - 0.7$.
+:::
 ::: solution
-**Resilience-by-design ([[#def-precautions]], [[#def-outbreak]], [[public-health/health-systems-economics]], [[emergency-critical-care/major-incidents]]): the built layer - the ventilation-adequacy-for-every-inpatient-room-with-window-opening-realism-and-MVHR-air-change-targets-and-portable-HEPA-as-bridge-and-CO2-as-a-proxy-vital-for-the-ventilation-honesty-audits (the CO2-monitoring-retrofit-lessons) and the en-suite-for-all-and-the-sink-placement-splash-zone-lessons-and-the-hand-hygiene-niche-positioning-in-new-builds-and-the-flex-space-for-isolation-capacity-scaling-and-the-negative-pressure-rooms-maintained-tested-and-human-resources-trained-and-the-laundry-and-waste-and-specimen-logistics-under-surge; the operational layer - the PPE-stock-model-with-national-and-local-and-donning-supervision-capacity-and-the-fit-testing-records-as-a-live-system-and-decontamination-reprocessing-capacity-under-surge (the reusable-versus-single-use-carbon-and-supply-chain-trade) and the cohort-and-test-to-release-policies-embedded-in-bed-management-algorithms-not-PDFs and the staff-rotas-and-vaccination-programmes-and-occupational-health-with-exposure-management-SOPs and the digital layer (the exposure-list-tools and the test-result feeds to records-not-faxes) - [[public-health/vaccination-programmes]], [[public-health/environmental-occupational]]; the clinical-care-preservation layer - the-elective-and-urgent-care-protection-under-surge and the-diagnostics-surge-capacity (the respiratory-panel-capacity-and-sample-transport-continuity) and the-reverse-triage-for-infection-suspects-and-the-community-admission-pathways-and-the-hospice-and-care-home-partnership-because-surge-just-moves-the-ward and the mental-health-and-substance-use-services-because-pandemics-are-not only respiratory - [[psychiatry/psychiatric-assessment]] and the evaluation and equity - the-exercise-programme (the annual-incident-exercise-with-observed-objectives-not-photos) and the-dual-purpose-clinical-spaces-and-staff-experience-retention-metrics and the equity-by-design-audits (who-gets-a-single-room-who-self-isolates-in-a-one-bedroom-flat-who-can-work-from-home) and the public-trust-maintenance (the transparent data and the apology-when-standard-fails because the next pandemic is won partly on whether people believed the last one) - [[public-health/determinants-inequalities]], [[clinical-skills/communication]].**
+$s = 0.3$, so $R_e = 6 \times 0.3 = 1.8$. Because $R_e > 1$, an outbreak would grow. The herd-immunity threshold for this infection is $1 - 1/6 \approx 0.83$, so immunity needs to rise by about 13 percentage points.
+:::
+:::
+
+::: exercise A hand-hygiene audit {level=2 check="80"}
+An observer records 85 hand-hygiene opportunities on a ward, of which 68 were taken correctly. Calculate the compliance as a percentage, and suggest two limitations of this audit.
+::: hint
+Compliance is correct actions divided by opportunities.
+:::
+::: solution
+$68/85 = 0.80$, so compliance is **80%**. Limitations include the **Hawthorne effect**, since staff often perform better when watched; the small sample, which may not reflect night shifts or busy periods; possible differences between observers; and the fact that compliance does not measure technique, such as whether all surfaces of the hands were covered. Feedback of results, with education and easy access to hand rub, is more useful than the number alone.
+:::
+:::
+
+::: exercise Measles vaccine coverage {level=2 check="96"}
+Measles has an $R_0$ of about 15, and two doses of MMR vaccine protect about 97% of recipients. Calculate the two-dose coverage needed to reach the herd-immunity threshold. Give the answer as a percentage, rounded to the nearest whole number.
+::: hint
+First find $H = 1 - 1/R_0$, then divide by $E$.
+:::
+::: solution
+$H = 1 - 1/15 \approx 0.933$. $V_c = 0.933/0.97 \approx 0.962$, so about **96%** two-dose coverage is needed. Coverage below this, even by a few percentage points, allows measles to spread, especially where unvaccinated children cluster in the same schools and communities.
+:::
+:::
+
+::: exercise An endoscope incident {level=3}
+A hospital discovers that, for three weeks, a fault in an endoscope washer-disinfector meant that one disinfection stage was not completed. During that time 140 patients had gastroscopy. What are the risks, and what should the hospital do?
+::: hint
+Consider the Spaulding category of the endoscope, which organisms could have been transmitted, and the duty of candour.
+:::
+::: solution
+Gastroscopes are **semi-critical** devices that contact mucous membranes and are often contaminated with blood and secretions. Incomplete disinfection could allow transmission of bacteria, including resistant Gram-negative organisms and *Pseudomonas*, and in theory of blood-borne viruses such as hepatitis B, hepatitis C and HIV. The absolute risk to each patient is usually very low, but it is not zero.
+
+The hospital should take the equipment out of use and investigate the fault; convene an incident team including infection prevention, microbiology and health protection; assess the risk by reviewing which endoscopes and patients were affected; and carry out a **look-back exercise**. Patients are contacted, told what happened, offered testing for blood-borne viruses at appropriate intervals, and given a point of contact. Openness is a legal and professional duty of candour. Lessons are shared, and validation and monitoring of washer-disinfectors are strengthened.
+:::
+:::
+
+::: exercise Norovirus in a care home {level=3}
+Over two days, 12 of 40 residents and 5 staff in a care home develop sudden vomiting and diarrhoea. Explain why norovirus is the most likely cause, and outline control measures, including when the outbreak can be declared over.
+::: hint
+Consider the incubation period, the features of the virus and how it spreads.
+:::
+::: solution
+**Norovirus** is the commonest cause of outbreaks of vomiting and diarrhoea in care homes and hospitals. Its short incubation period of 12–48 hours, prominent vomiting, rapid spread to both residents and staff, and short illness fit. It spreads by the faecal–oral route, by contaminated surfaces and by aerosols from vomiting. A very low infectious dose, resistance to alcohol and environmental survival make outbreaks hard to stop.
+
+Control measures follow UKHSA and local guidance:
+
+- inform the local health protection team and send stool samples for PCR to confirm;
+- keep affected residents in their rooms, with dedicated toilets where possible;
+- exclude affected staff from work until 48 hours after their symptoms have stopped;
+- use **soap and water** for hand hygiene, and **chlorine-releasing agents** for cleaning;
+- use gloves and aprons, and handle vomit and faeces promptly;
+- restrict admissions, transfers and visiting, and tell receiving hospitals about the outbreak;
+- give extra fluids and monitor frail residents for dehydration.
+
+The outbreak is usually declared over when there have been no new cases for a set period, commonly 48–72 hours after the last case's symptoms resolved, and a **terminal clean** has been completed.
 :::
 :::

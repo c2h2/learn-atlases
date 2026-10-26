@@ -1,141 +1,336 @@
-Clinical microbiology is 20% organism knowledge and 80% specimen knowledge: **the laboratory can only find what you send it, how you send it and when you send it decide almost every result you read, and the newest technologies have made sample selection and result interpretation - not culture - the scarce clinical skills.** This chapter teaches the workflow from request to report: appropriate ordering, the methods and their limits, and how to act on each result class.
+A microbiology result is the end of a long chain. Someone chose a specimen, collected it, labelled it, wrote a request and sent it to the laboratory. The laboratory chose which tests to run, and someone read the report and decided what it meant. A mistake anywhere in that chain produces a misleading answer, and many of the commonest mistakes happen before the specimen reaches the laboratory.
 
-This chapter covers specimen selection and transport, microscopy and culture, antigen and molecular methods including sequencing, serology and its timing traps, and antimicrobial susceptibility reporting.
+This chapter follows the specimen from the bedside to the report. It aims to help you choose the right test, collect a useful sample and interpret the result, including the cases where an accurate test still gives a misleading answer.
 
-## Getting the specimen
+This chapter covers specimen collection, microscopy, culture and identification, antimicrobial susceptibility testing, antigen and molecular tests, serology, and the principles of test interpretation, including predictive values.
 
-::: definition Specimen selection and the request {#def-specimen}
-**The first rule - microbiology begins with anatomy (the sterile-versus-colonised map: blood-and-CSF-and-joint-and-pleural-and-deep-tissue-as-normally-sterile-and-sputum-versus-BAL-versus-endotracheal-as-a-spectrum-of-lower-tract-representativeness and the urine-collection-methods-and-their-contamination-gradients and the wound-swab-versus-deep-tissue-versus-bone-biopsy-argument that changes management and the never-swab-a-chronic-wound-superficially-then-treat-what-grows discipline) - the diabetic foot swab debate in [[microbiology/bacteria]] and the catheter-sample rules in [[renal/urinary-tract]]); the timing rules (antibiotics-before-cultures-when-possible-and-the-do-not-delay-antibiotics-in-shock exception and the blood-culture-pair-with-adequate-volume-10-mL-per-bottle-adults-and-the-second-set-from-another-site-for-contaminant-discrimination and the malaria-films-and-parasite-timing-and-the-endocarditis-spaced-sets-versus-urgent-sets debate and the serology's paired-acute-and-convalescent-logic and the viral-shedding-windows for PCR - respiratory-on-day-1-3-not-day-10 and the CSF-enterovirus-PCR-versus-serum); the transport and logistics (the anaerobe-transport-media and the timing-to-lab and the temperature rules - the meningococcus dies in the fridge: blood cultures at room temperature-and-CSF-never-refrigerated-for-suspected-meningococcus-with-the-urgent-processing-and-the-stool-parasite-fixatives-and-the-cold-chain-for-virology-transport-media) - the four-way-conversation (patient-site-timing-container) that the WHO-basic-bacteriology-curve shows determines yield more than any instrument; and the request form as a clinical document (the risk-factor questions that change laboratory processing - the travel for parasite expertise and the immunosuppression for extended fungal-and-viral panels and the device for biofilm sonication - [[infectious-diseases/immunocompromised-host]] - and the asking-the-clinician-what-they-are-looking-for conversation that is the highest-yield communication in the department - [[clinical-skills/records-handover]]).**
+## The specimen {#specimen}
+
+::: definition A good specimen {#def-specimen}
+A useful specimen is:
+
+- **from the right site**: the site of infection, sampled so as to avoid the normal flora as far as possible, for example pus or tissue rather than a surface swab;
+- **taken at the right time**: before antibiotics whenever this does not dangerously delay treatment, and at the right stage of illness for the test;
+- **in the right container**: sterile, with the correct transport medium, preservative or blood culture bottle;
+- **of adequate volume**: small volumes miss organisms present in low numbers;
+- **transported promptly**, at the right temperature;
+- **accompanied by a clear request**: clinical details, relevant travel and exposures, antibiotics already given and the organisms or tests of particular concern.
 :::
 
-## Methods and their limits
+Several common errors follow from these principles. A dry surface swab of a wound mainly grows the skin and environmental organisms on its surface. A urine sample left at room temperature allows bacteria to multiply, so a sample from someone without infection can show a high count. A sputum sample that is mostly saliva grows mouth flora. Specimens taken after several doses of antibiotics often grow nothing, even when bacteria caused the infection.
 
-::: definition From Gram stain to sequencing {#def-methods}
-**Microscopy (the Gram-stain-as-hour-one-information-and-its-interpretation-grammar - PMN-presence-saying-specimen-quality-and-inflammation and organisms-per-field and intracellular-versus-attached and the AFB-and-modified-AFB-and-fungal-silver-and-fluorescent-stains and the wet-prep-motility-trivia that still works and the experienced-microscopist-phone-call-being-old-school-patient-care at its best - [[clinical-skills/laboratory-tests]]); culture (the 24-48-hour-basic-and-weeks-for-mycobacteria-fungi timeline and the selective-and-differential-media-tour - blood-chocolate-MacConkey-CLED-XLD-BCYE-Lowenstein-Jensen, and the modern broth-versus-plate debate - and the sensitivity-problem-for-low-burden-disease (the endocarditis-prior-antibiotics and TB-paucibacillary and the blood-culture-volume-math) and the organisms-that-will-not-grow (the cell-wall-less and intracellular and fastidious with their serology-or-PCR futures)); the antigen and molecular layer (the lateral-flow and EIA antigen tests - the pneumococcal-urinary-antigen-poor-sensitivity-still-specific and the Cryptococcus-CrAg-lateral-flow-revolution and the Legionella-UAT-for-serogroup-1-lessons and the Strep-A-carrier-versus-disease-problem and rotavirus and norovirus panel positivity with incidental detection in adults; the multiplex-PCR-panels with their syndrome-based-testing power AND their colonisation-not-infection-increased-detection-problem (the respiratory-panel-management-studies showing faster diagnosis without proven outcome benefit and the C.diff-PCR-over-diagnosis example and the BCVA-and-mNGS-panels-for-CSF) and the resistance-molecular-diagnostics (the Xpert-MTB-RIF-and-GeneXpert-variants and the mecA-and-PBP2a-testing and the carbapenemase-gene-assays and the EBV-and-CMV-and-BK-viral-load-standardisation-IS-units-nuance) and the turnaround-and-interpretation responsibility that panels transfer to the ordering clinician - [[respiratory/respiratory-infections]], [[gastrointestinal/bowel-disease]], [[infectious-diseases/tuberculosis]]); and the sequencing era (MALDI-TOF-for-organism-identification-with-its-database-gaps and the 16S-pan-bacterial-and-mNGS-for-culture-negative-disease-with-its-detection-limit-artefacts (the kitome and the reagent-contaminome) and the whole-genome-sequencing-for-outbreaks-and-resistance-prediction (the SNP-threshold-cluster-definitions and the plasmid-tracking and the TB and gonorrhoea and Mycoplasma resistance-prediction reports and the metagenomic-sepsis-panels-commercial-reality) - the transition from growing the organism to reading its genes and the bioinformatics-and-clinical-liaison-services-it-demands) - [[genetics/genomic-medicine]], [[microbiology/infection-control]] for the outbreak applications.**
-:::
+The request form is part of the specimen. The laboratory processes each sample according to what is written on it. If "recent travel to Pakistan" is not mentioned, a stool sample will not be examined for the organisms that the travel history suggests, and a laboratory will not handle a sample safely if a dangerous pathogen is not suspected.
 
-::: definition Serology and susceptibility reports {#def-serology}
-**Serological reasoning (the IgM-versus-IgG-versus-rise-in-titre geometry - primary-versus-past-versus-reactivated-versus-cross-reactive-and-the-window-and-early-treatment-blunting-antibody-responses and the timing traps (the EBV-VCA-IgM-and-False-positive-with-RF-and-heterophile-tests-in-under-fives and the HIV-window-period-assay-generations-and-the-RNA-test-role and the the biological-false-positive-list and the prozone-in-secondary-syphilis and the high-dose hook effect and the dengue-NS1-versus-IgM-versus-cross-flavivirus-serology-and-the-vaccinated-populations-complication and the leptospirosis-MAT-titres-and-timing and the Strongyloides-serology-cross-reactivity-and-persistence after treatment); the serology that works (the measles-and-rubella-and-varicella-immunity-checks with their qualitative-assay-imprecision-caveats and the HBsAg-and-anti-HBc-and-anti-HBs-decision-tree - covered with vaccination in [[immunology/vaccines-immunotherapy]] and the HCV-antibody-versus-RNA-testing-in-the-cure-and-reinfection-era and the CMV-IgG-avidity-for-primary-infection-dating in pregnancy - [[obstetrics-gynaecology/pregnancy-antenatal]]); and the susceptibility report as a treatment prescription (the S-I-R categories-with-the-current-epidemiological-cutoffs-explained-and-the-MIC-not-being-a-battle-plan and the intrinsic-resistance-knowledge-list (the enterococcus-cephalosporin and the Proteus-nitrofurantoin and the Pseudomonas-oral-options and the anaerobe-aminoglycoside truths) and the ESBL-and-AmpC-reporting-philosophies (the breakpoint-change-versus-selective-reporting-debates) and the D-test-and-inducible-resistance and the vancomycin-MIC-creep-and-hVISA-detection reality the stewardship-comment-embedded reporting (the IV-to-oral-switch flags and the urinary-concentration-versus-systemic-susceptibility distinction for nitrofurantoin-and-pivmecillinam and the E-test-and-disk-diffusion-and-broth-microbiology quality-assurance - [[microbiology/antimicrobials]], [[clinical-skills/patient-safety]].**
-:::
+### Blood cultures {#blood-cultures}
 
-::: example The blood culture that grew "a contaminant" {#ex-contaminant}
-A 60-year-old with a prosthetic hip has six weeks of fever and pain; two of two blood cultures grow Cutibacterium acnes at day 5; the on-call says contamination; the GP says the hip has been "a bit warm".
+**Blood cultures** are the most important microbiology test in sepsis. The blood is inoculated into bottles of broth, usually one aerobic and one anaerobic bottle forming a **set**. The bottles are incubated in an automated system that detects bacterial growth and flags the bottle as positive.
+
+Bacteraemia is often low-grade, with fewer than one organism per mL of blood in adults, so **volume** is the main determinant of sensitivity. UK standards recommend about 8–10 mL per bottle in adults, and at least two sets taken by separate venepunctures for suspected bacteraemia or endocarditis. Most clinically significant bacteria grow within 48 hours, and bottles are usually incubated for five days before being reported negative.
+
+Skin organisms can enter a bottle during collection. Careful skin antisepsis, disinfecting the bottle tops and avoiding sampling through existing lines unless line infection is suspected all reduce contamination. When a bottle does flag, the number of sets that grow the same organism helps separate contamination from true infection.
+
+::: example One positive bottle out of four {#ex-contaminant}
+A 47-year-old woman with pyelonephritis has two sets of blood cultures taken before antibiotics. After 40 hours, one aerobic bottle out of four flags positive and grows a coagulase-negative staphylococcus. She has no intravascular devices and is improving on treatment for *E. coli*, which was grown from her urine. Is this organism significant?
 ::: solution
-**Contamination-versus-prosthetic-joint-infection medicine ([[#def-specimen]], [[#def-methods]], [[musculoskeletal/inflammatory-arthritis]]): the organism logic - Cutibacterium acnes as a skin commensal AND a recognised prosthetic-device pathogen (the late low-grade shoulder-and-hip PJI profile: pain-stiffness-minimal-systemic-signs-normal-or-mild-CRP) and the day-5-positivity-fitting-a-slow-organism-not-a-rush-artefact and the two-of-two-positives-with-different-morphologies argument and the same-organism-from-deep-samples-being-decisive; the workup - the aspirate-of-the-hip-with-alpha-defensin-and-lactate-and-cell-count-and-culture-held-for-prolonged-incubation-and-sonication-of-explanted-components-if-revised and the MRI-with-metal-artefact-reduction-or-CT-and-nuclear-medicine-WBC-scan-typing and the pre-antibiotic-hold-window-for-cultures where safe and the multidisciplinary PJI MDT with orthopaedics-microbiology-rheumatology-and-infectious-diseases - [[surgery/orthopaedics]]; the treatment plan if confirmed - the debridement-retention-versus-one-versus-two-stage-exchange-with-organism-and-soft-tissue-and-implant-exchangeability-logic and the prolonged directed antibiotics with the oral step-down trial-evidence era and the penicillin-versus-alternatives-for-C-acnes and the biofilm-rifampicin-question for retained prostheses discussed honestly; and the meta-lesson - the never-dismiss-a-result-without-the-clinical-context (the "contaminant" label applied by protocol without a ward look preventing two prosthetic exchanges worth of diagnosis) and the blood-culture-interpretation-SOP with joint-review-when-organisms-are-device-relevant and the lab-clinician-phone-culture-worth-protecting - [[clinical-skills/clinical-reasoning]], [[clinical-skills/communication]].**
+Probably not. Several features point to **contamination**:
+
+- the organism is a common skin commensal;
+- it grew in only one of four bottles, from one of two venepunctures;
+- it took relatively long to grow;
+- she has no prosthetic material or line, where coagulase-negative staphylococci cause real infection;
+- there is another explanation for her illness, which is responding to treatment.
+
+Treating it would expose her to unnecessary antibiotics such as vancomycin. The same organism in several sets, in a patient with a central line or prosthetic heart valve, would be interpreted differently. Contaminated cultures are common enough that many hospitals audit their contamination rate as a measure of collection technique.
 :::
 :::
 
-::: example The meningitis CSF with no organisms {#ex-csf-negative}
-A 30-year-old has fever, headache and neck stiffness; CSF shows 400 neutrophils, protein 1.5, low glucose; Gram stain negative after 30 hours of symptoms; blood culture grows Streptococcus pneumoniae; the team argues about continuing aciclovir and about Listeria coverage.
+## Microscopy and culture {#methods}
+
+::: definition The core laboratory methods {#def-methods}
+**Microscopy** gives a rapid, low-cost first look:
+
+- the **Gram stain** shows Gram-positive and Gram-negative bacteria and their shapes, and also shows inflammatory cells, which indicate whether the specimen is from a site of infection;
+- **acid-fast stains** (Ziehl–Neelsen, or the more sensitive fluorescent **auramine** stain) show mycobacteria;
+- **fungal stains** and wet preparations show yeasts, hyphae, protozoa and helminth eggs.
+
+**Culture** grows organisms on solid media (agar plates) or in liquid broth. Media can be **enriched** to support fastidious organisms, such as chocolate agar for *Haemophilus* and *Neisseria*, or **selective** to suppress unwanted flora, such as MacConkey agar, which allows mainly Gram-negative rods to grow. Plates are incubated in air, in carbon dioxide or without oxygen, depending on the organisms expected.
+
+**Identification** of colonies is now usually by **MALDI-TOF mass spectrometry**, which compares a colony's protein pattern with a reference library and identifies most bacteria and yeasts within minutes. Biochemical tests remain useful for some organisms.
+:::
+
+Culture has two great strengths: it proves that a viable organism is present, and it provides the isolate needed for susceptibility testing and typing. Its weaknesses are time and sensitivity. Most bacteria need overnight incubation, mycobacteria need weeks, and organisms already damaged by antibiotics may not grow at all. Some organisms, such as *Treponema pallidum*, cannot be cultured routinely.
+
+## Susceptibility testing {#susceptibility}
+
+::: definition MIC and breakpoints {#def-mic}
+The **minimum inhibitory concentration** (MIC) is the lowest concentration of an antimicrobial that prevents visible growth of an organism in standard laboratory conditions. It is measured in a series of **doubling dilutions**, for example 0.25, 0.5, 1, 2 and 4 mg/L.
+
+A **clinical breakpoint** is an MIC (or the equivalent zone diameter in disc diffusion) used to classify an organism. Under the European (EUCAST) system, used in the UK, the categories are:
+
+- **S, susceptible, standard dosing regimen**: a high likelihood of success at a standard dose;
+- **I, susceptible, increased exposure**: likely to respond if exposure at the site is increased, by a higher dose or because the drug concentrates there;
+- **R, resistant**: a high likelihood of failure even with increased exposure.
+:::
+
+The MIC is measured by dilution in broth or agar, or estimated by **disc diffusion**: a paper disc containing the drug is placed on a plate seeded with the organism, the drug diffuses outwards, and the diameter of the zone without growth is compared with breakpoints. Automated systems and gradient strips are also used.
+
+Breakpoints combine several kinds of data: the MIC distribution of wild-type organisms without resistance mechanisms, the concentrations the drug reaches in patients at standard and high doses, and clinical outcome data. EUCAST updates them every year. Because they depend on the drug's pharmacology, MIC values cannot be compared directly between different drugs: an MIC of 1 mg/L may be very low for one antibiotic and too high for another.
+
+Rapid tests now detect some resistance mechanisms directly, without waiting for a full MIC. PCR for the *mecA* gene identifies MRSA, and lateral-flow tests detect common carbapenemases within minutes. These are described in [[microbiology/antimicrobials]].
+
+::: warning "I" does not mean "intermediate, avoid"
+Before 2019, many reports used "I" to mean intermediate: a grey zone in which the drug was best avoided. EUCAST redefined it as **susceptible, increased exposure**. An organism reported as "I" to a drug is treatable with that drug if a higher dose is used, or if the drug concentrates at the site of infection, as many do in urine. Reading "I" as "resistant" leads to the unnecessary use of broader-spectrum drugs. Check the dosing advice that accompanies the report and discuss it with the microbiology team if unsure.
+:::
+
+::: example Reading an MIC report {#ex-mic}
+A *Pseudomonas aeruginosa* from a ventilated patient's bronchial aspirate is reported with a piperacillin–tazobactam MIC of 8 mg/L and a category of "I". The breakpoints in the current tables are S ≤ 0.001 mg/L and R > 16 mg/L. What does this mean?
 ::: solution
-**CSF-interpretation-under-partial-information ([[#def-specimen]], [[#def-methods]], [[nervous-system/neuroinflammation]]): the physiology read - the low-glucose-neutrophilic-CSF-is-bacterial-until-proven-elsewhere-and-Gram-stain-sensitivity-is-only-50-90% (lower-with-early-or-low-burden-disease) and the CSF-culture-positivity-lagging-blood-in-pneumococcal-meningitis and the pneumococcal-antigen-and-PCR-adjuncts on CSF and urine and the multiplex-meningitis-panel-positives-and-negatives-with-its-prior-antibiotic-effects; the therapeutic decisions - continue-benzylpenicillin-plus-ceftriaxone-according-to-susceptibility-once-known-and-add-listeria-cover (the ampicillin-for-age-or-alcoholism-or-pregnancy-or-immunosuppression-or-cell-mediated-deficit rules and the negative-Gram-stain-boosting-Listeria's-relative-share) and the aciclovir question - the HSV-lymphocytic-profile-typical-versus-neutrophilic-early-exception (the first-24-hour-neutrophils-in-HSV-CSF reality) and the continue-aciclovir-until-HSV-PCR-negative-in-any-encephalic-picture rule and the dexamethasone-for-pneumococcal-benefit-window-and-the-do-not-withhold-for-partially-treated-disease and the Listeria-dexamethasone-not-given-nuance and the repeat-LP-for-non-responders with the ventriculitis-and-empyema-and-hydrocephalus-imaging timing - [[emergency-critical-care/acute-assessment]]; the surveillance and prevention tail - the pneumococcal-serotype-and-vaccine-history-review and the HIV-test-offered-and-immunoglobulin-if-recurrent and the close-contact-prophylaxis-questions-answered-for-meningococcus-not-pneumococcus-honestly (the household-chemoprophylaxis-not-routine-for-pneumococcus-except-special-cases) and the chest-and-sinus-and-ear-source-hunt for pneumococcal-meningitis-without-obvious-predisposition; and the record - the final-diagnosis-letter (the Streptococcus pneumoniae meningitis, PCR-culture-evidence) so the next clinician does not restart a viral-meningitis story - [[clinical-skills/records-handover]], [[public-health/vaccination-programmes]].**
+For *P. aeruginosa*, EUCAST sets the S breakpoint for some drugs at an artificially low value, so that wild-type isolates are never reported as S at a standard dose. This is a signal that the **high-dose regimen should always be used** against this organism.
+
+An MIC of 8 mg/L is above the S breakpoint and not above the R breakpoint of 16 mg/L, so the isolate is **I: susceptible, increased exposure**. Piperacillin–tazobactam is a reasonable choice if given at the high-dose regimen listed in the breakpoint tables, often by extended infusion, as decided with the microbiology and pharmacy teams. The report does not mean the organism is resistant. The breakpoints quoted here are for illustration; always check the current EUCAST tables and the local report.
 :::
 :::
 
-::: example The stool panel that overcalled {#ex-cdiff-overcall}
-An incontinent 84-year-old on laxatives has three loose stools; the ward sends stool for C. difficile; the PCR is positive and the lab protocol adds toxin EIA negative. The team starts oral vancomycin and isolates the patient.
+## Antigen and molecular tests {#molecular}
+
+**Antigen tests** detect a component of the organism, usually with antibodies. Examples are the urinary antigen tests for *Streptococcus pneumoniae* and *Legionella pneumophila* serogroup 1, cryptococcal antigen in blood or cerebrospinal fluid, malaria antigen tests, and lateral-flow tests for respiratory viruses. They are fast and often usable at the bedside. Their sensitivity is generally lower than that of nucleic acid tests, and some detect only part of a species: a negative *Legionella* urinary antigen does not exclude infection with other serogroups.
+
+**Nucleic acid amplification tests** (NAATs), of which the **polymerase chain reaction** (PCR) is the most common, copy a short target sequence of DNA or RNA many millions of times. They are extremely sensitive and specific, detect organisms that cannot be cultured or have been damaged by antibiotics, and give results within hours. Multiplex panels test for many respiratory, gut or central nervous system pathogens at once.
+
+In **real-time PCR**, the amount of product is measured during each cycle. The **cycle threshold** (Ct) is the cycle at which the signal crosses a set level. A sample with more target crosses earlier, so a **lower Ct means more target**. If each cycle doubles the product, a tenfold difference in the starting amount corresponds to about $\log_2 10 \approx 3.3$ cycles.
+
+$$
+\text{fold difference} = 2^{\Delta \text{Ct}}
+$$ {#eq-ct}
+
+Molecular tests have limits too. They detect nucleic acid, not viable organisms, so they can stay positive for weeks after an infection has resolved. They detect only the targets they are designed for. Ct values differ between platforms and are not standardised, so they should be compared only within the same assay.
+
+**Sequencing** extends molecular diagnosis. PCR and sequencing of the 16S rRNA gene can identify bacteria in culture-negative samples from normally sterile sites, such as a heart valve removed after antibiotics. **Whole-genome sequencing** is used to predict drug resistance in *Mycobacterium tuberculosis* and to compare isolates in outbreak investigations, where a handful of single-nucleotide differences between genomes suggests recent transmission.
+
+::: example What does a change in Ct mean? {#ex-ct}
+A 63-year-old man with influenza in an intensive care unit has a nasopharyngeal PCR with a Ct of 22 on admission. Five days later, on the same assay, the Ct is 27. By roughly how much has the amount of viral RNA in the sample fallen?
 ::: solution
-**Colonisation-versus-disease-and-the-two-step-defense ([[#def-serology]], [[#def-methods]], [[gastrointestinal/bowel-disease]]): the interpretation - PCR-positive toxin-negative means the gene is present without detectable toxin production (the prognostic literature showing milder-or-no disease versus toxin-positive and the community-C.diff-over-diagnosis-by-PCR-epidemiology) and the laxate-with-laxatives-definition-failure (the loose-stool-Bristol-and-medication-review-and-stop-laxatives-then-reassess sequence) and the clinical-barrier-in-the-algorithm (the reject-liquid-stools-from-laxative-patients-form-and-the-culture-on-demand-policy) - [[microbiology/laboratory-diagnosis]]; the ward decisions - the no-treatment-for-carriage-and-the-isolation-question-in-a-nursing-home-resident (the transmission-control-versus-dignity-and-ward-space trade answered by local-policy-and-infection-team-discussion) and the avoiding-the-CDI-label-in-the-record-when-it-is-carriage (the label that follows her to every future admission and triggers every future reflex test) and the future-diarrhoea-differential list saved from the reflex (the meds-and-impaction-with-spill-and-infection-and-enteric-feeds-and-Celiac-and-microscopic-colitis); the process repair - the laboratory-clinician-algorithm-agreement (the GDH-then-toxin-versus-PCR-then-toxin-versus-GDH-plus-PCR-with-toxin-arbitration and the outcome-audit-on-both) and the anti-motility-and-laxative-reconciliation-at-admission and the clinicians-ask-the-lab-before-ordering culture worth protecting; and the education - the CDI-definitions-taught-with-numbers (the incidence-in-hospital-versus-community-and-the-attribution-of-nursing-home-cases) and the stewardship-of-diagnosis itself - over-testing IS an antimicrobial-ecology problem via the treatments it triggers - [[infectious-diseases/stewardship-outbreaks]], [[geriatrics-palliative/polypharmacy]], [[clinical-skills/records-handover]].**
+The Ct has risen by 5 cycles. Assuming each cycle doubles the product,
+
+$$
+2^{5} = 32
+$$
+
+The amount of viral RNA in the sample has fallen about **32-fold**, a little more than tenfold per 3.3 cycles.
+
+Interpret this with care. A swab samples an uncertain amount of material, so Ct values vary with sampling technique. A later Ct also says nothing about whether the remaining RNA comes from infectious virus. Trends on the same assay are more useful than single values.
 :::
 :::
 
-::: example The fever and the returning serology {#ex-serology-timing}
-A 26-year-old has fever, sore throat and adenopathy at day 5 of illness; Monospot negative and EBV VCA-IgG positive, VCA-IgM negative, EBNA negative at day 7. Her housemate had confirmed EBV three weeks ago. Reassure or investigate?
+## Serology {#serology}
+
+::: definition Serology {#def-serology}
+**Serology** detects the host's antibody response to an organism, and sometimes the organism's antigens in blood. It is used when the organism is hard to culture or sample, to diagnose past infection, and to assess immunity.
+
+- **IgM** appears first, within one to two weeks of a primary infection, and usually falls over weeks to months. A positive IgM suggests recent infection but can persist, reappear on reactivation, or give false positives through cross-reaction.
+- **IgG** rises more slowly and often persists for life. A single positive IgG shows past infection or vaccination.
+- **Seroconversion**, a change from negative to positive, or a **fourfold or greater rise** in antibody titre between an acute sample and a convalescent sample taken 10–14 days later, indicates recent infection.
+- **IgG avidity** measures how tightly antibodies bind. Avidity increases over months after infection, so low avidity suggests recent infection. It is used, for example, to date toxoplasma or cytomegalovirus infection in pregnancy.
+- The **window period** is the time after infection during which a test is still negative.
+:::
+
+The window period shapes how tests are offered. Fourth-generation HIV tests detect both antibody and the p24 antigen of the virus. Most infections are detected by four weeks after exposure, and UK guidelines (BHIVA, BASHH and BIA, 2020) state that a negative fourth-generation test 45 days after the last exposure reliably excludes infection. A person tested sooner is advised to repeat the test.
+
+Hepatitis B serology shows how a panel of markers fits together.
+
+| HBsAg | anti-HBc (total) | IgM anti-HBc | anti-HBs | Interpretation |
+|---|---|---|---|---|
+| − | − | − | − | never infected, not immune |
+| − | − | − | + | immune through vaccination |
+| − | + | − | + | past infection, resolved, immune |
+| + | + | + | − | acute infection |
+| + | + | − | − | chronic infection (HBsAg present for more than six months) |
+
+**HBsAg**, the surface antigen, shows current infection. **Anti-HBc**, antibody to the core protein, shows that infection has happened at some time, because the vaccine contains only surface antigen. **Anti-HBs**, antibody to the surface antigen, shows immunity. Viral DNA load and HBeAg are used to assess activity in chronic infection.
+
+::: example A hepatitis B result {#ex-hbv}
+A 38-year-old woman who moved to the UK from Vietnam is screened in pregnancy. Her results are HBsAg positive, total anti-HBc positive, IgM anti-HBc negative and anti-HBs negative. She was told she had "hepatitis B" at a blood donation ten years ago. Interpret the results and their importance for her baby.
 ::: solution
-**Serological-window-reading ([[#def-serology]], [[#def-methods]], [[infectious-diseases/hiv]]): the pattern - VCA-IgG-without-IgM-and-EBNA-negative is either the very-early-seroconversion-IgG (IgG appears before IgM detectability can lag? the sequence: VCA-IgM first, then IgG persists, EBNA appears at 3-6 months so EBNA-negative means infection within months) versus the false-positive-or-past-with-waning-EBNA-interpretation and the Monospot-sensitivity-of-25-50%-in-the-first-week-and-40-60%-overall-in-older-adolescents-adults problem (heterophile-negative-EBV exists and non-heterophile-EBV has a differential) and the repeat-or-PCR decision (the EBV-DNA-in-blood for primary-infection-early and the atypical-lymphocyte-film-and-LFTs-adjuncts); the exposure-informed action - the housemate-raises-prior-probability and the day-14-repair: repeat-serology-showing-rise-in-titre-or-EBNA-seroconversion-and-the-EBV-PCR-now-if-severe and the don't-diagnose-on-a-single-early-panel rule written gently; the differential that must not be missed - acute-HIV-testing-offered (the mono-like-seroconversion-illness and the 4th-generation-plus-RNA-in-window-protocol and the sexual-health-approach-with-confidentiality-assurance) - [[medical-ethics-law/confidentiality]], and the CMV-and-toxo-and-HHV-6-and-strep-and-lymphoma-and-leukemia red-flags-audio (the persistence-and-B-symptoms-and-splenomegaly-and-film-abnormalities triggering the next-tier-workup) - [[blood/leukaemia]]; and the follow-through - the splenomegaly-and-contact-sport-advice-timing (the three-week-and-symptom-based practice-variation and how to say it without scaring) and the contact-tracing-not-needed explanation and the reassurance-that-fatigue-will-outlast-the-virus-titres with the relapse-plan and the "test-again-if-atypical" criteria documented - [[clinical-skills/communication]].**
+HBsAg positive means **current infection**. A positive total anti-HBc with negative IgM anti-HBc, together with a history ten years ago, means the infection is **chronic** rather than acute. Anti-HBs is negative, as expected, because she has not cleared the virus.
+
+The main implication is for her baby. Without intervention, transmission from mother to infant at birth is common, and infection in infancy usually becomes chronic. Her baby should receive hepatitis B vaccine shortly after birth, with hepatitis B immunoglobulin if her infectivity markers are high, and complete the vaccine course, following the UK Green Book. Her own care involves referral to a hepatitis specialist, measurement of HBV DNA and HBeAg, and assessment of liver disease; antiviral treatment in late pregnancy may be offered if her viral load is high. Household and sexual contacts should be tested and vaccinated.
 :::
 :::
+
+## Interpreting a result {#interpretation}
+
+A test result changes the probability that a person has a disease; it does not give a certainty. How much it changes depends on the test and on how likely the disease was before the test.
+
+::: theorem Predictive values depend on prevalence {#thm-ppv}
+For a test with **sensitivity** $\text{Se}$ (the proportion of people with the disease who test positive) and **specificity** $\text{Sp}$ (the proportion without it who test negative), applied where the pre-test probability is $p$:
+
+$$
+\text{PPV} = \frac{\text{Se}\cdot p}{\text{Se}\cdot p + (1-\text{Sp})(1-p)}
+\qquad
+\text{NPV} = \frac{\text{Sp}\,(1-p)}{\text{Sp}\,(1-p) + (1-\text{Se})\,p}
+$$ {#eq-ppv}
+
+The **positive predictive value** (PPV) falls as the pre-test probability falls, and the **negative predictive value** (NPV) falls as it rises.
+:::
+
+::: proof
+Imagine testing 10,000 people. With pre-test probability $p$, $10{,}000p$ have the disease and $\text{Se}$ of them test positive: these are the true positives. The other $10{,}000(1-p)$ do not, and $1-\text{Sp}$ of them also test positive: the false positives. The PPV is the true positives divided by all positives, which gives the formula after cancelling 10,000.
+
+When $p$ is small, even a small false-positive rate applied to the large group without disease produces more false positives than there are true positives. The test has not changed, but the population has. This is Bayes' theorem in the form used at the bedside.
+:::
+
+::: widget bayes
+mode: test
+prevalence: 0.01
+sensitivity: 0.95
+specificity: 0.98
+caption: A test with 95% sensitivity and 98% specificity, shown as natural frequencies. At a pre-test probability of 1%, about two-thirds of positive results are false. Move the prevalence to 30%, as when the same test is used in people with typical symptoms, and almost all positives become true. This is why tests should be requested for a clinical reason, not as a screen of everyone.
+:::
+
+::: example The same test in two settings {#ex-ppv}
+A rapid antigen test has a sensitivity of 95% and a specificity of 98%. Calculate its positive predictive value (a) in a clinic where 30% of people tested have the infection and (b) in a screening programme where 1% do.
+::: solution
+(a) With $p = 0.30$:
+
+$$
+\text{PPV} = \frac{0.95 \times 0.30}{0.95 \times 0.30 + 0.02 \times 0.70} = \frac{0.285}{0.299} \approx 0.95
+$$
+
+(b) With $p = 0.01$:
+
+$$
+\text{PPV} = \frac{0.95 \times 0.01}{0.95 \times 0.01 + 0.02 \times 0.99} = \frac{0.0095}{0.0293} \approx 0.32
+$$
+
+In the clinic, 95% of positive results are true. In screening, only about a third are; two out of three positive people do not have the infection. Positive screening results are therefore confirmed with a second, different test before a diagnosis is made.
+:::
+:::
+
+Other features of a result matter too. A positive result from a normally **sterile site**, such as blood, cerebrospinal fluid or joint fluid, carries more weight than one from a site with normal flora. **Quantity** matters for some specimens, such as urine. And no test result should be acted on without asking whether it fits the clinical picture.
 
 ::: quiz
-A urine culture showing 10^4 CFU/mL of E. coli in a catheterised patient with no symptoms should be reported and treated as:
-- [x] Asymptomatic bacteriuria - no treatment except in pregnancy and pre-urological procedure
-- [ ] UTI requiring antibiotics
-- [ ] Contamination requiring reculture
-- [ ] Indication to change the catheter and treat
+A rapid test for a respiratory infection is used in two groups: people admitted with typical symptoms during an outbreak, and well people screened before routine surgery. The test's sensitivity and specificity are the same in both groups. Which statement is correct?
+- [ ] The positive predictive value is the same in both groups
+- [x] The positive predictive value is higher in the symptomatic group
+- [ ] The negative predictive value is higher in the symptomatic group
+- [ ] The specificity is lower in the screened group
 ::: solution
-**Catheter-associated asymptomatic bacteriuria is near-universal with long-term devices; treating it causes resistance and C. difficile without preventing symptomatic UTI. Exceptions: pregnancy and mucosa-breaching urological procedures ([[#def-specimen]], [[renal/urinary-tract]], [[infectious-diseases/stewardship-outbreaks]]).**
+Sensitivity and specificity are properties of the test, but predictive values depend on the pre-test probability. In symptomatic people during an outbreak the probability is high, so the **PPV is higher**. In well people it is low, so more positives are false, while the NPV is higher.
 :::
 :::
 
-::: widget plot
-f: 30*(1-exp(-0.02*x)); 60*(1-exp(-0.02*x)); 88*(1-exp(-0.02*x))
-x: 1, 60
-y: 0, 100
-labels: \text{mL of blood cultured per set},\ \%\text{sensitivity};\ 1\ \text{set};\ 2\ \text{sets};\ 3\ \text{sets}
-caption: Blood-culture yield is a volume problem ([[#def-specimen]]): sensitivity rises with millilitres cultured, not with number of bottles of the same total volume - the basis for the 10 mL per bottle adult standard and for collecting two sets before antibiotics when endocarditis or bacteraemia is suspected ([[clinical-skills/laboratory-tests]], [[microbiology/bacteria]]).
+::: history
+In the 1880s Robert Koch's laboratory introduced solid media, pure culture and staining as the standard tools of bacteriology, and Hans Christian Gram's stain of 1884 is still the first test on most positive cultures. Serology began in 1896 with the Widal agglutination test for typhoid, and in 1906 August von Wassermann introduced a complement-fixation test for syphilis.
+
+Laboratory susceptibility testing developed with the antibiotics themselves. In 1966 Alfred Bauer, William Kirby and colleagues standardised disc diffusion. In 1983 Kary Mullis devised the polymerase chain reaction, which made it possible to detect organisms without growing them; he shared the 1993 Nobel Prize in Chemistry. MALDI-TOF mass spectrometry entered routine clinical laboratories around 2010 and changed identification from a matter of days to minutes. Sequencing of whole bacterial genomes followed, and is now part of routine diagnosis of tuberculosis in England.
 :::
 
 ## Where this leads
 
-How results change management is rehearsed in [[infectious-diseases/fever-sepsis]] and [[infectious-diseases/immunocompromised-host]]; susceptibility mechanisms live in [[microbiology/antimicrobials]]; outbreak sequencing applications in [[microbiology/infection-control]]; immunology of serology in [[immunology/antigen-recognition]].
-
-::: history
-**Laboratory microbiology is the history of asking "where did you put the needle": the Koch-era solid-media revolution (the Loeffler serum slopes and the Petri plate, via Fanny Hesse's agar kitchen and the Koch Institute workshops) and the Gram-stain-1884 and the Ziehl-Neelsen-1882 and the India-ink-CSF-era (the Goodner-1912 cryptococcus-ink-diagnosis) - [[microbiology/bacteria]]; the agar-that-think era - the MacConkey-and-Mannitol-and-Blood-Agar-and-Levine-and-Endo-and-Strong-Selective-Media-race-of-the-1900s-30s (the MacConkey-1905-lactose-fermentation-epidemiology-tool and the typhoid and dysentery stool-media arms race) and the Lowenstein-Jensen-1890s-1900s-TB-media-century and the buffered charcoal yeast extract and cysteine media of 1977 that let McDade's re-analysis of the American Legion convention outbreak name Legionella - [[respiratory/respiratory-infections]]; the antibody-detection revolution - the Widal 1896 typhoid agglutination test and its century of interpretation arguments and the Kahn-and-VDRL-and-Reiter-non-treponemal-tests-of-the-1910s-20s-with-their-autoimmune-lesson and the Coons fluorescent-antibody technique of 1941 and the Yalow-and-Berson radioimmunoassay era that made antigens and antibodies quantifiable, with the heterophile-absorption work that tamed false positives - [[immunology/antigen-recognition]]; the PCR-turn - the Mullis-1983-and-PCR-diagnostic-adoption-1990s and the HIV-RNA-window-closing-generations (the antibody-antigen-combo-assays and the NAT-of-blood-donations-1995) and the Xpert-MTB-RIF-GX-era-moving-TB-diagnosis-from-weeks-to-two-hours-and-the-who-recommendation-policy-shift and the respiratory-panel-trials-and-appropriate-use-debates and the CSF-mNGS-for-culture-negative-encephalitis-case-series (the hepatitis-E-and-leptospira-and-amoeba-rescues) and the liquid-biopsy-of-infections-vision; and the identification-and-resistance-future - the MALDI-TOF era of the 2000s and 2010s that halved time to identification and the WGS-routine (the TB-transmission-clusters-and-the-Listeria-outbreak-detections-and-the-gonorrhoea-AMR-surveillance) and the rapid-blood-culture-identification-from-positive-bottles (the PNA-FISH-and-SepiTyper-and-Verigene-lineage) and the interpretation-responsibility-question-that-technology-cannot-answer: a result the clinician cannot use is not a diagnosis - [[microbiology/antimicrobials]], [[clinical-skills/patient-safety]].**
-:::
+The organisms behind these tests are described in [[microbiology/bacteria]], [[microbiology/viruses]] and [[microbiology/fungi-parasites]]. How susceptibility results guide treatment is part of [[microbiology/antimicrobials]], and how sequencing helps trace outbreaks is in [[microbiology/infection-control]]. The general principles of diagnostic test evaluation are developed in [[epidemiology-ebm/diagnostic-tests]] and [[clinical-skills/laboratory-tests]].
 
 ::: summary
-- The specimen is the test: site, timing, volume, container and transport determine yield more than the instrument, and the request form should carry the clinical question.
-- Gram stain plus cell count is hour-one diagnosis; culture remains the sensitivity gold standard for many sites but takes days; molecular tests trade sensitivity for colonisation noise.
-- Serology is a clock exercise: which antibody, which week, which assay, and what cross-reactions and prior vaccination do to the interpretation.
-- Negative tests have properties: pre-treatment, low burden, wrong specimen and shed-and-clear timing explain most false negatives before rare organisms do.
-- Read susceptibility reports as prescriptions - intrinsic resistance, urinary concentration, inducible genes and reporting philosophy all change what an S means.
-- Multiplex and sequencing results are diagnoses only in clinical context; the department's job is interpretation partnership, the clinician's is asking for the right thing.
-:::
-
-::: exercise Choose the mycobacterial tests {level=1}
-A homeless man with chronic cough and cavitation: list the tests, the order, what each answers and the infection-control clock.
-::: solution
-**Pulmonary-TB-diagnosis-workflow ([[#def-methods]], [[infectious-diseases/tuberculosis]], [[public-health/communicable-disease-control]]): the first-hour set - the CXR-and-three-sputum-or-two-for-acid-fast-bacilli-smear-and-NAAT-on-at-least-one (the same-day-molecular-positivity-enabling-same-day-isolation-and-notification) and the HIV-and-diabetes-testing-offer and the oxygen-and-severity-assessment; the confirmation layer - the liquid-and-solid-culture-for-drug-susceptibility-testing-and-the-Xpert-Ultra-RIF-plus-INH-prediction-with-the-culture-still-needed-for-full-DST-and-the-line-probe-assays-for-RIF-and-INH-resistance (the next-generation rapid panels and the bedaquiline and linezolid susceptibility emerging methods) and the time-to-positivity-and-contamination-rate-management; the latent-question - the IGRA-versus-TST-interpretation (the BCG-and-boosting-effects and the anergy-in-HIV) and the contact-screening-and-CT-contact-tracing-machine (the genotyping-to-link-clusters) and the note that LTBI testing neither proves nor excludes active disease (the cough-and-cavitation-needs-sputum-not-blood) - [[respiratory/respiratory-infections]], [[infectious-diseases/hiv]]; and the operating rules - airborne-precautions-from-suspicion-not-confirmation and the N95-fit-testing-culture and the notification-what-hours-actually-mean (the legal-duty and the TB-team-handover-before-the-patient-leaves-the-department and the adherence-and-support-plan with food-and-housing-and-travel-work-rights-questions addressed before eight months of therapy starts) - [[public-health/determinants-inequalities]], [[clinical-skills/patient-safety]].**
-:::
-:::
-
-::: exercise Judge a negative test {level=1}
-Give the false-negative explanations for: blood film for malaria, CSF Gram stain, HCV RNA in a window, stool O&P for Giardia, IGRA in immunosuppression.
-::: solution
-**Negative-test-epidemiology ([[#def-specimen]], [[#def-serology]], [[clinical-skills/laboratory-tests]]): malaria - early-low-density parasitaemia and prior antimalarials and sequestration (placenta and brain) - repeat-films-twelve-hourly-for-48-72-hours-and-the-PCR-for-low-density and the do-not-stop-for-one-negative-in-a-febrile-returner rule - [[infectious-diseases/tropical-infections]]; CSF Gram stain - organism burden below detection and prior antibiotics and volume and centrifugation technique and reader experience - the culture-and-antigen-and-PCR-rescue-layers - [[nervous-system/neuroinflammation]]; HCV - the antibody-negative-window-in-early-and-immunosuppressed (anti-HCV-negative-HCV-RNA-positive-dialysis-and-HIV-populations) hence RNA-testing when suspected - [[gastrointestinal/liver-disease]]; stool ova and parasites - intermittent shedding hence three samples and the cyst-trophozoite-freshness-rules and the microscopy-competency-dependence and the PCR-panels-fixing-sensitivity-while-creating-Blastocystis-incidentalisms - [[gastrointestinal/digestion-absorption]], [[microbiology/fungi-parasites]]; IGRA - immunosuppression (the T-cell-anergy-with-false-negative and the repeat-with-mitogen-control-interpretation) and the recent-infection-window and the lab-processing delays - [[infectious-diseases/tuberculosis]], [[immunology/immunodeficiency]]; and the transferable rule - a test's value is its sensitivity in THIS patient at THIS time in THIS specimen, and "negative" is a statistic, not a verdict - [[epidemiology-ebm/diagnostic-tests]], [[clinical-skills/clinical-reasoning]].**
-:::
-:::
-
-::: exercise Design the antimicrobial stewardship-diagnostics interface {level=2}
-Rapid diagnostics keep ordering themselves. Design governance for when a result changes therapy, including de-escalation and stop rules.
-::: solution
-**Diagnostics-as-a-prescription-system ([[#def-methods]], [[infectious-diseases/stewardship-outbreaks]], [[clinical-skills/patient-safety]]): the catalogue with action rules - the MRSA-nasal-PCR (negative-predictive-value-for-stopping-vancomycin-in-pneumonia-bacteraemia-syndromes and what it does NOT say about skin and wounds and lines) and the pneumococcal-and-legionella-urinary-antigens (actionable-narrowing-and-serotype-surveillance-value) and the respiratory panels (treat-the-patient-not-the-Rhinovirus and the bacterial-co-infection-rules kept and the antiviral-eligibility-links) and the C.diff-two-step (the laxative-gate and the no-test-of-cure) and the blood-culture-fast-ID-plus-resistance-assays (the Staph aureus from bottle: 60-minute species-and-MRSA answers meaning definitive therapy or de-escalation within the hour and the contamination-algorithm for CoNS in one of two sets) and the galactomannan-and-CrAg-and-TB-NAAT-rules - each with an embedded "so what" in the LIS comment; and the workflow binding - the positive-result-page-to-named-doctor-with-documented-action and the 48-hour-mandatory-review-forcing-functions and the antimicrobial-timeout with the antibiogram and the procalcitonin-boundaries (the adjunct-not-decider-in-immunocompromised-and-neutropaenic-populations with the trial-evidence-read-for-population-eligibility) and the ID-consult-triggers; and the measurement and equity - the time-to-effective-therapy-in-sepsis and time-to-de-escalation and days-of-unnecessary-broad-therapy and CDI and resistance trends and the panel-availability-versus-ward-hierarchies-audit (who gets the rapid test at 3 a.m. - the site-by-site variation is a safety variable) and the tests-not-ordered-for-everyone rule (the surveillance-screening-positives-and-label-harms) - [[public-health/determinants-inequalities]], [[microbiology/antimicrobials]].**
-:::
-:::
-
-::: exercise Set up a tropical infections telehealth line {level=3}
-Design a 24/7 specialist advice line for febrile returning travellers for a country without tropical medicine centres everywhere: staffing, diagnostics network, drug access and governance.
-::: solution
-**National-tropical-advice-infrastructure ([[#def-specimen]], [[infectious-diseases/tropical-infections]], [[public-health/health-systems-economics]]): the clinical spine - the structured-telephone-assessment (the exposure-grid-questionnaire-with-incubation-table-decision-support and the red-flag-and-severe-malaria-protocol: test-now-treat-if-severe-and-do-not-wait and the do-not-send-a-dying-patient-home-for-a-repeat-film rule) and the malaria-empirical-treatment-guidance (when-to-treat-on-clinical-suspension despite smears with the follow-up-testing-commitment and the IV-artesunate-availability-every-ED-with-staff-training) and the do-not-undertreat rules (the dengue-haemorrhagic-phase-hydration-clinics and the enteric-fever-resistance-patterns-by-region and the Japanese-encephalitis-supportive-care-and-notification); the diagnostics network - the reference-lab-STAT-confirmation-pathway (the thick-film-photographic-quality-assurance-network and the PCR-for-leptospirosis-and-rickettsia-and-HCP-agents with courier-and-freeze rules and the same-day-turnaround-SLAs with weekend cover) and the regional-capability-matrix (which labs can read a malaria film at 2 a.m., which run blood-parasite-PCR, which handle BSL-3 specimens legally) - [[microbiology/laboratory-diagnosis]]; medicines access - the quinine-and-artesunate-and-ivermectin-and-primaquine-with-G6PD-testing-and-availability-outside-hours (the emergency-import-routes-done-legal-and-stockheld) and the rabies-immunoglobulin-and-vaccine-distribution-logistics (the cold-chain-and-24-7-collection-points lesson from Australia-and-Thailand) and the anti-helminthials-availability (the praziquantel-sourcing-for-occasional-disease and the mass-administration-national-stock-adjacency) - [[pharmacology/drug-development-prescribing]]; and the governance - the call-audit-with-clinical-outcome-linkage (the malaria-deaths-in-travellers-reviews: who-did-not-get-tested-who-got-wrong-drugs-who-was-told-its-viral) and the equity of telehealth-use (who telephones - the tourist-insured-versus-migrant-community-who-present-late-and-the-multilingual-public-message-on-fever-and-travel) and the line's-bounds-when-to-refer-versus-advise and the annual-guideline-refresh-with-emerging-threats-integration - [[public-health/determinants-inequalities]], [[clinical-skills/communication]].**
-:::
+- Most errors happen before the laboratory: choose the right site, sample before antibiotics when safe, send adequate volume promptly, and write a clear request.
+- Blood culture sensitivity depends on volume; take at least two sets. A skin organism in one of several bottles is usually contamination.
+- Microscopy is fast; culture proves viability and provides an isolate for susceptibility testing; MALDI-TOF identifies colonies in minutes.
+- The MIC is the lowest concentration that inhibits growth. EUCAST breakpoints classify isolates as S, I (susceptible, increased exposure) or R; MICs cannot be compared directly between drugs.
+- Antigen tests are fast; NAATs are very sensitive but detect nucleic acid, not viability. In real-time PCR a lower Ct means more target, and a difference of about 3.3 cycles is tenfold.
+- Serology uses IgM, IgG, seroconversion, a fourfold rise and avidity; the window period limits early testing. Hepatitis B markers are read together.
+- Predictive values depend on pre-test probability: the same test gives many false positives when the condition is rare.
 :::
 
 ## Exercises
 
-::: exercise Order the right tests {level=1}
-Order and justify tests for: suspected infective endocarditis after dental work; suspected TB meningitis; suspected acute HIV; suspected amoebic liver abscess.
+::: exercise The best specimen {level=1}
+For each situation, name a better specimen than the one proposed: (a) a surface swab of a chronic leg ulcer to diagnose underlying osteomyelitis; (b) a sputum sample that is mostly saliva; (c) blood cultures taken through a peripheral cannula inserted two days ago.
+::: hint
+Aim for the site of infection and avoid sources of colonising flora.
+:::
 ::: solution
-**Syndrome-to-panel-medicine ([[#def-specimen]], [[#def-serology]], [[#def-methods]]): endocarditis - three sets of blood cultures from separate sites over time BEFORE antibiotics when stable (prolonged incubation and the Bartonella and Coxiella serologies and the Brucella travel history in the blood-culture-negative workup) plus the Duke-criteria-supporting-labs (CRP-and-ESR-and-rheumatoid-factor-and-haematuria) and the TEE-then-repeat-echo-timing - [[cardiovascular/valve-congenital-disease]]; TB-meningitis - the large-volume-CSF-for-ACI-FLM-PCR-Xpert-Ultra-and-mycobacterial-culture-liquid-and-solid and the adenosine-deaminase adjunct with its HIV and empyema caveats and the CSF-lymphocytic-low-glucose-high-protein-classic with its early-neutrophilic exception and the HIV-test and the chest imaging ; acute-HIV - the laboratory-based-screening-algorithm (the 4th-generation Ag-Ab then differentiation then RNA) and the do-not-use-antibody-only-while-symptomatic-window and the PEP-and-partner-implications - [[infectious-diseases/hiv]]; amoebic-abscess - the serology-with-cross-reactivity-caveats and the stool-PCR-for-E-histolytica (not microscopy-cysts) and the pyogenic-abscess-differential-labs and the imaging-pattern-reading - [[gastrointestinal/liver-disease]].**
+(a) A **bone biopsy**, taken surgically or under imaging, ideally before antibiotics; surface swabs grow colonising organisms and correlate poorly with bone culture. (b) A **deep sputum** sample after coughing, or an induced sputum or bronchoscopic sample if needed. (c) Blood cultures from a **fresh venepuncture** after skin antisepsis; existing cannulas are often colonised.
 :::
 :::
 
-::: exercise Interpret a positive respiratory panel {level=1}
-Multiplex PCR on an elderly nursing-home resident's sputum detects Rhinovirus, HPIV-3 and Streptococcus pneumoniae DNA; he is febrile with a consolidation. What do you conclude?
+::: exercise Ct and fold change {level=1 check="32"}
+Two samples are tested on the same real-time PCR assay. Sample A has a Ct of 20 and sample B a Ct of 25. Assuming the product doubles each cycle, how many times more target did sample A contain?
+::: hint
+Use $2^{\Delta \text{Ct}}$.
+:::
 ::: solution
-**Panel-positives-and-pre-test-probability ([[#def-methods]], [[respiratory/respiratory-infections]]): what the assay can and cannot say - detection-not-viability-not-causation (the Rhinovirus-persistence-for-weeks and the HPIV-3-in-older-and-immunocompromised-disease-versus-carriage and the pneumococcal-DNA-in-carriers-which-most-are - the upper-respiratory-compartments-commensal-list) and the sputum-quality-question-the-panel-does-not-ask (the squamous-epithelial-cell-count) and the blood-and-urine-cultures-and-urinary-antigens-as-the-invasive-disease-evidence - [[clinical-skills/laboratory-tests]]; the clinical synthesis - consolidation-plus-fever-is-pneumococcal-pneumonia-until-treated-otherwise-and-rhinovirus-is-often-the-co-traveller-and-precipitant (the viral-bacterial-co-infection-synergy-literature) so: treat-the-bacterial-pneumonia-per-severity-and-do-not-withhold-antibiotics-for-the-viral-positives and consider whether the panel-result-template-without-a-clinician-led-comment-turns-residents-into-untreated-patients; and the ward consequences - the droplet-precautions-for-Rhinovirus-are-not-practical-and-the-HPIV-3-in-the-immunocompromised-needs-its-own-cohorting-thought (the transplant-ward progress to pneumonitis) - [[infectious-diseases/healthcare-infections]], [[infectious-diseases/immunocompromised-host]]; and the reporting-ethics - the panels-need-comments (the detection-limit-and-clinical-correlation-boilerplate-that-no-one-reads-versus-lab-clinician-discussion) and the local-panel-positivity-baseline-so-a-cluster-is-a-cluster - [[clinical-skills/communication]].**
+$\Delta \text{Ct} = 5$, so sample A contained $2^5 = 32$ times more target.
 :::
 :::
 
-::: exercise Fix the blood culture workflow {level=2}
-Your ED has 22% blood-culture contamination, 4-hour time-to-positivity-identification gaps and poor pre-antibiotic collection. Design the improvement.
+::: exercise Reading hepatitis B markers {level=1}
+A healthcare worker has the following results: HBsAg negative, anti-HBc negative, anti-HBs 250 IU/L. Interpret them.
+::: hint
+Which marker can be produced by the vaccine, and which only by infection?
+:::
 ::: solution
-**Pre-analytic-quality-improvement ([[#def-specimen]], [[clinical-skills/patient-safety]], [[microbiology/laboratory-diagnosis]]): the baseline - the contamination-rate-by-unit-and-device-and-collection-method (the alcohol-chlorhexidine-versus-povidone-iodine-evidence and the 30-second-scrub-and-dry-and-no-re-palpation rules and the 10-mL-volume-audit-by-bottle-fill-weight) and the phlebotomy-versus-nurse-versus-doctor-rates and the peripheral-versus-line-drawing-without-pairing and the time-to-antibiotic-versus-culture-order sequencing - [[emergency-critical-care/acute-assessment]]; the intervention bundle - the blood-culture-kit-with-chlorhexidine-swap-sticks-and-dated-sterile-gloves and the two-set-two-site-training-competency-badge and the pre-antibiotic-collection-reminders-in-the-sepsis-order-set (the culture-when-it-does-not-delay-not-culture-before-antibiotics-in-shock) and the paediatric-volume-adult-paediatric-bottle-pairing and the lab-receipt-SLA-with-continuous-monitoring-incubator-flags-and-the-positive-blood-culture-page-to-a-named-clinician-with-documentation; and the identification-gap fix - the rapid-positivity-confirmation (the Gram-stain-immediately-on-positives and the MALDI-TOF-direct-from-bottle-and-the-Verigene-type-resistance-genel-assays and the rapid-susceptibility-with-repeated-incubation-nuances and the ID-antibiogram-interpretation-comment-protocol) and the 48-hour-review-and-stop-decision-for-contaminants-with-a-repeated-set rule; and the dashboard - the contamination-rate-as-a-public-ward-metric and the repeat-culture-burden-saved-and-the-unnecessary-vancomycin-days-reduced as the dual win and the annual-competency-refresh because staff turnover eats protocols - [[infectious-diseases/stewardship-outbreaks]], [[public-health/health-systems-economics]].**
+She has **immunity from vaccination**. Anti-HBs shows immunity. Anti-HBc is negative, so she has never been infected: the vaccine contains surface antigen only and does not induce anti-HBc. HBsAg negative confirms no current infection.
 :::
 :::
 
-::: exercise Handle a discrepancy {level=3}
-The lab reports "Staphylococcus aureus coagulase positive, oxacillin resistant, vancomycin MIC 2" from a prosthetic valve; the clinician asks whether the lab is "being difficult". Mediate, using the science of the report.
+::: exercise Calculate a predictive value {level=2 check="2/3"}
+A test has a sensitivity of 90% and a specificity of 95%. It is used in a population where 10% have the condition. What is its positive predictive value? Give the exact value as a fraction.
+::: hint
+Work with 1,000 people: count the true and false positives.
+:::
 ::: solution
-**Discrepancy-mediation-medicine ([[#def-serology]], [[microbiology/antimicrobials]], [[cardiovascular/valve-congenital-disease]]): the science of the report - the cefoxitin-disk-versus-mecA-PCR-versus-PBP2a-latex-arbitration of borderline oxacillin-MICs (the mecC-MRSA-that-some-assays-miss) and the vancomycin-MIC-of-2-interpretation (the population-analysis-profiling-hVISA-question and the kill-curve and the clinical-failure-association-for-deep-seated-infection-with-MICs-of-2 and the decision between daptomycin and high-dose vancomycin with level monitoring, combinations and surgery-and-these-are-the-real-questions) - and the MRSA-prosthetic-valve-protocol itself (the surgery-for-prosthetic-valve-endocarditis-indications-and-the-native-versus-prosthetic-criteria and the gentamicin-rifampicin-vancomycin-or-daptomycin-combination-duration-decisions and the TEE-and-CT-for-para-prosthetic-complications and the neuro-imaging-before-surgery) - [[surgery/perioperative-care]]; the mediation - the clinician's-real-question-surfaced ("is this treatable and will you help me treat it") and the MDT-now (the cardiac-surgery-and-ID-and-microbiology-and-imaging-and-outcome-honesty-and-the-patient-and-family-in-the-conversation-for-the-mortality-numbers-and-the-intensity-of-6-weeks-plus-IV-therapy) - [[clinical-skills/communication]]; and the systems fix - the discrepancy-and-susceptibility-dispute-SOP (the repeat-testing-and-referral-reference-lab-route-and-the-external-quality-assessment-review) and the interpretive-commentary-in-reports-with-organism-site-MIC-triplets (the pre-digested-recommendations-that-still-need-your-antibiogram) and the joint-clinic-with-microbiology-present-because-endocarditis-decisions-are-never-lab-only - [[clinical-skills/patient-safety]], [[infectious-diseases/stewardship-outbreaks]].**
+Of 1,000 people, 100 have the condition, and 90 of them test positive. Of the 900 without it, 5% test positive, which is 45 people. The PPV is $90/(90 + 45) = 90/135 = 2/3$. One in three positive results is false.
+:::
+:::
+
+::: exercise A fourfold rise {level=2}
+A 50-year-old man has atypical pneumonia. Antibody titres to an organism are 1:32 on admission and 1:256 two weeks later, tested in parallel in the same run. How many doubling dilutions has the titre risen, and what does the change indicate?
+::: hint
+Count the doublings from 32 to 256.
+:::
+::: solution
+From 1:32 to 1:256 is a factor of 8, which is **three doubling dilutions**. This is more than a fourfold rise and indicates **recent infection** with that organism. Paired sera are tested together because results from different runs can differ by one dilution. Serology of this kind usually confirms a diagnosis after the event, so treatment decisions are based on the clinical picture and on faster tests such as PCR or urinary antigen.
+:::
+:::
+
+::: exercise Why a negative test was misleading {level=2}
+A woman has unprotected sex with a new partner, develops a sore throat and fever ten days later, and has a fourth-generation HIV test the next day, which is negative. Three weeks later the partner is found to have HIV. Explain why her first test may have been negative and what testing she needs.
+::: hint
+Think about the window period and what a fourth-generation test detects.
+:::
+::: solution
+Her symptoms could be **primary HIV infection**. A fourth-generation test detects p24 antigen and antibody. At eleven days after exposure she was probably within the **window period**, when neither is yet detectable. The negative result does not exclude infection.
+
+She needs a repeat test now, and UK guidance states that a negative fourth-generation test 45 days after the last exposure excludes infection. Because she has symptoms, an HIV RNA test may also be used to detect very early infection. She should receive specialist sexual health care, including discussion of other sexually transmitted infections. Post-exposure prophylaxis was an option only within 72 hours of the exposure.
+:::
+:::
+
+::: exercise Ruling out a disease with a test {level=3 check="round(0.98*0.95/(0.98*0.95+0.05*0.05)*1000)/1000"}
+A rapid test for meningococcal disease has a sensitivity of 95% and a specificity of 98%. In a child with fever and a petechial rash, the clinician estimates the pre-test probability of meningococcal disease at 5%. Calculate the negative predictive value to three decimal places. Then explain why the test result should not stop treatment in this child.
+::: hint
+Use the NPV formula in [[#eq-ppv]].
+:::
+::: solution
+$$
+\text{NPV} = \frac{0.98 \times 0.95}{0.98 \times 0.95 + 0.05 \times 0.05} = \frac{0.931}{0.9335} \approx 0.997
+$$
+
+The NPV is about **0.997**: a negative result leaves a residual probability of about 0.3%. That sounds small, but meningococcal disease kills within hours and treatment is safe and effective, so the threshold for treating is very low. A negative test would not justify withholding antibiotics in a child with fever and a petechial rash. The decision depends on the consequences of missing the disease as well as on the probability.
+:::
+:::
+
+::: exercise A culture-negative endocarditis {level=3}
+A 58-year-old man with a prosthetic aortic valve received several days of oral antibiotics from his GP for "a chest infection". He is admitted with fever, a new murmur and a vegetation on echocardiography. Three sets of blood cultures are negative. List the possible reasons for negative cultures and the tests that could identify the cause.
+::: hint
+Consider prior antibiotics, fastidious organisms and organisms that cannot be cultured.
+:::
+::: solution
+Possible reasons:
+
+- **prior antibiotics**, the commonest cause, suppressing growth of ordinary organisms such as streptococci;
+- **fastidious bacteria** that grow slowly or need special conditions, such as the HACEK group;
+- **organisms that cannot be grown in routine blood culture**, such as *Coxiella burnetii* (Q fever), *Bartonella* and *Tropheryma whipplei*;
+- **fungi**, which may need specific methods;
+- **non-infective causes**, such as marantic or autoimmune endocarditis.
+
+Useful tests: more blood cultures with prolonged incubation if antibiotics can safely be stopped briefly; **serology** for *Coxiella* and *Bartonella*; **PCR and 16S rRNA gene sequencing** of valve tissue if surgery is performed, with histology; and fungal tests such as β-D-glucan. The request to the laboratory must explain the clinical question, because these tests are not run routinely.
 :::
 :::

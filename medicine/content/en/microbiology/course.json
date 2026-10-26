@@ -6,24 +6,24 @@
   "level": 1,
   "order": 60,
   "tagline": "Bacteria, viruses, fungi and parasites, how they cause disease, diagnosis and antimicrobials",
-  "summary": "Microorganisms cause much of the world’s disease. This course covers the biology of bacteria, viruses, fungi and parasites, how pathogens cause disease, the human microbiota, laboratory diagnosis, antimicrobial drugs and resistance, and infection prevention and control.",
+  "summary": "Microorganisms cause much of the world's disease. This course covers the biology of bacteria, viruses, fungi and parasites, how pathogens cause disease, the human microbiota, laboratory diagnosis, antimicrobial drugs and resistance, and infection prevention and control.",
   "overview": [
-    "Medical microbiology is the science of the enemies you cannot see and the allies you should not poison. It supplies the reasoning behind every antimicrobial prescription: what kind of organism this is, how it damages, how you find it, what kills it, and whether killing it is wise. This course teaches the organisms by groups and the methods that apply across them.",
-    "The bacteria chapter covers structure, Gram-positive and Gram-negative walls, growth and sporulation, and the classification by which a lab report becomes a diagnosis; bacterial pathogenesis adds adhesion, invasion, exo- and endotoxins, biofilms and immune evasion. Virology follows with virus architecture and replication strategies, the immune response to viruses, and the major families as clinical syndromes; mycology and parasitology present the fungi and the protozoa and helminths that matter clinically, grouped by the host they infect and the geography they need. The microbiota chapter treats the normal flora as an organ — digestion, colonisation resistance, the antibiotics' collateral damage.",
-    "The last three chapters are methods and management: laboratory diagnosis (staining, culture, susceptibility testing, antigen and molecular methods, serology and its interpretation) is taught as a decision tree you meet daily in a results portal; antimicrobials covers mechanisms, spectra, resistance by enzymatic, target, porin and pump, stewardship and toxicity principles; infection control covers chains of transmission, standard and transmission-based precautions, and the outbreak arithmetic of R-effective. Immunology pairs with this course; infectious diseases applies it."
+    "Medical microbiology studies the organisms that cause infection and the ones that live with us harmlessly. It supplies the reasoning behind every request for a culture and every antibiotic prescription: what kind of organism is likely, how it causes harm, how the laboratory can find it, which drugs act on it, and whether treatment is needed at all.",
+    "The first five chapters are about the organisms. Bacteria are introduced through their structure, the Gram stain, growth and genetics, and then grouped the way a laboratory report groups them. A chapter on bacterial pathogenesis explains adhesion, invasion, toxins, biofilms and immune evasion. Viruses follow, with their structure, replication strategies, latency and links to cancer. Fungi and parasites are taught through the patients they affect and the life cycles that explain transmission and diagnosis. The microbiota chapter treats the normal flora as a protective ecosystem and explains what happens when antibiotics disturb it.",
+    "The last three chapters are about methods and management. Laboratory diagnosis follows a specimen from collection to report: microscopy, culture, susceptibility testing, antigen and molecular tests, serology, and the predictive values that decide what a result means. Antimicrobials covers how drugs work, how resistance arises and spreads, and the principles of stewardship. Infection prevention and control covers transmission routes, standard and transmission-based precautions, decontamination, surveillance and the arithmetic of outbreaks. Immunology is the natural companion to this course, and infectious diseases applies it at the bedside."
   ],
   "prerequisites": [
     "immunology"
   ],
   "outcomes": [
-    "Relate bacterial structure — wall type, capsule, spores, flagella, biofilm — to staining, immune evasion and antimicrobial choice, and classify the major pathogens by shape and stain.",
-    "Explain mechanisms of bacterial pathogenicity: adhesion, invasion, toxin action (exotoxins and endotoxin pathways) and examples of each clinical syndrome they produce.",
-    "Describe virus architecture and replication strategies — receptor binding, entry, genome expression, assembly, release — and how they explain antiviral targets, interferon responses and viral interference.",
-    "Recognise the clinically important fungi (Candida, Aspergillus, Cryptococcus, endemic dimorphs, dermatophytes) and parasites (Plasmodium, Toxoplasma, helminths) with their life cycles, risk groups and diagnostic stages.",
-    "Explain the functions of the human microbiota and the consequences of its disruption, including C. difficile pathogenesis and the rationale of transplantation research.",
-    "Follow a specimen through the laboratory: microscopy, culture, sensitivity interpretation (MIC, breakpoints), antigen detection, PCR and sequencing, serology and its window periods — and read a real report critically.",
-    "Classify antimicrobials by mechanism and spectrum, explain the major resistance mechanisms with clinically important examples (MRSA, VRE, ESBL, carbapenemases, fluoroquinolone resistance, TB resistance), and the principles of combination therapy and duration.",
-    "Apply the chain of infection, standard and transmission-based precautions, and outbreak control logic, and compute the meaning of R0 and R-effective for control thresholds."
+    "Relate bacterial structure, especially the Gram-positive and Gram-negative cell envelopes, capsules and spores, to staining, disease and antibiotic choice, and classify the major pathogens by shape, Gram reaction and oxygen requirement.",
+    "Explain how bacteria cause disease through adhesion, invasion, immune evasion, exotoxins, endotoxin and biofilms, with a clinical example of each.",
+    "Describe virus structure, the Baltimore classification and the steps of viral replication, and use them to explain latency, oncogenic viruses, antigenic variation and antiviral drug targets.",
+    "Recognise the clinically important fungi and parasites, the patients they affect and the life-cycle stages used for diagnosis and control.",
+    "Explain the functions of the human microbiota, distinguish colonisation from infection, and outline the pathogenesis of Clostridioides difficile infection and the place of faecal microbiota transplantation.",
+    "Follow a specimen through the laboratory, interpret Gram stains, cultures, MICs and breakpoints, antigen, PCR and serology results, and calculate predictive values from sensitivity, specificity and prevalence.",
+    "Classify antimicrobial drugs by target and spectrum, explain the main resistance mechanisms with clinical examples (MRSA, VRE, ESBL and carbapenemase producers), and apply pharmacodynamic and stewardship principles.",
+    "Apply the chain of infection, standard and transmission-based precautions and decontamination principles, and calculate basic and effective reproduction numbers and herd-immunity thresholds."
   ],
   "chapters": [
     {
@@ -98,50 +98,57 @@
     {
       "year": 1676,
       "title": "Animalcules",
-      "detail": "Antonie van Leeuwenhoek's hand-ground lenses reveal bacteria and protozoa in rainwater and plaque; the microbial world is visible for the first time, and two centuries pass before anyone proves it matters.",
+      "detail": "Antonie van Leeuwenhoek describes tiny living 'animalcules' seen through his single-lens microscopes in water samples, and later in material scraped from his teeth. These are the first recorded observations of bacteria and protozoa.",
       "people": [
         "Antonie van Leeuwenhoek"
       ]
     },
     {
+      "year": 1847,
+      "title": "Hand washing in the maternity clinic",
+      "detail": "Ignaz Semmelweis, working in Vienna, requires doctors and students to wash their hands in chlorinated lime before examining women in labour. Deaths from puerperal fever on the doctors' ward fall sharply, decades before germ theory could explain why.",
+      "people": [
+        "Ignaz Semmelweis"
+      ]
+    },
+    {
       "year": 1861,
-      "title": "The swan-neck flask",
-      "detail": "Louis Pasteur's flasks let air but not dust reach sterile broth; life does not arise spontaneously, and with the disproof, the germ theory becomes tenable — Pasteur goes on to develop attenuation and the first vaccines against chicken cholera, anthrax and rabies.",
+      "title": "Against spontaneous generation",
+      "detail": "Louis Pasteur publishes his experiments with swan-neck flasks: boiled broth stays sterile as long as dust and microbes cannot reach it. The result supports the germ theory of disease, and Pasteur goes on to develop attenuated vaccines against chicken cholera, anthrax and rabies.",
       "people": [
         "Louis Pasteur"
       ]
     },
     {
       "year": 1867,
-      "title": "Antisepsis",
-      "detail": "Joseph Lister, reading Pasteur, introduces carbolic acid wound treatment in Glasgow and reports a fall in amputation-cluster mortality; surgery becomes possible beyond the swift and the desperate, and hospital infection becomes a measurable problem with a preventable route.",
+      "title": "Antiseptic surgery",
+      "detail": "Joseph Lister, applying Pasteur's ideas in Glasgow, reports treating compound fractures and wounds with carbolic acid. Wound infection and deaths after surgery fall, and antisepsis becomes the basis of modern surgical practice.",
       "people": [
         "Joseph Lister"
       ]
     },
     {
       "year": 1882,
-      "title": "Solid media and postulates",
-      "detail": "Robert Koch's laboratory — using solid culture media (with Petri's plates, introduced 1887) and staining — isolates anthrax and tuberculosis and formulates the postulates linking a microbe to a disease, giving medical bacteriology its method.",
+      "title": "The tubercle bacillus",
+      "detail": "Robert Koch announces that Mycobacterium tuberculosis causes tuberculosis. His laboratory's methods, pure culture on solid media (agar, suggested by Fanny Hesse) and the dish later named after Julius Petri, give bacteriology its techniques, and the criteria now called Koch's postulates link a microbe to a disease.",
       "people": [
         "Robert Koch",
-        "Julius Richard Petri",
-        "Fanny Hesse"
+        "Fanny Hesse",
+        "Julius Richard Petri"
       ]
     },
     {
       "year": 1884,
       "title": "The Gram stain",
-      "detail": "Hans Christian Gram's crystal-violet and iodine differentiation, intended for tissue sections, sorts bacteria into the two great wall types that still organize empirical antibiotic choice; within a decade Ziehl–Neelsen follows for mycobacteria.",
+      "detail": "Hans Christian Gram publishes a staining method with crystal violet and iodine that divides bacteria into two groups. The Gram-positive and Gram-negative split reflects two kinds of cell envelope and still guides the first choice of antibiotic.",
       "people": [
-        "Hans Christian Gram",
-        "Franz Ziehl"
+        "Hans Christian Gram"
       ]
     },
     {
-      "year": 1892,
+      "year": 1898,
       "title": "Filterable agents",
-      "detail": "Dmitri Ivanovsky's tobacco-mosaic filtrate passes a porcelain filter that retains bacteria; Beijerinck's 1898 replication conclusion names the contagium vivum — viruses, the entities that forced microbiology beyond cellular life.",
+      "detail": "Martinus Beijerinck shows that the agent of tobacco mosaic disease passes through filters that hold back bacteria and multiplies only in living tissue, confirming and extending Dmitri Ivanovsky's 1892 observation. He calls it a contagium vivum fluidum; it is the first virus described.",
       "people": [
         "Dmitri Ivanovsky",
         "Martinus Beijerinck"
@@ -149,8 +156,8 @@
     },
     {
       "year": 1928,
-      "title": "Penicillin and the antibiotics era",
-      "detail": "Fleming's contaminated plate, Florey and Chain's Oxford purification and the US deep-submerged fermentation programme make penicillin a mass-produced drug by 1943–45; the next two decades yield most antimicrobial classes still used, and the discovery of transferable resistance begins in the same decade.",
+      "title": "Penicillin",
+      "detail": "Alexander Fleming notices that a Penicillium mould kills staphylococci on a culture plate. Howard Florey, Ernst Chain and their Oxford team purify penicillin and show its effect in 1940–41, and wartime industrial production makes it widely available by 1944–45.",
       "people": [
         "Alexander Fleming",
         "Howard Florey",
@@ -158,9 +165,9 @@
       ]
     },
     {
-      "year": 1977,
-      "title": "Ecology returns: Helicobacter and the microbiome's predecessors",
-      "detail": "Warren and Marshall's gastric spiral bacterium (named in 1989) revives the idea that bacteria inhabit and disease the gut in unexpected ways, a precursor of the culture-independent microbiome science — 16S sequencing and gnotobiotic transfer experiments — that follows a quarter-century later.",
+      "year": 1982,
+      "title": "Helicobacter pylori",
+      "detail": "Robin Warren and Barry Marshall culture a spiral bacterium from the human stomach and link it to gastritis and peptic ulcer. Their work, recognised by the 2005 Nobel Prize, overturns the belief that bacteria cannot live in the stomach.",
       "people": [
         "Robin Warren",
         "Barry Marshall"
@@ -168,8 +175,8 @@
     },
     {
       "year": 2012,
-      "title": "The microbiome project matures",
-      "detail": "The Human Microbiome Project's reference catalogue, with metagenomic studies of diversity and function, establishes the normal microbiota as a mapped, variable organ associated with digestion, immunity and antibiotic injury — and Fecal microbiota transplantation gains a formal indication for recurrent C. difficile.",
+      "title": "The Human Microbiome Project",
+      "detail": "The Human Microbiome Project Consortium publishes reference descriptions of the bacteria living at many body sites of healthy adults, using DNA sequencing rather than culture. The normal microbiota becomes a measurable, variable part of human biology.",
       "people": [
         "Human Microbiome Project Consortium"
       ]
@@ -177,25 +184,46 @@
   ],
   "references": [
     {
-      "title": "The Microbiology Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the organism and the microbe.",
-      "slug": "ref1"
+      "title": "Mims' Medical Microbiology and Immunology",
+      "authors": "Richard V. Goering, Hazel M. Dockrell, Mark Zuckerman and Peter L. Chiodini",
+      "year": 2024,
+      "note": "Seventh edition. Organised by body system and clinical syndrome rather than organism, which makes it the closest match to how infection presents in a UK medical school."
     },
     {
-      "title": "The Microbiology Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the organism and the system.",
-      "slug": "ref2"
+      "title": "Sherris & Ryan's Medical Microbiology",
+      "authors": "Kenneth J. Ryan (editor) and colleagues",
+      "year": 2022,
+      "note": "Eighth edition. A clear organism-by-organism account with strong chapters on pathogenesis and the immune response to infection."
     },
     {
-      "title": "Clinical Microbiology",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the microbe and the practice.",
-      "slug": "ref3"
+      "title": "Medical Microbiology",
+      "authors": "Patrick R. Murray, Ken S. Rosenthal and Michael A. Pfaller",
+      "year": 2021,
+      "note": "Ninth edition. Detailed reference for bacteria, viruses, fungi and parasites, with good summaries of laboratory diagnosis."
+    },
+    {
+      "title": "Breakpoint tables for interpretation of MICs and zone diameters",
+      "authors": "European Committee on Antimicrobial Susceptibility Testing (EUCAST)",
+      "year": 2025,
+      "note": "Version 15.0, updated every January. The breakpoints used by UK and European laboratories to report organisms as susceptible, susceptible at increased exposure, or resistant."
+    },
+    {
+      "title": "Start smart then focus: antimicrobial stewardship toolkit for inpatient care settings",
+      "authors": "UK Health Security Agency",
+      "year": 2023,
+      "note": "The English hospital stewardship framework: start appropriate antibiotics promptly, then review the diagnosis and the prescription at 48–72 hours."
+    },
+    {
+      "title": "The WHO AWaRe (Access, Watch, Reserve) antibiotic book",
+      "authors": "World Health Organization",
+      "year": 2022,
+      "note": "Classifies antibiotics into Access, Watch and Reserve groups and gives evidence-based empirical choices for common infections."
+    },
+    {
+      "title": "National infection prevention and control manual for England",
+      "authors": "NHS England",
+      "year": 2022,
+      "note": "The standard and transmission-based precautions used in English health and care settings; updated regularly."
     }
   ],
   "next": [

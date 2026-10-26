@@ -1,145 +1,323 @@
-Mycology and parasitology share one clinical lesson: **the organism is usually slower, stranger and more geography-dependent than your first differential admits, so the diagnosis is made by thinking about exposure and immune status before looking at the slide - and by knowing which few fungal and parasitical diseases kill quickly enough to demand empiric treatment.** This chapter covers fungi and their toxins, the protozoa and helminths, and the syndrome-first approach to both.
+Fungi and parasites are **eukaryotes**, like us. Their cells have a nucleus, mitochondria and 80S ribosomes, so they share much of our biochemistry. That makes them harder to treat than bacteria: there are fewer targets that are present in the pathogen and absent in human cells, and antifungal and antiparasitic drugs tend to have more side effects and interactions.
 
-This chapter covers fungal biology and the major mycoses, invasive fungal infection in the immunocompromised host, the protozoal diseases, the helminths, and diagnosis-and-therapy principles for both worlds.
+The two groups also teach a different way of thinking about infection. Serious fungal disease is mostly a disease of the **host**: the fungi involved are common in the environment or in the normal flora, and they cause invasive disease when a specific immune defence fails. Parasitic disease is mostly a disease of **place and behaviour**: the organisms need particular vectors, animal hosts, water or soil, so the travel and exposure history is the key to diagnosis.
 
-## Fungi
+This chapter covers the biology of fungi and the diseases they cause, the link between immune defects and fungal infection, the protozoa, the helminths, and how these organisms are diagnosed.
 
-::: definition Fungal biology and the surface disease burden {#def-fungal}
-**The eukaryote problem (the fungal cell with ergosterol membranes and chitin and glucan walls, which is why polyenes bind ergosterol and echinocandins block glucan synthesis and azoles inhibit the ergosterol pathway with their CYP-human-off-target-pharmacology and why selectivity is harder than for bacteria and why mammalian-cell toxicity lists are long - [[pharmacology/metabolism-excretion]], [[microbiology/antimicrobials]]); the growth forms (yeasts, hyphae and pseudohyphae and the dimorphic fungi that switch with temperature - the mould-in-soil-yeast-in-tissue rule that defines histoplasma-and-blastomyces-and-coccidioides-and-sporothrix-and-penicillium/Talaromyces - and the dermatophytes' keratin addiction with their micro-and-macroconidia identification and tinea capitis, cruris, pedis and unguium syndromes and the Majocchi-granuloma-and-kerion-versions - [[musculoskeletal/skin]]); the superficial-and-community burden (the candida balance - commensal-overgrowth-with-antibiotics-and-diabetes-and-immunosuppression causing vulvovaginal-and-oral-and-oesophageal-and-urinary-and-line-associated-disease with the C-albicans-versus-non-albicans-species-azole-resistance-echinocandin-decision and the chronic-suppression-for-recurrent-vaginal-candidiasis and the denture-and-inhaler technique lessons - [[endocrine/diabetes-complications]], [[infectious-diseases/healthcare-infections]]); the mould allergy syndromes (the allergic bronchopulmonary aspergillosis with asthma and central bronchiectasis and the Aspergillus sensitisation in cystic fibrosis and the fungal sinusitis spectrum with the IgE-and-IgG-precipitins and the eosinophilic-mucin and the aspirin-adjacency and the chronic pulmonary aspergillosis with cavities and aspergilloma and haemoptysis - [[respiratory/asthma-copd]], [[respiratory/interstitial-vascular-disease]], [[respiratory/lung-cancer-pleura]] for the haemoptysis-embolisation-versus-surgery question); and the toxin-and-food mycology (the aflatoxin-hepatocellular-carcinoma-association-with-HBV-synergy in stored crops - [[gastrointestinal/liver-disease]], [[pathology/cancer-biology]] - and the amatoxin death-cap mushroom failure with the silibinin and N-acetylcysteine era management and the psilocybin-and-ergot-clinical-toxidromes with the ergotism-vascular-necrosis history and the recent-psilocybin-therapy-trial-era and the recent psilocybin-therapy trials - [[psychiatry/treatments-mental-health-law]]))**
+## Fungal biology {#fungi}
+
+::: definition Fungi {#def-fungal}
+**Fungi** are eukaryotic organisms with a rigid cell wall made of **chitin**, **β-glucans** and mannoproteins. Their cell membrane contains **ergosterol** instead of the cholesterol of human cells. They take up nutrients from their surroundings rather than by photosynthesis.
+
+Medically important fungi grow in three forms:
+
+- **yeasts**: single round or oval cells that reproduce by budding, such as *Candida* and *Cryptococcus*;
+- **moulds**: branching filaments called **hyphae**, which form a mat (mycelium) and release airborne spores (conidia), such as *Aspergillus* and the Mucorales;
+- **dimorphic fungi**: grow as moulds in the environment at about 25 °C and as yeasts in tissue at 37 °C, such as *Histoplasma* and *Talaromyces*.
 :::
 
-::: definition Invasive fungal disease {#def-invasive}
-**The risk-table discipline (the neutropaenia-and-steroids-and-transplant-and-biologic-and-ICU-ECMO-and-burn-and-diabetic-ketoacidosis categories and the specific organism-by-risk mapping: Aspergillus-with-prolonged-neutropaenia-and-post-anti-CD20-and-steroids, Mucorales-with-ketoacidosis-and-iron-overload-and-deferoxamine-and-transplant, Candida-with-lines-and-TIP-and-abdominal-surgery-and-broad-antibiotics, Cryptococcus-with-calcineurin-inhibitor-and-HIV-and-apparently-hosted-people (the C-neoformans-sensu-lato-and-C-gattii-geographies) - [[infectious-diseases/immunocompromised-host]], [[endocrine/diabetes-complications]], [[immunology/immunodeficiency]] for the STAT6-and-CD40L-and-anti-IL-4R-associated-cryptococcus? keep honest - and the prophylaxis-and-pre-emptive-and-empiric-tiering with the galactomannan-and-beta-D-glucan-and-CRNP?-no: CT-signals-and-the-azole-prophylaxis-in-AML-and-transplant and the posaconazole-and-isavuconazole-eras with their QTc-and-azole-interaction-differences); the syndromes that demand hours not days (the rhino-orbito-cerebral mucormycosis with its black eschar and cranial nerves and urgent debridement and liposomal amphotericin and glycaemic correction and the surgery-orbit-brain-MDT-in-hours - [[nervous-system/neuroinflammation]], [[endocrine/diabetes-complications]]; the cryptococcal meningoencephalitis with its subacute-headache-and-high-opening-pressure-management-ladder (the amphotericin-flucytosine-fluconazole-sequential-regimens-and-the-TB-adjacency-and-the-IRIS-timing-questions-and-serial-lumbar-punctures-and-the-lumbar-drain-and-shunt-decisions) - [[infectious-diseases/hiv]], [[nervous-system/neuroinflammation]]; candidaemia with its line-and-echocardiographic-and-ophthalmology-screen-and-the-ojo?-no: eye-screen-controversy-read-honestly and the CNS-and-bone-and-endocarditis-metastatic-sequelae and the echinocandin-then-fluconazole-step-down-with-susceptibility-and-the-duration-from-first-negative-culture - [[infectious-diseases/healthcare-infections]], [[cardiovascular/valve-congenital-disease]]; and the Pneumocystis pneumonia of T-cell failure with its desaturating-hypoxaemia-out-of-proportion-and-raised-LDH-and-ground-glass-and-D-glucan-positivity and the steroid-for-hypoxaemic-patients-evidence and the co-trimoxazole-treatment-versus-prophylaxis-dosing and the-atypical-presentation-under-prophylaxis-and-post-anti-CD20-CMV-adjacency-reminders - [[respiratory/respiratory-infections]], [[infectious-diseases/immunocompromised-host]]); and the endemic mycoses arriving by aeroplane (the disseminated histoplasmosis in the immunocompromised with oral ulcers and hepatosplenomegaly and pancytopenia and calcified granulomas and urinary antigen diagnosis and the coccidioidomycosis-with-erythema-nodosum-and-meningitis-and-the-pregnancy-and-ethnicity-severity-gradients-and-the-lung-transplant-donor-derived-transmission-warnings and the blastomycosis-skin-and-bone-mimicry and the Talaromyces-marneffei-in-SE-Asia-HIV and the sporotrichosis-lymphocutaneous-gardening-classic - [[infectious-diseases/tropical-infections]], [[obstetrics-gynaecology/pregnancy-complications]], [[immunology/transplant-tumour-immunology]]).**
-:::
+The differences between fungal and human cells are the targets of antifungal drugs. **Azoles**, such as fluconazole and voriconazole, block a fungal enzyme needed to make ergosterol. **Polyenes**, such as amphotericin B, bind ergosterol and make holes in the membrane; because they bind cholesterol a little too, they are toxic to the kidney. **Echinocandins** block synthesis of β-glucan in the cell wall, a structure with no human equivalent. These drugs are discussed further in [[microbiology/antimicrobials]].
 
-## Parasites
+### Fungal disease by depth {#fungal-depth}
 
-::: definition Protozoa {#def-protozoa}
-**The bowel residents (Giardia with its bloating-traveller-syndrome-and-duodenal-biopsy-villous-blunting-and-should-not-be-a-diagnosis-of-exclusion-warning and the Cryptosporidium-self-limiting-in-the-immunocompetent-and-terrible-in-AIDS-with-the-ART-is-the-treatment-message and the Cystoisospora-and-Cyclospora-and-Microsporidium/Enterocytozoon-bienelei-of-the-CD4-low-patient and the Entamoeba-histolytica-invasive-colitis-and-liver-abscess-anchovy-sauce-drain-or-not-decision with the serology-versus-stool-PCR-interpretation and the metronidazole-then-luminal-agent-paromomycin-diloxanide-finish-the-cyst-rule - [[gastrointestinal/digestion-absorption]], [[gastrointestinal/liver-disease]], [[infectious-diseases/hiv]]); the blood and liver invaders (the Plasmodium-everything-chapter - the falciparum-versus-vivax-and-ovale-and-malariae-and-knowlesi-differences (the relapsing-hypnozoites-demanding-primaquine-or-tafenoquine-with-G6PD-testing and the acidosis and renal failure and severe anaemia and parasitaemia-above-2%-with-the-IV-artesunate-and-the-post-treatment-early-parasitaemic-recrudescence-versus-reinfection-timing-rule) and the blackwater-haemoglobinuria-and-hyperparasitaemia-exchange-adjacency and the thrombocytopenia-not-DIC-hint and the sickle-and-thalassaemia-and-G6PD-evolutionary-legacy - [[blood/haemoglobin-disorders]], [[blood/anaemia]]; the Babesia-with-haemolysis-in-the-asplenic-and-XB?-no: transfusion-transmission and the cerebral-toxoplasmosis-versus-PCNSL-adjacency-with-the-ring-enhancement-thallium? keep simple and the primary-prophylaxis-in-CD4-low-and-the-cat-and-meat-and-soil-counselling-in-pregnancy - [[nervous-system/neuroinflammation]], [[obstetrics-gynaecology/pregnancy-antenatal]], [[immunology/transplant-tumour-immunology]]); and the tissue and vector travellers (the Leishmania-visceral-and-cutaneous-and-post-kala-azar-dermal with the sandfly and the HIV-co-infection-relapsing-pattern and the splenomegaly-pancytopenia-hypergammaglobulinaemia-presentation - [[infectious-diseases/tropical-infections]], [[blood/lymphoma-myeloma]] - pancytopenia workup keep with blood? fine keep both? replace second with [[blood/haematopoiesis]]; the Chagas-with-its-cardiomyopathy-and-mega-oesophagus-and-colon-and-vector-control-success-and-blood-donation-screening and the African trypanosomiasis with its chancre-then-CNS-march-and-the-fexinidazole-era and the Naegleria-and-Acanthamoeba-fulminant-and-granulomatous-encephalitis-with-the-warm-freshwater-and-contact-lens-histories - [[cardiovascular/heart-failure]] for Chagas cardiomyopathy, [[nervous-system/neuroinflammation]], [[nervous-system/sensory-systems]] for the Acanthamoeba keratitis).**
-:::
+Fungal infections are often grouped by how deep they go.
 
-::: definition Helminths {#def-helminths}
-**The soil-transmitted roundworms (the Ascaris-mass-starling-of-roundworms-and-intestinal-and-biliary-obstruction-and-Löffler-pulmonary-infiltrates-on-the-larval-migration-through-the-lungs and the hookworm-with-ground-itch-and-chronic-intestinal-blood-loss-iron-deficiency-anaemia-and-hypoproteinaemia and the whipworm-and-Trichuris-prolapse and the Strongyloides-hyperinfection-syndrome-when-steroids-are-given-to-an-undiagnosed-chronic-carrier-with-Gram-negative-sepsis-and-meningitis-and-larvae-everywhere - the single most lethal parasitology mistake in hospital medicine and the reason to screen-at-risk-origins-before-transplant-and-steroid-escalation - [[gastrointestinal/digestion-absorption]], [[blood/anaemia]], [[respiratory/interstitial-vascular-disease]], [[infectious-diseases/immunocompromised-host]] for the steroid rule)); the tapeworms and flukes (the calcified lesions-and-seizures-and-the-deadly-edema-peri-lesional-inflammatory-treatment-decisions and the autoinfection-hygiene-logic and the Echinococcus-granulosus-hydatid-liver-and-lung-with-the-PAIR-versus-surgery-versus-albendazole-and-spilling-anaphylaxis-precautions and the Alveolar-echinococcosis-liver-cancer-mimic - [[gastrointestinal/liver-disease]], [[nervous-system/epilepsy]], [[respiratory/lung-cancer-pleura]] - replace [[respiratory/gas-exchange]]? keep: use [[respiratory/interstitial-vascular-disease]]; the Schistosoma-with-its-snail-geography-and-katayama-fever-and-portal-hypertension-from-presinusoidal-fibrosis-and-S-haematobium-bladder-cancer-and-transverse-cord-lesions-from-egg-deposition-and-the-praziquantel-timing-versus-maturing-worms-nuance - [[gastrointestinal/liver-disease]], [[renal/urinary-tract]], [[obstetrics-gynaecology/gynaecological-cancer]] - replace [[gastrointestinal/gi-bleeding-cancer]]? female-genital-schisto keep inline, [[nervous-system/motor-systems]]); and the tissue migrants and threadworms (the Strongyloides-and-hookworm-cutaneous-larva-migrans-and-the-visceral-larva-migrans-Toxocara-canis-with-eosinophilia-and-hepatomegaly-and-occult-larva-migrans-ocular-lesion-mimicking-retinoblastoma-and-the-diffuse-infiltration-with-eosinophilia-approach and the filarias - Wuchereria-with-its-lymphoedema-and-hydrocele-and-DEC-MDA-programmes-and-dog-heartworm-parallel and the river-blindness-control-programme-success-stories - and Dracunculus-nearly-eradicated-by-water-filters-and-education-the-near-miss-story-worth-telling - [[nervous-system/sensory-systems]], [[infectious-diseases/tropical-infections]], [[public-health/global-health]], [[musculoskeletal/bones-joints]] - lymphoedema care keep inline))**
-:::
+- **Superficial and cutaneous infections** affect skin, hair and nails. **Dermatophytes** (*Trichophyton*, *Microsporum* and *Epidermophyton*) digest keratin and cause tinea (ringworm). *Malassezia* yeasts, which need lipid, cause pityriasis versicolor and contribute to seborrhoeic dermatitis. *Candida* causes oral thrush, vulvovaginal candidiasis and nappy rash.
+- **Subcutaneous infections** follow implantation through the skin, for example by a thorn. *Sporothrix* causes nodules that spread along lymphatics.
+- **Systemic or invasive infections** affect internal organs or the blood. They are uncommon in healthy people but cause serious disease in people with impaired immunity.
 
-::: example The transplant candidate from Angola {#ex-strongyloides}
-A 44-year-old renal-transplant candidate born in Angola has eosinophils 1.4 and intermittent itchy buttock rash; the transplant coordinator asks what to do before listing; his creatinine is 420 and he has never had parasites "investigated".
+Superficial infections are common and rarely dangerous. Invasive fungal infections are rarer but often fatal, and their incidence rises with every advance in chemotherapy, transplantation and intensive care.
+
+::: example An itchy scalp in a child {#ex-tinea-capitis}
+A 6-year-old boy of Black Caribbean heritage has had patchy hair loss and scaling of the scalp for two months. There is little redness, and a moisturiser prescribed for "dry scalp" has not helped. His younger sister has started scratching her scalp. What is the likely diagnosis and why does treatment differ from that of tinea on the body?
 ::: solution
-**Strongyloides as pre-transplant medicine ([[#def-helminths]], [[infectious-diseases/immunocompromised-host]], [[immunology/tolerance-regulation]] - use [[immunology/transplant-tumour-immunology]]): the risk - chronic autoinfection lasting decades with low-grade-and-fluctuating-symptoms (the larva currens and the perianal-and-buttock-pruritus and the pulmonary-Löffler-phase) and the hyperinfection-and-dissemination-syndrome under corticosteroids and other immunosuppression with Gram-negative bacteraemia and meningitis and diffuse alveolar haemorrhage and ileus and the mortality statistics that justify screening programmes; the tests and their honesty - the serology-with-cross-reactivity-notes and the multiple stool examinations (low sensitivity) and the agar-plate-culture-and-the-PCR-availability and the eosinophil-count-as-supporting-but-absent-in-steroid-treated-patients and the treat-on-serology-plus-epidemiology policy where tests are negative but suspicion high; the treatment - ivermectin-first-line (with the loa-loa-density-safety-question for Central-African-origin patients and the test-density-or-avoid-DEC-not-ivermectin nuance) and the repeat-stool-clearance-and-the-re-treatment-strategies and the pre-transplant-proven-negative-and-recheck-if-symptoms policies; and the same logic applied to the whole pre-transplant screen bundle (the TB-LTBI-testing-and-treatment-before-transplant and the geographically-tailored-list with the CMV-and-EBV-and-Toxo-serology-matching and the vaccination-completion-before-immunosuppression) - [[renal/filtration]] - replace with [[renal/chronic-kidney-disease]], [[public-health/vaccination-programmes]], [[infectious-diseases/tropical-infections]].**
+The likely diagnosis is **tinea capitis**, a dermatophyte infection of the scalp and hair shafts. In the UK the commonest cause is *Trichophyton tonsurans*, which spreads between children through close contact and shared combs or hats and is particularly common in children of African and Caribbean heritage. On darker skin, redness is often hard to see, and scaling, broken hairs and patches of hair loss may be the main signs, so it is easily mistaken for dry skin or seborrhoeic dermatitis.
+
+The diagnosis is confirmed by microscopy and culture of hair and scalp scrapings. Treatment needs an **oral** antifungal, chosen by local guidelines, because the fungus lives inside the hair follicle and shaft, where topical drugs do not reach. Antifungal shampoo is sometimes used for the child and household to reduce spread. Family members should be examined, because untreated contacts are a common reason for reinfection.
 :::
 :::
 
-::: example The honeymooner with a liver lesion {#ex-amoebic-abscess}
-A 31-year-old has 10 days of fever and right upper quadrant pain after returning from India; RUQ 8 cm; Hb 118, WCC 16, CRP 210; US shows a 9 cm hypoechoic liver lesion; blood cultures negative; stool "cysts reported" but species not identified.
+## Invasive fungal infection {#invasive}
+
+::: definition The main invasive fungi {#def-invasive}
+- ***Candida*** species are part of the normal gut and skin flora. They cause **candidaemia** and deep-organ infection in people with central venous catheters, broad-spectrum antibiotic treatment, abdominal surgery, parenteral nutrition, intensive care or neutropenia. *Candida auris*, recently reclassified as *Candidozyma auris*, is often resistant to several antifungal classes, survives on skin and surfaces, and causes outbreaks in intensive care units.
+- ***Aspergillus*** moulds, mainly *A. fumigatus*, produce spores that everyone inhales. They cause **invasive aspergillosis** in people with prolonged neutropenia or after stem cell transplantation, **allergic bronchopulmonary aspergillosis** in asthma and cystic fibrosis, and **aspergilloma** and chronic pulmonary aspergillosis in old lung cavities.
+- ***Cryptococcus neoformans*** is an encapsulated yeast found in soil and bird droppings. It is inhaled and causes **meningitis** in people with advanced HIV and other T-cell defects.
+- ***Pneumocystis jirovecii*** cannot be cultured. It causes **Pneumocystis pneumonia** in people with advanced HIV, on high-dose corticosteroids, or after transplantation or chemotherapy.
+- **Mucorales** (such as *Rhizopus*) cause **mucormycosis**, a rapidly invasive infection of the sinuses, orbit, brain or lungs. Hyphae invade blood vessels and cause tissue death. Risk factors include diabetic ketoacidosis, neutropenia and iron overload.
+- **Endemic dimorphic fungi**, such as *Histoplasma*, *Coccidioides*, *Blastomyces* and *Talaromyces marneffei*, live in the soil of particular regions. They cause lung infection in healthy people and disseminated disease in people with impaired immunity.
+:::
+
+In 2022 the World Health Organization published its first list of fungal priority pathogens. *Cryptococcus neoformans*, *Candida auris*, *Aspergillus fumigatus* and *Candida albicans* were placed in the highest-priority group, reflecting their burden, mortality and drug resistance.
+
+::: theorem Which immune defect predicts which fungus {#thm-fungal-host}
+Different arms of the immune system protect against different fungi.
+
+- **Neutrophils** kill hyphae and invading yeasts. Prolonged **neutropenia** predisposes to invasive aspergillosis, mucormycosis and invasive candidiasis.
+- **T cells**, especially CD4 helper cells, direct macrophages against intracellular and encapsulated fungi and protect mucosal surfaces. **T-cell defects** predispose to Pneumocystis pneumonia, cryptococcal meningitis, disseminated endemic mycoses and mucocutaneous candidiasis.
+- **Barriers** keep commensal *Candida* out of the blood. Central lines, surgery and mucosal damage from chemotherapy open the way to candidaemia.
+:::
+
+::: proof
+Moulds enter as inhaled spores that germinate into hyphae far too large to be swallowed by a single phagocyte. Neutrophils swarm around hyphae and damage them with oxidants and enzymes, so neutrophil number and function are the critical defence. This is why the risk of invasive aspergillosis rises steeply with the duration of neutropenia.
+
+Yeasts such as *Cryptococcus* and fungi such as *Pneumocystis* are small enough to be ingested by macrophages but resist killing unless the macrophages are activated by cytokines from T cells, especially interferon-γ. In advanced HIV, with CD4 counts below about 200 cells/µL, Pneumocystis pneumonia becomes a risk, and below about 100 cells/µL cryptococcal meningitis does. Mucosal *Candida* is controlled by Th17 cells, so oral thrush is an early sign of T-cell decline.
+
+The principle works in reverse. Cryptococcal meningitis or Pneumocystis pneumonia in a person without a known cause should prompt an HIV test and a search for other T-cell defects.
+:::
+
+::: example A headache that will not settle {#ex-crypto}
+A 36-year-old man from Zimbabwe, living in the UK, has two weeks of worsening headache, fever and nausea. He has lost weight. He has never had an HIV test. Lumbar puncture shows an opening pressure of 35 cmH₂O, a modest lymphocytosis and a low glucose. Explain the likely diagnosis and how it is confirmed and managed.
 ::: solution
-**Amoebic liver abscess versus pyogenic - the serology and drainage question ([[#def-protozoa]], [[gastrointestinal/liver-disease]], [[microbiology/laboratory-diagnosis]]): the discriminators - the travel-and-diarrhoea-history (absent in half of amoebic cases) and the age-and-sex pattern (the young-male-amoebic-and-older-comorbidity-pyogenic-tendencies) and the negative blood cultures with the sterile-reactive-leukocytosis and the E-histolytica-serology-positive-with-the-accommodation-caveat (past exposure confounding in returning travellers) and the stool-PCR-and-antigen-testing (cysts-on-microscopy-not-species-differentiated-from-Dientamoeba-and-Blastocystis-lore) - [[gastrointestinal/digestion-absorption]]; the treatment-first approach - the metronidazole-or-tinidazole-with-tissue-penetration-in either-disease while deciding and the amoebic-followed-by-paromomycin-or-diloxanide-fumate-luminal-clearance rule (the relapse-from-carried-cysts prevention) and the pyogenic-empiric-coverage-by-source-biliary-versus-portal-and-the-drainage-early-for-pyogenic-because-it-is-source-control; the aspiration question - amoebic-abscesses-usually-medical-with-aspiration-for-diagnosis-uncertainty-and-large-left-lobe-and-impending-rupture-and-non-responders-at-72-hours and the pyogenic-often-drained-and-the-biliary-obstruction-ERCP-and-the-anaerobe-and-fungal-in-repeatedly-instrumented-biliary-trees - [[gastrointestinal/pancreas-biliary]]; and the after - the amoebic-colitis-and-perforation-and-empyema-rupture-recognition-and-the-anti-amoebic-serology-interpretation-for-the-patient ("this shows you had it, not that you have active worms - there are no worms") and the travel-food-water re-counselling and the public-health-notification-and-contacts-for-dysentery-cases and the screening for the persistent-carrier-state in food handlers - [[public-health/communicable-disease-control]], [[clinical-skills/communication]].**
+The likely diagnosis is **cryptococcal meningitis**, probably as the first presentation of advanced HIV infection. *Cryptococcus neoformans* is inhaled, causes little lung disease, and then disseminates to the brain when T-cell immunity is severely reduced. The headache often develops slowly, and neck stiffness may be absent.
+
+The **cryptococcal antigen** test, on cerebrospinal fluid or blood, is highly sensitive and specific and is the main diagnostic test. India ink staining of cerebrospinal fluid shows encapsulated yeasts but is less sensitive. Culture confirms the organism. He also needs an HIV test and a CD4 count.
+
+The high opening pressure matters. The organism and its capsule block reabsorption of cerebrospinal fluid, and raised pressure causes much of the headache, visual loss and death. Management therefore includes **repeated lumbar punctures** to lower the pressure, as well as antifungal therapy. Treatment has an induction phase with amphotericin B and flucytosine, followed by consolidation and maintenance with fluconazole, following WHO and national guidelines. Antiretroviral therapy is usually started after several weeks of antifungal treatment, because starting it immediately increased mortality in trials, probably through immune reconstitution inflammation in the brain.
 :::
 :::
 
-::: example The headache that outlived the antibiotics {#ex-crypto}
-An HIV-positive man with a CD4 count of 40, not on ART, has 3 weeks of headache and low-grade fever; CT is normal; LP shows opening pressure 34, 20 lymphocytes, protein 0.9, glucose 2.1; India-ink and cryptococcal antigen are positive.
-::: solution
-**Cryptococcal meningoencephalitis - pressure is the disease ([[#def-invasive]], [[infectious-diseases/hiv]], [[nervous-system/neuroinflammation]]): the induction - liposomal-amphotericin-plus-flucytosine (the African-AmmoTc-and-immediate-early-ART-era-trial-reading-and-the-flucytosine-access-problem) with the alternative amphotericin-plus-high-dose-fluconazole where flucytosine-unavailable and the TB, bacterial and Toxoplasma co-infection exclusions (the CSF Xpert and culture set) and the serum-CrAg-as-a-screen-and-the-lumbar-puncture-therapeutic-role; the pressure management that saves sight and life - the serial-therapeutic-LPs-with-the-volume-to-pressure-normal-or-20-30%-reduction-protocol and the lumbar-drain-and-shunt-considerations for refractory pressure and the daily-neurological-and-vision-checks and the imaging for cryptococcomas and hydrocephalus with the do-not-start-steroids-routinely reminder (the paradox that steroids hurt in cryptococcal meningitis trials yet help in IRIS and mass lesions) - [[nervous-system/neuroinflammation]]; the ART timing - the defer-by-4-to-6-weeks evidence (the early-ART mortality signal, kept distinct from the TB-meningitis rule) and the IRIS-paradox-explained-to-the-patient (the "worse before better" weeks that need re-lumbar-punctures not blame) and the lifelong secondary prophylaxis until CD4 recovery conditions and the sexual and pregnancy counselling in this population; and the consolidation-and-surveillance - fluconazole consolidation then maintenance with adherence support and the cryptococcaemia-versus-CNS-disease-treatment-intensity-differences and the relapse monitoring and repeat-LP thresholds and the public-health offer of ART and partner services - [[public-health/global-health]], [[obstetrics-gynaecology/pregnancy-complications]], [[clinical-skills/communication]].**
-:::
+## Protozoa {#protozoa}
+
+Parasites are organisms that live on or in a host and benefit at the host's expense. In medicine the term covers two groups: single-celled **protozoa** and multicellular **helminths** (worms). External parasites such as lice and scabies mites are also included.
+
+::: definition Protozoa and their hosts {#def-protozoa}
+**Protozoa** are single-celled eukaryotes. Many have an active, feeding form (the **trophozoite**) and a resistant form that survives outside the host (the **cyst** or **oocyst**). Because they multiply in the host, a small inoculum can produce overwhelming infection.
+
+Parasite life cycles involve several types of host:
+
+- the **definitive host**, in which the parasite reproduces sexually or reaches its adult form;
+- the **intermediate host**, in which it undergoes asexual or larval development;
+- a **vector**, usually an insect, which carries the parasite between hosts and may also be one of the hosts above.
+
+The main human protozoa are:
+
+| Organism | Transmission | Main disease |
+|---|---|---|
+| *Plasmodium* species | bite of female *Anopheles* mosquito | malaria |
+| *Toxoplasma gondii* | cat faeces, undercooked meat, across the placenta | congenital toxoplasmosis; brain lesions in advanced HIV |
+| *Giardia duodenalis* | cysts in water, faecal–oral | diarrhoea, bloating, malabsorption |
+| *Entamoeba histolytica* | cysts in food or water | amoebic dysentery, liver abscess |
+| *Cryptosporidium* | oocysts in water, swimming pools, animals | diarrhoea; chronic in severe immunosuppression |
+| *Leishmania* | sandfly bite | cutaneous and visceral leishmaniasis |
+| *Trypanosoma* | tsetse fly (Africa) or triatomine bug (Latin America) | sleeping sickness; Chagas disease |
+| *Trichomonas vaginalis* | sexual contact | vaginitis and urethritis |
 :::
 
-::: example The fostered child with an itchy scalp {#ex-tinea-capitis}
-A 6-year-old has a 3-week scaly alopecic patch with black dots and cervical nodes; her new foster sibling has "ringworm cream not working"; the clinic wants to treat with topical only "because it is a fungus".
-::: solution
-**Dermatophyte-medicine-for-children ([[#def-fungal]], [[musculoskeletal/skin]], [[public-health/communicable-disease-control]]): the recognition - the kerion and black-dot versus endothrix broken-hair and Wood-lamp fluorescence differences (the Microsporum canis dog-and-cat connection and the anthropophilous versus zoonotic inflammation logic) and the KOH and fungal culture or PCR from hair-roots before long azole courses and the alopecia-areata-and-trichotillomania-versus-tinea-differential; the treatment logic - the topical-is-enough-for-body-but-not-for-hair (the griseofulvin-or-terbinafine-with-weight-dosing-and-3-to-6-weeks-and-the-cyclical-alopecia-untreated-misery-and-scarring-kerion-risk) and the terbinafine-duration-by-organism and the shampoo-adjunct-and-fomite-and-pet-vet-counselling and the nail-disease pulse-dosing pharmacology; the public-health - the school-exclusion nuances (the treat-and-attend vs stay-home policies by country) and the sibling and household treatment decision and the fomite-realism and the fostering-agency communication (the contagious label affecting placements, handled with a dated review plan) and the not-a-safeguarding-issue-but-document-the-confusion point; and the differential discipline - the scalp-psoriasis-and-seborrhoea-and-alopecia-areata-and-tinea-amici-(from-pets)-recognitions-and-the-steroid-misapplication-tinea-incognito-lesson (the topical-steroid-that-made-it-worse history worth asking about explicitly) - [[musculoskeletal/skin]], [[clinical-skills/communication]].**
-:::
-:::
+### Malaria {#malaria}
 
-::: quiz
-Fever, eosinophilia and migratory pulmonary infiltrates in a recently arrived migrant before starting corticosteroids should trigger exclusion of:
-- [x] Strongyloides stercoralis
-- [ ] Plasmodium falciparum
-- [ ] Toxoplasma gondii
-- [ ] Entamoeba histolytica
-::: solution
-**Löffler-type pulmonary infiltrates with eosinophilia reflect larval lung migration; steroids in an undiagnosed chronic carrier can trigger hyperinfection with Gram-negative sepsis - screen or presumptively treat before immunosuppression in at-risk patients ([[#def-helminths]], [[infectious-diseases/immunocompromised-host]], [[respiratory/interstitial-vascular-disease]]).**
-:::
-:::
+Malaria is the most important parasitic disease in the world and the most important cause of fever in travellers returning to the UK from the tropics. Five species infect humans: *P. falciparum*, *P. vivax*, *P. ovale*, *P. malariae* and *P. knowlesi*.
+
+The life cycle explains the clinical features:
+
+1. An infected mosquito injects **sporozoites**, which travel to the liver and multiply inside hepatocytes. This stage causes no symptoms and lasts at least about a week.
+2. Each infected hepatocyte releases thousands of **merozoites** into the blood, which invade red cells.
+3. Inside red cells the parasites mature from **ring forms** to trophozoites and **schizonts**, which burst and release new merozoites. The cycle takes about 48 hours for *P. falciparum*, *P. vivax* and *P. ovale*, 72 hours for *P. malariae* and 24 hours for *P. knowlesi*. Fever comes with each burst, although in falciparum malaria fever is often irregular.
+4. Some parasites become **gametocytes**, which a feeding mosquito takes up to complete the sexual cycle.
+
+*P. vivax* and *P. ovale* also leave dormant liver forms, **hypnozoites**, which can cause relapses months or years later. Clearing them needs a separate drug, such as primaquine or tafenoquine, which can cause haemolysis in people with G6PD deficiency, so G6PD status is tested first.
+
+*P. falciparum* causes almost all deaths. Infected red cells express a parasite protein that makes them stick to the walls of small blood vessels. Sequestered cells block the microcirculation of the brain, kidney and other organs, causing cerebral malaria, acute kidney injury, acidosis and death. Falciparum malaria can progress within hours in a non-immune traveller.
+
+Diagnosis uses blood films and rapid antigen tests. **Thick films** concentrate the blood and detect parasites; **thin films** show the species and allow the **parasitaemia**, the percentage of infected red cells, to be counted. A single negative test does not exclude malaria: UK practice is to repeat testing so that three samples are examined over 48–72 hours before malaria is excluded.
 
 ::: widget plot
-f: 100*exp(-0.5*x); 60*(1-exp(-0.4*x))*exp(-0.12*x); 90/(1+exp(-(x-2)))
-x: 0, 8
-y: 0, 105
-labels: \text{days after starting appropriate therapy},\ \%\text{index};\ \text{fever curve (amoebic abscess)};\ \text{CRP decay};\ \text{lesion size change (radiology lags)}
-caption: Clinical versus radiological response ([[#def-protozoa]]): fever falls within days of correct amoebic therapy and CRP over one to two weeks, but the liver lesion lags for months - imaging should not be used to judge early response, and persistence of a collection on scan alone should not trigger drainage or escalation ([[gastrointestinal/liver-disease]], [[microbiology/laboratory-diagnosis]]).
+f: min(p*10^(x/48), 100)
+x: 0, 120
+y: 0, 12
+sliders: p=0.05:0.01:1:0.01
+labels: \text{parasitaemia}\ (\%)
+caption: A simplified model of untreated falciparum parasitaemia, assuming a tenfold increase every 48-hour cycle. The slider sets the starting parasitaemia in per cent. A level that is barely detectable on a film can become life-threatening within a few days, which is why suspected malaria in a returning traveller is a same-day emergency. Real multiplication rates vary with the parasite, host immunity and synchrony of the cycle.
+:::
+
+::: example Fever after a visit to family {#ex-malaria}
+A 42-year-old woman returned from visiting relatives in Nigeria 12 days ago. She did not take antimalarial prophylaxis. She has fever, headache and vomiting, but is alert. A thin film shows *P. falciparum* ring forms in 60 of 2,000 red cells counted. Her red cell count is $4.5 \times 10^{12}$/L. Calculate the parasitaemia as a percentage and in parasites per µL, and interpret the result.
+::: solution
+**Parasitaemia** $= 60/2000 \times 100 = 3\%$.
+
+A red cell count of $4.5 \times 10^{12}$/L is $4.5 \times 10^6$ cells per µL, because 1 L is $10^6$ µL. Assuming one parasite per infected cell,
+
+$$
+0.03 \times 4.5 \times 10^6 = 135{,}000 \text{ parasites per }\mu\text{L}
+$$
+
+UK guidelines treat falciparum malaria with a parasitaemia above 2% as severe or high-risk, needing intravenous treatment even if the patient looks well, because parasitaemia can rise quickly and complications can develop within hours. She should be assessed for other features of severe malaria, such as reduced consciousness, acidosis, hypoglycaemia, anaemia and kidney injury, and managed with specialist input. Intravenous **artesunate** is the WHO-recommended first-line treatment for severe malaria, followed by a full oral course once she improves, according to current national guidance.
+
+People who grew up in malaria-endemic countries and now live in the UK are the largest group with imported malaria. Immunity wanes after leaving an endemic area, so "visiting friends and relatives" travellers are at real risk and benefit from pre-travel advice.
+:::
+:::
+
+## Helminths {#helminths}
+
+::: definition Helminths {#def-helminths}
+**Helminths** are multicellular worms. Three groups cause human disease:
+
+- **nematodes** (roundworms): *Ascaris*, hookworms, *Enterobius* (threadworm), *Trichuris* (whipworm), *Strongyloides*, *Toxocara* and the filarial worms;
+- **cestodes** (tapeworms): *Taenia saginata* and *Taenia solium*, and *Echinococcus*, which causes hydatid disease;
+- **trematodes** (flukes): *Schistosoma*, *Fasciola* and liver flukes such as *Clonorchis*.
+
+Unlike protozoa, most helminths **do not multiply inside the human host**. Each adult worm comes from a separate infective egg or larva, so the burden of worms, and the severity of disease, reflects the intensity of exposure. *Strongyloides* is the important exception.
+:::
+
+Helminths that migrate through tissue provoke a T-helper 2 response with **eosinophilia** and raised IgE. Unexplained eosinophilia in a person who has lived in or travelled to the tropics should prompt a search for helminths, particularly *Strongyloides* and *Schistosoma*. Worms that live only in the gut lumen may cause little eosinophilia.
+
+Some routes of infection are worth remembering:
+
+- **swallowed eggs**: *Ascaris*, *Trichuris*, *Enterobius* and *Toxocara*, and the eggs of *Taenia solium*, which cause **cysticercosis**: larval cysts in muscle and brain. Neurocysticercosis is a leading cause of acquired epilepsy in endemic areas;
+- **larvae in undercooked meat**: *Taenia saginata* from beef and *T. solium* from pork, which cause intestinal tapeworm;
+- **larvae penetrating the skin**: hookworm and *Strongyloides* from soil, and *Schistosoma* from fresh water containing infected snails;
+- **eggs from dog faeces**: *Echinococcus granulosus*, which forms hydatid cysts in the liver and lung. Humans are accidental intermediate hosts.
+
+Hookworms feed on blood in the small intestine and are an important cause of iron-deficiency anaemia worldwide. *Schistosoma haematobium* lives in the veins around the bladder; its eggs cause haematuria, fibrosis and, after years, squamous cell carcinoma of the bladder. *Schistosoma mansoni* eggs lodge in the liver and cause periportal fibrosis and portal hypertension.
+
+::: example Steroids for a man from the tropics {#ex-strongyloides}
+A 58-year-old man who grew up in rural Jamaica and moved to the UK 30 years ago is about to start high-dose corticosteroids for a newly diagnosed vasculitis. His blood count shows a mild eosinophilia. Why should he be tested for *Strongyloides* first, even though he left the tropics decades ago?
+::: solution
+*Strongyloides stercoralis* is unique among common human helminths because it can complete its life cycle within one host. Larvae hatched in the gut can re-enter the body through the bowel wall or perianal skin, a process called **autoinfection**. Infection can therefore persist for decades after the person leaves an endemic area, often with no symptoms and only mild or intermittent eosinophilia.
+
+Corticosteroids and other immunosuppressants remove the T-cell control of the worm and can trigger **hyperinfection**: massive autoinfection with larvae migrating through the lungs and other organs. Larvae carry gut bacteria with them, so hyperinfection is often accompanied by Gram-negative bacteraemia or meningitis, and mortality is high.
+
+He should have *Strongyloides* serology, and stool tests if available, before immunosuppression. If positive, treatment with ivermectin according to local guidelines prevents hyperinfection. Many centres treat empirically when testing would delay urgent immunosuppression in someone at high risk.
+:::
+:::
+
+::: warning A normal eosinophil count does not exclude helminth infection
+Eosinophilia is a useful clue, but its absence does not rule out worms. Eosinophil counts may be normal in chronic *Strongyloides* infection, in adult worms confined to the gut lumen, and in people taking corticosteroids, which suppress eosinophils. When the exposure history fits and the consequences of missing infection are serious, as before immunosuppression, test directly with serology and stool examination.
+:::
+
+## Diagnosis {#diagnosis}
+
+The stage of the life cycle present in the patient determines the test.
+
+- **Blood films** for malaria, and for microfilariae of some filarial worms, timed to when they circulate.
+- **Rapid antigen tests**: malaria antigen tests, cryptococcal antigen and *Giardia* and *Cryptosporidium* stool antigens.
+- **Stool microscopy** for ova, cysts and parasites, usually on three samples on different days, because shedding is intermittent. Multiplex PCR now replaces microscopy for common gut protozoa in many laboratories.
+- **Serology** for tissue parasites that are hard to sample, such as *Strongyloides*, *Schistosoma*, *Toxocara*, *Echinococcus* and *Toxoplasma*. Antibodies take weeks to appear after exposure, and a positive result may reflect past infection.
+- For fungi: **microscopy and culture** of skin, hair, nail and tissue; serum **galactomannan** for invasive aspergillosis; **β-D-glucan**, a cell wall component of many fungi, including *Pneumocystis* but not the Mucorales or *Cryptococcus*; and **histology** showing tissue invasion, the definitive proof of invasive mould infection.
+
+Imaging supports diagnosis. CT of the chest in a neutropenic patient may show nodules surrounded by a halo of ground-glass change, which suggests invasive mould infection.
+
+::: quiz
+A 45-year-old woman is in her third week of neutropenia after chemotherapy for acute myeloid leukaemia. She has persistent fever despite broad-spectrum antibiotics, and a CT scan shows several lung nodules with a surrounding halo. Which organism is most likely?
+- [ ] *Pneumocystis jirovecii*
+- [ ] *Cryptococcus neoformans*
+- [x] *Aspergillus fumigatus*
+- [ ] *Giardia duodenalis*
+::: solution
+Prolonged neutropenia is the main risk factor for **invasive aspergillosis**, and nodules with a halo sign are its typical early CT appearance. Hyphae invade blood vessels and cause small areas of haemorrhage around infarcted lung. *Pneumocystis* and *Cryptococcus* are mainly risks of T-cell deficiency, and *Giardia* does not cause lung disease. Serum galactomannan and bronchoscopy help confirm the diagnosis, and treatment with an anti-mould azole such as voriconazole is started without waiting for proof, following local guidance.
+:::
+:::
+
+::: history
+Alphonse Laveran, a French army doctor working in Algeria, saw malaria parasites in the blood of patients in 1880. In 1897 Ronald Ross, working in India, showed that mosquitoes transmitted malaria parasites of birds, and Giovanni Battista Grassi and colleagues in Italy soon showed that *Anopheles* mosquitoes transmit human malaria. Ross received the Nobel Prize in 1902 and Laveran in 1907.
+
+Patrick Manson, often called the father of tropical medicine, showed in 1877–78 that mosquitoes take up the microfilariae of filarial worms, the first demonstration that an insect could carry a human parasite. In medical mycology, Raymond Sabouraud's work on dermatophytes in the 1890s gave his name to the culture medium still used for fungi. The rise of invasive fungal infection came much later, as chemotherapy, transplantation and the HIV epidemic created large populations of people with impaired immunity.
 :::
 
 ## Where this leads
 
-Host-risk mapping in [[infectious-diseases/immunocompromised-host]] and [[immunology/immunodeficiency]]; antifungal and antiparasitic pharmacology in [[microbiology/antimicrobials]]; laboratory methods including microscopy and serology in [[microbiology/laboratory-diagnosis]]; tropical syndromes in [[infectious-diseases/tropical-infections]]; skin and nail disease in [[musculoskeletal/skin]].
-
-::: history
-**Medical mycology waited for stains and antibiotics: the early dermatophyte era (the Schönlein-Arnold-Gruby pedigree of ringworm causation-proof with Gruby's 1841 demonstration of fungal elements and the Davaine-anthrax-bacillus-parallel) and the first human actinomycosis descriptions of the 1840s and the Vuillemin naming of aspergillosis after the lamp-brush fungus, with Micheli's 1729 genus naming as prehistory; the Candida-and-surgery era - the post-antibiotic-era Staphylococcal and Candida superinfection recognitions of the 1950s and the amphotericin-deoxycholate story (the 1950s Squibb expedition to a Philippine soil sample that is antifungal history's founding dig, and nystatin before it) and the 5-fluorocytosine-serendipity-and-the-combination-rationale for cryptococcal disease - [[infectious-diseases/hiv]]; the endemic-mycoses-maps - the Darling-1906-Guatemala-histology-capture-and-Castellani-and-Alvarez's-and-DeJesus'-Latin-America-clarification (the "it is not reticuloendotheliosis, it is a fungus" fight that also produced the bat-bird-droppings-in-caves-chicken-coops-epidemiology) and the coccidioidomycosis-San-Quintin-valley-1914-1930s-epidemiology (the Posada-and-Roper-case and the army-airfield-and-dust-construction waves and the valley-fever-naming politics) - [[respiratory/interstitial-vascular-disease]]; the parasitology golden age - the Laveran 1880 observation of malaria pigment in a soldier's blood at Constantine and the Ross-and-Golgi vector and growth-cycle work and the Grassi-and-Feletti self-experiments feeding on infected mosquitoes with their later dispute over the transmission proof and the Manson guinea-worm water-flea and filarial-vector programmes (the Calabar jail insight of 1877 that mosquitoes carried filariae, won while he was working in Nigeria) and the onchocerciasis control story, from the vector-control schemes to the ivermectin donation programme - one of the great public-health decisions - [[public-health/global-health]]; and the modern-era - the AIDS-defining Cryptococcus and Talaromyces marneffei and microsporidia and isospora recognitions that founded opportunistic mycology - [[infectious-diseases/hiv]]; the immunocompromised-host-mould-era with the CT-halo-air-crescent-sign-semiology and the galactomannan-and-BD-G-and-T2-Magnetic-and-Cryptococcal-antigen-lateral-flow-tests (the point-of-care cryptococcal antigen revolution in Africa and the screen-and-treat strategy mortality trials) and the echinocandin-and-voriconazole-and-isavuconazole-and-liposomal-amphotericin-formulation-arsenal and the chronic-pulmonary-aspergillosis-rename-consensus and the WHO-fungal-priority-pathogens-list of the Candida auris panic (the intrinsic and acquired azole resistance and the clinical epidemiology of a fungus become superbug) - [[microbiology/antimicrobials]], [[clinical-skills/laboratory-tests]].**
-:::
+Antifungal and antiparasitic drugs are covered in [[microbiology/antimicrobials]], and the laboratory tests in [[microbiology/laboratory-diagnosis]]. The clinical approach to the returning traveller, malaria and tropical infections is in [[infectious-diseases/tropical-infections]]. Infections in people with impaired immunity, including invasive fungal disease, are in [[infectious-diseases/immunocompromised-host]] and [[infectious-diseases/hiv]].
 
 ::: summary
-- Fungal disease splits by host: surface disease is common and cosmetic-to-miserable, invasive disease is immune-state-specific and moves in hours.
-- Risk tables beat reflex testing: neutropaenia and moulds, ketoacidosis and Mucorales, lines and Candida, T-cell failure and Pneumocystis and Cryptococcus.
-- Anti-fungal toxicity and interactions are pharmacology finals material: amphotericin's kidneys and electrolytes, azoles' CYP chaos and QTc, echinocandins' comparative grace.
-- Parasitic disease is exposure history first, slide second: think before ordering, and know which tests (serology, PCR, concentrated stools, thick film) answer which question.
-- Strongyloides before steroids is a patient-safety rule with a mortality attached; malaria of any species is a same-hour diagnosis.
-- Radiology lags clinical response in amoebic and fungal lesions; treat the trajectory of fever and inflammatory markers, not the picture, when judging early success.
-:::
-
-::: exercise Choose prophylaxis in haematology {level=1}
-Write the antifungal prophylaxis policy for: AML induction, allogeneic HSCT with GVHD, and rituximab-only lymphoma regimens, with the interaction caveats.
-::: solution
-**Risk-stratified-antifungal-prophylaxis ([[#def-invasive]], [[microbiology/antimicrobials]], [[pharmacology/metabolism-excretion]]): AML-induction - the posaconazole-mould-active-prophylaxis-with-the-level-monitoring-and-QTc-and-vincristine-adjacency-and-the-azole-chemotherapy-interactions (the venetoclax-dose-halving-and-vincristine-neurotoxicity-augmentation) and the micafungin-alternatives and the breakthrough-mould-on-azole-recognition (the Mucorales-Zygomycetes-trapping) - [[blood/leukaemia]]; allo-HSCT - the fluconazole-from-engraftment-to-GVHD-coverage and the mould-active-upgrade-in-GVHD-with-the-letermovir-and-antibacterial-and-antiviral-and-PJP-polypharmacy-and-QTc-budget-and-the-CYP-calcineurin-inhibitor-level-chase (the tacrolimus-level-tripling-classic) - [[immunology/transplant-tumour-immunology]]; rituximab-only - usually-no-antifungal-needed-with-the-HBV-reactivation-prophylaxis-the-real-issue (nucleos(t)ide-cover-and-serology-rules) - [[gastrointestinal/liver-disease]]; and the stewardship layer - the unit-level-invasive-fungal-infection-rates-and-breakthrough-definitions-and-the-environmental-controls (no-construction-dust-intake-and-HEPA-for-new-builds-and-the avoided-potted-plants rule read as evidence-graded) and the prophylaxis-adherence-audits and the secondary-prophylaxis-lifetimes-in-re-induction - [[infectious-diseases/stewardship-outbreaks]], [[public-health/environmental-occupational]].**
-:::
-:::
-
-::: exercise Screen before steroids {level=1}
-A COPD patient about to take prolonged oral corticosteroids for "overlap" originates from Jamaica and has positive Strongyloides serology from a check-up. Manage.
-::: solution
-**Pre-steroid-parasite-medicine ([[#def-helminths]], [[respiratory/asthma-copd]], [[infectious-diseases/immunocompromised-host]]): the reading - chronic strongyloidiasis with positive serology and possibly no symptoms and no eosinophilia (absent-in-half-the-carriers-truth) and the hyperinfection-risk-under-both-oral-and (less-but-reported)-inhaled-corticosteroids (the COPD-case-report-literature) and HTLV-1-endemic-origin-association-Jamaica-and-Caribbean-and-West-Africa-and-Japan-and-interactions-with-steroid-driven-dissemination; the treatment - ivermectin-first-line-with-the-repeat-dose-for-proven-clearance and the stool-and-serology-follow-up-strategy (the titres-fall-slowly-interpret-with-care caveat) and the loa-loa-density-safety-geography-check-before-high-dose-or-repeated-ivermectin; the respiratory overlay - the COPD-steroid-benefit-versus-parasite-risk-rebalance (the inhaled-steroid-versus-LAMA/LABA-versus-pioglitazone-and-macrolide-prevention-and-pulmonary-rehabilitation-alternatives that spare systemic steroids and the relapse-reducing smoking-cessation-airway-clearance and vaccination - and the treat-the-ASTHMA-COPD-overlap-label-honestly review) - [[respiratory/asthma-copd]]; and the systems rule - the pre-steroid-screening-candidates-list (the biologic-and-transplant-and-lymphoma-and-asthma-clinic-populations-from-endemic-areas) as a trust policy rather than one-alert-clinician memory and the shared-care GP-record entry that prevents the next course being the bad one - [[clinical-skills/patient-safety]], [[public-health/determinants-inequalities]].**
-:::
-:::
-
-::: exercise Judge a hydatid incident {level=2}
-A laparoscopic cholecystectomy in an undiagnosed hepatic hydatid cyst spills contents; the patient becomes wheezy and hypotensive intra-operatively, stabilises, and the "cyst with daughter cysts" is realised on the post-op CT.
-::: solution
-**Spilled-hydatid-medicine ([[#def-helminths]], [[gastrointestinal/liver-disease]], [[immunology/hypersensitivity]]): the immediate - anaphylaxis-management (adrenaline-and-fluids-and-steroids-as-part-of-anaphylaxis-medicine - covered in [[immunology/hypersensitivity]]) and the operation-note-honesty (what-spilled-where-and-how-much-irrigation-and-suction) and the senior-hepatobiliary-and-infection-referral-same-day; the anti-echinococcal response - the albendazole-early-with-the-adjacency-benefit-versus-neoadjuvant-logic and the duration-by-guideline and the hepatic-and-pregnancy-and-blood-count-monitoring and the peritoneal-secondary-echinococcosis-years-later-risk-explained-and-surveillance-imaging-schedule-agreed (the 5-10-year-peritoneal-recurrence-vigilance that patients forget and the records must not); and the diagnosis retrofit - the E-granulosus-versus-multilocularis-distinction-changing-management (the alveolar-echinococcosis-treat-continuously-with-albendazole-and-resect-like-a-cancer pathway) - [[pathology/cancer-diagnosis]] and the serology-with-negative-early-caveats and the peritoneal and pulmonary spread imaging; and the incident response - the duty-of-candour-conversation-and-the-literature-informed-follow-up-plan-and-the-surgeon-support-and-review-and-the-hydatid-risk-geography-history-taking (the dog-and-sheep-farming-and-fox-and-taiga-contacts the routine history misses) and the regional-elimination-programme-awareness (the one-case-in-a-non-endemic-country is still a notification-and-source question for public health in some settings) - [[medical-ethics-law/professionalism-regulation]], [[public-health/communicable-disease-control]], [[clinical-skills/communication]].**
-:::
-:::
-
-::: exercise Build the parasitology test order {level=3}
-Design the laboratory and clinical interface for "investigate possible helminth infection in the returning traveller and migrant" so tests answer questions rather than accumulate positives.
-::: solution
-**Pre-test-probability-engineering ([[#def-protozoa]], [[#def-helminths]], [[microbiology/laboratory-diagnosis]], [[public-health/determinants-inequalities]]): the structured request - the exposure-questionnaire-built-into-the-order-form (freshwater-geography-foods-soil-contacts-vector-exposures-duration-timing) forcing geography-and-syndrome-matched panels rather than "parasite screen" and the serology-versus-stool-versus-blood-film-versus-biopsy-versus-imaging decision aids and the cross-reaction-and-persistence-caveats printed (Strongyloides-versus-filarial-versus-Toxocara-serological-overlap and post-treatment titre kinetics and the stool-ova-counts-only-semi-quantitative-for-intestinal-species-with-multiple-samples-rules) - [[clinical-skills/laboratory-tests]]; the syndromic shortlists - eosinophilia-protocols (the malaria-and-babesia-do-not-cause-eosinophilia-teaching-point and the Strongyloides-schisto-filarial-Toxocara-Trichinella-helminth-Löffler-ABPA-adjacency-and-the-drug-and-malignancy-and-adrenal-and-autoimmune-non-infectious-causes) - [[blood/haematopoiesis]]; chronic-diarrhoea-protocols (the Giardia-and-Crypto-and-Cyclospora-and-microsporidia-and-strongyloides-and-amoeba-and-non-infectious-coincidence) - [[gastrointestinal/digestion-absorption]]; and biliary-and-liver-lesion-protocols with travel; the quality system - the microscopy-competency-rostering (the species-level-reporting-degradation when hands-dwindle) and the external-quality-assessment and the turnaround-commitments for the fever-not-tropics-adjacent-tests (the same-day-malaria-film-SLA) and the reflex-PCR-availability-with-clinician-interpretation-support (a molecular panel positive for a non-pathogenic Blastocystis or Chatio? - no: the Blastocystis-and-Chilomastix-benign-species-commentary that prevents needless treatment) - [[microbiology/laboratory-diagnosis]]; and the equity and access layer - the migrant-screening-opportunities (the new-comer-HBV-and-hs-TB-and-Strongyloides-and-schisto-and-helminth-packages-that-work-when-voluntary-and-supported-not-coerced) - [[public-health/screening]] and the interpreter-supported travel histories (because "did you swim in a river" needs the right question in the right language to be a diagnostic tool) - [[clinical-skills/history-taking]], [[public-health/prevention-promotion]].**
-:::
+- Fungi are eukaryotes with a chitin and β-glucan wall and ergosterol in their membrane; these are the main antifungal targets.
+- Fungi grow as yeasts, moulds or dimorphic forms. Infection may be superficial, subcutaneous or invasive.
+- Immune defects predict fungal infection: neutropenia leads to *Aspergillus*, Mucorales and invasive *Candida*; T-cell defects lead to *Pneumocystis*, *Cryptococcus* and endemic mycoses; central lines lead to candidaemia.
+- Protozoa are single-celled and multiply in the host. Malaria's life cycle explains its fever, relapses (vivax and ovale hypnozoites) and the severity of falciparum infection.
+- Suspected malaria in a returning traveller is an emergency; parasitaemia above 2% in falciparum malaria is treated as severe in UK guidance.
+- Most helminths do not multiply in humans, so disease reflects exposure; tissue-migrating worms cause eosinophilia. *Strongyloides* persists for decades and causes hyperinfection with immunosuppression.
+- The test depends on the life-cycle stage present: blood films, antigen tests, stool microscopy or PCR, serology, and histology.
 :::
 
 ## Exercises
 
-::: exercise Read the chest CT of a neutropenic patient {level=1}
-Prolonged neutropaenia after induction chemotherapy, fever despite 6 days of meropenem, pleuritic pain; CT shows a 2 cm nodule with a halo. What is it and what do you do?
+::: exercise Calculate a parasitaemia {level=1 check="3"}
+On a thin blood film, 45 of 1,500 red cells contain *P. falciparum* parasites. What is the parasitaemia as a percentage?
+::: hint
+Parasitaemia is infected cells divided by cells counted, times 100.
+:::
 ::: solution
-**Probable-invasive-aspergillosis-medicine ([[#def-invasive]], [[infectious-diseases/immunocompromised-host]], [[microbiology/laboratory-diagnosis]]): the reading - the halo-sign-haemorrhagic-adjacent-nodule-and-the-air-crescent-as-later-signs-with-their-specificity-caveats and the galactomannan-serum-and-BAL-sensitivity-numbers (the azole-prophylaxis-lowering-sensitivity) and the BAL-culture-and-PCR-and-cytology-and-Pneumocystis-and-mucor-co-testing on the same sample (the isavuconazole-versus-liposomal-amphotericin-branch if mucor is suspected - the halo points to Aspergillus but Mucorales and Fusarium and resistant-Candida and Pseudomonas-ecthyma-need-ruling-out); the treatment - the voriconazole-with-TDM-and-hepatic-and-visual-and-photoprotection-and-skin-cancer-long-course-and-QTc-and-interaction-audit (the vincristine-and-calcineurin-inhibitor-and-chemotherapy-co-administration) versus liposomal amphotericin for azole-intolerant or mould-suspect and the isavuconazole-shortening-QTc-alternative and the galactomannan-and-CT-trend-monitoring and the antifungal prophylaxis-recheck (was posaconazole-therapeutic-and-adherent?) - [[pharmacology/metabolism-excretion]], [[pharmacology/patient-variation]]; and the leucocyte question - the G-CSF-and-steroid-sparing-and-anticipating-immune-recovery-inflammatory-pulmonary-IRIS-like-flare (the neutrophil-return-infiltrates-worsening-and-steroid-rescue) and the secondary-antibacterial-reduction-debate and the chest-physio-and-oxygen-and-NIV-versus-HFNC-with-caution-in-profound-hypoxaemia and the transplant-and-prognosis-conversations with antifungal-azoles-and-chemotherapy-sequencing-again - [[blood/haematopoiesis]].**
+$45/1500 \times 100 = 3\%$. In falciparum malaria this is above the 2% threshold that UK guidelines treat as severe or high-risk disease.
 :::
 :::
 
-::: exercise Advise a returning traveller with eosinophilia {level=1}
-Eosinophils 2.1 in a missionary returning from 2 years walking in rural tropical communities, no symptoms. Plan, concisely.
+::: exercise Hosts and vectors {level=1}
+For *Toxoplasma gondii*, name the definitive host and explain how humans are infected. Are humans definitive or intermediate hosts?
+::: hint
+In which animal does the parasite reproduce sexually?
+:::
 ::: solution
-**Asymptomatic-eosinophilia-in-a-returner ([[#def-protozoa]], [[#def-helminths]], [[infectious-diseases/tropical-infections]]): the exposure-reducing history - freshwater bathing (schisto-and-helminth-migration), barefoot soil (hookworm-Strongyloides), undercooked fish (clonorchis-diphyllobothrium-and-gnathostoma), pork and beef (Taenia-and-Trichinella-and-Sarcocystis), travel to Loa-endemic Central Africa (the treatment-safety question), and duration-and-rural-versus-urban; the targeted tests - the timed-stool-ova-and-parasite-and-SM-cultures-for-Strongyloides-and-the-Schisto-serology-and-urine-and-stool-PCR-and-the-Toxocara-and-filarial (Wuchereria-Loa-Oncho-depending-on-geography) serologies and the blood-film-timed-for-microfilaria-periodicity-if-indicated and the Strongyloides-serology-cross-reaction-notes and the Löffler-hyper IgE-Allergic-broncho-pulmonary-mycosis-overlap-consideration of Aspergillus-sensitisation (the ABPA workup in asthmatics with migratory infiltrates); the overtreatment-question answered - the eosinophilia-below-mild-and-persistent-workup-versus-empiric-praziquantel-or-ivermectin-algorithms-versus-referral-to-travel-medicine-clinics (the "treat for everything" approach with its false reassurance and Loa-safety-risk) and the malaria-and-Babesia-not-considered-with-eosinophilia-hint (they don't cause eosinophilia - a useful negative) - [[blood/haemoglobin-disorders]] - eosinophils belong with [[blood/haematopoiesis]]; and the follow-up - the-interpret-and-reassure-letter and the repeat-count-at-3-months (normalising means the exposure-response settled) and the re-exposure-counselling for the next posting and the schisto-reinfection-and-treat-the-community-not-just-the-traveller reality - [[public-health/global-health]], [[clinical-skills/communication]].**
+The **cat**, and other members of the cat family, is the definitive host: sexual reproduction takes place in the cat's gut, and oocysts are shed in its faeces. Humans are infected by swallowing oocysts from cat faeces, in soil, cat litter or unwashed vegetables, or by eating tissue cysts in undercooked meat. A primary infection in pregnancy can cross the placenta. Humans are **intermediate hosts**: the parasite forms tissue cysts in muscle and brain but does not reproduce sexually.
 :::
 :::
 
-::: exercise Manage a positive beta-D-glucan {level=2}
-An ICU patient on broad antibiotics and renal replacement has a positive BDG, negative cultures and new bilateral ground-glass; not hypoxic out of proportion. Interpret and act.
+::: exercise Targets in the fungal cell {level=1}
+Name three structures or molecules of fungi that are targets of antifungal drugs, and the drug class that acts on each.
+::: hint
+Think about the membrane sterol, its synthesis, and the cell wall.
+:::
 ::: solution
-**False-positive-land-and-what-to-do ([[#def-invasive]], [[microbiology/laboratory-diagnosis]], [[emergency-critical-care/critical-care]]): the assay's truths - BDG detects Pneumocystis, Candida and Aspergillus (not Mucorales-or-Cryptococcus) but has documented false positives from cellulose-membranes-in-some-dialysis-filters? (largely-historic), gauze-and-fabric-contact, some beta-lactams (the piperacillin-tazobactam-and-amoxicillin-clavulanate-formulation-history), IV immunoglobulin and albumin and some blood products and Glucomannan-containing foods - the patient's dialysis circuit matters and the antibiotics matter and the positivity threshold matters; the clinical reading - the pre-test-probability reframe (in an ICU patient on broad antibiotics with no prophylaxis, the positive predictive value for invasive disease is not great but is not zero and Pneumocystis-with-mild-hypoxaemia-must-not-be-missed-ask-why-not-prophylaxed) and the paired CT and galactomannan and respiratory PCR panels and induced-sputum-versus-BAL-decision and the HIV-test-STAT conversation and the empiric-treat-versus-bronchoscopy-urgent trade-off by trajectory; the action - repeat-and-confirm-rather-than-react-to-one-number and treat-on-clinical-trajectory-not-assay-alone and the antifungal-stewardship (the empiric-echinocandin-versus-nothing and the de-escalation at 72 hours on cultures and galactomannan and BAL results) and the BDG-guided-stopping-trials-read-for-what-they-show-in-your-population; and the system - the assay-limitations-in-the-report (the comment that prevents 3 days of caspofungin for a gauze artefact) and the ICU-antifungal-prescribing-audit and the lab-clinician-feedback-loop about the new dialysis membranes - [[infectious-diseases/stewardship-outbreaks]], [[pharmacology/adverse-reactions]].**
+**Ergosterol** in the membrane is bound by **polyenes** such as amphotericin B. The **ergosterol synthesis pathway**, specifically the enzyme lanosterol 14α-demethylase, is blocked by **azoles**. **β-glucan** synthesis in the cell wall is blocked by **echinocandins**. Flucytosine, which is converted inside fungal cells into a drug that disrupts nucleic acid synthesis, is a fourth option.
 :::
 :::
 
-::: exercise Run a tropical-infections triage for a febrile returner {level=3}
-Design your emergency department's 24/7 algorithm for "fever after the tropics", including malaria, dengue, and high-consequence-pathogen screening, and its governance.
+::: exercise Parasites per microlitre {level=2 check="80000"}
+A patient's *P. falciparum* parasitaemia is 2%, and the red cell count is $4.0 \times 10^{12}$/L. How many parasitised red cells are there per microlitre of blood?
+::: hint
+Convert the red cell count to cells per µL first. One litre is $10^6$ µL.
+:::
 ::: solution
-**Fever-after-tropics-is-a-system ([[#def-protozoa]], [[#def-invasive]], [[emergency-critical-care/acute-assessment]], [[public-health/communicable-disease-control]]): the front door - the travel-question-in-the-triage-vitals-set (destination-dates-prophylaxis-fever-onset-with-the-incubation-table-decision-support: <7-days-dengue-chik-Zika-TB-Typhoid-acute-malaria-possible; >6-weeks-falciparum-still-possible-vivax-relapse-and-enteric-fever-and-hepatitis-and-acute-HIV-and-AIDS-seroconversion; months-years-malaria-in-persistent-headache?) and the red-flag-identification for non-immune severe presentations and the same-hour-malaria-testing (the POCT-falciparum-only-antigen-test-trap missing non-falciparum and the thick-and-thin-film-Giemsa-with-expert-confirmation and the parasite-count-in-severe-disease and the do-not-wait-for-results-if-clinically-severe-treat-empirically-with-IV-artesunate-and-serious-malaria-criteria) - [[microbiology/laboratory-diagnosis]]; the disease-specific-hour-one rules - the dengue-plasma-leak-phase-day-4-6-counting-and-no-NSAIDs-and-the-platelet-transfusion-not-prophylactic-and-fluid-stewardship-with-haematocrit-trends-versus-haemoglobin-fall-meaning-bleeding and the enteric-fever-blood-culture-before-antibiotics-and-the-rose-spot-and-perforation-recognition and the cerebral-malaria-GCS-management-and-airway-and-hypoglycaemia-monitoring (the quinine-era-hypoglycaemia-lesson-lessons? keep: the Artesunate-is-safer-point) - [[emergency-critical-care/shock-fluids]], [[infectious-diseases/tropical-infections]]; the high-consequence-pathogen (HCP) layer - the travel-plus-contact-plus-haemorrhagic-exposure screening (the Marburg-Ebola-CCHF-Lassa-and-plague-and-pulmonary-haemorrhagic-fever-question-set and the isolated-in-a-private-room-now-and-do-not-send-routine-specimens-and-call-infection-doctors-and-PHE/UKHSA-with-the-reference-lab-pathway and the specimen-packaging-legality (the Category A paperwork) and the staff-support-and-decontamination) and the safe-decisions-under-uncertainty (the test-treat-isolate-escalate balance documented) - [[public-health/communicable-disease-control]], [[clinical-skills/patient-safety]]; and the governance - the ED-malaria-testing-turnaround-and-positivity-confirming-sop with a microscopist-on-call roster and the travel-history-data-quality-audit and the sepsis-and-tropical-disease-dual-pathway (the sepsis-six-still-applies) and the equity review (who travels-visiting-friends-and-relatives-and-missing-prophylaxis-and-the-language-access-and-cost-barriers-to-travel-clinics) and the annual-mock-exercise-with-the-HCP-kit-checked - [[public-health/determinants-inequalities]].**
+$4.0 \times 10^{12}$/L $= 4.0 \times 10^6$/µL. Then $0.02 \times 4.0 \times 10^6 = 80{,}000$ parasitised cells per µL.
+:::
+:::
+
+::: exercise A fever six months after travel {level=2}
+A 27-year-old man returned from six months working in rural India. He took no prophylaxis. Six months after returning he develops fever every other day, and a blood film shows *P. vivax*. He was treated for malaria abroad. Explain how he can have malaria so long after leaving, and what extra treatment he needs.
+::: hint
+Which species leave dormant forms in the liver?
+:::
+::: solution
+*P. vivax* (and *P. ovale*) can form **hypnozoites**, dormant parasites in liver cells. These can activate weeks to months, or occasionally years, later and release merozoites into the blood, causing a **relapse**. Treatment of the blood stage alone, which is probably what he received abroad, does not clear hypnozoites.
+
+He needs treatment for the blood-stage infection and then a drug that kills hypnozoites, such as primaquine or tafenoquine. Both can cause serious haemolysis in **G6PD deficiency**, so G6PD activity must be measured first, following national guidelines.
+:::
+:::
+
+::: exercise Neutropenia and the halo sign {level=2}
+Explain why invasive aspergillosis is a disease of prolonged neutropenia, while Pneumocystis pneumonia is a disease of low CD4 counts.
+::: hint
+Compare the size of the fungal form in tissue with that of a phagocyte, and ask which cells are needed to kill each.
+:::
+::: solution
+*Aspergillus* enters the lung as spores that germinate into **hyphae**, which are too large for single phagocytes to engulf. **Neutrophils** attack hyphae from outside with oxidants and enzymes. Without neutrophils, hyphae grow freely and invade blood vessels, so the risk rises with the depth and duration of neutropenia.
+
+*Pneumocystis* lives in the alveoli and is controlled by **alveolar macrophages** activated by CD4 T-cell help. When CD4 counts fall below about 200 cells/µL, macrophages can no longer clear it. Neutropenia alone does not usually cause Pneumocystis pneumonia, and a low CD4 count alone does not usually cause invasive aspergillosis.
+:::
+:::
+
+::: exercise Eosinophilia after a lake swim {level=3}
+A 23-year-old student returns from three months in Malawi, where she swam in Lake Malawi. Four weeks after her last swim she develops fever, cough, urticaria and an eosinophil count of $3.2 \times 10^9$/L. Her friend who swam with her is well. What is the likely diagnosis, why might the first serology test be negative, and how should both travellers be managed?
+::: hint
+Which helminth enters through the skin in fresh water, and how long does antibody take to develop?
+:::
+::: solution
+The likely diagnosis is **acute schistosomiasis** (Katayama syndrome). Cercariae released by infected freshwater snails penetrate the skin; as the young worms mature and start laying eggs, a hypersensitivity reaction causes fever, cough, urticaria and marked eosinophilia, typically several weeks after exposure.
+
+Serology may be **negative** at this stage, because antibodies take weeks to develop, and eggs may not yet appear in urine or stool. Testing is usually repeated about three months after the last exposure.
+
+Management is specialist. **Praziquantel** acts mainly on adult worms, so it is usually given, or repeated, once the worms have matured, and corticosteroids may be used for severe acute symptoms. The well friend shared the exposure and should also be screened with serology after the appropriate interval and treated if positive, because untreated infection can cause long-term damage to the bladder, bowel or liver.
+:::
+:::
+
+::: exercise A liver lesion in a traveller {level=3}
+A 35-year-old man returns from six months in Mexico with three weeks of fever and right upper quadrant pain. Ultrasound shows a single 7 cm cavity in the right lobe of the liver. He had brief diarrhoea while travelling. Give a differential diagnosis, explain the most likely cause and how it would be confirmed.
+::: hint
+Think of bacterial, protozoal and helminth causes of a liver cavity.
+:::
+::: solution
+The differential diagnosis includes a **pyogenic liver abscess** (often from biliary or bowel sources, with *Klebsiella*, *E. coli*, streptococci or anaerobes), an **amoebic liver abscess**, and an infected **hydatid cyst**. A tumour with central necrosis is also possible.
+
+The most likely cause is an **amoebic liver abscess**. *Entamoeba histolytica* cysts are swallowed in contaminated food or water. Trophozoites invade the colon wall and travel through the portal vein to the liver, where they destroy tissue to form an abscess. It is commonest in young men, and only a minority have current diarrhoea.
+
+Diagnosis is by **amoebic serology**, which is usually positive in liver abscess, together with imaging. Stool microscopy is often negative at this stage. Aspiration is not routinely needed and is reserved for diagnostic doubt, very large abscesses or failure to respond. Treatment is with metronidazole, followed by a luminal agent to clear cysts from the gut, following specialist guidance. If a hydatid cyst were suspected, echinococcal serology and imaging features would be checked before any aspiration, because rupture can cause anaphylaxis and spread.
 :::
 :::

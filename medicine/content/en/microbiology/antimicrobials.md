@@ -1,149 +1,332 @@
-Antimicrobial pharmacology is where molecular biology becomes a prescription: **every drug exploits a bacterial or fungal or parasitic structure or enzyme, every exploit has a resistance mechanism, and the prescriber's real task is matching drug, dose, duration and source control to a patient whose kidneys, microbiome and future infections are also on the chart.** This chapter covers the drug classes by target, resistance mechanisms and epidemiology, and the stewardship and individual-dosing frameworks that bind them.
+Antimicrobial drugs are among the most effective treatments in medicine and among the most often misused. An antibiotic given promptly for meningococcal sepsis saves a life; the same drug given for a viral cold does nothing for the patient, may cause harm, and selects for resistant bacteria that will affect other people. Good prescribing therefore needs two kinds of knowledge: how the drugs work and how resistance arises.
 
-This chapter covers cell-wall and membrane agents, protein and nucleic-acid inhibitors, antifolates and others, antifungals and antiparasitics, resistance mechanisms and their genetics, and dosing and stewardship in practice.
+The principles in this chapter are the reasons behind the choices in local antibiotic guidelines. They explain why a drug is first-line for one infection and useless for another, why some drugs are given as a single daily dose and others as continuous infusions, and why a prescription should be reviewed after two or three days.
 
-## Drugs by target
+This chapter covers the principles of antimicrobial action, the main antibacterial classes grouped by target, antiviral, antifungal and antiparasitic drugs, pharmacodynamics, the mechanisms and spread of resistance, and antimicrobial stewardship. Doses and regimens are not given: they come from the BNF and local guidelines for each patient.
 
-::: definition Cell wall and membrane agents {#def-cellwall}
-**Beta-lactams and their chemistry (the thiazolidine-or-fused-ring-beta-lactam-acyl-enzyme-trapping-PBPs-with-transpeptidation-halt-and-the-autolysin-dependent-kill and the time-dependent-killing-philosophy-behind-extended-and-prolonged-infusions and the allergy-cross-reactivity-chemistry that makes most cephalosporin-and-carbapenem-use-safe-in-penicillin-allergy and the side-chain-rules - covered with delabelling in [[immunology/hypersensitivity]]); the penicillin families (narrow-spectrum-phenoxymethylpenicillin-for-strep-and-the-anti-staphylococcal-flucloxacillin-with-its-cholestatic-hepatitis-and-line-and-healing-honesty and the aminopenicillins-with-atypical-hazard-and-listéria-cover and the ureidopenicillins-anti-pseudomonal-era and the penicillin-G neurotoxicity in renal failure lesson); the cephalosporin generations as a story of Gram-negative trade-offs (Gram-positive-to-Gram-negative-and-back-again with the generation-numbers-not-being-a-ladder and the CNS-penetration-shortlist (the ceftriaxone-and-cefotaxime-meningitis-workhorses and the ceftazidime-and-cefepime-anti-pseudomonal-with-cefe-pime-neurotoxicity-in-renal-failure) and the ceftriaxone-biliary-sludge-and-neonatal-calcium-co-precipitation-and-biliary-pseudolesion and the C5-methylthiotetrazole-side-chain-bleeding-and-disulfiram-reactions-of-the-older-ones and the ceftaroline-MRSA-exception and the ceftolozane-tazobactam-and-ceftazidime-avibactam-and-cefiderocol combinations answering the MDR-Gram-negative question); the carbapenems (the the ESBL-defeat-and-carbapenemase-selection-consequence that is their stewardship headline) and the monobactam aztreonam (the Gram-negative-only niche and ceftazidime side-chain allergy cross-reaction) and the beta-lactamase-inhibitor-evolution (clavulanate-sulbactam-tazobactam-versus-avibactam-and-vaborbactam-and-relebactam-and-durlobactam-with-class-A-and-C-versus-B-coverage-and-the-inhibitor-own-PBP-profile-contribution); and the glycopeptides-lipoglypeptides-and-cell-membrane-hitters (vancomycin's-D-Ala-D-Ala-binding-and-nephrotoxicity-and-AUC-dosing-and-red-man-and-VRE-and-hVISA-MIC-creep-lessons and teicoplanin-and-telavancin-and-oritavancin-and-dalbavancin-with-once-weekly-daptomycin-pulmonary-surfactant-inactivation-trap and the polymyxins-colistin-with-nephro-and-neurotoxicity-and-inhaled-adjacency-and-heteroresistance-monitoring and the fosfomycin-urinary-and-combination-niche-and-oral-absorption-variability and the daptomycin-CPK-monitoring-and-EOS-pneumonitis) - [[microbiology/laboratory-diagnosis]] for susceptibility and [[pharmacology/dosing-principles]] for the infusion pharmacodynamics.**
+## Principles {#principles}
+
+An antimicrobial must harm the microbe more than the host. This **selective toxicity** depends on a target that the microbe has and the host lacks, or a target that differs enough between them. Bacterial peptidoglycan has no human equivalent, so penicillins are very safe; fungal and human cells are both eukaryotic, so antifungals tend to be more toxic.
+
+Several terms describe what a drug does and to which organisms.
+
+- **Spectrum** is the range of organisms a drug acts on. A **narrow-spectrum** drug, such as flucloxacillin, acts on a limited group; a **broad-spectrum** drug, such as meropenem, acts on many Gram-positive, Gram-negative and anaerobic bacteria.
+- **Bactericidal** drugs kill bacteria; **bacteriostatic** drugs stop their growth and rely on host defences to clear them. The distinction matters most where host defences are weak, as in endocarditis, meningitis and neutropenia, where bactericidal drugs are preferred.
+- **Empirical** therapy is started before the organism is known, based on the likely causes of the syndrome and local resistance patterns. **Targeted** therapy is chosen once culture and susceptibility results are available, and should usually be narrower.
+
+## Antibacterial drugs by target {#targets}
+
+::: definition Drugs acting on the cell wall and membrane {#def-cellwall}
+**β-lactams** bind and inactivate **penicillin-binding proteins** (PBPs), the enzymes that cross-link peptidoglycan. The weakened wall fails, and growing bacteria lyse. The group includes:
+
+- **penicillins**: benzylpenicillin, amoxicillin, flucloxacillin (stable to staphylococcal β-lactamase), and piperacillin;
+- **cephalosporins**, whose Gram-negative activity generally increases from early to later generations; none is active against enterococci, *Listeria* or MRSA, except ceftaroline and ceftobiprole for MRSA;
+- **carbapenems**, such as meropenem, the broadest of the group;
+- **monobactams** (aztreonam), active only against Gram-negative bacteria.
+
+**β-lactamase inhibitors**, such as clavulanic acid, tazobactam and avibactam, are combined with β-lactams to protect them from some β-lactamases.
+
+**Glycopeptides** (vancomycin and teicoplanin) bind the end of the peptidoglycan building block and block its incorporation. They are large molecules that cannot cross the Gram-negative outer membrane, so they act only on Gram-positive bacteria, including MRSA.
+
+Drugs acting on membranes are **daptomycin**, which depolarises Gram-positive membranes, and the **polymyxins** (colistin), which disrupt the Gram-negative outer membrane and are a last-resort option against highly resistant Gram-negative bacteria.
 :::
 
-::: definition Protein and nucleic acid inhibitors {#def-proteinsynthesis}
-**Ribosome agents (the aminoglycosides - concentration-dependent-kill-and-post-antibiotic-effect-and-once-daily-dosing-and-therapeutic-drug-monitoring-and-nephrotoxicity-usually-reversible-and-cochlear-vestibular-toxicity-irreversible-and-monomitoring-strategies-and-the-neuromuscular-blockade-caution-and-painful-injections-with alternative routes and the resistance by modifying enzymes-and-modification-and-efflux; the tetracyclines and glycylcyclines with their chelation and food interactions-and-phototoxicity-and-pseudotumor-cerebri-and-teeth-and-bone-pregnancy-rules-and-IV-site-pain-and-the-eravacycline-and-tigecycline-back-to-broadness-including-MRSA-and-CRE-with-low-serum-levels-avoid-bacteraemia-if-possible; the macrolides-and-ketolides - motilin-receptor-gastric-motility-side-effects-and-QTc-and-CYP3A4-inhibition-and the QTc drug-interaction emphasis and the diffuse-pan-susceptibility-erosion-and-the-biofilm-anti-inflammatory-use-in-bronchiectasis and the azithromycin chronic-lung-disease prevention trials with deafness and QTc long-term cautions; the clindamycin - toxin-suppression-rationale-and-C.diff-risk-and-inducible-resistance-D-test-and-the-community-MRSA-skin-niche; and the oxazolidinones - linezolid-with-MAO-inhibition-and-serotonin-syndrome-and-myelosuppression-and-neuropathy-with-duration-and-TDM-and-MAOI-food-counselling and the the the newer oxazolidinones and sparsomycin-cousins not-yet-routine); and the nucleic-acid agents (the fluoroquinolones - DNA-gyrase-and-topoisom_IV with concentration-dependent-kill-and-tendon-and-aortic-and-retinal-and-neuropathy-and-CNS-and-QTc-and-hypoglycaemia-and-myasthenia-harm-and-C.diff-and-tendon-in-steroids-and-older-and-transplant-and-the-regulatory-restriction-to-when-alternatives-lack-and-the-short-course-5-day-lessons and the  and the resistance-by-target-mutation-plus-QNR-plasmids-plus-efflux-with-cross-class-warnings and the rifamycins - rifampicin-RNA-polymerase-and-cyberp450-induction-monster-and-orange-fluids-and-hepatotoxicity-and-drug-level-chase with rifabutin-lower-induction-with-uveitis-and-neutropenia and rifapentine-long-half-life-with-3HP-latent-TB-regimens and the fidaxomicin-RNA-polymerase-non-absorbed-C.diff-specialist-and-the-fusidic-acid-and-retapamulin-skin-niches) and the folate path (the trimethoprim-with-hyperkalaemia-and-creatinine-tubular-block-trivia-and-megaloblastic-in-low-folate and the sulfonamides-with-crystalluria-and-SJS-and-kernicterus-pregnancy-rules and the dapsone-with-methemoglobinaemia-and-hemolysis-G6PD-and-agranulocytosis-monitoring and the atovaquone-and-pentamidine-and-pyrimethamine-and-sulfadiazine-toxoplasmosis-and-PJP-alphabet with the folinic-acid-rescue-logic and the primaquine-and-tafenoquine-G6PD-testing-and-methemoglobinaemia-hypnozoite-killers) - [[pharmacology/adverse-reactions]], [[renal/urinary-tract]] for nitrofurantoin-urinary-only-concentration-logic and [[microbiology/fungi-parasites]] for the antiparasitic extensions.**
+The main adverse effect of β-lactams is **hypersensitivity**, from mild rashes to anaphylaxis. Penicillins can also cause *Clostridioides difficile* infection and, at high doses or in renal failure, seizures. Vancomycin is nephrotoxic, so its blood levels are monitored.
+
+::: definition Drugs acting on protein synthesis and nucleic acids {#def-proteinsynthesis}
+Bacterial **70S ribosomes** differ from human 80S ribosomes, which allows selective inhibition.
+
+- **30S subunit**: **aminoglycosides** (gentamicin, amikacin), bactericidal against Gram-negative rods; **tetracyclines** (doxycycline), bacteriostatic and broad, including intracellular bacteria.
+- **50S subunit**: **macrolides** (clarithromycin, azithromycin), **lincosamides** (clindamycin), **oxazolidinones** (linezolid) and chloramphenicol. Macrolides and tetracyclines are active against *Mycoplasma*, *Chlamydia* and *Legionella*.
+
+Drugs acting on **nucleic acids** and **folate**:
+
+- **fluoroquinolones** (ciprofloxacin, levofloxacin) inhibit DNA gyrase and topoisomerase IV;
+- **rifamycins** (rifampicin) inhibit bacterial RNA polymerase; they are central to tuberculosis treatment and are never used alone because resistance emerges quickly;
+- **nitroimidazoles** (metronidazole) are activated inside anaerobes and damage DNA;
+- **trimethoprim** and **sulfonamides** block successive steps of bacterial folate synthesis, and are combined as co-trimoxazole;
+- **nitrofurantoin** is concentrated in urine and damages bacterial DNA and proteins, so it is used only for lower urinary tract infection.
 :::
 
-::: definition Antifungals, antiparasitics and dosing individualisation {#def-otheragents}
-**The antifungal four-plus (the polyenes - amphotericin-deoxycholate-versus-lipid-formulations-with-nephrotoxicity-and-electrolyte-wasting-and-infusion-reactions-and-the-intrathecal-history and the azoles - the posaconazole-IV-versus-oral-cyclodextrin-note; the echinocandins - caspofungin-micafungin-anidulafungin-glucan-synthase-with-comparatively-clean-profiles-and-hepatic-dose-questions-and-CNS-and-eye-poor-penetration-and-the-EKS?-no: the FKS1-mutations-resistance; and the flucytosine-with-marrows-and-hepatic-toxicity-and-TDM-and-renal-dosing-and-monotherapy-resistance-never-alone and the terbinafine-allylamine-squalene-epoxidase-for-dermatophytes-and-griseofulvin-oil-microsize-and-enzyme-induction-and-collagen-disease-lupus-caution) - [[microbiology/fungi-parasites]] for indications; the antiparasitic core (the antimalarials - quinine-with-hypoglycaemia-and-cinchonism-and-auditory-and-QTc-and-TdP-and-monitoring-and-doxy-prophylaxis-centre-effects and the atovaquone-proguanil-with-food-and-levels-and-renal-limits-and-PRN-travel-counselling and mefloquine-with-neuropsychiatric-and-vestibular-side-effects-and-ECG-cautions and chloroquine with retinopathy dosing rules and resistance maps, and the primaquine and tafenoquine G6PD quantitative-testing and breastfeeding and infant-testing logic); the antihelminthics - benzimidazoles-with-teratogenic-caution-and-hepatitis-and-agranulocytosis-praziquantel-with-steroid-and-cimetidine-and-carbamazepine-level-interactions-and-praziquantel-timing-in-cysticercosis-with-steroids-antiepileptics-and-the-DEC-and-ivermectin-loa-loa-safety-rules and standard-dose-safety-record; and the antiprotozoals - nitroimidazoles-with-disulfiram-reaction-and-metallic-taste-and-neuropathy-with-cumulative-dose-and-encephalopathy-MRI-signature-with-extended-metronidazole-use and the luminal agents paromomycin and diloxanide furoate finishing the job in amoeba and the liposomal amphotericin-B-leishmaniasis-regimens-with-cardiac-and-renal-monitoring) - [[microbiology/fungi-parasites]] and [[infectious-diseases/tropical-infections]] for contexts; and the individualisation layer (the renal-and-hepatic-dose-adjustment-methods-and-when-TDM-applies - vancomycin-AUC-versus-trough-versus-minimax-era and aminoglycoside-nomograms-and-extended-interval-and-continuous-infusion-comparisons and the beta-lactam-TDM-in-critical-illness-augmented-clearance-versus-AKI-and-ECMO-and-burns-and-obesity-volume-distribution-volatility and the obesity-dosing-debate-per-class and the pregnancy-and-breastfeeding-safety-maps-and-teratogen-avoidance-lists (the tetracycline and fluoroquinolone avoidances and the rifampicin vitamin-K note and the term-pregnancy sulfonamide and nitrofurantoin rules) and the drug-interaction-check-culture-for-rifampicin-and-azole-and-macrolide-and-retroviral-regimens - [[pharmacology/patient-variation]], [[pharmacology/dosing-principles]], [[obstetrics-gynaecology/pregnancy-complications]], [[renal/chronic-kidney-disease]]).**
+Each class has characteristic adverse effects and interactions that prescribers must know:
+
+| Class | Key adverse effects and interactions |
+|---|---|
+| Aminoglycosides | kidney damage, hearing and balance loss; levels monitored |
+| Macrolides | QT prolongation; clarithromycin and erythromycin inhibit CYP3A4 and raise levels of some statins and other drugs |
+| Fluoroquinolones | tendon rupture, aortic aneurysm, CNS effects, QT prolongation; MHRA advice restricts their use |
+| Tetracyclines | tooth discolouration and bone effects in children and pregnancy; photosensitivity |
+| Clindamycin | high risk of *C. difficile* infection |
+| Linezolid | bone marrow suppression and nerve damage with prolonged use; serotonin syndrome with some antidepressants |
+| Rifampicin | powerful enzyme inducer that lowers levels of many drugs, including hormonal contraceptives and anticoagulants; orange body fluids |
+| Trimethoprim | raised potassium; folate antagonism, avoided in early pregnancy |
+| Metronidazole | metallic taste, peripheral neuropathy with long courses; advice to avoid alcohol |
+
+### Drugs for viruses, fungi and parasites {#other-agents}
+
+::: definition Antiviral, antifungal and antiparasitic drugs {#def-otheragents}
+**Antivirals** act on steps of replication that use viral proteins:
+
+- **nucleoside analogues** such as aciclovir, which is activated by the viral thymidine kinase of herpes simplex and varicella-zoster viruses and then blocks the viral DNA polymerase; ganciclovir acts similarly against cytomegalovirus;
+- **neuraminidase inhibitors** (oseltamivir, zanamivir), which prevent release of influenza virions;
+- **antiretroviral drugs** for HIV, from several classes: nucleoside and non-nucleoside reverse transcriptase inhibitors, integrase inhibitors, protease inhibitors and entry inhibitors, always used in combination;
+- **direct-acting antivirals** for hepatitis C, which block the viral protease and polymerase and cure most infections;
+- **nucleoside and nucleotide analogues** such as tenofovir and entecavir, which suppress hepatitis B but rarely cure it.
+
+**Antifungals** act on the fungal membrane and wall: **azoles** inhibit ergosterol synthesis and interact with many drugs through cytochrome P450; **polyenes** (amphotericin B) bind ergosterol and are nephrotoxic; **echinocandins** block β-glucan synthesis; **flucytosine** disrupts nucleic acid synthesis and is combined with amphotericin for cryptococcal meningitis.
+
+**Antiparasitic drugs** include artemisinin derivatives and other antimalarials, primaquine and tafenoquine for liver hypnozoites, metronidazole for several protozoa, ivermectin for *Strongyloides* and some other nematodes, albendazole for many helminths, and praziquantel for schistosomes and tapeworms.
 :::
 
-## Resistance and stewardship
+## Pharmacodynamics {#pkpd}
 
-::: definition Resistance mechanisms and epidemiology {#def-resistance}
-**The four mechanisms plus transfer (the drug-inactivation - beta-lactamases-classes-A-to-D-and-metallo-B-and-the-CTX-M-and-KPC-and-NDM-and-OXA-and-VIM-and-IMP-plasmid-epidemiology and the aminoglycoside-modifying-enzymes-and-acetyltransferases-and-16S-methylases-and-apramycin-plasmid-cassettes and the chloramphenicol-acetyltransferase-history; target-protection-or-bypass - mecA-PBP2a-and-PBP3-mutations-and-vanA-D-Ala-D-Lac-and-vanB-and-vanC-and-cfr-oxazolidinone-and-rRNA-methylation and the gyrA-parC-and-QNR-fluoroquinolone-and-ramA-efflux-combinations and the rifampicin-rpoB-and-mutation-rate-reality and the erm-ribosomal-methylation-MLS-B-cross-resistance and the point-mutations-versus-acquired-genes-pace-difference; permeability-and-efflux - porin-loss-and-upregulated-Ade-and-Acr-and-Mex-pumps-and-PARP-inhibitors-pipeline-honesty; and the biofilm-and-persister-phenotype-covered-in [[microbiology/bacterial-pathogenesis]]); the genetic vehicles (plasmids-with-addiction-systems-and-conjugation-and-co-selection-by-any-one-drug-and-heavy-metal-and-biocide-resistance-linkage and transposons-integrons-islands-and-IS26-persistence-promoters and the phage-transduction-and-natural-competence-Streptococcus-and-Acinetobacter-and-the-MGE-hotspots-in-AMP-cassettes-and-the-one-Health-plasmid-mobility-across-species-and-environments); the within-host evolution rules (mutant-selection-window-and-inoculum-effect-explaining-mono-failure-in-high-burden-disease-hence-combination-in-TB-and-HIV-and-endocarditis-adjacency-and the rifampicin and nevirapine monotherapy cautionary history and the on-treatment-emergence-list) and the collateral-damage epidemiology (collateral-damage-of-each-class-graded-from-anti-pseudomonal-piperacillin-and-carbapenem-and-fluoroquinolone-versus-comparatively-sparing-narrow-choices and the selection-of-VRE-after-cephalosporin-and-vancomycin-exposure-and-CPE-after-carbapenem-and-C.diff-after-fluoroquinolones-and-clindamycin-and-surgical-site-infection-breakthroughs-and-the-ESBL-urinary-epidemiology-shifts-and-the-gonorrhoea-AMC-collapses) - one-Health-connections (the agriculture-colistin-restriction-maps-and-the-environmental-sewage-resistome-and-climate-and-flood-driven-Gram-negative-blooms) - [[public-health/environmental-occupational]], [[public-health/global-health]], [[infectious-diseases/stewardship-outbreaks]].**
+**Pharmacokinetics** describes what the body does to the drug: absorption, distribution, metabolism and excretion. **Pharmacodynamics** describes what the drug does to the organism. For antimicrobials, the link between the two is the relationship between drug concentration over time and the MIC of the organism.
+
+::: theorem Three patterns of bacterial killing {#thm-pkpd}
+The killing activity of an antibacterial best correlates with one of three measures, each relating free (unbound) drug concentration to the MIC:
+
+- **time-dependent** killing, measured by the percentage of the dosing interval for which the free concentration exceeds the MIC, $f T_{>\text{MIC}}$. This applies to **β-lactams**.
+- **concentration-dependent** killing, measured by the ratio of the peak concentration to the MIC, $C_{\max}/\text{MIC}$. This applies to **aminoglycosides**.
+- **exposure-dependent** killing, measured by the ratio of the area under the concentration–time curve over 24 hours to the MIC, $\text{AUC}_{24}/\text{MIC}$. This applies to **fluoroquinolones** and **vancomycin**.
 :::
 
-::: definition Stewardship in practice {#def-stewardship}
-**The interventions that work (structure - the restricted-antimicrobials-with-audited-justification and the mandatory-ID-consult-for-Staph-aureus-bacteraemia and the antibiotic-timeout-at-48-72-hours and the formulary-with-antibiogram-interpretation-comments and the pharmacist-led-IV-to-oral-programmes with their bioavailability-tables (the clindamycin near-complete-and-beta-lactams-partial) and the outpatient-parenteral-antibiotic-services with their safety-checks and OPAT-line-care-and-interaction-reviews; and duration - the short-course-evidence-revolution (the pneumonia-5-day-and-Gram-negative-bacteraemia-7-versus-14-and-endocarditis-leftsided-staph-shortening-trials-with-appropriate-populations-and-the-osteomyelitis-6-versus-12-weeks-and-appendicitis-post-appendectomy-24-hours-and-intra-abdominal-STOP-IT-trial-and-CAP-shorter-and-otitis-and-sinusitis-no-benefits read WITH their exclusions - the undrained-foci-and-prosthetic-material-and-immunosuppression-and-neutropenia-and-CNS-and-endovascular-infections-that-still-get-longer-courses-and-the-not-before-source-control rule); diagnostics-guided (the rapid-MRSA-and-blood-culture-ID-and-de-escalation-trials and the procalcitonin-in-LRTI-boundaries-with-the-antibiotics-still-reduced-not-eliminated message and the C.diff-two-step and the the urinary-antigens and viral PCR antiviral-timing); and the behavioural and systems layer (the audit-and-feedback-to-prescribers with funnel-plots and the naming-the-local-syndrome-first (the empirical-prescribing-rules-by-syndrome-with-antibiograms-not-leaflets) and the never-miss-opportunity-communication (the antibiotic-am-I-really-deciding-now moments at discharge) and the patient-facing-right-words (the viral-infection-explanation-scripts and the expected-duration-cards and the run-out-not-recover messaging) and the safety-netting that makes shorter courses safe) - [[clinical-skills/communication]], [[clinical-skills/patient-safety]], [[microbiology/infection-control]] for the prevention wing (the vaccination-reducing-antibiotic-use-arithmetic (the PCV-and-flu-and-rotavirus-secondary-effects on antibiotic prescriptions) and the hand-hygiene-and-water-and-sanitation effects on resistant-infection-incidence) - [[public-health/vaccination-programmes]], [[microbiology/microbiota]] for collateral-damage biology.**
+::: proof
+β-lactams kill at a rate that changes little once the concentration is a few times the MIC. Raising the peak further adds little; what matters is how long the bacteria are exposed. When the concentration falls below the MIC, surviving bacteria resume growth almost immediately. Frequent doses, extended infusions or continuous infusions therefore improve their effect, particularly against less susceptible organisms. Approximate targets for $f T_{>\text{MIC}}$ are about 40–70% of the dosing interval, depending on the β-lactam class.
+
+Aminoglycosides kill faster at higher concentrations, and their effect continues for hours after the level falls below the MIC: the **post-antibiotic effect**. A single large daily dose achieves a high peak, while a long drug-free period lets the level fall low enough to reduce uptake into kidney and inner ear cells. This is the basis of once-daily aminoglycoside dosing with level monitoring.
+
+For vancomycin and fluoroquinolones, total exposure over a day predicts both effect and, for vancomycin, toxicity, so dosing is adjusted to a target AUC using blood levels.
 :::
 
-::: example The penicillin-allergy label in staph bacteraemia {#ex-sab-allergy}
-A 58-year-old with endocarditis has oxacillin-susceptible S. aureus; his record says "penicillin allergy - rash as a child"; the team reaches for vancomycin "to be safe".
+For a drug eliminated with first-order kinetics, the concentration after a single intravenous dose falls exponentially:
+
+$$
+C(t) = C_0 \cdot 2^{-t/t_{1/2}}
+$$ {#eq-decay}
+
+The time the concentration stays above the MIC can be found from the number of half-lives needed to fall from $C_0$ to the MIC, $\log_2(C_0/\text{MIC})$.
+
+::: widget plot
+f: 32*2^(-x/h); m
+x: 0, 8
+y: 0, 35
+sliders: h=1:0.5:4:0.25; m=2:0.5:16:0.5
+labels: C(t); \text{MIC}
+caption: A simplified concentration–time curve after a single intravenous dose of a β-lactam, starting at 32 mg/L, with an illustrative half-life $h$ in hours and the MIC $m$ of an organism. The time the curve stays above the MIC line is $T_{>\text{MIC}}$. A shorter half-life or a higher MIC shortens it, which is why less susceptible organisms are treated with more frequent doses or longer infusions rather than larger single doses. The values are illustrative and do not describe any particular drug or patient.
+:::
+
+::: example How long is the drug above the MIC? {#ex-pkpd}
+In an illustrative model, a β-lactam reaches a free peak concentration of 32 mg/L after an intravenous bolus and has a half-life of 1 hour. It is given every 8 hours. The organism has an MIC of 2 mg/L. What is $f T_{>\text{MIC}}$, and what could be done if it were too low?
 ::: solution
-**Delabelling-as-definitive-therapy ([[#def-resistance]], [[#def-cellwall]], [[immunology/hypersensitivity]]): the stakes - beta-lactam-superiority-for-MSSA-bacteraemia-and-endocarditis (lower mortality and failure than vancomycin in the meta-analyses) and the vancomycin-trade-offs (nephrotoxicity and slower kill and AUC-dosing-work and line-complications) and how-many-patients-die-of-the-label-not-the-allergy-estimates-honestly-framed; the history work - the 60-minutes-allergy-history (the timing and semiology and treatment and re-challenge-avoidance-features separating a benign-childhood-rash from SJS or anaphylaxis or serum sickness) and the allergy-testing-and-direct-oral-challenge-appropriateness-for-this-low-risk-history (the challenge-safety-criteria and the resuscitation facilities and the graded-protocol and the ceftriaxone-and-flucloxacillin-test-dose-versus-full-dose debate with allergy-team input) - [[microbiology/laboratory-diagnosis]]; the decision under time pressure - the graded-challenge-today-versus-empiric-vancomycin-today-and-switch-after-negative-testing-with-endocarditis-outcome-loss (the ID and allergy MDT within 24 hours is the right pathway) and the cross-reactivity chemistry (the side-chain rules and the low carbapenem and third-generation cephalosporin cross-reaction rates making ceftriaxone usable in many histories) and the meropenem-deferral-for-sake-of-stewardship; and the system - the allergy-field-data-quality-audit and the structured-records-picklists-rash-versus-anaphylaxis-versus-intolerance (the free-text that blocks challenges for decades) and the discharge letter documenting the challenge and its result and the patient-held record updated so every future team starts where this one finished - [[clinical-skills/records-handover]], [[clinical-skills/patient-safety]].**
+The number of half-lives needed to fall from 32 to 2 mg/L is
+
+$$
+\log_2\!\left(\frac{32}{2}\right) = \log_2 16 = 4
+$$
+
+With a half-life of 1 hour, the concentration stays above the MIC for 4 hours. The dosing interval is 8 hours, so $f T_{>\text{MIC}} = 4/8 = 50\%$.
+
+If the target for this drug class were higher, giving the same total daily amount as more frequent smaller doses, or as an **extended or continuous infusion**, would keep the concentration above the MIC for longer. Doubling a single dose would add only one half-life, 1 hour, above the MIC. This is why extended infusions of piperacillin–tazobactam or meropenem are used for less susceptible organisms such as *Pseudomonas aeruginosa* in critical care. Real dosing depends on the patient's kidney function and illness, and follows local guidelines.
 :::
 :::
 
-::: example The stroke unit's pneumonia cluster {#ex-aml-cluster}
-Four stroke-unit patients in three weeks grow carbapenem-resistant Acinetobacter baumannii; one died; families ask what is being done.
+## Resistance {#resistance}
+
+::: definition Mechanisms of resistance {#def-resistance}
+**Intrinsic resistance** is a property of a whole species. Examples: Gram-negative bacteria and glycopeptides (the outer membrane excludes them), enterococci and cephalosporins, *Mycoplasma* and β-lactams (no cell wall), and anaerobes and aminoglycosides (uptake needs oxygen-dependent transport).
+
+**Acquired resistance** arises in a previously susceptible strain, by mutation or by acquiring genes. There are four main mechanisms:
+
+1. **enzymatic inactivation** of the drug, such as β-lactamases and aminoglycoside-modifying enzymes;
+2. **altered target**, such as a new penicillin-binding protein or a mutated DNA gyrase;
+3. **reduced entry**, by loss of outer membrane porins;
+4. **active efflux**, by membrane pumps that expel the drug.
+
+Several mechanisms often combine, and a single plasmid may carry genes for resistance to several classes.
+:::
+
+Important resistant organisms illustrate each mechanism.
+
+- **MRSA** carries the *mecA* gene, which encodes **PBP2a**, a penicillin-binding protein with low affinity for nearly all β-lactams. MRSA is therefore resistant to flucloxacillin and most other β-lactams, and is treated with glycopeptides, linezolid, daptomycin or other options according to the site and susceptibility.
+- **Vancomycin-resistant enterococci** (VRE) carry genes, most often *vanA*, that change the end of the peptidoglycan precursor so that vancomycin binds poorly.
+- **Extended-spectrum β-lactamases** (ESBLs), common in *E. coli* and *Klebsiella*, hydrolyse penicillins and cephalosporins, including third-generation cephalosporins. Carbapenems remain active.
+- **AmpC β-lactamases** are encoded on the chromosome of organisms such as *Enterobacter cloacae* and can be switched on during treatment with some cephalosporins, so resistance may emerge during therapy.
+- **Carbapenemases** hydrolyse carbapenems and most other β-lactams. The main families are **KPC**, **OXA-48-like** and the metallo-β-lactamases **NDM**, **VIM** and **IMP**. They are found mainly in Enterobacterales, *Pseudomonas* and *Acinetobacter*, and are usually carried on plasmids. Newer combinations such as ceftazidime–avibactam act on some of these enzymes but not on metallo-β-lactamases, so the laboratory identifies the enzyme family to guide treatment.
+- **Fluoroquinolone resistance** arises from mutations in DNA gyrase and topoisomerase genes, often combined with efflux.
+- **Drug-resistant tuberculosis** arises from chromosomal mutations, such as in *rpoB* for rifampicin and *katG* or *inhA* for isoniazid. Resistance to both is **multidrug-resistant tuberculosis** (MDR-TB).
+
+Resistance spreads in two ways. **Clonal spread** is the transmission of a successful resistant strain between people, on hands, equipment and in the community. **Horizontal gene transfer** moves resistance genes between strains and species, mostly on plasmids, as described in [[microbiology/bacteria]]. Antibiotic use drives both, because every course selects for resistant organisms in the patient's own microbiota as well as at the site of infection. The use of antibiotics in animals and resistance genes in the environment are part of the same system, which is why resistance is described as a **One Health** problem.
+
+::: example Reading a resistant urine isolate {#ex-esbl}
+A 67-year-old woman with symptoms of cystitis, but no fever or loin pain, has a urine culture growing *E. coli* reported as "ESBL producer", resistant to amoxicillin, co-amoxiclav, cephalexin, trimethoprim and ciprofloxacin, and susceptible to nitrofurantoin, fosfomycin, pivmecillinam and meropenem. Her eGFR is 70 mL/min/1.73 m². Which options are reasonable, and why should meropenem be avoided?
 ::: solution
-**Outbreak-in-an-endemic-niche ([[#def-resistance]], [[#def-stewardship]], [[microbiology/infection-control]]): hours - isolate-and-cohort-with-contact-precautions-and-single-or-geographically-batched-nursing-and-dedicated-equipment and the Acinetobacter-appropriate-disinfectant (quaternary-ammonium-or-peracetic-acid-per-local-product-sensitivity-data) and the audit of sinks-and-drains-and-taps-and-showerheads-and-humidifiers-and-rebreathing-circuits (the Acinetobacter-water-environment-ecology and the splash-zone-removal-or-tap-swap-and-sealing policies) and stop-the-add-on-colonisation-detection-with-point-prevalence-skin-and-line-and-perineal-swabbing and the enhanced-review-schedule for every patient on the bay and the transfer-restrictions-with-receiving-unit-notification-duty; days - the WGS-clustering (point-source-versus-endemic-transmission-versus-parallel-evolution by SNP thresholds and the plasmid-tracking) and the antimicrobial-pressure-audit (the carbapenem-and-piperacillin-tazobactam-consumption-by-consultant-and-bed and the restrictive-formulary-trial-for-the-unit-with-mock-code-stewardship-alternatives) and the treatment-algorithm-with- susceptibility-matched-combinations-high-dose-ampicillin-sulbactam-as-sulbactam-driven-therapy-and-minocycline-and-tigecycline-and-colistin-inhaled-and-cefiderocol-options with ID-lead-decisions; weeks - the staff-education-and-hand-hygiene-observation-with-feedback (the WHO-5-moments-audit-with-auditor-bias-controls) and the environmental-monitoring-and-product-removal-log and the families-communication-honest-about-transmission-route-and-mortality-context (the not-blaming-individual-nurses and the lay-representative-in-the-incident-group) and the with public-health-partners-and-the-trust-board-report; and the culture-work - the whole-staff-debrief-without-shame-because-hidden-colonisation-thrives-where-blame-lives and the resistance-surveillance-dashboard-as-a-ward-vital-sign - [[infectious-diseases/stewardship-outbreaks]], [[clinical-skills/patient-safety]], [[public-health/communicable-disease-control]].**
+The organism produces an **ESBL**, which destroys penicillins and cephalosporins, and it has also acquired resistance to trimethoprim and ciprofloxacin, as ESBL strains often do. She has a lower urinary tract infection without signs of upper tract or systemic infection.
+
+Reasonable oral options, according to local guidelines, include **nitrofurantoin**, which is concentrated in urine and suitable with her kidney function, **pivmecillinam** and **fosfomycin**. They reach high concentrations in the bladder and have little effect on the rest of the body's flora.
+
+Meropenem is active but should be avoided. It is intravenous, broad-spectrum and one of the last reliable drugs for serious resistant Gram-negative infection. Using it for cystitis would expose her to unnecessary risk and select for carbapenem resistance, which would remove that option for her and for others. The ESBL label also matters for later care: if she developed sepsis from a urinary source, the empirical regimen should cover ESBL producers.
 :::
 :::
 
-::: example The neutropaenic fever that needs no admission {#ex-neutropaenic-home}
-A 30-year-old on CHOP lymphoma chemotherapy presents day 8 with fever 38.4, well, MASCC score 24, no comorbidity, reliable partner, home 30 minutes away, neutrophils 0.2. The take wants to admit "all neutropaenic fevers".
+::: warning Do not treat a positive culture without an infection
+A positive culture shows that an organism is present, not that it needs treatment. Treating colonisation, contamination or asymptomatic bacteriuria gives no benefit and adds harm: adverse effects, *C. difficile* infection, and selection of resistance in the patient's flora. The classic example is a positive urine culture from an older person without urinary symptoms. UK guidance advises against treating asymptomatic bacteriuria except in pregnancy and before urological procedures that breach the mucosa. Always ask whether the result fits a clinical infection.
+:::
+
+::: example A positive urine culture before hip surgery {#ex-asb}
+A 74-year-old man due for elective hip replacement has a routine urine sample that grows *E. coli* at more than $10^5$ CFU/mL. He has no urinary symptoms and no fever. The surgical team asks whether surgery should be postponed for a course of antibiotics.
 ::: solution
-**Risk-stratified-febrile-neutropaenic-medicine ([[#def-stewardship]], [[infectious-diseases/immunocompromised-host]], [[clinical-skills/patient-safety]]): the scores and their honest limits - the MASCC-and-CISNE-rules (the objective-observation-hours-versus-immediate-discharge-versus-day-clinic pathways and the local-social-and-language-and-safeguarding-factors-that-no-score-captures) and the high-risk-definitions-that-force-admission (induction-leukaemia-and-HSCT-and-unstable-vitals-and-oral-mucositis-severe-and-hepatic-renal-trajectories-and-no-home-monitoring); the outpatient regimen - the oral-ciprofloxacin-plus-co-amoxiclav standard (or moxifloxacin-alternatives) with the recent-fluoroquinolone-prophylaxis-exception-and-the-C.diff-and-resistance-implications and the first-dose-observed-in-unit and the written-paracetamol-only-and-temperature-chart-and-red-flag-card (the when-to-return-by-road-ambulance-time) and the telephone-review-cadence-with-a-named-team-and-a-real-phone-that-works-at-23:00; the tests and gates - the blood-cultures-from-each-lumen-and-urine-and-symptom-directed-testing-and-the-do-not-add-CT-chest-for-cough-without-hypoxia-debate-and-the-repeat-assessment-thresholds - [[microbiology/laboratory-diagnosis]]; and the chemotherapy-side consequences - the next-cycle-G-CSF-consideration-and-previous-nadirs-and-the-chemo-delay-decision-owned-by-the-oncologist-and-the-adherence-to-prophylaxis-review (the co-trimoxazole-and-antifungal-continuation-questions) and the outpatient-pathway-eligibility-documented-in-the-lea? - no: in the plan so triage nurses and ED doctors meet the same answer at midnight - [[clinical-skills/records-handover]], [[infectious-diseases/immunocompromised-host]].**
+This is **asymptomatic bacteriuria**. In joint replacement surgery, treating it before the operation has not been shown to reduce prosthetic joint infection, and the infecting organisms in later joint infections are usually different from those in the urine. Treatment would expose him to antibiotic side effects and select resistant bacteria before surgery. Unless local guidelines say otherwise, surgery can go ahead without treatment of the bacteriuria, with the usual surgical antibiotic prophylaxis.
+
+Routine urine culture in people without symptoms is discouraged for this reason: it produces results that tempt treatment without benefit.
 :::
 :::
 
-::: example The E. coli in urine that should not be treated {#ex-asb}
-A care-home resident with dementia has a positive MSU on admission screening (10^5 E. coli) with no symptoms; the admission clerks list her as "UTI"; two weeks later she has C. difficile after a trimethoprim course given "before the results came back".
+## Stewardship {#stewardship}
+
+::: definition Antimicrobial stewardship {#def-stewardship}
+**Antimicrobial stewardship** is a coordinated set of actions that promote the responsible use of antimicrobials, to improve outcomes for patients while reducing adverse effects and resistance.
+
+In English hospitals the framework is **Start Smart then Focus**, published by what is now the UK Health Security Agency and last updated in 2023:
+
+- **Start smart**: do not start antibiotics without clinical evidence of bacterial infection; take cultures before starting where possible; in life-threatening infection, start effective treatment promptly, within an hour in suspected sepsis with high-risk features; follow local guidelines; record the allergy status, indication, drug, route and a review or stop date.
+- **Then focus**: review the diagnosis and the prescription at **48–72 hours**, with the culture results, and make a clear decision: **stop**, **switch** from intravenous to oral, **change** to a narrower or, if needed, broader drug, **continue** with a new review date, or move to **outpatient parenteral antimicrobial therapy**.
+
+Internationally, the World Health Organization's **AWaRe** classification sorts antibiotics into **Access** (first- and second-line drugs for common infections, lower resistance potential), **Watch** (higher resistance potential, to be monitored) and **Reserve** (last-resort drugs for multidrug-resistant infections). A United Nations political declaration in 2024 set a target that at least 70% of human antibiotic use worldwide should be Access antibiotics by 2030.
+:::
+
+Other parts of stewardship are equally practical. Shorter courses are as effective as longer ones for many common infections, and NICE guidance now recommends five days for many cases of community-acquired pneumonia and three days for uncomplicated cystitis in women. Switching from intravenous to oral therapy as soon as the patient is improving and can absorb oral drugs shortens hospital stay and avoids line infections. Monitoring drug levels prevents toxicity.
+
+**Penicillin allergy labels** deserve special mention. About one in ten hospital patients carries one, but around 90% of those formally assessed can take penicillin safely. Many labels record side effects such as nausea, or a childhood rash during a viral infection. A label leads to the use of broader-spectrum or less effective drugs, more *C. difficile* infection and more resistant infections. Taking a careful allergy history, and **de-labelling** through testing or supervised challenge where appropriate, is part of stewardship.
+
+::: example A penicillin allergy label in staphylococcal bacteraemia {#ex-sab-allergy}
+A 61-year-old man of Black African heritage has *Staphylococcus aureus* bacteraemia from a septic arthritis of the knee. The organism is meticillin-sensitive (MSSA). His record says "penicillin allergy", and he has been started on vancomycin. Why does the label matter, and what should be done?
 ::: solution
-**Asymptomatic-bacteriuria-medicine ([[#def-stewardship]], [[renal/urinary-tract]], [[microbiology/microbiota]]): the guideline line - do-not-screen-do-not-treat except pregnancy and before mucosa-breaching urological procedures, with the delirium, falls and smell-test evidence against urine-based diagnosis and the falls-clinic-urine-batch-testing-habit to stop and the admission-screen-panel design fault that created this label; the harm ledger - the CDI-after-trimethoprim story (the ecological collateral of every course) and the resistance-selection in her gut reservoir and the future-untreatable-UTI risk and the delirium workup delayed by the label (the diagnostic overshadowing that this class of error represents) - [[geriatrics-palliative/delirium-dementia-care]], [[geriatrics-palliative/falls]]; the fix - the record-label-correction-visit (the "asymptomatic bacteriuria - no treatment needed" wording replacing "UTI") and the care-home-backward-communication (the no-MSU-without-symptoms agreement and the clinical-pictograms-for-what-counts-as-symptoms in dementia) and the testing-stewardship at admission (removing urine from routine panels and keeping it for the defined indications); and the audit - the proportion-of-positive-urine-cultures-treated-without-symptoms and the CDI-rate-and-antibiotic-days-per-1000-bed-days and the delirium-cases-with-urine-labels-reviewed for harm - [[infectious-diseases/stewardship-outbreaks]], [[clinical-skills/patient-safety]], [[microbiology/laboratory-diagnosis]].**
+For MSSA bacteraemia, an anti-staphylococcal **β-lactam**, such as flucloxacillin or cefazolin, is more effective than vancomycin. Observational studies associate vancomycin with higher rates of treatment failure and death in MSSA bacteraemia. The label is therefore not a minor detail: it may be steering him towards a less effective treatment for a serious infection.
+
+The first step is a careful **allergy history**: what happened, when, how soon after the drug, how it was treated, and whether he has taken any penicillin or cephalosporin since. If the reaction was a side effect such as diarrhoea, or a remote mild rash, many hospitals have protocols for direct oral challenge or for using a cephalosporin with low cross-reactivity. A history of anaphylaxis or a severe skin reaction needs specialist allergy advice before any β-lactam is used.
+
+Decisions should involve the infection and allergy teams and follow local protocols. If the label is shown to be wrong, it should be removed from all records and explained to the patient, so that the error is not repeated.
 :::
 :::
 
 ::: quiz
-Daptomycin should not be used to treat pneumonia because:
-- [x] Pulmonary surfactant inactivates it
-- [ ] It does not cover MRSA
-- [ ] It causes irreversible nephrotoxicity
-- [ ] It cannot be given with statins
+A 30-year-old woman is admitted with pyelonephritis and started on intravenous antibiotics. On day 3 she is afebrile, eating and drinking, and her urine culture has grown *E. coli* susceptible to several oral drugs. What is the most appropriate stewardship action?
+- [ ] Continue intravenous antibiotics for 14 days
+- [ ] Add a second intravenous antibiotic to cover resistance
+- [x] Switch to an oral antibiotic chosen from the susceptibility results, with a defined total duration
+- [ ] Stop all antibiotics, because she is afebrile
 ::: solution
-**Daptomycin binds and is inactivated by pulmonary surfactant, failing in pneumonia despite good Gram-positive activity; monitor CPK and hold statins where reasonable because of myopathy risk; it is excellent for bacteraemia and right-sided endocarditis ([[#def-cellwall]], [[respiratory/respiratory-infections]], [[pharmacology/adverse-reactions]]).**
+This is the **"Then focus"** review at 48–72 hours. She is improving, can take oral drugs, and the susceptibility results allow a targeted choice. Switching to an appropriate oral drug, with a stop date set according to local guidelines, completes treatment effectively while avoiding the risks of continued intravenous therapy. Stopping entirely would leave pyelonephritis under-treated.
 :::
 :::
 
-::: widget plot
-f: 100/(1+exp(-1.2*(x-3))); 100/(1+exp(-1.2*(x-7))); 100/(1+exp(-1.2*(x-11)))
-x: 0, 14
-y: 0, 110
-labels: \text{days of an effective antibiotic course},\ \%\text{of guideline-maximum};\ \text{symptom resolution};\ \text{culture negativity};\ \text{relapse risk if stopped}
-caption: Course length is a risk-balance, not a ritual ([[#def-stewardship]]): symptoms and sterility arrive days before guideline durations end, while resistance and C. difficile risk accumulate with every added day - the short-course trials map where the curves already cross and which exclusions (undrained foci, prostheses, immunosuppression) keep some courses long ([[gastrointestinal/bowel-disease]], [[infectious-diseases/stewardship-outbreaks]]).
+::: history
+In 1910 Paul Ehrlich introduced arsphenamine (Salvarsan) for syphilis, the result of a systematic search for a "magic bullet" that would kill microbes without harming the host. In 1935 Gerhard Domagk reported that the dye Prontosil cured streptococcal infection in mice, and sulfonamides became the first widely used antibacterial drugs. Alexander Fleming observed penicillin in 1928, and Howard Florey, Ernst Chain and their colleagues in Oxford turned it into a drug in 1940–41. Fleming warned in his 1945 Nobel lecture that underdosing could make bacteria resistant.
+
+Resistance followed every new class. Penicillinase-producing staphylococci were common in hospitals by the late 1940s. Meticillin was introduced in 1959, and MRSA was reported in the UK in 1961. Vancomycin-resistant enterococci were reported in 1988, and NDM-1 carbapenemase in 2009. In 2015 the plasmid-borne colistin resistance gene *mcr-1* was described in China. The UK government's 2016 review of antimicrobial resistance, chaired by Jim O'Neill, brought the problem to wide political attention.
 :::
 
 ## Where this leads
 
-Susceptibility reporting in [[microbiology/laboratory-diagnosis]]; resistance genetics in patients in [[microbiology/bacteria]]; the microbiota cost of every course in [[microbiology/microbiota]]; prevention through vaccination in [[public-health/vaccination-programmes]]; the pharmacology foundations in [[pharmacology/dosing-principles]] and [[pharmacology/metabolism-excretion]].
-
-::: history
-**Antimicrobial chemotherapy is a century of one-step-ahead victories: the Ehrlich-Salvarsan-1910-magic-bullet-and-the-109th-compound-and-its-study-groups-and-the-1911-Deutsche-Medizinische-Wochenschrift-report (the atoxyl-derivative-for-syphilis with its toxicity-managed-by-dosing discipline that defined the therapeutic-index idea) - [[pharmacology/drug-receptor]]; the Domagk Prontosil demonstration of 1932, the sulphonamide discovery by the Pasteur-team, the 1939 Nobel refused under pressure and the American skepticism then sulfa torrent (the 1937 Elixir Sulfanilamide diethylene-glycol deaths and the 1938 Food, Drug and Cosmetic Act - drug-safety regulation's founding tragedy) - [[medical-ethics-law/professionalism-regulation]]; the penicillin lineage - the 1928 mould, the Florey and Chain purification, the 1941 Oxford first patient, the deep-tank fermentation and corn-steep luck and the wartime mass production, with Fleming's Nobel speech already warning about resistance, immediately demonstrated by the staphylococcal penicillinase ward epidemics in Mary Barber's London papers and the 1959-Beecham-half-synthetic-penicillins-6-APA-opened-the-med-chem-floodgates (the Batchelor-and-Oxford-relationship) - [[pharmacology/drug-development-prescribing]]; the golden-age-slowdown - the 1943 streptomycin discovery and the Waksman-Schatz attribution ethics dispute and the-chloramphenicol-and-tetracycline-and-erythromycin-and-aminoglycoside-family-expansions (the  general) and the Brotzu Sardinian sewage mould of 1945 and the Eli Lilly route to market, powered by the nitrocefin screening assay and the methicillin-1960-answer-and-Jevons-1961-MRSA-report-within-a-year and the gentamicin-and-tobramycin-and-netilmicin-amino-glycoside-refinements and the 1970s-80s-beta-lactam-engineering-era (the amidinopenicillins and imipenem-cilastatin-and-the-thienamycin-merck-story and the 1980s cephalosporin boom) - the antibiotic bubble of the 1990s and 2010s with the big-pharma exits; the resistance-warning-lineage - the the sentry-surveillance-era and the gonococcal fluoroquinolone the  general: the South African XDR-TB ward epidemic with diagnosis dragged out by monthly culture and the rapid drug-susceptibility response and the WHO GLASS global AMR surveillance and the European carbapenem-resistant Enterobacteriaceae north-south gradient (the Klebsiella-pandemic-clones-Kl-258-and-Kl-147-lineage-tracking-by-WGS) and the 2015 mcr-1 colistin-plasmid detection in Chinese pork, a One-Health moment; the stewardship-movement - the the 1998-CDC-emerging-messages-and-the-UK-1999-Department-of-Health-antimicrobial-resistance-strategy-and-the-2015-review-on-antimicrobial-resistance-O'Neill-report-economics-and-drawdown-projections (the GDP-loss-framing-that-changed-ministers) and the US National Action Plan and the WHO-GAAP-AWS-countries-programs and the AMR-vision-zero-quadpartite; and the pipeline responses - the ceftazidime-avibactam and cefiderocol siderophore Trojan-horse eras and the CARB-X and AMR Action Fund and PASTEUR and UK subscription-pilot incentive experiments and the first-in-class durlobactam for Acinetobacter and the antibiotic-payout-model-debates because the science can outrun the economics again - [[public-health/health-systems-economics]], [[pharmacology/drug-development-prescribing]].**
-:::
+The bacterial structures that antibiotics target are in [[microbiology/bacteria]], and the laboratory tests that report susceptibility, including MICs and breakpoints, in [[microbiology/laboratory-diagnosis]]. The general principles of drug action, pharmacokinetics and adverse reactions are in [[pharmacology/dosing-principles]] and [[pharmacology/adverse-reactions]]. Clinical stewardship programmes and outbreak control are in [[infectious-diseases/stewardship-outbreaks]], and the treatment of tuberculosis and HIV in [[infectious-diseases/tuberculosis]] and [[infectious-diseases/hiv]].
 
 ::: summary
-- Every antimicrobial is a target-toxin: know the target, the killing-pharmacodynamics (time-versus-concentration-dependence), and the resistance mechanism the target permits.
-- The beta-lactam story is chemistry: side chains determine allergy cross-reactivity, inhibitor partners determine Gram-negative reach, and carbapenem use determines carbapenemase selection.
-- Aminoglycosides, vancomycin, the azoles and fluoroquinolones demand monitoring and interaction checks that are part of the dose, not paperwork after it.
-- Resistance follows four mechanisms plus horizontal transfer; plasmids make different drugs co-resistant, so one antibiotic can select for another's resistance.
-- Duration is now evidence-based: short courses with source control, except the named exclusions; antibiotic time-outs and IV-to-oral switches are the highest-value stewardship acts.
-- Stewardship is prescribing plus epidemiology: the antibiogram is your local ecology, your formulary shapes it, and every broad course writes into your successor's susceptibility report.
-:::
-
-::: exercise Explain an antibiotic to its recipient {level=1}
-A young doctor is about to start co-amoxiclav for a bite wound. Write the 60-second prescription conversation: why, how long, side effects, interactions, and the red flags.
-::: solution
-**Prescription-communication-medicine ([[#def-cellwall]], [[pharmacology/adverse-reactions]], [[clinical-skills/communication]]): why-and-how-long - the bite-wound Pasteurella-and-streptococcal-and-staphylococcal-and-anaerobe-rationale (the amoxicillin-clavulanate-fit) and the 5-7-versus-7-10-day-by-severity-and-the-clean-versus-infected-versus-hand-versus-joint-near-a-consideration and the do-not-extend-because-scar-heals-slowly; the side-effects-honestly-weighted - the diarrhoea and rash and thrush, and the C. difficile warning without C. difficile hysteria and the take-with-food-and-nausea-management; the interactions-check - the warfarin-INR-monitoring-message and the methotrexate-and-allopurinol-conversations (the rashes-with-those) and the oral-contraceptive-truth (no-relevant-reduction-except-GI-upset-rules-reminders); and the safety-net - the anaphylaxis-and-serum-sickness-like-red-flags (the joint-swelling-and-fever-days-later-version that frightens everyone) and the wound-specific-escalation-words (spreading-redness-and-fever-and-reduced-movement-and-flu-like-symptoms) with a time-limited-review and the hand-elevation-and-splint-and-physio-prescription and the tetanus-and-rabies-status-decisions-attached-not-assumed - [[infectious-diseases/tropical-infections]] for rabies-geography, [[immunology/hypersensitivity]] for the delayed-reaction mechanisms, [[clinical-skills/patient-safety]].**
-:::
-:::
-
-::: exercise Switch to oral safely {level=1}
-Day 5 of Staphylococcus aureus bacteraemia, defervescing, line out, MSSA, cefazolin via PICC, OPAT being planned; CRP 60 falling. Argue the oral-versus-IV decision with the evidence.
-::: solution
-**IV-to-oral-switch-medicine ([[#def-stewardship]], [[#def-proteinsynthesis]], [[pharmacology/absorption-distribution]]): the evidence frontier - the OVIVA-bone-and-joint-non-inferiority and the partial-IV-oral-endocarditis-POET-with-its-strict-criteria (the POET criteria: stable, TEE-confirmed, surgery if needed) and the SAB-oral-step-down-observational-data read cautiously versus the RCT gap and the abscess-drainage-and-clearance-day-3-prerequisites-that-define-eligibility; the drug picks - the high-bioavailability-options (the oral flucloxacillin caveats for bacteraemia (bioavailability and dosing frequency), the co-trimoxazole-versus-doxycycline-versus-clindamycin-versus-linezolid-for-MRSA-skin-step-down and the cephalexin-dosing-for-MSSA-with-its-absorption-saturation-questions) and the interaction-and-monitoring-interview (the warfarin-and-SSRI-and-MAOI-linezolid-and-the-calcium-iron-doxycycline-separation) - [[pharmacology/metabolism-excretion]]; and the service design - the OPAT-criteria-versus-oral-step-down-algorithm-with-infectious-diseases-signature and the PICC-and-line-infection-and-thrombosis-and-daily-life-shower-and-swim-and-work rules and the home-infrastructure-reality (the IV-equipment-and-visit-capacity-and-nighttime-fever-who-calls-whom) and the outpatient-lab-monitoring-schedule-and-the-clinic-letters-so-the-GP-knows-the-end-date - and the shared decision with the patient's own priorities about hospital-days-versus-pill-uncertainty stated in numbers - [[clinical-skills/communication]], [[clinical-skills/records-handover]].**
-:::
-:::
-
-::: exercise Rescue the last-resort drug {level=2}
-A pan-resistant Klebsiella pneumoniae bloodstream infection: resistant to carbapenems (NDM), quinolones, aminoglycosides, and colistin MIC 4. Build the regimen and the sensitivity-testing plan.
-::: solution
-**Last-resort-therapy-engineering ([[#def-resistance]], [[#def-cellwall]], [[microbiology/laboratory-diagnosis]]): the map - the NDM-metallo-beta-lactamase means aztreonam-avibactam-combination-therapy (the avibactam-protects-aztreonam-from-the-co-carried-ESBL-and-AmpC logic) and the cefiderocol-activity-read-by-MIC and the sulphactin-and-tigecycline-and-minocycline-and-eravacycline-adjacencies by source-and-susceptibility and the colistin-MIC-4-heteroresistance-reality-versus-inhaled-colistin-adjunct and the polymyxin-NN-versus-old-formulations-pharmacology and the newer-beta-lactam-inhibitor-combinations-with-metallo-active-partners-in-trials (the aztreonam-avibactam availability routes); the testing - the reference-lab-broth-microbroth-dilution-FST-combination-checkerboard-and-time-kill-with-synergy-interpretation-caution and the carbapenemase-phenotypic-and-genotypic-confirmation (the mCIM-CIM-and-CarbaNP-and-NGS-panel) and the resistance-gene-versus-expression-phenotype traps (the blaNDM-promoter-variants and the PBP3-deletions) and the repeat-susceptibility-on-relapse rule; and the clinical-programme - the source-control-non-negotiables (the drainages and line removals and the obstruction relief) and the combination-with-PK-optimisation (the extended-infusions and the tigecycline low-serum caveat and the loading-dose-disciplines and TDM where available) and the compassionate-access-and-trial-and-compassionate-antibiotic-sourcing pathways and the pharmacy-compounding-and-import logistics and the infection-control-parallel-emergency (the single-room-and-CPE-network-notifications) and the honest family conversation about mortality-ranges-in-pan-resistant-bacteraemia while doing everything - [[clinical-skills/patient-safety]], [[infectious-diseases/stewardship-outbreaks]], [[pharmacology/dosing-principles]].**
-:::
-:::
-
-::: exercise Audit an antibiotic course {level=3}
-A 70-year-old had 14 days of piperacillin-tazobactam for a drained intra-abdominal abscess, then 7 days ciprofloxacin "to complete"; developed C. difficile and an AKI. Audit the antibiotic decisions systematically.
-::: solution
-**Course-audit-medicine ([[#def-stewardship]], [[microbiology/microbiota]], [[clinical-skills/patient-safety]]): decision-by-decision - the empiric-choice-versus-severity-and-risks (the right-severity-escalation or the over-broad-reflex?) and the culture-results-and-de-escalation-that-never-happened (the 48-72-hour-timeout-that-was-missed and the antibiogram-fit) and the duration (the STOP-IT-trial-era 4-days-after-source-control for complicated intra-abdominal infection with the immunosuppression-and-incomplete-source-control exclusions read honestly) and the "completion" antibiotic (the ciprofloxacin-to-complete as a cultural ritual without evidence - the fluoroquinolone-AKI-and-tendon-and-C.diff-costs against a hypothetical) and the IV-to-oral-window-missed (the bioavailability table not consulted); the harms attribution - the CDI-attributable-fraction-and-the-antibiotic-days-adjacency (the pip-tazo-and-fluoroquinolone-plus-PPI-what-if) and the AKI-aetiology-mix (sepsis-versus-pip-tazo-versus-volume-versus-contrast-and the assay-interference note for some beta-lactams) and the line-infection-and-hypokalaemia-tally; the learning-loop output - the guideline-and-antibiogram-fit-review-with-the-surgical-and-ID-teams (the empirical-surgical-prophylaxis-versus-treatment-conflation) and the duration-default-change-in-the-formulary-order-set (the 4-day-after-source-control default and the stop-date-mandatory-field and the oral-switch-prompts) and the no-completion-antibiotics-without-a-reason rule and the audit-findings-presented-with-the-case-not-despite-it - the just-culture; and the patient-facing close - the explanation-and-apology-where-standards-failed-under-Duty-of-Candour and the future-antibiotic-plan-in-his-records (the CDI-history-alert and the renal-dosing-flags and the fluoroquinolone-caution-recorded) and the follow-up-CDI-relapse-surveillance - [[gastrointestinal/bowel-disease]], [[renal/acute-kidney-injury]], [[medical-ethics-law/professionalism-regulation]].**
-:::
+- Selective toxicity depends on targets the microbe has and the host lacks: peptidoglycan, 70S ribosomes, bacterial enzymes, viral polymerases and proteases, fungal ergosterol.
+- β-lactams and glycopeptides act on the cell wall; aminoglycosides, tetracyclines, macrolides, clindamycin and linezolid on ribosomes; fluoroquinolones, rifampicin, metronidazole and the folate antagonists on nucleic acid synthesis.
+- β-lactams show time-dependent killing ($fT_{>\text{MIC}}$), aminoglycosides concentration-dependent killing ($C_{\max}/\text{MIC}$), and vancomycin and fluoroquinolones exposure-dependent killing ($\text{AUC}/\text{MIC}$). Dosing follows from this.
+- Resistance is intrinsic or acquired, through inactivating enzymes, altered targets, reduced entry and efflux. MRSA (PBP2a), VRE (*vanA*), ESBLs and carbapenemases (KPC, OXA-48, NDM, VIM, IMP) are the key examples.
+- Resistance spreads by clones and by plasmids, and every antibiotic course selects it in the patient's own flora.
+- Stewardship means starting smart, reviewing at 48–72 hours, using the narrowest effective drug for the shortest effective time, switching to oral early, and correcting false penicillin allergy labels.
 :::
 
 ## Exercises
 
-::: exercise Adjust for the kidney {level=1}
-An E. coli bacteraemia patient's eGFR falls from 70 to 20 during therapy on piperacillin-tazobactam and once-daily gentamicin. What do you change and monitor?
+::: exercise Match the drug to its target {level=1}
+Name the target of each drug: (a) gentamicin, (b) ciprofloxacin, (c) vancomycin, (d) clarithromycin, (e) trimethoprim.
+::: hint
+Cell wall, ribosome (which subunit?), DNA replication or folate synthesis.
+:::
 ::: solution
-**Renal-prescribing-medicine ([[#def-otheragents]], [[renal/chronic-kidney-disease]], [[pharmacology/dosing-principles]]): the drug-by-drug pass - piperacillin-tazobactam-accumulation-and-neurotoxicity-and-seizures-with-beta-lactams-in-general (the cefepime-encephalopathy-and-meropenem-threshold-lessons) with re-dosing-by-eGFR and the pip-tazo-acute-kidney-injury-association-with-vancomycin-combination (the synergy-or-additivity-question with the vancomycin-AUC-exposure-and-the-monitoring-cadence) and the gentamicin - the the modern-practice (the 6-8-hour post-dose level for AUC-guided or the nomogram with re-dose-intervals-per-level and the gentamicin-and-pip-tazo-nephrotoxicity-and-vestibular-symptom-questions and the hold-if-48-72-hour-course-completed-for-some-syndromes) - [[microbiology/laboratory-diagnosis]]; the source-control-and-duration recheck (the obstructed-kidney-and-drainage and the Gram-negative-bacteraemia-shorter-course-evidence-vs-renal-failure-population-under-representation) and the IV-oral-switch-options-if-susceptible-and-clinically-improving (the ciprofloxacin-bioavailability-gem and its tendon-and-aortic-and-QTc-checks); the supportive care - the fluid-status-and-nephrotoxins-audit (NSAIDs-and-ACE-inhibitors-and-contrast) and the potassium-and-acid-base-and-phosphate-surveillance and the line-and-dose-timing-for-next-morning-samples-and-the-do-not-double-dose-when-level-missing-education; and the prescribing-safety net - the eGFR-alert-acknowledgment-versus-clinician-judgement (the therapeutic-dose-maintained-in-dialysis-days lessons for some drugs) and the discharge-kidney-function-plan (the oral-step-down-with-dose-and-duration-and-repeat-bloods) - [[renal/potassium-calcium-phosphate]], [[clinical-skills/patient-safety]].**
+(a) The 30S ribosomal subunit. (b) DNA gyrase and topoisomerase IV. (c) The terminal D-alanyl-D-alanine of the peptidoglycan precursor, blocking cell wall synthesis. (d) The 50S ribosomal subunit. (e) Dihydrofolate reductase in the bacterial folate pathway.
 :::
 :::
 
-::: exercise Choose outpatient oral therapy {level=1}
-Pick oral regimens: pyelonephritis with ESBL E. coli susceptible to trimethoprim and nitrofurantoin and cefpodoxime; a septic joint step-down with MSSA; a dental-source deep neck infection step-down.
+::: exercise Time above the MIC {level=1 check="75"}
+In an illustrative model, a β-lactam has a free peak concentration of 40 mg/L and a half-life of 1.5 hours, and is given every 6 hours. For an organism with an MIC of 5 mg/L, what is $f T_{>\text{MIC}}$ as a percentage of the dosing interval?
+::: hint
+Count the half-lives from 40 to 5 mg/L.
+:::
 ::: solution
-**Oral-step-down-mechanics ([[#def-cellwall]], [[#def-proteinsynthesis]], [[pharmacology/absorption-distribution]]): pyelonephritis-with-ESBL - nitrofurantoin-is-urinary-bladder-only-never-for-pyelonephritis-or-bacteraemia (the tissue-concentration rule) and trimethoprim-if-susceptible-and-tolerated-with-folate-and-potassium-and-creatinine-awareness versus-cefpodoxime-versus-cipro-or-levofloxacin-if-susceptible-and-bleeding-risk-review and the 7-versus-14-day-decision-by-response-and-the-oral-beta-lactam-lower-cure-rates-needing-longer-course-note and the 48-72-hour-clinical-review-commitment - [[renal/urinary-tract]]; septic-joint-MSSA-step-down - the IV-versus-oral-bioavailability-picks (the the UK-flucloxacillin-vs-US-dicloxacillin and the co-trimoxazole-versus-clindamycin-versus-linezolid-for-MRSA and the OVIVA-bone-and-joint-non-inferiority-era-with-monotherapy-debate) with the CRP-and-surgical-trajectory-tracking; the deep-neck-infection-step-down - the amoxicillin-clavulanate-versus-metronidazole-plus-phenoxymethylpenicillin-for-oral-anaerobes-and-the-clindamycin-C.diff-trade and the airway-safety-net-and-ENT-re-review-rules and the-drainage-was-it-done-question (the oral-never-rescues-undrained-pus); and the general rules - the gut-function-checks (the vomiting-and-IBD-and-bariatric-surgery-and-oral-chemical-failure-risks) and the adherence-and-interaction-interview (the dairy-and-iron-and-antacids-with-tetracyclines-and-fluoroquinolones and the warfarin-and-metronidazole-and-co-trimoxazole-and-azole-antifungal-bleeding-stories) and the written-course-cards with red-flag-review-dates - dentistry link [[anatomy/head-neck]], [[clinical-skills/communication]].**
+$\log_2(40/5) = \log_2 8 = 3$ half-lives, which is $3 \times 1.5 = 4.5$ hours. $4.5/6 = 0.75$, so $f T_{>\text{MIC}} = 75\%$.
 :::
 :::
 
-::: exercise Interpret antibiogram trends {level=2}
-Your hospital's annual antibiogram shows E. coli third-generation cephalosporin resistance rising from 8% to 14% and gentamicin resistance tracking with it, while nitrofurantoin susceptibility stays at 96%. Explain and act.
+::: exercise Intrinsic resistance {level=1}
+Explain why each combination fails: (a) ceftriaxone for *Enterococcus faecalis* endocarditis; (b) vancomycin for *E. coli* bacteraemia; (c) amoxicillin for *Mycoplasma pneumoniae* pneumonia.
+::: hint
+Each is a property of the species, not of a particular strain.
+:::
 ::: solution
-**Antibiogram-reading-and-acting ([[#def-resistance]], [[#def-stewardship]], [[microbiology/laboratory-diagnosis]]): the mechanism read - the CTX-M-type-ESBL-plasmids-co-carrying-aminoglycoside-resistance (the aac-and-armA-genes) and-sometimes-folate-genes explaining the linked rise and the the multi-target-low-resistance-profile of nitrofurantoin and the chromosomal-versus-plasmid-pace and the clonal-versus-plasmid-spread possibilities - the organism typing (E. coli ST131-CC and its ESBL-and-FQ-resistance-epidemiology) would separate them and the unit-level-versus-community-versus-hospital-sources matter for the response; the action - empirical-guideline-updates-where-needed (the risk-scores-for-ESBL-urinary-infections-versus-urinary-risk-factors (travel and residence and recent antibiotics and recurrent UTI and the local-calibration-caveat)) and the fluoroquinolone-and-cephalosporin-consumption-feedback-and-the-oral-step-down-realignment (the co-trimoxazole-versus-fluoroquinolone-sparing-question-for-UTIs-in-men) and the community-versus-hospital-antibiograms-separated-and-published with 3-year-trends-not-annual-noise (the 30-isolates-per-unit warning) and the veterinary-and-sewage-One-Health-adjacency-checks (the local-Water-quality-AMR-monitoring-where-available) - [[public-health/environmental-occupational]], replace [[infectious-diseases/stewardship-outbreaks]]; and the communication - the antibiogram-with-a-reading-guide (the denominator-definitions: unique-patients-versus-all-isolates (the surveillance-bias where screening-cultures-dilute) and the resistance-above-expected-flagging) and the antibiogram-literacy-in-induction-training because an antibiogram nobody can interpret is decoration - [[clinical-skills/records-handover]], [[microbiology/infection-control]].**
+(a) Enterococci have penicillin-binding proteins with low affinity for cephalosporins, so all cephalosporins are inactive. (b) Vancomycin is too large to cross the Gram-negative outer membrane through porins. (c) *Mycoplasma* has no cell wall, so β-lactams have no target.
 :::
 :::
 
-::: exercise Design an AMR national strategy cell {level=3}
-You join the national AMR programme. Design the 5-year plan: surveillance, stewardship, WASH, vaccines, agriculture and economic instruments, with evaluation.
+::: exercise Once-daily gentamicin {level=2}
+Explain why gentamicin is usually given once daily rather than in three smaller doses, and why blood levels are measured.
+::: hint
+Consider concentration-dependent killing, the post-antibiotic effect and toxicity.
+:::
 ::: solution
-**AMR-strategy-engineering ([[#def-resistance]], [[#def-stewardship]], [[public-health/global-health]], [[public-health/health-systems-economics]]): surveillance - human-and-veterinary-and-environmental-AMR-surveillance-with-lab-capacity-strengthening (the national reference-laboratory networks and the site-prevalence-surveys-when-routine-data-absent) and the resistance-burden-modelling-with-confidence-intervals (the GRAM modelling series read with its method caveats) and the genomic-epidemiology-integration; stewardship - the national treatment guidelines with regular revision and the AWaRe classification targets (the 70% access-group consumption goal and country tracking) and the community-pharmacy-and-OTC-enforcement-and-essential-medicines-availability-paradox (the restriction-without-access-harms-the-poor) and the public-awareness-campaigns-evaluated-by-knowledge-and-behaviour-not-exposure; the prevention wing - the water-and-sanitation-and-hygiene-investment-case (the diarrhoeal-disease-and-trachoma-and-AMR-load-argument) and the vaccination programmes quantified (the PCV and influenza and typhoid-conjugate antibiotic-savings logic) and the hospital-infection-prevention-programmes-with-ward-level-metrics; and the economic instruments - the agricultural-antibiotic-growth-promoter-bans-with-enforcement-and-alternatives and the pull-payment-market-entry-rewards-and-lump-sum-payouts-modelled (the subscription pilot designs and the AMC-per-course-payment-ideas) and the antibiotic-access-programs-for-low-income-countries (the AMR-does-not-benefit-from-poverty-and-essential-medicines-lists) and the one-health-governance-with-accountability-lines (the quadpartite-collaborations and the national-action-plans-with-costed-budgets-because-plans-without-budgets-are-poetry) and the evaluation pre-specified with control comparisons (difference-in-differences evaluations of consumption and resistance with honest attribution limits) - [[public-health/prevention-promotion]], [[public-health/determinants-inequalities]].**
+Gentamicin kills in a **concentration-dependent** way, so a single large dose gives a high $C_{\max}/\text{MIC}$ ratio and rapid killing. Its **post-antibiotic effect** suppresses regrowth for hours after levels fall below the MIC, so a long gap between doses does not allow regrowth. Toxicity to the kidney and inner ear depends on sustained exposure, and uptake into these tissues is saturable, so a long period of low concentration each day reduces toxicity. Levels are measured because elimination depends on kidney function: a high trough level means the drug is accumulating and the dose or interval must be changed according to the local nomogram.
+:::
+:::
+
+::: exercise Oral options for an ESBL urinary infection {level=2}
+A 45-year-old woman has uncomplicated cystitis caused by an ESBL-producing *E. coli*. Explain why co-amoxiclav and cephalexin are unlikely to work, and why nitrofurantoin, fosfomycin and pivmecillinam often remain active.
+::: hint
+What does an ESBL hydrolyse, and how do the other three drugs differ structurally or in mechanism?
+:::
+::: solution
+An ESBL hydrolyses penicillins and cephalosporins, including cephalexin. Clavulanic acid inhibits many ESBLs in the laboratory, but ESBL strains often carry other β-lactamases and resistance mechanisms, so co-amoxiclav frequently fails. Nitrofurantoin and fosfomycin are not β-lactams and act on different targets, so the ESBL does not affect them. Pivmecillinam is a β-lactam but is relatively stable to many ESBLs and reaches high urinary concentrations. All three are concentrated in urine, which suits lower urinary tract infection, and have limited effects elsewhere. The final choice depends on the susceptibility report and local guidelines.
+:::
+:::
+
+::: exercise A dangerous interaction {level=2}
+A 70-year-old man taking simvastatin is prescribed clarithromycin for a chest infection. A week later he has muscle pain and dark urine. Explain the mechanism and how it could have been avoided.
+::: hint
+Which enzyme metabolises simvastatin, and what does clarithromycin do to it?
+:::
+::: solution
+Simvastatin is metabolised by **CYP3A4**. Clarithromycin strongly inhibits CYP3A4, so simvastatin levels rise and cause **myopathy** and, in severe cases, **rhabdomyolysis**, with myoglobin turning the urine dark and risking kidney injury. It could have been avoided by checking for interactions: the BNF advises avoiding this combination, for example by temporarily stopping the statin during the course or choosing an antibiotic that does not inhibit CYP3A4, such as doxycycline, if appropriate for the infection.
+:::
+:::
+
+::: exercise Why tuberculosis needs combination therapy {level=3 check="10"}
+A tuberculous lung cavity contains about $10^9$ bacilli. Spontaneous mutations conferring rifampicin resistance occur in about 1 in $10^8$ bacilli, and isoniazid resistance in about 1 in $10^6$, independently. How many rifampicin-resistant bacilli would you expect in the cavity before treatment? Then explain, with a calculation, why combination therapy prevents resistance.
+::: hint
+Multiply the population by the mutation frequency; for both drugs, multiply the frequencies.
+:::
+::: solution
+Expected rifampicin-resistant bacilli: $10^9 \times 10^{-8} = 10$. Rifampicin alone would kill the susceptible majority and leave these 10 to grow into a resistant population, which is how monotherapy creates drug-resistant tuberculosis.
+
+A bacillus resistant to both drugs by independent mutation has a frequency of about $10^{-8} \times 10^{-6} = 10^{-14}$, so the expected number in the cavity is $10^9 \times 10^{-14} = 10^{-5}$: almost certainly none. Each drug kills the bacilli resistant to the other. This is why tuberculosis is treated with several drugs in the initial phase, why adherence matters, and why rapid molecular tests for rifampicin resistance are used at diagnosis. The same principle explains combination therapy for HIV.
+:::
+:::
+
+::: exercise A day-four review {level=3}
+A 52-year-old man with cellulitis of the lower leg was started on intravenous piperacillin–tazobactam on admission because he "looked unwell". On day 4 he is afebrile, the redness has receded behind the pen line drawn on admission, his inflammatory markers are falling, and blood cultures are negative. Apply the "Then focus" review and justify each decision.
+::: hint
+Consider the likely organisms in cellulitis, the spectrum of the current drug, the route and the duration.
+:::
+::: solution
+**Diagnosis**: cellulitis is usually caused by *Streptococcus pyogenes* or *Staphylococcus aureus*; negative blood cultures are common and do not exclude this. He is responding.
+
+**Drug**: piperacillin–tazobactam is a broad-spectrum Watch antibiotic with anti-pseudomonal and anaerobic activity that he does not need. It adds risk of *C. difficile* infection and resistance. The appropriate change is to a **narrower drug** covering streptococci and staphylococci, such as flucloxacillin, or an alternative if he is allergic, following local guidelines.
+
+**Route**: he is improving and can take oral drugs, so he meets the criteria for **switching to oral** therapy.
+
+**Duration**: set a **stop date**. NICE guidance for cellulitis suggests a short course, typically 5–7 days in total, extended only if the infection has not improved.
+
+**Documentation**: record the review, the reasons and the plan in the notes and drug chart. The decision is **change, switch and set a stop date**, which reduces harm without reducing effectiveness.
 :::
 :::

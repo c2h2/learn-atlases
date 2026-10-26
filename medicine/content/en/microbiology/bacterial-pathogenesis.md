@@ -1,145 +1,346 @@
-Virulence is what turns a bacterium into a disease: **attachment, invasion, evasion, damage and transmission are five evolutionary problems, and each has molecular solutions - adhesins, secretion systems, capsules, toxins and biofilms - that explain the clinical syndromes you see and inspire the diagnostics and drugs you prescribe.** This chapter is the mechanism layer beneath the organism catalogue of the previous chapter.
+Most bacteria that meet the human body do no harm. They are washed away, killed by innate defences, or settle as harmless members of the normal flora. A **pathogen** is an organism that can cause disease, and to do so it must solve a series of problems: reach a host, attach to a surface, multiply, avoid or resist the immune response, and damage tissue. Each solution is a **virulence factor**, and each virulence factor is a clue to the clinical picture.
 
-This chapter covers adhesion and colonisation, invasion and secretion systems, immune evasion, toxin-mediated damage, biofilms and persistence, and the evolutionary dynamics of transmission and resistance.
+Thinking in steps also explains treatment. Some diseases are caused by bacteria growing in tissue, and killing the bacteria cures them. Others are caused by a toxin that has already done its work, and antibiotics then help little. Some infections persist on implanted devices because the bacteria live in a biofilm that drugs cannot clear.
 
-## Getting in and staying in
+This chapter covers pathogenicity and virulence, the evidence that links a microbe to a disease, adhesion and invasion, immune evasion, bacterial toxins, biofilms, and the host factors that decide who becomes ill.
 
-::: definition Adhesion and colonisation {#def-adhesion}
-**The receptor logic (the fimbriae-and-pili-with-tip-adhesins-binding-specific-glycolipid-or-glycoprotein-receptors - the uropathogenic-E. coli FimH-to-uroplakin-and-P-blood-group-associated adherence of pyelonephritis strains (the genetic-association-between-blood-group-and-severity-oddity) and the Bordetella-pertussis-tracheal-cytotoxin-and-filamentous-haemagglutinin pair that paralyses-and-sticks and the Mycoplasma-attachment-organelle and the Helicobacter-babA-blood-group-antigen-and-neutrophil-activating-protein-adhesins explained by the host's polymorphic receptors - [[gastrointestinal/oesophagus-stomach]], [[renal/urinary-tract]], [[respiratory/respiratory-infections]]); the type-IV-pili-as-molecular-tugboats-and-twitching-motility (the Neisseria-and-Pseudomonas-retraction-motor and the assembly-at-the-pole) and the surface-anchored-non-fimbrial-adhesins (the microbial-surface-components-recognising-matrix - the fibronectin-binding proteins of staphylococci explaining the device-and-wound tropism and the invasin-protein-A-duality); motility-and-chemotaxis as positioning tools (the flagellar-count-and-swarm-versus-plank-logic and the Helicobacter-pH-sensing-helicity-through-mucus and the Proteus-swarming-on-catheters) - [[cell-biochemistry/membranes-transport]] for the proton-motive force driving flagella; and the competition for niche (the bacteriocins-and-T6SS-delivery-of-anti-bacterial-toxins - the Pseudomonas-and-Acinetobacter-competition-biology - and the microbiota's colonisation-resistance-as-pathogen-exclusion with its antibiotic-breaking and faecal-transplant-restoring logic covered in [[microbiology/microbiota]] and [[gastrointestinal/bowel-disease]]).**
-:::
+## Pathogenicity, virulence and dose {#virulence}
 
-::: definition Invasion and immune evasion {#def-invasion}
-**The secretion-system toolkit (the Type-1 through Type-6 injectors with their needle-complexes translocating effectors - the T3SS injecting actin-polymerisation-perturbers for entry (the Salmonella Sip-and-Sop effectors triggering the membrane ruffles that swallow the bacterium) and the Shigella-Ipa-mediated invasion and M-cell sampling and the T3SS-injected-translocators-punching-holes-that-cause-the-inflammation-diarrhoea-and-the EPEC attaching-and-effacing-lesion via Tir-intimin-pedestal-formation - [[gastrointestinal/digestion-absorption]], [[gastrointestinal/bowel-disease]]); the injection systems as Virulence and communication (the T6SS contractile phage-tail-like injectors against eukaryotes and bacteria and the T4SS conjugation-and-effector-hybrid (the Legionella-Dot-Icm building its replicative vacuole from ER vesicles - the macrophage-parasitism masterclass in [[infectious-diseases/immunocompromised-host]]) and the T5S-and-T9SS-of-the-Bacteroidetes-but-keep-clinical); the zipper-and-snowball invasion strategies (the Listeria-InlA-and-InlB-zippering-into-epithelium-then-ActA-rocketing-through-cytosol-and-cell-to-cell-spread-without-extracellular-exposure-with-the-ICAM-and-heparin-sulfate-cues and the Yersinia-and-Staphylococcal-invasins and Salmonella's M-cell uptake followed by intracellular replication in modified vesicles) and the intracellular niches (the Mycobacterium-tuberculosis phagosome-lysosome fusion block via ESX-1 and cord factor and the phagosome acidification-neutralisation and the granuloma as an immunological containment negotiated truce covered in [[infectious-diseases/tuberculosis]]); and the immune-evasion cabinet (the capsules - hyaluronic-acid-C-group-Strep-molecular-imitation and the sialylated-neisseria-and-complement-factor-H-recruitment and the pneumococcal-pneumolysin-and-capsule-pair - [[immunology/innate-immunity]]; the IgG- and complement-evading proteins - protein A and ScpA-IgA-protease and the M-protein-and-Fc-binding-repertoire and the leukocidins - the Panton-Valentine-leukocidin-pore-former-killing-neutrophils-and-its-necrotising-pneumonia-and-skin-phenotype and the alpha-toxin-heptameric-pore-and-ZOnoccludens-1-disruption; and the antigenic-variation engines - the Neisseria pilus antigenic and phase variation via slipped-strand mispairing and gene conversion and the Borrelia-vlsE-surface-antigen-shuffling-and-relapsing-fever and the Trypanosoma-antigenic-variation-parallel - [[immunology/adaptive-responses]]).**
-:::
+::: definition Pathogenicity and virulence {#def-virulence}
+**Pathogenicity** is the ability of an organism to cause disease. It is a yes-or-no property of a species or strain.
 
-## Damage and persistence
+**Virulence** is the degree of pathogenicity: how readily and how severely an organism causes disease. It is measured, for example, by the **infectious dose 50** (ID50), the dose that infects half of exposed hosts, or the **lethal dose 50** (LD50), the dose that kills half.
 
-::: definition Toxins, biofilms and persistence {#def-toxins}
-**The exotoxin taxonomy that maps to syndromes (the A-B toxins - the ADP-ribosylators (cholera-toxin-Gs-locking-cAMP-secretion and pertussis-toxin-Gi-disabling-inhibition-with-lymphocytosis-and-whooping-hormone-effects and the Diphtheria-and-Exotoxin-A-elongation-factor-2-ADP-ribosylators-protein-synthesis-death - [[gastrointestinal/digestion-absorption]], [[respiratory/respiratory-infections]]); the pore-formers - alpha-toxin and PVL and alpha-haemolysin and Streptolysin-O (the oxygen-labile haemolysin behind the ASO test) and Streptolysin-S and the phospholipases (the alpha-toxin/lecithinase-of-C-perfringens-tissue-liquefaction-and-gas) and the protective-and-lethal-edema-factor-anthrax-pair; and the superantigens cross-linking-MHC-II-and-Vbeta-outside-the-groove activating 20%-of-all-T-cells in a cytokine storm (the TSST-1-and-se-and-spec-entero-and-pyro-genic-exotoxins with their rash-shock-desquamation and their MHC-II polymorphism influences) - [[immunology/adaptive-responses]], [[immunology/innate-immunity]] for the cytokine biology); the endotoxin-and-PAMP-logic (the lipid-A-TLR4-CD14-MD2 and the flagellin-TLR5 and the CpG-TLR9 and the peptidoglycan-and-DNA-sensing-cytosol-sensors (the NOD-and-cGAS-STING) with their fever-hypotension-DIC-and-ARDS-phenotypes - [[immunology/innate-immunity]], [[emergency-critical-care/shock-fluids]]); biofilms (the attachment-maturation-dispersal-architecture with their EPS-and-DNA-and-pili-and-water-channels and the 10-1000-fold-antibiotic-tolerance and the persister-cell-phenotypes-that-are-not-resistance and the device-infection-clinical-reality - the staphylococcal-and-pneumococcal-and-Pseudomonas-and-Candida-device-syndrome and the rifampicin-combination-logic-for-staphylococcal-biofilm and the antibiotic-lock-therapy and the explant-versus-retention decisions - [[microbiology/antimicrobials]], [[surgery/wounds-surgical-infection]], [[musculoskeletal/inflammatory-arthritis]] for the prosthetic joint); and persistence and dormancy (the stringent response and stationary-phase general stress response and the small-colony-variants of chronic staphylococcal infection in CF and the viable-but-non-culturable state debate and the toxin-antitoxin persisters and the intracellular-persister-reservoirs (the Salmonella-in-macrophages-rechallenging-cure and the biofilm-shedding-relapses) - the biological basis of why durations are weeks not days).**
+A **primary pathogen** causes disease in healthy people. An **opportunistic pathogen** causes disease mainly when host defences are impaired, for example by neutropenia, a central line or a burn.
 :::
 
-::: definition Transmission and evolution at the bedside {#def-evolution}
-**Routes as clinical questions (the faecal-oral-with-infectious-dose-stratification-from-Shigella-and-Crypto-small-to-Cholera-large and the respiratory-droplet-versus-aerosol-boundary-that-drives-PPE-policy (the measles-and-TB-and-influenza-and-SARS-CoV-2-evidence-hierarchies - [[public-health/communicable-disease-control]], [[infectious-diseases/healthcare-infections]]); the vector-and-reservoir-logic (the zoonotic-source-questions - livestock and birds and reptiles and ticks and floodwater - that only an exposure history unlocks - [[infectious-diseases/tropical-infections]]); the sexual-and-vertical-routes (the mother-to-child list and the intrapartum-exposure-management covered in [[obstetrics-gynaecology/labour-birth]] and [[paediatrics/newborn]]); the healthcare-route (the hands-and-devices-and-environment and the antimicrobial-selection-ecosystem - [[microbiology/infection-control]]); and the evolutionary dynamics physicians cause (the selection-windows-and-mutant-prevention-concentration and the resistance-as-natural-selection-with-treatment-as-selection-pressure - the within-host-resistance-evolution-for-high-burden-sites (the endocarditis-pneumonia-TB-cavity) driving combination-therapy-logic (the TB, HIV and hepatitis protocols); the horizontal-gene-transfer-vehicles - plasmids-and-transposons-and-integrons-and-phages (the resistance-island-and-plasmid-epidemiology - the CTX-M-and-KPC-and-NDM-spread-maps) and the conjugation-machines-covered-in [[microbiology/antimicrobials]]; and the virulence-resistance-trade-offs-and-where-they-break (the MRSA-fitness-cost-and-compensation-mutations and the PVL-strain-community-success-and-the CA-MRSA epidemiology cycles) - [[genetics/common-disease-genetics]] for the population genetics language).**
-:::
+Infectious doses vary enormously. *Shigella* and Shiga toxin-producing *Escherichia coli* can cause disease after ingestion of perhaps 10–100 organisms, which is why they spread easily between children in nurseries. *Vibrio cholerae* needs a much larger dose in a person with normal stomach acid, because acid kills most ingested vibrios. People taking proton pump inhibitors, or with reduced stomach acid for other reasons, are infected by lower doses of several gut pathogens.
 
-::: example The dialysis unit cluster {#ex-pvl-cluster}
-Over six weeks, four haemodialysis patients and one nurse develop recurrent skin abscesses; two pneumonias followed; the lab reports Staphylococcus aureus with the PVL genes, all methicillin-resistant.
-::: solution
-**A PVL-MRSA transmission cluster - virulence meets infection control ([[#def-toxins]], [[#def-adhesion]], [[infectious-diseases/healthcare-infections]]): the organism read - the PVL-pore-former-killing-neutrophil-macrophages-and-causing-tissue-necrosis (the necrotising and haemorrhagic pneumonia with the leukopenia and the young-patient-death-trajectory and the recurrent furunculosis-with-small-necrotic-lesions) and the USA300-and-CC80-and-CC22-community-lineages and the SCCmec-types-and-ACME-fitness-factors with the mupirocin-and-chlorhexidine-resistance-erosion; the cluster investigation - the isolates'-whole-genome-comparison (the SNP-clustering proving machine-to-machine-via-staff-hands-or-shared-solutions) and the screening (the anterior-nares-and-lesion-and-perineum-swabbing of patients and staff with the decolonisation-trial-design and the dialysis-machine-dedication-and-session-sequencing) and the nurse's-own-lesion-management-and-return-to-work-rules with occupational health and the non-punitive framing that makes staff report lesions - [[public-health/environmental-occupational]]; the control package - the contact precautions with the wound-covering-first-rule and the decolonisation (the 5-day-mupirocin-and-chlorhexidine-bodywash with the intranasial-treatment of failure-relapse and the household-parallel-treatment) and the antibiotic stewardship of the abscesses (the incision-and-drainage primacy and the oral options for skin disease - doxycycline-and-clindamycin-and-trimethoprim with the inducible-clindamycin-resistance D-test explanation) - [[microbiology/antimicrobials]], [[musculoskeletal/skin]]; and the clinical-care upgrades - the pneumonia-recognition-protocol (the post-viral rapidly-cavitating-haemoptysis and early MRSA-cover-and-ICU-and-no-anti-diarrhoeal? no: the no-anti-secretory-harm-debate) and the dialysis-catheter-versus-fistula-access-debate-with-skin-colonisation and the vaccination-future-none-yet honesty and the public reporting that keeps the unit's trust intact - [[respiratory/respiratory-infections]], [[renal/chronic-kidney-disease]].**
-:::
-:::
+A simple model makes these numbers easier to use. Suppose each organism in a dose independently has a small probability $r$ of starting an infection. Then the probability that a dose $D$ infects the host is
 
-::: example The traveller's toxin {#ex-cholera-vs-etec}
-Two returning travellers present with watery diarrhoea: one with 2-day crampy illness after Indian-street-food and no fever; one with rice-water stools at 1 L/hour, severe dehydration and a crush-cramp picture after a Bangladesh village visit with a flooded tubewell.
-::: solution
-**Two toxins, one mechanism class, different emergencies ([[#def-toxins]], [[gastrointestinal/digestion-absorption]], [[infectious-diseases/tropical-infections]]): the shared physiology - the enterotoxin-driven secretory diarrhoea with isotonic stool and no fecal leukocytes (the cholera-toxin-irreversible-Gs-cAMP-lock versus ETEC's heat-labile-toxin-same-trick-plus-heat-stable-toxin-cGMP-and-CC-agonist-audience) and why anti-motility drugs are palliative-and-risky-in-inflammatory-disease-not-this-one-honestly; the different management - the rehydration-centred (the ORS-with-its-sodium-glucose-cotransport-rationale that is a virulence-mechanism-derived therapy - beautiful) and the cholera's IV Ringer-lactate-or-normal-saline-with-potassium-and-bicarbonate for the 10% who are severe, the doxycycline-or-azithromycin-adjunct-reducing-shedding and the zinc-in-children and the notification and stool culture on TCBS agar and PCR and the public-health and cholera-vaccine discussion - and the ETEC's self-limiting-course with the single-dose antibiotics only for severe and the loperamide-legitimacy; and the prevention teaching - the water-and-ice-and-salad-and-cooked-hot rules with their actual effectiveness reading (the traveller-illness-attribution studies) and the bismuth and the probiotics-weak-evidence and the emerging ETEC-and-cholera-vaccine-pipelines; the outbreak angle - the flooded-tubewell case triggers a country-alert and the case-fatality-rate-depends-purely-on-rehydration-access (the 1%-with-treatment-versus-double-digit-without and the Oral-Cholera-Vaccine campaigns and the WASH interventions that end epidemics) - [[public-health/environmental-occupational]], [[public-health/global-health]]; and the examination pearl - the crush cramps reflecting electrolyte losses and the malnourished child's re-feeding risk - [[gastrointestinal/clinical-nutrition]].**
-:::
-:::
+$$
+P(D) = 1 - e^{-rD}
+$$ {#eq-dose}
 
-::: example The vaccine that changed the neighbours {#ex-serotype-replacement}
-Eighteen months after a PCV-13 programme starts, invasive pneumococcal disease in children falls 80%, but your laboratory reports more serotype 12F and 15A bacteremias in older adults with comorbidity.
-::: solution
-**Vaccine-ecology-medicine ([[#def-invasion]], [[#def-adhesion]], [[public-health/vaccination-programmes]]): the mechanisms - capsule-serotype-specific-mucosal-immunity-blocking-transmission-of-vaccine-types-and-hence-herd-effects-measurable-in-unvaccinated-adults (the real-world-boon) and ecological-space-being-filled-by-non-vaccine-serotypes (the true-replacement-versus-absolute-increase-versus-lab-surveillance-artefact-debate: the ascertainment and referral changes matter) and the serotype-invasiveness-potential-being-graded (the hyperinvasive CC-serotype complex lineages) with the capsule-switching-recombination-warning; the measurement - the structured invasive-disease-surveillance-by-serotype-and-age-with-capture-recapture-for-completeness and the nasopharyngeal-carriage-surveys-in-children (the immunological and ecological endpoints) and the mathematical models of serotype-competition informing the next valency decision and the PCV-versus-PPV sequencing-policy-differences-explained-by-this-ecology; the clinical-update-loop - telling prescribers that vaccine-types-fall-but-do-not-vanish and that adult risk-factors (asplenia and HIV and cochlear implants and CSF leaks driving the MenC-and-pneumococcal-vaccination-rules) - [[immunology/immunodeficiency]], [[renal/chronic-kidney-disease]] for the older-adult comorbidity list; and the policy conversation - valency-vs-manufacture-vs-cost-vs-timing (the next candidate-protein-vaccine frontier with its type-independent-but-non-sterilising-hope) and the equality angle of which countries ever get PCV at all - [[public-health/global-health]], [[epidemiology-ebm/measuring-disease]].**
-:::
-:::
-
-::: example The throat swab that was positive {#ex-typhoid-carrier}
-A food handler's routine occupational screening grows Salmonella Typhi; he had typhoid fever treated with a short fluoroquinolone course 8 months ago and feels well; his stool today also positive on two cultures.
-::: solution
-**Chronic-carriage-management ([[#def-adhesion]], [[#def-evolution]], [[public-health/communicable-disease-control]]): the biology - gallbladder-biofilm-on-stones-with-bile-and-the-O-methyl-accepting-chemorepellent-chemistry? - no: keep simple: the bile-adapted biofilm on gallstones with intermittent shedding and the factors (gallstones and female sex and biliary anomalies and antimicrobial resistance slowing clearance) and the importance of true carrier-versus-convalescent-shedding-definitions (months and repeated positives); the public-health mechanics - the exclusion-from-high-risk-food-handling-rules-and-the-evidence-base-of-those-rules-read-honestly and the contact-tracing-and-vehicle-investigation and the stool-surveillance-schedule (the three-negative-protocols-with-the-intervals and the culture-method sensitivity caveats) and the communication with employer-and-occupational-health balancing livelihood and risk; the treatment - the prolonged-or-alternative-antimicrobials (the oral-fluoroquinolone-if-susceptible-with-biliary-penetration-and-the-azithromycin-and-co-trimoxazole-and-amoxicillin-alternatives-by-susceptibility) with the cholecystectomy-for-stone-associated-refractory-carriage discussion and the antibiotic-adherence-and-resistance-cost framing; and the lessons - the Typhoid-conjugate-vaccine-role-for-endemic-contacts-and-travellers-not-carrier-therapy-honestly and the diagnostic-speed (the Widal-misuse-critique) and the occupational-screening-philosophy debate (the screening finds carriers it cannot cure versus the outbreak-prevention-argument) - [[infectious-diseases/tropical-infections]], [[gastrointestinal/pancreas-biliary]], [[medical-ethics-law/justice-resources]], [[microbiology/antimicrobials]].**
-:::
-:::
-
-::: quiz
-The virulence mechanism that best explains why Staphylococcus epidermidis causes prosthetic joint infection but rarely invasive disease in healthy people is:
-- [x] Biofilm formation on abiotic surfaces with antibiotic tolerance
-- [ ] Shiga toxin production
-- [ ] M protein molecular mimicry
-- [ ] Endospore germination at low oxygen
-::: solution
-**Biofilm EPS and surface-adhesin biology plus opportunistic low virulence: S. epidermidis is a skin commensal whose success comes from sticking to plastic and tolerating antibiotics within biofilm, not from tissue-invasive toxins ([[#def-toxins]], [[#def-adhesion]], [[microbiology/antimicrobials]], [[musculoskeletal/inflammatory-arthritis]]).**
-:::
-:::
+Setting $P = 0.5$ gives $\text{ID}_{50} = \ln 2 / r$, so the same model can be written $P(D) = 1 - 2^{-D/\text{ID}_{50}}$. Every additional ID50 of exposure halves the chance of escaping infection.
 
 ::: widget plot
-f: 100*exp(-0.3*x); 95*(1-exp(-1.5*x)); 100*exp(-0.3*x)*(1-exp(-1.5*x))
-x: 0, 8
-y: 0, 105
-labels: \text{weeks of effective antibiotic},\ \%\text{index};\ \text{planktonic organisms};\ \text{biofilm-persister fraction};\ \text{relapse risk (product)}
-caption: Biofilms set treatment duration ([[#def-toxins]]): the planktonic population dies in days while the persister fraction in biofilm decays slowly and relapse risk is the product of both curves - the mechanistic reason device-associated staphylococcal infection often needs retention-or-removal decisions and combination therapy with rifampicin rather than a longer single-drug course ([[microbiology/antimicrobials]], [[surgery/wounds-surgical-infection]]).
+f: 1 - 2^(-x/m)
+x: 0, 1000
+y: 0, 1.05
+sliders: m=100:10:1000:10
+labels: \text{probability of infection}
+caption: The exponential dose–response model $P = 1 - 2^{-D/\text{ID}_{50}}$, with dose $D$ (number of organisms) on the horizontal axis. The slider sets the ID50. A low ID50, as for *Shigella*, makes even small exposures dangerous; a high ID50 gives a gentle curve. Real dose–response curves also depend on the host, the vehicle (food, water, hands) and the strain; this is a simplified model.
+:::
+
+::: example How likely is infection after an exposure? {#ex-dose}
+In a simplified model, a gut pathogen has an ID50 of 100 organisms. A child swallows about 300 organisms from a contaminated toy. Using the exponential dose–response model, what is the probability of infection? What would it be after a dose of 10 organisms?
+::: solution
+Use $P(D) = 1 - 2^{-D/\text{ID}_{50}}$.
+
+For $D = 300$: $D/\text{ID}_{50} = 3$, so
+
+$$
+P = 1 - 2^{-3} = 1 - \tfrac{1}{8} = 0.875
+$$
+
+For $D = 10$: $P = 1 - 2^{-0.1} \approx 0.067$, about 7%.
+
+Even a dose one-tenth of the ID50 carries a real risk. This is why hand washing and exclusion of children with diarrhoea from nursery until they have been symptom-free for 48 hours are standard UK public health advice: they lower the dose, not just the number of exposures.
+:::
+:::
+
+## Linking a microbe to a disease {#causation}
+
+Finding an organism in a sick person does not prove that it caused the illness. It may be a harmless coloniser or a contaminant. Medical microbiology has formal criteria for causation.
+
+::: theorem Koch's postulates and their molecular version {#thm-koch}
+**Koch's postulates** state that an organism causes a disease if:
+
+1. it is found in every case of the disease;
+2. it can be isolated and grown in pure culture;
+3. the pure culture causes the disease when introduced into a susceptible host;
+4. the same organism can be recovered from that host.
+
+**Molecular Koch's postulates**, proposed by Stanley Falkow in 1988, apply the same logic to a virulence gene:
+
+1. the gene is found in pathogenic strains and is usually absent from non-pathogenic ones;
+2. inactivating the gene reduces virulence;
+3. restoring the gene restores virulence.
+:::
+
+::: proof
+The classical postulates fail in several common situations, and knowing the failures is as useful as knowing the rules.
+
+- **Carriers.** Healthy people carry *Neisseria meningitidis*, *Streptococcus pneumoniae* and *Staphylococcus aureus*, so the organism is present without disease.
+- **Organisms that cannot be cultured.** *Mycobacterium leprae* and *Treponema pallidum* cannot be grown on laboratory media.
+- **No animal model.** Some human pathogens cause no comparable disease in animals, and deliberate infection of people is usually unethical.
+- **Polymicrobial disease.** Abscesses and periodontal disease involve several organisms acting together.
+
+The molecular version avoids some of these problems because it tests a specific gene rather than a whole organism. Modern evidence also comes from DNA detection in tissue, the immune response, epidemiology and the effect of treatment or vaccination. The disappearance of disease after a vaccine targeting one organism is strong evidence that the organism caused it.
+:::
+
+## Adhesion and colonisation {#adhesion}
+
+The body's surfaces are protected by flow: saliva, urine, mucus moved by cilia, and peristalsis. A bacterium that cannot hold on is washed away.
+
+::: definition Adhesion {#def-adhesion}
+**Adhesion** is the specific binding of a bacterium to a host surface. It is mediated by **adhesins**, which are bacterial molecules that bind receptors on host cells or on the extracellular matrix. Many adhesins sit at the tips of **pili** (fimbriae); others are proteins anchored in the cell wall.
+
+Because each adhesin binds a particular receptor, adhesion helps explain **tropism**: why an organism infects one tissue and not another.
+:::
+
+Examples show how specific this can be.
+
+- **Uropathogenic *E. coli*.** Type 1 fimbriae bind mannose-containing receptors in the bladder, causing cystitis. **P fimbriae** bind glycolipid receptors in the kidney and are associated with pyelonephritis.
+- ***Neisseria gonorrhoeae*** uses type IV pili to attach to urethral and cervical epithelium. It can switch pilin genes, changing the pilus antigen.
+- ***Streptococcus pyogenes*** binds fibronectin on pharyngeal cells through surface proteins.
+- ***S. aureus*** has surface proteins that bind fibrinogen and fibronectin. Implanted devices quickly become coated with these host proteins, which gives staphylococci something to grip.
+- ***Vibrio cholerae*** attaches to the small-bowel mucosa by a pilus, which keeps it close to the cells its toxin acts on.
+
+Adhesion is a target for prevention. Antibodies against adhesins, made after infection or vaccination, can block colonisation. Some vaccines, including the acellular pertussis vaccine, contain adhesins as antigens.
+
+## Invasion and immune evasion {#invasion}
+
+Some pathogens stay on the surface and act by toxins. Others enter tissue or live inside cells, where they are protected from antibodies and many antibiotics.
+
+::: definition Invasion and immune evasion {#def-invasion}
+**Invasion** is the entry of bacteria into host cells or tissues. Bacteria invade by:
+
+- **inducing their own uptake**: *Salmonella* and *Shigella* inject proteins into gut epithelial cells through a needle-like **type III secretion system**, which makes the cell engulf them;
+- **binding entry receptors**: *Listeria monocytogenes* uses a surface protein called internalin to bind E-cadherin;
+- **breaking down tissue**: enzymes such as hyaluronidase and streptokinase help *S. pyogenes* spread through tissue planes.
+
+**Immune evasion** includes any mechanism that lets a bacterium survive the host response:
+
+- a **capsule**, which hides the surface from complement and antibodies and blocks phagocytosis;
+- **protein A** of *S. aureus*, which binds the Fc part of IgG in the wrong orientation;
+- **IgA proteases** of *Neisseria*, *Haemophilus influenzae* and *S. pneumoniae*, which cut mucosal IgA;
+- **antigenic variation**, which changes surface antigens faster than antibody can follow;
+- **leukocidins**, toxins that kill white cells;
+- **intracellular survival**: *Mycobacterium tuberculosis* prevents the phagosome from fusing with lysosomes, and *Listeria* escapes from the phagosome into the cytoplasm.
+:::
+
+Intracellular bacteria change the immune response that controls them. Antibody cannot reach them, so control depends on **T cells** and activated macrophages. This is why people with HIV infection, people taking corticosteroids or TNF inhibitors, and transplant recipients are at risk from *M. tuberculosis*, *Listeria* and *Salmonella*. It also explains granulomas, which are organised collections of macrophages and T cells that wall off organisms they cannot kill.
+
+*Listeria* and *Shigella* go one step further. Inside the cell they polymerise host actin into a tail that pushes them into the neighbouring cell. They spread from cell to cell without ever being exposed to the extracellular space.
+
+## Toxins {#toxins}
+
+::: definition Exotoxins and endotoxin {#def-toxins}
+An **exotoxin** is a protein made and released by a bacterium that damages host cells. Exotoxins are made by Gram-positive and Gram-negative bacteria, are often highly potent and specific, and are usually inactivated by heat. Many can be converted into harmless **toxoids** that still induce antibodies, which is the basis of tetanus and diphtheria vaccines.
+
+**Endotoxin** is the lipid A part of lipopolysaccharide in the outer membrane of Gram-negative bacteria. It is not secreted as such but released when bacteria grow or die. It is heat-stable, acts by triggering the host's inflammatory response rather than by damaging cells directly, and cannot be made into a toxoid.
+:::
+
+Many exotoxins share an **A–B structure**. The **B** (binding) part attaches to a receptor on the target cell and brings the toxin inside. The **A** (active) part is an enzyme that alters a cell component. Because the A part is an enzyme, a few molecules can affect a whole cell.
+
+| Toxin | Organism | Action | Result |
+|---|---|---|---|
+| Cholera toxin | *V. cholerae* | ADP-ribosylates the G protein Gs, so adenylate cyclase stays switched on | High cAMP; chloride and water secretion; profuse watery diarrhoea |
+| Heat-labile toxin | Enterotoxigenic *E. coli* | Similar to cholera toxin | Travellers' diarrhoea |
+| Diphtheria toxin | *Corynebacterium diphtheriae* | ADP-ribosylates elongation factor 2 | Protein synthesis stops; pharyngeal membrane, myocarditis, neuropathy |
+| Shiga toxin | *Shigella dysenteriae* type 1, Shiga toxin-producing *E. coli* | Cleaves ribosomal RNA | Protein synthesis stops; bloody diarrhoea, haemolytic uraemic syndrome |
+| Pertussis toxin | *Bordetella pertussis* | ADP-ribosylates the inhibitory G protein Gi | Raised cAMP; lymphocytosis, impaired immune cell function |
+| Tetanus toxin | *Clostridium tetani* | Travels to the spinal cord and cleaves a SNARE protein in inhibitory neurons | Loss of inhibition; spasms and rigidity |
+| Botulinum toxin | *C. botulinum* | Cleaves SNARE proteins at cholinergic nerve terminals | Acetylcholine not released; flaccid paralysis |
+
+Other exotoxins damage membranes directly. Examples are the α-toxin of *C. perfringens*, a phospholipase that destroys muscle in gas gangrene, and pore-forming toxins such as streptolysin O and Panton–Valentine leukocidin.
+
+::: theorem Superantigens bypass antigen specificity {#thm-superantigen}
+A **superantigen** is a toxin that binds the outside of MHC class II molecules on antigen-presenting cells and the variable β region of the T-cell receptor, without being processed or presented in the peptide groove. It therefore activates every T cell that carries a matching β region, which can be a large fraction of all T cells rather than the tiny fraction that responds to a normal antigen.
+:::
+
+::: proof
+A normal antigen is cut into peptides, and only T cells whose receptors fit one peptide–MHC combination respond. That fraction is very small.
+
+A superantigen clamps MHC class II and the T-cell receptor together from the side. Any T cell whose receptor has a compatible β region is activated, regardless of what the rest of its receptor recognises. Massive, simultaneous T-cell activation releases large amounts of cytokines such as IL-2, TNF and interferon-γ.
+
+The cytokine flood causes fever, a diffuse red rash, capillary leak, hypotension and failure of several organs: **toxic shock syndrome**. Examples are toxic shock syndrome toxin 1 (TSST-1) and the enterotoxins of *S. aureus*, and the pyrogenic exotoxins of *S. pyogenes*.
+:::
+
+### Endotoxin and septic shock {#endotoxin}
+
+Endotoxin works through the innate immune system. Lipid A in the blood binds **LPS-binding protein**, which hands it to **CD14** and then to the receptor **TLR4** with its partner MD-2 on macrophages and endothelial cells. Signalling through TLR4 switches on the transcription factor NF-κB and the release of TNF, IL-1 and IL-6.
+
+In small amounts this response is useful: it causes fever and recruits neutrophils. In large amounts it causes vasodilatation, leaky capillaries, activation of coagulation with disseminated intravascular coagulation, and shock. The features of meningococcal septicaemia, with purpura and rapid circulatory collapse, show endotoxin at its most dramatic. Gram-positive bacteria trigger similar responses through other components, such as lipoteichoic acid and peptidoglycan fragments, which is why septic shock is not confined to Gram-negative infection.
+
+::: warning Antibiotics do not neutralise a toxin already made
+When disease is caused by a preformed toxin, killing the bacteria does not reverse the damage. In botulism and tetanus, **antitoxin** neutralises toxin that has not yet bound to nerves, and recovery from bound toxin takes weeks. In staphylococcal food poisoning the toxin is already in the food, and antibiotics have no role.
+
+The opposite mistake also happens. In infections caused by Shiga toxin-producing *E. coli*, some antibiotics may increase toxin release from dying bacteria, and UK guidance advises against routine antibiotics because of the concern about haemolytic uraemic syndrome. Always ask whether a disease is caused by growing bacteria, by a toxin, or by both.
+:::
+
+::: example Watery diarrhoea after travel {#ex-cholera-vs-etec}
+A 28-year-old aid worker returns from a cholera outbreak area with sudden, painless, profuse watery diarrhoea. She has no fever and there is no blood in the stool. Her pulse is 120 per minute and she feels faint when standing. Explain the mechanism and why oral rehydration solution works.
+::: solution
+The picture fits **cholera**, or the milder similar illness caused by enterotoxigenic *E. coli*. Both organisms stay on the surface of the small bowel and do not invade, so there is no fever, inflammation or blood.
+
+Cholera toxin binds intestinal cells through its B subunits. The A subunit permanently activates adenylate cyclase. The rise in cAMP opens the CFTR chloride channel, so chloride, then sodium and water, pour into the gut lumen. Several litres a day can be lost, and death results from dehydration and electrolyte loss, not from tissue damage.
+
+Oral rehydration solution works because the toxin leaves the **sodium–glucose co-transporter** (SGLT1) untouched. Glucose and sodium absorbed together pull water back into the body. Rehydration, by mouth or intravenously when severe, is the main treatment. Antibiotics shorten the illness and reduce shedding, but they are secondary to fluids.
+:::
+:::
+
+::: example Fever, rash and shock in a young woman {#ex-toxic-shock}
+A 24-year-old woman develops high fever, vomiting, diarrhoea and a diffuse red rash like sunburn. Her blood pressure is 82/45 mmHg and her creatinine is raised. She has been using tampons during her period. Blood cultures later grow nothing. Explain the pathogenesis and the principles of management.
+::: solution
+This is likely **staphylococcal toxic shock syndrome**. *S. aureus* colonising the vagina grows in the conditions created by the tampon and produces **TSST-1**, a superantigen. The toxin is absorbed and causes massive T-cell activation and cytokine release, which explains the rash, shock and organ failure. Blood cultures are usually negative in staphylococcal toxic shock, because the toxin, not bacteraemia, causes the illness. The skin of the palms and soles typically peels one to two weeks later.
+
+Management principles are removal of the source (the tampon), resuscitation and organ support, and antibiotics that cover *S. aureus*. Guidelines commonly add a protein synthesis inhibitor such as clindamycin, because it reduces toxin production by the bacteria. Intravenous immunoglobulin, which contains antibodies against superantigens, is sometimes used in severe cases, particularly streptococcal toxic shock, following specialist advice and local guidelines.
+:::
+:::
+
+## Biofilms and persistence {#biofilm}
+
+::: definition Biofilm {#def-biofilm}
+A **biofilm** is a community of bacteria attached to a surface and enclosed in a matrix they produce, made of polysaccharide, protein and DNA. Bacteria in biofilms grow slowly, are shielded from phagocytes and antibodies, and are much more tolerant of antibiotics than the same bacteria growing freely.
+:::
+
+Biofilms form on dead bone, heart valves, teeth, and above all on implanted material: central lines, urinary catheters, prosthetic joints, heart valves and pacemakers. Coagulase-negative staphylococci, *S. aureus* and *Pseudomonas aeruginosa* are typical biofilm organisms. In cystic fibrosis, *P. aeruginosa* forms biofilms in thick airway mucus and becomes almost impossible to eradicate once established.
+
+Several features explain antibiotic tolerance. The matrix slows the penetration of some drugs. Many cells in a biofilm divide slowly or not at all, and most antibiotics act on growing cells. A small fraction of dormant **persister** cells survive treatment and regrow afterwards. Laboratory susceptibility tests are done on freely growing bacteria, so an organism can be reported as susceptible and still survive in a biofilm.
+
+Bacteria in biofilms also coordinate their behaviour by **quorum sensing**. Each cell releases small signal molecules; when the population is dense, the signal concentration crosses a threshold and switches on genes for toxins, matrix production or dispersal. In *S. aureus* the **agr** system regulates toxin production in this way.
+
+::: example Pain in a prosthetic hip {#ex-biofilm-joint}
+A 71-year-old man had a hip replacement 18 months ago. For six months the hip has been increasingly painful, with no fever. X-rays show loosening of the prosthesis. Aspiration of the joint grows *Staphylococcus epidermidis* resistant to several antibiotics. Explain why this is a biofilm infection and why antibiotics alone are unlikely to cure it.
+::: solution
+A late, low-grade infection of a prosthetic joint by a coagulase-negative staphylococcus is a classic biofilm infection. *S. epidermidis* from the skin contaminated the implant, probably at the time of surgery, and formed a biofilm on its surface. The slow course, lack of fever and loosening reflect chronic low-grade inflammation rather than an acute invasive infection.
+
+Because *S. epidermidis* also lives on skin, a single positive culture could be a contaminant. Diagnosis therefore relies on several samples: guidelines recommend multiple tissue samples at surgery, and growth of the same organism from two or more makes infection likely.
+
+Antibiotics can suppress the infection but rarely clear it, because the biofilm shelters slow-growing and persister cells. Cure usually needs surgery to remove the biofilm, often by exchanging the prosthesis in one or two stages, followed by a prolonged course of antibiotics chosen with specialist advice.
+:::
+:::
+
+## Host factors {#host}
+
+Whether exposure leads to disease depends as much on the host as on the organism. Specific defects in defence predict specific infections, which is useful in both directions: a known defect tells you what to fear, and an unusual infection suggests a hidden defect.
+
+- **Asplenia.** The spleen clears bacteria coated with antibody and complement and makes antibodies to capsular polysaccharides. People without a functioning spleen, including those with sickle cell disease, risk overwhelming infection by encapsulated bacteria: *S. pneumoniae*, *Haemophilus influenzae* type b and *N. meningitidis*.
+- **Terminal complement deficiency** (C5–C9) prevents formation of the membrane attack complex. It predisposes to recurrent *Neisseria* infection. Drugs that block C5, such as eculizumab, carry the same risk, so patients are vaccinated before treatment and often take antibiotic prophylaxis.
+- **Neutropenia** predisposes to Gram-negative bacteraemia, *S. aureus* and invasive fungal infection.
+- **T-cell defects** predispose to intracellular bacteria, mycobacteria, fungi and viruses.
+- **Broken barriers** let organisms in: burns (*P. aeruginosa*), intravenous lines (staphylococci), urinary catheters (gut organisms) and surgical wounds.
+
+::: quiz
+Which mechanism explains the massive cytokine release in toxic shock syndrome?
+- [ ] Lipid A binding Toll-like receptor 4 on macrophages
+- [x] A toxin linking MHC class II to T-cell receptors outside the peptide groove
+- [ ] A toxin that ADP-ribosylates elongation factor 2
+- [ ] Antibody binding to a capsule and activating complement
+::: solution
+Toxic shock toxins are **superantigens**. They bind MHC class II and the T-cell receptor β region outside the normal antigen-binding site, so a large fraction of T cells is activated at once. Lipid A signalling through TLR4 is the endotoxin mechanism of Gram-negative septic shock. ADP-ribosylation of elongation factor 2 is the action of diphtheria toxin.
+:::
+:::
+
+::: history
+In 1884 Friedrich Loeffler grew the diphtheria bacillus and noticed that it stayed in the throat while damage appeared in the heart and nerves. He suspected a circulating poison. In 1888 Émile Roux and Alexandre Yersin showed that sterile filtrates of diphtheria cultures reproduced the disease in animals, proving that a bacterial toxin could cause illness on its own. In 1890 Emil von Behring and Kitasato Shibasaburō showed that serum from immunised animals neutralised diphtheria and tetanus toxins, which led to antitoxin treatment and earned von Behring the first Nobel Prize in Physiology or Medicine in 1901.
+
+Robert Koch's criteria for causation were set out in his work on tuberculosis in the 1880s and are now known as Koch's postulates. A century later, in 1988, Stanley Falkow proposed molecular Koch's postulates for virulence genes, as molecular genetics made it possible to switch individual bacterial genes on and off.
 :::
 
 ## Where this leads
 
-The innate sensors these molecules target in [[immunology/innate-immunity]]; the organism catalogue applying these mechanisms in [[microbiology/bacteria]]; tissue consequences in [[pathology/acute-inflammation]]; resistance pharmacology in [[microbiology/antimicrobials]]; the microbiome interactions in [[microbiology/microbiota]].
-
-::: history
-**Virulence-factor biology is applied Koch: the diphtheria-toxin-discovery era (the Behring-and-Kitasato 1888 filtration experiments showing that a cell-free filtrate caused paralysis and death, proving a soluble poison and the Pfeiffer's earlier-cholera-and-typhoid-filtrate-work and the Bordet pertussis-toxin dissections and the Burnet phase-variation work of the 1940s showing that vaccine composition mattered - [[respiratory/respiratory-infections]], [[infectious-diseases/immunocompromised-host]]; the toxin-purification century - the Stanley-and-Pappenheimer reconstitution of anthrax lethal toxin, the cholera-toxin structural and ADP-ribosylation enzymology of the 1970s and the reinterpretation of the scarlet-fever pyrogenic exotoxins as T-cell mitogens in the 1980s, with the tampon-and-TSST-1 epidemiology that established polyclonal T-cell activation - [[immunology/adaptive-responses]]; the molecular-pathogenesis revolution - the cloning of invasins, the Theriot-and-Tilney actin comet-tail work on Listeria ActA and the Sansonetti Shigella cell-biology programme, the plant-pathology-born discovery that pathogens inject effectors through needle-like contact machines, the attaching-effacing Tir-intimin pedestal work and the reinterpretation of the T6SS in the 2010s as a bacterial competition weapon; and the modern persistence era - the biofilm-field founding with the Costerton chronic-infection models and Marsh's dental-plaque ecology, alongside the device-infection burden statistics and the Harold-Lewis persister-cell claim that resistance is genetics while persistence is physiology and the stringent-response-and-toxin-antitoxin-molecular-basis and the faecal-microbiota-restoration-as-colonisation-resistance-therapy bringing the whole chapter's first-half logic (colonisation resistance) into a licensed treatment - [[microbiology/microbiota]], [[gastrointestinal/bowel-disease]].**
-:::
+The structures that underlie virulence are introduced in [[microbiology/bacteria]], and the innate and adaptive responses that pathogens evade are covered in [[immunology/innate-immunity]] and [[immunology/adaptive-responses]]. Sepsis as a clinical syndrome is the subject of [[infectious-diseases/fever-sepsis]], and device-related infection is covered in [[infectious-diseases/healthcare-infections]]. How biofilms and toxins affect the choice of antibiotic is explained in [[microbiology/antimicrobials]].
 
 ::: summary
-- Virulence is staged: stick, then invade or avoid, then damage, then transmit - and each stage has named molecular machines worth recognising in the clinic.
-- Toxin syndromes follow enzyme logic: ADP-ribosylation (cholera, pertussis, diphtheria), pore formation (PVL, streptolysins), superantigens (TSS) - the same enzymes that define the clinical clock.
-- Intracellular life (Mycobacterium, Listeria, Salmonella, Legionella, Chlamydia) dictates immunity (T-cell dependent), drug choice (intracellular penetration) and vaccine difficulty.
-- Capsule, antigenic variation and immune-evasion proteins explain vaccine serotype-ecology and reinfections; T-independent polysaccharide antigens are why conjugates were invented.
-- Biofilms and persisters explain device infections, relapses and duration logic - source control is not an alternative to antibiotics, it is the reason they work.
-- Antibiotic use is evolution: the resistant mutant is selected, plasmids transfer it and the ward becomes the ecosystem - the prescribing chapter is written here.
+- Pathogenicity is the ability to cause disease; virulence is its degree, measured by the ID50 or LD50. In the exponential model $P = 1 - 2^{-D/\text{ID}_{50}}$.
+- Koch's postulates link organism to disease but fail for carriers, unculturable organisms and polymicrobial infection; molecular Koch's postulates test individual virulence genes.
+- Adhesins on pili and surface proteins bind specific receptors and explain tissue tropism.
+- Invasive bacteria induce their own uptake or bind entry receptors; capsules, protein A, IgA proteases, antigenic variation and intracellular survival evade immunity.
+- Exotoxins are proteins, often A–B enzymes, and can be made into toxoids; endotoxin is lipid A, which triggers inflammation through TLR4. Superantigens activate many T cells at once and cause toxic shock.
+- Biofilms on devices tolerate antibiotics and usually need removal of the device.
+- Host defects predict infections: asplenia and encapsulated bacteria, terminal complement deficiency and *Neisseria*, T-cell defects and intracellular organisms.
 :::
 
 ## Exercises
-::: exercise Explain adherence tropisms {level=1}
-Why does uropathogenic E. coli ascend to kidney more in some people, and which host and bacterial factors decide pneumonia versus cystitis versus bacteraemia for the same species?
+
+::: exercise Match the toxin to its mechanism {level=1}
+Match each toxin to its mechanism: (a) cholera toxin, (b) diphtheria toxin, (c) tetanus toxin, (d) TSST-1. Mechanisms: (1) superantigen, (2) ADP-ribosylation of elongation factor 2, (3) cleavage of a SNARE protein in inhibitory neurons, (4) permanent activation of adenylate cyclase.
+::: hint
+Two of these toxins affect signalling or protein synthesis by adding ADP-ribose; only one acts on the nervous system.
+:::
 ::: solution
-**Receptor-epidemiology-medicine ([[#def-adhesion]], [[renal/urinary-tract]], [[immunology/innate-immunity]]): the bacterial side - the FimH-mannose-binding-fimbriae-with-class-I-versus-class-III-phenotypes-and-the-Pap-pili-binding-P-blood-group-erythrocyte-and-urothelial-glycolipids-of pyelonephritis strains (the rare Pk-phenotype people resisting Pap adhesins being the old blood-group association) and the aerobactin-siderophore-and-S-fimbriae-and-haemolysin-virulence-islands of UPEC with their phylogenetic-group-B2-success; the host side - the Tamm-Horsfall urinary glycoprotein as decoy and its polymorphism and the secretor-status-and-blood-group-antigen-density-on-urothelium and the women's-anatomy-and-post-coital-adherence-logic-and-catheter-biofilm-coating and the diabetic-and-pregnant-urine-glucose-and-urothelium-changes - [[endocrine/diabetes-complications]], [[obstetrics-gynaecology/pregnancy-complications]]; the syndromic-decision - inoculum-site-receptor-horse-and-the-innate-sensors (the TLR4-and-NLRP3-variants-in-recurrent-UTI-research-lines) and why the same species causes meningitis in neonates (the K1-capsule-and-CLEC2A-binding) but not in adults; and the translation - the D-mannose-and-cranberry-and-vaginal-oestrogen-and-prophylaxis-trial-evidence-connected-back-to-the-receptor-idea (the FimH-mannose-competitive-inhibition being an attractive but unproven therapeutic) and the recurring-UTI-vaccine-and-oral-immunotherapy-trials logic - [[renal/urinary-tract]] - [[microbiology/antimicrobials]].**
+(a)–(4), (b)–(2), (c)–(3), (d)–(1). Cholera toxin keeps Gs active and raises cAMP. Diphtheria toxin inactivates elongation factor 2 and stops protein synthesis. Tetanus toxin blocks release of inhibitory transmitters in the spinal cord. TSST-1 is a superantigen.
 :::
 :::
 
-::: exercise Interpret a heteroresistant report {level=1}
-The lab reports "Staphylococcus aureus, oxacillin MIC borderline, inducible clindamycin resistance positive (D-test)". Explain to the ward team what to prescribe and why.
+::: exercise Dose and probability {level=1 check="0.875"}
+In the exponential dose–response model, an organism has an ID50 of 100 organisms. What is the probability of infection after a dose of 300 organisms? Give the exact decimal.
+::: hint
+Use $P = 1 - 2^{-D/\text{ID}_{50}}$.
+:::
 ::: solution
-**Phenotype-report-reading ([[#def-evolution]], [[microbiology/antimicrobials]], [[clinical-skills/laboratory-tests]]): the D-test - inducible erm-methylase-clindamycin-resistance-turned-on-by-erythromycin (the MLS-B-cross-resistance) meaning clindamycin-can-fail-in-high-inoculum-infections-and-why-ERM-induction-tests-are-done-and-negative-predictive-value-limits; the oxacillin-borderline - the mecA-versus-mecC-testing-and-the-cefoxitin-disk-versus-PBP2a-latex-agglutination-versus-PCR-arbitration and the borderline-MRSA-population-screening-PCN-MIC-methods (the historical oxacillin-screening-plate) and why "borderline" is a laboratory problem not a treatment option; the prescription consequences - avoid clindamycin for serious inducible-resistant isolates (with the exception of topical and low-inoculum disease nuance), do not trust borderline results for deep-seated infection and treat per the local MRSA policy, with the TMP-SMX-versus-doxycycline-versus-linezolid-versus-dalbavancin choices by site and pregnancy and renal function; and the communication rule - the lab-phones-the-clinician-for-these-because-raw-MIC-tables-cause-errors (the adding-comment-protocols in the LIS) and the antibiogram-education and the de-escalation-window - [[infectious-diseases/stewardship-outbreaks]].**
+$D/\text{ID}_{50} = 3$, so $P = 1 - 2^{-3} = 1 - 0.125 = 0.875$.
 :::
 :::
 
-::: exercise Manage a superantigen exposure {level=2}
-A post-operative woman day 4 has fever 39.5, sunburn-like rash, hypotension and diarrhoea; the wound looks surprisingly benign; the nurse mentions another patient with "rash and diarrhoea" in the same bay.
+::: exercise The spleen and the capsule {level=1}
+Why are people without a functioning spleen at particular risk from *Streptococcus pneumoniae*?
+::: hint
+Consider what a capsule does to phagocytosis and what the spleen contributes.
+:::
 ::: solution
-**Toxic-shock-syndrome-and-a-ward-signal ([[#def-toxins]], [[immunology/innate-immunity]], [[surgery/wounds-surgical-infection]]): the clinical read - the superantigen-T-cell-storm (fever-rash-desquamation-later-and-multisystem-and-shock-with-the-STSS-criteria) and the deceptively-calm-wound (the Streptococcal-TSS-often-minimal-cellulitis-with-pain-out-of-proportion-versus-staphylococcal-TSS-with-a-nasopacking-or-tampon-or-burn) and the blood-culture-positivity-difference (Streptococcal-bacteraemia-common-Staphylococcal-rare-because-it-is-a-toxin-disease); the management - the ICU-fluids-vasopressors-ventilation-and-early-surgical-exploration-for-necrotising-infection-and-source-removal (the packing-and-tampon-out) and the clindamycin-plus-benzylpenicillin-or-anti-staphylococcal-beta-lactam-toxin-suppression-rationale and the IVIG-evidence-debate-with-severity-stratification and the rapid-nasal-and-wound-screening-not-acting-alone; and the ward-level-reflex - the-two-cases-in-one-bay-is-a-signal (the enhance-the-investigation-with-isolate-typing-and-staff-carrier-search (the surgeon-and-nurse-nasal-and-hand-carrier-adjacency-with-occupational-health-management) and the environmental-and-instrument-review and the public-health-notification-where-required-and-the-family-communication) and the prophylaxis-question-for-close-contacts-of-invasive-GAS-answered-per-current-guidance-honestly (the household-risk-small-but-real-rationale-for-symptom-education-not-routine-antibiotics-in-most-policies) - [[infectious-diseases/healthcare-infections]], [[microbiology/laboratory-diagnosis]], [[emergency-critical-care/critical-care]].**
+*S. pneumoniae* has a polysaccharide **capsule** that resists phagocytosis unless the bacterium is coated with antibody and complement. The spleen filters the blood and removes poorly opsonised bacteria, and its marginal-zone B cells make antibodies to polysaccharide antigens. Without a spleen, encapsulated bacteria multiply in the blood and can cause overwhelming sepsis within hours. People with asplenia are therefore vaccinated against encapsulated organisms, may be offered antibiotic prophylaxis, and are advised to seek help urgently with fever, following national guidance.
 :::
 :::
 
-::: exercise Manage the biofilm knee {level=3}
-A prosthetic knee with chronic biofilm Staphylococcus epidermidis is managed by debridement, implant retention and rifampicin-plus-fluoroquinolone for 3 months. Why rifampicin, why combination, and why does it sometimes fail?
+::: exercise Toxoid or no toxoid {level=2}
+Tetanus can be prevented by vaccination with a toxoid, but there is no vaccine against endotoxin. Explain the difference using the nature of the two molecules.
+::: hint
+Compare a protein with a lipid that is part of a membrane.
+:::
 ::: solution
-**Biofilm-pharmacology ([[#def-toxins]], [[microbiology/antimicrobials]], [[musculoskeletal/inflammatory-arthritis]]): the rifampicin-riddle - the unique activity against stationary-phase biofilm staphylococci and rapid resistance-emergence-as-monotherapy (the rpoB-point-mutations-under-mono-selection) hence-always-combined-and-never-started-before-burden-reduction (the debridement-and-drainage-first-sequence) and the drug-interaction-and-hepatic-and-orange-fluids-counselling; the combination logic - the beta-lactam-or-daptomycin-or-glycopeptide IV phase for planktonic disease plus rifampicin-companion then oral-fluoroquinolone-plus-rifampicin-with-trimethoprim-or-minocycline-completion-with-the-FDA-era-evidence-and-the-IDSA-guideline-versions-and the randomised trials showing rifampicin benefit in selected exchanges and null in others and the duration-and-monitoring-practice; the failure modes - the retained-pus-and-sinuses-and-loose-implant-and-organism-resistance-and-host-factors (the diabetes-and-immunosuppression-and-dental-source) and the re-operation-versus-two-stage-exchange-decision-tree and the suppressive-antibiotics-for-non-surgical-candidates with the resistance-and-quality-of-life trade; and the team science - the orthopaedic-microbio-rheum-radiology-MDT-with-debridement-timing-mechanics-and-the-patient-expectation-management (the cure-versus-suppression-versus-resection-arthroplasty conversation) and the audit of retention-success-by-patient-selection [[clinical-skills/communication]] and [[endocrine/diabetes-complications]].**
+Tetanus toxin is a **protein**. Treating it with formaldehyde destroys its toxic activity but keeps enough of its shape for the immune system to make neutralising antibodies, which then block real toxin. Endotoxin is **lipid A**, a glycolipid built into the outer membrane of all Gram-negative bacteria. It is poorly immunogenic, similar across many species, and is not secreted as a discrete toxin, so there is no toxoid that could protect against it. Antibodies to the variable O antigen protect only against particular strains.
 :::
 :::
 
-
-::: exercise Match toxin to syndrome {level=1}
-For each: rice-water diarrhoea; flaccid paralysis; spastic paralysis; pseudomembrane with myocarditis; necrotising pneumonia after influenza; scarlatiniform rash with shock.
-::: solution
-**Toxin-mechanism-to-bedside ([[#def-toxins]], [[microbiology/bacteria]]): cholera-toxin's-cAMP-export (the ORS-mechanism-connection worth teaching) - [[gastrointestinal/digestion-absorption]]; botulinum-SNARE-cleavage-presynaptic-block (the descending-flaccid with pupillary and autonomic features) - [[nervous-system/neuromuscular]]; tetanus-tetanospasmin-inhibitory-interneuron-block (the spastic-trismus-opisthotonus-with-lucid sensorium) - [[paediatrics/immunisation]]; diphtheria-exotoxin-EF2-ADP-ribosylation (the grey-membrane-and-myocarditis-and-neuropathy and the toxoid-vaccine triumph) - [[respiratory/respiratory-infections]]; PVL-pore-former-MRSA-post-influenza-necrotising-pneumonia (the rapidly-cavitating-haemoptysis-leukopenia-ICU-patient) - superantigen-TSST-1-or-Spe (the fever-rash-desquamation-shock-with-multisystem and the MHC-II-polymorphism-nuance) - [[immunology/innate-immunity]]; and the diagnostic meta-rule - the toxin diseases have incubation-plus-syndrome signatures, negative cultures don't exclude and antitoxin timing matters more than antibiotics.**
+::: exercise Koch's postulates in practice {level=2}
+Explain why *Mycobacterium leprae* and *Helicobacter pylori* each fail at least one of Koch's postulates, and what other evidence links them to disease.
+::: hint
+Think about culture, and about how many infected people stay well.
 :::
-:::
-
-::: exercise Explain the ASO test {level=1}
-Why does ASO rise with skin versus throat streptococcal infection differently, and what do anti-DNase B and Streptozyme add? When does the answer change management?
 ::: solution
-**Serology-interpretation-for-sequelae ([[#def-invasion]], [[immunology/antigen-recognition]]): the biology - the Streptolysin-O-antibody response blunted-by-skin-lipids-and-cholesterol-absorbing-SLO (the ASO-weak-after-impetigo reality) so anti-DNase-B-and-anti-hyaluronidase-and-NADase-complement-it and the timing (the 1-3-week rise and the weeks-long persistence meaning a positive proves exposure not timing) - [[musculoskeletal/skin]]; the clinical uses - the post-streptococcal-glomerulonephritis-workup (the low-C3-with-rising-strep-titles and the nephritic-versus-IgA-nephropathy-synpharyngitic-timing differential) - [[renal/filtration]], [[renal/urinary-tract]]; and the rheumatic-fever-support (the Jones-criteria-supporting-evidence-of-preceding-infection with the caveat that chorea-presents-late-with-normal-titles and that prophylaxis decisions are made on the clinical syndrome) - [[cardiovascular/valve-congenital-disease]]; what changes management - the confirmation-of-recent-infection-in-a-post-infectious-syndrome (changing the workup from autoimmune-full-house to self-limiting-with-follow-up for the post-strep nephritis) and the reactive-arthritis-spectrum? keep honest: not much and the never-treat-a-title-alone rule and the public-health reporting of the ARF case and the family-screening-and-echo-recommendations (the household secondary prophylaxis discussion) and the echo-screening-programmes debate for high-prevalence-community relatives - [[public-health/screening]], [[paediatrics/acute-childhood-illness]].**
+***M. leprae*** cannot be grown on artificial media, so postulate 2 fails. It is linked to leprosy by its presence in lesions, its growth in armadillos and mouse footpads, the immune response and the effect of treatment.
+
+***H. pylori*** can be cultured, but many infected people never develop ulcers, so postulate 1 in its strict form fails. The evidence comes from Barry Marshall's self-ingestion experiment, which produced gastritis, from epidemiology, and above all from the fact that eradicating the organism greatly reduces ulcer recurrence.
 :::
 :::
 
-::: exercise Manage device infection {level=2}
-A 70-year-old with a chronic indwelling catheter has recurrent Proteus and Klebsiella bacteraemia from a encrusted catheter with a bladder stone. Source-control plan and antimicrobial plan?
+::: exercise Dose for a high attack rate {level=2 check="332"}
+Using the exponential dose–response model with an ID50 of 100 organisms, what dose gives a 90% probability of infection? Round to the nearest whole organism.
+::: hint
+Solve $0.9 = 1 - 2^{-D/100}$ for $D$.
+:::
 ::: solution
-**Biofilm-source-control-medicine ([[#def-toxins]], [[renal/urinary-tract]], [[microbiology/antimicrobials]]): the source logic - the catheter-biofilm-as-antibiotic-shelter-and-the-urease-driven-struvite-encrustation-and-stone-as-organism-reservoir (the Proteus-mirror-stone cycle) so no antibiotic course cures what plastic and stone maintain; the procedure plan - the exchange-versus-removal-versus-suprapubic-or-intermittent-catheterisation-strategy decision and the stone clearance (the cystolitholapaxy-versus-open and the culture-of-the-stone-itself-often-polymicrobial) and the pre-procedure-antibiotics-covering-the-procedure-with-the-peri-procedural-urology-antibiogram-and-the-obstructive-pus-sepsis-emergency-decompression-rules - [[emergency-critical-care/acute-assessment]]; the antimicrobial plan - the tissue-penetration-versus-planktonic-burden-thinking and the culture-directed agent with renal dosing and the duration-by-bacteraemia-clearance-and-source-control and the amoxicillin-or-co-trimoxazole-step-down with the ESBL-decision and the never-oral-fluoroquinolone-when-IV-works-in-bacteraemia nuance - [[renal/chronic-kidney-disease]]; and the prevention rewrite - the catheter-avoidance-and-removal-protocols (the nurse-led review and the no-catheter-for-incontinence-without-a-plan policy and the intermittent-catheterisation-education and the condom-catheter-and-continence-services for the right patients and the hand-hygiene-and-closed-system-and-securement-bundle) and the antibiotic-lock-for-long-term-catheters-evidence-honesty and the resistance-audit-for-the-ward - the organism you keep growing is your biofilm talking - [[infectious-diseases/stewardship-outbreaks]], [[clinical-skills/patient-safety]].**
+$2^{-D/100} = 0.1$, so $D/100 = \log_2 10 \approx 3.32$ and $D \approx 332$ organisms. A tenfold reduction in the chance of escaping infection needs about 3.3 ID50s.
 :::
 :::
 
-::: exercise Design resistance-stewardship from mechanism {level=3}
-Use virulence-and-resistance biology to justify your trust's antimicrobial-formulary and duration policies to a sceptical prescribing group.
+::: exercise Bloody diarrhoea in a child {level=3}
+A 4-year-old boy has bloody diarrhoea three days after a farm visit. Stool PCR detects Shiga toxin genes, and culture grows *E. coli* O157. Six days later he is pale, his urine output falls, his platelet count is low and his blood film shows fragmented red cells. Explain the pathogenesis and why antibiotics are not routinely given.
+::: hint
+Where does Shiga toxin bind, and what happens to it when the bacteria are killed?
+:::
 ::: solution
-**Mechanism-informed-stewardship ([[#def-evolution]], [[#def-toxins]], [[microbiology/antimicrobials]], [[infectious-diseases/stewardship-outbreaks]]): the physics of resistance emergence - the mutant-prevention-concentration-and-inoculum-effect-explaining-why-high-burden-sites-need-combination-and-source-control (the endocarditis-and-osteo-and-TB-cavity cases), the collateral-damage-kinetics (the microbiome-depletion-and-C.diff-and-CPE-and-VRE-selection documented by the carbapenem-and-fluoroquinolone-and-broad-cephalosporin-exposure studies) and the duration-shortening-evidence (the short-course trials in gram-negative bacteraemia and pneumonia and endocarditis-adjacency-ongoing-trials read with their populations) - [[epidemiology-ebm/randomised-trials]]; the formulary levers - the restricted-versus-unrestricted-with-review (the 48-72-hour stop-and-review enforced by electronic forcing-functions and the IV-to-oral switches with bioavailability tables and the once-daily-dosing and OPAT-enabling choices), the diagnostics-as-stewardship (the procalcitonin-in-LRTI boundaries, the rapid blood-culture-panel-impact-studies-with-their-de-escalation-findings, the MALDI-and-susceptibility-speed and the MRSA-nasal-PCR-negative-predictive-value-for-stopping-vancomycin) and the local-antibiogram-as-living-document with quarterly-prescriber-specific-feedback; and the cultural-and-governance layer - the vet-and-agriculture-One-Health-connection (the colistin-policy-parallel) - [[public-health/environmental-occupational]], [[public-health/global-health]]; the ecological audit (the ward-level consumption-versus-resistance-trend plots and the feedback to the units that create their own resistant flora); and the honest framing for prescribers - "these policies protect your future patients' options, here is your own prescribing footprint", the just-culture-not-every-fever rule with the safety-net guidance (the time-limited-antibiotics-and-review-date as a prescription structure), and the outcome metrics that matter (the mortality-not-over-treated and C.diff-and-resistance-and-readmission) - [[clinical-skills/patient-safety]].**
+This is **haemolytic uraemic syndrome** after infection with Shiga toxin-producing *E. coli*. The bacteria colonise the colon and release **Shiga toxin**, which is absorbed into the blood. Its B subunit binds the glycolipid Gb3, abundant on the endothelium of the kidney's glomeruli. The A subunit stops protein synthesis, injuring endothelial cells. Damaged vessels activate platelets and form microthrombi, which consume platelets (thrombocytopenia), shear red cells (fragmented cells and haemolysis) and block glomeruli (acute kidney injury).
+
+Antibiotics are generally avoided because some, by stressing or killing the bacteria, may increase toxin production or release, and observational studies have linked them with a higher risk of HUS. Management is supportive, with careful fluid balance and dialysis if needed, under specialist care. The case is notifiable, and public health teams investigate the source and exclude infected children from nursery until cleared, following UK guidance.
+:::
+:::
+
+::: exercise Recurrent meningococcal disease {level=3}
+A 27-year-old man has his second episode of meningococcal infection in three years, each time with an uncommon serogroup. What host defect should be suspected, how could it be investigated, and what are the implications for him and his family?
+::: hint
+Which part of the immune system kills *Neisseria* directly in the blood?
+:::
+::: solution
+Recurrent or unusual-serogroup *Neisseria* infection suggests a defect of the **complement** system, especially of the terminal components C5–C9 that form the membrane attack complex, or of properdin. *Neisseria* is unusually dependent on complement-mediated lysis for its clearance.
+
+Investigation starts with functional complement tests (classical and alternative pathway activity, CH50 and AP50), followed by measurement of individual components. Other causes of complement consumption or loss, such as lupus, should be considered.
+
+Implications: he should receive meningococcal vaccines, may be offered antibiotic prophylaxis and should carry a plan for urgent treatment of fever, following specialist advice. Inherited deficiencies run in families, so siblings may be tested. The same reasoning applies to people given C5 inhibitors such as eculizumab, who are vaccinated before treatment starts.
 :::
 :::
