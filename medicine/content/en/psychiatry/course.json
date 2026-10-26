@@ -5,12 +5,12 @@
   "area": "life",
   "level": 3,
   "order": 260,
-  "tagline": "Psychiatric assessment, mood, anxiety and psychotic disorders, substance use and treatments",
-  "summary": "Mental disorders are common and disabling, and every doctor meets them. This course covers psychiatric assessment and the mental state examination, mood, anxiety and psychotic disorders, substance use, eating and personality disorders, self-harm and suicide prevention, psychiatry across the lifespan, and psychological and drug treatments within the framework of mental health law.",
+  "tagline": "Psychiatric assessment, mood, anxiety and psychotic disorders, substance use, and treatments within the law",
+  "summary": "Mental disorders are common and disabling, and every doctor meets them. This course covers psychiatric assessment and the mental state examination; mood, anxiety and psychotic disorders; substance use; eating and personality disorders; self-harm and suicide prevention; psychiatry in childhood, around childbirth and in later life; and psychological, drug and physical treatments together with the law on detention and capacity.",
   "overview": [
-    "Psychiatry is the medicine of the mind, and it is practiced with the same clinical apparatus as the rest of the curriculum — history, examination, formulation, risk assessment, treatment and follow-up — applied to thoughts, mood, perception, belief and behaviour. This course teaches that apparatus without either the vagueness of opinion or the pretence that distress is merely biochemical.",
-    "It opens with psychiatric assessment: the history from patient and informant, the mental state examination as a structured record, and formulation — the biopsychosocial summary that links predisposing, precipitating, persevering and protective factors. The disorder chapters follow the classical groups: the mood disorders with their bipolar spectrum and suicide risk; the anxiety disorders and their learning-model and pharmacology, with OCD and trauma-related disorders; the psychoses, where schizophrenia's positive, negative and cognitive domains meet antipsychotic pharmacology and early-intervention services; substance use with its neuroadaptation, dependence criteria and medication-assisted treatment; eating disorders, personality disorders and the physical-health imperative that accompanies them; and self-harm and suicide prevention treated with the seriousness and the careful language safe-messaging guidance requires. Lifespan chapters cover child and adolescent, perinatal and old-age psychiatry, and a final chapter covers the treatments — psychological and pharmacological — and the mental-health law on detention, capacity and consent.",
-    "Everything is case-based, and risk is a constant thread: the quantitative reasoning of risk stratification, number-needed-to-treat for relapse prevention, lithium monitoring, and the evidence for interventions such as therapeutic communities and assisted outpatient treatment is presented as evidence, with its limits. People-first language throughout; all cases fictional."
+    "Psychiatry uses the same clinical method as the rest of medicine: a history, an examination, investigations, a diagnosis and a plan. What is different is the material. The examination is mostly of what a person says and does, and the history is mostly about thoughts, feelings, behaviour and relationships. This course teaches that method in plain terms, with fictional cases throughout.",
+    "It starts with assessment: the psychiatric history, the mental state examination, the search for physical causes, the formulation and the assessment of risk. The disorder chapters follow: depression and bipolar disorder; anxiety, obsessive–compulsive and trauma-related disorders; schizophrenia and other psychoses; alcohol, opioids and other substances; eating disorders and personality disorders; and self-harm and suicide prevention, written in line with safe-messaging guidance. A lifespan chapter covers children and young people, mental illness around childbirth, and older people. The final chapter covers psychological therapies, psychiatric drugs and physical treatments, and the mental health and mental capacity law of England and Wales.",
+    "The course follows current UK guidance, mainly from NICE, with ICD-11 and DSM-5-TR criteria, and dates statements that may change. Short calculations appear where they help: predictive values of screening questionnaires, numbers needed to treat, alcohol units, BMI and lithium steady state. The material is for education only and is not medical advice. Management always follows current local guidelines and the BNF."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -18,15 +18,16 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Conduct a psychiatric history and mental state examination, document them as a professional record, and write a biopsychosocial formulation that informs a management plan.",
-    "Assess risk — suicide, self-harm, violence, neglect and vulnerability — structure that assessment, and know the immediate management and follow-up it entails.",
-    "Apply diagnostic frameworks (ICD and DSM style) to mood, anxiety, psychotic, eating, substance-use and personality disorders, recognising their specifiers, comorbidity and differentials including organic causes.",
-    "Explain the evidence-based psychological treatments by disorder (CBT, interpersonal therapy, dialectical behaviour therapy, trauma-focused work) and the main psychotropic drug classes with mechanisms, monitoring and key adverse effects.",
-    "Recognise and manage the psychiatric emergencies: acute psychosis and agitation, catatonia, delirium versus functional disorder, alcohol withdrawal and the medically unwell psychiatric patient.",
-    "Describe the epidemiology, neurobiology and treatment phases of schizophrenia and bipolar disorder, including relapse prevention, adherence support and early-intervention principles.",
-    "Discuss substance use disorders with the dependence syndrome framework, withdrawal management principles, medication-assisted treatment and harm reduction.",
-    "Outline the scope of mental-health law: criteria for detention and treatment without consent, capacity and best-interests decisions, advocacy, tribunal rights and least-restrictive practice — descriptively, as jurisdiction-specific law.",
-    "Address the physical health of people with mental illness — metabolic monitoring on antipsychotics, lifestyle intervention, and the mortality gap — as a treatment priority, not an afterthought."
+    "Take a psychiatric history, perform and record a mental state examination, and write a biopsychosocial formulation.",
+    "Recognise when a psychiatric presentation may have a physical cause, and choose appropriate investigations.",
+    "Describe the diagnostic features of depression, bipolar disorder, anxiety and related disorders, psychotic disorders, substance use disorders, eating disorders and personality disorders.",
+    "Interpret screening questionnaires using sensitivity, specificity and prevalence, and explain why risk scales cannot predict suicide in individuals.",
+    "Assess and support a person after self-harm, using psychosocial assessment and safety planning in line with NICE NG225.",
+    "Outline evidence-based psychological treatments and the main classes of psychiatric drugs, with their monitoring and key adverse effects, including lithium, clozapine and valproate.",
+    "Recognise and outline the initial management of psychiatric emergencies, including alcohol withdrawal, Wernicke encephalopathy, opioid overdose, postpartum psychosis, neuroleptic malignant syndrome and serotonin syndrome.",
+    "Explain how presentation and management differ in children and young people, in pregnancy and after birth, and in older people.",
+    "Describe the main provisions of the Mental Health Act 1983, the changes made by the Mental Health Act 2025, and the principles of the Mental Capacity Act 2005, and choose between them in common situations.",
+    "Address the physical health of people with severe mental illness as a core part of their care."
   ],
   "chapters": [
     {
@@ -107,41 +108,51 @@
   "history": [
     {
       "year": 1793,
-      "title": "Unchaining the insane",
-      "detail": "Philippe Pinel at Bicêtre and, in Quaker England, the Tuke family at the York Retreat replace chains and confinement-in-misery with moral treatment — the idea that environment, occupation and kindness are therapy, the seed of the therapeutic community and of today's emphasis on ward climate.",
+      "title": "Moral treatment",
+      "detail": "Philippe Pinel is appointed to the Bicêtre hospital in Paris, where patients are released from chains; in England the Quaker William Tuke founds the York Retreat in 1796. Both replace confinement with humane care, occupation and a calm environment.",
       "people": [
         "Philippe Pinel",
         "William Tuke"
       ]
     },
     {
-      "year": 1896,
-      "title": "A classification that thinks",
-      "detail": "Emil Kraepelin's textbook distinguishes dementia praecox from manic-depressive illness on course and outcome, making psychiatric diagnosis a matter of longitudinal observation and prognosis rather than moral failure — the ancestor of today's research classifications.",
+      "year": 1899,
+      "title": "Kraepelin's two psychoses",
+      "detail": "In the sixth edition of his textbook, Emil Kraepelin separates dementia praecox from manic-depressive insanity on the basis of course and outcome. Long-term observation becomes central to psychiatric diagnosis.",
       "people": [
         "Emil Kraepelin"
       ]
     },
     {
       "year": 1911,
-      "title": "Schizophrenia",
-      "detail": "Eugen Bleuler proposes the name and the concept — a group of split-minded disorders with characteristic disturbances of association, affect and boundary of self, not necessarily deteriorating; his 'basic symptoms' still shape how negative and cognitive domains are described.",
+      "title": "The name schizophrenia",
+      "detail": "Eugen Bleuler introduces the term schizophrenia for a group of disorders marked by disturbed association of thought, affect and sense of self, and argues that deterioration is not inevitable.",
       "people": [
         "Eugen Bleuler"
       ]
     },
     {
+      "year": 1938,
+      "title": "Electroconvulsive therapy",
+      "detail": "Ugo Cerletti and Lucio Bini in Rome induce a therapeutic seizure with an electrical current. With anaesthesia and muscle relaxation added later, ECT remains the most effective treatment for severe depression.",
+      "people": [
+        "Ugo Cerletti",
+        "Lucio Bini"
+      ]
+    },
+    {
       "year": 1949,
       "title": "Lithium",
-      "detail": "John Cade, a Melbourne psychiatrist working with the materials a wartime ward could spare — including lithium urate fed to guinea pigs — reports dramatic benefit in mania; the first targeted mood stabiliser arrives, with a narrow therapeutic index and a monitoring regimen that make psychopharmacology a precise, and precise-risk, craft.",
+      "detail": "John Cade in Melbourne reports that lithium salts calm patients with mania. Mogens Schou's trials in Denmark later establish lithium as a long-term treatment for bipolar disorder, with blood-level monitoring because of its narrow therapeutic index.",
       "people": [
-        "John Cade"
+        "John Cade",
+        "Mogens Schou"
       ]
     },
     {
       "year": 1952,
-      "title": "The antipsychotic revolution",
-      "detail": "Henri Laborit's observation of a quieting effect leads Jean Delay and Pierre Deniker to trial chlorpromazine in psychosis; with reserpine and then the butyrophenones, admissions fall and community care becomes conceivable — and, decades later, the tardive dyskinesia and metabolic lessons arrive with it.",
+      "title": "Chlorpromazine",
+      "detail": "After Henri Laborit notices the calming effect of chlorpromazine in surgical patients, Jean Delay and Pierre Deniker in Paris report its effect in psychosis. Antipsychotic drugs make community care possible, and their movement and metabolic side effects become lessons in their own right.",
       "people": [
         "Henri Laborit",
         "Jean Delay",
@@ -150,32 +161,33 @@
     },
     {
       "year": 1957,
-      "title": "Antidepressants",
-      "detail": "Iproniazid's mood-elevating 'side effect' in tuberculosis care, reported by Nathan Kline and colleagues, and imipramine's discovery turn depression into a treatable condition by drug action on monoamines — the clinical fact that generated the monoamine hypothesis, the SSRIs and today's more nuanced neuroplasticity accounts.",
+      "title": "The first antidepressants",
+      "detail": "Nathan Kline and colleagues report the mood-elevating effect of iproniazid, a tuberculosis drug, and Roland Kuhn reports the antidepressant effect of imipramine. These findings lead to the monoamine hypothesis and later to the SSRIs.",
       "people": [
-        "Nathan Kline"
-      ]
-    },
-    {
-      "year": 1980,
-      "title": "Operational criteria",
-      "detail": "The DSM-III, following the Feighner criteria and Research Diagnostic Criteria, replaces descriptive prose with explicit diagnostic criteria and a multiaxial plan; diagnosis becomes reliable enough to research and to manage services — and the target of the debates about validity that continue.",
-      "people": [
-        "Robert Spitzer"
+        "Nathan Kline",
+        "Roland Kuhn"
       ]
     },
     {
       "year": 1967,
-      "title": "Cognitive therapy proposed",
-      "detail": "Aaron Beck, a psychoanalyst who had set out to falsify the turning-against-self model of depression, finds instead systematic negative thinking and publishes a time-limited, problem-focused psychotherapy; cognitive therapy and its descendants — the CBT of every modern guideline — begin there.",
+      "title": "Cognitive therapy",
+      "detail": "Aaron Beck publishes his account of depression as shaped by negative thinking about the self, the world and the future, and goes on to develop cognitive therapy, the basis of modern CBT.",
       "people": [
         "Aaron Beck"
       ]
     },
     {
+      "year": 1980,
+      "title": "Operational criteria",
+      "detail": "DSM-III, led by Robert Spitzer, introduces explicit diagnostic criteria for each disorder, building on the Feighner criteria. Diagnoses become more reliable, which makes research and service planning possible.",
+      "people": [
+        "Robert Spitzer"
+      ]
+    },
+    {
       "year": 1999,
-      "title": "Recovery and the national plan",
-      "detail": "England's National Service Framework for Mental Health commits the health service to standardised care pathways, suicide reduction and anti-stigma work, as the recovery movement — articulated by William Anthony from 1993 — shifts the stated goal from symptom removal to a meaningful life, with service-user involvement as a quality criterion.",
+      "title": "Recovery and national standards",
+      "detail": "England's National Service Framework for Mental Health sets national standards for mental health care, including suicide prevention. The recovery movement, articulated by William Anthony in 1993, shifts the aim of care towards living a meaningful life.",
       "people": [
         "William Anthony"
       ]
@@ -183,25 +195,52 @@
   ],
   "references": [
     {
-      "title": "The Psychiatry Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the state and the mind.",
-      "slug": "ref1"
-    },
-    {
-      "title": "The Psychiatry Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the state and the system.",
-      "slug": "ref2"
-    },
-    {
-      "title": "Clinical Psychiatry",
-      "authors": "Reference",
+      "title": "Shorter Oxford Textbook of Psychiatry",
+      "authors": "Paul Harrison, Philip Cowen, Tom Burns and Mina Fazel",
       "year": 2018,
-      "note": "A practical treatment of the mind and the practice.",
-      "slug": "ref3"
+      "note": "Seventh edition. A clear, well-referenced core textbook for medical students and trainees, covering assessment, the main disorders and their treatment."
+    },
+    {
+      "title": "New Oxford Textbook of Psychiatry",
+      "authors": "John R. Geddes, Nancy C. Andreasen and Guy M. Goodwin (editors)",
+      "year": 2020,
+      "note": "Third edition. The large reference work, for deeper reading on aetiology, evidence and specialist topics."
+    },
+    {
+      "title": "Oxford Handbook of Psychiatry",
+      "authors": "David Semple and Roger Smyth",
+      "year": 2019,
+      "note": "Fourth edition. A pocket guide to clinical practice, useful on the ward and in the emergency department."
+    },
+    {
+      "title": "Sims' Symptoms in the Mind: Textbook of Descriptive Psychopathology",
+      "authors": "Femi Oyebode",
+      "year": 2018,
+      "note": "Sixth edition. The standard account of psychopathology: how to describe and distinguish delusions, hallucinations and other abnormal experiences."
+    },
+    {
+      "title": "The Maudsley Prescribing Guidelines in Psychiatry",
+      "authors": "David M. Taylor, Thomas R. E. Barnes and Allan H. Young",
+      "year": 2021,
+      "note": "Fourteenth edition. Practical, evidence-based guidance on psychotropic prescribing, monitoring and switching; always used alongside the BNF."
+    },
+    {
+      "title": "Clinical Descriptions and Diagnostic Requirements for ICD-11 Mental, Behavioural or Neurodevelopmental Disorders",
+      "authors": "World Health Organization",
+      "year": 2024,
+      "note": "The official ICD-11 diagnostic guidance for mental disorders, used for the definitions in this course."
+    },
+    {
+      "title": "Mental Health Act 1983: Code of Practice",
+      "authors": "Department of Health",
+      "year": 2015,
+      "note": "Statutory guidance for England on applying the Mental Health Act 1983; to be revised as the Mental Health Act 2025 is brought into force."
+    },
+    {
+      "title": "NICE guidelines on mental health and behavioural conditions",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2026,
+      "note": "Current guidance cited in this course, including NG222 (depression), CG185 (bipolar disorder), CG178 (psychosis), NG225 (self-harm), NG69 (eating disorders) and CG78 (borderline personality disorder). Check the website for updates."
     }
   ],
   "next": []

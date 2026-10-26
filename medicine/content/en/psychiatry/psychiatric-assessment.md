@@ -1,141 +1,350 @@
-The psychiatric history is the investigation. **Every other specialty confirms hypotheses with machines; psychiatry's core diagnostic instruments are a conversation, a collateral history, a mental state examination and time. The craft is learning to conduct all four systematically enough to be useful, flexibly enough to be human, and honestly enough to be written down.** This chapter covers how to assess, how the assessment is structured in the record, and how risk is judged without being over- or under-played; the disorders themselves follow in the next chapters.
+A psychiatric assessment does the same job as any medical assessment. It gathers a history, examines the patient, considers what else could explain the picture, and ends with a working diagnosis and a plan. The difference is the material. The examination is mostly of what the person says and does during the interview, and much of the history concerns thoughts, feelings and relationships rather than organs.
 
-## Setting up
+This chapter teaches the three parts of that assessment: the psychiatric history, the mental state examination, and the assessment of risk. It also covers the physical side that is easy to forget, and the way the findings are drawn together into a formulation. Later chapters assume you can do all of this.
+
+## Setting up the interview
+
+Good information depends on a good interview. A frightened, suspicious or ashamed person will not describe their experiences to someone who seems rushed or judgemental.
 
 ::: definition The psychiatric interview {#def-interview}
-**Consent, capacity and context first: most psychiatric assessment is voluntary but the minority frameworks matter from minute one (the Mental Health Act assessment is covered in [[psychiatry/treatments-mental-health-law]]), and even a routine outpatient review needs the person to know who you are, what the interview is for, and what happens to what they say - confidentiality and its limits stated early because they change what gets disclosed (the risk-disclosure timing problem - asking about violence and self-harm before rapport produces denials, and asking after produces usefulness) - [[medical-ethics-law/consent-capacity]], [[clinical-skills/communication]]; the frame - an uninterrupted opening question in the patient's own words (the presenting complaint's own language is diagnostic raw material: 'I'm not myself' and 'my brain's gone quiet' are different clues), then a history that is both biographical and symptom-focused, with the collateral from family or carers obtained with consent carrying information the patient cannot or will not give (the anosognosia of mania and psychosis, the dementia history the patient has stopped tracking, and the family's own burden assessment) - [[nervous-system/dementia-neurodegeneration]]; the developmental and social map - childhood, education, relationships, employment, military and trauma history, substance use as a self-medication hypothesis rather than a morality tale, the cultural and spiritual frame that shapes idiom (hearing voices in non-psychotic contexts, somatic presentation of distress, and the difference between culturally normative experience and pathology decided with the person, not around them) - [[public-health/determinants-inequalities]], [[clinical-skills/history-taking]]; and the closing discipline - summarising back (the single highest-yield validity check in the whole interview), asking what the person wants from the encounter (the agenda-treatment mismatch that predicts non-attendance), the safety plan agreed before standing up, and the documentation written in words the patient could read (the record as a future clinician's safety net and the patient's potential evidence) - [[clinical-skills/records-handover]].**
+The **psychiatric interview** is a semi-structured conversation that aims to understand the person's problems, establish a diagnosis and build a working relationship. It moves from **open questions** ("Tell me what has been happening") to **focused questions** that test particular symptoms ("Have you been waking earlier than usual?"). A **collateral history** is information from someone who knows the person well, such as a relative, carer or GP, and is obtained with the person's consent unless there is a pressing safety reason not to.
 :::
 
-## The examination
+Some practical points make a large difference:
+
+- **The room.** Choose a quiet, private space. Sit at an angle rather than face to face. In acute settings, know the exit routes and the alarm system, and make sure you are not between the person and the door in a way that makes them feel trapped.
+- **The opening.** Introduce yourself, explain the purpose and the expected length, and say what will happen to the information. Ask how the person would like to be addressed.
+- **Listening.** Let the person talk for the first few minutes without interruption. Reflect back what you hear ("It sounds as though the last month has been exhausting"). Summarise at intervals.
+- **Language.** Use plain words, not jargon. If the person's first language is not English, use a professional interpreter rather than a family member. Relatives may filter what is said, and the person may not feel free to talk about abuse, substance use or suicidal thoughts in front of them.
+- **Culture.** Ask how the person and their family understand the problem. Beliefs that are shared within a person's cultural or religious group are not delusions, and distress may be described mainly in physical terms.
+
+## The psychiatric history
+
+The headings below follow the usual written record. In practice you will move between them as the conversation allows.
+
+| Heading | What it covers |
+|---|---|
+| Presenting complaint | The problem in the person's own words, its onset, duration, course and effect on daily life |
+| History of presenting complaint | Symptoms in detail, triggers, what has helped, previous attempts at help |
+| Past psychiatric history | Previous diagnoses, admissions (including under mental health law), treatments and their effects, self-harm |
+| Past medical history | Physical illness, head injury, epilepsy, thyroid disease, recent infections |
+| Medication | Current and recent drugs, adherence, side effects, over-the-counter and herbal products |
+| Substance use | Alcohol in units per week, tobacco, cannabis and other drugs, pattern and consequences |
+| Family history | Mental illness, suicide, substance use and neurological illness in relatives |
+| Personal history | Birth and development, childhood adversity, education, work, relationships, sexual history |
+| Forensic history | Arrests, convictions, violence, current legal proceedings |
+| Social circumstances | Housing, finances, caring responsibilities, dependent children, supports |
+| Premorbid personality | How the person was before the illness: interests, coping style, relationships |
+
+Two items deserve emphasis. First, always ask about **dependent children** and other people the person cares for, because their safety may depend on the answer. Second, always take a **drug and alcohol history**. Intoxication and withdrawal cause or mimic almost every psychiatric syndrome, and substance use changes risk.
+
+::: example A first interview in general practice {#ex-first-interview}
+Mr Daniel Okafor, a 34-year-old warehouse manager, sees his GP saying he "cannot switch off". He has been sleeping badly for two months since his firm announced redundancies. How should the GP structure the next fifteen minutes?
+
+::: solution
+**Start open.** "Tell me more about what not switching off is like for you." Mr Okafor describes lying awake worrying about money, a tight chest and irritability with his children.
+
+**Clarify the main syndrome.** Focused questions test for depression (low mood, loss of interest, early waking, appetite, guilt, hopelessness) and for anxiety (worry that is hard to control, restlessness, muscle tension, panic attacks). He reports constant worry and restlessness, but he still enjoys football with his son and his mood lifts at weekends.
+
+**Screen the essentials.** Alcohol: he has gone from about 10 to about 30 units a week "to help me sleep". Medication: none. Physical: no palpitations at rest, weight stable. Ask directly about suicidal thoughts; he says he has had none.
+
+**Context.** He lives with his partner and two children aged 6 and 9. His father had "nerves" and drank heavily.
+
+**Summarise and plan.** The picture suggests generalised anxiety in the context of work stress, with rising alcohol use that is now probably worsening his sleep. The GP checks thyroid function, gives brief advice about alcohol, explains the options for psychological treatment and arranges review in two weeks. Asking about suicide did not upset him. Asking is routine, and it does not plant the idea.
+:::
+:::
+
+## The mental state examination
+
+The history describes the past. The **mental state examination** (MSE) records what is observed and reported during the interview itself. It is the psychiatric equivalent of the physical examination, and it should be written so that another clinician could picture the person and compare with a later assessment.
 
 ::: definition Mental state examination {#def-mse}
-**The MSE is a structured observation, not a questionnaire, and its sections exist so nothing is missed: appearance and behaviour (psychomotor retardation or agitation, self-neglect, eye contact, guardiness, the handshake that reports the depression better than the score), speech (rate, volume, interruptibility - pressuring speech as a manic sign, poverty of speech as negative symptom or anxiety), mood subjectively (the patient's own words, rated against context not against a scale's adjectives) and affect objectively (range, congruence, reactivity - the flattened affect of schizophrenia-spectrum illness versus the blunting of depression versus the flatness of Parkinson disease, a differential that punishes rote description) - [[nervous-system/movement-disorders]]; thought form and content (flight of association, derailment, thought-blocking and the psychotonic borders; then content - overvalued ideas versus delusions decided by conviction, fixity and culture, the delusion taxonomies that still matter clinically: persecutory, referential, grandiose, nihilistic, guilt-ridden with their different risk profiles, plus obsessions recognised as ego-dystonic intrusions, and the overvalued ideas of body-image disorders) - [[psychiatry/anxiety-disorders]], [[psychiatry/eating-personality-disorders]]; perception (formed versus unformed hallucinations, hypnagogic normality, the internal-versus-external and commentary-versus-conversing distinctions whose diagnostic weight is real but modest, functional hallucinations and the misinformant pseudo-hallucination, plus the dissociative and organic causes of transient perceptual disturbance) - [[nervous-system/neuroinflammation]]; cognition (screened for the treatable mimics - delirium, dementia, head injury, seizures - with attention and orientation and memory testing, and the formal assessments when capacity or compensation depends on them); insight read honestly (from 'I know it's illness and I take the tablets' to 'you are the enemy's nurse' as a management-relevant spectrum, not a hygiene checkbox); and risk (covered next) - the whole examination recorded in a template that leaves room for the sentence that changes the plan - [[clinical-skills/history-taking]], [[geriatrics-palliative/delirium-dementia-care]].**
+The **mental state examination** is a structured description of a person's mental functioning at the time of assessment, under these headings: appearance and behaviour; speech; mood and affect; thought (form and content); perception; cognition; and insight. Each heading records observations and the person's own reports, ideally with brief quotations.
 :::
 
-## Risk
+### Appearance and behaviour
 
-::: definition Suicide, self-harm and harm to others {#def-risk}
-**Suicide risk assessment is estimation, not prediction: the actuarial facts (past attempt is the strongest single predictor, self-harm episodes carry elevated medium-term suicide rates, the male-lethal-method-and-alcohol pattern, chronic illness and pain, recent loss and discharge from inpatient care as high-risk windows) are combined with the phenomenology (intent, planning, access to means, the reasons-for-living and future-orientation in the narrative, command hallucinations and the nihilistic and guilt delusions of psychotic depression, the akathisia question) - [[psychiatry/self-harm-suicide-prevention]], [[psychiatry/mood-disorders]]; the conversation itself is protective, not iatrogenic (asking about suicide does not plant it - the assumption that haunts naive practice and is contradicted by every careful study), and it is done specifically (frequency, method, planning, rehearsal, the detail of the internal script) while the protective factors get names and a written safety plan (means restriction counsellled concretely - medication quantities, sharps, the firearm in the grandparents' house, the ligature points in the bedroom treated as a clinical conversation not a search) - [[emergency-critical-care/poisoning]]; self-harm without suicidal intent is its own clinical object (the functions of self-harm - affect regulation, self-punishment, communication, dissociation-anchor - driving the treatment choice, the dialectical-behavioural and mentalisation-based evidence, and the non-suicidal self-injury versus attempt distinction documented so future teams read intent correctly) - [[psychiatry/eating-personality-disorders]]; harm to others is rarer than its anxiety-to-volume ratio suggests (the base rates are low, the acute risk concentrates in intoxication, psychotic command experiences, and the interpersonal-violence history that is a better predictor than any diagnosis, so the assessment asks about victims not diagnoses) with the confidentiality-versus-protection decision taken with senior and medico-legal advice and documented as a reasoning trail - [[medical-ethics-law/confidentiality]], [[psychiatry/psychotic-disorders]]; and the culture that keeps risk honest - risk stratification as a floor for conversations and safety planning, not a ceiling that replaces them, the risk-prevention-communication when a suicide happens on a list (the duty to learn without scapegoating, and the recognition that prevention work is mostly doing ordinary good psychiatry to high-risk people consistently) - [[clinical-skills/patient-safety]].**
+Describe what you see: self-care, clothing, weight, signs of physical illness or intoxication, injuries. Note eye contact, rapport, level of activity and any abnormal movements. **Psychomotor retardation** is slowing of thought and movement, typical of severe depression. **Psychomotor agitation** is restless, purposeless activity. Note tremor, dystonia or the restlessness of akathisia, which may be adverse effects of medication.
+
+### Speech
+
+Comment on rate, volume, tone and quantity. **Pressure of speech** is rapid, hard-to-interrupt speech, typical of mania. **Poverty of speech** means very little spontaneous speech. Speech is described here; its logical organisation belongs under thought form.
+
+### Mood and affect
+
+**Mood** is the sustained emotional state, as the person describes it ("How have you been feeling in yourself?"). Record it in their words and, where useful, on a 0–10 scale. **Affect** is the observed, moment-to-moment expression of emotion. Affect can be reactive (varies appropriately), restricted, blunted or flat, labile (changing rapidly), or incongruent (out of keeping with what is being said, such as laughing while describing a bereavement).
+
+### Thought form
+
+**Thought form** is the way thoughts are linked together, judged from speech. **Formal thought disorder** means the links themselves are disturbed:
+
+- **Flight of ideas**: rapid jumps between topics, but each jump can be followed through puns, rhymes or associations. Typical of mania.
+- **Loosening of association** (derailment): the connections between ideas are lost, so the listener cannot follow. Typical of schizophrenia.
+- **Circumstantiality**: long detours that finally reach the point. **Tangentiality**: the answer drifts away and never returns.
+- **Thought blocking**: a sudden halt in the train of thought.
+- **Neologisms**: new words, or ordinary words used in a private way.
+
+### Thought content
+
+Thought content covers preoccupations, worries, ideas of self-harm or harm to others, and abnormal beliefs.
+
+::: definition Abnormal beliefs and intrusive thoughts {#def-beliefs}
+A **delusion** is a fixed, false belief that is held with conviction despite evidence against it, and that is not explained by the person's cultural, religious or subcultural background. Delusions are described by theme: persecutory, grandiose, guilt, nihilistic, somatic, reference, jealousy, or love (erotomanic).
+
+An **overvalued idea** is an understandable but unreasonable belief that dominates a person's life, such as the conviction in anorexia nervosa that one is overweight. It is held less rigidly than a delusion.
+
+An **obsession** is an unwanted, intrusive thought, image or urge that the person recognises as the product of their own mind and tries to resist. A **compulsion** is a repetitive act or mental ritual performed to reduce the distress that the obsession causes.
 :::
 
-::: example The first interview {#ex-first-interview}
-A 26-year-old is brought by his sister 'he hasn't slept in a week and he's starting a company to save the world'; he agrees to see you 'because she nagged me'.
+### Perception
+
+A **hallucination** is a perception without an external stimulus, experienced as real and located in external space. It can occur in any sense: auditory, visual, tactile, olfactory or gustatory. An **illusion** is a misperception of a real stimulus, such as seeing a coat on a door as a person in dim light. A **pseudohallucination** is a perception-like experience that the person recognises as coming from their own mind.
+
+Specific types point towards particular diagnoses. Hearing voices talking about the person in the third person, or a voice giving a running commentary, suggests schizophrenia. Visual hallucinations suggest an organic cause such as delirium, drug intoxication or Lewy body dementia until proved otherwise. Hallucinations on falling asleep (hypnagogic) or waking (hypnopompic) are common and usually normal.
+
+### Cognition
+
+Record orientation to time, place and person, attention and concentration, and memory. In a short assessment, the **4AT** is a validated screen for delirium. It scores alertness, an abbreviated mental test (age, date of birth, place, year), attention (months of the year backwards) and acute change or fluctuating course; a score of 4 or more suggests possible delirium. For suspected dementia, longer instruments such as the **Montreal Cognitive Assessment** (MoCA) or the **Addenbrooke's Cognitive Examination** (ACE-III) are used. Screening scores support clinical judgement; they never make a diagnosis on their own.
+
+### Insight
+
+**Insight** is the person's understanding of their own condition. Ask whether they think anything is wrong, whether it might be an illness, and whether they think treatment could help. Insight is not all or nothing, and it is not the same as mental capacity: a person may disagree with the diagnosis yet still understand and weigh the information needed to make a particular decision.
+
+::: warning Do not record the mood as "fine" and stop
+A common error is to write "mood: fine, affect: normal" after a brief chat, especially when the person is quiet and polite. Ask directly about mood, interest, sleep, appetite, hopelessness and thoughts of suicide, and describe affect from what you observed. Many people with severe depression present politely, and many people with psychosis keep their beliefs to themselves unless asked in a calm, curious way.
+:::
+
+## Physical assessment and organic causes
+
+Psychiatric symptoms often have physical causes. The term **organic** is still used for mental disorders caused by an identifiable brain or systemic disease, drug or toxin. Missing an organic cause is one of the most serious errors in psychiatry, because the underlying condition may be treatable and sometimes dangerous.
+
+::: theorem Organic causes come first {#thm-organic}
+Every new psychiatric presentation needs a physical assessment proportionate to the clinical picture. Organic causes are especially likely when there is: acute onset, fluctuating consciousness or attention, disorientation, visual hallucinations, a first presentation after the age of about 40, abnormal neurological signs, recent head injury, new physical symptoms, or substance use.
+:::
+
+::: proof
+Mental life depends on a working brain, and the brain is sensitive to its chemical and physical environment. Infection, hypoxia, hypoglycaemia, electrolyte disturbance, endocrine disease, drugs and withdrawal all disturb neuronal function, and the result often appears first as changes in attention, mood or perception. Delirium is the commonest example: it shows as inattention and fluctuating awareness, and it is frequently misread as agitation or psychosis. The features listed in the principle reflect this physiology. Primary psychiatric disorders usually begin in adolescence or early adulthood and do not cloud consciousness, so acute confusion or a first episode in later life shifts the probability towards a physical cause.
+:::
+
+A sensible baseline in a new presentation includes vital signs, a neurological examination, and blood tests chosen to the picture: full blood count, urea and electrolytes, calcium, liver function, thyroid function, glucose or HbA1c, and often vitamin B12 and folate. A urine drug screen, an ECG (especially before antipsychotics), HIV and syphilis serology, and brain imaging or an EEG are added when the history points that way.
+
+::: example "Psychosis" on a surgical ward {#ex-delirium-mimic}
+Mrs Margaret Hughes, 78, is three days after a hip fracture repair. Overnight she shouted that "people are coming through the walls" and pulled out her cannula. The surgical team asks for a psychiatric review of "new psychosis". What should the reviewing doctor do?
+
 ::: solution
-**Assessing possible mania in one sitting ([[#def-interview]], [[#def-mse]], [[psychiatry/mood-disorders]]): the opening - his account first, the sister's collateral with his consent (the sleep-and-money-and-driving detail she supplies, the previous 'best weeks of my life' pattern the patient reframes as productivity) - [[clinical-skills/history-taking]]; the examination highlights - pressured interruptible speech, inflated self-esteem with grandiose content but preserved momentary orientation, distractibility, the risk screen done non-judgmentally: reckless spending and sexual risk and the traffic stops, irritability when the idea is questioned (the dysphoric-mania switch), substance screen as cause or consequence (stimulants, cannabis, the steroid course for asthma that started ten days ago - the organic sweep) and the family's exhaustion measured explicitly - [[psychiatry/substance-use]], [[endocrine/adrenal]]; formulation and plan - a hypotheses paragraph (bipolar I episode versus substance versus secondary mania, with the workup: sleep history from the sister, tox screen, thyroid, calcium, the medication timeline) and the capacity question addressed concretely not rhetorically (what is he refusing to consider, does he appreciate the sleep-and-money consequences, the outpatient-versus-admission threshold decided against the sleep-deprivation trajectory and the supervision available at home) - [[medical-ethics-law/consent-capacity]], [[emergency-critical-care/acute-assessment]]; and the conversation - the diagnosis introduced as a pattern not an insult (the 'highs and lows' framing, the relapse-prevention argument he can accept while grandiosity still feels true), the medication offered with his goals in the plan (sleep first, mood-stabiliser choice discussed with the pregnancy question for the future, the antipsychotic metabolic baseline), the written safety plan naming the sleep-warning-sign and the sister's agreed role, and the follow-up interval short enough to catch the switch - [[clinical-skills/communication]], [[pharmacology/patient-variation]].**
+**Notice the red flags.** Acute onset in an older person, visual hallucinations, and a medical setting all point to delirium (see [[#thm-organic]]).
+
+**Assess attention and fluctuation.** She is drowsy, cannot list the months of the year backwards past October, and the nurses report she was lucid yesterday afternoon. Her 4AT is: alertness abnormal (4), abbreviated mental test two errors (2), attention fewer than 7 months (1), acute change present (4). Total = 11, which far exceeds the threshold of 4.
+
+**Look for causes.** Review the drug chart (opioids, a new anticholinergic), check for urinary retention and constipation, examine for infection, and request blood tests. Her sodium is 126 mmol/L and her urine is cloudy.
+
+**Plan.** The diagnosis is delirium, not a primary psychotic disorder. Treatment is of the causes, plus calm orientation, glasses and hearing aids, good lighting, family visits and a normal sleep pattern. Antipsychotics are kept for severe distress or danger and then used at low dose for a short time, following local guidance. Delirium is covered in depth in [[geriatrics-palliative/delirium-dementia-care]].
 :::
 :::
 
-::: example The assessment that was delirium {#ex-delirium-mimic}
-An 81-year-old is referred for 'new late-onset schizophrenia' after three weeks of seeing cats in the house, accusing staff of theft, worse at night; MMSE is 24/30.
+### How good is a screening test?
+
+Screening instruments are useful, but their meaning depends on how common the condition is in the group being tested. The **positive predictive value** (PPV) is the probability that a person with a positive result really has the condition:
+
+$$
+\text{PPV} = \frac{\text{sensitivity} \times p}{\text{sensitivity} \times p + (1-\text{specificity})(1-p)}
+$$ {#eq-ppv}
+
+where $p$ is the prevalence. A meta-analysis of the 4AT found a sensitivity and specificity of roughly 0.88 each. On an older-people's medical ward where about 1 in 5 patients has delirium, a positive 4AT is correct about two times in three. In an outpatient clinic where delirium is rare, most positive results would be false.
+
+::: widget bayes
+mode: test
+prevalence: 0.2
+sensitivity: 0.88
+specificity: 0.88
+caption: A delirium screen with sensitivity and specificity of about 0.88, shown as natural frequencies (simplified, illustrative figures). Move the prevalence from a geriatric ward (about 0.2) towards an outpatient clinic (0.02) and watch the share of positive results that are true fall. The same test means different things in different places.
+:::
+
+::: example Working out the predictive value {#ex-ppv}
+Using sensitivity and specificity of 0.88 each and a prevalence of 0.2, calculate the PPV of the 4AT. Then repeat for a prevalence of 0.05.
+
 ::: solution
-**Psychiatric-mimic-hunting ([[#def-mse]], [[#def-interview]], [[geriatrics-palliative/delirium-dementia-care]]): the pattern-recognition - formed visual hallucinations, fluctuating course, nocturnal worsening and a precipitant window are delirium until proven otherwise; a normal-ish MMSE is no exoneration because attention and the clock-month-day-and-story triad matter more than orientation points, and the 4AT or CAM screening exists exactly for this referral type (the recent falls-and-medication-and-constipation-and-UTI-and-dehydration sweep, alcohol-withdrawal timing, the Lewy-body-dementia alternative with its years-long cognitive-visual-symptom triad and neuroleptic sensitivity, and the Parkinson disease medication and sleep-acting-out questions) - [[nervous-system/dementia-neurodegeneration]], [[nervous-system/movement-disorders]]; the medication review as investigation - the anticholinergic and sedative burden, opioid and steroid starts, the benzodiazepine-withdrawal or the baclofen and the newly-added bladder drug (the anticholinergic-load arithmetic with the delirium-without-fever-without-dysuria reality in the old) - [[geriatrics-palliative/polypharmacy]], [[pharmacology/adverse-reactions]]; the workup and management frame - observation, reorientation, fluids and sleep-wake protection, family presence at night, the deliriogenic-practice audit on the ward (the tethers: catheters, physical restraint, unneeded monitoring, night-time observations and the medication that 'helps her sleep') and antipsychotics reserved for distress and danger at geriatric doses with the mortality-adjacency conversation documented honestly; and the referral letter rewrite it deserves - what was observed, the course, the medications and the mimics excluded, so the next service treats a delirium, not a psychosis - [[clinical-skills/records-handover]], [[clinical-skills/communication]].**
+At $p = 0.2$: true positives per person screened $= 0.88 \times 0.2 = 0.176$. False positives $= 0.12 \times 0.8 = 0.096$. PPV $= 0.176 / (0.176 + 0.096) = 0.176/0.272 \approx 0.647$, about 65%.
+
+At $p = 0.05$: true positives $= 0.88 \times 0.05 = 0.044$; false positives $= 0.12 \times 0.95 = 0.114$. PPV $= 0.044 / 0.158 \approx 0.278$, about 28%.
+
+The test is unchanged, but where delirium is uncommon nearly three in four positive screens are false. A positive screen is a prompt for clinical assessment, not a diagnosis.
 :::
 :::
 
-::: example The interpreter interview {#ex-interpreter}
-A 34-year-old asylum seeker is referred for 'psychotic depression'; the clinic has no psychiatrist who speaks her language and the booking template offers telephone interpreting for 20 minutes.
+## Formulation
+
+A diagnosis says what kind of problem a person has. A **formulation** explains why this person has this problem now, and what might help.
+
+::: definition Biopsychosocial formulation {#def-formulation}
+A **formulation** is a brief, individual explanation of a person's difficulties. It is usually organised as a grid of **biological**, **psychological** and **social** factors against four types of cause:
+
+- **predisposing** factors, which made the person vulnerable (family history, childhood adversity);
+- **precipitating** factors, which triggered the current episode (bereavement, stopping medication);
+- **perpetuating** factors, which keep it going (alcohol use, isolation, unhelpful beliefs);
+- **protective** factors, which support recovery (a close relationship, employment, faith, past good response to treatment).
+:::
+
+The formulation links directly to management: each perpetuating factor suggests something to change, and each protective factor is something to strengthen. It should be written in plain language that could be shared with the person.
+
+## Risk assessment
+
+Assessing risk means understanding what harm could happen, why, and what would make it less likely. It is part of every psychiatric assessment, not a separate form to be filled in.
+
+::: definition Clinical risk assessment {#def-risk}
+**Risk assessment** in mental health is a structured clinical judgement about possible harms and how to reduce them. The main domains are:
+
+- risk to self: self-harm and suicide;
+- risk to others: violence or aggression;
+- risk from others: exploitation, abuse, domestic violence;
+- self-neglect, including failure to eat, drink or manage physical illness;
+- risk to dependants, such as children or adults the person cares for.
+
+For each domain the clinician considers history, current state, context and protective factors, and agrees a plan to reduce the risk.
+:::
+
+Risk factors for suicide, such as previous self-harm, male sex, living alone or a recent loss, are real at the population level. They are very poor at predicting what one individual will do, because suicide is rare even among people with many risk factors. For that reason the NICE guideline on self-harm (NG225, 2022) says that risk assessment tools and scales should not be used to predict future suicide or self-harm, or to decide who is offered treatment or discharged. The emphasis instead is on a **psychosocial assessment** of needs, a **safety plan** made with the person, and timely follow-up. The next chapters return to this in detail ([[psychiatry/self-harm-suicide-prevention]]).
+
+Asking about suicide is a core skill. Move gradually from general questions ("Do you ever feel life is not worth living?") to specific ones ("Have you had thoughts of ending your life? Have you made any plans?"). There is no evidence that asking increases risk, and many people feel relieved to be asked.
+
+Violence risk follows the same logic. The strongest indicators are past violence, substance misuse, and specific current features such as persecutory beliefs with anger, or threats towards a named person. Most people with mental illness are never violent, and they are more likely to be victims of violence than perpetrators.
+
+## Capacity and consent
+
+Many assessments raise the question of whether the person can make a particular decision, such as refusing admission or treatment. In England and Wales this is governed by the **Mental Capacity Act 2005**. Capacity is presumed. It is decision-specific and time-specific. A person lacks capacity for a decision only if an impairment of the mind or brain means they cannot understand the relevant information, retain it, use or weigh it, or communicate a decision. The law and the separate framework of the Mental Health Act are covered in [[psychiatry/treatments-mental-health-law]] and [[medical-ethics-law/consent-capacity]].
+
+::: example A refusal on the ward round {#ex-capacity-round}
+Mr Arjun Mehta, 52, has insulin-treated diabetes and is admitted to a medical ward with a foot infection. He is refusing intravenous antibiotics, saying "the hospital food is poisoned and so are the drips". He was diagnosed with a delusional disorder five years ago. The medical team asks whether he has capacity to refuse treatment.
+
 ::: solution
-**Interpreted-assessment-practice ([[#def-interview]], [[clinical-skills/communication]], [[public-health/determinants-inequalities]]): the frame - book a professional interpreter (family and friends compromise confidentiality, skew disclosure on shame topics and invert household power - the reasons women disclose abuse only to interpreters are also the reasons not to use relatives), double the appointment length for interpreted speech (content roughly halves per minute), and brief the interpreter beforehand on purpose, terms and the risk questions so nothing arrives unscripted; the technique - speak to the patient not the interpreter, short units, one idea per sentence, and check back the idioms both directions ('hearts sinking', 'nerves', 'thinking too much' as distress idioms with differential meanings), with the MSE's subjective items elicited in her words and glossed in the record (the interpretive transparency that lets the next clinician trust the description) - [[clinical-skills/history-taking]]; the formulation humility - premorbid function, substance use, family history and course all need culturally-informed collateral (the community and family with consent), trauma and loss history taken at the patient's pace with the torture-and-violence context known but not prodded (the re-traumatisation balance and the specialist services for that work), and the differential held open (the PTSD-and-psychosis overlap, dissociation misread as intrusion, grief and survivor guilt with nihilistic colouring versus psychotic depression decided on conviction and pleasure-loss texture) - [[psychiatry/mood-disorders]], [[psychiatry/anxiety-disorders]]; and the logistics as clinical care - the 20-minute template corrected before the patient arrives (the advocacy-the-clinic date), the continuity of interpreter for follow-ups (the dialect and gender preferences recorded as data), the written information in her language and the medication consent done at interpreting speed, plus the leave-to-remain-and-right-to-work problems that decide whether treatment plans are executable at all - [[medical-ethics-law/consent-capacity]], [[public-health/global-health]].**
+**Presume capacity and test it for this decision.** The decision is whether to accept intravenous antibiotics for the foot infection.
+
+**Is there an impairment of mind or brain?** Yes: a delusional disorder, and possibly delirium from infection, which must be checked with an attention test.
+
+**Apply the functional test.** He can repeat back that he has an infection and that untreated it could spread and lead to amputation, so he understands and retains the information. However, he cannot weigh it: every discussion returns to the fixed belief that the drips are poisoned, and he cannot consider the possibility that they are not. On this decision he lacks capacity because of his delusion.
+
+**Next steps.** Treatment can be given in his best interests under the Mental Capacity Act, using the least restrictive approach. Try first to win his agreement, for example by letting him watch the bag being opened, or by offering oral antibiotics if clinically suitable. Involve his family and his community mental health team. Record the assessment clearly. If the main purpose of treatment were his mental disorder, the Mental Health Act would be the relevant framework instead.
 :::
 :::
 
-::: example Capacity at the ward round {#ex-capacity-round}
-Two weeks into an admission for severe depression, a patient refuses ECT and wants to go home to 'finish things at work'; her husband asks you to 'make her stay'.
+::: example Using an interpreter {#ex-interpreter}
+Ms Fatima Rahimi, 26, recently arrived from Afghanistan, attends the emergency department with her husband, who speaks good English. Staff say she "won't talk". The husband offers to interpret. How should the assessment proceed?
+
 ::: solution
-**Capacity-and-detention-reasoning ([[#def-interview]], [[#def-risk]], [[medical-ethics-law/consent-capacity]]): the decision-specific test - she may understand, retain, weigh and communicate (the four-step statutory test) yet still be at high risk; capacity is not a personality trait and 'refusing what I would choose' is not incapacity, so test the actual decision: what does she understand about ECT's risks and alternatives, what is she weighing, and is her reasoning stable across days - the impaired-weighing of severe depression (the hopelessness-masquerading-as-value-judgement problem: 'finishing things at work' needs its meaning explored - purpose or cleanup?) before any conclusion; the risk-versus-liberty arithmetic - detention criteria are narrow and legal (the mental-health-act thresholds, second-opinion and manager-review duties, the least-restrictive-option documentation), and refusing admission when community risk can be managed is a right, not a symptom; the practical ladder - clarify the plan she can accept (the day-patient or intensive-home-treatment alternative, the antidepressant she will take, the daily contact and the means-restriction work with the husband's help), the safety plan written with her, and the review point agreed - plus the second-opinion route if deterioration crosses the threshold, with the difference between risk and danger named in the notes; and the husband - his alarm heard, his role in the plan defined, and the marriage not made the treatment team (the carer's own support needs and the disclosure limits explained without judgement) - [[psychiatry/mood-disorders]], [[clinical-skills/communication]].**
+**Decline the offer politely.** Use a professional interpreter, in person or by telephone, and if possible a female interpreter, as Ms Rahimi may prefer. A family member cannot be neutral and may be part of the problem.
+
+**See her alone for at least part of the interview.** This is routine good practice and is essential for asking safely about domestic abuse.
+
+**Allow for culture and trauma.** Ask how she understands her difficulties. She may describe distress as headaches, poor sleep or "pain in the heart". Ask about experiences before and during migration, as she may have lived through violence or loss.
+
+**Avoid misinterpretation.** Silence may reflect fear, shame, exhaustion or not understanding, rather than mutism from a psychiatric illness. Check her understanding throughout, speak in short sentences, and record the interpreter's name.
+
+With an interpreter she describes nightmares, being easily startled and avoiding reminders of an attack on her village. This suggests a trauma-related disorder, and the assessment moves on to her current safety and support.
 :::
 :::
 
 ::: quiz
-The strongest single predictor of suicide in a psychiatric population is:
-- [x] A previous suicide attempt or episode of self-harm
-- [ ] A formal diagnosis of borderline personality disorder
-- [ ] An inpatient admission in the past year
-- [ ] A family history of mental illness
+A 40-year-old woman says that a man on the radio has been sending her personal messages through the songs he chooses. She is certain, and nothing her sister says changes her mind. This belief is best described as:
+- [ ] an overvalued idea
+- [x] a delusion of reference
+- [ ] an obsession
+- [ ] a pseudohallucination
 ::: solution
-**Past self-harm and attempt is the dominant actuarial predictor; diagnoses and admissions modify but do not replace it, which is why every self-harm presentation earns a full psychosocial assessment and follow-up, and why discharge is a planned high-risk window ([[#def-risk]]).**
+The belief is fixed, false and held despite contrary evidence, and its theme is that neutral events carry special personal meaning: a delusion of reference. An overvalued idea is less rigidly held, an obsession is recognised as one's own unwanted thought and resisted, and a pseudohallucination is a perceptual experience, not a belief.
 :::
 :::
 
-::: widget plot
-f: 95*exp(-x/0.25); 55*exp(-x/4); 30*exp(-x/30)+8; 70*exp(-x/1.2); 20+38*(1-exp(-x/25))
-x: 0.01, 100
-y: 0, 100
-labels: \text{hours after first contact},\ clinician\ estimated\ risk\text{interview-time anxiety};\ \text{acute-intoxication contribution};\ \text{acute stress reaction};\ \text{assessed chronic risk (stable)};\ \text{realised near-term risk after discharge}
-caption: Risk estimation is time-structured ([[#def-risk]]): acute drivers (intoxication, agitation, anxiety) decay over hours-days while chronic risk is a slowly-moving figure; discharge from inpatient care is the elevated-risk window when follow-up, means-restriction and medication continuity all wobble - [[psychiatry/self-harm-suicide-prevention]], [[clinical-skills/patient-safety]].
+## Writing it up
+
+The record of an assessment should be clear enough for a colleague to act on at 3 a.m. A good write-up includes:
+
+1. A one-line summary: who the person is and why they were seen.
+2. The history under the standard headings, with sources (patient, relative, GP record).
+3. The mental state examination, with short quotations.
+4. Physical findings and investigation results.
+5. A formulation and a differential diagnosis.
+6. A risk summary in plain language, linked to a plan.
+7. The plan: who will do what, by when, and what to do if things change.
+
+Avoid stigmatising labels such as "attention-seeking" or "manipulative". They describe the observer's frustration rather than the person, and they follow people through the health system.
+
+::: history
+Assessment by careful observation is older than modern psychiatry, but the structure used today owes much to German-language psychiatry of the early 20th century. Karl Jaspers' *General Psychopathology* (1913) distinguished the form of an experience from its content and insisted on understanding experiences from the patient's point of view, which is the basis of descriptive psychopathology. Kurt Schneider later listed "first-rank symptoms" that he considered characteristic of schizophrenia, and they shaped interviews for decades, although they are now known not to be specific to it. In 1977 George Engel proposed the biopsychosocial model, which became the standard framework for formulation. The second half of the 20th century brought structured interviews and operational criteria, starting with the Feighner criteria (1972) and DSM-III (1980), which made psychiatric diagnosis more reliable.
 :::
 
 ## Where this leads
 
-Disorder-specific phenomenology and management follow in [[psychiatry/mood-disorders]], [[psychiatry/anxiety-disorders]], [[psychiatry/psychotic-disorders]], [[psychiatry/eating-personality-disorders]], and [[psychiatry/lifespan-psychiatry]]; the legal frames in [[psychiatry/treatments-mental-health-law]]; communication craft in [[clinical-skills/communication]].
-
-::: history
-**The psychiatric examination descends from the asylum case-sheet and the French clinical tradition: Pinel's and Tuke's moral-management era made systematic observation of the 'internal state' a professional duty (the mythic chain-shifting story and the more complicated archival reality of the Bicêtre and York Retreat), and Esquirol's students carried the symptom-taxonomic method into English and American practice - [[psychiatry/lifespan-psychiatry]]; Kraepelin's great sorting - the dementia-praecox-versus-manic-depression distinction built from longitudinal case-note comparison at Dresden and Munich - made course and outcome part of diagnosis (the schizophrenia-and-bipolar ancestry of today's classifications, with his racism-and-eugenics adjacency now properly footnoted) - [[psychiatry/psychotic-disorders]], [[psychiatry/mood-disorders]]; the phenomenological method (Jaspers's General Psychopathology of 1913 with its Verstehen-versus-Erklären rule, the valid-versus-causal distinction, and the 'understandable versus incomprehensible' genesis test that still structures how we describe delusion and despair) gave psychiatry its examination grammar; and the risk-management turn - the post-deinstitutionalisation era's violent-act inquiries and the 1980s-90s suicide-risk research that replaced moral panic with actuarial method (the HCR-20 and VRAG actuarial tools for violence and the suicide-risk scales' honest limits) - [[psychiatry/self-harm-suicide-prevention]], [[medical-ethics-law/professionalism-regulation]]; the semiology got operationalised in the mid-twentieth century - the Present State Examination and the Feighner and Research Diagnostic Criteria lines that fed DSM-III's descriptive-reliability revolution of 1980 (the reliability-versus-validity trade-off that critics still press), the PSE's progeny SCAN and CATEGO systems and ICD's parallel path toward the WHO's 2019 revisions and the ICD-11 clinical-descriptions programme; and the current era interrogates the interview itself - the cultural-formulation movement (the Cultural Formulation Interview in DSM-5), the Hearing-the-Voice and trauma-informed-care reforms changing how symptoms are named and who tells the story, and the digital-assessment and passive-sensing research whose promise is continuous measurement and whose danger is the surveillance-adjacency the ethics chapters already anticipate - [[psychiatry/treatments-mental-health-law]], [[public-health/global-health]].**
-:::
+The disorder chapters that follow use this assessment throughout: [[psychiatry/mood-disorders]], [[psychiatry/anxiety-disorders]] and [[psychiatry/psychotic-disorders]]. General interviewing skills are in [[clinical-skills/history-taking]] and [[clinical-skills/communication]], and the interpretation of screening tests is in [[epidemiology-ebm/diagnostic-tests]].
 
 ::: summary
-- The psychiatric interview is an instrument: consent and frame, the patient's own narrative, collateral history, and a summary read back - each step improves validity and alliance together.
-- The mental state examination is structured observation: behaviour, speech, mood and affect, thought form and content, perception, cognition, insight and risk, recorded so another clinician can see what you saw.
-- Psychiatric presentations demand a mimic hunt - delirium, dementia, substances, endocrine and neurological disease - before a 'new psychosis' label in later life sticks.
-- Suicide risk is estimated from acts and plans and means, not from diagnoses; asking about suicide is safe, documenting is protective, and discharge is a danger window.
-- Capacity and insight are decision-specific; involuntary pathways exist for narrow, time-limited purposes and require the same documentation rigour as any emergency procedure.
-- The record is part of the treatment: readable by the patient, usable by the next clinician, and honest about uncertainty.
-:::
-
-::: exercise Document collateral properly {level=1}
-Write (in words) how you would record: who gave the collateral history, with what consent, what they added, and how the patient reacted to it being obtained.
-::: solution
-**Collateral-documentation ([[#def-interview]], [[clinical-skills/records-handover]]): the record pattern - 'History obtained from patient's sister, telephone, with patient's verbal consent given at [time]; sister reports X weeks of reduced sleep, two unrecovered bank withdrawals, and a prior 2-week "high" in 2019 after a steroid course, all unreported by patient; patient became tearful when told I had this information, said she had feared sounding "crazy"; information used to revise formulation toward bipolar II.' - the four elements (source, consent, content, patient's response) that make collateral legally clean and therapeutically repairable, the disagreement recorded rather than averaged (the informant-versus-patient account as data about insight and about the household), and the follow-through actions: the family invited to the next review with the patient's preference respected, and the suicide-and-violence-risk items checked against collateral without breaching the alliance - [[psychiatry/self-harm-suicide-prevention]], [[medical-ethics-law/confidentiality]].**
-:::
-:::
-
-::: exercise Separate the mimics {level=2}
-For each presentation list the top two organic mimics and the discriminating features or tests: new panic with pins-and-needles; 'depression' with constipation, cold intolerance and hoarseness; 'psychosis' with headache and morning vomiting; 'dementia' with urinary urgency, shuffling gait and poor levodopa response.
-::: solution
-**Mimic-separation ([[#def-mse]], [[#def-interview]]): panic-plus-paraesthesia - phaeochromocytoma and keep the honest pair: the arrhythmia and the phaeochromocytoma-plus-hyperthyroidism cluster (episodic hypertension with headache, sweating and palpitations - the metanephrines, the ECG and the thyroid and calcium panels; and the hyperventilation-induced paraesthesia trap) - [[endocrine/adrenal]], [[endocrine/thyroid]], [[cardiovascular/arrhythmias]]; depression-cold-hoarse - hypothyroidism (the TSH-first reflex, the macrocytosis and hyponatraemia and the myxoedema madness that mimics psychosis) and hypercalcaemia (the bones-stones-thrones-psychiatric-moans sequence, the PTH and phosphate and the renal track) - [[endocrine/bone-calcium]], [[renal/potassium-calcium-phosphate]]; psychosis-headache-vomit - intracranial mass and autoimmune encephalitis (the raised-ICP timings, papilloedema and focal signs, the seizure-and-dyskinesia-and-movement features, the NMDA-receptor antibody story with its psychiatric-first weeks and the urgent MRI-and-LP pathway) - [[nervous-system/neuroinflammation]], [[nervous-system/motor-systems]]; and dementia-urgency-shuffle - normal-pressure hydrocephalus and Parkinson-plus disease (the gait-first-with-bladder-and-cognition timing, the supranuclear-gaze and early-falls-and-hallucination variants and the autonomic testing, and the honest statement that shunt response is unpredictable and selection is clinical) - [[nervous-system/movement-disorders]], [[nervous-system/dementia-neurodegeneration]].**
-:::
-:::
-
-::: exercise Handle the silent patient {level=2}
-A catatonic patient is admitted mute, rigid, refusing food and tablets. Describe the assessment and management sequence with the lethal complication to prevent.
-::: solution
-**Catatonic-episode-management ([[#def-mse]], [[#def-risk]], [[psychiatry/psychotic-disorders]]): the recognition - the sign cluster (immobility, mutism, posturing, with gegenhalten and waxy flexibility, staring, stereotypies, and the autonomic-volatility variant) and the two lethal confusions - malignant catatosis-versus-neuroleptic-malignant-syndrome (the CK, the temperature-and-rigidity timing, the causative-agent history and the antipsychotic-withholding until the question resolves) and the delirium-overlap - [[nervous-system/movement-disorders]]; the workup - the cause hunt is half the treatment (autoimmune encephalitis, metabolic, SLE, drug-withdrawal states, and the psychiatric substrate) with the investigations done in the context of the immobility's own complications; the treatment sequence - benzodiazepine challenge with lorazepam dosed to response documented (the diagnostic-and-therapeutic trick), ECT readiness for malignant or refractory catatonia with the early-psychiatry decision rather than late-rescue culture, and antipsychotics avoided or minimised pending response because they worsen catatonia; and the nursing-metabolic protocol - the thromboembolism prophylaxis the pulmonary-embolism reality, the pressure-area care and mechanical thromboprophylaxis, the fluid-and-electrolyte-and-nutrition line with the refeeding vigilance, and the observation charting that counts the temperature, pulse and CK trends, because autonomic instability is the outcome event, not the mutism - [[emergency-critical-care/critical-care]], [[pharmacology/dosing-principles]].**
-:::
-:::
-
-::: exercise Improve the risk handover {level=3}
-Serious-incident reviews in your region repeatedly find that risk information was known but not handed over. Design the cross-boundary risk-communication protocol (A&E to ward, ward to home, crisis team to GP).
-::: solution
-**Risk-handover-protocol ([[#def-risk]], [[clinical-skills/records-handover]], [[clinical-skills/patient-safety]]): the failure taxonomy the reviews show - the risk documented in a free-text note nobody reads, the verbal 'high risk' without the formulation (what risk, over what period, on what triggers, with what plan), the discharge summary without the safety plan attached, and the GP letter that arrives after the follow-up appointment; the protocol - a shared risk-and-safety-plan object in the record that travels with the patient (the warning-signs-and-coping-steps-and-means-restriction-and-contacts format from the Stanley-Brown tradition made structured and legible across systems), the named responsible clinician and follow-up date as mandatory discharge fields, the means-restriction actions recorded with who is doing them (the pharmacy dispensing limits and the family holding the keys conversations), and the verbal handover with the three-sentence risk formulation scripted into ward rounds and shift changes (the ISBAR-style discipline) - [[psychiatry/self-harm-suicide-prevention]]; the high-risk-window automation - the post-discharge and post-absconding contact within days with its own completion audit (the evidence that contact reduces repeat self-harm), the crisis-team handoff including the plan the patient agreed while well, and the child-and-vulnerable-adult safeguarding flags propagated not re-litigated; the evaluation - simulated-handover audits (can the receiving clinician state the risk and plan?), the serious-incident themes retabulated yearly against the protocol, time-to-first-contact distributions and equity (who gets missed), and the patient-and-staff acceptability so the protocol survives the first busy Christmas - [[clinical-skills/communication]], [[medical-ethics-law/confidentiality]].**
-:::
+- A psychiatric assessment has the same structure as any medical assessment: history, examination, investigations, diagnosis and plan.
+- Take the history under standard headings, always including substance use, dependent children and a collateral account where possible.
+- The mental state examination records appearance and behaviour, speech, mood and affect, thought form and content, perception, cognition and insight at the time of the interview.
+- Delusions, overvalued ideas, obsessions, hallucinations and illusions have precise meanings; use them carefully.
+- Look for organic causes in every new presentation, especially with acute onset, fluctuating attention, visual hallucinations or late first onset.
+- A screening test's predictive value depends on prevalence.
+- A formulation explains why this person has this problem now, using predisposing, precipitating, perpetuating and protective factors.
+- Risk assessment is a clinical judgement linked to a plan; NICE advises against using risk scales to predict suicide or ration care.
+- Capacity is presumed, decision-specific and tested with the functional test of the Mental Capacity Act.
 :::
 
 ## Exercises
 
-::: exercise Write the MSE from notes {level=1}
-Turn this into a structured MSE: '28F, stared at floor, answered eventually in one-word replies. "Empty. Like the TV's on inside." Flat face, no eye contact. Slow, quiet speech. Denied voices but went red and stopped when asked about them. Oriented. Said her mother "did this on purpose, she knows what she did."'
+::: exercise Name the term {level=1}
+Give the correct psychopathological term for each: (a) seeing a coat hanging on a door as a person in a dark room; (b) rapid speech jumping between topics linked by puns; (c) a man repeatedly washing his hands to neutralise thoughts of contamination that he knows are excessive; (d) laughing while describing his mother's death.
 ::: solution
-**MSE-construction ([[#def-mse]]): appearance-behaviour - reduced eye contact, psychomotor retardation, guarded; speech - slowed, hypophonic, brief replies with latency; mood - 'empty' in her words, anhedonia-implying metaphor; affect - flattened, restricted range, incongruent arousal on a topic (the blush-and-block around voices as content to return to, not force); thought - content not yet elicited, the blocked topic noted for re-approach, and the mother statement recorded verbatim pending whether it is idea-of-reference, delusional-guilt or true account (the conviction-and-evidence test deciding overvalued-idea-versus-delusion) - [[psychiatry/psychotic-disorders]]; perception - not reported, needs a specific non-leading enquiry (the stepwise voice-questioning technique); cognition - orientated; insight and risk - not addressed in the vignette, so documented as 'to do', with the self-harm-hopelessness screen explicitly listed as the next move; and the closing sentence every MSE earns: what was observable versus what was assumed, so tomorrow's clinician knows which items to re-check - [[clinical-skills/records-handover]].**
+(a) An illusion: a misperception of a real stimulus. (b) Flight of ideas, typical of mania; pressure of speech is likely to accompany it. (c) An obsession (the intrusive contamination thought) with a compulsion (the washing). (d) Incongruent affect.
 :::
 :::
 
-::: exercise Triage the referral letters {level=2}
-Four referrals arrive: (a) 19-year-old student 'hearing God', functioning and distressed only by family concern; (b) 74-year-old widow, 6 weeks of weight loss, 'nothing matters', new incontinence; (c) 31-year-old, third A&E attendance this year for cutting, 'just coping'; (d) 45-year-old, insomnia and 'the neighbours poison me', first episode. Rank urgency and name the key discriminator for each.
+::: exercise The headings of the history {level=1}
+List the main headings of a psychiatric history, and give two items that should never be omitted, with a reason for each.
 ::: solution
-**Referral-triage ([[#def-risk]], [[#def-mse]]): (a) - the content is religious but the discriminators are distress, dysfunction and conviction beyond cultural group norms (the at-mental-illness-risk assessment: duration, attenuation, functioning, family history - the clinical-high-risk frameworks offer monitoring and psychological therapy without antipsychotics); routine-but-real assessment with the person, not crisis; (b) - late-life depression with physical symptoms and incontinence is high-urgency for the depression itself (the psychotic-and-stuporous depression lethality, the appetite-and-fluid-collapse trajectory) and for the mimics (the subdural, the hypothyroidism, the normal-pressure-hydrocephalus triad with its gait documentation, the malignancy workup) - [[nervous-system/dementia-neurodegeneration]], [[endocrine/thyroid]]; (c) - repeated self-harm is the strongest predictor in the list (the functions-of-self-harm assessment, the dialectical-behavioural-therapy access question, the lethal-method-escalation check and the continuity-of-care plan; personality-disorder stigma is no reason for under-service) - [[psychiatry/eating-personality-disorders]]; (d) - first-episode psychosis warrants rapid-access early-intervention-team assessment (the duration-of-untreated-psychosis-outcome literature, the organic exclusion workup and the family-work with CBT and family intervention before maintenance antipsychotics start with informed consent) - [[psychiatry/psychotic-disorders]], [[psychiatry/lifespan-psychiatry]].**
+Presenting complaint; history of presenting complaint; past psychiatric history; past medical history; medication; substance use; family history; personal history; forensic history; social circumstances; premorbid personality. Two items never to omit: substance use, because intoxication and withdrawal mimic or worsen almost every psychiatric syndrome and change risk; and dependent children or others the person cares for, because their safety may depend on the plan. Asking about suicidal thoughts is a third.
 :::
 :::
 
-::: exercise Conduct the hard question {level=2}
-Practise (in words) how you would ask about: command hallucinations, firearm access, medication secrecy, and sexual abuse, in a way that preserves the alliance and gets the information.
+::: exercise Mood or affect? {level=1}
+Explain the difference between mood and affect, and describe how each is recorded.
 ::: solution
-**Hard-question-technique ([[#def-interview]], [[#def-risk]], [[clinical-skills/communication]]): commands - normalising and specific ('some people hear voices that give instructions or orders - have yours? what do they tell you to do, and how much do they get through?') with the resistance-and-relief phenomenology and the voice's identity (the malevolent-versus-familiar distinction informs management), asked before the safety plan so the plan matches the actual script; firearms - factual and non-accusatory framing tied to safety not crime (the home-gun-storage literature's finding that asking works when it is offered as protection for the household, and the means-restriction conversation succeeds when the patient keeps ownership and changes access) - [[public-health/prevention-promotion]]; medication secrecy - curiosity about the reason rather than interrogation about the act (the side-effect-negotiation-hypertension-and-sedation-and-sexual-and-weight-costs that hide behind 'compliant', and the adherence-estimate asked as 'how many doses in the last week did you miss?'), which predicts better than the pill count; and abuse - timing it when disclosure serves the plan, stating the confidentiality limits before it, naming it as possible without insisting ('a lot of people with your symptoms have had experiences like this - has anything like that happened to you?') with the safeguarding duties for children and vulnerable adults known to the asker, and the post-disclosure care pathway (the independent sexual violence advocacy and trauma work staged after stabilisation) so disclosure is never the end of the consultation - [[psychiatry/substance-use]], [[medical-ethics-law/confidentiality]].**
+Mood is the person's sustained emotional state over a period, reported subjectively and recorded in their words (for example "flat, like nothing matters") and sometimes as a self-rating out of 10. Affect is the observed expression of emotion during the interview, recorded by the clinician as reactive, restricted, blunted, flat, labile or incongruent. The two may differ: a person may report low mood while smiling politely.
 :::
 :::
 
-::: exercise Audit a mental state documentation system {level=3}
-Your trust's MSE template is 90 percent tick-boxes. Build the business case for a redesign that improves safety and patient experience, and the evidence you would need to prove it worked.
+::: exercise Predictive value of a screen {level=2 check="round(100*0.9*0.1/(0.9*0.1+0.2*0.9))"}
+A brief depression questionnaire has sensitivity 0.90 and specificity 0.80. It is used in a clinic where 10% of patients have depression. What percentage of positive results are true positives? Give your answer as a whole-number percentage.
+::: hint
+Use [[#eq-ppv]] with $p = 0.1$.
+:::
 ::: solution
-**Template-redesign-case ([[#def-mse]], [[clinical-skills/records-handover]], [[clinical-skills/patient-safety]]): the problems with tick-only MSEs - normalisation of the abnormal (every box 'within normal limits' in a patient who is acutely ill because the boxes are faster than thinking), the loss of the patient's words (the verbatim sentence that later clinicians read as the earliest evidence of capacity loss or of the delusion's theme), and the risk-audit fiction (compliance with boxes read as assessment quality) - [[clinical-skills/clinical-reasoning]]; the redesign - structured fields that force narrative for the high-yield items (the patient's own mood words, the risk formulation sentence, the observation that mattered), prompts not defaults for abnormalities, mandatory collateral-history documentation with consent recorded, and a patient-facing-readable register (the open-notes era makes style a safety variable), with the training-and-feedback loop that makes documentation culture not blame (the 'would the next clinician see what I saw?' test) - [[medical-ethics-law/confidentiality]]; and the evidence plan - pre-post audit of information-transfer failures on handover (the vignette-recall method), incident and serious-incident themes touching assessment quality, time-and-burden measures per consultation (the redesign must not add minutes it cannot justify), patient and carer experience interviews about being 'seen' in the record, and the equity read-out (the interpreter-and-literacy burden templates create or remove) - [[public-health/determinants-inequalities]], [[epidemiology-ebm/measuring-disease]].**
+True positives per person screened $= 0.9 \times 0.1 = 0.09$. False positives $= (1 - 0.8) \times 0.9 = 0.18$. PPV $= 0.09/(0.09 + 0.18) = 0.333$, so about **33%**. Two in three positive results are false, which is why a positive screen leads to a clinical interview rather than a diagnosis.
+:::
+:::
+
+::: exercise Write the formulation {level=2}
+Ms Chloe Turner, 23, a student, has a second episode of depression. Her mother has bipolar disorder. She was bullied at school. Three weeks ago her relationship ended, and she has since stopped attending lectures, stayed in her room and drunk alcohol most nights. She has a close friend who visits daily and she responded well to CBT two years ago. Write a biopsychosocial formulation as a grid of predisposing, precipitating, perpetuating and protective factors.
+::: solution
+Predisposing: biological, a family history of mood disorder (bipolar disorder in her mother, which also raises the question of bipolarity in Chloe); psychological, low self-esteem after school bullying; social, none clearly stated. Precipitating: the end of her relationship three weeks ago. Perpetuating: biological, nightly alcohol, which worsens mood and sleep; psychological, withdrawal and avoidance, which remove pleasure and achievement; social, isolation and falling behind at university. Protective: a close, supportive friend; a previous good response to CBT; education and future plans. Management follows: review alcohol, encourage behavioural activation, offer psychological therapy, link with student support, and ask carefully about past hypomania given the family history.
+:::
+:::
+
+::: exercise Organic or functional? {level=2}
+For each person, state whether an organic cause should be actively excluded and name two investigations: (a) a 19-year-old with three months of hearing voices and social withdrawal; (b) a 67-year-old with no psychiatric history who over two weeks has become paranoid and seen "small children" in her living room; (c) a 30-year-old with anxiety, weight loss, tremor and palpitations.
+::: solution
+(a) Organic causes are less likely but a baseline assessment is still needed: a urine drug screen (cannabis and stimulants), blood tests including thyroid function, and an ECG before antipsychotic treatment; neuroimaging if there are neurological signs. (b) Yes, strongly: late first onset, subacute course and visual hallucinations suggest delirium, Lewy body dementia, or another brain disease. Investigations: blood tests for infection and metabolic causes, a cognitive assessment, and brain imaging; review medications. (c) Yes: thyrotoxicosis is likely. Investigations: thyroid function tests and an ECG for tachyarrhythmia.
+:::
+:::
+
+::: exercise Capacity is decision-specific {level=3}
+A 45-year-old man with schizophrenia is admitted with chest pain and is found to have a myocardial infarction. He believes he is being monitored by the security services, but he agrees to aspirin and angiography and asks sensible questions about the risks. The next day he refuses to let the nurses weigh him, saying the scales transmit his data. A junior doctor writes "lacks capacity due to psychosis". Critique this note.
+::: solution
+The note treats capacity as a global property of the person, which is wrong in law and in practice. Under the Mental Capacity Act, capacity is presumed and is assessed for each decision at the time it needs to be made. For the decision about angiography, he understood, retained and weighed the information and communicated a choice, so he had capacity, even though he holds a delusion. For the decision about being weighed, his reasoning may be distorted by the delusion, but this has to be tested specifically. The decision also matters little clinically, and a less restrictive option such as estimating weight or trying again later is available. A better note would record the specific decision, the presence of an impairment, how each part of the functional test was assessed, and the outcome. The diagnosis of schizophrenia alone never establishes incapacity.
+:::
+:::
+
+::: exercise Assess the risk assessment {level=3}
+A trust audit finds that a 10-item suicide risk scale was completed for every person seen after self-harm, and those scoring "low risk" were discharged without follow-up. Explain, with reference to base rates and current UK guidance, why this practice is problematic, and propose a better approach.
+::: solution
+Suicide is rare even in high-risk groups, so any scale with imperfect sensitivity and specificity will have a very low positive predictive value and will also label as "low risk" many of the people who go on to die by suicide. Studies of such tools have consistently found them too inaccurate for individual prediction. Using the score to allocate care therefore denies follow-up to people who need it and gives false reassurance. NICE NG225 (2022) advises against using risk tools or scales to predict suicide or self-harm, or to decide who receives treatment or is discharged. A better approach: a psychosocial assessment for everyone, exploring the person's circumstances, needs, mental state and the meaning of the act; a collaborative safety plan; treatment of underlying conditions; involvement of family where the person agrees; and timely follow-up for all, with particular attention to the days after discharge. Risk factors still inform the conversation, but they do not replace it.
 :::
 :::

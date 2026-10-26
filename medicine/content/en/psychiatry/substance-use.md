@@ -1,141 +1,295 @@
-Substance use disorders are brain-tracking disorders with social weather. **Repeated exposure to any strongly reinforcing substance hijacks the learning and salience circuits - dopamine-tagged cues, habitualisation, allostasis of mood and stress systems - producing the clinical triad of craving, loss of control and continued use despite harm, graded mild-to-severe by the number of criteria met. Withdrawal is the physiological signature, not the definition: alcohol and sedatives kill in withdrawal, cannabis and stimulants mostly do not, and the disorders that kill fastest (opioids, alcohol) are not the ones with the most dramatic withdrawal.** Treatment works when it combines pharmacology, psychological method and social scaffolding; it fails when it is one lecture and a leaflet.
+Alcohol, tobacco and other drugs cause a large share of the world's illness and early death. Alcohol alone is involved in liver disease, cancers, injuries, violence and suicide, and tobacco remains the largest single preventable cause of death. Substance use problems are also common among people seen in every medical specialty, often unrecognised.
 
-## The general apparatus
+This chapter explains how substance use becomes a disorder, how to assess it, how to manage intoxication and withdrawal safely, and how relapse prevention, substitution treatment and harm reduction work. The focus is on alcohol and opioids, with shorter sections on other substances. Throughout, the language matters: "a person who uses drugs" rather than "an addict" or "a user". Stigma keeps people from seeking help.
 
-::: definition Dependence, withdrawal and the treatment frame {#def-dependence}
-**Diagnosis from the DSM-5-and-ICD-11 merger-line: the substance-use-disorder criteria (larger-or-longer use, unsuccessful control efforts, craving, time spent, role failure, continued use despite physical-or-psychological harm, tolerance, withdrawal) counted to mild-moderate-severe, with hazardous-and-harmful-use kept from the ICD tradition because most clinical opportunity sits there - before dependence (the SBARQ-and-CAGE-ancestors, the AUDIT-and-DUDIT screens validated across services, and the single-question screens that beat no-screening in emergency settings) - [[psychiatry/psychiatric-assessment]], [[emergency-critical-care/acute-assessment]]; withdrawal medicine, substance-specific: alcohol-and-sedatives as the dangerous class (the autonomic-tremor-seizure-delirium-tremens progression managed by symptom-triggered-or-fixed-schedule benzodiazepines with the liver-adjusted-agent choice, thiamine-before-glucose, the ICU-and-ICU-adjacent criteria for severe withdrawal, and the outpatient-with-daily-review option for moderate risk), opioids as miserable-but-rarely-fatal (the agonist-substitution or lofexidine-and-clonidine-and-supportive approach with the neonatal-abstinence and the rapid-decline-anesthesia-opioid-overdose warnings), nicotine-and-stimulants-and-cannabis as uncomfortable-not-dangerous (the mood-sleep-appetite-crash management, the depression-unmasking rather than depression-causing reading, and the psychosis-vulnerability conversations covered under cannabis) - [[emergency-critical-care/poisoning]], [[pharmacology/adverse-reactions]]; the psychological methods with evidence: motivational interviewing (the autonomy-preserving style that works on discrepancy, not confrontation - the effectiveness studies and the 'spirit versus technique' debates), contingency management as the most effective psychosocial intervention for stimulant disorders (the voucher-and-prize-based reinforcement reallocation and the policy-obstacle history), CBT-and-community-reinforcement approaches, the mutual-help institutions (the 12-step and SMART-recovery evidence-for-mediators literature) and the social scaffolding that keeps brains busy when dopamine recalibrates (housing, work, the people who knew you sober); and the opioid-specific medical emergency layer - naloxone distribution and take-home kits with the good-Samaritan-law context, the overdose-reversal-and-recovery-position-and-airway basics and the polydrug-supply reality (the benzodiazepine-and-alcohol-co-toxicity respiratory arithmetic and the novel-sedulant-adulterant era's atypical presentations) - [[emergency-critical-care/resuscitation]], [[pharmacology/metabolism-excretion]].**
+## Key concepts
+
+::: definition Patterns of substance use {#def-dependence}
+- **Intoxication**: a temporary state caused by a substance, with disturbances of consciousness, cognition, perception, mood or behaviour that resolve as the substance is cleared.
+- **Harmful use** (ICD-11 "harmful pattern of use"): a pattern of use that has caused damage to physical or mental health, or harm to others, without dependence.
+- **Dependence** (ICD-11): a disorder of regulation of substance use, shown by at least two of: (1) impaired control over use (starting, amount, stopping); (2) use becoming an increasing priority over other activities and responsibilities, and continuing despite harm; (3) physiological features: **tolerance** (needing more for the same effect), **withdrawal** symptoms on stopping or cutting down, or use to avoid withdrawal. These features are usually present for at least 12 months, or one month if use is continuous.
+- DSM-5-TR uses a single category, **substance use disorder**, graded mild, moderate or severe by the number of criteria (from 11) present.
 :::
 
-## The main substances
+### Why use becomes compulsive
 
-::: definition Alcohol, opioids, stimulants, cannabis, nicotine {#def-substances}
-**Alcohol: the epidemiology of harm across the whole consumption curve (the dose-cancer-relationship with no safe threshold for some outcomes, the liver-cardiomyopathy-pancreatitis-cancer-neurotoxicity ledger, the withdrawal-and-trauma-and-domestic-harm burden), the treatment menu read honestly (the relapse-reduction pharmacotherapy acamprosate-and-naltrexone with their modest-but-real effect sizes and their adherence-and-service-context dependencies, disulfiram's place in selected supervised contexts, the topiramate-and-gabapentin off-label lines for specific profiles) and the service model that works (the detox-as-bridge-not-destination principle, the integrated liver-and-psychiatry-and-social clinics, the the Wernicke prophylaxis protocols, one of medicine's great cheap-save-the-brain failures) - [[gastrointestinal/liver-disease]], [[nervous-system/dementia-neurodegeneration]]; opioids: the agonist-maintenance gold standard (the methadone-and-buprenorphine-or-buprenorphine-naloxone evidence for mortality reduction roughly halving all-cause death with treatment retention as the variable that matters, the take-home-dose and observed-supervision policy debates, the slow-taper-if-choice-not-coercion rule and the methadone-QT-and-interaction-and-accumulation pharmacology) alongside the pain-prescription era's twin lessons (the prescribing-guidelines-and-monitoring-and-tapering-without-abandonment evidence - patients forced off opioids die of overdose and suicide, the 'caution without cruelty' synthesis) - [[surgery/anaesthesia-pain]], [[pharmacology/adverse-reactions]]; stimulants: cocaine-and-methamphetamine (the absence of licensed pharmacotherapy stated plainly, contingency-management as the effective treatment, the psychosis-differential and the cardiovascular-and-vasospastic complications and the dental-and-nutrition rehabilitation), cannabis with the honest risk ledger (the cannabis-maybe-psychosis debate resolved as real-but-modest effect modified by potency, frequency and genetic vulnerability, the cannabis-motivation-reading kept contextual, the hyperemesis and cannabinoid-hyperemesis-syndrome recognition, and the high-potency-product epidemiology) - [[psychiatry/psychotic-disorders]], [[genetics/common-disease-genetics]]; nicotine: the least-discussed legal addictant and the biggest mortality sum (the varenicline's receptor partial-agonism and its neuropsychiatric-signal re-analysis and the NRT combination patches-plus-fast-escape, the e-cigarette harm-reduction argument with its honest uncertainty about long-term effects and its youth-uptake trade-off, and the clinical setting's own failure rate - smokers admitted to hospital who are not offered nicotine replacement are denied the cheapest effective intervention in medicine) - [[public-health/prevention-promotion]], [[respiratory/asthma-copd]], [[pharmacology/autonomic-drugs]].**
+All drugs that cause dependence increase dopamine release in the **mesolimbic reward pathway**, from the ventral tegmental area to the nucleus accumbens. This system normally signals that something is rewarding and worth repeating.
+
+::: theorem Neuroadaptation drives dependence {#thm-neuroadaptation}
+Repeated exposure to a substance produces adaptive changes in the brain that oppose its effects. These changes cause **tolerance** while the drug is present and **withdrawal** when it is removed, shift motivation from seeking pleasure to avoiding distress, and strengthen learned associations between cues and use. The result is compulsive use that persists despite harm.
 :::
 
-## Cross-currents
-
-::: definition Comorbidity, pregnancy and systems {#def-comorbidity}
-**Dual diagnosis is the norm not the exception: substance use co-occurs with psychosis, mood, personality and ADHD at rates that make sequential treatment a category error (the self-medication hypothesis in its moderate form, the shared-vulnerability genetics, the ADHD-to-substance-disorder trajectory and its stimulant-treatment question answered cautiously toward specialist-prescribed treatment, and the personality-disorder-substance programs where DBT adds benefit), with integrated-dual-disorder teams the intervention the trials support; pregnancy and families: alcohol-in-pregnancy as the leading preventable cause of intellectual disability (the FASD pattern recognition, the non-judgemental enquiry that actually reaches women, the safe-reduction-conversation versus the abstinence-only script that hides drinking, the neurodevelopmental-child interface and the safeguarding proportionality debate), continued opioid maintenance in pregnancy with neonatal-abstinence planning as the evidence-based choice against the relapse-and-trauma alternative, the breastfeeding-and-maintenance-medications arithmetic, and the family-support and infant-monitoring pathways that decide whether the child's outcome tracks the mother's recovery - [[obstetrics-gynaecology/pregnancy-complications]], [[paediatrics/neurodevelopment]], [[paediatrics/safeguarding]]; the pharmacology of the system: the naloxone-and-Drug Consumption Room evidence (overdose mortality falls where supervised consumption exists, the 'permitting death' objection answered by the actual data), the opioid-agonist-in-prison-transition literature (the release-week overdose-death spike and methadone-and-buprenorphine initiation as its remedy, with the custodial-medicine workforce reality), and the structural determinants the addiction field cannot prescribe around (the deprivation-and- despair-drug-mortality series, the housing-first programmes' substance-outcomes, and the stigma itself as a treatment-barrier measurable in attendance rates) - [[public-health/determinants-inequalities]], [[medical-ethics-law/justice-resources]]; and the clinician's own vulnerabilities - the healthcare-worker-addiction pathway (the diversion-access patterns, the impaired-colleague-policy architecture balancing patient safety and physician recovery with the physicians'-health-programme outcome data), the iatrogenic-dependence we create ourselves (the benzodiazepine-and-Z-drug-and-gabapentinoid and opioid prescribing drift audited at population level), and the moral-therapy reflex to resist (the language discipline - person-first phrasing, no 'difficult addict', because stigma reduces help-seeking and we are the help) - [[clinical-skills/patient-safety]], [[pharmacology/drug-development-prescribing]].**
+::: proof
+The brain responds to a persistent drug effect by adjusting in the opposite direction. Alcohol, for example, enhances inhibitory GABA-A receptor function and inhibits excitatory NMDA glutamate receptors. With chronic drinking, GABA-A receptors become less sensitive and NMDA receptors are up-regulated. When alcohol is suddenly removed, the brain is left in an over-excited state: tremor, anxiety, sweating, tachycardia and, at worst, seizures and delirium. Opioids similarly suppress the noradrenergic locus coeruleus, which adapts by increasing its activity, so stopping opioids produces a noradrenergic surge with agitation, sweating, diarrhoea and dilated pupils. At the same time, cues associated with drug use (places, people, paraphernalia) come to trigger dopamine release and craving, through learning in the reward circuit and the prefrontal cortex that regulates it. Over time, use is driven less by pleasure and more by relief of withdrawal and craving. This explains why relapse is common long after withdrawal has ended, and why treatment must address cues, coping and the person's circumstances as well as the physical dependence.
 :::
 
-::: example The ED discharge that could have been {#ex-opioid-ed}
-A 29-year-old is revived from an opioid overdose with naloxone, refuses 'rehab', and wants to leave; he uses heroin daily and sometimes cocaine; he has a two-year-old at home.
+## Alcohol
+
+### Measuring alcohol: units
+
+In the UK, one **unit** is 10 mL (about 8 g) of pure ethanol. The number of units in a drink is:
+
+$$
+\text{units} = \frac{\text{volume (mL)} \times \text{ABV (\%)}}{1000}
+$$ {#eq-units}
+
+where ABV is the alcohol by volume. A pint (568 mL) of 5% beer contains $568 \times 5/1000 = 2.84$ units; a 750 mL bottle of 13% wine contains 9.75 units.
+
+The UK Chief Medical Officers' low-risk guideline (2016) advises that, to keep health risks low, men and women should not regularly drink more than **14 units a week**, spread over three or more days, with several drink-free days. There is no completely safe level.
+
+::: example Taking an alcohol history {#ex-units}
+Mr Patrick Doyle, 49, says he "only has a few drinks". On questioning, he drinks four pints of 5% lager every weekday evening and a 750 mL bottle of 13% wine on each of Saturday and Sunday. Calculate his weekly units and comment.
+
 ::: solution
-**Overdose-Discharge-Turning-Point ([[#def-dependence]], [[#def-substances]], [[emergency-critical-care/resuscitation]]): the physiology window - post-naloxone precipitated withdrawal is the worst possible moment for consent and the best moment for treatment (the 'recovery position and airway and observation' basics, the naloxone-infusion-or-repeat-dose question for long-acting or potent synthetic exposure with the unknown-supply caveat), so the first task is not a lecture but making him physically normal (the comfort medications and the honest statement that we can start treatment that stops withdrawal AND treats the addiction, the same medication, today, here) - [[pharmacology/dosing-principles]]; the offer that reduces death - same-day buprenorphine-or-low-dose-methadone initiation with the take-home naloxone kit and the naloxone-training of any using contact he'll allow, the harm-reduction package (the never-use-alone rule, the tolerance-loss-after-any-abstinence-period teaching, the sterile-equipment and the testing services, the overdose-prevention-centre referral), and the assertive follow-up (the 24-72-hour contact, the same-day-specialist-access when it exists, and the appointment he can actually get to) - [[infectious-diseases/healthcare-infections]]; the child - the safeguarding conversation done as support-not-threat framing (the two-year-old's safety plan discussed openly, the children's-act-referral duties known and proportionate, the family-network strengths recorded, the domestic-abuse screen done because overdose presentations carry it) - [[paediatrics/safeguarding]], [[clinical-skills/patient-safety]]; and the capacity-and-refusal edge - he can refuse treatment after the naloxone wears off and he is decision-capable (the intoxication-versus-incapacity line drawn correctly in both directions), which is exactly why the offer must be irresistible the first time: repeat the offer at every attendance without moralising, because mortality data says the average overdose-death patient had multiple prior contacts, and each contact was a statistical chance to change the trajectory - [[medical-ethics-law/consent-capacity]], [[clinical-skills/communication]].**
+**Weekdays.** Each pint is 2.84 units, so four pints are $4 \times 2.84 = 11.36$ units; over five days, $5 \times 11.36 = 56.8$ units.
+
+**Weekend.** Each bottle of wine is 9.75 units; two bottles are 19.5 units.
+
+**Total.** $56.8 + 19.5 = 76.3$ units a week, more than five times the low-risk guideline of 14 units.
+
+**Comment.** "A few drinks" is a common understatement, usually not deliberate. Asking about the type, size and strength of drinks and the pattern over a typical week gives an accurate figure. At this level he is at high risk of liver disease, hypertension, atrial fibrillation, several cancers and dependence. The next step is to screen for dependence and harm, using AUDIT and questions about withdrawal symptoms and morning drinking.
 :::
 :::
 
-::: example The wine every night {#ex-alcohol-older}
-A retired 66-year-old surgeon's wife reports 'two glasses most nights and more at conferences'; he has morning tremor, two falls, new AF, and 'my memory is fine thanks'; his GP calls it age.
+### Screening and brief intervention
+
+The **AUDIT** (Alcohol Use Disorders Identification Test) is a 10-item WHO questionnaire scored 0–40. In UK practice, a score of 8–15 suggests increasing risk, 16–19 higher risk, and 20 or more possible dependence. The first three items form **AUDIT-C**, a quick screen scored 0–12, with 5 or more usually prompting the full AUDIT.
+
+For people drinking above low-risk levels without dependence, a **brief intervention** of five to ten minutes in primary care or hospital (feedback on risk, advice, and support to set goals) reduces drinking. People with dependence need specialist assessment.
+
+### Alcohol withdrawal
+
+In a person who is dependent, stopping or sharply reducing alcohol causes withdrawal. Its time course matters for safe care.
+
+| Time since last drink | Typical features |
+|---|---|
+| 6–12 hours | Tremor, sweating, anxiety, nausea, tachycardia, insomnia, craving |
+| 12–48 hours | Withdrawal seizures (generalised) may occur; transient hallucinations, often visual |
+| 48–72 hours (can be later) | **Delirium tremens**: confusion, disorientation, vivid hallucinations, severe autonomic overactivity (fever, tachycardia, hypertension), which can be fatal |
+
+Withdrawal is managed medically. **Benzodiazepines** (for example chlordiazepoxide) are the main treatment; they act on the same GABA-A receptors and prevent seizures and delirium. In hospital, NICE guidance (CG100) supports a **symptom-triggered** approach, in which doses are given according to scores on a structured scale such as the **CIWA-Ar** (Clinical Institute Withdrawal Assessment for Alcohol, revised), rather than on a fixed schedule; fixed reducing regimens are used in other settings. Doses and regimens follow local protocols and the BNF.
+
+Planned community withdrawal is suitable for many people. Admission is advised for those at higher risk: previous withdrawal seizures or delirium tremens, very high intake, serious physical or psychiatric illness, lack of support, or the young and the old.
+
+::: theorem Thiamine before harm {#thm-thiamine}
+People who drink heavily are at risk of **thiamine** (vitamin B1) deficiency because of poor diet, reduced absorption and impaired storage. Thiamine deficiency causes **Wernicke encephalopathy**, an acute and potentially reversible emergency, which can progress to the largely irreversible **Korsakoff syndrome**. The classic triad of confusion, ophthalmoplegia or nystagmus, and ataxia is present in only a minority of cases, so the diagnosis must be suspected readily and treated with parenteral thiamine at high dose.
+:::
+
+Korsakoff syndrome causes a profound inability to form new memories, often with confabulation (filling memory gaps with fabricated accounts given without intent to deceive). Glucose-containing fluids given to a thiamine-deficient person can precipitate Wernicke encephalopathy, so thiamine is given promptly, although treatment of hypoglycaemia must never be delayed.
+
+::: example An older woman found confused {#ex-alcohol-older}
+Mrs Irene Walsh, 72, is brought to the emergency department by her neighbour after being found confused at home. She is unsteady, has nystagmus on lateral gaze, and is thin. Her neighbour says she has drunk "a bottle of sherry a day" since her husband died two years ago and stopped drinking three days ago when she ran out. Her pulse is 118, temperature 37.9 °C, and she is picking at the bedclothes, saying there are insects on them. What is happening and what are the priorities?
+
 ::: solution
-**Older-adult-alcohol-intervention ([[#def-substances]], [[#def-comorbidity]], [[geriatrics-palliative/ageing-frailty]]): the pattern-recognition - late-onset alcohol problems hide under retirement-conference-and-spouse-cover (the morning-drinking and relief-drink signs, the 'nothing has changed' narrative contradicted by the falls-and-AF-and-liver-numbers which are not age but ethanol) - [[cardiovascular/arrhythmias]], [[gastrointestinal/liver-disease]]; the assessment adapted for age - the AUDIT-C-with-age-context reading, the drug-interaction-audit (the hypnotic-and-opioid-and-anticoagulant stacking, the analgesic-liver arithmetic), the cognitive screen that must be done before 'age' is accepted (the alcohol-related-brain-damage and Wernicke-korsakoff early signs versus dementia workup), the nutrition-and-falls-and-incontinence inventory, and the collateral the spouse has been too polite to give the GP - [[nervous-system/dementia-neurodegeneration]], [[geriatrics-palliative/falls]]; the conversation strategy - the motivational approach through the roles he values (the hands-that-operate-and-lecture tremor and cognition framed as function, the 'reduce or stop, here is what happens physiologically' explanation, the spouse-enabling-detection problem addressed with a joint appointment and harm-reduction scripts), the medical bridge (the liver-and-thyroid-and-B12-and-folate-and-platelet-and-MCU workup, the hypertension-and-AF risk reduction argument, the thiamine started), and the treatment plan age-appropriate (the community-psychiatric-and-GP-shared relapse-prevention pharmacotherapy discussion, the peer-options including older-adult mutual help, the psychosocial losses retirement-and-bereavement worked on, and the hospital-admission-and-surgery detox-protocol alert card for his future) - [[pharmacology/patient-variation]], [[clinical-skills/communication]]; and the safety-netting - the withdrawal-seizure risk in this pattern counselled honestly (the never-quietly-stop-in-old-age rule, the medically-supervised reduction plan when stopping), the driving-and-firearms question asked (the older-male-lethal-means epidemiology), and the memory-clinic reframe kept available - [[geriatrics-palliative/polypharmacy]], [[psychiatry/lifespan-psychiatry]].**
+**Two emergencies.** She has features of **Wernicke encephalopathy** (confusion, nystagmus, ataxia in a malnourished heavy drinker) and of **delirium tremens** (confusion, visual hallucinations, tachycardia and fever three days after stopping).
+
+**Priorities.**
+1. Airway, breathing, circulation; check blood glucose immediately and treat hypoglycaemia if present.
+2. Give high-dose **parenteral thiamine** without delay, as part of a vitamin B and C preparation, per local protocol.
+3. Treat withdrawal with a benzodiazepine under close monitoring, recognising that older people are more sensitive to sedation; involve senior help.
+4. Look for other causes of fever and confusion: infection (for example aspiration pneumonia), head injury from falls, hepatic encephalopathy, electrolyte disturbance (sodium, potassium, magnesium, phosphate) and hypoglycaemia.
+5. Monitor for refeeding syndrome when nutrition restarts.
+
+**Later.** Assess cognition after recovery for Korsakoff syndrome; address bereavement and depression; and offer specialist alcohol treatment. Alcohol problems in older people are often missed because they are not asked about.
 :::
 :::
 
-::: example The gabapentin ladder {#ex-gabapentinoid}
-A 48-year-old with back pain and alcohol problems has drifted onto gabapentin 2400mg, diazepam 20mg and tramadol 400mg on three different prescribers' orders; she wants 'something natural instead'.
+### Relapse prevention after withdrawal
+
+Withdrawal is not treatment in itself. Without further support, most people return to drinking. NICE guideline CG115 (2011) recommends psychological interventions (such as CBT-based approaches, behavioural couples therapy and mutual aid groups such as Alcoholics Anonymous or SMART Recovery) and, for moderate and severe dependence, medication after withdrawal:
+
+- **Acamprosate**: thought to modulate glutamate transmission; reduces the risk of relapse to drinking.
+- **Naltrexone**: an opioid receptor antagonist that reduces the rewarding effect of alcohol and craving. It must not be given to people who use or need opioids.
+- **Disulfiram**: blocks aldehyde dehydrogenase, so drinking causes a build-up of acetaldehyde with flushing, nausea, palpitations and hypotension. It works as a deterrent and needs supervision and commitment; reactions can be severe.
+- **Nalmefene** may be used to help people with dependence who do not need immediate withdrawal to reduce consumption (NICE TA325).
+
+## Opioids
+
+Opioids include heroin (diamorphine), prescribed drugs such as morphine, oxycodone, codeine and tramadol, and synthetic opioids such as fentanyl and its analogues, which have increasingly contaminated illicit supply in some countries.
+
+- **Intoxication and overdose**: drowsiness, pinpoint pupils and respiratory depression, the typical triad of overdose. Risk rises with reduced tolerance (after prison release, hospital discharge or detoxification) and with combinations with alcohol, benzodiazepines or gabapentinoids.
+- **Withdrawal**: craving, anxiety, yawning, sweating, runny nose and eyes, dilated pupils, gooseflesh, abdominal cramps, diarrhoea and muscle aches. For heroin it starts within about 6–12 hours, peaks at 2–3 days and subsides over about a week. It is very unpleasant but, unlike alcohol withdrawal, rarely dangerous in otherwise healthy adults, although dehydration and loss of tolerance are real risks.
+
+### Treatment
+
+::: definition Opioid substitution treatment and harm reduction {#def-substances}
+**Opioid substitution treatment** (OST, also called opioid agonist treatment) replaces illicit opioid use with a prescribed, long-acting opioid taken under supervision at first: **methadone** (a full agonist taken as a daily oral liquid) or **buprenorphine** (a partial agonist taken daily under the tongue, or as a weekly or monthly prolonged-release injection). OST reduces illicit opioid use, overdose deaths, blood-borne virus transmission and crime, and keeps people in treatment.
+
+**Harm reduction** reduces the damage caused by drug use without requiring abstinence: needle and syringe programmes, testing and vaccination for hepatitis B, hepatitis C and HIV, and the supply of **take-home naloxone** to people who use opioids and their families so that overdoses can be reversed.
+:::
+
+Important safety points for OST, which is prescribed under specialist protocols:
+
+- **Methadone** has a long and variable half-life, so it accumulates over the first days; deaths are concentrated in the induction period. It prolongs the QT interval, and many drugs interact with it.
+- **Buprenorphine**, as a partial agonist with high receptor affinity, has a ceiling on respiratory depression, making it safer in overdose. If it is started while a full agonist is still present, it can displace it and cause **precipitated withdrawal**, so it is started when the person is already in mild withdrawal.
+- Leaving treatment is a high-risk time. Tolerance falls quickly, so a return to previous doses of illicit opioids can be fatal.
+
+::: example An overdose in the emergency department {#ex-opioid-ed}
+Mr Jamal Hussain, 38, is brought in after being found unresponsive. His respiratory rate is 6 per minute, pupils are pinpoint and oxygen saturation is 84%. A friend says he was released from prison yesterday. Outline management.
+
 ::: solution
-Poly-drift-reconciliation ([[#def-dependence]], [[#def-comorbidity]], [[geriatrics-palliative/polypharmacy]]): the pattern - the three-prescriber-drift (the sedative-opioid-gabapentinoid stack with its respiratory-depression-synergy evidence and its own dependence physiology, the 'natural' request as often a readiness signal for change worth honouring not debating), and the reconciliation that lists what each drug is for and whether it still works (the back-pain function audit, the alcohol quantity honestly counted against the diazepam, the tramadol's dual-dependence-and-seizure-and-serotonin texture) - [[musculoskeletal/back-pain]], [[psychiatry/mood-disorders]]; the taper architecture - one change at a time in agreed order (the opioid or benzodiazepine first by harm rank and her priorities, the gabapentinoid taper-with-misuse-drift-awareness and the slow-reduce-not-abrupt rule with its withdrawal-seizure-anxiety rebound caveats), the nurse-led or pharmacy-supported schedule with the bad-week step-back plan, and the substitution trap avoided (no swapping one sedative for another to keep peace) - [[pharmacology/dosing-principles]], [[clinical-skills/records-handover]]; the alcohol conversation held alongside not after (the liver-and-MCU-and-folate-and-thiamine workup, the reduction-or-stop plan with withdrawal-risk staging by quantity and history, the mutual-help and older-adult-programme options, and the 'the tablets were masking the drink problem' explanation offered without blame), plus the real analgesia plan the stack was standing in for (the exercise-and-psychological-therapy-and-sleep programme with its chronic-pain evidence, the topical and non-sedative options, the intervention-and-work-rehabilitation referral where indicated) - [[gastrointestinal/liver-disease]], [[psychiatry/self-harm-suicide-prevention]]; and the safety layer - the take-home-naloxone offer even without opioids (the sedative-stack respiratory risk), the driving advice with the morning-after rule, the firearms-and-cannabis-and-OTC-hypnotics audit, and the single-prescriber rule written into the record so the drift cannot regrow - [[emergency-critical-care/poisoning]], [[clinical-skills/patient-safety]].**
+**Immediate.** Open the airway, give oxygen and support breathing with bag-valve-mask ventilation. Give **naloxone**, titrating intravenously or giving intramuscularly according to local protocol, aiming to restore adequate breathing rather than full consciousness (which can precipitate severe withdrawal and agitation).
+
+**Observe.** Naloxone's effect is shorter than that of many opioids, so respiratory depression can return; observe him, and repeat doses or use an infusion if needed. Long-acting opioids such as methadone need longer observation.
+
+**Look for other problems.** Check glucose, look for co-ingested drugs (paracetamol level, alcohol, benzodiazepines), aspiration, hypothermia, and compartment syndrome or rhabdomyolysis from lying still.
+
+**Understand the risk.** Release from prison is a period of very high overdose risk because tolerance has fallen.
+
+**Before he leaves.** Offer referral to drug treatment services (ideally with rapid access to OST), take-home naloxone with training for him and his friend, testing for blood-borne viruses, and harm-reduction advice. Treat him with respect; a non-judgemental approach makes it more likely he will return.
 :::
 :::
 
-::: example The cannabis-psychosis query {#ex-cannabis-psychosis}
-A 19-year-old daily high-potency-hash user presents with 3 weeks of paranoia and hears 'the neighbours talk about me'; his parents demand to know 'is it weed or schizophrenia?'
+## Other substances
+
+| Substance | Key effects and risks | Management principles |
+|---|---|---|
+| Cannabis | Relaxation, altered perception; anxiety and paranoia; with heavy, high-potency use, psychosis and dependence; cannabinoid hyperemesis syndrome | Psychosocial support; treat psychosis and comorbidity |
+| Stimulants (cocaine, amphetamines) | Euphoria, energy, anxiety, paranoia, psychosis; hypertension, stroke, myocardial infarction, arrhythmia; low mood and exhaustion after use | Supportive care in intoxication; benzodiazepines for agitation; no licensed substitute; psychosocial treatment |
+| Benzodiazepines, Z-drugs | Sedation, memory impairment, falls; dependence; dangerous with opioids and alcohol | Withdrawal can cause seizures; slow supervised reduction |
+| Gabapentinoids (pregabalin, gabapentin) | Sedation, euphoria at high doses; respiratory depression with opioids | Controlled drugs in the UK since 2019; gradual reduction |
+| GHB / GBL | Rapid sedation, coma; severe and dangerous withdrawal | Withdrawal is a medical emergency needing specialist care |
+| Synthetic cannabinoid receptor agonists | Unpredictable and potent; agitation, psychosis, seizures, cardiac effects | Supportive care |
+| Tobacco (nicotine) | Dependence; harm comes mainly from smoke | Behavioural support plus varenicline, nicotine replacement, cytisine or e-cigarettes |
+
+On tobacco, NICE guidance (NG209, 2021) supports the use of nicotine-containing e-cigarettes as one option for adults who want to stop smoking, with advice that they are substantially less harmful than smoking but not risk-free. Varenicline returned to NHS stop smoking services in England in 2024 after its withdrawal in 2021 over impurity concerns. Combining medication with behavioural support gives the best chance of quitting.
+
+::: example A cannabis question {#ex-cannabis-psychosis}
+Mr Liam O'Connor, 17, has smoked high-potency cannabis daily for two years. His parents bring him to the GP because he has become suspicious, believing people on social media are talking about him. He asks, "Isn't cannabis natural and safe?" How should the GP respond?
+
 ::: solution
-**Cannabis-versus-first-episode-psychosis ([[#def-substances]], [[#def-comorbidity]], [[psychiatry/psychotic-disorders]]): the honest answer - both questions are live and often simultaneous (the cannabis-induced-psychotic-disorder diagnosis made by abstinence-and-time - symptoms resolving within weeks of clear tox screen versus persistence beyond a month pushing toward a primary psychotic disorder - and the comorbidity is the modal outcome, cannabis users' psychosis rates elevated and psychosis patients' cannabis use rates high) - [[psychiatry/psychiatric-assessment]]; the assessment - timeline (use trajectory versus symptom onset; potency and synthetic-cannabinoid exposure which behaves worse), family history and premorbid function and the developmental and school-and-trauma context, tox screen and organic exclusion (the delirium, autoimmune and endocrine mimics), the insight-and-risk features (the command phenomena and the threat-responding appraisal that drives violence risk more than diagnosis) - [[nervous-system/neuroinflammation]], [[clinical-skills/laboratory-tests]]; the management now - early-intervention-team referral within days (the duration-of-untreated-psychosis logic), antipsychotic offered with the metabolic-and-adherence discussion, the cannabis conversation done motivationally with the relapse-and-rehospitalisation data presented as his leverage (the abstinence-or-at least long-interval argument graded honestly, and the dual-diagnosis service that can hold both), the family work (the expressed-emotion reduction evidence and the parents' terror about 'schizophrenia' answered with staged-prognosis honesty) - [[psychiatry/lifespan-psychiatry]], [[clinical-skills/communication]]; and the long view - the genetic-vulnerability counselling question answered with real numbers not mystique (the twin-and-family-risk figures and the polygenic-score futures read cautiously), the driving-and-cannabis-legality-and-insurance conversation per jurisdiction, and the follow-through at 3 and 12 months because the transition-risk window is years not weeks - [[genetics/common-disease-genetics]], [[public-health/prevention-promotion]].**
+**Assess.** Explore the beliefs (are they fixed? are there hallucinations?), mood, suicidal thoughts and functioning. Paranoid ideas in a regular cannabis user may be transient intoxication effects or the start of a psychotic disorder. A suspected first episode of psychosis needs urgent referral to the early intervention in psychosis service.
+
+**Answer honestly.** Being natural does not make a substance safe. Regular use of high-potency cannabis, particularly starting in adolescence, is associated with an increased risk of psychosis, and continued use after a psychotic episode is linked to more relapses. Cannabis dependence occurs, with withdrawal symptoms of irritability, poor sleep and low appetite.
+
+**Engage, don't lecture.** Use a motivational approach: ask what he gets from cannabis and what concerns him; respect his autonomy; offer support to cut down or stop through young people's drug services. Involve his parents with his agreement, and agree a plan to review soon.
 :::
+:::
+
+## Co-occurring conditions
+
+::: definition Co-occurring mental illness and substance use {#def-comorbidity}
+**Co-occurring conditions** (sometimes called dual diagnosis) means a mental disorder and a substance use disorder in the same person. The relationship runs both ways: substances can cause or worsen mental symptoms (alcohol and depression, stimulants and psychosis), and mental disorders lead people to use substances to cope (alcohol for anxiety, cannabis for distress). Both should be treated at the same time by services that work together, rather than one service waiting for the other problem to resolve first.
+:::
+
+People with co-occurring conditions have higher rates of suicide, physical illness, homelessness and contact with the criminal justice system. NICE guidance (NG58, 2016) emphasises that people should not be excluded from mental health services because of substance use.
+
+::: example A painkiller that became a problem {#ex-gabapentinoid}
+Ms Rachel Green, 44, has chronic back pain and takes prescribed pregabalin, codeine and, recently, diazepam bought online. She asks her GP for an early prescription because she "ran out". She seems drowsy. What are the concerns, and how should the GP approach this?
+
+::: solution
+**Concerns.** Combining a gabapentinoid, an opioid and a benzodiazepine sharply increases the risk of fatal respiratory depression. Early requests, drowsiness and buying medicines online suggest problematic use and possible dependence. Illicitly bought "diazepam" may be counterfeit and contain more potent benzodiazepines.
+
+**Approach.** Speak with her openly and without blame. Assess her pain, mood, sleep and suicidal thoughts, and ask about all substances, including alcohol. Do not suddenly stop all medicines, as withdrawal from benzodiazepines or gabapentinoids can cause seizures.
+
+**Plan.** Agree a single prescriber and pharmacy, with smaller, more frequent supplies; plan gradual reduction of the combination, prioritising safety; offer take-home naloxone; refer to pain services for a non-drug-centred plan (physical activity, psychological approaches); and involve drug services if dependence is confirmed. Review regularly. Record the controlled-drug decisions clearly.
+:::
+:::
+
+### The clock of alcohol elimination
+
+Unlike most drugs, ethanol is eliminated at a roughly constant rate once blood levels are moderate, because the enzyme alcohol dehydrogenase is saturated (zero-order kinetics). A typical rate is about 15 mg per 100 mL per hour, though this varies widely, and it is faster in many people who drink heavily. This explains why someone can still be over the legal driving limit the morning after heavy drinking.
+
+::: widget plot
+f: c - 15*x
+x: 0, 20
+y: 0, 300
+sliders: c=200:50:300:10
+hlines: 80
+labels: \text{blood alcohol (mg/100 mL)}
+caption: A simplified zero-order elimination model: blood alcohol concentration falls by about 15 mg/100 mL each hour (illustrative average; real rates vary considerably). The horizontal line marks 80 mg/100 mL, the legal driving limit in England and Wales (Scotland's limit is lower, at 50). Starting from 200 mg/100 mL at midnight, the level would not fall below 80 until about 8 a.m. Sleep, coffee and showers do not speed this up.
+:::
+
+::: warning Do not give naltrexone to someone taking opioids
+Naltrexone blocks opioid receptors. In a person who is dependent on opioids, it precipitates sudden severe withdrawal, and it also blocks the effect of opioid painkillers. Before prescribing it for alcohol dependence, check carefully for any opioid use, including prescribed codeine or tramadol and OST, and warn the person that opioid pain relief will not work while they take it. Equally, after stopping naltrexone, opioid sensitivity may be increased.
 :::
 
 ::: quiz
-The setting in which abrupt withdrawal carries a genuine risk of death is:
-- [x] Heavy prolonged alcohol or benzodiazepine use
-- [ ] Daily cannabis use
-- [ ] Cocaine binge ending
-- [ ] Nicotine cessation
+A man drinking a bottle of vodka a day is admitted for elective surgery and has his last drink the evening before. About 36 hours later he has a generalised seizure. Which statement is correct?
+- [ ] Withdrawal seizures occur only after five days, so another cause is more likely.
+- [x] Seizures typically occur 12–48 hours after the last drink, and this pattern fits alcohol withdrawal.
+- [ ] Alcohol withdrawal is best prevented by giving him small amounts of alcohol.
+- [ ] Benzodiazepines are contraindicated because of the risk of dependence.
 ::: solution
-**Alcohol and sedative-hypnotic withdrawal can kill (seizures, delirium tremens, autonomic collapse) and needs risk assessment and often pharmacological cover; opioid withdrawal is agonising but rarely fatal; cannabis, stimulant and nicotine cessation are dangerous only to comfort and mood ([[#def-dependence]]).**
+Withdrawal seizures typically occur 12–48 hours after the last drink. Other causes (head injury, hypoglycaemia, electrolyte disturbance) must still be excluded. Benzodiazepines are the treatment of choice for preventing and treating withdrawal, and every heavy drinker admitted to hospital should be screened for dependence so withdrawal can be anticipated.
 :::
 :::
 
-::: widget plot
-f: 8*exp(-((x-1.5)^2)/0.8); 95*exp(-x/3)+5; 50*exp(-x/8)+5; 60*exp(-x/1.2)+4; 35*exp(-x/6)+10; 30*exp(-x/40)+18
-x: 0.01, 70
-y: 0, 100
-labels: \text{days since last drink/dose},\ relative\ \%\text{seizure risk (alcohol)};\ \text{autonomic withdrawal peak};\ \text{delirium tremens window};\ \text{opioid withdrawal peak (heroin)};\ \text{craving \& insomnia (stimulant crash)};\ \text{nicotine irritability curve}
-caption: Withdrawal clocks differ ([[#def-dependence]]): alcohol seizures peak at 24-48 hours with delirium tremens to day five - the reason detox is medical; opioid withdrawal peaks days 2-4 and fades; stimulant and nicotine curves are miserable but survivable. Matching management to the clock prevents both undertreated agony and unnecessary admissions ([[emergency-critical-care/poisoning]]).
+::: history
+The idea of alcoholism as a disease was argued by Benjamin Rush in the United States and Thomas Trotter in Britain around 1800. Carl Wernicke described the encephalopathy that bears his name in 1881, and Sergei Korsakoff the amnestic syndrome in the late 1880s. Alcoholics Anonymous was founded in 1935 by Bill Wilson and Bob Smith. Richard Doll and Austin Bradford Hill's studies in the 1950s established smoking as a cause of lung cancer. In 1965 Vincent Dole and Marie Nyswander in New York reported methadone maintenance for heroin dependence. In 1976 Griffith Edwards and Milton Gross described the **alcohol dependence syndrome**, the basis of modern ICD criteria. The UK response to HIV in the 1980s brought needle exchange and established harm reduction as public health policy.
 :::
 
 ## Where this leads
 
-Withdrawal emergencies in [[emergency-critical-care/poisoning]] and [[emergency-critical-care/resuscitation]], the pain-prescription interface in [[surgery/anaesthesia-pain]], the psychosis-cannabis interface in [[psychiatry/psychotic-disorders]], the family and safeguarding layer in [[paediatrics/safeguarding]] and [[paediatrics/neurodevelopment]], and the population levers in [[public-health/prevention-promotion]].
-
-::: history
-**Addiction treatment history is a pendulum between punishment and medicine: the 19th-century patent-medicine and opiate-and-liqueur era that created the first 'inebriate asylums' and the early temperance cure (the the Morrison's-pill and Dover's-powder advertisements and the post-Civil-War 'morphine menace' panic), the 1914 Harrison Act that converted medical supply into criminal policy in the US and the UK's analogous Defence-of-the-Realm-regulations-era, and the resulting century of bifurcation between the British medical-treatment tradition and the American prohibition-and-punishment tradition (the 1926 Rolleston report endorsing maintenance in selected cases versus the 1919-1960s American narcotics-farm-and-legalism trajectory, and the 1961 Single Convention era) - [[pharmacology/drug-development-prescribing]], [[public-health/health-systems-economics]]; the harm-reduction birth - the Amsterdam and Liverpool needle-exchange beginnings (the Mersey Harm Reduction model and the Dutch heroin-assisted treatment origins) in the early AIDS era, the methadone-maintenance tradition from Dole and Nyswander's 1960s work (the Dole-and-Nyswander maintenance logic and the New York state programme battles), the naloxone take-home and supervised-consumption movements (the 2016 Scotland-infection-cluster-driven acceleration as the saddest of the origin stories), and the Portuguese decriminalisation-and-health-investment model as the most-cited natural experiment; the neuroscience reframing - the reward-cascade and incentive-salience models of the 1990s-2000s (the Koob-allostasis-and-autonomy-impairment accounts and the criticism that 'brain disease' framing can understate agency and social cause), and the epigenetics-and-early-adversity work on vulnerability; and the policy turn of the 2010s-20s - the US opioid-mortality crisis and the OxyContin-litigation reckoning (the Purdue and prescribing-guidelines-and-abandonment-harms synthesis), the 'despair deaths' epidemiology, the buprenorphine-in-primary-care and ED-initiation trials with their mortality signal, and the drug-checking-and-xylazine-era arguments that keep re-opening the same ethics of realism versus permissiveness - [[public-health/determinants-inequalities]], [[public-health/global-health]].**
-:::
+Alcohol-related liver disease is covered in [[gastrointestinal/liver-disease]]; poisoning and overdose in [[emergency-critical-care/poisoning]]; drug dependence and adverse effects in [[pharmacology/adverse-reactions]]; and alcohol and tobacco policy in [[public-health/prevention-promotion]].
 
 ::: summary
-- Substance use disorders are graded brain-learning disorders; hazardous use is where most treatable harm sits, so screen universally and briefly.
-- Withdrawal danger is substance-specific: alcohol and sedatives kill, opioids and stimulants do not - manage the first medically, reassure through the others.
-- Agonist maintenance (methadone, buprenorphine) and naltrexone/acamprosate for alcohol reduce mortality and relapse; withholding them is a clinical error, not a moral preference.
-- The most effective psychosocial treatments (motivational interviewing, contingency management, integrated dual-diagnosis care) work with ambivalence, not against it.
-- Every contact with an overdose or liver presentation is a mortality-window intervention opportunity; naloxone and same-day treatment offers save more than lectures.
-- Stigma is a clinical variable: language, systems and policies reduce or amplify it, and patients can die of the difference.
-:::
-
-::: exercise Read the AUDIT {level=1}
-Score in words and act: (a) weekly drinking to blackout, monthly; (b) daily morning drinks, forgotten weekdays, guilt, one black-out injury; (c) 6 units nightly since bereavement, no dependence signs; (d) 14 units weekly spread evenly, hypertension rising.
-::: solution
-**AUDIT-in-words-and-actions ([[#def-dependence]], [[#def-substances]]): (a) - hazardous-to-harmful with binge pattern (the brief-intervention evidence - a few minutes of feedback works at this stage, the frequency-and-context plan, and the re-screen at review because brief interventions are a conversation not a verdict) - [[public-health/prevention-promotion]]; (b) - dependence pattern (the morning-and-guilt-and-injury markers, the withdrawal-risk assessment for medically-supervised reduction, the liver-and-FBC-MCU-and-sodium workup, the treatment offer with pharmacotherapy discussion and specialist referral, and the injury-and-driving-and-work-at-height safety questions asked) - [[gastrointestinal/liver-disease]], [[geriatrics-palliative/falls]]; (c) - bereavement-drinking without dependence yet (the grief-versus-depression screen with the watchful-support-and-alternative-structure plan, the review interval that catches escalation, and the 'alcohol is a slow antidepressant that stops working' education taken seriously); (d) - the dose-response zone (the cancer-and-hypertension absolute-risk numbers individualised for persuasion, the reduction target set by her not by the leaflet, the blood-pressure-log feedback loop, and the sleep-and-relationship side-benefits framed as the near-term win) - [[cardiovascular/hypertension]], [[clinical-skills/communication]].**
-:::
-:::
-
-::: exercise Choose the pharmacotherapy {level=2}
-For each, select anti-craving or relapse-prevention medication with monitoring and counselling notes: alcohol disorder wanting to stop, motivated; alcohol disorder on warfarin; opioid use disorder wanting slow exit from methadone; opioid use disorder refusing agonist treatment, high overdose risk; ADHD with stimulant-use history.
-::: solution
-**Addiction-pharmacotherapy ([[#def-substances]], [[pharmacology/patient-variation]]): alcohol-stop-motivated - naltrexone-or-acamprosate with the adherence-and-expectation framing ('reduces the slip-into-binge effect, not the wish'), naltrexone's opioid-contraindication check and the liver-function nuance, acamprosate's renal dosing and TID burden, plus the psychological programme they accompany (the combined-therapy evidence and the mutual-help discussion) - [[psychiatry/self-harm-suicide-prevention]]; alcohol-warfarin - the interaction-and-hepatotoxicity reading favours acamprosate or behavioural-first with INR vigilance as alcohol pattern itself moves bleeding risk (the 'reduce the drink to protect the INR' argument made with the warfarin-and-binge pharmacology stated plainly) - [[blood/thrombosis-anticoagulation]]; methadone-exit-slow - patient-led taper only, small steps with pauses (the withdrawal-and-relapse-overdose arithmetic, the buprenorphine-transfer-with-microdose-option for smoother exit, the naloxone kit and tolerance-loss teaching regardless of stance, and the do-not-destabilise rule with psychosocial supports in place) - [[pharmacology/dosing-principles]]; opioid-disorder-refusing-agonist - naltrexone offered (after detox with the 7-10-day opioid-free interval honesty and the adherence challenge it implies) plus the full harm-reduction kit and assertive re-offer culture (the mortality argument for keeping the agonist door open), and the slow-oral-taper-from-illicit-supply rarely sensible; and ADHD-with-stimulant-history - the controlled-stimulant question answered by the evidence (the methylphenidate-versus-lisdexamfetamide-versus-non-stimulant atomoxetine-and-guanfacine options, the diversion-and-monitoring protocol, the integrated-treatment argument that treating ADHD reduces relapse rather than fuelling it, and the dual-diagnosis-team prescribing with the patient's own recovery story central) - [[psychiatry/lifespan-psychiatry]], [[paediatrics/neurodevelopment]].**
-:::
-:::
-
-::: exercise The hospital admission that spiralled {level=2}
-An inpatient on a surgical ward, unknown opioid dependence, develops agitation, sweating and diarrhoea day 3; the team escalates investigations for 'postoperative sepsis' while the medication history box says 'none'.
-::: solution
-**Withdrawal-recognition-in-hospital ([[#def-dependence]], [[#def-comorbidity]], [[surgery/perioperative-care]]): the pattern - the 'medication history: none' that means 'not asked properly' (the community-pharmacy and GP-and-family collateral and the drug-service records where lawful, the concealed-use reasons stated without accusation), and the CIWA-and-COWS-style scoring that distinguishes withdrawal from sepsis-thyroid-storm-serotonin-toxicity-neuroleptic-malignant-syndrome when the teams learn to use them (the dilating-pupil-and-piloerection-and-runny-nose-and-cramps-without-fever texture versus the sepsis inflammatory markers) - [[emergency-critical-care/acute-assessment]], [[infectious-diseases/fever-sepsis]]; the fix - confirm with the targeted labs (the tox screen caveats, the lactate-and-cultures already running), then treat the physiology: opioid replacement via the addiction team (the maintenance-dose-resumption argument on safety grounds, the lofexidine-and-clonidine-and-supportive adjuncts with the hypotension monitoring), or alcohol-withdrawal protocol if that's the actual substance with its seizure-clock awareness, and the iatrogenic-cascade audit this generates (the unneeded CT, the unnecessary antibiotics, the escalating sedation for 'agitation' that worsens untreated withdrawal) - [[infectious-diseases/stewardship-outbreaks]], [[pharmacology/adverse-reactions]]; and the system repair - the admission medication-history standard with the dependence-questions phrased for honesty (the 'many people find stress helps with drink or pills - what helps you?' style), the nurse-triggered withdrawal-screening charts on high-risk wards, the addiction-liaison nurse access that the mortality audits justify in pounds, and the discharge plan that does not end the episode (the treatment referral made before the bed is released, the prescribing communication to the GP and community pharmacy, and the take-home naloxone conversation for every opioid-sensitive discharge) - [[clinical-skills/records-handover]], [[clinical-skills/patient-safety]].**
-:::
-:::
-
-::: exercise Evaluate the 'addiction is a brain disease' claim {level=3}
-Appraise the neuroscience claim's truth, its clinical and anti-stigma uses, its limitations, and the alternative framings, then state the position you would teach.
-::: solution
-**Brain-disease-appraisal ([[#def-dependence]], [[medical-ethics-law/justice-resources]], [[public-health/determinants-inequalities]]): what is true - the durable circuit adaptations (the incentive-salience and habit loops, the allostasis of stress and reward systems explaining craving and negative-reinforcement, the epigenetic-and-developmental vulnerability findings) with their genuine clinical implications (relapse-during-recovery as neurobiology, not hypocrisy; treatment as long-term-condition management like diabetes with the adherence-and-follow-up reframe) - [[physiology/synapses]], [[physiology/membrane-potentials]]; what is overstated - the 'hijack removes agency' version unsupported by the evidence (the users' choice-structure within constraint - dose-taking under risk, the Vietnam-and-conscription-and-prescribing-epidemiology showing substance use tracks availability and meaning, not only pharmacology, and the recovery studies where purpose-and-connection predict outcomes the lesion-model cannot explain), and the asymmetric blame problem (nicotine and sugar and gambling rarely called brain disease when the circuits overlap); the strategic debates - the anti-stigma promise measured (the brain-disease framing reduces some punitive attitudes and increases pessimism about recovery and biological-essence thinking that feeds self-stigma too), and the policy instrumentalism (medicare-parity and insurance coverage gained with the model; the carceral system surviving it because punishment was never actually contingent on the free-will theory); and the teachable synthesis - disorders of learning and motivation under social conditions, biopsychosocial in the precise sense: the brain records what the environment reinforces, recovery requires biology (pharmacotherapy, time), meaning (roles, relationships) and structure (housing, law, services), and the clinician's job is to offer all three without requiring the patient to win an argument about free will first - [[psychiatry/psychiatric-assessment]], [[public-health/health-systems-economics]].**
-:::
+- Dependence involves impaired control, rising priority of use despite harm, and physiological features (tolerance, withdrawal); harmful use causes damage without dependence.
+- All addictive drugs increase mesolimbic dopamine; neuroadaptation produces tolerance and withdrawal and shifts use towards relief of distress.
+- One UK unit is 10 mL of ethanol; units = volume (mL) × ABV / 1000; the low-risk guideline is 14 units a week.
+- AUDIT and AUDIT-C screen for risky drinking; brief interventions work for non-dependent drinkers.
+- Alcohol withdrawal can cause seizures (12–48 h) and delirium tremens (48–72 h); benzodiazepines are the treatment, ideally symptom-triggered in hospital.
+- Suspect Wernicke encephalopathy readily and give parenteral thiamine.
+- After withdrawal, psychological support plus acamprosate, naltrexone or disulfiram reduce relapse.
+- Opioid overdose causes coma, pinpoint pupils and respiratory depression; naloxone reverses it but may wear off first.
+- Methadone and buprenorphine substitution, needle exchange and take-home naloxone save lives; leaving prison or treatment is a high-risk time.
+- Treat co-occurring mental illness and substance use together, without excluding people from care.
 :::
 
 ## Exercises
 
-::: exercise Order the danger {level=1}
-Which of these withdrawals require medical supervision and why: nightly zolpidem for 3 months after long-term abstinence from alcohol; daily 40 mg diazepam for 8 years; 8 units daily reduced after 40 years of drinking; daily cannabis stopped; heroin stopped after 2 years.
+::: exercise Units in a bottle {level=1 check="28"}
+How many UK units are in a 700 mL bottle of 40% vodka?
 ::: solution
-**Danger-triage-of-withdrawal ([[#def-dependence]]): zolpidem-3-months - low risk but rebound insomnia and anxiety, brief taper and sleep plan (the Z-drug-harm profile read honestly versus its short-term niche), 40mg-diazepam-8-years - genuine seizure risk: slow-medical taper, months not weeks, no abrupt stops ever (the nurse-led-taper-clinic model and the patient-paced rule), alcohol-8-units-after-decades - the most dangerous: symptom-scale-supervised withdrawal with thiamine and the complicated-withdrawal criteria for admission (the prior-seizure-and-delirium history mandating inpatient care), cannabis - no medical danger; irritability-insomnia-anorexia-craving over 1-2 weeks, the mood-crash-and-depression-unmasking screened not medicated, and heroin - miserable-not-fatal (the lofexidine-clonidine-and-supportive option or agonist-induction, the fluids-diarrhoea-cramps-and-insomnia kit, and the re-initiation-of-maintenance conversation that reduces the recidivism-to-overdose that actually kills), plus the tolerance-loss-death-warning for any period of abstinence - [[emergency-critical-care/poisoning]], [[pharmacology/dosing-principles]].**
+Units $= 700 \times 40/1000 = 28$. A bottle a day is 196 units a week, fourteen times the low-risk guideline.
 :::
 :::
 
-::: exercise Prescribe in pregnancy {level=2}
-A pregnant woman at 12 weeks presents in early withdrawal from heroin after a binge-and-stop; she also smokes 15/day and drinks 'socially'. Sequence the interventions by weeks and risks.
+::: exercise Dependence or harmful use? {level=1}
+A 25-year-old drinks 30 units every Saturday night, has been cautioned by police twice for fighting, but drinks nothing the rest of the week, has no withdrawal symptoms and can stop when he chooses. Classify his pattern and justify.
 ::: solution
-**Pregnant-with-complex-use ([[#def-comorbidity]], [[obstetrics-gynaecology/pregnancy-complications]]): the immediate - stabilise with opioid agonist treatment (the maintenance-continuation evidence against detox-and-fetal-stress episodes; the buprenorphine-versus-methadone initiation question answered by her tolerance and local services with the same-day-coverage urgency), the antenatal-team and infant-neonatal-unit notification as planning not punishment, and the non-judgement frame that determines whether she returns at 20 weeks; the alcohol truth - the honest 'no known safe level, let's stop and I'll support you' conversation (the FASD-prevention-communication that avoids both scare and silence) with the disclosure-support that follows, the midwifery-and-social-work involvement proportionate (the safeguarding threshold explained to her so referral is not ambush), the nutrition-thiamine-folate and the smoking-cessation ladder (the nicotine-replacement-in-pregnancy risk-benefit versus continued 15-a-day arithmetic, the behavioural support programmes' effect sizes and the e-cigarette-harm-reduction conversation held to current-evidence honesty) - [[paediatrics/newborn]], [[public-health/prevention-promotion]]; the trajectory - the joint-antenatal-addiction appointments reduced to her real capacity, the methadone-buprenorphine dose changes in pregnancy (the third-trimester-distribution-shift and the relapse-warning-not-reflex-dose-rise rule), the housing-and-domestic-violence-and-finance screens because these decide outcome more than any prescription, the labour-and-postpartum-plan written early (the breastfeeding decision with the maintenance-therapy and the other-drugs-and-HIV-context arithmetic, the neonatal-abstinence monitoring and the safe-sleep teaching - the co-sleeping-overdose-risk death source), and the social-services-and-maternity-benefits pathway so sobriety has somewhere to live - [[paediatrics/safeguarding]], [[obstetrics-gynaecology/postnatal-period]].**
+Harmful pattern of use (or hazardous drinking): his drinking has caused harm to himself and others (violence, police involvement), but he lacks the features of dependence: no impaired control, no priority over other activities, no tolerance or withdrawal. He would benefit from a brief intervention and discussion of binge drinking risks.
 :::
 :::
 
-::: exercise Manage the impaired colleague {level=2}
-A consultant surgeon is found unsteady intraoperatively; the scrub nurse reports earlier errors. Build the response, the duties and the recovery pathway.
+::: exercise Withdrawal timing {level=1}
+Describe the typical time course of alcohol withdrawal and give the timing of withdrawal seizures and delirium tremens.
 ::: solution
-**Impaired-colleague-response ([[#def-comorbidity]], [[clinical-skills/patient-safety]]): the patient-safety reflex first - stop-the-case-and-escalate per theatre policy (the nurse's duty to speak and the culture that must make speaking survivable, the delegation to a competent surgeon, the incident report and the duty-of-candour consideration for the affected patient), with no covert cover (the 'we'll all quietly never mention it' pattern that the inquiries keep naming as the real failure) - [[surgery/perioperative-care]], [[medical-ethics-law/professionalism-regulation]]; the clinician-as-patient pathway - the occupational-health-and-medical-director route opened compassionately (the healthcare-worker-addiction profile: access-driven substances - opioids and benzodiazepines from the cupboard, alcohol as the hidden majority, stimulants in some specialties), the confidential-and-treatment-preserving alternative to immediate-discipline-only, the fitness-to-practice-and-employer balance with the regulator's public-protection duty stated honestly, and the contract-monitored-practice architecture from the physicians'-health-programme literature (the random testing, the work-restrictions staged back to full practice, the relapse-plan and the 5-year-outcome data that justify the supportive model); and the systemic follow-through - the culture review (the long-hours-and-drinking-rituals and the presenteeism that built this), the team-debrief (the staff who witnessed it carry their own trauma and loyalty conflict), and the substance-services-and-GP re-entry planning - the clinician's own treatment that must not depend on staying undisclosed (the professional-suicide-risk that peaks at disclosure, so the pathway must be both firm and humane) - [[public-health/prevention-promotion]], [[psychiatry/self-harm-suicide-prevention]].**
+Symptoms begin 6–12 hours after the last drink with tremor, sweating, anxiety, nausea and tachycardia. Seizures typically occur 12–48 hours after the last drink. Delirium tremens, with confusion, hallucinations and severe autonomic overactivity, typically begins 48–72 hours after the last drink and can occur later.
 :::
 :::
 
-::: exercise Argue the harm-reduction policy {level=3}
-A coastal town with rising opioid deaths asks you to support: a supervised consumption facility, heroin-assisted treatment for refractory patients, and drug checking. Assess evidence, ethics and political reality for each.
+::: exercise A weekly total {level=2 check="round(10*(3*750*12/1000 + 4*440*4.5/1000))/10"}
+A woman drinks three 750 mL bottles of 12% wine and four 440 mL cans of 4.5% cider a week. Calculate her weekly units to one decimal place.
 ::: solution
-**Three-policies-appraisal ([[#def-dependence]], [[medical-ethics-law/justice-resources]], [[public-health/health-systems-economics]]): supervised consumption - the evidence (no facility-attributed deaths across three decades and dozens of sites, the overdose-reversal and the disposal-and-overdose-call volumes, the gateway-to-treatment-uptake data and the neutrality on crime and public-use outcomes), the ethical frame (the sanctity-versus-salvation tension resolved by the consent-and-harm-reduction tradition - the state may not watch someone die to make a point), and the politics (the NIMBY-management with the data-dashboard transparency and the community-benefit-package negotiation, the licensing-and-planning law and the police-attitude variables, plus the honest statement that this facility alone cannot fix supply and housing); heroin-assisted treatment - the trial evidence for long-refractory patients (the Dutch and German and Swiss randomised programmes showing improved health and social function against optimised oral agonist maintenance, modest crime outcomes, high cost), the clinical-ethics case (the treatment-resistance definition that exists for every other addiction-medicine indication, the structured-dose setting necessity that is the whole therapy), and the feasibility argument (the supervised-administration requirement, the staff-safety design and the refractory-population criteria that make it a last-tier service not a headline); drug checking - the evidence (the xylazine-and-fentanyl-analogue detection changing disposal and use behaviour in the test studies, the linkage-to-services contact rates), the ethics (the information-as-harm-reduction versus the enabling objection answered by the same logic as needle exchange, and the regulatory grey-zone of controlled-substance handling), and the implementation (the fentanyl-test-strip supply, the police-discretion agreements, and the quality standards so the data mean something); and the unifying realism - all three work only inside a funded treatment-and-housing-employment ecosystem (the mortality data from 'supply-only' strategies), the community's grief honoured in the communication, the evaluation planned before opening (mortality, morbidity, treatment-entry, public-order and cost per life-year), and the honest headline: none of these are soft on drugs; they are hard on dying - [[public-health/determinants-inequalities]], [[public-health/global-health]].**
+Wine: $3 \times 750 \times 12/1000 = 27$ units. Cider: $4 \times 440 \times 4.5/1000 = 7.92$ units. Total $= 34.92$, so **34.9** units a week, about two and a half times the low-risk guideline.
+:::
+:::
+
+::: exercise Morning after {level=2 check="(180-80)/15"}
+Using the simplified model in which blood alcohol falls by 15 mg/100 mL per hour, how many hours does it take for a level of 180 mg/100 mL to fall to the 80 mg/100 mL driving limit?
+::: solution
+The fall needed is $180 - 80 = 100$ mg/100 mL. At 15 mg/100 mL per hour this takes $100/15 \approx 6.67$ hours, about 6 hours 40 minutes. Real elimination rates vary, so the only safe advice is not to drive after heavy drinking the night before.
+:::
+:::
+
+::: exercise Choose a relapse-prevention drug {level=2}
+A 52-year-old man has completed alcohol withdrawal. He takes regular co-codamol for knee osteoarthritis and has moderate chronic kidney disease. Discuss the choice between acamprosate, naltrexone and disulfiram.
+::: solution
+Naltrexone is unsuitable while he takes codeine, because it blocks opioid receptors and would precipitate withdrawal or abolish analgesia; his pain management would need to change first. Acamprosate is excreted by the kidneys and is contraindicated or needs caution in renal impairment, depending on severity, so his eGFR must be checked against the BNF. Disulfiram requires commitment and supervision and has cardiovascular and hepatic risks; it is generally a second-line option. The choice depends on his renal function and pain plan, and any drug works best with psychological support. A sensible approach is to review his analgesia (for example non-opioid options suitable for his kidneys and physiotherapy), then consider naltrexone if opioids can be stopped, or acamprosate if renal function permits.
+:::
+:::
+
+::: exercise Methadone induction {level=3}
+Explain why deaths on methadone are concentrated in the first two weeks of treatment, and list three measures that reduce this risk.
+::: solution
+Methadone has a long and variable half-life (often 24 hours or more, but highly variable between people). With repeated daily doses it accumulates until steady state is reached, which can take around five half-lives, so the blood level keeps rising for days after a dose that seemed well tolerated on day one. If doses are increased too quickly, or if the person also uses heroin, alcohol, benzodiazepines or gabapentinoids, respiratory depression can occur, often during sleep. Tolerance may also have been overestimated. Measures: start at a low dose and increase slowly according to specialist protocols; supervised daily consumption in the early weeks; frequent review for sedation; warning the person and family about combining substances; supplying take-home naloxone; and checking the ECG and interacting drugs when indicated.
+:::
+:::
+
+::: exercise A hospital case {level=3}
+A 60-year-old man is admitted with pneumonia. On day 2 he becomes agitated, sweaty and tremulous, with a pulse of 125, and pulls out his cannula. The team suspects delirium due to sepsis. What alternative or additional diagnosis should be considered, what information would confirm it, and how should he be managed?
+::: solution
+Alcohol withdrawal, possibly progressing to delirium tremens, should be considered alongside sepsis-related delirium; both may coexist. Information: a collateral alcohol history from family or GP, the AUDIT, previous admissions or withdrawal, blood tests (raised MCV, GGT, low platelets) and the timing (onset about 36–48 hours after admission, when drinking stopped). Management: treat the pneumonia; assess withdrawal with a structured scale and give benzodiazepines according to local protocol; give parenteral thiamine for possible Wernicke encephalopathy; correct electrolytes including magnesium, potassium and phosphate; nurse in a calm, well-lit environment; and avoid antipsychotics alone, as they lower the seizure threshold and do not treat withdrawal. Every adult admitted to hospital should be asked about alcohol so withdrawal can be anticipated rather than recognised late.
 :::
 :::

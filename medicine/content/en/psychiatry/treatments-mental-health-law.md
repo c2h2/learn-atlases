@@ -1,141 +1,300 @@
-Law is the skeleton psychiatry hangs its ethics on. **Mental health law exists because people can be dangerous to themselves through illness, can lose the capacity to decide, and have historically been confined for convenience and prejudice; the legal frameworks - the Mental Health Act for assessment and compulsory treatment, the Mental Capacity Act for adults who cannot decide, the common law of consent, safeguarding and privacy law - are not obstacles to treatment but treatment-conditions, and using them well is a clinical skill.** This chapter covers the psychological and community treatments psychiatry delivers, the legal frames around them, and the practice of consent and compulsion.
+The earlier chapters described treatments disorder by disorder. This chapter steps back to look at the treatments themselves: the main psychological therapies, the classes of psychiatric drugs and their key safety issues, and the physical treatments such as electroconvulsive therapy. It then describes the legal framework that governs treatment when a person does not or cannot agree to it.
 
-## Treatments and their delivery
+Mental health law is specific to each jurisdiction. This chapter describes the law in England and Wales as an example, because it is the framework this course uses throughout. Scotland and Northern Ireland have their own legislation, and other countries differ again. The aim is to understand the principles, not to provide legal advice.
 
-::: definition Psychological, social and community treatments {#def-therapies}
-**The talking-cure evidence hierarchy stated without mystique: CBT and its third-wave relatives (the transdiagnostic-and-process versions and the ACT-and-mindfulness-and-compassion-focused lines, with their honest effect-size ranges across disorders and the dismantling studies separating specific-from-nonspecific ingredients), the psychodynamic evidence (the short-term manualised-therapy data for depression and personality and the long-term-analyses debates), the interpersonal, behavioural-activation, art-and-music-and-body-oriented therapies (their niches real, their indications specific), the family-intervention programmes for psychosis and bipolar and adolescents with their relapse-rate evidence (the expressed-emotion mechanism), the structured psychological therapies for personality and eating and trauma disorders covered in their chapters, and the delivery-quality variables that trials teach (therapist-competence-and-supervision, adherence-to-model, exposure-actually-happening, and the dropout-and-access equity patterns that determine whether an effective therapy is an effective service) - [[psychiatry/mood-disorders]], [[psychiatry/anxiety-disorders]], [[clinical-skills/communication]]; the social-and-vocational treatments with hard outcomes (the individual-placement-supported-employment model whose competitive-employment rates beat train-and-place decisively, the IPS-adjacent supported-education, the assertive-outreach-and-FACT teams for the frequently-disengaged with their mixed-but-practical evidence, the housing-first-with-clinical-support programmes for the mentally-ill-homeless cohort, the peer-support-workforce and recovery-colleges whose mechanisms - connection, role, hope - the recovery literature names, and the care-and-treatment-reviews-as-therapeutic-occasion-not-bureaucracy principle), and the arts-and-examined-practice of combining medication with psychotherapy (the sequential-and-parallel-treatment evidence, the sequencing-and-attribution pitfalls where patients improve on both and blame or credit whichever they were told); the physical treatments (the ECT-technique-spectrum - the ultrabrief-versus-brief-pulse-and-right-unilateral-versus-bilateral efficacy-versus-amnesia trade-off and its continuation-pharmacotherapy relapse-prevention and the consent-law architecture covering it including the community-treatment-order-ECT provisions and capacity-based decisions when detained, the rTMS-niche evidence and its access-practice gap, the light-therapy-for-seasonal-bipolar-depression protocol, the psychosurgery-remnant realities and the regulation of the newer-neuromodulation-adjacent devices, and the ketamine-and-escetamine-service-design with its monitoring-and-disassociation-management and relapse-after-days caveats) - [[psychiatry/mood-disorders]], [[psychiatry/treatments-mental-health-law]]; and the evidence-implementation spine for all of it (the NICE-and-guideline-versus-individual-judgement practice, the talking-therapies-workforce pipelines and the IAPT-style access-and-outcome data culture with its criticisms, the trial-evidence-versus-service-reality gap where the intervention that works in trials is the one services cannot staff, and the audit-and-feedback loops and clinical-supervision time that are the difference between having and delivering an intervention) - [[public-health/health-systems-economics]].**
+## Psychological therapies
+
+::: definition Psychological therapies {#def-therapies}
+A **psychological therapy** is a structured treatment in which a trained therapist uses a specific model of how problems arise and are maintained to help a person change their thinking, feelings, behaviour or relationships. The main types are:
+
+- **Cognitive behavioural therapy** (CBT): identifies links between thoughts, feelings and behaviour, and uses techniques such as testing unhelpful beliefs, behavioural experiments and exposure. Time-limited (often 12–20 sessions) and goal-focused.
+- **Behavioural activation**: increases rewarding, meaningful activity to break the cycle of withdrawal and low mood in depression.
+- **Interpersonal therapy** (IPT): focuses on current relationships and life events such as grief, role transitions and disputes.
+- **Dialectical behaviour therapy** (DBT) and **mentalisation-based treatment** (MBT): structured therapies for people with borderline personality disorder and recurrent self-harm.
+- **Family therapy and family intervention**: work with the family system, for example in eating disorders in young people and in psychosis.
+- **Psychodynamic psychotherapy**: explores how past experiences and unconscious patterns shape current difficulties; short-term forms are used for depression.
+- **Trauma-focused therapies**: trauma-focused CBT and eye movement desensitisation and reprocessing (EMDR) for PTSD.
 :::
 
-## Compulsion and its limits
+Across many therapies, the strength of the **therapeutic alliance** (the working relationship between therapist and patient) predicts outcome. Psychological therapies have side effects too: some people feel worse temporarily, and poorly delivered therapy can harm.
 
-::: definition The Mental Health Act framework {#def-mha}
-**The Act's moral bargain: compulsory powers exist to treat serious mental disorder when capacity-or-safety make voluntary care impossible, and every power carries a corresponding right - the assessment criteria (the mental-disorder-and-nature-or-degree-or-course test, the appropriate-and-available-requirement, the medical-eligibility plus the least-restriction-and-proportionality principles), the tools (the assessment-and-holding-provisions - the emergency-and-assessment-versus-treatment-sections, the community-treatment-order-and-conditional-discharge-recall-architecture, the detention-in-other-places and the place-of-safety provisions and their time-limits and the police-and-custody-adjacent uses the law has been repeatedly reformed to narrow), the safeguards (the second-opinion-and-nearest-relative-and-managers'-and-tribunal-review-hierarchies, the Independent Mental Health Advocate duty, the hospital-managers'-and-board's-leave-and-transfer-powers, the consent-to-treatment provisions for treatment beyond the initial window with its capacity-and-second-opinion exceptions, and the conditional-discharge-and-revocation machinery), and the actors (the AMHP's social-judgement role distinct from the doctors' medical criteria, the approved-clinician-and-RRT-decision record, the tribunal's legal-and-therapeutic-discretion, and the Care-Quality-Commission-and-Inspectorate-visits whose reports are the system's own honesty infrastructure); the practice wisdom: the proportionate-use agenda (the ethnic-disparity-in-detention rates that are psychiatry's most-replicated injustice - the inquiry literature naming racism-and-interpretation-of-risk-and-thinner-social-support-as-drivers, and the legislative-response debates about the learning-disability-and-autism-inappropriate-detention scandal and the Reform-Act-era arguments), the least-restrictive-practice discipline (the MCA-versus-MHA-versus-deprivation-of-liberty-safeguards choice for the capacitous-but-compelled and the informal-admission-that-is-not-informal practice-creep), the holding-power-versus-treatment-ethic tension (the observation-as-treatment fiction, the restraint-and-seclusion-reduction programmes - the positive-practice-and-proactive-restraint-and-DASA-and-MUBD literature showing reduction is achievable), and the after-life of compulsion (the leave-and-community-phase-planning, the tribunal-and-managerial-review cadence, the record-and-communication-standards so the person's own narrative is in the file alongside the professionals'), and the truth the inquiries keep teaching: most detained patients were failed upstream - by incomplete risk-work, by absent community provision, and by crisis-services-not-yet-there) - [[medical-ethics-law/consent-capacity]], [[psychiatry/psychotic-disorders]], [[public-health/determinants-inequalities]], [[medical-ethics-law/justice-resources]].**
-:::
+In England, **NHS Talking Therapies** (formerly Improving Access to Psychological Therapies, IAPT) provides evidence-based psychological treatment for depression and anxiety disorders in a **stepped-care** model. People can usually refer themselves. Low-intensity interventions (guided self-help, computerised CBT, psychoeducation groups) are offered first for milder problems, and high-intensity therapy (individual CBT, IPT, counselling, couples therapy for depression) for more severe or persistent ones. Outcomes are measured at every session using questionnaires such as the PHQ-9 and GAD-7.
 
-## Capacity and consent
+::: example Matching therapy to the person {#ex-therapy-access}
+Mr Samuel Owusu, 55, has moderate depression after a heart attack. He works night shifts, has limited reading ability, and does not want medication. His GP wonders whether he is "suitable" for talking therapy. How should this be approached?
 
-::: definition Mental capacity and consent to treatment {#def-capacity}
-**The Mental Capacity Act's architecture as clinical method: the two-part test (the impairment-or-disturbance-of-mind-or-brain function and its inability-to-decide link) and the four-functional-limbs applied to the specific decision at the specific time (the understand-retain-weigh-or-use-communicate structure with its practice-notes - the 'why are you choosing this' probe testing weighing, the communication-impairment-versus-incapacity distinction requiring maximal-supported-request formats, the fluctuating-capacity timing-rule that serious decisions happen at the best time of day not any time, and the unassisted-risk-right that keeps eccentric-but-comprehending refusals valid), the five-statutory-principles-that-are-not-optional (the presumption-of-capacity starting-point, the all-practicable-support-steps duty before finding incapacity, the 'all reasonably practicable steps' support duty, and the least-restrictive-option requirement), the best-interests-process (the person's past-and-present-wishes-values-and-beliefs elicited from them and their circle, the consultation-duties with carers-and-attorneys-and-donee-of-LPA and the IMCA for the unrepresented, the illness-driven question of whether the refusal is symptom-generated, argued with evidence not vibes), the Deprivation-of-Liberty-Safeguards-and-LIBRA-era-adjacency (the objective-restriction-and-complete-supervision tests for the incapacitous in hospitals and care homes, the urgent-authorization-and-standard-process and the Re-D-and-R-S-and-F-Reform-era rules for the best-interests-treatment-versus-deprivation-of-liberty distinction where a sedated or restrained patient in a locked ward crosses the line) - [[medical-ethics-law/consent-capacity]]; the consent-to-treatment interface (the Gillick-and-16-17-family-Law-Act-and-MCA jurisdictional map from the lifespan chapter, the covert-medication-versus-capacity-versus-deprivation-of-liberty dilemmas when a capacitous patient 'agrees' under pressure, the advance-decision-to-refuse-treatment validity-and-applicability tests and their binding-force when made for another era's illness, the lasting-power-of-attorney-for-health verification duties at admission, and the urgent-treatment common-law exceptions), the psychiatric-specific-crunch-points (the anorexia-weight-restoration-capacity jurisprudence and its 'refusal driven by the illness itself' arguments and their proper limits, the treatment-of-the-person-versus-treatment-of-the-disorder debate when medication is the contested intervention, the ECT-in-capacity-versus-in-detention decision trees, and the suicide-risk-refusal-versus-detention distinction where a capacitous refusal of treatment for a life-threatening illness remains a refusal even when it is feared), and the ethics of documentation - the capacity assessment as a written argument that a judge or tribunal might read in a month (the specific-decision-and-the-relevant-information-given-recorded, the fluctuation-and-review-date, and the supported-decision-making alternatives explored and named, because the UN-Convention's equal-legal-capacity critique of substituted decision-making is the horizon toward which this law is moving faster than most services know) - [[psychiatry/eating-personality-disorders]], [[psychiatry/psychotic-disorders]], [[geriatrics-palliative/delirium-dementia-care]], [[medical-ethics-law/professionalism-regulation]].**
-:::
-
-::: example The informal admission that was not {#ex-borbic-official}
-A confused 81-year-old on warfarin is 'happily' admitted from a care home for a week's investigation; she attends all tests, is never offered advocacy, and her daughter learns only from a phone-call that she is on a locked ward 'because she kept wandering'.
 ::: solution
-**Deprivation-of-liberty-recognition ([[#def-capacity]], [[#def-mha]], [[medical-ethics-law/consent-capacity]]): the legal test applied - the objective element (the continuous-supervision-and-not-free-to-leave-and-locked-ward-and-staffed-door control) plus the subjective element (the state-attribution through NHS-organised care) equals a deprivation of liberty whatever her compliance, and acquiescence-by-a-capacity-impaired-person is not consent (the Bournewood-and-DOLS case-law tradition, and the distinction the practice keeps missing between a restricted-but-open admission and a detention-in-disguise) - [[geriatrics-palliative/delirium-dementia-care]]; the corrective steps now - the capacity-and-best-interests documentation for each decision, the urgent-authorisation-or-standard-process route for the deprivation (the community-care-versus-hospital-versus-restricted-leave alternatives weighed on paper, the IMCA-and-family-consultation completed and not retrofitted), and the medication-review that may dissolve the need for the lock (the pain-and-constipation-and-infection-and-sensory-loss delirium hunt, the glasses-and-hearing-aids and the day-night routine, the antipsychotic-not-for-wandering principle) - [[renal/urinary-tract]], [[geriatrics-palliative/polypharmacy]]; the system repair the case demands - the admission-clerk-and-ward-clerk DoLS-flagging training (the 'would this be a deprivation if she were fully capacitous and objected' screen and the care-home-admission form question that forces the thought), the 'do not use the locked ward as a convenience' rule with the alternative-packages directory, and the audit-of-unauthorised-restrictions as a quality metric (the CQC-and-commissioner data and the annual DoLS-volume truth: too few authorisations never means too few deprivations); and the family relationship - the daughter's grievance taken as a gift (the explanation and the apology-if-late and the complaints-and-advocacy routes offered, because the family who flags the boundary is the free-safety-net the law depends on) - [[clinical-skills/communication]], [[clinical-skills/patient-safety]].**
+**He is suitable.** Psychological therapy does not require a high level of literacy or education. Therapists adapt materials (spoken rather than written, visual worksheets, recordings) and pace.
+
+**Remove barriers.** NHS Talking Therapies services offer telephone and video sessions and some flexibility in timing. Self-referral avoids delay.
+
+**Choose the approach.** Behavioural activation or CBT for depression is appropriate. Because depression after a cardiac event is common and worsens outcomes, link with cardiac rehabilitation, where exercise and support also help mood.
+
+**Monitor.** Session-by-session PHQ-9 scores show whether he is improving. If not, step up the intensity or reconsider medication, with his agreement.
 :::
 :::
 
-::: example The CTO recall dilemma {#ex-cto-recall}
-A man on a community treatment order for schizophrenia misses three months of LAI, gets his licence revoked after a minor scuffle, stops answering his key-worker, and is found living in a gym-basement, medication-free but 'fine and free'; his mother begs you to 'use the paper'.
-::: solution
-**Community-treatment-order-restrained-judgement ([[#def-mha]], [[#def-therapies]], [[psychiatry/psychotic-disorders]]): the power-versus-purpose question - recall powers exist to prevent relapse-and-harm, not to punish disengagement or settle family anxiety, and premature recall can destroy the last trusting relationship (the evidence on CTOs: reduced rehospitalisation in some designs and no effect on social outcomes or therapeutic alliance, and the literature on perceived-coercion predicting disengagement), so the first response is re-engagement, not paperwork; the graduated ladder documented - the key-worker-and-CNP-outreach attempts with times-and-contacts logged (the 'come to the flat, not the clinic' flexibility and the peer-worker-with-lived-experience approach whose credibility this cohort rates highest), the flexible-engagement-and-assertive-outreach model, the crisis-team-and-community-pharmacy-LAI-access options, the family-meeting with him-invited-and-his-agenda-prioritised (the mother's-fear-heard-and-given-a-role not a veto), and the substance-and-housing-and-benefits-navigation that is usually the actual adherence problem (the cannabis-and-landlord-and-debt triage) - [[psychiatry/substance-use]], [[public-health/determinants-inequalities]]; the threshold that justifies compulsion - the risk-based criteria applied to current-evidence (the command-hallucinations-and-violence-or-self-neglect trajectory versus 'eccentric and refusing treatment' - the capacity-versus-liberty arithmetic for the genuinely refusing-but-severely-unwell, the MCA-versus-MHA-versus-police-s136-versus-admission-choice-tree, and the second-opinion-and-AMHP-consultation as pre-recall defaults), and the recall-executed-well (the safety-and-transport-and-mental-health-professional-not-police-if-possible plan, the least-restrictive-place-of-safety, the notification-and-advocacy-rights and the tribunal clock, the review-explanation written in plain-words and the family briefed on why and until-when); and the post-crisis honesty - the relapse-signature and future-plan update he co-authors (the 'what could we have done differently' note, the CTO-renewal-versus-revocation review at the hearing meeting, and the service-level check on whether his absence-triggered-recall or a missed home visit did), because the point of the least-restrictive law is that the right to be unwell at home is the baseline from which we justify intrusions - [[clinical-skills/records-handover]], [[medical-ethics-law/justice-resources]].**
-:::
+## Psychiatric drugs: the essentials
+
+| Class | Main uses | Mechanism (simplified) | Key safety issues |
+|---|---|---|---|
+| SSRIs, SNRIs, mirtazapine, tricyclics | Depression, anxiety disorders, OCD | Increase serotonin and/or noradrenaline transmission | Hyponatraemia, bleeding (SSRIs), QT (citalopram), serotonin syndrome, discontinuation symptoms, toxicity in overdose (tricyclics) |
+| Antipsychotics | Psychosis, mania, some agitation | Dopamine D2 blockade (plus other receptors) | Movement disorders, metabolic effects, prolactin, QT, sedation, NMS; clozapine: neutropenia, myocarditis, constipation |
+| Lithium | Bipolar disorder, augmentation in depression | Not fully understood (intracellular signalling) | Narrow therapeutic index; renal, thyroid and parathyroid effects; interactions |
+| Valproate, lamotrigine, carbamazepine | Bipolar disorder (also epilepsy) | Ion channels and GABA | Teratogenicity (valproate especially), rash (lamotrigine), enzyme induction (carbamazepine) |
+| Benzodiazepines, Z-drugs | Short-term anxiety, insomnia, alcohol withdrawal, acute agitation | Enhance GABA-A receptor function | Dependence, sedation, falls, respiratory depression with opioids |
+| Stimulants, atomoxetine | ADHD | Increase dopamine and noradrenaline | Appetite, growth, heart rate and blood pressure, misuse |
+
+Doses, interactions and monitoring always follow the BNF and local guidance.
+
+### Two serotonergic and dopaminergic emergencies
+
+Serotonin syndrome and neuroleptic malignant syndrome can look similar. Both cause fever, altered mental state and autonomic instability. The distinction matters because their causes and treatments differ.
+
+| Feature | Serotonin syndrome | Neuroleptic malignant syndrome |
+|---|---|---|
+| Cause | Serotonergic drugs, especially combinations or overdose | Dopamine antagonists (antipsychotics), or withdrawal of dopaminergic drugs |
+| Onset | Hours | Days to weeks |
+| Neuromuscular | Clonus (often inducible, ocular), hyperreflexia, tremor | "Lead-pipe" rigidity, bradyreflexia |
+| Other | Agitation, diarrhoea, dilated pupils | Reduced consciousness, very high creatine kinase |
+| Management | Stop serotonergic drugs, supportive care, benzodiazepines; specialist agents in severe cases | Stop antipsychotic, supportive care, cooling, fluids; specialist agents in severe cases |
+
+### Pharmacokinetics in practice: lithium
+
+Lithium shows why pharmacokinetics matters at the bedside. Its elimination half-life is around a day in a healthy adult (longer in older people and with reduced kidney function).
+
+::: theorem Steady state after repeated dosing {#thm-steady-state}
+When a drug with first-order elimination is given repeatedly at a constant dose and interval, its concentration rises towards a **steady state**. The fraction of the eventual steady-state level reached after time $t$ is
+
+$$
+f(t) = 1 - \left(\tfrac{1}{2}\right)^{t/t_{1/2}}
+$$ {#eq-steady}
+
+where $t_{1/2}$ is the elimination half-life. After about four to five half-lives, the concentration is within about 3–6% of steady state.
 :::
 
-::: example The ECT consent meeting {#ex-ect-consent}
-A detained patient with life-threatening food refusal needs ECT; she says 'absolutely not' while retaining some grasp of what it involves; her nearest relative supports treatment; the trust has no pending tribunal.
-::: solution
-**ECT-under-compulsion-decision-tree ([[#def-capacity]], [[#def-mha]], [[medical-ethics-law/consent-capacity]]): the two-gate analysis - gate one, capacity for this decision now (the impairment-link of the refusal to the depressive cognition - nihilistic guilt, certainty-of-hopelessness, the 'I don't deserve to get better' texture - documented through a full functional assessment with a treatment-attempt-to-enable-retest if time safely allows, because a refusal generated by the symptom-set fails the weighing-limb), and gate two, if incapacitous, the best-interests-MCA route (the least-restrictive-alternative audit - oral and IM antidepressant and nasogastric-nutrition and fluid-status-and-time-urgency - the second-opinion-and-attorney-and-family-consultation, the IMCA for the unrepresented, and the urgent-authorisation machinery when deprivation of liberty attaches to the admission itself); the if-cap-but-detained branch - the mental-health-act-treatment-provisions-versus-common-law-limit-line (statutory treatment-power coverage for the disorder with its second-opinion safeguards, versus the jurisprudence that serious irreversible or high-burden interventions may still demand capacity-based justification), the tribunal-and-manager-review clock respected not circumvented, and the advocacy-offer made concretely (the IMHA and her own solicitor, the independent doctor she can request); the process-quality that makes any outcome defensible - the multi-professional best-interests meeting with her present-and-voice-recorded, the written-rationale for why-ECT-why-now-why-not-alternatives, the time-limited-authorisation-with-review-dates (an order for six treatments then re-consent, not open-ended), the documentation-of-her-advance-wishes-and-prior-values, and the name-on-the-file accountability (the responsible clinician and the second-opinion doctor identified, because anonymity is how these cases rot); and the learning-audit - the post-decision review with the team about whether the system could have prevented the starvation-crisis through earlier voluntary pathways (the community-treatment-order-and-assertive-outreach-what-ifs), because the best ECT-consent process is the one that was never needed - [[psychiatry/mood-disorders]], [[clinical-skills/patient-safety]].**
-:::
-:::
-
-::: example The talking-therapy waiting list {#ex-therapy-access}
-Your IAPT-equivalent service reports 92 percent 'recovery' on a 6-session low-intensity cohort while the high-intensity queue runs 40 weeks; referral equity shows affluent self-referrals entering fast, deprived GP-referrals decaying to zero.
-::: solution
-**Access-and-outcome-integrity ([[#def-therapies]], [[public-health/determinants-inequalities]], [[public-health/health-systems-economics]]): the measurement critique first - the recovery-rate-on-completers-with-dropouts-censored is the metric the services quietly prefer (the intention-to-treat equivalent - what happens to everyone who was referred - must be published alongside, because six-session-protocols measured only on those who stayed select for the already-motivated-and-resourced), the the Reliable-and-Clinically-Significant-Change thresholds with the outcome-measures' floor-effects in severe-and-chronic cohorts, and the 'recovery' language versus functional outcomes (work-and-relationship-and-distress measures) patients chose; the equity diagnosis - the two queues (the self-referring digital-literate affluent front door and the GP-letter-and-culture-and-workings-hours back door), the deprived-caller-who-cannot-take-daytime-phone and the interpreter-and-literacy-and-childcare frictions documented as the real exclusion-criteria, the ethnic-minority-under-referral-and-over-termination data the national datasets keep showing, and the 'did not attend equals disengaged' labelling that pathologises access-friction; the redesign - plural front doors (the community-and-pharmacy-and-school-and-employer-and-wellbeing-hub referrals, the text-and-whatsapp-and-poster routes, the walking-and-workshops-and-group-first formats with their non-inferiority evidence for milder presentations), the proactive-outreach-versus-patient-migraine rule (the service chases the appointment, not the patient, with the two-called-before-letters policy), the interpreter-and-advocate budget as clinical spend, the high-intensity-capacity truth stated (the workforce pipeline years-long, so interim telehealth-and-hybrid-delivery with fidelity monitoring rather than pretending six sessions equals CBT for complex presentations), and the step-up-criteria transparency so low-intensity non-responders are detected at week four not week forty; and the governance - the completion-adjusted-outcome-publication, the referral-and-attendance-and-recovery gradients by deprivation-and-ethnicity-and-disability with named improvement-owners, the patient-and-carer-panel-with-veto-on-access-design, the waiting-list-as-harm reporting (the deterioration-during-wait incidents tracked), and the honest annual question published: are we a talking-therapies service or a talking-therapies lottery - [[clinical-skills/patient-safety]], [[medical-ethics-law/justice-resources]].**
-:::
-:::
-
-::: quiz
-Under the Mental Capacity Act, a person lacks capacity to consent to a specific treatment when:
-- [x] An impairment or disturbance of mind or brain function makes them unable to understand, retain, weigh or communicate this decision at this time
-- [ ] They refuse a treatment doctors consider necessary
-- [ ] They have a diagnosed psychiatric disorder
-- [ ] They live in a care home and cannot leave freely
-::: solution
-**Capacity is decision- and time-specific, presumed until rebutted, and defined functionally - poor or risky choices by a person who can understand, retain, weigh and communicate remain autonomous refusals; the fourth option is a deprivation-of-liberty question, not a capacity one ([[#def-capacity]], [[medical-ethics-law/consent-capacity]]).**
-:::
+::: proof
+With first-order elimination, a constant fraction of drug is removed per unit time, so the rate of elimination is proportional to the amount present. With a constant input rate, the amount rises until elimination equals input: that is the steady state. The gap between the current level and the steady-state level shrinks by half in each half-life, just as a single dose falls by half in each half-life. After one half-life the level is 50% of steady state, after two 75%, after three 87.5%, after four 93.75%, and after five about 97%. This is why serum lithium is usually measured about 5–7 days after starting or changing the dose, when the level reflects the new steady state, and always about 12 hours after the last dose, so that results are comparable. Measuring too early underestimates the eventual level and can lead to an unsafe dose increase.
 :::
 
 ::: widget plot
-f: 100/(1+exp(-(x-0.5)*6)); 100*exp(-x/3); 55*exp(-x/40); 48*exp(-x/8); 90*exp(-x/0.2)
-x: 0.01, 60
-y: 0, 102
-labels: \text{weeks after crisis},\ \text{percent}\text{formal care needs (declining)};\ \text{family expressed emotion};\ \text{medication adherence (crisis-level)};\ \text{relapse risk without follow-up};\ \text{coercion perception if recalled}
-caption: Post-discharge time matters ([[#def-therapies]], [[#def-mha]]): expressed emotion and adherence and relapse risk all peak early, while the memory of coercion outlasts the admission - the practical case for investing in the first weeks of voluntary contact rather than reserving energy for the eventual recall.
+f: 100*(1 - 0.5^(x/h))
+x: 0, 10
+y: 0, 105
+sliders: h=1:0.5:3:0.25
+hlines: 100
+labels: \text{percent of steady state}
+caption: Approach to steady state with repeated dosing for a drug with half-life $h$ days (a simplified continuous model; real levels oscillate between doses). With a half-life of about one day, as for lithium in a healthy adult, the level is close to steady state after five days. Lengthen the half-life, as happens with age or reduced kidney function, and the approach slows: a level checked at day five would then underestimate the final level.
+:::
+
+::: example When to check the level {#ex-lithium-ss}
+Mrs Beatrice Lloyd, 76, starts lithium for bipolar depression. Her lithium half-life is estimated at about two days because of age-related decline in kidney function. Her doctor plans to check the level after three days. What fraction of steady state will the level represent, and what would be a better plan?
+
+::: solution
+**Fraction at day three.** Using [[#eq-steady]] with $t = 3$ days and $t_{1/2} = 2$ days: $f = 1 - 0.5^{3/2} = 1 - 0.354 \approx 0.65$. The level would show only about 65% of the eventual steady state.
+
+**The risk.** A low reading might prompt a dose increase, and the eventual level could then be toxic.
+
+**Better plan.** Wait until about five half-lives, here about ten days, or at least a week, before interpreting the level as steady state; measure it 12 hours after the last dose; start at a lower dose, as is usual in older people; check renal function, thyroid function, calcium and interacting drugs (NSAIDs, ACE inhibitors, diuretics) first; and recheck after each dose change.
+:::
+:::
+
+## Physical treatments
+
+**Electroconvulsive therapy** (ECT) involves inducing a brief generalised seizure under general anaesthesia and muscle relaxation, usually twice a week for a course of several weeks. It is the most effective treatment for severe depression, especially with psychotic features, stupor or life-threatening refusal of food and fluids, and it is also used for catatonia and severe mania. Its main adverse effects are those of anaesthesia, headache, muscle aches, and cognitive effects, especially memory loss for events around the treatment period, which usually improves but can persist for some people. Mortality is very low, comparable to that of a minor procedure under general anaesthesia.
+
+**Repetitive transcranial magnetic stimulation** (rTMS) uses magnetic pulses to stimulate the prefrontal cortex. NICE interventional procedures guidance (IPG542, 2015) states that the evidence on its safety and efficacy for depression is adequate to support use with normal arrangements. It is available in some NHS services.
+
+**Esketamine** nasal spray is licensed for treatment-resistant depression, but NICE (TA854) did not recommend it for use in the NHS in England, and in 2024 decided not to review that guidance.
+
+::: example ECT and consent {#ex-ect-consent}
+Mr Derek Simmons, 81, has severe depression with nihilistic delusions. He has stopped eating and drinking and is becoming dehydrated. He believes he is already dead and that treatment is pointless. His team considers ECT. How does the law in England and Wales apply?
+
+::: solution
+**Urgency and alternatives.** His physical state is life-threatening. Medical treatment of dehydration proceeds in parallel.
+
+**Capacity.** His delusion that he is already dead means he probably cannot use or weigh information about ECT, so he likely lacks capacity to consent to it. This must be assessed and recorded.
+
+**Legal framework.** ECT is subject to special safeguards under section 58A of the Mental Health Act 1983. If he is detained and lacks capacity, ECT can be given if a **second opinion appointed doctor** (SOAD) certifies that it is appropriate, and provided it does not conflict with a valid advance decision, a decision of an attorney or deputy, or the Court of Protection. In an emergency, **section 62** allows ECT to be given to save life or prevent serious deterioration while a SOAD is awaited.
+
+**Never with a capacitous refusal.** A detained patient who has capacity and refuses ECT cannot be given it, except under section 62 in an emergency to save life. This is a key difference from medication.
+
+**Involve others.** Consult his family, consider any advance statements, and document the decision and reasoning.
+:::
+:::
+
+## The Mental Health Act
+
+::: definition The Mental Health Act 1983 (England and Wales) {#def-mha}
+The **Mental Health Act 1983** allows a person with a **mental disorder** to be detained in hospital, and in some circumstances treated, without their consent, when this is necessary for their health or safety or for the protection of others, and when treatment cannot be provided without detention. Mental disorder means "any disorder or disability of the mind"; dependence on alcohol or drugs alone is not a mental disorder for the purposes of the Act. Applications are usually made by an **approved mental health professional** (AMHP), supported by medical recommendations from doctors, at least one of whom is approved under section 12 as having special experience in mental disorder.
+:::
+
+Main sections:
+
+| Section | Purpose | Duration | Who |
+|---|---|---|---|
+| 2 | Assessment (and treatment) | Up to 28 days, not renewable | AMHP (or nearest relative) application plus two medical recommendations |
+| 3 | Treatment | Up to 6 months, renewable (6 months, then yearly) | AMHP (or nearest relative) plus two medical recommendations; appropriate medical treatment must be available |
+| 4 | Emergency admission when waiting for a second doctor would cause undesirable delay | Up to 72 hours | AMHP or nearest relative plus one medical recommendation |
+| 5(2) | Doctor's holding power for an informal inpatient | Up to 72 hours | Doctor or approved clinician in charge of treatment (or nominated deputy) |
+| 5(4) | Nurse's holding power for an informal inpatient | Up to 6 hours | Registered mental health or learning disability nurse |
+| 135 | Warrant to enter premises and remove a person to a place of safety | Up to 24 hours (extendable by 12) | Magistrate's warrant, police |
+| 136 | Police power to remove a person who appears to have a mental disorder and need immediate care, from a place other than a private home, to a place of safety | Up to 24 hours (extendable by 12) | Police officer, after consulting a health professional where practicable |
+| 17 | Leave of absence for a detained patient | As granted | Responsible clinician |
+| 17A | Community treatment order (CTO) after section 3 | 6 months, renewable | Responsible clinician with AMHP agreement |
+
+Safeguards include the right to apply to a **First-tier Tribunal (Mental Health)** (in Wales, the Mental Health Review Tribunal for Wales), the right to an **independent mental health advocate** (IMHA), information about rights, the role of the **nearest relative**, and the **hospital managers'** review. Under **section 58**, medication for mental disorder can be given without consent for the first three months of detention; after that, it requires either the patient's capacitous consent or certification by a SOAD. **Section 117** places a duty on health and social services to provide free aftercare for people who have been detained under treatment sections.
+
+### The Mental Health Act 2025
+
+The **Mental Health Act 2025** received Royal Assent on 18 December 2025. It amends the 1983 Act, and its provisions are being brought into force in stages over several years, so the 1983 framework described above continues to operate until each change is commenced. The main changes include:
+
+- detention criteria that require a risk of **serious harm** to the person or others, and a reasonable prospect of **therapeutic benefit**;
+- people with a learning disability or autistic people can no longer be detained for treatment under section 3 unless they also have a co-occurring psychiatric disorder that meets the criteria;
+- a **nominated person**, chosen by the patient, replaces the nearest relative;
+- statutory **care and treatment plans** for detained patients;
+- police cells and prisons no longer to be used as places of safety;
+- a shorter initial period of detention under section 3 and more frequent tribunal reviews.
+
+Doctors should check which provisions are in force at any given time, using the current Code of Practice.
+
+## Mental capacity
+
+::: definition The Mental Capacity Act 2005 {#def-capacity}
+The **Mental Capacity Act 2005** (England and Wales) applies to people aged 16 and over who may lack capacity to make particular decisions. Its five principles are:
+
+1. A person must be assumed to have capacity unless it is established that they lack it.
+2. A person is not to be treated as unable to make a decision unless all practicable steps to help them have been taken without success.
+3. A person is not to be treated as unable to make a decision merely because they make an unwise decision.
+4. Anything done for a person who lacks capacity must be done in their **best interests**.
+5. Before acting, consider whether the purpose can be achieved in a way that is **less restrictive** of the person's rights and freedom.
+
+A person lacks capacity for a decision if, because of an impairment of, or disturbance in the functioning of, the mind or brain, they are unable to **understand** the relevant information, **retain** it, **use or weigh** it, or **communicate** their decision.
+:::
+
+Best-interests decisions consider the person's past and present wishes, feelings, beliefs and values, and the views of family and carers. People may make **advance decisions to refuse treatment**, which are legally binding if valid and applicable (with specific requirements for life-sustaining treatment), and may appoint an attorney under a **lasting power of attorney** for health and welfare.
+
+When care for a person who lacks capacity amounts to a **deprivation of liberty** (for example continuous supervision and control, and not being free to leave), it must be authorised. In hospitals and care homes this is done through the **Deprivation of Liberty Safeguards** (DoLS). The Liberty Protection Safeguards, legislated in 2019 to replace DoLS, have not been implemented, and as of 2026 DoLS remains in use.
+
+### Choosing between the two Acts
+
+The two Acts have different purposes. The **Mental Health Act** is used to detain and treat people for **mental disorder** when necessary, whether or not they have capacity. The **Mental Capacity Act** covers decisions about care and treatment, including physical health care, for people who **lack capacity**. A person detained under the Mental Health Act who needs treatment for a physical illness unrelated to their mental disorder is treated with their consent, or under the Mental Capacity Act if they lack capacity. Where both could apply to admission for mental disorder, especially if the person objects, the Mental Health Act is generally the appropriate framework because it provides more safeguards.
+
+::: example A community treatment order {#ex-cto-recall}
+Mr Kofi Asante, 34, has schizophrenia and has been admitted under section 3 three times in four years, each time after stopping his medication within weeks of discharge. He is now well and due for discharge, and his responsible clinician proposes a CTO. What does this mean in practice?
+
+::: solution
+**What a CTO is.** A community treatment order (section 17A) allows a person who has been detained under section 3 to live in the community subject to conditions, such as attending appointments and allowing visits, with the power for the responsible clinician to **recall** them to hospital for up to 72 hours if they need treatment and there would be a risk of harm without it.
+
+**Criteria.** He must have a mental disorder of a nature or degree making treatment appropriate, treatment must be necessary for his health or safety or the protection of others, it must be possible to give it in the community, and the power of recall must be necessary. An AMHP must agree.
+
+**Rights.** He has the right to an IMHA and to apply to the tribunal. The CTO lasts six months initially and can be renewed.
+
+**Evidence.** A UK randomised trial (OCTET, 2013) found that CTOs did not reduce readmission compared with section 17 leave, which raises questions about their use. The decision should therefore weigh his history, his views, the least restrictive principle, and what would help him continue treatment voluntarily, such as a long-acting injection he prefers, side-effect management and support.
+:::
+:::
+
+::: example A request to go home {#ex-s5}
+Ms Lauren Hughes, 27, was admitted informally to a psychiatric ward two days ago after an overdose. She now says she wants to leave immediately to "finish what I started". The ward doctor is the only doctor present. What powers apply?
+
+::: solution
+**Holding powers.** As an informal inpatient, she could be held under **section 5(2)** by the doctor in charge of her treatment or their nominated deputy, for up to 72 hours, to allow a full Mental Health Act assessment. If no doctor were immediately available, a qualified mental health nurse could use **section 5(4)** for up to six hours.
+
+**Next steps.** Arrange an urgent assessment by an AMHP and two doctors (one section 12 approved) to consider detention under section 2. Keep her safe in the meantime with appropriate observation, and talk with her about her distress.
+
+**Rights.** Explain her rights clearly and record this. The holding power must end as soon as the assessment is complete, whether or not she is detained.
+:::
+:::
+
+::: warning Capacity is not the test for the Mental Health Act
+A common error is to assume that a person with capacity cannot be detained under the Mental Health Act, or that a person without capacity must be. The criteria for detention are about mental disorder, its nature or degree, and risk. A person with capacity can be detained if the criteria are met, and medication for mental disorder can then be given without consent within the rules of section 58. Conversely, the Mental Health Act does not authorise treatment for unrelated physical illness: that requires consent or, if the person lacks capacity, the Mental Capacity Act.
+:::
+
+::: quiz
+A detained patient under section 3 has been receiving an antipsychotic for three months. She has capacity and refuses to continue it. Which statement is correct?
+- [ ] Treatment can continue indefinitely without consent under section 3.
+- [x] After three months, treatment without consent requires certification by a second opinion appointed doctor.
+- [ ] The Mental Capacity Act must be used instead.
+- [ ] The section must be rescinded because she has capacity.
+::: solution
+Under section 58, medication for mental disorder can be given without consent during the first three months of detention. After that, it requires either her valid consent or a certificate from a SOAD confirming that the treatment is appropriate. Her capacity does not by itself end detention.
+:::
+:::
+
+::: history
+Until the 18th century, people with mental illness were often confined in poor conditions. Philippe Pinel in Paris and William Tuke at the York Retreat (founded 1796) introduced "moral treatment" based on humane care. In England, the Lunacy Act 1890 required judicial authority for most admissions. The Mental Treatment Act 1930 introduced voluntary admission, and the Mental Health Act 1959 made most admissions informal and moved decisions from courts to doctors. The Mental Health Act 1983 added safeguards, and the 2007 amendments introduced community treatment orders, approved mental health professionals and independent advocates. Ugo Cerletti and Lucio Bini introduced electroconvulsive therapy in Rome in 1938. Aaron Beck developed cognitive therapy in the 1960s, and David Clark and Richard Layard's economic case for psychological therapy led to the IAPT programme in England in 2008. The Mental Health Act 2025 followed an independent review chaired by Simon Wessely, published in 2018.
 :::
 
 ## Where this leads
 
-The ethical frames behind every power here are developed in [[medical-ethics-law/consent-capacity]] and [[medical-ethics-law/professionalism-regulation]]; the disorder-specific treatment chapters carry the clinical content; the service-design and equity dimensions sit in [[public-health/health-systems-economics]] and [[public-health/determinants-inequalities]].
-
-::: history
-**Mental health law is a history of who could be locked up and by whom: the medieval-and-later 'custody-of-lunatics' royal prerogative and the 1700s private-asylum trade (the York Retreat flourishing beside a booming trade in commercial madhouses, the County Asylum Acts from 1808, and the Metropolitan Commissioners and Lunacy Commission inspection regime whose reports exposed provincial-assembly scandals in the 1900s and fed the medicalised detention law of 1913), the two world wars' aftercare societies, and the postwar NHS-era nationalisation of the asylum estate - [[psychiatry/psychotic-disorders]]; the therapeutic-legal synthesis - the 1950s-1960s mental-health-legislation waves that kept compulsory-admission architecture while adding tribunal-review and patient-rights scaffolding (the 1959 Act's voluntary-admission principle and the abolition-of-formal-lunacy-status in several jurisdictions, the 1983-reform's tribunal-and-second-opinion-and-manager-review strengthening and the 2007 amendments' community-treatment-order introduction and the 2008 Deprivation-of-Liberty-Safeguards response to Bournewood's European-Court-of-Human-Rights judgment), the Mental Capacity Act of 2005 as the second-pillar statute (its 1995 Law-Commission-and-1999-White-Book lineage and its best-interests-versus-advance-refusal compromises), and the UN-Convention-on-the-Rights-of-Persons-with-Disabilities general-comment-1-2014 substituted-versus-supported-decision-making challenge still reshaping law-reform agendas; the anti-institutional and user-movement pressure - the Basaglia-reform-and-asylum-closure eras, the Mental-Hygiene-Review-and-Audit-Commission and Private-Member inquiries (the Hospital-Discharge-and-Aftercare-and-Repayment-of-Boarding-Protection scandals, the Ely-Hospital-Report era of abuse inquiries, the 2010s Winter-View Panorama exposures and the restraint-and-seclusion reckonings at the 2010s restraint-and-seclusion reckonings, and the 2018 independent Mental Health Act review and its contested draft-legislation aftermath), the Suicide-and-Clinical-Case-Review-prevention-priority-areas programme converting deaths into system-questions rather than individual-blame, and the user-survivor and carer movements (the Hearing-Voices-and-Mindfulness-and-Recovery-College co-production, the service-user representation on approval-bodies, and the tribunal-systems-with-advocate-provision that made challenge routine); and the treatment-rights layer - the consent-to-treatment-beyond-initial-period provisions and their capacity-based exceptions, the ECT-law-and-guidance-era with its capacity-and-community-order debates, the right-to-refuse-and-dimension-of-forced-feeding jurisprudence, and the ongoing question the inquiries repeat - that law controls the dramatic coercions while the daily coercions (the informality that is not informal, the 'compliance or lose your flat' housing logic, the chemically-quieting-with-PRNs) stay largely unlitigated, making professional culture the last regulator where statutes fall silent - [[medical-ethics-law/consent-capacity]], [[public-health/health-systems-economics]].**
-:::
+Consent and capacity in general medical practice are covered in [[medical-ethics-law/consent-capacity]]; drug mechanisms in [[pharmacology/drug-receptor]]; pharmacokinetics in [[pharmacology/dosing-principles]]; and the conditions these treatments address in [[psychiatry/mood-disorders]] and [[psychiatry/psychotic-disorders]].
 
 ::: summary
-- Psychological therapies are treatments with delivery-quality variables; supervision, fidelity and access determine whether evidence reaches patients.
-- Compulsion is lawful only within criteria, time-limits, review-rights and least-restriction reasoning; the safeguards are the point, not the paperwork.
-- Capacity is decision- and time-specific and presumed present; support first, substitute only when genuinely impossible, and document the argument.
-- Compliance by a cognitively impaired person is not consent; the locked ward question is 'could she leave if she objected', not 'is she resisting'.
-- Community orders reduce some rehospitalisation but can corrode alliance when used punitively; re-engagement beats recall as a first instinct.
-- The disparity in detention - ethnic, learning-disability, autism - is the field's central justice failure and an audit-and-practice question every shift, not a conference topic.
-:::
-
-::: exercise Rights on day one {level=1}
-List what a newly detained patient must be offered or told within the first 24 hours, and who is accountable.
-::: solution
-**Day-one-rights-checklist ([[#def-mha]], [[clinical-skills/patient-safety]]): the information - why-and-under-which-section-she-is-held and what it does and does not authorise, in plain language and her preferred format (the interpreter and easy-read duty, the written-rights-leaflet as floor not ceiling, the name-and-role-of-who-is-responsible), the rights - nearest-relative-and-IMHA-and-solicitor-and-tribunal-and-second-opinion-with-their-timescales, the correspondence-and-visits-and-phone-and-possessions-and-medicines-and-belongings-and-adjacency (the leave-not-yet rules), and the advocacy-and-complaints-and-crisis-card; the care - the physical-health-check-and-ligature-and-meals-and-sleep-and-medicines-review and the mental-capacity-and-best-interests-status for every current decision, the personal-centred-care-plan-coauthored-not-imposed, and the safety-of-others-and-self explanation; and the accountability - the nurse-in-charge's-verification-of-rights-understanding documented, the ward-clerk-and-AMHP-and-RC handover, the CQC-and-Monitoring-Boards-and-Independent-Sector-Advocacy visit-lines kept alive, and the 'would we explain it this way if she were our sister' standard the staff-shoulder-finding-inquiries keep recommending - [[medical-ethics-law/consent-capacity]].**
-:::
-:::
-
-::: exercise Set the boundary that keeps the therapy {level=2}
-A CBT therapist for psychosis is friended on social media by a patient, receives a 'thank you' gift-voucher, and is invited to 'just say hi if you see me out'; she asks for supervision content.
-::: solution
-**Professional-boundaries-clinical-supervision ([[#def-therapies]], [[medical-ethics-law/professionalism-regulation]], [[clinical-skills/communication]]): the frame - boundaries as treatment-technology not coldness (the therapy works because the relationship is real-but-asymmetric - the friendship-request decoded as progress-and-loneliness, since this cohort's social-isolation is the disorder's other half, so the refusal must cost the alliance nothing it can afford), the decisions with reasons - the social-media-not-accepted-and-the-therapist-own-digital-profile-hygiene, the small-thank-you-card-acceptable-and-the-voucher-declined-with-the-therapeutic-repair ('the card means the work mattered; the voucher changes what the meetings are'), the 'hello-in-the-street-yes-with-your-lead' rule agreed in session, the dual-relationship-screen (shared-communities-and-services-where-avoidance-is-impossible handled proactively with the agreed-public-behaviour script), and the gift-policy-and-records-consistency so the answer does not depend on the therapist's weekend mood; the supervision-content - the countertransference-honesty (rescue-or-rejection pulls named without shame), the complaint-and-tribe-risk (the boundary-explanation documented in the notes and rehearsed for the family-meeting where the loneliness is the family's too), and the referral-option (the peer-and-community-and-social-prescribing connections that meet the belonging-need in settings designed for it - the recovery-college, arts, sports and faith communities and social-prescribing connections whose belonging-need this is); and the systemic layer - the service-wide-boundaries-and-gifts-and-social-media policy that new-staff learn once and supervisors enforce consistently, because boundary-ethics fails as individual virtue and survives as culture - [[psychiatry/psychotic-disorders]].**
-:::
-:::
-
-::: exercise Handle the refusal of a capacity-holding 'no' {level=2}
-A man with severe illness-refusal but full assessed capacity declines antipsychotics that colleagues believe will save his life next relapse; he signs nothing, refuses outreach, and his team is fracturing between 'respect' and 'paternalism'.
-::: solution
-**Holding-the-capacity-line-together ([[#def-capacity]], [[#def-therapies]], [[clinical-skills/communication]]): the clinical-truth first - a capacitous refusal is a refusal even when the clinicians are sure it is the wrong choice (the mental-capacity-presumption, the 'unwise is not incapacitous' rule, and the corollary that coercion without incapacity-or-statutory-basis is battery-not-benevolence), and the honest risk-ownership - his right to gamble includes losing; the team's job is to make the gamble safer, not to void it; the respect-maximising playbook - the ongoing-consent-conversation kept open (the 'the offer stands, here is what changed since we last spoke' reviews, the long-acting-injectable and slow-release menu explained in his priority-language, and the psychological-therapy-and-advocacy-and-peer-dialogue that address his actual objections - the past-coercion, the fertility-and-weight-and-mental-fog fears usually more determinative than 'lack of insight'), the advance-joint-crisis-plan he co-authors (the 'if I am past the point of deciding, here is what I would and would not accept' document with the nominated-decision-maker and the treatment-preferences and the conditions-of-acceptance - binding-adjacent and alliance-building simultaneously), the least-coercive-crisis-ladder pre-agreed (the home-treatment-and-crisis-house-and-day-hospital before the admission-threshold, the preferred-medication and preferred-personnel and the 'no restraint unless' clauses), and the second-capacity-opinion cadence (capacity is decision- and time-specific and may change with illness-phase - re-tested at deterioration with the threshold for override documented, the tribunal-and-advocate-presence if sectioned); and the team-culture repair - the supervision-space for the clinicians' fear-and-moral-distress named (the 'I could have prevented that relapse' grief processed, not converted into crusade), the case-discussion-with-patient-present principle where he agrees, the balanced-record (his-arguments-in-his-words beside the clinical-risk-so-next-shift-starts-from-respect), and the agreed policy that if he is sectioned later, the documentation shows the team respected him until respect was legally impossible - which is also what makes the coercion lawful - [[psychiatry/psychotic-disorders]], [[clinical-skills/patient-safety]].**
-:::
-:::
-
-::: exercise Cost the coercion you avoided {level=3}
-Make the financial-and-clinical case to your board for investment in de-escalation staffing, quiet-rooms and peer-support workers versus the current seclusion-and-police-and-legal route.
-::: solution
-**Business-case-for-less-coercion ([[#def-mha]], [[public-health/health-systems-economics]], [[clinical-skills/patient-safety]]): the costs-counted - the current-pathway ledger (the seclusion-observation-and-1:1-hours and the staff-injury-and-IOA-and-workforce-loss-and-agency-backfill, the police-and-Section-136-and-custody-adjacency with the defensible-breach-and-inquest-and-judicial-review-and-CQC-suspension-risk, the longer-admissions-attributable-to-alliance-damage and the readmission-cycle economics, and the patient-side costs - PTSD-after-seclusion rates, the 'never-coming-back' disengagement whose mortality lives in the next crisis), versus the intervention-ledger (the trained-workforce-premium-and-quiet-room-build-and-peer-worker-salaries-and-supervision-time), with the literature-cited finding that the high-restraint wards that ran reduction programmes saved money while reducing harm - the labour-and-litigation arithmetic typically breaking favourably within a year when staff-turnover-and-injury-costs are honestly booked (the national reduce-restrictive-practice business-cases and the staff-retention-effect that no other psychiatry-capital-request has); the clinical case in their language - the seclusion-and-restraint reduction with no-increase-in-injury-or-absconding or violence outcomes (the programme evaluations), the complaint-and-notification-and-inquest-volume fall, the CQC-rating-and-suspension-risk reduction, the readmission-and-Do-not-attempt-circulation quality metrics, and the disparity-metric improvement (the Mental-Health-Act-Commission-equity KPIs the board is legally-awful-embarrassed by), plus the reputation-and-workforce-pipeline value in a recruitment crisis; the implementation-resistance named - the 'it is different here' exceptionalism, the agency-fill-erosion-of-training-numbers (fix with training-hours-in-establishment), the 'quiet-room-is-a-broom-closet' symbolism (fix with co-design and the patient-and-staff walk-through), and the metric-gaming risk (seclusion-substituted-by-prone-in-corners or chemical-sedation-shift - monitored by the PRN-and-observation-intensity-and-incident-nature indicators); and the ask stated as a contract - the three-year-funding with the quarterly-published-restraint-and-disparity-and-injury-and-cost-metrics, the external-patient-and-carer-review-panel, the sunset-clause-if-no-progress (accountability both ways), and the pilot-ward-and-control-ward-evaluation-design that converts the sceptics with their own data - because this is one of the few investments where the ethics, the law, the equity audit and the spreadsheet all point the same way, and saying so publicly is the board's safest position - [[medical-ethics-law/justice-resources]].**
-:::
+- Psychological therapies (CBT, behavioural activation, IPT, DBT, MBT, family and trauma-focused therapies) are first-line for many disorders; NHS Talking Therapies delivers stepped care in England.
+- Each drug class has characteristic risks: hyponatraemia and bleeding with SSRIs, metabolic and movement effects with antipsychotics, a narrow therapeutic index with lithium, teratogenicity with valproate, dependence with benzodiazepines.
+- Distinguish serotonin syndrome (hours, clonus) from NMS (days, rigidity).
+- Steady state is reached after about four to five half-lives; check lithium levels after steady state, 12 hours post-dose.
+- ECT is the most effective treatment for severe depression; under the Mental Health Act a capacitous refusal of ECT cannot be overridden except in a life-saving emergency.
+- The Mental Health Act 1983 allows detention for assessment (section 2, 28 days) or treatment (section 3, 6 months) with safeguards; holding powers (5(2), 5(4)), police powers (135, 136), CTOs and section 117 aftercare.
+- The Mental Health Act 2025 is being commenced in stages: serious-harm and therapeutic-benefit criteria, a nominated person, care and treatment plans and limits on detaining autistic people and people with learning disabilities.
+- The Mental Capacity Act 2005 sets out five principles and a functional test; DoLS authorise deprivations of liberty.
+- Use the Mental Health Act for mental disorder treatment when its criteria are met; use the Mental Capacity Act for decisions about people who lack capacity, including physical health care.
 :::
 
 ## Exercises
 
-::: exercise Choose the legal framework {level=1}
-MHA, MCA-plus-DoLS, common-law-urgency, or no-law-needed (voluntary): (a) delirious ICU patient pulling lines, family unreachable; (b) diabetic-foot sepsis patient with anorexia-level BMI refusing admission at 84 with clear reasoning; (c) manic patient spending savings and sleeping nil with no insight, not dangerous yet; (d) autistic 20-year-old in an assessment-unit ward who cannot leave, parents say 'she's fine with it'.
+::: exercise Sections and durations {level=1}
+Give the maximum duration of each: section 2, section 3 (initial period), section 4, section 5(2), section 5(4), section 136 (without extension).
 ::: solution
-**Framework-selection ([[#def-mha]], [[#def-capacity]]): (a) - MCA-with-best-interests-treatment (the life-or-limb necessity and the IMCA-and-advocate-when-unreachable-adjacent and the urgent-treatment documentation; the DoLS question arises the moment sedation-and-restraint-for-safety-continues beyond acute necessity), (b) - no-law-needed (the capacitous-refusal-is-a-refusal rule - the best-interests-versus-autonomy line, the 'offer the alternatives: dressing-change-service-and-day-case-and-safeguarding-the-feet-and-review-tomorrow' management and the capacity-review-if-deteriorating, not a paternalism reflex), (c) - MHA-assessment-threshold-if-criteria-met (the degree-and-nature-of-disorder-and-necessary-for-protection test - the early-CTO-versus-admission decision done with risk-formulation and least-restriction-reasoning, and the MCA-not-applicable note because her capacity for treatment is arguably impaired by the illness itself - the jurisprudence-crux stated), and (d) - deprivation-of-liberty-flags-raised (the objective-control element met, the capacity-assessment-and-best-interests-process-and-authorisation completed or the arrangement redesigned, the 'settled equals lawful' fallacy named, and the autism-inappropriate-detention scrutiny the law's history demands) - [[psychiatry/eating-personality-disorders]], [[medical-ethics-law/consent-capacity]].**
+Section 2: 28 days. Section 3: 6 months initially. Section 4: 72 hours. Section 5(2): 72 hours. Section 5(4): 6 hours. Section 136: 24 hours (extendable by up to 12 hours in specified circumstances).
 :::
 :::
 
-::: exercise Run the capacity assessment {level=2}
-A 55-year-old with severe depression-refuses-ECT-and-oral-antidepressants-and-food-sometimes; document a defensible capacity assessment for refusing ECT, naming what you asked and why each answer mattered.
+::: exercise Five principles {level=1}
+List the five principles of the Mental Capacity Act 2005.
 ::: solution
-**Capacity-documentation ([[#def-capacity]], [[medical-ethics-law/consent-capacity]]): the-setup - treat-the-depression-enough-to-test (the severe-depression's cognitive-psychomotor-impairment-treatment-first-then-retest principle so the finding is about capacity not symptoms) and the-diary-of-times (the best-hour-of-day re-ask and the support-person-and-notes-adaptations), the-four-limbs-with-evidence - understanding (her restatement of what ECT is, the anaesthetic and the memory-risk in her own words - the memory-fear itself often being accurate rather than delusional, so correcting facts before invoking incapacity), retention (the repeat-questions-over-days and the written-and-recorded-explanations-adaptations she can refer back to), weighing (the 'help me see you've thought it through' probe - the hopelessness-distorting-the-weighing question, the nihilistic-and-guilt-cognitions screen that would shift the diagnosis toward illness-driven-refusal, and whether her stated reasons track her own past values - the 'you wrote novels about forgetting being the tragedy' consistency-test done gently), and communicating (the reliable-answer-and-not-dissociated-or-akinetic state documented), plus the-illness-link argument if incapacity is found (the specific cognitive symptom distorting which limb - stated, not assumed, and the second-opinion-and-approval-clinician-and-second-nurse-and-family-collateral and the-advance-statement-and-LPA-check), and the-alternative-decision-tree (the least-restrictive-stepwise-plan - oral-then-nasogastric-then-involuntary-treatment-and-ECT-as-last-station with the tribunal-and-second-opinion-right-explained, the best-interests-file with her-wishes-recorded-verbatim, and the review-interval named); and the-honesty-marks (the documented-attempt-at-supported-decision-making, the 'she may still refuse and we will accept that unless incapacity is found' line, and the note another clinician could re-run in a week - because the defensible assessment is reproducible, dated and specific) - [[psychiatry/mood-disorders]], [[clinical-skills/records-handover]].**
+(1) Assume capacity unless it is established that it is lacking. (2) Take all practicable steps to help the person decide before concluding they cannot. (3) An unwise decision does not in itself mean lack of capacity. (4) Act in the person's best interests if they lack capacity. (5) Choose the less restrictive option where possible.
 :::
 :::
 
-::: exercise Manage the seclusion incident {level=2}
-A patient on an acute ward was secluded four hours after a violent episode; staff used prone restraint for 90 seconds; the family is furious; the patient remembers nothing. Handle the aftermath clinically, legally and systemically.
+::: exercise Serotonin syndrome or NMS? {level=1}
+A 30-year-old taking sertraline is given tramadol after an injury. Within hours she is agitated, sweating, with dilated pupils, diarrhoea and inducible clonus. Which syndrome is this, and why?
 ::: solution
-**Post-restraint-and-seclusion-debrief ([[#def-mha]], [[#def-therapies]], [[clinical-skills/patient-safety]]): the clinical-now - the physical-check-and-injury-documentation for patient-and-staff (the positional-asphyxia vigilance and the post-restraint-observation period with observations-q15min and the rehydration-and-bloods-adjacency), the trauma-informed-debrief-with-the-patient (the 'what do you remember, what would help' conversation done by someone she trusts, the memory-loss-as-side-effect-of-sedation-versus-terror dissociation explained honestly, and the psychological-support-and-possible-PTSD-follow-up offered because seclusion retraumatise a measurable minority), and the family conversation (the factual-timeline given without defensiveness, the recording-and-policy-copies offered, the complaints-and-advocacy-routes named before they have to ask); the legal-and-recorded duties - the Restrictive-Practice-Recording-and-Reporting standards and the patient's own record completed (the reason-why-less-restrictive-failed-duration-and-monitoring-log), the notification-obligations (the CQC-and-local-incident-report and the safeguarding-adults-or-children-referral if applicable), the mental-health-act-status-review (whether the detention-justification changed and whether she is now informal-but-fearful - the therapeutic-alliance post-incident repair-plan), and the staff-support-side (the debriefed-and-injured-and-morally-injured staff, the 'we do this to keep people safe' counter-narrative resisted in favour of the 'we failed to prevent it' standard, and the restrictive-practice-reduction-programme re-training scheduled); and the systemic-loop - the trigger-analysis with the ward data (the times-and-staffing-and-ligature-and-noise-and-previous-incidents map, the 'what would have made this unnecessary' list - the quiet-room-not-seclusion-room design and the psychiatric-advance-statement that says 'when I'm escalating ask me X'), the incident-informed-practice-changes fed back to staff and patients visibly, and the restraint-and-seclusion rate published as the harm-metric it is, because the systems that reduced prone-restraint to near-zero proved it's culture-and-training work, not inevitable danger - [[psychiatry/psychotic-disorders]], [[clinical-skills/patient-safety]].**
+Serotonin syndrome: rapid onset within hours of adding a second serotonergic drug (tramadol has serotonergic activity), with clonus, hyperreflexia, agitation, mydriasis and diarrhoea. NMS develops over days with an antipsychotic and causes lead-pipe rigidity and reduced reflexes.
 :::
 :::
 
-::: exercise Draft the reduced-restraint strategy {level=3}
-Your acute ward's seclusion rate is triple the national median and disproportionally affects Black men. Design the multi-level strategy and the governance that makes it stick across staff turnover.
+::: exercise Steady state {level=2 check="100*(1-0.5^4)"}
+What percentage of the steady-state concentration is reached after four half-lives of regular dosing?
 ::: solution
-**Reduced-restraint-strategy ([[#def-mha]], [[#def-therapies]], [[public-health/determinants-inequalities]], [[clinical-skills/patient-safety]]): the evidence-frame adopted publicly (the control-altitude-and-positive-practice programmes - the US twenty-point and UK reduce-restrictive-practice toolkits whose facilities reduced seclusion and restraint substantially without increasing injury, and the systematic-review finding that environmental, training and reporting packages reduce restraint without increasing injury), so the strategy names its model and its metrics from day one; the ward-level levers - the sensory-and-quiet-and-garden-and-night-routine redesign and the 1:1-and-engagement-staffing-not-observation-choreography, the de-escalation-training-with-refresher-cadence (the non-violent-crisis-intervention-with-values-not-just-holds argument, and the 'two-staff-rule and no-shouting-corridor' culture rules), the patient-co-produced psychiatric-advance-directories (the 'this is what helps me calm' documents made while well and honoured when unwell), and the trigger-analysis-reviews-with-staff-as-clinicians-not-suspects (the incident-clinic that changes the ward not the person); the equity layer that the disparity makes non-optional - the ethnicity-and-disability-disaggregated-restraint-and-seclusion-and-medication-and-police-involvement dashboards reviewed by the board, the cultural-safety-and-implicit-bias-training that works when paired with structural-change not when substituted for it (the workforce-diversity-and-seniority-and-promotion-pipeline data and the community-and-faith-partnership-with-trust-broken-by-previous-deaths addressed honestly), the patient-and-family-advocacy-presence-on-the-round-and-on-the-panel, and the review of whether risk-assessment-tools imported the policing-and-children-services-data that produced the disparity; the workforce-continuity mechanics - the protected-training-time-and-supernumeracy-rules-and-bank-and-agency-staff-included (the turnover-proofing-the-strategy-through-booking-and-competency-passports), the moral-injury-and-reflective-practice-support that stops the burnout-then-punitiveness cycle, and the new-starters'-first-week-on-values-not-technique; and the governance - the board-owner-with-monthly-public-metrics-and-the-fortnightly-executive-review-until-targets-met, the restraint-rate-and-disparity-parity-as-the-primary-endpoints (the seclusion-hours-per-1000-bed-days and the incidence-rate-ratio-by-ethnicity), the coroner-and-prevention-review-and-P25-adjacent-learning-linked-in, the staff-safety-and-injury-and-assault-reporting-and-support kept visible so the strategy is read as safer-for-everyone-not-permissive, and the external challenge panel of patients-carers-community-organisations with the power to publish, because this strategy's history shows it only sticks when someone outside the hierarchy can see the numbers first - [[public-health/determinants-inequalities]], [[medical-ethics-law/justice-resources]].**
+$f = 1 - 0.5^4 = 1 - 0.0625 = 0.9375$, so **93.75%**.
+:::
+:::
+
+::: exercise Too early a level {level=2 check="round(100*(1-0.5^(2.5)))"}
+A drug's half-life is 2 days. A level is taken 5 days after starting regular dosing. What percentage of the eventual steady-state level does it represent? Give a whole-number percentage.
+::: solution
+$t/t_{1/2} = 5/2 = 2.5$. $f = 1 - 0.5^{2.5} = 1 - 0.177 = 0.823$, so about **82%**. Interpreting this as steady state would underestimate the final level by about a fifth.
+:::
+:::
+
+::: exercise Which Act? {level=2}
+For each, state which framework applies and why: (a) a man with dementia who lacks capacity needs a hip fracture repair; (b) a woman with mania who has capacity but refuses admission despite serious risk to her finances and safety; (c) a man detained under section 3 for schizophrenia develops appendicitis and lacks capacity to consent to surgery.
+::: solution
+(a) Mental Capacity Act: treatment of a physical condition in a person who lacks capacity, in his best interests. (b) Mental Health Act: she has a mental disorder of a nature and degree warranting admission, with risk, and treatment cannot be given without detention; capacity does not prevent detention. An assessment under section 2 would be considered. (c) Mental Capacity Act: the Mental Health Act authorises only treatment for mental disorder; appendicitis is unrelated, so surgery is given in his best interests under the Mental Capacity Act (or with his consent if he regains capacity).
+:::
+:::
+
+::: exercise A tribunal question {level=3}
+A patient detained under section 3 asks you, as a junior doctor, how she can challenge her detention, and complains that her mother (her nearest relative) has too much say. Explain her rights under the current law and what will change under the Mental Health Act 2025.
+::: solution
+Under the 1983 Act she can apply to the First-tier Tribunal (Mental Health) once in each period of detention (the first six months, the next six months, then yearly), and her case is automatically referred if she does not apply for a set period. She can also ask the hospital managers to review her detention. She is entitled to an independent mental health advocate and to free legal representation for the tribunal. Her nearest relative is determined by a statutory list, not by her choice; she can apply to the county court to displace an unsuitable nearest relative. Under the Mental Health Act 2025, once commenced, the nearest relative will be replaced by a nominated person she chooses, tribunal reviews will be more frequent, and she will have a statutory care and treatment plan. Because commencement is staged, it is important to check which provisions are in force and to involve the IMHA and ward staff in explaining them.
+:::
+:::
+
+::: exercise Least restrictive care {level=3}
+A 19-year-old with a first episode of psychosis is frightened and refuses admission, but agrees to daily home visits from the crisis team and to take medication if his sister stays with him. His parents want him "sectioned" for his own safety. Discuss the legal and ethical considerations.
+::: solution
+The Mental Health Act requires that detention be necessary and that treatment cannot be provided without it. The least restrictive principle, in both the Mental Health Act Code of Practice and the Mental Capacity Act, means considering alternatives first. If home treatment by the crisis team with his sister's support can manage the risk adequately, detention is not justified, even if his parents would feel more reassured. The assessment must still be thorough: the nature and degree of his illness, risks to himself (suicide, self-neglect, vulnerability) and to others, his insight and capacity, and the reliability of the plan. Engaging him voluntarily is likely to support a better long-term relationship with services and early intervention care. His parents' concerns deserve a respectful response and information; they should know how to seek help if the situation changes. If the home plan breaks down or risk rises, a Mental Health Act assessment can be arranged. Document the reasoning.
 :::
 :::
