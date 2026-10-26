@@ -1,138 +1,307 @@
-Acute kidney injury (AKI) is the abrupt loss of the filtration-and-regulation organ described in [[renal/filtration]] and [[renal/tubular-function]]: **a syndrome with formal staging criteria, a three-compartment aetiology (prerenal-tubular-interstitial-glomerular-vascular-and-obstructive), a urine-sediment reading tradition, a handful of drug-and-sepsis-and-surgery exposures that make it the commonest inpatient laboratory emergency, and a management that is mostly supportive precision — plus the recognition that every AKI is a step on the road to chronic kidney disease ([[renal/chronic-kidney-disease]]) and that some are wholly reversible if found in the next six hours ([[renal/urinary-tract]]'s obstruction).**
+Acute kidney injury (AKI) is a sudden fall in kidney function over hours to days. It is common, often silent and frequently preventable. It complicates a large share of emergency admissions, especially in older people, and affects many patients in intensive care. Most cases are not caused by primary kidney disease but by something else going wrong: dehydration, sepsis, heart failure, a drug, an obstructed bladder. The kidney is the organ that reveals how unwell the rest of the body is.
 
-This chapter covers AKI definitions and epidemiology, the prerenal and intrinsic and postrenal causes, urine diagnostics, supportive and renal-replacement management, and prevention.
+AKI matters for three reasons. It causes immediate dangers: hyperkalaemia, acidosis, fluid overload and accumulation of drugs. It is associated with higher mortality, even when mild, and the risk rises with stage. And people who survive AKI are more likely to develop chronic kidney disease later.
 
-## Defining and recognising
+This lesson defines and stages AKI, explains how to find its cause using a three-part classification, and sets out the principles of management, the indications for dialysis and prevention. It builds on [[renal/filtration]] (GFR and creatinine), [[renal/water-sodium]] (volume) and [[renal/potassium-calcium-phosphate]] (hyperkalaemia). The UK framework referred to throughout is the NICE guideline NG148 (2019), which uses the KDIGO definitions.
 
-::: definition KDIGO AKI, epidemiology and the pseudo-raises {#def-ak}
-**AKI (KDIGO): the rise in serum creatinine ≥26.5 µmol/L within 48 h, or ≥1.5× baseline within 7 days, or urine output <0.5 mL/kg/h for ≥6 h — staged by whichever criterion is worse: stage 1 (creatinine 1.5–1.9× baseline or a ≥26.5 µmol/L rise; urine <0.5 mL/kg/h for 6–12 h), stage 2 (2.0–2.9×; urine <0.5 mL/kg/h for ≥12 h), stage 3 (≥3×, or creatinine ≥354 µmol/L, or RRT started; urine <0.3 mL/kg/h for ≥24 h or anuria for ≥12 h)** — criteria designed for early sensitivity (hence the false-positive "single morning rise after fluids" problem — recheck-and-reinterpret), with **AKD (acute kidney disease) for 7-90-day and CKD >90-day durations — and the hard epidemiology: hospital-incidence 10-20 % (50 %+ in ICU), mortality tracked to stage, and the AKI-to-CKD-transition and long-term-mortality-and-frailty sequelae making every episode an incur-one ([[renal/chronic-kidney-disease]] and [[geriatrics-palliative/ageing-frailty]]).** Before treating a number: **exclude pseudo-creatinine-raises — assay interference (ketones and glucose in the Jaffe method ([[renal/filtration]]); trimethoprim, cimetidine and other secretion-blockers ([[pharmacology/adverse-reactions]])); reduced-muscle and volume shifts ([[renal/filtration]]'s hyperbola), and the obstruction-signal rule (true anuria (<200 mL/day) means obstruction, vascular occlusion or catastrophic-shock/cortical-necrosis, not ATN — [[renal/urinary-tract]]).** Risk-stratified vigilance: the cardiac-surgery-and-sepsis-and-contrast-and-nephrotoxic-drug-combination patients and the elderly-and-CKD-and-diabetes-and-hypovolaemia registers ([[surgery/perioperative-care]] and [[endocrine/diabetes-complications]] and [[cardiovascular/heart-failure]]) — the prevention bundle lives at the end of the chapter.
+## Definition and staging
+
+::: definition KDIGO definition and staging of AKI {#def-ak}
+The KDIGO (Kidney Disease: Improving Global Outcomes, 2012) definition of **acute kidney injury** is any of:
+
+- a rise in serum creatinine of **26.5 µmol/L (0.3 mg/dL) or more within 48 hours**;
+- a rise in serum creatinine to **1.5 times baseline or more**, known or presumed to have occurred **within the previous 7 days**;
+- a urine output **below 0.5 mL/kg/h for 6 hours or more**.
+
+AKI is **staged by whichever criterion, creatinine or urine output, gives the higher stage**:
+
+| Stage | Serum creatinine | Urine output |
+|---|---|---|
+| 1 | 1.5–1.9 × baseline, or a rise of 26.5 µmol/L or more | below 0.5 mL/kg/h for 6–12 hours |
+| 2 | 2.0–2.9 × baseline | below 0.5 mL/kg/h for 12 hours or more |
+| 3 | 3.0 × baseline or more, or creatinine 354 µmol/L (4.0 mg/dL) or more, or renal replacement therapy started | below 0.3 mL/kg/h for 24 hours or more, or anuria for 12 hours or more |
+
+A reduction in kidney function lasting 7–90 days is called **acute kidney disease** (AKD); beyond 90 days it meets the definition of chronic kidney disease.
 :::
 
-::: definition The three-compartment classification and urine diagnostics {#def-class}
-**Compartment 1 — prerenal (the functional hypo-perfusion of [[renal/filtration]]'s autoregulation failing: volume depletion ([[renal/water-sodium]]'s salt-loss table), low-effective-filling states (heart failure ([[cardiovascular/heart-failure]]) and cirrhosis ([[gastrointestinal/liver-disease]]'s hepatorenal physiology — the terlipressin-and-albumin splanchnic-vasoconstriction therapy) and nephrotic states ([[renal/chronic-kidney-disease]])), impaired autoregulation (the NSAID afferent-constrictor-unopposed and ACEi/ARB-efferent-dilator combinations — [[renal/filtration]]'s triple-whammy example and the bilateral-renal-artery-stenosis singleton ([[cardiovascular/vascular-disease]])) — urine concentrating (low sodium <20 and osmolality >500 and FENa <1 % and protein-scarce with hyaline casts), and reversible with perfusion ([[#ex-prerenal-diuretic]] caveat below).** **Compartment 2 — intrinsic renal: acute tubular injury/necrosis (the ischaemic-reperfusion-and-sepsis-and-toxin tubulopathy — the patchy tubular-cell cytoskeletal loss and brush-border shedding (the muddy-brown-granular-casts) and cast-occlusion and medullary-hypoxia and calcium-and-inflammatory ([[pathology/cell-injury]] and [[immunology/innate-immunity]] mechanisms) — urine salt-wasting (FENa >2 % and isosthenuria) with the classic initiation-oliguric-maintenance-polyuric-recovery phases ([[#def-support]]); the non-oliguric variants (the aminoglycoside and contrast patterns); acute interstitial nephritis (the drug-hypersensitivity (NSAIDs-and-antibiotics-and-PPI-and-rifampicin-and-quinolones — [[pharmacology/adverse-reactions]]) with the rarely-complete classic triad (fever-rash- eosinophilia — the poor performance of all three ([[clinical-skills/laboratory-tests]])), the WBC-casts-and-white-cell-without-infection picture, and the differential (infection-and-sarcoid ([[respiratory/interstitial-vascular-disease]]) and IgG4-and- Sjögren ([[immunology/autoimmunity]]) and vasculitis ([[musculoskeletal/connective-tissue-vasculitis]])); the glomerulonephritides and vasculitides presenting as RPGN — the red-cell-casts-and-dysmorphic-haematuria-and-proteinuria-and-falling-function emergency needing same-day nephrology (the anti-GBM-and-ANCA-and-lupus-serologies and biopsy — [[renal/chronic-kidney-disease]]'s glomerular chapters); and the vascular kidney (the malignant-hypertension ([[cardiovascular/hypertension]]) and thrombotic-microangiopathies (the TTP-and-HUS-and-aHUS-and-drug-and-pregnancy ([[obstetrics-gynaecology/pregnancy-complications]]) and malignant-hypertension overlap — the haemolysis-platelets-schistocytes-and-LDH-and-haptoglobin panel ([[blood/haemostasis-bleeding]]) and the plasma-exchange-or-eculizumab emergency — [[renal/urinary-tract]]-adjacent) and the atheroembolic shower (post-catheterisation-and-anticoagulation — the livedo-and-blue-toe-and-stuttering-course-and-eosinophilia-and-low-complement signature ([[#ex-athero]])).)** **Compartment 3 — postrenal/obstruction: the [[renal/urinary-tract]]'s plumbing (prostate and clot and stone and retroperitoneal-fibrosis-and-malignancy-and-gynaecological-and-cervical ([[gastrointestinal/bowel-disease]] and [[obstetrics-gynaecology/gynaecological-cancer]]) and neurogenic and drug-retention (anticholinergics-and-opioids-and-epidural ([[surgery/anaesthesia-pain]]) and the single-functioning-kidney rules) — bilateral-or-high-grade obstruction needing decompression (catheter-or-nephrostomy-or-stent — the ultrasound hydronephrosis-first algorithm ([[clinical-skills/medical-imaging]]) and the obstructed-infected-kidney = drainage-emergency ([[renal/urinary-tract]])).** The urine-sediment atlas and indices (the FENa — and the FE-urea <35 % alternative under diuretics ([[#ex-prerenal-diuretic]]); the protein-quantification and the crystal alphabet (urate-tumour-lysis and calcium-oxalate-ethylene-glycol ([[renal/acid-base-disorders]]'s methanol example-era and vitamin-C-and-methoxyflurane ([[emergency-critical-care/poisoning]])) and drug-crystals (sulfadiazine-and-acyclovir-and-indinavir-and-cipro)) and the biomarker-landscape (the cystatin C kinetics ([[renal/filtration]]), the NGAL-and-KIM-1-and-others research-trajectory and the current clinical inferiority to creatinine-plus-history ([[clinical-skills/laboratory-tests]])) complete the diagnostic kit.
-:::
+The definition is designed to be sensitive. Small rises in creatinine count, because even small rises predict worse outcomes. The cost is that some "AKI" is not real kidney injury. Creatinine may rise slightly after a meat meal or with drugs that block its tubular secretion, such as trimethoprim. A single raised value should be interpreted against the clinical picture and repeated.
 
-::: example The prerenal picture that was not {#ex-prerenal-diuretic}
-A diuresed-heart-failure patient (furosemide doubled last week) has creatinine 110→168, Na 132, urine sodium 24, urine osmolality 410, FENa 1.4 %; BP 104/62, JVP still elevated, weight down 1 kg.
-::: solution
-**The FENa is in the "prerenal" band, but the diuretic invalidates it (the sodium-loading-and-flow effects — [[renal/tubular-function]]'s natriuresis and [[renal/filtration]]'s physiology): the FE-urea (<35 % supports true sodium-retention) and the clinical filling-assessment (the persisting-JVP-and-oedema with the falling-function — the cardiorenal-syndrome-type-1 conversation ([[cardiovascular/heart-failure]]: is this congestion-related renal-venous-hypertension and low-forward-flow, or over-diuresis? the JVP and weight-and-echo-and-IVC read decides ([[clinical-skills/physical-examination]])) decide the direction.** The actions: the diuretic may need increasing, not stopping (the congestion-relief-renal-improvement pattern [[cardiovascular/heart-failure]]), or a slower ultrafiltration strategy ([[renal/chronic-kidney-disease]]'s dialysis-modalities-adjacent); the NSAID-and-ACEi-and-ARB-and-SGLT2-and-metformin-and-SGLT2-and-spironolactone review ([[endocrine/diabetes-complications]] and [[renal/potassium-calcium-phosphate]]) and potassium-and-bicarbonate trend ([[renal/acid-base-disorders]]); and the sick-day-and-self-monitoring education so the next clinic-measured "bump" never arrives as an admission ([[geriatrics-palliative/polypharmacy]]).
-:::
-:::
+**Baseline** creatinine is the lowest value in the previous three months, or the median value from three to twelve months before, if available. In England, laboratories run an automated AKI algorithm that compares each creatinine with previous results and issues an **AKI warning stage** to alert clinicians.
 
-::: example The catheter lab aftermath {#ex-athero}
-Nine days after coronary angiography (stent), an 74-year-old has creatinine 95→260, eosinophils 1.2, CRP high, toes mottled with livedo on the knees, platelets 90, complement C3 low-ish, urine nearly bland, and the wound is clean.
-::: solution
-**Cholesterol-crystal atheroembolic disease (the shower from the atheromatous aorta — post-catheterisation-and-anticoagulation-and-thrombolysis and spontaneous — [[cardiovascular/vascular-disease]] and [[blood/haemostasis-bleeding]]'s antithrombotic trade-off):** the delayed-course (days-weeks, stuttering), the skin signs (livedo-and-blue-toe and the digital-and-penis-and-retinal (the Hollenhorst-plaques' eye counterpart — [[nervous-system/sensory-systems]]) emboli), the laboratory triad (eosinophilia-and-elevated-inflammatory-markers-and-hypocomplementaemia transiently), the bland-or-modest urine and the multi-organ tail (gut and pancreas and kidney — [[gastrointestinal/pancreas-biliary]]-adjacent), with tissue-crystal confirmation (skin-and-renal) rarely needed. Management is supportive and harm-reduction: **the anticoagulation-reassessment-with-cardiology (the stent-thrombosis-versus-embolisation-re-shower balance — [[cardiovascular/coronary-artery-disease]]'s dual-therapy duration logic), statin-and-risk-factor-control, avoidance of further showers (the future-catheterisation-documentation ([[clinical-skills/records-handover]]) and the vascular-surgery-planning), the renal-supportive-course (the dialysis-requirement minority and the incomplete-recovery expectation — [[renal/chronic-kidney-disease]]), the steroid-era-honesty (the no-established-immunosuppression-evidence and colchicine-and-pentoxifylline trial-orphans), and the prognosis-conversation with the skin-and-limb and stroke risks ([[nervous-system/stroke]]).**
-:::
-:::
+### Why creatinine lags
+
+Creatinine is a poor real-time marker. When GFR falls suddenly, creatinine production continues and creatinine accumulates gradually until a new steady state is reached. The time this takes depends on the new GFR.
 
 ::: widget plot
-f: 90+230*exp(-((x-3)^2)/8); 90+400*exp(-((x-9)^2)/45)
-x: 0, 30
-y: 60, 560
-labels: \text{days},\ \text{serum creatinine (µmol/L)};\ \text{prerenal, corrected day 2-3};\ \text{ischaemic ATN (typical course)}
-caption: The two creatinine trajectories that train the clinical intuition ([[#def-class]] and [[#def-support]]): the promptly-corrected prerenal insult (the early modest peak resolving in days — [[renal/water-sodium]]) versus the ATN curve (the later higher peak, the maintenance-phase plateau with its hyperkalaemia-acidosis-fluid-overload hazards — [[renal/potassium-calcium-phosphate]] and [[renal/acid-base-disorders]] — and the polyuric-recovery week with its own dehydration-and-electrolyte losses). Real patients mix and bend both lines (the contrast-pattern peaks at 48-72 h and returns by day 7-10 ([[renal/filtration]]'s Kf-lesson) and the non-recovering curve is the CKD-transition or ongoing-insult signal — [[renal/chronic-kidney-disease]]); the trajectory, not the single value, is the diagnosis ([[clinical-skills/laboratory-tests]]).
+f: 80/g+(80-80/g)*exp(-144*g*x/42)
+x: 0, 10
+y: 0, 900
+sliders: g=0.1:0.05:1:0.05
+hlines: 120; 160; 240
+labels: \text{serum creatinine after GFR falls to fraction } g
+caption: Serum creatinine (µmol/L) over days after GFR falls abruptly from 100 mL/min to a fraction $g$ of that, starting from 80 µmol/L, with creatinine distributed in 42 L of body water. The horizontal lines at 120, 160 and 240 µmol/L mark 1.5, 2 and 3 times baseline, the creatinine thresholds of KDIGO stages 1–3. Even a 90% loss of GFR ($g$ = 0.1) takes more than a day to reach stage 2. A simplified model assuming constant creatinine production; real patients who are acutely ill often make less creatinine.
 :::
 
-::: example The ward round that prevents disaster {#ex-oliguric}
-Day 2 of severe pancreatitis: urine output 0.3 mL/kg/h for 8 h despite fluid boluses, weight +7 L cumulative, K⁺ 6.4, HCO₃⁻ 13 (pH 7.18), creatinine 90→340, calcium falling; BP maintained on noradrenaline.
+This lag has two consequences. Creatinine underestimates the severity of AKI in its first day or two, so **urine output** is often the earlier warning. And an eGFR calculated from a rising creatinine overestimates the true GFR, so eGFR should not be used to assess AKI or to dose drugs while creatinine is changing ([[renal/filtration]]).
+
+## Finding the cause
+
+::: definition Prerenal, intrinsic and postrenal AKI {#def-class}
+**Prerenal AKI** is reduced GFR caused by reduced kidney perfusion, with the kidney itself structurally intact. Causes include hypovolaemia (bleeding, vomiting, diarrhoea, diuretics, poor intake), hypotension (sepsis, cardiogenic shock), reduced effective volume (heart failure, cirrhosis) and drugs that impair autoregulation (NSAIDs, ACE inhibitors, angiotensin receptor blockers). It reverses quickly when perfusion is restored. Prolonged or severe hypoperfusion progresses to tubular injury.
+
+**Intrinsic AKI** is damage to the kidney itself:
+- **acute tubular injury** (often called acute tubular necrosis, ATN), the commonest intrinsic cause, from ischaemia, sepsis or toxins (aminoglycosides, iodinated contrast, myoglobin in rhabdomyolysis, light chains in myeloma);
+- **acute interstitial nephritis**, usually a drug reaction (proton pump inhibitors, penicillins, NSAIDs, immune checkpoint inhibitors) or infection;
+- **glomerulonephritis**, particularly rapidly progressive forms (ANCA vasculitis, anti-GBM disease, lupus);
+- **vascular** disease: thrombotic microangiopathy, cholesterol emboli, renal artery or vein occlusion, malignant hypertension.
+
+**Postrenal AKI** is obstruction of urine flow anywhere from the renal pelvis to the urethra. To cause AKI, obstruction must affect both kidneys or a single functioning kidney. Common causes are prostatic enlargement, urinary retention from drugs or constipation, stones, pelvic tumours and blocked catheters.
+:::
+
+In practice, the cause is found by asking a few questions in a fixed order.
+
+1. **Is there obstruction?** Examine for a palpable bladder, perform a bladder scan, check that any catheter is draining. NICE NG148 recommends urgent ultrasound of the urinary tract **within 24 hours** when no cause has been found or obstruction is suspected, and **within 6 hours** if an infected obstructed kidney (pyonephrosis) is suspected.
+2. **Is perfusion inadequate?** Assess volume status, blood pressure relative to the person's usual level, heart failure and sepsis.
+3. **Is there a nephrotoxin?** Review every drug, recent contrast, and causes of rhabdomyolysis or haemolysis.
+4. **Is there evidence of intrinsic kidney disease?** Test the urine with a dipstick in everyone with AKI. Blood and protein on dipstick, in the absence of an obvious alternative such as a catheter or infection, suggest glomerulonephritis and need urgent investigation and discussion with a nephrologist.
+
+### Urine tests
+
+The **urine sediment** gives direct evidence from the kidney. Muddy brown granular casts and tubular cells suggest acute tubular injury. Red cell casts and dysmorphic red cells suggest glomerulonephritis. White cell casts and sterile pyuria suggest interstitial nephritis.
+
+Urine sodium tells you whether the tubules are still conserving sodium. In prerenal AKI, intact tubules reabsorb sodium avidly and urine sodium is low; in tubular injury, sodium handling fails and more escapes.
+
+::: theorem Fractional excretion of sodium {#thm-fena}
+The **fractional excretion of sodium** (FENa) is the percentage of filtered sodium that is excreted:
+
+$$
+\text{FENa} (\%) = \frac{U_{Na} \times P_{Cr}}{P_{Na} \times U_{Cr}} \times 100
+$$ {#eq-fena}
+
+In oliguric AKI, a FENa **below 1%** suggests a prerenal state with intact tubular function; above **2%** suggests tubular injury. When diuretics have been given, the **fractional excretion of urea** is less affected; a value below about 35% suggests a prerenal state.
+:::
+
+::: proof
+Fractional excretion is excreted sodium divided by filtered sodium. Excreted sodium per minute is $U_{Na} V$. Filtered sodium is $\text{GFR} \times P_{Na}$, and GFR can be estimated by creatinine clearance, $U_{Cr} V / P_{Cr}$. So
+
+$$
+\text{FENa} = \frac{U_{Na} V}{(U_{Cr} V / P_{Cr}) \times P_{Na}} = \frac{U_{Na} P_{Cr}}{P_{Na} U_{Cr}}
+$$
+
+The urine flow $V$ cancels, so FENa can be calculated from spot samples. Using a ratio to creatinine corrects for how concentrated the urine is, which a urine sodium alone cannot do.
+
+FENa is only a guide. It is low in some intrinsic causes (contrast nephropathy, rhabdomyolysis, early sepsis, glomerulonephritis) and high in prerenal states when diuretics have blocked sodium reabsorption or when chronic kidney disease limits sodium conservation. Urea is mostly reabsorbed in the proximal tubule, upstream of loop and thiazide diuretics, so its fractional excretion remains low in prerenal states despite diuretics.
+:::
+
+::: example A prerenal picture hidden by diuretics {#ex-prerenal-diuretic}
+An 80-year-old man with heart failure takes furosemide. After a week of poor appetite and diarrhoea, his creatinine has risen from 110 to 220 µmol/L. Blood pressure is 96/60 mmHg (usually 135/80) and he is dizzy on standing. Urine sodium is 45 mmol/L, plasma sodium 134 mmol/L, urine creatinine 8 mmol/L. Urine urea is 200 mmol/L, plasma urea 20 mmol/L. Calculate FENa and the fractional excretion of urea and interpret.
 ::: solution
-**Stage-3 AKI (KDIGO — [[#def-ak]]) in septic-inflammatory capillary-leak pancreatitis ([[gastrointestinal/pancreas-biliary]]) with the dangerous triad (hyperkalaemia — [[renal/potassium-calcium-phosphate]] — plus metabolic-acidosis — [[renal/acid-base-disorders]] — plus volume-overload-with-pressors):** the bundle: **the ECG-and-calcium-and-insulin-dextrose-and-salbutamol emergency-potassium protocol ([[renal/potassium-calcium-phosphate]]'s hyperkalaemia bundle and [[endocrine/diabetes]]), stop all potassium-and-renin-angiotensin-and-NSAID-and-metformin exposures ([[pharmacology/adverse-reactions]] and [[renal/filtration]]'s triple-whammy logic), the acidosis-ventilation discussion (the compensation-matching and intubation-risk teaching — [[emergency-critical-care/airway-ventilation]]), the fluid-strategy pivot (the cumulative-positive-balance harm of the [[emergency-critical-care/shock-fluids]] de-resuscitation-phase logic and the sodium-and-water-plan with the renal-replacement team), and the RRT-decision (the refractory-hyperkalaemia-and-acidaemia-and-overload-and-uraemic-complications "AEIOU" framework — [[#def-support]]; the early-versus-late timing trials' negative verdicts and the current "complication-triggered, not number-triggered" consensus ([[renal/chronic-kidney-disease]])): with CRRT chosen for haemodynamic-fragility (the continuous-versus-intermittent-clearance-and-anticoagulation-and-citrate-calcium logistics — [[emergency-critical-care/critical-care]] and [[blood/transfusion]]-adjacent circuits), the drug-dose-recomputation (the vancomycin-and-antibiotic-and-sedative-accumulation — [[pharmacology/dosing-principles]]), and the daily reassessment for native-kidney-recovery (the polyuric-phase recognition and weaning-from-CRRT protocols) and the post-AKI follow-up booking (the [[renal/chronic-kidney-disease]] eGFR-and-proteinuria-trajectory clinic that this admission must feed).**
+Convert creatinine to the same unit: $U_{Cr} = 8000$ µmol/L, $P_{Cr} = 220$ µmol/L.
+
+$$
+\text{FENa} = \frac{45 \times 220}{134 \times 8000} \times 100 = 0.92\%
+$$
+
+Fractional excretion of urea:
+
+$$
+\text{FEUrea} = \frac{200 \times 220}{20 \times 8000} \times 100 = 27.5\%
+$$
+
+His creatinine has doubled: **stage 2 AKI**. The clinical picture of low blood pressure, postural dizziness and fluid loss suggests a **prerenal** cause. His urine sodium of 45 looks "high" because furosemide blocks sodium reabsorption, but the FENa is just under 1% and the FEUrea is below 35%, both consistent with a prerenal state.
+
+Management: withhold furosemide and any ACE inhibitor while he is volume depleted, give cautious fluid with frequent reassessment (his heart failure limits how much he tolerates), monitor urine output and creatinine, and restart heart failure drugs once he has recovered, as part of a planned review.
 :::
 :::
 
-::: definition Supportive management, RRT and prevention {#def-support}
-**The supportive spine (there is no proven ATN drug — the dopamine-and-analog-natriuretic-peptide-and-low-dose-furosemide "renal-dose" era's negative-trial graveyard is the teaching ([[epidemiology-ebm/randomised-trials]])): treat-the-cause and protect-the-organ-system-by-system — the daily-weight-and-balance-and-sodium-and-fluid-target discipline ([[renal/water-sodium]]); the potassium ([[renal/potassium-calcium-phosphate]]), bicarbonate ([[renal/acid-base-disorders]]), calcium-phosphate ([[renal/potassium-calcium-phosphate]] and [[endocrine/bone-calcium]]) and urate surveillance; the drug-reconciliation (the renally-cleared-dose-recomputation and the nephrotoxin-and-contrast-and-NSAID-avoidance and the sick-day-rules — [[pharmacology/dosing-principles]] and [[geriatrics-palliative/polypharmacy]]); the nutrition-and-protein-target (the catabolic-versus-renal-diet tension and the early-feeding [[gastrointestinal/clinical-nutrition]] with the refeeding-electrolytes ([[renal/potassium-calcium-phosphate]]) and the access-to-water-and-drug-administration logistics); the infection-and-line-and-avoid-catheter-swap-and-pressure-sore-and-VTE-and-GI-prophylaxis ICU bundles ([[infectious-diseases/healthcare-infections]] and [[blood/thrombosis-anticoagulation]] and [[emergency-critical-care/critical-care]]); the polyuric-recovery phase's fluid-and-electrolyte replacement (the measured-losses-and-two-thirds-replacement and the sodium-and-potassium-and-magnesium follow — [[renal/water-sodium]] and [[renal/potassium-calcium-phosphate]]) and the post-obstructive-diuresis variant with its urea-and-solute-driven extremes ([[renal/urinary-tract]]).** **RRT (the indications — the "AEIOU"-organised: refractory Acidosis, dangerous electrolytes (the K⁺ and calcium-phosphate), Intoxications (the dialysable-poison list ([[emergency-critical-care/poisoning]]), Overload (the diuretic-resistant-pulmonary-oedema — [[cardiovascular/heart-failure]]) and Uraemic-complications (the pericarditis-and-encephalopathy-and-bleeding and the severe-uraemia-contexts)), the modality-choice (the intermittent-versus-continuous-haemodialysis-versus-SLED haemodynamic-and-availability-and-clearance trade ([[emergency-critical-care/critical-care]] and [[renal/chronic-kidney-disease]]'s dialysis-unit world), the access (the femoral-versus-internal-jugular site-choice, the infection-and-thrombosis ultrasound-guidance and the daily-necessity-reviews ([[renal/urinary-tract]]-adjacent-line-care) and the anticoagulation (the citrate-regime-and-calcium-monitoring ([[endocrine/bone-calcium]]) and the bleeding-risk-renal-dose logic — [[blood/thrombosis-anticoagulation]])) and the goals-of-care mirror (the RRT-withdrawal-and-limitation conversations and the dialysis-time-limited-trials — [[geriatrics-palliative/end-of-life-care]] and [[medical-ethics-law/end-of-life-ethics]])).** **Prevention (the evidence-bundle: risk-documentation-and-avoid (the drug-and-contrast-registers — [[clinical-skills/patient-safety]]), the contrast-associated-AKI hygiene (the risk-stratified-hydration-with-isotonic, the-minimise-volume-and-no-repeat-in-days-and-the-metric-era's-troponymy-lessons ([[clinical-skills/medical-imaging]]), the no-routine-NAC (the negative-trial verdict) and the hold-metformin-and-ACEi-and-diuretics-peri-procedure nuance ([[endocrine/diabetes-complications]] and [[surgery/perioperative-care]])), the perioperative bundle (the isotonic-maintenance-and-chloride-load-and-hypotension-thresholds and the cardiac-surgery-pump-and-bypass physiology — [[surgery/perioperative-care]] and [[cardiovascular/circulation-blood-pressure]]), the sepsis-bundle early-antibiotics-fluids-lactate ([[infectious-diseases/fever-sepsis]] and [[emergency-critical-care/resuscitation]]), and the AKIKD-CKD-transition-clinic handoffs ([[renal/chronic-kidney-disease]]).**
+::: example After the catheter laboratory {#ex-athero}
+A 72-year-old man who smokes has coronary angiography and stenting via the femoral artery. Three weeks later his creatinine has risen from 120 to 310 µmol/L. He has painful purple mottling of the toes, a net-like rash on his legs (livedo reticularis), eosinophilia and low complement levels. What is the likely cause, and how does the timing help?
+::: solution
+This is **cholesterol embolism (atheroembolic kidney disease)**. Manipulating catheters in an atheromatous aorta dislodges cholesterol crystals that lodge in small arteries of the kidney, skin and gut, triggering inflammation. Eosinophilia and low complement are common.
+
+The timing distinguishes it from **contrast-associated AKI**: after iodinated contrast, creatinine typically rises within 24–72 hours and recovers within one to two weeks, whereas atheroembolic AKI often appears days to weeks later and progresses stepwise, often with incomplete recovery. Treatment is supportive: avoid further vascular procedures where possible, control blood pressure, give statins for the underlying atherosclerosis. Anticoagulation is generally avoided because it may promote further embolisation.
+:::
+:::
+
+## Management
+
+::: definition Principles of AKI management {#def-support}
+There is no drug that heals the injured kidney. Management aims to **remove the cause, restore perfusion, prevent further injury and treat the complications** until the kidney recovers. The core actions, consistent with NICE NG148, are:
+
+- **assess and correct volume status**: give fluid to people who are hypovolaemic, with frequent reassessment; avoid fluid overload, which worsens outcomes;
+- **restore blood pressure** in shock, with vasopressors in critical care if needed;
+- **treat sepsis** promptly;
+- **review every medicine**: stop nephrotoxins (NSAIDs, aminoglycosides where possible), temporarily withhold drugs that impair autoregulation or worsen volume (ACE inhibitors, angiotensin receptor blockers, diuretics), withhold drugs that accumulate and cause harm (metformin, some oral hypoglycaemics), and adjust the doses of renally cleared drugs;
+- **relieve obstruction** with a bladder catheter or, for upper tract obstruction, nephrostomy or ureteric stent;
+- **monitor** urine output, fluid balance, weight, creatinine and potassium;
+- **refer to a nephrologist** for suspected intrinsic kidney disease (including glomerulonephritis), stage 3 AKI, complications not responding to medical treatment, or AKI in a kidney transplant recipient.
+:::
+
+Loop diuretics do not treat AKI and do not improve outcomes, but they can help manage fluid overload in someone whose kidneys still respond.
+
+**Renal replacement therapy** (RRT; dialysis or haemofiltration) replaces kidney function while the kidney recovers. The indications are complications that are life-threatening and do not respond to medical treatment:
+
+- **hyperkalaemia** that persists despite medical treatment;
+- **metabolic acidosis** that is severe and refractory;
+- **fluid overload**, particularly pulmonary oedema, that does not respond to diuretics;
+- **uraemic complications**: pericarditis, encephalopathy, bleeding from uraemic platelet dysfunction;
+- **poisoning** with a dialysable toxin, such as lithium, methanol, ethylene glycol or salicylate.
+
+Starting RRT earlier, before these complications appear, has not been shown to improve survival. In the STARRT-AKI trial (2020), an accelerated strategy in critically ill people with severe AKI did not reduce 90-day mortality compared with a standard strategy and was associated with more dependence on dialysis at 90 days. RRT is therefore usually started for a clear indication rather than for a number.
+
+::: example A ward round that prevents a crisis {#ex-oliguric}
+A 68-year-old woman is admitted with pneumonia. On day 2 her creatinine has risen from 70 µmol/L (baseline) to 150 µmol/L. She weighs 60 kg and has passed 220 mL of urine in the last 12 hours. Her blood pressure is 92/50 mmHg (usually 130/80). She takes ramipril, furosemide, metformin and naproxen, all still prescribed. Her potassium is 5.7 mmol/L. Stage the AKI and list the actions.
+::: solution
+**Creatinine**: $150/70 = 2.14$ times baseline, stage 2.
+
+**Urine output**: $220 / 12 / 60 = 0.31$ mL/kg/h for 12 hours, below 0.5 for 12 hours or more: stage 2.
+
+**Stage 2 AKI**, most likely prerenal and progressing to tubular injury from **sepsis** with hypotension, made worse by drugs that impair autoregulation.
+
+**Actions**:
+- treat the pneumonia and sepsis following the sepsis pathway; assess volume and give fluid boluses with reassessment;
+- **stop naproxen**; withhold ramipril and furosemide while she is hypotensive and volume deplete; withhold metformin (risk of lactic acidosis in AKI); review antibiotic doses;
+- measure urine output hourly, perhaps with a catheter if accurate monitoring is needed;
+- dipstick the urine; consider ultrasound if she does not improve or there is no clear cause;
+- treat the mild hyperkalaemia by stopping contributory drugs and recheck potassium; review for moderate or severe hyperkalaemia;
+- recheck creatinine and potassium at least daily, and escalate to critical care if hypotension persists despite fluids.
+
+On recovery, a plan for restarting her regular drugs, and a follow-up creatinine, should be in the discharge letter.
+:::
 :::
 
 ::: example The anticholinergic anuria {#ex-postrenal}
-A 79-year-old on solifenacin, with a promethazine-and-opioid-and-anticholinergic prescription list, day 4 after joint-replacement epidural, passes nothing for 12 hours; creatinine 88→210; bladder palpable; afebrile.
+A 79-year-old man with benign prostatic enlargement is started on an antihistamine with anticholinergic effects for itching. Three days later he has lower abdominal pain, is passing only dribbles of urine and is confused. His creatinine is 340 µmol/L (baseline 95) and potassium 6.2 mmol/L. A bladder scan shows 1400 mL. Explain and outline management, including what to expect after treatment.
 ::: solution
-**Postrenal AKI until proven otherwise (the anuria rule — [[#def-ak]] — here acute retention with overflow-and-back-pressure: the anticholinergic-and-opioid-and-epidural-bladder-atony ([[surgery/anaesthesia-pain]] and [[pharmacology/adverse-reactions]]) on a likely enlarged-prostate background ([[renal/urinary-tract]]): the bladder-scan/catheter-diagnostic-act yields a litre-plus and the creatinine begins falling within a day — the cheapest "treatment" in nephrology ([[clinical-skills/physical-examination]]).** The follow-through: **the post-obstructive-diuresis monitoring (the output-and-weight-and-sodium-and-potassium-and-magnesium trajectory and the measured-losses-two-thirds-fluid-replacement plan — [[#def-support]] and [[renal/water-sodium]] — the rare pathological-natriuresis spiral with its own ICU-ward crossover ([[emergency-critical-care/acute-assessment]])), the catheter-strategy (the removal-and-voiding-trial-versus-leg-bag-and-the-driving-pressure-and-prostate-medicine-start ([[renal/urinary-tract]]) and the "do not call it infection without symptoms" line-care rule ([[renal/urinary-tract]] and [[infectious-diseases/healthcare-infections]])), the medication-reconciliation (the anticholinergic-burden reduction and the analgesia-sparing plan ([[geriatrics-palliative/polypharmacy]] and [[geriatrics-palliative/falls]])), the upper-tract-check if creatinine plateaus (the hydronephrosis-ultrasound and the bilateral-urothelial-cancer-and-retroperitoneal-fibrosis-differential ([[renal/urinary-tract]] and [[pathology/chronic-inflammation-repair]] for the fibrotic process)), and the post-discharge renal-function follow-up booking (the AKI-to-CKD surveillance [[renal/chronic-kidney-disease]] and the urology-referral criteria ([[renal/urinary-tract]])).**
+**Acute urinary retention** caused by an anticholinergic drug in a man with prostatic enlargement, leading to **postrenal AKI**, stage 3 (creatinine more than 3 times baseline). Back pressure has reduced GFR in both kidneys.
+
+**Management**: urethral catheterisation (suprapubic if urethral fails), stop the antihistamine, treat the moderate hyperkalaemia, and monitor. Creatinine usually falls over a few days if obstruction was brief.
+
+After relief of significant obstruction, a **post-obstructive diuresis** can occur: urine output may exceed 200 mL/h for several hours. It is caused by excretion of retained salt, water and urea and by temporarily impaired tubular concentrating ability. Most of it is appropriate, but some people lose more than they should and become volume depleted or develop sodium and potassium disturbances. Fluid balance, weight and electrolytes are therefore monitored closely, with replacement of part of the losses guided by clinical status. His prostate is assessed before a trial without catheter ([[renal/urinary-tract]]).
 :::
 :::
 
+::: warning Do not wait for the creatinine {#warn-aki}
+Creatinine lags behind the injury by a day or more, so a "normal" or only slightly raised creatinine early in illness does not exclude AKI. Falling urine output in an unwell person is the earlier warning, but only if someone is measuring it. A second common mistake is to keep prescribing drugs on autopilot during acute illness: NSAIDs, ACE inhibitors, diuretics and metformin continued in a dehydrated or septic patient turn a reversible problem into a dangerous one. Review the drug chart at every stage of AKI.
+:::
+
+## Special situations and prevention
+
+**Contrast-associated AKI.** Iodinated contrast can cause a rise in creatinine within 24–72 hours, although modern studies suggest that much of the AKI seen after scans is caused by the illness that prompted the scan. The risk is greatest in people with an eGFR below 30 mL/min/1.73 m², diabetes and heart failure. NICE NG148 advises considering intravenous volume expansion (with 0.9% saline or isotonic sodium bicarbonate) for adults with an eGFR below 30 or a kidney transplant, and temporarily stopping metformin in people with AKI. A needed contrast scan should not be withheld because of fear of AKI.
+
+**Rhabdomyolysis.** Muscle breakdown (crush injury, prolonged immobility after a fall, extreme exercise, seizures, statins with interacting drugs, some recreational drugs) releases myoglobin, potassium and phosphate. Myoglobin damages tubules. Creatine kinase is markedly raised, and the urine dipstick shows blood without red cells. Early, generous fluid resuscitation is the main treatment, with close attention to potassium.
+
+**Hepatorenal syndrome.** In advanced cirrhosis, intense renal vasoconstriction can cause AKI with otherwise normal kidneys. It is diagnosed after volume expansion with albumin fails and other causes are excluded, and is treated with vasoconstrictors such as terlipressin with albumin, under specialist care ([[gastrointestinal/liver-disease]]).
+
+**Prevention** is more effective than treatment. It means identifying people at risk (older age, chronic kidney disease, diabetes, heart failure, liver disease, sepsis, hypovolaemia, nephrotoxic drugs, recent contrast, major surgery), keeping them hydrated, avoiding nephrotoxins where alternatives exist, monitoring creatinine and urine output during acute illness, and giving people on ACE inhibitors, angiotensin receptor blockers, diuretics, metformin and NSAIDs clear advice on pausing them during a dehydrating illness ("sick day guidance").
+
 ::: quiz
-Which finding most strongly suggests acute interstitial nephritis rather than ATN?
-- [ ] Granular muddy-brown casts
-- [x] White-cell casts with sterile pyuria, recent new drug, and preserved concentration early
-- [ ] FENa > 2 %
-- [ ] Oliguria
+A 54-year-old woman starts omeprazole for dyspepsia. Six weeks later her creatinine has risen from 75 to 210 µmol/L. She has a low-grade fever and a faint rash. Urine dipstick shows leucocytes 2+, protein 1+, nitrite negative, and culture is sterile. What is the most likely diagnosis?
+- [ ] Prerenal AKI from volume depletion
+- [ ] Acute pyelonephritis
+- [x] Acute interstitial nephritis
+- [ ] Acute tubular injury from contrast
 ::: solution
-**The AIN pattern ([[#def-class]]): the allergic infiltrate (the drug-triggered T-cell process — [[immunology/hypersensitivity]]-and-[[immunology/autoimmunity]] mechanisms) yields WBCs-without-bacteria, WBC-casts, sometimes mild-proteinuria-and-microscopic-haematuria, with the classic fever-rash-eosinophilia triad in a minority (and urine eosinophils' abandoned poor test-performance ([[clinical-skills/laboratory-tests]])). FENa is unhelpful (raised in both), muddy-casts mean ATN ([[renal/tubular-function]]), and oliguria fits neither; the confirmation is the drug-timeline-and-exposure-rechallenge-avoidance logic and, when function fails to return or the differential is wide, biopsy — with the steroid-timing-practice-consensus ([[renal/chronic-kidney-disease]]'s glomerular-interstitial crossover).**
+AKI developing weeks after starting a new drug, with fever, rash and sterile pyuria, is typical of **drug-induced acute interstitial nephritis**. Proton pump inhibitors are among the commonest causes; many people have only some of the classic features. The usual treatment is to stop the drug; corticosteroids are sometimes given on specialist advice, and a kidney biopsy confirms the diagnosis when it is uncertain. The lack of nitrite and the sterile culture argue against infection.
 :::
 :::
 
 ::: history
-The **war-time "crush syndrome" and postpartum-cortical-necrosis descriptions and Bywaters' 1940s myoglobin-renal-perfusion experiments** began the tubular-era; **the acute-tubular-necrosis pathology tradition and the 1950s-60s dialysis-acute-renal-failure-centres (the Merrill-and-Hampson and the early-series mortality numbers)** supplied first-therapy evidence; **the oliguric-versus-non-oliguric prognostication era (the 1970s)**, the **RIFLE (2004) → AKIN (2007) → KDIGO (2012) criteria-lineage** standardised definitions (with the ongoing debate about creatinine-only-blindness and community-AKI under-detection — [[public-health/health-systems-economics]]); the **"renal-dose dopamine" and the low-dose-diuretic and atrial-natriuretic-peptide prevention myths and their negative-RCT dismantling ([[epidemiology-ebm/randomised-trials]])**; the **contrast-AKI-trial era (the hydration comparisons and the NAC-debunking ACT, RENAL and PRESERVE trials, 2013-2018)** and the **balanced-solution (the SMART-generation ([[emergency-critical-care/shock-fluids]]))**; the **early-versus-late-RRT trials (the 2013-2024 AKIKI-and-ELAIN-and-STARRT-AKI-and-AKI-DIVOX programs)** settled current timing; the **sepsis-associated-AKI-microvascular-and-inflammation-research era ([[pathology/haemodynamics]] and [[immunology/innate-immunity]])**; and the **biomarker-hopes (the NGAL-and-KIM-1-and-others)** remain pre-routine ([[clinical-skills/laboratory-tests]]), while the **AKD-to-CKD-transition-epidemiology and the post-AKI-clinics movement ([[renal/chronic-kidney-disease]])** close the chapter's long-term arc.
+During the London Blitz of 1940–41, Eric Bywaters and Desmond Beall described people rescued from collapsed buildings after their limbs had been trapped for hours. The victims seemed well at first, then developed shock, dark urine and kidney failure and died within days. Their 1941 report in the *British Medical Journal*, "Crush injuries with impairment of renal function", linked muscle injury to kidney failure, and later work identified myoglobin as the culprit. The lessons of crush syndrome, early fluid and attention to potassium, are still applied after earthquakes and building collapses. The first practical artificial kidney, built by Willem Kolff in the Netherlands during the same war, saved its first patient with acute kidney failure in 1945.
 :::
 
 ## Where this leads
 
-The filtration physiology in [[renal/filtration]]; the volume machinery in [[renal/water-sodium]]; the ion emergencies in [[renal/potassium-calcium-phosphate]] and [[renal/acid-base-disorders]]; obstruction's urological half in [[renal/urinary-tract]]; the chronic sequel in [[renal/chronic-kidney-disease]]; sepsis in [[infectious-diseases/fever-sepsis]] and [[emergency-critical-care/resuscitation]]; the perioperative world in [[surgery/perioperative-care]] and [[surgery/trauma]]; cardiorenal in [[cardiovascular/heart-failure]]; drug dosing in [[pharmacology/dosing-principles]].
-
-::: exercise Diagnose the cirrhotic kidneys {level=2}
-A decompensated-cirrhotic (ascites, SBP treated 5 days ago) has creatinine 68→132 despite albumin-replete SBP therapy and held diuretics; urine sodium 8, sediment bland, ultrasound normal, no shock or nephrotoxins. Give the syndrome, its physiology and the treatment ladder.
-::: solution
-**Hepatorenal syndrome (the functional, physiology-diagnosis-of-exclusion AKI of advanced liver disease — the splanchnic-arterial-vasodilation with intense renal-arteriolar-constriction ([[gastrointestinal/liver-disease]] and [[renal/filtration]]'s autoregulation-overrun), the very-low urine sodium and bland sediment as the "intact-tubules-prerenal-like" signature — [[#def-class]]).** The ladder: **exclude-and-treat-the-precipitant (the SBP and other infection, the fluid-losses, the drug-insult re-review — [[renal/urinary-tract]]-and-[[pharmacology/adverse-reactions]]) and the albumin-volume-challenge (the standard two-day protocol); then the splanchnic-vasoconstrictors (terlipressin-with-albumin — the hyponatraemia-and-respiratory-failure-ischaemia cautions and the ACLF grading — [[gastrointestinal/liver-disease]]) and the noradrenaline-in-ICU alternative ([[emergency-critical-care/critical-care]]); the transplant-conversation (the combined-liver-kidney logic and the listing-urgency — [[immunology/transplant-tumour-immunology]] and [[medical-ethics-law/justice-resources]]'s allocation framing); the dialysis-as-bridge-or-comfort distinction ([[#def-support]] and [[geriatrics-palliative/end-of-life-care]]); and the do-not-prolong-the-nephrotoxin-insult rule (the NSAID-and-aminoglycoside-and-contrast-avoidance and the beta-blocker-holding-in-HRS-AKI nuance ([[gastrointestinal/liver-disease]] and [[pharmacology/adverse-reactions]])).**
-:::
-:::
+Some people do not recover from AKI and progress to acute kidney disease and then chronic kidney disease, which is covered in [[renal/chronic-kidney-disease]] together with the glomerulonephritides that can present as AKI. Shock, fluid resuscitation and organ support are in [[emergency-critical-care/shock-fluids]] and [[emergency-critical-care/critical-care]]. Drug dosing in reduced kidney function is in [[pharmacology/dosing-principles]], and AKI after surgery in [[surgery/perioperative-care]].
 
 ::: summary
-- AKI is defined by creatinine trajectory and urine output (KDIGO), staged for risk, and always a prognostic event — every episode books follow-up into chronic kidney disease surveillance.
-- Sort into three compartments fast: prerenal (fix perfusion), intrinsic (read the sediment: muddy casts = ATN, WBC casts and drug timeline = AIN, red-cell casts = glomerulonephritis emergency, skin-and-stutter = atheroemboli), postrenal (ultrasound and decompress — anuria means obstruction until proven otherwise).
-- Urine indices (FENa and FE-urea) help only in context — diuretics and CKD invalidate them; the clinical filling-assessment and trajectory outrank any single number.
-- Management is supportive precision: cause removal, fluid-and-ion-and-acid discipline, drug recomputation, and complication-triggered renal replacement (the AEIOU framework), with early-versus-late timing trials supporting watchful waiting.
-- Prevention is system-work: contrast hygiene, perioperative fluid defaults, sick-day rules and medication registers — most hospital AKI is iatrogenic and predictable.
+- AKI (KDIGO): creatinine rise of 26.5 µmol/L or more within 48 hours, or to 1.5 times baseline within 7 days, or urine output below 0.5 mL/kg/h for 6 hours or more.
+- Stage by the worse of creatinine and urine output: stage 1 (1.5–1.9×; below 0.5 mL/kg/h for 6–12 h), stage 2 (2.0–2.9×; below 0.5 mL/kg/h for 12 h or more), stage 3 (3× or more, creatinine 354 µmol/L or more, or RRT; below 0.3 mL/kg/h for 24 h or more, or anuria for 12 h or more).
+- Creatinine lags behind injury; eGFR is invalid while creatinine is changing; urine output is an earlier signal.
+- Classify the cause as prerenal, intrinsic (tubular, interstitial, glomerular, vascular) or postrenal. Always look for obstruction, dipstick the urine and review drugs.
+- FENa below 1% suggests a prerenal state; FEUrea below about 35% is more reliable after diuretics.
+- Management: treat the cause, restore perfusion, stop nephrotoxins, withhold ACE inhibitors, angiotensin receptor blockers, diuretics and metformin during the episode, relieve obstruction, monitor potassium and fluid.
+- RRT for refractory hyperkalaemia, acidosis, fluid overload, uraemic complications or dialysable poisons; earlier routine start does not improve survival.
 :::
 
 ## Exercises
 
-::: exercise Stage the AKI {level=1}
-Creatinine 88 (known baseline) → 156 on day 2, 240 on day 3; output 0.4 mL/kg/h × 10 h. Give the KDIGO stage and its evolution logic.
+::: exercise Stage the AKI {level=1 check="2"}
+A man's baseline creatinine is 90 µmol/L. Two days into an admission with gastroenteritis it is 250 µmol/L. His urine output has been 0.4 mL/kg/h for the last 8 hours. What KDIGO stage is his AKI? Give the stage as a number.
 ::: solution
-**Stage 1 on day 2 (1.5×-band: 132-167), stage 2 on day 3 (2-2.9×: 176-255) plus the stage-1-by-urine-output clause (≥6 h <0.5) — stage by whichever criterion is worst (the "highest-stage-wins" rule — [[#def-ak]]); the rising trajectory is the action-trigger (the escalation-review and cause-hunt-and-drug-review now, not at stage 3) — [[clinical-skills/records-handover]].**
+Creatinine ratio $= 250/90 = 2.78$, in the 2.0–2.9 range: **stage 2**. Urine output below 0.5 mL/kg/h for 8 hours meets stage 1 by urine. Staging uses the worse criterion, so the stage is **2**.
 :::
 :::
 
-::: exercise Compute and caveat {level=2}
-Urine Na 32, plasma Na 138, urine creatinine 6 mmol/L, plasma creatinine 138 µmol/L: compute FENa and interpret in a patient on furosemide and in one with cirrhosis.
+::: exercise Match the sediment {level=1}
+Match each urine microscopy finding to the most likely intrinsic cause of AKI: (a) red cell casts; (b) muddy brown granular casts; (c) white cell casts with sterile pyuria; (d) dipstick blood 3+ with no red cells on microscopy.
 ::: solution
-**FENa = (U_Na × P_Cr)/(P_Na × U_Cr) × 100 = (32×138)/(138×6000) × 100 = 4416/828000 ≈ 0.53 % — "prerenal" in the naive reading; in the furosemide patient the sodium-load makes FENa falsely high and FE-urea (<35 %) is the right test ([[#ex-prerenal-diuretic]]); in cirrhosis a low FENa is expected and near-useless (the sodium-retention-state floor — [[gastrointestinal/liver-disease]]) — and a low FENa does not exclude early ATN ([[renal/tubular-function]]). The index is a tiebreaker, never a verdict.**
+(a) Glomerulonephritis. (b) Acute tubular injury. (c) Acute interstitial nephritis (or pyelonephritis if infection is present). (d) Myoglobinuria from rhabdomyolysis (or haemoglobinuria from intravascular haemolysis).
 :::
 :::
 
-::: exercise Match the sediment {level=2}
-Pair each urine finding with its likely compartment: (a) muddy-brown granular casts; (b) acanthocytes and red-cell casts with proteinuria; (c) WBC-casts with sterile pyuria; (d) calcium-oxalate crystals; (e) nearly bland with anuria.
+::: exercise Indications for dialysis {level=1}
+List five indications for urgent renal replacement therapy in AKI.
 ::: solution
-**(a) ATN ([[renal/tubular-function]]); (b) glomerulonephritis — the RPGN-emergency ([[renal/chronic-kidney-disease]]); (c) AIN ([[#def-class]] and [[pharmacology/adverse-reactions]]); (d) ethylene-glycol ([[renal/acid-base-disorders]]'s methanol example-era) or oxalate-overload ([[gastrointestinal/clinical-nutrition]] and [[renal/urinary-tract]]); (e) obstruction until proven otherwise ([[renal/urinary-tract]]) — the [[#def-class]] atlas in question-form ([[pathology/diagnostic-pathology]]).**
+Hyperkalaemia refractory to medical treatment; severe metabolic acidosis refractory to treatment; fluid overload (especially pulmonary oedema) not responding to diuretics; uraemic complications such as pericarditis or encephalopathy; and poisoning with a dialysable substance such as lithium, methanol, ethylene glycol or salicylate.
+:::
+:::
+
+::: exercise Calculate the FENa {level=2 check="round(10*200/(135*12000)*100*100)/100"}
+In an oliguric patient: urine sodium 10 mmol/L, plasma sodium 135 mmol/L, urine creatinine 12 mmol/L, plasma creatinine 200 µmol/L. Calculate FENa as a percentage, to two decimal places, and interpret it.
+::: solution
+$U_{Cr} = 12\,000$ µmol/L.
+
+$$
+\text{FENa} = \frac{10 \times 200}{135 \times 12\,000} \times 100 = 0.12\%
+$$
+
+Well below 1%: the tubules are conserving sodium avidly, consistent with a **prerenal** state (assuming no diuretics). The patient should be assessed for hypovolaemia or poor perfusion; FENa is a supporting test, not a substitute for clinical assessment.
 :::
 :::
 
 ::: exercise Contrast day {level=2}
-A CKD-3b diabetic (eGFR 38, metformin and ramipril and bendroflumethiazide) attends for contrast CT. Give the peri-procedural plan and the post-scan rules.
+A 66-year-old woman with type 2 diabetes and an eGFR of 26 mL/min/1.73 m² needs a contrast-enhanced CT scan for suspected bowel cancer. She takes metformin, ramipril and furosemide. Outline the principles for reducing her AKI risk.
 ::: solution
-**Risk-talk-and-necessity-review (the alternative-imaging and the contrast-dose-and-single-phase rules — [[clinical-skills/medical-imaging]]); pre-hydration (the isotonic-regimen ± periprocedural-extension ([[emergency-critical-care/shock-fluids]]); hold the volume-and-hypotension-potentiators per local-protocol (diuretic-withhold-and-metformin-stop-until-48-h-renal-function-recheck ([[endocrine/diabetes-complications]]'s lactic-acidosis-precaution) and the ACEi/ARB-continuation-debate ([[cardiovascular/hypertension]] and [[renal/filtration]]'s-haemodynamic-pair)); no-routine-NAC-or-the-old-forced-diuresis-or-dopamine-era-extras (the negative-evidence graveyard — [[epidemiology-ebm/randomised-trials]]); the post-scan 48-72-h creatinine for the high-risk, the sick-day-and-new-drug-education, and the AKI-if-it-happens pathway ([[#def-ak]] and [[renal/chronic-kidney-disease]]'s-transition-clinic). **
+Do not withhold the scan if it is needed for diagnosis. With an eGFR below 30 she meets the NICE NG148 threshold for considering intravenous volume expansion (0.9% saline or isotonic sodium bicarbonate) around the procedure, following local protocol. Review her medicines: local guidance often advises withholding metformin around contrast in people with reduced eGFR and restarting once kidney function is confirmed stable; consider temporarily withholding diuretics if she is volume deplete. Use the lowest dose of contrast that gives a diagnostic scan. Check creatinine 48–72 hours after the scan.
 :::
 :::
 
-::: exercise Decide on RRT {level=2}
-List the complication-triggers for renal replacement in AKI and explain why "creatinine of 600" alone is not one.
+::: exercise Recognise the thrombotic microangiopathy {level=2}
+A 6-year-old boy has bloody diarrhoea for four days after a farm visit, then becomes pale and passes little urine. Haemoglobin is 72 g/L with fragmented red cells on the film, platelets 38 × 10⁹/L, creatinine 290 µmol/L. What is the diagnosis and what is the mechanism?
 ::: solution
-**The triggers ([[#def-support]]): the refractory-acidosis (the pH-with-bicarbonate-and-ventilation-context — [[renal/acid-base-disorders]]), the refractory-hyperkalaemia ([[renal/potassium-calcium-phosphate]]) and dangerous-hypocalcaemia-hyperphosphataemia ([[renal/potassium-calcium-phosphate]]), the diuretic-resistant pulmonary and systemic congestion ([[cardiovascular/heart-failure]]), the uraemic-complications (the pericarditis, encephalopathy, bleeding and intractable-hiccup cluster — [[gastrointestinal/oesophagus-stomach]]-adjacent-uraemic-gastritis), the dialysable-toxins ([[emergency-critical-care/poisoning]]) and the oliguria-with-catabolic-load (the-rhabdo-and-tumour-lysis-trajectories — [[renal/acute-kidney-injury]]'s own and [[infectious-diseases/immunocompromised-host]]-adjacent tumour-lysis). "Number-only" early-dialysis trials were neutral-or-worse ([[renal/chronic-kidney-disease]] and [[emergency-critical-care/critical-care]]), and the catheter-and-anticoagulation-harms and spontaneous-recovery probability argue for complication-watching — with the parallel goals-of-care assessment ([[geriatrics-palliative/end-of-life-care]]).**
+**Haemolytic uraemic syndrome** (HUS) caused by **Shiga toxin-producing *Escherichia coli*** (commonly O157:H7), typically acquired from farm animals, undercooked meat or contaminated food. The toxin injures glomerular endothelium, causing microvascular thrombi that fragment red cells (microangiopathic haemolytic anaemia), consume platelets and block glomerular capillaries (AKI). Management is supportive, including dialysis if needed; antibiotics and antimotility drugs are generally avoided because they may increase toxin release. Most children recover kidney function, but some have long-term kidney damage. HUS is notifiable, and contacts may need public health follow-up ([[paediatrics/acute-childhood-illness]]).
 :::
 :::
 
-::: exercise Recognise the TMA {level=2}
-Post-partum day 6: AKI, platelets 55, haemolysis (LDH high, haptoglobin low, schistocytes), confusion, normal-coagulation; CT head clear. Give the syndrome, the first-hour actions and the trap.
+::: exercise Decide on dialysis {level=2}
+A 59-year-old man in intensive care with septic shock has stage 3 AKI. Potassium is 5.9 mmol/L and falling with treatment, pH 7.29, he is receiving noradrenaline and his chest is clear on a stable oxygen requirement. His urine output is 10 mL/h. A colleague suggests starting dialysis now "before things get worse". What does the evidence suggest?
 ::: solution
-**Thrombotic-microangiopathy (the TTP-versus-HUS-versus-aHUS-versus-HELLP-versus-malignant-hypertension differential of post-partum AKI — [[obstetrics-gynaecology/postnatal-period]] and [[obstetrics-gynaecology/pregnancy-complications]]'s pre-eclampsia-mimicry ([[cardiovascular/hypertension]])); the first hours: **the ADAMTS13-and-complement-workup-samples-before-transfusion ([[blood/haemostasis-bleeding]]), the immediate plasma-exchange activation for presumed TTP (the FFP-infusion-bridge and the caplacizumab-and-steroid-regimens — [[blood/haemostasis-bleeding]] and [[immunology/tolerance-regulation]]-adjacent) with the aHUS-complement-inhibitor (the eculizumab) pathway and the complement-genetics-clinic ([[genetics/mendelian-inheritance]]), the platelet-transfusion-harm-in-TTP-and-the-avoid-PLT-reflex-trap (the "trap" — platelets can worsen thrombosis ([[blood/thrombosis-anticoagulation]])), the blood-pressure-control ([[cardiovascular/hypertension]]) and dialysis-readiness ([[#def-support]]), and the maternal-medicine-haematology-nephrology intensive-care joint admission ([[emergency-critical-care/critical-care]]).**
+He has stage 3 AKI but **no current refractory complication**: potassium is controlled, acidosis is mild, and he is not fluid overloaded. Trials of earlier versus standard initiation, including STARRT-AKI (2020), have not shown a survival benefit from starting RRT before an indication arises, and accelerated strategies exposed more people to the risks of dialysis (catheter complications, hypotension) and were associated with more dialysis dependence at 90 days. A reasonable approach is to continue supportive care with close monitoring and clear criteria for starting RRT (refractory hyperkalaemia, worsening acidosis, fluid overload, or no recovery after a period), discussed with the critical care and renal teams.
 :::
 :::
 
-::: exercise Build the AKI prevention service {level=3}
-Design the hospital AKI-prevention-and-response programme: the surveillance, the bundle triggers, the medicines-reconciliation interfaces and the outcome audit.
+::: exercise Design an AKI prevention pathway {level=3}
+A hospital's audit shows that half of hospital-acquired AKI occurs in people who were already at risk on admission and were prescribed NSAIDs or continued on ACE inhibitors while acutely unwell. Design a pathway to reduce hospital-acquired AKI, explaining the physiology behind each element.
 ::: solution
-**Surveillance: the automated-KDIGO-alert-in-the-LIS (with the false-positive-suppression-and-baseline-creatinine-logic ([[clinical-skills/laboratory-tests]]) and the "AKI-6/7-day-rule" community-alert interface (the GP-notification-and-sick-day-letter — [[public-health/health-systems-economics]]); the bundle-triggers: the-alert-to-ward-renal-medication-review-within-24-hours (the nephrotoxin-hold and dose-recomputation ([[pharmacology/dosing-principles]] and [[geriatrics-palliative/polypharmacy]]), the sepsis-and-hypotension-escalation criteria ([[emergency-critical-care/acute-assessment]]), the fluid-stewardship (the chloride-load-and-de-resuscitation ([[emergency-critical-care/shock-fluids]])), and the obstruction-scan-reflex-for-the-anuric ([[renal/urinary-tract]]). **Medicines interfaces: the contrast-and-procedure registers (the nephrotoxin-combination flags — [[renal/filtration]]'s-whammy-taxonomy and [[clinical-skills/medical-imaging]]), the sick-day-rules-issue-at-every-diabetes-hypertension-heart-kidney-prescription (the SADMANS-list — [[endocrine/diabetes-complications]] and [[cardiovascular/heart-failure]]), the lithium-monitoring-and-stop-protocols ([[psychiatry/treatments-mental-health-law]] and [[renal/tubular-function]]), and the perioperative-fluid-protocols ([[surgery/perioperative-care]]). **Outcomes: the stage-and-cause-and-setting-stratified-AKI-incidence, the in-hospital-and-1-year-mortality-and-CKD-transition (the post-AKI-clinic attendance — [[renal/chronic-kidney-disease]]), the avoidable-proportion-review (the drug-and-contrast-and-obstruction-delay case-reviews — [[clinical-skills/patient-safety]]) and the patient-and-family-experience-in-the-frail-elderly ([[geriatrics-palliative/ageing-frailty]]) — with the chapter's prevention-first message: most hospital AKI is written in the drug-chart and the fluid-balance before it appears in the biochemistry.**
+1. **Risk assessment on admission**: flag people with chronic kidney disease, diabetes, heart failure, liver disease, age over 65, sepsis, hypovolaemia or nephrotoxic drugs. These are the people whose GFR depends most on prostaglandin and angiotensin II defences of glomerular pressure.
+2. **Medicines review at admission and daily**: an electronic prompt to stop NSAIDs and withhold ACE inhibitors, angiotensin receptor blockers, diuretics and metformin in people who are hypotensive, septic or volume deplete, with a documented restart plan.
+3. **Monitoring**: daily creatinine in at-risk patients; fluid balance and urine output charts that are reviewed, not just filled in.
+4. **Electronic AKI alerts** linked to a care bundle (fluid assessment, urine dipstick, drug review, ultrasound when indicated), so the alert triggers action rather than just a message.
+5. **Contrast and nephrotoxin protocols**: volume expansion when eGFR is below 30, drug level monitoring for aminoglycosides and vancomycin.
+6. **Education** for doctors, nurses and pharmacists on prerenal physiology and the triple whammy.
+7. **Discharge**: sick day guidance, a follow-up creatinine and a clear plan for restarting medicines.
+8. **Audit and feedback** of AKI rates to wards, to sustain improvement.
+:::
+:::
+
+::: exercise Interpret the trajectory {level=3}
+Using the model in the figure, with a starting creatinine of 80 µmol/L and a GFR that falls abruptly to 10% of normal, the creatinine 24 hours later is about 290 µmol/L. (a) What KDIGO stage is that? (b) What would an eGFR calculation report at 24 hours, and why is it misleading? (c) Why might a real critically ill patient's creatinine rise more slowly than the model predicts?
+::: solution
+(a) $290/80 = 3.6$ times baseline: **stage 3**.
+
+(b) An eGFR equation would treat 290 µmol/L as a steady-state value and report an eGFR of roughly 15–20 mL/min/1.73 m², depending on age and sex. The true GFR is about 10 mL/min and the creatinine is still rising towards its new steady state of 800 µmol/L. eGFR overestimates GFR whenever creatinine is rising.
+
+(c) Critically ill people often make less creatinine (reduced muscle mass, immobility, sepsis-related reduction in production) and have a larger volume of distribution because of fluid resuscitation, which dilutes creatinine. Both slow the rise and can make AKI look milder than it is. This is one reason urine output, and newer biomarkers in research settings, are used alongside creatinine.
 :::
 :::

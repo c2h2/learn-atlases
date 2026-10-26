@@ -1,144 +1,303 @@
-Acid–base medicine is the clinical edition of [[physiology/acid-base]]'s buffer chemistry: **three defending lines (chemical buffers that act in seconds, respiratory compensation in minutes-hours, renal correction in days — [[renal/tubular-function]]) and one interpretive discipline — the systematic reading of pH, PaCO₂ and bicarbonate, the anion and osmolar gaps, the urine electrolytes and the clinical story — that turns a gas machine into a diagnosis.** This chapter works through metabolic acidosis (raised- and normal-gap), metabolic alkalosis, the respiratory disorders and the mixed pictures, with the toxicological and shock settings where the numbers move fastest.
+An arterial blood gas is one of the fastest and most informative tests in acute medicine. Within a minute it shows whether a patient is acidaemic or alkalaemic, whether the lungs or the metabolism are responsible, and, with a little arithmetic, whether there is a second hidden disorder. The arithmetic matters. Many of the most important acid–base pictures, such as salicylate poisoning, diabetic ketoacidosis with vomiting or sepsis in a person with chronic lung disease, involve two or three disorders at once, and they are only visible to someone who checks each number against what it should be.
 
-This chapter covers acid–base interpretation, the four primary disorders, mixed states and the poisonings that expose them.
+The physiology of buffers, the respiratory and renal control of pH and the derivation of the Henderson–Hasselbalch equation are in [[physiology/acid-base]]. This lesson applies them clinically. It sets out a method for reading a blood gas, then works through the four primary disorders, the anion gap and the other calculations that reveal mixed disorders, and the renal tubular acidoses. Each step is illustrated with worked cases.
 
-## Interpretation
+Units: UK laboratories report $P_{a}\text{CO}_2$ in kPa; much of the literature and the compensation rules use mmHg. To convert, 1 kPa = 7.5 mmHg. Both are given here.
 
-::: definition The defending lines and the reading method {#def-method}
-**The buffers (the bicarbonate-CO₂ open system — Henderson-Hasselbalch arithmetic and the [[renal/tubular-function]]'s bicarbonate reclaim-and-regenerate loop ([[physiology/acid-base]]'s recapitulation), non-bicarbonate systems — haemoglobin and protein and phosphate and the intracellular exchange capacity ([[physiology/homeostasis-body-fluids]])) buy hours, not days; **respiratory compensation** follows predictable arithmetic (the medullary CO₂-and-pH response of [[respiratory/control-breathing-tests]] driving the Kussmaul deep-breaths and the appropriate hypocapnia — the compensation rules and their numerical bands: metabolic acidosis PaCO₂ ≈ 1.5×[HCO₃⁻] + 8 (±2); metabolic alkalosis PaCO₂ ≈ 0.7×[HCO₃⁻] + 21; acute respiratory acidosis +1 mmol bicarbonate per 10 mmHg CO₂, chronic +3-4; acute respiratory alkalosis −2 per 10, chronic −4-5 — the compensation widget's two lines and the deviation-means-second-disorder rule); **renal correction** (the proximal bicarbonate threshold-reclaim, the distal H⁺-ATPase-and-titratable-acid-and-ammoniagenesis machinery ([[renal/tubular-function]]) — the days-long final line whose failures are the renal tubular acidoses ([[#def-naga]])).** The reading method (the taught order that this chapter's examples rehearse): **1 — pH (acidaemia-alkalaemia and the compensation-never-overcorrects caution: a "normal" pH with abnormal components is a mixed state, not a normal result); 2 — the primary disorder (the PaCO₂-versus-bicarbonate direction match); 3 — compensation arithmetic (the rules above — under- or over-compensation unmasks the second respiratory or metabolic lesion — e.g., the asthma patient with metabolic acidosis and a "normalising" CO₂ is tiring — [[respiratory/asthma-copd]] and [[respiratory/respiratory-failure]]); 4 — the anion gap (Na − Cl − HCO₃ ≈ 8-12; the albumin correction +2.5 per 10 g/L below normal ([[clinical-skills/laboratory-tests]]) and the lactate-and-ketone-and-renal-failure-and-toxin list of [[#def-aga]]); 5 — the delta review (Δgap-against-Δbicarbonate — the hidden metabolic alkalosis-or-normal-gap-acidosis arithmetic of [[#ex-deltadelta]]); 6 — the osmolar gap (measured − [2Na + glucose + urea] >10 mOsm/kg — the toxic-alcohol doorbell — [[#ex-methanol]]); 7 — the urine (the anion- and osmolal-gap ammonia probes — [[#def-naga]]); 8 — the clinical context (the shock-and-breathlessness-and-poisoning-and-renal-and-diarrhoea histories — [[emergency-critical-care/acute-assessment]]). **
+## The method
+
+::: definition Normal values and the primary disorders {#def-method}
+Typical arterial reference ranges are: **pH** 7.35–7.45; **$P_a\text{CO}_2$** 4.7–6.0 kPa (35–45 mmHg); **bicarbonate** 22–26 mmol/L. A pH below 7.35 is **acidaemia** and above 7.45 is **alkalaemia**. The processes that cause them are **acidosis** and **alkalosis**.
+
+The four primary disorders are:
+- **metabolic acidosis**: a primary fall in bicarbonate;
+- **metabolic alkalosis**: a primary rise in bicarbonate;
+- **respiratory acidosis**: a primary rise in $P_a\text{CO}_2$ (hypoventilation);
+- **respiratory alkalosis**: a primary fall in $P_a\text{CO}_2$ (hyperventilation).
+
+**Compensation** is the secondary change in the other variable that limits the change in pH: the lungs compensate for metabolic disorders within minutes to hours, the kidneys for respiratory disorders over three to five days. Compensation rarely returns pH fully to normal.
 :::
 
-## The metabolic disorders
+The pH is set by the ratio of bicarbonate to $\text{CO}_2$:
 
-::: definition Raised-anion-gap metabolic acidosis {#def-aga}
-The gap acidoses (the mnemonic families — ketones, uraemia, lactate A-and-B, toxic alcohols and the rest of the evolving GOLDMARK-and-MUDPILES lists): **lactate (type A — the tissue-hypoperfusion of shock-and-sepsis-and-cardiac-arrest-and-ischaemic-gut ([[emergency-critical-care/shock-fluids]] and [[surgery/acute-abdomen]]) with the clearance-liver reading ([[gastrointestinal/liver-function]]) and the exercise-and-seizure-and-metformin-accumulation-and-thiamine-deficiency ([[gastrointestinal/clinical-nutrition]]) and haematological ([[blood/haemoglobin-disorders]]-adjacent) causes; the lactate-as-prognosis-marker discipline and the "clearance-not-peak" resuscitation endpoint ([[emergency-critical-care/resuscitation]]); ketoacidosis (the diabetic ([[endocrine/diabetes-complications]]) and alcoholic-and-starvation ([[gastrointestinal/clinical-nutrition]] and [[psychiatry/substance-use]]) varieties — the beta-hydroxybutyrate-versus-acetoacetate assay nuance ([[clinical-skills/laboratory-tests]])); uraemia (the phosphate-and-sulphate-and-urate retention of advanced kidney failure — [[renal/chronic-kidney-disease]]'s G4-G5 acidosis and its bone-and-muscle-cost driving the bicarbonate-replacement-therapy trials); the toxic alcohols (the methanol-and-ethylene-glycol-and-diethylene-glycol-and-propylene-glycol-and-ethanol ([[emergency-critical-care/poisoning]]) — the osmolar-gap-then-anion-gap kinetics (the parent-metabolised-first time course — the gap-migrates-from-osmolar-to-anionic warning), the visual-and-renal-and-crystaluria-and-calcium-oxalate signatures, and the fomepizole-or-ethanol-alcohol-dehydrogenase-blockade plus-haemodialysis ([[renal/chronic-kidney-disease]])-plus-cofactor-therapy (the thiamine-and-pyridoxine-and-folate-for-formate-and-glyoxylate-shunts) protocol — [[#ex-methanol]]); salicylates (the mixed-disorder special — [[#ex-aspirin]]); pyroglutamic acidosis (the chronic-acetaminophen-and-sepsis-and-fluoroquinolone-and-malnutrition-and-pregnancy 5-oxoproline trap — [[pharmacology/adverse-reactions]]); D-lactate (the short-bowel-and-probiotic-and-carbohydrate-fermentation confusion [[gastrointestinal/bowel-disease]]); and the mimics (the bromide-and-iodide-and-bromosulfalein-and-lithium assay-interference and hyperlipidaemia-and-paraproteinaemia sodium-artefacts — [[clinical-skills/laboratory-tests]] and [[blood/lymphoma-myeloma]]).** Treatment principles: **the cause is the acid (reperfusion-and-source-control-and-insulin-and-antidote-and-dialysis), the bicarbonate debate (the severe-acidaemia-pH<7.1-7.2 and the peri-arrest and the toxic-alcohol-and-hyperkalaemia ([[renal/potassium-calcium-phosphate]]) contexts where it earns its place; the DKA-and-lactate-and-sodium-load and intracellular-pH-paradox-and-hypokalaemia cautions — and the THAM alternative's niche), and the ventilation-protection of the compensation (the intubated-acidotic patient's minute-ventilation-matching rules — [[emergency-critical-care/airway-ventilation]] and [[renal/acute-kidney-injury]]'s dialysis-clearance arithmetic).**
-:::
+$$
+\text{pH} = 6.1 + \log_{10} \frac{[\text{HCO}_3^-]}{0.23 \times P_a\text{CO}_2\,(\text{kPa})}
+$$ {#eq-hh}
 
-::: definition Normal-gap (hyperchloraemic) metabolic acidosis {#def-naga}
-**The gapless acidosis is bicarbonate-loss-or-acid-retention-with-chloride-conservation: gut losses (diarrhoea, fistulae and the bicarbonate-rich ileostomy, pancreatic, biliary, chlorrhoea and villous-adenoma fluids — [[gastrointestinal/bowel-disease]] with the urine-ammonia signature below), kidney losses-or-acid-retention (the renal tubular acidoses and the type-4-hypoaldosteronism ([[renal/potassium-calcium-phosphate]]'s hyperkalaemic-acidosis and [[endocrine/adrenal]]'s cortisol-deficiency variant), the early-CKD-ammoniagenesis-failure ([[renal/chronic-kidney-disease]]) and the carbonic-anhydrase-inhibitor-and-ifosfamide-and-tenofovir-and-amphotericin-and-ciclosporin-drug list ([[pharmacology/adverse-reactions]] and [[renal/tubular-function]]) and the urinary-diversion-and-enterocystoplasty-and-ureterosigmoidostomy reabsorption of chloride-for-bicarbonate exchange ([[renal/urinary-tract]] and [[gastrointestinal/bowel-disease]])), the dilution-and-saline states (the large-volume-0.9 %-chloride-resuscitation acidosis and its balanced-solution controversy — [[emergency-critical-care/shock-fluids]] and [[surgery/perioperative-care]]), and the rare causes (the cationic-amino-acid therapies, the acid-ash parenteral nutrition ([[gastrointestinal/clinical-nutrition]]), the post-hypocapnic acidosis of overventilation ([[respiratory/respiratory-failure]]) and the paraproteinaemic tubulopathies ([[blood/lymphoma-myeloma]])).** The urine probes separate gut from kidney: **the urine anion gap (Na+K−Cl — negative-with-high-ammonium means the gut-loss-intact-renal-response; positive-with-low-ammonium means renal-tubular-acidosis — [[renal/chronic-kidney-disease]]) and the urine osmolal gap (2(Na+K) against measured — the derived-NH₄ version) plus the potassium-and-bicarbonate pattern (the type-1-hypokalaemic-and-nephrocalcinosis-and-urine-pH>5.5 ([[renal/urinary-tract]]) versus the type-2-hypokalaemic-Fanconi-associated ([[renal/tubular-function]]) versus the type-4-hyperkalaemic triads) and the fractional-bicarbonate-excretion and the urine-blood-pH-gradient and the acid-loading-test remnants of the specialist era ([[renal/tubular-function]]) — the distal-acidosis-with-deafness-and-ovary-and-eyelid (the ATP6V1B1, ATP6V0A4 and SLC4A1 genetics — [[genetics/mendelian-inheritance]] and [[nervous-system/sensory-systems]]) and Sjögren-and-autoimmune-tubulointerstitial ([[musculoskeletal/connective-tissue-vasculitis]] and [[immunology/autoimmunity]]) forms included.** Management: **replace (the bicarbonate-or-citrate — the CKD-trials' slow-tablet-and-syrup regimens and the GFR-protection-hope ([[renal/chronic-kidney-disease]]) — and the growing-children's full-dose discipline ([[paediatrics/growth-development]])), stop-the-drug, close-the-gut-loss, and treat-the-aldosterone-axis (the fludrocortisone-and-furosemide-and-low-potassium-diet-and-dialysis-of-type-4 — [[renal/potassium-calcium-phosphate]] and [[endocrine/adrenal]]).**
-:::
-
-::: definition Metabolic alkalosis {#def-ma}
-**Metabolic alkalosis is generated by acid-loss-or-alkali-load-with-volume-and-chloride-depletion (the vomiting-and-nasogastric-suction hydrochloric-acid-and-potassium losses and the chloride-depletion states: diuretic-and-Bartter-and-Gitelman-and-post-hypercapnia ([[respiratory/respiratory-failure]]'s over-diuresis footnote), and the congenital-chlorrhoea, villous-adenoma and cystic-fibrosis pseudo-Bartter phenotypes (the sweat-salt lesson — [[paediatrics/acute-childhood-illness]] and [[gastrointestinal/clinical-nutrition]])) — and MAINTAINED by the kidney's inability to excrete bicarbonate: the chloride-depletion-and-volume-depletion-and-hypokalaemia-and-hyperaldosteronism-and-reduced-GFR quintet ([[renal/water-sodium]] and [[renal/filtration]]) — hence the urine-chloride (<20-25 mmol/L = chloride-responsive-and-the-repletion-strategies; >25-and-hypertension-or-normotension = the mineralocorticoid-and-Genetic-syndromes ([[endocrine/adrenal]] and [[renal/tubular-function]]) and the recent-diuretic-with-drug-on-board caveat), and the paradoxical-aciduria (the potassium-depleted-distal-nephron's H⁺-for-K⁺-and-Na⁺-reabsorption choices — [[renal/potassium-calcium-phosphate]]'s hypokalaemia lesson and the magnesium cofactor ([[renal/potassium-calcium-phosphate]]'s magnesium section)).** Alkali-load forms (the citrate of transfusion ([[blood/transfusion]]), the lactate-, acetate- and bicarbonate-containing infusions ([[clinical-skills/patient-safety]]), and the recurring milk-alkali syndrome (the calcium-carbonate and protein-shake eras — [[endocrine/bone-calcium]] and [[renal/acute-kidney-injury]]), and the severe hypokalaemia-cell-shift pair). Consequences demanding treatment: **the arrhythmia-and-seizure-and-coronary-vasospasm-and-left-shifted-oxygen-dissociation ([[respiratory/gas-exchange]] and [[blood/haemoglobin-disorders]]) hazards, the compensatory-hypoventilation danger in the hypoxaemic (the CO₂-drive-suppression rationale for not-chasing-the-pH — [[respiratory/control-breathing-tests]]) and the alkalaemia-induced hypokalaemia-and-hypocalcaemia-ionised-fall vicious circles ([[renal/potassium-calcium-phosphate]]).** Treatment: **the chloride-and-volume-and-potassium-and-magnesium repletion (the [[#ex-vomiting]] arithmetic), the acid-suppression (PPI-for-ongoing-gastric-loss — [[gastrointestinal/oesophagus-stomach]]), the acetazolamide-for-the-oedematous-cardiac-patient (the contraction-with-alkalosis-afterloop-diuresis ([[cardiovascular/heart-failure]])-and-COPD-chronic-hypercapnic ([[respiratory/asthma-copd]]) niches), the mineralocorticoid-pathway drugs for the endocrine forms (spironolactone-and-amiloride-and-steroidogenesis-inhibitors-and-adrenalectomy-or-adenomectomy ([[endocrine/adrenal]] and the endocrine-surgery maps — [[surgery/breast-endocrine-surgery]])), and the dialysis-for-the-renal-failure-with-contraindications-to-fluid (the [[renal/chronic-kidney-disease]] low-bicarbonate-bath).**
-:::
-
-::: example The reading, demonstrated {#ex-vomiting}
-An obstructed-hernia patient with 4 days of vomiting: pH 7.51, PaCO₂ 37, HCO₃⁻ 29, Na 132, Cl 84, K 2.9, creatinine 148; urine chloride 12.
-::: solution
-**Metabolic alkalosis (the vomiting hydrochloric-acid-and-volume-and-potassium losses — [[#def-ma]]) with the compensation arithmetic showing a hidden partner: expected PaCO₂ ≈ 0.7×29 + 21 = 41-42, and 37 is below that — a subtle concomitant respiratory alkalosis (the pain-and-sepsis-and-hypoxia check — [[emergency-critical-care/acute-assessment]]) — the mixed picture is the reason pH 7.51 is higher than a simple alkalosis would sit.** The anion gap (132 − 84 − 29 = 19, albumin-un-corrected) is raised-and-misleading — the lactate-and-alkalaemia-and-uraemia-and-volume-contraction contributions and the albumin correction ([[#def-method]]'s step-4 rule) — delta-review: the Δgap ≈ 9 against the Δbicarbonate of −5 (alkalotic direction) confirms mixed-gap-acidosis-with-alkalosis ([[#ex-deltadelta]] method). The urine chloride of 12 says chloride-responsive (vomiting-and-contraction), and the potassium of 2.9 with AKI (the prerenal — [[renal/acute-kidney-injury]]) completes the maintenance-quintet. Treatment: **the 0.9 %-saline volume-and-chloride (the calculated deficit and the "chloride fixes the alkalosis" mechanism — the pendrin-downregulation-and-bicarbonaturia-recovery ([[renal/tubular-function]])), potassium-chloride replacement with the magnesium check ([[renal/potassium-calcium-phosphate]]'s magnesium section), the surgical repair of the obstruction (the cause-as-cure — [[surgery/acute-abdomen]]), the antiemetic-and-PPI-adjuvants, and the post-repair trajectory-check (the bicarbonate-normalising urine-pH-flip and the hypokalaemia-rebound watch ([[renal/potassium-calcium-phosphate]]) — [[clinical-skills/records-handover]]).**
-:::
-:::
-
-::: example Delta versus delta {#ex-deltadelta}
-Septic-shock fluids-resuscitated: Na 142, Cl 96, HCO₃⁻ 14, lactate 5.2, albumin 20, creatinine 165, pH 7.31, PaCO₂ 29.
-::: solution
-**Gap acidosis: the gap = 142 − 96 − 14 = 32; albumin-corrected (+2.5×2 = +5) ≈ 37. Δgap = 37 − 12 = 25; ΔHCO₃ = 24 − 14 = 10; Δgap:ΔHCO₃ ≈ 2.5 → the bicarbonate has fallen far less than the gap has risen — a concomitant metabolic alkalosis (the vomiting-or-antacid-or-contraction history) or a pre-existing raised bicarbonate (the chronic respiratory acidosis with renal compensation — the COPD patient! — [[respiratory/asthma-copd]]) — either way the "acidosis with alkaline undertow" changes the fluid-and-ventilation plans ([[#def-method]] step 5).** Winter check: expected PaCO₂ = 1.5×14 + 8 = 29 — matches the measured: the compensation is appropriate (the under-compensated patient is the tiring-or-oversedated warning — [[respiratory/control-breathing-tests]] and [[emergency-critical-care/acute-assessment]]). The lactate of 5.2 explains only ~5 of the 25-mmol gap — the rest is the renal-retention ([[renal/acute-kidney-injury]]) and the unmeasured-anion hunt (the ketones and the toxin and the pyroglutamate review — [[#def-aga]]) — the case as the chapter's proof that the gap, not the lactate, is the ledger.**
-:::
-:::
+(with mmHg the factor is 0.03 instead of 0.23). Bicarbonate is controlled by the kidneys and $\text{CO}_2$ by the lungs, so pH is a ratio of kidney to lung. Every disorder changes one side of the ratio; compensation moves the other side in the same direction.
 
 ::: widget plot
-f: 1.5*x+8; 0.7*x+21
-x: 6, 40
-y: 10, 60
-labels: \text{plasma bicarbonate (mmol/L)},\ \text{expected PaCO₂ (mmHg)};\ \text{metabolic acidosis compensation (Winter)};\ \text{metabolic alkalosis compensation}
-caption: The compensation bands ([[#def-method]]): a measured PaCO₂ off the relevant line by more than a few mmHg defines a second respiratory disorder — the classic readings are the septic patient "appropriately" at 29 who tires to 38 (the precipitous-intubation signal — [[respiratory/respiratory-failure]]), the COPD chronic-respiratory-acidosis patient whose bicarbonate of 34 (line: PaCO₂ ~45 expected if primary metabolic) belongs to compensation not alkalosis ([[respiratory/asthma-copd]]), and the delta-review's alkaline-undertow patient whose compensation sits normally but whose pH hides two lesions ([[#ex-deltadelta]]). Read with the respiratory-compensation rules for primary CO₂ disorders (the +1/+3-4 and −2/−4-5 bicarbonate shifts per 10 mmHg) from the same paragraph.
+f: 6.1+log10(x/(0.23*p))
+x: 4, 45
+y: 6.8, 7.8
+sliders: p=5.3:2:12:0.1
+hlines: 7.35; 7.45
+labels: \text{pH at }P_a\text{CO}_2 = p\text{ kPa}
+caption: pH against plasma bicarbonate (mmol/L) at a chosen $P_a\text{CO}_2$, from the Henderson–Hasselbalch equation. At 5.3 kPa, a bicarbonate of 24 gives a pH of about 7.39. Lower $p$ (hyperventilation) to see how respiratory compensation lifts the pH of a metabolic acidosis; raise it to model CO₂ retention. Because the scale is logarithmic, the same loss of bicarbonate changes pH far more when bicarbonate is already low. A simplified teaching model.
 :::
 
-::: example The osmolar-gap migration {#ex-methanol}
-A 41-year-old is found obtunded after ingesting windshield-washer fluid; 6 hours later: pH 7.05, HCO₃⁻ 6, PaCO₂ 15, Na 140, Cl 104, K 5.0, glucose 5, urea 6, lactate 3, measured osmolality 340, urine with no crystals; pupils dilated with blurred "snowstorm" complaints earlier.
+::: theorem Reading a blood gas in five steps {#thm-five-steps}
+1. **Look at the patient and the oxygenation.** Is the person hypoxic? A blood gas is interpreted with the clinical picture.
+2. **Is there acidaemia or alkalaemia?** Look at the pH.
+3. **What is the primary disorder?** If $P_a\text{CO}_2$ moves in the direction that explains the pH, the primary disorder is respiratory; if bicarbonate does, it is metabolic.
+4. **Is the compensation appropriate?** Compare the other variable with the expected value from the rules below. A value outside the expected range means a **second primary disorder**.
+5. **In any metabolic acidosis, calculate the anion gap**, correct it for albumin, and if it is raised, compare the rise in the gap with the fall in bicarbonate (the delta ratio). Consider the osmolal gap if a toxic alcohol is possible.
+:::
+
+The expected compensation rules are empirical, derived from people with single disorders.
+
+| Primary disorder | Expected compensation |
+|---|---|
+| Metabolic acidosis | $P_a\text{CO}_2$ (mmHg) $= 1.5 \times [\text{HCO}_3^-] + 8 \pm 2$ (Winter's formula); in kPa, about $0.2 \times [\text{HCO}_3^-] + 1.1 \pm 0.3$ |
+| Metabolic alkalosis | $P_a\text{CO}_2$ rises about 0.7 mmHg per 1 mmol/L rise in bicarbonate, rarely above about 55–60 mmHg (7.3–8 kPa) |
+| Acute respiratory acidosis | bicarbonate rises about 1 mmol/L per 10 mmHg (1.3 kPa) rise in $P_a\text{CO}_2$ |
+| Chronic respiratory acidosis | bicarbonate rises about 3.5 mmol/L per 10 mmHg rise |
+| Acute respiratory alkalosis | bicarbonate falls about 2 mmol/L per 10 mmHg fall |
+| Chronic respiratory alkalosis | bicarbonate falls about 4–5 mmol/L per 10 mmHg fall |
+
+::: proof
+The rules reflect the time scale and mechanism of each defence. In acute respiratory disorders, only chemical buffering is available: $\text{CO}_2$ is hydrated to carbonic acid, and the non-bicarbonate buffers (mainly haemoglobin and proteins) take up the hydrogen ions, generating a little bicarbonate. Hence the small change of about 1 mmol/L per 10 mmHg. Over several days the kidney adds its own response, increasing acid excretion as ammonium and generating new bicarbonate in respiratory acidosis, or reducing bicarbonate reabsorption in respiratory alkalosis. Hence the larger chronic changes. In metabolic acidosis, peripheral and central chemoreceptors sense the low pH and increase ventilation within minutes, giving Winter's linear relationship. In metabolic alkalosis, the ventilatory response is weak because hypoventilation causes hypoxaemia, which itself drives ventilation, so compensation is limited.
+:::
+
+## Metabolic acidosis
+
+The **anion gap** is the key to classifying metabolic acidosis. Plasma must be electrically neutral. The measured cations (sodium, sometimes potassium) exceed the measured anions (chloride and bicarbonate); the difference is made up of unmeasured anions, mainly albumin, phosphate and sulphate.
+
+$$
+\text{AG} = [\text{Na}^+] - ([\text{Cl}^-] + [\text{HCO}_3^-])
+$$ {#eq-ag}
+
+A typical reference range with modern analysers is about 8–12 mmol/L (older texts quote 12 ± 4), but each laboratory's own range should be used. When an acid HA is added to the plasma, the H⁺ is buffered by bicarbonate, and the A⁻ stays as an unmeasured anion: bicarbonate falls and the gap rises. When bicarbonate is lost and replaced by chloride, the gap stays normal.
+
+Albumin is the main normal unmeasured anion, so **hypoalbuminaemia lowers the gap** and can hide a raised one. A common correction adds about 2.5 mmol/L to the gap for every 10 g/L that albumin is below 40 g/L.
+
+::: definition Raised anion gap metabolic acidosis {#def-aga}
+A **raised anion gap metabolic acidosis** is caused by the accumulation of an acid whose anion is not chloride. The main causes are:
+
+- **lactic acidosis**: type A from tissue hypoperfusion or hypoxia (shock, sepsis, cardiac arrest, mesenteric ischaemia); type B without hypoperfusion (liver failure, metformin accumulation, malignancy, some drugs);
+- **ketoacidosis**: diabetic, alcoholic and starvation;
+- **kidney failure**: retention of sulphate, phosphate and organic anions;
+- **toxins**: methanol (formate), ethylene glycol (glycolate and oxalate), salicylate, and pyroglutamic acid (5-oxoproline), associated with regular paracetamol use in malnourished or septic people.
+:::
+
+::: definition Normal anion gap (hyperchloraemic) metabolic acidosis {#def-naga}
+A **normal anion gap metabolic acidosis** results from **loss of bicarbonate** or **failure of renal acid excretion**, with chloride rising to replace the lost bicarbonate. The main causes are:
+
+- **gastrointestinal bicarbonate loss**: diarrhoea, high-output ileostomy or fistula, ureteric diversion into bowel;
+- **renal tubular acidosis** (RTA);
+- **carbonic anhydrase inhibitors** (acetazolamide);
+- **large volumes of 0.9% saline**, which contains 154 mmol/L of chloride and no bicarbonate.
+
+The **urine anion gap**, $[\text{Na}^+]_u + [\text{K}^+]_u - [\text{Cl}^-]_u$, estimates urinary ammonium. In diarrhoea the kidney excretes plenty of ammonium (with chloride), so the urine anion gap is **negative**. In distal RTA, ammonium excretion is impaired and the gap is **positive**.
+:::
+
+### The renal tubular acidoses
+
+| Type | Defect | Urine pH during acidosis | Potassium | Typical causes |
+|---|---|---|---|---|
+| Type 1 (distal) | collecting duct cannot secrete H⁺ | always above 5.5 | low | Sjögren's syndrome, SLE, amphotericin, inherited forms; nephrocalcinosis and stones are common |
+| Type 2 (proximal) | proximal bicarbonate reabsorption reduced | can fall below 5.5 once bicarbonate is low | low | Fanconi syndrome (myeloma, tenofovir, cystinosis), acetazolamide |
+| Type 4 (hyperkalaemic) | low aldosterone or aldosterone resistance | usually below 5.5 | high | diabetic kidney disease (hyporeninaemic hypoaldosteronism), ACE inhibitors, angiotensin receptor blockers, spironolactone, adrenal insufficiency |
+
+Type 4 is by far the commonest in adults. Its acidosis is usually mild, and hyperkalaemia is the main clinical problem. Hyperkalaemia itself reduces ammonia production in the proximal tubule, which worsens the acidosis.
+
+### The delta ratio
+
+In a pure raised anion gap acidosis, each extra unmeasured anion is matched by roughly one lost bicarbonate. Comparing the two changes reveals a hidden second disorder.
+
+$$
+\text{delta ratio} = \frac{\Delta \text{AG}}{\Delta [\text{HCO}_3^-]} = \frac{\text{AG} - 12}{24 - [\text{HCO}_3^-]}
+$$ {#eq-delta}
+
+As a guide: below 0.4 suggests a normal anion gap acidosis; 0.4–0.8 a combined raised and normal gap acidosis; 1–2 a pure raised anion gap acidosis (lactic acidosis tends towards 1.6, because some lactate leaves the plasma and cells buffer some H⁺; ketoacidosis towards 1, because ketones are lost in urine); above 2 suggests a coexisting **metabolic alkalosis** or a high baseline bicarbonate from chronic respiratory acidosis. These are rules of thumb, not precise thresholds.
+
+::: example Ketoacidosis with vomiting {#ex-deltadelta}
+A 19-year-old woman with type 1 diabetes has vomited for two days. Results: pH 7.32, $P_a\text{CO}_2$ 4.3 kPa (32 mmHg), bicarbonate 16 mmol/L, sodium 136, chloride 88 mmol/L, glucose 28 mmol/L, blood ketones 5.8 mmol/L, albumin 42 g/L. Interpret.
 ::: solution
-**Severe high-gap acidosis (gap = 140 − 104 − 6 = 30) with an osmolar gap of 340 − (2×140 + 5 + 6) = 340 − 291 = 49 mOsm/kg — and the winter's-rule check: expected PaCO₂ = 1.5×6 + 8 = 17 (measured 15 — appropriate, the Kussmaul effort intact ([[#def-method]] and [[respiratory/control-breathing-tests]])). The osmolar-to-anion migration is the poisoning's signature: methanol (the washer-fluid vehicle — the ~32-MW contribution of a ~1.5 g/L level ≈ 47 mOsm of the gap) is metabolising to formic acid (the anion gap) and the visual symptoms are the formate-optic-nerve toxicity ([[emergency-critical-care/poisoning]]). The bundle: **the alcohol-dehydrogenase blockade (fomepizole — or ethanol-infusion when unavailable — with the dialysis-timing coordination — the both-treatments-and-dose-adjustment-after-dialysis kinetics ([[renal/chronic-kidney-disease]]'s extracorporeal-elimination chapter)), the urgent haemodialysis (the severe-acidosis-and-visual-and-level-and-renal-failure indications — the methanol-clearance-with-ADH-blockade arithmetic — [[renal/chronic-kidney-disease]] and [[emergency-critical-care/critical-care]]), the bicarbonate for the pH<7.1-acidaemia (the [[#def-aga]]-debate's clearest indication), the folinic-or-folic-acid-and-thiamine-and-pyridoxine cofactor-shunts ([[gastrointestinal/clinical-nutrition]]), the ICU-airway-and-Kussmaul-patience plan (the intubation-with-matched-minute-ventilation rule ([[emergency-critical-care/airway-ventilation]]) — the peri-intubation-acidosis-collapse is this poisoning's classic kill), the toxicology-network-and-poison-centre call ([[emergency-critical-care/poisoning]]) and the public-health-and-surrogate-alcohol-screen (the same-batch illicit-spirit question — [[infectious-diseases/stewardship-outbreaks]]-adjacent outbreak-reporting ([[public-health/communicable-disease-control]])).**
+**Step 2**: pH 7.32, acidaemia.
+
+**Step 3**: bicarbonate is low, so a metabolic acidosis.
+
+**Step 4**: Winter's formula: expected $P_a\text{CO}_2 = 1.5 \times 16 + 8 = 32 \pm 2$ mmHg. Measured 32 mmHg, appropriate.
+
+**Step 5**: AG $= 136 - (88 + 16) = 32$, raised. Albumin is normal. With ketones of 5.8 this is **diabetic ketoacidosis**.
+
+Delta ratio $= (32 - 12)/(24 - 16) = 20/8 = 2.5$. The bicarbonate has fallen far less than the gap has risen. Something has added bicarbonate: two days of **vomiting** have caused a **metabolic alkalosis** (loss of gastric HCl). The low chloride supports this.
+
+So she has two primary disorders: diabetic ketoacidosis and metabolic alkalosis from vomiting. The near-normal bicarbonate disguises how severe her ketoacidosis is; her ketone level and anion gap give the true picture ([[endocrine/endocrine-emergencies]]).
 :::
 :::
 
-::: example Two disorders, one tablet bottle {#ex-aspirin}
-A 22-year-old after an intentional salicylate ingestion: tinnitus, HR 118, RR 32, temp 37.9; pH 7.45, PaCO₂ 19, HCO₃⁻ 13, Na 142, Cl 108, K 3.3, lactate 2.8, salicylate level high.
+::: example Poisoning with a gap in the osmolality {#ex-methanol}
+A 45-year-old man is brought in drowsy and complaining of blurred vision. Results: pH 7.12, $P_a\text{CO}_2$ 2.9 kPa (22 mmHg), bicarbonate 7 mmol/L, sodium 140, chloride 101 mmol/L, glucose 5 mmol/L, urea 5 mmol/L, lactate 2.0 mmol/L, ketones negative. Measured plasma osmolality is 330 mOsm/kg. Interpret.
 ::: solution
-**The salicylate mixed classic: primary respiratory alkalosis (the direct medullary-respiratory-centre stimulation — [[respiratory/control-breathing-tests]] — PaCO₂ 19 with the expected acute HCO₃⁻ fall of ~2 per 10 → ~19, but measured 13 — below expectation) plus a high-anion-gap metabolic acidosis (gap = 142 − 108 − 13 = 21 — the uncoupled-oxidative-phosphorylation-and-lactate-and-ketoacid-and-salicylate-anion itself) — near-normal pH masks two large opposite disorders ([[#def-method]] step 1's warning).** The management landmarks: **the serial-gases-and-levels (the absorption-delayed-and-enteric-coated-rereads), the potassium repletion-before-urine-alkalinisation (the alkalotic-hypokalaemia's paradoxical-aciduria trap — [[renal/potassium-calcium-phosphate]] and [[renal/tubular-function]]'s [[#def-ma]]-maintained-alkalosis physiology), the sodium-bicarbonate-urine-alkalinisation protocol (the ion-trapping-clearance-enhancement with the fluid-load caution — [[emergency-critical-care/poisoning]] and [[endocrine/diabetes-complications]]'s shared-nurse-protocol-geography ([[gastrointestinal/clinical-nutrition]]-adjacent)), the haemodialysis triggers (the altered-sensorium-and-pulmonary-oedema-and-renal-failure-and-very-high-level-and-clinical-deterioration list ([[renal/chronic-kidney-disease]]) — and the pre-dialysis-intubation-hazard: the apnoea-minutes-of-acidosis-death ([[emergency-critical-care/airway-ventilation]])), the dextrose-and-thiamine-and-glucose-brain-protection (the neuroglycopenic-with-normal-serum-glucose phenomenon — [[gastrointestinal/clinical-nutrition]] and [[endocrine/diabetes]]), the hyperthermia-and-rhabdomyolysis surveillance ([[nervous-system/motor-systems]]-adjacent and [[renal/acute-kidney-injury]]), and the psychiatric admission the moment the patient is medically safe ([[psychiatry/self-harm-suicide-prevention]], [[medical-ethics-law/consent-capacity]] for the refusal-in-intoxication questions).**
+Severe metabolic acidosis. Winter's: $1.5 \times 7 + 8 = 18.5 \pm 2$ mmHg; measured 22 mmHg is slightly higher than expected, suggesting he is beginning to tire or has a degree of respiratory depression, which is dangerous.
+
+AG $= 140 - (101 + 7) = 32$, markedly raised, and neither lactate nor ketones explain it.
+
+**Osmolal gap**: calculated osmolality $= 2 \times 140 + 5 + 5 = 290$. Measured 330. Gap $= 40$ mOsm/kg (normal below about 10). An unmeasured, osmotically active substance is present. A raised anion gap with a raised osmolal gap and visual symptoms points to **methanol** poisoning (formate damages the optic nerve); ethylene glycol poisoning gives a similar picture with kidney injury and calcium oxalate crystals in urine.
+
+Management follows toxicology advice (in the UK, TOXBASE and the National Poisons Information Service): an antidote that blocks alcohol dehydrogenase (fomepizole, or ethanol), haemodialysis to remove the toxin and its metabolites, correction of acidosis and folate or folinic acid ([[emergency-critical-care/poisoning]]). Note that the osmolal gap falls as the alcohol is metabolised to acid, so a late presentation can show a high anion gap with a normal osmolal gap.
 :::
+:::
+
+## Metabolic alkalosis
+
+::: definition Metabolic alkalosis {#def-ma}
+**Metabolic alkalosis** is a primary rise in bicarbonate. Two things are needed: a process that **generates** bicarbonate (loss of acid from the stomach or in urine, or gain of alkali) and a process that **maintains** it by stopping the kidney from excreting the excess. The usual maintaining factors are volume depletion, chloride depletion, hypokalaemia and excess mineralocorticoid.
+
+It is classified by urine chloride:
+- **chloride-responsive** (urine chloride below about 20 mmol/L): vomiting, nasogastric drainage, after diuretic use has stopped, after correction of chronic hypercapnia; corrected by giving sodium chloride and potassium chloride;
+- **chloride-resistant** (urine chloride above about 40 mmol/L): current diuretic use, mineralocorticoid excess (primary aldosteronism, Cushing's syndrome, liquorice), Bartter and Gitelman syndromes, severe hypokalaemia.
+:::
+
+::: example Vomiting from pyloric obstruction {#ex-vomiting}
+A 68-year-old man with a gastric cancer has vomited after every meal for a week. Results: pH 7.53, $P_a\text{CO}_2$ 6.5 kPa (49 mmHg), bicarbonate 39 mmol/L, sodium 134, chloride 82, potassium 2.8 mmol/L, urea 14 mmol/L, urine chloride 8 mmol/L, urine pH 5.5. Interpret.
+::: solution
+Alkalaemia with a high bicarbonate: **metabolic alkalosis**. Expected $P_a\text{CO}_2 = 40 + 0.7 \times (39 - 24) = 50.5$ mmHg, measured 49: appropriate respiratory compensation.
+
+**Generation**: vomiting removes HCl from the stomach. For every H⁺ secreted by the parietal cell, one bicarbonate enters the blood.
+
+**Maintenance**: volume and chloride depletion (urine chloride 8) make the kidney reabsorb sodium avidly with bicarbonate in the proximal tubule; aldosterone (from volume loss) increases distal H⁺ and potassium secretion. The result is the classic **paradoxical aciduria**: the urine is acidic despite systemic alkalosis, because the kidney is giving priority to volume and potassium.
+
+**Treatment**: 0.9% saline with potassium chloride, following local guidance. Chloride and volume allow the kidney to excrete the excess bicarbonate, and the alkalosis corrects. The obstruction itself needs surgical or endoscopic management.
+:::
+:::
+
+## Respiratory disorders
+
+::: definition Respiratory acidosis and alkalosis {#def-resp}
+**Respiratory acidosis** results from alveolar hypoventilation: depressed respiratory drive (opioids, sedatives, brain injury), neuromuscular weakness (Guillain–Barré syndrome, myasthenia, motor neurone disease), chest wall disease (severe kyphoscoliosis, obesity hypoventilation) or lung disease (COPD, severe asthma when tiring). **Acute** respiratory acidosis has a small bicarbonate rise; **chronic** respiratory acidosis a larger one from renal compensation.
+
+**Respiratory alkalosis** results from hyperventilation: anxiety and pain, hypoxaemia (pneumonia, pulmonary embolism, altitude), sepsis, liver failure, pregnancy (progesterone stimulates ventilation), salicylate poisoning and central nervous system disease.
+:::
+
+A useful pattern is **acute-on-chronic** respiratory acidosis: a person with COPD and a stable high $P_a\text{CO}_2$ with a correspondingly high bicarbonate develops a chest infection; $P_a\text{CO}_2$ rises further, bicarbonate does not have time to rise in step, and pH falls. Another is **post-hypercapnic alkalosis**: when a person with chronic $\text{CO}_2$ retention is ventilated and $P_a\text{CO}_2$ is lowered quickly, the compensatory high bicarbonate remains and a metabolic alkalosis appears. Gentle reduction of $P_a\text{CO}_2$ and chloride replacement avoid it.
+
+::: example Two disorders from one bottle {#ex-aspirin}
+A 23-year-old woman has taken a large number of aspirin tablets some hours earlier. She has tinnitus, nausea and is breathing fast. Results: pH 7.46, $P_a\text{CO}_2$ 3.2 kPa (24 mmHg), bicarbonate 16 mmol/L, sodium 140, chloride 102 mmol/L. Interpret.
+::: solution
+The pH is slightly alkalaemic. $P_a\text{CO}_2$ is low and bicarbonate is low.
+
+If the primary disorder were metabolic acidosis, Winter's formula would predict $1.5 \times 16 + 8 = 32 \pm 2$ mmHg. The measured 24 mmHg is far lower: there is an additional **respiratory alkalosis**. AG $= 140 - (102 + 16) = 22$, raised: there is a **raised anion gap metabolic acidosis**.
+
+This is the classic salicylate picture. Salicylate stimulates the respiratory centre directly (respiratory alkalosis, often the first change), and uncouples oxidative phosphorylation, causing lactic and keto-acid accumulation (metabolic acidosis). In adults the two often coexist, producing a near-normal or alkalaemic pH.
+
+The danger sign is a falling pH. Acidaemia allows more salicylate (a weak acid) to remain un-ionised and cross into the brain. If she becomes drowsy or needs intubation, ventilation must keep $P_a\text{CO}_2$ low, because a rise in $\text{CO}_2$ would worsen acidaemia and drive salicylate into the brain. Management follows toxicology guidance: activated charcoal if appropriate, intravenous sodium bicarbonate to alkalinise the urine (trapping ionised salicylate in the urine), potassium replacement, and haemodialysis for severe poisoning ([[emergency-critical-care/poisoning]]).
+:::
+:::
+
+::: warning A normal pH can hide two serious disorders {#warn-normal-ph}
+A normal pH does not mean a normal acid–base state. When two primary disorders push pH in opposite directions, the pH can sit in the normal range while bicarbonate and $P_a\text{CO}_2$ are both badly abnormal. Examples are salicylate poisoning (metabolic acidosis with respiratory alkalosis) and ketoacidosis with vomiting (metabolic acidosis with metabolic alkalosis). Always check the compensation and the anion gap, even when the pH is 7.40. Similarly, a normal anion gap in a person with low albumin may conceal a raised gap; correct it.
 :::
 
 ::: quiz
-A patient with 3 days of profuse watery diarrhoea has a normal-anion-gap metabolic acidosis. Expected urine findings:
-- [ ] Urine anion gap positive (+30), urine osmolal gap small
-- [x] Urine anion gap strongly negative (−40), high urine osmolal gap — ammonium excretion intact
-- [ ] Urine pH always >5.5
-- [ ] Undetectable urine bicarbonate only
+A 72-year-old man with COPD has these results when well: pH 7.37, $P_a\text{CO}_2$ 8.0 kPa (60 mmHg), bicarbonate 33 mmol/L. Which description fits best?
+- [ ] Acute respiratory acidosis
+- [x] Chronic respiratory acidosis with appropriate renal compensation
+- [ ] Metabolic alkalosis with respiratory compensation
+- [ ] Mixed respiratory acidosis and metabolic acidosis
 ::: solution
-**The gut-loss pattern: the healthy kidney excretes the acid load as ammonium-with-chloride (the unmeasured NH₄⁺ makes the urine anion gap negative and the urine osmolal gap large — [[#def-naga]]'s probes); a positive urine anion gap instead points to renal-tubular-acidosis (the ammoniagenesis-or-secretion failure — [[renal/tubular-function]] and [[renal/chronic-kidney-disease]]'s CKD-variant), the distinction that prevents treating the wrong compartment ([[clinical-skills/laboratory-tests]]'s urine-electrolyte reading). The urine-pH-above-5.5 answer is the distal-RTA signature ([[renal/urinary-tract]]), and bicarbonate-absent-urine is the acidotic-normal response common to both.**
+$P_a\text{CO}_2$ is 20 mmHg above normal. In chronic respiratory acidosis bicarbonate should rise about 3.5 mmol/L per 10 mmHg, so by about 7 mmol/L, to about 31. His 33 is close to this, and the pH is almost normal: a **chronic respiratory acidosis with appropriate renal compensation**. An acute rise of the same size would increase bicarbonate by only about 2 mmol/L and lower pH to about 7.26. A primary metabolic alkalosis would make the pH alkalaemic, and the $P_a\text{CO}_2$ of 60 mmHg would be at the limit of compensation.
 :::
 :::
 
 ::: history
-**The Henderson-Hasselbalch equation (1908-1916) and Sørensen's pH scale and the Davenport-open-system bicarbonate-language and the "body-fluids" atlas of Darrow-and-Gamble (1937)** founded the arithmetic; **the kidney's ammonia-trapping physiology (the 1940s-50s Pitts-Davenport-Flanagan-and-Relman ammonia studies and the Wrong-and-Davies 1959 distal-RTA characterisation)**; the **Gamble-and-Darrow stool-chemistry and paediatric-dehydration lineage ([[paediatrics/acute-childhood-illness]])**; **lactate's classification (the Cohen-and-Woods 1976 A-versus-B distinction)** and **the anion-gap introduction into clinic (the 1977 Emmett-and-Narins formulation) and the MUDPILES-then-GOLDMARK mnemonics**; **Winter's-rule (1967) and the compensation-equation era (the 1970s-80s — the Boston-vs-Copenhagen acid-base-school war, the "Boston-algebraic" versus "Aarhus-physicochemical-Stewart" framing — the strong-ion-gap controversy that still colours perioperative fluid language ([[surgery/perioperative-care]]))**; **toxic-alcohol recognition and ADH-blockade therapy (the 1981 methanol-ethanol and the 1990s fomepizole era)**; **the metformin-associated-lactic-acidosis and the acetaminophen-pyroglutamic (1990s-2010s) recognitions ([[pharmacology/adverse-reactions]])**; and the **balanced-solution trials (the SMART-and-SPLIT-and-BaSICS-and-CRYSTAL era)** re-opened the saline-acidosis question ([[emergency-critical-care/shock-fluids]]).
+In 1908 the American biochemist Lawrence Henderson described how carbonic acid and bicarbonate buffer the blood, and in 1916 the Danish physician Karl Albert Hasselbalch rewrote Henderson's equation in logarithmic form using the then-new pH notation. Clinical acid–base analysis grew from a crisis. During the 1952 poliomyelitis epidemic in Copenhagen, many patients with respiratory paralysis had a high plasma bicarbonate that was at first interpreted as a metabolic alkalosis. The anaesthetist Bjørn Ibsen argued that it reflected $\text{CO}_2$ retention, and the laboratory physician Poul Astrup developed methods to measure pH and $P_a\text{CO}_2$ at the bedside. Ibsen's introduction of tracheostomy and manual positive-pressure ventilation, delivered for weeks by medical students, cut mortality sharply and helped found intensive care medicine.
 :::
 
 ## Where this leads
 
-The buffer chemistry in [[physiology/acid-base]]; the tubular effectors in [[renal/tubular-function]] and [[renal/tubular-function]]'s concentrating system; the potassium exchanges in [[renal/potassium-calcium-phosphate]]; the ventilatory compensation in [[respiratory/control-breathing-tests]] and its failure in [[respiratory/respiratory-failure]]; the shock-lactate world in [[emergency-critical-care/shock-fluids]] and [[emergency-critical-care/resuscitation]]; the poisonings in [[emergency-critical-care/poisoning]]; diabetic ketoacidosis in [[endocrine/diabetes-complications]]; the fluid trials in [[surgery/perioperative-care]].
-
-::: exercise Four quick readings {level=2}
-Classify each (single or mixed): (a) pH 7.32, PaCO₂ 20, HCO₃⁻ 10; (b) pH 7.48, PaCO₂ 28, HCO₃⁻ 21; (c) pH 7.35, PaCO₂ 60, HCO₃⁻ 32; (d) pH 7.02, PaCO₂ 46, HCO₃⁻ 8.
-::: solution
-**(a) Metabolic acidosis with appropriate compensation (Winter: 1.5×10+8 = 23±2 — 20 is at the border: acceptable, or a whisper of additional respiratory alkalosis — the septic-and-pain check); (b) acute respiratory alkalosis (the −2-per-10 rule: PaCO₂ 28 → expected HCO₃⁻ ≈ 21-22 — pure); (c) chronic respiratory acidosis compensation pattern (the COPD retainer — +3-4-per-10 gives ~32 — appropriate, not alkalosis ([[respiratory/asthma-copd]])); (d) metabolic acidosis WITH an inappropriately high PaCO₂ (Winter-expected ≈ 20, actual 46 — a superimposed respiratory acidosis: the tiring or sedated patient — the intubation-now gas ([[respiratory/respiratory-failure]], [[emergency-critical-care/acute-assessment]])) — the four-line arithmetic of the compensation widget in [[#def-method]].**
-:::
-:::
+Acidosis in acute kidney injury, and the decision to start dialysis for acidosis, are in [[renal/acute-kidney-injury]]. The chronic metabolic acidosis of chronic kidney disease, and its treatment with oral bicarbonate, is in [[renal/chronic-kidney-disease]]. Diabetic ketoacidosis is covered in [[endocrine/endocrine-emergencies]], respiratory failure in [[respiratory/respiratory-failure]], and the poisonings in [[emergency-critical-care/poisoning]].
 
 ::: summary
-- Read gases in a fixed order: pH → primary disorder → compensation arithmetic → anion gap (albumin-corrected) → delta review → osmolar gap → urine probes → clinical story; a normal pH with abnormal components is a mixed disorder, not a normal result.
-- Raised-gap acidosis is the MUDPILES/GOLDMARK hunt (lactate A/B, ketones, uraemia, toxic alcohols, salicylate, pyroglutamate); the cause is the acid, and ventilation-matching protects the compensation.
-- Normal-gap acidosis separates gut from kidney with the urine anion and osmolal gaps; the RTA subtypes and type-4 physiology are the renal chapter's own list.
-- Metabolic alkalosis is generated by chloride-and-volume-and-potassium losses and maintained by the kidney's chloride-depletion; the urine chloride is the fork, and saline plus potassium plus chloride is the cure.
-- Toxic alcohols migrate their gap from osmolar to anionic; salicylates mix alkalosis with gap acidosis behind a near-normal pH — both kill through the airway and ventilation decisions.
+- Normal values: pH 7.35–7.45, $P_a\text{CO}_2$ 4.7–6.0 kPa (35–45 mmHg), bicarbonate 22–26 mmol/L. pH depends on the ratio of bicarbonate (kidney) to $\text{CO}_2$ (lung).
+- Read a gas in five steps: patient and oxygen; pH; primary disorder; expected compensation; anion gap and delta ratio (and osmolal gap if relevant).
+- Winter's formula: expected $P_a\text{CO}_2$ (mmHg) $= 1.5 \times \text{HCO}_3^- + 8 \pm 2$. Compensation outside the expected range means a second disorder.
+- Anion gap $= \text{Na}^+ - (\text{Cl}^- + \text{HCO}_3^-)$; correct for low albumin (+2.5 per 10 g/L below 40). Raised gap: lactate, ketones, kidney failure, toxins. Normal gap: diarrhoea, RTA, saline, acetazolamide.
+- The delta ratio (ΔAG/ΔHCO₃⁻) reveals a hidden metabolic alkalosis (above 2) or a coexisting normal gap acidosis (below 1).
+- A raised osmolal gap with a raised anion gap suggests methanol or ethylene glycol.
+- Metabolic alkalosis needs generation and maintenance; urine chloride separates chloride-responsive from chloride-resistant causes.
+- A normal pH can conceal two opposing disorders.
 :::
 
 ## Exercises
 
-::: exercise Do the arithmetic {level=1}
-Na 140, Cl 110, HCO₃⁻ 14, albumin 40: compute the gap and classify; add the expected PaCO₂.
+::: exercise Anion gap {level=1 check="138-(110+14)"}
+Calculate the anion gap for: sodium 138, chloride 110, bicarbonate 14 mmol/L. Is this a raised or normal gap acidosis, and give two possible causes.
 ::: solution
-**Gap = 140 − 110 − 14 = 16 (albumin-normal-corrected — still raised: a mild gap component) — predominantly hyperchloraemic (normal-gap) acidosis with a small gap component ([[#def-naga]] and [[#def-aga]] co-existence is common — e.g., diarrhoea-with-lactate-and-renal-failure); Winter: expected PaCO₂ = 1.5×14 + 8 = 29 (±2) (the compensation widget's first line) — off that line means a second respiratory disorder ([[respiratory/respiratory-failure]]).**
+AG $= 138 - (110 + 14) = 14$ mmol/L, at or just above the upper end of a typical modern reference range: essentially a **normal anion gap (hyperchloraemic) acidosis**, with chloride replacing bicarbonate. Causes include diarrhoea, renal tubular acidosis, large volumes of 0.9% saline and acetazolamide. The urine anion gap helps separate gastrointestinal from renal causes.
+:::
+:::
+
+::: exercise Winter's formula {level=1 check="1.5*12+8"}
+A person with a metabolic acidosis has a bicarbonate of 12 mmol/L. Calculate the expected $P_a\text{CO}_2$ in mmHg (central value, without the ±2).
+::: solution
+Expected $P_a\text{CO}_2 = 1.5 \times 12 + 8 = 26$ mmHg (about 3.5 kPa), range 24–28 mmHg. A measured value above 28 means a coexisting respiratory acidosis (often a tiring patient); below 24, a coexisting respiratory alkalosis.
 :::
 :::
 
 ::: exercise Name the disorders {level=1}
-pH 7.20, PaCO₂ 75, HCO₃⁻ 28 on an arrest-arriving gas: acute or chronic respiratory acidosis, and what is the expected bicarbonate?
+Name the primary disorder and say whether compensation looks appropriate: (a) pH 7.25, $P_a\text{CO}_2$ 8.5 kPa (64 mmHg), bicarbonate 27; (b) pH 7.50, $P_a\text{CO}_2$ 3.6 kPa (27 mmHg), bicarbonate 21; (c) pH 7.30, $P_a\text{CO}_2$ 3.7 kPa (28 mmHg), bicarbonate 13.
 ::: solution
-**Acute respiratory acidosis (the +1-per-10 rule: PaCO₂ +35 → expected HCO₃⁻ ≈ 24 + 3.5 = 27.5 — matches 28): a pure acute rise (the hypoventilation-of-arrest-and-opioid-and-airway [[respiratory/respiratory-failure]] and [[emergency-critical-care/poisoning]]); a chronic retainer would show 35-38 ([[respiratory/asthma-copd]] and the [[renal/water-sodium]]-renal-compensation days-rule), so the gap between 28 and 35 is itself a diagnosis — the acute-on-chronic question changes the ventilation-target ([[emergency-critical-care/airway-ventilation]]) and the weaning ([[respiratory/respiratory-failure]]).**
+(a) **Acute respiratory acidosis**: $P_a\text{CO}_2$ has risen by 24 mmHg, so bicarbonate should rise by about 2.4, to about 26–27. Appropriate for an acute disorder; for example, opioid overdose or a tiring person with asthma.
+
+(b) **Acute respiratory alkalosis**: $P_a\text{CO}_2$ has fallen by 13 mmHg, so bicarbonate should fall by about 2.6, to about 21. Appropriate; for example, anxiety, pain or pulmonary embolism.
+
+(c) **Metabolic acidosis**: Winter's predicts $1.5 \times 13 + 8 = 27.5 \pm 2$ mmHg; measured 28. Appropriate respiratory compensation. The next step is the anion gap.
 :::
 :::
 
-::: exercise Set the ventilator {level=2}
-A severe-CKD patient (HCO₃⁻ 10, pH 7.25, spontaneously breathing at PaCO₂ 22) is intubated for fatigue; the ventilator is set to rate 12, tidal volume 450 mL. Predict the gas an hour later and the teaching.
+::: exercise Correct the gap for albumin {level=2 check="(140-104-22)+0.25*(40-20)"}
+A septic patient in intensive care has sodium 140, chloride 104, bicarbonate 22 mmol/L and albumin 20 g/L. Calculate the albumin-corrected anion gap (adding 0.25 mmol/L for each g/L of albumin below 40) and interpret.
 ::: solution
-**Iatrogenic-acidaemia: the compensation (Winter-expected ≈ 23, and his spontaneous minute-ventilation is at-or-below that ceiling) has been removed — rate-12 settings deliver less-than-required minute ventilation and pH falls (the post-intubation-collapse pattern also seen in salicylate ([[#ex-aspirin]]) and status ([[nervous-system/epilepsy]]-adjacent metabolic-drain) states): match-or-exceed the pre-intubation minute ventilation and accept the "low" CO₂ (the [[emergency-critical-care/airway-ventilation]] and [[respiratory/respiratory-failure]] weaning-parallel teaching). The fix: raise rate-and-tidal-volume-toward-compensation-targets, treat the acidosis-cause (the dialysis — [[renal/chronic-kidney-disease]]) and wean to his own drive.**
+Uncorrected AG $= 140 - (104 + 22) = 14$. Correction $= 0.25 \times (40 - 20) = 5$. Corrected AG $= 19$ mmol/L, clearly **raised**. Low albumin has hidden an accumulation of unmeasured anions, most likely lactate in sepsis. Lactate should be measured.
 :::
 :::
 
-::: exercise Interpret the urine electrolytes {level=2}
-Acidotic patient: urine Na 30, K 55, Cl 20. Compute the urine anion gap and interpret; then give the osmolal-gap caveat.
+::: exercise The osmolal gap {level=2 check="320-(2*138+6+4)"}
+A man is found confused next to an empty bottle of antifreeze. Measured plasma osmolality is 320 mOsm/kg; sodium 138, glucose 6 and urea 4 mmol/L. Calculate the osmolal gap in mOsm/kg and explain its significance.
 ::: solution
-**UAG = 30 + 55 − 20 = +65 — strongly positive: low urinary ammonium → renal-tubular-acidosis-or-hypoaldosteronism ([[#def-naga]] and [[renal/potassium-calcium-phosphate]]) rather than gut losses; the caveats: the positive UAG also occurs when the obligate-anions (bicarbonaturia-and-ketonuria-and-D-lactate) carry ammonium-with-other-anions, and when sodium-delivery limits excretion — hence the urine osmolal gap (2(Na+K) subtracted from measured — a large gap implies hidden NH₄⁺ and flips the interpretation back to gastrointestinal-or-ketotic losses ([[clinical-skills/laboratory-tests]]). The full panel (K, glucose, ketones, lactate, drug history, urine pH) closes it ([[renal/tubular-function]]'s acidification machinery).**
+Calculated osmolality $= 2 \times 138 + 6 + 4 = 286$. Gap $= 320 - 286 = 34$ mOsm/kg, markedly raised. The most likely unmeasured osmole is **ethylene glycol**. As it is metabolised to glycolate and oxalate, the osmolal gap falls and the anion gap rises, causing metabolic acidosis, acute kidney injury and calcium oxalate crystals. Urgent toxicology advice, an alcohol dehydrogenase blocker and haemodialysis may be needed.
 :::
 :::
 
-::: exercise Choose the fluid {level=2}
-A postoperative patient has received 8 L of 0.9 % saline and now has HCO₃⁻ 15, Cl 118 (gap 13), pH 7.26 and urine output good. Explain and give the management, with the trial-level argument.
+::: exercise Interpret the urine {level=2}
+Two people have a normal anion gap metabolic acidosis with bicarbonate 15 mmol/L. Person A: urine sodium 40, potassium 30, chloride 100 mmol/L; urine pH 5.2. Person B: urine sodium 50, potassium 30, chloride 55 mmol/L; urine pH 6.6; plasma potassium 2.9 mmol/L, nephrocalcinosis on ultrasound. Explain each.
 ::: solution
-**Dilutional-chloride (normal-gap hyperchloraemic) acidosis ([[#def-naga]]'s saline-row): the high chloride load drives a chloride-for-bicarbonate shift and a collapsing strong-ion difference ([[physiology/acid-base]]'s Stewart-adjacent framing and the [[surgery/perioperative-care]] acid-base-language).** Management: **stop the saline (the balanced-solution switch — the chloride-restricted approach and the balanced-crystalloid trials' AKI-and-atrial-fibrillation-and-mortality-signals (the SMART-and-BaSICS-and-PLUS-and-SPLIT-generation) ([[emergency-critical-care/shock-fluids]] and [[epidemiology-ebm/randomised-trials]])), expect the kidney (intact here) to self-correct (the good-urine-output clause), consider bicarbonate only if severe-or-renal-failure ([[renal/acute-kidney-injury]]), and audit the postoperative-fluid-prescribing defaults (the maintenance-not-volume-protocol and the chloride-load-logging ([[clinical-skills/patient-safety]])).**
+Person A: urine anion gap $= 40 + 30 - 100 = -30$, negative. The kidney is excreting a lot of ammonium (with chloride), and the urine is acidic. Renal acid excretion is working: the acidosis is from **gastrointestinal bicarbonate loss**, most likely diarrhoea.
+
+Person B: urine anion gap $= 50 + 30 - 55 = +25$, positive. Little ammonium is being excreted and urine pH stays above 5.5 despite systemic acidosis. With hypokalaemia and nephrocalcinosis this is **distal (type 1) renal tubular acidosis**. Causes include Sjögren's syndrome and other autoimmune diseases.
 :::
 :::
 
-::: exercise The post-hypercapnic puzzle {level=2}
-A COPD patient (chronic PaCO₂ 72, HCO₃⁻ 36) is ventilated post-operatively to PaCO₂ 40 and becomes pH 7.55, K 2.8, hypotensive. Explain and give the correction plan.
+::: exercise A gas in sepsis with COPD {level=3}
+A 70-year-old woman with COPD has pneumonia and is hypotensive. Results: pH 7.18, $P_a\text{CO}_2$ 7.8 kPa (59 mmHg), bicarbonate 21 mmol/L, sodium 138, chloride 100 mmol/L, lactate 6 mmol/L, albumin 30 g/L. Her previous gas when well showed bicarbonate 30 mmol/L. Identify all the disorders present.
 ::: solution
-**Post-hypercapnic metabolic alkalosis ([[#def-ma]]'s namesake row and [[respiratory/respiratory-failure]]'s over-correction trap): the renal-bicarbonate-retention ([[renal/tubular-function]]'s chloride-repletion-dependent-maintenance and [[renal/water-sodium]]) cannot be excreted acutely — leaving the "old" bicarbonate opposite an acutely normalised CO₂; consequences: the alkalaemia's hypotension-and-arrhythmia-and-left-shift ([[#def-ma]], [[blood/haemoglobin-disorders]]) and the respiratory-drive-suppression ([[respiratory/control-breathing-tests]]). Plan: **return ventilation to the compensation-CO₂ (~70s — the permissive-hypercapnia rule ([[emergency-critical-care/airway-ventilation]])), give chloride-and-potassium-and-magnesium (the repletion-trio — [[renal/potassium-calcium-phosphate]] and [[renal/potassium-calcium-phosphate]]'s magnesium section), acetazolamide-if-volume-overloaded ([[cardiovascular/heart-failure]]'s contraction-alkalosis-counterpart), and wean slowly with gases following the weaning ([[respiratory/respiratory-failure]] and [[clinical-skills/records-handover]]).**
+**Respiratory acidosis**: $P_a\text{CO}_2$ is high. Her bicarbonate when well (30) suggests chronic compensated respiratory acidosis, now acute-on-chronic as pneumonia worsens ventilation.
+
+**Metabolic acidosis**: with $P_a\text{CO}_2$ of 59 mmHg, chronic compensation would predict a bicarbonate of about $24 + 3.5 \times 1.9 \approx 31$. Her bicarbonate of 21 is much lower: a metabolic acidosis has consumed about 10 mmol/L.
+
+**Anion gap**: $138 - (100 + 21) = 17$; corrected for albumin, $17 + 0.25 \times 10 = 19.5$, raised. With lactate 6, this is a **lactic acidosis** from septic shock.
+
+Using her own baseline bicarbonate of 30, the bicarbonate has fallen by 9 while the corrected gap has risen by about 7.5: a delta ratio near 1, consistent with a pure raised gap acidosis on top of her chronic respiratory acidosis.
+
+So three processes coexist: chronic respiratory acidosis, an acute worsening of respiratory acidosis, and lactic acidosis. Both her ventilation (she may need non-invasive ventilation or intubation) and her circulation need urgent support.
 :::
 :::
 
-::: exercise Design the acid–base safety bundle {level=3}
-Design the hospital training and safety programme around gas interpretation: the competence targets, the poisoning and post-operative pathways and the audit set.
+::: exercise Design a blood gas checklist {level=3}
+Design a one-page checklist that a junior doctor could use to interpret any arterial blood gas safely at night. Explain why each item is there.
 ::: solution
-**Competence: the eight-step-reading taught-and-assessed (the [[#def-method]] order with the mixed-disorder vignettes — [[clinical-skills/clinical-reasoning]]), the compensation-rule fluency (the widget) and the gap-corrections (albumin and the ion-selective-artefact awareness — [[clinical-skills/laboratory-tests]]) built into the acute-medicine and anaesthesia and ICU curricula ([[emergency-critical-care/acute-assessment]] and [[surgery/anaesthesia-pain]]).** **Pathways: the post-operative-fluid defaults (the isotonic-maintenance-with-early-oral, the chloride-load logging — [[surgery/perioperative-care]], the [[renal/potassium-calcium-phosphate]] potassium-safety bundle's electrolyte-day-1-and-3 rule and the metformin-sick-day ([[endocrine/diabetes-complications]] and [[renal/acute-kidney-injury]])) — the [[#ex-vomiting]] pattern (vomiting-and-NG-and-diuretics) as the nursing-observed-alkalosis-trigger; the toxicology pathway (the osmolar-gap-and-anion-gap serial protocol and the fomepizole-and-dialysis-activation and poison-centre numbers on the gas-result itself — [[emergency-critical-care/poisoning]] and [[renal/chronic-kidney-disease]]'s urgent-dialysis criteria); the critical-care acidemia protocol (the pH-threshold discussion and the renal-replacement-timing ([[renal/acute-kidney-injury]]) and the ventilation-matching pre-intubation checklist ([[emergency-critical-care/airway-ventilation]])).** **Audit: the post-intubation-acidosis events, the toxic-alcohol time-to-antidote-and-time-to-dialysis, the saline-chloride-burden per bed-day, the gas-interpretation-competence scores and the dysnatraemia-acid-base co-morbidity readmissions ([[renal/water-sodium]], [[clinical-skills/patient-safety]]) — the whole programme teaching the chapter's single habit: never accept one number's story when the arithmetic proves two.**
+1. **Patient details and $F_I\text{O}_2$**: oxygenation cannot be interpreted without knowing the inspired oxygen; a "normal" $P_a\text{O}_2$ on 60% oxygen is severe hypoxaemia.
+2. **Arterial or venous?** Venous gases are useful for pH, bicarbonate, lactate and electrolytes but not for oxygenation; venous $P\text{CO}_2$ is a few mmHg higher than arterial.
+3. **pH**: acidaemia or alkalaemia.
+4. **Primary disorder**: which of $P_a\text{CO}_2$ and bicarbonate explains the pH.
+5. **Expected compensation** from the rules (written on the sheet), and a statement of any second disorder if compensation is outside range.
+6. **Anion gap**, with albumin correction, in every metabolic acidosis; **delta ratio** if the gap is raised.
+7. **Lactate, glucose and ketones**, which explain most raised gaps.
+8. **Osmolal gap** if the cause of a raised gap is unexplained or poisoning is possible.
+9. **Potassium**, because acidosis and alkalosis shift it and its treatment may be urgent.
+10. **Clinical synthesis and escalation**: a one-line summary of all disorders and their likely causes, and clear criteria for senior review (pH below 7.2, rising $P_a\text{CO}_2$, lactate above 4, suspected poisoning).
 :::
 :::

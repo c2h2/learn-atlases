@@ -1,150 +1,372 @@
-The kidney's first act is filtration: **a high-pressure, dual-capillary organ streaming a quarter of the cardiac output through a charge-and-size-selective filter that presents the plasma (minus its proteins) to four centimetres of epithelial tubing for hourly reprocessing.** This chapter establishes the haemodynamics (Starling forces and autoregulation), the filtration barrier (endothelium and basement membrane and podocyte), the quantification of glomerular filtration rate (the creatinine mathematics and its notorious traps), and the urinalysis that makes tubular and glomerular disease visible before blood tests change. The glomerular diseases themselves and their chronic consequences run in [[renal/chronic-kidney-disease]]; the downstream tubing in [[renal/tubular-function]].
+Every minute about a fifth of the blood pumped by the heart passes through two organs that together weigh about 300 g. The kidneys do not need this flow for their own metabolism. They need it because their first job is to filter the plasma, and a filter is only as useful as the volume it can process. In a healthy young adult the glomeruli produce about 180 litres of filtrate a day. Almost all of it is reabsorbed further down the nephron, leaving one to two litres of urine.
 
-This chapter covers renal blood flow and the filtration barrier, the control of glomerular filtration rate, measuring and estimating kidney function, and urine screening.
+This lesson covers the first step: how blood reaches the glomerulus, what the filtration barrier lets through, which forces drive filtration and how the kidney keeps filtration steady when blood pressure changes. It then turns to measurement. Glomerular filtration rate (GFR) is the single most useful number in renal medicine, yet it is almost never measured directly. Understanding how it is estimated, and when the estimate misleads, prevents real harm at the bedside. The lesson ends with the urine tests that reveal glomerular damage before blood tests change.
 
-## Flow and the filter
+The tubule that receives the filtrate is the subject of [[renal/tubular-function]]. The anatomy of the kidneys and their vessels is in [[anatomy/abdomen]], and the body fluid compartments are in [[physiology/homeostasis-body-fluids]].
 
-::: definition Renal blood flow and the nephron's vascular specialisation {#def-flow}
-The kidneys receive **1.1–1.2 L/min — about 20-25 % of the cardiac output for 0.4 % of body mass ([[cardiovascular/cardiac-cycle]]'s organ-division table)** — via the short direct aortic renals, distributed **~90 % to the cortex (the glomeruli — high-flow low-resistance) and ~10 % to the medulla (the vasa recta — low-flow and salt-and-urea-preserving ([[renal/tubular-function]]'s countercurrent economy) and vulnerable to the medullary-hypoxia of NSAIDs and sickling and contrast (the [[renal/acute-kidney-injury]] papillary-necrosis list))**. The unique architecture: **two capillary beds in series (glomerulus between afferent and efferent arterioles) — the efferent's downstream second plexus (peritubular in the cortex, vasa recta in the medulla) is therefore pressure-drop-deprived and plasma-protein-concentrated, the physical basis of tubular reabsorption ([[#ex-starling]]); the juxtaglomerular apparatus (afferent-granular-cell renin store and macula densa and extraglomerular mesangial cells) as the sensory-effector node of [[renal/water-sodium]]'s renin-angiotensin-aldosterone-system and of [[#def-autoregulation]].** The filtration itself: **the glomerular capillary presents 40 m² of human filter (the surface-area-by-permeability product Kf) to an unusually high hydraulic pressure (~45-50 mmHg — the two-arteriole arrangement protecting the capillary from systemic pressure at both ends while keeping its transmural gradient); the barrier — the fenestrated endothelium (70-100 nm pores, glycocalyx charge), the glomerular basement membrane (the type-IV-collagen-Laminin-Nidogen-heparin-sulfate-proteoglycan mesh — its type-IV-collagen mutations the Alport and thin-membrane diseases ([[genetics/mendelian-inheritance]]'s X-linked-and-recessive genetics) and its anti-GBM antibodies in anti-GBM (Goodpasture's) disease — [[immunology/hypersensitivity]]'s type-II lesson), and the podocyte (the interdigitating foot processes and slit-diaphragm proteins — nephrin and podocin — whose mutations cause congenital nephrotic syndromes and whose acquired injury produces the foot-process effacement of minimal-change and diabetic lesions — [[renal/chronic-kidney-disease]]) — together rejecting molecules by size (functional cutoff ~4 nm radius, 70 kDa-ish) and by charge (the anionic heparan-sulfate pathway's polyanion restriction — the albumin (69 kDa, anionic and 3.6-nm) leak of barrier-charge-loss diseases as the prototype).** The result: **the ultrafiltrate (plasma without protein — the [[physiology/homeostasis-body-fluids]] composition table) at 180 L/day, ~99 % reabsorbed ([[renal/tubular-function]]) — the filtration fraction (~20 %) concentrating efferent plasma protein and flipping the peritubular-Starling balance toward reabsorption ([[#ex-starling]]) — and the whole arrangement obeying Starling's law with the oncotic term rising steeply along the capillary (the filtration-pressure-equilibrium concept — why filtration stops before the efferent end when plasma-protein rises or flow falls).**
+## Blood supply and the nephron
+
+Each renal artery divides into segmental, interlobar, arcuate and interlobular arteries. The interlobular arteries give off **afferent arterioles**, each of which feeds one glomerulus. Blood leaves the glomerulus not through a venule but through a second arteriole, the **efferent arteriole**. This arrangement of two resistance vessels in series, with a capillary bed between them, is unusual and is the key to how the kidney controls filtration.
+
+After the efferent arteriole the blood enters a second capillary network. Around the cortical tubules this is the **peritubular capillary** network, which takes back the fluid reabsorbed by the tubule. Efferent arterioles from glomeruli near the medulla also give rise to long, hairpin-shaped vessels, the **vasa recta**, which supply the medulla without washing away its concentration gradient.
+
+::: definition Renal blood flow and the nephron {#def-flow}
+**Renal blood flow** (RBF) is about 1.1 L/min in a resting adult, roughly 20–25% of the cardiac output. **Renal plasma flow** (RPF) is the plasma part of that flow, RBF × (1 − haematocrit), about 600–650 mL/min.
+
+The **nephron** is the functional unit of the kidney: a glomerulus with its Bowman's capsule, followed by the proximal tubule, the loop of Henle, the distal convoluted tubule and the connecting tubule, which drains into a collecting duct. A human kidney contains on average about one million nephrons, with wide variation between people. **Cortical nephrons** have glomeruli in the outer cortex and short loops; **juxtamedullary nephrons** have glomeruli near the medulla and long loops that dip deep into it.
+
+The **filtration fraction** is the fraction of the plasma entering the glomeruli that is filtered:
+
+$$
+\text{FF} = \frac{\text{GFR}}{\text{RPF}} \approx \frac{125}{650} \approx 0.2
+$$ {#eq-ff}
 :::
 
-::: definition Autoregulation and the hormonal overlay {#def-autoregulation}
-**Renal blood flow and GFR are held near-constant across arterial pressures of ~80-180 mmHg (autoregulation), by two intrinsic mechanisms: the myogenic response (the afferent-granular-muscle stretch-contracture — the Bayliss-effect — [[physiology/integrative-physiology]]-adjacent) and tubuloglomerular feedback (the macula-densa NaCl read (via NKCC2 — the loop-diuretic target — [[renal/tubular-function]]) setting adenosine release and afferent tone: more distal salt means less filtration required means afferent constriction — the mechanism that single-nephron autoregulation shares with the whole kidney and that keeps filtration fraction constant).** On this intrinsic frame the system overlays **the sympathetic α-response (the intense constrictor of haemorrhage and sepsis and heart failure — the prerenal-oliguria and the cardiorenal and hepatorenal syndromes of [[cardiovascular/heart-failure]] and [[renal/acute-kidney-injury]] and [[renal/chronic-kidney-disease]]'s effective-arterial-blood-volume lesson), angiotensin II (preferential efferent constriction — preserving filtration pressure when perfusion falls (the adaptive act) but transmitting systemic hypertension into the glomerulus when the afferent is already relaxed — and the reason ACE inhibitors and ARBs lower intraglomerular pressure (the therapeutic trade: short-term eGFR dip, long-term proteinuria-and-progression benefit — [[cardiovascular/hypertension]] and [[renal/chronic-kidney-disease]]), and the reason they are dangerous in bilateral renal-artery stenosis (the efferent-constriction-dependence removed — the creatinine-rise rule of the [[cardiovascular/vascular-disease]]'s renal-artery hunt), prostaglandins (PGE₂ and PGI₂ — the afferent-dilator brake on unopposed constrictors, hence the NSAID triple-whammy ([[renal/acute-kidney-injury]]) — [[pharmacology/adverse-reactions]]), and endothelin and nitric oxide (the endothelial rheostat and the contrast-and-pre-eclampsia vasoconstriction stories — [[obstetrics-gynaecology/pregnancy-complications]]).** The clinical corollaries: **the brain-kidney-heart parallel of shifted autoregulation curves in chronic hypertension (the normotensive-seeming patient who acute-kidney-injures at "normal" pressures — [[renal/acute-kidney-injury]]'s perfusion-target teaching), the renal-protective logic of the pregnancy-related fall in blood pressure [[obstetrics-gynaecology/pregnancy-antenatal]] and the single-nephron hyperfiltration of nephron-loss, ageing, early diabetes and high-protein load (the hyperfiltration hypothesis of diabetic and reduced-renal-mass progression ([[renal/chronic-kidney-disease]]) and the donor-kidney counselling numbers (the living-donation consent literature — [[medical-ethics-law/consent-capacity]] and [[immunology/transplant-tumour-immunology]]).**
+The high flow has two consequences. First, the kidney receives far more oxygen than it consumes, so the renal venous blood is relatively well oxygenated. Second, the medulla is the exception: the vasa recta carry only a small share of the flow, and the outer medulla works close to the limit of its oxygen supply. That is one reason the thick ascending limb and the straight part of the proximal tubule are injured first when perfusion falls ([[renal/acute-kidney-injury]]).
+
+The **juxtaglomerular apparatus** sits where the thick ascending limb of the same nephron returns to touch its own glomerulus. It has three parts: the **macula densa**, a patch of tubular cells that senses the sodium chloride concentration in the tubular fluid; the **granular (juxtaglomerular) cells** in the wall of the afferent arteriole, which store and release renin; and the extraglomerular mesangial cells between them. This small structure links the tubule back to the blood supply that feeds it.
+
+## The filtration barrier
+
+Filtrate has to cross three layers to get from the glomerular capillary into Bowman's space.
+
+1. The **fenestrated endothelium**. The capillary wall is perforated by pores about 70–100 nm across, covered by a negatively charged glycocalyx. Blood cells cannot pass, but plasma can.
+2. The **glomerular basement membrane** (GBM). This is a dense mesh of type IV collagen, laminin and negatively charged proteoglycans such as heparan sulphate, shared by the endothelium and the podocytes.
+3. The **podocytes**. These epithelial cells wrap the capillary with interdigitating foot processes. The gaps between foot processes are bridged by the **slit diaphragm**, a zipper-like structure built from proteins including nephrin and podocin.
+
+::: definition Glomerular filtration barrier {#def-barrier}
+The **glomerular filtration barrier** is the fenestrated endothelium, the glomerular basement membrane and the podocyte slit diaphragm acting together. It restricts molecules by **size** and, to a lesser extent, by **charge**. Water, electrolytes, glucose, urea and creatinine pass freely. Molecules smaller than about 2 nm in radius are filtered almost freely; above about 4 nm virtually nothing passes. Albumin (radius about 3.6 nm, negatively charged) is largely held back, so normal filtrate contains only a small amount, which the proximal tubule reabsorbs.
 :::
 
-::: example Starling forces, both ends {#ex-starling}
-Glomerular capillary: hydrostatic 48, Bowman's hydrostatic 12, capillary oncotic 25, Bowman's oncotic 0 mmHg. Peritubular capillary: hydrostatic 13, interstitial hydrostatic −2, capillary oncotic 32, interstitial oncotic 8 mmHg. Compute both net forces and explain their physiological opposite directions.
+Damage to any layer lets protein through. Mutations in the genes for nephrin (*NPHS1*) cause congenital nephrotic syndrome, which shows how much the slit diaphragm matters. Mutations in type IV collagen chains cause Alport syndrome, in which the GBM splits and the person develops haematuria, progressive kidney disease and often deafness. In adults, podocyte injury underlies minimal change disease, focal segmental glomerulosclerosis and diabetic kidney disease, which are covered in [[renal/chronic-kidney-disease]].
+
+The **mesangium** sits between the capillary loops. Mesangial cells support the tuft, can contract, and clear trapped proteins. Immune complexes that lodge here are the starting point of IgA nephropathy, the most common primary glomerulonephritis worldwide.
+
+## The forces that drive filtration
+
+Filtration across the glomerular capillary obeys the same Starling principle that governs fluid exchange in every capillary. Two hydrostatic pressures and two oncotic pressures act across the wall.
+
+::: theorem Starling forces at the glomerulus {#thm-starling}
+Glomerular filtration rate is the product of the **ultrafiltration coefficient** $K_f$ and the **net filtration pressure**:
+
+$$
+\text{GFR} = K_f \left[ (P_{GC} - P_{BS}) - (\pi_{GC} - \pi_{BS}) \right]
+$$ {#eq-starling}
+
+Here $P_{GC}$ is the hydrostatic pressure in the glomerular capillary, $P_{BS}$ the hydrostatic pressure in Bowman's space, $\pi_{GC}$ the oncotic pressure of plasma proteins in the capillary and $\pi_{BS}$ the oncotic pressure in Bowman's space, which is close to zero because the filtrate is almost protein-free. $K_f$ is the product of the water permeability of the barrier and its surface area.
+:::
+
+::: proof
+Typical textbook values for a human glomerulus are $P_{GC} \approx 60$ mmHg, $P_{BS} \approx 18$ mmHg and a mean $\pi_{GC} \approx 32$ mmHg, giving a net filtration pressure of about 10 mmHg. With $K_f \approx 12.5$ mL/min per mmHg this gives a GFR of about 125 mL/min.
+
+Two features differ from a muscle capillary. The glomerular hydrostatic pressure is high and almost constant along the capillary, because the efferent arteriole downstream is a resistance vessel that holds the pressure up. And because about a fifth of the plasma water is removed as the blood passes along the tuft, while the protein stays behind, the protein concentration and therefore $\pi_{GC}$ rise from the afferent to the efferent end. Net filtration pressure is highest where blood enters and falls along the capillary. Anything that slows plasma flow lets $\pi_{GC}$ rise further and earlier, so GFR depends on plasma flow as well as on pressure.
+:::
+
+::: example Starling forces at both ends {#ex-starling}
+In a glomerulus, $P_{GC}$ is 60 mmHg throughout and $P_{BS}$ is 18 mmHg. The oncotic pressure is 28 mmHg at the afferent end and 36 mmHg at the efferent end. Calculate the net filtration pressure at each end and explain the difference.
 ::: solution
-**Glomerulus: (48 − 12) − (25 − 0) = 36 − 25 = +11 mmHg net filtration (outward). The oncotic term rises along the capillary (protein retained as plasma filters), so the net force approaches zero before the efferent end (filtration-pressure equilibrium — and it does so earlier when plasma protein is high or flow low ([[#def-flow]])).** **Peritubular capillary: (13 − (−2)) − (32 − 8) = 15 − 24 = −9 mmHg net reabsorption (inward): the double pressure-drop (two arterioles) leaves low hydrostatic, and the 20 %-filtration-fraction has concentrated the efferent protein — both terms favour uptake of the reabsorbate (the physical basis of the proximal tubule's solute-and-water pulling and the oedema-forming flip when oncotic falls in nephrotic syndrome ([[renal/chronic-kidney-disease]] and [[pathology/haemodynamics]]) or hydrostatic rises in heart failure ([[cardiovascular/heart-failure]]'s Starling-edema-tutorial counterpart)).**
+At the afferent end: $60 - 18 - 28 = 14$ mmHg.
+
+At the efferent end: $60 - 18 - 36 = 6$ mmHg.
+
+The hydrostatic terms are the same at both ends, so the whole difference comes from the oncotic pressure. Filtration removes protein-free water, which concentrates the proteins left in the capillary, so the force opposing filtration grows along the tuft. The average driving pressure, about 10 mmHg, is small. That is why the glomerulus needs a very large, very permeable surface (a high $K_f$) to filter 125 mL every minute.
 :::
 :::
 
-::: widget plot
-f: 175/x^1.15; 145/x^1.15
-x: 0.5, 4
-y: 10, 220
-labels: \text{serum creatinine (mg/dL)},\ \text{GFR (mL/min/1.73m²)};\ \text{typical adult male};\ \text{typical adult female}
-caption: The hyperbolic identity between creatinine and filtration (the empirical power-law shape of the era's estimating equations, [[#def-measure]]): equal creatinine-steps mean ever-larger GFR-losses — a rise from 0.8 to 1.6 mg/dL (~70-140 µmol/L) hides a ~90 mL/min fall, while 4 to 4.8 conceals only ~10 — the "creatinine-blindness" that delays nephrology referral in obese-and-muscular patients and dismisses small rises in chronic-kidney-disease clinics. The two curves' sex gap encodes muscle mass — the same trap in the opposite direction for the frail or amputated elderly patient whose "normal" creatinine overestimates filtration ([[renal/chronic-kidney-disease]]'s dosing-counselling corollary: [[pharmacology/dosing-principles]]).
+The equation explains most of the ways disease changes GFR.
+
+- **A fall in $K_f$**: loss of filtering surface in glomerulonephritis or diabetic sclerosis, or mesangial contraction.
+- **A fall in $P_{GC}$**: low blood pressure, afferent constriction (by NSAIDs removing prostaglandin dilation, by ciclosporin or by noradrenaline in shock), or efferent dilation (by ACE inhibitors or angiotensin receptor blockers).
+- **A rise in $P_{BS}$**: obstruction of the urinary tract transmits pressure back up the tubule to Bowman's space.
+- **A rise in $\pi_{GC}$**: severe dehydration with haemoconcentration, or a high plasma protein concentration such as in myeloma.
+
+The two arterioles act like two taps. Constricting the **afferent** arteriole reduces both flow and glomerular pressure, so GFR falls. Constricting the **efferent** arteriole raises glomerular pressure, so GFR rises at first; but it also reduces flow, so with strong constriction the oncotic pressure climbs fast and GFR falls again.
+
+## Keeping GFR steady: autoregulation
+
+If GFR followed blood pressure directly, a person who stood up, ran for a bus or slept would change their urine output, and their salt balance, several-fold. In fact renal blood flow and GFR stay nearly constant across a wide range of mean arterial pressure.
+
+::: definition Renal autoregulation {#def-autoregulation}
+**Autoregulation** is the intrinsic ability of the kidney to keep renal blood flow and GFR roughly constant when mean arterial pressure varies between about 80 and 180 mmHg. It depends on two mechanisms that act on the afferent arteriole:
+
+- the **myogenic response**: smooth muscle in the afferent arteriole contracts when stretched by a rise in pressure, and relaxes when pressure falls;
+- **tubuloglomerular feedback**: when GFR rises, more sodium chloride reaches the macula densa; the macula densa then signals (mainly through adenosine and ATP) for the afferent arteriole of the same nephron to constrict, bringing GFR back down.
 :::
 
-## Quantifying function
+Outside the autoregulatory range, and in chronic hypertension where the range shifts upwards, flow follows pressure. A person with long-standing hypertension may lose GFR when their pressure is lowered quickly to a level that a healthy kidney would tolerate.
 
-::: definition GFR: measurement, estimation and its traps {#def-measure}
-**GFR (the sum of functioning nephrons' filtration — normal ~90-120 mL/min/1.73 m², falling ~1 mL/min/year after 40) is measured by clearance (the substance-free criteria — freely filtered, neither reabsorbed nor secreted nor synthesised — the inulin and iothalamate and Cr-51-EDTA and iohexol reference methods of the [[clinical-skills/laboratory-tests]] special-chemistry corner and the urine-collection-plus-plasma-sampling logistics that make them research tools, not clinic ones).** In practice **creatinine (the muscle-creatine-phosphate non-enzymatic degradation product — filtered plus ~10-20 % secreted, so creatinine clearance modestly overestimates GFR; assay interferences (the Jaffe method's ketone-and-cefazolin-and-glucose over-read) and, decisively, the steady-state assumption — production must be constant, so any acute change in filtration makes serum creatinine a lagging indicator ([[#quiz-creatinine]])) fills routine care,** transformed by **endogenous estimating equations (the CKD-EPI creatinine equation (with the ongoing debate about race-coefficient removal and its referral consequences — [[medical-ethics-law/justice-resources]]-adjacent equity literature and [[genetics/common-disease-genetics]]'s ancestry-and-muscle-mass physiology); the Cockcroft-Gault (still the drug-dosing label language — weight-inclusive and thus its own set of errors in obesity and cachexia ([[pharmacology/dosing-principles]])); the cystatin C (the nucleated-cell-constant production and filtration-only handling — muscle-independent, but raised by adiposity and thyroid-glucocorticoid-and-inflammation states ([[endocrine/thyroid]]) — the combined creatinine-cystatin equation the current best routine estimate ([[renal/chronic-kidney-disease]]'s confirmatory pathway)); and the pediatric Schwartz-family height-based equations ([[paediatrics/acute-childhood-illness]]-adjacent and [[paediatrics/growth-development]]) — with the universal caveats: the non-steady-state, the extremes of muscle mass (amputees and bodybuilders and neuromuscular disease — [[nervous-system/neuromuscular]]), the high-output-dilution of pregnancy (the creatinine-lies-in-pregnancy teaching — [[obstetrics-gynaecology/pregnancy-antenatal]]) and the urinary-tract-and-prostate confounders of collection accuracy.** **The CKD definition and staging (GFR <60 or markers of damage for ≥3 months — the G1-G5 bands and the albuminuria A1-A3 cross-grid and the aetiology-and-progression risk reading that the grid exists to organise) belongs to [[renal/chronic-kidney-disease]] — the filtration chapter's job is to make the numbers trustworthy enough to act on: the acute-vs-chronic distinction (history and anaemia and small kidneys and calcium-phosphate — [[renal/acute-kidney-injury]]'s paragraph), the trend-over-snapshot discipline (the within-person-change arithmetic of [[clinical-skills/laboratory-tests]]) and the "eGFR is a screening estimate — confirm before you dose or dialyse-by-it" rule.**
-:::
+Hormones and nerves act on top of autoregulation.
 
-::: example The deceptive normal creatinine {#ex-creatinine-trap}
-Three patients have a serum creatinine of 90 µmol/L: a 24-year-old bodybuilder; a 79-year-old woman with a stroke-related hemiparesis and poor intake (BMI 17); and a 34-year-old at 30 weeks' gestation. Who has normal kidney function?
-::: solution
-**Only the bodybuilder almost certainly does. Creatinine is a muscle-mass-and-dilution reporter as much as a filtration reporter ([[#def-measure]]): the young stroke survivor with wasting and low intake produces little creatinine — a 90 µmol/L may accompany a true GFR under 40 (the cystatin-C- or measured-clearance-verification rule before drug dosing — [[pharmacology/dosing-principles]] and [[geriatrics-palliative/polypharmacy]]); the pregnant woman's expanded plasma volume and glomerular hyperfiltration should drive creatinine to ~50-60 — a 90 is a relative rise and warrants repeat and urinalysis (the pregnancy reference-range discipline — [[obstetrics-gynaecology/pregnancy-antenatal]]); and the bodybuilder's high production can mask an early fall (the cystatin-C tiebreak). The generalisation: **never read a creatinine without the muscle mass, the volume state, the trend and the urine; and in the extremes of body composition, stop estimating and measure ([[renal/chronic-kidney-disease]]'s confirmatory algorithm).**
-:::
-:::
+- **Angiotensin II** constricts both arterioles, but the efferent arteriole is more sensitive. When perfusion is low, angiotensin II therefore protects GFR by holding up glomerular pressure.
+- **Prostaglandins** (PGE₂ and PGI₂) dilate the afferent arteriole. They matter little in health but become essential when the kidney is under-perfused, in heart failure, cirrhosis, volume depletion or chronic kidney disease.
+- **Sympathetic nerves** constrict the afferent arteriole and stimulate renin release. In shock they can cut renal blood flow sharply.
+- **Atrial natriuretic peptide** dilates the afferent and constricts the efferent arteriole, raising GFR.
+
+This explains the best-known drug interaction in nephrology.
 
 ::: example The triple whammy {#ex-triple}
-A 76-year-old on ramipril and bendroflumethiazide for hypertension and now ibuprofen for a new hip pain (plus a week of viral gastroenteritis) presents confused with a potassium of 6.1 and creatinine risen from 95 to 240 µmol/L over 10 days.
+A 71-year-old woman with heart failure takes ramipril and furosemide. She buys ibuprofen for knee pain. A week later she has diarrhoea for three days. Her creatinine rises from 105 to 290 µmol/L. Explain the mechanism.
 ::: solution
-**Haemodynamically-mediated acute kidney injury from the classic pharmacological trio plus hypovolaemia ([[renal/acute-kidney-injury]]'s and [[pharmacology/adverse-reactions]]'s shared exemplar): the thiazide-and-gastroenteritis deplete volume (afferent constrictors dominate); the NSAID removes the prostaglandin afferent-dilator brake ([[#def-autoregulation]]); the ACE inhibitor removes the angiotensin-II efferent-constrictor that was holding filtration pressure up — GFR collapses from both ends of the arteriole (the widget's hyperbola converts the creatinine rise into a >60 %-filtration fall). The hyperkalaemia is triple-sourced (ACE-block and acidosis ([[renal/acid-base-disorders]]) and low distal flow — [[renal/potassium-calcium-phosphate]]'s secretion-requirements).** Management: **stop the three offenders (with the documented allergy-label alternative analgesia plan — the paracetamol-and-topical-and-physiotherapy pathway — [[musculoskeletal/osteoarthritis]]), volume-resuscitate and monitor (the ECG-and-calcium-and-insulin-glucose emergency potassium protocol), review the sick-day-rules the patient was never given (the SADMANS-style patient-held list — [[renal/acute-kidney-injury]] and [[geriatrics-palliative/polypharmacy]]), and organise the post-hospital eGFR-and-ACR follow-up (the AKI-to-CKD transition surveillance — [[renal/chronic-kidney-disease]]) and the analgesia-prescribing relapse-prevention (the cardiovascular-and-renal NSAID-counselling and the COX-selectivity-and-dose-and-duration-and-PPI trade-offs — [[pharmacology/adverse-reactions]]).**
+Three things have happened, each removing one defence of glomerular pressure.
+
+1. **Volume depletion** from diuretic and diarrhoea lowers renal perfusion. In this state GFR depends on afferent dilation by prostaglandins and on efferent constriction by angiotensin II.
+2. **Ibuprofen** blocks cyclo-oxygenase and removes prostaglandin dilation of the afferent arteriole, so less blood enters the glomerulus.
+3. **Ramipril** prevents angiotensin II formation, so the efferent arteriole relaxes and glomerular pressure falls further.
+
+Glomerular pressure collapses and GFR falls. This combination of a diuretic, an ACE inhibitor or angiotensin receptor blocker, and an NSAID is called the **triple whammy**. The usual response is to stop the NSAID, restore volume, and temporarily withhold the ACE inhibitor and diuretic while she is unwell, following local acute kidney injury guidance. The broader lesson is the **sick day** advice given to people on these drugs: to pause them during an illness with dehydration, and to restart once they are eating and drinking normally.
 :::
 :::
+
+## Measuring kidney function
+
+### Clearance
+
+The kidney's handling of any substance can be described by its clearance.
+
+::: definition Renal clearance {#def-clearance}
+The **renal clearance** of a substance $x$ is the volume of plasma from which the kidneys remove all of $x$ per unit time:
+
+$$
+C_x = \frac{U_x \times V}{P_x}
+$$ {#eq-clearance}
+
+where $U_x$ is the urine concentration, $V$ the urine flow rate and $P_x$ the plasma concentration. Clearance has units of volume per time, usually mL/min.
+:::
+
+Clearance is a way of comparing the amount excreted with the amount filtered.
+
+::: theorem What clearance reveals {#thm-clearance}
+If a substance is freely filtered and neither reabsorbed nor secreted by the tubule, its clearance equals the GFR. If its clearance is lower than the GFR, there is net reabsorption; if it is higher, there is net secretion.
+:::
+
+::: proof
+The amount filtered per minute (the **filtered load**) is $\text{GFR} \times P_x$ for a freely filtered substance. The amount excreted per minute is $U_x \times V$. If the tubule neither adds nor removes the substance, the two are equal: $\text{GFR} \times P_x = U_x V$, so $\text{GFR} = U_x V / P_x = C_x$. Any reabsorption makes the excreted amount smaller than the filtered load, so $C_x < \text{GFR}$; any secretion makes it larger, so $C_x > \text{GFR}$.
+:::
+
+**Inulin**, a plant fructose polymer, behaves exactly like this, and its clearance is the reference measurement of GFR. Glucose clearance is normally zero, because all filtered glucose is reabsorbed. **Para-aminohippurate** (PAH) is filtered and so vigorously secreted that almost none stays in the renal venous plasma, so its clearance approximates the renal plasma flow. In practice, measured GFR today uses the plasma clearance of an injected marker such as iohexol or ⁵¹Cr-EDTA. It is reserved for situations where an accurate value really matters, such as assessing a potential living kidney donor or dosing a toxic drug.
+
+### Creatinine and estimated GFR
+
+Creatinine is made at a fairly steady rate from creatine in muscle. It is freely filtered and not reabsorbed, but about 10–20% of urinary creatinine is secreted by the proximal tubule. Creatinine clearance from a timed urine collection therefore slightly overestimates GFR, and the error grows as GFR falls.
+
+At steady state, creatinine production $G$ equals excretion, which is roughly $\text{GFR} \times P_{Cr}$. Therefore
+
+$$
+P_{Cr} \approx \frac{G}{\text{GFR}}
+$$ {#eq-hyperbola}
+
+Plasma creatinine is inversely proportional to GFR. The relationship is a hyperbola, and that shape has important consequences.
+
+::: widget plot
+f: 9600*m/x; 9600/x
+x: 5, 150
+y: 0, 800
+sliders: m=1:0.4:1.6:0.05
+hlines: 80
+labels: \text{creatinine, muscle factor } m;\ \text{creatinine, average muscle}
+caption: Steady-state plasma creatinine (µmol/L) against GFR (mL/min), from $P_{Cr} = G/\text{GFR}$ with a creatinine production of about 14 mmol/day. Falling from a GFR of 120 to 60 only moves creatinine from 80 to 160 µmol/L, while falling from 20 to 10 adds 480 µmol/L. Move the slider to change muscle mass: with little muscle ($m$ = 0.5), the same GFR gives a creatinine that looks normal. A simplified teaching model, not a clinical calculator.
+:::
+
+The early part of the curve is flat. A person can lose half their GFR while creatinine stays inside the laboratory reference range. Later the curve is steep, and small further losses of GFR produce large rises in creatinine.
+
+Creatinine production depends on muscle mass, diet and age. A muscular young man and a frail older woman can have the same creatinine with very different GFRs. To deal with this, laboratories report an **estimated GFR** (eGFR) calculated from creatinine, age and sex.
+
+::: definition Estimated GFR {#def-measure}
+**Estimated GFR** (eGFR) is a value calculated from serum creatinine (and sometimes cystatin C), age and sex, using an equation derived from populations in whom GFR was measured. It is reported in mL/min/1.73 m², that is, scaled to an average body surface area.
+
+- **CKD-EPI** (Chronic Kidney Disease Epidemiology Collaboration) equations are the standard. As of 2026, UK laboratories report the 2009 CKD-EPI creatinine equation **without** the ethnicity coefficient, following NICE (NG203, 2021) and the UK Kidney Association. Several other countries use the race-free 2021 CKD-EPI equation.
+- **Cystatin C** is a small protein made by all nucleated cells. It is less dependent on muscle mass, and an eGFR using cystatin C, alone or with creatinine, helps when muscle mass is unusual.
+- **Cockcroft–Gault** estimates creatinine clearance in mL/min (not indexed to body surface area) from age, weight, sex and creatinine. Many drug dosing recommendations were developed with it.
+
+All these equations assume a **steady state**: creatinine production and excretion must be in balance.
+:::
+
+The Cockcroft–Gault equation in SI units is
+
+$$
+\text{CrCl (mL/min)} = \frac{(140 - \text{age}) \times \text{weight (kg)} \times k}{\text{creatinine } (\mu\text{mol/L})}
+$$ {#eq-cg}
+
+with $k = 1.23$ for men and $1.04$ for women.
+
+::: example A normal creatinine that is not normal {#ex-creatinine-trap}
+An 84-year-old woman weighing 48 kg has a creatinine of 95 µmol/L, inside the laboratory reference range. She is about to start a drug that is cleared by the kidney and must be dose-reduced if creatinine clearance is below 30 mL/min. Estimate her creatinine clearance.
+::: solution
+Using the Cockcroft–Gault equation:
+
+$$
+\text{CrCl} = \frac{(140 - 84) \times 48 \times 1.04}{95} = \frac{2795.5}{95} \approx 29 \text{ mL/min}
+$$
+
+Her creatinine looks normal because she has little muscle and makes little creatinine. Her actual clearance is about a quarter of a young adult's and sits just under the dosing threshold. The drug dose would be adjusted according to the product information and local guidance. The general rule: in small, older or frail people a "normal" creatinine can hide a markedly reduced GFR. Read creatinine through an equation, and use the patient's real weight for drug dosing.
+:::
+:::
+
+::: warning Two traps with eGFR {#warn-egfr}
+**eGFR is meaningless when creatinine is changing.** After a sudden loss of kidney function, creatinine takes one to three days to climb to its new steady state. During that time an eGFR calculated from the rising value overstates the true GFR, sometimes enormously. A person who becomes anuric still has an "eGFR" of 60 or more on the first morning. In acute kidney injury, follow the change in creatinine and the urine output, not the eGFR ([[renal/acute-kidney-injury]]).
+
+**eGFR is indexed to 1.73 m².** For drug dosing in a very large or very small person, the absolute clearance in mL/min matters. A 45 kg person with an eGFR of 50 mL/min/1.73 m² has a smaller absolute GFR than the number suggests. Many drug labels use Cockcroft–Gault creatinine clearance for this reason.
+:::
+
+Other things change creatinine without changing GFR. A cooked-meat meal raises it for a few hours. Some drugs, notably trimethoprim and cimetidine, block tubular creatinine secretion and raise plasma creatinine slightly while true GFR is unchanged. Older colorimetric (Jaffe) assays can be falsely raised by ketones, as in diabetic ketoacidosis. Cystatin C has its own confounders: corticosteroids, thyroid disease and inflammation alter it independently of GFR.
 
 ::: quiz {#quiz-creatinine}
-Why does serum creatinine lag behind an acute change in GFR?
-- [ ] Creatinase in the tubule degrades it slowly
-- [x] Creatinine must accumulate (or clear) toward a new steady state, and tubular secretion and non-renal removal adapt variably
-- [ ] GFR changes do not alter creatinine production
-- [ ] Assays require fasting samples
+A 25-year-old bodybuilder who takes creatine supplements has a creatinine of 140 µmol/L and an eGFR of 58 mL/min/1.73 m². His urine is normal on dipstick and he is well. Which next step best tests whether his GFR is truly reduced?
+- [ ] Repeat the creatinine tomorrow
+- [ ] Start an ACE inhibitor for chronic kidney disease
+- [x] Measure cystatin C and calculate an eGFR from it
+- [ ] Arrange a kidney biopsy
 ::: solution
-**Serum creatinine is a steady-state variable ([[#def-measure]]): production is roughly constant, so a halved GFR only doubles the concentration after ~5-7 half-equilibration-days (faster at low mass and high production — burns and rhabdomyolysis and catabolic illness make it lie in the other direction ([[renal/acute-kidney-injury]])). This is why clearance-based biomarkers (cystatin C shares the kinetic problem) and urine output and novel injury markers ([[renal/urinary-tract]]'s research-landscape) have joined the acute picture — and why "the creatinine is only a little up" can accompany a GFR near zero.**
+Creatine supplements and a large muscle mass both raise creatinine production, so creatinine overstates the fall in GFR. Repeating creatinine will give the same answer. Cystatin C is much less affected by muscle mass, so an eGFR based on cystatin C (or on creatinine and cystatin C together) is the right way to test whether his kidney function is really reduced. There is no basis for treatment or biopsy with normal urine and a single creatinine-based value.
 :::
 :::
 
-## Screening the urine
-
-::: definition Urine markers: proteinuria and haematuria {#def-urine-markers}
-**Proteinuria is simultaneously the earliest marker, the mediator and the treatment target of kidney disease (the albuminuria–progression risk axis of the CKD grid and the cardiovascular-risk marker that makes even microalbuminuria a systemic-endothelium report — [[cardiovascular/coronary-artery-disease]]-adjacent).** Interpretation by mechanism: **glomerular (the charge-and-size-barrier failure — albumin-dominant, the nephrotic-range >3 g/day story of [[renal/chronic-kidney-disease]]); tubular (the reabsorption-failure low-molecular-weight proteins — β2-microglobulin and retinol-binding protein and aminoaciduria — invisible or trace on dipstick (albumin-specific) and caught only by the total-protein or specific assays — hence the myeloma and drug-tubulopathy discordances (the light-chain proteinuria of [[blood/lymphoma-myeloma]] and the tenofovir-and-ifosfamide and aristolochic-acid nephropathies ([[renal/acute-kidney-injury]]-adjacent)); overflow (the filtered-load excess — light chains and myoglobin and lysozyme ([[blood/anaemia]]-and-[[blood/leukaemia]]-adjacent — the dipstick-negative-total-protein-positive trap and the reagent-strip specificity lesson); and the benign transient causes (fever and exercise and orthostatic proteinuria of the young and the pre-eclampsia screen ([[obstetrics-gynaecology/pregnancy-complications]])).** The quantification ladder: **dipstick (the first morning specimen, the semiquantitative trace-to-4+ and the alkaline-urine-and-concentration distortions) → albumin:creatinine (or protein:creatinine) ratio spot-sample (the 24-hour-collection-replacement and the A1-A3 categories: <1.5/<15, 1.5-15/>15 mg albumin/mmol) → quantified with the urgent-referral triggers (the nephrotic-range, the haematuria-plus-proteinuria combined glomerular-signature and the rapid rise) — [[renal/chronic-kidney-disease]]'s biopsy-gate criteria and [[clinical-skills/laboratory-tests]]' pre-analytical discipline.** **Haematuria: dipstick haem-peroxidase (false-positives — myoglobin and menstrual-and-trauma contamination; false-negatives — vitamin C and dilute alkaline urine) → microscopy (the dysmorphic red cells and acanthocytes and red-cell casts — the glomerular bleeding signature — versus isomorphic cells with clots — the urological signature — and the stone-and-infection-and-prostate-and-exercise causes) → the age-and-risk-stratified imaging-and-cystoscopy pathway for the urological track (the macroscopic-haematuria-urgent-cancer-referral rules and the low-yield microscopic-haematuria over-investigation problem — [[renal/urinary-tract]] and [[public-health/screening]]'s overdiagnosis debate) versus the nephrological track (the IgA nephropathy and thin-membrane and Alport family (the hearing and ocular associations — [[nervous-system/sensory-systems]] and [[genetics/mendelian-inheritance]]) — [[renal/chronic-kidney-disease]]'s glomerulonephritis sections); the sterile pyuria pointer (TB and stones and obstruction and interstitial nephritis and vasculitis — [[renal/urinary-tract]]'s and [[musculoskeletal/connective-tissue-vasculitis]]'s shared clue).** The rest of the strip: **specific gravity and osmolality ([[renal/tubular-function]]'s concentrating power), pH (the acid-base and crystal contexts — [[renal/acid-base-disorders]]), glucose (the tubular-threshold and SGLT2-inhibitor-era reframing — [[endocrine/diabetes]] and [[renal/tubular-function]]), nitrites and leukocytes ([[renal/urinary-tract]]'s infection chapter), and the microscopy sediment (the casts' alphabet — hyaline and granular and waxy and fatty (the oval-fat-bodies and Maltese crosses of the nephrotic syndrome ([[renal/chronic-kidney-disease]])) and crystals (the stone-metabolic panel — [[renal/urinary-tract]]) and eosinophils (the drug-interstitial-nephritis classic's poor performance — [[pharmacology/adverse-reactions]])), the urinalysis as the cheapest nephrology consultation available.**
-:::
-
-::: example Trace to three grams {#ex-proteinuria}
-A 29-year-old asymptomatic athlete has 1+ protein on a factory medical; repeat first-morning specimen is negative; a specimen after his training day is 3+; renal function, blood pressure and sediment are normal; no oedema.
+::: example A timed urine collection {#ex-clearance}
+A 24-hour urine collection from a 40-year-old man contains 1.8 L of urine with a creatinine concentration of 8.0 mmol/L. His plasma creatinine is 100 µmol/L. Calculate his creatinine clearance in mL/min.
 ::: solution
-**The classic benign-workup: isolated dipstick positivity proven transient-or-orthostatic-or-exercise-related (the negative first-morning specimen is the discriminating test — the upright-and-post-exercise proteinuria of the young — [[#def-urine-markers]]).** The responsible pathway: **repeat with quantitative ACR on a first-morning sample and a later-day sample (the orthostatic pattern — normal supine, elevated upright — confirmed with overnight-split collections only when ambivalent), blood pressure and eGFR and sediment and (if persistent) the ultrasound and the referral triggers (the proteinuria-plus-haematuria-plus-hypertension-plus-impaired-function combination that mandates nephrology — the glomerular-disease gate of [[renal/chronic-kidney-disease]]); the athlete's counselling (exercise-induced benign proteinuria needs no restriction but the conversation about supplements-and-NSAIDs-and-contrast-exposure and the annual BP-and-urine is sensible), and the audit-worthy documentation stopping the repeat-testing spiral (the over-investigation and insurance-impact conversation — [[clinical-skills/communication]] and [[public-health/screening]]'s harm taxonomy).**
+First put both concentrations in the same unit: $U_{Cr} = 8.0$ mmol/L $= 8000$ µmol/L.
+
+$$
+C_{Cr} = \frac{U \times V}{P} = \frac{8000 \times 1.8}{100} = 144 \text{ L/day}
+$$
+
+There are 1440 minutes in a day, so $144\,000 \text{ mL} / 1440 = 100$ mL/min.
+
+This is a normal value. The biggest practical error in timed collections is an incomplete collection: a missed void lowers the measured clearance. A useful check is total creatinine excretion, here $8.0 \times 1.8 = 14.4$ mmol/day, which is plausible for an average adult man (roughly 9–18 mmol/day depending on muscle mass).
+:::
+:::
+
+## Looking at the urine
+
+Blood tests show kidney function. The urine shows kidney damage, and often shows it first.
+
+::: definition Proteinuria and haematuria {#def-urine-markers}
+**Albuminuria** is measured as the **albumin:creatinine ratio** (ACR) on a spot urine sample, which corrects for urine concentration. A normal ACR is below 3 mg/mmol. An ACR of 3–30 mg/mmol is moderately increased and above 30 mg/mmol is severely increased (the A1–A3 categories used in chronic kidney disease). The **protein:creatinine ratio** (PCR) measures all proteins, including light chains and tubular proteins; a PCR of about 300 mg/mmol corresponds to roughly 3 g of protein a day, the nephrotic range.
+
+**Haematuria** is blood in the urine. **Visible** haematuria is seen by eye; **non-visible** haematuria is detected on dipstick (1+ or more) and confirmed by repeating the test. Red cells from the glomerulus are often misshapen (dysmorphic) and may form **red cell casts**, which prove a glomerular source.
+:::
+
+A urine dipstick is cheap and gives a lot of information: blood, protein, leucocytes, nitrite, glucose and specific gravity. Its limits are worth knowing. The protein pad detects albumin but not light chains, so it misses myeloma kidney. The blood pad reacts to haemoglobin and myoglobin as well as intact red cells, so a positive dipstick with no red cells on microscopy suggests rhabdomyolysis or haemolysis.
+
+Under the microscope, **casts** are cylinders of protein (Tamm–Horsfall protein, also called uromodulin) moulded in the tubule. Hyaline casts are normal in concentrated urine. Red cell casts point to glomerulonephritis, white cell casts to pyelonephritis or interstitial nephritis, and granular "muddy brown" casts to acute tubular necrosis.
+
+::: example From a trace of protein to three grams {#ex-proteinuria}
+A 52-year-old Black British man with type 2 diabetes for 12 years has a routine review. His dipstick shows protein 1+. ACR is 45 mg/mmol, repeated at 52 mg/mmol two months later. eGFR is 64 mL/min/1.73 m². Blood pressure is 148/92 mmHg. Interpret the results.
+::: solution
+Two ACR values above 30 mg/mmol confirm **severely increased albuminuria (A3)**. Together with the eGFR of 64 (category G2), he has chronic kidney disease even though his eGFR alone would not suggest it, because albuminuria is a marker of kidney damage. In someone with long-standing diabetes and no other features, this is most likely diabetic kidney disease, which begins with podocyte and GBM injury and leaks albumin before GFR falls.
+
+Albuminuria matters because it predicts both faster loss of kidney function and cardiovascular events. It is also a treatment target: blood pressure control, an ACE inhibitor or angiotensin receptor blocker, and an SGLT2 inhibitor all reduce albuminuria and slow progression, as covered in [[renal/chronic-kidney-disease]]. Haematuria, an active urinary sediment or a rapid fall in eGFR would raise the possibility of a different glomerular disease and prompt referral.
 :::
 :::
 
 ::: history
-The filtration doctrine grew from **Bowman's 1842 capsule anatomy and Ludwig's ultrafiltration model** through **Vinton, Wearn and Richards' direct renal-vein and micropuncture evidence (1913-1931) that urine begins as a protein-free filtrate that is then modified**; **Homer W. Smith's clearance era and the inulin gold standard (the Shannon-and-Smith schools)**; the **micropuncture-and-clearance synthesis of the 1940s-50s (the Berliner-and-Pitts-and-Shannon schools and the single-nephron-GFR demonstration)**; the **tubuloglomerular-feedback discovery (the 1970s Schnermann-and-Briggs-Wright macula-densa programme)**; the **renin lineage (the Tigerstedt-and-Bergman 1898 pressor substance and the Goldblatt two-clip hypertension of 1939)**; and the **prostaglandin-and-NSAID renal-injury era of the 1970s (the Vane pharmacology and the first acute-on-chronic kidney-failure case series)**. Function estimation runs from **the Cockcroft-Gault equation (1976) through MDRD (1999) to CKD-EPI (2009, revised 2021)**, with **cystatin C's re-emergence after Grubb's 1985 radioimmunoassay** and the **KDIGO 2012 GFR-and-albuminuria grids** as the staging currency; **the podocyte revolution (the nephrin (1999) and podocin (2002) discoveries and the genetic focal-segmental-hyalinosis waves)** converted charge-and-size selectivity from physiology textbook into clinic molecular diagnosis, and the **RIFLE-AKIN-KDIGO criteria lineage** (with [[renal/acute-kidney-injury]]) closed the loop between this chapter's numbers and bedside action.
+The glomerulus was described in detail by William Bowman in 1842, who showed that each capillary tuft sits in the blind end of a tubule. In the 1840s Carl Ludwig proposed that urine begins as a filtrate of plasma driven by blood pressure, an idea that took eighty years to prove. In 1924 Joseph Wearn and Alfred Richards inserted fine glass pipettes into the Bowman's space of frog kidneys and showed that the fluid there was protein-free but contained glucose and chloride at plasma concentrations: a true ultrafiltrate. In 1926 the Danish physiologist Poul Brandt Rehberg introduced creatinine clearance as a measure of filtration, and in the 1930s Homer Smith and James Shannon established inulin clearance as the reference method. The modern eGFR equations are the clinical descendants of that clearance concept.
 :::
-
 
 ## Where this leads
 
-Tubular reabsorption and concentration downstream in [[renal/tubular-function]]; the volume and renin physiology in [[renal/water-sodium]]; potassium and phosphate handling in [[renal/potassium-calcium-phosphate]]; the acute perfusion emergencies in [[renal/acute-kidney-injury]]; the chronic trajectory, dialysis and glomerulonephritis in [[renal/chronic-kidney-disease]]; infection and stones below the filter in [[renal/urinary-tract]]; drug dosing in [[pharmacology/dosing-principles]]; the Starling-force sister-lesson in [[cardiovascular/circulation-blood-pressure]] and [[physiology/homeostasis-body-fluids]].
-
-::: warning Two traps that cause real harm {#warn-egfr}
-First: **acting on a single non-steady-state creatinine in either direction** — under-reacting to a "small" rise in chronic kidney disease (the hyperbola's cliff — [[#def-measure]]'s widget) and over-reacting to a raised creatinine in a high-muscle or low-flow state; confirm with trend, cystatin C or measured clearance before renally-dosed emergencies. Second: **missing the obstructive and vascular post-renal causes** (the prostate and retroperitoneal-fibrosis and renal-artery-stenosis masquerading as medical renal disease — [[renal/urinary-tract]] and [[renal/acute-kidney-injury]]'s ultrasound-first reflex) — the filtration chapter's numbers must always be reconciled with plumbing before immunology.
-:::
+What happens to the 180 litres of filtrate is the subject of [[renal/tubular-function]]. The control of sodium and water, which depends on the GFR and on the renin released by the juxtaglomerular apparatus, is in [[renal/water-sodium]]. A sudden fall in GFR is acute kidney injury ([[renal/acute-kidney-injury]]); a slow one, with albuminuria as its companion marker, is chronic kidney disease ([[renal/chronic-kidney-disease]]). Drug dosing in reduced kidney function builds on the clearance ideas here and is developed in [[pharmacology/dosing-principles]].
 
 ::: summary
-- The kidney filters plasma at ~125 mL/min through a size- and charge-selective dual-capillary barrier (endothelium, GBM, podocyte) whose pressure economics come from two arterioles; ~99 % of the 180 L/day ultrafiltrate is reabsorbed.
-- Autoregulation (myogenic plus tubuloglomerular feedback) stabilises flow and GFR from ~80-180 mmHg; prostaglandins, angiotensin II and sympathetic tone overlay it — the molecular seats of the NSAID-and-ACEi-and-diuretic injury combinations.
-- GFR is measured by clearance and estimated by creatinine equations; every estimate carries steady-state, muscle-mass and assay assumptions — the hyperbola means small creatinine changes are big GFR changes.
-- The dipstick and microscopy and ACR convert filtration-barrier and tubular injury into early, cheap signals; proteinuria is marker, mediator and treatment target, and haematuria's morphology routes the patient to nephrology or urology.
+- The kidneys receive about 20–25% of the cardiac output; renal plasma flow is about 600–650 mL/min and GFR about 125 mL/min, a filtration fraction of about 0.2.
+- Filtrate crosses fenestrated endothelium, the glomerular basement membrane and the podocyte slit diaphragm, which restrict molecules by size and charge; albumin is largely held back.
+- GFR $= K_f \times$ net filtration pressure. Glomerular pressure is set by the balance between afferent and efferent arteriolar tone; oncotic pressure rises along the capillary.
+- Autoregulation (myogenic response and tubuloglomerular feedback) keeps GFR stable between mean pressures of about 80 and 180 mmHg. Prostaglandins dilate the afferent arteriole and angiotensin II constricts the efferent; NSAIDs and ACE inhibitors remove these defences.
+- Clearance $= UV/P$. Inulin clearance equals GFR; creatinine clearance slightly overestimates it because of secretion.
+- Plasma creatinine is inversely proportional to GFR, so early losses of GFR barely change creatinine. eGFR equations correct for age and sex but assume a steady state and are misleading in acute kidney injury and at extremes of muscle mass.
+- Albumin:creatinine ratio, dipstick and microscopy detect glomerular damage; red cell casts prove a glomerular source of bleeding.
 :::
 
 ## Exercises
 
+::: exercise Filtration fraction {level=1 check="0.2"}
+A man has a renal blood flow of 1000 mL/min, a haematocrit of 0.40 and a GFR of 120 mL/min. Calculate his filtration fraction as a decimal.
+::: hint
+Find renal plasma flow first: RPF = RBF × (1 − haematocrit).
+:::
+::: solution
+RPF $= 1000 \times (1 - 0.40) = 600$ mL/min. Filtration fraction $= 120 / 600 = 0.2$. A fifth of the plasma entering the glomeruli is filtered.
+:::
+:::
+
 ::: exercise Order the pressures {level=1}
-Why is glomerular capillary hydrostatic pressure (~48 mmHg) so much higher than intestinal (≈17), and what two anatomical features are responsible?
+List the four Starling forces at the glomerulus and state whether each favours or opposes filtration. Which of them changes most along the length of the capillary, and why?
 ::: solution
-**The interposed second arteriole: the efferent arteriole's downstream resistance backs pressure up through the glomerulus (and the short straight renals transmit aortic pulsatility), while a second drop across the efferent leaves the peritubular plexus low ([[#def-flow]], [[#ex-starling]]). The same arrangement makes filtration fraction high and peritubular oncotic pressure high — the reabsorption-pairing of the two beds ([[physiology/homeostasis-body-fluids]]'s capillary-edema taxonomy contrasted).**
+Glomerular capillary hydrostatic pressure ($P_{GC}$) favours filtration. Bowman's space hydrostatic pressure ($P_{BS}$) opposes it. Glomerular capillary oncotic pressure ($\pi_{GC}$) opposes it. Bowman's space oncotic pressure ($\pi_{BS}$) would favour filtration but is close to zero because the filtrate contains almost no protein. The oncotic pressure in the capillary changes most: protein-free fluid is removed as blood passes along the tuft, so the remaining plasma becomes more concentrated and $\pi_{GC}$ rises from the afferent to the efferent end.
 :::
 :::
 
-::: exercise Filtration fraction arithmetic {level=1}
-RPF 600 mL/min, GFR 120 mL/min: give the filtration fraction and explain why efferent oncotic pressure rises when haemorrhage lowers RPF with GFR relatively preserved.
+::: exercise A timed clearance {level=1 check="round(6000*2.4/120/1.44)"}
+A 24-hour urine collection contains 2.4 L with a creatinine concentration of 6.0 mmol/L. Plasma creatinine is 120 µmol/L. Calculate the creatinine clearance in mL/min, rounded to the nearest whole number.
+::: hint
+Convert urine creatinine to µmol/L, calculate clearance in L/day, then convert to mL/min (1 L/day = 1000/1440 mL/min).
+:::
 ::: solution
-**FF = 120/600 = 0.2 (20 %). Angiotensin-II efferent constriction maintains GFR while flow falls, so a larger fraction of a smaller plasma flow is filtered → protein concentration (oncotic pressure) rises steeply along the capillary toward equilibrium ([[#def-flow]], [[#def-autoregulation]]) — the same arithmetic that concentrates proximal-tubular solute delivery ([[renal/tubular-function]]'s glomerulotubular-balance lesson) and drives peritubular reabsorption ([[#ex-starling]]).**
+$U = 6000$ µmol/L. Clearance $= 6000 \times 2.4 / 120 = 120$ L/day. In mL/min: $120\,000 / 1440 = 83.3$, so about **83 mL/min**.
 :::
 :::
 
-::: exercise Autoregulate it {level=2}
-A high salt-load raises distal NaCl delivery. Trace the tubuloglomerular-feedback sequence cell by cell, and name the drug that blocks the sensor and its consequence.
+::: exercise Raised pressure in Bowman's space {level=2 check="12.5*(60-25-32)"}
+In a glomerulus with $K_f = 12.5$ mL/min per mmHg, $P_{GC} = 60$ mmHg and mean $\pi_{GC} = 32$ mmHg, an obstructing stone raises the pressure in Bowman's space from 18 to 25 mmHg. Assuming the other values do not change, calculate the new GFR in mL/min. What happens in reality over the following hours?
 ::: solution
-**Macula-densa NKCC2 uptake (Na-K-2Cl) → WNK-kinase-and-NOS-and-adenosine signalling → afferent-arteriole constriction (plus renin suppression) → single-nephron GFR falls back ([[#def-autoregulation]], [[renal/tubular-function]]). Loop diuretics block NKCC2 and abolish the feedback signal (the paradoxical afferent-dilation and renin-stimulus and the reason volume depletion, not salt-sensor excess, drives their GFR effects) ([[renal/water-sodium]]); the same node is the basis of the macula-densa's role in SGLT2-inhibitor tubuloglomerular-feedback effects on diabetic hyperfiltration ([[endocrine/diabetes-complications]]-adjacent).**
+Net filtration pressure $= 60 - 25 - 32 = 3$ mmHg, so GFR $= 12.5 \times 3 = 37.5$ mL/min, down from $12.5 \times 10 = 125$ mL/min.
+
+In reality the other values do change. Early in obstruction the afferent arteriole dilates (through prostaglandins), partly restoring glomerular pressure. Later, angiotensin II and thromboxane constrict the vessels and renal blood flow falls. Prolonged obstruction leads to tubular atrophy and permanent loss of function, which is why an obstructed kidney is decompressed promptly, and immediately if it is infected ([[renal/urinary-tract]]).
 :::
 :::
 
-::: exercise Calculate a clearance {level=2}
-Urine 1.2 L/24 h, urine creatinine 8 mmol/L, plasma creatinine 100 µmol/L: compute creatinine clearance and say whether it over- or under-estimates true GFR, with two reasons.
+::: exercise Cockcroft–Gault {level=2 check="round(70*80*1.23/110)"}
+A 70-year-old man weighing 80 kg has a stable creatinine of 110 µmol/L. Estimate his creatinine clearance with the Cockcroft–Gault equation, rounded to the nearest mL/min.
 ::: solution
-**Clearance = UV/P: U = 8 mmol/L = 8000 µmol/L against P = 100 µmol/L gives a concentration factor of 80; the flow 1.2 L/day = 0.833 mL/min; 80 × 0.833 ≈ 67 mL/min.** It **overestimates true GFR by the 10-20 % tubular secretion component, and collection error (incomplete) adds noise in either direction; the assay and non-steady-state caveats of [[#def-measure]].**
+$$
+\text{CrCl} = \frac{(140 - 70) \times 80 \times 1.23}{110} = \frac{6888}{110} = 62.6
+$$
+
+so about **63 mL/min**. This is a reasonable estimate only because his creatinine is stable; the equation would be invalid during acute kidney injury.
 :::
 :::
 
 ::: exercise Choose the estimate {level=2}
-For each patient pick the best function assessment and defend it: (a) 82-year-old with amyotrophic lateral sclerosis, creatinine 62; (b) 40-year-old renal-transplant donor candidate; (c) 30-year-old on high-dose corticosteroids, creatinine 88.
+For each person, choose the most appropriate way to assess kidney function and explain why. (a) A 78-year-old man with amyotrophic lateral sclerosis and marked muscle wasting, creatinine 55 µmol/L. (b) A 40-year-old woman being assessed as a living kidney donor. (c) A 30-year-old man on high-dose prednisolone for vasculitis, creatinine 88 µmol/L.
 ::: solution
-**(a) Cystatin C (muscle-independent) — the ALS-sarcopenia makes creatinine blind to a real GFR loss ([[nervous-system/neuromuscular]], [[renal/chronic-kidney-disease]]'s dosing rules); (b) measured clearance (the Cr-51-EDTA-or-iohexol plasma-clearance or measured creatinine-plus-collection or the transplant-programme's GFR protocol — the decision's irreversibility demands measurement not estimation ([[immunology/transplant-tumour-immunology]] and [[medical-ethics-law/consent-capacity]])); (c) caution the other way — glucocorticoids raise cystatin C independent of GFR (and thyroid states do too — [[endocrine/thyroid]]) — use creatinine with a verified trend or a measured clearance if the number drives therapy ([[renal/chronic-kidney-disease]]'s confirmatory algorithm).**
+(a) **Cystatin C-based eGFR**. With little muscle he makes little creatinine, so a creatinine-based eGFR will overestimate his GFR.
+
+(b) **Measured GFR**, for example the plasma clearance of iohexol or ⁵¹Cr-EDTA. Donation is irreversible, so the decision deserves a measurement rather than an estimate.
+
+(c) **Creatinine-based eGFR**, interpreted with care, and measured GFR if an exact value would change management. Corticosteroids raise cystatin C independently of GFR, so a cystatin C estimate would underestimate his GFR.
 :::
 :::
 
-::: exercise Route the red cells {level=2}
-Gross haematuria with clots in a 66-year-old smoker versus 12-year-old with microscopic haematuria after a cold and normal BP and function: give the two work-ups and the reasoning.
+::: exercise Two arterioles {level=2}
+Predict the immediate effect on GFR and renal plasma flow of (a) strong afferent arteriolar constriction, (b) moderate efferent arteriolar constriction, (c) efferent arteriolar dilation caused by an ACE inhibitor in a person with bilateral renal artery stenosis. Explain each.
 ::: solution
-**The smoker: isomorphic bleeding with clots = non-glomerular until proven otherwise → the urological tract: upper-tract imaging (the CT-urography) plus cystoscopy (the bladder-cancer rule-out — [[renal/urinary-tract]] and [[pathology/cancer-diagnosis]]) and the anticoagulation-audit (never blame the thinners for haematuria without investigation ([[blood/thrombosis-anticoagulation]])). The child: painless-microscopic-or-gross-after-infection with normal examination = the paediatric-nephritic differential (the IgA-dominant post-infectious synpharyngitic pattern vs benign familial — the parental urine test and the complement-and-ASOT-and-serology panel and the deafness-and-ocular family history for Alport ([[genetics/mendelian-inheritance]], [[nervous-system/sensory-systems]])) → monitor-BP-function-ACR-and-refer-if-associated-signs — the dysmorphic-cell-and-cast confirmation the adult pathway skips ([[renal/chronic-kidney-disease]]'s haematuria-approach and [[renal/urinary-tract]]'s over-investigation-harm caution).**
+(a) Both fall. Less blood enters the glomerulus and glomerular pressure drops.
+
+(b) GFR rises and plasma flow falls. Glomerular pressure rises upstream of the constriction, but less blood leaves, so the filtration fraction increases. With severe constriction, oncotic pressure rises so much along the capillary that GFR falls too.
+
+(c) GFR falls sharply. With stenosis of both renal arteries, the pressure reaching the glomeruli is low and GFR depends on angiotensin II holding the efferent arteriole constricted. Removing angiotensin II lets glomerular pressure fall. This is why creatinine is rechecked one to two weeks after starting an ACE inhibitor or angiotensin receptor blocker; a rise of more than about 30% (or a fall in eGFR of more than 25%) prompts review of the drug and a search for renovascular disease.
 :::
 :::
 
-::: exercise The efferent dilemma {level=2}
-Bilateral renal-artery stenosis patient: explain why the ACE inhibitor causes acute kidney injury and why, despite that, ACE inhibitors are renoprotective in diabetic nephropathy.
+::: exercise The hidden half {level=3 check="9600/160"}
+Use the steady-state model $P_{Cr} = G/\text{GFR}$ with $G = 9.6$ µmol/min. (a) A woman's creatinine rises from 80 to 160 µmol/L over two years, while she stays well. What is her new GFR in mL/min, assuming $G$ is unchanged? (b) Explain why a doubling of creatinine is described as a halving of GFR, and why a creatinine still within or near the reference range can therefore hide a large loss of kidney function.
+::: hint
+GFR in L/min is $G/P_{Cr}$ with $G$ in µmol/min and $P_{Cr}$ in µmol/L. Multiply by 1000 to get mL/min.
+:::
 ::: solution
-**Stenosis upstream means glomerular pressure depends on angiotensin-II efferent tone ([[#def-autoregulation]]); removing it collapses the filtration gradient ([[renal/acute-kidney-injury]]'s vascular-causes row and the creatinine-rise-30 %-rule for stopping and imaging ([[clinical-skills/medical-imaging]]'s duplex-and-CTA-and-MRA options — the revascularisation-debate trials and the [[cardiovascular/hypertension]]'s secondary-hypertension chapter)). In diabetic nephropathy the pathology is the opposite — afferent relaxation and intraglomerular hypertension and hyperfiltration ([[renal/chronic-kidney-disease]]'s tubuloglomerular-feedback-hyperfiltration-paradox: proximal hyper-reabsorption lowers macula-densa salt and paradoxically constricts the efferent via the tubuloglomerular-feedback-renin loop) — so lowering efferent tone and systemic pressure reduces proteinuria and slows progression (the RAAS-blockade-trial lineages and the newer SGLT2-and-finerenone and GLP-1 kidney-outcome layers ([[endocrine/diabetes-complications]])) — the same drug, opposite verdicts, decided by which end of the arteriole needed help.**
+(a) GFR $= 9.6 / 160$ L/min $= 0.06$ L/min $= 60$ mL/min. Her previous GFR was $9.6/80 = 0.12$ L/min, 120 mL/min.
+
+(b) Because $P_{Cr}$ is inversely proportional to GFR, multiplying creatinine by two divides GFR by two, whatever the starting point. At the start of the curve, an absolute change in creatinine of 80 µmol/L corresponds to a loss of 60 mL/min, whereas late in the curve the same rise from 400 to 480 corresponds to a loss of only 4 mL/min. An upper reference limit of creatinine of around 100 µmol/L in women means a woman starting at 50 can lose half her GFR while every result is reported as normal. Trends, eGFR and albuminuria are more informative than a single creatinine checked against a reference range.
 :::
 :::
 
-::: exercise Design the function-check clinic {level=3}
-Design a service that catches kidney disease early and stages it correctly: population, tests, confirmatory algorithms, drug-safety interfaces and audit.
+::: exercise Interpret the dipstick {level=3}
+Three urine samples are tested. (a) A 19-year-old runner after a marathon: blood 3+, protein 1+, microscopy shows no red cells, creatine kinase 48 000 U/L. (b) A 15-year-old boy with a sore throat two days ago: visible haematuria, blood 3+, protein 1+, red cell casts, blood pressure normal, creatinine normal. (c) A 68-year-old woman with back pain and anaemia: dipstick protein negative, but PCR 250 mg/mmol and ACR 8 mg/mmol. Give the most likely explanation of each.
 ::: solution
-**Population and triggers: the diabetes-and-hypertension-and-cardiovascular-disease-and-family-history-and-NSAID-and-lithium-and-contrast-exposure registers (the case-finding ACR-plus-creatinine annual — [[endocrine/diabetes-complications]] and [[cardiovascular/hypertension]]); the acute-admission creatinine-and-urine reflex with post-AKI follow-up clinics (the AKI-to-CKD transition surveillance and the sick-day-rule issue at discharge — [[renal/acute-kidney-injury]] and [[geriatrics-palliative/polypharmacy]]). Confirmation: the trend-over-snapshot policy (repeat at ≥3 months for staging, the acute-value flag — [[renal/chronic-kidney-disease]]), the cystatin-C-or-measured-clearance escalation for the muscle-mass extremes (the [[#ex-creatinine-trap]] cohort) and the proteinuria characterisation ladder (first-morning ACR and the albumin-versus-total-protein light-chain question with the myeloma screen when age-plus-systemic-features demand ([[blood/lymphoma-myeloma]])). Interfaces: the renal-dosing service (the estimated-GFR-to-drug-table with the Cockcroft-versus-CKD-EPI language reconciliation — [[pharmacology/dosing-principles]]), the contrast-and-NSAID-and-ACEi-and-SADMANS medication-safety registers ([[pharmacology/adverse-reactions]], [[cardiovascular/hypertension]]), the pregnant-and-ICU-and-chemotherapy special-population reference-ranges ([[obstetrics-gynaecology/pregnancy-antenatal]], [[emergency-critical-care/critical-care]], [[infectious-diseases/immunocompromised-host]]), and the haematuria-and-proteinuria referral contracts with the urological and nephrological clinics ([[renal/urinary-tract]], [[renal/chronic-kidney-disease]]). Audit: the late-referral-and-dialysis-starting-mode measure, the eGFR-slope-tracking-quality (the within-person-change statistics — [[clinical-skills/laboratory-tests]]), the equity-of-access-to-cystatin-C-and-transplant-and-clinical-trials (the [[public-health/determinants-inequalities]] reading) and the over-investigation balance (the benign-haematuria-and-orthostatic-proteinuria no-further-action protocol — [[public-health/screening]]) — the whole service resting on this chapter's two sentences: pressure makes the filtrate, the barrier decides what passes, and creatinine only reports their product if you interrogate it.**
+(a) The blood pad is reacting to **myoglobin**, not red cells: **rhabdomyolysis** after extreme exercise. Myoglobin is toxic to tubules, and he is at risk of acute kidney injury; the priority is fluid and monitoring of creatinine and potassium.
+
+(b) Visible haematuria that begins one to two days after a throat infection, with red cell casts, suggests **IgA nephropathy** (synpharyngitic haematuria). Post-streptococcal glomerulonephritis typically follows the infection by one to three weeks. Red cell casts confirm a glomerular origin.
+
+(c) The large gap between total protein (PCR) and albumin (ACR), with a negative dipstick, means most of the protein is not albumin. With back pain and anaemia, the likely protein is **free light chains** from **myeloma**. She needs serum free light chains and protein electrophoresis ([[blood/lymphoma-myeloma]]).
 :::
 :::

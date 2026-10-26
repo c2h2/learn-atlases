@@ -6,11 +6,11 @@
   "level": 2,
   "order": 130,
   "tagline": "Filtration, tubular function, fluids and electrolytes, acid–base disorders, kidney disease and the urinary tract",
-  "summary": "The kidneys keep the internal environment constant. This course covers glomerular filtration and tubular function, the regulation of water, sodium, potassium, calcium and acid–base balance, acute kidney injury, chronic kidney disease, dialysis and glomerular disease, and disorders of the urinary tract.",
+  "summary": "The kidneys keep the internal environment constant. This course covers glomerular filtration and tubular function, the regulation of water, sodium, potassium, calcium and acid–base balance, acute kidney injury, chronic kidney disease with dialysis, transplantation and glomerular disease, and disorders of the urinary tract.",
   "overview": [
-    "The kidney is the body's chemistry department: it filters, then chooses — reclaiming glucose and water, adjusting sodium, potassium, calcium, phosphate, acid and volume moment by moment under hormonal instruction. Almost every acutely ill patient's fluid, electrolyte and drug-dosing problem is therefore a renal problem, and this course makes the nephron an engineerable object rather than an anatomy exam.",
-    "It begins with the physics of filtration — Starling forces across the glomerulus, autoregulation and the tubuloglomerular feedback that keeps GFR steady, and the measurement and estimation of GFR with its equations and traps. Tubular physiology follows segment by segment: the proximal reabsorption work, the loop of Henle's counter-current multiplier, the distal tubule and collecting duct as the regulated final path under aldosterone and antidiuretic hormone. Water and sodium are then treated as the two clinical variables they are: osmolality control, the causes of abnormal sodium and their correction limits, and volume assessment with the effective arterial blood volume concept. Another chapter works through potassium, calcium and phosphate — why the ECG changes, the arrhythmia risk and the endocrine drivers.",
-    "Acid–base disorders apply the Henderson–Hasselbalch arithmetic of the physiology course to real blood gases with anion-gap and delta-ratio reasoning and urinary responses. The clinical chapters then cover acute kidney injury (phenotypes, prevention, the indications for emergency dialysis) and chronic kidney disease (staging, its systemic consequences from anaemia to bone and cardiovascular risk, and the slow-therapy toolbox), and urinary tract infection and obstructive uropathy with their anatomy-driven logic. Quantitative cases — clearances, free water deficits, sodium-correcting rates, potassium shifts — are the spine of the course."
+    "The kidneys filter about 180 litres of plasma a day and then reclaim almost all of it, adjusting the excretion of water, sodium, potassium, calcium, phosphate and acid to match intake. Because of this, nearly every acutely ill patient's fluid, electrolyte and drug-dosing problems are partly kidney problems, and much of the course is about reasoning from physiology to the bedside.",
+    "The first half is physiology applied to clinical problems. It starts with the forces that drive glomerular filtration, autoregulation, and the measurement and estimation of GFR with their traps. It then follows the filtrate along the nephron, segment by segment, explaining how each class of diuretic works and how urine is concentrated. Separate lessons treat water and sodium (hyponatraemia, hypernatraemia and safe correction rates), potassium, calcium, magnesium and phosphate, and the interpretation of blood gases with the anion gap, compensation rules and delta ratio.",
+    "The second half covers disease: acute kidney injury (KDIGO definition and staging, causes, management and the indications for dialysis), chronic kidney disease (classification, kidney-protective treatment, complications, dialysis and transplantation) with the glomerular diseases, and the urinary tract (infection, stones, obstruction, the prostate, polycystic kidney disease and urological cancers). Worked calculations of clearance, fractional excretion, water deficit, sodium correction and anion gap run through every lesson, alongside clinical cases. UK guidance (NICE, UK Kidney Association) is used where it exists, with KDIGO and European guidance where they set the standard."
   ],
   "prerequisites": [
     "anatomy",
@@ -20,21 +20,22 @@
     "microbiology"
   ],
   "outcomes": [
-    "Describe renal blood supply and the anatomy of the nephron, explain glomerular filtration and Starling forces, and calculate and interpret creatinine clearance and estimated GFR including their limitations.",
-    "Explain renal autoregulation and tubuloglomerular feedback, and the hormonal and neural control of renal blood flow and filtration fraction.",
-    "Trace the handling of sodium, water, glucose, amino acids, urate, hydrogen and potassium along the nephron, and predict the consequences of blocking each transporter (diuretics as physiology in action).",
-    "Explain the counter-current mechanism, antidiuretic hormone physiology and the differential and management principles of abnormal plasma sodium, including safe correction rates.",
-    "Apply the physiology of potassium, calcium and phosphate balance to the common clinical disorders and their characteristic ECG and neurological features.",
-    "Interpret arterial blood gases and urinary electrolytes to classify acid–base disorders — including the anion gap, osmolal gap and delta ratio — and identify mixed pictures.",
-    "Define and stage acute kidney injury, identify prerenal, intrinsic and postrenal causes, describe prevention in high-risk inpatients, and list the indications for urgent renal replacement therapy.",
-    "Stage chronic kidney disease, explain the pathophysiology and management of its systemic consequences — anaemia, mineral and bone disorder, acidosis, hyperkalaemia, cardiovascular risk — and the principles of referral and renal replacement options.",
-    "Classify urinary tract infection by site and host, explain the ascending route and risk factors, apply investigation and imaging rules to children, pregnancy, men and recurrent infection, and describe obstructive uropathy and the postrenal emergency."
+    "Describe the renal circulation and the glomerular filtration barrier, apply the Starling equation to glomerular filtration, and explain autoregulation and the effects of NSAIDs and ACE inhibitors on GFR.",
+    "Calculate clearance and creatinine clearance, interpret creatinine and estimated GFR, and recognise when they mislead, including in acute kidney injury and at extremes of muscle mass.",
+    "Explain transport in each segment of the nephron, the countercurrent mechanism and the action of ADH, and predict the effects of each class of diuretic and of inherited tubular disorders.",
+    "Distinguish disorders of sodium content from disorders of water balance, investigate hyponatraemia and hypernatraemia, and calculate water deficits and the safe limits of sodium correction.",
+    "Outline the regulation of potassium, calcium, magnesium and phosphate, and the recognition and principles of management of their disorders, including hyperkalaemia and refeeding syndrome.",
+    "Interpret arterial blood gases using compensation rules, the anion gap, the delta ratio and the osmolal gap, and identify mixed acid–base disorders.",
+    "Define and stage acute kidney injury using KDIGO criteria, classify its causes, outline its management and prevention, and list the indications for renal replacement therapy.",
+    "Classify chronic kidney disease by cause, GFR and albuminuria, describe treatments that slow progression, manage its complications, and outline dialysis, transplantation and conservative care.",
+    "Recognise the main glomerular diseases as nephrotic or nephritic patterns and identify rapidly progressive glomerulonephritis as an emergency.",
+    "Diagnose and outline the management of urinary tract infection, kidney stones, urinary obstruction and prostatic disease, and recognise presentations of urological cancer."
   ],
   "chapters": [
     {
       "slug": "filtration",
       "title": "Renal blood flow and filtration",
-      "summary": "Structure of the nephron, glomerular filtration, autoregulation and measuring kidney function.",
+      "summary": "Renal blood flow, the filtration barrier, Starling forces, autoregulation and measuring kidney function.",
       "requires": [
         "anatomy/abdomen",
         "physiology/homeostasis-body-fluids"
@@ -43,7 +44,7 @@
     {
       "slug": "tubular-function",
       "title": "Tubular function",
-      "summary": "Reabsorption and secretion along the nephron and the concentration of urine.",
+      "summary": "Transport along the nephron, diuretics, the concentration of urine and tubular disorders.",
       "requires": [
         "renal/filtration"
       ]
@@ -51,7 +52,7 @@
     {
       "slug": "water-sodium",
       "title": "Water and sodium balance",
-      "summary": "Antidiuretic hormone, the renin–angiotensin–aldosterone system, and hyponatraemia and hypernatraemia.",
+      "summary": "Osmoregulation and volume regulation, hyponatraemia and hypernatraemia, and safe correction.",
       "requires": [
         "renal/tubular-function"
       ]
@@ -67,7 +68,7 @@
     {
       "slug": "acid-base-disorders",
       "title": "Acid–base disorders",
-      "summary": "Interpreting blood gases, and metabolic and respiratory acidosis and alkalosis.",
+      "summary": "Interpreting blood gases: compensation, the anion gap, the delta ratio and the four primary disorders.",
       "requires": [
         "renal/tubular-function",
         "physiology/acid-base"
@@ -105,96 +106,143 @@
     {
       "year": 1827,
       "title": "Bright's disease",
-      "detail": "Richard Bright, at Guy's Hospital, correlates dropsy, albuminuria and firm pale kidneys in his reports on medical cases — separating renal disease from the old category of dropsies and giving the nephropathies their first clinical description and eponym.",
+      "detail": "Richard Bright at Guy's Hospital links dropsy (oedema) and albumin in the urine to diseased, shrunken kidneys found at post-mortem, separating kidney disease from other causes of swelling. For a century 'Bright's disease' was the name for what is now called glomerulonephritis and chronic kidney disease.",
       "people": [
         "Richard Bright"
       ]
     },
     {
       "year": 1842,
-      "title": "The filters seen",
-      "detail": "William Bowman describes the minute globular bodies at the renal tubules' blind ends — the capsules that enclose the capillary tufts — identifying the glomerulus as the kidney's functional unit seventy years before electron microscopy reveals its three-layered filtration barrier.",
+      "title": "The glomerulus described",
+      "detail": "William Bowman describes the capillary tufts enclosed in the blind ends of the tubules, the capsule that now bears his name, and proposes that the tuft separates water from the blood.",
       "people": [
         "William Bowman"
       ]
     },
     {
       "year": 1898,
-      "title": "A pressor substance from the kidney",
-      "detail": "Robert Tigerstedt and Per Bergman extract a pressor principle from rabbit kidney and find it raises blood pressure in other animals — renin's first demonstration, the observation that links the kidney to blood pressure and, sixty years on, to a whole class of cardiovascular drugs.",
+      "title": "Renin discovered",
+      "detail": "Robert Tigerstedt and Per Bergman in Stockholm find that an extract of rabbit kidney raises blood pressure when injected into other rabbits. They name the substance renin, the first step towards the renin–angiotensin system.",
       "people": [
         "Robert Tigerstedt",
         "Per Bergman"
       ]
     },
     {
+      "year": 1924,
+      "title": "Filtrate sampled",
+      "detail": "Joseph Wearn and Alfred Richards puncture Bowman's space in frog kidneys with fine pipettes and show that the fluid is protein-free but contains glucose and chloride at plasma concentrations, proving that urine begins as an ultrafiltrate of plasma.",
+      "people": [
+        "Joseph Wearn",
+        "Alfred Richards"
+      ]
+    },
+    {
       "year": 1934,
       "title": "Goldblatt hypertension",
-      "detail": "Harry Goldblatt clamps one renal artery in dogs and produces sustained hypertension, proving that reduced renal perfusion raises systemic pressure; the experiment defines renovascular hypertension and points to a hormonal chain finally named the renin–angiotensin system by Page, Braun-Menendez and colleagues in the late 1930s.",
+      "detail": "Harry Goldblatt narrows the renal arteries of dogs with an adjustable clamp and produces sustained hypertension, showing that reduced kidney perfusion raises blood pressure. The work led to the identification of angiotensin by Irvine Page and by Eduardo Braun-Menéndez and colleagues in 1939–40.",
       "people": [
         "Harry Goldblatt",
-        "Irving Page"
+        "Irvine Page",
+        "Eduardo Braun-Menéndez"
       ]
     },
     {
-      "year": 1937,
-      "title": "Physiology single-nephron by single-nephron",
-      "detail": "Granville Walker, William Bott and Paul Bradley micropuncture the renal tubules of rats, and with Homer W. Smith's clearance studies in humans, partition the nephron's work: what is filtered, what is reabsorbed where, and what is secreted — the data foundation that made the kidney an analyzable organ.",
-      "people": [
-        "Granville Walker",
-        "Paul Bradley",
-        "Homer W. Smith"
-      ]
-    },
-    {
-      "year": 1944,
-      "title": "The first dialyser",
-      "detail": "Willem Kolff, working in a Dutch basement with cellophane tubing and a rotating drum, builds the first practical artificial kidney; a wartime experiment of uncertain success becomes routine medicine after Belding Scribner's durable shunt (1960) made repeated dialysis possible for chronic patients.",
+      "year": 1945,
+      "title": "The first successful dialysis",
+      "detail": "Willem Kolff, who had built a rotating-drum artificial kidney in the occupied Netherlands from 1943, treats a woman with acute kidney failure who survives, the first patient saved by dialysis. Long-term dialysis became possible after Belding Scribner's arteriovenous shunt in 1960.",
       "people": [
         "Willem Kolff",
         "Belding Scribner"
       ]
     },
     {
-      "year": 1956,
-      "title": "A kidney that lasts",
-      "detail": "After earlier failures, Joseph Murray's team at the Peter Bent Brigham Hospital transplants an identical-twin kidney and the recipient survives decades — proof that organ replacement is possible, and the start of transplant immunology, HLA matching and the azathioprine era of immunosuppression.",
+      "year": 1951,
+      "title": "The countercurrent multiplier",
+      "detail": "Bartholomew Hargitay and Werner Kuhn propose that the hairpin loop of Henle multiplies a small single effect into a large osmotic gradient, and with Heinrich Wirz demonstrate the rising osmolality from cortex to papilla in rat kidney slices.",
       "people": [
-        "Joseph Murray",
-        "John Merrill"
+        "Werner Kuhn",
+        "Bartholomew Hargitay",
+        "Heinrich Wirz"
       ]
     },
     {
-      "year": 1989,
-      "title": "The anaemia of renal failure treated",
-      "detail": "Recombinant human erythropoietin, cloned in 1985 and licensed for the anaemia of chronic kidney disease from 1989, for the first time replaces one of the kidney's endocrine functions rather than only its excretory one — transforming dialysis practice and, after a scandal over supraphysiological targets, teaching the discipline the difference between correcting a number and improving an outcome.",
+      "year": 1954,
+      "title": "The first successful kidney transplant",
+      "detail": "On 23 December 1954, at the Peter Bent Brigham Hospital in Boston, Joseph Murray, John Merrill and Hartwell Harrison transplant a kidney from Ronald Herrick into his identical twin Richard. Without rejection, the kidney works for years. Murray later shared the 1990 Nobel Prize.",
       "people": [
-        "Masayasu Miyazaki",
-        "Steven Lin"
+        "Joseph Murray",
+        "John Merrill",
+        "Hartwell Harrison"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Inappropriate antidiuretic hormone",
+      "detail": "William Schwartz, Frederic Bartter and colleagues describe two patients with lung cancer, hyponatraemia, concentrated urine and continued urinary sodium loss, and attribute it to inappropriate secretion of antidiuretic hormone.",
+      "people": [
+        "William Schwartz",
+        "Frederic Bartter"
+      ]
+    },
+    {
+      "year": 1987,
+      "title": "Erythropoietin for kidney failure",
+      "detail": "Joseph Eschbach and colleagues show that recombinant human erythropoietin, cloned by Fu-Kuen Lin's group in 1985, corrects the anaemia of people on dialysis, replacing one of the kidney's hormonal functions. Later trials showed that aiming for a normal haemoglobin increased cardiovascular events, which is why targets are set below normal.",
+      "people": [
+        "Joseph Eschbach",
+        "Fu-Kuen Lin"
       ]
     }
   ],
   "references": [
     {
-      "title": "The Renal Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the nephron and the kidney.",
-      "slug": "ref1"
-    },
-    {
-      "title": "The Renal Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the nephron and the system.",
-      "slug": "ref2"
-    },
-    {
-      "title": "Clinical Renal",
-      "authors": "Reference",
+      "title": "Renal Physiology",
+      "authors": "Bruce M. Koeppen and Bruce A. Stanton",
       "year": 2018,
-      "note": "A practical treatment of the kidney and the practice.",
-      "slug": "ref3"
+      "note": "Sixth edition (Mosby Physiology series). A short, clear account of filtration, tubular transport and the regulation of body fluids; the best companion to the physiology lessons."
+    },
+    {
+      "title": "Clinical Physiology of Acid-Base and Electrolyte Disorders",
+      "authors": "Burton David Rose and Theodore W. Post",
+      "year": 2001,
+      "note": "Fifth edition. The classic text on reasoning from tubular physiology to sodium, potassium and acid–base disorders."
+    },
+    {
+      "title": "Brenner and Rector's The Kidney",
+      "authors": "Alan S. L. Yu, Glenn M. Chertow, Valérie A. Luyckx, Philip A. Marsden, Karl Skorecki and Maarten W. Taal (editors)",
+      "year": 2020,
+      "note": "Eleventh edition. The comprehensive reference text of nephrology."
+    },
+    {
+      "title": "Comprehensive Clinical Nephrology",
+      "authors": "Richard J. Johnson, Jürgen Floege and Marcello Tonelli (editors)",
+      "year": 2023,
+      "note": "Seventh edition. A well-illustrated clinical textbook covering glomerular disease, dialysis and transplantation."
+    },
+    {
+      "title": "Oxford Handbook of Nephrology and Hypertension",
+      "authors": "Simon Steddon, Alistair Chesser, John Cunningham and Neil Ashman",
+      "year": 2014,
+      "note": "Second edition. A compact UK guide to ward and clinic nephrology."
+    },
+    {
+      "title": "KDIGO Clinical Practice Guideline for Acute Kidney Injury",
+      "authors": "Kidney Disease: Improving Global Outcomes (KDIGO) AKI Work Group",
+      "year": 2012,
+      "note": "Kidney International Supplements. The source of the definition and staging of acute kidney injury used in this course."
+    },
+    {
+      "title": "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease",
+      "authors": "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group",
+      "year": 2024,
+      "note": "Kidney International. The international reference for CKD classification and treatment."
+    },
+    {
+      "title": "Chronic kidney disease: assessment and management (NG203)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2021,
+      "note": "UK guidance on testing, classification, referral, blood pressure targets and kidney-protective drugs; read with NICE NG148 on acute kidney injury (2019)."
     }
   ],
   "next": [

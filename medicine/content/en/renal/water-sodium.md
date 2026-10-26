@@ -1,149 +1,326 @@
-Sodium is the extracellular fluid's osmole, so **the body regulates sodium and water with two overlapping systems that answer two different questions: "is the circulation full?" (volume regulation — baroreceptors, the renin–angiotensin–aldosterone system, natriuretic peptides and pressure natriuresis) and "is the plasma dilute?" (osmoregulation — thirst and antidiuretic hormone)** ([[physiology/homeostasis-body-fluids]] and [[physiology/hormones]]). Most clinical sodium disease is a water problem wearing a sodium label — hyponatraemia almost always means too much retained water — and the disorders of this chapter (the dysnatraemias, the volume states and oedema) are the daily arithmetic of every medical ward.
+Two questions sound alike but have different answers. *How much sodium does the body contain?* determines the volume of the extracellular fluid: whether a person is dry, normal or oedematous. *What is the concentration of sodium in the plasma?* reflects the balance of water: whether there is too much or too little water relative to solute. The kidney controls these with two separate systems. Sodium content is regulated by sensors of circulating volume acting through the renin–angiotensin–aldosterone system, sympathetic nerves and natriuretic peptides. Water balance is regulated by osmoreceptors acting through antidiuretic hormone (ADH) and thirst.
 
-This chapter covers sodium and volume regulation, antidiuretic hormone, hyponatraemia, hypernatraemia, and oedema.
+Once these two systems are kept apart in the mind, most of the confusion around "low sodium" and "high sodium" disappears. Hyponatraemia is almost always a problem of too much water, not too little sodium. Hypernatraemia is almost always a problem of too little water. Oedema is a problem of too much sodium.
 
-## Regulation
+This lesson explains both control systems, then works through hyponatraemia and hypernatraemia: how to classify them, why the speed of correction matters so much, and how to calculate the effect of a treatment. It builds on [[renal/tubular-function]] and the fluid compartments of [[physiology/homeostasis-body-fluids]]. Intravenous fluid prescribing in shock is covered in [[emergency-critical-care/shock-fluids]].
 
-::: definition Volume regulation: the effective arterial blood volume {#def-volume}
-The circulation defends **the "effective arterial blood volume" — the filling of the arterial tree that the baroreceptors (the carotid sinus and aortic arch and the renal afferent's intrarenal barostat — [[renal/filtration]]'s renin cells) actually sense — not the total extracellular volume, a distinction that explains every paradox of oedema with underfilling.** The effectors when filling falls: **the sympathetic nervous system ([[physiology/autonomic-nervous-system]] — rapid vasoconstriction and renin release and proximal sodium reabsorption), the renin-angiotensin-aldosterone system (renin's angiotensin-I/II cascade — systemic vasoconstriction and aldosterone-driven distal sodium retention ([[renal/tubular-function]]'s principal cell) and the profibrotic long tail exploited and endured in heart failure ([[cardiovascular/heart-failure]] and [[renal/chronic-kidney-disease]])); ADH and thirst (below); and the counter-systems when filling rises — the natriuretic peptides (ANP and BNP — the atrial and ventricular stretch-release hormones and their receptor-neprilysin biology behind the ARB-neprilysin drug class ([[cardiovascular/hypertension]]) and the diagnostic assays ([[clinical-skills/laboratory-tests]])), and pressure natriuresis (Guyton's renal perfusion-pressure-sodium-excretion curve — the long-term blood-pressure set point and the proposed mechanism of salt-sensitive hypertension ([[cardiovascular/hypertension]] and [[renal/chronic-kidney-disease]]'s hypertension-acceleration loop)).** Clinical states: **volume depletion (the extra-renal and renal salt-loss table — vomiting and diarrhoea and burns and third-spacing versus diuretics and mineralocorticoid-deficiency and salt-losing nephropathy and osmotic diuresis — with the urine sodium and chloride as the discriminating tests ([[renal/acute-kidney-injury]]'s prerenal arithmetic and [[renal/acid-base-disorders]]'s chloride-responsive alkalosis)); and volume overload with low effective filling (the underfill triad — heart failure and cirrhosis and the nephrotic syndrome ([[renal/chronic-kidney-disease]])) versus primary renal sodium retention (the overfill pair — glomerulonephritis and acute-and-chronic kidney injury ([[renal/acute-kidney-injury]])) — the underfill-versus-overfill concept ([[#ex-oedema]]) that unifies RAAS-blockade, diuretic and albumin strategies ([[cardiovascular/heart-failure]] and [[gastrointestinal/liver-disease]]).**
+## Two variables, two control systems
+
+Sodium is the main cation of the extracellular fluid (ECF), and with its accompanying anions it accounts for most of the ECF's osmotic activity. Water moves freely between cells and ECF to keep their osmolality equal. This gives a simple rule.
+
+::: theorem Sodium content sets volume; water sets concentration {#thm-two-systems}
+The **amount** of sodium in the body determines the **volume** of the extracellular fluid. The **plasma sodium concentration** is determined by the amount of exchangeable sodium and potassium relative to total body water:
+
+$$
+[\text{Na}^+]_p \approx \frac{\text{Na}^+_e + \text{K}^+_e}{\text{TBW}}
+$$ {#eq-edelman}
+
+A low plasma sodium therefore means relatively too much water, and a high plasma sodium relatively too little, whatever the ECF volume.
 :::
 
-::: definition Osmoregulation: ADH and thirst {#def-osmo}
-**Plasma osmolality (275-295 mOsm/kg — sodium and its anions plus glucose and urea) is defended within ~1-2 % by the osmoreceptor-ADH axis: the OVLT-and-supraoptic-and-paraventricular nuclei ([[endocrine/hypothalamus-pituitary]]'s anatomy) sense tonicity (with astrocytic-sense apparatus — the cell-biochemistry of tonicity response ([[cell-biochemistry/signalling-cell-cycle]])), trigger magnocellular ADH release from the posterior pituitary ([[nervous-system/sensory-systems]]-adjacent hypothalamic-outflow — and the DI lesion's three-phase pattern of [[renal/tubular-function]]'s example), and drive thirst via the same circuits (the adipsic-hypernatraemia of anterior-hypothalamic lesions — [[nervous-system/stroke]]-adjacent).** The set point: **a steep linear ADH-osmolality relationship between thresholds of ~280-290 mOsm/kg (the steep curve of the figure below) — plasma osmolality of 295 means near-maximal antidiuresis (urine ~1200 mOsm — [[renal/tubular-function]]'s concentrating machinery); and a second, higher-threshold osmosis-aldosterone interaction (the sodium-thirst axis — the salt-addiction literature and salt-sensing-immunity nuance ([[cardiovascular/hypertension]]'s salt-sensitivity debate)).** ADH's non-osmotic controls are clinically louder than its osmotic ones: **volume (8-10 % depletion re-sets ADH release upward, overriding osmotic suppression — the physiology of hypovolaemic hyponatraemia and the "saline-responsive" label), nausea, pain, stress and surgery (the postoperative-ADH surge and iatrogenic-hyponatraemia epidemic — [[surgery/perioperative-care]] and [[emergency-critical-care/acute-assessment]]) and drugs (the SSRIs-and-carbamazepine-and-cyclophosphamide-and-opioids ADH-potentiating list ([[psychiatry/treatments-mental-health-law]]-adjacent and [[pharmacology/adverse-reactions]]), versus the lithium-and-demeclocycline-and-vaptan ADH-antagonism bookend ([[renal/chronic-kidney-disease]]-adjacent — [[psychiatry/treatments-mental-health-law]]'s lithium renal-tubular trade-off)). Thirst's sufficiency (the intact subject drinks to <1 % tonicity variation — hypernatraemia means thirst-failure, not salt-excess, as a rule ([[#def-hypernatraemia]])), and the osmotic-temperament-of-aging (the hypo-osmotic-adult and hypo-dipsic-elderly shift — [[geriatrics-palliative/ageing-frailty]]), complete the system's bedside behaviour.**
+::: proof
+Water distributes across cell membranes until intracellular and extracellular osmolality are equal. Most osmoles inside cells are potassium salts and most outside are sodium salts, so the osmolality of all body water is set by total exchangeable sodium plus potassium divided by total body water. Plasma sodium is a good marker of that osmolality. If sodium is added to the body without water, osmolality rises, thirst and ADH bring in water to restore it, and the extra salt and water stay in the ECF: the volume grows but the concentration returns to normal. If water is added without solute, it spreads across all compartments and dilutes them all; the ECF expands only slightly, but sodium concentration falls. This relationship was shown empirically by Isidore Edelman and colleagues in 1958.
 :::
 
-::: example The myeloma mask {#ex-pseudo}
-A 72-year-old with multiple myeloma has routine biochemistry: sodium 124 by indirect ion-selective electrode, plasma osmolality 292 mOsm/kg measured, total protein 118 g/L, triglycerides normal; the patient is thirsty-less, euvolaemic and unremarkable neurologically.
-::: solution
-**Pseudohyponatraemia (the laboratory artefact class of [[#def-hyponatraemia]]'s step 1): the displaced-plasma-water fraction (protein and lipid raise the non-aqueous phase; indirect ionometry dilutes a fixed plasma-volume and reports the water-phase concentration as if all plasma were water) — the measured osmolality stays near-normal (the osmolar gap is with ethanol-and-mannitol-and-glycine states ([[renal/acute-kidney-injury]]-adjacent and [[emergency-critical-care/poisoning]])), and the direct-electrode or point-of-care sodium reads truthfully ([[clinical-skills/laboratory-tests]]'s method-divergence footnote — the same gap explains blood-gas-versus-laboratory sodium mismatches in the ICU ([[emergency-critical-care/critical-care]])).** No treatment; the myeloma's own management and the paraprotein trajectory ([[blood/lymphoma-myeloma]]) and a flag-note so the next team does not fluid-restrict or salt-load a laboratory phantom ([[clinical-skills/records-handover]] and [[clinical-skills/patient-safety]]). Teaching: **treat the patient and the measured osmolality, not the number; the first act in every hyponatraemia is asking whether it is real ([[#def-hyponatraemia]]).**
-:::
+The equation also explains why potassium matters: giving potassium chloride to a person who is depleted of potassium raises plasma sodium, as potassium enters cells and sodium and water shift. This must be counted when correcting hyponatraemia.
+
+### Osmoregulation: ADH and thirst
+
+::: definition Osmoregulation {#def-osmo}
+**Plasma osmolality** is normally 275–295 mOsm/kg. It can be estimated as
+
+$$
+P_{osm} \approx 2[\text{Na}^+] + [\text{glucose}] + [\text{urea}] \quad (\text{all in mmol/L})
+$$ {#eq-posm}
+
+**Osmoreceptors** in the anterior hypothalamus detect changes of 1–2% in osmolality. Above a threshold of about 280–285 mOsm/kg, ADH release rises steeply, and the kidney retains water. A few mOsm/kg higher, **thirst** starts. ADH limits water loss; only thirst can replace water already lost.
+
+ADH is also released by **non-osmotic stimuli**: a fall in effective circulating volume of more than about 10%, nausea, pain, stress, hypoglycaemia and many drugs. A large volume stimulus overrides the osmotic signal, so the body will defend volume at the expense of tonicity.
 :::
 
-::: widget plot
-f: 1+99/(1+exp(-(x-288)*0.9))
-x: 272, 305
-y: 0, 105
-labels: \text{plasma osmolality (mOsm/kg)},\ \text{ADH activity (\% of max)};\ \text{osmotic ADH response}
-caption: The osmostat ([[#def-osmo]]): ADH release rises steeply and linearly above threshold, so small osmolality changes are met with large water-excretion changes — the reason the healthy person never notices the 1-2 % defended band, and the reason disease shifts of the threshold (the osmolar-reset of pregnancy, heart failure and the elderly "leaky" osmostat, and the narrow therapeutic geography of the dysnatraemia corrections below) dominate clinical picture. Non-osmotic inputs (volume depletion, nausea, drugs) shift the curve leftward — ADH activity at "normal" osmolality is not inappropriately low for that number alone; the interpretation is always paired: ADH against simultaneous plasma-and-urine tonicity ([[renal/tubular-function]]'s [[#def-hyponatraemia]] algorithm).
+The osmotic control system is sensitive and fast. A healthy person drinking a litre of water suppresses ADH within about half an hour and excretes the excess as dilute urine over the next few hours. For plasma sodium to fall, water intake must exceed the kidney's ability to excrete it, or ADH must be present when it should not be.
+
+### Volume regulation: effective arterial blood volume
+
+The body does not measure ECF volume directly. It senses the pressure and stretch in the arterial tree, the heart and the kidney's own afferent arterioles.
+
+::: definition Effective arterial blood volume {#def-volume}
+**Effective arterial blood volume** (EABV) is the part of the circulation that perfuses the tissues, as sensed by baroreceptors in the carotid sinus, aortic arch, cardiac atria and afferent arterioles. When EABV falls, the kidney retains sodium through:
+
+- the **renin–angiotensin–aldosterone system**: renin from the juxtaglomerular cells forms angiotensin I, converted to angiotensin II, which constricts arterioles, increases proximal sodium reabsorption, and stimulates aldosterone, which increases sodium reabsorption in the collecting duct;
+- **sympathetic nerves**, which increase renin release and proximal reabsorption;
+- **non-osmotic ADH release** when the fall is large.
+
+When EABV rises, **natriuretic peptides** (ANP from atria, BNP from ventricles) increase sodium excretion and the systems above are suppressed.
 :::
 
-## The dysnatraemias
+EABV usually tracks ECF volume, but not always. In heart failure and cirrhosis the total ECF volume is increased (the person is oedematous) while the arterial circulation is underfilled, because of a low cardiac output or peripheral vasodilation. The kidney responds as if the person were dehydrated: it retains sodium and water. This explains the oedema and, through non-osmotic ADH, the hyponatraemia of these conditions.
 
-::: definition Hyponatraemia {#def-hyponatraemia}
-**Hyponatraemia (Na <135 mmol/L) is, with the rare exceptions below, water excess: work it in four moves (the [[clinical-skills/laboratory-tests]] verified-plasma-osmolality-first algorithm). (1) Tonometry: true hypotonicity versus pseudohyponatraemia (the lipid-and-paraprotein indirect-electrode artefact with normal measured osmolality — [[blood/lymphoma-myeloma]]'s plasma-cell reading) versus hypertonic (glucose- and mannitol-drag water efflux — the corrected-sodium arithmetic of DKA ([[endocrine/diabetes-complications]] and [[endocrine/diabetes]]) — subtract ~1.6-2.4 mmol per 5.6 mmol of glucose).** (2) Duration and symptoms (the <48-hour and unknown-but-low-risk-versus-chronic split that sets treatment urgency — the cerebral-adaptation loss of organic osmolytes ([[#warn-correction]]). (3) Volume status by the history and examination and the urine tests: **hypovolaemic (urine Na <30 with extra-renal losses or >30 with renal salt-wasting and diuretics and mineralocorticoid-deficiency — [[endocrine/adrenal]] — and the cerebral-renal-salt-wasting confusion in neuro-patients); euvolaemic (SIADH's diagnosis-of-association: urine osmolality >100 and urine Na >30 and normal thyroid-and-adrenal-and-renal-and-diuretic-status ([[endocrine/thyroid]] and [[endocrine/adrenal]]) — the causes: the CNS-and-lung disease and surgery-and-pain-and-nausea and small-cell-lung-carcinoma ([[respiratory/lung-cancer-pleura]]) and the drug-tablet list ([[pharmacology/adverse-reactions]]); plus the low-solute-intake "tea-and-toast" and beer potomania and the post-exercise-water-loading phenotypes ([[public-health/prevention-promotion]]'s sports-medicine hazard and [[psychiatry/eating-personality-disorders]]'s polydipsia); hypervolaemic (heart failure ([[cardiovascular/heart-failure]]) and cirrhosis ([[gastrointestinal/liver-disease]]) and nephrotic-and-kidney-failure states — the underfill ADH of [[#def-volume]]).** (4) Treat on the axes symptom-severity × chronicity: **the severe-symptom bolus protocol (the 3 % saline small-volume repeats (the ~100-150 mL bands) with frequent sodium re-checks targeting a few mmol/L quick rise for symptom-relief only ([[emergency-critical-care/acute-assessment]])) versus the chronic plan (stop offending-drugs and fluid-restriction — the 1-1.5 L and urine-osmolality-to-intake-ratio guides — salt-tablets ± loop-diuretic combinations for SIADH, the tolvaptan era's liver-and-overcorrection caveats and guideline-disagreements ([[renal/chronic-kidney-disease]]-adjacent), and the vaptans' contraindication in hypovolaic states and the post-obstructive-and-thirst-impaired cautions); and the always-list (the isotonic-saline "challenge" logic for hypovolaemia, the desmopressin-clamp rescue for overcorrection ([[renal/tubular-function]]'s [[#def-osmo]]-adjacent DDAVP-replacement tool), and the daily-sodium-trajectory graph as the safety document).**
-:::
-
-
-::: definition Hypernatraemia {#def-hypernatraemia}
-**Hypernatraemia (Na >145 mmol/L) is water deficit relative to sodium — with an intact thirst-and-water-access system plasma sodium almost never rises, so the differential is a pair of questions: cannot-thirst (the adipsic-and-hypodipsic anterior-hypothalamic lesions and the osmoreceptor-lesion variants — [[endocrine/hypothalamus-pituitary]] and [[nervous-system/stroke]]), cannot-reach-water (the disabled-and-demented-and-intubated-and-infant-and-prison-and-disaster phenotypes — [[geriatrics-palliative/delirium-dementia-care]] and [[emergency-critical-care/major-incidents]]), or losing-too-much-water (the dilute-urine diabetes-insipidus split of [[renal/tubular-function]]'s diabetes-insipidus work-up and [[endocrine/hypothalamus-pituitary]] — and the concentrated-urine non-renal-and-osmotic losses: loop-diuretic-and-post-obstructive-and-glucosuric diureses ([[renal/acute-kidney-injury]] and [[endocrine/diabetes]]), the diarrhoea-and-sweat-and-burns hypotonic-fluids ([[surgery/wounds-surgical-infection]] and [[emergency-critical-care/resuscitation]])), or gaining-sodium (the rare iatrogenic boluses — the hypertonic-saline-and-sodium-bicarbonate boluses, the tube-feed-and-sea-water disasters and the neonatal salt-mixing errors ([[paediatrics/acute-childhood-illness]] and [[clinical-skills/patient-safety]]) and dialysis-conduct errors ([[renal/chronic-kidney-disease]])).** Clinical: **thirst and the neuromuscular irritability-and-weakness-and-coma of acute rises (brain-cell-shrinkage and the bridging-vein subdural-tension haemorrhage risk) versus the surprisingly-well chronic patient ([[nervous-system/motor-systems]]); management: the [[#ex-hyper]] water-deficit arithmetic, enteral-water-first ([[gastrointestinal/clinical-nutrition]]), the [[#warn-correction]] ceiling (cerebral-oedema-in-reverse on over-fast falls), replacement of ongoing-and-polyuric losses, and the cause-specific routes (desmopressin for central DI ([[endocrine/hypothalamus-pituitary]]), the nephrogenic cocktail ([[renal/tubular-function]]) and stopping the sodium-loads); and the epidemiological bookend: mortality-and-morbidity associations at both extremes and every admission-sodium-outside-reference predicting worse outcomes — the sodium as prognosis-biomarker literature ([[geriatrics-palliative/ageing-frailty]] and [[emergency-critical-care/acute-assessment]])).**
-:::
-
-::: warning The correction limits exist because of demyelination {#warn-correction}
-Rapid raise of chronic hyponatraemia tears the adapted brain's water balance back open — the **osmotic-demyelination syndrome (the pontine-extrapontine-myelinolysis clinico-radiological-delayed-presenting quadriplegia and pseudobulbar palsy and locked-in syndromes, typically 2-6 days after over-fast correction — [[nervous-system/motor-systems]]'s tract anatomy in the worst role)** — and the limits are therefore hard rules: **≤8-10 mmol/L in any 24 hours (stricter ~<8: alcoholism and malnutrition and hypokalaemia and liver disease and thiazides and low-adrenal — the vulnerable-brain list ([[geriatrics-palliative/polypharmacy]]-adjacent and [[gastrointestinal/clinical-nutrition]]'s refeeding-overlap)); and the same discipline in reverse for hypernatraemia (≤10-12 mmol/L/day, slower in children and the chronic-adapted).** Anticipate the surprise over-correction: the volume-repleted SIADH-that-wasn't, the steroid-replaced Addison, the DDAVP-worn-off polyuric phase and the solute-load water-shifts — hence re-check sodium 2-4-hourly in active correction, and the desmopressin-clamp-and-dextrose rescue when the urine watermark betrays impending overcorrection ([[renal/tubular-function]]).
-:::
-
-::: example The post-operative seizure {#ex-hypo}
-Day 2 after elective surgery, a 74-year-old on sertraline, kept on 5 % dextrose at 125 mL/h, becomes confused and seizes; Na was 137 pre-operatively, now 116; she looks euvolaemic; urine osmolality 520 and urine sodium 78.
-::: solution
-**Severe symptomatic, probably acute-on-subacute hyponatraemia: euvolaemic pattern with inappropriately concentrated natriuretic urine = SIADH physiology from the post-operative nausea-pain-stress ADH surge ([[#def-osmo]]) amplified by sertraline ([[psychiatry/treatments-mental-health-law]]) and dextrose-free-water-load (the iatrogenic-water-delivery error — [[surgery/perioperative-care]]'s isotonic-fluid-default rule and [[clinical-skills/patient-safety]]'s fluid-prescription audit trail).** Act: **stop the hypotonic fluid; the 3 % saline small-bolus protocol (the 100-150 mL-with-recheck-and-repeat-up-to-target-+4-6-mmol symptom-relief plan with hourly sodium and the [[#warn-correction]] ceiling on the books), secure the airway-oxygenation (the seizure's own hypoxia-hyponatraemia spiral — [[nervous-system/epilepsy]]), stop the SSRI and treat nausea and pain, map the osmostat (the urine output surveillance for the impending water diuresis overcorrection — the desmopressin-clamp decision), and the next-48-hours steady-state plan (fluid restriction and salt where continuing ADH is expected, daily Na graph at the bedside and nursing-shared correction-budget — [[clinical-skills/records-handover]]).** The post-event learning points: the pre-operative sodium-and-drug-list check, the "maintenance fluids are rarely needed in adults" post-operative-prescribing default ([[surgery/perioperative-care]]), and the SSRI-sodium monitoring policy in the over-65s ([[geriatrics-palliative/polypharmacy]]).
-:::
-:::
-
-::: example The nursing-home sodium of 168 {#ex-hyper}
-A 84-year-old with dementia and prior stroke is brought from a care home after two days of poor intake; weight is 3 kg below last month's record; Na 168, K 4.2, creatinine 158 (baseline 100); she can swallow but refuses drinks.
-::: solution
-**Hypernatraemia = pure-or-near-pure water deficit (the lost-3-kg mostly water: the free-water-deficit ≈ 0.5 × 60 × (168/140 − 1) ≈ 12 L) in a thirst-impaired, access-impaired patient — the [[#def-hypernatraemia]] rule that hypernatraemia means no-water-available-or-no-thirst (the care-home staffing-and-drink-rounds and dysphagia ([[nervous-system/stroke]]) and dementia ([[geriatrics-palliative/delirium-dementia-care]]) determinants).** Plan: **the deficit-replacement schedule across 48-72 h (the [[#warn-correction]] ≤10-12 mmol/L-per-day ceiling — cerebral-oedema-in-reverse risk on over-fast lowering), enteral water by cup-or-teaspoon-or-tube (the swallow-assessment — [[nervous-system/sensory-systems]]-adjacent) preferred (the IV-route-for-inaccessible-only rule ([[gastrointestinal/clinical-nutrition]])), calculated from the daily sodium change and ongoing losses (the stool-and-insensible-and-polyuric-recovery additions); the prerenal AKI's own management ([[renal/acute-kidney-injury]] — the creatinine trend as second thermometer), the drug-review (the diuretics-and-lithium register — [[geriatrics-palliative/polypharmacy]]); the hypernatraemia-cause-check (the DI-adjacent water-losses and osmotic diuresis ([[renal/tubular-function]]) and the tube-feeding-water-flush protocol — [[gastrointestinal/clinical-nutrition]]); the comfort-and-mouth-care framing in the dying patient (the subcutaneous-and-sponge-swabs palliative approach — [[geriatrics-palliative/palliative-care]]); and the service fix (drink-rounds-and-weights-and-sodium charts as the care-home escalation trigger ([[public-health/health-systems-economics]]-adjacent prevention — [[geriatrics-palliative/falls]]-adjacent frailty-medicine lesson)).**
-:::
-:::
+Clinical assessment of volume uses history (losses, intake, weight change), examination (pulse, blood pressure lying and standing, jugular venous pressure, capillary refill, skin turgor, oedema, lung crackles), and tests (urea and creatinine, urine sodium). No single sign is reliable; volume assessment improves when signs are combined and repeated.
 
 ::: example Two swollen patients {#ex-oedema}
-(a) A breathless haemodialysis-late patient who missed sessions has weight +6 kg, raised JVP, pulmonary crackles and ankle swelling; (b) a nephrotic-syndrome relapse patient has 8 kg of oedema and ascites but a flat JVP, postural hypotension and albumin 16 g/L.
+(a) A 61-year-old man on haemodialysis misses two sessions. He has gained 5 kg, is breathless, has a raised jugular venous pressure, crackles at both lung bases and ankle oedema. (b) A 34-year-old woman with a relapse of nephrotic syndrome has gained 8 kg, with ankle and sacral oedema and ascites. Her jugular venous pressure is not visible, she is dizzy on standing and her serum albumin is 15 g/L. Both are sodium-overloaded. How do their circulations differ?
 ::: solution
-**Both are sodium-overloaded, but the effective filling differs — the [[#def-volume]] taxonomy: (a) overfill (no escape from sodium retention — the kidney cannot excrete; volume expansion of both compartments and the pulmonary-oedema risk — the dialysis-uptimed-urgent-sodium-and-water-removal ([[renal/chronic-kidney-disease]]) and the oxygen-sitting-up-nitrate emergency management ([[cardiovascular/heart-failure]] and [[renal/acute-kidney-injury]])); (b) underfill (the low-oncotic plasma state — the Starling flip of [[renal/filtration]]'s peritubular arithmetic and the RAAS-and-ADH activation driving further retention — the treatment balance between albumin-plus-diuretic strategies and the diuretic-exacerbated-underfilling-hypotension-AKI ([[renal/acute-kidney-injury]]-and-[[renal/chronic-kidney-disease]]) and the sodium-restriction-and-the-underlying-disease-treatment ([[renal/chronic-kidney-disease]]'s immunosuppression decision)). The shared bedside arithmetic: **the daily weight (the 0.5-1 kg/day oedema-mobilisation cap from the non-oedematous compartment's refill-rate ([[renal/acute-kidney-injury]]'s fluid-balance chapter)), the JVP as the deciding clinical sign, and the "oedema is a distribution-and-content problem, pulmonary oedema is a timing problem" triage ([[emergency-critical-care/acute-assessment]]).**
+Both have an expanded total ECF, because oedema is extra sodium and water in the interstitium.
+
+(a) The man's kidneys cannot excrete sodium and water, so his excess fills both the interstitium and the circulation. He is **overfilled**: raised venous pressure and pulmonary oedema. Fluid removal by dialysis is the treatment.
+
+(b) The woman has a very low albumin, which lowers plasma oncotic pressure, so fluid shifts out of the circulation into the tissues. In some nephrotic patients like her, the circulation is **underfilled** despite oedema: postural dizziness and a flat jugular venous pressure. Aggressive diuresis risks hypotension and acute kidney injury. Other nephrotic patients are overfilled, because the kidney retains sodium directly; careful bedside assessment decides which.
+
+The lesson: oedema tells you that total body sodium is high; it does not tell you whether the circulation is full.
+:::
+:::
+
+## Hyponatraemia
+
+::: definition Hyponatraemia {#def-hyponatraemia}
+**Hyponatraemia** is a plasma sodium below 135 mmol/L. European guidance (2014) grades it biochemically as **mild** (130–135 mmol/L), **moderate** (125–129 mmol/L) or **profound** (below 125 mmol/L), and separately by symptoms. It is classified as **acute** if known to have developed within 48 hours and **chronic** if it has lasted longer or its duration is unknown.
+:::
+
+Hyponatraemia is the most common electrolyte disorder in hospital. Even mild chronic hyponatraemia is associated with falls, fractures and attention problems in older people. Acute, severe hyponatraemia causes cerebral oedema and can kill.
+
+### Why the brain matters
+
+When plasma osmolality falls, water enters brain cells and they swell inside a rigid skull. Over 24–48 hours, the brain adapts by exporting potassium, chloride and organic osmolytes (such as glutamate, taurine and myo-inositol), restoring cell volume. This adaptation explains two clinical facts.
+
+1. **Acute** hyponatraemia (water intoxication after a marathon, ecstasy use, or an infusion of hypotonic fluid after surgery) is dangerous at relatively mild levels, because the brain has had no time to adapt.
+2. **Chronic** hyponatraemia is often surprisingly well tolerated, but the adapted brain is vulnerable if sodium is then raised too quickly, because it cannot reimport osmolytes fast enough.
+
+### A stepwise approach
+
+**Step 1: Is it hypotonic?** Measure plasma osmolality.
+
+- A **normal osmolality** with low sodium suggests **pseudohyponatraemia**: a laboratory artefact when very high lipids or paraproteins occupy plasma volume and the analyser uses indirect ion-selective electrodes. Blood gas analysers use direct electrodes and give the true value.
+- A **high osmolality** means another osmole is drawing water out of cells. Usually this is glucose. For every 5.6 mmol/L (100 mg/dL) rise in glucose, plasma sodium falls by about 1.6–2.4 mmol/L. Mannitol and some irrigation fluids do the same.
+- A **low osmolality** confirms true, hypotonic hyponatraemia.
+
+**Step 2: How severe are the symptoms?** Severe symptoms (vomiting, seizures, reduced consciousness, cardiorespiratory distress) require emergency treatment before the cause is known. Moderately severe symptoms include nausea without vomiting, confusion and headache.
+
+**Step 3: Is ADH active?** Measure urine osmolality. Below 100 mOsm/kg means ADH is suppressed and the kidney is excreting dilute urine appropriately; the problem is excessive water intake or very low solute intake (primary polydipsia, beer potomania, "tea and toast"). Above 100 mOsm/kg means ADH is acting.
+
+**Step 4: Why is ADH active?** Measure urine sodium and assess volume.
+
+- **Urine sodium below 30 mmol/L** suggests low effective circulating volume: extrarenal losses (vomiting, diarrhoea, burns) or the underfilled states of heart failure and cirrhosis.
+- **Urine sodium above 30 mmol/L** suggests diuretic use (thiazides especially), kidney disease, adrenal insufficiency, vomiting with bicarbonaturia, cerebral salt wasting, or the **syndrome of inappropriate antidiuresis** (SIAD, also called SIADH).
+
+::: definition Syndrome of inappropriate antidiuresis {#def-siad}
+**SIAD** is hypotonic hyponatraemia caused by ADH release (or an ADH-like effect) not driven by osmolality or volume. Its essential features are:
+
+- plasma osmolality below 275 mOsm/kg;
+- urine osmolality above 100 mOsm/kg;
+- clinical euvolaemia;
+- urine sodium above 30 mmol/L with normal salt and water intake;
+- no recent diuretic use, and normal thyroid and adrenal function.
+
+Common causes are **CNS disorders** (meningitis, stroke, head injury, haemorrhage), **lung disease** (pneumonia, tuberculosis), **malignancy** (especially small cell lung cancer), **drugs** (SSRIs, carbamazepine, oxcarbazepine, antipsychotics, cyclophosphamide, opioids, MDMA), and **non-specific stimuli** (pain, nausea, postoperative state).
+:::
+
+SIAD is a diagnosis of exclusion. Hypothyroidism and glucocorticoid deficiency (including adrenal insufficiency from pituitary disease, which does not cause hyperkalaemia) can mimic it exactly and must be excluded with thyroid function and a cortisol test ([[endocrine/adrenal]]).
+
+::: example Post-operative seizure {#ex-hypo}
+A 74-year-old woman taking sertraline has elective hip surgery. After the operation she receives 5% glucose at 125 mL/h. On day 2 she becomes confused and has a generalised seizure. Her plasma sodium was 137 mmol/L before surgery and is now 116 mmol/L. She appears euvolaemic. Urine osmolality is 520 mOsm/kg and urine sodium 78 mmol/L. Explain and outline the principles of management.
+::: solution
+**Mechanism.** Surgery, pain, nausea and opioids stimulate non-osmotic ADH release, and sertraline adds to it. 5% glucose is effectively free water once the glucose is metabolised. With ADH active (urine osmolality 520, far above what is needed to excrete water), the water is retained. The sodium has fallen by 21 mmol/L in less than 48 hours: **acute** hyponatraemia with **severe** symptoms.
+
+**Immediate management** (following local and European guidance):
+- give **3% hypertonic saline** as a bolus (typically 150 mL over 20 minutes in adults), recheck sodium, and repeat up to two further times until symptoms improve, aiming for a rise of about **5 mmol/L** in the first hour;
+- protect the airway and treat the seizure;
+- stop hypotonic fluids and sertraline, treat pain and nausea.
+
+**Then**: limit the total rise to the correction limits ([[#warn-correction]]), monitor sodium every few hours, and watch urine output. When the ADH stimulus fades (as pain and nausea settle), the kidney may suddenly excrete large volumes of dilute urine, causing rapid overcorrection.
+
+**Prevention**: isotonic fluids for maintenance when intravenous fluid is genuinely needed after surgery, a sodium check before surgery in people on drugs that cause hyponatraemia, and monitoring after surgery.
+:::
+:::
+
+### Treatment principles
+
+**Severe symptoms**: hypertonic saline as above, regardless of cause, then treat the cause.
+
+**No or mild symptoms, chronic**: correct the cause and limit water.
+
+- **Hypovolaemic**: replace volume with isotonic saline. As volume is restored, the non-osmotic ADH stimulus disappears and a water diuresis follows, so sodium may rise quickly.
+- **SIAD**: stop causative drugs and treat the cause. **Fluid restriction** (typically to below about 1 L a day, depending on urine output) is first-line. Second-line options include oral **urea** (which increases solute excretion and therefore water excretion) or a loop diuretic with salt. **Vaptans** (vasopressin V2 receptor antagonists such as tolvaptan) are specialist drugs because of overcorrection and liver toxicity risks.
+- **Hypervolaemic** (heart failure, cirrhosis): treat the underlying condition and restrict water; loop diuretics help in heart failure.
+- **Low solute intake**: increase dietary solute (protein, salt) and limit water.
+
+::: warning The correction limits exist because of osmotic demyelination {#warn-correction}
+In **chronic** hyponatraemia, raising sodium too fast causes **osmotic demyelination syndrome** (ODS, formerly central pontine myelinolysis). The brain cells that adapted by losing osmolytes now lose water and shrink, damaging oligodendrocytes and myelin, particularly in the pons. Symptoms typically appear **2–6 days** after over-rapid correction, often after an initial improvement: dysarthria, dysphagia, spastic quadriparesis, behavioural change and, in severe cases, a "locked-in" state. It may not be reversible.
+
+The limits most UK hospitals follow come from European guidance (2014):
+
+- raise sodium by **no more than 10 mmol/L in the first 24 hours**, and **no more than 8 mmol/L in each further 24 hours**, until sodium reaches 130 mmol/L;
+- in people at **high risk** of ODS (sodium 105 mmol/L or below, alcohol use disorder, malnutrition, hypokalaemia, advanced liver disease), aim for **no more than 8 mmol/L in any 24 hours**, as US expert recommendations advise.
+
+The limits are maximums, not targets. If sodium rises faster than planned (often because a water diuresis begins), specialist teams may stop the hypertonic saline or saline and re-lower sodium with electrolyte-free water (5% glucose) with or without desmopressin, under close monitoring.
+
+The same principle runs in reverse for **chronic hypernatraemia**: lowering sodium too quickly lets water rush into adapted brain cells, causing cerebral oedema. Sodium is usually lowered by no more than about **10–12 mmol/L per day** (around 0.5 mmol/L per hour). Hypernatraemia known to have developed within hours can be corrected faster.
+:::
+
+### Predicting the effect of an infusion
+
+A widely taught formula, from Horacio Adrogué and Nicolaos Madias, estimates the change in plasma sodium after one litre of an infusate:
+
+$$
+\Delta[\text{Na}^+] \approx \frac{[\text{Na}^+]_{\text{infusate}} + [\text{K}^+]_{\text{infusate}} - [\text{Na}^+]_{\text{plasma}}}{\text{TBW} + 1}
+$$ {#eq-am}
+
+Total body water (TBW) is estimated as a fraction of body weight: about 0.6 in younger men, 0.5 in younger women and older men, and 0.45 in older women. 3% saline contains 513 mmol/L of sodium, 0.9% saline 154 mmol/L.
+
+::: widget plot
+f: (513-x)/(T+1); (154-x)/(T+1)
+x: 105, 135
+y: 0, 16
+sliders: T=30:15:50:1
+labels: \text{rise per litre, 3\% saline};\ \text{rise per litre, 0.9\% saline}
+caption: Predicted rise in plasma sodium (mmol/L) after one litre of infusate, against starting plasma sodium (mmol/L), from the Adrogué–Madias formula. Change total body water $T$ (L) with the slider: smaller people change faster. The formula assumes a closed system with no urine output; in practice, changes in urine output (especially a sudden water diuresis) dominate, which is why sodium is measured repeatedly rather than predicted. A simplified teaching model, not a prescribing tool.
+:::
+
+The formula's main weakness is that it ignores the urine. In SIAD with a urine osmolality higher than that of 0.9% saline (308 mOsm/kg), giving saline can even *lower* the sodium: the salt is excreted in a smaller volume of concentrated urine and part of the water is retained (an exercise at the end of this lesson works through the numbers).
+
+::: example A sodium that is not low {#ex-pseudo}
+A 70-year-old man with weight loss and back pain has a plasma sodium of 126 mmol/L from the laboratory. Measured plasma osmolality is 289 mOsm/kg. His total protein is very high, at 120 g/L. A blood gas analyser gives a sodium of 139 mmol/L. Interpret.
+::: solution
+Hyponatraemia with a normal measured osmolality suggests **pseudohyponatraemia**. Main laboratory analysers dilute the sample before measuring sodium (indirect ion-selective electrodes) and assume plasma is about 93% water. A large amount of paraprotein reduces the water fraction of plasma, so the diluted sample contains less sodium than expected. The blood gas analyser measures sodium directly in the plasma water and shows the true value, 139 mmol/L. There is no water excess to treat. The high protein with back pain suggests **myeloma**, which needs investigation ([[blood/lymphoma-myeloma]]). Severe hypertriglyceridaemia causes the same artefact.
+:::
+:::
+
+## Hypernatraemia
+
+::: definition Hypernatraemia {#def-hypernatraemia}
+**Hypernatraemia** is a plasma sodium above 145 mmol/L. It always means a deficit of water relative to solute and is always hyperosmolar. Because thirst is a powerful defence, hypernatraemia usually develops only in people who **cannot** drink enough: infants, people who are very old, frail, confused, sedated, intubated or have impaired thirst. Its causes are:
+
+- **water loss without replacement**: insensible losses (fever, burns, ventilation), diarrhoea, osmotic diuresis (hyperglycaemia, urea), diabetes insipidus;
+- **sodium gain**, much less often: hypertonic saline or sodium bicarbonate, salt ingestion, hypertonic feeds.
+:::
+
+Symptoms come from brain cell shrinkage: lethargy, irritability, weakness, then seizures and coma. Shrinkage of the brain can tear bridging veins and cause intracranial haemorrhage. Chronic hypernatraemia is better tolerated because the brain gains osmolytes.
+
+Urine osmolality helps find the cause. A maximally concentrated urine (above about 600–800 mOsm/kg) shows the kidney is responding properly and the water loss is extrarenal or intake is inadequate. A dilute urine despite hypernatraemia means diabetes insipidus ([[renal/tubular-function]]).
+
+The **water deficit** can be estimated:
+
+$$
+\text{water deficit (L)} = \text{TBW} \times \left( \frac{[\text{Na}^+]}{140} - 1 \right)
+$$ {#eq-deficit}
+
+This is the water needed to bring the sodium back to 140 if nothing else changed. Ongoing losses must be added. The deficit is replaced over at least 48 hours in chronic hypernatraemia, ideally with water by mouth or feeding tube, or intravenous 5% glucose if the enteral route is not possible.
+
+::: example A sodium of 168 in a care home resident {#ex-hyper}
+An 84-year-old woman with advanced dementia, living in a care home, has eaten and drunk little for several days during a chest infection. She weighs 50 kg. Her plasma sodium is 168 mmol/L, urea 22 mmol/L and creatinine 150 µmol/L (baseline 85). Urine osmolality is 820 mOsm/kg. Estimate her water deficit and outline management.
+::: solution
+**Interpretation.** Hypernatraemia with highly concentrated urine shows her kidneys are conserving water appropriately. The cause is inadequate intake (dementia, illness and dependence on others to drink) with increased insensible losses from fever. The raised urea and creatinine show prerenal acute kidney injury.
+
+**Water deficit.** TBW for an older woman $\approx 0.45 \times 50 = 22.5$ L.
+
+$$
+\text{deficit} = 22.5 \times \left( \frac{168}{140} - 1 \right) = 22.5 \times 0.2 = 4.5 \text{ L}
+$$
+
+**Plan** (following local guidance): replace the deficit plus ongoing losses over 48–72 hours, aiming for a fall in sodium of no more than about 10–12 mmol/L a day; use oral fluids if she can swallow safely, otherwise intravenous 5% glucose; treat the infection; recheck sodium every 4–6 hours at first; review drugs; and address the reason she became dehydrated, including support with drinking in the care home. In some people near the end of life, the goals of care may favour comfort measures; that decision is shared with the person's family and, where possible, reflects her own wishes ([[geriatrics-palliative/palliative-care]]).
 :::
 :::
 
 ::: quiz
-Hyponatraemia with a normal measured plasma osmolality (292 mOsm/kg) is most likely:
-- [ ] SIADH, because urine concentration can be normal
-- [x] Pseudohyponatraemia or a hypertonic (glucose/mannitol) state — confirm the method and correct for the osmole
-- [ ] Cerebral salt wasting
-- [ ] Primary polydipsia
+A 30-year-old man is found collapsed after a marathon. He drank water at every station. His sodium is 121 mmol/L and he is confused and vomiting. Which is the most appropriate first treatment?
+- [ ] Fluid restriction to 1 L a day
+- [ ] 0.9% saline at 1 L/h
+- [x] A bolus of 3% hypertonic saline with repeated sodium measurement
+- [ ] Wait for symptoms to settle, as correction carries a risk of osmotic demyelination
 ::: solution
-**Isotonic-or-hypertonic hyponatraemia is not water-excess hyponatraemia ([[#def-hyponatraemia]] step 1 and [[#ex-pseudo]]): the artefact (lipids and paraproteins with indirect electrodes) or effective-osmole water-shifts (glucose and mannitol) must be separated from true hypotonicity before any restriction or saline is prescribed — the osmolality is the referee ([[clinical-skills/laboratory-tests]]).**
+This is acute, symptomatic hyponatraemia from drinking more water than he could excrete during exercise, when non-osmotic ADH is high (exercise-associated hyponatraemia). Vomiting and confusion are severe symptoms caused by cerebral oedema. The priority is to raise sodium by a few mmol/L quickly with hypertonic saline. Because it developed over hours, the risk of osmotic demyelination is low, while the risk of untreated cerebral oedema is high. Fluid restriction is too slow, and 0.9% saline is not hypertonic enough to reliably raise sodium against high ADH.
 :::
 :::
 
 ::: history
-**Bartter and Schwartz's** 1957 case-pair (the carcinomatous "inappropriate secretion of antidiuretic hormone") named SIADH; the **Edelman-and-L Leaf "salt-and-water, two systems" reformulation of the 1950s** and **Guyton's** pressure-natriuresis-and-long-loop modelling era ([[cardiovascular/hypertension]]'s own foundation); the **quantification of the osmoreceptor-ADH relationship and the clinical osmostat concept (the Robertson school, 1970s-80s)**; the **aquaporin-molecular era (the Agre and Sasaki and Nielsen lineage — [[renal/tubular-function]])**; the **osmotic-demyelination syndrome's clinical-pathological description (the Adams-and-Victor 1959 clinicopathological-conference cases)** and the **overcorrection case-series that set the correction limits (the Laureno-and-Karp and companion 1980s-90s clinico-pathological series)**; the **vaptan era (the SALT-1-and-2 and the guideline-war-of-2014 (the US-versus-European-ceiling-arguments))**; the **desmopressin-clamp strategy for overcorrection prevention (the 2010s case series)**; and the **European hospital-hyponatraemia audit programmes (the 3000-patient reference studies)** and **the perioperative-fluid-safety campaigns (the national hypotonic-fluid restrictions and incident-report analyses)** complete this chapter's modern safety culture.
+In his 1947 Croonian Lecture, the British physiologist Ernest Basil Verney described experiments in dogs showing that small injections of hypertonic solutions into the carotid artery inhibited water diuresis, implying "osmoreceptors" in the brain that controlled the release of the antidiuretic hormone. Ten years later, in 1957, William Schwartz, Frederic Bartter and colleagues described two patients with lung cancer who had hyponatraemia with continued urinary sodium loss and concentrated urine; they proposed inappropriate secretion of antidiuretic hormone, the syndrome now known as SIAD. In 1959 Raymond Adams, Maurice Victor and Elliott Mancall described central pontine myelinolysis in people with alcohol use disorder and malnutrition. Its link to rapid correction of hyponatraemia was established in the 1980s, leading to the correction limits used today.
 :::
 
 ## Where this leads
 
-The tubular effectors in [[renal/tubular-function]] and [[renal/filtration]]; potassium's entangled handling in [[renal/potassium-calcium-phosphate]]; the acid-base overlay in [[renal/acid-base-disorders]]; the perioperative and critical-care fluid decisions in [[surgery/perioperative-care]] and [[emergency-critical-care/shock-fluids]]; heart failure and liver and nephrotic oedema in [[cardiovascular/heart-failure]], [[gastrointestinal/liver-disease]] and [[renal/chronic-kidney-disease]]; the ADH axis diseases in [[endocrine/hypothalamus-pituitary]]; the diuretic pharmacology in [[pharmacology/adverse-reactions]].
+Potassium, which interacts with sodium both in the plasma sodium equation and at the collecting duct, is in [[renal/potassium-calcium-phosphate]]. Volume and sodium in acute kidney injury and the indications for dialysis are in [[renal/acute-kidney-injury]]. Heart failure and cirrhosis, the two great causes of hypervolaemic hyponatraemia, are covered in [[cardiovascular/heart-failure]] and [[gastrointestinal/liver-disease]]. The pituitary causes of diabetes insipidus are in [[endocrine/hypothalamus-pituitary]].
 
 ::: summary
-- Two systems share the nephron: volume regulation (baroreflexes, RAAS, natriuretic peptides, pressure natriuresis) defends effective arterial filling; osmoregulation (thirst plus ADH) defends tonicity within ~1 %.
-- Hyponatraemia is water excess: confirm tonicity, date it, classify by volume and urine tests, then treat on the symptom × chronicity grid — small hypertonic-saline boluses for emergencies, restriction-and-salt-and-stop-drugs for the chronic majority.
-- Correction ceilings (≤8-10 mmol/L per 24 h in chronic hyponatraemia; ≤10-12 for hypernatraemia) prevent osmotic demyelination and cerebral oedema; anticipate surprise over-correction and clamp when needed.
-- Hypernatraemia marks failed thirst or failed water access; the free-water-deficit arithmetic across 48-72 h with enteral water first is the treatment.
-- Oedema is underfill-versus-overfill arithmetic — JVP and albumin and the RAAS read — and diuresis speed is limited by the plasma-refill rate, not by the amount of swell.
+- Sodium **content** determines extracellular volume; plasma sodium **concentration** reflects water balance.
+- Osmoregulation works through osmoreceptors, ADH and thirst; volume regulation through baroreceptors, the renin–angiotensin–aldosterone system, sympathetic nerves and natriuretic peptides. Large falls in effective volume trigger ADH even at low osmolality.
+- Hyponatraemia: confirm low osmolality, assess symptoms, then use urine osmolality (is ADH active?) and urine sodium with volume status (why?).
+- SIAD requires low plasma osmolality, urine osmolality above 100 mOsm/kg, euvolaemia, urine sodium above 30 mmol/L, and exclusion of diuretics, hypothyroidism and glucocorticoid deficiency.
+- Severe symptoms: 3% saline bolus aiming for a rise of about 5 mmol/L. Chronic: treat the cause, restrict water, avoid fast correction.
+- Correction limits: no more than 10 mmol/L in the first 24 hours and 8 mmol/L in each subsequent 24 hours (no more than 8 mmol/L in any 24 hours in high-risk people), to avoid osmotic demyelination.
+- Hypernatraemia is a water deficit, usually in people who cannot drink. Water deficit = TBW × (Na/140 − 1); lower chronic hypernatraemia by no more than about 10–12 mmol/L a day.
 :::
 
 ## Exercises
 
-::: exercise Correct the sodium {level=1}
-A glucose of 42 mmol/L is accompanied by Na of 126. Estimate the corrected sodium and say whether true hyponatraemia coexists.
+::: exercise Calculate plasma osmolality {level=1 check="2*132+18+12"}
+A man with diabetes has a plasma sodium of 132 mmol/L, glucose 18 mmol/L and urea 12 mmol/L. Calculate his plasma osmolality in mOsm/kg using the standard formula.
 ::: solution
-**Correction ≈ +1.6 to 2.4 mmol per 5.6 mmol/L of glucose above normal: the glucose is ~36 mmol/L above 6 → +10 to +15 mmol/L → corrected ~136-141: no significant water disorder — the sodium is diluted, not low ([[#def-hyponatraemia]]'s hypertonic class and [[endocrine/diabetes]]-[[endocrine/diabetes-complications]]'s DKA-fluid-table ([[renal/acute-kidney-injury]]-adjacent)). The same correction applies (smaller factor) to mannitol.**
+$P_{osm} = 2 \times 132 + 18 + 12 = 294$ mOsm/kg. Despite the low sodium, his osmolality is normal because glucose contributes. Urea crosses cell membranes freely, so it adds to measured osmolality but not to effective osmolality (tonicity); glucose, in the absence of insulin, is an effective osmole and draws water out of cells, which is why his sodium is low.
 :::
 :::
 
-::: exercise Classify the picture {level=1}
-Na 128, plasma osmolality 268, urine osmolality 620, urine Na 55, on bendroflumethiazide started 3 weeks ago, clinically euvolaemic. Give the two candidate mechanisms and the discriminating history.
+::: exercise Correct the sodium for glucose {level=1 check="128+2.4*(33.5-5.5)/5.6"}
+A teenager with diabetic ketoacidosis has a plasma sodium of 128 mmol/L and a glucose of 33.5 mmol/L. Using a correction of 2.4 mmol/L of sodium for every 5.6 mmol/L of glucose above 5.5 mmol/L, calculate the corrected sodium.
 ::: solution
-**Thiazide-induced hyponatremia ([[cardiovascular/hypertension]]-[[pharmacology/adverse-reactions]]'s classic: the impaired-diluting-segment ([[renal/tubular-function]]'s NCC) plus mild-volume-mediated ADH plus high-water intake) versus SIADH (drug-and-idiopathic euvolemic picture); the urine tests overlap, so the discriminators are the timeline (weeks after starting), the salt-wasting signs (subclinical volume depletion, rising urate-and-urea-and-haematocrit) versus SIADH's low-urate-low-urea dilution pattern, and the response to drug-stop-and-mild-volume-repletion ([[#def-hyponatraemia]]). Older age-and-low body mass-and-high water-intake complete the classic profile ([[geriatrics-palliative/polypharmacy]]).**
+Excess glucose $= 33.5 - 5.5 = 28$ mmol/L, which is $28 / 5.6 = 5$ steps of 5.6 mmol/L. Correction $= 5 \times 2.4 = 12$ mmol/L. Corrected sodium $= 128 + 12 = 140$ mmol/L. As insulin lowers the glucose, water moves back into cells and the measured sodium should rise towards this value. A measured sodium that falls as glucose falls is a warning sign of excessive free water and cerebral oedema risk ([[endocrine/endocrine-emergencies]]).
 :::
 :::
 
-::: exercise Write the SIADH workup {level=2}
-Confirming SIADH means excluding mimics. List them and the test for each, in an 80-year-old.
+::: exercise Classify the hyponatraemia {level=1}
+Give the most likely category and cause: (a) Na 126, urine osmolality 60 mOsm/kg, a man who drinks 8 pints of beer a day and eats little. (b) Na 124, euvolaemic, urine osmolality 480, urine sodium 62, a woman who has started carbamazepine. (c) Na 128, urine sodium 8 mmol/L, a man with cirrhosis and ascites. (d) Na 129, urine sodium 55 mmol/L, a woman who started bendroflumethiazide 3 weeks ago.
 ::: solution
-**Thyroid (the TSH — [[endocrine/thyroid]]'s myxoedema-hyponatraemia is a rare-but-cheap check), adrenal (the 9 am cortisol-and-ACTH and the corticotrophin (Synacthen) test — [[endocrine/adrenal]]'s secondary-adrenal-insufficiency nuance and the low-ACTH-normal-cortisol trap), renal (the creatinine-and-eGFR and urine sediment — [[renal/chronic-kidney-disease]]), diuretics (stop and repeat — the [[#ex-hypo]] exercise above; the urine-diuretic-screen in the uncertain ([[renal/tubular-function]]'s diuretic-mimic warning)), low-solute intake (the diet history — the tea-and-toast and beer phenotypes and [[gastrointestinal/clinical-nutrition]]'s albumin), drugs (the SSRI-and-antiepileptic-and-analgesic-and-anticancer review — [[pharmacology/adverse-reactions]]), and the associated-disease hunt (the CXR-and-CT chest and the head imaging and the HIV-and-lung-and-CNS screen — [[respiratory/respiratory-infections]] and [[nervous-system/stroke]] and [[infectious-diseases/hiv]]); the urate-and-Fe-and-tissue-osmolality adjuncts ([[clinical-skills/laboratory-tests]]) support, never define.**
+(a) **Low solute intake (beer potomania)**: urine maximally dilute, ADH suppressed. Beer is mainly water with little solute, and he eats little protein or salt, so his solute excretion, and therefore his maximum water excretion, is low.
+
+(b) **SIAD**, caused by carbamazepine, provided thyroid and adrenal function are normal.
+
+(c) **Hypervolaemic hyponatraemia** of cirrhosis: underfilled arterial circulation, avid sodium retention and non-osmotic ADH.
+
+(d) **Thiazide-induced hyponatraemia**: thiazides block dilution in the distal tubule while leaving the medullary gradient intact, so the kidney cannot excrete free water. They are the commonest drug cause of hyponatraemia, especially in older women.
 :::
 :::
 
-::: exercise Plan the correction {level=2}
-Chronic Na 118 (unclear duration, mild symptoms), weight 60 kg, and after 12 hours of fluid restriction the patient diureses 1.8 L of dilute urine. What is happening and what are the two management options?
+::: exercise Saline in SIAD {level=2 check="1-308/616"}
+A man with SIAD has a fixed urine osmolality of 616 mOsm/kg. He is given 1 L of 0.9% saline (308 mOsm). Assuming all the infused solute is excreted in urine at 616 mOsm/kg, how much of the infused water (in litres) is retained?
+::: hint
+Find the urine volume needed to excrete 308 mOsm at 616 mOsm/kg.
+:::
 ::: solution
-**Spontaneous ADH-withdrawal water diuresis (SIADH-escaping: the nausea-and-drug-and-steroid-replacement causes removed) — the [[#warn-correction]] over-correction danger-zone: the free-water clearance of ~1 L/12 h can shoot the sodium up well beyond 8-10 mmol/L. Options: (a) replace the urinary water losses (half-to-two-thirds of each hour's output as hypotonic fluid — the [[renal/tubular-function]] "DDAVP-off" arithmetic) with 2-4-hourly sodiums; (b) re-start desmopressin (the clamp strategy) and run correction actively on a fixed hypertonic plan inside the [[#warn-correction]] budget ([[endocrine/hypothalamus-pituitary]] ADH physiology and [[renal/tubular-function]]'s concentrating machinery).**
+Urine volume needed $= 308 / 616 = 0.5$ L. He received 1 L of water, so $1 - 0.5 = $ **0.5 L** of solute-free water is retained, and his sodium falls further. This is why isotonic saline is not a treatment for SIAD with concentrated urine, and why a saline "challenge" in a person thought to be hypovolaemic needs a repeat sodium check.
 :::
 :::
 
-::: exercise Compute the deficit {level=2}
-A 70 kg man has Na 154. Compute the free-water deficit and design the first 24 hours (route, fluid, monitoring), assuming intact swallow.
+::: exercise Plan within the limits {level=2}
+A 58-year-old woman with alcohol use disorder and poor nutrition has a sodium of 108 mmol/L, potassium 2.8 mmol/L. She is drowsy but has no seizures. Six hours after admission, after 1 L of 0.9% saline and potassium replacement, her sodium is 114 mmol/L and she is passing large volumes of dilute urine. Explain what is happening and why it is dangerous.
 ::: solution
-**Deficit ≈ TBW × (Na_now/Na_target − 1) = 0.6 × 70 × (154/140 − 1) = 42 × 0.10 = 4.2 L, plus ongoing losses. First 24 h: give roughly half the deficit plus ongoing, by enteral water (the sip-or-measured-cup-and-drink-chart [[gastrointestinal/clinical-nutrition]]) with 4-6-hourly sodium and weights and the ≤10-12 mmol/L/day ceiling ([[#warn-correction]]) and a search for the cause (access-and-thirst [[#def-osmo]], loop-diuretic-and-osmotic-and-DEDM losses ([[renal/tubular-function]]) and non-renal insensibles ([[renal/urinary-tract]]-adjacent fever-and-ventilation losses) and the diabetes-insipidus workup if urine dilute ([[endocrine/hypothalamus-pituitary]]) — and the next-day recompute discipline.**
+She is at **high risk** of osmotic demyelination: profound, almost certainly chronic hyponatraemia, alcohol use, malnutrition and hypokalaemia. The recommended maximum is a rise of 8 mmol/L in 24 hours. She has already risen 6 mmol/L in six hours.
+
+The saline restored her volume, removing the non-osmotic ADH stimulus. Low solute intake may also have contributed. Now ADH is suppressed and she is excreting free water, which raises her sodium quickly. Potassium replacement also raises sodium (potassium enters cells and sodium leaves them; the plasma sodium equation includes potassium). Without action she will exceed the limit within hours. Specialist teams monitor sodium every 1–2 hours in this situation, measure urine output, and may stop further saline, give electrolyte-free water and use desmopressin to stop the water diuresis, keeping the rise within the safe range.
 :::
 :::
 
-::: exercise Underfill or overfill {level=2}
-Assign the mechanism and the first-line sodium-handling strategy: (a) decompensated cirrhosis with ascites; (b) ANCA-vasculitic glomerulonephritis; (c) dialysis patient with missed sessions; (d) minimal-change relapse.
+::: exercise Water deficit {level=2 check="0.5*70*(160/140-1)"}
+A 72-year-old man weighing 70 kg has a plasma sodium of 160 mmol/L after several days of diarrhoea. Using a TBW fraction of 0.5, calculate his water deficit in litres.
 ::: solution
-**(a) Underfill (the splanchnic-arterial-dilation physiology ([[gastrointestinal/liver-disease]])) — sodium restriction and spironolactone±loop with the albumin and the NSAID-and-ACEi-avoidance ([[renal/acute-kidney-injury]]'s hepatorenal row) ([[gastrointestinal/liver-disease]]). (b) Overfill (primary renal sodium retention — the glomerulonephritis of [[renal/chronic-kidney-disease]]) — sodium restriction and loops, treat the disease. (c) Overfill (no renal route at all) — the dialysis-uptimed ultrafiltration ([[renal/chronic-kidney-disease]]). (d) Underfill (low-oncotic plasma state ([[renal/filtration]])) — the [[#ex-oedema]] albumin-and-diuretic-balance ([[renal/chronic-kidney-disease]]). The postural-drop-and-JVP read separates (a)-(d) at the bedside before any assay ([[clinical-skills/physical-examination]]).**
+TBW $= 0.5 \times 70 = 35$ L. Deficit $= 35 \times (160/140 - 1) = 35 \times 0.142857 = 5$ L. Ongoing diarrhoeal and insensible losses must be added, and the replacement spread so that sodium falls by no more than about 10–12 mmol/L per day; here, from 160 to 140 would take about two days.
 :::
 :::
 
-::: exercise The marathon finisher {level=3}
-A marathon runner collapses confused after drinking "the usual eight bottles" plus sports drinks; weight is up 2.5 kg. Explain the pathophysiology, the emergency treatment and the prevention message.
+::: exercise Infusion arithmetic {level=3 check="round((513-116)/(0.45*60+1)*10)/10"}
+A 74-year-old woman weighing 60 kg has a plasma sodium of 116 mmol/L. Using the Adrogué–Madias formula with a TBW fraction of 0.45, estimate the rise in plasma sodium after one litre of 3% saline, to one decimal place. Then estimate the rise after a 150 mL bolus, and explain two reasons why the measured rise may differ.
 ::: solution
-**Exercise-associated hyponatraemia (the non-osmotic ADH of pain-nausea-stress-IL-6 plus massive hypotonic-fluid-intake exceeding the kidney's dilution-and-excretion-rate (the [[renal/tubular-function]]'s minimal-osmolality-and-solute-load ceiling — why the water cannot leave) — the over-hydration culture, exacerbated by the sports-drinks myth ([[public-health/prevention-promotion]] and [[clinical-skills/patient-safety]]): encephalopathy risk is highest in young sweaty-small-and-long-event-and-overdrinker phenotypes ([[emergency-critical-care/acute-assessment]]).** Emergency: **the 3 % saline bolus protocol for the symptomatic (the [[#ex-hypo]] plan — and this is acute hyponatraemia: the brain-unadapted so the over-correction fear is smaller but the cerebral-oedema urgency is greater ([[nervous-system/stroke]]-adjacent pressure physiology)) stop all hypotonic fluids and avoid the "just give saline" over-treatment (the same [[#warn-correction]] ceiling still applies after ~48 h of symptoms)). Prevention: **drink-to-thirst-and-weigh-before-after-and-the-street-plan education (the "sweat-rate-vs-intake" individual plan and the sodium-containing-fuels-for-long-events evidence), and the event-medicine sodium-check on any confused finisher ([[renal/tubular-function]]'s [[#def-osmo]] thirst-sufficiency principle: the healthy thirst-plus-ADH system does not hyponatraemise unless overridden).**
+TBW $= 0.45 \times 60 = 27$ L. Rise per litre $= (513 - 116)/(27 + 1) = 397/28 = 14.2$ mmol/L. A 150 mL bolus gives about $0.15 \times 14.18 = 2.1$ mmol/L.
+
+The measured rise may differ because (1) the formula assumes no urine output; if a water diuresis starts (as ADH falls when nausea or hypovolaemia resolve), sodium rises much faster than predicted, and if she is excreting concentrated urine with ongoing ADH, the rise may be smaller; (2) TBW is only an estimate, and other infusions, potassium replacement and oral intake also change sodium. This is why the formula is used only to plan, and sodium is measured repeatedly.
 :::
 :::
 
-::: exercise Design the sodium-safety bundle {level=3}
-Design the hospital-wide dysnatraemia-safety programme: prescribing defaults, monitoring rules, handover standards and audit metrics.
+::: exercise A low sodium on the oncology ward {level=3}
+A 66-year-old man who smokes has a sodium of 121 mmol/L found on routine testing. He has mild confusion. He looks euvolaemic. Plasma osmolality is 252 mOsm/kg, urine osmolality 610 mOsm/kg, urine sodium 70 mmol/L. TSH is normal and a morning cortisol is 420 nmol/L. A chest radiograph shows a hilar mass. Give the diagnosis, a likely cause, and the principles of management.
 ::: solution
-**Defaults: the hypotonic-fluid-prescription-restriction (the adult-maintenance-isotonic default and the electronic-health-record hard-stop with the at-risk list — the SSRI-and-thiazide-and-opioid-and-postoperative-and-ecstasy-and-hypothyroid-adrenal registers ([[pharmacology/adverse-reactions]], [[endocrine/endocrine-emergencies]] and [[emergency-critical-care/poisoning]])) — the [[#ex-hypo]] iatrogenic-pattern is the audit's target-of-reduction. Monitoring: the sodium-trajectory-at-the-bedhead rule for every dysnatraemia (the correction-budget and the re-check-interval prescriptions (2-4 h in active correction) written as joint medical-nursing orders ([[clinical-skills/records-handover]], [[clinical-skills/patient-safety]])); the overnight-laboratory-flag protocol (the critical-sodium alert and the endocrine-and-nephrology on-call pathway [[endocrine/endocrine-emergencies]] and [[renal/chronic-kidney-disease]]); the "who-reversed-my-fluid" change-log. Handover and consent: the dysnatraemia cause-and-ceiling statement at every team-change ([[clinical-skills/communication]]), the capacity-and-coma emergency-treatment documentation ([[medical-ethics-law/consent-capacity]]), the care-home-and-dementia water-access plans ([[geriatrics-palliative/delirium-dementia-care]]). Audit metrics: the incidence of sodium-correction violations and osmotic-demyelination events, the hypotonic-fluid share of maintenance prescriptions, the time-to-treatment of symptomatic severe cases, and the readmission-and-fall associations (the chronic-mild-hyponatraemia-and-gait-and-bone literature ([[geriatrics-palliative/falls]] and [[endocrine/bone-calcium]])) — closing on the chapter's physiology: measure tonicity and volume separately, respect both systems' set points, and let no sodium move faster than the brain can re-adapt ([[renal/tubular-function]], [[renal/filtration]]).**
+**Diagnosis**: chronic hyponatraemia (duration unknown), profound, with moderately severe symptoms, meeting the criteria for **SIAD**: low plasma osmolality, inappropriately concentrated urine, urine sodium above 30, euvolaemia, normal thyroid and adrenal function, no diuretics mentioned.
+
+**Likely cause**: ectopic ADH secretion by **small cell lung cancer**, suggested by the smoking history and hilar mass ([[respiratory/lung-cancer-pleura]]).
+
+**Management principles**: because symptoms are moderate rather than severe and the hyponatraemia is chronic, avoid rapid correction; fluid restriction is first-line, but with a urine osmolality as high as 610 restriction alone is often insufficient, and urea or a specialist-led vaptan may be considered; treat the cancer, which may correct the SIAD; monitor sodium carefully, staying within the correction limits. Hypertonic saline would be used only if symptoms became severe.
 :::
 :::
