@@ -200,7 +200,7 @@ $$
 \mu = 0.1 \Rightarrow V = 4.39\ \mathrm{mm / s}, \quad \mathrm{Re} = 0.13 \quad \checkmark\ \text{creeping}
 $$
 $$
-\mu = 100 \Rightarrow V = 4.39\ \mathrm{\mu m / s} \quad \Rightarrow \quad \text{a } 300\ \mathrm{mm} \text{ fall takes } 19\ \mathrm{h} \quad ✗
+\mu = 100 \Rightarrow V = 4.39\ \mathrm{\mu m / s} \quad \Rightarrow \quad \text{a } 300\ \mathrm{mm} \text{ fall takes } 19\ \mathrm{h} \quad \times
 $$
 **The number that makes the range impossible with one sphere.** Since $V \propto 1 / \mu$ at fixed geometry, **the viscosity range one sphere can cover is exactly the velocity range the instrument can time** — and the timing window is a hard instrument property. With optical gates and a $200\ \mathrm{mm}$ gauge length, take a usable fall time between $5\ \mathrm{s}$ and $5\ \mathrm{min}$:
 $$
