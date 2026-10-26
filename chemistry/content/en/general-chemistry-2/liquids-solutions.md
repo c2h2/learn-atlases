@@ -177,7 +177,7 @@ A solution is **ideal** if the solute–solvent interactions equal the solute–
 $$
 p_\mathrm{A} = x_\mathrm{A}\,p_\mathrm{A}^{*}, \qquad p_\mathrm{B} = x_\mathrm{B}\,p_\mathrm{B}^{*},
 $$
-and the total vapour pressure is $p = x_\mathrm{A}p_\mathrm{A}^{*} + x_\mathrm{B}p_\mathrm{B}^{*}$. Real solutions deviate: ethanol–water shows a positive deviation (the hydrogen-bond network is broken, raising $p$), hydrochloric acid–water a large negative one (ionization and strong hydration, lowering $p$).
+and the total vapour pressure is $p = x_\mathrm{A}p_\mathrm{A}^{*} + x_\mathrm{B}p_\mathrm{B}^{*}$. Real solutions deviate: ethanol–water shows a positive deviation (the hydrogen-bond network is broken, raising $p$), hydrochloric acid–water a large negative one (ionisation and strong hydration, lowering $p$).
 :::
 
 ::: proposition Vapour-pressure lowering {#prop-raoult-lowering}

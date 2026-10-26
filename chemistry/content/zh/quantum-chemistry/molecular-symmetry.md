@@ -146,7 +146,7 @@ $E$：$4\times3=12$。$C_{3}$：只有 N 不动，贡献 $1+2\cos120^\circ=0$，
 ::: example 六氟化硫的 σ 骨架 {#ex-sf6-salc}
 约化 $\mathrm{SF_{6}}$（$\mathrm{O_{h}}$）六个氟 $\sigma$ 给体轨道的表示，并指出与之匹配的硫轨道。
 ::: solution
-每个操作对特征标的贡献等于它使多少个 $\mathrm{F}$ 原子留在原地：$\chi(E)=6$，$\chi(8C_{3})=0$，$\chi(6C_{2})=2$，$\chi(6C_{4})=2$，$\chi(3C_{2}')=2$，$\chi(i)=0$，$\chi(6S_{4})=0$，$\chi(8S_{6})=0$，$\chi(6\sigma_{d})=4$，$\chi(3\sigma_{h})=2$。对 $\mathrm{O_{h}}$ 表（阶 $48$）约化得 $\mathrm{A_{1g}}+\mathrm{E_{g}}+\mathrm{T_{1u}}$。硫的价轨道按 $3\mathrm{s}\rightarrow\mathrm{A_{1g}}$、$3\mathrm{p}\rightarrow\mathrm{T_{1u}}$、$3\mathrm{d}\rightarrow\mathrm{E_{g}}+\mathrm{T_{2g}}$ 变换：每个 SALC 都找到伙伴，六个 $\sigma$ 键正是熟悉的 $s+p_{x}+p_{y}+p_{z}+d_{z^{2}}+d_{x^{2}-y^{2}}$ 组合。硫的 $\mathrm{T_{2g}}$ 轨道没有 $\sigma$ 伙伴——它们被留给 $\pi$ 成键，而这正是 $\mathrm{SF_{6}}$ 惰性的原因：氟没有 $\pi$ 对称轨道可用来填充它们。
+每个操作对特征标的贡献等于它使多少个 $\mathrm{F}$ 原子留在原地：按 Cotton 类顺序 $(E, 8C_{3}, 6C_{2}, 6C_{4}, 3C_{2}', i, 6S_{4}, 8S_{6}, 3\sigma_{h}, 6\sigma_{d})$，特征标为 $(6, 0, 0, 2, 2, 0, 0, 0, 4, 2)$：穿过面的 $C_{3}$ 与穿过对边中点的 $C_{2}$ 挪动每一个氟，穿过相对两个氟的 $C_{4}$ 及其平方固定这两个氟，水平镜面含四个氟，对角镜面含两个。对 $\mathrm{O_{h}}$ 表（阶 $48$）约化得 $\mathrm{A_{1g}}+\mathrm{E_{g}}+\mathrm{T_{1u}}$。硫的价轨道按 $3\mathrm{s}\rightarrow\mathrm{A_{1g}}$、$3\mathrm{p}\rightarrow\mathrm{T_{1u}}$、$3\mathrm{d}\rightarrow\mathrm{E_{g}}+\mathrm{T_{2g}}$ 变换：每个 $\sigma$ SALC 都找到伙伴，六个 $\sigma$ 键正是熟悉的 $s+p_{x}+p_{y}+p_{z}+d_{z^{2}}+d_{x^{2}-y^{2}}$ 组合。硫的 $\mathrm{T_{2g}}$ 的 $d$ 轨道没有 $\sigma$ 伙伴。垂直于 $\mathrm{S{-}F}$ 键的氟 $p$ 轨道具有 $\pi$ 对称性，可以向 $\mathrm{T_{2g}}$ 给电子；$\mathrm{SF_{6}}$ 的惰性是动力学的——六个氟把硫包住，而且 $\mathrm{S{-}F}$ 键很强——并不是对称性禁止了 $\pi$ 作用。
 :::
 :::
 
@@ -263,9 +263,9 @@ $\mathrm{C_{2v}}$ 的某个表示对 $(E,C_{2},\sigma_{v}(xz),\sigma_{v}'(yz))$ 
 :::
 
 ::: exercise 六氟化硫的 σ 骨架 {level=3}
-已知 $\mathrm{SF_{6}}$ 六配体表示对 $(E,8C_{3},6C_{2},6C_{4},3C_{2}',i,6S_{4},8S_{6},6\sigma_{d},3\sigma_{h})$ 的特征标为 $(6,0,2,2,2,0,0,0,4,2)$，$\mathrm{O_{h}}$ 的不可约表示 $\mathrm{A_{1g}}(1,1,1,1,1,1,1,1,1,1)$、$\mathrm{E_{g}}(2,-1,0,0,2,2,0,-1,1,1)$、$\mathrm{T_{1u}}(3,0,-1,1,-1,-3,0,1,-1,-1)$（各类大小 $1,8,6,6,3,1,6,8,6,3$），将其约化并指出匹配的硫轨道。
+已知 $\mathrm{SF_{6}}$ 六配体表示对 $(E,8C_{3},6C_{2},6C_{4},3C_{2}',i,6S_{4},8S_{6},3\sigma_{h},6\sigma_{d})$ 的特征标为 $(6,0,0,2,2,0,0,0,4,2)$，$\mathrm{O_{h}}$ 的不可约表示 $\mathrm{A_{1g}}(1,1,1,1,1,1,1,1,1,1)$、$\mathrm{E_{g}}(2,-1,0,0,2,2,0,-1,2,0)$、$\mathrm{T_{1u}}(3,0,-1,1,-1,-3,-1,0,1,1)$（各类大小 $1,8,6,6,3,1,6,8,3,6$），将其约化并指出匹配的硫轨道。
 ::: solution
-$n(\mathrm{A_{1g}})=\tfrac{1}{48}(6+0+12+12+6+0+0+0+24+6)=1$；$n(\mathrm{E_{g}})=\tfrac{1}{48}(12+0+0+0+6+0+0+0+24+6)=1$；$n(\mathrm{T_{1u}})=\tfrac{1}{48}(18+0-12+12-6+0+0+0-24-6)=1$；其余不可约表示皆为零。故 $\Gamma_{\sigma}=\mathrm{A_{1g}}+\mathrm{E_{g}}+\mathrm{T_{1u}}$，与硫的 $3\mathrm{s}$（$\mathrm{A_{1g}}$）、$3\mathrm{p}$（$\mathrm{T_{1u}}$）与 $3\mathrm{d}$ 的 $\mathrm{E_{g}}$ 对匹配——六个等价的 $\sigma$ 键。$\mathrm{T_{2g}}$ 的 $d$ 轨道不与任何 $\sigma$ SALC 配对。
+$n(\mathrm{A_{1g}})=\tfrac{1}{48}(6+0+0+12+6+0+0+0+12+12)=1$；$n(\mathrm{E_{g}})=\tfrac{1}{48}(12+0+0+0+12+0+0+0+24+0)=1$；$n(\mathrm{T_{1u}})=\tfrac{1}{48}(18+0+0+12-6+0+0+0+12+12)=1$；其余不可约表示皆为零。三个和都是 $48$，商恰好为 $1$，而不是把 $66/48$ 四舍五入。故 $\Gamma_{\sigma}=\mathrm{A_{1g}}+\mathrm{E_{g}}+\mathrm{T_{1u}}$，与硫的 $3\mathrm{s}$（$\mathrm{A_{1g}}$）、$3\mathrm{p}$（$\mathrm{T_{1u}}$）与 $3\mathrm{d}$ 的 $\mathrm{E_{g}}$ 对匹配——六个等价的 $\sigma$ 键。$\mathrm{T_{2g}}$ 的 $d$ 轨道不与任何 $\sigma$ SALC 配对；氟向 $\mathrm{T_{2g}}$ 的 $\pi$ 给电子属于另一个表示。
 :::
 :::
 
