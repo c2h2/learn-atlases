@@ -1,522 +1,448 @@
-The energy method is the most powerful tool in solid mechanics: the energy method is the mathematical framework that relates the work done by the external forces to the strain energy stored in the body, and the relationship is the reason the engineer can calculate the displacement, the stress, and the stability of any structure without solving the differential equations of elasticity. **The engineer who solves the boundary-value problem by the differential equation is not using the most powerful tool; they are using the most laborious tool, and the laboriousness is the reason the engineer makes mistakes.** The energy method is the reason the engineer can solve the problem in one line, and the one line is the reason the engineer is confident in the answer.
+Push on the end of a diving board and it bends; let go and it springs back, returning the work you did. While the board is held bent, that work is stored in the material as **strain energy**, distributed through every fibre in proportion to the square of its stress. This simple observation — that a deformed elastic body is a store of energy, and that the work of the loads must equal what is stored — turns out to be one of the most productive ideas in mechanics. It gives the deflection of a curved hook or a pin-jointed frame in a few lines, where the differential equations of [[mechanics-of-materials/beam-deflection]] would need pages; it supplies the missing equation for statically indeterminate structures; and, recast as a statement that the true displacement field *minimises* the total potential energy, it turns the boundary-value problem of [[solid-mechanics/linear-elasticity]] into an optimisation problem that a computer can solve approximately. That last step is the finite element method.
 
-The quantitative tools of energy methods are the **strain energy** (the energy stored in the deformed body), **Castigliano's theorems** (the displacement is the derivative of the strain energy with respect to the force), the **principle of virtual work** (the external virtual work equals the internal virtual work), and the **principle of minimum potential energy** (the equilibrium configuration minimises the potential energy). The tools are the language in which the energy method analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+This chapter develops energy methods in the order an engineer uses them. It defines strain energy and the work of loads and proves Clapeyron's and the Betti–Maxwell theorems; proves Castigliano's theorem and uses it, with the dummy-load device, for beams, curved bars, trusses and redundant structures; derives the principle of virtual work, of which the unit-load method is a corollary; and finishes with the principle of minimum potential energy and the Rayleigh–Ritz method, the direct ancestor of finite elements.
 
-::: warning Nine ways energy method analysis goes wrong
-**Not checking the units.** The engineer who calculates the strain energy without checking the units is not calculating the strain energy; they are guessing. **The strain energy has units of force times distance (N·m = J), and the units are the reason the engineer can verify the calculation.** **Not applying Castigliano's theorem correctly.** The engineer who applies Castigliano's theorem without introducing the dummy load is not applying the theorem; they are misapplying the theorem. **The dummy load is the reason Castigliano's theorem works for the displacement at a point where no force is applied, and the dummy load is the reason the engineer can calculate the displacement at any point.** **Not checking the virtual work.** The engineer who applies the principle of virtual work without checking that the virtual displacement satisfies the boundary conditions is not applying the principle; they are guessing. **The virtual displacement must satisfy the geometric boundary conditions, and the satisfaction is the reason the principle of virtual work is correct.** **Not checking the minimum.** The engineer who applies the principle of minimum potential energy without checking that the potential energy is a minimum (not a maximum or a saddle point) is not applying the principle; they are guessing. **The minimum is the reason the equilibrium configuration is stable, and the stability is the reason the structure does not collapse.** **Not accounting for the shear strain energy.** The engineer who calculates the strain energy without the shear contribution is not calculating the strain energy; they are calculating the bending strain energy. **The shear strain energy is the reason the Timoshenko beam theory is more accurate than the Euler-Bernoulli beam theory for short beams, and the accuracy is the reason the Timoshenko beam theory is the most widely used beam theory for short beams.** **Not accounting for the axial strain energy.** The engineer who calculates the strain energy without the axial contribution is not calculating the strain energy; they are calculating the bending strain energy. **The axial strain energy is the reason the frame analysis is more accurate than the beam analysis, and the accuracy is the reason the frame analysis is the most widely used analysis for building structures.** **Not accounting for the torsional strain energy.** The engineer who calculates the strain energy without the torsional contribution is not calculating the strain energy; they are calculating the bending strain energy. **The torsional strain energy is the reason the shaft analysis is more accurate than the beam analysis, and the accuracy is the reason the shaft analysis is the most widely used analysis for rotating machinery.** **Not accounting for the thermal strain energy.** The engineer who calculates the strain energy without the thermal contribution is not calculating the strain energy; they are calculating the mechanical strain energy. **The thermal strain energy is the reason the thermal stress analysis is more accurate than the mechanical stress analysis, and the accuracy is the reason the thermal stress analysis is the most widely used analysis for high-temperature structures.** **Not accounting for the dynamic strain energy.** The engineer who calculates the strain energy without the kinetic energy contribution is not calculating the strain energy; they are calculating the static strain energy. **The kinetic energy is the reason the dynamic analysis is more accurate than the static analysis, and the accuracy is the reason the dynamic analysis is the most widely used analysis for vibrating structures.**
+## Strain energy
+
+Load a bar slowly from zero to a force $P$. Each increment of extension $d\Delta$ absorbs work $P\,d\Delta$, so the total work is the area under the force–extension curve. If the material is elastic the work is fully recoverable and is stored as strain energy; if the curve is a straight line, it is a triangle of area $\tfrac12 P\Delta$. Dividing by the volume $AL$ turns force and extension into stress and strain and gives the energy per unit volume.
+
+::: definition Strain energy density and complementary energy density {#def-energy-density}
+For an elastic material the **strain energy density** is the work done per unit volume by the stresses as the strains grow from zero,
+$$
+U_0 = \int_0^{\varepsilon_{ij}} \sigma_{ij}\,d\varepsilon_{ij},
+$$
+and the **complementary energy density** is $U_0^* = \int_0^{\sigma_{ij}} \varepsilon_{ij}\,d\sigma_{ij}$, so that $U_0 + U_0^* = \sigma_{ij}\varepsilon_{ij}$. For a **linear** elastic material the two are equal,
+$$
+U_0 = U_0^* = \tfrac12\sigma_{ij}\varepsilon_{ij}
+= \tfrac12\bigl(\sigma_x\varepsilon_x + \sigma_y\varepsilon_y + \sigma_z\varepsilon_z + \tau_{xy}\gamma_{xy} + \tau_{yz}\gamma_{yz} + \tau_{zx}\gamma_{zx}\bigr),
+$$
+which for uniaxial stress is $\sigma^2/(2E)$ and for pure shear $\tau^2/(2G)$. The **strain energy** of a body is $U = \int_V U_0\,dV$; its unit is the joule.
 :::
 
-## 1. Strain energy
-
-::: definition The strain energy density {#def-strain-energy}
-The **strain energy density** is the strain energy per unit volume, and the strain energy density is the reason the engineer can calculate the total strain energy by integrating over the volume.
-
-For a linear elastic, isotropic material:
+Integrating $\sigma^2/(2E)$ over a cross-section with the elementary stress distributions gives the strain energy of slender members in terms of their internal forces. With $N$ the axial force, $M$ the bending moment, $T$ the torque and $V$ the shear force, all functions of position $x$ along the member,
 
 $$
-U _ { 0 } \; = \; { \frac { 1 } { 2 } } \, \sigma _ { i j } \, \varepsilon _ { i j } \; = \; { \frac { 1 } { 2 \, E } } \, [ \sigma _ { x x } ^ { 2 } + \sigma _ { y y } ^ { 2 } + \sigma _ { z z } ^ { 2 } ] - { \frac { \nu } { E } } \, [ \sigma _ { x x } \, \sigma _ { y y } + \sigma _ { y y } \, \sigma _ { z z } + \sigma _ { z z } \, \sigma _ { x x } ] + { \frac { 1 } { 2 \, G } } \, [ \tau _ { x y } ^ { 2 } + \tau _ { y z } ^ { 2 } + \tau _ { z x } ^ { 2 } ]
-$$
+U = \int_0^L \frac{N^2}{2EA}\,dx + \int_0^L \frac{M^2}{2EI}\,dx + \int_0^L \frac{T^2}{2GJ}\,dx + \int_0^L \frac{f_s V^2}{2GA}\,dx .
+$$ {#eq-member-energy}
 
-The **total strain energy** is:
+For bending, $\int_A (My/I)^2/(2E)\,dA = M^2/(2EI)$ because $\int_A y^2\,dA = I$; torsion of a circular shaft follows the same way with $J$. The shear term contains a **form factor** $f_s = \frac{A}{I^2}\int_A \frac{Q^2}{b^2}\,dA$, which equals $6/5$ for a rectangle and $10/9$ for a solid circle. In beams more than about five depths long the shear term is a few per cent of the bending term or less and is usually dropped; in short, deep members and sandwich panels it is not negligible.
 
+::: theorem Clapeyron's theorem {#thm-clapeyron}
+If a linear elastic body, supported so that the supports do no work, is loaded by forces $P_1, \dots, P_n$ (which may include couples) applied gradually from zero, and $\Delta_i$ is the displacement of the point of application of $P_i$ in the direction of $P_i$ (a rotation for a couple), then
 $$
-U \; = \; \int _ { V } U _ { 0 } \, d V
+U = \tfrac12\sum_{i=1}^n P_i\,\Delta_i .
 $$
-
-For common structural elements:
-
-$$
-\begin{array} { l c l }
-\textbf{Element} & \textbf{Strain energy} & \textbf{Load type} \\ \hline
-\text{Axial bar} & U = F ^ { 2 } \, L / ( 2 \, E \, A ) & \text{Tension/compression} \\
-\text{Torsion shaft} & U = T ^ { 2 } \, L / ( 2 \, G \, J ) & \text{Torsion} \\
-\text{Bending beam} & U = \int M ^ { 2 } \, d x / ( 2 \, E \, I ) & \text{Bending} \\
-\text{Shear beam} & U = \int V ^ { 2 } \, d x / ( 2 \, G \, A _ { s } ) & \text{Shear} \\
-\text{Pressure vessel} & U = p ^ { 2 } \, V / ( 2 \, E ) \times f ( \nu , t / r ) & \text{Pressure} \\
-\end{array}
-$$
-
-**The strain energy is the reason the engineer can calculate the displacement by Castigliano's theorem, and the displacement is the reason the engineer can design the structure. The engineer who calculates the strain energy without checking the units is not calculating the strain energy; they are guessing.**
 :::
 
-::: definition Castigliano's theorems {#def-castigliano}
-**Castigliano's first theorem** states that the displacement at the point of application of a force is the partial derivative of the strain energy with respect to that force:
+::: proof
+Assume small displacements, linear elasticity and loads applied quasi-statically (no kinetic energy). Because the body is elastic the stored energy depends only on the final state, not on the loading path, so we may choose the path: apply all loads together in fixed proportion, $P_i(s) = sP_i$ with $s$ rising from $0$ to $1$. By linearity every displacement is then $\Delta_i(s) = s\Delta_i$. The work done is
+$$
+W = \sum_i \int_0^1 P_i(s)\,\frac{d\Delta_i}{ds}\,ds = \sum_i P_i\Delta_i\int_0^1 s\,ds = \tfrac12\sum_i P_i\Delta_i .
+$$
+The supports do no work and no energy is dissipated, so $W = U$.
+:::
+
+The factor $\tfrac12$ is the triangle under a straight force–displacement line. Clapeyron's theorem alone gives a deflection when only one load acts: for a cantilever with end load $P$, $U = \int_0^L (Px)^2/(2EI)\,dx = P^2L^3/(6EI) = \tfrac12 P\Delta$, so $\Delta = PL^3/(3EI)$. With more than one load it gives one equation for several unknowns; Castigliano's theorem removes that limitation.
+
+::: theorem Betti–Maxwell reciprocal theorem {#thm-betti}
+For a linear elastic body with fixed supports, let load system $A$ (forces $P_i$) produce displacements $\Delta_i^{B}$ at the points and in the directions of load system $B$ (forces $Q_j$), and let $B$ produce displacements $\Delta_i^{A}$ under the loads of $A$. Then
+$$
+\sum_i P_i\,\Delta_i^{A\leftarrow B} = \sum_j Q_j\,\Delta_j^{B\leftarrow A},
+$$
+the work of system $A$ on the displacements caused by $B$ equals the work of $B$ on the displacements caused by $A$ (**Betti**). In particular, the displacement at point 1 due to a unit load at point 2 equals the displacement at 2 due to a unit load at 1: the **flexibility coefficients** are symmetric, $f_{12} = f_{21}$ (**Maxwell**).
+:::
+
+::: proof
+Apply $A$ first: the work done is $W_{AA} = \tfrac12\sum P_i\Delta_i^{A\leftarrow A}$ by Clapeyron. Then apply $B$ with $A$ already in place: $B$ does $\tfrac12\sum Q_j\Delta_j^{B\leftarrow B}$, and the loads $P_i$, already at full value, ride through the displacements $\Delta_i^{A\leftarrow B}$ caused by $B$ and do the full work $\sum P_i\Delta_i^{A\leftarrow B}$ (no factor $\tfrac12$: the force is constant during that motion). Total:
+$$
+W_1 = \tfrac12\sum P_i\Delta_i^{A\leftarrow A} + \tfrac12\sum Q_j\Delta_j^{B\leftarrow B} + \sum P_i\Delta_i^{A\leftarrow B}.
+$$
+Applying $B$ first and $A$ second gives the same expression with the last term replaced by $\sum Q_j\Delta_j^{B\leftarrow A}$. By superposition the final state is the same either way, and an elastic body stores an energy that depends only on its final state, so $W_1 = W_2$ and the cross terms are equal. For single unit loads $P_1 = 1$ and $Q_2 = 1$, Betti's identity becomes $1\cdot f_{12} = 1\cdot f_{21}$.
+:::
+
+Maxwell's theorem is often surprising in practice. A load hung at the tip of a cantilever deflects its mid-point by exactly as much as the same load hung at the mid-point deflects the tip — $5PL^3/(48EI)$ in both cases. It also guarantees that every stiffness matrix of a linear elastic structure is symmetric, a fact finite element programs exploit to halve their storage.
+
+## Castigliano's theorem
+
+Write the displacements of a linear structure under loads $P_1,\dots,P_n$ as $\Delta_i = \sum_j f_{ij}P_j$, with flexibility coefficients $f_{ij}$. Clapeyron's theorem makes the strain energy a quadratic form in the loads, $U = \tfrac12\sum_i\sum_j f_{ij}P_iP_j$. Differentiate with respect to one load and use Maxwell's symmetry: the displacement under that load falls out.
+
+::: theorem Castigliano's second theorem {#thm-castigliano}
+For a linear elastic structure with fixed supports, with the strain energy $U(P_1,\dots,P_n)$ expressed as a function of the independent applied loads, the displacement of the point of application of $P_k$ in the direction of $P_k$ is
+$$
+\Delta_k = \frac{\partial U}{\partial P_k}.
+$$ {#eq-castigliano}
+For a couple $C_k$, $\partial U/\partial C_k$ is the rotation in the sense of the couple.
+:::
+
+::: proof
+Assumptions: linear elastic material, small displacements (so superposition holds and equilibrium is written on the undeformed geometry), supports that do no work. By superposition $\Delta_i = \sum_j f_{ij}P_j$, and by [[#thm-clapeyron]]
+$$
+U = \tfrac12\sum_i P_i\Delta_i = \tfrac12\sum_i\sum_j f_{ij}P_iP_j .
+$$
+Differentiate with respect to $P_k$. The product $P_iP_j$ contributes when $i = k$ or $j = k$:
+$$
+\frac{\partial U}{\partial P_k} = \tfrac12\sum_j f_{kj}P_j + \tfrac12\sum_i f_{ik}P_i = \tfrac12\sum_j f_{kj}P_j + \tfrac12\sum_j f_{kj}P_j = \Delta_k,
+$$
+where the middle step used $f_{ik} = f_{ki}$ from [[#thm-betti]].
+:::
+
+::: remark Engesser's form and the first theorem
+For a non-linear elastic material the proof above fails, but the result survives if $U$ is replaced by the complementary energy $U^*$: $\Delta_k = \partial U^*/\partial P_k$ (Crotti and Engesser). Conversely, Castigliano's **first theorem**, $P_k = \partial U/\partial\Delta_k$ with $U$ written as a function of displacements, holds for any elastic material and is the energy statement behind the stiffness method of [[finite-element-method/direct-stiffness]].
+:::
+
+For slender members, differentiate [[#eq-member-energy]] under the integral sign, which avoids squaring and then differentiating:
 
 $$
-\delta _ { i } \; = \; { \frac { \partial U } { \partial F _ { i } } }
-$$
+\Delta_k = \int_0^L \frac{N}{EA}\frac{\partial N}{\partial P_k}\,dx + \int_0^L \frac{M}{EI}\frac{\partial M}{\partial P_k}\,dx + \int_0^L \frac{T}{GJ}\frac{\partial T}{\partial P_k}\,dx .
+$$ {#eq-castigliano-members}
 
-**Castigliano's second theorem** states that the force at a point where the displacement is zero is the partial derivative of the strain energy with respect to that displacement:
+Two devices make this a general tool. A **dummy load**: to find a displacement where no load acts, or in a direction no load acts, add a fictitious load $Q$ there, differentiate, and then set $Q = 0$. And for a **statically indeterminate** structure, treat a redundant reaction $R$ as an applied load: if the support does not move, $\partial U/\partial R = 0$ — the redundant takes the value that minimises the strain energy (Menabrea's **principle of least work**).
 
-$$
-F _ { i } \; = \; { \frac { \partial U } { \partial \delta _ { i } } }
-$$
+::: algorithm Deflections and redundants by Castigliano's theorem {#alg-castigliano}
+1. Draw the free-body diagram; choose the redundants (if any) and label them as unknown loads $R_1, R_2,\dots$.
+2. If the displacement wanted is not under an existing load, add a dummy load $Q$ (or couple) at that point in that direction.
+3. Write $N(x)$, $M(x)$, $T(x)$ in every segment in terms of the real loads, $Q$ and the redundants, with one consistent sign convention per segment.
+4. For each redundant at an unyielding support, set $\partial U/\partial R_j = 0$ and solve for $R_j$.
+5. Compute $\Delta = \partial U/\partial Q$ from [[#eq-castigliano-members]], then put $Q = 0$. A positive result means the displacement is in the assumed direction of $Q$.
+:::
 
-For a beam:
-
+::: example Deflection of a curved bar {#ex-quarter-ring}
+A quarter-circle bar of radius $R = 0.5\,\mathrm{m}$ lies in a vertical plane with its centre $O$ at the origin. It is built in at $A = (R, 0)$, where its tangent is vertical, and is free at its top end $B = (0, R)$, where a load $P = 200\,\mathrm{N}$ acts vertically downward. The bar is a round steel rod, $d = 20\,\mathrm{mm}$, $E = 200\,\mathrm{GPa}$. Find the vertical and horizontal deflections of $B$, considering bending only.
+::: solution
+**Free-body diagram.** Cut the bar at the point $S = (R\cos\theta, R\sin\theta)$, $0 \le \theta \le \pi/2$, and keep the part $SB$. Acting on it: the load $P$ downward at $B$; a dummy horizontal load $Q$ at $B$ pointing in $+x$; and the internal force and moment at $S$. Taking moments about $S$ (anticlockwise positive) of the loads at $B$, with $\mathbf{r}_B - \mathbf{r}_S = (-R\cos\theta,\ R - R\sin\theta)$:
 $$
-\delta \; = \; { \frac { \partial U } { \partial F } } \; = \; \int { \frac { M } { E \, I } } \, { \frac { \partial M } { \partial F } } \, d x
+M(\theta) = (-R\cos\theta)(-P) - (R - R\sin\theta)(Q) = PR\cos\theta - QR(1 - \sin\theta).
 $$
+The arc length element is $ds = R\,d\theta$, and the curvature of the bar is small compared with its depth ($R/d = 25$), so the straight-beam energy $M^2/(2EI)$ applies.
 
-For a frame (including axial and shear contributions):
-
+**Vertical deflection** (in the direction of $P$), with $Q = 0$:
 $$
-\delta \; = \; \int { \frac { M } { E \, I } } \, { \frac { \partial M } { \partial F } } \, d x + \int { \frac { N } { E \, A } } \, { \frac { \partial N } { \partial F } } \, d x + \int { \frac { V } { G \, A _ { s } } } \, { \frac { \partial V } { \partial F } } \, d x
+\delta_v = \int_0^{\pi/2}\frac{M}{EI}\frac{\partial M}{\partial P}\,R\,d\theta = \frac{PR^3}{EI}\int_0^{\pi/2}\cos^2\theta\,d\theta = \frac{\pi PR^3}{4EI}.
 $$
+**Horizontal deflection** (in the direction of $Q$), with $\partial M/\partial Q = -R(1 - \sin\theta)$ and then $Q = 0$:
+$$
+\delta_h = \int_0^{\pi/2}\frac{PR\cos\theta\,\bigl[-R(1 - \sin\theta)\bigr]}{EI}\,R\,d\theta = -\frac{PR^3}{EI}\Bigl[\sin\theta - \tfrac12\sin^2\theta\Bigr]_0^{\pi/2} = -\frac{PR^3}{2EI}.
+$$
+The negative sign means $B$ moves in $-x$, towards the line of the centre.
 
-**The dummy load is the reason Castigliano's theorem works for the displacement at a point where no force is applied, and the dummy load is the reason the engineer can calculate the displacement at any point. The engineer who applies Castigliano's theorem without introducing the dummy load is not applying the theorem; they are misapplying the theorem.**
+**Numbers.** $I = \pi d^4/64 = 7.854\times10^{-9}\,\mathrm{m^4}$, $EI = 1571\,\mathrm{N\,m^2}$, $PR^3 = 200 \times 0.125 = 25\,\mathrm{N\,m^3}$:
+$$
+\delta_v = \frac{\pi \times 25}{4 \times 1571}\,\mathrm{m} = 12.5\,\mathrm{mm}, \qquad
+\delta_h = \frac{25}{2 \times 1571}\,\mathrm{m} = 7.96\,\mathrm{mm}.
+$$
+The largest moment is $PR = 100\,\mathrm{N\,m}$ at the root, giving a bending stress $M(d/2)/I = 127\,\mathrm{MPa}$, within the elastic range of a structural steel.
+
+**Sanity check.** Dimensions: $PR^3/(EI)$ is $\mathrm{N\,m^3}/(\mathrm{N\,m^2}) = \mathrm{m}$ ✓. A straight cantilever of the same length $\pi R/2 = 0.785\,\mathrm{m}$ would deflect $P(\pi R/2)^3/(3EI) = 20.6\,\mathrm{mm}$; the curved bar is stiffer because much of its length lies close to the line of action of $P$, where the moment arm $R\cos\theta$ is small. A load also produces a displacement *perpendicular* to itself, which a straight-beam formula would never show.
+:::
+:::
+
+::: example A two-bar bracket {#ex-truss}
+A pin-jointed bracket has supports $A = (0, 0)$ and $B = (0, 3)\,\mathrm{m}$ on a wall and a joint $C = (4, 0)\,\mathrm{m}$, with members $AC$ (horizontal, $4\,\mathrm{m}$) and $BC$ ($5\,\mathrm{m}$). A load $P = 30\,\mathrm{kN}$ hangs vertically from $C$. Both members are steel with $A = 500\,\mathrm{mm^2}$, $E = 200\,\mathrm{GPa}$. Find the vertical and horizontal deflections of $C$.
+::: solution
+**Free-body diagram of joint C** (tension positive): $P$ downward; $F_{BC}$ along $CB$, direction $(-0.8, 0.6)$; $F_{AC}$ along $CA$, direction $(-1, 0)$.
+Vertical: $0.6F_{BC} - P = 0 \Rightarrow F_{BC} = P/0.6 = 50\,\mathrm{kN}$ (tension). Horizontal: $-0.8F_{BC} - F_{AC} = 0 \Rightarrow F_{AC} = -40\,\mathrm{kN}$ (compression).
+
+For a truss, [[#eq-castigliano-members]] reduces to $\Delta = \sum F\,(\partial F/\partial P)\,L/(EA)$. Here $\partial F_{BC}/\partial P = 5/3$ and $\partial F_{AC}/\partial P = -4/3$, and $EA = 2\times10^{11} \times 5\times10^{-4} = 1.0\times10^{8}\,\mathrm{N}$:
+$$
+\delta_v = \frac{(50\,000)(5/3)(5) + (-40\,000)(-4/3)(4)}{1.0\times10^{8}}\,\mathrm{m} = \frac{416\,667 + 213\,333}{1.0\times10^{8}}\,\mathrm{m} = 6.30\,\mathrm{mm}\ \text{(down)}.
+$$
+For the horizontal deflection add a dummy load $Q$ at $C$ in $+x$. The joint equations become $0.6F_{BC} = P$ and $-0.8F_{BC} - F_{AC} + Q = 0$, so $\partial F_{BC}/\partial Q = 0$ and $\partial F_{AC}/\partial Q = 1$. With $Q = 0$:
+$$
+\delta_h = \frac{(-40\,000)(1)(4)}{1.0\times10^{8}}\,\mathrm{m} = -1.60\,\mathrm{mm},
+$$
+that is, $1.60\,\mathrm{mm}$ towards the wall.
+
+**Sanity check.** The horizontal movement is just the shortening of $AC$: $40\,000 \times 4/10^8 = 1.6\,\mathrm{mm}$ ✓, because $BC$ only swings about $B$ to accommodate it. The stresses are $100\,\mathrm{MPa}$ in $BC$ and $-80\,\mathrm{MPa}$ in $AC$; the compression member must also be checked for buckling ([[mechanics-of-materials/buckling]]), which no energy calculation of deflection will reveal.
+:::
+:::
+
+::: example A propped cantilever by least work {#ex-propped}
+A beam of span $L = 6\,\mathrm{m}$ is built in at its right end and rests on a roller at its left end. It carries a uniform load $w = 12\,\mathrm{kN/m}$. Find the roller reaction, the fixed-end moment and the largest sagging moment.
+::: solution
+**Free-body diagram.** Roller reaction $R$ upward at $x = 0$; the distributed load $w$ downward over $0 \le x \le L$; at the wall a vertical reaction and a fixing moment. One unknown more than statics can supply: choose $R$ as the redundant.
+
+The bending moment at $x$ (sagging positive), from the free body to the left of the cut, is $M(x) = Rx - wx^2/2$. The roller does not move, so
+$$
+\frac{\partial U}{\partial R} = \int_0^L \frac{M}{EI}\frac{\partial M}{\partial R}\,dx = \frac{1}{EI}\int_0^L\Bigl(Rx - \frac{wx^2}{2}\Bigr)x\,dx = \frac{1}{EI}\Bigl(\frac{RL^3}{3} - \frac{wL^4}{8}\Bigr) = 0
+\quad\Rightarrow\quad R = \frac{3wL}{8}.
+$$
+Numbers: $R = 3 \times 12 \times 6/8 = 27\,\mathrm{kN}$. The fixed-end moment is $M(L) = RL - wL^2/2 = 162 - 216 = -54\,\mathrm{kN\,m}$, that is $wL^2/8$ hogging. The shear force $R - wx$ vanishes at $x = R/w = 2.25\,\mathrm{m}$, where the sagging moment is the largest: $R^2/(2w) = 27^2/24 = 30.4\,\mathrm{kN\,m}$.
+
+**Sanity check.** Vertical equilibrium: wall reaction $= wL - R = 72 - 27 = 45\,\mathrm{kN} = 5wL/8$ ✓. The prop takes less than half the load ($3/8$ instead of the simply supported $1/2$) because the built-in end is stiffer; and the result does not depend on $EI$, as a redundant in a uniform beam with rigid supports should not.
+:::
+:::
+
+The least-work statement can be seen directly. With $w = L = EI = 1$, the strain energy as a function of the trial value of $R$ is $U(R) = \int_0^1 (Rx - x^2/2)^2/2\,dx = R^2/6 - R/8 + 1/40$, a parabola.
+
+::: widget plot
+f: x^2/6 - x/8 + 1/40
+x: 0, 0.8
+y: 0, 0.08
+tangent: 0.15
+points: 0.375, 0.0015625
+vlines: 0.375
+caption: Strain energy of the propped cantilever (with $w = L = EI = 1$) against the trial value $R$ of the prop reaction on the horizontal axis. Drag the tangent point: its slope is $\partial U/\partial R$, which by Castigliano's theorem is the upward displacement of the prop. The slope is negative for small $R$ (the beam end would sag below the prop) and positive for large $R$ (the prop would lift the end); it is zero, and $U$ is least, only at $R = 3/8$ — the reaction that makes the prop displacement zero.
+:::
+
+::: warning Partial derivatives need independent loads
+Castigliano's theorem differentiates $U$ with respect to a load *with all the other independent loads held fixed*. Two errors follow from forgetting this. First, a reaction that is determined by statics is not an independent load: write the moments in terms of the applied loads (and redundants), not in terms of reactions you have not eliminated. Second, if two loads are tied together — "a load $P$ at each end" — then $\partial U/\partial P$ gives the **sum** of the two displacements (the relative displacement for equal and opposite loads), not the displacement of one point. To find one of them, give the two loads different names, differentiate, and only then set them equal. The ring under diametral compression ([[#ex-ring]] in the exercises) uses this deliberately: $\partial U/\partial P$ is the change of the diameter.
+:::
+
+## The principle of virtual work
+
+Castigliano's theorem requires linearity. A more fundamental statement, valid for any material, connects any set of forces in equilibrium with any set of displacements that fit together. It needs no energy at all — only equilibrium and geometry.
+
+::: theorem Principle of virtual work {#thm-virtual-work}
+Let $\sigma_{ij}$ be **any** stress field in equilibrium with body forces $b_i$ in $V$ and with surface tractions $t_i = \sigma_{ij}n_j$ on $S$, and let $u_i$ be **any** continuous displacement field (small, so that $\varepsilon_{ij} = \tfrac12(u_{i,j} + u_{j,i})$) — the two need not be related by a constitutive law. Then
+$$
+\int_V \sigma_{ij}\,\varepsilon_{ij}\,dV = \int_V b_i\,u_i\,dV + \int_S t_i\,u_i\,dS,
+$$ {#eq-virtual-work}
+internal virtual work equals external virtual work.
+:::
+
+::: proof
+Using $t_i = \sigma_{ij}n_j$ and the divergence theorem,
+$$
+\int_S t_iu_i\,dS = \int_S \sigma_{ij}u_in_j\,dS = \int_V (\sigma_{ij}u_i)_{,j}\,dV = \int_V \sigma_{ij,j}u_i\,dV + \int_V \sigma_{ij}u_{i,j}\,dV.
+$$
+Equilibrium gives $\sigma_{ij,j} = -b_i$, so the first volume integral is $-\int_V b_iu_i\,dV$. Split $u_{i,j}$ into its symmetric part $\varepsilon_{ij}$ and antisymmetric part (the rotation); the product of the symmetric $\sigma_{ij}$ with an antisymmetric tensor is zero, so $\sigma_{ij}u_{i,j} = \sigma_{ij}\varepsilon_{ij}$. Rearranging gives [[#eq-virtual-work]]. Only equilibrium, the symmetry of stress, small-displacement kinematics and continuity of $u_i$ were used.
+:::
+
+The theorem is used in two ways. In the **principle of virtual displacements**, the stresses are the real ones and $u_i$ is an imagined small displacement $\delta u_i$ that respects the supports; then $\delta u_i = 0$ on $S_u$ and [[#eq-virtual-work]] becomes an equilibrium statement, the weak form on which finite elements are built ([[finite-element-method/weak-forms]]). In the **principle of virtual forces**, the displacements are the real ones and the stresses are an imagined set in equilibrium with a convenient load — a single unit load. That gives the most useful deflection formula in structural analysis.
+
+::: proposition The unit-load method {#prop-unit-load}
+To find the displacement $\Delta$ of a point of a framed structure in a chosen direction, apply a unit load at that point in that direction to the unloaded structure and find the internal forces $n(x)$, $m(x)$, $t(x)$ it produces (any set in equilibrium with the unit load will do). Then, if the real internal forces are $N$, $M$, $T$ and the material is linear elastic,
+$$
+1\cdot\Delta = \sum\int \frac{nN}{EA}\,dx + \sum\int \frac{mM}{EI}\,dx + \sum\int \frac{tT}{GJ}\,dx .
+$$ {#eq-unit-load}
+For a truss, $\Delta = \sum_k n_kN_kL_k/(E_kA_k)$.
+:::
+
+::: proof
+Apply [[#thm-virtual-work]] with the virtual (unit-load) stress system and the real displacements. The external virtual work is the unit load times the real displacement of its point, $1\cdot\Delta$; the supports do no work because the real displacements there are zero. The internal virtual work of a slender member reduces to stress resultants times the real generalised strains: axial strain $N/(EA)$, curvature $M/(EI)$, twist rate $T/(GJ)$, giving the terms of [[#eq-unit-load]]. Linearity is used only to write the real strains in terms of $N$, $M$, $T$; with a non-linear law or with a temperature change, the real strains are inserted directly — for example a thermal curvature $\alpha\,\Delta T_\text{gradient}/h$ in place of $M/(EI)$.
+:::
+
+Comparing with [[#eq-castigliano-members]]: $m = \partial M/\partial Q$ is exactly the moment due to a unit dummy load, so for linear structures the unit-load method and Castigliano's theorem with a dummy load are the same calculation. The unit-load method is more general, since it also handles temperature changes, lack of fit and support settlement.
+
+## The principle of minimum potential energy
+
+Now restrict attention to linear elastic bodies, and ask a different question: among all displacement fields that respect the supports, which one does nature choose?
+
+::: definition Total potential energy {#def-potential}
+A displacement field is **kinematically admissible** if it is continuous and satisfies the displacement boundary conditions on $S_u$. For such a field the **total potential energy** of a body with prescribed tractions $\bar t_i$ on $S_t$ and body forces $b_i$ is
+$$
+\Pi[\mathbf{u}] = U[\mathbf{u}] - \int_V b_iu_i\,dV - \int_{S_t}\bar t_iu_i\,dS,
+$$
+the strain energy minus the work the loads would do if held constant through the displacement — the "potential of the loads". For a beam in bending with distributed load $w(x)$ and point loads $P_k$,
+$$
+\Pi[v] = \int_0^L \tfrac12 EI\,(v'')^2\,dx - \int_0^L w\,v\,dx - \sum_k P_k\,v(x_k).
+$$ {#eq-beam-potential}
+:::
+
+::: theorem Principle of minimum potential energy {#thm-min-pe}
+For a linear elastic body with positive definite strain energy, the displacement field that satisfies all the equations of elasticity makes $\Pi$ smaller than any other kinematically admissible field does:
+$$
+\Pi[\mathbf{u}^\star + \mathbf{w}] - \Pi[\mathbf{u}^\star] = U[\mathbf{w}] \ge 0,
+$$
+with equality only if $\mathbf{w}$ produces no strain. Conversely, a kinematically admissible field that makes $\Pi$ stationary is the exact solution.
+:::
+
+::: proof
+Let $\mathbf{u}^\star$ be the exact solution, with stresses $\sigma^\star_{ij}$, and let $\mathbf{u} = \mathbf{u}^\star + \mathbf{w}$ be any other admissible field; then $\mathbf{w} = \mathbf{0}$ on $S_u$. Because $U_0$ is a quadratic form, $U_0(\varepsilon^\star + \varepsilon^w) = U_0(\varepsilon^\star) + \sigma^\star_{ij}\varepsilon^w_{ij} + U_0(\varepsilon^w)$ — the cross term uses the symmetry of the elastic constants, $\tfrac12 C_{ijkl}(\varepsilon^\star_{ij}\varepsilon^w_{kl} + \varepsilon^w_{ij}\varepsilon^\star_{kl}) = \sigma^\star_{kl}\varepsilon^w_{kl}$. Hence
+$$
+\Pi[\mathbf{u}] - \Pi[\mathbf{u}^\star] = \Bigl[\int_V \sigma^\star_{ij}\varepsilon^w_{ij}\,dV - \int_V b_iw_i\,dV - \int_{S_t}\bar t_iw_i\,dS\Bigr] + U[\mathbf{w}].
+$$
+Apply [[#thm-virtual-work]] to the equilibrium field $\sigma^\star$ and the displacement field $\mathbf{w}$: the external work on $S_u$ vanishes because $\mathbf{w} = \mathbf{0}$ there, and on $S_t$ the traction is $\bar t_i$. So the bracket is zero and the difference equals $U[\mathbf{w}] \ge 0$. For the converse: if $\Pi$ is stationary at an admissible $\mathbf{u}$, its first variation vanishes for every admissible $\mathbf{w}$, which by integration by parts (the proof of [[#thm-virtual-work]] read backwards) gives the equilibrium equations in $V$ and the traction conditions on $S_t$.
+:::
+
+The theorem has two consequences that matter in practice. Any approximate admissible field gives an energy *above* the true one, so approximations can be ranked: lower $\Pi$ is better. And because the error in $\Pi$ is the strain energy of the error, an approximate displacement field is too *stiff*: for a single point load $P$, $\Pi_\text{min} = -\tfrac12 P\Delta$ (by Clapeyron), so a higher $\Pi$ means a smaller $\Delta$. Approximate displacement-based solutions **underestimate** deflections under a single load.
+
+### The Rayleigh–Ritz method
+
+::: algorithm Rayleigh–Ritz {#alg-ritz}
+1. Choose trial functions $\psi_1(x),\dots,\psi_n(x)$, each satisfying the **displacement** (kinematic) boundary conditions; the force conditions need not be satisfied, since stationarity of $\Pi$ supplies them approximately.
+2. Write the approximation $v(x) = \sum_k a_k\psi_k(x)$ with unknown coefficients $a_k$.
+3. Substitute into $\Pi$, which becomes a quadratic function of the $a_k$: $\Pi = \tfrac12\mathbf{a}\T\mathbf{K}\mathbf{a} - \mathbf{a}\T\mathbf{F}$.
+4. Set $\partial\Pi/\partial a_k = 0$ for every $k$: the linear system $\mathbf{K}\mathbf{a} = \mathbf{F}$, with a symmetric "stiffness matrix" $K_{jk} = \int EI\,\psi_j''\psi_k''\,dx$ and "load vector" $F_k = \int w\psi_k\,dx + \sum P_i\psi_k(x_i)$.
+5. Solve, and check convergence by adding terms.
+:::
+
+When the trial functions are chosen as simple polynomials that are non-zero only over a small piece of the structure, step 4 is exactly the assembly of a finite element stiffness matrix: the finite element method is the Rayleigh–Ritz method with local trial functions ([[finite-element-method/direct-stiffness]]).
+
+::: example One-term Ritz solution of a simply supported beam {#ex-ritz-ss}
+A simply supported beam of span $L = 5\,\mathrm{m}$ and $EI = 1.0\times10^{7}\,\mathrm{N\,m^2}$ carries a uniform load $w = 10\,\mathrm{kN/m}$. Use the trial function $v = a\sin(\pi x/L)$ (positive downward) to estimate the mid-span deflection and bending moment, and compare with the exact values $5wL^4/(384EI)$ and $wL^2/8$.
+::: solution
+The trial function vanishes at $x = 0$ and $x = L$, the kinematic conditions; it also happens to satisfy $v'' = 0$ there. With $v'' = -a(\pi/L)^2\sin(\pi x/L)$, $\int_0^L\sin^2(\pi x/L)\,dx = L/2$ and $\int_0^L\sin(\pi x/L)\,dx = 2L/\pi$:
+$$
+\Pi(a) = \frac{EI}{2}\,a^2\Bigl(\frac{\pi}{L}\Bigr)^4\frac{L}{2} - w\,a\,\frac{2L}{\pi},
+\qquad
+\frac{d\Pi}{da} = 0 \;\Rightarrow\; a = \frac{4wL^4}{\pi^5 EI} = 0.013071\,\frac{wL^4}{EI}.
+$$
+Exact: $5/384 = 0.013021$. Numerically, $wL^4/(EI) = 10^4 \times 625/10^7 = 0.625\,\mathrm{m}$, so
+$$
+v_\text{Ritz} = 0.013071 \times 0.625 = 8.17\,\mathrm{mm}, \qquad v_\text{exact} = 8.14\,\mathrm{mm},
+$$
+an error of $+0.39\,\%$. The moment from the trial function is $M = EI\,v''$ in magnitude, at mid-span $EI\,a\,\pi^2/L^2 = 4wL^2/\pi^3 = 0.1290\,wL^2 = 32.3\,\mathrm{kN\,m}$, against the exact $wL^2/8 = 31.25\,\mathrm{kN\,m}$, an error of $+3.2\,\%$.
+
+**Sanity check.** Why is the deflection here slightly *over*-estimated, when the theorem says the Ritz solution is too stiff? The guarantee is on the energy: $\Pi_\text{Ritz} \ge \Pi_\text{exact}$, which for a distributed load means the *load-weighted average* deflection $\int wv\,dx$ is too small, not the deflection at every point. The pattern of errors is the general one: displacements are accurate, moments (second derivatives) less so, and shear forces (third derivatives) least of all. In fact the sine is the first term of the exact Fourier series $v = \sum_{n\ \text{odd}} 4wL^4\sin(n\pi x/L)/(n^5\pi^5EI)$, whose further terms fall off as $1/n^5$.
+:::
 :::
 
 ::: widget plot
-title: The strain energy in a cantilever beam vs load position
-f: x^2*(3-x)^2/12; x^2*(3-x)^2/12*0.5
-x: 0,3
-y: 0,1
-labels: U at tip; U at midspan
-caption: The strain energy in a cantilever beam against the load position. **The strain energy is maximum when the load is at the tip, and the maximum is the reason the tip deflection is the largest deflection in the cantilever beam.** **The strain energy is proportional to the square of the load, and the square is the reason the strain energy is 4× higher when the load is doubled.**
+f: x*(1-x)/2; sum(4/((2k-1)^3*pi^3)*sin((2k-1)*pi*x), k, 1, N); 0.5 - x; sum(4/((2k-1)^2*pi^2)*cos((2k-1)*pi*x), k, 1, N)
+x: 0, 1
+y: -0.6, 0.6
+sliders: N=1:1:8:1
+labels: M/wL^2\ \text{exact}; M/wL^2\ \text{Ritz}; V/wL\ \text{exact}; V/wL\ \text{Ritz}
+caption: Rayleigh–Ritz with $N$ sine terms for the uniformly loaded simply supported beam, plotted against $x/L$: bending moment (first pair) and shear force (second pair), each with its exact distribution. With $N = 1$ the moment is already within about 3 % but the shear force is a poor cosine. Increase $N$: the moment converges almost at once, while the shear force still wiggles with $N = 8$, and is slowest to converge at the supports. Each derivative of a Ritz solution costs accuracy — which is why finite element stresses are least reliable where shear and stress gradients are large.
 :::
 
-::: example Strain energy in a cantilever beam {#ex-cantilever-energy level=3 check="2"}
-A cantilever beam of length $L = 2$ m, $E = 2 0 0$ GPa, and $I = 1 0 ^ { - 6 }$ m⁴ carries a tip load $F = 1 0$ kN. Calculate the strain energy and the tip deflection using Castigliano's theorem.
+::: example Polynomial trial functions for a cantilever {#ex-ritz-cantilever}
+A cantilever of length $L$, built in at $x = 0$, carries an end load $P$ at $x = L$. Find the Ritz approximations to the tip deflection with (a) $v = a x^2$ and (b) $v = a x^2 + b x^3$.
+::: solution
+Both trial functions satisfy the kinematic conditions $v(0) = 0$, $v'(0) = 0$. The free-end conditions (zero moment and shear) are force conditions and are not imposed.
 
-**Bending moment:** $M ( x ) = F \, ( L - x )$
+(a) $v'' = 2a$, so $U = \tfrac12 EI\int_0^L 4a^2\,dx = 2EIa^2L$ and the load potential is $-P\,v(L) = -PaL^2$. Then $d\Pi/da = 4EIaL - PL^2 = 0$, $a = PL/(4EI)$, and the tip deflection is $aL^2 = PL^3/(4EI)$: 75 % of the exact $PL^3/(3EI)$, too stiff as the theorem predicts. The trial function has constant curvature, as if the moment were uniform, whereas the true moment falls linearly to zero at the tip.
 
-**Strain energy:**
-
+(b) $v'' = 2a + 6bx$:
 $$
-U \; = \; \int _ { 0 } ^ { L } { \frac { M ^ { 2 } } { 2 \, E \, I } } \, d x \; = \; \int _ { 0 } ^ { L } { \frac { F ^ { 2 } \, ( L - x ) ^ { 2 } } { 2 \, E \, I } } \, d x \; = \; { \frac { F ^ { 2 } } { 2 \, E \, I } } \, \left[ { \frac { ( L - x ) ^ { 3 } } { - 3 } } \right] _ { 0 } ^ { L } \; = \; { \frac { F ^ { 2 } \, L ^ { 3 } } { 6 \, E \, I } }
+\Pi = \frac{EI}{2}\bigl(4a^2L + 12abL^2 + 12b^2L^3\bigr) - P\bigl(aL^2 + bL^3\bigr).
 $$
-
+$\partial\Pi/\partial a = 0$: $4aL + 6bL^2 = PL^2/EI$; $\partial\Pi/\partial b = 0$: $6aL^2 + 12bL^3 = PL^3/EI$. Dividing by $L$ and $L^2$: $4a + 6bL = PL/EI$ and $6a + 12bL = PL/EI$. Doubling the first and subtracting the second gives $2a = PL/EI$, so $a = PL/(2EI)$ and $b = -P/(6EI)$. Then
 $$
-U \; = \; { \frac { ( 1 0 \ 0 0 0 ) ^ { 2 } \times 2 ^ { 3 } } { 6 \times 2 0 0 \times 1 0 ^ { 9 } \times 1 0 ^ { - 6 } } } \; = \; { \frac { 4 \times 1 0 ^ { 8 } } { 1 . 2 \times 1 0 ^ { 6 } } } \; = \; { \bf 3 3 3 } \ \text{J}
+v = \frac{PLx^2}{2EI} - \frac{Px^3}{6EI}, \qquad v(L) = \frac{PL^3}{3EI},
 $$
-
-**Tip deflection (Castigliano's theorem):**
-
-$$
-\delta \; = \; { \frac { \partial U } { \partial F } } \; = \; { \frac { F \, L ^ { 3 } } { 3 \, E \, I } } \; = \; { \frac { 1 0 \ 0 0 0 \times 8 } { 3 \times 2 0 0 \times 1 0 ^ { 9 } \times 1 0 ^ { - 6 } } } \; = \; { \frac { 8 0 \ 0 0 0 } { 6 0 0 \ 0 0 0 } } \; = \; { \bf 1 3 . 3 } \ \text{mm}
-$$
-
-**The strain energy is 333 J, and the tip deflection is 13.3 mm. The engineer would use the strain energy to calculate the deflection by Castigliano's theorem, and the deflection is the reason the engineer can design the structure.**
+the **exact** solution. **Sanity check:** the exact deflection of an end-loaded cantilever is a cubic, so a trial space containing all cubics that satisfy the kinematic conditions must contain it, and minimum potential energy then picks it out. Ritz solutions become exact whenever the trial functions can represent the true solution.
+:::
 :::
 
-## 2. Virtual work and minimum potential energy
-
-::: definition The principle of virtual work {#def-virtual-work}
-The **principle of virtual work** states that the external virtual work equals the internal virtual work for any virtual displacement that satisfies the geometric boundary conditions:
-
-$$
-\delta W _ { \text{ext } } \; = \; \delta W _ { \text{int } }
-$$
-
-$$
-\sum _ { i } \, F _ { i } \, \delta u _ { i } \; = \; \int _ { V } \, \sigma _ { i j } \, \delta \varepsilon _ { i j } \, d V
-$$
-
-The **virtual displacement** $\delta u _ { i }$ must satisfy:
-1. The geometric boundary conditions ($\delta u _ { i } = 0$ on $S _ { u }$ )
-2. The compatibility equations (the virtual strain is derived from the virtual displacement)
-
-**The virtual displacement must satisfy the geometric boundary conditions, and the satisfaction is the reason the principle of virtual work is correct. The engineer who applies the principle of virtual work without checking that the virtual displacement satisfies the boundary conditions is not applying the principle; they are guessing.**
+::: remark Shear energy and the meaning of "built in"
+Adding the shear term of [[#eq-member-energy]] with $f_s = 6/5$ to the cantilever gives an extra tip deflection $6PL/(5GA)$. The exact two-dimensional solution in [[solid-mechanics/linear-elasticity]] gives $3PL/(2GA)$ when the cross-section at the wall is held vertical at the centroid. The difference is not an error in either: a real built-in end is neither, and the shear correction depends on how the support restrains the warping of the section. Both are a few per cent for ordinary proportions; for deep beams the support detail must be modelled.
 :::
 
-::: definition The principle of minimum potential energy {#def-min-potential}
-The **principle of minimum potential energy** states that the equilibrium configuration minimises the total potential energy:
-
-$$
-\Pi \; = \; U - W \; = \; \int _ { V } U _ { 0 } \, d V - \sum _ { i } \, F _ { i } \, u _ { i }
-$$
-
-The equilibrium condition is:
-
-$$
-\delta \Pi \; = \; 0 \qquad \text{and} \qquad \delta ^ { 2 } \Pi \; > \; 0
-$$
-
-The **Rayleigh-Ritz method** approximates the displacement field by a trial function with unknown coefficients and minimises the potential energy with respect to the coefficients:
-
-$$
-u ( x ) \; \approx \; \sum _ { i = 1 } ^ { n } \, a _ { i } \, \phi _ { i } ( x ) \qquad { \frac { \partial \Pi } { \partial a _ { i } } } \; = \; 0 \quad \text{for } i = 1 , \ldots , n
-$$
-
-**The minimum is the reason the equilibrium configuration is stable, and the stability is the reason the structure does not collapse. The engineer who applies the principle of minimum potential energy without checking that the potential energy is a minimum (not a maximum or a saddle point) is not applying the principle; they are guessing.**
+::: quiz
+A linear elastic cantilever is analysed by the Rayleigh–Ritz method with a single-term polynomial that satisfies $v(0) = v'(0) = 0$. Under an end load $P$, which statements about the approximation are guaranteed?
+- [x] Its total potential energy is greater than or equal to the exact minimum.
+- [x] Its tip deflection is less than or equal to the exact tip deflection.
+- [ ] Its root bending moment is less than or equal to the exact root bending moment.
+- [ ] Adding more terms can make the tip deflection estimate worse.
+::: solution
+Minimum potential energy guarantees $\Pi_\text{Ritz} \ge \Pi_\text{exact}$. For a single point load, the stationary value is $\Pi = -\tfrac12 P\Delta$ (stationarity of the Ritz solution implies Clapeyron's relation within the trial space), so a higher $\Pi$ means a smaller $\Delta$: the tip deflection is bounded from below by the Ritz value. Nothing is guaranteed about moments: the one-term $ax^2$ estimate gives a uniform moment $PL/2$, *below* the exact root moment $PL$ but *above* the exact tip moment of zero. Adding terms enlarges the trial space, so the minimum of $\Pi$ cannot rise, and $\Delta$ cannot fall.
+:::
 :::
 
-::: widget plot
-title: The potential energy vs displacement for a spring
-f: 0.5*100*x^2-10*x; 0.5*100*x^2-10*x+20
-x: -0.5,1.5
-y: -10,30
-labels: Pi (unstable); Pi (stable)
-caption: The potential energy against the displacement for a spring. **The equilibrium configuration is at the minimum of the potential energy, and the minimum is the reason the equilibrium configuration is stable.** **The Rayleigh-Ritz method approximates the displacement field by a trial function and minimises the potential energy with respect to the coefficients, and the minimisation is the reason the Rayleigh-Ritz method is the most widely used approximate method in structural mechanics.**
+::: history
+The energy methods of structural analysis grew out of nineteenth-century work on elastic frames. Benoît Clapeyron's theorem on the equality of work and strain energy was published by Gabriel Lamé in his *Leçons sur la théorie mathématique de l'élasticité des corps solides* (1852). James Clerk Maxwell stated the reciprocal theorem for frames in 1864, in a paper "On the calculation of the equilibrium and stiffness of frames" in the *Philosophical Magazine*, and Enrico Betti generalised it to elastic bodies in 1872. Luigi Federico Menabrea announced the principle of least work for statically indeterminate frames in 1858; his proof was incomplete, and Alberto Castigliano, a young railway engineer, put it on a firm footing in his Turin diploma thesis of 1873 and in his book *Théorie de l'équilibre des systèmes élastiques et ses applications* (1879), which also contains the theorems that bear his name. Lord Rayleigh used assumed modes to estimate vibration frequencies in *The Theory of Sound* (1877), and Walther Ritz turned the idea into a systematic method of approximation in a 1909 paper in the *Journal für die reine und angewandte Mathematik*. Richard Courant's 1943 paper on variational methods used piecewise-linear trial functions on triangles, and the finite element method as engineers know it appeared in 1956 in a paper by M. J. Turner, R. W. Clough, H. C. Martin and L. J. Topp on the stiffness of aircraft structures.
 :::
 
-::: example Rayleigh-Ritz method for a cantilever beam {#ex-rayleigh-ritz level=3 check="2"}
-A cantilever beam of length $L$ carries a tip load $F$ . Use the Rayleigh-Ritz method with the trial function $u ( x ) = a \, x ^ { 2 }$ to estimate the tip deflection. Compare with the exact solution.
+## Where this leads
 
-**Potential energy:**
+The principle of virtual work is the starting point of [[finite-element-method/weak-forms]], and the Rayleigh–Ritz algorithm with piecewise trial functions is [[finite-element-method/direct-stiffness]]. In this course, minimum potential energy gives the buckling loads of plates in [[solid-mechanics/plates]] (a structure becomes unstable when the second variation of $\Pi$ can become zero); the energy balance of a growing crack is the foundation of [[solid-mechanics/fracture-mechanics]]; and the upper- and lower-bound theorems of limit analysis in [[solid-mechanics/plasticity]] are the plastic counterparts of the principle of virtual work. In dynamics, Rayleigh's quotient estimates natural frequencies with the same trial functions used here.
 
-$$
-\Pi \; = \; U - W \; = \; \int _ { 0 } ^ { L } { \frac { E \, I } { 2 } } \, ( u ^ { \prime \prime } ) ^ { 2 } \, d x - F \, u ( L )
-$$
-
-**Trial function:** $u ( x ) = a \, x ^ { 2 }$ , so $u ^ { \prime \prime } = 2 \, a$ and $u ( L ) = a \, L ^ { 2 }$ .
-
-$$
-\Pi \; = \; \int _ { 0 } ^ { L } { \frac { E \, I } { 2 } } \, ( 2 \, a ) ^ { 2 } \, d x - F \, a \, L ^ { 2 } \; = \; 2 \, E \, I \, a ^ { 2 } \, L - F \, a \, L ^ { 2 }
-$$
-
-**Minimisation:**
-
-$$
-{ \frac { \partial \Pi } { \partial a } } \; = \; 4 \, E \, I \, a \, L - F \, L ^ { 2 } \; = \; 0 \quad \Longrightarrow \quad a \; = \; { \frac { F \, L } { 4 \, E \, I } }
-$$
-
-**Tip deflection:**
-
-$$
-u ( L ) \; = \; a \, L ^ { 2 } \; = \; { \frac { F \, L ^ { 3 } } { 4 \, E \, I } }
-$$
-
-**Exact solution:** $u ( L ) = F \, L ^ { 3 } / ( 3 \, E \, I )$ .
-
-**Ratio:**
-
-$$
-{ \frac { u _ { \text{Ritz } } } { u _ { \text{exact } } } } \; = \; { \frac { 1 / 4 } { 1 / 3 } } \; = \; { \bf 0 . 7 5 }
-$$
-
-**The Rayleigh-Ritz method with a single-term trial function underestimates the deflection by 25 %. The engineer would use a multi-term trial function to improve the accuracy, and the multi-term trial function is the reason the Rayleigh-Ritz method converges to the exact solution.**
-:::
-
-::: example Strain energy in a pressure vessel {#ex-pressure-vessel-energy level=3 check="2"}
-A thin-walled cylindrical pressure vessel ($r = 5 0 0$ mm, $t = 1 0$ mm, $L = 2$ m, $E = 2 0 0$ GPa, $\\nu = 0 . 3$ ) carries an internal pressure $p = 5$ MPa. Calculate the strain energy.
-
-**Stress components:**
-
-$$
-\\sigma _ { \theta } \\; = \\; { \\frac { p \\, r } { t } } \\; = \\; { \\frac { 5 \\times 5 0 0 } { 1 0 } } \\; = \\; 2 5 0 \\ \\text{MPa} \\qquad \\sigma _ { z } \\; = \\; { \\frac { p \\, r } { 2 \\, t } } \\; = \\; 1 2 5 \\ \\text{MPa}
-$$
-
-**Strain energy density:**
-
-$$
-U _ { 0 } \\; = \\; { \\frac { 1 } { 2 \\, E } } \\, ( \\sigma _ { \theta } ^ { 2 } + \\sigma _ { z } ^ { 2 } - 2 \\, \\nu \\, \\sigma _ { \theta } \\, \\sigma _ { z } ) \\; = \\; { \\frac { 1 } { 2 \\times 2 0 0 \\ 0 0 0 } } \\, ( 6 2 \\ 5 0 0 + 1 5 \\ 6 2 5 - 2 \\times 0 . 3 \\times 3 1 \\ 2 5 0 )
-$$
-
-$$
-U _ { 0 } \\; = \\; { \\frac { 1 } { 4 0 0 \\ 0 0 0 } } \\, ( 7 8 \\ 1 2 5 - 1 8 \\ 7 5 0 ) \\; = \\; { \\frac { 5 9 \\ 3 7 5 } { 4 0 0 \\ 0 0 0 } } \\; = \\; 0 . 1 4 8 \\ \\text{MPa}
-$$
-
-**Volume:**
-
-$$
-V \\; = \\; 2 \\, \\pi \\, r \\, L \\, t \\; = \\; 2 \\, \\pi \\times 5 0 0 \\times 2 \\ 0 0 0 \\times 1 0 \\; = \\; 6 2 . 8 \\times 1 0 ^ { 6 } \\ \\text{mm} ^ { 3 }
-$$
-
-**Total strain energy:**
-
-$$
-U \\; = \\; U _ { 0 } \\times V \\; = \\; 0 . 1 4 8 \\times 6 2 . 8 \\times 1 0 ^ { 6 } \\; = \\; { \\bf 9 \\ 2 9 4 } \\ \\text{J} \\; = \\; { \\bf 9 . 3 } \\ \\text{kJ}
-$$
-
-**The strain energy is 9.3 kJ. The engineer would use the strain energy to calculate the burst pressure, and the burst pressure is the reason the pressure vessel is designed for the energy, not just the stress.**
-:::
-
-::: example Castigliano's theorem for a frame {#ex-frame-castigliano level=3 check="2"}
-A portal frame (two columns of height $h = 3$ m and a beam of span $L = 4$ m) carries a horizontal load $F = 2 0$ kN at the top of one column. $E \\, I = 1 0 ^ { 7 }$ N\\.m\\.2 for all members. Calculate the horizontal deflection at the load point using Castigliano's theorem.
-
-**Bending moments:**
-- Column AB (loaded side): $M _ { 1 } ( x ) = F \\, x$ for $0 \\le x \\le h$
-- Beam BC: $M _ { 2 } ( x ) = F \\, h$ for $0 \\le x \\le L$
-- Column DE (unloaded side): $M _ { 3 } ( x ) = 0$
-
-**Castigliano's theorem:**
-
-$$
-\\delta \\; = \\; \\int _ { 0 } ^ { h } { \\frac { F \\, x } { E \\, I } } \\, x \\, d x \\; + \\; \\int _ { 0 } ^ { L } { \\frac { F \\, h } { E \\, I } } \\, h \\, d x
-$$
-
-$$
-\\delta \\; = \\; { \\frac { F } { E \\, I } } \\, \\left[ { \\frac { x ^ { 3 } } { 3 } } \\right] _ { 0 } ^ { h } \\; + \\; { \\frac { F \\, h ^ { 2 } } { E \\, I } } \\, L \\; = \\; { \\frac { F \\, h ^ { 3 } } { 3 \\, E \\, I } } \\; + \\; { \\frac { F \\, h ^ { 2 } \\, L } { E \\, I } }
-$$
-
-$$
-\\delta \\; = \\; { \\frac { 2 0 \\ 0 0 0 \\times 2 7 } { 3 \\times 1 0 ^ { 7 } } } \\; + \\; { \\frac { 2 0 \\ 0 0 0 \\times 9 \\times 4 } { 1 0 ^ { 7 } } } \\; = \\; 0 . 0 1 8 + 0 . 0 7 2 \\; = \\; { \\bf 9 0 } \\ \\text{mm}
-$$
-
-**The horizontal deflection is 90 mm. The engineer would use the strain energy to calculate the deflection by Castigliano's theorem, and the deflection is the reason the engineer can design the frame.**
+::: summary
+- Strain energy density is $\tfrac12\sigma_{ij}\varepsilon_{ij}$ for a linear material; for slender members $U = \int N^2/(2EA) + \int M^2/(2EI) + \int T^2/(2GJ)\,(+\int f_sV^2/(2GA))$.
+- Clapeyron: $U = \tfrac12\sum P_i\Delta_i$. Betti–Maxwell: cross-work is reciprocal and flexibility (and stiffness) matrices are symmetric.
+- Castigliano: $\Delta_k = \partial U/\partial P_k$ for linear structures; add a dummy load for displacements where no load acts; $\partial U/\partial R = 0$ gives a redundant at a rigid support (least work).
+- Virtual work holds for any equilibrium stress field paired with any compatible displacement field, for any material. With a unit virtual load it gives the unit-load method $\Delta = \sum\int mM/(EI)\,dx + \dots$, which also handles thermal strain and settlement.
+- Minimum potential energy: among admissible displacement fields, the exact one minimises $\Pi = U - (\text{work potential of loads})$; the excess is the strain energy of the error.
+- Rayleigh–Ritz: trial functions satisfying the kinematic conditions turn $\Pi$ into a quadratic form; $\mathbf{K}\mathbf{a} = \mathbf{F}$ gives the coefficients. Results are too stiff in energy; displacements converge fastest, moments and shears more slowly. With local polynomial trial functions it is the finite element method.
 :::
 
 ## Exercises
 
-::: exercise Strain energy in an axial bar {#ex-axial-energy level=3 check="2"}
-A steel bar ($E = 2 0 0$ GPa, $A = 5 0 0$ mm², $L = 2$ m) carries an axial load $F = 5 0$ kN. Calculate the strain energy.
-
+::: exercise Energy in a bar {level=1 check="100"}
+A steel tie of length $2\,\mathrm{m}$ and area $500\,\mathrm{mm^2}$ ($E = 200\,\mathrm{GPa}$) carries an axial force of $100\,\mathrm{kN}$. How much strain energy does it store? (Enter the energy in J.)
 ::: solution
-$$
-U \; = \; { \frac { F ^ { 2 } \, L } { 2 \, E \, A } } \; = \; { \frac { ( 5 0 \ 0 0 0 ) ^ { 2 } \times 2 } { 2 \times 2 0 0 \times 1 0 ^ { 9 } \times 5 0 0 \times 1 0 ^ { - 6 } } } \; = \; { \frac { 5 \times 1 0 ^ { 9 } } { 2 \times 1 0 ^ { 8 } } } \; = \; { \bf 2 5 } \ \text{J}
-$$
-
-**The strain energy is 25 J.**
+$U = P^2L/(2EA) = (10^5)^2 \times 2/(2 \times 2\times10^{11} \times 5\times10^{-4}) = 2\times10^{10}/(2\times10^{8}) = 100\,\mathrm{J}$. Check by Clapeyron: extension $\Delta = PL/(EA) = 2\,\mathrm{mm}$ and $\tfrac12 P\Delta = \tfrac12 \times 10^5 \times 0.002 = 100\,\mathrm{J}$ ✓.
 :::
 :::
 
-::: exercise Castigliano's theorem for a simply supported beam {#ex-castigliano-beam level=3 check="2"}
-A simply supported beam of length $L = 3$ m carries a central load $F = 2 0$ kN. $E \, I = 5 \times 1 0 ^ { 6 }$ N·m². Calculate the central deflection using Castigliano's theorem.
-
+::: exercise Reciprocity in a test {level=1 check="3.2"}
+In a load test on a bridge girder, a $5\,\mathrm{kN}$ load at point A deflects point B by $2.0\,\mathrm{mm}$. What deflection at A would an $8\,\mathrm{kN}$ load at B produce, if the girder is linear elastic? (Enter the deflection in mm.)
 ::: solution
-**Bending moment (for $0 \le x \le L / 2$ ):** $M ( x ) = F \, x / 2$
-
-**Castigliano's theorem:**
-
-$$
-\delta \; = \; 2 \int _ { 0 } ^ { L / 2 } { \frac { M } { E \, I } } \, { \frac { \partial M } { \partial F } } \, d x \; = \; 2 \int _ { 0 } ^ { L / 2 } { \frac { F \, x / 2 } { E \, I } } \, { \frac { x } { 2 } } \, d x \; = \; { \frac { F } { 2 \, E \, I } } \int _ { 0 } ^ { L / 2 } x ^ { 2 } \, d x
-$$
-
-$$
-\delta \; = \; { \frac { F } { 2 \, E \, I } } \, \left[ { \frac { x ^ { 3 } } { 3 } } \right] _ { 0 } ^ { L / 2 } \; = \; { \frac { F } { 2 \, E \, I } } \, { \frac { L ^ { 3 } } { 2 4 } } \; = \; { \frac { F \, L ^ { 3 } } { 4 8 \, E \, I } }
-$$
-
-$$
-\delta \; = \; { \frac { 2 0 \ 0 0 0 \times 2 7 } { 4 8 \times 5 \times 1 0 ^ { 6 } } } \; = \; { \frac { 5 4 0 \ 0 0 0 } { 2 4 0 \times 1 0 ^ { 6 } } } \; = \; { \bf 2 . 2 5 } \ \text{mm}
-$$
-
-**The central deflection is 2.25 mm.**
+By Maxwell's theorem $f_{BA} = f_{AB} = 2.0/5 = 0.4\,\mathrm{mm/kN}$, so the deflection at A is $0.4 \times 8 = 3.2\,\mathrm{mm}$. No information about the girder's shape, section or supports is needed.
 :::
 :::
 
-::: exercise Strain energy in a torsion shaft {#ex-torsion-energy level=3 check="2"}
-A steel shaft ($G = 8 0$ GPa, $J = 1 0 ^ { - 6 }$ m⁴, $L = 1 . 5$ m) carries a torque $T = 5 0 0$ N·m. Calculate the strain energy.
-
+::: exercise Cantilever by Castigliano {level=1 check="20"}
+Use Castigliano's theorem to find the tip deflection of a cantilever of length $2\,\mathrm{m}$ and $EI = 4\times10^{5}\,\mathrm{N\,m^2}$ under an end load of $3\,\mathrm{kN}$. (Enter the deflection in mm.)
 ::: solution
-$$
-U \; = \; { \frac { T ^ { 2 } \, L } { 2 \, G \, J } } \; = \; { \frac { 5 0 0 ^ { 2 } \times 1 . 5 } { 2 \times 8 0 \times 1 0 ^ { 9 } \times 1 0 ^ { - 6 } } } \; = \; { \frac { 3 7 5 \ 0 0 0 } { 1 6 0 \ 0 0 0 } } \; = \; { \bf 2 . 3 4 } \ \text{J}
-$$
-
-**The strain energy is 2.34 J.**
+With $x$ from the tip, $M = -Px$ and $\partial M/\partial P = -x$, so $\Delta = \int_0^L Px^2/(EI)\,dx = PL^3/(3EI) = 3000 \times 8/(3 \times 4\times10^{5}) = 0.020\,\mathrm{m} = 20\,\mathrm{mm}$.
 :::
 :::
 
-::: exercise Castigliano's theorem with dummy load {#ex-dummy-load level=3 check="2"}
-A cantilever beam of length $L$ carries a uniformly distributed load $w$ . Use Castigliano's theorem with a dummy load $P$ at the tip to find the tip deflection.
-
+::: exercise End slope by unit load {level=2 check="8"}
+A simply supported beam of span $L = 4\,\mathrm{m}$ and $EI = 2\times10^{6}\,\mathrm{N\,m^2}$ carries a central load $P = 16\,\mathrm{kN}$. Use the unit-load method (with a unit couple at the left support) to find the slope there. (Enter the slope in milliradians.)
 ::: solution
-**Bending moment:** $M ( x ) = w \, ( L - x ) ^ { 2 } / 2 + P \, ( L - x )$
-
-**Castigliano's theorem:**
-
+Real moment: $M = Px/2$ for $0 \le x \le L/2$, symmetric about mid-span. A unit clockwise couple at the left end $x = 0$ of a simply supported beam produces reactions $1/L$ (down at the left, up at the right) and the moment $m = 1 - x/L$ (sagging positive) along the span. Then
 $$
-\delta \; = \; \int _ { 0 } ^ { L } { \frac { M } { E \, I } } \, { \frac { \partial M } { \partial P } } \, d x \; = \; \int _ { 0 } ^ { L } { \frac { w \, ( L - x ) ^ { 2 } / 2 + P \, ( L - x ) } { E \, I } } \, ( L - x ) \, d x
+\theta = \int_0^{L/2}\frac{(1 - x/L)(Px/2)}{EI}\,dx + \int_{L/2}^{L}\frac{(1 - x/L)\,P(L - x)/2}{EI}\,dx = \frac{P}{2EI}\Bigl(\frac{L^2}{12} + \frac{L^2}{24}\Bigr) = \frac{PL^2}{16EI}.
 $$
-
-Setting $P = 0$ :
-
-$$
-\delta \; = \; { \frac { w } { 2 \, E \, I } } \int _ { 0 } ^ { L } ( L - x ) ^ { 3 } \, d x \; = \; { \frac { w } { 2 \, E \, I } } \, { \frac { L ^ { 4 } } { 4 } } \; = \; { \bf { \frac { w \, L ^ { 4 } } { 8 \, E \, I } } }
-$$
-
-**The tip deflection is $w \, L ^ { 4 } / ( 8 \, E \, I )$ , which matches the exact solution. The dummy load is the reason Castigliano's theorem works for the displacement at a point where no force is applied.**
+(The first integral is $\tfrac{P}{2EI}[\tfrac{L^2}{8} - \tfrac{L^2}{24}] = \tfrac{P}{2EI}\cdot\tfrac{L^2}{12}$; the second, with $u = L - x$, is $\tfrac{P}{2EI}\int_0^{L/2}\tfrac{u^2}{L}\,du = \tfrac{P}{2EI}\cdot\tfrac{L^2}{24}$.) Numerically $\theta = 16\,000 \times 16/(16 \times 2\times10^{6}) = 0.008\,\mathrm{rad} = 8\,\mathrm{mrad}$, the standard table value.
 :::
 :::
 
-::: exercise Principle of virtual work {#ex-virtual-work level=3 check="2"}
-A bar of length $L$ and cross-sectional area $A$ is fixed at one end and carries a distributed load $q ( x ) = q _ { 0 } \, x / L$ . Use the virtual work principle with the virtual displacement $\delta u = x / L$ to find the reaction at the fixed end.
-
+::: exercise Propped cantilever with a point load {level=2 check="10"}
+A beam of span $L$ is built in at its right end and propped on a roller at its left end. A load $P = 32\,\mathrm{kN}$ acts at mid-span. Find the prop reaction by least work. (Enter the reaction in kN.)
 ::: solution
-**Virtual work equation:**
-
+With $x$ from the prop and $R$ the redundant: $M = Rx$ for $x < L/2$ and $M = Rx - P(x - L/2)$ for $x > L/2$, with $\partial M/\partial R = x$. Setting $\partial U/\partial R = 0$:
 $$
-R \, \delta u ( 0 ) + \int _ { 0 } ^ { L } q ( x ) \, \delta u ( x ) \, d x \; = \; \int _ { 0 } ^ { L } \sigma \, { \frac { \partial ( \delta u ) } { \partial x } } \, A \, d x
+R\frac{L^3}{3} - P\int_{L/2}^{L}\Bigl(x - \frac L2\Bigr)x\,dx = R\frac{L^3}{3} - P\cdot\frac{5L^3}{48} = 0 \;\Rightarrow\; R = \frac{5P}{16}.
 $$
-
-Since $\delta u ( 0 ) = 0$ (fixed end) and $\delta u ( x ) = x / L$ :
-
-$$
-\int _ { 0 } ^ { L } { \frac { q _ { 0 } \, x } { L } } \, { \frac { x } { L } } \, d x \; = \; \int _ { 0 } ^ { L } \sigma \, { \frac { 1 } { L } } \, A \, d x
-$$
-
-$$
-{ \frac { q _ { 0 } } { L ^ { 2 } } } \, { \frac { L ^ { 3 } } { 3 } } \; = \; { \frac { \sigma \, A } { L } } \, L \quad \Longrightarrow \quad { \frac { q _ { 0 } \, L } { 3 } } \; = \; \sigma \, A
-$$
-
-**The reaction at the fixed end is $R = q _ { 0 } \, L / 3$ , which is the total applied load. The virtual displacement must satisfy the geometric boundary conditions, and the satisfaction is the reason the principle of virtual work is correct.**
+(The integral: $[x^3/3 - Lx^2/4]_{L/2}^{L} = (L^3/3 - L^3/4) - (L^3/24 - L^3/16) = L^3/12 + L^3/48 = 5L^3/48$.) So $R = 5 \times 32/16 = 10\,\mathrm{kN}$, independent of $L$ and $EI$.
 :::
 :::
 
-::: exercise Minimum potential energy {#ex-min-potential level=3 check="2"}
-A spring of stiffness $k = 2 0 0$ N/m is subjected to a force $F = 4 0$ N. Use the principle of minimum potential energy to find the equilibrium displacement.
-
+::: exercise Symmetric two-bar truss {level=2 check="0.4"}
+A load $P = 10\,\mathrm{kN}$ hangs from the joint of two identical bars, each $2\,\mathrm{m}$ long with $EA = 1.0\times10^{8}\,\mathrm{N}$, pinned to a ceiling and each inclined at $60°$ to the vertical. Find the vertical deflection of the joint. (Enter the deflection in mm.)
 ::: solution
-**Potential energy:**
-
-$$
-\Pi \; = \; { \frac { 1 } { 2 } } \, k \, u ^ { 2 } - F \, u \; = \; { \frac { 1 } { 2 } } \times 2 0 0 \times u ^ { 2 } - 4 0 \times u \; = \; 1 0 0 \, u ^ { 2 } - 4 0 \, u
-$$
-
-**Minimisation:**
-
-$$
-{ \frac { d \Pi } { d u } } \; = \; 2 0 0 \, u - 4 0 \; = \; 0 \quad \Longrightarrow \quad u \; = \; { \frac { 4 0 } { 2 0 0 } } \; = \; { \bf 0 . 2 } \ \text{m}
-$$
-
-**Second derivative check:**
-
-$$
-{ \frac { d ^ { 2 } \Pi } { d u ^ { 2 } } } \; = \; 2 0 0 \; > \; 0 \quad \checkmark \quad \text{(minimum, stable equilibrium)}
-$$
-
-**The equilibrium displacement is 0.2 m, and the potential energy is a minimum (stable equilibrium).**
+By symmetry each bar carries tension $F = P/(2\cos60°) = P$, so $\partial F/\partial P = 1/(2\cos60°) = 1$. Then $\delta = 2 \times F(\partial F/\partial P)L/(EA) = PL/(2EA\cos^2 60°) = 2PL/(EA) = 2 \times 10^4 \times 2/10^8 = 4\times10^{-4}\,\mathrm{m} = 0.4\,\mathrm{mm}$. Note the $1/\cos^2\theta$: shallow bars are both highly stressed and very flexible, because each bar's extension is amplified geometrically into a larger vertical movement.
 :::
 :::
 
-::: exercise Derivation: Castigliano's theorem {#ex-derive-castigliano level=4 check="2"}
-Show that Castigliano's theorem $\delta _ { i } = \partial U / \partial F _ { i }$ is derived from the principle of conservation of energy. Write the expression for the deflection of a beam under a point load.
-
+::: exercise Ritz for a uniformly loaded cantilever {level=2 check="2/3"}
+A cantilever of length $L$, built in at $x = 0$, carries a uniform load $w$. Using the single trial function $v = ax^2$, find the Ritz estimate of the tip deflection, and give its ratio to the exact value $wL^4/(8EI)$. (Enter the ratio as a fraction.)
 ::: solution
-The total potential energy is:
-
-$$
-\Pi \; = \; U - \sum _ { i } \, F _ { i } \, \delta _ { i }
-$$
-
-At equilibrium, $\partial \Pi / \partial \delta _ { i } = 0$ :
-
-$$
-{ \frac { \partial U } { \partial \delta _ { i } } } - F _ { i } \; = \; 0 \quad \Longrightarrow \quad F _ { i } \; = \; { \frac { \partial U } { \partial \delta _ { i } } }
-$$
-
-By the inverse function theorem:
-
-$$
-\delta _ { i } \; = \; { \frac { \partial U } { \partial F _ { i } } }
-$$
-
-For a beam:
-
-$$
-\delta \; = \; { \frac { \partial U } { \partial F } } \; = \; { \frac { \partial } { \partial F } } \int { \frac { M ^ { 2 } } { 2 \, E \, I } } \, d x \; = \; \int { \frac { M } { E \, I } } \, { \frac { \partial M } { \partial F } } \, d x
-$$
-
-**Castigliano's theorem is the reason the engineer can calculate the displacement by differentiating the strain energy, and the differentiation is the reason the engineer can solve the problem in one line.** $\blacksquare$
+$U = \tfrac12 EI\int_0^L(2a)^2\,dx = 2EIa^2L$; load potential $-\int_0^L wax^2\,dx = -waL^3/3$. Then $d\Pi/da = 4EIaL - wL^3/3 = 0$, $a = wL^2/(12EI)$, and $v(L) = wL^4/(12EI)$. Ratio $= 8/12 = 2/3$. Too stiff, as expected: constant curvature cannot follow a moment that falls from $wL^2/2$ at the root to zero at the tip.
 :::
 :::
 
-::: exercise Derivation: the principle of virtual work {#ex-derive-virtual-work level=4 check="2"}
-Show that the principle of virtual work $\sum F _ { i } \, \delta u _ { i } = \int \sigma _ { i j } \, \delta \varepsilon _ { i j } \, d V$ is derived from the equilibrium equation and the divergence theorem.
-
+::: exercise Ritz for a central point load {level=3 check="2/pi^4"}
+Use the one-term trial function $v = a\sin(\pi x/L)$ to estimate the mid-span deflection of a simply supported beam under a central point load $P$. Write the result as $c\,PL^3/(EI)$ and compare $c$ with the exact $1/48$. (Enter $c$ as an exact expression.)
 ::: solution
-The equilibrium equation is:
-
-$$
-{ \frac { \partial \sigma _ { i j } } { \partial x _ { j } } } + X _ { i } \; = \; 0
-$$
-
-Multiply by the virtual displacement $\delta u _ { i }$ and integrate over the volume:
-
-$$
-\int _ { V } \, ( { \frac { \partial \sigma _ { i j } } { \partial x _ { j } } } + X _ { i } ) \, \delta u _ { i } \, d V \; = \; 0
-$$
-
-Apply the divergence theorem to the first term:
-
-$$
-\int _ { V } \, { \frac { \partial ( \sigma _ { i j } \, \delta u _ { i } ) } { \partial x _ { j } } } \, d V - \int _ { V } \, \sigma _ { i j } \, { \frac { \partial \, \delta u _ { i } } { \partial x _ { j } } } \, d V + \int _ { V } \, X _ { i } \, \delta u _ { i } \, d V \; = \; 0
-$$
-
-The first term becomes a surface integral:
-
-$$
-\int _ { S } \, T _ { i } \, \delta u _ { i } \, d S + \int _ { V } \, X _ { i } \, \delta u _ { i } \, d V \; = \; \int _ { V } \, \sigma _ { i j } \, \delta \varepsilon _ { i j } \, d V
-$$
-
-The left side is the external virtual work, and the right side is the internal virtual work:
-
-$$
-\delta W _ { \text{ext } } \; = \; \delta W _ { \text{int } }
-$$
-
-**The principle of virtual work is the reason the engineer can solve the boundary-value problem without solving the differential equation, and the solution is the reason the engineer can design the structure.** $\blacksquare$
+$U = \tfrac{EI}{2}a^2(\pi/L)^4(L/2) = \pi^4EIa^2/(4L^3)$ and the load potential is $-P\,v(L/2) = -Pa$. Then $d\Pi/da = \pi^4EIa/(2L^3) - P = 0$, so $a = 2PL^3/(\pi^4EI)$ and $c = 2/\pi^4 = 0.020532$, against $1/48 = 0.020833$: $1.4\,\%$ low, which for a single point load is the guaranteed direction. The error is larger than for the distributed load ($0.4\,\%$) because the true deflected shape has a kink in its third derivative under the load, which a smooth sine cannot reproduce.
 :::
 :::
 
-::: quiz Energy methods {#quiz-energy}
-Castigliano's theorem states that the displacement is:
-
-- [ ] The derivative of the force with respect to the strain energy
-- [x] The partial derivative of the strain energy with respect to the force
-- [ ] The integral of the strain energy over the volume
-- [ ] The product of the force and the displacement
-
+::: exercise A ring under diametral compression {level=3 check="pi/4 - 2/pi" #ex-ring}
+A thin circular ring of radius $R$ and bending stiffness $EI$ is squeezed between two equal and opposite forces $P$ along a diameter. (a) Using symmetry and least work, find the bending moment $M_0$ at the sections at $90°$ to the load. (b) Using Castigliano's theorem, show that the loaded diameter shortens by $\delta = (\pi/4 - 2/\pi)\,PR^3/(EI)$. Consider bending only. (Enter the coefficient of $PR^3/(EI)$.)
 ::: solution
-**The partial derivative of the strain energy with respect to the force.** Castigliano's theorem states that the displacement at the point of application of a force is the partial derivative of the strain energy with respect to that force: $\delta _ { i } = \partial U / \partial F _ { i }$ . The dummy load is the reason Castigliano's theorem works for the displacement at a point where no force is applied.
+(a) Cut the ring along the diameter perpendicular to the load and consider one quarter, from a side section ($\theta = 0$) to the load point ($\theta = \pi/2$), with $\theta$ measured from the side. At the side section, by symmetry, there is no shear force; the normal force is $P/2$ (compressive) and the moment $M_0$ is unknown — the ring is internally indeterminate. Taking moments about the point at angle $\theta$ of the forces on the quarter, $M(\theta) = M_0 - \tfrac{P}{2}R(1 - \cos\theta)$. Symmetry also requires the side section not to rotate, so $\partial U/\partial M_0 = \int_0^{\pi/2} M\,R\,d\theta/(EI) = 0$:
+$$
+M_0\frac{\pi}{2} - \frac{PR}{2}\Bigl(\frac{\pi}{2} - 1\Bigr) = 0 \;\Rightarrow\; M_0 = \frac{PR}{2}\Bigl(1 - \frac{2}{\pi}\Bigr) = 0.182\,PR,
+$$
+and at the load point $M(\pi/2) = M_0 - PR/2 = -PR/\pi = -0.318\,PR$, the largest moment in the ring.
+
+(b) The pair of loads $P$ does work on the relative approach of the load points, so $\partial U/\partial P = \delta$ (see the warning on tied loads). The whole ring is four quarters, $U = 4\int_0^{\pi/2} M^2R\,d\theta/(2EI)$, and since $M$ is proportional to $P$, $\partial U/\partial P = 2U/P$:
+$$
+\delta = \frac{4R}{EIP}\int_0^{\pi/2}M^2\,d\theta.
+$$
+Write $M = \tfrac{PR}{2}(\cos\theta - \tfrac{2}{\pi})$. Then $\int_0^{\pi/2}(\cos\theta - 2/\pi)^2\,d\theta = \pi/4 - (4/\pi)(1) + (4/\pi^2)(\pi/2) = \pi/4 - 2/\pi$, and
+$$
+\delta = \frac{4R}{EIP}\cdot\frac{P^2R^2}{4}\Bigl(\frac{\pi}{4} - \frac{2}{\pi}\Bigr) = \Bigl(\frac{\pi}{4} - \frac{2}{\pi}\Bigr)\frac{PR^3}{EI} = 0.149\,\frac{PR^3}{EI}.
+$$
+The coefficient is small because the ring's moments change sign and partly cancel; the same calculation with a horizontal pair of dummy loads gives the increase of the other diameter, $(2/\pi - 1/2)PR^3/(EI) = 0.137\,PR^3/(EI)$.
 :::
 :::
 
-::: quiz Minimum potential energy {#quiz-min-potential}
-The principle of minimum potential energy states that the equilibrium configuration:
-
-- [ ] Maximises the potential energy
-- [x] Minimises the potential energy
-- [ ] Makes the potential energy zero
-- [ ] Makes the potential energy constant
-
+::: exercise Design: stiffness of a C-frame {level=3}
+A small hydraulic press has a C-shaped steel frame: two horizontal arms of length $a = 0.30\,\mathrm{m}$ joined by a vertical back of length $h = 0.40\,\mathrm{m}$, all of the same section. The press force $P = 20\,\mathrm{kN}$ pushes the ends of the arms apart. (a) Show by the unit-load method that the opening of the jaw, considering bending only, is $\delta = \dfrac{P}{EI}\Bigl(\dfrac{2a^3}{3} + a^2h\Bigr)$. (b) Choose a solid rectangular section $60\,\mathrm{mm}$ wide so that $\delta \le 0.10\,\mathrm{mm}$ ($E = 200\,\mathrm{GPa}$), and check the bending stress. (c) Discuss what this design neglects.
 ::: solution
-**Minimises the potential energy.** The principle of minimum potential energy states that the equilibrium configuration minimises the total potential energy: $\delta \Pi = 0$ and $\delta ^ { 2 } \Pi > 0$ . The minimum is the reason the equilibrium configuration is stable, and the stability is the reason the structure does not collapse.
+(a) Free bodies: in an arm at distance $x$ from its jaw end the moment is $Px$; in the back, the arm length is the moment arm throughout, $M = Pa$. A unit pair of loads at the jaw ends gives $m = M/P$. Hence
+$$
+\delta = 2\int_0^a\frac{Px^2}{EI}\,dx + \int_0^h\frac{Pa^2}{EI}\,dx = \frac{P}{EI}\Bigl(\frac{2a^3}{3} + a^2h\Bigr).
+$$
+(b) $\tfrac23 a^3 + a^2h = 0.018 + 0.036 = 0.054\,\mathrm{m^3}$. Then $I \ge P \times 0.054/(E\,\delta_\text{max}) = 20\,000 \times 0.054/(2\times10^{11} \times 10^{-4}) = 5.4\times10^{-5}\,\mathrm{m^4}$. For a width of $60\,\mathrm{mm}$, $I = bd^3/12$ gives $d^3 \ge 12 \times 5.4\times10^{-5}/0.06 = 0.0108\,\mathrm{m^3}$, so $d \ge 0.221\,\mathrm{m}$; take $d = 225\,\mathrm{mm}$ ($I = 5.70\times10^{-5}\,\mathrm{m^4}$, $\delta = 0.095\,\mathrm{mm}$). The largest moment is $Pa = 6\,\mathrm{kN\,m}$ in the back and at the arm roots, giving $\sigma = M(d/2)/I = 6000 \times 0.1125/5.70\times10^{-5} = 11.8\,\mathrm{MPa}$. Stiffness, not strength, governs: the stress is a small fraction of yield — typical of machine frames, which are sized for deflection.
+(c) The back contributes two-thirds of the opening, so a deeper back alone would be more efficient than a uniform section, and a hollow or I-section would save mass for the same $I$. With arms only $1.3$–$1.8$ depths long, shear deformation and the flexibility of the corners (which beam theory treats as rigid) are significant; a finite element model or a test would refine the estimate. Fatigue at the inside corners, where the stress is concentrated, needs a generous fillet. As with every example in this atlas, a real press frame is designed to the relevant machinery safety standards and checked by a qualified engineer.
 :::
 :::
-
-## Where this lesson leads
-
-- **[[solid-mechanics/thick-cylinders-discs]]** — The strain energy is used to derive the Lamé solution.
-- **[[solid-mechanics/thin-walled-structures]]** — The virtual work principle is used to derive the shear flow.
-- **[[solid-mechanics/plates]]** — The minimum potential energy principle is used to derive the plate equation.
-- **[[solid-mechanics/plasticity]]** — The limit analysis uses the virtual work principle to find the collapse load.
-- **[[solid-mechanics/fracture-mechanics]]** — The energy release rate is derived from the strain energy.
-- **[[solid-mechanics/composites]]** — The strain energy is used to derive the laminate stiffness matrix.
-- **[[finite-element-method/weak-forms]]** — The principle of virtual work is the foundation of the finite element method.
-- **[[finite-element-method/direct-stiffness]]** — The minimum potential energy principle is the foundation of the direct stiffness method.
-- **[[vibrations/vibration-fundamentals]]** — The Rayleigh method uses the energy balance to estimate the natural frequency.
-- **[[machine-design/shafts]]** — Castigliano's theorem is used to calculate the shaft deflection.
-
-::: history Energy methods: from Bernoulli to the finite element method {#history-energy}
-**1691** — **Gottfried Wilhelm Leibniz** introduces the concept of **vis viva** (living force), which is the kinetic energy. **Leibniz's vis viva is the reason the energy concept is the oldest concept in mechanics, and the age is the reason the energy concept is the most refined concept in mechanics.**
-
-**1717** — **Johann Bernoulli** publishes the **principle of virtual work**, which states that the external virtual work equals the internal virtual work. **Bernoulli's principle of virtual work is the reason the engineer can solve the boundary-value problem without solving the differential equation, and the solution is the reason the engineer can design the structure.**
-
-**1826** — **Gaspard-Gustave Coriolis** introduces the concept of **work**, which is the force times the distance. **Coriolis's work concept is the reason the engineer can calculate the energy transferred by the force, and the calculation is the reason the engineer can design the machine.**
-
-**1857** — **Albert Castigliano** publishes his doctoral thesis on the **minimum potential energy method**, which becomes Castigliano's theorems. **Castigliano's theorems are the reason the engineer can calculate the displacement by differentiating the strain energy, and the differentiation is the reason the engineer can solve the problem in one line.**
-
-**1870** — **Lord Rayleigh** publishes the **Rayleigh method**, which uses the energy balance to estimate the natural frequency. **The Rayleigh method is the reason the engineer can estimate the natural frequency without solving the differential equation, and the estimation is the reason the engineer can design the structure to avoid resonance.**
-
-**1909** — **Werner Ritz** publishes the **Rayleigh-Ritz method**, which approximates the displacement field by a trial function and minimises the potential energy. **The Rayleigh-Ritz method is the reason the engineer can solve the boundary-value problem approximately, and the approximation is the reason the engineer can design the structure.**
-
-**1943** — **Richard Courant** publishes the **finite element method** based on the minimum potential energy principle. **The finite element method is the reason the engineer can solve the boundary-value problem for complex geometries, and the solution is the reason the engineer can design the structure.**
-
-**1960s** — **The finite element method** is developed into a practical tool by **Turner, Clough, Martin, and Topp**, who apply the direct stiffness method to aerospace structures. **The direct stiffness method is the reason the finite element method is the most widely used numerical method in engineering, and the numerical method is the reason the engineer can design the structure.**
-:::
-
-::: summary Energy methods {#summary-energy}
-- **The strain energy density is the strain energy per unit volume: $U _ { 0 } = ( 1 / 2 ) \, \sigma _ { i j } \, \varepsilon _ { i j }$ .** The strain energy is the reason the engineer can calculate the displacement by Castigliano's theorem, and the displacement is the reason the engineer can design the structure.
-- **Castigliano's first theorem states that the displacement is the partial derivative of the strain energy with respect to the force: $\delta _ { i } = \partial U / \partial F _ { i }$ .** The dummy load is the reason Castigliano's theorem works for the displacement at a point where no force is applied.
-- **Castigliano's second theorem states that the force is the partial derivative of the strain energy with respect to the displacement: $F _ { i } = \partial U / \partial \delta _ { i }$ .** The second theorem is the reason the engineer can calculate the force from the displacement, and the calculation is the reason the engineer can design the structure.
-- **The principle of virtual work states that the external virtual work equals the internal virtual work: $\sum F _ { i } \, \delta u _ { i } = \int \sigma _ { i j } \, \delta \varepsilon _ { i j } \, d V$ .** The virtual displacement must satisfy the geometric boundary conditions, and the satisfaction is the reason the principle of virtual work is correct.
-- **The principle of minimum potential energy states that the equilibrium configuration minimises the total potential energy: $\delta \Pi = 0$ and $\delta ^ { 2 } \Pi > 0$ .** The minimum is the reason the equilibrium configuration is stable, and the stability is the reason the structure does not collapse.
-- **The Rayleigh-Ritz method approximates the displacement field by a trial function with unknown coefficients and minimises the potential energy with respect to the coefficients.** The Rayleigh-Ritz method is the reason the engineer can solve the boundary-value problem approximately, and the approximation is the reason the engineer can design the structure.
-- **The strain energy in a beam is $U = \int M ^ { 2 } \, d x / ( 2 \, E \, I )$ , in a shaft is $U = T ^ { 2 } \, L / ( 2 \, G \, J )$ , and in a bar is $U = F ^ { 2 } \, L / ( 2 \, E \, A )$ .** The strain energy is the reason the engineer can calculate the displacement by Castigliano's theorem.
-- **The finite element method is based on the minimum potential energy principle.** The finite element method is the reason the engineer can solve the boundary-value problem for complex geometries, and the solution is the reason the engineer can design the structure.
-- **The Rayleigh method uses the energy balance to estimate the natural frequency.** The Rayleigh method is the reason the engineer can estimate the natural frequency without solving the differential equation, and the estimation is the reason the engineer can design the structure to avoid resonance.
-- **The energy method is the most powerful tool in solid mechanics, because the energy method relates the work done by the external forces to the strain energy stored in the body.** The relationship is the reason the engineer can calculate the displacement, the stress, and the stability of any structure without solving the differential equations of elasticity.
-:::
-
-## Further reading
-
-- **Stephen P. Timoshenko and James N. Goodier (1970)** — *Theory of Elasticity*, 3rd ed. McGraw-Hill. The strain energy, Castigliano's theorems, and the principle of virtual work.
-- **S.P. Timoshenko and S. Woinowsky-Krieger (1959)** — *Theory of Plates and Shells*, 2nd ed. McGraw-Hill. The energy methods in plate and shell theory.
-- **Y. Fung (1965)** — *A First Course in Continuum Mechanics*. Prentice-Hall. The strain energy and the principle of virtual work.
-- **Morris Dolph (1977)** — *Mechanics of Materials*. Wiley. The strain energy and Castigliano's theorems.
-- **O.C. Zienkiewicz and R.L. Taylor (2005)** — *The Finite Element Method*, 6th ed. Butterworth-Heinemann. The energy methods in the finite element context.
-- **L.E. Malvern (1969)** — *Introduction to the Mechanics of a Continuous Medium*. Prentice-Hall. The strain energy and the principle of virtual work.
-- **SC Mal and G. Singh (1991)** — *Continuum Mechanics of Composite Materials*. Kluwer. The energy methods in the composite context.
-- **Thomas J.R. Hughes (2012)** — *The Finite Element Method: Linear Static and Dynamic Finite Element Analysis*. Dover. The energy methods in the finite element context.

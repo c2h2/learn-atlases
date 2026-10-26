@@ -1,508 +1,392 @@
-The plate is the most common structural element: the plate is the floor slab, the aircraft skin, the pressure vessel head, and the microelectromechanical system (MEMS) diaphragm, and the plate is the element that determines the stiffness of the structure. **The engineer who designs the plate without understanding the plate bending theory is not designing the plate; they are designing a plate that will fail by excessive deflection, not by yielding.** The plate bending theory is the reason the engineer can predict the deflection and the stress in the plate, and the prediction is the reason the plate is safe.
+A beam is a structure that is long in one direction; a **plate** is one that is thin in one direction — a flat sheet loaded perpendicular to its surface. The bottom of a water tank, the deck plating of a ship between its stiffeners, the skin of an aircraft wing between stringers, a flat inspection cover bolted to a pressure vessel, a silicon pressure-sensor diaphragm and a printed circuit board are all plates. They carry load the way a beam does, by bending, but they bend in two directions at once, and the two directions are coupled: bending a sheet of paper in one direction makes it stiff against bending in the other. That coupling — the twisting moment — is what makes a plate stiffer than a set of parallel beams of the same span.
 
-The quantitative tools of plate theory are the **Kirchhoff plate equation** (the governing differential equation for plate bending), the **bending moment** (the moment per unit length in the plate), the **plate deflection** (the solution of the plate equation for various boundary conditions), and the **plate buckling** (the critical load for plate instability). The tools are the language in which the plate analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+This chapter develops the classical theory of thin plates due to Kirchhoff. It is the two-dimensional analogue of Euler–Bernoulli beam theory ([[mechanics-of-materials/beam-deflection]]): an assumption about how the plate deforms reduces the three-dimensional elasticity problem of [[solid-mechanics/linear-elasticity]] to one fourth-order partial differential equation for the deflection $w(x, y)$. We solve it for rectangular plates by double Fourier series (Navier's method) and for circular plates in closed form, and then use the same equation to find when a plate in compression buckles — the two-dimensional version of Euler's column problem in [[mechanics-of-materials/buckling]].
 
-::: warning Nine ways plate analysis goes wrong
-**Not checking the thin-plate assumption.** The engineer who uses the Kirchhoff plate theory for a thick plate is not analysing the plate; they are analysing a membrane. **The Kirchhoff plate theory is valid when $t / a < 0 . 1$ , and the validity is the reason the Kirchhoff plate theory is the most widely used theory in plate design.** **Not accounting for the boundary conditions.** The engineer who calculates the plate deflection without checking the boundary conditions is not calculating the plate deflection; they are guessing. **The boundary conditions are the reason the plate deflection is different for different support conditions, and the difference is the reason the plate is designed for the boundary conditions, not the load.** **Not accounting for the aspect ratio.** The engineer who calculates the plate deflection without checking the aspect ratio is not calculating the plate deflection; they are calculating the beam deflection. **The aspect ratio is the reason the plate deflection is different from the beam deflection, and the difference is the reason the plate is designed for the aspect ratio, not the span.** **Not accounting for the Poisson ratio.** The engineer who calculates the plate deflection without checking the Poisson ratio is not calculating the plate deflection; they are calculating the beam deflection. **The Poisson ratio is the reason the plate deflection is different from the beam deflection, and the difference is the reason the plate is designed for the Poisson ratio, not the modulus.** **Not accounting for the buckling.** The engineer who designs the plate without checking the buckling is not designing the plate; they are designing a plate that will fail by buckling. **The buckling is the reason the plate is designed for the buckling load, not the yield load, and the buckling load is the reason the plate is the most critical component in the aircraft.** **Not accounting for the large deflection.** The engineer who calculates the plate deflection without checking the large deflection is not calculating the plate deflection; they are calculating the small deflection. **The large deflection is the reason the plate is stiffer than the beam, and the stiffness is the reason the plate can carry the load beyond the linear range.** **Not accounting for the anisotropy.** The engineer who calculates the plate deflection without checking the anisotropy is not calculating the plate deflection; they are calculating the isotropic plate deflection. **The anisotropy is the reason the composite plate is stiffer in one direction than the other, and the stiffness is the reason the composite plate is the most widely used plate in the aircraft.** **Not accounting for the thermal load.** The engineer who calculates the plate deflection without checking the thermal load is not calculating the plate deflection; they are calculating the mechanical deflection. **The thermal load is the reason the plate is designed for the thermal load, not just the mechanical load, and the thermal load is the reason the plate is the most critical component in the high-temperature structure.** **Not accounting for the dynamic load.** The engineer who calculates the plate deflection without checking the dynamic load is not calculating the plate deflection; they are calculating the static deflection. **The dynamic load is the reason the plate is designed for the dynamic load, not the static load, and the dynamic load is the reason the plate is the most critical component in the vibrating structure.**
+**Conventions.** The mid-plane of the plate is the $x$–$y$ plane; $z$ points **downward**, as do the deflection $w$ and the lateral load $q$ (force per unit area). The plate has uniform thickness $t$, so $-t/2 \le z \le t/2$. Moments and shear forces are **per unit length** of edge ($\mathrm{N\,m/m}$ and $\mathrm{N/m}$). A positive bending moment produces tension on the bottom face ($z > 0$), as a sagging moment does in a beam.
+
+## Kirchhoff's assumptions and the kinematics
+
+::: definition Kirchhoff plate {#def-kirchhoff}
+A **Kirchhoff (thin) plate** is a flat plate of uniform thickness $t$, small compared with its span $a$ (roughly $t/a < 1/10$), of linear-elastic isotropic material, whose lateral deflection $w$ is small compared with $t$, and which deforms so that:
+1. straight lines normal to the mid-plane remain straight, normal to the deformed mid-plane and unstretched (no transverse shear strain, $\gamma_{xz} = \gamma_{yz} = 0$; $\varepsilon_z = 0$);
+2. the mid-plane does not stretch (no membrane forces);
+3. the normal stress $\sigma_z$ is negligible compared with the in-plane stresses (plane stress in each layer).
 :::
 
-## 1. Kirchhoff plate theory
-
-::: definition The Kirchhoff plate equation {#def-kirchhoff}
-The **Kirchhoff plate equation** is the governing differential equation for the bending of a thin plate, and the Kirchhoff plate equation is the reason the engineer can calculate the deflection and the stress in the plate.
-
+The first assumption is the plate version of "plane sections remain plane and normal". Its consequence is that the whole displacement field follows from $w$. A normal at $(x, y)$ rotates by the slopes $\partial w/\partial x$ and $\partial w/\partial y$, so a point at depth $z$ moves in-plane by
 $$
-D \, \nabla ^ { 4 } w \; = \; q ( x , y )
+u = -z\frac{\partial w}{\partial x}, \qquad v = -z\frac{\partial w}{\partial y},
 $$
+and the strains of [[solid-mechanics/stress-strain-3d]] are
+$$
+\varepsilon_x = -z\frac{\partial^2 w}{\partial x^2}, \qquad \varepsilon_y = -z\frac{\partial^2 w}{\partial y^2}, \qquad \gamma_{xy} = -2z\frac{\partial^2 w}{\partial x\,\partial y}.
+$$ {#eq-plate-strain}
+The three quantities $\kappa_x = -\partial^2w/\partial x^2$, $\kappa_y = -\partial^2w/\partial y^2$ and $\kappa_{xy} = -\partial^2w/\partial x\partial y$ are the **curvatures** and the **twist** of the mid-plane. A plate deformed into a saddle, $w = cxy$, has no curvature in $x$ or $y$ but a uniform twist: lines parallel to $x$ stay straight but rotate as you move along $y$.
 
-where $D$ is the **flexural rigidity** of the plate:
+## Moments and the plate equation
 
+::: proposition Moment–curvature relations {#prop-moment-curvature}
+In a Kirchhoff plate the moments per unit length are
 $$
-D \; = \; { \frac { E \, t ^ { 3 } } { 1 2 \, ( 1 - \nu ^ { 2 } ) } }
+M_x = -D\left(\frac{\partial^2w}{\partial x^2} + \nu\frac{\partial^2w}{\partial y^2}\right), \quad
+M_y = -D\left(\frac{\partial^2w}{\partial y^2} + \nu\frac{\partial^2w}{\partial x^2}\right), \quad
+M_{xy} = -D(1 - \nu)\frac{\partial^2w}{\partial x\,\partial y},
+$$ {#eq-moments}
+where the **flexural rigidity** is
 $$
-
-and $\nabla ^ { 4 }$ is the **biharmonic operator**:
-
-$$
-\nabla ^ { 4 } w \; = \; { \frac { \partial ^ { 4 } w } { \partial x ^ { 4 } } } + 2 \, { \frac { \partial ^ { 4 } w } { \partial x ^ { 2 } \, \partial y ^ { 2 } } } + { \frac { \partial ^ { 4 } w } { \partial y ^ { 4 } } }
-$$
-
-The **bending moments** are:
-
-$$
-M _ { x } \; = \; - D \, \left( { \frac { \partial ^ { 2 } w } { \partial x ^ { 2 } } } + \nu \, { \frac { \partial ^ { 2 } w } { \partial y ^ { 2 } } } \right) \qquad M _ { y } \; = \; - D \, \left( { \frac { \partial ^ { 2 } w } { \partial y ^ { 2 } } } + \nu \, { \frac { \partial ^ { 2 } w } { \partial x ^ { 2 } } } \right)
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Plate type} & \textbf{ } w _ { \max } & \textbf{ } M _ { \max } & \textbf{Use case} \\ \hline
-\text{SS, uniform load} & 0 . 0 0 4 0 6 \, q \, a ^ { 4 } / D & 0 . 0 4 7 9 \, q \, a ^ { 2 } & \text{Floor slab} \\
-\text{Clamped, uniform load} & 0 . 0 0 1 2 6 \, q \, a ^ { 4 } / D & 0 . 0 2 7 3 \, q \, a ^ { 2 } & \text{Pressure vessel head} \\
-\text{SS, point load} & P \, a ^ { 2 } / ( D \, \pi ^ { 2 } ) & P / ( 4 \, \pi ) \times f ( \nu ) & \text{MEMS diaphragm} \\
-\text{Cantilever, uniform load} & 0 . 0 0 1 3 \, q \, a ^ { 4 } / D & 0 . 0 5 \, q \, a ^ { 2 } & \text{Cantilever wing} \\
-\end{array}
-$$
-
-**The Kirchhoff plate theory is valid when $t / a < 0 . 1$ , and the validity is the reason the Kirchhoff plate theory is the most widely used theory in plate design. The engineer who uses the Kirchhoff plate theory for a thick plate is not analysing the plate; they are analysing a membrane.**
+D = \frac{Et^3}{12(1 - \nu^2)} .
+$$ {#eq-D}
+The stresses vary linearly through the thickness and are largest at the faces: $\sigma_x = 12M_xz/t^3$, with $\sigma_{x,\max} = 6M_x/t^2$, and similarly for $\sigma_y$ and $\tau_{xy}$.
 :::
 
-::: definition The plate boundary conditions {#def-plate-bc}
-The **plate boundary conditions** are the constraints on the plate edge, and the plate boundary conditions are the reason the plate deflection is different for different support conditions.
-
+::: proof
+Each layer is in plane stress, so by Hooke's law ([[solid-mechanics/linear-elasticity]]) and [[#eq-plate-strain]]
 $$
-\begin{array} { l c c }
-\textbf{Boundary condition} & \textbf{Deflection} & \textbf{Moment} \\ \hline
-\text{Simply supported (SS)} & w = 0 & M _ { n } = 0 \\
-\text{Clamped (fixed)} & w = 0 & \partial w / \partial n = 0 \\
-\text{Free} & M _ { n } = 0 & V _ { n } = 0 \\
-\text{Guided (sliding)} & \partial w / \partial n = 0 & V _ { n } = 0 \\
-\end{array}
+\sigma_x = \frac{E}{1 - \nu^2}(\varepsilon_x + \nu\varepsilon_y) = -\frac{Ez}{1 - \nu^2}\left(w_{,xx} + \nu w_{,yy}\right), \qquad \tau_{xy} = G\gamma_{xy} = -\frac{Ez}{1 + \nu}w_{,xy},
 $$
-
-The **effective shear force** is:
-
-$$
-V _ { n } \; = \; - D \, { \frac { \partial } { \partial n } } \, ( \nabla ^ { 2 } w ) \; - \; D \, ( 1 - \nu ) \, { \frac { \partial ^ { 3 } w } { \partial n \, \partial s ^ { 2 } } }
-$$
-
-**The boundary conditions are the reason the plate deflection is different for different support conditions, and the difference is the reason the plate is designed for the boundary conditions, not the load. The engineer who calculates the plate deflection without checking the boundary conditions is not calculating the plate deflection; they are guessing.**
+with commas denoting derivatives. The moment per unit length is the first moment of the stress through the thickness, $M_x = \int_{-t/2}^{t/2}\sigma_xz\,dz$; since $\int z^2\,dz = t^3/12$, this gives $M_x = -\frac{Et^3}{12(1 - \nu^2)}(w_{,xx} + \nu w_{,yy})$, and likewise $M_y$. For the twisting moment $M_{xy} = \int\tau_{xy}z\,dz = -\frac{Et^3}{12(1 + \nu)}w_{,xy} = -D(1 - \nu)w_{,xy}$, using $\frac{1}{1 + \nu} = \frac{1 - \nu}{1 - \nu^2}$. Eliminating $w$ between the expressions for $\sigma_x$ and $M_x$ gives $\sigma_x = 12M_xz/t^3$.
 :::
 
-::: widget plot
-title: The deflection of a simply supported plate under uniform load
-f: 1-x^2; 1-x^2*0.5
-x: -1,1
-y: 0,1.2
-labels: w (SS); w (clamped)
-caption: The deflection of a simply supported plate and a clamped plate under uniform load. **The clamped plate is 3.2 times stiffer than the simply supported plate, and the stiffness is the reason the clamped plate is the most widely used plate in pressure vessel design.** **The deflection is proportional to the fourth power of the span, and the fourth power is the reason the plate is designed for the span, not the load.**
+The rigidity $D$ is $EI$ per unit width with $I = t^3/12$, enlarged by $1/(1 - \nu^2)$ — about 10 % for metals. The factor appears because a strip of plate cannot contract sideways freely (the neighbouring strips stop it), so it bends as if it were in plane strain across its width.
+
+::: theorem The plate equation {#thm-plate}
+The deflection of a Kirchhoff plate with uniform rigidity $D$ under lateral load $q(x, y)$ satisfies the biharmonic equation
+$$
+\nabla^4w = \frac{\partial^4w}{\partial x^4} + 2\frac{\partial^4w}{\partial x^2\partial y^2} + \frac{\partial^4w}{\partial y^4} = \frac{q}{D}.
+$$ {#eq-plate}
+The transverse shear forces per unit length are $Q_x = -D\,\partial(\nabla^2w)/\partial x$ and $Q_y = -D\,\partial(\nabla^2w)/\partial y$.
 :::
 
-::: example Simply supported plate under uniform load {#ex-ss-plate level=3 check="2"}
-A simply supported square plate ($a = 2$ m, $t = 2 0$ mm, $E = 2 0 0$ GPa, $\nu = 0 . 3$ ) carries a uniform load $q = 1 0$ kPa. Calculate the maximum deflection and the maximum bending stress.
-
-**Flexural rigidity:**
-
+::: proof
+Take an element $dx\times dy$ of the plate. Its edges carry the moments $M_x$, $M_y$, $M_{xy}$ and shear forces $Q_x$, $Q_y$ per unit length, and its top face the load $q\,dx\,dy$. Vertical equilibrium (the shear forces change across the element):
 $$
-D \; = \; { \frac { E \, t ^ { 3 } } { 1 2 \, ( 1 - \nu ^ { 2 } ) } } \; = \; { \frac { 2 0 0 \ 0 0 0 \times 2 0 ^ { 3 } } { 1 2 \times ( 1 - 0 . 0 9 ) } } \; = \; { \frac { 1 . 6 \times 1 0 ^ { 9 } } { 1 0 . 9 2 } } \; = \; 1 . 4 6 5 \times 1 0 ^ { 8 } \ \text{N} { \cdot } \text{mm}
+\frac{\partial Q_x}{\partial x} + \frac{\partial Q_y}{\partial y} + q = 0 .
 $$
-
-**Maximum deflection (centre):**
-
+Moment equilibrium about an axis parallel to $y$ (neglecting the higher-order moment of $q$):
 $$
-w _ { \max } \; = \; 0 . 0 0 4 0 6 \, { \frac { q \, a ^ { 4 } } { D } } \; = \; 0 . 0 0 4 0 6 \times { \frac { 1 0 \times 1 0 ^ { - 3 } \times 2 0 0 0 ^ { 4 } } { 1 . 4 6 5 \times 1 0 ^ { 8 } } } \; = \; 0 . 0 0 4 0 6 \times { \frac { 1 . 6 \times 1 0 ^ { 1 1 } } { 1 . 4 6 5 \times 1 0 ^ { 8 } } }
+\frac{\partial M_x}{\partial x} + \frac{\partial M_{xy}}{\partial y} - Q_x = 0, \qquad\text{and similarly}\qquad \frac{\partial M_{xy}}{\partial x} + \frac{\partial M_y}{\partial y} - Q_y = 0 .
 $$
-
+Substituting the shear forces into the first equation:
 $$
-w _ { \max } \; = \; 0 . 0 0 4 0 6 \times 1 0 9 2 \; = \; { \bf 4 . 4 3 } \ \text{mm}
+\frac{\partial^2M_x}{\partial x^2} + 2\frac{\partial^2M_{xy}}{\partial x\,\partial y} + \frac{\partial^2M_y}{\partial y^2} + q = 0 .
 $$
-
-**Maximum bending moment:**
-
+Now insert [[#eq-moments]]:
 $$
-M _ { \max } \; = \; 0 . 0 4 7 9 \, q \, a ^ { 2 } \; = \; 0 . 0 4 7 9 \times 1 0 \times 1 0 ^ { - 3 } \times 2 0 0 0 ^ { 2 } \; = \; { \bf 1 9 1 . 6 } \ \text{N} { \cdot } \text{mm/mm}
+-D\bigl[w_{,xxxx} + \nu w_{,xxyy} + 2(1 - \nu)w_{,xxyy} + w_{,yyyy} + \nu w_{,xxyy}\bigr] + q = 0,
 $$
-
-**Maximum bending stress:**
-
-$$
-\sigma _ { \max } \; = \; { \frac { 6 \, M _ { \max } } { t ^ { 2 } } } \; = \; { \frac { 6 \times 1 9 1 . 6 } { 2 0 ^ { 2 } } } \; = \; { \bf 2 . 8 7 } \ \text{MPa}
-$$
-
-**The maximum deflection is 4.43 mm, and the maximum bending stress is 2.87 MPa. The engineer would design the plate for the deflection, because the deflection is the reason the plate is designed for the stiffness, not the strength.**
+and the $\nu$ terms cancel to leave $D(w_{,xxxx} + 2w_{,xxyy} + w_{,yyyy}) = q$. The shear-force expressions follow from $Q_x = M_{x,x} + M_{xy,y} = -D(w_{,xxx} + \nu w_{,xyy} + (1 - \nu)w_{,xyy}) = -D(\nabla^2w)_{,x}$. The equation is the plate counterpart of $EIw'''' = q$; it holds under the assumptions of [[#def-kirchhoff]] and is exact within them.
 :::
 
-## 2. Plate buckling
+### Boundary conditions
 
-::: definition The plate buckling coefficient {#def-plate-buckling}
-The **plate buckling coefficient** is the dimensionless parameter that determines the critical buckling load of the plate, and the plate buckling coefficient is the reason the engineer can design the plate for the buckling load.
+A fourth-order equation needs two conditions on each edge. For an edge $x = $ constant:
 
-For a **simply supported rectangular plate** under uniaxial compression:
-
+- **Clamped:** $w = 0$ and $\partial w/\partial x = 0$.
+- **Simply supported:** $w = 0$ and $M_x = 0$. Since $w = 0$ along the edge, $w_{,yy} = 0$ there too, so the second condition reduces to $\partial^2w/\partial x^2 = 0$.
+- **Free:** at first sight three conditions — $M_x = 0$, $Q_x = 0$ and $M_{xy} = 0$ — which is one too many. Kirchhoff resolved this in 1850: a twisting moment distributed along an edge is statically equivalent to a vertical force per unit length $\partial M_{xy}/\partial y$ (replace the couple on each short length $dy$ by two opposite vertical forces $M_{xy}$ a distance $dy$ apart; neighbouring forces cancel except for their difference). The correct conditions are $M_x = 0$ and the **effective (Kirchhoff) shear**
 $$
-N _ { x , c r } \; = \; k _ { c r } \, { \frac { \pi ^ { 2 } \, D } { b ^ { 2 } \, ( 1 - \nu ^ { 2 } ) } } \; = \; k _ { c r } \, { \frac { \pi ^ { 2 } \, E \, t ^ { 3 } } { 1 2 \, ( 1 - \nu ^ { 2 } ) \, b ^ { 2 } } }
+V_x = Q_x + \frac{\partial M_{xy}}{\partial y} = -D\left[\frac{\partial^3w}{\partial x^3} + (2 - \nu)\frac{\partial^3w}{\partial x\,\partial y^2}\right] = 0 .
 $$
+The same replacement leaves unbalanced concentrated forces $2M_{xy}$ at the corners of a rectangular plate. A simply supported rectangular plate under uniform load must be held **down** at its corners by these forces; if it is merely resting on its supports, the corners lift.
 
-where $k _ { c r }$ is the **buckling coefficient**:
+## Rectangular plates: Navier's solution
 
-$$
-k _ { c r } \; = \; \left( { \frac { m \, b } { a } } + { \frac { a } { m \, b } } \right) ^ { 2 }
-$$
+For a rectangular plate $0 \le x \le a$, $0 \le y \le b$ simply supported on all four edges, every term of the double sine series $\sin(m\pi x/a)\sin(n\pi y/b)$ vanishes on the edges together with its second normal derivative, so it satisfies both simply supported conditions automatically.
 
+::: theorem Navier's solution {#thm-navier}
+Expand the load as a double sine series,
 $$
-\begin{array} { l c c c }
-\textbf{Loading} & \textbf{ } k _ { c r } \textbf{ (SS)} & \textbf{ } k _ { c r } \textbf{ (clamped)} & \textbf{Use case} \\ \hline
-\text{Uniaxial compression} & 4 . 0 \text{ (square)} & 6 . 9 7 & \text{Wing panel} \\
-\text{Pure shear} & 7 . 3 4 \text{ (square)} & 1 3 . 1 & \text{Web panel} \\
-\text{Hydrostatic compression} & 4 . 0 \text{ (square)} & 6 . 9 7 & \text{Submarine hull} \\
-\text{Equibiaxial compression} & 8 . 0 \text{ (square)} & 1 3 . 9 & \text{Pressure vessel} \\
-\end{array}
+q(x, y) = \sum_{m=1}^\infty\sum_{n=1}^\infty q_{mn}\sin\frac{m\pi x}{a}\sin\frac{n\pi y}{b}, \qquad q_{mn} = \frac{4}{ab}\int_0^a\!\!\int_0^b q\sin\frac{m\pi x}{a}\sin\frac{n\pi y}{b}\,dy\,dx .
 $$
-
-**The buckling is the reason the plate is designed for the buckling load, not the yield load, and the buckling load is the reason the plate is the most critical component in the aircraft. The engineer who designs the plate without checking the buckling is not designing the plate; they are designing a plate that will fail by buckling.**
+The deflection of the simply supported plate is
+$$
+w = \sum_{m,n}\frac{q_{mn}}{\pi^4D\left(\dfrac{m^2}{a^2} + \dfrac{n^2}{b^2}\right)^2}\sin\frac{m\pi x}{a}\sin\frac{n\pi y}{b}.
+$$
+For a uniform load $q_0$, $q_{mn} = 16q_0/(\pi^2mn)$ for odd $m$ and $n$ and zero otherwise.
 :::
 
-::: definition The post-buckling behaviour {#def-post-buckling}
-The **post-buckling behaviour** is the behaviour of the plate after the buckling load is exceeded, and the post-buckling behaviour is the reason the engineer can design the plate to carry the load beyond the buckling load.
-
-For a **simply supported plate** under uniaxial compression, the post-buckling load-deflection relationship is:
-
+::: proof
+Substitute one term $w_{mn}\sin(m\pi x/a)\sin(n\pi y/b)$ into [[#eq-plate]]. Each $x$-derivative brings a factor $m\pi/a$ and each $y$-derivative $n\pi/b$, with two derivatives of a sine giving a minus sign, so
 $$
-{ \frac { N _ { x } } { N _ { x , c r } } } \; = \; 1 + { \frac { 1 } { 4 } } \, \left( { \frac { w _ { \max } } { t } } \right) ^ { 2 }
+\nabla^4 \to \pi^4\left[\left(\frac ma\right)^4 + 2\left(\frac ma\right)^2\left(\frac nb\right)^2 + \left(\frac nb\right)^4\right] = \pi^4\left(\frac{m^2}{a^2} + \frac{n^2}{b^2}\right)^2.
 $$
-
-The **effective width** concept is used in design codes:
-
-$$
-b _ { \text{eff } } \; = \; \rho \, b \qquad \rho \; = \; { \frac { 0 . 8 5 3 } { \bar { \lambda } } } - { \frac { 0 . 0 7 1 } { \bar { \lambda } ^ { 2 } } } \quad ( \bar { \lambda } > 0 . 6 7 3 )
-$$
-
-where $\bar { \lambda } = \sqrt { \sigma _ { y } / \sigma _ { c r } }$ is the **slenderness ratio**.
-
-**The post-buckling is the reason the plate is stiffer than the beam, and the stiffness is the reason the plate can carry the load beyond the linear range. The engineer who calculates the plate deflection without checking the large deflection is not calculating the plate deflection; they are calculating the small deflection.**
+Matching coefficients with the load series term by term gives $w_{mn}$. The boundary conditions hold term by term, and the solution is unique ([[solid-mechanics/linear-elasticity]]), so this is the solution. For a uniform load, $\int_0^a\sin(m\pi x/a)\,dx = \frac{a}{m\pi}(1 - \cos m\pi)$, which is $2a/(m\pi)$ for odd $m$ and zero for even $m$; hence $q_{mn} = \frac{4q_0}{ab}\cdot\frac{2a}{m\pi}\cdot\frac{2b}{n\pi} = \frac{16q_0}{\pi^2mn}$.
 :::
 
-::: widget plot
-title: The buckling coefficient vs aspect ratio
-f: (4/x+x/4)^2; (4/x+x/4)^2*0.5
-x: 0.5,3
-y: 0,25
-labels: Uniaxial; Shear
-caption: The buckling coefficient against the aspect ratio for a simply supported plate. **The buckling coefficient is minimum when the aspect ratio is 1 (square plate), and the minimum is the reason the square plate is the most critical plate in buckling.** **The buckling coefficient is proportional to the square of the aspect ratio, and the square is the reason the plate is designed for the aspect ratio, not the span.**
-:::
-
-::: example Plate buckling calculation {#ex-plate-buckling level=3 check="2"}
-A simply supported steel plate ($a = 5 0 0$ mm, $b = 3 0 0$ mm, $t = 3$ mm, $E = 2 0 0$ GPa, $\nu = 0 . 3$ ) is subjected to uniaxial compression. Calculate the critical buckling stress.
-
-**Flexural rigidity:**
-
+At the centre of a uniformly loaded plate, $\sin(m\pi/2)\sin(n\pi/2) = \pm1$, and the series converges fast for the deflection (each term falls like $1/(mn(m^2 + n^2)^2)$) and more slowly for the moments (an extra factor $m^2$ or $n^2$). For a **square** plate ($a = b$) the sums give
 $$
-D \; = \; { \frac { E \, t ^ { 3 } } { 1 2 \, ( 1 - \nu ^ { 2 } ) } } \; = \; { \frac { 2 0 0 \ 0 0 0 \times 2 7 } { 1 2 \times 0 . 9 1 } } \; = \; { \frac { 5 . 4 \times 1 0 ^ { 6 } } { 1 0 . 9 2 } } \; = \; 4 9 4 \ 5 0 5 \ \text{N} { \cdot } \text{mm}
-$$
+w_{\max} = 0.00406\,\frac{q_0a^4}{D}, \qquad M_{x,\max} = M_{y,\max} = 0.0479\,q_0a^2 \quad (\nu = 0.3),
+$$ {#eq-square}
+values tabulated by Timoshenko and Woinowsky-Krieger. The first term alone gives $4/\pi^6 = 0.00416$, only 2.4 % high.
 
-**Buckling coefficient:**
-
-$$
-k _ { c r } \; = \; \left( { \frac { m \, b } { a } } + { \frac { a } { m \, b } } \right) ^ { 2 } \; = \; \left( { \frac { 1 \times 3 0 0 } { 5 0 0 } } + { \frac { 5 0 0 } { 1 \times 3 0 0 } } \right) ^ { 2 } \; = \; ( 0 . 6 + 1 . 6 6 7 ) ^ { 2 } \; = \; 5 . 1 5
-$$
-
-**Critical buckling stress:**
-
-$$
-\sigma _ { c r } \; = \; { \frac { k _ { c r } \, \pi ^ { 2 } \, E } { 1 2 \, ( 1 - \nu ^ { 2 } ) \, ( b / t ) ^ { 2 } } } \; = \; { \frac { 5 . 1 5 \times 9 . 8 7 \times 2 0 0 \ 0 0 0 } { 1 2 \times 0 . 9 1 \times 1 0 0 ^ { 2 } } } \; = \; { \frac { 1 0 \ 1 8 6 \ 0 0 0 } { 1 0 9 \ 2 0 0 } } \; = \; { \bf 9 3 . 3 } \ \text{MPa}
-$$
-
-**The critical buckling stress is 93.3 MPa. The engineer would design the plate for the buckling stress, because the buckling stress is the reason the plate is designed for the buckling load, not the yield load.**
-:::
-
-::: example Clamped circular plate under uniform pressure {#ex-circular-plate level=3 check="2"}
-A clamped circular plate ($R = 2 0 0$ mm, $t = 8$ mm, $E = 2 0 0$ GPa, $\\nu = 0 . 3$ ) carries a uniform pressure $p = 5$ MPa. Calculate the maximum deflection and the maximum bending stress.
-
-**Flexural rigidity:**
-
-$$
-D \\; = \\; { \\frac { E \\, t ^ { 3 } } { 1 2 \\, ( 1 - \\nu ^ { 2 } ) } } \\; = \\; { \\frac { 2 0 0 \\ 0 0 0 \\times 5 1 2 } { 1 2 \\times 0 . 9 1 } } \\; = \\; { \\frac { 1 . 0 2 4 \\times 1 0 ^ { 8 } } { 1 0 . 9 2 } } \\; = \\; 9 . 3 8 \\times 1 0 ^ { 6 } \\ \\text{N} { \\cdot } \\text{mm}
-$$
-
-**Maximum deflection (centre):**
-
-$$
-w _ { \\max } \\; = \\; { \\frac { p \\, R ^ { 4 } } { 6 4 \\, D } } \\; = \\; { \\frac { 5 \\times 2 0 0 ^ { 4 } } { 6 4 \\times 9 . 3 8 \\times 1 0 ^ { 6 } } } \\; = \\; { \\frac { 8 \\times 1 0 ^ { 1 0 } } { 6 . 0 0 \\times 1 0 ^ { 8 } } } \\; = \\; { \\bf 1 . 3 3 } \\ \\text{mm}
-$$
-
-**Maximum bending stress (at the edge):**
-
-$$
-\\sigma _ { \\max } \\; = \\; { \\frac { 3 \\, p \\, R ^ { 2 } } { 4 \\, t ^ { 2 } } } \\; = \\; { \\frac { 3 \\times 5 \\times 2 0 0 ^ { 2 } } { 4 \\times 8 ^ { 2 } } } \\; = \\; { \\frac { 6 0 0 \\ 0 0 0 } { 2 5 6 } } \\; = \\; { \\bf 2 3 4 } \\ \\text{MPa}
-$$
-
-**The maximum deflection is 1.33 mm, and the maximum bending stress is 234 MPa. The engineer would design the circular plate for the bending stress, because the bending stress is the reason the plate is designed for the strength, not the stiffness.**
-:::
-
-::: example Plate under point load {#ex-point-load level=3 check="2"}
-A simply supported square plate ($a = 5 0 0$ mm, $t = 5$ mm, $E = 7 0$ GPa, $\\nu = 0 . 3$ ) carries a central point load $P = 1$ kN. Calculate the maximum deflection.
-
-**Flexural rigidity:**
-
-$$
-D \\; = \\; { \\frac { 7 0 \\ 0 0 0 \\times 1 2 5 } { 1 2 \\times 0 . 9 1 } } \\; = \\; { \\frac { 8 . 7 5 \\times 1 0 ^ { 6 } } { 1 0 . 9 2 } } \\; = \\; 8 0 1 \\ 2 8 2 \\ \\text{N} { \\cdot } \\text{mm}
-$$
-
-**Maximum deflection (centre, Navier solution):**
-
-$$
-w _ { \\max } \\; = \\; { \\frac { P \\, a ^ { 2 } } { D \\, \\pi ^ { 2 } } } \\times 0 . 0 1 1 6 \\; = \\; { \\frac { 1 0 0 0 \\times 2 5 0 \\ 0 0 0 } { 8 0 1 \\ 2 8 2 \\times 9 . 8 7 } } \\times 0 . 0 1 1 6
-$$
-
-$$
-w _ { \\max } \\; = \\; { \\frac { 2 . 5 \\times 1 0 ^ { 8 } } { 7 . 9 1 \\times 1 0 ^ { 6 } } } \\times 0 . 0 1 1 6 \\; = \\; 3 1 . 6 \\times 0 . 0 1 1 6 \\; = \\; { \\bf 0 . 3 7 } \\ \\text{mm}
-$$
-
-**The maximum deflection is 0.37 mm. The engineer would design the plate for the deflection, because the deflection is the reason the plate is designed for the stiffness, not the strength.**
-:::
-
-::: exercise Plate natural frequency {#ex-plate-frequency level=3 check="2"}
-A simply supported square plate ($a = 1$ m, $t = 1 0$ mm, $E = 2 0 0$ GPa, $\\nu = 0 . 3$ , $\\rho = 7 8 0 0$ kg/m\\.3) vibrates in its fundamental mode. Calculate the natural frequency.
-
+::: example A square tank panel {#ex-square}
+A square steel panel $1.0\ \mathrm{m}\times1.0\ \mathrm{m}$, $10\ \mathrm{mm}$ thick, simply supported on all edges, carries a water pressure of $10\ \mathrm{kPa}$ (about $1\ \mathrm{m}$ of water). With $E = 200\ \mathrm{GPa}$, $\nu = 0.3$, find the maximum deflection and stress.
 ::: solution
-**Flexural rigidity:**
-
 $$
-D \\; = \\; { \\frac { 2 0 0 \\ 0 0 0 \\times 1 0 0 0 } { 1 2 \\times 0 . 9 1 } } \\; = \\; 1 8 . 3 \\times 1 0 ^ { 6 } \\ \\text{N} { \\cdot } \\text{mm}
+D = \frac{200\times10^{9}\times0.010^3}{12(1 - 0.09)} = 1.832\times10^{4}\ \mathrm{N\,m}.
 $$
-
-**Mass per unit area:**
-
+From [[#eq-square]]:
 $$
-m \\; = \\; \\rho \\, t \\; = \\; 7 8 0 0 \\times 1 0 ^ { - 6 } \\times 1 0 \\; = \\; 0 . 0 7 8 \\ \\text{kg/m} ^ { 2 }
+w_{\max} = 0.00406\times\frac{10^{4}\times1.0^4}{1.832\times10^{4}} = 2.22\times10^{-3}\ \mathrm{m} = 2.22\ \mathrm{mm},
 $$
-
-**Natural frequency (fundamental mode):**
-
 $$
-f \\; = \\; { \\frac { \\pi } { 2 } } \\sqrt { { \\frac { D } { m \\, a ^ { 4 } } } } \\; = \\; { \\frac { \\pi } { 2 } } \\sqrt { { \\frac { 1 8 . 3 \\times 1 0 ^ { 3 } } { 0 . 0 7 8 \\times 1 } } } \\; = \\; { \\frac { \\pi } { 2 } } \\times 4 8 4 \\; = \\; { \\bf 7 6 0 } \\ \\text{Hz}
+M_{\max} = 0.0479\times10^{4}\times1.0^2 = 479\ \mathrm{N\,m/m}, \qquad \sigma_{\max} = \frac{6M}{t^2} = \frac{6\times479}{0.010^2} = 28.7\ \mathrm{MPa}.
 $$
-
-**The natural frequency is 760 Hz. The engineer would design the plate for the natural frequency, because the natural frequency is the reason the plate is designed for the dynamic load, not the static load.**
+Sanity checks. (1) $w/t = 0.22$: small enough for the linear theory; above about $w/t \approx 0.5$ the mid-plane stretches, membrane action stiffens the plate and Kirchhoff's theory overestimates the deflection. (2) A simply supported *strip* of span $1\ \mathrm{m}$ (a beam of unit width) would have $w = 5qa^4/(384D) = 7.11\ \mathrm{mm}$ and $M = qa^2/8 = 1250\ \mathrm{N\,m/m}$: the two-way plate deflects 69 % less and carries 62 % less moment, because the load is shared between two directions and the twisting moments help. (3) The corners need a hold-down force $2M_{xy}$ to stop them lifting.
 :::
+:::
+
+### Long plates and cylindrical bending
+
+As a rectangular plate gets longer, the region near its centre stops feeling the short edges: the deflection there becomes independent of the long coordinate, and the plate bends like a strip spanning the short direction — **cylindrical bending**. With $w = w(x)$ only, the plate equation becomes $D\,d^4w/dx^4 = q$, the beam equation with $EI$ replaced by $D$. The strip is in plane strain across its width, so it also carries a moment $M_y = \nu M_x$ along its length, even though it does not bend in that direction. The Navier coefficients approach the strip values quickly:
+
+| $b/a$ (long/short side) | $1$ | $1.5$ | $2$ | $3$ | $5$ | $\infty$ (strip) |
+|---|---|---|---|---|---|---|
+| $w_{\max}D/(q_0a^4)$ | $0.00406$ | $0.00772$ | $0.01013$ | $0.01223$ | $0.01297$ | $5/384 = 0.01302$ |
+| $M_{x,\max}/(q_0a^2)$ (short span) | $0.0479$ | $0.0812$ | $0.1017$ | $0.1189$ | $0.1246$ | $1/8 = 0.125$ |
+| $M_{y,\max}/(q_0a^2)$ (long span) | $0.0479$ | $0.0498$ | $0.0464$ | $0.0406$ | $0.0377$ | $\nu/8 = 0.0375$ |
+
+(Simply supported edges, uniform load, $\nu = 0.3$, $a$ the **short** side; values from Navier's series summed to convergence.) By $b/a = 3$ the plate is within 6 % of the strip. This is why ship and tank plating between closely spaced stiffeners is usually designed as a strip spanning the stiffener spacing.
+
+::: example Deck plating between stiffeners {#ex-deck}
+Steel deck plating ($E = 200\ \mathrm{GPa}$, $\nu = 0.3$), $8\ \mathrm{mm}$ thick, spans $600\ \mathrm{mm}$ between longitudinal stiffeners and $1200\ \mathrm{mm}$ between transverse frames, under a uniform pressure of $20\ \mathrm{kPa}$. Treating the edges as simply supported, find the maximum deflection and stress, and compare with the strip approximation.
+::: solution
+$D = 200\times10^{9}\times0.008^3/(12\times0.91) = 9377\ \mathrm{N\,m}$. With $b/a = 2$ and $a = 0.6\ \mathrm{m}$:
+$$
+w_{\max} = 0.01013\times\frac{2\times10^{4}\times0.6^4}{9377} = 2.80\times10^{-3}\ \mathrm{m} = 2.80\ \mathrm{mm},
+$$
+$$
+M_{x,\max} = 0.1017\times2\times10^{4}\times0.6^2 = 732\ \mathrm{N\,m/m}, \qquad \sigma_{\max} = \frac{6\times732}{0.008^2} = 68.6\ \mathrm{MPa}.
+$$
+The strip approximation gives $w = 5qa^4/384D = 3.60\ \mathrm{mm}$ and $\sigma = 6(qa^2/8)/t^2 = 84.4\ \mathrm{MPa}$: 23 % conservative on stress at this aspect ratio, and simpler. Sanity check: $w/t = 0.35$, near the upper limit of small-deflection theory; at higher pressures membrane tension develops and the true deflection and bending stress are lower than these linear values. In practice deck plating is often closer to clamped at the stiffeners (adjacent bays deflect symmetrically), which lowers the mid-span stress but raises the stress at the stiffener lines; classification-society rules specify which to use.
+:::
+:::
+
+::: widget surface
+f: sin(m*pi*x/3)*sin(pi*y)
+x: 0, 3
+y: 0, 1
+sliders: m=1:1:6:1
+color: height
+resolution: 50
+caption: The deflected shape $\sin(m\pi x/a)\sin(\pi y/b)$ of a simply supported plate with $a/b = 3$ — one term of Navier's series, and also a buckling mode of the same plate (below). Drag to rotate and step $m$ from 1 to 6. A uniform load excites mainly $m = 1$; in compression along $x$, this plate buckles into $m = 3$ nearly square half-waves, because short waves cost less bending energy in the $y$-direction than long ones.
+:::
+
+## Circular plates
+
+For an axisymmetric circular plate the Laplacian is $\nabla^2 = \frac{1}{r}\frac{d}{dr}\left(r\frac{d}{dr}\right)$, and the plate equation becomes an ordinary differential equation that integrates directly:
+$$
+\frac{1}{r}\frac{d}{dr}\left\{r\frac{d}{dr}\left[\frac{1}{r}\frac{d}{dr}\left(r\frac{dw}{dr}\right)\right]\right\} = \frac{q}{D}.
+$$ {#eq-circular}
+The radial and circumferential moments are $M_r = -D\left(w'' + \nu w'/r\right)$ and $M_\theta = -D\left(w'/r + \nu w''\right)$.
+
+::: proposition Uniformly loaded circular plates {#prop-circular}
+A solid circular plate of radius $a$ under uniform pressure $q$ has the following deflections and moments.
+
+**Clamped edge:**
+$$
+w = \frac{q(a^2 - r^2)^2}{64D}, \qquad w_{\max} = \frac{qa^4}{64D}, \qquad M_r(a) = -\frac{qa^2}{8}, \qquad M_r(0) = M_\theta(0) = \frac{(1 + \nu)qa^2}{16}.
+$$
+The largest stress is at the edge: $\sigma_{r,\max} = \dfrac{3qa^2}{4t^2}$ (tension on the top face).
+
+**Simply supported edge:**
+$$
+w = \frac{q(a^2 - r^2)}{64D}\left(\frac{5 + \nu}{1 + \nu}a^2 - r^2\right), \qquad w_{\max} = \frac{(5 + \nu)qa^4}{64(1 + \nu)D}, \qquad M_{\max} = M_r(0) = \frac{(3 + \nu)qa^2}{16},
+$$
+with the largest stress $\sigma_{\max} = \dfrac{3(3 + \nu)qa^2}{8t^2}$ at the centre.
+:::
+
+::: proof
+Integrate [[#eq-circular]] four times, multiplying by $r$ before each integration that needs it:
+$$
+w = \frac{qr^4}{64D} + C_1r^2\ln r + C_2r^2 + C_3\ln r + C_4 .
+$$
+In a solid plate the slope and moment must be finite at $r = 0$, which rules out $C_1$ and $C_3$. So $w = qr^4/64D + C_2r^2 + C_4$.
+
+Clamped: $w'(a) = qa^3/16D + 2C_2a = 0$ gives $C_2 = -qa^2/32D$; $w(a) = 0$ gives $C_4 = qa^4/64D$. Hence $w = q(r^4 - 2a^2r^2 + a^4)/64D = q(a^2 - r^2)^2/64D$. Then $w' = -qr(a^2 - r^2)/16D$ and $w'' = -q(a^2 - 3r^2)/16D$; at $r = a$, $w' = 0$ and $w'' = qa^2/8D$, so $M_r = -qa^2/8$; at $r = 0$, $w'' = w'/r = -qa^2/16D$, so $M_r = M_\theta = (1 + \nu)qa^2/16$. The edge moment is larger in magnitude for all $\nu < 1$, and $\sigma = 6M/t^2$ gives $3qa^2/4t^2$.
+
+Simply supported: $w(a) = 0$ and $M_r(a) = 0$. With $w' = qr^3/16D + 2C_2r$ and $w'' = 3qr^2/16D + 2C_2$, the moment condition at $r = a$ is $\frac{3qa^2}{16D} + 2C_2 + \nu\left(\frac{qa^2}{16D} + 2C_2\right) = 0$, so $C_2 = -\frac{(3 + \nu)qa^2}{32(1 + \nu)D}$, and $w(a) = 0$ fixes $C_4$; collecting terms gives the stated $w$. At the centre $w'' = w'/r = 2C_2$, so $M_r = M_\theta = -D(1 + \nu)2C_2 = (3 + \nu)qa^2/16$.
+:::
+
+::: widget plot
+f: (1 - x^2)^2; (1 - x^2)*((5 + nu)/(1 + nu) - x^2)
+x: 0, 1
+y: 0, 4.5
+sliders: nu=0.3:0:0.5:0.01
+labels: \text{clamped}; \text{simply supported}
+caption: Deflection of a uniformly loaded circular plate in units of $qa^4/64D$ against $r/a$. The clamped plate's centre deflection is 1; the simply supported plate's is $(5 + \nu)/(1 + \nu)$, about 4.1 for $\nu = 0.3$. Notice the slopes at $r/a = 1$: zero for the clamped plate, where the large edge moment lives, and steep for the simply supported plate, whose largest moment is at the centre. Real bolted covers lie somewhere between the two curves.
+:::
+
+::: example A clamped inspection cover {#ex-cover}
+A flat circular steel cover of radius $a = 150\ \mathrm{mm}$ and thickness $t = 12\ \mathrm{mm}$, effectively clamped around its edge, carries a pressure of $0.5\ \mathrm{MPa}$ ($E = 200\ \mathrm{GPa}$, $\nu = 0.3$). Find the centre deflection and the maximum stress, and compare with a simply supported cover.
+::: solution
+$$
+D = \frac{200\times10^{9}\times0.012^3}{12\times0.91} = 3.165\times10^{4}\ \mathrm{N\,m}.
+$$
+Clamped:
+$$
+w_{\max} = \frac{qa^4}{64D} = \frac{0.5\times10^{6}\times0.15^4}{64\times3.165\times10^{4}} = 1.25\times10^{-4}\ \mathrm{m} = 0.125\ \mathrm{mm},
+$$
+$$
+\sigma_{\max} = \frac{3qa^2}{4t^2} = \frac{3\times0.5\times150^2}{4\times12^2} = 58.6\ \mathrm{MPa}\ \text{at the edge}, \qquad \sigma(0) = \frac{6}{t^2}\cdot\frac{1.3\,qa^2}{16} = 38.1\ \mathrm{MPa}.
+$$
+Simply supported: $w_{\max} = \tfrac{5.3}{1.3}\times0.125 = 0.509\ \mathrm{mm}$ and $\sigma_{\max} = 3(3.3)qa^2/8t^2 = 96.7\ \mathrm{MPa}$ at the centre.
+
+Sanity check: $w/t = 0.01$, firmly in the small-deflection range. The two idealisations bracket a real bolted cover; a designer would use the simply supported value for the stress at the centre and the clamped value for the stress at the edge, because each is the worst case for its location. Flat covers on pressure vessels are designed to the applicable code (for example ASME Boiler and Pressure Vessel Code, Section VIII), whose formulas embody these results with factors for the attachment detail; pressure tests of such parts are carried out to the code by trained personnel.
+:::
+:::
+
+::: warning Flat plates are inefficient pressure boundaries — and the theory has limits
+A flat plate carries pressure by bending, so its stress scales as $(a/t)^2$, whereas a curved shell carries it by membrane tension, scaling as $a/t$ ([[solid-mechanics/thick-cylinders-discs]]). For the cover in [[#ex-cover]], a hemispherical head of the same radius and thickness would carry only $pa/2t = 3.1\ \mathrm{MPa}$, nearly twenty times less than the flat plate's $58.6\ \mathrm{MPa}$. That is why vessel ends are dished. Two common errors when using plate formulas: (1) applying them when $w$ is not small compared with $t$ — thin diaphragms quickly develop membrane stresses that the linear theory ignores; (2) applying them to thick plates ($t/a > 0.1$) or near concentrated loads, where transverse shear deformation (Mindlin–Reissner theory) and three-dimensional effects matter. Check $w/t$ and $t/a$ every time.
+:::
+
+## Buckling of plates in compression
+
+A thin plate loaded in its own plane by a compressive force per unit length $N_x$ stays flat until the load reaches a critical value, at which an adjacent bent equilibrium becomes possible. The analysis follows the Euler column ([[mechanics-of-materials/buckling]]): in the slightly bent state the in-plane force acting through the curvature adds a lateral load $-N_x\,\partial^2w/\partial x^2$ (compression positive), so
+$$
+D\nabla^4w + N_x\frac{\partial^2w}{\partial x^2} = 0 .
+$$ {#eq-buckling}
+
+::: theorem Buckling of a simply supported plate {#thm-plate-buckling}
+A rectangular plate of length $a$ (in the load direction) and width $b$, simply supported on all four edges and compressed uniformly along $x$, buckles at
+$$
+\sigma_{cr} = \frac{N_{x,cr}}{t} = k\,\frac{\pi^2E}{12(1 - \nu^2)}\left(\frac tb\right)^2, \qquad k = \min_{m = 1, 2, \dots}\left(\frac{mb}{a} + \frac{a}{mb}\right)^2,
+$$
+where $m$ is the number of half-waves along the length. For $a/b \ge 1$, $k$ never falls below 4 and equals 4 whenever $a/b$ is an integer; the plate buckles into approximately square half-waves.
+:::
+
+::: proof
+Try $w = W\sin(m\pi x/a)\sin(n\pi y/b)$, which satisfies the simply supported conditions. Substituting into [[#eq-buckling]]:
+$$
+D\pi^4\left(\frac{m^2}{a^2} + \frac{n^2}{b^2}\right)^2 - N_x\frac{m^2\pi^2}{a^2} = 0 \quad\Rightarrow\quad N_x = \frac{D\pi^2a^2}{m^2}\left(\frac{m^2}{a^2} + \frac{n^2}{b^2}\right)^2 .
+$$
+$N_x$ increases with $n$, so the lowest load has $n = 1$ (one half-wave across the width). Rearranging with $n = 1$,
+$$
+N_x = \frac{\pi^2D}{b^2}\left(\frac{mb}{a} + \frac{a}{mb}\right)^2,
+$$
+and the critical value is the minimum over integers $m$. Dividing by $t$ and inserting $D = Et^3/12(1 - \nu^2)$ gives $\sigma_{cr}$. For fixed $m$, $k(\beta) = (m/\beta + \beta/m)^2$ with $\beta = a/b$ has its minimum value 4 at $\beta = m$ (by the inequality $u + 1/u \ge 2$). The curves for $m$ and $m + 1$ cross where $m/\beta + \beta/m = (m + 1)/\beta + \beta/(m + 1)$, i.e. at $\beta = \sqrt{m(m + 1)}$: $\sqrt2$, $\sqrt6$, $\sqrt{12}$, …
+:::
+
+::: widget plot
+f: (1/x + x)^2; (2/x + x/2)^2; (3/x + x/3)^2; (4/x + x/4)^2
+x: 0.3, 5
+y: 0, 12
+labels: m = 1; m = 2; m = 3; m = 4
+hlines: 4
+caption: Buckling coefficient $k$ of a simply supported plate in uniaxial compression against the aspect ratio $a/b$, one curve per number of half-waves $m$. The plate buckles in whichever mode is lowest, so the true $k$ is the lower envelope — a festoon touching $k = 4$ at $a/b = 1, 2, 3, 4$. Beyond $a/b \approx 1$, $k$ stays between 4 and 4.5: a long plate's buckling stress depends on its *width*, not its length. Short plates ($a/b < 1$) are much stronger, approaching wide-column behaviour.
+:::
+
+The result is the basis of the design of stiffened panels: stringers or stiffeners divide a skin into panels whose *width* $b$ controls $\sigma_{cr}$. Compare a column: a strip $b$ wide and $a$ long, free along its sides, would buckle at $\pi^2E/12(1 - \nu^2)\cdot(t/a)^2$ (with $k = 1$ and the length in place of the width) — far lower when $a > b$. Supporting the long edges changes everything. Other edge conditions give other values of $k$: about 6.97 for loaded edges simply supported and long edges clamped, and about 0.43 for one long edge free (an outstanding flange).
+
+Unlike a column, a plate does not collapse at its buckling load. Once buckled, the material near the supported edges, which cannot deflect, keeps carrying increasing stress, while the centre sheds load. Von Kármán's **effective width** concept replaces the non-uniformly stressed plate by two strips at the edges carrying the edge stress; design codes for thin-walled steel and aluminium members and aircraft skin panels use this **post-buckling reserve** deliberately.
+
+::: example An aircraft skin panel {#ex-skin}
+An aluminium-alloy wing skin ($E = 70\ \mathrm{GPa}$, $\nu = 0.33$), $1.5\ \mathrm{mm}$ thick, is supported by stringers at $150\ \mathrm{mm}$ pitch and by ribs at $450\ \mathrm{mm}$ pitch. Treating the panel as simply supported, find the compressive stress at which it buckles, and compare with a strip of the same skin that is supported only at the ribs.
+::: solution
+$a/b = 450/150 = 3$, an integer, so $k = 4$ with $m = 3$ half-waves along the panel:
+$$
+\sigma_{cr} = 4\times\frac{\pi^2\times70\,000}{12(1 - 0.33^2)}\left(\frac{1.5}{150}\right)^2 = 4\times6.461\times10^{4}\times10^{-4} = 25.8\ \mathrm{MPa}.
+$$
+A strip supported only at the ribs behaves as a wide column of length $450\ \mathrm{mm}$ ($k = 1$ with $b$ replaced by $a$): $\sigma_{cr} = 6.461\times10^{4}\times(1.5/450)^2 = 0.72\ \mathrm{MPa}$ — 36 times lower. The stringers are what make thin skin usable in compression.
+
+Sanity check: $25.8\ \mathrm{MPa}$ is far below the alloy's yield strength (several hundred MPa), so this skin buckles elastically at a modest load. That is intended in many designs: the skin buckles in service, the stringers and the effective width of skin next to them carry the compression, and the skin is checked to recover elastically when the load is removed. Aircraft panels are certified to airworthiness regulations with test evidence; this calculation is the starting point, not the design.
+:::
+:::
+
+::: history
+The plate equation has an unusual history. In 1809 the French Academy offered a prize for a mathematical theory of the vibration patterns that Ernst Chladni had made visible by sprinkling sand on vibrating plates (published in 1787). Sophie Germain won it in 1816 with a theory whose final equation, after a correction by Lagrange, was the right one, though her derivation was flawed. Navier presented the double-series solution for a simply supported rectangular plate in 1820. Gustav Kirchhoff's paper of 1850 put the theory on its modern basis — the assumptions of [[#def-kirchhoff]], derivation from energy, and the resolution of the free-edge boundary conditions. G. H. Bryan obtained the buckling load of a simply supported plate in compression in 1891, and Theodore von Kármán, E. E. Sechler and L. H. Donnell introduced the effective-width approach for post-buckled plates in 1932, in work motivated by thin-walled metal aircraft.
+:::
+
+::: quiz
+A long simply supported plate of width $b$ buckles in compression at $\sigma_{cr}$. If its thickness is doubled, the buckling stress becomes
+- [ ] $2\sigma_{cr}$
+- [x] $4\sigma_{cr}$
+- [ ] $8\sigma_{cr}$
+::: solution
+$\sigma_{cr} \propto (t/b)^2$, so doubling $t$ multiplies it by 4. (The buckling *load* per unit width, $N_{cr} = \sigma_{cr}t$, rises by 8, as $D \propto t^3$.)
+:::
+:::
+
+::: quiz
+Why does a simply supported rectangular plate under uniform pressure tend to lift at its corners?
+- [ ] Because the pressure is larger at the corners.
+- [x] Because the twisting moments along the edges are statically equivalent to edge shear plus concentrated corner forces, which must be reacted by holding the corners down.
+- [ ] Because Poisson's ratio makes the corners contract.
+::: solution
+Kirchhoff's edge condition replaces $M_{xy}$ by the effective shear $\partial M_{xy}/\partial y$ along the edge plus a concentrated force $2M_{xy}$ at each corner. For the uniformly loaded plate the supports must pull the corners down, in the direction of the load; without that hold-down force the corners rise off the supports.
+:::
+:::
+
+::: summary
+- Kirchhoff plate theory: thin plate, small deflection, normals stay straight and normal; everything follows from the deflection $w(x, y)$.
+- Moments per unit length: $M_x = -D(w_{,xx} + \nu w_{,yy})$, $M_{xy} = -D(1 - \nu)w_{,xy}$, with $D = Et^3/12(1 - \nu^2)$; face stress $6M/t^2$.
+- Equilibrium gives $D\nabla^4w = q$. Two conditions per edge: clamped ($w = w_{,n} = 0$), simply supported ($w = M_n = 0$), free ($M_n = 0$ and the Kirchhoff shear $V_n = 0$); rectangular plates have corner forces $2M_{xy}$.
+- Navier: double sine series for simply supported rectangles; square plate under uniform load $w_{\max} = 0.00406qa^4/D$, $M_{\max} = 0.0479qa^2$ ($\nu = 0.3$).
+- Circular plates under uniform load: clamped $w_{\max} = qa^4/64D$, edge stress $3qa^2/4t^2$; simply supported $w_{\max} = (5 + \nu)qa^4/64(1 + \nu)D$, centre stress $3(3 + \nu)qa^2/8t^2$.
+- Flat plates resist pressure inefficiently (stress $\propto (a/t)^2$) — hence dished heads.
+- Compression buckling: $\sigma_{cr} = k\pi^2E(t/b)^2/12(1 - \nu^2)$ with $k = 4$ for long simply supported plates; plates have post-buckling strength.
 :::
 
 ## Exercises
 
-::: exercise Flexural rigidity {#ex-flexural-rigidity level=3 check="2"}
-Calculate the flexural rigidity of a steel plate ($E = 2 0 0$ GPa, $\nu = 0 . 3$ , $t = 1 0$ mm).
-
+::: exercise Flexural rigidity of a glass pane {level=1 check="800"}
+A glass pane is $5\ \mathrm{mm}$ thick, with $E = 72\ \mathrm{GPa}$ and $\nu = 0.25$. Find its flexural rigidity. (Enter $D$ in N m.)
 ::: solution
-$$
-D \; = \; { \frac { E \, t ^ { 3 } } { 1 2 \, ( 1 - \nu ^ { 2 } ) } } \; = \; { \frac { 2 0 0 \ 0 0 0 \times 1 0 0 0 } { 1 2 \times 0 . 9 1 } } \; = \; { \frac { 2 \times 1 0 ^ { 8 } } { 1 0 . 9 2 } } \; = \; { \bf 1 8 . 3 } \times 1 0 ^ { 6 } \ \text{N} { \cdot } \text{mm}
-$$
-
-**The flexural rigidity is $1 8 . 3 \times 1 0 ^ { 6 }$ N·mm.**
+$D = Et^3/12(1 - \nu^2) = 72\times10^{9}\times(0.005)^3/(12\times0.9375) = 9000/11.25 = 800\ \mathrm{N\,m}$.
 :::
 :::
 
-::: exercise Clamped plate deflection {#ex-clamped-plate level=3 check="2"}
-A clamped square plate ($a = 1$ m, $t = 1 5$ mm, $E = 7 0$ GPa, $\nu = 0 . 3$ ) carries a uniform load $q = 5$ kPa. Calculate the maximum deflection.
-
+::: exercise A clamped diaphragm {level=1 check="0.3125"}
+A clamped circular plate of radius $0.2\ \mathrm{m}$ and flexural rigidity $D = 800\ \mathrm{N\,m}$ carries a uniform pressure of $10\ \mathrm{kPa}$. Find its centre deflection. (Enter it in mm.)
 ::: solution
-**Flexural rigidity:**
-
-$$
-D \; = \; { \frac { 7 0 \ 0 0 0 \times 1 5 ^ { 3 } } { 1 2 \times ( 1 - 0 . 0 9 ) } } \; = \; { \frac { 2 . 3 6 3 \times 1 0 ^ { 8 } } { 1 0 . 9 2 } } \; = \; 2 1 . 6 3 \times 1 0 ^ { 6 } \ \text{N} { \cdot } \text{mm}
-$$
-
-**Maximum deflection:**
-
-$$
-w _ { \max } \; = \; 0 . 0 0 1 2 6 \, { \frac { q \, a ^ { 4 } } { D } } \; = \; 0 . 0 0 1 2 6 \times { \frac { 5 \times 1 0 ^ { - 3 } \times 1 0 0 0 ^ { 4 } } { 2 1 . 6 3 \times 1 0 ^ { 6 } } } \; = \; 0 . 0 0 1 2 6 \times { \frac { 5 \times 1 0 ^ { 1 0 } } { 2 1 . 6 3 \times 1 0 ^ { 6 } } }
-$$
-
-$$
-w _ { \max } \; = \; 0 . 0 0 1 2 6 \times 2 3 1 \; = \; { \bf 0 . 2 9 } \ \text{mm}
-$$
-
-**The maximum deflection is 0.29 mm.**
+$w_{\max} = qa^4/64D = 10^{4}\times0.0016/(64\times800) = 3.125\times10^{-4}\ \mathrm{m} = 0.3125\ \mathrm{mm}$. With $t = 5\ \mathrm{mm}$ (the pane above), $w/t = 0.06$: the small-deflection theory applies.
 :::
 :::
 
-::: exercise Plate buckling coefficient {#ex-buckling-coeff level=3 check="2"}
-A simply supported plate has $a / b = 2$ . Calculate the buckling coefficient for uniaxial compression.
-
+::: exercise Which buckling mode? {level=1 check="2"}
+A simply supported plate with $a/b = 1.5$ is compressed along its length $a$. How many half-waves $m$ form along the length at buckling? (Enter $m$.)
 ::: solution
-$$
-k _ { c r } \; = \; \left( { \frac { m \, b } { a } } + { \frac { a } { m \, b } } \right) ^ { 2 }
-$$
-
-For $m = 2$ (the minimum):
-
-$$
-k _ { c r } \; = \; \left( { \frac { 2 } { 2 } } + { \frac { 2 } { 2 } } \right) ^ { 2 } \; = \; ( 1 + 1 ) ^ { 2 } \; = \; { \bf 4 }
-$$
-
-**The buckling coefficient is 4. The engineer would design the plate for the buckling coefficient, because the buckling coefficient is the reason the plate is designed for the buckling load, not the yield load.**
+$k(m = 1) = (1/1.5 + 1.5)^2 = 4.694$; $k(m = 2) = (2/1.5 + 1.5/2)^2 = (25/12)^2 = 4.340$; $k(m = 3) = (2 + 0.5)^2 = 6.25$. The minimum is at $m = 2$, consistent with the crossover at $a/b = \sqrt2 = 1.414$ between $m = 1$ and $m = 2$.
 :::
 :::
 
-::: exercise Post-buckling load {#ex-post-buckling level=3 check="2"}
-A simply supported plate has $N _ { x , c r } = 1 0 0$ MPa and $t = 5$ mm. Calculate the load when the maximum deflection is $w _ { \max } = 1 0$ mm.
-
+::: exercise Clamped versus simply supported {level=2 check="4.2"}
+For a uniformly loaded circular plate of a material with $\nu = 0.25$, find the ratio of the centre deflection when simply supported to that when clamped. (Enter the ratio.)
 ::: solution
-$$
-{ \frac { N _ { x } } { N _ { x , c r } } } \; = \; 1 + { \frac { 1 } { 4 } } \, \left( { \frac { w _ { \max } } { t } } \right) ^ { 2 } \; = \; 1 + { \frac { 1 } { 4 } } \times \left( { \frac { 1 0 } { 5 } } \right) ^ { 2 } \; = \; 1 + { \frac { 1 } { 4 } } \times 4 \; = \; 2
-$$
-
-$$
-N _ { x } \; = \; 2 \times 1 0 0 \; = \; { \bf 2 0 0 } \ \text{MPa}
-$$
-
-**The load is 200 MPa, which is twice the buckling load. The engineer would design the plate for the post-buckling load, because the post-buckling load is the reason the plate can carry the load beyond the buckling load.**
+$\dfrac{(5 + \nu)/(1 + \nu)}{1} = \dfrac{5.25}{1.25} = 4.2$. Clamping the edge makes the plate more than four times stiffer.
 :::
 :::
 
-::: exercise Bending stress in a plate {#ex-plate-stress level=3 check="2"}
-A simply supported square plate ($a = 1$ m, $t = 1 0$ mm) carries a uniform load $q = 2 0$ kPa. Calculate the maximum bending stress.
-
+::: exercise Edge stress in a clamped plate {level=2 check="60"}
+A clamped circular plate of radius $100\ \mathrm{mm}$ and thickness $5\ \mathrm{mm}$ carries $0.2\ \mathrm{MPa}$. Find the maximum bending stress. (Enter it in MPa.)
 ::: solution
-**Maximum bending moment:**
-
-$$
-M _ { \max } \; = \; 0 . 0 4 7 9 \, q \, a ^ { 2 } \; = \; 0 . 0 4 7 9 \times 2 0 \times 1 0 ^ { - 3 } \times 1 0 0 0 ^ { 2 } \; = \; 9 5 8 \ \text{N} { \cdot } \text{mm/mm}
-$$
-
-**Maximum bending stress:**
-
-$$
-\sigma _ { \max } \; = \; { \frac { 6 \, M _ { \max } } { t ^ { 2 } } } \; = \; { \frac { 6 \times 9 5 8 } { 1 0 ^ { 2 } } } \; = \; { \bf 5 7 . 5 } \ \text{MPa}
-$$
-
-**The maximum bending stress is 57.5 MPa.**
+At the edge, $\sigma = 3qa^2/4t^2 = 3\times0.2\times100^2/(4\times25) = 60\ \mathrm{MPa}$, tensile on the loaded (top) face.
 :::
 :::
 
-::: exercise Derivation: the Kirchhoff plate equation {#ex-derive-kirchhoff level=4 check="2"}
-Show that the Kirchhoff plate equation $D \, \nabla ^ { 4 } w = q$ is derived from the equilibrium of a differential plate element and the constitutive equations.
-
+::: exercise One term of Navier's series {level=2 check="4/pi^6"}
+Using only the $m = n = 1$ term of Navier's solution, find the centre deflection of a uniformly loaded, simply supported square plate in the form $w = c\,q_0a^4/D$. (Enter the exact coefficient $c$, e.g. as an expression in pi.)
 ::: solution
-The equilibrium of a differential plate element gives:
-
-$$
-{ \frac { \partial ^ { 2 } M _ { x } } { \partial x ^ { 2 } } } + 2 \, { \frac { \partial ^ { 2 } M _ { x y } } { \partial x \, \partial y } } + { \frac { \partial ^ { 2 } M _ { y } } { \partial y ^ { 2 } } } + q \; = \; 0
-$$
-
-The constitutive equations for the plate are:
-
-$$
-M _ { x } \; = \; - D \, ( w _ { , x x } + \nu \, w _ { , y y } ) \qquad M _ { y } \; = \; - D \, ( w _ { , y y } + \nu \, w _ { , x x } )
-$$
-
-$$
-M _ { x y } \; = \; - D \, ( 1 - \nu ) \, w _ { , x y }
-$$
-
-Substituting the constitutive equations into the equilibrium equation:
-
-$$
-- D \, ( w _ { , x x x x } + \nu \, w _ { , x x y y } ) - 2 \, D \, ( 1 - \nu ) \, w _ { , x x y y } - D \, ( w _ { , y y y y } + \nu \, w _ { , x x y y } ) + q \; = \; 0
-$$
-
-Simplifying:
-
-$$
-D \, ( w _ { , x x x x } + 2 \, w _ { , x x y y } + w _ { , y y y y } ) \; = \; q \quad \Longrightarrow \quad D \, \nabla ^ { 4 } w \; = \; q
-$$
-
-**The Kirchhoff plate equation is the reason the engineer can calculate the deflection and the stress in the plate, and the calculation is the reason the plate is safe.** $\blacksquare$
+$q_{11} = 16q_0/\pi^2$ and $\pi^4D(1/a^2 + 1/a^2)^2 = 4\pi^4D/a^4$, so $w_{11} = \frac{16q_0}{\pi^2}\cdot\frac{a^4}{4\pi^4D} = \frac{4}{\pi^6}\frac{q_0a^4}{D}$, i.e. $c = 4/\pi^6 = 0.004161$, against the converged $0.004062$ — 2.4 % high, since all the other terms at the centre alternate in sign and partly cancel.
 :::
 :::
 
-::: exercise Derivation: the plate buckling equation {#ex-derive-buckling level=4 check="2"}
-Show that the plate buckling equation $D \, \nabla ^ { 4 } w + N _ { x } \, \partial ^ { 2 } w / \partial x ^ { 2 } = 0$ is derived from the equilibrium of a plate element under in-plane compression. Write the boundary conditions for a simply supported plate.
-
+::: exercise Derive the clamped-plate solution from energy {level=3}
+For the clamped circular plate under uniform pressure, assume $w = W(1 - r^2/a^2)^2$, which satisfies both clamped conditions. The bending strain energy of an axisymmetric plate is
+$$
+U = \pi D\int_0^a\left[(w'')^2 + \frac{(w')^2}{r^2} + \frac{2\nu w'w''}{r}\right]r\,dr .
+$$
+Use the principle of minimum potential energy ([[solid-mechanics/energy-methods]]) to find $W$, and explain why the answer is exact.
 ::: solution
-The equilibrium of a plate element under in-plane compression $N _ { x }$ gives:
-
-$$
-D \, \nabla ^ { 4 } w + N _ { x } \, { \frac { \partial ^ { 2 } w } { \partial x ^ { 2 } } } \; = \; 0
-$$
-
-The **boundary conditions** for a simply supported plate are:
-
-$$
-w = 0 \qquad M _ { n } = - D \, ( \nabla ^ { 2 } w ) = 0 \quad \text{on all edges}
-$$
-
-The solution is:
-
-$$
-w \; = \; A \, \sin \left( { \frac { m \, \pi \, x } { a } } \right) \, \sin \left( { \frac { n \, \pi \, y } { b } } \right)
-$$
-
-Substituting into the buckling equation:
-
-$$
-N _ { x , c r } \; = \; { \frac { D \, \pi ^ { 2 } } { b ^ { 2 } } } \, \left( { \frac { m \, b } { a } } + { \frac { a } { m \, b } } \right) ^ { 2 }
-$$
-
-**The plate buckling equation is the reason the engineer can calculate the critical buckling load, and the calculation is the reason the plate is safe.** $\blacksquare$
+With $\xi = r/a$: $w' = -4W\xi(1 - \xi^2)/a$, $w'' = -4W(1 - 3\xi^2)/a^2$. Then $U = \frac{16\pi DW^2}{a^2}\int_0^1\left[(1 - 3\xi^2)^2 + (1 - \xi^2)^2 + 2\nu(1 - \xi^2)(1 - 3\xi^2)\right]\xi\,d\xi$. The integrals (all from 0 to 1) are $\int(1 - 3\xi^2)^2\xi\,d\xi = \tfrac12 - \tfrac32 + \tfrac32 = \tfrac12$, $\int(1 - \xi^2)^2\xi\,d\xi = \tfrac12 - \tfrac12 + \tfrac16 = \tfrac16$, and $\int(1 - \xi^2)(1 - 3\xi^2)\xi\,d\xi = \int(\xi - 4\xi^3 + 3\xi^5)\,d\xi = \tfrac12 - 1 + \tfrac12 = 0$. So $U = \frac{16\pi DW^2}{a^2}\cdot\frac23 = \frac{32\pi DW^2}{3a^2}$, independent of $\nu$. The work of the load is $\int_0^aqw\,2\pi r\,dr = 2\pi qa^2W\int_0^1(1 - \xi^2)^2\xi\,d\xi = \pi qa^2W/3$. Minimising $\Pi = U - \pi qa^2W/3$: $\frac{64\pi DW}{3a^2} = \frac{\pi qa^2}{3}$, so $W = qa^4/64D$ — the exact result, because the assumed shape *is* the exact deflected shape ([[#prop-circular]]), and the Ritz method returns the exact solution whenever the exact solution lies in the trial family.
 :::
 :::
 
-::: quiz Kirchhoff plate theory {#quiz-kirchhoff}
-The Kirchhoff plate theory is valid when:
-
-- [ ] $t / a > 0 . 5$
-- [x] $t / a < 0 . 1$
-- [ ] $t / a = 1$
-- [ ] $t / a > 0 . 1$
-
+::: exercise Choosing a stringer pitch {level=3}
+An aluminium-alloy skin ($E = 70\ \mathrm{GPa}$, $\nu = 0.33$, $\sigma_Y = 300\ \mathrm{MPa}$) of thickness $2.0\ \mathrm{mm}$ must not buckle below a compressive stress of $60\ \mathrm{MPa}$ (a design condition chosen by the structure's designer). Ribs are $500\ \mathrm{mm}$ apart. (a) What is the largest stringer pitch $b$ if the panels are treated as simply supported with $k = 4$? (b) How many stringers does a $1.2\ \mathrm{m}$ wide skin then need? (c) Discuss what else limits the choice: the stringers' own buckling, rivet pitch, mass, and whether allowing the skin to buckle before limit load would be acceptable.
 ::: solution
-**$t / a < 0 . 1$ .** The Kirchhoff plate theory is valid when the plate is thin, and the validity is the reason the Kirchhoff plate theory is the most widely used theory in plate design. The engineer who uses the Kirchhoff plate theory for a thick plate is not analysing the plate; they are analysing a membrane.
+(a) $60 = 4\times\frac{\pi^2\times70\,000}{12(1 - 0.1089)}\left(\frac{2.0}{b}\right)^2 = 2.584\times10^{5}\times\frac{4}{b^2}$, so $b^2 = 1.034\times10^{6}/60 = 1.723\times10^{4}$ and $b = 131\ \mathrm{mm}$. The rib pitch gives $a/b = 3.8$, so $k$ is within a few per cent of 4. ✓
+(b) $1200/131 = 9.2$ bays, so 10 bays and 9 interior stringers (pitch $120\ \mathrm{mm}$), plus the spars at the edges.
+(c) A good answer notes: stringers must themselves resist column buckling between ribs (Euler, with the effective width of skin attached) and local buckling of their flanges ($k \approx 0.43$ for an outstanding flange); rivet pitch must be close enough to prevent inter-rivet buckling of the skin; more stringers add mass and cost, so the optimum balances skin thickness against stringer count (thicker skin, wider pitch is often lighter overall); and many aircraft designs allow skin buckling above a fraction of limit load because of the post-buckling reserve, provided the buckles disappear on unloading and fatigue at rivet lines is checked. Final sizing is done to the airworthiness regulations with test evidence.
 :::
 :::
-
-::: quiz Plate buckling {#quiz-plate-buckling}
-The buckling coefficient for a simply supported square plate under uniaxial compression is:
-
-- [ ] 1.0
-- [ ] 2.0
-- [x] 4.0
-- [ ] 8.0
-
-::: solution
-**4.0.** The buckling coefficient is minimum when the aspect ratio is 1 (square plate), and the minimum is the reason the square plate is the most critical plate in buckling. The buckling coefficient is proportional to the square of the aspect ratio, and the square is the reason the plate is designed for the aspect ratio, not the span.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[solid-mechanics/plasticity]]** — The plastic collapse of the plate is the foundation of limit analysis.
-- **[[solid-mechanics/fracture-mechanics]]** — The crack in the plate is the reason the aircraft skin is designed for damage tolerance.
-- **[[solid-mechanics/composites]]** — The composite plate is the reason the aircraft wing is lightweight.
-- **[[solid-mechanics/thin-walled-structures]]** — The plate is the building block of the thin-walled structure.
-- **[[solid-mechanics/energy-methods]]** — The Rayleigh-Ritz method is used to solve the plate equation.
-- **[[finite-element-method/plane-elements]]** — The plate element is the foundation of the finite element method.
-- **[[vibrations/continuous-systems]]** — The plate vibration is the reason the plate is designed for the natural frequency.
-- **[[aerodynamics/potential-flow]]** — The plate is the building block of the aerodynamic surface.
-- **[[machine-design/shafts]]** — The plate is the building block of the machine frame.
-- **[[energy-systems/steam-power-plants]]** — The plate is the building block of the boiler.
-
-::: history Plate theory: from Euler to the finite element method {#history-plates}
-**1744** — **Leonhard Euler** publishes the **first plate theory**, which is the foundation of the plate bending theory. **Euler's plate theory is the reason the engineer can calculate the deflection and the stress in the plate, and the calculation is the reason the plate is safe.**
-
-**1820** — **Sophie Germain** presents the **first correct plate theory** to the French Academy of Sciences, and the theory is the reason the engineer can calculate the deflection and the stress in the plate. **Germain's plate theory is the reason the engineer can calculate the deflection and the stress in the plate, and the calculation is the reason the plate is safe.**
-
-**1850** — **Gustav Kirchhoff** publishes the **Kirchhoff plate theory**, which is the foundation of the plate bending theory. **The Kirchhoff plate theory is the reason the engineer can calculate the deflection and the stress in the plate, and the calculation is the reason the plate is safe.**
-
-**1891** — **The plate buckling theory** is developed by **Bryan**, who calculates the critical buckling load of the plate. **The Bryan buckling theory is the reason the plate is designed for the buckling load, not the yield load, and the buckling load is the reason the plate is the most critical component in the aircraft.**
-
-**1907** — **The plate vibration theory** is developed by **Ritz**, who calculates the natural frequency of the plate. **The Ritz vibration theory is the reason the plate is designed for the natural frequency, not the static load, and the natural frequency is the reason the plate is the most critical component in the vibrating structure.**
-
-**1930s** — **The plate theory** is applied to the **aircraft design** by **Southwell**, who calculates the buckling load of the thin-walled panel. **The Southwell buckling theory is the reason the aircraft is designed for the buckling load, not the yield load, and the buckling load is the reason the aircraft is the most critical component in the aircraft.**
-
-**1940s** — **The large deflection theory** is developed by **von Kármán**, who calculates the post-buckling behaviour of the plate. **The von Kármán large deflection theory is the reason the plate is stiffer than the beam, and the stiffness is the reason the plate can carry the load beyond the linear range.**
-
-**1960s** — **The finite element method** is applied to the plate problem, which makes the numerical solution of the boundary-value problem practical. **The finite element method is the reason the engineer can solve the plate problem for complex geometries, and the solution is the reason the plate is the most refined application of the plate theory.**
-:::
-
-::: summary Plates {#summary-plates}
-- **The Kirchhoff plate equation is the governing differential equation for the bending of a thin plate: $D \, \nabla ^ { 4 } w = q$ .** The Kirchhoff plate theory is valid when $t / a < 0 . 1$ , and the validity is the reason the Kirchhoff plate theory is the most widely used theory in plate design.
-- **The flexural rigidity is $D = E \, t ^ { 3 } / [ 1 2 \, ( 1 - \nu ^ { 2 } ) ]$ .** The flexural rigidity is the reason the plate is stiffer than the beam, and the stiffness is the reason the plate can carry the load beyond the linear range.
-- **The bending moments are $M _ { x } = - D \, ( w _ { , x x } + \nu \, w _ { , y y } )$ and $M _ { y } = - D \, ( w _ { , y y } + \nu \, w _ { , x x } )$ .** The bending moments are the reason the engineer can calculate the stress in the plate, and the stress is the reason the plate is safe.
-- **The plate boundary conditions are the constraints on the plate edge: simply supported, clamped, free, and guided.** The boundary conditions are the reason the plate deflection is different for different support conditions, and the difference is the reason the plate is designed for the boundary conditions, not the load.
-- **The plate buckling coefficient is $k _ { c r } = ( m \, b / a + a / m \, b ) ^ { 2 }$ , and the critical buckling stress is $\sigma _ { c r } = k _ { c r } \, \pi ^ { 2 } \, E / [ 1 2 \, ( 1 - \nu ^ { 2 } ) \, ( b / t ) ^ { 2 } ]$ .** The buckling is the reason the plate is designed for the buckling load, not the yield load.
-- **The post-buckling load-deflection relationship is $N _ { x } / N _ { x , c r } = 1 + ( 1 / 4 ) \, ( w _ { \max } / t ) ^ { 2 }$ .** The post-buckling is the reason the plate is stiffer than the beam, and the stiffness is the reason the plate can carry the load beyond the linear range.
-- **The maximum deflection of a simply supported square plate under uniform load is $w _ { \max } = 0 . 0 0 4 0 6 \, q \, a ^ { 4 } / D$ , and the maximum bending stress is $\sigma _ { \max } = 6 \, M _ { \max } / t ^ { 2 }$ .** The deflection is the reason the plate is designed for the stiffness, not the strength.
-- **The clamped plate is 3.2 times stiffer than the simply supported plate, and the stiffness is the reason the clamped plate is the most widely used plate in pressure vessel design.** The stiffness is the reason the plate is designed for the boundary conditions, not the load.
-- **The plate theory is the most important theory in structural engineering, because the plate theory predicts the deflection and the stress in the plate.** The prediction is the reason the plate is safe.
-- **The finite element method is applied to the plate problem, which makes the numerical solution of the boundary-value problem practical.** The finite element method is the reason the engineer can solve the plate problem for complex geometries.
-:::
-
-## Further reading
-
-- **Stephen P. Timoshenko and S. Woinowsky-Krieger (1959)** — *Theory of Plates and Shells*, 2nd ed. McGraw-Hill. The Kirchhoff plate theory, the plate buckling, and the plate vibration.
-- **H. Bleich (1979)** — *Buckling Strength of Metal Structures*, 2nd ed. McGraw-Hill. The plate buckling theory and the post-buckling behaviour.
-- **Morris Dolph (1977)** — *Mechanics of Materials*. Wiley. The plate bending theory and the plate stress analysis.
-- **Megson, T.H.G. (2019)** — *Aircraft Structures for Engineering Students*, 6th ed. Butterworth-Heinemann. The plate theory in the aircraft context.
-- **O.C. Zienkiewicz and R.L. Taylor (2005)** — *The Finite Element Method*, 6th ed. Butterworth-Heinemann. The plate theory in the finite element context.
-- **L.E. Malvern (1969)** — *Introduction to the Mechanics of a Continuous Medium*. Prentice-Hall. The plate theory and the shell theory.
-- **SC Mal and G. Singh (1991)** — *Continuum Mechanics of Composite Materials*. Kluwer. The composite plate theory.
-- **Thomas J.R. Hughes (2012)** — *The Finite Element Method: Linear Static and Dynamic Finite Element Analysis*. Dover. The plate theory in the finite element context.

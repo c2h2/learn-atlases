@@ -1,492 +1,333 @@
-The composite is the most efficient structural material: the composite is the carbon fibre reinforced polymer (CFRP), the glass fibre reinforced polymer (GFRP), and the metal matrix composite (MMC), and the composite is the material that determines the weight of the structure. **The engineer who designs the composite structure without understanding the classical lamination theory is not designing the structure; they are designing a structure that will fail by delamination, not by fibre failure.** The classical lamination theory is the reason the engineer can predict the stress and the strain in each ply, and the prediction is the reason the structure is safe.
+A carbon-fibre-reinforced epoxy ply is about as stiff as steel along its fibres and about as stiff as a stiff plastic across them; its strength across the fibres is a fortieth of its strength along them; and it weighs a fifth as much as steel. Used where the loads are known — a wing skin, a wind-turbine blade spar, a pressure vessel wound with fibres along the stress directions, a racing-car monocoque, a bicycle frame — it gives structures of unmatched stiffness and strength for their weight. Used carelessly, it gives parts that warp when they come out of the mould, twist when they are pulled, crack inside at a fraction of their expected load, or come apart between their layers.
 
-The quantitative tools of composite mechanics are the **constitutive equations** (the stress-strain relationship for a single ply), the **classical lamination theory** (the stress-strain relationship for a laminate), the **failure criteria** (Tsai-Hill, Tsai-Wu, maximum stress), and the **delamination** (the interlaminar failure). The tools are the language in which the composite analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+All of these behaviours follow from one fact: a fibre composite is **anisotropic**, and the designer, by choosing the direction of each ply, chooses the anisotropy. This chapter develops the mechanics needed to do that: the stiffness of a single ply from its fibres and matrix, the ply's stress–strain law in its own axes and in any other direction, **classical laminate theory**, which combines plies into a laminate and predicts its in-plane and bending stiffness and the coupling between them, and the **failure criteria** used to predict when the first ply fails. It extends the isotropic Hooke's law of [[solid-mechanics/linear-elasticity]] and the Kirchhoff plate kinematics of [[solid-mechanics/plates]]; the materials themselves are described in [[materials-science/material-families]].
 
-::: warning Nine ways composite analysis goes wrong
-**Not checking the ply orientation.** The engineer who designs the composite without checking the ply orientation is not designing the composite; they are designing a composite that will fail by matrix cracking. **The ply orientation is the reason the composite is stiffer in the fibre direction than the transverse direction, and the stiffness is the reason the composite is designed for the fibre orientation, not the load direction.** **Not checking the coupling.** The engineer who designs the composite without checking the coupling is not designing the composite; they are designing a composite that will twist. **The coupling is the reason the composite twists under tension, and the twist is the reason the composite is designed for the coupling, not the stiffness.** **Not checking the failure criterion.** The engineer who uses the maximum stress criterion without checking the Tsai-Wu criterion is not analysing the composite; they are guessing. **The Tsai-Wu criterion is the reason the composite is designed for the interaction, not the individual stress, and the interaction is the reason the composite is the most critical material in the aircraft.** **Not checking the delamination.** The engineer who designs the composite without checking the delamination is not designing the composite; they are designing a composite that will fail by delamination. **The delamination is the reason the composite is designed for the interlaminar strength, not the in-plane strength, and the interlaminar strength is the reason the composite is the most critical material in the aircraft.** **Not checking the residual stress.** The engineer who calculates the composite stress without checking the residual stress is not calculating the composite stress; they are calculating the applied stress. **The residual stress is the reason the composite stress is different from the applied stress, and the difference is the reason the engineer uses the residual stress, not the applied stress.** **Not checking the moisture absorption.** The engineer who designs the composite without checking the moisture absorption is not designing the composite; they are designing a composite that will fail by moisture degradation. **The moisture absorption is the reason the composite is designed for the moisture, not just the load, and the moisture is the reason the composite is the most critical material in the marine environment.** **Not checking the impact damage.** The engineer who designs the composite without checking the impact damage is not designing the composite; they are designing a composite that will fail by impact damage. **The impact damage is the reason the composite is designed for the impact, not just the load, and the impact is the reason the composite is the most critical material in the aircraft.** **Not checking the fatigue.** The engineer who designs the composite without checking the fatigue is not designing the composite; they are designing a composite that will fail by fatigue. **The fatigue is the reason the composite is designed for the fatigue life, not the static strength, and the fatigue life is the reason the composite is the most critical material in the aircraft.** **Not checking the manufacturing defects.** The engineer who designs the composite without checking the manufacturing defects is not designing the composite; they are designing a composite that will fail by manufacturing defect. **The manufacturing defect is the reason the composite is designed for the defect, not just the load, and the defect is the reason the composite is the most critical material in the aircraft.**
+**Conventions.** Ply (material) axes: 1 along the fibres, 2 across them in the plane of the ply, 3 through the thickness. Laminate axes $x, y$; the ply angle $\theta$ is measured anticlockwise from $x$ to the fibre direction. Engineering shear strain $\gamma$ is used throughout. Laminates are described by their stacking sequence from one face: $[0/90]_s$ means $0, 90, 90, 0$ (s = symmetric).
+
+## Micromechanics: a ply from fibres and matrix
+
+A unidirectional ply is a bundle of parallel fibres (diameter about $5$–$20\ \mu\mathrm{m}$) bonded by a polymer matrix, with fibre volume fraction $V_f$ typically $0.5$–$0.65$ and $V_m = 1 - V_f$.
+
+::: proposition Rule of mixtures {#prop-rom}
+If fibres and matrix are both linear-elastic and perfectly bonded,
+(a) along the fibres, where both constituents share the same strain (**iso-strain**, Voigt),
+$$
+E_1 = E_fV_f + E_mV_m, \qquad \nu_{12} = \nu_fV_f + \nu_mV_m ;
+$$
+(b) across the fibres, approximating fibres and matrix as layers in series that carry the same stress (**iso-stress**, Reuss),
+$$
+\frac{1}{E_2} = \frac{V_f}{E_f} + \frac{V_m}{E_m}, \qquad \frac{1}{G_{12}} = \frac{V_f}{G_f} + \frac{V_m}{G_m}.
+$$
 :::
 
-## 1. Constitutive equations and lamination theory
-
-::: definition The constitutive equations for a single ply {#def-constitutive}
-The **constitutive equations** for a single ply relate the stress and the strain in the material coordinate system, and the constitutive equations are the reason the engineer can calculate the stress in each ply.
-
-For an **orthotropic ply** (transversely isotropic):
-
-$$
-{ \left[ \begin{array} { l } { \varepsilon _ { 1 } } \\ { \varepsilon _ { 2 } } \\ { \gamma _ { 1 2 } } \end{array} \right] } \; = \; { \left[ \begin{array} { c c c } { 1 / E _ { 1 } } & { - \nu _ { 1 2 } / E _ { 1 } } & { 0 } \\ { - \nu _ { 2 1 } / E _ { 2 } } & { 1 / E _ { 2 } } & { 0 } \\ { 0 } & { 0 } & { 1 / G _ { 1 2 } } \end{array} \right] } \, { \left[ \begin{array} { l } { \sigma _ { 1 } } \\ { \sigma _ { 2 } } \\ { \tau _ { 1 2 } } \end{array} \right] }
-$$
-
-The **reduced stiffness matrix** (plane stress) is:
-
-$$
-Q \; = \; { \left[ \begin{array} { c c c } { Q _ { 1 1 } } & { Q _ { 1 2 } } & { 0 } \\ { Q _ { 1 2 } } & { Q _ { 2 2 } } & { 0 } \\ { 0 } & { 0 } & { Q _ { 6 6 } } \end{array} \right] } \; = \; { \left[ \begin{array} { c c c } { E _ { 1 } / ( 1 - \nu _ { 1 2 } \, \nu _ { 2 1 } ) } & { \nu _ { 1 2 } \, E _ { 2 } / ( 1 - \nu _ { 1 2 } \, \nu _ { 2 1 } ) } & { 0 } \\ { \nu _ { 1 2 } \, E _ { 2 } / ( 1 - \nu _ { 1 2 } \, \nu _ { 2 1 } ) } & { E _ { 2 } / ( 1 - \nu _ { 1 2 } \, \nu _ { 2 1 } ) } & { 0 } \\ { 0 } & { 0 } & { G _ { 1 2 } } \end{array} \right] }
-$$
-
-$$
-\begin{array} { l c c c c }
-\textbf{Material} & \textbf{ } E _ { 1 } \textbf{ (GPa)} & \textbf{ } E _ { 2 } \textbf{ (GPa)} & \textbf{ } G _ { 1 2 } \textbf{ (GPa)} & \textbf{ } \nu _ { 1 2 } \\ \hline
-\text{CFRP (T300/914)} & 1 4 8 & 9 . 5 & 5 . 1 & 0 . 2 7 \\
-\text{GFRP (E-glass/epoxy)} & 4 5 & 1 6 & 5 . 5 & 0 . 2 8 \\
-\text{Kevlar/epoxy} & 7 9 & 5 . 5 & 2 . 2 & 0 . 3 4 \\
-\text{Ti-6Al-4V/Boride} & 2 2 0 & 1 2 0 & 4 5 & 0 . 2 5 \\
-\end{array}
-$$
-
-**The ply orientation is the reason the composite is stiffer in the fibre direction than the transverse direction, and the stiffness is the reason the composite is designed for the fibre orientation, not the load direction. The engineer who designs the composite without checking the ply orientation is not designing the composite; they are designing a composite that will fail by matrix cracking.**
+::: proof
+(a) Under a load $P$ along the fibres, plane sections stay plane, so fibres and matrix have the same strain $\varepsilon_1$. Forces add: $P = \sigma_fA_f + \sigma_mA_m = (E_fV_f + E_mV_m)\,\varepsilon_1A$, so $E_1 = P/(A\varepsilon_1) = E_fV_f + E_mV_m$. The lateral contraction is the volume-weighted average of the constituents' contractions, which gives $\nu_{12}$. (b) Under a transverse stress, the series model gives each phase the same stress $\sigma_2$; the deformations add over the thicknesses $V_f$ and $V_m$ of a unit length, $\varepsilon_2 = \sigma_2(V_f/E_f + V_m/E_m)$, which is the Reuss result; the shear modulus follows identically.
 :::
 
-::: definition The classical lamination theory {#def-clt}
-The **classical lamination theory** (CLT) relates the laminate force and moment resultants to the ply strains, and the CLT is the reason the engineer can calculate the stress in each ply of the laminate.
+The longitudinal result is accurate to a few per cent: it is the **upper (Voigt) bound** on the stiffness, and the iso-strain assumption is nearly exact along the fibres. The transverse result is a **lower (Reuss) bound** and underestimates $E_2$ and $G_{12}$, because the real stress field between round fibres is not in series. Semi-empirical formulas such as the Halpin–Tsai equations, with a fitted reinforcing parameter, or tests on the actual ply, are used for the transverse properties in practice.
 
-The **laminate constitutive equation** is:
-
-$$
-{ \left[ \begin{array} { l } { N } \\ { M } \end{array} \right] } \; = \; { \left[ \begin{array} { c c } { A } & { B } \\ { B } & { D } \end{array} \right] } \, { \left[ \begin{array} { l } { \varepsilon ^ { 0 } } \\ { \kappa } \end{array} \right] }
-$$
-
-where:
-- $A _ { i j } = \sum \bar { Q } _ { i j } ^ { ( k ) } \, ( z _ { k } - z _ { k - 1 } )$ is the **extensional stiffness matrix**
-- $B _ { i j } = { \frac { 1 } { 2 } } \sum \bar { Q } _ { i j } ^ { ( k ) } \, ( z _ { k } ^ { 2 } - z _ { k - 1 } ^ { 2 } )$ is the **coupling stiffness matrix**
-- $D _ { i j } = { \frac { 1 } { 3 } } \sum \bar { Q } _ { i j } ^ { ( k ) } \, ( z _ { k } ^ { 3 } - z _ { k - 1 } ^ { 3 } )$ is the **bending stiffness matrix**
-
-$$
-\begin{array} { l c c c }
-\textbf{Laminate} & \textbf{ } A _ { 1 1 } \textbf{ (GPa·mm)} & \textbf{ } D _ { 1 1 } \textbf{ (GPa·mm} ^ { 3 } \textbf{)} & \textbf{Use case} \\ \hline
-[ 0 _ { 4 } ] & 5 9 2 & 6 1 . 7 & \text{Unidirectional} \\
-[ 0 / 9 0 _ { 2 } / 0 ] & 3 5 5 & 3 7 . 0 & \text{Cross-ply} \\
-[ 0 / 9 0 ] _ { s } & 2 9 6 & 1 8 . 5 & \text{Cross-ply} \\
-[ \pm 4 5 ] _ { s } & 1 4 8 & 9 . 3 & \text{Angle-ply} \\
-[ 0 / \pm 4 5 / 9 0 ] _ { s } & 2 9 6 & 1 8 . 5 & \text{Quasi-isotropic} \\
-\end{array}
-$$
-
-**The coupling is the reason the composite twists under tension, and the twist is the reason the composite is designed for the coupling, not the stiffness. The engineer who designs the composite without checking the coupling is not designing the composite; they are designing a composite that will twist.**
-:::
-
-::: widget plot
-title: The stiffness of a laminate vs ply orientation
-f: 148*x^4+9.5*(1-x^4)+2*2.7*x^2*(1-x^2); 9.5*x^4+148*(1-x^4)+2*2.7*x^2*(1-x^2)
-x: 0,1
-y: 0,160
-labels: Ex (0 deg); Ex (90 deg)
-caption: The stiffness of a laminate against the ply orientation. **The stiffness is maximum in the fibre direction and minimum in the transverse direction, and the maximum is the reason the composite is designed for the fibre orientation, not the load direction.** **The stiffness is proportional to the fourth power of the cosine of the angle, and the fourth power is the reason the composite is designed for the fibre orientation, not the load direction.**
-:::
-
-::: example Quasi-isotropic laminate calculation {#ex-quasi-isotropic level=3 check="2"}
-A quasi-isotropic laminate $[ 0 / 9 0 / \pm 4 5 ] _ { s }$ (CFRP, $E _ { 1 } = 1 4 8$ GPa, $E _ { 2 } = 9 . 5$ GPa, $G _ { 1 2 } = 5 . 1$ GPa, $\nu _ { 1 2 } = 0 . 2 7$ ) is subjected to $N _ { x } = 1 0 0$ kN/m. Calculate the laminate strain.
-
-**Extensional stiffness matrix (approximate):**
-
-For a quasi-isotropic laminate, the extensional stiffness is:
-
-$$
-A _ { 1 1 } \; = \; A _ { 2 2 } \; \approx \; { \frac { 3 } { 8 } } \, E _ { 1 } \, t + { \frac { 5 } { 8 } } \, E _ { 2 } \, t + { \frac { 2 } { 8 } } \, ( 2 \, G _ { 1 2 } + \nu _ { 1 2 } \, E _ { 2 } ) \, t
-$$
-
-For $t = 1 . 2$ mm (4 plies of 0.3 mm each, doubled for symmetric):
-
-$$
-A _ { 1 1 } \; \approx \; 0 . 3 7 5 \times 1 4 8 \times 1 . 2 + 0 . 6 2 5 \times 9 . 5 \times 1 . 2 + 0 . 2 5 \times ( 1 0 . 2 + 2 . 5 7 ) \times 1 . 2
-$$
-
-$$
-A _ { 1 1 } \; \approx \; 6 6 . 6 + 7 . 1 3 + 3 . 8 3 \; = \; 7 7 . 6 \ \text{kN/mm} \; = \; 7 7 . 6 \times 1 0 ^ { 6 } \ \text{N/m}
-$$
-
-**Laminate strain:**
-
-$$
-\varepsilon _ { x } \; = \; { \frac { N _ { x } } { A _ { 1 1 } } } \; = \; { \frac { 1 0 0 \times 1 0 ^ { 3 } } { 7 7 . 6 \times 1 0 ^ { 6 } } } \; = \; { \bf 1 2 9 0 } \ \mu \varepsilon
-$$
-
-**The laminate strain is 1290 microstrain. The engineer would design the laminate for the strain, because the strain is the reason the laminate is designed for the stiffness, not the strength.**
-:::
-
-## 2. Failure criteria and delamination
-
-::: definition The failure criteria {#def-failure-criteria}
-The **failure criteria** are the conditions that determine when the composite fails, and the failure criteria are the reason the engineer can predict the failure load of the composite.
-
-**Maximum stress criterion**:
-
-$$
-| \sigma _ { 1 } | \; \geq \; X \quad \text{or} \quad | \sigma _ { 2 } | \; \geq \; Y \quad \text{or} \quad | \tau _ { 1 2 } | \; \geq \; S
-$$
-
-**Tsai-Hill criterion**:
-
-$$
-\left( { \frac { \sigma _ { 1 } } { X } } \right) ^ { 2 } - { \frac { \sigma _ { 1 } \, \sigma _ { 2 } } { X ^ { 2 } } } + \left( { \frac { \sigma _ { 2 } } { Y } } \right) ^ { 2 } + \left( { \frac { \tau _ { 1 2 } } { S } } \right) ^ { 2 } \; \geq \; 1
-$$
-
-**Tsai-Wu criterion**:
-
-$$
-F _ { i } \, \sigma _ { i } + F _ { i j } \, \sigma _ { i } \, \sigma _ { j } \; \geq \; 1
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Criterion} & \textbf{Interaction} & \textbf{Tension/compression} & \textbf{Use case} \\ \hline
-\text{Maximum stress} & \text{No} & \text{Yes} & \text{Simple design} \\
-\text{Tsai-Hill} & \text{Yes} & \text{No} & \text{General design} \\
-\text{Tsai-Wu} & \text{Yes} & \text{Yes} & \text{General design} \\
-\text{Puck} & \text{Yes} & \text{Yes} & \text{Advanced design} \\
-\end{array}
-$$
-
-**The Tsai-Wu criterion is the reason the composite is designed for the interaction, not the individual stress, and the interaction is the reason the composite is the most critical material in the aircraft. The engineer who uses the maximum stress criterion without checking the Tsai-Wu criterion is not analysing the composite; they are guessing.**
-:::
-
-::: definition The delamination {#def-delamination}
-The **delamination** is the interlaminar failure, and the delamination is the reason the composite is designed for the interlaminar strength, not the in-plane strength.
-
-**Interlaminar shear strength** (ILSS):
-
-$$
-\tau _ { \text{ILSS } } \; = \; { \frac { 3 \, P } { 4 \, b \, h } } \quad \text{(short beam shear test)}
-$$
-
-**Mode I fracture toughness** (opening mode):
-
-$$
-G _ { I C } \; = \; { \frac { 3 \, P \, \delta } { 2 \, b \, a } } \quad \text{(double cantilever beam test)}
-$$
-
-**Mode II fracture toughness** (sliding mode):
-
-$$
-G _ { I I C } \; = \; { \frac { 9 \, P \, \delta \, a ^ { 2 } } { 2 \, b \, L ^ { 2 } } } \quad \text{(end notch flexure test)}
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Property} & \textbf{Typical value} & \textbf{Test} & \textbf{Use case} \\ \hline
-\text{ILSS} & 3 0 \text{--} 9 0 \ \text{MPa} & \text{Short beam shear} & \text{Interlaminar shear} \\
-G _ { I C } & 0 . 2 \text{--} 1 . 0 \ \text{kJ/m} ^ { 2 } & \text{DCB} & \text{Mode I delamination} \\
-G _ { I I C } & 0 . 5 \text{--} 2 . 0 \ \text{kJ/m} ^ { 2 } & \text{ENF} & \text{Mode II delamination} \\
-\text{CAI} & 1 5 0 \text{--} 3 5 0 \ \text{MPa} & \text{Compression after impact} & \text{Impact damage} \\
-\end{array}
-$$
-
-**The delamination is the reason the composite is designed for the interlaminar strength, not the in-plane strength, and the interlaminar strength is the reason the composite is the most critical material in the aircraft. The engineer who designs the composite without checking the delamination is not designing the composite; they are designing a composite that will fail by delamination.**
-:::
-
-::: widget plot
-title: The failure envelope for a composite ply
-f: sqrt(1-x^2)*0.8; -sqrt(1-x^2)*0.8
-x: -1.2,1.2
-y: -1.2,1.2
-labels: Tsai-Hill (upper); Tsai-Hill (lower)
-caption: The failure envelope for a composite ply using the Tsai-Hill criterion. **The failure envelope is an ellipse, and the ellipse is the reason the composite is designed for the interaction, not the individual stress.** **The Tsai-Hill criterion is the reason the engineer can predict the failure load of the composite, and the prediction is the reason the composite is safe.**
-:::
-
-::: example Tsai-Hill failure check {#ex-tsai-hill level=3 check="2"}
-A CFRP ply has $\sigma _ { 1 } = 8 0 0$ MPa, $\sigma _ { 2 } = 3 0$ MPa, and $\tau _ { 1 2 } = 5 0$ MPa. The strengths are $X = 1 5 0 0$ MPa, $Y = 5 0$ MPa, and $S = 9 0$ MPa. Check whether the ply fails using the Tsai-Hill criterion.
-
-**Tsai-Hill equation:**
-
-$$
-\left( { \frac { 8 0 0 } { 1 5 0 0 } } \right) ^ { 2 } - { \frac { 8 0 0 \times 3 0 } { 1 5 0 0 ^ { 2 } } } + \left( { \frac { 3 0 } { 5 0 } } \right) ^ { 2 } + \left( { \frac { 5 0 } { 9 0 } } \right) ^ { 2 }
-$$
-
-$$
-= \; 0 . 2 8 4 - 0 . 0 1 0 7 + 0 . 3 6 + 0 . 3 0 9 \; = \; { \bf 0 . 9 4 2 }
-$$
-
-**Since $0 . 9 4 2 < 1$ , the ply does not fail. The factor of safety is:**
-
-$$
-n \; = \; { \frac { 1 } { \sqrt { 0 . 9 4 2 } } } \; = \; { \bf 1 . 0 3 }
-$$
-
-**The Tsai-Hill value is 0.942, which is below 1. The ply does not fail, but the factor of safety is only 1.03. The engineer would design the composite for the Tsai-Hill criterion, because the Tsai-Hill criterion is the reason the composite is designed for the interaction, not the individual stress.**
-:::
-
-::: example Ply stress in a cross-ply laminate {#ex-ply-stress level=3 check="2"}
-A cross-ply laminate $[ 0 / 9 0 ] _ { s }$ (CFRP, $E _ { 1 } = 1 4 8$ GPa, $E _ { 2 } = 9 . 5$ GPa, $G _ { 1 2 } = 5 . 1$ GPa, $\\nu _ { 1 2 } = 0 . 2 7$ , ply thickness 0.15 mm) is subjected to $N _ { x } = 5 0$ kN/m. Calculate the stress in the 0\\u00b0 and 90\\u00b0 plies.
-
-**Extensional stiffness matrix (approximate):**
-
-For a $[ 0 / 9 0 ] _ { s }$ laminate, the extensional stiffness is dominated by the 0\\u00b0 plies in the $x$-direction:
-
-$$
-A _ { 1 1 } \\; \\approx \\; 2 \\times Q _ { 1 1 } \\times t _ { 0 } + 2 \\times Q _ { 2 2 } \\times t _ { 9 0 } \\; = \\; 2 \\times 1 4 8 . 7 \\times 0 . 1 5 + 2 \\times 9 . 5 5 \\times 0 . 1 5
-$$
-
-$$
-A _ { 1 1 } \\; = \\; 4 4 . 6 + 2 . 8 7 \\; = \\; 4 7 . 5 \\ \\text{kN/mm} \\; = \\; 4 7 . 5 \\times 1 0 ^ { 6 } \\ \\text{N/m}
-$$
-
-**Laminate strain:**
-
-$$
-\\varepsilon _ { x } \\; = \\; { \\frac { N _ { x } } { A _ { 1 1 } } } \\; = \\; { \\frac { 5 0 \\times 1 0 ^ { 3 } } { 4 7 . 5 \\times 1 0 ^ { 6 } } } \\; = \\; 1 0 5 3 \\ \\mu \\varepsilon
-$$
-
-**Stress in the 0\\u00b0 ply:**
-
-$$
-\\sigma _ { 1 } \\; = \\; Q _ { 1 1 } \\, \\varepsilon _ { x } \\; = \\; 1 4 8 . 7 \\times 1 0 ^ { 3 } \\times 1 0 5 3 \\times 1 0 ^ { - 6 } \\; = \\; { \\bf 1 5 7 } \\ \\text{MPa}
-$$
-
-**Stress in the 90\\u00b0 ply:**
-
-$$
-\\sigma _ { 2 } \\; = \\; Q _ { 2 2 } \\, \\varepsilon _ { x } \\; = \\; 9 . 5 5 \\times 1 0 ^ { 3 } \\times 1 0 5 3 \\times 1 0 ^ { - 6 } \\; = \\; { \\bf 1 0 . 1 } \\ \\text{MPa}
-$$
-
-**The stress in the 0\\u00b0 ply is 157 MPa, and the stress in the 90\\u00b0 ply is 10.1 MPa. The engineer would design the laminate for the ply stress, because the ply stress is the reason the laminate is designed for the ply orientation, not the load direction.**
-:::
-
-::: example Mode I delamination toughness {#ex-dcb-test level=3 check="2"}
-A double cantilever beam (DCB) test gives $P = 1 0 0$ N, $\\delta = 5$ mm, $b = 2 0$ mm, and $a = 5 0$ mm. Calculate the mode I fracture toughness $G _ { I C }$ .
-
-**Mode I fracture toughness:**
-
-$$
-G _ { I C } \\; = \\; { \\frac { 3 \\, P \\, \\delta } { 2 \\, b \\, a } } \\; = \\; { \\frac { 3 \\times 1 0 0 \\times 5 } { 2 \\times 2 0 \\times 5 0 } } \\; = \\; { \\frac { 1 5 0 0 } { 2 0 0 0 } } \\; = \\; { \\bf 0 . 7 5 } \\ \\text{kJ/m} ^ { 2 }
-$$
-
-**The mode I fracture toughness is 0.75 kJ/m². The engineer would design the composite for the delamination toughness, because the delamination toughness is the reason the composite is designed for the interlaminar strength, not the in-plane strength.**
-:::
-
-::: exercise Laminate coupling {#ex-laminate-coupling level=3 check="2"}
-A laminate has $B _ { 1 1 } = 5 \\times 1 0 ^ { 5 }$ N and $A _ { 1 1 } = 4 0 \\times 1 0 ^ { 6 }$ N/m. Calculate the coupling ratio $B _ { 1 1 } / A _ { 1 1 }$ and explain its significance.
-
+::: example Glass/epoxy ply {#ex-rom}
+E-glass fibres ($E_f = 72\ \mathrm{GPa}$, $\nu_f = 0.22$) in epoxy ($E_m = 3.5\ \mathrm{GPa}$, $\nu_m = 0.35$) at $V_f = 0.6$. Estimate $E_1$, $E_2$ and $\nu_{12}$.
 ::: solution
 $$
-{ \\frac { B _ { 1 1 } } { A _ { 1 1 } } } \\; = \\; { \\frac { 5 \\times 1 0 ^ { 5 } } { 4 0 \\times 1 0 ^ { 6 } } } \\; = \\; { \\bf 0 . 0 1 2 5 } \\ \\text{m}
+E_1 = 72(0.6) + 3.5(0.4) = 44.6\ \mathrm{GPa}, \qquad \frac{1}{E_2} = \frac{0.6}{72} + \frac{0.4}{3.5} = 0.1226\ \mathrm{GPa^{-1}}\ \Rightarrow\ E_2 = 8.2\ \mathrm{GPa},
+$$
+$$
+\nu_{12} = 0.22(0.6) + 0.35(0.4) = 0.27 .
+$$
+Sanity checks: $E_1$ is dominated by the fibres (97 % of it comes from them), $E_2$ by the matrix: even with 60 % fibres the transverse modulus is little more than twice the resin's. The Halpin–Tsai formula with the commonly used parameter $\xi = 2$ gives $E_2 \approx 14.9\ \mathrm{GPa}$; measured transverse moduli of glass/epoxy at this fibre fraction typically lie between these estimates, which is why design uses measured ply data.
+:::
+:::
+
+## The orthotropic ply
+
+A unidirectional ply has three mutually perpendicular planes of symmetry: it is **orthotropic**. In its own axes, normal stresses produce no shear strains and vice versa. For a thin ply in plane stress ($\sigma_3 = \tau_{13} = \tau_{23} = 0$), four independent constants describe it: $E_1$, $E_2$, $\nu_{12}$ and $G_{12}$.
+
+::: definition Ply compliance and reduced stiffness {#def-Q}
+In ply axes the plane-stress Hooke's law of an orthotropic ply is
+$$
+\begin{bmatrix}\varepsilon_1\\ \varepsilon_2\\ \gamma_{12}\end{bmatrix} =
+\begin{bmatrix} 1/E_1 & -\nu_{21}/E_2 & 0\\ -\nu_{12}/E_1 & 1/E_2 & 0\\ 0 & 0 & 1/G_{12}\end{bmatrix}
+\begin{bmatrix}\sigma_1\\ \sigma_2\\ \tau_{12}\end{bmatrix},
+\qquad
+\begin{bmatrix}\sigma_1\\ \sigma_2\\ \tau_{12}\end{bmatrix} = \mathbf{Q}\begin{bmatrix}\varepsilon_1\\ \varepsilon_2\\ \gamma_{12}\end{bmatrix},
+$$
+where $\nu_{12}$ is the contraction in direction 2 per unit strain in direction 1. The compliance matrix is symmetric, which gives the **reciprocal relation** $\nu_{21}/E_2 = \nu_{12}/E_1$. Its inverse, the **reduced stiffness matrix**, has
+$$
+Q_{11} = \frac{E_1}{1 - \nu_{12}\nu_{21}}, \quad Q_{22} = \frac{E_2}{1 - \nu_{12}\nu_{21}}, \quad Q_{12} = \frac{\nu_{12}E_2}{1 - \nu_{12}\nu_{21}}, \quad Q_{66} = G_{12}, \quad Q_{16} = Q_{26} = 0 .
+$$
+:::
+
+Symmetry of the compliance matrix is not an extra assumption: it follows from the existence of a strain energy function, as in [[solid-mechanics/energy-methods]] (Betti's reciprocal theorem applied to a ply). It means $\nu_{21}$ is small for a stiff fibre ply: pulling across the fibres hardly shortens the stiff fibres.
+
+### Off-axis plies
+
+In a laminate, plies point in different directions, so each ply's law must be expressed in laminate axes. Stresses and strains transform with the rotation formulas of [[solid-mechanics/stress-strain-3d]], with the factor $\tfrac12$ on engineering shear strain.
+
+::: theorem Transformed stiffness and off-axis modulus {#thm-qbar}
+For a ply at angle $\theta$ (with $c = \cos\theta$, $s = \sin\theta$), the stresses and strains in laminate axes are related by $\boldsymbol\sigma_{xy} = \bar{\mathbf{Q}}\,\boldsymbol\varepsilon_{xy}$ with
+$$
+\begin{aligned}
+\bar Q_{11} &= Q_{11}c^4 + 2(Q_{12} + 2Q_{66})s^2c^2 + Q_{22}s^4,\\
+\bar Q_{22} &= Q_{11}s^4 + 2(Q_{12} + 2Q_{66})s^2c^2 + Q_{22}c^4,\\
+\bar Q_{12} &= (Q_{11} + Q_{22} - 4Q_{66})s^2c^2 + Q_{12}(s^4 + c^4),\\
+\bar Q_{66} &= (Q_{11} + Q_{22} - 2Q_{12} - 2Q_{66})s^2c^2 + Q_{66}(s^4 + c^4),\\
+\bar Q_{16} &= (Q_{11} - Q_{12} - 2Q_{66})sc^3 + (Q_{12} - Q_{22} + 2Q_{66})s^3c,\\
+\bar Q_{26} &= (Q_{11} - Q_{12} - 2Q_{66})s^3c + (Q_{12} - Q_{22} + 2Q_{66})sc^3 .
+\end{aligned}
+$$
+The Young's modulus in the $x$-direction of a ply at angle $\theta$ is
+$$
+\frac{1}{E_x(\theta)} = \frac{c^4}{E_1} + \left(\frac{1}{G_{12}} - \frac{2\nu_{12}}{E_1}\right)s^2c^2 + \frac{s^4}{E_2}.
+$$ {#eq-Ex}
+:::
+
+::: proof
+Apply a uniaxial stress $\sigma_x$ to the ply. By the transformation equations, the stresses in ply axes are $\sigma_1 = \sigma_xc^2$, $\sigma_2 = \sigma_xs^2$, $\tau_{12} = -\sigma_xsc$. The ply-axis strains follow from the compliance: $\varepsilon_1 = \sigma_x(c^2/E_1 - \nu_{12}s^2/E_1)$, $\varepsilon_2 = \sigma_x(s^2/E_2 - \nu_{12}c^2/E_1)$ (using $\nu_{21}/E_2 = \nu_{12}/E_1$), $\gamma_{12} = -\sigma_xsc/G_{12}$. Transform back: $\varepsilon_x = \varepsilon_1c^2 + \varepsilon_2s^2 - \gamma_{12}sc$, which is
+$$
+\varepsilon_x = \sigma_x\left[\frac{c^4}{E_1} - \frac{2\nu_{12}s^2c^2}{E_1} + \frac{s^4}{E_2} + \frac{s^2c^2}{G_{12}}\right],
+$$
+and $E_x = \sigma_x/\varepsilon_x$ is [[#eq-Ex]]. The $\bar Q_{ij}$ are obtained in the same way, writing $\boldsymbol\sigma_{xy} = \mathbf{T}^{-1}\boldsymbol\sigma_{12} = \mathbf{T}^{-1}\mathbf{Q}\boldsymbol\varepsilon_{12}$ and $\boldsymbol\varepsilon_{12} = \mathbf{R}\mathbf{T}\mathbf{R}^{-1}\boldsymbol\varepsilon_{xy}$, where $\mathbf{T}$ is the stress transformation matrix and $\mathbf{R} = \diag(1, 1, 2)$ converts tensor to engineering shear strain; multiplying out gives the expressions listed.
+:::
+
+The terms $\bar Q_{16}$ and $\bar Q_{26}$ are new: in an off-axis ply, a normal stress produces a **shear strain**. Pull a $30^\circ$ ply along $x$ and it shears as well as stretches — the **extension–shear coupling** that makes off-axis tensile tests difficult and that laminate design aims to cancel.
+
+::: widget plot
+f: 1/(cos(x*pi/180)^4/E1 + (1/G - 2*0.28/E1)*sin(x*pi/180)^2*cos(x*pi/180)^2 + sin(x*pi/180)^4/E2)
+x: 0, 90
+y: 0, 200
+sliders: E1=181:30:250:1; E2=10.3:3:20:0.1; G=7.17:2:30:0.1
+labels: E_x(\theta)\ \text{(GPa)}
+caption: Young's modulus of a unidirectional ply loaded at angle $\theta$ (degrees) to its fibres, from [[#eq-Ex]], with $\nu_{12} = 0.28$. The starting values are typical of carbon/epoxy. The modulus collapses within the first $15^\circ$: a fibre misalignment of $10^\circ$ costs 40 % of the stiffness. Now set the values to a glass/epoxy-like ply with a low shear modulus ($E_1 = 39$, $E_2 = 8.6$, $G = 3$): the curve dips *below* $E_2$ beyond about $46^\circ$, with a minimum of $7.9\ \mathrm{GPa}$ near $60^\circ$ — when $1/G_{12}$ is large enough, the off-axis ply is softest not across the fibres but at an intermediate angle, where it deforms mainly by shear of the matrix.
+:::
+
+::: example Stiffness of a carbon/epoxy ply on and off axis {#ex-ply}
+A carbon/epoxy ply has $E_1 = 181\ \mathrm{GPa}$, $E_2 = 10.3\ \mathrm{GPa}$, $\nu_{12} = 0.28$, $G_{12} = 7.17\ \mathrm{GPa}$ (values typical of a standard-modulus carbon/epoxy, as tabulated by Tsai and Hahn). Find $\nu_{21}$, the reduced stiffness $\mathbf{Q}$, and the modulus $E_x$ of the ply at $15^\circ$ and $45^\circ$ to the load.
+::: solution
+$\nu_{21} = \nu_{12}E_2/E_1 = 0.28\times10.3/181 = 0.0159$; $1 - \nu_{12}\nu_{21} = 0.99554$. Then
+$$
+\mathbf{Q} = \begin{bmatrix} 181.8 & 2.90 & 0\\ 2.90 & 10.35 & 0\\ 0 & 0 & 7.17\end{bmatrix}\ \mathrm{GPa}.
+$$
+From [[#eq-Ex]] with $1/G_{12} - 2\nu_{12}/E_1 = 0.1395 - 0.0031 = 0.1364\ \mathrm{GPa^{-1}}$:
+at $15^\circ$ ($c^2 = 0.9330$, $s^2 = 0.0670$): $1/E_x = 0.8705/181 + 0.1364\times0.0625 + 0.00449/10.3 = 0.01377$, $E_x = 72.6\ \mathrm{GPa}$;
+at $45^\circ$: $1/E_x = 0.25/181 + 0.1364\times0.25 + 0.25/10.3 = 0.05975$, $E_x = 16.7\ \mathrm{GPa}$.
+
+A $15^\circ$ misalignment loses 60 % of the axial stiffness, and the main contributor is the shear term — the matrix shear compliance $1/G_{12}$. Sanity check: $E_x(0) = E_1$ and $E_x(90^\circ) = E_2$ come out of [[#eq-Ex]] directly, and $Q_{11}$ exceeds $E_1$ by only 0.4 % because $\nu_{12}\nu_{21}$ is tiny.
+:::
+:::
+
+## Classical laminate theory
+
+A laminate is a stack of plies bonded together. Classical laminate theory (CLT) treats it as a thin plate in the sense of [[solid-mechanics/plates]]: the Kirchhoff assumptions apply to the whole stack, so the strain varies linearly through the thickness even though the stiffness jumps from ply to ply.
+
+::: theorem The ABD relations {#thm-abd}
+Let the laminate occupy $-h/2 \le z \le h/2$, with ply $k$ between $z_{k-1}$ and $z_k$ and transformed stiffness $\bar{\mathbf{Q}}_k$. With mid-plane strains $\boldsymbol\varepsilon^0 = (\varepsilon^0_x, \varepsilon^0_y, \gamma^0_{xy})$ and curvatures $\boldsymbol\kappa = (\kappa_x, \kappa_y, \kappa_{xy})$, so that $\boldsymbol\varepsilon(z) = \boldsymbol\varepsilon^0 + z\boldsymbol\kappa$, the force and moment resultants per unit width are
+$$
+\begin{bmatrix}\mathbf{N}\\ \mathbf{M}\end{bmatrix} = \begin{bmatrix}\mathbf{A} & \mathbf{B}\\ \mathbf{B} & \mathbf{D}\end{bmatrix}\begin{bmatrix}\boldsymbol\varepsilon^0\\ \boldsymbol\kappa\end{bmatrix},
+$$ {#eq-abd}
+with
+$$
+\mathbf{A} = \sum_k\bar{\mathbf{Q}}_k(z_k - z_{k-1}), \qquad \mathbf{B} = \frac12\sum_k\bar{\mathbf{Q}}_k(z_k^2 - z_{k-1}^2), \qquad \mathbf{D} = \frac13\sum_k\bar{\mathbf{Q}}_k(z_k^3 - z_{k-1}^3).
+$$
+$\mathbf{A}$ is the in-plane (extensional) stiffness, $\mathbf{D}$ the bending stiffness and $\mathbf{B}$ the **coupling** between them.
+:::
+
+::: proof
+The resultants are $\mathbf{N} = \int_{-h/2}^{h/2}\boldsymbol\sigma\,dz$ and $\mathbf{M} = \int_{-h/2}^{h/2}\boldsymbol\sigma\,z\,dz$. Within ply $k$, $\boldsymbol\sigma = \bar{\mathbf{Q}}_k(\boldsymbol\varepsilon^0 + z\boldsymbol\kappa)$ with $\bar{\mathbf{Q}}_k$ constant, so
+$$
+\mathbf{N} = \sum_k\bar{\mathbf{Q}}_k\left[\boldsymbol\varepsilon^0\!\int_{z_{k-1}}^{z_k}\!dz + \boldsymbol\kappa\!\int_{z_{k-1}}^{z_k}\!z\,dz\right], \qquad
+\mathbf{M} = \sum_k\bar{\mathbf{Q}}_k\left[\boldsymbol\varepsilon^0\!\int_{z_{k-1}}^{z_k}\!z\,dz + \boldsymbol\kappa\!\int_{z_{k-1}}^{z_k}\!z^2\,dz\right],
+$$
+and the integrals give the stated sums. Assumptions: perfect bonding (no slip between plies), Kirchhoff kinematics (no transverse shear deformation, valid for thin laminates), plane stress in each ply, linear elasticity. For a homogeneous isotropic plate, $\mathbf{B} = \mathbf{0}$ and $\mathbf{D} = \mathbf{Q}h^3/12$, recovering the plate rigidity $D$.
+:::
+
+The structure of $\mathbf{A}$, $\mathbf{B}$ and $\mathbf{D}$ depends on the stacking sequence in ways the designer controls:
+
+- **Symmetric** laminates (each ply mirrored about the mid-plane) have $\mathbf{B} = \mathbf{0}$: in-plane loads cause no bending and vice versa. Because $z_k^2 - z_{k-1}^2$ has opposite signs for mirror-image plies, their contributions to $\mathbf{B}$ cancel. Almost all practical laminates are symmetric, because an unsymmetric laminate also **warps when it cools after curing** — thermal strains couple into curvature just as mechanical ones do.
+- **Balanced** laminates (every $+\theta$ ply matched by a $-\theta$ ply of the same thickness) have $A_{16} = A_{26} = 0$: no extension–shear coupling in the plane. Since $\bar Q_{16}$ and $\bar Q_{26}$ are odd in $\theta$, they cancel in the sum for $\mathbf{A}$. They do not, in general, cancel in $\mathbf{D}$ unless the $\pm\theta$ pairs are at mirror positions, so a balanced symmetric laminate can still have bending–twisting coupling $D_{16}$, $D_{26}$.
+- **Quasi-isotropic** laminates, such as $[0/\pm45/90]_s$ or $[0/\pm60]_s$, have an $\mathbf{A}$ matrix with the form of an isotropic material: equal in-plane stiffness in every direction.
+
+Effective engineering constants for in-plane loading of a symmetric laminate follow from the inverse $\mathbf{a} = \mathbf{A}^{-1}$: $E_x = 1/(a_{11}h)$, $\nu_{xy} = -a_{12}/a_{11}$, $G_{xy} = 1/(a_{66}h)$.
+
+::: algorithm Laminate analysis {#alg-clt}
+1. For each ply, compute $\mathbf{Q}$ from $E_1, E_2, \nu_{12}, G_{12}$ and $\bar{\mathbf{Q}}_k$ at its angle.
+2. Find the interface coordinates $z_k$ from the stacking sequence and ply thickness, measured from the mid-plane.
+3. Assemble $\mathbf{A}$, $\mathbf{B}$, $\mathbf{D}$.
+4. Solve [[#eq-abd]] for $\boldsymbol\varepsilon^0$ and $\boldsymbol\kappa$ under the applied $\mathbf{N}$, $\mathbf{M}$.
+5. For each ply, compute the strains $\boldsymbol\varepsilon^0 + z\boldsymbol\kappa$ at its top and bottom, transform them to ply axes, and find the ply stresses $\sigma_1, \sigma_2, \tau_{12}$ with $\mathbf{Q}$.
+6. Apply a failure criterion to each ply ([[#def-failure]]).
+:::
+
+::: example Cross-ply and angle-ply laminates {#ex-laminates}
+Using the ply of [[#ex-ply]] with ply thickness $0.125\ \mathrm{mm}$, find the in-plane engineering constants $E_x$, $\nu_{xy}$, $G_{xy}$ of (a) $[0/90]_s$, (b) $[\pm45]_s$ and (c) the quasi-isotropic $[0/\pm45/90]_s$.
+::: solution
+(a) $[0/90]_s$, $h = 0.5\ \mathrm{mm}$. Two $0^\circ$ and two $90^\circ$ plies, so $\mathbf{A}/h$ is the average of $\mathbf{Q}$ and $\bar{\mathbf{Q}}(90^\circ)$ (which swaps $Q_{11}$ and $Q_{22}$):
+$$
+\frac{\mathbf{A}}{h} = \begin{bmatrix} 96.08 & 2.90 & 0\\ 2.90 & 96.08 & 0\\ 0 & 0 & 7.17\end{bmatrix}\ \mathrm{GPa},
+$$
+giving $E_x = 96.0\ \mathrm{GPa}$, $\nu_{xy} = 0.030$, $G_{xy} = 7.17\ \mathrm{GPa}$. Half the fibres point along $x$, so $E_x$ is about half of $E_1$, but the shear stiffness is only the matrix-dominated $G_{12}$.
+
+(b) $[+45/-45/-45/+45]$: $\bar Q_{11}(45^\circ) = \tfrac14(Q_{11} + 2Q_{12} + 4Q_{66} + Q_{22}) = 56.66\ \mathrm{GPa}$, $\bar Q_{12} = 42.32$, $\bar Q_{66} = 46.59\ \mathrm{GPa}$; the $\bar Q_{16}$ terms cancel between $+45$ and $-45$. Inverting: $E_x = 25.1\ \mathrm{GPa}$, $\nu_{xy} = 0.75$, $G_{xy} = 46.6\ \mathrm{GPa}$. The shear stiffness is six and a half times that of the cross-ply, because shear in $x$–$y$ is tension and compression along $\pm45^\circ$ — along the fibres. This is why the skins of torsion boxes and drive shafts use $\pm45^\circ$ plies.
+
+(c) $[0/45/-45/90]_s$: $E_x = E_y = 69.7\ \mathrm{GPa}$, $\nu_{xy} = 0.296$, $G_{xy} = 26.9\ \mathrm{GPa}$, and indeed $E_x/[2(1 + \nu_{xy})] = 26.9\ \mathrm{GPa}$, the isotropic relation. Sanity check: a quasi-isotropic carbon laminate has about the stiffness of aluminium ($70\ \mathrm{GPa}$) at about 57 % of its density — the real weight advantage of carbon is smaller than the ply's $E_1$ suggests, unless the plies can be aligned with the loads.
+:::
+:::
+
+::: warning Unsymmetric and unbalanced laminates do unexpected things
+A two-ply $[0/90]$ laminate has $\mathbf{B} \ne \mathbf{0}$: with the ply above and $0.125\ \mathrm{mm}$ plies, $B_{11} = -B_{22} = -1.34\ \mathrm{kN}$ (units of force: $\mathrm{N\,mm}$ per mm). Pull it in $x$ and it curls ($\kappa_x \ne 0$); cure it at $120\ ^\circ\mathrm{C}$ and it comes out of the mould as a saddle. An unbalanced laminate ($[0/30]_s$, say) shears when pulled, so a tension test grips it unevenly and a structure built from it twists. Both couplings are occasionally used deliberately (aeroelastic tailoring of wings and blades), but by accident they cause distortion, residual stresses and misleading test results. Check $\mathbf{B} = \mathbf{0}$ and $A_{16} = A_{26} = 0$ before anything else — and remember that symmetry and balance in the *design* are lost if a ply is laid at the wrong angle or dropped in manufacture.
+:::
+
+## Failure of a ply and of a laminate
+
+A unidirectional ply has five basic strengths: $X_t$ and $X_c$ along the fibres in tension and compression, $Y_t$ and $Y_c$ across them, and $S$ in in-plane shear. They differ enormously: for typical carbon/epoxy $X_t \approx 1500\ \mathrm{MPa}$ but $Y_t \approx 40\ \mathrm{MPa}$. A failure criterion combines them into a prediction for any combined stress state $(\sigma_1, \sigma_2, \tau_{12})$ in ply axes.
+
+::: definition Ply failure criteria {#def-failure}
+**Maximum stress:** the ply fails when any one of
+$$
+\sigma_1 = X_t\ (\text{or } -X_c), \quad \sigma_2 = Y_t\ (\text{or } -Y_c), \quad \lvert\tau_{12}\rvert = S
+$$
+is reached; the governing term also identifies the failure mode (fibre, transverse matrix or shear).
+
+**Tsai–Hill:** an interactive criterion adapted from Hill's anisotropic yield criterion,
+$$
+\left(\frac{\sigma_1}{X}\right)^2 - \frac{\sigma_1\sigma_2}{X^2} + \left(\frac{\sigma_2}{Y}\right)^2 + \left(\frac{\tau_{12}}{S}\right)^2 = 1,
+$$
+with $X$ and $Y$ taken as the tensile or compressive strengths according to the signs of $\sigma_1$ and $\sigma_2$.
+
+**Tsai–Wu:** a quadratic tensor polynomial with linear terms that distinguish tension and compression,
+$$
+F_1\sigma_1 + F_2\sigma_2 + F_{11}\sigma_1^2 + F_{22}\sigma_2^2 + F_{66}\tau_{12}^2 + 2F_{12}\sigma_1\sigma_2 = 1,
+$$
+with $F_1 = \frac{1}{X_t} - \frac{1}{X_c}$, $F_{11} = \frac{1}{X_tX_c}$, $F_2 = \frac{1}{Y_t} - \frac{1}{Y_c}$, $F_{22} = \frac{1}{Y_tY_c}$, $F_{66} = \frac{1}{S^2}$, and the interaction term commonly estimated as $F_{12} = -\tfrac12\sqrt{F_{11}F_{22}}$.
+
+These are **empirical** criteria, fitted to uniaxial and shear strengths; their accuracy under combined stress varies with material and mode, and international comparisons (the World-Wide Failure Exercises) have shown that none is reliable for every case.
+:::
+
+For a ply loaded at angle $\theta$ to its fibres by uniaxial stress $\sigma_x$, the ply-axis stresses are $\sigma_1 = \sigma_xc^2$, $\sigma_2 = \sigma_xs^2$, $\tau_{12} = -\sigma_xsc$. The maximum stress criterion gives the **off-axis strength** as the smallest of $X_t/c^2$, $Y_t/s^2$ and $S/(sc)$, and Tsai–Hill gives
+$$
+\frac{1}{\sigma_x^2} = \frac{c^4}{X^2} + \left(\frac{1}{S^2} - \frac{1}{X^2}\right)s^2c^2 + \frac{s^4}{Y^2}.
 $$
 
-**The coupling ratio is 0.0125 m. The coupling is the reason the composite twists under tension, and the twist is the reason the composite is designed for the coupling, not the stiffness. A symmetric laminate has $B = 0$ , which is the reason the symmetric laminate is the most widely used laminate in the aircraft.**
+::: widget plot
+f: min(1500/cos(x*pi/180)^2, min(40/sin(x*pi/180)^2, 68/(sin(x*pi/180)*cos(x*pi/180)))); 1/sqrt(cos(x*pi/180)^4/1500^2 + (1/68^2 - 1/1500^2)*sin(x*pi/180)^2*cos(x*pi/180)^2 + sin(x*pi/180)^4/40^2)
+x: 0, 90
+y: 0, 1600
+labels: \text{maximum stress}; \text{Tsai–Hill}
+caption: Tensile strength of a unidirectional carbon/epoxy ply loaded at angle $\theta$ (degrees) to its fibres ($X_t = 1500$, $Y_t = 40$, $S = 68\ \mathrm{MPa}$). The maximum-stress curve has corners where the failure mode changes — fibre failure for the first few degrees, then shear, then transverse tension beyond about $60^\circ$ — while Tsai–Hill is smooth and lower where two stresses interact. Both show the essential fact: the strength falls to a fifth of $X_t$ within $15^\circ$. Off-axis tests on real plies generally fall close to the smooth curve.
 :::
+
+::: example First-ply failure of a cross-ply laminate {#ex-fpf}
+The $[0/90]_s$ laminate of [[#ex-laminates]] ($h = 0.5\ \mathrm{mm}$) carries a tensile force $N_x$ per unit width. With the strengths $X_t = 1500$, $Y_t = 40$, $S = 68\ \mathrm{MPa}$, find the load at first-ply failure by the maximum-stress criterion, and identify which ply fails and how.
+::: solution
+Following [[#alg-clt]]: inverting $\mathbf{A}$ gives, per unit $N_x$ (in $\mathrm{N/mm}$), $\varepsilon^0_x = 2.084\times10^{-5}$ and $\varepsilon^0_y = -6.28\times10^{-7}$; there is no curvature ($\mathbf{B} = 0$) and no shear.
+
+$0^\circ$ plies: $\sigma_1 = Q_{11}\varepsilon_x + Q_{12}\varepsilon_y = 3.786\ \mathrm{MPa}$ and $\sigma_2 = 0.054\ \mathrm{MPa}$ per $\mathrm{N/mm}$.
+$90^\circ$ plies (ply axis 1 along $y$): $\sigma_1 = -0.054\ \mathrm{MPa}$, $\sigma_2 = Q_{12}\varepsilon_y + Q_{22}\varepsilon_x = 0.2137\ \mathrm{MPa}$ per $\mathrm{N/mm}$.
+
+Maximum stress: the $90^\circ$ plies reach $\sigma_2 = Y_t = 40\ \mathrm{MPa}$ at $N_x = 40/0.2137 = 187\ \mathrm{N/mm}$; the $0^\circ$ plies would reach $X_t$ only at $1500/3.786 = 396\ \mathrm{N/mm}$. First-ply failure is **transverse matrix cracking of the $90^\circ$ plies** at $N_x = 187\ \mathrm{N/mm}$ — an average laminate stress of $374\ \mathrm{MPa}$. (Tsai–Hill gives the same value, $187\ \mathrm{N/mm}$, because $\sigma_1$ in those plies is tiny.)
+
+Sanity check and interpretation: the cracked $90^\circ$ plies no longer carry transverse load, but the laminate does not fail — the $0^\circ$ plies carry almost all of $N_x$ anyway (their stress is 18 times that of the $90^\circ$ plies). Ultimate failure is near $396\ \mathrm{N/mm}$. Whether first-ply failure is acceptable depends on the application: in a fuel tank or pressure vessel the matrix cracks are leak paths, and in fatigue they grow into delaminations; design allowables normally keep service loads below first-ply failure, and thermal residual stresses from curing (ignored here) lower it further.
+:::
+:::
+
+### Delamination and free edges
+
+Classical laminate theory predicts only in-plane stresses. At a free edge of a laminate — the edge of a hole, a cut-out or a coupon — the plies, which would contract sideways by different amounts under load (their $\nu_{xy}$ differ), are forced to deform together by the bond, and **interlaminar stresses** $\sigma_z$, $\tau_{xz}$, $\tau_{yz}$ arise in a boundary layer about one laminate thickness wide. They can exceed the weak through-thickness strength of the resin and start **delamination**, the characteristic failure of laminates, which is also caused by impacts that leave little visible damage on the surface. Delamination growth is analysed with the fracture mechanics of [[solid-mechanics/fracture-mechanics]] — the energy release rate measured in double cantilever beam tests — and stacking sequences are chosen to reduce free-edge tension (for example by placing $\pm45^\circ$ plies on the outside).
+
+::: application Designing with laminates
+Practical composite design follows rules of thumb grounded in this chapter: use symmetric, balanced laminates; include at least about 10 % of the plies in each of the $0^\circ$, $\pm45^\circ$ and $90^\circ$ directions so that no load direction is matrix-dominated; avoid more than a few identical plies stacked together (thick blocks of the same angle crack and delaminate more readily); place $\pm45^\circ$ plies at the surfaces for damage tolerance and buckling. Allowables come from extensive coupon and element testing that accounts for environment (hot–wet conditions reduce matrix-dominated strengths), impact damage and scatter, and aircraft and pressure-vessel composites are certified to the applicable regulations and codes with that test evidence.
+:::
+
+::: history
+The bounds behind the rule of mixtures go back to Woldemar Voigt (1889), who averaged stiffnesses under uniform strain, and András Reuss (1929), who averaged compliances under uniform stress. Rodney Hill's 1948 criterion for the yielding of anisotropic metals was adapted to fibre composites by V. D. Azzi and S. W. Tsai in 1965 (the Tsai–Hill criterion), and S. W. Tsai and E. M. Wu proposed their tensor-polynomial criterion in 1971. The coupling between stretching and bending in unsymmetric laminates was analysed by E. Reissner and Y. Stavsky in 1961, and R. B. Pipes and N. J. Pagano computed the interlaminar stresses at free edges in 1970. High-strength carbon fibres from polyacrylonitrile were developed at the Royal Aircraft Establishment, Farnborough, in the early 1960s by William Watt, Leslie Phillips and William Johnson, which made carbon-fibre composites practical for structures.
+:::
+
+::: quiz
+Which laminate has no coupling between in-plane loads and bending, and no extension–shear coupling?
+- [ ] $[0/90]$
+- [ ] $[0/30]_s$
+- [x] $[0/\pm45/90]_s$
+- [ ] $[+45/-45]$
+::: solution
+$[0/\pm45/90]_s$ is symmetric ($\mathbf{B} = 0$) and balanced ($A_{16} = A_{26} = 0$). $[0/90]$ and $[+45/-45]$ are unsymmetric ($\mathbf{B} \ne 0$); $[0/30]_s$ is symmetric but unbalanced ($A_{16} \ne 0$).
+:::
+:::
+
+::: quiz
+A cross-ply laminate is loaded in tension along its $0^\circ$ fibres. Which plies fail first, and how?
+- [ ] The $0^\circ$ plies, by fibre fracture.
+- [x] The $90^\circ$ plies, by transverse matrix cracking.
+- [ ] Both together, by delamination.
+::: solution
+The $90^\circ$ plies see the laminate strain across their fibres, and their transverse strength $Y_t$ is tiny, so they crack first ([[#ex-fpf]]) at a load well below the fibre-failure load of the $0^\circ$ plies.
+:::
+:::
+
+::: summary
+- A unidirectional ply is orthotropic: four in-plane constants $E_1$, $E_2$, $\nu_{12}$, $G_{12}$, with $\nu_{21}/E_2 = \nu_{12}/E_1$.
+- Rule of mixtures: $E_1 = E_fV_f + E_mV_m$ (accurate); $1/E_2 = V_f/E_f + V_m/E_m$ (a lower bound).
+- Off-axis plies: $\bar{\mathbf{Q}}(\theta)$ has extension–shear coupling terms $\bar Q_{16}$, $\bar Q_{26}$; $E_x(\theta)$ falls steeply with misalignment, dominated by the matrix shear compliance.
+- Classical laminate theory: $\mathbf{N} = \mathbf{A}\boldsymbol\varepsilon^0 + \mathbf{B}\boldsymbol\kappa$, $\mathbf{M} = \mathbf{B}\boldsymbol\varepsilon^0 + \mathbf{D}\boldsymbol\kappa$. Symmetric $\Rightarrow \mathbf{B} = 0$; balanced $\Rightarrow A_{16} = A_{26} = 0$; quasi-isotropic layups have isotropic $\mathbf{A}$.
+- Ply failure: maximum stress (identifies the mode), Tsai–Hill and Tsai–Wu (interactive). First-ply failure is usually transverse cracking of plies whose fibres are across the load; ultimate failure is fibre-dominated.
+- Free edges and impacts cause interlaminar stresses and delamination, analysed by fracture mechanics.
 :::
 
 ## Exercises
 
-::: exercise Reduced stiffness matrix {#ex-reduced-stiffness level=3 check="2"}
-Calculate the reduced stiffness matrix for a CFRP ply ($E _ { 1 } = 1 4 8$ GPa, $E _ { 2 } = 9 . 5$ GPa, $G _ { 1 2 } = 5 . 1$ GPa, $\nu _ { 1 2 } = 0 . 2 7$ ).
-
+::: exercise Longitudinal modulus {level=1 check="117"}
+Carbon fibres with $E_f = 230\ \mathrm{GPa}$ are embedded in a resin with $E_m = 4\ \mathrm{GPa}$ at $V_f = 0.5$. Estimate $E_1$. (Enter it in GPa.)
 ::: solution
-$$
-\nu _ { 2 1 } \; = \; \nu _ { 1 2 } \, { \frac { E _ { 2 } } { E _ { 1 } } } \; = \; 0 . 2 7 \times { \frac { 9 . 5 } { 1 4 8 } } \; = \; 0 . 0 1 7 3
-$$
-
-$$
-1 - \nu _ { 1 2 } \, \nu _ { 2 1 } \; = \; 1 - 0 . 2 7 \times 0 . 0 1 7 3 \; = \; 0 . 9 9 5
-$$
-
-$$
-Q _ { 1 1 } \; = \; { \frac { 1 4 8 } { 0 . 9 9 5 } } \; = \; { \bf 1 4 8 . 7 } \ \text{GPa} \qquad Q _ { 2 2 } \; = \; { \frac { 9 . 5 } { 0 . 9 9 5 } } \; = \; { \bf 9 . 5 5 } \ \text{GPa}
-$$
-
-$$
-Q _ { 1 2 } \; = \; { \frac { 0 . 2 7 \times 9 . 5 } { 0 . 9 9 5 } } \; = \; { \bf 2 . 5 8 } \ \text{GPa} \qquad Q _ { 6 6 } \; = \; { \bf 5 . 1 } \ \text{GPa}
-$$
-
-**The reduced stiffness matrix is $Q = [ 1 4 8 . 7 , 2 . 5 8 , 0 ; 2 . 5 8 , 9 . 5 5 , 0 ; 0 , 0 , 5 . 1 ]$ GPa.**
+$E_1 = 230(0.5) + 4(0.5) = 117\ \mathrm{GPa}$. (The fibres' own transverse modulus is much lower than $230\ \mathrm{GPa}$, so the Reuss formula with $E_f = 230\ \mathrm{GPa}$ would overestimate $E_2$.)
 :::
 :::
 
-::: exercise Maximum stress criterion {#ex-max-stress level=3 check="2"}
-A composite ply has $\sigma _ { 1 } = 1 2 0 0$ MPa, $\sigma _ { 2 } = 4 0$ MPa, and $\tau _ { 1 2 } = 6 0$ MPa. The strengths are $X = 1 5 0 0$ MPa, $Y = 5 0$ MPa, and $S = 9 0$ MPa. Check whether the ply fails using the maximum stress criterion.
-
+::: exercise Reciprocal Poisson's ratio {level=1 check="0.02"}
+A ply has $E_1 = 150\ \mathrm{GPa}$, $E_2 = 10\ \mathrm{GPa}$ and $\nu_{12} = 0.3$. Find $\nu_{21}$. (Enter the number.)
 ::: solution
-$$
-| \sigma _ { 1 } | / X \; = \; 1 2 0 0 / 1 5 0 0 \; = \; 0 . 8 0 \quad \checkmark
-$$
-
-$$
-| \sigma _ { 2 } | / Y \; = \; 4 0 / 5 0 \; = \; 0 . 8 0 \quad \checkmark
-$$
-
-$$
-| \tau _ { 1 2 } | / S \; = \; 6 0 / 9 0 \; = \; 0 . 6 7 \quad \checkmark
-$$
-
-**All ratios are below 1, so the ply does not fail. The maximum stress criterion is the reason the engineer can check the failure of the composite, and the check is the reason the composite is safe.**
+$\nu_{21} = \nu_{12}E_2/E_1 = 0.3\times10/150 = 0.02$. A transverse stress of $10\ \mathrm{MPa}$ ($\varepsilon_2 = 10^{-3}$) causes a fibre-direction strain of only $-2\times10^{-5}$.
 :::
 :::
 
-::: exercise Interlaminar shear strength {#ex-ilss level=3 check="2"}
-A short beam shear test gives $P = 5 0 0$ N, $b = 1 0$ mm, and $h = 4$ mm. Calculate the ILSS.
-
+::: exercise Tsai–Hill for a matrix-dominated stress {level=1 check="40"}
+A ply with $Y_t = 40\ \mathrm{MPa}$ and $S = 50\ \mathrm{MPa}$ carries $\sigma_2 = 24\ \mathrm{MPa}$ and $\sigma_1 = 0$. What shear stress $\tau_{12}$ will cause failure by the Tsai–Hill criterion? (Enter it in MPa.)
 ::: solution
-$$
-\tau _ { \text{ILSS } } \; = \; { \frac { 3 \, P } { 4 \, b \, h } } \; = \; { \frac { 3 \times 5 0 0 } { 4 \times 1 0 \times 4 } } \; = \; { \frac { 1 5 0 0 } { 1 6 0 } } \; = \; { \bf 9 . 4 } \ \text{MPa}
-$$
-
-**The ILSS is 9.4 MPa. The engineer would design the composite for the ILSS, because the ILSS is the reason the composite is designed for the interlaminar strength, not the in-plane strength.**
+$(24/40)^2 + (\tau/50)^2 = 1$ gives $(\tau/50)^2 = 0.64$, $\tau = 40\ \mathrm{MPa}$. The maximum stress criterion would allow $50\ \mathrm{MPa}$: interaction lowers the strength.
 :::
 :::
 
-::: exercise Laminate strain {#ex-laminate-strain level=3 check="2"}
-A laminate has $A _ { 1 1 } = 5 0 \times 1 0 ^ { 6 }$ N/m and is subjected to $N _ { x } = 2 0 0$ kN/m. Calculate the laminate strain.
-
+::: exercise Off-axis strength at 45° {level=2 check="80"}
+A unidirectional ply with $X_t = 1500$, $Y_t = 40$ and $S = 68\ \mathrm{MPa}$ is loaded in uniaxial tension at $45^\circ$ to its fibres. Find the failure stress by the maximum-stress criterion, and the mode. (Enter the stress in MPa.)
 ::: solution
-$$
-\varepsilon _ { x } \; = \; { \frac { N _ { x } } { A _ { 1 1 } } } \; = \; { \frac { 2 0 0 \times 1 0 ^ { 3 } } { 5 0 \times 1 0 ^ { 6 } } } \; = \; { \bf 4 0 0 0 } \ \mu \varepsilon
-$$
-
-**The laminate strain is 4000 microstrain.**
+At $45^\circ$: $\sigma_1 = \sigma_2 = \sigma_x/2$, $\lvert\tau_{12}\rvert = \sigma_x/2$. Limits: $\sigma_x = 2X_t = 3000$, $2Y_t = 80$, $2S = 136\ \mathrm{MPa}$. The smallest is $80\ \mathrm{MPa}$: transverse tension. Tsai–Hill gives $69\ \mathrm{MPa}$, because the transverse and shear stresses interact.
 :::
 :::
 
-::: exercise Coupling effect {#ex-coupling level=3 check="2"}
-A laminate has $B _ { 1 6 } = 1 0 ^ { 6 }$ N and $A _ { 1 1 } = 5 0 \times 1 0 ^ { 6 }$ N/m. Calculate the curvature when $N _ { x } = 1 0 0$ kN/m.
-
+::: exercise A cross-ply A matrix {level=2}
+For the ply of [[#ex-ply]] and $0.2\ \mathrm{mm}$ plies, compute $\mathbf{A}$ for $[0/90/0]$ (three plies, symmetric), and find $E_x$ and $E_y$ of the laminate. Why are they different?
 ::: solution
-$$
-\kappa \; = \; { \frac { B _ { 1 6 } \, N _ { x } } { A _ { 1 1 } \, D _ { 1 1 } - B _ { 1 6 } ^ { 2 } } } \; \approx \; { \frac { B _ { 1 6 } \, N _ { x } } { A _ { 1 1 } \, D _ { 1 1 } } }
-$$
-
-Assuming $D _ { 1 1 } = 1 0 ^ { 4 }$ N·m:
-
-$$
-\kappa \; \approx \; { \frac { 1 0 ^ { 6 } \times 1 0 0 \times 1 0 ^ { 3 } } { 5 0 \times 1 0 ^ { 6 } \times 1 0 ^ { 4 } } } \; = \; { \frac { 1 0 ^ { 1 1 } } { 5 \times 1 0 ^ { 1 1 } } } \; = \; { \bf 0 . 2 } \ \text{m} ^ { - 1 }
-$$
-
-**The curvature is 0.2 m⁻¹. The coupling is the reason the composite twists under tension, and the twist is the reason the composite is designed for the coupling, not the stiffness.**
+$h = 0.6\ \mathrm{mm}$; two $0^\circ$ plies ($0.4\ \mathrm{mm}$) and one $90^\circ$ ($0.2\ \mathrm{mm}$): $A_{11} = 181.81(0.4) + 10.35(0.2) = 74.79\ \mathrm{kN/mm}$, $A_{22} = 10.35(0.4) + 181.81(0.2) = 40.50\ \mathrm{kN/mm}$, $A_{12} = 2.897(0.6) = 1.74\ \mathrm{kN/mm}$, $A_{66} = 7.17(0.6) = 4.30\ \mathrm{kN/mm}$ (using GPa × mm = kN/mm). Then $E_x = (A_{11} - A_{12}^2/A_{22})/h = (74.79 - 0.075)/0.6 = 124.5\ \mathrm{GPa}$ and $E_y = (A_{22} - A_{12}^2/A_{11})/h = (40.50 - 0.040)/0.6 = 67.4\ \mathrm{GPa}$. Two-thirds of the fibres point along $x$.
 :::
 :::
 
-::: exercise Derivation: the classical lamination theory {#ex-derive-clt level=4 check="2"}
-Show that the laminate constitutive equation $[ N , M ] ^ { T } = [ A , B ; B , D ] \, [ \varepsilon ^ { 0 } , \kappa ] ^ { T }$ is derived from the integration of the ply stresses through the thickness.
-
+::: exercise Bending stiffness depends on stacking order {level=2}
+Compare $D_{11}$ for $[0/90]_s$ and $[90/0]_s$ made of the ply of [[#ex-ply]] with $0.125\ \mathrm{mm}$ plies, and explain the result. Do the two laminates have the same $\mathbf{A}$?
 ::: solution
-The strain at a distance $z$ from the mid-plane is:
-
-$$
-\varepsilon ( z ) \; = \; \varepsilon ^ { 0 } + z \, \kappa
-$$
-
-The stress in ply $k$ is:
-
-$$
-\sigma ^ { ( k ) } \; = \; \bar { Q } ^ { ( k ) } \, \varepsilon ( z ) \; = \; \bar { Q } ^ { ( k ) } \, ( \varepsilon ^ { 0 } + z \, \kappa )
-$$
-
-The force resultant is:
-
-$$
-N \; = \; \int _ { - h / 2 } ^ { h / 2 } \sigma \, d z \; = \; \sum _ { k } \, \bar { Q } ^ { ( k ) } \, \int _ { z _ { k - 1 } } ^ { z _ { k } } \, ( \varepsilon ^ { 0 } + z \, \kappa ) \, d z
-$$
-
-$$
-N \; = \; \underbrace { \sum _ { k } \, \bar { Q } ^ { ( k ) } \, ( z _ { k } - z _ { k - 1 } ) } _ { A } \, \varepsilon ^ { 0 } + \underbrace { { \frac { 1 } { 2 } } \sum _ { k } \, \bar { Q } ^ { ( k ) } \, ( z _ { k } ^ { 2 } - z _ { k - 1 } ^ { 2 } ) } _ { B } \, \kappa
-$$
-
-The moment resultant is:
-
-$$
-M \; = \; \int _ { - h / 2 } ^ { h / 2 } \sigma \, z \, d z \; = \; B \, \varepsilon ^ { 0 } + D \, \kappa
-$$
-
-where $D = { \frac { 1 } { 3 } } \sum \bar { Q } ^ { ( k ) } \, ( z _ { k } ^ { 3 } - z _ { k - 1 } ^ { 3 } )$ .
-
-**The classical lamination theory is the reason the engineer can calculate the stress in each ply of the laminate, and the calculation is the reason the composite is safe.** $\blacksquare$
+$z$-coordinates: $-0.25, -0.125, 0, 0.125, 0.25\ \mathrm{mm}$. Outer plies contribute $\tfrac13\times2\times(0.25^3 - 0.125^3) = 9.115\times10^{-3}\ \mathrm{mm^3}$, inner plies $\tfrac13\times2\times0.125^3 = 1.302\times10^{-3}\ \mathrm{mm^3}$. $[0/90]_s$: $D_{11} = 181.81(9.115\times10^{-3}) + 10.35(1.302\times10^{-3}) = 1.671\ \mathrm{kN\,mm}$ ($= 1671\ \mathrm{N\,mm}$). $[90/0]_s$: $D_{11} = 10.35(9.115\times10^{-3}) + 181.81(1.302\times10^{-3}) = 0.331\ \mathrm{kN\,mm}$, five times less. The $\mathbf{A}$ matrices are identical — the same plies in a different order — but bending stiffness weights each ply by its distance from the mid-plane squared, as in a sandwich panel. For bending about $y$, put the $0^\circ$ plies outside.
 :::
 :::
 
-::: exercise Derivation: the Tsai-Hill criterion {#ex-derive-tsai-hill level=4 check="2"}
-Show that the Tsai-Hill criterion is derived from the von Mises criterion by replacing the yield strengths with the composite strengths.
-
+::: exercise Derive the off-axis shear coupling {level=3}
+(a) For a ply at angle $\theta$ under uniaxial $\sigma_x$, show that the shear strain in laminate axes is $\gamma_{xy} = \sigma_x\,sc\left[\left(\frac{2}{E_1} + \frac{2\nu_{12}}{E_1} - \frac{1}{G_{12}}\right)c^2 - \left(\frac{2}{E_2} + \frac{2\nu_{12}}{E_1} - \frac{1}{G_{12}}\right)s^2\right]$. (b) Evaluate the ratio $\gamma_{xy}/\varepsilon_x$ for the ply of [[#ex-ply]] at $\theta = 30^\circ$. (c) Explain why this coupling makes an off-axis tension test with rigid grips give a misleading modulus.
 ::: solution
-The von Mises criterion for an isotropic material is:
-
-$$
-\sigma _ { 1 } ^ { 2 } - \sigma _ { 1 } \, \sigma _ { 2 } + \sigma _ { 2 } ^ { 2 } + 3 \, \tau _ { 1 2 } ^ { 2 } \; = \; S _ { y } ^ { 2 }
-$$
-
-For an orthotropic material, the von Mises criterion is modified by replacing the yield strength with the directional strengths:
-
-$$
-\left( { \frac { \sigma _ { 1 } } { X } } \right) ^ { 2 } - { \frac { \sigma _ { 1 } \, \sigma _ { 2 } } { X ^ { 2 } } } + \left( { \frac { \sigma _ { 2 } } { Y } } \right) ^ { 2 } + \left( { \frac { \tau _ { 1 2 } } { S } } \right) ^ { 2 } \; = \; 1
-$$
-
-The Tsai-Hill criterion is the von Mises criterion with the yield strength replaced by the directional strengths. The Tsai-Hill criterion is the reason the engineer can predict the failure load of the composite, and the prediction is the reason the composite is safe. $\blacksquare$
+(a) From the proof of [[#thm-qbar]], $\varepsilon_1 = \sigma_x(c^2 - \nu_{12}s^2)/E_1$, $\varepsilon_2 = \sigma_x(s^2/E_2 - \nu_{12}c^2/E_1)$, $\gamma_{12} = -\sigma_xsc/G_{12}$. The laminate-axis shear strain is $\gamma_{xy} = 2sc(\varepsilon_1 - \varepsilon_2) + (c^2 - s^2)\gamma_{12}$. Substituting and collecting the $c^2$ and $s^2$ terms (using $c^2 - s^2$ and $c^2 + s^2 = 1$) gives the stated expression.
+(b) At $30^\circ$: $c^2 = 0.75$, $s^2 = 0.25$, $sc = 0.4330$. In $\mathrm{GPa^{-1}}$: $2/E_1 + 2\nu_{12}/E_1 - 1/G_{12} = 0.01105 + 0.00309 - 0.13947 = -0.12533$; $2/E_2 + 2\nu_{12}/E_1 - 1/G_{12} = 0.19417 + 0.00309 - 0.13947 = 0.05779$. So $\gamma_{xy}/\sigma_x = 0.4330[-0.12533(0.75) - 0.05779(0.25)] = -0.04696\ \mathrm{GPa^{-1}}$, while $\varepsilon_x/\sigma_x = 1/E_x(30^\circ) = 1/28.78 = 0.03475\ \mathrm{GPa^{-1}}$. The ratio is $\gamma_{xy}/\varepsilon_x = -1.35$: the ply shears more than it stretches.
+(c) Rigid grips prevent the shear, introducing shear forces and bending moments at the grips; the specimen bends into an S-shape, the stress is not uniform, and the apparent modulus is too high. Long specimens or oblique-tabbed grips are used to reduce the effect.
 :::
 :::
 
-::: quiz Composite mechanics {#quiz-composite}
-The classical lamination theory relates:
-
-- [ ] Stress and strain in a single ply
-- [x] Laminate force and moment resultants to ply strains
-- [ ] Temperature and strain
-- [ ] Moisture and strain
-
+::: exercise Choosing a layup for a drive shaft {level=3}
+A carbon/epoxy tube is to replace a steel automotive drive shaft. It must transmit a torque (shear stress in the tube wall) and must have a first bending natural frequency above the maximum running speed, which requires a high axial modulus. Using the results of [[#ex-laminates]] for guidance, propose a layup, estimate its axial and shear moduli with CLT, and discuss the other design issues: the joints to metal end fittings, buckling of the thin wall under torsion, impact damage and the hot–wet environment.
 ::: solution
-**Laminate force and moment resultants to ply strains.** The classical lamination theory relates the laminate force and moment resultants to the ply strains through the extensional, coupling, and bending stiffness matrices. The CLT is the reason the engineer can calculate the stress in each ply of the laminate.
+A good answer recognises the conflict: torsion wants $\pm45^\circ$ plies (high $G_{xy}$), the critical speed wants $0^\circ$ plies (high $E_x$, since the natural frequency scales with $\sqrt{E/\rho}$). A layup such as $[\pm45/0_2/\pm45]$-type, symmetric and balanced, with perhaps 40–50 % $0^\circ$ plies, gives (with the ply above, by CLT) an $E_x$ around 100 GPa and a $G_{xy}$ of 25–30 GPa — compare steel's 210 and 80 GPa, at one-fifth of the density, so $E/\rho$ is two to three times that of steel and a one-piece shaft can replace a two-piece steel shaft with a centre bearing. Other issues: a few $90^\circ$ (hoop) plies resist torsional buckling and crushing of the thin wall; the bonded or press-fitted joint to steel yokes is usually the weakest part and must be tested; thermal expansion mismatch at the joint; low-velocity impact (stones) causes delamination that is hard to see; hot–wet conditioning lowers the matrix-dominated shear strength that the $\pm45^\circ$ plies rely on; and fatigue under reversed torsion. The design is verified by coupon, component and vehicle tests.
 :::
 :::
-
-::: quiz Failure criteria {#quiz-failure-criteria}
-The Tsai-Wu criterion accounts for:
-
-- [ ] Only the individual stress components
-- [x] The interaction between stress components and tension/compression difference
-- [ ] Only the shear stress
-- [ ] Only the normal stress
-
-::: solution
-**The interaction between stress components and tension/compression difference.** The Tsai-Wu criterion accounts for the interaction between stress components and the difference between tension and compression strengths. The Tsai-Wu criterion is the reason the composite is designed for the interaction, not the individual stress.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[solid-mechanics/fracture-mechanics]]** — The fracture mechanics of composites is the reason the composite is designed for the damage tolerance.
-- **[[solid-mechanics/plates]]** — The composite plate is the reason the aircraft wing is lightweight.
-- **[[solid-mechanics/thin-walled-structures]]** — The thin-walled composite structure is the reason the aircraft wing is lightweight.
-- **[[solid-mechanics/plasticity]]** — The plasticity of the matrix is the reason the composite is designed for the matrix yield.
-- **[[materials-science/material-families]]** — The composite is the reason the material is selected for the application.
-- **[[materials-science/materials-selection]]** — The composite is the reason the material is selected for the application.
-- **[[manufacturing/polymer-composite-processing]]** — The composite processing is the reason the composite is manufactured.
-- **[[machine-design/static-failure]]** — The failure criteria are the foundation of static failure analysis.
-- **[[aerodynamics/potential-flow]]** — The composite is the reason the aircraft wing is lightweight.
-- **[[propulsion/turbines]]** — The composite is the reason the turbine blade is lightweight.
-
-::: history Composite mechanics: from Griffith to the classical lamination theory {#history-composites}
-**1950** — **The first composite** is developed by **Raybestos-Manhattan**, who develops the glass fibre reinforced polymer (GFRP). **The GFRP is the reason the composite is the most widely used material in the aircraft, and the lightweight is the reason the composite is the most refined material in engineering.**
-
-**1960** — **The carbon fibre reinforced polymer (CFRP)** is developed by **Rolls-Royce**, who develops the CFRP for the turbine blade. **The CFRP is the reason the composite is the most widely used material in the aircraft, and the lightweight is the reason the composite is the most refined material in engineering.**
-
-**1965** — **The classical lamination theory** is developed by **S.G. Lekhnitskii**, who calculates the stress in each ply of the laminate. **The Lekhnitskii classical lamination theory is the reason the engineer can calculate the stress in each ply of the laminate, and the calculation is the reason the composite is safe.**
-
-**1969** — **The Tsai-Wu failure criterion** is published by **S.W. Tsai and E.M. Wu**, who calculate the failure load of the composite. **The Tsai-Wu failure criterion is the reason the composite is designed for the interaction, not the individual stress, and the interaction is the reason the composite is the most critical material in the aircraft.**
-
-**1970s** — **The delamination** is studied by **B. Harris**, who measures the interlaminar fracture toughness. **The Harris delamination is the reason the composite is designed for the interlaminar strength, not the in-plane strength, and the interlaminar strength is the reason the composite is the most critical material in the aircraft.**
-
-**1980s** — **The composite aircraft** is developed by **Boeing**, who develops the 767 with composite control surfaces. **The Boeing composite aircraft is the reason the composite is the most widely used material in the aircraft, and the lightweight is the reason the composite is the most refined material in engineering.**
-
-**1990s** — **The composite fuselage** is developed by **Airbus**, who develops the A380 with composite panels. **The Airbus composite fuselage is the reason the composite is the most widely used material in the aircraft, and the lightweight is the reason the composite is the most refined material in engineering.**
-
-**2000s** — **The composite wing** is developed by **Boeing**, who develops the 787 with a composite wing. **The Boeing composite wing is the reason the composite is the most widely used material in the aircraft, and the lightweight is the reason the composite is the most refined material in engineering.**
-:::
-
-::: summary Composites {#summary-composites}
-- **The constitutive equations for a single ply relate the stress and the strain in the material coordinate system: $\varepsilon = S \, \sigma$ where $S$ is the compliance matrix.** The ply orientation is the reason the composite is stiffer in the fibre direction than the transverse direction, and the stiffness is the reason the composite is designed for the fibre orientation, not the load direction.
-- **The classical lamination theory relates the laminate force and moment resultants to the ply strains: $[ N , M ] ^ { T } = [ A , B ; B , D ] \, [ \varepsilon ^ { 0 } , \kappa ] ^ { T }$ .** The CLT is the reason the engineer can calculate the stress in each ply of the laminate, and the calculation is the reason the composite is safe.
-- **The extensional stiffness matrix is $A _ { i j } = \sum \bar { Q } _ { i j } ^ { ( k ) } \, ( z _ { k } - z _ { k - 1 } )$ , the coupling stiffness matrix is $B _ { i j } = { \frac { 1 } { 2 } } \sum \bar { Q } _ { i j } ^ { ( k ) } \, ( z _ { k } ^ { 2 } - z _ { k - 1 } ^ { 2 } )$ , and the bending stiffness matrix is $D _ { i j } = { \frac { 1 } { 3 } } \sum \bar { Q } _ { i j } ^ { ( k ) } \, ( z _ { k } ^ { 3 } - z _ { k - 1 } ^ { 3 } )$ .** The coupling is the reason the composite twists under tension, and the twist is the reason the composite is designed for the coupling, not the stiffness.
-- **The maximum stress criterion checks each stress component individually: $| \sigma _ { 1 } | \geq X$ or $| \sigma _ { 2 } | \geq Y$ or $| \tau _ { 1 2 } | \geq S$ .** The maximum stress criterion is the reason the engineer can check the failure of the composite, and the check is the reason the composite is safe.
-- **The Tsai-Hill criterion accounts for the interaction between stress components: $( \sigma _ { 1 } / X ) ^ { 2 } - \sigma _ { 1 } \, \sigma _ { 2 } / X ^ { 2 } + ( \sigma _ { 2 } / Y ) ^ { 2 } + ( \tau _ { 1 2 } / S ) ^ { 2 } \geq 1$ .** The Tsai-Hill criterion is the reason the composite is designed for the interaction, not the individual stress.
-- **The Tsai-Wu criterion accounts for the interaction and the tension/compression difference: $F _ { i } \, \sigma _ { i } + F _ { i j } \, \sigma _ { i } \, \sigma _ { j } \geq 1$ .** The Tsai-Wu criterion is the reason the composite is designed for the interaction, not the individual stress.
-- **The delamination is the interlaminar failure, and the delamination is the reason the composite is designed for the interlaminar strength, not the in-plane strength.** The delamination is the most critical failure mode in the composite.
-- **The interlaminar shear strength is $\tau _ { \text{ILSS } } = 3 \, P / ( 4 \, b \, h )$ , and the mode I fracture toughness is $G _ { I C } = 3 \, P \, \delta / ( 2 \, b \, a )$ .** The interlaminar strength is the reason the composite is designed for the interlaminar strength, not the in-plane strength.
-- **The composite mechanics is the most important theory in aerospace engineering, because the composite mechanics predicts the stress and the strain in each ply.** The prediction is the reason the engineer can design the composite structure to be safe.
-- **The quasi-isotropic laminate is the reason the composite is designed for the isotropic behaviour, not the anisotropic behaviour.** The quasi-isotropic laminate is the most widely used laminate in the aircraft.
-:::
-
-## Further reading
-
-- **R.M. Jones (1999)** — *Mechanics of Composite Materials*, 2nd ed. Taylor & Francis. The constitutive equations, the classical lamination theory, and the failure criteria.
-- **C.T. Sun and R.S. Vaidya (1996)** — *Prediction of Composite Material Properties from Constituent Properties*. CRC Press. The micromechanics and the classical lamination theory.
-- **Z.P. Bažant and J. Cedolin (2010)** — *Plate and Shell Structures: Advanced Theory and Analysis*. Springer. The composite plate theory.
-- **Megson, T.H.G. (2019)** — *Aircraft Structures for Engineering Students*, 6th ed. Butterworth-Heinemann. The composite mechanics in the aircraft context.
-- **O.C. Zienkiewicz and R.L. Taylor (2005)** — *The Finite Element Method*, 6th ed. Butterworth-Heinemann. The composite mechanics in the finite element context.
-- **L.E. Malvern (1969)** — *Introduction to the Mechanics of a Continuous Medium*. Prentice-Hall. The composite mechanics and the anisotropic elasticity.
-- **SC Mal and G. Singh (1991)** — *Continuum Mechanics of Composite Materials*. Kluwer. The composite mechanics and the classical lamination theory.
-- **Thomas J.R. Hughes (2012)** — *The Finite Element Method: Linear Static and Dynamic Finite Element Analysis*. Dover. The composite mechanics in the finite element context.
