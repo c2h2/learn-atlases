@@ -1,536 +1,288 @@
-Heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering: the heat conduction element uses the same shape functions as the structural element but with a different constitutive matrix, the field problem is governed by the Poisson equation or the diffusion equation, and the element conductivity matrix is analogous to the element stiffness matrix. **The engineer who assembles the global conductivity matrix without checking the boundary conditions is not assembling the global conductivity matrix; they are guessing.** The heat conduction and field problem calculation is the reason the engineer can solve thermal, fluid flow, and electromagnetic problems using the same finite element code, and the element conductivity matrix is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.
+Nothing in the derivation of [[finite-element-method/weak-forms]] depended on the unknown being a displacement. Any boundary-value problem with a weak form can be discretised in the same way, and a large family of physical problems shares a single, simple equation: steady heat conduction, the torsion of prismatic shafts, groundwater seepage, electrostatics, magnetostatics and irrotational flow are all governed by a **quasi-harmonic** (Poisson-type) equation for one scalar field. This chapter applies the finite element method to that family, using heat conduction — the commonest case in mechanical engineering — as the running example. With one unknown per node instead of two or three, the element matrices are smaller and the physics is easy to check against [[heat-transfer/steady-conduction]] and [[heat-transfer/fins]]. Two new features appear: convection boundary conditions, which add both a "stiffness" and a "load", and time dependence, which turns the algebraic system into a set of ordinary differential equations that must be integrated step by step, with a stability limit that every analyst of transients needs to understand.
 
-The quantitative tools of heat conduction and other field problems are the **element conductivity matrix** (the thermal analogue of the element stiffness matrix), the **thermal load vector** (the heat source and flux contributions), the **boundary conditions** (prescribed temperature and prescribed heat flux), and the **field equation** (the Poisson equation, the diffusion equation, or the advection-diffusion equation). The tools are the language in which the heat conduction and field problem analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+## The quasi-harmonic equation
 
-::: warning Nine ways heat conduction and field problem calculation goes wrong
-**Not checking the boundary conditions.** The engineer who assembles the global conductivity matrix without checking the boundary conditions is not assembling the global conductivity matrix; they are guessing. **The boundary conditions are the reason heat conduction and other field problems are designed for the constraints, not the sources, and the constraints are the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.** **Not checking the element conductivity matrix.** The engineer who assembles the global conductivity matrix without checking the element conductivity matrix is not assembling the global conductivity matrix; they are guessing. **The element conductivity matrix is the reason heat conduction and other field problems are designed for the matrix, not the vector, and the matrix is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.** **Not checking the thermal load vector.** The engineer who assembles the global conductivity matrix without checking the thermal load vector is not assembling the global conductivity matrix; they are guessing. **The thermal load vector is the reason heat conduction and other field problems are designed for the vector, not the source, and the vector is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.** **Not checking the field equation.** The engineer who assembles the global conductivity matrix without checking the field equation is not assembling the global conductivity matrix; they are guessing. **The field equation is the reason heat conduction and other field problems are designed for the equation, not the solution, and the equation is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.** **Not checking the thermal conductivity.** The engineer who assembles the global conductivity matrix without checking the thermal conductivity is not assembling the global conductivity matrix; they are guessing. **The thermal conductivity is the reason heat conduction and other field problems are designed for the conductivity, not the resistivity, and the conductivity is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.** **Not checking the heat source.** The engineer who assembles the global conductivity matrix without checking the heat source is not assembling the global conductivity matrix; they are guessing. **The heat source is the reason heat conduction and other field problems are designed for the source, not the sink, and the source is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.** **Not checking the heat flux.** The engineer who assembles the global conductivity matrix without checking the heat flux is not assembling the global conductivity matrix; they are guessing. **The heat flux is the reason heat conduction and other field problems are designed for the flux, not the gradient, and the flux is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.** **Not checking the symmetry.** The engineer who assembles the global conductivity matrix without checking the symmetry is not assembling the global conductivity matrix; they are guessing. **The symmetry is the reason heat conduction and other field problems are designed for the symmetry, not the asymmetry, and the symmetry is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.** **Not checking the convergence.** The engineer who assembles the global conductivity matrix without checking the convergence is not assembling the global conductivity matrix; they are guessing. **The convergence is the reason heat conduction and other field problems are designed for the convergence, not the divergence, and the convergence is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.**
+::: definition The steady field problem {#def-field}
+Find a scalar field $\phi(x, y)$ in a region $\Omega$ such that
+$$
+\frac{\partial}{\partial x}\left(k_x\frac{\partial\phi}{\partial x}\right) + \frac{\partial}{\partial y}\left(k_y\frac{\partial\phi}{\partial y}\right) + Q = 0 \quad\text{in } \Omega,
+$$ {#eq-field}
+with three kinds of boundary condition on parts of the boundary $\Gamma$, $\mathbf{n}$ being the outward normal:
+- **Dirichlet (essential):** $\phi = \bar\phi$ on $\Gamma_\phi$ — a prescribed temperature;
+- **Neumann (natural):** $-k\,\partial\phi/\partial n = \bar q$ on $\Gamma_q$ — a prescribed outward flux ($\bar q = 0$: insulated or symmetry boundary);
+- **Robin (mixed):** $-k\,\partial\phi/\partial n = h(\phi - \phi_\infty)$ on $\Gamma_h$ — convection to a fluid at $\phi_\infty$ with heat-transfer coefficient $h$.
 :::
 
-## 1. The heat conduction element
+For heat conduction $\phi = T$ is temperature (K or °C), $k$ the thermal conductivity (W/m K), $Q$ the internal heat generation (W/m³), and the flux vector is Fourier's law $\mathbf{q} = -k\nabla T$. The same mathematics describes the other problems in the table.
 
-::: definition The element conductivity matrix {#def-conductivity-matrix}
-The **element conductivity matrix** is the thermal analogue of the element stiffness matrix, and the element conductivity matrix is the reason the engineer can solve thermal, fluid flow, and electromagnetic problems using the same finite element code.
+| problem | field $\phi$ | "conductivity" $k$ | source $Q$ | flux $-k\nabla\phi$ |
+|---|---|---|---|---|
+| heat conduction | temperature $T$ | conductivity | heat generation | heat flux |
+| torsion of a prismatic shaft | Prandtl stress function | $1$ (or $1/G$) | $2G\theta'$ ($\theta'$ = twist per length) | shear stresses (rotated) |
+| groundwater seepage | hydraulic head | permeability | pumping | Darcy velocity |
+| electrostatics | electric potential | permittivity | charge density | $-$ electric displacement |
+| irrotational ideal flow | velocity potential | $1$ | $0$ | $-$ velocity |
 
-The **element conductivity matrix** is:
+(In the torsion analogy the shear stresses are $\tau_{xz} = \partial\phi/\partial y$, $\tau_{yz} = -\partial\phi/\partial x$ and the torque is $2\int\phi\,dA$; see [[solid-mechanics/linear-elasticity]].)
 
+## The weak form and the element matrices
+
+Multiply [[#eq-field]] by a test function $w$ that vanishes on $\Gamma_\phi$, integrate over $\Omega$ (thickness $t$ for a plane region) and apply the divergence theorem — the two-dimensional integration by parts:
+
+::: proposition Weak form and finite element equations {#prop-weak-field}
+The weak form of the field problem is: find $\phi$ with $\phi = \bar\phi$ on $\Gamma_\phi$ such that, for every $w$ vanishing on $\Gamma_\phi$,
 $$
-\mathbf { k } _ { T } ^ { ( e ) } \; = \; \int _ { \Omega _ { e } } \, \mathbf { B } ^ { T } \, \mathbf { D } _ { T } \, \mathbf { B } \, d \Omega
+\int_\Omega \nabla w^{\mathsf T}\mathbf{k}\,\nabla\phi\;t\,dA + \int_{\Gamma_h}h\,w\,\phi\;t\,ds = \int_\Omega w\,Q\;t\,dA - \int_{\Gamma_q}w\,\bar q\;t\,ds + \int_{\Gamma_h}h\,w\,\phi_\infty\;t\,ds,
 $$
-
-where $\mathbf { D } _ { T }$ is the thermal conductivity matrix.
-
-The **thermal load vector** is:
-
+where $\mathbf{k} = \operatorname{diag}(k_x, k_y)$. With $\phi = \mathbf{N}\mathbf{T}^{(e)}$ in each element and $\mathbf{B} = [\partial\mathbf{N}/\partial x;\ \partial\mathbf{N}/\partial y]$, Galerkin's method gives $\mathbf{K}\mathbf{T} = \mathbf{F}$ assembled from
 $$
-\mathbf { f } _ { T } ^ { ( e ) } \; = \; \int _ { \Omega _ { e } } \, \mathbf { N } ^ { T } \, Q \, d \Omega \; + \; \int _ { \Gamma _ { q } } \, \mathbf { N } ^ { T } \, { \bar { q } } \, d \Gamma
-$$
-
-The **system equation** is:
-
-$$
-\mathbf { K } _ { T } \, \mathbf { T } \; = \; \mathbf { F } _ { T }
-$$
-
-The **Fourier law** is:
-
-$$
-\mathbf { q } \; = \; - \, \mathbf { D } _ { T } \, \nabla T
-$$
-
-The **heat balance** is:
-
-$$
-- \, \nabla \cdot ( \mathbf { D } _ { T } \, \nabla T ) \; = \; Q \quad \text{in } \Omega
-  $$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Thermal conductivity} & k _ { T } & \text{Heat transfer per unit gradient} & 1 \text{--} 4 0 0 \ \text{ W/m K } \\
-\text{Heat source} & Q & \text{Volumetric heat generation} & 1 \text{--} 1 0 ^ { 6 } \ \text{ W/m } ^ { 3 } \\
-\text{Heat flux} & { \bar { q } } & \text{Surface heat flux} & 1 \text{--} 1 0 ^ { 5 } \ \text{ W/m } ^ { 2 } \\
-\text{Temperature} & T & \text{Field variable} & - 2 0 0 \text{--} 2 0 0 0 \ ^ { \circ } \text{C } \\
-\end{array}
-$$
-
-**The boundary conditions are the reason heat conduction and other field problems are designed for the constraints, not the sources, and the constraints are the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering. The engineer who assembles the global conductivity matrix without checking the boundary conditions is not assembling the global conductivity matrix; they are guessing.**
+\mathbf{k}^{(e)} = \underbrace{\int_{A_e}\mathbf{B}^{\mathsf T}\mathbf{k}\,\mathbf{B}\,t\,dA}_{\text{conduction}} + \underbrace{\int_{\Gamma_h^e}h\,\mathbf{N}^{\mathsf T}\mathbf{N}\,t\,ds}_{\text{convection}}, \qquad \mathbf{f}^{(e)} = \int_{A_e}\mathbf{N}^{\mathsf T}Q\,t\,dA - \int_{\Gamma_q^e}\mathbf{N}^{\mathsf T}\bar q\,t\,ds + \int_{\Gamma_h^e}h\,\phi_\infty\mathbf{N}^{\mathsf T}\,t\,ds.
+$$ {#eq-field-k}
 :::
 
-::: definition The field equation {#def-field-equation}
-The **field equation** is the partial differential equation that governs the field variable, and the field equation is the reason the engineer can solve thermal, fluid flow, and electromagnetic problems using the same finite element code.
-
-The **Poisson equation** (steady heat conduction) is:
-
-$$
-- \, \nabla \cdot ( k \, \nabla T ) \; = \; Q \quad \text{in } \Omega
-  $$
-
-The **diffusion equation** (transient heat conduction) is:
-
-$$
-\rho \, c _ { p } \, { \frac { \partial T } { \partial t } } \; - \; \nabla \cdot ( k \, \nabla T ) \; = \; Q \quad \text{in } \Omega
-$$
-
-The **advection-diffusion equation** is:
-
-$$
-{ \frac { \partial \phi } { \partial t } } \; + \; \mathbf { v } \cdot \nabla \phi \; - \; \nabla \cdot ( \Gamma \, \nabla \phi ) \; = \; S \quad \text{in } \Omega
-$$
-
-The **Laplace equation** is:
-
-$$
-\nabla ^ { 2 } \phi \; = \; 0 \quad \text{in } \Omega
-$$
-
-The **Helmholtz equation** is:
-
-$$
-\nabla ^ { 2 } \phi \; + \; k ^ { 2 } \, \phi \; = \; 0 \quad \text{in } \Omega
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Density} & \rho & \text{Mass per unit volume} & 1 0 0 0 \text{--} 8 0 0 0 \ \text{ kg/m } ^ { 3 } \\
-\text{Specific heat} & c _ { p } & \text{Heat capacity per unit mass} & 4 0 0 \text{--} 4 2 0 0 \ \text{ J/kg K } \\
-\text{Diffusivity} & \alpha & \text{Thermal diffusivity} & 1 0 ^ { - 7 } \text{--} 1 0 ^ { - 4 } \ \text{ m } ^ { 2 } \text{/s } \\
-\text{Peclet number} & \text{Pe} & \text{Advection/diffusion ratio} & 0 \text{--} 1 0 0 0 \\
-\end{array}
-$$
-
-**The element conductivity matrix is the reason heat conduction and other field problems are designed for the matrix, not the vector, and the matrix is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering. The engineer who assembles the global conductivity matrix without checking the element conductivity matrix is not assembling the global conductivity matrix; they are guessing.**
+::: proof
+$\int_\Omega w\,\nabla\cdot(\mathbf{k}\nabla\phi)\,dA = \oint_\Gamma w\,(\mathbf{k}\nabla\phi)\cdot\mathbf{n}\,ds - \int_\Omega\nabla w^{\mathsf T}\mathbf{k}\nabla\phi\,dA$ (divergence theorem applied to $w\,\mathbf{k}\nabla\phi$). On $\Gamma_\phi$ the test function is zero; on $\Gamma_q$ the normal flux $(\mathbf{k}\nabla\phi)\cdot\mathbf{n} = -\bar q$; on $\Gamma_h$ it is $-h(\phi - \phi_\infty)$. Substituting into $\int w[\nabla\cdot(\mathbf{k}\nabla\phi) + Q] = 0$ and moving the unknown convection term to the left gives the weak form. Inserting $\phi = \sum N_jT_j$ and $w = N_i$ produces row $i$ of the matrix equations. Assumptions: steady state, linear material ($k$ independent of $T$), $h$ and $\phi_\infty$ known.
 :::
+
+Two observations organise everything that follows. First, the conduction matrix has exactly the structure of a stiffness matrix: symmetric, positive semidefinite, with rows summing to zero (a uniform temperature produces no flux, the analogue of a rigid-body mode). A model with no Dirichlet or convection boundary is singular, just as an unsupported structure is. Second, a convective boundary contributes to **both sides**: a term $h\int\mathbf{N}^{\mathsf T}\mathbf{N}$ on the matrix side (convection is like a distributed spring to the ambient temperature) and $h\phi_\infty\int\mathbf{N}^{\mathsf T}$ on the load side. It makes the matrix non-singular even without prescribed temperatures.
+
+### One-dimensional elements
+
+For conduction along a bar, wall or fin with cross-section $A$, the two-node linear element ($N_1 = 1 - x/L$, $N_2 = x/L$) gives the **conductance** matrix $\frac{kA}{L}[1, -1; -1, 1]$ (W/K) — the bar element with $EA$ replaced by $kA$. If the lateral surface (perimeter $P$) convects to $T_\infty$, the convection integrals become
+$$
+\mathbf{k}_h^{(e)} = \frac{hPL}{6}\begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}, \qquad \mathbf{f}_h^{(e)} = \frac{hPLT_\infty}{2}\begin{bmatrix} 1 \\ 1 \end{bmatrix},
+$$ {#eq-fin}
+and a convecting end face of area $A$ simply adds $hA$ to the diagonal and $hAT_\infty$ to the load of that node. For a plane wall per unit area, $A = 1\,\mathrm{m^2}$.
+
+::: example A composite wall {#ex-wall}
+An external wall consists, from inside to outside, of $20\,\mathrm{mm}$ of plaster ($k = 0.5\,\mathrm{W/m\,K}$), $50\,\mathrm{mm}$ of insulation ($k = 0.04$) and $200\,\mathrm{mm}$ of brick ($k = 0.7$). The inner surface is held at $20\,^\circ\mathrm{C}$; the outer surface convects to air at $-5\,^\circ\mathrm{C}$ with $h = 25\,\mathrm{W/m^2\,K}$. Use one element per layer and find the interface temperatures and the heat loss per square metre.
+::: solution
+Per unit area the element conductances $k/L$ are $25$, $0.8$ and $3.5\,\mathrm{W/m^2\,K}$. Nodes 1 (inner surface) to 4 (outer surface). Assembling and adding the convection term $h = 25$ to node 4 and $hT_\infty = -125\,\mathrm{W/m^2}$ to its load:
+$$
+\begin{bmatrix} 25 & -25 & 0 & 0 \\ -25 & 25.8 & -0.8 & 0 \\ 0 & -0.8 & 4.3 & -3.5 \\ 0 & 0 & -3.5 & 3.5 + 25 \end{bmatrix}\begin{bmatrix} T_1 \\ T_2 \\ T_3 \\ T_4 \end{bmatrix} = \begin{bmatrix} F_1 \\ 0 \\ 0 \\ -125 \end{bmatrix}.
+$$
+With $T_1 = 20\,^\circ\mathrm{C}$ prescribed, rows 2–4 give $T_2 = 19.38\,^\circ\mathrm{C}$, $T_3 = 0.04\,^\circ\mathrm{C}$, $T_4 = -4.38\,^\circ\mathrm{C}$. Heat flux through the plaster: $25(20 - 19.38) = 15.47\,\mathrm{W/m^2}$; row 1 gives the same value as the "reaction" $F_1$, the heat supplied at the inner surface.
+
+*Check.* Thermal resistances in series: $0.04 + 1.25 + 0.2857 + 0.04 = 1.6157\,\mathrm{m^2\,K/W}$ (plaster, insulation, brick, outside film), and $25/1.6157 = 15.47\,\mathrm{W/m^2}$. The insulation, a sixth of the thickness, takes $77\,\%$ of the temperature drop. Linear elements are exact here, because the exact temperature is linear in each layer.
+:::
+:::
+
+::: example A pin fin {#ex-fin}
+An aluminium pin fin ($k = 200\,\mathrm{W/m\,K}$) of diameter $5\,\mathrm{mm}$ and length $50\,\mathrm{mm}$ has its base at $100\,^\circ\mathrm{C}$ and convects to air at $25\,^\circ\mathrm{C}$ with $h = 25\,\mathrm{W/m^2\,K}$; the tip is taken as insulated. Compute the tip temperature and the heat rate with 1, 2 and 4 elements and compare with the exact solution.
+::: solution
+$A = \pi D^2/4 = 1.963\times10^{-5}\,\mathrm{m^2}$, $P = \pi D = 0.01571\,\mathrm{m}$, $m = \sqrt{hP/kA} = \sqrt{4h/kD} = 10.0\,\mathrm{m^{-1}}$, $mL = 0.5$.
+
+*Exact* ([[heat-transfer/fins]]): $T_\text{tip} = T_\infty + (T_b - T_\infty)/\cosh mL = 25 + 75/1.1276 = 91.51\,^\circ\mathrm{C}$ and $\dot Q = \sqrt{hPkA}\,(T_b - T_\infty)\tanh mL = 1.3610\,\mathrm{W}$.
+
+*One element.* $kA/L = 0.07854\,\mathrm{W/K}$, $hPL/6 = 0.003272\,\mathrm{W/K}$, so $\mathbf{k}^{(e)} = [0.08508, -0.07527; -0.07527, 0.08508]$ and $\mathbf{f}^{(e)} = 0.2454\,[1, 1]^{\mathsf T}\,\mathrm{W}$. With $T_1 = 100$: $0.08508\,T_2 = 0.2454 + 0.07527 \times 100$, $T_2 = 91.35\,^\circ\mathrm{C}$. The heat entering at the base is the "reaction" of row 1: $\dot Q = 0.08508 \times 100 - 0.07527 \times 91.35 - 0.2454 = 1.388\,\mathrm{W}$.
+
+*More elements:*
+
+| elements | $T_\text{tip}$ (°C) | $\dot Q$ (W) | error in $\dot Q$ |
+|---|---|---|---|
+| 1 | 91.35 | 1.3877 | $+1.96\,\%$ |
+| 2 | 91.47 | 1.3676 | $+0.48\,\%$ |
+| 4 | 91.50 | 1.3627 | $+0.12\,\%$ |
+| exact | 91.51 | 1.3610 | — |
+
+*Check.* The error falls by a factor of 4 per halving ($h^2$); the FE heat rate is too high, as expected of a model that is "too conductive" in the same way that displacement models are too stiff. Computing $\dot Q$ from the reaction (the consistent nodal flux) gives this $h^2$ accuracy; computing it from the temperature gradient of the first element, $-kA(T_2 - T_1)/L_e$, is much worse. Fin efficiency $\tanh(mL)/mL = 0.924$.
+:::
+:::
+
+### The linear triangle
+
+For a three-node triangle with the shape functions of [[finite-element-method/plane-elements]], $\mathbf{B} = \frac{1}{2A}[b_1, b_2, b_3;\ c_1, c_2, c_3]$ is constant, and for isotropic $k$
+$$
+\mathbf{k}^{(e)} = \frac{k\,t}{4A}\left(\mathbf{b}\mathbf{b}^{\mathsf T} + \mathbf{c}\mathbf{c}^{\mathsf T}\right), \qquad (\mathbf{k}^{(e)})_{ij} = \frac{kt}{4A}(b_ib_j + c_ic_j).
+$$ {#eq-tri}
+A convecting edge of length $\ell$ between two of its nodes adds $\frac{ht\ell}{6}[2, 1; 1, 2]$ to those nodes and $\frac{ht\ell T_\infty}{2}[1, 1]$ to their loads; a uniform source adds $QtA/3$ to each node.
+
+::: example Conductance of a triangle {#ex-tri}
+A triangle with nodes 1 $(0, 0)$, 2 $(0.04, 0)$, 3 $(0, 0.03)\,\mathrm{m}$ in a steel plate ($k = 50\,\mathrm{W/m\,K}$) $10\,\mathrm{mm}$ thick. Compute $\mathbf{k}^{(e)}$, and the convection matrix of edge 1–2 for $h = 100\,\mathrm{W/m^2\,K}$.
+::: solution
+$A = 6\times10^{-4}\,\mathrm{m^2}$; $\mathbf{b} = [-0.03, 0.03, 0]$, $\mathbf{c} = [-0.04, 0, 0.04]\,\mathrm{m}$; $kt/(4A) = 50 \times 0.01/(2.4\times10^{-3}) = 208.33\,\mathrm{W/(K\,m^2)}$. Then
+$$
+\mathbf{k}^{(e)} = 208.33\begin{bmatrix} 0.0025 & -0.0009 & -0.0016 \\ -0.0009 & 0.0009 & 0 \\ -0.0016 & 0 & 0.0016 \end{bmatrix} = \begin{bmatrix} 0.5208 & -0.1875 & -0.3333 \\ -0.1875 & 0.1875 & 0 \\ -0.3333 & 0 & 0.3333 \end{bmatrix}\ \mathrm{W/K}.
+$$
+Edge 1–2 has $\ell = 0.04\,\mathrm{m}$: $\frac{ht\ell}{6} = 6.667\times10^{-3}$, giving $[0.01333, 0.00667; 0.00667, 0.01333]\,\mathrm{W/K}$ on nodes 1 and 2.
+
+*Check.* Rows of the conduction matrix sum to zero (no flux for uniform temperature). $k_{23} = 0$ because edges 1–2 and 1–3 are perpendicular: for a right-angled triangle, the off-diagonal term between the two nodes on either side of the right angle vanishes. The convection matrix sums to $ht\ell = 0.04\,\mathrm{W/K}$, the conductance to the fluid of the whole edge.
+:::
+:::
+
+## Transient conduction
+
+When the temperature changes in time, the energy balance of [[heat-transfer/transient-conduction]] adds a storage term:
+$$
+\rho c\,\frac{\partial T}{\partial t} = \nabla\cdot(k\nabla T) + Q,
+$$
+with density $\rho$ and specific heat capacity $c$. Treating the time derivative as part of the "source" in the weak form, and interpolating $T(x, y, t) = \mathbf{N}(x, y)\,\mathbf{T}(t)$ — shape functions in space, nodal values that vary in time — gives a system of ordinary differential equations, the **semi-discrete** equations.
+
+::: proposition Semi-discrete heat equation {#prop-semidiscrete}
+$$
+\mathbf{C}\,\dot{\mathbf{T}} + \mathbf{K}\,\mathbf{T} = \mathbf{F}(t), \qquad \mathbf{C} = \sum_e\int_{V_e}\rho c\,\mathbf{N}^{\mathsf T}\mathbf{N}\,dV,
+$$ {#eq-semidiscrete}
+where $\mathbf{K}$ and $\mathbf{F}$ are as in the steady problem and $\mathbf{C}$ is the **capacity matrix** (J/K). For a two-node linear element of length $L$ and area $A$, the **consistent** capacity matrix is $\frac{\rho cAL}{6}[2, 1; 1, 2]$; the **lumped** (diagonal) version puts half the element's heat capacity at each node, $\frac{\rho cAL}{2}[1, 0; 0, 1]$.
+:::
+
+::: proof
+The weak form of the transient equation is the steady weak form plus the term $\int w\,\rho c\,\partial T/\partial t\,dV$ on the left. With $w = N_i$ and $T = \sum_j N_jT_j(t)$, this term is $\sum_j\left(\int\rho cN_iN_j\,dV\right)\dot T_j$, which is row $i$ of $\mathbf{C}\dot{\mathbf{T}}$. For the linear element $\int_0^L N_1^2\,dx = L/3$ and $\int_0^L N_1N_2\,dx = L/6$. The lumped matrix is obtained by adding each row of the consistent matrix onto its diagonal, which conserves the total heat capacity $\rho cAL$.
+:::
+
+The semi-discrete system is a set of coupled first-order ODEs — in modal terms, a set of uncoupled decays $\dot y_i = -\lambda_iy_i$, where $\lambda_i$ are the eigenvalues of $\mathbf{C}^{-1}\mathbf{K}$ (s⁻¹), the inverse time constants of the mesh. The largest $\lambda$ belongs to the shortest-wavelength pattern the mesh can represent and scales as $k/(\rho c\,h^2)$; it decides the stability of explicit integration.
+
+::: algorithm The generalised trapezoidal (θ) method {#alg-theta}
+Here $\theta$ is a time-integration parameter between 0 and 1, not a temperature. With time step $\Delta t$, approximate $\dot{\mathbf{T}} \approx (\mathbf{T}_{n+1} - \mathbf{T}_n)/\Delta t$ and evaluate the remaining terms at a weighted average of the two ends of the step:
+$$
+\left(\frac{1}{\Delta t}\mathbf{C} + \theta\mathbf{K}\right)\mathbf{T}_{n+1} = \left(\frac{1}{\Delta t}\mathbf{C} - (1 - \theta)\mathbf{K}\right)\mathbf{T}_n + \theta\mathbf{F}_{n+1} + (1 - \theta)\mathbf{F}_n.
+$$
+1. Assemble $\mathbf{C}$, $\mathbf{K}$; form and factorise the left-hand matrix once (it is constant if $\Delta t$ and the properties are).
+2. For each step, form the right-hand side, impose prescribed temperatures at $t_{n+1}$, and solve.
+
+$\theta = 0$: **forward Euler** (explicit; with lumped $\mathbf{C}$ no equation solving at all). $\theta = \tfrac12$: **Crank–Nicolson** (second-order accurate). $\theta = 1$: **backward Euler** (first order, very robust).
+:::
+
+::: proposition Stability of the θ-method {#prop-stability}
+Applied to the modal equation $\dot y = -\lambda y$ ($\lambda > 0$), the θ-method gives $y_{n+1} = G\,y_n$ with amplification factor
+$$
+G(\lambda\Delta t) = \frac{1 - (1 - \theta)\lambda\Delta t}{1 + \theta\lambda\Delta t}.
+$$
+For $\theta \ge \tfrac12$ the method is **unconditionally stable** ($\lvert G\rvert \le 1$ for every $\Delta t$). For $\theta < \tfrac12$ it is stable only if $\Delta t \le \dfrac{2}{(1 - 2\theta)\lambda_{\max}}$; for forward Euler, $\Delta t_{\text{cr}} = 2/\lambda_{\max}$.
+:::
+
+::: proof
+Substituting $\mathbf{T} = y\boldsymbol{\psi}$ for a mode with $\mathbf{K}\boldsymbol{\psi} = \lambda\mathbf{C}\boldsymbol{\psi}$ (and no load) into the scheme gives $(1/\Delta t + \theta\lambda)y_{n+1} = (1/\Delta t - (1 - \theta)\lambda)y_n$, i.e. the stated $G$ with $z = \lambda\Delta t > 0$. $G < 1$ always. $G \ge -1$ requires $1 - (1 - \theta)z \ge -1 - \theta z$, i.e. $(1 - 2\theta)z \le 2$, which holds for all $z$ when $\theta \ge \tfrac12$ and gives $z \le 2/(1 - 2\theta)$ otherwise. Since the scheme applied to the coupled system is the scheme applied to each mode, the whole solution is stable if and only if the condition holds for the largest $\lambda$.
+:::
+
+Stability is not accuracy. Crank–Nicolson has $G \to -1$ as $\lambda\Delta t \to \infty$: the high-frequency content of a sudden change (a step in surface temperature) is not damped but flips sign every step, producing persistent spurious oscillations near the surface. Backward Euler has $G \to 0$ and damps them; it is the safe choice for problems with sudden changes, at the cost of first-order accuracy. The exact decay $G = e^{-\lambda\Delta t}$ is always between 0 and 1.
 
 ::: widget plot
-title: The temperature vs position
-f: 100*(1-x/10)
-x: 0,10
-y: 0,100
-labels: T
-caption: The linear temperature distribution in a 1D bar with fixed temperatures at both ends. **The temperature varies linearly in the 1D bar, and the temperature is the reason heat conduction and other field problems are designed for the vector, not the source.** **The source is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.**
+f: exp(-x); 1 - x; (1 - x/2)/(1 + x/2); 1/(1 + x)
+x: 0, 5
+y: -2, 1.1
+labels: e^{-\lambda\Delta t}\ \text{exact}; \theta = 0; \theta = 1/2; \theta = 1
+hlines: -1
+caption: Amplification factor $G$ per time step against $\lambda\Delta t$ for the exact decay and for forward Euler ($\theta = 0$), Crank–Nicolson ($\theta = \tfrac12$) and backward Euler ($\theta = 1$). Forward Euler falls below $-1$ — instability — once $\lambda\Delta t > 2$. Crank–Nicolson stays within $\pm1$ but tends to $-1$: stiff modes oscillate instead of decaying. Backward Euler is always between 0 and 1, damped but less accurate for small $\lambda\Delta t$.
 :::
 
-::: example 1D heat conduction {#ex-1d-heat-conduction level=3 check="2"}
-A 1D bar of length $L = 1 \; \text{m }$ with thermal conductivity $k = 5 0 \; \text{W/m K }$ and cross-section $A = 0 . 0 1 \; \text{m } ^ { 2 }$ has $T ( 0 ) = 1 0 0 \; ^ { \circ } \text{C }$ and $T ( L ) = 0 \; ^ { \circ } \text{C }$ . Divide the bar into two equal elements and find the temperature at the midpoint.
+::: example A suddenly heated steel plate {#ex-transient}
+A steel plate ($k = 50\,\mathrm{W/m\,K}$, $\rho = 7850\,\mathrm{kg/m^3}$, $c = 460\,\mathrm{J/kg\,K}$) $20\,\mathrm{mm}$ thick, initially at $20\,^\circ\mathrm{C}$, has one face suddenly raised to $220\,^\circ\mathrm{C}$ and the other insulated. Model the thickness with two linear elements and a lumped capacity matrix (per $\mathrm{m^2}$). (a) Find the critical time step for forward Euler. (b) Take one backward-Euler step of $1\,\mathrm{s}$. (c) Compare backward-Euler temperatures at $t = 60\,\mathrm{s}$ for $\Delta t = 1, 20, 60\,\mathrm{s}$ with the exact solution.
+::: solution
+$\rho c = 3.611\times10^{6}\,\mathrm{J/m^3\,K}$, $L_e = 0.01\,\mathrm{m}$, $k/L_e = 5000\,\mathrm{W/m^2\,K}$. Nodes 1 (heated face, prescribed), 2 (middle), 3 (insulated face). Lumped capacities: node 2 $\rho cL_e = 36\,110$, node 3 $\rho cL_e/2 = 18\,055\,\mathrm{J/m^2\,K}$.
 
-**Element conductivity:**
+(a) Free-DOF matrices: $\mathbf{K}_{ff} = 5000[2, -1; -1, 1]$, $\mathbf{C}_{ff} = \operatorname{diag}(36\,110, 18\,055)$. The eigenvalues of $\mathbf{C}_{ff}^{-1}\mathbf{K}_{ff}$ are $0.4728$ and $0.0811\,\mathrm{s^{-1}}$, so $\Delta t_\text{cr} = 2/0.4728 = 4.23\,\mathrm{s}$.
 
+(b) With $\Delta t = 1\,\mathrm{s}$, the backward-Euler system for nodes 2 and 3, with $T_1 = 220$ moved to the right, is
 $$
-k _ { T } ^ { ( e ) } \; = \; \int _ { 0 } ^ { L _ { e } } \, k \, A \, \mathbf { B } ^ { T } \, \mathbf { B } \, d x \; = \; { \frac { k \, A } { L _ { e } } } \, { \left[ \begin{array} { r r } { 1 } & { - 1 } \\ { - 1 } & { 1 } \end{array} \right] }
+\begin{bmatrix} 36\,110 + 10\,000 & -5000 \\ -5000 & 18\,055 + 5000 \end{bmatrix}\begin{bmatrix} T_2 \\ T_3 \end{bmatrix} = \begin{bmatrix} 36\,110 \times 20 + 5000 \times 220 \\ 18\,055 \times 20 \end{bmatrix},
 $$
+giving $T_2 = 42.21\,^\circ\mathrm{C}$, $T_3 = 24.82\,^\circ\mathrm{C}$. (One forward-Euler step of the same size gives $T_2 = 47.69$, $T_3 = 20.00$: the explicit method cannot feel the insulated face until the second step.)
 
-$$
-k _ { T } ^ { ( e ) } \; = \; { \frac { 5 0 \times 0 . 0 1 } { 0 . 5 } } \, { \left[ \begin{array} { r r } { 1 } & { - 1 } \\ { - 1 } & { 1 } \end{array} \right] } \; = \; 1 \, { \left[ \begin{array} { r r } { 1 } & { - 1 } \\ { - 1 } & { 1 } \end{array} \right] } \; \text{W/K }
-$$
+(c) Temperatures at $t = 60\,\mathrm{s}$ (mid-plane, insulated face): $\Delta t = 1\,\mathrm{s}$: $218.4$, $217.8$; $\Delta t = 20\,\mathrm{s}$: $210.5$, $206.6$; $\Delta t = 60\,\mathrm{s}$ (a single step): $189.9$, $180.3\,^\circ\mathrm{C}$. The exact series solution for the slab gives $218.9$ and $218.5\,^\circ\mathrm{C}$.
 
-**Global conductivity matrix (3 DOF):**
-
-$$
-\mathbf { K } _ { T } \; = \; { \left[ \begin{array} { r r r } { 1 } & { - 1 } & { 0 } \\ { - 1 } & { 2 } & { - 1 } \\ { 0 } & { - 1 } & { 1 } \end{array} \right] } \; \text{W/K }
-$$
-
-**Apply boundary conditions $T _ { 1 } = 1 0 0$ and $T _ { 3 } = 0$ :**
-
-$$
-2 \, T _ { 2 } \; = \; 1 \times 1 0 0 + 1 \times 0 \; = \; 1 0 0 \quad \Rightarrow \quad T _ { 2 } \; = \; { \bf 5 0 } \; ^ { \circ } \text{C }
-$$
-
-**The temperature at the midpoint is 50°C. The engineer would design the structure for the equation, because the equation is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.**
+*Check.* The characteristic time $L^2/\alpha$, with $\alpha = k/\rho c = 1.38\times10^{-5}\,\mathrm{m^2/s}$, is $29\,\mathrm{s}$, so after a minute the plate is nearly uniform, as all solutions show. With $\Delta t = 1\,\mathrm{s}$ the remaining error ($0.5\,^\circ\mathrm{C}$ at mid-plane) is spatial — only two elements — while large steps add a time-integration lag. Backward Euler is stable at $60\,\mathrm{s}$, fourteen times the explicit limit, but stability did not make it accurate.
+:::
 :::
 
-## 2. Other field problems
-
-::: definition The analogy between field problems {#def-field-analogy}
-The **analogy between field problems** is the mathematical equivalence between heat conduction, fluid flow, electrostatics, and other physical phenomena, and the analogy between field problems is the reason the engineer can solve thermal, fluid flow, and electromagnetic problems using the same finite element code.
-
-The **heat conduction** equation is:
-
-$$
-- \, \nabla \cdot ( k \, \nabla T ) \; = \; Q
-  $$
-
-The **electrostatics** equation is:
-
-$$
-- \, \nabla \cdot ( \epsilon \, \nabla V ) \; = \; \rho _ { e }
-  $$
-
-The **fluid flow through porous media** equation is:
-
-$$
-- \, \nabla \cdot ( K \, \nabla h ) \; = \; f
-  $$
-
-The **torsion of a prismatic bar** equation is:
-
-$$
-- \, \nabla \cdot ( \nabla \phi ) \; = \; 2 \, G \, \theta
-  $$
-
-The **seepage flow** equation is:
-
-$$
-- \, \nabla \cdot ( \rho \, \nabla p ) \; = \; Q _ { m }
-  $$
-
-$$
-\begin{array} { l c c c }
-\textbf{Field} & \textbf{ Variable} & \textbf{ Conductivity} & \textbf{ Source } \\ \hline
-\text{Heat conduction} & T & k & Q \\
-\text{Electrostatics} & V & \epsilon & \rho _ { e } \\
-\text{Porous flow} & h & K & f \\
-\text{Torsion} & \phi & 1 & 2 G \theta \\
-\end{array}
-$$
-
-**The thermal load vector is the reason heat conduction and other field problems are designed for the vector, not the source, and the vector is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering. The engineer who assembles the global conductivity matrix without checking the thermal load vector is not assembling the global conductivity matrix; they are guessing.**
+::: widget heat
+equation: heat
+f: 1
+L: 1
+k: 1
+boundary: dirichlet
+terms: 60
+caption: The exact (Fourier-series) solution of transient conduction in a slab initially at uniform temperature whose two faces are suddenly held at zero, in dimensionless units. Watch the sharp corners at the faces round off almost instantly while the centre is still untouched: the short-wavelength components decay fastest, at rates proportional to the square of their wavenumber. Those are exactly the modes with the largest $\lambda$ in a finite element mesh, which set the explicit stability limit and which Crank–Nicolson fails to damp.
 :::
 
-::: definition Transient heat conduction {#def-transient-heat}
-The **transient heat conduction** equation includes the time derivative of the temperature, and the transient heat conduction equation is the reason the engineer can solve thermal, fluid flow, and electromagnetic problems using the same finite element code.
-
-The **transient heat conduction** equation is:
-
-$$
-\rho \, c _ { p } \, { \frac { \partial T } { \partial t } } \; + \; \mathbf { K } _ { T } \, \mathbf { T } \; = \; \mathbf { F } _ { T }
-$$
-
-The **capacity matrix** is:
-
-$$
-\mathbf { C } \; = \; \int _ { \Omega } \, \rho \, c _ { p } \, \mathbf { N } ^ { T } \, \mathbf { N } \, d \Omega
-$$
-
-The **backward Euler scheme** is:
-
-$$
-\left( { \frac { \mathbf { C } } { \Delta t } } \; + \; \mathbf { K } _ { T } \right) \, \mathbf { T } _ { n + 1 } \; = \; { \frac { \mathbf { C } } { \Delta t } } \, \mathbf { T } _ { n } \; + \; \mathbf { F } _ { T }
-$$
-
-The **Crank-Nicolson scheme** is:
-
-$$
-\left( { \frac { \mathbf { C } } { \Delta t } } \; + \; { \frac { \mathbf { K } _ { T } } { 2 } } \right) \, \mathbf { T } _ { n + 1 } \; = \; \left( { \frac { \mathbf { C } } { \Delta t } } \; - \; { \frac { \mathbf { K } _ { T } } { 2 } } \right) \, \mathbf { T } _ { n } \; + \; { \frac { \mathbf { F } _ { n } + \mathbf { F } _ { n + 1 } } { 2 } }
-$$
-
-The **stability condition** for explicit schemes is:
-
-$$
-\Delta t \; \leq \; { \frac { \rho \, c _ { p } \, h ^ { 2 } } { 6 \, k } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Capacity matrix} & \mathbf { C } & \text{Thermal mass matrix} & \text{Symmetric, positive definite} \\
-\text{Time step} & \Delta t & \text{Integration time step} & 0 . 0 0 1 \text{--} 1 0 0 \ \text{ s } \\
-\text{Fourier number} & \text{Fo} & \text{Diffusion time scale} & 0 \text{--} 1 0 0 \\
-\text{Stability limit} & \Delta t _ { \max } & \text{Maximum stable time step} & \text{Problem-dependent} \\
-\end{array}
-$$
-
-**The field equation is the reason heat conduction and other field problems are designed for the equation, not the solution, and the equation is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering. The engineer who assembles the global conductivity matrix without checking the field equation is not assembling the global conductivity matrix; they are guessing.**
+::: warning Heat rates from gradients, and time steps from intuition
+Two habits cause most errors in thermal models. **Heat flow from element gradients**: in linear elements the gradient is constant and only $O(h)$ accurate; the heat through a boundary should be taken from the nodal reactions (the "flux" on the Dirichlet nodes), which are consistent with the energy balance and converge like $h^2$. A global energy check — heat in through prescribed temperatures equals heat out by convection plus heat stored — catches errors in boundary conditions at once. **Time steps**: an explicit scheme above $\Delta t_\text{cr}$ explodes; an implicit scheme with a step longer than the times of interest is stable but wrong. Resolve the fastest phenomenon you care about (a thermal shock at a surface needs small elements *and* small steps there), and check by halving $\Delta t$.
 :::
 
-::: widget plot
-title: The heat flux vs position
-f: 50
-x: 0,10
-y: 0,100
-labels: q
-caption: The constant heat flux in a 1D bar with uniform conductivity. **The heat flux is constant in the 1D bar, and the heat flux is the reason heat conduction and other field problems are designed for the conductivity, not the resistivity.** **The conductivity is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.**
+::: quiz
+A Crank–Nicolson analysis of a suddenly quenched plate shows the surface-node temperature oscillating above and below its expected value for the first few steps, while the interior looks smooth. What is the best remedy?
+- [ ] Switch to forward Euler with the same time step.
+- [ ] Use a consistent instead of a lumped capacity matrix.
+- [x] Use backward Euler (or start with a few backward-Euler steps), or reduce the time step so that $\lambda_{\max}\Delta t$ is not large.
+- [ ] Coarsen the mesh near the surface.
+::: solution
+The oscillation is the $G \to -1$ behaviour of Crank–Nicolson for the stiff, short-wavelength modes excited by the sudden change. Backward Euler damps them ($G \to 0$). Forward Euler with a step that large would be unstable. Coarsening the mesh reduces $\lambda_{\max}$ and therefore the oscillation, but at the cost of resolution exactly where the gradients are steepest — the wrong trade.
+:::
 :::
 
-::: example Electrostatics analogy {#ex-electrostatics level=3 check="2"}
-A parallel-plate capacitor has plate separation $d = 0 . 0 1 \; \text{m }$ , permittivity $\epsilon = 8 . 8 5 \times 1 0 ^ { - 1 2 } \; \text{F/m }$ , and plate area $A = 0 . 1 \; \text{m } ^ { 2 }$ . The voltage across the plates is $V = 1 0 0 \; \text{V }$ . Calculate the electric field and the capacitance.
-
-**Electric field (analogy to heat flux):**
-
-$$
-E \; = \; { \frac { V } { d } } \; = \; { \frac { 1 0 0 } { 0 . 0 1 } } \; = \; { \bf 1 0 { , } 0 0 0 } \; \text{V/m }
-$$
-
-**Capacitance (analogy to thermal conductance):**
-
-$$
-C \; = \; { \frac { \epsilon \, A } { d } } \; = \; { \frac { 8 . 8 5 \times 1 0 ^ { - 1 2 } \times 0 . 1 } { 0 . 0 1 } } \; = \; { \bf 8 . 8 5 \times 1 0 ^ { - 1 1 } } \; \text{F }
-$$
-
-**Charge (analogy to heat flow):**
-
-$$
-Q \; = \; C \, V \; = \; 8 . 8 5 \times 1 0 ^ { - 1 1 } \times 1 0 0 \; = \; { \bf 8 . 8 5 \times 1 0 ^ { - 9 } } \; \text{C }
-$$
-
-**The electric field is 10,000 V/m, the capacitance is 88.5 pF, and the charge is 8.85 nC. The engineer would design the structure for the source, because the source is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.**
+::: history
+Zienkiewicz and Cheung's 1965 paper "Finite elements in the solution of field problems" (in *The Engineer*) showed that the elements developed for elasticity could be applied unchanged to heat conduction, seepage and other quasi-harmonic problems, and their 1967 textbook presented the method as a general tool for continuum problems, not only for structures. The time-stepping schemes are older: the implicit scheme that bears their names was published by John Crank and Phyllis Nicolson in 1947 for heat-conduction problems in a finite-difference setting, and the stability analysis by amplification factors goes back to John von Neumann's work of the 1940s. Thermal analysis is now among the commonest uses of finite elements in mechanical design — of turbine blades and discs, brakes, electronic packages and welds — usually coupled with a stress analysis that uses the computed temperatures as thermal loads.
 :::
 
-::: example Porous media flow {#ex-porous-flow level=3 check="2"}
-A soil sample of length $L = 2 \\; \\text{m }$ and cross-section $A = 1 \\; \\text{m } ^ { 2 }$ has hydraulic conductivity $K = 1 0 ^ { - 5 } \\; \\text{m/s }$ . The head at the top is $h _ { 1 } = 5 \\; \\text{m }$ and at the bottom is $h _ { 2 } = 1 \\; \\text{m }$ . Calculate the flow rate using Darcy's law.
-
-**Hydraulic gradient:**
-
-$$
-i \\; = \\; { \frac { h _ { 1 } - h _ { 2 } } { L } } \\; = \\; { \frac { 5 - 1 } { 2 } } \\; = \\; { \bf 2 }
-$$
-
-**Darcy velocity (analogy to heat flux):**
-
-$$
-v \\; = \\; K \, i \\; = \\; 1 0 ^ { - 5 } \\times 2 \\; = \\; { \bf 2 \\times 1 0 ^ { - 5 } } \\; \\text{m/s }
-$$
-
-**Flow rate (analogy to heat flow):**
-
-$$
-Q \\; = \\; v \\times A \\; = \\; 2 \\times 1 0 ^ { - 5 } \\times 1 \\; = \\; { \bf 2 \\times 1 0 ^ { - 5 } } \\; \\text{m } ^ { 3 } \\text{/s }
-$$
-
-**The flow rate is $2 \\times 1 0 ^ { - 5 } \\; \\text{m}^3\\text{/s}$ . The engineer would design the structure for the convergence, because the convergence is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.**
-:::
-
-::: example Torsion analogy {#ex-torsion-analogy level=3 check="2"}
-A prismatic bar with a rectangular cross-section of $a = 0 . 0 2 \\; \\text{m }$ by $b = 0 . 0 1 \\; \\text{m }$ is subjected to a twist per unit length $\\theta = 0 . 0 1 \\; \\text{rad/m }$ . The shear modulus is $G = 8 0 \\times 1 0 ^ { 9 } \\; \\text{Pa }$ . Calculate the torsional rigidity using the membrane analogy.
-
-**Torsional rigidity (analogy to thermal conductance):**
-
-$$
-G J \\; \\approx \\; G \\times { \frac { a \, b ^ { 3 } } { 3 } } \\; = \\; 8 0 \\times 1 0 ^ { 9 } \\times { \frac { 0 . 0 2 \\times 0 . 0 1 ^ { 3 } } { 3 } }
-$$
-
-$$
-G J \\; = \\; 8 0 \\times 1 0 ^ { 9 } \\times { \frac { 2 \\times 1 0 ^ { - 8 } } { 3 } } \\; = \\; 8 0 \\times 1 0 ^ { 9 } \\times 6 . 6 7 \\times 1 0 ^ { - 9 } \\; = \\; { \bf 5 3 3 } \\; \\text{N m } ^ { 2 }
-$$
-
-**Torque (analogy to heat flow):**
-
-$$
-T \\; = \\; G J \\times \\theta \\; = \\; 5 3 3 \\times 0 . 0 1 \\; = \\; { \bf 5 . 3 3 } \\; \\text{N m }
-$$
-
-**The torsional rigidity is 533 N m² and the torque is 5.33 N m. The engineer would design the structure for the analogy, because the analogy is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.**
+::: summary
+- Heat conduction, torsion, seepage, electrostatics and potential flow share the quasi-harmonic equation $\nabla\cdot(k\nabla\phi) + Q = 0$ and the same finite elements.
+- The conduction matrix $\int\mathbf{B}^{\mathsf T}\mathbf{k}\mathbf{B}\,dV$ is a stiffness matrix with rows summing to zero; prescribed temperatures are essential, fluxes natural, and convection adds $h\int\mathbf{N}^{\mathsf T}\mathbf{N}$ to the matrix and $h\phi_\infty\int\mathbf{N}^{\mathsf T}$ to the load.
+- One-dimensional elements: $\frac{kA}{L}[1, -1; -1, 1]$, plus $\frac{hPL}{6}[2, 1; 1, 2]$ for a convecting surface. Heat rates are best taken from nodal reactions.
+- Transient problems give $\mathbf{C}\dot{\mathbf{T}} + \mathbf{K}\mathbf{T} = \mathbf{F}$, with consistent or lumped capacity matrices.
+- The θ-method has $G = [1 - (1 - \theta)\lambda\Delta t]/(1 + \theta\lambda\Delta t)$: $\theta \ge \tfrac12$ is unconditionally stable; forward Euler needs $\Delta t \le 2/\lambda_{\max}$, with $\lambda_{\max} \sim k/(\rho c h^2)$.
+- Crank–Nicolson is second-order but oscillates for stiff modes; backward Euler damps them. Stability is not accuracy: check by halving $\Delta t$.
 :::
 
 ## Exercises
 
-::: exercise Element conductivity {#ex-element-conductivity-ex level=3 check="2"}
-A 1D element has $k = 1 0 0 \; \text{W/m K }$ , $A = 0 . 0 0 1 \; \text{m } ^ { 2 }$ , and $L = 0 . 1 \; \text{m }$ . Calculate the element conductivity.
-
+::: exercise Conductance of a copper rod {level=1 check="0.8"}
+A copper rod ($k = 400\,\mathrm{W/m\,K}$) of cross-section $1.0\times10^{-4}\,\mathrm{m^2}$ is modelled with elements $50\,\mathrm{mm}$ long. What is the element conductance $kA/L$? (Enter it in W/K.)
 ::: solution
-$$
-k _ { T } ^ { ( e ) } \; = \; { \frac { k \, A } { L } } \; = \; { \frac { 1 0 0 \times 0 . 0 0 1 } { 0 . 1 } } \; = \; { \bf 1 } \; \text{W/K }
-$$
-
-**The element conductivity is 1 W/K.**
+$400 \times 10^{-4}/0.05 = 0.8\,\mathrm{W/K}$.
 :::
 :::
 
-::: exercise Fourier law {#ex-fourier-law-ex level=3 check="2"}
-The thermal conductivity is $k = 2 0 0 \; \text{W/m K }$ and the temperature gradient is $d T / d x = - 5 0 \; \text{K/m }$ . Calculate the heat flux.
-
+::: exercise Heat flux in an element {level=1 check="100"}
+A linear element $10\,\mathrm{mm}$ long in steel ($k = 50\,\mathrm{W/m\,K}$) has nodal temperatures $100\,^\circ\mathrm{C}$ at $x = 0$ and $80\,^\circ\mathrm{C}$ at $x = 10\,\mathrm{mm}$. What is the heat flux $q_x$ in the element? (Enter it in kW/m².)
 ::: solution
-$$
-q \; = \; - \, k \, { \frac { d T } { d x } } \; = \; - 2 0 0 \times ( - 5 0 ) \; = \; { \bf 1 0 { , } 0 0 0 } \; \text{W/m } ^ { 2 }
-$$
-
-**The heat flux is 10,000 W/m².**
+$q_x = -k\,dT/dx = -50 \times (80 - 100)/0.01 = 1.0\times10^{5}\,\mathrm{W/m^2} = 100\,\mathrm{kW/m^2}$, positive in $+x$, from hot to cold.
 :::
 :::
 
-::: exercise Thermal diffusivity {#ex-thermal-diffusivity-ex level=3 check="2"}
-A material has $k = 5 0 \; \text{W/m K }$ , $\rho = 8 0 0 0 \; \text{kg/m } ^ { 3 }$ , and $c _ { p } = 5 0 0 \; \text{J/kg K }$ . Calculate the thermal diffusivity.
-
+::: exercise An explicit time step {level=1 check="5"}
+The largest eigenvalue of $\mathbf{C}^{-1}\mathbf{K}$ for a thermal mesh with lumped capacity is $0.4\,\mathrm{s^{-1}}$. What is the largest stable time step for forward Euler? (Enter it in s.)
 ::: solution
-$$
-\alpha \; = \; { \frac { k } { \rho \, c _ { p } } } \; = \; { \frac { 5 0 } { 8 0 0 0 \times 5 0 0 } } \; = \; { \frac { 5 0 } { 4 \times 1 0 ^ { 6 } } } \; = \; { \bf 1 . 2 5 \times 1 0 ^ { - 5 } } \; \text{m } ^ { 2 } \text{/s }
-$$
-
-**The thermal diffusivity is $1 . 2 5 \times 1 0 ^ { - 5 }$ m²/s.**
+$\Delta t_\text{cr} = 2/\lambda_{\max} = 2/0.4 = 5\,\mathrm{s}$.
 :::
 :::
 
-::: exercise Capacitance analogy {#ex-capacitance-analogy-ex level=3 check="2"}
-The thermal analogue of electrical capacitance is:
-
+::: exercise Surface temperature of a wall {level=2 check="6.667"}
+A wall $0.2\,\mathrm{m}$ thick with $k = 1.0\,\mathrm{W/m\,K}$ has its inner face at $20\,^\circ\mathrm{C}$ and its outer face convecting to air at $0\,^\circ\mathrm{C}$ with $h = 10\,\mathrm{W/m^2\,K}$. Using one element, find the outer-surface temperature. (Enter it in °C.)
 ::: solution
-**The thermal mass $m \, c _ { p }$ .** The thermal analogue of electrical capacitance is the thermal mass $m \, c _ { p } = \rho \, V \, c _ { p }$ , which stores thermal energy.
+Per unit area, node 2 equation: $(k/L + h)T_2 = (k/L)T_1 + hT_\infty$, i.e. $(5 + 10)T_2 = 5 \times 20$, $T_2 = 6.667\,^\circ\mathrm{C}$. Check: resistance $0.2 + 0.1 = 0.3\,\mathrm{m^2K/W}$, flux $66.7\,\mathrm{W/m^2}$, surface temperature $66.7/10 = 6.67\,^\circ\mathrm{C}$ above ambient.
 :::
 :::
 
-::: exercise Stability condition {#ex-stability-condition-ex level=3 check="2"}
-For explicit time integration with $h = 0 . 0 1 \; \text{m }$ , $k = 5 0 \; \text{W/m K }$ , $\rho = 1 0 0 0 \; \text{kg/m } ^ { 3 }$ , and $c _ { p } = 1 0 0 0 \; \text{J/kg K }$ , calculate the maximum stable time step.
-
+::: exercise A one-element fin {level=2 check="91.346"}
+Verify the one-element result of [[#ex-fin]]: assemble the $2 \times 2$ matrix with conduction and lateral convection, impose the base temperature and find the tip temperature. (Enter $T_\text{tip}$ in °C.)
 ::: solution
-$$
-\Delta t _ { \max } \; = \; { \frac { \rho \, c _ { p } \, h ^ { 2 } } { 6 \, k } } \; = \; { \frac { 1 0 0 0 \times 1 0 0 0 \times 0 . 0 1 ^ { 2 } } { 6 \times 5 0 } } \; = \; { \frac { 1 0 0 } { 3 0 0 } } \; = \; { \bf 0 . 3 3 3 } \; \text{s }
-$$
-
-**The maximum stable time step is 0.333 s.**
+Row 2: $(kA/L + 2hPL/6)T_2 + (-kA/L + hPL/6)T_1 = hPLT_\infty/2$. With $kA/L = 0.078540$, $hPL/6 = 0.0032725$: $0.085085\,T_2 = 0.24544 + 0.075267 \times 100 = 7.77214$, so $T_2 = 91.346\,^\circ\mathrm{C}$ (exact $91.511$).
 :::
 :::
 
-::: exercise Derivation: the element conductivity matrix {#ex-derive-conductivity level=4 check="2"}
-Derive the element conductivity matrix $\mathbf { k } _ { T } ^ { ( e ) } = \int _ { \Omega _ { e } } \, \mathbf { B } ^ { T } \, \mathbf { D } _ { T } \, \mathbf { B } \, d \Omega$ from the weak form of the heat conduction equation. Write the expression for the weak form.
-
+::: exercise One Crank–Nicolson step {level=2 check="0.6"}
+For the scalar equation $\dot y = -0.5\,y$, $y(0) = 1$, take one Crank–Nicolson step with $\Delta t = 1$. (Enter $y_1$.) Compare with backward Euler and with the exact value.
 ::: solution
-The **strong form** of the heat conduction equation is:
-
-$$
-- \, \nabla \cdot ( \mathbf { D } _ { T } \, \nabla T ) \; = \; Q \quad \text{in } \Omega
-  $$
-
-**Multiply by a test function $w$ and integrate:**
-
-$$
-- \int _ { \Omega } \, w \, \nabla \cdot ( \mathbf { D } _ { T } \, \nabla T ) \, d \Omega \; = \; \int _ { \Omega } \, w \, Q \, d \Omega
-$$
-
-**Integrate by parts:**
-
-$$
-\int _ { \Omega } \, \nabla w ^ { T } \, \mathbf { D } _ { T } \, \nabla T \, d \Omega \; = \; \int _ { \Omega } \, w \, Q \, d \Omega \; + \; \int _ { \Gamma } \, w \, { \bar { q } } \, d \Gamma
-$$
-
-**Substitute $T = \mathbf { N } \, \mathbf { T }$ and $w = \mathbf { N }$ :**
-
-$$
-\int _ { \Omega } \, \mathbf { B } ^ { T } \, \mathbf { D } _ { T } \, \mathbf { B } \, d \Omega \; \mathbf { T } \; = \; \int _ { \Omega } \, \mathbf { N } ^ { T } \, Q \, d \Omega \; + \; \int _ { \Gamma } \, \mathbf { N } ^ { T } \, { \bar { q } } \, d \Gamma
-$$
-
-The **element conductivity matrix** is:
-
-$$
-\mathbf { k } _ { T } ^ { ( e ) } \; = \; \int _ { \Omega _ { e } } \, \mathbf { B } ^ { T } \, \mathbf { D } _ { T } \, \mathbf { B } \, d \Omega
-$$
-
-**The heat flux is the reason heat conduction and other field problems are designed for the flux, not the gradient, and the flux is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.** $\blacksquare$
+$G = (1 - 0.25)/(1 + 0.25) = 0.6$, so $y_1 = 0.6$. Backward Euler: $1/1.5 = 0.6667$. Exact: $e^{-0.5} = 0.6065$. Crank–Nicolson is much more accurate here, where $\lambda\Delta t$ is small.
 :::
 :::
 
-::: exercise Derivation: the capacity matrix {#ex-derive-capacity level=4 check="2"}
-Derive the capacity matrix $\mathbf { C } = \int _ { \Omega } \, \rho \, c _ { p } \, \mathbf { N } ^ { T } \, \mathbf { N } \, d \Omega$ from the transient heat conduction equation. Write the expression for the semi-discrete system.
-
+::: exercise The explicit limit for a uniform mesh {level=3 check="3.611"}
+For a long uniform mesh of linear elements of length $h$ with lumped capacity, show that the highest mode is the "zig-zag" $T_j = (-1)^j$ and derive $\Delta t_\text{cr} = \rho c\,h^2/(2k)$ for forward Euler. Evaluate it for steel ($k = 50\,\mathrm{W/m\,K}$, $\rho c = 3.611\times10^{6}\,\mathrm{J/m^3\,K}$) with $h = 10\,\mathrm{mm}$. (Enter $\Delta t_\text{cr}$ in s.)
 ::: solution
-The **transient heat conduction** equation is:
-
-$$
-\rho \, c _ { p } \, { \frac { \partial T } { \partial t } } \; - \; \nabla \cdot ( k \, \nabla T ) \; = \; Q
-$$
-
-**Substitute $T = \mathbf { N } \, \mathbf { T } ( t )$ :**
-
-$$
-\rho \, c _ { p } \, \mathbf { N } \, { \frac { d \mathbf { T } } { d t } } \; - \; \nabla \cdot ( k \, \nabla ( \mathbf { N } \, \mathbf { T } ) ) \; = \; Q
-$$
-
-**Multiply by $\mathbf { N } ^ { T }$ and integrate:**
-
-$$
-\int _ { \Omega } \, \rho \, c _ { p } \, \mathbf { N } ^ { T } \, \mathbf { N } \, d \Omega \; { \frac { d \mathbf { T } } { d t } } \; + \; \mathbf { K } _ { T } \, \mathbf { T } \; = \; \mathbf { F } _ { T }
-$$
-
-The **capacity matrix** is:
-
-$$
-\mathbf { C } \; = \; \int _ { \Omega } \, \rho \, c _ { p } \, \mathbf { N } ^ { T } \, \mathbf { N } \, d \Omega
-$$
-
-The **semi-discrete system** is:
-
-$$
-\mathbf { C } \, { \frac { d \mathbf { T } } { d t } } \; + \; \mathbf { K } _ { T } \, \mathbf { T } \; = \; \mathbf { F } _ { T }
-$$
-
-**The symmetry is the reason heat conduction and other field problems are designed for the symmetry, not the asymmetry, and the symmetry is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.** $\blacksquare$
+At an interior node, per unit area, lumped capacity $\rho ch$ and conductance row $\frac{k}{h}[-1, 2, -1]$. For $T_j = (-1)^j$ the conduction term is $\frac{k}{h}(2 + 1 + 1)(-1)^j = \frac{4k}{h}T_j$, so $\lambda = 4k/(\rho ch^2)$; no mode has larger $\lambda$ (Gershgorin's theorem bounds every eigenvalue by $4k/\rho ch^2$). Hence $\Delta t_\text{cr} = 2/\lambda = \rho ch^2/(2k)$, i.e. a mesh Fourier number $\alpha\Delta t/h^2 \le \tfrac12$. For steel: $3.611\times10^6 \times 10^{-4}/100 = 3.611\,\mathrm{s}$. (The two-element plate of [[#ex-transient]] has a slightly larger limit, $4.23\,\mathrm{s}$, because it is too short to contain the full zig-zag.) Halving $h$ divides $\Delta t_\text{cr}$ by four — the price of explicit methods on fine meshes.
 :::
 :::
 
-::: exercise Laplace equation {#ex-laplace-equation-ex level=3 check="2"}
-The Laplace equation is:
-
+::: exercise The torsion problem as a field problem {level=3}
+For Saint-Venant torsion, the Prandtl stress function $\phi$ satisfies $\nabla^2\phi = -2G\theta'$ in the cross-section, with $\phi = 0$ on the outer boundary, and the torque is $T = 2\int_A\phi\,dA$. Write the weak form and the finite element equations using linear triangles, identify $k$, $Q$ and the boundary conditions in the analogy of [[#def-field]], and explain how you would compute the torsion constant $J = T/(G\theta')$ and the maximum shear stress from the nodal values.
 ::: solution
-**$\nabla ^ { 2 } \phi = 0$ .** The Laplace equation is $\nabla ^ { 2 } \phi = 0$ , which is the steady-state diffusion equation with no source term.
+Analogy: $k = 1$, $Q = 2G\theta'$, Dirichlet $\phi = 0$ on the boundary (no Neumann conditions for a solid section). Weak form: $\int_A\nabla w\cdot\nabla\phi\,dA = \int_A 2G\theta'\,w\,dA$ for $w = 0$ on the boundary. With triangles: $\mathbf{k}^{(e)} = \frac{1}{4A}(\mathbf{b}\mathbf{b}^{\mathsf T} + \mathbf{c}\mathbf{c}^{\mathsf T})$ and $\mathbf{f}^{(e)} = \frac{2G\theta'A}{3}[1, 1, 1]^{\mathsf T}$. It is convenient to solve with $G\theta' = 1$. Then $T/(G\theta') = 2\sum_e\int_{A_e}\phi\,dA = 2\sum_eA_e(\phi_1 + \phi_2 + \phi_3)/3$ gives $J$. The shear stresses $\tau_{xz} = \partial\phi/\partial y$, $\tau_{yz} = -\partial\phi/\partial x$ are constant in each triangle (scaled by the actual $G\theta'$); the maximum, which occurs on the boundary at the point nearest the centre, is under-estimated by coarse meshes, so refine there. For a circular section of radius $R$ the exact $J = \pi R^4/2$ is a useful check of the code.
 :::
 :::
 
-::: quiz Heat conduction and field problems {#quiz-heat-conduction}
-The most fundamental non-structural finite element analyses in engineering are:
-
-- [ ] Springs, bars and the direct stiffness method
-- [ ] Trusses and frames
-- [x] Heat conduction and other field problems
-- [ ] Structural dynamics
-
+::: exercise A thermal model of a heat sink {level=3}
+An extruded aluminium heat sink with twelve rectangular fins cools an electronic component dissipating $40\,\mathrm{W}$ through a thermal pad. Propose a finite element model to estimate the component's case temperature: the idealisation (2-D cross-section or 3-D), the boundary conditions and how you would obtain the convection coefficients, the mesh near the base and fins, and the checks you would make. Discuss what the model can and cannot tell you.
 ::: solution
-**Heat conduction and other field problems.** Heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering, because the heat conduction element uses the same shape functions as the structural element but with a different constitutive matrix, the field problem is governed by the Poisson equation or the diffusion equation, and the element conductivity matrix is analogous to the element stiffness matrix. The engineer who assembles the global conductivity matrix without checking the boundary conditions is not assembling the global conductivity matrix; they are guessing.
+A 2-D cross-section of the extrusion is appropriate if the heat input is uniform along the length; a local component on a long sink needs 3-D. Model the base and fins with quadrilateral elements, at least two or three through each fin thickness and enough along the fin to capture the exponential decay ($mL$ of order 1); the pad as a thin layer with its conductance (or a contact conductance), and the heat input as a flux over the component footprint. Convection coefficients are the main uncertainty: take them from correlations for natural or forced convection between fins ([[heat-transfer/external-convection]], [[heat-transfer/natural-convection]]) or from a coupled CFD or a test; radiation may add a significant fraction in natural convection. Checks: energy balance (40 W in equals convected out); comparison with a fin-efficiency hand calculation; mesh refinement of the base spreading region; sensitivity of the case temperature to $h$ (often the dominant uncertainty). The model predicts temperatures *given* $h$; it cannot predict $h$ itself, and its accuracy is limited by the convection data and the pad conductance, not by the mesh.
 :::
 :::
-
-::: quiz Fourier law {#quiz-fourier-law}
-The Fourier law is:
-
-- [x] $\mathbf { q } = - \mathbf { D } _ { T } \nabla T$
-- [ ] $\mathbf { q } = \mathbf { D } _ { T } \nabla T$
-- [ ] $\mathbf { q } = - \mathbf { D } _ { T } T$
-- [ ] $\mathbf { q } = \mathbf { D } _ { T } T$
-
-::: solution
-**$\mathbf { q } = - \mathbf { D } _ { T } \nabla T$ .** The Fourier law is $\mathbf { q } = - \mathbf { D } _ { T } \nabla T$ , and the thermal conductivity is the reason heat conduction and other field problems are designed for the conductivity, not the resistivity. The engineer who assembles the global conductivity matrix without checking the thermal conductivity is not assembling the global conductivity matrix; they are guessing.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[finite-element-method/structural-dynamics]]** — Structural dynamics are the foundation of heat conduction and other field problems.
-- **[[finite-element-method/nonlinear-analysis]]** — Nonlinear analysis and modelling practice are the foundation of heat conduction and other field problems.
-- **[[finite-element-method/direct-stiffness]]** — Springs, bars and the direct stiffness method are the foundation of heat conduction and other field problems.
-- **[[finite-element-method/trusses-frames]]** — Trusses and frames are the foundation of heat conduction and other field problems.
-- **[[finite-element-method/weak-forms]]** — Weak forms and Galerkin's method are the foundation of heat conduction and other field problems.
-- **[[finite-element-method/plane-elements]]** — Two-dimensional elements are the foundation of heat conduction and other field problems.
-- **[[finite-element-method/isoparametric-elements]]** — Isoparametric elements and numerical integration are the foundation of heat conduction and other field problems.
-- **[[finite-element-method/convergence-meshing]]** — Convergence, accuracy and meshing are the foundation of heat conduction and other field problems.
-- **[[heat-transfer/heat-transfer-modes]]** — The heat transfer modes are the foundation of heat conduction and other field problems.
-- **[[computational-fluid-dynamics/governing-equations]]** — The governing equations are the foundation of heat conduction and other field problems.
-
-::: history Heat conduction and field problems: from Fourier to the finite element method {#history-field-problems}
-**1822** — **Fourier** publishes the **first heat conduction equation**, which is the foundation of heat conduction and other field problems. **The first heat conduction equation is the reason heat conduction and other field problems are the oldest concept in finite element analysis, and the age is the reason heat conduction and other field problems are the most refined concept in finite element analysis.**
-
-**1850s** — **Kirchhoff** applies the **heat equation to electrical circuits**, and the heat equation is the reason heat conduction and other field problems are the most historic concept in finite element analysis. **The heat equation is the reason heat conduction and other field problems are the most refined concept in finite element analysis, and heat conduction and other field problems are the reason the heat equation is the most historic concept in finite element analysis.**
-
-**1900s** — **The analogy between heat and electrical conduction** is established, and the analogy is the reason heat conduction and other field problems are the most practical concept in finite element analysis. **The analogy is the reason heat conduction and other field problems are the most refined concept in finite element analysis, and heat conduction and other field problems are the reason the analogy is the most practical concept in finite element analysis.**
-
-**1950s** — **The first finite element heat transfer analysis** is performed, and the first finite element heat transfer analysis is the reason heat conduction and other field problems are the most powerful concept in finite element analysis. **The first finite element heat transfer analysis is the reason heat conduction and other field problems are the most refined concept in finite element analysis, and heat conduction and other field problems are the reason the first finite element heat transfer analysis is the most powerful concept in finite element analysis.**
-
-**1960s** — **The finite element method for fluid flow** is developed, and the finite element method for fluid flow is the reason heat conduction and other field problems are the most efficient concept in finite element analysis. **The finite element method for fluid flow is the reason heat conduction and other field problems are the most refined concept in finite element analysis, and heat conduction and other field problems are the reason the finite element method for fluid flow is the most efficient concept in finite element analysis.**
-
-**1970s** — **The finite element method for electromagnetics** is developed, and the finite element method for electromagnetics is the reason heat conduction and other field problems are the most advanced concept in finite element analysis. **The finite element method for electromagnetics is the reason heat conduction and other field problems are the most refined concept in finite element analysis, and heat conduction and other field problems are the reason the finite element method for electromagnetics is the most advanced concept in finite element analysis.**
-
-**1980s** — **The finite element method for coupled field problems** is developed, and the finite element method for coupled field problems is the reason heat conduction and other field problems are the most modern concept in finite element analysis. **The finite element method for coupled field problems is the reason heat conduction and other field problems are the most refined concept in finite element analysis, and heat conduction and other field problems are the reason the finite element method for coupled field problems is the most modern concept in finite element analysis.**
-
-**1990s** — **The finite element method for multiphysics problems** is developed, and the finite element method for multiphysics problems is the reason heat conduction and other field problems are the most futuristic concept in finite element analysis. **The finite element method for multiphysics problems is the reason heat conduction and other field problems are the most refined concept in finite element analysis, and heat conduction and other field problems are the reason the finite element method for multiphysics problems is the most futuristic concept in finite element analysis.**
-:::
-
-::: summary Heat conduction and other field problems {#summary-field-problems}
-- **The element conductivity matrix is $\mathbf { k } _ { T } ^ { ( e ) } = \int _ { \Omega _ { e } } \, \mathbf { B } ^ { T } \, \mathbf { D } _ { T } \, \mathbf { B } \, d \Omega$ , the thermal load vector is $\mathbf { f } _ { T } ^ { ( e ) } = \int _ { \Omega _ { e } } \, \mathbf { N } ^ { T } \, Q \, d \Omega + \int _ { \Gamma _ { q } } \, \mathbf { N } ^ { T } \, { \bar { q } } \, d \Gamma$ , and the system equation is $\mathbf { K } _ { T } \, \mathbf { T } = \mathbf { F } _ { T }$ .** The boundary conditions are the reason heat conduction and other field problems are designed for the constraints, not the sources, and the constraints are the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.
-- **The Fourier law is $\mathbf { q } = - \mathbf { D } _ { T } \, \nabla T$ , the heat balance is $- \nabla \cdot ( \mathbf { D } _ { T } \, \nabla T ) = Q$ in $\Omega$ , and the thermal conductivity is $k _ { T } = 1 \text{--} 4 0 0$ W/m K.** The element conductivity matrix is the reason heat conduction and other field problems are designed for the matrix, not the vector, and the matrix is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.
-- **The Poisson equation (steady heat conduction) is $- \nabla \cdot ( k \, \nabla T ) = Q$ in $\Omega$ , the diffusion equation (transient heat conduction) is $\rho \, c _ { p } \, \partial T / \partial t - \nabla \cdot ( k \, \nabla T ) = Q$ in $\Omega$ , and the advection-diffusion equation is $\partial \phi / \partial t + \mathbf { v } \cdot \nabla \phi - \nabla \cdot ( \Gamma \, \nabla \phi ) = S$ in $\Omega$ .** The thermal load vector is the reason heat conduction and other field problems are designed for the vector, not the source, and the vector is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.
-- **The Laplace equation is $\nabla ^ { 2 } \phi = 0$ in $\Omega$ , the Helmholtz equation is $\nabla ^ { 2 } \phi + k ^ { 2 } \, \phi = 0$ in $\Omega$ , and the heat source is $Q = 1 \text{--} 1 0 ^ { 6 }$ W/m³.** The field equation is the reason heat conduction and other field problems are designed for the equation, not the solution, and the equation is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.
-- **The heat conduction equation is $- \nabla \cdot ( k \, \nabla T ) = Q$ , the electrostatics equation is $- \nabla \cdot ( \epsilon \, \nabla V ) = \rho _ { e }$ , and the fluid flow through porous media equation is $- \nabla \cdot ( K \, \nabla h ) = f$ .** The thermal conductivity is the reason heat conduction and other field problems are designed for the conductivity, not the resistivity, and the conductivity is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.
-- **The torsion of a prismatic bar equation is $- \nabla \cdot ( \nabla \phi ) = 2 \, G \, \theta$ , the seepage flow equation is $- \nabla \cdot ( \rho \, \nabla p ) = Q _ { m }$ , and the heat flux is ${ \bar { q } } = 1 \text{--} 1 0 ^ { 5 }$ W/m².** The heat source is the reason heat conduction and other field problems are designed for the source, not the sink, and the source is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.
-- **The transient heat conduction equation is $\rho \, c _ { p } \, \partial T / \partial t + \mathbf { K } _ { T } \, \mathbf { T } = \mathbf { F } _ { T }$ , the capacity matrix is $\mathbf { C } = \int _ { \Omega } \, \rho \, c _ { p } \, \mathbf { N } ^ { T } \, \mathbf { N } \, d \Omega$ , and the backward Euler scheme is $( \mathbf { C } / \Delta t + \mathbf { K } _ { T } ) \, \mathbf { T } _ { n + 1 } = ( \mathbf { C } / \Delta t ) \, \mathbf { T } _ { n } + \mathbf { F } _ { T }$ .** The heat flux is the reason heat conduction and other field problems are designed for the flux, not the gradient, and the flux is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.
-- **The Crank-Nicolson scheme is $( \mathbf { C } / \Delta t + \mathbf { K } _ { T } / 2 ) \, \mathbf { T } _ { n + 1 } = ( \mathbf { C } / \Delta t - \mathbf { K } _ { T } / 2 ) \, \mathbf { T } _ { n } + ( \mathbf { F } _ { n } + \mathbf { F } _ { n + 1 } ) / 2$ , the stability condition for explicit schemes is $\Delta t \leq \rho \, c _ { p } \, h ^ { 2 } / ( 6 \, k )$ , and the temperature is $T = - 2 0 0 \text{--} 2 0 0 0$ °C.** The symmetry is the reason heat conduction and other field problems are designed for the symmetry, not the asymmetry, and the symmetry is the reason heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering.
-- **The heat conduction and field problem calculation is the most important non-structural finite element calculation in engineering, because the heat conduction and field problem calculation determines the temperature, heat flux and thermal stresses of the structure.** The temperature, heat flux and thermal stresses are the reason the engineer can solve thermal, fluid flow, and electromagnetic problems using the same finite element code.
-- **Heat conduction and other field problems are the most fundamental non-structural finite element analyses in engineering, because the heat conduction element uses the same shape functions as the structural element but with a different constitutive matrix, the field problem is governed by the Poisson equation or the diffusion equation, and the element conductivity matrix is analogous to the element stiffness matrix.** The finite element analysis is the reason the engineer can solve thermal, fluid flow, and electromagnetic problems using the same finite element code.
-:::
-
-## Further reading
-
-- **O. C. Zienkiewicz, R. L. Taylor and J. Z. Zhu (2013)** — *The Finite Element Method: Its Basis and Fundamentals*, 7th ed. Butterworth-Heinemann. The element conductivity matrix, the field equation, and the analogy between field problems.
-- **T. J. R. Hughes (2000)** — *The Finite Element Method: Linear Static and Dynamic Finite Element Analysis*. Dover. The element conductivity matrix and the transient heat conduction.
-- **K. J. Bathe (2006)** — *Finite Element Procedures*. Prentice Hall. The element conductivity matrix and the capacity matrix.
-- **J. N. Reddy (2019)** — *An Introduction to the Finite Element Method*, 4th ed. Routledge. The element conductivity matrix and the Fourier law.
-- **P. Wriggers (2006)** — *Finite Element Methods for Linear Problems*. Springer. The element conductivity matrix and the thermal load vector.
-- **R. L. Taylor (2003)** — *The Finite Element Method: The Basis*, Vol. 1. Butterworth-Heinemann. The element conductivity matrix and the boundary conditions.
-- **A. K. Noor (1980)** — *Variational and Derivative Recovery Procedures in Finite Element Analysis*. Wiley. The element conductivity matrix and the symmetry.
-- **S. S. Rao (2009)** — *The Finite Element Method in Engineering*, 5th ed. Butterworth-Heinemann. The element conductivity matrix and the convergence.
