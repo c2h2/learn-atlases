@@ -150,8 +150,8 @@
     {
       "year": 1953,
       "title": "Roberts proves the benzyne mechanism with carbon-14",
-      "detail": "Lothrop Roberts treats chlorobenzene labelled with $^{14}\\mathrm{C}$ at C1 with amide ion and finds the label scrambled evenly between C1 and C2 of the aniline product — direct proof of a symmetrical intermediate, benzyne, and of elimination–addition as a third mechanism of aromatic substitution.",
-      "people": ["Lothrop Roberts"]
+      "detail": "John D. Roberts treats chlorobenzene labelled with $^{14}\\mathrm{C}$ at C1 with amide ion and finds the label scrambled evenly between C1 and C2 of the aniline product — direct proof of a symmetrical intermediate, benzyne, and of elimination–addition as a third mechanism of aromatic substitution.",
+      "people": ["John D. Roberts"]
     },
     {
       "year": 1963,
@@ -175,7 +175,7 @@
     },
     {
       "title": "Advanced Organic Chemistry, Part B: Reactions and Synthesis",
-      "authors": "Michael Carey and Richard Sundberg",
+      "authors": "Francis A. Carey and Richard J. Sundberg",
       "year": 2007,
       "note": "The standard advanced treatment of exactly this course's reactions, chapter by chapter, with the selectivity data behind the rules of thumb."
     },

@@ -165,7 +165,7 @@
   "references": [
     {
       "title": "Chemical Principles",
-      "authors": "Peter Atkins, Loretta Jones and Ronald Laverman",
+      "authors": "Peter Atkins, Loretta Jones and Leroy Laverman",
       "year": 2022,
       "note": "The natural text for this course: equilibrium, entropy and electrochemistry treated with mathematical care but at first-year level."
     },
@@ -183,7 +183,7 @@
     },
     {
       "title": "Chemistry",
-      "authors": "Julia Burdge and Alison Overby",
+      "authors": "Julia Burdge",
       "year": 2021,
       "note": "A companion text with many worked buffer and titration examples."
     },
@@ -195,7 +195,7 @@
     },
     {
       "title": "General Chemistry: Principles and Modern Applications",
-      "authors": "Ralph H. Petrucci, F. Geoffrey Herring, Jeffry D. Rait and Maureen Ryan",
+      "authors": "Ralph H. Petrucci, F. Geoffrey Herring, Jeffry D. Madura and Carey Bissonnette",
       "year": 2017,
       "note": "Detailed on solubility equilibria and electrochemistry; useful for the harder exercises."
     },

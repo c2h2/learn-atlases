@@ -58,7 +58,7 @@
     {
       "title": "萨迪·卡诺的《反思》",
       "detail": "萨迪·卡诺（Carnot）的《关于火的动力的反思》（Réflexions sur la puissance motrice du feu）提出了理想热机，并论证其效率只取决于它工作于其间的那两个温度——这是热力学从其写作时所属的热质说的第一次脱离。",
-      "people": ["萨迪·卡诺（Carnot）", "伊波利特·卡诺（Hippolyte Carnot）"]
+      "people": ["萨迪·卡诺（Carnot）"]
     },
     {
       "title": "焦耳的叶轮装置",
@@ -104,13 +104,13 @@
   "references": [
     {
       "title": "Physical Chemistry",
-      "authors": "Peter Atkins, Julio de Paula and Jonathan Reid",
+      "authors": "Peter Atkins, Julio de Paula and James Keeler",
       "year": 2018,
       "note": "中级标准教材；其对热力学基本方程、相平衡与电化学的处理确立了本图谱通篇使用的记号。"
     },
     {
       "title": "Chemical Principles: The Quest for Insight",
-      "authors": "Peter Atkins, Loretta Jones and Leron Laverman",
+      "authors": "Peter Atkins, Loretta Jones and Leroy Laverman",
       "year": 2016,
       "note": "入门课程的伴侣；对本课程所预设的热化学与平衡基础很有用。"
     },
@@ -122,7 +122,7 @@
     },
     {
       "title": "The Principles of Chemical Equilibrium",
-      "authors": "Peter Denbigh",
+      "authors": "Kenneth Denbigh",
       "year": 1981,
       "note": "对平衡与溶液热力学的成熟处理，长于相律与标准态的含义。"
     },
@@ -133,10 +133,10 @@
       "note": "公理化的、以公设为基础的表述；修完本课程前四章之后读来收益良多。"
     },
     {
-      "title": "Advanced Thermodynamics for Chemists",
-      "authors": "Robert de Levie",
-      "year": 2001,
-      "note": "为化学专业学生而写，特别注意各种惯例与那些使学生失足的错误。"
+      "title": "Chemical Thermodynamics: Basic Concepts and Methods",
+      "authors": "Irving M. Klotz and Robert M. Rosenberg",
+      "year": 2008,
+      "note": "面向化学专业的热力学：标准态、各种惯例，以及代数上通常失足的地方，不预设物理系课程。"
     },
     {
       "title": "Thermodynamics and the Free Energy of Chemical Substances",
