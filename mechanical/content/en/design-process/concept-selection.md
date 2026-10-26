@@ -1,496 +1,312 @@
-Concept selection is the phase in which the design team commits to a solution, and the commitment is the most consequential decision in the entire design process. **A wrong concept cannot be fixed by better detail design: a ball bearing cannot be made to work as a journal bearing by optimising the race geometry, and a centrifugal pump cannot be made to meter a precise volume by tightening the impeller tolerance.** The concept determines the architecture, the architecture determines the components, the components determine the cost, and the cost determines whether the product is viable. **The concept selection decision is worth 10× the sum of all subsequent design decisions, and it is the decision that receives the least systematic attention.**
+Concept generation ([[design-process/concept-generation]]) deliberately produces more ideas than can be developed. Concept selection narrows them to one — or, more often, to two or three that are carried forward until tests or analysis can separate them. The decision is made with incomplete information: the concepts are sketches, their performance is estimated, and the requirements themselves ([[design-process/requirements]]) may still move. The aim of the methods in this chapter is not to compute the "right" answer from numbers that are partly guesses, but to make the comparison explicit, consistent and open to challenge, to show which judgements the decision depends on, and to direct effort to the information that would change it.
 
-The tools of concept selection are simple: a screening matrix that eliminates the infeasible, a scoring matrix that ranks the feasible, a Pareto front that makes the trade-offs visible, and a decision conference that makes the choice. The simplicity is the point: a complex selection method is a selection method that the team does not use, and a selection method that the team does not use is a selection method that produces a decision by the loudest voice in the room. **The Pugh matrix works because it is simple enough to use and structured enough to be defensible.**
+The chapter moves from coarse to fine. Pugh's screening matrix compares many concepts against a reference with plus, minus and same; weighted scoring matrices refine the comparison of a short list; sensitivity analysis asks how much the weights would have to change to alter the ranking; Pareto dominance identifies which concepts are worth considering at all whatever the weights; expected-value reasoning brings in risk and the value of a test; and simple physical models discriminate between concepts on the attributes that matter most. A final section explains why scoring methods, used carelessly, can mislead.
 
-The difficulty is not the mathematics; the difficulty is the psychology. The engineer who generated concept A is biased toward concept A, and the bias is not eliminated by telling the engineer to be objective — it is eliminated by making the evaluation criteria explicit before the concepts are scored, by having the team score independently and then compare, and by using a reference concept (the "datum") that anchors the scoring to a known baseline rather than to the engineer's favourite.
+## Screening: the Pugh matrix {#sec-pugh}
 
-::: warning Nine ways concept selection goes wrong
-**Evaluating concepts one at a time.** The engineer who scores concept A (7.2), then concept B (6.8), then concept C (7.5) is not comparing the concepts — they are rating each one in isolation, and the rating is anchored to the first concept they saw. **Score all concepts against one criterion before moving to the next criterion. The row-by-row comparison is the mechanism by which the relative ranking emerges, and the relative ranking is the output of the selection.** **Using the wrong criteria.** The team that scores "aesthetics" at 20 % weight for an industrial gearbox is not making a decision — they are making a fashion statement. **The criteria come from the requirements, and the weights come from the customer. If the customer did not say it, it is not a criterion. If the customer said it but did not prioritise it, the weight is 0.** **Changing the criteria after seeing the results.** The team that scores the concepts, looks at the ranking, and then says "actually, cost should be more important" is not selecting a concept — they are reverse-engineering a justification for the concept they already wanted. **The criteria and the weights are agreed before the scoring, and the agreement is recorded. If the criteria change, the scoring is redone from scratch, and the team that changes the criteria mid-scoring is the team that should be asked "which concept did you want to win?"** **Not using a datum.** The team that scores each concept on a 1–10 scale without a reference point is not comparing — they are rating, and the rating is unanchored. **The Pugh matrix uses a datum (the existing product, the simplest concept, or the reference design) and scores every concept as +, 0, or − relative to the datum. The datum is the anchor, and the anchor is what makes the comparison meaningful.** **Ignoring the Pareto front.** The team that selects the concept with the highest weighted score without checking whether it is on the Pareto front is selecting a dominated concept. **A concept that is dominated in every objective is not the best concept — it is the worst concept that the scoring method happened to rank first because of a weighting error. Plot the Pareto front before you score, and check that the winner is on it.** **Not sensitivity-testing the weights.** The team that selects concept A with weights (cost 40 %, performance 30 %, manufacturability 20 %, aesthetics 10 %) without checking whether the ranking changes if the weights change is not making a robust decision. **Vary each weight by ± 10 % and check whether the winner changes. If the winner changes when the cost weight goes from 40 % to 35 %, the decision is not robust, and the team should discuss the cost-performance trade-off explicitly before committing.** **Letting the loudest voice decide.** The team where the senior engineer speaks first and the junior engineers agree is not a team — it is a choir. **Score independently first, then compare. The independent scoring eliminates the anchoring bias, and the comparison reveals the disagreements that need to be discussed. The disagreement is the most valuable output of the selection session, because it is the disagreement that reveals the hidden assumption.** **Not documenting the decision.** The team that selects concept B without writing down why concept A was rejected will re-litigate the decision at every design review, every customer meeting, and every audit. **Write the decision record: the criteria, the weights, the scores, the winner, the runner-up, and the reason for the selection. The decision record is the defence against the "why did we choose this?" question that will be asked 6 months later by the person who was not in the room.** **Selecting on the first pass.** The team that scores the concepts once and selects the winner is not selecting — they are gambling. **The selection is iterative: score, discuss, refine the concepts, re-score. The first pass eliminates the obviously bad concepts; the second pass refines the good concepts; the third pass selects the winner. The iteration is the mechanism by which the concepts improve, and the improvement is the reason for the iteration.**
+::: definition Concept screening matrix {#def-pugh}
+A **screening matrix** (Pugh matrix) lists the selection criteria as rows and the concepts as columns. One concept — often an existing product or the team's current favourite — is chosen as the **datum**. Every other concept is compared with the datum on each criterion and marked **+** (better), **−** (worse) or **S** (about the same). The numbers of pluses and minuses, and their difference (the **net score**), summarise each concept, but the matrix is read row by row as well as column by column.
 :::
 
-## 1. Screening: eliminating the infeasible
-
-::: definition Concept screening: the decision matrix {#def-screening}
-**Concept screening** is the first pass of the selection process, and its purpose is to eliminate the concepts that fail the mandatory requirements. The screening matrix is a binary (pass/fail) evaluation of each concept against each mandatory requirement:
-
-$$
-\begin{array} { l c c c c c }
-\textbf{Mandatory requirement} & \textbf{Concept A} & \textbf{Concept B} & \textbf{Concept C} & \textbf{Concept D} & \textbf{Concept E} \\ \hline
-\text{Support 500 kg load} & \text{Pass} & \text{Pass} & \text{Fail} & \text{Pass} & \text{Pass} \\
-\text{Fit within 500 mm envelope} & \text{Pass} & \text{Fail} & \text{Pass} & \text{Pass} & \text{Pass} \\
-\text{Operate at -20 to +50 °C} & \text{Pass} & \text{Pass} & \text{Pass} & \text{Fail} & \text{Pass} \\
-\text{Cost < £2 000 at 10 k units} & \text{Fail} & \text{Pass} & \text{Pass} & \text{Pass} & \text{Pass} \\
-\text{Comply with CE marking} & \text{Pass} & \text{Pass} & \text{Pass} & \text{Pass} & \text{Fail} \\ \hline
-\text{Result} & \text{Fail} & \text{Fail} & \text{Fail} & \text{Fail} & \text{Pass} \\
-\end{array}
-$$
-
-**The screening is not a judgement; it is a fact check. A concept either meets the mandatory requirement or it does not. The concept that fails any mandatory requirement is eliminated, regardless of how good it is on the other criteria.** The screening is the mechanism by which the "must-have" requirements (see [[design-process/requirements|requirements]]) are enforced, and the enforcement is the reason the screening is done before the scoring.
-
-**The screening matrix is the most important document in the selection process, because it is the document that prevents the team from spending 3 weeks developing a concept that cannot meet the cost target.** The concept that fails the screening is not a bad concept — it is a good concept for a different problem. **Archive it, document the reason for rejection, and move on.**
+::: algorithm Pugh's method of controlled convergence {#alg-pugh}
+1. Agree the criteria from the specification; keep them few (5–10), independent and relevant to discriminating between the concepts.
+2. Choose a datum; draw all concepts to a similar level of detail.
+3. Rate each concept against the datum with +, S, −; discuss disagreements rather than averaging them.
+4. Sum pluses, minuses and net score. Eliminate concepts that are clearly worse; for promising concepts, look at their minuses and ask whether a feature of another concept could remove them, creating **hybrid** concepts.
+5. Change the datum to the strongest concept and repeat, until one or a few concepts remain that cannot be improved further by combination.
 :::
 
-::: definition The Pugh matrix (concept selection matrix) {#def-pugh}
-The **Pugh matrix** (Pugh, 1981) is a relative scoring method that compares each concept against a **datum** (a reference concept, usually the existing product or the simplest concept in the set). The scoring is:
+Stuart Pugh called this *controlled convergence*: the number of concepts alternately shrinks (elimination) and grows (hybrids) while their quality rises. The method is deliberately coarse. Its strength is that it forces the team to compare each concept with a concrete reference on each criterion and to talk about why; its weakness is that every criterion counts equally and the magnitude of a difference is lost.
 
-- **+** (better than the datum)
-- **0** (same as the datum)
-- **−** (worse than the datum)
+::: example Screening can-crusher concepts {#ex-pugh}
+The datum is the team's current product, a simple wall-mounted lever crusher. Four concepts from the morphological chart of [[design-process/concept-generation#ex-morph]] are compared: C1 foot pedal with toggle linkage and gravity magazine; C2 electric motor driving a power screw and platen; C3 electric motor with a pair of rollers and a magazine; C4 hand lever with a toggle linkage (otherwise as the datum). The team's ratings are:
 
-$$
-\begin{array} { l c c c c c }
-\textbf{Criterion} & \textbf{Weight} & \textbf{Datum} & \textbf{Concept A} & \textbf{Concept B} & \textbf{Concept C} \\ \hline
-\text{Structural efficiency} & 5 & 0 & + & + & 0 \\
-\text{Manufacturing cost} & 4 & 0 & - & 0 & + \\
-\text{Assembly time} & 3 & 0 & + & - & + \\
-\text{Weight} & 4 & 0 & 0 & + & - \\
-\text{Reliability} & 5 & 0 & + & 0 & 0 \\
-\text{Maintainability} & 2 & 0 & - & + & 0 \\ \hline
-\text{Positive count} & & & 3 & 2 & 2 \\
-\text{Negative count} & & & 2 & 1 & 1 \\
-\text{Net score} & & & + 1 & + 1 & + 1 \\
-\end{array}
-$$
+| criterion | C1 | C2 | C3 | C4 |
+|---|---|---|---|---|
+| ease of loading | + | S | + | S |
+| user effort | + | + | + | + |
+| pinch safety | S | + | − | S |
+| throughput (cans per minute) | + | S | + | S |
+| manufacturing cost | − | − | − | S |
+| worktop footprint | − | − | S | S |
+| ease of cleaning | S | − | − | S |
 
-**The Pugh matrix does not produce a single winner; it produces a tie. The tie is the point: the Pugh matrix is not a decision tool, it is a discussion tool. The tie says "these three concepts are equally good overall, but they are good in different ways," and the discussion that follows the tie is the mechanism by which the team identifies the trade-off that the customer cares about.**
-
-The **weighted Pugh matrix** multiplies the +/0/− scores by the criterion weights and sums them. The weighted version produces a single ranking, but the ranking is sensitive to the weights, and the sensitivity is the reason the unweighted version is preferred for the first pass.
+Compute the scores and suggest the next step.
+::: solution
+C1: 3 pluses, 2 minuses, net $+1$. C2: 2 pluses, 3 minuses, net $-1$. C3: 3 pluses, 3 minuses, net $0$. C4: 1 plus, 0 minuses, net $+1$.
+C2 is worse than the datum on more criteria than it is better and offers nothing that C1 or C3 does not; it can be dropped. C4 is a safe, small improvement. C1 and C3 offer real gains (loading and throughput) at a cost. Reading the rows: C1's minuses (cost, footprint) come from the separate pedal and frame; C3's from the motor and rollers. A hybrid "C5" — the toggle linkage of C4 with the gravity magazine of C1, still hand-operated — may keep most of C1's gains without the frame. The next round uses C1 as the datum and compares C3, C4 and C5 with it.
+Sanity check: the net scores are close ($-1$ to $+1$), as is typical when the datum is a reasonable product. A concept with a net score of $+5$ in a first round usually means the datum was poorly chosen or the criteria favour one concept.
+:::
 :::
 
-::: definition The weighted-objective decision matrix {#def-weighted-matrix}
-The **weighted-objective decision matrix** (also called the **Pugh matrix with numbers**, or the **multi-attribute utility matrix**) scores each concept on a 1–5 or 1–10 scale for each criterion, multiplies by the criterion weight, and sums:
+## Weighted scoring {#sec-scoring}
 
-$$
-S _ { i } \; = \; \sum _ { j \, = 1 } ^ { m } w _ { j } \, s _ { i j }
-$$
+Once the list is short, the comparison is refined by giving the criteria **weights** and rating each concept on a finer scale.
 
-where $S _ { i }$ is the total score for concept $i$ , $w _ { j }$ is the weight for criterion $j$ , and $s _ { i j }$ is the score for concept $i$ on criterion $j$ .
-
+::: definition Weighted-sum score {#def-weighted}
+With criteria $i = 1,\dots,m$ of weights $w_i \ge 0$, $\sum_i w_i = 1$, and ratings $r_{ij}$ of concept $j$ on criterion $i$ on a common scale (e.g. 1 to 5, or 0 to 1), the **weighted score** of concept $j$ is
 $$
-\begin{array} { l c c c c c }
-\textbf{Criterion} & \textbf{Weight} (w_j) & \textbf{A} (s_{ij}) & \textbf{B} (s_{ij}) & \textbf{C} (s_{ij}) & \textbf{D} (s_{ij}) \\ \hline
-\text{Performance} & 0 . 3 0 & 4 & 5 & 3 & 4 \\
-\text{Cost} & 0 . 2 5 & 3 & 2 & 5 & 4 \\
-\text{Manufacturability} & 0 . 2 0 & 5 & 3 & 4 & 4 \\
-\text{Reliability} & 0 . 1 5 & 4 & 4 & 3 & 5 \\
-\text{Sustainability} & 0 . 1 0 & 2 & 4 & 3 & 3 \\ \hline
-\text{Weighted score} & 1 . 0 0 & 3 . 8 5 & 3 . 5 5 & 3 . 7 0 & 4 . 0 0 \\
-\end{array}
-$$
+S_j = \sum_{i=1}^{m} w_i\,r_{ij}.
+$$ {#eq-weighted}
+:::
 
-**The weighted score for concept A is $0 . 3 0 \times 4 + 0 . 2 5 \times 3 + 0 . 2 0 \times 5 + 0 . 1 5 \times 4 + 0 . 1 0 \times 2 = 1 . 2 0 + 0 . 7 5 + 1 . 0 0 + 0 . 6 0 + 0 . 2 0 = 3 . 7 5$ . Wait — let me recalculate: $1 . 2 0 + 0 . 7 5 + 1 . 0 0 + 0 . 6 0 + 0 . 2 0 = 3 . 7 5$ . The table says 3.85, which is wrong. The correct score is 3.75.** **The weighted-objective matrix is the most common selection tool in engineering, and the most common error is the arithmetic. Always verify the weighted sum with a calculator or a spreadsheet.**
+Ratings may come from judgement against a reference ("3 = same as datum, 5 = much better") or, better, from estimated metric values $x_{ij}$ through a **value function** that maps the metric onto the rating scale. The simplest is linear between the marginal and ideal values of the specification:
+$$
+v_i(x) = \frac{x - x_{i,\text{marg}}}{x_{i,\text{ideal}} - x_{i,\text{marg}}},\qquad \text{clipped to } [0, 1],
+$$ {#eq-value}
+so that a concept that just meets the marginal value scores 0 and one that reaches the ideal value scores 1. The same formula works for "smaller is better" metrics, since then $x_{i,\text{ideal}} < x_{i,\text{marg}}$.
+
+::: proposition What the weighted sum is sensitive to {#prop-scale}
+(a) Replacing *all* ratings by $a\,r_{ij} + b$ with the same $a > 0$ and $b$ for every criterion does not change the ranking of concepts by [[#eq-weighted]].
+(b) Rescaling the ratings of *one* criterion, $r_{kj} \to a_k r_{kj} + b_k$ with $a_k \ne 1$, is equivalent to changing its weight from $w_k$ to $a_k w_k$ (and adding a constant to every score), and can change the ranking.
+:::
+
+::: proof
+(a) $S'_j = \sum_i w_i(a r_{ij} + b) = a S_j + b\sum_i w_i = aS_j + b$; an increasing affine map preserves order. (b) $S'_j = S_j + w_k(a_k - 1)r_{kj} + w_kb_k = \sum_{i\ne k} w_ir_{ij} + (a_kw_k)r_{kj} + w_kb_k$. The constant $w_kb_k$ is the same for all concepts; the factor $a_kw_k$ acts as a new weight on criterion $k$. Because different weights can give different rankings (see [[#prop-breakeven]]), so can rescaling one criterion.
+:::
+
+The practical consequence is that a weight has no meaning on its own: it is the importance of moving from the bottom to the top of *that criterion's scale*. If cost is rated on a range from £20 to £25 and safety on a range from "dangerous" to "intrinsically safe", equal weights do not mean the two matter equally. Weights should be set with the ranges in view — "how much would we value moving cost from £25 to £20 compared with moving mass from 12 kg to 8 kg?" — a practice called **swing weighting** in decision analysis.
+
+::: example A weighted scoring matrix {#ex-weighted}
+After screening, three can-crusher concepts remain: C1 (foot pedal and toggle), C3 (motor and rollers) and C4 (hand lever and toggle). With weights safety $0.30$, user effort $0.25$, cost $0.25$, size $0.20$ and ratings on a 1–5 scale
+
+| criterion (weight) | C1 | C3 | C4 |
+|---|---|---|---|
+| safety (0.30) | 4 | 3 | 4 |
+| user effort (0.25) | 4 | 5 | 2 |
+| cost (0.25) | 3 | 2 | 5 |
+| size (0.20) | 3 | 2 | 4 |
+
+compute the weighted scores.
+::: solution
+By [[#eq-weighted]]:
+$S_{C1} = 0.30\cdot4 + 0.25\cdot4 + 0.25\cdot3 + 0.20\cdot3 = 1.20 + 1.00 + 0.75 + 0.60 = 3.55$.
+$S_{C3} = 0.90 + 1.25 + 0.50 + 0.40 = 3.05$.
+$S_{C4} = 1.20 + 0.50 + 1.25 + 0.80 = 3.75$.
+C4 ranks first, C1 second, C3 third. The margin between C4 and C1 is $0.20$ on a scale whose steps are $1$ — less than the uncertainty in a single rating multiplied by its weight ($0.25\times1 = 0.25$), so the ranking of the top two is fragile and needs the sensitivity check of the next section. Sanity check: all scores lie between the lowest and highest ratings, as weighted averages must.
+:::
+:::
+
+## Sensitivity to the weights {#sec-sensitivity}
+
+Weights are the least certain inputs of a scoring matrix: different people, or the same people on different days, assign different weights. The decision is robust only if the ranking survives plausible changes.
+
+::: proposition Break-even weight {#prop-breakeven}
+Vary the weight $u$ of one criterion $k$ from 0 to 1, scaling the other weights in proportion so that they sum to $1 - u$. Then each score is linear in $u$,
+$$
+S_j(u) = u\,r_{kj} + (1 - u)\,\bar R_j,\qquad \bar R_j = \frac{\sum_{i\ne k} w_i r_{ij}}{\sum_{i\ne k} w_i},
+$$
+and concepts $A$ and $B$ have equal scores at the **break-even weight**
+$$
+u^{*} = \frac{\bar R_A - \bar R_B}{(\bar R_A - \bar R_B) - (r_{kA} - r_{kB})},
+$$ {#eq-breakeven}
+provided $0 \le u^* \le 1$; otherwise one concept is better for every value of $u$.
+:::
+
+::: proof
+With the other weights scaled to $w_i(1 - u)/\sum_{i\ne k}w_i$, the score is $u\,r_{kj} + (1 - u)\bar R_j$, which is linear in $u$. Setting $S_A(u) = S_B(u)$: $u(r_{kA} - r_{kB}) + (1 - u)(\bar R_A - \bar R_B) = 0$, i.e. $u[(r_{kA} - r_{kB}) - (\bar R_A - \bar R_B)] = -(\bar R_A - \bar R_B)$, which rearranges to [[#eq-breakeven]]. Two straight lines cross at most once, so outside the crossing one concept is ahead throughout; if $u^*$ lies outside $[0,1]$ they do not cross on the admissible range.
+:::
+
+::: example How much must user effort matter? {#ex-sensitivity}
+In [[#ex-weighted]], vary the weight $u$ of user effort. Find the weights at which C1 and C3 overtake C4.
+::: solution
+The other weights $(0.30, 0.25, 0.20)$ sum to $0.75$. Averages over safety, cost and size:
+$\bar R_{C1} = (0.30\cdot4 + 0.25\cdot3 + 0.20\cdot3)/0.75 = 2.55/0.75 = 3.400$;
+$\bar R_{C3} = (0.90 + 0.50 + 0.40)/0.75 = 2.400$;
+$\bar R_{C4} = (1.20 + 1.25 + 0.80)/0.75 = 4.333$.
+C1 against C4: $u^* = (3.400 - 4.333)/[(3.400 - 4.333) - (4 - 2)] = (-0.933)/(-2.933) = 0.318$.
+C3 against C4: $u^* = (2.400 - 4.333)/[(2.400 - 4.333) - (5 - 2)] = (-1.933)/(-4.933) = 0.392$.
+So C4 stays first while the weight of user effort is below $0.318$; between $0.318$ and $0.5$ C1 leads (C1 and C3 tie at $u = 0.5$), and above $0.5$ C3 leads. The current weight is $0.25$, only $0.07$ below the first switch. Before committing, the team should check with users how much effort matters — for example by letting a few of them crush a bag of cans with mock-ups of C1 and C4. Check at $u = 0.25$: $S_{C4} = 0.25\cdot2 + 0.75\cdot4.333 = 3.75$ ✓ (as in [[#ex-weighted]]).
+:::
 :::
 
 ::: widget plot
-title: The selection funnel: from 20 concepts to 1
-f: 20/(x+1); 10/(x+1); 5/(x+1)
-x: 0,6
-y: 0,20
-labels: All concepts; After screening; After Pugh; After weighted scoring
-caption: Number of active concepts against selection stage. **The screening eliminates the infeasible (20 → 10), the Pugh matrix eliminates the dominated (10 → 5), the weighted scoring ranks the survivors (5 → 3), and the decision conference selects the winner (3 → 1).** **The funnel is not a single pass: the team iterates between the Pugh matrix and the concept refinement, improving the good concepts and eliminating the bad ones. The iteration is the mechanism by which the concepts improve, and the improvement is the reason the selection takes 3–5 days, not 3–5 hours.**
+f: 4*x + 3.4*(1 - x); 5*x + 2.4*(1 - x); 2*x + (13/3)*(1 - x)
+x: 0, 1
+y: 1.5, 5
+labels: S_{C1}; S_{C3}; S_{C4}
+vlines: 0.25
+points: 0.3182, 3.5909; 0.3919, 3.4189; 0.5, 3.7
+caption: Weighted scores of the three can-crusher concepts as the weight $u$ of user effort (horizontal) varies from 0 to 1, the other weights scaled in proportion. The vertical line is the weight actually used ($0.25$). The marked points are the break-even weights: C1 overtakes C4 at $0.318$, C3 overtakes C4 at $0.392$, and C3 overtakes C1 at $0.5$. Read off how far the weight can move before the decision changes — here not far — and notice that every line is straight, so a sensitivity study needs only the crossings.
 :::
 
-## 2. The Pareto front: making trade-offs visible
+## Dominance and the Pareto front {#sec-pareto}
 
-::: definition The Pareto front and dominated concepts {#def-pareto}
-A concept is **dominated** if there exists another concept that is at least as good in every objective and strictly better in at least one. The **Pareto front** is the set of non-dominated concepts. **A dominated concept should never be selected, because there exists a concept that is better in every way.**
+Some comparisons need no weights at all. If concept A is at least as good as concept B on every criterion and strictly better on one, nobody who prefers more of every good thing should choose B.
 
-$$
-\begin{array} { l c c }
-\textbf{Concept} & \textbf{Mass (kg)} & \textbf{Cost (£)} \\ \hline
-\text{A} & 1 2 & 1 \ 5 0 0 \\
-\text{B} & 1 0 & 1 2 0 0 \\
-\text{C} & 1 5 & 1 8 0 0 \\
-\text{D} & 1 1 & 1 4 0 0 \\
-\text{E} & 1 4 & 1 1 0 0 \\
-\end{array}
-$$
-
-**Concept C (15 kg, £1 800) is dominated by concept A (12 kg, £1 500): A is lighter and cheaper. Concept D (11 kg, £1 400) is dominated by concept B (10 kg, £1 200): B is lighter and cheaper. The Pareto front is {B, E}: B is the lightest, E is the cheapest, and no other concept is better than both in both objectives.**
-
-**The Pareto front is the set of efficient designs: you cannot make the product lighter without making it more expensive, or cheaper without making it heavier. The selection from the Pareto front is a value judgement (the weighting), not a calculation.**
+::: definition Dominance and Pareto optimality {#def-pareto}
+With criteria to be minimised $f_1,\dots,f_m$ (maximised criteria change sign), concept $A$ **dominates** concept $B$ if $f_i(A) \le f_i(B)$ for all $i$ and $f_i(A) < f_i(B)$ for at least one $i$. A concept that is dominated by no other concept is **Pareto-optimal** (non-dominated); the set of their criterion vectors is the **Pareto front**.
 :::
 
-::: definition Multi-objective optimisation and the weighted-sum method {#def-moo}
-The **weighted-sum method** converts a multi-objective problem into a single-objective problem by minimising $Z = \sum w _ { j } \, f _ { j } ( \mathbf { x } )$ , where $f _ { j }$ is the $j$-th objective and $w _ { j }$ is its weight. The method is simple, but it has two limitations:
-
-1. **It cannot find non-convex Pareto points.** If the Pareto front is concave (which is common when the objectives are non-linearly related), the weighted-sum method misses the points in the concave region.
-2. **The weights are not the trade-offs.** The weight $w _ { j }$ is the relative importance of objective $j$ , but the trade-off rate (the marginal rate of substitution between objectives) depends on the shape of the Pareto front, not on the weights.
-
-The **$\varepsilon$-constraint method** avoids the first limitation by minimising one objective subject to the others being below a threshold: minimise $f _ { 1 } ( \mathbf { x } )$ subject to $f _ { 2 } ( \mathbf { x } ) \leq \varepsilon _ { 2 }$ , $f _ { 3 } ( \mathbf { x } ) \leq \varepsilon _ { 3 }$ . By varying $\varepsilon _ { 2 }$ and $\varepsilon _ { 3 }$ , the entire Pareto front is traced, including the non-convex points.
-
-**In practice, the weighted-sum method is sufficient for concept selection, because the Pareto front of 10–20 concepts is discrete and small, and the non-convexity is not an issue. The weighted-sum method becomes inadequate when the design space is continuous and the Pareto front is non-convex, which is the domain of multi-objective evolutionary algorithms (NSGA-II, MOEA/D).**
+::: proposition Weighted sums select Pareto-optimal concepts {#prop-pareto}
+If all weights are strictly positive, every concept that minimises $\sum_i w_i f_i$ over the candidate set is Pareto-optimal.
 :::
 
-::: example Pareto front for a bracket design {#ex-pareto-bracket level=3 check="3"}
-Five bracket concepts have the following mass and cost:
+::: proof
+Suppose $A$ minimises the weighted sum but is dominated by some $B$: $f_i(B) \le f_i(A)$ for all $i$ with strict inequality for at least one $i = k$. Multiplying by $w_i > 0$ and adding gives $\sum_i w_if_i(B) < \sum_i w_if_i(A)$, because the $k$-th term is strictly smaller and no term is larger. This contradicts the minimality of $A$.
+:::
 
-| Concept | Mass (kg) | Cost (£) |
-|---------|-----------|----------|
-| A | 8.0 | 200 |
-| B | 6.0 | 150 |
-| C | 7.5 | 180 |
-| D | 5.0 | 250 |
-| E | 6.5 | 140 |
+The converse is false: a Pareto-optimal concept that lies in a "dent" of the front (where the front is not convex) minimises no weighted sum, however the weights are chosen. Weighted scoring can therefore never recommend such a concept, even though some decision-makers might prefer it. Plotting the candidates in the plane of the two most important criteria is the simplest way to see this.
 
-Which concepts are on the Pareto front?
-
-**Concept C (7.5 kg, £180) is dominated by concept B (6.0 kg, £150): B is lighter and cheaper. Concept A (8.0 kg, £200) is dominated by concept B. The Pareto front is {B, D, E}: B is the best mass-cost compromise, D is the lightest, E is the cheapest.** **Concept E (6.5 kg, £140) is not dominated by B (6.0 kg, £150) because E is cheaper, even though B is lighter. The Pareto front has 3 points, and the selection from the 3 points is a value judgement.**
+::: example Mass against cost for a bracket {#ex-pareto}
+Six concepts for a vehicle bracket have estimated mass and unit cost
+A $(1.2\,\mathrm{kg}, £18)$, B $(0.8\,\mathrm{kg}, £30)$, C $(1.5\,\mathrm{kg}, £15)$, D $(1.3\,\mathrm{kg}, £25)$, E $(0.9\,\mathrm{kg}, £26)$, F $(2.0\,\mathrm{kg}, £14)$.
+(a) Which concepts are dominated? (b) If each kilogram saved is worth $\lambda$ pounds to the customer (in fuel over the vehicle's life), the total is $\text{cost} + \lambda\,m$. Which concept is best for $\lambda = £20/\mathrm{kg}$ and for $\lambda = £50/\mathrm{kg}$, and over what range of $\lambda$ is each concept best?
+::: solution
+(a) D is dominated by A (lighter, $1.2 < 1.3\,\mathrm{kg}$, and cheaper, £18 < £25). No other concept is dominated: going from F to C to A to E to B, mass falls and cost rises. The Pareto front is {F, C, A, E, B}.
+(b) For $\lambda = 20$: totals A $18 + 24 = 42$, B $46$, C $45$, D $51$, E $44$, F $54$; A is best. For $\lambda = 50$: A $78$, B $70$, C $90$, D $90$, E $71$, F $114$; B is best.
+Adjacent front concepts swap at $\lambda = \Delta\text{cost}/\Delta m$: F→C at $1/0.5 = 2$, C→A at $3/0.3 = 10$, A→E at $8/0.3 = 26.7$, E→B at $4/0.1 = 40\,£/\mathrm{kg}$. So F is best below £2/kg, C from 2 to 10, A from 10 to 26.7, E from 26.7 to 40 and B above £40/kg. D is never best for any $\lambda$, as [[#prop-pareto]] requires. Sanity check: the swap values increase along the front, which means the front is convex and every non-dominated concept is selected for some $\lambda$; on a non-convex front some concept would be skipped.
+:::
 :::
 
 ::: widget plot
-title: The Pareto front: mass vs cost for 5 bracket concepts
-f: 200-10*x; 0; 0; 0; 0
-x: 4,9
-y: 100,300
-labels: Pareto front (approx); A (dominated); B; D; E
-caption: Mass versus cost for 5 bracket concepts. **The Pareto front is the lower-left boundary of the point cloud: the concepts that are not dominated by any other concept. Concept A (8 kg, £200) and concept C (7.5 kg, £180) are dominated by concept B (6 kg, £150), which is lighter and cheaper. The Pareto front is {B, D, E}: B is the compromise, D is the lightest (5 kg, £250), E is the cheapest (6.5 kg, £140).** **The selection from the Pareto front is a value judgement: if the customer values mass at £50 per kg saved, concept D wins; if the customer values cost above all, concept E wins; if the customer wants the best compromise, concept B wins.**
+f: K - lam*x
+x: 0.5, 2.2
+y: 0, 40
+sliders: lam=20:0:60:1; K=42:10:120:1
+labels: \text{cost} = K - \lambda m
+points: 1.2,18; 0.8,30; 1.5,15; 1.3,25; 0.9,26; 2.0,14
+caption: The six bracket concepts of [[#ex-pareto]] in the mass (kg, horizontal)–cost (£, vertical) plane, with a line of constant total $\text{cost} + \lambda m = K$. Set $\lambda$ and lower $K$ until the line just touches a point: that concept minimises the total. With $\lambda = 20$ and $K = 42$ the line touches A at $(1.2, 18)$. Increase $\lambda$ and the line steepens, rolling the optimum along the front to E and then B. The point D at $(1.3, 25)$ is never the first point touched — it is dominated by A.
 :::
 
-## 3. The decision conference and the selection record
+## Risk and the value of information {#sec-uncertainty}
 
-::: definition The decision conference: structure and facilitation {#def-decision-conf}
-The **decision conference** is the meeting at which the concept is selected. The structure is:
+Ratings and metric estimates for immature concepts are uncertain, and concepts differ in how uncertain they are: a proven mechanism is predictable, a new working principle may fail outright. Scoring a risky concept by its most likely performance hides this. Decision analysis offers two simple tools.
 
-1. **Presentation** (30 min per concept): each concept is presented by a team member who did not generate it (to reduce the presenter's bias). The presentation covers: the principle, the block diagram, the key parameters, the advantages, the disadvantages, and the top 3 risks.
-2. **Independent scoring** (30 min): each participant scores all concepts against all criteria, without discussion. The independent scoring eliminates the anchoring bias.
-3. **Comparison and discussion** (60 min): the scores are revealed, the disagreements are identified, and the team discusses the disagreements. **The disagreement is the most valuable output of the session, because it reveals the hidden assumption: "I scored concept B low on manufacturability because I assumed it required a five-axis machine, but the team lead says it can be made on a three-axis machine. If that is true, my score is wrong."**
-4. **Re-scoring** (15 min): the team re-scores after the discussion. The re-scoring captures the learning from the discussion.
-5. **Decision** (15 min): the team selects the winner, or the top 2 for a second round of concept refinement. **The decision is recorded: the criteria, the weights, the scores, the winner, the runner-up, and the reason for the selection.**
-
-**The facilitator is not the decision-maker. The facilitator's job is to enforce the process, not to influence the outcome. The facilitator who says "I think concept B is better" has destroyed the independence of the scoring, and the scoring is the only defence against the loudest voice in the room.**
+::: definition Expected value and value of information {#def-evpi}
+If a decision leads to outcomes $k$ with probabilities $p_k$ and values $V_k$ (profit, cost, a score), its **expected value** is $\mathrm{EV} = \sum_k p_kV_k$. The **expected value of perfect information** (EVPI) about an uncertain quantity is the expected value of deciding *after* learning the quantity, minus the best expected value of deciding *before*; it is never negative and is an upper limit on what a test or prototype that reveals the quantity is worth.
 :::
 
-::: example Screening and Pugh for a drone landing gear {#ex-drone-gear level=3 check="5"}
-A drone landing gear has 4 candidate concepts and 5 mandatory requirements. The screening matrix is:
-
-| Mandatory requirement | A (Fixed skid) | B (Retractable) | C (Tail dragger) | D (Tricycle) |
-|----------------------|----------------|-----------------|------------------|-------------|
-| Ground clearance > 200 mm | Pass | Pass | Fail | Pass |
-| Stowage envelope < 0.5 m³ | Fail | Pass | Pass | Pass |
-| Landing load 500 kg | Pass | Pass | Pass | Pass |
-| Cost < £800 | Pass | Fail | Pass | Pass |
-| No maintenance for 500 h | Pass | Fail | Pass | Pass |
-
-**Concepts A, B, and C each fail at least one mandatory requirement. Only concept D (tricycle) passes all 5. The screening eliminates 3 of 4 concepts, and the Pugh matrix is applied to the remaining concept and the datum (the existing fixed skid).** **The Pugh matrix for D vs the datum gives: D is better on ground clearance (+), packaging (0), and maintainability (+), and worse on cost (−) and weight (−). Net score: +1. The decision is to proceed with concept D, with a cost-reduction action on the landing-gear actuator.**
-:::
-
-::: definition The selection record and the decision rationale {#def-selection-record}
-The **selection record** is the document that captures the concept selection decision. It contains:
-
-1. **Date, participants, and facilitator**
-2. **Criteria and weights** (with the rationale for the weights)
-3. **Screening results** (which concepts were eliminated and why)
-4. **Pugh matrix** (the unweighted comparison)
-5. **Weighted-objective matrix** (the weighted ranking)
-6. **Pareto front** (the mass-cost or performance-cost plot)
-7. **Sensitivity analysis** (how the ranking changes with the weights)
-8. **Decision**: the selected concept, the runner-up, and the reason
-9. **Open risks**: the top 3 risks of the selected concept, with the mitigation plan
-10. **Approval signatures**: the design lead, the engineering manager, the customer representative
-
-**The selection record is the defence against the "why did we choose this?" question that will be asked 6 months later by the person who was not in the room. The record is not a form; it is the institutional memory of the design team, and the institutional memory is the reason the next project is better than this one.**
-:::
-
-::: example Pugh matrix for a window-lift mechanism {#ex-pugh-window level=3 check="7"}
-Three window-lift concepts are compared against the datum (the existing scissor mechanism):
-
-| Criterion | Weight | Datum | A (Cable drive) | B (Rack-pinion) | C (Scissor + spring) |
-|-----------|--------|-------|-----------------|-----------------|---------------------|
-| Cost | 5 | 0 | + | − | 0 |
-| Mass | 4 | 0 | + | 0 | − |
-| Packaging | 4 | 0 | + | − | 0 |
-| Reliability | 5 | 0 | 0 | + | − |
-| NVH | 3 | 0 | − | + | 0 |
-| Assembly | 2 | 0 | + | 0 | + |
-
-Count the positives and negatives for each concept.
-
-**Concept A: +4, 0−, 1− → net +3. Concept B: +2, 0−, 2− → net 0. Concept C: +1, 0−, 2− → net −1.** **Concept A (cable drive) wins on the unweighted Pugh matrix: it is better than the datum on cost, mass, packaging, and assembly, and worse only on NVH. The NVH concern is the top risk, and the mitigation is a nylon-coated cable and a tensioner with a damping feature.**
-:::
-
-## 4. Sensitivity analysis and robustness
-
-::: definition Weight sensitivity analysis {#def-sensitivity}
-The **weight sensitivity analysis** tests whether the concept ranking changes when the criterion weights are varied. The method is:
-
-1. Select the baseline weights $( w _ { 1 } , w _ { 2 } , \ldots , w _ { m } )$ .
-2. For each criterion $j$ , vary $w _ { j }$ by ± 10 % (renormalising the other weights to sum to 1).
-3. Re-compute the weighted scores and check whether the ranking changes.
-4. If the ranking changes, the decision is **not robust** to that weight, and the team should discuss the trade-off explicitly.
-
-$$
-\begin{array} { l c c c c }
-\textbf{Weight scenario} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{Winner} \\ \hline
-\text{Baseline} & 3 . 7 5 & 3 . 5 5 & 3 . 7 0 & \text{A} \\
-\text{Cost weight } + 1 0 \ \% & 3 . 6 8 & 3 . 6 2 & 3 . 8 0 & \text{C} \\
-\text{Performance weight } + 1 0 \ \% & 3 . 8 2 & 3 . 6 0 & 3 . 6 5 & \text{A} \\
-\text{Reliability weight } + 1 0 \ \% & 3 . 7 8 & 3 . 5 8 & 3 . 6 8 & \text{A} \\
-\end{array}
-$$
-
-**The ranking changes when the cost weight increases by 10 %: concept C becomes the winner. The decision is not robust to the cost weight, and the team should discuss the cost-performance trade-off explicitly. The discussion is the mechanism by which the team agrees on the weighting, and the agreement is the reason the decision is defensible.**
-:::
-
-::: definition Risk-weighted selection {#def-risk-weighted}
-The **risk-weighted selection** incorporates the technical risk into the scoring by multiplying the score by a risk factor:
-
-$$
-S _ { i } ^ { \prime } \; = \; S _ { i } \times ( 1 - R _ { i } )
-$$
-
-where $R _ { i }$ is the risk factor for concept $i$ (0 = no risk, 1 = certain failure). The risk factor is estimated from the DFMEA (see [[design-process/reliability-risk|reliability and risk]]) or from a simple risk matrix:
-
-$$
-\begin{array} { l c c }
-\textbf{Risk level} & \textbf{Risk factor} (R_i) & \textbf{Description} \\ \hline
-\text{Low} & 0 . 1 & \text{Proven technology, no new development} \\
-\text{Medium} & 0 . 3 & \text{New application of proven technology} \\
-\text{High} & 0 . 5 & \text{New technology, no prior experience} \\
-\text{Very high} & 0 . 7 & \text{Unproven technology, no prior experience, no test data} \\
-\end{array}
-$$
-
-**The risk-weighted selection penalises the novel concept and rewards the proven one. The penalty is the cost of the risk: the novel concept that scores 4.5 but has a 50 % risk of failure is worth 2.25, which is less than the proven concept that scores 3.5 with a 10 % risk (3.15). The risk-weighted selection is the mechanism by which the team balances the upside of the novel concept against the downside of the risk.**
-:::
-
-::: example Sensitivity analysis for the bracket selection {#ex-sensitivity level=3 check="2"}
-The bracket selection has three concepts and three criteria:
-
-| Criterion | Weight | A | B | C |
-|-----------|--------|---|---|---|
-| Mass | 0.4 | 3 | 5 | 4 |
-| Cost | 0.4 | 5 | 3 | 4 |
-| Manufacturability | 0.2 | 4 | 4 | 5 |
-
-Baseline scores: A = 4.0, B = 4.0, C = 4.2. If the mass weight increases from 0.4 to 0.5 (and cost decreases to 0.3), does the winner change?
-
+::: example Prototype before committing? {#ex-evpi}
+A team must choose between concept X, a proven design with an expected programme value of £2.0 M, and concept Y, which uses a new sealing principle. If the seal works (probability $0.6$) Y is worth £3.5 M; if it fails late in development the team must fall back to X with delay, and the programme is worth only £0.5 M. A prototype that would reveal whether the seal works costs £0.2 M and fits in the schedule. What should the team do?
 ::: solution
-New weights: mass 0.5, cost 0.3, manufacturability 0.2.
-
-$$
-S _ { \text{A} } \; = \; 0 . 5 \times 3 + 0 . 3 \times 5 + 0 . 2 \times 4 \; = \; 1 . 5 + 1 . 5 + 0 . 8 \; = \; 3 . 8
-$$
-
-$$
-S _ { \text{B} } \; = \; 0 . 5 \times 5 + 0 . 3 \times 3 + 0 . 2 \times 4 \; = \; 2 . 5 + 0 . 9 + 0 . 8 \; = \; 4 . 2
-$$
-
-$$
-S _ { \text{C} } \; = \; 0 . 5 \times 4 + 0 . 3 \times 4 + 0 . 2 \times 5 \; = \; 2 . 0 + 1 . 2 + 1 . 0 \; = \; { \bf 4 . 2 }
-$$
-
-**The winner changes: at the baseline weights, C wins (4.2 vs 4.0 for A and B). At the new weights, B and C tie (4.2). The decision is sensitive to the mass-cost trade-off, and the team should discuss whether mass or cost is more important before committing.**
+Without a test: $\mathrm{EV}(X) = 2.0$; $\mathrm{EV}(Y) = 0.6\times3.5 + 0.4\times0.5 = 2.1 + 0.2 = 2.3\,$M. Y has the higher expected value, but there is a $40\,\%$ chance of ending with £0.5 M instead of a certain £2.0 M.
+With perfect information first: if the seal works choose Y (3.5); if not, choose X before committing (2.0). $\mathrm{EV} = 0.6\times3.5 + 0.4\times2.0 = 2.9\,$M. EVPI $= 2.9 - 2.3 = 0.6\,$M.
+The prototype costs £0.2 M, less than the £0.6 M it can be worth; net expected value of testing first $2.9 - 0.2 = 2.7\,$M $> 2.3$. Build the prototype, then decide. This is the quantitative form of the general advice to test the riskiest feature of a concept first. Sanity check: EVPI ($0.6$) equals the probability of failure ($0.4$) times the loss it avoids ($2.0 - 0.5 = 1.5$), as it should when the information only changes the decision in the failure case.
 :::
 :::
 
-::: exercise Pugh matrix scoring {#ex-pugh-score level=3 check="4"}
-Four concepts are compared against a datum on 5 criteria. The scores are:
+::: warning Precision is not accuracy
+A scoring matrix that reports $S = 3.547$ against $3.512$ looks decisive and is not. Ratings on a 1–5 scale are judgements uncertain by at least $\pm 1$; weights are uncertain by several hundredths. Before trusting a ranking, (i) check whether the winner is dominated or close to being dominated, (ii) vary each important weight to its break-even value ([[#prop-breakeven]]), (iii) vary the most uncertain ratings by one step, and (iv) ask what *information* would change the decision. If the ranking is fragile, the right output of the selection meeting is not a winner but a test plan.
+:::
 
-| Criterion | Datum | A | B | C | D |
-|-----------|-------|---|---|---|---|
-| Strength | 0 | + | + | 0 | − |
-| Cost | 0 | − | 0 | + | + |
-| Weight | 0 | + | 0 | 0 | + |
-| Assembly | 0 | 0 | + | + | 0 |
-| Reliability | 0 | + | + | 0 | 0 |
+## Early modelling to discriminate between concepts {#sec-modelling}
 
-Count the net score (+1 per +, −1 per −) for each concept.
+The most uncertain ratings are often the ones that a simple physical model could settle: will the concept be light enough, stiff enough, fast enough? A few lines of mechanics at the concept stage are worth more than a refined scoring matrix. The aim is a model that captures the scaling — how the attribute depends on the concept's free choices — not a detailed design.
 
+::: proposition Mass of a stiffness-limited beam {#prop-index}
+A cantilever of given length $L$ must carry a tip load $F$ with tip deflection at most $\delta$. (a) If its cross-section is a solid square whose side $b$ is free, the minimum mass is proportional to $\rho/E^{1/2}$. (b) If it is a thin-walled tube of fixed mean diameter whose wall thickness $t$ is free, the minimum mass is proportional to $\rho/E$. Here $\rho$ is the density and $E$ the Young's modulus of the material.
+:::
+
+::: proof
+The tip deflection of a cantilever is $\delta = FL^3/(3EI)$ ([[mechanics-of-materials]]), so the stiffness requirement is $I \ge FL^3/(3E\delta)$. (a) For a solid square, $I = b^4/12$ and the mass is $m = \rho L b^2 = \rho L\sqrt{12 I}$. At the minimum $I$, $m = \rho L\sqrt{12FL^3/(3E\delta)} = 2L^{5/2}\sqrt{F/\delta}\,\rho/E^{1/2}$. (b) For a thin tube of mean radius $r$, $I \approx \pi r^3t$ and $m \approx 2\pi r t L\rho = 2LI\rho/r^2$; at the minimum $I$, $m = 2FL^4\rho/(3E\delta r^2)$, proportional to $\rho/E$. The proportionality constants depend only on the loading and geometry, which are the same for all materials. The assumptions are linear elasticity, slender-beam theory, a stiffness rather than strength limit, and (for the tube) a wall thin enough not to buckle locally.
+:::
+
+::: example Steel or aluminium? It depends on the concept {#ex-index}
+For a stiffness-limited arm, compare steel ($E = 210\,\mathrm{GPa}$, $\rho = 7850\,\mathrm{kg/m^3}$) and aluminium alloy ($E = 70\,\mathrm{GPa}$, $\rho = 2700\,\mathrm{kg/m^3}$; typical handbook values) for the two concepts of [[#prop-index]].
 ::: solution
-**Concept A: +3, −1, 0 → net +2. Concept B: +3, 0−, 0− → net +3. Concept C: +2, 0−, 0− → net +2. Concept D: +2, −1, 0− → net +1.** **Concept B wins with a net score of +3. The Pugh matrix says B is better than the datum on strength, cost, assembly, and reliability, and the same on weight. The next step is the weighted-objective matrix, which weights the criteria by importance.**
+(a) Solid square of free size: $m_{\text{Al}}/m_{\text{steel}} = (2700/\sqrt{70})/(7850/\sqrt{210}) = 322.7/541.7 = 0.596$. Aluminium saves about $40\,\%$ of the mass.
+(b) Tube of fixed diameter: $m_{\text{Al}}/m_{\text{steel}} = (2700/70)/(7850/210) = 38.57/37.38 = 1.03$. The two materials give practically the same mass.
+The concept decides the comparison. When the section can grow, a light, less stiff material wins because bending stiffness rises faster with size ($I \propto b^4$) than mass ($\propto b^2$); when the outer shape is fixed by packaging, only the wall thickness can change, $I$ and $m$ both grow linearly with $t$, and the specific modulus $E/\rho$ — almost the same for steel and aluminium — is all that matters. Ashby's material indices generalise this reasoning ([[materials-science]]). Sanity check: the ratios are dimensionless, and in (b) the result reflects the well-known near-equality of $E/\rho$ for most structural metals ($\approx 26\,\mathrm{MJ/kg}$ for both).
 :::
 :::
 
-::: exercise Pareto front identification {#ex-pareto-identify level=3 check="3"}
-Six concepts have the following performance and cost:
+## Pitfalls of aggregation {#sec-pitfalls}
 
-| Concept | Performance (score) | Cost (£) |
-|---------|-------------------|----------|
-| A | 8 | 500 |
-| B | 6 | 300 |
-| C | 7 | 450 |
-| D | 9 | 700 |
-| E | 5 | 250 |
-| F | 7 | 350 |
+Scoring methods combine many judgements into one number, and some ways of combining are unsound. Three problems are worth knowing.
 
-Which concepts are on the Pareto front (maximise performance, minimise cost)?
+**Voting cycles.** If a team ranks concepts by majority vote between pairs, the group's preferences can be cyclic even though every member's are consistent. Three engineers rank three concepts as $A \succ B \succ C$, $B \succ C \succ A$ and $C \succ A \succ B$. A majority (the first and third) prefers A to B, a majority (first and second) prefers B to C, and a majority (second and third) prefers C to A. The outcome depends on the order in which pairs are put to the vote. Kenneth Arrow's impossibility theorem (1951) shows that no method of aggregating individual rankings of three or more alternatives satisfies a small set of reasonable conditions in all cases. George Hazelrigg argued in 1996 that this undermines multi-criteria scoring methods in engineering design; others have replied that aggregating criteria for a single decision-maker is not the same as aggregating voters. The practical lesson is uncontroversial: do not decide by repeated pairwise votes, and keep the decision's basis (weights, ratings and their sources) explicit.
 
+**Double counting.** Criteria that measure the same thing — "low mass" and "easy to carry", or "few parts" and "low assembly cost" — give that attribute two weights. Check the criteria for overlap before weighting them.
+
+**Scores without anchors.** A rating of "4" means nothing unless the scale is anchored ("3 = same as datum", or a metric value through [[#eq-value]]). Unanchored ratings drift towards the middle and toward whatever the rater already prefers.
+
+::: quiz
+Concept P beats concept Q on cost and on safety, and ties on every other criterion. A colleague proposes adjusting the weights to see whether Q could still win. What is the right response?
+- [ ] Do the sensitivity study; with suitable weights Q might win.
+- [x] It is unnecessary: P dominates Q, so Q cannot win for any positive weights.
+- [ ] Switch to a Pugh matrix, which handles ties better.
+- [ ] Give the tied criteria zero weight and recompute.
 ::: solution
-**Concept C (7, £450) is dominated by concept F (7, £350): same performance, lower cost. Concept A (8, £500) is not dominated by F (7, £350) because A has higher performance. Concept D (9, £700) is not dominated by A because D has higher performance.** **The Pareto front is {E, F, A, D}: E is the cheapest, D is the best-performing, and F and A are the intermediate compromises. The Pareto front has 4 points, and the selection from the 4 points is a value judgement.**
+P is at least as good as Q on every criterion and strictly better on two, so it dominates Q. By the argument of [[#prop-pareto]], P scores higher than Q for any strictly positive weights (and at least as high for non-negative weights). Q can be removed from the comparison — unless some criterion has been left out, which is worth asking about.
 :::
 :::
 
-::: exercise Weighted scoring {#ex-weighted-score level=3 check="8"}
-A concept has the following scores and weights:
+::: history
+Stuart Pugh, an engineer who became professor of engineering design at the University of Strathclyde, presented his concept-selection method in the paper "Concept selection: a method that works" (1981) and in his book *Total Design* (1991). Kenneth Arrow's *Social Choice and Individual Values* (1951) proved the impossibility theorem; George Hazelrigg's 1996 paper in the ASME *Journal of Mechanical Design* on its implications for engineering design, and his 1998 "framework for decision-based engineering design", started a long debate about the foundations of scoring methods in design. The idea of the Pareto optimum comes from the economist Vilfredo Pareto's work around 1900, and the analysis of material choice by performance indices was systematised by Michael Ashby in *Materials Selection in Mechanical Design* (first edition 1992).
+:::
 
-| Criterion | Weight | Score (1-10) |
-|-----------|--------|-------------|
-| Performance | 0.35 | 7 |
-| Cost | 0.25 | 6 |
-| Manufacturability | 0.20 | 8 |
-| Reliability | 0.15 | 9 |
-| Sustainability | 0.05 | 5 |
+::: summary
+- Screen many concepts with a Pugh matrix (+, S, − against a datum); eliminate, hybridise to remove weaknesses, change the datum, repeat.
+- Score a short list with $S_j = \sum_i w_i r_{ij}$; anchor the ratings, preferably through value functions from marginal to ideal metric values.
+- A weight is the importance of the full range of its criterion's scale: rescaling one criterion is the same as changing its weight.
+- Scores are linear in any one weight; the break-even weight $u^*$ tells how far a weight can move before the ranking changes.
+- Dominated concepts can be dropped without any weights; a positive-weight weighted sum always selects a Pareto-optimal concept, but not every Pareto-optimal concept can be selected that way.
+- For risky concepts use expected values and the value of information; a test whose cost is below the EVPI is usually worth doing first.
+- Simple physical models (such as $m \propto \rho/E^{1/2}$ or $\rho/E$ for stiffness-limited beams) often discriminate better than refined scores, and the result depends on the concept's free variables.
+- Avoid pairwise voting, double counting and unanchored scales; report a ranking together with its sensitivity.
+:::
 
-Calculate the weighted score.
+## Exercises
 
+::: exercise Pugh net score {#exr-pugh level=1 check="2"}
+Against the datum, a concept is rated $+, +, -, S, -, +, S, +$ on eight criteria. What is its net score? (Enter the number.)
 ::: solution
-$$
-S \; = \; 0 . 3 5 \times 7 + 0 . 2 5 \times 6 + 0 . 2 0 \times 8 + 0 . 1 5 \times 9 + 0 . 0 5 \times 5
-$$
-
-$$
-S \; = \; 2 . 4 5 + 1 . 5 0 + 1 . 6 0 + 1 . 3 5 + 0 . 2 5 \; = \; { \bf 7 . 1 5 }
-$$
-
-**The weighted score is 7.15 out of 10. The score is dominated by performance (2.45 of 7.15 = 34 %), which is expected because performance has the highest weight (0.35) and the highest score (7). The sustainability score (5) is the weakest, and the sustainability weight (0.05) is the lowest, so the contribution is small (0.25). If the sustainability weight were increased to 0.15 (at the expense of performance), the score would drop to 6.95, and the ranking might change.**
+Four pluses, two minuses: net $4 - 2 = +2$.
 :::
 :::
 
-::: exercise Risk-weighted selection {#ex-risk-weighted2 level=3 check="3"}
-Two concepts have the following scores and risks:
-
-| Concept | Weighted score | Risk factor |
-|---------|---------------|-------------|
-| A (proven) | 3.5 | 0.1 |
-| B (novel) | 4.5 | 0.5 |
-
-Calculate the risk-weighted scores and determine the winner.
-
+::: exercise A weighted score {#exr-weighted level=1 check="3.45"}
+A concept is rated 3, 5 and 2 on three criteria with weights $0.40$, $0.35$ and $0.25$. What is its weighted score? (Enter $S$.)
 ::: solution
-$$
-S _ { \text{A } } ^ { \prime } \; = \; 3 . 5 \times ( 1 - 0 . 1 ) \; = \; 3 . 5 \times 0 . 9 \; = \; { \bf 3 . 1 5 }
-$$
-
-$$
-S _ { \text{B } } ^ { \prime } \; = \; 4 . 5 \times ( 1 - 0 . 5 ) \; = \; 4 . 5 \times 0 . 5 \; = \; { \bf 2 . 2 5 }
-$$
-
-**Concept A wins on the risk-weighted score (3.15 vs 2.25), even though concept B has a higher raw score (4.5 vs 3.5). The risk penalty (50 % for the novel concept) outweighs the performance advantage (29 % higher raw score). The risk-weighted selection is the mechanism by which the team balances the upside of the novel concept against the downside of the risk, and the balance is the reason the novel concept does not always win.**
+$0.40\times3 + 0.35\times5 + 0.25\times2 = 1.20 + 1.75 + 0.50 = 3.45$.
 :::
 :::
 
-::: exercise Screening matrix {#ex-screening-matrix level=2 check="2"}
-A screening matrix has 5 mandatory requirements and 8 concepts. Concept A fails 1 requirement, concept B fails 0, concept C fails 2, concept D fails 0, concept E fails 1, concept F fails 0, concept G fails 3, concept H fails 1. How many concepts pass the screening?
-
+::: exercise Counting the Pareto front {#exr-pareto level=1 check="4"}
+Six concepts have (mass in kg, cost in £): P $(3, 40)$, Q $(2.5, 55)$, R $(4, 35)$, S $(3.5, 45)$, T $(2, 70)$, U $(3, 50)$; both are to be minimised. How many concepts are non-dominated? (Enter the number.)
 ::: solution
-**Concepts B, D, and F pass the screening (0 failures). Concepts A, E, and H fail 1 requirement each; concept C fails 2; concept G fails 3. The screening eliminates 5 of 8 concepts (63 %), and the remaining 3 proceed to the Pugh matrix.** **The screening is the most efficient selection tool: it eliminates the most concepts in the least time, and the elimination is based on facts (pass/fail), not judgements (good/bad).**
+S is dominated by P ($3 < 3.5$, $40 < 45$); U is dominated by P (equal mass, $40 < 50$). P, Q, R and T are not dominated: ordered by mass T $(2, 70)$, Q $(2.5, 55)$, P $(3, 40)$, R $(4, 35)$, cost falls as mass rises. Four concepts.
 :::
 :::
 
-::: exercise Decision conference structure {#ex-decision-conf level=2 check="3"}
-A decision conference has 6 participants, 4 concepts, and 6 criteria. The presentation is 20 min per concept, the independent scoring is 30 min, the discussion is 60 min, and the re-scoring is 15 min. How long is the conference, and how many person-hours does it consume?
-
+::: exercise A break-even weight {#exr-breakeven level=2 check="0.4"}
+Concept A rates 5 on criterion $k$ and has an average of $\bar R_A = 2$ over the other criteria; concept B rates 2 on $k$ and has $\bar R_B = 4$. Above what weight $u$ of criterion $k$ does A score higher? (Enter $u$.)
 ::: solution
-$$
-\text{Duration } \; = \; 4 \times 2 0 + 3 0 + 6 0 + 1 5 \; = \; 8 0 + 3 0 + 6 0 + 1 5 \; = \; { \bf 1 8 5 } \ \text{minutes} \approx 3 \ \text{hours}
-$$
-
-$$
-\text{Person-hours } \; = \; 6 \times 3 . 0 8 \; = \; { \bf 1 8 . 5 } \ \text{person-hours}
-$$
-
-**18.5 person-hours at £60/hour = £1 110. The decision conference costs £1 110 and selects the concept that determines the cost, the performance, and the schedule of the entire project. The return on investment is the difference between the best concept and the second-best concept, which is typically 10–30 % of the project cost. For a £500 000 project, the return is £50 000–£150 000, and the ROI is 45:1 to 135:1.**
+By [[#eq-breakeven]], $u^* = (2 - 4)/[(2 - 4) - (5 - 2)] = (-2)/(-5) = 0.4$. Check: at $u = 0.4$, $S_A = 0.4\times5 + 0.6\times2 = 3.2$ and $S_B = 0.4\times2 + 0.6\times4 = 3.2$ ✓; for $u > 0.4$ A, with the larger rating on $k$, is ahead.
 :::
 :::
 
-::: exercise Derivation: the weighted-sum method and the Pareto front {#ex-derive-weighted-sum level=4 check="5"}
-Show that the weighted-sum method $\min \sum w _ { j } f _ { j } ( \mathbf { x } )$ finds a Pareto-optimal point for any set of positive weights, and that it cannot find a Pareto point in a concave region of the Pareto front.
-
+::: exercise A value function {#exr-value level=2 check="0.625"}
+The specification gives a marginal mass of $12\,\mathrm{kg}$ and an ideal mass of $8\,\mathrm{kg}$. A concept is estimated at $9.5\,\mathrm{kg}$. What is its rating on the linear value function [[#eq-value]]? (Enter $v$ between 0 and 1.)
 ::: solution
-**Part 1: The weighted-sum finds a Pareto point.** Suppose $\mathbf { x } ^ { * }$ minimises $Z = \sum w _ { j } f _ { j } ( \mathbf { x } )$ with $w _ { j } > 0$ . If $\mathbf { x } ^ { * }$ were dominated, there would exist $\mathbf { x } ^ { \prime }$ with $f _ { j } ( \mathbf { x } ^ { \prime } ) \leq f _ { j } ( \mathbf { x } ^ { * } )$ for all $j$ and $f _ { k } ( \mathbf { x } ^ { \prime } ) < f _ { k } ( \mathbf { x } ^ { * } )$ for some $k$ . Then $Z ( \mathbf { x } ^ { \prime } ) < Z ( \mathbf { x } ^ { * } )$ , contradicting the optimality of $\mathbf { x } ^ { * }$ . $\square$
-
-**Part 2: The weighted-sum cannot find a concave Pareto point.** Consider a Pareto front with three points: A = (0, 10), B = (5, 5), C = (10, 0). The Pareto front is the line from A to C, and B is on the line. The weighted-sum $Z = w _ { 1 } f _ { 1 } + w _ { 2 } f _ { 2 }$ is minimised at A if $w _ { 1 } / w _ { 2 } < 1$ , at C if $w _ { 1 } / w _ { 2 } > 1$ , and at any point on the line if $w _ { 1 } / w _ { 2 } = 1$ . **If the Pareto front is concave (B is above the line from A to C), B is never the minimum of the weighted-sum for any positive weights, because the weighted-sum's iso-cost line is a straight line, and a straight line cannot be tangent to a concave curve at an interior point.** $\blacksquare$
+$v = (9.5 - 12)/(8 - 12) = (-2.5)/(-4) = 0.625$.
 :::
 :::
 
-::: exercise Derivation: the Pugh matrix as a sign test {#ex-derive-pugh level=4 check="6"}
-Show that the unweighted Pugh matrix net score is equivalent to the sign test (a non-parametric statistical test) applied to the differences between each concept and the datum, and that the sign test is distribution-free.
-
+::: exercise Is the test worth it? {#exr-evpi level=2 check="0.4"}
+Concept X is worth a certain £1.0 M. Concept Y is worth £2.4 M if a new mechanism works (probability $0.5$) and £0.2 M if it fails late. What is the expected value of perfect information about the mechanism? Would a £0.3 M test be worth doing? (Enter the EVPI in £M.)
 ::: solution
-The Pugh matrix assigns $+ 1$ if concept $i$ is better than the datum on criterion $j$ , $- 1$ if worse, and 0 if the same. The net score is:
-
-$$
-S _ { i } \; = \; \sum _ { j \, = 1 } ^ { m } \operatorname { s g n } ( s _ { i j } - s _ { \text{datum } , j } )
-$$
-
-This is the **sign test statistic**: the number of positive differences minus the number of negative differences. The sign test is distribution-free because it uses only the sign of the difference, not its magnitude, and the sign is invariant to any monotonic transformation of the scores. **The sign test is the most robust statistical test available: it makes no assumption about the distribution of the data, and it is the reason the Pugh matrix works even when the scores are ordinal (1–5) rather than cardinal.** $\blacksquare$
+Without information: $\mathrm{EV}(Y) = 0.5\times2.4 + 0.5\times0.2 = 1.3 > 1.0$, so choose Y with $\mathrm{EV} = 1.3$. With perfect information: $0.5\times2.4 + 0.5\times1.0 = 1.7$. EVPI $= 1.7 - 1.3 = 0.4\,$M. A test costing £0.3 M is worth doing if it is close to conclusive: net $1.7 - 0.3 = 1.4 > 1.3$. Check: EVPI $= 0.5\times(1.0 - 0.2) = 0.4$ ✓.
 :::
 :::
 
-::: quiz Concept selection {#quiz-selection}
-In the Pugh matrix, what is the role of the datum?
-
-- [ ] It is the best concept, and the other concepts are compared against it
-- [x] It is a reference concept, and the other concepts are scored as better, same, or worse relative to it
-- [ ] It is the customer's preferred concept, and the other concepts are alternatives
-- [ ] It is the first concept generated, and the other concepts are improvements
-
+::: exercise Tube or solid section? {#exr-index level=3 check="0.41"}
+A stiffness-limited cantilever arm may be made of steel or of carbon-fibre-reinforced polymer with $E = 100\,\mathrm{GPa}$ and $\rho = 1550\,\mathrm{kg/m^3}$ along the arm (treat both as isotropic beams). (a) For a thin-walled tube of fixed diameter, what is the mass ratio $m_{\text{CFRP}}/m_{\text{steel}}$, rounded to two decimal places? (b) Is the advantage of CFRP larger or smaller if the section is a solid square of free size? (c) Derive the index for a third concept: a rectangular section of fixed width $b$ and free depth $h$. (Enter the ratio of (a).)
 ::: solution
-**The datum is a reference concept, and the other concepts are scored as better (+), same (0), or worse (−) relative to it.** The datum is usually the existing product, the simplest concept, or the reference design. The datum is not the best concept; it is the anchor that makes the comparison meaningful. Without the datum, the scoring is unanchored and the comparison is unreliable.
+(a) $\rho/E$: steel $7850/210 = 37.38$; CFRP $1550/100 = 15.50$ (in $\mathrm{kg\,m^{-3}\,GPa^{-1}}$). Ratio $15.50/37.38 = 0.4147$, i.e. $0.41$.
+(b) $\rho/E^{1/2}$: steel $7850/\sqrt{210} = 541.7$; CFRP $1550/\sqrt{100} = 155.0$; ratio $0.286$. The advantage is larger (a $71\,\%$ saving instead of $59\,\%$) because the less stiff material can also use a bigger section.
+(c) $I = bh^3/12 \ge FL^3/(3E\delta)$ gives $h \propto E^{-1/3}$, and $m = \rho Lbh \propto \rho/E^{1/3}$. The more freedom the concept has to grow the section, the smaller the exponent on $E$ and the more low-density materials are favoured.
 :::
 :::
 
-::: quiz Pareto front {#quiz-pareto}
-A concept is on the Pareto front if:
-
-- [ ] It has the highest weighted score
-- [x] No other concept is better in every objective and at least as good in all others
-- [ ] It is the cheapest concept
-- [ ] It is the concept that the customer prefers
-
+::: exercise Choosing a concept for the stair-climbing trolley {#exr-design level=3}
+Take the three concepts from the last exercise of [[design-process/concept-generation]] (or three of your own for a product of your choice). (a) Screen them with a Pugh matrix against a datum (a conventional sack truck). (b) Build a weighted scoring matrix with at least five criteria, anchored ratings and justified weights. (c) Find the break-even weight of the criterion you are least sure about. (d) Identify the single most uncertain rating, propose a model or a test that would settle it, and say whether its cost is justified.
 ::: solution
-**No other concept is better in every objective and at least as good in all others.** The Pareto front is the set of non-dominated concepts: for each concept on the front, improving one objective requires worsening another. The concept with the highest weighted score may or may not be on the Pareto front, depending on the weights. The cheapest concept is on the Pareto front only if no other concept is both cheaper and better in every other objective.
+Answers will differ; a good one has these features. (a) The datum is concrete and drawn at the same level of detail; each + or − is explained in a sentence; hybrids are proposed where a concept's minus could be removed by borrowing a feature. (b) Criteria come from the specification and do not overlap (e.g. hand force on stairs, mass, safety against run-away, cost, folded size); the run-away requirement is treated as a pass/fail constraint, not a weighted criterion; ratings are anchored to metric estimates through value functions (e.g. hand force: marginal $150\,\mathrm N$, ideal $80\,\mathrm N$). (c) The break-even calculation uses [[#eq-breakeven]] and states whether the decision is robust. (d) Typically the most uncertain rating is the hand force of a manual tri-star concept; a quick estimate (moment of the load about the step edge, divided by the handle lever arm) followed by a wooden mock-up on a real staircase costs a few hours and can change the decision, so its value of information is high.
 :::
-:::
-
-## Where this lesson leads
-
-- **[[design-process/concept-generation]]** — The concept set from the morphological chart is the input to the screening matrix and the Pugh matrix.
-- **[[design-process/design-process-overview]]** — The concept selection is the Gate 1 decision in the stage-gate process, and the cost of a change after this gate is 10× the cost before it.
-- **[[design-process/requirements]]** — The screening criteria are the mandatory requirements, and the scoring criteria are the important and desirable requirements.
-- **[[design-process/embodiment-design]]** — The selected concept is developed into a layout, and the layout is the basis for the sizing calculations.
-- **[[design-process/reliability-risk]]** — The risk-weighted selection uses the DFMEA risk factors, and the top 3 risks of the selected concept drive the prototype plan.
-- **[[design-process/sustainability]]** — The sustainability criterion in the weighted-objective matrix is the mechanism by which the environmental impact is included in the selection.
-- **[[machine-design/static-failure]]** — The performance criterion in the selection matrix is often the factor of safety, and the factor of safety is calculated using the static-failure theories.
-- **[[manufacturing/process-selection]]** — The manufacturability criterion in the selection matrix is the input to the process-selection chart.
-
-::: history Concept selection: from the gut feeling to the Pareto front {#history-concept-selection}
-**1954** — **Charles E. Lindblom** publishes "The science of muddling through," introducing **incrementalism** — the idea that decisions are made by comparing small variations of the status quo, not by evaluating all alternatives. **Lindblom's insight is that the rational model (enumerate all alternatives, evaluate all, select the best) is a fiction, and the real decision is a comparison of two or three options that are close to the status quo.**
-
-**1981** — **Stuart Pugh** publishes *Total Design*, introducing the **Pugh matrix** (the "concept selection matrix" or "Pearson-Pugh method"). Pugh, a Scottish engineer at the University of Edinburgh, developed the method in the 1960s to teach design students to evaluate concepts without being attached to their own ideas. **The Pugh matrix is the most widely used concept-selection tool in engineering education and practice, and its power is its simplicity: +, 0, − is easier to use than a 1–10 scale, and easier is better.**
-
-**1989** — **John D. C. Little** publishes "Models and managers: a conceptual framework," which formalises the **decision conference** as a structured group decision process. The decision conference is the mechanism by which the team agrees on the criteria, the weights, and the scores, and the agreement is the reason the decision is defensible.
-
-**1992** — **Kalyanmoy Deb** and colleagues develop the **NSGA-II** (Non-dominated Sorting Genetic Algorithm II), the first efficient algorithm for computing the Pareto front of a multi-objective optimisation problem. **NSGA-II is the tool that makes the Pareto front computable for continuous design spaces with 10⁶+ design points, and it is the reason multi-objective optimisation is now practical for real engineering problems.**
-
-**1996** — **The Pugh Concept Selection Process** is adopted by the **Society of Automotive Engineers (SAE)** as a recommended practice for automotive concept selection. **The SAE adoption is the moment when concept selection becomes a standard engineering practice, not an art.**
-
-**2003** — **The INCOSE Systems Engineering Handbook** codifies the concept selection process: screening, scoring, trade studies, and the decision record. The handbook requires that the selection criteria be derived from the requirements, the weights be agreed by the stakeholders, and the decision be documented. **The INCOSE standard is the reason every aerospace and defence programme has a trade study report, and the trade study report is the selection record.**
-
-**2010s** — **Multi-criteria decision analysis (MCDA)** methods (AHP, TOPSIS, ELECTRE) are applied to engineering concept selection. The **Analytic Hierarchy Process** (Saaty, 1980) decomposes the decision into a hierarchy of pairwise comparisons, and the **TOPSIS** method ranks the alternatives by their distance from the ideal solution. **MCDA is the formalisation of the weighted-objective matrix, and the formalisation is the reason the method is defensible in an audit.**
-:::
-
-::: summary Concept selection {#summary-concept-selection}
-- **Concept selection is the most consequential decision in the design process, because the concept determines the architecture, the architecture determines the components, and the components determine the cost.** A wrong concept cannot be fixed by better detail design.
-- **The screening matrix eliminates the infeasible concepts by checking each concept against the mandatory requirements (pass/fail).** The screening is a fact check, not a judgement, and the fact check is the most efficient selection tool.
-- **The Pugh matrix compares each concept against a datum (the existing product or the simplest concept) using +, 0, − scores.** The datum is the anchor, and the anchor is what makes the comparison meaningful. The Pugh matrix is a discussion tool, not a decision tool.
-- **The weighted-objective matrix scores each concept on a 1–10 scale for each criterion, multiplies by the criterion weight, and sums.** The weighted score is the most common selection metric, and the arithmetic is the most common error.
-- **The Pareto front is the set of non-dominated concepts: no other concept is better in every objective.** A dominated concept should never be selected, and the Pareto front makes the trade-offs visible.
-- **The weighted-sum method finds a Pareto point for any positive weights, but it cannot find a Pareto point in a concave region of the front.** The $\varepsilon$-constraint method traces the entire front, including the non-convex points.
-- **The decision conference is a structured meeting: presentation, independent scoring, comparison, re-scoring, decision.** The independent scoring eliminates the anchoring bias, and the comparison reveals the hidden assumptions.
-- **The weight sensitivity analysis tests whether the ranking changes when the weights vary.** If the winner changes when a weight changes by ± 10 %, the decision is not robust, and the team should discuss the trade-off explicitly.
-- **The risk-weighted selection penalises the novel concept and rewards the proven one.** The risk factor (0.1–0.7) is estimated from the DFMEA, and the risk-weighted score is the mechanism by which the team balances the upside of the novel concept against the downside of the risk.
-- **The selection record documents the criteria, the weights, the scores, the winner, the runner-up, and the reason.** The record is the defence against the "why did we choose this?" question, and the defence is the reason the record is written.
 :::
 
 ## Further reading
 
-- **Stuart Pugh (1990)** — *Total Design: Automatic Development*, 2nd ed. Addison-Wesley. The original Pugh matrix text, by its inventor.
-- **Gerd Ulrich, Karl Eppinger and Steven Eppinger (2019)** — *Product Design and Development*, 7th ed. McGraw-Hill. Chapter 6: concept selection, the Pugh matrix, and the decision conference.
-- **Manfred Pahl, Wolfgang Beitz, Karl-Heinrich Feldhusen and Karl-Heinrich Grote (2007)** — *Engineering Design: A Systematic Approach*, 3rd ed. Springer. Chapter 6: the principle solution and the selection matrix.
-- **Kalyanmoy Deb (2001)** — *Multi-Objective Optimisation using Evolutionary Algorithms*. Wiley. The NSGA-II algorithm and the Pareto front computation.
-- **Ralph L. Keeney and Howard Raiffa (1976)** — *Decisions with Multiple Objectives: Preferences and Value Tradeoffs*. Wiley. The multi-attribute utility theory that underpins the weighted-objective matrix.
-- **Thomas L. Saaty (1980)** — *The Analytic Hierarchy Process*. McGraw-Hill. The AHP method for pairwise comparison and weight derivation.
-- **Stuart French (1985)** — *Conceptual Design for Engineers*. The Design Council. The UK design-methodology tradition, from the Design Study Method to the morphological chart.
-- **INCOSE (2023)** — *Systems Engineering Handbook*, 5th ed. Wiley. Chapter 5: concept selection, trade studies, and the decision record.
+Ulrich, Eppinger and Yang's *Product Design and Development* (7th ed., 2020) presents concept screening and scoring as a two-stage process with practical advice. Pugh's *Total Design* (1991) explains controlled convergence in his own words. Cross's *Engineering Design Methods* (5th ed., 2021) covers weighted objectives and their pitfalls, and Ashby's *Materials Selection in Mechanical Design* develops the performance indices of [[#prop-index]] into a complete method for choosing materials at the concept stage.

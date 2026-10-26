@@ -1,567 +1,318 @@
-Design for Manufacture (DFM) and Design for Assembly (DFA) are the disciplines that ensure the design can be made and assembled at the target cost. The discipline is not optional: **70–80 % of the product's life-cycle cost is determined at the design stage, and 30–40 % of the manufacturing cost is determined by the design's manufacturability.** A design that requires five-axis machining, three custom fixtures, and a two-hour setup will cost 5–10× more to manufacture than a design that requires three-axis machining, a standard vise, and a ten-minute setup — and the difference is locked in at the detail-design stage, before the first part is cut. **The engineer who optimises the cutting parameters by 10 % saves less money than the engineer who eliminates the five-axis operation.**
+Most of the cost of a manufactured product is decided before anyone in the factory sees it. Once the designer has chosen the number of parts, their materials, shapes and tolerances, and the way they are joined, the processes that can make them and the time needed to assemble them follow; the manufacturing engineer can then optimise feeds, fixtures and line layouts, but only within the bounds the design set. **Design for manufacture** (DFM) is the practice of choosing materials, processes, shapes and tolerances so that each part is cheap and consistent to make; **design for assembly** (DFA) is the practice of reducing the number of parts and making those that remain easy to handle and insert. Together, under the name **DFMA**, they are among the most effective tools a design team has for reducing cost, and they also tend to improve quality, because fewer parts and simpler operations mean fewer opportunities for error.
 
-DFM is the practice of designing the part so that the manufacturing process is simple, the tolerances are achievable, the material is available, and the inspection is straightforward. DFA is the practice of designing the assembly so that the part count is low, the assembly direction is uniaxial, the fasteners are minimal, and the parts are self-locating. The two disciplines are complementary: DFM reduces the cost of the part, DFA reduces the cost of the assembly, and the total cost is the sum of the two. **The product that is easy to make but hard to assemble costs the same as the product that is hard to make but easy to assemble, and both cost more than the product that is easy to make and easy to assemble.**
+This chapter builds a simple **unit-cost model** and uses it to choose between processes by production volume, introduces the Boothroyd–Dewhurst method of DFA with its minimum-part criteria and design efficiency, collects design rules for the common processes — machining, injection moulding, casting and sheet metal — with two small quantitative models (moulding cooling time and the cantilever snap fit), and ends with how DFMA fits into the design process. It follows [[design-process/embodiment-design]]; the processes themselves are described in [[manufacturing]], and material choice in [[materials-science]].
 
-The tools of DFM/DFA are the design rules (the process-specific guidelines that say "do not design a blind hole with a radius smaller than the tool radius"), the part-count reduction analysis (the question "can these three parts be made as one?"), the assembly-time estimation (the Boothroya-Dewhurst method), and the cost model (the piece-cost calculation from [[manufacturing/process-selection|process selection]]). The tools are simple; the difficulty is the organisational one: the design engineer must talk to the manufacturing engineer before the design is frozen, and the conversation must happen at the concept stage, not at the detail stage.
+## Where the cost of a part comes from {#sec-cost}
 
-::: warning Nine ways DFM/DFA goes wrong
-**Designing the part in isolation from the assembly.** The engineer who designs a bracket that is easy to machine but requires the assembler to hold three components, two fasteners, and a washer simultaneously is not designing a part; they are designing an assembly problem. **Design the part and the assembly together, and count the assembly time, not just the machining time.** **Specifying tolerances that the process cannot hold.** The engineer who specifies ± 0.01 mm on a sand-cast surface is not specifying a tolerance; they are specifying a rework operation. **Every tolerance must be checked against the process capability ($C _ { p k }$) of the manufacturing process, and the process capability is the reason the tolerance is ± 0.5 mm on the cast surface and ± 0.02 mm on the machined surface.** **Not applying the process-specific design rules.** The engineer who designs a plastic part with a uniform wall thickness, no draft angles, and undercuts is not designing a moulding; they are designing a sink-mark, a weld-line, and a tool that cannot be ejected. **Apply the design rules for the process you intend to use, and the rules are in the process-specific DFM guidelines (injection moulding, casting, machining, sheet metal, welding).** **Not reducing the part count.** The assembly with 20 parts costs more than the assembly with 10 parts, because each part has a separate procurement, inspection, storage, and assembly cost. **Ask "can these three parts be made as one?" for every assembly, and the answer is usually yes for castings, mouldings, and weldments.** **Not designing for one-directional assembly.** The assembly that requires the assembler to flip the product over three times is the assembly that takes three times longer than the assembly that stacks from the bottom. **Design the assembly so that all parts are inserted from one direction (usually vertical, top-down), and the self-locating features eliminate the need for the assembler to hold the part in position.** **Not minimising the fasteners.** Each fastener costs 10–30 seconds to install, and the installation time is the dominant assembly cost. **Replace the fasteners with snap-fits, living hinges, press-fits, and welds where the function allows, and use the minimum number of fasteners where they are required.** **Not designing for inspection.** The engineer who designs a bore with a tolerance of ± 0.01 mm and no datum feature is not specifying a bore; they are specifying an argument with the metrology engineer. **Every critical dimension must have a datum reference frame, and the datum is the reason the part is inspected on a CMM and not thrown in the scrap bin.** **Not considering the tool access.** The engineer who designs a five-sided box with an internal cavity is not designing a part; they are designing a part that cannot be machined, cannot be moulded, and cannot be assembled. **Every internal feature must be accessible to the tool, the die, or the assembly operator, and the accessibility is the constraint that drives the geometry.** **Not talking to the manufacturer.** The engineer who designs the part without consulting the manufacturer is designing the part that the manufacturer will quote at 3× the target cost. **Bring the manufacturer to the design review, and the manufacturer's feedback is the reason the design is manufacturable.**
+::: definition Unit cost and its components {#def-unit-cost}
+The **unit cost** of a part made in a batch or production run of $N$ parts is modelled as
+$$
+C = C_m + C_p + \frac{C_t}{N},
+$$ {#eq-unit-cost}
+where $C_m$ is the **material cost** per part (including scrap), $C_p$ the **processing cost** per part (machine and labour time multiplied by the hourly rates, including a share of overheads), and $C_t$ the **dedicated tooling and set-up cost** — moulds, dies, fixtures, programming — that is incurred once for the run and is spread over all $N$ parts. $C_m + C_p$ is the **variable cost** per part; $C_t$ is the **fixed** (non-recurring) cost.
 :::
 
-## 1. DFM principles and process-specific design rules
+The model is a simplification: tooling wears out and must be replaced after a certain number of parts, processing rates depend on volume (a high-volume line is automated), and overheads are allocated by accounting rules that may not reflect true costs. But it captures the essential trade-off between processes. Processes with expensive dedicated tooling — die casting, injection moulding, forging, stamping — have low variable cost; processes with little dedicated tooling — machining from stock, sand casting, fabrication, additive manufacturing — have high variable cost. Which is cheaper depends on $N$.
 
-::: definition Design for Manufacture: the general principles {#def-dfm-principles}
-**Design for Manufacture** (DFM) is the practice of designing the part so that the manufacturing process is simple, the tolerances are achievable, the material is available, and the inspection is straightforward. The general principles are:
-
+::: proposition Crossover volume between two processes {#prop-crossover}
+Let process 1 have variable cost $v_1 = C_{m1} + C_{p1}$ and tooling cost $C_{t1}$, and process 2 have $v_2 < v_1$ and $C_{t2} > C_{t1}$. Then process 2 has the lower unit cost if and only if
 $$
-\begin{array} { l l l l }
-\textbf{Principle} & \textbf{Description} & \textbf{Cost impact} & \textbf{Example} \\ \hline
-\text{Reduce the part count} & \text{Fewer parts, fewer operations} & 10--30 \ \% \text{ cost reduction} & \text{Cast the bracket as one piece} \\
-\text{Standardise the geometry} & \text{Standard tools, standard processes} & 5--15 \ \% \text{ cost reduction} & \text{Use standard drill sizes} \\
-\text{Tolerances: loose where possible} & \text{Tight tolerances cost 10--100×} & 20--50 \ \% \text{ cost reduction} & \text{± 0.5 mm on the cast surface} \\
-\text{Design for the process} & \text{Apply the process-specific rules} & 10--30 \ \% \text{ cost reduction} & \text{Draft angles, uniform walls} \\
-\text{Avoid unnecessary features} & \text{Every feature costs time and money} & 5--20 \ \% \text{ cost reduction} & \text{Remove the cosmetic fillet} \\
-\text{Design for inspection} & \text{Accessible datums, measurable features} & \text{Reduces scrap and rework} & \text{Datum features on the drawing} \\
-\end{array}
-$$
-
-**The most important DFM principle is the first: reduce the part count.** Each part in the assembly has a separate procurement cost, inspection cost, storage cost, and assembly cost. The part-count reduction from 20 to 10 saves 50 % of the assembly cost, and the assembly cost is 30–50 % of the total manufacturing cost. **The part that is not there cannot be procured, inspected, stored, assembled, or fail in the field.**
+N > N^* = \frac{C_{t2} - C_{t1}}{v_1 - v_2}.
+$$ {#eq-crossover}
 :::
 
-::: definition DFM for machining {#def-dfm-machining}
-Machining is the most versatile manufacturing process and the most expensive per unit volume removed. The DFM rules for machining are:
-
-$$
-\begin{array} { l l l }
-\textbf{Rule} & \textbf{Reason} & \textbf{Cost impact} \\ \hline
-\text{Use standard tool sizes} & \text{Standard drills, end mills, reamers} & 10--20 \ \% \text{ tooling cost} \\
-\text{Avoid deep pockets} & \text{Tool length } > 4 \times \text{ diameter causes chatter} & 20--50 \ \% \text{ machining time} \\
-\text{Use large inside radii} & \text{Large radius = large tool = faster cut} & 10--30 \ \% \text{ machining time} \\
-\text{Avoid thin walls} & t < 1 \ \text{mm} \text{ in steel, } 0.5 \ \text{mm in aluminium} & \text{Scrap, distortion} \\
-\text{Machine from one side} & \text{One setup, one fixture} & 30--50 \ \% \text{ setup cost} \\
-\text{Use standard materials} & \text{Stock sizes, standard grades} & 10--20 \ \% \text{ material cost} \\
-\text{Avoid five-axis features} & \text{Five-axis costs 3--5× three-axis} & 200--400 \ \% \text{ machining cost} \\
-\text{Specify surface finish: loose} & R_a 3.2 \ \mu m \text{ is 2× cheaper than } R_a 0.8 \ \mu m & 50--100 \ \% \text{ finishing cost} \\
-\end{array}
-$$
-
-**The most expensive machining feature is the five-axis operation: a feature that requires the part to be re-oriented in the fixture costs 3–5× more than a feature that can be machined from one side. The five-axis operation is the reason the part costs £500 instead of £100, and the reason is the design, not the machinist.**
+::: proof
+From [[#eq-unit-cost]], $C_2 < C_1 \iff v_2 + C_{t2}/N < v_1 + C_{t1}/N \iff (C_{t2} - C_{t1})/N < v_1 - v_2$. Both sides are positive by hypothesis, so multiplying by $N/(v_1 - v_2) > 0$ gives $N > (C_{t2} - C_{t1})/(v_1 - v_2)$. At $N = N^*$ the unit costs are equal. If instead $v_2 < v_1$ and $C_{t2} \le C_{t1}$, process 2 is cheaper at every volume and there is no crossover.
 :::
 
-::: definition DFM for injection moulding {#def-dfm-moulding}
-Injection moulding is the most common process for plastic parts, and the DFM rules are driven by the flow of the melt and the cooling of the solid:
+::: example Machined or die-cast housing? {#ex-crossover}
+A small aluminium gearbox housing can be machined from bar on a CNC machining centre or die cast and then finish-machined at the bearing bores. Estimated costs:
 
-$$
-\begin{array} { l l l }
-\textbf{Rule} & \textbf{Reason} & \textbf{Consequence of violation} \\ \hline
-\text{Uniform wall thickness} & \text{Uneven cooling causes sink and warpage} & \text{Sink marks, dimensional instability} \\
-\text{Wall thickness: 1--4 mm} & \text{Too thin: short shot; too thick: sink} & \text{Short shot or sink} \\
-\text{Draft angle: 1--2°} & \text{Part must eject from the mould} & \text{Part sticks, mould damage} \\
-\text{Inside radius: } R \geq 0 . 5 t & \text{Stress concentration, flow} & \text{Cracking, weld lines} \\
-\text{Outside radius: } R \geq 1 . 5 t & \text{Sink mark on the surface} & \text{Cosmetic defect} \\
-\text{Avoid undercuts} & \text{Undercuts require side-cores} & \text{Tool cost 2--5×} \\
-\text{Gate at the thickest section} & \text{Melt flows to the thinnest section} & \text{Short shot, weld lines} \\
-\text{Avoid metal inserts} & \text{Inserts require a second moulding step} & \text{Cycle time 2--3×} \\
-\end{array}
-$$
+| | material $C_m$ | processing $C_p$ | tooling $C_t$ |
+|---|---|---|---|
+| CNC from bar | 4.00 | 18.00 | 1 500 |
+| die cast + finish machining | 2.50 | 3.50 | 60 000 |
 
-**The most expensive moulding feature is the undercut: an undercut requires a side-core, which requires a second parting line, which requires a more complex tool, which costs 2–5× more. The undercut that is designed out of the part saves £5 000–£20 000 in tooling cost, and the saving is the reason the DFM review is done before the tool is cut, not after.**
+(currency units per part; tooling is fixtures and programs for CNC, the die and fixtures for casting). Find the crossover volume and the unit costs at $1\,000$ and $10\,000$ parts.
+::: solution
+Variable costs: $v_1 = 22.00$, $v_2 = 6.00$. From [[#eq-crossover]],
+$$
+N^* = \frac{60\,000 - 1\,500}{22.00 - 6.00} = \frac{58\,500}{16.00} = 3\,656.25,
+$$
+so die casting is cheaper from $3\,657$ parts upwards.
+
+At $N = 1\,000$: CNC $22.00 + 1.50 = 23.50$; die cast $6.00 + 60.00 = 66.00$. At $N = 10\,000$: CNC $22.00 + 0.15 = 22.15$; die cast $6.00 + 6.00 = 12.00$.
+
+**Sanity check.** At $N^*$ both give about $22.41$ ✓. The CNC cost is nearly flat in $N$ (tooling is a small share), while the casting cost falls steeply until tooling becomes negligible. The decision also depends on things outside the model: the die takes weeks to make, the design is harder to change once the die exists, and die casting brings porosity and draft angles that the machined part does not have. A common route is to machine the first few hundred parts while the die is being made.
 :::
 
-::: definition DFM for sheet metal and welding {#def-dfm-sheet}
-Sheet metal and welding are the processes for structural parts, and the DFM rules are driven by the bend radius, the weld accessibility, and the distortion control:
-
-$$
-\begin{array} { l l l }
-\textbf{Rule} & \textbf{Reason} & \textbf{Consequence of violation} \\ \hline
-\text{Bend radius } \geq t & \text{Smaller radius cracks the outer fibre} & \text{Cracking at the bend} \\
-\text{Bend length } \geq 4 t & \text{Short bends are unstable} & \text{Springback, dimensional error} \\
-\text{Hole-to-bend distance } \geq 2 t & \text{Hole deforms during bending} & \text{Oval hole, misalignment} \\
-\text{Weld joint: accessible} & \text{The welder needs access} & \text{Weld defect, rework} \\
-\text{Weld joint: symmetric} & \text{Asymmetric welds cause distortion} & \text{Distortion, straightening cost} \\
-\text{Avoid welds on machined surfaces} & \text{Weld distortion ruins the machining} & \text{Re-machining, scrap} \\
-\text{Use standard sheet sizes} & \text{Standard sizes minimise scrap} & 10--20 \ \% \text{ material cost} \\
-\text{Punch features before bending} & \text{Bending deforms the punched features} & \text{Misalignment, rework} \\
-\end{array}
-$$
-
-**The most expensive sheet-metal feature is the weld on a machined surface: the weld distortion ruins the machining, and the re-machining costs 2–3× the original machining. The design that puts the weld on a non-machined surface saves the re-machining cost, and the saving is the reason the DFM review is done before the drawing is issued, not after.**
-:::
-
-::: example DFM review of a bracket {#ex-dfm-bracket level=3 check="4"}
-A bracket is designed as a five-axis machined steel part with 12 features: 4 bolt holes, 2 dowel holes, 3 pockets, 2 slots, and 1 chamfer. The DFM review suggests:
-
-1. Replace the five-axis machining with a welded assembly (2 sheet-metal parts, 4 welds).
-2. Replace the 3 pockets with 2 through-holes (eliminates the deep-pocket operation).
-3. Replace the 2 slots with 2 round holes (eliminates the slot-milling operation).
-4. Standardise the bolt holes to M10 clearance (11 mm) and the dowel holes to H7 (10 mm).
-
-Estimate the cost reduction if the original part costs £180 and the DFM changes reduce the machining time by 60 %.
-
-**The cost reduction is:**
-
-$$
-\Delta C \; = \; 0 . 6 0 \times 1 8 0 \; = \; { \bf 1 0 8 } \ \text{pounds per part}
-$$
-
-**The new part costs £72, a 60 % reduction. The DFM review cost 2 hours of the manufacturing engineer's time (£200), and the review saves £108 per part. At a volume of 1 000 parts, the saving is £108 000, and the ROI is 540:1. The DFM review is the highest-return activity in the design process, and the return is the reason the review is mandatory at every gate.**
 :::
 
 ::: widget plot
-title: The DFM cost curve: machining time vs number of features
-f: 50+15*x; 30+8*x; 20+5*x
-x: 0,10
-y: 0,200
-labels: Five-axis machining; Three-axis machining; Sheet metal + welding
-caption: Machining time (minutes) against the number of features for three manufacturing routes. **The five-axis route starts at 50 minutes (setup) and adds 15 minutes per feature; the three-axis route starts at 30 minutes and adds 8 minutes per feature; the sheet-metal route starts at 20 minutes and adds 5 minutes per feature.** **The DFM strategy is to reduce the number of features (from 10 to 4) and to move the part to the cheapest route that meets the requirements. The 10-feature five-axis part costs 200 minutes; the 4-feature sheet-metal part costs 40 minutes. The cost reduction is 80 %, and the reduction is the reason the DFM review is done before the design is frozen.**
+f: v1 + 1500/(1000*x); v2 + 60000/(1000*x)
+x: 0.2, 20
+y: 0, 80
+sliders: v1=22:5:40:0.5; v2=6:2:15:0.5
+labels: \text{CNC from bar}; \text{die cast + finish machining}
+caption: Unit cost against production volume (horizontal axis in thousands of parts) for the two routes of [[#ex-crossover]], with tooling 1 500 and 60 000. The curves cross at the crossover volume. Raise the die-cast variable cost $v_2$ (a more complex casting needing more finish machining) and watch the crossover move to the right; lower the CNC variable cost $v_1$ (faster machining strategies) and it moves further still. At large volumes each curve flattens towards its variable cost.
 :::
 
-## 2. Design for Assembly (DFA)
+### Selecting a process
 
-::: definition The Boothroya-Dewhurst DFA method {#def-dfa-boothroyd}
-The **Boothroya-Dewhurst (B-D) DFA method** (Boothroya, Dewhurst & Knight, 1989) is a systematic method for estimating the assembly time and reducing the part count. The method has three steps:
+A shortlist of candidate processes follows from a few attributes of the part: the **material** class (not every process can handle every material — die casting is for low-melting alloys of aluminium, zinc and magnesium; injection moulding for thermoplastics), the **shape** (prismatic, rotational, thin-walled, hollow), the **size** and mass, the required **tolerances** and **surface finish**, and the **production volume**. Ashby's process-selection charts plot these attributes for families of processes and allow the shortlist to be made systematically; the unit-cost model then ranks the survivors. As a rough guide:
 
-1. **Part-count reduction**: for each part, ask three questions:
-   - Does the part move relative to the parts already assembled? If no, it can be merged.
-   - Does the part require a different material? If no, it can be merged.
-   - Does the part need to be separated for assembly or maintenance? If no, it can be merged.
+- **Machining** (turning, milling, drilling, grinding) reaches the finest tolerances and finishes and needs little dedicated tooling, but is slow and wastes material. It suits low volumes, prototypes and precision features on parts made by other processes.
+- **Casting** gives complex shapes in one step. Sand casting has cheap tooling and suits large parts at low volume; investment casting gives fine detail; pressure die casting needs costly dies and suits high volumes of non-ferrous parts.
+- **Forming** — forging, extrusion, sheet-metal stamping and bending — produces strong parts quickly but needs dies whose cost must be spread over large volumes (simple press-brake bending is the exception).
+- **Injection moulding** of polymers has very high tooling cost and very low variable cost; at high volume it is often the cheapest way to make a complex part, and it can integrate many features (snap fits, hinges, bosses, ribs) into one part.
+- **Additive manufacturing** needs no part-specific tooling and allows shapes no other process can make, at a high variable cost per part; it suits prototypes, small batches and parts whose geometry gives a functional benefit.
 
-2. **Assembly-time estimation**: for each part, estimate the handling time ($T _ { h }$) and the insertion time ($T _ { i }$):
+## Design for assembly {#sec-dfa}
 
-$$
-T _ { \text{assembly } } \; = \; \sum _ { i \, = 1 } ^ { n } ( T _ { h , i } + T _ { i , i } )
-$$
+Assembly is often a large share of the cost of a product, and every part adds to it twice: once in its own manufacture and once in being handled, oriented, inserted and fastened. It also adds to inventory, documentation, purchasing, inspection and the number of things that can go wrong. The most powerful DFA question is therefore not "how can this part be assembled more easily?" but "does this part need to exist?"
 
-The handling time depends on the part's size, weight, symmetry, and whether it is tangled (e.g., a wire harness). The insertion time depends on the fit (clearance vs interference), the fastener type, and the alignment features.
+::: definition Theoretical minimum number of parts {#def-min-parts}
+In the Boothroyd–Dewhurst method, each part is tested, in assembly order, against three questions. A part is a **candidate for elimination** (by combining it with another part or doing away with it) unless at least one answer is yes:
+1. During the product's operation, does the part **move relative to** all other parts already assembled? (Only gross motion counts; small elastic movements that an integral elastic element could provide do not.)
+2. Must the part be of a **different material** from, or be **isolated** from, all other parts already assembled? (Only for fundamental reasons: electrical or thermal insulation, wear resistance, a property the other material cannot provide.)
+3. Must the part be **separate** from all other parts already assembled, because otherwise the necessary **assembly or disassembly** of other parts would be impossible?
 
-3. **Cost estimation**: the assembly cost is:
-
-$$
-C _ { \text{assembly } } \; = \; T _ { \text{assembly } } \times r _ { \text{labour } }
-$$
-
-where $r _ { \text{labour } }$ is the labour rate (£/hour).
-
-**The B-D method is the most widely used DFA method in industry, and the method's power is the three-question test: the test eliminates 30–50 % of the parts, and the elimination is the reason the assembly time drops by 30–50 %.**
+The number of parts that pass at least one test is the **theoretical minimum number of parts** $N_\text{min}$. The first part assembled (the base) always counts. Fasteners, connectors and spacers almost always fail all three questions.
 :::
 
-::: definition Assembly design rules: one-directional assembly and self-locating features {#def-dfa-rules}
-The assembly design rules are:
+The criteria are deliberately strict. They identify the theoretical minimum; whether a part should actually be eliminated depends on cost, practical constraints (a part that must be serviced, a supplier boundary, a standard purchased component) and the processes available. Their value is that they make the designer justify every part.
 
+::: definition Design efficiency {#def-design-efficiency}
+The Boothroyd–Dewhurst **design efficiency** (DFA index) of a manual assembly is
 $$
-\begin{array} { l l l l }
-\textbf{Rule} & \textbf{Description} & \textbf{Time saving} & \textbf{Example} \\ \hline
-\text{One-directional assembly} & \text{All parts inserted from one direction} & 20--40 \ \% & \text{Top-down stack, no flipping} \\
-\text{Self-locating features} & \text{Chamfers, dowels, snap-fits} & 10--20 \ \% & \text{Chamfered pin, tapered dowel} \\
-\text{Symmetric parts} & \text{No orientation required} & 5--10 \ \% & \text{Round pin, symmetric bracket} \\
-\text{Avoid tangling} & \text{No wires, cables, or flexible parts} & 10--30 \ \% & \text{Rigid conduit instead of cable} \\
-\text{Minimise fasteners} & \text{Snap-fits, press-fits, welds} & 20--50 \ \% & \text{Snap-fit cover instead of 4 screws} \\
-\text{Standardise fasteners} & \text{One screwdriver, one torque setting} & 5--10 \ \% & \text{All screws are M4 × 10 Phillips} \\
-\text{Avoid simultaneous operations} & \text{No two-handed assembly} & 10--20 \ \% & \text{Self-holding bracket} \\
-\text{Design for automated assembly} & \text{Vertical insertion, no flexible parts} & 50--80 \ \% & \text{Press-fit bearing, not bolted} \\
-\end{array}
-$$
-
-**The most important DFA rule is the one-directional assembly: the assembly that requires the operator to flip the product over three times takes three times longer than the assembly that stacks from the bottom. The one-directional assembly is the reason the product is designed as a vertical stack, not a horizontal sandwich.**
+E_\text{ma} = \frac{N_\text{min}\, t_a}{t_\text{ma}},
+$$ {#eq-dfa-index}
+where $t_\text{ma}$ is the estimated total manual assembly time and $t_a = 3\,\mathrm s$ is the time taken, in their data, to handle and insert an ideal part — small, symmetric, easy to grasp, needing no orientation, and inserted without resistance or fastening. A product with only $N_\text{min}$ ideal parts would score $E_\text{ma} = 1$.
 :::
 
-::: definition Snap-fits, press-fits, and living hinges {#def-dfa-joints}
-The DFA strategy replaces fasteners with integral features:
+The assembly time of each part is the sum of a **handling** time (grasping, orienting, moving it to the work point) and an **insertion** time (placing and fastening). In the full method both are taken from tables indexed by a classification code of the part's features: its symmetry about and perpendicular to the axis of insertion, its size and thickness, whether it nests or tangles, whether it needs tools or two hands, whether access is obstructed, whether it must be held down while the next part is placed, and whether it is fastened by screwing, riveting or bending. Threaded fasteners are particularly expensive because screwing takes several seconds on top of handling and insertion.
 
-$$
-\begin{array} { l l l l }
-\textbf{Joint type} & \textbf{Principle} & \textbf{Assembly time} & \textbf{Disassembly} \\ \hline
-\text{Snap-fit (cantilever)} & \text{Beam deflects, then snaps back} & 2--5 \ \text{s} & \text{Yes (destructive or reusable)} \\
-\text{Snap-fit (annular)} & \text{Ring deflects radially} & 2--5 \ \text{s} & \text{Yes} \\
-\text{Press-fit} & \text{Interference fit, no fastener} & 1--3 \ \text{s} & \text{No (destructive)} \\
-\text{Living hinge} & \text{Thin membrane, integral flexure} & 0 \ \text{s (integral)} & \text{N/A} \\
-\text{Ultrasonic weld} & \text{Vibration melts the interface} & 1--3 \ \text{s} & \text{No} \\
-\text{Screw} & \text{Threaded fastener} & 10--30 \ \text{s} & \text{Yes} \\
-\text{Rivet} & \text{Deformed pin} & 5--10 \ \text{s} & \text{No} \\
-\end{array}
-$$
-
-**The snap-fit is the most common DFA joint: it replaces 2–4 screws with a single snap action, and the snap action takes 2–5 seconds instead of 10–30 seconds per screw. The snap-fit saves 20–50 % of the assembly time, and the saving is the reason the snap-fit is the most common joint in consumer electronics, automotive interiors, and packaging.**
+::: algorithm Manual DFA analysis {#alg-dfa}
+1. Obtain the drawings or a prototype, and take the product apart (physically or mentally), recording parts and subassemblies in assembly order.
+2. For each part, record the number of identical parts, estimate the handling and insertion times (from the tables in the full method), and apply the three minimum-part questions.
+3. Sum the times to get $t_\text{ma}$, count $N_\text{min}$, and compute $E_\text{ma}$ from [[#eq-dfa-index]].
+4. Redesign: first eliminate or combine parts that failed all three questions — especially fasteners — then improve the handling and insertion of the parts that remain (symmetry, chamfers and lead-ins, self-locating features, top-down assembly with no reorientation, snap fits instead of screws).
+5. Re-analyse the redesign and estimate the part manufacturing costs: a combined part is more complex and must still be cheaper overall.
 :::
 
-::: example DFA of a small electric motor assembly {#ex-dfa-motor level=3 check="6"}
-A small electric motor has 12 parts: housing, stator, rotor, 2 bearings, 2 end caps, 4 screws, fan, and terminal block. Apply the B-D three-question test.
+::: example DFA of a fan-motor mount {#ex-dfa}
+A small fan-motor mount consists of: a sheet-steel base plate; the motor; two motor screws; a bracket that holds the motor's rear end; two bracket screws; a cover that must be removable for service; four cover screws; a cable clip; and a rubber grommet that protects the cable where it passes through the base. Estimated handling-plus-insertion times (seconds) per item are: base 3.5, motor 8.0, each screw 8.0, bracket 4.5, cover 5.5, cable clip 4.0, grommet 6.0. Find $N_\text{min}$, the assembly time and the design efficiency. Then evaluate a redesign with a moulded base that carries integral clips for the motor and an integral cable guide, and a cover that snaps on.
+::: solution
+**Minimum parts.** Base: first part, counts. Motor: a purchased unit with moving parts, different materials; counts. Motor screws, bracket screws, cover screws: fasteners — fail all three. Bracket: no relative motion, can be the same material as the base and does not need to be separate; fails. Cover: must be separate so that the motor can be serviced (question 3); counts. Cable clip: fails (can be a feature of the base or cover). Grommet: rubber, different material for a fundamental reason (protecting the cable insulation); counts. So $N_\text{min} = 4$ out of $1 + 1 + 2 + 1 + 2 + 1 + 4 + 1 + 1 = 14$ parts.
 
-**Part-count reduction analysis:**
+**Time.** $t_\text{ma} = 3.5 + 8.0 + 2(8.0) + 4.5 + 2(8.0) + 5.5 + 4(8.0) + 4.0 + 6.0 = 95.5\,\mathrm s$, of which $64\,\mathrm s$ is the eight screws.
 
-| Part | Moves? | Different material? | Separated for maintenance? | Can merge? |
-|------|--------|-------------------|--------------------------|-----------|
-| Housing | No | Yes (steel) | No | — |
-| Stator | No | Yes (copper/steel) | No | — |
-| Rotor | Yes (rotates) | Yes (steel/copper) | No | — |
-| Bearing 1 | Yes (rotates) | Yes (steel) | Yes (wear part) | — |
-| Bearing 2 | Yes (rotates) | Yes (steel) | Yes (wear part) | — |
-| End cap 1 | No | Yes (aluminium) | Yes (access) | — |
-| End cap 2 | No | Yes (aluminium) | Yes (access) | — |
-| 4 screws | No | Yes (steel) | Yes (access) | **Merge: 4 → 2 screws** |
-| Fan | Yes (rotates) | Yes (plastic) | No | **Merge: fan onto rotor** |
-| Terminal block | No | Yes (plastic) | No | **Merge: terminal block onto housing** |
+**Efficiency.** $E_\text{ma} = 4\times3/95.5 = 0.126$, about $13\,\%$.
 
-**The part count is reduced from 12 to 9 (25 % reduction). The assembly time is reduced from 45 seconds to 30 seconds (33 % reduction). The assembly cost is reduced from £0.45 to £0.30 per motor, and at a volume of 100 000 motors per year, the saving is £15 000 per year.**
+**Redesign.** Moulded base (3.5 s), motor snapped into integral clips (estimated 7.0 s), grommet (6.0 s), snap-on cover (6.5 s, a little more than before because the snap must be aligned and pressed). Four parts, $t_\text{ma} = 23.0\,\mathrm s$, $E_\text{ma} = 12/23.0 = 0.52$.
+
+**Sanity check.** The redesign has exactly $N_\text{min}$ parts, so its efficiency is limited only by the times of those parts; $E_\text{ma} \le 1$ ✓. The saving in assembly time ($72.5\,\mathrm s$ per unit) must be weighed against the cost of the injection mould for the new base, by the crossover reasoning of [[#prop-crossover]], and the snap-on cover must still be removable for service without breaking the snap — a requirement for the snap-fit design.
 :::
 
-## 3. Cost modelling and the DFM/DFA trade-off
-
-::: definition The piece-cost model and the DFM cost drivers {#def-piece-cost}
-The **piece cost** is the cost of one part, and the piece cost is the sum of the material cost, the processing cost, the tooling cost, and the overhead:
-
-$$
-c _ { \text{piece } } \; = \; c _ { \text{material } } + c _ { \text{processing } } + { \frac { c _ { \text{tooling } } } { N } } + c _ { \text{overhead } }
-$$
-
-The DFM cost drivers are:
-
-$$
-\begin{array} { l l l l }
-\textbf{Cost driver} & \textbf{Multiplier} & \textbf{DFM action} & \textbf{Saving} \\ \hline
-\text{Tight tolerance} & 2\text{--}10 \times & \text{Loosen the tolerance} & 50 \ \% \\
-\text{Complex geometry} & 2\text{--}5 \times & \text{Simplify the geometry} & 60 \ \% \\
-\text{Exotic material} & 2\text{--}20 \times & \text{Use a standard material} & 70 \ \% \\
-\text{Custom tooling} & 1 . 5 \text{--}3 \times & \text{Use standard tooling} & 40 \ \% \\
-\text{Low volume} & 2\text{--}10 \times & \text{Increase the volume or use AM} & 50 \ \% \\
-\text{High precision} & 3\text{--}10 \times & \text{Reduce the precision requirement} & 60 \ \% \\
-\end{array}
-$$
-
-**The most expensive cost driver is the exotic material: a titanium part costs 10–20× more than a steel part, and the cost is the material, not the machining. The DFM action is to use a standard material (steel, aluminium, PP, ABS) unless the exotic material is required by the function (corrosion resistance, biocompatibility, non-magnetic).**
 :::
 
-::: definition The DFM/DFA trade-off: part count vs process complexity {#def-dfm-tradeoff}
-The DFM and DFA objectives are in conflict:
-
-- **DFM** wants to reduce the number of parts by combining features into a single part (e.g., a casting with integral bosses, ribs, and mounting flanges).
-- **DFA** wants to reduce the number of parts by combining features into a single part (e.g., a moulding with integral snap-fits, living hinges, and bosses).
-
-**The conflict arises when the combined part requires a more expensive process: a single cast part costs less than three machined parts, but a single five-axis machined part costs more than three three-axis machined parts. The trade-off is resolved by the cost model: the combined part is preferred if the process cost saving exceeds the tooling cost increase.**
-
-$$
-C _ { \text{combined } } \; = \; c _ { \text{material } } + c _ { \text{process, combined } } + { \frac { c _ { \text{tooling, combined } } } { N } }
-$$
-
-$$
-C _ { \text{separate } } \; = \; \sum _ { i } \left( c _ { \text{material } , i } + c _ { \text{process } , i } + { \frac { c _ { \text{tooling } , i } } { N } } \right) + c _ { \text{assembly } }
-$$
-
-**The combined part is cheaper when $C _ { \text{combined } } < C _ { \text{separate } }$ , and the crossover volume $N ^ { * }$ is the volume at which the two costs are equal. The crossover volume is the reason the combined part is preferred at high volume and the separate parts are preferred at low volume.**
+::: warning Part-count reduction is not free
+Combining parts makes the remaining parts more complex. A moulded base with integral clips needs a more expensive mould, possibly with side actions; a combined casting may need more machining; a part that combines a wearing feature with a structural one forces the whole part to be replaced when the feature wears. Always estimate the manufacturing cost of the new parts and the effect on service and recycling ([[design-process/sustainability]]) before declaring a redesign better. DFA reduces the number of parts; it is the total cost — parts, tooling, assembly, quality, service — that must fall.
 :::
 
-::: example DFM/DFA trade-off for a gearbox housing {#ex-dfm-gearbox level=3 check="5000"}
-A gearbox housing can be made as:
+## Design rules for common processes {#sec-rules}
 
-- **Option A**: 3 separate machined parts (front cover, body, rear cover), 12 screws, 2 gaskets.
-- **Option B**: 1 sand-cast part (integral housing), 0 screws, 0 gaskets, 1 machined face.
+Design rules summarise what makes a part easy or hard to make by a given process. They are guidelines whose numerical values depend on the material, machine and supplier; check them with the supplier before freezing a design. The reasons behind them matter more than the numbers.
 
-| Cost item | Option A | Option B |
-|-----------|----------|----------|
-| Material | £45 | £38 |
-| Processing | £120 | £85 |
-| Tooling (total) | £2 500 | £8 000 |
-| Assembly | £15 | £0 |
-| Inspection | £10 | £8 |
+**Machining.**
+- Specify the coarsest tolerance and roughest surface finish that the function allows; tighter tolerances need extra passes, grinding or inspection.
+- Prefer features that standard tools can reach in few set-ups: holes drilled square to a flat face, internal corners with a radius at least that of a standard cutter (a sharp internal corner in a pocket cannot be milled), no undercuts unless needed.
+- Avoid deep, small holes (drills wander and break) and thin walls (they chatter and deflect).
+- Dimension features from the datums used to fixture the part, and keep the number of re-clampings small.
 
-At what volume does Option B become cheaper?
+**Injection moulding.**
+- Keep wall thickness uniform. Thick sections cool slowly, lengthening the cycle and causing sink marks and voids; abrupt changes cause warping. Core out thick regions and use ribs for stiffness.
+- Give faces parallel to the direction of mould opening a **draft** angle so that the part releases from the mould.
+- Avoid undercuts that need side actions or collapsible cores unless they replace other parts (a snap fit that saves two screws can justify a side action).
+- Radius internal corners to reduce stress concentration and help the flow.
 
-**Option A piece cost:** $c _ { A } = 4 5 + 1 2 0 + 2 5 0 0 / N + 1 5 + 1 0 = 1 9 0 + 2 5 0 0 / N$
+**Casting.** Similar reasoning: uniform sections and generous fillets so that the metal solidifies progressively without hot spots (which cause shrinkage porosity), draft for pattern or die removal, cores only where needed, and machining allowance on functional faces.
 
-**Option B piece cost:** $c _ { B } = 3 8 + 8 5 + 8 0 0 0 / N + 0 + 8 = 1 3 1 + 8 0 0 0 / N$
-
-**Crossover:** $1 9 0 + 2 5 0 0 / N = 1 3 1 + 8 0 0 0 / N$
-
+**Sheet metal.** Use the material's standard thicknesses; keep holes and cut-outs a sufficient distance from bends so that they do not distort; give bends an inside radius of at least the minimum recommended for the material and thickness; add bend-relief cuts where a bend ends at an edge; design flat patterns that nest efficiently on the sheet. The flat length of a bent part is found from the **bend allowance**, the length of the neutral surface in the bend:
 $$
-5 9 \; = \; 5 5 0 0 / N \quad \Longrightarrow \quad N \; = \; 5 5 0 0 / 5 9 \; = \; { \bf 9 3 } \ \text{units}
-$$
+BA = \theta\,(R + K t),
+$$ {#eq-bend-allowance}
+with bend angle $\theta$ in radians, inside radius $R$, thickness $t$ and the empirical **K-factor** $K$ (the position of the neutral surface as a fraction of thickness from the inside; typically between about 0.3 and 0.5 depending on material and $R/t$, and best taken from the press-brake supplier's data).
 
-**Option B becomes cheaper at a volume of 93 units. At a volume of 1 000 units, Option A costs £192.50 and Option B costs £139.00, a saving of £53.50 per unit or £53 500 per year. The DFM review that recommends Option B saves £53 500 per year, and the review costs 4 hours of the manufacturing engineer's time (£400). The ROI is 134:1.**
+### Cooling time in injection moulding
+
+The rule "keep walls thin and uniform" has a quantitative basis. Most of an injection-moulding cycle is spent waiting for the part to cool enough to be ejected, and cooling is transient heat conduction through the wall.
+
+::: proposition Cooling time of a moulded wall {#prop-cooling}
+A plastic wall of thickness $h$, initially at the melt temperature $T_m$, has both faces held at the mould temperature $T_w$. Keeping only the first term of the series solution for a plane wall, the time for the mid-plane to cool to the ejection temperature $T_e$ is
+$$
+t_c = \frac{h^2}{\pi^2\alpha}\,\ln\!\left(\frac{4}{\pi}\,\frac{T_m - T_w}{T_e - T_w}\right),
+$$ {#eq-cooling}
+where $\alpha$ is the thermal diffusivity of the polymer. The cooling time grows with the **square** of the wall thickness.
 :::
 
-## 4. DFM/DFA in practice: the review process
-
-::: definition The DFM/DFA review process {#def-dfm-review}
-The **DFM/DFA review** is a structured meeting between the design engineer and the manufacturing engineer, held at the concept stage and repeated at the embodiment and detail stages. The review follows a checklist:
-
+::: proof
+The separation-of-variables solution for a slab of thickness $h$ (half-thickness $h/2$) with both faces suddenly held at $T_w$ gives, at the mid-plane,
 $$
-\begin{array} { l l l }
-\textbf{Checklist item} & \textbf{Question} & \textbf{Action if "no"} \\ \hline
-\text{Process selected?} & \text{Is the manufacturing process chosen?} & \text{Select the process (see process selection)} \\
-\text{Process rules applied?} & \text{Are the DFM rules for the process followed?} & \text{Redesign to follow the rules} \\
-\text{Tolerances achievable?} & \text{Can the process hold the tolerance?} & \text{Loosen the tolerance or change the process} \\
-\text{Material available?} & \text{Is the material available in the required form?} & \text{Change the material or the form} \\
-\text{Tooling cost acceptable?} & \text{Is the tooling cost within the budget?} & \text{Simplify the geometry or increase the volume} \\
-\text{Part count minimal?} & \text{Can any parts be merged?} & \text{Merge the parts (B-D three-question test)} \\
-\text{Assembly one-directional?} & \text{Can all parts be inserted from one direction?} & \text{Redesign the assembly sequence} \\
-\text{Fasteners minimal?} & \text{Can any fasteners be replaced by snap-fits?} & \text{Replace the fasteners} \\
-\text{Inspection accessible?} & \text{Can all critical dimensions be measured?} & \text{Add datum features or access holes} \\
-\text{Cost within target?} & \text{Is the piece cost within the target?} & \text{Iterate the design or change the process} \\
-\end{array}
+\frac{T_c - T_w}{T_m - T_w} = \frac{4}{\pi}\sum_{k=0}^{\infty}\frac{(-1)^k}{2k+1}\exp\!\left(-\frac{(2k+1)^2\pi^2\alpha t}{h^2}\right).
 $$
-
-**The DFM/DFA review is the most cost-effective activity in the design process: the review costs 2–8 hours of the manufacturing engineer's time, and the review saves 10–50 % of the manufacturing cost. The review that saves 10 % of a £1 million annual production budget saves £100 000, and the review costs £1 000. The ROI is 100:1.**
+For the times of interest the first term dominates (the second decays nine times faster). Setting $T_c = T_e$ in the first term and solving for $t$ gives [[#eq-cooling]]. Assumptions: constant properties, one-dimensional conduction through the wall, perfect contact with a mould face at constant temperature, and no heat from crystallisation. The method for transient conduction is in [[heat-transfer]].
 :::
 
-::: definition Design for Environment (DfE) and design for disassembly {#def-dfe}
-**Design for Environment** (DfE) extends the DFM/DFA discipline to the end-of-life phase: the product must be disassembled, the materials must be separated, and the components must be recycled or disposed of. The DfE rules are:
+::: example Halving the wall thickness {#ex-cooling}
+A part in a polymer with $\alpha = 1.0\times10^{-7}\,\mathrm{m^2/s}$ is moulded with $T_m = 230\,^\circ\mathrm C$, $T_w = 50\,^\circ\mathrm C$ and ejection at a mid-plane temperature of $90\,^\circ\mathrm C$. Compare the cooling times for walls of $4\,\mathrm{mm}$ and $2\,\mathrm{mm}$.
+::: solution
+The logarithm is $\ln\!\left(\frac4\pi\times\frac{180}{40}\right) = \ln(5.73) = 1.746$.
 
-$$
-\begin{array} { l l l }
-\textbf{Rule} & \textbf{Description} & \textbf{Example} \\ \hline
-\text{Design for disassembly} & \text{Use reversible joints (screws, snap-fits)} & \text{Screws instead of welds} \\
-\text{Label the materials} & \text{ISO 11469 resin identification codes} & \text{PP, ABS, PC/ABS on the moulding} \\
-\text{Minimise material variety} & \text{Fewer materials, easier recycling} & \text{One polymer family for the housing} \\
-\text{Avoid bonded joints} & \text{Adhesives prevent material separation} & \text{Snap-fits instead of glue} \\
-\text{Avoid composites in small parts} & \text{CFRP/GFRP cannot be recycled} & \text{Use metal for small parts} \\
-\text{Design for remanufacture} & \text{Wear parts are replaceable} & \text{Replaceable bearing, not sealed unit} \\
-\end{array}
-$$
+For $h = 4\,\mathrm{mm}$: $t_c = \dfrac{(4\times10^{-3})^2}{\pi^2\times1.0\times10^{-7}}\times1.746 = 16.2\times1.746 = 28.3\,\mathrm s$.
 
-**The DfE rule that conflicts most with DFA is "avoid bonded joints": the adhesive bond is the cheapest assembly method (0 seconds, no fastener), but the bond prevents the disassembly and the recycling. The resolution is the product's life: a product with a 2-year life (a phone) can use adhesives; a product with a 20-year life (a machine tool) must use reversible joints.**
+For $h = 2\,\mathrm{mm}$: one quarter, $7.1\,\mathrm s$.
+
+**Sanity check.** Temperature differences enter only through a logarithm, so the result is insensitive to them; thickness enters squared. Cooling times of a few to a few tens of seconds are typical of moulding, so the order of magnitude is right. Halving the wall cuts about $21\,\mathrm s$ from every cycle — on a mould producing a million parts that is about 5 900 machine-hours — which is why stiffness is obtained with ribs rather than thick walls.
 :::
 
-::: example DfE review of a power tool {#ex-dfe-tool level=3 check="4"}
-A power tool has 45 parts: 12 plastic (ABS, PC/ABS, PA6-GF30), 18 steel, 8 aluminium, 4 copper (motor windings), 2 rubber (grips), and 1 lithium-ion battery. Apply the DfE rules.
+### Snap fits
 
-**DfE findings:**
+Snap fits replace screws by an elastic hook that deflects during assembly and springs back behind a catch. They are the commonest way of achieving the fastener elimination that DFA calls for in plastic parts. The simplest is a cantilever hook of constant rectangular section.
 
-1. **Material variety**: 6 material families (ABS, PC/ABS, PA6-GF30, steel, aluminium, copper) + rubber + battery. **Action: reduce the plastic families from 3 to 2 (ABS and PA6-GF30), and label each part with the ISO 11469 code.**
-2. **Bonded joints**: the housing is glued (2 adhesive bonds). **Action: replace the glue with 4 screws (reversible disassembly).**
-3. **Battery**: the lithium-ion battery is glued into the housing. **Action: replace the glue with a removable battery pack (regulatory requirement in the EU, IEC 62133).**
-4. **Wear parts**: the carbon brushes are sealed inside the motor. **Action: add a brush-access hatch (remanufacture, not landfill).**
+The design guides published by plastics suppliers give, for a cantilever of length $L$ and thickness $t$ deflected by $y$ at its tip, the maximum surface strain at the root (simple beam theory, $\varepsilon = \sigma/E$ with $\sigma = M/S$ and $y = PL^3/(3EI)$)
+$$
+\varepsilon = \frac{3\,t\,y}{2\,L^2},
+$$ {#eq-snap-strain}
+which must not exceed the **permissible strain** quoted by the supplier for that grade (larger for a snap used once than for one assembled repeatedly). The force needed to deflect the hook, with $b$ its width and $E_s$ the secant modulus at that strain, is $P = b\,t^2E_s\varepsilon/(6L)$, and the force to push it over a lead-in ramp of angle $\alpha$ with friction coefficient $\mu$ is
+$$
+W = P\,\frac{\mu + \tan\alpha}{1 - \mu\tan\alpha}.
+$$ {#eq-snap-force}
 
-**The DfE review adds 4 screws and 1 hatch (cost: £1.20 per tool) and saves the cost of the adhesive (£0.80 per tool) and the cost of the landfill disposal (£2.00 per tool). The net saving is £1.60 per tool, and at a volume of 500 000 tools per year, the saving is £800 000 per year.**
+:::
+
+::: example Sizing a cantilever snap {#ex-snap}
+A cover is held by cantilever snaps $L = 15\,\mathrm{mm}$ long, $t = 1.8\,\mathrm{mm}$ thick and $b = 8\,\mathrm{mm}$ wide, which must deflect $y = 1.2\,\mathrm{mm}$ to pass the catch. The supplier gives a permissible strain of $2\,\%$ for repeated assembly and a secant modulus of $2.0\,\mathrm{GPa}$ at that strain; the ramp angle is $30^\circ$ and $\mu = 0.3$. Check the strain and find the assembly force per snap.
+::: solution
+From [[#eq-snap-strain]]: $\varepsilon = 1.5\times1.8\times1.2/15^2 = 0.0144 = 1.44\,\%$, below $2\,\%$ ✓.
+
+Deflection force (mm and N/mm²): $P = 8\times1.8^2\times2000\times0.0144/(6\times15) = 8.29\,\mathrm N$.
+
+Mating force: $(\mu + \tan\alpha)/(1 - \mu\tan\alpha) = (0.3 + 0.577)/(1 - 0.173) = 1.061$, so $W = 8.8\,\mathrm N$ per snap. With four snaps the cover needs about $35\,\mathrm N$ to push home, comfortable by hand.
+
+**Sanity check.** The strain varies as $t/L^2$: a hook half as long would see four times the strain, $5.8\,\%$, too much — this is why snap hooks are long and thin. For a removable cover the catch face must also be angled so that the snap can be released without breaking it (or a release tool provided).
+:::
+
+:::
+
+::: quiz
+Which of the following parts in an assembly would normally pass at least one of the three Boothroyd–Dewhurst minimum-part questions? (Select all that apply.)
+- [ ] a spacer that sets the distance between two parts
+- [x] a shaft that rotates in a housing
+- [x] an electrically insulating washer between a live terminal and a metal frame
+- [ ] a screw that holds a cover on
+- [x] a lid that must be removed to fill a tank
+::: solution
+The shaft moves relative to the housing (question 1); the insulating washer must be of a different material for a fundamental reason (question 2); the lid must be separate for the tank to be filled (question 3 in the sense of access). The spacer and the screw fail all three: the spacer's dimension can be built into one of the parts, and the screw's function can be provided by a snap or by integral features.
+:::
+:::
+
+## DFMA in the design process {#sec-dfma-process}
+
+DFM and DFA are most effective in embodiment design, when the architecture and the main parts are being decided, and least effective as an audit of finished drawings. A practical approach is:
+
+1. During concept and embodiment design, keep part count low and choose processes using the cost model and process-selection tools.
+2. Hold a DFA analysis of the first layout, with a manufacturing engineer present; set a target design efficiency or part count.
+3. Use process-specific rules and supplier consultation (**early supplier involvement**) during form and detail design.
+4. Estimate costs part by part (should-cost models) and compare with quotations.
+5. Review again before tooling is ordered, because after that every change is expensive.
+
+DFMA interacts with other design-for-X goals. Fewer parts generally help reliability (fewer joints and connections to fail, [[design-process/reliability-risk]]); snap fits and integral parts help assembly but can hinder disassembly and recycling unless designed to release; combined parts of a single material help recycling; fewer fasteners can complicate service. The design team has to balance these consciously.
+
+::: history
+Geoffrey Boothroyd and colleagues began research on the economics of assembly at the University of Massachusetts Amherst in the early 1970s; Boothroyd's *Design for Assembly — A Designer's Handbook* appeared there in 1980. With Peter Dewhurst he developed a computer version of the method from 1981, and they continued the work at the University of Rhode Island from 1985. In 1991 Boothroyd and Dewhurst received the US National Medal of Technology for the development and commercialisation of design for manufacture and assembly. Their book with Winston Knight, *Product Design for Manufacture and Assembly*, is in its third edition (2011).
+:::
+
+::: summary
+- Unit cost $C = C_m + C_p + C_t/N$: processes with high tooling cost and low variable cost win above the crossover volume $N^* = (C_{t2} - C_{t1})/(v_1 - v_2)$.
+- Shortlist processes by material, shape, size, tolerance and volume; rank them with the cost model.
+- Boothroyd–Dewhurst DFA: a part is needed only if it moves relative to the others, must be a different material for a fundamental reason, or must be separate for assembly or disassembly. $E_\text{ma} = N_\text{min}\times3\,\mathrm s/t_\text{ma}$.
+- Eliminate fasteners first; then make the remaining parts easy to handle and insert. Check that combined parts are still cheaper overall.
+- Process rules: coarsest tolerances that work, standard tools and few set-ups (machining); uniform thin walls, draft, ribs (moulding and casting); bend radii, hole distances and bend reliefs (sheet metal).
+- Moulding cooling time $\propto h^2$; a cantilever snap's root strain is $\varepsilon = 1.5\,t\,y/L^2$, to be kept below the supplier's permissible strain.
 :::
 
 ## Exercises
 
-::: exercise DFM for machining {#ex-dfm-mach level=3 check="3"}
-A bracket has 5 features: 4 bolt holes (M10 clearance, 11 mm diameter, 25 mm deep, blind) and 1 pocket (40 × 30 × 15 mm, R3 internal radius). Identify the DFM violations and suggest corrections.
-
+::: exercise Crossover volume {#exr-crossover level=1 check="4000"}
+Process A has tooling cost 2 000 and variable cost 12.00 per part; process B has tooling cost 30 000 and variable cost 5.00 per part. Above what production volume is process B cheaper? (Enter $N^*$.)
 ::: solution
-**DFM violations:**
-
-1. **Blind holes**: the blind hole requires a spot-drill, a drill, and a counterbore (3 operations). **Correction: change to through-holes (1 operation).**
-2. **Small internal radius**: R3 requires a 6 mm end mill, which has a length-to-diameter ratio of 5:1 (chatter risk). **Correction: increase to R5 (10 mm end mill, L/D = 2.5, no chatter).**
-3. **Deep pocket**: 15 mm deep with a 6 mm tool is L/D = 2.5, which is acceptable, but the chip evacuation is poor. **Correction: add a chip-breaker groove or change to a through-pocket.**
-
-**The DFM corrections reduce the machining time from 18 minutes to 12 minutes (33 % reduction), and the cost from £54 to £36 per part.**
+$N^* = (30\,000 - 2\,000)/(12.00 - 5.00) = 28\,000/7.00 = 4\,000$ parts. At exactly 4 000 both cost $12.00 + 0.50 = 12.50 = 5.00 + 7.50$ ✓.
 :::
 :::
 
-::: exercise DFA part-count reduction {#ex-dfa-count level=3 check="8"}
-An assembly has 15 parts: 3 plastic housings (ABS), 2 metal brackets (steel), 4 screws (M4), 2 rubber feet, 1 PCB, 1 battery, 1 motor, and 2 bearings. Apply the B-D three-question test and estimate the reduced part count.
-
+::: exercise Unit cost of a moulding {#exr-unit-cost level=1 check="1.55"}
+An injection mould costs 40 000. Each part needs 0.30 of material and 0.45 of machine time. What is the unit cost for a run of 50 000 parts? (Enter $C$ in currency units per part.)
 ::: solution
-**Part-count reduction:**
-
-| Part | Moves? | Different material? | Separated? | Merge? |
-|------|--------|-------------------|-----------|--------|
-| 3 housings → 1 | No | No (all ABS) | No | **Merge: 3 → 1 housing** |
-| 2 brackets → 1 | No | No (both steel) | No | **Merge: 2 → 1 bracket** |
-| 4 screws → 2 | No | No | Yes (access) | **Reduce: 4 → 2** |
-| 2 rubber feet | No | Yes | No | **Merge: 2 → 1 (integral rubber pad)** |
-| PCB, battery, motor, bearings | Yes/No | Yes | Yes | Keep |
-
-**Reduced part count: 1 housing + 1 bracket + 2 screws + 1 PCB + 1 battery + 1 motor + 2 bearings = 9 parts. The part count is reduced from 15 to 9 (40 % reduction), and the assembly time is reduced from 60 seconds to 35 seconds (42 % reduction).**
+$C = 0.30 + 0.45 + 40\,000/50\,000 = 0.75 + 0.80 = 1.55$. More than half the cost is tooling at this volume; at 500 000 parts it would be $0.83$.
 :::
 :::
 
-::: exercise DFM/DFA cost crossover {#ex-dfm-crossover level=3 check="200"}
-A part can be made as: (A) 2 machined parts, £80 each, £1 000 tooling, £10 assembly; or (B) 1 cast part, £95, £5 000 tooling, £0 assembly. At what volume does option B become cheaper?
-
+::: exercise Design efficiency {#exr-efficiency level=1 check="25"}
+An assembly has a theoretical minimum of 5 parts and an estimated manual assembly time of 60 s. What is its Boothroyd–Dewhurst design efficiency? (Enter $E_\text{ma}$ in per cent.)
 ::: solution
-$$
-c _ { A } \; = \; 2 \times 8 0 + 1 \ 0 0 0 / N + 1 0 \; = \; 1 7 0 + 1 \ 0 0 0 / N
-$$
-
-$$
-c _ { B } \; = \; 9 5 + 5 \ 0 0 0 / N + 0 \; = \; 9 5 + 5 \ 0 0 0 / N
-$$
-
-**Crossover:** $1 7 0 + 1 \ 0 0 0 / N = 9 5 + 5 \ 0 0 0 / N$
-
-$$
-7 5 \; = \; 4 \ 0 0 0 / N \quad \Longrightarrow \quad N \; = \; 4 \ 0 0 0 / 7 5 \; = \; { \bf 5 3 } \ \text{units}
-$$
-
-**Option B becomes cheaper at a volume of 53 units. At a volume of 1 000 units, Option A costs £171 and Option B costs £100, a saving of £71 per unit.**
+$E_\text{ma} = 5\times3/60 = 0.25 = 25\,\%$.
 :::
 :::
 
-::: exercise Snap-fit design {#ex-snapfit level=3 check="2"}
-A snap-fit joint must retain a 50 N axial load. The cantilever beam has a width of 8 mm, a thickness of 2 mm, a length of 15 mm, and the material is ABS (E = 2 200 MPa, strain limit = 2 %). Calculate the maximum deflection and the insertion force.
-
+::: exercise Minimum part count of a pump cover {#exr-min-parts level=2 check="3"}
+A pump cover subassembly consists of a cast cover, a gasket, six bolts, six washers, a nameplate fixed by two rivets, and a bronze bearing bush pressed into the cover to support the rotating shaft. The information on the nameplate can be cast or laser-marked onto the cover. Apply the three minimum-part questions and find $N_\text{min}$. (Enter the number of parts.)
 ::: solution
-The maximum strain for a cantilever snap-fit is:
-
-$$
-\varepsilon \; = \; { \frac { 1 . 5 \, y \, t } { L ^ { 2 } } } \quad \Longrightarrow \quad y \; = \; { \frac { \varepsilon \, L ^ { 2 } } { 1 . 5 \, t } } \; = \; { \frac { 0 . 0 2 \times 1 5 ^ { 2 } } { 1 . 5 \times 2 } } \; = \; { \bf 1 . 5 } \ \text{mm}
-$$
-
-The insertion force (with a 45° lead-in chamfer, friction coefficient 0.4):
-
-$$
-F \; = \; { \frac { w \, t ^ { 2 } \, \sigma } { 6 \, L } } \times ( \mu + \tan \alpha ) / ( 1 - \mu \tan \alpha )
-$$
-
-$$
-F \; = \; { \frac { 8 \times 4 \times 4 4 } { 6 \times 1 5 } } \times { \frac { 0 . 4 + 1 } { 1 - 0 . 4 } } \; = \; { \frac { 1 \ 4 0 8 } { 9 0 } } \times { \frac { 1 . 4 } { 0 . 6 } } \; = \; 1 5 . 6 \times 2 . 3 3 \; = \; { \bf 3 6 } \ \text{N}
-$$
-
-**The maximum deflection is 1.5 mm, and the insertion force is 36 N. The retention force (50 N) is greater than the insertion force (36 N), so the snap-fit will not back out under load. The snap-fit replaces 2 screws, and the assembly time is reduced from 20 seconds to 3 seconds.**
+Cover: base part, counts. Gasket: a compliant sealing material different from the cast metal for a fundamental reason; counts. Bolts, washers, rivets: fasteners; fail. Nameplate: its function can be integrated into the cover; fails. Bush: must be a different material (bronze bearing surface against the shaft, which the cast cover cannot provide); counts. $N_\text{min} = 3$ of 18 parts. In practice the cover must still be bolted to the pump body (it must be removable), but the analysis points to reducing the bolt count, using captive bolts, or eliminating the washers.
 :::
 :::
 
-::: exercise DfE material labelling {#ex-dfe-label level=2 check="6"}
-A product has 6 material families: ABS, PC/ABS, PA6-GF30, steel, aluminium, and copper. How many ISO 11469 resin identification codes are needed, and how many material families should be targeted for a product designed for recycling?
-
+::: exercise Snap-fit deflection {#exr-snap level=2 check="1.28"}
+A cantilever snap hook of constant rectangular section is $12\,\mathrm{mm}$ long and $1.5\,\mathrm{mm}$ thick, in a polymer with a permissible strain of $2\,\%$. What is the largest tip deflection (the undercut depth) it can be designed for? (Enter $y$ in mm.)
 ::: solution
-**3 resin identification codes are needed (ABS, PC/ABS, PA6-GF30), and the metals (steel, aluminium, copper) are identified by their standard material grades.** **For a product designed for recycling, the target is 1–2 polymer families (not 3), because the sorting cost increases with the number of families. The DfE action is to replace the PC/ABS with ABS (if the impact strength allows) or with PA6-GF30 (if the stiffness allows), reducing the polymer families from 3 to 2.**
+From [[#eq-snap-strain]], $y = \dfrac{2\varepsilon L^2}{3t} = \dfrac{2\times0.02\times144}{3\times1.5} = 1.28\,\mathrm{mm}$.
 :::
 :::
 
-::: exercise DFM review ROI {#ex-dfm-roi level=3 check="100"}
-A DFM review costs 4 hours of a manufacturing engineer's time (£100/hour) and reduces the piece cost by 15 %. The annual production is 50 000 units at £80 per unit. What is the ROI?
-
+::: exercise Cooling time and wall thickness {#exr-cooling level=2 check="2.25"}
+A moulded part's wall is to be reduced from $3\,\mathrm{mm}$ to $2\,\mathrm{mm}$, with the same material and temperatures. By what factor does the cooling time decrease? (Enter the ratio $t_{3\,\mathrm{mm}}/t_{2\,\mathrm{mm}}$.)
 ::: solution
-$$
-\text{Review cost } \; = \; 4 \times 1 0 0 \; = \; 4 0 0 \ \text{pounds}
-$$
-
-$$
-\text{Annual saving } \; = \; 0 . 1 5 \times 8 0 \times 5 0 \ 0 0 0 \; = \; 6 0 0 \ 0 0 0 \ \text{pounds}
-$$
-
-$$
-\text{ROI } \; = \; { \frac { 6 0 0 \ 0 0 0 } { 4 0 0 } } \; = \; { \bf 1 \ 5 0 0 : 1 }
-$$
-
-**The ROI is 1 500:1. The DFM review is the highest-return activity in the design process, and the return is the reason the review is mandatory at every gate. The engineer who skips the DFM review is not saving 4 hours; they are spending £600 000 per year.**
+From [[#eq-cooling]], $t_c \propto h^2$: $(3/2)^2 = 2.25$.
 :::
 :::
 
-::: exercise Derivation: the B-D assembly time model {#ex-derive-bd level=4 check="5"}
-The Boothroya-Dewhurst assembly time for a part is $T = T _ { h } + T _ { i }$ , where $T _ { h }$ is the handling time and $T _ { i }$ is the insertion time. The handling time is $T _ { h } = T _ { h , \min } + C _ { h }$ , where $T _ { h , \min } = 3$ s (the minimum time to pick up a part) and $C _ { h }$ is the handling complexity (0–8 s). The insertion time is $T _ { i } = T _ { i , \min } + C _ { i }$ , where $T _ { i , \min } = 1$ s (the minimum time to insert a part) and $C _ { i }$ is the insertion complexity (0–15 s). Show that the minimum assembly time for $n$ parts is $4 n$ seconds, and evaluate the time for 10 parts with average complexity.
-
+::: exercise Flat length of a bent bracket {#exr-bend level=2 check="54.08"}
+An L-bracket is bent through $90^\circ$ from $1.5\,\mathrm{mm}$ sheet with an inside radius of $2.0\,\mathrm{mm}$ and K-factor $0.40$. The two flat legs, measured up to the start of the bend, are $30\,\mathrm{mm}$ and $20\,\mathrm{mm}$ long. What is the flat blank length? (Enter it in mm, rounded to two decimal places.)
 ::: solution
-The minimum assembly time per part is $T _ { \min } = T _ { h , \min } + T _ { i , \min } = 3 + 1 = 4$ s. For $n$ parts:
-
-$$
-T _ { \text{total } } \; = \; \sum _ { i \, = 1 } ^ { n } ( T _ { h , \min } + C _ { h , i } + T _ { i , \min } + C _ { i , i } ) \; = \; 4 n + \sum C _ { h , i } + \sum C _ { i , i }
-$$
-
-For 10 parts with average complexity ($C _ { h } = 3$ s, $C _ { i } = 5$ s):
-
-$$
-T _ { \text{total } } \; = \; 4 \times 1 0 + 3 \times 1 0 + 5 \times 1 0 \; = \; 4 0 + 3 0 + 5 0 \; = \; { \bf 1 2 0 } \ \text{seconds}
-$$
-
-**The minimum assembly time is 40 seconds (4 × 10), and the actual time is 120 seconds (3× the minimum). The complexity is the reason the assembly takes 3× longer than the minimum, and the DFM/DFA action is to reduce the complexity (standardise the parts, add self-locating features, minimise the fasteners).** $\blacksquare$
+$BA = \frac{\pi}{2}(2.0 + 0.40\times1.5) = 1.5708\times2.6 = 4.084\,\mathrm{mm}$. Flat length $= 30 + 20 + 4.084 = 54.084 \approx 54.08\,\mathrm{mm}$. Check: it lies between the inside-arc length ($\frac\pi2\times2.0 = 3.14$) and the outside-arc length ($\frac\pi2\times3.5 = 5.50$) added to the legs ✓.
 :::
 :::
 
-::: exercise Derivation: the DFM cost crossover {#ex-derive-crossover level=4 check="5"}
-Show that the crossover volume between two manufacturing options is $N ^ { * } = ( c _ { \text{tooling, B } } - c _ { \text{tooling, A } } ) / ( c _ { \text{piece, A } } - c _ { \text{piece, B } } )$ , and evaluate for Option A (tooling £2 000, piece £50) and Option B (tooling £10 000, piece £30).
-
+::: exercise Tool replacement in the cost model {#exr-tool-life level=3}
+A die costs $C_t$ and wears out after $N_T$ parts, after which it must be replaced at the same cost. (a) Write the unit cost for a run of $N$ parts. (b) Show that for $N \gg N_T$ the unit cost tends to $v + C_t/N_T$, and explain what this means for comparing processes at very high volumes. (c) A stamping die costs 25 000 and lasts 400 000 parts; variable cost is 0.12. Find the unit cost for 1 000 000 parts.
 ::: solution
-The total cost for each option is:
+(a) The number of dies needed is $\lceil N/N_T\rceil$, so $C = v + C_t\lceil N/N_T\rceil/N$.
 
-$$
-C _ { A } ( N ) \; = \; c _ { \text{tooling, A } } + N \, c _ { \text{piece, A } } \; = \; 2 \ 0 0 0 + 5 0 N
-$$
+(b) $\lceil N/N_T\rceil/N$ lies between $1/N_T$ and $1/N_T + 1/N$, so it tends to $1/N_T$ as $N \to \infty$. Tooling then behaves as a variable cost $C_t/N_T$ per part; the crossover analysis of [[#prop-crossover]] must include it, and at very high volumes durable tooling (hardened or carbide dies) can be cheaper despite its higher price.
 
-$$
-C _ { B } ( N ) \; = \; c _ { \text{tooling, B } } + N \, c _ { \text{piece, B } } \; = \; 1 0 \ 0 0 0 + 30 N
-$$
-
-Setting $C _ { A } = C _ { B }$ :
-
-$$
-2 \ 0 0 0 + 5 0 N \; = \; 1 0 \ 0 0 0 + 3 0 N \quad \Longrightarrow \quad 2 0 N \; = \; 8 \ 0 0 0 \quad \Longrightarrow \quad N \; = \; { \bf 4 0 0 }
-$$
-
-**The crossover volume is 400 units. Below 400 units, Option A (low tooling, high piece cost) is cheaper. Above 400 units, Option B (high tooling, low piece cost) is cheaper. The crossover volume is the reason the injection moulding tool is justified at 100 000 units and the machined part is justified at 10 units.** $\blacksquare$
+(c) $\lceil 10^6/4\times10^5\rceil = 3$ dies: $C = 0.12 + 3\times25\,000/10^6 = 0.12 + 0.075 = 0.195$.
 :::
 :::
 
-::: quiz DFM {#quiz-dfm}
-The most expensive machining feature is:
-
-- [ ] A tight tolerance
-- [ ] A complex geometry
-- [x] A five-axis operation
-- [ ] A thin wall
-
+::: exercise A DFMA redesign {#exr-redesign level=3}
+A hand-held torch has: an aluminium tube body, a threaded aluminium tail cap with a spring, a reflector, a lens, a threaded bezel that holds the lens, an O-ring at each threaded joint, an LED module on a small circuit board, two screws holding the board, a push switch, and a battery holder. Apply the three minimum-part questions, propose a redesign with fewer parts, and discuss what the redesign might cost in manufacture, sealing, service (battery change) and recycling.
 ::: solution
-**A five-axis operation.** A five-axis operation costs 3–5× more than a three-axis operation because the part must be re-oriented in the fixture, the fixture is custom, and the programming is more complex. The five-axis operation is the reason the part costs £500 instead of £100, and the reason is the design, not the machinist.
+A defensible analysis: tube body (base) counts; tail cap must be separate to change the battery (question 3); spring moves relative to others and must be a spring material (questions 1 and 2), but could be integrated into the battery holder; reflector must be reflective but could be a coated feature of a moulded part; lens must be transparent (different material) — counts; bezel needed only to retain the lens, which could be over-moulded or snapped; O-rings are a different material (elastomer seal) — count, unless sealing is achieved by an over-moulded seal; LED module counts (different materials, electronic); screws fail; switch moves (counts); battery holder may be combined with the spring and contacts.
+
+A redesign might mould the body in a polymer with an integral reflector, retain the lens by a snap ring or over-moulding, snap the LED board into ribs, and combine spring, contacts and switch into one tail-cap module. Costs: a mould and possibly two-shot moulding; a polymer body has poorer heat-sinking for the LED; a non-removable lens is not serviceable; sealing a snap joint to an ingress-protection rating is harder than sealing a thread with an O-ring; the battery change must stay tool-free. For recycling, separable metal and polymer parts and a removable battery are desirable, which argues against over-moulding dissimilar materials. A good answer shows the part count before and after and states which questions each surviving part passes.
 :::
-:::
-
-::: quiz DFA {#quiz-dfa}
-The Boothroya-Dewhurst three-question test asks whether a part can be merged. Which question is NOT part of the test?
-
-- [ ] Does the part move relative to the parts already assembled?
-- [ ] Does the part require a different material?
-- [ ] Does the part need to be separated for assembly or maintenance?
-- [x] Is the part available from two suppliers?
-
-::: solution
-**"Is the part available from two suppliers?"** The B-D three-question test is: (1) Does the part move relative to the parts already assembled? (2) Does the part require a different material? (3) Does the part need to be separated for assembly or maintenance? If the answer to all three is "no," the part can be merged. The supplier availability is a procurement question, not a DFA question.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[design-process/embodiment-design]]** — The DFM/DFA review is performed at the embodiment stage, and the DFM feedback drives the layout iteration.
-- **[[design-process/design-process-overview]]** — The DFM/DFA review is the Gate 3 criterion for the design freeze, and the cost target is the gate decision.
-- **[[manufacturing/process-selection]]** — The DFM review selects the manufacturing process, and the process selection determines the design rules.
-- **[[manufacturing/machining]]** — The machining DFM rules (tool access, inside radius, wall thickness) are derived from the machining process capability.
-- **[[manufacturing/casting]]** — The casting DFM rules (draft angle, uniform wall, parting line) are derived from the casting process capability.
-- **[[manufacturing/polymer-composite-processing]]** — The moulding DFM rules (uniform wall, draft, gate location) are derived from the moulding process capability.
-- **[[manufacturing/joining]]** — The welding DFM rules (joint accessibility, symmetric welds, distortion control) are derived from the welding process capability.
-- **[[manufacturing/metrology-quality]]** — The DFM review checks that the tolerances are achievable and the inspection is accessible.
-- **[[design-process/sustainability]]** — The DfE rules (design for disassembly, material labelling, reversible joints) are the bridge to the sustainability lesson.
-
-::: history DFM/DFA: from the craftsman's intuition to the Boothroya-Dewhurst method {#history-dfm}
-**1940s** — **Henry Ford's** moving assembly line (1913) is the first systematic application of DFA: the product is designed for the assembly process, not the other way round. **Ford's insight is that the assembly time is the dominant cost, and the assembly time is determined by the design, not the worker.**
-
-**1960** — **Boothroya, J.** begins his research at the University of Liverpool on the mechanics of assembly, measuring the handling and insertion times of thousands of components. **Boothroya's measurements are the empirical foundation of the DFA method, and the measurements are the reason the method is quantitative, not qualitative.**
-
-**1971** — **Geoffrey Boothroya, G. Dewhurst, and W. Knight** publish the first version of the **Boothroya-Dewhurst DFA method** at the University of Massachusetts Amherst. The method estimates the assembly time from the part geometry and the fastener type, and the estimate is the basis for the part-count reduction. **The B-D method is the first quantitative DFA method, and the quantification is the reason the method is adopted by Xerox, IBM, and Hewlett-Packard.**
-
-**1989** — **Boothroya, Dewhurst, and Knight** publish *Product Design for Manufacture and Assembly*, the definitive DFA/DFM textbook. The book codifies the part-count reduction test, the assembly-time estimation, and the cost model. **The book is the reason DFM/DFA becomes a standard engineering practice, not an art.**
-
-**1990** — **The Design for Manufacture and Assembly (DFMA) software** (Boothroya Dewhurst Inc., now part of Siemens) automates the B-D method: the engineer enters the part geometry, and the software estimates the assembly time and the cost. **The software is the reason the B-D method is used by 10 000+ companies, and the adoption is the reason the method is the industry standard.**
-
-**1994** — **The US Department of Defense** mandates DFM/DFA reviews for all defence contracts over $1 million. **The mandate is the reason DFM/DFA becomes a contractual requirement, not a best practice, and the contractual requirement is the reason every defence contractor has a manufacturing engineer in the design review.**
-
-**2000s** — **The Design for Six Sigma (DFSS)** methodology integrates DFM/DFA with the statistical process control and the FMEA. The DFSS toolset includes the DFM checklist, the DFA time estimate, the process capability study, and the FMEA. **DFSS is the reason DFM/DFA becomes part of the quality management system, not a separate activity.**
-
-**2015** — **The additive manufacturing DFM** paradigm inverts the traditional DFM: instead of designing the part for the process, the process is designed for the part. **The AM DFM is the reason the part count is reduced by 50–90 % (the part is printed as one piece), and the reduction is the reason the assembly cost is eliminated.**
-:::
-
-::: summary DFM and DFA {#summary-dfm-dfa}
-- **DFM is the practice of designing the part so that the manufacturing process is simple, the tolerances are achievable, the material is available, and the inspection is straightforward.** 70–80 % of the product's life-cycle cost is determined at the design stage.
-- **The most important DFM principle is the part-count reduction: each part has a separate procurement, inspection, storage, and assembly cost.** The part that is not there cannot be procured, inspected, stored, assembled, or fail in the field.
-- **The most expensive machining feature is the five-axis operation (3–5× the cost of a three-axis operation).** The five-axis operation is the reason the part costs £500 instead of £100.
-- **The most expensive moulding feature is the undercut (2–5× the tool cost).** The undercut that is designed out of the part saves £5 000–£20 000 in tooling cost.
-- **The Boothroya-Dewhurst DFA method estimates the assembly time and reduces the part count.** The three-question test eliminates 30–50 % of the parts, and the elimination is the reason the assembly time drops by 30–50 %.
-- **The one-directional assembly is the most important DFA rule: the assembly that requires the operator to flip the product over three times takes three times longer.** The one-directional assembly is the reason the product is designed as a vertical stack.
-- **The snap-fit replaces 2–4 screws with a single snap action (2–5 seconds instead of 10–30 seconds per screw).** The snap-fit saves 20–50 % of the assembly time.
-- **The DFM/DFA trade-off is resolved by the cost model: the combined part is preferred if the process cost saving exceeds the tooling cost increase.** The crossover volume is the reason the combined part is preferred at high volume and the separate parts are preferred at low volume.
-- **The DFM/DFA review is the most cost-effective activity in the design process: the review costs 2–8 hours and saves 10–50 % of the manufacturing cost.** The ROI is 100:1 or better.
-- **Design for Environment (DfE) extends DFM/DFA to the end-of-life phase: the product must be disassembled, the materials must be separated, and the components must be recycled.** The DfE rule that conflicts most with DFA is "avoid bonded joints."
 :::
 
 ## Further reading
 
-- **Geoffrey Boothroya, G. Dewhurst and W. Knight (2010)** — *Product Design for Manufacture and Assembly*, 3rd ed. CRC Press. The definitive DFA/DFM textbook, by the inventors of the B-D method.
-- **Gerd Ulrich, Karl Eppinger and Steven Eppinger (2019)** — *Product Design and Development*, 7th ed. McGraw-Hill. Chapter 9: design for manufacture and assembly.
-- **James G. Bralla (1998)** — *Design for Manufacturability: Principles and Applications*, 2nd ed. McGraw-Hill. The DFM design rules for every manufacturing process.
-- **Robert B. Horstmann (1998)** — *Design for Manufacturability and Quality*. Prentice Hall. The DFM methodology integrated with the quality management system.
-- **Stefan H. Roelofsen (2004)** — "Function modelling in design: a review." *Proceedings of the 14th CIRP Design Seminar*. The function-structure method for DFM.
-- **Michael F. Ashby (2016)** — *Materials and the Environment: Eco-informed Material Choice*, 3rd ed. Butterworth-Heinemann. The DfE methodology, the material selection for sustainability, and the life-cycle assessment.
-- **ASME Y14.5-2018** — *Dimensioning and Tolerancing*. ASME. The GD&T standard for the DFM tolerance specification.
-- **ISO 11469:2015** — *Plastics — Generic identification and marking of plastics products*. The resin identification code standard for DfE.
+Boothroyd, Dewhurst and Knight, *Product Design for Manufacture and Assembly* (3rd edition, CRC Press, 2011), gives the complete DFA method with its handling and insertion time tables, and cost models for the main processes. Ashby, *Materials Selection in Mechanical Design* (5th edition, Butterworth-Heinemann, 2016), covers process selection charts and cost modelling. Ulrich, Eppinger and Yang, *Product Design and Development* (7th edition, McGraw-Hill, 2020), has a chapter on design for manufacturing within product development. Plastics suppliers' snap-fit and part-design guides give the permissible strains and design rules for their materials.

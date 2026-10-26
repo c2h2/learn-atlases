@@ -8,24 +8,25 @@
   "tagline": "Requirements, concept generation and selection, embodiment design, design for manufacture and assembly, reliability and risk, sustainability, standards and ethics",
   "summary": "Design turns a need into a product that can be made, used safely and maintained. The course follows the design process from customer needs and specifications through concept generation and selection to embodiment and detail design, and covers design for manufacture and assembly, reliability and risk, sustainable design, standards and the professional responsibilities of engineers.",
   "overview": [
-    "The engineering design process is the discipline that turns a customer need into a product that can be manufactured, used safely, maintained economically, and disposed of responsibly. The discipline is not a sequence of steps but a structured iteration: the designer moves from the vague need to the precise specification, from the specification to the concept, from the concept to the embodiment, and from the embodiment to the detail, and each step is a decision that constrains the next. The cost of changing a decision grows by a factor of ten with each step, and the growth is the reason the early decisions are the most important decisions the engineer makes.",
-    "The course follows the design process from the customer need through the requirements specification, the function structure, the morphological chart, the concept selection matrix, the embodiment layout, the sizing calculation, the tolerance stack-up, the design for manufacture and assembly, the reliability and risk assessment, the life-cycle assessment, and the standards and ethics that govern the engineer's obligation to the public. Each lesson is a stage in the process, and the stages are connected by the deliverables: the specification is the input to the concept generation, the concept selection is the input to the embodiment, the embodiment is the input to the DFM, and the DFM is the input to the production.",
-    "The quantitative tools of the design process are the quality function deployment (QFD), the morphological chart, the Pugh matrix, the weighted-objective matrix, the Pareto front, the tolerance stack-up (worst-case and RSS), the Boothroya-Dewhurst assembly time model, the piece-cost model, the Weibull reliability model, the FMEA/RPN, the fault tree, the life-cycle assessment, and the carbon footprint. The tools are not the design; the tools are the language in which the design decision is expressed, and the language is the reason the decision is defensible in a review, a court of law, and a regulatory investigation.",
-    "The course also covers the professional context of the design process: the engineering code of ethics, the standards hierarchy (ISO, EN, national, industry), the CE marking and the EU Directives, the intellectual property (patents, trademarks, copyrights, trade secrets), the professional indemnity, the chartered status, and the continuous professional development. The professional context is the reason the engineer's signature is a legal document, not a formality, and the legal document is the reason the engineer's obligation is to the public, not to the customer."
+    "Design is the part of engineering in which the problem is not fully given. A customer need, a market opportunity or a regulation has to be turned into a product that can be made, used safely, maintained and finally disposed of, and on the way the designer makes thousands of decisions with incomplete information. Analysis — the subject of most of the curriculum — predicts how a fully described artefact will behave; design proposes the artefact and uses analysis to judge it.",
+    "The course follows a product through the systematic design process of Pahl and Beitz and VDI 2221: clarifying the task and writing a measurable specification, generating concepts from a function structure, selecting among them, and developing the chosen concept into a layout and then detail documentation. Later chapters treat the qualities every design must be checked for — ease of manufacture and assembly, reliability and safety, environmental impact — and the standards, laws and professional obligations within which engineers work.",
+    "Many of the methods are simple arithmetic: present values for life-cycle cost, weighted scores, tolerance stack-ups, assembly-time estimates, reliability of series and parallel systems, life-cycle inventories. The difficulty lies elsewhere — in stating requirements that can be verified, in generating genuinely different alternatives before committing to one, in knowing what the numbers in a scoring matrix do and do not mean, and in finding the expensive mistakes early. Worked examples and case studies of real failures show where the methods help and where they mislead.",
+    "The course assumes the drawing and tolerancing of [[engineering-graphics]] and uses results from mechanics of materials and materials science where designs are sized. It is a companion to [[machine-design]], which applies the process to shafts, bearings, gears, fasteners and other machine elements."
   ],
   "prerequisites": [
     "engineering-graphics"
   ],
   "outcomes": [
-    "Model the design process as a structured iteration (Pahl & Beitz, V-model, stage-gate) and identify the cost-of-change curve that justifies the early investment in design.",
-    "Elicit, prioritise, and document the customer requirements using SMART criteria, MoSCoW prioritisation, and quality function deployment (QFD).",
-    "Generate concepts using function structures, morphological charts, brainstorming, brainwriting, TRIZ, and analogical transfer, and document the concepts on concept sheets.",
-    "Select concepts using screening matrices, Pugh matrices, weighted-objective matrices, and Pareto fronts, and perform the weight sensitivity analysis.",
-    "Develop the embodiment design: layout, packaging, architecture, interface control, sizing calculations, tolerance stack-up (worst-case and RSS), and prototype hierarchy.",
-    "Apply design for manufacture and assembly (DFM/DFA) rules, the Boothroya-Dewhurst assembly time model, and the piece-cost model to minimise the manufacturing cost.",
-    "Assess reliability and risk using the Weibull distribution, the FMEA/RPN, the fault tree, the reliability block diagram, the derating analysis, and the risk matrix.",
-    "Conduct a life-cycle assessment (LCA), calculate the carbon footprint, and apply the circular economy principles (design for disassembly, remanufacture, recycling) to minimise the environmental impact.",
-    "Identify the applicable standards and regulations (ISO, EN, CE marking, EU Directives), understand the intellectual property framework (patents, trademarks, FTO), and apply the engineering code of ethics to the design decision."
+    "Describe the main models of the design process (Pahl and Beitz/VDI 2221 phases, V-model, stage-gate) and explain why they are built around iteration and early verification.",
+    "Calculate the life-cycle cost of competing designs using present values, and the expected cost of iteration and late-found defects.",
+    "Elicit customer needs and write a product specification with measurable targets and verification methods, using quality function deployment where appropriate.",
+    "Decompose a product into a function structure and generate alternative concepts with morphological charts, structured creativity methods and patent searches.",
+    "Select concepts with screening and weighted scoring matrices, test the sensitivity of the choice to the weights, and recognise dominated designs.",
+    "Develop a concept into a layout with defined architecture and interfaces, size its parts, and compute worst-case and statistical tolerance stack-ups.",
+    "Apply design-for-manufacture and design-for-assembly rules and estimate part and assembly costs to compare design alternatives.",
+    "Analyse reliability with exponential and Weibull models, reliability block diagrams, FMEA and fault trees, and reduce risk by designing hazards out.",
+    "Carry out a simple life-cycle assessment and use it to choose materials and design for disassembly, reuse and recycling.",
+    "Identify the standards and legal requirements that apply to a product, and reason about engineers' ethical responsibilities using real case studies."
   ],
   "chapters": [
     {
@@ -102,99 +103,132 @@
   ],
   "history": [
     {
-      "year": 1775,
-      "title": "Watt's separate condenser patent",
-      "detail": "Matthew Boulton and James Watt patent the separate condenser, the first industrial patent to be enforced in court. The patent gives Watt a 25-year monopoly on the steam engine."
+      "year": 1949,
+      "title": "First FMEA procedure",
+      "detail": "The US military procedure MIL-P-1629, Procedures for Performing a Failure Mode, Effects and Criticality Analysis, sets out the first formal method for tracing how each component failure affects a system."
     },
     {
-      "year": 1879,
-      "title": "Tay Bridge disaster",
-      "detail": "The railway bridge collapses in a storm, killing 75 people. The inquiry finds inadequate design, poor construction, and negligent inspection. The disaster is the reason the engineer's signature is a legal document."
+      "year": 1951,
+      "title": "The Weibull distribution",
+      "detail": "Waloddi Weibull publishes \"A statistical distribution function of wide applicability\" in the Journal of Applied Mechanics; his distribution becomes the standard model for fatigue and wear-out lives.",
+      "people": [
+        "Waloddi Weibull"
+      ]
     },
     {
-      "year": 1927,
-      "title": "Shewhart's PDCA cycle",
-      "detail": "Walter Shewhart publishes 'The Economic Control of Quality of Manufactured Product', introducing the PDCA (Plan-Do-Check-Act) cycle, the foundation of the iterative design process."
+      "year": 1956,
+      "title": "The first TRIZ paper",
+      "detail": "Genrich Altshuller and Rafael Shapiro publish \"On the psychology of inventive creativity\" in Voprosy Psikhologii, the start of TRIZ, the theory of inventive problem solving built from patterns in patents.",
+      "people": [
+        "Genrich Altshuller",
+        "Rafael Shapiro"
+      ]
     },
     {
-      "year": 1947,
-      "title": "IMechE Royal Charter",
-      "detail": "The Institution of Mechanical Engineers is granted its Royal Charter, establishing the chartered engineer (CEng) as a legal qualification."
+      "year": 1962,
+      "title": "Conference on Design Methods",
+      "detail": "A conference at Imperial College London in September 1962, with proceedings edited by J. Christopher Jones and D. G. Thornley, marks the beginning of design methods as an academic field.",
+      "people": [
+        "J. Christopher Jones",
+        "D. G. Thornley"
+      ]
     },
     {
-      "year": 1963,
-      "title": "Pugh's concept selection matrix",
-      "detail": "Edward Pugh publishes 'Total Design', introducing the concept selection matrix (the Pugh matrix), the most widely used concept selection tool in engineering."
+      "year": 1977,
+      "title": "Pahl and Beitz's Konstruktionslehre",
+      "detail": "Gerhard Pahl and Wolfgang Beitz publish their systematic approach to engineering design — task clarification, conceptual, embodiment and detail design; the English translation follows in 1984.",
+      "people": [
+        "Gerhard Pahl",
+        "Wolfgang Beitz"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "Hyatt Regency walkway collapse",
+      "detail": "On 17 July 1981 two suspended walkways in the Kansas City Hyatt Regency fall, killing 114 people; a change from single to paired hanger rods had doubled the load on the fourth-floor connection."
     },
     {
       "year": 1986,
-      "title": "Challenger disaster",
-      "detail": "The space shuttle breaks apart 73 seconds after launch, killing 7 astronauts. The O-ring seals failed because the launch temperature was below the certification limit, and the engineers' recommendation to postpone was overruled."
+      "title": "Loss of Challenger",
+      "detail": "On 28 January 1986 the O-ring seals of a solid rocket booster field joint fail in cold weather and the shuttle breaks up 73 seconds after launch, killing seven; Thiokol engineers' recommendation not to launch had been reversed.",
+      "people": [
+        "Roger Boisjoly"
+      ]
     },
     {
       "year": 1987,
-      "title": "Brundtland Report",
-      "detail": "The World Commission on Environment and Development defines sustainable development as 'development that meets the needs of the present without compromising the ability of future generations to meet their own needs.'"
+      "title": "Our Common Future",
+      "detail": "The World Commission on Environment and Development (the Brundtland Commission) defines sustainable development as meeting the needs of the present without compromising the ability of future generations to meet their own needs.",
+      "people": [
+        "Gro Harlem Brundtland"
+      ]
     },
     {
-      "year": 2009,
-      "title": "EU Ecodesign Directive",
-      "detail": "The EU Ecodesign Directive (2009/125/EC) sets the minimum energy performance standards for energy-related products, covering 14 product groups and saving 10% of the EU's primary energy by 2020."
+      "year": 1988,
+      "title": "The House of Quality",
+      "detail": "John Hauser and Don Clausing's Harvard Business Review article introduces Western engineers to quality function deployment, developed in Japan from the quality tables of Mitsubishi's Kobe shipyard (1972).",
+      "people": [
+        "John R. Hauser",
+        "Don Clausing"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "Stage-gate product development",
+      "detail": "Robert Cooper's article in Business Horizons describes stage-gate systems, in which development stages are separated by go/kill decision points.",
+      "people": [
+        "Robert G. Cooper"
+      ]
     }
   ],
   "references": [
     {
-      "authors": "Gerhard Pahl, Wolfgang Beitz, Karl-Heinz Feldt and Wolfgang Pehkonen",
-      "title": "Engineering Design: A Systematic Approach",
-      "edition": "4th",
-      "publisher": "Springer",
-      "year": "2007"
+      "title": "Engineering Design: A Systematic Approach (3rd English edition)",
+      "authors": "Gerhard Pahl, Wolfgang Beitz, Jörg Feldhusen and Karl-Heinrich Grote",
+      "year": 2007,
+      "note": "The systematic method in full: requirements lists, function structures, working principles, and the rules and principles of embodiment design."
     },
     {
-      "authors": "Stuart Pugh",
-      "title": "Total Design: A Compendium of Design Methodology and Organisation",
-      "publisher": "Addison-Wesley",
-      "year": "1990"
+      "title": "Product Design and Development (7th edition)",
+      "authors": "Karl T. Ulrich, Steven D. Eppinger and Maria C. Yang",
+      "year": 2020,
+      "note": "Industrial practice of product development: customer needs, target specifications, concept generation and selection, product architecture, prototyping and development economics."
     },
     {
-      "authors": "Graham P. Hammond and Michael F. Ashby",
-      "title": "Materials Selection in Mechanical Design",
-      "edition": "6th",
-      "publisher": "Butterworth-Heinemann",
-      "year": "2021"
-    },
-    {
-      "authors": "Geoffrey Boothroya, Dewhurst and Winston",
-      "title": "Product Design for Manufacture and Assembly",
-      "edition": "3rd",
-      "publisher": "CRC Press",
-      "year": "2010"
-    },
-    {
+      "title": "Engineering Design Methods: Strategies for Product Design (5th edition)",
       "authors": "Nigel Cross",
-      "title": "Engineering Design Methods: Strategies for Product Design",
-      "edition": "4th",
-      "publisher": "Wiley",
-      "year": "2011"
+      "year": 2021,
+      "note": "A short, readable guide to design process models and the main methods — objectives trees, function analysis, morphological charts, weighted objectives."
     },
     {
-      "authors": "Mike Martin and Roland Schinzinger",
-      "title": "Ethics in Engineering",
-      "edition": "4th",
-      "publisher": "McGraw-Hill",
-      "year": "2005"
+      "title": "Engineering Design (6th edition)",
+      "authors": "George E. Dieter and Linda C. Schmidt",
+      "year": 2021,
+      "note": "A broad undergraduate text covering the process together with QFD, decision making, materials and process selection, reliability and cost evaluation."
     },
     {
-      "authors": "IMechE",
-      "title": "The Institution of Mechanical Engineers: Rules and Regulations",
-      "publisher": "IMechE",
-      "year": "2023"
+      "title": "Product Design for Manufacture and Assembly (3rd edition)",
+      "authors": "Geoffrey Boothroyd, Peter Dewhurst and Winston Knight",
+      "year": 2011,
+      "note": "The DFA method with its handling and insertion time data, and early cost estimating for the main manufacturing processes."
     },
     {
-      "authors": "EU",
-      "title": "Directive 2006/42/EC on Machinery (Machinery Directive)",
-      "publisher": "European Parliament",
-      "year": "2006"
+      "title": "Practical Reliability Engineering (5th edition)",
+      "authors": "Patrick D. T. O'Connor and Andre Kleyner",
+      "year": 2012,
+      "note": "Life distributions, Weibull analysis, system reliability, FMEA, fault trees and reliability testing from an industrial viewpoint."
+    },
+    {
+      "title": "Materials and the Environment: Eco-informed Material Choice (3rd edition)",
+      "authors": "Michael F. Ashby",
+      "year": 2021,
+      "note": "The eco-audit method and embodied energy and carbon data for engineering materials and processes."
+    },
+    {
+      "title": "Ethics in Engineering (4th edition)",
+      "authors": "Mike W. Martin and Roland Schinzinger",
+      "year": 2005,
+      "note": "Engineering as social experimentation, ethical theories, codes of conduct and the classic case studies."
     }
   ],
   "next": [

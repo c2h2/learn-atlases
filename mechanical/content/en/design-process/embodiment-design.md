@@ -1,473 +1,375 @@
-Embodiment design is the phase in which the concept becomes a geometry, the geometry becomes a structure, and the structure becomes a product. The concept says "use a planetary gearbox with a worm output"; the embodiment says "the sun gear has 17 teeth, the planet gears have 23 teeth, the ring gear has 63 teeth, the module is 2.5 mm, the face width is 40 mm, the gears are 20MnCr5 case-hardened steel, the shaft is 35 mm diameter, 42CrMo4 QT, the bearings are 6207-2RS deep-groove ball bearings, the housing is EN-GJL-250 grey cast iron, and the oil sump depth is 25 mm." **The concept is a promise; the embodiment is the contract, and the contract is the document that the manufacturer, the quality engineer, and the customer will hold you to.**
+A selected concept is a principle: "a spur-gear reduction driving a lead screw", "a cantilevered arm on a slewing bearing", "a membrane pump driven by an eccentric". Nobody can make a principle. **Embodiment design** is the phase in which the concept acquires a form — an arrangement of parts in space, a material and a rough size for each, the interfaces between them, and enough calculation to show that the arrangement will carry its loads, fit its envelope and be made at the target cost. **Detail design** then fixes every remaining dimension, tolerance, surface finish and material specification and records them in the drawings and parts lists that manufacturing works from. The two phases overlap heavily, and most of the engineering hours on a mechanical product are spent in them.
 
-The embodiment phase is where the design is won or lost. The concept is 10 % of the design effort and 90 % of the design's character; the embodiment is 30 % of the design effort and 90 % of the design's cost. **The embodiment decisions — the wall thickness, the fillet radius, the draft angle, the tolerance, the surface finish, the fastener size, the seal type — determine whether the product can be made, assembled, inspected, maintained, and disposed of, and the determination is made before the first part is cut.** The embodiment is where the design-for-manufacture analysis (see [[design-process/design-for-manufacture|DFM]]) is performed, where the tolerance stack-up is calculated, where the layout is frozen, and where the design freeze gate is passed.
+This chapter follows Pahl and Beitz's division of the work. It starts with **product architecture** — how functions are mapped onto physical chunks and how the chunks interact. It then gives the basic rules and principles of embodiment (clarity, simplicity, safety; direct load paths; division of tasks; self-help), the procedure for sizing a part from its loads, the analysis of **tolerance stack-ups** by worst-case and statistical methods, and the planning of **prototypes and tests**. The input is a concept chosen by the methods of [[design-process/concept-selection]]; the output is the starting point for [[design-process/design-for-manufacture]] and [[design-process/reliability-risk]]. The stress analysis itself is taught in [[mechanics-of-materials]] and the sizing of standard machine elements in [[machine-design]]; here they are used, not derived.
 
-::: warning Nine ways embodiment design goes wrong
-**Freezing the layout before the interfaces are defined.** The engineer who fixes the overall dimensions before the mounting interface, the shaft seal, the cable entry, and the maintenance access are defined will discover at the detail-design stage that the seal cannot be changed without removing the gearbox from the machine. **Define the interfaces first, the internal geometry second, and the external envelope third. The interface is the constraint; the envelope is the result.** **Not doing the tolerance stack-up.** The engineer who designs each part to ± 0.5 mm without checking the cumulative tolerance of the assembly will discover that the assembly does not fit, or that the clearance is 3 mm when it should be 0.5 mm. **Do the tolerance stack-up at the embodiment stage, not at the detail stage, and do it for every critical dimension chain. The stack-up is the reason the tolerance is ± 0.1 mm on the bearing seat and ± 1 mm on the mounting hole.** **Specifying tolerances that the process cannot hold.** The engineer who specifies ± 0.01 mm on a sand-cast surface is not specifying a tolerance; they are specifying a rework operation. **Every tolerance must be checked against the process capability ($C _ { p k }$) of the manufacturing process, and the process capability is the reason the tolerance is ± 0.5 mm on the cast surface and ± 0.02 mm on the machined surface.** **Not designing for assembly.** The engineer who designs a part that requires the assembler to hold three components, two fasteners, and a washer simultaneously is not designing a part; they are designing an assembly problem. **Apply the DFA rules (see [[design-process/design-for-manufacture|DFA]]): assemble from one direction, use self-locating features, minimise the part count, and avoid fasteners that require two hands.** **Ignoring the maintenance access.** The engineer who designs a sealed unit with no access to the wear parts is not designing a product; they are designing a landfill item. **Every wear part (bearing, seal, belt, filter, brush) must be replaceable without removing the product from its foundation, and the replacement procedure must be written before the design is frozen.** **Not specifying the surface finish.** The engineer who leaves the surface finish off the drawing is specifying "as machined," which means "whatever the machine leaves," which means "uncontrolled." **Every mating surface, sealing surface, bearing surface, and sliding surface must have a specified surface roughness (Ra or Rz), and the specification is the reason the surface is ground, lapped, or honed.** **Not designing for inspection.** The engineer who designs a bore with a tolerance of ± 0.01 mm and no datum feature is not specifying a bore; they are specifying an argument with the metrology engineer. **Every critical dimension must have a datum reference frame (see [[manufacturing/metrology-quality|metrology]]), and the datum is the reason the part is inspected on a CMM and not thrown in the scrap bin.** **Not considering the thermal expansion.** The engineer who designs a 500 mm aluminium bracket with a ± 0.05 mm tolerance and a 100 °C operating temperature range is not designing a bracket; they are designing a 0.12 mm thermal expansion that will close the clearance or crack the weld. **Calculate the thermal expansion for every critical dimension, and put the expansion in the tolerance stack-up.** **Not designing for the environment.** The engineer who designs a steel bracket for a marine environment without a coating specification is not designing a bracket; they are designing a rust stain. **Specify the corrosion protection (coating, plating, anodising, material selection) for the operating environment, and put the protection in the drawing note.**
+## From concept to layout {#sec-concept-to-layout}
+
+Embodiment proceeds from the coarse to the fine. A typical sequence is:
+
+1. Identify the requirements that govern form and size: loads, speeds, temperatures, envelope dimensions, masses, interfaces to the outside world, production volume, cost target. These come from the specification of [[design-process/requirements]].
+2. Make rough scale layouts of the main function carriers (motor, gearbox, structure, housing) to see whether the concept fits the envelope at all.
+3. Decide the architecture: which functions share a part, where the module boundaries lie, which interfaces are standardised.
+4. Size the main function carriers by calculation, then the auxiliary ones (bearings, seals, fasteners, covers).
+5. Check the layout against the rules of [[#sec-rules]] and against manufacture, assembly, maintenance and recycling; evaluate the alternatives where more than one layout was drawn.
+6. Prototype and test the uncertain parts; iterate.
+
+The steps are not strictly sequential. Sizing a shaft can show that the bearings no longer fit the housing, which moves the gearbox, which changes the architecture. The aim of a disciplined procedure is not to avoid iteration but to make each loop short and to settle the decisions with the widest consequences first.
+
+::: definition Layout, form design and detail design {#def-layout}
+A **layout** (general arrangement) is a scale drawing or CAD assembly that fixes the position, orientation and approximate size of each main component and the routes of loads, energy, material and signals between them. **Form design** gives each component its shape, material and principal dimensions. **Detail design** completes the definition: every dimension with its tolerance, geometric tolerances, surface finishes, heat treatments, fasteners, standard parts, drawings, parts lists and assembly instructions. The output of detail design is a complete **technical product documentation** set from which a third party could make and inspect the product.
 :::
 
-## 1. Layout and architecture
+## Product architecture {#sec-architecture}
 
-::: definition Layout design and the packaging envelope {#def-layout}
-**Layout design** is the process of arranging the components in three-dimensional space to satisfy the functional, structural, thermal, and manufacturing constraints. The layout is the bridge between the concept (the block diagram) and the detail design (the drawings), and the layout is the decision that determines the product's architecture.
+::: definition Product architecture, chunks and interfaces {#def-architecture}
+The **product architecture** is the scheme by which the functional elements of a product are arranged into physical building blocks (**chunks**, modules or subassemblies) and by which the chunks interact (Ulrich, 1995). It has three parts: the arrangement of functional elements, the mapping from functional elements to physical components, and the specification of the **interfaces** — the mechanical, energy, material and signal connections — between interacting components.
+:::
 
-The **packaging envelope** is the three-dimensional volume within which the product must fit. The envelope is defined by the interface requirements (the mounting points, the connection ports, the access panels) and the constraint requirements (the maximum dimensions, the minimum clearances, the turning radius). The layout is the process of fitting the components into the envelope, and the fitting is the constraint that drives the layout.
+Two extremes bound the possibilities.
 
+- In a **modular architecture** each chunk implements one or a few functional elements completely, and the interactions between chunks are few and well defined. A desktop computer is the classic example: power supply, storage, memory and graphics are separate modules with standard interfaces. A cordless tool family built around one battery pack is another.
+- In an **integral architecture** functional elements are spread over several chunks, or one chunk implements many functions, and the interfaces are complex and specific to this product. A cast aluminium engine block that is at once structure, coolant passage, oil gallery, bearing housing and mounting is integral; so is a moulded plastic part with integral hinges and snap fits.
+
+Ulrich distinguished three kinds of modular architecture by the interface pattern: **slot** (each module has a different interface, as for a car radio), **bus** (all modules plug into a common interface, as for track lighting or a computer backplane) and **sectional** (modules connect to one another through identical interfaces, as for office partitions or piping).
+
+Neither extreme is better in general. Modularity makes product variety cheap (change one module, keep the rest), lets modules be designed, tested, made and bought in parallel, simplifies service and upgrades, and limits the spread of a design change. Integrality usually wins on mass, size, part count and unit cost, because one part does several jobs and there are fewer joints; it is preferred when performance is pushed hard (aircraft structures, mobile phones) or volumes are high enough to pay for complex tooling. The decision is linked to the firm's strategy — variety, change, standardisation, outsourcing — as much as to engineering.
+
+::: algorithm Defining a modular architecture {#alg-architecture}
+1. Draw the function structure of the selected concept (from [[design-process/concept-generation]]).
+2. Make a rough geometric layout to see which elements must be close together.
+3. Cluster functional elements into chunks. Group elements that share a precise geometric relationship, that one supplier or technology will make, that are likely to change together, or that are needed by several product variants. Separate elements whose interactions are weak.
+4. Draw the **interaction graph**: chunks as nodes, each interface as an edge labelled with what flows across it (force, torque, heat, fluid, electrical power, data).
+5. Identify the **fundamental** interactions (those the function needs) and the **incidental** ones (heat, vibration, electromagnetic noise, thermal expansion between chunks). Incidental interactions are what make "independent" modules interfere in practice.
+6. Write an interface specification for each edge and freeze the interfaces before detailed work on the chunks begins.
+:::
+
+The interface specifications are often collected in an **interface control document** (ICD) owned by the system engineer. For a mechanical interface it states the mating geometry and its tolerances, the datum features, the loads and moments transmitted, the fasteners and their tightening torques, the clearances for thermal expansion and assembly, and who is responsible for each side. A change to one side of a frozen interface needs the agreement of the owner of the other side; the ICD is the mechanism that lets two teams work in parallel without designing incompatible parts.
+
+## Basic rules and principles of embodiment {#sec-rules}
+
+Pahl and Beitz organised the experience of good embodiment into three **basic rules** that apply to every design and a set of **principles** that apply where they fit.
+
+::: definition The basic rules: clarity, simplicity, safety {#def-basic-rules}
+- **Clarity**: every function has an unambiguous function carrier, every load an identifiable path, and every input an unambiguous output. A part that is clamped by two bolt groups and also located by a dowel is statically indeterminate in a way that makes its loads depend on manufacturing errors; that is unclear.
+- **Simplicity**: the fewest parts and the simplest shapes that do the job, so that the design is easy to analyse, make, assemble, inspect and maintain.
+- **Safety**: reliable fulfilment of the function and protection of people and the environment, achieved in the order *direct safety* (the design itself is safe — no hazard or a hazard that cannot cause harm), *indirect safety* (guards and protective devices) and *warnings* (instructions and signs). This is the same hierarchy as the three-step method of ISO 12100 discussed in [[design-process/reliability-risk]].
+:::
+
+The principles most often used are these.
+
+- **Force transmission.** Transmit forces by the shortest and most direct path, preferably as axial tension or compression rather than as bending or torsion; aim for uniform strength (each section loaded to a similar stress); match the deformations of mating parts so that load is shared as intended (a bolted flange whose bolts are much stiffer than the flange will load the nearest bolts most); balance forces internally where possible (helical gears in pairs with opposite helix, opposed pistons), so that bearings and housings do not carry them.
+- **Division of tasks.** Give each function its own carrier when one part doing several functions would compromise all of them — for example, a separate thrust bearing and radial bearing rather than one bearing that is a poor compromise for both. This is the opposite pressure to integration; the designer has to decide case by case.
+- **Self-help.** Arrange the design so that the load itself helps the function: a self-energising drum brake, a pressure vessel door that opens inward so that internal pressure seals it, a seal whose lip is pressed harder as pressure rises. Self-protecting designs change their load path under overload so that a stronger element takes over before damage occurs.
+- **Stability**: disturbances should produce effects that cancel rather than amplify them (a thermostat valve that closes as the temperature rises).
+- **Fault-free design**: arrange the design so that errors in manufacture, assembly or use cannot produce a fault — asymmetric features that make wrong assembly impossible, connectors that only fit one way.
+
+::: example Direct load path: a cantilever bracket versus a triangulated bracket {#ex-load-path}
+A vertical load $F = 5\,\mathrm{kN}$ must be carried from a wall to a point $L = 300\,\mathrm{mm}$ away. Compare (a) a solid square-section steel cantilever and (b) a triangulated bracket of a horizontal round tie and a $45^\circ$ round strut, both pinned at the wall. Use an allowable stress of $100\,\mathrm{MPa}$, $E = 200\,\mathrm{GPa}$ and a factor of 3 on the strut's Euler buckling load. Compare the volumes of steel.
+::: solution
+**Free-body diagrams.** (a) Cantilever: load $F$ downward at the tip; at the wall a vertical reaction $F$ upward and a reaction moment $M = FL$. (b) Joint at the load point: $F$ downward, the tie force $T$ along the tie towards the wall, the strut force $C$ along the strut. The strut runs from the joint down to the wall at $45^\circ$; for vertical equilibrium its vertical component must equal $F$.
+
+(a) The bending moment at the wall is $M = FL = 5000 \times 0.3 = 1500\,\mathrm{N\,m}$. For a square of side $b$, $\sigma = M/S$ with $S = b^3/6$, so
 $$
-\begin{array} { l l l l }
-\textbf{Layout principle} & \textbf{Description} & \textbf{Example} & \textbf{Violation cost} \\ \hline
-\text{Group by function} & \text{Put the components that share a function together} & \text{All the hydraulic components on one manifold} & \text{Long hoses, pressure drops, leaks} \\
-\text{Group by maintenance} & \text{Put the wear parts behind the same access panel} & \text{Filter, belt, and brush behind one door} & \text{Maintenance time, downtime} \\
-\text{Separate by heat} & \text{Keep the heat sources away from the heat sinks} & \text{Motor away from the electronics} & \text{Thermal failure, derating} \\
-\text{Separate by vibration} & \text{Isolate the vibration source from the sensitive components} & \text{Compressor on isolation mounts} & \text{Fatigue failure, noise} \\
-\text{Assemble from one direction} & \text{Stack the components vertically or horizontally} & \text{Top-down assembly of the gearbox} & \text{Assembly time, DFA score} \\
-\end{array}
+b = \left(\frac{6M}{\sigma_\text{allow}}\right)^{1/3} = \left(\frac{6\times1500}{100\times10^6}\right)^{1/3} = 0.0448\,\mathrm m.
+$$
+The section is $44.8\,\mathrm{mm}$ square ($2008\,\mathrm{mm^2}$) and the volume of a prismatic beam is $2008\times300 = 6.02\times10^5\,\mathrm{mm^3} = 602\,\mathrm{cm^3}$. (A tapered beam would save some of this, since the moment falls to zero at the tip.)
+
+(b) Joint equilibrium: $C\sin45^\circ = F$ gives $C = 7071\,\mathrm N$ (compression); horizontally $T = C\cos45^\circ = 5000\,\mathrm N$ (tension). Tie area: $5000/100 = 50\,\mathrm{mm^2}$ ($d = 8.0\,\mathrm{mm}$). The strut is $L_s = 0.3/\cos45^\circ = 0.424\,\mathrm m$ long; its stress at $100\,\mathrm{MPa}$ would need only $71\,\mathrm{mm^2}$, but buckling governs. With pinned ends, $3C = \pi^2EI/L_s^2$ gives
+$$
+I = \frac{3\times7071\times0.424^2}{\pi^2\times200\times10^9} = 1.93\times10^{-9}\,\mathrm{m^4},\qquad d = \left(\frac{64I}{\pi}\right)^{1/4} = 14.1\,\mathrm{mm},
+$$
+area $156\,\mathrm{mm^2}$ and stress $45\,\mathrm{MPa}$. Volume: $50\times300 + 156\times424 = 8.1\times10^4\,\mathrm{mm^3} = 81\,\mathrm{cm^3}$.
+
+The triangulated bracket uses about one-seventh of the steel, because it carries the load as axial forces in which every fibre of the section works at the same stress, whereas in bending only the outer fibres are highly stressed.
+
+**Sanity check.** Equilibrium at the joint: $T - C\cos45^\circ = 0$ and $C\sin45^\circ - F = 0$ ✓. The result does not mean the cantilever is wrong: it occupies less space below the load, needs no second wall fixing and may be cheaper to make. The principle tells you which option uses material well; the specification decides.
+:::
+
+:::
+
+::: warning Statically indeterminate layouts carry loads where you did not intend
+A shaft in three bearings, a plate held by six bolts and two dowels, a frame bolted to a stiff base at four corners — each has more supports than equilibrium needs, so the share of the load each support takes depends on stiffness and on manufacturing errors. A $0.05\,\mathrm{mm}$ misalignment of a middle bearing can load it far more than the shaft's own weight does. Either make the layout statically determinate (one fixed and one floating bearing, a three-point mounting), or provide compliance and calculate the load sharing including the tolerances. "It is stiffer, so it must be stronger" is a common and expensive mistake.
+:::
+
+## Sizing from loads to dimensions {#sec-sizing}
+
+The calculations of embodiment design run in the opposite direction from the analyses of a mechanics course. Analysis takes a geometry and finds stresses; sizing takes the loads and the allowable stresses (or deflections, temperatures, lives) and finds the geometry.
+
+::: algorithm Sizing a component {#alg-sizing}
+1. **Loads.** From the specification and the layout, determine every load on the component, including how it varies in time (static, fluctuating, impact) and its extreme values. Draw the free-body diagram.
+2. **Failure modes.** List every way the component could fail to perform: yielding, fracture, fatigue, buckling, excessive deflection, wear, vibration, overheating, corrosion.
+3. **Criteria.** For each mode write the criterion as an inequality with a factor of safety $n$ or a design margin: for example $\tau_\text{max} \le \tau_y/n$, $\theta \le \theta_\text{allow}$, $L_{10} \ge L_\text{required}$.
+4. **Solve** each criterion for the governing dimension. The largest required dimension governs.
+5. **Round** to a standard or preferred size, then recheck all criteria with the chosen dimension.
+6. **Record** loads, assumptions, material data and their sources, and the margins achieved, so that the calculation can be reviewed and repeated when something changes.
+:::
+
+The **factor of safety** covers uncertainty in loads, material properties, the model and manufacture. Typical values for ductile metals with well-known loads and properties are $1.5$–$2.5$; codes for pressure vessels, cranes or aircraft prescribe their own. Where a code applies, it governs; the methods here teach the reasoning and are no substitute for it.
+
+::: example Sizing a motor shaft for strength and stiffness {#ex-shaft}
+A solid steel shaft transmits $P = 7.5\,\mathrm{kW}$ from a motor running at $1450\,\mathrm{rev/min}$. The length between the coupling and the pulley is $400\,\mathrm{mm}$. The material has a tensile yield strength of $350\,\mathrm{MPa}$; take the shear yield strength as half of this (Tresca) and a factor of safety of $2.5$. The specification also limits the angle of twist between coupling and pulley to $1^\circ$ ($G = 80\,\mathrm{GPa}$). Find the diameter, considering torsion only.
+::: solution
+Torque: $\omega = 1450\times2\pi/60 = 151.8\,\mathrm{rad/s}$, $T = P/\omega = 7500/151.8 = 49.4\,\mathrm{N\,m}$.
+
+**Strength.** $\tau_\text{allow} = 175/2.5 = 70\,\mathrm{MPa}$. For a solid shaft $\tau_\text{max} = 16T/(\pi d^3)$, so
+$$
+d \ge \left(\frac{16T}{\pi\,\tau_\text{allow}}\right)^{1/3} = \left(\frac{16\times49.4}{\pi\times70\times10^6}\right)^{1/3} = 15.3\,\mathrm{mm}.
 $$
 
-**The layout is not a single pass: it is an iterative process that alternates between the top-down (envelope → zones → components) and the bottom-up (components → envelope → zones). The top-down pass establishes the zones; the bottom-up pass sizes the components; the iteration converges when the components fit in the zones and the zones fit in the envelope.**
+**Stiffness.** $\theta = TL/(GJ)$ with $J = \pi d^4/32$. Try standard diameters:
+
+| $d$ (mm) | $\tau_\text{max}$ (MPa) | $\theta$ (degrees) |
+|---|---|---|
+| 16 | 61.4 | 2.20 |
+| 18 | 43.1 | 1.37 |
+| 20 | 31.4 | 0.90 |
+
+The stiffness criterion governs: $d = 20\,\mathrm{mm}$, giving a stress margin of $70/31.4 = 2.2$ on top of the factor of safety.
+
+**Sanity check.** $\tau \propto d^{-3}$ and $\theta \propto d^{-4}$: going from 16 to 20 mm reduces the stress by $(16/20)^3 = 0.51$ ✓ and the twist by $(16/20)^4 = 0.41$ ✓. In the real shaft, bending from the belt pull, stress concentrations at keyways and shoulders, and fatigue must be added — the methods are in [[machine-design]]. This first estimate fixes the layout; the detailed check follows.
 :::
 
-::: definition Architecture: modular vs integral, and the interface definition {#def-architecture}
-The **product architecture** is the pattern of relationships between the components. The two extremes are:
+The example shows a pattern that recurs: for many mechanical parts a stiffness or deflection requirement, not strength, sets the size. Machine-tool frames, gearbox housings, robot links and precision slides are sized almost entirely by stiffness and vibration, and their stresses are low.
 
-- **Modular architecture**: the components are connected by standardised, decoupled interfaces. Each module performs a function, and the modules can be replaced, upgraded, or reconfigured independently. **Example: the personal computer (CPU, GPU, RAM, storage, PSU are all modules with standard interfaces).**
-- **Integral architecture**: the components are interconnected, and the interfaces are bespoke. The components cannot be separated without disassembling the product. **Example: the monocoque aircraft fuselage (the skin, the frames, and the stringers are structurally integrated).**
+:::
+## Tolerance stack-ups {#sec-tolerances}
 
+Every dimension that is made has a variation. When several toleranced dimensions add up to a functional dimension — the axial play of a shaft in its housing, the gap between a door and its frame, the preload in a bearing pair — their variations accumulate. A **tolerance stack-up** predicts the variation of the functional dimension from the tolerances of its contributors. Limits, fits and geometric tolerances themselves are covered in [[engineering-graphics/tolerances-fits]]; here the question is how to allocate them.
+
+::: definition Stack-up, assembly gap and contributors {#def-stack}
+In a one-dimensional **stack-up** the functional dimension (the **assembly gap**) is
 $$
-\begin{array} { l c c }
-& \textbf{Modular} & \textbf{Integral} \\ \hline
-\text{Manufacturing cost} & \text{Higher (more interfaces)} & \text{Lower (fewer parts)} \\
-\text{Assembly cost} & \text{Lower (standard interfaces)} & \text{Higher (bespoke interfaces)} \\
-\text{Maintenance} & \text{Lower (swap the module)} & \text{Higher (disassemble the product)} \\
-\text{Upgrade} & \text{Easy (replace the module)} & \text{Impossible (redesign the product)} \\
-\text{Variety} & \text{High (mix and match modules)} & \text{Low (one architecture per product)} \\
-\text{Weight} & \text{Higher (interface hardware)} & \text{Lower (integrated structure)} \\
-\end{array}
+G = \sum_{i=1}^{m} a_i X_i,
+$$ {#eq-stack}
+where the $X_i$ are the contributing dimensions and the coefficients $a_i = +1$ or $-1$ according to whether increasing $X_i$ increases or decreases the gap (more generally $a_i = \partial G/\partial X_i$, the sensitivity). Each contributor has nominal value $\mu_i$ and symmetric tolerance $\pm t_i$. The chain of dimensions from one side of the gap round the loop to the other is the **dimension loop**.
+:::
+
+::: proposition Worst-case and root-sum-square tolerances {#prop-wc-rss}
+(a) **Worst case.** If every $X_i$ lies within $\mu_i \pm t_i$, then $G$ lies within $G_0 \pm t_\text{WC}$, where $G_0 = \sum a_i\mu_i$ and
 $$
+t_\text{WC} = \sum_{i=1}^{m} \lvert a_i\rvert\, t_i,
+$$ {#eq-wc}
+and the bound is attained.
 
-**The architecture decision is made at the embodiment stage, and it is the decision that determines the product's cost, maintainability, and upgradeability for its entire life. The modular architecture is the right choice for a product that will be upgraded (a computer, a machine tool); the integral architecture is the right choice for a product that will not (a bicycle frame, a turbine blade).**
+(b) **Root sum square.** If the $X_i$ are independent random variables with means $\mu_i$ and standard deviations $\sigma_i$, then $G$ has mean $G_0$ and standard deviation $\sigma_G = \sqrt{\sum a_i^2\sigma_i^2}$. If, further, each tolerance corresponds to $t_i = 3\sigma_i$ and $G$ is normally distributed, then the $\pm3\sigma$ tolerance of the gap is
+$$
+t_\text{RSS} = \sqrt{\sum_{i=1}^{m} a_i^2\, t_i^2},
+$$ {#eq-rss}
+and about $0.27\,\%$ of assemblies fall outside $G_0 \pm t_\text{RSS}$.
 :::
 
-::: definition The interface control document {#def-interface-control}
-The **interface control document** (ICD) is the document that defines the interface between two subsystems, two modules, or two teams. The ICD specifies:
+::: proof
+(a) $G - G_0 = \sum a_i(X_i - \mu_i)$, and $\lvert X_i - \mu_i\rvert \le t_i$, so by the triangle inequality $\lvert G - G_0\rvert \le \sum\lvert a_i\rvert t_i$. Choosing every $X_i$ at the limit $\mu_i + t_i\,\mathrm{sgn}(a_i)$ gives equality, so the bound is attained.
 
-1. **Mechanical interface**: the mounting geometry, the bolt pattern, the dowel locations, the clearance, the alignment tolerance.
-2. **Electrical interface**: the voltage, the current, the signal type, the connector type, the pin assignment, the grounding scheme.
-3. **Data interface**: the protocol, the baud rate, the message format, the error handling.
-4. **Fluid interface**: the pressure, the flow rate, the port size, the thread type, the seal type, the fluid compatibility.
-5. **Thermal interface**: the heat load, the thermal resistance, the cooling method, the maximum temperature.
-6. **Environmental interface**: the temperature range, the humidity, the vibration, the EMC.
+(b) Expectation is linear, so $\E[G] = \sum a_i\mu_i = G_0$. For independent variables the covariances vanish and $\Var(G) = \sum a_i^2\Var(X_i) = \sum a_i^2\sigma_i^2$. Substituting $\sigma_i = t_i/3$ gives $\sigma_G = \frac13\sqrt{\sum a_i^2t_i^2}$, and $3\sigma_G = t_\text{RSS}$. If each $X_i$ is normal, $G$ is exactly normal; otherwise the central limit theorem makes it approximately normal when there are several contributors of similar size. The fraction of a normal distribution outside $\pm3\sigma$ is $2(1 - \Phi(3)) = 0.0027$.
 
-**The ICD is the contract between the teams, and the contract is the reason the integration does not fail. The interface that is not in the ICD is the interface that will be discovered at the integration test, and the discovery will cost 10× the cost of writing the ICD.**
+Assumptions: independent contributors (no common cause such as one worn tool making all parts large), processes centred on nominal, and $t_i = 3\sigma_i$ (a process capability index $C_p = 1$). If these fail, the RSS result is optimistic.
 :::
 
-::: example Layout of a CNC machining centre {#ex-layout-cnc level=3 check="4"}
-A CNC machining centre has the following subsystems: (1) bed and column, (2) spindle and tool changer, (3) X-Y table, (4) coolant system, (5) electrical cabinet, (6) chip conveyor. Apply the layout principles.
-
-**Layout decisions:**
-
-1. **Group by function**: The spindle and tool changer are on the column (the Z-axis), the X-Y table is on the bed, the coolant system is behind the work envelope, the electrical cabinet is on the side of the column, the chip conveyor is under the table.
-2. **Group by maintenance**: The tool changer, the spindle, and the coolant nozzles are behind the front access door. The electrical cabinet has its own door. The chip conveyor is accessible from the front.
-3. **Separate by heat**: The electrical cabinet (heat source: drives, 2 kW) is separated from the spindle (heat sink: oil-cooled) by the column structure. The coolant system (heat sink: chiller) is at the rear.
-4. **Separate by vibration**: The chip conveyor (vibration source: chip impact) is isolated from the X-Y table (precision: ± 0.01 mm) by a rubber mount and a separate foundation.
-5. **Assemble from one direction**: The spindle is assembled from the top (the column is a casting with a vertical dovetail way). The table is assembled from the front (the bed is a casting with horizontal dovetail ways).
-
-**The layout has 4 interfaces that must be in the ICD: (1) spindle-to-column (bolt pattern, alignment, thermal), (2) table-to-bed (way geometry, preload, lubrication), (3) electrical cabinet-to-machine (cable entry, grounding, EMC), (4) coolant-to-machine (port size, pressure, fluid compatibility).**
-:::
+For $m$ equal tolerances $t$, $t_\text{WC} = mt$ but $t_\text{RSS} = \sqrt m\,t$. The difference grows with the number of contributors: worst-case design for a long stack forces every part to a tight and expensive tolerance in order to guard against a combination — every part at the same extreme — that almost never occurs. Statistical tolerancing accepts a small, predictable reject or rework rate in exchange for looser part tolerances.
 
 ::: widget plot
-title: The layout iteration: top-down vs bottom-up convergence
-f: 100/(x+1); 50/(x+1); 20/(x+1)
-x: 0,10
-y: 0,100
-labels: Envelope volume (L); Component volume (L); Free volume (L)
-caption: The layout iteration converges when the component volume fits within the envelope volume with sufficient free volume for maintenance access, cable routing, and thermal management. **The top-down pass starts with the envelope (100 L) and allocates zones; the bottom-up pass sizes the components (50 L) and checks the fit. The free volume (20 L) is the maintenance access, the cable routing, and the thermal margin. The iteration converges when the free volume is positive and the component volume is within the envelope.** **The layout that has zero free volume is the layout that cannot be maintained, and the maintenance engineer will discover this at the first service interval, not at the design review.**
+f: t*x; t*sqrt(x); t*sqrt(3*x)
+x: 1, 12
+y: 0, 1.5
+sliders: t=0.05:0.01:0.12:0.01
+labels: t_\text{WC} = m t; t_\text{RSS} = \sqrt{m}\,t\ \text{(normal)}; \sqrt{3m}\,t\ \text{(uniform parts)}
+caption: Tolerance of an assembly gap against the number of contributors $m$, each toleranced $\pm t$ mm (slider). The worst-case line grows linearly, the RSS curve only as $\sqrt m$: with 9 contributors the worst-case tolerance is three times the RSS one. The third curve is the statistical tolerance when each part is uniformly distributed across its tolerance band (σ = t/√3, Exercise 9) — a pessimistic assumption that lies between the other two. Move $t$ and notice that all three scale with it; only $m$ changes their ratio.
 :::
 
-## 2. Sizing and the design calculations
+::: example Axial play of a shaft assembly {#ex-stack}
+A shaft carries two bearings separated by a spacer inside a housing; a retaining ring closes the housing. The axial play is the housing internal width minus the bearing–spacer–bearing stack. Dimensions (mm): housing width $H = 50.50 \pm 0.10$, bearings $B_1 = B_2 = 15.00 \pm 0.05$, spacer $S = 20.00 \pm 0.08$. The specification requires a play between $0.20$ and $0.80\,\mathrm{mm}$. Find the play range by worst case and by RSS.
+::: solution
+Dimension loop: $G = H - B_1 - S - B_2$, so $a_H = +1$ and the others are $-1$. Nominal play $G_0 = 50.50 - 15.00 - 20.00 - 15.00 = 0.50\,\mathrm{mm}$.
 
-::: definition Sizing: from the requirement to the dimension {#def-sizing}
-**Sizing** is the process of determining the dimensions of each component from the requirements and the constraints. The sizing calculation follows the chain:
+Worst case: $t_\text{WC} = 0.10 + 0.05 + 0.08 + 0.05 = 0.28\,\mathrm{mm}$, play $0.22$ to $0.78\,\mathrm{mm}$ — inside the requirement.
 
-$$
-\text{Requirement} \; \longrightarrow \; \text{Load} \; \longrightarrow \; \text{Stress} \; \longrightarrow \; \text{Material} \; \longrightarrow \; \text{Dimension} \; \longrightarrow \; \text{Verification}
-$$
+RSS: $t_\text{RSS} = \sqrt{0.10^2 + 0.05^2 + 0.08^2 + 0.05^2} = \sqrt{0.0214} = 0.146\,\mathrm{mm}$, play $0.354$ to $0.646\,\mathrm{mm}$ at $\pm3\sigma$.
 
-For a simply supported beam carrying a central load $F$ :
+Since the worst case already meets the requirement, every assembly is good. The RSS result says more: with $\sigma_G = 0.0488\,\mathrm{mm}$ the requirement limits are $0.30/0.0488 = 6.2$ standard deviations from nominal, so the tolerances are tighter than needed. That invites the question of [[#ex-stack-loosen]].
 
-$$
-\sigma _ { \max } \; = \; { \frac { M \, c } { I } } \; = \; { \frac { ( F L / 4 ) \, ( h / 2 ) } { b h ^ { 3 } / 1 2 } } \; = \; { \frac { 3 \, F \, L } { 2 \, b \, h ^ { 2 } } } \; \leq \; { \frac { \sigma _ { Y } } { n } }
-$$
-
-Solving for the height $h$ :
-
-$$
-h \; \geq \; { \sqrt { \frac { 3 \, F \, L \, n } { 2 \, b \, \sigma _ { Y } } } }
-$$
-
-**The sizing calculation is the bridge between the requirement (the load $F$ , the span $L$ , the safety factor $n$ ) and the dimension ($h$ ). The calculation is the reason the beam is 40 mm high and not 30 mm, and the reason is the calculation, not the engineer's intuition.**
+**Sanity check.** $t_\text{RSS} < t_\text{WC}$ and $t_\text{RSS} \ge$ the largest single tolerance ($0.10$) ✓ — both always hold.
 :::
 
-::: definition The design calculation package {#def-calc-package}
-The **design calculation package** is the set of calculations that justify the dimensions of every component. The package contains:
-
-1. **Load cases**: the forces, moments, pressures, temperatures, and accelerations that the component must withstand, with the source of each load (gravity, inertia, pressure, thermal, wind, seismic).
-2. **Material properties**: the yield strength, ultimate strength, fatigue limit, elastic modulus, Poisson's ratio, density, thermal expansion, and fracture toughness, with the source (material certificate, standard, test data).
-3. **Sizing calculations**: the stress, deflection, buckling, fatigue, and thermal calculations for each component, with the safety factor and the acceptance criterion.
-4. **Verification**: the test, simulation, or analysis that confirms the sizing calculation, with the pass criterion.
-5. **Assumptions**: the list of assumptions, their source, and their sensitivity.
-
-**The calculation package is the engineering justification for the design, and the justification is the document that the reviewer, the auditor, and the lawyer will read. The calculation that is not in the package is the calculation that was not done, and the calculation that was not done is the calculation that will be the subject of the failure investigation.**
 :::
 
-::: definition The design freeze and the configuration baseline {#def-design-freeze}
-The **design freeze** is the point at which the design is locked and any change requires a formal change order. The design freeze is the Gate 3 decision in the stage-gate process (see [[design-process/design-process-overview|stage-gate]]), and the gate is passed when:
+::: example Loosening the tolerances {#ex-stack-loosen}
+To cut machining cost, all four tolerances in [[#ex-stack]] are widened by 50 % (to $\pm0.15$, $\pm0.075$, $\pm0.12$, $\pm0.075$ mm). Is the design still acceptable? Estimate the fraction of assemblies outside the $0.20$–$0.80\,\mathrm{mm}$ requirement, assuming centred normal processes with $t_i = 3\sigma_i$.
+::: solution
+Worst case: $t_\text{WC} = 1.5\times0.28 = 0.42\,\mathrm{mm}$, play $0.08$ to $0.92\,\mathrm{mm}$ — the worst-case analysis rejects the change.
 
-1. All drawings are issued and approved.
-2. All calculations are complete and reviewed.
-3. The tolerance stack-up is closed for every critical dimension chain.
-4. The DFMEA is complete and the RPN is below the threshold.
-5. The DFM analysis is complete and the cost is within the target.
-6. The prototype has been tested and the results are within the predicted range.
-7. The interface control documents are signed by both teams.
+Statistically: $t_\text{RSS} = 1.5\times0.146 = 0.219\,\mathrm{mm}$, so $\sigma_G = 0.0731\,\mathrm{mm}$. The limits are $\pm0.30\,\mathrm{mm}$ from nominal, $z = 0.30/0.0731 = 4.10$ standard deviations. The fraction outside is $2(1 - \Phi(4.10)) = 4.1\times10^{-5}$, about 41 assemblies per million.
 
-**The design freeze is not a single event; it is a process. The drawings are frozen first, the calculations second, the tolerances third, and the BOM fourth. The order matters: the drawing freeze locks the geometry, the calculation freeze locks the dimensions, the tolerance freeze locks the fit, and the BOM freeze locks the cost.**
+Whether 41 per million is acceptable is a business and safety decision. For a domestic appliance where an out-of-tolerance assembly is caught at end-of-line test and reshimmed, it almost certainly is; for an aircraft actuator it may not be, and the analysis would also need to be checked against the assumptions (independence, centring) by measuring process capability.
+
+**Sanity check.** With the original tolerances, $z = 0.30/0.0488 = 6.15$ and the reject fraction is about $8\times10^{-10}$; loosening by 50 % multiplies $\sigma$ by $1.5$ and the reject rate rises by about five orders of magnitude, as expected from the steep tail of the normal distribution.
 :::
 
-::: example Sizing a hydraulic cylinder {#ex-size-cylinder level=3 check="63"}
-A hydraulic cylinder must exert 50 kN at 200 bar. The cylinder is made from ST52 steel (yield 355 MPa), and the safety factor is 2. Calculate the bore diameter and the wall thickness.
-
-**Bore diameter:**
-
-$$
-F \; = \; p \times { \frac { \pi \, D ^ { 2 } } { 4 } } \quad \Longrightarrow \quad D \; = \; { \sqrt { \frac { 4 \, F } { \pi \, p } } } \; = \; { \sqrt { \frac { 4 \times 5 0 \ 0 0 0 } { \pi \times 2 0 0 \times 1 0 ^ { 5 } } } } \; = \; { \sqrt { 3 . 1 8 \times 1 0 ^ { - 3 } } } \; = \; { \bf 5 6 . 4 } \ \text{mm}
-$$
-
-**Select the standard bore: 63 mm.**
-
-**Wall thickness (thin-wall approximation, Barlow's formula):**
-
-$$
-t \; = \; { \frac { p \, D } { 2 \, \sigma _ { \text{allow } } } } \; = \; { \frac { 2 0 0 \times 1 0 ^ { 5 } \times 6 3 \times 1 0 ^ { 3 } } { 2 \times 3 5 5 / 2 } } \; = \; { \frac { 1 2 . 6 } { 3 5 5 } } \; = \; { \bf 3 . 5 5 } \ \text{mm}
-$$
-
-**Select the standard wall: 4 mm. The cylinder is 63 mm bore × 4 mm wall, ST52, with a 40 mm chrome-plated rod.** **The sizing calculation is the reason the cylinder is 63 mm bore and not 50 mm, and the reason is the 50 kN load at 200 bar. The calculation is in the design calculation package, and the package is the justification for the dimension.**
 :::
 
-## 3. Tolerance stack-up and the tolerance chain
-
-::: definition The tolerance chain and the stack-up calculation {#def-tolerance-chain}
-The **tolerance chain** is the sequence of dimensions that determines the final clearance, interference, or position of an assembly. The **stack-up** is the sum of the individual tolerances in the chain, and the stack-up determines whether the assembly fits.
-
-$$
-\delta _ { \text{total } } \; = \; \sum _ { i \, = 1 } ^ { n } \delta _ { i } \quad \text{(worst case)}
-$$
-
-$$
-\delta _ { \text{total } } \; = \; { \sqrt { \sum _ { i \, = 1 } ^ { n } \delta _ { i } ^ { 2 } } } \quad \text{(statistical, RSS)}
-$$
-
-For a gearbox with a 20 mm gear, a 5 mm spacer, and a 10 mm bearing, the axial clearance is:
-
-$$
-\delta _ { \text{axial } } \; = \; L _ { \text{housing } } - ( L _ { \text{gear } } + L _ { \text{spacer } } + L _ { \text{bearing } } )
-$$
-
-$$
-\delta _ { \text{housing } } = 3 6 . 0 \pm 0 . 1 , \quad \delta _ { \text{gear } } = 2 0 . 0 \pm 0 . 0 5 , \quad \delta _ { \text{spacer } } = 5 . 0 \pm 0 . 0 2 , \quad \delta _ { \text{bearing } } = 1 0 . 0 \pm 0 . 0 3
-$$
-
-**Worst case:** $\delta _ { \text{total } } = 0 . 1 + 0 . 0 5 + 0 . 0 2 + 0 . 0 3 = 0 . 2 0 \ \mathrm { m m }$ . **The clearance can vary from $- 0 . 1 0$ mm (interference) to $+ 0 . 3 0$ mm (loose). The interference is unacceptable, so the spacer tolerance must be tightened or a snap-ring must be added.**
-
-**RSS:** $\delta _ { \text{total } } = { \sqrt { 0 . 1 ^ { 2 } + 0 . 0 5 ^ { 2 } + 0 . 0 2 ^ { 2 } + 0 . 0 3 ^ { 2 } } } = { \sqrt { 0 . 0 1 3 8 } } = 0 . 1 1 7 \ \mathrm { m m }$ . **The RSS clearance is 0.117 mm, which is within the acceptable range. The RSS method is valid when the tolerances are independent and normally distributed, and the validity is the reason the RSS method is used for high-volume production and the worst-case method is used for low-volume or safety-critical assemblies.**
+::: widget distribution
+dist: normal
+params: mu=0.5, sigma=0.0731
+a: 0.2
+b: 0.8
+caption: Distribution of the axial play in [[#ex-stack-loosen]] (mm). The shaded area between the requirement limits 0.20 and 0.80 mm is almost all of the distribution. Increase σ to see how quickly the tails cross the limits; shift μ to 0.4 to see that an off-centre process (for example a housing machined consistently near its lower limit) can matter more than the spread.
 :::
 
-::: definition GD&T and the datum reference frame {#def-gdt}
-**Geometric Dimensioning and Tolerancing** (GD&T, ASME Y14.5 / ISO 1101) is the language for specifying the geometry of a part beyond the simple linear dimensions. The GD&T symbols specify the form, orientation, location, and runout of a feature, and the specification is the reason the part is inspected on a CMM and not with a caliper.
+## Prototyping and testing {#sec-prototyping}
 
-The **datum reference frame** (DRF) is the set of three mutually perpendicular planes (A, B, C) that define the coordinate system for the part. The datum is the origin of the measurement, and the origin is the reason the measurement is repeatable.
+A layout and its calculations are a prediction. Prototypes and tests check the prediction where the models are weakest.
 
-$$
-\begin{array} { l l l }
-\textbf{Symbol} & \textbf{Control} & \textbf{Example} \\ \hline
-\text{Flatness} & \text{Form} & \text{Bearing seat flatness: 0.02 mm} \\
-\text{Perpendicularity} & \text{Orientation} & \text{Bore perpendicular to datum A: 0.05 mm} \\
-\text{Position} & \text{Location} & \text{Bolt hole position: } \phi 0 . 3 \text{ at MMC} \\
-\text{Runout} & \text{Runout} & \text{Shaft journal runout: 0.01 mm TIR} \\
-\end{array}
-$$
-
-**The GD&T callout is the reason the part is inspected correctly, and the correct inspection is the reason the part is accepted or rejected on the right basis. The drawing without GD&T is the drawing that produces the argument between the supplier and the customer about whether the part is in tolerance.**
+::: definition Kinds of prototype {#def-prototype}
+Following Ulrich and Eppinger, prototypes are classified along two dimensions. **Physical** prototypes are tangible artefacts; **analytical** prototypes are mathematical or computer models (a finite-element model, a multibody simulation, a spreadsheet of tolerances). **Focused** prototypes implement one or a few attributes (a foam model for ergonomics, a test rig for one bearing); **comprehensive** prototypes implement most attributes. In product development the main physical stages are:
+- **proof-of-concept** prototypes — focused, often crude, to show that a working principle works;
+- **alpha** prototypes — parts with the intended geometry and materials but usually not made by the production processes, used to check that the design works as intended;
+- **beta** prototypes — parts made by the intended production processes (or close to them), assembled and tested by the firm and often by selected customers, used to check reliability, performance in the field and the remaining open problems;
+- **pre-production** units — made on the production line, to check the process itself.
 :::
 
-::: example Tolerance stack-up for a shaft-bearing-housing assembly {#ex-stackup level=3 check="0.15"}
-A shaft (25 mm ± 0.02) passes through a bearing (25 mm bore ± 0.01, 52 mm OD ± 0.01) in a housing (52 mm bore ± 0.02). The axial retention is provided by a circlip (1.5 mm ± 0.1) in a groove (1.6 mm ± 0.05). Calculate the worst-case and RSS axial clearance.
+Prototypes serve four purposes: learning (will it work? how well?), communication (with management, customers, suppliers), integration (do the parts fit and work together?) and milestones (has the design reached a stage that justifies the next investment?). A good prototyping plan builds a prototype to reduce the largest uncertainty for the money, which usually means focused prototypes of the riskiest elements early and comprehensive ones later.
 
-**Axial chain:** Housing width (30 ± 0.1) − Bearing width (15 ± 0.05) − Circlip (1.5 ± 0.1) − Shoulder (13 ± 0.05).
+Tests fall into two families. **Verification** tests check that the design meets its specification ("did we build it right?"): load tests to the design load times a proof factor, fatigue tests, environmental tests (temperature, humidity, vibration, ingress protection), electromagnetic compatibility. **Validation** tests check that the product meets the user's need ("did we build the right thing?"): field trials, user studies. A test plan states for each requirement the test method, the sample size, the pass criterion and the conditions.
 
-**Worst case:**
+How many units must be tested? A test to show that a product meets a reliability target is a statistical experiment, and the simplest such test has a neat answer.
 
+::: proposition Zero-failure (success-run) test {#prop-success-run}
+If $n$ independent units are each tested for the specified duration and none fails, then the reliability $R$ over that duration is demonstrated to be at least $R_0$ with confidence $C$ provided
 $$
-\delta _ { \text{total } } \; = \; 0 . 1 + 0 . 0 5 + 0 . 1 + 0 . 0 5 \; = \; { \bf 0 . 3 0 } \ \text{mm}
-$$
-
-**RSS:**
-
-$$
-\delta _ { \text{total } } \; = \; { \sqrt { 0 . 1 ^ { 2 } + 0 . 0 5 ^ { 2 } + 0 . 1 ^ { 2 } + 0 . 0 5 ^ { 2 } } } \; = \; { \sqrt { 0 . 0 0 1 + 0 . 0 0 2 5 + 0 . 0 0 1 + 0 . 0 0 2 5 } } \; = \; { \sqrt { 0 . 0 0 7 } } \; = \; { \bf 0 . 0 8 4 } \ \text{mm}
-$$
-
-**The worst-case clearance is 0.30 mm, which is too loose for a precision spindle. The RSS clearance is 0.084 mm, which is acceptable. The decision is to use the RSS method (high-volume production, normally distributed tolerances) and to add a selective assembly step (sort the bearings into 3 width groups) to reduce the RSS clearance to 0.05 mm.**
+n \ge \frac{\ln(1 - C)}{\ln R_0}.
+$$ {#eq-success-run}
 :::
 
-## 4. Design iteration and the prototype loop
-
-::: definition The prototype hierarchy: from looks-like to works-like to production-intent {#def-prototype}
-The **prototype hierarchy** defines the fidelity of the prototype and the purpose of the test:
-
-$$
-\begin{array} { l l l l }
-\textbf{Level} & \textbf{Type} & \textbf{Purpose} & \textbf{Cost} \\ \hline
-\text{P1: Looks-like} & \text{Foam, 3D print, cardboard} & \text{Ergonomics, packaging, aesthetics} & 1 \times \\
-\text{P2: Works-like} & \text{Off-the-shelf parts, hand-made} & \text{Functional verification, risk reduction} & 5 \times \\
-\text{P3: Production-intent} & \text{Production materials, production process} & \text{Validation, testing, certification} & 20 \times \\
-\text{P4: Pilot} & \text{Production line, production tooling} & \text{Process qualification, $C _ { p k }$ study} & 100 \times \\
-\end{array}
-$$
-
-**The prototype hierarchy is the mechanism by which the risk is reduced before the design freeze. The P1 prototype reduces the packaging risk (does it fit?); the P2 prototype reduces the functional risk (does it work?); the P3 prototype reduces the validation risk (does it meet the specification?); the P4 prototype reduces the manufacturing risk (can it be made?).** **The prototype that is skipped is the risk that is not reduced, and the risk that is not reduced is the risk that appears at the worst possible time: after the design freeze, after the tooling is cut, after the product is shipped.**
+::: proof
+Suppose the true reliability were exactly $R_0$. Each unit survives independently with probability $R_0$, so the probability that all $n$ survive is $R_0^n$ (a binomial probability with zero failures). If the true reliability were lower, all-pass would be even less likely. So if $R_0^n \le 1 - C$, an all-pass result would occur with probability at most $1 - C$ for any product with $R \le R_0$; observing it lets us reject "$R \le R_0$" at confidence $C$. Taking logarithms of $R_0^n \le 1 - C$ and dividing by $\ln R_0 < 0$ (which reverses the inequality) gives the result. Assumptions: the test duration and conditions represent the specified use, units are independent and representative of production, and the test ends without failures.
 :::
 
-::: definition The design iteration loop: analyse, build, test, learn {#def-iteration-loop}
-The **design iteration loop** is the cycle of analysis, prototyping, testing, and learning that refines the design. The loop is:
+::: example Planning a fatigue qualification test {#ex-success-run}
+A bicycle crank must survive a specified fatigue test (a number of load cycles at a defined load). The design team wishes to demonstrate $R = 0.90$ with $90\,\%$ confidence by a zero-failure test. How many cranks must be tested? What if the confidence is raised to $95\,\%$?
+::: solution
+From [[#eq-success-run]]: $n \ge \ln(0.10)/\ln(0.90) = (-2.303)/(-0.1054) = 21.85$, so $n = 22$ cranks, all of which must pass.
 
-1. **Analyse**: predict the performance using calculations, simulations, or hand calculations.
-2. **Build**: construct the prototype at the appropriate fidelity level.
-3. **Test**: measure the performance against the predicted values.
-4. **Learn**: compare the measured values to the predicted values, identify the discrepancy, and update the model.
+At $95\,\%$ confidence: $n \ge \ln(0.05)/\ln(0.90) = 28.4$, so $n = 29$.
 
-**The iteration loop is the mechanism by which the design converges, and the convergence is the reason the design is frozen after 3–5 iterations, not after 1.** The first iteration reveals the gross errors (the load path is wrong, the stiffness is 10× too low); the second iteration reveals the secondary errors (the stress concentration is 2× higher than predicted, the natural frequency is 15 % lower); the third iteration reveals the tertiary errors (the thermal expansion closes the clearance, the vibration mode couples with the control bandwidth). **The iteration that is skipped is the error that is not found, and the error that is not found is the error that appears in the field.**
+**Sanity check.** $0.9^{22} = 0.098 < 0.10$ ✓ and $0.9^{21} = 0.109 > 0.10$ ✓, so 22 is the smallest sufficient number. Demonstrating high reliabilities this way is expensive — $R = 0.99$ at 90 % needs 230 units — which is why test engineers test beyond the specified life or at higher loads and use a life model (such as the Weibull model of [[design-process/reliability-risk]]) to translate back.
 :::
 
-::: example Prototype loop for a gearbox housing {#ex-proto-gearbox level=3 check="3"}
-A gearbox housing is prototyped at three levels:
+:::
 
-| Level | Method | Purpose | Result |
-|-------|--------|---------|--------|
-| P1 | 3D print (PLA) | Packaging check | Fits, but the oil drain plug is inaccessible |
-| P2 | Machined aluminium | Functional test | Stiffness is 40 % below prediction |
-| P3 | Sand-cast iron | Validation | Stiffness is within 5 % of prediction |
+::: quiz
+A stack-up has 16 contributors, each toleranced $\pm0.02\,\mathrm{mm}$, independent and centred, with $t_i = 3\sigma_i$. What are the worst-case and RSS tolerances of the gap?
+- [ ] $\pm0.32$ and $\pm0.16\,\mathrm{mm}$
+- [x] $\pm0.32$ and $\pm0.08\,\mathrm{mm}$
+- [ ] $\pm0.08$ and $\pm0.02\,\mathrm{mm}$
+- [ ] $\pm0.32$ and $\pm0.32\,\mathrm{mm}$
+::: solution
+Worst case: $16\times0.02 = 0.32\,\mathrm{mm}$. RSS: $\sqrt{16}\times0.02 = 4\times0.02 = 0.08\,\mathrm{mm}$. With many contributors the RSS tolerance is much smaller — provided the assumptions of [[#prop-wc-rss]] hold.
+:::
+:::
 
-How many iterations were required, and what was the learning from each?
+## Detail design and design review {#sec-detail}
 
-**3 iterations.** **P1 learning: the oil drain plug requires a 30 mm access hole in the base plate, which changes the mounting footprint. P2 learning: the machined aluminium housing is 40 % less stiff than predicted because the wall thickness was reduced to save weight, and the rib pattern was not optimised. P3 learning: the sand-cast iron housing with the optimised rib pattern meets the stiffness target within 5 %, and the natural frequency is 120 Hz, which is above the 100 Hz excitation frequency.** **The P2 prototype cost £2 000 and 2 weeks; the P3 prototype cost £8 000 and 6 weeks. If the P2 prototype had been skipped, the stiffness error would have been discovered at the P3 stage, and the rework would have cost £20 000 and 8 weeks. The P2 prototype saved £12 000 and 6 weeks.**
+In detail design the decisions become numerous and individually small, but together they determine most of the manufacturing cost. The tasks are: final dimensions and tolerances (allocated from the stack-ups), geometric tolerances and datum schemes, surface finishes, material specifications and heat treatments, standard parts (bearings, seals, fasteners, from catalogues), drawings and three-dimensional models with product manufacturing information, parts lists (bills of materials), and assembly, inspection and maintenance instructions. The checklists of [[design-process/design-for-manufacture]] apply part by part.
+
+Design reviews are held at the end of embodiment and of detail design. A review is effective when the people present include those who will make, assemble, test, sell and service the product, when the material is circulated in advance, and when it ends with a recorded list of actions and owners. Reviews look at function and performance against the specification, the calculations and their assumptions, safety and risk analyses, manufacture and assembly, cost, and compliance with standards and regulations ([[design-process/ethics-standards]]).
+
+::: history
+The systematic treatment of embodiment design grew out of the German engineering-design school. Gerhard Pahl and Wolfgang Beitz published *Konstruktionslehre* in 1977; its English translation, *Engineering Design: A Systematic Approach*, edited by Ken Wallace, appeared in 1984, and the book's basic rules of clarity, simplicity and safety and its principles of force transmission, division of tasks and self-help became the standard vocabulary of the field. The concept of product architecture and its modular and integral types was set out by Karl Ulrich in "The role of product architecture in the manufacturing firm" (*Research Policy*, 1995), and became a chapter of Ulrich and Eppinger's *Product Design and Development*, first published in 1995.
+:::
+
+::: summary
+- Embodiment design gives a selected concept its arrangement, form, materials and principal dimensions; detail design completes the definition into technical documentation.
+- Product architecture maps functional elements onto chunks and defines their interfaces. Modular architectures (slot, bus, sectional) favour variety, change and parallel work; integral ones favour mass, size and unit cost. Interfaces are frozen early and controlled.
+- Basic rules: clarity, simplicity, safety (direct, then indirect, then warnings). Principles: direct and axial load paths, uniform strength, matched deformations, balanced forces; division of tasks; self-help; fault-free design.
+- Sizing reverses analysis: loads → failure modes → criteria with a factor of safety → governing dimension → standard size → recheck. Stiffness often governs.
+- Stack-ups: $t_\text{WC} = \sum\lvert a_i\rvert t_i$ guarantees every assembly; $t_\text{RSS} = \sqrt{\sum a_i^2t_i^2}$ assumes independent, centred, normal contributors with $t = 3\sigma$ and allows looser tolerances at a predictable reject rate.
+- Prototypes are physical or analytical, focused or comprehensive; alpha prototypes test the design, beta the production design. A zero-failure test of $n \ge \ln(1-C)/\ln R_0$ units demonstrates reliability $R_0$ at confidence $C$.
 :::
 
 ## Exercises
 
-::: exercise Tolerance stack-up {#ex-stackup2 level=3 check="0.25"}
-A shaft (30 ± 0.03) passes through a bushing (30 +0.02/−0, 40 ± 0.02) in a housing (40 +0.03/−0). Calculate the worst-case radial clearance.
-
+::: exercise Counting interfaces {#exr-interfaces level=1 check="15"}
+A product is divided into 6 chunks. In the worst (fully integral) case every chunk interacts directly with every other. How many pairwise interfaces must be specified? (Enter the number.)
 ::: solution
-The radial clearance is:
-
-$$
-\delta _ { \text{radial } } \; = \; { \frac { D _ { \text{housing } } - D _ { \text{bushing OD } } } { 2 } } + { \frac { D _ { \text{bushing ID } } - D _ { \text{shaft } } } { 2 } }
-$$
-
-**Worst case (maximum clearance):** Housing OD = 40.03, bushing OD = 39.98, bushing ID = 30.02, shaft = 29.97.
-
-$$
-\delta _ { \text{radial } } \; = \; { \frac { 4 0 . 0 3 - 3 9 . 9 8 } { 2 } } + { \frac { 3 0 . 0 2 - 2 9 . 9 7 } { 2 } } \; = \; 0 . 0 2 5 + 0 . 0 2 5 \; = \; { \bf 0 . 0 5 } \ \text{mm}
-$$
-
-**The worst-case radial clearance is 0.05 mm, which is acceptable for a general-purpose shaft. The RSS clearance is $\sqrt{0.015^2 + 0.01^2 + 0.01^2 + 0.015^2} = 0.026$ mm, which is the expected clearance for high-volume production.**
+Each pair of chunks has one interface: $\binom62 = 6\times5/2 = 15$. A bus architecture in which all 6 chunks connect only to a common seventh element needs just 6 interface instances of one standard type — one reason bus modularity simplifies design.
 :::
 :::
 
-::: exercise Sizing a bolted joint {#ex-size-bolt level=3 check="12"}
-A bolted joint must transmit a shear load of 20 kN. The bolt is M12 (tensile stress area 84.3 mm²), property class 8.8 (yield 640 MPa), and the safety factor is 3. The shear area is 0.78 times the tensile stress area. How many bolts are required?
-
+::: exercise Worst-case stack {#exr-wc level=1 check="0.2"}
+A gap is formed by three dimensions toleranced $\pm0.05$, $\pm0.10$ and $\pm0.05\,\mathrm{mm}$. What is the worst-case tolerance of the gap? (Enter $t_\text{WC}$ in mm.)
 ::: solution
-$$
-\tau _ { \text{allow } } \; = \; { \frac { 0 . 5 7 7 \times \sigma _ { Y } } { n } } \; = \; { \frac { 0 . 5 7 7 \times 6 4 0 } { 3 } } \; = \; 1 2 3 \ \text{MPa}
-$$
-
-$$
-A _ { \text{shear } } \; = \; 0 . 7 8 \times 8 4 . 3 \; = \; 6 5 . 8 \ \text{mm} ^ { 2 }
-$$
-
-$$
-F _ { \text{bolt } } \; = \; \tau _ { \text{allow } } \times A _ { \text{shear } } \; = \; 1 2 3 \times 6 5 . 8 \; = \; 8 \ 0 9 3 \ \text{N}
-$$
-
-$$
-N _ { \text{bolts } } \; = \; { \frac { 2 0 \ 0 0 0 } { 8 \ 0 9 3 } } \; = \; 2 . 4 7 \; \longrightarrow \; { \bf 3 } \ \text{bolts}
-$$
-
-**3 bolts are required. The 4th bolt is the "good engineering practice" bolt that accounts for the load distribution uncertainty (the bolts nearest the load carry more than the bolts furthest away). The design uses 4 bolts, and the load per bolt is 5 kN, which is 62 % of the allowable.**
+$t_\text{WC} = 0.05 + 0.10 + 0.05 = 0.20\,\mathrm{mm}$, independent of the signs $a_i = \pm1$.
 :::
 :::
 
-::: exercise Layout principles {#ex-layout-principles level=2 check="5"}
-A medical device has 6 subsystems: (1) power supply, (2) control electronics, (3) sensor module, (4) display, (5) battery, (6) patient interface. Apply the layout principles and identify the 3 most critical interfaces.
-
+::: exercise RSS stack {#exr-rss level=1 check="0.122"}
+For the same three dimensions, find the RSS tolerance of the gap, assuming independent, centred normal processes with $t_i = 3\sigma_i$. (Enter $t_\text{RSS}$ in mm, rounded to three decimal places.)
 ::: solution
-**Layout decisions:**
-
-1. **Group by function**: The power supply and control electronics are on the same PCB (shared ground plane). The sensor module and patient interface are connected by a short cable (minimise noise pickup).
-2. **Group by maintenance**: The battery and the sensor module are behind the same access panel (both are wear parts).
-3. **Separate by heat**: The power supply (heat source: 15 W) is separated from the sensor module (heat sink: thermistor) by the chassis wall.
-4. **Separate by vibration**: The battery (no vibration) is separated from the patient interface (vibration source: peristaltic pump) by a rubber grommet.
-5. **Assemble from one direction**: The PCB stack is assembled from the top (the chassis is a tray with standoffs).
-
-**The 3 most critical interfaces are: (1) power supply to control electronics (voltage, current, grounding, EMC), (2) sensor module to patient interface (biocompatibility, sterilisation, fluid path), (3) control electronics to display (signal type, EMI shielding, cable routing).**
+$t_\text{RSS} = \sqrt{0.05^2 + 0.10^2 + 0.05^2} = \sqrt{0.0150} = 0.1225\,\mathrm{mm}$, which rounds to $0.122\,\mathrm{mm}$ (the exact value is $0.12247$). It is dominated by the largest contributor: reducing the $\pm0.10$ tolerance would help most.
 :::
 :::
 
-::: exercise Prototype fidelity and cost {#ex-proto-fidelity level=3 check="4"}
-A product has 4 prototype levels (P1–P4) with costs 1×, 5×, 20×, and 100×. If a design error is found at P3 and the rework cost is 50× the P1 cost, what is the total cost of the error if it had been found at P1 instead?
-
+::: exercise Torque from power {#exr-torque level=1 check="19.10"}
+A gear motor delivers $3.0\,\mathrm{kW}$ at $1500\,\mathrm{rev/min}$. What torque does its output shaft carry? (Enter $T$ in N·m, rounded to two decimal places.)
 ::: solution
-**If the error is found at P1, the rework cost is 1× (the P1 prototype is reprinted). If the error is found at P3, the rework cost is 50× (the P3 prototype is remanufactured, the tooling is modified, and the test is repeated). The cost of the error is 50× higher at P3 than at P1. The P1 prototype costs £500; the P3 rework costs £25 000. The P1 prototype saves £24 500 by catching the error early.**
+$\omega = 1500\times2\pi/60 = 157.08\,\mathrm{rad/s}$; $T = P/\omega = 3000/157.08 = 19.099\,\mathrm{N\,m} \approx 19.10\,\mathrm{N\,m}$.
 :::
 :::
 
-::: exercise GD&T application {#ex-gdt-app level=3 check="3"}
-A bearing bore has the following GD&T callouts: (1) position tolerance φ0.3 at MMC, (2) perpendicularity 0.05 to datum A, (3) circular runout 0.01 to datum B-C. What is the function of each callout?
-
+::: exercise Shaft diameter for strength {#exr-shaft level=2 check="21"}
+A solid shaft carries a steady torque of $100\,\mathrm{N\,m}$. The allowable shear stress (yield strength in shear divided by the factor of safety) is $60\,\mathrm{MPa}$. Find the minimum diameter and round it up to the next whole millimetre. (Enter $d$ in mm.)
 ::: solution
-**(1) Position tolerance φ0.3 at MMC**: controls the location of the bore relative to the datum reference frame. The MMC modifier allows the position tolerance to increase as the bore size departs from the maximum material condition (the bonus tolerance). **(2) Perpendicularity 0.05 to datum A**: controls the orientation of the bore axis relative to the mounting face (datum A). The perpendicularity ensures that the bearing seat is square to the mounting face, which prevents the bearing from being cocked in the assembly. **(3) Circular runout 0.01 to datum B-C**: controls the concentricity of the bore relative to the shaft journal (datums B-C). The runout ensures that the bore is concentric with the shaft, which prevents the vibration and the wear that result from an eccentric bore.
+$d \ge (16T/(\pi\tau_\text{allow}))^{1/3} = (16\times100/(\pi\times60\times10^6))^{1/3} = 0.02040\,\mathrm m = 20.4\,\mathrm{mm}$, so $d = 21\,\mathrm{mm}$. Check: $\tau = 16\times100/(\pi\times0.021^3) = 55.0\,\mathrm{MPa} \le 60\,\mathrm{MPa}$ ✓. A designer would probably go on to a preferred size such as 22 or 25 mm to suit standard bearings and seals, and then check stiffness.
 :::
 :::
 
-::: exercise Design freeze checklist {#ex-freeze-checklist level=2 check="7"}
-A design freeze checklist has 7 items. If 2 items are incomplete at the gate review, what is the correct decision, and what is the cost of a conditional pass?
-
+::: exercise Choosing a nominal size {#exr-nominal level=2 check="49.38"}
+A housing of internal width $H \pm 0.08\,\mathrm{mm}$ contains three parts of length $12.00\pm0.05$, $25.00\pm0.10$ and $12.00\pm0.05\,\mathrm{mm}$ in a row. The gap must never be less than $0.10\,\mathrm{mm}$ (worst case). What is the smallest nominal housing width $H$? (Enter $H$ in mm.)
 ::: solution
-**The correct decision is "hold" — the design is not frozen until all 7 items are complete. A conditional pass is a design freeze with open items, and the open items are the reason the design is not frozen. The cost of a conditional pass is the cost of the change that would have been caught by the incomplete item, multiplied by the phase multiplier (100× at the design-freeze stage). If the incomplete item is the tolerance stack-up, and the stack-up reveals an interference after the tooling is cut, the cost is 1 000× the cost of the change at the design-freeze stage.**
+Gap $G = H - (12 + 25 + 12) = H - 49.00$ nominally, with $t_\text{WC} = 0.08 + 0.05 + 0.10 + 0.05 = 0.28\,\mathrm{mm}$. The minimum gap is $H - 49.00 - 0.28 \ge 0.10$, so $H \ge 49.38\,\mathrm{mm}$. Then the maximum gap is $49.38 - 49.00 + 0.28 = 0.66\,\mathrm{mm}$, which must also be checked against the function.
 :::
 :::
 
-::: exercise Derivation: the RSS tolerance stack-up {#ex-derive-rss level=4 check="3"}
-Show that the RSS tolerance stack-up $\delta _ { \text{total } } = \sqrt { \sum \delta _ { i } ^ { 2 } }$ is the standard deviation of the sum of $n$ independent normal random variables, and that the worst-case stack-up is the sum of the individual tolerances. Evaluate for 3 tolerances: 0.1, 0.05, 0.02 mm.
-
+::: exercise A reliability demonstration test {#exr-success level=2 check="45"}
+How many units must pass a zero-failure test to demonstrate a reliability of $0.95$ with $90\,\%$ confidence? (Enter the number of units.)
 ::: solution
-If each dimension $x _ { i }$ is normally distributed with standard deviation $\sigma _ { i } = \delta _ { i } / 3$ (assuming the tolerance is ± 3σ), the sum $S = \sum x _ { i }$ is normally distributed with standard deviation:
-
-$$
-\sigma _ { S } \; = \; { \sqrt { \sum \sigma _ { i } ^ { 2 } } } \; = \; { \sqrt { \sum ( \delta _ { i } / 3 ) ^ { 2 } } } \; = \; { \frac { 1 } { 3 } } { \sqrt { \sum \delta _ { i } ^ { 2 } } }
-$$
-
-The RSS tolerance (± 3σ) is:
-
-$$
-\delta _ { \text{total } } \; = \; 3 \sigma _ { S } \; = \; { \sqrt { \sum \delta _ { i } ^ { 2 } } }
-$$
-
-For 3 tolerances: $\delta _ { \text{total } } = { \sqrt { 0 . 1 ^ { 2 } + 0 . 0 5 ^ { 2 } + 0 . 0 2 ^ { 2 } } } = { \sqrt { 0 . 0 1 + 0 . 0 0 2 5 + 0 . 0 0 0 4 } } = { \sqrt { 0 . 0 1 2 9 } } = { \bf 0 . 1 1 4 } \ \text{mm}$ .
-
-**The worst-case stack-up is $0 . 1 + 0 . 0 5 + 0 . 0 2 = 0 . 1 7$ mm. The RSS stack-up (0.114 mm) is 67 % of the worst-case stack-up, and the difference is the probability that all tolerances are at their extreme simultaneously (which is vanishingly small for normally distributed dimensions).** $\blacksquare$
+$n \ge \ln(0.10)/\ln(0.95) = 2.303/0.0513 = 44.9$, so $45$ units. Check: $0.95^{45} = 0.099 < 0.10$ ✓, $0.95^{44} = 0.105$ ✗.
 :::
 :::
 
-::: exercise Derivation: the modular vs integral cost crossover {#ex-derive-modular level=4 check="5"}
-A modular product has $n$ modules, each with a cost $c _ { m }$ and an interface cost $c _ { i }$ per connection. An integral product has a single cost $c _ { \text{int } } = k \cdot n \cdot c _ { m }$ (where $k < 1$ is the integration saving). Show that the modular product is cheaper when $c _ { i } < ( 1 - k ) \, c _ { m } / ( n - 1 )$ , and evaluate for $k = 0 . 7$ , $c _ { m } = 1 0 0$ , $n = 5$ .
-
+::: exercise Load path of a wall-mounted shelf {#exr-shelf level=2}
+A shelf bracket carries $1.2\,\mathrm{kN}$ at $250\,\mathrm{mm}$ from a wall. Sketch two layouts, one in bending and one triangulated, and for each draw the free-body diagram and find the force in each member or the bending moment at the wall. Which loads end up in the wall fixings in each case, and what does that imply for the choice of wall plugs?
 ::: solution
-The modular cost is $C _ { \text{mod } } = n \, c _ { m } + ( n - 1 ) \, c _ { i }$ (the product has $n - 1$ interfaces). The integral cost is $C _ { \text{int } } = k \, n \, c _ { m }$ .
+**Cantilever.** At the wall: vertical shear $1.2\,\mathrm{kN}$ and moment $M = 1.2\times0.25 = 0.30\,\mathrm{kN\,m}$. The moment is resisted by a couple between the fixings: if the top and bottom fixings are $h = 100\,\mathrm{mm}$ apart and the bracket pivots about its bottom edge, the top fixing is pulled out of the wall with about $M/h = 3.0\,\mathrm{kN}$, two and a half times the shelf load.
 
-The modular product is cheaper when:
+**Triangulated, strut at $45^\circ$ below.** Joint at the load: strut compression $1.2/\sin45^\circ = 1.70\,\mathrm{kN}$, tie tension $1.2\,\mathrm{kN}$. At the wall the tie pulls the top fixing out with $1.2\,\mathrm{kN}$ and the strut pushes the bottom against the wall with $1.2\,\mathrm{kN}$ horizontally and $1.2\,\mathrm{kN}$ vertically.
 
-$$
-n \, c _ { m } + ( n - 1 ) \, c _ { i } \; < \; k \, n \, c _ { m }
-$$
-
-$$
-c _ { i } \; < \; { \frac { ( k - 1 ) \, n \, c _ { m } } { n - 1 } } \; = \; { \frac { ( 1 - k ) \, n \, c _ { m } } { n - 1 } } \quad \text{(rearranged, since } k < 1 \text{)}
-$$
-
-Wait — let me redo: $n c_m + (n-1) c_i < k n c_m$ → $(n-1) c_i < (k-1) n c_m$ → since $k < 1$, the right side is negative, so the modular product is always more expensive. **The integral product is always cheaper in unit cost; the modular product is cheaper in lifecycle cost (maintenance, upgrade).**
-
-For $k = 0.7$, $c_m = 100$, $n = 5$: $C_{\text{mod}} = 500 + 4 c_i$, $C_{\text{int}} = 350$. The modular product costs £150 more in unit cost, but the maintenance saving (swap the module vs disassemble the product) is £200 per service, and the product has 5 services over its life. The lifecycle saving is £1 000 − £150 = £850. **The modular product is cheaper over the life cycle when the maintenance saving exceeds the interface cost.** $\blacksquare$
+The direct load path reduces the pull-out force on the top fixing from about $3\,\mathrm{kN}$ to $1.2\,\mathrm{kN}$; pull-out of the plug is usually the critical failure mode, so the triangulated layout is safer for the same plug. Making the cantilever's backplate taller (larger $h$) helps in the same way.
 :::
 :::
 
-::: quiz Embodiment design {#quiz-embodiment}
-At which stage should the tolerance stack-up be performed?
-
-- [ ] Detail design, because that is when the tolerances are specified
-- [x] Embodiment design, because that is when the layout is fixed and the tolerance chain is defined
-- [ ] Concept generation, because that is when the architecture is chosen
-- [ ] Production, because that is when the parts are measured
-
+::: exercise Statistical tolerancing with uniform distributions {#exr-uniform level=3 check="0.346"}
+Some processes produce dimensions spread roughly uniformly across the tolerance band (for example a tool that wears steadily between resettings). (a) Show that a uniform distribution on $[\mu - t, \mu + t]$ has $\sigma = t/\sqrt3$. (b) Show that for $m$ independent uniform contributors each of tolerance $t$, the $3\sigma$ tolerance of the gap is $\sqrt{3m}\,t$, and compare with the worst-case and normal-RSS values. (c) Evaluate the $3\sigma$ tolerance for $m = 4$, $t = 0.1\,\mathrm{mm}$. (Enter it in mm, rounded to three decimal places.)
 ::: solution
-**Embodiment design.** The tolerance stack-up is performed at the embodiment stage, because that is when the layout is fixed and the tolerance chain is defined. If the stack-up is performed at the detail stage, the tolerance chain may not close, and the fix is a design change at the most expensive possible time.
+(a) The variance of a uniform distribution of width $2t$ is $(2t)^2/12 = t^2/3$, so $\sigma = t/\sqrt3$.
+
+(b) $\sigma_G^2 = m\,t^2/3$, so $3\sigma_G = 3t\sqrt{m/3} = \sqrt{3m}\,t$. This is $\sqrt3 = 1.73$ times the normal RSS value $\sqrt m\,t$, and smaller than the worst case $mt$ when $m > 3$. For $m \le 3$ it gives $\ge$ the worst case, which shows the $3\sigma$ statement is meaningless there: with few uniform contributors the gap is not close to normal, and the worst case is the correct bound. A common practical compromise is to multiply the RSS tolerance by an inflation factor of about $1.5$.
+
+(c) $\sqrt{12}\times0.1 = 0.3464\,\mathrm{mm} \approx 0.346\,\mathrm{mm}$, against $0.4\,\mathrm{mm}$ worst case and $0.2\,\mathrm{mm}$ normal RSS.
 :::
 :::
 
-::: quiz Prototype hierarchy {#quiz-prototype}
-The purpose of a P2 (works-like) prototype is:
-
-- [ ] To check the aesthetics and ergonomics
-- [x] To verify the function and reduce the technical risk
-- [ ] To validate the production process
-- [ ] To certify the product for sale
-
+::: exercise Architecture of a cordless tool range {#exr-architecture level=3}
+A company plans a range of 12-volt and 18-volt cordless tools: drill, impact driver, jigsaw, circular saw and a work light. Propose an architecture. Identify the chunks, say which are shared across the range and which are specific, choose the type of modularity for the battery interface, list the fundamental and incidental interactions at that interface, and state what the interface control document must specify. What are the costs of the modular choice?
 ::: solution
-**To verify the function and reduce the technical risk.** The P2 prototype is built from off-the-shelf parts and hand-made components, and its purpose is to answer the question "does the concept work?" before the design is frozen. The P1 prototype checks the packaging, the P3 prototype validates the specification, and the P4 prototype qualifies the process.
+A reasonable answer: chunks are the battery pack, the motor and its electronic controller, the transmission (gearbox, clutch, chuck or blade drive), the housing with grip and trigger, and tool-specific attachments (chuck, saw blade guard, lamp head). Shared across the range: battery packs and charger (one per voltage), possibly motor families and trigger switches; specific: transmissions and housings.
+
+The battery interface is a **bus** (or slot shared by all tools of one voltage): every tool presents an identical receptacle. Fundamental interactions: mechanical retention under the tool's vibration and drop loads, electrical power (voltage, peak current), and data (cell temperature, state of charge, overcurrent protection signals). Incidental ones: heat from the motor and pack, vibration fatigue of the contacts, water and dust ingress, and the moment from the pack's mass in a drop.
+
+The ICD specifies rail geometry and tolerances, latch force and drop-test retention requirements, contact layout, current rating and voltage range, communication protocol, temperature limits, ingress-protection rating, and keying that prevents a pack of the wrong voltage from being fitted (fault-free design). Costs of modularity: each tool carries a receptacle sized for the largest pack and the highest current, the interface cannot be optimised for one tool, and freezing it limits later improvements; compatibility must be kept for years, because customers' investment is in packs.
 :::
-:::
-
-## Where this lesson leads
-
-- **[[design-process/concept-selection]]** — The selected concept is the input to the embodiment design phase, and the embodiment is where the concept becomes a geometry.
-- **[[design-process/design-process-overview]]** — The embodiment design phase is the Pahl & Beitz "embodiment design" phase, and the design freeze is the Gate 3 decision.
-- **[[design-process/design-for-manufacture]]** — The DFM analysis is performed at the embodiment stage, and the DFM feedback drives the layout iteration.
-- **[[design-process/requirements]]** — The interface control documents are derived from the interface requirements, and the ICD is the contract between the teams.
-- **[[design-process/reliability-risk]]** — The DFMEA is performed at the embodiment stage, and the RPN threshold is the gate criterion for the design freeze.
-- **[[manufacturing/metrology-quality]]** — The GD&T callouts and the datum reference frame are the basis for the inspection plan and the CMM program.
-- **[[manufacturing/machining]]** — The wall thickness, the fillet radius, and the tolerance are constrained by the machining process capability.
-- **[[solid-mechanics/linear-elasticity]]** — The sizing calculations are based on the stress, deflection, and buckling analyses from the elasticity course.
-
-::: history Embodiment design: from the draftsman's board to the digital twin {#history-embodiment}
-**1900s** — The **draftsman's board** is the embodiment design tool: the engineer draws the part at full size, the tolerances are specified by the machinist's skill, and the fit is achieved by the fitter's file. **The draftsman's board is the ancestor of CAD, and the fitter's file is the ancestor of the tolerance stack-up.**
-
-**1953** — **Patrick McFarland** at MIT develops the first **numerically controlled milling machine**, which can produce parts to a tolerance of ± 0.025 mm without a skilled machinist. **The NC machine is the first tool that makes the tolerance a design parameter rather than a manufacturing variable, and the design parameter is the reason the tolerance stack-up becomes a calculation rather than a negotiation.**
-
-**1963** — **Ivan Sutherland** creates **Sketchpad**, the first interactive CAD system. **Sketchpad is the ancestor of every CAD system, and the CAD system is the tool that makes the 3D layout, the interference check, and the tolerance stack-up possible.**
-
-**1977** — **Manfred Pahl and Wolfgang Beitz** publish *Konstruktionsmethodik*, introducing the **embodiment design phase** as a distinct stage between the concept and the detail design. **The embodiment phase is the recognition that the concept is not the design, and the design is not the detail, and the middle is where the product is made.**
-
-**1982** — **The ASME Y14.5 standard** introduces **Geometric Dimensioning and Tolerancing (GD&T)** as the standard language for specifying the geometry of a part. **GD&T is the reason the tolerance is a functional specification rather than a dimensional one, and the functional specification is the reason the part is inspected on a CMM and not with a caliper.**
-
-**1990s** — **The digital mockup** replaces the physical mockup: the layout is checked in 3D CAD, the interference is detected by the software, and the maintenance access is verified by the virtual human model. **The digital mockup is the reason the layout iteration takes days instead of weeks, and the days are the reason the layout is iterated 5 times instead of 1.**
-
-**2005** — **The model-based definition (MBD)** standard (ASME Y14.41) allows the 3D CAD model to carry the GD&T, the material specification, and the surface finish, eliminating the 2D drawing. **MBD is the reason the drawing is no longer the legal document; the 3D model is, and the 3D model is the reason the tolerance stack-up is automated.**
-
-**2015** — **The digital twin** extends the MBD model with the physical behaviour: the stress, the temperature, the vibration, and the wear are simulated in the model, and the model is updated with the sensor data from the physical product. **The digital twin is the promise that the embodiment design can be validated without a physical prototype, and the promise is the reason the prototype hierarchy is being compressed from 4 levels to 2.**
-:::
-
-::: summary Embodiment design {#summary-embodiment}
-- **Embodiment design is the phase in which the concept becomes a geometry, the geometry becomes a structure, and the structure becomes a product.** The embodiment decisions determine the product's cost, manufacturability, and maintainability.
-- **The layout design arranges the components in 3D space to satisfy the functional, structural, thermal, and manufacturing constraints.** The layout principles are: group by function, group by maintenance, separate by heat, separate by vibration, and assemble from one direction.
-- **The product architecture (modular vs integral) determines the cost, maintainability, and upgradeability.** The modular architecture is the right choice for a product that will be upgraded; the integral architecture is the right choice for a product that will not.
-- **The interface control document (ICD) defines the mechanical, electrical, data, fluid, thermal, and environmental interface between two subsystems.** The interface that is not in the ICD is the interface that will be discovered at the integration test.
-- **Sizing is the process of determining the dimensions from the requirements and the constraints.** The sizing calculation is the bridge between the requirement and the dimension, and the calculation is the justification for the dimension.
-- **The tolerance stack-up is the sum of the individual tolerances in the chain, and the stack-up determines whether the assembly fits.** The worst-case method is used for low-volume or safety-critical assemblies; the RSS method is used for high-volume production.
-- **GD&T is the language for specifying the geometry beyond the simple linear dimensions.** The datum reference frame is the origin of the measurement, and the origin is the reason the measurement is repeatable.
-- **The prototype hierarchy (P1–P4) defines the fidelity of the prototype and the purpose of the test.** The prototype that is skipped is the risk that is not reduced, and the risk that is not reduced is the risk that appears at the worst possible time.
-- **The design iteration loop (analyse, build, test, learn) is the mechanism by which the design converges.** The iteration that is skipped is the error that is not found, and the error that is not found is the error that appears in the field.
-- **The design freeze is the point at which the design is locked and any change requires a formal change order.** The design freeze is passed when all drawings, calculations, tolerances, FMEAs, DFM analyses, prototypes, and ICDs are complete.
 :::
 
 ## Further reading
 
-- **Manfred Pahl, Wolfgang Beitz, Karl-Heinrich Feldhusen and Karl-Heinrich Grote (2007)** — *Engineering Design: A Systematic Approach*, 3rd ed. Springer. Chapters 7–9: embodiment design, layout, and the design freeze.
-- **Gerd Ulrich, Karl Eppinger and Steven Eppinger (2019)** — *Product Design and Development*, 7th ed. McGraw-Hill. Chapter 7: embodiment design, prototyping, and the design freeze.
-- **ASME Y14.5-2018** — *Dimensioning and Tolerancing*. ASME. The GD&T standard, the datum reference frame, and the feature control frame.
-- **Björn-Heinrich Ehrenberg and Helmut Windberger (1992)** — *Konstruktionsrechnung* (Design Calculation). Springer. The sizing calculation methodology for mechanical components.
-- **James L. Adams, David J. Powers, and Mitchell M. Toulmin (2001)** — *Making Hard Decisions: An Introduction to Decision Analysis*. Duxbury. The decision analysis framework for the design freeze.
-- **Michael D. West (2003)** — *Introduction to Surface Engineering and Functionally Graded Materials*. Woodhead. The surface finish and coating specification for the embodiment design.
-- **David G. Ullman (2010)** — *The Mechanical Design Process*, 4th ed. McGraw-Hill. The complete design process, from the requirements to the design freeze, with the calculation package template.
-- **ASME Y14.41-2019** — *Digital Product Definition Data Practices*. ASME. The model-based definition standard, the 3D annotation, and the elimination of the 2D drawing.
+Pahl, Beitz, Feldhusen and Grote, *Engineering Design: A Systematic Approach* (3rd English edition, Springer, 2007), is the source of the basic rules and principles of embodiment and gives many illustrations. Ulrich, Eppinger and Yang, *Product Design and Development* (7th edition, McGraw-Hill, 2020), covers product architecture, prototyping and industrial design from a product-development viewpoint. For tolerance analysis in more depth — non-linear stacks, geometric tolerances in stack-ups, Monte Carlo simulation — see the tolerancing chapters of standard machine-design texts and the companion chapter [[engineering-graphics/geometric-tolerancing]].

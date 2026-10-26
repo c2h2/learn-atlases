@@ -1,493 +1,288 @@
-Engineering ethics is the discipline of making decisions that protect the public's safety, health, and welfare, even when the decision is inconvenient, expensive, or unpopular. The discipline is not optional: **the engineer's obligation to the public is the first canon of every engineering code of ethics, and the first canon is the reason the engineer who signs a drawing is legally and morally responsible for the consequences of the design.** The bridge that collapses, the aircraft that crashes, the product that injures, and the factory that pollutes are not engineering failures; they are ethics failures, and the ethics failure is the reason the engineer's signature is a legal document, not a formality.
+An engineer's design leaves the drawing office to be built, sold and used by people who never see the calculations. Society protects them in three overlapping ways. **Standards** record agreed good practice — dimensions, test methods, safety distances, design rules — so that each designer need not rediscover them. **Law** makes some of that practice compulsory before a product may be sold, makes the producer pay for harm caused by defective products, and gives inventors and designers limited monopolies in return for disclosing their work. **Professional ethics** covers what neither standards nor law can reach: the judgement of the individual engineer when the calculation is uncertain, the schedule is tight and someone with more authority wants a different answer. This chapter treats the three in turn — standards and the European system of essential requirements, harmonised standards and CE marking; product liability; intellectual property — and then professional codes, ethical reasoning and whistle-blowing, illustrated by four cases whose facts are well documented: the Hyatt Regency walkways, the Pinto fuel tank, the Citicorp Center and the Challenger. It describes the principles; it is not legal advice, and the regulations it cites change, so their current texts must be consulted. Risk analysis itself is taught in [[design-process/reliability-risk]].
 
-The standards and regulations that govern engineering design are the codified ethics: the ISO standards, the EN directives, the ASME codes, the IEC specifications, and the national regulations are the accumulated wisdom of a century of failures, and the wisdom is written in the language of "shall" and "shall not." **The engineer who designs to the standard is protected by the standard; the engineer who designs below the standard is not protected by anything.** The standard is the minimum, not the target, and the minimum is the reason the standard is the floor, not the ceiling.
+## Standards {#sec-standards}
 
-::: warning Nine ways ethics and standards go wrong
-**Not knowing the applicable standard.** The engineer who designs a pressure vessel without knowing the Pressure Equipment Directive (PED 2014/68/EU) is not designing a pressure vessel; they are designing a lawsuit. **Identify the applicable standards and regulations before the design starts, and the identification is the reason the design is compliant, not the inspection.** **Treating the standard as a target, not a minimum.** The engineer who designs to the minimum factor of safety specified in the standard is designing a product that will fail when the load exceeds the design load by 1 %. **The standard is the minimum acceptable level of safety, and the minimum is the reason the engineer must apply engineering judgement above the minimum when the consequence of failure is severe.** **Not reporting the safety concern.** The engineer who knows that the design is unsafe and does not report it is not a loyal employee; they are an accessory. **The engineering code of ethics requires the engineer to report the safety concern to the employer, the client, and (if necessary) the regulatory authority, and the requirement is the reason the whistleblower is protected by law.** **Not documenting the decision.** The engineer who makes a design decision without documenting the rationale is not making a decision; they are making a guess. **The calculation, the assumption, the standard, and the judgement must be documented, and the documentation is the reason the decision is defensible in a court of law.** **Confusing the customer's interest with the public's interest.** The customer wants the product to be cheap, light, and fast; the public wants the product to be safe. **When the customer's interest conflicts with the public's interest, the public's interest wins, and the priority is the reason the engineer's obligation is to the public, not to the customer.** **Not considering the unintended consequence.** The product that solves one problem may create another: the airbag that saves the driver may kill the child in the passenger seat; the lightweight structure that saves fuel may be less crashworthy. **The FMEA, the hazard analysis, and the risk assessment are the tools that identify the unintended consequence, and the identification is the reason the unintended consequence is designed out, not litigated.** **Not respecting the intellectual property.** The engineer who copies a competitor's design without a licence is not innovating; they are stealing. **The patent, the trademark, and the copyright are the legal framework for intellectual property, and the framework is the reason the engineer must do a patent search before the design starts and a freedom-to-operate analysis before the product launches.** **Not considering the environmental impact.** The engineer who designs a product that pollutes, wastes, or endangers the ecosystem is not designing a product; they are designing an environmental liability. **The Ecodesign Directive, the REACH regulation, and the Paris Agreement are the legal framework for the environmental impact, and the framework is the reason the engineer's obligation extends to the planet.** **Not maintaining the competence.** The engineer who designs outside their area of competence is not taking on a challenge; they are taking on a risk. **The engineering code of ethics requires the engineer to practise only within their area of competence, and the requirement is the reason the engineer must say "I am not qualified to design this" when the design requires a qualification they do not have.**
+::: definition Standard {#def-standard}
+A **standard** is a document, established by consensus and approved by a recognised body, that provides for common and repeated use rules, guidelines or characteristics for products, processes or services (the definition of ISO/IEC Guide 2). Standards are prepared by committees of manufacturers, users, test houses, regulators and researchers, are reviewed periodically (ISO standards at least every five years), and are identified by number and year — ISO 12100:2010, EN ISO 13849-1:2023 — because the requirements change between editions.
 :::
 
-## 1. Engineering ethics: the canons and the frameworks
+Engineers meet several kinds: **dimensional and interchangeability** standards (screw threads, ISO 286 limits and fits, bearing dimensions), **test-method** standards (tensile testing to ISO 6892-1, hardness, fatigue), **design and product** standards (pressure vessels, cranes, machine guards, gears), and **management-system** standards (ISO 9001 for quality, ISO 14001 for environmental management). The international bodies are ISO (founded 1947) and, for electrotechnology, IEC (1906); in Europe CEN and CENELEC publish European Norms (EN), which every member's national body (BSI, DIN, AFNOR …) must adopt unchanged and withdraw conflicting national standards; in the United States, standards come from many accredited developers such as ASME, ASTM and SAE, coordinated by ANSI.
 
-::: definition The engineering code of ethics {#def-code-ethics}
-Every professional engineering institution (ICE, IMechE, IET, ASME, IEEE, VDI) publishes a code of ethics, and the codes share a common structure:
+A standard is in itself **voluntary**: nobody is obliged to follow it. It becomes effectively or legally compulsory in three ways: when a law refers to it (many US states make the ASME Boiler and Pressure Vessel Code mandatory for boilers within their jurisdiction), when a contract specifies it, or — the European approach below — when following it is the easiest way to demonstrate that the law's requirements are met. And in a court, a published standard is strong evidence of what a competent engineer should have known and done at the time.
 
-$$
-\begin{array} { l l l }
-\textbf{Canon} & \textbf{Principle} & \textbf{Example} \\ \hline
-1 & \text{Hold paramount the safety, health, and welfare of the public} & \text{Report the unsafe design} \\
-2 & \text{Undertake only those assignments within one's competence} & \text{Say "I am not qualified"} \\
-3 & \text{Issue statements and reports in an objective and truthful manner} & \text{Do not falsify the test data} \\
-4 & \text{Act as a faithful agent or trustee for each employer or client} & \text{Do not disclose the client's IP} \\
-5 & \text{Avoid deceptive acts and conflicts of interest} & \text{Declare the conflict of interest} \\
-6 & \text{Conduct oneself with integrity and fairness} & \text{Do not steal the competitor's design} \\
-\end{array}
-$$
+### The hierarchy of machinery safety standards
 
-**The first canon is the reason the engineer's obligation to the public overrides the obligation to the employer, the client, and the customer. The first canon is the reason the engineer who reports the unsafe design is protected by the law (the Public Interest Disclosure Act 1998 in the UK, the Sarbanes-Oxley Act 2002 in the US), and the protection is the reason the whistleblower is an engineer, not a traitor.**
+Machinery safety standards are organised in three types, as described in ISO 12100:
+
+- **Type-A** (basic safety) standards give concepts and principles for all machinery — chiefly ISO 12100:2010, *Safety of machinery — General principles for design — Risk assessment and risk reduction*.
+- **Type-B** (generic) standards deal with one safety aspect or one type of safeguard across many machines — safety distances (ISO 13857), safety-related parts of control systems (ISO 13849-1), emergency stop (ISO 13850), interlocking devices (ISO 14119), guards (ISO 14120).
+- **Type-C** (machine-specific) standards give detailed requirements for a particular kind of machine — presses, robots, lifts, machine tools. Where a type-C standard exists and covers a hazard, its requirements take precedence over the A and B standards for that machine.
+
+::: algorithm Risk assessment and the three-step method (ISO 12100) {#alg-iso12100}
+1. **Determine the limits of the machine**: intended use and *reasonably foreseeable misuse*, all phases of life (transport, installation, operation, cleaning, maintenance, decommissioning), the people exposed, space and time limits.
+2. **Identify the hazards** (mechanical, electrical, thermal, noise, vibration, radiation, materials, ergonomic …) and the hazardous situations in every phase.
+3. **Estimate the risk** of each: the severity of the possible harm combined with its probability — which depends on exposure, the occurrence of the hazardous event and the possibility of avoiding or limiting the harm.
+4. **Evaluate the risk**: is further reduction required?
+5. **Reduce the risk**, in this order of priority:
+   (a) **inherently safe design** — remove the hazard or reduce it by the design itself (lower forces and speeds, no trapping gaps, rounded edges, low voltage, stable geometry);
+   (b) **safeguarding and complementary protective measures** — fixed and interlocked guards, light curtains, two-hand controls, emergency stops;
+   (c) **information for use** — warnings, signs, instructions, training requirements, personal protective equipment.
+   After each measure, return to step 2: a measure can introduce new hazards.
 :::
 
-::: definition Ethical frameworks: deontology, consequentialism, and virtue ethics {#def-ethical-frameworks}
-The three ethical frameworks that the engineer uses to reason about the ethical dilemma are:
+The order matters: a warning label does not reduce risk the way removing the hazard does, and a designer may not move to the next step merely because it is cheaper.
 
-$$
-\begin{array} { l l l l }
-\textbf{Framework} & \textbf{Principle} & \textbf{Question} & \textbf{Example} \\ \hline
-\text{Deontology} & \text{Duty, rule, obligation} & \text{"Is it right?"} & \text{"The standard says the SF must be 2, so the SF must be 2"} \\
-\text{Consequentialism} & \text{Outcome, utility, cost-benefit} & \text{"What produces the greatest good?"} & \text{"The recall costs £10M, the lawsuit costs £50M, so recall"} \\
-\text{Virtue ethics} & \text{Character, integrity, professionalism} & \text{"What would a good engineer do?"} & \text{"A good engineer would not sign this drawing"} \\
-\end{array}
-$$
+::: example Applying the three-step method to a belt conveyor {#ex-conveyor}
+A belt conveyor in a packing line has an exposed in-running nip where the belt wraps the drive drum, a $0.75\,\mathrm{kW}$ geared motor, and is cleaned daily by operators who brush product residue off the belt near the drum. Apply the three-step method to the nip.
+::: solution
+*Limits and hazard:* intended use includes daily cleaning; reasonably foreseeable misuse includes cleaning while the belt runs. Hazard: drawing-in and crushing of hands and arms at the nip, possibly leading to amputation (high severity); exposure daily.
 
-**The deontological framework is the engineer's default: the standard says "shall," the engineer complies, and the compliance is the reason the engineer is protected by the standard. The consequentialist framework is the manager's default: the cost-benefit analysis says "do not recall," the manager complies, and the compliance is the reason the manager is not protected by the standard. The virtue-ethics framework is the engineer's conscience: the drawing looks wrong, the engineer feels wrong, and the feeling is the reason the engineer asks the question that the calculation does not ask.**
+*Step 1, inherent design:* can the hazard be removed? Moving the drive to a position the cleaner never needs to reach, using a drum design that leaves no nip (for example a gap too small to admit fingers — the permissible values are in the relevant B-standard), reducing belt tension and drive torque so that a trapped hand can be pulled free, and redesigning the residue path so that cleaning near the drum is unnecessary.
+
+*Step 2, safeguarding:* where the nip remains, a fixed guard enclosing it, removable only with a tool; if access is needed frequently, an interlocked guard that stops the drive before the nip can be reached (stopping time and the safety distances of ISO 13857 determine the geometry); a scraper fitted at the drum so that brushes are not needed.
+
+*Step 3, information:* instruction to isolate before cleaning, lock-out procedure, a warning sign at the guard.
+
+*Check:* the residual risk is re-evaluated after each step; the guard must not create new hazards (a heavy guard that falls on the hand) and must not encourage defeat (a guard that makes cleaning slow will be removed — so the design of the cleaning task is part of the safety design).
+:::
 :::
 
-::: definition The ethical dilemma: the Ford Pinto case and the Challenger disaster {#def-ethical-dilemma}
-The **Ford Pinto case** (1970s) is the canonical example of the consequentialist failure: Ford's cost-benefit analysis concluded that the cost of recalling 11 million Pintos (£137 million) exceeded the cost of the burn injuries and deaths ($49.5 million), so Ford did not recall. **The cost-benefit analysis was mathematically correct and ethically indefensible, and the indefensibility is the reason the consequentialist framework is not the engineer's default.**
+## Regulation: essential requirements and CE marking {#sec-regulation}
 
-The **Challenger disaster** (1986) is the canonical example of the deontological failure: the engineers at Morton Thiokol recommended that the launch be postponed because the O-ring seals were not certified below 12 °C, but the NASA manager said "take off your engineering hat and put on your management hat," and the launch proceeded. **The O-ring failed, the shuttle broke apart, and 7 astronauts died. The "management hat" is the reason the deontological framework (the standard says "do not launch below 12 °C") must override the schedule pressure, and the override is the reason the engineer's obligation to the public is the first canon.**
+Products sold in the European Union fall under the **New Legislative Framework** (Regulation (EC) 765/2008 and Decision 768/2008/EC) and the product legislation built on it. The law states **essential requirements** — what must be achieved, for example that moving parts must be designed to prevent risks of contact — and leaves the technical means to standards.
 
+::: definition Harmonised standard and presumption of conformity {#def-harmonised}
+A **harmonised standard** is a European standard (EN) developed by CEN, CENELEC or ETSI at the request of the European Commission to support a piece of product legislation, whose reference has been published in the Official Journal of the EU. A product designed in accordance with a harmonised standard benefits from a **presumption of conformity** with the essential requirements that the standard covers. The manufacturer may use other means, but must then demonstrate conformity directly.
+:::
+
+For a machine the manufacturer must carry out the risk assessment, design to meet the essential health and safety requirements, compile a **technical file** (drawings, calculations, risk assessment, test reports, the standards applied, instructions), follow the applicable **conformity-assessment procedure** — self-assessment for most machinery, involvement of a third-party *notified body* for listed high-risk categories — draw up and sign an **EU declaration of conformity**, and affix the **CE marking**. The CE marking is the manufacturer's declaration that the product meets all applicable EU legislation; it is not a quality mark and it is not, for most machinery, a third-party approval.
+
+The rules for machinery are in the **Machinery Directive 2006/42/EC**, which is replaced by the **Machinery Regulation (EU) 2023/1230**, applicable from 20 January 2027. The Regulation applies directly in every member state, extends the essential requirements to cover, among other things, machinery whose safety functions involve software and self-evolving behaviour, and allows the instructions to be supplied in digital form. In Great Britain, the UKCA marking and the Supply of Machinery (Safety) Regulations 2008 play a parallel role (with recognition of CE marking extended; check the current position). In the United States there is no general pre-market approval for machinery; workplace safety is regulated by OSHA, consumer products by the CPSC, and many codes are given force by state law or by contract — the legal consequences of an unsafe design arrive mainly through product-liability litigation.
+
+::: warning "It complies with the standard, so it is safe"
+Compliance with a harmonised standard creates a *presumption* of conformity, not a guarantee of safety. Standards lag behind technology, cover only the hazards they list, and assume the intended use their authors foresaw. A designer must still carry out the risk assessment for the actual machine, including foreseeable misuse; where a hazard is not covered by the standard (a new material, an unusual operating mode, software behaviour), the standard is silent and the duty to reduce the risk remains. Conversely, departing from a standard is not automatically wrong — but the reason and the alternative evidence must be documented.
+:::
+
+## Product liability {#sec-liability}
+
+When a product injures someone, the injured person can claim compensation from the producer. Two legal bases matter. In **negligence** the claimant must prove that the producer owed a duty of care, breached it by falling below the standard of a reasonably competent producer, and thereby caused the damage. In **strict liability** fault need not be proved.
+
+::: definition Defective product (EU strict liability) {#def-defect}
+Under the EU Product Liability Directive 85/374/EEC, the producer is liable without fault for damage caused by a defect in its product. A product is **defective** when it does not provide the safety which a person is entitled to expect, taking all circumstances into account, including its presentation, the use to which it could reasonably be expected to be put, and the time when it was put into circulation. Defences include that the defect did not exist when the product was put into circulation, and the *development-risks defence*: that the state of scientific and technical knowledge at that time did not enable the defect to be discovered. Claims must be brought within three years of the claimant becoming aware of the damage, defect and producer, and no later than ten years after the product was put into circulation.
+:::
+
+The Directive has been replaced by the revised **Product Liability Directive (EU) 2024/2853**, which member states must transpose by 9 December 2026 and which applies to products placed on the market after that date. It explicitly brings software (including software supplied as a service or as an update) within the definition of a product, and eases the burden of proof for claimants in technically complex cases.
+
+Defects are commonly classified as **manufacturing defects** (this unit differs from the design — a missing weld), **design defects** (every unit is dangerous because of the design), and **warning or instruction defects**. Design defects are the engineer's direct responsibility, and courts in many jurisdictions weigh them by a risk–utility test: could a reasonable alternative design, technically and economically feasible at the time, have reduced the risk? The design file — the risk assessment, the alternatives considered and the reasons for rejecting them — is therefore also the producer's evidence. In the US, *Grimshaw v. Ford Motor Co.* (California, jury verdict February 1978) concerned a Pinto struck from behind whose fuel tank was ruptured: the jury awarded $125 million in punitive damages in addition to compensatory damages, later reduced by the judge to $3.5 million.
+
+## Intellectual property {#sec-ip}
+
+A design represents knowledge that competitors could copy. Intellectual property law grants limited exclusive rights in return for — in the case of patents — public disclosure.
+
+::: definition Patentability {#def-patent}
+Under the European Patent Convention (Articles 52–57), a **patent** is granted for an invention in any field of technology that is **new** (not part of the state of the art — anything made available to the public anywhere, by any means, before the filing or priority date, including the inventor's own publication), involves an **inventive step** (is not obvious to a person skilled in the art), and is **susceptible of industrial application**. Discoveries, scientific theories, mathematical methods, aesthetic creations and presentations of information as such are excluded. The patent confers the right to prevent others from making, using, selling or importing the claimed invention in the territories where it is granted, for at most **20 years from the filing date**, subject to annual renewal fees. The application is published 18 months after the priority date.
+:::
+
+The **claims** define the protected scope; the description must disclose the invention clearly enough for a skilled person to carry it out. Under the Paris Convention an applicant who files first in one country has 12 months of **priority** to file elsewhere and keep the first date. Europe has essentially no grace period: an engineer who presents a new mechanism at a conference before filing has destroyed its novelty. The United States allows the inventor a one-year grace period for the inventor's own disclosures, but relying on it forfeits rights in Europe.
+
+The other rights:
+
+- **Registered designs** protect the appearance of a product (shape, contours, surface); in the UK and EU they last up to 25 years in five-year terms. **Unregistered design rights** give shorter, automatic protection against copying.
+- **Trade marks** protect signs that distinguish a company's goods; registration lasts ten years and can be renewed indefinitely.
+- **Copyright** protects drawings, documentation and software code automatically, in the EU and UK for 70 years after the author's death; it protects the expression, not the idea.
+- **Trade secrets** — process parameters, recipes, supplier know-how — are protected as long as they are kept secret by reasonable measures (in the EU under Directive (EU) 2016/943); they last indefinitely but give no protection against independent discovery or reverse engineering.
+
+Engineers use patents in two directions. Searching patent databases (Espacenet, Google Patents) is a source of concepts ([[design-process/concept-generation]]) and shows the state of the art. Before launching a product, a **freedom-to-operate** (FTO) analysis checks whether it would infringe the claims of patents in force in the countries of manufacture and sale; expired patents and patents not validated in a country may be used freely there.
+
+::: example Patent dates {#ex-patent-dates}
+An engineer files a UK patent application for a new clamping mechanism on 15 March 2020, then files a European application claiming its priority on 15 March 2021. When is the European application published, and when does the European patent expire if all renewal fees are paid? What should the company have avoided between the two filings?
+::: solution
+Publication is 18 months after the *priority* date: September 2021. The term is 20 years from the *filing date* of the European application: the patent expires on 15 March 2041. Claiming priority thus extends the end of protection to 21 years after the first filing, while the novelty of the European application is judged at the priority date. Between filings the company could disclose the invention as described in the priority application without harming novelty; but any *new* features added later and disclosed before their own filing would not be protected, so improvements should be filed before they are shown.
+
+*Check:* term and publication are counted from different dates — a frequent source of error.
+:::
+:::
+
+## Professional responsibility {#sec-professional}
+
+Professional engineers are trusted because the public cannot check their work. Codes of conduct make the terms of that trust explicit. The Code of Ethics of the US National Society of Professional Engineers (NSPE) begins its fundamental canons with the duty to **"hold paramount the safety, health, and welfare of the public"**, followed by performing services only in areas of competence, issuing public statements only in an objective and truthful manner, acting for each employer or client as faithful agents or trustees, avoiding deceptive acts, and conducting themselves honourably and lawfully. Its rules add that if engineers' judgement is overruled in circumstances that endanger life or property, they shall notify their employer or client and such other authority as may be appropriate. In the UK, the Statement of Ethical Principles of the Engineering Council and the Royal Academy of Engineering, which underpins the codes of the professional institutions, was updated in February 2026 and now lists five principles: honesty and integrity; responsibility to society; accuracy and rigour; leadership and communication; and responsibility for the future of technology, society and the environment. Registration as a Chartered Engineer or a licensed Professional Engineer binds the engineer to a code, and breaches can lead to loss of the title or licence.
+
+### Ways of reasoning about a dilemma
+
+Codes cannot settle every case, so it helps to know the main ethical theories, which usually agree and are most useful where they do not.
+
+- **Consequentialism** (utilitarianism) judges an action by its outcomes: choose the option with the greatest balance of benefit over harm for all affected. It underlies cost–benefit analysis and quantitative risk assessment. Its weakness is that it can justify imposing serious harm on a few for a small gain to many, and that it depends on valuing things — injuries, lives — that resist valuation.
+- **Duty-based** (deontological) ethics, associated with Kant, judges actions by whether they respect duties and rights: do not deceive, keep promises, do not treat people merely as means. It explains why informed consent matters — people may accept a risk they know about, but not one hidden from them.
+- **Virtue ethics** asks what a person of good character — honest, competent, courageous, conscientious — would do, and is close to how engineers describe professional integrity.
+
+::: algorithm A practical approach to an engineering dilemma {#alg-dilemma}
+1. **Establish the facts**: what is known, what is uncertain, what tests or calculations could reduce the uncertainty, and how soon.
+2. **Identify the stakeholders** and what each stands to gain or lose, including those not in the room (users, the public, future owners).
+3. **Identify the obligations**: law, standards, the employer's procedures, the professional code — and where they conflict, recall that the codes put public safety first.
+4. **Generate options** — rarely only "comply" or "refuse": further tests, a reduced operating envelope, a temporary restriction, escalation within the organisation, independent review.
+5. **Test the options**: consequences for each stakeholder; would the affected people consent if fully informed; would you be comfortable seeing the decision and its reasoning reported publicly.
+6. **Act and document**: record the facts, the advice given and the decision.
+:::
+
+**Whistle-blowing** — disclosing a danger or wrongdoing outside the normal chain of authority — is the last resort in step 4. A widely used set of conditions, due to the philosopher Richard De George, holds that an engineer is *permitted* to blow the whistle publicly when the harm is serious and considerable, the concern has been reported to the immediate superior, and internal channels up to the highest level have been exhausted; and is *obliged* to do so when, in addition, there is documented evidence that would convince a reasonable impartial observer and good reason to believe disclosure will prevent the harm. Many jurisdictions protect workers who make such disclosures in good faith through prescribed channels — in the UK the Public Interest Disclosure Act 1998, in the EU the Whistleblower Protection Directive (EU) 2019/1937.
+
+## Four cases {#sec-cases}
+
+### The Hyatt Regency walkways, 1981
+
+On 17 July 1981, during a tea dance in the atrium of the Hyatt Regency hotel in Kansas City, Missouri, two suspended walkways collapsed: the fourth-floor walkway, with the second-floor walkway hung directly below it, fell onto the crowded lobby. 114 people were killed and more than 200 injured. The original design hung both walkways from continuous rods running from the atrium roof down through the fourth-floor box beams to the second-floor box beams, each beam supported by a nut and washer on the rod. During fabrication, the steel fabricator proposed replacing each continuous rod by two rods — one from the roof to the fourth-floor beam, a second from the fourth-floor beam down to the second-floor beam — and the change was accepted by the structural engineers without the connection being recalculated.
+
+::: proposition Load on the fourth-floor connection {#prop-hyatt}
+Let each hanger connection carry a load $P_4$ from the fourth-floor walkway and $P_2$ from the second-floor walkway. With a continuous rod, the nut under the fourth-floor box beam transmits $P_4$. With the two-rod detail, it transmits $P_4 + P_2$ — twice as much for equal walkway loads.
+:::
+
+::: proof
+*Continuous rod.* Free body of the fourth-floor box beam at one hanger: downward the walkway load $P_4$; upward the nut reaction $N_4$. The rod passes through the beam without being attached except by that nut, so $N_4 = P_4$. The second-floor load $P_2$ travels up the rod, past the fourth floor, to the roof; the rod above the fourth floor carries $P_4 + P_2$ in tension but the beam does not.
+
+*Two rods.* Free body of the fourth-floor box beam: downward $P_4$ and the tension of the lower rod, which hangs from this beam and carries the second-floor beam, $T_{\mathrm{lower}} = P_2$ (from the free body of the second-floor beam); upward the nut of the upper rod, $N_4$. Equilibrium gives $N_4 = P_4 + P_2$. With $P_4 = P_2 = P$, $N_4 = 2P$. The force passes through the nut, washer and the welded seam of the box beam — the weak point in both designs. (Rod-to-beam friction and the self-weight of the rods are neglected.)
+:::
+
+The investigation by the US National Bureau of Standards found that even the original detail would have had only about 60 % of the capacity required by the Kansas City building code; the as-built detail doubled the demand on it. The Missouri licensing board found the engineers responsible for the structural design guilty of gross negligence, misconduct and unprofessional conduct in the practice of engineering, and in 1984 their Missouri licences were revoked, together with their firm's certificate of authority. The engineer of record later accepted responsibility for the failure. The American Society of Civil Engineers subsequently adopted the position that the structural engineer of record is responsible for reviewing shop drawings and connection details. The lesson for designers: **a change made for constructability is a design change**, and a design change must go through the same calculation and review as the original.
+
+### The Pinto fuel system and the 1973 cost–benefit memo
+
+The Ford Pinto, introduced in 1971, had its fuel tank between the rear axle and the rear bumper, where it could be punctured in rear-end collisions. After a 1977 magazine article and investigation by the National Highway Traffic Safety Administration, which in May 1978 determined that the fuel system was defective, Ford recalled about 1.5 million Pintos and Mercury Bobcats in June 1978 — then the largest recall in automotive history. In 1980 an Indiana jury found Ford not guilty of reckless homicide over the deaths of three teenagers in a 1973 Pinto, the first criminal prosecution of a US corporation over a product design. The case is remembered above all for a 1973 Ford memorandum, "Fatalities Associated with Crash-Induced Fuel Leakage and Fires" (by E. S. Grush and C. S. Saunby), submitted to the regulator to oppose a proposed fuel-system standard. Contrary to many retellings, it was not an analysis of the Pinto's rear-end problem but a cost–benefit analysis of a rollover fuel-leakage requirement for all cars and light trucks sold in the US.
+
+::: example The arithmetic of the 1973 memo {#ex-pinto}
+The memo estimated that the requirement would prevent 180 burn deaths, 180 serious burn injuries and 2100 burned vehicles a year, valued (using regulator figures of 1972) at \$200 000 per death, \$67 000 per injury and \$700 per vehicle, at a cost of \$11 per vehicle for 12.5 million vehicles (11 million cars and 1.5 million light trucks). Reproduce the totals, and identify what the arithmetic leaves out.
+::: solution
+Benefits: $180\times200\,000 + 180\times67\,000 + 2100\times700 = 36.0 + 12.06 + 1.47 = \$49.53$ million. Costs: $12.5\times10^6\times11 = \$137.5$ million (reported as \$137 million). On these figures the costs exceed the benefits by a factor of about 2.8.
+
+The arithmetic is correct; what makes the memo notorious is what it embodies. It puts a price on deaths and injuries in a way that the people at risk never accepted; it counts only some harms (no pain and suffering beyond the regulator's figures, no loss of trust); it treats an \$11 cost spread over everyone as commensurable with death concentrated on a few; and it does not ask whether cheaper fixes existed. Regulators do use values of statistical life to set priorities between safety measures — the method itself is not unethical — but it is a tool for comparing ways of saving lives, not a licence to keep a known, cheaply avoidable hazard. *Sanity check:* $\$137.5\mathrm{M}/12.5\mathrm{M} = \$11$ per vehicle, $\$49.53\mathrm{M}/12.5\mathrm{M} \approx \$3.96$ per vehicle — the "benefit per vehicle" a consumer was implicitly told the fix was worth.
+:::
+:::
+
+### The Citicorp Center, 1978
+
+The 59-storey Citicorp Center in New York (completed 1977), designed structurally by William LeMessurier, stands on four columns placed at the midpoints of its sides rather than its corners, with stacked chevron braces in each face carrying the wind loads down to them, and a tuned mass damper at the top to reduce sway. In 1978, prompted by questions from a Princeton student, Diane Hartley, about winds striking the building at 45° ("quartering winds"), and having learnt that the fabricator had substituted bolted for welded brace connections, LeMessurier recalculated the structure. He found that quartering winds raised the forces in some braces by 40 % and those in the bolted connections by 160 %, and estimated that a storm able to fail the critical joint would occur on average once in 16 years if the damper lost power, once in 55 years with it working. He informed the owners and the city; over August–October 1978, with a backup generator installed for the damper and an evacuation plan prepared, steel plates were welded over the bolted joints at night. A hurricane (Ella) approached in early September before turning out to sea. The story became public only in 1995, in an article by Joe Morgenstern in *The New Yorker*. (A later reassessment by NIST suggested the quartering-wind loads were less severe than LeMessurier had calculated; the case is still the classic example of an engineer reporting his own error.)
+
+::: proposition Probability of at least one exceedance {#prop-exceedance}
+If an event (such as a wind speed above a given value) has probability $p$ of occurring in any one year, independently from year to year, the probability that it occurs at least once in $n$ years is
 $$
-\begin{array} { l l l }
-\textbf{Case} & \textbf{Failure} & \textbf{Lesson} \\ \hline
-\text{Ford Pinto (1970s)} & \text{Consequentialist cost-benefit analysis} & \text{The public's safety is not a line item} \\
-\text{Challenger (1986)} & \text{Schedule pressure overrode the engineering judgement} & \text{The engineer's obligation is to the public, not the schedule} \\
-\text{Hyatt Regency (1981)} & \text{Design change without recalculation} & \text{The change must be recalculated, not approved} \\
-\text{Deepwater Horizon (2010)} & \text{Cost-cutting overrode the safety margin} & \text{The safety margin is not a contingency} \\
-\text{Volkswagen (2015)} & \text{Defeat device: deception of the regulator} & \text{The engineer does not write the cheat code} \\
-\end{array}
-$$
+P_n = 1 - (1-p)^n \approx np \quad (np \ll 1).
+$$ {#eq-exceedance}
+The mean interval between occurrences — the **return period** — is $T = 1/p$.
+:::
 
-**The Hyatt Regency walkway collapse (1981, 114 deaths) is the reason the design change must be recalculated, not approved: the change from a continuous hanger rod to a staggered rod doubled the load on the connection, and the doubling was not recalculated. The change was approved by the engineer of record without a calculation, and the absence of the calculation is the reason the engineer's signature is a legal document.**
+::: proof
+The probability of no occurrence in one year is $1-p$; by independence, of none in $n$ years $(1-p)^n$; the complement is at least one occurrence. For small $np$, $(1-p)^n = e^{n\ln(1-p)} \approx e^{-np} \approx 1 - np$. The number of years until the first occurrence is geometrically distributed with mean $1/p$.
+:::
+
+::: example What "once in 16 years" means {#ex-citicorp}
+Using LeMessurier's estimates, find the probability that the critical storm occurs (a) in one year with the damper unpowered, (b) during a 50-year design life with the damper working.
+::: solution
+(a) $p = 1/16 = 0.0625$: 6.25 % per year. (b) $p = 1/55$: $P_{50} = 1 - (54/55)^{50} = 1 - 0.400 = 0.600$ — a 60 % chance over the life, for a failure that could have toppled an occupied tower. By comparison, design codes aim for annual probabilities of structural collapse many orders of magnitude lower. *Sanity check:* the approximation $np = 50/55 = 0.91$ is poor here because $np$ is not small; the exact formula must be used, and it can never exceed 1.
+:::
 :::
 
 ::: widget plot
-title: The cost of a safety failure vs the cost of a safety improvement
-f: 100*x; 50+10*x; 20+5*x
-x: 0,10
-y: 0,1000
-labels: Cost of failure (lawsuit, recall); Cost of safety improvement; Cost of the design change at the concept stage
-caption: Cost of a safety failure, a safety improvement, and a design change against the number of units. **The cost of the failure (lawsuit, recall, liability) grows linearly with the number of units, and the slope is the cost per unit. The cost of the safety improvement (the design change, the additional component, the testing) is a fixed cost plus a marginal cost. The cost of the design change at the concept stage is 1/100th of the cost at the production stage.** **The crossover is the reason the safety improvement is always cheaper than the failure, and the crossover is the reason the engineer's obligation to the public is also the engineer's obligation to the shareholder.**
+f: 1 - (1 - 1/T)^x; 1 - (1 - 1/(4*T))^x
+x: 0, 100
+y: 0, 1
+sliders: T=55:5:500:5
+labels: P_n,\ \text{return period }T; P_n,\ \text{return period }4T
+caption: Probability of at least one occurrence of an event with return period $T$ years within $n$ years (horizontal axis). Set $T = 50$: over a 50-year life the "50-year event" is more likely than not to happen (63.6 %). Now set $T = 16$ to see LeMessurier's unpowered-damper case, and compare the second curve to see how much a fourfold increase in return period buys. Notice how far from "safe" a return period equal to the design life is.
 :::
 
-::: example The ethical dilemma of the unsafe product {#ex-ethical-dilemma level=3 check="10"}
-A product has a defect that causes a 1-in-10 000 chance of injury per unit. The product has 100 000 units in the field. The recall costs £5 million; the injury settlement costs £500 000 per injury. Should the manufacturer recall?
+### The Challenger, 1986
 
-**Expected number of injuries:** $1 0 0 \ 0 0 0 / 1 0 \ 0 0 0 = 1 0$ injuries.
+On 28 January 1986 the Space Shuttle *Challenger* broke apart 73 seconds after launch, killing its seven crew. The Presidential Commission chaired by William P. Rogers found that the cause was the failure of the O-ring seals in the aft field joint of the right solid rocket booster, which allowed hot combustion gas to escape and burn through the external tank attachment and tank. Erosion and blow-by of O-rings had been seen on earlier flights and were known to worsen at low temperature, when the rubber is less resilient. On the eve of the launch, with a forecast morning temperature far below that of any previous launch (the coldest had been about 12 °C, 53 °F; the air temperature at launch was about 2 °C, 36 °F), engineers of the booster contractor Morton Thiokol, among them Roger Boisjoly and Arnold Thompson, recommended against launching below 12 °C. NASA managers challenged the recommendation; in an off-line caucus, Thiokol's senior management reversed it — one manager was asked to "take off his engineering hat and put on his management hat" — and Thiokol signed a recommendation to launch. The Commission (report of June 1986) criticised a decision process in which the burden of proof had shifted to the engineers to prove that flight was unsafe, and in which the concerns were not passed to the top-level launch decision makers. In his appendix to the report, Richard Feynman wrote: "For a successful technology, reality must take precedence over public relations, for nature cannot be fooled."
 
-**Expected cost of injuries:** $1 0 \times 5 0 0 \ 0 0 0 = 5 \ 0 0 0 \ 0 0 0$ pounds.
-
-**Cost of recall:** £5 000 000.
-
-**The cost-benefit analysis is a wash: the recall costs £5 million, and the injuries cost £5 million. But the cost-benefit analysis does not capture the reputational damage, the regulatory fine, the criminal liability, or the moral cost of the injury. The engineer's obligation is to the public, not to the cost-benefit analysis, and the obligation is the reason the recall is the right decision.**
-
-**The recall is the right decision because:**
-1. The first canon requires the engineer to protect the public's safety.
-2. The reputational damage of the recall is less than the reputational damage of the cover-up.
-3. The regulatory fine for the cover-up is 10× the cost of the recall.
-4. The criminal liability for the cover-up is a prison sentence, not a fine.
+::: quiz
+In the Challenger teleconference, which shift in reasoning did the Rogers Commission identify as the core failure of the decision process?
+- [ ] the engineers used the wrong material data for the O-rings
+- [x] the burden of proof moved from showing the launch was safe to showing it was unsafe
+- [ ] the launch was delayed too often, increasing schedule pressure
+- [ ] the engineers failed to raise any concern before launch
+::: solution
+The engineers did raise their concern and recommended against launch. The failure was that, with incomplete data, the default became "launch unless proved unsafe", inverting the normal requirement in safety-critical engineering to demonstrate safety before proceeding. Uncertainty about a safety-critical item is a reason to stop, not to go.
+:::
 :::
 
-## 2. Standards and regulations
-
-::: definition The standards hierarchy: ISO, EN, national, and industry {#def-standards-hierarchy}
-The **standards hierarchy** defines the relationship between the international, European, national, and industry standards:
-
-$$
-\begin{array} { l l l l }
-\textbf{Level} & \textbf{Body} & \textbf{Example} & \textbf{Status} \\ \hline
-\text{International} & \text{ISO, IEC} & \text{ISO 9001, IEC 61508} & \text{Voluntary (unless cited in a contract)} \\
-\text{European} & \text{CEN, CENELEC} & \text{EN ISO 12100, EN 13445} & \text{Harmonised (presumption of conformity)} \\
-\text{National} & \text{BSI, DIN, AFNOR} & \text{BS 7671, DIN 2505} & \text{National implementation of EN} \\
-\text{Industry} & \text{ASME, API, AWS} & \text{ASME BPVC, AWS D1.1} & \text{Contractual or regulatory} \\
-\text{Company} & \text{Internal} & \text{Design standard, drawing standard} & \text{Internal requirement} \\
-\end{array}
-$$
-
-**The harmonised standard (EN) gives the presumption of conformity with the EU Directive. The engineer who designs to the harmonised standard is presumed to comply with the Directive, and the presumption is the reason the engineer designs to the standard, not to the Directive.**
+::: history
+Codes and standards have repeatedly followed disasters. The boiler explosion at the Grover Shoe Factory in Brockton, Massachusetts, on 20 March 1905, which killed 58 people, led Massachusetts to adopt boiler rules, and ASME formed a Boiler Code Committee in 1911 whose first code, dated 1914, was published in 1915; it became the ASME Boiler and Pressure Vessel Code. The British Engineering Standards Committee, the origin of BSI, was formed in 1901; the IEC was founded in 1906 and ISO in 1947. Product-liability law grew in the US courts in the 1960s and in Europe with Directive 85/374/EEC of 1985. Professional codes such as the NSPE's grew in importance after cases like the Hyatt Regency collapse (1981) and the Challenger accident (1986), which became core material of engineering ethics teaching.
 :::
 
-::: definition The EU CE marking and the New Approach Directives {#def-ce-marking}
-The **CE marking** is the manufacturer's declaration that the product complies with the applicable EU Directives. The Directives that apply to mechanical engineering products are:
-
-$$
-\begin{array} { l l l l }
-\textbf{Directive} & \textbf{Scope} & \textbf{Conformity route} & \textbf{Notified Body?} \\ \hline
-\text{Machinery 2006/42/EC} & \text{Machines, safety components} & \text{Self-declaration or NB} & \text{Annex IV machines: yes} \\
-\text{PED 2014/68/EU} & \text{Pressure equipment > 0.5 bar} & \text{Module A--H} & \text{Category II--IV: yes} \\
-\text{EMC 2014/30/EU} & \text{Electromagnetic compatibility} & \text{Self-declaration} & \text{No} \\
-\text{LVD 2014/35/EU} & \text{Electrical equipment 50--1000 V} & \text{Self-declaration} & \text{No} \\
-\text{ATEX 2014/34/EU} & \text{Equipment for explosive atmospheres} & \text{Module A--H} & \text{Category 1--2: yes} \\
-\text{MDR 2017/745} & \text{Medical devices} & \text{Module A--H} & \text{Class IIa--III: yes} \\
-\end{array}
-$$
-
-**The CE marking is not a quality mark; it is a legal declaration. The manufacturer who affixes the CE marking without the technical file, the risk assessment, and the declaration of conformity is committing a criminal offence, and the offence is the reason the technical file is the most important document in the CE marking process.**
-:::
-
-::: definition The technical file and the declaration of conformity {#def-technical-file}
-The **technical file** is the document that demonstrates the product's compliance with the applicable Directives. The technical file contains:
-
-1. **Description**: the product's function, the intended use, and the reasonable foreseeable misuse.
-2. **Drawings and schematics**: the general arrangement, the circuits, the hydraulic/pneumatic diagrams.
-3. **Risk assessment**: the hazard identification, the risk estimation, the risk evaluation, and the risk reduction (per ISO 12100).
-4. **Standards applied**: the list of harmonised standards and the clauses that were applied.
-5. **Calculations**: the sizing calculations, the FEA, the tolerance stack-up.
-6. **Test reports**: the type test, the EMC test, the pressure test, the fatigue test.
-7. **Instructions**: the operating manual, the maintenance manual, the spare parts list.
-8. **Declaration of conformity**: the manufacturer's declaration, signed by the responsible person.
-
-**The technical file is the document that the market surveillance authority asks for when the product is investigated after an accident, and the document is the reason the engineer's calculations, the risk assessment, and the test reports are legal documents, not engineering documents.**
-:::
-
-::: example CE marking of a machine tool {#ex-ce-machinetool level=3 check="6"}
-A CNC machine tool must comply with the following Directives and standards:
-
-| Directive/Standard | Scope | Clause |
-|-------------------|-------|--------|
-| Machinery 2006/42/EC | Safety of machinery | Annex I (essential requirements) |
-| EN ISO 12100 | Risk assessment methodology | 5.4 (risk estimation) |
-| EN 12417 | Machine tool safety (general) | 5.2 (guarding) |
-| EN 60204-1 | Electrical equipment of machines | 7.2 (emergency stop) |
-| EMC 2014/30/EU | Electromagnetic compatibility | EN 61000-6-4 (emission) |
-| EN ISO 13849-1 | Safety-related control systems | 6.2 (Performance Level) |
-
-How many Directives and how many standards must be addressed?
-
-**2 Directives (Machinery, EMC) and 4 standards (EN ISO 12100, EN 12417, EN 60204-1, EN ISO 13849-1).** **The technical file must contain the risk assessment (per EN ISO 12100), the electrical design (per EN 60204-1), the safety control system design (per EN ISO 13849-1), and the EMC test report (per EN 61000-6-4). The declaration of conformity is signed by the manufacturer's responsible person, and the signature is the reason the CE marking is a legal declaration, not a quality mark.**
-:::
-
-## 3. Intellectual property and professional responsibility
-
-::: definition Patents, trademarks, copyrights, and trade secrets {#def-ip}
-The four forms of intellectual property (IP) that the engineer must understand are:
-
-$$
-\begin{array} { l l l l l }
-\textbf{Type} & \textbf{Protects} & \textbf{Duration} & \textbf{Registration} & \textbf{Example} \\ \hline
-\text{Patent} & \text{Invention (product or process)} & 20 \ \text{years} & \text{Required} & \text{The worm-gear window lift} \\
-\text{Trademark} & \text{Brand name, logo, sound} & \text{Renewable} & \text{Required} & \text{The Rolex crown} \\
-\text{Copyright} & \text{Original work (drawing, software)} & \text{Life} + 70 \ \text{years} & \text{Automatic} & \text{The CAD model} \\
-\text{Trade secret} & \text{Confidential information} & \text{Unlimited} & \text{None} & \text{The Coca-Cola recipe} \\
-\end{array}
-$$
-
-**The patent is the engineer's most important IP right: the patent gives the inventor a 20-year monopoly on the invention, and the monopoly is the reason the inventor discloses the invention to the public (the patent is a public document) in exchange for the monopoly. The engineer who does not patent the invention has no protection, and the lack of protection is the reason the competitor copies the invention and sells it at a lower price.**
-:::
-
-::: definition The patent search and the freedom-to-operate analysis {#def-patent-search}
-The **patent search** is the process of searching the patent databases (Espacenet, USPTO, WIPO) to identify the prior art that is relevant to the invention. The patent search is performed before the patent application is filed, and the search is the reason the inventor does not waste money on a patent that will be rejected for lack of novelty.
-
-The **freedom-to-operate** (FTO) analysis is the process of determining whether the product infringes any existing patent. The FTO analysis is performed before the product is launched, and the analysis is the reason the manufacturer does not receive an infringement lawsuit after the launch.
-
-$$
-\begin{array} { l l l }
-\textbf{Analysis} & \textbf{Question} & \textbf{When} \\ \hline
-\text{Patent search} & \text{Is my invention novel?} & \text{Before the patent application} \\
-\text{FTO analysis} & \text{Does my product infringe someone else's patent?} & \text{Before the product launch} \\
-\text{Invalidity search} & \text{Can I invalidate the competitor's patent?} & \text{After the infringement lawsuit} \\
-\end{array}
-$$
-
-**The FTO analysis is the most important IP activity for the engineer, because the FTO analysis is the reason the product is not withdrawn from the market after the launch. The FTO analysis costs £5 000–£20 000; the infringement lawsuit costs £1–£10 million, and the cost difference is the reason the FTO analysis is done before the launch, not after.**
-:::
-
-::: definition Professional indemnity and the engineer's liability {#def-liability}
-The **professional indemnity** (PI) insurance covers the engineer's liability for the design error, the miscalculation, and the failure to warn. The PI insurance is the reason the engineer can practise without the fear of bankruptcy, and the fear is the reason the engineer who does not have PI insurance is not insured, and the uninsured engineer is the engineer who cannot pay the judgment.
-
-The engineer's liability has three sources:
-
-$$
-\begin{array} { l l l l }
-\textbf{Source} & \textbf{Basis} & \textbf{Limitation} & \textbf{Example} \\ \hline
-\text{Contract} & \text{Breach of contract} & \text{Contract terms} & \text{The design does not meet the specification} \\
-\text{Tort (negligence)} & \text{Duty of care, breach, damage} & 6 \text{ years (UK), varies} & \text{The design causes personal injury} \\
-\text{Criminal} & \text{Health and safety, fraud} & \text{Unlimited} & \text{The design causes a fatality (corporate manslaughter)} \\
-\end{array}
-$$
-
-**The corporate manslaughter offence (UK Corporate Manslaughter and Corporate Homicide Act 2007) makes the company liable for a fatality caused by a gross failure of the duty of care, and the liability is an unlimited fine. The fine is the reason the company's board of directors cares about the engineering safety, and the care is the reason the safety is a board-level issue, not an engineering-level issue.**
-:::
-
-::: example Patent search for a new gear design {#ex-patent-search level=3 check="3"}
-An engineer designs a new planetary gear with a novel tooth profile that reduces the noise by 5 dB. The engineer searches the patent databases and finds:
-
-1. US Patent 4 567 890 (1986): "Planetary gear with asymmetric tooth profile" — expired 2006.
-2. EP Patent 2 345 678 (2011): "Planetary gear with noise-reducing tooth profile" — active, expires 2031.
-3. WO Patent 2020/123456 (2020): "Planetary gear with helical tooth profile" — pending.
-
-Can the engineer manufacture the gear?
-
-**Patent 1 is expired, so the asymmetric tooth profile is in the public domain. Patent 2 is active, so the noise-reducing tooth profile is protected, and the engineer must check whether their design falls within the claims of Patent 2. Patent 3 is pending, so the helical tooth profile may be protected in the future, and the engineer must monitor the prosecution.**
-
-**The engineer can manufacture the gear if:**
-1. **The design does not fall within the claims of Patent 2 (the noise-reducing profile is different from the patented profile).**
-2. **The design does not fall within the claims of Patent 3 (if granted).**
-3. **The engineer obtains a licence from the Patent 2 owner if the design falls within the claims.**
-
-**The FTO analysis costs £10 000; the infringement lawsuit costs £5 million. The FTO analysis is the reason the engineer manufactures the gear without the fear of the lawsuit, and the fear is the reason the FTO analysis is done before the launch, not after.**
-:::
-
-## 4. Codes of conduct and the engineering profession
-
-::: definition The engineering institution and the chartered status {#def-institution}
-The **engineering institution** (ICE, IMechE, IET, ASME, IEEE, VDI) is the professional body that sets the competence standards, publishes the code of ethics, and awards the chartered status. The chartered status is:
-
-$$
-\begin{array} { l l l l }
-\textbf{Status} & \textbf{Body} & \textbf{Requirement} & \textbf{Responsibility} \\ \hline
-\text{EngTech (EngT)} & \text{IBET / national} & \text{BEng + experience} & \text{Technical support} \\
-\text{Incorporated Engineer (IEng)} & \text{Engineering Council} & \text{BEng + experience} & \text{Application of known methods} \\
-\text{Chartered Engineer (CEng)} & \text{Engineering Council} & \text{MEng + experience + IPD} & \text{Innovation, design, leadership} \\
-\text{Fellow (FI MechE, FICE, etc.)} & \text{Institution} & \text{Distinguished career} & \text{Peer recognition} \\
-\end{array}
-$$
-
-**The chartered engineer (CEng) is the engineer who is competent to sign the design, and the signature is the reason the CEng is a legal qualification, not a professional courtesy. The CEng who signs a design that fails is personally liable, and the liability is the reason the CEng does not sign a design that they are not confident in.**
-:::
-
-::: definition The engineering code of conduct: IMechE example {#def-imeche-code}
-The **Institution of Mechanical Engineers** (IMechE) code of conduct requires the member to:
-
-1. **Hold paramount the public interest**: the safety, health, and welfare of the public are the first obligation.
-2. **Act competently**: practise only within one's area of competence, and maintain the competence through continuous professional development (CPD).
-3. **Act honestly and with integrity**: do not deceive, do not falsify, do not plagiarise.
-4. **Act with due skill and care**: apply the standard of care that a reasonable engineer would apply.
-5. **Avoid conflicts of interest**: declare the conflict, and do not act where the conflict is material.
-6. **Protect confidential information**: do not disclose the client's IP without consent.
-7. **Support the profession**: mentor the next generation, and uphold the reputation of the profession.
-
-**The code of conduct is enforceable: the member who breaches the code can be expelled from the institution, and the expulsion is the reason the code is a professional obligation, not a moral aspiration.**
-:::
-
-::: definition Continuous professional development (CPD) and the competence framework {#def-cpd}
-The **continuous professional development** (CPD) is the process of maintaining and extending the engineer's competence throughout their career. The CPD is a requirement of the chartered status, and the requirement is the reason the chartered engineer is competent to sign the design in year 30, not just in year 1.
-
-$$
-\begin{array} { l l l l }
-\textbf{CPD activity} & \textbf{Hours/year} & \textbf{Type} & \textbf{Example} \\ \hline
-\text{Formal training} & 20 & \text{Structured} & \text{Course, conference, MSc module} \\
-\text{Self-directed learning} & 20 & \text{Unstructured} & \text{Reading, journal, online course} \\
-\text{Professional activity} & 10 & \text{Unstructured} & \text{Institution committee, peer review} \\
-\text{Mentoring} & 5 & \text{Unstructured} & \text{Mentoring a graduate engineer} \\ \hline
-\text{Total} & 55 & & \text{Minimum for CEng renewal} \\
-\end{array}
-$$
-
-**The CPD is the reason the engineer's competence is current, and the currency is the reason the engineer's signature is valid. The engineer who does not do the CPD is not competent to sign the design, and the incompetence is the reason the engineer's signature is not a legal document.**
-:::
-
-::: example Ethical dilemma: the schedule pressure {#ex-ethical-schedule level=3 check="1"}
-A project manager asks the engineer to sign off a design that the engineer believes is unsafe. The project is 6 months late, and the customer is threatening to cancel the contract. The engineer's options are:
-
-1. Sign the design and hope the risk does not materialise.
-2. Refuse to sign and accept the consequences (the contract cancellation, the redundancy).
-3. Escalate the concern to the engineering director.
-4. Escalate the concern to the customer.
-5. Report the concern to the regulatory authority.
-
-What is the correct course of action, and what is the legal basis?
-
-**The correct course of action is the escalation ladder: 3 → 4 → 5.** **The engineer must first escalate to the engineering director (option 3), because the director has the authority to resolve the conflict. If the director does not act, the engineer must escalate to the customer (option 4), because the customer is the party that will bear the consequence of the failure. If the customer does not act, the engineer must report to the regulatory authority (option 5), because the public's safety is the first canon.**
-
-**The legal basis is the Public Interest Disclosure Act 1998 (UK) and the Whistleblower Protection Act (US), which protect the engineer who reports the safety concern from dismissal, demotion, or discrimination. The protection is the reason the engineer who reports the concern is not a traitor; they are a whistleblower, and the whistleblower is protected by the law.**
-
-**Option 1 (sign and hope) is the Challenger disaster. Option 2 (refuse and accept the consequences) is the engineer's right but not the engineer's obligation. Options 3–5 are the engineer's obligation, and the obligation is the reason the first canon is the first canon.**
+::: summary
+- Standards are consensus documents, voluntary in themselves, made compulsory by law, contract, or — in the EU — by giving a presumption of conformity with legal essential requirements. Quote them with their year.
+- ISO 12100: determine limits, identify hazards, estimate and evaluate risk, then reduce it by inherently safe design first, safeguarding second and information last. Type-A, B and C standards form the machinery hierarchy.
+- CE marking is the manufacturer's declaration of conformity, backed by a technical file; machinery moves from Directive 2006/42/EC to Regulation (EU) 2023/1230 on 20 January 2027.
+- EU product liability is strict: a product is defective if it lacks the safety people are entitled to expect; Directive (EU) 2024/2853 extends it to software from December 2026. The design file is the producer's evidence.
+- Patents require novelty, inventive step and industrial application and last at most 20 years from filing; file before disclosing. Use patent searches for ideas and FTO analysis before launch.
+- Codes put public safety first; consequentialist, duty-based and virtue reasoning illuminate dilemmas; whistle-blowing is a last resort after internal channels, with legal protection in many countries.
+- Hyatt Regency: a constructability change doubled a connection load — every change is a design change. Pinto: cost–benefit is a tool, not a licence. Citicorp: report your own error. Challenger: under uncertainty, the burden of proof lies on showing safety.
 :::
 
 ## Exercises
 
-::: exercise Standards identification {#ex-standards-id level=3 check="4"}
-A hydraulic press must comply with the following Directives and standards. Identify the applicable Directives and standards:
-
-| Item | Directive/Standard |
-|------|-------------------|
-| Machinery safety | ? |
-| Pressure equipment (> 0.5 bar) | ? |
-| Electromagnetic compatibility | ? |
-| Low-voltage electrical equipment | ? |
-| Risk assessment methodology | ? |
-| Safety-related control systems | ? |
-
-How many Directives and how many standards are applicable?
-
+::: exercise Patent expiry {#exr-patent level=1 check="2041"}
+A European patent application is filed on 1 June 2021, claiming priority from a national application filed on 1 June 2020. In which year does the patent expire if all renewal fees are paid? (Enter the year.)
 ::: solution
-**4 Directives**: Machinery 2006/42/EC, PED 2014/68/EU, EMC 2014/30/EU, LVD 2014/35/EU.
-
-**2 Standards**: EN ISO 12100 (risk assessment), EN ISO 13849-1 (safety-related control systems).
-
-**Total: 4 Directives and 2 standards.** **The technical file must contain the risk assessment (per EN ISO 12100), the pressure vessel calculation (per EN 13445), the electrical design (per EN 60204-1), the safety control system design (per EN ISO 13849-1), and the EMC test report (per EN 61000-6-4).**
+20 years from the filing date of the European application: 1 June 2041. The priority date (2020) governs novelty and the publication date (December 2021, 18 months after priority), not the term.
 :::
 :::
 
-::: exercise CE marking route {#ex-ce-route level=3 check="2"}
-A machine tool is classified as an Annex IV machine (per the Machinery Directive). What is the conformity assessment route, and is a Notified Body required?
-
+::: exercise The 50-year wind {#exr-fifty level=1 check="0.64"}
+A structure is designed for the wind speed with a return period of 50 years. What is the probability that this wind is exceeded at least once during a 50-year design life? (Enter the probability rounded to two decimal places.)
 ::: solution
-**The Annex IV machine requires a Notified Body (NB) for the conformity assessment. The route is: EC type-examination (Annex IV, clause 1) or full quality assurance (Annex V). The NB reviews the technical file, the risk assessment, and the test reports, and the NB issues the EC type-examination certificate. The CE marking is affixed under the NB's supervision, and the NB's identification number is printed next to the CE marking.** **The NB requirement is the reason the Annex IV machine (press brake, guillotine, injection moulding machine) has a higher compliance cost than the non-Annex IV machine (lathe, milling machine).**
+$1 - (1 - 0.02)^{50} = 1 - 0.364 = 0.636 \approx 0.64$. This is why codes apply load factors to the characteristic wind: the 50-year value is not a rare event over the life of a structure.
 :::
 :::
 
-::: exercise Patent infringement analysis {#ex-patent-infringement level=3 check="3"}
-A competitor's patent has the following claim: "A gear mechanism comprising: (1) a sun gear, (2) three planet gears, (3) a ring gear, (4) a helical tooth profile with a 20° helix angle, and (5) a case-hardened steel construction." The engineer's design has: (1) a sun gear, (2) four planet gears, (3) a ring gear, (4) a spur tooth profile, and (5) a case-hardened steel construction. Does the design infringe?
-
+::: exercise Hyatt connection force {#exr-hyatt level=1 check="180"}
+In a two-rod hanger detail like that of [[#prop-hyatt]], each hanger connection carries $90\,\mathrm{kN}$ from the fourth-floor walkway and $90\,\mathrm{kN}$ from the second-floor walkway. What force does the nut under the fourth-floor box beam transmit? (Enter it in kN.) What would it be with a continuous rod?
 ::: solution
-**The design does not infringe, because the design does not fall within all the elements of the claim. The claim requires a helical tooth profile with a 20° helix angle; the design has a spur tooth profile (0° helix angle). The claim requires three planet gears; the design has four. The design is missing two elements of the claim, and the missing elements are the reason the design does not infringe.** **The patent claim is a "all elements" test: the design must fall within every element of the claim to infringe. If the design is missing even one element, the design does not infringe.**
+Two rods: $N_4 = P_4 + P_2 = 90 + 90 = 180\,\mathrm{kN}$. Continuous rod: $N_4 = P_4 = 90\,\mathrm{kN}$. The rod above the fourth floor carries $180\,\mathrm{kN}$ in both cases; only the path through the box beam changes.
 :::
 :::
 
-::: exercise Professional liability {#ex-liability level=3 check="6"}
-An engineer signs a design that fails 3 years after the product is delivered, causing a personal injury. The engineer's PI insurance has a £5 million limit, and the judgment is £8 million. What is the engineer's personal liability, and what is the limitation period?
-
+::: exercise Recomputing the memo {#exr-pinto level=2 check="49.53"}
+Using the figures in [[#ex-pinto]], compute the memo's total annual benefit. (Enter it in millions of dollars.) Then find the value per death at which benefits would equal costs, keeping the other figures fixed, and comment.
 ::: solution
-**The engineer's personal liability is £8 million − £5 million = £3 million (the amount above the PI insurance limit). The limitation period for a negligence claim in the UK is 6 years from the date of the damage (or 3 years from the date of knowledge, whichever is earlier). The 3-year gap between the delivery and the failure is within the 6-year limitation period, so the claim is valid.** **The PI insurance is the reason the engineer can practise without the fear of bankruptcy, and the fear is the reason the engineer who does not have PI insurance is not insured.**
+Benefits $= 36.0 + 12.06 + 1.47 = 49.53$ million dollars. For equality, $180V + 12.06 + 1.47 = 137.5$, so $V = (137.5 - 13.53)/180 = 0.689$ million dollars per death — about 3.4 times the figure used. The decision flips within the plausible range of such valuations (and of the cost and casualty estimates), which shows how fragile a cost–benefit "proof" is when it turns on a contested valuation, and why the uncertainty in each input should be stated.
 :::
 :::
 
-::: exercise CPD hours {#ex-cpd level=2 check="55"}
-A chartered engineer completes the following CPD activities in a year: 30 hours of formal training, 15 hours of self-directed learning, 5 hours of professional activity, and 0 hours of mentoring. Is the CPD sufficient for the CEng renewal?
-
+::: exercise Ten years with an unpowered damper {#exr-citicorp level=2 check="0.476"}
+Using LeMessurier's estimate of a 1-in-16-year critical storm with the damper unpowered, what is the probability of at least one such storm in 10 years? (Enter it rounded to three decimal places.) How many years with the damper working (1 in 55) give a 50 % chance?
 ::: solution
-**Total CPD hours: 30 + 15 + 5 + 0 = 50 hours. The minimum for CEng renewal is 55 hours (or the institution's equivalent). The CPD is 5 hours short, and the shortfall is the reason the engineer must complete 5 additional hours of CPD before the renewal date.** **The CPD is the reason the engineer's competence is current, and the currency is the reason the engineer's signature is valid.**
+$1 - (15/16)^{10} = 1 - 0.5245 = 0.476$. For 50 % with $p = 1/55$: $n = \ln 0.5/\ln(54/55) = 37.8$, so about 38 years. Either figure is unacceptable for the collapse of an occupied building, which justified the urgent repair.
 :::
 :::
 
-::: exercise Ethical framework application {#ex-ethical-framework level=3 check="3"}
-A product has a defect that causes a 1-in-100 000 chance of death per unit. The product has 1 million units in the field. The recall costs £50 million; the death settlement costs £2 million per death. Apply the three ethical frameworks (deontology, consequentialism, virtue ethics) to determine whether the manufacturer should recall.
-
+::: exercise Classifying standards {#exr-classify level=2}
+Classify each as a type-A, type-B or type-C machinery standard, and say which governs if they conflict for a given hazard on a hydraulic press brake: (a) ISO 12100; (b) ISO 13857, safety distances to prevent hazard zones being reached; (c) EN 12622, safety of hydraulic press brakes; (d) ISO 13850, emergency stop.
 ::: solution
-**Consequentialist analysis:** Expected deaths = 1 000 000 / 100 000 = 10 deaths. Expected cost of deaths = 10 × £2 million = £20 million. The recall costs £50 million, which is more than the expected cost of deaths. **The consequentialist analysis says "do not recall."**
-
-**Deontological analysis:** The first canon requires the engineer to protect the public's safety. The defect is known, the risk is quantified, and the risk is not acceptable. **The deontological analysis says "recall."**
-
-**Virtue ethics analysis:** A good engineer would not leave a known lethal defect in the field. A good engineer would recall the product, even if the recall costs more than the expected settlement. **The virtue ethics analysis says "recall."**
-
-**The recall is the right decision, because the deontological and virtue ethics frameworks override the consequentialist framework. The consequentialist framework is the reason the Ford Pinto was not recalled, and the reason is the reason the consequentialist framework is not the engineer's default.**
+(a) Type A; (b) Type B; (c) Type C; (d) Type B. For a hazard that the type-C standard covers, its requirements take precedence for that machine; the A and B standards apply where it is silent and supply the general method (risk assessment) and generic safeguards.
 :::
 :::
 
-::: exercise Derivation: the cost of the safety failure {#ex-derive-safety-cost level=4 check="10"}
-The cost of a safety failure is $C _ { \text{failure } } = N \times p \times C _ { \text{claim } }$ , where $N$ is the number of units, $p$ is the failure probability per unit, and $C _ { \text{claim } }$ is the cost per claim. The cost of the safety improvement is $C _ { \text{improvement } } = C _ { \text{fixed } } + N \times c _ { \text{unit } }$ . Show that the improvement is cost-effective when $N > ( C _ { \text{fixed } } ) / ( p \, C _ { \text{claim } } - c _ { \text{unit } } )$ , and evaluate for $C _ { \text{fixed } } = 1 0 ^ { 6 }$, $p = 1 0 ^ { - 4 }$, $C _ { \text{claim } } = 1 0 ^ { 6 }$, $c _ { \text{unit } } = 50$.
-
+::: exercise Disclosure before filing {#exr-disclosure level=2}
+A student team designs a novel quick-release mechanism for bicycle wheels, presents it at a public design show in May, and files a UK patent application in July. A sponsor wants to patent it in Germany and the US. Advise them.
 ::: solution
-The improvement is cost-effective when:
-
-$$
-C _ { \text{improvement } } \; < \; C _ { \text{failure } }
-$$
-
-$$
-C _ { \text{fixed } } + N \, c _ { \text{unit } } \; < \; N \, p \, C _ { \text{claim } }
-$$
-
-$$
-C _ { \text{fixed } } \; < \; N \, ( p \, C _ { \text{claim } } - c _ { \text{unit } } ) \quad \Longrightarrow \quad N \; > \; { \frac { C _ { \text{fixed } } } { p \, C _ { \text{claim } } - c _ { \text{unit } } } }
-$$
-
-$$
-N \; > \; { \frac { 1 0 ^ { 6 } } { 1 0 ^ { - 4 } \times 1 0 ^ { 6 } - 5 0 } } \; = \; { \frac { 1 0 ^ { 6 } } { 1 0 0 - 5 0 } } \; = \; { \frac { 1 0 ^ { 6 } } { 5 0 } } \; = \; { \bf 2 0 \ 0 0 0 } \ \text{units}
-$$
-
-**The improvement is cost-effective when the volume exceeds 20 000 units. The crossover volume is the reason the safety improvement is justified at high volume and not at low volume, and the crossover is the reason the engineer's obligation to the public is also the engineer's obligation to the shareholder.** $\blacksquare$
+The public presentation in May is part of the state of the art for a July filing under the European rules (the UK follows the European Patent Convention), so the UK and any European application lack novelty for whatever was shown; only features not disclosed at the show can be protected. In the US the inventors' own disclosure is within a one-year grace period, so a US application filed before May of the following year could still be valid, but this does not rescue Europe. Lessons: file before disclosing (or disclose under a confidentiality agreement); consider registered design protection for the appearance (the UK and EU allow a 12-month grace period for designs); and keep dated records of the development.
 :::
 :::
 
-::: exercise Derivation: the patent claim scope {#ex-derive-patent level=4 check="2"}
-A patent claim has $n$ elements, and the design has $m$ elements. Show that the design infringes if and only if the design contains all $n$ elements of the claim (the "all elements" rule), and that the probability of infringement (assuming each element is independently present with probability $p$) is $p ^ { n }$ . Evaluate for $n = 5$ and $p = 0 . 8$ .
-
+::: exercise A signature under pressure {#exr-dilemma level=3}
+You are the engineer responsible for the design calculations of a lifting beam for a new production line. Two days before commissioning, a colleague notices that the fatigue check used a load spectrum for one shift a day, whereas the plant will run three shifts. Your quick estimate suggests the fatigue life falls from 25 years to about 8. The beam is statically safe. Your manager points out that the line must start on schedule and that "eight years is longer than the product will be made". Use [[#alg-dilemma]] to analyse the situation and say what you would do.
 ::: solution
-The "all elements" rule states that the design infringes if and only if the design contains every element of the claim. If each element is independently present with probability $p$ , the probability that all $n$ elements are present is:
-
-$$
-P ( \text{infringement} ) \; = \; p ^ { n }
-$$
-
-For $n = 5$ and $p = 0 . 8$ :
-
-$$
-P \; = \; 0 . 8 ^ { 5 } \; = \; { \bf 0 . 3 2 8 } \; \; ( 3 3 \ \% )
-$$
-
-**The probability of infringement is 33 %, which means that a design that independently includes each element with 80 % probability has a 33 % chance of infringing a 5-element claim. The 33 % is the reason the FTO analysis is done before the launch, not after, and the reason is the reason the FTO analysis costs £10 000 and the infringement lawsuit costs £5 million.** $\blacksquare$
+*Facts:* static safety is unaffected, but the fatigue life now relies on an assumption (the product's production life) that is not under engineering control, and fatigue failure of a lifting beam is sudden and potentially fatal. A proper recalculation (with the correct spectrum, detail categories and inspection possibilities) can probably be done in hours. *Stakeholders:* operators below the beam, maintenance staff, the company, future owners of the equipment. *Obligations:* the professional codes (safety first; accuracy and rigour), lifting-equipment regulations and standards (which require the design to suit the actual duty), the employer's interest in avoiding liability. *Options:* recalculate now; if the life is confirmed short, commission with a documented restriction (reduced load or duty), a defined inspection interval for crack detection at the critical details and a dated replacement or reinforcement; reinforce the details before or soon after start-up; inform the client in writing. Signing the original calculation unchanged is not an option: the calculation is now known to be wrong, and its conclusion depends on a commercial assumption presented as an engineering one. *Act and document:* tell the manager the result and the options in writing; most such conflicts are resolved by a short delay or a documented restriction, without escalation. Only if overruled on a matter that endangers life would you escalate further, as the codes require.
 :::
 :::
 
-::: quiz Engineering ethics {#quiz-ethics}
-The first canon of the engineering code of ethics is:
-
-- [ ] Act as a faithful agent for the employer
-- [x] Hold paramount the safety, health, and welfare of the public
-- [ ] Undertake only those assignments within one's competence
-- [ ] Avoid conflicts of interest
-
+::: exercise Design review of a constructability change {#exr-change level=3}
+A fabricator proposes, to simplify erection, that a pin-ended tie in a mezzanine floor be replaced by two shorter ties bolted to a gusset plate at mid-length, and asks for approval by email "today". Explain, with a free-body argument like that of [[#prop-hyatt]], what you must check before approving, and draft the process your firm should follow for all such requests.
 ::: solution
-**Hold paramount the safety, health, and welfare of the public.** The first canon is the reason the engineer's obligation to the public overrides the obligation to the employer, the client, and the customer. The first canon is the reason the engineer who reports the unsafe design is protected by the law, and the protection is the reason the whistleblower is an engineer, not a traitor.
+Free body of the new gusset plate: it now transmits the full tie force between the two ties through two bolt groups and the plate, a load path that did not exist before; the plate's net section, block shear, bolt shear and bearing, and any eccentricity (if the ties are not on a common line, the plate and ties carry bending) must be checked, and the stiffness of the tie changes (bolt slip), which may redistribute forces in an indeterminate floor. The process: every proposed change is recorded as a formal change request with drawings; the engineer of record (or a delegate with the competence) checks the changed load path with calculations, not by inspection; the check is reviewed by a second engineer in proportion to the consequence of failure; approval is given in writing on the shop drawings; and changes are traceable in the design file. The Hyatt Regency case shows that a change "only to the detailing" can double a force, and that telephone or email approvals without calculations are the weak point.
 :::
-:::
-
-::: quiz CE marking {#quiz-ce}
-The CE marking is:
-
-- [ ] A quality mark that indicates the product is well-made
-- [x] A legal declaration that the product complies with the applicable EU Directives
-- [ ] A certification by a Notified Body
-- [ ] A requirement only for products sold outside the EU
-
-::: solution
-**A legal declaration that the product complies with the applicable EU Directives.** The CE marking is not a quality mark; it is the manufacturer's declaration that the product complies with the Directives. The manufacturer who affixes the CE marking without the technical file, the risk assessment, and the declaration of conformity is committing a criminal offence.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[design-process/design-process-overview]]** — The ethics and standards are the framework within which the design process operates, and the framework is the reason the design is compliant, not just functional.
-- **[[design-process/requirements]]** — The regulatory requirements (CE marking, UL, ATEX) are requirements in the specification, and the requirements are the reason the design is compliant.
-- **[[design-process/reliability-risk]]** — The risk assessment (ISO 12100) is the legal basis of the CE marking, and the risk assessment is the reason the design is safe.
-- **[[design-process/sustainability]]** — The Ecodesign Directive and the ESPR are the legal framework for the environmental impact, and the framework is the reason the engineer's obligation extends to the planet.
-- **[[design-process/design-for-manufacture]]** — The DFM/DFA review is the engineering practice that ensures the design is manufacturable, and the manufacturability is the reason the product is affordable.
-- **[[manufacturing/metrology-quality]]** — The quality management system (ISO 9001, AS9100) is the framework for the manufacturing quality, and the quality is the reason the product is safe.
-- **[[manufacturing/joining]]** — The weld quality standard (EN ISO 3834, AWS D1.1) is the legal basis of the welded structure, and the standard is the reason the weld is safe.
-- **[[solid-mechanics/fracture-mechanics]]** — The fracture mechanics assessment is the basis of the fitness-for-service decision, and the decision is the reason the cracked component is replaced or accepted.
-
-::: history Engineering ethics and standards: from the Keystone disaster to the ESPR {#history-ethics}
-**1879** — **The Tay Bridge disaster** (Scotland): the railway bridge collapses in a storm, killing 75 people. The inquiry finds that the design was inadequate, the construction was poor, and the inspection was negligent. **The Tay Bridge disaster is the reason the engineer's signature is a legal document, and the legal document is the reason the engineer is personally liable for the design.**
-
-**1907** — **The Quebec Bridge disaster** (Canada): the bridge collapses during construction, killing 75 workers. The inquiry finds that the design was based on an incorrect load calculation, and the calculation was not checked. **The Quebec Bridge disaster is the reason the independent check is mandatory for every critical calculation, and the check is the reason the engineer's signature is not the only signature on the drawing.**
-
-**1912** — **The Titanic disaster**: the ship sinks after striking an iceberg, killing 1 500 people. The inquiry finds that the design was adequate but the operation was negligent (the speed was too high, the binoculars were locked, the wireless was ignored). **The Titanic disaster is the reason the SOLAS (Safety of Life at Sea) Convention was adopted in 1914, and the Convention is the reason the international standard is a legal requirement, not a voluntary guideline.**
-
-**1940** — **The Tacoma Narrows Bridge collapse** (US): the bridge collapses in a 68 km/h wind, killing no one (the bridge was closed). The inquiry finds that the design did not account for the aerodynamic flutter. **The Tacoma Narrows disaster is the reason the wind tunnel test is mandatory for every long-span bridge, and the test is the reason the engineer must consider the unintended consequence.**
-
-**1970s** — **The Ford Pinto case**: Ford's cost-benefit analysis concludes that the cost of recalling 11 million Pintos exceeds the cost of the burn injuries, so Ford does not recall. The case is discovered in 1977, and Ford is convicted of reckless homicide (overturned on appeal). **The Ford Pinto case is the reason the consequentialist cost-benefit analysis is not the engineer's default, and the reason is the reason the first canon is the first canon.**
-
-**1981** — **The Hyatt Regency walkway collapse** (Kansas City): the walkway collapses, killing 114 people. The inquiry finds that the design change (from a continuous hanger rod to a staggered rod) doubled the load on the connection, and the change was approved without recalculation. **The Hyatt Regency disaster is the reason the design change must be recalculated, not approved, and the recalculation is the reason the engineer's signature is a legal document.**
-
-**1986** — **The Challenger disaster**: the space shuttle breaks apart 73 seconds after launch, killing 7 astronauts. The inquiry finds that the O-ring seals failed because the launch temperature was below the certification limit, and the engineers' recommendation to postpone was overruled by the management. **The Challenger disaster is the reason the engineer's obligation to the public overrides the schedule pressure, and the override is the reason the first canon is the first canon.**
-
-**2015** — **The Volkswagen emissions scandal**: Volkswagen installs a "defeat device" in 11 million diesel cars to cheat the emissions test. The device is discovered by the EPA, and Volkswagen is fined £30 billion. **The Volkswagen scandal is the reason the engineer does not write the cheat code, and the reason is the reason the engineer's obligation to the public overrides the employer's instruction.**
-
-**2024** — **The EU Ecodesign for Sustainable Products Regulation** (ESPR) extends the Ecodesign Directive to all physical products and introduces the digital product passport, the repairability score, and the recycled content requirement. **The ESPR is the reason the engineer's obligation extends to the planet, and the obligation is the reason the engineer's signature is a legal document, not a formality.**
-:::
-
-::: summary Ethics and standards {#summary-ethics-standards}
-- **Engineering ethics is the discipline of making decisions that protect the public's safety, health, and welfare, even when the decision is inconvenient, expensive, or unpopular.** The first canon of every engineering code of ethics is the obligation to the public.
-- **The three ethical frameworks are deontology (duty, rule), consequentialism (outcome, utility), and virtue ethics (character, integrity).** The deontological framework is the engineer's default: the standard says "shall," the engineer complies.
-- **The Ford Pinto case is the canonical example of the consequentialist failure; the Challenger disaster is the canonical example of the deontological failure.** The cost-benefit analysis is not the engineer's default, and the schedule pressure does not override the standard.
-- **The standards hierarchy is: international (ISO, IEC) → European (EN) → national (BS, DIN) → industry (ASME, AWS) → company.** The harmonised standard (EN) gives the presumption of conformity with the EU Directive.
-- **The CE marking is the manufacturer's legal declaration that the product complies with the applicable EU Directives.** The technical file, the risk assessment, and the declaration of conformity are the legal documents that support the CE marking.
-- **The technical file is the document that the market surveillance authority asks for after an accident.** The technical file contains the description, the drawings, the risk assessment, the standards applied, the calculations, the test reports, the instructions, and the declaration of conformity.
-- **The four forms of intellectual property are patents (20 years), trademarks (renewable), copyrights (life + 70 years), and trade secrets (unlimited).** The patent search is done before the patent application; the freedom-to-operate analysis is done before the product launch.
-- **The chartered engineer (CEng) is the engineer who is competent to sign the design, and the signature is a legal qualification.** The CEng who signs a design that fails is personally liable, and the liability is the reason the CEng does not sign a design that they are not confident in.
-- **The continuous professional development (CPD) is the process of maintaining and extending the engineer's competence throughout their career.** The CPD is a requirement of the chartered status, and the requirement is the reason the engineer's competence is current.
-- **The corporate manslaughter offence makes the company liable for a fatality caused by a gross failure of the duty of care, and the liability is an unlimited fine.** The fine is the reason the safety is a board-level issue, not an engineering-level issue.
 :::
 
 ## Further reading
 
-- **Mike Martin and Roland Schinzinger (2005)** — *Ethics in Engineering*, 4th ed. McGraw-Hill. The standard engineering ethics textbook: the Ford Pinto, the Challenger, the Hyatt Regency, and the ethical frameworks.
-- **IMechE (2023)** — *The Institution of Mechanical Engineers: Rules and Regulations*. IMechE. The code of conduct, the competence framework, and the CPD requirement.
-- **Engineering Council (2014)** — *UK Standard for Professional Engineering Competence and Commitment* (UK-SPEC), 4th ed. Engineering Council. The competence and responsibility requirements for EngTech, IEng, and CEng.
-- **EU Directive 2006/42/EC** — *Machinery Directive*. European Parliament. The essential health and safety requirements for machinery, the conformity assessment routes, and the Annex IV list.
-- **ISO 12100:2010** — *Safety of Machinery — General Principles for Design — Risk Assessment and Risk Reduction*. ISO. The risk assessment methodology, the hazard identification, and the risk reduction hierarchy.
-- **ASME (2023)** — *ASME Boiler and Pressure Vessel Code*. ASME. The pressure vessel design rules, the material specifications, and the inspection requirements.
-- **WIPO (2023)** — *Patent Cooperation Treaty (PCT) Applicant's Guide*. WIPO. The international patent application process, the patent search, and the freedom-to-operate analysis.
-- **Public Interest Disclosure Act 1998** (UK). The whistleblower protection legislation, the protected disclosure, and the remedies for the dismissed whistleblower.
+Harris, Pritchard, Rabins, James and Englehardt, *Engineering Ethics: Concepts and Cases* (Cengage), and Martin and Schinzinger, *Ethics in Engineering* (4th edition, McGraw-Hill, 2005), discuss the theories, codes and many cases, including those above. The *Report of the Presidential Commission on the Space Shuttle Challenger Accident* (1986) and the National Bureau of Standards' investigation of the Kansas City Hyatt Regency walkways (1982) are the primary accounts of two of them; Morgenstern's "The fifty-nine-story crisis" (*The New Yorker*, 29 May 1995) tells the Citicorp story. For machinery safety, ISO 12100:2010 is the starting point; the European Commission's guides to the Machinery Directive and Regulation explain the conformity procedures.

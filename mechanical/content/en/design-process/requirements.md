@@ -1,439 +1,308 @@
-A requirement is a promise to the customer, and a specification is the set of promises that, taken together, define the product. The difference between a product that succeeds and a product that fails is almost never a calculation error — it is a requirement that was wrong, missing, or ambiguous. **The bridge that collapses was not miscalculated; it was designed to the wrong load case. The pump that vibrates itself to destruction was not mis-engineered; it was specified without a frequency constraint. The software that crashes was not badly coded; it was specified without a failure-mode requirement.** The cost of a wrong requirement is not the cost of fixing the requirement — it is the cost of the product that was built to the wrong requirement, which is the cost of the product plus the cost of the recall, plus the cost of the redesign, plus the cost of the reputation.
+A design brief usually arrives as a sentence: "we need a cheaper cordless drill", "the hospital wants a bed that one nurse can move", "the pump must survive the monsoon season". Nothing in such a sentence can be calculated, drawn or tested. The first real piece of engineering in a project is to turn it into a **specification**: a list of statements, each of which names a measurable property of the product, a value it must reach and the way that value will be checked. Every later decision — which concept to develop ([[design-process/concept-generation]], [[design-process/concept-selection]]), how big to make a shaft ([[design-process/embodiment-design]]), how many prototypes to test — is judged against that list. A specification that is vague cannot settle arguments; one that is wrong sends a capable team efficiently in the wrong direction.
 
-The discipline of requirements engineering is the discipline of writing down, unambiguously, measurably, and verifiably, what the product must do, what it must not do, what it must withstand, and what it must cost. The tools are simple: a verb-noun pair for every function, a number with a unit and a tolerance for every performance target, a test method for every requirement, and a traceability matrix that links every requirement to a test and every test to a requirement. The difficulty is not the tools; the difficulty is the conversations that the tools force: the conversation with the customer who says "it should be fast" and must be made to say "it must accelerate from 0 to 100 km/h in 6.2 seconds at sea level, 25 °C, with a 75 kg driver"; the conversation with the marketing team who says "it should be cheap" and must be made to say "the bill of materials must not exceed $47 at a volume of 50 000 units per year"; the conversation with the regulatory affairs team who says "it must be safe" and must be made to say "it must comply with ISO 12100, EN ISO 13849-1 Performance Level d, and the Machinery Directive 2006/42/EC Annex I."
+This chapter follows the path from need to specification. It starts with finding out what users actually need, separates needs from requirements and specifications, shows how a need becomes a metric with a target value, and introduces the four ways of verifying a requirement. Two classical tools then organise the information: the Kano model, which sorts needs by how they affect satisfaction, and quality function deployment (QFD), which translates weighted customer needs into priorities among engineering metrics. The chapter ends with traceability and change control, and with a quantitative look at verification by test — how many units must pass a test before a reliability requirement can be claimed. The overall design process into which this fits is described in [[design-process/design-process-overview]].
 
-::: warning Nine ways requirements go wrong
-**Writing the solution instead of the need.** "The housing shall be made of aluminium" is not a requirement; it is a design decision masquerading as one. The requirement is "the housing shall dissipate 50 W at 40 °C ambient without exceeding 85 °C." The aluminium is one solution; a steel housing with a heat sink, a plastic housing with a fan, and a finned extrusion are three others. **Write every requirement as a function (verb-noun) with a measurable target, and never name a material, a process, or a component in a requirement.** **Writing a requirement that cannot be tested.** "The product shall be user-friendly" is not a requirement; it is a wish. The testable version is "a first-time user shall complete the setup procedure in under 3 minutes with no more than 2 errors, measured on a sample of 20 users." **If you cannot write the test procedure, you have not written a requirement.** **Not distinguishing needs from requirements from specifications.** The **need** is the customer's problem ("I need to move 500 kg of grain per hour from the truck to the silo"). The **requirement** is a measurable target derived from the need ("the system shall transfer 500 ± 50 kg/h of wheat (bulk density 770 kg/m³) over a horizontal distance of 30 m and a vertical rise of 8 m"). The **specification** is the complete set of requirements, constraints, and interfaces that define the product. **Confusing the three is the most common cause of scope creep: the customer changes the need, the engineer changes the requirement, and the specification is never updated.** **Not prioritising.** A product with 200 requirements and no priorities is a product with 200 must-haves, which is a product that cannot be built. **Classify every requirement as mandatory (the product fails without it), important (the product is degraded without it), or desirable (the product is better with it), and enforce the classification at every trade-off.** **Not tracing.** A requirement that is not linked to a test is a requirement that will not be verified. A test that is not linked to a requirement is a test that will be forgotten. **The traceability matrix is the spine of the V-model, and it is the first document the auditor asks for.** **Ignoring the interface requirements.** The product does not exist in isolation: it connects to a power supply, a data bus, a mechanical frame, a human operator, and a regulatory environment. **Every interface is a requirement, and every interface requirement must be bilateral: "the product shall accept 24 V DC ± 10 % from the customer's supply" is a requirement on the product; "the customer's supply shall provide 24 V DC ± 10 % with < 1 % ripple" is a requirement on the interface. Both must be written, and both must be tested.** **Not writing the negative requirements.** "The product shall not start when the guard is open" is a safety requirement. "The product shall not leak more than 0.1 ml/h of hydraulic fluid at 200 bar and 80 °C" is an environmental requirement. **The negative requirements (the "shall not" statements) are the ones that prevent the lawsuit, and they are the ones that are most often forgotten.** **Not freezing the requirements.** A requirement that changes after the design is frozen is a change order, and a change order costs 10–100× the cost of the change at the requirement stage. **The requirements are frozen at Gate 1, and any change after that goes through a change-control board that assesses the cost, the schedule impact, and the risk.** **Not validating the requirements with the customer.** The requirements are written by the engineer, but they describe the customer's need. **The validation step is: show the requirements to the customer, ask them to imagine the product that meets every requirement, and ask "is this the product you want?" If the answer is "well, almost," the requirements are wrong, and it is cheaper to fix them now than to build the wrong product.**
+## From needs to specifications {#sec-needs}
+
+### Finding out what is needed
+
+Users rarely state their needs in a form an engineer can use, and they rarely state all of them. Experienced teams therefore gather needs in several complementary ways:
+
+- **Interviews** with individual users in their own setting, using open questions ("walk me through the last time you…") rather than asking people to design the product. One person at a time avoids the group conformity of focus groups.
+- **Observation of use** (sometimes called contextual inquiry): watching a mechanic change a pump seal or a nurse move a bed reveals workarounds, improvised tools and difficulties that nobody thinks to mention because they have become routine.
+- **Lead users** — people who experience a need earlier or more intensely than the market as a whole, such as professional tradespeople for a power tool — often have already modified existing products and can describe needs the mass market will feel later.
+- **Documents and data**: complaint and warranty records of the current product, field-failure reports, accident statistics, regulations and standards that the product must satisfy.
+- **All the stakeholders**, not just the purchaser: the user, the person who installs, maintains, transports, sells, recycles or regulates the product. A hospital bed is bought by a procurement office, used by patients, moved by porters, cleaned by housekeeping staff and serviced by technicians; each group has needs.
+
+The raw output is a long list of statements in the customers' own words. The next step is to rewrite each as a need statement.
+
+::: definition Customer need, requirement and specification {#def-need}
+A **customer need** is a statement, independent of any particular solution, of an attribute the product should have from the point of view of a stakeholder ("the drill lasts a full working day without recharging"). A **requirement** is a need restated by the design team as a property that the product *shall* have, in engineering language and bounded by conditions ("the drill shall drive at least 100 screws of size $5\times 50\,\mathrm{mm}$ into softwood on one charge"). A **specification** (or target specification) is the set of requirements, each made precise by a **metric** (a measurable quantity with a unit), a **target value** (or range) and a **verification method**. A requirement that limits the solution without being traded against others — a law, a standard, an interface dimension — is a **constraint**; one that should be made as good as possible is an **objective**.
 :::
 
-## 1. From need to requirement to specification
+Guidelines for writing need statements, following Ulrich and Eppinger, are to express *what* the product must do and not *how* ("the handle stays cool" rather than "the handle is made of nylon"), to keep the specificity of the raw data, to use positive phrasing, and to describe an attribute of the product rather than an obligation of the user. The point of writing needs without solutions is to keep the concept space open: if the need is recorded as "nylon handle", nobody will later consider an insulating air gap.
 
-::: definition Needs, requirements, and specifications {#def-needs-reqs-specs}
-The three levels of abstraction in the front end of the design process are:
+### Metrics, target values and their ranges
 
-$$
-\begin{array} { l l l l }
-\textbf{Level} & \textbf{Who writes it} & \textbf{Language} & \textbf{Example} \\ \hline
-\text{Customer need} & \text{Customer} & \text{Natural language, vague} & \text{"I need to move grain from the truck to the silo"} \\
-\text{Requirement} & \text{Engineer} & \text{Verb-noun + measurable target} & \text{"Transfer 500 ± 50 kg/h over 30 m horizontal, 8 m vertical"} \\
-\text{Specification} & \text{Engineer} & \text{Complete set of requirements} & \text{The 200-page document that defines the product} \\
-\end{array}
-$$
+A need becomes useful to an engineer only when it is attached to a **metric** that can be measured on a prototype. The metric is usually indirect: "feels light in the hand" becomes mass in kilograms *and* the distance of the centre of mass from the grip; "lasts a full day" becomes stored energy in watt-hours under a defined duty cycle. A good metric is
 
-A well-written requirement has five properties (the **SMART** criteria, adapted for engineering):
+- **dependent** on the product, not on how well the test is run;
+- **practical** — measurable with available equipment at reasonable cost;
+- **complete** together with the others, so that meeting all metrics really does satisfy the need.
 
-- **Specific**: unambiguous, with no undefined terms. "The motor shall be powerful" is not specific. "The motor shall deliver 15 N·m continuous torque at 1 500 rpm" is.
-- **Measurable**: quantified with a number, a unit, and a tolerance. "The pump shall be quiet" is not measurable. "The pump shall produce < 65 dB(A) at 1 m, measured per ISO 3744" is.
-- **Achievable**: physically possible within the constraints. "The bracket shall weigh 10 g and support 10 kN" is not achievable with any known material.
-- **Relevant**: traceable to a customer need. A requirement that does not trace to a need is gold-plating.
-- **Testable**: a verification method exists. "The coating shall be durable" is not testable. "The coating shall survive 500 hours of salt-spray per ISO 9227 with < 5 % scribe creep" is.
+Target values are rarely single numbers early in a project. A common practice is to record a **marginal value** (the value that would just make the product commercially viable) and an **ideal value** (the best that could be hoped for), and to narrow the range only after the concept is chosen and its capabilities are known. Benchmarking — measuring competitors' products against the same metrics — anchors both values in reality.
 
-**The verb-noun convention is the single most powerful tool in requirements engineering.** Every requirement is written as "the [system] shall [verb] [noun] [under conditions] [to a target]." The verb is a function (transfer, support, convert, maintain, limit, detect, stop). The noun is the object of the function (torque, load, heat, temperature, pressure, vibration). The conditions are the environment (temperature, humidity, vibration, altitude). The target is the number with a unit and a tolerance. **If you cannot write the requirement in this form, you do not understand it.**
+::: example From "lasts a full day" to a battery specification {#ex-battery}
+Interviews with carpenters fitting kitchen units produce the need "the drill lasts a full working day without recharging". Observation shows that a heavy day involves driving about 100 screws of $5\times 50\,\mathrm{mm}$ into softwood, each needing about 8 turns at an average torque of $5\,\mathrm{N\,m}$ once the thread has engaged. Assume an overall efficiency from battery to chuck (motor, electronics and gearbox) of $60\,\%$ and that only $80\,\%$ of the rated battery energy may be used to protect cell life. Derive a battery-energy target and the corresponding capacity at a nominal $18\,\mathrm V$.
+::: solution
+Mechanical work per screw: $W = T\theta = 5\,\mathrm{N\,m}\times(8\times2\pi\,\mathrm{rad}) = 251.3\,\mathrm J$.
+Battery energy per screw at $60\,\%$ efficiency: $251.3/0.60 = 418.9\,\mathrm J$.
+For 100 screws: $41\,890\,\mathrm J = 41.89\times10^{3}/3600\,\mathrm{Wh} = 11.64\,\mathrm{Wh}$.
+Rated energy with $80\,\%$ usable: $11.64/0.80 = 14.54\,\mathrm{Wh}$.
+Capacity at $18\,\mathrm V$: $14.54\,\mathrm{Wh}/18\,\mathrm V = 0.808\,\mathrm{Ah}$.
+A sensible specification therefore reads: *metric* rated pack energy; *marginal value* $15\,\mathrm{Wh}$; *ideal value* $30\,\mathrm{Wh}$ (a margin for harder timber, drilling and ageing cells); *verification* test — drive screws on a standard fixture until the pack cuts out. Sanity check: commercial $18\,\mathrm V$ packs are sold in sizes of roughly $1.5$ to $5\,\mathrm{Ah}$ (about 27 to 90 Wh), well above our marginal value, which is consistent with the fact that real users also drill holes, which take far more energy than driving screws. The estimate sets a floor; benchmarking sets the ideal.
+:::
 :::
 
-::: definition Requirement classification and prioritisation {#def-req-classification}
-Requirements are classified by type and by priority:
+### Writing requirements that can be checked
 
-**By type:**
+A requirement is written as one sentence with *shall*, one property per sentence, with the conditions under which it applies and a value with a unit: "With a $300\,\mathrm{kg}$ load centred on the mattress platform, the bed *shall* be movable on a level floor by a horizontal hand force not exceeding $200\,\mathrm N$." The requirements-engineering standard ISO/IEC/IEEE 29148 lists the characteristics a well-formed requirement should have; for mechanical products the most important are that each requirement is **necessary** (traceable to a need or constraint), **unambiguous** (one reading only), **singular** (one property), **feasible**, and **verifiable**. Words such as *adequate*, *easy*, *robust*, *user-friendly*, *as far as possible* and *etc.* make a requirement unverifiable and should be replaced by numbers or deleted.
 
-$$
-\begin{array} { l l l }
-\textbf{Type} & \textbf{Description} & \textbf{Example} \\ \hline
-\text{Functional} & \text{What the product does} & \text{"Lift 500 kg to 3 m in 10 s"} \\
-\text{Performance} & \text{How well it does it} & \text{"Positioning accuracy ± 0.1 mm"} \\
-\text{Constraint} & \text{Limits on the design} & \text{"Mass < 50 kg, cost < £2 000"} \\
-\text{Interface} & \text{How it connects to the world} & \text{"Accept 24 V DC ± 10 \%, M12 connector"} \\
-\text{Environmental} & \text{What it must withstand} & \text{"Operate at -20 to +50 °C, IP65"} \\
-\text{Safety} & \text{What it must not do} & \text{"Stop within 0.5 s when the E-stop is pressed"} \\
-\text{Regulatory} & \text{What standards it must meet} & \text{"Comply with CE, UL, ATEX Zone 2"} \\
-\text{Reliability} & \text{How long it must last} & \text{"MTBF > 10 000 h, B10 life > 20 000 h"} \\
-\end{array}
-$$
-
-**By priority (the MoSCoW method, adapted):**
-
-- **Must have (M)**: the product is non-functional without it. Non-negotiable. Violation is a show-stopper.
-- **Should have (S)**: the product is degraded without it. Important but not critical. Can be traded against cost or schedule with management approval.
-- **Could have (C)**: the product is better with it. Desirable. First candidate for de-scope.
-- **Won't have (W)**: explicitly excluded. **The "won't have" category is the most important and the most often omitted, because it prevents the scope creep that kills projects.**
-
-**The priority is not a suggestion; it is a decision rule. When the design trade-off arises (and it always does), the priority tells you which requirement to relax. If all requirements are "must have," the trade-off is unresolvable, and the engineer is forced to make a decision that should have been made by the customer.**
+::: warning Writing the solution into the requirement
+"The housing shall be die-cast aluminium" is not a requirement but a design decision, and writing it into the specification at the start forecloses moulded polymer, sheet metal and every other option before they have been considered. Ask *why* the statement was made: if the answer is "because it must dissipate $40\,\mathrm W$ with a surface temperature below $60\,^\circ\mathrm C$" or "because it must survive a $1\,\mathrm m$ drop onto concrete", write *that*. Genuine solution constraints do exist — the product must fit an existing bolt pattern, or the factory has only one kind of press — but record them as constraints with their reason, so that they can be challenged if the reason disappears.
 :::
 
-::: definition Quality Function Deployment (QFD) and the House of Quality {#def-qfd}
-**Quality Function Deployment** (QFD, Akao, 1966) is a structured method for translating customer needs (the "voice of the customer") into engineering requirements (the "voice of the engineer"). The tool is the **House of Quality** (HoQ), a matrix that relates customer attributes (rows) to engineering characteristics (columns):
+### Verification and validation {#sec-verification}
 
-$$
-\begin{array} { l c c c c }
-& \text{EC}_1 \text{ (torque)} & \text{EC}_2 \text{ (mass)} & \text{EC}_3 \text{ (cost)} & \text{EC}_4 \text{ (noise)} \\ \hline
-\text{CA}_1 \text{ ("powerful")} & \boldsymbol{9} & 3 & 1 & 1 \\
-\text{CA}_2 \text{ ("light")} & 3 & \boldsymbol{9} & \boldsymbol{9} & 1 \\
-\text{CA}_3 \text{ ("cheap")} & 1 & 1 & \boldsymbol{9} & 3 \\
-\text{CA}_4 \text{ ("quiet")} & 1 & 3 & 1 & \boldsymbol{9} \\
-\end{array}
-$$
+Every requirement carries the method by which it will be shown to be met. Four methods are standard in systems engineering:
 
-The relationship strengths are: 9 = strong, 3 = medium, 1 = weak, 0 = none. The **importance weighting** (from the customer) multiplies the rows, and the **technical correlation matrix** (the "roof" of the house) captures the interactions between engineering characteristics (e.g., increasing torque increases mass and noise).
-
-**The value of QFD is not the matrix; it is the conversations it forces.** The matrix makes the trade-offs explicit: "the customer wants powerful and light and cheap and quiet, and the roof says that powerful and light are negatively correlated, and powerful and cheap are negatively correlated, and the customer has to choose." **The QFD is the tool that turns "I want everything" into "I want these three things, and I accept that I cannot have the fourth."**
+::: definition Verification methods {#def-verification}
+- **Inspection**: examination by the senses or simple measurement of the product or its documentation (a label is present, a dimension is within tolerance, the drawing calls up the right material).
+- **Analysis**: calculation or simulation from validated models (a stress analysis shows the safety factor; a thermal model predicts surface temperature) — used when testing is impossible, dangerous or too costly, or as evidence before hardware exists.
+- **Demonstration**: operation of the product to show a function works, without detailed measurement (the bed can be steered through a standard doorway).
+- **Test**: operation under controlled conditions with measurement and recorded data, often to a standard procedure (a drop test, a fatigue test, a measured noise level).
 :::
 
-::: example Writing a requirement from a need {#ex-write-req level=3 check="3"}
-A customer says: "I need a pump that can handle thick oil." Write three testable requirements from this need.
+**Verification** asks "did we build the product right?" — does the product meet its specification? **Validation** asks "did we build the right product?" — does it satisfy the users' needs in real use? A product can pass every verification test and still fail validation if the specification was wrong, which is why prototypes are put in front of real users early and why the trace from each requirement back to a need ([[#sec-traceability]]) matters.
 
-**Requirement 1 (functional):** The pump shall deliver ≥ 20 L/min of SAE 15W-40 engine oil (viscosity 110 mPa·s at 40 °C) against a 5 bar back-pressure, at an ambient temperature of 20 ± 5 °C.
+::: example Choosing verification methods {#ex-verification}
+Assign a verification method to each requirement for a manually moved hospital bed:
+(a) The bed shall carry the label required by the applicable medical-device regulation.
+(b) The castor brakes shall hold the loaded bed on a $6^\circ$ ramp.
+(c) The frame shall withstand $2\times10^5$ cycles of the mattress-platform load without cracking.
+(d) The side rails shall be raised and lowered by one person with one hand.
+(e) The head section's pivot pin shall have a safety factor of at least 3 against yield.
+::: solution
+(a) Inspection — look for the label and check its content.
+(b) Test — place the loaded bed on a ramp of the stated angle, measure any movement. (A calculation of the brake friction could support it, but the requirement is cheap and important to test.)
+(c) Test, supported by analysis — a fatigue test of one or more frames on a rig; before the rig exists, a fatigue analysis ([[machine-design]]) predicts the result and sets the test conditions.
+(d) Demonstration — several people of different statures operate the rails; there is no single number to record. (If the operating force matters, the requirement should be rewritten with a force limit and then *tested*.)
+(e) Analysis — a stress calculation of the pin; a test to destruction would only show that one pin's safety factor is above 3, not by how much.
+Check: every requirement got exactly one primary method, and the method matches the kind of evidence the statement asks for — a requirement verified "by demonstration" that contains a number is a sign that the requirement or the method is wrong.
+:::
+:::
 
-**Requirement 2 (constraint):** The pump motor shall not draw more than 1.5 kW at the rated flow and pressure.
+## Not all needs are equal: the Kano model {#sec-kano}
 
-**Requirement 3 (environmental):** The pump shall operate continuously at an ambient temperature of −10 to +50 °C and a relative humidity of 10–95 % (non-condensing).
+Customers react differently to different attributes. A car's brakes must work; nobody is delighted that they do, but everyone is furious if they fail. Fuel economy pleases in proportion to how good it is. A feature nobody expected — say, a tool that tells you when a screw is fully seated — can delight even if executed modestly, and its absence disappoints nobody. Noriaki Kano and colleagues formalised these observations in 1984.
 
-**Each requirement has a verb (deliver, draw, operate), a noun (flow, power, temperature), a number with a unit, a tolerance, and a test condition. Each is testable: the first is verified by a flow-versus-pressure curve at the specified viscosity; the second by a wattmeter; the third by a thermal chamber run. The original need ("handle thick oil") is not testable, not specific, and not measurable. The three requirements are.**
+::: definition Kano categories {#def-kano}
+For a product attribute with degree of fulfilment $x$ (from absent to fully present) and customer satisfaction $s$:
+- a **must-be** (basic) attribute causes strong dissatisfaction when absent and no more than neutrality when present;
+- a **one-dimensional** (performance) attribute increases satisfaction roughly in proportion to its fulfilment;
+- an **attractive** (delighter) attribute causes no dissatisfaction when absent and growing satisfaction when present;
+- an **indifferent** attribute affects satisfaction little either way;
+- a **reverse** attribute is one whose presence some customers actively dislike.
+:::
+
+Kano's questionnaire asks each respondent two questions about an attribute — a *functional* one ("How do you feel if the drill *has* an LED work light?") and a *dysfunctional* one ("How do you feel if it does *not*?") — each answered with one of: I like it, I expect it, I am neutral, I can live with it, I dislike it. The pair of answers is classified with a standard table: like/dislike is one-dimensional; like/neutral (or like/live-with, like/expect) is attractive; expect/dislike, neutral/dislike or live-with/dislike is must-be; the middle answers on both questions are indifferent; and dislike when present with like when absent is reverse. Each attribute is assigned the category most respondents fall into.
+
+::: widget plot
+f: -exp(-3*x); x - 0.5; exp(3*(x - 1)); 0*x
+x: 0, 1
+y: -1.1, 1.1
+labels: \text{must-be}; \text{one-dimensional}; \text{attractive}; \text{indifferent}
+caption: Stylised Kano curves: customer satisfaction (vertical, from dissatisfied $-1$ to delighted $+1$) against the degree to which an attribute is provided (horizontal, from absent $0$ to fully provided $1$). These are illustrations of the categories, not fitted data. Notice that the must-be curve never rises above zero — no amount of a basic attribute delights — while the attractive curve never drops below zero. Over time attributes drift downward through the categories: yesterday's delighter (a work light on a drill) becomes today's expected feature.
+:::
+
+The engineering consequence is that targets should be set differently by category. Must-be attributes need a threshold that is met with certainty — they are typically the constraints and safety requirements. One-dimensional attributes are traded against cost in the specification; this is where benchmarking and the QFD of the next section matter most. Attractive attributes are where a product can differentiate itself cheaply, but they become must-be features as competitors copy them.
+
+::: example Classifying attributes from survey answers {#ex-kano}
+Twenty professional users answered the Kano questions for three attributes of a cordless drill. The most frequent answer pairs (functional / dysfunctional) were:
+(a) battery charge indicator — "I expect it" / "I dislike it" (14 of 20);
+(b) run time per charge — "I like it" / "I dislike it" (12 of 20);
+(c) Bluetooth link to a phone app — "I am neutral" / "I am neutral" (11 of 20), with 6 answering "I like it" / "I am neutral".
+Classify each attribute and say what it means for the specification.
+::: solution
+(a) Expect/dislike is *must-be*: the charge indicator must be present, but more elaborate versions will not raise satisfaction. Specify it as a constraint (verified by inspection) and spend no more on it than needed.
+(b) Like/dislike is *one-dimensional*: more run time steadily increases satisfaction. It belongs in the specification as an objective with marginal and ideal values ([[#ex-battery]]), to be traded against mass and cost.
+(c) The majority answer is *indifferent*, with a minority (6 of 20, 30 %) seeing it as *attractive*. For this group of users the feature does not justify its cost and complexity in the base product; it might be offered in a variant for a segment where it is attractive.
+Check: the categories add up — 14 of 20 must-be for (a) is a clear majority; for (c) the decision follows the majority but the minority view is recorded, which is what a careful team would report.
+:::
+:::
+
+## Quality function deployment {#sec-qfd}
+
+Once needs have been weighted and metrics chosen, the team must decide which metrics matter most: which ones to benchmark carefully, where to spend development effort, where conflicts between metrics will have to be resolved. **Quality function deployment** (QFD), developed in Japanese industry in the late 1960s and 1970s and popularised in the West by Hauser and Clausing's 1988 article "The House of Quality", is a structured way of doing this with a matrix.
+
+::: definition House of Quality {#def-hoq}
+The **House of Quality** is a chart whose rows are the customer needs $i = 1,\dots,m$ with importance weights $w_i$ and whose columns are the engineering metrics $j = 1,\dots,n$. Each cell holds a **relationship strength** $r_{ij}$ saying how strongly metric $j$ influences need $i$, conventionally $9$ (strong), $3$ (moderate), $1$ (weak) or $0$ (none). Around this central matrix the "house" adds: a *roof* — a triangular matrix showing whether pairs of metrics support or conflict with each other; a *right wall* — customers' ratings of the current product and competitors against each need; and a *basement* — units, competitors' measured values, technical difficulty and the target values for each metric.
+:::
+
+::: algorithm Technical importance in QFD {#alg-qfd}
+1. Assign each need an importance $w_i$ (e.g. 1–5 from customer surveys; optionally multiply by an improvement ratio or sales-point factor from the right wall).
+2. For each need and metric, assign $r_{ij} \in \{0, 1, 3, 9\}$ by team discussion; most cells should be zero, and every need should have at least one strong relationship (otherwise a metric is missing).
+3. Compute the **technical importance** of each metric
+$$
+t_j = \sum_{i=1}^{m} w_i\,r_{ij}
+$$ {#eq-qfd}
+and its **relative importance** $t_j \big/ \sum_k t_k$, usually in per cent.
+4. Use the ranking to allocate attention: set ambitious targets for high-importance metrics, and examine the roof for conflicts among them.
+:::
+
+The 9-3-1 scale deliberately spreads the scores so that strong relationships dominate. The numbers are judgements, so the result is a structured opinion, not a measurement: it is most useful for revealing what the team had not discussed (an empty row, a column with no strong entries) and for making disagreements explicit.
+
+::: example A House of Quality for a cordless drill {#ex-qfd}
+Five needs with weights (1–5) and five metrics are related as follows:
+
+| need ($w_i$) | M1 pack energy (Wh) | M2 mass (kg) | M3 max torque (N m) | M4 kickback cut-out | M5 unit cost (£) |
+|---|---|---|---|---|---|
+| lasts a full day (5) | 9 | 3 | 0 | 0 | 3 |
+| light in the hand (4) | 3 | 9 | 3 | 0 | 0 |
+| drives large screws (4) | 1 | 0 | 9 | 3 | 1 |
+| safe if the bit jams (3) | 0 | 1 | 3 | 9 | 0 |
+| affordable (3) | 3 | 0 | 3 | 1 | 9 |
+
+Compute the technical importance and relative importance of each metric.
+::: solution
+By [[#eq-qfd]], column by column:
+M1: $5\cdot9 + 4\cdot3 + 4\cdot1 + 3\cdot0 + 3\cdot3 = 45 + 12 + 4 + 0 + 9 = 70$.
+M2: $5\cdot3 + 4\cdot9 + 0 + 3\cdot1 + 0 = 15 + 36 + 3 = 54$.
+M3: $0 + 4\cdot3 + 4\cdot9 + 3\cdot3 + 3\cdot3 = 12 + 36 + 9 + 9 = 66$.
+M4: $0 + 0 + 4\cdot3 + 3\cdot9 + 3\cdot1 = 12 + 27 + 3 = 42$.
+M5: $5\cdot3 + 0 + 4\cdot1 + 0 + 3\cdot9 = 15 + 4 + 27 = 46$.
+Total $278$; relative importances $25.2\,\%$, $19.4\,\%$, $23.7\,\%$, $15.1\,\%$, $16.5\,\%$.
+Pack energy and torque come first. The roof would show that pack energy conflicts with mass (bigger packs are heavier) and with cost, so the team knows in advance that the specification's hardest trade-off is energy against mass and cost — which is exactly the trade-off battery suppliers' product ranges are built around. Check: the relative importances sum to $100\,\%$, and the most important need (weight 5) has a strong (9) relationship with the top-ranked metric, as one would expect.
+:::
+:::
+
+::: remark Cascading the house
+QFD can be continued downstream: the metrics of the first house become the "needs" of a second house whose columns are part characteristics, then a third for process parameters, and a fourth for production controls. In practice most teams use only the first house, but the cascade expresses an important idea — that every machining tolerance should ultimately be traceable to something a customer cares about.
+:::
+
+## Prioritising, tracing and controlling requirements {#sec-traceability}
+
+A specification for a complex product contains hundreds or thousands of requirements, and they change as the project learns. Three practices keep them under control.
+
+**Prioritisation.** Not every requirement can be met in every release. A simple scheme widely used in project management is **MoSCoW**: each requirement is labelled *must have*, *should have*, *could have* or *won't have (this time)*. Must-have requirements correspond roughly to Kano's must-be attributes and to legal and safety constraints; a product release that misses one is not released at all.
+
+**Traceability.** Each requirement records where it came from (the need, regulation or interface it serves) and, later, which design elements satisfy it and which verification activity closes it. A **traceability matrix** tabulates these links. It answers three questions that arise in every project: *Why is this requirement here?* (trace back to a need — orphan requirements should be deleted or justified), *Is every need covered?* (trace forward — a need with no requirement will not be designed for), and *What does a change affect?* (impact analysis).
+
+**Change control.** Once a specification is agreed it is placed under configuration control: changes are proposed, assessed for their impact on cost, schedule and other requirements, approved or rejected, and recorded with a new revision. Late changes are expensive (the reason is explained in [[design-process/design-process-overview]]), but suppressing necessary changes is worse: a team that discovers the specification is wrong and does not change it will deliver a product that passes verification and fails validation.
+
+::: quiz
+A requirement reads: "The pump shall be easy to maintain." What is the best way to improve it?
+- [ ] Add "and reliable" so that it covers both maintenance and failure.
+- [ ] Specify that the pump shall have a bolted casing.
+- [x] Replace it with measurable statements, e.g. "a trained technician shall replace the mechanical seal in under 30 min using only tools from the standard kit", and state how this will be verified.
+- [ ] Leave it as it is; maintainability is subjective and cannot be specified.
+::: solution
+"Easy" is unverifiable. The third option names a metric (time), a condition (trained technician, standard tools) and a target, and it can be verified by demonstration or test. The second option writes a solution into the requirement, and the first adds a second vague property to the same sentence.
+:::
+:::
+
+## Verifying a requirement by test: how many units? {#sec-success-run}
+
+Some requirements concern probability: "the latch shall survive $10^4$ operations with reliability at least $0.95$". A test can never prove such a statement with certainty, but it can support it at a stated **confidence**. The simplest plan tests $n$ units for the required duty and accepts the design if none fails.
+
+::: proposition Zero-failure (success-run) test {#prop-success-run}
+Suppose $n$ units, whose failures are independent and each of which survives the test duty with the same probability $R$, are tested and none fails. If the plan is to accept the design only when this happens, then demonstrating reliability at least $R_0$ with confidence $C$ requires
+$$
+n \ge \frac{\ln(1 - C)}{\ln R_0}.
+$$ {#eq-success-run}
+:::
+
+::: proof
+If the true reliability were only $R \le R_0$, the probability that all $n$ independent units survive is $R^n \le R_0^n$. Demonstration at confidence $C$ means that a design whose reliability is as poor as $R_0$ should pass the test with probability at most $1 - C$: $R_0^n \le 1 - C$. Taking logarithms, and remembering that $\ln R_0 < 0$ reverses the inequality when we divide, gives $n \ge \ln(1 - C)/\ln R_0$. The assumptions are that the test duty represents the field duty, that the test units represent production, and that failures are independent.
+:::
+
+::: example Sample size for a latch {#ex-success-run}
+How many latches must complete $10^4$ cycles without failure to demonstrate $R_0 = 0.95$ at $C = 90\,\%$ confidence? And for $R_0 = 0.99$?
+::: solution
+By [[#eq-success-run]]: $n \ge \ln(0.10)/\ln(0.95) = (-2.3026)/(-0.05129) = 44.9$, so $n = 45$ latches. For $R_0 = 0.99$: $n \ge -2.3026/(-0.01005) = 229.1$, so $230$ latches.
+Each extra "nine" of demonstrated reliability costs about ten times as many test units, since for $R_0$ close to 1, $\ln R_0 \approx -(1 - R_0)$ and $n \approx \ln\!\big(1/(1-C)\big)/(1 - R_0)$; with $C = 0.9$ this is $2.30/(1 - R_0)$, giving $46$ and $230$ — consistent with the exact values. This is why high reliabilities are demonstrated by analysis of accelerated tests and field data rather than by success runs ([[design-process/reliability-risk]]), and why the requirement should not ask for more nines than the need justifies.
+:::
 :::
 
 ::: widget plot
-title: The requirement funnel: from 200 needs to 50 requirements
-f: 200/(x+1); 100/(x+1); 50/(x+1)
-x: 0,10
-y: 0,200
-labels: raw customer statements; after clustering; after testability filter
-caption: Number of requirement statements against project week, showing the three filters. **The first filter (clustering) merges duplicate and overlapping statements: 200 raw statements become 100 unique requirements. The second filter (testability) eliminates statements that cannot be verified: 100 become 50. The third filter (priority) classifies the 50 into 15 must-haves, 20 should-haves, 10 could-haves, and 5 won't-haves.** **The 15 must-haves are the specification; the 20 should-haves are the design targets; the 10 could-haves are the wish list; the 5 won't-haves are the scope boundary. The engineer who does not write the won't-haves will spend the project's second half defending against scope creep.**
+f: ln(1 - C)/ln(x)
+x: 0.8, 0.99
+y: 0, 250
+sliders: C=0.9:0.5:0.99:0.01
+labels: n\ \text{(units, zero failures)}
+points: 0.95, 44.89; 0.99, 229.1
+caption: Number of units that must pass a zero-failure test, against the reliability $R_0$ to be demonstrated (horizontal), for confidence $C$ set by the slider. The marked points are the two cases of [[#ex-success-run]] at $C = 0.9$. Move the curve's right-hand end: as $R_0 \to 1$ the sample size blows up like $1/(1 - R_0)$. Raise $C$ from 0.9 to 0.99 and every sample size doubles, because $\ln(1 - C)$ goes from $-2.3$ to $-4.6$.
 :::
 
-## 2. Specification structure and the V-model traceability
-
-::: definition The product specification document {#def-spec-doc}
-A product specification (also called a **requirements specification**, **system requirements document**, or **customer requirements document**) is the contract between the customer and the design team. Its structure follows the V-model:
-
-$$
-\begin{array} { l l l }
-\textbf{Section} & \textbf{Content} & \textbf{Verification method} \\ \hline
-\text{1. Purpose and scope} & \text{What the product is and is not} & \text{Review} \\
-\text{2. Operating environment} & \text{Temperature, humidity, vibration, altitude, EMC} & \text{Environmental test} \\
-\text{3. Functional requirements} & \text{Verb-noun pairs with targets} & \text{Functional test} \\
-\text{4. Performance requirements} & \text{Accuracy, speed, efficiency, noise} & \text{Performance test} \\
-\text{5. Interface requirements} & \text{Mechanical, electrical, data, fluid} & \text{Interface test} \\
-\text{6. Constraints} & \text{Mass, volume, cost, material, process} & \text{Inspection, audit} \\
-\text{7. Safety and regulatory} & \text{Standards, directives, hazard analysis} & \text{Compliance test, audit} \\
-\text{8. Reliability and maintainability} & \text{MTBF, B10, MTTR, spares} & \text{Life test, field data} \\
-\text{9. Verification and acceptance} & \text{Test plan, acceptance criteria} & \text{The test itself} \\
-\text{10. Assumptions and dependencies} & \text{What the design takes for granted} & \text{Review} \\
-\end{array}
-$$
-
-**Section 10 is the most important and the most often omitted.** Every design rests on assumptions: the supply voltage is 230 V ± 10 %, the ambient temperature is 20 °C, the operator is right-handed, the maintenance interval is 1 000 hours, the material is available from two suppliers. If the assumptions are not written down, they cannot be checked, and the check is the difference between engineering and hope. **The assumption that turns out to be wrong is the one that was not written down.**
+::: application Writing the specification sheet
+The final product of this chapter is a table — one row per requirement, with an identifier, the requirement text, the need or constraint it traces to, its metric and unit, marginal and ideal values (or a single limit for a constraint), its priority, and its verification method. Such a sheet, reviewed and signed off by the project, is what [[design-process/concept-generation]] starts from and what every later design review checks against. Because it is a controlled document, the revision letter at its head matters as much as its contents.
 :::
 
-::: definition Traceability: the requirement-test matrix {#def-traceability}
-The **traceability matrix** links every requirement to the test that verifies it, and every test to the requirement it verifies. The matrix is the backbone of the V-model:
-
-$$
-\begin{array} { l c c c c }
-\text{Requirement} & \text{Test ID} & \text{Test method} & \text{Pass criterion} & \text{Status} \\ \hline
-\text{R-001: Flow} \geq 20 \text{ L/min} & \text{T-001} & \text{Flow bench, 15W-40, 5 bar} & \geq 20 \text{ L/min} & \text{Pass} \\
-\text{R-002: Power} \leq 1.5 \text{ kW} & \text{T-002} & \text{Wattmeter at rated flow} & \leq 1.5 \text{ kW} & \text{Pass} \\
-\text{R-003: Temp range} & \text{T-003} & \text{Thermal chamber, -10 to +50 °C} & \text{No failure} & \text{Pending} \\
-\end{array}
-$$
-
-**The matrix is complete when every requirement has at least one test and every test has at least one requirement. An orphan requirement (no test) is a requirement that will not be verified. An orphan test (no requirement) is a test that will be forgotten when the requirement changes.** The traceability matrix is the first document the auditor asks for, and the first document the project manager should check when the schedule slips: if the test is not scheduled, the requirement is not verified, and the product is not ready.
+::: history
+Systematic requirement lists have a long history in German design methodology, where the *Anforderungsliste* (requirements list) is the first deliverable of the method set out by Gerhard Pahl and Wolfgang Beitz in *Konstruktionslehre* (1977). Quality function deployment grew out of Japanese quality-control practice: a process-assurance table used at Bridgestone Tire in the mid-1960s and the "quality tables" developed at Mitsubishi Heavy Industries' Kobe shipyard around 1972 were systematised by Yoji Akao and Shigeru Mizuno, and John Hauser and Don Clausing's 1988 *Harvard Business Review* article "The House of Quality" brought the method to a wide Western audience. Noriaki Kano, Nobuhiko Seraku, Fumio Takahashi and Shinichi Tsuji published "Attractive quality and must-be quality" in the journal of the Japanese Society for Quality Control in 1984. Abbie Griffin and John Hauser's 1993 paper "The Voice of the Customer" studied how needs are best gathered, structured and prioritised, and Karl Ulrich and Steven Eppinger's textbook *Product Design and Development* (first edition 1995) made the need–metric–target-value sequence used in this chapter standard in engineering courses.
 :::
 
-::: definition Verification vs validation: the right product vs the right way {#def-verif-valid}
-**Verification** asks "did we build the product right?" — does the product meet the specification? **Validation** asks "did we build the right product?" — does the product meet the customer's need? The distinction is critical, because a product can be perfectly verified (every requirement met, every test passed) and completely wrong (the customer did not want what the specification describes).
-
-$$
-\begin{array} { l l l }
-& \textbf{Verification} & \textbf{Validation} \\ \hline
-\text{Question} & \text{Did we build it right?} & \text{Did we build the right thing?} \\
-\text{Against} & \text{The specification} & \text{The customer's need} \\
-\text{Method} & \text{Test, inspection, analysis} & \text{Prototype, user trial, field trial} \\
-\text{When} & \text{After design, during build} & \text{Before design, after prototype} \\
-\text{Failure mode} & \text{The product does not meet the spec} & \text{The spec does not meet the need} \\
-\end{array}
-$$
-
-**The most expensive failure in engineering is a product that passes every verification test and fails validation.** The Ford Edsel, the Segway, and Google Glass all passed their verification tests and failed their validation. **The validation step is: show the prototype to the customer, let them use it, and watch their face. If the face says "well, actually, what I meant was…," the specification is wrong, and it is cheaper to fix the specification now than to build the wrong product.**
-:::
-
-::: example Specification for a laboratory centrifuge {#ex-spec-centrifuge level=3 check="8"}
-A laboratory centrifuge has the following functional requirements. How many are functional, how many are constraints, and how many are safety?
-
-| ID | Requirement | Type |
-|----|-------------|------|
-| R-01 | Spin a 24 × 1.5 mL rotor to 13 000 rpm ± 50 rpm | Functional |
-| R-02 | Achieve 17 000 × g RCF at 13 000 rpm | Performance |
-| R-03 | Run for 30 min continuously at maximum speed without the motor exceeding 80 °C | Performance |
-| R-04 | Mass < 12 kg | Constraint |
-| R-05 | Noise < 54 dB(A) at 1 m | Constraint |
-| R-06 | Detect imbalance > 0.5 g·mm and stop within 3 s | Safety |
-| R-07 | Lid shall not open while the rotor is above 200 rpm | Safety |
-| R-08 | Comply with IEC 61010-2-020 | Regulatory |
-
-**Functional: 1 (R-01). Performance: 2 (R-02, R-03). Constraint: 2 (R-04, R-05). Safety: 2 (R-06, R-07). Regulatory: 1 (R-08). Total: 8 requirements.** **The safety requirements (R-06, R-07) are the ones that will be tested first, because they are the ones that will be audited first, and the ones that will be the subject of the lawsuit if they fail.**
-:::
-
-## 3. Quality Function Deployment in practice
-
-::: definition The House of Quality: construction and interpretation {#def-hoq}
-The House of Quality is constructed in six steps:
-
-1. **List the customer attributes (CAs)** with importance weights (1–5, from customer interviews). The CAs are the "voice of the customer": "powerful," "light," "cheap," "quiet," "reliable," "easy to maintain."
-2. **List the engineering characteristics (ECs)** that the design team controls: torque, mass, cost, noise, MTBF, number of parts. The ECs are the "voice of the engineer."
-3. **Fill the relationship matrix**: for each CA-EC pair, assign 9 (strong), 3 (medium), 1 (weak), or 0 (none). The relationship is "does this EC affect this CA?"
-4. **Fill the technical correlation matrix (the roof)**: for each EC-EC pair, assign + (positive correlation, they move together) or − (negative correlation, one improves as the other worsens). The roof identifies the trade-offs.
-5. **Calculate the absolute importance** of each EC: $I _ { j } = \sum _ { i } w _ { i } \, r _ { i j }$ , where $w _ { i }$ is the CA importance weight and $r _ { i j }$ is the relationship strength.
-6. **Set the target values** for each EC: the number the design must achieve. The targets are the specification.
-
-**The absolute importance ranking tells the designer where to focus: the EC with the highest importance is the one that most affects the customer's satisfaction, and it is the one that should drive the design. If the EC with the highest importance is "cost" and the EC with the lowest importance is "noise," the designer knows that the customer will trade noise for cost, and the design review should focus on the cost drivers.**
-:::
-
-::: example QFD for an electric bicycle {#ex-qfd-bike level=3 check="135"}
-An electric bicycle has three customer attributes and four engineering characteristics:
-
-| | Torque (Nm) | Mass (kg) | Battery (Wh) | Cost (£) |
-|---|---|---|---|---|
-| "Powerful" (w=5) | 9 | 3 | 9 | 3 |
-| "Light" (w=4) | 1 | 9 | 9 | 1 |
-| "Affordable" (w=3) | 1 | 1 | 3 | 9 |
-
-Calculate the absolute importance of each EC.
-
-$$
-I _ { \text{torque} } \; = \; 5 \times 9 + 4 \times 1 + 3 \times 1 \; = \; 4 5 + 4 + 3 \; = \; 5 2
-$$
-
-$$
-I _ { \text{mass} } \; = \; 5 \times 3 + 4 \times 9 + 3 \times 1 \; = \; 1 5 + 3 6 + 3 \; = \; 5 4
-$$
-
-$$
-I _ { \text{battery} } \; = \; 5 \times 9 + 4 \times 9 + 3 \times 3 \; = \; 4 5 + 3 6 + 9 \; = \; { \bf 9 0 }
-$$
-
-$$
-I _ { \text{cost} } \; = \; 5 \times 3 + 4 \times 1 + 3 \times 9 \; = \; 1 5 + 4 + 2 7 \; = \; 4 6
-$$
-
-**The battery capacity has the highest importance (90), because it is strongly related to both "powerful" and "light" (a bigger battery gives more range, which is what "powerful" means to a cyclist, and a bigger battery is heavier, which conflicts with "light"). The roof of the house shows the conflict: battery capacity is positively correlated with torque (more battery = more sustained power) and negatively correlated with mass (more battery = more weight). The QFD tells the designer: the battery is the critical decision, and the trade-off is range versus weight.**
-:::
-
-::: widget plot
-title: The QFD importance ranking: where to focus the design
-f: 52*x; 54*x; 90*x; 46*x
-x: 0,1
-y: 0,100
-labels: Torque (52); Mass (54); Battery (90); Cost (46)
-caption: Absolute importance of each engineering characteristic from the QFD matrix, normalised to the maximum. **The battery capacity dominates (90), followed by mass (54), torque (52), and cost (46). The ranking tells the designer where the design effort should go: the battery selection is the most consequential decision, and the cost is the least consequential — the customer will pay more for a bigger battery and a lighter frame.** **The ranking is not a prescription; it is a prioritisation. The designer who optimises the cost and ignores the battery is optimising the wrong variable.**
-:::
-
-## 4. Requirement engineering tools and techniques
-
-::: definition Stakeholder analysis and the context diagram {#def-stakeholders}
-A **stakeholder** is anyone who affects or is affected by the product: the customer, the user, the manufacturer, the maintainer, the regulator, the recycler, the neighbour, the competitor. The **stakeholder analysis** identifies the stakeholders, their needs, their influence, and their attitude (supportive, neutral, hostile).
-
-The **context diagram** (also called a **system context diagram** or **Level-0 DFD**) is a block diagram that shows the system as a single box and the external entities (stakeholders, other systems, the environment) as surrounding boxes, with the flows (material, energy, information) between them. The context diagram is the first model of the system, and it defines the system boundary: what is inside the system (the engineer's responsibility) and what is outside (the interface requirement).
-
-**The context diagram is the tool that prevents the "missing interface" failure.** A pump designed without a context diagram might not account for the inlet pressure from the customer's supply, the back-pressure from the customer's piping, the electrical supply quality, the ambient temperature, the mounting footprint, or the maintenance access. The context diagram forces the engineer to enumerate the interfaces before the design starts, and the interface requirements are written before the functional requirements.
-:::
-
-::: definition Requirement elicitation techniques {#def-elicitation}
-The requirements are not written; they are **elicited** — drawn out of the stakeholders by structured techniques:
-
-$$
-\begin{array} { l l l l }
-\textbf{Technique} & \textbf{Best for} & \textbf{Cost} & \textbf{Bias} \\ \hline
-\text{Interviews (1-on-1)} & \text{Expert users, regulators} & \text{High} & \text{Social desirability} \\
-\text{Focus groups} & \text{Consumer products, new markets} & \text{Medium} & \text{Groupthink, dominant voice} \\
-\text{Observation (ethnography)} & \text{Unarticulated needs, workarounds} & \text{High} & \text{Observer effect} \\
-\text{Surveys} & \text{Quantifying preferences at scale} & \text{Low} & \text{Response bias, poor response rate} \\
-\text{Lead-user analysis} & \text{Innovative products, extreme users} & \text{Medium} & \text{Not representative} \\
-\text{Benchmarking} & \text{Competitive products, best-in-class} & \text{Low} & \text{Incremental, misses discontinuities} \\
-\text{TRIZ contradiction analysis} & \text{Resolving engineering trade-offs} & \text{Medium} & \text{Requires training} \\
-\text{Jobs-to-be-done} & \text{Understanding the underlying need} & \text{Medium} & \text{Abstract, hard to quantify} \\
-\end{array}
-$$
-
-**The most powerful technique is observation, because the user cannot articulate what they work around.** A nurse who wraps a bandage with her left hand because the dispenser is on the right is telling you the dispenser is in the wrong place, but she will never say so, because she has adapted. **The engineer who watches the nurse is designing for the need; the engineer who surveys the nurse is designing for the answer.**
-:::
-
-::: example Stakeholder analysis for a hospital bed {#ex-stakeholder level=3 check="6"}
-A hospital bed has the following stakeholders: patient, nurse, doctor, cleaning staff, biomedical engineer, hospital procurement, infection-control officer, manufacturer, regulator (MHRA/FDA), recycling facility. How many are internal (directly involved in using or maintaining the product) and how many are external?
-
-**Internal (directly involved in using or maintaining): patient, nurse, doctor, cleaning staff, biomedical engineer = 5.** **External (indirectly involved): hospital procurement, infection-control officer, manufacturer, regulator, recycling facility = 5.** **Total: 10 stakeholders.** **The infection-control officer is the stakeholder who will require that the bed has no horizontal surfaces where bacteria can settle, no crevices that cannot be cleaned, and a surface that withstands 5 000 cycles of quaternary-ammonium disinfectant. The engineer who does not interview the infection-control officer will design a bed that the hospital cannot pass its own audit on.**
+::: summary
+- Needs are solution-free statements from stakeholders; requirements restate them as "shall" statements; a specification attaches to each a metric, a target value (or marginal and ideal values) and a verification method.
+- Gather needs from interviews, observation of use, lead users, records and every stakeholder, not just the buyer.
+- Good requirements are necessary, unambiguous, singular, feasible and verifiable; banish words like *easy* and *adequate*, and do not write solutions into requirements without recording why.
+- Verification methods: inspection, analysis, demonstration, test. Verification checks the product against the specification; validation checks it against the users' needs.
+- The Kano model separates must-be, one-dimensional, attractive, indifferent and reverse attributes; set thresholds for must-be attributes and trade one-dimensional ones against cost.
+- QFD technical importance $t_j = \sum_i w_i r_{ij}$ with $r_{ij}\in\{0,1,3,9\}$ ranks metrics; the roof exposes conflicts between them.
+- A zero-failure test of $n \ge \ln(1-C)/\ln R_0$ units demonstrates reliability $R_0$ at confidence $C$; each additional nine costs about ten times as many units.
+- Prioritise (MoSCoW), trace every requirement to a need and to its verification, and control changes.
 :::
 
 ## Exercises
 
-::: exercise Write a testable requirement {#ex-testable-req level=2 check="4"}
-Rewrite the following vague statements as testable requirements: (a) "The motor shall be powerful." (b) "The enclosure shall be waterproof." (c) "The software shall be fast." (d) "The product shall be safe." How many measurable targets are needed?
-
+::: exercise Rewrite the need {#exr-rewrite level=1}
+A user of a garden shredder says: "It needs a stronger motor because it keeps jamming on thick branches." Write a solution-free need statement and one requirement with a metric, a target and a verification method.
 ::: solution
-(a) "The motor shall deliver 12 N·m continuous torque at 2 000 rpm ± 5 % at 40 °C ambient." (b) "The enclosure shall maintain IP67 (1 m for 30 min per IEC 60529) with no water ingress." (c) "The software shall respond to a button press within 200 ms at 95th percentile, measured over 1 000 trials." (d) "The product shall comply with IEC 62368-1 (audio/video, IT) and shall not present a hazard exceeding ES1/PS1 under single-fault conditions."
-
-**Each requirement has a verb, a noun, a number, a unit, a tolerance, a condition, and a test standard. The number of measurable targets is 4 (one per requirement).**
+The user has proposed a solution (a stronger motor). The underlying need is something like "the shredder processes the branches typically produced when pruning a garden without jamming". A requirement: "The shredder shall process freshly cut hardwood branches up to $40\,\mathrm{mm}$ diameter at a feed rate of at least $0.5\,\mathrm{m/min}$ for $30\,\mathrm{min}$ without stalling or jamming", verified by test on a defined batch of branches. The cure might be a stronger motor, but it might equally be a different cutter geometry, a slower cutting speed with more torque, or an automatic reverse — the need statement keeps all of these open.
 :::
 :::
 
-::: exercise QFD importance calculation {#ex-qfd-calc level=3 check="78"}
-A product has two customer attributes ("durable" w=5, "light" w=3) and three engineering characteristics (material thickness, mass, cost). The relationship matrix is:
-
-| | Thickness | Mass | Cost |
-|---|---|---|---|
-| Durable (5) | 9 | 3 | 3 |
-| Light (3) | 3 | 9 | 1 |
-
-Calculate the absolute importance of each EC.
-
+::: exercise A QFD column {#exr-qfd-column level=1 check="54"}
+Three needs with weights 5, 3 and 2 have relationships 9, 1 and 3 with a metric. What is the metric's technical importance? (Enter $t_j$.)
 ::: solution
-$$
-I _ { \text{thickness} } \; = \; 5 \times 9 + 3 \times 3 \; = \; 4 5 + 9 \; = \; 5 4
-$$
-
-$$
-I _ { \text{mass} } \; = \; 5 \times 3 + 3 \times 9 \; = \; 1 5 + 2 7 \; = \; 4 2
-$$
-
-$$
-I _ { \text{cost} } \; = \; 5 \times 3 + 3 \times 1 \; = \; 1 5 + 3 \; = \; { \bf 1 8 }
-$$
-
-**Thickness dominates (54), because "durable" is the most important customer attribute (w=5) and thickness is strongly related to durability (r=9). The roof of the house shows the conflict: thickness is positively correlated with mass (thicker = heavier), so the designer must trade durability against weight. Cost is the least important (18), so the designer has freedom to use a more expensive material if it improves the durability-to-mass ratio.**
+$t_j = 5\times9 + 3\times1 + 2\times3 = 45 + 3 + 6 = 54$.
 :::
 :::
 
-::: exercise Traceability matrix completeness {#ex-trace level=3 check="5"}
-A specification has 12 requirements and 8 tests. The traceability matrix shows that 3 requirements have no test and 1 test has no requirement. Is the matrix complete? How many requirement-test links are needed for completeness?
-
+::: exercise Units for a zero-failure test {#exr-success-run level=1 check="22"}
+How many units must pass a zero-failure test to demonstrate a reliability of $0.90$ at $90\,\%$ confidence? (Enter the whole number of units.)
 ::: solution
-**The matrix is not complete.** For completeness: every requirement must have at least one test (12 requirements → at least 12 links), and every test must have at least one requirement (8 tests → at least 8 links). The minimum number of links is max(12, 8) = 12 (if each test covers at least one requirement, and some tests cover multiple requirements). **The 3 orphan requirements must be assigned tests, and the 1 orphan test must be linked to a requirement or deleted.**
+$n \ge \ln(0.10)/\ln(0.90) = -2.3026/(-0.10536) = 21.85$, so $n = 22$.
 :::
 :::
 
-::: exercise Verification vs validation {#ex-verif-valid2 level=2 check="2"}
-A product passes all 50 verification tests but the customer rejects it in the field trial because "it doesn't do what I need." Is this a verification failure or a validation failure? How many validation steps were skipped?
-
+::: exercise Relative importance {#exr-relative level=2 check="45"}
+A House of Quality has three metrics whose technical importances are $54$, $36$ and $30$. What is the relative importance of the first metric? (Enter it in per cent.)
 ::: solution
-**This is a validation failure.** The verification tests confirmed that the product meets the specification; the field trial revealed that the specification does not meet the customer's need. **At least 2 validation steps were skipped: (1) the concept validation (show the concept to the customer before designing), and (2) the prototype validation (let the customer use a prototype before the design freeze).** The cost of skipping validation is the cost of building a product that passes every test and fails every user.
+Total $54 + 36 + 30 = 120$; $54/120 = 0.45 = 45\,\%$.
 :::
 :::
 
-::: exercise Requirement prioritisation {#ex-prioritise level=3 check="15"}
-A product has 40 requirements: 15 must-have, 12 should-have, 8 could-have, 5 won't-have. The design team has capacity to implement 30 requirements. Which 10 should be de-scoped, and what is the minimum number of requirements that must be implemented?
-
+::: exercise A run-time requirement {#exr-runtime level=2 check="150"}
+A cordless angle grinder must run for $6\,\mathrm{min}$ of cutting at an average shaft power of $1.2\,\mathrm{kW}$ on one charge. The efficiency from battery to shaft is $80\,\%$, and for this estimate all of the rated energy may be used. What is the minimum rated pack energy? Could an $18\,\mathrm V$, $5\,\mathrm{Ah}$ pack meet the requirement? (Enter the energy in Wh.)
 ::: solution
-**De-scope the 8 could-haves and 2 should-haves (the lowest-priority should-haves). The minimum number of requirements that must be implemented is 15 (the must-haves).** The 12 should-haves are negotiable with management approval; the 8 could-haves are the first candidates for de-scope; the 5 won't-haves are already excluded. **The engineer who cannot de-scope a could-have is not managing the project — they are gold-plating it.**
+Shaft energy $1.2\,\mathrm{kW}\times 0.1\,\mathrm h = 0.12\,\mathrm{kWh} = 120\,\mathrm{Wh}$; battery energy $120/0.8 = 150\,\mathrm{Wh}$. An $18\,\mathrm V$, $5\,\mathrm{Ah}$ pack stores nominally $18\times5 = 90\,\mathrm{Wh}$, only $60\,\%$ of what is needed — and less in practice, because packs deliver less than their rating at the high currents a grinder draws (about $1.5\,\mathrm{kW}/18\,\mathrm V \approx 83\,\mathrm A$). Either the requirement is renegotiated (is $6\,\mathrm{min}$ of continuous cutting a real need, or is it $6\,\mathrm{min}$ spread over a job with pauses?), or the product needs two packs or a higher-voltage pack.
 :::
 :::
 
-::: exercise Context diagram interfaces {#ex-context-interfaces level=3 check="7"}
-A CNC machining centre has the following external entities: electrical supply, compressed air, coolant supply, chip conveyor, network (Ethernet), operator, maintenance technician. How many interface requirements are needed?
-
+::: exercise Classify verification methods {#exr-methods level=2}
+For a domestic pressure cooker, give the verification method you would use for each requirement and justify it: (a) the lid shall not be openable while the internal gauge pressure exceeds $5\,\mathrm{kPa}$; (b) the vessel shall withstand a hydrostatic test at a stated multiple of its working pressure; (c) the base shall be flat to within $0.3\,\mathrm{mm}$; (d) the instructions shall be supplied in the language of the country of sale; (e) the wall stresses at working pressure shall not exceed the allowable stress of the applicable standard.
 ::: solution
-**7 interface requirements**, one per external entity. Each interface requirement is bilateral: the machine requires 400 V 3-phase 63 A from the supply; the supply must provide 400 V ± 10 % with < 5 % THD. The machine requires 6 bar compressed air; the supply must provide 6 ± 0.5 bar with < 3 μm particulate. **The interface requirement that is most often forgotten is the network: the machine requires a 100 Mbps Ethernet connection with a static IP; the customer's IT department must provide it. If the IT department is not a stakeholder, the machine arrives and cannot be networked, and the commissioning is delayed by 3 weeks.**
+(a) Test: pressurise the cooker and attempt to open it at a range of pressures, recording the pressure at which the interlock releases; this is safety-critical, so a demonstration without measurement would not be enough. (b) Test, by definition — a hydrostatic proof test (done with water so that a failure releases little stored energy, and only by trained staff behind guarding). (c) Inspection: measure flatness with a straightedge and feeler gauges or a coordinate measuring machine. (d) Inspection of the documentation. (e) Analysis, by the method of the standard (thin-walled pressure-vessel formulas, see [[mechanics-of-materials]]), backed by the test in (b). Note that pressure equipment is designed and certified to the applicable standard and regulations; the exercise only illustrates how methods are assigned.
 :::
 :::
 
-::: exercise Derivation: the SMART criteria as a completeness check {#ex-derive-smart level=4 check="5"}
-Show that the SMART criteria (Specific, Measurable, Achievable, Relevant, Testable) are a completeness check for a requirement by demonstrating that each criterion eliminates a class of defective requirements. Give an example of a requirement that fails each criterion.
-
+::: exercise Allowing one failure {#exr-one-failure level=3 check="38"}
+A zero-failure plan is harsh: a single unlucky failure condemns the design. Generalise [[#prop-success-run]] to a plan that accepts the design if at most one of $n$ units fails. Show that $n$ must satisfy $R_0^n + nR_0^{n-1}(1 - R_0) \le 1 - C$, and find the smallest $n$ for $R_0 = 0.90$, $C = 0.90$. (Enter the whole number of units.)
 ::: solution
-- **Not Specific**: "The pump shall be fast." (Fast in what sense? Flow rate? Response time? RPM?) → Ambiguous.
-- **Not Measurable**: "The structure shall be stiff." (Stiff to what tolerance? Measured how?) → No number, no unit.
-- **Not Achievable**: "The bracket shall weigh 5 g and support 10 kN." (No material can do this at the given geometry.) → Physically impossible.
-- **Not Relevant**: "The bracket shall be painted blue." (The customer did not ask for a colour.) → Gold-plating.
-- **Not Testable**: "The coating shall be durable." (Durable against what? For how long? Measured by what method?) → No verification method.
-
-**Each criterion eliminates a distinct class of defect, and a requirement that passes all five is a requirement that can be designed to, tested, and accepted. The five criteria are necessary and jointly sufficient for a well-formed requirement.** $\blacksquare$
+With independent units of reliability $R$, the number of failures is binomial with parameters $n$ and $1 - R$. The plan accepts when there are $0$ or $1$ failures, with probability $P_{\text{acc}}(R) = R^n + nR^{n-1}(1 - R)$. This is increasing in $R$ (more reliable designs pass more often), so the worst case for $R \le R_0$ is $R = R_0$, and the confidence requirement is $P_{\text{acc}}(R_0) \le 1 - C$. Trying values: $n = 37$: $0.9^{37} + 37\times0.9^{36}\times0.1 = 0.0203 + 0.0834 = 0.1037 > 0.1$; $n = 38$: $0.0183 + 0.0770 = 0.0953 \le 0.1$. So $n = 38$ — against $22$ for the zero-failure plan. The extra 16 units buy tolerance to one failure; the plan also gives a good design a better chance of passing (for a true $R = 0.97$ the probability of passing is $0.68$ with one failure allowed out of 38, against $0.51$ for zero failures out of 22; for $R = 0.98$ it is $0.82$ against $0.64$).
 :::
 :::
 
-::: exercise Derivation: QFD importance as a weighted sum {#ex-derive-qfd level=4 check="3"}
-The absolute importance of engineering characteristic $j$ is $I _ { j } = \sum _ { i } w _ { i } \, r _ { i j }$ . Show that if all customer weights are equal ($w _ { i } = 1$) and all relationships are binary ($r _ { i j } \in \{ 0 , 1 \}$), the importance reduces to the number of customer attributes that EC $j$ affects. Evaluate for an EC that affects 3 of 5 attributes.
-
+::: exercise A specification for a stair-climbing trolley {#exr-design level=3}
+A charity asks for a hand trolley that lets one volunteer deliver $40\,\mathrm{kg}$ food parcels up the stairs of blocks of flats without lifts. (a) List at least eight needs from at least three different stakeholders. (b) Turn four of them into requirements with metrics, marginal and ideal values and verification methods, including at least one must-be safety requirement. (c) Identify one pair of metrics likely to conflict and say how you would decide the trade-off.
 ::: solution
-With $w _ { i } = 1$ and $r _ { i j } \in \{ 0 , 1 \}$:
-
-$$
-I _ { j } \; = \; \sum _ { i = 1 } ^ { 5 } 1 \times r _ { i j } \; = \; \sum _ { i = 1 } ^ { 5 } r _ { i j } \; = \; \text{number of CAs that EC } j \text{ affects}
-$$
-
-For an EC that affects 3 of 5 attributes: $I _ { j } = 3$. **The importance is the count of customer needs that the engineering characteristic addresses. An EC that addresses all 5 needs has importance 5; an EC that addresses none has importance 0 and should be deleted from the specification.** $\blacksquare$
+One possible answer. (a) Volunteer: climbs stairs without lifting the load; stable — cannot run away down the stairs; light enough to carry to a car boot; folds to fit a small car; usable by people of different heights and strengths. Resident: does not damage stair nosings or carpet; quiet in corridors at night. Charity: affordable; repairable by a local workshop. Building manager: fits standard stairs and landings.
+(b) *Hand force*: the peak force at the handle when climbing a standard stair with $40\,\mathrm{kg}$ shall not exceed $150\,\mathrm N$ (marginal) / $80\,\mathrm N$ (ideal); test with a load cell in the handle on a test staircase. *Run-away* (must-be): the loaded trolley shall not descend a step unless the operator acts on a control, for any handle angle; test, including failure of the operator's grip. *Mass*: $\le 15\,\mathrm{kg}$ marginal, $\le 9\,\mathrm{kg}$ ideal; inspection by weighing. *Stair compatibility*: climbs stairs with rises from $150$ to $220\,\mathrm{mm}$ and goings from $220$ to $300\,\mathrm{mm}$; demonstration on adjustable test stairs, with measurement of any slip.
+(c) Low hand force calls for a mechanism (a tri-star wheel cluster, tracks or a powered climber), which adds mass, conflicting with the mass target. Decide by weighting the needs from the volunteers' interviews, building quick prototypes of two or three concepts and measuring both metrics ([[design-process/concept-selection]]); the run-away requirement is a constraint that every concept must meet regardless of the trade-off.
 :::
-:::
-
-::: quiz Requirements {#quiz-req}
-Which of the following is a well-formed requirement?
-
-- [ ] "The housing shall be made of aluminium."
-- [x] "The housing shall dissipate 50 W at 40 °C ambient without exceeding 85 °C."
-- [ ] "The housing shall be lightweight and strong."
-- [ ] "The housing shall be manufactured using a cost-effective process."
-
-::: solution
-**"The housing shall dissipate 50 W at 40 °C ambient without exceeding 85 °C."** It is specific (dissipate 50 W), measurable (85 °C limit), achievable (physically possible), relevant (traces to the thermal-management need), and testable (run at 50 W, measure the temperature). The other three are either solutions (aluminium), vague (lightweight and strong), or unmeasurable (cost-effective).
-:::
-:::
-
-::: quiz Verification and validation {#quiz-vv}
-A product passes all verification tests but fails in the field because the customer's actual use case was not in the specification. This is a failure of:
-
-- [ ] Verification, because the tests should have caught it
-- [x] Validation, because the specification did not capture the customer's need
-- [ ] Quality control, because the product was defective
-- [ ] Project management, because the schedule was too tight
-
-::: solution
-**Validation.** Verification confirms that the product meets the specification; validation confirms that the specification meets the customer's need. If the specification is wrong, the product will pass every verification test and fail in the field. The fix is not better tests; the fix is better requirements elicitation and a validation step before the design freeze.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[design-process/design-process-overview]]** — The requirements are the input to the Pahl & Beitz "clarify the task" phase and the left side of the V-model.
-- **[[design-process/concept-generation]]** — The functional requirements are decomposed into sub-functions, and each sub-function is solved by a principle.
-- **[[design-process/concept-selection]]** — The requirement priorities drive the concept selection matrix: the must-haves are the screening criteria, the should-haves are the scoring criteria.
-- **[[design-process/embodiment-design]]** — The specification's interface requirements determine the layout and the mounting geometry.
-- **[[design-process/reliability-risk]]** — The reliability requirements (MTBF, B10) drive the component selection, the safety factor, and the maintenance plan.
-- **[[design-process/sustainability]]** — The environmental requirements (operating temperature, disposal, recycling) are constraints that the design must satisfy.
-- **[[manufacturing/process-selection]]** — The cost constraint and the tolerance requirement determine the process selection.
-- **[[engineering-graphics/tolerances-fits]]** — The performance requirements (accuracy, clearance) become the tolerance specifications on the drawing.
-
-::: history Requirements engineering: from the oral brief to the model-based specification {#history-requirements}
-**1940s** — The **US military** writes the first formal requirements documents for weapons systems: the **Request for Proposal (RFP)** and the **MIL-SPEC**. The requirements are written in natural language, are often contradictory, and are verified by a demonstration. **The MIL-SPEC is the ancestor of every requirements document, and its failure modes (ambiguity, incompleteness, inconsistency) are the failure modes that requirements engineering was invented to fix.**
-
-**1966** — **Yoji Akao** and **Shigeru Mizuno** develop **Quality Function Deployment** at Mitsubishi Heavy Industries in Kobe, Japan. The House of Quality translates the customer's voice into engineering characteristics, and the method is adopted by Toyota, Canon, and Sony. **QFD is the first method to make the customer's voice quantitative, and it is the reason Japanese products in the 1980s were better at meeting customer needs than Western products.**
-
-**1979** — The **IEEE** publishes the first standard for software requirements specifications (IEEE Std 830-1984, drafted 1979). The standard defines the structure of a requirements document: purpose, scope, definitions, requirements, appendices. **The IEEE standard is the first attempt to standardise the requirements document, and its structure is still the template for every requirements document in every industry.**
-
-**1987** — **Thomas Gilb** publishes *Principles of Software Management and Engineering*, introducing the **Planguage** — a formal specification language that requires every requirement to have a measurable target, a verification method, and a tracking mechanism. **Gilb's insight is that a requirement without a number is not a requirement; it is a wish. The Planguage is the ancestor of the SMART criteria.**
-
-**1990s** — The **V-model** is adopted by the German automotive industry (VDI 3697) and the European space industry (ECSS-E-ST-10-02C). The V-model pairs every decomposition step with a verification step, and the test plan is written before the design. **The V-model is the structural answer to the question "how do you know you built the right thing?" and its answer is "you write the test before you write the design."**
-
-**2006** — The **INCOSE Systems Engineering Handbook** (4th ed.) codifies the requirements engineering process: elicit, analyse, specify, verify, manage. The handbook defines the requirement attributes (unique ID, text, type, priority, source, verification method, status) and the traceability requirements. **The INCOSE handbook is the reference for every systems-engineering programme in aerospace, defence, and automotive.**
-
-**2010s** — **Model-Based Systems Engineering (MBSE)** replaces the text-based requirements document with a model-based one: the requirements are elements in a SysML model, linked to the architecture, the interfaces, and the verification cases. Tools: IBM Rational DOORS, Cameo Systems Modeler, Polarion. **MBSE is the promise that the requirements can be verified automatically: if the model is consistent, the product is consistent, and the change propagates from the requirement to the test without a human in the loop.**
-:::
-
-::: summary Needs and requirements {#summary-requirements}
-- **A requirement is a promise to the customer, and a specification is the set of promises that defines the product.** The cost of a wrong requirement is not the cost of fixing the requirement — it is the cost of the product built to the wrong requirement.
-- **Write every requirement as a verb-noun pair with a measurable target, a condition, and a test method.** "The system shall [verb] [noun] [under conditions] [to a target]." If you cannot write the test, you have not written a requirement.
-- **The SMART criteria (Specific, Measurable, Achievable, Relevant, Testable) are a completeness check.** A requirement that fails any of the five is a defective requirement, and the defect will be found at the most expensive possible time.
-- **Classify every requirement by type (functional, performance, constraint, interface, environmental, safety, regulatory, reliability) and by priority (must, should, could, won't).** The priority is a decision rule for the trade-off, and the "won't have" category is the scope boundary that prevents scope creep.
-- **Quality Function Deployment translates the customer's voice into engineering characteristics.** The House of Quality makes the trade-offs explicit and the importance ranking tells the designer where to focus.
-- **The traceability matrix links every requirement to a test and every test to a requirement.** An orphan requirement is a requirement that will not be verified; an orphan test is a test that will be forgotten.
-- **Verification asks "did we build it right?" Validation asks "did we build the right thing?"** A product can pass every verification test and fail validation. The validation step is: show the prototype to the customer and watch their face.
-- **The context diagram defines the system boundary and enumerates the interfaces.** Every interface is a requirement, and every interface requirement is bilateral. The missing interface is the most common cause of integration failure.
-- **The stakeholder analysis identifies everyone who affects or is affected by the product.** The stakeholder who is not interviewed is the stakeholder whose requirement is not written, and whose objection will appear at the design review or the audit.
-- **The requirements are frozen at Gate 1, and any change after that goes through a change-control board.** The change-control board assesses the cost, the schedule impact, and the risk, and the decision is recorded. The requirement that changes without a change order is the requirement that kills the project.
 :::
 
 ## Further reading
 
-- **Gerd Ulrich, Karl Eppinger and Steven Eppinger (2019)** — *Product Design and Development*, 7th ed. McGraw-Hill. Chapters 2–4: customer needs, QFD, and the product specification.
-- **Yoji Akao and Shigeru Mizuno (1994)** — *QFD: The Customer-Driven Approach to Quality Planning and Deployment*. Productivity Press. The original QFD text by its inventors.
-- **INCOSE (2023)** — *Systems Engineering Handbook*, 5th ed. Wiley. The reference for requirements engineering, the V-model, and the traceability matrix.
-- **Karl Wiegers and Joy Beatty (2013)** — *Software Requirements*, 3rd ed. Microsoft Press. The requirements engineering discipline from the software side: elicitation, analysis, specification, verification, management.
-- **Donella H. Meadows (2008)** — *Thinking in Systems: A Primer*. Chelsea Green. The systems-thinking foundation of the context diagram, the feedback loop, and the unintended consequence.
-- **Genichi Taguchi (1986)** — *Introduction to Quality Engineering: Designing Quality into Products and Processes*. Asian Productivity Organization. The Taguchi loss function and the quality-improvement philosophy that underpins QFD.
-- **Clayton M. Christensen and Jerome L. Bower (1996)** — "Customer power, strategic adaptation, and resource allocation." *Strategic Management Journal* 17(S2), pp. 197–218. The lead-user method and the innovator's dilemma.
-- **ISO/IEC/IEEE 29148:2018** — *Systems and software engineering — Life cycle processes — Requirements engineering*. The international standard for requirements engineering.
+Ulrich, Eppinger and Yang's *Product Design and Development* (7th ed., 2020) has clear chapters on identifying customer needs and establishing target specifications with marginal and ideal values. Pahl, Beitz, Feldhusen and Grote's *Engineering Design: A Systematic Approach* (3rd English ed., 2007) treats the requirements list as the basis of systematic design. Hauser and Clausing's "The House of Quality" (*Harvard Business Review*, 1988) remains the most readable introduction to QFD, and Dieter and Schmidt's *Engineering Design* (6th ed., 2021) covers QFD, the Kano model and the specification together.
