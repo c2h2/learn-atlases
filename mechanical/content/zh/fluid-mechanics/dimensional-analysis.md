@@ -200,7 +200,7 @@ $$
 \mu = 0.1 \Rightarrow V = 4.39\ \mathrm{mm / s}, \quad \mathrm{Re} = 0.13 \quad \checkmark\ \text{蠕动流}
 $$
 $$
-\mu = 100 \Rightarrow V = 4.39\ \mathrm{\mu m / s} \quad \Rightarrow \quad \text{下落 } 300\ \mathrm{mm} \text{ 需要 } 19\ \mathrm{h} \quad \times
+\mu = 100 \Rightarrow V = 4.39\ \mathrm{\mu m / s} \quad \Rightarrow \quad \text{下落 } 300\ \mathrm{mm} \text{ 需要 } 19\ \mathrm{h} \quad \text{（太慢）}
 $$
 **使一个球覆盖这一范围成为不可能的数字。**几何固定时$V \propto 1 / \mu$，所以**一个球能覆盖的黏度范围恰好等于仪器能计时的速度范围**——而计时窗口是仪器的硬性属性。用光电门和$200\ \mathrm{mm}$的测量段，取可用的下落时间为$5\ \mathrm{s}$到$5\ \mathrm{min}$：
 $$
