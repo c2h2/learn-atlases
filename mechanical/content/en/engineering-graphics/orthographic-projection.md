@@ -1,196 +1,195 @@
-A drawing is a **lossless compression of a solid into a plane**, and the compression is lossless only if the reader knows the code. That code is **Monge's method** — two perpendicular planes, hinged open flat — invented in 1795 for military engineers and suppressed by the French government for a decade, and every drawing on earth since is either a **third-angle** or a **first-angle** unfolding of it. Get the code wrong and the part is **mirrored**, and a mirrored bracket is not a wrong bracket but a bracket that will not bolt on.
+A drawing is a **compression of a solid into a plane**, and it can be decompressed only if the reader knows the code. That code goes back to **Gaspard Monge's** descriptive geometry — two perpendicular planes of projection, hinged open flat — and almost every engineering drawing today is either a **first-angle** or a **third-angle** unfolding of it. Read a drawing in the wrong convention and the part is **mirrored**: a mirrored bracket is not a slightly wrong bracket, it is one that will not bolt on.
 
-The craft is not drawing the views; it is **choosing** them. The right set of views makes every feature appear at its true shape in exactly one view and edge-on in another, and the wrong set makes the reader construct the object in their head — which costs seconds per feature, and a reader who is constructing is a reader who is guessing.
+The craft is not drawing the views; it is **choosing** them. The right set of views shows every feature at its true shape in one view and edge-on in another; the wrong set makes the reader reconstruct the object in their head, and a reader who is reconstructing is a reader who may guess.
 
 ::: warning Seven projection errors that produce mirrored or unmakeable parts
-**Mixing the angle conventions on one drawing.** A drawing with a third-angle title-block symbol and a top view placed **below** the front is not ambiguous, it is **contradictory**, and the machinist will make what the layout says and not what the symbol says. **The layout is the drawing.** **An inclined face with no auxiliary.** A face at $25\ {}^{\circ}$ appears in the front view at $90.6\ \%$ of its true size and in the top view at $42.3\ \%$, and a hole drilled **normal to it** appears as a true circle in **neither** view. Every inclined face demands an auxiliary view, and every drafter who omits one gets a part drilled at the wrong angle. **A view that shows a feature foreshortened when it could show it true.** If a plate's outline can be drawn at true shape in one view, that view is the outline view and every other view is a support. **Dimensions taken from a foreshortened view.** A dimension on a $25\ {}^{\circ}$ face read off the front view is short by $\cos 25\ {}^{\circ}$, and the drafter who puts it there has written a $10\ \%$ error into the part. **A hidden line where a section belongs.** Five hidden lines crossing in a view is a confession that the view is wrong; a section is free and a hidden-line tangle is not. **A missing "this way up" or view-direction arrow.** A symmetric-looking bracket with four views and no projection arrows is a bracket that can be read in four orientations, and only one of them is right. **An auxiliary view with no folding line and no label.** An auxiliary view floats; the **folding line** (the reference edge from which the depths are transferred) is what makes it a projection and not a second sketch, and an unlabelled auxiliary is undimensionable.
+**Mixing the conventions on one drawing.** A drawing with a third-angle symbol and a top view placed **below** the front view is contradictory; the layout and the symbol must agree. **An inclined face with no auxiliary view.** A face sloped at $25^{\circ}$ to the horizontal, with its slope seen edge-on in the front view, appears in the top view at $90.6\ \%$ of its true size along the slope and in the side view at $42.3\ \%$; a hole drilled **normal** to it is a true circle in **none** of the three. **A view that shows a feature foreshortened when another could show it true.** If a plate's outline can be drawn at true shape in one view, that view carries the outline and the others support it. **Dimensions placed on a foreshortened view.** A $20\ \mathrm{mm}$ distance along a $25^{\circ}$ slope appears as $18.1\ \mathrm{mm}$ in the top view, a $9.4\ \%$ discrepancy between what is drawn and what is meant. **Hidden lines where a section belongs.** Several crossing hidden lines in one view are a sign that a section would be clearer. **No viewing direction for a non-standard view.** A view that is not in its projected position must be identified by an arrow and a letter, or the reader cannot tell which way it was seen. **An auxiliary view with no reference.** An auxiliary view is a projection only because its depths are transferred from a stated **reference (folding) line**; without the reference and a label it is just another sketch.
 :::
 
 ## Monge's two planes and the two conventions
 
 ::: definition The unfolding, and why there are two answers {#def-monge}
-Put the object between an observer and two mutually perpendicular planes: a **vertical plane** VP and a **horizontal plane** HP, meeting at the **reference line** $XY$. Project the object onto VP to get the **front view** and onto HP to get the **top view**. The two views live on perpendicular planes and cannot be drawn together until one plane is **rotated about $XY$** into the other's plane — and there are exactly two ways to rotate.
+Take two mutually perpendicular planes, a **vertical plane** VP and a **horizontal plane** HP, meeting in the **reference line** $XY$. They divide space into four quadrants ("angles"). The object is projected orthogonally onto VP to give the **front view** (elevation) and onto HP to give the **top view** (plan), and then HP is rotated about $XY$ into the plane of VP so that both views can be drawn on one sheet.
 $$
-\begin{array}{l c c l}
-\text{Convention} & \text{Object sits in} & \text{Rotation} & \text{Result} \\
-\text{Third angle} & \text{between observer and plane} & \text{HP folded up and back} & \text{top view ABOVE the front} \\
-\text{First angle} & \text{behind both planes} & \text{HP folded down and away} & \text{top view BELOW the front}
+\begin{array}{l l l}
+\text{Convention} & \text{Arrangement} & \text{Result} \\
+\text{First angle} & \text{the object lies between the observer and the plane of projection} & \text{top view BELOW the front view} \\
+\text{Third angle} & \text{the plane of projection lies between the observer and the object} & \text{top view ABOVE the front view}
 \end{array}
 $$
-**The rule that never fails.** In **third angle** the view is placed on the **same side as the direction from which it was seen**: look from above and the view goes above. In **first angle** the view is placed on the **opposite side**: look from above and the view goes below. The two layouts are **point-mirror images** of each other about the front view, and the left-side view of one is the right-side view of the other.
-**The symbols.** The projection symbol is the front view of a **truncated cone** lying on the drawing's plane, seen from the left, drawn twice: once as the cone itself and once as its **side elevation** — two trapezoids joined by a horizontal line. In the **third-angle** symbol the **small** end of the frustum points to the **left**, the observer's side; in the **first-angle** symbol it points to the **right**. The two symbols are identical except for that reversal, and the way to remember them is that the symbol is drawn **in the same convention as the drawing**, so a third-angle drawing carries a third-angle symbol and the small end faces the way the views are pushed.
-**The one that bites.** The United States, Canada, Mexico and (by custom) Japan use third angle; Europe, China, India and the ISO default use first angle. **A drawing with no symbol is a drawing that must be argued about**, and the ISO standard requires the symbol in the title block or an adjacent note.
+**The rule that never fails.** In **third angle** a view is placed on the **same side** of the front view as the direction from which it is seen: look from above, draw it above; look from the left, draw it on the left. In **first angle** it is placed on the **opposite side**: look from above, draw it below; look from the left, draw it on the right. The views themselves are identical; only their positions differ.
+**The symbols.** Each convention is identified by a symbol showing a **truncated cone** in two views — a side elevation (a trapezoid) and an end view (two concentric circles) — arranged according to that convention itself. The two symbols therefore differ in which side of the trapezoid the circles appear on, and the symbol is placed in or near the title block (ISO 5456-2; ISO 128).
+**Where each is used.** Third angle is standard in the United States and Canada and in Japan (JIS); first angle is traditional in most of continental Europe, in China and in India. ISO standards permit both, provided the method is indicated. **A drawing with no projection symbol is a drawing that must be queried.**
 :::
 
 ::: definition Choosing the views {#def-choose}
-**The minimum set is the one in which every feature is true-shape in one view and edge-on in another.** The counting rules:
+**The minimum set is the one in which every feature is true-shape in one view and edge-on in another.** Typical counts:
 $$
 \begin{array}{l c l}
-\text{Body of revolution} & 1 & \text{one view with a centre line and } \phi \text{ dimensions} \\
-\text{Plate with a flat outline} & 1 + 1 & \text{the outline true-shape, plus one edge view for the thickness} \\
-\text{Simple block} & 2\text{–}3 & \text{two if the third dimension is a single number} \\
-\text{Bracket with an inclined face} & 3 + 1 & \text{three plus one auxiliary} \\
-\text{Housing with internal features} & 2 + 2\text{–}3 & \text{two external plus two or three sections} \\
-\text{Shaft with keyways and threads} & 1 + 1 + \text{details} & \text{the side view, one end view, and detail views at a larger scale}
+\text{Body of revolution} & 1 & \text{one view with a centre line and } \varnothing \text{ dimensions} \\
+\text{Plate with a flat outline} & 1 + \text{note} & \text{the outline true-shape, the thickness by a note or a second view} \\
+\text{Simple block} & 2\text{–}3 & \text{two if the third view adds nothing} \\
+\text{Bracket with an inclined face} & 2\text{–}3 + 1 & \text{plus one auxiliary view} \\
+\text{Housing with internal features} & 2 + \text{sections} & \text{external views plus sections where the inside matters} \\
+\text{Shaft with keyways and threads} & 1 + \text{details} & \text{one side view, sections through keyways, enlarged details}
 \end{array}
 $$
-**The front view is chosen by shape and not by position.** The standard says the front view should show the **most features with the fewest hidden lines**, which for a bracket lying on a bench usually means the view from the **side** and not the view from the front of the machine it will be bolted into. Where the assembly orientation is essential, use the **working-position** view and add a **direction arrow** labelled with a letter.
-**The four rules of correspondence.**
+**The front view is chosen for information, not position.** It should show the **most characteristic shape with the fewest hidden lines**, and where possible the part in its functional, manufacturing or assembled position. Where the assembly orientation matters, say so with a note or a reference arrow.
+**The rules of correspondence.**
 1. **Widths align vertically** between the front and top views.
-2. **Heights align horizontally** between the front and any side or auxiliary view taken from the same direction.
-3. **Depths are equal** between the top view and the side view, and are transferred by a **mitre line** at $45\ {}^{\circ}$ or by measuring.
-4. **A feature's distance from a reference edge is preserved** in every view that shows that reference edge.
+2. **Heights align horizontally** between the front and side views.
+3. **Depths are equal** in the top and side views, transferred by a $45^{\circ}$ mitre line or by measuring from a reference line.
+4. **A feature's distance from a reference plane is the same** in every view that shows that plane as an edge.
 :::
 
 ::: definition Auxiliary views: the arithmetic of an inclined face {#def-aux}
-A face whose normal makes an angle $\theta$ with the viewing direction projects at
+A plane face whose normal makes an angle $\varphi$ with the viewing direction projects with
 $$
-\text{apparent area} = A \cos \theta , \qquad \text{apparent length along the slope} = L \cos \theta ,
+\text{apparent area} = A \cos \varphi ,
 $$
-and it appears **edge-on** — as a line — in the view whose direction is **perpendicular** to the face's normal, that is, in the view that looks **along** the face.
-**The construction of a primary auxiliary.** Given a front view in which the inclined face appears as an edge (a line at $\theta$ to the horizontal):
-1. Draw a **folding line** $FF$ parallel to that edge, at a convenient distance.
-2. From every corner, project a line **perpendicular to $FF$**.
-3. Set each point's distance from $FF$ equal to its distance from the **front-view reference line** in the **top view** — the depths come from the view you are **not** projecting from.
-4. The result is the face at its **true shape**, and every hole in it is a **true circle**.
-**The two-auxiliary case.** A face that appears as an edge in **neither** the front nor the top view is **oblique**, and its true shape needs two steps: a **primary** auxiliary taken with a folding line **perpendicular** to a true-length line drawn in the face (which gives the face as an edge), then a **secondary** auxiliary with a folding line **parallel** to that edge (which gives the true shape).
-**The workhorse numbers.**
+and it appears **edge-on** — as a line — in any view whose direction lies **in** the face.
+**The standard case.** A face sloped at $\theta$ from the horizontal, with the slope running left to right, appears as an **edge** (a line at $\theta$) in the **front** view. In the **top** view its dimension along the slope is foreshortened by $\cos\theta$, and in the **side** view by $\sin\theta$; its dimension across the slope is true in both.
 $$
-\begin{array}{l c c c}
-\theta\ (\text{face slope from horizontal}) & \text{front view scale} & \text{top view scale} & \text{auxiliary needed?} \\
-0\ {}^{\circ} & 1.000 & 1.000 & \text{no} \\
-10\ {}^{\circ} & 0.985 & 0.174 & \text{only if a hole is drilled normal to it} \\
-15\ {}^{\circ} & 0.966 & 0.259 & \text{yes} \\
-25\ {}^{\circ} & 0.906 & 0.423 & \text{yes} \\
-30\ {}^{\circ} & 0.866 & 0.500 & \text{yes} \\
-45\ {}^{\circ} & 0.707 & 0.707 & \text{yes, and neither view is trustworthy} \\
-60\ {}^{\circ} & 0.500 & 0.866 & \text{yes}
+\begin{array}{c c c c}
+\theta\ (\text{slope from horizontal}) & \text{top-view factor} & \text{side-view factor} & \text{auxiliary needed?} \\
+0^{\circ} & 1.000 & 0\ (\text{edge}) & \text{no} \\
+10^{\circ} & 0.985 & 0.174 & \text{if holes or true dimensions are needed} \\
+15^{\circ} & 0.966 & 0.259 & \text{usually} \\
+25^{\circ} & 0.906 & 0.423 & \text{yes} \\
+30^{\circ} & 0.866 & 0.500 & \text{yes} \\
+45^{\circ} & 0.707 & 0.707 & \text{yes} \\
+60^{\circ} & 0.500 & 0.866 & \text{yes}
 \end{array}
 $$
-**The rule of thumb.** If a hole is drilled **normal** to a face whose slope exceeds $15\ {}^{\circ}$, the auxiliary view is not optional: in the front view the hole's centre is right but its axis is foreshortened, and in the top view the hole is an ellipse and its centre may be right while its position along the slope is not.
+**The construction of a primary auxiliary view.** Given the front view in which the inclined face is an edge:
+1. Draw a **reference (folding) line** parallel to that edge, at a convenient distance.
+2. From every corner and hole centre, project lines **perpendicular** to the reference line.
+3. Set off along each projector the point's **depth**, measured in the **top** (or side) view from that view's own reference line — the depths come from a view adjacent to the one you project from.
+4. The face appears at its **true shape**, and a hole drilled normal to it is a **true circle**.
+**The oblique case.** A face that is edge-on in **none** of the principal views is **oblique**: a **primary** auxiliary, looking along a true-length line drawn in the face, shows the face as an edge; a **secondary** auxiliary, looking perpendicular to that edge, shows its true shape.
 :::
 
 ::: widget plot
-f: cos(x); sin(x)
+f: cos(x*pi/180); sin(x*pi/180)
 x: 0, 90
 y: 0, 1
-labels: front-view scale; top-view scale
-caption: The two foreshortening factors for a face sloped at $x$ degrees from the horizontal. At $25\ {}^{\circ}$ the front view is only $9.4\ \%$ short and looks almost true — which is exactly why an inclined face is the most dangerous feature on a drawing — while the top view is at $42\ \%$. The two curves cross at $45\ {}^{\circ}$, where neither view can be trusted, and either one reaches $1.0$ only when the face is parallel to that view's plane.
+labels: top-view factor; side-view factor
+caption: The foreshortening factors, along the slope, for a face sloped at $x$ degrees from the horizontal and seen edge-on in the front view. At $25^{\circ}$ the top view is only $9.4\ \%$ short and looks almost true — which is what makes a gently inclined face dangerous — while the side view shows $42\ \%$. The two curves cross at $45^{\circ}$, and neither view shows the face at true size unless it is parallel to that view's plane.
 :::
 
-::: definition True length, true angle, and the auxiliary sequence {#def-truelen}
-A line with components $\left( \Delta x,\ \Delta y,\ \Delta z \right)$ has a true length
+::: definition True length, true angle and point view {#def-truelen}
+A line with components $(\Delta x,\ \Delta y,\ \Delta z)$ — $x$ to the right, $y$ away from the observer of the front view, $z$ up — has true length
 $$
 L = \sqrt{\Delta x^{2} + \Delta y^{2} + \Delta z^{2}}
 $$
-and apparent lengths $\sqrt{\Delta x^{2} + \Delta z^{2}}$ in the front view, $\sqrt{\Delta x^{2} + \Delta y^{2}}$ in the top view and $\sqrt{\Delta y^{2} + \Delta z^{2}}$ in the side view. Its inclination to the horizontal and vertical planes is
+and apparent lengths $\sqrt{\Delta x^{2} + \Delta z^{2}}$ in the front view, $\sqrt{\Delta x^{2} + \Delta y^{2}}$ in the top view and $\sqrt{\Delta y^{2} + \Delta z^{2}}$ in the side view. Its inclinations to the horizontal and frontal planes are
 $$
 \sin \alpha_{H} = \frac{\Delta z}{L}, \qquad \sin \alpha_{V} = \frac{\Delta y}{L} .
 $$
-**A line shows its true length in a view only when it is parallel to that view's plane**, and a **primary auxiliary with a folding line parallel to the line's top-view projection** gives the true length and the true angle to the horizontal in one step.
-**The dihedral angle between two planes** requires the **edge view of both**, which requires a folding line parallel to the **line of intersection** of the two planes. A single auxiliary gives it when the intersection line is horizontal or frontal; otherwise it is a two-auxiliary problem.
+**A line shows its true length only in a view whose plane is parallel to it.** A primary auxiliary with its reference line parallel to the line's **top-view** projection shows the true length and the true angle to the horizontal; a secondary auxiliary with its reference line **perpendicular** to that true-length view shows the line as a **point**.
+**The dihedral angle between two planes** is seen in the view that shows **both** planes as edges, i.e. the **point view of their line of intersection**. If that line is already true length in a principal view, one auxiliary is enough; otherwise two are needed (true length first, then point view).
 :::
 
 ::: example A line in three views {#ex-truelen}
-A hole is drilled from $A \left( 10,\ 20,\ 5 \right)$ to $B \left( 60,\ 45,\ 40 \right)$ in millimetres, where $x$ is right, $y$ is into the page and $z$ is up. Give the true length, the three apparent lengths and the two inclinations, and say which view to dimension it from.
+A hole is drilled from $A(10,\ 20,\ 5)$ to $B(60,\ 45,\ 40)$ in millimetres, with $x$ to the right, $y$ away from the observer of the front view and $z$ up. Give the true length, the three apparent lengths and the two inclinations, and say which view shows the true length.
 ::: solution
 **The components.** $\Delta x = 50$, $\Delta y = 25$, $\Delta z = 35$.
 **The true length.**
 $$
-L = \sqrt{50^{2} + 25^{2} + 35^{2}} = \sqrt{2500 + 625 + 1225} = \sqrt{4350} = 65.95\ \mathrm{mm} .
+L = \sqrt{50^{2} + 25^{2} + 35^{2}} = \sqrt{4350} = 65.95\ \mathrm{mm} .
 $$
 **The apparent lengths.**
 $$
-\text{front } (x z) = \sqrt{2500 + 1225} = 61.03, \quad
-\text{top } (x y) = \sqrt{2500 + 625} = 55.90, \quad
-\text{side } (y z) = \sqrt{625 + 1225} = 43.01 .
+\text{front } (xz) = \sqrt{2500 + 1225} = 61.03, \quad
+\text{top } (xy) = \sqrt{2500 + 625} = 55.90, \quad
+\text{side } (yz) = \sqrt{625 + 1225} = 43.01\ \mathrm{mm}.
 $$
 **The inclinations.**
 $$
-\sin \alpha_{H} = \frac{35}{65.95} = 0.5307 \ \Rightarrow\ \alpha_{H} = 32.05\ {}^{\circ}, \qquad
-\sin \alpha_{V} = \frac{25}{65.95} = 0.3791 \ \Rightarrow\ \alpha_{V} = 22.27\ {}^{\circ} .
+\sin \alpha_{H} = \frac{35}{65.95} = 0.531 \ \Rightarrow\ \alpha_{H} = 32.05^{\circ}, \qquad
+\sin \alpha_{V} = \frac{25}{65.95} = 0.379 \ \Rightarrow\ \alpha_{V} = 22.27^{\circ} .
 $$
-**Which view.** **None of the three.** The line is oblique to all of them, so its true length appears in no standard view and its true angle appears in none. The construction is a **primary auxiliary with a folding line parallel to the top-view projection** of $AB$, which gives the true length and the $32.05\ {}^{\circ}$ inclination to the horizontal directly; a **secondary auxiliary with a folding line perpendicular** to that gives the **point view** of the line, which is what you need to show a hole end-on.
-**The error if you dimension from the front view.** The front view's $61.03\ \mathrm{mm}$ is $7.5\ \%$ short of the true $65.95$, and a hole length or a face position taken from it is wrong by that much.
+**Which view.** **None of the three.** The line is oblique to all three planes. A primary auxiliary with its reference line parallel to the top-view projection of $AB$ shows the true length and the $32.05^{\circ}$ inclination; a secondary auxiliary perpendicular to that gives the **point view**, in which the hole is seen end-on as a circle.
+**The error of measuring the front view.** $61.03\ \mathrm{mm}$ is $92.5\ \%$ of the true $65.95$, so a length taken from the front view is $7.5\ \%$ short.
 
-*Check.* $\cos^{2} \alpha_{H} + \cos^{2} \alpha_{V}$ is not $1$ for these two angles because $\alpha_H$ and $\alpha_V$ are measured to **planes** and not to axes; the direction cosines are $50 / 65.95 = 0.758$, $25 / 65.95 = 0.379$ and $35 / 65.95 = 0.531$, and $0.758^{2} + 0.379^{2} + 0.531^{2} = 0.575 + 0.144 + 0.282 = 1.001$. $\checkmark$
+*Check.* The direction cosines are $50/65.95 = 0.758$, $25/65.95 = 0.379$ and $35/65.95 = 0.531$, and $0.758^{2} + 0.379^{2} + 0.531^{2} = 1.000$. $\checkmark$
 
-*Sanity.* The largest direction cosine is the $x$-component, and correspondingly the **front** view is the least wrong at $92.5\ \%$ of true — the general rule that the view whose plane is most nearly parallel to a feature is the one to trust, and the one that will still quietly mislead you by $7\ \%$.
+*Sanity.* The front view drops the $y$-component, which is the smallest of the three, so it is the least foreshortened of the principal views; the side view drops the largest component ($x$) and is the most foreshortened, at $65\ \%$ of true.
 :::
 :::
 
 ::: example The auxiliary view of a bracket {#ex-aux}
-A bracket has a face $80\ \mathrm{mm}$ wide and $50\ \mathrm{mm}$ long, sloped $25\ {}^{\circ}$ from the horizontal, carrying two $\phi 11$ clearance holes at $20\ \mathrm{mm}$ from each end along the slope. Give the face's apparent size in the front and top views, the hole's apparent shape in each, and the auxiliary construction.
+A bracket has an inclined face $80\ \mathrm{mm}$ wide (across the slope, along $y$) and $50\ \mathrm{mm}$ long (along the slope), sloped $25^{\circ}$ from the horizontal and seen edge-on in the front view. It carries two $\varnothing 11$ clearance holes drilled normal to the face, each $20\ \mathrm{mm}$ along the slope from an end. Give the face's apparent size in the top and side views, the holes' apparent shapes, and the auxiliary construction.
 ::: solution
 **The face.** Its true area is $80 \times 50 = 4000\ \mathrm{mm^{2}}$.
 $$
-\text{front view: } 80 \times \left( 50 \cos 25\ {}^{\circ} \right) = 80 \times 45.32 = 3626\ \mathrm{mm^{2}} \ \left( 90.6\ \% \right)
+\text{top view: } 80 \times (50 \cos 25^{\circ}) = 80 \times 45.32 = 3625\ \mathrm{mm^{2}} \ (90.6\ \%),
 $$
 $$
-\text{top view: } 80 \times \left( 50 \sin 25\ {}^{\circ} \right) = 80 \times 21.13 = 1691\ \mathrm{mm^{2}} \ \left( 42.3\ \% \right)
+\text{side view: } 80 \times (50 \sin 25^{\circ}) = 80 \times 21.13 = 1690\ \mathrm{mm^{2}} \ (42.3\ \%),
 $$
-**The holes.** A $\phi 11$ hole drilled **normal** to the face appears as:
+and in the front view the face is a line $50\ \mathrm{mm}$ long at $25^{\circ}$.
+**The holes.** A $\varnothing 11$ hole normal to the face appears as
 $$
-\text{front view: an ellipse } 11 \times 11 \cos 25\ {}^{\circ} = 11 \times 9.97\ \mathrm{mm}, \qquad
-\text{top view: an ellipse } 11 \times 11 \sin 25\ {}^{\circ} = 11 \times 4.65\ \mathrm{mm}.
+\text{top view: an ellipse } 11 \times 11 \cos 25^{\circ} = 11 \times 9.97\ \mathrm{mm}, \qquad
+\text{side view: an ellipse } 11 \times 11 \sin 25^{\circ} = 11 \times 4.65\ \mathrm{mm}.
 $$
-**Neither is a circle**, and a drafter who draws a circle in the front view has drawn a hole that is $5.3\ \%$ oval and drilled at $25\ {}^{\circ}$ off the face normal.
-**The hole positions.** The $20\ \mathrm{mm}$ from each end is measured **along the slope**. In the front view it appears as $20 \cos 25\ {}^{\circ} = 18.13\ \mathrm{mm}$ and in the top view as $20 \sin 25\ {}^{\circ} = 8.45\ \mathrm{mm}$. A dimension of $20$ placed on the front view therefore asks for a hole $1.87\ \mathrm{mm}$ further along the slope than intended.
+Neither is a circle; in the front view the hole appears as a pair of hidden lines perpendicular to the edge of the face.
+**The hole positions.** The $20\ \mathrm{mm}$ is measured **along the slope**. In the top view it appears as $20 \cos 25^{\circ} = 18.13\ \mathrm{mm}$ and in the side view as $20 \sin 25^{\circ} = 8.45\ \mathrm{mm}$. The top view therefore shows the distance $1.87\ \mathrm{mm}$ ($9.4\ \%$) shorter than it is; and a drafter who laid out $20\ \mathrm{mm}$ in the top view would put the hole $20 / \cos 25^{\circ} = 22.07\ \mathrm{mm}$ along the slope, $2.07\ \mathrm{mm}$ too far.
 **The auxiliary construction.**
-1. In the front view the face is an **edge** (a line at $25\ {}^{\circ}$). Draw the folding line $FF$ parallel to it, $40\ \mathrm{mm}$ away.
-2. From each corner and each hole centre, project a line **perpendicular to $FF$**.
-3. Transfer the **depths** — the $y$-distances — from the **top view**, measuring from the top view's own folding line $XY$.
-4. The face appears at $80 \times 50$ true, the holes as $\phi 11$ true circles, and the $20\ \mathrm{mm}$ spacings as $20\ \mathrm{mm}$ true.
-5. Label the view **"AUXILIARY FROM A"** with an arrow on the front view, and dimension the face **only** in the auxiliary.
+1. In the front view the face is an **edge** at $25^{\circ}$. Draw the reference line parallel to it.
+2. From each corner and each hole centre, project perpendicular to the reference line.
+3. Transfer the **depths** ($y$-distances) from the **top** view, measured from its own reference line.
+4. The face appears at its true $80 \times 50$, the holes as true $\varnothing 11$ circles and the hole distances as a true $20\ \mathrm{mm}$.
+5. Usually a **partial** auxiliary view of the inclined face alone is drawn, identified by an arrow and a letter if it is not in its projected position, and the face is dimensioned **only** there.
 
-*Check.* The auxiliary's area $4000\ \mathrm{mm^{2}}$ against the front view's $3626$: $3626 / 4000 = 0.9065 = \cos 25\ {}^{\circ}$. $\checkmark$
+*Check.* $3625 / 4000 = 0.906 = \cos 25^{\circ}$ and $1690 / 4000 = 0.423 = \sin 25^{\circ}$. $\checkmark$
 
-*Sanity.* The $25\ {}^{\circ}$ face is the drawing's most dangerous feature precisely because the front view is only $9\ \%$ wrong. A drafter eyeballing the front view will not notice, and the part will arrive with holes $1.9\ \mathrm{mm}$ out and $5\ \%$ oval — close enough to be argued about and far enough to fail assembly.
+*Sanity.* The $25^{\circ}$ face is dangerous precisely because the top view is only $9\ \%$ short: it looks right. The auxiliary view removes the doubt at the cost of one more view.
 :::
 :::
 
 ::: example First or third angle? {#ex-angle}
-A drawing shows the front view, a view **below** it that looks like a top view, and a view to the **left** of the front that shows the left-hand profile. The title block carries no projection symbol. Determine the convention and the risk.
+A drawing shows the front view, a view **below** it that looks like a plan, and a view to the **left** of the front view. The title block carries no projection symbol. Determine the convention and the risk.
 ::: solution
-**The test.** A view placed **below** the front view is either a **first-angle top view** (looked from above, placed below) or a **third-angle bottom view** (looked from below, placed below). A view to the **left** of the front is either a **first-angle right-side view** or a **third-angle left-side view**.
-**The resolution.** The two views must be read **together**. If the lower view shows the object's **top** features — the tops of bosses, the opening of a pocket — it is a first-angle top view and the drawing is **first angle**. If it shows the object's **bottom** features — a mounting foot, a drain hole, a machined pad — it is a third-angle bottom view and the drawing is **third angle**.
-**The second test, and the one that never fails.** Look for an **asymmetric** feature — a notch on one side. In first angle the left-side view of the object appears on the **right** of the front view; in third angle it appears on the **left**. So: a view on the **left** of the front that shows the **left** profile is third angle; a view on the **left** that shows the **right** profile is first angle.
-**The risk.** If the drawing is first angle and is read as third, the part is **mirrored left-to-right**, and a mirrored bracket with an offset boss and an asymmetric hole pattern will not fit. If the part is a **shaft or a symmetric plate**, nothing happens at all — which is why the error survives a hundred drawings and then stops an assembly.
-**The professional response.** Do not guess. **Ask, and get it in writing**, and add the projection symbol to the drawing when you re-issue it. The ISO drawing-frame standard makes the symbol mandatory precisely because the cost of the ambiguity is a scrapped machining run.
+**The ambiguity.** A view placed **below** the front view is either a **first-angle top view** (seen from above, placed below) or a **third-angle bottom view** (seen from below, placed below). A view on the **left** is either a **first-angle view from the right** or a **third-angle view from the left**.
+**The resolution.** Read the views **together** with the front view. If the lower view shows the features that are on the object's **top** — the tops of bosses, the opening of a pocket that the front view shows on the top face — it is a first-angle top view. If it shows the **bottom** features — mounting feet, a drain hole — it is a third-angle bottom view.
+**The second test.** Find an **asymmetric** feature, such as a notch visible in the front view on one side of the part. In the view on the left, check whether the notch appears as it would when seen **from the left** (third angle) or **from the right** (first angle).
+**The risk.** If a first-angle drawing is read as third angle, the side and plan views are interpreted as seen from the wrong side, and an asymmetric part can be made as its **mirror image**. A symmetric part survives the error — which is why it can go unnoticed for many drawings before an asymmetric one is scrapped.
+**The professional response.** Do not guess: query the drawing and have the projection symbol added at the next issue. Drawing standards require the method of projection to be indicated precisely because of this ambiguity.
 
-*Sanity.* The reason the two conventions survived a century of standardisation attempts is that each is **mechanically natural** in its own tradition: first angle is "the shadow on the far wall" and third angle is "the trace on the near glass", and a drafter trained on one cannot quite believe the other. The compromise the standards settled on — allow both, require the symbol — is the correct engineering answer and depends entirely on the symbol being drawn.
+*Sanity.* Both conventions describe the same geometry; the only information that distinguishes them is the placement of the views, which is why the symbol matters so much.
 :::
 :::
 
 ::: example How many views does this need? {#ex-nviews}
-A cast housing: a $120 \times 90 \times 70\ \mathrm{mm}$ body with a $\phi 40$ bore through the $90\ \mathrm{mm}$ dimension, four $\phi 9$ bolt holes in the ends, an internal rib network, and a $\phi 12$ oil hole drilled at $18\ {}^{\circ}$ from a machined pad on the top face. Give the view set.
+A cast housing: a $120 \times 90 \times 70\ \mathrm{mm}$ body with a stepped $\varnothing 40$ bore running front-to-back through the $90\ \mathrm{mm}$ depth, four $\varnothing 9$ bolt holes in the front flange parallel to the bore, an internal rib network, and a $\varnothing 12$ oil hole drilled from a machined pad on the top face, inclined at $18^{\circ}$ to the vertical in a vertical plane that is at $30^{\circ}$ to the front plane. Give the view set.
 ::: solution
 **The feature inventory.**
 $$
 \begin{array}{l l l}
-\text{Bore } \phi 40 & \text{axis along } y & \text{true circle in the side view} \\
-\text{Four } \phi 9 & \text{axes along } y & \text{true circles in the side view} \\
-\text{Rib network} & \text{internal, in the } xz \text{ plane} & \text{needs a section} \\
-\text{Oil hole } \phi 12 & \text{at } 18^{\circ} \text{ from vertical} & \text{oblique; needs an auxiliary} \\
+\text{Bore } \varnothing 40 & \text{axis along } y\ (\text{front to back}) & \text{true circle in the front view} \\
+\text{Four } \varnothing 9 & \text{axes along } y & \text{true circles in the front view} \\
+\text{Bore steps, seal groove, ribs} & \text{internal} & \text{need a section} \\
+\text{Oil hole } \varnothing 12 & \text{inclined, in a plane not parallel to VP or the profile plane} & \text{needs an auxiliary view} \\
 \text{Machined pad} & 40 \times 30\ \text{on the top face} & \text{true shape in the top view}
 \end{array}
 $$
-**The view set — five views and one detail.**
-1. **Front view, partly sectioned.** The body's outline, the bore as hidden lines, and a **broken-out section** over the ribs so the rib network reads without a full section.
-2. **Side view (the end view).** The $\phi 40$ bore and the four $\phi 9$ holes as **true circles**, with the bolt-circle position dimensioned here. This is the **principle view** and the front view is chosen to be consistent with it.
-3. **Top view.** The machined pad at true shape, the oil hole's **plan** position, and the overall $120 \times 90$.
-4. **Section $A\text{–}A$ through the bore axis.** The bore's steps, the shoulder, the seal groove and the wall thicknesses, with the ribs cut through.
-5. **Auxiliary view from the arrow on the top view**, showing the $18^{\circ}$ oil hole **end-on** and the pad at true shape with the hole's true position.
-6. **Detail view $B$ at $2 : 1$** of the seal groove, because a $1.5\ \mathrm{mm}$-wide groove cannot be dimensioned legibly at $1 : 2$.
-**The three things deliberately not drawn.** A **bottom view** — the bottom is a single machined face and one note, "MACHINED FLAT, $\mathrm{Ra}\ 3.2$", replaces it. A **rear view** — nothing is there. A **pictorial** — the housing is a casting and the pattern-maker will want one, but the pictorial belongs on a **separate** sheet, because a pictorial on a dimensioned drawing invites a dimension to be taken from it.
-**The count.** Five views, one detail, one section, one auxiliary — and the answer to "is that enough?" is the test in the definition: **can every feature be found true-shape or edge-on in some view, and can every dimension be attached to a real edge?**
+**The view set.**
+1. **Front view** — the bore and the bolt holes as **true circles**, with the bolt-hole pattern dimensioned here. This is the most characteristic view.
+2. **Side view in full section $A\text{–}A$** through the bore axis — the bore's steps, the shoulder, the seal groove, the wall thicknesses and the ribs (cut ribs left unhatched by the usual convention).
+3. **Top view** — the machined pad at true shape and the plan position of the oil hole.
+4. **Partial auxiliary view** looking normal to the vertical plane that contains the oil hole — the hole's **true angle** of $18^{\circ}$ and its true length.
+5. **Detail view $B$ at $2:1$** of the seal groove, which is too small to dimension legibly at the main scale.
+**What is deliberately not drawn.** A **bottom view**, if the bottom is a plain machined face that a note and the other views fully describe. A **rear view**, if it shows nothing new. A pictorial on the dimensioned sheet, which adds nothing to the specification.
+**The test.** Can every feature be found true-shape or edge-on in some view, and can every dimension be attached to a visible feature? Here: three principal views (one of them sectioned), one auxiliary and one detail.
 
-*Design comment.* The general rule is that **the number of views is set by the internal features and not by the external shape**. A housing whose outside is a box and whose inside is a maze needs two views of the box and four sections of the maze, and the drafter who draws six external views of the box has drawn the drawing nobody needs.
+*Design comment.* The number of views is usually set by the internal and inclined features, not by the external shape.
 :::
 :::
 
 ::: history
-**Gaspard Monge**'s *Géométrie descriptive* was begun in 1770, taught at the **Mézières** military school in 1794, and published in 1799 only after the French government lifted the classification that had kept it secret for a decade as a state instrument of fortification design; its **double plane of projection** and its **hinged rotation about the ground line** are the reason a first-angle and a third-angle drawing are mirror images and nothing else. **The angle dispute** is a 19th-century industrial schism: the **English and American** shops, drawing the object between the observer and the glass, developed third angle; the **French and German** shops, drawing the shadow on the far wall, kept first angle; **Buckminster Fuller**'s 1920s-30s campaigns for a single American standard and the **ANSI Y14.3** revision of 1958 that made the **projection symbol mandatory** in the title block are the reason the symbol exists. **The auxiliary view** and the whole apparatus of descriptive geometry — the point view of a line, the edge view of a plane, the true shape of an oblique face — is **Monge**'s and his student **Jean-Nicolas Poncelet**'s, and was taught as a year-long course to every engineer until the 1960s, when it was cut from curricula on the argument that a computer could do it; the recurring 21st-century complaint from manufacturing engineers that graduates cannot read a drawing is the invoice for that cut. **The section convention** — the $45\ {}^{\circ}$ cross-hatch at a $3\ \mathrm{mm}$ pitch, standardised so that a section could be recognised at a glance through a stack of rolled-up drawings — dates from the **British Standards Institution**'s 1901 provisional general-terms specification and the **ASA** Y14 series of 1940, itself a wartime standardisation drive. **The view-selection rule** "the front view shows the most features with the fewest hidden lines" is from **John William Courtney**'s and **Thomas Ewing**'s 19th-century drafting texts and was restated in every edition of **Hill**'s and **Hall**'s *Mechanical Drawing* between 1914 and 1960.
+**Gaspard Monge** (1746–1818) developed the methods of what he called **descriptive geometry** while teaching at the military engineering school at **Mézières** from the 1760s, using them for fortification problems; the methods were for a time treated as a military secret. He taught them publicly at the new **École normale** in **1794–95** — the lectures were printed in its proceedings — and they appeared as the book *Géométrie descriptive* in **1799**. Monge's method projects the object onto two perpendicular planes and rotates one into the other, which is why first-angle and third-angle drawings differ only in the placement of the views. Both arrangements were used in nineteenth-century practice: continental Europe settled on first angle, and American practice on third angle. National standards followed in the twentieth century — in Britain **BS 308** (first published in **1927**), in the United States the American Standards Association's Y14 drawing standards — and internationally the projection methods are now set out in **ISO 128** and **ISO 5456-2** (**1996**), which accept both first and third angle provided the method is shown by its symbol.
 :::
 
 ## Where this leads
@@ -198,128 +197,124 @@ $$
 The views carry the geometry; the **dimensions** that make it manufacturable are [[engineering-graphics/dimensioning]], the **fits** that make it assemble are [[engineering-graphics/tolerances-fits]], and the **datum structure** that makes it inspectable is [[engineering-graphics/geometric-tolerancing]].
 
 ::: summary
-- A drawing is Monge's two planes hinged open, and the hinge direction is the first-angle or third-angle convention; the layout, not the symbol, is what the machinist reads.
-- Choose the front view for shape and feature count, not for the object's position in space.
-- A face at $\theta$ projects at $\cos\theta$ in one view and $\sin\theta$ in the other; at $25\ {}^\circ$ the front view is only $9\ \%$ wrong, which is the danger.
-- A hole normal to an inclined face is a true circle in no standard view and demands an auxiliary.
-- A line or face oblique to all three planes needs a primary auxiliary for the edge view and a secondary for the true shape.
-- The number of views is set by the internal features, and a hidden-line tangle is a sign that a section is cheaper.
+- Orthographic drawings come from Monge's perpendicular planes hinged flat; first and third angle differ only in where each view is placed, and the drawing must carry the projection symbol.
+- In third angle a view goes on the side from which it is seen; in first angle on the opposite side.
+- Choose the front view for its information content, not for the object's position in space.
+- A face sloped at $\theta$ and edge-on in the front view appears at $\cos\theta$ along the slope in the top view and $\sin\theta$ in the side view; at $25^{\circ}$ the top view is only $9\ \%$ short, which is the danger.
+- A hole normal to an inclined face is a true circle in no principal view and needs an auxiliary view.
+- An oblique face needs a primary auxiliary for its edge view and a secondary auxiliary for its true shape; a dihedral angle needs the point view of the intersection line.
 :::
 
 ::: quiz
-A drawing shows a view directly below the front view, and that lower view clearly shows the object's mounting feet and drain holes. What is the convention?
+A drawing shows a view directly below the front view, and that lower view clearly shows the object's mounting feet and drain holes on its underside. What is the convention?
 - [ ] First angle — the top view goes below
 - [x] Third angle — it is a bottom view, placed below
 - [ ] First angle — the bottom view goes below
 - [ ] The convention cannot be determined
 ::: solution
-Third angle. In first angle the view placed below the front view is the **top** view, so it would show the top features; here it shows the **bottom** features, so it is a third-angle **bottom** view, which third angle places below because the view goes on the same side as the direction of sight. The rule is that the lower view is either a first-angle top view or a third-angle bottom view, and the **content** of the view and not its position settles which.
+Third angle. In first angle the view placed below the front view is the **top** view and would show the top features; this view shows the **underside**, so it is a view from below — which third angle places below, on the side from which it is seen. The position alone is ambiguous; the content of the view settles it.
 :::
 :::
 
 ## Exercises
 
 ::: exercise Conventions {level=1 check="1"}
-In which convention is the top view placed below the front view?
+In which convention is the top view placed below the front view? (Enter 1 for first angle or 3 for third angle.)
 ::: solution
-First angle.
+$1$ — first angle.
 :::
 :::
 
 ::: exercise Foreshortening {level=1 check="0.906"}
-Give the front-view scale of a face sloped $25\ {}^{\circ}$ from the horizontal.
+A face is sloped $25^{\circ}$ from the horizontal and seen edge-on in the front view. Give the top-view foreshortening factor along the slope. (Enter a ratio.)
 ::: solution
-$\cos 25\ {}^{\circ} = 0.906$.
+$\cos 25^{\circ} = 0.906$.
 :::
 :::
 
-::: exercise Oblique face {level=1 check="0.707"}
-At what slope from the horizontal are the front and top views of a face equally foreshortened?
+::: exercise Equal foreshortening {level=1 check="45"}
+At what slope from the horizontal are the top and side views of such a face equally foreshortened? (Enter the angle in degrees.)
 ::: solution
-$45\ {}^{\circ}$, where both are at $0.707$.
+$45^{\circ}$, where $\cos\theta = \sin\theta = 0.707$.
 :::
 :::
 
 ::: exercise True length {level=1 check="65.95"}
-Give the true length in millimetres of a line with components $\left( 50, 25, 35 \right)$.
+Give the true length of a line with components $(50,\ 25,\ 35)\ \mathrm{mm}$. (Enter the value in millimetres.)
 ::: solution
 $\sqrt{4350} = 65.95\ \mathrm{mm}$.
 :::
 :::
 
 ::: exercise Views {level=1 check="1"}
-What is the minimum number of views for a body of revolution with a centre line and $\phi$ dimensions?
+What is the minimum number of views for a plain turned part drawn with a centre line and $\varnothing$ dimensions? (Enter a number.)
 ::: solution
 One.
 :::
 :::
 
-::: exercise Auxiliary {level=2}
-A $\phi 16$ hole is drilled normal to a face sloped $32\ {}^{\circ}$ from the horizontal. Give its apparent shape and size in the front and top views, and the error in a $45\ \mathrm{mm}$ centre distance measured along the slope if it is dimensioned from the front view.
+::: exercise Auxiliary {level=2 check="6.84"}
+A $\varnothing 16$ hole is drilled normal to a face sloped $32^{\circ}$ from the horizontal, the face being edge-on in the front view. Give the hole's apparent shape in the top and side views, and the error, along the slope, if a $45\ \mathrm{mm}$ centre distance were laid out from its top-view appearance. (Enter the error in millimetres.)
 ::: solution
 $$
-\text{front: } 16 \times 16 \cos 32\ {}^{\circ} = 16 \times 13.56\ \mathrm{mm}, \qquad
-\text{top: } 16 \times 16 \sin 32\ {}^{\circ} = 16 \times 8.48\ \mathrm{mm}.
+\text{top: } 16 \times 16 \cos 32^{\circ} = 16 \times 13.57\ \mathrm{mm}, \qquad
+\text{side: } 16 \times 16 \sin 32^{\circ} = 16 \times 8.48\ \mathrm{mm}.
 $$
-The centre distance appears as $45 \cos 32\ {}^{\circ} = 38.17\ \mathrm{mm}$ in the front view, so a dimension of $45$ placed there asks for a hole $45 - 38.17 = 6.83\ \mathrm{mm}$ too far along the slope — a $15\ \%$ error.
-*Sanity.* This is the arithmetic behind the rule that **no dimension is ever taken from a foreshortened view**, and it is why the auxiliary view carries the face's dimensions and nothing else does.
+The centre distance appears as $45 \cos 32^{\circ} = 38.16\ \mathrm{mm}$ in the top view, so a dimension of $45$ measured in that view asks for $45 - 38.16 = 6.84\ \mathrm{mm}$ more than is drawn — a $15.2\ \%$ error.
+*Sanity.* This is why a face's dimensions are placed on the view that shows it at true size, which for an inclined face is the auxiliary view.
 :::
 :::
 
-::: exercise Direction cosines {level=2}
-A hole's axis has direction cosines $0.60$, $0.35$ and unknown. Find the third, the angle to the vertical, and the view in which the axis appears shortest.
+::: exercise Direction cosines {level=2 check="44"}
+A hole's axis has direction cosines $0.60$ (with $x$), $0.35$ (with $y$) and an unknown positive value with $z$ (vertical). Find the third, the angle of the axis to the vertical, and the principal view in which the axis appears shortest. (Enter the angle to the vertical in degrees.)
 ::: solution
 $$
-l^{2} + m^{2} + n^{2} = 1 \ \Rightarrow\ n = \sqrt{1 - 0.36 - 0.1225} = \sqrt{0.5175} = 0.7194 ,
+n = \sqrt{1 - 0.36 - 0.1225} = \sqrt{0.5175} = 0.719, \qquad \cos^{-1} 0.719 = 44.0^{\circ}.
 $$
-so the angle to the vertical ($z$) is $\cos^{- 1} 0.7194 = 44\ {}^{\circ}$. The axis appears **shortest** in the view along which its component is **largest** — the $z$-component of $0.719$ is the largest, so the **top view** (looking along $z$) foreshortens it most, to $\sqrt{1 - 0.5175} = 0.695$ of its true length.
-*Sanity.* The rule is counter-intuitive and worth fixing: the view that looks **along** the feature is the one that shows it as a **point**, and the view that looks **across** it is the one to dimension from.
+The axis appears shortest in the view that looks **along** its largest component. The $z$-component is the largest, so the **top** view (looking along $z$) foreshortens it most, to $\sqrt{1 - 0.5175} = 0.695$ of its true length.
+*Sanity.* The view that looks along a feature tends to show it as a point; the view that looks across it shows it at nearly true length and is the one to dimension from.
 :::
 :::
 
 ::: exercise Derivation {level=3}
-Derive the apparent-area factor $A \cos \theta$ for a plane figure, and from it the two-auxiliary construction for the true shape of an oblique face.
+Derive the apparent-area factor $\left| \boldsymbol{n} \cdot \boldsymbol{v} \right|$ for a plane figure, and from it explain why an oblique face needs two auxiliary views.
 ::: solution
-**The area factor.** A plane figure of area $A$ with unit normal $\boldsymbol{n}$, projected along the unit direction $\boldsymbol{v}$ onto a plane normal to $\boldsymbol{v}$, has
+**The area factor.** Let the figure be spanned locally by vectors $\boldsymbol{a}$ and $\boldsymbol{b}$, so its area vector is $\boldsymbol{a} \times \boldsymbol{b} = A \boldsymbol{n}$. Projecting orthogonally along the unit vector $\boldsymbol{v}$ onto the plane normal to $\boldsymbol{v}$ gives $\boldsymbol{a}' = \boldsymbol{a} - (\boldsymbol{a} \cdot \boldsymbol{v}) \boldsymbol{v}$ and $\boldsymbol{b}' = \boldsymbol{b} - (\boldsymbol{b} \cdot \boldsymbol{v}) \boldsymbol{v}$. Expanding, every term of $\boldsymbol{a}' \times \boldsymbol{b}'$ that contains $\boldsymbol{v}$ is perpendicular to $\boldsymbol{v}$, so
 $$
-A^{\prime} = A \left| \boldsymbol{n} \cdot \boldsymbol{v} \right| .
+\left( \boldsymbol{a}' \times \boldsymbol{b}' \right) \cdot \boldsymbol{v} = \left( \boldsymbol{a} \times \boldsymbol{b} \right) \cdot \boldsymbol{v} = A\, \boldsymbol{n} \cdot \boldsymbol{v} .
 $$
-Proof: the figure's area vector is $\boldsymbol{A} = A \boldsymbol{n}$, and the projected area is the component of that vector along the projection direction, because the projection of a parallelogram spanned by $\boldsymbol{a}$ and $\boldsymbol{b}$ onto the plane normal to $\boldsymbol{v}$ is spanned by $\boldsymbol{a}^{\prime} = \boldsymbol{a} - \left( \boldsymbol{a} \cdot \boldsymbol{v} \right) \boldsymbol{v}$ and $\boldsymbol{b}^{\prime}$, whose cross product's component along $\boldsymbol{v}$ is
-$$
-\left( \boldsymbol{a}^{\prime} \times \boldsymbol{b}^{\prime} \right) \cdot \boldsymbol{v} = \left( \boldsymbol{a} \times \boldsymbol{b} \right) \cdot \boldsymbol{v} ,
-$$
-which is the signed area times $\cos$ of the angle between the figure's normal and $\boldsymbol{v}$. $\checkmark$
-**The construction.** The true shape requires $\left| \boldsymbol{n} \cdot \boldsymbol{v} \right| = 1$, i.e. a viewing direction **along the face normal**. A standard view has $\boldsymbol{v}$ along a coordinate axis, and an oblique face's normal has all three components non-zero, so **no** standard view gives it. The two-step construction reaches it by rotations:
-1. **Primary auxiliary.** Rotate the viewing direction within the horizontal plane until it is **perpendicular** to $\boldsymbol{n}$ — achievable by taking a folding line **perpendicular to the top-view projection of a true-length line drawn in the face**. The face then satisfies $\boldsymbol{n} \cdot \boldsymbol{v} = 0$ and appears at $A \cos 90\ {}^{\circ} = 0$: an **edge**.
-2. **Secondary auxiliary.** From the edge view, take a folding line **parallel** to the edge, which puts the new viewing direction along $\boldsymbol{n}$, and the face appears at $A \cos 0 = A$: the **true shape**.
-**The number of auxiliary views an oblique face needs is therefore two, and never one** — because one rotation can bring the normal into the image plane but not onto the viewing direction.
-*Sanity.* This is why a drafter confronted with a doubly-curved or oblique face says "I need two auxiliaries", and why the same face on a **model** is trivial: the model has no projection at all.
+Since $\boldsymbol{a}'$ and $\boldsymbol{b}'$ lie in the image plane, their cross product is parallel to $\boldsymbol{v}$, and its magnitude is the projected area: $A' = A \left| \boldsymbol{n} \cdot \boldsymbol{v} \right|$. $\checkmark$
+**The construction.** The true shape needs $\left| \boldsymbol{n} \cdot \boldsymbol{v} \right| = 1$, i.e. a viewing direction along the face normal. A principal view has $\boldsymbol{v}$ along a coordinate axis, and an oblique face's normal has three non-zero components, so no principal view gives it. An auxiliary view projected from a principal view has its viewing direction perpendicular to that view's direction (the projectors run parallel to the old image plane), so each step can rotate the viewing direction by $90^{\circ}$ about one axis only:
+1. **Primary auxiliary.** Choose the viewing direction along a true-length line in the face. Then $\boldsymbol{n} \cdot \boldsymbol{v} = 0$ and the face appears as an **edge**.
+2. **Secondary auxiliary.** From the edge view, look perpendicular to the edge, so that $\boldsymbol{v}$ is along $\boldsymbol{n}$; the face appears at its **true shape**.
+One step cannot do both, because a viewing direction perpendicular to a principal direction can coincide with an arbitrary oblique normal only if that normal is itself perpendicular to the principal direction — which is the definition of an inclined (not oblique) face.
+*Sanity.* An inclined face, edge-on in a principal view, needs one auxiliary; an oblique face needs two. In a 3D CAD model the same result is obtained by orienting the view normal to the face.
 :::
 :::
 
 ::: exercise Design {level=3}
-Specify the complete view set, sections and notes for an injection-moulded plastic housing $140 \times 90 \times 45\ \mathrm{mm}$ with four internal bosses, a $0.8\ \mathrm{mm}$ wall, $1.5\ {}^{\circ}$ of draft, and a visible top face.
+Specify the view set, sections and notes for an injection-moulded plastic housing $140 \times 90 \times 45\ \mathrm{mm}$ with four internal screw bosses, a $0.8\ \mathrm{mm}$ wall, $1.5^{\circ}$ of draft and a cosmetic top face.
 ::: solution
 **The views.**
-1. **Top view** — the **A-face**, cosmetic, with the mould's **parting line** drawn as a type-E phantom line and the ejector-pin and gate locations shown as **reference** dimensions in parentheses.
-2. **Front view, full section $A\text{–}A$** through the four bosses, showing the wall, the boss roots, the rib junctions and the **sink-mark risk** zones.
-3. **End view** with the draft angles shown on the two external walls.
-4. **Detail at $4 : 1$** of a boss root: the $0.5\ \mathrm{mm}$ fillet, the $60\ \%$ root wall and the $1.5\ {}^{\circ}$ draft, because a mouldability defect lives at that radius and cannot be dimensioned at $1 : 2$.
+1. **Top view** — the cosmetic **A-surface**, with the **parting line** drawn and labelled, and the permitted gate and ejector-pin zones shown.
+2. **Front view in full section $A\text{–}A$** through two bosses — the wall, the boss roots and the rib junctions, which is where sink marks form.
+3. **End view**, with the draft shown on the external walls.
+4. **Detail at $4:1$** of a boss root — its fillet, the boss wall (commonly about $60\ \%$ of the nominal wall, to limit sink) and its draft — because the radii that decide mouldability cannot be dimensioned legibly at the main scale.
 **The notes that are the real specification.**
 $$
 \begin{array}{l l}
-\text{Draft} & 1.5\ {}^{\circ}\ \text{on all walls, measured from the draw direction, } \pm 0.5^{\circ} \\
-\text{Wall} & 0.8\ \mathrm{mm}\ \text{nominal, } \pm 0.08\ \mathrm{mm}\ \text{on the A-face, } \pm 0.15\ \text{elsewhere} \\
-\text{Radii} & \text{internal } R 0.4\ (\ge 0.5 \times \text{wall}), \text{ external } R 0.8\ \text{concentric with the internal} \\
-\text{Mould marks} & \text{no gate, ejector pin or parting line on the A-face} \\
-\text{Material} & \text{PC/ABS, UV-stabilised, colour RAL 7035, texture VDI 27} \\
-\text{Shrink} & 0.5\ \%\ \text{linear; all dimensions scaled and toleranced after shrink} \\
-\text{Weld lines} & \text{no weld line within } 8\ \mathrm{mm} \text{ of a boss or a screw}
+\text{Draft} & 1.5^{\circ}\ \text{on all walls, from the draw direction, unless otherwise stated} \\
+\text{Wall} & 0.8\ \mathrm{mm}\ \text{nominal, with the tolerance agreed with the moulder} \\
+\text{Radii} & \text{internal corners } R 0.4\ (0.5 \times \text{wall}),\ \text{external } R 1.2\ \text{so that the wall stays uniform} \\
+\text{Mould marks} & \text{no gate, ejector mark or parting line on the A-surface} \\
+\text{Material} & \text{PC/ABS, UV-stabilised, colour and texture by reference (e.g. VDI 3400 Ref 27)} \\
+\text{Dimensions} & \text{apply to the moulded part after conditioning; shrinkage allowance is the toolmaker's} \\
+\text{Weld lines} & \text{not permitted within } 8\ \mathrm{mm}\ \text{of a boss}
 \end{array}
 $$
-**The three drawing decisions that are unique to moulding.** **The drawing is dimensioned at the parting line**, because that is where the two halves of the tool meet and a dimension taken across it accumulates the mismatch tolerance of $\pm 0.1\ \mathrm{mm}$. **The draft is a dimension and not a modelling assumption** — a wall drawn at $90\ {}^{\circ}$ and moulded at $1.5\ {}^{\circ}$ is a part whose dimensions at the top are $1.2\ \mathrm{mm}$ off on a $45\ \mathrm{mm}$ height. **The A-face is defined by a note and not by a view**, because the drawing cannot say "no ejector pin here" except in words.
-**The one view deliberately omitted.** A pictorial. A moulding drawing with a pictorial on it will be quoted from the pictorial by a supplier who has not read the section, and the section is where the part actually is.
+**Three drawing decisions unique to moulding.** **Mind dimensions across the parting line**, which also contain the mismatch between the two tool halves; locate functional features from datums in one tool half where possible. **Draft is part of the geometry**: on a $45\ \mathrm{mm}$ wall a $1.5^{\circ}$ draft changes the width by $45 \tan 1.5^{\circ} = 1.18\ \mathrm{mm}$ per side, so the drawing must say where on the wall a dimension applies. **The A-surface is defined largely by notes**, because "no ejector mark here" cannot be drawn.
+**The view deliberately omitted.** A pictorial on the dimensioned sheet; if the moulder needs one, it belongs on a separate sheet or in the 3D model.
 
-*Design comment.* The general rule is that **a drawing for a process-dominated part is a statement of the process and its defects**, and the views are there to locate the features that the process can move — the parting line, the gate, the sink, the weld line, the draft — and not the features it cannot.
+*Design comment.* A drawing for a process-dominated part is largely a statement of the process's limits: the views locate the features the process can move — parting line, gate, sink, weld lines, draft.
 :::
 :::

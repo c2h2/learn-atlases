@@ -1,310 +1,304 @@
-A tolerance is the **money a drawing spends**, and a fit is the **promise a part makes to another part**. The ISO system is a two-hundred-year-old compromise between the fact that nothing is made twice to the same size and the fact that a bearing must go on without a hammer and stay on without a key — and every number in it is the residue of somebody's costed decision.
+A tolerance is the **money a drawing spends**, and a fit is the **promise one part makes to another**. The ISO system of limits and fits is a long-standing compromise between the fact that nothing is made twice to the same size and the fact that a bearing must go on without a hammer and stay on without a key — and every number in it is the residue of somebody's costed decision.
 
-The system's elegance is that it separates **size** from **location** and both from **shape**, and its most-frequent misuse is the assumption that a tolerance of $\pm 0.1$ on a bore and a pin guarantees a sliding fit. It does not: the bore is also **out of round** by an amount the $\pm 0.1$ does not see, and the pin is **bent**. The subject of this lesson is what the $\pm 0.1$ means, what it does not, and what it costs.
+The system's elegance is that it separates **size** from **location** and both from **shape**, and its most frequent misuse is the assumption that a tolerance of $\pm 0.1$ on a bore and a pin guarantees a sliding fit. It does not: the bore is also **out of round** by an amount that a two-point size check does not see, and the pin may be **bent**. The subject of this lesson is what a size tolerance means, what it does not, and what it costs. (The tables quoted here follow ISO 286-1 and ISO 286-2, both 2010 editions; the lesson teaches the principles behind the standard and is no substitute for it.)
 
 ::: warning Seven fit errors that are found at assembly
-**Specifying $\pm 0.1$ on both members of a fit.** Two symmetric tolerances give a **transition** fit when a clearance was intended, because the mean clearance is zero and half the assemblies are interference. **A clearance fit at $\pm$ on both sides** has a mean clearance of half the sum of the tolerances and a **$50\ \%$** chance of being a transition. **A hole-basis fit quoted as a shaft-basis fit.** $\mathrm{H}7 / \mathrm{g}6$ and $\mathrm{h}6 / \mathrm{G}7$ are the same fit and are **not** the same drawing: the first uses a $\mathrm{H}7$ reamer and a turned shaft, the second a $\mathrm{G}7$ reamed hole at a non-standard size and a lapped shaft. **A tolerance the shop cannot hold and the metrology cannot prove.** A $\pm 0.005$ on a $250\ \mathrm{mm}$ bore in a $22\ {}^{\circ}\mathrm{C}$-uncontrolled shop is a $25\ \mu\mathrm{m}$ error from the $8\ \mu\mathrm{m}$ of thermal growth of the steel between $20$ and $24\ {}^{\circ}\mathrm{C}$, and the drawing has asked for the impossible. **A tolerance stack that is never added.** Five features at $\pm 0.1$ in a chain is $\pm 0.5$ at the end, and the designer who specified $\pm 0.1$ on each and $\pm 0.1$ on the assembly has specified a part that cannot be made. **A surface finish specified as "smooth".** A bearing journal at Ra $1.6$ and a sealing surface at Ra $0.4$ are different parts, and Ra $0.4$ **lapped** and Ra $0.4$ **ground** are different parts too, because Ra does not describe the **lay** or the **material ratio curve** and a shaft-seal runs on the peaks. **A gauge that is not a gauge.** A $\phi 30\ \mathrm{H}7$ hole checked with a micrometer is checked at **two points** and is therefore **not** checked for roundness, and a hole that is $30.00$ across the flats and $30.03$ across the corners passes a micrometer and fails a **go** plug.
+**Specifying $\pm 0.1$ on both members of a fit.** Two symmetric tolerances about the same nominal size give a **transition** fit when a clearance was intended: the mean clearance is zero and roughly half the assemblies are interference. **Quoting a hole-basis fit as if it were a shaft-basis fit.** At $\phi 30$, $\mathrm{H}7/\mathrm{g}6$ and $\mathrm{G}7/\mathrm{h}6$ give exactly the same clearance range ($7$ to $41\ \mu\mathrm{m}$), but they are **not** the same drawing: the first uses a standard $\mathrm{H}7$ reamer and a turned or ground shaft, the second a non-standard $\mathrm{G}7$ bore and an $\mathrm{h}6$ shaft — which is the right choice only when one plain shaft carries several parts with different fits. **A tolerance the shop cannot hold and the metrology cannot prove.** A $\pm 0.005$ on a $250\ \mathrm{mm}$ steel bore is a $10\ \mu\mathrm{m}$ band; the bore grows by $250 \times 11.5 \times 10^{-6} \times 4 = 11.5\ \mu\mathrm{m}$ between $20$ and $24\ {}^{\circ}\mathrm{C}$, so in a shop without temperature control the drawing has asked for more than the whole tolerance in thermal growth alone. **A tolerance stack that is never added.** Five features at $\pm 0.1$ in a chain give $\pm 0.5$ at the end, and a designer who also writes $\pm 0.1$ on the assembly has specified a part that cannot be made. **A surface finish specified as "smooth".** A bearing seat at $Ra\ 0.8$ and a seal running surface at $Ra\ 0.4$ are different requirements, and two surfaces at the same $Ra$ can behave very differently because $Ra$ says nothing about the **lay** or the **material ratio**. **A two-point measurement taken as proof of a fit.** A bore gauge measures the diameter across two points; a three-lobed bore can read the same at every two-point position and still have an inscribed circle smaller than its two-point size — it passes the bore gauge and fails the **go** plug. **Forgetting temperature.** Parts are toleranced at the ISO reference temperature of $20\ {}^{\circ}\mathrm{C}$ (ISO 1); a measurement at any other temperature must be corrected or the gauge and part must be of the same material at the same temperature.
 :::
 
 ## The ISO 286 system
 
 ::: definition Tolerance grades and the tolerance unit {#def-it}
-The **tolerance unit** is a formula and not a number:
+For sizes up to $500\ \mathrm{mm}$ and grades IT5 to IT18 the **standard tolerance** is a multiple of the **standard tolerance factor**
 $$
-i = 0.45\, \sqrt[3]{D} + 0.001\, D \qquad \left[ \mu\mathrm{m} \right]
+i = 0.45\, \sqrt[3]{D} + 0.001\, D \qquad \left[ \mu\mathrm{m},\ D \text{ in mm} \right]
 $$
-where $D$ is the **geometric mean** of the diameter step, in millimetres. The **standard tolerance** of grade IT is a multiple of $i$:
+where $D$ is the **geometric mean** of the limits of the nominal size step. The multiples are
 $$
 \begin{array}{c c c c c c c c c c}
-\text{Grade} & \mathrm{IT}01 & \mathrm{IT}0 & \mathrm{IT}1 & \mathrm{IT}2 & \mathrm{IT}3 & \mathrm{IT}4 & \mathrm{IT}5 & \mathrm{IT}6 & \mathrm{IT}7 \\
-\times\, i & 1 & 5 & 10 & 16 & 25 & 40 & 60 & 100 & 160 \\
-\hline
-\text{Grade} & \mathrm{IT}8 & \mathrm{IT}9 & \mathrm{IT}10 & \mathrm{IT}11 & \mathrm{IT}12 & \mathrm{IT}13 & \mathrm{IT}14 & \mathrm{IT}15 & \mathrm{IT}16 \\
-\times\, i & 250 & 400 & 640 & 1000 & 1600 & 2500 & 4000 & 6400 & 10000
+\text{Grade} & \mathrm{IT}5 & \mathrm{IT}6 & \mathrm{IT}7 & \mathrm{IT}8 & \mathrm{IT}9 & \mathrm{IT}10 & \mathrm{IT}11 & \mathrm{IT}12 & \mathrm{IT}13 \\
+\times\, i & 7 & 10 & 16 & 25 & 40 & 64 & 100 & 160 & 250
 \end{array}
 $$
-**The evaluation.** For a $\phi 30$ shaft the step is $24$ to $30\ \mathrm{mm}$, so $D = \sqrt{24 \times 30} = 26.83\ \mathrm{mm}$:
+so each grade from IT6 upward is about $1.6$ times the one before (the R5 preferred-number ratio $10^{1/5} = 1.585$), and every fifth grade is ten times larger. The fine grades IT01 to IT4 are given by separate formulas and are not multiples of $i$.
+**The evaluation.** A $\phi 30$ shaft lies in the step "over $18$ up to and including $30\ \mathrm{mm}$", so $D = \sqrt{18 \times 30} = 23.24\ \mathrm{mm}$ and
 $$
-i = 0.45 \times 2.994 + 0.0268 = 1.347 + 0.027 = 1.374\ \mu\mathrm{m}
+i = 0.45 \times 2.855 + 0.023 = 1.307\ \mu\mathrm{m} ,
 $$
 $$
-\mathrm{IT}5 = 82\ \mu\mathrm{m} \rightarrow 8\ \mu\mathrm{m}, \quad
-\mathrm{IT}6 = 137 \rightarrow 13\ \mu\mathrm{m}, \quad
-\mathrm{IT}7 = 220 \rightarrow 21\ \mu\mathrm{m}, \quad
-\mathrm{IT}8 = 343 \rightarrow 33\ \mu\mathrm{m}
+\mathrm{IT}5 = 7i = 9.2 \rightarrow 9\ \mu\mathrm{m}, \quad
+\mathrm{IT}6 = 10i = 13.1 \rightarrow 13\ \mu\mathrm{m}, \quad
+\mathrm{IT}7 = 16i = 20.9 \rightarrow 21\ \mu\mathrm{m}, \quad
+\mathrm{IT}8 = 25i = 32.7 \rightarrow 33\ \mu\mathrm{m}.
 $$
-(the tabulated values are rounded to a preferred series, which is why $\mathrm{IT}6 = 13$ and not $137$ — the formula gives the **trend** and the table gives the **number**).
-**The grades and what they mean commercially.**
+The tabulated values of ISO 286-1 are these products rounded; for real work the **table** is the authority and the formula explains its **trend**.
+**The grades and what they mean commercially** (indicative; the achievable grade depends on size, material and machine):
 $$
 \begin{array}{l l l}
-\text{Grade} & \text{Status} & \text{Process} \\
-\mathrm{IT}01\text{–}0 & \text{gauge and master} & \text{lapped, gauged, } 20 \pm 0.5\ {}^{\circ}\mathrm{C} \\
-\mathrm{IT}1\text{–}3 & \text{precision gauge} & \text{lapped, honed} \\
-\mathrm{IT}4\text{–}5 & \text{precision fit, gauge} & \text{fine bore, grind, hone} \\
-\mathrm{IT}6\text{–}7 & \text{the working fits} & \text{grind, ream, fine bore} \\
-\mathrm{IT}8\text{–}9 & \text{general engineering} & \text{mill, turn, drill, ream lightly} \\
-\mathrm{IT}10\text{–}11 & \text{loose, welding, fabrication} & \text{flame-cut, sawn, cast} \\
-\mathrm{IT}12\text{–}16 & \text{not a fit} & \text{as-cast, as-rolled, as-cut}
+\text{Grade} & \text{Typical use} & \text{Typical process} \\
+\mathrm{IT}01\text{–}3 & \text{gauge blocks, gauges, masters} & \text{lapping, at } 20\ {}^{\circ}\mathrm{C} \\
+\mathrm{IT}4\text{–}5 & \text{precision fits, bearing seats} & \text{fine grinding, honing} \\
+\mathrm{IT}6\text{–}7 & \text{the working fits} & \text{grinding, reaming, fine boring} \\
+\mathrm{IT}8\text{–}9 & \text{general engineering} & \text{turning, milling, boring} \\
+\mathrm{IT}10\text{–}11 & \text{loose fits, non-critical sizes} & \text{rough turning, drilling, punching} \\
+\mathrm{IT}12\text{–}16 & \text{not a fit} & \text{as-cast, as-rolled, flame-cut, sawn}
 \end{array}
 $$
-**The rule of thumb that is worth more than the table.** **A hole costs more to tighten than a shaft of the same grade**, because a hole is made by a fixed-size tool and a shaft by a travelling one; the system's answer is the **hole-basis** convention, in which the hole is the standard tool and the shaft is turned to the fit.
+**The rule of thumb that is worth more than the table.** **A hole is dearer to hold than a shaft of the same grade**, because a hole is usually finished by a fixed-size tool (drill, reamer, broach) and checked by a fixed-size gauge, while a shaft is turned or ground to any size the machine is set to. The system's answer is the **hole-basis** convention: the hole is $\mathrm{H}$, made with standard tools, and the shaft is made to whatever deviation gives the required fit.
 :::
 
 ::: definition Fundamental deviation and the fit {#def-fund}
-A tolerance zone is named by a **letter** (its position relative to the zero line) and a **number** (its size, the IT grade): $\phi 30\ \mathrm{H}7$ is a hole whose zone starts at the zero line and is $21\ \mu\mathrm{m}$ tall; $\phi 30\ \mathrm{g}6$ is a shaft whose zone hangs **below** the zero line and is $13\ \mu\mathrm{m}$ tall.
+A tolerance zone is named by a **letter** (its position relative to the nominal size, the "zero line") and a **number** (its width, the IT grade). $\phi 30\ \mathrm{H}7$ is a hole whose zone starts at the zero line and is $21\ \mu\mathrm{m}$ wide ($+0.021/0$); $\phi 30\ \mathrm{g}6$ is a shaft whose zone lies **below** the zero line and is $13\ \mu\mathrm{m}$ wide ($-0.007/-0.020$). Upper-case letters are holes, lower-case letters are shafts, and the **fundamental deviation** is the limit nearer the zero line.
 $$
 \begin{array}{l l l}
-\text{Hole letters} & A \to \mathrm{H} \to Z \mathrm{C} & \text{lower case for shafts, upper case for holes} \\
-\text{H} & EI = 0 & \text{the hole-basis datum hole} \\
-\text{h} & es = 0 & \text{the shaft-basis datum shaft} \\
-\text{a}\text{–}\mathrm{h}\ /\ \mathrm{A}\text{–}\mathrm{H} & \text{clearance} & \text{the fundamental deviation is the maximum} \\
-\text{j}\text{–}\mathrm{n}\ /\ \mathrm{J}\text{–}\mathrm{N} & \text{transition} & \\
-\text{p}\text{–}\mathrm{z}\mathrm{c}\ /\ \mathrm{P}\text{–}\mathrm{Z}\mathrm{C} & \text{interference} & \text{the fundamental deviation is the minimum}
+\text{Zones} & \text{Position} & \text{Fundamental deviation} \\
+\mathrm{H} & EI = 0 & \text{the hole-basis datum hole} \\
+\mathrm{h} & es = 0 & \text{the shaft-basis datum shaft} \\
+\mathrm{a}\text{–}\mathrm{h} & \text{below the zero line: clearance with H} & \text{the upper deviation } es \\
+\mathrm{js},\ \mathrm{j},\ \mathrm{k},\ \mathrm{m},\ \mathrm{n} & \text{straddling or just above: transition with H} & \text{the lower deviation } ei \\
+\mathrm{p}\text{–}\mathrm{zc} & \text{well above: interference with H (grade-dependent)} & \text{the lower deviation } ei
 \end{array}
 $$
-**The four fits every engineer should know by number.**
+**Six hole-basis fits at $\phi 30$** (step $18$–$30\ \mathrm{mm}$, deviations in mm from ISO 286-2; $X$ is clearance, negative for interference):
 $$
 \begin{array}{l c c c c l}
-\text{Fit} & \text{Hole} & \text{Shaft} & X_{\min} & X_{\max} & \text{Use} \\
-\mathrm{H}11 / \mathrm{c}11 & + 0.130 / 0 & - 0.280 / - 0.410 & 0.130 & 0.410 & \text{hot-rolled, a guard} \\
-\mathrm{H}9 / \mathrm{d}9 & + 0.052 / 0 & - 0.040 / - 0.092 & 0.040 & 0.144 & \text{a lever on a shaft, a cover} \\
-\mathrm{H}7 / \mathrm{g}6 & + 0.021 / 0 & - 0.007 / - 0.020 & 0.007 & 0.041 & \text{a running bearing, a sliding gear} \\
-\mathrm{H}7 / \mathrm{k}6 & + 0.021 / 0 & + 0.015 / + 0.002 & - 0.013 & 0.019 & \text{a gear located and light-pressed} \\
-\mathrm{H}7 / \mathrm{p}6 & + 0.021 / 0 & + 0.022 / + 0.009 & - 0.012 & 0.022 & \text{a bearing race on a shaft} \\
-\mathrm{H}7 / \mathrm{s}6 & + 0.021 / 0 & + 0.035 / + 0.022 & 0.001 & 0.035 & \text{a heavy press fit, a gear hub}
+\text{Fit} & \text{Hole} & \text{Shaft} & X_{\min} & X_{\max} & \text{Typical use} \\
+\mathrm{H}11 / \mathrm{c}11 & + 0.130 / 0 & - 0.110 / - 0.240 & 0.110 & 0.370 & \text{loose running, a guard pivot} \\
+\mathrm{H}9 / \mathrm{d}9 & + 0.052 / 0 & - 0.065 / - 0.117 & 0.065 & 0.169 & \text{free running, a lever on a shaft} \\
+\mathrm{H}7 / \mathrm{g}6 & + 0.021 / 0 & - 0.007 / - 0.020 & 0.007 & 0.041 & \text{sliding, a location that must move} \\
+\mathrm{H}7 / \mathrm{k}6 & + 0.021 / 0 & + 0.015 / + 0.002 & - 0.015 & 0.019 & \text{transition, an accurate location} \\
+\mathrm{H}7 / \mathrm{p}6 & + 0.021 / 0 & + 0.035 / + 0.022 & - 0.035 & - 0.001 & \text{locational interference} \\
+\mathrm{H}7 / \mathrm{s}6 & + 0.021 / 0 & + 0.048 / + 0.035 & - 0.048 & - 0.014 & \text{medium drive, a gear hub}
 \end{array}
 $$
-$X$ is positive for clearance and negative for interference. **The two numbers that decide a fit are the mean and the spread**, and the two questions are: **what is the worst assembly, and what fraction of assemblies are of the other kind?**
+$X_{\max}$ is the largest hole minus the smallest shaft and $X_{\min}$ the smallest hole minus the largest shaft. Note that $\mathrm{H}7/\mathrm{p}6$ at this size is an interference fit by only $1\ \mu\mathrm{m}$ at its loosest — it **locates** a part rigidly but it is not meant to transmit a large torque. **The two numbers that decide a fit are its limits; the two that describe a production batch are its mean and its spread**, and the two questions are: **what is the worst assembly, and what fraction of assemblies are of the other kind?**
 :::
 
 ::: definition The statistics of a fit {#def-stats}
-The limits guarantee that **no** assembly is outside the range, but the **behaviour** of the population is set by the mean and the standard deviation. Treating a machined dimension as **uniform** over its tolerance (which is roughly true of a machine setting that is not statistically controlled) gives $\sigma = t / \sqrt{12}$, and a **normal** distribution centred on the tolerance midpoint gives $\sigma = t / 6$.
+The limits guarantee that **no** good assembly is outside the range, but the **behaviour** of the population is set by the mean and the standard deviation. Treating a machined size as **uniform** over its tolerance (roughly true of a process that is not statistically controlled) gives $\sigma = t / \sqrt{12}$; a **normal** distribution whose $\pm 3\sigma$ fills the tolerance gives $\sigma = t / 6$. For the interference $I = d_{\mathrm{shaft}} - d_{\mathrm{hole}}$ with independent parts:
 $$
-\mu_X = \frac{X_{\min} + X_{\max}}{2}, \qquad
-\sigma_X = \sqrt{ \left( \frac{t_{\mathrm{hole}}}{\sqrt{12}} \right)^{2} + \left( \frac{t_{\mathrm{shaft}}}{\sqrt{12}} \right)^{2} }
+\mu_I = \frac{I_{\min} + I_{\max}}{2}, \qquad
+\sigma_I = \sqrt{ \left( \frac{t_{\mathrm{hole}}}{\sqrt{12}} \right)^{2} + \left( \frac{t_{\mathrm{shaft}}}{\sqrt{12}} \right)^{2} } \quad \text{(uniform parts)} .
 $$
-**The $\mathrm{H}7 / \mathrm{p}6$ result, which surprises everyone.** A $\phi 30\ \mathrm{H}7 / \mathrm{p}6$ is nominally an **interference** fit. Its limits are $- 0.012$ (a clearance of $12\ \mu\mathrm{m}$) to $+ 0.022$ (an interference of $22\ \mu\mathrm{m}$), its mean interference is
+**The $\mathrm{H}7 / \mathrm{m}6$ result, which surprises most people.** A $\phi 30\ \mathrm{H}7 / \mathrm{m}6$ is often thought of as a light press fit. The $\mathrm{m}6$ shaft is $+0.021/+0.008$, so the interference runs from $-13\ \mu\mathrm{m}$ (a clearance of $13$) to $+21\ \mu\mathrm{m}$, and
 $$
-\mu = \frac{12 \left( - 1 \right) + 22}{2} = + 5\ \mu\mathrm{m}, \qquad
-\sigma = \frac{1}{\sqrt{12}} \sqrt{21^{2} + 13^{2}} = \frac{24.7}{3.464} = 7.13\ \mu\mathrm{m}
+\mu_I = \frac{- 13 + 21}{2} = + 4\ \mu\mathrm{m}, \qquad
+\sigma_I = \frac{1}{\sqrt{12}} \sqrt{21^{2} + 13^{2}} = \frac{24.70}{3.464} = 7.13\ \mu\mathrm{m} .
 $$
-and the fraction of assemblies that come out as **clearances** is
+With a normal approximation the fraction of assemblies that come out with **clearance** is
 $$
-P \left( X > 0 \right) = P \left( z > \frac{- 5}{7.13} \right) \to P \left( Z < 0.70 \right) = 0.76
+P \left( I < 0 \right) = \Phi \left( \frac{0 - 4}{7.13} \right) = \Phi \left( - 0.56 \right) = 0.29 ,
 $$
-so **$24\ \%$ of $\mathrm{H}7 / \mathrm{p}6$ assemblies are loose**. This is not a defect and is not a mistake; it is why a $\mathrm{p}6$ location on a shaft carrying a reversing torque is a **bad** choice and an $\mathrm{s}6$ or a $\mathrm{u}6$ is the right one, and why a bearing's inner race on a rotating shaft is specified $\mathrm{m}6$ or $\mathrm{n}6$ **with a note that it will be pressed on cold or heated**.
-**The rule.** A transition fit is a **location** and not a **torque transmission**. If a fit must transmit a torque, its **minimum** interference must be computed against the torque and the friction coefficient at the **lowest** temperature, and the answer is a $\mathrm{u}$ or a $\mathrm{x}$ grade or a key.
+and a Monte Carlo simulation with uniformly distributed parts gives $0.31$. So **roughly three in ten $\mathrm{H}7 / \mathrm{m}6$ assemblies are slightly loose**. This is not a defect: a transition fit **locates**, and a part that must not rotate on it is secured by a key, a clamp or a shoulder.
+**The rule.** If a fit must transmit a torque by friction alone, its **minimum** interference — not its mean — must be checked against the torque, with the friction coefficient and the temperature at their worst, and the answer is usually an $\mathrm{s}$, $\mathrm{u}$ or $\mathrm{x}$ shaft or a key.
 :::
 
 ::: definition Interference-fit strength {#def-lame}
-The contact pressure of a plain interference fit comes from **Lamé's** thick-cylinder equations. For a solid shaft of diameter $d$ in a hub of outside diameter $D$, both of the same material:
+The contact pressure of a plain interference fit follows from **Lamé's** thick-cylinder equations (derived in the exercises). For a **solid** shaft of diameter $d$ in a hub of outside diameter $D$, both of the same material with modulus $E$ and Poisson's ratio $\nu$, a **diametral** interference $\delta$ produces a pressure $p$ given by
 $$
-\delta = p\, d \left[ \frac{1}{E} \left( \frac{d^{2} + 0}{d^{2} - 0} - \nu \right) + \frac{1}{E} \left( \frac{D^{2} + d^{2}}{D^{2} - d^{2}} + \nu \right) \right]
-= \frac{p\, d}{E} \left[ \left( 1 - \nu \right) + \left( \frac{D^{2} + d^{2}}{D^{2} - d^{2}} + \nu \right) \right]
+\delta = \frac{p\, d}{E} \left[ \left( 1 - \nu \right) + \left( \frac{D^{2} + d^{2}}{D^{2} - d^{2}} + \nu \right) \right]
+= \frac{p\, d}{E} \left[ \frac{D^{2} + d^{2}}{D^{2} - d^{2}} + 1 \right] ,
 $$
-and the transmitted torque is
+and the torque that friction can transmit over an engagement length $L$ with coefficient $\mu$ is
 $$
-T = \mu\, p\, \left( \pi d L \right) \frac{d}{2}, \qquad
-\sigma_{\theta,\mathrm{hub}} = p\, \frac{D^{2} + d^{2}}{D^{2} - d^{2}} \le 0.6\, \sigma_{y}
+T = \mu\, p\, \left( \pi d L \right) \frac{d}{2} .
 $$
-**The design check has three limits and the third is the one that is forgotten.** The **hub** must not yield, the **shaft** must not yield, and the **assembly temperature** must not be so high that the differential expansion relieves the fit:
+The hub's hoop stress at the bore is $\sigma_{\theta} = p\,(D^{2} + d^{2})/(D^{2} - d^{2})$ with a radial stress $\sigma_r = -p$; the hub must not yield under the **maximum** interference.
+**The design check has three limits and the third is the one that is forgotten.** The **hub** must not yield at maximum interference, the joint must carry the torque at **minimum** interference, and a change of **temperature** must not relieve the fit when the hub and shaft are of different materials. The loss of diametral interference is
 $$
-\delta_{T} = \delta \left[ \alpha_{\mathrm{hub}} - \alpha_{\mathrm{shaft}} \right] \Delta T \quad \text{(differential)} \qquad ; \qquad
-\delta_{\mathrm{eff}} = \delta - \delta_{T}
+\delta_{T} = d \left( \alpha_{\mathrm{hub}} - \alpha_{\mathrm{shaft}} \right) \Delta T , \qquad
+\delta_{\mathrm{eff}} = \delta - \delta_{T} .
 $$
-**The number that ends arguments.** A $\phi 50\ \mathrm{H}7 / \mathrm{s}6$ steel hub of $80\ \mathrm{mm}$ outside diameter and $60\ \mathrm{mm}$ length has a mean interference of $28\ \mu\mathrm{m}$, a contact pressure of $35\ \mathrm{MPa}$, and a torque capacity at $\mu = 0.12$ of
+**The numbers.** A $\phi 50\ \mathrm{H}7 / \mathrm{s}6$ steel hub of $80\ \mathrm{mm}$ outside diameter and $60\ \mathrm{mm}$ length: at $\phi 50$ (step $30$–$50$) $\mathrm{H}7 = +0.025/0$ and $\mathrm{s}6 = +0.059/+0.043$, so the interference is $18$ to $59\ \mu\mathrm{m}$ with a mean of $38.5\ \mu\mathrm{m}$. With $E = 206\ \mathrm{GPa}$ and $(D^{2} + d^{2})/(D^{2} - d^{2}) = 8900/3900 = 2.282$,
 $$
-T = 0.12 \times 35 \times \pi \times 50 \times 60 \times 25 = 198\ \mathrm{kN \cdot mm} = 198\ \mathrm{N \cdot m} .
+p_{\min} = \frac{0.018 \times 206\,000}{50 \times 3.282} = 22.6\ \mathrm{MPa}, \qquad
+T_{\min} = 0.12 \times 22.6 \times \pi \times 50 \times 60 \times 25 = 6.39 \times 10^{5}\ \mathrm{N \cdot mm} = 639\ \mathrm{N \cdot m}
 $$
-**The same joint at $150\ {}^{\circ}\mathrm{C}$** with a steel shaft in an aluminium hub loses $\delta \left( 23 - 12 \right) \times 10^{- 6} \times 130 = 0.028 \times 1.43 = 0.040\ \mathrm{mm}$ — **more than the whole interference** — and becomes a clearance.
+at $\mu = 0.12$; at the mean interference $p = 48.3\ \mathrm{MPa}$ and $T = 1.37\ \mathrm{kN \cdot m}$.
+**The same joint at $150\ {}^{\circ}\mathrm{C}$**, if the hub were aluminium ($\alpha \approx 23 \times 10^{-6}\ \mathrm{K^{-1}}$) on a steel shaft ($\alpha \approx 12 \times 10^{-6}\ \mathrm{K^{-1}}$) assembled at $20\ {}^{\circ}\mathrm{C}$, loses
+$$
+\delta_T = 50 \times \left( 23 - 12 \right) \times 10^{- 6} \times 130 = 0.072\ \mathrm{mm}
+$$
+— **more than the largest interference of $0.059\ \mathrm{mm}$** — and the hub comes loose.
 :::
 
 ::: widget plot
-f: 1/(1+exp(-1.702*x/7.13))
+f: 1/(1+exp(-1.702*(x-4)/7.13))
 x: -20, 30
 y: 0, 1
-labels: fraction with clearance or less
-caption: The cumulative fraction of $\phi 30\ \mathrm{H}7 / \mathrm{p}6$ assemblies with an interference **less than** $x$ micrometres, computed from a mean interference of $+ 5\ \mu\mathrm{m}$ and a standard deviation of $7.13\ \mu\mathrm{m}$. At $x = 0$ the curve reads $0.24$: **one assembly in four is a clearance** even though the fit is nominally an interference fit. The vertical lines at $- 12$ and $+ 22$ are the arithmetic limits, beyond which the fraction is exactly $0$ and exactly $1$ because the limits are guaranteed and the statistics are not.
+labels: fraction of assemblies with interference below x
+caption: The cumulative fraction of $\phi 30\ \mathrm{H}7 / \mathrm{m}6$ assemblies whose interference is **less than** $x$ micrometres, for a mean interference of $+4\ \mu\mathrm{m}$ and a standard deviation of $7.13\ \mu\mathrm{m}$ (a logistic approximation to the normal curve). Read the curve at $x = 0$: about $0.28$, so roughly three assemblies in ten have clearance although the fit is often treated as a press fit. The arithmetic limits are $-13$ and $+21\ \mu\mathrm{m}$; outside them the true fraction is exactly $0$ or $1$, because the limits are guaranteed and the statistical tails are not.
 :::
 
 ::: definition Surface texture {#def-texture}
 $$
 \begin{array}{l l l}
-\text{Parameter} & \text{Definition} & \text{Says} \\
-Ra & \text{arithmetical mean deviation of the profile} & \text{nothing about shape} \\
-Rz & \text{mean height of the ten highest peaks and deepest valleys} & \text{the extremes; the old } R_{\max} \text{ is the single tallest} \\
-Rq & \text{r.m.s. deviation} & \text{what an optical instrument measures} \\
-R3y & \text{three-point flat height} & \text{what a seal sees} \\
-Rmr & \text{material ratio at a given depth} & \text{bearing area, the only one that predicts wear} \\
-Rsk & \text{skewness} & \text{peaks or valleys} \\
-Rku & \text{kurtosis} & \text{spikes or plateau} \\
-\text{Lay} & m,\ c,\ r,\ o,\ x,\ m,\ c & \text{direction of the machining marks} \\
-\text{Spacing} & \lambda_c,\ \lambda_s & \text{the waviness and roughness cut-offs}
+\text{Parameter} & \text{Definition} & \text{What it tells you} \\
+Ra & \text{arithmetic mean deviation of the roughness profile} & \text{average height; nothing about shape} \\
+Rq & \text{root-mean-square deviation} & \text{as } Ra \text{, weighted towards large deviations} \\
+Rz & \text{maximum height (highest peak + deepest valley) in a sampling length} & \text{the extremes; averaged over five lengths} \\
+Rsk & \text{skewness of the height distribution} & \text{peaky (positive) or plateau-like (negative)} \\
+Rku & \text{kurtosis} & \text{spiky or bumpy} \\
+Rmr & \text{material ratio at a given depth} & \text{bearing area; from the Abbott–Firestone curve} \\
+\text{Lay} & \text{symbols } =,\ \perp,\ \mathrm{X},\ \mathrm{M},\ \mathrm{C},\ \mathrm{R},\ \mathrm{P} & \text{direction of the machining marks} \\
+\lambda_s,\ \lambda_c & \text{filter cut-off wavelengths} & \text{separate roughness from form and waviness}
 \end{array}
 $$
-**The W-rule.** The evaluation length and the **cut-off wavelength** are chosen from $Ra$: $\lambda_c = 10\, Ra$ for $Ra$ between $0.02$ and $10\ \mu\mathrm{m}$, and the sampling length is $\lambda_c$ with five sampling lengths in the evaluation length.
+**The default cut-off.** For a non-periodic profile measured by a stylus instrument, the cut-off wavelength $\lambda_c$ (which is also the sampling length) is chosen from the expected $Ra$, and the evaluation length is five sampling lengths. The ISO 4288:1996 table — now replaced by ISO 21920-3:2021, which drawings made before it still invoke — gives:
 $$
-\begin{array}{c c c c}
-Ra\ (\mu\mathrm{m}) & \lambda_c\ (\mathrm{mm}) & \text{Sampling length} & \text{Evaluation length} \\
-0.08 & 0.25 & 0.25 & 1.25 \\
-0.2 & 0.8 & 0.8 & 4.0 \\
-0.8 & 0.8 & 0.8 & 4.0 \\
-3.2 & 0.8 & 0.8 & 4.8 \\
-12.5 & 2.5 & 2.5 & 12.5
+\begin{array}{c c c}
+Ra\ (\mu\mathrm{m}) & \lambda_c = \text{sampling length}\ (\mathrm{mm}) & \text{Evaluation length}\ (\mathrm{mm}) \\
+> 0.006 \text{ to } 0.02 & 0.08 & 0.4 \\
+> 0.02 \text{ to } 0.1 & 0.25 & 1.25 \\
+> 0.1 \text{ to } 2 & 0.8 & 4 \\
+> 2 \text{ to } 10 & 2.5 & 12.5 \\
+> 10 \text{ to } 80 & 8 & 40
 \end{array}
 $$
-**The processes and their Ra.**
+**The processes and their typical Ra** ($\mu\mathrm{m}$; ranges overlap and depend on parameters and material):
 $$
-\begin{array}{l c l l c}
-\text{Flame-cut} & 25\text{–}100 & \text{Turn, fine} & 1.6\text{–}3.2 \\
-\text{Sand-cast} & 12.5\text{–}50 & \text{Turn, fine-fine} & 0.4\text{–}0.8 \\
-\text{Hot-rolled} & 25\text{–}50 & \text{Mill, fine} & 1.6\text{–}3.2 \\
-\text{Sand-blast} & 6.3\text{–}25 & \text{Drill} & 6.3\text{–}12.5 \\
-\text{Sawn} & 12.5\text{–}25 & \text{Ream} & 1.6\text{–}3.2 \\
-\text{Shear-cut} & 3.2\text{–}12.5 & \text{Bore, fine-bore} & 3.2\ /\ 0.8 \\
-\text{Turn, rough} & 12.5 & \text{Grind} & 0.4\text{–}1.6 \\
-\text{Cold-drawn bar} & 1.6\text{–}3.2 & \text{Hone} & 0.2\text{–}0.8 \\
-\text{Extrusion} & 1.6\text{–}6.3 & \text{Lap} & 0.025\text{–}0.1 \\
-& & \text{Superfinish} & 0.05\text{–}0.2
+\begin{array}{l c l c}
+\text{Flame-cut} & 12.5\text{–}50 & \text{Turn, finish} & 0.8\text{–}3.2 \\
+\text{Sand-cast} & 12.5\text{–}50 & \text{Mill, finish} & 0.8\text{–}3.2 \\
+\text{Hot-rolled} & 12.5\text{–}25 & \text{Drill} & 3.2\text{–}12.5 \\
+\text{Sawn} & 6.3\text{–}25 & \text{Ream} & 0.8\text{–}3.2 \\
+\text{Turn, rough} & 6.3\text{–}12.5 & \text{Bore, fine} & 0.4\text{–}1.6 \\
+\text{Cold-drawn bar} & 0.8\text{–}3.2 & \text{Grind} & 0.1\text{–}1.6 \\
+\text{Extrusion} & 0.8\text{–}3.2 & \text{Hone} & 0.1\text{–}0.8 \\
+& & \text{Lap, superfinish} & 0.025\text{–}0.2
 \end{array}
 $$
-**The three things Ra cannot see and a drawing must.** **The lay**, because a shaft seal runs on the **cross-hatch** of a hone and leaks on the unidirectional mark of a grind. **The material ratio**, because two surfaces at Ra $0.4$ — one a plateau-ground plateau and one a lapped spike-field — have a bearing area of $70\ \%$ and $20\ \%$ and a wear life of five to one. **The waviness**, because a $40\ \mu\mathrm{m}$-high, $20\ \mathrm{mm}$-long wave on a Ra $0.8$ face is a leak path that Ra reports as perfect.
+**Three things Ra cannot see and a drawing may need to state.** **The lay**: a rotary lip seal can pump oil out along a helical lead left by plunge or traverse grinding, which is why seal makers specify lead-free (plunge-ground) running surfaces. **The material ratio**: two surfaces at the same $Ra$ — one plateau-honed, one with sharp peaks — have very different bearing areas and running-in behaviour, and the material-ratio parameters ($Rmr$, $Rk$, $Rpk$, $Rvk$) describe the difference. **The waviness**: a long, shallow wave on a sealing face is filtered out by $\lambda_c$ and is invisible to $Ra$, but it is a leak path; it needs a waviness or flatness requirement of its own.
 :::
 
 ::: definition Gauging and the Taylor principle {#def-gauge}
-**Taylor's principle (1905).** A **go** gauge must check **all** the features of the part simultaneously — size, roundness, straightness, perpendicularity, position — and a **no-go** gauge must check **one** feature at a time. A go plug that enters is a hole that is **big enough, round enough and straight enough**; a no-go plug that does not enter is a hole whose **diameter alone** is too big.
+**Taylor's principle.** A **go** gauge should check **all** the features of the part simultaneously — it is a full-form gauge of the maximum-material boundary, the full length of the feature — and a **no-go** gauge should check **one** dimension at a time, at two points. A go plug that enters is a hole that is **big enough, round enough and straight enough** over its length; a no-go plug (or no-go pin) that does not enter is a hole whose **local size** is nowhere too big.
 $$
 \begin{array}{l c c c}
-\text{Feature} & \phi 30\ \mathrm{H}7\ \text{hole} & \text{GO plug} & \text{NOGO plug} \\
-\text{Nominal} & 30.000 & 30.000 & 30.021 \\
-\text{Gauge tolerance} & - & + 0.002 / 0 & 0 / - 0.002 \\
-\text{Wear allowance} & - & + 0.001 & \text{none} \\
-\text{Gauge size} & - & 30.001 \to 30.003 & 30.019 \to 30.021 \\
-\text{Gauge life} & - & \text{regrind at the wear limit} & \text{scrap at the limit}
+& \phi 30\ \mathrm{H}7\ \text{hole} & \text{GO plug} & \text{NO-GO plug} \\
+\text{Limit checked} & 30.000 \text{ to } 30.021 & 30.000\ (\text{MMC}) & 30.021\ (\text{LMC}) \\
+\text{Gauge-maker's tolerance} & - & 0.002,\ \text{inside the part zone} & 0.002,\ \text{inside the part zone} \\
+\text{Wear allowance} & - & 0.001 & \text{none} \\
+\text{New-gauge size} & - & 30.001 \text{ to } 30.003 & 30.019 \text{ to } 30.021 \\
+\text{Withdraw when worn to} & - & 30.000 & \text{below } 30.019
 \end{array}
 $$
-**The three gauge rules.** **The gauge tolerance is $5$ to $10\ \%$ of the part tolerance** and is placed **inside** the part's tolerance zone so that a gauge at its own limit still passes a good part. **The wear allowance is placed on the go side**, because a go gauge wears smaller and a no-go wears larger, and both wear **toward** accepting bad parts. **A gauge is calibrated against a master and not against the part**, because a gauge set to a part is a gauge that reproduces the part's errors.
-**The measurement-to-tolerance ratio.** The instrument's expanded uncertainty $U$ must satisfy
-$$
-U \le \frac{T}{10} \quad \text{(commercial)} \qquad U \le \frac{T}{4} \quad \text{(ISO } 14253\text{-1 default)} \qquad U \le \frac{T}{16} \quad \text{(aerospace)}
-$$
-**The number that ruins arguments.** A $\phi 30\ \mathrm{H}7$ hole has a $21\ \mu\mathrm{m}$ tolerance; a good outside micrometer has an expanded uncertainty of $2$ to $3\ \mu\mathrm{m}$, which is $T / 8$, and a **bore** gauge of the same quality has $4$ to $5\ \mu\mathrm{m}$, which is $T / 4.5$ — **at the ISO 14253 limit**. A drawing that specifies $\mathrm{H}6$ on a bore and offers no gauge method has specified an unmeasurable part, and the shop will sign it off with a plug gauge and be right to.
+**The three gauge rules.** **The gauge tolerance is a small fraction of the part tolerance** (of the order of $5$ to $10\ \%$; ISO 1938-1 tabulates the values) and is placed **inside** the part's tolerance zone, so that a gauge anywhere within its own tolerance never accepts a bad part — at the cost of rejecting a few good ones near the limits. **A plug gauge only wears smaller**, and the go plug does nearly all the wearing because it enters every good part; a worn go plug would accept undersize holes, so it carries a **wear allowance** and is withdrawn at the part's limit. The no-go plug seldom enters, and wearing smaller only makes it stricter. **A gauge is calibrated against a master** (gauge blocks or a setting ring) and not against a part, because a gauge set to a part reproduces the part's errors.
+**The measurement-to-tolerance ratio.** The expanded uncertainty $U$ of a measurement should be small compared with the tolerance $T$: the traditional "rule of ten" asks for $U \le T/10$, and a test-uncertainty ratio of at least $4 : 1$ is a common minimum in calibration practice. ISO 14253-1:2017 makes the consequence explicit: conformity is proved only inside the tolerance zone **reduced by** $U$ at each end, so a large $U$ eats the tolerance.
+**The number that settles arguments.** A $\phi 30\ \mathrm{H}7$ hole has a $21\ \mu\mathrm{m}$ tolerance. A two-point bore gauge with an expanded uncertainty of $4$ to $5\ \mu\mathrm{m}$ is at about $T / 4.5$, and after ISO 14253-1 guard-banding only about $12\ \mu\mathrm{m}$ of the $21$ remain as a provable acceptance zone. A drawing that specifies $\mathrm{H}6$ ($13\ \mu\mathrm{m}$) on such a bore with no stated gauging method has specified a part whose conformity the shop cannot prove with that instrument; a limit-plug pair is often the practical answer.
 :::
 
 ::: example A bearing fit, end to end {#ex-bearing}
-A $6208$ deep-groove bearing $\left( \phi 40 \right.$ bore, $\phi 80$ outside, $18\ \mathrm{mm}$ wide) runs a $2{,}800\ \mathrm{rpm}$ shaft, rotating with the inner race, with a radial load of $4\ \mathrm{kN}$ and a $\mathrm{k}5$ class normal load. Specify both fits, the seating shoulders, and the gauge method.
+A $6208$ deep-groove ball bearing ($\phi 40$ bore, $\phi 80$ outside, $18\ \mathrm{mm}$ wide, normal tolerance class) runs on a shaft that rotates with the inner ring at $2{,}800\ \mathrm{rpm}$, with a stationary radial load of $4\ \mathrm{kN}$ (about $0.12$ of the bearing's dynamic load rating, a normal-to-heavy load). Specify both fits, the shoulder geometry and the gauging.
 ::: solution
-**The rule from the bearing maker.** A **rotating** ring with a **normal-direction** load must have an **interference** fit on its seat, because a clearance lets the ring **creep** on the seat, and creep polishes the seat, destroys the location and produces the "fretting corrosion" that is really abrasion. A **stationary** ring takes a **clearance** fit so it can be pressed on and off.
-**The shaft.** $\phi 40\ \mathrm{k}5$: $+ 0.015 / + 0.002$, a tolerance of $13\ \mu\mathrm{m}$.
+**The rule from the bearing maker.** A ring that **rotates relative to the load** must have an **interference** fit on its seat, because with clearance the ring **creeps** round its seat, wearing it and causing fretting. A ring that is **stationary relative to the load** may have a **clearance** or transition fit, which lets it be fitted and removed easily and, for the floating bearing, slide axially.
+**The shaft.** For rotating inner-ring load on a ball bearing of this size, bearing makers' tables typically recommend $\mathrm{k}5$. At $\phi 40$ (step $30$–$50$), $\mathrm{k}5 = +0.013/+0.002$, a tolerance of $11\ \mu\mathrm{m}$. The bearing bore of the normal tolerance class (ISO 492) is $0/-0.012$, so
 $$
-\text{mean interference} = \frac{15 + 2}{2} = 8.5\ \mu\mathrm{m}, \qquad
-X_{\max} = 0 - 2 = - 2\ \mu\mathrm{m}\ (\text{interference}), \qquad
-X_{\min} = 12 - 15 = - 3\ \mu\mathrm{m}
+I_{\min} = 0.002 - 0 = 2\ \mu\mathrm{m}, \qquad
+I_{\max} = 0.013 - \left( - 0.012 \right) = 25\ \mu\mathrm{m}, \qquad
+\bar{I} = 13.5\ \mu\mathrm{m}
 $$
-(the bearing bore's tolerance for a normal class $\mathrm{ABEC}\text{-}1 / \mathrm{P}0$ at $\phi 40$ is $0 / - 12\ \mu\mathrm{m}$, so the fit range is an interference of $2$ to $15\ \mu\mathrm{m}$ — **all interference, no clearance**, which is what a rotating ring needs).
-**The housing.** $\phi 80\ \mathrm{H}7$: $+ 0.022 / 0$, with the bearing's outside tolerance $0 / - 19\ \mu\mathrm{m}$:
+— **all interference, no clearance**, which is what a rotating ring needs. (Note that the bearing's own bore tolerance lies **below** the nominal size, so a "transition" shaft class gives an interference fit with a bearing.)
+**The housing.** $\phi 80\ \mathrm{H}7$ (step $50$–$80$) is $+0.030/0$, and the bearing's outside diameter of the normal class is $0/-0.013$:
 $$
-\text{clearance range} = 0 \text{ to } 41\ \mu\mathrm{m}, \qquad \text{mean} = 20\ \mu\mathrm{m}.
+X_{\min} = 0 - 0 = 0, \qquad X_{\max} = 0.030 - \left( - 0.013 \right) = 43\ \mu\mathrm{m}, \qquad \bar{X} = 21.5\ \mu\mathrm{m}.
 $$
-**The seating shoulders.** The bearing's $r_{\min}$ is $1.1\ \mathrm{mm}$, so the shaft shoulder must be **less** than $1.1\ \mathrm{mm}$ in radius and the drawing says
-$$
-R 0.6 \text{ max at the shoulder, and the shoulder diameter } 46.0\ \mathrm{mm} \text{ max so the ring's } 1.1\ \text{corner is clear.}
-$$
-**The gauge method.** The $\phi 40\ \mathrm{k}5$ journal is checked with an **outside micrometer at two axial positions and two angular positions** — four readings — which controls the **roundness and the cylindricity to within the micrometer's own uncertainty** and is the honest maximum. The $\phi 80\ \mathrm{H}7$ housing bore is checked with a **go plug at $80.000$**, because a bore gauge at $T / 4.5$ cannot prove $\mathrm{H}7$ and a plug can.
-**The three notes the drawing must carry.** **"PRESS THE INNER RACE ONTO THE SHAFT AT $90\ {}^{\circ}\mathrm{C}$ MAXIMUM; NEVER PRESS ON THE OUTER RACE THROUGH THE BALLS."** **"THE SHAFT AND HOUSING TOLERANCES ARE PER ISO 286 AND THE BEARING TOLERANCES PER ISO 492 CLASS 0."** **"SURFACE ROUGHNESS OF THE SEATING SURFACES: SHAFT Ra $1.0$, HOUSING Ra $1.6$, NO LAY REQUIREMENT, NO UNDERCUT AT THE SHOULDERS."**
-**The one thing that is always wrong.** The **roundness** of the seating surfaces. A $\phi 40\ \mathrm{k}5$ shaft that is $40.008$ across the flats and $40.015$ across the corners has an **effective** interference of $8\ \mu\mathrm{m}$ and not $13$, and the bearing's catalogue interference assumes a round shaft. The note is **"$\bigcirc 0.004$ on the journal, $\square 0.004$ on the journal"**, and it costs nothing on a drawing and everything on a lathe.
+**The shoulders.** The bearing's ring chamfer is $r_{s\,\min} = 1.1\ \mathrm{mm}$, so the shaft and housing fillets must be **smaller** than $1.1\ \mathrm{mm}$ or the ring will ride up on the fillet and not seat; the catalogue gives a maximum fillet radius of $1\ \mathrm{mm}$ and a minimum shaft-shoulder diameter (about $47\ \mathrm{mm}$ for a $6208$) so that the shoulder is high enough to support the inner ring face. The drawing says **"R1 MAX"** and gives the shoulder diameter from the catalogue.
+**The form tolerances.** A size tolerance does not control roundness. Bearing makers recommend a cylindricity for the seats of a fraction of the diameter tolerance (for this class typically about $\mathrm{IT}5/2$, i.e. $5\ \mu\mathrm{m}$ on the shaft) and a run-out of the abutment shoulder; the drawing carries them as geometric tolerances.
+**The gauging.** The $\phi 40\ \mathrm{k}5$ seat is measured for size with a micrometer or comparator at several axial and angular positions, and its **form** is checked separately on a roundness instrument or in V-blocks, because two-point readings cannot detect odd-lobed out-of-roundness. The $\phi 80\ \mathrm{H}7$ housing bore is checked with **go and no-go plugs** ($80.000$ and $80.030$), because a plug finds the inscribed size directly.
+**The notes the drawing must carry.** **"BEARING TO BE HEATED (MAX. $120\ {}^{\circ}\mathrm{C}$) FOR MOUNTING ON THE SHAFT; NEVER APPLY MOUNTING FORCE THROUGH THE ROLLING ELEMENTS."** **"SHAFT AND HOUSING TOLERANCES TO ISO 286; BEARING TO ISO 492 NORMAL CLASS."** **"SEAT ROUGHNESS: SHAFT $Ra\ 0.8$, HOUSING $Ra\ 1.6$."**
 
-*Check.* The mean interference of $8.5\ \mu\mathrm{m}$ on a $\phi 40$ seat gives a contact pressure of about $11\ \mathrm{MPa}$ and a torque capacity of $35\ \mathrm{N \cdot m}$, against a transmitted torque of $P / \omega = 15{,}000 / 293 = 51\ \mathrm{N \cdot m}$ — **the fit alone is not enough**, and the bearing must be located axially and its torque taken by an **abutting sleeve and a shaft shoulder**, not by the fit. $\checkmark$
+*Check.* Shaft $40.002$ to $40.013$ against bore $39.988$ to $40.000$: the smallest shaft is still larger than the largest bore, so every assembly has interference ($2$ to $25\ \mu\mathrm{m}$). Housing $80.000$ to $80.030$ against outer ring $79.987$ to $80.000$: the smallest bore is never smaller than the largest ring, so every assembly has clearance or line-to-line contact ($0$ to $43\ \mu\mathrm{m}$). $\checkmark$
 
-*Sanity.* The reason a rotating-ring fit is an interference and a stationary-ring fit is a clearance is not the torque but the **creep**: a ring that slips a few micrometres per revolution on its seat will have worn a visible ring on the shaft within $500$ hours, and the wear debris goes into the grease.
+*Sanity.* The fit is chosen by **which ring rotates relative to the load**, not by the torque: the bearing's rings carry only the bearing's small friction torque, and the shaft power passes through the shaft itself. An inner ring left with clearance on a rotating shaft slowly walks round its seat and wears it — the classic symptom is a polished, fretted shaft seat found at the first overhaul.
 :::
 :::
 
 ::: example A tolerance stack that must not go negative {#ex-stack}
-A shaft assembly: housing $120^{+0.5}_{0}$, two bearings each $18\ \mathrm{mm}$ wide at $\pm 0.05$, a spacer $60 \pm 0.1$, an inner-race spacer $8 \pm 0.05$ and a circlip groove of depth $2.5 \pm 0.1$. The bearing's axial end-float must be $0.05$ to $0.25\ \mathrm{mm}$. Dimension the stack.
+Two $6208$ bearings sit in a housing bore, separated by an outer spacer and retained by a circlip. The axial end float $F$ of the outer rings must lie between $0.05$ and $0.25\ \mathrm{mm}$. The members are: the housing length from the bore shoulder to the circlip-groove flank $A = 98.35^{+0.30}_{\ \ 0}$; two bearings of width $W = 18^{\ \ 0}_{-0.12}$ (the ISO 492 width tolerance of the normal class); an outer spacer $S = 60 \pm 0.10$; and a circlip of thickness $c = 2.5^{\ \ 0}_{-0.06}$. Analyse the stack.
 ::: solution
-**The loop.** The end-float is
+**The loop.** Going round the loop from the shoulder to the groove flank,
 $$
-F = 120 - 2 \times 18 - 60 - 8 - 2.5 + C
+F = A - 2W - S - c .
 $$
-where $C$ is the circlip's own thickness allowance; the **nominal** is $120 - 36 - 60 - 8 - 2.5 = 13.5$ and the loop must be closed by the circlip groove's position, so the drawing's job is to dimension the **groove depth** to land $F$ in the band.
-**The stack, worst case.**
+With every member at the **middle** of its tolerance — $A = 98.50$, $W = 17.94$, $S = 60.00$, $c = 2.47$ —
 $$
-\begin{array}{l c r}
-\text{Housing bore depth} & + 0.5 / 0 & + 0.5,\ 0 \\
-\text{Two bearings} & \pm 0.05 & - 0.10 \\
-\text{Spacer} & \pm 0.1 & - 0.20 \\
-\text{Race spacer} & \pm 0.05 & - 0.10 \\
-\text{Groove depth} & \pm 0.1 & - 0.10 \\
+\bar{F} = 98.50 - 35.88 - 60.00 - 2.47 = 0.15\ \mathrm{mm},
+$$
+exactly the middle of the required band.
+**The stack, worst case.** The worst-case range of $F$ is the sum of all the tolerance widths:
+$$
+\begin{array}{l c}
+\text{Housing length } A & 0.30 \\
+\text{Two bearings, } 2 \times 0.12 & 0.24 \\
+\text{Spacer } S & 0.20 \\
+\text{Circlip } c & 0.06 \\
 \hline
-\text{Worst-case range of } F & & 0 \text{ to } + 0.50\ \mathrm{mm}
+\text{Worst-case range of } F & 0.80
 \end{array}
 $$
-**The verdict.** The worst case spans $0.50\ \mathrm{mm}$ against a required band of $0.20\ \mathrm{mm}$, and the **lower** extreme of $0$ is a **preload**, which for a deep-groove ball bearing at $4\ \mathrm{kN}$ radial is a $30\ \%$ life reduction and a $15\ {}^{\circ}\mathrm{C}$ temperature rise. **The stack fails.**
-**The three fixes, in the order a designer should try them.**
-1. **Loosen the non-critical members.** The $60\ \mathrm{mm}$ spacer at $\pm 0.1$ is a **turned** part and can be $\pm 0.02$ for $1.2$ times the cost; the housing's $+ 0.5$ is a **machined** depth and can be $+ 0.1$ if it is bored in one setup. The stack becomes $0.10$ to $0.30$ — still wrong, but the right shape.
-2. **Add a shim.** The professional answer: a shim pack of $0.2$ to $0.6\ \mathrm{mm}$ in $0.05$ increments, selected at assembly from a set of five, with the note **"SELECT SHIM TO GIVE AN AXIAL END-FLOAT OF } 0.10 \text{ TO } 0.15\ \mathrm{mm}"**. The stack tolerance is then **absorbed** and every member can stay at its cheap value.
-3. **Preload deliberately with a spring.** For a high-stiffness spindle the answer is a **wave spring** and a **defined** preload of $300\ \mathrm{N}$, with the stack tolerance taken up by the spring's rate.
-**The RSS check.** With the tightened values, $\sigma = \sqrt{0.1^{2} + 0.05^{2} \times 2 + 0.033^{2} \times 2 + 0.033^{2}} / \sqrt{12}$... using uniform $\sigma = t / \sqrt{12}$:
+so $F$ can lie anywhere from $0.15 - 0.40 = -0.25$ to $0.15 + 0.40 = 0.55\ \mathrm{mm}$. Against a required band $0.20\ \mathrm{mm}$ wide, **the stack fails**: at one extreme the bearings are preloaded axially against each other, at the other they have more than twice the permitted float.
+**Fix 1 — tighten what can be tightened.** The spacer can be ground to $\pm 0.02$ and the housing length bored to $+0.10/0$ (with $A$ re-centred so that $\bar{F}$ stays $0.15$). The worst-case range becomes $0.10 + 0.24 + 0.04 + 0.06 = 0.44\ \mathrm{mm}$ — **still more than twice the band**, because the bought-in bearings' width tolerance of $0.24$ on its own exceeds the $0.20$ band. No amount of machining of the designer's own parts can rescue this stack.
+**The RSS check of the tightened stack.** With uniformly distributed members, $\sigma = t/\sqrt{12}$ each:
 $$
-\sigma = \sqrt{ \frac{0.1^{2}}{12} + 2 \frac{0.029^{2}}{12} + \frac{0.033^{2}}{12} + \frac{0.029^{2}}{12} + \frac{0.058^{2}}{12} } = \sqrt{0.00083 + 0.00014 + 0.00009 + 0.00007 + 0.00028} = 0.039\ \mathrm{mm}
+\sigma_F = \sqrt{ \frac{0.10^{2} + 2 \times 0.12^{2} + 0.04^{2} + 0.06^{2}}{12} } = \sqrt{ \frac{0.0440}{12} } = 0.0606\ \mathrm{mm},
 $$
-and the $\pm 3\sigma$ band is $\pm 0.117\ \mathrm{mm}$ about a mean of $0.20$, giving $0.083$ to $0.317$ — **$1.7\ \%$ of assemblies below the $0.05$ minimum**, which is why the shim is the answer and the RSS is a way of **proving that the cheap route is not cheap**.
+and the band $0.15 \pm 0.10$ is $\pm 1.65\,\sigma$, so a normal approximation puts about $10\ \%$ of assemblies outside it (a Monte Carlo simulation of the uniform members gives the same $10\ \%$). The statistics confirm that the cheap route is not cheap: one build in ten would have to be stripped.
+**Fix 2 — a selected shim.** Make $A$ about $0.5\ \mathrm{mm}$ longer so that a shim is always needed, measure the gap at assembly and fit shims from a set in $0.05\ \mathrm{mm}$ steps. The note reads **"SELECT SHIMS TO GIVE AN AXIAL END FLOAT OF $0.10$ TO $0.20\ \mathrm{mm}$; RECORD THE SHIM THICKNESS."** The stack is then absorbed at assembly and every member can keep its economical tolerance.
+**Fix 3 — a spring.** Where some axial preload is acceptable (for example to reduce noise in a small electric motor), a **wave spring** in place of the shim takes up the stack and gives a defined preload set by its rate and deflection.
 
-*Sanity.* The reason a bearing stack is shimmed in almost every machine is that the alternative — holding $\pm 0.01$ on five members — costs more than the shim, the shim-fitter and the five shims put together. The shim is a **tolerance absorber**, and a drawing that has one is a drawing whose author has done the stack.
+*Sanity.* The bearings' width tolerance is the single largest contributor and it is not the designer's to change. When a bought-in part's tolerance alone exceeds the functional band, the stack **must** be closed by an adjustment — a shim, a spring, an adjustable nut — and the drawing must say how.
 :::
 :::
 
 ::: example Statistical versus worst-case assembly {#ex-stat}
-A cover is located by two $\phi 6\ \mathrm{H}7 / \mathrm{h}6$ dowel pins at $80\ \mathrm{mm}$ centres, and the cover's holes are $\phi 6\ \mathrm{H}7$. The cover's hole pattern is drilled to $\pm 0.05$ and the base's are bored to $\pm 0.02$. Give the worst-case and the statistical misalignment, and decide whether the pattern can be drilled.
+A cover is located on a base by two $\phi 6\ \mathrm{h}6$ dowel pins at $80\ \mathrm{mm}$ centres, pressed into the base. The cover's two holes are $\phi 6\ \mathrm{H}7$. The cover's hole centres are drilled to $80 \pm 0.05$ and the base's are bored to $80 \pm 0.02$. Will the cover go on?
 ::: solution
-**The loop per hole.** The pin is $\phi 6\ \mathrm{h}6$: $0 / - 0.008$. The hole is $\phi 6\ \mathrm{H}7$: $+ 0.012 / 0$. The **radial** play per hole is therefore $0$ to $0.020\ \mathrm{mm}$, with a mean of $10\ \mu\mathrm{m}$.
-**The pattern error.** The cover's two holes are at $80 \pm 0.05$ and the base's at $80 \pm 0.02$, so the **centre-distance** mismatch is
+**The play per hole.** The pin is $\phi 6\ \mathrm{h}6$: $0/-0.008$. The hole is $\phi 6\ \mathrm{H}7$: $+0.012/0$. The **diametral** clearance is therefore $0$ to $0.020\ \mathrm{mm}$, so each pin can move **radially** in its hole by $0$ to $0.010\ \mathrm{mm}$.
+**The pattern error.** The centre-distance mismatch between cover and base is at most
 $$
-\text{worst case} = 0.05 + 0.02 = 0.07\ \mathrm{mm}, \qquad
-\text{RSS} = \sqrt{0.05^{2} + 0.02^{2}} = 0.054\ \mathrm{mm}.
+\text{worst case} = 0.05 + 0.02 = 0.07\ \mathrm{mm}.
 $$
-**The assembly condition.** The cover will go on if the **centre-distance mismatch** can be absorbed by the **sum of the radial plays** at the two holes. Worst case, the available play is $2 \times 20 = 40\ \mu\mathrm{m}$ at the two holes combined, and the required absorption is $70\ \mu\mathrm{m}$.
+**The assembly condition.** The cover goes on if the mismatch can be absorbed by the **sum of the radial plays** at the two holes, which is at most $0.010 + 0.010 = 0.020\ \mathrm{mm}$ and at worst zero:
 $$
-70 > 40 \quad \Rightarrow \quad \textbf{the cover does not go on, worst case.}
+0.07 > 0.02 \quad \Rightarrow \quad \textbf{the cover is not guaranteed to go on.}
 $$
-**The statistical condition.** The mean play per hole is $10\ \mu\mathrm{m}$ and the mean mismatch is $54\ \mu\mathrm{m}$ against a mean available play of $20\ \mu\mathrm{m}$ — **it does not go on even on average**.
+**Statistically.** The mismatch has a mean of zero and (for uniform errors) a standard deviation of $\sqrt{0.10^{2}/12 + 0.04^{2}/12} = 0.031\ \mathrm{mm}$, while the available radial play averages only $0.010\ \mathrm{mm}$. A Monte Carlo simulation of uniformly distributed sizes and positions gives about **$20\ \%$** of covers that go on — four in five do not.
 **The three fixes.**
-1. **Open the cover's holes to $\phi 6.2$** (a $0.1\ \mathrm{mm}$ radial clearance) and locate on **one** dowel only, with the second hole a clearance. This is the standard answer and the reason a two-dowel pattern is always $\phi 6$ and $\phi 6.2$ and not two $\phi 6$.
-2. **Ream both patterns in assembly** — "REAM TO FIT, $\phi 6\ \mathrm{H}7$" — which is cheap, correct and destroys interchangeability.
-3. **Tighten the cover's drilling to $\pm 0.01$** with a bushed jig, which costs $2.5$ times the drilling and buys nothing if the base is bored to $\pm 0.02$ anyway.
-**The choice.** **One locating dowel and one clearance dowel**, because a two-dowel pattern makes the **pattern tolerance** the assembly tolerance, and the pattern tolerance is always the loosest thing in the design.
-*Sanity.* The reason a two-dowel pattern is $\phi 6$ and $\phi 6.2$ and not two $\phi 6$ is that the second dowel adds **no** locating accuracy — the first dowel and the two holes already define the position — and adds **only** a constraint that must be satisfied. A second close dowel is a **statical overconstraint**, and the drawing that has one is a drawing whose author has not drawn the free-body diagram of the cover.
+1. **Locate on one dowel and let the second one take only rotation.** Make the cover's second hole a **slot** along the line of centres, or a clearance hole such as $\phi 6.2$ (radial clearance up to $0.1\ \mathrm{mm}$, which absorbs the $0.07$). This is the standard answer.
+2. **Drill and ream both parts together at assembly** — "REAM $\phi 6\ \mathrm{H}7$ IN ASSEMBLY" — which is cheap and accurate but destroys interchangeability.
+3. **Hold both patterns much tighter** with a jig or a machining centre, which costs money and still leaves no margin unless the total mismatch falls below the guaranteed play.
+**The choice.** **One round dowel and one slot (or clearance hole).** Two close-fitting dowels over-constrain the cover: once the first dowel fixes the position, the second needs to fix only the rotation, and any extra closeness just turns the pattern tolerance into an assembly problem.
+
+*Sanity.* A body in a plane has three degrees of freedom; one round dowel removes two and a slot removes the third. Two round dowels remove four, so one of the constraints must be satisfied by luck — and luck is what the $20\ \%$ measures.
 :::
 :::
 
 ::: example Gauging an H7 bore {#ex-gauge}
-Specify the go and no-go plug gauges for a $\phi 40\ \mathrm{H}7$ bore, with a gauge tolerance of $10\ \%$ of the part tolerance and a wear allowance of $1\ \mu\mathrm{m}$, and give the gauge sizes and their limits.
+Specify the go and no-go plug gauges for a $\phi 40\ \mathrm{H}7$ bore, with a gauge-maker's tolerance of $10\ \%$ of the part tolerance and a wear allowance of $1\ \mu\mathrm{m}$, and give the gauge sizes.
 ::: solution
-**The part.** $\phi 40\ \mathrm{H}7$: $+ 0.025 / 0$, a tolerance of $25\ \mu\mathrm{m}$.
+**The part.** $\phi 40\ \mathrm{H}7$ (step $30$–$50$): $+0.025/0$, a tolerance of $25\ \mu\mathrm{m}$.
 **The gauge tolerance.** $10\ \%$ of $25 = 2.5\ \mu\mathrm{m}$, placed **inside** the part's zone.
-**The wear allowance.** $1\ \mu\mathrm{m}$ on the **go** side only, placed **inside** the gauge tolerance.
+**The wear allowance.** $1\ \mu\mathrm{m}$ on the **go** gauge only, also inside the part's zone, so that the go gauge starts slightly above the part's minimum and wears down towards it.
 $$
 \begin{array}{l c c}
-& \text{GO plug} & \text{NOGO plug} \\
-\text{Gauge nominal} & 40.000 & 40.025 \\
-\text{Wear allowance} & + 0.001 & - \\
-\text{New-gauge limit} & + 0.0035 & - 0.0025 \\
-\text{GO size, new} & 40.001 \to 40.0035 & 40.0225 \to 40.025 \\
-\text{GO size, worn} & 40.000 \to 40.0025 & \text{scrap at } 40.0225 \\
-\text{Setting} & \text{against a gauge block at } 40.000 & \text{against a gauge block at } 40.025
+& \text{GO plug} & \text{NO-GO plug} \\
+\text{Part limit gauged} & 40.000 & 40.025 \\
+\text{New-gauge size} & 40.001 \text{ to } 40.0035 & 40.0225 \text{ to } 40.025 \\
+\text{Withdraw when worn to} & 40.000 & \text{below } 40.0225 \\
+\text{Setting master} & \text{gauge blocks at } 40.000 & \text{gauge blocks at } 40.025
 \end{array}
 $$
-**The three rules this illustrates.** **The go gauge is made at the part's maximum-material size plus the wear allowance**, so that it wears **into** tolerance and not out of it. **The no-go gauge is made at the part's least-material size minus its gauge tolerance**, so that it can never pass a part that is oversize. **The go gauge is regrindable and the no-go is not**, because a go gauge that has worn to its lower limit is still a **correct** gauge of a **worn** condition, while a no-go that has worn smaller passes bad parts and cannot be restored.
-**The calibration.** Both gauges are calibrated against **grade 0 gauge blocks** at $20 \pm 0.5\ {}^{\circ}\mathrm{C}$, and the drawing carries the note **"GAUGES TO BE CALIBRATED AGAINST GRADE 0 BLOCKS AT $20\ {}^{\circ}\mathrm{C}$; THE PART IS ACCEPTED IF THE GO ENTERS AND THE NOGO DOES NOT"**.
-**The one thing the gauge cannot check.** The bore's **perpendicularity** to its datum face and its **position** — which is why a go plug for a **located** bore is made **long** (four times its diameter) so that it checks the axis's angle as well, and why a short plug is legitimate only for a bore whose axis does not matter.
+**The rules this illustrates.** **The go gauge is made at the part's maximum-material size plus the wear allowance**, so that it can wear for a long time before reaching the part's limit. **The no-go gauge is made at the part's least-material size minus its gauge tolerance**, so that it can never accept an oversize hole. **A worn go gauge is withdrawn at the part limit**, because below it it would accept undersize holes; a no-go plug wears very little, and if it does wear smaller it only rejects more parts.
+**The calibration.** Both gauges are calibrated against gauge blocks or a setting ring at $20\ {}^{\circ}\mathrm{C}$, and the part is accepted if **the go gauge enters over the full length of the bore and the no-go gauge does not enter**.
+**What the gauges cannot check.** The bore's **perpendicularity** to its face and its **position** relative to other features. A full-length go plug checks that the bore is straight enough to accept a perfect cylinder of its maximum-material size; orientation and location need a functional gauge or a coordinate measurement against the datums.
 
-*Sanity.* The $10\ \%$ gauge tolerance and the $1\ \mu\mathrm{m}$ wear allowance are the **BS 919** and **ISO 1938** recommendations, and the reason they are placed **inside** the part's tolerance is the **producer's risk**: a gauge at its own worst condition must still reject a bad part, and the cost of that guarantee is $2.5\ \mu\mathrm{m}$ of the part's $25$, which is the **consumer's** contribution to the cost of certainty.
+*Sanity.* Placing the gauge tolerance inside the part tolerance protects the **customer**: a gauge anywhere within its own tolerance can never accept a bad part. The price is paid by the **producer**, who loses $2.5 + 1 = 3.5\ \mu\mathrm{m}$ of the $25\ \mu\mathrm{m}$ tolerance at the go end and $2.5\ \mu\mathrm{m}$ at the no-go end — about a quarter of the tolerance in all — and will occasionally reject a good part near the limits.
 :::
 :::
 
 ::: history
-The **limit system** was invented in the **Royal Small Arms Factory at Enfield** and the **Springfield Armory** in the 1860s and made general by the **US Army's 1895 Springfield tolerances**, which specified $+ 0.003 / - 0.000$ on a rifle bolt and are the first documented use of a **unilateral** tolerance on a **functional** dimension; the **British** answer came from the **Munitions Supply Board's 1916 "Report on the System of Limits and Tolerances"** — the **Newcastle** scheme — which was the first national standard, and the **American** from the **Federal Standard 38** of 1925 and the **ASA B4a** of 1926. **The tolerance unit formula** $i = 0.45\sqrt[3]{D} + 0.001 D$ is **J. E. Kirkpatrick**'s 1899 fit for the observed scatter of hand-fitted work, and the **IT grade ladder** in a $\sqrt{10}$-per-decade progression is the **ISO R11/R2** preferred-number system applied to tolerance by the **ISA** in 1929. **The hole-basis convention** is a **tooling** decision: a set of reamers is a capital investment and a lathe is free, and the **1929** standardisation of the **H** hole was an explicit decision to make the **standard tool** the **datum**. **The Taylor principle** is **Charles Le Maistre Taylor**'s 1905 address to the **Institution of Mechanical Engineers** on "The Gauging of Limit Work", which is the founding document of dimensional metrology and the origin of the sentence "a plug gauge that enters is a hole that is good and a ring that does not enter is a shaft that is good, and the two are not the same statement". **The statistics of fits** descend from **Shewhart**'s 1931 *Economic Control* and **E. S. Buffum**'s 1943 *Statistical Analysis of Engineering Tolerances*, which first published the **RSS** rule for engineering stacks and showed that the worst-case stack of a six-part assembly was **four times** too conservative. **The surface-texture parameters** are the **1966 ISO 4287** standardisation of **Schmaltz**'s and **Thomas**'s 1930s profilometry, and the **material-ratio curve** is **Abbott**'s 1937 "Note on a new method of describing surface finish" from the **McGee Valve Company**, which is still the only parameter that predicts a bearing's running-in.
+The idea of controlling size by **limits** rather than by fitting each part to its mate grew up in the armouries and machine shops of the nineteenth century and was formalised in national and company limit systems early in the twentieth. **William Taylor** of Taylor, Taylor & Hobson filed a British patent in **1905** on the gauging of screw threads that set out what is now called **Taylor's principle**: the go gauge must check all the elements of the feature together and the no-go gauges each element separately. An international system of limits and fits was developed by the **International Federation of the National Standardizing Associations (ISA)** before the Second World War; ISO took up the work in **1949** on the basis of the ISA studies and published **ISO/R 286** in **1962**, which was revised as **ISO 286-1** and **ISO 286-2** in **1988** and again in **2010** — the editions in force today. The statistical view of variation comes from **Walter A. Shewhart**, whose *Economic Control of Quality of Manufactured Product* (**1931**) founded statistical process control. The **bearing-area (material-ratio) curve** was introduced by **E. J. Abbott** and **F. A. Firestone** in **1933**, and the surface-texture parameters were standardised internationally in ISO 4287 and ISO 4288, replaced in **2021** by the **ISO 21920** series.
 :::
 
 ## Where this leads
@@ -312,162 +306,163 @@ The **limit system** was invented in the **Royal Small Arms Factory at Enfield**
 Tolerances are the numbers that [[engineering-graphics/dimensioning]] places and that [[engineering-graphics/geometric-tolerancing]] extends to shape and position; the gauging of a fit is the metrology of [[manufacturing/metrology-quality]] and the statistics of a stack are the statistics of [[design-process/design-for-manufacture]].
 
 ::: summary
-- A tolerance zone is a letter and a number: the letter is where, the number is how big, and the number is a multiple of $i = 0.45\sqrt[3]{D} + 0.001D$.
-- Holes are the standard tools and shafts are the adjustable members, which is why the system is hole-basis.
-- A nominal interference fit can be a clearance a quarter of the time; a transition fit locates and never transmits a torque.
-- An interference fit's torque is $\mu p \pi d L (d / 2)$, and its enemy is the differential expansion between two materials.
-- Ra describes the height of the profile and nothing about its shape, its lay or its waviness; a seal runs on the material ratio and not on Ra.
-- A go gauge checks everything and a no-go checks one thing; a micrometer on an H6 bore is a measurement that proves nothing.
-- A tolerance stack is either absorbed by a shim, a spring or a clearance dowel, or it is paid for at $3.5\times$ the part cost.
+- A tolerance zone is a letter and a number: the letter is where it lies relative to the nominal size, the number is how wide it is; from IT5 up, the width is a multiple of $i = 0.45\sqrt[3]{D} + 0.001D$.
+- Holes are made by fixed-size tools and checked by fixed-size gauges, which is why the preferred system is hole-basis.
+- A transition fit such as $\mathrm{H}7/\mathrm{m}6$ comes out with clearance in roughly three assemblies in ten; a transition fit locates and does not transmit torque by friction.
+- An interference fit's torque is $\mu p \pi d L (d / 2)$, checked at the **minimum** interference; its enemies are temperature and dissimilar expansion coefficients.
+- $Ra$ describes the average height of the roughness profile and nothing about lay, material ratio or waviness.
+- A go gauge checks the full form at maximum material; a no-go checks one size at least material; measurement uncertainty reduces the provable tolerance.
+- A tolerance stack that a bought-in part's tolerance alone overfills must be closed by an adjustment — a shim, a spring or a slot — and the drawing must say so.
 :::
 
 ::: quiz
-A $\phi 30\ \mathrm{H}7/\mathrm{p}6$ joint is nominally an interference fit. What fraction of assemblies come out as clearances?
-- [ ] None — the limits guarantee interference
+A $\phi 30\ \mathrm{H}7/\mathrm{m}6$ fit has an interference from $-13$ to $+21\ \mu\mathrm{m}$. With uniformly distributed part sizes, roughly what fraction of assemblies have clearance?
+- [ ] None — the fit is a press fit
 - [ ] About $2\ \%$
-- [x] About $24\ \%$
-- [ ] Half
+- [x] About $30\ \%$
+- [ ] About half
 ::: solution
-About $24\ \%$. The limits run from a $12\ \mu\mathrm{m}$ clearance to a $22\ \mu\mathrm{m}$ interference, the mean interference is $+5\ \mu\mathrm{m}$ and the standard deviation $7.13\ \mu\mathrm{m}$, so the clearance tail is $24\ \%$ of the population. The limits guarantee that **no** assembly is outside the range; they do not guarantee which side of zero it lands on. This is why a transition fit locates a part and never transmits a torque.
+About $30\ \%$. The mean interference is $+4\ \mu\mathrm{m}$ and the standard deviation $\sqrt{21^{2} + 13^{2}}/\sqrt{12} = 7.13\ \mu\mathrm{m}$, so a normal approximation gives $\Phi(-4/7.13) = 0.29$ and a simulation with uniform sizes gives $0.31$. The limits guarantee that no assembly lies outside $-13$ to $+21\ \mu\mathrm{m}$; they do not say on which side of zero a given assembly lands. That is why a transition fit locates a part and something else — a key, a clamp — transmits the torque.
 :::
 :::
 
 ## Exercises
 
 ::: exercise Grades {level=1 check="13"}
-Give the standard tolerance in micrometres for IT6 at a $\phi 30$ diameter.
+Give the standard tolerance IT6 for a $\phi 30$ diameter. (Enter the value in micrometres.)
 ::: solution
-$13\ \mu\mathrm{m}$.
+$13\ \mu\mathrm{m}$ — the formula gives $10 i = 10 \times 1.307 = 13.1\ \mu\mathrm{m}$ for the $18$–$30\ \mathrm{mm}$ step, tabulated as $13$.
 :::
 :::
 
 ::: exercise Hole basis {level=1 check="0"}
-Give the lower deviation in millimetres of an $\mathrm{H}$ hole.
+Give the lower deviation of an $\mathrm{H}$ hole. (Enter the value in millimetres.)
 ::: solution
 $0$ — the $\mathrm{H}$ zone starts at the zero line.
 :::
 :::
 
 ::: exercise Texture {level=1 check="0.8"}
-Give the cut-off wavelength in millimetres for a surface measured at $Ra = 0.8\ \mu\mathrm{m}$.
+Give the default cut-off wavelength for a non-periodic surface expected to measure $Ra = 0.8\ \mu\mathrm{m}$. (Enter the value in millimetres.)
 ::: solution
-$\lambda_c = 0.8\ \mathrm{mm}$ — the $W\ 0.8$ setting, which is the commonest cut-off in the trade and the one a portable profilometer defaults to.
+$\lambda_c = 0.8\ \mathrm{mm}$ — $Ra = 0.8$ lies in the band "over $0.1$ up to $2\ \mu\mathrm{m}$", whose cut-off and sampling length are $0.8\ \mathrm{mm}$, with an evaluation length of $4\ \mathrm{mm}$.
 :::
 :::
 
 ::: exercise Gauging {level=1 check="10"}
-Give the gauge tolerance as a percentage of the part tolerance in ordinary commercial gauging.
+In the gauge example of this lesson, the gauge-maker's tolerance was taken as what percentage of the part tolerance? (Enter the percentage.)
 ::: solution
-$10\ \%$.
+$10\ \%$ — for the $\phi 40\ \mathrm{H}7$ bore, $2.5\ \mu\mathrm{m}$ of the $25\ \mu\mathrm{m}$ part tolerance.
 :::
 :::
 
-::: exercise Fit {level=1 check="24"}
-Give the percentage of $\mathrm{H}7 / \mathrm{p}6$ assemblies that come out as clearances.
+::: exercise Fit {level=1 check="29"}
+Using the normal approximation of this lesson, give the percentage of $\phi 30\ \mathrm{H}7/\mathrm{m}6$ assemblies that have clearance. (Enter the percentage.)
 ::: solution
-About $24\ \%$.
+$\Phi(-4/7.13) = \Phi(-0.56) = 0.29$, i.e. about $29\ \%$ (a uniform-distribution simulation gives $31\ \%$).
 :::
 :::
 
-::: exercise Clearance {level=2}
-Compute the maximum and minimum clearance of a $\phi 50\ \mathrm{H}8 / \mathrm{f}7$ fit, given $\mathrm{H}8 = + 0.039 / 0$ and $\mathrm{f}7 = - 0.025 / - 0.050$.
+::: exercise Clearance {level=2 check="0.089"}
+Compute the maximum and minimum clearance of a $\phi 50\ \mathrm{H}8 / \mathrm{f}7$ fit, given $\mathrm{H}8 = + 0.039 / 0$ and $\mathrm{f}7 = - 0.025 / - 0.050$. (Enter the maximum clearance in millimetres.)
 ::: solution
 $$
 X_{\max} = 50.039 - 49.950 = 0.089\ \mathrm{mm}, \qquad
 X_{\min} = 50.000 - 49.975 = 0.025\ \mathrm{mm}.
 $$
-*Sanity.* The mean clearance of $57\ \mu\mathrm{m}$ on a $\phi 50$ is $1.1\ \mathrm{mrad}$ of diametral play, which for a $200\ \mathrm{mm}$-long arm on the shaft is $0.23\ \mathrm{mm}$ of tip movement — the reason a locating pin is never $\mathrm{H}8 / \mathrm{f}7$ and a pivot often is.
+*Sanity.* The mean clearance is $0.057\ \mathrm{mm}$. If a lever is mounted on this fit with a $50\ \mathrm{mm}$-long hub, the clearance lets it tilt by about $0.057/50 = 1.1\ \mathrm{mrad}$, which at the end of a $200\ \mathrm{mm}$ arm is $0.23\ \mathrm{mm}$ of free movement — acceptable for a pivot, not for a precise location.
 :::
 :::
 
-::: exercise Interference {level=2}
-A $\phi 60\ \mathrm{H}7 / \mathrm{s}7$ steel hub of $90\ \mathrm{mm}$ outside diameter transmits $400\ \mathrm{N \cdot m}$. Compute the mean contact pressure and the torque capacity at $\mu = 0.12$, and state whether the fit is adequate.
+::: exercise Interference {level=2 check="1040"}
+A $\phi 60\ \mathrm{H}7 / \mathrm{s}7$ steel hub, $90\ \mathrm{mm}$ outside diameter and $70\ \mathrm{mm}$ long, on a solid steel shaft must transmit $400\ \mathrm{N \cdot m}$. At $\phi 60$, $\mathrm{H}7 = +0.030/0$ and $\mathrm{s}7 = +0.083/+0.053$. Take $E = 206\ \mathrm{GPa}$ and $\mu = 0.12$. Compute the contact pressure and torque capacity at the **minimum** interference, and check the hub at the maximum interference. (Enter the minimum-interference torque capacity in N·m.)
 ::: solution
-The $\mathrm{s}7$ at $\phi 60$ is $+ 0.046 / + 0.025$ and the $\mathrm{H}7$ is $+ 0.030 / 0$, so the mean interference is
-$$
-\delta = \frac{\left( 46 + 25 \right) - \left( 30 + 0 \right)}{2} = \frac{71 - 30}{2} = 20.5\ \mu\mathrm{m} \ \text{(mean of the two midpoints)} .
-$$
-The contact pressure with $D = 90$, $d = 60$, $E = 206{,}000\ \mathrm{MPa}$, $\nu = 0.3$:
+**Interference.** $I_{\min} = 0.053 - 0.030 = 0.023\ \mathrm{mm}$, $I_{\max} = 0.083 - 0 = 0.083\ \mathrm{mm}$.
+**Pressure.** With $D = 90$, $d = 60$:
 $$
 \frac{D^{2} + d^{2}}{D^{2} - d^{2}} = \frac{8100 + 3600}{8100 - 3600} = 2.6, \qquad
-p = \frac{\delta\, E}{d \left[ \left( 1 - \nu \right) + 2.6 + \nu \right]} = \frac{20.5 \times 10^{- 3} \times 206000}{60 \times 3.3} = 21.3\ \mathrm{MPa} .
+p_{\min} = \frac{\delta E}{d \left( 2.6 + 1 \right)} = \frac{0.023 \times 206\,000}{60 \times 3.6} = 21.9\ \mathrm{MPa} .
 $$
+**Torque.**
 $$
-T = 0.12 \times 21.3 \times \pi \times 60 \times L \times 30 .
+T_{\min} = 0.12 \times 21.9 \times \pi \times 60 \times 70 \times 30 = 1.04 \times 10^{6}\ \mathrm{N \cdot mm} = 1{,}040\ \mathrm{N \cdot m},
 $$
-At $L = 70\ \mathrm{mm}$: $T = 0.12 \times 21.3 \times 13{,}195 \times 30 = 1.01 \times 10^{6}\ \mathrm{N \cdot mm} = 1{,}010\ \mathrm{N \cdot m}$ against a required $400\ \mathrm{N \cdot m}$ — a **safety factor of $2.5$**.
-*Sanity.* The hub's hoop stress is $p \times 2.6 = 55\ \mathrm{MPa}$, well below the $240\ \mathrm{MPa}$ yield of a $0.45\%$ carbon steel, so the hub is safe and the fit is adequate. The number that could spoil it is $\mu$: a **clean, oiled** steel-steel interface is $0.12$ and a **drawn-in with a light oil film** interface is $0.08$, which cuts the capacity to $670\ \mathrm{N \cdot m}$ and the safety factor to $1.7$.
+a factor of $2.6$ on the required $400\ \mathrm{N \cdot m}$.
+**Hub stress at maximum interference.** $p_{\max} = 0.083 \times 206\,000 / (60 \times 3.6) = 79.2\ \mathrm{MPa}$, so $\sigma_\theta = 2.6 \times 79.2 = 206\ \mathrm{MPa}$ and $\sigma_r = -79.2\ \mathrm{MPa}$ at the bore; the von Mises stress is $\sqrt{206^{2} + 79.2^{2} + 206 \times 79.2} = 255\ \mathrm{MPa}$, below the yield stress of a normalised medium-carbon steel (roughly $300$ to $350\ \mathrm{MPa}$) but not by a large margin.
+*Sanity.* The number that could spoil the design is $\mu$: with a lubricated press-fitted surface $\mu$ may be nearer $0.08$, which cuts the minimum capacity to about $690\ \mathrm{N \cdot m}$ — still adequate, with a factor of $1.7$.
 :::
 :::
 
-::: exercise Derivation {level=3}
-Derive the interference-fit contact-pressure formula from Lamé's equations for a solid shaft in a solid hub, and evaluate it for a $\phi 40$ steel-steel joint at $20\ \mu\mathrm{m}$ interference.
+::: exercise Derivation {level=3 check="28.6"}
+Derive the interference-fit contact-pressure formula from Lamé's equations for a solid shaft in a hub of the same material, and evaluate it for a $\phi 40$ steel shaft in a $\phi 60$ steel hub at $20\ \mu\mathrm{m}$ diametral interference with $E = 206\ \mathrm{GPa}$. (Enter the pressure in MPa.)
 ::: solution
-**Lamé.** For a cylinder with an internal pressure $p$ at radius $a$ and an external pressure zero at radius $b$, the radial and hoop stresses are
+**Lamé.** In a thick cylinder under axisymmetric pressure the radial and hoop stresses are
 $$
 \sigma_r = A - \frac{B}{r^{2}}, \qquad \sigma_\theta = A + \frac{B}{r^{2}} .
 $$
-**The hub** ($a = d / 2$, $b = D / 2$, internal pressure $p$): $\sigma_r (a) = - p$, $\sigma_r (b) = 0$, giving
+**The hub** (inner radius $a = d / 2$, outer radius $b = D / 2$, internal pressure $p$): $\sigma_r (a) = - p$ and $\sigma_r (b) = 0$ give
 $$
-A_h = p\, \frac{a^{2}}{b^{2} - a^{2}}, \qquad B_h = p\, \frac{a^{2} b^{2}}{b^{2} - a^{2}} .
+A_h = p\, \frac{a^{2}}{b^{2} - a^{2}}, \qquad B_h = p\, \frac{a^{2} b^{2}}{b^{2} - a^{2}} , \qquad
+\sigma_\theta(a) = p\, \frac{b^{2} + a^{2}}{b^{2} - a^{2}} .
 $$
-The **radial displacement** at $r = a$ (outward positive) is
+In plane stress the radial displacement at $r = a$ (outward positive) is
 $$
-u_h = \frac{a}{E} \left( \sigma_\theta (a) - \nu\, \sigma_r (a) \right) = \frac{a}{E} \cdot p\, \frac{b^{2} + a^{2}}{b^{2} - a^{2}} + \frac{a}{E} \nu p = \frac{p\, a}{E} \left( \frac{D^{2} + d^{2}}{D^{2} - d^{2}} + \nu \right) .
+u_h = \frac{a}{E} \left( \sigma_\theta (a) - \nu\, \sigma_r (a) \right) = \frac{p\, a}{E} \left( \frac{D^{2} + d^{2}}{D^{2} - d^{2}} + \nu \right) .
 $$
-**The shaft** (solid, external pressure $p$ at $r = a$, no internal pressure): the hydrostatic-equivalent state gives
+**The shaft** (solid, external pressure $p$): $B = 0$ for a finite stress at the centre, so $\sigma_r = \sigma_\theta = - p$ everywhere and
 $$
-u_s = - \frac{p\, a}{E} \left( 1 - \nu \right)
+u_s = \frac{a}{E} \left( - p + \nu p \right) = - \frac{p\, a}{E} \left( 1 - \nu \right) \quad \text{(inward)}.
 $$
-(inward).
-**The interference** is the sum of the two displacements around the circumference, i.e. the **diametral** change:
+**The interference** is the total diametral change needed to bring the surfaces together:
 $$
 \boxed{ \delta = 2 \left( u_h - u_s \right) = \frac{p\, d}{E} \left[ \frac{D^{2} + d^{2}}{D^{2} - d^{2}} + \nu + 1 - \nu \right] = \frac{p\, d}{E} \left[ \frac{D^{2} + d^{2}}{D^{2} - d^{2}} + 1 \right] }
 $$
-**Evaluation.** $d = 40$, $D = 60$, $\delta = 0.020\ \mathrm{mm}$, $E = 206{,}000\ \mathrm{MPa}$:
+**Evaluation.** $d = 40$, $D = 60$, $\delta = 0.020\ \mathrm{mm}$:
 $$
 \frac{3600 + 1600}{3600 - 1600} = 2.6, \qquad
-p = \frac{0.020 \times 206000}{40 \times 3.6} = 28.6\ \mathrm{MPa} .
+p = \frac{0.020 \times 206\,000}{40 \times 3.6} = 28.6\ \mathrm{MPa} .
 $$
-*Sanity.* The $\nu$ terms **cancel** for a solid shaft in a solid hub of the same material — a result that surprises most readers and is exact. The hub's hoop stress at the bore is $p \times 2.6 = 74\ \mathrm{MPa}$, and the shaft is under a **pure hydrostatic compression** of $28.6\ \mathrm{MPa}$ at its surface, so it cannot yield and the hub is the only limit.
+*Sanity.* The $\nu$ terms **cancel** for a solid shaft in a hub of the same material — an exact result of the plane-stress model. The hub's hoop stress at the bore is $2.6 \times 28.6 = 74\ \mathrm{MPa}$; the shaft is in equal biaxial compression $\sigma_r = \sigma_\theta = -28.6\ \mathrm{MPa}$, whose von Mises stress is just $28.6\ \mathrm{MPa}$, so the hub is the limiting member.
 :::
 :::
 
 ::: exercise Design {level=3}
-Specify the fits, tolerances, surface finishes and gauging for a gearbox: a shaft carrying two gears in a cast housing, with the gears rotating on the shaft on needle bearings and the shaft rotating in two deep-groove bearings.
+Specify the fits, tolerances, surface finishes and gauging for a gearbox shaft: the shaft runs in two $6208$ deep-groove bearings in a cast housing, and carries a gear that turns freely on it on a drawn-cup needle roller bearing pressed into the gear bore, with the needles running directly on the hardened shaft. A cover with a spigot closes the housing.
 ::: solution
-**The five fits.**
+**The fits** (deviations in mm from ISO 286-2 unless stated):
 $$
 \begin{array}{l l l l}
-\text{Shaft in the housing bore} & \phi 60\ \mathrm{H}7 / \mathrm{m}6 & + 0.030 / 0,\ + 0.030 / + 0.011 & \text{light press; the housing is stationary, so a transition is right} \\
-\text{Needle-bearing journal} & \phi 40\ \mathrm{g}6 & - 0.009 / - 0.025 & \text{the needle's inner race rotates with the shaft} \\
-\text{Gear bore on the needle outer} & \phi 48\ \mathrm{H}7 / \mathrm{k}6 & + 0.025 / 0,\ + 0.018 / + 0.002 & \text{the gear is located and transmits by a key} \\
-\text{Gear's axial spacer} & 20\ \pm 0.05 & & \text{a turned width} \\
-\text{Cover spigot} & \phi 90\ \mathrm{H}9 / \mathrm{d}9 & + 0.074 / 0,\ - 0.060 / - 0.134 & \text{locates the cover, does not carry a load}
+\text{Feature} & \text{Fit} & \text{Deviations} & \text{Reason} \\
+\text{Shaft seats for the 6208 inner rings} & \phi 40\ \mathrm{k}5 & + 0.013 / + 0.002 & \text{rotating inner ring: interference} \\
+\text{Housing bores for the outer rings} & \phi 80\ \mathrm{H}7 & + 0.030 / 0 & \text{stationary outer ring: sliding fit, one ring floats} \\
+\text{Gear bore for the drawn cup} & \text{per the bearing maker} & & \text{the thin cup takes its size and shape from the bore} \\
+\text{Needle raceway on the shaft} & \text{per the bearing maker} & & \text{sets the running clearance} \\
+\text{Gear axial spacer} & 20 \pm 0.05 & & \text{a turned width} \\
+\text{Cover spigot in the housing} & \phi 90\ \mathrm{H}8 / \mathrm{f}7 & + 0.054 / 0,\ - 0.036 / - 0.071 & \text{locates the cover, carries no load}
 \end{array}
 $$
+**The drawn-cup decision.** A drawn cup is a thin pressed shell: it has no accuracy of its own until it is pressed into its housing, which rounds and sizes it. The housing (gear) bore tolerance and the shaft raceway tolerance together set the bearing's running clearance, so both are taken from the needle-bearing maker's catalogue, which typically asks for a tighter bore class (often an N-class in a steel housing) and a hardened, ground raceway on the shaft.
 **The surface finishes.**
 $$
-\begin{array}{l c l}
-\text{Needle journal} & \mathrm{Ra}\ 0.4,\ \text{lay irrelevant, hardened to } 62\ \mathrm{HRC},\ \text{ground} & \text{a needle bearing runs on } 0.4 \\
-\text{Deep-groove journals} & \mathrm{Ra}\ 0.8,\ \text{ground} & \\
-\text{Housing bores} & \mathrm{Ra}\ 1.6,\ \text{bored} & \\
-\text{Cover spigot} & \mathrm{Ra}\ 3.2 & \\
-\text{Gasket faces} & \mathrm{Ra}\ 3.2,\ \text{lay } X,\ \text{cross-hatched} & \text{a gasket needs a } 45^{\circ} \text{ lay or it weeps}
+\begin{array}{l l}
+\text{Needle raceway on the shaft} & Ra\ 0.2\text{–}0.4,\ \text{hardened (about } 58\text{–}64\ \mathrm{HRC}),\ \text{ground} \\
+\text{Bearing seats on the shaft} & Ra\ 0.8,\ \text{ground} \\
+\text{Housing bores} & Ra\ 1.6,\ \text{fine-bored} \\
+\text{Cover spigot} & Ra\ 3.2 \\
+\text{Gasket faces} & Ra\ 3.2,\ \text{as the gasket maker specifies}
 \end{array}
 $$
 **The gauging.**
 $$
 \begin{array}{l l}
-\phi 60\ \mathrm{H}7\ \text{housing bores} & \text{go and no-go plug gauges, long } \left( 4d \right),\ \text{because the two bores' perpendicularity to the datum matters} \\
-\phi 40\ \mathrm{g}6\ \text{journal} & \text{outside micrometer at four points, plus } \bigcirc\ 0.003\ \text{checked on a V-block} \\
-\phi 48\ \mathrm{H}7\ \text{gear bores} & \text{go plug, short} \\
-\text{Centre distance} & \text{checked by a gauge bar and two pins, not by a coordinate measurement, because it is the assembly's own datum}
+\phi 80\ \mathrm{H}7\ \text{housing bores} & \text{go and no-go plugs; coaxiality of the two bores by CMM or a line bar} \\
+\phi 40\ \mathrm{k}5\ \text{seats and the raceway} & \text{comparator or micrometer for size, roundness instrument for form} \\
+\text{Gear bores} & \text{go and no-go plugs} \\
+\text{Shaft centre distance (if two shafts)} & \text{CMM or a gauge bar against the bore datums}
 \end{array}
 $$
-**The four notes.** **"MACHINE THE TWO HOUSING BORES IN ONE SETUP AND DIMENSION THE CENTRE DISTANCE FROM THE SETUP, NOT FROM A DRAWING DIMENSION"** — the only way to hold a centre distance to $\pm 0.02$. **"PRESS THE BEARINGS ONTO THE SHAFT AT $90\ {}^{\circ}\mathrm{C}$ AND INTO THE HOUSING AT $- 20\ {}^{\circ}\mathrm{C}$."** **"THE AXIAL POSITION OF THE GEARS IS SET BY A SHIM SELECTED AT ASSEMBLY TO GIVE } 0.1 \text{ TO } 0.25\ \mathrm{mm}$ END PLAY."** **"NO BURRS ON ANY SEATING SURFACE; DEBURR THE OIL HOLES."**
-**The one fit that is always wrong.** The **gear bore on the needle's outer race**. The needle manufacturer specifies the **outer race** ground to $\mathrm{g}6$ **as a bearing surface** and the gear bore to $\mathrm{H}7$ — and the assembly then has a $\mathrm{H}7 / \mathrm{g}6$ running fit **plus** the needle's own internal clearance, so the gear runs with twice the play of the bearing. The fix is to make the gear bore $\mathrm{J}7$ or to specify the needle's outer race as a **press** fit in the gear and let the needle carry the clearance.
+**The notes.** **"BORE BOTH HOUSING BEARING SEATS IN ONE SETUP."** **"HEAT BEARINGS (MAX. $120\ {}^{\circ}\mathrm{C}$) FOR MOUNTING ON THE SHAFT; OUTER RINGS ARE A SLIDING FIT IN THE HOUSING."** **"SET THE GEAR'S AXIAL PLAY TO $0.10$ TO $0.25\ \mathrm{mm}$ WITH SELECTED SHIMS."** **"NO BURRS ON ANY SEATING SURFACE; DEBURR THE OIL HOLES."**
 
-*Design comment.* The general rule is that **a fit is specified between two surfaces and not between two parts**, and that a bearing already contains a fit — so a chain of "bearing, race, gear, spacer" has four fits and only two of them are the designer's to choose.
+*Design comment.* A fit is specified between two **surfaces**, not two parts — and a bearing already contains fits and clearances of its own. In a chain of "shaft, bearing, gear" the designer chooses the seats, and the bearing maker's tables say which seats give the bearing its intended internal clearance.
 :::
 :::

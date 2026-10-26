@@ -8,8 +8,8 @@
   "tagline": "Sketching, orthographic and pictorial projection, sections, dimensioning, tolerances and geometric tolerancing, and parametric CAD",
   "summary": "Engineering drawings are the language in which designs are specified, made and inspected. The course covers freehand sketching and pictorial views, orthographic projection, sectional and auxiliary views, dimensioning, tolerances and fits, geometric dimensioning and tolerancing, and parametric 3D CAD models, assemblies and working drawings.",
   "overview": [
-    "An engineering drawing is a legal instrument disguised as a picture. It is the only document that tells a machinist what to make, an inspector what to measure, a fitter what to assemble and a lawyer what was promised — and it does all four with a notation system that was settled, in its essentials, between 1901 and 1962 and has not been improved on since.",
-    "This course teaches that notation as a language: its grammar (the projection, the section, the line types), its vocabulary (the dimension, the tolerance zone, the datum) and its idiom (the conventions that exist because somebody machined a part from a misread drawing). Every rule is justified by the failure it prevents and priced in the money it saves, because a drawing is the cheapest place in engineering to be wrong and the most expensive place to have been wrong cheaply.",
+    "An engineering drawing is a legal instrument disguised as a picture. It is the document that tells a machinist what to make, an inspector what to measure, a fitter what to assemble and a court what was promised — and it does all four with a notation that was codified in national standards from the 1920s onwards and is maintained today in the ISO and ASME standards.",
+    "This course teaches that notation as a language: its grammar (the projection, the section, the line types), its vocabulary (the dimension, the tolerance zone, the datum) and its idiom (the conventions that exist so that a drawing cannot be misread). Rules are justified by the failures they prevent and the costs they avoid, because a drawing is the cheapest place in engineering to correct a mistake.",
     "The course then carries the notation into the machine: the ISO tolerance system and the statistics of a fit, geometric dimensioning and tolerancing and the datum reference frame, and the parametric CAD model with its constraints, its configurations and its model-based definition. The recurring theme is the difference between the model and the part — the model is exact and nominal, the part is toleranced, and the whole of product definition is the art of saying which differences matter.",
     "No prior drawing experience is assumed and no calculus is used beyond arithmetic and the occasional square root. What is assumed is a willingness to read a drawing closely enough to find the one dimension that contradicts another, which is the skill the course is actually about."
   ],
@@ -90,40 +90,40 @@
   ],
   "history": [
     {
-      "year": 1795,
+      "year": 1799,
       "title": "Monge's Géométrie descriptive",
-      "detail": "Gaspard Monge's lecture notes of 1795 gave descriptive geometry its two-plane theory of projection and with it the theoretical basis of every multiview drawing since. Monge wrote it for the École Normale and the French revolutionary government initially suppressed it as a military secret.",
+      "detail": "Gaspard Monge developed descriptive geometry at the military engineering school at Mézières, where it was for a time treated as a military secret. He taught it publicly at the École normale in 1794–95 and published it as Géométrie descriptive in 1799. Its two perpendicular planes of projection, rotated into one, are the basis of first- and third-angle multiview drawing.",
       "people": "Gaspard Monge"
     },
     {
-      "year": 1901,
-      "title": "The first general-terms drawing standard",
-      "detail": "The British Standards Committee's provisional specification for general-purpose engineering drawings fixed the line types, the section hatch at 45 degrees and the rule that a drawing is never scaled from — the practical motive being that a rolled drawing had to be legible at arm's length through a gap in a bundle.",
-      "people": "British Standards Committee"
-    },
-    {
       "year": 1905,
-      "title": "Taylor's gauging address",
-      "detail": "Charles Le Maistre Taylor's address to the Institution of Mechanical Engineers on the gauging of limit work established that a go gauge must check every feature at once and a no-go gauge only one, which is the founding proposition of dimensional metrology and the reason a plug gauge and a micrometer are not interchangeable instruments.",
-      "people": "Charles Le Maistre Taylor"
+      "title": "Taylor's principle of limit gauging",
+      "detail": "William Taylor of Taylor, Taylor & Hobson filed a British patent in 1905 on screw-thread gauges that set out the principle now named after him: a go gauge should check all the features of a part together at maximum material, and no-go gauges should check each feature separately.",
+      "people": "William Taylor"
     },
     {
-      "year": 1957,
-      "title": "True position and the maximum-material bonus",
-      "detail": "Parker and Fessler's SAE papers proposed tolerancing a feature's position to a cylindrical zone about a theoretically exact position, with bonus tolerance at maximum material condition. The idea became ANSI Y14.5 and then the geometric tolerancing of ISO 1101.",
-      "people": "Stanley H. Parker, James E. Fessler"
+      "year": 1927,
+      "title": "BS 308, the British drawing-office standard",
+      "detail": "The British Standards Institution published BS 308, its first standard for engineering drawing-office practice, in 1927. Revised many times and later metricated, it codified line types, projection, sectioning and dimensioning for British industry until it was replaced by BS 8888 from 2000.",
+      "people": "British Standards Institution"
     },
     {
-      "year": 1987,
-      "title": "The history tree",
-      "detail": "Pro/ENGINEER made constraint-based, history-based, associative modelling the industry default, so that a model recorded how a part was intended to be built and not only what it looked like. Every parametric system since descends from that decision.",
-      "people": "Parametric Technology Corporation"
+      "year": 1940,
+      "title": "True position",
+      "detail": "Stanley Parker, at the Royal Torpedo Factory in Alexandria, Scotland, showed that parts rejected under square coordinate tolerance zones would often assemble, and proposed circular true-position tolerance zones in his 1940 notes on design and inspection of mass-production work, expanded in his 1956 book Drawings and Dimensions. The ideas passed through MIL-STD-8 (1949) into the American Y14.5 standard (from 1957 onwards) and into ISO 1101.",
+      "people": "Stanley Parker"
+    },
+    {
+      "year": 1988,
+      "title": "Parametric, history-based solid modelling",
+      "detail": "Parametric Technology Corporation, founded in 1985 by Samuel Geisberg, introduced Pro/ENGINEER (shown in 1987, shipped in 1988), which made constraint-driven, feature-based and associative solid modelling the industry default: the model records how the part was built, so that it can be changed by changing its parameters.",
+      "people": "Samuel Geisberg"
     },
     {
       "year": 1994,
-      "title": "The first drawingless airliner",
-      "detail": "The Boeing 777 was defined entirely in a digital model with no drawing issued to manufacture, which forced the standardisation of model-based definition and, two decades later, of the PMI carriage in STEP AP242.",
-      "people": "Boeing Computer Services"
+      "title": "The Boeing 777 and digital pre-assembly",
+      "detail": "The Boeing 777, which first flew in 1994, was the first jetliner designed entirely in 3D on CATIA, with digital pre-assembly of the aircraft replacing the traditional full-scale physical mock-up. It was a landmark on the road to model-based definition, later standardised in ASME Y14.41 (2003), ISO 16792 (2006) and STEP AP242 (2014).",
+      "people": "Boeing"
     }
   ],
   "references": [
@@ -131,37 +131,43 @@
       "title": "ASME Y14.5-2018: Dimensioning and Tolerancing",
       "author": "ASME",
       "year": 2018,
-      "url": "https://www.asme.org/codes-standards"
+      "url": "https://www.asme.org/codes-standards",
+      "note": "The American standard for dimensioning and geometric tolerancing."
     },
     {
-      "title": "ISO 1101:2017 — Geometrical product specifications (GPS): Tolerances of form, orientation, location and run-out",
+      "title": "ISO 1101:2017 — Geometrical product specifications (GPS): Geometrical tolerancing — Tolerances of form, orientation, location and run-out",
       "author": "ISO",
       "year": 2017,
-      "url": "https://www.iso.org/standard/65838.html"
+      "url": "https://www.iso.org/standard/66777.html",
+      "note": "The ISO counterpart for geometrical tolerancing."
     },
     {
-      "title": "ISO 286-1 and 286-2 — ISO code of tolerances for limits and fits",
+      "title": "ISO 286-1:2010 and ISO 286-2:2010 — ISO code system for tolerances on linear sizes",
       "author": "ISO",
       "year": 2010,
-      "url": "https://www.iso.org/standards.html"
+      "url": "https://www.iso.org/standards.html",
+      "note": "Tolerance grades, fundamental deviations and the tables of limits used in the tolerances lesson."
     },
     {
-      "title": "Technical Drawing and Design for Mechanical Engineers",
-      "author": "E. E. Maves, G. L. Maves and C. R. Maves",
-      "year": 1996,
-      "url": ""
+      "title": "Manual of Engineering Drawing (5th edition)",
+      "author": "Colin H. Simmons, Dennis E. Maguire and Neil Phelps",
+      "year": 2020,
+      "url": "",
+      "note": "Drawing practice to ISO and BS 8888."
     },
     {
-      "title": "Fundamentals of Dimensional Metrology",
-      "author": "Donald E. Whitehouse",
-      "year": 2006,
-      "url": ""
+      "title": "Technical Drawing with Engineering Graphics (15th edition)",
+      "author": "Frederick E. Giesecke et al.",
+      "year": 2016,
+      "url": "",
+      "note": "Comprehensive textbook on sketching, projection, sections, dimensioning and CAD."
     },
     {
-      "title": "Schaum's Outline of Machine Drawing (orthographic, sectioning and dimensioning practice)",
-      "author": "A. F. Piper and K. L. Rietschel",
-      "year": 2004,
-      "url": ""
+      "title": "Fundamentals of Geometric Dimensioning and Tolerancing (3rd edition)",
+      "author": "Alex Krulikowski",
+      "year": 2012,
+      "url": "",
+      "note": "Introductory text on GD&T to ASME Y14.5."
     }
   ],
   "next": [
