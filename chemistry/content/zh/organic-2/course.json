@@ -96,8 +96,8 @@
     },
     {
       "title": "罗伯茨用碳-14 证明苯炔机理",
-      "detail": "洛思罗普·罗伯茨（Lothrop Roberts）用 C1 位 $^{14}\\mathrm{C}$ 标记的氯苯与酰胺负离子反应，发现标记均匀分布在苯胺产物的 C1 与 C2 之间——对称中间体苯炔的直接证据，也是消除–加成作为芳香取代第三种机理的证明。",
-      "people": ["罗伯茨（Roberts）"]
+      "detail": "约翰·D·罗伯茨（John D. Roberts）用 C1 位 $^{14}\\mathrm{C}$ 标记的氯苯与酰胺负离子反应，发现标记均匀分布在苯胺产物的 C1 与 C2 之间——对称中间体苯炔的直接证据，也是消除–加成作为芳香取代第三种机理的证明。",
+      "people": ["约翰·D·罗伯茨（John D. Roberts）"]
     },
     {
       "title": "斯托克用烯胺驯服烯醇盐",
@@ -120,7 +120,7 @@
     },
     {
       "title": "Advanced Organic Chemistry, Part B: Reactions and Synthesis",
-      "authors": "Michael Carey and Richard Sundberg",
+      "authors": "Francis A. Carey and Richard J. Sundberg",
       "year": 2007,
       "note": "对本课程这些反应逐章的标准高级处理，经验规则背后的选择性数据尽在其中。"
     },

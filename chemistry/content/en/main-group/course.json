@@ -5,14 +5,29 @@
   "area": "inorganic",
   "level": 2,
   "order": 100,
-  "tagline": "Periodic trends, bonding in main-group compounds, acids and bases, redox diagrams and the chemistry of the s- and p-block elements",
+  "tagline": "Periodic trends, bonding in main-group compounds, acids and bases, redox diagrams and the chemistry of hydrogen, the s block and groups 13 to 18",
   "summary": "Inorganic chemistry studies all the elements and their compounds. This course explains the periodic trends and bonding models that organise main-group chemistry and the acid–base and redox principles behind its reactions, then surveys the chemistry of hydrogen, the s block and groups 13 to 18.",
-  "overview": [],
+  "overview": [
+    "The main-group elements — the s block and the p block, hydrogen to radon — are most of the periodic table and almost all of ordinary matter. The bulk chemicals of industry (ammonia, sulfuric acid, chlorine, sodium hydroxide), the structural materials of civilisation (silica, silicates, carbon, aluminium) and the molecules of life (water, phosphate, nitrogen in protein) are all main-group chemistry. This course shows that the apparently overwhelming variety of their compounds is organised by a small set of principles: the periodic trends in size and electron energy, the quantum mechanics of bonding when the octet rule breaks down, the acid–base and redox thermodynamics that decide what reacts with what, and the way these trends play out group by group down each column of the table.",
+    "The course is organised in two movements. The first four chapters build the toolkit: periodic trends and the physical quantities behind them; structure and bonding in main-group compounds, where three-centre bonds explain hypervalence and electron deficiency; acids, bases and the hard-and-soft principle, including the oxoacid rules and non-aqueous solvents; and redox chemistry, where Latimer, Frost, Pourbaix and Ellingham diagrams turn thousands of reactions into a handful of readable charts. The second movement is the survey itself — hydrogen and the s block, then groups 13–14, 15–16 and 17–18 — in which each chapter is deliberately driven by the toolkit rather than by lists of reactions.",
+    "What makes this subject feel hard is the descriptive chemistry: the reactions, colours, structures and exceptions seem to demand memorisation. They do not. Nearly every fact in the survey chapters can be derived from four ideas — that atomic and ionic size set lattice and hydration energies, that orbital overlap weakens as orbitals grow and diffuse, that electrostatics favours matched charge and size (the hard-and-soft principle), and that redox stability is legible from a potential diagram — and the lessons work examples of each derivation until the habit is automatic. Where a genuine exception exists (the weak F–F bond, the inert pair, the double-bond rule), the lesson says so and gives its physical origin, because an exception understood is worth ten reactions memorised.",
+    "Work with the data, not around it: keep the tables of radii, ionisation energies, bond enthalpies and standard potentials open, and check every qualitative prediction against a number. The prerequisite chapters are the periodicity and thermochemistry of General Chemistry I and the acid–base and electrochemistry chapters of General Chemistry II, together with the bonding course; nothing new in mathematics is required. The course feeds directly into Coordination Chemistry (where the d block takes over), Materials Chemistry (silicates, semiconductors, porous solids) and every applied course that touches industrial inorganic chemistry."
+  ],
   "prerequisites": [
     "bonding-structure",
     "general-chemistry-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Rationalise and predict periodic trends in atomic, ionic and covalent radii, ionisation energy, electron affinity and electronegativity across the s and p blocks, including the anomalies of the second period.",
+    "Explain hypervalent molecules, electron-deficient compounds and multicentre bonding using three-centre molecular orbitals, and apply Wade's rules to the boranes.",
+    "Predict the strength and stoichiometry of oxoacids with Pauling's rules and explain the Brønsted acidity of oxides and hydrides from structure.",
+    "Apply the hard-and-soft-acids-and-bases principle to predict the stability, solubility and reaction sites of main-group compounds.",
+    "Construct and interpret Latimer and Frost diagrams, predict disproportionation and comproportionation, and read the lines of a Pourbaix diagram.",
+    "Use Ellingham diagrams to choose a reducing agent and temperature for extracting a metal from its ore, and connect the diagrams to electrolytic extraction.",
+    "Describe the chemistry of hydrogen and the s-block elements — hydride types, flame tests, diagonal relationships and solutions in liquid ammonia — in terms of size, lattice energy and ionisation energy.",
+    "Account for the characteristic chemistry of groups 13 to 16 (boranes and silicones, nitrogen and phosphorus oxoacids, sulfur allotropy and oxoanions) using structure, bonding and redox arguments.",
+    "Explain the chemistry of the halogens and noble gases — oxidising power, interhalogens, halogen oxoacids and xenon fluorides — from bond enthalpies, electronegativity and three-centre bonding."
+  ],
   "chapters": [
     {
       "slug": "periodic-trends",
@@ -81,8 +96,112 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1766,
+      "title": "Cavendish identifies hydrogen",
+      "detail": "Henry Cavendish shows that the 'inflammable air' given off by metals dissolving in acids is a distinct substance, and that burning it produces nothing but water — disposing of the idea that water is an element and founding the chemistry of the first element in the table.",
+      "people": ["Henry Cavendish"]
+    },
+    {
+      "year": 1807,
+      "title": "Davy isolates sodium and potassium by electrolysis",
+      "detail": "Humphry Davy passes currents through molten potash and soda at the Royal Institution and obtains beads of potassium and sodium, proving they are metals and establishing electrolysis as the extraction method for the most electropositive elements — the method still used for sodium, magnesium and aluminium.",
+      "people": ["Humphry Davy"]
+    },
+    {
+      "year": 1869,
+      "title": "Mendeleev publishes the periodic system",
+      "detail": "Dmitri Mendeleev arranges the elements by atomic weight and valence and leaves gaps for elements not yet found; the discoveries of gallium (1875), scandium (1879) and germanium (1886) match the properties he predicted for his eka-elements, converting the periodic table from a classification into a predictive theory of main-group chemistry.",
+      "people": ["Dmitri Mendeleev"]
+    },
+    {
+      "year": 1898,
+      "title": "Ramsay and Travers discover neon, krypton and xenon",
+      "detail": "Fractional evaporation of the residue of liquid air yields neon, krypton and xenon. Argon (Rayleigh and Ramsay, 1894) and terrestrial helium (1895) were already known; radon, the emanation from radium, followed in 1900. An entire column of elements with no apparent combining power had to be fitted into atomic theory.",
+      "people": ["William Ramsay", "Morris Travers"]
+    },
+    {
+      "year": 1923,
+      "title": "Brønsted and Lowry define acids and bases",
+      "detail": "In independent papers Johannes Brønsted and Thomas Lowry recast acidity as proton transfer rather than a property of hydroxyl compounds, giving inorganic chemistry its general language of conjugate pairs; in the same year Gilbert Lewis proposed the electron-pair definition that becomes the second half of the subject.",
+      "people": ["Johannes Brønsted", "Thomas Lowry", "Gilbert Lewis"]
+    },
+    {
+      "year": 1932,
+      "title": "Pauling creates the electronegativity scale",
+      "detail": "Linus Pauling extracts from bond enthalpies a single number per element — the tendency of an atom in a molecule to hold electrons — and with it quantifies partial ionic character, the polarity of every main-group bond and the rules for the structures of oxoanions.",
+      "people": ["Linus Pauling"]
+    },
+    {
+      "year": 1944,
+      "title": "Ellingham publishes his oxide diagrams",
+      "detail": "Harold Ellingham plots the free energies of oxide formation, per mole of oxygen, against temperature. The slope of each line is minus the entropy of the gases consumed or produced, and the crossovers decide which metal carbon can reduce. The diagrams remain the working tool of extractive metallurgy.",
+      "people": ["Harold Ellingham"]
+    },
+    {
+      "year": 1962,
+      "title": "Bartlett makes the first noble-gas compound",
+      "detail": "Neil Bartlett notices that the ionisation energy of xenon is almost the same as that of molecular oxygen, which platinum hexafluoride had already oxidised to O₂⁺[PtF₆]⁻. Within days he prepares XePtF₆; xenon fluorides, from other laboratories, follow within the year, ending the dogma of chemically inert noble gases.",
+      "people": ["Neil Bartlett"]
+    },
+    {
+      "year": 1963,
+      "title": "Pearson formulates hard and soft acids and bases",
+      "detail": "Ralph Pearson systematises a half-century of qualitative observations — why silver iodide is insoluble but silver fluoride soluble, why boron binds oxygen and mercury binds sulfur — as a principle of matching polarisability, giving main-group chemistry its second great selectivity rule after electrostatics.",
+      "people": ["Ralph Pearson"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Inorganic Chemistry",
+      "authors": "Catherine E. Housecroft and Alan G. Sharpe",
+      "year": 2018,
+      "note": "The natural main text for this course: periodicity and bonding chapters of the right depth, and group-by-group descriptive chemistry with good figures and problem sets."
+    },
+    {
+      "title": "Inorganic Chemistry",
+      "authors": "Gary L. Miessler, Paul J. Fischer and Donald A. Tarr",
+      "year": 2014,
+      "note": "Strong on the bonding models this course leans on — three-centre bonds, molecular orbitals of hypervalent species — and on the chemistry of the p-block groups."
+    },
+    {
+      "title": "Shriver & Atkins' Inorganic Chemistry",
+      "authors": "Mark Weller, Tina Overton, Jonathan Rourke and Fraser Armstrong",
+      "year": 2014,
+      "note": "The best treatment of hydrogen, the s block and industrial extraction, with the Ellingham and potential diagrams worked carefully; excellent boxed applications."
+    },
+    {
+      "title": "Chemistry of the Elements",
+      "authors": "Norman N. Greenwood and Alan Earnshaw",
+      "year": 1997,
+      "note": "The encyclopaedia of main-group descriptive chemistry; when a lesson states a fact about boranes, sulfur oxoacids or xenon fluorides, this is where the detail lives."
+    },
+    {
+      "title": "Advanced Inorganic Chemistry",
+      "authors": "F. Albert Cotton, Geoffrey Wilkinson, Carlos A. Murillo and Manfred Bochmann",
+      "year": 1999,
+      "note": "The senior reference for bonding and the periodic system; its chapters on boron hydrides and multiple bonding are still standard reading."
+    },
+    {
+      "title": "The Nature of the Chemical Bond",
+      "authors": "Linus Pauling",
+      "year": 1939,
+      "note": "The origin of electronegativity, hybridisation and the rules for oxoacid strength read in their original, quantitative form."
+    },
+    {
+      "title": "Descriptive Inorganic Chemistry",
+      "authors": "Geoff Rayner-Canham and Tina Overton",
+      "year": 2016,
+      "note": "A gentler entry to the survey chapters, organised exactly as this course is; good for first-pass reading before the denser texts."
+    },
+    {
+      "title": "The Periodic Table: Its Story and Its Significance",
+      "authors": "Eric R. Scerri",
+      "year": 2007,
+      "note": "History and philosophy of the periodic system, from Mendeleev through Moseley to the modern debate; the background for the periodic-trends chapter."
+    }
+  ],
   "next": [
     "coordination-chemistry",
     "materials-chemistry"

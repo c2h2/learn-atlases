@@ -103,8 +103,7 @@
       "title": "Sadi Carnot’s Réflexions",
       "detail": "Nicolas Léonard Sadi Carnot’s Réflexions sur la puissance motrice du feu set out the ideal heat engine and argued that its efficiency depends only on the temperatures between which it works — the first departure of thermodynamics from the caloric theory it was written within.",
       "people": [
-        "Sadi Carnot",
-        "Hippolyte Carnot"
+        "Sadi Carnot"
       ]
     },
     {
@@ -176,13 +175,13 @@
   "references": [
     {
       "title": "Physical Chemistry",
-      "authors": "Peter Atkins, Julio de Paula and Jonathan Reid",
+      "authors": "Peter Atkins, Julio de Paula and James Keeler",
       "year": 2018,
       "note": "The standard intermediate text; its treatment of the potentials, phase equilibria and electrochemistry sets the notation used throughout this atlas."
     },
     {
       "title": "Chemical Principles: The Quest for Insight",
-      "authors": "Peter Atkins, Loretta Jones and Leron Laverman",
+      "authors": "Peter Atkins, Loretta Jones and Leroy Laverman",
       "year": 2016,
       "note": "The first-course companion; useful for the thermochemistry and equilibrium foundations this course assumes."
     },
@@ -194,7 +193,7 @@
     },
     {
       "title": "The Principles of Chemical Equilibrium",
-      "authors": "Peter Denbigh",
+      "authors": "Kenneth Denbigh",
       "year": 1981,
       "note": "A mature treatment of equilibrium and solution thermodynamics, strong on the phase rule and on the meaning of standard states."
     },
@@ -205,10 +204,10 @@
       "note": "The axiomatic, postulate-based formulation; rewarding once the first four chapters of this course are done."
     },
     {
-      "title": "Advanced Thermodynamics for Chemists",
-      "authors": "Robert de Levie",
-      "year": 2001,
-      "note": "Written for chemistry students, with explicit attention to the conventions and to the errors that trip students up."
+      "title": "Chemical Thermodynamics: Basic Concepts and Methods",
+      "authors": "Irving M. Klotz and Robert M. Rosenberg",
+      "year": 2008,
+      "note": "A chemist's thermodynamics: standard states, the conventions and the places the algebra usually slips, without assuming a physics course."
     },
     {
       "title": "Thermodynamics and the Free Energy of Chemical Substances",

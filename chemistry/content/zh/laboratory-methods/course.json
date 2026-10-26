@@ -116,7 +116,7 @@
     },
     {
       "title": "Statistics and Chemometrics for Analytical Chemistry",
-      "authors": "Joel Miller and Stephen Townsend",
+      "authors": "James N. Miller, Jane C. Miller and Robert D. Miller",
       "year": 2018,
       "note": "数据各章的伴侣：均值与标准差、t 检验与 Q 检验、最小二乘校准与方法比较，按本科生遇到的顺序编排。"
     },
@@ -128,13 +128,13 @@
     },
     {
       "title": "Introduction to Organic Laboratory Techniques: A Microscale Approach",
-      "authors": "Donald L. Pavia, Gary M. Lampen and George T. Kriz",
+      "authors": "Donald L. Pavia, Gary M. Lampman, George S. Kriz and Randall G. Engel",
       "year": 2006,
       "note": "分离与鉴定各章的实践手册：重结晶、蒸馏、萃取、薄层色谱与定性检验，配有让操作奏效的技术照片与清单。"
     },
     {
       "title": "Macroscale and Microscale Organic Experiments",
-      "authors": "Keith J. Williamson and Katherine M. Masters",
+      "authors": "Kenneth L. Williamson and Katherine M. Masters",
       "year": 2017,
       "note": "标准教学制备的完整操作与危害注记；是风险评估与废物处理的良好示范。"
     },
@@ -146,7 +146,7 @@
     },
     {
       "title": "Laboratory Safety for Chemistry Students",
-      "authors": "John W. Roberts and Marilyne Jo Dilly",
+      "authors": "Robert H. Hill, Jr. and David C. Finster",
       "year": 2016,
       "note": "安全的骨架：危害类别与暴露、通风橱、个人防护装备、风险评估与应急响应，写给学生而非管理者。"
     }
