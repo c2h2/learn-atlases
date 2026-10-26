@@ -1,141 +1,308 @@
-Laboratory medicine is the discipline of the informative number and its three enemies: biological variation, analytical error and clinical misinterpretation. **This chapter covers reference intervals and their statistical birth (the 95-percent fallacy, the age-and-sex-and-pregnancy stratifications, and biologically-relevant-change indices that beat delta-checks), the pre-analytical and analytical chain (the tourniquet and haemolysis and tube-order facts that generate most 'abnormal results', quality control and the total-error idea), the interpretive core (sensitivity, specificity and predictive values applied to real screens, the reflex-testing and confirmatory-test logic, the critical-value culture), the panels by clinical problem (the liver-function tests as a pattern-language, the thyroid and inflammatory and renal and cardiac markers, the tumour markers' proper uses and misuses), and population-level tests gone clinical (screening results in symptomatic patients, incidental and false-positive cascades, and why 'more data' and 'better data' are different questions).**
+Laboratory tests are among the most frequent clinical actions: a typical hospital admission generates dozens of results. Each number answers a question only if the question was clear, the sample was taken and handled correctly, and the result is read against the right reference and the patient in front of you. This chapter is about reading results well. It covers how reference intervals are made, how errors enter before the sample reaches the analyser, how test accuracy and prevalence determine what a result means, and how to interpret the commonest blood tests, blood gases and urinalysis.
 
-## The numbers and their makers
+The probabilistic reasoning comes from [[clinical-skills/clinical-reasoning]]. How laboratories work, and how tissue samples are processed, is covered in [[pathology/diagnostic-pathology]].
 
-::: definition Reference intervals, variation and the test chain {#def-numbers}
-**A reference interval is a statistical artefact with clinical pretensions: usually the central 95 percent of a chosen 'healthy' reference population, which means one-in-twenty normal people are 'abnormal' by construction and that the interval's provenance (who was sampled, fasted, seated, trained, ethnic-representative, pregnant-excluded, supplement-quoting) decides most of what the flag means; the stratifications that matter (the age curves of alkaline phosphatase and PSA and creatinine-eGFR reporting, the sex split of haemoglobin and ferritin and creatinine, the pregnancy trimester intervals the obstetric laboratories publish because the physiological distortion is large and predictable, and the biological-seasonality effects - the vitamin D and cortisol diurnal-and-seasonal rules) are the honest answer to 'abnormal for whom'. Variation runs at three levels: between people (the genetic and set-point differences), within people (the circadian, dietary, menstrual, exercise and posture effects that make the 'reference change value' and index-of-insistency calculations the right comparison for a repeat test - the two-result-difference-that-is-significant arithmetic the haematology and endocrinology delta-checks automate), and analytical (the imprecision expressed as coefficient of variation, the inaccuracy against metrological targets, the biological-variation-derived quality specifications - the total-error and sigma-metrics world that explains why the same analyte has different quality demands and why the laboratory refuses to report some results to two decimal places). The pre-analytical chain is where most errors live and the clinician's own contributions are listed there: the tourniquet-time-and-fist-pumping that raises potassium and cholesterol locally, the tube order and fill (the citrate-partial-fill problem the coagulationists refuse politely), the haemolysis-potassium pseudorises and the lipaemic-and-icteric-bilirubin interferences, the timing rules (the trough-levels-and-cortisol-and-insulin-and-blood-culture-pair-and-timing-before-antibiotics protocols) and the patient-state rules (the post-exercise-and-postural renin-and-aldosterone, the biotin-supplement assays that mimic Graves' disease in the immunoassay platform's own chemistry). The analytical chain is quality-controlled and audited (the Levey-Jennings lineage and Westgard rules, the external-quality-assessment schemes and the ISO-15189 accreditation expectations that the patient never sees and depends upon hourly), and the 'critical value' or 'panic value' call-back culture (the results that must reach a named clinician within minutes - the potassium and the troponin and the positive blood-culture and the low-neutrophil rules) is one of the highest-reliability processes any hospital runs, and its failures are sentinel events. Finally the interpretive frame that everything else serves: no test interprets itself, the prevalence-dependent predictive values mean the same result is profound in one patient and noise in another (the predictive-value chapter's arithmetic re-cited at the bench), and the reflex-testing protocols (the automatic TSH-to-free-T4 and HIV-screen-to-confirmatory and PSA-discussion pathways) are clinical reasoning encoded by the laboratory when clinical reasoning is not at the keyboard.**
+## From the patient to the result
+
+A result passes through three phases, and errors can enter in each.
+
+::: definition The total testing process {#def-process}
+The **total testing process** has three phases:
+
+- The **pre-analytical phase**: choosing the test, identifying the patient, collecting the sample in the correct container, labelling, transport and storage until analysis.
+- The **analytical phase**: the measurement itself, controlled by calibration, internal quality control and external quality assessment.
+- The **post-analytical phase**: reporting, flagging, communicating urgent results, and the clinician's interpretation and action.
+
+In modern laboratories most errors arise in the pre-analytical and post-analytical phases, not in the analyser.
 :::
 
-## The interpretation
+Common pre-analytical errors produce characteristic patterns, and recognising them avoids treating an artefact:
 
-::: definition Panels, patterns and the confirmatory logic {#def-panels}
-**The liver-function tests are a pattern language, not a verdict: the hepatocellular-cholestatic-enzyme architecture (the ALT-and-AST-with-the-pattern-ratio-and-mixed-definitions, the ALP-and-GGT-and-bilirubin cholestatic set with the bone-ALP exception and the placentasis-ALP-in-pregnancy), the synthetic-function tests that actually matter (the albumin-as-a-half-life-laden-chronicity-marker, the PT-INR-as-the-true-acute-liver-function, and the platelets-and-splenomegaly-portal-hypertension-inference), the 'deranged LFTs' emergency algorithm (the acute-hepatitis-panel-for-the-transaminase-thousands-and-the-jaundice-pain-fever-Charcot-triad-emergency-and-the-drug-and-alcohol-and-autoimmune-and-Wilson's-and-haemolysis-splits) and the isolated-abnormality grind (the isolated-ALP-imaging-and-bone-question and the isolated-unconjugated-hyperbilirubinaemia-that-isusually-Gilbert's-until-the-haemolysis-workup-says-otherwise). Thyroid tests teach confirmatory logic par excellence: the TSH-as-the-screening-master's-rule-and-the-secondary-hypothyroidism's-trap-and-the-non-thyroidal-illness-rule ('do not test thyroid function in the acutely ill unless you suspect thyroid disease, and do not interpret what you get by the outpatient reference ranges'), the free-T4-and-T3-interpretation-with-binding-protein-caveats-and-the-avidin-biotin-assay-artefacts-and-the-amine-and-NSAID-displacement-effects, the TPO-antibodies-as-prognostic-not-diagnostic, and the 'abnormal thyroid function found in a hospital admission gets repeated as an outpatient in six to eight weeks' protocol that prevents more endocrinology than it creates. The inflammatory markers are used backwards most often: the CRP-as-both-screen-and-monitor-utility (the serial-measurement-declining-CRP-as-treatment-response-evidence and the ESR's-anchoring-legacy-with-its-plasma-cell-and-macroglobulin-sensitivities), the procalcitonin's honest niche (the antibiotic-discontinuation-trial-evidence-versus-the-start-antibiotics-because-high-PCT-overreach), and the ferritin's triple life (the iron-stores, the acute-phase-reactant and the haemophagocytic-and-still's-disease-marker-where-the-thousands-mean-something-entirely-different). The cardiac markers run on kinetics: the high-sensitivity troponin's 0/1-and-0/2-hour-algorithms-with-the-99th-percentile-and-biological-and-sex-specific-caveats, the delta-rule-for-the-acute-injury-and-the-chronic-elevation-in-the-renally-impaired-and-the-demand-ischaemia-type-2-problem that makes troponin-a-finding-not-a-diagnosis, and the BNP-and-HF-preserved-ejection-fraction-age-and-obesity-and-obesity-paradox-arithmetic. The renal panel's honest limits (the creatinine-as-a-late-and-muscle-mass-dependent-marker-and-the-eGFR-equations'-race-coefficient-debate-and-its-2020s-removals-and-replacements, the cystatin-C's-role-in-the-creatinine-blind, the urine ACR-as-the-test-nobody-orders-enough-and-the-dipstick's-nitrite-and-blood-semantics-and-the-'treat-the-ACR-not-the-culture'-rule). The haematogram is read as a narrative (the microcytic-differential-and-the-anaemia-of-chronic-disease-iron-studies-logic-and-the-thalassaemia-discrimination-indices, the macrocytic's-B12-and-folate-and-reticulocyte-and-alcohol-and-drug-and-MDS-order, the differential's left-shift-and-atypical-lymphocyte-and-blaster-traffic-rules, and the platelet-count-versus-the-bleeding-time's-retirement-and-the-vWF-and-platelet-function-testing-when-the-bleeding-is-real-and-the-count-is-normal). Finally the tumour markers belong to follow-up, not to screening (the PSA's-informed-choice-era-arguments, the CA-125's-primary-care-rule-out-value-and-its-scanning-panic-when-used-the-other-way, and the CEA-and-CA19-9-as-serial-monitoring-instruments-where-the-elevated-value-in-a-symptomatic-patient-is-a-referral-and-never-a-diagnosis): the chapter's confirmatory maxim is that a test's meaning is the next test it obliges - the HIV-screen-to-confirmatory-and-CD4-and-viral-load-and-genotype chain, the positive-FAANIT-to-sweat-test-to-genetics chain, the abnormal-haemoglobin-screen-to-electrophoresis-to-counselling chain - and every chain needs a named owner and a documented endpoint, because the orphaned 'pending confirmatory test' is the clinical-skills version of the lost variable.**
-:::
+- **Haemolysis** releases the contents of red cells into the serum, falsely raising **potassium**, and also lactate dehydrogenase, AST and phosphate. It is caused by difficult venepuncture, small needles, vigorous shaking or forcing blood through a needle.
+- **Delayed separation** of a sample (for example left overnight, especially in the cold) lets potassium leak from cells and glucose be consumed, so potassium rises and glucose falls.
+- **EDTA contamination**, from filling tubes in the wrong order or decanting from a full blood count tube, gives a very high potassium with a very low calcium, because EDTA is a potassium salt that binds calcium.
+- **Drip-arm contamination**, sampling from the arm into which an infusion is running, dilutes the sample and adds whatever the infusion contains, such as glucose or sodium chloride.
+- **Wrong blood in tube**, a sample labelled with another patient's details, is rare but dangerous, especially for blood transfusion. Labels should be completed at the bedside from the patient's identity band, never pre-labelled.
 
-## The cascade
+::: example A potassium of 7.2 {#ex-potassium}
+Mrs Fisher, 76, has a routine blood test in her GP surgery at 10 a.m. The sample is collected by courier at 6 p.m. and analysed the next morning. The laboratory phones with a potassium of 7.2 mmol/L. Her previous potassium was 4.3 mmol/L, she takes no drugs that raise potassium, and her creatinine is unchanged. How should the result be handled?
 
-::: definition Screening tests in patients, cascades and the ordering ethic {#def-cascade}
-**Population screening tests applied to symptomatic or anxious individuals behave differently and must be quoted differently: the positive predictive value collapses as prevalence falls (the mammographic-adjacent arithmetic re-run at the private-panel level: a tumour-marker screen in an asymptomatic low-risk patient produces mostly false positives whose harms - the imaging, the biopsies, the anxiety with its own half-life - are now well documented in the overdiagnosis literature), so the ordering ethic is 'a test for a question': the pretest probability either justifies the test's capacity to change management or it does not (the 'will a result change what I do tonight' filter and the 'what will I do with a borderline result' pre-commitment, both of which the Choosing-Wisdom campaigns and their Australasian and US antecedents operationalise). The incidentaloma problem is the inverse ethic failure with the same face (the adrenal and thyroid and pituitary and pulmonary findings that imaging's resolution outpaces medicine's decision rules for, and the published cascade-tracking studies - the 'one imaging test begets N further tests' series with their cost and complication quantifications - which make 'scan for the indication, image the problem' a patient-safety slogan and the radiologist's 'clinical question required on the request' a moral rather than bureaucratic demand). Test panels versus targeted tests is the same argument at bench level: the admitting-paneleverything culture's defenders cite the missed hyponatraemia and the incidental coeliac prevalence, its critics cite the cascades and the false-positive-restraint literature, and the settled practice is risk-stratified panels (the admission biochemistry for the acute, the pre-operative tests driven by history-and-examination findings per the anaesthesia guidelines' evidence that random tests change outcomes almost never, and the well-person-appointment's menu that should be a screening-programme discussion rather than a lab tab). The serial-measurement logic is under-taught and powerful: the delta between two results with the reference-change-value arithmetic beats any single value's flag for the deteriorating and recovering patient (the rising-creatinine-trajectory-and-plateau-and-fall that define AKI staging and transplant surveillance and the myeloma-M-protein-and-PSA-doubling-time seriality-rules), which is why the 'repeat in the morning' order should always be a reasoned 'what am I looking for and by how much' order and not a ritual. The report is the product: the 'histories matter more than results' laboratory consultant's line, the interpretive comment lines (the 'correlate clinically' honesty), the 'not recommended for screening' disclaimers that the laboratories add because clinicians keep ordering the tests anyway, and the specimen-rejection-and-redraw culture that either owns its error rates publicly or loses clinician trust. Last, the ordering clinician's own accountability layer: the test that should not have been ordered generates a false positive with a downstream owner (the cascade's person), and the test that should have been ordered and was not (the missed syphilis serology, the never-checked B12 in the metformin patient, the urinalysis skipped in the hypertensive) generates the harm that never gets a name; both errors are this chapter's subject and the diagnostic-reasoning chapter's safety grammar - probability, threshold, action - decides which test belongs to which.**
-:::
-
-::: example The critical value that waited {#ex-critical}
-A district hospital's evening bloods show potassium 7.1 mmol/L; the analyser flags it, the technician assumes haemolysis 'like the earlier sample', the repeat is not prioritised, and the observation chart shows a patient with an AKI on ramipril and trimethoprim whose ECG has not been looked at since admission.
 ::: solution
-**Panic-values-are-a-system-property ([[#def-numbers]], [[renal/potassium-calcium-phosphate]], [[renal/acute-kidney-injury]]): the chain failures - 'the haemolysis-assumption-without-inspection (the visual-check-or-centrifuge-and-re-haemolysis-index-number rule that distinguishes real from spurious hyperkalaemia), the critical-value policy's naming-and-time-and-closure-loop requirements (the 'result to a named person, read back, documented, actioned within minutes' protocol whose audit trail this hospital cannot produce), and the drug-prescribing-review-that-should-have-been-running-before-the-analyser-ever-spoke (the ACE-inhibitor-plus-trimethoprim-plus-AKI-potential-intercept that the medication-safety chapter keeps tabulating); the medicine now - 'the ECG-at-this-potassium-without-waiting-for-the-repeat (the peaked-and-flat-P-and-wide-QRS-and-sine trajectory), the membrane-stabilisation-and-shifting-and-removal sequence and the calcium-while-getting-the-defibrillator, and the 'was this the admission's missed finding' re-look (the drug chart, the fluid balance, the obs chart's urine output); and the governance - 'the critical-value-audit with the laboratory's own turnaround-and-call-back data, the 'clinician-reject-the-result-only-with-inspection-and-a-repeat-within-the-hour' rule, and the point the review writes once per generation: the potassium is not the laboratory's result and the patient's problem - it is one object in a chain of people with named duties, and every link's 'someone else will' is discovered at the inquest.'**
+A potassium of 7.2 mmol/L would be life-threatening if real, so it must never be ignored. But several features suggest **pseudohyperkalaemia**: a long delay before separation, a normal previous value, stable renal function, and no drug cause. Check whether the laboratory reported haemolysis.
+
+The safe approach is to contact the patient the same day. If she is well, repeat the sample urgently with prompt delivery to the laboratory (or, where available, a point-of-care measurement) and consider an ECG. If she is unwell, has symptoms or the ECG shows changes of hyperkalaemia, she needs emergency assessment. The decision is driven by the possibility of a dangerous true result, while the pattern guides how likely that is. Document the reasoning and the repeat result.
 :::
 :::
 
-::: example The thyroid that was not thyroid {#ex-nti}
-An admission's routine bloods include TFTs: TSH 0.3, free T4 9, free T3 3.1 - 'biochemical abnormality, please review' comments the lab; the admitting team starts a workup for apathy and weight gain 'explained by thyroid', until someone notices the admission was for pneumonia.
-::: solution
-**Non-thyroidal-illness-and-the-abuse-of-routine ([[#def-panels]], [[#def-cascade]], [[endocrine/thyroid]]): the physiology - 'the sick-euthyroid/non-thyroidal-illness pattern (the low-T3-with-low-normal-T4-and-variable-TSH-in-infection-and-starvation-and-post-operative-states, the convalescent-TSH-transient-rise that gets mislabeled as thyroiditis, and the 'do not test or do not trust during acute illness' rule with its stated exceptions (the myxoedema-and-thyroid-storm-suspicions that the rule exists for)); the systems cause - 'the admission-panel culture that includes TFTs 'because the old EPR template had them' (the Choosing-Wisdom and laboratory-initiated de-implementation campaigns' target: the test whose indications were deleted along with the consultants who wrote the template), and the 'abnormal flag equals clinical problem' cognitive reflex that makes the flag the referral; the correct sequence - 'the 'thyroid history and examination and the 'repeat-as-an-outpatient-in-6-to-8-weeks-with-the-interpretation-commented-and-the-GP-copied, and the 'if the abnormality persists it is a different patient and a real endocrine question'; and the de-implementation lesson the laboratory and the informatics team learn together - 'the test-catalogue governance with indication-based ordering (the 'remove the reflex from the template and own the menu' work that is patient safety in database form), and the audit showing fewer repeat TFTs and fewer 'abnormal result' letters causing fewer 'what does this mean' calls, which is the only outcome metric that separates the low-value test from the high-value test in the patient's own ledger.'**
-:::
+## Reference intervals and what "abnormal" means
+
+::: definition Reference interval {#def-reference}
+A **reference interval** (often called a "normal range") is usually the interval containing the central **95%** of results from a reference population of healthy people, from the 2.5th to the 97.5th percentile. By construction, **5% of healthy people** have results outside it. Reference intervals depend on the method and the population, and many are specific to age, sex or pregnancy, so the interval printed by the reporting laboratory should be used.
 :::
 
-::: quiz
-A screening test with 95 percent sensitivity and 95 percent specificity is applied to a population with 1 percent prevalence. The positive predictive value is approximately:
-- [ ] 95 percent
-- [ ] 66 percent
-- [x] 16 percent
-- [ ] 5 percent
-::: solution
-**1 true positive per 100 screened and ~4.995 false positives per 99 negatives gives roughly 16 percent (rule-of-thumb: PPV is driven by prevalence); this is why incidental findings dominate low-prevalence testing - [[#def-cascade]].**
+Three consequences follow.
+
+First, a result just outside the interval is often normal for that person. Second, the more tests are done, the more likely a healthy person is to have an "abnormal" result. If tests were independent, the probability that a healthy person has all $n$ results inside the interval would be $0.95^n$. For 20 tests that is about 36%, so nearly two-thirds of healthy people would have at least one flagged result. Results are not fully independent, but the effect is real and is a strong argument against ordering tests without a question. Third, a result inside the interval is not necessarily normal for the patient: a creatinine that has risen from 60 to 100 µmol/L may still be "within range" while representing a substantial fall in kidney function.
+
+The figure shows a reference interval as the central 95% of a normal distribution.
+
+::: widget distribution
+dist: normal
+params: mu=0, sigma=1
+a: -1.96
+b: 1.96
+caption: A reference interval as the central 95% of results in healthy people, shown in standard-deviation units. About 2.5% of healthy people lie in each tail. Many analytes are not normally distributed, and laboratories use non-parametric percentiles; this is a simplified picture.
 :::
+
+### Change over time
+
+For a patient being followed over time, a change between two results may matter more than either value. Every result varies because of **analytical variation** (imprecision of the method) and **biological variation** (natural fluctuation within the person). The **reference change value** estimates how big a difference must be before it is unlikely to be explained by this variation alone:
+
+$$
+\text{RCV} = \sqrt{2} \times z \times \sqrt{\text{CV}_A^2 + \text{CV}_I^2},
+$$
+
+where $\text{CV}_A$ and $\text{CV}_I$ are the analytical and within-person biological coefficients of variation and $z$ is 1.96 for 95% confidence (two-sided). Analytes with small biological variation, such as creatinine, can show meaningful change at small percentage differences; analytes with large biological variation need larger changes.
+
+## Test accuracy and prevalence
+
+::: definition Sensitivity, specificity and predictive values {#def-accuracy}
+For a test compared with a reference standard:
+
+| | Disease present | Disease absent |
+|---|---|---|
+| Test positive | true positive (TP) | false positive (FP) |
+| Test negative | false negative (FN) | true negative (TN) |
+
+- **Sensitivity** $= \text{TP}/(\text{TP} + \text{FN})$: the proportion of people with the disease who test positive.
+- **Specificity** $= \text{TN}/(\text{TN} + \text{FP})$: the proportion of people without the disease who test negative.
+- **Positive predictive value** (PPV) $= \text{TP}/(\text{TP} + \text{FP})$: the proportion of positive results that are true.
+- **Negative predictive value** (NPV) $= \text{TN}/(\text{TN} + \text{FN})$: the proportion of negative results that are true.
+:::
+
+::: theorem Predictive values depend on prevalence {#thm-prevalence}
+For a test with sensitivity $s$ and specificity $c$ applied to a population with prevalence (pre-test probability) $p$,
+
+$$
+\text{PPV} = \frac{s\,p}{s\,p + (1-c)(1-p)}, \qquad \text{NPV} = \frac{c\,(1-p)}{c\,(1-p) + (1-s)\,p}.
+$$
+
+As prevalence falls, the PPV falls and the NPV rises. The same test therefore performs very differently in a specialist clinic and in a screening programme.
+:::
+
+::: proof Derivation {#prf-prevalence}
+In a population of size $N$, there are $pN$ people with the disease, of whom $s\,pN$ test positive, and $(1-p)N$ without it, of whom $(1-c)(1-p)N$ test positive. The PPV is the true positives divided by all positives, and $N$ cancels. The NPV follows in the same way from the true negatives, $c(1-p)N$, and the false negatives, $(1-s)pN$. When $p$ is small, the false positives $(1-c)(1-p)$ can easily outnumber the true positives $s\,p$, even when $c$ is high.
 :::
 
 ::: widget plot
-f: 100*(0.01*x/(0.01*x+0.05*(1-x)))*0+100*(x*0.95/(x*0.95+(1-x)*0.05)); 60; 2; 1; 95
+f: s*x/(s*x + (1-c)*(1-x)); c*(1-x)/(c*(1-x) + (1-s)*x)
 x: 0, 1
-y: 0, 100
-labels: \text{prevalence (proportion)},\ \text{percent}\ \text{positive predictive value (sens 0.95, spec 0.95)};\ \text{PPV at prevalence 1 percent (annotated)};\ \text{PPV at prevalence 10 percent};\ \text{false-positive share of positives (inverse band)}
-caption: A test's meaning is mostly its population's prevalence ([[#def-panels]], [[#def-cascade]], [[epidemiology-ebm/diagnostic-tests]]).
+y: 0, 1
+sliders: s=0.9:0.5:0.99:0.01; c=0.9:0.5:0.99:0.01
+labels: \text{PPV}; \text{NPV}
+caption: Positive and negative predictive values against prevalence for a test with sensitivity $s$ and specificity $c$. At low prevalence even a good test produces mostly false positives. Simplified model.
+:::
+
+::: example A screening result {#ex-screen}
+A test for a condition has sensitivity 90% and specificity 95%. It is used (a) in a clinic where 30% of the people tested have the condition, and (b) as a screen in a population where 1% have it. Calculate the PPV in each setting.
+
+::: solution
+(a) Of 1,000 clinic patients, 300 have the condition and 270 test positive; of 700 without it, 5% (35) test positive. $\text{PPV} = 270/305 \approx 89\%$.
+
+(b) Of 1,000 people screened, 10 have the condition and 9 test positive; of 990 without it, 5% (49.5) test positive. $\text{PPV} = 9/58.5 \approx 15\%$.
+
+In the screening setting about 85% of positive results are false. This is why positive screening tests lead to confirmatory testing rather than a diagnosis, and why tests should be chosen for a clinical question rather than added "in case".
+:::
+:::
+
+::: warning Treat the patient, not the number
+An abnormal result in a well patient is often an artefact, a normal variant or a minor finding, while a normal result does not exclude disease if the test was the wrong one or done too early (a troponin in the first hour after the onset of pain, a chest X-ray in early pneumonia). Before acting on a result, ask: does it fit the clinical picture? Could it be a pre-analytical error? Is it a change from the patient's baseline? Then act on the combination. Equally, never dismiss a dangerous result as an artefact without repeating it.
+:::
+
+## Common blood tests
+
+### Full blood count
+
+The full blood count reports haemoglobin, the red-cell indices, the white cell count with its differential, and platelets.
+
+- **Haemoglobin** below the sex-specific reference interval defines **anaemia**. The **mean cell volume (MCV)** classifies it:
+  - **microcytic** (low MCV): iron deficiency (the commonest cause), thalassaemia trait, and sometimes anaemia of chronic disease;
+  - **normocytic**: acute blood loss, anaemia of chronic disease, chronic kidney disease, bone marrow failure, haemolysis;
+  - **macrocytic** (high MCV): vitamin B12 or folate deficiency, alcohol, liver disease, hypothyroidism, some drugs (such as methotrexate and hydroxycarbamide), and a raised reticulocyte count.
+- **Ferritin** is the best single test for iron stores: a low ferritin confirms iron deficiency, but ferritin rises in inflammation, so a normal value does not exclude it when inflammation is present.
+- **White cells**: a **neutrophilia** suggests bacterial infection, inflammation, steroids or tissue damage; a **lymphocytosis** suggests viral infection or chronic lymphocytic leukaemia; **eosinophilia** suggests allergy, parasites or some drugs; **neutropenia** is important because it predisposes to severe infection.
+- **Platelets**: thrombocytopenia increases bleeding risk at low counts; thrombocytosis is commonly reactive (infection, inflammation, iron deficiency) and less often a myeloproliferative neoplasm.
+
+In iron-deficiency anaemia in adults, the main question is **why**: in men and post-menopausal women, gastrointestinal blood loss, including bowel cancer, must be excluded. Haematology is covered in the course on blood ([[blood]]).
+
+::: example Tiredness in a 67-year-old man {#ex-anaemia}
+Mr Davies, 67, has felt tired for three months. His full blood count shows haemoglobin 98 g/L, MCV 72 fL and platelets 460 × 10⁹/L; ferritin is 8 µg/L and CRP is normal. He takes aspirin and has no obvious bleeding. Interpret the results and state the next step.
+
+::: solution
+He has a **microcytic anaemia**. A low ferritin with a normal CRP confirms **iron deficiency** (ferritin is not falsely raised by inflammation here). The mildly raised platelet count is a common reactive finding in iron deficiency. In a man of 67, iron deficiency is caused by blood loss until proven otherwise, and the gastrointestinal tract is the usual source; aspirin adds a risk of upper gastrointestinal bleeding, but it must not be assumed to be the cause. Under UK suspected-cancer guidance, unexplained iron-deficiency anaemia at his age needs urgent investigation of the gastrointestinal tract (typically with upper and lower endoscopy, following local pathways), and coeliac serology should be checked. Iron replacement treats the anaemia but does not answer the question of why it happened.
+:::
+:::
+
+### Urea, electrolytes and kidney function
+
+- **Creatinine** reflects muscle mass as well as kidney function. **eGFR** is calculated from creatinine, age and sex; NICE (2021) recommends the CKD-EPI equation without an ethnicity adjustment. eGFR is valid only in a steady state: in acute kidney injury, creatinine lags behind the fall in filtration.
+- **Urea** rises with dehydration, upper gastrointestinal bleeding and high protein intake as well as with reduced kidney function.
+- **Sodium** disorders are disorders of water balance. **Potassium** disorders are dangerous because of their effect on the heart.
+
+Acute kidney injury is staged on the rise in creatinine and the fall in urine output; the criteria and the approach are in [[renal/acute-kidney-injury]].
+
+Many UK laboratories report an **adjusted calcium** for the albumin concentration, because about 40% of plasma calcium is bound to albumin. A common formula is
+
+$$
+\text{adjusted Ca} = \text{measured Ca} + 0.02 \times (40 - \text{albumin}),
+$$
+
+with calcium in mmol/L and albumin in g/L. Local formulas differ, and when the albumin is very abnormal or accuracy matters, **ionised calcium** (measured on a blood gas analyser) is better.
+
+### Liver function tests
+
+"Liver function tests" mostly measure liver **damage**, not function. Read them as a pattern:
+
+- **Hepatocellular pattern**: ALT and AST raised more than ALP (viral hepatitis, drug injury, ischaemia, fatty liver disease, autoimmune hepatitis).
+- **Cholestatic pattern**: ALP and GGT raised more than the transaminases (bile duct obstruction by stones or tumour, primary biliary cholangitis, primary sclerosing cholangitis, drugs). A raised ALP with a normal GGT suggests bone rather than liver as the source; ALP also rises normally in pregnancy and growing children.
+- **Bilirubin**: raised in haemolysis (unconjugated), in Gilbert's syndrome (mildly raised unconjugated bilirubin, rising with fasting or illness, otherwise normal tests) and in liver disease and obstruction (conjugated).
+- **Synthetic function**: **albumin** (slow, also falls in illness and with protein loss) and the **prothrombin time / INR** (fast; a raised INR not corrected by vitamin K indicates significant liver failure).
+
+### Inflammatory markers
+
+**C-reactive protein (CRP)** is an acute-phase protein made by the liver in response to interleukin-6. It rises within hours of inflammation and falls quickly when it settles, so it is useful for following a response. The **erythrocyte sedimentation rate (ESR)** rises more slowly and is affected by anaemia, age and immunoglobulins; it remains useful in a few conditions such as giant cell arteritis and myeloma. Neither test is specific: a raised CRP does not say where inflammation is or whether it is infective, and a normal CRP early in an illness does not exclude a serious infection.
+
+### Cardiac troponin
+
+**High-sensitivity cardiac troponin** assays detect very small amounts of troponin released by injured heart muscle. A value above the **99th percentile** of a healthy reference population indicates **myocardial injury**. **Myocardial infarction** requires a rise and/or fall in troponin with evidence of ischaemia (symptoms, ECG changes, imaging or angiography), as set out in the Fourth Universal Definition of Myocardial Infarction (2018). Troponin is also raised in many non-ischaemic conditions, including sepsis, pulmonary embolism, heart failure, myocarditis, renal impairment and after strenuous exercise. Interpretation therefore depends on the clinical picture and on the **change** between serial samples, using the assay-specific pathway in local protocols ([[cardiovascular/coronary-artery-disease]]).
+
+## Blood gases
+
+An arterial blood gas measures the pH, the partial pressures of oxygen and carbon dioxide, and (usually) electrolytes, lactate and haemoglobin. Typical adult reference values on air at sea level are: **pH 7.35–7.45**; **PaCO₂ 4.7–6.0 kPa** (35–45 mmHg); **PaO₂ above about 10 kPa** (75 mmHg), falling with age; **bicarbonate 22–26 mmol/L**; base excess −2 to +2 mmol/L. Venous gases are often sufficient for pH, bicarbonate, potassium, glucose and lactate.
+
+::: theorem A stepwise reading of a blood gas {#thm-abg}
+1. **Oxygenation**: is the patient hypoxaemic, and is the PaO₂ appropriate for the inspired oxygen? (On air, the alveolar–arterial gradient helps; see below.)
+2. **pH**: acidaemia (below 7.35) or alkalaemia (above 7.45)?
+3. **Respiratory component**: is the PaCO₂ high (respiratory acidosis) or low (respiratory alkalosis)?
+4. **Metabolic component**: is the bicarbonate or base excess low (metabolic acidosis) or high (metabolic alkalosis)?
+5. **Primary disorder and compensation**: which change explains the pH, and is the other component compensating as expected?
+6. **In a metabolic acidosis, calculate the anion gap**: $\text{AG} = [\text{Na}^+] - ([\text{Cl}^-] + [\text{HCO}_3^-])$.
+:::
+
+The **anion gap** represents unmeasured anions, mainly albumin. Its reference range depends on the analyser, commonly around 8–16 mmol/L when potassium is not included. A **raised anion gap metabolic acidosis** suggests added acid: lactate (shock, sepsis, ischaemia), ketones (diabetic or alcoholic ketoacidosis), kidney failure, or toxins such as methanol, ethylene glycol and salicylate. A **normal anion gap (hyperchloraemic) acidosis** suggests bicarbonate loss (diarrhoea, some renal tubular acidoses) or large volumes of sodium chloride. Low albumin lowers the anion gap and can hide a raised-gap acidosis.
+
+For a metabolic acidosis, **Winter's formula** predicts the expected respiratory compensation: expected $\text{PaCO}_2$ (mmHg) $= 1.5 \times [\text{HCO}_3^-] + 8 \pm 2$. A PaCO₂ higher than predicted indicates an additional respiratory acidosis. The physiology is developed in [[physiology/acid-base]] and the clinical disorders in [[renal/acid-base-disorders]].
+
+The **alveolar–arterial (A–a) gradient** distinguishes hypoxaemia caused by hypoventilation (normal gradient) from that caused by a problem with gas exchange (raised gradient). The alveolar oxygen is estimated by the **alveolar gas equation**:
+
+$$
+P_AO_2 = F_iO_2 \times (P_{atm} - P_{H_2O}) - \frac{P_aCO_2}{0.8},
+$$
+
+which on room air at sea level is about $0.21 \times (101.3 - 6.3) - P_aCO_2/0.8 \approx 20 - 1.25\,P_aCO_2$ kPa. The gradient is $P_AO_2 - P_aO_2$, normally below about 2 kPa in young adults and rising with age.
+
+::: example A blood gas in diabetic ketoacidosis {#ex-dka}
+Mr Ali, 23, with type 1 diabetes, has vomiting and abdominal pain. On air: pH 7.12, PaCO₂ 2.8 kPa, PaO₂ 13.5 kPa, bicarbonate 9 mmol/L, sodium 136 mmol/L, chloride 100 mmol/L, glucose 28 mmol/L, blood ketones 5.2 mmol/L. Interpret the gas.
+
+::: solution
+1. **Oxygenation**: PaO₂ 13.5 kPa on air is normal. The A–a gradient is $20 - 1.25 \times 2.8 - 13.5 = 3.0$ kPa, slightly raised but acceptable when breathing very hard.
+2. **pH** 7.12: severe acidaemia.
+3. **PaCO₂** 2.8 kPa is low, which would cause alkalosis, so the respiratory change is not the cause.
+4. **Bicarbonate** 9 mmol/L is very low: a **metabolic acidosis** is the primary disorder.
+5. **Compensation**: expected PaCO₂ $= 1.5 \times 9 + 8 = 21.5 \pm 2$ mmHg, that is about 19.5–23.5 mmHg or 2.6–3.1 kPa (1 kPa = 7.5 mmHg). His 2.8 kPa (21 mmHg) is in range: appropriate respiratory compensation, with no additional respiratory disorder.
+6. **Anion gap** $= 136 - (100 + 9) = 27$ mmol/L: raised. With hyperglycaemia and ketones of 5.2 mmol/L, this is **diabetic ketoacidosis**.
+
+He meets the UK Joint British Diabetes Societies criteria for DKA (ketones 3.0 mmol/L or more, glucose above 11 mmol/L or known diabetes, and bicarbonate below 15 mmol/L and/or venous pH below 7.3). Management follows the local DKA protocol ([[endocrine]]).
+:::
+:::
+
+## Urinalysis
+
+A **urine dipstick** tests for blood, protein, glucose, ketones, leucocyte esterase, nitrites and specific gravity. It is cheap and quick but has important limits. In women under 65 with symptoms of urinary infection, dipstick results can support the diagnosis. In people **over 65**, UK guidance advises **not** using dipsticks to diagnose urinary infection, because asymptomatic bacteriuria is common and a positive dipstick leads to unnecessary antibiotics and missed alternative diagnoses. Positive dipstick blood needs microscopy or repeat testing and, if persistent and unexplained, assessment for urological or renal causes; proteinuria is quantified with an albumin:creatinine ratio. Urine pregnancy tests detect hCG and should be done in anyone who could be pregnant before imaging with ionising radiation, many drugs and surgery.
+
+::: quiz
+A 40-year-old man has a potassium of 6.9 mmol/L and a calcium of 0.9 mmol/L on a sample taken by a student who filled a full blood count tube first. He is well and his ECG is normal. What is the most likely explanation?
+- [ ] Acute kidney injury
+- [ ] Hypoparathyroidism
+- [x] EDTA contamination of the sample
+- [ ] Rhabdomyolysis
+::: solution
+A very high potassium with a very low calcium in a well patient suggests EDTA contamination: potassium EDTA from the full blood count tube raises potassium and chelates calcium. Filling the tubes in the recommended order and never decanting between tubes prevents it. The sample should be repeated promptly, because the result cannot be trusted either way.
+:::
+:::
+
+::: history
+Clinical chemistry grew from a few manual tests into automated analysis during the twentieth century. In the 1950s blood gas analysis was born of an emergency: during the 1952 polio epidemic in Copenhagen, the anaesthetist **Bjørn Ibsen** introduced manual ventilation through tracheostomies, and the laboratory physician **Poul Astrup** developed methods to measure blood pH and CO₂ to guide it. **Leland Clark** described the oxygen electrode in 1954 and **John Severinghaus** the CO₂ electrode in 1958, the basis of every modern blood gas analyser. In 1959–60 **Rosalyn Yalow** and **Solomon Berson** developed the radioimmunoassay, which made it possible to measure hormones such as insulin in blood; Yalow received the Nobel Prize in 1977.
 :::
 
 ## Where this leads
 
-The test-accuracy mathematics is worked in [[epidemiology-ebm/diagnostic-tests]], the screening programmes' criteria and results in [[public-health/screening]], the disease-specific interpretation in [[renal/filtration]] and [[endocrine/thyroid]] and [[blood/anaemia]] and [[gastrointestinal/liver-function]], the tumour markers' oncology uses in [[pathology/cancer-diagnosis]], and the error-culture of the pre-analytical chain in [[clinical-skills/patient-safety]].
-
-::: history
-**Laboratory medicine's history is the story of numbers displacing narratives and then needing them back. The nineteenth century brought chemistry to the bedside (the mediaeval wheel of uroscopy giving way at last to Liebig's and Hoppe-Seyler's quantitative chemistry, which established that clinical biochemistry was a science with normal values); the Haematometer and counts (the haemoglobinometer of Gowers and the four-place differential era), the Wassermann serology of 1906 and the Kahn and VDRL lineage made serology a specialty; and the early quality-control work of the 1920s-30s (the Shewhart control charts' migration from Bell Labs to the clinical laboratory via the 'normal values' debates). Reference intervals' statistics matured through the 1960s-70s (the 'reference value' terminology of the IFCC's and the Reichelt and Harris-and-Figueroa-Falún-era nonparametric-percentile-and-pertinent-partition debates, the '95 percent fallacy' critiques, and the biological-variation programme from the 1970s Harris and the 1988-2014 Stockholm conferences whose databases now set quality specifications worldwide). Auto-analysis industrialised the chain (the Skeggs-adjacent continuous-flow and the Technicon eras, then the random-access and stat-priority architectures that created the modern turnaround-time discipline), and the ISO-15189 accreditation movement from the 1990s turned quality from a professional virtue into an audited standard. The pre-analytical discovery is this chapter's patient-safety spine: the Lippi-adjacent and Carraro-and-Plebani and the WHO-adjacent and the 'Laboratory errors and patient safety' series of the 2010s with the Six-Sigma and root-cause studies establishing that 60-70 percent of laboratory errors occur before the specimen reaches the analyser - tourniquets and tube order and identification and timing - which finally put the phlebotomy chair at the centre of quality improvement. The clinical-interpretation canon came with evidence-based medicine: the JAMA Rational Clinical Examination and the 'Does this patient have...' series (the 'the iron studies for iron deficiency and the TSH-thyroid-accuracy data and the CRP-versus-ESR comparisons), the troponin's diagnostic-journey (from the 'time-to-peak-and-washout' curve studies of the 1990s to the high-sensitivity assays' 2010s sex-specific-99th-percentile and 0/1-2-hour-algorithm guidelines - and the contemporary 'troponin is a finding' reckoning with myocardial injury versus infarction that the universal-definition revision codified), and the eGFR-equation politics (the MDRD and CKD-EPI lineage, the race-coefficient era and its 2021-2024 removal debates, and the cystatin-C-pairing proposals - the clearest case study of a laboratory number's sociology). The cascade literature is the newest and most sobering: the incidentaloma and cascade-tracking imaging series of the 2000s, the tumour-marker and whole-body-screening-trial harm data, the Choosing Wisdom (2011-) campaign's laboratory sections, the overdiagnosis movement (the Welch and the 'Overdiagnosed' era's screening-harms quantification), and the de-implementation studies of routine inpatient-TFTs and admission-panels. Its conclusion - 'the test is only the beginning of a process and the process needs an owner' - has become the reporting-standards and reflex-protocol design principle of the 2020s laboratory. The last word belongs to the oldest test: the urine remains a dipstick away from being over-interpreted, and the laboratory's own history keeps producing the same advice in new clothes - know the prevalence, know the variation, know the pre-analytical sins, and know when the right test is the one you do not order.** - [[epidemiology-ebm/diagnostic-tests]], [[clinical-skills/clinical-reasoning]], [[public-health/screening]].**
-:::
+The approach in this chapter applies to every specialty's tests. Organ-specific interpretation is developed in [[renal/acute-kidney-injury]], [[gastrointestinal/liver-function]] and [[endocrine]], and the evaluation of diagnostic tests in [[epidemiology-ebm/diagnostic-tests]]. Imaging is covered in [[clinical-skills/medical-imaging]].
 
 ::: summary
-- Reference intervals describe 95 percent of a reference population, not normality; age, sex, pregnancy, altitude, drugs and biological variation determine what a flag means, and between-person deltas need reference-change-value arithmetic.
-- Most laboratory error happens before the sample is analysed: tourniquet technique, tube order and fill, timing, and patient state are clinical responsibilities, and the critical-value call-back loop is a life-support process audited like one.
-- Panels are pattern languages: the liver and thyroid and inflammatory and cardiac and renal test logics each hinge on what to confirm, when to repeat, and what the pretest probability makes the result mean; acute illness invalidates several of them, thyroid tests most reliably.
-- Predictive values follow prevalence: screening-grade tests in low-risk symptomatic or anxious patients mostly generate false positives and cascades, so order tests for questions and pre-commit to what each result will change.
-- Tumour markers and most 'routine' additions belong to defined monitoring or indication-based pathways, not to admission templates; test-catalogue governance is low-value-care reduction with a login.
-- Every result's next test needs a named owner and endpoint; the orphaned pending confirmatory test and the unowned incidentaloma are the two ways laboratory medicine harms the patient it warned.
+- Most laboratory errors happen before or after analysis; recognise the patterns of haemolysis, delayed separation, EDTA contamination and drip-arm samples.
+- A reference interval contains the central 95% of healthy people; many tests make "abnormal" results in healthy people likely.
+- A change from the patient's baseline may matter more than the reference interval; the reference change value quantifies meaningful change.
+- Predictive values depend on prevalence: at low prevalence even an accurate test gives mostly false positives.
+- Read the FBC by haemoglobin and MCV, LFTs as a pattern, CRP as a non-specific, fast-changing marker, and troponin as evidence of myocardial injury interpreted with the clinical picture and serial change.
+- Read blood gases stepwise: oxygenation, pH, respiratory and metabolic components, compensation and the anion gap.
+- Do not use urine dipsticks to diagnose urinary infection in people over 65.
 :::
 
 ## Exercises
 
-::: exercise Correct the haemolysis {level=1}
-Potassium 6.4 arrives haemolysed on a well patient; another 6.4 arrives unhaemolysed on an anuric dialysis patient at 23:00. Handle both and state the rules behind each decision.
+::: exercise Many tests, healthy person {level=1 check="round(0.95^20*1000)/1000"}
+If a healthy person has 20 independent tests, each with a reference interval containing 95% of healthy people, what is the probability that all 20 results are within their intervals? Give the answer to three decimal places.
 ::: solution
-**Same-number-two-medicine ([[#def-numbers]], [[renal/potassium-calcium-phosphate]]): the first - 'the haemolysis-correction: visual-or-index confirmation, the re-draw-without-tourniquet-pumping-from-a-fresh-site within the hour AND an immediate risk-assessment (ECG if any reason to think the true value is high - the renal function and the drugs and the symptoms decide), because spurious hyperkalaemia is a diagnosis of the sample, not the patient; the second - 'a 6.4 in anuric renal failure at 23:00 is never 'repeat in the morning': ECG now, membrane stabilisation and shifting therapies now, the dialysis arranged tonight, and the 'result consistent with clinical context means the result is believed before the specimen question is answered' rule; and the shared grammar - 'the laboratory value's credibility and its clinical risk are separate axes (the high-creatinine-patient-with-a-normal-ECG-and-6.4 and the well-person-with-6.4-after-a-difficult-venepuncture are opposite worlds), the sample-rejection-and-redraw policy that tells the phlebotomist what to do, and the 'do not dismiss a result without telling the person who needs to act on it if you are wrong' communication duty that is this whole chapter in one sentence.'**
+$0.95^{20} = 0.358$. So about 64% of healthy people would have at least one result outside its interval.
 :::
 :::
 
-::: exercise Read the anaemia {level=2}
-Hb 92, MCV 71, ferritin 9, transferrin saturation 12, platelets 540, ESR 4. Interpret, give the two histories that now matter, and the prescription with its follow-up arithmetic.
+::: exercise The anion gap {level=1 check="24"}
+Sodium 140 mmol/L, chloride 104 mmol/L, bicarbonate 12 mmol/L. Calculate the anion gap (without potassium).
 ::: solution
-**Iron-deficiency-as-a-sentence-not-a-number ([[#def-panels]], [[blood/anaemia]]): the read - 'the microcytic-hypochromic-iron-deficiency picture (the low-ferritin-and-low-saturation-and-high-TIBC-and-thrombocytosis-and-normal-ESR combination that says pure iron deficiency, not the anaemia of chronic disease whose ferritin sits normal-high) with the reactive thrombocytosis explained (no marrow investigation needed); the two histories - '1) blood loss: the menstrual quantification (the pads-and-clots-and-duration-and-anaemia-since-teenage-chronicity) and the GI (the dyspepsia-and-NSAID-and-stool-and-coeliac-and-colorectal red flags by age), and 2) the malabsorption-diet-bariatric-PPI-H-pylori-adjacent layer (the 'coeliac serology-even-with-a-clear-bleeding-source'-guidance nuance); the prescription - 'the oral-versus-IV-iron decision (the intolerance-and-severity-and-IBD-and-need-for-speed-IV-iron-indications), the cause-confirmed-not-just-repleted rule, and the follow-up arithmetic (the reticulocyte-5-10-days-then-Hb-2-grams-per-4-weeks expectation - the 'no-response-at-4-weeks-means-non-adherence-or-ongoing-loss-or-wrong-diagnosis re-look, and the 3-months-post-normalisation-repletion-and-the-maintenance-or-cause-treatment decision that prevents the sixth iron-deficiency admission in the parous patient nobody referred for her fibroids).**
+$\text{AG} = 140 - (104 + 12) = 24$ mmol/L, which is raised. Look for lactate, ketones, kidney failure or toxins.
 :::
 :::
 
-::: exercise Pre-commit to the borderline {level=2}
-An asymptomatic 48-year-old's private 'health screen' returns: CA-19-9 mildly raised, thyroid nodule on the screening ultrasound, and a 'genetic risk variant' panel result. Advise, using the cascade arithmetic.
+::: exercise Adjusted calcium {level=1 check="2.46"}
+Measured calcium 2.20 mmol/L, albumin 27 g/L. Use the formula adjusted Ca = measured Ca + 0.02 × (40 − albumin). Give the exact value in mmol/L.
 ::: solution
-**The-cascade-you-are-inside ([[#def-cascade]], [[epidemiology-ebm/diagnostic-tests]]): the arithmetic - 'at low prevalence even excellent specificity drowns in false positives (the widget's curve: 99-percent-specificity on a 1-percent-prevalence condition yields a majority of positives that are false); the specific items - 'CA-19-9 is not a screening test in any guideline (its legitimate uses are the malignant-biliary-obstruction-workup-question mark and the monitored pancreato-biliary oncology patient) and the benign-cholestasis-and-thyroid-and-gynaecological-confounders are the expected source; the 'incidental thyroid nodule' now follows the not-for-screening imaging pathway's own rules (the size-and-feature-stratified follow-up with its published over-detection critique), and the 'genetic risk variant' needs the variant's actual-penetrance-and-clinical-actionability audit (the direct-to-consumer panels' low-predictive-value-for-complex-disease findings that the genetics programmes keep re-reporting); the advice structure - 'the named-reassuring-steps ('this result does not mean you have cancer; here is what it probably is and here is the single rational next check, if any'), the one-owner rule (the GP or a defined clinic, not five), and the pre-commitment discipline: agree before testing that a borderline result triggers the pre-specified action and nothing else; and the system-layer - 'the 'pre-test-probability-counselling' requirement the appropriate-use-criteria movements push for and the patient-facing 'why I will not order this' conversation that the overdiagnosis literature's authors describe as preventive medicine with a different vocabulary.'**
+$2.20 + 0.02 \times (40 - 27) = 2.20 + 0.26 = 2.46$ mmol/L, within a typical reference interval. The low measured value is explained by the low albumin. If accuracy matters, measure ionised calcium.
 :::
 :::
 
-::: exercise Build the reflex protocol {level=3}
-Your laboratory keeps finding unmanaged abnormal results: vitamin D rechecks nobody ordered, 'pending confirmatory' HIV and coeliac serologies with no documented owner, and a hepatitis B core-antibody 'isolated positive' that each year generates 40 endocrine-style confusion consults. Write the test-stewardship and reflex-protocol specification with its governance.
+::: exercise Predictive value {level=2 check="round(1000*0.99*0.02/(0.99*0.02+0.01*0.98))/1000"}
+A test has sensitivity 99% and specificity 99%. In a population with prevalence 2%, what is the positive predictive value? Give it as a proportion to three decimal places.
 ::: solution
-**Reflexes-with-owners ([[#def-numbers]], [[#def-panels]], [[clinical-skills/records-handover]]): the diagnosis - 'the laboratory has been adding clinical reasoning to a system whose design assumption was 'the clinician will handle it', and 'handle it' has no owner and no clock; the protocol library - '1) the classical reflex trees done well (the TSH-to-free-T4 with the 'not-recommended-for-screening-in-acute-illness' flag logic and the HIV-screen-to-confirmatory-to-CD4-and-viral-load-with-a-named-advocate-and-a-48-hour-communication-rule, the coeliac screen with the 'total-IgA-and-tissue-transglutaminase-and-the-'IgA-deficiency-reflex'-rules and the endoscopy-referral auto-drafted for the clinician's signature), 2) the unresolved-result register (every 'pending confirmatory' born with an owner field and an escalation interval; the 'who-closed-this-and-when' report to the requesting service monthly), 3) the isolated-positive and equivocal policies written as one-pagers (the HBc-isolated-positive algorithm - the 'prior-false-positive-versus-resolved-versus-occult-versus-vaccine-response' decision table with the 'when to call hepatology' rule and the annual audit of the confusion it prevents), and 4) the low-value-test de-implementation (the 'vitamin D for bone-health-in-sufficient-people: not repeated unless indication' catalogue change with the guideline citation on the result screen and the GP-facing campaign - the de-implementation trials' finding that formulary-style friction beats education); the governance - 'the joint laboratory-clinical-director-and-informatics board that owns the test catalogue (the indication-menus, the removed-from-template list reviewed annually against theChoosing-Wisdom and specialty guidance), the 'add-by-evidence-remove-by-audit' rule, the reflex-protocol change control with clinical governance sign-off (a reflex tree is a standing order and gets the prescribing-level review), and the patient-safety reporting loop for the orphaned results which becomes the audit that proves the register works; and the metric set - 'the unowned-abnormal-result count (the number this specification exists to make zero), time-to-communication for the critical and confirmatory results, the de-implemented-test volumes and their rebound rates, and the annual report of 'results we should not have produced and results we should have chased' - because test stewardship is antimicrobial stewardship without the glamour, and both are ultimately the discipline of not doing things.'**
-:::
-:::
-::: example The troponin that was not a heart attack {#ex-troponin}
-A 79-year-old with sepsis from pyelonephritis has a troponin of 340 ng/L on admission; the ED starts a 'heart attack pathway' with dual antiplatelets and plans angiography; the daughter asks whether he has had a heart attack and the answer given is 'yes, a small one'.
-::: solution
-**Myocardial-injury-versus-infarction ([[#def-panels]], [[cardiovascular/coronary-artery-disease]], [[infectious-diseases/fever-sepsis]]): the taxonomy - 'the universal definition's split: troponin elevation above the 99th percentile means myocardial injury; infarction requires injury plus ischaemia evidence (the symptoms-and-ECG-and-imaging-and-delta-kinetics criteria); this patient's pattern (the demand-ischaemia type-2 picture of sepsis-and-tachycardia-and-hypotension-and-renally-reduced-clearance) is the commonest cause of 'positive troponin' in medical admissions and the antiplatelet-and-catheterisation answer treats the number, not the patient; the kinetics discipline - 'the rise-and-fall-versus-chronic-stable-elevation distinction (the serial-measurement logic: the myocarditis and the chronic-kidney-disease-and-structural-heart-disease plateaus that never trend) and the assay's own caveats (the heterophile-antibody and macro-complex oddities, the age-and-sex-percentile arguments); the right management - 'the sepsis treated and the ECG and the delta-troponin-series and the clinical-ischaemia-question asked honestly (the 'type-2 infarction if criteria met, treated by its cause') and the decision about antithrombotics made against bleeding risk and the actual coronary probability, not the pathway's momentum; and the conversation - 'the 'his heart test is abnormal because the infection strained his heart - we are treating the infection and watching the heart; this is not the blocked-artery heart attack' explanation which the daughter will repeat to the ward team and which prevents both the false reassurance and the lifelong 'he had a heart attack' label that follows patients through every future admission with unnecessary catheters attached.'**
+Per 10,000 people: 200 have the disease, 198 test positive; 9,800 do not, of whom 1% (98) test positive. $\text{PPV} = 198/296 = 0.669$. Even with 99% sensitivity and specificity, one in three positive results is false at this prevalence.
 :::
 :::
 
-::: example The INR machine and the herbal tea {#ex-inr}
-A 66-year-old on warfarin for a mechanical valve presents with INR 8.9 and no bleeding; she started 'a Chinese herbal mix' and her 'new self-testing machine' gave '6 something' last week which she reported and was told to 'keep taking your usual'; her target is 2.5-3.5.
+::: exercise The A–a gradient {level=2 check="20 - 1.25*4.0 - 8.0"}
+A patient breathing room air has PaO₂ 8.0 kPa and PaCO₂ 4.0 kPa. Using $P_AO_2 \approx 20 - 1.25\,P_aCO_2$ kPa, calculate the A–a gradient in kPa, exactly.
 ::: solution
-**Self-measurement-plus-interaction-plus-system ([[#def-numbers]], [[cardiovascular/vascular-disease]], [[pharmacology/patient-variation]]): the immediate medicine - 'the no-bleeding-high-INR protocol (the vitamin-K-route-and-dose-for-mechanical-valves-because-overcorrection-thrombosis-is-the-valve's-own-risk-and-the-ade complex-or-PCC-only-for-bleeding logic), and the 'no bleeding documented by examination not by question'; the interaction hunt - 'the herbal-warfarine interactions as a taught class (the coumarin-containing-and-cYP-affecting-and-vitamin-K-content-and-antiplatelet-herb-layers: the dong quai and dan-shen lineage and the garlic-and-ginger-adjacent, which the interaction databases under-cite because their evidence is case-report grade and real), asked about in every INR-review clinic because the patient will not volunteer 'herbs are not medicines'; the self-testing audit - 'the machine's QC-and-coding-and-operator-technique check and the crucial governance question of who interpreted the '6 something' and under what protocol (the self-management-versus-self-testing distinction: self-testing without a titration plan and a responsive anticoagulation service is a measurement without a medicine), and the reported-result pathway that produced 'keep taking your usual' for a mechanical-valve patient above target - the telephone-review-protocol that needs escalation criteria and a pharmacist or nurse prescriber behind it; and the education that closes it - 'the 'every new anything tells your anticoagulation clinic' rule (the antibiotics and the paracetamol runs and the herbal and the alcohol binges and the vitamin-K dietary swings) with the INR-frequency plan and the 'which symptoms make you come in today' card, and the interaction-alert system made reviewable rather than shouty, which is this chapter's own patient-safety sentence: the number's meaning includes who measured it and who acted on it.'**
+$P_AO_2 = 20 - 1.25 \times 4.0 = 15.0$ kPa. Gradient $= 15.0 - 8.0 = 7.0$ kPa, markedly raised. The hypoxaemia is due to a problem with gas exchange (such as pneumonia, pulmonary embolism or pulmonary oedema), not to hypoventilation; the low PaCO₂ shows he is hyperventilating.
 :::
 :::
 
-::: exercise Justify or refuse the test {level=1}
-Decide and defend: (a) D-dimer for a low-probability leg in a 90-year-old on warfarin; (b) troponin 'to be safe' in a 22-year-old with panic attacks; (c) morning cortisol for a fatigue patient on an inhaled steroid; (d) tumour markers before a fertility workup.
+::: exercise Read the LFTs {level=2}
+A 70-year-old woman has painless jaundice and weight loss. Bilirubin 180 µmol/L, ALP 650 U/L, GGT 520 U/L, ALT 90 U/L, albumin 32 g/L, INR 1.4. Interpret the pattern and suggest the next steps.
 ::: solution
-**Four-orders-three-answers ([[#def-cascade]], [[#def-panels]]): (a) refuse-or-re-purpose - 'the D-dimer is uninterpretable-by-design over 80 and on anticoagulation (the age-adjusted-threshold debate aside, the pretest logic here goes straight to the compression-ultrasound question or a no-test-if-low-Wells approach, and the finding's downstream cascade is guaranteed); (b) decline with explanation - 'the low-prevalence troponin yields mostly false positives and the panic diagnosis is made by history-and-ECG-and-safety-net, not by a number that will be quoted at her next event; (c) yes, and correctly - 'the exogenous-steroid-suppression question (the timing-and-synthesis-inhibitor-and-short-steroid-window rules, the 8am-sample-and-the-binding-protein-and-oral-contraceptive caveats and the ACTH-stimulation-test's-confirmatory-place), the one low-value test that is high-value when the indication is the drug; (d) refuse - 'the fertility workup's tumour markers belong to the guideline lists (the prolactin-and-TFT-and-androgen-and-AMC-adjacent where indicated), not to CA-125-into-ovarian-cancer-anxiety with a benign-cyst follow-up cascade attached; and the meta-rule rehearsed at each: 'what will I do differently for a normal versus abnormal result, tonight, in this patient' - the sentence that ends more cascade letters than any guideline.'**
+The ALP and GGT are raised much more than the ALT: a **cholestatic** pattern with conjugated hyperbilirubinaemia. Painless jaundice with weight loss in an older person raises concern for **malignant obstruction** of the bile duct, such as carcinoma of the head of the pancreas or cholangiocarcinoma. The raised INR may reflect malabsorption of vitamin K (fat-soluble) in cholestasis rather than liver failure; it may correct with vitamin K. Next steps: an urgent ultrasound to look for duct dilatation, then cross-sectional imaging (CT) and referral following suspected-cancer pathways.
 :::
 :::
 
-::: exercise Read the LFT pattern {level=2}
-Give the working diagnosis and immediate actions for the four patterns: (a) ALT 900, bilirubin 60, ALP 130, INR 1.5; (b) ALT 90, ALP 480, GGT 620, bilirubin 120; (c) ALT 450, ALP 110, albumin 24, INR 1.0, IgG 22; (d) bilirubin 52 with ALT 25, ALP 95, and a normal ultrasound.
+::: exercise Mixed acid–base disorder {level=3}
+A 68-year-old man with COPD has pneumonia. On air: pH 7.18, PaCO₂ 8.5 kPa, PaO₂ 6.9 kPa, bicarbonate 18 mmol/L, sodium 138, chloride 100, lactate 5.0 mmol/L. Interpret the gas.
 ::: solution
-**Four-patterns-four-duties ([[#def-panels]], [[gastrointestinal/liver-function]]): (a) acute hepatitis until proven otherwise - 'the A-and-B-and-C-and-E-serology-and-the-alcohol-and-drug-paracetamol-and-herbal-history-and-the-autoimmune-and-Wilson's-age-thresholds-and-the-abdominal-ultrasound-for-the-biliary-and-vascular, and the INR-1.5-that-makes-this-a-hepatology-referral-today-because-synthetic-dysfunction-in-acute-hepatitis-is-the-acute-liver-failure-door (the encephalopathy-and-lactate-and-glucose-and-renal-trajectory and the transplant-centre-conversation-when-the-INR-climbs); (b) cholestasis - 'the dilated-or-not question on ultrasound decides the obstructive cascade (the ERCP-or-EUS-for-choledocholithiasis-and-malignancy-and-the-mass-on-pancreatic-head-reveal) versus the intrahepatic workup (the PBCAMA-and-PSC-cholangiography-and-IgG4-and-the-drug-cholestasis-review); (c) chronic-hepatitis-collapsing-into-chronic-liver-disease - 'the autoimmune-hepatitis-collapsing-into-chronic-liver-disease pattern (the IgG-and-ANA-and-SMA-and-LKM-and-liver-biopsy-criteria with the overlap syndromes) with the albumin-and-platelets-and-splenomegaly-cirrhosis-stage-workup and the HCC-surveillance-enrolment; and (d) isolated unconjugated or conjugated - 'the Gilbert's-question-answered-by-the-fractionation-and-the-haemolysis-screen (the reticulocytes-and-haptoglobins-and-LDH-and-smear) versus the Dubin-Johnson-and-Rotor-rarities-and-the-haemolysis-that-needs-its-own-cause-and-never-gets-a-stent; and the duty all four share: the pattern is the prescription - the 'deranged LFTs' referral that does not say which pattern the referrer is worried about wastes the specialist's first paragraph.'**
+Oxygenation: severe hypoxaemia (PaO₂ 6.9 kPa). pH 7.18: acidaemia. PaCO₂ 8.5 kPa is high: a **respiratory acidosis**. Bicarbonate 18 mmol/L is low: a **metabolic acidosis** too, since a respiratory acidosis alone would raise bicarbonate. Anion gap $= 138 - (100 + 18) = 20$ mmol/L, raised, consistent with lactic acidosis (lactate 5.0). This is a **mixed respiratory and metabolic acidosis**, which causes severe acidaemia because neither disorder compensates for the other. In this context it suggests hypercapnic respiratory failure with sepsis and tissue hypoperfusion: he needs urgent senior review, controlled oxygen to a target range, assessment for non-invasive ventilation, and sepsis management.
 :::
 :::
 
-::: exercise Handle the rejected specimen {level=2}
-The laboratory phones: 'two blood cultures - one bottle positive, coagulase-negative staph; the other set clear; we are labelling it a contaminant but the patient has a prosthetic valve.' Negotiate the science and the decision.
+::: exercise Design a safer test request {level=3}
+A medical admissions unit adds a standard panel of 18 blood tests to every admission, including thyroid function, vitamin D, ferritin, PSA and tumour markers. Using the ideas in this chapter, argue for or against the panel and propose an alternative.
 ::: solution
-**Contaminant-versus-endocarditis ([[#def-numbers]], [[infectious-diseases/healthcare-infections]], [[cardiovascular/valve-congenital-disease]]): the microbiology - 'the CoNS-in-one-bottle-of-two-is-usually-skin-flora arithmetic (the time-to-positivity-and-the-only-in-liquid-versus-both-media-and-the-bubble-count-quantitative-blood-culture-logic) against the prosthetic-valve-context which makes CoNS the third-commonest-endocarditis-organism-and-'contaminant' a word that has killed valve patients; the decision structure - 'the modified-Duke-application (the two-separate-cultures criterion and the prosthetic-and-intracardiac-device-risk category and the echo-strategy-TTE-versus-TOE-and-now-adjacent-CT-and-PET-questions), the 'do-not-start-antibiotics-if-stable-and-subacute-until-the-repeat-cultures-are-drawn-then-treat-properly' subspecialty rule that the IE guidelines defend against the sepsis-reflex, and the surgery-team-early-involvement-for-the-prosthetic-and-heart-block-and-embolic-trajectories; the process - 'the repeat-cultures-before-antibiotics and the laboratory's own dialogue (the 'we will not call it a contaminant in this patient' conversation that both sides document), and the communication that the positive bottle and the discussion are in the notes because six doctors will inherit this fever; and the meta-lesson - 'the result's meaning is the patient's context, which is the chapter's thesis: the laboratory can identify the organism and the probability; only the clinician can say which one this patient has.'**
+Against: many of the tests have no question attached for most patients. With 18 tests, a healthy person has a high chance of at least one result outside its reference interval ($1 - 0.95^{18} \approx 60\%$ if independent), and in acutely ill patients many results are disturbed by the illness itself (thyroid function tests are often abnormal in non-thyroidal illness; ferritin rises with inflammation). Tumour markers and PSA in unselected patients have low predictive values and lead to further tests, anxiety and incidental findings, and PSA testing should follow a discussion with the patient. The panel also costs time and money and generates results that someone must review and act on. Alternative: a small core set for all admissions (full blood count, urea and electrolytes, CRP, and others agreed locally for the population, such as glucose and liver tests), with further tests requested for a stated clinical question, decision support in the ordering system, and an audit of the impact.
 :::
 :::
-
-::: exercise Fix the admission panel {level=3}
-Audit findings: your medical admissions all get TFTs, bone and liver screens and tumour-adjacent markers inherited from 2009 templates; 40 percent of abnormal results generate repeat tests and only a small fraction change management; the phlebotomy-deficit and unhappy-patient letters mention 'another needle'. Write the test-stewardship intervention.
-::: solution
-**De-implementing-a-panel ([[#def-cascade]], [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]): the evidence first - 'the admission-panel literature (the preoperative-testing analogy: routine tests in low-risk populations change outcomes almost never and generate cascades predictably; the Choosing-Wisdom and laboratory-de-implementation campaign results for vitamin D and TFTs); the design - '1) indication-based ordering built into the EPR (the admission-set reduced to the acute-relevant core - FBC-and-U&E-and-CRP-and-LFT-and-glucose - with TFTs-and-bone-and-tumour-markers unlocked by indication prompts that name the guideline), 2) the 'why are you ordering this' free-text that the laboratory's ordering-physician reviews weekly (the audit-with-feedback design that the appropriateness literature rates highest), 3) the reference-change-value and delta-driven auto-reducing of reflex re-checks, 4) the patient-facing 'what we are looking for and what we are not' line in the admission documentation (the cascade informed-consent idea, used in screening programmes for decades), and 5) the phlebotomy-hours-of-blood-consumption-and-tube-waste audit that makes the cost visible with the harm; the measurement - 'the abnormal-results-repeated-without-management-change rate, the 'incidental-workups-per-1000-admissions and the 'time-to-important-test-not-delayed balance metric (stewardship that delays a troponin is malpractice - the safety case carved into every rule), and the staff-and-patient surveys; the rollout politics - 'the laboratory-and-medical-director-and-informatics coalition, the consultant-ownership approach (each faculty signs its own indication prompts - the 'nobody takes my tests away' resistance answered with 'you decide yours'), the phased-with-rebound-monitoring plan (de-implementation trials' honest finding: withdrawn tests return with staff turnover unless the catalogue itself changes), and the board report that translates tubes-not-ordered into avoided-cascades and bed-days rather than consumables savings; and the closing argument for the sceptics - 'the panel's defenders are right that it catches the occasional hyponatraemia; stewardship's answer is that it loses more patients to the false-positive cascade and the needle-stick-and-anxiety economy than it finds, and that the medicine is in knowing which test the patient needs, not in which box the template pre-ticked.'**
-:::
-:::
-

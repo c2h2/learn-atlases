@@ -1,141 +1,308 @@
-The physical examination is medicine's embodied reasoning: a technique with measurable accuracy (the likelihood ratios of the Rational Clinical Examination literature), an ethical artefact (a sanctioned touch that requires consent, a chaperone and proportionality), and a disappearing skill whose disappearance several specialty reviews have formally documented. **This chapter covers the general examination (the general inspection that begins at the door and the vital signs with their prognostic power and their measurement error), the system-based examinations with the discriminating signs worth knowing and their numbers (the jugular venous pressure and the apex and the murmurs, the chest's percussion relics against its auscultation and ultrasound successors, the abdomen and the hernia and the surgical scar, the neurological system as the examination that still localises by hand, and the joints whose special tests are mostly screening rather than verdicts), the evidence base and its honest limits (which signs are dead, which were never alive, and which outperform the blood tests they displaced), and the examination's modern politics (the point-of-care-ultrasound question, the declining-hours literature, and the simulation-and-feedback methods that still build the hands).**
+The physical examination tests the hypotheses that the history has raised. It is also a ritual of care: for many patients, being examined properly is part of feeling taken seriously. A good examination is systematic, so that nothing is missed; focused, so that time is spent where it matters; and honest about its limits, because every sign has a known chance of being absent when the disease is present.
+
+This chapter covers the principles that apply to every examination, the general examination and vital signs, the main body systems, and how to think about the accuracy of physical signs. It assumes the anatomy of [[anatomy/thorax]] and [[anatomy/abdomen]], and it follows the history described in [[clinical-skills/history-taking]].
+
+## Principles of examination
+
+Before touching the patient, a few steps make the examination safe and respectful. They are examined in every OSCE because they matter in every real examination.
+
+::: definition Preparing to examine {#def-prepare}
+Before any examination the clinician should:
+
+- **Introduce** themselves, confirm the patient's identity and explain what the examination involves.
+- **Obtain consent**, which for an examination is usually verbal and must be specific for intimate examinations.
+- **Offer a chaperone** for any intimate examination (breast, genital, rectal) and record the offer, the response and the chaperone's name.
+- **Clean their hands** before and after contact.
+- **Position** the patient appropriately (for example at 45 degrees for the chest, flat for the abdomen) and **expose** the area needed while preserving dignity, covering what does not need to be seen.
+- **Ask about pain** and examine painful areas last and gently.
+:::
+
+The classic sequence for most systems is **inspection, palpation, percussion and auscultation**. The order matters: looking first means you know where to feel, and feeling before percussing means you have found the edges of an organ before trying to define them by sound. In the abdomen many clinicians listen before palpating, because palpation may change bowel sounds, but the principle of looking first always applies.
+
+Examination findings should be compared between sides, because the patient is their own control: one leg swollen and one normal is more informative than two legs of uncertain size.
 
 ## The general examination
 
-::: definition General inspection, vitals and the ethics of touch {#def-general}
-**The general inspection begins before the patient is touched and carries more diagnostic information per second than anything downstream: the door-to-bed assessment (the cachexia or fluid, the stride and the stoop and the use of hands to stand, the speech and the attention and the smell - the uraemia and the ketoacidosis and the hepatic fetor and the clinical neglect that the geriatricians read as a social sign), the bed-head review (the inhalers and the diuretics and the steroids and the fish-oil bottles counted as an unblinded drug history), and the body as a record (the scars and stomas and drain sites and injection lipodystrophy, the tattoos and self-harm scars read with their contexts intact, the pressure areas that are a nursing diagnosis and a governance document in one). The vital signs are simultaneously the most prognostic measurements in acute medicine (the early-warning literature: the respiratory rate as the earliest and most-ignored marker, the outlier that predicts arrest and admission across every score) and among the least reliable as recorded (the placebo-effect of the obs chart - vital signs taken for the chart rather than the patient, the 4-hourly ritual that misses the deterioration between rounds, and the measurement-error curricula: the cuff-size effect, the oral-versus-tympanic-versus-core temperature gaps, the pulse-oximeter's perfusion-and-pigmentation limitations now under formal study because pulse oximetry's accuracy varies with skin colour and that variation is a patient-safety finding, not a footnote). The hands repay study beyond their classics (the leukonychia and Mueckle's lines and the clubbing's true prevalence and its iatrogenic-and-cardiac causes, the palmar erythema's poor specificity, the nailfold capillaries that diagnose scleroderma-spectrum disease at a bedside, the Dupuytren's contracture as a liver-and-diabetes-and-genetic marker asked about honestly): the arms hold the BP difference that matters for dissection and subclavian disease and the AV fistula that must be examined before anything else on a renal patient. The hands and the mouth and the eyes are the general physician's triage layer (the central cyanation and the pallor and the jaundice's first-sclera-last-face order, the oral signs from the Behçet's-and-IBD ulcers to the dental disease as a cardiovascular risk marker, the arcus and xanthelasma and the Kayser-Fleischer ring that still sends residents for copper studies); the lymph-node examination survives as the examination most often abandoned and most often diagnostic when the patient presents with the things that frighten everyone; and the spine-and-posture-and-gait screens that the rheumatology and sports clinics have made again quantitative. The ethics are not an appendix: every touch is consented (the explanation-in-plain-words model the consent chapter details, the chaperone offered and documented for intimate examinations as professional law not courtesy, the right to decline part of an examination as real as the right to decline treatment, the proportionality rule that the examination matches the question (no rectal examinations by reflex, no undressing as ritual), the trauma-informed adaptations (announce every touch, offer to stop, never 'this will only take a moment' when it will take six, and the assault-survivor prevalence that makes routine sensitivity a clinical-tool requirement not bedside manners), and the hygiene layer (the WHO five-moments that the norovirus-and-C.difficile-and-COVID eras enforced beyond argument, and the examination that starts with de-gowned and de-monitored patients - the monitored-line-and-catheter-and-dressing survey that is half of ward-round medicine).**
+The general examination begins before you touch the patient. From the end of the bed, note:
+
+- **General appearance**: well or unwell, distressed, comfortable at rest, able to speak in full sentences.
+- **Colour**: pallor, cyanosis, jaundice, flushing.
+- **Breathing**: rate, effort, use of accessory muscles, audible wheeze or stridor.
+- **Body habitus**: weight loss or obesity, posture, any obvious deformity.
+- **Surroundings**: oxygen, drips, catheters, medicines, walking aids, sputum pots, food left uneaten.
+
+Then examine the **hands** (temperature, colour, clubbing, tremor, nail changes, palmar erythema, joint changes), the **face and eyes** (conjunctival pallor, scleral jaundice, xanthelasma), the **mouth** (hydration, central cyanosis, ulcers, dentition) and the **neck** (lymph nodes, thyroid, jugular venous pressure).
+
+::: definition Pallor, cyanosis and jaundice {#def-colour}
+**Pallor** is paleness of the skin and mucous membranes; it is seen best in the conjunctivae, palms and nail beds and suggests anaemia but is an insensitive guide to it. **Central cyanosis** is a bluish colour of the tongue and lips caused by an increased concentration of deoxygenated haemoglobin in arterial blood; it indicates significant hypoxaemia, although it is hard to see in anaemia. **Peripheral cyanosis** affects only the fingers and toes and may result from poor peripheral circulation, such as cold or low cardiac output. **Jaundice** is yellow discoloration from raised bilirubin; it is usually visible in the sclerae before the skin.
 :::
 
-## The systems
-
-::: definition The discriminating signs of each system {#def-systems}
-**The cardiovascular examination still answers the questions the echo sometimes delays: the JVP as a pressure waveform (the sternal-angle method's modest reliability but its unique information - the right atrial pressure and the V-wave and the cannon waves that the blood pressure cannot give), the apex's character and position (the heave and the displacement that quantify the echo's words), the pulses' contours and timings (the radio-femoral delay's old coarctation screening and the pulsus paradoxus that grades tamponade and asthma with a cuff), the murmurs' geography (the aortic-stenosis-ejection-synthesis era's honest finding: the classic triad is insensitive in the elderly and low-flow states, the carotid radiation's decent specificity, and the dynamic-manoeuvre rules that separate HCM from everything); the respiratory examination's great live controversy is its own obsolescence versus its survivors (the pleural-effusion percussion-and-tactile-fremitus pair versus the ultrasound that beats both, the wheeze-and-crepse differential with the Velcro crackles' asbestosis and fibrosis specificity, the staccato and monophonic variants that localise, and the tracheal-deviation-and-surgical-emphysema signs that are physical-diagnosis emergencies); the abdominal examination is a hierarchy of gentleness (the inspection-distension-and-scars-and-splenomegaly-visibility sequence, the liver's edge and the liver-span-and-percussion techniques and their ultrasound replacement, the ascites' shifting-dullness-versus-fluid-thrill sensitivity gap, the renal-angle tenderness and aortic-width-with-two-hands-not-a-thermometer, the hernia examination done standing-and-straining because sitting finds nothing, and the acute-abdomen's honest evidence (guarding-and-rebound-and-rigidity's poor discrimination versus the pain-with-movement-and-cough findings and the value of the serial abdominal examination with a recorded time on it); the neurological examination remains the one that localises without technology and must be done in the sequence the syndromes demand (the tone-c-reflex-clonus-and-the-Babinski's-true-meaning of the extensor plantar in the obtunded versus the awake, the cortical-sensory-and-negation signs, the cerebellar-ataxia-triad's eye findings first, the myelopathy's sensory level and the cauda equina's perineal-and-tone-and-ankle-jerk pattern that is an emergency defined by hand, the peripheral-neuropathy stocking-glove and the mononeuropathies' named tunnels with their provocation tests' honestly modest likelihood ratios, and the cranial nerves that diagnose the skull-base and brainstem lesions before the MRI is booked); the musculoskeletal examination is the special-test literature's densest forest (the shoulder's impingement tests with their overlapping weaknesses and the rotator-cuff tear's specific combinations, the knee's effusion-and-joint-line-and-meniscal tests with their MRI-comparison disillusionment and the ligaments' laxity grades, the hip's impingement and the spine's SLR-versus-slump-versus-femoral-nerve stretches with their radiculopathy likelihoods, the hand's Phalen-and-Tinel and the carpometacarpic grind, and the inflammatory-joint-examination's true competence: the small-joint survey and the MCP squeeze tests that the rheumatologists defend against every 'just bloods' referral); and the urogenital-and-prostate-and-pelvic examinations that have shrunk under evidence and chaperone realities (the prostate's DRE-never-screens-alone doctrine and the bimanual and speculum examination's indications-based era, and the paediatric examination's own grammar: the observation-in-parents-arms sequence, the growth-plot-and-dysmorphism-sweep and the 'examine last what hurts' rule, and the testis self-examination teaching that is cancer prevention delivered by hand).**
+::: warning Colour signs on darker skin
+Pallor, cyanosis, jaundice, rashes and erythema look different on darker skin, and clinical teaching has historically used images of white skin. On darker skin, look for pallor in the conjunctivae, palms, soles and nail beds; for cyanosis in the tongue, lips and conjunctivae; and for jaundice in the sclerae and the palate. Erythema may appear purple, brown or darker than surrounding skin rather than red. Pulse oximeters also tend to overestimate oxygen saturation in people with darker skin, so a reassuring reading should be interpreted with caution when the clinical picture suggests hypoxaemia, and an arterial blood gas used when it matters.
 :::
 
-## The evidence and the era
+### Vital signs and early warning scores
 
-::: definition Accuracy, decline and the modern exam {#def-evidence}
-**The evidence base has a golden thread and a long shadow: the JAMA Rational Clinical Examination series (from 1993) and McGee and Finkel and the Sydney and Maastricht schools assigned likelihood ratios to the bedside and found the truth uneven - some signs are excellent (the LR+ of a positive Murphy's sign for acute cholecystitis on sonographer-independent exam, the hyperaesthesia of early appendicitis's decent performance in children, the abdominal-aorta's width-by-palpation in thin patients failing obesity's arithmetic, the JVP in heart failure's specificity with its poor sensitivity), many are middling and were always taught as if decisive (the hepatojugular reflux, most meningeal signs except in the right prevalence, the Hoffman sign's population-study deflation against its reflex-order prominence, and the 'diagnostic' percussion signs that ultrasound rendered optional), and the composite syndromes do best (the multiple-findings-in-a-row logic - the Wells and Centor and Ottawa and STJ-adjacent decision rules that are physical examination wearing epidemiology's clothes). The decline literature is real and measured: the 1990s-2010s observational studies of bedside time, the physical-diagnosis rotations deleted and reinstated, the autopsy's death removing the examination's answer key, and the specialty reviews documenting what happened when imaging became the reflex (the 'ankle-swelling-gets-an-X-ray' medicine and the normal-CT-as-reassurance culture) - against which the counter-evidence keeps accumulating: the examination's speed and cost (the bedside echo of the dyspnoea-differentiation studies that changed management before labs returned, the DVT-calf-signs that still triage where D-dimer access is slow, the dermatology teledermoscopy-adjacent hand work), the finding that the examination orders better tests (the pre-test probability that makes a D-dimer interpretable is an examination judgement) and the medico-legal and trust reality that patients are unconvinced by a doctor who never touched them. The point-of-care-ultrasound question is being settled as augmentation, not replacement (the emergency and critical-care and rheumatology and anaesthesia curricula's pocket-echo evidence - the FAST and the lung-sliding-and-comets and the IVC-and-bladder-and-DVT-two-point scans with their accreditation-and-supervised-hours frameworks and the governance literature's warnings about over-scanning beyond competence and the 'ultrasound as stethoscope' debate's unresolved credentialing); the simulation-and-feedback method revolution rescued the teaching when bedside exposure shrank (the mannequins and standardised patients and the peer-teaching and 'see one, do one, teach one' replaced by entrustable-professional-activities with logged supervised repetitions and the feedback-interval studies that matter because examination skill decays without volume); and the honest curriculum stance this leaves: the examination is the physical signs plus the reasoning between them (which sign for which hypothesis, which hypothesis for which red flag), its findings documented with their negatives ('abdomen soft, no guarding - the surgical shift wants the absence, not the adjective'), its limitations stated where they exist ('peripherally shut down, pulses not felt - documented as not-assessed, which protects the next clinician's interpretation), and its two unfashionable virtues defended: proportionality (do not examine what the question does not need) and presence (the hand that finds the breast lump the scan misses, the tremor that appears only when the patient forgets to hide it, and the therapeutic act the Balint tradition named - being examined by an attentive human is part of why patients come).**
+The vital signs are the respiratory rate, oxygen saturation, blood pressure, pulse rate, level of consciousness and temperature. They are the most important measurements made in hospital, because deterioration nearly always shows in them first. A raised **respiratory rate** is one of the earliest and most sensitive signs of a sick patient and is also the vital sign most often estimated rather than counted. Count it for a full 30 seconds or a minute.
+
+In the UK, vital signs are combined into the **National Early Warning Score 2 (NEWS2)**, published by the Royal College of Physicians in 2017 and used across NHS acute and ambulance services in England.
+
+::: definition NEWS2 {#def-news2}
+**NEWS2** gives each of seven parameters a score from 0 to 3 and adds them. In adults the scoring is:
+
+| Parameter | 3 | 2 | 1 | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|---|---|---|
+| Respiratory rate (per min) | ≤ 8 | | 9–11 | 12–20 | | 21–24 | ≥ 25 |
+| SpO₂ scale 1 (%) | ≤ 91 | 92–93 | 94–95 | ≥ 96 | | | |
+| Air or oxygen | | Oxygen | | Air | | | |
+| Systolic BP (mmHg) | ≤ 90 | 91–100 | 101–110 | 111–219 | | | ≥ 220 |
+| Pulse (per min) | ≤ 40 | | 41–50 | 51–90 | 91–110 | 111–130 | ≥ 131 |
+| Consciousness | | | | Alert | | | New confusion, V, P or U |
+| Temperature (°C) | ≤ 35.0 | | 35.1–36.0 | 36.1–38.0 | 38.1–39.0 | ≥ 39.1 | |
+
+A separate **SpO₂ scale 2** is used for patients with confirmed hypercapnic respiratory failure who have a prescribed target saturation of 88–92%. The **aggregate score** sets the clinical response: a score of **5 or more** is a key threshold for urgent review by a clinician with competence in acute illness, and **7 or more** calls for an emergency response, usually including critical-care assessment. A score of **3 in any single parameter** also prompts an urgent ward-based review. Local escalation policies give the exact response times.
 :::
 
-::: example The leg that was examined and wasn't {#ex-dvt}
-A 44-year-old postural patient after a long flight: the ED doctor 'checks for DVT', inspects both legs, documents 'no calf tenderness, no swelling', and discharges; a senior nurse mentions the asymmetric calf tightness on the sleep-sock she took off; a D-dimer is finally drawn at 03:00; positive.
+"V, P or U" refers to the **ACVPU** scale: Alert, new Confusion, responds to Voice, responds to Pain, Unresponsive. Any new confusion scores 3, because acute confusion is often the first sign of serious illness such as sepsis.
+
+::: example Scoring a deteriorating patient {#ex-news}
+Mr Lindqvist, 71, is two days after a bowel resection. His observations are: respiratory rate 24/min, SpO₂ 93% on room air, blood pressure 98/60 mmHg, pulse 112/min, alert, temperature 38.4 °C. Calculate his NEWS2 and state the response.
+
 ::: solution
-**Pretest-probability-is-an-examination-judgement ([[#def-evidence]], [[#def-systems]], [[cardiovascular/vascular-disease]]): the technical error - 'the Wells-score elements are the examination and the history together (the active-cancer and the immobilisation and the unilateral swelling and the calf-swelling-3cm-and-the-collateral-veins and the 'alternative-diagnosis-at-least-as-likely pivot'), and 'no calf tenderness' is a single sign with poor sensitivity doing the work of the whole score; the decision-rule lesson - 'D-dimer is interpretable only against pretest probability (low-or-intermediate Wells with a negative high-sensitivity D-dimer excludes; high Wells goes to the ultrasound whatever the D-dimer says), and the discharge note documented an examination that was not the score; the redo - 'the full Wells with measurements and the ultrasound-booking pathway decided by the score not the mood, the fly-and-swelling-and-contraceptive-and-oestrogen-and-CV-risk history completed, and the safety-net with a time ('return if swelling increases; here is tomorrow's scan slot'); and the teaching the SEA should extract - 'the 'examination as adjective-collection' problem (the three-item check that reads as an examination and is a ritual) against the documented-score-with-components culture, and the honesty that the 4am version of this encounter needs the rule printed where it is used, which is why the decision rules live in the EPR order-set now and should live on the paper card too.'**
+Using scale 1 for saturation:
+
+- Respiratory rate 24: **2**.
+- SpO₂ 93% (scale 1): **2**.
+- Room air: **0**.
+- Systolic BP 98: **2**.
+- Pulse 112: **2**.
+- Alert: **0**.
+- Temperature 38.4: **1**.
+
+Total $= 2 + 2 + 0 + 2 + 2 + 0 + 1 = 9$. This is above the emergency threshold of 7: he needs immediate assessment by a senior clinician with critical-care involvement. The pattern (fever, tachycardia, tachypnoea, low blood pressure after abdominal surgery) suggests sepsis, possibly from an anastomotic leak, and should prompt the local sepsis pathway. The score tells you how urgently to act; the clinical assessment tells you what to do.
 :::
 :::
 
-::: example The back that localised {#ex-cauda}
-A 36-year-old with 'just back pain' after a fall: the nurse's note records normal power; at ward round the consultant asks the patient to lift his hips off the bed, finds the gluteal lag, checks the saddle area (reduced to a wipe, not a pinprick), and finds 600 ml on the bladder scanner.
-::: solution
-**The-examination-the-checklist-missed ([[#def-systems]], [[musculoskeletal/back-pain]], [[emergency-critical-care/acute-assessment]]): the anatomy of the miss - 'the power-by-gross-movement screen spares the cauda the way the three-item DVT check spares the calf: the cauda-equina signs live in the unglamorous specific tests (the hip-abduction-and-extensor-hallucis-longus-myotomes, the anal-tone-and-sensation that must be done when the history says saddle numbness or urinary symptoms, the bladder-scan-before-the-patient-pees doctrine, and the bulbar-onset pattern where retention precedes weakness); the syndrome assembled - 'the saddle sensory change plus the bladder (the overflow-and-600-ml-without-urge) plus the asymmetry-and-gluteal-lag is cauda equina until MRI proves otherwise, and the time-critical window (the 'decompress-within-48-hours-and-urgency-protocols' urological-and-spinal-surgery pathways with the 'catheterise-and-document-the-residual' bridge) is a clock the examination starts; the documentation culture - 'the perineal sensation recorded as tested-and-normal-with-the-modality-specified ('light touch' versus 'pin' versus 'wipe' - the patient can tell the difference and so should the note), the post-void residual in the obs chart where it can be trended, and the motor examination by named muscle groups with MRC grades rather than 'power reduced'; and the systems lesson - 'the 'red-flag leaflet' the previous admission gave this patient was useless without an examiner who reads it: the unit's back-pain pathway needs the 'if ANY of saddle numbness, urinary symptoms, bilateral sciatica, progressive deficit - examine perineum and bladder, scan today' hard-stop that turns a patient's report into a surgeon's phone call, which is the examination as a safety barrier in the patient-safety chapter's exact sense.'**
+The **Glasgow Coma Scale (GCS)** describes the level of consciousness in more detail. It has three components scored separately: **eyes** (1 to 4), **verbal** response (1 to 5) and **motor** response (1 to 6), giving a total from 3 to 15. Report the components, not just the total: "GCS 9 (E2 V3 M4)" carries much more information than "GCS 9". The motor score is the most useful component for prognosis.
+
+## Examining the main systems
+
+### Cardiovascular system
+
+After general inspection, the cardiovascular examination includes:
+
+- **Pulse**: rate, rhythm (regular, regularly irregular, irregularly irregular), and character and volume (best at the carotid). An irregularly irregular pulse suggests atrial fibrillation; the ECG confirms it.
+- **Blood pressure**: measured with an appropriately sized cuff; compare arms if dissection or subclavian disease is suspected; check lying and standing if postural hypotension is suspected.
+- **Jugular venous pressure (JVP)**: with the patient at 45 degrees, the vertical height of the venous pulsation above the sternal angle. A height above about 3–4 cm suggests raised right atrial pressure, as in right heart failure or fluid overload.
+- **Praecordium**: inspection for scars and pulsations; palpation of the **apex beat** (normally in the fifth intercostal space in the mid-clavicular line; displaced laterally in left ventricular dilatation) and for heaves and thrills.
+- **Auscultation**: in the four classic areas, with the diaphragm and the bell, timing sounds against the carotid pulse. Listen for the first and second heart sounds, added sounds and murmurs.
+- **Peripheries**: lung bases for crackles, sacral and ankle oedema, and peripheral pulses.
+
+::: definition The common murmurs {#def-murmurs}
+A **murmur** is a sound produced by turbulent blood flow. It is described by timing, site of maximum intensity, radiation, character, loudness and response to manoeuvres. Four classic valve lesions:
+
+- **Aortic stenosis**: an ejection systolic murmur, loudest at the right second intercostal space, radiating to the carotids; a slow-rising pulse and a soft second sound in severe disease.
+- **Mitral regurgitation**: a pansystolic murmur at the apex, radiating to the axilla.
+- **Aortic regurgitation**: an early diastolic murmur at the left sternal edge, loudest with the patient sitting forward in held expiration; a collapsing pulse when significant.
+- **Mitral stenosis**: a low-pitched mid-diastolic rumble at the apex, heard best with the bell with the patient turned to the left; often with atrial fibrillation.
 :::
+
+The loudness of a murmur does not reliably indicate the severity of the lesion; in severe aortic stenosis with a failing ventricle, the murmur may become quieter. Echocardiography defines the lesion. Cardiac physiology is covered in [[cardiovascular/cardiac-cycle]] and valve disease in [[cardiovascular/valve-congenital-disease]].
+
+### Respiratory system
+
+After general inspection (respiratory rate, effort, cyanosis, clubbing, flapping tremor of CO₂ retention), examine:
+
+- **Trachea**: position in the suprasternal notch. Deviation suggests a shift of the mediastinum.
+- **Chest expansion**: compare the two sides with the hands on the lower chest.
+- **Percussion**: resonant over normal lung; dull over solid tissue or fluid; "stony dull" over a pleural effusion; hyperresonant over air (pneumothorax, emphysema).
+- **Auscultation**: breath sounds (vesicular normally; **bronchial** breath sounds, harsh with a gap between inspiration and expiration, over consolidated lung), and added sounds: **wheeze** (narrowed airways), **crackles** (fine in pulmonary fibrosis and oedema, coarse with secretions) and a **pleural rub**.
+- **Vocal resonance**: increased over consolidation, reduced over fluid or air.
+
+::: theorem Patterns of chest signs {#thm-chest}
+The main focal lung abnormalities produce characteristic combinations of signs on the affected side:
+
+| Condition | Trachea | Expansion | Percussion | Breath sounds | Vocal resonance |
+|---|---|---|---|---|---|
+| Consolidation | central | reduced | dull | bronchial, crackles | increased |
+| Pleural effusion | central, or away if large | reduced | stony dull | reduced or absent | reduced |
+| Pneumothorax | central, or away if tension | reduced | hyperresonant | reduced or absent | reduced |
+| Lobar collapse | towards | reduced | dull | reduced | reduced |
+:::
+
+::: proof Why the signs differ {#prf-chest}
+Sound travels well through solid tissue and poorly across interfaces between air and fluid. In **consolidation**, the alveoli are filled with fluid and cells, but the airways remain open, so sounds from the large airways are conducted through solid lung to the chest wall: breath sounds become bronchial and vocal resonance increases, and the solid lung is dull to percussion. A **pleural effusion** places a layer of fluid between lung and chest wall; the fluid is dull but reflects sound away, so breath sounds and vocal resonance are reduced. A **pneumothorax** places air between lung and chest wall, which is hyperresonant and also blocks transmission. In **collapse**, the airway to the lobe is blocked and the lobe loses volume, pulling the mediastinum, and therefore the trachea, towards it. A large effusion or a tension pneumothorax pushes the mediastinum away.
+:::
+
+::: example Signs at the right base {#ex-chest}
+Mrs Osei, 66, is breathless. At the right base expansion is reduced, the percussion note is stony dull, and breath sounds and vocal resonance are absent. The trachea is central. Interpret the signs and outline the next step.
+
+::: solution
+The combination of stony dullness with absent breath sounds and absent vocal resonance indicates a **right pleural effusion**: fluid between lung and chest wall blocks sound transmission. Consolidation would give dullness with bronchial breathing and increased vocal resonance, and collapse would pull the trachea to the right. A central trachea suggests the effusion is not massive. The next step is a chest radiograph and, usually, thoracic ultrasound to confirm and characterise the fluid and guide aspiration, so that the fluid can be analysed for its cause ([[respiratory/lung-cancer-pleura]]).
+:::
+:::
+
+### Abdominal system
+
+Lie the patient flat with one pillow, arms by the sides, and expose from the xiphisternum to the pubic symphysis, keeping the genitals covered. Inspect for distension, scars, stomas, visible masses and pulsations, and stigmata of chronic liver disease. Palpate each of the nine regions, first lightly and then deeply, watching the patient's face for pain and starting away from any painful area.
+
+- **Tenderness and guarding**: **guarding** is involuntary contraction of the abdominal muscles over an inflamed area; **rigidity** of the whole abdomen with severe pain suggests generalised peritonitis. **Rebound tenderness** is pain on release of pressure; gentle percussion tenderness gives the same information more kindly.
+- **Organs**: feel for the liver edge and spleen tip as the patient breathes in, starting in the right iliac fossa and moving up, so that a very large organ is not missed. Ballot the kidneys. Percuss to confirm the organ's size.
+- **Masses**: describe site, size, shape, consistency, mobility, tenderness and whether you can get above them.
+- **Ascites**: percuss for **shifting dullness**: dullness in the flank that becomes resonant when the patient rolls onto the other side.
+- **Auscultation**: bowel sounds (absent in ileus or peritonitis; high-pitched and "tinkling" in obstruction) and bruits.
+- **Completing the examination**: hernial orifices and external genitalia, and a digital rectal examination when clinically indicated, with consent and a chaperone.
+
+::: warning The hernial orifices and the rectum are part of the abdominal examination
+Obstructed inguinal and femoral hernias are classic causes of bowel obstruction missed because the groins were not examined, especially in older women with femoral hernias. Likewise, rectal bleeding, prostate disease and faecal impaction may be missed if a rectal examination is clinically indicated but not done. If an intimate examination is indicated but deferred, write down that it is outstanding and who will do it.
+:::
+
+::: example Right iliac fossa pain {#ex-abdomen}
+Ms Mensah, 22, has had abdominal pain for 18 hours. It began around the umbilicus and has moved to the right iliac fossa. Her temperature is 37.8 °C and pulse 104/min. On palpation she is tender in the right iliac fossa with guarding there, and percussion over the area is painful. Bowel sounds are present. Interpret the findings and say what else the examination and assessment must include.
+
+::: solution
+Localised tenderness with **guarding** and **percussion tenderness** in the right iliac fossa indicate local peritoneal irritation. With the migration of pain from the periumbilical region (visceral pain from the midgut) to the right iliac fossa (parietal peritoneum), a low-grade fever and tachycardia, the picture is typical of **acute appendicitis**. The abdomen is not rigid throughout, so there is no evidence yet of generalised peritonitis.
+
+The assessment is not complete without considering gynaecological causes in a woman of reproductive age: ask about her last period, sexual history and vaginal discharge, and perform a **pregnancy test**, because an ectopic pregnancy can present in the same way and is life-threatening. Ovarian torsion, a ruptured ovarian cyst and pelvic inflammatory disease are other alternatives. Examine the hernial orifices, check the urine, and involve the surgical team. Imaging is guided by local pathways ([[surgery/acute-abdomen]]).
+:::
+:::
+
+### Neurological system
+
+The neurological examination tests a hypothesis about **where** a lesion is. It covers mental state and speech, cranial nerves, the limbs (inspection, tone, power, reflexes, coordination and sensation) and gait.
+
+Power is graded on the **Medical Research Council (MRC) scale** from 0 to 5: 0 no contraction, 1 a flicker, 2 movement with gravity eliminated, 3 movement against gravity, 4 movement against some resistance, 5 normal power.
+
+::: definition Upper and lower motor neurone signs {#def-umn}
+An **upper motor neurone (UMN) lesion** affects the pathway from the motor cortex to the anterior horn cell (for example a stroke or spinal cord compression). It produces **increased tone** (spasticity), weakness in a **pyramidal pattern** (in the arm the extensors are weaker than the flexors; in the leg the flexors are weaker than the extensors), **brisk reflexes** and an **extensor plantar response**, with little wasting. A **lower motor neurone (LMN) lesion** affects the anterior horn cell, nerve root or peripheral nerve. It produces **wasting**, **fasciculation**, **reduced tone**, weakness in the distribution of the affected root or nerve, and **reduced or absent reflexes**.
+:::
+
+::: example A weak left side {#ex-neuro}
+Mr Chen, 74, woke with weakness of his left arm and leg. On examination tone is increased in the left arm and leg, power is 3/5 in left elbow extension and 4/5 in elbow flexion, left hip flexion is weaker than extension, reflexes are brisk on the left, and the left plantar response is extensor. Where is the lesion?
+
+::: solution
+Increased tone, a pyramidal pattern of weakness, brisk reflexes and an extensor plantar response are **upper motor neurone** signs. They affect the left arm and leg, Because the motor pathway crosses in the lower medulla, the lesion is most likely in the right cerebral hemisphere or brainstem; a lesion of the left side of the high cervical cord is a less likely alternative. With a sudden onset in a 74-year-old, the most likely cause is a stroke in the right cerebral hemisphere. Look for associated cortical signs (left-sided neglect, visual field loss) that would localise it further. Very early after a stroke, tone may be reduced and reflexes absent before UMN signs develop; the timing of the examination matters. Stroke is covered in [[nervous-system/stroke]].
+:::
+:::
+
+### Musculoskeletal system
+
+The musculoskeletal examination follows **look, feel, move** (and special tests). Look for swelling, deformity, wasting and skin changes; feel for warmth, tenderness and effusion; move the joint actively and passively, measuring range. The **GALS** screen (gait, arms, legs, spine) is a quick screen for joint problems in any patient. A hot, swollen, painful single joint should be treated as septic arthritis until proven otherwise, which usually means joint aspiration ([[musculoskeletal]]).
+
+## How accurate are physical signs?
+
+Every physical sign has an imperfect relationship with disease. Some are seen in disease but also in health; others are often absent even when the disease is present. Two measures describe this.
+
+::: definition Sensitivity, specificity and likelihood ratios of a sign {#def-accuracy}
+The **sensitivity** of a sign is the proportion of people with the disease in whom the sign is present. Its **specificity** is the proportion of people without the disease in whom the sign is absent. The **positive likelihood ratio** $\text{LR}^+ = \dfrac{\text{sensitivity}}{1 - \text{specificity}}$ says how much more often the sign is found in people with the disease than in those without. The **negative likelihood ratio** $\text{LR}^- = \dfrac{1 - \text{sensitivity}}{\text{specificity}}$ says how much more often the sign is absent in people with the disease than in those without. Signs with $\text{LR}^+$ well above 1 help rule in; signs with $\text{LR}^-$ well below 1 help rule out.
+:::
+
+This has practical consequences. A sign with low sensitivity cannot rule a disease out when it is absent: many patients with pneumonia have no crackles, and many people with a deep vein thrombosis have no calf tenderness. A sign with low specificity cannot rule a disease in when it is present. And signs vary between examiners: **inter-observer agreement** for many signs (for example a displaced apex beat or the JVP) is only moderate. Studies collected in textbooks of evidence-based physical diagnosis report the sensitivity, specificity and likelihood ratios of individual signs, and they are worth looking up for the signs you use most.
+
+The figure shows how a sign's likelihood ratio converts a probability before the examination (the pre-test probability) into a probability after it. A strong positive sign moves the probability a long way up only when the starting probability is moderate; the same is true downwards for a strong negative sign.
+
+::: widget plot
+f: a*x/(1 - x + a*x); b*x/(1 - x + b*x); x
+x: 0, 1
+y: 0, 1
+sliders: a=5:1:20:0.5; b=0.3:0.05:1:0.05
+labels: \text{sign present (LR}^+ = a); \text{sign absent (LR}^- = b); \text{no information}
+caption: Post-test probability against pre-test probability for a sign with positive likelihood ratio $a$ and negative likelihood ratio $b$. Simplified model; the method is in [[clinical-skills/clinical-reasoning]].
 :::
 
 ::: quiz
-The correct statement about modern examination teaching is:
-- [ ] Every inpatient deserves a complete head-to-toe examination daily
-- [ ] Ultrasound has replaced physical signs in all acute pathways
-- [x] The examination is proportional to the question, its findings (positive and negative) are documented and interpreted with pretest probability, and its skills require maintained volume and feedback
-- [ ] Special tests with high sensitivity rule disease in
+A sign has a sensitivity of 30% and a specificity of 98% for a disease. Which statement is correct?
+- [ ] Its absence makes the disease very unlikely.
+- [x] Its presence strongly suggests the disease, but its absence changes little.
+- [ ] It is useless because its sensitivity is low.
+- [ ] Its positive likelihood ratio is 0.3.
 ::: solution
-**Proportionality, documentation, pretest probability and deliberate practice are the modern curriculum; sensitive tests rule out (SnNout), specific ones rule in (SPPin), and nothing replaces judgement - [[#def-evidence]].**
+$\text{LR}^+ = 0.30/(1 - 0.98) = 15$, so the sign is strong evidence for the disease when present. $\text{LR}^- = 0.70/0.98 \approx 0.71$, close to 1, so its absence changes little. Highly specific, insensitive signs are useful for ruling in, not ruling out.
 :::
 :::
 
-::: widget plot
-f: 100-55*(1-exp(-x/5)); 45; 1; 1; 30
-x: 0, 12
-y: 0, 100
-labels: \text{weeks without practice (illustrative)},\ \text{percent}\ \text{examination-skill retention with deliberate practice and feedback};\ \text{retention without feedback (scaled)};\ \text{diagnostic yield of exam-ordered tests (scaled)};\ \text{patient-trust scores with documented exam (scaled)}
-caption: Examination skill decays on a curve; feedback and use are the refresh ([[#def-general]], [[#def-evidence]]).
+::: history
+Two inventions turned the examination from looking into measuring. In 1761 the Viennese physician **Leopold Auenbrugger** published *Inventum Novum*, describing percussion of the chest, a technique he is said to have learned from tapping wine casks; it was popularised in France by **Jean-Nicolas Corvisart**. In 1816 **René Laennec**, unwilling to put his ear to a young woman's chest, rolled paper into a tube and found he could hear the heart more clearly; his *De l'auscultation médiate* (1819) related the sounds he heard to post-mortem findings. Blood pressure measurement followed: **Scipione Riva-Rocci** described the inflatable cuff in 1896, and **Nikolai Korotkov** the sounds used for auscultatory measurement in 1905. In the late twentieth century clinicians such as **David Sackett** and **Steven McGee** began to measure the accuracy of physical signs themselves.
 :::
 
 ## Where this leads
 
-The history that sets the examination's question is in [[clinical-skills/history-taking]], test interpretation and pretest probability in [[clinical-skills/laboratory-tests]] and [[epidemiology-ebm/diagnostic-tests]], the neurological detail in [[nervous-system/motor-systems]], the cardiac mechanics behind the signs in [[cardiovascular/cardiac-cycle]] and [[cardiovascular/valve-congenital-disease]], and the bedside-escalation link in [[emergency-critical-care/acute-assessment]].
-
-::: history
-**The physical examination's history is the history of clinical medicine's epistemics. The bedside teaching tradition descends from the Paris clinics - Auenbrugger's percussion from his tavern-keeper father's tapping (published 1761, vindicated by his student von Gersdorf's colleague and Corvisart, Napoleon's physician, two generations later), Laennec's 1816 invention of the stethoscope after the modesty-and-purity objections to direct auscultation of a young woman, the great semiological taxonomies of the nineteenth century (the Vienna and Edinburgh schools, and the surgical examination canon of the Edinburgh and Glasgow schools). The Oxford and John-Radcliffe and MGH case tradition made the 'complete examination' a ritual with its own liturgy (the 'feet to crown' formats), while the same century's physicians were already arguing for proportionality: the 'never examine what you need not' advice recurs in every era's bedside manuals. The instruments multiplied and dethroned each other: the ophthalmoscope (Helmholtz 1851), the laryngoscope, the sphygmomanometer's Riva-Rocci cuff and its mercury era, the electrocardiograph's Einthoven string galvanometer, each new machine announced (too often) the hand's obsolescence; the autopsy's statistical peak (the mid-nineteenth-century hospitals' clinicopathological conferences, Osler's museum) made the physical signs falsifiable - the golden age in which a 'classic sign' was a repeatedly-confirmed ante-mortem-to-post-mortem correlation, and the reason so many signs carry eponyms of people who counted bodies. The decline narrative began early (the 1970s-80s essays on the 'art of examining' displaced by the '18-test ordering pattern' of the Medicare-era United States and the NHS's own lab-driven medicine) and became measurable: the 1990s studies (the re-measurements of the 1965 diagnostic-yield baseline and the 1990s-2000s studies of residents' bedside time), the autopsy's collapse removing falsification, and the physical-diagnosis course at Harvard's deletion in the 1970s and its reinstatement a decade later under student pressure. The evidence renaissance came from three directions: the epidemiology of diagnostic test-accuracy (the Sackett and Fletcher-adjacent sensitivity-specificity-likelihood-ratio grammar and the JAMA RCE series from 1993 which finally graded the canon), the decision-rule movement (the Wells and Centor and Ottawa and STJ rules - the examination reconstituted as weighted findings), and imaging's bedside return via ultrasound (the FAST and lung-ultrasound and focused-cardiac studies of the 2000s-2010s that gave auscultation-and-palpation a screen to check themselves against, alongside the credentialing debates about whether the pocket device saves the examination or finishes it). The skin-colour-and-pulse-oximetry finding (the 2018-2024 studies of occult hypoxaemia misclassification varying with skin pigmentation) is the newest and most troubling chapter, and the corrective work - the new-sensor-and-algorithms-and-research-in-inclusive-devices agendas - is a case study of how measurement bias hides in an 'objective' sign for decades. The pedagogy history closes the loop: the standardised-patient and simulation movements from Barrows' neurology patients in 1969 through the OSCE (Harden 1975) to today's spaced-repetition and entrustment frameworks, and the deliberate-practice studies that keep proving what the Victorian physicians knew - the hand is calibrated, not inherited, and the calibration slips quietly in the drawer.** - [[clinical-skills/history-taking]], [[epidemiology-ebm/diagnostic-tests]], [[clinical-skills/patient-safety]].**
-:::
+The examination and history together give a pre-test probability for each diagnosis. [[clinical-skills/clinical-reasoning]] explains how to combine findings formally, and [[clinical-skills/laboratory-tests]] and [[clinical-skills/medical-imaging]] how to choose the tests that follow. The rapid ABCDE assessment of the acutely ill patient is covered in [[emergency-critical-care/acute-assessment]].
 
 ::: summary
-- The examination starts before touching (inspection, gait, smell, the bed-side artefacts) and its ethics are procedural: consent, chaperones for intimate examinations, proportionality to the question, and trauma-informed technique.
-- Vital signs are prognostically powerful and routinely unreliable: respiratory rate predicts, cuff size and perfusion and skin colour distort, and measurements taken for the chart change nothing.
-- The discriminating signs are knowable and quantified (JVP, murmur geography, the effusion and fibrosis findings, the cauda-equina and perineal examination, the named special tests) - and many textbook classics are weaker than their teaching, a fact the likelihood-ratio literature settled.
-- The examination's modern role is ordering judgement: it supplies pretest probability, triages who needs which test, and still finds the emergencies (compartment, cauda, tamponade, ectopic) that imaging only confirms.
-- Skill decays without volume, feedback and deliberate practice; simulation, standardised patients and entrustable milestones are the rescue, and point-of-care ultrasound augments (not replaces) when credentialed to competence.
-- Document what you did, what you did not find, and what you could not assess; 'pulses not felt peripherally shut down' protects the next clinician, and the honest negative is the finding.
+- Prepare properly: introduce yourself, consent, offer a chaperone for intimate examinations, clean hands, position and expose with dignity.
+- Inspect, palpate, percuss and auscultate, and compare sides.
+- Count the respiratory rate; combine vital signs into NEWS2, where an aggregate of 5 or more prompts urgent review and 7 or more an emergency response.
+- Report the GCS as its components (E, V, M).
+- Recognise the classic murmurs, the patterns of chest signs, the features of peritonitis, and upper versus lower motor neurone signs.
+- Complete the abdominal examination with the hernial orifices and, when indicated, a rectal examination.
+- Look for colour signs in the right places on darker skin, and interpret pulse oximetry with caution.
+- Every sign has a sensitivity, specificity and likelihood ratio; insensitive signs cannot rule out, non-specific signs cannot rule in.
 :::
 
 ## Exercises
 
-::: exercise Grade the signs {level=1}
-Give the likelihood-ratio logic for three signs you used this week (real or imagined): one that rules in when positive, one that rules out when negative, and one that is decoration.
+::: exercise GCS components {level=1 check="11"}
+A patient opens his eyes to voice, speaks in inappropriate words, and localises to a painful stimulus. What is his GCS total?
+::: hint
+Eyes are scored 1–4, verbal 1–5 and motor 1–6.
+:::
 ::: solution
-**SnNout-and-SPMin ([[#def-evidence]], [[epidemiology-ebm/diagnostic-tests]]): the work - 'a high-LR+ sign rules in (the SpPin logic: the late-peaking harsh aortic-ejection murmur's high LR+ for significant stenosis, or the nailfold capillary dropout's LR+ for scleroderma-spectrum disease); a high-sensitivity sign's absence rules out (the SnNout: the absence of any leg-swelling-or-tenderness asymmetry-with-a-low-Wells lowering posttest probability enough for the D-dimer question); the decoration (the hepatojugular-reflux-with-poor-inter-tester-agreement, the Hoffman sign whose false-positive rate in anxious healthy people made the population studies deflate it); the arithmetic that makes it clinical - 'apply the LR to the pretest odds, and the same sign is a verdict in a 60-year-old smoker with haemoptysis and a rounding error in a 20-year-old with chest-wall pain - the prevalence is not noise, it is the denominator of medicine; and the documentation habit - 'record the sign's quality and the comparison (left calf 3.5 cm greater at the same landmark), because an LR applies to a measurement, not to a mood.'**
+Eye opening: spontaneous 4, to voice 3, to pain 2, none 1, so **E3**. Verbal: oriented 5, confused 4, inappropriate words 3, incomprehensible sounds 2, none 1, so **V3**. Motor: obeys commands 6, localises 5, normal flexion (withdrawal) 4, abnormal flexion 3, extension 2, none 1, so **M5**. The total is $3 + 3 + 5 = 11$, recorded as "GCS 11 (E3 V3 M5)".
 :::
 :::
 
-::: exercise Design the daily exam of the ward round {level=2}
-Your medical firm performs 'the examination' as a ritual. Rewrite the ward-round examination standard around proportionality, the screened systems that must never be skipped, and the documented negative.
+::: exercise A NEWS2 score {level=1 check="5"}
+A 45-year-old woman on room air has: respiratory rate 22/min, SpO₂ 95%, blood pressure 108/70 mmHg, pulse 104/min, alert, temperature 37.9 °C. Calculate her NEWS2.
 ::: solution
-**Proportional-but-unmissable ([[#def-general]], [[clinical-skills/patient-safety]]): the principle - 'the examination answers today's question plus the surveillance list, not the textbook's index; undressing daily because a patient lies in a bed is not rigour, it is theatre with a stethoscope; the never-skip surveillance layer (the line-and-drain-and-catheter-and-dressing-and-pressure-area survey of every inpatient every day - the device-days-and-skin-integrity checks that are safety equipment, the calves-and-axillae-and-mouths the team forgot to look at, and the neurological-observation-schedules where indicated), the question-driven core (the chest that is more breathless examined with ultrasound-adjacent logic, the abdomen that hurts examined with serial documentation and times), and the functional survey that changes discharge not the obs chart (the sit-to-stand and the grip and the 'can you tell me about the stairs at home' that the geriatricians built an entire assessment from); the documented-negative standard - 'the 'no calf swelling, no tenderness, no cords' and 'cranial nerves intact, no drift, power 5/4 throughout' phrasings trained as templates, with 'unable to assess - patient asleep - reviewed at' as an acceptable entry and 'examination not done' triggering a reason; and the audit that makes it real - 'the 'pressure-ulcer-incidence-and-device-days-and-line-site-scores with the documented-negative rate' on notes-review and the the-what did you not look at' question in the morning meeting, because the examined-and-missed case is rarer than the unexamined-and-missed and the standard exists to close that gap.'**
+Respiratory rate 22: 2. SpO₂ 95% (scale 1): 1. Air: 0. Systolic BP 108: 1. Pulse 104: 1. Alert: 0. Temperature 37.9: 0. Total $= 2 + 1 + 0 + 1 + 1 + 0 + 0 = 5$. This reaches the threshold for urgent review by a clinician competent in assessing acute illness.
 :::
 :::
 
-::: exercise Teach the JVP {level=2}
-A foundation doctor says 'I can't do JVPs and the echo measures pressure anyway'. Teach the sign in ten minutes: what it gives, how to find it, what to do about the noise, and when to trust it.
+::: exercise Name the lesion {level=1}
+Match each set of chest signs to its cause: (a) dull percussion, bronchial breathing, increased vocal resonance at the left base; (b) hyperresonance and absent breath sounds on the right with the trachea deviated to the left, low blood pressure; (c) dull percussion with reduced breath sounds at the right upper zone and the trachea pulled to the right.
 ::: solution
-**The-JVP-ten-minutes ([[#def-systems]], [[cardiovascular/heart-failure]], [[cardiovascular/circulation-blood-pressure]]): what it uniquely gives - 'the right atrial pressure and its waveform as a living measurement no ward echo matches routinely (the elevated JVP's specific-but-insensitive role in heart failure (the LR+ in the primary-care-dyspnoea studies), the giant V-waves of acute mitral regurgitation, the cannon waves of complete heart block and VT with AV dissociation, the absent-JVP-in-hypovolaemia-bleed, the Kussmaul's rise-on-inspiration of constriction and RV infarction and tamponade-adjacent physiology); the technique as taught now - 'the 45-degree semi-repose (titrate the angle, not the myth), the tangential-light-hepatojugular-reflux manoeuvres for 10 seconds with the timing rules, the 'vertical-height-above-the-sternal-angle-plus-5' convention that at least standardises the argument, and the 'differentiate-from-the-carotid-by-its-pulsatility-and-non-collapsibility-and-non-obscuration' triad drilled on each other's necks; the noise - 'the obese-and-the-neck-that-doesn't-exist reality (the subclavian-and-external-jugular-look-alikes - the external-jugular-valves-that-stop-the-column, and when the JVP is simply not visible: document 'not assessed by JVP, consider the IVC-and-echo', which is the honest-negative rule again), and the 'obesity-and-COPD-hyperinflation-and-the-tricuspid-regurgitation giant waves that sit high in the neck' caveats that make the next clinician's caution part of your note; and when to trust it - 'as a trend and a syndrome-piece, not a number: JVP to 8 cm falling with diuresis is a treatment-response observation no nurse's-leg-circumference equals, and the 'JVP-plus-S3-plus-orthopnoea composite is how the old physicians and the modern trials both reach 'heart failure' before the BNP arrives - the examination as pretest probability with a waveform.'**
+(a) Consolidation of the left lower lobe. (b) Right tension pneumothorax, an emergency needing immediate decompression. (c) Collapse of the right upper lobe, which should prompt a search for a cause such as an obstructing tumour.
 :::
 :::
 
-::: exercise Handle the declined examination {level=2}
-A Muslim woman wearing a hijab declines the breast examination offered after a palpable lump was reported by her partner, who remains in the room; she speaks some English. Negotiate the examination and the safety of the encounter.
+::: exercise Likelihood ratios of a sign {level=2 check="round(0.9/(1-0.6)*100)/100"}
+A sign is present in 90% of people with a disease and absent in 60% of people without it. Calculate its positive likelihood ratio, rounded to two decimal places.
+::: hint
+Specificity is the proportion of people without the disease in whom the sign is absent.
+:::
 ::: solution
-**Adjustments-not-exceptions ([[#def-general]], [[medical-ethics-law/consent-capacity]], [[surgery/breast-endocrine-surgery]]): the first correction is structural, not cultural - 'the partner must not be the interpreter and must not be in the room for the discussion (the interpreter line called now; the routine offer of a female clinician and chaperone as standard for breast examination, which is a service-design duty the dignity frameworks now write down, not a favour requested of her); the clinical facts wait for no one: a palpable persistent lump needs the triple assessment (the examination-and-imaging-and-sampling pathway), so the negotiation is about how, not whether, and the 'I understand; we can arrange a female doctor and we will start wherever you are comfortable' sentence with the appointment made before she leaves; the safety screen that requires privacy - 'the pain-pattern-and-coercion-and-who-found-the-lump questions (the breast-clinic literature's domestic-violence-screening-adjacent findings) which cannot be asked with the partner translating or listening; and the fallback ethics - 'if she still declines today, document the offer, the interpreter used, the specific alternatives taken (the self-imagery? the return with a friend? the female clinician booked), give her the safety-net in words she repeats back, and do not let refusal become a discharge - because the examination is hers to govern and the pathway is yours to keep open.'**
+Sensitivity 0.90, specificity 0.60. $\text{LR}^+ = 0.90/(1 - 0.60) = 0.90/0.40 = 2.25$. Its negative likelihood ratio is $0.10/0.60 \approx 0.17$, so its absence is more useful (for ruling out) than its presence (for ruling in).
 :::
 :::
 
-::: exercise Defend the examination {level=3}
-The medical director proposes cutting the physical-diagnosis teaching half for 'ultrasound and simulation time' and letting imaging departments absorb the junior's 'uncertain' exams. Write the response: the evidence for, against, and the compromise you would sign.
+::: exercise UMN or LMN {level=2}
+A 50-year-old man has wasting of the small muscles of the right hand, fasciculation in the right arm, brisk knee reflexes and extensor plantar responses bilaterally. What pattern is this and what diagnosis must be considered?
 ::: solution
-**The-examination-argument-done-honestly ([[#def-evidence]], [[clinical-skills/patient-safety]], [[epidemiology-ebm/diagnostic-tests]]): steelman the proposal - 'ultrasound genuinely outperforms several named signs (pleural effusions, DVT, heart failure's B-lines in the dyspnoea-differentiation trials), and simulation genuinely outperforms 'see one do one' for technique acquisition; junior 'uncertain exams' referred to radiology is honest escalation; the counter-evidence - 'the examination's role is not competing with imaging on imaging's terms: it sets pretest probability (the D-dimer and the 'incidentaloma' harms are examination judgements), it is the only test available in the 4am and the community and the resource-setting (the compartment-and-cauda-and-ectopic-and-tamponade syndromes are clinical diagnoses with imaging confirmations), it still finds what scans miss when nobody examines (the tremor that hides, the breast lump below the imaged field, the endocarditis's nail fold and the patient whose scan was 'normal' and whose examination says otherwise - each a documented failure mode), and the patient-trust-and-medico-legal layers are real (the 'he never examined me' complaint and the 'documented examination' defence are both in the director's own data if he looks); the compromise to sign - 'a) keep physical-diagnosis teaching but re-weight it to the validated discriminating signs (drop the percussion liturgy, teach the LRs), b) teach ultrasound as examination-integration with competence-logged indications, not as a separate machine (the pocket-echo-adjacent credentialing frameworks), c) the 'uncertain-exam referral' kept but re-defined: the junior examines, documents, then co-scans-with-the-senior-then-images, so the hand stays on the patient and the learning loop closes, and d) the outcome measures both sides agreed at 12 months: the 'diagnosis-before-imaging' hit-rate in the escalation cases, the examination-documentation quality on notes audit, and the 'patient felt examined' item, which no director will argue with because it predicts complaints, trust and the next doctor's accuracy.'**
-:::
-:::
-::: example The asthma that was stridor {#ex-stridor}
-A 26-year-old is treated for 'acute severe asthma' for the third time this year; at tonight's review the junior notices the noise is inspiratory, maximal over the neck, and unchanged by nebulisers; the saturations are 99 percent on air and the peak flow is 'better than last time but still low'.
-::: solution
-**The-examination-that-reclassifies ([[#def-systems]], [[respiratory/asthma-copd]], [[nervous-system/sensory-systems]]): the discriminating findings - 'the inspiratory-and-position-dependent-and-nebulisier-unresponsive noise is upper-airway (the extrathoracic-variable-obstruction pattern - the flow-loop's flattening of inspiration) and the differential it opens (the inducible-laryngeal-obstruction/vocal-cord-dysfunction the asthma-mimic registers, the subglottic stenosis after intubation, the goitre and the lymph-node mass and the tracheal tumour that plain films miss); the examination now - 'the neck palpated and the trachea central-or-not and the squaring-of-shoulders cough manoeuvre and the fibreoptic-laryngoscopy-adjacent ENT decision and the flow loops with the spirometry documented as the investigation the examination just ordered; the medicine of the label - 'three hospitalisations with systemic steroids and an inhaler ladder is iatrogenia with interest, and inducible laryngeal obstruction treated as asthma gets worse (the panic-cycle and the intubation-risk if the next attack is sedated for 'status'); and the habits taught - 'the 'look at the clock when the chest listens' rule (inspiratory versus expiratory is the first fork in every noisy patient), the 'saturation that does not fit the work of breathing is an examination prompt' (the PE-with-normal-sats and the anxiety-with-abnormal-sats both), and the note that records 'stridor assessed: present/absent' on every acutely-breathless admission, because the word 'wheeze' in a triage note has been the coffin nail in more than one airway-autopsy series.'**
+He has **both** lower motor neurone signs (wasting and fasciculation in the arm) and upper motor neurone signs (brisk reflexes, extensor plantars in the legs). A mixture of UMN and LMN signs without sensory loss raises the possibility of **motor neurone disease**. A cervical cord lesion (for example cervical myelopathy with root compression) can also combine LMN signs at the level of the lesion with UMN signs below it and must be excluded with imaging. Referral to a neurologist is needed.
 :::
 :::
 
-::: example The hands that diagnosed {#ex-hands}
-A 58-year-old 'anxiety' referral with 'tingling hands and tiredness': the examining doctor finds skin thickening over the finger joints, tight waxy fingers that will not pinch up, and nailfold capillary loss; the ESR is 4 and the reflexes normal.
+::: exercise A murmur in an older man {level=2}
+An 82-year-old man has exertional chest pain and a recent faint. He has an ejection systolic murmur loudest at the right second intercostal space radiating to both carotids, a slow-rising pulse and a quiet second heart sound. What is the likely diagnosis, and why are the symptoms important?
 ::: solution
-**Scleroderma-spectrum-in-the-hands ([[#def-general]], [[#def-systems]], [[musculoskeletal/connective-tissue-vasculitis]]): the signs and their weights - 'the skin-thickening-sparing-knuckles-and-pulling-tight-over-metacarpals pattern with the Raynaud history that was surely present and never asked ('do your fingers blanch and hurt in cold water?'), the nailfold-capillary-dropout-and-bushy-loops sign with its high LR+ for the scleroderma-spectrum and its microangiopathy-prediction role, the calcinosis and the telangiectasia and the tendon-friction-rub that the textbooks list and the hands actually find; the 'anxiety' autopsy - 'the hand oedema phase misnamed, the breathlessness-not-noted that is the ILD and the PAH that decide this disease's prognosis, the reflux-and-bloated-small-bowel that will be labelled IBS, and the renal-crisis blood-pressure-counsel that must be given before the steroid trap; the workup the examination ordered - 'the Scl-70-and-centromere-and-RNA-polymerase-antibodies with the nailfold-capillary-microscopy, the HRCT-and-PFT-and-echo-screen and the annual PAH-and-renal-surveillance architecture, and the hand-therapy-and-DLP-and-calcium-channel-referrals; and the meta-point for the clinic - 'the normal-ESR-does-not-exclude-and-the-normal-reflexes-never-excluded: it was the hands, examined with a question, that did what four referral letters did not, and the case goes on the practice's teaching list for 'what did we not touch today'.**
+The findings suggest **severe aortic stenosis**. The ejection systolic murmur radiating to the carotids is typical; a slow-rising pulse and a soft second heart sound point to severe disease. Angina, syncope and breathlessness are the classic symptoms of severe aortic stenosis and carry a poor prognosis without valve intervention. He needs urgent echocardiography and cardiology review. Note that the loudness of the murmur alone would not have indicated severity.
 :::
 :::
 
-::: exercise Build the rapid bedside echo curriculum {level=2}
-Design the pocket-ultrasound training for your medical firm: indications, competencies, governance, and the two failure modes you are preventing.
+::: exercise A missed diagnosis {level=3}
+An 80-year-old woman is admitted with vomiting and abdominal distension. The admitting doctor documents "abdomen soft, distended, non-tender, bowel sounds tinkling". A CT the next day shows small bowel obstruction from a strangulated right femoral hernia. Analyse what went wrong in the examination and suggest how a system could make this less likely.
 ::: solution
-**Ultrasound-with-edges ([[#def-evidence]], [[emergency-critical-care/critical-care]]): the indication list kept short and honest - 'the dyspnoea differentiation (the B-lines-and-sliding-and-effusion and the IVC in the right context), the cardiac-activity-and-chamber-estimate question in arrest and shock, the DVT two-point-and-bladder-and-aorta-screen in the abdominal-pain-with-syncope-adjacent setting, and the procedural guidance the anaesthesia and renal and vascular frameworks already own; the competency design - 'the supervised-acquisition-hours-with-logbook-and-assessor standards the societies publish (the 'not a badge, a credential'), the image-quality-and-differential-includes-what-you-cannot-see training (the 'normal-echo-does-not-exclude-PE-or-diastolic-failure-and-tamponade-with-a-small-effusion' caveats drilled with the wins), and the exit rule that the scan never replaces the examination but re-ranks its hypotheses; the governance - 'the report-into-the-record discipline (the 'acquired-and-stored-and-interpreted-by-a-named-person' policy the medicolegal reviews demand), the 'no treatment decisions from images beyond your credentialled views' rule, the quality-assurance review of positives and misses, and the clear answer to the inevitable question - whether sonographer referral pathways pay for themselves in time-to-diagnosis, from your own data; and the two failure modes prevented - 'the over-scanning cascade (incidental findings in patients whose pretest probability never needed looking, the harm the patient-safety chapter tabulates) and the atrophying hand (the junior who reaches for the probe before the stethoscope and never learns the JVP because the machine always answers first) - which is why the curriculum's first assessment is 'state your pretest probability and your physical findings before you scan.'**
+The examination was incomplete: the hernial orifices were not examined. Tinkling bowel sounds and distension should have prompted a search for a cause of obstruction, and femoral hernias are a classic cause in older women; they are often small and easily missed under clothing or a gown. Contributing factors may include time pressure, a reluctance to examine the groin, and anchoring on a "medical" cause of vomiting. System measures: a clerking proforma that includes "hernial orifices examined: yes/no", teaching that the abdominal examination is not complete without the groins, senior review of new admissions with obstruction, and a culture in which an incomplete examination is documented as outstanding rather than omitted.
 :::
 :::
 
-::: exercise Document the negative {level=1}
-Rewrite three notes: (a) 'abdomen soft'; (b) 'CNS WNL'; (c) 'cannot tolerate examination'. Each becomes a defensible, useful entry.
+::: exercise A sign's value depends on where you start {level=3 check="round(0.1*10/(0.1*10+0.9)*1000)/1000"}
+A sign has a positive likelihood ratio of 10 for a disease. In a patient whose pre-test probability is 10%, what is the post-test probability when the sign is present? Give it as a proportion rounded to three decimal places.
+::: hint
+Convert the probability to odds, multiply by the likelihood ratio, and convert back.
+:::
 ::: solution
-**The-negative-that-protects ([[#def-general]], [[clinical-skills/patient-safety]]): (a) 'abdomen soft, non-distended, no guarding or rebound, non-tender in all four quadrants and epigastrium, bowel sounds present, no masses or organomegaly palpated; no RUQ tenderness on inspiration - Murphy's sign negative; re-examined at 14:00 given opiate use, unchanged' - the surgical absences recorded because the next doctor inherits a trend, not an adjective; (b) the 'cranial nerves II-XII intact including visual fields and fundoscopy; power 5/5 throughout with no drift; coordination and gait normal; sensation to light touch intact in all limbs; reflexes 2+ and symmetric, plantars flexor; cranial nerves examined because the headache history asked' - 'WNL' hides which of the cauda and ICP and temporal-artery questions was actually answered; (c) 'examination limited: severe pain and rigors precluded abdominal assessment beyond light palpation (guarding present, unable to assess rebound); sedated for CT with anaesthesia present; full examination re-attempted and completed at 09:30 - findings as above' - the honest 'could not' with its plan and time, which is the entry that defends the clinician and rescues the patient, versus the silence that does neither.'**
+Pre-test odds $= 0.1/0.9 = 0.111$. Post-test odds $= 10 \times 0.111 = 1.111$. Post-test probability $= 1.111/(1 + 1.111) = 10/19 \approx 0.526$. A strong sign has moved the probability from 10% to about 53%: important, but not certainty. Starting from 1%, the same sign would give only about 9%.
 :::
 :::
-
-::: exercise Examine the anxious patient {level=2}
-A 22-year-old with two normal ED attendances for 'palpitations and tingling' is convinced something physical is being missed; your examination finds sinus rhythm at 110, tremor, and a lid lag she has never been told about. Handle the examination, the reframe and the plan.
-::: solution
-**Physical-signs-as-therapy ([[#def-general]], [[#def-evidence]], [[endocrine/thyroid]], [[psychiatry/anxiety-disorders]]): the examination done properly is the intervention - 'the paced-and-quiet-re-examination (the pulse and the eyes and the hands with the lid-lag demonstrated in the down-gaze tracking and the tremor photographed, the reflexes and the calf-check for the other thyrotoxic myopathy signs), then the narration ('your heart rhythm is normal and fast, which is what thyroxine excess does; your hands show a tremor I want you to see in the mirror; your eyes are showing lag') - the physical findings convert 'they think it's anxiety' into 'they found something', which is the therapeutic moment two normal attendances could not provide; the medicine - 'the TFT-and-antibody-and-uptake-or-scan-thyroid-eye-and-af-risk-plan and the beta-blocker that will make her feel the improvement that convinces her you were right about everything else; the anxiety kept on the list - 'thyrotoxicosis and panic coexist and the lid-lag does not exclude the phobic-component-that-perpetuates-it (the 'the 'breathlessness-from-hyperventilation-overlay that persists after the T4 normalises gets its own CBT referral, not a shrug); and the documentation and repair - 'the-examination-findings-shown-and-explained-in-the-patient's-own-words ('she identified tremor and lid lag'), the apology-for-the-missed-attention-without-apologising-for-the-emergency-departments'-crowded-reality (the two attendances where nobody took the ten minutes), and the follow-up named with a date, because this patient's next crisis will be 'another doctor who did not examine me' unless this note breaks the pattern.'**
-:::
-:::
-

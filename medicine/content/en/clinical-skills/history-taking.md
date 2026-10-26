@@ -1,140 +1,336 @@
-The history is the oldest investigation and still the highest-yield one: in the classic series it supplied the diagnosis in the majority of encounters, and modern reviews keep finding that when the history is wrong or truncated, every scan downstream inherits the error. **This chapter treats the history as a technique with parts: the structure (presenting complaint to past history to drugs, allergies, social and family history, with the attending-and-revising questions that make each section diagnostic rather than clerical), the symptom analysis of the major presentations (pain, breathlessness, cough, bleeding, weight loss, collapse, confusion, and the rest), the red-flag lists whose whole purpose is to convert a common symptom into an urgent referral, the cognitive hygiene of history-taking (the premature closure and availability and anchoring effects that the clinical-reasoning chapter works through, with the 'what else could this be' and 'what must I not miss' disciplines), and the populations where technique must change (children with their developmental history, older people with their atypical presentations and frailty context, the cognitively impaired, the acutely ill taken in minutes not hours, and the honest limits of memory, suggestibility and shame).**
+The history is the patient's account of their illness, gathered and organised by the clinician. It is the oldest diagnostic tool in medicine and still the most powerful. In a classic British study of new medical outpatients, published in 1975, the referral letter and history alone led to the final diagnosis in 66 of 80 patients; the examination helped in a further 7 and laboratory tests in another 7. Later studies in other settings have found the same pattern. Tests are most useful when the history has already told you what to look for.
 
-## The structure
+This chapter describes the standard structure of the medical history, the detail needed in each part, focused histories for common presentations, and how to present a history to a colleague. It builds on the consultation skills of [[clinical-skills/communication]].
 
-::: definition The anatomy of a history {#def-structure}
-**The presenting complaint in the patient's own words, transcribed if possible, with its duration - the sentence that will be quoted in every later note and that the clinician must resist translating too early. The history of presenting complaint unwinds the symptom analysis: for pain, the SOCRATES-family checklist (site, onset, character, radiation, associated features, timing, exacerbating and relieving factors, severity) is scaffolding, not a script - the questions that actually discriminate are chosen by the differential (pleuritic versus central crushing, colic versus constant, pleuritic with breathlessness versus pleuritic with calf pain), and the narrative version ('tell me from this morning onwards') frequently outruns the checklist and catches the haemoptysis the patient had not connected to the cough. The past medical history is a disease-association instrument: the asplenic state and the joint replacement and the IBD with PSC, the prior VTE that recategorises a swollen calf, the radiotherapy field that explains a stricture years later; the drug history is asked as a prescription list reconstructed with the patient (the over-the-counter and herbal and the partner's tablets and the inhaler technique that the bottle level reveals), with allergies characterised (true penicillin allergy versus a rash at school - the de-labelling programmes' safety and stewardship dividends) and the medication-related causes of the presenting symptom run through the common suspects (the NSAID and the ACE inhibitor cough and the amiodarone lung and the statin muscle and the anticholinergic burden in the confused older person). The family history draws the hereditary patterns the genetics course formalises (the three-generation sketch with ages and deaths, the early cardiac deaths, the cancer clusters meeting referral criteria, the consanguinity asked sensitively where relevant), and the social history is the consultation's physics: occupation and exposures, smoking and alcohol quantified (units, not 'socially'; the AUDIT-C questions that open the door), drugs with the non-judgemental normalising sequence, home and stairs and carers and pets, the driving and work questions that change management, and the 'what matters to you' that the assets-based literature adds because a treatment plan incompatible with a life is a plan that will fail. The systems review is a disciplined sweep (the ten-question net for the fever or weight loss or breathlessness that catches the extrapulmonary tuberculosis and the jaw claudication nobody mentioned) balanced against its known cost: over-calling incidental symptoms, so that in a focused consultation it is guided by the working differentials rather than performed as liturgy. And the whole is bookended by two skills the checklists cannot capture: the opening that invites the story (the uncensored first minute) and the closing that checks it ('have I missed anything that worries you?') - the question that surfaces the hidden agenda the communication chapter quantifies.**
+## The structure of the history
+
+A history has a conventional order. The order is not the order in which every conversation must run: patients tell their story their own way, and an emergency history may be a few targeted questions. The structure is a checklist for what must be covered and a template for writing and presenting.
+
+::: definition The components of the medical history {#def-structure}
+A full medical history has these parts:
+
+1. **Presenting complaint (PC)**: the main problem, in the patient's own words where possible, with its duration ("chest pain for 2 hours").
+2. **History of presenting complaint (HPC)**: a detailed account of the problem and of related symptoms, including relevant positives and negatives.
+3. **Past medical and surgical history (PMH)**: previous illnesses, operations, admissions and long-term conditions.
+4. **Drug history (DH)**: all current medicines, including over-the-counter and herbal products, with doses, adherence, and **allergies** with the nature of the reaction.
+5. **Family history (FH)**: illness in first-degree relatives and any inherited conditions.
+6. **Social history (SH)**: occupation, home circumstances, function, smoking, alcohol and other drugs, driving, and who provides support.
+7. **Systems review (SR)**: a brief screen of symptoms in each body system not already covered.
+
+The patient's **ideas, concerns and expectations** are explored alongside the HPC ([[clinical-skills/communication#def-ice]]).
 :::
 
-## The symptom analyses
+### The presenting complaint and its history
 
-::: definition Presentations, red flags and the atypical {#def-presentations}
-**The symptom analyses are decision trees dressed as questions. Chest pain separates the urgent triad (the ACS, dissection, PE and tension pneumothorax and oesophageal rupture behind them) by onset and quality and radiation and associated features, with the reassuring facts that pleuritic pain in a young person is usually benign and that normality of the first troponin is a time-dependent, not an absolute, reassurance. Breathlessness asks about timing (acute, chronic, paroxysmal nocturnal), position (orthopnoea, platypnoea), and context (the silent chest, the wheeze that is cardiac, the anxiety that coexists with the PE rather than excluding it), with the red flags of haemoptysis and weight loss and sudden onset. Cough is timed (the eight-to-three-week categories that make post-viral cough a diagnosis with a calendar) and interrogated for the seriousness markers (haemoptysis, dysphagia, hoarseness, smoking history, weight loss - the NICE two-week-wait cough criteria in miniature), with the drug and reflux and asthma and heart-failure causes as the common remediable rest. The dyspepsia-and-abdominal-symptom analyses guard their red flags (age-appropriate new onset, weight loss, dysphagia, bleeding, iron-deficiency anaemia, an abdominal mass) because upper-GI cancer presents as 'indigestion' in the age group that gets reassured; the altered-bowel-calibre-and-blood story separates haemorrhoids' assumptions from the colon's right to be imaged, with the iron-deficiency-in-a-man-is-a-colon-cancer-until-proven-otherwise rule. Collapse demands the cardiac-neurological-mechanical triage in the history (preceding palpitation or exertion or position; the seizure witnesses' three questions - before, during, after; the tongue bite and incontinence's poor specificity and the prolonged confusion and prolactin-adjacent research; the vasovagal context) because syncope with a cardiac cause is the one that kills on its second visit. Confusion and memory complaints separate delirium (acute, fluctuating, inattention, a cause to hunt in drugs and infection and metabolic causes - the geriatric triage) from dementia (insidious, progressive, the informant's essential history of function) and depression (the reversible mimic with its 'what has changed since your husband died' social trigger), with the driving and capacity and safeguarding questions asked early. Bleeding histories are haematology questionnaires (the mucosal pattern and drug and family and procedure-bleeding questions that find the von Willebrand disease missed for decades, and the deep-muscle-and-joint pattern that says factor deficiency), and weight loss is the great internist's prompt (the constitutional questions, the appetite and the stool and the mood and the thyroid and the drugs, with the honest data that unexplained weight loss in older people carries a meaningful cancer probability that watchful waiting must schedule, not skip). The atypical presentations are not exceptions but rules by population: older people present with falls and confusion and incontinence for the myocardial infarction and the pneumonia and the urine that the textbooks give pain for; the diabetic and the denervated and the woman present atypically for ischaemia; the immunosuppressed mount no fever; and pregnancy reprioritises every red flag (the appendicectomy-with-a-high-caecum lesson).**
+The history of the presenting complaint is where most diagnostic work happens. Start with an open invitation ("Tell me about the pain from the beginning"), let the patient give the whole story, and then fill in the details with focused questions.
+
+For any symptom, establish its **time course**: when it started, whether the onset was sudden or gradual, whether it is constant or intermittent, and whether it is getting better, worse or staying the same. The tempo of an illness is one of the strongest clues to its cause. A headache that reaches maximum intensity within a minute suggests a vascular event; one that has slowly worsened over weeks suggests a mass or raised pressure; one that has recurred in the same pattern for years is usually a primary headache.
+
+For pain, the mnemonic **SOCRATES** gives a useful checklist.
+
+::: definition SOCRATES {#def-socrates}
+The characteristics of pain (and, with adaptation, of many other symptoms) are:
+
+- **S**ite: where it is; ask the patient to point.
+- **O**nset: when and how it started (sudden or gradual; what the patient was doing).
+- **C**haracter: what it feels like (sharp, dull, burning, crushing, colicky).
+- **R**adiation: whether it spreads anywhere.
+- **A**ssociated symptoms: such as nausea, sweating, breathlessness, fever.
+- **T**ime course: duration, pattern, frequency, previous episodes.
+- **E**xacerbating and relieving factors: movement, breathing, food, posture, rest, medicines.
+- **S**everity: often scored from 0 to 10, and its effect on activity and sleep.
 :::
 
-## The hygiene
+**Relevant negatives** are as important as positives. A note that says "chest pain" without stating whether there was breathlessness, sweating or pain on breathing does not let a reader judge the likelihood of a heart attack or pulmonary embolism. The absence of a feature that would be expected in a dangerous diagnosis is evidence against it; the absence of a feature that is often missing anyway is weak evidence. [[clinical-skills/clinical-reasoning]] makes this precise with likelihood ratios.
 
-::: definition Cognitive hygiene and special populations {#def-hygiene}
-**The failure modes of history-taking are cognitive before they are factual. Premature closure - stopping collecting when a label feels adequate - is the most common contributing factor in diagnostic-error series; its antidotes are deliberately cheap: the 'what else could this be' prompt at three points, the 'what must I not miss' safety question for each red-flag category, and the re-ask when the patient says 'but...' (patients' hedges are the system's error flags). Anchoring to the referral letter or the triage nurse's first sentence, availability bias to last week's rare case, the sunk-cost of the workup already ordered, and the hindsight that makes every missed diagnosis obvious only after the outcome is known - all are catalogued and countered in the clinical-reasoning chapter, and the history is where they are cheapest to catch because the only cost is another question. Illness scripts are how experts actually think (the pattern-plus-conditioning-knowledge model of how diagnoses jump to mind), and the honest pedagogy is that pattern recognition is both the expert's glory and the error's origin, so the analytic check - 'does this script need its test, and what would disprove it?' - is drilled alongside it. Suggestibility and framing cut both ways: closed leading questions create symptoms ('does it ever shoot down your leg?' generates positive histories), and patients under-report what they fear judges them - weight, alcohol, drugs, sex, domestic violence, chemotherapy they did not take - which is why the sensitive histories use normalising preambles, private questions asked without relatives, confidentiality boundaries stated plainly, and the non-judgemental voice that the adherence literature rewards; the safeguarding and fabricating and factitious-disorder and malingering territories have their own rules (never accuse from a history; document verbatim; involve the specialist teams) and the drug-seeking presentation deserves the same red-flag discipline as any pain ('the pain is what the patient says it is; the plan is what the evidence supports'). The special populations each rewrite the technique: children (the developmental history from the antenatal scans through the neonatal course to the milestones and school reports, the immunisations, the growth chart as a biography, and the 'child-protection questions you always ask - who else is at home, why did this bruise appear, who gets the child up in the morning' that belong in the safeguarding chapter's grammar); older people (the medication list as the first investigation, the functional history - stairs, shopping, baths, falls, incontinence - as the real outcome measure, the frailty scores that predict which treatments they will tolerate, and the informant history that turns 'she's just slowed down' into a dementia subtype); the cognitively impaired and aphasic (the carer as historian, the observation of what the patient can tell you and the pictures and communication aids that outrank your patience with a standard template); the acutely ill (the fifteen-minute resuscitation history - drugs, allergies, last oral intake, events leading up, the SAMPLE and OPQRST micro-scripts - with the full history to be completed by whoever has the privilege of the stable patient); and the honest limits: memory is reconstructive (the patient's timelines are approximate and the clinician's must be too, especially for anticoagulation and infective-contact windows), shame is a sedative for history, and the 'difficult patient' label is a diagnosis of the clinician's failed technique until the personality, neurodevelopmental, trauma and iatrogenic-anxiety explanations have been worked through with the psychiatry chapter's tools. The closing discipline is the same everywhere: a summary read back, the patient's corrections taken seriously (the correction is the most under-used diagnostic data point in medicine), one explicit safety net, and the note written as if the coroner will read it - because sometimes they do.**
+Each history also needs a check for **red flags**: features that suggest a serious cause needing urgent action.
+
+::: definition Red flags {#def-redflags}
+A **red flag** is a feature of the history or examination that raises the probability of a serious, time-critical diagnosis enough to change management, usually by prompting urgent investigation or referral. Red flags are specific to each presentation. Examples:
+
+- **Headache**: sudden onset reaching maximum intensity within about a minute (thunderclap), new headache with fever and neck stiffness, new headache with neurological signs, new headache in a person with cancer or immunosuppression, and new headache with jaw claudication or scalp tenderness in a person over 50.
+- **Back pain**: bilateral or alternating leg pain, saddle numbness, new bladder or bowel dysfunction (possible cauda equina syndrome); history of cancer, fever or immunosuppression, unexplained weight loss, and thoracic pain.
+- **Dyspepsia**: difficulty swallowing, weight loss, vomiting, gastrointestinal bleeding or iron-deficiency anaemia, particularly with increasing age.
 :::
 
-::: example The heart attack with heartburn {#ex-atypical}
-A 71-year-old woman with diabetes presents to her GP with three days of 'indigestion', nausea and tiredness; she is afebrile, comfortable, epigastric tap is unremarkable; she says 'it can't be my heart, I feel it here' pointing to her sternum; the GP prescribes a PPI and a review if no better in two weeks.
+::: warning A negative red-flag screen does not make a presentation safe
+Red flags are prompts to act, not a complete test. Many patients with serious disease have none of the classic red flags at first presentation, and most patients with a red flag do not have the serious disease. Treat red flags as a minimum screen, combine them with the overall picture, and always safety-net when the diagnosis is uncertain.
+:::
+
+### Past medical history
+
+Ask about long-term conditions, previous hospital admissions, operations and anaesthetics (and any problems with them), and significant past illnesses such as rheumatic fever, tuberculosis or jaundice. For each condition, a few details are useful: when it was diagnosed, how it is treated and how well controlled it is. "Diabetes" is less informative than "type 2 diabetes for 12 years, on metformin and insulin, last HbA1c 64 mmol/mol, with retinopathy".
+
+Patients may not think of some conditions as illnesses, so ask specifically about common ones: heart disease, high blood pressure, stroke, diabetes, asthma or COPD, epilepsy, kidney or liver disease, cancer and mental health conditions. In women, ask about pregnancies when relevant; the obstetric history is covered in [[obstetrics-gynaecology]].
+
+### Drug history and allergies
+
+The drug history is one of the most safety-critical parts of the record, because errors here propagate into prescriptions. It should list every medicine with its **name, dose, route, frequency** and, where relevant, **indication**. Ask specifically about medicines the patient may not mention: inhalers, eye drops, creams, injections given in clinic (such as depot antipsychotics or monthly vitamin B12), over-the-counter painkillers, herbal and traditional remedies, and recreational drugs. Ask how the patient actually takes their medicines, because what is prescribed and what is taken often differ.
+
+::: definition Allergy and intolerance {#def-allergy}
+A **drug allergy** is an immune-mediated reaction to a drug, such as urticaria, angio-oedema, bronchospasm or anaphylaxis, or a delayed severe skin reaction. A **drug intolerance** or **side effect** is a predictable, non-immune effect, such as nausea with an opioid or diarrhoea with an antibiotic. For every reported reaction, record the **drug**, the **nature of the reaction**, **when it happened** and how it was treated. "Penicillin: allergic" is much less useful than "Penicillin: widespread itchy rash with lip swelling in 2014, treated in A&E".
+:::
+
+The distinction matters. Many people labelled "penicillin allergic" are not allergic when tested, and the label leads to the use of broader-spectrum or less effective antibiotics. Conversely, a real allergy that is recorded only as "intolerance" may be ignored. Medicines reconciliation, comparing the drug history from several sources at admission, is covered in [[clinical-skills/records-handover]].
+
+### Family history
+
+Ask about the health of parents, siblings and children, including their ages and causes of death. Some conditions need specific questions: early heart disease (in a male first-degree relative under 55 or a female under 65 by a common convention), sudden unexplained death in a young relative, cancers of the breast, ovary and bowel, diabetes, and inherited conditions in the family. A three-generation **pedigree** is drawn when an inherited condition is suspected; [[genetics/mendelian-inheritance]] explains how to read it.
+
+### Social history
+
+The social history describes the person who has the disease and what the disease means for their life. Areas to cover:
+
+- **Occupation**, past and present, including exposures (asbestos, dusts, chemicals, animals) and how the illness affects work.
+- **Home**: who lives with the patient, the type of housing (stairs, adaptations), and caring responsibilities, including children and dependent adults.
+- **Function**: what the patient can do for themselves (washing, dressing, cooking, shopping, walking distance), any carers or care package, and aids such as a walking stick.
+- **Smoking**: current or past, quantity and duration, expressed in **pack-years**.
+- **Alcohol**: quantity and pattern in **units**, and signs of dependence.
+- **Other drugs**: non-judgemental questions about recreational drug use and route.
+- **Driving**, travel, pets, and diet when relevant.
+
+::: definition Pack-years and alcohol units {#def-units}
+**Pack-years** measure lifetime tobacco exposure:
+
+$$
+\text{pack-years} = \frac{\text{cigarettes smoked per day}}{20} \times \text{years smoked}.
+$$
+
+One pack-year is 20 cigarettes a day for a year. Risk of lung cancer and COPD rises with pack-years.
+
+In the UK one **unit of alcohol** is 10 mL (about 8 g) of pure ethanol. The number of units in a drink is
+
+$$
+\text{units} = \frac{\text{volume (mL)} \times \text{ABV (\%)}}{1000},
+$$
+
+where ABV is the alcohol by volume. Since 2016 the UK Chief Medical Officers' low-risk guideline has been that men and women should not regularly drink more than **14 units a week**, spread over three or more days.
+:::
+
+::: example Calculating exposure {#ex-exposure}
+A 60-year-old man says he has smoked "about 30 a day since I was 18" and drinks "four pints of 5% lager most evenings, and more at weekends". Calculate his pack-years and his minimum weekly alcohol intake if "most evenings" is taken as five nights. A UK pint is 568 mL.
+
 ::: solution
-**Atypical-is-the-typical ([[#def-presentations]], [[#def-hygiene]], [[cardiovascular/coronary-artery-disease]]): the flags the history was waving - 'the woman-diabetic-older triad is the textbook atypical-ACS population (the dyspepsia-and-fatigue-and-nausea presentation is closer to the norm than the male Hollywood clutch in this age group), and 'three days' is a stuttering infarct's natural history, not a reassuring duration; the two sentences that should have changed the plan - 'a diabetic woman with new central discomfort and nausea needs an ECG before the diagnosis of indigestion is allowed, and the troponin belongs to the pathway not the reflex to discharge'; the anchor named - 'the patient's own 'it can't be my heart' is not protective evidence (patients localise by feeling, not by anatomy) and the epigastric tenderness that 'fitted' is the most reassuring physical finding in medicine precisely because it so often is wrong; the correction - 'same-day ECG and troponin, the PPI continued as nothing, and the safety net with a face ('come back today if it changes or worsens; this number is the assessment unit'); and the audit question the practice should ask afterwards - 'whether the atypical-presentation prompts exist anywhere the pressure-of-the-ten-minute-consultation meets them, because this misdiagnosis is the most common one the coronary mortality audits keep counting.'**
+**Pack-years.** He has smoked for $60 - 18 = 42$ years at 30 a day: $\dfrac{30}{20} \times 42 = 63$ pack-years.
+
+**Alcohol.** One pint of 5% lager contains $\dfrac{568 \times 5}{1000} = 2.84$ units. Four pints contain $4 \times 2.84 = 11.36$ units. Five nights a week gives $5 \times 11.36 = 56.8$ units, and more at weekends, so at least about 57 units a week: four times the low-risk guideline.
+
+He has a high risk of smoking-related lung disease and cancer, and his drinking warrants a non-judgemental conversation, screening for dependence (for example with the AUDIT questionnaire) and attention to withdrawal risk if he is admitted.
 :::
 :::
 
-::: example The forgotten half of the drug history {#ex-drughx}
-A 58-year-old is admitted with an intracranial bleed; the drug history at admission records 'warfarin - no'; family later mention 'he gets injections every fortnight for his knee'; the joint clinic's record shows five years of hyaluronate and, for eight weeks, an NSAID bridge started by a locum that no shared record carried.
-::: solution
-**The-medication-history-as-a-reconstruction ([[#def-structure]], [[musculoskeletal/back-pain]], [[clinical-skills/records-handover]]): the technique that should have run - 'the prescription list is a starting hypothesis, not the answer: ask 'what does a pharmacist dispense, what does a friend give you, what do you buy at the shop, what did the hospital clinic start?', with the box-bag-and-blister-visit habit and the 'show me your injections' question that finds the pen the patient forgot and the clinic that never told the GP; the specific traps this case names - 'the over-the-counter NSAID (invisible to every electronic system until someone asks, and the interaction that multiplied his anticoagulation's harm), the clinic-initiated drugs (the locum-patch-and-private-injection problem the shared-record advocates cite), and the 'no warfarin' that was true and irrelevant (the bleed's real pharmacology was platelet-and-renal, not vitamin-K); the system fixes - 'the structured medication review owned by pharmacy at admission (the reconciliation policy that catches half of these errors in the first hour, which is why its staffing is patient safety in payslip form), the 'red-flag interaction' prompts that must be reviewable not just loud (the alert-fatigue literature's warning), and the inter-organisational record exchange with the joint-injection services that currently document into their own silos; and the moral arithmetic the ward learns - 'a five-minute drug history written as an interrogation of sources, not a transcription of a list, is the cheapest intracranial-haemorrhage prevention in the building.'**
+### Systems review
+
+The systems review is a quick screen for symptoms in each system that the HPC has not covered. It catches problems the patient did not think relevant and occasionally changes the diagnosis completely: a patient attending with back pain who, on systems review, has lost weight and has night sweats has a different problem from one who has not. A typical screen asks about:
+
+- **General**: weight loss, fever, night sweats, fatigue, appetite.
+- **Cardiovascular**: chest pain, palpitations, breathlessness on exertion or lying flat, ankle swelling, claudication.
+- **Respiratory**: cough, sputum, haemoptysis, wheeze.
+- **Gastrointestinal**: dysphagia, indigestion, nausea and vomiting, change in bowel habit, rectal bleeding, jaundice.
+- **Genitourinary**: urinary frequency, dysuria, haematuria; menstrual and sexual history when relevant.
+- **Neurological**: headache, fits or faints, weakness, numbness, visual change.
+- **Musculoskeletal and skin**: joint pain, stiffness, rashes, lumps.
+- **Mood**: low mood, anxiety, sleep.
+
+Keep it brief and use plain words. Record significant positives in the HPC if they are part of the same problem.
+
+## Focused histories
+
+In practice most histories are **focused**: the clinician forms hypotheses early and asks the questions that best discriminate between them. This is not the same as a careless history. A focused history still covers the whole structure, but it spends its time where the diagnostic uncertainty lies.
+
+::: theorem Hypothesis-driven history taking {#thm-hypothesis}
+Expert history taking follows a cycle: early cues from the opening story generate a small number of **hypotheses**; questions are then chosen to **discriminate** between them (to raise one and lower another), rather than to collect every possible fact; the hypotheses are revised as answers come in; and a deliberate check is made for **dangerous diagnoses that must not be missed**, even if they seem unlikely.
 :::
+
+::: proof Why discriminating questions are efficient {#prf-hypothesis}
+A question is useful only if its answer would change the relative probabilities of the diagnoses being considered. A feature that is equally common in every candidate diagnosis (for example "pain" in a patient with chest pain) carries no information. A feature that is common in one diagnosis and rare in the others (pain on inspiration in pleurisy compared with angina) shifts the probabilities strongly. Choosing such questions reaches a working diagnosis in fewer steps. The deliberate "must not miss" check guards against the main weakness of the method: early hypotheses that are wrong can bias which questions are asked, a problem discussed as premature closure in [[clinical-skills/clinical-reasoning]].
+:::
+
+### Chest pain
+
+The commonest serious causes of acute chest pain are acute coronary syndrome, pulmonary embolism, aortic dissection, pneumothorax and oesophageal rupture. Common less serious causes include musculoskeletal pain, gastro-oesophageal reflux and anxiety.
+
+Discriminating features to ask about:
+
+- **Character and site**: central, heavy or tight pain suggests cardiac ischaemia; sharp pain worse on breathing (pleuritic) suggests pleurisy, pulmonary embolism, pneumothorax or pericarditis; sudden tearing pain radiating to the back suggests aortic dissection.
+- **Onset and relation to exertion**: pain brought on by exertion and relieved by rest within minutes is typical of stable angina; pain at rest lasting more than 15–20 minutes raises concern for an acute coronary syndrome.
+- **Associated features**: sweating, nausea and breathlessness with cardiac pain; leg swelling, recent surgery, immobility or haemoptysis with pulmonary embolism; fever and cough with pneumonia.
+- **Risk factors**: age, smoking, diabetes, hypertension, raised cholesterol and family history for coronary disease; recent immobility, surgery, cancer, pregnancy and previous clots for venous thromboembolism; hypertension and connective-tissue disorders for dissection.
+
+Women, older people and people with diabetes more often present with an acute coronary syndrome without classic central chest pain, for example with breathlessness, fatigue, nausea or epigastric discomfort. A history that fits the textbook less well does not exclude the diagnosis.
+
+::: example A focused chest-pain history {#ex-chestpain}
+Mrs Adeyemi, 58, presents with chest pain that started an hour ago while she was gardening. Outline the focused history and how each answer changes the differential.
+
+::: solution
+**Opening.** She describes a heavy, central pressure "like a weight on my chest", going into her left arm and jaw, with sweating and nausea. It has not eased with rest.
+
+**Discriminating questions and their effect.**
+- Did it start suddenly with a tearing pain going through to the back? No. This lowers the probability of dissection.
+- Is it worse when breathing in, or when pressing on the chest? No. Pleuritic and reproducible chest-wall pain become less likely.
+- Recent travel, surgery, leg swelling or coughing blood? No. Pulmonary embolism is less likely, though not excluded.
+- Has she had similar pain on exertion before? Yes, for three weeks, walking uphill, settling in a few minutes. This suggests pre-existing angina that has now changed to pain at rest.
+- **Risk factors**: smoker of 25 pack-years, type 2 diabetes, father had a heart attack at 52.
+
+**Working conclusion.** The history strongly suggests an acute coronary syndrome. The next steps are immediate: an ECG within 10 minutes, observations, and assessment and treatment following local acute coronary syndrome pathways, with troponin testing. The history has already decided the urgency before any test result.
+:::
+:::
+
+### Breathlessness
+
+Ask about the **tempo** (seconds to minutes: pneumothorax, pulmonary embolism, anaphylaxis, arrhythmia; hours to days: pneumonia, asthma, heart failure; months: COPD, interstitial lung disease, anaemia, chronic heart failure). Ask about **exercise tolerance** in concrete terms ("How far can you walk on the flat before you have to stop?"), **orthopnoea** (breathlessness lying flat, quantified by the number of pillows) and **paroxysmal nocturnal dyspnoea** (waking breathless), which point to heart failure; **wheeze**, cough and sputum; chest pain; leg swelling; and occupational and smoking history. The MRC dyspnoea scale grades the effect of breathlessness on function.
+
+### Abdominal pain
+
+Use SOCRATES carefully. **Colicky** pain (waves of pain with periods of relief) suggests obstruction of a hollow tube: bowel, ureter or, less often, biliary tract. **Constant** pain made worse by movement or coughing suggests peritonitis. Pain that **moves** (for example, periumbilical pain shifting to the right iliac fossa in appendicitis) reflects the change from visceral to parietal peritoneal irritation. Ask about vomiting, bowel habit, flatus, urinary symptoms, jaundice and, in anyone who could be pregnant, the last menstrual period: an ectopic pregnancy must be considered in any woman of reproductive age with abdominal pain. The acute abdomen is covered in [[surgery/acute-abdomen]].
+
+### Headache
+
+Distinguish **primary headaches** (migraine, tension-type, cluster) from **secondary headaches** caused by another condition. Ask about onset (thunderclap?), pattern over time, associated features (aura, vomiting, photophobia, fever, neck stiffness, rash), neurological symptoms, positional features (worse lying down or on coughing suggests raised intracranial pressure), medication-overuse, visual symptoms and jaw claudication. The full approach is in [[nervous-system/headache-pain]].
+
+## Histories in particular situations
+
+### Collateral history
+
+A **collateral history** is information from someone other than the patient: a relative, carer, witness, paramedic, GP record or care home. It is essential when the patient cannot give a reliable history, for example with delirium, dementia, reduced consciousness, a seizure or a collapse, and useful in many other situations. A witness account of a collapse (Was the person pale? Did they jerk? How long were they unresponsive? Were they confused afterwards?) is often the most informative single piece of evidence in distinguishing syncope from a seizure. Confidentiality still applies: you can listen to a relative without disclosing information, and you should seek the patient's agreement to share where they have capacity.
+
+::: example A confused older man {#ex-collateral}
+Mr Hughes, 84, is brought in by ambulance from home because he is "confused". He cannot say what has happened. How should the history be obtained, and what questions matter most?
+
+::: solution
+Speak to the person who knows him best (his daughter, by telephone) and check the GP record and the ambulance notes. The key question is **what is his usual cognitive state, and how quickly has it changed?** His daughter says he is normally independent, does his own shopping and manages his tablets; over two days he has become muddled, drowsy in the day and agitated at night. An acute change with fluctuation and inattention suggests **delirium** rather than dementia alone.
+
+Then look for the cause: new symptoms (cough, urinary symptoms, falls, pain, constipation, urinary retention), changes to medicines (a new opioid or anticholinergic drug, a missed or extra dose), alcohol, and recent illness. She reports that he started a new medicine for bladder symptoms a week ago and has had a cough. Both are plausible contributors. The collateral history has changed the problem from "confusion" to "acute delirium, possible causes infection and an anticholinergic drug", which directs the examination and tests. Delirium is covered in [[geriatrics-palliative/delirium-dementia-care]].
+:::
+:::
+
+### Older people
+
+In older people, the history should include a **functional history** (mobility, falls, activities of daily living), cognition, continence, nutrition, social support and a careful medication review, because polypharmacy is common and is itself a cause of presentations such as falls and confusion. Illness often presents atypically: an infection may present as a fall or confusion rather than fever. These themes are developed in [[geriatrics-palliative/ageing-frailty]].
+
+### Children
+
+Paediatric histories are usually given by a parent or carer, and adolescents should also be seen alone for part of the consultation. They add a **birth history** (gestation, birth weight, neonatal problems), **developmental history**, **immunisation history**, feeding and growth, and the family and social context, including safeguarding concerns. See [[paediatrics]].
+
+### Sensitive topics
+
+Some areas need particular care: the **sexual history**, **domestic abuse**, **mental health**, **self-harm** and **substance use**. Explain why you are asking ("I ask everyone these questions because they can affect health"), ask in private, use plain and non-judgemental words, and do not make assumptions about sexual orientation, gender or relationships. For domestic abuse, ask directly when alone with the patient ("Do you feel safe at home?"), and know the local route to support. For questions about self-harm and suicidal thoughts, asking directly does not increase risk and is part of every mental health assessment; respond with compassion and follow local guidance on assessment and support ([[psychiatry/self-harm-suicide-prevention]]).
+
+## Presenting a history
+
+Presenting a patient clearly to a senior colleague is a core skill. A good presentation is short, ordered and ends with an assessment and a question or plan. A widely used format is:
+
+1. **One-line opening**: name, age, and presenting complaint with duration.
+2. **HPC**, including key positives and relevant negatives.
+3. **Relevant background**: PMH, drugs and allergies, FH and SH, only what bears on the problem.
+4. **Examination findings** (when presenting after examination).
+5. **Summary and assessment**: a one-sentence summary and your differential, with the most likely diagnosis first and dangerous alternatives named.
+6. **Plan or question**.
+
+::: example Presenting Mrs Adeyemi {#ex-present}
+Present the history from [[#ex-chestpain]] as you would to the registrar.
+
+::: solution
+"Mrs Adeyemi is a 58-year-old woman with one hour of central chest pain. It came on while gardening, is heavy, radiates to her left arm and jaw, and is associated with sweating and nausea. It hasn't eased with rest. She's had similar exertional pain for three weeks that settled within minutes. It isn't pleuritic or tearing, and she has no symptoms of a PE. Background: type 2 diabetes on metformin, no known drug allergies, 25 pack-year smoker, father had an MI at 52. In summary, a 58-year-old with multiple risk factors and crescendo angina progressing to rest pain, so I'm concerned about an acute coronary syndrome. Her ECG is being done now. Could you review her with me?"
+
+The presentation takes under a minute, includes the relevant negatives, and ends with a specific request.
+:::
+:::
+
+The figure below treats a single history feature as a diagnostic test. Set the probability of disease before the question is asked and the feature's sensitivity and specificity, and see how many of 1,000 similar patients with the feature actually have the disease.
+
+::: widget bayes
+mode: test
+prevalence: 0.1
+sensitivity: 0.8
+specificity: 0.7
+caption: A history feature behaves like a test. The values are illustrative, not measured properties of any symptom; [[clinical-skills/clinical-reasoning]] explains the arithmetic.
 :::
 
 ::: quiz
-The best defence against premature closure while taking a history is:
-- [ ] Lengthening every consultation to thirty minutes
-- [ ] Taking the referral letter as the anchor question
-- [x] Pausing at decision points to ask 'what else could this be, and what must I not miss', then asking the patient what worries them
-- [ ] Ordering screening bloods to let the results decide
+A 30-year-old woman presents with a severe headache. Which single feature of the history most strongly calls for urgent investigation for subarachnoid haemorrhage?
+- [ ] The headache is throbbing.
+- [ ] She has had similar headaches with visual aura since her teens.
+- [x] The headache reached its maximum intensity within a minute of onset.
+- [ ] The headache is worse with bright light.
 ::: solution
-**Premature closure is a stopping error; its countermeasure is the forced re-opening of the differential at fixed points plus the patient's own hedge-catch - [[#def-hygiene]], [[clinical-skills/clinical-reasoning]].**
+A thunderclap onset, reaching maximum intensity within about a minute, is the key red flag for subarachnoid haemorrhage. Throbbing quality and photophobia occur in migraine and in subarachnoid haemorrhage, so they do not discriminate. A long history of the same headache with aura suggests migraine, provided this headache matches the usual pattern.
 :::
 :::
 
-::: widget plot
-f: 100*0.55+40*(1-exp(-x/3)); 12; 1; 1; 80
-x: 0, 10
-y: 0, 100
-labels: \text{consultation minutes (illustrative)},\ \text{percent}\ \text{relevant facts obtained with early agenda-setting};\ \text{facts obtained without structure (scaled)};\ \text{red-flag capture when prompts are on screen (scaled)};\ \text{patient-hidden concerns disclosed (scaled)}
-caption: Structure does not consume consultation time; it harvests it ([[#def-structure]], [[#def-hygiene]]).
+::: history
+Taking and recording a history is as old as clinical medicine. The Hippocratic *Epidemics* record individual patients day by day, and the physician Rufus of Ephesus (around 100 CE) wrote a short treatise, *Medical Questions*, arguing that questioning the patient reveals what examination cannot. In the nineteenth and early twentieth centuries the structured case history became the core of bedside teaching, most famously in **William Osler**'s clinical clerkship at Johns Hopkins, where students took and presented histories on their own patients. In 1975 **John Hampton** and colleagues measured what the history contributes, showing that it led to the final diagnosis in most new medical outpatients, a finding repeated by later studies.
 :::
 
 ## Where this leads
 
-The reasoning built on the history is in [[clinical-skills/clinical-reasoning]], the examination it triggers in [[clinical-skills/physical-examination]], the tests it should and should not order in [[clinical-skills/laboratory-tests]], the paediatric and safeguarding history in [[paediatrics/safeguarding]], the geriatric assessment in [[geriatrics-palliative/ageing-frailty]], and the psychiatric addendum in [[psychiatry/psychiatric-assessment]].
-
-::: history
-**History-taking's formal canon is surprisingly short given its primacy: Hippocrates' Aphorisms already prescribe the questions - what he suffered, when, how, with what - and the bedside interrogation of the laennec-and-Stockholm clinics of the nineteenth century added the systematic physical examination to it. The great turn of the twentieth century was that the history lost ground to the machine: the laboratory and imaging revolutions of the 1900s-1960s made the anamnesis look pre-scientific precisely when hospitals were building the investigation departments, and the classic teaching papers of the 1970s-1980s (Peterson's 1965 and the 1982 Sandler and Schwartzenberg chart analyses, and the often-cited finding that history alone yielded the diagnosis in about a third to a half of encounters, examination and tests trailing) read like a defence memorandum. The cognitive science of the same decades wrote the next chapter: de Dombal's computer-assisted diagnosis of abdominal pain in the 1960s-70s proved that structured histories and simple probability could outperform unaided pattern recognition for abdominal pain, an early triumph of evidence-structure over clinical vibes; Elstein and the problem-solving laboratories of Case Western and then Pat Croskerry's cognitive-evolutionary account of dual-process thinking (intuitive system-1 versus analytic system-2, 1998-2000s) supplied the vocabulary for the errors (the premature closure, availability and framing biases of Kahneman and Tversky transplanted to diagnosis); and the Red Book and Symptom-Dictionary and NICE symptom-triage guidelines of the 2000s-2010s finally codified what was taught: red-flag lists with sensitivity and specificity numbers attached, the two-week-wait criteria being history questions with legal force. The evidence for individual questions matured into a specialty - the JAMA Users' Guides to the Medical Literature series from 1993 and the McGee's Simplified Clinical Evidence lineage graded the classics (the likelihood ratios for postural symptoms in GERD and the calf findings in DVT), and the Rational Clinical Examination syntheses from JAMA made the bedside quantitatively respectable again. The modern threat is the one the communication chapter named: the electronic record's pull, with studies of the 'data entry during the interview' era showing patients' narratives truncated and findings missed, and the countermovement of 'show the screen' and narrative-again experiments. The atypical-presentation literature - the women-and-heart-disease studies from the 1980s-90s (the Annals and JAMA series documenting sex differences in presentation and treatment), the diabetic-neuropathy and older-adult delirium-mustang data - corrected another century of male-textbook symptom lists and now sits in every chest-pain guideline. Its unglamorous conclusion is the one this chapter keeps repeating: the history remains the most sensitive test for most diagnoses and the only one that captures the two facts that most often change management - what the patient noticed first, and what they were afraid of.** - [[clinical-skills/clinical-reasoning]], [[clinical-skills/physical-examination]], [[public-health/screening]].**
-:::
+The history generates the hypotheses that the examination tests ([[clinical-skills/physical-examination]]) and that investigations confirm or refute ([[clinical-skills/clinical-reasoning]], [[clinical-skills/laboratory-tests]]). Specialty histories, such as the psychiatric history and mental state examination ([[psychiatry/psychiatric-assessment]]), build on the same structure.
 
 ::: summary
-- The history is structure plus judgement: own-words opening, tailored symptom analysis, reconstructed (not transcribed) drug history, and the closing questions - what else worries you - that catch the hidden agenda.
-- Symptom analyses are decision trees: chest pain, breathlessness, collapse, confusion, bleeding and weight loss each have named discriminating questions and red flags whose purpose is referral timing, not completeness.
-- Atypical presentations are rules by population - older people, women, diabetics, the immunosuppressed, pregnancy - and 'it can't be X because the patient doesn't fit the textbook' is the classic anchor of a missed diagnosis.
-- The commonest history errors are cognitive: premature closure, anchoring to the referral, suggestibility from leading questions, and patients' silence about shame; the counters are forced re-opens ('what else, what must I not miss'), neutral wording, and private non-judgemental questions.
-- Children, older people, the cognitively impaired and the acutely ill each need rewritten technique: developmental chronologies, functional and frailty histories, informant accounts, and scripted fifteen-minute resuscitation histories.
-- Document as evidence of the reasoning, including the questions you ruled out and why; the coroners and the reviews read the first note, and the patient's correction is the most under-used diagnostic data point in medicine.
+- The history usually provides most of the information needed for a diagnosis; tests are most useful once it has defined the question.
+- The standard structure is PC, HPC, PMH, DH with allergies, FH, SH and systems review, alongside the patient's ideas, concerns and expectations.
+- Establish the time course of every symptom; use SOCRATES for pain; record relevant negatives and check for presentation-specific red flags.
+- Record allergies with the nature of the reaction, and distinguish allergy from intolerance.
+- Quantify smoking in pack-years and alcohol in units (14 units a week is the UK low-risk guideline).
+- Experts take hypothesis-driven, focused histories and deliberately check for dangerous diagnoses that must not be missed.
+- Use collateral histories when the patient cannot give a reliable account; adapt the history for older people, children and sensitive topics.
+- Present concisely: one-line opening, HPC with relevant negatives, relevant background, summary with differential, and a plan or question.
 :::
 
 ## Exercises
 
-::: exercise Analyse the symptom {level=1}
-A 26-year-old student presents with two weeks of palpitations and weight loss despite eating. List the six discriminating history questions and what each separates.
+::: exercise Pack-years {level=1 check="22.5"}
+A woman smoked 15 cigarettes a day for 30 years and then stopped. How many pack-years is that? Give the exact value.
 ::: solution
-**Six-questions-with-jobs ([[#def-presentations]]): the palpitation's own story - 'sudden start-stop (the SVT's switch) versus gradual accelerate-and-settle (sinus and panic) - 'the pattern and triggers (postural and the POTS and dehydration picture; the alcohol and caffeine and energy-drink load; the 'regular-irregular' of AF-in-the-young - thyroid and stimulants and the WPW history of 'racing after adrenaline'); the hyperthyroid screen - 'heat intolerance, tremor, bowel frequency, sleep, hair and the women's menstrual question (the oligomenorrhoea that says end organ is feeling it); the anxiety differential done fairly - 'the 'first-episode-never-assume'-rule: panic is a diagnosis with a red flag list (the weight loss disqualifies it as a default here); the drugs-and-supplements inventory - 'the decongestants and the bodybuilding and 'slimming' supplements (the thyrotoxicosis factitia the case reports keep publishing); and the family and autoimmune questions - 'the family thyroid and sudden-death history, the postpartum context and the type 1 diabetes and vitiligo cluster that points to the autoimmune thyroid; and the closing net - 'the fever-and-night-sweats lymphoma question and the carcinoid and phaeochromocytoma rare-birds asked once so the clinician can move on - with the disposition: this history is a TFT-and-an-ECG history, not a reassurance history.'**
+$\dfrac{15}{20} \times 30 = 0.75 \times 30 = 22.5$ pack-years. Stopping does not reduce the pack-year count, though her risk falls over time after stopping.
 :::
 :::
 
-::: exercise Take the collapse history {level=2}
-A 19-year-old fainted at a football match; witnesses say he 'went stiff for a few seconds'; ECG in the ED is normal; he wants to play Saturday. Take and appraise the history in writing: the questions, the red ones, and the decision.
+::: exercise Units in a bottle {level=1 check="9.75"}
+How many UK units of alcohol are in a 750 mL bottle of wine at 13% ABV? Give the exact value.
 ::: solution
-**Syncope-in-the-young-athletic-candidate ([[#def-presentations]], [[cardiovascular/arrhythmias]], [[cardiovascular/valve-congenital-disease]]): the questions in order - 'the three witnesses' facts (before: position, provocation, exertion or its aftermath; during: color, jerks, duration, recovery; after: confusion, injury, palpitation that outlived the event) because the 'went stiff' is a myoclonic-convulsion-of-syncope decoy and the recovery quality separates the seizure; the cardiac red set - 'exertional syncope during (not after) the match, the family history of sudden death under 50 or drowning or unexplained motor collisions (the channelopathy and cardiomyopathy pedigrees), the palpitation before blackout, the wheeze-and-swim history, and the stimulants and supplements; the reflex context done fairly - 'the vasovagal picture (prolonged standing, heat, crowd, the nausea-and-tunnel-vision prodrome) genuinely fits most cases like this, but 'most' is a probability, not a discharge for an athlete; and the decision - 'the normal resting ECG lowers but does not clear the risk (the Brugada and long-QT and HCM findings can be subtle, and the ED ECG is not the cardiologist's read): sports return needs the pattern - the exertional features and the family history either absent and documented or escalating to cardiology with exercise testing and possibly the monitoring and the genetic opinion, and the 'when in doubt for the athlete, the doubt gets investigated' rule the sports-cardiology guidelines repeat because the second faint is the one on the evening news.'**
+$\dfrac{750 \times 13}{1000} = 9.75$ units. Two such bottles a week (19.5 units) already exceed the 14-unit low-risk guideline.
 :::
 :::
 
-::: exercise Write the red flags {level=2}
-Draft the red-flag section of a lower-back-pain patient leaflet and its clinical mirror for GPs, and state the one evidence caveat the leaflet must carry.
+::: exercise Allergy or intolerance {level=1}
+Classify each reported reaction and say how you would record it: (a) "codeine makes me constipated"; (b) "I came out in hives and my tongue swelled after amoxicillin"; (c) "metformin gave me diarrhoea for a few weeks".
 ::: solution
-**Red flags with honesty ([[#def-presentations]], [[musculoskeletal/back-pain]]): the malignant-and-neurological list - 'the cancer history, unexplained weight loss, the night pain that does not change with position, the age extremes with new-onset back pain, and the progressive neurological deficit; the cauda-equina emergency set (saddle numbness, urinary retention or overflow with the post-void residual implication, faecal incontinence, bilateral leg symptoms) said in words a frightened person can act on: 'if you cannot pass urine or cannot feel where you are wiping, go to the emergency department now, not tomorrow'; the infection and fracture context (the fever with the IV-drug-and-immunosuppression and recent-infection history, the steroid and osteoporosis risk, the significant trauma and the non-resolving pain); and the caveat the evidence demands - 'the flags are specific but insensitive: serious pathology is rare, most flagged patients do not have it, and the leaflet must say that plainly ('these symptoms are uncommon but important; your back pain is almost certainly not one of them') because a red-flag list without a base rate manufactures the anxious consultation the next chapter inherits, and because the studies of low-back guidelines keep finding that over-investigation harms - the incidental findings cascade - is itself a patient-safety issue.'**
+(a) Intolerance (a predictable side effect of opioids); record as "codeine: constipation (intolerance)". (b) Allergy (urticaria and angio-oedema are immune-mediated features); record the drug, the reaction, the date and treatment, and treat as a penicillin allergy unless formally assessed. (c) Intolerance (common gastrointestinal side effect, often dose-related); record as such. Recording these accurately prevents unnecessary avoidance of useful drugs while protecting against genuine allergy.
 :::
 :::
 
-::: exercise Interview with an informant {level=2}
-An 82-year-old is brought by her daughter with 'three bad months' - falls, 'not herself', burnt pans. The patient says 'I'm fine, she exaggerates'. Write the two-track history: what you ask whom, and what you document.
+::: exercise Which questions discriminate? {level=2}
+A 70-year-old man has had breathlessness for three months. The leading hypotheses are heart failure and COPD. List four questions that would help discriminate between them and explain how each answer would shift your thinking.
 ::: solution
-**The-dual-history ([[#def-hygiene]], [[geriatrics-palliative/delirium-dementia-care]], [[geriatrics-palliative/falls]]): the frame first - 'tell both women, in the room, that you will see them together and separately because that is standard for everyone over here (the dignity-preserving universal framing), then: with the daughter (with consent addressed openly) - 'the timeline in months, the function inventory (medication management, money, cooking, driving, continence, sleep, mood, appetite, the 'not herself' decoded - is it words, is it wandering, is it apathy?), the hallucinations and fluctuations that separate the dementias, the drugs list photographed off the actual boxes, and the what-matters-to-you sentence that the next twelve months depends on; with the patient alone - 'the oriented-in-time-and-place opening that tests without interrogating, the depression screen ('have you lost interest... does anything matter?') because pseudodementia is treatable and this presentation is its classic costume, the 'who helps you, do you feel safe' safeguarding questions, and the hearing-and-vision check that reverses more 'confusion' than any scan; the document - 'the informant account attributed, the patient's own words kept verbatim, the MMSE-or-AMT-and-the-physical-and-urine-and-drug-and-thyroid-and-B12 plan justified by the differential you wrote, the capacity questions flagged for which specific decisions (driving, living alone, finances - capacity is decision-specific, not a label), and the follow-up with the memory-service and the social-care referral started today; and the sentence that keeps the alliance: 'you are both right that something has changed - now let's find out what.'**
-:::
-:::
-::: example The headache with no history {#ex-headache}
-A 39-year-old arrives with 'the worst headache of my life', abrupt onset six hours ago; the triage note reads 'migraine, as previous'; she is given sumatriptan in the corridor and waits. Nobody has asked about the onset or the neck or the drugs she takes.
-::: solution
-**The-narrative-the-checklist-ate ([[#def-structure]], [[#def-hygiene]], [[nervous-system/headache-pain]]): the questions that were owed - 'the apocryphal-but-true thunderclap question ('did it build over minutes or hit maximum in seconds?' - the SAH and the angiitis and the pituitary-apoplexy and the cervicogenic-crash differentials live in that answer), the positional and Valsalva modifiers, the neck and eye and jaw symptoms, the drugs (the vasoconstrictors, the hormonal, the PDE-inhibitors, the 'how many analgesics a week' that diagnoses the medication-overuse headache the corridor triage missed), the past headache history as a comparison not a verdict ('is this the same as your migraines?' answered 'no' is a referral, whatever the old notes said), and the 'worst headache of my life' phrase treated as an alarm token, not poetry; the medicine - 'six hours changes the workup arithmetic: CT sensitivity for SAH falls with time and the LP-era rules about xanthochromia windows and the 'the-CT-angiography-first' modern pathways make the clock part of the history, so the documented onset time is a clinical asset; the systems fix - 'the 'patients-labelled-by-their-last-visit' problem (the anchoring the clinical-reasoning chapter counts by name) and the corridor-triage culture in which the diagnosis is made by whoever writes first; and the lesson for every junior: the referral letter's diagnosis is a hypothesis with a stamp on it, and 'as previous' is the most dangerous two words in emergency documentation.'**
+(1) "Do you get breathless lying flat, or wake up at night gasping?" Orthopnoea and paroxysmal nocturnal dyspnoea favour heart failure. (2) "Have you noticed swelling of your ankles?" Ankle oedema favours heart failure, although it has other causes. (3) "Have you ever smoked, and how much? Do you cough up phlegm most days?" A heavy smoking history with chronic productive cough favours COPD. (4) "Have you had a heart attack, high blood pressure or heart-valve problems?" Previous ischaemic heart disease raises the probability of heart failure. Neither condition excludes the other: both are common in older smokers and often coexist, so the history guides tests such as natriuretic peptide, ECG, echocardiography and spirometry.
 :::
 :::
 
-::: example The breathless patient and the missing third of the history {#ex-breathless}
-A 68-year-old man is referred for 'copd exacerbation, smoker'; his inhalers have changed twice this year; the admitting clinician finds a four-month history of night sweats, a 6-kg weight loss and a migratory joint pain nobody connected, and a farming phase in his thirties never written down.
+::: exercise A back-pain red flag screen {level=2}
+A 43-year-old man has had low back pain for three days after lifting. Write the questions you would ask to screen for cauda equina syndrome and for serious spinal pathology, and say what you would do if he reports new difficulty passing urine.
 ::: solution
-**Occupational-and-constitutional-history-as-missing-medicine ([[#def-structure]], [[respiratory/interstitial-vascular-disease]], [[respiratory/respiratory-infections]]): the sections that were skipped - 'the occupational and exposure chronology (the farming and the birds and the molds and the metals and the wood dust, with the latency question - 'who did you work with, in what building, doing what, when' - because hypersensitivity pneumonitis and the pneumoconioses and the uncommon infections live in the decades nobody asks about) and the systems review that the 'wheeze' template crowded out (the night sweats and weight loss - tuberculosis and lymphoma and the vasculitides; the migratory arthropathy - the sarcoidosis and endocarditis and malignancy mimics that turn a chest story rheumatological); the cognitive reading - 'this is label persistence plus premature closure in their natural habitat: an entered diagnosis recruits every future finding (the 'copd' that explains the creps as 'creps of smoking'), and the twice-changed-inhalers sentence in the record was the system's own error flag; the correction - 'the proper re-interview with the exposure calendar and the constitutional sweep, the imaging reconsidered against the new history (the pattern that was read as emphysema in a distribution that says otherwise), and the differentials worked in order (the mycobacterial cultures, the ACE-and-calcium and the autoimmune and the cardiac re-look as the findings warrant) - with the referral back to the referrer, copied, because re-naming a diagnosis is a communication act; and the habit this case buys - 'the 'occupation is a vital sign' teaching: ask the working life in every respiratory, joint and constitutional presentation, at every age; the exposure is often the aetiology, and the aetiology changes everything the inhalers were doing instead.'**
+Cauda equina: "Is the pain going down both legs?", "Any numbness around your bottom or genitals, for example when wiping?", "Any change in passing urine, such as difficulty starting, poor stream, or not being aware when your bladder is full?", "Any loss of bowel control?", "Any change in sexual function?" Serious pathology: history of cancer, fever or feeling unwell, immunosuppression or injecting drug use, unexplained weight loss, night pain that is unremitting, thoracic pain, significant trauma. New urinary difficulty in this setting is a red flag for cauda equina syndrome: he needs urgent same-day assessment and emergency MRI following local pathways, because outcomes depend on the speed of decompression.
 :::
 :::
 
-::: exercise Screen without alarm {level=2}
-Write the 'sensitive questions' script for a young-woman's-attendance template: alcohol, drugs, sexual history including consent-assault framing, and self-harm - each with its normalising preamble and its documentation rule.
+::: exercise Units over a week {level=2 check="round(7*(330*4.5/1000)*3 + 2*(25*40/1000))"}
+A man drinks three 330 mL bottles of 4.5% beer every day and two 25 mL measures of 40% spirit once a week. Calculate his weekly intake in units, rounded to the nearest whole unit.
 ::: solution
-**Normalised-and-confidential ([[#def-hygiene]], [[psychiatry/self-harm-suicide-prevention]], [[obstetrics-gynaecology/menstrual-pelvic-disorders]]): the preamble that works for all of them - 'I ask everyone these questions because they affect health and I'd rather know than guess; nothing you say changes how we treat you, and I'll tell you what I must pass on'; the items: alcohol as units and pattern with the AUDIT-C opening ('how many days a week do you drink; how many drinks on a day'), recreational drugs with the non-judgemental enumeration ('some patients use cannabis or cocaine or...; do any of these fit you?'), the sexual history with the orientation-neutral and behaviour-then-partner structure and the assault question asked when the patient is alone and, for the chlamydia-and-PID-and-bleeding presentations, asked at all ('have you ever been in a situation where sex happened that you did not choose or could not refuse?'), and the self-harm and mood questions with the 'many people find themselves...' framing; the documentation rules - 'verbatim where safety turns on it, no moralising adjectives (the 'drug-seeker' and 'attention-seeking' labels are now professionally sanctionable in many systems and they poison the next clinician's judgement), the safeguarding-and-capacity flags raised through their routes not buried in free text, and the confidentiality-boundaries sentence recorded with what was agreed (the 'what I will have to share and why' that keeps trust honest); and the closing check - 'the 'anything else you meant to mention' question and the offer to re-ask anything, because the literature on disclosure shows the second ask doubles the yield and the third tells the patient you are serious.'**
+One bottle of beer: $\dfrac{330 \times 4.5}{1000} = 1.485$ units. Three a day for 7 days: $21 \times 1.485 = 31.185$ units. One measure of spirit: $\dfrac{25 \times 40}{1000} = 1$ unit, so two measures add 2 units. Total $= 33.185$, which rounds to **33 units** a week, more than twice the low-risk guideline.
 :::
 :::
 
-::: exercise Correct a diagnosis {level=2}
-You inherit a 'depression with somatic symptoms' in a 55-year-old with six months of fatigue, 'brain fog' and diffuse pain; the antidepressant has done nothing; you notice on re-reading the original history that the pain is proximal-shoulder-and-hip with 90-minute morning stiffness, and the ESR was 62, unremarked. Manage the re-diagnosis: the reasoning, the conversation, and the record.
+::: exercise A collapse {level=3}
+A 19-year-old woman collapsed in a queue at a concert. She now feels well. Her friend saw the event. List the collateral history questions you would ask, and explain which answers would suggest vasovagal syncope, cardiac syncope or an epileptic seizure.
 ::: solution
-**The-re-ask-is-a-clinical-act ([[#def-hygiene]], [[musculoskeletal/inflammatory-arthritis]], [[clinical-skills/clinical-reasoning]]): the reasoning - 'the proximal distribution and the prolonged morning stiffness and the age and the acute-phase response are a different disease (polymyalgia rheumatica, with the giant-cell-arteritis questions now mandatory: jaw claudication, scalp tenderness, visual symptoms, the fever-and-weight-loss constitutional overlay) and the 'treatment-resistant depression' framing was label persistence with an iatrogenic tail; the correction mechanics - 'the repeat history with the new hypothesis in mind (systematic GCA screening, the examination of the temporal and axillary arteries, the FBC-and-PNF-and-urinalysis re-check for the other mimics - the myeloma and hypothyroid and myositis and malignancy that hide in 'fatigue'), the inflammatory markers re-run and the ultrasound-or-clinical-diagnosis pathway per current guidance, and the steroid decision and its taper documented as a diagnostic test with its response recorded; the conversation - 'the apology done properly ('we should have looked again - this is a different illness and it has a name and a treatment'), the explicit re-label ('you do not have depression as the explanation; you were not imagining it, and here is what was going on') because the harm of a wrong psychiatric label is both physical and biographical, and the GP informed the same day with the correction copied to the patient under the record-access culture; and the learning loop - 'the 'significant-event' entry not as blame but as data (the 'untreated-ESR and the 'never-let-a-psychiatric-label-close-a-medical-history'-teaching-point at the next practice meeting), and the personal habit it installs: treatment failure is a symptom, and the file you inherit was written by someone who did not have the six months you just got.'**
+Ask the friend: what she was doing just before (standing for a long time, hot environment, pain, emotion favour vasovagal); whether she complained of feeling hot, sweaty, nauseated or of her vision going grey (prodrome of vasovagal syncope); whether the collapse happened during exercise or without warning while lying or sitting (concerning for cardiac syncope, as is a family history of sudden death); her colour (pale suggests syncope); any jerking, and how long it lasted (brief jerks are common in syncope; prolonged rhythmic jerking suggests a seizure); whether her eyes were open; whether she bit the side of her tongue or was incontinent (lateral tongue biting favours a seizure); how long she was unresponsive; and how she was afterwards (prompt recovery suggests syncope; prolonged confusion suggests a seizure). Any red flag for cardiac syncope needs an ECG and further assessment.
 :::
 :::
 
-::: exercise Take the resus history {level=3}
-A 76-year-old arrives from a care home unconscious; no collateral present; the e-prescription is unavailable. In twenty minutes you need the SAMPLE-scale history, the dignity-preserving bedside sweep, and the plan. Write it as the note you would actually leave.
+::: exercise Rebuild a poor history {level=3}
+A clerking reads: "Abdo pain. Vomiting. PMH nil. NKDA. Plan: bloods, review." Identify what is missing and write the questions needed to make it a useful history for a 24-year-old woman.
 ::: solution
-**The-time-limited-complete ([[#def-hygiene]], [[emergency-critical-care/acute-assessment]], [[geriatrics-palliative/polypharmacy]]): the twenty-minute structure - 'S: surgical history from the home's discharge letter in the bag that always travels; A: allergies from the MAR chart photograph; M: medications - the drug-round box at the bedside opened and read (the 'new amoxicillin started yesterday and the doubled-night-sedative' that the missing prescription was hiding), plus the 'what does she take at night' question to the carer by phone; P: last oral intake and the diabetic-drug question (the metformin-with AKI and the sulfonylurea-with skipped meal as the two reversible causes that kill care-home patients); L: events - the home's 'change since Tuesday' note, the falls diary, the 'she had her hands up' behavioural snippet that is aspiration or seizure or delirium; E: - the advance care planning document sought immediately (the 'the ceiling that exists somewhere must not be invented at the bedside) and the next-of-kin hunt through the home's emergency list; the bedside sweep done with dignity - 'the 'look-here-feel-there sequence with the sheet kept and the gown opened once not thrice, the neck and sacrum and calves and the pressure-area check the chart will need anyway, the glucose at minute one and the naloxone-and-thiamine-and-dextrose reflexes decided on the spot, the sepsis screen and the ECG as the numbers arrive; and the note as written - 'the time-stamped summary, the sources of history named (chart, carer phone call, bag) with what remains unknown listed explicitly, the working differentials with their immediate tests, the escalation ceiling status stated ('no document located; discussions commenced with daughter at 21:40'), and the review time - because the unconscious patient's history is a living document and the first entry's honesty about its own gaps is what the night's second doctor will thank or curse.'**
+Missing: the time course and SOCRATES of the pain (site, onset, character, radiation, associated features, timing, aggravating and relieving factors, severity); details of vomiting (frequency, content, blood, bile); bowel habit and flatus; urinary symptoms; fever; **last menstrual period, possibility of pregnancy, contraception, vaginal bleeding or discharge** (ectopic pregnancy and pelvic inflammatory disease must be considered); previous surgery; a real drug history (including the contraceptive pill and any analgesia taken); social history; and the patient's concerns. "PMH nil" and "NKDA" should be confirmed by direct questions. The plan should state an assessment (a differential) and specific tests, including a pregnancy test.
 :::
 :::
-::: exercise Use the patient's correction {level=2}
-At the end of a history for abdominal pain you summarise: 'constant pain, no bowel changes, no urinary symptoms'. The patient hesitates: 'well... you're sure it's not my kidney?' Explore what a correction is, how to mine it, and when it outranks your findings.
-::: solution
-**Corrections-as-data ([[#def-hygiene]], [[#def-structure]], [[clinical-skills/clinical-reasoning]]): the theory - 'the patient's correction of your summary is the cheapest diagnostic test available and the most routinely waved away; it encodes either an unprompted symptom (the flank-to-groin migration you missed), an illness representation worth treating on its own merits (the previous stone, the family memory, the internet's contribution), or a hidden fear that will govern adherence; the mining - 'stop the summary, sit back: 'say more about the kidney'; the follow-ups separate the stone history (the colic's character, the haematuria asked properly, the prior passes patients omit because they were 'years ago and not doctored'), the UTI-in-women context, and the fear-based reading (the mother who died of renal failure, which is treatable information about the consultation but not the abdomen); when it outranks findings - 'never the other way round and always with suspicion both directions: a microscopic haematuria in a 50-year-old smoker with 'indigestion' is the urological two-week-wait the patient's wrong-looking hunch just found, and the rule is that the correction re-opens the differential whenever the test it suggests is cheap and the disease is nasty; and the documentation habit - 'record the correction and its resolution, both because the next clinician inherits the re-opened question and because patients who are heard correct the record - the adherence literature's quiet finding that being believed is itself an intervention.'**
-:::
-:::
-

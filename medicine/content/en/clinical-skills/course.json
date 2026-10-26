@@ -6,11 +6,11 @@
   "level": 2,
   "order": 100,
   "tagline": "Communication, history taking, physical examination, clinical reasoning and interpreting tests",
-  "summary": "Diagnosis starts with talking to and examining the patient. This course covers communication and history taking, physical examination, clinical reasoning and differential diagnosis, the interpretation of laboratory tests and medical imaging, records and handover, and patient safety.",
+  "summary": "Diagnosis starts with talking to and examining the patient. This course covers communication and history taking, physical examination, clinical reasoning, the interpretation of laboratory tests and medical imaging, records and handover, and patient safety.",
   "overview": [
-    "Medicine is practised through conversations, examinations, results and notes. A diagnosis is usually made in the first ten minutes of a history; a deterioration is usually survived or missed in the first ten; and most serious harm in modern hospitals traces, on analysis, to a communication failure rather than unknown science. This course treats those skills — talking, examining, reasoning, investigating, recording and handing over — as teachable, testable and as important as any basic science.",
-    "It starts with communication: explaining, listening, breaking bad news, taking a history that is both humane and diagnostic. It then moves to the physical examination, taught system by system with the same discipline: inspect, palpate, percuss, auscultate, and know what each sign's sensitivity and specificity actually are. Clinical reasoning comes next — how hypotheses form, how Bayes' theorem lies behind every test request, and how cognitive biases derail good data. Laboratory and imaging chapters explain how to choose and read investigations: full blood count and chemistry, blood gases, urinalysis, inflammatory markers, the plain radiograph, CT, MRI, ultrasound, and when imaging harms.",
-    "The final chapters cover the infrastructure of safe practice: records and handover, and patient safety — error taxonomies, human factors, incident reporting, checklists and just culture. Every chapter uses worked examples, common pitfalls and quick checks, because these skills are learned by being practised against explicit standards and feedback, not absorbed by osmosis on a ward round."
+    "Medicine is practised through conversations, examinations, test results and notes. The history usually suggests the diagnosis, the examination tests it, and investigations confirm or refute it. When care goes wrong, the cause is often a failure of communication or of a system rather than a gap in scientific knowledge. This course treats the core clinical skills as subjects that can be taught, practised and assessed like any basic science.",
+    "It begins with communication: the structure of the consultation, listening and explaining, shared decisions, talking about risk and difficult conversations. It then covers the medical history and the physical examination, including vital signs and NEWS2, the main body systems and the accuracy of physical signs. The chapter on clinical reasoning explains how hypotheses are generated and tested, how Bayes' theorem and likelihood ratios underlie every test request, and how cognitive biases lead to diagnostic error. Two chapters then show how to choose and interpret laboratory tests, blood gases and imaging.",
+    "The final chapters cover the infrastructure of safe care: good records, medicines reconciliation, structured handover and escalation, and teamwork; and patient safety, including human factors, the Swiss cheese model, checklists, incident reporting, a just culture, the duty of candour and quality improvement. Every chapter has worked clinical examples, common pitfalls, quick checks and exercises with full answers. The content follows UK practice and guidance (NICE, the Royal College of Physicians, the GMC and NHS England) and notes where international guidance applies; it is educational and not a substitute for local guidelines."
   ],
   "prerequisites": [
     "anatomy",
@@ -18,14 +18,14 @@
     "pathology"
   ],
   "outcomes": [
-    "Structure a full medical history and communicate with patients across common challenging situations — explaining, eliciting the agenda, breaking bad news and exploring concordance.",
-    "Perform and present a systematic examination of each major system, and interpret the cardinal signs, stating what each sign does and does not exclude.",
-    "Apply models of clinical reasoning — hypothesis-driven and Bayes-based — and recognise the cognitive biases (anchoring, premature closure, availability) that produce diagnostic error.",
-    "Choose, perform and interpret core laboratory tests and blood gases, and understand reference ranges, predictive values and cause-and-effect of common derangements.",
-    "Interpret basic imaging: chest and abdominal radiographs, CT appearances of common emergencies, ultrasound indications and limitations, and MRI contrast principles.",
-    "Write problem-based notes and structured handovers (SBAR-style), and use tools such as problem lists and medication reconciliation to prevent information loss.",
-    "Describe the human-factors basis of patient safety, the main contributors to harm in hospitals, and countermeasures: checklists, reporting systems, escalation culture and formulary safeguards.",
-    "Practise giving and receiving constructive feedback and presenting a concise, accurate summary of a patient to a senior colleague."
+    "Structure a consultation using the Calgary–Cambridge guide, explore the patient's ideas, concerns and expectations, explain using chunk-and-check and teach-back, and break bad news using SPIKES.",
+    "Take and present a complete or focused medical history, including a drug history with allergies, pack-years, alcohol units and presentation-specific red flags.",
+    "Perform a systematic examination of the main body systems, calculate NEWS2 and the GCS, and interpret the classic signs while stating what each sign can and cannot exclude.",
+    "Apply Bayes' theorem with likelihood ratios, test and treatment thresholds and clinical prediction rules such as the Wells score, and recognise the cognitive biases that cause diagnostic error.",
+    "Interpret reference intervals, predictive values and common blood tests, recognise pre-analytical errors, and read an arterial blood gas including compensation and the anion gap.",
+    "Explain how X-ray, CT, ultrasound, MRI and nuclear medicine work, read a chest X-ray systematically, and weigh radiation dose, contrast risks and MRI safety when choosing a test.",
+    "Write problem-based records, reconcile medicines, hand over using SBAR and I-PASS, and communicate effectively in a clinical team.",
+    "Describe the human-factors view of error, distinguish strong from weak safety interventions, and outline incident reporting, just culture, the duty of candour and PDSA-based quality improvement."
   ],
   "chapters": [
     {
@@ -97,91 +97,144 @@
     {
       "year": -400,
       "title": "The bedside as method",
-      "detail": "The Hippocratic writings put observation and the recorded history at the centre of medicine: the epidemic notebooks describe individual cases with their course, and the physician's own demeanour and speech at the bedside are treated as part of the treatment.",
+      "detail": "The Hippocratic writings put observation and the recorded case at the centre of medicine. The Epidemics describe individual patients day by day, and other texts advise on the physician's conduct and speech at the bedside.",
       "people": [
         "Hippocrates of Kos"
       ]
     },
     {
+      "year": 1761,
+      "title": "Percussion",
+      "detail": "Leopold Auenbrugger publishes Inventum Novum, describing percussion of the chest to detect fluid and solid lung. The method is ignored until Corvisart promotes it in Paris around 1808.",
+      "people": [
+        "Leopold Auenbrugger",
+        "Jean-Nicolas Corvisart"
+      ]
+    },
+    {
       "year": 1816,
-      "title": "Indirect listening",
-      "detail": "Laennec's cylinder of rolled paper becomes the monaural stethoscope, and with it the idea that external signs — sounds, murmurs, rubs — stand in lawful relation to internal disease, so that the living patient can be examined as carefully as a cadaver.",
+      "title": "The stethoscope",
+      "detail": "René Laennec rolls paper into a tube to listen to a patient's heart, develops the wooden monaural stethoscope, and in 1819 publishes De l'auscultation médiate, relating sounds heard in life to findings after death.",
       "people": [
         "René Laennec"
       ]
     },
     {
-      "year": 1892,
-      "title": "The clinical method taught",
-      "detail": "William Osler's textbook and, more influentially, his bedside clinic at the new Johns Hopkins Hospital make the graded, presented case the unit of clinical teaching — students learn by taking the history themselves under questioning that climbs from symptom to sign to diagnosis.",
+      "year": 1847,
+      "title": "Hand hygiene",
+      "detail": "In Vienna, Ignaz Semmelweis shows that maternal deaths from puerperal fever fall sharply when doctors wash their hands in chlorinated lime before examining women in labour.",
       "people": [
-        "William Osler"
+        "Ignaz Semmelweis"
       ]
     },
     {
-      "year": 1917,
-      "title": "The intelligence of the examination",
-      "detail": "Osler's tradition is formalised in the differential diagnosis: Joseph Yale Johnston's 'The Method in Medicine' argues that a disciplined examination, not the laboratory, remains the generator of hypotheses, a claim still worth testing against every normal blood test.",
+      "year": 1895,
+      "title": "X-rays",
+      "detail": "Wilhelm Conrad Röntgen discovers X-rays in Würzburg; within weeks radiographs are being used in medicine, beginning the age of imaging.",
       "people": [
-        "Joseph Yale Johnston"
+        "Wilhelm Conrad Röntgen"
       ]
     },
     {
       "year": 1957,
-      "title": "The doctor, his patient and the illness",
-      "detail": "Michael Balint's weekly seminar for GP principals, and the book that followed, put the relationship itself — the drug 'doctor', the patient who presents by symptom rather than disease — on the clinical curriculum, ancestor of today's Balint groups and communication teaching.",
+      "title": "The doctor as a drug",
+      "detail": "Michael Balint's book The Doctor, His Patient and the Illness, based on seminars with London general practitioners, argues that the doctor's own behaviour acts like a drug, and makes the consultation itself a subject of study.",
       "people": [
-        "Michael Balint",
-        "Enid Balint"
+        "Michael Balint"
       ]
     },
     {
-      "year": 2000,
-      "title": "To err is human",
-      "detail": "A report for the US Institute of Medicine reviews the evidence on preventable adverse events in hospitals and reframes error as a system property — latent conditions and active failures — shifting improvement from blaming individuals to redesigning processes.",
+      "year": 1968,
+      "title": "The problem-oriented record",
+      "detail": "Lawrence Weed publishes 'Medical records that guide and teach' in the New England Journal of Medicine, introducing the problem list and the structured progress note that became the SOAP format.",
       "people": [
-        "National Academies (Institute of Medicine)"
+        "Lawrence Weed"
       ]
     },
     {
-      "year": 2001,
-      "title": "Handover made structured",
-      "detail": "Adapted from aviation crew resource management and popularised by the Institute for Healthcare Improvement, SBAR (situation, background, assessment, recommendation) becomes the standard structure for clinical handover and escalation in hospitals worldwide.",
+      "year": 1971,
+      "title": "Computed tomography",
+      "detail": "The first clinical CT scan of a patient's head is performed in London on a scanner built by Godfrey Hounsfield at EMI; he shares the 1979 Nobel Prize with Allan Cormack.",
       "people": [
-        "Institute for Healthcare Improvement"
+        "Godfrey Hounsfield",
+        "Allan Cormack"
+      ]
+    },
+    {
+      "year": 1999,
+      "title": "To Err Is Human",
+      "detail": "The US Institute of Medicine report reviews the evidence on preventable adverse events in hospitals and argues that most errors arise from faulty systems rather than reckless individuals, launching the modern patient-safety movement.",
+      "people": [
+        "Institute of Medicine"
       ]
     },
     {
       "year": 2008,
-      "title": "The checklist",
-      "detail": "The World Health Organization's Surgical Safety Checklist, piloted in eight hospitals, reduces mortality and complications in a controlled before-and-after study; the lesson generalises: a short, structured, spoken confirmation at defined moments prevents omissions that memory alone will commit.",
+      "title": "The Surgical Safety Checklist",
+      "detail": "The World Health Organization launches its Surgical Safety Checklist. In a before-and-after study across eight hospitals, published in 2009, deaths fell from 1.5% to 0.8% and complications from 11.0% to 7.0%.",
       "people": [
         "World Health Organization",
+        "Atul Gawande",
         "Alex Haynes"
       ]
     }
   ],
   "references": [
     {
-      "title": "The Clinical Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the skill and the patient.",
-      "slug": "ref1"
+      "authors": "Anna R. Dover, J. Alastair Innes and Karen Fairhurst (eds)",
+      "year": 2023,
+      "title": "Macleod's Clinical Examination, 15th edition",
+      "note": "The standard UK text on history taking and examination of each system, with evidence notes on signs.",
+      "slug": "macleod"
     },
     {
-      "title": "The Clinical Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the skill and the system.",
-      "slug": "ref2"
+      "authors": "Steven McGee",
+      "year": 2021,
+      "title": "Evidence-Based Physical Diagnosis, 5th edition",
+      "note": "Sensitivity, specificity and likelihood ratios of physical signs, drawn from the research literature.",
+      "slug": "mcgee"
     },
     {
-      "title": "Clinical Clinical",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the patient and the practice.",
-      "slug": "ref3"
+      "authors": "Jonathan Silverman, Suzanne Kurtz and Juliet Draper",
+      "year": 2013,
+      "title": "Skills for Communicating with Patients, 3rd edition",
+      "note": "The evidence base and teaching of the Calgary–Cambridge guide to the consultation.",
+      "slug": "silverman"
+    },
+    {
+      "authors": "Ian B. Wilkinson, Tim Raine, Kate Wiles, Peter Hateley, Dearbhla Kelly and Iain McGurgan",
+      "year": 2024,
+      "title": "Oxford Handbook of Clinical Medicine, 11th edition",
+      "note": "A concise reference for clinical reasoning, investigations and acute medicine in UK practice.",
+      "slug": "ohcm"
+    },
+    {
+      "authors": "Charles Vincent",
+      "year": 2010,
+      "title": "Patient Safety, 2nd edition",
+      "note": "A comprehensive introduction to error, human factors, incident analysis and safety improvement in healthcare.",
+      "slug": "vincent"
+    },
+    {
+      "authors": "Royal College of Physicians",
+      "year": 2017,
+      "title": "National Early Warning Score (NEWS) 2: Standardising the assessment of acute-illness severity in the NHS",
+      "note": "The NEWS2 chart, scoring and recommended clinical responses used in this course.",
+      "slug": "news2"
+    },
+    {
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2021,
+      "title": "Shared decision making (NICE guideline NG197)",
+      "note": "Recommendations on embedding shared decision-making and communicating risk.",
+      "slug": "ng197"
+    },
+    {
+      "authors": "Alex B. Haynes and colleagues",
+      "year": 2009,
+      "title": "A surgical safety checklist to reduce morbidity and mortality in a global population (New England Journal of Medicine 360:491–499)",
+      "note": "The before-and-after study of the WHO Surgical Safety Checklist in eight hospitals.",
+      "slug": "haynes"
     }
   ],
   "next": [

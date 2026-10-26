@@ -1,141 +1,295 @@
-The clinical record is the patient's memory, the team's coordination system and the case's future defence rolled into one artefact - and the evidence shows it fails at every transition: the discharge summary nobody reads, the handover that drops the contingency plan, the template that copies yesterday's examination into today's note, the wrong-patient merge that prescribes to the wrong name. **This chapter covers the record itself (the legal and professional standards of good record-keeping - contemporaneous, attributable, clear, correctable with an audit trail - and the specific pathologies of electronic records: copy-paste medicine, clone notes, structured-versus-narrative trade-offs, and the alert-and-template environment that shapes what gets written), transitions as information events (handover, transfer, discharge summarisation with medication reconciliation, the referral and its question, and the death certificate at the end of life), and the information-governance layer (confidentiality's practical rules, data-sharing for care versus care-adjacent uses, informatics-safety hazards like wrong-patient registration and downtime procedures, and the patient's growing right to read what you wrote).**
+Modern healthcare is delivered by teams that change every few hours. A patient admitted to hospital may be seen by dozens of professionals in a week, many of whom will never meet each other. What links them is information: the written record and the spoken handover. When the information is clear, care continues safely across shifts and settings. When it is incomplete, ambiguous or lost, tests are missed, drugs are given twice or not at all, and deterioration goes unrecognised.
 
-## The record
+This chapter covers good record keeping, the problem-oriented record and structured notes, medicines reconciliation, confidentiality, handover and escalation using structured tools, discharge communication, and the teamwork skills that make information flow. It builds on [[clinical-skills/communication]] and [[clinical-skills/history-taking]], and leads into [[clinical-skills/patient-safety]].
 
-::: definition Standards, electronic pathologies and the audit trail {#def-record}
-**The professional floor: the regulator's record-keeping duties - contemporaneous, legible to the next reader, signed, dated and attributable, factual with opinions labelled as opinions, the patient's own words where they matter, corrections made as additions with reasons and never erasures, and the 'if it was not written it was not done' jurisprudence that makes the note the clinic's witness box; the medico-legal reality that records are read years later by coroners and claimant solicitors whose skill at finding the missing safety net exceeds the writer's at remembering why the plan was right. The electronic record changed the medium, not the duty, and added failure modes the informatics-safety literature now catalogues: the copy-paste and clone-note problem (the examination repeated forward for days - documented findings that were never re-made, the normal notes cloned into the deteriorating patient, and the institutional studies of note duplication running to majority-level rates); the template-versus-narrative trade-off (structured data enables registries and decision support and reliably produces the artefact of the template saying what the clinician did not think - the auto-filled plan the resident never read); the note-bloat and copy-forward cascade that buries the new finding under inherited prose; the attribution decay (who examined, who advised, who merely saw the patient on the list); and the correction-audit-trail ethic - addenda with dates and reasons, because the silent overwrite destroys both the legal and the learning record, and the system's own versioning makes deletion visible anyway. Documentation quality is measurable and trainable: the notes-audit instruments (presence-and-quality criteria for history, examination, plan, consent, capacity and safety-net sections), the 'would this note survive the coroner' teaching, the verb discipline ('I examined at 09:00' versus the passive 'abdomen soft' that hides who did what when), and the documented-reasoning movement (the differential and its exclusions recorded - the clinical-reasoning chapter's deliverable). The record's second audience is the data layer: registries, audit, research extracts and quality indicators all feed on what is typed where, which is why the structured-field discipline - maintained problem lists, de-labelled allergies with dates, escalation plans living in the computable field rather than a letter's prose - is public-health work at the keyboard; and why the 'documented in two places' problem (the paper ceiling form versus the electronic flag versus the nursing notes versus the ambulance scheme awaiting national infrastructure) remains one of several health systems' unfinished safety projects.**
+## The clinical record
+
+The clinical record serves several purposes at once:
+
+- **Continuity of care**: it tells the next clinician what has been found, decided and done.
+- **Communication**: between professions, teams, primary and secondary care, and with the patient, who has a right to see it.
+- **Safety**: prescriptions, allergies, escalation decisions and results all live in the record.
+- **Accountability and law**: it is evidence of what happened, used in complaints, investigations and court.
+- **Audit, research and planning**: coded records generate the data used to improve services.
+
+::: definition Principles of good record keeping {#def-records}
+A good clinical record is:
+
+- **Contemporaneous**: written at the time or as soon as possible afterwards, with the **date and time** of the events and of the entry if they differ.
+- **Attributable**: with the author's name, role, signature (or electronic login) and, for doctors, GMC number; the name of the senior clinician responsible.
+- **Clear and legible**: understandable to another professional and, increasingly, to the patient; avoiding abbreviations that are ambiguous.
+- **Accurate and factual**: recording what was observed, said and done, distinguishing findings from opinions, and including relevant negatives.
+- **Complete**: recording the assessment, the decisions made and the reasons for them, the information given to the patient and what they agreed to, the plan, and who is responsible for each action.
+- **Unaltered**: corrections are made by striking through the error with a single line (so it remains legible), dating, timing and signing the correction, or by an addendum in electronic records; entries are never deleted or overwritten.
 :::
 
-## The transitions
+The GMC's *Good Medical Practice* (2024) requires doctors to keep clear, accurate and legible records, made at the time or as soon as possible afterwards, and other professional regulators set equivalent standards. Writing for the patient as a reader is good discipline: since patients can access their records, avoid judgemental or stigmatising language ("refuses", "non-compliant", "alcoholic") and describe behaviour and facts instead ("declined the blood test after we discussed the reasons", "drinks about 40 units a week").
 
-::: definition Handover, transfer, discharge and referral {#def-transitions}
-**Handover is the record in motion: the communication chapter's tools apply, and the records addition is that what is said must match what is filed, because the drift between the two is where responsibilities hide. Transfer between units and hospitals is handover with legal weight: the inter-hospital minimum dataset (identifiers, chronology, current observations, drugs given, results available, the escalation ceiling, family contacts, and who is coming to collect) that retrieval-medicine studies find omitted from most paper referrals; the verbal handover to a receiving clinician of equivalent seniority; the 'images travel with the patient or the report travels' rule; and the network solutions - shared records, transfer passports, electronic medicines lists. Discharge summarisation is the most-studied failure and the most fixable: the summary written before the patient leaves, addressed to the GP with the four contents the research demands (what was done and found; what remains unresolved with its owner and date; the medication changes with reason and monitoring plan; the safety net with red flags in plain words); medication reconciliation done as a pharmacist-level review of actual medicines (the patient's own tablets in a bag at reception is the evidence); a supply of medicines to take home for the first days; follow-up booked rather than advised; a copy for the patient under open-records culture; and the community side of the contract - the GP's letter triage and the 'did anyone phone about the pending result' loop the readmission literature names. The honest addendum for the after-hours discharge: the summary must arrive before the patient's first GP appointment, a minimum the target cultures still miss. The referral is a discharge in miniature: the question stated, the data attached, the urgency justified with red flags prominent, the reply-loop expectation set, and the 'referred to whom, and who owns the result until then' documented - because the orphaned referral is the outpatient equivalent of the orphaned incidental finding. Death certification keeps the record's last duty: the cause-of-death chain written from knowledge rather than euphemism, the medical-examiner and coroner routes the 2010s-2020s reforms built, the cremation forms' second-checker function, and the discipline that the certificate must be supportable from the record - because it is simultaneously a family's document for life and an epidemiological instrument whose quality decides the next generation's prevention policy.**
+::: warning Copy-forward and templates in electronic records
+Electronic records make it easy to copy the previous day's note or pull forward a template. This saves time but propagates errors: an examination finding that was never re-examined, a plan that has been completed, an allergy recorded incorrectly. Notes become long and the important change is hidden. Write what you found today, delete what is no longer true, and check pre-populated content before signing it. A note that says the abdomen was examined when it was not is a false record.
 :::
 
-## The governance
+### The problem-oriented record
 
-::: definition Confidentiality, data-sharing and informatics safety {#def-governance}
-**Confidentiality's practical grammar (the ethics course owns the principle; this chapter owns the settings): the Caldicott-and-data-protection working rules - need-to-know within the team is implicit for direct care (the ward round does not seek consent for each discussion), while anything beyond care (employers, insurers, schools, media, research) needs explicit consent or a defined statutory route; the duty of confidence survives death; the public-interest and statutory-duty exceptions (safeguarding, serious crime, notifiable disease, the road-traffic and firearms-adjacent disclosures) can be used without consent, with the expectation of honesty with the patient about what was shared; the family-request problems (the spouse phoning the ward, the adult child with no power of attorney) are answered by capacity, best interests and proportionate sharing - not by voice recognition; and the social-media minimum (a patient recognisable in your phone is a breach) is taught by examples, not leaflets. Information governance as safety: the identity layer (wrong-patient documentation, merge and shadow-chart hazards, the two-identifier discipline at every prescription, sample, procedure and transfer, and the 'results that went to the other John Smith' incident class); access control and audit (the access logs that end careers and protect trust, the no-generic-login rule, remote-access hygiene); the alert-and-interrupt layer (alert fatigue versus critical values - the medication-safety balance - and the downtime forms and post-restore reconciliation the cyber-attack reviews made a resilience requirement); and the secondary-use honesty that keeps public consent alive (the care-versus-commerce boundary that recent records-sharing disputes taught every clinician to explain, and data minimisation: extracts need the minimum fields with governance approval, not the whole ward's diary because someone might want it). The patient-access era completes the loop: results in the app before the clinician calls, notes visible to patients, correction and comment rights, and bereavement access - with the early-adopters' honest finding that patients read what is written, understand more than clinicians fear, and the notes improve when everyone knows they will be read. That is the chapter's single prescription in policy form: write every note as the patient-readable document it now legally is.**
+In 1968 the American physician **Lawrence Weed** proposed organising the medical record around the patient's **problems** rather than around sources (doctors' notes, nurses' notes, results). The idea, the **problem-oriented medical record**, still shapes clinical notes.
+
+::: definition Problem list and SOAP notes {#def-soap}
+A **problem list** is a numbered list of the patient's current and significant past problems, each stated at the level of certainty available ("breathlessness, cause unclear", rather than a premature diagnosis), and updated as problems are resolved or clarified. Progress notes are then written for each problem in the **SOAP** format:
+
+- **S**ubjective: what the patient reports (symptoms, concerns).
+- **O**bjective: what is observed and measured (observations, examination, results).
+- **A**ssessment: the clinician's interpretation, including the working diagnosis, differential and whether the problem is improving or worsening.
+- **P**lan: investigations, treatment, monitoring, information for the patient, and escalation decisions, with who is responsible.
 :::
 
-::: example The clone note and the quiet abdomen {#ex-clone}
-Day 6 of a ventilated ICU stay: every daily note contains the same examination paragraph, copied forward since day 1. On day 6 the abdominal examination - finally abnormal, with a new lactate rise - is recorded in the same template's 'soft, non-tender' line; laparotomy at hour 40 finds ischaemic bowel. The family asks why nobody wrote it down sooner.
+::: example A SOAP ward-round entry {#ex-soap}
+Mrs Holloway, 74, was admitted two days ago with community-acquired pneumonia and is on intravenous antibiotics. She also has heart failure and type 2 diabetes. Write a problem-based ward-round entry for today.
+
 ::: solution
-**The documentation lie the system told ([[#def-record]], [[clinical-skills/patient-safety]], [[gastrointestinal/pancreas-biliary]]): the mechanism - copy-forward turned the record from evidence into theatre: the cloned paragraph made an examination that never happened legible every day, and the new pathology presented into a note whose structure said it had already been excluded. The honest answers the inquest will want: whether the examination was ever performed (the clone cannot tell - that is the point), who reads notes they did not write (the ward round's oral culture), and what the documentation policy permitted (the copy-forward-with-re-confirmation-checkbox settings vendors sell as safety features). The fix at three levels: individual - the contemporaneous verb note ('I examined at 09:00; abdomen distended with new generalised tenderness; lactate 6.2; surgical review requested at 09:14'); team - the ward-round standard that asks 'what changed and what did you find', not 'what did we decide yesterday'; and system - the clone-detection report from the electronic record added to notes-quality indicators, because the copy-paste rate is a vital sign of documentation culture. And the disclosure: the examination that day was real and late; the record made the earlier days look better documented than they were; both failures are the organisation's, and the policy change is something the family is entitled to hear named.**
+**27/10/2026 09:40. Ward round, Dr A. Mensah (ST4) with FY1 J. Lee.**
+
+**1. Right lower lobe pneumonia (CURB-65 2 on admission).**
+S: Feels better; less breathless; cough productive of less sputum.
+O: Temp 37.4 °C, RR 18, SpO₂ 95% on air, BP 128/76, HR 84; NEWS2 1. Crackles right base, reduced. CRP 180 → 95 mg/L. Blood cultures no growth at 48 h.
+A: Improving.
+P: Switch to oral antibiotic today per local guideline (5-day total course); repeat CRP not needed unless deterioration.
+
+**2. Chronic heart failure (reduced ejection fraction).**
+S: No orthopnoea. O: Weight 68.2 kg (admission 68.9 kg); mild ankle oedema; JVP not raised. Creatinine 102 µmol/L (baseline 98).
+A: Euvolaemic. P: Continue usual heart-failure medicines; daily weight.
+
+**3. Type 2 diabetes.**
+O: Capillary glucose 7–13 mmol/L. A: Acceptable during acute illness. P: Continue metformin now eating and creatinine stable.
+
+**Escalation status:** For full escalation including ICU; resuscitation discussed with patient on admission: for CPR.
+**Discharge planning:** Likely tomorrow if stable on oral antibiotics; physio to assess mobility today.
+Signed: J. Lee, FY1, GMC 1234567; senior: Dr A. Mensah.
+
+The structure lets any reader see each problem's status and plan at a glance.
 :::
 :::
 
-::: example The discharge letter that arrived after the patient {#ex-discharge}
-A 78-year-old is discharged at 23:00 with new insulin after steroid-induced hyperglycaemia; the summary is generated on day 3 and reaches the GP on day 8; the community pharmacist sees the new pen on day 2 and phones the ward; the patient has taken double doses since Tuesday because the clinic card was written from memory.
+### Recording decisions about escalation and resuscitation
+
+Some of the most important information in a record concerns what should happen if the patient deteriorates. Many UK organisations use the **ReSPECT** process (Recommended Summary Plan for Emergency Care and Treatment), which records the person's preferences and the clinical recommendations about emergency treatment, including cardiopulmonary resuscitation. These decisions must be made in discussion with the patient (or, if they lack capacity, with those close to them and following the Mental Capacity Act), be clearly documented and visible, and be reviewed when circumstances change ([[medical-ethics-law/end-of-life-ethics]]).
+
+## Medication records and reconciliation
+
+Medicines are the commonest single cause of preventable harm in hospital, and many errors arise at transitions: admission, transfer and discharge.
+
+::: definition Medicines reconciliation {#def-reconciliation}
+**Medicines reconciliation** is the process of identifying an accurate list of a person's current medicines, from at least two reliable sources, and comparing it with the medicines currently prescribed, so that any **discrepancies** (omissions, duplications, wrong doses, drugs that should have been stopped) are identified, resolved and documented. NICE guideline NG5 (2015) recommends that it is carried out within **24 hours** of admission to hospital, or sooner if clinically necessary, and at every transfer of care. Sources include the patient and carers, the GP record, the Summary Care Record or shared care record, community pharmacy records, the patient's own medicines and previous discharge letters.
+:::
+
+Prescribing itself is error-prone. Several rules reduce the risk:
+
+- **Never abbreviate "units"** (a "U" can be read as a zero, turning 10 U into 100) or **"micrograms"** ("µg" and "mcg" can be misread as "mg", a thousand-fold error). Write them in full.
+- Avoid trailing zeros (write 5 mg, not 5.0 mg, which can be misread as 50 mg) and use a leading zero (0.5 mg, not .5 mg).
+- Use generic drug names, except where the brand matters (for example some modified-release preparations and immunosuppressants).
+- Record **allergies** with the nature of the reaction on every prescription chart ([[clinical-skills/history-taking#def-allergy]]).
+- Write the indication, especially for drugs with several uses, and the intended duration of antibiotics.
+
+::: example A reconciliation discrepancy {#ex-reconcile}
+Mr Taylor, 70, is admitted with a fall. The admitting doctor prescribes his medicines from a list in his GP letter: ramipril, amlodipine, atorvastatin and warfarin. On day 2 the pharmacist checks the Summary Care Record and speaks to his wife. She brings his medicines in: these include apixaban, not warfarin (switched three months ago), and a pre-filled insulin pen used once daily that he forgot to mention. What should happen?
+
 ::: solution
-**Discharge is a process, not a door ([[#def-transitions]], [[clinical-skills/patient-safety]], [[endocrine/diabetes]]): the failure chain - the out-of-hours discharge without the 'medicines in hand and plan on paper' rule (same-day changes travelling by human memory), the summary written late because documentation time is not in the rota (a staffing finding in disguise), and the community's only sensor - the pharmacist - being nobody's official recipient. The medicine: double-dosed insulin with hypoglycaemia risk against a steroid-taper trajectory (the insulin requirement will fall as the steroids stop - the monitoring plan, dose-reduction instructions and glucagon teaching should exist in the patient's own handwriting, not the ward's recollection), an immediate GP call because the dose changed twice, and the diabetes-team referral that keeps 'temporary insulin' from becoming a misunderstanding. The standards that prevent the redo: same-day medicines reconciliation with community notification, the four-content letter reaching the GP within 48 hours or the system chasing, follow-up booked before departure, and a reason plus an extra plan for any night discharge. The read-through: letters written by a tired house officer at 23:00 into a queue of forty are a system property - discharge coordination with overnight cover and the 'nobody leaves without their new-medicines card' policy cost less than this readmission.**
+The admission list came from a single, out-of-date source. Two discrepancies are serious:
+
+- **Anticoagulant**: he is on apixaban, not warfarin. Prescribing warfarin as well would risk dual anticoagulation; omitting anticoagulation would risk a stroke. Stop the warfarin prescription, check whether apixaban should be continued (after a fall, consider whether he has a head injury or bleeding, and his kidney function), and document the decision.
+- **Insulin**: an omitted insulin can cause hyperglycaemia and, in some people, ketoacidosis. Confirm the insulin type, dose and timing with his wife, the GP record and the pen itself, prescribe it, and monitor glucose.
+
+Then document the reconciled list, the sources used, the discrepancies and the actions, and inform the team. The case shows why at least two sources are needed and why patients' own medicines and carers are valuable sources.
 :::
 :::
 
-::: quiz
-The correct way to correct an error in an electronic clinical record is:
-- [ ] Overwrite the incorrect entry so future readers are not misled
-- [ ] Delete the note and write a new one
-- [x] Add a dated, signed addendum stating the correction and its reason, preserving the original in the audit trail
-- [ ] Ask IT to remove the entry
-::: solution
-**Records must remain truthful about their own history; silent overwrites destroy both the legal record and the learning signal - and audit trails expose them anyway - [[#def-record]], [[medical-ethics-law/confidentiality]].**
+## Confidentiality and access
+
+Clinical records contain some of the most sensitive information about a person. In the UK, their use is governed by the common-law duty of confidentiality, the **UK General Data Protection Regulation** and the **Data Protection Act 2018**, and by professional guidance.
+
+The **Caldicott principles**, first published in 1997 and revised in 2013 and 2020 (when an eighth principle was added), guide the use of patient-identifiable information. In summary: justify the purpose; use confidential information only when necessary; use the minimum necessary; give access only on a strict need-to-know basis; everyone with access must understand their responsibilities; comply with the law; recognise that **the duty to share information for individual care is as important as the duty to protect confidentiality**; and inform patients' and service users' expectations about how their information is used.
+
+Practical consequences: look only at records of patients you are caring for; do not discuss patients in public places, including lifts and social media; keep handover sheets secure and dispose of them in confidential waste; and do not let concern about confidentiality stop you sharing information that another professional needs to care for the patient safely. Patients have a legal right to see their own records (a subject access request), usually to be answered within one month. Confidentiality is covered in depth in [[medical-ethics-law/confidentiality]].
+
+## Handover
+
+::: definition Clinical handover {#def-handover}
+**Clinical handover** is the transfer of professional responsibility and accountability for some or all aspects of a patient's care, or for a group of patients, to another person or team on a temporary or permanent basis. It happens at shift changes, between teams (for example from the emergency department to a ward), between settings (hospital to community) and when escalating to a senior.
 :::
-:::
+
+Handover is a high-risk moment because information must pass between two people, often under time pressure, with interruptions, and with the receiver unable to check what the giver knows. Omissions are more common than errors of commission: the pending blood result, the plan if the patient deteriorates, the relative who must be called.
+
+The figure below shows a simplified model of how information can be lost across a chain of handovers. If each handover independently loses a particular item with probability $p$, the chance that the item survives $n$ handovers is $(1-p)^n$.
 
 ::: widget plot
-f: 100-65*(1-exp(-x/7)); 40; 1; 1; 60
-x: 0, 21
-y: 0, 100
-labels: \text{days after discharge (illustrative)},\ \text{percent}\ \text{medication problems resolved with same-day reconciliation + 48-hour letter};\ \text{standard late-letter pathway (scaled)};\ \text{readmissions attributable to information gaps (scaled)};\ \text{unresolved-test ownership (scaled)}
-caption: The discharge letter is a race against the patient's first week at home ([[#def-transitions]]).
+f: (1-p)^x; (1-q)^x
+x: 0, 10
+y: 0, 1
+sliders: p=0.2:0.02:0.5:0.01; q=0.05:0:0.3:0.01
+labels: \text{unstructured handover (loss } p); \text{structured handover (loss } q)
+caption: Probability that an item of information survives $n$ successive handovers when each handover loses it with probability $p$ or $q$. An illustrative model, not measured data: real losses are not independent.
+:::
+
+::: theorem Principles of safe handover {#thm-handover}
+Handover is safer when it:
+
+1. Uses a **standard structure** that both giver and receiver know, so omissions are visible.
+2. Is **face to face** (or by voice) **and written**, so the conversation allows questions and the written record persists.
+3. Takes place at a **protected time and place**, free of interruptions, with the right people present, including a senior.
+4. **Prioritises** sick and unstable patients and outstanding tasks.
+5. Includes **contingency plans**: what to do if a specific thing happens.
+6. Ends with the receiver **summarising back** (read-back or synthesis) and asking questions, and makes the **transfer of responsibility** explicit.
+:::
+
+::: proof Why structure and read-back work {#prf-handover}
+Memory under time pressure is unreliable and people tend to report what is salient to them rather than what the receiver needs. A shared structure acts as a checklist, so a missing section ("contingency: none given") is noticed. Read-back closes the communication loop: errors of transmission are caught when the receiver's summary differs from what the giver intended. Contingency plans transfer reasoning, not just facts, so the receiver can act when the situation changes. In a multicentre study published in 2014, Starmer and colleagues introduced the I-PASS handover programme across nine paediatric residency programmes in the US and Canada; the rate of medical errors fell by 23% and the rate of preventable adverse events by 30%, without increasing the time spent on handover.
+:::
+
+::: definition SBAR and I-PASS {#def-sbar}
+**SBAR** structures a communication, particularly an escalation:
+
+- **S**ituation: who you are, which patient, and what the problem is now.
+- **B**ackground: the relevant history and context.
+- **A**ssessment: what you think is happening, including observations and NEWS2.
+- **R**ecommendation: what you need, by when (for example "please review within 30 minutes").
+
+Some organisations add an **I** for **Identify** (ISBAR). **I-PASS**, designed for shift handover, covers **I**llness severity (stable, "watcher", unstable), **P**atient summary, **A**ction list (to-do items with owners and timing), **S**ituation awareness and contingency planning, and **S**ynthesis by the receiver.
+:::
+
+::: example An evening handover in I-PASS {#ex-ipass}
+At 20:30 the day FY1 hands over Mrs Begum, 82, to the night FY1. She was admitted with a urinary infection and delirium. Her potassium this afternoon was 5.9 mmol/L (previously 4.8), and a repeat sample was sent at 18:00. Write the handover in I-PASS.
+
+::: solution
+**Illness severity**: "Watcher: not unstable now, but could become so."
+
+**Patient summary**: "Mrs Nadia Begum, 82, bay 3 bed 4. Admitted yesterday with a urinary tract infection and delirium, on IV antibiotics. Background: chronic kidney disease (baseline creatinine about 130) and heart failure on ramipril and spironolactone. Today her creatinine rose to 168 and potassium to 5.9; the ECG at 16:00 showed no changes of hyperkalaemia. We've held her ramipril and spironolactone and started IV fluids at 1 litre over 8 hours. For full escalation; she has capacity for some decisions but not currently for complex ones; her son is the main contact."
+
+**Action list**: "(1) Check the repeat potassium sent at 18:00, due back about 21:00. (2) Review her fluid balance and urine output at midnight. (3) Recheck U&E with the morning bloods."
+
+**Situation awareness and contingency**: "If the potassium is 6.5 or more, or her ECG changes, treat as hyperkalaemia following the hospital protocol and call the registrar. If she becomes more agitated, look for causes (retention, pain, hypoxia) before considering any sedative, and avoid sedatives if possible. If urine output falls below 0.5 mL/kg/h for 6 hours, review for acute kidney injury and call the registrar."
+
+**Synthesis by receiver**: the night FY1 repeats: "Watcher, Mrs Begum. Chase the 18:00 potassium at 21:00; if 6.5 or more or ECG changes, treat per protocol and call the reg. Fluid balance at midnight; U&E in the morning; no sedation without looking for a cause." The day FY1 confirms, and both sign the written handover list.
+:::
+:::
+
+::: example Escalating with SBAR {#ex-sbar}
+At 02:00, an FY1 is called to Mr Lindqvist (from [[clinical-skills/physical-examination#ex-news]]), two days after a bowel resection, with NEWS2 of 9. After assessing him, she phones the surgical registrar. Write the call in SBAR.
+
+::: solution
+**Situation:** "Hello, I'm Sarah Jones, the FY1 on surgical nights. I'm calling about Mr Erik Lindqvist, 71, on ward 7, bed 12. I'm worried he's septic: his NEWS2 is 9."
+
+**Background:** "He's day 2 after an anterior resection for rectal cancer. He was well yesterday. He has hypertension and is on ramipril."
+
+**Assessment:** "Respiratory rate 24, sats 93% on air, BP 98/60, heart rate 112, temperature 38.4, alert. His abdomen is distended and tender with guarding in the lower abdomen. I'm concerned about an anastomotic leak. I've started the sepsis pathway: oxygen, blood cultures, lactate (it's 3.1), IV fluid bolus and antibiotics, and I've held his ramipril."
+
+**Recommendation:** "I need you to review him now, please, and I think he may need a CT and critical-care review. Can you come in the next 15 minutes? Meanwhile is there anything else you'd like me to do?"
+
+The registrar replies: "I'll be there in 10 minutes; repeat the observations after the fluid bolus and call critical care outreach." The FY1 reads back: "Repeat obs after the bolus and call outreach; you'll be here in 10 minutes", and documents the call with the time.
+:::
+:::
+
+## Discharge and transfer
+
+Discharge from hospital is a handover from one team to another, often to the patient's GP and community services, and to the patient themselves. A **discharge summary** should reach the GP promptly and include: the diagnosis and key problems; significant investigations and results; procedures; **changes to medicines with reasons** (started, stopped, dose changed); **actions for the GP**, stated clearly; **results still pending** and who is responsible for them; follow-up arrangements; information given to the patient; and contact details. The patient should receive a copy in plain language.
+
+Pending results are a classic gap: the hospital team assumes the GP will follow them up and the GP assumes the hospital will. The responsible person must be named. Equally, the GP should not be given hospital work without agreement ("please arrange a CT"), and recommendations must be specific ("please check potassium and creatinine in 1 week after ramipril dose increase", not "please monitor U&Es").
+
+## Teamwork and speaking up
+
+Healthcare outcomes depend on how teams work as well as on individual skill. Much of what is known about teamwork was adapted from aviation's **crew resource management**, which grew from the analysis of air crashes in which the information that could have prevented the accident was available to someone in the cockpit but was not acted on.
+
+Key behaviours include:
+
+- **Clear roles and leadership**, with a leader who shares their mental model aloud ("I think this is anaphylaxis; my priorities are adrenaline and the airway").
+- **Closed-loop communication**: a specific instruction to a named person, read back, and confirmed when done ("Sam, please give 500 mL of Hartmann's over 15 minutes." "500 of Hartmann's over 15 minutes." … "The fluid is running.").
+- **Shared situational awareness**: regular summaries so that everyone knows the plan.
+- **Speaking up**: everyone, regardless of seniority, is expected to voice safety concerns.
+
+**Graded assertiveness** tools help junior staff speak up. One common example is **CUS**: "I am **C**oncerned… I am **U**ncomfortable… this is a **S**afety issue." Another is **PACE**: **P**robe ("Can I check the plan for the potassium?"), **A**lert ("I'm worried the potassium is 6.8 and the ECG has changed"), **C**hallenge ("I think we need to treat this now"), **E**mergency ("Stop. I'm calling the medical emergency team."). Senior staff make speaking up easier by inviting challenge ("If anyone sees something I've missed, tell me").
+
+::: quiz
+Which entry is the best record of a decision?
+- [ ] "Discussed with reg. Plan as above."
+- [ ] "Pt non-compliant with meds. For d/c."
+- [x] "27/10/26 16:20. Discussed with Dr Khan (surgical registrar): CT abdomen today to exclude collection; if CT clear and observations stable, discharge tomorrow with oral antibiotics. Explained to patient, who agrees. J. Lee FY1 GMC 1234567."
+- [ ] "Seen. Fine. Home tomorrow?"
+::: solution
+The third entry is dated, timed and attributable, names the senior consulted, states the decision, its conditions and its reasons, records the information given to the patient and their agreement, and is signed. The others are vague, use judgemental language ("non-compliant") or abbreviations, and leave the next clinician guessing.
+:::
+:::
+
+::: history
+The **Hippocratic** case histories of the fifth century BCE are among the earliest clinical records, written so that the course of illness could be learned from. In the nineteenth century hospitals began keeping systematic case notes, and in the early twentieth century surgeons such as **Ernest Codman** in Boston argued for recording the outcome of every case so that errors could be learned from. In 1968 **Lawrence Weed** published "Medical records that guide and teach" in the *New England Journal of Medicine*, introducing the problem-oriented record and SOAP notes. **SBAR** was developed by the US Navy for communication on nuclear submarines and adapted for healthcare by Kaiser Permanente in the early 2000s, after which it spread worldwide through the Institute for Healthcare Improvement and the NHS. The **I-PASS** handover study, published in 2014, showed that a structured handover programme could reduce harm.
 :::
 
 ## Where this leads
 
-The ethical and legal layer of confidentiality and access is in [[medical-ethics-law/confidentiality]], the handover tools are drilled in [[clinical-skills/communication]], the reconciliation pharmacology in [[pharmacology/dosing-principles]] and [[geriatrics-palliative/polypharmacy]], the death-certification detail in [[geriatrics-palliative/end-of-life-care]], and the governance of record-based research in [[medical-ethics-law/research-ethics]].
-
-::: history
-**Clinical records history is the story of the patient's second body - the paper one. The professional duty emerges with the lunacy acts and the hospital case-note traditions of the nineteenth century (the voluntary hospitals' case books and the asylum logs whose legal weight preceded their clinical one); the twentieth made them statutory objects - the obligations to hold and produce records, the confidentiality case law, and the professional codes that from the 1990s (the General Medical Council's Good Medical Practice lineage) specified records that were contemporaneous, legible, dated and attributable. The electronic turn began with laboratory and order systems in the 1970s-80s, then the grand paperless-ward programmes: the general-practice computer contracts, the national electronic-record programmes, and the US HITECH-era billions of 2009 whose meaningful-use measures counted documentation in clicks. A new science followed the EPR - the iatrogenic-documentation literature: the copy-forward and clone-note studies, the note-bloat analyses, and the time-motion work that by the 2010s measured more keyboard than bedside (making 'pajama time' a policy term), while the institute reports and the informatics-safety papers founded a hazard taxonomy of its own: wrong-patient events, alert fatigue, downtime failures, and the infamous 'Wake Train' infusion-programming errors as its parable. Interoperability is the system's unfinished sentence - the HL7 and FHIR standards work, the summary-care-record and cross-border directives, and the recurring post-incident finding from the big care-quality inquiries that the information exists somewhere and not here. The patient-access revolution redefined authorship: the OpenNotes studies from 2010 (patients read the notes, understood more, were safer - and documentation improved), the app-and-statutory-access rights of the 2010s-2020s, the open-letters culture of sexual health and oncology clinics that wrote to patients first and hospitals second, and the bereavement-access laws. The handover and discharge evidence base matured alongside: the I-PASS and SBAR trials, the 'handover is where information dies' safety studies, the project-RED and reconciliation trials of the 2000s-2010s showing halved error rates, and the discharge-summary content standards and 48-hour rules now embedded in accreditation systems. Its newest front is the artificial-intelligence scribe: ambient documentation assistants whose early trials show real time savings and novel risks - the hallucinated plan and the plausible paste - arriving with the same question the copy-paste era asked in larger letters: a record is a promise about what happened, and no technology changes who owns the promise.** - [[clinical-skills/patient-safety]], [[clinical-skills/communication]], [[medical-ethics-law/confidentiality]].**
-:::
+Many of the failures described here are analysed as system problems in [[clinical-skills/patient-safety]]. Confidentiality and the law on records are covered in [[medical-ethics-law/confidentiality]], and prescribing in [[pharmacology/drug-development-prescribing]].
 
 ::: summary
-- The record is evidence, coordination and memory: contemporaneous, attributable, clear, corrected with an audit trail - and now also patient-readable and data-reusable, which raises rather than lowers the writing standard.
-- Electronic records add specific pathologies - clone notes, template-authored plans, copy-forward burying the new finding, alert and inbox overload - whose countermeasures are configuration and audit, i.e. patient safety, not IT.
-- Every transition needs a named payload: handovers match the notes; transfers carry a minimum dataset with senior-to-senior verbal handover; referrals state a question; discharge means same-day medication reconciliation, a four-content letter within 48 hours, booked follow-up and patient-held copies.
-- Confidentiality is settings-based: implicit for direct care, consented or statutory beyond it, with public-interest exceptions, audit-logged access and social-media rules taught by example.
-- Informatics safety is clinical safety: two-identifier discipline, merge and wrong-patient audits, twice-yearly downtime rehearsal and post-restore reconciliation.
-- Death certification and the closing obligations are clinical acts whose quality the mortality statistics depend on; the result is not filed until a named clinician has read, acted on or explicitly discharged it.
+- Records must be contemporaneous, attributable, clear, accurate, complete and never altered; write as though the patient will read the note.
+- The problem-oriented record uses a problem list and SOAP notes, making each problem's status and plan visible.
+- Escalation and resuscitation decisions must be discussed, documented clearly and kept visible.
+- Medicines reconciliation, from at least two sources, should happen within 24 hours of admission and at every transfer; never abbreviate units or micrograms.
+- Follow the Caldicott principles: protect confidential information, but share what is needed for care.
+- Handover is safer with a standard structure, face-to-face plus written information, protected time, contingency plans and read-back; SBAR structures escalation, and I-PASS shift handover.
+- Discharge summaries must state medicine changes, specific actions, pending results and who owns them.
+- Closed-loop communication, shared situational awareness and graded assertiveness help teams catch errors.
 :::
 
 ## Exercises
 
-::: exercise Write the model note {level=1}
-Convert '62F abd pain, bloods ok, likely gastro, ADL' into a documentation-standard ward note, and name the defects of the original.
+::: exercise Correct the entry {level=1}
+Rewrite this note so that it meets good record-keeping standards: "Pt seen. c/o SOB. Chest ?crackles. ?LVF. Give furosemide 40. Check U+E."
 ::: solution
-**A note the coroner would praise ([[#def-record]]): the rewrite - 'I reviewed Mrs B at 11:20 for colicky central abdominal pain of 14 hours with two episodes of bilious vomiting; examined at 11:25 - abdomen soft, distended, centrally tender, no guarding or rebound, no hernias on examination standing; bloods show CRP 140, lactate 2.4, WCC 18, normal lipase, normal erect chest film; plan: fluids, analgesia as charted, surgical review requested at 11:40 given the lactate and previous hernia repair, re-examine at 16:00, red-flag advice given and understood.' The original's defects: no time, no author, no narrative (character, duration, vomit); no examination despite an abdominal complaint - and no hernia status, the classic missed cause; 'bloods ok' hiding a lactate and white count that are not; and 'ADL' - a plan that is an acronym instead of a re-look time and escalation route. The sentences missing here are exactly the ones the 2am doctor and the lawyer will look for.'**
+An improved version: "27/10/26 21:15. Asked to see by nursing staff: increasing breathlessness over 2 hours. Background: heart failure. Obs: RR 26, SpO₂ 91% on air, BP 150/90, HR 104, temp 36.8, alert; NEWS2 6. Bibasal fine crackles to mid-zones, JVP raised 5 cm, bilateral ankle oedema. Impression: acute pulmonary oedema, likely decompensated heart failure; differential includes pneumonia. Plan: sit upright, oxygen to target 94–98%, furosemide 40 mg IV prescribed, ECG, chest X-ray, U&E and troponin; fluid balance and daily weight; reassess in 1 hour; registrar informed. A. Patel FY1 GMC 7654321." It is dated, timed, signed, avoids ambiguous abbreviations, records findings and reasoning, and gives specific actions.
 :::
 :::
 
-::: exercise Run the medication reconciliation {level=2}
-An 83-year-old on 14 medicines is admitted from a care home after a fall; the 'drug chart' is a photocopy and the home adds 'sometimes' medicines; discharge is planned for day 4. Run the reconciliation at both ends and name the traps.
+::: exercise Information survival {level=1 check="0.9^3"}
+If each handover independently loses a particular item of information with probability 0.1, what is the probability that the item survives three handovers? Give the exact value.
 ::: solution
-**Reconciliation as clinical review ([[#def-transitions]], [[geriatrics-palliative/polypharmacy]], [[clinical-skills/patient-safety]]): admission - the pharmacist-level interview with the actual boxes (a photocopy of a photocopy is a hypothesis), the 'sometimes' list quantified (the as-needed sedatives, Z-drugs and anticholinergic bladder medicines that contributed to the fall), two-identifier checks against the GP system and the medication administration record, and a documented 'what she actually takes' list with its sources. In hospital - the every-round 'does this line still need to exist' review and the new-symptom-drug-check habit (the fall's own antihypertensive-and-sedative burden). Discharge - reconciliation before departure with de-prescribing conversations (the proton-pump inhibitor never stopped, the bisphosphonate year, the amiodarone monitoring), a medicines-to-take-home supply, instructions to the care home that reach the person doing the pills (stops as explicit as starts), and a changes-made table in the GP letter with why-and-what-to-watch columns. The traps: the not-taken recorded as taken; the as-needed invisibility; the clinic-started medicine on no shared list; and the GP repetition that silently reverses the hospital's stop because nobody learned it happened.**
+$(1 - 0.1)^3 = 0.9^3 = 0.729$. About 27% of such items would be lost after three handovers, which is why critical information should be written down and checked, not just passed on verbally.
 :::
 :::
 
-::: exercise Handle the access request {level=2}
-A man phones the ward asking for his wife's discharge summary because 'she can't cope with the letters'; she has dementia and signed nothing, and the couple are 'very much together'. Apply the framework and script the answer.
+::: exercise Fluid balance {level=1 check="2350 - (1450 + 500)"}
+Over 24 hours a patient receives 2,000 mL of intravenous fluid and drinks 350 mL. Urine output is 1,450 mL and a surgical drain produces 500 mL. Calculate the recorded fluid balance in mL (positive means more in than out).
 ::: solution
-**Confidentiality in the kitchen ([[#def-governance]], [[medical-ethics-law/confidentiality]], [[geriatrics-palliative/delirium-dementia-care]]): the framework - marriage is not consent, but the correct output is not a slammed door. Capacity first: can she decide, supported, about sharing this now (the 'cannot cope with letters' problem is about format, not entitlement)? If she lacks capacity: best interests, with her past and present wishes sought ('she always said tell Tom everything' - family and old notes may carry it), then proportionate sharing (what Tom needs to manage her care tonight versus the whole record including what she kept from him), and a documented decision with reasons. The script: thank him, state the duty neutrally ('the record is hers; my job is to help you both within it'), offer the supported path - a joint appointment where she can agree, large-print or audio versions, carer training delivered to him with her agreement - and if sharing is in her interests, say plainly what will be shared, with whom and why. The system fixes: the advance information-sharing agreement at dementia diagnosis (the memory services' standard practice), carers included in consent conversations by default, and rotas that give the registrar the twenty minutes this takes instead of the corridor 'no' that costs trust and complaints.**
+Input $= 2{,}000 + 350 = 2{,}350$ mL. Measured output $= 1{,}450 + 500 = 1{,}950$ mL. Balance $= +400$ mL. Remember that insensible losses (from skin and breathing, often several hundred millilitres a day and more with fever) are not measured, so a modestly positive chart may reflect a near-neutral true balance.
 :::
 :::
 
-::: exercise Lead the record-quality programme {level=3}
-Your trust: clone-note rate 38 percent on medical wards; 48-hour discharge summaries at 55 percent; two wrong-patient near misses in radiology this quarter; downtime forms last rehearsed pre-pandemic; 'documentation takes half my shift' in the junior survey. Write the programme.
+::: exercise SBAR for a low potassium {level=2}
+A patient on a cardiology ward has a potassium of 2.8 mmol/L and runs of ventricular ectopics on the monitor. Write an SBAR call to the on-call registrar.
 ::: solution
-**A records programme ([[#def-record]], [[#def-transitions]], [[#def-governance]], [[clinical-skills/patient-safety]]): treat every item as a design or staffing fact - clone rates are configuration plus culture; late letters are unrostered documentation time; near misses are identity-workflow facts; and the junior's 'half my shift' is the system's loudest quality signal. The streams: an anti-clone programme (fields that refuse copy-forward without re-confirmation, monthly clone-detection reports to ward managers, case-review teaching built on real clones); discharge-time redesign (coordinator capacity counted as clinical staffing, overnight double cover, the four-contents-before-departure checklist, the 48-hour letter chased not hoped for); identity safety (two-identifier audits at booking, consent and procedure; near-miss narratives published internally - the 'wrong John Smith' stories are the highest-retention training available; a named owner and resolution clock for duplicate merges); downtime resilience (twice-yearly tested downtime packs with pharmacy, blood-bank and imaging restore-reconciliation run-sheets, and vendor-contract test evidence); and the time question, because everything else fails without it (documentation hours in establishments, scribe pilots evaluated on note quality and time saved, and inbox and alert burden reviews that the burnout literature ties directly to safety). Governance: one executive owner, a clinician-led records-safety committee with nursing, pharmacy, informatics and trainees, and a board dashboard - clone rate, 48-hour letters, wrong-patient near misses and closures, downtime-test reports, trainee documentation hours - anchored by two outcomes: medicines-reconciled-at-discharge rates and trigger-tool notes-quality scores. The record is where every other safety programme's evidence lives; a trust that cannot write its patients safely has not yet learned to keep them safe.**
-:::
-:::
-::: example The result that went to another John Smith {#ex-identity}
-Outpatient phlebotomy labels a lipid blood set with the wristband of the previous patient - both men, both in their sixties, both surnamed Smith. The results enter an active record belonging to a man already on a statin, whose 'suboptimal control' drives a dose escalation and an angiography discussion.
-::: solution
-**Identity is a clinical procedure ([[#def-governance]], [[clinical-skills/patient-safety]]): the mechanism - a wrong-patient chain: the two-identifier failure at the two moments that matter (collection and result-filing), same-name-and-age context, and a clinic culture where 'he said he was Mr Smith' is the entire check. The layers that should have caught it: barcode-at-point-of-care with patient-spoken identifiers and date of birth (the transfusion-medicine rule that 'name alone is never an identifier', extended); the results-into-active-records implausibility review (an LDL that contradicts the statin dose is a pharmacist-visible flag); and the duplicate-and-merge detection sweep that should find 'the two John Smiths' by algorithm rather than by luck. The consequence is harm with an owner chain: the escalation and invasive-workup-on-a-false-number is a diagnostic-harm case, disclosed as such (the cancelled angiography and the residual anxiety are the harm's edge, and the correction reaches both men's records with the audit trail the addendum rule requires). The programme answer: near misses reported and taught (the 'that was almost me' effect is the culture's best vaccine), the national patient-identification safety alerts implemented with local audit, and the standard repeated until boring - every order, sample, procedure and transfer, two identifiers, spoken by the patient when they can.**
+S: "I'm Tom, FY1 on medical nights, calling about Mrs Grey, 66, ward 4 bed 3. Her potassium is 2.8 and she's having runs of ventricular ectopics." B: "She was admitted yesterday with heart failure and has had high-dose IV furosemide. She's on digoxin." A: "Obs stable: BP 118/70, HR 88 with ectopics, sats 96%, NEWS2 1. She's asymptomatic. I've done an ECG: U waves and frequent ventricular ectopics, no sustained arrhythmia. Low potassium increases the risk of arrhythmia and of digoxin toxicity." R: "I'd like to start IV potassium replacement through a peripheral line per the local protocol, check magnesium and a digoxin level, and keep her on the monitor. Could you review her within the hour, and is there anything else you'd like?" Then read back the reply and document it.
 :::
 :::
 
-::: example The unowned outpatient result {#ex-orphan}
-A two-week-wait colonoscopy is 'normal' in the endoscopy report, but histology from a non-specific gastric biopsy returns nineteen days later showing high-grade dysplasia. The letter goes to 'the referring clinician' - a registrar long since rotated; the GP never sees it. At month nine the presenting symptoms recur.
+::: exercise A discharge letter's gaps {level=2}
+A discharge summary says: "Diagnosis: chest infection. Meds: as before. Follow-up: GP to review. Bloods pending." List what is missing and why each gap matters.
 ::: solution
-**Results have roles, not addresses ([[#def-transitions]], [[#def-record]], [[gastrointestinal/gi-bleeding-cancer]]): the anatomy - the result was routed to a person instead of a role; the 'normal procedure' label closed the case in every mind while histology ran a separate postal route; and the serious-unexpected-findings pathway - which every laboratory policy says must be telephoned to a named responsible clinician with read-back - did not fire because the dysplasia arrived inside a benign-sounding request. The rules: result ownership is a role with an inbox and an audit trail (the named reporting specialist or consultant of the week, never 'the registrar'); the twenty-four-hour rule fires on histology exactly as on radiology; the GP is copied on secondary-care results as an open-records default (portal-only results and 'to follow' letters are the orphans' habitat); and the patient is told before leaving how they will hear and what to do when they do. The re-entry: the month-nine case is a candour and review case - the delay attribution lands almost entirely in the system column; restaging and treatment now; and the policy flag for the new endoscopy information system: histology into the same report line, with a who-reads-what-and-calls-whom specification. The meta-lesson: a result is not filed until a named clinician has read it, acted on it or explicitly discharged it - and the patient knows. No inbox yet automates that sentence.**
+Missing: specific diagnosis and key findings (which pneumonia, any complications); **medicine changes with reasons** (was an antibiotic course given, are any drugs stopped or changed, e.g. a held antihypertensive); **which bloods are pending** and **who** will act on them; what the GP is being asked to do, and when ("GP to review" is vague); information given to the patient and safety-netting; and the author's details. Each gap risks harm: an unrestarted drug, an unreviewed abnormal result, an unnecessary appointment or a missed one.
 :::
 :::
 
-::: exercise Design the downtime pack {level=1}
-Your trust will simulate a two-day total clinical-system outage next month. Specify the contents of the ward downtime pack and the three rehearsal roles that must exist for the simulation to mean anything.
+::: exercise Choose the tool {level=2}
+For each situation, name the most suitable structured tool and explain why: (a) a nurse calling a doctor about a deteriorating patient; (b) the evening handover of 30 patients between medical teams; (c) a junior doctor who thinks the consultant is about to operate on the wrong side.
 ::: solution
-**Paper readiness ([[#def-governance]], [[clinical-skills/patient-safety]]): the pack - current drug charts printed for current inpatients at a defined frequency (or the 'last verified chart' protocol), observations and fluid-balance charts, blood-vials-and-request-forms-with-the-laboratory's-identification-rules-and-their-paper-receiving-process, the blood-booking-and-crossmatch forms, radiology request forms with the imaging department's manual log, the controlled-drugs register (the countable one), the triage-and-bed-board template, the escalation contacts and out-of-hours switchboards, the downtime-SOP one-pager (who declares, who logs, what reverts manually - consent, allergy checks, the 'no electronic allergy flag means asking the patient' rule), and the restore-reconciliation sheets (every drug given, every result received, every admission and discharge typed back with two-person verification and a completion signature). The three rehearsal roles: a ward clerk running the paper admission end-to-end, a pharmacist reconciling against printed charts and the laboratory's paper results, and an informatics lead executing the restore with the audit of what was missed - because the post-attack reviews across health systems repeat one finding: redundancy existed, familiarity did not; and the simulation's pass mark is not 'we coped' but 'how many ordering and identity errors did the paper days generate', measured, because that number is the trust's actual downtime mortality estimate.'**
+(a) SBAR (or ISBAR): designed for concise escalation and ends with a clear request. (b) I-PASS (or the local equivalent): designed for shift handover, with illness severity to prioritise, action lists and contingency plans, and synthesis by the receiver. (c) Graded assertiveness such as PACE or CUS, escalating to "Stop" if needed; and the WHO Surgical Safety Checklist's time-out exists exactly for this, giving everyone permission to stop the procedure.
 :::
 :::
 
-::: exercise Certify the death {level=2}
-An 82-year-old dies at home four days after discharge for a fractured femur repair; the family GP was at dinner; the district nurse found her. She had a dressing change the day before. Write the chain of decisions: certification route, the questions that determine it, and what each answer obliges.
+::: exercise A reconciliation audit {level=3 check="round(100*31/120)"}
+An audit of 120 admissions finds that 31 patients had at least one unintentional medication discrepancy at 24 hours. What percentage is this, rounded to the nearest whole number? Then suggest three changes to reduce the rate and how you would measure their effect.
 ::: solution
-**The-certification-triple ([[#def-transitions]], [[geriatrics-palliative/end-of-life-care]]): the first question is the coroner's, not yours - 'the death was rapid, unattended, and the recent hospital and fall history raise the operative-chain-and-VTE-and-fall-sequelae questions a medical examiner would want: in most jurisdictions a death of unclear cause shortly after discharge or treatment goes to the coroner or medical-examiner route, and referring protects everyone including the family's answers; the questions that decide - 'was she seen recently enough to certify the cause from personal knowledge (the four-day-and-outpatient-clinic rules), is the cause genuinely known (the 'fractured femur' is not a cause; the chain - the fall mechanics, the fix, the complications - must be defensible from records you may not hold), and is there any suspicion (the pressure injuries, the medications, the 'she was declining' ambiguity) that makes referral mandatory; the family work that happens either way - 'the time on the death certificate matters less than the conversation that precedes it (the 'I need to be certain about what killed her before I sign' explanation, the coroner's-process navigation, the cremation-forms second-check and the organ-donation-and-autopsy-conversations-if-relevant, and the 'what I will do to find out' plan); and the record duty - 'the discharge summary that will be the coroner's best document, the GP's hospital-letter review, and the honesty that the certification is a clinical act: the statistics and the inquest and the family's paperwork all begin with these five minutes, given the time they deserve.'**
+$31/120 = 25.8\%$, which rounds to **26%**. Possible changes: pharmacy-led reconciliation within 24 hours of admission, including weekends; access to the GP record or shared care record for admitting clinicians; a prompt in the electronic admission template requiring two sources and listing patients' own medicines; and teaching new doctors to ask specifically about insulin, anticoagulants, inhalers and injections. Measure with repeated audit using the same definition of discrepancy, ideally as a run chart over time so that the effect of each change can be seen (see [[clinical-skills/patient-safety]]).
 :::
 :::
 
-::: exercise Write the open letter {level=2}
-A 34-year-old's colposcopy clinic outcome needs a letter: normal smear history, an abnormal biopsy treated, and the 'surveillance for two years' plan. Write the letter to her, the GP copy, and the two sentences the old culture would have hidden.
+::: exercise Speaking up {level=3}
+During a busy ward round, a consultant prescribes intravenous co-amoxiclav for a patient whose chart records a penicillin allergy (anaphylaxis). The FY1 notices. Describe how she should raise it using PACE, and how the team culture could make this easier.
 ::: solution
-**Open-letters-craft ([[#def-governance]], [[#def-record]], [[obstetrics-gynaecology/gynaecological-cancer]]): to her - 'plain sentences first ('the biopsy showed cells that were not normal but were not cancer; we removed them completely and the edges were clear'), the plan in a list (when the next test is, who sends the appointment, what to do if it does not arrive, what symptoms to report - the bleeding-and-discharge sentence written to prompt, not frighten), the uncertainty named honestly but proportionately ('the chance of this coming back is low; the checks are how we keep it low'), and the 'you can ring the clinic direct with anything the letter raises - including if the letter itself is worrying'; the GP copy - 'the same words plus the clinical data (the histology and margins and the surveillance-interval rationale), because a letter that reads differently to patient and doctor breeds the 'what did they not tell me' consultation; the two hidden sentences the old culture produced instead - 'the hedged 'some abnormal cells may have been present' (which patients read as 'maybe cancer' and doctors wrote to avoid certainty - the open-letters research's most-replicated finding is that specificity reduces anxiety), and the euphemism 'please re-attend if symptomatic' in place of 'your next test is due in six months, booked for you' - and the policy line: if it would read badly to her, the discussion needs better words in the room, not worse words on paper.'**
+Probe: "Can I just check, this is co-amoxiclav, which contains a penicillin?" Alert: "Her chart says she had anaphylaxis to penicillin in 2019." Challenge: "I don't think we should give it. Could we choose an alternative?" Emergency (only if ignored and harm imminent): "I'm not able to give or prescribe this; I'll ask the pharmacist and stop it being administered." Most consultants respond to the probe or alert. Team culture: senior staff explicitly invite challenge at the start of the ward round, allergies are displayed prominently and checked by electronic prescribing, pharmacists are part of the round, and staff who speak up are thanked, so that raising concerns is normal rather than a personal risk.
 :::
 :::
-
-::: exercise Audit the information flow {level=3}
-Your region's data: 22 percent of care-home residents' hospital medication changes never reach the home chart; urgent outpatient result telephone-calls reach 'a staff member' without names 30 percent of the time; the ambulance transfer forms' ceiling-plan field is blank in 60 percent of eligible admissions; and hospital-to-hospital imaging discs go missing weekly. Map the flows, assign owners, and set the six-month measures.
-::: solution
-**Information-flow-engineering ([[#def-transitions]], [[#def-governance]], [[clinical-skills/patient-safety]]): the map - 'each gap is a transition without a contract: home-to-hospital-to-home (the residents whose medication changes die between the discharge letter and the MAR), the result-to-patient chain (the 'called the surgery' tick with no read-back or named receiver), the ceiling-plan field (a form no clinician owns between admission and ambulance), and the images (a physical object in a digital age). The owners and fixes - '1) the care-home pathway: the structured electronic discharge-reconciliation with a mandatory 'home-chart-updated-y/n' field, and the audit of the medication-errors-adjacent readmission data that funds the informatics fix; 2) the result-calls: the 'named clinician, read-back, time logged' standard with the 24-hour and 7-day rules escalating through a role-inbox not a rota-person, and the 'did the patient hear' second loop for serious results; 3) the ceiling plan: the field auto-populated from the admission escalation-plan where one exists, the ambulance crew empowered and expected to query blanks (the 'what are we not doing' question at handover), and the monthly completeness report to admitting consultants; 4) the images: the network image-exchange (the read-and-retrieve service the national programmes fund when told it prevents duplicate scans and radiation) with the interim 'images travel with the patient or the report travels' SOP. The measures at six months - 'the home-chart-update rate, the read-back-logged result-calls, the ceiling-field completion, the duplicate-imaging rate and the missing-images incident count; plus one patient-side measure (the 'did you receive a clear plan at discharge' item from the home survey) because these flows exist for someone; and the reporting line - 'a regional transitions board with nursing, pharmacy, primary and care-home and ambulance seats, because the whole audit finding is that each organisation's data is the next organisation's harm.'**
-:::
-:::
-

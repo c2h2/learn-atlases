@@ -1,141 +1,280 @@
-Clinical reasoning is the invisible procedure that every other procedure inherits: the process by which symptoms become diagnoses and diagnoses become plans, and the process that fails - in something like one in twenty clinical encounters by the diagnostic-error literature's estimates - more often through thinking errors than knowledge gaps. **This chapter covers how clinical thinking actually works (the dual-process model of fast pattern recognition and slow analytical checking, the illness scripts experts build and the conditions under which they misfire), the craft of the differential diagnosis (probability anchored in base rates, the must-not-miss category, structured mnemonics doing their honest job), the failure modes and their counters (the cognitive biases now catalogued and measured, the debiasing strategies with evidence, calibration of one's own certainty, and the safety-net as a reasoning tool), and the interaction with technology (decision support, the search-satisfies question, and the reasoning audit embedded in how notes are written).**
+Clinical reasoning is the thinking that turns a history, an examination and a set of results into a diagnosis and a plan. It is done under uncertainty, often under time pressure, and usually with incomplete information. Most of the time it works well. When it fails, the cause is more often a flaw in reasoning than a lack of knowledge: the right diagnosis was known to the clinician but was not considered, or was dismissed too early.
 
-## How thinking works
+This chapter describes how clinicians generate and test hypotheses, how probability and Bayes' theorem lie behind every decision to test or treat, how clinical prediction rules work, and how cognitive biases cause diagnostic error. The quantitative ideas are taken further in [[clinical-skills/laboratory-tests]] and [[epidemiology-ebm/diagnostic-tests]].
 
-::: definition Dual processes, illness scripts and expertise {#def-dual}
-**The working model is dual-process: system-1 thinking is fast, automatic, holistic and affectively tagged (the 'she looks septic' recognition of an experienced nurse or doctor), while system-2 is slow, deliberate, rule-following and effortful (the systematic exclusion workup); expertise is largely the possession of a large library of illness scripts - packages linking enabling conditions, pathophysiological disturbance and the clinical picture's key features - built by thousands of curated patient encounters with informative outcomes, which is why pattern recognition improves with years and why it collapses out of domain (the physician who is brilliant with chests and mediocre with rashes, the 'domain-specificity' finding the expertise literature is emphatic about). System 1 is the source of most clinical brilliance and most clinical error, because it matches rather than checks: it is sensitive to representative features and indifferent to base rates, and it is blind to the missing finding that would break the pattern (the 'if this were pneumonia, what else would I expect - and is it absent?' question that system 2 must ask and often does not). The developmental arc is teachable and measurable: novices collect cues, intermediates collect disease prototypes with the wrong flex, experts run pattern recognition with analytic fallback and crucially monitor when to switch (the metacognition that separates the safe expert from the confidently dangerous one); deliberate practice for reasoning means spaced exposure to cases with feedback on the reasoning, not just the answer (the illness-script-construction literature's prescription: compare-and-contrast, explain why the mimic is not the target, generate before revealing). The practical consequences for a student or a busy clinician are three: generate the differential before collecting more data (the 'what would I expect to find if this were X and what would break it' framing improves data-gathering versus test-fishing), respect the affective tag ('something is wrong' from an experienced observer is a finding with a likelihood ratio, and 'but the numbers are fine' is not a rebuttal), and schedule the analytic audit (the deliberate re-reading of the case against its own script: the missing feature, the base-rate violation, the patient who does not fit - which is why the 'unexplained' category deserves a diary date, not a shrug).**
+## Diagnosis as a process
+
+::: definition Differential and working diagnosis {#def-differential}
+A **differential diagnosis** is the list of conditions that could explain a patient's presentation, ideally ordered by likelihood and with the most dangerous possibilities identified. A **working diagnosis** is the diagnosis on which the clinician is currently acting, held provisionally and revised as information arrives. A **final diagnosis** is the one accepted after the evidence has been gathered, which may itself be revised if the course of illness does not fit.
 :::
 
-## The differential
+Diagnosis is rarely a single moment. It is a cycle of generating hypotheses, gathering information that discriminates between them, and updating. The cycle continues after the patient is treated: a response to treatment is evidence, and so is a failure to respond.
 
-::: definition Probability, differentials and the must-not-miss list {#def-differential}
-**Good reasoning is probabilistic from the first minute: pretest probability is base rate (age, sex, prevalence, setting - the chest pain of a 19-year-old and a 79-year-old are different diseases until proven otherwise) modified by findings' likelihood ratios, and the whole of test-interpretation ethics rests on getting this number approximately right, which is why the examination and history chapters keep returning to it. The differential diagnosis is the tool that keeps probability honest: the working version is generated early, pruned by data and re-opened by treatment failure, and its written form (the problem list with its ranked candidates and discriminating features) is the single most transferable piece of reasoning documentation; the mnemonic structures do real work when used as checklists against premature closure (the VINDICATE-family sweeps (vascular, infective, neoplastic, degenerative, iatrogenic/intoxication, congenital, autoimmune, traumatic, endocrine/metabolic) for the undifferentiated presentation, and the 'anatomical, physiological, psychological' and 'common, complicated, critical, rare-but-catastrophic' framings that different specialties use to force breadth). The must-not-miss category is its own list per presentation and deserves to be memorised like a drug dose because its members kill on the second visit (the syncope's arrhythmias and SAH-and-peptic-bleed-and-ectopic-and-testicular-torsion-and-epiglottitis-and-cauda-equina-and-meningococcus-and-aortic-dissection-and-tension-pneumothorax-and-the-Flipped-the-'common-viral'-mistake's-serious-bacterial-infection-in-children); the associated safety grammar is 'broken-into-three questions': could this be the killer (probability), how sure am I (test-threshold transparency), and what is the plan if I am wrong (the explicit safety net with time and trigger). The diagnostic momentum and label inertia problems are the differential's social enemies: the label attached in one setting (the 'frequent attender', the 'learning difficulty', the 'anxiety') recruits perception in every later setting, and the correction is procedural, not attitudinal - treat the label as a hypothesis and re-examine when the illness does not behave (the treatment-failure-as-data rule the history chapter enshrines). Finally the framing of uncertainty to patients is part of the differential's completion: the honest 'I do not know yet, here is what we are ruling out, here is the timeline and the trigger to come back' outperforms false closure every time, both ethically (informed participation) and epidemiologically (the patient is the best outpatient-monitoring device available when enlisted rather than reassured).**
+### Two modes of thinking
+
+Psychologists describe two modes of thought, often called **System 1** and **System 2**. The distinction, popularised in medicine by the emergency physician Pat Croskerry, is useful for understanding both expertise and error.
+
+::: definition Dual-process reasoning {#def-dual}
+**System 1** (intuitive, or non-analytical) reasoning is fast, automatic and based on **pattern recognition**: the clinician recognises a presentation because it resembles cases seen before. **System 2** (analytical) reasoning is slow, deliberate and effortful: the clinician works through a problem step by step, considering probabilities and alternatives. Experts use both and switch between them; System 1 handles familiar presentations efficiently, and System 2 is needed when the pattern does not fit, the stakes are high, or the case is unfamiliar.
 :::
 
-## The failure modes
+Pattern recognition is not a lesser form of reasoning. It is how experienced clinicians recognise shingles from across a room, and it is usually right. It is vulnerable, though, when a presentation looks like a common pattern but is not one: the "migraine" that is a subarachnoid haemorrhage, the "gastritis" that is an inferior myocardial infarction. Analytical reasoning is slower but makes assumptions explicit. Good practice is to let System 1 propose and System 2 check, especially before discharging a patient or closing a diagnosis.
 
-::: definition Cognitive biases, debiasing and the safety net {#def-bias}
-**The taxonomy now has outcome data attached to it (Croskerry's and Singh's and the diagnosis-error consortium's work): premature closure (the stopping error - most common in the error series), anchoring (the first available frame driving everything after, from the triage note to the referral letter's diagnosis), availability (last month's memorable case distorting tonight's probabilities), the framing effect (the same statistics choosing differently when dressed as survival versus mortality), sunk-cost and the escalation-of-commitment literature ('we have done this much testing, it must be findable'), satisfaction of search (the second abnormality missed after the first is found - the classic colonoscopy and radiology finding, with direct analogues in ECG reading and trauma surveys); confirmation bias in history-taking's leading questions; the availability pendulum between 'common things are common' and the zebra just published in the journal; omission bias (the error of action feared more than the error of inaction, which shapes test-ordering and treatment hesitations alike); and the affective and organisational variants: the countertransference-adjacent ('difficult patient' reactivity suppressing curiosity), the hierarchy-suppressed differential (the junior who saw the alternative and said nothing - the speaking-up literature's diagnosis), and the fatigue-and-interruption-degraded system-2 (why the 3am decision and the bleeped-half-history are their own error category). The debiasing tools with evidence are procedural and cheap: the forced 'what else could it be?' prompt at the point of closure; the 'untoward-what-if-this-is-wrong-what-will-I-have-missed-and-would-it-kill' safety query; premortems before major plans; the diagnostic-timeout and second-opinion rituals (the 'unexplained-24-hours' and 'three-or-more-admissions-in-six-weeks' triggers); explicit probabilistic language in notes (the 'low/intermediate/high probability' bands with the action thresholds they trigger, which also immunise against hindsight's rewriting of what was knowable); the checkback of red-flag lists to the presenting symptom; the 'when the patient is not tracking, the diagnosis is not finished' reframe (treatment failure as the most under-used data point); and the metacognitive habits - knowing one's own domain limits, calibration training (the feedback loops showing clinicians that their 90-percent-certain cases are right 70 percent of the time is uncomfortable and corrective), and the wise use of 'think again' sleep on the non-urgent hard case. The safety net closes the loop: the explicit time-and-trigger ('if not improving by Wednesday or if breathing worsens, ring today'), the documented plan for the undifferentiated (who owns the pending tests and who reviews the unresolved), and the re-consultation culture (the 'come back if different' that the diagnostic-delay literature prefers to the open-ended reassurance). The system-level corrections belong to patient safety's chapter (the diagnostic-error reporting and the learning loops) - but the individual clinician's irreducible duty is the honest note, the re-opener used, and the uncertainty transmitted, because most diagnosed-late cases are not unknown-disease cases but re-opened-too-late ones.**
+### Generating the differential
+
+Several strategies help to produce a complete list:
+
+- **Anatomical**: think through the structures in the region. For chest pain: skin and muscle, ribs, pleura, lung, pericardium, myocardium, aorta, oesophagus, and referred pain from the abdomen.
+- **Pathological (the "surgical sieve")**: run through categories of disease: congenital, infective, inflammatory, neoplastic, vascular, traumatic, metabolic and endocrine, degenerative, drug-induced and iatrogenic, and psychological.
+- **Physiological**: reason from mechanism. For hyponatraemia: too much water relative to sodium, or loss of sodium in excess of water; then ask which mechanism fits.
+- **Common, dangerous and treatable**: list the commonest causes, the causes that must not be missed because they are dangerous, and those that are treatable.
+
+Two old maxims pull in opposite directions. **Occam's razor** suggests looking for a single diagnosis that explains all the findings, which works well in young, previously healthy patients. **Hickam's dictum** ("patients can have as many diseases as they please") reminds us that older people with several conditions often have more than one explanation for their symptoms.
+
+## Probability and Bayes' theorem
+
+Every diagnostic decision rests on a probability, even if it is never stated. "This is probably musculoskeletal" means something like "I think there is a low probability of a serious cause". Making the probability explicit helps decide when to test and how to interpret the result.
+
+::: definition Pre-test and post-test probability {#def-pretest}
+The **pre-test probability** is the probability that the patient has the condition before a particular test result is known. It comes from the prevalence of the condition in similar patients, adjusted by the history and examination. The **post-test probability** is the probability after the result is known. The **odds** of the condition are $\text{odds} = \dfrac{p}{1-p}$, and conversely $p = \dfrac{\text{odds}}{1 + \text{odds}}$.
 :::
 
-::: example The frequent attender {#ex-momentum}
-A 41-year-old with learning disability and 'four visits for the same thing - behavioural' presents with two days of vomiting, tachycardia to 126 and confusion 'like her usual but worse'; the triage and the ward both document 'behavioural as previous'; by night she is intubated with Escherichia coli septicaemia and a faecal-impaction-with-stercoral-perforation at laparotomy.
+::: theorem Bayes' theorem in odds form {#thm-bayes}
+For a test result with likelihood ratio $\text{LR}$,
+
+$$
+\text{post-test odds} = \text{pre-test odds} \times \text{LR},
+$$
+
+where for a positive result $\text{LR}^+ = \dfrac{\text{sensitivity}}{1 - \text{specificity}}$ and for a negative result $\text{LR}^- = \dfrac{1 - \text{sensitivity}}{\text{specificity}}$. If several findings are conditionally independent given disease status, their likelihood ratios can be multiplied in sequence.
+:::
+
+::: proof Why the odds form works {#prf-bayes}
+Let $D$ be the disease and $T$ the test result. Bayes' theorem gives $P(D \mid T) = \dfrac{P(T \mid D) P(D)}{P(T)}$ and $P(\bar D \mid T) = \dfrac{P(T \mid \bar D) P(\bar D)}{P(T)}$. Dividing the first by the second cancels $P(T)$:
+
+$$
+\frac{P(D \mid T)}{P(\bar D \mid T)} = \frac{P(D)}{P(\bar D)} \times \frac{P(T \mid D)}{P(T \mid \bar D)}.
+$$
+
+The left side is the post-test odds and the first factor on the right is the pre-test odds. The second factor is the likelihood ratio. For a positive result $P(T \mid D)$ is the sensitivity and $P(T \mid \bar D) = 1 - \text{specificity}$; for a negative result they are $1 - \text{sensitivity}$ and the specificity. Multiplying ratios in sequence assumes that each finding gives independent information once disease status is known, which is often only approximately true: two findings that reflect the same process (for example two inflammatory markers) should not be counted twice.
+:::
+
+The consequence is the most important idea in diagnostic testing: **the meaning of a test result depends on the pre-test probability**. A positive result in a patient who was very unlikely to have the disease is often a false positive; a negative result in a patient who was very likely to have it is often a false negative.
+
+Likelihood ratios give a rough feel for how much a result changes things. As a rule of thumb, an LR of about 2 raises the probability modestly, around 5 moderately and 10 or more substantially; an LR of about 0.5 lowers it modestly, around 0.2 moderately and 0.1 or less substantially. A result with an LR near 1 changes almost nothing, however impressive the test sounds.
+
+::: example A D-dimer in two patients {#ex-ddimer}
+A D-dimer test for venous thromboembolism has, for illustration, sensitivity 95% and specificity 45%. Interpret a negative result in (a) a patient whose pre-test probability of pulmonary embolism is 10%, and (b) a patient whose pre-test probability is 60%.
+
 ::: solution
-**Label-persistence-is-a-dual-process-failure ([[#def-differential]], [[#def-bias]]): the mechanism - 'the label is system-1's shortcut turned social: 'behavioural as previous' replaces the differential rather than joining it, and the cognitive literature's momentum-plus-persistence-plus-anchoring trifecta then does the rest; the findings that were screaming - 'the tachycardia and confusion are physiological signs in a population that cannot localise or narrate symptoms (the atypical-presentation rule the history chapter states for everyone who cannot give a typical one), and 'worse than usual' is a red flag invented for exactly this case; the countermeasures that should have been procedural - 'the 'baseline-function-documented-at-every-attendance' practice (you cannot see 'worse than usual' without a 'usual'), the 'learning-disability-patients-get-the-same-physiological-workup-as-anyone-confused' rule that the discrimination-and-decision-capacity literature and the 'the-'reasonable-adjustments duty converge on, and the 'new-physiological-sign-resets-the-label' policy (the pain-and-heart-rate-and-GCS-combination that overrides any psychiatric or behavioural tag, which the serious-infection-in-learning-disability mortality reviews spent twenty years asking for); and the reasoning-audit the inquest demands - 'the notes that record the differential as considered-and-why-not rather than the label as verdict, the escalation-when-dismissed pathway, and the family's 'she is not herself' recorded as the informant-history finding it legally and medically is.'**
+$\text{LR}^- = \dfrac{1 - 0.95}{0.45} = \dfrac{0.05}{0.45} = 0.111$.
+
+(a) Pre-test odds $= 0.10/0.90 = 0.111$. Post-test odds $= 0.111 \times 0.111 = 0.0123$. Post-test probability $= 0.0123/1.0123 \approx 1.2\%$. This is low enough that, in practice, pulmonary embolism can usually be considered excluded.
+
+(b) Pre-test odds $= 0.60/0.40 = 1.5$. Post-test odds $= 1.5 \times 0.111 = 0.167$. Post-test probability $= 0.167/1.167 \approx 14\%$. A one-in-seven chance of a dangerous condition is far too high to stop. In a patient with a high pre-test probability, the D-dimer cannot rule out the disease, which is why guidelines send such patients straight to imaging.
+
+The test is the same; the conclusion is opposite, because the starting point differs. A positive D-dimer, with $\text{LR}^+ = 0.95/0.55 \approx 1.7$, would change either probability only slightly, so a positive D-dimer is a reason for imaging, not a diagnosis.
 :::
 :::
 
-::: example The second finding {#ex-sos}
-A 66-year-old's CT for renal colic shows the stone and an incidental 9-mm pulmonary nodule and a thyroid nodule; the stone pathway is completed, the patient discharged; the nodule report is 'for GP follow-up' in a letter; eighteen months later the lung lesion is a 3-cm mass and the thyroid lesion is benign and irrelevant.
-::: solution
-**Satisfaction-of-search-and-the-unresolved-list ([[#def-bias]], [[clinical-skills/records-handover]], [[respiratory/lung-cancer-pleura]]): the cognitive and system failures are separable - 'satisfaction-of-search is measured in radiology (the second lesion's miss-rate rising after the first is found, and the double-read-and-AI-triage literature's countermeasures) but its clinical twin is the discharge process that completes the exciting problem and orphanes the incidental; the 'incidentaloma' governance that should have caught it - 'the structured 'unresolved findings' section of the discharge summary with owner and interval, the 'the-Fleischner-and-RCR-adjacent nodule-follow-up-tables whose rules require a person to apply them, and the GP-facing system where 'for follow-up' letters become ticklists with dates rather than prose; the reasoning layer - 'incidentals shift pretest probabilities (a smoking-history 9-mm nodule's malignancy risk is an active calculation, not a reassurance), and the 'who-does-this-belongs-to' question is a clinical-reasoning question: a differential is not just the presenting complaint's but the patient's whole problem list's; and the re-entry of the missed case - 'the two-week-wait-now-staging pathway with its 'delay-attribution' review (the patient-delay versus system-delay versus clinician-delay categories the lung-cancer-audits use), the compensation-and-candour conversation, and the unit's adoption of the unresolved-findings register - because the satisfaction-of-search literature's only proven fix is someone else's fresh eyes, which is an organisational statement dressed as a cognitive one.'**
+The figure shows the same arithmetic as natural frequencies: out of 1,000 patients, how many test positive, and how many of those have the disease.
+
+::: widget bayes
+mode: test
+prevalence: 0.1
+sensitivity: 0.95
+specificity: 0.45
+caption: A test with high sensitivity and low specificity, like the D-dimer in [[#ex-ddimer]]. Change the prevalence to see how the meaning of a positive and a negative result changes. Illustrative values.
 :::
+
+### Thresholds for testing and treating
+
+A test is worth doing only if its result could change what happens. This idea was formalised by Stephen Pauker and Jerome Kassirer in 1980.
+
+::: definition Test and treatment thresholds {#def-threshold}
+The **treatment threshold** is the probability of disease above which the clinician would treat without further testing, because the expected benefit of treating exceeds the expected harm. The **test threshold** is the probability below which the clinician would neither test nor treat, because the disease is so unlikely that the harms and costs of testing (including false positives) outweigh the benefits. Between the two thresholds, testing is worthwhile. The thresholds depend on the severity of the disease, the benefits and harms of treatment, and the accuracy, risks and costs of the test.
+:::
+
+For a dangerous disease with a safe, effective treatment (for example bacterial meningitis), the treatment threshold is low: clinicians give antibiotics while still uncertain. For a disease whose treatment is risky (for example thrombolysis), the threshold is higher. A test is wasted if no plausible result would carry the probability across a threshold.
+
+::: example Thresholds in a febrile, drowsy student {#ex-threshold}
+Tomás, 19, a university student, has had a headache and fever for 12 hours. He is drowsy, has neck stiffness and a few non-blanching spots on his legs. The clinician wants a lumbar puncture to confirm the diagnosis before starting antibiotics, which would take at least an hour to arrange. Use the threshold idea to decide what to do.
+
+::: solution
+The pre-test probability of bacterial meningitis or meningococcal sepsis is high: fever, headache, drowsiness, neck stiffness and a non-blanching rash together make it the leading diagnosis. The disease can kill within hours, and the treatment (intravenous antibiotics) is effective and relatively safe. For such a disease the **treatment threshold is low**, and his probability is well above it. No lumbar puncture result could lower the probability enough to justify withholding treatment, and the delay itself is harmful. So antibiotics should be given **immediately** after taking blood cultures (if this causes no delay), following local and national guidance. A lumbar puncture may still be useful later to identify the organism, but it must not delay treatment, and it may be contraindicated by his reduced consciousness or a coagulopathy.
+
+The general lesson: when a disease is dangerous and treatment is safe, act on probability rather than waiting for certainty.
+:::
+:::
+
+## Clinical prediction rules
+
+A **clinical prediction rule** combines several items from the history, examination and simple tests into a score that estimates the probability of a diagnosis or outcome. Well-validated rules are less variable than unaided judgement and make the pre-test probability explicit.
+
+::: definition The two-level Wells score for pulmonary embolism {#def-wells}
+The **two-level Wells score** used in NICE guideline NG158 (2020) for suspected pulmonary embolism assigns points as follows:
+
+| Item | Points |
+|---|---|
+| Clinical signs and symptoms of deep vein thrombosis | 3 |
+| An alternative diagnosis is less likely than pulmonary embolism | 3 |
+| Heart rate above 100/min | 1.5 |
+| Immobilisation for 3 or more days, or surgery in the previous 4 weeks | 1.5 |
+| Previous deep vein thrombosis or pulmonary embolism | 1.5 |
+| Haemoptysis | 1 |
+| Active cancer (treated within 6 months, or palliative) | 1 |
+
+A score **above 4** means pulmonary embolism is **likely**: NICE recommends CT pulmonary angiography (with interim anticoagulation if there is a delay). A score of **4 or less** means it is **unlikely**: a D-dimer test is done first, and imaging only if it is positive.
+:::
+
+Other commonly used rules include **CURB-65** for the severity of community-acquired pneumonia (Confusion, Urea above 7 mmol/L, Respiratory rate 30/min or more, low Blood pressure (systolic below 90 mmHg or diastolic 60 mmHg or less), age 65 or more), the **Ottawa ankle rules** for deciding when an ankle injury needs an X-ray, and **CHA₂DS₂-VASc** for stroke risk in atrial fibrillation. A rule is only as good as its validation in a population like the one in which it is used, and the item "alternative diagnosis less likely" in the Wells score shows that judgement remains part of the rule.
+
+::: example Applying the Wells score {#ex-wells}
+Mrs Kowalski, 54, has sudden pleuritic chest pain and breathlessness 10 days after a knee replacement. Her heart rate is 108/min. There are no signs of deep vein thrombosis and no haemoptysis or cancer. Her chest X-ray is clear and the clinician thinks pulmonary embolism is the most likely diagnosis. Calculate her Wells score and state the next step.
+
+::: solution
+- Clinical signs of DVT: no, 0.
+- Alternative diagnosis less likely than PE: yes, 3.
+- Heart rate above 100: yes, 1.5.
+- Surgery in the previous 4 weeks: yes, 1.5.
+- Previous DVT or PE: no, 0.
+- Haemoptysis: no, 0.
+- Cancer: no, 0.
+
+Total $= 3 + 1.5 + 1.5 = 6$, which is above 4, so pulmonary embolism is **likely**. The next step, following NICE NG158, is CT pulmonary angiography, with interim anticoagulation if it cannot be done promptly and there is no contraindication. A D-dimer should **not** be used to rule out PE here: as [[#ex-ddimer]] showed, a negative D-dimer cannot lower a high pre-test probability enough. After recent surgery the D-dimer is very likely to be raised anyway.
+:::
+:::
+
+## When reasoning goes wrong
+
+A **diagnostic error** is a failure to establish an accurate and timely explanation of the patient's health problem, or to communicate it to the patient. The US National Academies report *Improving Diagnosis in Health Care* (2015) concluded that most people will experience at least one diagnostic error in their lifetime. Errors arise from system factors (missing results, poor handover, workload) and from cognitive factors, and usually from both.
+
+::: definition Common cognitive biases {#def-bias}
+A **cognitive bias** is a systematic tendency in judgement that can lead to error. Biases often seen in clinical reasoning include:
+
+- **Anchoring**: fixing on the first impression and failing to adjust when new information arrives.
+- **Premature closure**: accepting a diagnosis before it has been adequately confirmed, and stopping the search for alternatives. It is the most frequently identified cognitive cause of diagnostic error.
+- **Availability**: judging a diagnosis as more likely because it comes easily to mind, for example after a recent memorable case.
+- **Confirmation bias**: seeking or giving weight to evidence that supports the favoured diagnosis and discounting evidence against it.
+- **Base-rate neglect**: ignoring the prevalence of a condition when interpreting a finding.
+- **Diagnostic momentum**: a label attached early, by the patient, a referrer or a colleague, gathering certainty as it passes from person to person.
+- **Search satisficing**: stopping the search once one abnormality is found (one fracture on an X-ray, one cause of anaemia), missing a second.
+- **Affective bias**: letting feelings about a patient (frustration, liking, stigma) influence judgement. People with mental illness, learning disability or a history of drug use are at risk of having physical symptoms attributed to their known condition, sometimes called **diagnostic overshadowing**.
+- **Overconfidence**: believing one's judgement to be more accurate than it is.
+:::
+
+::: example The frequent attender with abdominal pain {#ex-bias}
+Mr Barnes, 46, has attended the emergency department six times in a year with abdominal pain related to alcohol. He arrives at 3 a.m. smelling of alcohol, with epigastric pain. The handover from the previous shift says "known alcohol abuser, usual pain". He is given analgesia and left to sleep. Four hours later he is hypotensive with a rigid abdomen. CT shows a perforated duodenal ulcer. Identify the cognitive factors and how they might have been countered.
+
+::: solution
+- **Diagnostic momentum**: the handover label ("usual pain") passed on as a diagnosis without a new assessment.
+- **Affective bias and diagnostic overshadowing**: the man's alcohol use and frequent attendance lowered the team's suspicion and possibly their wish to engage. The stigmatising phrase "alcohol abuser" may have contributed; "a man who drinks alcohol heavily" describes the same fact without the judgement.
+- **Anchoring and premature closure**: the presentation was matched to previous visits without checking whether anything was different.
+- **Base-rate neglect, reversed**: frequent attenders have higher, not lower, rates of serious disease than the general population, and alcohol raises the risk of peptic ulcer, pancreatitis and other surgical causes.
+
+Countermeasures: a full examination and observations at every attendance, regardless of previous diagnoses; asking explicitly "what is different this time?" and "what must I not miss?"; checking blood tests (including amylase or lipase) and repeating observations before deciding; neutral, non-stigmatising language in handovers; and a culture in which any member of the team can ask for a reassessment.
+:::
+:::
+
+### Reducing diagnostic error
+
+No technique removes bias, and simply knowing about biases does not prevent them. Some strategies do help:
+
+- **A diagnostic time-out**: before closing a diagnosis, pause and ask: what else could this be? What doesn't fit? What is the worst thing this could be, and have I excluded it?
+- **Considering the opposite**: deliberately looking for evidence against the favoured diagnosis.
+- **Checklists** for common presentations and for "must not miss" conditions.
+- **Second opinions** and discussion with colleagues, including asking a colleague to take a fresh look before seeing your conclusion.
+- **Feedback**: following up patients to learn whether the diagnosis was right. Clinicians who never learn their outcomes cannot calibrate their judgement.
+- **System measures**: reliable result follow-up, good handover and time to think ([[clinical-skills/records-handover]], [[clinical-skills/patient-safety]]).
+- **Involving the patient**: telling patients what the working diagnosis is, what should happen next, and what would suggest it is wrong (safety-netting).
+
+::: warning A diagnosis in the notes is a hypothesis, not a fact
+Diagnoses recorded by others, including your own previous entries, may be wrong. When a patient fails to improve, has a new symptom, or something does not fit, return to the raw data: retake the history, re-examine, and look at the investigations yourself. "Known to have X" should prompt the question "how was X established?"
 :::
 
 ::: quiz
-A 30-year-old's 'viral' pericarditis has not improved at 72 hours. The reasoning-hygiene response is:
-- [ ] Continue the plan; viral pericarditis takes weeks
-- [ ] Escalate analgesia and review next month
-- [x] Treat non-response as data: re-open the differential (bacterial, TB, autoimmune, malignant, PE-mimic), re-examine and re-investigate against the original script's expected features
-- [ ] Repeat the troponin only
+A test for a disease has sensitivity 90% and specificity 90%. In a population where the prevalence is 1%, roughly what proportion of positive results are true positives?
+- [ ] About 90%
+- [ ] About 50%
+- [x] About 8%
+- [ ] About 1%
 ::: solution
-**Treatment failure is a diagnostic data point; the missing expected features and the unexpected present ones re-open the case - [[#def-dual]], [[#def-bias]].**
+Of 1,000 people, 10 have the disease and 9 test positive. Of the 990 without it, 10% (99) test positive. So 9 of the 108 positive results are true: about 8%. Ignoring the low prevalence and assuming "90% accurate" means a 90% chance of disease is base-rate neglect.
 :::
 :::
 
-::: widget plot
-f: 100*0.55+40/(1+exp(-(x-6))); 45; 3; 1; 60
-x: 0, 12
-y: 0, 100
-labels: \text{clinician years of pattern library (illustrative)},\ \text{percent}\ \text{correct first-hypothesis rate for typical presentations};\ \text{atypical-presentation accuracy (rises then falls without analytic checking)};\ \text{premature-closure rate with debiasing prompts (inverted, scaled)};\ \text{'I would notice' confidence (over-estimation band)}
-caption: Expertise helps typical cases and can hurt atypical ones; prompts restore the balance ([[#def-dual]], [[#def-bias]]).
+::: history
+The Reverend **Thomas Bayes**'s essay on inverse probability was published in 1763, after his death, by his friend **Richard Price**. Its use in medicine was proposed by **Robert Ledley** and **Lee Lusted** in a 1959 paper in *Science*, "Reasoning foundations of medical diagnosis". In the 1970s **Arthur Elstein** and colleagues studied how physicians actually reason and found that they generate a small number of hypotheses early, while **Amos Tversky** and **Daniel Kahneman** (1974) described the heuristics and biases of judgement under uncertainty. **Stephen Pauker** and **Jerome Kassirer** introduced the threshold approach to testing in 1980. From the 2000s **Pat Croskerry** and others applied the psychology of bias to emergency medicine, and the 2015 National Academies report made diagnostic error a recognised patient-safety problem.
 :::
 
 ## Where this leads
 
-The history techniques that feed the reasoning are in [[clinical-skills/history-taking]], the examination's likelihood ratios in [[clinical-skills/physical-examination]], test thresholds and predictive values in [[clinical-skills/laboratory-tests]] and [[epidemiology-ebm/diagnostic-tests]], the safety-net and documentation culture in [[clinical-skills/patient-safety]] and [[clinical-skills/records-handover]], and the diagnostic-error epidemiology's home discipline in [[public-health/health-systems-economics]].
-
-::: history
-**Clinical reasoning's formal study began where its teaching lived: the bedside. Reid and the Scottish clinicist tradition of 'practical instruction' and the Oslerian maxim that the lessons are at the bedside set the era; Sir William Gull and the Great-Lecture tradition codified diagnostic 'schools'. The first scientific challenge was behaviourist: in the 1940s, the radiologist and the pathologist could be wrong about their own agreed findings (the Rorschach-era reliability studies), which planted the seed that diagnostic performance was measurable and imperfect. The cognitive revolution of the 1970s-80s produced the field's twin discoveries: that experts reason by recognition-primed matching rather than algorithm (the Chase and Simon chess-memory work transplanted to medicine by Elstein and Shulman and others at Case Western, whose 'medical problem solving' monograph of 1978 founded the experimental study of clinical inference and found physicians' probability estimates badly calibrated), and that the same mechanism generates systematic errors - the Tversky-Kahneman heuristics-and-biuses programme (availability and representativeness and anchoring, 1973-1974) supplied the very vocabulary - 'representativeness' and 'base-rate neglect' - that the 1970s and 1980s diagnostic-cognition studies used to document it in doctors. The 1980s-90s brought the sociotechnical turn: Patel and Groen's 'cognitive representations' models, the illness-script account (Feltovich and Barrows' and Schmidt and Norman and Boshuizen's 'templates in the first 10 years, pathophysiology later' expertise studies), and Croskerry's 2000s papers that transplanted the dual-process model (then Kahneman's own System-1/System-2 generalisation of the 1990s work of Stanovich and West and the earlier 'intuitive experts' literature of Dienes and Pochtvi-adjacent scholars) into clinical medicine with an educational programme attached. The cognitive-bias-for-medicine taxonomy (Croskerry's ' Cognitive Debiasing' and the University of Colorado and Virginia Commonwealth groups, with mnemonic toolkits and the federal patient-safety agency's cognitive-bias index for incident investigators) turned the psychology into a checklist. The error became an epidemiological object: the 2000s Institute-of-Medicine 'Crossing-the-Quality-Chasm'-adjacent diagnostic-error turn, the 2009-2015 series of studies (the Optimizing-Diagnosis-in-Medicine symposia and the Singh-Sikka-Hidden-adjacent primary-care analyses), the 2013 American-Board-Internal-Medicine-and-Joint-Commission-adjacent recognition that 'wrong diagnosis' claims are a top malpractice-payout category, and the 2015 National Academies report 'Improving Diagnosis in Health Care' which defined diagnostic error for the first time by consensus and issued the recommendations (reporting systems, team-based verification, patient involvement) now propagating through accreditation. The threshold-and-decision-rule lineage belongs to evidence-based medicine proper: the Pauker-and-Kassirer threshold-model of 1980 (the test-treatment-threshold geometry every chapter cites without naming), the Jaeschke-Guyatt-Gigerenzer-and-Sackett likelihood-ratio formalisation for the Rational-Clinical-Examination series from 1993, and the decision-rule canon (Wells, Centor, Ottawa, NICE's pathway algorithms) that operationalised probabilistic reasoning as policy. Its unresolved debates are this chapter's live wires: the efficacy of debiasing (the 2010s trials showing prompts help some errors and worsen others, and the metacognitive-training programmes' cautious evidence), the calibration-feedback studies' uncomfortable numbers, the 'AI as second system-1' argument now that diagnostic algorithms compete with clinical gestalt on their home turf, and the persistent finding that the strongest error-correlates are organisational (fatigue, hierarchy, discontinuity) rather than personal - the reason the reasoning course keeps ending in the patient-safety chapter.** - [[clinical-skills/patient-safety]], [[epidemiology-ebm/diagnostic-tests]], [[clinical-skills/history-taking]].**
-:::
+The tools in this chapter are applied to laboratory results in [[clinical-skills/laboratory-tests]] and to imaging in [[clinical-skills/medical-imaging]]. The statistics of test accuracy, including receiver operating characteristic curves and the design of diagnostic accuracy studies, are covered in [[epidemiology-ebm/diagnostic-tests]]. The system factors that contribute to diagnostic error are covered in [[clinical-skills/patient-safety]].
 
 ::: summary
-- Clinical thinking runs on two tracks: fast recognition built from thousands of outcome-feedback cases (illness scripts) and slow analytic checking; expertise is mostly a better library plus the metacognition to know when to audit it.
-- Reasoning is probabilistic: pretest probability from base rates and findings' likelihood ratios drives test choice and interpretation; the written differential keeps this honest and transfers across clinicians.
-- The must-not-miss lists per presentation are memorised because those diseases kill on the second visit; the safety grammar is probability, certainty and an explicit plan-if-wrong with a time and trigger.
-- The commonest errors are stopping and anchoring: premature closure, label persistence and diagnostic momentum; treatment failure and 'worse than usual' are the cheapest re-openers available.
-- Debiasing is procedural, not aspirational: forced alternatives, premortems, diagnostic timeouts, probabilistic language in notes, calibration feedback, and second fresh eyes (the only proven satisfaction-of-search countermeasure).
-- Uncertainty transmitted well ('what we don't know yet, what we are ruling out, when to return') is a diagnostic tool; most late diagnoses are re-opened too late, not unknowable.
+- Diagnosis is a cycle of generating hypotheses, discriminating between them and updating; a working diagnosis is provisional.
+- Experts combine fast pattern recognition (System 1) with deliberate analysis (System 2), using analysis to check intuition when stakes are high or the pattern does not fit.
+- Generate differentials anatomically, pathologically or physiologically, and always list the dangerous diagnoses.
+- Post-test odds equal pre-test odds times the likelihood ratio; the meaning of a result depends on the pre-test probability.
+- Test only when a result could move the probability across a test or treatment threshold.
+- Clinical prediction rules such as the two-level Wells score make the pre-test probability explicit and determine whether a D-dimer or imaging comes first.
+- Premature closure, anchoring, availability, confirmation bias, diagnostic momentum and diagnostic overshadowing are common causes of error; time-outs, considering alternatives, feedback, good systems and safety-netting reduce it.
 :::
 
 ## Exercises
 
-::: exercise Name the bias {level=1}
-Identify the reasoning failure in each and give its countermeasure: (a) 'her D-dimer is negative so it cannot be PE' in a high-probability patient; (b) the pulmonary embolism found on CT performed for the third vague admission this month - found only because someone re-ordered the scan protocol; (c) the junior who does not repeat the ankle examination after the X-ray shows the fracture and misses the ligament injury.
+::: exercise Probability and odds {level=1 check="0.25"}
+Convert a probability of 20% to odds, as a decimal.
 ::: solution
-**Three-errors-three-tools ([[#def-bias]], [[#def-differential]]): (a) this is a test-logic error before a bias (the predictive-value arithmetic: a negative D-dimer only excludes in low-or-intermediate pretest probability - the error is treating a test as an oracle, and the countermeasure is the threshold model drilled with numbers until it is reflex); (b) the sunk-cost-and-momentum case (the 'vague admissions' framing that predated the imaging and the 'third time' pattern that should trigger a differential reset, with the countermeasure the re-ordering doctor used: treat repeated-unresolved as its own alarm and the 'unexplained-recurrent' protocol with named owner), and (c) satisfaction-of-search with an orthopaedic signature (the found-lesion-terminates-the-scan reflex; the 'the fracture explains nothing about the ligaments' rule and the examined-after-imaging doctrine and the triple-read culture of MSK clinics where the clinical question outranks the film); and the shared grammar - 'each error is system-1 stopping early, each countermeasure is a forced re-opener, and the note that records the re-opener used is the one that survives the review.'**
+$\text{odds} = 0.2/(1 - 0.2) = 0.2/0.8 = 0.25$, also written as 1 to 4.
 :::
 :::
 
-::: exercise Write the problem representation {level=2}
-Convert this into a working problem representation and ranked differential (with discriminating features and next actions): 54-year-old woman, 3 weeks of fatigue, dyspnoea on stairs, heavy periods, pallor; Hb 78 g/L, MCV 71, ferritin 6, platelets 520.
+::: exercise Likelihood ratios from a 2×2 table {level=1 check="8"}
+A test has sensitivity 80% and specificity 90%. Calculate its positive likelihood ratio.
 ::: solution
-**Representation-then-differential ([[#def-differential]], [[blood/anaemia]], [[gastrointestinal/bowel-disease]]): the representation - 'middle-aged-woman, subacute-symptoms, microcytic-hypochromic-iron-deficiency-anaemia-with-reactive-thrombocytosis-and-menstrual-history - the phrase that encodes the two-question framework: where is the iron going (blood loss versus malabsorption) and why now (the menorrhagia's cause AND the adult iron-deficiency's mandatory second question: the gastrointestinal tract); the ranked differential with discriminators - '1) menstrual blood loss with fibroids or adenomyosis or the LNG-not-fitted (the pelvic history and exam and the USS), 2) GI loss - the coeliac that presents exactly like this and the neoplasm the age makes non-optional (the faecal-immunochemical-and-gastroscopy-colonoscopy-decision-per-current-guidelines: iron-deficiency-anaemia-in-adults-is-a-GI-cancer-pathway-trigger-until-the-cause-is-proven-elsewhere), 3) the malabsorption-and-diet-and-PPI-and-H-pylori contributors, 4) the rare (the haemoglobinopathy-trait-coexistence and the hereditary-haemorrhagic-telangiectasia-epistaxis-history); the actions - 'the transferral-decision-on-symptoms-and-ischaemic-heart-status, the IV-versus-oral-iron logic, the 'treat-and-still-investigate' rule, and the 'iron-repleted-and-still-tired' re-look (the thyroid-and-coeliac-and-chronic-disease-overlap); and the safety net - 'the 'what-makes-you-call-me-back' sentence and the ownership of the pending endoscopy booked with a date, because the iron-deficiency-anaemia-loss-to-follow-up is a documented cancer-delay pathway.'**
+$\text{LR}^+ = 0.80/(1 - 0.90) = 0.80/0.10 = 8$. Its negative likelihood ratio is $0.20/0.90 \approx 0.22$.
 :::
 :::
 
-::: exercise Calibrate {level=2}
-Your surgical team's 'I'm confident this is not appendicitis' decisions are audited against final outcomes: stated 95 percent sure cases are wrong 15 percent of the time. Interpret and design the correction.
+::: exercise Generate a differential {level=1}
+Use the surgical sieve to list at least six causes of acute confusion in an 80-year-old woman.
 ::: solution
-**Calibration-therapy ([[#def-dual]], [[#def-bias]], [[surgery/acute-abdomen]]): the read - 'that gap is overconfidence of the classic type (the confidence-accuracy mismatch that the medical-education calibration literature documents across domains), and in appendicitis it is dangerous in both directions (the perforation discharged and the normal appendix operated; the female-presentation-delay and the 'normal-CT-and-still-perforated' case reports live in this gap); the correction is feedback, not lecture - 'the outcome-pairing loop (every suspected-or-excluded-appendicitis tracked to final diagnosis and logged against the clinician's stated probability for a period, the calibration-curve plotted with them - the literature's strongest debiasing is seeing one's own curve), the decision-aids it should sit on (the Alvarado-and-AAPS-and-paediatric-score-adjacent scores plus the ultrasound-surgical-gaze structure, used to anchor rather than overrule), and the explicit action thresholds (the '95-percent-not-appendicitis must carry a written safety net with time-and-trigger, an information sheet and a review route; the '80 percent probably not' gets the scan-or-admission-discussion), because calibration without consequences is trivia; and the culture clause - 'the junior whose 60-percent-felling was right and recorded gets the same airtime as the confident one, because the re-opener culture and the honest-probability culture are the same culture.'**
+Infective: urinary tract infection, pneumonia, meningitis or encephalitis (less common). Metabolic: hyponatraemia, hypercalcaemia, hypoglycaemia, uraemia, hypoxia or hypercapnia. Vascular: stroke, subdural haematoma (especially after a fall or on anticoagulants). Drug-induced: opioids, anticholinergic drugs, benzodiazepines, alcohol or benzodiazepine withdrawal. Neoplastic: brain metastases, hypercalcaemia of malignancy. Others: urinary retention, constipation, pain, dehydration, post-ictal state. Many patients have more than one contributor (Hickam's dictum).
 :::
 :::
 
-::: exercise Run the diagnostic timeout {level=3}
-Write the operating procedure for a ward diagnostic-timeout service: trigger criteria, participants, agenda, documentation, and the three governance objections you expect and their answers.
+::: exercise Post-test probability {level=2 check="round(100*(0.3/0.7*8)/(1+0.3/0.7*8))"}
+A patient has a pre-test probability of 30% for a condition. A test with positive likelihood ratio 8 is positive. What is the post-test probability, as a percentage rounded to the nearest whole number?
 ::: solution
-**Timeout-that-works ([[#def-bias]], [[#def-differential]], [[clinical-skills/patient-safety]]): triggers - 'the unexplained-72-hours-with-organ-support-or-steroid-or-antibiotic-attempts-failing, the 'three-admissions-or-emergency-attendances-in-six-weeks-same-problem', the 'patient-or-family-saying-nothing-adds-up', the 'rarity-cluster' flags (the three-plus-same-cancer-sign-attendants-and-the-'what-are-we-all-missing' cases that boards only hear about after the mortality review); the participants - 'the-stopping-rule (the case presented by the most-junior-doctor-who-never-saw-it, the-consultants-speaking-after-the-nurses-because-the-hierarchy-suppression-literature-is-the-point), the-diagnostician-or-undifferentiated-education-programme-lead, the-pharmacy-and-pathology-and-radiology-seats-which-in-every-report-of-this-intervention-pay-for-themselves-in-the-first-six-months (the 'we saw that on the 2019 film' and the 'the drug level was never drawn' findings); the agenda - 'the problem-representation rebuilt in one slide, the-structured-rewrite-of-the-differential (the 'what-does-not-fit and what-have-we-not-asked' pass, the 'zebras-considered-by-prevalence-not-by-snobbery' clause), the-'tests-that-would-settle-it' list (the genetic-panel-and-rare-disease-and-tumour-marker-and-autoimmune-panels-and-when-not-to), the 're-examine-the-patient-in-the-room' rule that timeout programmes keep relearning from their best cases, and the-owners-with-dates-for-every-hypothesis-left-open; documentation - 'the timeout note (differential as it stood, what was pursued, what was dropped and why) which is the medico-legally precious document and the learning asset; and the governance objections answered - '1) 'we will timeout everything' - no, triggers are explicit and audited; 2) 'it blames the team' - it is structurally blame-free, past-labelled cases included, which the just-culture policy names; 3) 'it delays discharge' - the timeout exists for the patients who are not discharging, and the beds-and-anxiety economics of the unexplained stay pay for the hour.'**
+Pre-test odds $= 0.3/0.7 = 0.4286$. Post-test odds $= 0.4286 \times 8 = 3.429$. Post-test probability $= 3.429/4.429 = 0.774$, which is **77%**.
 :::
 :::
 
-::: exercise Reason with the algorithm {level=2}
-An ED deploys an ECG-AI that flags 'possible atrial fibrillation' and 'low ejection fraction'; sensitivity and specificity both around 90 percent in its papers. Two months in, troponin and echo demand rises and one discharge is defended as 'the algorithm said it was fine'. Set the policy.
+::: exercise A Wells score {level=2 check="4.5"}
+A 38-year-old man has pleuritic chest pain and a swollen, tender left calf with pitting oedema. His heart rate is 104/min. He has no other risk factors, and the clinician thinks another diagnosis is at least as likely as pulmonary embolism. Calculate his two-level Wells score and say what it means.
 ::: solution
-**Algorithmic-reasoning-hygiene ([[#def-bias]], [[epidemiology-ebm/diagnostic-tests]], [[clinical-skills/laboratory-tests]]): the mathematics first - '90/90 in a low-prevalence setting yields a positive predictive value that is modest at best (the base-rate arithmetic the lab chapter drills: half the alerts can be false in a 5-percent-prevalence population), and 'the algorithm said fine' is the same oracle-error as 'the D-dimer was negative', now wearing a neural net; the policy - 'the-'decision-support-not-decision-substitution'-clause (the alert triggers the clinician's probability update and a stated action, never a discharge or an order by itself), the-'the-alert-is-a-new-finding-to-be-reasoned-with'-documentation rule ('AI-flagged-low-EF; examination for congestion; BNP; echo decision...'), and the calibration audit against the trust's own population (the manufacturer's numbers are a different prevalence), including the harm-directions the papers skip (the alert-fatigue and the incidental-echo-cascade and who owns a 'possible AF' that never gets an event); the training - 'the same module that teaches 'a negative test only excludes within its pretest-probability band' now teaches it for algorithms, because the error is not technological, it is epistemic and it has a forty-year citation history; and the review of the defended discharge - 'not a witch-hunt but a systems test: if the culture let 'the algorithm said fine' become a discharge rationale, the safety-net-and-documentation policy, the escalation route, and the AI vendor's intended-use contract are the findings, and the patient (who may or may not have had a PE) gets the candour process while the pathway gets rewritten.'**
-:::
-:::
-::: example The vaccine-phobic chest pain {#ex-anchoring}
-A 35-year-old presents with two days of atypical chest pain; triage documents 'vaccine-hesitant conspiracy types, attention-seeking'; the ECG shows subtle PR depression and the troponin is missed by the phlebotomist because 'it is only a panic attack'; by hour six the pain is positional and the pericarditis is obvious.
-::: solution
-**Countertransference-is-a-findings-auditor ([[#def-bias]], [[#def-differential]], [[clinical-skills/patient-safety]]): the two errors stacked - 'the affective tag ('attention-seeking') that does the anchoring work the referral letter does in other cases, and the team's quiet permission to downgrade a physiological complaint because of the patient's expressed views - a documented failure mode in the diagnostic-error literature's 'personality-attribution' category, and in the equal-harm literature's findings that deprivation, ethnicity and labelled complexity all predict less-investigated pain; the professional rule - 'the countertransference is data about the encounter, never data about the myocardium: the patient you like least gets the same pretest-probability arithmetic, and if the reaction is strong enough to note, it is strong enough to declare ('I find myself dismissing this - let us re-look together'); the medicine of hour six - 'positional pain and the PR-depression and the friction-rub and the troponin-with-ECG-timing that this unit's chest-pain protocol should have made automatic at hour two regardless of the man's opinions about boosters; and the fix that outlives the case - 'the 'difficult-patient' language retired from templates in favour of the formulation (the fear and the history and the system-failures that produce the presentation, which is how the psychiatry chapter's same advice reads), the re-audit of presentations-attending-'labelled' patients and their investigation rates, and the candour with this patient for the six hours, delivered without the 'you should have insisted' tone that turns a pericarditis into a complaint.'**
+Clinical signs of DVT: 3. Alternative diagnosis less likely than PE: no, 0. Heart rate above 100: 1.5. Immobilisation or surgery: 0. Previous VTE: 0. Haemoptysis: 0. Cancer: 0. Total $= 3 + 1.5 = 4.5$. This is above 4, so PE is **likely**: under NICE NG158 the next step is CT pulmonary angiography (with interim anticoagulation if it is delayed), not a D-dimer. A small change in one item (a heart rate of 98 instead of 104) would have moved him into the "unlikely" group, which is a reminder that scores simplify a continuous judgement.
 :::
 :::
 
-::: example The weight loss nobody owned {#ex-undifferentiated}
-A 70-year-old loses 9 kg over six months; the GP's 'watch and see' is reasonable in isolation, A&E finds nothing on a blood screen and a chest X-ray, the outpatient clinic repeats the bloods; each clinician's plan is defensible and no one owns the unresolved differential; at month ten the pancreatic head is finally imaged.
+::: exercise Sequential tests {level=2 check="round(1000*(0.05/0.95*6*4)/(1+0.05/0.95*6*4))/1000"}
+A patient's pre-test probability of a condition is 5%. Two independent findings are both present, with positive likelihood ratios 6 and 4. What is the post-test probability, as a proportion rounded to three decimal places?
 ::: solution
-**Unowned-uncertainty-is-a-pathway ([[#def-differential]], [[#def-bias]], [[gastrointestinal/pancreas-biliary]]): the reasoning truth - 'watchful waiting is a diagnostic strategy with two obligations: a stated hypothesis list and a stated re-look date; what happened here was the strategy without the obligations, produced by the distribution of the patient across four clinicians each of whom was locally rational; the base-rate honesty - 'unexplained weight loss in the over-65s carries a several-percent cancer probability within the year (the Danish and UK primary-care risk-rule studies), which is not a reason to scan everyone and is exactly a reason for the risk-stratified pathway with named ownership; the fix that works in the audits - 'the one-doctor-owns-the-undifferentiated rule (the GP as the default owner with explicit review intervals because continuity is the test), the national-and-trust weight-loss pathways (the bloods-and-CRP-and-faecal-occult-and-chest-X-ray first tier with the CT-thorax-abdomen-pelvis threshold and the 'if-the-track-not-the-tally' re-review triggers, and the flagging systems that make the ten-month case impossible rather than improbable); and the safety-net craft - 'the 'come back sooner if...' made specific (the new pain, the jaundice, the appetite change), the patient armed with the numbers and the words ('unexplained weight loss needs an owner - ask who yours is'), because the diagnostic-delay literature's consistent finding is that patients re-consulting with the same concern are the system's best sensor and we keep answering them with reassurance instead of re-evaluation.'**
+Pre-test odds $= 0.05/0.95 = 0.05263$. Post-test odds $= 0.05263 \times 6 \times 4 = 1.263$. Post-test probability $= 1.263/2.263 = 0.558$. Multiplying likelihood ratios is valid only if the findings are conditionally independent; if both reflect the same underlying process, this overestimates the probability.
 :::
 :::
 
-::: exercise Use the threshold model {level=2}
-Apply the Pauker-Kassirer test-treatment thresholds to the outpatient's incidental thyroid nodule and the ED's low-risk headache: name the three lines, where each patient sits, and what each line's crossing commits you to.
+::: exercise Should we test? {level=3}
+A 25-year-old woman with no risk factors has two days of right-sided chest wall pain after moving house. The pain is reproduced exactly by pressing on a costal cartilage. Her observations are normal, and the clinician estimates her probability of pulmonary embolism at about 1%. A colleague suggests a D-dimer "to be safe". Discuss whether this is a good idea.
 ::: solution
-**Thresholds-out-loud ([[#def-dual]], [[#def-differential]], [[clinical-skills/laboratory-tests]]): the geometry - 'below the test-threshold, doing nothing beats testing (the disease probability is so low that the false positives and harms dominate); between the thresholds, test when the result will change management; above the treat-threshold, treating beats testing unless the treatment carries serious cost or harm; the nodule sitting - 'an 8-mm nodule without risk features in a low-risk patient can legitimately sit below the biopsy threshold (the 'no-test-today-is-a-decision-with-surveillance-dates' documentation), while the 25-mm-hypoechogenic-exophthalmos-family-history nodule is above the do-something threshold and commits you to the FNA-with-the-cytology-rules-and-the-molecular-adjacents rather than the annual-ultrasound-maybetude; the headache - 'the thunderclap-with-normal-CT-at-6-hours case sits between thresholds and the decision is explicitly the LP-versus-CTA-versus-wait-hours debate the guidelines resolve differently (which is why the reasoning is documented: the threshold you used is the audit trail); and the commit rule - 'crossing a line out loud ('probability below the testing threshold; safety net as follows; review if changed') is the sentence that converts probabilistic reasoning into defensible medicine, and the failure mode it prevents is the medicine of the unavailable decision: the scan ordered to reassure someone and the LP avoided because the team could not say the numbers aloud.'**
+Her pre-test probability is likely below the test threshold. A D-dimer has low specificity, so a positive result is common in people without PE (for illustration, with specificity 45%, more than half of people without PE test positive). A positive result would raise the probability only slightly (LR⁺ about 1.7, so from about 1% to under 2%) but would lead to CT pulmonary angiography, with radiation, contrast, cost and the chance of incidental findings. A negative result would add little to an already low probability. Clinical decision tools such as the PERC rule are designed for this situation: in a low-risk patient who meets all its criteria, no test is recommended. A better plan is a clear explanation and specific safety-netting (sudden breathlessness, haemoptysis, leg swelling). The test is not "safe" if its likely outcome is harm from further investigation.
 :::
 :::
 
-::: exercise Write for the next doctor {level=1}
-Rewrite these three note fragments to carry your reasoning: (a) 'Chest pain, probably GORD'; (b) 'Confusion, UTI on urine protocol'; (c) 'Abdo pain - surgical causes excluded'.
+::: exercise A diagnostic time-out {level=3}
+A 67-year-old man is admitted with "community-acquired pneumonia" and treated with antibiotics. On day 4 he remains breathless with a fever, and his chest X-ray shows a right lower-zone opacity that is unchanged. Perform a diagnostic time-out: list the questions you would ask and the alternative diagnoses you would consider.
 ::: solution
-**Reasoning-in-the-record ([[#def-differential]], [[#def-bias]]): (a) '48F, central burning post-meal pain, no exertional component, no risk-equivalent features, ECG done-and-normal, troponin below the assay's-treat-threshold; ACS considered-and-why-not documented; working diagnosis GORD with PPI trial and explicit return criteria (exertional change, syncope, persistence at 2 weeks - review rather than re-assure)'; (b) '84F, acute confusion with dysuria and urine nitrite-positive - but the delirium protocol's hunt continues: CXR examined (no consolidation documented), calcium-and-glucose-and-B12 checked, medication-review found the new amitriptyline that is the probable co-author; treating both and stopping the anticholinergic; delirium bundle and re-look at 24h; asymptomatic-bacteriuria rule respected - the symptoms were her confusion and dysuria, so this is treated as a symptomatic infection'; (c) '36M, colicky RLAC pain, no rebound or guarding on serial exams at 08:00 and 12:00 documented, CRP-and-WCC trajectory flat, US with appendix seen and normal; surgical causes actively excluded by named modalities and times - not by silence; medical differentials worked (the gastroenteritis-and-mesenteric-and-testicular-exam-done-and-normal); plan: 12-hour review with the 'any-worsening-come-back-immediately' script and surgical numbers given'. The pattern: the differential named, the tests' thresholds stated, the negatives dated, the re-look scheduled - the note that reasons is the note that gets believed when it matters.'**
+Questions: Was the original diagnosis well founded (history, examination, imaging, inflammatory markers)? What doesn't fit? Is the patient taking and absorbing the antibiotic, and is the organism likely to be covered? Has something new happened? Alternatives and complications: a parapneumonic effusion or **empyema** (look for dullness, perform ultrasound); a **lung abscess**; an **obstructing tumour** causing post-obstructive pneumonia (smoking history, weight loss, haemoptysis; consider CT); **pulmonary embolism** with infarction; **tuberculosis**; aspiration; an atypical or resistant organism; a non-infective cause such as organising pneumonia, vasculitis or heart failure; and a new hospital-acquired infection or drug fever. The time-out turns "not responding to antibiotics" from a reason to change the antibiotic into a reason to question the diagnosis.
 :::
 :::
-
-::: exercise Teach the re-opener {level=2}
-Design the three-minute re-opener intervention for your hospital's safety-campaign week: the tool, the trigger list and the behavioural evidence it rests on.
-::: solution
-**The-3am-re-opener ([[#def-bias]], [[clinical-skills/patient-safety]]): the tool - 'a pocket and EPR-resident card with four questions asked at every closure moment: 'What else could this be?' (forces the alternative), 'What would break this diagnosis?' (the missing-expected-feature check), 'What must I not miss, and have I excluded it to my comfort threshold?' (the must-not-miss list per presentation), and 'If I am wrong, what happens and by when?' (the safety net with time); the triggers written on the same card - 'the 'non-response-at-72-hours, the 'three-attendances-six-weeks', the 'patient-or-relative-says-something-is-wrong-and-I-cannot-explain-it', the 'test-that-does-not-fit-the-story-is-the-story, and the 'label-inherited-not-earned (the referral diagnosis you never personally tested); the behavioural engineering - 'the prompt lives at the decision point (the EPR order-closure pop-up and the discharge-summary template field 'differential considered', the formats that the prompting-and-checklist literature show beat posters), the 'two-challenge'-adjacent permission for juniors ('I am re-opening this' is a named speech act that cannot be sanctioned, per the speaking-up policies), and the ward-round norm that the re-opener used is praised even when it is wrong (the culture studies' rule: you get the reporting you reward); and the evidence honesty for the campaign's sceptics - 'the debiasing-single-intervention trials' mixed results (prompts fix premature closure more reliably than availability errors), so the campaign's metric is not 'fewer biases' but the countable: the 'differential-documented' rate on notes audit, the re-open-before-harm cases logged as near misses, and the time-to-reconsideration on the cases that turn bad, because reasoning safety, like flight safety, is measured in how fast the system notices its own first mistake.'**
-:::
-:::
-

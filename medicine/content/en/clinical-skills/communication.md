@@ -1,141 +1,368 @@
-Clinical communication is the procedure with the largest evidence base and the least teaching time: the consultation, the handover, the disclosure, the family meeting, the difficult conversation about risk, uncertainty and dying. **This chapter covers the anatomy of the medical interview (the Calgary-Cambridge map with its agenda-setting and signposting machinery, the listening and questioning ratios and their outcome data, motivational interviewing for change conversations), the structured tools that carry information safely between clinicians (SBAR and its family, bedside handover, read-back rules), the hard conversations (breaking bad news with SPIKES, risk communication in absolute numbers, prognostication with its honesty grammar, and the goals-of-care frameworks), conflict and repair (complaints, apologies, angry relatives, disagreement in front of patients), and the special conditions in which the same skills must be re-tuned: interpreters, capacity, children, autism and learning disability, and the consultation by telephone and screen.**
+Most of medicine happens in conversation. A diagnosis is usually suggested by what the patient says, a treatment only works if the patient understands it and chooses to take it, and many complaints about care are complaints about how something was said rather than what was done. Communication is therefore a clinical skill in the same sense as auscultation: it has a structure, it can be observed and assessed, and it improves with deliberate practice and feedback.
 
-## The interview
+This chapter sets out a model of the consultation, the micro-skills of listening and explaining, how to share decisions and talk about risk, and how to handle the conversations that students find hardest: bad news, anger, uncertainty and working through an interpreter. The next chapter, [[clinical-skills/history-taking]], uses these skills to build the diagnostic history.
 
-::: definition The medical interview as a procedure {#def-interview}
-**The map: the Calgary-Cambridge guide's five purposes - developing shared understanding, incorporating the patient's world into the decision, building the relationship, finding the patient's voice, and enabling effective treatment - operationalised as the choreography of a short consultation. The opening sets the agenda: inviting the patient's own list early (the 'what else is troubling you' move) costs seconds and prevents the doorknob disclosure, the final-revelation effect that wastes weeks. The history is taken with a working ratio of open to closed questions - the classical films showed doctors interrupting within twenty seconds, and the correction is simply to let the first uncensored minute run - with periodic summaries so errors of understanding surface while they are cheap. The closing is a plan in the patient's words: teach-back ('tell me what we've decided so I can check I've explained it'), explicit red flags, a written or on-screen summary, and a defined return point. The listening data is unfashionable and durable: patients who disclose their main concerns earlier have better outcomes and adherence, and the computer is the modern interruption - hence the micro-skills of narrating what you are typing and showing the screen. The advice half knows that information alone changes little: the change conversation borrows motivational interviewing - open questions, affirmations, reflections, summaries; rolling with resistance rather than chasing it; decisional balance; elicit-provide-elicit instead of the lecture - with the honest caveat that the spirit matters more than the technique and the eleven-minute slot is the real barrier every implementation paper names. The shared-decision layer is numeracy: absolute risks with denominators beat relative risks, framing reliably moves choices (98 percent survival and 2 percent mortality are the same surgery and different decisions), decision aids improve knowledge and reduce regret, and the consent standard the law now assumes is understanding, not signature - which makes risk communication a clinical skill to be taught rather than a leaflet to be handed over. Finally the safety net: the teach-back, the 'what would you do if this changed overnight' script, and the plan written where the patient can read it at 3am.**
+## Why communication is a clinical skill
+
+Good communication is not a matter of being pleasant. It changes outcomes that can be measured.
+
+- **Diagnostic accuracy.** The history provides most of the information used to reach a diagnosis in general clinics. A patient who is interrupted early may never mention the symptom that matters.
+- **Adherence.** People cannot follow a plan they did not understand or did not agree with. A large share of prescribed medicines for long-term conditions are not taken as prescribed, and poor explanation is one of the modifiable causes.
+- **Safety.** Misunderstood instructions about anticoagulants, insulin or when to seek help are a recognised cause of harm. So are failures of communication between professionals, which [[clinical-skills/records-handover]] and [[clinical-skills/patient-safety]] cover.
+- **Experience and trust.** Patients judge care largely by whether they felt listened to and respected, and complaints and litigation often follow a conversation that went badly.
+
+The skills are learnable. They are taught with observed consultations, simulated patients and video review because people are poor judges of their own communication: almost every clinician believes they let patients finish speaking, and recordings show that many do not.
+
+::: definition The consultation and its tasks {#def-consultation}
+A **consultation** is a structured meeting between a clinician and a patient (and often a relative or carer) with two kinds of task. **Content tasks** are what is discussed: the problem, the findings, the explanation and the plan. **Process tasks** are how it is discussed: the order, the questions, the listening, the structure and the relationship. A consultation can get the content right and still fail because the process went wrong, for example when a correct plan is explained so fast that the patient leaves without understanding it.
 :::
 
-## Carrying information
+## A model of the consultation
 
-::: definition Handovers, referrals and telephone medicine {#def-handover}
-**Handover is where information dies, in nearly every deterioration and medication-error review, so the structured tools earn their drills: SBAR (situation, background, assessment, recommendation) and its variants - ISBAR adding identity, SBAR-R adding resources, SOAP for the ward round, and I-PASS in paediatrics with its illness-severity score and its 'if-then' contingency clauses. What the trials actually credit is modest and specific: a standard format, an explicit opportunity to ask questions (two-way handovers have fewer errors than monologues), read-back for anything dosed or directed ('read-back is not rude'), bedside handover that includes the patient's own words about what worries him, and protected handover with interruption control - the 'no bleeps during handover' pilots whose failure to hold tells you the unit's real safety culture. The referral letter is a clinical object: it should carry the reason for referral and the specific question the referrer wants answered (the vagueness of 'for assessment and management' is a documented intake-screen complaint), give red flags prominence rather than burying them, and be copied to the patient where candour and records culture now standardise it. The telephone is a clinical room: introduce and verify identity and number, read back doses and durations, name the escalation ladder and who is answerable at what hour so that 'I emailed the registrar' cannot become a dead end. And the written record carries the same ethic: clarity for the next reader, no abbreviations that kill, and documentation in the voice of evidence-of-a-conversation-held rather than a decision defended - the tone the coroners praise and the claims lawyers quote.**
+Several models describe the consultation. The one most widely taught in UK and Canadian medical schools is the **Calgary–Cambridge guide**, developed by Suzanne Kurtz and Jonathan Silverman in the 1990s and later expanded with Juliet Draper.
+
+::: definition The Calgary–Cambridge guide {#def-calgary}
+The **Calgary–Cambridge guide** divides the consultation into five sequential stages:
+
+1. **Initiating the session**: preparing, greeting, introducing oneself and one's role, and identifying all the reasons for the visit.
+2. **Gathering information**: exploring the problems from both the biomedical and the patient's perspective.
+3. **Physical examination**.
+4. **Explanation and planning**: giving the right amount and type of information, helping the patient to understand and remember it, and reaching a shared plan.
+5. **Closing the session**: summarising, agreeing next steps and safety-netting.
+
+Two tasks run throughout all five stages: **providing structure** (making the organisation of the consultation visible) and **building the relationship** (rapport, empathy and involving the patient).
 :::
 
-## The hard conversations
+The guide is not a script. It is a map that tells you where you are, what has not yet been done and which skills belong to each stage. An experienced clinician may move back and forth between stages; the guide simply makes sure nothing essential is missed.
 
-::: definition Bad news, risk, uncertainty and goals {#def-hard}
-**The bad-news protocols descend from the studies of the 1960s that found most doctors withheld cancer diagnoses and from the patient-rights reversal that followed; the working instrument is SPIKES: set up the room (private, seated, tissue to hand, who should be present); perceptual check ('what do you already understand?'); invitation (how much do you want to know - honoured in both directions, because the right not to know is real); knowledge in chunks, a warning shot before the words, then silence - six words followed by sixty seconds; empathy with the emotion labelled rather than argued ('I can hear how frightening this is' rather than 'don't worry'); and strategy and summary with honest hope - hope for the best, planning for the worst - and the follow-up appointment in the diary before the family leaves the room. Prognostication has its own grammar: best-case, worst-case and average ranges instead of single-number death-lines; the 'I wish' reframes of the palliative literature ('I wish I could be wrong that this is curable'); and the recognition that uncertainty is the message, not a failure of the message - families remember the delivery more reliably than the statistics. The risk conversation follows the numeracy rules: absolute risk with a denominator, magnitudes translated into meanings ('your risk goes from 5 in 100 to 7 in 100 - what does that change for you?'), and a documented teach-back so that understanding, not the signature, is what consent rests on. The goals-of-care architecture - VitalTalk, PROCEED, the serious-illness conversation templates - rehearses the same four moves: what you understand, what you hope for, what worries you most, and what choices that leaves us; values before procedure menus; and recommendation when asked, or when families stall, because 'what do you think we should do?' is a question clinicians are entitled to answer. The special conversations are the same skills with visible settings: the interpreter triad (speak to the patient, schedule for three times the length, weigh the family-member-as-interpreter hazards); the capacity conversation under the Mental Capacity Act (unsupported attempts first, time and place and simplification adjustments, and the unwise-but-capacitous refusal respected - the consent chapter's ground); the child (ask what they already worry about, use concrete honest words - 'died', not 'gone to sleep' - and answer the sibling questions); and the autism and learning-disability adaptations (advance visitor information, reasonable adjustments by default rather than by fight) which are not extras but the consultation with its assumptions corrected.**
+### Opening: finding out why the patient has come
+
+The first minute decides much of what follows. A good opening has a few elements:
+
+- Check the patient's name and date of birth, introduce yourself by name and role, and explain what will happen ("I'm a medical student; I'll ask some questions and then examine you, and Dr Patel will join us").
+- Make sure the patient is comfortable and that the setting is as private as it can be.
+- Ask an open question ("What has brought you in today?") and then **listen without interrupting** until the patient has finished.
+- **Screen for further concerns** before exploring any one of them: "Is there anything else you wanted to talk about today?" Repeat until the answer is no.
+- **Agree an agenda**: "You've mentioned your knee and the tiredness. Shall we start with the tiredness, since that's worrying you most?"
+
+The reason for screening is that the first problem a patient mentions is often not the most important one. In a 1984 study Beckman and Frankel found that physicians interrupted patients' opening statements after a mean of about 18 seconds. A 2019 study of recorded consultations by Singh Ospina and colleagues found that clinicians asked about the patient's agenda in only about a third of visits, and when they did, they usually interrupted within a median of 11 seconds. Patients who were allowed to finish took only a few seconds longer. Letting the patient speak costs little time and saves the "Oh, and by the way, doctor…" at the door.
+
+### Gathering information: the open-to-closed cone
+
+::: definition Open and closed questions {#def-questions}
+An **open question** invites the patient to tell the story in their own words ("Tell me about the pain"). A **closed question** asks for a specific fact, often yes or no ("Does the pain go into your arm?"). A **leading question** suggests its own answer ("The pain isn't worse when you breathe, is it?") and should be avoided because patients tend to agree. A **multiple question** asks several things at once ("Any cough, fever or weight loss?") and produces an unreliable single answer.
 :::
 
-::: example The doorknob disclosure {#ex-doorknob}
-A 12-minute consultation ends; as the patient stands she says 'oh, and I've been coughing blood I think'. The doctor, facing four waiting patients, says 'that sounds worrying, can you come back Thursday?'
+The standard technique is the **open-to-closed cone**. Begin each new area with open questions, which give the patient's own account and often reveal unexpected information. Then narrow down with focused open questions ("What happens when you walk uphill?") and finally closed questions to check specific features. Moving to closed questions too early turns the history into a checklist that misses whatever the checklist does not contain.
+
+Several **facilitation skills** help the patient to keep talking:
+
+- **Attentive silence**: a pause of a few seconds often brings out more information.
+- **Encouragers**: nodding, "Go on", "Mm".
+- **Echoing**: repeating the last words as a prompt ("Worse at night?").
+- **Clarifying**: "What do you mean by dizzy?" A patient's "dizzy" can mean vertigo, light-headedness or unsteadiness, and the three have different causes.
+- **Summarising**: periodically restating what you have heard ("So the pain started three weeks ago, it's in the centre of your chest, and it comes on when you walk to the bus stop. Have I got that right?"). Summaries show you have listened, correct misunderstandings, and give you a moment to think.
+- **Signposting**: telling the patient where the conversation is going ("I'd now like to ask some questions about your general health that I ask everyone").
+
+### The patient's perspective
+
+Two people with the same disease can have very different illnesses. One person with chest pain is sure it is indigestion; another lost a father to a heart attack at the same age and is terrified. Their needs from the consultation are different.
+
+::: definition Ideas, concerns and expectations {#def-ice}
+The **patient's perspective** is often summarised as **ICE**:
+
+- **Ideas**: what the patient thinks is wrong or causing the problem.
+- **Concerns**: what worries them about it.
+- **Expectations**: what they hope will happen in the consultation (a test, a referral, reassurance, a sick note).
+
+To these many teachers add the **effect on life**: how the problem affects work, family, sleep and mood.
+:::
+
+Asking about ICE does not mean doing whatever the patient expects. It means that the explanation at the end can address what the patient actually thinks and fears. A patient who believes their headaches are a brain tumour will not be reassured by "it's tension-type headache" unless someone also says "I know you were worried about a tumour; here is why I don't think this is one".
+
+Patients often give **cues** rather than direct statements of concern: a sigh, a change of tone, a passing remark ("My neighbour had the same thing before she died"). Picking up a cue ("You mentioned your neighbour. Is that something you've been worrying about?") is one of the most valuable and most often missed skills.
+
+### Empathy and rapport
+
+::: definition Empathy {#def-empathy}
+**Empathy** is understanding the patient's situation and feelings and communicating that understanding back to them. It has two parts: the understanding, and the **empathic statement** that shows it ("It sounds as if the last few weeks have been really frightening"). Empathy differs from **sympathy**, which is feeling sorry for someone; empathy keeps the focus on the patient's experience rather than the clinician's reaction.
+:::
+
+A useful scheme for responding to emotion is **NURSE**, from the VitalTalk programme for serious-illness communication:
+
+- **N**ame the emotion: "You seem worried."
+- **U**nderstand: "I can see why that would be upsetting."
+- **R**espect: "You've coped with a lot."
+- **S**upport: "We'll work through this together."
+- **E**xplore: "Tell me more about what's worrying you."
+
+Non-verbal behaviour carries much of the message. Sit at the same level, face the patient, keep appropriate eye contact (bearing in mind that norms differ between cultures), and do not type while the patient is telling you something important. When you must use a computer, say so: "I'm just going to look at your last blood results; bear with me a moment."
+
+## Explaining and planning
+
+Explanation is the part of the consultation that clinicians most often do badly. Studies of recall show that patients forget a large part of what they are told, and remember the first things said and the things they understood best.
+
+::: theorem Principles of effective explanation {#thm-explain}
+Information is more likely to be understood, remembered and acted on when the clinician:
+
+1. **Finds out what the patient already knows** and wants to know before starting.
+2. **Gives information in small chunks** and **checks understanding** after each (*chunk and check*).
+3. **Uses plain language** and explains any technical word that has to be used.
+4. **Categorises and signposts**: "There are three things I want to explain: what I think is going on, the tests, and the treatment."
+5. **Repeats and summarises** the key points, and gives written or visual material to take away.
+6. **Relates the explanation to the patient's own ideas and concerns**.
+7. **Asks the patient to explain back** what they will do (*teach-back*).
+:::
+
+::: proof Why these principles work {#prf-explain}
+Working memory holds only a few items at once, and anxiety reduces it further. Chunking keeps each piece within that limit; checking after each chunk catches misunderstanding before the next piece is built on it. Signposting gives the listener a framework to hang the pieces on, which improves recall. Linking the explanation to the patient's own beliefs replaces a mistaken model instead of adding a competing one that may be forgotten. Teach-back tests understanding directly: asking "Do you understand?" invites a polite "yes", whereas "Can you tell me how you're going to take the new tablets, so I know I've explained it clearly?" reveals gaps. Framing teach-back as a check on the clinician's explanation, rather than a test of the patient, keeps it respectful.
+:::
+
+**Health literacy** is the ability to obtain, understand and use health information. Limited health literacy is common, is not visible from appearance or education, and is associated with worse outcomes. The practical response is a **universal precautions** approach: use plain language and teach-back with everyone rather than trying to guess who needs it.
+
+Words that seem simple to clinicians are often misunderstood. "Positive" results sound good but may mean disease is present; "chronic" may be heard as "severe"; "benign" and "malignant" may not be understood at all; "lesion", "unremarkable" and "negative" need translating.
+
+::: example Explaining a new diagnosis of type 2 diabetes {#ex-explain}
+Mr Okafor, a 54-year-old bus driver, has an HbA1c of 58 mmol/mol on two occasions, which meets the diagnostic threshold for type 2 diabetes. How should the explanation be structured?
+
 ::: solution
-**Agenda-setting that left no room ([[#def-interview]], [[clinical-skills/history-taking]]): the error is designed-away physics - the 'what else is worrying you' question asked in minute two costs thirty seconds; unasked, it arrives at the door and consumes the next week. Haemoptysis deserves same-day assessment or an expedited slot under the suspected-cancer urgency rules, not a ritual re-appointment, and the safety net must be explicit: 'if you cough up more than a spoonful, go to the emergency department now.' The recovery is honest: acknowledge that the list squeezed the consultation, offer the today option and name the trade (whose slot moves), and put the red flags in writing before he leaves. The practice-level fix is the one the cancer-delay literature keeps requesting: triage before the door opens, consultation-length data, and genuine same-day assessment capacity - plus the doctor's own debrief, because fury at the list is moral injury, and this chapter ends where the advocacy chapters begin.**
+1. **Find out what he knows and fears.** "Has anyone mentioned diabetes to you before? What do you know about it?" He says his mother had diabetes and lost a leg, and he is worried about his driving licence.
+2. **Signpost.** "I'd like to explain three things: what the test shows, what diabetes means for you, and what we can do about it. Then I'll answer your questions about driving."
+3. **Chunk and check.** Explain in plain terms that the blood test measures average blood sugar over about two to three months and that his is high enough to be called diabetes. Pause: "Does that make sense so far?"
+4. **Address his concerns directly.** Amputation in his mother's generation was linked to years of high sugar and foot problems that were not picked up; regular foot checks and good control make it much less likely. On driving, explain that the rules for bus drivers depend on treatment, that diet and many tablets do not stop him driving, and that some treatments carry rules he would need to follow; say that you will check the current DVLA guidance with him rather than guessing.
+5. **Plan together** and **teach-back.** Agree the first steps (structured education course, lifestyle changes, a medicine if appropriate following current NICE guidance) and ask him to explain the plan back.
+6. **Give written information** and a follow-up appointment.
+
+The structure took little extra time, and each part addressed something the patient cared about.
 :::
 :::
 
-::: example The handover that wasn't {#ex-handover}
-An ICU nurse hands over a new admission to the ward nurse in a corridor: '92 on the vent, septic, DNR, family knows'. The ward team learns at teatime that the ceiling review was still pending with the consultant, that 'family knows' was the daughter's voicemail, and that the patient had asked twice that morning who was coming to collect his son.
-::: solution
-**Structure is respect ([[#def-handover]], [[emergency-critical-care/critical-care]]): the corridor monologue broke every element the handover trials credit. There was no two-way exchange with an invited question - the nodding nurse was never asked what 'DNR' actually meant. There was no bedside, so the patient was a subject, not a participant, and his question about his son - the soft information that is not soft - went unmentioned. And there was no paper: a treatment ceiling lives on a signed, dated, reviewable form, not in an adjective. The correct instrument is an SBAR at the bed with 'if-then' contingencies ('if he desaturates again tonight, call me before anyone changes the oxygen'), a ceiling that does not exist in conversation until it exists in the notes, the family communication documented with what was said to whom, and the patient's request passed on within the hour. The unit-level fixes are the protected handover with interruption control and the receiver reading back the three things that could kill him tonight. Because 'DNR said in a corridor is a rumour - and rumours reach families before they reach notes.**
+### Shared decision-making
+
+Many decisions in medicine have more than one reasonable option, and the right choice depends on what the patient values. **Shared decision-making** is the process by which the clinician and the patient reach such a decision together.
+
+::: definition Shared decision-making {#def-sdm}
+**Shared decision-making** is a collaborative process in which a clinician and a patient choose tests or treatments together, based on the best available evidence about the options and their benefits and harms, and on the patient's values, preferences and circumstances. NICE guideline NG197 (2021) recommends it as part of routine care in England. A simple prompt that patients can use is **BRAN**: what are the **B**enefits, the **R**isks, the **A**lternatives, and what happens if I do **N**othing?
 :::
+
+A common three-step description of the process is: **team talk** (explaining that there is a choice and that the patient's view matters), **option talk** (describing the options, including doing nothing, with their benefits and harms), and **decision talk** (helping the patient to weigh the options and reach a decision). Decision aids, such as option grids or NICE patient decision aids, support this.
+
+In UK law, the duty to share information was set out by the Supreme Court in **Montgomery v Lanarkshire Health Board (2015)**: a doctor must take reasonable care to ensure the patient is aware of any **material risks** of a recommended treatment and of reasonable alternatives. A risk is material if a reasonable person in the patient's position would be likely to attach significance to it, or if the doctor knows or should reasonably know that this particular patient would. The GMC's guidance *Decision making and consent* (2020) follows the same principle. Consent and capacity are covered in [[medical-ethics-law/consent-capacity]].
+
+### Talking about risk
+
+Numbers are central to shared decisions and are easily misunderstood, by clinicians as well as patients.
+
+::: definition Ways of expressing risk {#def-risk}
+Suppose a treatment lowers the risk of an event from a baseline risk $p_0$ to a treated risk $p_1$.
+
+- The **absolute risk reduction** is $\text{ARR} = p_0 - p_1$.
+- The **relative risk reduction** is $\text{RRR} = \dfrac{p_0 - p_1}{p_0}$.
+- The **number needed to treat** is $\text{NNT} = \dfrac{1}{\text{ARR}}$: how many people need the treatment for one of them to avoid the event over the stated time.
+:::
+
+Relative risks sound larger than absolute risks and can mislead when used alone. "This halves your risk" may mean a fall from 2 in 1,000 to 1 in 1,000. Good practice is to:
+
+- give **absolute risks** with a time frame ("Of 100 people like you, about 10 would have a heart attack or stroke in the next 10 years");
+- use **natural frequencies** ("10 in 100") rather than percentages or decimals where possible;
+- use the **same denominator** throughout ("10 in 100" and "7 in 100", not "1 in 10" and "1 in 14");
+- show both the chance of benefit and the chance of harm;
+- use pictures such as icon arrays, which many people find easier than numbers.
+
+::: example A statin conversation in numbers {#ex-statin}
+Ms Rahman, 62, has an estimated 10-year risk of heart attack or stroke of 16%. Suppose (as an illustrative figure) that a statin reduces this risk by about a quarter in relative terms. Express the benefit in a way she can use.
+
+::: solution
+Baseline risk $p_0 = 0.16$. With a 25% relative reduction, $p_1 = 0.16 \times 0.75 = 0.12$.
+
+$\text{ARR} = 0.16 - 0.12 = 0.04$, so $\text{NNT} = 1/0.04 = 25$ over 10 years.
+
+In natural frequencies: "Out of 100 women like you, about 16 would have a heart attack or stroke in the next 10 years without a statin. If all 100 took a statin, about 12 would. So about 4 of the 100 would avoid one, and the other 96 would have had the same outcome either way." She can then weigh that against the burden of a daily tablet and the chance of side effects. The decision is hers; the clinician's job is to make the numbers clear.
+:::
+:::
+
+The figure below shows how the number needed to treat depends on baseline risk for a fixed relative risk reduction. The same treatment is much more worthwhile, in absolute terms, for someone at high risk.
+
+::: widget plot
+f: 1/(x*r)
+x: 0.02, 0.4
+y: 0, 150
+sliders: r=0.25:0.05:0.6:0.05
+labels: \text{NNT} = 1/(p_0 \times \text{RRR})
+caption: Number needed to treat against baseline risk $p_0$ (as a proportion) for a relative risk reduction $r$ set by the slider. A simplified model: real treatment effects vary between groups.
 :::
 
 ::: quiz
-The best evidence-based opening move for a consultation with multiple potential concerns is:
-- [ ] Review the computer record in silence first to save time
-- [ ] Ask a closed question list to be efficient
-- [x] Invite the patient's agenda early ('what would you like to achieve today?') and signal that its items will each be addressed
-- [ ] Outline the clinic's time limits and apologise
+A drug reduces the 5-year risk of a fracture from 4% to 2%. Which description is both accurate and most useful for a patient?
+- [ ] "This drug halves your risk of a fracture."
+- [x] "Out of 100 people like you, about 4 would have a fracture in the next 5 years without the drug and about 2 with it."
+- [ ] "This drug reduces your risk by 50%, so it is very effective."
+- [ ] "The drug works in 98% of people."
 ::: solution
-**Early agenda-setting reduces final-revelation effects and increases accurate problem-identification; silent chart-gazing and defensive apologising both cost the encounter - [[#def-interview]].**
+The second option gives absolute risks with a time frame and a common denominator, so the patient can see that about 2 in 100 benefit. "Halves your risk" and "50%" are true relative statements but hide the small absolute change. "Works in 98%" is wrong: 96 of the 100 would not have had a fracture anyway.
 :::
 :::
 
-::: widget plot
-f: 100*0.35+60*(1-exp(-x/2)); 18; 2; 1; 60
-x: 0, 12
-y: 0, 100
-labels: \text{minutes into consultation (illustrative)},\ \text{percent}\ \text{concerns voiced when agenda is set early};\ \text{concerns voiced without agenda-setting (scaled)};\ \text{recall of plan with teach-back (scaled)};\ \text{recall without teach-back (scaled)}
-caption: Small structural changes alter what patients can say and remember ([[#def-interview]], [[#def-hard]]).
+## Closing the consultation
+
+The close is where the plan becomes action. It should include:
+
+- A brief **summary** of the problem and the plan.
+- **Agreed next steps** for both the patient and the clinician: who will do what, by when.
+- **Safety-netting**: what to look out for, what to do if it happens, and when the patient should be reassessed even if nothing changes. A good safety-net is specific: "If the pain becomes constant, or you notice blood in your urine or a temperature, call the surgery that day or 111 out of hours. If it hasn't settled in two weeks, book to see me again."
+- A **final check**: "Is there anything else you wanted to ask?"
+
+::: warning Safety-netting is not a vague "come back if worse"
+"Come back if it gets worse" gives the patient no idea what "worse" means, how quickly to act or where to go. Many serious missed diagnoses, including meningitis in children and cancers presenting in primary care, involve a first consultation where the safety-net was vague or not recorded. State the specific warning features, the time frame, the route of access, and document what you said.
+:::
+
+## Difficult conversations
+
+### Breaking bad news
+
+**Bad news** is any information that drastically and negatively changes a person's view of their future. What counts as bad news depends on the person: a diagnosis of diabetes may be devastating to someone whose livelihood depends on driving.
+
+::: definition The SPIKES protocol {#def-spikes}
+**SPIKES**, described by Baile and colleagues in 2000 for oncology, is a six-step framework for breaking bad news:
+
+- **S**etting: a private room, sitting down, tissues available, bleep handed to a colleague, the right people present (ask the patient whom they want with them).
+- **P**erception: find out what the patient already knows or suspects ("What have you been told about why we did the scan?").
+- **I**nvitation: find out how much the patient wants to know and how ("Would you like me to go through the results in detail?").
+- **K**nowledge: give a **warning shot** ("I'm afraid the results are not what we had hoped"), then the news in plain words, in small chunks, avoiding jargon and euphemism.
+- **E**motions: respond to the emotion with empathy; allow silence.
+- **S**trategy and summary: when the patient is ready, outline the next steps and summarise; arrange follow-up and say how to get in touch.
+:::
+
+Much of the skill lies in **pacing**. After the news itself, many patients take in little else, so the detailed plan may need a second meeting. Silence is acceptable and often necessary. Words matter: "cancer" should be said plainly if that is the diagnosis, because euphemisms such as "a growth" or "some abnormal cells" leave people uncertain.
+
+::: example Telling a son that his father has died {#ex-death}
+A 79-year-old man has died in the emergency department after a cardiac arrest at home. His son has just arrived. How would SPIKES apply?
+
+::: solution
+- **Setting.** Take the son to a quiet relatives' room with a nurse who will stay with him. Introduce yourselves, sit down, and confirm who he is.
+- **Perception.** "What do you know about what happened to your father this morning?" He says the ambulance crew told him his father collapsed and they were "working on him".
+- **Invitation and knowledge.** In this situation the son needs to know at once. Give a warning shot and then the news in plain words: "I'm very sorry. I have some very bad news. Your father's heart stopped at home. The paramedics and our team tried to restart it for a long time, but we weren't able to. I'm very sorry, he has died." Use the word "died", not "passed away" or "we lost him", which can be misheard.
+- **Emotions.** Stop and allow silence. Respond to what he shows: shock, crying, anger or questions. "I can see this is a terrible shock."
+- **Strategy and summary.** When he is ready: whether he would like to see his father, who else needs to be told, what happens next (the role of the coroner or medical examiner when relevant), and the bereavement support available. Offer to answer questions now or later.
+:::
+:::
+
+### Anger, complaints and apology
+
+Anger is usually a response to fear, loss of control, pain, waiting or a perceived failure of care. The useful approach is to **acknowledge** the emotion, **listen** without becoming defensive, **find out** the specific concern, **apologise** for what went wrong or for the person's experience, and **explain** what will happen next. An apology is not an admission of legal liability. Since 2014 English health and care providers have had a statutory **duty of candour** when a notifiable safety incident occurs, and every doctor and nurse has a professional duty to be open and honest when things go wrong ([[clinical-skills/patient-safety]]).
+
+Personal safety comes first: if a person is threatening or violent, leave, get help and follow local policy.
+
+### Uncertainty
+
+Many consultations end without a firm diagnosis. Patients generally cope better with honest uncertainty than with false certainty, provided they have a plan: "I don't think this is anything serious, but I can't be completely sure yet. Here is what we'll do, and here is what would make me want to see you sooner." This is safety-netting applied to uncertainty.
+
+## Communicating across barriers
+
+### Language and interpreters
+
+When the patient and clinician do not share a language well enough for a medical conversation, a **professional interpreter** should be used. NHS England guidance discourages relying on family members, and children should not be used except in an emergency, because family interpreters may filter or change what is said, cannot be expected to know medical terms, and may be the subject of the problem (for example in domestic abuse).
+
+Good practice with an interpreter:
+
+- Brief the interpreter beforehand on the purpose of the consultation.
+- Speak **directly to the patient** in the first person ("How long have you had the pain?"), not "Ask her how long…".
+- Use short sentences and pause to allow interpretation.
+- Avoid idioms and jargon.
+- Allow extra time and check understanding with teach-back through the interpreter.
+- Record the interpreter's name or ID in the notes.
+
+### Hearing, sight, learning disability and cognitive impairment
+
+Ask how the person prefers to communicate. For people who are deaf, a British Sign Language interpreter may be needed; for people who lip-read, face them in good light and do not cover your mouth. Since 2016 the NHS **Accessible Information Standard** has required services to identify, record and meet people's communication needs. People with learning disabilities may carry a hospital passport describing how they communicate and what they need; family and carers often know best how to help. Use simple words, one idea at a time, and pictures where useful. Never assume that a person lacks capacity because of a diagnosis or a communication difficulty.
+
+### Remote consultations
+
+Telephone and video consultations lose much non-verbal information. They need clear identification of the patient, explicit checks on understanding, a lower threshold for face-to-face assessment when something does not fit, and carefully documented safety-netting.
+
+::: example A consultation through a telephone interpreter {#ex-interpreter}
+Mrs Nguyen, 71, speaks Vietnamese and little English. She is brought to a clinic appointment by her 14-year-old grandson, who offers to interpret. She has been losing weight. What should the clinician do?
+
+::: solution
+Thank the grandson but explain that the service uses a professional interpreter for every medical conversation. A child should not interpret: he may not know the words, the conversation may cover things his grandmother would not want him to hear (weight loss raises the possibility of cancer), and it places an unfair burden on him. Book a telephone or video interpreter. Brief the interpreter: this is a new-patient consultation about weight loss. Speak directly to Mrs Nguyen in short sentences, ask open questions, pause for interpretation, and check her ideas and concerns. At the end, ask her to explain the plan back through the interpreter, and record the interpreter's ID. If the grandson stays in the room, ask Mrs Nguyen privately (through the interpreter) whether she is happy for him to be present.
+:::
+:::
+
+::: history
+Medicine's interest in the conversation itself is old. The Hippocratic writings advise on the physician's manner at the bedside. In the 1950s the psychoanalyst **Michael Balint** ran seminars with general practitioners in London, published as *The Doctor, His Patient and the Illness* (1957), which argued that the doctor's own behaviour acts like a drug, with effects and side effects. In 1976 **Patrick Byrne and Barrie Long** analysed audio recordings of over a thousand British general-practice consultations in *Doctors Talking to Patients* and showed how doctor-centred most of them were. From the 1980s communication became a taught and examined subject: **Suzanne Kurtz** and **Jonathan Silverman** published the Calgary–Cambridge guide in the 1990s, and **Walter Baile**, **Robert Buckman** and colleagues described SPIKES in 2000. Communication stations are now a standard part of the OSCE and of postgraduate examinations.
 :::
 
 ## Where this leads
 
-The history the interview delivers is in [[clinical-skills/history-taking]], consent and capacity conversations in [[medical-ethics-law/consent-capacity]], the goals-of-care consultation in [[geriatrics-palliative/palliative-care]] and [[emergency-critical-care/critical-care]], candour and apology in [[clinical-skills/patient-safety]], and the psychiatric application in [[psychiatry/psychiatric-assessment]].
-
-::: history
-**The modern study of the medical interview begins with what it replaced: the bedside round of Osler's era, where the patient was a text read aloud to students. The correction came from psychological medicine: Michael Balint's London seminars for GPs from 1953 - the 'doctor as drug' tradition of his 1957 book - and the communication research of Toronto and Cleveland in the 1960s, which put cameras into consulting rooms and counted what actually happened. The finding that survived is the interruption study: physicians spoke first and often, classically within twenty seconds, a statistic that has been re-measured and re-confirmed for fifty years. The teaching structures followed - the Calgary and Cambridge guides of 1989-1991 by Kurtz, Silverman and colleagues, the OSCE invented by John Harden's group in Barcelona in 1975, which made communication examinable long before it was consistently taught, and the accreditation waves that turned 'communication skills' from a courtesy into a curriculum. Truth-telling supplies the moral history: the 1961 surveys found most American physicians withheld a cancer diagnosis; the patient-rights movement, the liberalisation of medical ethics teaching, and the informed-consent jurisprudence running from Salgo and Canterbury in the United States to Montgomery v Lanarkshire in Scotland reversed the norm within a generation - one of the fastest ethical turnarounds on record, achieved before anyone proved most patients actually wanted every fact (the later cross-cultural surveys showing wide preference variation made 'how much do you want to know?' the adult question). Risk communication matured through behavioural economics: Tversky and Kahneman's framing and availability work of the 1970s-80s, the Gigerenzer school's natural-frequencies campaigns from the 1990s, and the decision-aids literature of the Cochrane collaboration's patient-branch trials. Bad-news protocols systematised what oncology had learned painfully: Maguire's Belfast work on responding to emotion in the 1990s, Baile and colleagues' SPIKES paper of 2000, and the serious-illness-conversation frameworks (VitalTalk, PROCEED, the 'know-hope-worry-matters' rehearsals) of the 2010s palliative-care renaissance. Handover science arrived from aviation and anaesthesia: the SBAR tool attributed to the US Navy's nuclear-submarine communication work, migrated to Kaiser and then the WHO surgical checklist of 2008; I-PASS from Boston's paediatric residents in 2007 after handoff-education trials; and the reading-back and closed-loop rules that telephone handover policies had resisted for decades. The digital turn is still mid-flight: the eye-on-screen studies of the computerised-record era, the show-the-screen interventions, portal messaging and the consultation by video whose pandemic-accelerated trials kept finding that, with attention to setting and eye-line, it can match face-to-face for most work and reliably loses the examination, the crisis, and the family who cannot get the app to work. Its unresolved chapter is time: every communication advance has competed with a consultation length set by other people's budgets, and the field's honest summary since Balint is that the skills are learnable, the measurements are real, and the shortage is structural.** - [[clinical-skills/history-taking]], [[clinical-skills/patient-safety]], [[medical-ethics-law/consent-capacity]].**
-:::
+The communication skills in this chapter are the foundation for the diagnostic history in [[clinical-skills/history-taking]], for explaining test results in [[clinical-skills/laboratory-tests]] and for the handover conversations in [[clinical-skills/records-handover]]. Consent and capacity are covered in [[medical-ethics-law/consent-capacity]], and conversations about serious illness and the end of life in [[geriatrics-palliative/end-of-life-care]].
 
 ::: summary
-- The consultation is a procedure with steps that change outcomes: early agenda-setting, open-then-close questioning with summaries, teach-back of the plan, and explicit safety-netting.
-- Advice fails quietly; change conversations work better with the motivational-interviewing spirit (partnership, acceptance, evocation) than with the lecture, and risk is communicated in absolute numbers with denominators and frames watched.
-- Handover is a safety barrier: structured (SBAR/I-PASS), two-way with invited questions, read-back for directions, at the bedside, with contingencies written - and treatment ceilings that exist only on signed forms.
-- Bad news travels by protocol and presence: SPIKES, chunk-then-silence, labelling emotion, honest hope, and the follow-up booked before anyone leaves; prognostication speaks in ranges and 'I wish' sentences.
-- Goals-of-care conversations follow values before procedures (know-hope-worry-matters) and end in recommendations when asked; candour and apology are communication treatments with measured effects on trust, litigation and learning.
-- Special settings are re-tunings of the same skills: interpreters (speak to the patient), capacity (unsupported first, unwise-but-free), children (concrete honesty), autism and learning disability (adjustments by default), and the screen (deliberate about the eye-line, the silence and who cannot join).
+- A consultation has content tasks and process tasks; the Calgary–Cambridge guide organises them into five stages, with structure and relationship-building running throughout.
+- Let the patient finish their opening statement, screen for further concerns ("anything else?") and agree an agenda.
+- Use the open-to-closed cone, facilitation, clarification and regular summaries; explore the patient's ideas, concerns and expectations, and pick up cues.
+- Explain in small chunks, check understanding, use plain language, link the explanation to the patient's beliefs and confirm with teach-back.
+- Share decisions where there are reasonable options; give absolute risks with a time frame and a common denominator, and translate benefit into an NNT or natural frequencies.
+- Close with a summary, agreed next steps and a specific, documented safety-net.
+- Use SPIKES for bad news, acknowledge emotion with empathic statements (NURSE), use professional interpreters, and adapt communication to each person's needs.
 :::
 
 ## Exercises
 
-::: exercise Open the consultation {level=1}
-Write the first ninety seconds of an 11-minute appointment requested by the patient 'for a blood test result and something else'. Include the agenda and its negotiation.
+::: exercise Open, closed or leading {level=1}
+Classify each question as open, closed, leading or multiple, and rewrite any poor ones: (a) "Tell me about your breathing." (b) "You haven't been coughing up blood, have you?" (c) "Do you get chest pain, palpitations or swollen ankles?" (d) "Does the pain wake you at night?"
 ::: solution
-**The scripted-unscripted opening ([[#def-interview]]): the sequence - 'greet seated, name-and-role, the screen turned or narrated ('I'm reading your notes as we talk so you know what I'm typing'), consent for the examination if likely; then the invitation: 'you've asked for the result and something else - what would you like us to leave here having dealt with today?' and the negotiation in plain words: 'the result will take two minutes and it's good news; let's keep fifteen for your other thing - is that the right order?' The evidence bits: the uncensored opening invitation doubles the chance the real worry is voiced, naming each agenda item's slot prevents the queue at the door, and if the second problem is the fatigue she has minimised twice already, the agenda bought in minute one is where you find that out. Close the loop at the end with the teach-back and the red-flag sentence.'**
+(a) Open; a good first question. (b) Leading; it invites "no". Rewrite as "Have you coughed up any blood?" (c) Multiple; a single "no" does not tell you which symptom was denied. Ask about each separately. (d) Closed; appropriate later in the cone, once the patient has described the pain in their own words.
 :::
 :::
 
-::: exercise Give the statistic {level=2}
-A 45-year-old woman with a breast-cancer gene variant asks what 'a 30 percent increased risk' means, having read the newspaper headline. Communicate the risk (baseline 5 in 100 rising to 6-7 in 100 - work with these) and check understanding.
+::: exercise Absolute and relative {level=1 check="40"}
+A vaccine reduces the risk of a particular infection over one winter from 10% to 7.5%. How many people need to be vaccinated for one to avoid the infection that winter? Give the exact number.
+::: hint
+Find the absolute risk reduction first.
+:::
 ::: solution
-**Natural-frequencies practice ([[#def-interview]], [[genetics/common-disease-genetics]]): the translation - 'drop the percent: out of every 100 women who reach their sixties, about 5 get breast cancer; with this variant, about 6 or 7 do; so roughly 1 or 2 extra cases in 100 - and the visual: the icon array of 100 dots with the extra ones circled does more than any sentence; then the meaning layer - 'what matters is not the number but what we can do with it: the MRI surveillance and risk-reducing options, each framed the same absolute way at the decision point'; and the check: 'tell me how you'd explain this to your sister tonight' catches the two classic distortions (the relative risk read as near-certain doom, and the small absolute rise read as 'nothing'). The framing discipline: give both directions ('93-94 of 100 will not') without spin, name uncertainty ('the estimate is an average of women like you, not a verdict on you'), and book the genetics and psychology follow-up that the headline-triggered anxiety she arrived with is actually asking for.**
+$\text{ARR} = 0.10 - 0.075 = 0.025$, so $\text{NNT} = 1/0.025 = 40$. The relative risk reduction is $0.025/0.10 = 25\%$.
 :::
 :::
 
-::: exercise Handle the angry spouse {level=2}
-At 21:40 the husband of a deteriorating patient blocks the nurses' station, shouting about 'being fobbed off all day'; staff want security, the consultant is home, and the day's updates happened by text. Run the de-escalation and the repair.
+::: exercise Rewrite in natural frequencies {level=1}
+Rewrite this statement for a patient: "The procedure has a 0.5% risk of major bleeding and a 2% risk of minor bleeding."
 ::: solution
-**Anger-as-information ([[#def-hard]], [[clinical-skills/patient-safety]]): the de-escalation - 'a quiet space and a seated clinician (the escalation studies: anger rises with audience and audience-lessness cuts it), the emotion labelled before the content argued ('you are frightened and furious, and you should be heard - tell me the day as you saw it'), the non-defensive facts conceded fast ('the texts were wrong; I'm sorry - that's on us'), and security called for presence not restraint unless there is imminent danger because the taser-adjacent escalation of a grieving man is the second incident the review will write about; the repair - 'the actual update now, in person, from whoever is clinically responsible tonight with the named person for tomorrow and the direct number, the family's questions written down and answered one by one, and the duty-of-candour log opened that same evening; and the system reading - 'the 'text-casualty' communication failure that the deterioration literature keeps finding is a staffing-and-process fact, so the SEA asks why updates were optional today and what the ward does at 21:40 when the family needs a doctor - and the staff debrief, because the nurse who absorbed the shouting needs the same 'you were not the problem' sentence the husband eventually hears.**
+"Out of 1,000 people who have this procedure, about 5 have a major bleed and about 20 have a minor bleed. The other 975 or so have no bleeding problem." A common denominator (1,000) avoids mixing "1 in 200" and "1 in 50", which people find hard to compare.
 :::
 :::
 
-::: exercise Disagree in front of a patient {level=2}
-At the bedside the GP says 'I'd never take blood thinners for this'; the cardiovascular consultant reviewing with the patient and daughter hears it. Manage the moment, the conversation afterwards, and the record.
+::: exercise The second concern {level=2}
+A 45-year-old woman attends with back pain. Ten minutes into the consultation, as she stands to leave, she says, "Oh, and I found a lump in my breast last week." Explain what probably went wrong at the start of the consultation, and what the clinician should do now.
 ::: solution
-**Dissensus-medicine ([[#def-handover]], [[cardiovascular/vascular-disease]], [[clinical-skills/clinical-reasoning]]): the moment - 'never argue across the patient (the consensus on conflicts-of-clinicians research: public disagreement collapses trust and converts a genuine evidence-difference into a loyalty contest); the script - 'that's a fair difference of view and it matters enough that we should talk properly - give us ten minutes and we'll come back to you together', then the corridor or the joint call: the actual evidence exchanged (indication strength, the numbers, the bleeding-risk trade, whose trial applies to this patient's age and kidneys), the patient's values treated as a legitimate tie-breaker rather than a dodge, and a second-opinion or MDT route if the disagreement is real medicine rather than style. The plan is then delivered jointly, in one voice, with the uncertainty honestly bounded ('we think X; here is what would change my mind'); and the record documents the reasoning and the dissent itself, because a future clinician inheriting this patient deserves to know the question was debated, not papered over - and because the guidelines-era truth is that at the margins, disagreement is how the evidence is audited by the people who have to live with it.'**
+The clinician probably did not screen for further concerns at the opening ("Is there anything else you'd like to talk about today?"), so the agenda was set by the first problem mentioned, which may have felt safer for her to raise. Now the clinician should acknowledge the concern, sit back down and take it seriously: a new breast lump needs a history, an examination and, depending on findings and age, an urgent referral under suspected-cancer pathways. If time genuinely does not allow a full assessment, the minimum is a brief history and examination today or a definite appointment very soon, not a vague invitation to rebook.
 :::
 :::
 
-::: exercise Run the virtual consultation {level=2}
-Your clinic moves 40 percent of follow-ups to video. Two weeks in: GPs report safer records access, patients report mixed experiences, and a serious deterioration was missed on a fortnightly video review of a heart-failure patient. Write the protocol and the review findings.
+::: exercise A heart-failure plan with teach-back {level=2}
+A 68-year-old man with heart failure is being discharged on a diuretic and told to weigh himself daily. Write the questions you would use to check his understanding with teach-back, and say what you would do if he cannot answer them.
 ::: solution
-**Screen-medicine ([[#def-interview]], [[cardiovascular/heart-failure]]): the protocol - 'video where the examination is not the test (the drug-titration reviews, the result conversations, the memory-clinic joint visits with carers present), face-to-face where the body carries the information (the weight-bearing and calf and sacral oedema and JVP findings that the missed decompensation lived in, the first visits, the bad-news appointments, and anyone the team suspects cannot manage the platform); the equity clause (the data-and-device-and-broadband-and-deaf-and-dementia-blind-spots audited, with phone fallbacks and translated materials, because virtual-first reliably selects who can be virtual); the technique (eye-line to camera not screen, the 'can you see and hear me clearly' check, silence tolerated not filled, the family constellation noted off-camera, and the 'what do you have in front of you today' medication-bag-dump that video uniquely improves); the review findings - 'the deterioration was visible in the numbers the video could not see: a two-kilogram weight gain reported vaguely and a phone-triage note nobody escalated - so the fix is not 'more video or less video' but the structured patient-collected weights and symptoms with explicit escalation thresholds attached to every heart-failure review, the standing 'convert to in-person within 48 hours if any red flag' rule, and the documentation that records what was not examinable so the next clinician inherits the uncertainty, not the illusion of a completed review.'**
+Possible questions, framed as a check on your explanation: "So that I know I've explained it clearly, can you tell me when you'll weigh yourself and what you'll do with the number?" "What would make you call the heart-failure nurse?" "Which tablet is the water tablet, and when will you take it?" Expected answers: weigh each morning after passing urine and before breakfast, in similar clothes; call if his weight rises by more than the amount agreed with his team over a few days, or if breathlessness or ankle swelling increases. If he cannot answer, the explanation, not the patient, has failed: re-explain the part he missed in different words, use a written plan with his own target numbers, involve a family member if he wishes, and check again.
 :::
 :::
 
-::: exercise Teach the difficult conversation {level=3}
-Design the half-day communication workshop for ST1 doctors on 'stopping, limits and end-of-life conversations' without turning it into a eulogy for the skills they lack or an insult to the patients it names.
+::: exercise Choosing an interpreter {level=2}
+For each situation, say whether a family member is an acceptable interpreter and why: (a) a cardiac arrest call in which the patient's daughter is the only person who can tell the team what happened; (b) a routine clinic appointment to discuss the results of a cervical screening test, with the patient's husband offering to interpret; (c) an adult patient who prefers her sister to interpret after a professional interpreter has been offered and explained.
 ::: solution
-**Workshop-design-with-teeth ([[#def-hard]], [[geriatrics-palliative/end-of-life-care]], [[medical-ethics-law/end-of-life-ethics]]): the frame stated first - 'these conversations are clinical procedures with known steps and measurable outcomes, not personality gifts; and the room contains people who have had them badly done to them, so the contract is: nothing is role-played that someone here has actually lived. The structure - '30 percent input (the prognostic-uncertainty grammar, ranges and 'I wish' reframes, the know-hope-worry-matters sequence, the withdrawal-of-care language including the legal ground that withholding and withdrawing are equivalent), 50 percent rehearsed practice with trained actors playing the specific archetypes that break juniors (the 'do everything' daughter, the patient who asks 'am I dying?', the colleague who outsources the conversation), 20 percent personal-case reflection with a facilitator who has published or practised the field. The skills drilled: naming probability without cruelty; offering a recommendation and holding silence; the 'we may be treating you in ways that don't help' reframe; the apologetic-system apology; documenting a ceiling so it survives shift change. The safeguards: welfare support visible in the design (the room is emotional because it is real), the right to observe rather than perform, and the faculty of the actors treated as safety equipment. And the evaluation that the literature supports: not satisfaction scores but observed-behaviour follow-ups at three months (do they open the conversation themselves, do they sit down, do they ask the hope question), plus the rota-and-time policy change that gives them the hour the conversation needs - without which the workshop is courage theatre, the failure mode every communication-training audit names.'**
-:::
-:::
-::: example The interpreter in the doorway {#ex-interpreter}
-A 34-year-old new seizure is booked with her husband interpreting; the clinic has a telephone interpreting line but 'she prefers him'; the history starts with the husband answering every question while she waits silently, and mentions 'but he says no one else in the family has had this'.
-::: solution
-**The-triad-done-right ([[#def-interview]], [[nervous-system/epilepsy]]): the settings problem - 'a family interpreter is three compromises at once (she cannot say what she will not say to him - the disclosure about the assault or the alcohol or the contraception that the consultation might otherwise have caught), the accuracy is unauditable (the 'he says' construction should stop the clinician cold: whose words are those?), and the power geometry of the room is now visible (the silent patient answering-to-him is data, not culture, until proven otherwise); the courteous correction - 'thank him warmly, explain that the service pays for a professional interpreter as a matter of routine for everyone (the universal-rule framing removes the insult and the suspicion of insult), offer the woman a moment alone at some point in the consultation as routine too, and let her refuse the professional interpreter only after she has heard why it exists; the seizure-specific history that needs clean triangulation - 'the witness account (the husband's description of the event is the actual evidence - narrated to the interpreter, to the clinician, in that order), the video request, the driving-and-safety conversation that cannot be delegated to a spouse ('this is what the law asks of her, and this is what worries me about tomorrow'), and the confidentiality sentence said to both; and the lesson recorded for the clinic - 'the-'routinely-offered-not-negotiated' interpreter policy with the booking-time flag and the staff who know the number, because the interpreter-in-the-doorway consultation is the one most likely to be re-booked twice before anyone gets a history.'**
+(a) Acceptable in an emergency: immediate information outweighs the drawbacks; arrange a professional interpreter as soon as practicable. (b) Not appropriate: a professional interpreter should be used. The topic is intimate and the husband may filter information; the possibility of coercion or abuse cannot be excluded without speaking to her privately. (c) Usually acceptable if she has capacity and the choice is freely made, but record the offer and her decision, and it is still good practice to speak to her alone with a professional interpreter for part of the consultation, especially for sensitive topics.
 :::
 :::
 
-::: example The apology that was practised {#ex-apology}
-An 81-year-old is found to have a pressure injury that the community nursing notes suggest was 'not visible' for nine days after admission; the family arrives furious, the ward clerk keeps saying 'the hospital's position is', and the nurse who last documented her skin is hiding in the drug room.
+::: exercise Material risk {level=3}
+A surgeon is consenting a 35-year-old professional violinist for carpal tunnel decompression. A rare complication is persistent numbness or weakness of the hand. The surgeon decides not to mention it because it is uncommon. Using the Montgomery judgement, explain whether this is acceptable.
 ::: solution
-**Candour-as-a-skill-not-a-crisis ([[#def-hard]], [[clinical-skills/patient-safety]], [[geriatrics-palliative/ageing-frailty]]): the mistake in the room - 'the-'the-hospital's-position'-voice (legal-posture language in a clinical corridor converts grief into a fight - the complaint-and-litigation research is blunt that stonewalling, not complication, recruits lawyers); the script that works - 'the senior clinician, seated, no bleeps, says the three true sentences in order: what happened ('she developed a pressure sore and we did not find it for nine days'), what it is going to mean (the wound plan, the likely length of stay, the named nurse), and the two things the family came for: an apology, which the law in most jurisdictions protects as no admission, and 'we will tell you what we change - and here is who we will tell it to'; the emotion handled not managed - 'the 'let the anger finish its sentence; the 'answer the question asked, not the question feared; the 'no speculation about blame in front of the family - which brings the nurse: the second-victim pathway collects her in the drug room with the 'this happens in broken systems, you will be supported and you will tell the review the truth' sentence, because an absent nurse means a bad RCA; and the loop closed - 'the-'the-significant-event-analysis with the family's questions as its agenda, the repositioning-and-risk-assessment-audit that comes back with a date and an owner, and the follow-up meeting booked at the apology itself - the one the research says converts 'they never called' from the coroner's phrase into a sentence no one in that family will ever have to say.'**
+It is not acceptable. Under Montgomery, materiality is judged from the patient's perspective: a risk is material if a reasonable person in the patient's position would attach significance to it, or if the doctor knows or should know that this particular patient would. For a professional violinist, any risk of lasting loss of hand function is obviously significant, however rare. The surgeon must disclose it, together with the alternatives (including splinting, injection, or no treatment), and give her the chance to ask questions. Rarity alone does not make a risk immaterial. The discussion should be documented.
 :::
 :::
 
-::: exercise Break the news of a stroke {level=2}
-A 62-year-old's wife asks you to 'tell her the truth, but she must not lose hope'; he has a large malignant MCA infarction with a few hours to decide about comfort. Rehearse the conversation.
+::: exercise Plan a bad-news conversation {level=3}
+A 52-year-old woman had a CT scan for weight loss. It shows a pancreatic mass with liver lesions, very likely to be metastatic cancer. She is coming to clinic tomorrow alone. Plan the conversation using SPIKES, including the first two sentences you will say when giving the news, and how you will handle the question "How long have I got?"
 ::: solution
-**SPIKES-under-time-pressure ([[#def-hard]], [[nervous-system/stroke]]): the setup - 'sit, both of them if the adult children are in the corridor, the monitor visible so nobody wonders what the numbers mean; the perceptual check first - 'what do you understand about what has happened to him so far?' - because her sentence will tell you whether 'hope' means recovery or means he hears you; the invitation honoured either way - 'some people want every detail; would you like me to take you through what we know, step by step?'; the warning shot and the chunk - 'I'm afraid the scan shows a very large stroke... the swelling in his brain is severe and will get worse before it could get better... and we don't think it can be undone' - then silence, six words then sixty seconds; the honest-hope manoeuvre the family's request is really about - 'we can hope, and we will: hope for comfort, for no fear, for the good hours - and we plan for the worst, which is what I must talk about now'; the decision framed as permission not prognosis - 'many families tell us he would have wanted to be kept comfortable at this point; I can't know that, but I can tell you what dying with dignity would look like and that choosing it is not giving up, it is loving with your eyes open'; and the after - 'the chaplaincy, the touch and hearing facts ('he may still hear you - say what you need to say'), the nurse who will stay, the number to ring, the door left shut behind you and the diary entry that says why.'**
+**Setting:** a private room, enough time booked, a specialist nurse present, bleep handed over; at the start, ask whether she would like anyone to join her, in person or by phone. **Perception:** "What's your understanding of why we did the scan?" **Invitation:** "I have the results. How would you like me to go through them?" **Knowledge:** warning shot, then plain words in chunks, for example: "I'm sorry, the scan has shown something serious. There is a growth in the pancreas, and it looks as though it has spread to the liver, which means it is very likely to be cancer." Then stop. **Emotions:** silence, name and acknowledge the emotion, offer tissues and time. **Strategy and summary:** explain that a biopsy is needed to confirm the type and to guide treatment, that the team will discuss options with her, and how to reach the nurse. For "How long have I got?": first explore why she is asking and what she wants to know ("That's an important question. Can I ask what's on your mind?"); answer honestly in ranges and with uncertainty, rather than a single number, and say that a clearer picture will come after the biopsy and treatment discussions. Arrange early follow-up and give written contact details.
 :::
 :::
-
-::: exercise Fix the handover rota {level=3}
-Your hospital's audit: 46 percent of clinical incidents in the last year involved information loss at transitions; the emergency department-to-ward and ward-to-ICU and inter-hospital transfer handovers are the worst; staff say structure 'takes time they don't have'. Design the transition-safety programme.
-::: solution
-**Transitions-as-a-system ([[#def-handover]], [[clinical-skills/patient-safety]], [[emergency-critical-care/acute-assessment]]): the diagnosis - 'the audit's own number is the specialty's: 'information loss at transitions' is the safest finding in patient safety because it is always partly true and always fixable with structure - and the staff sentence ('no time') is the design brief, not the obstacle: the programme must make the safe handover faster than the unsafe one; the instruments - 'one format per transition chosen with the teams (the SBAR-SOAP-I-P-Assist menu), the receiving-clinician-invited-question rule enforced as a script, the 'read-back for directions' norm for doses and ceilings, the bedside standard where the patient can hear his own plan, and the written 'if-then' contingencies on the transfer form (the deteriorating-patient passport travelling with the patient, the ICU-escalation-plans and the ICU-to-ward 'what to watch tonight' card); the time argument answered with time - 'the overlap minutes rostered rather than volunteered (the 'handover overlap funded in the establishment' studies from anaesthesia and paediatrics), protected uninterrupted windows with phones answered by a named third person, and the electronic-transfer-summary auto-populating what the system already knows so structure costs keystrokes not minutes; the measurement - 'the trigger-tool harm audit re-run at 12 months, the handover-observation studies (work-as-done with and without the form), the incident reports re-coded by transition type, and the nurse-survey item 'I am given enough information when I take over a patient' as the culture indicator; and the accountability - 'the transitions dashboard to the quality committee, the transfer-receiving units auditing each other (the inter-hospital data is mutual-aid medicine and needs agreements with names on them), and the standing agenda item that makes 'which handover broke this week' as routine a question as 'which line got infected' - because the half-life of a badly handed-over patient's safety is one shift.'**
-:::
-:::
-
