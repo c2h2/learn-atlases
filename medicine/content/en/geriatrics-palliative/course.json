@@ -8,9 +8,9 @@
   "tagline": "Ageing and frailty, falls, delirium, polypharmacy, symptom control and care at the end of life",
   "summary": "An ageing population makes the care of older people central to medicine. This course covers ageing and frailty, comprehensive geriatric assessment, falls, delirium and dementia care, polypharmacy and deprescribing, and palliative care: symptom control, communication and care at the end of life.",
   "overview": [
-    "Older patients are not young patients with more diseases: physiology loses reserve, presentations flatten to 'confusion' or a fall, several conditions and a dozen drugs interact, and the ward environment itself becomes a hazard. Geriatric medicine is the specialty of the multifactorial problem — the same symptoms arising from many causes at once — and its methods are comprehensive assessment, an interdisciplinary team, and honesty about goals. This course teaches the core syndromes: frailty and ageing, falls, delirium and dementia care, and polypharmacy.",
-    "Palliative medicine is presented as the other half of the same skill: relieving suffering when cure is no longer on the table, which is a positive treatment for its own sake and applies early in disease, not only in the last days. Chapters cover palliative care principles and prognostication, symptom control — pain and the WHO ladder logic, breathlessness, nausea, delirium, fatigue — and end-of-life care: the dying patient, anticipatory prescribing, the last hours, bereavement, and the legal and ethical framework around advance planning and decisions to limit treatment.",
-    "The approach is practical and quantitative where possible: the assessment tools (AMT, 4AT, FRAX, Rockwood scale), falls-risk factors and multifactorial intervention, delirium screening, the deprescribing process, opioid conversion arithmetic and laxative prophylaxis, and the epidemiology of ageing that makes this the largest growing patient group in every hospital. All cases are fictional and all management statements describe principles under current guidance."
+    "Older patients are not simply young patients with more diseases. Physiological reserve narrows, so illness often presents as confusion, a fall or loss of function rather than with the textbook signs; several conditions and many medicines interact; and a hospital admission can itself cause harm. Geriatric medicine is the specialty of the problem with many causes, and its methods are comprehensive geriatric assessment, an interdisciplinary team, and plans built around what matters to the person. This course teaches the core of the specialty: ageing and frailty, falls, delirium and dementia care, and polypharmacy.",
+    "Palliative medicine is the other half of the same skill: relieving suffering when cure is not possible, from early in a serious illness and not only in the last days. Chapters cover the principles of palliative care, illness trajectories and advance care planning; the control of pain, breathlessness, nausea, constipation and other symptoms; and care in the last days of life, after death and in bereavement, with the UK legal framework for end-of-life decisions.",
+    "The approach is practical and, where possible, quantitative: the Clinical Frailty Scale and frailty index, the Cockcroft–Gault equation for drug dosing, lying and standing blood pressure, the 4AT and its predictive value, numbers needed to treat, anticholinergic burden, and the arithmetic of opioid doses and conversions. All cases are fictional, and statements about management describe principles under current UK guidance (mainly NICE), with doses always taken from a current formulary and local guidelines."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -18,15 +18,16 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Describe the physiology of ageing and its clinical consequences (reduced reserve, altered pharmacokinetics, atypical presentation), and use frailty concepts and assessment tools to stratify risk and plan care.",
-    "Carry out a comprehensive geriatric assessment across physical, cognitive, psychological and social domains, and formulate a multifactorial problem list and management plan.",
-    "Assess an older person after a fall — intrinsic, extrinsic and drug causes, syncope versus mechanical fall — and outline multifactorial prevention including strength and balance training and home hazard reduction.",
-    "Distinguish delirium from dementia and depression, apply a screening tool, identify and treat precipitants, and describe prevention and non-pharmacological management of delirium on general wards.",
-    "Explain the epidemiology and subtypes of dementia, the principles of dementia care including behavioural and psychological symptoms, and caregiver support.",
-    "Apply the logic of polypharmacy: identify prescribing cascades and potentially inappropriate medicines, conduct a structured medication review, and deprescribe safely with monitoring.",
-    "Define palliative care and its timing, discuss goals-of-care conversations and prognosis, and describe multidisciplinary and advance care planning practice.",
-    "Manage the common palliative symptoms — pain (analgesic ladder and opioid arithmetic including conversions and equi-antianalgesic dosing), breathlessness, nausea, secretions, constipation, itching and fatigue — and recognise the recognisable dying phase with its anticipatory symptom plan.",
-    "Discuss death, after-death care, bereavement support and the legal essentials (verification, certification, and the distinction between symptom control, sedation and hastening death under relevant law)."
+    "Explain how ageing reduces physiological reserve and why this leads to atypical presentations, geriatric syndromes and altered drug handling.",
+    "Define frailty, grade it with the Clinical Frailty Scale and a frailty index, and describe appropriate and inappropriate uses of frailty scores.",
+    "Describe comprehensive geriatric assessment, its domains and team, and the evidence that it improves outcomes for frail older inpatients.",
+    "Assess an older person who has fallen, distinguishing mechanical, syncopal and multifactorial falls, and outline evidence-based multifactorial prevention.",
+    "Recognise delirium with a screening tool, identify its precipitants, and describe its prevention and management, including the cautious use of antipsychotics.",
+    "Outline the care of people with dementia in general settings, including distressed behaviour, and apply the Mental Capacity Act framework for decisions.",
+    "Identify problematic polypharmacy and prescribing cascades, use explicit criteria such as STOPP/START, and plan safe deprescribing.",
+    "Define palliative care, recognise people who may be in the last year of life, and describe communication and advance care planning.",
+    "Manage common symptoms in advanced illness, including the calculation of opioid total daily doses, breakthrough doses and conversions.",
+    "Recognise dying, plan care in the last days of life, verify and certify death, and support bereaved people within the UK legal framework."
   ],
   "chapters": [
     {
@@ -92,7 +93,7 @@
     {
       "year": 1906,
       "title": "A disease of the cortex described",
-      "detail": "Alois Alzheimer presents the case of Auguste D. — presenile dementia with disorientation, memory failure and, at autopsy, cortical plaques and neurofibrillary tangles — turning 'second childhood' from a descriptive phrase into a pathological entity that would take a century to begin to explain.",
+      "detail": "Alois Alzheimer presents the case of Auguste Deter, a woman in her fifties with progressive memory loss and behavioural change whose brain showed the plaques and tangles now associated with Alzheimer's disease. Emil Kraepelin names the disease after him in 1910.",
       "people": [
         "Alois Alzheimer",
         "Emil Kraepelin"
@@ -101,83 +102,126 @@
     {
       "year": 1909,
       "title": "Geriatrics named",
-      "detail": "Ignatz Nascher, a New York physician, coins 'geriatrics' and argues that the ailments of old age form a coherent field requiring its own expertise, at a time when the pauper wards where most elderly people were cared for offered them little of any kind.",
+      "detail": "The New York physician Ignatz Nascher coins the word 'geriatrics' and argues that the diseases of old age deserve their own branch of medicine.",
       "people": [
         "Ignatz Nascher"
       ]
     },
     {
-      "year": 1958,
-      "title": "Longitudinal study of ageing",
-      "detail": "Nathan Shock's Baltimore Longitudinal Study of Aging begins, following healthy volunteers of all ages with repeated physiological measurement — the design that established which functions decline with years and which with disease, and the model for a hundred cohort studies of ageing.",
+      "year": 1935,
+      "title": "Assessment and rehabilitation on the chronic wards",
+      "detail": "Marjory Warren takes charge of the chronic wards at the West Middlesex Hospital, assesses and rehabilitates patients assumed to need lifelong care, and discharges many of them home. Her methods are the origin of comprehensive geriatric assessment and of geriatric medicine as a specialty in Britain.",
       "people": [
-        "Nathan Shock"
+        "Marjory Warren"
       ]
     },
     {
       "year": 1963,
-      "title": "Measuring what patients can do",
-      "detail": "Sidney Katz's index of activities of daily living, developed with the geriatricians of the Jewish Geriatric Home in Brooklyn, gives the field its first standard outcome — can she dress, walk, eat, toilet, bathe, transfer — and makes functional assessment as routine as blood pressure.",
+      "title": "Measuring daily function",
+      "detail": "Sidney Katz and colleagues publish the index of activities of daily living (bathing, dressing, toileting, transferring, continence and feeding), giving clinicians and researchers a standard way to record function in older people.",
       "people": [
         "Sidney Katz"
       ]
     },
     {
       "year": 1967,
-      "title": "St Christopher's Hospice",
-      "detail": "Nurse-physician-social worker Cicely Saunders opens St Christopher's Hospice in Sydenham with the then-radical ideas that total pain — physical, psychological, social, spiritual — can be controlled by a dedicated team, that hospice is a place to live, and that dying need not mean dying alone in an unscheduled bed.",
+      "title": "St Christopher's Hospice opens",
+      "detail": "Cicely Saunders, who trained as a nurse, a medical social worker and a doctor, opens St Christopher's Hospice in Sydenham, London, combining care of the dying with teaching and research and introducing the concept of total pain.",
       "people": [
         "Cicely Saunders"
       ]
     },
     {
-      "year": 1982,
-      "title": "Hospice becomes an entitlement",
-      "detail": "The US Medicare hospice benefit, won after Florence Wald’s Connecticut Hospice (1974) proved the model's viability, makes interdisciplinary palliative care reimbursed rather than charitable; the specialty's growth in North America follows, alongside the hospice movements already spreading from Britain.",
+      "year": 1975,
+      "title": "Palliative care named",
+      "detail": "The Canadian surgeon Balfour Mount opens a palliative care service at the Royal Victoria Hospital in Montreal, coining the term 'palliative care' for hospice-style care within a teaching hospital.",
       "people": [
-        "Florence Wald"
+        "Balfour Mount"
       ]
     },
     {
-      "year": 1991,
-      "title": "The get-up-and-go test",
-      "detail": "After George Isaacs's work on the post-fall syndrome and his 'get up and go' bedside test, Anne Podsiadlo and Susan Richardson formalise the Timed Up and Go: rise, walk three metres, turn, sit — with a measurable cut-off for fall risk, one of the rare bedside tests that predicts a hard outcome.",
+      "year": 1988,
+      "title": "Falls are predictable",
+      "detail": "Mary Tinetti and colleagues show in a cohort of people aged 75 and over that the risk of falling rises steeply with the number of risk factors, from 8% with none to 78% with four or more, turning falls from accidents into a preventable syndrome.",
       "people": [
-        "Anne Podsiadlo",
-        "Susan Richardson",
-        "George Isaacs"
+        "Mary Tinetti"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "Delirium made measurable",
+      "detail": "Sharon Inouye and colleagues publish the Confusion Assessment Method; in 1999 her team's trial of the Hospital Elder Life Program shows that delirium in hospital can be prevented.",
+      "people": [
+        "Sharon Inouye"
       ]
     },
     {
       "year": 2001,
-      "title": "Frailty operationalised",
-      "detail": "Linda Fried and colleagues, using the Women's Health and Aging Studies cohorts, define the frailty phenotype — weight loss, exhaustion, weakness, slowness, low activity — and show it predicts falls, institutionalisation and death; geriatric medicine acquires a screenable syndrome rather than a vibes-based description.",
+      "title": "Frailty defined and measured",
+      "detail": "Linda Fried and colleagues define the frailty phenotype using the Cardiovascular Health Study, and Kenneth Rockwood and Arnold Mitnitski describe frailty as the accumulation of deficits; both predict falls, disability and death.",
       "people": [
-        "Linda Fried"
+        "Linda Fried",
+        "Kenneth Rockwood",
+        "Arnold Mitnitski"
       ]
     }
   ],
   "references": [
     {
-      "title": "The Geriatrics Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the patient and the care.",
+      "title": "Oxford Textbook of Geriatric Medicine (3rd edition)",
+      "authors": "Jean-Pierre Michel, B. Lynn Beattie, Finbarr C. Martin, Jeremy D. Walston (eds)",
+      "year": 2018,
+      "note": "A comprehensive international reference on the medicine of older people, from the biology of ageing to services.",
       "slug": "ref1"
     },
     {
-      "title": "The Geriatrics Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the patient and the system.",
+      "title": "Brocklehurst's Textbook of Geriatric Medicine and Gerontology (8th edition)",
+      "authors": "Howard M. Fillit, Kenneth Rockwood, John Young (eds)",
+      "year": 2017,
+      "note": "A long-established textbook with strong chapters on frailty, falls and comprehensive geriatric assessment.",
       "slug": "ref2"
     },
     {
-      "title": "Clinical Geriatrics",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the care and the practice.",
+      "title": "Oxford Textbook of Palliative Medicine (6th edition)",
+      "authors": "Nathan Cherny, Marie Fallon, Stein Kaasa, Russell K. Portenoy, David C. Currow (eds)",
+      "year": 2021,
+      "note": "The standard reference for specialist palliative medicine, including symptom control and communication.",
       "slug": "ref3"
+    },
+    {
+      "title": "Palliative Care Formulary (PCF9, 9th edition)",
+      "authors": "Andrew Wilcock, Paul Howard, Clare Stark Toller, Joanne Droney, Sarah Charlesworth (eds)",
+      "year": 2025,
+      "note": "The UK reference for drugs used in palliative care, including opioid conversion tables and syringe pump compatibility.",
+      "slug": "ref4"
+    },
+    {
+      "title": "Falls: assessment and prevention in older people and in people 50 and over at higher risk (NG249)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2025,
+      "note": "Current NICE guideline on identifying people at risk of falls, multifactorial assessment and interventions; replaced CG161.",
+      "slug": "ref5"
+    },
+    {
+      "title": "Delirium: prevention, diagnosis and management in hospital and long-term care (CG103)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2023,
+      "note": "NICE guidance on delirium risk reduction, recognition and treatment (first published 2010, last updated 2023).",
+      "slug": "ref6"
+    },
+    {
+      "title": "Care of dying adults in the last days of life (NG31)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2015,
+      "note": "NICE guidance on recognising dying, communication, hydration and anticipatory prescribing.",
+      "slug": "ref7"
+    },
+    {
+      "title": "STOPP/START criteria for potentially inappropriate prescribing in older people: version 3",
+      "authors": "Denis O'Mahony, Antonio Cherubini, Anna Renom Guiteras et al.",
+      "year": 2023,
+      "note": "European Geriatric Medicine 14:625-632; the 133 STOPP and 57 START criteria used in structured medication review.",
+      "slug": "ref8"
     }
   ],
   "next": [
