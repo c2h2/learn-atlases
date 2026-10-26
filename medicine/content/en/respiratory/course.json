@@ -6,11 +6,11 @@
   "level": 2,
   "order": 120,
   "tagline": "Breathing and gas exchange, lung function, asthma and COPD, infections, lung cancer and respiratory failure",
-  "summary": "Breathing delivers oxygen and removes carbon dioxide; failure of either is quickly fatal. This course covers the mechanics of breathing, gas exchange and its control, lung function tests, and the common diseases of the lungs: asthma and COPD, infections including tuberculosis, interstitial and pulmonary vascular disease, lung cancer and respiratory failure.",
+  "summary": "Breathing delivers oxygen and removes carbon dioxide, and failure of either quickly becomes dangerous. This course covers the mechanics of breathing, gas exchange and its control, lung function tests, and the main diseases of the lungs: asthma and COPD, respiratory infections including tuberculosis, interstitial and pulmonary vascular disease, lung cancer and pleural disease, and respiratory failure.",
   "overview": [
-    "Respiration is gas exchange engineered around two mechanics problems: moving air with pressure differences, and moving gases across a membrane thinner than a cell. Almost all clinical respiratory physiology follows from those two tasks and from the control system that adjusts ventilation to keep arterial carbon dioxide and oxygen near their set points. This course builds that framework first, because asthma, COPD, fibrosis, embolism and respiratory failure are all failures of one of its parts.",
-    "Mechanics covers compliance, resistance, the pressure–volume loops, the work of breathing and the equal-pressure point that traps air; lung volumes and capacities and what spirometry actually measures. Gas exchange follows — diffusion, ventilation/perfusion matching, the alveolar gas equation and the A–a gradient, and the oxygen–haemoglobin dissociation curve with its shifts. Control and testing come next: chemoreflexes, hypoxic drive, and the interpretation of spirometry, peak flow, transfer factor, exercise tests and sleep studies. The clinical chapters apply the framework: asthma as variable inflammation-driven airflow limitation; COPD as progressive small-airway and parenchymal destruction with its exacerbation and oxygen logic; the pneumonias by route and host; interstitial lung disease, pulmonary embolism and pulmonary hypertension; lung cancer by type and staging logic, and pleural disease; and finally respiratory failure, its type 1 and type 2 physiology, oxygen therapy, non-invasive ventilation and the intubation decision.",
-    "Numbers recur: FEV1/FVC ratios, transfer factor, predicted values, A–a gradients calculated from real blood gases, V/Q distributions shown in interactive figures, and the physiology of hypoxic pulmonary vasoconstriction. Cases walk each calculation through from raw numbers to diagnosis, and every management statement is framed as principle under current guidelines (BTS, GINA, GOLD) rather than instruction."
+    "The respiratory system has two physical jobs: moving air in and out of the lungs, and moving oxygen and carbon dioxide across the thin barrier between air and blood. A control system in the brainstem adjusts ventilation to keep arterial carbon dioxide and oxygen near their set points. This course builds that framework first, because asthma, COPD, fibrosis, pulmonary embolism and respiratory failure can each be understood as a failure of one of its parts.",
+    "The first three chapters cover the physiology: pressures, lung volumes, compliance, surfactant, airway resistance and the limit on expiratory flow; diffusion, ventilation–perfusion matching, the alveolar gas equation and the A–a gradient, and the carriage of oxygen and carbon dioxide; the chemoreceptors and the control of breathing, sleep-disordered breathing, and the interpretation of spirometry, lung volumes, gas transfer and blood gases. The clinical chapters then apply the framework: asthma and COPD; pneumonia, influenza, COVID-19 and tuberculosis; interstitial lung disease, pulmonary embolism and pulmonary hypertension; lung cancer and pleural disease; and respiratory failure, with oxygen therapy, non-invasive ventilation and lung-protective ventilation.",
+    "Calculations recur throughout: compliance, A–a gradients from real blood gases, oxygen content, shunt and dead space fractions, compensation in acid–base disorders, severity scores, predicted postoperative lung function and ventilator tidal volumes. Worked cases take each calculation from raw numbers to a clinical decision. Management is described as principle under current guidance, mainly UK sources (NICE, BTS, SIGN) alongside international reports such as GINA, GOLD and the ESC/ERS guidelines, and is not advice for individual patients."
   ],
   "prerequisites": [
     "anatomy",
@@ -20,22 +20,23 @@
     "microbiology"
   ],
   "outcomes": [
-    "Explain the mechanics of breathing — compliance, resistance, pleural and transpulmonary pressures, surfactant, the work of breathing — and interpret flow–volume loops and the spirometric patterns of obstruction and restriction.",
-    "Describe ventilation/perfusion matching and diffusion, use the alveolar gas equation, calculate the A–a gradient and explain its clinical value in the assessment of hypoxaemia.",
-    "Explain the neural and chemical control of ventilation, the responses to hypoxia and hypercapnia, and the pathophysiology of periodic breathing and opioid-related respiratory depression.",
-    "Apply pulmonary function testing — spirometry, lung volumes, transfer factor, bronchial challenge, peak-flow variability, exercise and sleep studies — to defined clinical scenarios.",
-    "Explain the pathophysiology, severity assessment, stepwise management principles and exacerbation care of asthma and COPD, including the evidence and limits of oxygen therapy.",
-    "Classify pneumonias by route, setting and host, apply severity scores to disposition decisions, and recognise the complications — effusion, empyema, abscess.",
-    "Explain the pathogenesis, presentation, investigation and prevention of venous thromboembolism and pulmonary embolism, and the physiology and classification of pulmonary hypertension.",
-    "Describe the interstitial lung diseases by pattern (usual interstitial pneumonia, nonspecific interstitial pneumonia, organising pneumonia, hypersensitivity pneumonitis), their physiological signature and management principles.",
-    "Classify lung cancers, apply the staging and physiological-fitness logic that decides treatment modality, and manage pleural effusions and pneumothorax including aspiration and chest-drain principles.",
-    "Define type 1 and type 2 respiratory failure from blood gases, explain the physiology of oxygen delivery devices and non-invasive ventilation, and state the principles of intubation and lung-protective ventilation."
+    "Explain the mechanics of breathing: respiratory pressures, lung volumes and their measurement, compliance and surfactant, airway resistance, dynamic compression and the work of breathing.",
+    "Interpret spirometry, flow–volume loops, lung volumes and gas transfer to distinguish obstructive, restrictive and pulmonary vascular patterns, using reference values and the lower limit of normal.",
+    "Use the alveolar gas equation to calculate the A–a gradient, and explain the five causes of hypoxaemia, the oxygen–haemoglobin dissociation curve and the transport of carbon dioxide.",
+    "Explain the control of breathing by central and peripheral chemoreceptors, and the mechanisms of opioid-induced hypoventilation, oxygen-induced hypercapnia and obstructive sleep apnoea.",
+    "Interpret arterial blood gases systematically, including compensation in acute and chronic respiratory acidosis.",
+    "Describe the pathophysiology, diagnosis and stepwise management principles of asthma and COPD, including acute severe asthma and exacerbations of COPD, in line with current UK and international guidance.",
+    "Classify pneumonia by setting, assess severity with CRB65 and CURB65, outline antibiotic principles and recognise complications, and describe influenza, COVID-19 and tuberculosis.",
+    "Describe the main interstitial lung diseases, including idiopathic pulmonary fibrosis, hypersensitivity pneumonitis and sarcoidosis, and their investigation and treatment principles.",
+    "Outline the diagnosis and management of pulmonary embolism, and define and classify pulmonary hypertension.",
+    "Classify lung cancer, describe its presentation, staging and treatment principles, and manage pleural effusion and pneumothorax in line with current guidance.",
+    "Define type 1 and type 2 respiratory failure and explain the principles of oxygen therapy, CPAP, non-invasive ventilation, invasive ventilation and lung-protective ventilation in ARDS."
   ],
   "chapters": [
     {
       "slug": "mechanics-breathing",
       "title": "Mechanics of breathing",
-      "summary": "Lung volumes, compliance, airway resistance and the work of breathing.",
+      "summary": "Pressures, lung volumes, compliance, surfactant, airway resistance, the limit on expiratory flow and spirometry.",
       "requires": [
         "anatomy/thorax",
         "physiology/muscle"
@@ -44,7 +45,7 @@
     {
       "slug": "gas-exchange",
       "title": "Gas exchange and transport",
-      "summary": "Diffusion, ventilation–perfusion matching and the transport of oxygen and carbon dioxide.",
+      "summary": "Partial pressures, the alveolar gas equation, diffusion, ventilation–perfusion matching and the transport of oxygen and carbon dioxide.",
       "requires": [
         "respiratory/mechanics-breathing"
       ]
@@ -52,7 +53,7 @@
     {
       "slug": "control-breathing-tests",
       "title": "Control of breathing and lung function tests",
-      "summary": "Chemoreceptors and the respiratory centres, spirometry, blood gases and pulse oximetry.",
+      "summary": "Chemoreceptors and the respiratory centres, sleep apnoea, spirometry, lung volumes, gas transfer and blood gases.",
       "requires": [
         "respiratory/gas-exchange",
         "physiology/acid-base"
@@ -88,7 +89,7 @@
     {
       "slug": "lung-cancer-pleura",
       "title": "Lung cancer and pleural disease",
-      "summary": "Lung cancer, pleural effusion and pneumothorax.",
+      "summary": "Lung cancer, screening, pleural effusion, mesothelioma and pneumothorax.",
       "requires": [
         "respiratory/mechanics-breathing",
         "pathology/cancer-diagnosis"
@@ -107,109 +108,150 @@
     {
       "year": 1846,
       "title": "The vital capacity",
-      "detail": "John Hutchinson invents the spirometer and, from some 1,500 measurements — including workhouse inmates and army recruits — describes a single 'vital capacity' that rises with height and exercise; respiratory medicine acquires its first instrument, refined sixty years later into the forced expiratory manoeuvre.",
+      "detail": "John Hutchinson, a London physician, publishes spirometer measurements from about 2,000 people. He names the vital capacity, shows that it rises with height and notes that it falls in disease.",
       "people": [
         "John Hutchinson"
       ]
     },
     {
       "year": 1882,
-      "title": "The lobar-pneumonia coccus",
-      "detail": "Louis Pasteur and, independently, Sternberg each see diplococci in the saliva and sputum of lobar pneumonia; Antonio Fränkel then distinguishes the pneumococcus, and Oswald Avery's 1910s typing work defines serotypes — the basis of polysaccharide vaccines and of typing itself.",
+      "title": "The tubercle bacillus",
+      "detail": "Robert Koch announces in Berlin on 24 March that he has identified the bacillus that causes tuberculosis. The date is now marked as World TB Day.",
       "people": [
-        "Louis Pasteur",
-        "George Sternberg",
-        "Antonio Fränkel",
-        "Oswald Avery"
+        "Robert Koch"
       ]
     },
     {
-      "year": 1941,
-      "title": "The lung measured at the catheter tip",
-      "detail": "André Cournand and Dickinson Richards develop right-heart and pulmonary-artery catheterisation with arterial blood gas analysis, turning emphysema, fibrosis and pulmonary hypertension from stethoscopic impressions into quantifiable cardiorespiratory failure (Nobel Prize 1956, with Werner Forssmann).",
+      "year": 1910,
+      "title": "Diffusion, not secretion",
+      "detail": "August and Marie Krogh show by careful measurement that passive diffusion can account for oxygen uptake in the lung, settling a long dispute with Christian Bohr and John Scott Haldane, who believed the lung actively secreted oxygen.",
       "people": [
-        "André Cournand",
-        "Dickinson Richards",
-        "Werner Forssmann"
+        "August Krogh",
+        "Marie Krogh"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "Streptomycin for tuberculosis",
+      "detail": "The British Medical Research Council publishes its trial of streptomycin in pulmonary tuberculosis, one of the first randomised controlled trials. It and later trials show that resistance emerges with a single drug, establishing combination therapy.",
+      "people": [
+        "Austin Bradford Hill",
+        "Philip D'Arcy Hart"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "Smoking and lung cancer",
+      "detail": "Richard Doll and Austin Bradford Hill in Britain, and Ernst Wynder and Evarts Graham in the United States, publish case–control studies showing a strong association between cigarette smoking and lung cancer.",
+      "people": [
+        "Richard Doll",
+        "Austin Bradford Hill",
+        "Ernst Wynder",
+        "Evarts Graham"
       ]
     },
     {
       "year": 1952,
-      "title": "The polio wards",
-      "detail": "During Copenhagen's polio epidemic, iron lungs run short and Bjørn Ibsen's alternative — tracheostomy, manual positive-pressure ventilation, students at the bedside in shifts — proves dramatically better; the epidemic founds the intensive-care model and establishes that respiratory failure can be survived with ventilatory support.",
+      "title": "The Copenhagen polio epidemic",
+      "detail": "Overwhelmed by patients with respiratory paralysis, the Blegdam Hospital adopts Bjørn Ibsen's proposal of tracheostomy and manual positive-pressure ventilation by relays of students. Mortality falls sharply, and the epidemic leads to the first intensive care units.",
       "people": [
         "Bjørn Ibsen"
       ]
     },
     {
-      "year": 1954,
-      "title": "Surfactant discovered",
-      "detail": "John Clements shows that lung-lining fluid lowers surface tension and that a factor is deficient in neonatal respiratory distress; with von Neergaard's earlier elastance work, Pattle's 1955 observations and Avery and Mead's 1959 link, the insight underlies surfactant therapy and today's understanding of ARDS mechanics.",
+      "year": 1959,
+      "title": "Surfactant deficiency in the newborn",
+      "detail": "Building on the work of Richard Pattle and John Clements on the surface-active lining of the lung, Mary Ellen Avery and Jere Mead show that babies who died of hyaline membrane disease lacked surfactant, the basis of later surfactant therapy.",
       "people": [
-        "John Clements",
         "Mary Ellen Avery",
-        "Jere Mead"
-      ]
-    },
-    {
-      "year": 1965,
-      "title": "The Dutch hypothesis",
-      "detail": "Nicolaas Orie, Herman Sluiter and colleagues propose that asthma, chronic bronchitis and emphysema share a constitutional airway predisposition — wrong in its genetics, generative in its method: the argument reorganised airflow-disease research toward phenotypes and, decades later, the asthma–COPD overlap debate.",
-      "people": [
-        "Nicolaas Orie",
-        "Herman Sluiter"
+        "Jere Mead",
+        "John Clements",
+        "Richard Pattle"
       ]
     },
     {
       "year": 1967,
-      "title": "The adult respiratory distress syndrome",
-      "detail": "Ashbaugh, Bigler, Petty and Levine describe in The Lancet an acute hypoxaemic respiratory failure of adults whose stiff, wet lungs resembled neonatal distress; the syndrome (today 'ARDS'), its Berlin severity strata and the lung-protective ventilation trials of 2000 define critical-care respiratory medicine.",
+      "title": "Acute respiratory distress in adults",
+      "detail": "David Ashbaugh, Thomas Petty and colleagues describe in The Lancet a syndrome of acute hypoxaemic respiratory failure in adults with stiff lungs and bilateral infiltrates, later called ARDS.",
       "people": [
-        "Thomas Petty",
-        "H. Hugh Ashbaugh",
-        "John Bigler",
+        "David Ashbaugh",
         "Thomas Petty"
       ]
     },
     {
-      "year": 1971,
-      "title": "Peak flow at home",
-      "detail": "Michael Wright's peak-flow meter brings objective self-measurement to asthma, enabling diary monitoring, diurnal-variability diagnosis and the written action plans that cut exacerbations — respiratory medicine's most successful patient-held instrument, and cheap enough for global use.",
+      "year": 1977,
+      "title": "The natural history of airflow obstruction",
+      "detail": "Charles Fletcher and Richard Peto show that only susceptible smokers lose lung function rapidly, and that stopping smoking returns the rate of decline towards normal.",
       "people": [
-        "Michael Wright"
+        "Charles Fletcher",
+        "Richard Peto"
       ]
     },
     {
-      "year": 1995,
-      "title": "Guidelines become strategy",
-      "detail": "The GINA workshop with the US NHLBI and the British Thoracic Society guidelines make asthma a stepped, monitored condition with a written-plan standard; GOLD follows in 2001 for COPD — airflow limitation becomes a staged, treatable, auditable disease with spirometry targets and smoking-cessation policy attached.",
+      "year": 2000,
+      "title": "Lung-protective ventilation",
+      "detail": "The ARDS Network trial shows that ventilating patients with ARDS using low tidal volumes (6 mL/kg predicted body weight) reduces mortality compared with traditional volumes.",
       "people": [
-        "Global Initiative for Asthma",
-        "NHLBI"
+        "ARDS Network"
       ]
     }
   ],
   "references": [
     {
-      "title": "The Respiratory Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the lung and the airway.",
+      "authors": "John B. West, Andrew M. Luks",
+      "year": 2021,
+      "title": "West's Respiratory Physiology: The Essentials (11th edition)",
+      "note": "A short, clear account of respiratory physiology; the source of much of the physiology in the first three chapters.",
       "slug": "ref1"
     },
     {
-      "title": "The Respiratory Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the lung and the system.",
+      "authors": "V. Courtney Broaddus, Joel D. Ernst, Talmadge E. King Jr and others (editors)",
+      "year": 2022,
+      "title": "Murray & Nadel's Textbook of Respiratory Medicine (7th edition)",
+      "note": "The comprehensive reference textbook of respiratory medicine.",
       "slug": "ref2"
     },
     {
-      "title": "Clinical Respiratory",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the airway and the practice.",
+      "authors": "Stephen Chapman, Grace Robinson, Rahul Shrimanker, Chris Turnbull, John Wrightson",
+      "year": 2021,
+      "title": "Oxford Handbook of Respiratory Medicine (4th edition)",
+      "note": "A practical clinical handbook for the ward and clinic.",
       "slug": "ref3"
+    },
+    {
+      "authors": "National Institute for Health and Care Excellence, British Thoracic Society, Scottish Intercollegiate Guidelines Network",
+      "year": 2024,
+      "title": "Asthma: diagnosis, monitoring and chronic asthma management (NG245)",
+      "note": "The joint UK guideline on diagnosing and managing chronic asthma, followed in the asthma chapter.",
+      "slug": "ref4"
+    },
+    {
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2019,
+      "title": "Chronic obstructive pulmonary disease in over 16s: diagnosis and management (NG115)",
+      "note": "UK guidance on the diagnosis and management of COPD, including long-term oxygen and pulmonary rehabilitation.",
+      "slug": "ref5"
+    },
+    {
+      "authors": "Global Initiative for Chronic Obstructive Lung Disease",
+      "year": 2025,
+      "title": "Global Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Pulmonary Disease (2025 report)",
+      "note": "The international COPD strategy, updated annually; source of the GOLD grades and ABE groups.",
+      "slug": "ref6"
+    },
+    {
+      "authors": "B. Ronan O'Driscoll, L. S. Howard, J. Earis, V. Mak, on behalf of the BTS",
+      "year": 2017,
+      "title": "BTS guideline for oxygen use in healthcare and emergency settings",
+      "note": "Thorax 2017; 72 (Suppl 1). The source of the target saturation ranges used throughout the course.",
+      "slug": "ref7"
+    },
+    {
+      "authors": "Mark E. Roberts, Najib M. Rahman, Nick A. Maskell and others",
+      "year": 2023,
+      "title": "British Thoracic Society Guideline for pleural disease",
+      "note": "Thorax 2023; 78 (Suppl 3). Guidance on pleural effusion, pleural infection, malignant effusion and pneumothorax.",
+      "slug": "ref8"
     }
   ],
   "next": [

@@ -1,142 +1,284 @@
-Respiratory failure is the syndrome-level reading of the previous four chapters: **type 1 — hypoxaemia (PaO₂ <8 kPa) from a lung whose blood is passing poorly-ventilated or unventilated alveoli (the raised A–a gradient world of [[respiratory/gas-exchange]]) — and type 2 — hypercapnia (PaCO₂ above the reference range with the appropriate pH story), the pump-and-controller failure of [[respiratory/mechanics-breathing]] and [[respiratory/control-breathing-tests]]**. Acute respiratory distress syndrome (ARDS) is type 1's most violent form — diffuse alveolar damage from an inflamed and leaky epithelial-endothelial barrier — and its lung-protective ventilation, proning and extracorporeal ladder is intensive-care medicine's best-evidenced physiology. Around these sit the applied craft: oxygen devices, high-flow and non-invasive ventilation, intubation-and-ventilator management, weaning, and the long-term-ventilation and palliative decisions.
+Respiratory failure is the point at which the respiratory system can no longer keep arterial oxygen and carbon dioxide within safe limits. It is not a disease but a final common pathway, reached from pneumonia, COPD, asthma, pulmonary oedema, neuromuscular disease, drug overdose and many other conditions. Recognising it early, understanding which part of the system has failed, and choosing the right support are among the most important skills in acute medicine.
 
-This chapter covers the two failure types, ARDS and protective ventilation, non-invasive and extracorporeal support, weaning, and chronic home ventilation.
+This chapter brings together the physiology of the earlier chapters. It defines the two types of respiratory failure, explains how each arises, and then covers the tools used to treat them: oxygen therapy, continuous positive airway pressure, non-invasive ventilation and invasive mechanical ventilation, including the lung-protective strategy for the acute respiratory distress syndrome. UK practice follows the British Thoracic Society (BTS) guideline on oxygen use (2017) and BTS/Intensive Care Society guidance on non-invasive ventilation; all management statements are principles, applied in practice through local protocols and senior decision-making.
 
-## The two types
+## Two types of failure {#sec-types}
 
-::: definition Type 1 and type 2 respiratory failure {#def-types}
-**Type 1 (hypoxaemic): PaO₂ <8 kPa with a normal-or-low PaCO₂ and a raised A–a gradient** (the exception rows — hypoventilation and altitude — kept from [[respiratory/gas-exchange]]); the mechanism is V/Q mismatch and shunt across the causes-by-compartment list (**airspace** — pneumonia and pulmonary oedema and haemorrhage and ARDS; **interstitium** — fibrosis and oedema; **airway** — asthma, COPD, bronchiolitis; **vascular** — embolism; **pleural** — effusion and pneumothorax; **the "lung-normal" hypoxaemias** — right-to-left shunt, hypoventilation, low-FiO₂, and the diffusion-limited exercise desaturators). Oxygen is the treatment (with the [[respiratory/gas-exchange]] caveats of the CO₂-retainer's target range and the shunt's oxygen-resistance), the escalation being the HFNO-NIV-ventilation-ECMO ladder below, and the diagnosis of cause running on the gradient- imaging- and-echo-and-CT algorithm ([[clinical-skills/medical-imaging]]). **Type 2 (hypercapnic): PaCO₂ elevated with acidosis (acute) or compensation (chronic — the renal bicarbonate retention's days-timeline of [[renal/acid-base-disorders]])**; the alveolar-ventilation equation (PaCO₂ ∝ VCO₂/V̇A) localises the failure to **the controller (drugs — opioids-and-sedatives-and-alcohol ([[emergency-critical-care/poisoning]]), CNS events — stroke-and-haemorrhage-and-trauma and tumours ([[nervous-system/stroke]]), the congenital-and-acquired central-hypoventilation of [[respiratory/control-breathing-tests]], the obesity-hypoventilation phenotype below), the pump (neuromuscular — myasthenic crisis and Guillain-Barré and motor-neurone-disease-and-dystrophies and the diaphragm paralysis of [[nervous-system/motor-systems]] and [[nervous-system/neuromuscular]]; the chest wall — kyphoscoliosis and ankylosing-spondylitis and the flail chest of [[surgery/trauma]]; or the airway — COPD and severe asthma's endgame),** with the clinical hypercapnia signature (the warm peripheries and bounding pulse of CO₂ vasodilation, the flap, the papilloedema of cerebral vasodilation, the morning-headache-and-nocturnal-PMV phenotype, and the obtundation of the narcosis) and treatment by site: **the controller's antidotes-and-airway (naloxone-with-a-plan — the renarcotisation-window and the-avoid-the-catecholamine-surge rule), the NIV-for-the-pump's-ventilation-support (the neuromuscular-and-chest-wall and obesity-hypoventilation protocols below), and the underlying-disease therapies of the source chapters** — the shared bedside maxim: **in type 2 failure the problem is minute-ventilation, so assess the pump (the single-breath-count and sniff-pressure and FVC numbers), the drive (the CO₂-response patterns at the bedside: the sleeping-but-routable-when-shaken pattern of [[respiratory/control-breathing-tests]]' opioid case) and the gas (the pH-first ABG reading of [[#ex-types]]).**
+::: definition Type 1 and type 2 respiratory failure {#def-resp-failure}
+- **Type 1 (hypoxaemic) respiratory failure**: $P_{aO_2}$ below 8 kPa (60 mmHg) with a normal or low $P_{aCO_2}$. It is a failure of **gas exchange** in the lung.
+- **Type 2 (hypercapnic) respiratory failure**: $P_{aCO_2}$ above about 6.0 kPa (45 mmHg), usually with hypoxaemia as well. It is a failure of **ventilation**: the "pump" cannot move enough air.
+
+Each type can be **acute** (developing over minutes to hours, with no time for compensation), **chronic** (developing over days to years, with renal compensation of the pH) or **acute-on-chronic**.
 :::
 
-::: example Four gases, four beds {#ex-types}
-Four ABGs on air: (a) 58-year-old pneumonia: pH 7.44, PaCO₂ 4.0, PaO₂ 6.8; (b) post-hip-opioid: pH 7.18, PaCO₂ 10.1, PaO₂ 7.9; (c) COPD clinic review: pH 7.36, PaCO₂ 9.4, PaO₂ 7.6, HCO₃ 41; (d) myasthenic crisis: pH 7.29, PaCO₂ 8.2, PaO₂ 9.3.
-::: solution
-**(a) Pure type 1 — hypoxaemia with hypocapnic alkalosis (the appropriate hyperventilation; the raised gradient from the consolidation's V/Q-and-shunt units) — ward-bed oxygen-with-cause-treatment.** **(b) Acute type 2 — the CO₂ rise's full acidotic effect (uncompensated — renal bicarbonate has had hours, not days) and a hypoxaemia that is CO₂-displacement (a near-normal gradient); this is the opioid-hypoventilation of the controller chapter: ventilation-first management (the naloxone infusion and the-capnography-watch, the bag-valve-and-airway-readiness — the "oxygen alone will fix the saturation and hide the CO₂" trap) ([[respiratory/control-breathing-tests]], [[emergency-critical-care/poisoning]]).** **(c) Chronic compensated type 2 — the bicarbonate of 41 dates the hypercapnia to days-plus (the obesity-hypoventilation-and-COPD overlap's stable state) — no acute intervention on these numbers; the outpatient reassessment (weight and CPAP-BiPAP and smoking and the LTOT-recheck rules — [[#ex-home-niv]]) and the "why-is-she-so-sleepy-in-the-day" and nocturnal-PMV question. (d) Mixed-with-neuromuscular-flavour: near-normal oxygenation with a rising CO₂ and mild acidosis is the neuromuscular pattern (the pump failing with the gas-exchange intact) — the FVC-and-MIP trending and NIV-and-ICU-threshold ([[#ex-myonum]]), the specific therapy (the immunoglobulin-and-plasma-exchange race) started alongside.** The exercise-format lesson: **pH locates the acuity, PaCO₂ locates the compartment, and the gradient (from [[respiratory/gas-exchange]]'s arithmetic) localises the lung lesion — read in that order.**
-:::
+The distinction tells you where the problem lies and what will help. In type 1 failure, the lung is the problem: fluid, pus, collapse or a blocked vessel prevents oxygen reaching the blood. The patient is usually breathing hard, so the $P_{aCO_2}$ is low. Treatment aims to raise the inspired oxygen and reopen collapsed alveoli. In type 2 failure, the problem is that not enough air is moved in and out of the alveoli. Oxygen may correct the hypoxaemia but does nothing for the carbon dioxide; treatment must increase ventilation.
+
+### Why carbon dioxide rises
+
+::: theorem The alveolar ventilation equation {#thm-va}
+In a steady state, arterial $P_{CO_2}$ is proportional to the rate of carbon dioxide production and inversely proportional to alveolar ventilation:
+
+$$
+P_{aCO_2} \propto \frac{\dot V_{CO_2}}{\dot V_A}, \qquad \dot V_A = (V_T - V_D) \times f
+$$ {#eq-va}
+
+where $\dot V_{CO_2}$ is carbon dioxide production, $\dot V_A$ alveolar ventilation, $V_T$ tidal volume, $V_D$ dead space and $f$ respiratory rate. Halving alveolar ventilation doubles $P_{aCO_2}$.
 :::
 
-## ARDS and the protected lung
-
-::: definition ARDS: the damaged barrier and its ventilation {#def-ards}
-**ARDS is acute, inflammatory, leak-pulmonary-oedema — the Berlin definition's four clauses (the within-week onset, the bilateral opacities not fully effusive, the not-fully-hydrostatic rationale (the echo and the catheter and the response-to-diuresis arguments) and the PaO₂/FiO₂ severity bands 201–300 / 101–200 / ≤200 with PEEP ≥5 — mild, moderate, severe with the prone-and-ECMO-threshold relevance of the sub-100 group).** The biology: **the alveolar-epithelial and capillary-endothelial injury (direct — pneumonia and aspiration and contusion-and-inhalation; indirect — the sepsis and trauma-and-transfusion (TRALI) and pancreatitis and drug-and-circulatory-arrest syndromes) → the neutrophil-and-cytokine-and-glycocalyx-injury effector cascade of [[immunology/innate-immunity]] and [[pathology/acute-inflammation]] → protein-rich oedema, surfactant inactivation (the mechanics chapter's surface-tension lesson), hyaline membranes and collapse (the exudative phase), then the proliferative and (in the non-survivors) fibroproliferative phases of [[pathology/chronic-inflammation-repair]] — with the physiology of shunt (the flooded-and-collapsed units — the oxygen-refractory hypoxaemia), dead space (the microthrombotic and compressed regions — the Vd/Vt and the CO₂-management problem) and the stiff, small, heterogeneous baby-lung (the compliance fall and the dependent-dorsal-collapse gravity-and-edema geometry) whose mechanics the treatment obeys.** The **lung-protective ventilation package (the ARDSNet tidal-volume trial's 6 mL/kg predicted-body-weight (the PBW formula from height — the non-ventilated lung does not shrink with the bodybuilder's weight — the male 50 + 0.91(cm−152.4) arithmetic) and plateau-pressure ≤30 cmH₂O strategy with the permissive hypercapnia tolerated, extended by the driving-pressure (ΔP = Vt/compliance) and mechanical-power concepts (the energy-delivery-per-breath formulation — the injurious-volume-times-rate-times-pressure algebra), the higher-PEEP-versus-lower tables, the recruitment-manoeuvre caution (the open-and-keep-open idea versus the barotrauma-and-hypotension evidence), the prone-positioning evidence (the ALPS and Guillin-trial programme's mortality benefit in severe ARDS — the dorsal-recruitment and homogeneous-ventilation and V/Q and secretion-drainage mechanisms and the prone-physiotherapy-and-pressure-sore-and-tube-and-face-care logistics and the ECMO-prone crossover question), the early-neuromuscular-blockade nuance (the ACURASYS signal versus the ROSE trial's modern-sedation-light-no-benefit reading — the sequence: deep sedation and optimisation before paralysis), the conservative-fluid strategy (the FACTT arithmetic — the early-negative-balance better-lung-but-not-kidney trade and the shock's counter-needs), the adjuncts by aetiology (the steroids' early-severe-and-organising-states arguments and the viral and eosinophilic specifics — the dexamethasone and hydrocortisone trial landscape) and the rescue tiers (the inhaled-NO-and-epoprostenol as selective pulmonary vasodilators with no mortality claim, the VV-ECMO for the refractory-hypoxaemia-and-acidosis-with-ventilator-injury-limits criteria (the EOLIA-era thresholds and the rescue-versus-early-timing controversy) and the arterial-ECMO and heart-lung and awake-ECMO bridges of the specialist centres — [[emergency-critical-care/critical-care]]).** The chronic tail: **the survivorship fibrosis-and-restriction-and-critical-illness-myopathy-and-polyneuropathy-and-PTSD-and-cognitive outcomes (the post- intensive-care-syndrome clinic's multidisciplinary map — [[geriatrics-palliative/ageing-frailty]]-adjacent), and the ICU-acquired-weakness's prevention (the light-sedation and daily-spontaneous-breathing-and-mobilisation bundles).**
-:::
-
-::: example The pancreas's lungs {#ex-ards}
-Day 2 of severe gallstone pancreatitis, a 54-year-old becomes tachypnoeic at 32 with SpO₂ 85 % on 15 L; bilateral infiltrates on film; echo shows normal ventricular function and IVC collapse; ABG on FiO₂ 1.0: PaO₂ 9.4 kPa.
-::: solution
-**Severe ARDS (PaO₂/FiO₂ ≈ 71 mmHg — the ≤100 band; the ratio's 13.3 kPa-per-FiO₂-unit version read by the unit convention — Berlin with the hydrostatic-excluded clause settled by the echo) from the indirect-inflammatory (pancreatitis-cascade) aetiology.** The first hours: **intubation with the haemodynamically-careful sequence (the peri-induction-collapse arithmetic of the sedation-vasodilation-positive-pressure-losing-preload trio — [[emergency-critical-care/airway-ventilation]] and [[cardiovascular/circulation-blood-pressure]]), then protective ventilation (the PBW-derived 6 mL/kg — his 178 cm giving ~73 kg and ~440 mL, the plateau ≤30 target and the driving-pressure trend, the permissive-hypercapnia tolerance with the pH-and-bicarbonate watch ([[renal/acid-base-disorders]])), the PEEP-FiO₂ table titration with the recruitable-versus-flooding judgement (the ultrasound and CT and the compliance-and-P/F response and the oesophageal-manometry-transpulmonary-pressure refinement of the specialist centres), proning for the 12-16-24-hour sessions with the ratio- and driving-pressure-response monitoring ([[#def-ards]]'s trial evidence), the early-neuromuscular-blockade consideration in the ventilator-synchrony-failing patient, the conservative-fluid-once-stable and the vasopressor and nutritional and glycaemic and VTE-and-stress-ulcer ICU bundle, and the cause treatment (the gallstone and cholecystectomy and ERCP pathway and the infected-necrosis surveillance — [[gastrointestinal/pancreas-biliary]]).** The escalation: **the rescue review (the inhaled-vasodilator trial and the ECMO-criteria referral before the rescue-at-any-cost hour), and the parallel trajectory of the family communication, the delirium-and-rehabilitation prevention, and the steroid-and-organising-pneumonia question at the two-to-three-week non-improving point ([[emergency-critical-care/critical-care]]).**
-:::
+::: proof
+Carbon dioxide produced by the tissues must be excreted by alveolar ventilation. In a steady state, the amount exhaled per minute equals the amount produced. The amount exhaled is the alveolar ventilation multiplied by the alveolar concentration of carbon dioxide, which is proportional to its partial pressure. So $\dot V_{CO_2} \propto \dot V_A \times P_{ACO_2}$, and alveolar and arterial $P_{CO_2}$ are almost equal. Rearranging gives the equation. Dead space ventilation does not help, because gas in the dead space never reaches perfused alveoli: only the part of each breath beyond the dead space contributes.
 :::
 
 ::: widget plot
-f: 520*(1-exp(-x/22)); 190*(1-exp(-x/11))
-x: 0, 50
-y: 0, 560
-labels: \text{airway pressure (cmH₂O)},\ \text{lung volume (mL)};\ \text{normal};\ \text{ARDS (recruitment-shifted)}
-caption: The static pressure–volume curve in ARDS (the [[respiratory/mechanics-breathing]] compliance concept in the paralysed ventilated patient): volume scaled down, slope flattened, and the lower knee (the opening-pressure recruitment zone) and upper-inflection (over-distension) territory framing the protective window — set PEEP above the opening pressures, tidal volume below the upper knee, and read the driving pressure as the curve's slope. The atelectrauma-versus-barotrauma squeeze between the knees is why ARDS ventilation is a middle-path discipline, and why the recruitable-versus-flooding distinction (the PEEP-response phenotype) matters more than the PEEP-number itself ([[emergency-critical-care/critical-care]]).
+f: 5.3*4.2/x; c*5.3*4.2/x
+x: 1.5, 10
+y: 0, 16
+sliders: c=1:0.5:2:0.1
+hlines: 6
+labels: \text{normal CO}_2 \text{ production}; \text{CO}_2 \text{ production} \times c
+caption: Arterial $P_{CO_2}$ (kPa, vertical axis) against alveolar ventilation (L/min, horizontal axis) in a simplified model with a normal value of 5.3 kPa at 4.2 L/min. The curve is a hyperbola: at low ventilation, a small further fall in ventilation produces a large rise in $P_{CO_2}$. The slider multiplies carbon dioxide production, as in fever, sepsis or a high-carbohydrate feed, which shifts the curve upwards. The horizontal line marks 6 kPa.
 :::
 
-::: example The weak breaths {#ex-myonum}
-A 62-year-old with known myasthenia gravis has 4 days of diplopia and bulbar speech then a night of orthopnoea; single-breath count 9, forced vital capacity 18 mL/kg, maximum inspiratory pressure −22 cmH₂O, and the CO₂ is normal.
+The equation shows the causes of type 2 failure, which can be grouped along the chain from brain to alveolus:
+
+- **Reduced drive**: opioids, sedatives, brainstem stroke, head injury, central hypoventilation.
+- **Nerve and neuromuscular junction**: high spinal cord injury, Guillain–Barré syndrome, motor neurone disease, myasthenia gravis.
+- **Muscle**: myopathies, muscular dystrophies, severe hypokalaemia or hypophosphataemia, respiratory muscle fatigue.
+- **Chest wall and pleura**: kyphoscoliosis, flail chest, obesity, massive pleural effusion.
+- **Airways and lungs**: COPD and severe asthma, in which the load on the respiratory muscles exceeds their capacity, and rapid shallow breathing increases the dead space fraction.
+
+Type 1 failure is caused by the mechanisms of hypoxaemia in [[respiratory/gas-exchange#def-hypox]]: mainly V/Q mismatch and shunt from pneumonia, pulmonary oedema, ARDS, pulmonary embolism, ILD, atelectasis and acute asthma.
+
+::: example Rapid shallow breathing {#ex-rapid-shallow}
+A 66-year-old woman with a severe COPD exacerbation is tiring. Her breathing has changed from a rate of 12/min with a tidal volume of 500 mL to a rate of 30/min with a tidal volume of 250 mL. Her dead space is 150 mL. Before the exacerbation her $P_{aCO_2}$ was 5.3 kPa. Assuming carbon dioxide production is unchanged, estimate her new $P_{aCO_2}$.
 ::: solution
-**Myasthenic crisis approaching — the neuromuscular type-2 pattern, whose gas lags until it doesn't.** The monitoring arithmetic: **the 20/40 rule of the respiratory-neuromuscular clinic (FVC falling below ~20 mL/kg — his 18 — or MIP worse than about −30 cmH₂O (his −22 is ominous) or the 20-point FVC drop predicts intubation need within 24–48 hours; a normal PaO₂-and-PaCO₂ is reassuring only until a single-breath-count of ~10-15 is present — the CO₂ is the terminal variable ([[#def-types]])).** Management: **the monitored bed (the serial FVC/MIP and coughPeak-flow and bulbar-and-aspiration assessment), the early elective intubation-before-arrest decision (the non-invasive-ventilation bridge with the bulbar-secretions caveat — it buys time but does not protect an aspiration airway), the crisis-precipitant hunt (the infection and the myasthenia-medication changes and the aminoglycoside-and-magnesium-and-beta-blocker-and-steroid-initial-worsening drug list — [[pharmacology/adverse-reactions]]) and the disease therapy (the plasma-exchange-versus-immunoglobulin race (the plasma-exchange's faster-lag and the line-and-citrate-and-hypocalcaemia mechanics) and the steroid-and-sparing-strategy, and the thymoma and thyrotoxicosis co-search — [[nervous-system/neuromuscular]]).** The weaning footnote: **the post-crisis FVC-trajectory-guided extubation and the non-invasive-ventilation home question, the diaphragm-and-accessory-muscle ultrasound patterns ([[respiratory/mechanics-breathing]]) and the rehabilitation of the ICU-acquired-weakness overlay ([[emergency-critical-care/critical-care]]).**
+Before: $\dot V_A = (0.50 - 0.15) \times 12 = 0.35 \times 12 = 4.2$ L/min.
+
+Now: $\dot V_A = (0.25 - 0.15) \times 30 = 0.10 \times 30 = 3.0$ L/min.
+
+Her total minute ventilation has actually risen (from 6.0 to 7.5 L/min), but her alveolar ventilation has fallen, because each small breath is mostly dead space. By [[#eq-va]], new $P_{aCO_2} = 5.3 \times 4.2/3.0 = 7.4$ kPa. This is why a high respiratory rate does not mean adequate ventilation, and why a fast, shallow breathing pattern in a tiring patient is a warning sign. Non-invasive ventilation helps by increasing her tidal volume.
 :::
 :::
 
-## Support, weaning, and home
+### Recognising respiratory failure
 
-::: definition Oxygen devices, NIV, HFNO and extracorporeal ladder {#def-support}
-The support ladder from [[respiratory/gas-exchange]]'s devices recapitulated as physiology: **controlled-FiO₂ (the air-entrainment accuracy for the CO₂-retainers), the high-flow nasal oxygen (the heated-humidified flow at 40–70 L/min — the dead-space-washout CO₂ benefit, the modest flow-dependent distending pressure and the tolerance-and-suction comfort advantages — the post-extubation-and-immunosuppressed-HIGH-and-Rocket-ICU era and the escalation-monitoring rules (the ROX-index family and the 24-48-hour-failure-time-limit teaching that prevents the delayed-intubation harm)); non-invasive positive-pressure ventilation (the bilevel pressure support via mask — the work-of-breathing-offload, the V/Q-recruitment, and the intrinsic-PEEP-threshold-offset — proven mortality reduction in the cardiogenic-pulmonary-oedema and the acidotic-AECOPD syndromes, with the hypoxaemic-ARNDS-unselected-patients caution and the full-ventilation-with-a-tube-when-failing rule); the interfaces (the oronasal-versus-total-facial-mask debate and the leak-and-gastric-distension-and-skin-injury-and-fits-and-communication logistics — the first-48-hours-nurse-led-titration craft), the contraindications-and-ceilings (the facial trauma, the fixed-airway-risk, the unmanageable secretions, the vomiting, the haemodynamic instability, the impaired-consciousness nuance and the documented ceilings — [[medical-ethics-law/end-of-life-ethics]]); the intubated-ventilated pathway (the lung-protective package applied to the non-ARDS lung's own arithmetic, the driving-pressure discipline and the ICU-acquired-weakness-delirium-and-sleep bundle ([[emergency-critical-care/airway-ventilation]]); the ECMO ladder ([[#def-ards]]) and the tracheostomy decision (the 10-14-21-day-timing trials' equivocal verdicts, the percutaneous-versus-open technique and the tube-and-cuff-care and the airway-safety, the weaning-via-trach and the long-term-ventilation-discharge-and-community-package ([[geriatrics-palliative/end-of-life-care]] for the withdrawal-and-palliative-extubation counterpart).** The **weaning protocol: the readiness screen (the resolving cause, the acceptable gas and haemodynamics and the minimal support), the spontaneous-breathing trial (the 30-120-minute pressure-support-or-T-tube test with the respiratory-rate-tidal-volume index — the RSBI >105 flag and its imperfect discrimination), the extubation-failure predictors (the cough-strength and secretions and the bulbar and the mental status and the stridor-and-cuff-leak assessment with the steroid-pre-treatment for the intermediate-risk laryngeal-oedema, the reintubation's mortality-and-oedema-cost and the high-flow post-extubation rescue in the high-risk patient), and the re-intubation-or-tracheostomy-or-non-invasive-ventilation-bridge decision — the liberate-from-the-ventilator programme as the mirror-image of the protective package.**
+Clinical signs of respiratory distress include a high respiratory rate (often the earliest abnormal vital sign), use of accessory muscles, inability to speak in sentences, tachycardia, sweating and agitation. Hypoxaemia may cause cyanosis (an unreliable sign, especially in anaemia and in darker skin), confusion and arrhythmias. Hypercapnia causes headache, a bounding pulse, warm peripheries, a flapping tremor, drowsiness and eventually coma. Signs of exhaustion, such as a falling respiratory rate, paradoxical abdominal movement and reduced consciousness, indicate imminent respiratory arrest.
+
+Early warning scores such as the UK National Early Warning Score 2 (NEWS2) include respiratory rate and oxygen saturation, and NEWS2 has a separate saturation scale for patients with a prescribed target of 88–92%. An arterial blood gas is the key investigation, interpreted as in [[respiratory/control-breathing-tests#def-abg]].
+
+## Oxygen therapy {#sec-oxygen}
+
+Oxygen is a drug. It should be prescribed with a **target saturation range**, given with an appropriate device, monitored and adjusted, and stopped when it is no longer needed. Too little oxygen causes tissue hypoxia; too much offers no benefit and can cause harm, especially in people at risk of hypercapnia.
+
+::: definition Target saturations (BTS 2017) {#def-targets}
+- **94–98%** for most acutely ill adults.
+- **88–92%** for people at risk of hypercapnic respiratory failure: COPD, and other conditions such as severe chest wall disease, neuromuscular disease, obesity hypoventilation and cystic fibrosis, until blood gases are known.
+- In critical illness (for example cardiac arrest, shock, major trauma), high-concentration oxygen is given initially, then adjusted to target once the patient is stable.
 :::
 
-::: example The sleepy man from the night ward {#ex-home-niv}
-A 50-year-old (BMI 48) is admitted confused with a urinary infection; ABG on air: pH 7.33, PaCO₂ 10.2, PaO₂ 8.1, HCO₃ 44; over the admission his daytime gases stay hypercapnic after recovery, and he snorts and stops breathing overnight.
+The target in a person at risk is individual: if blood gases show no carbon dioxide retention, the target may be raised to 94–98%. Oxygen is not a treatment for breathlessness in people who are not hypoxaemic.
+
+::: definition Oxygen delivery devices {#def-devices}
+- **Nasal cannulae**: 1–6 L/min. Comfortable, allow eating and talking; the delivered concentration varies with the patient's breathing.
+- **Simple face mask**: 5–10 L/min. Variable concentration; flows below 5 L/min risk rebreathing carbon dioxide.
+- **Venturi (fixed-performance) mask**: delivers a set concentration (24%, 28%, 31%, 35%, 40% or 60%) by entraining room air through a calibrated port. The device of choice when precise control is needed, as in people at risk of hypercapnia.
+- **Reservoir ("non-rebreathe") mask**: 15 L/min, delivering a high concentration (roughly 60–90%). For critically ill patients in the first instance.
+- **High-flow nasal oxygen** (HFNO): warmed, humidified gas at up to 60 L/min, with a set oxygen fraction up to 1.0. The high flow meets the patient's peak inspiratory demand, washes out carbon dioxide from the upper airway dead space and provides a small positive airway pressure.
+:::
+
+A "variable-performance" device such as a simple mask delivers an inspired concentration that falls as the patient's own flow rises, because more room air is drawn in. A breathless patient taking large, fast breaths may receive much less oxygen than expected. Fixed-performance devices (Venturi masks, HFNO) avoid this problem.
+
+::: warning Do not stop oxygen abruptly in a patient with hypercapnia
+When a patient who has been given too much oxygen develops a rising $P_{aCO_2}$, the instinct may be to remove the oxygen. But the high $P_{aCO_2}$ itself lowers the alveolar $P_{O_2}$ ([[respiratory/gas-exchange#eq-age]]), and carbon dioxide stores take time to clear, so stopping oxygen can cause sudden, severe hypoxaemia. The correct step is to reduce the oxygen to the lowest concentration that achieves 88–92%, usually with a Venturi mask, and to consider non-invasive ventilation if the acidosis persists.
+:::
+
+## Positive airway pressure without intubation {#sec-niv}
+
+::: definition CPAP and NIV {#def-cpap-niv}
+- **Continuous positive airway pressure** (CPAP) applies the same positive pressure throughout the breathing cycle, through a tight-fitting mask or hood. It does not assist the breath itself. It raises the mean airway pressure, holds open collapsed alveoli, increases FRC and improves V/Q matching. It is a treatment for **type 1 failure** (and for obstructive sleep apnoea).
+- **Non-invasive ventilation** (NIV, bilevel positive airway pressure) applies a higher pressure during inspiration (IPAP) and a lower pressure during expiration (EPAP). The difference between them supports each breath, increasing tidal volume and alveolar ventilation. It is a treatment for **type 2 failure**.
+:::
+
+CPAP is effective in acute cardiogenic pulmonary oedema, where it also reduces left ventricular afterload and venous return, and it was used widely for hypoxaemic respiratory failure in COVID-19. HFNO is an alternative for type 1 failure, and a French trial (FLORALI, 2015) suggested benefits over standard oxygen in some patients with acute hypoxaemic respiratory failure.
+
+NIV has strong evidence in **acute hypercapnic respiratory failure due to COPD**: it reduces mortality, the need for intubation and length of stay. In BTS/ICS guidance it is indicated when respiratory acidosis (pH below 7.35 with $P_{aCO_2}$ above 6.5 kPa) persists despite optimal medical therapy. It is also used for acute hypercapnic failure in chest wall disease, neuromuscular disease and obesity hypoventilation, where it is often continued at home. In motor neurone disease, home NIV improves survival and quality of life in patients without severe bulbar weakness.
+
+Before starting NIV, the team agrees and documents a plan for what happens if it fails: whether the patient would be a candidate for intubation, or whether NIV is the ceiling of treatment. This is discussed with the patient where possible ([[medical-ethics-law/end-of-life-ethics]]). NIV is not appropriate in some situations, for example when the patient cannot protect their airway, is vomiting, has an undrained pneumothorax or has facial injuries or recent upper gastrointestinal surgery. Blood gases are repeated within one to two hours; failure to improve pH and $P_{aCO_2}$ prompts adjustment of settings and mask fit and, if appropriate, escalation to invasive ventilation.
+
+::: example Pink frothy sputum {#ex-cpap}
+A 78-year-old man with ischaemic heart disease wakes at night acutely breathless, sitting bolt upright, coughing pink frothy sputum. He has widespread crackles. $S_pO_2$ is 82% on air and 89% on a reservoir mask at 15 L/min. Blood gas on oxygen: pH 7.31, $P_{aCO_2}$ 5.8 kPa, $P_{aO_2}$ 7.9 kPa, lactate 2.8 mmol/L. Blood pressure 170/96 mmHg. What type of respiratory failure is this and what support is appropriate?
 ::: solution
-**Obesity-hypoventilation syndrome (chronic daytime hypercapnia with body-mass-index ≥30 after the other causes' exclusion — the awake-PaCO₂ >6.0 kPa criterion) with obstructive sleep apnoea overlap, decompensated by the infection and the ward sedatives.** The physiology stack: **the chest-wall load (the mass-loading elastance and the low expiratory reserve and the closing-capacity-above-FRC atelectasis mechanics of [[respiratory/mechanics-breathing]]) plus the blunted central CO₂ response (the acquired controller-blunting of [[respiratory/control-breathing-tests]]'s work) plus the nocturnal upper-airway collapse — the diurnal cycle: the nocturnal-hypoxaemia-and-hypercapnia-first, then the daytime retention, then the cor pulmonale ([[respiratory/interstitial-vascular-disease]]) and the readmission spiral.** Management: **the acute admission (treat the infection, avoid the sedatives and the oxygen-only-supplementation-without-ventilation — the [[respiratory/gas-exchange]] trap, the NIV trial with the pH-and-PaCO₂ monitoring and the ceiling documentation where relevant), then the outpatient confirmation (the morning gas and sleep study and the exclusion of hypothyroid-and-mechanical-and-neuromuscular causes — [[endocrine/thyroid]], [[nervous-system/motor-systems]]), and the long programme: **weight loss as the disease-modifier (the intensive lifestyle, the GLP-1 and bariatric-surgery programmes and the hypoventilation-improvement evidence — [[endocrine/diabetes]]'s shared-obesity-medicine), the nocturnal positive-pressure by phenotype (CPAP for the OSA-dominant and bilevel-NIV-with-a-backup-rate — the volume-assured-pressure-support era — for the persistent hypoventilation, with the adherence-and-mask-and-skin-and-travel support), the vaccination-and-exacerbation plan, the opioid-and-benzodiazepine avoidance register ([[pharmacology/adverse-reactions]]), the pulmonary-hypertension and right-heart surveillance ([[respiratory/interstitial-vascular-disease]]), and the pre-operative-and-anaesthesia alert-card and the sedation-and-posture-and-recovery-area rules ([[surgery/anaesthesia-pain]]) — plus the oxygen (only after ventilation is established, and never alone) and the driving-and-work conversation ([[clinical-skills/patient-safety]]).**
+This is **acute cardiogenic pulmonary oedema** causing **type 1 respiratory failure**: alveoli are flooded with fluid, causing shunt and V/Q mismatch, and his $P_{aO_2}$ remains below 8 kPa despite high-concentration oxygen. The mildly low pH is mostly a lactic acidosis from tissue hypoperfusion; his $P_{aCO_2}$ is normal for now, although it may rise as he tires. Alongside treatment of the cause (nitrates while his blood pressure is high, a loop diuretic if fluid overloaded, and investigation for an acute coronary syndrome or arrhythmia: [[cardiovascular/heart-failure]]), **CPAP** is appropriate if he remains hypoxaemic: it reopens flooded alveoli, improves oxygenation, reduces the work of breathing and lowers left ventricular afterload. Close monitoring is essential, with escalation if he deteriorates.
 :::
 :::
+
+## Invasive mechanical ventilation {#sec-imv}
+
+When non-invasive methods fail or are unsuitable, a patient may need **tracheal intubation** and mechanical ventilation in critical care. Common reasons are:
+
+- inability to protect the airway (reduced consciousness, for example a Glasgow Coma Scale score of 8 or less, or loss of airway reflexes);
+- hypoxaemia that cannot be corrected by less invasive means;
+- hypercapnic failure that is worsening despite NIV, or in which NIV is contraindicated;
+- exhaustion or impending respiratory arrest;
+- the need for deep sedation or surgery.
+
+The decision to intubate is clinical, taking into account the trajectory as well as the numbers, the reversibility of the underlying illness and the patient's wishes. Intubation itself carries risks, especially in a hypoxaemic patient, and it is performed by experienced clinicians with a plan for difficulty ([[emergency-critical-care/airway-ventilation]]).
+
+Positive-pressure ventilation has physiological effects beyond the lungs. Raised intrathoracic pressure reduces venous return to the heart, so hypotension is common after starting ventilation, especially in patients who are hypovolaemic. Complications include ventilator-associated pneumonia, barotrauma (pneumothorax), ventilator-induced lung injury, the effects of sedation, delirium and muscle weakness acquired in intensive care.
+
+### The acute respiratory distress syndrome
+
+::: definition Acute respiratory distress syndrome {#def-ards}
+The **acute respiratory distress syndrome** (ARDS) is acute, diffuse, inflammatory lung injury leading to increased permeability of the alveolar–capillary membrane, flooding of alveoli with protein-rich fluid and severe hypoxaemia. The **Berlin definition** (2012) requires: onset within one week of a known insult or new or worsening respiratory symptoms; bilateral opacities on chest imaging not fully explained by effusions, collapse or nodules; respiratory failure not fully explained by cardiac failure or fluid overload; and impaired oxygenation, graded with a PEEP of at least 5 cmH₂O as **mild** ($P_{aO_2}$/$F_{IO_2}$ 200–300 mmHg), **moderate** (100–200 mmHg) or **severe** (100 mmHg or less).
+:::
+
+A **global definition** proposed in 2023 extended the Berlin criteria so that ARDS can be recognised more widely: it includes patients on high-flow nasal oxygen at 30 L/min or more, allows an $S_pO_2$/$F_{IO_2}$ ratio of 315 or less (when $S_pO_2$ is 97% or less) in place of arterial blood gases, and accepts lung ultrasound as imaging where radiography or CT is unavailable.
+
+ARDS can follow **direct** lung injury (pneumonia, including COVID-19; aspiration of gastric contents; smoke inhalation; near-drowning) or **indirect** injury (sepsis, major trauma, pancreatitis, massive transfusion). The pathology is **diffuse alveolar damage**: neutrophil-driven injury, hyaline membranes lining the alveoli, loss of surfactant and, in some patients, later fibrosis. The lungs become stiff, heavy and unevenly affected: dependent regions are collapsed and flooded while other regions remain aerated. The functional lung is small, sometimes called the "baby lung".
+
+Treatment is mainly supportive, while the cause is treated. The key principle is to avoid further harm from the ventilator.
+
+::: theorem Lung-protective ventilation {#thm-lpv}
+In ARDS, ventilation with **low tidal volumes** (about 6 mL/kg of predicted body weight) and a **plateau pressure of 30 cmH₂O or less** reduces mortality compared with traditional larger tidal volumes. Predicted body weight is calculated from height and sex:
+
+$$
+\text{PBW (men)} = 50 + 0.91 \times (\text{height in cm} - 152.4), \qquad \text{PBW (women)} = 45.5 + 0.91 \times (\text{height in cm} - 152.4)
+$$ {#eq-pbw}
+:::
+
+::: proof
+Because so much of the ARDS lung is collapsed or flooded, a "normal" tidal volume is delivered into the small aerated part and overstretches it (**volutrauma**). Alveoli that open and close with each breath are damaged by shear forces (**atelectrauma**). Both release inflammatory mediators that harm the lung and other organs (**biotrauma**). Limiting tidal volume and plateau pressure reduces overdistension; adequate positive end-expiratory pressure (PEEP) keeps recruitable alveoli open and reduces cyclic collapse. Predicted body weight is used rather than actual weight because lung size depends on height and sex, not on body fat. In the ARDS Network trial (2000), 6 mL/kg reduced mortality from about 40% to 31% compared with 12 mL/kg. A related measure, the **driving pressure** (plateau pressure minus PEEP), reflects the tidal volume relative to the size of the functional lung and is associated with outcome.
+:::
+
+Other measures with evidence in moderate to severe ARDS include **prone positioning** for long periods each day (the PROSEVA trial, 2013, found lower mortality with prone positioning for at least 16 hours a day in patients with a $P_{aO_2}$/$F_{IO_2}$ below 150 mmHg), a conservative fluid strategy once shock has resolved, and, in severe disease in specialist centres, extracorporeal membrane oxygenation (ECMO). Prone positioning improves oxygenation by making ventilation and perfusion more even, as the dorsal lung, which receives most of the blood, is reopened. Corticosteroids have a role in some causes, such as COVID-19.
+
+::: example Calculating the oxygenation ratio {#ex-pf}
+A 45-year-old woman with pneumococcal pneumonia and sepsis is intubated. On $F_{IO_2}$ 0.6 with PEEP 10 cmH₂O, her $P_{aO_2}$ is 9.0 kPa. The chest radiograph shows bilateral opacities, and echocardiography shows normal left ventricular function. Calculate her $P_{aO_2}$/$F_{IO_2}$ ratio and grade her ARDS.
+::: solution
+Convert $P_{aO_2}$ to mmHg: $9.0 \times 7.5 = 67.5$ mmHg.
+
+Ratio: $67.5/0.6 = 112.5$ mmHg (15 kPa).
+
+She meets the Berlin criteria (acute onset, bilateral opacities, not explained by cardiac failure, PEEP ≥ 5) with a ratio between 100 and 200 mmHg: **moderate ARDS**. Management includes lung-protective ventilation with a tidal volume of about 6 mL/kg predicted body weight, plateau pressure of 30 cmH₂O or less, appropriate PEEP, and consideration of prone positioning if her ratio falls below 150 mmHg (it already does). The pneumonia and sepsis are treated, and fluids are managed carefully.
+:::
+:::
+
+::: example Setting the tidal volume {#ex-pbw}
+A 178 cm tall man weighing 120 kg is ventilated for ARDS. What tidal volume corresponds to 6 mL/kg of predicted body weight, and why should his actual weight not be used?
+::: solution
+PBW $= 50 + 0.91 \times (178 - 152.4) = 50 + 0.91 \times 25.6 = 50 + 23.3 = 73.3$ kg.
+
+Tidal volume $= 6 \times 73.3 \approx 440$ mL.
+
+Using his actual weight (120 kg) would give 720 mL, an injurious volume for the small aerated part of his lungs. His lungs are the size expected for his height and sex; his additional body weight does not make them larger. Obesity does make the chest wall stiffer, which affects the interpretation of plateau pressure, but it does not justify larger tidal volumes.
+:::
+:::
+
+## Neuromuscular respiratory failure {#sec-neuromuscular}
+
+Respiratory failure from neuromuscular disease is easily missed, because the patient may not look distressed and oxygen saturation stays normal until late. The respiratory muscles weaken, vital capacity falls, cough becomes weak, secretions accumulate and atelectasis develops. Bulbar weakness adds the risk of aspiration. When failure occurs, it can be abrupt.
+
+In conditions such as **Guillain–Barré syndrome** and **myasthenic crisis**, the forced vital capacity is measured serially at the bedside (several times a day in acute disease). A falling vital capacity, particularly towards about 20 mL/kg, or a vital capacity below about 1 L in an adult, along with weak cough, bulbar dysfunction or rising $P_{aCO_2}$, should prompt critical care review and consideration of elective intubation before a crisis occurs. Peak flow is not a useful measure here, as it depends on effort and on airway calibre rather than on the strength of the inspiratory muscles ([[nervous-system/neuromuscular]]).
+
+::: example Weak but not breathless {#ex-gbs}
+A 36-year-old man is admitted with ascending weakness and areflexia following a diarrhoeal illness: Guillain–Barré syndrome is diagnosed. He weighs 80 kg. On admission his FVC is 3.2 L. Over 24 hours it falls to 2.1, then 1.5 L. His $S_pO_2$ is 97% on air and he says he is "fine". What do you do?
+::: solution
+His FVC has fallen from 40 mL/kg ($3.2/80$) to about 19 mL/kg ($1.5/80$) in a day, a rapid decline below 20 mL/kg. His normal saturation is falsely reassuring: hypoxaemia is a late sign of neuromuscular failure. He needs urgent **critical care review**, and elective intubation and ventilation should be considered before he decompensates. Look also for bulbar weakness (difficulty swallowing, weak cough, nasal speech), which increases the risk of aspiration, and for autonomic instability (arrhythmias, blood pressure swings), common in Guillain–Barré syndrome. Disease-specific treatment (intravenous immunoglobulin or plasma exchange) is given alongside.
+:::
+:::
+
+## Chronic respiratory failure and long-term support {#sec-chronic}
+
+Some patients have long-term hypoxaemia or hypercapnia. Long-term oxygen therapy for chronic hypoxaemia in COPD is described in [[respiratory/asthma-copd]]. Home NIV is used for chronic hypercapnic failure due to chest wall disease, neuromuscular disease and obesity hypoventilation, and for selected patients with COPD who remain hypercapnic after an exacerbation: in the UK HOT-HMV trial (2017), adding home NIV to home oxygen in such patients prolonged the time to readmission or death. Decisions about long-term ventilation, especially in progressive conditions such as motor neurone disease, involve careful discussion of the patient's goals, and planning for the end of life when ventilation no longer helps or is no longer wanted ([[geriatrics-palliative/end-of-life-care]]).
 
 ::: quiz
-Protective tidal volumes are calculated from predicted (not actual) body weight because:
-- [ ] Adipose tissue consumes little oxygen, so the lung needs less ventilation
-- [x] Aerated lung size scales with height and sex, not adiposity — obese patients' lungs are not larger
-- [ ] The circuits are calibrated to ideal weight
-- [ ] Plateau pressure falls with actual weight
+A 54-year-old man with a myasthenic crisis has an FVC of 1.1 L (body weight 85 kg), a weak cough and $S_pO_2$ of 96% on air. Which statement is correct?
+- [ ] His saturation shows that his ventilation is adequate
+- [ ] Peak flow is the best measure to monitor him
+- [x] He needs urgent critical care review, because his vital capacity is about 13 mL/kg
+- [ ] High-flow oxygen will prevent respiratory failure
 ::: solution
-The ARDSNet arithmetic ([[#def-ards]]): **the "baby lung" is injured, not enlarged — delivering 8-10 mL/kg of actual body weight to a 140 kg person over-distends a height-normal lung (the volutrauma and driving-pressure injury of the widget's upper knee); PBW from height (the 50 + 0.91(cm−152.4) male formula) targets the anatomy that exists.** The same reasoning explains the obese patient's low-compliance chest wall with normal specific compliance ([[respiratory/mechanics-breathing]]'s volumes lesson) and the plateau-versus-driving-pressure refinement ([[emergency-critical-care/critical-care]]).
+His FVC is $1.1/85 \approx 13$ mL/kg, well below about 20 mL/kg, and he has a weak cough: he is at high risk of sudden ventilatory failure and needs urgent critical care assessment ([[#sec-neuromuscular]]). A normal saturation is a late and unreliable sign in neuromuscular failure. Peak flow depends on effort and airway calibre and does not measure inspiratory muscle strength well. Oxygen does nothing for ventilation and may mask hypoventilation.
 :::
 :::
 
 ::: history
-The failure-syndromes' concept waited on the blood-gas electrode (the **Siggaard-Andersen** micro-methods of the 1950s–60s) and the **Campbell and Howell and Haldane** school's oxygen-and-CO₂-clinical-physiology (the Blue-Book of the respiratory failure's classification); **Ashbaugh and Bigelow's** 1967 "adult respiratory distress syndrome" description (the paediatric-respiratory-distress-syndrome analogue acknowledged) and **Petty and Ashbaugh's** PEEP era; the **1982 Petty-Bernard-consensus and the 1994-95 AECC-conference definitions and the 2012 Berlin-revision (the P/F bands and the hydrostatic-clause and the epidemiology-cleanup)**, **the ARDSNet 2000 tidal-volume trial (the 12-versus-6-mL-and-plateau logic — its striking mortality reduction changed practice worldwide)**, **the Gattinoni and the Pelosi and the Amato driving-pressure-and-mechanical-power school (the curve and energy biophysics)** and **the Guillion and Combes (the PROSEVA proning) and the ACURASYS-versus-ROSE-paralysis debate**; the **NOTT-MRC-oxygen lineage into the BTS-oxygen-standard and the O'Driscoll-controlled-oxygen campaign**; the **NIV trials (the Brochard and Plant AECOPD programmes and the cardiogenic-pulmonary-oedema evidence)**, the **HFNO era (the Roca, FLORALI and HIGH trials)**, **the ECMO renaissance (the CESAR transfer-trial and the EOLIA randomisation and the H1N1-experience era)** and the **weaning-consensus conferences (the SBT-rules and the spontaneous-breathing-trial meta-analysis)** complete the modern therapy's evidence archaeology, while the **ventilator-associated-pneumonia prevention bundles (the head-up and cuff and sedation-vacation lineage)** and the **post-ICU-syndrome-clinic movement (the Needham-and-Herridge-generation survivorship research)** supply the chapter's sequelae.
+During the Copenhagen polio epidemic of 1952, the Blegdam Hospital was overwhelmed with patients with respiratory paralysis, and mortality in those with bulbar polio was very high. The anaesthetist Bjørn Ibsen proposed tracheostomy and manual positive-pressure ventilation, delivered by hand with a rubber bag by relays of medical students, around the clock; mortality fell sharply. The epidemic led to the first intensive care units. In 1967 David Ashbaugh, Thomas Petty and colleagues described a syndrome of acute respiratory distress in adults, later called ARDS. In 2000 the ARDS Network trial showed that ventilation with low tidal volumes saves lives. Non-invasive ventilation for COPD exacerbations was established by randomised trials in the 1990s, including a UK multicentre ward-based trial by Plant, Owen and Elliott (2000).
 :::
 
 ## Where this leads
 
-The gas arithmetic in [[respiratory/gas-exchange]]; the mechanics being supported in [[respiratory/mechanics-breathing]]; the controller in [[respiratory/control-breathing-tests]]; the causes (pneumonia, ARDS's sepsis, asthma, PE) in [[respiratory/respiratory-infections]] and [[infectious-diseases/fever-sepsis]] and [[respiratory/interstitial-vascular-disease]]; the acute protocols in [[emergency-critical-care/airway-ventilation]] and [[emergency-critical-care/critical-care]]; the withdrawal-and-ceiling decisions in [[medical-ethics-law/end-of-life-ethics]] and [[geriatrics-palliative/palliative-care]]; the neuromuscular diseases in [[nervous-system/neuromuscular]].
+This chapter closes the course. The physiology it relies on is in [[respiratory/mechanics-breathing]], [[respiratory/gas-exchange]] and [[respiratory/control-breathing-tests]], and the common causes of respiratory failure are in [[respiratory/asthma-copd]], [[respiratory/respiratory-infections]] and [[respiratory/interstitial-vascular-disease]]. Airway management, resuscitation and organ support in critical care are taken further in [[emergency-critical-care/airway-ventilation]] and [[emergency-critical-care/critical-care]], and the assessment of the acutely ill patient in [[emergency-critical-care/acute-assessment]].
 
 ::: summary
-- Type 1 failure is a gradient problem (V/Q and shunt across airspace, interstitium, airway, vascular and pleural causes); type 2 is a pump-and-controller problem (drive, neuromuscular, chest wall, airway) — pH dates the acuity and the bicarbonate dates the chronicity.
-- ARDS is the inflamed leaky barrier (the Berlin clauses) whose shunt, stiff-heterogeneous lung and baby-volume mechanics dictate the protective package: 6 mL/kg predicted body weight, plateau ≤30, permissive hypercapnia, targeted PEEP, proning for the severe bands, and early ECMO referral for the refractory.
-- The support ladder (controlled oxygen → HFNO → NIV → intubation → ECMO) has syndrome-specific mortality winners (AECOPD and cardiogenic oedema for NIV; severe ARDS for proning; LTOT and home-NIV for the chronic retainers) and syndrome-specific traps (oxygen-only hypoventilation, delayed intubation, and the unweanable patient without a plan).
-- Weaning is a protocol: readiness, spontaneous-breathing trial, extubation-risk modification and the tracheostomy-and-long-term-ventilation pathway with its community packages.
-- Chronic hypercapnia (obesity-hypoventilation, the post-TB and kyphoscoliosis restrictive chest, the neuromuscular) is managed by weight and positive-pressure ventilation and drug-avoidance, and every admission is an exacerbation of a disease the discharge plan must own.
+- Type 1: $P_{aO_2}$ < 8 kPa with normal or low $P_{aCO_2}$ (gas exchange failure). Type 2: $P_{aCO_2}$ > about 6 kPa (ventilatory failure). Each can be acute, chronic or acute-on-chronic.
+- $P_{aCO_2}$ is proportional to $\dot V_{CO_2}/\dot V_A$; rapid shallow breathing reduces alveolar ventilation even when minute ventilation rises.
+- Oxygen is prescribed to a target: 94–98% for most, 88–92% for those at risk of hypercapnia. Use fixed-performance devices when precision matters. Do not stop oxygen abruptly in hypercapnia.
+- CPAP treats type 1 failure (for example cardiogenic pulmonary oedema); NIV treats type 2 failure, notably COPD with persistent respiratory acidosis (pH < 7.35, $P_{aCO_2}$ > 6.5 kPa). Agree a ceiling of treatment first.
+- Intubation is for airway protection, refractory hypoxaemia, failing NIV or exhaustion.
+- ARDS: bilateral opacities and hypoxaemia not explained by heart failure; Berlin grades by $P_{aO_2}$/$F_{IO_2}$. Use 6 mL/kg predicted body weight, plateau ≤ 30 cmH₂O, PEEP and prone positioning in moderate–severe disease.
+- In neuromuscular disease, monitor FVC; saturation is a late sign.
 :::
 
 ## Exercises
 
-::: exercise Classify the gas {level=1}
-A 60-year-old on 28 % venturi (SpO₂ 89 %) has PaO₂ 7.1 kPa, PaCO₂ 5.0. Compute the approximate A–a gradient, classify the failure and name the three likeliest causes.
+::: exercise Which type? {level=1}
+Classify each blood gas (on air): (a) $P_{aO_2}$ 7.1 kPa, $P_{aCO_2}$ 4.1 kPa, pH 7.47; (b) $P_{aO_2}$ 7.6 kPa, $P_{aCO_2}$ 8.9 kPa, pH 7.24, bicarbonate 28 mmol/L; (c) $P_{aO_2}$ 7.4 kPa, $P_{aCO_2}$ 7.9 kPa, pH 7.38, bicarbonate 35 mmol/L.
 ::: solution
-PAO₂ ≈ 0.28 × 94.6 − 5.0/0.8 ≈ 26.5 − 6.3 ≈ 20.2 → A–a ≈ 13 kPa (grossly raised — but remember the FiO₂-widening of normal shunt-fraction contributions and that on enriched oxygen the old normal-formulae no longer apply; the qualitative answer stands: large-gradient type-1 failure). Causes: **the acute-on-chronic airspace (pneumonia, oedema), the embolus, and the acute-severe-asthma/exacerbation-V/Q pattern** — the imaging-and-ECG-and-peptide-and-CTPA triage of [[#def-types]] and [[respiratory/gas-exchange]].
+(a) Type 1 respiratory failure with a respiratory alkalosis from hyperventilation. (b) Type 2, acute: pH low, bicarbonate barely raised. (c) Type 2, chronic and compensated: pH normal, bicarbonate raised by renal retention.
 :::
 :::
 
-::: exercise Calculate the settings {level=1}
-A 182 cm man with ARDS: give the predicted body weight and the 6 mL/kg tidal volume, and the plateau-pressure ceiling.
+::: exercise Predicted body weight {level=1 check="round(6*(45.5+0.91*(165-152.4)))"}
+Calculate the tidal volume (mL, to the nearest whole number) at 6 mL/kg predicted body weight for a woman 165 cm tall.
 ::: solution
-PBW = 50 + 0.91 × (182 − 152.4) = 50 + 27 ≈ **77 kg** → tidal volume ≈ **460 mL** (the 4–8 mL/kg protective band), plateau ≤ **30 cmH₂O** (and the driving pressure — plateau minus PEEP — under ~15 as the pragmatic target) — the [[#def-ards]] arithmetic; the compliance and the curve of the widget then set the PEEP and the warning of the over-distension ([[emergency-critical-care/airway-ventilation]]).
+PBW $= 45.5 + 0.91 \times (165 - 152.4) = 45.5 + 11.47 = 56.97$ kg. Tidal volume $= 6 \times 56.97 = 341.8$, which rounds to 342 mL.
 :::
 :::
 
-::: exercise Prone numbers {level=2}
-Which ARDS patients benefit most from proning, by what mechanisms, and what does the prone day look like logistically?
+::: exercise P/F ratio {level=1 check="150"}
+A ventilated patient has $P_{aO_2}$ 8.0 kPa on $F_{IO_2}$ 0.4. Calculate the $P_{aO_2}$/$F_{IO_2}$ ratio in mmHg (1 kPa = 7.5 mmHg).
 ::: solution
-**Benefit: the severe band (PaO₂/FiO₂ <150 with the FiO₂-and-PEEP-floor criteria of the trials — the more hypoxaemic and more recruitable the greater the absolute benefit — a mortality claim from the 12-16-hour-session-per-day programmes). Mechanisms: the dorsal-recruitment (the transpulmonary-pressure-gradient and pleural-pressure-height arithmetic — [[respiratory/mechanics-breathing]]), the more-homogeneous ventilation (the less-dependent-overdistension and non-dependent-dependent-nature), the V/Q matching (the perfusion-stays-dependent and ventilation-redistributed-to-dorsal regions), the secretion drainage and the reduced chest-wall-heterogeneity ([[#def-ards]]). Logistics: the pre-turn check (the tubes-and-lines-and-pressure-sites and the facial-and-ocular-and-breast-and-genital protection), the turn-team-and-sedation-deliberate protocol, the hourly-eye-and-pressure and the feeding-position and the ventilator-and-monitor-alarm reset, the 48-hour-response decisions (the ratio-and-driving-pressure-and-compliance-response predicting survival — the responders continuing 12-24-hour courses and the non-responders' ECMO-and-prone-rescue conversation) — [[emergency-critical-care/critical-care]].**
+$8.0 \times 7.5 = 60$ mmHg; $60/0.4 = 150$ mmHg. If the other Berlin criteria are met with PEEP of at least 5 cmH₂O, this is moderate ARDS.
 :::
 :::
 
-::: exercise Start and fail NIV {level=2}
-Give the AECOPD NIV initiation criteria, the 1–2-hour success checks, and the reasons-early-to-stop-and-switch list.
+::: exercise Halving ventilation {level=2 check="2*5.2"}
+A patient's alveolar ventilation falls from 4.0 to 2.0 L/min after an opioid overdose, with no change in carbon dioxide production. His $P_{aCO_2}$ was 5.2 kPa. Estimate his new steady-state $P_{aCO_2}$ in kPa.
 ::: solution
-**Start: the pH 7.25–7.35-and-PaCO₂-driven-acidosis after one-hour maximal medical therapy (the ≤7.25 patient is the simultaneous-and-ICU-bed discussion) — the trial-programme's mortality-and-intubation reduction ([[respiratory/asthma-copd]], [[#def-support]]). Success checks at 1–2 hours: the pH rising (the ≥0.07 rule of thumb), the PaCO₂ falling, the rate and the dyspnoea and the sensorium improving, and the haemodynamics and tolerance and leak acceptable. Stop-and-switch (the intubate-or-escalate): the pH-and-gas-worsening, the GCS-fall-and-aspiration-risk, the haemodynamic instability, the facial-surgery-and-secretions-and-pneumothorax (the un-drained one) and the intolerance-with-exhaustion — with the parallel ceiling-documentation when the ceiling was already set ([[medical-ethics-law/end-of-life-ethics]]); the 4-hour-failure rule that prevents the delayed-intubation harm ([[emergency-critical-care/airway-ventilation]]).**
+$P_{aCO_2} \propto 1/\dot V_A$, so halving alveolar ventilation doubles $P_{aCO_2}$: $5.2 \times 4.0/2.0 = 10.4$ kPa. By the alveolar gas equation his alveolar $P_{O_2}$ would fall by about $5.2/0.8 = 6.5$ kPa, causing hypoxaemia with a normal A–a gradient.
 :::
 :::
 
-::: exercise Wean by the numbers {level=2}
-Define the spontaneous-breathing-trial and the RSBI, and work through the failed-trial patient's differential.
+::: exercise Choosing the device {level=2}
+Suggest an appropriate initial oxygen device and target for: (a) a 25-year-old with pneumonia and $S_pO_2$ 91% on air; (b) a 70-year-old with known COPD and previous hypercapnic failure, $S_pO_2$ 84%; (c) a 50-year-old in cardiac arrest.
 ::: solution
-**The trial: pressure-support ~5-8 (or T-tube) for 30–120 minutes with acceptable rate, volume, gas and comfort; the RSBI = rate (breaths/min) ÷ tidal volume (L) — >105 flagging failure risk (sensitive, imperfect — the pattern of the [[#def-support]] weaning literature). The failed-trial differential, by the chapter's systems: the unresolved cause (the infection and the oedema and the effusion), the pump (the acquired weakness and the diaphragm injury and the critical-illness myopathy — the MIP trend), the drive (the sedatives and opioids — the controller again), the airway (the obstructive physiology and the stridor-and-cuff-leak assessment with the steroid-pre-treatment), the heart (the weaning-induced pulmonary oedema — the raised afterload unmasking LV disease: the BNP-and-echo and the diuresis-and-afterload answer — [[cardiovascular/heart-failure]]'s weaning-trial crossover), and the psychological (the anxiety-and-ventilator-asynchrony and the tracheostomy-and-graduated-weaning programme and the rehabilitation and stimulation packages of the long-stay unit ([[emergency-critical-care/critical-care]], [[geriatrics-palliative/delirium-dementia-care]])).**
+(a) Nasal cannulae (or a simple face mask if more is needed), target 94–98%. (b) A Venturi mask at 24% or 28%, target 88–92%, with an arterial blood gas to check for hypercapnia. (c) The highest possible concentration, via bag–valve–mask with a reservoir during resuscitation, then titrated to target after return of spontaneous circulation.
 :::
 :::
 
-::: exercise The ventilator's own injuries {level=2}
-List the mechanisms of ventilator-induced lung injury and the corresponding protective manoeuvres, including in the "normal" lung.
+::: exercise CPAP or NIV? {level=2}
+For each patient, choose CPAP or NIV and explain why: (a) a 75-year-old with COPD, pH 7.29 and $P_{aCO_2}$ 8.4 kPa after an hour of optimal treatment; (b) a 60-year-old with COVID-19 pneumonia, $S_pO_2$ 90% on 60% oxygen and $P_{aCO_2}$ 4.3 kPa; (c) a 67-year-old with motor neurone disease, morning headaches and daytime $P_{aCO_2}$ 7.1 kPa.
 ::: solution
-**Barotrauma (the high-pressure rupture — the pneumothorax and pneumomediastinum and subcutaneous emphysema — the plateau-ceiling and the PEEP-judgement); volutrauma (the over-distension of the recruitable units — the PBW-tidal-volume rule); atelectrauma (the cyclic opening-shearing of the repetitive recruitment-de-recruitment — the PEEP-above-the-closing-pressure rationale and the recruitment-manoeuvre debate); and biotrauma (the mechanotransduction of inflammatory mediator release — the injurious-ventilation-accentuating-ARDS-and-MOF-and-the-driving-pressure-and-mechanical-power-arguments of the [[#def-ards]] physics); plus the haemodynamic injury (the raised intrathoracic pressure cutting venous return and loading the right heart — [[cardiovascular/cardiac-cycle]] and [[cardiovascular/circulation-blood-pressure]]'s preload-and-afterload physiology read in the post-intubation-collapse) and the diaphragm-disuse-atrophy (the too-much-support and no-breathing-days — the spontaneous-trials-and-MIP-tracking counter-argument). Even the "normal" lung is injured (the one-lung-ventilation and the healthy-lung-surgery studies): hence the lung-protective defaults (the moderate volumes and the recruitment-appropriate PEEP and the avoided-high-FiO₂ absorption atelectasis (the [[respiratory/gas-exchange]] lesson)) for all ventilated patients ([[surgery/anaesthesia-pain]]).**
+(a) **NIV**: persistent hypercapnic acidosis in a COPD exacerbation; the inspiratory pressure support increases alveolar ventilation. (b) **CPAP** (or HFNO): type 1 failure; positive pressure recruits collapsed alveoli and improves oxygenation; ventilatory support is not the problem. (c) **NIV** (home bilevel ventilation): chronic hypercapnic failure from respiratory muscle weakness; it improves symptoms and survival in MND, with planning that respects his wishes for the future.
 :::
 :::
 
-::: exercise Chronic support decisions {level=2}
-Which chronic conditions earn long-term ventilation (home NIV or tracheostomy), and by what criteria?
+::: exercise A deteriorating patient on NIV {level=3}
+A 72-year-old woman with COPD has been on NIV for 2 hours for an exacerbation with an initial pH of 7.26 and $P_{aCO_2}$ 9.1 kPa. Her repeat gas shows pH 7.22 and $P_{aCO_2}$ 10.2 kPa. She is drowsy. What could be going wrong, and what decisions are needed?
+::: hint
+Think about the patient, the mask, the machine and the plan.
+:::
 ::: solution
-**The chronic-daytime-hypercapnia phenotypes: the post-hypercapnic-respiratory-failure COPD-and-overlap (the home-NIV readmission-reduction criteria — the ≥2-admissions or the persistent-acidosis-on-recheck debate), the obesity-hypoventilation ([[#ex-home-niv]]), the restrictive chest wall (the kyphoscoliosis and the post-TB and the ankylosing-spondylitis and the neuromuscular — the dystrophies and myotonics and the MIP/FVC thresholds and the slowly-rising-daytime-gas trigger), the stable-overnight-hypoventilation post-spinal-cord-injury and high-quadriplegic (the phrenic-pacing options — [[nervous-system/motor-systems]]), and the long-term-ventilation-via-tracheostomy after the failed-weaning (the unit-selection criteria and the benefit-and-burden conversation, the community-package and the carer-and-power-and-transport-and-school-and-work logistics — and the honest prognostic framing for the motor-neurone-disease choices (the survival-versus-function trade and the advance-care-planning and the withdrawal-pathway alternatives — [[medical-ethics-law/end-of-life-ethics]], [[geriatrics-palliative/end-of-life-care]])).**
+Her NIV is failing. Check: **the mask and circuit** (leaks, poor fit, wrong interface); **the settings** (inspiratory pressure may be too low to deliver adequate tidal volume; check that EPAP is sufficient and that the patient and ventilator are synchronised); **oxygen** (is the saturation within 88–92% or has too much oxygen been entrained?); **the patient** (secretions, a new pneumothorax, worsening pneumonia, sedation or exhaustion); and **the diagnosis** (another cause such as PE or heart failure). Increasing drowsiness with worsening acidosis means she may need invasive ventilation. This is where the pre-agreed **ceiling of treatment** matters: if intubation was judged appropriate, critical care should be involved now; if NIV was agreed as the ceiling, the focus may shift to comfort, with honest discussion with her and her family.
 :::
 :::
 
-::: exercise Design the respiratory-failure pathway {level=3}
-Build the hospital-wide pathway from ward hypoxaemia to intensive care and back: the recognition triggers, the oxygen stewardship, the escalation-and-ceiling architecture, the post-critical-care follow-up — with the physiology justification per node.
+::: exercise Hypoxaemia after a fall {level=3}
+A 30-year-old man is admitted after a fall from a height with multiple rib fractures and a femoral fracture. On day 2 he becomes increasingly breathless. On 15 L/min via a reservoir mask his $S_pO_2$ is 88%; $P_{aO_2}$ is 7.6 kPa. The chest radiograph shows new bilateral patchy opacities, and echocardiography is normal. Give a differential diagnosis and outline management principles.
 ::: solution
-**Recognition: the oxygen-saturation-and-rate-as-vital-signs policy (the NEWS-style early-warning with the hypercapnia-blindness caveat — the SpO₂-flat-top's lie ([[respiratory/gas-exchange]]'s widget) and the capnography for the at-risk-controller groups (the opioid-and-obesity-and-neuromuscular registers); the ABG-with-gradient-and-pH reflex (the [[#ex-types]] reading-order taught and audited). Oxygen stewardship: the prescription-with-target-range-and-review-date rule, the controlled-oxygen for the retainers, the hyperoxaemia-audit, and the HFNO and NIV access pathways with the escalation-stop-rules (the failure-to-improve-at-1-2-hours-for-NIV and 24-48-hours-for-HFNO thresholds — [[#def-support]]). Escalation: the respiratory-and-critical-care outreach criteria (the rising-RR-and-drifting-gases-and-accessory-muscles — the [[respiratory/mechanics-breathing]] work-of-breathing signs), the ICU-transfer bundle (the lung-protective ventilation and proning and the ECMO-referral network and its retrieval logistics ([[emergency-critical-care/critical-care]])); ceilings: the CPR-and-ventilation-and-ICU-admission-deterioration-plans and the NIV-ceiling-with-a-plan documents, the MCPAR-and-reverse-plan-and-palliative-medicine-early-consult architecture ([[medical-ethics-law/end-of-life-ethics]], [[geriatrics-palliative/palliative-care]]). De-escalation and recovery: the weaning-protocol and the tracheostomy-and-LTV pathways and the post-ICU clinic (the physical-and-cognitive-and-psychological-and-financial domains — the post-intensive-care-syndrome framework, the LTOT-and-home-NIV-reassessment rules (the re-test-at-2-3-months discipline) and the pulmonary-rehabilitation and vaccination-and-exacerbation-plan handoffs to the community and the GP ([[public-health/health-systems-economics]])).**
+Hypoxaemic (type 1) failure with bilateral opacities after major trauma. The differential includes **ARDS** (from trauma, lung contusion, transfusion or sepsis), **pulmonary contusion**, **fat embolism syndrome** (after long-bone fracture; look for petechiae and confusion), **aspiration**, **pneumonia** related to poor cough because of rib pain, and transfusion-related lung injury. Pulmonary embolism is also possible after trauma. A pneumothorax must be excluded.
+
+Management: senior and critical care review; high-flow oxygen, then CPAP or HFNO if appropriate, with readiness to intubate; once ventilated, lung-protective ventilation (about 6 mL/kg predicted body weight, plateau ≤ 30 cmH₂O, adequate PEEP) and prone positioning if the $P_{aO_2}$/$F_{IO_2}$ ratio is below 150 mmHg; good analgesia (including regional techniques for rib fractures) to allow coughing and deep breathing; conservative fluid management once he is haemodynamically stable; early fracture fixation; and thromboprophylaxis when bleeding risk allows.
 :::
 :::

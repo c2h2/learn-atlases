@@ -1,141 +1,278 @@
-Lung cancer is the world's leading cancer death, and its story is the respiratory chapter's applied summary: **smoking-and-carcinogen mutagenesis ([[pathology/cancer-biology]] and [[public-health/prevention-promotion]]), a diagnosis usually made on imaging of an advanced disease ([[clinical-skills/medical-imaging]]), a histological-and-molecular classification that dictates five treatment modalities (surgery, radiotherapy, chemotherapy, targeted therapy and immunotherapy — [[pharmacology/drug-development-prescribing]] and [[immunology/vaccines-immunotherapy]]-adjacent), and a paraneoplastic-and-pleural repertoire that mimics every other chapter.** Pleural disease — the malignant effusion and the asbestos tumour of the mesothelium — shares the diagnostic craft (the fluid cytology and the image-guided biopsy and the thoracoscopy) and the palliative philosophy (the indwelling catheter and the pleurodesis and the breathlessness programme of [[geriatrics-palliative/symptom-control]]).
+Lung cancer is the most commonly diagnosed cancer in the world and the leading cause of cancer death, with about 2.5 million new cases and 1.8 million deaths in 2022 according to the International Agency for Research on Cancer. In the UK it is the commonest cause of cancer death. Most of it is preventable: the great majority of cases are caused by smoking. Outcomes depend heavily on stage at diagnosis. Cancers found early can often be cured by surgery or radiotherapy, but most people still present with advanced disease, which is why screening and prompt investigation of symptoms matter so much.
 
-This chapter covers lung cancer's epidemiology-classification-staging-treatment, its systemic manifestations, and pleural tumours and effusions.
+The pleura, the membrane lining the lungs and chest wall, is often involved in lung cancer, but pleural disease has many other causes. The second half of this chapter covers pleural effusion, including how to tell a transudate from an exudate, pleural infection, malignant effusion, mesothelioma and pneumothorax. Management statements follow current UK guidance, including NICE guidance on lung cancer and the British Thoracic Society (BTS) pleural disease guideline (2023), and are given as principles.
 
-## The tumour
+## Lung cancer {#sec-cancer}
 
-::: definition Carcinogenesis, classification and stage {#def-cancer-class}
-**Lung cancer arises in a dose-dependent multistep carcinogenesis from tobacco smoke (the ~70 carcinogens and the CYP-mutagen-activation-and-adduct-repair genetics of [[pharmacology/patient-variation]]'s smoking-metabolism lessons — the 15-30-fold male-female-cohort risks and the multiplicative asbestos interaction and the radon-and-occupational (arsenic-and-chromium-and-silica-and-diesel) and air-pollution and biomass and post-TB-and-fibrosis scar associations — [[public-health/environmental-occupational]] and [[pathology/environmental-pathology]]), with the second primaries of the head-and-oesophagus-and-bladder-and-kidney field-effects and the COPD-and-ILD independent-risk states (the fibrosis-adjacent adenocarcinoma of the [[respiratory/interstitial-vascular-disease]] scar).** The classification that drives everything: **non-small-cell (85 % — the adenocarcinoma (now the commonest, the non-smoker-and-women-and-EGFR-and-ALK-and-ROS1-and-RET-MET-NTRK-NRG1 molecular-rich subtype — the never-smoker's driver-positive distal tumour), the squamous (the central-and-cavitate tumour with the smoking-tight association, the PTHrP-hypercalcaemia propensity and the TP53-and-CDKN2A-and-SOX2 squamous programme), the small-number large-cell-and-adeno-squamous-and-NOS categories) versus small-cell (the central-and-bulky-and-neuroendocrine-gran-cell with the near-universal TP53-and-RB1 inactivation and the paraneoplastic SIADH-and-Lambert-Eaton-and-Cushing tropism and the rapid-generalised-distribution-and-chemo-radio-sensitivity-and-relapse natural history) — with the rare pulmonary neuroendocrine-tumour spectrum (the carcinoids) (the typical and atypical carcinoid and the LCNEC large-cell-neuroendocrine — [[endocrine/reproductive-endocrinology]]-and-[[gastrointestinal/gi-bleeding-cancer]]-adjacent — [[pathology/cancer-diagnosis]]'s markers: the TTF-1-and-p40-and-synaptophysin-and-chromogranin-and-Ki67-panel).** **Staging (the TNM-8 and its consolidation-tumour-size-and-nodal-map logic — the T descriptors by size-and-invasion, the N1-hilar-versus-N2-mediastinal-versus-N3-scalene-supraclavicular tiers, the M1a-pleural-pericardial-contralateral-nodule/M1b-single-extrathoracic/M1c-multiple dissemination and the stage groups IA-to-IVB) rests on the CT-and-PET-contrast and the brain-MRI (the SCLC-and-stage-III-and-symptom triggers) and, decisively, on the tissue: the bronchoscopic (the EBUS-node-staging and the navigational-and-radial-probe peripheral era and the fluid-cytology first-steps) and the CT-guided-transthoracic (the pneumothorax-and-bleeding trade-offs) and the surgical-mediastinoscopy-and-VATS remnants — with cytology-cell-block-minimal-tissue molecular-testing policies (the panel-not-marker reflex-testing and the liquid-biopsy rescue of the insufficient-tissue and the re-biopsy-at-progression practice — [[pathology/cancer-diagnosis]] and [[genetics/genomic-medicine]]).**
+### Causes
+
+Tobacco smoking causes most lung cancer. Risk rises with the number of cigarettes smoked and, even more, with the duration of smoking, and it falls progressively after stopping, although it never quite returns to that of someone who has never smoked. Tobacco smoke contains many carcinogens, such as polycyclic aromatic hydrocarbons and nitrosamines, which cause mutations in genes such as *TP53* and *KRAS* ([[pathology/cancer-biology]]). Other causes include second-hand smoke, radon gas (which seeps from the ground into homes in some areas), asbestos (which multiplies the risk from smoking), air pollution, other occupational carcinogens and previous radiotherapy to the chest. A growing proportion of lung cancers, particularly adenocarcinomas, occur in people who have never smoked; these are more often driven by specific mutations such as in *EGFR*.
+
+### Types
+
+::: definition Main types of lung cancer {#def-lc-types}
+- **Non-small cell lung cancer** (NSCLC), about 85% of cases:
+  - **Adenocarcinoma**: the commonest type, usually peripheral, the commonest type in people who have never smoked and in women. Often carries targetable driver mutations (*EGFR*, *ALK*, *ROS1*, *KRAS* G12C and others).
+  - **Squamous cell carcinoma**: strongly linked to smoking, often central, may cavitate, and associated with hypercalcaemia from parathyroid hormone-related peptide.
+  - **Large cell carcinoma**: a diagnosis of exclusion, now uncommon as immunohistochemistry allows most tumours to be classified.
+- **Small cell lung cancer** (SCLC), about 10–15%: a neuroendocrine tumour, almost always in smokers, usually central, fast-growing, with early spread. It responds initially to chemotherapy and radiotherapy but usually recurs. It is associated with paraneoplastic syndromes.
+- **Carcinoid tumours** are low-grade neuroendocrine tumours, typically in younger people and not related to smoking.
 :::
 
-::: example A mass and a sodium problem {#ex-lungca}
-A 65-year-old lifelong smoker has 6 weeks of cough, 6 kg weight loss and hyponatraemia (Na 124); the CT shows a right hilar mass with mediastinal nodes, a 1.2 cm liver lesion and normal brain MRI; EBUS of station 7 gives small-cell carcinoma.
+The lungs are also a common site of metastases from other cancers, such as breast, colorectal, kidney and sarcoma.
+
+### Presentation
+
+Symptoms come from the primary tumour, from spread within the chest, from distant metastases or from substances the tumour secretes.
+
+- **The primary tumour**: persistent cough or a change in a chronic cough, haemoptysis, breathlessness, chest pain, recurrent or slowly resolving pneumonia (from bronchial obstruction), and lobar collapse.
+- **Spread within the chest**: hoarseness (left recurrent laryngeal nerve, which loops under the aortic arch), a raised hemidiaphragm (phrenic nerve), pleural effusion, pericardial effusion, dysphagia and **superior vena cava obstruction** (SVCO), which causes facial swelling, headache, distended neck and chest wall veins and breathlessness.
+- **Pancoast tumour**: a tumour at the lung apex that invades the brachial plexus (shoulder and arm pain, weakness of the small hand muscles from C8/T1 involvement) and the sympathetic chain (**Horner syndrome**: ptosis, miosis and anhidrosis on the same side).
+- **Metastases**: to bone (pain, fractures, hypercalcaemia), brain (headache, seizures, focal signs), liver and adrenal glands.
+- **Systemic**: weight loss, fatigue, finger clubbing and hypertrophic pulmonary osteoarthropathy.
+
+::: definition Paraneoplastic syndromes {#def-paraneoplastic}
+**Paraneoplastic syndromes** are effects of a cancer at a distance, caused by hormones or antibodies rather than by direct invasion. In lung cancer the important ones are:
+
+- **Syndrome of inappropriate antidiuretic hormone secretion** (SIADH), causing hyponatraemia; most often SCLC.
+- **Ectopic ACTH secretion**, causing Cushing syndrome with hypokalaemia; mainly SCLC.
+- **Hypercalcaemia** from parathyroid hormone-related peptide; mainly squamous cell carcinoma.
+- **Lambert–Eaton myasthenic syndrome**, from antibodies to presynaptic voltage-gated calcium channels, causing proximal weakness that improves with repeated effort; mainly SCLC.
+- Other neurological syndromes, such as cerebellar degeneration and encephalitis, often antibody-mediated.
+:::
+
+In the UK, NICE guideline NG12 on suspected cancer recommends an urgent chest radiograph for people aged 40 and over with two or more unexplained symptoms such as cough, fatigue, breathlessness, chest pain, weight loss or appetite loss (or one, if they have ever smoked), and an urgent referral on a suspected cancer pathway if the radiograph suggests lung cancer or if a person aged 40 or over has unexplained haemoptysis. A normal chest radiograph does not exclude lung cancer, so persistent symptoms need further assessment.
+
+::: example Confusion and a low sodium {#ex-paraneoplastic}
+A 64-year-old woman who smokes 30 cigarettes a day is brought in by her daughter because of a week of confusion. Her serum sodium is 118 mmol/L. She is clinically euvolaemic, with a serum osmolality of 252 mOsm/kg, a urine osmolality of 480 mOsm/kg and a urine sodium of 45 mmol/L. Her thyroid and adrenal function are normal and she takes no diuretics. The chest radiograph shows a right hilar mass. What is the likely unifying diagnosis?
 ::: solution
-**Extensive-stage small-cell lung cancer (the liver metastasis places M1b disease — the two-stage SCLC trial-era division: limited (confined to one tolerable radiotherapy field) versus extensive) with the paraneoplastic SIADH ([[renal/water-sodium]]'s hyponatraemia apparatus and the [[endocrine/hypothalamus-pituitary]] ADH physiology): the euvolaemic hypotonic picture with inappropriately concentrated urine and a high urine sodium, treated by fluid-restriction-and-the-cause-chemotherapy-with-the-oral-salt-and-loop-and-tolvaptan-second-line-and-the-too-fast-correction-osmotic-demyelination-caution).** The immediate system-response: **the multidisciplinary tumour board (the oncologist-and-surgeon-and-radiation-oncologist-and-specialist-nurse-and-palliative-medicine-team format), the platinum-etoposide (now immune-checkpoint-inhibitor-added for extensive-stage) with the cycle-by-cycle response-and-prophylactic-cranial-irradiation-question-era debates, the SIADH-trajectory-as-treatment-response-marker, the emergency-oncology vigilance (the SVC obstruction ([[cardiovascular/vascular-disease]]-adjacent and the airway-compromise and the spinal-cord-compression ([[nervous-system/motor-systems]]) and the neutropenic-sepsis ([[infectious-diseases/immunocompromised-host]]) syndromes), the smoking-cessation-and-vaccination-and-nutrition-and-exercise prehabilitation package, the clinical-trial-conversation, and the parallel honest-prognosis-and-advance-planning-discussion (the extensive-stage survival figures in months and the preferred-place-of-dying documentation — [[geriatrics-palliative/end-of-life-care]]).**
+Hyponatraemia with low serum osmolality, inappropriately concentrated urine (urine osmolality above serum), continued urinary sodium excretion and euvolaemia, with normal thyroid and adrenal function and no diuretics, meets the criteria for **SIADH**. In a heavy smoker with a central hilar mass, the most likely cause is **small cell lung cancer** secreting antidiuretic hormone. Severe symptomatic hyponatraemia needs careful correction in hospital, avoiding overly rapid rises in sodium, which risk osmotic demyelination ([[renal/water-sodium]]). She needs urgent staging and tissue diagnosis, usually by CT and bronchoscopy or endobronchial ultrasound. Treating the cancer often corrects the SIADH.
 :::
 :::
+
+### Investigation and staging
+
+The aims are to confirm the diagnosis, establish the type and molecular profile, determine the stage, and assess the patient's fitness for treatment. Investigation proceeds in an order that obtains the most information from the fewest procedures, ideally by sampling the site that would establish the highest stage.
+
+- **CT of the chest, liver and adrenal glands** with contrast is the first staging test.
+- **PET-CT** (positron emission tomography with fluorodeoxyglucose) detects metabolically active mediastinal nodes and distant metastases in patients being considered for curative treatment.
+- **Tissue sampling**: bronchoscopy for central tumours, **endobronchial ultrasound-guided transbronchial needle aspiration** (EBUS-TBNA) for mediastinal nodes, CT-guided biopsy for peripheral lesions, pleural fluid cytology, or biopsy of a metastasis.
+- **Molecular testing** for driver mutations and **PD-L1 expression** in NSCLC, which determine eligibility for targeted therapy and immunotherapy.
+- **MRI of the brain** for patients being considered for curative treatment of more advanced disease, or with neurological symptoms.
+
+Lung cancer is staged with the TNM system. The ninth edition (IASLC/UICC), in use from January 2025, describes the tumour (T) by size and invasion of adjacent structures; nodes (N) as none, ipsilateral hilar (N1), ipsilateral mediastinal or subcarinal (N2, now divided into single-station N2a and multiple-station N2b) and contralateral or supraclavicular (N3); and metastases (M) as intrathoracic (M1a: pleural or pericardial effusion or nodules, or nodules in the other lung), a single extrathoracic metastasis (M1b) or multiple extrathoracic metastases (M1c, now divided into M1c1, one organ system, and M1c2, several). The combination gives stages I to IV.
+
+### Treatment
+
+Treatment is planned by a lung cancer multidisciplinary team and depends on the type, stage, molecular profile and the person's fitness and wishes.
+
+- **Early-stage NSCLC (stages I–II, and some stage III)**: **surgery**, usually lobectomy with lymph node sampling, often by video-assisted or robotic thoracoscopic surgery. For people who are not fit for or do not want surgery, **stereotactic ablative radiotherapy** (SABR) gives high-dose, highly focused radiation in a few fractions. Chemotherapy, immunotherapy or targeted therapy may be given before or after surgery to reduce recurrence, for example osimertinib after resection of *EGFR*-mutant tumours.
+- **Locally advanced, unresectable NSCLC (stage III)**: concurrent **chemoradiotherapy**, typically followed by consolidation immunotherapy with durvalumab (or osimertinib for *EGFR*-mutant tumours).
+- **Advanced NSCLC (stage IV)**: tumours with a driver mutation are treated with **targeted drugs**, such as tyrosine kinase inhibitors against EGFR (osimertinib) or ALK (alectinib, lorlatinib). Tumours without a targetable driver are treated with **immune checkpoint inhibitors** (anti-PD-1 or anti-PD-L1 antibodies), alone if PD-L1 expression is high or with chemotherapy. These treatments have improved survival substantially for many people with advanced disease.
+- **SCLC**: for limited-stage disease, concurrent chemoradiotherapy; for extensive-stage disease, chemotherapy combined with an immune checkpoint inhibitor. Prophylactic cranial irradiation may be considered.
+- **Palliative care** is integrated from diagnosis: symptom control (breathlessness, pain, cough), palliative radiotherapy for bone pain or haemoptysis, stenting for SVCO or airway obstruction, and support for patients and families ([[geriatrics-palliative/palliative-care]]).
+
+### Fitness for surgery
+
+Before lung resection, the team estimates how much lung function will remain after surgery. One simple method counts the bronchopulmonary segments. There are 19 in total: 10 on the right (upper lobe 3, middle lobe 2, lower lobe 5) and 9 on the left (upper lobe including the lingula 5, lower lobe 4).
+
+$$
+\text{ppo value} = \text{preoperative value} \times \frac{19 - \text{segments removed}}{19}
+$$ {#eq-ppo}
+
+where "ppo" means predicted postoperative. This is applied to FEV₁ and TLCO (as % predicted). If segments are already blocked by tumour and not contributing, the calculation is adjusted. In BTS guidance, patients whose predicted postoperative FEV₁ and TLCO are both above 40% have an acceptable risk of breathlessness after surgery; those with lower values need further assessment, often with exercise testing. Cardiovascular risk and the patient's own priorities are also assessed.
 
 ::: widget plot
-f: 100; 10+90*exp(-0.055*x)
-x: 0, 60
-y: 5, 105
-labels: \text{years since quitting},\ \text{lung-cancer risk (\% of continuing smoker)};\ \text{continuing smoker};\ \text{after sustained quitting}
-caption: The single most useful cancer-prevention number, drawn from the cohort data: excess lung-cancer risk falls by roughly half within a decade of sustained cessation and continues to decay towards (but never all the way to) a never-smoker's baseline, because the accumulated mutations remain ([[pathology/cancer-biology]]'s multistep model). The flattening of FEV₁ decline that cessation also buys ([[respiratory/asthma-copd]]'s Fletcher-Peto curve) operates on the same decision. The clinical translation: quitting at 60 still earns both benefits, and every oncologic consultation should re-open the cessation question ([[public-health/prevention-promotion]]).
+f: p*(1-x/19)
+x: 0, 19
+y: 0, 100
+sliders: p=70:30:100:1
+hlines: 40
+labels: \text{predicted postoperative FEV}_1 \text{ (\% predicted)}
+caption: Predicted postoperative FEV₁ (vertical axis, % of predicted) against the number of functioning segments removed (horizontal axis), by simple segment counting, for a preoperative FEV₁ of $p$%. A lobectomy removes 2 to 5 segments and a pneumonectomy 9 or 10. The horizontal line marks 40%, below which further assessment is needed. A simplified model for teaching; in practice perfusion scanning and exercise testing refine the estimate.
 :::
 
-## Treatment, manifestations, pleura
-
-::: definition Treatment by stage and biology {#def-treatment}
-**Stage I-II (and selected III) non-small-cell, operable: the anatomical resection (the lobectomy-with-systemic-node-sampling standard, the segmentectomy non-inferiority trials for the small-peripheral tumour and the wedge-for-compromised-patients and the sleeve-and-pneumonectomy rarities — [[surgery/gastrointestinal-surgery]]-adjacent thoracic technique) with the pre-operative fitness (the FEV₁-and-DLCO-predicted-postoperative-utility thresholds and the cardiopulmonary-exercise-testing — [[respiratory/gas-exchange]]'s numbers in service), the adjuvant era (the cisplatin-based-adjuvant-chemotherapy for the node-positive-and-high-risk and the adjuvant-targeted (the EGFR-mutant osimertinib) and adjuvant-immunotherapy (the PD-L1-and-tumour-clearance-regimens) trials, and the neoadjuvant-chemo-immunotherapy (the pCR-and-event-free-survival-improving) paradigm shift); the inoperable-early stage: the stereotactic ablative radiotherapy (the tumour-ablative-dose-and-fractionation with the chest-wall-and-airway-toxicity-map) and the ablation-niches; the locally advanced (III): the concurrent chemoradiotherapy with the durvalumab-consolidation standard for the unresectable and the induction-and-salvage-surgery selectations — stage IV: the biomarker-first algorithm (the driver-positive (EGFR and ALK and ROS1 and BRAF and MET and RET and NTRK and KRAS-G12C and HER2) matched-therapy sequences with their resistance-mechanism re-biopsy logic and CNS-penetrant-agent selection, and the driver-negative PD-L1-tiered chemo-immunotherapy (the monotherapy-for-PD-L1-high and platinum-doublet-combination regimens), the oligometastatic-local-treatment trials, the palliative-radiotherapy (the bone-pain-and-brain (the whole-brain-versus-stereotactic-versus-surgery neurocognitive logic — [[clinical-skills/medical-imaging]]) and the SVC-and-airway stents) and the best-supportive-care-early-integration trials.** **Small-cell: the limited-stage concurrent chemoradiotherapy (the thoracic-radiotherapy-timing-and-dose-fractionation debates and the prophylactic-cranial-irradiation-versus-MRI-surveillance-era-shift) and the extensive-stage chemo-immunotherapy with the response-adapted consolidation and the relapse-treatment (the topotecan-and-lurbinectedin-and-clinical-trial-and-rechallenge) landscape.** **The cross-cutting programme: the rapid-access-and-two-week-wait diagnostic pathways and the nurse-led coordination and the MDT-decision documentation, the smoking-and-rehabilitation-and-nutrition-and-psychological support and the financial-and-driving-and-work conversations ([[public-health/health-systems-economics]]), the follow-up-survivorship-and-second-primary-surveillance (the low-dose-CT-screening of the quit-recently-heavy-exposure cohorts — [[public-health/screening]]'s trial criteria (the mortality-reduction-with-overdiagnosis-and-over-investment trade) and the post-treatment nodule-and-scan-anxiety machinery), and the terminal-phase breathlessness-and-cough-and-haemoptysis-and-fatigue management ([[geriatrics-palliative/symptom-control]]).**
-:::
-
-::: definition Systemic manifestations and the pleura {#def-parapleur}
-**Paraneoplastic and metabolic effects are presenting clues and treatment targets: the endocrine (the SIADH ([[renal/water-sodium]]) and the ectopic-ACTH-Cushing (the small-cell's rapid-onset hypokalaemia-and-hypertension-and- pigmentation-with-lost-diurnal-rhythm — [[endocrine/adrenal]]'s ACTH-dependent-hypokalaemic-work-up) and the PTHrP-humoral-hypercalcaemia-of-squamous (and the rare 1,25-D-lymphoma-style and osteolytic-mixed calcium pictures — [[endocrine/bone-calcium]]); the antibodies-and-neurological (the Lambert-Eaton myasthenic presynaptic-calcium-channel autoimmunity (the proximal-leg weakness with the autonomic and the incremental-response EMG — contrasted with myasthenia in [[nervous-system/neuromuscular]]), the anti-Hu-and-Yo-and-Ma sensory-neuronopathy-and-cerebellar-and-limbic encephalitides ([[nervous-system/sensory-systems]] and the tumour-search logic), and the dermatologic (the tripe palms-and-acanthosis nigricans and the dermatomyositis-association and the hypertrophic pulmonary osteoarthropathy (the clubbing-and-periostitis-and-arthralgia of the long bones — [[musculoskeletal/bones-joints]]); the vascular-and-haematological (the Trousseau-migratory-thrombophlebitis and the non-bacterial thrombotic endocarditis-stroke ([[cardiovascular/valve-congenital-disease]] and [[nervous-system/stroke]]) and the DIC-and-leukaemoid-and-anaemia-of-chronic-disease ([[blood/anaemia]] and [[blood/haemostasis-bleeding]])); the cardiac metastasis-and-radiation-pericardial-and-myocardial disease ([[cardiovascular/valve-congenital-disease]]'s-constrictive-tail) and the renal (the membranous-nephropathy-carcinoma association — [[renal/urinary-tract]]).** **Pleural disease: the malignant pleural effusion (the exudative — often bloody — transudate-impostor excluded, the cytology-first (the repeat-tap-yield-decay and the closed-biopsy-versus-image-guided-thoracoscopy-biopsy-tissue-yield pathway — [[clinical-skills/medical-imaging]] and [[pathology/diagnostic-pathology]] — mesothelioma needing the bigger-biopsy-immunohistochemistry-calretinin-WT1-versus-adenocarcinoma-TTF1-MOC31-differential), and the management philosophy (the asymptomatic-leave-it and the symptomatic-drain-and-reaccumulate-then-definitive: the talc-slurry-versus-doxycycline chemical pleurodesis (the chest-tube-and-pain-and-fever-and-the-rare-ARDS) versus the tunneled-indwelling-pleural-catheter (the day-care-and-community-drainage and the spontaneous-pleurodesis-rate) versus the indeterminate-prognosis-and-trapped-lung judgements; the pleuroperitoneal-and-thoracoscopy-palliative-tiers); the persistent-air-leak and bronchopleural-fistula scenarios; and the primary pleural tumour — malignant mesothelioma (the asbestos-dose-latency-20-to-40-years and take-home-and-neighbourhood exposures and the smoking-independent (the pleural-plaques-background) epidemiology, the chest-pain-and-nodule-and-rind-and-effusion-and-contralateral-mediastinal-features, the epithelioid-versus-sarcomatoid-versus-biphasic histology-prognostics, the pleurectomy/decortication-versus-extrapleural-pneumonectomy-selected-versus-radiation-and-pemetrexed-platinum-chemo-and-the-immunotherapy (the checkpoint-inhibitor-first-line trial-era) therapeutic sequence, and the occupational-disease-reporting-and-compensation-and-legal-support duties ([[public-health/environmental-occupational]] and [[medical-ethics-law/professionalism-regulation]])).**
-:::
-
-::: example The trapped lung and the talc decision {#ex-pleura}
-A 71-year-old with treated ovarian carcinoma history but a new lung primary has a recurrent, heavily exudative, bloody effusion re-accumulating 9 days after therapeutic thoracentesis; cytology is positive twice; manometry during drainage shows high negative pleural pressures and incomplete expansion at 1.2 L.
+::: example Can he have a lobectomy? {#ex-ppo}
+A 68-year-old man with COPD has a 2.8 cm adenocarcinoma in the right lower lobe with no nodal or distant spread on PET-CT. His FEV₁ is 65% of predicted and his TLCO is 58% of predicted. Estimate his predicted postoperative FEV₁ and TLCO for a right lower lobectomy.
 ::: solution
-**Recurrent malignant pleural effusion with a non-expanding ("trapped") lung physiology from visceral pleural tumour encasement (the positive cytology makes further tissue hunting unnecessary — [[#def-parapleur]]'s yield logic).** The decision architecture: **the life-expectancy and symptom-burden assessment (the performance status and the untreated-disease trajectory — the talc-versus-catheter-guiding numbers), the trapped-lung's consequence (the pleurodesis requires apposition — a lung that will not re-expand predicts chemical-pleurodesis failure, so the indwelling catheter is the better first choice — the drainage-symptom-relief also functions as the definitive test of whether the breathlessness is even effusion-driven (the mesothelioma-entrapment and the dyspnoea-multifactorial traps)), the catheter programme (the day-case insertion and the community drainage teaching and the discharge-and-catch-infection-and-blockage troubleshooting and the spontaneous-pleurodesis-with-serial-volume-reduction), the alternative and combined paths (the smaller-volume-drain-with-slower-talc or the thoracoscopic talc-puffing when the lung does expand; the pleuroperitoneal shunt and the repeat-drain-for-short-survival exceptions), and the holistic frame (the pleurodesis-catheter choice disclosed with expected outcomes, the opioid-and-breathing-and-fan breathlessness programme and the oxygen-only-if-hypoxaemic rule ([[geriatrics-palliative/symptom-control]]), and the anticipatory prescribing for the terminal-phase recurrence ([[geriatrics-palliative/end-of-life-care]])).**
+The right lower lobe has 5 segments, leaving 14 of 19.
+
+ppoFEV₁ $= 65 \times 14/19 = 47.9\%$, about 48%.
+
+ppoTLCO $= 58 \times 14/19 = 42.7\%$, about 43%.
+
+Both are above 40%, so by BTS criteria his risk of postoperative breathlessness is acceptable, and lobectomy is a reasonable option if his cardiac risk is acceptable and he wishes to proceed. If either value had been below 40%, the next step would be formal exercise testing, and SABR would be an alternative curative treatment. He should be supported to stop smoking before surgery, which reduces complications.
 :::
 :::
 
-::: example The 11 mm nodule {#ex-nodule}
-A 57-year-old ex-smoker (24 pack-years, quit 6 years ago) has an incidental 11 mm part-solid nodule (6 mm solid component) in the right upper lobe on a trauma CT; no nodes, otherwise well.
+### Screening
+
+Two large randomised trials showed that screening people at high risk with **low-dose CT** reduces lung cancer deaths. The US National Lung Screening Trial (2011) found a 20% reduction in lung cancer mortality compared with chest radiography, and the Dutch–Belgian NELSON trial (2020) a reduction of about a quarter in men at ten years compared with no screening. Harms include false-positive results and further tests, radiation exposure, overdiagnosis of slow-growing cancers and incidental findings. In England, the **NHS Lung Cancer Screening Programme** (developed from the Targeted Lung Health Check pilots) invites people aged 55 to 74 with a history of smoking for a risk assessment, followed by low-dose CT for those at high risk. It is being rolled out nationally, with full coverage planned by 2029/30. Screening is most effective combined with smoking cessation support.
+
+Screening and routine CT find many small **pulmonary nodules**, most of which are benign. In the BTS guideline (2015), very small solid nodules (under 5 mm, or under 80 mm³) need no follow-up. Larger nodules are assessed using growth on repeat CT (with volume measurement) and risk models such as the Brock model, followed by PET-CT and the Herder model for those at higher risk.
+
+## Pleural disease {#sec-pleura}
+
+### Pleural effusion
+
+A small amount of pleural fluid, around 10–20 mL on each side, lubricates the movement of the lung against the chest wall. It is filtered from the systemic capillaries of the parietal pleura and absorbed by the parietal pleural lymphatics. An **effusion** forms when filtration exceeds absorption, because of raised hydrostatic pressure, reduced oncotic pressure, increased capillary permeability or blocked lymphatic drainage ([[pathology/haemodynamics]]).
+
+Clinically, an effusion causes breathlessness, reduced chest expansion, **stony dullness** to percussion, reduced breath sounds and reduced vocal resonance. The chest radiograph shows blunting of the costophrenic angle (needing about 200 mL on a frontal film) and, if larger, a meniscus. Ultrasound is more sensitive, shows septations and is used to guide every pleural procedure.
+
+::: theorem Light's criteria {#thm-light}
+A pleural effusion is an **exudate** if it meets at least one of the following:
+
+1. pleural fluid protein / serum protein > 0.5;
+2. pleural fluid LDH / serum LDH > 0.6;
+3. pleural fluid LDH > two-thirds of the upper limit of normal for serum LDH.
+
+If none is met, it is a **transudate**.
+:::
+
+::: proof
+Transudates form when the balance of hydrostatic and oncotic pressures is altered but the pleural membrane is intact, so the fluid is an ultrafiltrate of plasma with little protein or LDH. Exudates arise when the pleura is inflamed or invaded, or lymphatic drainage is blocked, so proteins and cells leak into the space and inflammatory or malignant cells release LDH. Comparing pleural values with serum values corrects for the patient's own plasma levels. The criteria are highly sensitive for exudates, but they misclassify some transudates as exudates, particularly in people with heart failure treated with diuretics, which concentrate the pleural fluid. In that situation, a serum-to-pleural albumin gradient above 12 g/L supports a transudate.
+:::
+
+**Transudates** are usually bilateral and are caused by heart failure (the commonest cause of all effusions), cirrhosis, nephrotic syndrome, hypoalbuminaemia, hypothyroidism and peritoneal dialysis. Typical bilateral effusions in a patient with known heart failure do not need aspiration unless there are atypical features, such as fever, pleuritic pain or a much larger effusion on one side. **Exudates** are caused by pneumonia (parapneumonic effusion and empyema), malignancy (lung, breast, lymphoma, mesothelioma, other metastases), tuberculosis, pulmonary embolism, rheumatoid arthritis and other autoimmune diseases, pancreatitis and drugs.
+
+A diagnostic pleural aspiration, guided by ultrasound, sends fluid for protein, LDH, glucose and pH, cytology, Gram stain and culture, and, when suspected, acid-fast bacilli. The appearance helps: pus means empyema; frank blood suggests malignancy, trauma or PE; a milky fluid suggests chylothorax. A low glucose is seen in infection, rheumatoid disease, malignancy and TB. Pleural fluid cytology detects malignancy in only around half of malignant effusions, so pleural biopsy (under CT or ultrasound guidance or at thoracoscopy) is often needed.
+
+::: example Transudate or exudate? {#ex-light}
+A 72-year-old woman has a unilateral right pleural effusion. Results: pleural protein 32 g/L, serum protein 68 g/L; pleural LDH 260 U/L, serum LDH 210 U/L. The laboratory upper limit of normal for serum LDH is 250 U/L. Apply Light's criteria.
 ::: solution
-**An indeterminate pulmonary nodule whose management is probability arithmetic, not biopsy-reflex (the malignancy-likelihood models (the Brock and VA calculators) use age-and-sex-and-smoking-and-family-history-and-size-and-shape-and-spiculation-and-location — and the part-solid-and-subsolid morphology carries its own slow-growing-adenocarcinoma-spectrum biology with ground-glass-persistence rules — [[public-health/screening]] and [[clinical-skills/medical-imaging]]).** The pathway: **short-interval contrast CT (typically ~3 months for this size-and-morphology band) rather than immediate resection, with PET's weak discrimination below ~10 mm and in the subsolid components; the volume-doubling-time and solid-component-growth criteria drive the surgery-vs-ablation-vs continued-surveillance decision at a thoracic-MDT; the prior-film comparison (months-old images are the cheapest diagnostic test) and the radiology-report nomenclature (the Lung-RADS and Fleischner-style frameworks and their follow-up-interval tables) keep the follow-up protocolised; the patient-communication script (the "watch-and-wait is safer than cut-and-see" framing, the anxiety-and-clarify-when-to-stop-surveillance plan, and the never-miss-an-cancer-versus-over-treat balance — [[clinical-skills/communication]]); and the concurrent risk-modification (the cessation-reinforcement and occupational history and the personal-and-family-risk recomputation — the screening-eligibility question of [[#def-treatment]]'s own era).**
+Protein ratio: $32/68 = 0.47$, not above 0.5.
+
+LDH ratio: $260/210 = 1.24$, above 0.6.
+
+Pleural LDH compared with two-thirds of the upper limit of normal: $\tfrac{2}{3} \times 250 = 167$; 260 is above this.
+
+Two criteria are met, so the fluid is an **exudate**. A unilateral exudate in an older woman raises concern for malignancy, pleural infection, TB and PE. Next steps: cytology and microbiology of the fluid, CT of the chest with contrast (ideally before the effusion is fully drained, so that the pleura can be assessed), and, if cytology is negative and malignancy is still suspected, pleural biopsy.
 :::
 :::
 
-::: example The swollen face {#ex-svc}
-A 62-year-old smoker has 2 weeks of facial and arm swelling, headache when bending, and distended neck and chest-wall veins; the CT shows a right upper mediastinal mass compressing the SVC with collateral flow; SpO₂ and calcium are normal, and there is no stridor or cerebral oedema.
-::: solution
-**Superior vena cava obstruction (the subacute-on-chronic malignant compression — the collaterals' time-to-develop explains the ambulatory patient; the emergency determinants are airway-oedema-and-cerebral-venous-congestion-and-stridor-and-syncope, all absent — [[cardiovascular/circulation-blood-pressure]]'s venous-return physiology made visible).** Management sequence: **the tissue diagnosis before treatment whenever stable (the bronchial-and-lymphoma-and-thrombosis differential — the small-cell-and-lymphoma-and-germ-cell-and-metastatic list — the biopsy route planned around the tumour's identity since chemo-and-radio-sensitivity differs radically ([[pathology/cancer-diagnosis]])); the supportive measures (head elevation and the avoiding-of-upper-limb-lines-and-sedation-risk and the anticoagulation only when catheter-thrombus is documented ([[blood/thrombosis-anticoagulation]])); the definitive routes (the same-day radiotherapy or vascular stenting for the compromise — the stent's immediate gradient-relief versus the chemo-first approach for the chemosensitive histologies — and the oncologic emergency review); and the parallel work-up (the airway and pleural assessment, the anaesthetic airway-risk documentation for any general anaesthesia ([[surgery/anaesthesia-pain]]), and the goals-of-care framing in the advanced-disease majority — [[geriatrics-palliative/palliative-care]]).**
+### Pleural infection
+
+Pleural infection usually complicates pneumonia ([[respiratory/respiratory-infections#def-empyema]]). The BTS guideline recommends chest drainage, in addition to antibiotics, for frank pus or turbid fluid, a positive Gram stain or culture, or a **pleural fluid pH below 7.2** in a patient with suspected infection. Drains are inserted under ultrasound guidance. If drainage is incomplete, intrapleural tissue plasminogen activator with DNase (shown in the MIST2 trial to improve drainage) or thoracic surgery is considered. Pleural infection causes significant morbidity and mortality, especially in older people, and early discussion with a respiratory team improves outcomes.
+
+### Malignant pleural effusion and mesothelioma
+
+A **malignant pleural effusion** means incurable disease in most cancers, and treatment aims to relieve breathlessness with as few procedures and hospital days as possible. Options include therapeutic aspiration, **talc pleurodesis** (instilling talc to stick the pleural layers together, through a drain or at thoracoscopy) and an **indwelling pleural catheter**, a tunnelled drain that can be drained at home. The choice depends on the person's priorities, prognosis and whether the lung re-expands after drainage. When the lung cannot re-expand because of a thickened visceral pleura ("trapped lung"), pleurodesis will fail and an indwelling catheter is preferred.
+
+**Mesothelioma** is a cancer of the pleura (and less often the peritoneum) caused by asbestos exposure, typically 30 to 40 years or more before diagnosis. Asbestos was widely used in the UK until it was banned, and the UK has one of the highest rates of mesothelioma in the world. It presents with breathlessness, chest pain (often dull and persistent) and a pleural effusion, and progresses to encase the lung. Diagnosis needs histology from pleural biopsy. Treatment is mainly palliative, although immunotherapy combinations have improved survival in some patients. People with mesothelioma, and their families, are entitled to compensation and benefits in the UK, and a careful occupational history matters ([[public-health/environmental-occupational]]).
+
+### Pneumothorax
+
+::: definition Pneumothorax {#def-pneumothorax}
+A **pneumothorax** is air in the pleural space. A **primary spontaneous pneumothorax** occurs without known lung disease, typically in tall, thin young men; smoking (including cannabis) greatly increases the risk, and small apical blebs are often present. A **secondary spontaneous pneumothorax** occurs in people with underlying lung disease, such as COPD, cystic fibrosis, ILD or pneumonia. A **traumatic** pneumothorax follows injury or a medical procedure. A **tension pneumothorax** occurs when air enters the pleural space on each breath but cannot leave, so the pressure rises, the mediastinum shifts and venous return to the heart falls.
 :::
+
+Primary spontaneous pneumothorax usually causes sudden pleuritic chest pain and breathlessness. Signs on the affected side include reduced expansion, hyperresonance and reduced breath sounds. Secondary pneumothorax causes more severe symptoms for its size, because the person has less respiratory reserve.
+
+The 2023 BTS guideline moved away from basing treatment mainly on the size of the pneumothorax on the radiograph. Management is now based largely on **symptoms, physiological compromise and patient preference**:
+
+- For primary pneumothorax with **minimal symptoms** and no physiological compromise, **conservative management** (observation, with follow-up) is an option regardless of size.
+- For those needing intervention, options include **ambulatory devices** (small drains with a one-way valve, allowing management at home in centres with the expertise), **needle aspiration** or a **chest drain**.
+- Secondary pneumothorax usually needs admission and, in most cases, drainage, with early respiratory specialist involvement.
+- Surgery to prevent recurrence, such as thoracoscopic bullectomy and pleurodesis, is considered after a second episode, with a persistent air leak, and for people in high-risk occupations.
+
+People are advised to stop smoking, to avoid flying until the pneumothorax has fully resolved, and to avoid diving permanently unless they have had definitive surgery.
+
+::: example Sudden pain in a young man {#ex-pneumothorax}
+A 21-year-old man who smokes has had sudden left-sided chest pain and mild breathlessness for six hours. He is comfortable at rest, with heart rate 88/min, respiratory rate 18/min, blood pressure 124/76 mmHg and $S_pO_2$ 98% on air. The chest radiograph shows a left pneumothorax with a 3 cm rim of air at the level of the hilum. He has no previous lung disease. How might he be managed under the 2023 BTS guideline?
+::: solution
+This is a **primary spontaneous pneumothorax**. Under the older (2010) size-based approach, a rim over 2 cm would have prompted intervention. Under the 2023 guideline, the decision is based mainly on symptoms and physiological compromise. He is minimally symptomatic and physiologically stable, so **conservative management** is an option despite the size, provided he understands the plan and has clear safety-netting advice and follow-up arrangements. If he prefers intervention, or his symptoms are troublesome, needle aspiration or an ambulatory device could be used, in discussion with him. He should be strongly encouraged to stop smoking (the main modifiable risk factor for recurrence), advised not to fly until resolution is confirmed, and told never to dive unless he has definitive surgery.
+:::
+:::
+
+::: warning Tension pneumothorax is a clinical diagnosis
+A patient with a tension pneumothorax may have severe respiratory distress, hypoxaemia, tachycardia, hypotension, distended neck veins and, late, deviation of the trachea away from the affected side. It is most common in trauma and in patients receiving positive-pressure ventilation. Do not wait for a chest radiograph: the treatment is **immediate decompression**, by needle or open (finger) thoracostomy, followed by a chest drain. Current trauma guidance in adults favours the 4th or 5th intercostal space just anterior to the mid-axillary line, as the chest wall is thinner there than at the traditional 2nd intercostal space in the mid-clavicular line ([[surgery/trauma]]).
 :::
 
 ::: quiz
-A malignant effusion recurs after thoracentesis but the lung fails to re-expand (trapped lung). The best next step is:
-- [ ] Repeat talc pleurodesis with a larger dose
-- [x] A tunneled indwelling pleural catheter
-- [ ] Decortication in all patients regardless of prognosis
-- [ ] Permanent chest tube on suction
+Which lung cancer type is most associated with hypercalcaemia caused by parathyroid hormone-related peptide?
+- [ ] Small cell carcinoma
+- [ ] Adenocarcinoma
+- [x] Squamous cell carcinoma
+- [ ] Carcinoid tumour
 ::: solution
-**Chemical pleurodesis needs parietal-visceral apposition, which a trapped lung cannot provide — failure and prolonged admission follow ([[#def-parapleur]] and [[#ex-pleura]]). The indwelling catheter palliates by intermittent drainage and achieves spontaneous pleurodesis in a minority; decortication is a considered exception in selected patients with good performance status, and permanent suction is not a discharge plan ([[geriatrics-palliative/symptom-control]]).**
+Squamous cell carcinoma most often secretes parathyroid hormone-related peptide ([[#def-paraneoplastic]]). Hypercalcaemia in lung cancer can also come from bone metastases. SIADH, ectopic ACTH and Lambert–Eaton syndrome are characteristic of small cell carcinoma.
 :::
 :::
 
 ::: history
-**The lung-cancer epidemic's documentation (the 1950s **Doll-and-Hill** and **Wynder** prospective-and case-control convergence and the 1964 Surgeon-General Report's causal verdict — the epidemiological exemplar of [[epidemiology-ebm/observational-studies]])**; the **histological-typification era (the 1957-1981 WHO classifications)** and the **Mountain-era and 8th-edition TNM staging refinements**; the **1995 adjuvant-chemotherapy meta-analysis**, the **targeted-therapy revolution (the geFITinib-and-erlotinib experience of the never-smoker Asian-women cohorts, the 2007 ALK-crizotinib story and the subsequent RET-and-MET-and-NTRK-and-KRAS-G12C cascade)**, and the **immunotherapy trials (the CheckMate-and-KEYNOTE-and-PACIFIC programs from 2015)**; the **low-dose-CT screening trials (the NLST 2011 and the NELSON and UKLS mortality reductions with the overdiagnosis-and-nodule-work-up debates — [[public-health/screening]])**. On the pleural side: **the 1960 Wagner-Gilman-Coley South-African asbestos-and-mesothelioma case series that established the causal link**; **the modern pleurodesis trial programmes (the TIME and AMPLE and MAPS generations)** and **the indwelling-catheter-versus-talc era (the 2005-onwards non-inferiority trials)**; and **the 2018 checkpoint-inhibitor-first-line mesothelioma trial that began the tumour's systemic-therapy rethink**. The paraneoplastic toolbox grew from **the PTHrP purification of the 1980s** and **Lambert and Eaton's and Lennon's voltage-gated-calcium-channel antibody work**.
+In 1950 two case–control studies, by Richard Doll and Austin Bradford Hill in the *British Medical Journal* and by Ernst Wynder and Evarts Graham in the *Journal of the American Medical Association*, showed a strong association between smoking and lung cancer. Doll and Hill then followed about 40,000 British doctors from 1951; the British Doctors Study confirmed the link and showed the benefit of stopping. Graham himself had performed the first successful one-stage pneumonectomy for lung cancer in 1933; he died of lung cancer in 1957. In 1960 Christopher Wagner and colleagues linked mesothelioma to crocidolite asbestos mining in South Africa. Richard Light and colleagues published their criteria for separating exudates from transudates in 1972. In 2004 three research groups reported *EGFR* mutations that predicted dramatic responses to tyrosine kinase inhibitors, opening the era of targeted therapy in lung cancer.
 :::
-
 
 ## Where this leads
 
-Carcinogen biology and tumour pathology in [[pathology/cancer-biology]] and [[pathology/cancer-diagnosis]]; molecular testing in [[genetics/genomic-medicine]]; surgery and its fitness numbers in [[surgery/gastrointestinal-surgery]] and [[respiratory/gas-exchange]]; screening trials in [[public-health/screening]]; asbestos epidemiology in [[public-health/environmental-occupational]]; pleural fluid diagnosis in [[pathology/diagnostic-pathology]]; paraneoplastic endocrinology in [[endocrine/adrenal]] and [[renal/water-sodium]]; the palliative symphony in [[geriatrics-palliative/symptom-control]]; the immunotherapy mechanisms in [[immunology/vaccines-immunotherapy]].
-
-::: exercise Paraneoplastic or progression? {level=2}
-A treated small-cell patient on pembrolizumab-containing therapy develops 4 weeks of proximal weakness, dry mouth and blurred vision; reflexes are absent and sensation is intact. What is the mechanism, and name three mimics.
-::: solution
-**Lambert-Eaton myasthenic syndrome — the anti-presynaptic voltage-gated calcium channel antibodies reducing quantal ACh release ([[nervous-system/neuromuscular]]'s presynaptic-versus-postsynaptic table); the autonomic features (the dry mouth and impotence) and the post-exercise facilitation and incremental EMG separate it from myasthenia; and the treatment is disease-control plus amifampridine (3,4-diaminopyridine) and immunotherapy ([[#def-parapleur]]).** Mimics to exclude: **the critical-illness-and-cancer cachexia myopathy, the checkpoint-inhibitor-induced myositis-myasthenia and Guillain-Barré (the immunotherapy era makes all three real — [[immunology/tolerance-regulation]]-adjacent and [[infectious-diseases/immunocompromised-host]]), and the cisplatin-and-chemotherapy-induced neuropathy (the sensory involvement points away — [[pharmacology/adverse-reactions]]).**
-:::
-:::
+The mechanics of the pleural space, and why a pneumothorax collapses the lung, are in [[respiratory/mechanics-breathing]]. Pleural infection as a complication of pneumonia is in [[respiratory/respiratory-infections]]. The general principles of cancer biology, staging and diagnosis are in [[pathology/cancer-biology]] and [[pathology/cancer-diagnosis]], tumour immunology in [[immunology/transplant-tumour-immunology]], and the care of people with advanced disease in [[geriatrics-palliative/palliative-care]]. Smoking prevention and screening policy are discussed in [[public-health/prevention-promotion]] and [[public-health/screening]].
 
 ::: summary
-- Lung cancer is a smoking-driven multistep mutagenesis with molecularly distinct diseases (the driver-rich adenocarcinoma, the squamous programme, the small-cell TP53-RB twin-hit) — classification and stage decide modality, and the biopsy is the beginning, not an event.
-- Treatment is stage-matched: surgery (fitness-tested) for early disease with peri-operative systemic-therapy eras, radiotherapy-ablation for the inoperable, concurrent chemoradio-immunotherapy for III, and driver- or PD-L1-led systemic therapy for IV, always with early palliative integration.
-- Paraneoplastic syndromes (SIADH, ectopic ACTH, PTHrP, Lambert-Eaton, anti-Hu, osteoarthropathy, thrombophilia) are diagnostic breadcrumbs and treatment-response markers.
-- Malignant pleural effusions are managed by symptom-and-prognosis arithmetic: observe, drain, pleurodesis or indwelling catheter — the trapped lung choosing the catheter.
-- Mesothelioma is the asbestos-latency disease whose diagnosis needs tissue, whose therapy has joined the immunotherapy era, and whose reporting-and-compensation duties are part of treatment.
+- Lung cancer is the leading cause of cancer death; smoking causes most cases, with radon, asbestos and air pollution as other causes.
+- NSCLC (adenocarcinoma, squamous, large cell) accounts for about 85%; SCLC about 10–15%, with early spread and paraneoplastic syndromes.
+- Remember local spread (SVCO, Pancoast tumour with Horner syndrome, recurrent laryngeal and phrenic nerve palsies) and paraneoplastic syndromes (SIADH, ectopic ACTH and Lambert–Eaton with SCLC; PTHrP hypercalcaemia with squamous carcinoma).
+- Staging uses CT, PET-CT, EBUS and the TNM ninth edition (2025). Molecular testing and PD-L1 guide treatment of advanced NSCLC.
+- Early disease: surgery or SABR; ppo FEV₁ and TLCO above 40% indicate acceptable risk. Stage III: chemoradiotherapy then immunotherapy. Stage IV: targeted therapy or immunotherapy.
+- Low-dose CT screening of high-risk people reduces lung cancer deaths; England is rolling out a national programme for people aged 55–74 with a smoking history.
+- Light's criteria separate exudates from transudates. Pleural infection with pH below 7.2 needs drainage.
+- Malignant effusion: talc pleurodesis or indwelling pleural catheter, chosen with the patient. Mesothelioma follows asbestos exposure decades earlier.
+- Pneumothorax management (BTS 2023) is based on symptoms and physiology rather than size alone; tension pneumothorax needs immediate decompression.
 :::
 
 ## Exercises
 
-::: exercise Classify the tissue {level=1}
-Match each to the most likely tumour type: (a) central mass, calcium 3.4, PTH 1.1 (low); (b) never-smoking 44-year-old with multiple nodules and brain metastases; (c) hilar mass, Na 124 and proximal weakness improving with exercise; (d) carcinomatous appearance with ACTH 300 and potassium 2.8.
+::: exercise Counting segments {level=1 check="60*16/19"}
+A woman with a preoperative FEV₁ of 60% of predicted is assessed for a right upper lobectomy (3 segments). Using simple segment counting, calculate her predicted postoperative FEV₁ as a percentage of predicted.
 ::: solution
-**(a) Squamous (the PTHrP humoral hypercalcaemia with suppressed PTH — [[#def-parapleur]]); (b) adenocarcinoma with a driver (the EGFR/ALK-generation picture — the molecular panel mandatory); (c) small-cell (the SIADH-plus-Lambert-Eaton pair — [[nervous-system/neuromuscular]]); (d) small-cell's ectopic-ACTH (the hypokalaemic-hypertension-pigmentation emergency — [[endocrine/adrenal]]).**
+$60 \times (19 - 3)/19 = 60 \times 16/19 = 50.5\%$. This is above 40%.
 :::
 :::
 
-::: exercise Stage it {level=1}
-A 3 cm peripheral adenocarcinoma with ipsilateral hilar nodes, no mediastinal nodes, no distant disease on PET, and an 8 mm contralateral-lobe nodule that PET-and-biopsy declare benign. Give the T, N and stage group and the modality.
+::: exercise Light's criteria {level=1}
+A pleural fluid sample has protein 22 g/L (serum 70 g/L) and LDH 90 U/L (serum 200 U/L; upper limit of normal 250 U/L). Is it a transudate or an exudate?
 ::: solution
-**T2a (the 3-4 cm band) N1 M0 → stage IIB (the 8th-edition grids); modality: the curative pathway — lobectomy-with-node-sampling in a fit patient (the predicted-postoperative-FEV₁-and-DLCO arithmetic of [[#def-treatment]]) followed by adjuvant-platinum-chemotherapy-consideration (the node-positive stage II) and the molecular-and-PD-L1-adjuvant-era discussions; the contralateral-nodule work-up exemplifies why PET needs histological arbitration ([[pathology/cancer-diagnosis]]).**
+Protein ratio $22/70 = 0.31$ (not > 0.5); LDH ratio $90/200 = 0.45$ (not > 0.6); pleural LDH 90 is below $\tfrac{2}{3} \times 250 = 167$. No criterion is met: **transudate**. Look for heart failure, cirrhosis, nephrotic syndrome or hypoalbuminaemia.
 :::
 :::
 
-::: exercise Fitness for thoracotomy {level=2}
-Pre-operative spirometry and gas transfer: how are predicted postoperative values used, and where does exercise testing enter?
+::: exercise Horner and a shoulder {level=1}
+A 59-year-old smoker has right shoulder pain radiating down the inner arm, wasting of the small muscles of the right hand, and a right-sided ptosis with a small pupil. Where is the lesion, and which structures are involved?
 ::: solution
-**The ppoFEV₁-and-ppoDLCO (the pre-operative value times the perfusion-fraction of the lung being retained — the quantitative-perfusion or segment-count method) with the ~30-40 %-predicted-thresholds triggering exercise testing (the VO₂max ladder: >15, 10-15 and <10 mL/kg/min risk bands — [[respiratory/mechanics-breathing]] and [[respiratory/gas-exchange]]'s clinical-numbers payoff) and the cardiopulmonary-and-frailty-and-anaesthetic review; the below-threshold patient's alternatives (the sublobar resection and the SABR and the ablation discussions — [[#def-treatment]]).**
+A **Pancoast (superior sulcus) tumour** at the right lung apex. It invades the lower brachial plexus (C8 and T1 roots, causing pain along the inner arm and weakness and wasting of the intrinsic hand muscles) and the cervical sympathetic chain (causing **Horner syndrome**: ptosis, miosis and anhidrosis on the same side).
 :::
 :::
 
-::: exercise The brain question {level=2}
-Which lung-cancer patients need brain imaging, which need prophylactic cranial irradiation, and what has changed that practice?
+::: exercise Pleural pH {level=2}
+A patient with pneumonia has a moderate effusion. Aspirated fluid is clear, with pH 7.12 and glucose 2.8 mmol/L; the Gram stain is negative. Does she need a chest drain? Explain.
 ::: solution
-**Imaging: all SCLC-stagers and the stage-II-plus-and-symptomatic-and-adenocarcinoma-high-risk NSCLC (the MRI-with-contrast sensitivity over CT for the small-lesions-and-leptomeningeal — [[clinical-skills/medical-imaging]]). PCI: the SCLC-chemo-response patients (the historical-overall-survival-benefit trials) now in the MRI-surveillance era (the Japanese-and-Dutch trials showing non-inferior survival with salvage-radiotherapy-for-relapse and better neurocognition — the shared decision about the age-and-schedule-and-hippocampal-sparing techniques and the neuropsychological follow-up — [[nervous-system/dementia-neurodegeneration]]-adjacent); NSCLC has no PCI role, and the brain-metastasis treatments (the SRS-versus-WBI-versus-surgery-and-the-CNS-penetrant-drug-first strategies) follow the number-and-size-and-symptom-and-driver logic of [[#def-treatment]].**
+Yes. In suspected pleural infection, a pleural fluid pH below 7.2 indicates a **complicated parapneumonic effusion** that is unlikely to resolve with antibiotics alone, even if the fluid is clear and the Gram stain is negative. The low pH and glucose reflect metabolism by bacteria and neutrophils. She needs ultrasound-guided chest drain insertion and appropriate antibiotics. The pH must be measured in a blood gas analyser, without exposure to air or local anaesthetic, which alter the result.
 :::
 :::
 
-::: exercise Tap and decide {level=2}
-A new unilateral effusion in a 58-year-old ex-shipyard worker: give the diagnostic tap's biochemistry expectations, the first-round differential, and the next tissue step when cytology is negative twice.
+::: exercise Which type? {level=2}
+For each scenario, name the most likely lung cancer type: (a) a 45-year-old woman who has never smoked, with a peripheral mass and an *EGFR* exon 19 deletion; (b) a 70-year-old heavy smoker with a central mass, hyponatraemia and liver metastases at presentation; (c) a 66-year-old smoker with a cavitating central mass and a calcium of 3.1 mmol/L; (d) a 32-year-old with recurrent pneumonia in the same lobe and a well-defined endobronchial lesion.
 ::: solution
-**Exudative (the Light's-criteria protein-and-LDH ratios and the albumin-gradient diuretic correction — [[pathology/diagnostic-pathology]]'s transudate-exudate page) with likely lymphocytic-and-bloody; differentials: the malignancy (the bronchial-and-mesothelioma-and-metastatic), the TB (the adenosine-deaminase-supporting-test and the culture-PCR-pair — [[respiratory/respiratory-infections]]) and the complicated-parapneumonic-empyema's pH-and-glucose-and-pus rules ([[respiratory/respiratory-infections]]). Negative-cytology-and-mesothelioma-suspicion: **the image-guided-pleural-biopsy-or-medical-thoracoscopy (the larger-tissue-and-immunohistochemistry (the calretinin-and-WT1-versus-metastatic-adenocarcinoma-markers) requirement — [[#def-parapleur]]'s-yield-hierarchy and the BAP1-and-MTZH1-loss research-era adjuncts), with the occupational-history-and-latency documentation for the compensation claim ([[public-health/environmental-occupational]], [[medical-ethics-law/professionalism-regulation]]).**
+(a) Adenocarcinoma. (b) Small cell carcinoma. (c) Squamous cell carcinoma. (d) Carcinoid tumour.
 :::
 :::
 
-::: exercise Hypercalcaemia, mechanism-first {level=2}
-Two lung-cancer patients have calcium 3.3: one squamous with PTH <1 and PTHrP high; the other with widespread lytic deposits, suppressed PTH and low-normal 1,25-D. Explain each mechanism and the shared acute management.
+::: exercise A pneumothorax in COPD {level=2}
+A 73-year-old man with severe COPD presents with sudden worsening breathlessness. His $S_pO_2$ is 86% and the chest radiograph shows a 1.5 cm right apical pneumothorax. Why is this treated differently from a primary pneumothorax of similar size in a young person?
 ::: solution
-**Humoral (the squamous PTHrP acting at the PTH-receptor — the bone-resorption-and-renal-calcium-retention-and-lost-1,25-D-rise ("the non-parathyroid" pattern) — [[endocrine/bone-calcium]]'s receptor-physiology) versus osteolytic local destruction (the cytokine-and-RANKL osteoclast-activating local cascade with the suppressed-PTH and the low-normal calcitriol — the myeloma-bronchial analogue). Acute shared management: **the aggressive saline (the litres/day and the cardiac-function watch — [[cardiovascular/circulation-blood-pressure]]'s oedema-risk discipline), the bisphosphonate-or-denosumab (the osteoclast-window and the renal-and-hypocalcaemia-and-dental-ONJ caveats — [[endocrine/bone-calcium]]), the diuresis-only-after-volume-repletion nuance and the glucocorticoids' efficacy in the 1,25-D-mediated lymphomatous mechanisms but not in PTHrP-driven disease, the calcitonin-tachyphylaxis-bridge and the stopping of the thiazides-and-lithium-and-calcium-and-vitamin-D-supplements ([[pharmacology/adverse-reactions]]) and the tumour-treatment-as-definitive ([[#def-treatment]]).**
+This is a **secondary spontaneous pneumothorax**. His lung function is already poor, so even a small pneumothorax causes significant hypoxaemia and distress; the risk of death is higher; the pneumothorax is less likely to resolve on its own because the diseased lung leaks persistently; and recurrence is common. He needs admission, controlled oxygen (target 88–92% if he is at risk of hypercapnia), and in most cases drainage, with early respiratory specialist input. Prevention of recurrence, by surgery or medical pleurodesis, is often considered. Care must be taken not to mistake a large bulla for a pneumothorax; CT helps when there is doubt.
 :::
 :::
 
-::: exercise Design the lung-cancer pathway {level=3}
-From symptoms to survivorship: build the national fast-track pathway with its targets, equity checks and research agenda.
+::: exercise Which effusion? {level=3}
+A 78-year-old retired plumber has a large left pleural effusion, weight loss and constant dull chest pain. CT shows nodular pleural thickening encasing the left lung and calcified pleural plaques. Pleural fluid is an exudate with negative cytology on two samples. Discuss the likely diagnosis, why cytology may be negative, and what should be done next.
 ::: solution
-**Front door: the persistent-cough-and-haemoptysis-and-weight-loss-and-effusion fast-access rule (the 2-week-wait analogue with the primary-care chest-X-ray-first-and-repeat-in-2-weeks guidance and the empiric-antibiotic-and-"pneumonia"-follow-up-film rules that catch the obstructive-causes; the diagnostic-delay audits by deprivation-and-sex-and-ethnicity-and-learning-disability — [[public-health/determinants-inequalities]]).** **Diagnosis-to-decision: the one-stop CT-PET-and-EBUS-and-tissue-and-biomarker-and-brain-MRI bundle with the MDT-within-weeks target and the specialist-nurse-navigation, the molecular-panel national contract (the tissue-sparing and liquid-biopsy-rescue and re-biopsy-at-progression policies — [[genetics/genomic-medicine]]), and the fitness-for-surgery pathway (the physiology-numbers and prehabilitation of [[#def-treatment]]).** **Treatment: the stage-matched-modality and neoadjuvant-and-adjuvant and chemoradio-immunotherapy protocols with the radiotherapy-capacity planning, the thoracic-surgery centralisation-and-volume-outcome policy, and the trial-enrolment-target as standard-of-care language, not favour; the driver-positive patient's access-appeals-timelines and the Compassionate-Use-and-early-access schemes ([[public-health/health-systems-economics]]).** **After: the survivorship clinic (the follow-up imaging-and-second-primary-and-neurocognitive-and-cardiac-radiation-dose-and-endocrine-and-pulmonary-deficit surveillance and the return-to-work-and-insurance-and-financial-harm conversation), the relapse-palliative-early-integration and hospice-referral triggers, and the screening expansion evidence (the quit-year-and-age-band refinements and the lung-RADS-and-nodule-volume-doubling-time systems and the incidental-annotation-communication rules — [[public-health/screening]], [[clinical-skills/communication]]).** **The cross-cutting obligations: smoking-cessation-at-every-contact ([[public-health/prevention-promotion]]) and the occupational-case-reporting for the asbestos cohort ([[public-health/environmental-occupational]]).**
+The likely diagnosis is **malignant pleural mesothelioma**: a plumber may have been exposed to asbestos (lagging, insulation), pleural plaques confirm exposure, and nodular, circumferential pleural thickening with persistent pain is typical. Metastatic adenocarcinoma of the lung and other cancers are differential diagnoses. Cytology is insensitive for mesothelioma because the cells may not shed into the fluid and can be hard to distinguish from reactive mesothelial cells. The next step is **pleural biopsy**, image-guided or at thoracoscopy (which also allows talc pleurodesis), with immunohistochemistry. Management includes control of the effusion (talc or an indwelling pleural catheter), assessment for systemic therapy, palliative care, and advice on compensation and on the legal requirement to report the death to a coroner (or procurator fiscal) as an industrial disease.
+:::
+:::
+
+::: exercise Should he be screened? {level=3}
+A 60-year-old man asks whether he should have a CT scan for lung cancer. He smoked 20 a day from age 18 to 48. Calculate his pack-years, and discuss the potential benefits and harms of screening as you would explain them to him.
+::: solution
+Pack-years $= (20/20) \times 30 = 30$. He is in the age range (55–74) and has a significant smoking history, so in England he would be eligible for risk assessment in the NHS Lung Cancer Screening Programme, and his calculated risk would decide whether he is offered low-dose CT. **Benefits**: screening detects cancers at an earlier stage, when surgery or radiotherapy can cure them, and in trials reduced lung cancer deaths by about a fifth to a quarter. **Harms**: many people have nodules that turn out to be benign, which can mean anxiety and repeat scans; a few undergo biopsies or surgery for benign disease; some cancers found would never have caused harm (overdiagnosis); there is a small radiation dose; and incidental findings (such as coronary calcification or emphysema) may lead to further tests. The decision is his, supported by clear information. Stopping smoking (as he has done) remains the biggest risk reduction.
 :::
 :::
