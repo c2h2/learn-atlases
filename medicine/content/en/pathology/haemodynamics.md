@@ -1,141 +1,356 @@
-Haemodynamic disorders are blood-flow problems written as tissue damage: **pressure overload thickens and dilates the heart, flow obstruction infarcts the organ behind it, thrombi form where stasis, injury or blood itself demands, emboli carry those clots downstream, and high-pressure or low-protein leakage swells tissues with fluid.** Virchow's triad and Starling's forces remain the two most clinically productive sentences in pathology, because almost every emergency - pulmonary embolism, stroke, myocardial infarction, leg swelling, ascites - is one of these patterns wearing a clinical coat.
+The health of every cell depends on a steady supply of blood. Blood must stay liquid inside the vessels, must not leak out of them in excess, and must clot quickly when a vessel is breached. This chapter covers what happens when these conditions fail: fluid escaping into tissues (**oedema**), blood pooling in organs (**congestion**), blood escaping from vessels (**haemorrhage**), blood clotting where it should not (**thrombosis**), material travelling in the bloodstream and blocking a distant vessel (**embolism**), tissue dying from loss of blood supply (**infarction**), and the whole circulation failing (**shock**).
 
-This chapter covers oedema and effusions, thrombosis and its disorders, embolism and infarction, haemorrhage and shock, and the clinical syndromes of arterial and venous disease.
+These disorders cause much of the death and disability in developed countries. Myocardial infarction, stroke and pulmonary embolism are all, at bottom, problems of thrombosis and embolism. The physiology behind this chapter is in [[physiology/homeostasis-body-fluids]] and [[cardiovascular/circulation-blood-pressure]]; the clinical management is in the organ system courses.
 
-## Fluid misplacement
+## Oedema
 
-::: definition Oedema, effusions and starling's ledger {#def-oedema}
-**The forces (the-Starling-equation-across-capillaries - hydrostatic-pressure-push-out-plasma-oncotic-pull-in-with-interstitial-pressure-and-lymphatic-return-as-the-safety-valve-and-the-revised-view-adding-glycocalyx-integrity-and-transcellular-water-flows and the point that oedema is a bookkeeping failure of any of the four terms); the four mechanisms with their clinical rosters (raised-hydrostatic - the venous obstruction and the heart failure and the pregnancy-uterus-and-tumour-mass-effects and the standing-dependent-gravity-physiology with the calf-pump-failure of immobility - [[cardiovascular/heart-failure]], [[obstetrics-gynaecology/pregnancy-antenatal]]); reduced-oncotic (albumin falling in nephrotic protein loss - [[renal/filtration]]; liver failure - [[gastrointestinal/liver-disease]]; protein-losing enteropathy and malnutrition - [[gastrointestinal/bowel-disease]], [[gastrointestinal/clinical-nutrition]]); increased-permeability (the inflammation-burns-sepsis-angioedema with the exudative-protein-rich fluid - [[pathology/acute-inflammation]], [[immunology/hypersensitivity]]); and impaired-lymphatic-drainage (the filarial and post-radiation and post-mastectomy-node-dissection and tumour-invasion elephantiasis with the protein-rich non-pitting-then-fibrosing-tissue and the lymphangiosarcoma-late-risk - [[microbiology/fungi-parasites]], [[surgery/breast-endocrine-surgery]], [[musculoskeletal/skin-cancer]]); the distributions that diagnose (the pitting-versus-non-pitting-rule and the dependent-versus-generalised anasarca logic and the third-spacing-into-bowel-wall-and-lung with the post-cardiopulmonary-bypass capillary-leak example - [[emergency-critical-care/critical-care]]); and the effusions and oedemas as named clinical entities (transudate-versus-exudate-of-pleura-and-peritoneum-and-pericardium with Light's-revision-and-the-diuretic-era-gradients and the ascites SAAG classification of portal hypertensive versus peritoneal carcinomatosis fluid, with the tuberculous lymphocyte exudate and adenosine deaminase adjacency - [[gastrointestinal/liver-disease]], [[respiratory/lung-cancer-pleura]], [[infectious-diseases/tuberculosis]], [[cardiovascular/valve-congenital-disease]] for pericardial) - [[pathology/acute-inflammation]] for the permeability arithmetic.**
-:::
+About 60% of the lean body weight of an adult is water. Roughly two-thirds is inside cells; of the third outside cells, most lies in the interstitial space between cells and a smaller part in plasma. Fluid moves constantly between plasma and interstitium across the walls of capillaries and venules.
 
-## Clotting in the wrong place
+::: theorem The Starling principle {#thm-starling}
+The net filtration of fluid across a capillary wall is
 
-::: definition Thrombosis and its disorders {#def-thrombosis}
-**Virchow's-triad-clinically-weighted (endothelial-injury - the atheroma-erosion-and-rupture-platelet-adhesion-via-vWF-and-collagen-and-tissue-factor with the arterial-heart-attack-and-stroke-white-thrombus-with-platelet-dominance and-antiplatelet-therapy-corollary - [[cardiovascular/coronary-artery-disease]], [[nervous-system/stroke]]; abnormal-flow - the stasis-of-immobility-atrial-fibrillation-aneurysm-varicosity-and-venous-outflow-obstruction with the fibrin-rich-red-thrombus-propagating-with-trapped-erythrocytes and the anticoagulant-corollary - [[cardiovascular/arrhythmias]] for the atrial fibrillation clot, and the central-line and tourniquet turbulence; and blood-changes - the thrombophilia-roster (the factor-V-Leiden-and-prothrombin-G20210A-and-protein-C-S-antithrombin-deficiency-penetrance-honesty and the acquired antiphospholipid-syndrome with its arterial-venous-and-obstetric-catastrophes-and-lupus-anticoagulant-lab-paradox and the malignancy-associated Trousseau migratory thrombophlebitis and the pregnancy and postpartum window and the oestrogen-containing-contraception-and-HRT-absolute-versus-relative-risk-framing and the myeloproliferative JAK2 thromboses in unusual sites such as splanchnic and cerebral veins) - [[blood/haemostasis-bleeding]], [[obstetrics-gynaecology/pregnancy-complications]], [[obstetrics-gynaecology/contraception-fertility]], [[blood/leukaemia]], [[immunology/autoimmunity]]); the clot-fate-menu (propagation-versus-embolisation-versus-organisation-and-recanalisation-with-post-thrombotic-tissue-versus-resolution-complete-and-the-valve-damage-chronic-venous-insufficiency-ulcer-tract-already-in ulcer home [[cardiovascular/vascular-disease]] keep the DVT-post-thrombotic here with link [[cardiovascular/vascular-disease]]); the clinical DVT-PE machine (the Wells-and-Geneva-scores-and-D-dimer-interpretation-in-pregnancy-cancer-old-age-hospitalisation with the false-positive-graveyard and the compression-ultrasound-and-CTPA-and-VQ-versus-SPECT-era-imaging-choices - [[clinical-skills/medical-imaging]], [[clinical-skills/laboratory-tests]]) - [[blood/haemostasis-bleeding]].**
-:::
+$$
+J_v = K_f\big[(P_c - P_i) - \sigma(\pi_c - \pi_i)\big]
+$$ {#eq-starling}
 
-::: definition Embolism, infarction and shock {#def-embolism}
-**Embolus taxonomy (thromboembolism-dominating with the venous-to-lung and arterial-to-limb-brain-viscera routes and the paradoxical embolus through a patent foramen ovale with its cryptogenic-stroke closure debate - [[nervous-system/stroke]], [[cardiovascular/valve-congenital-disease]]); and the exotic emboli with their signature presentations (the fat embolism syndrome after long-bone fracture with its hypoxaemia, thrombocytopenia and petechiae triad at 24-72 hours - [[surgery/trauma]]; the air embolism during central line insertion or removal, with insertion-technique prevention, the left-lateral positioning heritage versus modern resuscitation, and hyperbaric consideration - [[emergency-critical-care/critical-care]], [[emergency-critical-care/shock-fluids]]; the amniotic fluid anaphylactoid syndrome in labour with DIC and complement pathophysiology, with no prevention except rapid recognition - [[obstetrics-gynaecology/labour-birth]]; and the cholesterol crystal atheroembolism after catheterisation with livedo, blue toe, renal failure and eosinophilia, the refractile fundic crystals, and the supportive-care truth) - [[renal/acute-kidney-injury]], [[cardiovascular/vascular-disease]]); infarction-geography (the dual-blood-supply-sparing-lungs-and-liver-versus-end-artery-kidney-spleen-kidney-heart-brain-testis-intussusception-and-torsion-and-volvulus-and-strangulated-hernia-clinical-syndromes and the pale-versus-haemorrhagic-morphology-logic and the wedge-shape-with-apex-at-periphery and the brain-liquefaction-and-bowel-transmural-necrosis-sepsis-perforation-urgency - [[surgery/acute-abdomen]], [[gastrointestinal/bowel-disease]], [[nervous-system/stroke]]); and the two shock-pathophysiologies-with-organ-flow-priority (the distributive-hypovolaemic-cardiogenic-obstructive-classification-with-microcirculatory-shunting-and-mitochondrial-hibernation-and-the-lactate-clearance-as-resuscitation-target-debate and the MODS-endpoint-from-ischaemia-reperfusion-and-DAMP-inflammation-linking-back to cell injury - [[emergency-critical-care/shock-fluids]], [[infectious-diseases/fever-sepsis]], [[pathology/cell-injury]]).**
+where $P_c$ and $P_i$ are the hydrostatic pressures in the capillary and the interstitium, $\pi_c$ and $\pi_i$ are the oncotic (colloid osmotic) pressures exerted by proteins in the plasma and the interstitium, $\sigma$ is the reflection coefficient of the wall to protein (1 if the wall is impermeable to protein, 0 if it is freely permeable), and $K_f$ is the filtration coefficient, which reflects the area and permeability of the wall.
 :::
 
-::: example The long-haul leg {#ex-dvt-pe}
-A 32-year-old on combined oral contraceptives develops a swollen painful calf after a 14-hour flight; three days later, pleuritic chest pain, tachycardia, saturations 93; Wells high-probability; D-dimer 4800.
-::: solution
-**Venous-thromboembolism-as-haemodynamic-disease ([[#def-thrombosis]], [[#def-embolism]], [[respiratory/interstitial-vascular-disease]]): the triad-applied - oestrogen-driven-procoagulant-shift-increasing-factors-II-VII-X-and-fibrinogen-and-lowering-protein-S (the COC-every-pill-combination-difference-honesty-and-the-desogestrel-third-generation-versus-levonorgestrel-relative-risks-and-progestogen-only-and-Copper-IUD-comparison) - [[obstetrics-gynaecology/contraception-fertility]]; the immobility-stasis-dependency of the calf-pump the economy-class name with its risk multipliers - thrombophilia, prior VTE, oestrogen, surgery, cancer - and what a long flight adds in absolute terms, so patients stop blaming the plane and the endothelium's-innocence-in-venous-thrombosis-with-platelet-poor-red-thrombus explaining why anticoagulation-not-antiplatelets-is-the-drug-class; the diagnosis machine - Wells-then-D-dimer-versus-Wells-with-strategy-adjusted-testing and the CTPA-first strategy for high probability with hypoxaemia versus D-dimer-gated testing, with incidentaloma, radiation and contrast-myth honesty and VQ-SPECT and pregnancy protocols - [[clinical-skills/medical-imaging]], [[renal/filtration]]; the treatment-branch-points - the anticoagulate-now decision (the DOAC-first era of apixaban, rivaroxaban, dabigatran and edoxaban versus LMWH-warfarin, with the DOAC danger signal in antiphospholipid syndrome and the caveats at extremes of weight, renal decay and cancer) - [[blood/thrombosis-anticoagulation]], [[immunology/autoimmunity]], [[renal/chronic-kidney-disease]]; and the duration-and-cause-hunt - the-provoked-versus-unprovoked-with-residual-risk-thinking (the 3-versus-12-month-data and the sex-difference-in-recurrence and the thrombophilia-testing-when-it-changes-management-almost-never-honesty) and the occult malignancy question, where age-appropriate screening beat panscan trials and the post-thrombotic prevention with graded compression evidence and the mobilisation-versus-bed-rest trial heritage, the oestrogen switch for future contraception and travel advice for the anxious - [[blood/thrombosis-anticoagulation]], [[clinical-skills/communication]].**
-:::
+::: proof
+Hydrostatic pressure pushes water out of the vessel. Plasma proteins, chiefly albumin, cannot easily cross the wall, so they hold water in by osmosis. The balance of these forces sets the net flow. Classical teaching held that fluid is filtered at the arterial end of the capillary, where hydrostatic pressure is high, and reabsorbed at the venous end, where it is lower. Modern work shows that in most tissues there is little steady reabsorption, because the oncotic pressure that matters is that just beneath the endothelial glycocalyx rather than in the bulk interstitium. Either way, the small net filtration is returned to the circulation by the **lymphatics**. Oedema forms when filtration exceeds the capacity of lymphatic drainage.
 :::
 
-::: example The swollen legs that cancer explains {#ex-lymph-oedema}
-A 61-year-old with cervical cancer treated 6 years ago with hysterectomy, node dissection and radiotherapy has a non-pitting left leg, positive Stemmer sign, recurrent cellulitis and now a violaceous nodule above the malleolus.
-::: solution
-**Lymphatic-failure-and-its-endpoint ([[#def-oedema]], [[pathology/chronic-inflammation-repair]], [[musculoskeletal/skin-cancer]]): the protein-rich-fluid-problem - lymphatic-obliteration-from-surgery-and-radiation-fibrosis-leaves-protein-in-interstitium the non-pitting oedema with positive Stemmer sign distinguishing it from venous swelling, and the adipose remodelling of chronic lymphoedema, with the T-cell inflammation murine data read at its translational distance; and the cellulitis-cycle the streptococcal lymphangitis routes and the vicious circle of infections further damaging lymphatics, the prophylactic penicillin evidence, the skin, nail and interdigital care protocol, and the venepuncture-and-cuff avoidance discipline with its limits - [[microbiology/bacteria]], [[microbiology/antimicrobials]]; the nodule-alarm - chronic-lymphoedema-angiosarcoma the Stewart-Treves lymphangiosarcoma of long-standing lymphoedema, the spreading violaceous macules and nodules look, the multifocality and aggressive behaviour, the biopsy-any-new-nodule rule and the staging and prognosis honesty - [[pathology/cancer-diagnosis]], [[surgery/vascular-urological-surgery]]; and the care-architecture - the-complete-decongestive-therapy (the manual-lymphatic-drainage-and-multilayer-compression-and-exercise-and-skin-care with the home-pumps-and-fitted-garments-availability-struggle) and the surgical options - lymphovenous anastomosis and vascularised node transfer with their selection-criteria controversy, excisional debulking for end-stage disease, and the diuretic-futility point said kindly - plus the body-image, work and disability recognition and the lymphoedema care that prevents exactly this presentation - [[public-health/health-systems-economics]], [[clinical-skills/communication]].**
-:::
+::: definition Oedema and its four mechanisms {#def-oedema}
+**Oedema** is an abnormal accumulation of fluid in the interstitial tissue or in body cavities. Fluid in body cavities is called an **effusion** (pleural, pericardial) or **ascites** (peritoneal). Widespread severe oedema is called **anasarca**. It arises from one or more of:
+
+1. **Raised hydrostatic pressure**: heart failure, venous obstruction (deep vein thrombosis), and sodium and water retention by the kidneys.
+2. **Reduced plasma oncotic pressure** from a low albumin: nephrotic syndrome (loss in urine), cirrhosis (reduced synthesis), severe malnutrition and protein-losing gut disease.
+3. **Lymphatic obstruction** (lymphoedema): removal of or radiotherapy to lymph nodes, invasion by tumour, and infection by filarial worms.
+4. **Increased vascular permeability**: inflammation, burns and allergic reactions.
+
+The first three produce a **transudate**, with little protein. The fourth produces an **exudate**, rich in protein ([[pathology/acute-inflammation]]).
 :::
 
-::: example The catheterisation-day foot {#ex-atheroembolism}
-Five days after coronary angiography for unstable angina, a 72-year-old with diffuse vascular disease has livedo reticularis on both legs, blue toes with palpable pulses, creatinine risen from 95 to 210, eosinophils 1.2 and CRP 90; he was started on warfarin.
-::: solution
-**Cholesterol-crystal-atheroembolism ([[#def-embolism]], [[cardiovascular/vascular-disease]], [[renal/acute-kidney-injury]]): the mechanism - needle-catheter-scraping-of-aortic-and-coronary-atheroma-releases-cholesterol-crystals-that-embolise-to-arterioles-200-400-micrometres the crystal occlusion with foreign-body intimal reaction, complement and eosinophil attention making this an inflammatory microangiopathy rather than a simple plug, the spontaneous versus provoked forms, and the debate over whether anticoagulation worsens it by preventing sealing of ulcerated plaque - [[pathology/acute-inflammation]], [[blood/thrombosis-anticoagulation]]; the recognition-triad-set - the-blue-toes-with-palpable-pulses-paradox large vessels open, arterioles blocked - the pulse examination that separates this from macroembolism and vasospasm, and the refractile arteriolar crystals on fundoscopy and the acute-kidney-injury-with-benign-sediment-or-mild-proteinuria the low complement, eosinophiluria and peripheral eosinophilia as supportive not diagnostic, and the livedo-edge biopsy showing biconcave vascular clefts - the pathognomonic slide - [[clinical-skills/physical-examination]], [[renal/filtration]]; the differential discipline - macroembolism-from-aorta-or-heart-versus-vasculitis-versus-cryoglobulinaemia-versus-antiphospholipid-versus-endocarditis the ANCA, complement, culture and echo workup, the Doppler and CT angiography patterns, and the do-not-re-anticoagulate-if-probable decision with cardiology and vascular joint notes - [[musculoskeletal/connective-tissue-vasculitis]], [[immunology/autoimmunity]]; and the management-honesty - supportive-with-wound-care-and-pain-control-and-statins-with-their-plaque-stabilisation-logic the antiplatelet versus anticoagulation question when another indication exists, the absence of corticosteroid and cyclophosphamide evidence, and the inflammation-targeting hopes versus reality and the prognosis-framing for patients and families the recurrent showers over weeks, renal recovery partial at best, and the risk re-audit before any future angiography or vascular procedure - [[clinical-skills/communication]], [[geriatrics-palliative/palliative-care]].**
-:::
-:::
-
-::: example The postnatal breathlessness {#ex-peripartum}
-Ten days after an emergency caesarean for pre-eclampsia, a 34-year-old has orthopnoea and bilateral leg swelling; echo shows EF 35% with global hypokinesis; she is breastfeeding; BP 150/95; proteinuria persisting.
-::: solution
-**Peripartum-cardiomyopathy-and-postnatal-physiology ([[#def-oedema]], [[#def-thrombosis]], [[cardiovascular/heart-failure]], [[obstetrics-gynaecology/pregnancy-complications]]): the haemodynamic-perfect-storm - the plasma volume expansion peak, the afterload fall, the autotransfusion of uterine involution and the fluid mobilisation of days 2-5 postpartum (the reason a compensated ventricle decompensates on the ward, not in theatre) with the pre-eclamptic endothelial and diastolic burden and the multigravida, multiple-pregnancy and tocolysis risk weights, and the prolactin angiopathy hypothesis read as mechanism of research, not counselling - [[obstetrics-gynaecology/pregnancy-complications]]; the differential that must not be missed - pulmonary embolism after caesarean with its elevated VTE risk, versus pulmonary oedema, versus sepsis cardiomyopathy, versus pre-eclamptic capillary leak the troponin and BNP interpretation in a new mother, and the CTPA versus VQ radiation questions with reassuring numbers and brief breastfeeding guidance - [[clinical-skills/medical-imaging]], [[obstetrics-gynaecology/labour-birth]]); the heart-failure-therapy-pregnancy-lactation-triangle - ACE inhibitors teratogenic in pregnancy but the low-transfer agents acceptable in lactation, beta-blockers with bronchospasm caution, spironolactone acceptable, diuretics titrated with milk-supply watch, and bromocriptine lactation suppression as both therapeutic hypothesis and feeding decision - [[pharmacology/patient-variation]], [[cardiovascular/hypertension]]; and the long-game - EF recovery in about half over months, contraception counselling essential, recurrence risk with subsequent pregnancy with preconception MDT, transplant referral if refractory, VTE prophylaxis in the admitted postnatal cardiopath, and the social reality of a mother in ICU with a neonate - [[psychiatry/lifespan-psychiatry]] - [[cardiovascular/heart-failure]], [[obstetrics-gynaecology/contraception-fertility]].**
-:::
-:::
-
-::: quiz
-A wedge-shaped, pale (anaemic) infarct with its apex toward the periphery is most expected in the:
-- [x] Kidney
-- [ ] Lung
-- [ ] Colon
-- [ ] Liver
-::: solution
-**Solid organs with end-arterial supply - kidney, spleen - give pale wedge infarcts with peripheral apex; the lung's dual circulation and the colon's segmental collaterals make haemorrhagic and watershed patterns, respectively, more typical, and the liver's dual supply makes infarction rare ([[#def-embolism]], [[renal/filtration]] for renal vascular territories).**
-:::
-:::
+The effects of oedema depend on where it is. Oedema of the legs is uncomfortable but rarely dangerous. When pressed, it leaves a pit that slowly fills (**pitting oedema**); lymphoedema, which is protein-rich and later fibrotic, does not pit as easily. **Pulmonary oedema** fills the alveoli with fluid and impairs gas exchange, so it can kill. **Cerebral oedema** in the rigid skull raises intracranial pressure and can push the brain through the foramen magnum (herniation).
 
 ::: widget plot
-f: 100*exp(-0.05*x); 100*(1.35-exp(0.03*x))/(1.35-1)*0.5+0.5*100*exp(-0.1*x); 60+40/(1+exp(-0.6*(x-3))); 20*x
-x: 0, 12
-y: 0, 130
-labels: \text{weeks after vessel occlusion},\ \%\text{of peak severity};\ \text{pain and swelling};\ \text{clot organisation};\ \text{recanalisation maturity};\ \text{post-thrombotic reflux (index)}
-caption: Thrombus fate over weeks ([[#def-thrombosis]]): organisation and recanalisation begin early but valve damage accrues as the clot fibroses - the kinetics behind why early anticoagulation prevents propagation and embolism yet does not guarantee against post-thrombotic change, and why compression and exercise remain part of the prescription ([[blood/thrombosis-anticoagulation]], [[cardiovascular/vascular-disease]]).
+f: (35-20*x) - (p-3)
+x: 0, 1
+y: -15, 30
+sliders: p=25:10:30:1
+hlines: 0
+labels: \text{net outward pressure (mmHg)}
+caption: The classical Starling picture along a capillary, from the arterial end ($x = 0$) to the venous end ($x = 1$). Hydrostatic pressure falls linearly from 35 to 15 mmHg; interstitial pressure is taken as 0 and interstitial oncotic pressure as 3 mmHg, with $\sigma = 1$. The slider sets plasma oncotic pressure $p$. Above the zero line fluid leaves the vessel; below it fluid returns. Lowering $p$, as in nephrotic syndrome or cirrhosis, shifts the whole line upwards so that more fluid is filtered. The numbers are illustrative.
+:::
+
+::: example Starling forces in a low albumin {#ex-starling}
+Use the values in the figure: capillary hydrostatic pressure 35 mmHg at the arterial end and 15 mmHg at the venous end, interstitial hydrostatic pressure 0, interstitial oncotic pressure 3 mmHg, $\sigma = 1$. Calculate the net filtration pressure at each end when plasma oncotic pressure is 25 mmHg, and again when it falls to 15 mmHg.
+::: solution
+1. Normal, arterial end: $(35 - 0) - (25 - 3) = 35 - 22 = 13$ mmHg outward.
+2. Normal, venous end: $(15 - 0) - (25 - 3) = 15 - 22 = -7$ mmHg, that is 7 mmHg inward.
+3. Low albumin, arterial end: $(35 - 0) - (15 - 3) = 35 - 12 = 23$ mmHg outward.
+4. Low albumin, venous end: $(15 - 0) - (15 - 3) = 3$ mmHg, now outward.
+5. With a low plasma oncotic pressure, fluid is filtered along the whole length of the capillary. When this exceeds lymphatic drainage, oedema forms. In practice the interstitial oncotic pressure also falls as more fluid is filtered, which limits the effect, so oedema from hypoalbuminaemia usually appears only when albumin is very low.
+:::
+:::
+
+::: example A child with swollen eyes {#ex-nephrotic}
+A 4-year-old boy has swelling around his eyes each morning and now swollen legs and a distended abdomen. His urine froths. Urine protein is very high, serum albumin is 14 g/L (reference about 35 to 50 g/L) and cholesterol is raised. Explain the oedema.
+::: solution
+1. Heavy proteinuria, hypoalbuminaemia, oedema and hyperlipidaemia make up the **nephrotic syndrome**. In a young child the commonest cause is minimal change disease.
+2. Loss of albumin in the urine lowers the plasma oncotic pressure, so fluid is filtered into the interstitium along the whole capillary.
+3. Oedema gathers where tissue pressure is low: around the eyes after lying flat at night, and in the legs and scrotum and as ascites when upright.
+4. The kidneys also retain sodium in nephrotic syndrome, which contributes. Both mechanisms produce a transudate. The renal pathology is covered in [[renal/filtration]].
+:::
+:::
+
+## Hyperaemia and congestion
+
+Both terms mean an increased volume of blood in a tissue, but the mechanisms differ.
+
+- **Hyperaemia** is an *active* process: arterioles dilate and more blood flows in. The tissue is red and warm. It occurs in exercising muscle, in blushing and in acute inflammation.
+- **Congestion** is a *passive* process: blood cannot drain away, so it accumulates in veins and capillaries. The tissue is dark red-blue (cyanotic) because the stagnant blood is deoxygenated. It occurs in heart failure and with venous obstruction.
+
+Long-standing congestion damages tissue because poorly perfused tissue becomes hypoxic. In **chronic passive congestion of the liver**, caused by right heart failure, the central veins of the lobules are distended and the hepatocytes around them become atrophic or die, while the better-oxygenated hepatocytes near the portal tracts develop fatty change. The cut surface of the liver shows a pattern of dark centres and pale periphery, likened to a nutmeg ("nutmeg liver"). In **chronic passive congestion of the lung**, caused by left heart failure, red cells leak into the alveoli and are broken down by macrophages, which then contain haemosiderin; these are called "heart failure cells" ([[cardiovascular/heart-failure]]).
+
+## Haemorrhage
+
+**Haemorrhage** is the escape of blood from vessels. It is described by size:
+
+- **Petechiae**: tiny (1 to 2 mm) haemorrhages into skin or mucosa, typical of a low platelet count or a platelet function defect.
+- **Purpura**: slightly larger (about 3 mm to 1 cm) haemorrhages, seen with platelet disorders, vasculitis and fragile vessels.
+- **Ecchymoses**: larger (over 1 to 2 cm) subcutaneous bruises, which change colour as haemoglobin is converted to bilirubin and haemosiderin.
+- **Haematoma**: a collection of blood within a tissue, which may be trivial or, in the brain, fatal.
+
+The effect of bleeding depends on the volume, the speed and the site. Rapid loss of about a fifth of the blood volume can cause shock, whereas the same amount lost slowly over weeks may only cause iron deficiency anaemia. A small haemorrhage in the brainstem can kill, while the same volume in the thigh is harmless.
+
+## Normal haemostasis
+
+Haemostasis is the process that stops bleeding at a site of vessel injury while keeping blood fluid elsewhere. It happens in four overlapping steps, covered in detail in [[blood/haemostasis-bleeding]].
+
+1. **Vasoconstriction**: brief narrowing of the injured vessel.
+2. **Primary haemostasis**: platelets adhere to exposed collagen through **von Willebrand factor**, become activated, release their granules (including ADP and thromboxane A₂) and aggregate via the glycoprotein IIb/IIIa receptor to form a platelet plug.
+3. **Secondary haemostasis**: **tissue factor** exposed at the site of injury starts the coagulation cascade, which generates **thrombin**. Thrombin converts fibrinogen into **fibrin**, which reinforces the platelet plug.
+4. **Clot stabilisation and resorption**: fibrin is cross-linked and the plug contracts. **Fibrinolysis** begins: plasminogen is converted to plasmin, which breaks down fibrin. The fragments include **D-dimer**.
+
+Normal endothelium actively prevents clotting. It covers the collagen beneath it, makes prostacyclin and nitric oxide that inhibit platelets, carries heparin-like molecules that activate **antithrombin**, expresses thrombomodulin that switches thrombin to activating **protein C** (which, with protein S, destroys factors Va and VIIIa), and secretes tissue plasminogen activator. Injury or activation of endothelium switches it towards clotting.
+
+## Thrombosis
+
+::: definition Thrombosis {#def-thrombosis}
+**Thrombosis** is the formation of a solid mass of blood constituents (a **thrombus**) inside an intact blood vessel or the heart during life. It differs from a blood **clot**, which forms outside vessels or after death.
+:::
+
+::: theorem Virchow's triad {#thm-virchow}
+Three groups of factors predispose to thrombosis:
+
+1. **Endothelial injury** or dysfunction;
+2. **Abnormal blood flow**: stasis or turbulence;
+3. **Hypercoagulability** of the blood.
+
+Any one may be enough, but thrombosis usually results from a combination.
+:::
+
+::: proof
+Endothelial injury exposes collagen and tissue factor, and loss of the endothelium's anticoagulant functions removes the brakes on platelets and thrombin. It dominates in the heart and arteries, where flow is fast: thrombi form on ulcerated atherosclerotic plaques, on the endocardium over a myocardial infarct and on damaged valves.
+
+Normal blood flow is laminar: cells travel in the centre of the stream and are separated from the endothelium by a layer of plasma. Turbulence, at arterial branches, in aneurysms and over plaques, injures endothelium and creates eddies where platelets meet the wall. Stasis, in leg veins of an immobile person or in a fibrillating left atrium, lets platelets touch the endothelium, prevents dilution of activated clotting factors and slows the inflow of inhibitors. Stasis dominates in veins.
+
+Hypercoagulability is any change in the blood that favours clotting. Inherited forms include factor V Leiden (factor V resistant to protein C), the prothrombin G20210A variant and deficiencies of antithrombin, protein C and protein S. Acquired forms are far more common: cancer, pregnancy and the weeks after delivery, oestrogen-containing contraceptives and hormone replacement, major surgery and trauma, the antiphospholipid syndrome, heparin-induced thrombocytopenia, and obesity.
+:::
+
+### Arterial and venous thrombi
+
+Thrombi differ according to where they form.
+
+- **Arterial thrombi** form in fast-flowing blood, usually on a damaged surface such as a ruptured atherosclerotic plaque. They are rich in platelets and pale, and they tend to grow backwards from the point of attachment. They block the coronary, cerebral and leg arteries.
+- **Venous thrombi** form in slow-flowing blood, usually in the deep veins of the legs. They are rich in red cells trapped in fibrin, dark red, and they grow in the direction of flow towards the heart. Their danger is embolism to the lungs.
+- **Mural thrombi** attach to the wall of the heart chambers or the aorta, for example over an infarct or in an aneurysm.
+- **Vegetations** are thrombi on heart valves, either infected (infective endocarditis) or sterile.
+
+Thrombi formed in flowing blood show the **lines of Zahn**: alternating pale layers of platelets and fibrin and dark layers of red cells. These lines show that the thrombus formed during life. A clot that forms after death is soft, gelatinous and dark red with a yellow "chicken fat" upper part where red cells have settled; it is not attached to the vessel wall and has no lines.
+
+### The fate of a thrombus
+
+A thrombus that does not kill the patient has one of four fates:
+
+1. **Propagation**: it grows, adding more platelets and fibrin, and may block the vessel.
+2. **Embolisation**: part or all of it breaks off and travels in the blood.
+3. **Dissolution**: fibrinolysis removes it. This is most likely with fresh thrombi, which is why clot-dissolving drugs work only in the first hours.
+4. **Organisation and recanalisation**: older thrombi are invaded by granulation tissue, become part of the vessel wall and may develop new channels that partly restore flow.
+
+::: example Calf pain after a long operation {#ex-dvt}
+A 66-year-old woman had a hip replacement six days ago and has been mostly in bed since. Her left calf is now swollen, warm and tender. Explain why she is at risk of venous thrombosis using Virchow's triad, and outline how deep vein thrombosis is assessed.
+::: solution
+1. **Stasis**: immobility removes the calf muscle pump, so blood pools in the deep veins of the leg.
+2. **Endothelial injury**: surgery on the hip can damage the femoral vein through handling and positioning.
+3. **Hypercoagulability**: major surgery releases tissue factor and raises fibrinogen and factor VIII as part of the acute-phase response.
+4. All three components are present, so orthopaedic surgery carries a high risk of venous thromboembolism, which is why patients receive thromboprophylaxis after a risk assessment.
+5. In the UK, NICE guidance (NG158) uses a structured clinical probability score (the two-level Wells score). If deep vein thrombosis is likely, proximal leg vein ultrasound is performed; if unlikely, a D-dimer test is done first, and a normal D-dimer makes thrombosis very unlikely. Management follows [[blood/thrombosis-anticoagulation]].
+:::
+:::
+
+::: warning D-dimer rules out; it does not rule in
+D-dimer is produced whenever fibrin is broken down. It is raised in thrombosis, but also after surgery, in infection, cancer, pregnancy and old age. A normal D-dimer in a person with a low clinical probability makes thrombosis very unlikely. A raised D-dimer in a person who has just had surgery tells almost nothing. The test should not be used to "screen" people with a high clinical probability, who need imaging whatever the D-dimer shows. To reduce false positives in older people, NICE suggests considering an age-adjusted threshold for those over 50.
+:::
+
+::: example An age-adjusted D-dimer {#ex-ddimer}
+A 72-year-old man has a two-level Wells score that makes pulmonary embolism unlikely. His D-dimer is 640 µg/L FEU, and the laboratory's standard cut-off is 500 µg/L FEU. The age-adjusted threshold commonly used for people over 50 is age × 10 µg/L FEU. Interpret the result.
+::: solution
+1. Age-adjusted threshold: $72 \times 10 = 720$ µg/L FEU.
+2. His result of 640 µg/L FEU is above the standard cut-off but below the age-adjusted one.
+3. With a low clinical probability and a D-dimer below the age-adjusted threshold, pulmonary embolism is considered excluded under pathways that use this approach, and he avoids an unnecessary CT pulmonary angiogram.
+4. The adjustment works because D-dimer rises with age in healthy people, so a fixed cut-off loses specificity in older people. Local protocols must specify the assay units, because some laboratories report D-dimer in different units.
+:::
+:::
+
+## Embolism
+
+::: definition Embolism {#def-embolism}
+An **embolus** is a detached solid, liquid or gaseous mass carried by the blood from its point of origin to a distant site, where it lodges and may block a vessel. The commonest emboli are fragments of thrombus (**thromboembolism**). Others are fat, air, amniotic fluid, atheromatous debris, tumour cells and infected material.
+:::
+
+### Pulmonary embolism
+
+Most pulmonary emboli come from deep vein thrombi in the legs, especially the veins above the knee. The embolus passes through the right side of the heart into the pulmonary arteries. Its effect depends on its size and on the state of the circulation.
+
+- A large embolus lodging at the bifurcation of the pulmonary trunk (a **saddle embolus**) or blocking a large part of the pulmonary circulation causes acute right heart failure and can kill suddenly.
+- Medium-sized emboli block medium arteries. Because the lung has a dual blood supply, from the pulmonary and the bronchial arteries, only a minority cause **infarction**, mainly in people whose circulation is already compromised, for example by heart failure. Infarction causes pleuritic pain and haemoptysis.
+- Many small emboli over time can cause chronic thromboembolic pulmonary hypertension.
+
+### Systemic thromboembolism
+
+Emboli in the arterial circulation usually arise in the heart: in the left atrial appendage in atrial fibrillation, from a mural thrombus over a myocardial infarct, or from valve vegetations. A smaller number come from atherosclerotic plaques in the aorta and carotid arteries. They lodge in the brain (causing stroke), the legs, the gut, the kidneys and the spleen. A venous thrombus can enter the systemic circulation through a hole between the right and left sides of the heart, such as a patent foramen ovale: a **paradoxical embolus**. Atrial fibrillation as a cause of stroke is covered in [[cardiovascular/arrhythmias]].
+
+### Other emboli
+
+- **Fat embolism**: fat globules enter the circulation after fractures of long bones such as the femur, or after extensive soft-tissue injury. Most cases are silent. In a minority, a **fat embolism syndrome** develops 1 to 3 days after injury, with breathlessness and hypoxaemia, confusion and a petechial rash on the upper body. Fat globules obstruct small vessels, and the fatty acids released injure endothelium.
+- **Air embolism**: air enters the circulation through an open vein, for example during insertion or removal of a central venous catheter. A large volume, of the order of 100 mL, can form a frothy obstruction in the right heart. **Decompression sickness** occurs when a diver surfaces too quickly: nitrogen dissolved in tissues at high pressure comes out of solution as bubbles.
+- **Amniotic fluid embolism** is a rare and often fatal complication of labour. Amniotic fluid and fetal cells enter the maternal circulation, causing sudden cardiorespiratory collapse and disseminated intravascular coagulation.
+- **Atheroembolism**: fragments of atheroma, often dislodged during arterial catheterisation, lodge in small arteries of the kidneys, skin and gut; cholesterol crystals leave needle-shaped clefts in the vessels.
+
+::: example Confusion after a fractured femur {#ex-fat}
+A 22-year-old man fractured his femur in a motorcycle accident. Forty-eight hours later, before surgical fixation, he becomes breathless and confused, his oxygen saturation is 88% on air, and a few petechiae appear on his chest and in his conjunctivae. Explain the likely diagnosis.
+::: solution
+1. The timing (one to three days after a long bone fracture) and the triad of respiratory distress, neurological change and petechiae suggest **fat embolism syndrome**.
+2. Marrow fat enters torn veins at the fracture and travels to the lungs, where globules block capillaries. Some pass through the pulmonary circulation, or through a patent foramen ovale, to the brain and skin.
+3. Free fatty acids released from the fat by lipases damage endothelium, causing leaky vessels in the lung and hypoxaemia. The petechiae reflect damaged capillaries and platelet consumption.
+4. Management is supportive, and early fixation of long bone fractures reduces the risk. Pulmonary thromboembolism must also be considered, but it is less likely to cause a petechial rash.
+:::
+:::
+
+## Infarction
+
+::: definition Infarction {#def-infarction}
+An **infarct** is an area of ischaemic necrosis caused by occlusion of the arterial supply or, less often, the venous drainage of a tissue. Almost all infarcts result from thrombosis or embolism.
+:::
+
+Infarcts are classified by colour.
+
+- **White (pale) infarcts** occur when an artery is blocked in a solid organ with a single, **end-arterial** supply: the heart, kidney and spleen. Little blood enters the dead area, which becomes pale and firm. Infarcts in such organs are often wedge-shaped, with the apex at the blocked vessel and the base at the organ surface.
+- **Red (haemorrhagic) infarcts** occur when blood continues to enter the dead tissue: after venous occlusion (torsion of the testis or ovary), in loose tissues that let blood collect, in organs with a **dual circulation** (lung, liver), in tissue that was previously congested, and when flow is restored to a dead area. Infarcts of the bowel in a strangulated hernia are red.
+
+The microscopic appearance is **coagulative necrosis** in most organs, followed by inflammation and replacement by scar. In the brain, infarction produces liquefactive necrosis ([[pathology/cell-injury]]).
+
+Whether a blocked vessel causes an infarct depends on four factors:
+
+1. **The anatomy of the blood supply**: organs with an alternative supply (the lung, the liver, the hand with two arteries) resist infarction; organs with end arteries do not.
+2. **The rate of occlusion**: a slowly narrowing artery allows collateral vessels to develop, whereas a sudden occlusion gives no time.
+3. **The vulnerability of the tissue to hypoxia**: neurons die after minutes, heart muscle after twenty to thirty minutes, fibroblasts survive hours.
+4. **The oxygen content of the blood**: anaemia or hypoxaemia makes infarction more likely at a given degree of obstruction.
+
+::: quiz
+At autopsy a mass is found in the pulmonary artery. It is firm, dry, attached to the vessel wall and shows alternating pale and dark layers. What does this indicate?
+- [ ] A clot that formed after death
+- [x] A thrombus or thromboembolus that formed in flowing blood during life
+- [ ] A fat embolus
+- [ ] A tumour embolus
+::: solution
+Alternating layers of platelets with fibrin and of red cells are the **lines of Zahn**, which form only in flowing blood. A post-mortem clot is soft, gelatinous, not attached, and often has a yellow upper layer where red cells settled. In the pulmonary artery, a laminated mass is most likely an embolus from a leg vein thrombus.
+:::
+:::
+
+## Disseminated intravascular coagulation
+
+::: definition Disseminated intravascular coagulation {#def-dic}
+**Disseminated intravascular coagulation** (DIC) is an acquired syndrome in which widespread activation of coagulation forms small thrombi throughout the microcirculation. Platelets and clotting factors are consumed and fibrinolysis is activated, so the patient both clots and bleeds.
+:::
+
+DIC is not a disease in itself but a complication of a serious underlying condition. The commonest triggers are **sepsis**, major **trauma** and burns, **obstetric complications** (placental abruption, amniotic fluid embolism, retained dead fetus), and **cancers**, especially acute promyelocytic leukaemia and mucin-secreting adenocarcinomas. The common mechanism is release of tissue factor or other procoagulants into the blood, or widespread endothelial injury.
+
+The results are microthrombi in the kidneys, lungs, brain and adrenal glands, causing organ damage, and bleeding from wounds, venepuncture sites and mucosa. Laboratory tests typically show a low platelet count, prolonged prothrombin time and activated partial thromboplastin time, low fibrinogen, raised D-dimer and fragmented red cells on the blood film. Treatment is directed at the cause, with support of blood components where needed ([[blood/haemostasis-bleeding]]).
+
+## Shock
+
+::: definition Shock {#def-shock}
+**Shock** is circulatory failure that results in inadequate delivery or use of oxygen by the tissues, leading to cellular hypoxia. It is usually, but not always, accompanied by low blood pressure. It is classified by mechanism:
+
+- **Hypovolaemic shock**: loss of blood or fluid (haemorrhage, vomiting, diarrhoea, burns).
+- **Cardiogenic shock**: failure of the heart as a pump (large myocardial infarction, arrhythmia, myocarditis).
+- **Obstructive shock**: obstruction to the filling or outflow of the heart (massive pulmonary embolism, tension pneumothorax, cardiac tamponade).
+- **Distributive shock**: widespread vasodilation and leaky vessels, so that blood volume is "distributed" into a large vascular bed. Causes are **septic shock**, **anaphylaxis** and **neurogenic shock** after spinal cord injury.
+:::
+
+Shock passes through three stages. In the **compensated** stage, reflexes maintain perfusion of the vital organs: the sympathetic nervous system raises the heart rate and constricts vessels in the skin and gut, and the kidneys retain salt and water through the renin–angiotensin–aldosterone system. The skin is cold and pale (except in early septic shock, where it may be warm). In the **progressive** stage, tissue hypoxia leads to anaerobic metabolism and **lactic acidosis**. Acidosis dilates arterioles, blood pools in the microcirculation, and endothelial damage and DIC develop. In the **irreversible** stage, cellular damage is so extensive that restoring blood pressure no longer prevents death.
+
+The pathologist sees the consequences in many organs: acute tubular injury in the kidneys, diffuse alveolar damage in the lungs (the "shock lung" of acute respiratory distress syndrome), ischaemic damage to the gut, the brain and the heart, and haemorrhage into the adrenal glands, which is classically seen in meningococcal sepsis.
+
+Two simple bedside numbers help to recognise shock. The **mean arterial pressure** (MAP) is the average pressure driving blood into the organs; it is approximated as
+
+$$
+\text{MAP} \approx \text{DBP} + \tfrac{1}{3}(\text{SBP} - \text{DBP})
+$$ {#eq-map}
+
+where SBP and DBP are the systolic and diastolic pressures. The **shock index** is the heart rate divided by the systolic pressure; values above about 1 suggest significant shock. In septic shock, as defined by Sepsis-3, vasopressors are needed to keep the MAP at 65 mmHg or above, and the serum lactate is above 2 mmol/L despite adequate fluid resuscitation.
+
+::: example A man hit by a car {#ex-shock}
+A 40-year-old man is brought in after being struck by a car. His heart rate is 128 beats per minute and his blood pressure is 86/58 mmHg. He is pale, cold and confused, and his abdomen is distended. Calculate the MAP and the shock index, and explain the physiology.
+::: solution
+1. MAP $\approx 58 + \tfrac{1}{3}(86 - 58) = 58 + 9.3 \approx 67$ mmHg.
+2. Shock index $= 128/86 \approx 1.49$, well above 1.
+3. The likely mechanism is **hypovolaemic shock** from internal bleeding, probably intra-abdominal.
+4. The fast heart rate and cold, pale skin show sympathetic compensation: the body is diverting blood from the skin and gut to the brain and heart. The low blood pressure means that compensation is failing, and the confusion shows that the brain is underperfused.
+5. A MAP near 65 mmHg may look acceptable, but in a young person with a fast heart rate it hides a large blood loss. Management follows trauma protocols, with control of bleeding as the priority ([[surgery/trauma]], [[emergency-critical-care/shock-fluids]]).
+:::
+:::
+
+::: history
+William Harvey described the circulation of the blood in 1628. Rudolf Virchow, studying pulmonary artery obstruction in the 1850s, showed that clots in the lungs usually came from veins elsewhere, and introduced the terms *thrombosis* and *embolism*; the three factors he considered were later grouped as "Virchow's triad". In 1875 Friedrich Wilhelm Zahn described the layered structure of thrombi formed in flowing blood. In 1896 Ernest Starling showed that fluid exchange across capillaries is governed by the balance of hydrostatic pressure and the osmotic pressure of plasma proteins.
 :::
 
 ## Where this leads
 
-The coagulation system itself in [[blood/haemostasis-bleeding]] and its drugs in [[blood/thrombosis-anticoagulation]]; the atheroma that ruptures in [[cardiovascular/coronary-artery-disease]] and [[cardiovascular/vascular-disease]]; the fluids and pressors of shock in [[emergency-critical-care/shock-fluids]]; the infarct histology clocks in [[pathology/cell-injury]].
-
-::: history
-**The fluid and clot humours: Hippocratic-humoral-swelling-and-the-bloodletting-logic-that-at-least-noticed-what-drained-where; then the vascular physiology proper the William Harvey 1628 circulation and the Starling 1896 quantitative capillary-forces paper that still captions every oedema lecture, with Starling's cardiac-dilatation detour as a humility lesson - [[cardiovascular/heart-failure]], [[cardiovascular/cardiac-cycle]]; the thrombosis turn - Virchow's 1850s realisation that clot forms antemortem against the vessel wall, framed in his cellular pathology, and Trousseau's 1865 clinical eye for migratory thrombophlebitis revealing occult cancer (with the Trousseau-sign nomenclature collision as a footnote) - [[blood/haemostasis-bleeding]]; the anticoagulation-century - the Quick prothrombin time of 1935, warfarin's route from silo-injured cattle and dicoumarol to the cardiac-surgery dosing wars, the heparin 1916 discovery-to-use adventure, and the LMWH and DOAC simplification era - [[blood/thrombosis-anticoagulation]]; the pulmonary-embolism-recognition-era - the pulmonary-embolism literature of the 1960s that exposed the great autopsy masquerader, then the ventilation-perfusion and CTPA revolutions that made it a 3am diagnosis; the thrombophilia molecular era - the factor V Leiden naming from Leiden, the antithrombin and protein C and S family studies of the 1980s and 90s, and the prothrombin G20210A and MTHFR hype-then-debunking as genetic-testing interpretation honesty - [[genetics/common-disease-genetics]]; and the modern trial arms - the IVC filter overuse and its reversal, the catheter-directed therapy verdict from CaVenT and ATTRACT, the low-dose extended DOAC strategy, and the DOAC versus LMWH bleeding nuances in cancer-associated VTE - [[pathology/cancer-biology]], [[pharmacology/patient-variation]].**
-:::
+The disorders in this chapter recur throughout clinical medicine. Coronary thrombosis and myocardial infarction are in [[cardiovascular/coronary-artery-disease]], stroke in [[nervous-system/stroke]], venous thromboembolism and anticoagulation in [[blood/thrombosis-anticoagulation]], and the recognition and treatment of shock in [[emergency-critical-care/shock-fluids]].
 
 ::: summary
-- Oedema is bookkeeping: raised hydrostatic pressure, low oncotic pressure, increased permeability or failed lymphatics - and the distribution, protein content and pitting tell you which ledger broke.
-- Thrombosis is Virchow's triad weighted by context: endothelial injury makes platelet-rich arterial clot, stasis and blood changes make fibrin-rich venous clot, and the drug class follows the clot type.
-- Clots propagate, embolise, organise or resolve; organisation saves the lumen sometimes and wrecks the valve often, which is why post-thrombotic disease needs compression not antibiotics.
-- Emboli lodge where calibre dictates: venous to lung, arterial to brain-limb-viscera, with fat, air, amniotic and cholesterol emboli each carrying a signature clinical telegram.
-- Infarct morphology follows vascular anatomy - pale wedges in end-arterial organs, haemorrhagic in loose dual-supplied tissues, liquefactive in brain - and the clinical syndromes name themselves from the map.
-- Shock is the terminal common pathway of haemodynamic failure: four mechanisms, one microcirculatory final journey, and lactate clearance as the resuscitation scoreboard you should interpret cautiously.
-:::
-
-::: exercise Classify the shock {level=1}
-Assign mechanism and first-line resuscitation priority: 2 days post-hysterectomy, BP 80/40, tachycardic, flat neck veins, urine 10 mL/h; massive PE on CT; flail chest septic hypothermic; post-cardiac-surgery low output with raised JVP.
-::: solution
-**Shock-mechanics-triage ([[#def-embolism]], [[emergency-critical-care/shock-fluids]], [[infectious-diseases/fever-sepsis]]): hypovolaemic-haemorrhagic - flat-neck-veins-with-tachycardia-and-oliguria-post-hysterectomy the occult bleed sources - intra-abdominal, vaginal cuff, thigh - with blood before more crystalloid, tranexamic acid timing, ratio protocols and the return-to-theatre decision - [[surgery/perioperative-care]], [[blood/haemostasis-bleeding]]; obstructive - the saddle-embolus with RV failure and low output where the problem is plumbing not volume fluid carefully, noradrenaline, then reperfusion stratified by bleeding risk and hospital capability - [[respiratory/interstitial-vascular-disease]], [[cardiovascular/heart-failure]]; distributive-septic - the hypothermic-flail-chest-pneumonia with warm-shunt-late-cold and the antibiotics-within-the-hour-and-source-control-and-lactate-and-vasopressin-first-noradrenaline era with vasopressin as second adjunct, steroid-for-refractory logic and protective ventilation - [[respiratory/respiratory-infections]], [[emergency-critical-care/critical-care]]; cardiogenic-post-cardiotomy - raised-JVP-low-output-cold-and-congested where inotropes-and-mechanical-circulatory-support-decision the echo-first aetiology audit of graft occlusion, tamponade and new valve lesions, and the IABP-ECMO-VAD ladder - [[cardiovascular/coronary-artery-disease]], [[cardiovascular/valve-congenital-disease]].**
-:::
-:::
-
-::: exercise Interpret a thrombophilia screen {level=2}
-A 26-year-old with provoked leg DVT asks for a full thrombophilia panel before travelling. What does screening change, and how do you explain the results?
-::: solution
-**Thrombophilia-testing-reality ([[#def-thrombosis]], [[genetics/common-disease-genetics]]): the-test-interpretation-minefield - the acute thrombosis, pregnancy and anticoagulant effects on antithrombin, protein C and S, the activated protein C resistance assay versus genotype, and the incomplete penetrance of heterozygous defects (the incomplete-penetrance-life-tables that make most carriers never clot) - [[blood/haemostasis-bleeding]], [[clinical-skills/laboratory-tests]]; the when-it-changes-management list: anticoagulation duration uncertainty, IVC filter and pregnancy prophylaxis questions, family planning - and the APS testing rules with lupus anticoagulant interference and 12-week confirmation - [[immunology/autoimmunity]]; and the counselling - absolute-risk-framing absolute risk framing - population allele frequency versus odds ratios versus personal annual risk - with proportionate travel advice, oestrogen avoidance only for APS and high-risk defects, and cascade-testing ethics including the caution about predictive testing in minors - [[genetics/genetic-testing]], [[clinical-skills/communication]].**
-:::
-:::
-
-::: exercise Diagnose the swollen scrotum {level=2}
-A 15-year-old has 6 hours of testicular pain; a 60-year-old has painless testicular enlargement; a 6-month-old has an irreducible groin swelling with vomiting. Same chapter, three emergencies - explain the haemodynamics and act.
-::: solution
-**Testicular-vascular-emergencies ([[#def-embolism]], [[surgery/acute-abdomen]]): torsion - the spermatic cord twist occluding venous then arterial flow within hours, with bell-clapper anatomy, the high-riding testis and absent cremasteric reflex, ultrasound only if it delays nothing, the six-hour salvage window and the bilateral fixation rule - [[anatomy/pelvis-perineum]], [[pathology/cancer-diagnosis]]; painless-enlargement-at-60 - the lymphoma versus testicular-tumour differential, with ultrasound appearance, markers and staging, and the never-trans-scrotal-biopsy rule with the inguinal orchidectomy route that preserves nodal anatomy - [[surgery/vascular-urological-surgery]]; and the-irreducible-inguinal-hernia-in-an-infant - the incarcerated loop with mesenteric venous then arterial compromise, the timely reduction versus theatre decision, resuscitation and antibiotics, and the bowel resection risk - a paediatric surgical emergency with the apnoea admission rule after hernia repair in ex-preemies - [[surgery/acute-abdomen]], [[surgery/anaesthesia-pain]].**
-:::
-:::
-
-::: exercise Build a limb-salvage triage {level=3}
-Design the acute limb ischaemia pathway for your hospital: definitions, immediate investigations, revascularisation options, the reperfusion hazards and the futility criteria.
-::: solution
-**Acute-limb-ischaemia-pathway ([[#def-embolism]], [[#def-thrombosis]], [[cardiovascular/vascular-disease]]): the-classification-backbone - Rutherford-I-IIa-IIb-III-sensory-motor-Doppler-definitions (the viable-versus-threatened-versus-irreversible that decides hours and that junior teams must be able to apply at 2am with a pocket card) and the aetiology split - embolus from AF or aneurysm, thrombosis on atheroma, graft failure, trauma, and phlegmasia cerulea dolens with its venous compartment consequence - with ECG, echo and contralateral pulses - [[cardiovascular/arrhythmias]], [[cardiovascular/coronary-artery-disease]]; the immediate-hour - heparin-immediately-then-arterial-imaging-CTA-versus-catheter-angiography-by-plan (the duplex-doppler-signals-and-the-ABI-and-pulse-oximetry-limits-in-calcified-diabetics and the labs-and-group-and-save) and the vascular-surgeons-on-the-phone-before-radiology-and-the-anaesthetic-plan - [[clinical-skills/medical-imaging]], [[surgery/anaesthesia-pain]]; the revascularisation menu - embolectomy-versus-catheter-directed-thrombolysis-versus-thrombectomy-versus-bypass-versus-hybrid the duration, runoff, comorbidity and bleeding-risk trade-tables, lysis contraindications, mechanical-device hype read honestly and fasciotomy thresholds - [[emergency-critical-care/critical-care]]; the reperfusion-hazard-protocols - the potassium pour, myoglobinuria, acidosis and compartment syndrome of reperfusion, with the rhabdomyolysis fluid debate, renal replacement thresholds and a monitor-for-24-hours order set - [[renal/acute-kidney-injury]], [[renal/potassium-calcium-phosphate]]; and the futility-and-aftercare-edges - the primary-amputation-versus-try-and-fail conversation, the secondary prevention bundle, the limb-salvage clinic with podiatry, the honest mortality context of critical limb ischaemia said gently, and the amputation rehabilitation and prosthesis pathway - [[surgery/orthopaedics]], [[geriatrics-palliative/end-of-life-care]].**
-:::
+- Fluid exchange across capillaries follows the Starling principle. Oedema results from raised hydrostatic pressure, low plasma oncotic pressure, lymphatic obstruction or increased permeability; only the last produces an exudate.
+- Hyperaemia is active (arteriolar dilation); congestion is passive (impaired venous outflow), as in the nutmeg liver of right heart failure.
+- Haemostasis involves vasoconstriction, a platelet plug, fibrin formation and fibrinolysis; normal endothelium is anticoagulant.
+- Virchow's triad: endothelial injury, abnormal flow and hypercoagulability. Arterial thrombi are platelet-rich and form on damaged endothelium; venous thrombi are red-cell-rich and form in stasis.
+- Lines of Zahn show that a thrombus formed in flowing blood during life. Thrombi propagate, embolise, dissolve or organise.
+- Most emboli are thromboemboli; others are fat, air, amniotic fluid and atheroma. Leg vein thrombi embolise to the lungs; cardiac thrombi embolise to the brain and limbs.
+- Infarcts are white in solid organs with end arteries and red in organs with a dual supply, after venous occlusion and after reperfusion.
+- DIC is consumption of platelets and clotting factors by widespread microthrombi, causing both thrombosis and bleeding.
+- Shock is hypovolaemic, cardiogenic, obstructive or distributive, and passes from compensated to progressive to irreversible stages.
 :::
 
 ## Exercises
 
-::: exercise Name the oedema mechanism {level=1}
-Assign the dominant Starling derangement: nephrotic syndrome, constrictive pericarditis, cellulitis, post-radiation limb, cirrhotic ascites, pregnancy ankles.
+::: exercise Mean arterial pressure {level=1 check="70"}
+Estimate the mean arterial pressure, in mmHg, for a blood pressure of 90/60 mmHg using $\text{DBP} + \tfrac{1}{3}(\text{SBP} - \text{DBP})$. Give the exact value.
 ::: solution
-**Mechanism-tagging ([[#def-oedema]]): nephrotic - reduced-oncotic-with-heavy-proteinuria-and-compensatory-hepatic-lipoprotein-rise the hyperlipidaemia, oval fat bodies and the renal vein thrombosis complication from urinary anticoagulant loss - [[renal/filtration]], [[blood/haemostasis-bleeding]]; constrictive-pericarditis - raised-systemic-venous-and-raised-hydrostatic-with Kussmaul sign and pericardial knock and ascites out of proportion to oedema, from the low cardiac output and lymphatic limits of chronic congestion - [[cardiovascular/valve-congenital-disease]], [[cardiovascular/heart-failure]]; cellulitis - increased-permeability-exudate-with-protein-in-interstitium and the local-not-generalised rule and lymphangitic streaking, with the pitting-to-non-pitting transition as fibrosis sets in - [[pathology/acute-inflammation]], [[musculoskeletal/skin]]; post-radiation limb - lymphatic-obstruction-protein-rich-non-pitting-with-positive-Stemmer (the exudate-that-becomes-lymph-exudate-and-the-infection-spiral) the lymphatic obstruction; cirrhotic-ascites - mixed: sinusoidal-portal-hypertension-hydrostatic-plus-hypoalbuminaemia-plus-secondary-aldosteronism-sodium-retention-with-the-splanchnic-arterial-dilation-doctrine-and-the-SAAG-above-11-g-per-L-classification and the diuretic-and-paracentesis-and-TIPS-rationale - [[gastrointestinal/liver-disease]], [[renal/water-sodium]]; pregnancy-ankles - hydrostatic-plus-hormonal-vascular-changes-plus-vena-cava-compression-with the left-lateral advice heritage versus comfort honesty and the sudden-facial-hand-swelling-red-flag-for-pre-eclampsia - [[obstetrics-gynaecology/pregnancy-complications]].**
+$60 + \tfrac{1}{3}(90 - 60) = 60 + 10 = 70$ mmHg.
 :::
 :::
 
-::: exercise Choose the anticoagulant {level=1}
-Pick and justify therapy: AF with CHA2DS2-VASc 4; mechanical mitral valve; PE with eGFR 18; VTE with triple-positive antiphospholipid syndrome; pregnant patient at 9 weeks with familial DVT history needing prophylaxis.
+::: exercise Name the mechanism of oedema {level=1}
+Give the main Starling mechanism of oedema in: (a) a swollen arm after axillary lymph node clearance; (b) ankle oedema in right heart failure; (c) ascites in cirrhosis; (d) a swollen sprained ankle.
 ::: solution
-**Anticoagulant-selection-medicine ([[#def-thrombosis]], [[blood/thrombosis-anticoagulation]]): AF - DOAC-first with dose checks for age, weight, creatinine and P-gp inhibitors, warfarin as the fallback in extreme renal impairment and antiphospholipid disease, and left atrial appendage occlusion devices in their honest place; plus the bleeding-risk-modification lesson that HAS-BLED is a modifiable-risk checklist, not a reason to withhold - [[cardiovascular/arrhythmias]], [[nervous-system/stroke]]; mechanical-valve - warfarin targeted by valve position, never a DOAC (the RE-ALIGN lesson), with valve-thrombosis surveillance and the pregnancy teratogenicity window problem - [[cardiovascular/valve-congenital-disease]], [[obstetrics-gynaecology/pregnancy-complications]]; PE-with-eGFR-18 - unfractionated heparin infusion then warfarin with anti-Xa guided dosing, versus emerging dialysis-cohort DOAC evidence (the renal dosing tables and the rule that filters are for true anticoagulation contraindication) - [[renal/chronic-kidney-disease]], [[emergency-critical-care/critical-care]]; triple-positive-APS - warfarin with its intensity debate, and never a DOAC the RAPPS trial caveats, the hydroxychloroquine adjunct evidence level, the pregnancy LMWH plus low-dose aspirin regime and catastrophic APS recognition - [[immunology/autoimmunity]], [[obstetrics-gynaecology/pregnancy-complications]]; pregnancy-prophylaxis - LMWH-dose-by-weight-trimester-with-anti-Xa-monitoring-in-extremes-and-the-neuraxial-anaesthesia-timing-currency-table (the epidural-haematoma-avoidance-24-36-12-hour-rules and the warfarin-avoidance-first-trimester-and-near-term) - [[surgery/anaesthesia-pain]], [[obstetrics-gynaecology/labour-birth]].**
+(a) Lymphatic obstruction. (b) Raised capillary hydrostatic pressure from raised venous pressure, with renal sodium retention. (c) Mainly low plasma oncotic pressure from reduced albumin synthesis, together with raised portal venous pressure and sodium retention. (d) Increased vascular permeability from inflammation.
 :::
 :::
 
-::: exercise Read the infarct {level=2}
-Explain to students why: spleen infarcts are pale wedges; lung infarcts are haemorrhagic; bowel infarction is an emergency within hours; brain infarcts liquefy; myocardial infarcts scar.
+::: exercise Classify the shock {level=1}
+Classify the shock: (a) a man with a tension pneumothorax; (b) a woman with a severe reaction to a bee sting; (c) a man with a large anterior myocardial infarction; (d) a child with severe dehydration from gastroenteritis; (e) a woman with pneumonia and a falling blood pressure despite fluids.
 ::: solution
-**Infarct-geography-teaching ([[#def-embolism]], [[pathology/cell-injury]]): pale-wedge-in-spleen - end-artery-territory-with-compact-stroma-preserving-ghost-outline-and-the-apex-toward-capsule-geometry with imaging correlates and the infective-endocarditis source hunt - [[cardiovascular/valve-congenital-disease]]; haemorrhagic-lung - dual-bronchial-and-pulmonary-circulation-with-reperfusion-bleeding-into-necrotic-loose-tissue (the infarct-usually-subpleural-and-wedge-and-the-embolism-with-infarction-only-when-cardiac-failure-or-small-distal-emboli-and-the-large-central-embolus-killing-before-infarct-forms-lesson) - [[respiratory/interstitial-vascular-disease]]; bowel-urgency - transmural-necrosis-with-perforation-peritonitis-sepsis-within-hours-and-the-SMA-versus-IMA-versus-non-occlusive-mesenteric-ischaemia-low-flow-in-the-ICU-triage and the pain-out-of-proportion-to-examination-signature and the lactate-late-caveat - [[surgery/acute-abdomen]], [[gastrointestinal/bowel-disease]]; brain-liquefaction - neuron-rich-lipid-poor-stroma-with-microglial-clearance-to-cystic-cavity-and-no-scar-collagen (the haemorrhagic transformation tendency and its timing and the-cerebral-oedema-mass-effect-days-2-5-window-with-decompressive-surgery-logic) - [[nervous-system/stroke]], ICP keep with [[nervous-system/stroke]]; myocardium-scars - permanent-post-mitotic-cardiac-myocytes-replaced-by-collagen-with-the-remodelling-dilation-and-aneurysm-and-mural-thrombus-sequelae and the-heart-failure-trajectory - [[cardiovascular/heart-failure]].**
+(a) Obstructive. (b) Distributive (anaphylactic). (c) Cardiogenic. (d) Hypovolaemic. (e) Distributive (septic).
 :::
 :::
 
-::: exercise Design a VTE prevention strategy {level=3}
-For a hospital introducing a perioperative VTE programme, design assessment, prophylaxis and audit components; address the bleeding trade, ambulation culture and the device-wars.
+::: exercise Shock index {level=2 check="round(115/92*100)/100"}
+A woman two hours after childbirth has a heart rate of 115 beats per minute and a blood pressure of 92/60 mmHg. Calculate her shock index, rounded to two decimal places, and interpret it.
 ::: solution
-**Perioperative-VTE-programme ([[#def-thrombosis]], [[surgery/perioperative-care]], [[clinical-skills/patient-safety]]): the-risk-assessment-backbone - a validated per-admission tool (the Caprini and RAM scores with their predicted-versus-observed rates, and the gynaecological-cancer, trauma, arthroplasty and ICU zones needing chemical plus mechanical prophylaxis) - [[obstetrics-gynaecology/gynaecological-cancer]], [[surgery/trauma]], [[surgery/orthopaedics]], [[emergency-critical-care/critical-care]]; the prophylaxis-matrix - pharmacological the LMWH timing trials, fondaparinux and DOAC orthopaedic protocols with epidural safety windows, and the aspirin-versus-DOAC thromboprophylaxis guideline split after the recent trial wave, read carefully - [[surgery/orthopaedics]], [[blood/thrombosis-anticoagulation]]; mechanical stocking intolerance and skin breakdown and fitting ignorance, the graduated compression versus intermittent pneumatic compression versus foot pump device evidence in arthroplasty, the chemical-phobia safety illusion and the IVC filter is-not-a-strategy lesson and the bleeding-trade-governance (the surgical-bleeding-versus-PE-death-risk-conversations-with-anticoagulation-start-timing-protocols-and-epidural-catheter-timing-rules and the renal dosing and fall risk habits) - [[surgery/anaesthesia-pain]], [[blood/haemostasis-bleeding]]; and the culture-and-audit - early mobilisation, hydration, smoking and oestrogen-interruption protocols with evidence limits stated and the-VTE-rates-as-quality-marker-double-edge the measure-for-learning-not-punishment principle and its unintended triage effects and the process-compliance-versus-outcome-measures pair prophylaxis timing, duration-at-discharge with clot-symptom education, and the 90-day readmission VTE window - [[public-health/health-systems-economics]], [[clinical-skills/records-handover]].**
+$115/92 = 1.25$. A shock index above about 1 suggests significant blood loss. After childbirth this should prompt urgent assessment for postpartum haemorrhage, because young women compensate well and their blood pressure may fall only late.
+:::
+:::
+
+::: exercise Starling at the venous end {level=2 check="-2"}
+At the venous end of a capillary, $P_c = 18$ mmHg, $P_i = 0$, $\pi_c = 23$ mmHg, $\pi_i = 3$ mmHg and $\sigma = 1$. Calculate the net filtration pressure in mmHg (positive means outward). Give the exact value.
+::: solution
+$(18 - 0) - (23 - 3) = 18 - 20 = -2$ mmHg: a small inward pressure.
+:::
+:::
+
+::: exercise Red or white? {level=2}
+Predict whether each infarct will be red or white, and explain: (a) splenic infarct from an embolus in endocarditis; (b) lung infarct in a patient with heart failure; (c) small bowel in a strangulated hernia; (d) renal infarct from an embolus in atrial fibrillation.
+::: solution
+(a) White: solid organ with end arteries. (b) Red: the lung has a dual circulation and is congested, so bronchial blood flows into the dead area. (c) Red: venous outflow is obstructed first in strangulation, and the bowel is loose tissue with collateral supply. (d) White: the kidney has end arteries.
+:::
+:::
+
+::: exercise Recurrent thrombosis in a young woman {level=3}
+A 29-year-old woman has had a deep vein thrombosis, two miscarriages after 10 weeks of pregnancy and now a transient ischaemic attack. Her platelet count is mildly low and her APTT is prolonged. Suggest the most likely diagnosis, explain the paradox of a prolonged clotting time in a person who clots, and state which tests confirm it.
+::: hint
+Think of an acquired hypercoagulable state with antibodies.
+:::
+::: solution
+The likely diagnosis is the **antiphospholipid syndrome**: venous and arterial thrombosis and pregnancy morbidity with persistent antiphospholipid antibodies. The antibodies (lupus anticoagulant, anticardiolipin and anti-β2-glycoprotein I) bind phospholipid–protein complexes. In the test tube they interfere with the phospholipid on which the clotting reactions are assembled, so the APTT is prolonged; this is why the antibody is called a lupus *anticoagulant*. In the body, by contrast, they activate endothelium, platelets and complement and promote thrombosis. Confirmation requires the tests to be positive on two occasions at least 12 weeks apart. It may occur alone or with systemic lupus erythematosus. Management is specialist and involves anticoagulation, with special care in pregnancy.
+:::
+:::
+
+::: exercise Collapse after a long journey {level=3}
+A 54-year-old man with treated colon cancer collapses at an airport after a 12-hour flight. He is breathless, his heart rate is 124 beats per minute, his blood pressure is 80/50 mmHg and his neck veins are distended. Explain the most likely sequence of events from Virchow's triad to shock, and name the type of shock.
+::: solution
+Prolonged sitting caused **stasis** in the leg veins; **cancer** makes the blood hypercoagulable through tumour procoagulants such as tissue factor; dehydration on a long flight may contribute. A deep vein thrombosis formed in the leg and part of it embolised. The embolus passed through the right heart and lodged in the main pulmonary arteries, blocking a large part of the pulmonary circulation. The right ventricle cannot pump against this obstruction, so it dilates and fails, the neck veins distend, filling of the left ventricle falls and cardiac output collapses. This is **obstructive shock** from massive pulmonary embolism. It is a medical emergency in which treatment to remove or dissolve the clot may be life-saving, following current guidance.
 :::
 :::

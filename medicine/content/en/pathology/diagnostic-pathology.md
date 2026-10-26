@@ -1,139 +1,327 @@
-Diagnostic pathology is the specialty of seeing, sampling and saying: **frozen sections and cytology screens, immunohistochemistry panels and molecular assays are all instruments for one of three questions - is it cancer, what kind and how much - and the pathologist's real product is a probability statement wrapped in a report that changes what happens next.** This chapter covers the diagnostic workflow from specimen to sign-out, imaging-guided and endoscopic sampling, laboratory medicine as a diagnostic system, quality and safety, and the informatics future.
+Most patients never meet a pathologist, yet many of the most important decisions in their care depend on one. Whether a lump is cancer, which kind of cancer it is, whether it has been completely removed, and which drugs it is likely to respond to are all answered by the examination of tissue and cells. This chapter follows a specimen from the moment it leaves the patient to the moment its report is discussed at a multidisciplinary meeting. It then describes the autopsy, the quality systems that keep the process safe, and the arrival of digital pathology.
 
-This chapter covers the workflow of histopathology and cytology, intraoperative consultation, immunohistochemistry and molecular diagnostics in practice, laboratory test interpretation, quality assurance, error and improvement, and digital and AI pathology.
+The concepts that a report expresses, such as grade, stage and predictive markers, are defined in [[pathology/cancer-diagnosis]]. This chapter is about how the pathologist produces them and how a clinician should read them.
 
-## From specimen to report
+## The disciplines of cellular pathology
 
-::: definition The diagnostic workflow {#def-workflow}
-**The-specimen-journey-that-determines-the-answer (clinical-context-on-the-request-as-diagnostic-fuel and the-fixation-clocks-and-oriented-and-marked-surgical-specimens - the inking-and-serial-sectioning-and-brick-histology-and-complete-circumferential-margin-sampling-protocols that make margin reporting trustworthy and the narrow-specimens-requiring-total-processing and the cassetting-and-blocking-decisions-made-in-minutes-that-decide-what-microscopy-ever-sees and the decalcification-damage-to-antigens-and-DNA trade - [[pathology/cancer-diagnosis]]); the-two-fast-lanes (frozen-section-versus-imprint-versus-decalcified-accelerated-processing - what-frozen-sections-are-good-at (margins-and-lymph-node-metastasis-in-selected-sites and adequate-cellularity-for-sample-purity-in-tumour-bankings and the CNS-touch-prep-smarts) and-what-they-punish-you-for (the thyroid-and-breast-fibroadenoma-versus-phyllodes-and-lymphoma-deferral-rules and the bone-and-decalcified-lesions-avoidance and the artefact-crystals-of-freezing-mimicking-anything) and the-communication-protocol (the-telephone-verbal-then-written-final with its documented read-back) - [[surgery/perioperative-care]], [[clinical-skills/patient-safety]]); the-report-architecture (synoptic-cancer-reports-answering-every-trial-defining-question-in-order and the structured templates-with-data-capture-for-registries and the WHO-classification-versions-cited-and-the-CK7-etc-panel-summary-in-the-comment and the p16-and-mismatch-repair-stain-results-reported-as-diagnostic-not-optional and the margin distance in millimetres with the involved-inked-margin convention, and the tumour budding, deposits and extranodal extension vocabulary that changes stage - [[pathology/cancer-biology]]); and the cytology tier - the Bethesda categories for thyroid, urine and respiratory samples with their management algorithms, cell-block immunocytochemistry expanding diagnosis while sparing tissue, rapid on-site evaluation for adequacy, and fluid cytology yield honesty including the third-sample rule - [[respiratory/lung-cancer-pleura]], [[endocrine/thyroid]]).**
-:::
+**Histopathology** is the diagnosis of disease from tissue, where the architecture (how cells are arranged) is preserved. **Cytopathology** is the diagnosis of disease from individual cells or small clusters, without tissue architecture. Both are parts of **cellular pathology**, alongside the **autopsy** (post-mortem examination). Other pathology disciplines, such as clinical biochemistry, haematology and microbiology, analyse body fluids and organisms ([[clinical-skills/laboratory-tests]], [[microbiology/laboratory-diagnosis]]).
 
-::: definition The laboratory as a diagnostic system {#def-lab}
-**Pre-analytical-truth (ordered timing, fasting, tourniquet and position effects, haemolysis and potassium and lipaemia interference, tube mixing and order of draw, biologic sampling timing for drug levels, and the deterioration logistics that generate most clinically visible laboratory error - [[clinical-skills/laboratory-tests]]); the-reference-range-philosophy (the-95-percent-healthly-person-definition-with-its-2.5-percent-tail-trap and the age-sex-altitude-pregnancy-and-population-specific-ranges and the reference change indices from biological variation that should govern serial testing more than population ranges, with delta-check automation) and the critical-value culture (the calling window, read-back and ward-response audit, and the CSF and positive-blood-culture pathways that start sepsis clocks - [[microbiology/laboratory-diagnosis]], [[emergency-critical-care/shock-fluids]]); the test logic at the bedside (the sensitivity, specificity, likelihood-ratio and pre-test probability arithmetic with treat-and-test threshold refinement, the false-positive paradox in low-prevalence screening, and the independence assumptions broken in serial panels - [[epidemiology-ebm/diagnostic-tests]]) with its biomarker-families - troponin-and-BNP-physics (the high-sensitivity-assay-99th-percentile-and-sex-specific-interpretation and the assay-to-assay-non-equivalence) - [[cardiovascular/coronary-artery-disease]], [[cardiovascular/heart-failure]]; the autoantibody maze (ANA screening with HEp-2 versus platform disagreement, ENA, dsDNA and ANCA patterns with PR3 versus MPO clinical syndromes, the RF versus ACPA specificity lesson, and complement consumption patterns) - [[immunology/autoimmunity]], [[musculoskeletal/connective-tissue-vasculitis]]; and the therapeutic drug monitoring survivors (the vancomycin AUC dosing shift, once-daily aminoglycosides, and lithium, antiepileptic and transplant interfaces with pharmacogenomic adjacencies) - [[pharmacology/patient-variation]], [[pharmacology/metabolism-excretion]]).**
-:::
+## The specimen and the request
 
-::: definition Quality, error and digital pathology {#def-quality}
-**The-error-epidemiology-honestly-sized (diagnostic error in pathology as a subset of clinical diagnostic error - sampling error the majority, interpretation the minority - and the subtle-lesion realms: borderline breast lesions with the radiological similarity list, the tumour of uncertain malignant potential nomenclature as honesty, and IBD dysplasia standardised after the SCENIC consensus and contextual-error prevention by clinical history and prior-slide retrieval, with a second-opinion policy on clear triggers (unexpected malignancy on a benign specimen, discordance with radiology) - [[pathology/cancer-diagnosis]], [[musculoskeletal/skin-cancer]]); the quality machinery - internal assessment every shift, external quality assessment schemes and proficiency slides, two-signature release for cancer diagnoses with molecular implications, turnaround and report-quality audits within the accreditation frameworks (ISO 15189 and college standards), the shared-misclassification lessons from EQA panics, and incident reporting as learning not blame - [[clinical-skills/patient-safety]]); the information infrastructures - laboratory and pathology information systems interoperable with radiology and the record, synoptic data feeding registries and trial-eligibility queries, variant databases and curated archives with reclassification and recontact duties, and sequencing data retention consent ethics - [[genetics/genetic-testing]], [[pathology/cancer-biology]]; and the digital shift - whole-slide imaging with validation, storage and bandwidth and legal-signature questions, telepathology as an equity win for understaffed services and international second opinions, and AI assistive tools for metastasis detection, mitosis counting, Gleason grading and MSI prediction from morphology, read by regulatory status and prospective evidence, with augmentation-not-replacement consensus and deskilling monitored - [[pathology/diagnostic-pathology]], [[clinical-skills/medical-imaging]]).**
-:::
+The process begins with the clinician. Each specimen must be labelled with at least the patient's full name, date of birth and a unique identifier such as the NHS number, and matched to a **request form** that gives the same identifiers, the site of the specimen, the clinical question and relevant history. Clinical information changes the interpretation: "ulcer in the stomach of a person taking NSAIDs" and "ulcer with weight loss and anaemia" lead the pathologist to look for different things.
 
-::: example The frozen section disagreement {#ex-frozen}
-During a thyroidectomy the surgeon asks for a frozen section on a dominant nodule; the pathologist sees features suspicious for papillary carcinoma but says 'defer to permanent sections'; the surgeon is annoyed, the patient is anaesthetised, the team argues over the lymphocytic-thyroiditis background.
-::: solution
-**Intraoperative-consultation-craft ([[#def-workflow]], [[endocrine/thyroid]]): the-reason-for-the-refusal - freezing artefact obscures nuclear detail, and follicular lesions cannot be classified on cytology or frozen section because capsular and vascular invasion needs permanent sampling, with molecular adjuncts for indeterminate cytology categories and frozen section limited to specific questions like nodal metastasis, parathyroid tissue or recurrence versus scar and the thyroiditis lymphoid background and Hürthle-cell chaos explained to the surgeon, with the tell-me-what-you-will-do communication ritual - [[endocrine/thyroid]], [[pathology/cancer-diagnosis]]; communication repair - deferral as information not cowardice, with the probabilistic verbal report (suspicious but not diagnostic, and what would change management), image-sharing by phone where networks permit, documented verbal results with read-back, and the what-happens-if-we-wait-week expectation and the consent conversation that should have happened before theatre (temporary versus permanent hypoparathyroidism and recurrent-laryngeal-nerve numbers, and the completion-thyroidectomy possibility if the final history demands it) - [[medical-ethics-law/consent-capacity]], [[surgery/perioperative-care]]; and the-systems-view - the intraoperative consultation SOP with expected deferral rates, clinical orientation sessions, and a joint audit of deferrals that changed management versus those that did not and the-strategy-for-the-next-case (the pre-operative-molecular-result-sharing-and-the-active-surveillance-versus-surgery-history-that-should-have-been-on-the-form) - [[clinical-skills/patient-safety]], [[clinical-skills/communication]].**
-:::
-:::
+Specimens are of several kinds:
 
-::: example The positive ANA in a low-risk patient {#ex-ana}
-A 34-year-old with fatigue and no synovitis or rash has ANA 1:160 homogeneous on HEp-2 sent by a screening clinic; dsDNA and ENA negative; complement normal; she has read about lupus and wants treatment.
-::: solution
-**Autoantibody-interpretation-medicine ([[#def-lab]], [[immunology/autoimmunity]]): the-arithmetic - prevalence-of-positive-ANA-in-healthy-people-at-1:160-by-platform-and-method (the-HEp-2-versus-ELISA-and-CIA-concordance-issues and the-sex-and-age-and-infection-and-thyroid-and-lymphocytic-margins) driving post-test-probability-for-SLE-in-a-low-pretest-patient-that-is-tiny (the likelihood-ratio-exercise-done-out-loud-with-the-patient) and the-false-positive-paradox-as-the-reason-screening-clinics-create-sick-people - [[epidemiology-ebm/diagnostic-tests]]; the-disease-criteria-correctly-used - the-ACR-EULAR-classification-criteria-are-for-trials-not-diagnosis-at-the-bedside (the ANA-entry-criterion-purpose-and-the-weighted-domains-not-a-checklist-for-you) and the fatigue-alone-not-a-connective-tissue-disease-and-the-vitamin-D-thyroid-anaemia-diabetes-coeliac-sleep-and-depression-workup-with-appropriate-tests - [[clinical-skills/clinical-reasoning]], [[blood/anaemia]], [[endocrine/thyroid]], [[psychiatry/mood-disorders]]; the-communicating-the-negative-with-humility - the what-would-change-the-picture list - inflammatory synovitis, rash, serositis, renal baseline hits and the not-dismissive but no-more-tests stance with a structured review offer, a written explanation instead of Googling, and a supplement and collagen marketplace debrief - [[clinical-skills/communication]]; and the-system-fix - test-appropriateness education and order-set design - ANA not on fatigue alone, decision support, audits of low-yield autoantibody panels, reflex-to-clinical-review policies, and measuring the downstream investigation and anxiety burden of incidental serology - [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]].**
-:::
+- **Biopsies** remove a small sample for diagnosis. A **core needle biopsy** takes a cylinder of tissue with a hollow needle, often guided by ultrasound or CT; an **endoscopic biopsy** takes small fragments of mucosa; a **punch biopsy** takes a cylinder of skin; an **incisional biopsy** removes part of a lesion; and an **excisional biopsy** removes the whole lesion.
+- **Resections** remove an organ or part of one, usually to treat a known disease, such as a mastectomy or a colectomy.
+- **Cytology** samples consist of cells: fluids, brushings, scrapings and aspirates.
+
+## Fixation and processing
+
+::: definition Fixation {#def-fixation}
+**Fixation** is the treatment of tissue to preserve its structure as close as possible to its state in life, by stopping autolysis (self-digestion by the cell's own enzymes) and putrefaction (decomposition by bacteria). The standard fixative is **10% neutral buffered formalin**, a solution of about 4% formaldehyde, which forms cross-links (methylene bridges) between proteins.
 :::
 
-::: example The report that arrived changed {#ex-report-change}
-A colon polyp reported as malignant pedunculated polyp with superficial submucosal invasion, clear margin, no lymphovascular invasion is amended two weeks later after a second opinion to show poor differentiation and lymphovascular invasion at the stalk.
-::: solution
-**Report-amendment-governance ([[#def-workflow]], [[#def-quality]], [[gastrointestinal/gi-bleeding-cancer]]): the-clinical-consequence-in-seconds - Haggitt-level-1-versus-4-and-poor-differentiation-or-LVI-flip-the-recommendation-from-polypectomy-sufficient-to-colectomy-discussion-because-lymph-node-risk-escalates-from-under-one-percent-to-several-percent (the endoscopic-mucosal-resection-versus-surgery-decision-and-the-staging-CT-question and the clinical-trial-and-registry-coding-consequences of the amendment) - [[pathology/cancer-diagnosis]]; the-process-that-should-have-caught-it - the-block-recut-and-levels-and-the-extra-sections-that-reveal-the-high-risk-focus and the-two-signature-policy-for-malignant-polyps-with-deep-invasion and the-clinician-notification-of-change-not-just-the-portal-update (the telephone-call-because-a-letter-takes-days and the re-staging-MDT-referral) and the registry-versioning-so-the-cancer-database-carries-the-corrected-record not the first draft - [[clinical-skills/records-handover]]; the-communication-with-the-patient - the-who-tells-and-what-gets-said-about-a-change-for-the-worse (the no-blame-language-versus-honest-explanation-and-the-apology-policy-if-harm-from-delay-and the documentation of the conversation) - [[clinical-skills/communication]], [[medical-ethics-law/professionalism-regulation]]; and the-learning-loop - incident-report-and-serious-incident-review-and-the-agreed-sign-out-checklist (the high-risk-polyp-checklist-with-picture) and the audit of amendments by clinical impact, not just rate and the shared case in journal club and the hard lesion submitted to external quality assessment - [[clinical-skills/patient-safety]].**
-:::
-:::
+Good fixation depends on three things. The specimen must reach fixative quickly, because autolysis begins as soon as the blood supply is cut off; the time from removal to fixation is called the **cold ischaemia time**, and for breast cancer specimens it should be kept within about an hour, because delay degrades the receptors measured for treatment. The volume of fixative should be at least ten times the volume of tissue. And fixation must last long enough: formalin penetrates tissue slowly, and cross-linking takes longer still.
 
-::: example The secondary care referral with no context {#ex-boring-form}
-A dermatology-excised pigmented lesion arrives on a form reading 'mole'; the pathologist notices an ulcerated thick lesion with a Breslow of 2.1 mm and mitoses; the clinic letter says the patient was told it was 'just a wart'; the general-practitioner record shows three visits with photography.
-::: solution
-**Request-form-as-lifeline ([[#def-workflow]], [[#def-quality]], [[musculoskeletal/skin-cancer]]): the-context-that-changes-the-read - prior photography showing growth versus a long-standing unchanged lesion changes the benign-versus-ambiguous call the regression and fragmentation pitfalls, the mitotic-rate problem in denuded lesions, photo comparison with the clinician's photograph sent alongside, and the amelanotic and nodular melanoma delay epidemiology - [[pathology/cancer-diagnosis]], [[musculoskeletal/skin]]; the-staging-machine-activated - the-Breslow-and-ulceration-and-margins-and-sentinel-node-discussion-at-1-2-mm-plus (the sentinel-node trial evidence with its sliding scale of indication, molecular prognostic tests read by guideline status, the wide-excision margin tables, and nodal-basin ultrasound surveillance practice variation) - [[clinical-skills/medical-imaging]]; the-communication-failure-audit - the mole-versus-wart-versus-lipoma language drift, with clinician photography and lesion naming in records, unclear excision intent at referral, and the patient-facing result route and the-secondary-care-to-primary-care-loop-closure when the histology contradicts the reassuring conversation who retracts the wart message, the apology and urgent appointment, and the safety netting that existed but was never triggered - [[clinical-skills/communication]], [[clinical-skills/records-handover]]; and the-system-actions - a structured dermatology request carrying the questions pathologists need, photograph-with-specimen policy, minimum-dataset audits, and incident reporting of context vacuums so the next melanoma arrives with its story - [[clinical-skills/patient-safety]].**
-:::
-:::
+The depth of penetration of a fixative increases with the square root of time:
 
-::: quiz
-The most common source of error in surgical pathology diagnoses is:
-- [x] Sampling - the diagnostic area was not in the section examined
-- [ ] Staining technique failure
-- [ ] Miskeyed reports
-- [ ] Microscope malfunction
-::: solution
-**Most pathology diagnostic error originates before the microscope: selection of blocks and levels determines what can ever be seen, which is why extensive sampling protocols, orientation and margin inking exist; interpretive error is real but smaller and is the part AI and second opinions target ([[#def-quality]], [[#def-workflow]]).**
-:::
-:::
+$$
+d = K\sqrt{t}
+$$ {#eq-penetration}
+
+where $d$ is the depth in millimetres, $t$ the time in hours and $K$ a coefficient that depends on the fixative and the tissue. For formalin, $K$ is roughly 0.75 mm per square root of an hour (published values vary), so formalin reaches about 3.7 mm in 24 hours. This is why large specimens must be opened or sliced before they are immersed.
 
 ::: widget plot
-f: 100*exp(-0.8*x); 100*exp(-0.8*x)*0.9; 100*(1-exp(-0.3*x)); 100*(1-exp(-0.3*x))*0.1
-x: 0.01, 8
-y: 0, 110
-labels: \text{pretest probability (0.01 to 1, scaled)},\ \%\text{posttest probability of disease, test positive};\ \text{LR+ 50};\ \text{LR+ 10};\ \text{posttest of disease, test negative (LR- 0.1)};\ \text{posttest after negative, LR- 0.01}
-caption: Testing changes probability, not destiny ([[#def-lab]], [[epidemiology-ebm/diagnostic-tests]]): the same positive antibody or stain carries vastly different post-test meaning depending on pre-test probability - the ANA in a low-risk patient versus the biopsy in a suspicious lesion - and choosing test thresholds is a clinical, not laboratory, decision.
+f: k*sqrt(x)
+x: 0, 48
+y: 0, 8
+sliders: k=0.75:0.4:1.2:0.05
+hlines: 2; 5
+labels: \text{penetration depth (mm)}
+caption: Penetration of fixative into tissue over time, $d = K\sqrt{t}$, with $K$ in mm per square root of an hour. The lines at 2 mm and 5 mm mark the centre of a 4 mm slice and of a 10 mm slab. Because depth grows with the square root of time, doubling the thickness of a slab quadruples the time needed to fix its centre. The coefficient is an illustrative value; penetration is also not the same as complete fixation, which takes longer.
+:::
+
+::: example Why specimens are sliced {#ex-fixation}
+A surgeon removes a kidney containing a tumour and places it whole in formalin. Assume $K = 0.75$ mm per square root of an hour. How long does formalin take to reach the centre of a 10 mm thick slab of tissue, and of a 4 mm thick slice? What happens to a tumour 3 cm below the capsule if the kidney is left intact?
+::: solution
+1. The centre of a 10 mm slab is 5 mm from each surface: $t = (5/0.75)^2 \approx 44$ hours.
+2. The centre of a 4 mm slice is 2 mm deep: $t = (2/0.75)^2 \approx 7.1$ hours.
+3. A tumour 30 mm from the surface would need $(30/0.75)^2 = 1600$ hours, more than two months. Long before then it would have autolysed.
+4. Autolysed tissue loses nuclear detail and antigens, which can make grading, immunohistochemistry and molecular testing unreliable. This is why large specimens are opened or sliced promptly in the laboratory (or sent fresh by local arrangement), and why fixation protocols specify both a minimum and a maximum fixation time.
+:::
+:::
+
+After fixation, the pathologist (or a trained biomedical scientist) performs the **macroscopic examination**, also called "cut-up" or "grossing". The specimen is described, measured, photographed if needed, and its surgical margins are painted with coloured inks so that they can be recognised under the microscope. Representative pieces are taken in plastic cassettes. The tissue is then **processed**: water is removed through increasing concentrations of alcohol, the alcohol is replaced by a clearing agent such as xylene, and the tissue is infiltrated with molten paraffin wax and set in a block. A microtome cuts sections 3 to 4 µm thick, which are floated onto glass slides.
+
+The routine stain is **haematoxylin and eosin** (H&E). Haematoxylin stains nuclei blue-purple, because it binds acidic structures such as DNA (they are "basophilic"). Eosin stains cytoplasm, collagen and muscle in shades of pink (they are "eosinophilic"). Most diagnoses are made on H&E alone.
+
+Routine processing takes a day or more. Bone and calcified tissue need **decalcification** in acid or chelating solutions first, which can take days to weeks and damages DNA. The UK Royal College of Pathologists (RCPath) has proposed as a key performance indicator that 80% of histopathology cases are reported within 7 calendar days of the specimen being taken, and 90% within 10 days.
+
+### Frozen section
+
+When a surgeon needs an answer during an operation, tissue can be frozen rapidly and cut in a refrigerated microtome (a cryostat). A **frozen section** gives a diagnosis in about 20 minutes. It is used to confirm that a lesion is malignant before a major resection, to check whether a surgical margin is clear, or to confirm that a biopsy contains diagnostic tissue. Freezing distorts tissue, fatty tissue cuts poorly, and some diagnoses, such as lymphoma or the distinction between some follicular thyroid lesions, cannot be made reliably. Every frozen section is therefore followed by examination of the same tissue after conventional processing.
+
+## Cytopathology
+
+::: definition Cytology samples {#def-cytology}
+- **Exfoliative cytology** examines cells shed naturally or scraped from a surface: urine, sputum, pleural and peritoneal fluids, and cervical samples.
+- **Fine-needle aspiration** (FNA) uses a thin needle to draw cells from a lump, such as a thyroid nodule, lymph node, breast lesion or, by endoscopic ultrasound, a mediastinal node or the pancreas.
+- **Liquid-based cytology** places the sample in a preservative fluid from which a thin, even layer of cells is prepared, allowing additional tests, such as HPV testing, on the same sample.
+- A **cell block** is made by spinning down fluid or aspirate and processing the pellet like tissue, so that immunohistochemistry and molecular tests can be performed.
+:::
+
+Cytology is fast, cheap and minimally invasive, and an FNA can often be reported within hours. Its main limitation is that it shows cells without their architecture. It can show that cells are malignant, but often not whether a tumour has invaded, and some diagnoses, such as follicular thyroid carcinoma, depend on invasion of a capsule or vessels that cytology cannot see. Results are therefore reported in categories that express both the diagnosis and its certainty; UK thyroid cytology, for example, uses categories Thy1 (non-diagnostic) to Thy5 (malignant). In **rapid on-site evaluation**, a cytopathologist or scientist checks during the procedure that enough diagnostic material has been obtained.
+
+## Special stains
+
+Before antibodies were available, pathologists developed chemical stains that highlight particular substances. Many remain in daily use.
+
+| Stain | What it shows | Typical use |
+|---|---|---|
+| Periodic acid–Schiff (PAS) | Glycogen, mucin, fungal walls, basement membranes | Fungi, glycogen storage, mucin-secreting carcinoma |
+| Ziehl–Neelsen | Acid-fast bacilli (red) | Mycobacteria in granulomas |
+| Grocott methenamine silver | Fungal walls (black) | *Pneumocystis*, *Aspergillus* |
+| Congo red | Amyloid (apple-green birefringence in polarised light) | Amyloidosis |
+| Perls' Prussian blue | Ferric iron (blue) | Haemosiderin, iron overload |
+| Reticulin | Reticulin fibres (black) | Liver architecture, marrow fibrosis |
+| Masson trichrome | Collagen (blue or green) | Liver and kidney fibrosis |
+| Gram | Bacteria (positive purple, negative pink) | Bacteria in tissue |
+
+## Immunohistochemistry
+
+::: definition Immunohistochemistry {#def-ihc}
+**Immunohistochemistry** (IHC) uses antibodies to detect specific proteins in tissue sections. The bound antibody is made visible by an enzyme, usually peroxidase, that converts a chromogen such as diaminobenzidine into a brown deposit at the site of the protein. The pattern of staining (nuclear, cytoplasmic or membranous), its intensity and the proportion of cells stained are all assessed.
+:::
+
+IHC answers two kinds of questions. **Diagnostic** IHC establishes the **lineage** of a tumour: whether it is a carcinoma, lymphoma, melanoma or sarcoma, and for a carcinoma, its likely organ of origin. **Predictive** IHC measures proteins that guide treatment.
+
+| Marker | Typical positivity |
+|---|---|
+| Pan-cytokeratin | Carcinomas (epithelial cells) |
+| CD45 | Lymphomas and other leucocytes |
+| S100, SOX10 | Melanoma, nerve sheath tumours |
+| Desmin | Smooth and skeletal muscle tumours |
+| CK7 / CK20 | CK7+ CK20−: lung, breast, many others; CK7− CK20+: colorectal; CK7+ CK20+: urothelial, some pancreatic and gastric |
+| TTF-1 | Lung adenocarcinoma, thyroid |
+| CDX2 | Intestinal adenocarcinoma |
+| GATA3 | Breast and urothelial carcinoma |
+| PAX8 | Renal, ovarian (serous), endometrial and thyroid tumours |
+| WT1, calretinin | Mesothelioma (WT1 also serous ovarian carcinoma) |
+
+::: theorem Interpret immunohistochemistry as a panel {#thm-panel}
+No single immunohistochemical marker is completely specific or sensitive for a tumour type. Lineage is assigned from the pattern of a panel of markers, chosen in the light of the morphology and the clinical setting, and including markers expected to be negative as well as positive.
+:::
+
+::: proof
+Proteins used as markers reflect differentiation programmes, and tumours may express them aberrantly, lose them as they dedifferentiate, or share them across organs. TTF-1 stains both lung and thyroid tumours; GATA3 stains both breast and urothelial carcinomas; some poorly differentiated carcinomas lose cytokeratins; and some melanomas lose S100. Technical factors such as poor fixation or decalcification can weaken staining. A panel turns several imperfect tests into a pattern that is far more specific than any one result, and the expected negatives guard against misinterpretation. The final interpretation always integrates the H&E appearance and the clinical picture.
+:::
+
+::: example A liver metastasis of unknown origin {#ex-cup}
+A 68-year-old man has several masses in his liver. A core biopsy shows adenocarcinoma. IHC: CK7 negative, CK20 positive, CDX2 positive, TTF-1 negative. What is the most likely primary site, and what should happen next?
+::: solution
+1. The CK7−/CK20+ pattern, with CDX2 positivity, is typical of **colorectal adenocarcinoma**.
+2. TTF-1 negativity argues against lung adenocarcinoma, the other common source of liver metastases in this age group.
+3. The pathologist reports the tumour as metastatic adenocarcinoma with an immunophenotype consistent with colorectal origin, and the team arranges colonoscopy and CT to find the primary.
+4. The same biopsy can be used for predictive tests: mismatch repair proteins by IHC, and *RAS* and *BRAF* status by molecular testing, because these influence treatment for metastatic colorectal cancer. Tissue is therefore used carefully, ordering only the tests that answer the question.
+:::
+:::
+
+### Predictive immunohistochemistry
+
+- **Oestrogen and progesterone receptors** in breast cancer are nuclear proteins scored by the proportion and intensity of stained nuclei (for example, with the Allred score). Positive tumours are likely to respond to endocrine therapy.
+- **HER2** in breast and gastric cancer is a membrane protein scored 0, 1+, 2+ or 3+. A score of 3+ is positive; 2+ is equivocal and is resolved by in situ hybridisation for gene amplification; 0 and 1+ are negative for classical HER2-targeted treatment, although tumours with 1+ or 2+ without amplification ("HER2-low") may now be eligible for a newer antibody–drug conjugate.
+- **PD-L1** is scored as the percentage of tumour cells (tumour proportion score) or of tumour and immune cells (combined positive score), and helps select patients for immune checkpoint inhibitors.
+- **Mismatch repair proteins** (MLH1, PMS2, MSH2, MSH6) are nuclear proteins; loss of one pair indicates mismatch repair deficiency, which screens for Lynch syndrome and predicts response to checkpoint inhibitors ([[pathology/cancer-biology]]).
+
+## Molecular pathology
+
+Many treatments now depend on detecting specific genetic changes in a tumour.
+
+- **Polymerase chain reaction** (PCR) amplifies a target sequence and can detect known mutations, such as *EGFR* mutations in lung cancer or *KRAS* mutations in colorectal cancer.
+- **In situ hybridisation** uses labelled DNA probes on tissue sections. With fluorescent probes (**FISH**) the pathologist counts signals in each nucleus, for example to detect *HER2* amplification or, with "break-apart" probes, rearrangement of *ALK* in lung cancer.
+- **Next-generation sequencing** (NGS) sequences many genes, or even whole genomes, at once, detecting mutations, fusions and amplifications, and measuring tumour mutational burden and microsatellite instability.
+- **Liquid biopsy** detects circulating tumour DNA (ctDNA), released from tumour cells into the blood. It can identify targetable mutations when tissue is not available and monitor resistance, but a negative result does not exclude a mutation, because some tumours shed little DNA.
+
+In England, genomic testing is organised through the NHS Genomic Medicine Service, which publishes a National Genomic Test Directory specifying which tests are available for which cancers and inherited conditions ([[genetics/genomic-medicine]]).
+
+::: example A HER2 in situ hybridisation result {#ex-her2}
+A breast carcinoma scored HER2 2+ on IHC. Dual-probe in situ hybridisation counted 20 nuclei and gave an average of 6.4 *HER2* signals and 2.0 chromosome 17 centromere (CEP17) signals per nucleus. Is the tumour HER2 amplified?
+::: solution
+1. Ratio $= 6.4/2.0 = 3.2$.
+2. Under the international (ASCO/CAP) criteria used in the UK, a *HER2*/CEP17 ratio of 2.0 or more with an average *HER2* copy number of 4.0 or more per cell indicates **amplification**.
+3. Both conditions are met (ratio 3.2, copy number 6.4), so the tumour is **HER2 positive**.
+4. This makes her eligible for HER2-targeted therapy, following the multidisciplinary team's recommendation. The equivocal IHC result was resolved by measuring the gene directly, which is why the two techniques are used together.
+:::
+:::
+
+::: example Will the test see the mutation? {#ex-vaf}
+A lung adenocarcinoma biopsy is sent for NGS. The pathologist estimates that 30% of the nucleated cells in the sample are tumour cells; the rest are inflammatory and stromal cells. If the tumour cells carry a heterozygous *EGFR* mutation, what variant allele fraction (VAF) is expected? If the assay can reliably detect variants down to 5%, what is the lowest tumour content at which this mutation would be detected?
+::: solution
+1. Each tumour cell has two copies of *EGFR*, one mutated, so half the tumour alleles carry the mutation. Normal cells carry none.
+2. Expected VAF $= 0.30 \times 0.5 = 0.15$, or 15% (assuming no change in copy number).
+3. To reach the 5% limit: tumour fraction $\times 0.5 = 0.05$, so tumour fraction $= 0.10$, or 10%.
+4. Below about 10% tumour content, a real mutation could be missed and reported as "not detected". This is why the pathologist selects the area richest in tumour, sometimes cuts it out of the section (macrodissection), and records the tumour content on the request, and why a negative result on a sample with little tumour is reported with that caveat.
+:::
+:::
+
+## Reading a pathology report
+
+A histopathology report usually has four parts: the clinical details supplied; the **macroscopic description** (what the specimen looked like, its size and weight, the size of the lesion and the blocks taken); the **microscopic description**; and the **conclusion** or diagnosis, often with a diagnostic code. For cancer resections, the Royal College of Pathologists publishes **datasets** that specify which items must be reported. Many reports present these items in a structured (**synoptic**) format. Internationally, the International Collaboration on Cancer Reporting harmonises these datasets.
+
+For a cancer resection, the report typically records:
+
+- the **tumour type** and **grade**;
+- the **size** and the **extent** of invasion, giving the pT category;
+- **lymphovascular invasion** (tumour within lymphatic or blood vessels) and **perineural invasion**;
+- the **margins**: whether tumour reaches a margin, and if not, the distance to the nearest one in millimetres;
+- the **lymph nodes**: the number examined and the number involved, and whether the tumour extends beyond the node capsule, giving the pN category;
+- the **pathological stage** (pTNM, with the edition of TNM used);
+- **biomarker** results, which may follow in a supplementary report.
+
+::: definition Margins and sentinel nodes {#def-margins}
+- A **resection margin** is the cut surface of a specimen. It is **involved** (positive) if tumour is present at the margin, which suggests that tumour may remain in the patient. The completeness of resection is summarised as **R0** (no residual tumour), **R1** (microscopic residual tumour) or **R2** (macroscopic residual tumour). What counts as a clear margin differs by tumour type: for some it means no tumour at the ink, for others a minimum distance.
+- The **sentinel lymph node** is the first node or nodes to receive lymphatic drainage from a tumour, identified by injecting a radioactive tracer, dye or magnetic particles near the tumour. If the sentinel node is free of tumour, the other nodes are very unlikely to be involved, so a full lymph node dissection, with its risk of lymphoedema, can be avoided. It is standard in early breast cancer and melanoma.
+:::
+
+::: example Reading a breast cancer report {#ex-report}
+A 57-year-old woman has a wide local excision and sentinel node biopsy. The report reads: "Invasive carcinoma of no special type, grade 2, 18 mm. Lymphovascular invasion not identified. Nearest invasive margin 3 mm (inferior). Sentinel lymph nodes: 0/2 involved. ER positive (Allred 8/8), HER2 negative (IHC 1+). pT1c pN0(sn)." Explain what this means.
+::: solution
+1. **Invasive carcinoma of no special type** is the commonest breast cancer, formerly called invasive ductal carcinoma.
+2. **Grade 2** is intermediate differentiation (Nottingham score 6 or 7).
+3. **18 mm** places the tumour in pT1c (over 10 mm and up to 20 mm).
+4. **No lymphovascular invasion** and **two negative sentinel nodes** (pN0(sn)) indicate that spread to lymph nodes is unlikely, so further axillary surgery is not needed.
+5. The **margin of 3 mm** shows that the tumour was completely removed; UK consensus guidance from the Association of Breast Surgery regards a radial margin of at least 1 mm as adequate after breast-conserving surgery, so re-excision is not needed.
+6. **ER positive** with a maximal Allred score predicts benefit from endocrine therapy. **HER2 1+** is negative for classical HER2-targeted treatment.
+7. The multidisciplinary team will combine these factors to recommend adjuvant treatment, typically radiotherapy to the breast after breast-conserving surgery and endocrine therapy, with chemotherapy considered according to the estimated benefit ([[surgery/breast-endocrine-surgery]]).
+:::
+:::
+
+::: warning A negative biopsy is only as good as the sample
+A biopsy shows only the tissue that was taken. A benign result from a small sample of a lesion that looks malignant on imaging may reflect a **sampling error**: the needle missed the tumour. The pathologist cannot know what was not sampled. Results must therefore be correlated with clinical and imaging findings; this is formalised in "triple assessment" for breast lumps (clinical examination, imaging and biopsy). When the three disagree, the discordance is discussed at the multidisciplinary meeting and the biopsy is usually repeated. The same logic applies to cytology reported as "non-diagnostic", which means insufficient material, not a normal result.
+:::
+
+## The multidisciplinary team
+
+In the UK, every new cancer diagnosis is discussed by a **multidisciplinary team** (MDT), which includes surgeons, oncologists, radiologists, pathologists, specialist nurses and others. The pathologist presents the diagnosis, the grade and stage, the margins and the biomarkers, and highlights uncertainties. Discussion often reveals discrepancies between clinical, imaging and pathological findings, which can prompt review of the slides or further tests. The team's recommendation is then discussed with the patient, whose preferences shape the final decision.
+
+## Quality and safety
+
+The laboratory process has many steps, each a possible source of error: wrong labelling, a fragment of tissue from another patient carried over in processing (a "floater"), misinterpretation, a missed small focus of cancer, or a report that does not reach the clinician. Safeguards include:
+
+- **positive patient identification** at every step, with barcoded specimens and slides;
+- **internal quality control** of staining, with control tissue on each slide for IHC;
+- **external quality assessment** schemes, such as UK NEQAS, which send the same material to many laboratories and compare results;
+- **accreditation** of laboratories against the international standard ISO 15189 by the United Kingdom Accreditation Service (UKAS);
+- **second opinion** and double reporting for difficult or high-stakes cases, and review at MDT meetings;
+- systems to ensure that significant and unexpected results are communicated directly to the responsible clinician.
+
+When an error is found, the report is amended, the clinician is informed, and the incident is investigated and disclosed to the patient under the professional duty of candour ([[clinical-skills/patient-safety]]).
+
+## The autopsy
+
+An **autopsy** (post-mortem examination) is a systematic external and internal examination of a body after death, with sampling for histology, microbiology and toxicology as needed. In England and Wales there are two kinds:
+
+- A **hospital (consented) autopsy** is requested by clinicians, with the consent of the next of kin, to understand the disease, check the accuracy of diagnosis, assess the effect of treatment, and for teaching and research. Removal and retention of tissue are governed by the Human Tissue Act 2004 (in Scotland, the Human Tissue (Scotland) Act 2006), introduced after the discovery that organs had been retained without consent, and autopsy premises are licensed by the Human Tissue Authority.
+- A **coroner's autopsy** is ordered by the coroner, an independent judicial officer, when a death is sudden and the cause unknown, violent or unnatural, occurred in state detention, or meets other criteria. Consent of the family is not required, although their views are respected.
+
+Since 9 September 2024, all deaths in England and Wales that are not referred to the coroner must be reviewed by an independent **medical examiner**, a senior doctor who scrutinises the medical records, speaks to the attending doctor and the bereaved family, and agrees the cause of death before it is registered. The system was introduced after inquiries such as that into the murders committed by the general practitioner Harold Shipman, which showed how weak death certification had been.
+
+Hospital autopsy rates have fallen steeply in many countries. Yet autopsy studies continue to find that a meaningful proportion of deaths have a major diagnosis that was missed or wrong during life. Less invasive methods, using post-mortem CT or MRI with targeted biopsies, are increasingly used where a full autopsy is not acceptable to the family.
+
+## Digital pathology and artificial intelligence
+
+In **digital pathology**, glass slides are scanned at high resolution to produce whole-slide images, which pathologists read on screens. This allows remote reporting, faster second opinions and easier teaching, and many NHS laboratories have adopted it. Digital images also make it possible to apply **artificial intelligence** algorithms, for example to flag likely cancer in prostate biopsies, count mitoses or score biomarkers. Some such tools have regulatory approval as aids to the pathologist. Their safe use requires validation on local cases, awareness that algorithms may perform worse on populations or staining methods unlike those they were trained on, and a pathologist who remains responsible for the diagnosis.
+
+::: quiz
+A metastatic carcinoma in a lymph node is CK7 positive, CK20 negative, TTF-1 positive and GATA3 negative. Which primary site is most likely?
+- [ ] Colorectum
+- [x] Lung
+- [ ] Breast
+- [ ] Urinary bladder
+::: solution
+CK7 positivity with CK20 negativity fits lung, breast and several other sites. TTF-1 positivity points to lung adenocarcinoma (or thyroid), and GATA3 negativity argues against breast and urothelial carcinoma. Colorectal carcinoma is usually CK7 negative and CK20 positive.
+:::
+:::
+
+::: history
+Johannes Müller published a microscopic study of tumours in 1838, and his student Rudolf Virchow made the microscope the central instrument of pathology. In 1905 Louis B. Wilson at the Mayo Clinic introduced a rapid frozen section method that let surgeons receive a diagnosis during an operation. In 1941 Albert Coons and colleagues labelled antibodies with a fluorescent dye and used them to locate antigens in tissue, the beginning of immunohistochemistry; enzyme-labelled methods visible with an ordinary microscope followed in the 1960s and 1970s. Kary Mullis devised the polymerase chain reaction in 1983, for which he shared the Nobel Prize in Chemistry in 1993; it made molecular pathology on small biopsies possible. In England and Wales, the statutory medical examiner system began on 9 September 2024.
 :::
 
 ## Where this leads
 
-Cancer-specific sampling, staging and biomarker logic in [[pathology/cancer-diagnosis]] and [[pathology/cancer-biology]]; the laboratory interface for clinicians in [[clinical-skills/laboratory-tests]]; imaging correlation in [[clinical-skills/medical-imaging]]; molecular and genetic services in [[genetics/genetic-testing]]; quality systems in [[clinical-skills/patient-safety]].
-
-::: history
-**Diagnostic pathology begins with the knife and the lens: the Morgagni-1761-seat-of-diseases-after-lead-autopsy-correlations that made symptoms match lesions and the Cruveilhier-and-Rokitansky-atlas-era-visible-pathology and the Virchow-1858-cellular-fusion-of-medicine-to-tissue - [[pathology/cell-injury]]; the microtechnique-package - the immersion optics, microtome sections and aniline-dye era, the Ehrlich-Romanowsky stain lineage and Gram's 1884 chemistry triumph, that made bacteria and cells legible - [[microbiology/bacteria]]; the cytology-revolution - the Pap stain lineage, with Papanicolaou and Traut's screening-trial vision and Aurel Babes's 1910 book on cancer cells in body fluids, the pioneer half-forgotten in the eponym as pathology's recurring lesson - [[public-health/screening]]; the immunohistochemistry-era - the Coons-fluorescence-1941 and the peroxidase-antiperoxidase method of 1974 and the Köhler-Milstein hybridomas of 1975 that turned antibody clones into diagnostic panels, with the cytokeratin mapping era and the lymphoma immunophenotyping revolution feeding the REAL and WHO classifications - [[immunology/adaptive-responses]], [[blood/lymphoma-myeloma]]; the molecular-in-the-tissue-era - in-situ hybridisation then FISH (the HER2 amplification era), PCR on paraffin then NGS panels becoming standard of care under companion-diagnostic law, and the TCGA morphology-to-molecule convergence seen in the CNS5 classification - [[pathology/cancer-diagnosis]], [[genetics/genomic-medicine]]; and the quality-and-error-era - the-Bennington-1967-surgical-pathology-error-monograph-and-the-College-courses-and-EQA-schemes-from-the-1970s-80s (the the UK external-quality-assessment-scheme-founding-generation) and To Err Is Human of 1999 that pulled diagnostic error into safety science, and the 2015 National Academies improving-diagnostics report citing laboratory and pathological error and the digital and AI pathology moment, from large retrospectively validated deep-learning studies to the prospective trial era now beginning - [[clinical-skills/patient-safety]].**
-:::
+Every organ system course draws on the techniques described here, especially in its cancer chapters. Genomic testing of tumours and of inherited predisposition is developed in [[genetics/genetic-testing]] and [[genetics/genomic-medicine]]. Death certification and the law are discussed in [[medical-ethics-law/end-of-life-ethics]], and the laboratory side of infection diagnosis in [[microbiology/laboratory-diagnosis]].
 
 ::: summary
-- The report is only as good as the specimen: orientation, inking, fixation clocks, cassetting and total-processing rules are clinical acts done at a bench that decide surgical and oncological choices.
-- Frozen sections answer narrow questions fast; knowing what they cannot say - follicular thyroid lesions, lymphoma, most borderline breast and melanocytic problems - and communicating probability verbally is the craft.
-- Synoptic cancer reporting exists so every trial-defined variable is captured once, reliably, for registries, staging and tumor boards.
-- Laboratory tests carry reference-range traps, biological variation, pre-analytical fragility and likelihood-ratio arithmetic; appropriate-order design and critical-value culture prevent more harm than cleverer assays.
-- Autoantibodies and tumour markers are probability modifiers, not verdicts; ordering them without pre-test probability manufactures patients.
-- Quality machinery - second signatures, external assessment, incident learning, reclassification recontact - plus digital imaging and validated AI assistance are now the safety infrastructure of the discipline.
-:::
-
-::: exercise Choose the special stain {level=1}
-Name the stain or marker for: fibrin in a vessel wall; acid-fast bacilli; fungi; haemosiderin; amyloid; Helicobacter; reticulin architecture; neuroendocrine granules.
-::: solution
-**Stain-panel-recall ([[#def-workflow]], [[pathology/diagnostic-pathology]]): fibrin - the PTAH heritage now mostly replaced by immunohistochemical fibrin and fibrinogen staining in vessel walls (the fibrinoid-necrosis-vasculitis-hypertension picture) - [[musculoskeletal/connective-tissue-vasculitis]]; acid-fast - Ziehl-Neelsen-or-fluorochrome-with-the-atypical-myobacteria-partial-acid-fastness and culture-and-PCR-confirmation - [[infectious-diseases/tuberculosis]]; fungi - GMS-and-PAS-with-mucin-carmine-for-cryptococcus-and-the-immunostains-for-histoplasma-and-Pneumocystis-diagnosis-in-tissue - [[microbiology/fungi-parasites]]; haemosiderin - Prussian-blue-with-the-iron-overload-and-haemorrhage-site-reading - [[blood/haemoglobin-disorders]]; amyloid - Congo-red-with-apple-green-birefringence-and-typing-by-mass-spectrometry-or-immunohistochemistry-with-caveats - [[renal/filtration]], [[nervous-system/dementia-neurodegeneration]]; Helicobacter - Giemsa-or-immunostain-with-the-attention-to-bile-reflux-and-chemical-gastropathy-pattern-versus-H-pylori - [[gastrointestinal/oesophagus-stomach]]; reticulin - the-silver-stain-for-liver-plate-architecture-and-bone-marrow-fibrosis-grading and the loss-of-reticulin-in-hcc-versus-regenerative-nodules - [[gastrointestinal/liver-disease]]; neuroendocrine - chromogranin-and-synaptophysin-and-INSM1-with-the-density-versus-differentiation-versus-site-confounds with the pancreatic-neuroendocrine-versus-acinar mimics - [[gastrointestinal/pancreas-biliary]], [[respiratory/lung-cancer-pleura]] for the pulmonary carcinoid.**
-:::
-:::
-
-::: exercise Read a bone marrow report {level=2}
-A 70-year-old with macrocytic anaemia: marrow shows hypercellularity, 12 percent blasts with Auer rods, dysplastic megakaryocytes, flow with CD13-33-117-positive-blasts, cytogenetics del(7q); NPM1 and FLT3 negative. Explain the integrated diagnosis and its language.
-::: solution
-**Integrated-haematopathology-report ([[#def-workflow]], [[blood/leukaemia]]): the-line-each-adds - morphology-blasts-with-Auer-rods-establishes-myeloid-lineage-leukaemia the blast-threshold history and why the WHO and ICC classifications depart from 20 percent for genetically defined AML and the-flow-panel-confirms-lineage-and-aberrancy-and-minimal-disease-markers the flow-marker breadth-versus-specificity trade and the cytogenetics-and-molecular-do-prognosis-and-targets-with-del(7q)-in-the-adverse-tier-and-NPM1-and-FLT3-shaping-the-ELN-risk-group-and-therapy-intensity-decision the TP53 and complex-karyotype therapy inferences, clinical-trial triage, and MRD marker choice for this leukaemia - [[genetics/cancer-genetics]], [[pharmacology/patient-variation]]; the-language-for-patient-conversations - what-Auer-rods-mean (myeloid-commitment, not severity) and what-adverse-risk-means-in-age-70-comorbidity-context (the intensive-versus-lower-intensity-venetoclax-azacitidine-era-realities and the transplant-question-with-a-donor-search-clock) and the-clinical-trial-referral-framing-without-false-hope - [[clinical-skills/communication]]; and-the-technical-lessons - the hemodilute aspirate versus trephine complementarity, cellularity and fibrosis grade assessable only on trephine, reticulin and CD34 staining on the block, reflex cytogenetics and FISH when metaphases fail, and the rule that blasts on a blood film get phoned within hours (the AML coagulopathy alert for the unclassified blast crisis) - [[microbiology/laboratory-diagnosis]], [[emergency-critical-care/acute-assessment]].**
-:::
-:::
-
-::: exercise Audit a turnaround-time problem {level=2}
-Biopsy-to-diagnosis interval in your region averages 26 days for suspected cancer; data show the delay sits between sampling and report, not reporting and appointment. Diagnose the system and fix it with measurement.
-::: solution
-**Turnaround-time-QI ([[#def-workflow]], [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]): the-value-stream-map - the-schedule-booked-then-taken-then-blocked-then-sectioned-then-reported-then-MDT-then-treatment and the-decomposition-by-segment-with-percentage-meeting-target-versus-80-95-percent-norms-and-the-weekend-and-holiday-batching and resource-scheduling theory applied to endoscopy suites and clinics queues grow nonlinearly as utilisation approaches one, which is why small sustained demand growth explodes waiting times - [[epidemiology-ebm/measuring-disease]]; the-classic-culprits-in-order - request-form rejection loops and information deficiency, second trips for consent, sedation drug-list cancellations, transport and accessioning bottlenecks, grossing staffing at 8am versus 2pm, special-stain reflex backlogs and molecular courier schedules - fixtures must be mapped not guessed, and units that fix reporting while ignoring scheduling keep failing - [[microbiology/laboratory-diagnosis]]; the-fixes-evidence-graded - one-stop clinics that diagnose, image, biopsy and plan in a day, with nurse-led triage, pre-scheduled imaging, tele-consultation for results and patient-navigation pilot numbers and order-set and safety-netting automation - clinician-side no-report-without-a-plan, automatic rebooking of non-attenders, and results-delivered-with-clinician-call standards and the-workforce-and-capital (the grosser shortage, associate specialist and scientist workforce routes, and point-of-care sampling embedded in clinics); and-the-measurement-and-governance - segment-level weekly run charts, not monthly averages; clinician and patient experience surveys; and equity stratification of intervals by deprivation, ethnicity and language, because waits are never equal and serious-incident review of extreme-delay cases with system-level, not personal, accounts - [[public-health/determinants-inequalities]], [[clinical-skills/records-handover]].**
-:::
-:::
-
-::: exercise Advise on direct-to-consumer genomic testing for cancer risk {level=3}
-A 25-year-old asymptomatic woman brings a commercial polygenic and monogenic panel showing a BRCA2 variant of uncertain significance and an 'above-average breast cancer risk' polygenic score; she requests preventive surgery discussion.
-::: solution
-**DTC-genomics-counselling ([[#def-quality]], [[genetics/genetic-testing]], [[genetics/cancer-genetics]]): the-technical-reality-check - clinical-grade versus research-grade versus consumer pipelines and the confirmation rule, with the sample quality and coverage metrics of consumer reports and the VUS rates by panel - variants not actionable until curated and the-polygenic-score-transferability-crisis the European-ancestry training samples, the unsettled clinical utility, and guidelines saying polygenic scores should not drive clinical decisions - [[epidemiology-ebm/diagnostic-tests]], [[public-health/determinants-inequalities]]; the-clinical-path - verify or reject the BRCA2 variant through the clinical genetics service with its own curation and phenotype match - reclassification, segregation studies with consented relatives, family-history reconstruction and five-tier ACMG communication - [[medical-ethics-law/confidentiality]]; the anchoring risk - a surgery request that is anxiety arithmetic - answered with absolute-risk figures, a what-would-change-the-plan list, the MRI surveillance eligibility debate with a negative family history, and the consensus not to act on a VUS, within a time-limited review appointment that safety-nets without reinforcing anxiety - [[clinical-skills/clinical-reasoning]], [[clinical-skills/communication]]; and the-system-level-response - public communication about direct-to-consumer testing (scripts that engage without dismissing choice), the regulatory gap between wellness and diagnostic claims, testing companies' recontact duties when they assert ownership of results, and clinicians contributing to curated databases with consent and governance - [[public-health/health-systems-economics]], [[medical-ethics-law/professionalism-regulation]].**
-:::
+- Histopathology examines tissue with its architecture; cytopathology examines cells without it. Both depend on correct labelling and clinical information.
+- Formalin fixation cross-links proteins and stops autolysis. Penetration depth rises with the square root of time, so large specimens must be sliced; cold ischaemia time must be short.
+- Tissue is processed into paraffin blocks, cut at 3 to 4 µm and stained with H&E. Frozen sections give intraoperative answers in about 20 minutes but are less reliable.
+- Cytology (exfoliative, FNA, liquid-based, cell blocks) is fast and minimally invasive but often cannot assess invasion.
+- Special stains detect organisms, mucin, amyloid, iron and fibrosis.
+- Immunohistochemistry determines lineage (interpreted as a panel) and predictive markers (ER, PR, HER2, PD-L1, mismatch repair proteins).
+- Molecular pathology (PCR, FISH, NGS, ctDNA) detects targetable changes; adequate tumour content is essential.
+- A cancer report gives type, grade, size, invasion, lymphovascular invasion, margins, nodes, pTNM and biomarkers, often using RCPath datasets. Sentinel node biopsy avoids unnecessary node dissection.
+- Results are integrated at the multidisciplinary team meeting. Quality depends on identification, EQA, ISO 15189 accreditation and second opinions.
+- Autopsies are consented (hospital) or coroner's; medical examiners have reviewed all non-coronial deaths in England and Wales since 9 September 2024.
 :::
 
 ## Exercises
 
-::: exercise Decide what to do with the frozen {level=1}
-Frozen section requested for: thyroid nodule; breast lump in a 30-year-old; lung nodule with known renal cancer; lymph node with suspected lymphoma; bone lesion with unknown primary. Accept, defer or answer - and why.
+::: exercise Fixation time {level=1 check="4"}
+Using $d = K\sqrt{t}$ with $K = 0.75$ mm per square root of an hour, how many hours does formalin take to penetrate 1.5 mm? Give the exact value.
 ::: solution
-**Frozen-section-triage ([[#def-workflow]]): thyroid - defer-for-follicular-patterns-because-encapsulation-and-invasion-need-permanents but answer for metastatic-node-or-parathyroid-or-inadequate-sample-questions with the papillary-nuclear-features-read-with-caution-in-thyroiditis-background - [[endocrine/thyroid]]; breast-in-a-30-year-old - cellular-fibroadenoma-versus-phyllodes-cannot-be-separated-on-frozen (the fragmented-biopsy-and-slipping-architecture) and the fibroadenoma-diagnosis-acceptable-with-clinical-radiological-concordance while borderline-lesions-defer-with-the-specialist-breast-unit-reflex - [[surgery/breast-endocrine-surgery]]; lung-nodule-with-renal-history - yes-clearly-answers-metastasis-versus-primary-with-IHC-on-imprint-or-cytology-adjacent (the PAX8-versus-TTF1-panel-on-cells and the cryostat-cross-contamination-hygiene rule); lymph-node-suspected-lymphoma - defer-with-a-plan-because-architecture-and-flow-and-molecular-need-tissue-and-never-steroids-first and send-fresh-tissue-in-the-right-media-with-clinical-handles; bone-lesion-unknown-primary - often-defer-with-touch-prep-for-cellularity-and-infection-exclusion (the metastatic-carcinoma-may-be-provable-versus-the-primary-unknown-requires-permanents-and-decalcification-caution) - [[pathology/cancer-diagnosis]], [[musculoskeletal/bones-joints]].**
+$t = (1.5/0.75)^2 = 2^2 = 4$ hours.
 :::
 :::
 
-::: exercise Interpret a tumour marker panel {level=1}
-An asymptomatic 60-year-old requests 'the cancer blood tests': PSA raised on one draw, CEA 8, CA19-9 45, AFP normal; he smokes and has fatty liver. Advise.
+::: exercise Choose the stain {level=1}
+Which special stain would you request to show: (a) mycobacteria in a granuloma; (b) amyloid in a kidney biopsy; (c) iron in a liver biopsy; (d) fungal hyphae in a lung biopsy; (e) collagen in a liver biopsy?
 ::: solution
-**Tumour-marker-interpretation ([[#def-lab]], [[pathology/cancer-diagnosis]]): the-purpose-rule - markers-for-monitoring-known-disease-not-screening-except-PSA-shared-decision-and-CgA-AFP-in-surveillance-specified-cohorts (the PSA overdiagnosis story, PSA density and the MRI-first era, and AFP-plus-ultrasound cirrhosis surveillance with honest sensitivity) - [[surgery/vascular-urological-surgery]], [[gastrointestinal/liver-disease]]; the benign explanations: CEA in smokers and fatty liver with modest elevations versus the magnitudes of liver metastases; CA19-9 in cholestasis and pancreatitis with the Lewis-antigen-negative non-producer caveat; and CA125 in menstruation, ascites and heart failure with peritoneal tuberculosis as the mimic - [[gastrointestinal/pancreas-biliary]], [[gastrointestinal/liver-disease]]; the downstream-machinery-cost - the-CT-that-finds-an-incidentaloma-and-the-8-week-wait-spiral-and-the-anxiety-of-a-number-that-means-nothing-in-isolation (the false-positive-cascade-and-absolute-risk-conversation) and the-repeat-testing-only-if-the-result-changes-management with the-assay-non-equivalence-if-repeating-elsewhere; and the-constructive-alternative - the evidence-based screening offers by age, sex and risk (bowel, cervical, breast, and lung in eligible smokers), the vascular, diabetes and liver-fibrosis checks that actually extend life, and the vaccination and lifestyle conversation in medical not moral language - [[public-health/screening]], [[clinical-skills/communication]].**
+(a) Ziehl–Neelsen. (b) Congo red, examined in polarised light. (c) Perls' Prussian blue. (d) Grocott methenamine silver, or PAS. (e) Masson trichrome (or Sirius red).
 :::
 :::
 
-::: exercise Run the discordance meeting {level=2}
-Radiology reports a suspicious renal mass; urology's cytology says 'atypical urothelial cells'; your pathologist's review of the same specimen says reactive. Build the meeting agenda and learning actions.
+::: exercise HER2 ratio {level=1 check="2.4"}
+In dual-probe in situ hybridisation, the average *HER2* signal count is 4.8 per nucleus and the CEP17 count is 2.0. Calculate the *HER2*/CEP17 ratio. Give the exact value.
 ::: solution
-**Clinico-pathological-conference-craft ([[#def-quality]], [[clinical-skills/patient-safety]]): the-reconciliation-agenda - who presents what in which order - radiology images side by side with the slide, clinical question stated first, the atypia-versus-carcinoma differential for urothelium including stones, instrumentation, inflammation, BCG therapy and prior radiation decoys and the grading-system context, with urinary adjunct tests read by evidence (the FISH, Cxbladder and NMP22 utility hierarchies) and the second-opinion policy for atypical cells with a carcinoma-in-situ question, plus the repeat sampling, bladder mapping, upper-tract imaging and ureteroscopy plan - [[surgery/vascular-urological-surgery]], [[renal/urinary-tract]]; the-system-questions - which information was on the request form and which was not (BCG instillation dates as diagnostic detonators, and the prior instrumentation list) and the specimen-chain audit if needed (labelling versus interpretation versus sampling triage, with prior-history omissions classified as contextual error) and the documentation-of-consensus-in-the-patient-record-so-treatment-follows-the-agreed-diagnosis not the loudest report - [[clinical-skills/records-handover]]; and the-learning-loop - the audit of atypical urine cytology conversion rates against international benchmarks, with the Paris System reporting update uptake and the reflex to molecular adjuncts when atypia persists with risk stratification and the case-based teaching moment for urology and pathology registrars, with a shared checklist of discordance triggers and follow-up definitions - [[clinical-skills/clinical-reasoning]], [[pathology/cancer-diagnosis]].**
+$4.8/2.0 = 2.4$. With a ratio of 2.0 or more and an average *HER2* copy number of 4.0 or more, the tumour is amplified.
 :::
 :::
 
-::: exercise Implement an AI pathology assistant {level=3}
-Your lab plans to deploy an AI tool for prostate biopsy screening. Deliver the implementation plan: evidence review, validation, workload redesign, equity, regulation, monitoring and the rollback criteria.
+::: exercise Expected allele fraction {level=2 check="0.2"}
+A tumour sample contains 40% tumour cells, which carry a heterozygous *KRAS* mutation with no copy number change. What variant allele fraction (as a decimal) is expected? Give the exact value.
 ::: solution
-**AI-pathology-deployment ([[#def-quality]], [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]): the-evidence-and-matched-validation - the tool's studies - internal versus external validation and population transferability - with grading-consistency trials versus prospective screening-burden designs, regional prevalence and grading practice variation, and manufacturer performance read against your own EQA baseline and regulatory clarity (device-classification routes and post-market surveillance obligations you inherit as the deployer) plus licensing, liability, insurance and data-protection questions answered in writing before pixels move; the-validation-and-rollout - a silent-mode period on your own archives (hidden case testing with known positives and hard negatives, with pre-registered acceptance metrics for detection and workload delta, not marketing numbers) graduated deployment as triage second reader rather than primary sign-out, with workflow redesign (AI-first sorting versus parallel read, report templates recording the tool version) and time-motion studies, not vibes deskilling and automation-bias monitoring (quarterly oversight tests with planted cases, and the green-tick trust drift named openly); the-equity-and-transparency - performance audits by scanner, stain intensity and tissue thickness, patient-facing explanation and consent norms, and data governance for retraining on your slides (consent, opt-out and commercial terms) - [[genetics/genetic-testing]], [[medical-ethics-law/confidentiality]]; and the governance-of-uncertainty - the continuous monitoring dashboard (per-reader versus tool performance, drift signals with revalidation triggers), incident reporting for both error types, a rollback plan with published thresholds, annual board reporting on evidence versus experience, and research participation so your patients also contribute to everyone else's studies - [[clinical-skills/communication]], [[public-health/health-systems-economics]].**
+$0.40 \times 0.5 = 0.20$.
+:::
+:::
+
+::: exercise Frozen section: when and when not {level=2}
+For each situation, say whether a frozen section is appropriate and why: (a) confirming carcinoma in a lung nodule before lobectomy, when previous biopsy was not possible; (b) diagnosing a suspected lymphoma in an enlarged lymph node; (c) checking the bile duct margin during a pancreatic resection; (d) a 3 mm skin lesion suspected of being melanoma.
+::: solution
+(a) Appropriate: a malignant diagnosis justifies the lobectomy during the same operation. (b) Not appropriate for definitive diagnosis: lymphoma classification needs well-fixed tissue, immunohistochemistry and often molecular tests; a frozen section may confirm that diagnostic tissue has been obtained, and fresh tissue can be sent. (c) Appropriate: a positive margin may lead the surgeon to resect more duct. (d) Not appropriate: freezing a small melanocytic lesion distorts it and may use up the tissue needed for accurate measurement of thickness, which determines staging.
+:::
+:::
+
+::: exercise Consent and the coroner {level=2}
+A 45-year-old man dies suddenly at home with no known illness. His family do not want a post-mortem examination. An 82-year-old woman dies in hospital from known metastatic lung cancer, and her consultant would like to know whether she also had a pulmonary embolism. Explain who decides whether an autopsy takes place in each case.
+::: solution
+The sudden unexplained death of the man must be reported to the **coroner**, who decides whether a post-mortem examination is needed to establish the cause of death; family consent is not required, although the coroner considers their views and less invasive methods may be used. The woman's death has a known natural cause, so it is reviewed by the **medical examiner** and is not normally referred to the coroner. An autopsy to answer the consultant's question would be a **hospital autopsy**, which requires the consent of the next of kin under the Human Tissue Act 2004. If they decline, it cannot proceed.
+:::
+:::
+
+::: exercise A discordant biopsy {level=3}
+A 49-year-old woman has a 2 cm breast mass that feels hard and irregular. Mammography and ultrasound show a spiculated lesion highly suspicious for cancer. An ultrasound-guided core biopsy shows benign fibrous tissue and fat. Explain how to interpret this result and what should happen next.
+::: hint
+Think about triple assessment.
+:::
+::: solution
+This is **discordant triple assessment**: clinical and imaging findings are strongly suspicious, but the biopsy is benign. The most likely explanation is a sampling error, in which the needle sampled tissue near the lesion rather than the lesion itself; some cancers, especially lobular carcinomas, also have little cellularity and can be hard to sample. A benign result cannot be accepted in this situation. The case should be discussed at the breast multidisciplinary meeting, the imaging and the position of the biopsy reviewed, and a repeat biopsy performed, for example with more cores or by vacuum-assisted biopsy, or the lesion excised for diagnosis. The general principle is that the pathologist can only report what is in the sample, and that correlation with clinical and imaging findings is part of interpreting every biopsy.
+:::
+:::
+
+::: exercise Too little tumour {level=3}
+A small bronchoscopic biopsy of a lung adenocarcinoma contains about 8% tumour cells. NGS reports "no *EGFR* mutation detected". The oncologist asks whether the patient can be considered *EGFR* wild type. Using variant allele fraction, explain the answer and suggest what can be done.
+::: solution
+With 8% tumour cells and a heterozygous mutation, the expected variant allele fraction is $0.08 \times 0.5 = 0.04$, or 4%, below a typical detection limit of about 5%. A real mutation could therefore have been missed, and the result should be interpreted as "not detected in a sample of low tumour content", not as confirmed wild type. Options include re-testing a block or area richer in tumour after macrodissection, using a more sensitive targeted PCR assay, testing circulating tumour DNA in the blood (a positive result would be actionable, although a negative one would not exclude a mutation), or obtaining a new biopsy. The decision matters because *EGFR*-mutant lung cancer is treated with targeted drugs that are more effective than chemotherapy or immunotherapy as a first choice.
 :::
 :::

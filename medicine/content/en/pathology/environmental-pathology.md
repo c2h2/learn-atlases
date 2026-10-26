@@ -1,141 +1,324 @@
-Environmental and occupational pathology connects exposures to lesions: **asbestos fibres reach a terminal bronchiole and start a quarter-century countdown to mesothelioma; benzo[a]pyrene from tobacco forms DNA adducts in bronchial epithelium; lead inserts itself into haem; silica kills the macrophage that swallowed it - and the discipline's method, from the London smog inquiries to asbestos compensation, is how medicine learned to attribute disease to the built world.** This chapter covers the classical pneumoconioses and dust diseases, physical agents, toxins and pollutants, and the environmental-epidemiology method that turns a cluster into evidence.
+Much human disease is caused not by microbes or faulty genes but by what people breathe, eat, drink and are exposed to at work and at home. Tobacco, alcohol, obesity and air pollution are among the largest causes of illness and early death worldwide, and all of them can in principle be prevented. This chapter applies the mechanisms of cell injury from [[pathology/cell-injury]] to these environmental and nutritional causes. It covers tobacco, alcohol, injury by medicines, pollutants and occupational exposures, physical agents including radiation, undernutrition and vitamin deficiencies, and obesity.
 
-This chapter covers mineral dusts and the lung, tobacco and other inhaled exposures, radiation, heat cold and electricity, heavy metals and industrial chemicals, pollution and climate, and the attribution method.
+Population aspects, such as policy and prevention, are covered in [[public-health/environmental-occupational]] and [[public-health/prevention-promotion]]. Here the focus is on what these agents do to cells and tissues.
 
-## Dusts that scar
+## Principles of environmental injury
 
-::: definition Pneumoconioses and the reacting lung {#def-dust}
-**The particle-tissue dialogue (the-deposition-cleared-and-retained-arithmetic - aerodynamic-diameter-determining-reach-alveolar-fraction-under-5-micrometres-and-mucociliary-and-macrophage-clearance-and-the-solubility-rule-toxicity-fate and the fibre-length-and-biopersistance-thresholds-from-the-fibre-paradigm and the-frustrated-phagocytosis-cycle-particle-re-release-that-makes-silica-and-asbestos-self-perpetuating - [[respiratory/mechanics-breathing]], [[immunology/innate-immunity]]); the big-four-with-their-lesions (asbestosis - diffuse sub-basal fibrosis with parietal pleural plaques and ferruginous bodies, lower-lobe predominance, the smoking synergy for bronchial carcinoma, 20-40 year latencies, mesothelioma from amphiboles and erionite, and the remainder-list of benign asbestos pleural effusion, rounded atelectasis and pleural thickening - [[respiratory/interstitial-vascular-disease]], [[respiratory/lung-cancer-pleura]]); silica with upper-lobe rounded nodules, birefringent particles and eggshell calcification, the silicotuberculosis link, progressive massive fibrosis, Caplan syndrome with rheumatoid disease, and the scleroderma, rheumatoid and ANCA associations (the South African gold-mine and quarry vignettes in [[pathology/chronic-inflammation-repair]]) - [[infectious-diseases/tuberculosis]], [[musculoskeletal/connective-tissue-vasculitis]]); coal workers' pneumoconiosis with coal macules, simple versus complicated disease, the legal classification schemes, and the difference between dust exposure and dust disease and berylliosis with its non-caseating granuloma sarcoid mimic, the lymphocyte proliferation test, and aerospace, electronics and nuclear exposures - [[pathology/chronic-inflammation-repair]], [[public-health/environmental-occupational]]); the other inhaled injurers (hypersensitivity pneumonitis - farmer's, bird-fancier and humidifier lung with centrilobular ground-glass and mosaic attenuation, precipitins interpreted cautiously, and antigen avoidance as the only disease-modifying therapy - [[respiratory/interstitial-vascular-disease]]); and the emerging-chapter-technological-dusts (nanoparticle toxicology by surface area with carbon-nanotube animal data, crystalline silica in engineered stone as the 2020s regulatory catch-up, and the diacetyl bronchiolitis obliterans lesson where management listened last - [[public-health/environmental-occupational]], [[respiratory/asthma-copd]] for occupational asthma the commonest occupational lung disease with its latency-sensitisation and the isocyanate-flour-dust-lipase-enzymes-early-morning-asthma-camphor story and the peak-flow-diaries-CVQ-versus-specific-challenge-testing).**
+::: definition Dose, exposure and susceptibility {#def-exposure}
+The effect of an environmental agent depends on:
+
+- the **dose** that reaches the target tissue, which depends on the concentration, the duration of exposure and the route (inhalation, ingestion, skin);
+- **metabolism**: many chemicals are harmless until enzymes, often cytochrome P450 enzymes in the liver, convert them into reactive products (**bioactivation**), while others are detoxified by conjugation and excreted;
+- **susceptibility** of the individual: age, sex, genetic variation in metabolising enzymes, nutritional state and coexisting disease.
+
+The same exposure can therefore harm one person and spare another.
 :::
 
-## Energy and molecules
+Two general mechanisms recur in this chapter. **Reactive metabolites** bind covalently to proteins and DNA, damaging cells or causing mutations. **Oxidative stress**, from reactive oxygen species, damages membranes, proteins and DNA when it overwhelms the cell's antioxidant defences, especially glutathione.
 
-::: definition Radiation, temperature and electricity {#def-energy}
-**Ionising-radiation-biology (the-direct-versus-indirect-DNA-action-with-free-radicals-and-oxygen-enhancement-and-the-double-strand-break-repair-fidelity-story-with-NHEJ-versus-HR-and-the-ATM-ataxia-telangiectasia-lesson and the four-Rs-of-fractionation-repair-repopulation-redistribution-reoxygenation-basis-of-radiotherapy-scheduling - [[pathology/cell-injury]], [[genetics/genome-chromosomes]]); the deterministic-versus-stochastic-effect-dose-thresholds (the-erythema-epilation-sterility-ARDS-sterility-threshold-acute-radiation-syndrome-haematopoietic-gastrointestinal-neurovascular-and-the triage classification by estimated dose) versus the linear-no-hypothesis-for-cancer-risk-with-the-DNA-repair-polymorphism-and-LNT-controversy-read-honestly (the Hiroshima Life-Span Study versus low-dose power problems, radon in miners and homes, nuclear-industry cohort numbers versus headline fear, and the Chernobyl thyroid-cancer RET rearrangements - [[public-health/environmental-occupational]], [[endocrine/thyroid]]); the medical-exposure-paradox (the-dose-audits-and-justification-optimization-ALARA-and-the-paediatric-stroke-dose-triage and the deterministic skin and lens injuries in interventional cardiology as modern occupational pathology - [[clinical-skills/medical-imaging]]); temperature (the-heat-illness-continuum-heat-cramps-exhaustion-stroke-with-core-temperature-and-CNS-status-and-the-exertional-versus-classic-split-young-athlete-versus-elderly-dependent and the cooling-first-transport-when-possible-doctrine with cold-water-immersion-evidence-versus-evaporative-practice and the rhabdomyolysis-DIC-hepatic-renal-final-common-pathways and the hypothermia ECG with Osborn waves, the rewarming shunt and afterdrop, and the cold diuresis and the pernio-chilblains-trench-foot-frostbite-classification with the freeze-thaw-crystal-injury and the cold-induced-vasospasm-Raynaud-secondary causes - [[emergency-critical-care/shock-fluids]], [[musculoskeletal/skin], [[geriatrics-palliative/ageing-frailty]]); and electricity-and-pressure (the electrical burn's depth deception with deep muscle necrosis and myoglobinuria, entrance and exit wounds, and the AC-induced arrhythmia reality versus the defibrillation myth-and-lightning-Lichtenberg-figures-paralysis-and-tympanic-membrane-rupture and the diving barotraumas - middle-ear squeeze, pulmonary overexpansion, arterial gas embolism and decompression sickness with bubble-driven endothelial damage, hyperbaric therapy and patent-foramen-ovale stroke links and the blast taxonomy of primary tympanic and pulmonary injury, secondary, tertiary and quaternary trauma - [[surgery/trauma]], [[emergency-critical-care/resuscitation]], [[respiratory/gas-exchange]], [[nervous-system/stroke]]).**
-:::
+## Tobacco
 
-::: definition Metals, chemicals and pollution {#def-toxins}
-**Heavy-metals-as-molecular-lesions (lead-inhibits-ALA-dehydratase-and-ferrochelatase-with basophilic stippling and ringed sideroblasts and urinary ALA and ZPP support, the modern blood-lead test, and stored bone lead released in pregnancy and osteoporosis and the wrist-drop motor neuropathy, encephalopathy, nephropathy, hypertension and gout, with the potters-batteries-shooting-ranges-paint-and-pipes exposure history and chelation by edetate, succimer or BAL, and source removal first - [[blood/anaemia]], [[renal/chronic-kidney-disease]], [[nervous-system/neuromuscular]]); mercury by species - methylmercury with Minamata and fish bioaccumulation, elemental vapour with erethism, tremor and nephrotic syndrome, and antiseptic accidents, with chelation limits and specimen choice between hair, blood and urine - [[nervous-system/dementia-neurodegeneration]], with nephrotic syndrome - [[renal/filtration]]); arsenic from contaminated water with raindrop pigmentation, palmar keratoses, squamous cancer, and lung and bladder cancer associations and the arsenic-trioxide-treatment-of-APL paradox and peripheral vascular disease (blackfoot); and the manganese, thallium, cadmium with its itai-itai kidney-bone syndrome, hexavalent chromium, nickel and uranium roster with their signature occupations; the industrial-chemicals (the aromatic amines with bladder cancer in the aniline-dye legacy, with hair-dye and tobacco confounds and vinyl chloride angiosarcoma, and the benzene aplastic-anaemia-to-leukaemia chronology with its occupational-limit litigation and the carbon tetrachloride and dimethylformamide centrilobular necrosis toxins and the organophosphates and carbamates with acetylcholinesterase ageing and the delayed neuropathy and the paraquat self-poisoning with its fulminant pulmonary fibrosis and the isocyanate sensitisers - [[gastrointestinal/liver-disease]], [[blood/anaemia]], [[emergency-critical-care/poisoning]]); and ambient-and-household-air the the Ella-Adubowo? correct: Ella Adebayo - the 2020 inquest recording air pollution on the death certificate and the WHO-guidelines-versus-many-countries-standards gap and the fuel-solid-biomass-indoor-smoke-COPD-in-women-and-child-ARI and the radon-and-second-hand-smoke-inside-homes and the asbestos-still-killing-2020s-buildings-legacy and the leaded-petrol-legacy-in-soil-and-the-blood-lead-decline-and-the-climate-heat-cold-mortality-U-curves and wildfire-smoke-hazes-as-mass-exposure-events and the PFAS-and-microplastics-epidemiology-early-days-read-with-extreme-caution - [[public-health/environmental-occupational]], [[respiratory/asthma-copd]], [[public-health/global-health]], [[geriatrics-palliative/ageing-frailty]].**
-:::
+Tobacco smoking is the largest single preventable cause of death in the UK and one of the largest worldwide. The WHO estimates that tobacco kills more than seven million people a year. About half of long-term smokers, or more in some studies, die from a disease caused by smoking.
 
-::: example The builder with breathlessness {#ex-asbestosis}
-A 68-year-old retired builder has 2 years of progressive exertional breathlessness, bilateral basal velcro crackles, clubbing; spirometry shows FVC 68 percent predicted with ratio 0.82; HRCT shows subpleural basal fibrosis with pleural plaques; occupation involved insulation and ceiling tiles before the bans.
+Cigarette smoke contains thousands of chemicals. The most important groups are:
+
+- **Nicotine**, which causes dependence by acting on nicotinic acetylcholine receptors in the brain. It is not itself the main cause of cancer or lung disease.
+- **Carcinogens** in the particulate "tar", including polycyclic aromatic hydrocarbons (such as benzo[a]pyrene) and tobacco-specific nitrosamines. These are bioactivated to compounds that bind DNA and cause mutations, for example in *TP53* and *KRAS* in lung cancer.
+- **Oxidants and irritants**, which injure the airways, recruit neutrophils and macrophages and inactivate antiproteases.
+- **Carbon monoxide**, which reduces the oxygen-carrying capacity of blood.
+
+The diseases caused by smoking include:
+
+- **Lung cancer**, of which smoking causes the large majority of cases, and cancers of the mouth, larynx, oesophagus, stomach, pancreas, kidney, bladder and cervix, and acute myeloid leukaemia;
+- **Chronic obstructive pulmonary disease** (COPD): chronic bronchitis and emphysema, in which proteases released by inflammatory cells destroy alveolar walls ([[respiratory/asthma-copd]]);
+- **Cardiovascular disease**: coronary heart disease, stroke, peripheral arterial disease and aortic aneurysm, through endothelial injury, raised clotting tendency and accelerated atherosclerosis;
+- In **pregnancy**: low birth weight, preterm birth and stillbirth; and in children exposed to second-hand smoke, sudden infant death and respiratory infections.
+
+Cumulative exposure is expressed in **pack-years**: the number of packs of 20 cigarettes smoked per day multiplied by the number of years of smoking. The risk of lung cancer rises with pack-years, and it falls after stopping, although it remains above that of a never-smoker for many years.
+
+::: example A smoking history {#ex-packyears}
+A 63-year-old woman has smoked 15 cigarettes a day since she was 23. She now has a cough that has lasted six weeks. Calculate her pack-years and explain why her history matters.
 ::: solution
-**Asbestos-disease-in-one-patient ([[#def-dust]], [[respiratory/interstitial-vascular-disease]]): the syndrome positioning - asbestosis versus IPF, with pleural plaques and exposure history tilting the label, the shared UIP morphology, the compensation consequences of that label, and the physiology trajectory with 6MWT and DLCO; the malignancy architecture - the lower-lobe bronchial carcinoma with fibrosis and the multiplicative smoking synergy (the fifty-fold figure quoted with source honesty) versus mesothelioma, which is fibre-driven, from parietal-pleural transport to BAP1 loss and CDKN2A deletion, with the immunotherapy-era first line of nivolumab plus ipilimumab read by trial name honestly and the pleural cytology versus VATS biopsy with calretinin, WT1, CK5/6 and BAP1 loss, and mesothelin adjacency - [[pathology/cancer-diagnosis]], [[immunology/vaccines-immunotherapy]]; the cause-and-compensation medicine - the occupational history with latency and exposure timeline and employer and union records - take it twice, because benefits are late and the pleural-plaque and diffuse-pleural-thickening compensation routes by jurisdiction, the family take-home-dust claims, the engineered-stone silica regulatory catch-up, and the national occupational-disease notification schemes - [[public-health/environmental-occupational]]; and the care and truth-telling - pulmonary rehabilitation, vaccination, oxygen, early palliative integration and the lung-transplant eligibility questions with their smoking-cessation criteria honestly negotiated and the antifibrotics in asbestosis - unlicensed, asked about, trial-answered and the research-cohort invitation that can be kind or cruel - [[geriatrics-palliative/palliative-care]], [[clinical-skills/communication]].**
+1. 15 cigarettes a day is $15/20 = 0.75$ packs a day.
+2. She has smoked for $63 - 23 = 40$ years.
+3. Pack-years $= 0.75 \times 40 = 30$.
+4. A history of 30 pack-years places her at high risk of lung cancer and COPD. Under NICE guidance on suspected cancer, a person aged 40 or over who has ever smoked and has an unexplained cough is offered an urgent chest radiograph. She would also be eligible for lung cancer screening by age and smoking history.
+5. Stopping smoking at any age reduces the risk of further harm, and support to stop is effective ([[public-health/non-communicable-disease]]).
 :::
 :::
 
-::: example The factory cluster {#ex-cluster}
-Over 18 months, five workers from the same solvent-degreasing line develop aplastic anaemia or MDS; two have died; the plant insists its new solvent is 'greener'.
+**Electronic cigarettes** deliver nicotine in an aerosol without burning tobacco. UK public health bodies regard them as substantially less harmful than smoking for adults who switch completely, and they can help people stop smoking. They are not free of risk, their long-term effects are still being studied, and they are not recommended for people who do not smoke, especially young people.
+
+## Alcohol
+
+Alcohol is the commonest chemical cause of liver disease and contributes to many other diseases, injuries and social harms.
+
+::: definition Alcohol units {#def-units}
+In the UK, one **unit** of alcohol is 10 mL, or about 8 g, of pure ethanol. The number of units in a drink is
+
+$$
+\text{units} = \frac{\text{volume (mL)} \times \text{ABV (\%)}}{1000}
+$$ {#eq-units}
+
+where ABV is the alcohol by volume. The UK Chief Medical Officers' low-risk guideline (2016) advises that, to keep health risks low, men and women should not regularly drink more than **14 units a week**, spread over three or more days.
+:::
+
+### Metabolism
+
+Most ethanol is oxidised in the liver. **Alcohol dehydrogenase** converts it to **acetaldehyde**, and **aldehyde dehydrogenase** converts acetaldehyde to acetate. A smaller part is metabolised by the cytochrome P450 enzyme CYP2E1, which is induced by regular drinking and produces reactive oxygen species. Both main reactions generate NADH. These facts explain most of the damage:
+
+- **Excess NADH** shifts liver metabolism towards making fat and away from burning it, causing fatty liver.
+- **Acetaldehyde** is toxic and carcinogenic: it binds proteins and DNA. People with an inactive variant of aldehyde dehydrogenase (*ALDH2*), common in East Asian populations, accumulate acetaldehyde, experience facial flushing and have a higher risk of oesophageal cancer if they drink.
+- **Oxidative stress** from CYP2E1 injures hepatocytes. Induction of CYP2E1 also explains why regular drinkers are more vulnerable to some drug toxicities, including paracetamol.
+
+### Effects on the liver and other organs
+
+Alcohol-related liver disease develops in three overlapping stages:
+
+1. **Steatosis** (fatty liver): fat droplets in hepatocytes. It develops in most heavy drinkers and is reversible with abstinence.
+2. **Alcoholic hepatitis**: hepatocytes swell (ballooning) and die, contain clumped cytoskeletal proteins (**Mallory–Denk bodies**), and are surrounded by neutrophils. It can present acutely with jaundice and has a high short-term mortality when severe.
+3. **Cirrhosis**: the liver is replaced by fibrous bands and regenerative nodules ([[pathology/chronic-inflammation-repair]]), leading to portal hypertension and liver failure ([[gastrointestinal/liver-disease]]).
+
+Alcohol also causes acute and chronic pancreatitis, dilated cardiomyopathy, hypertension, atrial fibrillation, gastritis, peripheral neuropathy, brain damage including Wernicke–Korsakoff syndrome (through thiamine deficiency), and cancers of the mouth, pharynx, larynx, oesophagus, liver, bowel and breast. In pregnancy, alcohol crosses the placenta and can cause **fetal alcohol spectrum disorder**, with growth restriction, characteristic facial features and lifelong problems of learning and behaviour. UK guidance is that the safest approach in pregnancy is not to drink at all.
+
+::: example Counting units {#ex-units}
+A 47-year-old man says he drinks "a bottle of wine most nights". The bottle is 750 mL at 13% ABV, and he drinks one six nights a week. Calculate his weekly intake and compare it with the guideline.
 ::: solution
-**Cluster-to-evidence-occupational-medicine ([[#def-toxins]], [[epidemiology-ebm/observational-studies]], [[public-health/environmental-occupational]]): the signal handling - true versus apparent clusters with person-time expected counts and ascertainment bias because doctors talk - with the registry and occupational-disease reporting channels, a legal hold on safety-data-sheet and purchasing records before they vanish, and early regulator engagement with whistleblower protection - [[public-health/environmental-occupational]]; the epidemiology in a factory - line-versus-line and era-versus-era comparisons with an exposure matrix from purchasing records, area and personal sampling, a case-referent study with death-certification audits, the healthy-worker survivor effect biasing standardised ratios downwards, confounding by smoking alcohol and home solvents, and GST and NQO1 polymorphisms read as mechanism not clinical tool - [[genetics/common-disease-genetics]]; the substance science - the benzene myelotoxicity with stem-cell damage, aneuploidy and topoisomerase-II changes, and the threshold-versus-no-threshold debate for leukaemia and methylene chloride metabolised to carbon monoxide, trichloroethylene's hypersensitivity, renal and lymphoma questions, and replacement-solvent safety hype versus data - [[blood/leukaemia]], [[blood/anaemia]]; and the actions decided in public - interim controls - substitution, ventilation, rotations, respiratory protection and biological monitoring with urinary phenol and mercapturic acid interpreted honestly - with medical surveillance and early removal, and transparent communication including the workers'-right-to-know versus trade-secret history and absolute-risk framing, compensation and job-security counselling, and a longitudinal cohort commitment because latency outlasts inquiries - [[medical-ethics-law/professionalism-regulation]], [[clinical-skills/communication]], [[public-health/determinants-inequalities]].**
+1. Units per bottle $= 750 \times 13/1000 = 9.75$ units.
+2. Weekly intake $= 9.75 \times 6 = 58.5$ units.
+3. This is more than four times the low-risk guideline of 14 units a week.
+4. At this level he is at substantial risk of alcohol-related liver disease, hypertension, atrial fibrillation and several cancers. Assessment would include a structured questionnaire such as AUDIT, liver tests and, depending on the result, a test for liver fibrosis.
+5. Stopping suddenly after heavy daily drinking can cause withdrawal, which can be dangerous, so reduction is planned with professional support ([[psychiatry/substance-use]]).
 :::
 :::
 
-::: example The summer heatwave ward round {#ex-heatwave}
-Day four of the red-alert heatwave; your acute medical unit has admitted four older adults with confusion and acute kidney injury, two with falls, one lithium toxicity and one with new immobility after a stroke; the ward refuses to close blinds because of a patient's distress.
+## Injury by medicines
+
+Medicines are a common cause of tissue injury. **Adverse drug reactions** are often divided into those that are predictable from the drug's pharmacology and dose-related (type A), such as bleeding with anticoagulants, and those that are unpredictable and not dose-related (type B), such as severe allergic or idiosyncratic reactions. The classification and the reporting of adverse reactions are covered in [[pharmacology/adverse-reactions]].
+
+**Paracetamol** hepatotoxicity is the classic example of injury by a reactive metabolite. At therapeutic doses, most paracetamol is conjugated with glucuronide or sulfate and excreted. A small fraction is oxidised by cytochrome P450 enzymes, mainly CYP2E1, to a highly reactive compound, **NAPQI** (N-acetyl-p-benzoquinone imine), which is immediately neutralised by conjugation with **glutathione**.
+
+::: theorem Toxicity from a reactive metabolite {#thm-napqi}
+When the amount of reactive metabolite produced exceeds the cell's capacity to detoxify it, the excess binds covalently to cellular proteins and causes cell death. For paracetamol, this happens when glutathione is depleted. The damage is greatest in the hepatocytes around the central veins (zone 3), which have the highest concentration of the activating enzymes and the lowest oxygen tension.
+:::
+
+::: proof
+In overdose, the conjugation pathways become saturated, so a larger fraction of the drug is converted to NAPQI. Glutathione is used up faster than it can be resynthesised. Once glutathione falls below a critical level, NAPQI binds to cysteine groups of proteins, especially in mitochondria. Mitochondrial dysfunction and oxidative stress follow, ATP falls and the hepatocytes die by necrosis ([[pathology/cell-injury]]). Anything that increases CYP2E1 activity (regular heavy alcohol use, some drugs) or reduces glutathione stores (starvation, malnutrition) increases susceptibility. The antidote **acetylcysteine** works by replenishing glutathione, and it is most effective when given early, before the binding of NAPQI to proteins has caused irreversible injury.
+:::
+
+::: example Jaundice after an overdose {#ex-paracetamol}
+A 19-year-old woman is brought to the emergency department two days after taking an overdose of paracetamol. She is now jaundiced and drowsy. Her ALT is 6,800 U/L and her prothrombin time is prolonged. Explain the mechanism and the significance of the blood tests.
 ::: solution
-**Heat-medicine-in-a-heatwave ([[#def-energy]], [[geriatrics-palliative/ageing-frailty]], [[emergency-critical-care/shock-fluids]]): the physiology-under-stress - ageing thermoregulation decay - reduced sweat output, blunted thirst, impaired cardiovascular compensation, and mobility and cognition barriers to seeking cooling and the recognised risk-drug list - beta-blockers, anticholinergics, diuretics, SSRIs, antipsychotics - with lithium's renal and neurotoxicity in dehydration, and the ACE-or-ARB plus diuretic plus NSAID triple-whammy acute kidney injury, with sick-day rules and their uneven uptake - [[geriatrics-palliative/polypharmacy]], [[renal/acute-kidney-injury]]; the syndromes-on-the-trolley - heat-exhaustion-versus-stroke-decided-by-temperature-CNS-and-context (the classic-exertional-split-with-the-elderly-dependent-vs-young-athlete-and-the-cooling-first-with-cold-water-immersion-where-feasible-for-exertional-and-evaporative-for-classic-with-the-evidence-read-per-syndrome and the rhabdomyolysis-DIC-hepatic-injury-encephalopathy-trajectory) and the confusion-falls-AKI-lithium cluster counts as one diagnosis until excluded: heat; the systems-medicine - the cooling capitals - fans are counterproductive above about 35 degrees per WHO advice, and oral versus intravenous rehydration is a decision not a reflex and the hospital-environment the blinds-versus-distress balance, hospital thermal-comfort standards and their summer non-compliance, and ventilation choices for infectious patients - [[public-health/environmental-occupational]]; and the prevention-plan-that-beyond-the-bed - heat-health planning - national heat-alert activation with named accountable roles, cooling and rest centres, and care-home drinking protocols that get audited and the high-risk-register-active-outreach-with-social-prescribing-of-day-centres and death investigation that records heat as a contributing cause where it belongs and the urban long game - tree canopy, shade, cool roofs and retrofit, with the air-conditioning inequality named and the climate-anxiety-and-clinician-communication-role - [[public-health/prevention-promotion]], [[public-health/determinants-inequalities]], [[clinical-skills/communication]].**
+1. The overdose saturated the normal conjugation pathways, so more paracetamol was converted to NAPQI, which depleted glutathione and bound to hepatocyte proteins.
+2. Hepatocytes around the central veins died by necrosis. The very high ALT reflects leakage of this enzyme from dead cells.
+3. The prolonged prothrombin time shows that the liver can no longer make clotting factors adequately: it is a marker of the severity of **acute liver failure**. Drowsiness may indicate hepatic encephalopathy.
+4. Late presentation reduces the benefit of acetylcysteine, although it is still given. She needs urgent management under national guidance, with early discussion with a specialist liver unit, as transplantation may be considered.
+5. She also needs compassionate psychosocial assessment once medically able, as an overdose may reflect self-harm; this should never be treated as less important than the medical care. In the UK, Samaritans can be contacted at any time on 116 123 ([[psychiatry/self-harm-suicide-prevention]]).
 :::
 :::
 
-::: example The child with developmental delay and the old house {#ex-child-lead}
-A 3-year-old in a pre-1918 flat with peeling window frames presents with speech delay, irritability and constipation; Hb 102 with normal ferritin after iron trial; father works battery-reclaiming.
+## Pollutants and occupational exposures
+
+**Outdoor air pollution** is a mixture of gases (nitrogen dioxide, ozone, sulfur dioxide) and particles. **Fine particulate matter** (PM₂.₅, particles below 2.5 µm in diameter) penetrates deep into the lungs, and the smallest particles may enter the blood. It causes inflammation and oxidative stress in the airways and blood vessels, and it increases deaths from cardiovascular and respiratory disease and from lung cancer. The WHO 2021 air quality guideline for the annual average PM₂.₅ concentration is 5 µg/m³, a level exceeded in most cities of the world. **Indoor air pollution** from cooking with solid fuels is a major cause of disease in low-income countries.
+
+**Carbon monoxide** is a colourless, odourless gas produced by incomplete combustion, for example by faulty gas appliances, car exhausts and fires. It binds haemoglobin with an affinity about 200 to 250 times that of oxygen, forming carboxyhaemoglobin, which reduces oxygen transport and also shifts the oxygen dissociation curve to the left, so that the remaining oxygen is released less readily to tissues. It also impairs mitochondrial respiration. The brain and heart, with high oxygen demand, are most affected. Pulse oximeters cannot distinguish carboxyhaemoglobin from oxyhaemoglobin, so the saturation reading can look normal.
+
+::: example A family with headaches {#ex-co}
+In winter, a 36-year-old woman and her two children all have headaches, nausea and dizziness, which improve when they are away from home. The woman's oxygen saturation on pulse oximetry is 98%, but a blood gas with co-oximetry shows a carboxyhaemoglobin of 18%. Explain the findings.
 ::: solution
-**Childhood-lead-from-two-sources ([[#def-toxins]], [[paediatrics/growth-development]], [[blood/anaemia]]): the paediatric-lead-logic - higher fractional absorption, hand-to-mouth behaviour and a developing nervous system mean no safe level; blood lead is the decision test, with stippling on the film and porphyrins as supporting tools - [[paediatrics/neurodevelopment]]; the dual-source-history - paint dust from peeling frames and renovation, contaminated soil and window wells, still water in lead pipes, and take-home industrial dust from work clothes and shoes, addressed by the no-shoes-indoors and separate-laundry protocol and the spice, cosmetic, toy and hobby-solder screen, asked about without judgement, with pica and iron deficiency assessed together; the actions - the blood-lead level itself triggers action; house remediation is dust control not just paint scraping, with housing-authority and environmental-health referral, landlord duties, and the rehouse-versus-remediate debate chelation thresholds with succimer and escalation for encephalopathy, developmental follow-up with early-intervention and education support, and screening of siblings and pregnant contacts for the bone-lead legacy - [[paediatrics/safeguarding]]; and the population-lens - the population blood-lead decline since leaded fuel ends, with deprivation, ethnicity and old-housing gradients persisting, tap-first-flow testing for lead water, abatement licensing and inspection, and paediatricians' advocacy role with housing and public health - [[public-health/environmental-occupational]], [[public-health/determinants-inequalities]].**
+1. Several people from one household with headache and nausea that improve away from home strongly suggests **carbon monoxide poisoning**, probably from a faulty boiler or heater.
+2. Carbon monoxide binds haemoglobin far more tightly than oxygen, forming carboxyhaemoglobin; 18% of her haemoglobin cannot carry oxygen.
+3. The pulse oximeter reads carboxyhaemoglobin as if it were oxyhaemoglobin, so the saturation of 98% is falsely reassuring. Co-oximetry measures carboxyhaemoglobin directly.
+4. Treatment is high-flow oxygen, which shortens the half-life of carboxyhaemoglobin, and everyone in the house needs assessment. The source must be made safe, and the incident reported according to local procedures. Delayed neurological effects can occur ([[emergency-critical-care/poisoning]]).
+:::
+:::
+
+**Lead** was once common in paint, petrol and water pipes. It inhibits enzymes of haem synthesis (aminolaevulinic acid dehydratase and ferrochelatase), causing a microcytic anaemia with basophilic stippling of red cells, and it damages the developing brain, so children are most vulnerable. Adults may develop peripheral neuropathy, abdominal pain and kidney damage.
+
+**Occupational lung diseases** result from inhaling dusts. **Asbestos** fibres, especially the amphibole types such as crocidolite, are long and thin; they penetrate to the lung periphery and pleura and resist clearance. Asbestos causes pleural plaques (usually harmless), diffuse pleural thickening, **asbestosis** (interstitial fibrosis), **mesothelioma** and lung carcinoma. The risk of lung cancer from asbestos and smoking combined is far greater than either alone. Mesothelioma usually appears 20 to 50 years after exposure, so cases still occur many years after asbestos was banned in the UK (completely in 1999). **Silica** causes silicosis and increases the risk of tuberculosis; coal dust causes coal workers' pneumoconiosis ([[respiratory/interstitial-vascular-disease]]).
+
+## Physical injury
+
+**Thermal burns** are classified by depth. **Superficial** burns involve only the epidermis and are red and painful. **Partial-thickness** burns extend into the dermis and blister. **Full-thickness** burns destroy the whole dermis, including nerve endings, so they may be painless, and they cannot heal from the edges alone without grafting. Large burns cause massive loss of fluid through damaged capillaries, a hypermetabolic state, infection and, after inhalation of smoke, airway and lung injury. The extent is estimated as a percentage of total body surface area, for which the "rule of nines" gives a quick adult approximation.
+
+**Hypothermia** is a core temperature below 35 °C. As temperature falls, metabolism slows, consciousness declines and the heart becomes prone to arrhythmias. Local cold injury (frostbite) is caused by ice crystal formation and by vasoconstriction and thrombosis in small vessels. **Heat stroke**, a core temperature above about 40 °C with central nervous system dysfunction, causes widespread cell injury, rhabdomyolysis and DIC.
+
+**Electrical injury** depends on the voltage, current and path. Low-voltage alternating current can cause ventricular fibrillation. High-voltage current generates heat along its path through tissues, causing deep burns and muscle necrosis that may be much more extensive than the small entry and exit wounds suggest.
+
+## Ionising radiation
+
+Ionising radiation, such as X-rays, gamma rays and particles, carries enough energy to remove electrons from atoms. It damages cells directly, by breaking DNA, and indirectly, by ionising water to produce free radicals.
+
+::: definition Radiation dose and its effects {#def-radiation}
+- **Absorbed dose** is the energy deposited per kilogram of tissue, measured in **grays** (Gy; 1 Gy = 1 J/kg).
+- **Effective dose** is a weighted measure of the overall risk to the whole body, accounting for the type of radiation and the sensitivity of the organs exposed, measured in **sieverts** (Sv), usually millisieverts (mSv).
+- **Deterministic effects** (tissue reactions) occur above a threshold dose, and their severity increases with dose: skin erythema, hair loss, cataract, infertility, bone marrow failure and acute radiation syndrome.
+- **Stochastic effects** have no known threshold: the probability, not the severity, rises with dose. They are cancer and heritable effects. For radiation protection, risk is assumed to rise in proportion to dose even at low doses.
+:::
+
+Cells differ in radiosensitivity. Rapidly dividing cells are most sensitive: bone marrow, intestinal epithelium, skin and gonads. Non-dividing cells such as neurons are more resistant. This principle underlies radiotherapy, which exploits the reduced ability of cancer cells to repair DNA damage, and it explains its side effects, such as mucositis and diarrhoea.
+
+A whole-body dose of more than about 1 Gy causes **acute radiation syndrome**. Its forms reflect the tissues damaged: at lower doses the bone marrow fails over weeks, with infection and bleeding; at higher doses the gut epithelium is lost within days, with diarrhoea and fluid loss; and at very high doses the nervous system and circulation fail within hours. Late effects of irradiation include fibrosis, obliteration of small vessels and second cancers.
+
+The average annual dose to a person in the UK from all sources is about 2.7 mSv, about half of it from radon gas. Medical imaging is the largest artificial source. Doses vary widely: a chest radiograph gives roughly 0.02 mSv, while CT of the abdomen gives several millisieverts, about 10 mSv for some protocols.
+
+::: example Putting a CT dose in context {#ex-radiation}
+A 30-year-old woman asks how much radiation she will receive from a CT scan of the abdomen and pelvis, which in her hospital gives about 10 mSv. Compare this with natural background radiation and with a chest radiograph of about 0.017 mSv.
+::: solution
+1. Background radiation in the UK is about 2.7 mSv per year.
+2. $10/2.7 \approx 3.7$, so the CT gives roughly the dose of 3.7 years of background radiation.
+3. A chest radiograph gives $0.017/2.7 \times 365 \approx 2.3$ days of background radiation, so the CT is about 600 times larger.
+4. The risk of a future cancer from 10 mSv is estimated to be small, of the order of one in a couple of thousand for an adult, and it is assumed to rise in proportion to dose. The scan is justified if it answers a clinical question that matters; the principle in the UK (under IR(ME)R regulations) is that every exposure is justified and kept as low as reasonably practicable. Children are more radiosensitive and have longer to live, so the same dose carries more risk for them ([[clinical-skills/medical-imaging]]).
+:::
+:::
+
+## Undernutrition and vitamin deficiencies
+
+**Malnutrition** includes both undernutrition and overnutrition. Undernutrition remains a leading cause of death in young children in low-income countries, often together with infection, and it is also common in hospitals in high-income countries, among older people, people with chronic disease and people with eating disorders.
+
+**Severe acute malnutrition** in children has two classical forms. **Marasmus** results from a severe deficiency of energy: the child is extremely thin, with wasting of muscle and fat but no oedema, and the body breaks down its own tissues to survive. **Kwashiorkor** is characterised by **oedema**, a fatty enlarged liver, skin lesions with peeling patches and changes in the hair. It was once explained simply as protein deficiency with adequate energy, but its mechanism is now thought to involve infection, oxidative stress and altered gut microbes, as well as diet. In both, immune function is impaired and infections are common.
+
+**Refeeding syndrome** occurs when a severely undernourished person begins to eat or is fed artificially. Insulin released in response to carbohydrate drives phosphate, potassium and magnesium into cells, and the sudden demand for thiamine increases. Severe hypophosphataemia can cause heart failure, respiratory failure, confusion and death. People at risk are identified using criteria such as those in NICE guidance on nutrition support, and feeding is started cautiously with monitoring and supplementation ([[gastrointestinal/clinical-nutrition]]).
+
+| Vitamin | Main roles | Effects of deficiency |
+|---|---|---|
+| A | Vision (rhodopsin), maintenance of epithelia | Night blindness, xerophthalmia and corneal damage, squamous metaplasia, increased infections |
+| D | Calcium and phosphate absorption, bone mineralisation | Rickets in children, osteomalacia in adults |
+| Thiamine (B1) | Coenzyme in carbohydrate metabolism | Beriberi (neuropathy, heart failure); Wernicke encephalopathy and Korsakoff syndrome |
+| Folate and B12 | DNA synthesis; B12 also maintains myelin | Megaloblastic anaemia; B12 deficiency also causes subacute combined degeneration of the spinal cord |
+| C | Hydroxylation of proline and lysine in collagen; antioxidant | Scurvy: bleeding gums, perifollicular haemorrhages, poor wound healing |
+| Niacin | NAD and NADP synthesis | Pellagra: dermatitis, diarrhoea, dementia |
+
+::: warning Give thiamine before glucose to people at risk
+In a person at risk of thiamine deficiency, such as someone with heavy alcohol use or severe malnutrition, giving glucose increases the demand for thiamine and can precipitate or worsen **Wernicke encephalopathy**. The classical triad (confusion, eye movement abnormalities and ataxia) is present in only a minority, so the diagnosis is easily missed. The principle is to give thiamine promptly to anyone at risk, following local guidance, rather than wait for the full triad. Untreated, Wernicke encephalopathy can progress to permanent memory loss (Korsakoff syndrome) or death.
+:::
+
+## Obesity
+
+::: definition Body mass index and obesity {#def-bmi}
+**Body mass index** (BMI) is weight in kilograms divided by the square of height in metres:
+
+$$
+\text{BMI} = \frac{\text{weight (kg)}}{\text{height (m)}^2}
+$$ {#eq-bmi}
+
+For adults, the WHO and NICE categories are: healthy weight 18.5 to 24.9 kg/m², overweight 25 to 29.9 kg/m² and obesity 30 kg/m² or more. NICE recommends lower thresholds for people of South Asian, Chinese, other Asian, Middle Eastern, Black African or African-Caribbean background, who develop cardiometabolic disease at a lower BMI: overweight from 23 kg/m² and obesity from 27.5 kg/m². A waist-to-height ratio of 0.5 or more indicates increased central adiposity.
+:::
+
+BMI is a simple population measure. It does not distinguish fat from muscle, so it misclassifies some muscular people, and it does not show where fat is stored. Fat inside the abdomen (visceral fat) carries more metabolic risk than fat under the skin, which is why waist measurement is added.
+
+::: widget plot
+f: x/h^2
+x: 40, 150
+y: 10, 55
+sliders: h=1.7:1.5:2:0.01
+hlines: 18.5; 25; 30
+labels: \text{BMI (kg/m}^2\text{)}
+caption: Body mass index against weight in kilograms for a person of height $h$ metres. The horizontal lines mark 18.5, 25 and 30 kg/m², the general adult thresholds; for people from the ethnic groups named by NICE, the lower thresholds of 23 and 27.5 kg/m² apply. Move the height slider to see how the weight at each threshold changes with the square of height.
+:::
+
+Adipose tissue is an active endocrine organ. In obesity, enlarged fat cells become stressed and hypoxic, and macrophages accumulate around them. They release fatty acids and inflammatory cytokines such as TNF and IL-6, and less **adiponectin**, a hormone that improves insulin sensitivity. **Leptin**, which normally signals satiety, is high, but the brain becomes resistant to it. The result is **insulin resistance** and low-grade chronic inflammation.
+
+Obesity increases the risk of type 2 diabetes, hypertension, dyslipidaemia, coronary heart disease and stroke; metabolic dysfunction-associated steatotic liver disease; obstructive sleep apnoea; osteoarthritis of weight-bearing joints; gallstones; polycystic ovary syndrome and reduced fertility; and several cancers, including those of the endometrium, oesophagus (adenocarcinoma), colon, kidney and the breast after the menopause. Excess oestrogen made in adipose tissue explains part of the risk of endometrial and breast cancer.
+
+::: example A BMI with a lower threshold {#ex-bmi}
+A 52-year-old man of Bangladeshi origin weighs 70 kg and is 1.68 m tall. His fasting glucose is borderline. Calculate his BMI and interpret it.
+::: solution
+1. BMI $= 70/1.68^2 = 70/2.822 \approx 24.8$ kg/m².
+2. Using the general threshold, he would be classed as a healthy weight, just below 25.
+3. As a person of South Asian background, NICE's lower thresholds apply: 24.8 kg/m² is above 23, so he is classed as **overweight**.
+4. People of South Asian origin tend to store more fat centrally and in the liver at a given BMI and develop type 2 diabetes at lower BMIs. His borderline glucose fits this. Measuring waist-to-height ratio adds information, and he should be offered assessment of diabetes and cardiovascular risk ([[endocrine/diabetes]]).
 :::
 :::
 
 ::: quiz
-The mechanism that makes inhaled silica toxicity self-perpetuating in the lung is:
-- [x] Macrophage death after ingestion with re-release of the particle
-- [ ] Rapid dissolution of silica in alveolar fluid
-- [ ] Selective mast-cell degranulation on first exposure
-- [ ] Impaired cough reflex from nerve damage
+A 45-year-old man who drinks heavily is found to have a raised mean cell volume, a fatty liver on ultrasound and confusion with unsteady gait and abnormal eye movements. Which vitamin deficiency best explains the neurological picture?
+- [ ] Vitamin A
+- [x] Thiamine (vitamin B1)
+- [ ] Vitamin C
+- [ ] Vitamin D
 ::: solution
-**Silica is cytotoxic and poorly soluble: macrophages ingest it, die, release it, and recruit new macrophages - a frustrated-phagocytosis cycle that perpetuates inflammation and fibrosis long after exposure ceases ([[#def-dust]], [[pathology/chronic-inflammation-repair]]).**
+Confusion, ataxia and ophthalmoplegia in a person with heavy alcohol use form the triad of Wernicke encephalopathy, caused by thiamine deficiency. Alcohol reduces thiamine intake, absorption and storage. The raised mean cell volume reflects alcohol's direct effect on the marrow or associated folate deficiency.
 :::
 :::
 
-::: widget plot
-f: 100*(1-exp(-0.9*x)); 100*(1-exp(-0.35*x)); 100*(1-exp(-0.12*x)); 40*(1-exp(-0.3*x))
-x: 0, 50
-y: 0, 110
-labels: \text{years since first exposure},\ arbitrary\ %\text{asbestosis};\ \text{lung cancer (smoker)};\ \text{mesothelioma};\ \text{pleural plaques}
-caption: Latency curves ([[#def-dust]]): different asbestos endpoints emerge on different clocks, with plaques earliest and mesothelioma latest - the reason retirement is not the end of risk, compensation windows run for decades, and histories must be taken across whole working lives ([[public-health/environmental-occupational]], [[respiratory/lung-cancer-pleura]]).
+::: history
+In 1700 the Italian physician Bernardino Ramazzini published *De Morbis Artificum Diatriba*, a systematic account of the diseases of workers, and founded occupational medicine. In 1747 James Lind, a naval surgeon, compared six treatments for scurvy in sailors and found that citrus fruits cured it, one of the first controlled clinical trials. Christiaan Eijkman showed in the 1890s that beriberi in chickens was caused by a diet of polished rice, work that led to the discovery of vitamins, and he shared the Nobel Prize in 1929. In 1950 Richard Doll and Austin Bradford Hill published a case–control study linking cigarette smoking to lung cancer, followed by their cohort study of British doctors, which established smoking as a major cause of death. In 1927 Hermann Muller showed that X-rays cause mutations in fruit flies, establishing radiation as a mutagen.
 :::
 
 ## Where this leads
 
-The inflammation and fibrosis mechanisms in [[pathology/chronic-inflammation-repair]] and [[pathology/cell-injury]]; the regulatory and prevention machinery in [[public-health/environmental-occupational]] and [[public-health/prevention-promotion]]; the poisoning emergencies in [[emergency-critical-care/poisoning]]; the cancer mechanisms in [[pathology/cancer-biology]]; the compensation-era medico-legal duties in [[medical-ethics-law/professionalism-regulation]].
-
-::: history
-**The environment as a medical variable is old medicine: the Hippocratic-on-air-waters-and-places and Chadwick's 1842 report and the Great Stink-derived sewerage era that killed fewer doctors than it saved paupers - [[public-health/environmental-occupational]], [[public-health/prevention-promotion]]; the first industrial cancers: the British asbestos-lung autopsies of the 1890s-1900s with the keep: the keep fair: the keep general: the 1898 British Inspectorate of Factories report on asbestos dust and W.E. keep: the 1930 Merewether-Price report that finally recommended regulation and the 1931 asbestos industry regulations - the report-to-regulation-gap-as-the-template-for-a-century - [[pathology/cancer-biology]]; the-smog-epidemiology-birth - the-1952-Great-Smog-deaths-attribution-and-the-London-County-Council-research-unit-era and the clean-air-legislation-trial-into-the-1960s and the Doll-Hill and Wynder-Graham studies of 1950-1954 that made smoking a population exposure using epidemiological designs that were themselves new - [[epidemiology-ebm/observational-studies]], [[public-health/prevention-promotion]]; the-lead-paradox - the 1920s ethyl-additive era-and-Clair Patterson, whose earth-dating work trapped him into measuring lead contamination everywhere and whose 1965 essay made him the template for the scientist-activist - [[blood/anaemia]], [[public-health/global-health]]; the-radiation-era - the early radiologist dermatitis and amputations-and-the-1920s-Radium-Girls-jaw-necrosis-litigation that created occupational-disease law-templates and the Hiroshima-Life-Span-Studies-1947-onward-with-their-low-dose-power-problems and the Chernobyl-thyroid-cancer-RET-PTC-rearrangements-diagnosis-bonus - [[endocrine/thyroid]], [[genetics/cancer-genetics]]; and the-climate-and-chemicals-present - the 2003 European heat-wave mortality excess-and-the-urban-heat-island-medicine and the-pfas-blood-of-a-nation-forever-chemistry and the-microplastics-detectability-then-meaning-gap and the asbestos-legacy-epidemic-still-rising-in-2020s-mesothelioma-deaths-and-the-compensation-fund-ethics - [[public-health/global-health]], [[medical-ethics-law/justice-resources]].**
-:::
+Tobacco and alcohol reappear in the lung, liver, heart and cancer chapters; occupational and environmental health policy is developed in [[public-health/environmental-occupational]]; nutrition in clinical practice in [[gastrointestinal/clinical-nutrition]]; and poisoning in [[emergency-critical-care/poisoning]]. The way pathologists recognise these injuries in tissue, and the role of the autopsy in identifying environmental causes of death, are covered in [[pathology/diagnostic-pathology]].
 
 ::: summary
-- Dust disease is particle physical chemistry: size, shape, solubility and biopersistence decide who reaches and survives in the alveolus, and frustrated phagocytosis is the shared engine of silica and asbestos.
-- Each pneumoconiosis has a radiological signature - asbestosis basal fibrosis with plaques, silicosis upper-lobe nodules with eggshell nodes, CWP coal macules, beryllium granulomas - and each has a compensation history.
-- Asbestos remains the leading occupational cancer cause: latency measured in decades, smoking multiplicative for bronchial carcinoma, mesothelioma immunotherapy now first-line, and legacy materials still exposing people.
-- Ionising radiation splits into deterministic threshold effects and stochastic cancer risk; the linear-no-threshold debate is scientifically honest uncertainty with huge policy consequences.
-- Classical toxicoses still arrive: lead, mercury, arsenic, benzene, aromatic amines, organophosphates - each with a distribution, a mechanism, a monitoring specimen and an exposure history that no test can replace.
-- Air pollution is the largest modern environmental risk: PM2.5 and household smoke kill through cardiopulmonary mechanisms at population scale, and the attribution method - exposure assessment, latency, confounding and dose-response - is now climate and chemical epidemiology.
-:::
-
-::: exercise Identify the exposure from the syndrome {level=1}
-Match: bladder cancer in a dye worker; angiosarcoma of liver; aplastic anaemia in a shoe gluer; bronchiolitis obliterans in a flavourings worker; mesothelioma in a plumber's wife; wrist drop in a plumber.
-::: solution
-**Exposure-syndrome-pairs ([[#def-toxins]], [[#def-dust]]): aromatic-amines (2-naphthylamine and benzidine) from dye and rubber-antioxidant work with bladder urothelial carcinoma, with smoking as the confounder to adjust, and urinary tumour tests as adjuncts never replacements - [[renal/urinary-tract]]; vinyl-chloride with hepatic angiosarcoma and the portal-hypertension-without-cirrhosis (sinusoidal and splenic-vein) picture and the plastic-polymerisation-plant history and the acro-osteolysis-and-Raynaud-and-dermal-changes cluster; n-hexane and toluene adhesives in shoemaking with peripheral neuropathy, and benzene in gluers causing aplastic anaemia and leukaemia, with the Greek shoemaker cohorts as evidence - [[blood/anaemia]], [[nervous-system/neuromuscular]]; diacetyl in microwave-popcorn and flavouring plants with bronchiolitis obliterans - fixed obstruction with air trapping and mosaic attenuation on expiratory CT, steroids disappointing, cessation everything; take-home asbestos in the washer of overalls with mesothelioma decades later and the compensation recognition of household exposure; and lead neuropathy with the plumber-battery-solder-history with the anaemia-and-abdominal-pain-and-hypertension package - [[blood/anaemia]], [[public-health/environmental-occupational]].**
-:::
-:::
-
-::: exercise Counsel a pregnant worker {level=2}
-A 29-year-old sonographer at 12 weeks asks about occupational risks to the fetus; she also cleans equipment with disinfectants and works in a hospital near a renovation site.
-::: solution
-**Pregnancy-and-exposures-counselling ([[#def-energy]], [[#def-toxins]], [[obstetrics-gynaecology/pregnancy-antenatal]]): the dose-frame - the-fetal-100-mGy-threshold-for-deterministic-effects-versus-the-small-stochastic-increase-with-no-evidence-below-50-mGy-for-loss-or-malformation and ultrasound ALARA with thermal and mechanical index discipline, keepsake-scanning boundaries and early-pregnancy Doppler restraint and the declared-pregnancy dose-limit framework with dose records and employer notification - [[clinical-skills/medical-imaging]], [[medical-ethics-law/professionalism-regulation]]; the chemical-reality - glutaraldehyde and peracetic-acid disinfectants with their asthma and dermatitis risk, addressed by ventilation, gloves and shields and solvent reduction without panic, with the true teratogen list - retinoids, warfarin, valproate, ACE inhibitors - read against background-risk noise and the paint-and-pesticide-and-cytotoxic-handling-policies - [[pharmacology/adverse-reactions]], [[public-health/environmental-occupational]]; the physical-work - the heavy-lifting, prolonged-standing and night-shift literature, with shift work's Group 2A classification and the evidence strength per outcome for preterm birth and growth and the maternity risk assessment with redeployment duties and paid-leave protection - [[obstetrics-gynaecology/pregnancy-complications]]; and the conversation - absolute-risk numbers without nervous-system casualties, covering reassignment versus disclosure debates and employment rights and documenting the advice, and answering renovation dust and noise questions with an actual walk-round - [[clinical-skills/communication]], [[medical-ethics-law/ethical-principles]].**
-:::
-:::
-
-::: exercise Design the clean-air intervention {level=3}
-Your city asks clinicians to co-design an air-quality package after a legal challenge on NO2 exceedances. Specify the evidence, the interventions, the health-communication plan and the equity and trade-off governance.
-::: solution
-**Clean-air-package-co-design ([[#def-toxins]], [[public-health/prevention-promotion]], [[public-health/environmental-occupational]]): the-evidence-base-presented-honestly - the-long-term-PM2.5-and-NO2-cohort-mortality-hazard-ratios-and-the-natural-experiments (the London congestion-charging health evaluations, the Beijing APEC blue-sky short-term gains, and the wood-smoke versus traffic decomposition debates) with the point that single-pollutant models hide correlated exposures - [[epidemiology-ebm/observational-studies]]; the-interventions-by-source - traffic (low-emission and clean-air zones with fleet-turnover modelling, school streets, idling and enforcement, active-travel co-benefits read against the risk-compensation debate, and freight and depot electrification with justice questions) and domestic (wood-burning replacement with the indoor particulate lesson about who heats whom, echoing the coal history) and industrial-and-construction (permitting dust conditions and quarry and port dust plans) and indoor (cook-hood extraction, candle and incense honesty, and gas-hob NOx and benzene education about hob choice); the-communication-and-clinical-roles - personal-exposure apps and index communication, with rules for when advice exceeds what individuals can act on and the exercise-versus-pollution debate answered with net-benefit evidence and school siting, playground avoidance and classroom filtration with randomised trial evidence read at its effect size and clinician prescribing of cycling and community-energy referral; and the governance-with-equity - exposure-inequality mapping by deprivation and ethnicity, from school proximity to major roads to bus-dependence politics and the fuel-poverty-versus-transport coalition ethics, health impact assessment inside legal process, and clinicians' duty in consultations and expert witness work - [[public-health/determinants-inequalities]], [[medical-ethics-law/justice-resources]], [[clinical-skills/communication]].**
-:::
-:::
-
-::: exercise Triage an emergency radiation exposure {level=2}
-An industrial radiography accident: three men found near an unshielded source; one vomits within 20 minutes, one nausea at 2 hours, one asymptomatic at 4 hours. Organise the first six hours.
-::: solution
-**Acute-radiation-triage ([[#def-energy]], [[emergency-critical-care/major-incidents]]): the-early-syndrome-reading - time-to-emesis-and-lymphocyte-kinetics-as-the-biodosimetry-backbone (time-to-emesis and lymphocyte kinetics as the field biodosimeter, with dicentric and micronucleus assays as the reference battery from national and international networks) and the prodrome-latent-manifest-illness-recovery-or-death-architecture by dose-band (the haematopoietic, gastrointestinal and neurovascular thresholds and the triage categorisation for treatment allocation) - [[blood/haematopoiesis]]; the-source-and-scene-discipline - the radiation-protection officer, fire and nuclear-medicine arrival, and the survey-enter-triage-decontaminate sequence with wipe tests, dose-rate mapping, time-distance-shielding for staff and pregnant-staff exclusion handled without punishment and the contamination-versus-exposure-distinction-told-clearly-to-media-and-patients the education that proximity to a source makes nobody radioactive, and the handling of belongings and laundry - [[emergency-critical-care/major-incidents]]; the-specific-therapies-by-compartment - the-antiemetics-and-fluids-and-wound-care-for-local-limb-injury (the burn that declares itself late, demanding serial assessment, plastics input, dose-mapping photographs and a later salvage-versus-amputation decision) and cytokine support, transfusion with irradiated products, infection prophylaxis and the transplant-versus-aplasia decision with the HLA search clock - [[blood/transfusion]], [[immunology/transplant-tumour-immunology]]; and the human-and-systemic-continuity - the 48-hour-to-60-day lymphocyte curves documented per patient in a shared register and long-term cancer, cataract and fertility surveillance with a named service; psychological support, return-to-work and compensation with public-inquiry record preservation; and the value of exercises built from the industrial radiography and teletherapy accidents that shaped today's response plans - [[psychiatry/lifespan-psychiatry]], [[medical-ethics-law/professionalism-regulation]].**
-:::
+- The effect of an environmental agent depends on dose, metabolism (bioactivation or detoxification) and individual susceptibility. Reactive metabolites and oxidative stress are common mechanisms.
+- Tobacco smoke contains nicotine, carcinogens, oxidants and carbon monoxide; it causes cancers, COPD, cardiovascular disease and harm in pregnancy. Exposure is measured in pack-years.
+- One UK unit is 10 mL (8 g) of ethanol; the low-risk guideline is no more than 14 units a week. Alcohol is metabolised to acetaldehyde, generating NADH and oxidative stress, and causes steatosis, alcoholic hepatitis and cirrhosis, and many other diseases.
+- Paracetamol toxicity results from the reactive metabolite NAPQI when glutathione is depleted, causing zone 3 hepatic necrosis; acetylcysteine replenishes glutathione.
+- Fine particulate matter, carbon monoxide, lead and asbestos are important pollutants. Pulse oximetry misses carbon monoxide poisoning.
+- Burns, hypothermia, heat stroke and electrical injury cause cell injury by heat, cold and current.
+- Ionising radiation is measured in grays (absorbed) and sieverts (effective). Deterministic effects have thresholds; stochastic effects (cancer) do not. Dividing cells are most radiosensitive.
+- Undernutrition includes marasmus and kwashiorkor; refeeding syndrome is caused by shifts of phosphate, potassium and magnesium. Vitamin deficiencies have characteristic pathology; give thiamine to people at risk of Wernicke encephalopathy.
+- Obesity (BMI 30 kg/m² or more; 27.5 kg/m² or more for some ethnic groups in NICE guidance) causes insulin resistance and chronic inflammation, and increases the risk of diabetes, cardiovascular disease, liver disease and several cancers.
 :::
 
 ## Exercises
 
-::: exercise Identify the dust {level=1}
-Assign: eggshell nodes with upper-lobe nodules and quarry work; basal fibrosis with plaques and shipyard work; granulomas with beryllium exposure; coal macules; farmer with centrilobular ground-glass and birds.
+::: exercise Units in a pint {level=1 check="568*5/1000"}
+How many UK units are in a pint (568 mL) of beer at 5% ABV? Give the exact value.
 ::: solution
-**Dust-identification ([[#def-dust]]): silicosis (the quarrying-sandblasting-foundry-scouring-history and the TB-susceptibility and the autoimmune-scleroderma-RA-ANCA-associations and the-PMF-mass-development) - [[infectious-diseases/tuberculosis]]; asbestosis (the ship-insulation-shipyard-lagging-history and the-lower-lobe-fibrosis-with-pleural-plaques and the-smoking-synergy-for-carcinoma-and-mesothelioma-separate-entity) - [[respiratory/interstitial-vascular-disease]]; chronic beryllium disease (the aerospace-electronics-nuclear-and-dental-alloy-history and the sarcoid-mimic-with-the-BeLPT-lymphocyte-proliferation-assay and the-corticosteroid-response-but-source-control-first) - [[pathology/chronic-inflammation-repair]]; coal workers' pneumoconiosis (the coal-face-latency and the simple-versus-complicated-PMF and the-Caplan-nodules-when-rheumatoid-and-the-dust-control-laws-that-changed-it) - [[public-health/environmental-occupational]]; and hypersensitivity pneumonitis (the bird-excrement-and-mouldy-hay-antigen-and-the-precipitins-support-not-diagnosis and the-antigen-avoidance-as-the-only-disease-modifying-move and the-fibrosing-HP-versus-IPF-treatment-divergence) - [[respiratory/interstitial-vascular-disease]].**
+$568 \times 5/1000 = 2.84$ units.
 :::
 :::
 
-::: exercise Manage a raised blood lead {level=2}
-A battery-factory worker has blood lead 72 micrograms per decilitre, abdominal pain, Hb 9.6 with stippling; he is hypertensive on two drugs. Plan the acute and occupational management.
+::: exercise Pack-years {level=1 check="30"}
+A man has smoked 30 cigarettes a day for 20 years. How many pack-years is this?
 ::: solution
-**Lead-poisoning-management ([[#def-toxins]], [[blood/anaemia]]): the-interpretation - blood-lead-as-recent-exposure-marker-with-bone-as-reservoir (the half-lives-by-compartment-and-the-ZPP-urinary-ALA-and-coproporphyrin-supporting-tests and the basophilic-stippling-sideroblastic-picture-on-blood-film-with-9.6-not-explained-by-lead-alone-check-iron-and-renal-and-alcohol) - [[renal/chronic-kidney-disease]]; the-acute-decision - chelation-indications-by-level-and-symptoms (the admission-lead-encephalopathy-emergency-with-BAL-plus-CaNa2EDTA-and-correct-calcium-before-edetate and the oral-succimer-for-moderate-levels and the-EDTA-mobilisation-test-now-discouraged) source removal as the real treatment - stop exposure now, and triage the other workers with a cluster screen - [[public-health/environmental-occupational]]; the-chronic-organ-tour - the-hypertension-nephropathy-gout-and-microcytic-anaemia-look and the cognitive and mood symptoms and the wrist-drop pattern on conduction studies - [[nervous-system/neuromuscular]], [[cardiovascular/hypertension]]; the-depletion-plan - bone-lead release in calcium deficiency, pregnancy, lactation, menopause and fracture immobilisation, with family exposure checks for take-home dust, hobby batteries and spice adulteration - [[musculoskeletal/bones-joints]], [[blood/haemoglobin-disorders]]; and the-regulatory-and-work - the-notifiable-occupational-disease-duty and the fitness-for-work-and-return-thresholds-by-jurisdiction and the exposure-control-review-with-worker-reps the handwashing, change-out-clothes and no-eating-in-plant basics that fail quietly and the-public-health-victory-lap - blood-lead-decline-from-leaded-fuel-and-paint bans quoted when someone calls lead a solved problem - [[public-health/prevention-promotion]], [[clinical-skills/communication]].**
+$30/20 = 1.5$ packs a day, $\times 20$ years $= 30$ pack-years.
 :::
 :::
 
-::: exercise Advise after a radiation incident {level=2}
-A radiography-room accident gives an interventional cardiologist a hand dose estimated at 3 Gy to the fingertips over years of procedures. Advise on deterministic risk, surveillance and system changes.
+::: exercise Deterministic or stochastic? {level=1}
+Classify each effect of radiation as deterministic or stochastic: (a) a cataract after repeated high-dose exposure of the eye; (b) leukaemia years after exposure; (c) hair loss after radiotherapy to the head; (d) skin erythema after a long interventional procedure.
 ::: solution
-**Chronic-hand-radiation-occupational-injury ([[#def-energy]], [[clinical-skills/medical-imaging]], [[medical-ethics-law/professionalism-regulation]]): the biology-by-dose - the recognised lens-cataract threshold lowering and the 0.5 Gy occupational lens limit, the skin sequence from erythema and epilation to chronic dermatitis, ulceration and osteonecrosis by cumulative dose, and the small stochastic increment with angiosarcoma and squamous cancer in chronically exposed fields - [[musculoskeletal/skin-cancer]]; the-surveillance - annual skin and nail examination of the fingers, lens screening when indicated, occupational-health review with dose records, early biopsy of skin changes, and the amputation-as-last-resort history of the early radiologists, told briefly and the dosimetry details - rings as hot spots, collar-versus-hand dose conventions, badge-under-versus-over-apron policy chaos, and extremity dosemeters that hospitals often lack; and the system-change - justification and optimisation review, pulsed fluoroscopy, collimation, distance, protective sleeves and backscatter shield positioning and the cumulative-screening-time-alerts-in-angio-suite-software and the dose-audit-culture-with-benchmark-values and the training-and-rotation-schedules-that-make-personal-dose-a-vital-sign not-a-shameful-number - the radiation-protection-officer-as-ally and the pregnant-worker-dose-limit-framework and the declaration-for-incident-reporting - [[clinical-skills/patient-safety]], [[obstetrics-gynaecology/pregnancy-complications]].**
+(a) Deterministic. (b) Stochastic. (c) Deterministic. (d) Deterministic.
 :::
 :::
 
-::: exercise Argue the low-dose controversy {level=3}
-A colleague states that cancer risks of diagnostic and environmental low-dose radiation are 'unknown and probably exaggerated'; a regulator states LNT-protects-everyone. Write a 400-word evidence-weighed middle position suitable for a radiology society journal.
+::: exercise BMI and threshold {level=2 check="round(108/1.80^2*10)/10"}
+A man weighs 108 kg and is 1.80 m tall. Calculate his BMI to one decimal place and classify it using the general adult thresholds.
 ::: solution
-**LNT-debate-position ([[#def-energy]], [[epidemiology-ebm/observational-studies]]): what-is-known - the LSS leukaemia and solid-cancer excess relative risks decaying by age at exposure and attained age and the deterministic-thresholds-for-organ-effects and the medical-exposure-causation-evidence the childhood-CT cohorts with their confounding-by-indication debates and the radiotherapy second-malignancy rates) - [[pathology/cancer-biology]], [[clinical-skills/medical-imaging]]; what-is-uncertain - the below-100-mSv risk in isolation - the power limits, dose-and-dose-rate effectiveness factors, the adaptive-response and bystander literature read as mechanism hypotheses, the high-LET relative biological effectiveness reconciliation, and the veteran and nuclear-worker cohorts with their survivor biases - [[public-health/environmental-occupational]]); and the-policy-reasoning - LNT as a conservative protection assumption, not a biological claim, balanced against avoidance harm - the CT not performed, the stroke missed, the screening skipped in feared pregnancy - with justification and optimisation as the working doctrine - [[clinical-skills/medical-imaging]]; the-middle-paragraph - accept LNT for protection while recording its uncertainty and funding better low-dose estimates, and reject both imaging-nihilism and dose-creep defensiveness, with audit and benchmark rates as the ethical practice and the communication rules - quote millisieverts with comparison context, keep exposure history and cumulative dose summaries in the record - with molecular dosimetry and gene-expression signals as the near-term research tiebreaker - [[public-health/health-systems-economics]], [[clinical-skills/records-handover]].**
+$108/1.80^2 = 108/3.24 = 33.3$ kg/m², which is obesity (30 or above).
+:::
+:::
+
+::: exercise Why zone 3? {level=2}
+Explain why paracetamol overdose damages the hepatocytes around the central veins first, and why a person with chronic heavy alcohol use and poor diet may be more susceptible.
+::: solution
+Zone 3 hepatocytes, around the central veins, have the highest concentration of the cytochrome P450 enzymes that convert paracetamol to NAPQI, and they receive the least oxygenated blood. When glutathione is exhausted, NAPQI binds to proteins there first. Chronic heavy alcohol use induces CYP2E1, so more NAPQI is formed, and poor diet reduces glutathione stores, so less is available to detoxify it. Both shift the balance towards toxicity.
+:::
+:::
+
+::: exercise Radiation in context {level=2 check="round(6.6/2.7*10)/10"}
+A CT of the chest delivers about 6.6 mSv. How many years of UK average background radiation (2.7 mSv per year) is this equivalent to? Round to one decimal place.
+::: solution
+$6.6/2.7 = 2.44\ldots$, so about 2.4 years of background radiation.
+:::
+:::
+
+::: exercise An old shipyard worker {level=3}
+A 74-year-old man who worked in a shipyard in the 1960s and 1970s, and smoked for 30 years until 1990, has breathlessness and a unilateral pleural effusion. CT shows nodular thickening of the pleura encasing the lung, and bilateral calcified pleural plaques. Discuss the likely diagnosis, the role of asbestos and smoking, and the significance of the latency.
+::: hint
+Separate the pleural diseases caused by asbestos from those in which smoking also matters.
+:::
+::: solution
+Shipbuilding involved heavy asbestos exposure. Calcified pleural plaques are a marker of past exposure and are usually harmless. Nodular, encasing pleural thickening with an effusion strongly suggests **malignant mesothelioma**, which needs tissue diagnosis (pleural biopsy with immunohistochemistry). Asbestos fibres, especially amphiboles, reach the pleura and persist, causing chronic inflammation, oxidative DNA damage and mutations in mesothelial cells. Mesothelioma is not caused by smoking. Smoking, however, multiplies the risk of **lung carcinoma** in asbestos-exposed people, so lung cancer is the other important diagnosis. The latency of 20 to 50 years explains why mesothelioma is still being diagnosed decades after exposure ended and the UK ban. Mesothelioma caused by occupational exposure has legal implications: the patient may be entitled to compensation, and in England and Wales a death from it must be referred to the coroner.
+:::
+:::
+
+::: exercise Starting to eat again {level=3}
+A 24-year-old woman with anorexia nervosa and a BMI of 13 kg/m² is admitted to hospital. On the third day of feeding she becomes breathless and confused, and her serum phosphate is 0.3 mmol/L (reference about 0.8 to 1.5). Explain the mechanism, and the principles that should have guided her feeding.
+::: solution
+This is **refeeding syndrome**. During starvation, total body phosphate, potassium and magnesium are depleted, although serum levels may be normal. When feeding begins, carbohydrate stimulates insulin, which drives glucose, phosphate, potassium and magnesium into cells for glycolysis and protein synthesis, so serum levels fall sharply. Phosphate is needed for ATP and for 2,3-bisphosphoglycerate; severe hypophosphataemia impairs the contraction of the heart and respiratory muscles and causes confusion, seizures and haemolysis. Thiamine demand also rises. The principles are to identify people at high risk (very low BMI, little intake for days, low electrolytes before feeding), start feeding cautiously and increase gradually, give thiamine and other vitamins before and during feeding, and monitor and replace phosphate, potassium and magnesium, following national guidance with specialist input ([[psychiatry/eating-personality-disorders]]).
 :::
 :::

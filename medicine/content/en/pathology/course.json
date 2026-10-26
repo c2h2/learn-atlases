@@ -6,11 +6,11 @@
   "level": 1,
   "order": 70,
   "tagline": "Cell injury, inflammation, repair, haemodynamic disorders and neoplasia",
-  "summary": "Pathology studies how disease alters cells and tissues. This course develops the general processes behind disease in every organ: cell injury and death, acute and chronic inflammation, healing and repair, oedema, thrombosis, embolism and shock, the biology and classification of cancer, environmental and nutritional disease, and the work of the pathologist.",
+  "summary": "Pathology studies how disease changes cells and tissues. This course covers the general processes that underlie disease in every organ: cell injury and death, acute and chronic inflammation, healing and repair, oedema, thrombosis, embolism and shock, the biology and classification of cancer, environmental and nutritional disease, and the work of the pathologist.",
   "overview": [
-    "Pathology is the bridge science: it explains what injury does to cells, how the body responds, how repair goes wrong, and what cancer is — and it supplies the diagnoses on which treatment depends. This course teaches general pathology as mechanism, then the diagnostic craft of the surgical pathologist and cytopathologist.",
-    "Cell injury starts with the reversibility boundary: ATP failure, membrane and mitochondrial damage, calcium influx and the point of no return, necrosis versus apoptosis, and the adaptive responses — hypertrophy, hyperplasia, metaplasia, dysplasia and their clinical meanings (Barrett's oesophagus, cervical intraepithelial neoplasia). Acute inflammation follows the vascular and cellular events of the response, its mediators and systemic effects, and why exudates and abscesses behave as they do; chronic inflammation covers macrophages and lymphocytes, granulomas and fibrosis, and the modern view of chronic inflammation in atherosclerosis, obesity and ageing. Haemodynamic disorders: oedema, hyperaemia and congestion, thrombosis, embolism and infarction, disseminated intravascular coagulation, shock and the pathology of fluid and electrolyte disturbance as the tissue counterpart.",
-    "Neoplasia is treated twice — cancer biology (definitions, nomenclature, grading and staging, carcinogenesis: oncogenes, tumour suppressors, DNA-repair genes, epigenetics; hallmarks; epidemiology and prevention; paraneoplastic syndromes), then cancer diagnosis: biopsy and cytology, histological grading, immunohistochemistry, molecular tests, screening and tumour markers and their pitfalls. An environmental and nutritional pathology chapter covers physical and chemical injury, toxic injury and radiation; the last chapter teaches how to read a histology or cytology report, the significance of margins and sentinel nodes, and what a multidisciplinary meeting decides with them. Robbins is the spine; every mechanism is tied to a diagnosis a reader will meet."
+    "Pathology links the basic sciences to clinical medicine. It explains what injury does to cells, how the body responds, how repair can go wrong and what cancer is, and it provides many of the diagnoses on which treatment depends. This course teaches general pathology as a set of mechanisms, each tied to diseases that a doctor will meet, and then the practical work of the histopathologist and cytopathologist.",
+    "The first four chapters cover the basic responses of tissues. Cell injury explains adaptation, the boundary between reversible and irreversible injury, and the differences between necrosis and apoptosis. Acute inflammation follows the vascular and cellular events, the chemical mediators and the systemic acute-phase response. Chronic inflammation and repair covers macrophages, lymphocytes and granulomas, regeneration, scar formation and fibrosis. Haemodynamic disorders covers oedema and the Starling forces, congestion, haemostasis and thrombosis, embolism, infarction, disseminated intravascular coagulation and shock.",
+    "The next two chapters deal with neoplasia. The biology of cancer explains oncogenes, tumour suppressor genes, DNA repair, the hallmarks of cancer, invasion and metastasis, and the chemical, physical and infectious causes of cancer. Diagnosing and classifying cancer covers benign and malignant tumours, nomenclature, grading and TNM staging, prognostic and predictive factors, tumour markers, screening and paraneoplastic syndromes. A chapter on environmental and nutritional disease covers tobacco, alcohol, drug injury, pollutants, radiation, undernutrition and obesity. The final chapter follows a specimen from biopsy to report, explains immunohistochemistry and molecular testing, shows how to read a cancer report, and describes the autopsy and the medical examiner system. Robbins and Cotran's textbook is the main reference throughout, with UK guidance where clinical practice is discussed."
   ],
   "prerequisites": [
     "cell-biochemistry",
@@ -18,20 +18,21 @@
     "genetics"
   ],
   "outcomes": [
-    "Describe the cellular adaptations to stress — hypertrophy, hyperplasia, atrophy, metaplasia, dysplasia — with examples and the clinical risk each carries.",
-    "Explain the mechanisms of reversible and irreversible cell injury (ATP failure, mitochondrial damage, calcium influx, membrane and cytoskeletal injury, oxidative stress) and distinguish necrosis from apoptosis in mechanism, morphology and consequences.",
-    "Describe the vascular and cellular events of acute inflammation, its mediators and systemic features, the outcomes (resolution, abscess, organisation, chronic inflammation), and the causes and clinical meanings of the acute-phase proteins and leucocyte changes.",
-    "Explain the structure and causes of granulomatous inflammation, the macrophage–lymphocyte axis of chronic inflammation, and the role of chronic inflammation in disease from tuberculosis and sarcoidosis to atherosclerosis.",
-    "Trace the haemodynamic disorders — oedema, congestion, thrombosis with Virchow's triad, embolism and infarction, DIC and the forms of shock — from mechanism to clinical syndrome.",
-    "Define neoplasia and its nomenclature, contrast differentiation, grading and staging, and explain the multistep molecular basis of carcinogenesis: oncogenes, tumour suppressors, apoptotic and repair genes, and environmental carcinogens.",
-    "Summarise the hallmarks of cancer and how each is therapeutically targeted, and interpret tumour markers, screening programmes and paraneoplastic syndromes with their pitfalls.",
-    "Follow a specimen from biopsy to report: fixation, processing, histology, special stains, immunohistochemistry and molecular pathology, and read a report for grade, stage, margin and predictive-marker information."
+    "Describe the cellular adaptations to stress (hypertrophy, hyperplasia, atrophy and metaplasia) and explain how dysplasia links them to cancer, with clinical examples.",
+    "Explain the mechanisms of reversible and irreversible cell injury, and distinguish necrosis from apoptosis by mechanism, appearance and consequence.",
+    "Describe the vascular and cellular events of acute inflammation, its main mediators and systemic effects, and interpret exudates, CRP and the white cell count.",
+    "Explain the cells and causes of chronic inflammation, the structure and differential diagnosis of granulomas, and the stages and complications of tissue repair.",
+    "Apply the Starling principle and Virchow's triad to explain oedema, thrombosis, embolism and infarction, and classify shock by mechanism.",
+    "Explain the multistep genetic basis of cancer, the roles of oncogenes, tumour suppressor genes and DNA repair, and how the hallmarks of cancer guide targeted treatment.",
+    "Name and classify tumours, distinguish grade from stage, and interpret tumour markers, screening results and paraneoplastic syndromes with their limitations.",
+    "Describe the pathology of tobacco, alcohol, drug toxicity, pollutants, radiation, undernutrition and obesity.",
+    "Follow a specimen from biopsy to report, and read a pathology report for diagnosis, grade, stage, margins, lymph nodes and predictive markers."
   ],
   "chapters": [
     {
       "slug": "cell-injury",
       "title": "Cell injury and death",
-      "summary": "Causes of cell injury, cellular adaptation, reversible injury, necrosis and apoptosis.",
+      "summary": "Causes of cell injury, cellular adaptations, reversible and irreversible injury, necrosis, apoptosis, accumulations and calcification.",
       "requires": [
         "cell-biochemistry/signalling-cell-cycle"
       ]
@@ -39,7 +40,7 @@
     {
       "slug": "acute-inflammation",
       "title": "Acute inflammation",
-      "summary": "Vascular and cellular events, chemical mediators and the outcomes of acute inflammation.",
+      "summary": "Vascular and cellular events, chemical mediators, morphological patterns, systemic effects and outcomes of acute inflammation.",
       "requires": [
         "pathology/cell-injury",
         "immunology/innate-immunity"
@@ -48,7 +49,7 @@
     {
       "slug": "chronic-inflammation-repair",
       "title": "Chronic inflammation and repair",
-      "summary": "Chronic inflammation, granulomas, regeneration, fibrosis and wound healing.",
+      "summary": "Chronic inflammation, granulomas, regeneration, scar formation, wound healing and fibrosis.",
       "requires": [
         "pathology/acute-inflammation"
       ]
@@ -56,7 +57,7 @@
     {
       "slug": "haemodynamics",
       "title": "Haemodynamic disorders",
-      "summary": "Oedema, haemorrhage, thrombosis, embolism, infarction and shock.",
+      "summary": "Oedema, congestion, haemorrhage, thrombosis, embolism, infarction, DIC and shock.",
       "requires": [
         "pathology/cell-injury"
       ]
@@ -64,7 +65,7 @@
     {
       "slug": "cancer-biology",
       "title": "The biology of cancer",
-      "summary": "The hallmarks of cancer, carcinogenesis, invasion and metastasis.",
+      "summary": "Oncogenes, tumour suppressors, the hallmarks of cancer, invasion and metastasis, and the causes of cancer.",
       "requires": [
         "pathology/cell-injury",
         "genetics/cancer-genetics"
@@ -73,7 +74,7 @@
     {
       "slug": "cancer-diagnosis",
       "title": "Diagnosing and classifying cancer",
-      "summary": "Benign and malignant tumours, grading and staging, and tumour markers.",
+      "summary": "Benign and malignant tumours, nomenclature, grading and staging, tumour markers, screening and paraneoplastic syndromes.",
       "requires": [
         "pathology/cancer-biology"
       ]
@@ -81,7 +82,7 @@
     {
       "slug": "environmental-pathology",
       "title": "Environmental and nutritional disease",
-      "summary": "Tobacco, alcohol, drugs, radiation, obesity and malnutrition.",
+      "summary": "Tobacco, alcohol, drug injury, pollutants, physical agents, radiation, undernutrition and obesity.",
       "requires": [
         "pathology/cell-injury"
       ]
@@ -89,7 +90,7 @@
     {
       "slug": "diagnostic-pathology",
       "title": "The work of the pathologist",
-      "summary": "Biopsies and cytology, stains and immunohistochemistry, molecular pathology and the autopsy.",
+      "summary": "From specimen to report: fixation, cytology, stains, immunohistochemistry, molecular pathology, the MDT and the autopsy.",
       "requires": [
         "pathology/cancer-diagnosis"
       ]
@@ -99,42 +100,39 @@
     {
       "year": 1761,
       "title": "The seats and causes of diseases",
-      "detail": "Giambattista Morgagni, professor at Padua, publishes fifty cases in which he matched living symptoms to autopsy findings, relocating disease from the whole body to specific organs — the seat-of-disease era that physical diagnosis still maps.",
+      "detail": "Giovanni Battista Morgagni, professor of anatomy at Padua, publishes De Sedibus et Causis Morborum, correlating the symptoms of about 700 patients with the findings at their autopsies. Disease is located in particular organs, the foundation of clinicopathological correlation.",
       "people": [
-        "Giambattista Morgagni"
+        "Giovanni Battista Morgagni"
       ]
     },
     {
-      "year": 1838,
-      "title": "Tissue chemistry begins",
-      "detail": "Matthias Schleiden and Theodor Schwann argue that all organisms are built of cells; within twenty years Rudolf Virchow's cellular pathology (1858) makes disease the behaviour of cells, and 'all cells from all cells' replaces spontaneous-generation thinking in medicine.",
+      "year": 1858,
+      "title": "Cellular pathology",
+      "detail": "Rudolf Virchow publishes Die Cellularpathologie, arguing that disease is the disturbed life of cells and that every cell arises from another cell. The cell becomes the unit of pathology.",
       "people": [
-        "Matthias Schleiden",
-        "Theodor Schwann",
         "Rudolf Virchow"
       ]
     },
     {
       "year": 1867,
-      "title": "Seeing inflammation live",
-      "detail": "Julius Cohnheim observes leucocytes emigrating through mesenteric vessels in living tissue, proving that pus cells leave the blood — settling the old dispute about pus's origin and founding the cellular theory of inflammation that Metchnikoff then made into a defence system.",
+      "title": "Leucocytes leave the blood",
+      "detail": "Julius Cohnheim watches the living frog mesentery under the microscope and sees leucocytes adhere to the walls of small veins and pass through them, showing that pus cells come from the blood.",
       "people": [
         "Julius Cohnheim"
       ]
     },
     {
-      "year": 1876,
-      "title": "Cancer cells travel in the blood",
-      "detail": "Julius Cohnheim and Joseph Sandberg inject bone-marrow debris into the veins of rabbits and find embolus-like nodules in the lungs — the first experimental model of metastasis, making the circulation the road cancer takes and framing the seed-and-soil question that still drives tumour-biology research.",
+      "year": 1882,
+      "title": "Phagocytes",
+      "detail": "Élie Metchnikoff observes mobile cells in starfish larvae gathering around a thorn and proposes that inflammation brings phagocytic cells to defend the body. He shares the 1908 Nobel Prize with Paul Ehrlich.",
       "people": [
-        "Julius Cohnheim",
-        "Joseph Sandberg"
+        "Élie Metchnikoff"
       ]
     },
     {
-      "year": 1910,
-      "title": "Carcinoma of the rabbit",
-      "detail": "Johannes Fibiger claims a nematode causes stomach cancer, winning a Nobel Prize his successors quietly retract; but the episode drives experimental carcinogenesis — and by 1915 Yamagiwa and Ichikawa are producing skin cancer with tar, proving chemical carcinogenesis (with Chadwick's coal-tar work, and later the azo-dye liver cancers).",
+      "year": 1915,
+      "title": "Cancer from coal tar",
+      "detail": "Katsusaburo Yamagiwa and Koichi Ichikawa produce skin cancers by repeatedly painting coal tar on rabbits' ears, the first experimental proof of chemical carcinogenesis.",
       "people": [
         "Katsusaburo Yamagiwa",
         "Koichi Ichikawa"
@@ -142,8 +140,8 @@
     },
     {
       "year": 1941,
-      "title": "Antibodies that see inside cells",
-      "detail": "Albert Coons attaches fluorescent dyes to antibodies, making proteins visible in tissue sections; immunohistochemistry becomes pathology's second eye — cytokeratins and lymphoid markers that decide a tumour's lineage when haematoxylin alone cannot.",
+      "title": "Antibodies in tissue sections",
+      "detail": "Albert Coons and colleagues label antibodies with a fluorescent dye and use them to locate antigens in tissue, the origin of immunohistochemistry, now used daily to determine the lineage of tumours and to measure predictive markers.",
       "people": [
         "Albert Coons"
       ]
@@ -151,15 +149,25 @@
     {
       "year": 1971,
       "title": "Two hits",
-      "detail": "Alfred Knudson, studying retinoblastoma incidence, infers that the tumour needs two hits at one locus — a recessive cellular mechanism inherited dominantly — the logic that leads to the cloning of RB1 (1986) and the entire era of tumour-suppressor genes.",
+      "detail": "Alfred Knudson analyses the age at onset of retinoblastoma and proposes that the tumour requires two mutational events, one of which may be inherited. The idea explains tumour suppressor genes, and RB1 is cloned in 1986.",
       "people": [
         "Alfred Knudson"
       ]
     },
     {
+      "year": 1972,
+      "title": "Apoptosis named",
+      "detail": "John Kerr, Andrew Wyllie and Alastair Currie describe a controlled form of cell death with distinctive morphology and call it apoptosis.",
+      "people": [
+        "John Kerr",
+        "Andrew Wyllie",
+        "Alastair Currie"
+      ]
+    },
+    {
       "year": 2000,
       "title": "The hallmarks of cancer",
-      "detail": "Douglas Hanahan and Robert Weinberg reduce a thousand cancer facts to six capabilities — sustaining proliferation, evading growth suppressors, resisting death, enabling replicative immortality, inducing angiogenesis, invading and metastasising — and the organising language of modern cancer biology and its targeted therapies.",
+      "detail": "Douglas Hanahan and Robert Weinberg summarise cancer biology as six acquired capabilities, extended in 2011 and 2022. The framework organises research and the development of targeted treatments.",
       "people": [
         "Douglas Hanahan",
         "Robert Weinberg"
@@ -168,25 +176,46 @@
   ],
   "references": [
     {
-      "title": "The Pathology Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the cell and the process.",
-      "slug": "ref1"
+      "title": "Robbins and Cotran Pathologic Basis of Disease",
+      "authors": "Kumar V, Abbas AK, Aster JC (eds)",
+      "year": 2021,
+      "note": "10th edition. The standard reference for general and systemic pathology, and the main source for the mechanisms in this course.",
+      "slug": "robbins"
     },
     {
-      "title": "The Pathology Guide",
-      "authors": "Textbook",
+      "title": "Underwood's Pathology: A Clinical Approach",
+      "authors": "Cross SS (ed)",
       "year": 2019,
-      "note": "A rigorous treatment of the cell and the system.",
-      "slug": "ref2"
+      "note": "7th edition. A UK textbook that links general pathology closely to clinical presentation.",
+      "slug": "underwood"
     },
     {
-      "title": "Clinical Pathology",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the process and the practice.",
-      "slug": "ref3"
+      "title": "Muir's Textbook of Pathology",
+      "authors": "Herrington CS (ed)",
+      "year": 2020,
+      "note": "16th edition. A concise UK textbook of general and systematic pathology.",
+      "slug": "muir"
+    },
+    {
+      "title": "TNM Classification of Malignant Tumours",
+      "authors": "Union for International Cancer Control (UICC)",
+      "year": 2025,
+      "note": "9th edition, used for cancer staging in the UK from 1 January 2026.",
+      "slug": "tnm"
+    },
+    {
+      "title": "WHO Classification of Tumours",
+      "authors": "WHO Classification of Tumours Editorial Board",
+      "year": 2019,
+      "note": "5th edition series (IARC), issued by organ system from 2019; the international standard for naming and classifying tumours.",
+      "slug": "who-tumours"
+    },
+    {
+      "title": "Cancer datasets and tissue pathways",
+      "authors": "Royal College of Pathologists",
+      "year": 2025,
+      "note": "The UK standards for what a cancer pathology report must contain; updated continually, so check the current version of each dataset.",
+      "slug": "rcpath"
     }
   ],
   "next": [

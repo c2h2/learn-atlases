@@ -1,141 +1,323 @@
-Diagnosing cancer is a chain of decisions about samples, names and stages: **from the moment a lesion is sampled - cytology, core, excision, liquid - through the pathologist's classification with its immunohistochemistry and molecular add-ons, to staging, prognostic biomarkers and the multidisciplinary meeting where all of it becomes a plan.** The pathologist is a colleague whose report you must be able to interrogate: what was sampled, what the margins mean, which marker answers which treatment question, and what the confidence intervals on a predictive test really say.
+A person who has a lump needs answers to a series of questions. Is it a tumour at all? If so, is it benign or malignant? What kind of tissue does it come from? How abnormal do its cells look, and how far has it spread? Will it respond to a particular treatment? This chapter explains the concepts used to answer these questions: the features that separate benign from malignant tumours, how tumours are named, how they are graded and staged, how prognostic and predictive factors guide treatment, how tumour markers and screening tests should and should not be used, and how cancers produce effects far from the tumour itself.
 
-This chapter covers sampling and cytology, histological classification and grading, staging systems, predictive and prognostic biomarkers, molecular diagnostics, and the multidisciplinary use of it all.
+The laboratory techniques by which a pathologist obtains this information, including biopsy, immunohistochemistry and molecular testing, are covered in [[pathology/diagnostic-pathology]]. The biology of why tumours behave as they do is in [[pathology/cancer-biology]].
 
-## Getting the sample
+## Benign and malignant tumours
 
-::: definition Sampling, cytology and adequacy {#def-sampling}
-**The sampling-decisions-before-the-diagnosis (fine-needle-aspiration-versus-core-versus-excision-versus-incisional-versus-punch-versus-brushings-and-washings with the tissue-architecture-versus-cell-yield trade - the FNA's inability to grade or type some tumours reliably and the core-biopsy's histology-and-immunohistochemistry-and-receptor-testing-advantage in breast and the molecular-testing-tissue-sufficiency argument that made cores the default where safe - [[clinical-skills/physical-examination]]); the-route-that-is-itself-diagnosis (the never-trans-scrotal approach to a testicular mass and the needle-tract-planning-in-sarcomas-so-the-limb-surgeon-removes-what-the-biopsy-disturbed and the avoid-biopsying-a-pheochromocytoma-without-blockade and the don't-percutaneously-biopsy-a-potentially-resectable-cholangiocarcinoma-or-hydatid-lessons - [[surgery/vascular-urological-surgery]], [[endocrine/adrenal]], [[gastrointestinal/pancreas-biliary]]); the radiological-partner (image-guided-versus-palp-guided-yield and the marker-placement-after-breast-core-so-surgery-can-find-what-was-found and the vacuum-assisted-microcalcification-sampling and the fusion-targeted-versus-systematic-prostate-sampling-biology - [[clinical-skills/medical-imaging]]); the cytology-screen (the Bethesda-system-for-thyroid and urine and the Papanicolaou-heritage-now-HPV-primed and the rapid-on-site-evaluation-changing-adequacy-rates-and-turnaround - [[obstetrics-gynaecology/gynaecological-cancer]], [[endocrine/thyroid]]); the liquid-biopsy-tier (circulating-tumour-DNA-for-driver-detection-and-resistance-monitoring-and-MRD-with-its-tumour-fraction-and-clone-haematopoiesis-caveats and the methylation-based-tissue-of-origin-arrays and the CTC-enumeration-niche-uses - [[pathology/cancer-biology]]); and the specimen-chain-of-custody-realities (the ischaemia-time-fixation-buffer-ratio-and-overfixation-decalcification-effects-on-antigen-DNA-and-PD-L1-staining and the tissue-sparing-request-sets that decide whether molecular tests are possible later - the pre-analytical-phase-that-causes-more-error-than-the-microscope - [[clinical-skills/patient-safety]], [[microbiology/laboratory-diagnosis]] for the logistics parallels).**
-:::
-
-## Naming and measuring the tumour
-
-::: definition Classification, grade and stage {#def-classify}
-**The classification-ladder (tissue-of-origin-then-behaviour - the carcinoma-sarcoma-lymphoma-leukaemia-melanoma-germ-cell-division-first and the WHO-classification-updates-with-molecular-entities (the CNS5-required-molecular-integration-in-brain-tumour-diagnosis and the-round-cell-sarcomas-now-defined-by-fusions) and the ICD-O-morphology-codes-and-behaviour-codes-3-vs-2/1 that drive cancer-registry-data - [[pathology/diagnostic-pathology]]); grade-versus-stage-concept (grade-the-appearance-and-differentiation - the Gleason-grade-group-system-for-prostate-with-its-2014-ISUP-reform-and-the-Gleason-score-arithmetic and Nottingham-grade-for-breast-with-modifiers and the tumour-budding-and-TUMOUR-INVADING-EDGE-features-emerging and stage-the-extent-anatomy-first - the TNM-primary-size-nodes-metastasis-with-8th-edition-site-specific-changes and the clinical-versus-pathological-versus-post-neoadjuvant-(yc)-and-recurrence-(r)-prefixes-that-clinicians-must-get-right-because-trials-are-built-on-them - [[surgery/vascular-urological-surgery]] for prostate; the staging-workup-evidence-hierarchies (CT-chest-abdomen-pelvis-versus-PET-CT-in-selected-tumours-with-its-false-positives-in-infection-inflammation-and-its-avoidance-in-low-risk-prostate-and-breast-and-its-roles-in-lymphoma-response-adaptation-the-Deauville-criteria and MRI-for-local-staging-in-rectal-cancer-the-thin-mesorectal-fascia-plane-and-circumferential-resection-margin-prediction and the sentinel-node-biopsy-philosophy-mapping-nodal-territories-while-staging-less-morbidly and the CSF-and-bone-marrow-and-testicular-markers-and-CEA-PSA-CA125-CgA-special-cases - the tumour-markers-as-monitoring-not-screening-doctrine-exceptions-included) - [[clinical-skills/medical-imaging]], [[blood/lymphoma-myeloma]], [[respiratory/lung-cancer-pleura]]; and the cancer-registry-and-audit-endpoint (the registration-stage-versus-clinical-stage-versus-pathology-stage-confusions-in-data and the survival-statistics-lead-and-length-time-biases-when-stage-shifts-without-mortality-change - [[epidemiology-ebm/measuring-disease]], [[public-health/screening]]).**
+::: definition Benign and malignant neoplasms {#def-benign-malignant}
+A **benign** neoplasm remains localised at its site of origin, does not invade surrounding tissue and does not spread to distant sites. It can usually be removed surgically, and the patient survives. A **malignant** neoplasm invades and destroys adjacent tissue and can spread to distant sites (**metastasis**). The distinction is based on four features: differentiation, rate of growth, local invasion and metastasis.
 :::
 
-::: definition Predictive biomarkers and molecular diagnostics {#def-biomarkers}
-**The prognostic-versus-predictive-distinction (the-outcome-regardless-versus-benefit-from-specific-therapy definitions with the ER-as-both-paradigm and the Ki-67-proliferation-marker-trying-to-be-both and the multi-gene-assays-Oncotype-DX-and-MammaPrint-and-Prostate-classifiers with their recurrence-scores and chemotherapy-benefit-prediction-and-the-TAILORx-and-RxPONNA-trial-heritage-where-the-question-moved-from-prognosis-to-omission - [[surgery/breast-endocrine-surgery]], [[pharmacology/patient-variation]]); the-therapeutic-prediction-panels the HER2-low-ADC-era and the oestrogen-and-progesterone-receptors-with-percentages-and-positivity-thresholds-and-lab-variation-internal-quality-control (the ASCO-CAP-guidelines-as-laboratory-medicine) and RAS-and-RAF-status-in-colorectal-cancer-and-the-left-sided-anti-EGFR-logic and the ALK-ROS1-RET-NTRK-MET-EGFR-HER2-KRAS-G12C-in-lung with the sequential-versus-panel-testing-economics and the MSI-MMR-and-TMB-and-PD-L1-immunotherapy-companion-logic with the antibody-clones-and-scoring-cut-points-as-companion-diagnostic-law - [[pathology/cancer-biology]], [[immunology/vaccines-immunotherapy]]); the-molecular-technologies-as-clinical-choices (IHC-versus-FISH-versus-break-apart-versus-PCR-versus-targeted-NGS-panels-versus-RNA-fusion-sequencing-versus-methylation-arrays-versus-WGS-with-the-sensitivity-turnaround-tissue-cost-comparisons and the NGS-report-reading-vocabulary - variant-allele-frequency-and-clone-haematopoiesis-confounds-and-classification-1-4-pathogenicity-tiers-and-the-PIK3CA-in-blood-versus-tumour-trap and the germline-versus-somatic-in-tumour-reporting-ethical-dilemmas-of-incidental-heritability - [[genetics/genetic-testing]], [[genetics/cancer-genetics]]); and the minimal-residual-disease-frontier (the flow-versus-PCR-versus-NGS-MRD-in-leukaemia-with-prognostic-certainty-and-therapy-escalation-trials-and-the-ctDNA-MRD-in-colorectal-where-the-CIRCULATE-and-alternating-trial-waves-asked-whether-adjuvant-therapy-can-be-steered-by-blood and the tumour-informed-assay-design-methylation-versus-mutation-panels and the anxiety-communication-of-a-tentative-positive - [[blood/leukaemia]], [[gastrointestinal/gi-bleeding-cancer]], [[clinical-skills/communication]]).**
+| Feature | Benign | Malignant |
+|---|---|---|
+| Differentiation | Well differentiated; resembles the tissue of origin | Ranges from well differentiated to undifferentiated (anaplastic) |
+| Rate of growth | Usually slow | Usually faster; may be erratic |
+| Local invasion | Expansile, often with a fibrous capsule; does not invade | Infiltrative, invades and destroys surrounding tissue |
+| Metastasis | Absent | Frequent; more likely with large, poorly differentiated tumours |
+
+**Differentiation** describes how closely tumour cells resemble the normal cells from which they arise, in structure and function. A well-differentiated adenocarcinoma of the colon still forms glands and secretes mucin. A poorly differentiated one forms sheets of cells with few or no glands. **Anaplasia** means a total lack of differentiation, and it is a hallmark of malignancy. Anaplastic cells show:
+
+- **Pleomorphism**: variation in the size and shape of cells and nuclei;
+- **Hyperchromasia**: dark-staining nuclei with coarse chromatin;
+- A high ratio of nucleus to cytoplasm, and large nucleoli;
+- Numerous and **abnormal mitoses**, for example tripolar mitotic figures;
+- Loss of **polarity**, so that the cells lose their normal orientation;
+- Sometimes tumour giant cells.
+
+The best single criterion of malignancy is **invasion**, and the only absolute one is **metastasis**. A few tumours do not fit neatly. A basal cell carcinoma of the skin invades and destroys locally but almost never metastasises. A benign meningioma can kill by compressing the brain, and a benign tumour of an endocrine gland can kill by its hormone secretion, as a phaeochromocytoma can through catecholamines.
+
+**Carcinoma in situ** is a malignant epithelial neoplasm that has not yet invaded through the basement membrane. Its cells look malignant but cannot metastasise, because there are no lymphatics or blood vessels in the epithelium. Removing it completely cures it. Once tumour crosses the basement membrane, it is invasive.
+
+## Naming tumours
+
+::: definition Nomenclature of tumours {#def-nomenclature}
+Tumours are named from their cell or tissue of origin and their behaviour.
+
+- **Benign** tumours usually add the suffix *-oma* to the cell type: an *adenoma* (benign epithelial tumour forming glands), a *papilloma* (benign epithelial tumour with finger-like projections), a *lipoma* (fat), a *leiomyoma* (smooth muscle), a *chondroma* (cartilage).
+- Malignant tumours of **epithelium** are **carcinomas**: *adenocarcinoma* (glandular), *squamous cell carcinoma*, *urothelial carcinoma*.
+- Malignant tumours of **mesenchymal** tissue (connective tissue, muscle, bone, fat) are **sarcomas**: *liposarcoma*, *leiomyosarcoma*, *osteosarcoma*.
+- Malignant tumours of blood-forming cells are **leukaemias** and **lymphomas**.
 :::
 
-::: example The breast results meeting {#ex-breast-mdt}
-A 52-year-old has a 22mm invasive carcinoma of no special type, grade 2, ER 95 percent strong, PR 20 percent, HER2 1+ by IHC with negative ISH, Ki-67 25 percent, three of twelve nodes involved on axillary sampling, no distant disease on CT.
-::: solution
-**Reading-a-breast-report-as-a-system ([[#def-classify]], [[#def-biomarkers]], [[surgery/breast-endocrine-surgery]]): the-anatomical-and-histological-frame - the invasive-carcinoma-of-no-special-type-classification-and-grade-with-the-DCIS-extent-and-lymphovascular-invasion-and-tumour-infiltrating-lymphocytes-as-added-prognostic-vocabulary and the pT2-pN1-stage-parsing-with-the-neoadjuvant-versus-adjuvant-context-deciding-what-p-versus-c-means (the ypT-ypN-logic-if-she-had-had-pre-operative-therapy-and-the-residual-cancer-burden-semi-quantitative-system-in-triple-negative-and-HER2-disease) - [[pathology/cancer-biology]]; the-biomarker-therapy-map - ER-strong-PR-low-with-the-endocrine-therapy-backbone-and-the-ovarian-suppression-age-question-and-AI-versus-tamoxifen-and-the-extended-endocrine-duration-bone-health-plan and HER2-negative-by-current-SCOPE-criteria-with-the HER2-low trastuzumab-deruxtecan future line, mentioned without overpromising now and Ki-67-at-the-border-of-high-with-its-analyst-variability-honesty-and-the-Oncotype-utility-questions-in-node-positive-postmenopausal-disease-after-RxPONNA (the genomic-assay-access-and-reimbursement-reality) - [[endocrine/reproductive-endocrinology]], [[pharmacology/patient-variation]]; the-regional-decisions - the-axillary-stage-history-in-one-sentence (the sentinel-node-first-paradigm-and-the-ACOSOG-Z0011-impact-on-completion-dissection-practice-and-the-radiotherapy-fields-debate) and the-breast-conservation-versus-mastectomy-and-the-margin-definition-no-india-ink-versus-cavity-shaving-practice-variations - [[pathology/diagnostic-pathology]]; and the-multidisciplinary-output - the-sequence-debate-adjuvant-versus-neoadjuvant-chemotherapy-when-the-biology-says-systemic-therapy-anyway-and-the-CDK4-6-inhibitor-in-high-risk-node-positive-adjuvant-abemaciclib-era and the-fertility-and-menopause-and-bone-and-cardiac-and-lymphoedema-and-psychosocial-pathways-and-the-clinical-trial-eligibility-question-before-standard-paths-close - drop; use [[geriatrics-palliative/palliative-care]] [[clinical-skills/communication]], [[public-health/health-systems-economics]].**
-:::
-:::
+Several names break these rules, and they must be learnt:
 
-::: example The inconclusive molecular result {#ex-vus}
-Lung adenocarcinoma NGS reports an EGFR exon 20 insertion at 2 percent variant allele frequency in tumour with a matching 2 percent variant in the blood tube's white-cell control flagged; PD-L1 is 60 percent; the oncologist wants to start targeted therapy.
-::: solution
-**Molecular-report-critical-appraisal ([[#def-biomarkers]], [[pathology/cancer-biology]], [[clinical-skills/laboratory-tests]]): the-first-suspicion - a-low-VAF-variant-equal-in-tumour-and-blood-is-CHIP-until-proven-otherwise (clonal haematopoiesis of uncertain potential in older smokers driving PIK3CA and other variants, solved by matched white-cell sequencing, and the germline explanation for roughly 50-percent variant allele frequencies - [[blood/haematopoiesis]], [[genetics/genetic-testing]]) and the-exon-20-insertion-biology-point (an EGFR variant classically insensitive to first-generation TKIs, served instead by amivantamab and newer agents, so acting on a doubtful call misallocates therapy and time); the assay physics - the panel's limit of detection, tumour cellularity and versioned thresholds, and acting on the report's own caveats (the repeat-biopsy versus liquid-retest versus RNA-sequencing decision tree, with turnaround, cost and tissue-sparing honesty) and the-PD-L1-60-percent-context (the antibody-clone and platform companion-diagnostic specificity, the tumour-proportion versus comprehensive-positive-score definitions, and the PD-L1-high-but-EGFR-mutant caution where targeted therapy comes first) - [[immunology/vaccines-immunotherapy]], [[respiratory/lung-cancer-pleura]]; the-governance-of-uncertainty - the molecular tumour board as the right venue for the CHIP-versus-driver-versus-germline debate (the wet-lab confirmatory options and-the variant classification tiers and clinical-trial matching with uncertain benefit) and communicating uncertainty to patients, including expectation management when a targeted drug is not ready - [[clinical-skills/communication]]; and the-system-fix - the-pre-analytical-and-reporting-error-audit-culture (the wrong-block-and-sample-swap-never-events-and-the-reflex-testing-algorithms-and-the-variant-curation-documentation-and-the-secondary-review-sign-out-for-therapeutically-consequential-results - the-same-four-eyes-logic-as-blood-safety - [[clinical-skills/patient-safety]], [[microbiology/laboratory-diagnosis]].**
-:::
-:::
+- **Lymphoma**, **melanoma**, **mesothelioma** and **seminoma** are all malignant, despite the *-oma* ending. *Hepatoma* is an older term for hepatocellular carcinoma.
+- A **teratoma** contains tissues derived from more than one germ layer, arising from germ cells. A mature cystic teratoma of the ovary (dermoid cyst) is benign; teratomas of the adult testis are malignant.
+- A **mixed tumour** contains more than one cell type from a single germ layer, such as the pleomorphic adenoma of the salivary gland.
+- A **hamartoma** is a disorganised mass of tissues native to the site, such as cartilage and bronchial epithelium in the lung. A **choristoma** is normal tissue in the wrong place, such as a nodule of pancreatic tissue in the stomach wall. Neither behaves like a malignant tumour.
+- Tumours of embryonic tissues in children are called **blastomas**: neuroblastoma, nephroblastoma (Wilms tumour), retinoblastoma. These are malignant.
 
-::: example The node that is not metastatic carcinoma {#ex-echo}
-A 64-year-old's axillary node core shows cohesive atypical epithelial cells; history includes a poorly described 'skin lesion' removed years ago; the panel shows CK7 negative, CK20 negative, S100 positive, SOX10 positive, GATA3 negative, ER negative.
-::: solution
-**Immunohistochemistry-as-problem-solving ([[#def-classify]], [[#def-biomarkers]], [[musculoskeletal/skin-cancer]]): the-reading - keratin-negative-SOX10-S100-positive-cohesive-epithelioid-malignancy-in-a-node means melanoma until exhaustively excluded, with clear-cell sarcoma, PEComa, metaplastic carcinoma and anaplastic large cell lymphoma as the SOX10-lit exceptions and the classic trap of cohesive epithelioid melanoma mimicking carcinoma, with no pigment in amelanotic cases and the GATA3-negative, ER-negative result closing the breast door the primary seemed to have come in through, with the panel-logic teaching point that markers rule in and out only in combination with history - [[pathology/diagnostic-pathology]]; the origin-hunt - the regressed primary and the skin-scar question, with full cutaneous, scalp, retinal and anogenital examination under good light and dermoscopy, and the unknown-primary algorithm including mucosal sites and the PET-CT role and limits - [[clinical-skills/physical-examination]], [[clinical-skills/medical-imaging]]; the-ancillary-decisions - BRAF V600, KIT and NTRK testing with treatment implications, the LDH staging note, and the sentinel-node versus therapeutic-dissection nomenclature and trial heritage (the MSLT-I-and-II-era numbers and observation versus completion dissection versus adjuvant therapy now) - [[musculoskeletal/skin-cancer]], [[pharmacology/adverse-reactions]]; and the governance of the near-miss - the-clinical-information-on-the-request-form-changed-the-outcome (the keratin-first anchoring that caused a week on the wrong pathway, and the request form as a patient-safety instrument and the sign-out correction communicated to clinician and patient, not just filed as a report amendment, with apology where appropriate) and the multidisciplinary re-referral-with-staging-completed and the immunotherapy-era-prognosis-conversation the PD-1, CTLA-4 and LAG-3 combinations for metastatic melanoma and the targeted-first versus immunotherapy-first sequencing question - [[immunology/vaccines-immunotherapy]], [[clinical-skills/patient-safety]], [[clinical-skills/communication]].**
-:::
-:::
-
-::: example The lymphoma that needs architecture {#ex-lymph-node}
-A 30-year-old has cervical lymphadenopathy for 10 weeks; an outside FNA reported 'atypical large cells, lymphoma cannot be excluded'; the team considers starting R-CHOP on the cytology.
-::: solution
-**Tissue-is-a-diagnosis-lesson ([[#def-sampling]], [[#def-classify]], [[blood/lymphoma-myeloma]]): why-cytology-fails-here - Hodgkin-lymphoma-diagnosis-requires-architecture-and-background the rare Reed-Sternberg cells in an inflammatory sea, the lymphocyte-rich differentials, and the nodular-lymphocyte-predominant versus T-cell/histiocyte-rich large B-cell lymphoma separation that demands excision, a full panel and clonality studies and the reactive mimics that kill if mislabelled - EBV mononucleosis, progressive transformation of germinal centres, toxoplasma, Castleman disease, ALPS in the young - plus FNA atypia that was sampled sclerosis; the-sequencing-of-decisions - do not treat on this report; book excisional biopsy within days and alert the bench for flow cytometry and fresh tissue the FNA remaining useful for recurrence and carcinoma confirmation - adequacy is question-specific - and core needle as second-best with grading-accuracy limits in follicular lymphoma and the bone-marrow-versus-PET-staging-order the PET-versus-marrow-staging question and the Deauville response criteria - [[clinical-skills/medical-imaging]]; the-treatment-starts-with-the-name - ABVD versus brentuximab-combination versus R-CHOP versus watch-and-wait for grade 1-2 follicular lymphoma versus involved-site radiotherapy for nodular-lymphocyte-predominant disease, with sperm banking before alkylators, tumour-lysis risk management and hepatitis B screening before CD20 therapy - [[microbiology/viruses]], [[immunology/vaccines-immunotherapy]]; and the cross-specialty-courtesy - how to escalate a wrong direction respectfully, with the outside slides at tumour board, the learner teaching moment about adequacy versus diagnosis, and the re-biopsy consent conversation - [[clinical-skills/communication]], [[clinical-skills/patient-safety]].**
-:::
-:::
+The authoritative international classification is the World Health Organization Classification of Tumours, issued as a series of books by organ system, now in its fifth edition.
 
 ::: quiz
-A tumour's grade refers to:
-- [x] How abnormal its cells look and how far they differentiate
-- [ ] How large the primary tumour is
-- [ ] Whether nodes contain metastases
-- [ ] The presence of distant spread
+Which of these tumours is benign?
+- [ ] Seminoma
+- [ ] Melanoma
+- [x] Leiomyoma
+- [ ] Lymphoma
 ::: solution
-**Grade is the histological appearance and differentiation of the tumour; stage is its anatomical extent (T, N, M). Both matter, and some tumours - lymphomas, small cell lung cancer - outrank grading entirely once stage and biology are known ([[#def-classify]]).**
+A leiomyoma is a benign tumour of smooth muscle, the common "fibroid" of the uterus. Seminoma, melanoma and lymphoma are all malignant despite their *-oma* endings.
 :::
 :::
 
-::: widget plot
-f: 90*(1-(1-exp(-0.9*x))**3); 90*(1-(1-exp(-0.9*x))**2); 90*(1-(1-exp(-0.9*x))**1.2); 90*(1-(1-exp(-0.6*x))**1.2)*0.7
-x: 0.01, 5
-y: 0, 100
-labels: \text{stage group (I to IV)}\ ,\ %\text{5-year relative survival (illustrative)};\ \text{tumour with steep stage gradient};\ \text{moderate gradient};\ \text{poor-gradient solid tumour};\ \text{stage-independent biology (e.g. small cell)}
-caption: Stage is powerful but not everything ([[#def-classify]]): illustrative survival curves by stage group show why stage drives treatment intensity, while the flat curve reminds you that biology - small-cell histology, adverse molecular features, poor performance status - can flatten the stage gradient, which is exactly what biomarkers add ([[pathology/cancer-biology]], [[epidemiology-ebm/measuring-disease]]).
+## Grading and staging
+
+Two questions determine much of a cancer's prognosis and treatment: how abnormal do its cells look, and how far has it spread?
+
+::: definition Grade and stage {#def-grade-stage}
+- **Grade** is an assessment of how aggressive a tumour appears under the microscope, based on its degree of differentiation and, in many systems, its mitotic activity. Grades are usually numbered 1 (well differentiated, low grade) to 3 (poorly differentiated, high grade).
+- **Stage** is an assessment of the anatomical extent of a tumour: the size or depth of the primary tumour, the spread to regional lymph nodes and the presence of distant metastases.
+:::
+
+::: theorem Stage usually predicts outcome better than grade {#thm-stage}
+For most solid tumours, stage is a stronger predictor of survival than grade, because it measures what has already happened (spread), while grade measures a tendency. Both are used together, with other factors, to choose treatment.
+:::
+
+**Grading systems** differ by organ. Two important examples:
+
+- **Breast carcinoma (Nottingham grade).** Three features are each scored 1 to 3: tubule formation, nuclear pleomorphism and mitotic count. The total (3 to 9) gives grade 1 (3 to 5), grade 2 (6 or 7) or grade 3 (8 or 9).
+- **Prostate carcinoma (Gleason score and ISUP grade group).** The pathologist assigns a Gleason pattern of 3, 4 or 5 to the most common and the highest remaining patterns and adds them. Scores are then placed in five **grade groups**: grade group 1 is Gleason 3+3=6, grade group 2 is 3+4=7, grade group 3 is 4+3=7, grade group 4 is a score of 8, and grade group 5 is a score of 9 or 10.
+
+**Staging** uses the **TNM system** of the Union for International Cancer Control (UICC), whose ninth edition took effect in the UK from 1 January 2026.
+
+- **T** describes the primary tumour: its size or depth of invasion (T1 to T4), with Tis for carcinoma in situ.
+- **N** describes regional lymph nodes: N0 means none involved; N1 to N3 describe increasing involvement.
+- **M** describes distant metastasis: M0 (none) or M1 (present).
+
+Prefixes record how the stage was found: **c** for clinical (examination and imaging), **p** for pathological (after examination of the resected specimen), **y** after neoadjuvant treatment and **r** for recurrence. The T, N and M categories are combined into **stage groups** I to IV, which are used for prognosis and treatment decisions. The categories for each organ are specific and change between editions, so they are always looked up rather than remembered.
+
+::: example Staging a colon cancer {#ex-tnm}
+A 67-year-old man has a right hemicolectomy for a carcinoma of the caecum. The pathology report states: moderately differentiated adenocarcinoma invading through the muscularis propria into the pericolic fat; 2 of 23 lymph nodes contain metastatic carcinoma; no distant metastases on CT. Express this as TNM and a stage group, and explain what it means for treatment.
+::: solution
+1. **T**: invasion through the muscularis propria into the pericolic tissues is **pT3** for colorectal carcinoma. (T1 is invasion of the submucosa, T2 of the muscularis propria, T4 of the visceral peritoneum or other organs.)
+2. **N**: metastasis in 2 regional lymph nodes is **pN1** (N1 covers 1 to 3 involved nodes; N2 is four or more).
+3. **M**: no distant metastases is **cM0**, because it was assessed on imaging.
+4. Any tumour with involved regional nodes and no distant metastasis is **stage III** colon cancer.
+5. Node involvement shows that the cancer has spread beyond the bowel, so adjuvant chemotherapy is usually considered after recovery from surgery, as the multidisciplinary team decides with the patient. The **grade** (moderately differentiated) is reported but influences management less than the stage. The examination of at least 12 lymph nodes is recommended because finding fewer risks understaging ([[gastrointestinal/gi-bleeding-cancer]]).
+:::
+:::
+
+::: example A Nottingham grade {#ex-grade}
+A breast carcinoma shows few tubules (score 3), moderate nuclear pleomorphism (score 2) and a high mitotic count (score 3). What is its Nottingham grade, and does grade alone decide treatment?
+::: solution
+1. Total score $= 3 + 2 + 3 = 8$.
+2. A total of 8 or 9 is **grade 3**, a poorly differentiated, high-grade carcinoma.
+3. Grade is one prognostic factor among several. Treatment also depends on size, lymph node status, and the **predictive** markers oestrogen receptor, progesterone receptor and HER2. Tools combine these factors to estimate benefit from treatment ([[surgery/breast-endocrine-surgery]]).
+:::
+:::
+
+## Prognostic and predictive factors
+
+::: definition Prognostic and predictive factors {#def-predictive}
+- A **prognostic factor** gives information about the likely outcome of the disease regardless of treatment. Examples: stage, grade, lymphovascular invasion.
+- A **predictive factor** gives information about the likely benefit from a specific treatment. Examples: oestrogen receptor expression predicts benefit from endocrine therapy in breast cancer; *HER2* amplification predicts benefit from HER2-targeted drugs; a *KRAS* or *NRAS* mutation in colorectal cancer predicts **no** benefit from antibodies against EGFR.
+:::
+
+Some factors are both. *HER2* amplification once predicted a poor prognosis, but it now also predicts benefit from targeted treatment, which has greatly improved outcomes for people with HER2-positive breast cancer.
+
+## Tumour markers
+
+::: definition Tumour marker {#def-marker}
+A **tumour marker** is a substance produced by a tumour, or by the body in response to it, that can be measured in blood, urine or tissue. Serum tumour markers are useful mainly for **monitoring** treatment and detecting recurrence of a known cancer, and for supporting a diagnosis in specific settings. With few exceptions, they lack the sensitivity and specificity needed for screening or for diagnosis on their own.
+:::
+
+| Marker | Main tumour | Other causes of a raised level |
+|---|---|---|
+| PSA (prostate-specific antigen) | Prostate carcinoma | Benign prostatic hyperplasia, prostatitis, urinary infection, recent ejaculation or vigorous exercise, urinary catheter |
+| CA-125 | Epithelial ovarian carcinoma | Menstruation, pregnancy, endometriosis, pelvic inflammatory disease, any peritoneal irritation, liver disease, heart failure |
+| AFP (alpha-fetoprotein) | Hepatocellular carcinoma; yolk sac tumour | Pregnancy, chronic hepatitis and cirrhosis |
+| hCG (human chorionic gonadotrophin) | Choriocarcinoma; gestational trophoblastic disease; some germ cell tumours | Pregnancy |
+| CEA (carcinoembryonic antigen) | Colorectal carcinoma (monitoring) | Smoking, inflammatory bowel disease, liver disease |
+| CA 19-9 | Pancreatic and biliary carcinoma | Obstructive jaundice, pancreatitis; not made by people who lack the Lewis blood group antigen |
+
+Markers have their greatest value when the tumour is known to make them. Testicular germ cell tumours are an example: AFP, hCG and LDH are measured at diagnosis, contribute to the staging (the "S" category) and are used to detect relapse. In the UK, NICE recommends measuring CA-125 in women with persistent symptoms that suggest ovarian cancer, such as bloating, early satiety and pelvic pain; a level of 35 IU/mL or above leads to an ultrasound scan of the abdomen and pelvis.
+
+::: example A raised CA-125 {#ex-ca125}
+A 34-year-old woman with known endometriosis has pelvic pain. Her GP measures CA-125, which is 88 IU/mL (reference below 35). She is very anxious that she has ovarian cancer. Interpret the result.
+::: solution
+1. CA-125 is a glycoprotein expressed by tissues derived from the coelomic epithelium, including the peritoneum, pleura and endometrium.
+2. **Endometriosis** commonly raises CA-125, as do menstruation and other peritoneal irritation. A raised value in a premenopausal woman with endometriosis is much more likely to reflect that than cancer.
+3. Epithelial ovarian cancer is uncommon at 34 and much more common after the menopause, so the prior probability is low.
+4. The result still needs appropriate follow-up: an ultrasound scan, with further assessment if the ovaries look abnormal. Scoring systems that combine CA-125, ultrasound features and menopausal status (such as the risk of malignancy index) are used in gynaecology.
+5. This example shows why CA-125 is not used to screen the general population: false positives are common, and in early-stage ovarian cancer CA-125 is often normal ([[obstetrics-gynaecology/gynaecological-cancer]]).
+:::
+:::
+
+::: warning A normal marker does not exclude cancer, and a raised one does not prove it
+Serum tumour markers are often normal in early cancer, when finding it matters most; about half of early-stage ovarian cancers have a normal CA-125, and some aggressive prostate cancers have a modest PSA. Markers are also raised by benign conditions. Sending a "tumour marker panel" for a person with vague symptoms, without a specific question, generates false reassurance and false alarm, and leads to further unnecessary tests. A marker should be requested to answer a defined question, usually in a person with a known or strongly suspected tumour of a type that makes it.
+:::
+
+## Screening
+
+**Screening** is the testing of people without symptoms to find disease, or a precursor of disease, early enough to improve the outcome. It differs from diagnosis: most people screened are healthy, and the harms of screening fall on them.
+
+::: theorem The principles of screening {#thm-screening}
+A screening programme is justified only if the condition is an important health problem with a recognisable early stage; there is an acceptable, accurate test; earlier treatment improves the outcome; and the overall benefits outweigh the harms, at a reasonable cost. These principles were set out by Wilson and Jungner for the WHO in 1968 and are applied in the UK by the UK National Screening Committee.
+:::
+
+Three biases make screening look more effective than it is, which is why only randomised trials with mortality as the outcome can show real benefit.
+
+- **Lead-time bias.** Screening detects cancer earlier, so survival measured from diagnosis is longer even if death occurs at the same time.
+- **Length bias.** Slow-growing tumours spend longer in the detectable pre-symptomatic phase, so screening preferentially finds them. They have a better prognosis anyway.
+- **Overdiagnosis.** Screening finds some cancers that would never have caused symptoms or death in the person's lifetime. Treating them causes harm without benefit. It is a particular problem in prostate, breast and thyroid cancer.
+
+::: example Lead time {#ex-leadtime}
+A man's colorectal cancer would have caused symptoms at age 66 and, without treatment of any benefit, he would die at 70. Screening finds the same cancer at 62, but suppose earlier treatment does not change the course and he still dies at 70. Calculate survival from diagnosis in each case and explain the error.
+::: solution
+1. Without screening: diagnosed at 66, died at 70, survival $= 4$ years.
+2. With screening: diagnosed at 62, died at 70, survival $= 8$ years.
+3. Survival from diagnosis has doubled, yet he has not lived a day longer. The extra four years are **lead time**: he simply knew about his cancer for longer.
+4. This is why the benefit of screening must be judged by comparing **mortality** (deaths per population) between screened and unscreened groups in randomised trials, not by comparing survival from diagnosis. Bowel screening has passed this test: trials of faecal occult blood testing reduced colorectal cancer mortality ([[public-health/screening]]).
+:::
+:::
+
+As of 2026, the cancer screening programmes in England are:
+
+| Programme | Who is invited | Test |
+|---|---|---|
+| Bowel | Ages 50 to 74, every 2 years | Faecal immunochemical test (FIT) at home; colonoscopy if positive |
+| Breast | Women aged 50 to 71, every 3 years | Mammography |
+| Cervical | Ages 25 to 64 | Primary HPV testing, with cytology if HPV is found; every 5 years after a negative HPV result (since July 2025 for ages 25 to 49 as well as 50 to 64) |
+| Lung | Ages 55 to 74 with a history of smoking, being introduced nationally | Risk assessment, then low-dose CT for those at high risk |
+
+There is no population screening for prostate cancer. In May 2026 the UK National Screening Committee recommended against screening the general population, and recommended targeted screening only for men aged 45 to 61 who carry a *BRCA2* variant and have a relevant family history; its implementation depends on government decisions. The PSA test can be requested by men who wish to have it after an informed discussion of benefits and harms. The Scottish, Welsh and Northern Irish programmes differ in some details.
+
+The value of a positive screening result depends on how common the disease is in the people tested, as Bayes' theorem shows.
+
+::: widget bayes
+mode: test
+prevalence: 0.008
+sensitivity: 0.87
+specificity: 0.9
+caption: An illustrative screening test with sensitivity 87% and specificity 90%, used where 8 in every 1,000 people have the cancer. Most positive results are false positives, because the healthy majority produce many of them. Increase the prevalence, as in a symptomatic clinic, and the positive predictive value rises. These are teaching values, not the performance of any particular programme.
+:::
+
+::: example What does a positive result mean? {#ex-ppv}
+A screening test has a sensitivity of 87% and a specificity of 90%. It is used in a population in which 8 per 1,000 people have the cancer. Out of 10,000 people screened, how many true and false positives are there, and what is the positive predictive value?
+::: solution
+1. People with cancer: $10{,}000 \times 0.008 = 80$. True positives: $80 \times 0.87 = 69.6 \approx 70$.
+2. People without cancer: $9{,}920$. False positives: $9{,}920 \times 0.10 = 992$.
+3. Positive predictive value $= \dfrac{69.6}{69.6 + 992} \approx 0.066$, about 6.6%.
+4. Roughly 15 out of every 16 people with a positive result do not have cancer. This is why positive screening tests lead to a further diagnostic test (colonoscopy, biopsy) rather than to treatment, and why the information given to people invited for screening must explain false positives. The calculation is developed in [[epidemiology-ebm/diagnostic-tests]].
+:::
+:::
+
+## Paraneoplastic syndromes
+
+::: definition Paraneoplastic syndrome {#def-paraneoplastic}
+A **paraneoplastic syndrome** is a set of symptoms and signs in a person with cancer that cannot be explained by the local or metastatic spread of the tumour, or by the hormones normally produced by the tissue of origin. It is caused by substances secreted by the tumour (hormones, cytokines) or by an immune response against antigens shared by the tumour and normal tissue.
+:::
+
+Paraneoplastic syndromes matter because they may be the first sign of an occult cancer, they can be severe or fatal in themselves, and they can be used to monitor the tumour.
+
+| Syndrome | Mechanism | Typical tumours |
+|---|---|---|
+| Hypercalcaemia | Parathyroid hormone-related protein (PTHrP) | Squamous cell carcinomas (lung, head and neck), renal, breast |
+| Cushing syndrome | Ectopic ACTH | Small cell lung carcinoma, neuroendocrine tumours |
+| Hyponatraemia (SIADH) | Ectopic antidiuretic hormone | Small cell lung carcinoma |
+| Polycythaemia | Erythropoietin | Renal cell carcinoma, hepatocellular carcinoma, cerebellar haemangioblastoma |
+| Lambert–Eaton myasthenic syndrome | Antibodies against voltage-gated calcium channels | Small cell lung carcinoma |
+| Cerebellar degeneration | Antibodies against Purkinje cell antigens (for example anti-Yo) | Ovarian and breast carcinoma |
+| Myasthenia gravis | Antibodies against the acetylcholine receptor | Thymoma |
+| Migratory thrombophlebitis (Trousseau sign) | Procoagulants such as tissue factor and mucin | Pancreatic and other adenocarcinomas |
+| Hypertrophic osteoarthropathy and clubbing | Uncertain | Lung carcinoma |
+| Acanthosis nigricans, dermatomyositis | Uncertain; immune | Gastric and other carcinomas |
+
+Hypercalcaemia in cancer is not always paraneoplastic: it may also result from bone destruction by metastases, which is common in breast cancer and myeloma.
+
+::: example A smoker with confusion {#ex-paraneoplastic}
+A 66-year-old man who has smoked for 45 years has become confused and constipated over two weeks. His serum calcium (adjusted) is 3.4 mmol/L, his parathyroid hormone is suppressed and a chest radiograph shows a mass at the right hilum. A bone scan shows no metastases. Explain the hypercalcaemia.
+::: solution
+1. High calcium with a **suppressed** parathyroid hormone rules out primary hyperparathyroidism, which would cause a high or inappropriately normal PTH.
+2. With no bone metastases, local bone destruction is unlikely to be the cause.
+3. The most likely explanation is a squamous cell carcinoma of the lung secreting **parathyroid hormone-related protein** (PTHrP). PTHrP acts on the PTH receptor in bone and kidney, increasing bone resorption and renal calcium reabsorption, but it is not detected by the PTH assay.
+4. This is **humoral hypercalcaemia of malignancy**, a paraneoplastic syndrome. It needs urgent treatment, following local guidance, and the tumour needs diagnosis and staging ([[respiratory/lung-cancer-pleura]], [[endocrine/bone-calcium]]).
+:::
+:::
+
+## The burden of cancer
+
+Cancer is a leading cause of death worldwide. The International Agency for Research on Cancer (IARC) estimated about 20 million new cases and 9.7 million deaths in 2022. In the UK, the commonest cancers are breast, prostate, lung and bowel, and lung cancer causes the most deaths. Age is the strongest risk factor, because mutations accumulate over time. Incidence and outcome are also shaped by deprivation, smoking, obesity, alcohol and access to diagnosis, so cancer statistics show large inequalities between social groups ([[public-health/non-communicable-disease]]).
+
+::: history
+In 1932 the British pathologist Cuthbert Dukes published a staging system for rectal cancer based on the depth of invasion and node involvement; Dukes' stages were used for decades and showed that the extent of spread predicts survival. Between 1943 and 1952 the French surgeon Pierre Denoix developed the TNM system, later adopted by the UICC. George Papanicolaou and Herbert Traut showed in 1943 that cervical cancer and its precursors could be detected in vaginal smears, the foundation of cervical cytology screening. Donald Gleason described his grading system for prostate cancer in 1966, and in 1968 James Wilson and Gunnar Jungner published their principles of screening for the World Health Organization.
 :::
 
 ## Where this leads
 
-The biology behind the markers in [[pathology/cancer-biology]]; the hereditary syndromes and testing pathways in [[genetics/cancer-genetics]] and [[genetics/genetic-testing]]; the therapy toxicities and monitoring in [[pharmacology/adverse-reactions]]; the treatment modalities and their indications in [[surgery/perioperative-care]] and the organ chapters; screening and overdiagnosis in [[public-health/screening]].
-
-::: history
-**Diagnosis preceded treatment by centuries of skill: the tactile-era - the-18th-and-19th-century-palpation-schools-of-breast-lumps-and-the Cooper's anatomy era of breast clinics - and the clinical staging tables that filled pre-imaging textbooks - [[clinical-skills/history-taking]]; microscopy's arrival - Johannes Müller classifying tumours by microscope in the 1830s, the cellular-pathology revolution of Virchow, the competing Cohnheim embryonic-rest theory, and the classification era that made carcinoma and sarcoma usable categories; the cytology-dream - Papanicolaou and Herbert Traut's 1928 vaginal-smear paper, the decades of trial scepticism, and the screening-trial-proofs-of-the-1950s-60s that founded modern cytology services - [[public-health/screening]]; the stain-and-antibody-era - the Coons fluorescein-antibody invention of 1941 and the unlabelled-antibody bridge and peroxidase-anti-peroxidase era of the 1960s and 70s and the Köhler-Milstein hybridoma technique of 1975 whose monoclonal antibody explosion built the modern IHC panel (the ER, PR and HER2 antibody clones becoming therapy gates, and the PD-L1 clone-and-platform companion-diagnostic law) - [[immunology/adaptive-responses]], [[immunology/vaccines-immunotherapy]]; the staging-scientists - the Pierre-Denoix-tumour-extent-classification-of-1944-and-Olivereau-and-Blocq's-TNM-tables-in-1950s-Paris and the international standardisation drive and the cancer-registration-era that made survival statistics comparable (and the stage-migration-bias-lesson-from-CT-era-prostate-cancer) - [[epidemiology-ebm/measuring-disease]]; and the molecular-diagnostics-era - the BRCA1 positional cloning of 1994, FISH and array comparative genomic hybridisation, then NGS and the first tissue-agnostic MSI and NTRK approvals, with liquid-biopsy and MRD trials now running - [[genetics/cancer-genetics]], [[pathology/cancer-biology]].**
-:::
+These concepts are applied organ by organ: breast cancer in [[surgery/breast-endocrine-surgery]], colorectal cancer in [[gastrointestinal/gi-bleeding-cancer]], lung cancer in [[respiratory/lung-cancer-pleura]] and gynaecological cancers in [[obstetrics-gynaecology/gynaecological-cancer]]. How a pathologist produces the grade, stage and predictive markers from a specimen is described in [[pathology/diagnostic-pathology]], and the principles of screening programmes in [[public-health/screening]].
 
 ::: summary
-- The sample decides the diagnosis: choose aspiration versus core versus excision for the question asked, respect the routes and refusals that are themselves lessons, and protect tissue for the tests of tomorrow.
-- Classification asks lineage and behaviour; grade asks differentiation; stage asks anatomical extent - and the TNM prefixes (c, p, yp, r) tell you which patient timeline the numbers belong to.
-- Biomarkers divide into prognostic (what will happen anyway) and predictive (what will respond); modern assays increasingly answer the omission question - who can safely avoid chemotherapy.
-- Molecular reports require physics literacy: limits of detection, tumour content, clone haematopoiesis and germline confounds, and variant classification before therapeutic action.
-- Stage gradients save lives but biology can flatten them; the multidisciplinary team exists to weigh anatomy, histology, biomarkers and patient context into a single plan.
-- Every diagnostic chain has failure modes - mislabelling, mix-ups, inadequate fixation, premature liquid-biopsy enthusiasm - and quality systems, not cleverer microscopes, prevent most harm.
-:::
-
-::: exercise Choose markers for the mystery primary {level=1}
-A node contains metastatic carcinoma, adenocarcinoma pattern. Give the discriminating panels for lung versus breast versus gastrointestinal versus prostate versus thyroid origins.
-::: solution
-**Carcinoma-of-unknown-primary-panels ([[#def-classify]], [[#def-biomarkers]], [[pathology/diagnostic-pathology]]): the first tier - CK7 and CK20 pairing with TTF1 and Napsin A for lung, GATA3 and mammaglobin for breast (with the urothelial and salivary GATA3 overlap caveat), CDX2 and SATB2 for intestine, NKX3.1 and PSA for prostate, TTF1 shared with thyroid plus PAX8 and thyroglobulin (the TTF1-both-ways teaching point), and the renal-cell PAX8 with CA9 pattern; the second tier - the CK5/6, p63 and p40 squamous set and the synaptophysin, chromogranin and CD56 neuroendocrine set, with small cell versus carcinoid versus Merkel, TTF1 shared again, and the Merkel cell polyomavirus stain site correlation needs imaging and markers, not immunology alone, with the unknown-primary algorithm favouring lung and upper gut for adenocarcinoma, the PET-CT yield, and tissue-of-origin arrays read by validation status - [[clinical-skills/medical-imaging]], [[respiratory/lung-cancer-pleura]]; the-treatment-consequences - the carboplatin-paclitaxel versus FOLFOX versus endocrine versus PSMA-era decisions anchored in the most likely primary, and the platinum-sensitive clinical phenotypes (the women-with-adenocarcinoma-and-pax8-and-women-with-breast-phenotype-treat-the-phenotype trials-heritage) and the PD-L1-and-MSI-and-NTRK-and-TMB-agnostic-testing-that-sometimes-finds-the-answer; and the-honest-limit - the-15-30-percent-stay-unknown-primary the prognosis conversation, the empirical-versus-array-versus-trial discussion, and the dignity of not labelling people by their unknown primary - [[clinical-skills/communication]].**
-:::
-:::
-
-::: exercise Judge a screening programme from its numbers {level=2}
-Prostate cancer screening with PSA in your region: 10-year mortality 15 percent lower in invited men in one trial, no difference in another; overdiagnosis estimated at 20-50 percent. Advise a health ministry.
-::: solution
-**Screening-appraisal ([[#def-classify]], [[public-health/screening]], [[epidemiology-ebm/observational-studies]]): the-trial-divergence-explained - the-ERSPC-versus-PLCO-reconciliation the control-arm contamination by PSA testing in PLCO that diluted the comparison, the adherence and crossover readings, and the longer follow-up where the ERSPC benefit grew - [[epidemiology-ebm/randomised-trials]]; the-overdiagnosis-arithmetic - lead-time-versus-length-time-versus-genuine-overdiagnosis-defined the pool of detectable indolent cancer, the 20-versus-50-percent range from different definitions, and 10-year versus lifetime framing and the absolute-numbers-per-1000-screened-with-the-number-needed-to-screen-and-to-harm-quotations-that-each-side-chose the informed-choice pamphlet evidence versus the political simplicity of either ban or rollout - [[epidemiology-ebm/measuring-disease]]; the-programme-design-that-shrinks-harm - PSA thresholds, density and velocity refinements, and the MRI-first versus biopsy-first pathways with biopsy avoidance and clinically-significant-cancer detection, plus active surveillance as the real overdiagnosis antidote and the-risk-adapted-initiation-by-age-family-history-and-ancestry the higher incidence and mortality in men of African and Caribbean ancestry, risk-stratified trial designs and equity of uptake - [[genetics/common-disease-genetics]], [[public-health/determinants-inequalities]]; and the-advice-template - shared-decision-making-at-50-55-with-written-value-based-choices and diagnostic pathway investment before screening expansion - the countries that scaled PSA without MRI and histology capacity teach this and the-registry-and-audit-requirements-and-the-review-date with the Cochrane-versus-trialists interpretation debate named openly - [[clinical-skills/communication]], [[public-health/health-systems-economics]].**
-:::
-:::
-
-::: exercise Run a molecular tumour board {level=2}
-A glioblastoma report integrates IDH-wildtype, H3-wildtype, EGFR-amplified, TERT-mutant, MGMT-methylated tumour in a 62-year-old. Walk the neuro-oncology board through what each line changes.
-::: solution
-**CNS5-integrated-diagnosis ([[#def-classify]], [[#def-biomarkers]], [[nervous-system/neuroinflammation]]: the-naming-itself-is-prognosis - IDH-wildtype-with-TERT-mutation-or-EGFR-amplification-or-combined-chromosome-7-gain-10-loss-defines-glioblastoma-even-without-histological-grade-IV-features the molecular criteria explaining why a lower-grade-appearing tumour is called and counselled as glioblastoma - [[genetics/cancer-genetics]]; the-treatment-lines - MGMT-promoter-methylation-predicting-temozolomide-benefit-especially-with-radiotherapy and the age, performance status and methylation interaction deciding hypofractionated versus standard regimens versus tumour-treating-fields addition and the clinical-trial-eligibility-EGFR-and-other-arms-with-blood-brain-barrier-realism - [[pharmacology/absorption-distribution]]; the-differential-the-report-settles - IDH-mutant-astrocytoma-versus-oligodendroglioma-CODElete-versus-ependymoma-versus-primary-CNS-lymphoma-versus-metastasis-versus-radiation-necrosis-versus-subacute-infarct the perfusion, spectroscopy and biopsy decisions, with the steroid-lymphoma-lysis hazard before biopsy) - [[clinical-skills/medical-imaging]]; and the-biological-frontier-for-the-board - tumour-heterogeneity-and-intratumoural-subclones-limiting-targeted-therapy-and-the-CSF-liquid-biopsy-trials the emerging CSF liquid-biopsy assays - [[pathology/cancer-biology]]; and the-communication-and-goals - the-prognosis-conversation-with-numbers-and-uncertainty the median survival explained to a family, early palliative care, and the driving and licence reporting duties - [[medical-ethics-law/professionalism-regulation]] - [[geriatrics-palliative/end-of-life-care]].**
-:::
-:::
-
-::: exercise Build a pre-analytical error reduction plan {level=3}
-Your laboratory reports near-misses: mislabelled specimens, delayed fixation losing receptor signal, and a PD-L1 request on a wrong-block. Design the plan covering people, process and technology, with measurement.
-::: solution
-**Pre-analytical-safety-design ([[#def-sampling]], [[clinical-skills/patient-safety]], [[microbiology/laboratory-diagnosis]]): the-error-anatomy - the-specimen-label-at-bedside-single-point-of-failure the two-identifier rule versus ward reality, wrong-patient collects and wrong-blocks, the fixation-ischaemia clocks that nobody owns, and cold-ischaemia protocols for urological and lymphoma fresh tissue - [[surgery/perioperative-care]]; the-defences - barcode-and-electronic-order-capture-with-match-the-brick-to-the-form-dual-verification RFID cassettes and grossing-station checks and the-fixation-timer-and-photographed-specimen-bag-practice-and-standardised-buffer-volumes 10 percent neutral buffered formalin with the 24-72 hour window for HER2 reliability and order-set logic so PD-L1 is requested with the core, not retrospectively from exhausted paraffin and the referrer-identification-reconciliation-before-release a two-signature release for therapeutically consequential results and the critical-values-direct-line-phone-culture for unexpected malignancy on benign-appearing samples - [[pathology/cancer-biology]]; the-technology-with-eyes-open - voice recognition and synoptic structured reporting to reduce omissions, specimen-tracking dashboards, AI mismatch alerts comparing current versus prior diagnoses, the block-slide-patient triple lock, and the rule that specimens are explained, never relabelled and the human-factors - no-blame reporting with visible fixes, the workload and interruption research on sign-out errors, and theatre and ward orientation on fixation basics because the first hour belongs to them; and the measurement - near-miss reporting rate as a health marker, not a naughty list, with fixation-time audits, mislabelling rates quoted carefully from college reports, turnaround and clinician-satisfaction pairs, and plain-English result explanations that catch confusion - [[clinical-skills/records-handover]], [[public-health/health-systems-economics]].**
-:::
+- Benign tumours are well differentiated, slow-growing, expansile and do not metastasise; malignant tumours vary in differentiation, invade and metastasise. Invasion is the best criterion and metastasis the definitive one.
+- Anaplasia shows as pleomorphism, hyperchromasia, high nuclear to cytoplasmic ratio, abnormal mitoses and loss of polarity. Carcinoma in situ has not crossed the basement membrane.
+- Benign tumours are named with *-oma*; malignant epithelial tumours are carcinomas and mesenchymal ones sarcomas. Lymphoma, melanoma, mesothelioma and seminoma are malignant.
+- Grade describes microscopic aggressiveness (Nottingham grade, Gleason/ISUP grade group); stage describes anatomical extent (TNM, UICC ninth edition from 2026 in the UK). Stage usually predicts outcome better.
+- Prognostic factors predict outcome; predictive factors predict benefit from a specific treatment (ER, HER2, *RAS*).
+- Tumour markers (PSA, CA-125, AFP, hCG, CEA, CA 19-9) are for monitoring and specific diagnostic questions, not for general screening.
+- Screening is judged by mortality in randomised trials because of lead-time bias, length bias and overdiagnosis. The positive predictive value of a screening test is low when prevalence is low.
+- Paraneoplastic syndromes arise from tumour products or cross-reacting immunity: PTHrP hypercalcaemia, ectopic ACTH and ADH, Lambert–Eaton syndrome and others.
 :::
 
 ## Exercises
 
-::: exercise Choose the test {level=1}
-Pick and justify the optimal sampling strategy: suspected breast cancer 12mm; suspected thyroid nodule 15mm with suspicious nodes; suspected lymphoma with cervical nodes; suspected rectal cancer; suspected ovarian mass in a 60-year-old.
+::: exercise Name the tumour {level=1}
+Name each tumour: (a) a benign tumour of glandular epithelium in the colon; (b) a malignant tumour of fat; (c) a malignant tumour of glandular epithelium in the stomach; (d) a benign tumour of smooth muscle in the uterus; (e) a malignant tumour of bone.
 ::: solution
-**Sampling-strategy-medicine ([[#def-sampling]]): breast - triple-assessment-with-image-guided-core-biopsy-over-FNA (histology-for-grade-and-receptors-and-architectural-detail and marker-placement-for-non-palpable-lesions - [[surgery/breast-endocrine-surgery]]); thyroid - ultrasound-guided-FNA-with-Bethesda-reporting-with-molecular-testing-of-indeterminate-categories-and-the-node-FNA-with-thyroglobulin-washout-for-metastatic-nodes (the-avoid-routine-core-when-cytology-suffices-and-surgery-for-Bethesda-VI-logic) - [[endocrine/thyroid]]; lymphoma - excisional-or-large-core-with-flow-cytometry-and-IHC-and-molecular (the-FNA-insufficient-because-architecture-drives-classification-and-treatment-and-the-steroid-before-biopsy-hormone-hazard-that-obscures-diagnosis) - [[blood/lymphoma-myeloma]]; rectal - colonoscopic-biopsy-plus-pelvic-MRI-for-local-stage (the-mesorectal-fascia-and-depth-and-node-appearance-for-neoadjuvant-decisions - [[gastrointestinal/gi-bleeding-cancer]], [[clinical-skills/medical-imaging]]); and ovarian-mass-at-60 - the Risk-of-Malignancy-Index-and-radiology-report-and-tumour-markers-algorithmic-referral (the spillage-upstages-and-the-primary-debulking-centre-survival-lesson) - [[obstetrics-gynaecology/gynaecological-cancer]].**
+(a) Adenoma. (b) Liposarcoma. (c) Adenocarcinoma. (d) Leiomyoma. (e) Osteosarcoma.
 :::
 :::
 
-::: exercise Parse a TNM {level=2}
-Give stage and clinical meaning: cT2N0M0 rectal cancer with threatened circumferential margin on MRI; pT3pN1bM0 colon; cT2aN0M0 prostate; cT3N2M1a NSCLC; cT1bN0M0 gastric.
+::: exercise A Nottingham score {level=1 check="6"}
+A breast carcinoma has tubule score 2, nuclear pleomorphism score 2 and mitotic score 2. What is the total Nottingham score? (State the grade in your answer.)
 ::: solution
-**TNM-reading-for-treatment ([[#def-classify]]): cT2N0-CRM-threatened-rectal - the-circumferential-resection-margin-prediction-that-drives-neoadjuvant-chemoradiotherapy-or-short-course-radiotherapy-before-total-mesorectal-excision (the partial-response and watch-and-wait trials in selected complete responders - [[gastrointestinal/gi-bleeding-cancer]], [[surgery/gastrointestinal-surgery]]); pT3pN1b-M0-colon - stage-IIIA-biology-with-the-four-versus-six-cycle-FOLFOX-discussion-and-MRD-trial-context (the IDEA duration-shortening non-inferiority nuance and low-versus-high-risk grouping) - [[gastrointestinal/bowel-disease]]; cT2aN0-prostate - organ-confined-with-PSA-and-Gleason-group-and-nomogram-driven-risk-grouping-for-active-treatment-versus-surveillance (the PSA density and genomic classifier roles, honestly) - the-MRI-targeted-biopsy-era; cT3N2M1a-NSCLC - stage-IVA-with-pleural-metastasis-not-surgical-and-systemic-therapy-driven-by-molecular-panel-and-PD-L1 (the oligometastatic aggressive-local-treatment exception debates) - [[respiratory/lung-cancer-pleura]]; and cT1bN0M0-gastric - early-gastric-cancer-criteria-for-endoscopic-submucosal-dissection-versus-gastrectomy-by-size-differentiation-ulceration-and-depth - [[gastrointestinal/oesophagus-stomach]].**
+$2 + 2 + 2 = 6$, which is grade 2.
 :::
 :::
 
-::: exercise Handle an incidental germline finding {level=2}
-Tumour sequencing for a lung cancer reports a pathogenic BRCA2 variant likely germline; the patient is 68, a a former smoker; two adult children. What do you do, explain and document?
+::: exercise Grade or stage? {level=1}
+Say whether each statement describes grade or stage: (a) "the tumour forms few glands and has many mitoses"; (b) "four of 15 lymph nodes are involved"; (c) "the tumour invades the visceral peritoneum"; (d) "Gleason score 4+3=7".
 ::: solution
-**Incidental-germline-in-tumour-data ([[#def-biomarkers]], [[genetics/genetic-testing]], [[medical-ethics-law/confidentiality]]): the-confirmation-pathway - the-blood-confirmation-with-genetics-service-referral-not-a-phone-number-to-a-lab-website (the pre- and post-test counselling standards and the return-of-results consent that should precede tumour sequencing, with variant tiering, the VUS caution and the reliability limits of germline signals from tumour-only panels) - [[genetics/cancer-genetics]]; the clinical-consequences - the ovarian, breast, prostate, pancreatic and melanoma surveillance for BRCA2 and the therapy implications of PARP inhibitors and platinum sensitivity, including early-onset prostate cancer in men and pancreatic surveillance eligibility - [[obstetrics-gynaecology/gynaecological-cancer]], [[surgery/vascular-urological-surgery]]; the family-logic - the 50-percent sibling and child risk and cascade-testing facilitation, with the confidentiality-versus-preventable-harm debate and jurisdiction-specific rules on documented advice to tell relatives - [[medical-ethics-law/confidentiality]], [[genetics/genetic-testing]]); and the record-keeping - who owns which result - the tumour variant versus the confirmed heritable diagnosis and whose follow-up it is - and the reclassification drift with a recontact plan someone actually owns - [[clinical-skills/records-handover]], [[clinical-skills/communication]].**
+(a) Grade. (b) Stage (N category). (c) Stage (T category). (d) Grade.
 :::
 :::
 
-::: exercise Design the pathology service for a cancer network {level=3}
-You are redesigning diagnostic services for a regional cancer network. Specify turnaround standards, testing algorithms, quality assurance, equity and the workforce and digital strategy.
+::: exercise Positive predictive value {level=2 check="round(100*0.018/(0.018+0.049))"}
+A test with sensitivity 90% and specificity 95% is applied to a population with a prevalence of 2%. What percentage of positive results are true positives? Round to the nearest whole percentage.
+::: hint
+Work with 1,000 people.
+:::
 ::: solution
-**Network-diagnostic-service-design ([[#def-sampling]], [[#def-biomarkers]], [[public-health/health-systems-economics]]): the-standards-frame - time-to-diagnosis-as-a-measured-pathway (the referral-to-treatment heritage with biopsy-to-report and report-to-MDT segments benchmarked with 7-10 working-day histology and 10-14 day molecular targets as the benchmark rationale and the suspected-cancer-fast-track-appointment-versus-diagnostics-capacity-mismatch-audits - [[clinical-skills/records-handover]], [[clinical-skills/patient-safety]]); the-testing-algorithm - reflex-testing-protocols-for-organ-sets (the-on-core-algorithms-with-MMR-IHC-always-with-MSI-reflex-and-PD-L1-at-diagnosis-where-first-line-immunotherapy-expected-and-the-hungarian-slice-tissue-sparing with the reflex-versus-request economics and turnaround trade and the NGS-panel-with-weekly-molecular-MDT-and-the-liquid-biopsy-fallback-when-tissue-exhausted with the re-biopsy-safety-and-cost-honesty) - [[pathology/cancer-biology]], [[immunology/vaccines-immunotherapy]]; quality-and-safety - the-two-signature-policy-for-report-release the internal and external quality assessment schemes and slide consensus panels, with reporting audits and clinical feedback loops (the discordance reveal when clinical, radiological and pathological diagnoses clash and the error-reporting-culture-incident reporting and serious-incident reviews when a cancer is missed on sampling) - [[clinical-skills/patient-safety]]); the-equity-and-implementation - screening and diagnostic uptake across deprivation and language, with interpreter provision, transport-to-biopsy barriers, rural telepathology and slide transport, and record linkage for mobile populations in rare-tumour referral - [[public-health/determinants-inequalities]]; and the-workforce-and-digital - the staff-shortage world - scientist workforce and training-pipeline numbers, not ambition - and the whole-slide-imaging rollout with validation, storage and bandwidth, and AI-assistive mitosis counting and metastasis detection read by regulatory status, with clinician accountability unchanged - [[pathology/diagnostic-pathology]], [[public-health/health-systems-economics]].**
+Of 1,000 people, 20 have the disease and 18 test positive. Of 980 without it, 5% (49) test positive. PPV $= 18/(18 + 49) = 0.269$, so about 27%.
+:::
+:::
+
+::: exercise Lead time in numbers {level=2 check="5"}
+A cancer would be diagnosed from symptoms at age 64 and cause death at 69. Screening detects it at 59, but the date of death is unchanged. By how many years does survival from diagnosis appear to improve?
+::: solution
+Survival without screening is $69 - 64 = 5$ years; with screening $69 - 59 = 10$ years. The apparent improvement of 5 years is entirely lead time.
+:::
+:::
+
+::: exercise Which marker and why? {level=2}
+For each scenario, say whether a tumour marker is appropriate and which: (a) monitoring a man after orchidectomy for a non-seminomatous germ cell tumour; (b) "screening" a well 45-year-old woman who is worried about cancer; (c) follow-up after resection of a colorectal cancer; (d) a man with cirrhosis under surveillance for liver cancer.
+::: solution
+(a) Appropriate: AFP and hCG (with LDH), which fall after successful treatment and rise with relapse. (b) Not appropriate: no marker is a suitable screening test in the general population, and false positives would cause harm; she should be offered the national screening programmes she is eligible for. (c) Appropriate: CEA, combined with CT, as part of follow-up. (d) Ultrasound is the main surveillance test; AFP may be used alongside it in some protocols, but it is not sensitive enough on its own.
+:::
+:::
+
+::: exercise A sodium of 118 {level=3}
+A 61-year-old woman who smokes has a serum sodium of 118 mmol/L, a low plasma osmolality, a concentrated urine and no signs of fluid depletion or oedema. Over the next weeks she develops weakness of the proximal muscles that improves briefly after repeated effort. A CT scan shows a central lung mass with bulky mediastinal nodes. Give the most likely tumour type, explain both syndromes, and say why identifying them matters.
+::: solution
+The most likely tumour is a **small cell lung carcinoma**, a neuroendocrine tumour strongly associated with smoking and with paraneoplastic syndromes. The hyponatraemia with concentrated urine and normal volume status fits the **syndrome of inappropriate antidiuretic hormone secretion**: the tumour secretes ADH, the kidneys retain water and sodium is diluted. The weakness that briefly improves with effort fits the **Lambert–Eaton myasthenic syndrome**: antibodies raised against tumour voltage-gated calcium channels cross-react with channels on motor nerve terminals and reduce acetylcholine release; repeated effort transiently increases calcium entry and release. Identifying them matters because they may be the first sign of the cancer, because severe hyponatraemia can cause seizures and must be corrected carefully, and because treating the tumour often improves the syndromes ([[respiratory/lung-cancer-pleura]]).
+:::
+:::
+
+::: exercise Should we screen for it? {level=3}
+A colleague proposes screening all adults over 50 for pancreatic cancer with a blood test that has a sensitivity of 80% and a specificity of 90%. Pancreatic cancer has a prevalence of perhaps 1 in 1,000 at any one time in this group. Using the screening principles and a calculation of predictive value, give a reasoned response.
+::: hint
+Calculate the positive predictive value per 1,000 people screened.
+:::
+::: solution
+Per 1,000 people, about 1 has the cancer and 0.8 tests positive; of 999 without it, about 100 test positive. The PPV is $0.8/(0.8 + 99.9) \approx 0.8\%$: more than 99 in 100 positives are false, and each would need further investigation such as CT or endoscopic ultrasound, with costs, anxiety and complications. The test would also miss one in five cancers. Against the Wilson and Jungner principles, it fails on several counts: the test is not accurate enough for a rare condition; the detectable pre-symptomatic stage is short and not well defined; and there is no evidence from randomised trials that earlier detection reduces mortality. Screening for pancreatic cancer is currently considered only in research settings for people at very high inherited risk, where the prevalence is much higher and the predictive value correspondingly better.
 :::
 :::

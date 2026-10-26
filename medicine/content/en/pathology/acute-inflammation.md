@@ -1,143 +1,312 @@
-Acute inflammation is the body's fastest coordinated programme: **a handful of chemical mediators convert an invisible noxious trigger into a vascular and cellular response with real anatomy - heat, redness, swelling, pain and loss of function - executed by neutrophils within minutes and resolved, or wrecked, by the same mediators over days.** Learn the mediator families, the leukocyte adhesion cascade and the outcomes, and every "swollen, hot, tender joint" or "consolidation on the chest film" becomes a readable summary of what happened at the microvessels.
+Inflammation is the body's response to infection and to tissue damage. It brings plasma proteins and white blood cells out of the circulation to the place where they are needed, so that they can destroy microbes, dilute toxins and clear away dead cells. Without it, wounds would never heal and minor infections would be fatal. Yet inflammation is also the cause of much disease: the damage in a septic patient, an asthmatic airway or an inflamed joint is done largely by the response, not by the original trigger.
 
-This chapter covers the vascular events, the chemical mediators, the cellular recruits and their orders of battle, the systemic response and the outcomes including resolution, progression and abscess.
+This chapter describes **acute inflammation**, the rapid response that develops over minutes to hours and lasts days. It follows the response in order: what starts it, what happens to the blood vessels, how leucocytes leave the blood, which chemical mediators coordinate it, what it looks like in tissues and in the whole patient, and how it ends. The slower, longer response is the subject of [[pathology/chronic-inflammation-repair]].
 
-## The vascular phase
+## What starts inflammation
 
-::: definition Flow, permeability and the mediators {#def-vascular}
-**The haemodynamic script (transient-arteriolar-vasoconstriction-then-arteriolar-dilation-with-increased-flow-and-venodilation-with-congestion-and-the-stasis-that-lets-leukocytes-marginate away from the axial stream and the lymphatics-draining-the-oedema-and-the-lymphangitis-streaking-you-palpate-and-image - [[cardiovascular/circulation-blood-pressure]] for the tone pharmacology shared with histamine-and-prostaglandins); the permeability mechanisms (endothelial-cell-contraction-driven-transient-immediate-response-histamine-bradykinin-leukotrienes-platelet-activating-factor (PAF) on-HVss-venular-postcapillary-endothelium-and the myosin-light-chain-kinase door opener and the direct-endothelial-injury-immediate-sustained-burns-and-necrotising-toxins-and-the-delayed-prolonged-response-cytokine-IL-1-TNF-mediated-retraction-with-ROS-and-proteases-damage-and-the-leakage-from-newly-forming-angiogenic-vessels-VEGF-hyperpermeability-which-is-why-granulation-tissue-oozes and the basal-membrane-integrity-questions in immune-complex-vasculitis - [[musculoskeletal/connective-tissue-vasculitis]]); the exudate arithmetic (Starling-forces-shifted-by-permeability-with-protein-and-fibrinogen-escaping-to-make-fluid-cloudy-with-specific-gravity-history-and-Rivalta's-ghost and the light-microscopy-of-fibrin-strands-and-webs and the transudate-versus-exudate-revision-in-the-era-of-diuresis with the gradient trick and the pleural and ascitic applications - [[respiratory/lung-cancer-pleura]] for effusions, [[renal/water-sodium]], [[gastrointestinal/liver-disease]] for ascites); and the mediator families with their pharmacology hooks (histamine-from-mast-cells-basophils-platelets-and-enterochromaffin-like-physiology with H1-vascular-and-H2-acid-and-drug-history - [[pharmacology/autonomic-drugs]] for receptor pharmacology; prostaglandins-and-thromboxane-and-prostacyclin-from-cyclo-oxygenase-1-and-2-with-PTGS2-induction-by-LPS-and-cytokines-and-the-aspirin-andib-nsaid-and-paracetamol-centrality-and-5-lipoxygenase-leukotrienes-LTB4-chemotaxis-and-LTC4D4E4-bronchospasm-mucus-oedema-with-the-montelukast-and-zileuton-adjacency and lipoxins-resolvins-protectins-maresins as the active class-switch to resolution via aspirin-acetylated-COX2 - the Serhan revolution - and PAF from the phospholipase-A2 landing pad and the kinin-cascade-HMWK-FK-12-PK-with-bradykinin-pain-permeability-and-the-ACE-inhibitor-cough-and-angioedema-clinic and the complement-C3a-C5a-anaphylatoxins-and-MAC-clinical genetics covered in [[immunology/innate-immunity]] and [[immunology/antigen-recognition]] - and the cytokines-IL1-TNF-IL6-chemokines-CXCL8-IL8-CCL2-with-their-redundancy-receptor-decoys-and-the-anti-TNF-therapy-revolution-and-its-infection-TB-reactivation-price - [[immunology/tolerance-regulation]], [[infectious-diseases/tuberculosis]]).**
+::: definition Inflammation and its cardinal signs {#def-inflammation}
+**Inflammation** is a protective response of vascularised tissue to infection or injury, in which fluid, plasma proteins and leucocytes move from the blood into the tissue. **Acute inflammation** has a rapid onset, a short duration, an exudate of fluid and protein, and a predominance of neutrophils.
+
+The classical **cardinal signs** are redness (*rubor*), swelling (*tumor*), heat (*calor*) and pain (*dolor*), described by Celsus, with loss of function (*functio laesa*) added later.
 :::
 
-## The cellular phase
+Each cardinal sign has a mechanism. Redness and heat come from dilated arterioles carrying more blood. Swelling comes from fluid and protein leaking into the tissue. Pain comes from mediators such as bradykinin and prostaglandins acting on nerve endings, and from the pressure of the swelling. Loss of function follows from pain and swelling together.
 
-::: definition Neutrophils in orders {#def-cells}
-**The adhesion cascade as clinical anatomy (margination-and-rolling-selectins - E-selectin-cytokine-induced and P-selectin-Weibel-Palade-and-P-selectin-glycoprotein-ligand-1-PSGL1-and-the-CD18-integrins-LFA-1-Mac-1-activation-by-chemokines-with-firm-adhesion and transmigration-through-PECAM-1-and-chemokinesis-on-C3b-and-fMLP-and-IL8-gradients with the two rare human diseases that proved the pathway - leukocyte-adhesion-deficiency-types-with-omphalitis-and-delayed-cord-separation-and-no-pus-and-recurrent-infections and the chronic-granulomatous-disease-phox-NADPH-oxidase-chemistry-contrast - [[immunology/immunodeficiency]]); the neutrophil arsenals (the degranulation-hierarchy-primary-azurophil-myeloperoxidase-HNE-cathepsin-defensins secondary-specific-lactoferrin-collagenase-gelatinase and tertiary-and-vesicles and the respiratory-burst-NADPH-oxidase-assembled-from-cytosolic-subunits-with-NADPH-oxygen-consumption-superoxide-SOD-to-hydrogen-peroxide-MPO-halide-system-hypochlorous-acid-and-the-NBT-and-DHR-tests-and-CGD-genetics - the bactericidal arithmetic covered in [[immunology/innate-immunity]] and [[blood/haematopoiesis]] for granulopoiesis control); the alternative activations (NETosis with chromatin decondensation, histone citrullination, PAD4 dependence and DNA fibres carrying granule proteins, antimicrobial, procoagulative and endothelial-damaging and the immunothrombosis-concept-linking-inflammation-to-CVST-DIC-and-vasculitis-necrosis - [[blood/haemostasis-bleeding]], [[nervous-system/stroke]]; the macrophage first responders, tissue-resident when vessels are intact-CNS-microglia-liver-Kupffer-lung-alveolar-lung-macrophages-and the tissue-renewal versus monocyte-recruitment origin questions - and the monocyte-to-macrophage conversion the day-2 handover of the acute response with the Ly6C-cells-that-become-healing-M2-leaning-versus-inflammatory-recruits; and the pattern-recognition-in-the-exudate (DAMPs-alarmins-from-necrotic-cells-versus-PAMPs-with-the-same-receptors-HMGB1-and-DNA-sensing-cGAS-STING-and-Toll-like-assembly-covered in [[immunology/antigen-recognition]] and the sterile-inflammation-clinics-post-MI-pericarditis-and-crush-and-gout-crystals-activating NLRP3-inflammasome-caspase-1-IL1beta - [[musculoskeletal/inflammatory-arthritis]]).**
+The triggers are of a few kinds:
+
+- **Infections**, by bacteria, viruses, fungi and parasites, and the toxins they produce.
+- **Tissue necrosis** from any cause, including ischaemia, trauma, burns and chemical injury. Dead cells release molecules that are normally hidden inside them, such as uric acid, ATP and DNA.
+- **Foreign bodies**: splinters, sutures, and crystals such as urate in gout.
+- **Immune reactions**, such as allergy and autoimmune disease, in which the trigger is harmless or is the body's own tissue.
+
+Cells recognise these triggers through receptors of the innate immune system. **Toll-like receptors** on macrophages, dendritic cells and epithelial cells recognise molecules typical of microbes, called pathogen-associated molecular patterns. Molecules released from damaged cells are called damage-associated molecular patterns. A cytoplasmic complex called the **inflammasome** senses cell damage and crystals and activates caspase-1, which produces the active form of interleukin-1β. Stimulation of these receptors makes the cell release cytokines and other mediators that start the response. The receptor biology is covered in [[immunology/innate-immunity]].
+
+## The vascular events
+
+The first changes occur in small blood vessels. They aim to bring blood to the injured area and let plasma proteins and leucocytes leave it.
+
+1. **Vasodilation.** Arterioles dilate, mainly under the action of histamine and nitric oxide. Blood flow increases, causing redness and heat. Sometimes a brief constriction precedes it.
+2. **Increased permeability.** The endothelium of the post-capillary venules becomes leaky, so protein-rich fluid escapes into the tissue. This is the main cause of swelling.
+3. **Stasis.** As fluid leaves, the red cells in the small vessels become concentrated and the blood slows. Slow flow lets leucocytes move to the vessel wall.
+
+Permeability rises by several mechanisms. The commonest is **contraction of endothelial cells** in venules, opening gaps between them. Histamine, bradykinin and leukotrienes cause this within seconds, and it is short-lived, lasting 15 to 30 minutes. Cytokines such as TNF and IL-1 cause a slower and longer change in the cell junctions. In burns and severe infections the endothelium is **injured directly**, and leakage can last for hours or days. Leucocytes that adhere to the endothelium can themselves damage it.
+
+Fluid movement across the capillary wall obeys the Starling principle ([[physiology/homeostasis-body-fluids]]). The fluid that collects depends on which force has changed, and this distinction has great diagnostic value.
+
+::: definition Exudate and transudate {#def-exudate}
+- An **exudate** is an extravascular fluid with a high protein content and often cells, formed when vascular permeability is increased. It indicates inflammation (or tumour, which also makes vessels leaky).
+- A **transudate** is an extravascular fluid with a low protein content and few cells, formed by an imbalance of hydrostatic or oncotic pressure across a normal vessel wall, as in heart failure or a low plasma albumin.
+- **Oedema** is excess fluid in the interstitial tissue or body cavities, whether exudate or transudate. **Pus** is a purulent exudate rich in neutrophils, dead cells and often microbes.
 :::
 
-## The whole body responds
+For pleural fluid the distinction is made with **Light's criteria**. The fluid is an exudate if at least one of the following is true: the ratio of pleural fluid protein to serum protein is greater than 0.5; the ratio of pleural fluid lactate dehydrogenase (LDH) to serum LDH is greater than 0.6; or the pleural fluid LDH is greater than two-thirds of the upper limit of normal for serum LDH.
 
-::: definition Systemic effects and outcomes {#def-systemic}
-**The acute-phase response (IL-6-and-IL-1-and-TNF-driven-hepatic-synthesis-switch-fibrinogen-and-CRP-and-SAA-and-haptoglobin-up-albumin-and-transferrin-down-with-the-ESR-physical-chemistry-of-rouleaux-and-why-CRP-rose-to-replace-ESR-as-monitor in most but not all settings (the SLE-and-pregnancy-and-anemia-exceptions) - [[clinical-skills/laboratory-tests]] and [[gastrointestinal/liver-function]] for synthesis logic); the fever-and-sick-behaviour neurology (PGE2-in-hypothalamus-EP3-and-IL-1-as-endogenous-pyrogen-history-and-the-antipyretic-debate-do-fever-declarations-help-or-harm and the delirium-and-sickness-behaviour-and-sleep-architecture-effects - [[endocrine/hypothalamus-pituitary]], [[geriatrics-palliative/delirium-dementia-care]]); the marrow and blood counts (CSF3-and-CSF2-granulopoiesis-emergency-with-left-shift-and-toxic-granulation-and-Dohle-body-analogues-and-vacuoles and the leukemoid-reaction-versus-CML-differentiation and the marginated-pool-demargination-by-steroids-that-makes-a-total-count-move-without-any-new-infection - [[blood/leukaemia]], [[clinical-skills/laboratory-tests]]); and the extreme outcomes (SIRS-to-sepsis-redefinition-history-with-the-SOFA-and-qSOFA-politics-and-the-cytokine-storm-continuum-to-MAS-HLH-where-inflammation-is-the-disease the capillary-leak, DIC and organ-failure mechanics in [[infectious-diseases/fever-sepsis]], [[blood/haemostasis-bleeding]]); the outcome menu (complete-resolution-with-sterile-removal-of-debris-that-restores-architecture-and-the-active-not-passive-evidence-again-repair-after-tissue-injury-versus-healing-by-fibrosis-when-the-stroma-is-framework-destroyed (liver-scaffold-collapse-versus-skin-dermis-loss - [[pathology/chronic-inflammation-repair]], [[gastrointestinal/liver-disease]]); the chronic-progression-with-lymphocyte-and-macrophage-influx and the nonresolving-inflammation-concepts-in-obesity-and-atherosclerosis-inflammasome-artery - [[cardiovascular/coronary-artery-disease]], [[endocrine/diabetes-complications]]; the the amoebic versus pyogenic liver-abscess clinical split and the source-control-doctrine-drainage-beats-antibiotics-physics-of-pH-and-penetration - [[surgery/wounds-surgical-infection]], [[infectious-diseases/fever-sepsis]], [[microbiology/bacteria]]; and the recurrent-acute-episodes phenotype of gout flares and familial Mediterranean fever and the cryopyrinopathies, and the colchicine and canakinumab target logic - [[immunology/innate-immunity]], [[musculoskeletal/inflammatory-arthritis]]).**
-:::
-
-::: example The cellulitis that is not cellulitis {#ex-pseudo-cellulitis}
-A 71-year-old with chronic oedema has bilateral red swollen legs, WBC 11, CRP 48, afebrile, no portal, chronic steroid cream; three prior "cellulitis" admissions; the last course of antibiotics caused a rash.
+::: example A pleural effusion {#ex-light}
+A 67-year-old woman has a right-sided pleural effusion. Pleural fluid: protein 42 g/L, LDH 310 U/L. Serum: protein 68 g/L, LDH 220 U/L. The laboratory's upper limit of normal for serum LDH is 250 U/L. Is this an exudate or a transudate, and what does it imply?
 ::: solution
-**Reading inflammation-physiology-backwards-to-diagnosis ([[#def-vascular]], [[#def-systemic]], [[musculoskeletal/skin]]): the mediators-in-the-skin-map - redness-with-heat-is-arteriolar-dilation-and-swelling-is-permeability-oedema-but-bilateral-symmetric-shiny-scaly-brown-stained-skin-without-systemic-toxicity-says-chronic-venous-and-lymphatic-hypertension-with-hemosiderin-and-lipodermatosclerosis-acute-on-chronic-dermatitis the dependent-oedema and Starling re-education and the chronic lymphoedema-inflammation remodelling - [[cardiovascular/vascular-disease]], [[pathology/haemodynamics]]; the inflammatory-marker-physics - why-CRP-48-and-WBC-11-fit-chronic-inflammation-without-bacterial-infection (the IL-6-set-point-not-a-bug-count and the obesity-and-CVD-baseline-CRP-drift and the steroid effect on counts) and the absence-of-portal-entry-plus-chronicity-plus-bilaterality-plus-no-fever-lowering-posterior-probability of true cellulitis (the misdiagnosis-audits and the dermatology-referral-diagnostic-shift-studies); the stewardship decision with a plan not just a stop - the leg-elevation-and-compression-and-emollient-and-topical-steroid-pulse (the fungal-portal-treat and the contact-dermatitis-exclusion from the many creams) and the oral-antibiotic-avoidance-with-safety-net-education the what-would-change-my-mind red-flag list and the label-correction in the record so the penicillin-allergy and "recurrent cellulitis" entries stop compounding (the allergy-delabelling-clinics) - [[microbiology/antimicrobials]], [[clinical-skills/records-handover]]; and the true-recurrent-cellulitis-tract - the predisposition optimisation - lymphoedema therapy, weight, tinea pedis and interdigital care, and the prophylactic penicillin or macrolide evidence with its resistance debate and the systemic-sepsis-recognition-when-it-really-is-there and the chronic-lymphoedema-lymphangiosarcoma-rarity-to-know-when-to-biopsy - [[surgery/wounds-surgical-infection]], [[musculoskeletal/skin-cancer]].**
+1. Protein ratio $= 42/68 \approx 0.62$, which is greater than 0.5.
+2. LDH ratio $= 310/220 \approx 1.41$, which is greater than 0.6.
+3. Two-thirds of the upper limit of normal is $\tfrac{2}{3} \times 250 \approx 167$ U/L; the fluid LDH of 310 U/L exceeds it.
+4. All three criteria are met, so the effusion is an **exudate**. Increased vascular permeability is the cause, not a pressure imbalance.
+5. The commonest causes of an exudate are pneumonia (a parapneumonic effusion) and cancer. A transudate would point instead towards heart failure, cirrhosis or a low albumin. Further tests on the fluid, including microbiology and cytology, follow ([[respiratory/lung-cancer-pleura]]).
 :::
 :::
 
-::: example The gouty joint {#ex-gout}
-A 58-year-old man wakes at 2am with an excruciating first-metatarsophalangeal joint, red and swollen, afebrile, after a weekend of beer; aspirin for cardiac prophylaxis; eGFR 52; serum urate 0.52 mmol/L.
+Lymphatic vessels also take part. Lymph flow increases to drain the oedema fluid, and lymphatics carry microbes and debris towards the lymph nodes. Inflammation of the lymphatics (**lymphangitis**) shows as red streaks along a limb, and the regional nodes become enlarged and tender (**lymphadenitis**). Spread beyond the nodes can produce bacteraemia.
+
+## The cellular events
+
+The main purpose of inflammation is to deliver leucocytes to the site of injury. In acute inflammation the leucocytes are mostly **neutrophils**, which arrive first and dominate during the first 6 to 24 hours. **Monocytes** follow and become macrophages in the tissue; they predominate after 24 to 48 hours, because neutrophils are short-lived and die by apoptosis, while macrophages survive and multiply. The pattern varies: in viral infections lymphocytes may arrive first, and in allergic reactions eosinophils are prominent.
+
+::: theorem The leucocyte adhesion cascade {#thm-adhesion}
+Leucocytes leave the circulation through the wall of post-capillary venules in a sequence of steps, each mediated by a different family of adhesion molecules:
+
+1. **Margination**: slowing of flow pushes leucocytes to the edge of the stream.
+2. **Rolling**: weak, transient binding of leucocytes to **selectins** (E-selectin and P-selectin) expressed on activated endothelium.
+3. **Firm adhesion**: chemokines on the endothelial surface activate leucocyte **integrins** (such as LFA-1), which bind endothelial ligands (such as ICAM-1) tightly.
+4. **Transmigration** (diapedesis): the leucocyte squeezes between endothelial cells, helped by PECAM-1 (CD31), and crosses the basement membrane.
+5. **Chemotaxis**: the leucocyte moves along a gradient of chemoattractants towards the site of injury.
+:::
+
+::: proof
+Each step depends on the one before, and each uses molecules that the inflammatory stimulus switches on. Histamine and thrombin bring P-selectin, stored in endothelial granules, to the cell surface within minutes. TNF and IL-1 from macrophages induce E-selectin, ICAM-1 and VCAM-1 over one to two hours. Selectin bonds form and break quickly, so they slow the leucocyte without stopping it: it rolls along the wall. While rolling, the leucocyte meets chemokines bound to the endothelial surface. These change the shape of its integrins to a high-affinity form, and the rolling cell stops. It then crawls to a junction between endothelial cells and passes through. Because the same signals that injure the tissue also turn on the adhesion molecules, leucocytes leave the blood only where they are needed.
+
+Chemoattractants include bacterial products (peptides beginning with N-formylmethionine), the complement fragment C5a, leukotriene B4 and chemokines such as CXCL8 (interleukin-8). The leucocyte senses a difference in concentration across its length, extends its front edge by polymerising actin, and moves towards the higher concentration.
+:::
+
+### Phagocytosis and killing
+
+At the site of injury neutrophils and macrophages engulf and destroy microbes and dead tissue. **Phagocytosis** proceeds in three steps.
+
+1. **Recognition and attachment.** Phagocytes recognise microbes directly through receptors such as the mannose receptor, and much more efficiently when the microbe is coated with **opsonins**: antibody of the IgG class and the complement fragment C3b.
+2. **Engulfment.** The cell extends pseudopods around the particle and encloses it in a phagosome, which then fuses with lysosomes to form a phagolysosome.
+3. **Killing and degradation.** The enzyme **NADPH oxidase** (phagocyte oxidase) assembles in the phagosome membrane and converts oxygen to superoxide: the **respiratory burst**. Superoxide becomes hydrogen peroxide, and **myeloperoxidase** in neutrophil granules converts hydrogen peroxide and chloride into hypochlorous acid, a powerful oxidant. Lysosomal enzymes, defensins and other granule proteins add to the killing.
+
+Neutrophils can also release **neutrophil extracellular traps**: webs of DNA and granule proteins that catch and kill microbes outside the cell.
+
+The weapons that kill microbes can damage the host. Enzymes and oxidants leak from activated neutrophils, especially when they meet a target too large to engulf or try to eat material attached to tissue. This **leucocyte-mediated injury** is the main mechanism of damage in many diseases, including acute respiratory distress syndrome, glomerulonephritis, gout and the airway in asthma.
+
+### Defects of leucocyte function
+
+Defects at each step show what the step normally does. People with these defects have recurrent bacterial and fungal infections.
+
+- **Leucocyte adhesion deficiency type 1** is caused by mutations in the β2 integrin (CD18). Neutrophils cannot adhere and leave the blood, so the blood neutrophil count is high but there is little pus at infected sites.
+- **Chronic granulomatous disease** is caused by mutations in a component of NADPH oxidase, most often the X-linked form. Phagocytes engulf microbes but cannot kill catalase-positive organisms such as *Staphylococcus aureus* and *Aspergillus*. The persistent microbes provoke granulomas.
+- Acquired defects are far more common: neutropenia after chemotherapy, poorly controlled diabetes (impaired chemotaxis and killing), and treatment with corticosteroids. The inherited conditions are detailed in [[immunology/immunodeficiency]].
+
+::: example A boy with repeated abscesses {#ex-cgd}
+A 6-year-old boy has had liver abscesses caused by *Staphylococcus aureus* and a lung infection with *Aspergillus*. His blood neutrophil count is normal. Biopsy of a lymph node shows granulomas. A test of the respiratory burst (dihydrorhodamine flow cytometry) shows no oxidative activity in his neutrophils. Explain the findings.
 ::: solution
-**Crystal-activated-innate-immunity ([[#def-vascular]], [[#def-cells]], [[#def-systemic]]): the trigger-chemistry - monosodium-urate-crystals-with-raft-adsorption-of-immunoglobulins-and-TLR4-co-ligation-and-most-importantly-NLRP3-inflammasome-assembly-in-tissue-macrophages-with-caspase-1-and-pro-IL-1beta-processing-and-IL-18-and-PGE2-amplification-with-neutrophil-swarming-and frustrated phagocytosis of bare crystals with NET release (the "self-limited-despite-untreated" property explained by IL-1ra-and-TGF-beta-in-the-exudate and the serum-amyloid-A-coating-that-calms-crystals) - [[immunology/innate-immunity]], [[renal/tubular-function]] for urate handling; the mediator-pharmacology-correspondence - colchicine-binding-tubulin-halting-neutrophil-locomotion-with-diarrhoea-and-myopathy-toxicity-and-CYP3A4-P-gp-drug-debates and NSAIDs-blocking-the-PGE2-branch-with-the-CV-and-GI-and-renal-triplet-especially-with-eGFR-52-and-low-dose-aspirin-interaction-question (the ibuprofen-occupancy-argument) - [[pharmacology/adverse-reactions]], [[cardiovascular/vascular-disease]]; the joint-fluid-lesson - the-negatively-birefringent-needle-shaped-intracellular-MSU-versus-CPPD-rhomboid-weakly-positive and the cell-count-and-culture-always-because-septic-arthritis-mimics-and-coexists the aspirate-then-decide rule - [[musculoskeletal/inflammatory-arthritis]], [[microbiology/laboratory-diagnosis]]; and the systems management - the trigger-audit (alcohol-purines-and-thiazides-and low-dose-aspirin urate retention and dehydration and surgery and the urate load of haemolysis, psoriasis and tumour lysis - [[blood/haemoglobin-disorders]], [[cardiovascular/hypertension]] and the urate-lowering-timing-debate-with-flare-prophylaxis-and-treat-to-target-and-allopurinol-hyperreactiveness-HLA-B*58:01 testing in high-prevalence groups and febuxostat cardiovascular caution and the uricosuric-transporter drug history - [[renal/tubular-function]], [[immunology/antigen-recognition]] - and the lifestyle-evidence honesty and the beer versus spirits versus dairy epidemiology and the CKD-and-metabolic-syndrome-cohort-framing - [[renal/chronic-kidney-disease]], [[endocrine/diabetes]].**
+1. Normal numbers of neutrophils reach the infected sites, so adhesion and chemotaxis work.
+2. The failed oxidative test shows that NADPH oxidase does not function. This is **chronic granulomatous disease**.
+3. Without superoxide and its products, the neutrophil cannot kill catalase-positive organisms. (Catalase-negative bacteria make their own hydrogen peroxide, which the neutrophil's myeloperoxidase can use.) *S. aureus* and *Aspergillus* are typical.
+4. Microbes that persist inside phagocytes become a chronic stimulus, and macrophages and lymphocytes gather around them as **granulomas**.
+5. The most common form is X-linked, which fits a boy. Management, under specialist care, includes long-term antimicrobial prophylaxis, and haematopoietic stem cell transplantation can be curative.
 :::
 :::
 
-::: example The hand that went septic {#ex-abscess}
-Five days after a cat bite over the finger flexor sheath, a 30-year-old has fusiform swelling of the index finger, held semi-flexed, excruciating with passive extension, tender along the sheath to the palm, fever 38.9, WCC 17.
+## Chemical mediators
+
+The vascular and cellular events are coordinated by chemical **mediators**. Some are stored in cells and released within seconds; others are made on demand. Some circulate in plasma as inactive precursors and are activated by proteolysis.
+
+::: definition Mediators of inflammation {#def-mediators}
+A **mediator of inflammation** is a substance, released by cells or generated from plasma proteins at the site of injury, that produces one or more of the events of inflammation. The principal mediators and their main actions are:
+
+| Mediator | Main source | Main actions |
+|---|---|---|
+| Histamine | Mast cells, basophils | Arteriolar dilation, increased venular permeability |
+| Prostaglandins (PGE₂, PGI₂) | Many cells, via cyclooxygenase | Vasodilation, pain, fever |
+| Leukotriene B₄ | Leucocytes, via 5-lipoxygenase | Chemotaxis of neutrophils |
+| Leukotrienes C₄, D₄, E₄ | Mast cells, leucocytes | Increased permeability, bronchoconstriction |
+| TNF and IL-1 | Macrophages, mast cells, endothelium | Endothelial activation, fever, acute-phase response |
+| Chemokines (e.g. CXCL8) | Macrophages, endothelium | Leucocyte recruitment and activation |
+| Complement C3a, C5a | Plasma | Mast cell degranulation (anaphylatoxins); C5a is chemotactic |
+| Complement C3b | Plasma | Opsonisation |
+| Bradykinin | Plasma (kinin system) | Increased permeability, pain |
+| Nitric oxide | Endothelium, macrophages | Vasodilation, microbial killing |
+:::
+
+Most of these mediators are short-lived. They are degraded within minutes, or they are made only while the stimulus persists. This explains an important property of inflammation: it fades once the cause is removed.
+
+Many drugs act on these pathways, and they show which mediators matter clinically ([[pharmacology/drug-receptor]]):
+
+- **Non-steroidal anti-inflammatory drugs** (NSAIDs) inhibit cyclooxygenase (COX-1 and COX-2) and so reduce prostaglandins. They relieve pain and fever but do not stop leucocyte recruitment. Aspirin inhibits cyclooxygenase irreversibly; its effect on platelet thromboxane is the basis of its use in cardiovascular disease.
+- **Corticosteroids** act broadly. They reduce transcription of many cytokines, adhesion molecules and the enzymes that produce prostaglandins and leukotrienes.
+- **Antihistamines** block H1 receptors and help in urticaria and hay fever, where histamine dominates, but not in asthma, where leukotrienes matter more. **Leukotriene receptor antagonists** are used in asthma.
+- **Biological agents** against TNF or the IL-6 receptor are used in chronic inflammatory diseases such as rheumatoid arthritis.
+
+::: example Swelling of the lips on a new tablet {#ex-angioedema}
+A 58-year-old Black man started an angiotensin-converting enzyme (ACE) inhibitor for hypertension three weeks ago. He presents with swelling of the lips and tongue, without urticaria or itch. An antihistamine has had no effect. Explain the mechanism.
 ::: solution
-**Pyogenic-inflammation-anatomy ([[#def-cells]], [[#def-systemic]], [[surgery/wounds-surgical-infection]]): the Kanavel-quadread - the-fusiform-swelling-from-sheath-pus-under-pressure and the-semiflexed-position-minimising-sheath-tension and the-tenderness-over-the-sheath-line and the-pain-on-passive-extension-the-earliest-and-most-honest-sign (the four signs as sequential pathophysiology not a checklist and the lymphatic-streaking-and-epitrochlear-nodes and the web-space and collar-stabs of the deeper spaces - [[anatomy/back-upper-limb]] for the sheath anatomy and the "the tendon dies before the patient panics" teaching - the intrasheath-pressure-occluding-the-vascular-pedicle-with segmental tendon necrosis, so timing matters); the microbiology-culture-of-a-bite - Pasteurella-multocida-fast-fulminant-and-12-hour-onset and Streptococci-Staphylococcus-and-anaerobes-and-Eikenella-and-rare-sporotrichoid-Mycobacterium-marinum-when-indolent (the bite-type-exposure-questions and the rabies-tetanus-questions referred onward - [[microbiology/bacteria]]); the antibiotic-versus-surgery division - the-sheath-is-a-closed-space-with-poorsurface-area-for-antibiotics (the volume-of-distribution-and-pH-and-inoculum-effect reasoning from the abscess doctrine) and the urgent-theatre-irrigation-versus-limited-open-drainage-debate (the catheter-irrigation-versus-minimal-incision-practice-variations) and splint-elevation-later-motion-sequelae-management - [[microbiology/antimicrobials]]; and the systemic layer - the fever-leukocytosis-left-shift-and-CRP-trajectory as the IL-1-IL6-TNF-distance-actions and the failure-to-improve-at-24-hours-as-the-only-real-trial (the re-review rule) and the septic-arthritis-and-osteomyelitis-and-flexor-tenosynovitis-differential-workup (the MRI-when-occult and the aspiration-to-exclude-the-joint) - [[clinical-skills/physical-examination]], [[infectious-diseases/fever-sepsis]].**
+1. Swelling of the deep tissues of the face without urticaria is **angioedema**.
+2. ACE (kininase II) normally breaks down **bradykinin**. When ACE is inhibited, bradykinin accumulates.
+3. Bradykinin increases venular permeability, so fluid leaks into the loose tissues of the lips, tongue and airway.
+4. Histamine is not the mediator, which is why there are no hives and an antihistamine does not help.
+5. ACE inhibitor angioedema is more common in people of Black African or African-Caribbean origin. It can threaten the airway, so it is an emergency; the drug is stopped and not restarted. Management follows current guidance ([[emergency-critical-care/anaphylaxis]]).
 :::
 :::
 
-::: example The steroid-naive asthma attack {#ex-steroids}
-A 24-year-old with acute severe asthma gets nebulised salbutamol, ipratropium, oral prednisolone 40mg; at six hours the wheeze is quieter, the peak flow doubled, the neutrophil count has risen from 7 to 15 without fever.
+## Morphological patterns
+
+The appearance of acute inflammation depends on how much fluid, protein and pus is produced, and where.
+
+- **Serous inflammation**: a watery, low-cell exudate. Examples are the fluid in a skin blister after a burn and a viral effusion in a body cavity.
+- **Fibrinous inflammation**: greater permeability allows fibrinogen to escape and form fibrin. On a serosal surface, such as the pericardium, the fibrin forms a rough shaggy layer that causes a friction rub. Fibrin may be removed by macrophages, or it may be organised into scar, causing adhesions.
+- **Suppurative (purulent) inflammation**: large amounts of pus, typical of pyogenic bacteria such as staphylococci. An **abscess** is a localised collection of pus inside a tissue, with liquefied tissue at the centre, a zone of neutrophils around it and, later, a wall of granulation tissue and fibrosis.
+- **Ulcer**: a local defect of an epithelial surface produced by necrosis and shedding of inflamed tissue, as in a peptic ulcer of the stomach.
+
+::: example A collection in the palm {#ex-abscess}
+A 34-year-old woman cut her palm while gardening five days ago. The area is hot, red and swollen, with a tender fluctuant centre. Her temperature is 38.4 °C. She has taken an oral antibiotic for two days without improvement. Explain why the antibiotic has failed and what is needed.
 ::: solution
-**Glucocorticoid-anti-inflammatory-pharmacology-live ([[#def-vascular]], [[#def-systemic]], [[respiratory/asthma-copd]]): the six-hour-window-reconciliation - why-the-count-rises-while-the-disease-falls (the steroid-demargination-of-neutrophils-detaching-from-venular-marginated-pools plus delayed-apoptosis plus release-from-marrow-reserve the bland neutrophil-rise-without-left-shift pattern and the infection-discrimination by band-forms-and-clinical-picture-and-CRP-kinetics) - [[blood/haematopoiesis]], [[clinical-skills/laboratory-tests]]; the mediator-level-actions - the genomic-nuclear-receptor-transrepression (the NF-kB-and-AP1-brake on COX-2-and-cytokines-and-adhesion-molecules taking hours for protein-turnover reasons) plus the non-genomic-membrane-effects plus the late-appearing-eosinophil-apoptosis-and-airway-remodelling-adjacency and why-steroids-take-hours-to-six-hours-for-symptom-effect (contrast the minutes of beta-agonist smooth-muscle relief) - [[cell-biochemistry/gene-expression]], [[pharmacology/drug-receptor]]; the inflammation-clinic-correlation - the-quieter-wheeze-danger-read the silent-chest versus improving-air-movement differentiation with blood-gas and lactate severity markers and the steroid-sparing-and-steroid-scheduling-habits (the once-daily-morning-dose-HPA-axis-respect for repeated courses and the inhaled-controller-uptake so this does not recur) - [[endocrine/adrenal]]; and the audit-loop - why-we-give-steroids-early-in-every-severe-attack (the admission-rate RCT-heritage and the reattendance reduction) and the adrenal-crisis-recognition-in-the-over-treated-chronic-user and the infection-trigger-search (viral-and-atypical-and-pneumothorax-and-aspirin-sensitive-phenotype-questions - [[respiratory/respiratory-infections]]).**
+1. A fluctuant, tender swelling after a penetrating wound indicates an **abscess**: a localised collection of pus formed by suppurative inflammation, most often caused by *Staphylococcus aureus* or streptococci.
+2. The centre of the abscess is liquefied, necrotic tissue with no blood supply. Antibiotics reach it poorly, and the acidic, protein-rich pus reduces the activity of some drugs.
+3. Neutrophils within the cavity are dead or dying and cannot clear the bacteria.
+4. Drainage is required: the pus must be released surgically so that the cavity can heal by granulation tissue. Antibiotics are an adjunct, chosen according to local guidance and culture results. Hand infections can spread along tendon sheaths, so they need prompt surgical assessment ([[surgery/wounds-surgical-infection]]).
 :::
 :::
 
-::: quiz
-The immediate, transient increase in venular permeability to protein after a small burn is mediated chiefly by:
-- [x] Histamine-driven endothelial cell contraction
-- [ ] Direct endothelial necrosis
-- [ ] Newly formed capillary loops
-- [ ] Leukocyte-derived proteases
-::: solution
-**Histamine (and other contraction-provoking mediators) opens endothelial gaps by cytoskeletal contraction in postcapillary venules within minutes and it is self-limited; direct injury is immediate-sustained, new vessels leak later, and leukocyte proteases contribute in severe or prolonged responses ([[#def-vascular]]).**
-:::
-:::
+## Systemic effects
+
+Inflammation has effects throughout the body, collectively called the **acute-phase response**. They are driven mainly by the cytokines TNF, IL-1 and IL-6.
+
+- **Fever.** Cytokines act on the hypothalamus, where they induce cyclooxygenase-2 and the production of prostaglandin E₂. PGE₂ raises the temperature set point. This is why NSAIDs reduce fever.
+- **Acute-phase proteins.** IL-6 stimulates the liver to make more **C-reactive protein** (CRP), fibrinogen and serum amyloid A, and less albumin. CRP binds to microbial surfaces and acts as an opsonin. Fibrinogen makes red cells stack together (rouleaux) and sediment faster, which is why the **erythrocyte sedimentation rate** (ESR) rises. The liver also makes more **hepcidin**, which blocks the release of iron from stores; this causes the anaemia of chronic inflammation.
+- **Leucocytosis.** The white cell count rises because cytokines release cells from the bone marrow. Bacterial infections typically cause a **neutrophilia**, often with immature forms (a "left shift"). Viral infections cause a lymphocytosis, and parasitic infections and allergy an eosinophilia. Some infections, such as typhoid and some viral infections, lower the count.
+- **Other effects**: raised heart rate and blood pressure changes, rigors, loss of appetite, sleepiness and malaise.
+
+In severe infection, large amounts of cytokines and other mediators enter the circulation. Widespread vasodilation, leaky vessels, myocardial depression and disseminated clotting can follow. **Sepsis** is defined (Sepsis-3, 2016) as life-threatening organ dysfunction caused by a dysregulated host response to infection. Its recognition and management are covered in [[infectious-diseases/fever-sepsis]] and [[emergency-critical-care/shock-fluids]].
+
+CRP rises within about six hours of a stimulus and peaks at around two days. Its plasma half-life is about 19 hours and stays roughly constant, so the rate at which CRP falls depends almost entirely on whether the liver is still being told to make it. A falling CRP is therefore a good sign that the inflammatory stimulus is coming under control.
 
 ::: widget plot
-f: 100*sin(x/0.6)*exp(-x/4)/sin(1)*0; 0.8*sin(3*x)*exp(-x/2)+0.5; 100*(1-exp(-0.5*x))*exp(-0.12*x)/2; 100*(1-exp(-0.15*(x-1.5)))*exp(-0.09*(x-1.5))
-x: 0.01, 10
-y: 0, 100
-labels: \text{hours since trigger},\ \%\text{of peak activity};\ \text{histamine (immediate, transient)};\ \text{prostaglandins (sustained, inducible)};\ \text{neutrophil emigration};\ \text{monocyte/macrophage influx}
-caption: Mediator and cellular timing ([[#def-vascular]], [[#def-cells]]): mast-cell histamine peaks in minutes; COX products persist with inducible COX-2; neutrophils dominate the exudate by hours 6-24 and monocytes take over by day 2 - the reason an aspirate read at the wrong time of day misleads and why anti-histamines do little for an established bacterial exudate ([[microbiology/laboratory-diagnosis]]).
+f: 200*exp(-ln(2)*x/h)
+x: 0, 120
+y: 0, 210
+sliders: h=19:10:40:1
+hlines: 10
+labels: \text{CRP (mg/L)}
+caption: An illustrative fall in C-reactive protein after the inflammatory stimulus is removed, starting from 200 mg/L, with half-life $h$ in hours (about 19 hours in reality). The line at 10 mg/L is a typical upper limit of normal. The curve assumes that production stops at once; in practice it tapers, and continuing infection keeps CRP high. Use the slider to see how the half-life sets the time to normal.
+:::
+
+::: example How quickly should CRP fall? {#ex-crp}
+A 45-year-old man with pneumonia has a CRP of 200 mg/L on admission. Suppose antibiotics stopped the stimulus at once and CRP fell with a half-life of 19 hours. What would the CRP be after 48 hours, and how long would it take to reach 10 mg/L?
+::: solution
+1. Fall after time $t$: $\text{CRP}(t) = 200 \times 2^{-t/19}$.
+2. At 48 hours: $200 \times 2^{-48/19} = 200 \times 0.174 \approx 35$ mg/L.
+3. To reach 10 mg/L: $2^{-t/19} = 10/200 = 0.05$, so $t = 19 \log_2 20 \approx 82$ hours, about three and a half days.
+4. Real patients fall more slowly because production tapers rather than stopping. Still, a CRP that has not fallen at all after two or three days of treatment suggests a continuing source, such as an empyema or a resistant organism, and should prompt review.
+:::
+:::
+
+::: warning A normal CRP early, a high count on steroids
+Two errors are common. First, CRP takes several hours to rise, so a normal value in the first hours of an illness does not exclude serious infection; the clinical picture comes first. CRP is also non-specific: it is raised in trauma, after surgery, in infarction and in inflammatory diseases, not only in infection. Second, corticosteroids raise the neutrophil count without infection, because they release neutrophils that were adhering to vessel walls (demargination) and slow their exit into tissues. A high count in a person taking steroids needs interpretation, not automatic antibiotics.
+:::
+
+## Outcomes and resolution
+
+Acute inflammation can end in one of four ways.
+
+1. **Complete resolution.** When the injury is limited and the tissue can regenerate, mediators are degraded, fluid is drained by lymphatics, neutrophils die by apoptosis and are eaten by macrophages, and the tissue returns to normal. Lobar pneumonia in a previously healthy adult usually resolves this way.
+2. **Healing by scar** (fibrosis). When the tissue cannot regenerate, or there is much destruction or fibrin, the area is replaced by connective tissue.
+3. **Abscess formation**, with pyogenic organisms.
+4. **Progression to chronic inflammation**, when the stimulus persists or the response cannot clear it.
+
+::: theorem Resolution is an active process {#thm-resolution}
+Acute inflammation does not simply run out. Its ending is actively switched on by the same response that started it: mediators are short-lived and need continuing stimulation, the arachidonic acid pathway switches from making leukotrienes to making pro-resolving mediators such as **lipoxins** and **resolvins**, macrophages that have eaten apoptotic neutrophils release anti-inflammatory cytokines (IL-10 and TGF-β), and neutrophils undergo apoptosis instead of necrosis.
+:::
+
+This principle has a practical meaning. Persistent inflammation is not always caused by a persistent stimulus; it can also reflect failure of the switch to resolution. Research on pro-resolving mediators aims to promote resolution rather than block inflammation.
+
+::: quiz
+Which pair of molecules mediates the first, transient "rolling" contact of neutrophils with activated endothelium?
+- [x] Selectins on endothelium binding carbohydrate ligands on the leucocyte
+- [ ] Integrins on the leucocyte binding ICAM-1 on endothelium
+- [ ] PECAM-1 on both cells
+- [ ] C5a binding its receptor on the leucocyte
+::: solution
+Rolling depends on selectins (E-selectin and P-selectin on endothelium), whose bonds form and break quickly. Integrin binding to ICAM-1 produces firm adhesion, PECAM-1 helps transmigration, and C5a is a chemoattractant.
+:::
+:::
+
+::: history
+The Roman writer Aulus Cornelius Celsus listed redness, swelling, heat and pain as the signs of inflammation in the first century AD. In 1867 Julius Cohnheim watched the living mesentery of a frog under the microscope and saw leucocytes stick to the walls of small veins and pass through them, showing that pus cells come from the blood. In 1882 Élie Metchnikoff saw mobile cells in transparent starfish larvae gather around a thorn he had inserted, and proposed that the purpose of inflammation was to bring phagocytic cells to the site of injury; he shared the 1908 Nobel Prize in Physiology or Medicine with Paul Ehrlich. In 1927 Thomas Lewis described the "triple response" of the skin to a firm stroke (a red line, a flare and a weal) and attributed it to a histamine-like substance released in the tissue.
 :::
 
 ## Where this leads
 
-Resolution, fibrosis and chronic inflammation in [[pathology/chronic-inflammation-repair]]; the innate receptors that light the fuse in [[immunology/innate-immunity]]; sepsis as inflammation unbound in [[infectious-diseases/fever-sepsis]]; abscess and source control in [[surgery/wounds-surgical-infection]]; the anti-inflammatory pharmacology armamentarium in [[pharmacology/adverse-reactions]].
-
-::: history
-**The five cardinal signs are Roman, not biomedical: the first-century Celsian heat-redness-swelling-pain (with Virchow's added fifth, functio laesa, nineteen centuries later - a nice lesson in how "classic" descriptions accrete) and the Hippocratic-contrast-of-inflammatory-versus-gangrenous-disease; the Metchnikoff-versus-Ehrlich battle of the 1880s - the starfish-larva observation of mobile cells eating dye, the phagocyte theory versus the humoral camp of von Behring and Kitasato reconciliation that made cellular immunology and immunochemistry allies and the Nobel-exchange diplomacy around it - [[immunology/innate-immunity]]; the vascular-pharmacology decades - the-Starling-1896-fluid-shift-quantification and the Thomas Lewis 1920s triple response mapped by intradermal injection (with Lewis's partly wrong insistence on a nervous-axis component) and the histamine-identification race - [[immunology/hypersensitivity]]; the mediator-explosion - the von Euler naming of prostaglandins and the Bergstrom-Samuelsson purification and structure-assignment era and the Vane-1971-aspirin-inhibits-prostaglandin-synthesis-explanation (the monoclonal-COX2-and-the-COXIB-2000s-cardiovascular-coup-de-theatre - [[cardiovascular/coronary-artery-disease]], [[pharmacology/adverse-reactions]]); the leukocyte-adhesion-era - the the integrin-and-selectin-molecular-discovery-with-the-leukocyte-adhesion-deficiency-patients-pointing-the-way (the Anderson-and-Thompson-children's-clinics) and the the whole glycan-biochemistry-catch-up - and the Serhan discovery that resolution is an active programme - the lipoxin, resolvin and protectin class-switching from aspirin-acetylated COX-2 and the stop-signal reframing of chronic inflammatory disease research - [[immunology/tolerance-regulation]]); and the inflammasome-era - the NALP1 and cryopyrin work, the pyroptosis naming, and the CAPS familial cold urticaria patient genetics from the Hoffman clinical-genetics programme and the colchicine-revival-in-cardiology (the 2015-2020 cardiovascular anti-inflammatory trials (LoDoCo2, COLCOT and their contemporaries)) and the canakinumab IL-1beta atherosclerosis and cancer probes (the CANTOS-trial proof-of-concept-that-inflammation-lowers-events-and-the-price-tag-debate) - [[endocrine/diabetes-complications]], [[public-health/health-systems-economics]].**
-:::
+When the stimulus persists, the cell population changes from neutrophils to macrophages and lymphocytes, and repair by fibrosis begins alongside continuing injury: this is chronic inflammation, covered in [[pathology/chronic-inflammation-repair]]. The immune mechanisms that sustain it are developed in [[immunology/adaptive-responses]], and the clinical management of severe infection in [[infectious-diseases/fever-sepsis]].
 
 ::: summary
-- Acute inflammation is a vascular programme: mediator-driven arteriolar dilation, venular permeability and stasis deliver plasma proteins and then neutrophils to the site.
-- Mediators are a pharmacology syllabus in disguise - histamine, cyclo-oxygenase products, lipoxygenase products, kinins, complement and cytokines each with receptors, timing and drug targets.
-- The leukocyte adhesion cascade (rolling, activation, firm adhesion, transmigration, chemotaxis) is proven by the human diseases that break it and by the absence of pus those patients show.
-- Necrotic triggers mean the same machinery runs without a microbe: crystals, burns, infarcts and DAMPs cause sterile inflammation, and the inflammasome links them to IL-1.
-- The systemic response - fever, acute-phase proteins, leucocytosis, vasodilation - is the same mediators acting at a distance; that is both why we can measure inflammation and how it becomes sepsis.
-- Outcomes are resolution (active, mediator class switch), resolution with fibrosis (framework destroyed), abscess (source control needed), or chronicity - and knowing which is happening changes the prescription.
-:::
-
-::: exercise Order the inflammatory mediators {level=1}
-For each clinical feature - flush, wheal, fever, pain, thrombosis tendency, pus - name the dominant mediator or mechanism.
-::: solution
-**Feature-to-mediator-mapping ([[#def-vascular]], [[#def-cells]]): flush - arteriolar-dilation-by-histamine-prostacyclin-PGE2-with-nitric-oxide-synergy (the topical-vs-systemic-flush-pharmacology and the niacin-and-CaRB-agonist-erythromelalgia-differentials - [[cardiovascular/vascular-disease]]); wheal - venular-histamine-permeability with fibrin-rich fluid (the intradermal-test-physics and the H1-block-reduces-wheal-flare but-leaves-prostaglandin-components and the hereditary-angioedema-bradykinin-exception-where-antihistamines-and-steroids-fail - [[immunology/hypersensitivity]]); fever - hypothalamic PGE2 with COX-2 (the antipyretic-correction and the fever-of Unknown-origin-research-tool debate) - [[endocrine/hypothalamus-pituitary]]; pain - the mediator soup sensitising C-fibres (the hyperalgesia-primary-secondary-and-NSAID-site-of-action logic) - [[nervous-system/headache-pain]], [[surgery/anaesthesia-pain]]; thrombosis-tendency - tissue-factor-on-monocytes-and-endothelium-plus-PAI-1-plus-NETs-plus-fibrin-deposition (the immunothrombosis-DVT-in-infection-and-CVST-and-migratory-thrombophlebitis-occult-cancer-lesson) - [[blood/haemostasis-bleeding]], [[pathology/haemodynamics]]; pus - neutrophil-death-accumulation with liquefactive-enzymes (the staph-streptococcus-pyogens-associations and the "ubi pus,ubi evacuatio" translation and the white-cell-count-of-an-abscess-fluid-versus-blood) - [[surgery/wounds-surgical-infection]], [[microbiology/bacteria]].**
-:::
-:::
-
-::: exercise Explain a steroid blood count {level=2}
-Prednisolone 30mg daily, day 10, no infection: neutrophils 18, lymphocytes 0.9, eosinophils 0.1, platelets 480. Explain each line from inflammation physiology and state when to worry.
-::: solution
-**Count-interpretation-from-mediators ([[#def-systemic]], [[blood/haematopoiesis]], [[clinical-skills/laboratory-tests]]): neutrophilia - demargination (the half-life-in-circulation-doubling via adhesion-molecule-downregulation - the same-integrin-biology-reversed-from-LAD) plus accelerated-release from the marrow reserve plus delayed apoptosis (the corticosteroid survival signal so a count of 18-without-bands-or-toxic-change-on-day-10-is-expected; the worrying-version - left-shift-to-the-metamyelocyte-myelocyte-side with toxic granulation-Dohle-vacuoles or a falling count (the marrow-exhaustion-and-sepsis-consumption and drug-fever and the haematological-malignancy-red-flags - [[blood/leukaemia]]); lymphopenia - margination-into-lymphoid-tissue-and-apoptosis-of-subsets explaining 0.9 (the the redistribution plus apoptosis and the opportunistic-infection-threshold questions at prolonged-course lymphopenia - [[immunology/tolerance-regulation]]); eosinopenia - the steroid-marginalisation-and-apoptosis classic (the absence of eosinophilia not ruling out-drug-reaction-or-asthma when steroid-treated and the adrenal-insufficiency-contrast-of-eosinophilia - [[endocrine/adrenal]]); thrombocytosis - the IL-6-thrombopoietin-axis acute-phase platelet rise (the reactive-versus-essential-differentiation with ferritin-and-CRP-context and the JAK-allele exclusion when persistent) - [[blood/haemostasis-bleeding]], [[clinical-skills/laboratory-tests]].**
-:::
-:::
-
-::: exercise Diagnose the fever source {level=2}
-Day 5 post-laparotomy fever 39.2, CRP 210 falling from 260, wound bruised not red, chest clear, calf sore, drip site clean. Reason through the inflamed candidates and pick investigations using inflammation logic.
-::: solution
-**Postoperative-inflammation-reasoning ([[#def-systemic]], [[surgery/perioperative-care]], [[infectious-diseases/fever-sepsis]]): the-CRP-trajectory-teaching - the-normal-day-3-peaked-CRP-that-is-now-falling says the surgical-inflammatory-response-is-on-plan-so-the-new-48-hour-fever-against-falling-CRP-points somewhere the resection did not (the CRP-half-life-46-hour-arithmetic and the double-signal rule when CRP plateaus high); the anatomical-5-Ws-plus-more - wind (the atelectasis-myth-correction: pneumonia-not-lobar-collapse-fevers and the aspirated-secretions-cultures and chest-imaging-limited-yield-early but keep for hypoxaemia) - [[respiratory/respiratory-infections]]; water (urine - catheter-and-CAUTI-reasoning and the dipstick-versus-culture-versus-asymptomatic-bacteriuria-discipline - [[renal/urinary-tract]]); wound (deep-versus-superficial-surgical-site-infection and the bruised-not-red rule and the opening-the-wound-through-the-staple-line-diagnostic-act - [[surgery/wounds-surgical-infection]]); walking (the calf - the DVT fever-low-grade-unless-extensive-with-a-swollen-painful-calf and the Wells-not-validated-inpatient-plus-D-dimer-useless-postop-plus-compression-ultrasound pathway - [[cardiovascular/vascular-disease]], [[pathology/haemodynamics]]); wonder-drugs-and-lines (the infusion-site-and-CLABSI-and-drug-fever-diagnosis-of-exclusion-with-eosinophils-absent-on-steroids-caveat and the defervescence-48-72h-after-stopping-test) - [[infectious-diseases/healthcare-infections]]; and the fire-setting - the blood-cultures-x2-before-antibiotics-and-the-targeted-C.diff-and-sputum-and-wound-swab-panel (the line-infection-bundle-decision) and the contrast imaging threshold and the ICU-escalation-when-organ-dysfunction-signs (the qSOFA-SOFA-pragmatics) and the do-not-attend-the-fever-with an antibiotic-change broadcast principle - [[microbiology/laboratory-diagnosis]], [[clinical-skills/clinical-reasoning]].**
-:::
-:::
-
-::: exercise Design an anti-resolved-inflammation trial {level=3}
-Chronic-disease pharma asks you to design a trial testing whether enhancing resolution helps knee osteoarthritis. Deliver the mechanistic rationale, endpoints, risks and the counter-hypothesis.
-::: solution
-**Designing-a-pro-resolving-trial ([[#def-vascular]], [[#def-cells]], [[epidemiology-ebm/randomised-trials]], [[musculoskeletal/osteoarthritis]]): the rationale - the synovitis and effusion-pain trial biology, the IL-1 pathway attempts that failed, and the low-grade metainflammation of obesity - [[endocrine/diabetes-complications]], [[musculoskeletal/inflammatory-arthritis]]; the intervention options graded - the high-dose omega-3 precursor approaches with their disappointing critical-care trial history (the peri-operative-fish-oil-trial-saga) and the stable-synthetic-analogues-and-receptor-agonists (the preclinical-stage-realism that this is a Phase-1-frontier-disease) and the indirect routes (the metformin and NLRP3-inhibitor OA trials with their own mechanistic claims - [[endocrine/diabetes]]); the endpoint architecture - the patient-important-core-set (pain-function-QoA, the WOMAC-OARSI-responder-analysis and rescue-medication-use and the placebo-response-magnitude-in-OA-trials-that-destroys-many-designs and the within-person-variability) and structure-endpoints (the cartilage-volume-MRI-precision-programs-with-MMRI-trials-with-weak-drug-placebo-differences and the JSN-regulatory-scepticism and the total-knee-replacement-as-hard-long-endpoint-trials) - [[epidemiology-ebm/measuring-disease]], [[epidemiology-ebm/statistics-for-clinicians]]; the risks and ethics - the-enhancing-resolution-should-not-increase-infection-but-must-prove-it (the infection-and-malignancy-safety-panels-lessons-from-anti-cytokine-era) and the wound-healing-and-steroid-co-use-confounds and the enrichment-strategy (the inflammatory-biomarker-subset-with-CRP-synovitis-MRI-selective-enrolment debate); and the counter-hypothesis to survive - that resolution-enhancement-matters-most-early (the post-injury-menis-and-ACL-OA-prevention-window reasoning and the primary-prevention-trial-length-and-ethics problems) and that the inflammation of OA is mechanobiological and metabolic with bystander components so pro-resolution-agents-help-symptoms-not-structure - a design that can answer both (the factorial-and-platform-approach with registry linkage) - [[epidemiology-ebm/systematic-reviews]], [[public-health/health-systems-economics]].**
-:::
+- Acute inflammation is a rapid, short response that brings fluid, protein and neutrophils to the site of infection or injury. Its cardinal signs are redness, heat, swelling, pain and loss of function.
+- Triggers are recognised by innate receptors such as Toll-like receptors and the inflammasome.
+- Vascular events: vasodilation, increased permeability of venules and stasis. An exudate (high protein) indicates increased permeability; a transudate (low protein) indicates a pressure imbalance. Light's criteria separate them in pleural fluid.
+- Leucocytes leave the blood by margination, selectin-mediated rolling, integrin-mediated adhesion, transmigration and chemotaxis, then kill microbes by phagocytosis and the respiratory burst.
+- Mediators include histamine, prostaglandins, leukotrienes, cytokines (TNF, IL-1, IL-6), complement, kinins and nitric oxide. Most are short-lived, and many are drug targets.
+- Patterns: serous, fibrinous, suppurative (abscess) and ulcer. Abscesses need drainage.
+- Systemic effects: fever via PGE₂, acute-phase proteins (CRP, fibrinogen, hepcidin), raised ESR and leucocytosis.
+- Outcomes: resolution (an active process), scarring, abscess or chronic inflammation.
 :::
 
 ## Exercises
 
-::: exercise Write the exudate note {level=1}
-Pleural fluid: protein 42 g/L, LDH 480, glucose 2.1, pH 7.05, neutrophil-predominant. Say what it is, why, and what the numbers mean physically.
+::: exercise Explain the signs {level=1}
+For each cardinal sign of acute inflammation, give the underlying mechanism and one mediator responsible.
 ::: solution
-**Exudate-mechanics ([[#def-vascular]], [[respiratory/respiratory-infections]]): the protein-ratio-and-LDH-ratio-with-serum and the transudate-exudate-boundaries-and-diuretic-reshaping-gradient-caveat the serum-effusion albumin and protein gradients and the pseudo-exudate story; the-neutrophilic-high-acidity-low-glucose-pattern - bacterial-parapneumonic-or-empyema-versus-rheumatoid-pleural-versus-tuberculous-early-versus-oesophageal-rupture-low-pH-low-glucose-urgent-check (the LDH-as-cell-death-marker-and-glucose-as-leukocyte-consumption-and-bacterial-feast and pH-metre-versus-blood-gas-tube technique) - [[respiratory/lung-cancer-pleura]], [[infectious-diseases/fever-sepsis]]; the-fibrin-loculation-clinical-correlate - the-fibrinogen-leakage-polymerises-in-acidic-slow-flow-spaces-and-organising-effusions-need-intrapleural-tPA-DNase-or-VATS (the MIST-1-and-2-trial-heritage) and the chest-drain sizing-versus-comfort-versus-occlusion data - [[respiratory/lung-cancer-pleura]], [[surgery/wounds-surgical-infection]]; and the differential-habits - send-culture-before-antibiotics-and-glucose-with-a-fresh-sample-and-pH-at-the-bedside-and-cytology-times-thrice-for-malignancy-sensitivity-and-the-adenosine-deaminase-for-TB-pleurisy-interpretation (the pre-test-probability-rule) - [[microbiology/laboratory-diagnosis]], [[infectious-diseases/tuberculosis]].**
+Redness and heat: arteriolar dilation, from histamine, nitric oxide and prostaglandins. Swelling: increased venular permeability with leakage of protein-rich fluid, from histamine, bradykinin and leukotrienes C₄, D₄ and E₄. Pain: sensitisation and stimulation of nerve endings by bradykinin and prostaglandin E₂, and pressure from swelling. Loss of function: the combined effect of pain and swelling.
 :::
 :::
 
-::: exercise Prescribe around the cascade {level=1}
-List which step of the acute-inflammatory pathway each of these interrupts: antihistamine, NSAID, colchicine, corticosteroid, anakinra, anti-TNF, montelukast.
+::: exercise Absolute neutrophil count {level=1 check="9.6"}
+A full blood count shows a white cell count of $12.0 \times 10^9$/L with 80% neutrophils. What is the absolute neutrophil count in $10^9$/L? Give the exact value.
 ::: solution
-**Cascade-pharmacology-mapping ([[#def-vascular]], [[#def-cells]], [[immunology/innate-immunity]]): antihistamines-H1-receptor-blockade-of-histamine-induced-dilation-and-permeability-and-pruritus (why-they-neglect-cough-and-do-little-in-neutrophilic-exudates-and-why-H2-adds-acid-and-some-vascular-control) - [[pharmacology/adverse-reactions]]; NSAIDs-COX-blockade-of-PGI2-PGE2-TXA2 (analgesia-antipyresis-some-swelling-control-with-the-renal-and-GI-and-platelet-side-lessons and the paracetamol-centrality-mystery-still-not-fully-solved) - [[surgery/anaesthesia-pain]] -; colchicine-tubulin-binding-and-arrested-leukocyte-motility-and-inflammasome-effects (the crystal arthritis and pericarditis and the LoDoCo secondary-prevention role and the diarrhoea-toxicity) - [[cardiovascular/coronary-artery-disease]]; corticosteroids-nuclear-receptor-transrepression-of-NF-kB-and-AP1-with-PLA2-and-COX2-and-cytokine-and-adhesion-molecule-downregulation-plus-demargination-plus-eosinophil-and-lymphocyte-trafficking-changes (the broad-blade profile and the hyperglycaemia and infection thresholds) - [[endocrine/adrenal]], [[immunology/tolerance-regulation]]; anakinra-IL1-receptor-antagonist (crystal and autoinflammatory and cytokine-release syndromes) and anti-TNF (the granuloma-integrity-and-TB-and-hepatitis-B reactivation safety net) and montelukast-CysLT1-blockade (the asthma-crowding-in with the neuropsychiatric-label watch) - [[respiratory/asthma-copd]], [[infectious-diseases/tuberculosis]], [[immunology/innate-immunity]].**
+$12.0 \times 0.80 = 9.6 \times 10^9$/L, a neutrophilia (the usual upper limit is about $7.5 \times 10^9$/L, varying by laboratory).
 :::
 :::
 
-::: exercise Explain a normal CRP {level=2}
-A nursing-home resident with new confusion has a hip abscess and CRP 8 rising to 60 after fluid resuscitation. Explain the mediators and the teaching points.
+::: exercise Name the pattern {level=1}
+Name the morphological pattern of inflammation: (a) a blister after a scald; (b) the pericardium after a myocardial infarction, with a friction rub; (c) a boil on the neck; (d) a defect in the gastric mucosa.
 ::: solution
-**C-reactive-protein-as-IL-6-reporter ([[#def-systemic]], [[geriatrics-palliative/delirium-dementia-care]], [[clinical-skills/laboratory-tests]]): the kinetics - IL-6-driven-hepatic-CRP-with-19-hour-lag-and-46-hour-half-life-and-the-"too-early-to-be-high-and-too-late-to-be-normal" windows and the blunted synthesis in liver disease and malnutrition  - [[gastrointestinal/liver-function]]; the clinical-physics - why shock and an early walled-off abscess understate the signal and why reperfusion and drainage unmask it (the post-drain-CRP-rise-kinetics-education for families alarmed that "it's higher after the operation") and the neutrophil-count-normal-in-the-frail-with-limited-marrow-reserve (the left-shift-and-toxic-change-look and the steroid-demargination-confounder) - [[blood/haematopoiesis]]; the geriatric-frame - delirium-as-the-inflammation-phenotype-in-the-brain (the cytokine-sickness-behaviour-and-blood-brain-barrier-permeability-teaching and the anticholinergic-burden-audit-during-infection) - [[geriatrics-palliative/delirium-dementia-care]], [[geriatrics-palliative/polypharmacy]]; and the protocol fixes - the sepsis-bundle-application-to-frail-hips with source imaging (the ultrasound-guided-hip-aspiration and the MRI-for-occult-femoral-osteomyelitis-myositis) and the recheck kinetics and clinical review, not CRP chasing-and-the-goals-of-care-conversation-when-recurrent-sepsis-signals-the-end-of-life-trajectory - [[geriatrics-palliative/end-of-life-care]], [[infectious-diseases/fever-sepsis]].**
+(a) Serous. (b) Fibrinous. (c) Suppurative, forming an abscess. (d) Ulcer.
 :::
 :::
 
-::: exercise Debate resolution as a drug target {level=3}
-Should a trial of a resolvin analogue for unresolved post-surgical inflammation proceed? Appraise mechanism, preclinical evidence quality, endpoints and the chronic-disease market logic.
+::: exercise Light's criteria {level=2 check="round(25/70*100)/100"}
+A pleural fluid has protein 25 g/L and LDH 90 U/L; the serum has protein 70 g/L and LDH 200 U/L, with an upper limit of normal of 250 U/L. Calculate the protein ratio, rounded to two decimal places, and say whether the fluid is an exudate or a transudate.
+::: hint
+Test all three of Light's criteria.
+:::
 ::: solution
-**Translational-appraisal ([[#def-vascular]], [[#def-cells]], [[epidemiology-ebm/randomised-trials]]): the mechanism case - pro-resolving mediators act on receptors to halt neutrophil recruitment, promote non-inflammatory efferocytosis and restore tissue homeostasis - a programme, not an analgesic - [[immunology/tolerance-regulation]]; the preclinical-quality-scrutiny - the-rodent-models-of-peritonitis-corneal-injury-and-dental-extraction-with-dose-window-timing-effects (mediators given late on an established infiltrate may not clear it and the resolution-transfer experiments' elegance and limits) and the cell-model-artefacts and the lack-of-standardised-resolution-endpoints (the "resolution index" definitions problem) and the publication-partiality-of-pro-inflammatory-bias (the journals-love-pathways-phenomenon); the endpoint problem - composite-resolution-endpoints (time-to-symptom-and-medications-and-biomarker-normalisation-and-imaging-returns) versus hard-surgical-endpoints (dehiscence-SSI-LOS-chronic-pain) and patient-anchored-outcomes-chronic-post-surgical-pain-and-fatigue (the no-man's-land-where-resolvents-fail-or-fly) - [[epidemiology-ebm/measuring-disease]]; and the development logic - the-place-in-a-pathway-already-drugged-by-NSAIDs-and-steroids-and-what-a-resolvent-does-not-do (no immunosuppression signal is the selling point and the infection-challenge-trial needed) and the metabolic-stability-and-dosing and the market-logic-vs-unmet-need-audit (the acute-indication-short-trials-cheap-versus-chronic-inflammation-obesity-athero-fibrosis-long-trials-expensive) and the honest precedent-listing (the omega-3-prevention-trials-inconclusive read and the fish-oil-supplement-overclaim caution) - [[public-health/health-systems-economics]], [[pharmacology/drug-development-prescribing]].**
+Protein ratio $= 25/70 = 0.357\ldots$, which rounds to 0.36 (not above 0.5). LDH ratio $= 90/200 = 0.45$ (not above 0.6). Two-thirds of 250 is about 167, and 90 is below it. No criterion is met, so the fluid is a **transudate**, suggesting heart failure, cirrhosis or hypoalbuminaemia rather than inflammation.
+:::
+:::
+
+::: exercise CRP half-life {level=2 check="round(19*log2(160/10))"}
+After drainage of an abscess, a patient's CRP is 160 mg/L. Assuming production stops at once and the half-life is 19 hours, how many hours until CRP reaches 10 mg/L? Round to the nearest hour.
+::: solution
+$160 \to 10$ is a 16-fold fall, which is $\log_2 16 = 4$ half-lives. $4 \times 19 = 76$ hours.
+:::
+:::
+
+::: exercise The child with no pus {level=2}
+A 9-month-old boy had delayed separation of the umbilical cord and now has recurrent skin infections that form no pus. His neutrophil count is persistently very high. Which defect is most likely, and why is the blood count high while the tissues contain few neutrophils?
+::: solution
+**Leucocyte adhesion deficiency type 1**, caused by a defect in the β2 integrin CD18. Neutrophils cannot adhere firmly to endothelium or migrate out of vessels, so they stay in the blood (a high count) and fail to reach the tissues, which therefore contain little pus. Delayed separation of the umbilical cord is a classic early sign, because neutrophils are needed for the cord to separate.
+:::
+:::
+
+::: exercise A swollen joint {level=3}
+A 62-year-old man wakes with a hot, red, swollen first metatarsophalangeal joint. His temperature is 37.9 °C, the white cell count is $13 \times 10^9$/L and CRP is 85 mg/L. Joint fluid contains many neutrophils and needle-shaped crystals that are negatively birefringent. Explain how the crystals produce acute inflammation, and why the systemic markers do not distinguish this from septic arthritis.
+::: hint
+Think of the inflammasome.
+:::
+::: solution
+The crystals are monosodium urate, so the diagnosis is gout. Urate crystals are phagocytosed by macrophages in the joint. They activate the **NLRP3 inflammasome**, which activates caspase-1 and releases IL-1β. IL-1β activates endothelium, recruits neutrophils and causes the local signs. Neutrophils that engulf crystals release enzymes and oxidants, adding to the damage. The systemic signs, a raised temperature, neutrophilia and raised CRP, are driven by IL-1, TNF and IL-6 whatever the trigger, so they are the same in gout and in septic arthritis. That is why joint aspiration with microscopy, crystal examination and culture is essential: the two can even coexist. This mechanism is also why IL-1 blockade is used in some cases of gout that do not respond to standard treatment.
+:::
+:::
+
+::: exercise Why a fever? {level=3}
+A student argues that fever is simply a harmful by-product of infection and should always be treated. Using the mechanism of fever and the actions of the mediators involved, give a balanced reply.
+::: solution
+Fever is produced deliberately: IL-1, TNF and IL-6 induce COX-2 in the hypothalamus, and PGE₂ raises the temperature set point, so the body conserves and generates heat until the new set point is reached. Raised temperature slows the growth of some microbes and enhances some immune functions, which suggests a protective role. On the other hand, fever raises metabolic rate and oxygen demand, which may harm a person with heart or lung disease, causes discomfort, and in young children can trigger febrile seizures. Treating fever with paracetamol or an NSAID lowers the set point and improves comfort, but does not treat the cause. The balanced view is that fever is a regulated response, not a malfunction; it is treated for comfort and in specific risk groups according to guidance, and its cause is always sought.
 :::
 :::
