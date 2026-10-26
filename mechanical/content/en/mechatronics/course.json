@@ -8,25 +8,24 @@
   "tagline": "Sensors, signal conditioning and data acquisition, microcontrollers, electric motors and drives, hydraulic and pneumatic actuators, and motion control",
   "summary": "Mechatronics combines mechanisms, electronics and software into machines that sense and act. The course covers sensors, signal conditioning and data acquisition, microcontrollers and real-time software, DC, stepper and brushless motors and their drives, hydraulic and pneumatic actuation, and closed-loop motion control, ending with the design of complete mechatronic systems.",
   "overview": [
-    "Mechatronics is the discipline that integrates mechanical engineering, electronics, control theory, and computer science into the design of intelligent machines. The word was coined in 1969 by Tetsuro Mori of Yaskawa Electric Corporation, but the practice is as old as the centrifugal governor: any machine that senses its own state and acts to correct it is a mechatronic system. Today, mechatronics is the dominant design paradigm in manufacturing, automotive, aerospace, medical, and consumer engineering. A modern CNC machine contains over 100 sensors, 20 actuators, 50 microcontrollers, and 10 million lines of code; a modern car contains over 100 ECUs and 150 sensors; a modern robot contains over 50 sensors and 20 actuators.",
-    "This course covers the complete mechatronic design chain: sensors and signal conditioning, microcontrollers and embedded software, electric and fluid-power actuators, motion control, and system integration. Each lesson builds on the previous one, and the course ends with the design of complete mechatronic systems. The quantitative tools are the sensor characteristics (accuracy, resolution, bandwidth), the signal conditioning (amplification, filtering, ADC), the microcontroller architecture (CPU, memory, peripherals), the motor theory (torque-speed curve, back-EMF, torque constant), the fluid power (force-velocity curve, valve flow), the motion control (trajectory planning, PID, impedance), and the system integration (architecture, power supply, EMC, reliability).",
-    "The course is designed for third-year mechanical engineering students who have completed courses in control systems, electronics, and mechanics of materials. The course assumes familiarity with Laplace transforms, transfer functions, PID control, operational amplifiers, and basic mechanics. The course is not a course in electronics or computer science; it is a course in the integration of electronics, computer science, and mechanics into machines that sense and act.",
-    "The course is organized into eight lessons. The first lesson introduces the mechatronic system architecture and the sensor-actuator selection. The second lesson covers sensors for position, force, and temperature measurement. The third lesson covers signal conditioning and data acquisition. The fourth lesson covers microcontrollers and embedded software. The fifth lesson covers electric motors and drives. The sixth lesson covers hydraulic and pneumatic actuators. The seventh lesson covers motion control. The eighth lesson covers system integration, including power supply design, EMC, and reliability analysis.",
-    "The course is taught with a strong emphasis on quantitative analysis. Every lesson contains worked examples with numerical answers, exercises with check values, and widget plots that visualize the relationships between the parameters. The course is designed to be self-contained: the student who completes the course will be able to design a complete mechatronic system from the sensor to the actuator, from the signal conditioning to the control algorithm, and from the power supply to the EMC."
+    "Mechatronics is the design of machines in which mechanisms, electronics and software work together: sensors measure the state of a mechanical process, a digital controller decides what to do, and power electronics drive actuators that act on the process. The inkjet printer, the anti-lock brake, the robot arm, the CNC machine tool and the 3D printer are all mechatronic systems, and in each the precision and flexibility come less from the mechanism itself than from feedback — an imprecise mechanism inside a well-designed loop behaves as a precise one.",
+    "The course follows the signal path around such a loop. It starts with the elements of a mechatronic system and the circuit basics needed to connect them (dividers and loading, RC circuits, inductive loads and transistor switches), then covers sensors and their static and dynamic specifications, the conditioning of their signals (operational amplifiers, bridges, filters, noise) and their conversion to numbers (quantisation, sampling and aliasing). The microcontroller chapter deals with what happens inside the controller — number formats, timers and PWM, interrupts, real-time scheduling and the implementation of a digital PID controller.",
+    "The second half turns to actuation and control: DC, stepper and brushless motors with their models, drives and gearing; hydraulic and pneumatic actuators, including the orifice equation and the hydraulic natural frequency; and motion control of servo axes — trajectory generation, PD and PID control, feedforward, friction and mechanical resonance. The final chapter treats the system as a whole: requirements, error, power and thermal budgets, electromagnetic compatibility, reliability, functional safety, and case studies.",
+    "The course assumes the control-systems course (transfer functions, time and frequency response, PID control) and basic mechanics. Its difficulty lies in the interfaces between domains: most failures of real mechatronic systems come from an interaction that no single-domain analysis shows — a ground loop, an aliased PWM ripple, a resonance inside the loop, a safety function left to ordinary software. Each chapter therefore works quantitative examples across those boundaries, and the exercises ask for numbers as well as for design judgement."
   ],
   "prerequisites": [
     "control-systems"
   ],
   "outcomes": [
-    "Select the appropriate sensor for a given application based on accuracy, resolution, bandwidth, linearity, and environment.",
-    "Design a signal conditioning circuit with the required gain, bandwidth, CMRR, and anti-aliasing filter for a given sensor.",
-    "Select the appropriate microcontroller for a given control application based on execution time, memory, peripherals, and real-time performance.",
-    "Calculate the torque-speed curve, back-EMF, and stall torque of a DC motor, and select the appropriate motor drive for a given application.",
-    "Calculate the force, velocity, and power of a hydraulic or pneumatic cylinder, and select the appropriate valve for a given application.",
-    "Design a trajectory profile (trapezoidal, S-curve) and a PID controller for a given positioning application.",
-    "Analyze the electromagnetic compatibility of a mechatronic system and design the grounding, shielding, and filtering to meet the EMC requirements.",
-    "Calculate the system reliability and MTBF for a series or parallel redundant system, and design the redundancy to meet the reliability requirements.",
-    "Integrate the sensors, signal conditioning, controller, actuator, power supply, and communication into a complete mechatronic system."
+    "Identify the sensors, signal conditioning, controller, drivers, actuators and process of a mechatronic system, and draw up its error, timing and power budgets.",
+    "Calculate loading errors, RC time constants and the switching transients of inductive loads, and specify protection for transistor drivers.",
+    "Select a sensor for a measurement from its static and dynamic specifications, including encoders, strain gauges, accelerometers and temperature sensors.",
+    "Design an amplifier, bridge and anti-aliasing filter chain for a sensor, and calculate its resolution, noise and alias frequencies.",
+    "Configure microcontroller timers and PWM, check the schedulability of periodic tasks, and implement a discrete PID controller with anti-windup.",
+    "Model DC, stepper and brushless motors, calculate torque–speed characteristics, time constants, gear ratios and rms torque, and size a motor and drive.",
+    "Calculate the forces, flows, power and efficiency of hydraulic and pneumatic components, and the hydraulic natural frequency of a valve-controlled actuator.",
+    "Plan trajectories and tune PD and PID position loops with feedforward, and estimate the limits set by friction, sampling and mechanical resonance.",
+    "Assess the reliability, electromagnetic compatibility and functional safety of a mechatronic design, and integrate its parts into a working system."
   ],
   "chapters": [
     {
@@ -64,7 +63,7 @@
     {
       "slug": "electric-actuators",
       "title": "Electric motors and drives",
-      "summary": "DC, stepper and brushless motors, their models and torque\u2013speed curves, and H-bridges and motor drives.",
+      "summary": "DC, stepper and brushless motors, their models and torque–speed curves, and H-bridges and motor drives.",
       "requires": [
         "mechatronics/mechatronic-systems"
       ]
@@ -100,98 +99,133 @@
     {
       "year": 1788,
       "title": "Watt's centrifugal governor",
-      "detail": "James Watt invents the centrifugal governor, the first feedback control system, which is the foundation of mechatronics."
+      "detail": "James Watt fits a flyweight governor to his rotative steam engines to regulate their speed — sensor, controller and actuator in one mechanism; James Clerk Maxwell analyses the stability of governors in 1868.",
+      "people": [
+        "James Watt"
+      ]
+    },
+    {
+      "year": 1795,
+      "title": "The hydraulic press",
+      "detail": "Joseph Bramah patents the hydraulic press, applying Pascal's principle of the transmission of pressure to multiply force.",
+      "people": [
+        "Joseph Bramah"
+      ]
     },
     {
       "year": 1821,
-      "title": "Faraday's electromagnetic rotation",
-      "detail": "Michael Faraday demonstrates electromagnetic rotation, the foundation of the electric motor."
+      "title": "Electromagnetic rotation",
+      "detail": "Michael Faraday demonstrates continuous rotation of a current-carrying wire around a magnet, the principle of the electric motor.",
+      "people": [
+        "Michael Faraday"
+      ]
     },
     {
-      "year": 1835,
-      "title": "Wheatstone bridge",
-      "detail": "Charles Wheatstone publishes the Wheatstone bridge, the foundation of the strain gauge measurement."
+      "year": 1938,
+      "title": "The bonded resistance strain gauge",
+      "detail": "Arthur Ruge at MIT and Edward Simmons at Caltech independently develop the bonded wire strain gauge, the basis of load cells and pressure transducers; the patent is granted to Simmons in 1942.",
+      "people": [
+        "Arthur C. Ruge",
+        "Edward E. Simmons"
+      ]
     },
     {
-      "year": 1942,
-      "title": "Ziegler-Nichols tuning",
-      "detail": "Ziegler and Nichols publish the Ziegler-Nichols PID tuning method, the most widely used PID tuning method."
+      "year": 1952,
+      "title": "Numerically controlled milling",
+      "detail": "The MIT Servomechanisms Laboratory demonstrates a milling machine whose servo-driven axes follow coordinates read from punched tape, following a proposal by John T. Parsons.",
+      "people": [
+        "John T. Parsons"
+      ]
     },
     {
       "year": 1969,
-      "title": "Mechatronics coined",
-      "detail": "Tetsuro Mori of Yaskawa Electric Corporation coins the word 'mechatronics', combining 'mechanics' and 'electronics'."
+      "title": "The word mechatronics",
+      "detail": "Tetsuro Mori, an engineer at Yaskawa Electric, coins the word mechatronics; Yaskawa registers it as a trademark in 1972 and later releases it for general use.",
+      "people": [
+        "Tetsuro Mori"
+      ]
     },
     {
       "year": 1971,
-      "title": "Intel 4004 microprocessor",
-      "detail": "Intel introduces the 4004, the first commercial microprocessor, which is the foundation of the microcontroller."
+      "title": "The microprocessor",
+      "detail": "Intel's 4004 puts a CPU on one chip; Texas Instruments' single-chip TMS1000 microcontroller family, designed by Gary Boone and Michael Cochran, follows commercially in 1974.",
+      "people": [
+        "Federico Faggin",
+        "Ted Hoff",
+        "Gary Boone",
+        "Michael Cochran"
+      ]
     },
     {
-      "year": 1997,
-      "title": "First autonomous vehicle",
-      "detail": "Carnegie Mellon University develops Navlab, the first autonomous vehicle, which is the foundation of the autonomous vehicle."
+      "year": 1973,
+      "title": "Rate-monotonic scheduling",
+      "detail": "C. L. Liu and James Layland publish the utilisation bound for scheduling periodic real-time tasks with fixed priorities, the basis of real-time operating systems.",
+      "people": [
+        "C. L. Liu",
+        "James W. Layland"
+      ]
     },
     {
-      "year": 2010,
-      "title": "ARM Cortex-M microcontroller",
-      "detail": "ARM introduces the Cortex-M microcontroller, the most widely used microcontroller in embedded systems."
+      "year": 1978,
+      "title": "Electronic anti-lock braking",
+      "detail": "Bosch's electronic four-wheel anti-lock braking system enters series production on the Mercedes-Benz S-Class; Bosch presents the CAN bus in 1986.",
+      "people": []
+    },
+    {
+      "year": 2004,
+      "title": "VDI 2206",
+      "detail": "The German engineering society VDI publishes guideline VDI 2206, a V-model design methodology for mechatronic systems (revised 2021).",
+      "people": []
     }
   ],
   "references": [
     {
-      "author": "Alciatore, A. and Histand, M.",
-      "year": 2016,
       "title": "Introduction to Mechatronics and Measurement Systems",
-      "publisher": "McGraw-Hill",
-      "edition": "5th"
+      "authors": "D. G. Alciatore",
+      "year": 2019,
+      "note": "5th edition (McGraw-Hill). The standard undergraduate text: circuits, semiconductors, sensors, data acquisition, microcontrollers and actuators, with many worked examples."
     },
     {
-      "author": "Bolton, W.",
-      "year": 2015,
       "title": "Mechatronics: Electronic Control Systems in Mechanical and Electrical Engineering",
-      "publisher": "Pearson",
-      "edition": "6th"
+      "authors": "W. Bolton",
+      "year": 2015,
+      "note": "6th edition (Pearson). Broad, accessible coverage of sensors, signal conditioning, actuators, PLCs and system models."
     },
     {
-      "author": "Dorf, R.C. and Bishop, R.H.",
-      "year": 2017,
-      "title": "Modern Control Systems",
-      "publisher": "Pearson",
-      "edition": "14th"
-    },
-    {
-      "author": "Astrom, K.J. and Hagglund, T.",
-      "year": 2006,
-      "title": "Advanced PID Control",
-      "publisher": "ISA"
-    },
-    {
-      "author": "Fraden, J.",
-      "year": 2016,
-      "title": "Handbook of Modern Sensors",
-      "publisher": "Springer",
-      "edition": "5th"
-    },
-    {
-      "author": "Doebelin, E.O.",
-      "year": 2004,
       "title": "Measurement Systems: Application and Design",
-      "publisher": "McGraw-Hill",
-      "edition": "5th"
+      "authors": "E. O. Doebelin",
+      "year": 2004,
+      "note": "5th edition (McGraw-Hill). Thorough treatment of sensor principles and static and dynamic characteristics of measurement systems."
     },
     {
-      "author": "Paul, C.R.",
-      "year": 2006,
-      "title": "Introduction to Electromagnetic Compatibility",
-      "publisher": "Wiley",
-      "edition": "2nd"
+      "title": "The Art of Electronics",
+      "authors": "P. Horowitz and W. Hill",
+      "year": 2015,
+      "note": "3rd edition (Cambridge University Press). The practical reference for op-amp circuits, filters, noise, converters, grounding and shielding."
     },
     {
-      "author": "Joyce, B.",
-      "year": 2003,
-      "title": "Mechatronics: An Integrated Approach",
-      "publisher": "Prentice-Hall"
+      "title": "Electric Motors and Drives: Fundamentals, Types and Applications",
+      "authors": "A. Hughes and B. Drury",
+      "year": 2019,
+      "note": "5th edition (Newnes). Clear physical explanations of DC, stepper, induction and brushless motors and their drives."
+    },
+    {
+      "title": "Hydraulic Control Systems",
+      "authors": "H. E. Merritt",
+      "year": 1967,
+      "note": "Wiley. The classical analysis of valves, valve-controlled actuators and the hydraulic natural frequency; still the basis of hydraulic servo design."
+    },
+    {
+      "title": "Digital Control of Dynamic Systems",
+      "authors": "G. F. Franklin, J. D. Powell and M. L. Workman",
+      "year": 1998,
+      "note": "3rd edition (Addison-Wesley). Sampled-data control, sampling-rate selection, quantisation and the design of digital controllers, with a disk-drive servo case study."
+    },
+    {
+      "title": "Electromagnetic Compatibility Engineering",
+      "authors": "H. W. Ott",
+      "year": 2009,
+      "note": "Wiley. Grounding, shielding, cabling, decoupling and the control of emissions and susceptibility in electronic systems."
     }
   ],
   "next": [

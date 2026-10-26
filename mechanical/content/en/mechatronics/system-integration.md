@@ -1,527 +1,268 @@
-The mechatronic system integration is the most complex design task: the mechatronic system integration is the process of combining the sensors, signal conditioning, controller, actuator, power supply, and communication into a single system, and the mechatronic system integration is the process that determines the performance of the machine. **The engineer who designs the mechatronic system integration without checking the system architecture is not designing the mechatronic system; they are designing a system that will fail by integration.** The system integration design is the reason the engineer can design the mechatronic system to be safe, and the safety is the reason the system integration is the most critical component in the machine.
+The previous chapters treated the parts of a mechatronic system one at a time: sensors, conditioning, the microcontroller, motors, fluid power, motion control. A machine is more than its parts. Components that each meet their specification can still fail together: a motor drive's switching noise corrupts a load-cell signal, regenerated braking energy over-volts the supply, a heat sink sized for the average power lets a transistor cook during a peak, an error budget that added the parts' accuracies optimistically leaves the machine out of tolerance, and a guard interlock implemented in ordinary software fails the first time the program hangs. **System integration** is the discipline of designing the parts so that the whole works — and fails safely when it does not.
 
-The quantitative tools of system integration are the **system architecture** (functional decomposition, interface design, signal flow), the **power supply design** (voltage regulation, ripple, efficiency), the **electromagnetic compatibility** (shielding, grounding, filtering), and the **reliability analysis** (MTBF, failure modes, redundancy). The tools are the language in which the system integration analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+This chapter collects the system-level tools: the design process and requirements, error budgets, power and thermal budgets, electromagnetic compatibility and grounding, reliability, and functional safety. It ends with case studies that bring the course together: the inkjet printer carriage, anti-lock braking, and a 3D-printer axis.
 
-::: warning Nine ways system integration goes wrong
-**Not checking the system architecture.** The engineer who designs the mechatronic system integration without checking the system architecture is not designing the mechatronic system; they are designing a system that will fail by integration. **The system architecture is the reason the system is designed for the integration, not the component, and the integration is the reason the system is the most critical component in the machine.** **Not checking the power supply.** The engineer who designs the mechatronic system integration without checking the power supply is not designing the mechatronic system; they are guessing. **The power supply is the reason the system is designed for the ripple, not the voltage, and the ripple is the reason the system is the most critical component in the machine.** **Not checking the electromagnetic compatibility.** The engineer who designs the mechatronic system integration without checking the electromagnetic compatibility is not designing the mechatronic system; they are guessing. **The electromagnetic compatibility is the reason the system is designed for the EMC, not the performance, and the EMC is the reason the system is the most critical component in the machine.** **Not checking the grounding.** The engineer who designs the mechatronic system integration without checking the grounding is not designing the mechatronic system; they are guessing. **The grounding is the reason the system is designed for the ground loops, not the voltage, and the ground loops are the reason the system is the most critical component in the machine.** **Not checking the thermal management.** The engineer who designs the mechatronic system integration without checking the thermal management is not designing the mechatronic system; they are guessing. **The thermal management is the reason the system is designed for the temperature, not the power, and the temperature is the reason the system is the most critical component in the machine.** **Not checking the reliability.** The engineer who designs the mechatronic system integration without checking the reliability is not designing the mechatronic system; they are guessing. **The reliability is the reason the system is designed for the MTBF, not the performance, and the MTBF is the reason the system is the most critical component in the machine.** **Not checking the safety.** The engineer who designs the mechatronic system integration without checking the safety is not designing the mechatronic system; they are guessing. **The safety is the reason the system is designed for the safety, not the performance, and the safety is the reason the system is the most critical component in the machine.** **Not checking the communication.** The engineer who designs the mechatronic system integration without checking the communication is not designing the mechatronic system; they are guessing. **The communication is the reason the system is designed for the data rate, not the distance, and the data rate is the reason the system is the most critical component in the machine.** **Not checking the software architecture.** The engineer who designs the mechatronic system integration without checking the software architecture is not designing the mechatronic system; they are guessing. **The software architecture is the reason the system is designed for the real-time performance, not the features, and the real-time performance is the reason the system is the most critical component in the machine.**
+## From requirements to architecture {#sec-process}
+
+The design process of [[mechatronics/mechatronic-systems#sec-elements]] begins with **requirements**: measurable statements of what the system must do, under which conditions, and how this will be verified. "Fast and accurate" is not a requirement; "position a $2\ \mathrm{kg}$ head over $400\ \mathrm{mm}$ in $0.35\ \mathrm{s}$ to $\pm 50\ \mathrm{\mu m}$, $60$ cycles per minute, at $10$–$40\,^\circ\mathrm{C}$ ambient, for $20\,000$ hours" is. Requirements cover function and performance, environment (temperature, humidity, vibration, dust, electromagnetic surroundings), interfaces (supply, communication, mounting), life and reliability, safety and the standards that apply, cost and volume.
+
+The **architecture** allocates functions to physical elements and fixes the interfaces between them: which loops close where and at what rate, which controller runs which task, which signals cross which boundaries in which form (analogue, digital, fieldbus), how the power is distributed and where the safety functions sit. The VDI 2206 guideline's V-model then leads through domain designs to integration and verification, each level tested against the requirement allocated to it. Two habits make this work in practice: **budgets** that apportion each system requirement among the elements (error, power, heat, time, cost), revised as the design proceeds; and **early integration** of crude prototypes, because the interactions between domains — a resonance excited by a control loop, noise coupled from a drive into a sensor — are much easier to find than to predict.
+
+## Error budgets {#sec-error-budget}
+
+The accuracy of a machine is the combination of many independent errors: sensor resolution and calibration, screw lead error, thermal expansion, structural deflection under load, servo error, backlash. An **error budget** lists them and combines them.
+
+::: proposition Combination of independent errors {#prop-rss}
+If the total error is the sum $E = \sum_i c_iE_i$ of independent random contributions $E_i$ with standard deviations $u_i$ (their **standard uncertainties**), weighted by sensitivity coefficients $c_i$, then the standard deviation of $E$ is
+$$
+u_c = \sqrt{\sum_i c_i^2u_i^2} \qquad\text{(root-sum-square, RSS)},
+$$ {#eq-rss}
+which never exceeds the worst-case sum $\sum_i \lvert c_i\rvert u_i$. For a contribution known only to lie within $\pm a$ with no value more likely than another (a uniform distribution), $u = a/\sqrt3$.
 :::
 
-## 1. System architecture and power supply
-
-::: definition The system architecture {#def-system-architecture}
-The **system architecture** is the decomposition of the mechatronic system into subsystems and the definition of the interfaces between the subsystems, and the system architecture is the reason the engineer can design the mechatronic system to be safe.
-
-The **functional decomposition** is:
-
-$$
-\text{System} \; = \; \sum _ { i = 1 } ^ { N } \text{Subsystem} _ { i } \qquad \text{Interfaces} \; = \; \{ ( \text{Subsystem} _ { i } , \, \text{Subsystem} _ { j } ) \}
-$$
-
-The **signal flow** is:
-
-$$
-\text{Sensor} \; \to \; \text{Signal conditioning} \; \to \; \text{Controller} \; \to \; \text{Actuator} \; \to \; \text{Plant}
-$$
-
-The **interface design** criteria are:
-1. **Signal type**: analog, digital, power
-2. **Signal level**: voltage, current, impedance
-3. **Signal timing**: sampling rate, synchronization, latency
-4. **Power**: voltage, current, ripple
-5. **Communication**: protocol, data rate, error handling
-
-$$
-\begin{array} { l c c c }
-\textbf{Subsystem} & \textbf{ Input } & \textbf{ Output } & \textbf{ Interface } \\ \hline
-\text{Sensor} & \text{Physical quantity} & \text{Electrical signal} & \text{Analog, mV--V} \\
-\text{Signal conditioning} & \text{Electrical signal} & \text{Conditioned signal} & \text{Analog, } \pm \text{10 V} \\
-\text{ADC} & \text{Analog signal} & \text{Digital data} & \text{SPI, I2C} \\
-\text{Controller} & \text{Digital data} & \text{Control signal} & \text{PWM, DAC} \\
-\text{DAC} & \text{Digital data} & \text{Analog signal} & \text{SPI, parallel} \\
-\text{Actuator drive} & \text{Control signal} & \text{Power signal} & \text{H-bridge, inverter} \\
-\text{Actuator} & \text{Power signal} & \text{Mechanical motion} & \text{Shaft, rod} \\
-\end{array}
-$$
-
-**The system architecture is the reason the system is designed for the integration, not the component, and the integration is the reason the system is the most critical component in the machine. The engineer who designs the mechatronic system integration without checking the system architecture is not designing the mechatronic system; they are designing a system that will fail by integration.**
+::: proof
+The variance of a sum of independent random variables is the sum of their variances: $\operatorname{Var}(\sum c_iE_i) = \sum c_i^2\operatorname{Var}(E_i)$, because the cross terms $2c_ic_j\operatorname{Cov}(E_i, E_j)$ vanish for independent variables. Taking the square root gives [[#eq-rss]]. The inequality is the triangle inequality for the Euclidean norm of the vector $(\lvert c_1\rvert u_1, \dots)$ against its $\ell^1$ norm: $\sqrt{\sum x_i^2} \le \sum x_i$ for $x_i \ge 0$, since squaring the right side adds the non-negative cross terms. For a uniform distribution on $[-a, a]$, the variance is $\frac{1}{2a}\int_{-a}^{a}x^2\,\mathrm{d}x = a^2/3$.
 :::
 
-::: definition The power supply design {#def-power-supply}
-The **power supply design** is the design of the electrical power supply for the mechatronic system, and the power supply design is the reason the engineer can design the mechatronic system to be safe.
+This is the rule of the *Guide to the Expression of Uncertainty in Measurement* (GUM, JCGM 100:2008). Its validity rests on independence: errors with a common cause — two contributions that both grow with temperature, say — must be added linearly before being combined with the rest. Systematic errors that can be measured (a screw's lead error, a thermal drift with a known coefficient) should be **compensated**, by a calibration table or a temperature model in the controller, rather than budgeted; what remains in the budget is the uncertainty of the compensation. To state a bound with a given confidence, the combined standard uncertainty is multiplied by a **coverage factor**: $k = 2$ gives about $95\,\%$ coverage when the sum is approximately normal.
 
-The **voltage regulation** is:
-
-$$
-\text{Regulation} \; = \; { \frac { V _ { \text{no-load } } - V _ { \text{full-load } } } { V _ { \text{full-load } } } } \times 1 0 0 \ \ \%
-$$
-
-The **ripple voltage** is:
-
-$$
-V _ { \text{ripple } } \; = \; { \frac { I _ { \text{load } } } { f _ { \text{switch } } \, C _ { \text{out } } } } \quad \text{(buck converter)}
-$$
-
-The **efficiency** is:
-
-$$
-\eta \; = \; { \frac { P _ { \text{out } } } { P _ { \text{in } } } } \times 1 0 0 \ \ \% \qquad P _ { \text{loss } } \; = \; P _ { \text{in } } - P _ { \text{out } }
-$$
-
-$$
-\begin{array} { l c c c c }
-\textbf{Power supply type} & \textbf{ Efficiency } & \textbf{ Ripple } & \textbf{ Response } & \textbf{ Use case } \\ \hline
-\text{Linear (LDO)} & 5 0 \text{--} 7 0 \ \% & < 1 \ \text{mV} & \text{Fast} & \text{Analog, low noise} \\
-\text{Switching (buck)} & 8 5 \text{--} 9 5 \ \% & 1 0 \text{--} 1 0 0 \ \text{mV} & \text{Medium} & \text{Digital, high power} \\
-\text{Switching (boost)} & 8 5 \text{--} 9 5 \ \% & 1 0 \text{--} 1 0 0 \ \text{mV} & \text{Medium} & \text{Battery, step-up} \\
-\text{Battery} & 1 0 0 \ \% & 0 & \text{Slow} & \text{Portable, backup} \\
-\text{Transformer + rectifier} & 8 0 \text{--} 9 0 \ \% & 1 0 0 \text{--} 1 0 0 0 \ \text{mV} & \text{Slow} & \text{High power} \\
-\end{array}
-$$
-
-**The power supply is the reason the system is designed for the ripple, not the voltage, and the ripple is the reason the system is the most critical component in the machine. The engineer who designs the mechatronic system integration without checking the power supply is not designing the mechatronic system; they are guessing.**
-:::
-
-::: widget plot
-title: The power supply efficiency vs load current
-f: 0.95*min(x,10)/x; 0.7*min(x,10)/x
-x: 0.1,10
-y: 0,1
-labels: Switching (SMPS); Linear (LDO)
-caption: The power supply efficiency against the load current for switching and linear regulators. **The switching regulator is more efficient at high current, and the efficiency is the reason the power supply is designed for the ripple, not the voltage.** **The ripple is the reason the system is the most critical component in the machine.**
-:::
-
-::: example Power supply design {#ex-power-supply-design level=3 check="2"}
-A mechatronic system requires 5 V at 2 A for the microcontroller and 24 V at 5 A for the actuator. The input voltage is 48 V. Calculate the power loss and efficiency for a linear regulator and a switching regulator.
-
-**Linear regulator (5 V rail):**
-
-$$
-P _ { \text{in } } \; = \; V _ { \text{in } } \, I _ { \text{load } } \; = \; 4 8 \times 2 \; = \; 9 6 \ \text{W}
-$$
-
-$$
-P _ { \text{out } } \; = \; V _ { \text{out } } \, I _ { \text{load } } \; = \; 5 \times 2 \; = \; 1 0 \ \text{W}
-$$
-
-$$
-P _ { \text{loss } } \; = \; 9 6 - 1 0 \; = \; { \bf 8 6 } \ \text{W} \qquad \eta \; = \; { \frac { 1 0 } { 9 6 } } \times 1 0 0 \; = \; { \bf 1 0 . 4 } \ \ \%
-$$
-
-**Switching regulator (5 V rail):**
-
-$$
-P _ { \text{loss } } \; = \; P _ { \text{out } } \, \left( { \frac { 1 } { \eta } } - 1 \right) \; = \; 1 0 \times \left( { \frac { 1 } { 0 . 9 0 } } - 1 \right) \; = \; { \bf 1 . 1 1 } \ \text{W} \qquad \eta \; = \; { \bf 9 0 } \ \ \%
-$$
-
-**Power loss reduction:**
-
-$$
-{ \frac { 8 6 } { 1 . 1 1 } } \; = \; { \bf 7 7 } \times \quad \text{reduction with switching regulator}
-$$
-
-**The linear regulator dissipates 86 W (10.4% efficiency), while the switching regulator dissipates 1.11 W (90% efficiency). The engineer would design the power supply for the efficiency, because the efficiency is the reason the system is the most critical component in the machine.**
-:::
-
-## 2. Electromagnetic compatibility and reliability
-
-::: definition The electromagnetic compatibility {#def-emc}
-The **electromagnetic compatibility** (EMC) is the ability of the mechatronic system to function in its electromagnetic environment without causing or suffering from unacceptable interference, and the EMC is the reason the engineer can design the mechatronic system to be safe.
-
-The **common-mode noise** is:
-
-$$
-V _ { \text{cm } } \; = \; { \frac { Z _ { \text{common } } } { Z _ { \text{source } } + Z _ { \text{common } } } } \, V _ { \text{noise } }
-$$
-
-The **differential-mode noise** is:
-
-$$
-V _ { \text{dm } } \; = \; { \frac { Z _ { \text{load } } } { Z _ { \text{source } } + Z _ { \text{load } } } } \, V _ { \text{noise } }
-$$
-
-The **shielding effectiveness** is:
-
-$$
-\text{SE} \; = \; 2 0 \, \log _ { 1 0 } \, { \frac { E _ { \text{incident } } } { E _ { \text{transmitted } } } } \quad \text{dB}
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{EMC technique} & \textbf{ Target } & \textbf{ Effectiveness } & \textbf{ Use case } \\ \hline
-\text{Shielding} & \text{Radiated EMI} & 4 0 \text{--} 1 2 0 \ \text{dB} & \text{Cables, enclosures} \\
-\text{Grounding (star)} & \text{Ground loops} & 2 0 \text{--} 6 0 \ \text{dB} & \text{Analog circuits} \\
-\text{Filtering (ferrite)} & \text{Conducted EMI} & 2 0 \text{--} 6 0 \ \text{dB} & \text{Power lines} \\
-\text{Twisted pair} & \text{Magnetic coupling} & 2 0 \text{--} 4 0 \ \text{dB} & \text{Signal cables} \\
-\text{Optical isolation} & \text{Ground loops} & > 1 2 0 \ \text{dB} & \text{High-voltage interfaces} \\
-\end{array}
-$$
-
-**The electromagnetic compatibility is the reason the system is designed for the EMC, not the performance, and the EMC is the reason the system is the most critical component in the machine. The engineer who designs the mechatronic system integration without checking the EMC is not designing the mechatronic system; they are guessing.**
-:::
-
-::: definition The reliability analysis {#def-reliability}
-The **reliability analysis** is the calculation of the probability that the mechatronic system will function without failure, and the reliability analysis is the reason the engineer can design the mechatronic system to be safe.
-
-The **reliability** (exponential distribution) is:
-
-$$
-R ( t ) \; = \; e ^ { - \lambda \, t } \qquad \text{MTBF} \; = \; { \frac { 1 } { \lambda } }
-$$
-
-The **system reliability** (series) is:
-
-$$
-R _ { \text{system } } \; = \; \prod _ { i = 1 } ^ { N } R _ { i } \; = \; e ^ { - ( \sum \lambda _ { i } ) \, t }
-$$
-
-The **system reliability** (parallel redundancy) is:
-
-$$
-R _ { \text{parallel } } \; = \; 1 - \prod _ { i = 1 } ^ { N } ( 1 - R _ { i } )
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Component} & \textbf{ Failure rate } ( \lambda , \text{FIT} ) & \textbf{ MTBF (h)} & \textbf{ Use case } \\ \hline
-\text{Microcontroller} & 1 & 1 \ 0 0 0 \ 0 0 0 & \text{Control} \\
-\text{Op-amp} & 5 & 2 0 0 \ 0 0 0 & \text{Signal conditioning} \\
-\text{ADC} & 1 0 & 1 0 0 \ 0 0 0 & \text{Data acquisition} \\
-\text{Power supply} & 5 0 & 2 0 \ 0 0 0 & \text{Power} \\
-\text{Motor} & 1 0 0 & 1 0 \ 0 0 0 & \text{Actuation} \\
-\text{Bearing} & 2 0 0 & 5 0 0 0 & \text{Mechanical} \\
-\text{Sensor} & 2 0 & 5 0 \ 0 0 0 & \text{Measurement} \\
-\end{array}
-$$
-
-**The reliability is the reason the system is designed for the MTBF, not the performance, and the MTBF is the reason the system is the most critical component in the machine. The engineer who designs the mechatronic system integration without checking the reliability is not designing the mechatronic system; they are guessing.**
-:::
-
-::: widget plot
-title: The system reliability vs number of components
-f: exp(-x*0.001*10000); 1-(1-exp(-0.001*10000))^2
-x: 1,20
-y: 0,1
-labels: Series; Parallel (2x)
-caption: The system reliability against the number of components for series and parallel configurations. **The series reliability decreases exponentially with the number of components, and the exponential decrease is the reason the system is designed for the reliability, not the performance.** **The MTBF is the reason the system is the most critical component in the machine.**
-:::
-
-::: example Reliability calculation {#ex-reliability-calc level=3 check="2"}
-A mechatronic system has 5 components with failure rates of 1, 5, 10, 50, and 100 FIT. Calculate the system MTBF and the reliability after 10 000 hours.
-
-**System failure rate (series):**
-
-$$
-\lambda _ { \text{system } } \; = \; \sum \lambda _ { i } \; = \; 1 + 5 + 1 0 + 5 0 + 1 0 0 \; = \; 1 6 6 \ \text{FIT} \; = \; 1 6 6 \times 1 0 ^ { - 9 } \ \text{h} ^ { - 1 }
-$$
-
-**System MTBF:**
-
-$$
-\text{MTBF} \; = \; { \frac { 1 } { \lambda _ { \text{system } } } } \; = \; { \frac { 1 } { 1 6 6 \times 1 0 ^ { - 9 } } } \; = \; { \bf 6 0 2 4 } \ \text{h}
-$$
-
-**Reliability after 10 000 hours:**
-
-$$
-R ( 1 0 \ 0 0 0 ) \; = \; e ^ { - \lambda \, t } \; = \; e ^ { - 1 6 6 \times 1 0 ^ { - 9 } \times 1 0 \ 0 0 0 } \; = \; e ^ { - 0 . 0 0 1 6 6 } \; = \; { \bf 0 . 9 9 8 } \; = \; 9 9 . 8 \ \ \%
-$$
-
-**The system MTBF is 6024 hours, and the reliability after 10 000 hours is 99.8%. The engineer would design the system for the reliability, because the reliability is the reason the system is the most critical component in the machine.**
-:::
-
-::: example EMC grounding design {#ex-emc-grounding level=3 check="2"}
-A mechatronic system has an analog sensor circuit and a digital motor drive sharing a common ground. The ground impedance is 0.05 Ω, and the motor drive draws 10 A of switching current at 20 kHz. Calculate the ground noise voltage and the required isolation for 16-bit ADC accuracy.
-
-**Ground noise voltage:**
-
-$$
-V _ { \text{noise } } \; = \; I _ { \text{motor } } \times Z _ { \text{ground } } \; = \; 1 0 \times 0 . 0 5 \; = \; { \bf 0 . 5 } \ \text{V}
-$$
-
-**Required CMRR for 16-bit accuracy (10 V range):**
-
-$$
-\text{LSB} \; = \; { \frac { 1 0 } { 2 ^ { 1 6 } } } \; = \; 0 . 1 5 3 \ \text{mV}
-$$
-
-$$
-\text{CMRR} \; = \; 2 0 \, \log _ { 1 0 } \, { \frac { 0 . 5 } { 0 . 1 5 3 \times 1 0 ^ { - 3 } } } \; = \; 2 0 \, \log _ { 1 0 } \, 3 2 7 \; = \; { \bf 5 0 } \ \text{dB}
-$$
-
-**Solution: star grounding or optical isolation (>120 dB).**
-
-**The ground noise voltage is 0.5 V, and the required CMRR is 50 dB. The engineer would design the grounding for the ground loops, because the ground loops are the reason the system is the most critical component in the machine.**
-:::
-
-::: example Thermal management design {#ex-thermal-management level=3 check="2"}
-A power amplifier dissipates 20 W in an enclosure with an internal temperature of 60°C and an ambient temperature of 40°C. The available heatsink area is 0.1 m². Calculate the required thermal resistance and the heatsink temperature.
-
-**Required thermal resistance:**
-
-$$
-R _ { \text{th } } \; = \; { \frac { \Delta T } { P } } \; = \; { \frac { 6 0 - 4 0 } { 2 0 } } \; = \; { \bf 1 . 0 } \ 	ext{°C/W}
-$$
-
-**Heatsink temperature (assuming natural convection $h = 1 0$ W/m²·°C):**
-
-$$
-\Delta T _ { \text{surface } } \; = \; { \frac { P } { h \, A } } \; = \; { \frac { 2 0 } { 1 0 \times 0 . 1 } } \; = \; { \bf 2 0 } \ 	ext{°C}
-$$
-
-$$
-T _ { \text{heatsink } } \; = \; T _ { \text{ambient } } + \Delta T _ { \text{surface } } \; = \; 4 0 + 2 0 \; = \; { \bf 6 0 } \ 	ext{°C}
-$$
-
-**The required thermal resistance is 1.0 °C/W, and the heatsink temperature is 60°C. The engineer would design the thermal management for the temperature, because the temperature is the reason the system is the most critical component in the machine.**
-:::
-
-::: exercise Power budget {#ex-power-budget level=3 check="2"}
-A mechatronic system has: microcontroller (0.5 W), sensors (0.3 W), signal conditioning (0.2 W), motor drive (50 W), and communication (0.1 W). The power supply efficiency is 90%. Calculate the total input power and the battery life for a 12 V, 10 Ah battery.
-
+::: example Positioning error budget {#ex-error-budget}
+A linear axis has the following independent error contributions at the tool, given as standard uncertainties: servo error and encoder quantisation $3\ \mathrm{\mu m}$, residual screw lead error after compensation $4\ \mathrm{\mu m}$, thermal expansion $12\ \mathrm{\mu m}$. Find the combined standard uncertainty, the expanded uncertainty with $k = 2$, and the linear sum. Which contribution should the designer attack first?
 ::: solution
-$$
-P _ { \text{load } } \; = \; 0 . 5 + 0 . 3 + 0 . 2 + 5 0 + 0 . 1 \; = \; 5 1 . 1 \ \text{W}
-$$
+$u_c = \sqrt{3^2 + 4^2 + 12^2} = \sqrt{169} = 13\ \mathrm{\mu m}$. Expanded: $U = 2 \times 13 = 26\ \mathrm{\mu m}$ (about $95\,\%$ coverage). Linear sum: $3 + 4 + 12 = 19\ \mathrm{\mu m}$ (of the standard uncertainties).
 
-$$
-P _ { \text{in } } \; = \; { \frac { P _ { \text{load } } } { \eta } } \; = \; { \frac { 5 1 . 1 } { 0 . 9 0 } } \; = \; { \bf 5 6 . 8 } \ \text{W}
-$$
+The thermal term dominates: removing the servo and lead errors entirely would only reduce $u_c$ from $13$ to $12\ \mathrm{\mu m}$, while halving the thermal error would reduce it to $\sqrt{9 + 16 + 36} = 7.8\ \mathrm{\mu m}$. Thermal measures — temperature control, low-expansion materials, a temperature-compensated scale, or a thermal model in the controller — come first.
 
-**Battery capacity:**
-
-$$
-E _ { \text{battery } } \; = \; V \times \text{Ah} \; = \; 1 2 \times 1 0 \; = \; 1 2 0 \ \text{Wh}
-$$
-
-**Battery life:**
-
-$$
-t _ { \text{battery } } \; = \; { \frac { E _ { \text{battery } } } { P _ { \text{in } } } } \; = \; { \frac { 1 2 0 } { 5 6 . 8 } } \; = \; { \bf 2 . 1 1 } \ \text{h}
-$$
-
-**The total input power is 56.8 W, and the battery life is 2.11 hours. The engineer would design the power supply for the efficiency, because the efficiency is the reason the system is the most critical component in the machine.**
+Sanity check: in an RSS budget the largest term dominates quadratically, so effort spent on small terms is wasted. A steel screw of $300\ \mathrm{mm}$ grows by $11.7 \times 10^{-6} \times 300\ \mathrm{mm} = 3.5\ \mathrm{\mu m}$ per kelvin; a $12\ \mathrm{\mu m}$ thermal uncertainty corresponds to about $3.4\ \mathrm{K}$ — a plausible daily variation in an unconditioned workshop.
 :::
+:::
+
+::: widget distribution
+dist: normal
+params: mu=0, sigma=13
+a: -26
+b: 26
+caption: Distribution of the total positioning error (μm) in the error-budget example, a normal distribution with the combined standard uncertainty $13\ \mathrm{\mu m}$. The shaded band, $\pm 26\ \mathrm{\mu m}$ ($k = 2$), contains $95.4\,\%$ of the axes or moves. Change $\sigma$ to see the effect of improving the thermal behaviour, and the limits to see how the coverage depends on the factor $k$.
+:::
+
+## Power and thermal budgets {#sec-power}
+
+The **power budget** lists every consumer — controller, sensors, drives and actuators — with its average and peak demands. The supply is sized for the peak demands that can coincide, its average rating for the mean, and the wiring, fuses and connectors for the currents involved. Separate supplies (or at least separately regulated and filtered rails) are used for logic, analogue measurement and power stages, joined at a single point.
+
+Motors accelerate loads and then brake them. When a motor decelerates, it acts as a generator and its drive returns the kinetic energy to the DC bus. A battery can absorb it; a mains rectifier cannot, so the energy charges the drive's bus capacitors and raises their voltage. From the energy balance $\tfrac12C(V_2^2 - V_1^2) = E$, the bus rises to
+$$
+V_2 = \sqrt{V_1^2 + \frac{2E}{C}} .
+$$ {#eq-regen}
+If $V_2$ would exceed the drive's rating, a **braking resistor** switched by a chopper (a "regen" or "dump" circuit) dissipates the energy.
+
+::: example Regenerated energy on a 24 V bus {#ex-regen}
+A motor and load with $J = 2.0\times10^{-4}\ \mathrm{kg\,m^2}$ decelerate from $300\ \mathrm{rad/s}$ to rest. The drive's bus is fed at $24\ \mathrm{V}$ by a supply that cannot sink current and has $4700\ \mathrm{\mu F}$ of bus capacitance. Ignoring losses, find the bus voltage at the end of the stop.
+::: solution
+$E = \tfrac12J\omega^2 = 0.5 \times 2.0\times10^{-4} \times 9.0\times10^{4} = 9.0\ \mathrm{J}$. $V_2 = \sqrt{24^2 + 2 \times 9.0/4.7\times10^{-3}} = \sqrt{576 + 3830} = 66\ \mathrm{V}$.
+
+A drive rated at, say, $60\ \mathrm{V}$ trips on over-voltage or is damaged. Remedies: a braking resistor with a chopper that switches in above about $30\ \mathrm{V}$, more capacitance (to keep below $30\ \mathrm{V}$ one would need $C = 2E/(30^2 - 24^2) = 0.056\ \mathrm{F}$, a large capacitor bank), or a supply that can absorb energy.
+
+Sanity check: in reality winding resistance and friction dissipate part of the energy, so this is an upper bound — but the order of magnitude is right, and multi-axis machines that stop all axes at once (an emergency stop) return the sum of all their kinetic energies at the same moment.
+:::
+:::
+
+Every watt of loss becomes heat that must leave through a chain of **thermal resistances**. For a semiconductor dissipating $P$, the junction temperature in steady state is
+$$
+T_j = T_a + P\left(R_{\theta jc} + R_{\theta cs} + R_{\theta sa}\right),
+$$ {#eq-thermal}
+with junction-to-case, case-to-sink (interface material) and sink-to-ambient resistances in K/W — the thermal analogue of Ohm's law ([[heat-transfer/steady-conduction]]). The heat sink is chosen so that $T_j$ stays below the data-sheet maximum (typically $125$–$175\,^\circ\mathrm{C}$) with margin at the highest ambient temperature; the electrolytic capacitors, whose life roughly halves for every $10\ \mathrm{K}$ rise, are often the real limit. Enclosures need the same budget: the heat generated inside must leave through the walls or a fan, raising the internal temperature above the room's.
+
+## Electromagnetic compatibility and grounding {#sec-emc}
+
+**Electromagnetic compatibility** (EMC) means that a system does not disturb other equipment (**emission**) and is not disturbed by its environment (**immunity**). Mechatronic systems are hard cases: they contain powerful noise sources — PWM drives switching hundreds of volts in nanoseconds, relays and solenoids, switch-mode supplies — beside microvolt-level sensor signals. In the European Union, the EMC Directive (2014/30/EU) requires conformity, usually shown against harmonised standards such as IEC 61000-6-2 (immunity) and IEC 61000-6-4 (emission) for industrial environments.
+
+The coupling mechanisms were introduced in [[mechatronics/signal-conditioning#sec-noise]]. At system level the practices are:
+
+- **Partition** the design: power electronics, motor cables and switching circuits in one zone, sensitive analogue circuits in another, with filtering at every cable entering or leaving.
+- **Grounding:** a solid reference plane on circuit boards; a single **star point** joining logic, analogue and power grounds, so that large return currents do not flow through signal grounds; or, where unavoidable, differential signalling and galvanic isolation (optocouplers, isolated amplifiers, isolated supplies) to break **ground loops**.
+- **Cabling:** shielded motor cables with the shield bonded all round at both ends (for high-frequency emission), twisted pairs for signals, signal and power cables separated, ferrites on cables at the entry points.
+- **Decoupling:** a ceramic capacitor ($100\ \mathrm{nF}$ is typical) at every integrated-circuit supply pin, close to the pin, and bulk capacitance at each board's supply input; switching current loops kept small.
+
+::: example A ground loop in a sensor input {#ex-ground-loop}
+A $0$–$10\ \mathrm{V}$ position sensor's ground is connected to the controller's ground through a conductor of resistance $20\ \mathrm{m\Omega}$ that also carries the $10\ \mathrm{A}$ return current of a motor drive. Find the error in the sensor reading and suggest two fixes.
+::: solution
+The drive current develops $10 \times 0.020 = 0.20\ \mathrm{V}$ along the shared conductor. The controller measures the sensor voltage relative to its own ground, so the reading is shifted by up to $0.20\ \mathrm{V}$ — $2\,\%$ of full scale — and the shift varies with the motor current, appearing as noise correlated with the motion.
+
+Fixes: (1) give the sensor its own ground return to the controller's star point, so no motor current flows in it; (2) read the sensor with a differential input (instrumentation amplifier) that measures between the sensor's output and the sensor's own ground wire, rejecting the common-mode shift. A $4$–$20\ \mathrm{mA}$ current-loop sensor would also be immune.
+
+Sanity check: $20\ \mathrm{m\Omega}$ is only a couple of metres of $1.5\ \mathrm{mm^2}$ copper. Shared returns are the commonest origin of "sensor noise" that disappears when the motor stops.
+:::
+:::
+
+## Reliability {#sec-reliability}
+
+::: definition Reliability, failure rate and MTTF {#def-reliability}
+The **reliability** $R(t)$ of a component is the probability that it is still working at time $t$. For components whose **failure rate** $\lambda$ (failures per unit time among survivors) is constant — a good model for electronics during their useful life, between early failures and wear-out —
+$$
+R(t) = e^{-\lambda t},\qquad \text{MTTF} = \int_0^\infty R(t)\,\mathrm{d}t = \frac1\lambda .
+$$
+Electronic failure rates are often quoted in **FIT** (failures in $10^9$ device-hours). For repaired systems the mean time between failures (MTBF) is used in the same way.
+:::
+
+::: proposition Series and parallel systems {#prop-series-parallel}
+(a) A system that fails if **any** of $n$ independent components fails (**series** in the reliability sense) has $R_s = \prod_i R_i$; with constant failure rates, $\lambda_s = \sum_i\lambda_i$.
+
+(b) A system that works if **at least one** of $n$ independent components works (**active parallel redundancy**) has $R_p = 1 - \prod_i(1 - R_i)$. For two identical components with constant rate $\lambda$, $\text{MTTF} = 3/(2\lambda)$.
+:::
+
+::: proof
+(a) The system survives only if every component survives; for independent events the probability is the product. With $R_i = e^{-\lambda_it}$, $\prod_iR_i = e^{-(\sum_i\lambda_i)t}$, an exponential with rate $\sum_i\lambda_i$. (b) The system fails only if every component has failed, with probability $\prod_i(1 - R_i)$; it survives with the complementary probability. For two identical components, $R_p = 1 - (1 - e^{-\lambda t})^2 = 2e^{-\lambda t} - e^{-2\lambda t}$, and $\text{MTTF} = \int_0^\infty R_p\,\mathrm{d}t = 2/\lambda - 1/(2\lambda) = 3/(2\lambda)$.
+:::
+
+Series systems are the rule: a machine with a hundred components fails if any one of them does, so its failure rate is the sum of theirs and every component matters. Redundancy is expensive and helps less than intuition suggests: two units in parallel raise the MTTF by only $50\,\%$, although they greatly improve the reliability over short missions ($R \approx 1 - (\lambda t)^2$ rather than $1 - \lambda t$ when $\lambda t$ is small) — which is why redundancy is used where failure during a mission is unacceptable (aircraft flight controls, vehicle braking) and is combined with monitoring and repair. Redundant channels must also be protected from **common-cause failures** — a shared power supply, the same software bug, the same overheating — that defeat them together.
+
+::: example Reliability of a controller {#ex-reliability}
+A motor-controller board has a microcontroller ($100\ \mathrm{FIT}$), a gate driver ($200\ \mathrm{FIT}$), six power MOSFETs ($100\ \mathrm{FIT}$ each), electrolytic capacitors ($600\ \mathrm{FIT}$ in total), connectors and solder joints ($500\ \mathrm{FIT}$) — all in series. Find its failure rate, MTTF and the probability of surviving one year of continuous operation. What is the one-year reliability of two such boards in active redundancy?
+::: solution
+$\lambda = 100 + 200 + 600 + 600 + 500 = 2000\ \mathrm{FIT} = 2.0\times10^{-6}\ \mathrm{h^{-1}}$. MTTF $= 5.0\times10^{5}\ \mathrm{h}$ (about $57$ years). One year ($8760\ \mathrm{h}$): $R = e^{-0.01752} = 0.9826$ — a $1.7\,\%$ chance of failure. Two in parallel: $R_p = 1 - (1 - 0.9826)^2 = 1 - 3.0\times10^{-4} = 0.9997$.
+
+Sanity check: an MTTF of decades does not mean a board lasts decades — it means that in a fleet of $1000$ boards about $17$ fail in the first year. The constant-rate model also ignores wear-out; electrolytic capacitors and fans wear out, and their life at the operating temperature must be checked separately.
+:::
+:::
+
+::: widget plot
+title: Reliability of single, series and redundant units
+f: exp(-L*x); exp(-2*L*x); 1 - (1 - exp(-L*x))^2
+x: 0, 10
+y: 0, 1.05
+sliders: L=0.2:0.05:1:0.05
+labels: \text{one unit}; \text{two in series}; \text{two in parallel}
+caption: Reliability against time (in arbitrary units, for example years) for one component of failure rate $\lambda$ (slider), two in series and two in active parallel redundancy. Early in life the parallel pair is far better — its curve starts flat — but its mean life, the area under the curve, is only $1.5$ times that of one unit. Two in series halve the mean life.
+:::
+
+## Functional safety {#sec-safety}
+
+A machine that moves can injure people. **Machine safety** starts with a **risk assessment** (ISO 12100): identify the hazards (crushing, shearing, entanglement, stored energy, heat, electricity), estimate the risk of each from severity and likelihood, and reduce it by, in this order, inherently safe design (limit forces and speeds, eliminate pinch points), safeguarding (fixed guards, interlocked movable guards, light curtains, two-hand controls) and information (warnings, training). Where the safeguarding depends on a control system — a guard switch that must stop the motors — that control function is a **safety function**, and its reliability is specified and verified by **functional-safety** standards: ISO 13849-1 grades safety-related parts of control systems by **performance level** PL a to e; IEC 62061 and the generic IEC 61508 use **safety integrity levels** SIL 1 to 3 (to 4 in IEC 61508), each corresponding to a range of probabilities of dangerous failure per hour.
+
+Several principles follow for mechatronic design:
+
+- **Safety functions are separate from ordinary control.** A guard interlock is not an `if` statement in the motion-control software, which can hang or be wrong; it is implemented by safety-rated components — a safety relay or safety controller, and **safe torque off** (STO) in the drive (IEC 61800-5-2), which removes the power to the motor's gate drivers by hardware so the motor cannot produce torque.
+- **Stop categories** (IEC 60204-1): category 0 removes power immediately (the motor coasts); category 1 brakes under control, then removes power; category 2 stops under control and keeps power. Emergency stops are category 0 or 1, and must override every other function.
+- **Fail-safe and monitored design**: normally-closed safety contacts (a broken wire stops the machine), redundant channels with cross-monitoring, watchdog timers that reset the controller into a safe state, brakes that engage when power is lost (on vertical axes, which fall under gravity when the motor is disabled).
+- **Validation**: the safety functions are tested, and the calculation of their performance level documented, as part of conformity with the applicable regulations — in the European Union the Machinery Directive 2006/42/EC, which is being replaced by the Machinery Regulation (EU) 2023/1230, applying from January 2027.
+
+::: warning Software is not a guard
+The most dangerous integration error is to rely on the normal control program for safety: a "door open" input that pauses the motion in software, an emergency-stop button read by the same microcontroller that runs the motors, a speed limit enforced only in the trajectory generator. Each fails exactly when it is needed — a hung program, a corrupted variable, a wiring fault read as "OK". Safety functions use safety-rated, monitored hardware (or certified safety controllers) designed and validated to the required PL or SIL, with STO or contactors acting directly on the power. This lesson teaches principles; machine safety is a regulated field, and real machines are designed and validated by qualified engineers to the current standards.
+:::
+
+## Case studies {#sec-cases}
+
+**The inkjet printer carriage.** A brushed DC motor drives the print-head carriage through a toothed belt along a plain steel rod. A transparent strip with about 150 to 600 lines per inch (6 to 24 lines per millimetre), read by an optical quadrature sensor on the carriage, gives position directly at the head — so belt stretch and pulley errors are inside the loop and corrected. The controller generates trapezoidal profiles, uses velocity and acceleration feedforward and a PID loop at several kilohertz, and fires the nozzles from the encoder edges rather than from time, so that drops land in the right place even if the speed varies. The paper feed uses a separate DC motor with a rotary encoder. Everything — mechanism, motor, sensor — is cheap; the precision lives in the sensor placement and the software.
+
+**Anti-lock braking.** When a wheel locks, the tyre slides and loses both braking grip and steering. The anti-lock braking system (ABS) measures each wheel's speed with a toothed ring and an inductive or Hall-effect sensor, estimates the vehicle speed $v$ from all the wheels, and computes the **slip ratio**
+$$
+\lambda = \frac{v - \omega r}{v},
+$$ {#eq-slip}
+($\omega$ the wheel speed, $r$ its rolling radius). The tyre's braking force peaks at slip ratios of roughly $0.1$–$0.2$ on most surfaces and falls beyond. When the wheel decelerates too fast or the slip rises past the peak, solenoid valves in a hydraulic modulator hold and then release the brake pressure of that wheel, and a pump returns the released fluid; the pressure is then reapplied, cycling several times per second to keep the wheel near the peak of the friction curve. The ABS is a mechatronic system in the full sense: sensors, a hydraulic actuator ([[mechatronics/fluid-power]]), an embedded controller with extensive self-monitoring, and a safety-critical function that must fall back to conventional braking if it fails.
+
+::: example Slip ratio in an ABS {#ex-slip}
+A car travels at $20\ \mathrm{m/s}$. During braking, one wheel of rolling radius $0.30\ \mathrm{m}$ turns at $60\ \mathrm{rad/s}$. Find the slip ratio. If the controller's target band is $0.10$–$0.20$, what range of wheel speeds should it maintain at this vehicle speed?
+::: solution
+$\omega r = 60 \times 0.30 = 18\ \mathrm{m/s}$; $\lambda = (20 - 18)/20 = 0.10$, at the lower edge of the band. For the band: $\omega = v(1 - \lambda)/r$, i.e. from $20 \times 0.90/0.30 = 60\ \mathrm{rad/s}$ down to $20 \times 0.80/0.30 = 53.3\ \mathrm{rad/s}$.
+
+Sanity check: the band is only $7\ \mathrm{rad/s}$ wide, and the vehicle-speed estimate itself is uncertain (all wheels may be slipping), so practical ABS algorithms work with wheel deceleration thresholds and slip estimates together, not with a precise slip set-point.
+:::
+:::
+
+**A 3D-printer axis.** A typical desktop printer moves its print head with two-phase hybrid steppers ([[mechatronics/electric-actuators#sec-stepper]]) driving toothed belts, open-loop, with $1/16$ microstepping and limit switches for homing. The firmware plans trapezoidal or jerk-limited profiles through a look-ahead buffer so that the head does not stop at every segment of a curve. The heater block and bed are separate temperature loops with thermistors and MOSFET switches ([[mechatronics/mechatronic-systems]]), with thermal-runaway protection in firmware (and, in better designs, independent thermal fuses). The design choices are economic: steppers avoid encoders and tuning, at the price of lost steps if the nozzle hits a curled print — which is why more expensive printers add encoders, closed-loop steppers or accelerometer-based resonance compensation (input shaping), applying exactly the ideas of [[mechatronics/motion-control]].
+
+::: quiz
+Two identical controllers, each with a one-year reliability of $0.90$, are used in active redundancy, and both are fed from the same power supply, whose one-year reliability is $0.95$. What is the one-year reliability of the system?
+- [ ] $0.99$
+- [x] about $0.94$
+- [ ] $0.90$
+- [ ] $0.855$
+::: solution
+The redundant pair has $R = 1 - 0.1^2 = 0.99$; it is in series with the shared supply: $0.99 \times 0.95 = 0.9405$. The common supply is a common-cause failure that dominates; the redundancy gains little until the supply is duplicated too.
+:::
+:::
+
+::: history
+Systematic design methods for mechatronic products were codified in the German guideline VDI 2206, *Design methodology for mechatronic systems*, published in 2004 and revised in 2021. Functional safety took its modern form with IEC 61508, published in parts between 1998 and 2000, from which sector standards followed — IEC 62061 for machinery (2005), ISO 13849-1 in its probabilistic form (2006), and ISO 26262 for road vehicles (2011). Bosch introduced the first electronic four-wheel anti-lock braking system in series production on the Mercedes-Benz S-Class in 1978, and in 1986 presented the controller area network (CAN), which first went into series production in the Mercedes-Benz S-Class of 1991 and became the backbone of vehicle electronics.
+:::
+
+::: summary
+- Start from measurable requirements; fix the architecture and interfaces; keep error, power, heat, timing and cost budgets; integrate early.
+- Independent errors combine by root-sum-square of standard uncertainties, $u_c = \sqrt{\sum c_i^2u_i^2}$; correlated ones add linearly; the largest term dominates; compensate measurable systematic errors.
+- Size supplies for coinciding peaks; regenerated energy raises the bus to $\sqrt{V_1^2 + 2E/C}$ — use braking resistors. $T_j = T_a + P\sum R_\theta$.
+- EMC: partition, star grounding, isolation, shielded and twisted cables, decoupling; shared ground returns turn motor current into sensor error.
+- Reliability: $R = e^{-\lambda t}$, MTTF $1/\lambda$; series rates add; parallel pairs improve short-mission reliability greatly but MTTF only by $50\,\%$; beware common causes.
+- Safety: risk assessment (ISO 12100), safety functions in safety-rated hardware (STO, safety relays) to the required PL or SIL, stop categories of IEC 60204-1; never rely on ordinary software.
 :::
 
 ## Exercises
 
-::: exercise Power supply ripple {#ex-power-ripple level=3 check="2"}
-A buck converter has $V _ { \text{in } } = 2 4$ V, $V _ { \text{out } } = 5$ V, $I _ { \text{load } } = 2$ A, $f _ { \text{switch } } = 5 0 0$ kHz, and $C _ { \text{out } } = 1 0 0$ \u00b5F. Calculate the ripple voltage.
-
+::: exercise Root-sum-square {level=1 check="26"}
+Three independent error contributions have standard uncertainties $6$, $8$ and $24\ \mathrm{\mu m}$. Find the combined standard uncertainty. (Enter it in μm.)
 ::: solution
-$$
-V _ { \text{ripple } } \; = \; { \frac { I _ { \text{load } } } { f _ { \text{switch } } \, C _ { \text{out } } } } \; = \; { \frac { 2 } { 5 0 0 \times 1 0 ^ { 3 } \times 1 0 0 \times 1 0 ^ { - 6 } } } \; = \; { \bf 4 0 } \ \text{mV}
-$$
-
-**The ripple voltage is 40 mV.**
+$\sqrt{36 + 64 + 576} = \sqrt{676} = 26\ \mathrm{\mu m}$, against a linear sum of $38\ \mathrm{\mu m}$.
 :::
 :::
 
-::: exercise Shielding effectiveness {#ex-shielding level=3 check="2"}
-A cable shield reduces the electric field from 10 V/m to 0.01 V/m. Calculate the shielding effectiveness.
-
+::: exercise Series failure rate {level=1 check="1000000"}
+A system consists of three components in series with failure rates $200$, $300$ and $500\ \mathrm{FIT}$. Find its MTTF. (Enter it in hours.)
 ::: solution
-$$
-\text{SE} \; = \; 2 0 \, \log _ { 1 0 } \, { \frac { 1 0 } { 0 . 0 1 } } \; = \; 2 0 \, \log _ { 1 0 } \, 1 0 0 0 \; = \; { \bf 6 0 } \ \text{dB}
-$$
-
-**The shielding effectiveness is 60 dB.**
+$\lambda = 1000\ \mathrm{FIT} = 10^{-6}\ \mathrm{h^{-1}}$; MTTF $= 10^{6}\ \mathrm{h}$.
 :::
 :::
 
-::: exercise System reliability {#ex-system-reliability level=3 check="2"}
-A system has 3 components in series with reliabilities of 0.99, 0.98, and 0.95. Calculate the system reliability.
-
+::: exercise Parallel redundancy {level=1 check="0.99"}
+Two independent sensors, each with reliability $0.90$ over a mission, are used so that either one suffices. Find the mission reliability. (Enter $R$.)
 ::: solution
-$$
-R _ { \text{system } } \; = \; R _ { 1 } \times R _ { 2 } \times R _ { 3 } \; = \; 0 . 9 9 \times 0 . 9 8 \times 0 . 9 5 \; = \; { \bf 0 . 9 2 2 } \; = \; 9 2 . 2 \ \ \%
-$$
-
-**The system reliability is 92.2%.**
+$1 - (1 - 0.90)^2 = 1 - 0.01 = 0.99$.
 :::
 :::
 
-::: exercise Parallel redundancy {#ex-parallel-redundancy level=3 check="2"}
-Two identical sensors each have a reliability of 0.95. Calculate the reliability of the parallel redundant system.
-
+::: exercise MTTF of a redundant pair {level=2 check="15000"}
+Two identical units with constant failure rate $\lambda = 1.0\times10^{-4}\ \mathrm{h^{-1}}$ operate in active redundancy. Find the MTTF of the pair. (Enter it in hours.)
 ::: solution
-$$
-R _ { \text{parallel } } \; = \; 1 - ( 1 - R _ { 1 } ) \, ( 1 - R _ { 2 } ) \; = \; 1 - ( 1 - 0 . 9 5 ) \times ( 1 - 0 . 9 5 ) \; = \; 1 - 0 . 0 5 \times 0 . 0 5
-$$
-
-$$
-R _ { \text{parallel } } \; = \; 1 - 0 . 0 0 2 5 \; = \; { \bf 0 . 9 9 7 5 } \; = \; 9 9 . 7 5 \ \ \%
-$$
-
-**The parallel redundant reliability is 99.75%.**
+$3/(2\lambda) = 3/(2\times10^{-4}) = 15\,000\ \mathrm{h}$, against $10\,000\ \mathrm{h}$ for one unit.
 :::
 :::
 
-::: exercise Ground loop noise {#ex-ground-loop level=3 check="2"}
-A ground loop has an impedance of 0.1 \u03a9 and a ground current of 5 A. Calculate the ground loop noise voltage and the required CMRR to achieve 0.1% accuracy on a 100 mV signal.
-
+::: exercise Heat-sink selection {level=2 check="14.5"}
+A MOSFET dissipates $5.0\ \mathrm{W}$ with $R_{\theta jc} = 1.0\ \mathrm{K/W}$ and an interface pad of $0.5\ \mathrm{K/W}$. The junction must stay below $125\,^\circ\mathrm{C}$ at an ambient of $45\,^\circ\mathrm{C}$. Find the largest acceptable sink-to-ambient thermal resistance. (Enter it in K/W.)
 ::: solution
-$$
-V _ { \text{noise } } \; = \; I _ { \text{ground } } \times Z _ { \text{ground } } \; = \; 5 \times 0 . 1 \; = \; { \bf 0 . 5 } \ \text{V}
-$$
-
-$$
-\text{CMRR} \; = \; 2 0 \, \log _ { 1 0 } \, { \frac { V _ { \text{noise } } } { 0 . 0 0 1 \times V _ { \text{signal } } } } \; = \; 2 0 \, \log _ { 1 0 } \, { \frac { 0 . 5 } { 0 . 0 0 1 \times 0 . 1 } } \; = \; 2 0 \, \log _ { 1 0 } \, 5 0 0 0 \; = \; { \bf 7 4 } \ \text{dB}
-$$
-
-**The ground loop noise voltage is 0.5 V, and the required CMRR is 74 dB.**
+Total allowed $(125 - 45)/5.0 = 16\ \mathrm{K/W}$; $R_{\theta sa} \le 16 - 1.0 - 0.5 = 14.5\ \mathrm{K/W}$. A designer would choose a sink of perhaps $10\ \mathrm{K/W}$ for margin.
 :::
 :::
 
-::: exercise Derivation: the series system reliability {#ex-derive-reliability level=4 check="2"}
-Show that the series system reliability $R _ { \text{system } } = \prod R _ { i } = e ^ { - ( \sum \lambda _ { i } ) \, t }$ is derived from the exponential distribution. Write the expression for the system MTBF.
-
+::: exercise Battery runtime {level=2 check="4.8"}
+A mobile robot draws an average of $80\ \mathrm{W}$ from a $24\ \mathrm{V}$, $20\ \mathrm{Ah}$ battery, of which $80\,\%$ of the capacity may be used. Find the runtime. (Enter it in hours.)
 ::: solution
-The **reliability** of component $i$ is:
-
-$$
-R _ { i } ( t ) \; = \; e ^ { - \lambda _ { i } \, t }
-$$
-
-For a **series system**, the system fails if any component fails:
-
-$$
-R _ { \text{system } } ( t ) \; = \; \prod _ { i = 1 } ^ { N } R _ { i } ( t ) \; = \; \prod _ { i = 1 } ^ { N } e ^ { - \lambda _ { i } \, t } \; = \; e ^ { - ( \sum \lambda _ { i } ) \, t }
-$$
-
-The **system failure rate** is:
-
-$$
-\lambda _ { \text{system } } \; = \; \sum _ { i = 1 } ^ { N } \lambda _ { i }
-$$
-
-The **system MTBF** is:
-
-$$
-\text{MTBF} _ { \text{system } } \; = \; { \frac { 1 } { \lambda _ { \text{system } } } } \; = \; { \frac { 1 } { \sum \lambda _ { i } } }
-$$
-
-**The series system reliability is the reason the system is designed for the MTBF, not the performance, and the MTBF is the reason the system is the most critical component in the machine.** $\blacksquare$
+Usable energy $24 \times 20 \times 0.80 = 384\ \mathrm{Wh}$; runtime $384/80 = 4.8\ \mathrm{h}$. Peaks above the average do not change the energy but do set the battery's current rating and the voltage sag.
 :::
 :::
 
-::: exercise Derivation: the parallel system reliability {#ex-derive-parallel level=4 check="2"}
-Show that the parallel system reliability $R _ { \text{parallel } } = 1 - \prod ( 1 - R _ { i } )$ is derived from the probability theory. Write the expression for the parallel MTBF.
-
+::: exercise Slip ratio {level=2 check="0.104"}
+A car travels at $25\ \mathrm{m/s}$ while one braked wheel of rolling radius $0.32\ \mathrm{m}$ turns at $70\ \mathrm{rad/s}$. Find the slip ratio. (Enter $\lambda$.)
 ::: solution
-The **parallel system** fails only if all components fail. The probability of failure of component $i$ is:
-
-$$
-F _ { i } ( t ) \; = \; 1 - R _ { i } ( t )
-$$
-
-The **system failure probability** is:
-
-$$
-F _ { \text{system } } ( t ) \; = \; \prod _ { i = 1 } ^ { N } F _ { i } ( t ) \; = \; \prod _ { i = 1 } ^ { N } ( 1 - R _ { i } ( t ) )
-$$
-
-The **system reliability** is:
-
-$$
-R _ { \text{system } } ( t ) \; = \; 1 - F _ { \text{system } } ( t ) \; = \; 1 - \prod _ { i = 1 } ^ { N } ( 1 - R _ { i } ( t ) )
-$$
-
-For **identical components** ($R _ { i } = R$ ):
-
-$$
-R _ { \text{parallel } } ( t ) \; = \; 1 - ( 1 - R ( t ) ) ^ { N } \; = \; 1 - ( 1 - e ^ { - \lambda \, t } ) ^ { N }
-$$
-
-The **parallel MTBF** is:
-
-$$
-\text{MTBF} _ { \text{parallel } } \; = \; \int _ { 0 } ^ { \infty } R _ { \text{parallel } } ( t ) \, d t \; = \; { \frac { 1 } { \lambda } } \, \sum _ { k = 1 } ^ { N } { \frac { ( - 1 ) ^ { k + 1 } \, { \binom { N } { k } } } { k } }
-$$
-
-For $N = 2$ : $\text{MTBF} _ { \text{parallel } } = 1 . 5 / \lambda = 1 . 5 \times \text{MTBF} _ { \text{single } }$ .
-
-**The parallel system reliability is the reason the system is designed for the MTBF, not the performance, and the MTBF is the reason the system is the most critical component in the machine.** $\blacksquare$
+$\omega r = 22.4\ \mathrm{m/s}$; $\lambda = (25 - 22.4)/25 = 0.104$.
 :::
 :::
 
-::: quiz System integration {#quiz-system-integration}
-The most critical aspect of the mechatronic system integration is:
-
-- [ ] The component selection
-- [x] The system architecture
-- [ ] The cost
-- [ ] The weight
-
+::: exercise Ground-loop error {level=2 check="1.5"}
+A $15\ \mathrm{A}$ motor return current flows through $10\ \mathrm{m\Omega}$ of conductor shared with the ground of a $0$–$10\ \mathrm{V}$ sensor. Find the resulting error as a percentage of full scale. (Enter it in %.)
 ::: solution
-**The system architecture.** The system architecture is the reason the system is designed for the integration, not the component, and the integration is the reason the system is the most critical component in the machine. The engineer who designs the mechatronic system integration without checking the system architecture is not designing the mechatronic system; they are designing a system that will fail by integration.
+$15 \times 0.010 = 0.15\ \mathrm{V}$, i.e. $1.5\,\%$ of $10\ \mathrm{V}$.
 :::
 :::
 
-::: quiz Reliability {#quiz-reliability}
-The system MTBF for 3 components in series with failure rates of 10, 20, and 70 FIT is:
-
-- [ ] 10 000 h
-- [x] 10 000 h
-- [ ] 5 000 h
-- [ ] 20 000 h
-
+::: exercise Standby redundancy {level=3}
+In **standby** redundancy the second unit is switched on only when the first fails (assume perfect switching and no failures while idle). For two identical units with constant failure rate $\lambda$, derive the reliability $R(t)$ and show that the MTTF is $2/\lambda$. Compare with active redundancy and explain the difference.
 ::: solution
-**10 000 h.** The system failure rate is $\lambda = 1 0 + 2 0 + 7 0 = 1 0 0$ FIT, and the MTBF is $1 / ( 1 0 0 \times 1 0 ^ { - 9 } ) = 1 0 \ 0 0 0$ h. The reliability is the reason the system is designed for the MTBF, not the performance, and the MTBF is the reason the system is the most critical component in the machine.
+The system survives to $t$ if the first unit survives ($e^{-\lambda t}$), or if it fails at some $\tau < t$ (density $\lambda e^{-\lambda\tau}$) and the second unit, started at $\tau$, survives for the remaining $t - \tau$ ($e^{-\lambda(t - \tau)}$). So $R(t) = e^{-\lambda t} + \int_0^t\lambda e^{-\lambda\tau}e^{-\lambda(t - \tau)}\,\mathrm{d}\tau = e^{-\lambda t}(1 + \lambda t)$. Then $\text{MTTF} = \int_0^\infty e^{-\lambda t}(1 + \lambda t)\,\mathrm{d}t = 1/\lambda + 1/\lambda = 2/\lambda$ — the lifetimes add. Active redundancy gives only $3/(2\lambda)$, because both units age together and the second may already have failed when the first does. Standby is better on paper but relies on the switch-over working and on detecting the failure of the active unit; idle units can also fail undetected, so they are tested periodically.
 :::
 :::
 
-## Where this lesson leads
-
-- **[[mechatronics/mechatronic-systems]]** — The system integration is the foundation of the mechatronic system.
-- **[[mechatronics/sensors]]** — The sensor is the foundation of the measurement system.
-- **[[mechatronics/signal-conditioning]]** — The signal conditioning is the foundation of the measurement system.
-- **[[mechatronics/microcontrollers]]** — The microcontroller is the foundation of the control system.
-- **[[mechatronics/electric-actuators]]** — The electric actuator is the foundation of the motion system.
-- **[[mechatronics/fluid-power]]** — The fluid power actuator is the foundation of the force system.
-- **[[mechatronics/motion-control]]** — The motion control is the foundation of the positioning system.
-- **[[design-process/reliability-risk]]** — The reliability analysis is the foundation of the design process.
-- **[[design-process/design-for-manufacture]]** — The system integration is the foundation of the design for manufacture.
-- **[[design-process/ethics-standards]]** — The safety is the foundation of the ethics and standards.
-
-::: history System integration: from the steam engine to the autonomous vehicle {#history-system-integration}
-**1769** — **James Watt** builds the **steam engine** with a separate condenser, and the steam engine is the reason the system integration is the oldest concept in engineering, and the age is the reason the system integration is the most refined concept in engineering.
-
-**1882** — **Thomas Edison** builds the **first electrical power station**, and the electrical power station is the reason the system integration is the most complex system in engineering. **The electrical power station is the reason the system integration is the most refined system in engineering, and the system integration is the reason the electrical power station is the most complex system in engineering.**
-
-**1957** — **The first satellite** (Sputnik) is launched, and the satellite is the reason the system integration is the most critical system in engineering. **The satellite is the reason the system integration is the most refined system in engineering, and the system integration is the reason the satellite is the most critical system in engineering.**
-
-**1969** — **The Apollo 11 lunar module** lands on the Moon, and the lunar module is the reason the system integration is the most reliable system in engineering. **The lunar module is the reason the system integration is the most refined system in engineering, and the system integration is the reason the lunar module is the most reliable system in engineering.**
-
-**1977** — **The first commercial CNC machine** is installed, and the CNC machine is the reason the system integration is the most widely used system in manufacturing. **The CNC machine is the reason the system integration is the most refined system in engineering, and the system integration is the reason the CNC machine is the most widely used system in manufacturing.**
-
-**1997** — **The first autonomous vehicle** (Navlab) is developed, and the autonomous vehicle is the reason the system integration is the most complex system in engineering. **The autonomous vehicle is the reason the system integration is the most refined system in engineering, and the system integration is the reason the autonomous vehicle is the most complex system in engineering.**
-
-**2012** — **The Mars Curiosity rover** lands on Mars, and the Mars rover is the reason the system integration is the most reliable system in engineering. **The Mars rover is the reason the system integration is the most refined system in engineering, and the system integration is the reason the Mars rover is the most reliable system in engineering.**
-
-**2020s** — **The autonomous vehicle** is deployed by Waymo and Tesla, and the autonomous vehicle is the reason the system integration is the most widely used system in transportation. **The autonomous vehicle is the reason the system integration is the most refined system in engineering, and the system integration is the reason the autonomous vehicle is the most widely used system in transportation.**
+::: exercise Concept design of a parcel-sorting gate {level=3}
+A conveyor carries parcels of $0.2$–$10\ \mathrm{kg}$ at $2\ \mathrm{m/s}$; a gate must divert selected parcels to a side chute, completing its stroke within $150\ \mathrm{ms}$ of a trigger, $3000$ times an hour, for $10$ years. Propose the system: requirements list, actuator choice (pneumatic cylinder, servo motor, solenoid), sensing (parcel detection, gate position), controller and communication, error and timing budget, reliability (number of cycles), and safety measures for people working near the conveyor.
+::: solution
+A good answer includes: (i) requirements quantified — stroke and force (from parcel momentum, up to $10 \times 2 = 20\ \mathrm{N\,s}$ to redirect), timing ($150\ \mathrm{ms}$, so the trigger-to-motion latency of sensor, controller and valve or drive must be a few tens of milliseconds at most), life ($3000 \times 8760 \times 10 \approx 2.6\times10^{8}$ cycles if continuous — a key driver: solenoid valves and cylinders are rated in tens of millions of cycles, so maintenance intervals or a servo drive with no wearing seals may be needed). (ii) Actuator: a pneumatic cylinder is cheap and fast but its timing varies with supply pressure and its seals wear; a servo motor with a crank or belt gives repeatable, programmable motion and diagnostics. (iii) Sensing: a light barrier or camera upstream with known distance and conveyor speed (encoder on the conveyor) to time the gate; gate position from end switches or the servo encoder. (iv) Controller: PLC or microcontroller with deterministic timing; communication with the sorting system by fieldbus; timing budget for detection, decision and actuation. (v) Reliability: identify wear parts and schedule replacement; monitor cycle times to predict failure. (vi) Safety: risk assessment; guards around the gate's swept volume; interlocked access doors acting on STO or air-dump valves through a safety relay, emergency stops; stored pneumatic energy released on stop; the gate's force limited where it can trap fingers.
 :::
-
-::: summary Designing mechatronic systems {#summary-system-integration}
-- **The system architecture is the decomposition of the mechatronic system into subsystems and the definition of the interfaces.** The system architecture is the reason the system is designed for the integration, not the component, and the integration is the reason the system is the most critical component in the machine.
-- **The signal flow is: Sensor → Signal conditioning → Controller → Actuator → Plant.** The signal flow is the reason the system is designed for the integration, not the component.
-- **The power supply ripple is $V _ { \text{ripple } } = I _ { \text{load } } / ( f _ { \text{switch } } \, C _ { \text{out } } )$ for a buck converter.** The power supply is the reason the system is designed for the ripple, not the voltage, and the ripple is the reason the system is the most critical component in the machine.
-- **The shielding effectiveness is $\text{SE} = 2 0 \, \log _ { 1 0 } ( E _ { \text{incident } } / E _ { \text{transmitted } } )$ dB.** The electromagnetic compatibility is the reason the system is designed for the EMC, not the performance, and the EMC is the reason the system is the most critical component in the machine.
-- **The system reliability (series) is $R _ { \text{system } } = \prod R _ { i } = e ^ { - ( \sum \lambda _ { i } ) \, t }$ , and the MTBF is $1 / \sum \lambda _ { i }$ .** The reliability is the reason the system is designed for the MTBF, not the performance, and the MTBF is the reason the system is the most critical component in the machine.
-- **The parallel redundant reliability is $R _ { \text{parallel } } = 1 - \prod ( 1 - R _ { i } )$ .** The parallel redundancy is the reason the system is designed for the reliability, not the performance.
-- **The ground loop noise voltage is $V _ { \text{noise } } = I _ { \text{ground } } \times Z _ { \text{ground } }$ .** The grounding is the reason the system is designed for the ground loops, not the voltage, and the ground loops are the reason the system is the most critical component in the machine.
-- **The power supply efficiency is $\eta = P _ { \text{out } } / P _ { \text{in } }$ , and the power loss is $P _ { \text{loss } } = P _ { \text{in } } - P _ { \text{out } }$ .** The efficiency is the reason the system is designed for the thermal management, not the power.
-- **The mechatronic system integration is the most important design in mechanical engineering, because the mechatronic system integration determines the performance of the machine.** The performance is the reason the engineer can design the mechatronic system to be safe.
-- **The system integration is the reason the system is designed for the integration, not the component.** The integration is the reason the system is the most critical component in the machine.
 :::
-
-## Further reading
-
-- **A. Alciatore and M. Histand (2016)** — *Introduction to Mechatronics and Measurement Systems*, 5th ed. McGraw-Hill. The system architecture and the system integration.
-- **W. Bolton (2015)** — *Mechatronics: Electronic Control Systems in Mechanical and Electrical Engineering*, 6th ed. Pearson. The system integration and the power supply design.
-- **C. Sheldon (2013)** — *The Art of the Mechanical Crown: Embedded Software*. Newnes. The system integration and the software architecture.
-- **H. Kals (2005)** — *Electronic Instrumentation*, 3rd ed. Newnes. The EMC and the grounding.
-- **C.R. Paul (2006)** — *Introduction to Electromagnetic Compatibility*, 2nd ed. Wiley. The EMC and the shielding.
-- **K.S. Trivedi (1982)** — *Probability and Statistics with Reliability, Queuing and Computer Science Applications*. Prentice-Hall. The reliability analysis and the MTBF.
-- **B. Joyce (2003)** — *Mechatronics: An Integrated Approach*. Prentice-Hall. The system integration and the design process.
-- **D.G. Alciatore (2020)** — *Mechatronics: Principles and Applications*. CRC Press. The system integration and the mechatronic system design.
