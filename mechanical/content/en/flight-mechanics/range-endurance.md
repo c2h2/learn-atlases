@@ -1,588 +1,312 @@
-Range and endurance are the most fundamental performance metrics in flight mechanics: the range is the distance an aircraft can fly on a given fuel load, and the endurance is the time an aircraft can stay airborne on a given fuel load. **The engineer who calculates the range without checking the Breguet equation is not calculating the range; they are guessing.** The range and endurance calculation is the reason the engineer can design the aircraft to meet its mission requirements, and the Breguet equation is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.
+An airliner on a long flight carries a quarter or more of its take-off mass as fuel, and a light aircraft's tanks decide whether a cross-country trip needs a stop. Two questions follow: how far can the aircraft fly on a given amount of fuel (its **range**), and how long can it stay airborne (its **endurance**)? Because the aircraft gets lighter as it burns fuel, both answers come from integrating the fuel flow over the flight, and the result — the **Breguet range equation** — is one of the most used formulas in aircraft design. It shows that range depends on three numbers that belong to three different disciplines: the aerodynamic efficiency $L/D$, the engine's fuel consumption, and the structural efficiency, expressed through the ratio of take-off to landing weight.
 
-The quantitative tools of range and endurance are the **Breguet range equation** (the relation between range, fuel efficiency, and weight ratio), the **endurance equation** (the relation between endurance, fuel flow, and weight), the **fuel weight fraction** (the ratio of the fuel weight to the gross weight), and the **lift-to-drag ratio** (the aerodynamic efficiency that determines how far the aircraft flies per unit of fuel). The tools are the language in which the range and endurance analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+This lesson builds on the drag polar, the minimum-drag and minimum-power conditions and the two example aircraft of [[flight-mechanics/steady-flight-performance]]. How engines produce thrust and why their fuel consumption is what it is belongs to [[propulsion/thrust-efficiency]] and [[propulsion/gas-turbine-cycles]].
 
-::: warning Nine ways range and endurance calculation goes wrong
-**Not checking the Breguet equation.** The engineer who calculates the range without checking the Breguet equation is not calculating the range; they are guessing. **The Breguet equation is the reason the range and endurance are designed for the equation, not the guess, and the equation is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.** **Not checking the fuel weight fraction.** The engineer who calculates the range without checking the fuel weight fraction is not calculating the range; they are guessing. **The fuel weight fraction is the reason the range and endurance are designed for the fraction, not the whole, and the fraction is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.** **Not checking the specific fuel consumption.** The engineer who calculates the range without checking the specific fuel consumption is not calculating the range; they are guessing. **The specific fuel consumption is the reason the range and endurance are designed for the consumption, not the production, and the consumption is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.** **Not checking the propeller efficiency.** The engineer who calculates the range without checking the propeller efficiency is not calculating the range; they are guessing. **The propeller efficiency is the reason the range and endurance are designed for the propeller, not the jet, and the propeller is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.** **Not checking the cruise altitude.** The engineer who calculates the range without checking the cruise altitude is not calculating the range; they are guessing. **The cruise altitude is the reason the range and endurance are designed for the altitude, not the sea level, and the altitude is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.** **Not checking the cruise speed.** The engineer who calculates the range without checking the cruise speed is not calculating the range; they are guessing. **The cruise speed is the reason the range and endurance are designed for the speed, not the stall, and the speed is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.** **Not checking the weight ratio.** The engineer who calculates the range without checking the weight ratio is not calculating the range; they are guessing. **The weight ratio is the reason the range and endurance are designed for the ratio, not the difference, and the ratio is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.** **Not checking the still-air range.** The engineer who calculates the range without checking the still-air range is not calculating the range; they are guessing. **The still-air range is the reason the range and endurance are designed for the still air, not the wind, and the still air is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.** **Not checking the payload-range diagram.** The engineer who calculates the range without checking the payload-range diagram is not calculating the range; they are guessing. **The payload-range diagram is the reason the range and endurance are designed for the diagram, not the point, and the diagram is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.**
+## Fuel consumption {#sec-fuel}
+
+A jet engine produces thrust, and its fuel consumption scales with the thrust; a piston engine (or turboprop) produces shaft power, and its fuel consumption scales with the power. It is convenient to measure the fuel flow by its **weight** rate, so that it can be subtracted directly from the aircraft weight.
+
+::: definition Specific fuel consumption {#def-sfc}
+- The **thrust-specific fuel consumption** $c_T$ of a jet engine is the weight of fuel burned per unit time per unit thrust:
+$$
+\dot W_f = c_T\,T,\qquad [c_T] = \mathrm{N\,s^{-1}/N} = \mathrm{s^{-1}} .
+$$
+- The **power-specific fuel consumption** $c_P$ of a piston or turboprop engine is the weight of fuel burned per unit of shaft energy:
+$$
+\dot W_f = c_P\,P_{\text{shaft}},\qquad [c_P] = \mathrm{N/J} = \mathrm{m^{-1}} .
+$$
+The mass-based figures used in engine data sheets are $c_T/g$ (in $\mathrm{mg\,N^{-1}\,s^{-1}}$) and $c_P/g$ (the **brake specific fuel consumption**, BSFC, in $\mathrm{kg/(kW\,h)}$).
 :::
 
-## 1. Propeller aircraft range and endurance
+Industry still quotes $c_T$ in "pounds of fuel per pound of thrust per hour", which is simply $c_T$ in $\mathrm{h^{-1}}$. Current high-bypass turbofans in cruise have $c_T \approx 0.5$–$0.6\ \mathrm{h^{-1}}$ (as of 2026); $0.55\ \mathrm{h^{-1}} = 1.528\times10^{-4}\ \mathrm{s^{-1}}$, or $15.6\ \mathrm{mg\,N^{-1}\,s^{-1}}$. A light-aircraft piston engine at lean cruise has a BSFC of about $0.25\ \mathrm{kg/(kW\,h)}$, i.e. $c_P = 0.25 \times 9.80665/(3.6\times10^{6}) = 6.81\times10^{-7}\ \mathrm{m^{-1}}$. A propeller converts shaft power into thrust power with efficiency $\eta_p$: $TV = \eta_pP_{\text{shaft}}$.
 
-::: definition The Breguet range equation for propeller aircraft {#def-breguet-prop}
-The **Breguet range equation for propeller aircraft** is the relation between the range, the propeller efficiency, the specific fuel consumption, and the weight ratio, and the Breguet range equation for propeller aircraft is the reason the engineer can design the aircraft to meet its mission requirements.
-
-The **Breguet range equation for propeller aircraft** is:
-
-$$
-R \; = \; { \frac { \eta _ { P } } { c } } \, ( L / D ) \, \ln { \frac { W _ { 1 } } { W _ { 2 } } }
-$$
-
-The **endurance equation for propeller aircraft** is:
-
-$$
-E \; = \; { \frac { 2 } { c } } \, { \sqrt { { \frac { 2 } { \rho } } } } \, { \frac { { \sqrt { C _ { L } } } ^ { 3 } } { C _ { D } } } \, { \sqrt { S } } \, \ln { \frac { W _ { 1 } } { W _ { 2 } } }
-$$
-
-The **fuel weight fraction** is:
-
-$$
-\zeta _ { f } \; = \; { \frac { W _ { \text{fuel } } } { W _ { 0 } } } \; = \; 1 - { \frac { W _ { 2 } } { W _ { 1 } } }
-$$
-
-The **maximum range condition** for propeller aircraft is:
-
-$$
-( L / D ) _ { \max } \quad \text{at} \quad C _ { L } \; = \; { \sqrt { { \frac { C _ { D 0 } } { K } } } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Range} & R & \text{Distance flown} & 5 0 0 \text{--} 1 5 { , } 0 0 0 \ \text{ km } \\
-\text{Endurance} & E & \text{Time airborne} & 2 \text{--} 2 0 \ \text{ h } \\
-\text{Propeller efficiency} & \eta _ { P } & \text{Propeller efficiency} & 0 . 7 \text{--} 0 . 9 \\
-\text{Specific fuel consumption} & c & \text{Fuel per power per time} & 0 . 1 \text{--} 0 . 3 \ \text{ kg/kW·h } \\
-\end{array}
-$$
-
-**The Breguet equation is the reason the range and endurance are designed for the equation, not the guess, and the equation is the reason the range and endurance are the most fundamental performance metrics in flight mechanics. The engineer who calculates the range without checking the Breguet equation is not calculating the range; they are guessing.**
+::: warning Mass, weight and hours
+Specific fuel consumptions appear in at least four unit systems, and an error of $g = 9.81$ or $3600$ is the most common mistake in range calculations. Convert $c_T$ to $\mathrm{s^{-1}}$ (weight basis) and $c_P$ to $\mathrm{m^{-1}}$ (weight basis) before substituting, and check the units of the final answer: Breguet's range must come out in metres and the endurance in seconds. A sanity check that catches most slips: a narrow-body airliner flies about $5000\ \mathrm{km}$ on about $12$–$15\ \mathrm{t}$ of fuel; a light aircraft about $1000\ \mathrm{km}$ on $100\ \mathrm{kg}$.
 :::
 
-::: definition The jet aircraft range {#def-jet-range}
-The **jet aircraft range** is the Breguet range equation adapted for jet engines where thrust specific fuel consumption is used, and the jet aircraft range is the reason the engineer can design the aircraft to meet its mission requirements.
+## The Breguet range equation for jets {#sec-jet-range}
 
-The **Breguet range equation for jet aircraft** is:
+During cruise the aircraft is in steady level flight at each instant, so $L = W$ and $T = D$. The weight falls at the rate the fuel is burned:
+$$
+\frac{\mathrm{d}W}{\mathrm{d}t} = -\dot W_f = -c_TT = -c_TD = -c_T\frac{W}{L/D}.
+$$ {#eq-dwdt}
+The distance flown in time $\mathrm{d}t$ is $\mathrm{d}x = V\,\mathrm{d}t$, so
+$$
+\mathrm{d}x = -\frac{V}{c_T}\,\frac{L}{D}\,\frac{\mathrm{d}W}{W} .
+$$ {#eq-dx}
+The **specific air range** $-\mathrm{d}x/\mathrm{d}W = V(L/D)/(c_TW)$ is the distance per unit weight of fuel at the current weight; the range is its integral from the initial weight $W_0$ to the final weight $W_1$. How the integral comes out depends on what the pilot holds constant as the weight falls.
 
+::: proposition Breguet range and endurance for jet aircraft {#prop-breguet-jet}
+If the true airspeed $V$, the lift-to-drag ratio $L/D$ and the thrust-specific fuel consumption $c_T$ are constant during cruise, the range and endurance are
 $$
-R \; = \; { \frac { V } { c _ { T } } } \, ( L / D ) \, \ln { \frac { W _ { 1 } } { W _ { 2 } } }
-$$
-
-The **endurance equation for jet aircraft** is:
-
-$$
-E \; = \; { \frac { 1 } { c _ { T } } } \, { \frac { C _ { L } ^ { 1 / 2 } } { C _ { D } } } \, { \sqrt { { \frac { 2 } { \rho } } } } \, { \sqrt { S } } \, \ln { \frac { W _ { 1 } } { W _ { 2 } } }
-$$
-
-The **thrust specific fuel consumption** is:
-
-$$
-c _ { T } \; = \; { \frac { \dot { m } _ { f } } { T } } \quad \text{Typically } 0 . 0 0 0 0 1 \text{--} 0 . 0 0 0 0 2 \ \text{ kg/N·s }
-$$
-
-The **maximum range condition** for jet aircraft is:
-
-$$
-{ \frac { C _ { L } ^ { 1 / 2 } } { C _ { D } } } \; \max \quad \text{at} \quad C _ { L } \; = \; { \sqrt { { \frac { C _ { D 0 } } { 3 \, K } } } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{TSFC} & c _ { T } & \text{Fuel per thrust per time} & 1 \text{--} 2 \times 1 0 ^ { - 5 } \ \text{ kg/N·s } \\
-\text{Max range speed} & V _ { R } & \text{Speed for max range} & 1 . 2 \text{--} 1 . 5 \times V _ { \text{md } } \\
-\text{Max endurance speed} & V _ { E } & \text{Speed for max endurance} & V _ { \text{md } } \\
-\text{Weight ratio} & W _ { 1 } / W _ { 2 } & \text{Initial/final weight} & 1 . 1 \text{--} 2 . 0 \\
-\end{array}
-$$
-
-**The fuel weight fraction is the reason the range and endurance are designed for the fraction, not the whole, and the fraction is the reason the range and endurance are the most fundamental performance metrics in flight mechanics. The engineer who calculates the range without checking the fuel weight fraction is not calculating the range; they are guessing.**
+R = \frac{V}{c_T}\,\frac{L}{D}\,\ln\frac{W_0}{W_1},\qquad
+E = \frac{1}{c_T}\,\frac{L}{D}\,\ln\frac{W_0}{W_1} .
+$$ {#eq-breguet-jet}
+Constant $V$ and constant $L/D$ (that is, constant $C_L$) require the density to fall in proportion to the weight, so the aircraft drifts upward as it burns fuel: the **cruise-climb**.
 :::
 
-::: widget plot
-title: The range vs weight ratio
-f: 8000*ln(x)
-x: 1,2
-y: 0,6000
-labels: R
-caption: The range against the weight ratio for a jet aircraft with $V / c _ { T } \times L / D = 8 0 0 0$ km. **The range increases with the weight ratio, and the range is the reason the range and endurance are designed for the range, not the endurance.** **The range is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.**
+::: proof
+Integrate [[#eq-dx]] from $W_0$ to $W_1$ with $V$, $L/D$ and $c_T$ outside the integral: $R = (V/c_T)(L/D)\int_{W_1}^{W_0}\mathrm{d}W/W = (V/c_T)(L/D)\ln(W_0/W_1)$. For endurance, $\mathrm{d}t = \mathrm{d}x/V$, so the factor $V$ drops out. For the flight condition: constant $L/D$ on a fixed polar means constant $C_L$; $W = \tfrac12\rho V^2SC_L$ with $V$ and $C_L$ constant requires $\rho \propto W$. Assumptions: quasi-steady level flight ($L = W$, $T = D$, the climb angle of the cruise-climb being negligible), fuel is the only weight lost, $c_T$ independent of thrust setting and altitude, no wind.
 :::
 
-::: example Propeller aircraft range calculation {#ex-prop-range-calc level=3 check="2"}
-A propeller aircraft has $\eta _ { P } = 0 . 8 5$ , $c = 0 . 2 5 \; \text{kg/kW·h }$ , $L / D = 1 6$ , $W _ { 1 } = 5 0 { , } 0 0 0 \; \text{N }$ , and $W _ { 2 } = 3 5 { , } 0 0 0 \; \text{N }$ . Calculate the range.
+The equation separates the three disciplines exactly: $V(L/D)$ (more precisely $M(L/D)$, since at a fixed Mach number the $c_T$ of a turbofan varies roughly as the square root of the ambient temperature, as the speed of sound does) for the aerodynamicist, $1/c_T$ for the engine designer, and $\ln(W_0/W_1)$ for the structures designer, since every kilogram of structure saved can be fuel instead.
 
-**Breguet range equation:**
-
-$$
-R \; = \; { \frac { \eta _ { P } } { c } } \, ( L / D ) \, \ln { \frac { W _ { 1 } } { W _ { 2 } } }
-$$
-
-First, convert $c$ to consistent units. $c = 0 . 2 5 \; \text{kg/kW·h } = 0 . 2 5 / ( 9 . 8 1 \times 3 6 0 0 ) \; \text{kg/N·s } = 7 . 0 8 \times 1 0 ^ { - 6 } \; \text{kg/N·s }$ .
-
-Alternatively, use the formula directly with $c$ in kg/kW·h and $\eta _ { P }$ dimensionless:
-
-$$
-R \; = \; { \frac { 0 . 8 5 } { 0 . 2 5 } } \times 1 6 \times \ln { \frac { 5 0 { , } 0 0 0 } { 3 5 { , } 0 0 0 } } \; = \; 3 . 4 \times 1 6 \times \ln 1 . 4 2 9
-$$
-
-$$
-R \; = \; 5 4 . 4 \times 0 . 3 5 7 \; = \; { \bf 1 9 . 4 } \quad \text{(in units of } \eta _ { P } / c \text{, need to convert)}
-$$
-
-Using the proper unit conversion: $c = 0 . 2 5 \; \text{kg/kW·h }$ means the aircraft burns 0.25 kg of fuel per kW of power per hour. The range in km is:
-
-$$
-R \; = \; { \frac { \eta _ { P } } { c \, g _ { 0 } } } \, ( L / D ) \, \ln { \frac { W _ { 1 } } { W _ { 2 } } } \; = \; { \frac { 0 . 8 5 } { 0 . 2 5 \times 9 . 8 1 / 3 6 0 0 } } \times 1 6 \times 0 . 3 5 7
-$$
-
-$$
-= \; { \frac { 0 . 8 5 } { 6 . 8 1 \times 1 0 ^ { - 4 } } } \times 1 6 \times 0 . 3 5 7 \; = \; 1 2 4 8 \times 1 6 \times 0 . 3 5 7 \; = \; { \bf 7 1 3 0 } \; \text{km }
-$$
-
-**The range is 7130 km. The engineer would design the aircraft for the equation, because the equation is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.**
-:::
-
-## 2. Payload-range diagram
-
-::: definition The payload-range diagram {#def-payload-range}
-The **payload-range diagram** is the plot of payload versus range for an aircraft, and the payload-range diagram is the reason the engineer can design the aircraft to meet its mission requirements.
-
-The **maximum range with payload** is:
-
-$$
-R _ { \max , \text{pay } } \; = \; { \frac { V } { c _ { T } } } \, ( L / D ) \, \ln { \frac { W _ { 0 } } { W _ { \text{OEW } } + W _ { \text{pay } } } }
-$$
-
-The **ferry range** (no payload) is:
-
-$$
-R _ { \text{ferry } } \; = \; { \frac { V } { c _ { T } } } \, ( L / D ) \, \ln { \frac { W _ { 0 } } { W _ { \text{OEW } } } }
-$$
-
-The **maximum payload** is:
-
-$$
-W _ { \text{pay } , \max } \; = \; W _ { 0 } - W _ { \text{OEW } } - W _ { \text{fuel } }
-$$
-
-The **design range** is:
-
-$$
-R _ { \text{design } } \; = \; R _ { \text{mission } } + R _ { \text{reserve } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Operating empty weight} & W _ { \text{OEW } } & \text{Aircraft weight} & 3 0 \\% \text{--} 5 0 \\% \text{ of } W _ { 0 } \\
-\text{Max takeoff weight} & W _ { 0 } & \text{Gross weight} & 5 0 { , } 0 0 0 \text{--} 5 0 0 { , } 0 0 0 \ \text{ N } \\
-\text{Fuel weight} & W _ { \text{fuel } } & \text{Fuel load} & 3 0 \\% \text{--} 5 0 \\% \text{ of } W _ { 0 } \\
-\text{Payload} & W _ { \text{pay } } & \text{Cargo/passengers} & 1 0 \\% \text{--} 3 0 \\% \text{ of } W _ { 0 } \\
-\end{array}
-$$
-
-**The specific fuel consumption is the reason the range and endurance are designed for the consumption, not the production, and the consumption is the reason the range and endurance are the most fundamental performance metrics in flight mechanics. The engineer who calculates the range without checking the specific fuel consumption is not calculating the range; they are guessing.**
-:::
-
-::: definition The still-air range {#def-still-air-range}
-The **still-air range** is the range in zero wind conditions, and the still-air range is the reason the engineer can design the aircraft to meet its mission requirements.
-
-The **still-air range** is:
-
-$$
-R _ { \text{still } } \; = \; { \frac { V } { c _ { T } } } \, ( L / D ) \, \ln { \frac { W _ { 1 } } { W _ { 2 } } }
-$$
-
-The **range with headwind** is:
-
-$$
-R _ { \text{head } } \; = \; R _ { \text{still } } \times { \frac { V - V _ { \text{wind } } } { V } }
-$$
-
-The **range with tailwind** is:
-
-$$
-R _ { \text{tail } } \; = \; R _ { \text{still } } \times { \frac { V + V _ { \text{wind } } } { V } }
-$$
-
-The **reserve fuel** is:
-
-$$
-W _ { \text{reserve } } \; = \; 0 . 0 5 \times W _ { \text{fuel } } \quad \text{(5\% reserve typical)}
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Still-air range} & R _ { \text{still } } & \text{Zero-wind range} & 1 0 0 0 \text{--} 1 5 { , } 0 0 0 \ \text{ km } \\
-\text{Headwind} & V _ { \text{wind } } & \text{Headwind speed} & 0 \text{--} 5 0 \ \text{ m/s } \\
-\text{Reserve fuel} & W _ { \text{res } } & \text{Reserve fuel} & 5 \\% \text{ of fuel} \\
-\text{Alternate fuel} & W _ { \text{alt } } & \text{Alternate fuel} & 5 \\% \text{ of fuel} \\
-\end{array}
-$$
-
-**The propeller efficiency is the reason the range and endurance are designed for the propeller, not the jet, and the propeller is the reason the range and endurance are the most fundamental performance metrics in flight mechanics. The engineer who calculates the range without checking the propeller efficiency is not calculating the range; they are guessing.**
-:::
-
-::: widget plot
-title: The endurance vs weight ratio
-f: 10*ln(x)
-x: 1,2
-y: 0,7
-labels: E
-caption: The endurance against the weight ratio for a propeller aircraft. **The endurance increases with the weight ratio, and the endurance is the reason the range and endurance are designed for the endurance, not the range.** **The endurance is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.**
-:::
-
-::: example Jet aircraft endurance calculation {#ex-jet-endurance-calc level=3 check="2"}
-A jet aircraft has $c _ { T } = 1 . 5 \times 1 0 ^ { - 5 } \; \text{kg/N·s }$ , $C _ { L } = 0 . 6$ , $C _ { D } = 0 . 0 3 5$ , $S = 8 0 \; \text{m } ^ { 2 }$ , $\rho = 0 . 4 1 3 \; \text{kg/m } ^ { 3 }$ (10,000 m), $W _ { 1 } = 4 0 0 { , } 0 0 0 \; \text{N }$ , and $W _ { 2 } = 3 2 0 { , } 0 0 0 \; \text{N }$ . Calculate the endurance.
-
-**Endurance equation for jet aircraft:**
-
-$$
-E \; = \; { \frac { 1 } { c _ { T } } } \, { \frac { C _ { L } ^ { 1 / 2 } } { C _ { D } } } \, { \sqrt { { \frac { 2 } { \rho } } } } \, { \sqrt { S } } \, \ln { \frac { W _ { 1 } } { W _ { 2 } } }
-$$
-
-Calculate each term:
-
-$$
-{ \frac { C _ { L } ^ { 1 / 2 } } { C _ { D } } } \; = \; { \frac { { \sqrt { 0 . 6 } } } { 0 . 0 3 5 } } \; = \; { \frac { 0 . 7 7 5 } { 0 . 0 3 5 } } \; = \; 2 2 . 1 4
-$$
-
-$$
-{ \sqrt { { \frac { 2 } { \rho } } } } \; = \; { \sqrt { { \frac { 2 } { 0 . 4 1 3 } } } } \; = \; { \sqrt { 4 . 8 4 } } \; = \; 2 . 2 0
-$$
-
-$$
-{ \sqrt { S } } \; = \; { \sqrt { 8 0 } } \; = \; 8 . 9 4
-$$
-
-$$
-\ln { \frac { W _ { 1 } } { W _ { 2 } } } \; = \; \ln { \frac { 4 0 0 { , } 0 0 0 } { 3 2 0 { , } 0 0 0 } } \; = \; \ln 1 . 2 5 \; = \; 0 . 2 2 3
-$$
-
-**Endurance:**
-
-$$
-E \; = \; { \frac { 1 } { 1 . 5 \times 1 0 ^ { - 5 } } } \times 2 2 . 1 4 \times 2 . 2 0 \times 8 . 9 4 \times 0 . 2 2 3 \; = \; 6 6 { , } 6 6 7 \times 2 2 . 1 4 \times 2 . 2 0 \times 8 . 9 4 \times 0 . 2 2 3
-$$
-
-$$
-E \; = \; { \bf 1 4 { , } 4 7 0 } \; \text{s } = { \bf 4 . 0 2 } \; \text{h }
-$$
-
-**The endurance is 4.02 hours. The engineer would design the aircraft for the consumption, because the consumption is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.**
-:::
-
-::: example Payload-range diagram calculation {#ex-payload-range-calc level=3 check="2"}
-An aircraft has $W _ { 0 } = 7 0 0 { , } 0 0 0 \\; \\text{N }$ , $W _ { \\text{OEW } } = 3 0 0 { , } 0 0 0 \\; \\text{N }$ , $V / c _ { T } \\times L / D = 1 2 { , } 0 0 0 \\; \\text{km }$ , and a maximum fuel capacity of $W _ { \\text{fuel } , \\max } = 3 0 0 { , } 0 0 0 \\; \\text{N }$ . Calculate the maximum payload, the ferry range, and the range at maximum payload.
-
-**Maximum payload:**
-
-$$
-W _ { \\text{pay } , \\max } \\; = \\; W _ { 0 } - W _ { \\text{OEW } } - W _ { \\text{fuel } , \\max } \\; = \\; 7 0 0 { , } 0 0 0 - 3 0 0 { , } 0 0 0 - 3 0 0 { , } 0 0 0 \\; = \\; { \\bf 1 0 0 { , } 0 0 0 } \\; \\text{N }
-$$
-
-**Ferry range** (no payload, full fuel):
-
-$$
-R _ { \\text{ferry } } \\; = \\; 1 2 { , } 0 0 0 \\times \\ln { \frac { W _ { 0 } } { W _ { \\text{OEW } } } } \\; = \\; 1 2 { , } 0 0 0 \\times \\ln { \frac { 7 0 0 { , } 0 0 0 } { 3 0 0 { , } 0 0 0 } } \\; = \\; 1 2 { , } 0 0 0 \\times \\ln 2 . 3 3 3
-$$
-
-$$
-R _ { \\text{ferry } } \\; = \\; 1 2 { , } 0 0 0 \\times 0 . 8 4 7 \\; = \\; { \\bf 1 0 { , } 1 6 4 } \\; \\text{km }
-$$
-
-**Range at maximum payload** (reduced fuel):
-
-$$
-W _ { 2 } \\; = \\; W _ { \\text{OEW } } + W _ { \\text{pay } , \\max } \\; = \\; 3 0 0 { , } 0 0 0 + 1 0 0 { , } 0 0 0 \\; = \\; 4 0 0 { , } 0 0 0 \\; \\text{N }
-$$
-
-$$
-R _ { \\text{pay } } \\; = \\; 1 2 { , } 0 0 0 \\times \\ln { \frac { 7 0 0 { , } 0 0 0 } { 4 0 0 { , } 0 0 0 } } \\; = \\; 1 2 { , } 0 0 0 \\times \\ln 1 . 7 5 \\; = \\; 1 2 { , } 0 0 0 \\times 0 . 5 6 0 \\; = \\; { \\bf 6 7 2 0 } \\; \\text{km }
-$$
-
-**The maximum payload is 100,000 N, the ferry range is 10,164 km, and the range at maximum payload is 6720 km. The engineer would design the aircraft for the diagram, because the diagram is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.**
-:::
-
-::: example Cruise altitude effect on range {#ex-cruise-altitude-effect level=3 check="2"}
-A jet aircraft flies at $V = 2 4 0 \\; \\text{m/s }$ with $L / D = 1 6$ and $c _ { T } = 1 . 4 \\times 1 0 ^ { - 5 } \\; \\text{kg/N·s }$ . Compare the range at sea level ($\\rho = 1 . 2 2 5$) and at 11,000 m ($\\rho = 0 . 3 6 4$) for the same weight ratio $W _ { 1 } / W _ { 2 } = 1 . 3$ .
-
-**Range at sea level:**
-
-$$
-R _ { \\text{SL } } \\; = \\; { \frac { V } { c _ { T } } } \\, ( L / D ) \\, \\ln { \frac { W _ { 1 } } { W _ { 2 } } } \\; = \\; { \frac { 2 4 0 } { 1 . 4 \\times 1 0 ^ { - 5 } } } \\times 1 6 \\times \\ln 1 . 3
-$$
-
-$$
-= \\; 1 7 { , } 1 4 2 { , } 8 5 7 \\times 1 6 \\times 0 . 2 6 2 \\; = \\; { \\bf 7 1 { , } 9 0 0 { , } 0 0 0 } \\; \\text{m } = { \\bf 7 1 { , } 9 0 0 } \\; \\text{km }
-$$
-
-**Note:** The range formula gives the same result at all altitudes for the same $V$ , $c _ { T }$ , and $L / D$ . The altitude effect enters through $c _ { T }$ (which decreases with altitude due to lower temperature) and through the true airspeed $V$ (which increases with altitude for the same indicated airspeed).
-
-**At 11,000 m**, $c _ { T }$ decreases by approximately 15% to $1 . 1 9 \\times 1 0 ^ { - 5 }$ kg/N·s:
-
-$$
-R _ { 1 1 \\text{k } } \\; = \\; { \frac { 2 4 0 } { 1 . 1 9 \\times 1 0 ^ { - 5 } } } \\times 1 6 \\times 0 . 2 6 2 \\; = \\; { \\bf 8 4 { , } 5 0 0 } \\; \\text{km }
-$$
-
-**Range improvement:**
-
-$$
-{ \frac { R _ { 1 1 \\text{k } } - R _ { \\text{SL } } } { R _ { \\text{SL } } } } \\; = \\; { \frac { 8 4 { , } 5 0 0 - 7 1 { , } 9 0 0 } { 7 1 { , } 9 0 0 } } \\; = \\; { \\bf 1 7 . 5 } \\; \\%
-$$
-
-**The range at 11,000 m is 84,500 km, which is 17.5% greater than at sea level. The engineer would design the aircraft for the altitude, because the altitude is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.**
-:::
-
-::: exercise Endurance for propeller aircraft {#ex-endurance-prop-ex level=3 check="2"}
-A propeller aircraft has $c = 0 . 2 \\; \\text{kg/kW·h }$ , $C _ { L } = 0 . 8$ , $C _ { D } = 0 . 0 4$ , $S = 2 0 \\; \\text{m } ^ { 2 }$ , $\\rho = 1 . 2 2 5 \\; \\text{kg/m } ^ { 3 }$ , and $W _ { 1 } / W _ { 2 } = 1 . 2$ . Calculate the endurance.
-
+::: example Range of the jet transport {#ex-jet-range}
+The jet transport of [[flight-mechanics/steady-flight-performance]] starts cruise at $70\,000\ \mathrm{kg}$ at $11\ \mathrm{km}$ and Mach $0.78$ with $12\,000\ \mathrm{kg}$ of usable cruise fuel, and $c_T = 0.55\ \mathrm{h^{-1}}$. Find the cruise-climb range and endurance, and the altitude at the end of cruise.
 ::: solution
+From [[flight-mechanics/steady-flight-performance#ex-jet-md]]: $V = 230.15\ \mathrm{m/s}$, $C_L = 0.5809$ and $L/D = 17.02$ at the start of cruise; the cruise-climb holds these values. With $c_T = 0.55/3600 = 1.528\times10^{-4}\ \mathrm{s^{-1}}$ and $\ln(70/58) = 0.18805$:
 $$
-E \\; = \\; { \frac { 2 } { c } } \\, { \sqrt { { \frac { 2 } { \\rho } } } } \\, { \frac { C _ { L } ^ { 3 / 2 } } { C _ { D } } } \\, { \sqrt { S } } \\, \\ln { \frac { W _ { 1 } } { W _ { 2 } } }
+R = \frac{230.15}{1.528\times10^{-4}} \times 17.02 \times 0.18805 = 4.821\times10^{6}\ \mathrm{m} = 4821\ \mathrm{km},
 $$
-
 $$
-{ \frac { C _ { L } ^ { 3 / 2 } } { C _ { D } } } \\; = \\; { \frac { 0 . 8 ^ { 1 . 5 } } { 0 . 0 4 } } \\; = \\; { \frac { 0 . 7 1 6 } { 0 . 0 4 } } \\; = \\; 1 7 . 8 9
+E = \frac{R}{V} = \frac{4.821\times10^{6}}{230.15} = 20\,950\ \mathrm{s} = 5.82\ \mathrm{h}.
 $$
-
-$$
-{ \sqrt { { \frac { 2 } { 1 . 2 2 5 } } } } \\; = \\; { \sqrt { 1 . 6 3 3 } } \\; = \\; 1 . 2 7 8
-$$
-
-$$
-{ \sqrt { 2 0 } } \\; = \\; 4 . 4 7 2 , \\quad \\ln 1 . 2 \\; = \\; 0 . 1 8 2 3
-$$
-
-$$
-E \\; = \\; { \frac { 2 } { 0 . 2 } } \\times 1 . 2 7 8 \\times 1 7 . 8 9 \\times 4 . 4 7 2 \\times 0 . 1 8 2 3 \\; = \\; 1 0 \\times 1 . 2 7 8 \\times 1 7 . 8 9 \\times 4 . 4 7 2 \\times 0 . 1 8 2 3
-$$
-
-$$
-E \\; = \\; { \\bf 2 3 5 } \\; \\text{(in units of } 1 / c \\text{, need to convert to hours)}
-$$
-
-With $c$ in kg/kW·h, the endurance is approximately **235 / 3600 hours** after unit conversion. The engineer would design the aircraft for the consumption, because the consumption is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.
+At the end the density must be $0.3639 \times 58/70 = 0.3015\ \mathrm{kg/m^3}$, which in the isothermal layer is at $12.19\ \mathrm{km}$: the aircraft has drifted up about $1200\ \mathrm{m}$. Sanity check: about $4800\ \mathrm{km}$ on $12\ \mathrm{t}$ of fuel matches the warning above; and the fuel burned per hour, $12\,000/5.82 = 2060\ \mathrm{kg/h}$, equals $c_TD/g$ averaged over the flight ($c_T D/g$ at the start is $1.528\times10^{-4} \times 40\,340/9.807 \times 3600 = 2263\ \mathrm{kg/h}$, falling in proportion to weight to $1875\ \mathrm{kg/h}$).
 :::
+:::
+
+### Other cruise programmes
+
+Air traffic control rarely allows a continuous cruise-climb; airliners cruise at constant flight levels and climb in steps of $600\ \mathrm{m}$ ($2000\ \mathrm{ft}$) as they get lighter. Two constant-altitude programmes can be integrated in closed form.
+
+**Constant altitude, constant $C_L$.** Then $L/D$ is constant but the speed must fall as $V = \sqrt{2W/(\rho SC_L)}$. Substituting into [[#eq-dx]] and integrating $W^{-1/2}\,\mathrm{d}W$:
+$$
+R = \frac{2}{c_T}\sqrt{\frac{2}{\rho S}}\,\frac{\sqrt{C_L}}{C_D}\left(\sqrt{W_0} - \sqrt{W_1}\right).
+$$ {#eq-range-const-h}
+**Constant altitude, constant speed.** Then $C_L$ falls with weight, $L/D$ changes, and the integral gives an arctangent formula ([[#exr-const-speed]] derives it). Both constant-altitude programmes give slightly less range than the cruise-climb, because they move the aircraft away from its best $C_L$ or speed as weight falls.
+
+::: example Comparing cruise programmes {#ex-programmes}
+Repeat [[#ex-jet-range]] for the two constant-altitude programmes at $11\ \mathrm{km}$, starting at the same condition.
+::: solution
+*Constant altitude and $C_L$:* with $\rho = 0.3639$, $S = 122.6$, $C_L = 0.5809$, $C_D = 0.03413$, $\sqrt{W_0} = \sqrt{686\,466} = 828.53$ and $\sqrt{W_1} = \sqrt{568\,786} = 754.18\ \mathrm{N^{1/2}}$:
+$$
+R = \frac{2}{1.528\times10^{-4}}\sqrt{\frac{2}{0.3639 \times 122.6}}\;\frac{\sqrt{0.5809}}{0.03413}\;(828.53 - 754.18) = 4.602\times10^{6}\ \mathrm{m}.
+$$
+The speed falls from $230$ to $\sqrt{58/70} \times 230.15 = 209.5\ \mathrm{m/s}$.
+
+*Constant altitude and speed:* now $q = 9639\ \mathrm{Pa}$ is fixed and $D = qSC_{D0} + KW^2/(qS)$ falls with the weight. Integrating $\mathrm{d}x = -V\,\mathrm{d}W/(c_TD)$ (in closed form, [[#exr-const-speed]], or numerically) gives $R = 4718\ \mathrm{km}$. The lift coefficient falls from $0.581$ to $0.481$, moving *away* from $C_L^\ast = 0.691$, so $L/D$ drops from $17.02$ to $16.20$ during the cruise.
+
+| programme | range / km |
+|---|---|
+| cruise-climb (Breguet) | 4821 |
+| constant altitude, constant speed | 4718 |
+| constant altitude, constant $C_L$ | 4602 |
+
+Sanity check: the three agree within $5\,\%$, the cruise-climb is best, and the constant-$C_L$ programme is worst here because it gives away speed. Step climbs recover most of the difference.
+:::
+:::
+
+## Best speeds for range and endurance {#sec-best-speeds}
+
+[[#eq-breguet-jet]] suggests flying at $(L/D)_{\max}$, but for a jet the range contains $V(L/D)$, and a faster speed at slightly lower $L/D$ wins.
+
+::: proposition Best lift coefficients for range and endurance {#prop-best-cl}
+For a parabolic polar $C_D = C_{D0} + KC_L^2$ at a given weight and altitude:
+
+| aircraft | maximum endurance | maximum range |
+|---|---|---|
+| jet ($c_T$ constant) | max $C_L/C_D$: $C_L = \sqrt{C_{D0}/K}$, at $V_{md}$ | max $\sqrt{C_L}/C_D$: $C_L = \sqrt{C_{D0}/(3K)}$, at $3^{1/4}V_{md} = 1.316\,V_{md}$ |
+| propeller ($c_P$, $\eta_p$ constant) | max $C_L^{3/2}/C_D$: $C_L = \sqrt{3C_{D0}/K}$, at $V_{mp} = 0.760\,V_{md}$ | max $C_L/C_D$: $C_L = \sqrt{C_{D0}/K}$, at $V_{md}$ |
+
+At the jet best-range condition $C_D = \tfrac43C_{D0}$ and $L/D = \tfrac{\sqrt3}{2}(L/D)_{\max} = 0.866\,(L/D)_{\max}$.
+:::
+
+::: proof
+*Jet endurance:* the fuel flow is $c_TD$, least at minimum drag. *Jet range:* the specific air range is $V/(c_TD)$; with $V = \sqrt{2W/(\rho SC_L)}$ and $D = WC_D/C_L$, $V/D \propto C_L^{-1/2}C_L/C_D = \sqrt{C_L}/C_D$. Maximise $\tfrac12\ln C_L - \ln(C_{D0} + KC_L^2)$: $\dfrac{1}{2C_L} = \dfrac{2KC_L}{C_{D0} + KC_L^2}$, so $C_{D0} = 3KC_L^2$, $C_L = \sqrt{C_{D0}/(3K)}$ and $C_D = C_{D0} + C_{D0}/3$. Then $L/D = \sqrt{C_{D0}/(3K)}/(\tfrac43C_{D0}) = \tfrac{\sqrt3}{4}\cdot\tfrac{1}{\sqrt{KC_{D0}}} = \tfrac{\sqrt3}{2}(L/D)_{\max}$, and the speed ratio is $(C_L^\ast/C_L)^{1/2} = 3^{1/4}$.
+
+*Propeller:* the fuel flow is $c_PP_{\text{shaft}} = c_PDV/\eta_p$. Endurance requires least power $DV$, which is [[flight-mechanics/steady-flight-performance#prop-min-power]]: $C_L = \sqrt{3C_{D0}/K}$. Range requires least fuel per unit distance, $c_PD/\eta_p$, i.e. least drag: $(L/D)_{\max}$.
+:::
+
+The roles are "shifted" between the two engine types because a propeller aircraft's fuel flow follows power and a jet's follows thrust. For the light aircraft the best-range speed at mid-cruise mass ($1040\ \mathrm{kg}$) is $V_{md} = 37.0\ \mathrm{m/s}$ at sea level — so slow that nobody flies it; real light aircraft cruise at $55$–$65\ \mathrm{m/s}$, accepting an $L/D$ of about $11$ instead of $12.5$ for a much shorter trip. For the jet transport at $11\ \mathrm{km}$, $1.316\,V_{md} = 277.7\ \mathrm{m/s}$, Mach $0.94$: beyond the drag rise, so the parabolic polar is not valid there, and the real best-range Mach number of a transport (about $0.76$–$0.80$) is set by the onset of wave drag. Put the other way round: at Mach $0.78$ the parabolic polar would place the best-range lift coefficient $0.399$ at a much lower altitude ([[#exr-altitude]]), where the engines are less efficient.
+
+::: widget plot
+f: sqrt(x)/(0.02 + 0.04188*x^2)/17.28/1.37; x/(0.02 + 0.04188*x^2)/17.28; x^1.5/(0.02 + 0.04188*x^2)/17.28/0.9
+x: 0.05, 1.6
+y: 0, 1.1
+vlines: 0.399; 0.691; 1.197
+labels: \sqrt{C_L}/C_D\ \text{(jet range)}; C_L/C_D\ \text{(jet endurance, prop range)}; C_L^{3/2}/C_D\ \text{(prop endurance)}
+caption: The three efficiency measures for the jet transport's polar, each scaled so that its peak is near 1, against $C_L$. The dashed lines mark the peaks at $C_L = 0.399$, $0.691$ and $1.197$, in the ratio $1 : \sqrt3 : 3$. Each curve is flat near its peak: flying $10\,\%$ off the optimum lift coefficient costs well under $1\,\%$ — which is why airlines can fly faster than the best-range speed for a small fuel penalty.
+:::
+
+## Propeller aircraft {#sec-prop}
+
+::: proposition Breguet range and endurance for propeller aircraft {#prop-breguet-prop}
+With $\eta_p$, $c_P$ and $L/D$ constant, the range is
+$$
+R = \frac{\eta_p}{c_P}\,\frac{L}{D}\,\ln\frac{W_0}{W_1},
+$$ {#eq-breguet-prop}
+independent of the speed and altitude at which the chosen $C_L$ is flown. At constant altitude and constant $C_L$ the endurance is
+$$
+E = \frac{\eta_p}{c_P}\,\frac{C_L^{3/2}}{C_D}\,\sqrt{2\rho S}\,\left(W_1^{-1/2} - W_0^{-1/2}\right),
+$$ {#eq-endurance-prop}
+which is greatest at sea level and at the minimum-power condition.
+:::
+
+::: proof
+The weight falls as $\mathrm{d}W/\mathrm{d}t = -c_PP_{\text{shaft}} = -c_PDV/\eta_p$, so $\mathrm{d}x = V\,\mathrm{d}t = -\eta_p\,\mathrm{d}W/(c_PD) = -(\eta_p/c_P)(L/D)\,\mathrm{d}W/W$, which integrates to [[#eq-breguet-prop]]. The speed has cancelled: a propeller aircraft's range depends on $L/D$, not $V(L/D)$. For endurance, $\mathrm{d}t = -\eta_p\,\mathrm{d}W/(c_PDV)$ with $DV = W(C_D/C_L)\sqrt{2W/(\rho SC_L)}$:
+$$
+\mathrm{d}t = -\frac{\eta_p}{c_P}\,\frac{C_L^{3/2}}{C_D}\,\sqrt{\frac{\rho S}{2}}\,W^{-3/2}\,\mathrm{d}W,
+$$
+and $\int_{W_1}^{W_0}W^{-3/2}\,\mathrm{d}W = 2(W_1^{-1/2} - W_0^{-1/2})$, which gives [[#eq-endurance-prop]]. Assumptions: as for the jet, plus constant propeller efficiency, which is optimistic at the low speeds of maximum endurance.
+:::
+
+::: example Range and endurance of the light aircraft {#ex-la-range}
+The light aircraft carries $120\ \mathrm{kg}$ of usable fuel at a take-off mass of $1100\ \mathrm{kg}$. With BSFC $= 0.25\ \mathrm{kg/(kW\,h)}$ and $\eta_p = 0.75$, find its maximum still-air range and its maximum endurance at sea level and at $2000\ \mathrm{m}$.
+::: solution
+$c_P = 6.810\times10^{-7}\ \mathrm{m^{-1}}$, $(L/D)_{\max} = 12.53$, $\ln(1100/980) = 0.11551$:
+$$
+R_{\max} = \frac{0.75}{6.810\times10^{-7}} \times 12.53 \times 0.11551 = 1.594\times10^{6}\ \mathrm{m} = 1594\ \mathrm{km}.
+$$
+For endurance, $(C_L^{3/2}/C_D)_{\max}$ at $C_L = \sqrt{3 \times 0.030/0.05305} = 1.3025$: $1.3025^{1.5}/0.120 = 12.39$. With $W_1 = 980g = 9610\ \mathrm{N}$ and $W_0 = 10\,787\ \mathrm{N}$, $W_1^{-1/2} - W_0^{-1/2} = 0.010201 - 0.009628 = 5.725\times10^{-4}\ \mathrm{N^{-1/2}}$. At sea level, $\sqrt{2 \times 1.225 \times 16.2} = 6.300$:
+$$
+E = \frac{0.75}{6.810\times10^{-7}} \times 12.39 \times 6.300 \times 5.725\times10^{-4} = 4.92\times10^{4}\ \mathrm{s} = 13.7\ \mathrm{h},
+$$
+and at $2000\ \mathrm{m}$ it is smaller by $\sqrt{0.8216}$: $12.4\ \mathrm{h}$. Sanity check: at minimum power ($28.7\ \mathrm{kW}$ thrust power, $38.3\ \mathrm{kW}$ shaft) the fuel flow is $0.25 \times 38.3 = 9.6\ \mathrm{kg/h}$, and $120/9.6 = 12.5\ \mathrm{h}$ at the initial weight — consistent. Real light aircraft do far worse (about $5$–$6\ \mathrm{h}$ and $1000$–$1200\ \mathrm{km}$), because they cruise at $60\,\%$–$75\,\%$ power, keep a fuel reserve, and their engines and propellers are less efficient at the very low power and speed of the ideal.
+:::
+:::
+
+## Wind, reserves and the mission {#sec-wind}
+
+In a wind, what matters is distance over the ground per unit of fuel. With a headwind component $V_w$ the ground speed is $V - V_w$, and the specific ground range is $(V - V_w)/\dot W_f$. The best speed is no longer the still-air value: into a headwind it increases (less time is spent fighting the wind), and with a tailwind it decreases. A common rule of thumb is to add about a quarter to a half of the headwind component to the still-air best-range speed.
+
+::: example Best-range speed into a headwind {#ex-wind}
+The light aircraft at a mass of $1040\ \mathrm{kg}$ flies at sea level into a $10\ \mathrm{m/s}$ headwind. Find the speed that maximises the ground distance per kilogram of fuel, and compare with flying the still-air best-range speed.
+::: solution
+The fuel mass flow is $\dot m_f = c_P\,DV/(\eta_p g)$ with $D(V)$ from the polar, $W = 10\,199\ \mathrm{N}$. The specific ground range $(V - 10)/\dot m_f$, maximised numerically, peaks at $V = 40.2\ \mathrm{m/s}$ with $9.83\ \mathrm{km/kg}$. At the still-air optimum $V_{md} = 37.0\ \mathrm{m/s}$ it gives $9.68\ \mathrm{km/kg}$, and in still air at $37.0\ \mathrm{m/s}$ the figure is $13.27\ \mathrm{km/kg}$. With a $10\ \mathrm{m/s}$ tailwind the optimum moves down to $35.0\ \mathrm{m/s}$ ($16.96\ \mathrm{km/kg}$). Sanity check: the speed correction is $+3.2\ \mathrm{m/s}$ for $10\ \mathrm{m/s}$ of headwind, within the rule of thumb, and the gain from correcting the speed ($1.5\,\%$) is small compared with the loss to the wind itself ($26\,\%$).
+:::
+:::
+
+::: widget plot
+f: (x - w)/(6.81e-7*x*(0.5*1.225*x^2*16.2*0.030 + 0.05305*10199^2/(0.5*1.225*x^2*16.2))/0.75/9.80665)/1000
+x: 25, 80
+y: 0, 20
+sliders: w=0:-20:20:1
+labels: \text{km per kg of fuel}
+caption: Specific ground range of the light aircraft (km per kg of fuel) at sea level and $1040\ \mathrm{kg}$ against true airspeed (m/s), for a headwind component $w$ (m/s; negative for a tailwind). With $w = 0$ the peak is at $V_{md} = 37\ \mathrm{m/s}$. Increase the headwind and the peak moves to higher speed and drops; with a tailwind it moves lower. Notice how flat the curve is at its top in still air.
+:::
+
+A real mission adds taxi, take-off, climb, descent and landing fuel, and regulations require reserves — for example, for airline flights, contingency fuel, fuel to fly to an alternate aerodrome, and final reserve fuel for a period of holding (under EU rules, 30 minutes of holding for turbine-engined aeroplanes). In conceptual design (Raymer, Anderson) each segment is given a weight fraction $W_{i+1}/W_i$, with the cruise and loiter fractions from the Breguet equations and the others from historical data, and the product of the fractions gives the total fuel fraction. Inverting [[#eq-breguet-jet]] gives the cruise fraction for a required range:
+$$
+\frac{W_1}{W_0} = \exp\left(-\frac{R\,c_T}{V\,(L/D)}\right).
+$$ {#eq-fuel-fraction}
+
+::: example Fuel for a 5000 km cruise {#ex-fuel}
+How much fuel does the jet transport need for a cruise-climb of $5000\ \mathrm{km}$ at the conditions of [[#ex-jet-range]], starting at $70\,000\ \mathrm{kg}$?
+::: solution
+$Rc_T/(V\,L/D) = 5.0\times10^{6} \times 1.528\times10^{-4}/(230.15 \times 17.02) = 0.19501$, so $W_1/W_0 = e^{-0.19501} = 0.8228$ and the cruise fuel is $70\,000 \times (1 - 0.8228) = 12\,400\ \mathrm{kg}$. Sanity check: $4821\ \mathrm{km}$ needed $12\,000\ \mathrm{kg}$, an average of $2.49\ \mathrm{kg/km}$. The extra $179\ \mathrm{km}$ costs only $403\ \mathrm{kg}$, $2.25\ \mathrm{kg/km}$, because both flights start at $70\ \mathrm{t}$ and the extra distance is flown at the end, when the aircraft weighs about $57.6\ \mathrm{t}$ and burns $c_TW/(g\,V\,L/D) = 1.528\times10^{-4} \times 57\,600/(230.15 \times 17.02) = 2.25\ \mathrm{kg/km}$.
+:::
+:::
+
+### The payload–range diagram {#sec-payload-range}
+
+An airline does not ask "how far can the aircraft fly?" but "how far can it fly *with this payload*?". Three weight limits answer the question: the **maximum take-off weight** (MTOW, set by structure and performance), the **maximum zero-fuel weight** (MZFW, set by wing bending — fuel in the wing relieves the root bending moment, payload in the fuselage does not) and the **fuel capacity** of the tanks. With the **operating empty weight** (OEW: structure, engines, systems, crew, catering) fixed, the take-off weight is OEW + payload + fuel, and the **payload–range diagram** plots the payload against the range available with it.
+
+::: algorithm Constructing the payload–range diagram {#alg-payload-range}
+1. **Maximum payload** $= \text{MZFW} - \text{OEW}$. Fill fuel until take-off weight reaches MTOW: fuel $= \text{MTOW} - \text{MZFW}$. Compute the range with [[#eq-breguet-jet]] from $W_0 = \text{MTOW}$ to $W_1 = \text{MTOW} - \text{cruise fuel}$. This is point A; below it the payload line is horizontal.
+2. **Tanks full at MTOW.** Trade payload for fuel at constant MTOW until the tanks are full: payload $= \text{MTOW} - \text{OEW} - \text{fuel capacity}$. Point B; between A and B the range grows only through the logarithm.
+3. **Ferry range.** Remove the remaining payload with tanks full: take-off weight falls below MTOW, $W_1$ falls with it, and the range grows again. Point C, zero payload.
+4. In every case subtract the reserve and the take-off, climb and descent allowances from the fuel before applying Breguet to the cruise.
+:::
+
+For the jet transport with MTOW $78\ \mathrm{t}$, MZFW $60\ \mathrm{t}$, OEW $42\ \mathrm{t}$, fuel capacity $21\ \mathrm{t}$, a combined reserve and allowance of $3\ \mathrm{t}$, and the cruise of [[#ex-jet-range]] ($V(L/D)/c_T = 25\,640\ \mathrm{km}$, assumed constant):
+
+| point | payload / t | fuel / t | $W_0$ / t | $W_1$ / t | range / km |
+|---|---|---|---|---|---|
+| A (max payload) | 18 | 18 | 78 | 63 | $25\,640\ln(78/63) = 5476$ |
+| B (full tanks at MTOW) | 15 | 21 | 78 | 60 | $25\,640\ln(78/60) = 6727$ |
+| C (ferry) | 0 | 21 | 63 | 45 | $25\,640\ln(63/45) = 8626$ |
+
+The diagram shows why a fuel-efficient engine or a lighter structure is worth so much: one tonne less OEW is one tonne more payload at every range up to point A, and beyond A it buys range at the rate given by the slope of segment AB: $(6727 - 5476)/3 = 417\ \mathrm{km}$, or about $8\,\%$ of the range at A, per tonne of payload given up.
+
+::: quiz
+A turboprop and a turbofan aircraft both have $(L/D)_{\max} = 16$. Which statement is correct for still-air cruise at a fixed altitude?
+- [ ] Both should fly at $(L/D)_{\max}$ for best range.
+- [x] The turboprop should fly at $(L/D)_{\max}$; the turbofan at a higher speed, where $L/D \approx 13.9$.
+- [ ] The turbofan should fly at $(L/D)_{\max}$; the turboprop at the minimum-power speed.
+- [ ] Both should fly at the minimum-power speed.
+::: solution
+For the propeller aircraft the fuel flow follows power and the range is $(\eta_p/c_P)(L/D)\ln(W_0/W_1)$, so $(L/D)_{\max}$ is best. For the jet the range contains $V(L/D)$; the optimum is $\sqrt{C_L}/C_D$ maximum, at $3^{1/4}V_{md}$ with $L/D = 0.866 \times 16 = 13.9$.
+:::
+:::
+
+::: history
+The range equation carries the name of the French aircraft builder Louis Breguet, but the earliest published derivation usually cited is J. G. Coffin's "A study of airplane ranges and useful loads", NACA Report No. 69, issued with the NACA's fifth annual report (for 1919); how Breguet's name became attached to it is not clearly documented. The equation's split of range into aerodynamic ($L/D$), propulsive ($\eta_p/c_P$ or $V/c_T$) and structural ($\ln W_0/W_1$) factors has guided design ever since, from the long-distance record flights of the 1920s and 1930s to the sizing of every modern airliner, in which the improvement of each factor — supercritical wings and winglets, high-bypass turbofans, composite structures — can be read directly as a percentage gain in range or fuel burn.
+:::
+
+::: summary
+- Jet fuel flow $= c_TT$ (weight basis, $c_T$ in $\mathrm{s^{-1}}$); propeller fuel flow $= c_PP_{\text{shaft}}$ ($c_P$ in $\mathrm{m^{-1}}$), with $TV = \eta_pP_{\text{shaft}}$.
+- Jet: $R = (V/c_T)(L/D)\ln(W_0/W_1)$, $E = (1/c_T)(L/D)\ln(W_0/W_1)$ (cruise-climb at constant $V$, $C_L$).
+- Propeller: $R = (\eta_p/c_P)(L/D)\ln(W_0/W_1)$; endurance $\propto (C_L^{3/2}/C_D)\sqrt\rho$, best at low altitude.
+- Best $C_L$: jet range $\sqrt{C_{D0}/3K}$ (speed $1.316V_{md}$, $L/D = 0.866(L/D)_{\max}$); jet endurance and propeller range $\sqrt{C_{D0}/K}$; propeller endurance $\sqrt{3C_{D0}/K}$.
+- Constant-altitude programmes give a few per cent less range than the cruise-climb; step climbs recover most of it.
+- Into a headwind fly faster than the still-air best-range speed; transport cruise speed is in practice set by the drag rise.
 :::
 
 ## Exercises
 
-::: exercise Breguet range {#ex-breguet-range-ex level=3 check="2"}
-A jet aircraft has $V = 2 5 0 \; \text{m/s }$ , $c _ { T } = 1 . 5 \times 1 0 ^ { - 5 } \; \text{kg/N·s }$ , $L / D = 1 5$ , and $W _ { 1 } / W _ { 2 } = 1 . 4$ . Calculate the range.
-
+::: exercise Converting a fuel consumption {level=1 check="16.4"}
+An engine data sheet gives $c_T = 0.58\ \mathrm{lb/(lbf\,h)}$. Express it as a mass flow per unit thrust in $\mathrm{mg\,N^{-1}\,s^{-1}}$. (Enter the value rounded to one decimal place.)
 ::: solution
-$$
-R \; = \; { \frac { V } { c _ { T } } } \, ( L / D ) \, \ln { \frac { W _ { 1 } } { W _ { 2 } } } \; = \; { \frac { 2 5 0 } { 1 . 5 \times 1 0 ^ { - 5 } } } \times 1 5 \times \ln 1 . 4
-$$
-
-$$
-= \; 1 6 { , } 6 6 6 { , } 6 6 7 \times 1 5 \times 0 . 3 3 6 \; = \; { \bf 8 4 { , } 0 0 0 { , } 0 0 0 } \; \text{m } = { \bf 8 4 { , } 0 0 0 } \; \text{km }
-$$
-
-**Note:** This is unrealistically high because the TSFC units need careful conversion. In practice, $c _ { T }$ in kg/N·s gives range in meters when $V$ is in m/s.
-
-**The range is 84,000 km (unrealistic; check units). The engineer would design the aircraft for the equation, because the equation is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.**
+Pounds of fuel per pound-force of thrust per hour is weight per weight per hour: $c_T = 0.58\ \mathrm{h^{-1}} = 1.611\times10^{-4}\ \mathrm{s^{-1}}$. The mass basis divides by $g$: $1.611\times10^{-4}/9.80665 = 1.643\times10^{-5}\ \mathrm{kg\,N^{-1}\,s^{-1}} = 16.4\ \mathrm{mg\,N^{-1}\,s^{-1}}$.
 :::
 :::
 
-::: exercise Fuel weight fraction {#ex-fuel-weight-fraction-ex level=3 check="2"}
-An aircraft has $W _ { 0 } = 6 0 0 { , } 0 0 0 \; \text{N }$ , $W _ { \text{OEW } } = 2 5 0 { , } 0 0 0 \; \text{N }$ , and $W _ { \text{pay } } = 8 0 { , } 0 0 0 \; \text{N }$ . Calculate the fuel weight and the fuel weight fraction.
-
+::: exercise Jet range {level=1 check="6941"}
+A long-range jet cruises at $V = 240\ \mathrm{m/s}$ with $L/D = 18$ and $c_T = 0.50\ \mathrm{h^{-1}}$, burning $20\,\%$ of its initial weight. Find the cruise-climb range. (Enter it in km, rounded to the nearest kilometre.)
 ::: solution
-$$
-W _ { \text{fuel } } \; = \; W _ { 0 } - W _ { \text{OEW } } - W _ { \text{pay } } \; = \; 6 0 0 { , } 0 0 0 - 2 5 0 { , } 0 0 0 - 8 0 { , } 0 0 0 \; = \; { \bf 2 7 0 { , } 0 0 0 } \; \text{N }
-$$
-
-$$
-\zeta _ { f } \; = \; { \frac { W _ { \text{fuel } } } { W _ { 0 } } } \; = \; { \frac { 2 7 0 { , } 0 0 0 } { 6 0 0 { , } 0 0 0 } } \; = \; { \bf 0 . 4 5 }
-$$
-
-**The fuel weight is 270,000 N and the fuel weight fraction is 0.45.**
+$c_T = 1.389\times10^{-4}\ \mathrm{s^{-1}}$, $\ln(1/0.8) = 0.22314$: $R = (240/1.389\times10^{-4}) \times 18 \times 0.22314 = 6.941\times10^{6}\ \mathrm{m} = 6941\ \mathrm{km}$.
 :::
 :::
 
-::: exercise Weight ratio {#ex-weight-ratio-ex level=3 check="2"}
-An aircraft has $W _ { 1 } = 5 0 0 { , } 0 0 0 \; \text{N }$ and burns $W _ { \text{fuel } } = 1 5 0 { , } 0 0 0 \; \text{N }$ of fuel. Calculate the weight ratio.
-
+::: exercise Propeller range {level=1 check="3113"}
+A turboprop has $\eta_p = 0.80$, BSFC $= 0.23\ \mathrm{kg/(kW\,h)}$ and cruises at $L/D = 15$, burning $15\,\%$ of its initial weight. Find the range. (Enter it in km, rounded to the nearest kilometre.)
 ::: solution
-$$
-W _ { 2 } \; = \; W _ { 1 } - W _ { \text{fuel } } \; = \; 5 0 0 { , } 0 0 0 - 1 5 0 { , } 0 0 0 \; = \; 3 5 0 { , } 0 0 0 \; \text{N }
-$$
-
-$$
-{ \frac { W _ { 1 } } { W _ { 2 } } } \; = \; { \frac { 5 0 0 { , } 0 0 0 } { 3 5 0 { , } 0 0 0 } } \; = \; { \bf 1 . 4 2 9 }
-$$
-
-**The weight ratio is 1.429.**
+$c_P = 0.23 \times 9.80665/3.6\times10^{6} = 6.265\times10^{-7}\ \mathrm{m^{-1}}$; $\ln(1/0.85) = 0.16252$; $R = (0.80/6.265\times10^{-7}) \times 15 \times 0.16252 = 3.113\times10^{6}\ \mathrm{m} = 3113\ \mathrm{km}$.
 :::
 :::
 
-::: exercise Headwind effect {#ex-headwind-effect-ex level=3 check="2"}
-An aircraft has a still-air range of $R _ { \text{still } } = 6 0 0 0 \; \text{km }$ at $V = 2 3 0 \; \text{m/s }$ . Calculate the range with a $3 0 \; \text{m/s }$ headwind.
-
+::: exercise Fuel fraction for a mission {level=2 check="0.111"}
+A jet with $L/D = 17$ at $V = 230\ \mathrm{m/s}$ and $c_T = 0.55\ \mathrm{h^{-1}}$ must cruise $3000\ \mathrm{km}$. What fraction of the weight at the start of cruise is burned in the cruise? (Enter the fraction rounded to three decimal places.)
 ::: solution
-$$
-R _ { \text{head } } \; = \; R _ { \text{still } } \times { \frac { V - V _ { \text{wind } } } { V } } \; = \; 6 0 0 0 \times { \frac { 2 3 0 - 3 0 } { 2 3 0 } } \; = \; 6 0 0 0 \times { \frac { 2 0 0 } { 2 3 0 } } \; = \; { \bf 5 2 1 7 } \; \text{km }
-$$
-
-**The range with a 30 m/s headwind is 5217 km.**
+$Rc_T/(V\,L/D) = 3.0\times10^{6} \times 1.528\times10^{-4}/(230 \times 17) = 0.11720$; $W_1/W_0 = e^{-0.11720} = 0.8894$, so $1 - 0.8894 = 0.111$ of the initial weight.
 :::
 :::
 
-::: exercise Maximum range condition {#ex-max-range-cond-ex level=3 check="2"}
-A jet aircraft has $C _ { D 0 } = 0 . 0 2$ and $K = 0 . 0 5$ . Calculate the lift coefficient for maximum range.
-
+::: exercise Holding endurance {level=2 check="1.85"}
+The jet transport arrives at $70\,000\ \mathrm{kg}$ and must hold until it has burned down to $66\,000\ \mathrm{kg}$, flying at $(L/D)_{\max} = 17.28$ with $c_T = 0.55\ \mathrm{h^{-1}}$. How long can it hold? (Enter the time in hours, rounded to two decimal places.)
 ::: solution
-For maximum range of a jet aircraft:
-
-$$
-C _ { L } \; = \; { \sqrt { { \frac { C _ { D 0 } } { 3 \, K } } } } \; = \; { \sqrt { { \frac { 0 . 0 2 } { 3 \times 0 . 0 5 } } } } \; = \; { \sqrt { { \frac { 0 . 0 2 } { 0 . 1 5 } } } } \; = \; { \sqrt { 0 . 1 3 3 } } \; = \; { \bf 0 . 3 6 5 }
-$$
-
-**The lift coefficient for maximum range is 0.365.**
+$E = (1/c_T)(L/D)\ln(W_0/W_1) = (17.28/0.55\ \mathrm{h^{-1}}) \times \ln(70/66) = 31.42 \times 0.05884 = 1.85\ \mathrm{h}$. Holding at $V_{md}$ is independent of altitude in this model; in practice jets hold high, where $c_T$ is lower.
 :::
 :::
 
-::: exercise Derivation: the Breguet range equation {#ex-derive-breguet level=4 check="2"}
-Show that the Breguet range equation for a jet aircraft is $R = ( V / c _ { T } ) \, ( L / D ) \, \ln ( W _ { 1 } / W _ { 2 } )$ . Write the expression for the endurance.
-
+::: exercise Lift-to-drag ratio at jet best range {level=2 check="0.866"}
+Find the ratio of the lift-to-drag ratio at the jet best-range condition to $(L/D)_{\max}$. (Enter the ratio rounded to three decimal places.)
 ::: solution
-In **steady level cruise**, $L = W$ and $T = D$ . The fuel flow is:
-
-$$
-{ \frac { d W } { d t } } \; = \; - \, c _ { T } \, T \; = \; - \, c _ { T } \, D \; = \; - \, c _ { T } \, { \frac { W } { L / D } }
-$$
-
-The **distance** covered in time $d t$ is $d R = V \, d t$ , so:
-
-$$
-d R \; = \; V \, d t \; = \; V \, { \frac { d W } { - c _ { T } \, W / ( L / D ) } } \; = \; - \, { \frac { V } { c _ { T } } } \, ( L / D ) \, { \frac { d W } { W } }
-$$
-
-Integrating from $W _ { 1 }$ to $W _ { 2 }$ :
-
-$$
-R \; = \; { \frac { V } { c _ { T } } } \, ( L / D ) \, \int _ { W _ { 2 } } ^ { W _ { 1 } } { \frac { d W } { W } } \; = \; { \frac { V } { c _ { T } } } \, ( L / D ) \, \ln { \frac { W _ { 1 } } { W _ { 2 } } }
-$$
-
-The **endurance** is:
-
-$$
-E \; = \; \int _ { 0 } ^ { E } d t \; = \; { \frac { 1 } { c _ { T } } } \, { \frac { 1 } { D } } \, \int _ { W _ { 2 } } ^ { W _ { 1 } } { \frac { d W } { W } } \; = \; { \frac { 1 } { c _ { T } } } \, { \frac { L } { D } } \, { \frac { 1 } { W } } \, \ln { \frac { W _ { 1 } } { W _ { 2 } } }
-$$
-
-**The Breguet equation is the reason the range and endurance are designed for the equation, not the guess, and the equation is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.** $\blacksquare$
+At $C_L = \sqrt{C_{D0}/(3K)}$, $KC_L^2 = C_{D0}/3$ and $C_D = \tfrac43C_{D0}$; $L/D = \sqrt{C_{D0}/(3K)}/(\tfrac43C_{D0}) = \tfrac{3}{4\sqrt3}/\sqrt{KC_{D0}}$. Dividing by $(L/D)_{\max} = 1/(2\sqrt{KC_{D0}})$ gives $\tfrac{3}{2\sqrt3} = \tfrac{\sqrt3}{2} = 0.866$.
 :::
 :::
 
-::: exercise Derivation: the maximum range condition {#ex-derive-max-range level=4 check="2"}
-Show that the maximum range condition for a jet aircraft is $C _ { L } = { \sqrt { C _ { D 0 } / ( 3 \, K ) } }$ . Write the expression for the maximum endurance condition.
-
+::: exercise Cruise-climb altitude change {level=2}
+Show that in a cruise-climb in the isothermal stratosphere the altitude gained while the weight falls from $W_0$ to $W_1$ is $\Delta h = (RT_{11}/g_0)\ln(W_0/W_1)$, and evaluate it for [[#ex-jet-range]].
 ::: solution
-For **jet aircraft range**, we need to maximize:
-
-$$
-{ \frac { V } { c _ { T } } } \, { \frac { L } { D } } \; \propto \; { \frac { C _ { L } ^ { 1 / 2 } } { C _ { D } } }
-$$
-
-since $V \propto W / { \sqrt { C _ { L } } }$ at constant altitude. Differentiate:
-
-$$
-{ \frac { d } { d C _ { L } } } \left( { \frac { C _ { L } ^ { 1 / 2 } } { C _ { D 0 } + K \, C _ { L } ^ { 2 } } } \right) \; = \; 0
-$$
-
-Using the quotient rule:
-
-$$
-{ \frac { { \frac { 1 } { 2 } } \, C _ { L } ^ { - 1 / 2 } \, ( C _ { D 0 } + K \, C _ { L } ^ { 2 } ) - C _ { L } ^ { 1 / 2 } \, ( 2 \, K \, C _ { L } ) } { ( C _ { D 0 } + K \, C _ { L } ^ { 2 } ) ^ { 2 } } } \; = \; 0
-$$
-
-$$
-{ \frac { 1 } { 2 } } \, C _ { L } ^ { - 1 / 2 } \, ( C _ { D 0 } + K \, C _ { L } ^ { 2 } ) \; = \; 2 \, K \, C _ { L } ^ { 3 / 2 }
-$$
-
-$$
-C _ { D 0 } + K \, C _ { L } ^ { 2 } \; = \; 4 \, K \, C _ { L } ^ { 2 } \quad \Rightarrow \quad C _ { D 0 } \; = \; 3 \, K \, C _ { L } ^ { 2 }
-$$
-
-$$
-C _ { L } \; = \; { \sqrt { { \frac { C _ { D 0 } } { 3 \, K } } } }
-$$
-
-The **maximum endurance condition** for jet aircraft is:
-
-$$
-C _ { L } \; = \; { \sqrt { { \frac { C _ { D 0 } } { K } } } } \quad \text{(same as max L/D)}
-$$
-
-**The fuel weight fraction is the reason the range and endurance are designed for the fraction, not the whole, and the fraction is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.** $\blacksquare$
+The cruise-climb holds $\rho \propto W$. In the isothermal layer $\rho = \rho_{11}\exp[-g_0(h - h_{11})/(RT_{11})]$ ([[flight-mechanics/steady-flight-performance#eq-stratosphere]]), so $\rho_0'/\rho_1' = \exp[g_0\Delta h/(RT_{11})] = W_0/W_1$ and $\Delta h = (RT_{11}/g_0)\ln(W_0/W_1)$. With $RT_{11}/g_0 = 287.05 \times 216.65/9.80665 = 6342\ \mathrm{m}$ (the scale height) and $\ln(70/58) = 0.18805$: $\Delta h = 1193\ \mathrm{m}$, in agreement with the $12.19\ \mathrm{km}$ found in the example.
 :::
 :::
 
-::: quiz Range and endurance {#quiz-range-endurance}
-The most fundamental performance metrics in flight mechanics are:
-
-- [ ] Maximum speed and stall speed
-- [x] Range and endurance
-- [ ] Rate of climb and ceiling
-- [ ] Maneuverability and agility
-
+::: exercise Constant-speed cruise {#exr-const-speed level=3}
+For a jet at constant altitude and constant true airspeed (so constant $q$), derive the closed-form range by integrating $\mathrm{d}x = -V\,\mathrm{d}W/(c_TD(W))$ with the parabolic polar, and evaluate it for the jet transport at $11\ \mathrm{km}$ and Mach $0.78$ from $70\,000$ to $58\,000\ \mathrm{kg}$ to confirm the $4718\ \mathrm{km}$ of [[#ex-programmes]].
 ::: solution
-**Range and endurance.** Range and endurance are the most fundamental performance metrics in flight mechanics, because the range is the distance an aircraft can fly on a given fuel load, and the endurance is the time an aircraft can stay airborne on a given fuel load. The engineer who calculates the range without checking the Breguet equation is not calculating the range; they are guessing.
+With $D = qSC_{D0} + KW^2/(qS)$ and $q$ constant, $\mathrm{d}x = -\dfrac{V}{c_T}\dfrac{\mathrm{d}W}{qSC_{D0} + KW^2/(qS)}$. Put $u = W\sqrt{K/C_{D0}}/(qS)$, so $\mathrm{d}W = qS\sqrt{C_{D0}/K}\,\mathrm{d}u$ and the denominator is $qSC_{D0}(1 + u^2)$:
+$$
+R = \frac{V}{c_T\sqrt{KC_{D0}}}\left[\tan^{-1}u_0 - \tan^{-1}u_1\right],\qquad u = \frac{W}{qS}\sqrt{\frac{K}{C_{D0}}} = \frac{C_L}{C_L^\ast}.
+$$
+Numbers: $qS = 9639 \times 122.6 = 1.1817\times10^{6}\ \mathrm{N}$; $u_0 = 0.5809/0.6910 = 0.8407$, $u_1 = 0.4813/0.6910 = 0.6965$; $\tan^{-1}0.8407 - \tan^{-1}0.6965 = 0.69904 - 0.60840 = 0.09064$; $V/(c_T\sqrt{KC_{D0}}) = 230.15/(1.528\times10^{-4} \times 0.028942) = 5.205\times10^{7}\ \mathrm{m}$; $R = 4718\ \mathrm{km}$. A numerical integration (for example the trapezoidal rule on 100 weight steps) gives the same value.
 :::
 :::
 
-::: quiz Breguet equation {#quiz-breguet}
-The Breguet range equation for a jet aircraft is:
-
-- [ ] $R = ( V / c _ { T } ) \, ( L / D ) \, ( W _ { 1 } - W _ { 2 } )$
-- [x] $R = ( V / c _ { T } ) \, ( L / D ) \, \ln ( W _ { 1 } / W _ { 2 } )$
-- [ ] $R = ( V / c _ { T } ) \, ( D / L ) \, \ln ( W _ { 1 } / W _ { 2 } )$
-- [ ] $R = ( c _ { T } / V ) \, ( L / D ) \, \ln ( W _ { 1 } / W _ { 2 } )$
-
+::: exercise Choosing a cruise altitude {#exr-altitude level=3 check="8530"}
+At what ISA altitude would the jet transport, at $70\,000\ \mathrm{kg}$ and Mach $0.78$, fly at its parabolic-polar best-range lift coefficient $C_L = 0.399$? Discuss whether it should cruise there. (Enter the altitude in m, rounded to the nearest 10 m.)
 ::: solution
-**$R = ( V / c _ { T } ) \, ( L / D ) \, \ln ( W _ { 1 } / W _ { 2 } )$ .** The Breguet range equation for a jet aircraft is $R = ( V / c _ { T } ) \, ( L / D ) \, \ln ( W _ { 1 } / W _ { 2 } )$ , and the Breguet equation is the reason the range and endurance are designed for the equation, not the guess. The engineer who calculates the range without checking the Breguet equation is not calculating the range; they are guessing.
+Require $W = \tfrac12\rho(0.78a)^2SC_L$, i.e. $\rho a^2 = 2W/(0.78^2SC_L)$. Since $\rho a^2 = \gamma p$, this is a condition on pressure alone: $p = 2 \times 686\,466/(1.4 \times 0.6084 \times 122.6 \times 0.39897) = 32\,950\ \mathrm{Pa}$, reached at $h = 8530\ \mathrm{m}$. Discussion: at a fixed Mach number, lower altitude raises $q$ and reduces $C_L$ towards the range optimum, but it also raises the speed of sound (true airspeed $+3.6\,\%$) and, more importantly, $c_T$ of a turbofan rises in warmer, denser air and at lower thrust settings, and the fuel penalty usually outweighs the small aerodynamic gain. Airlines cruise at $10$–$12\ \mathrm{km}$, near where $C_L$ is close to the value that maximises $M(L/D)$ for the real polar with compressibility, which is higher than the parabolic $0.399$. A full answer would compute the specific air range with engine data at several altitudes.
 :::
 :::
-
-## Where this lesson leads
-
-- **[[flight-mechanics/steady-flight-performance]]** — The steady flight performance is the foundation of the range and endurance.
-- **[[flight-mechanics/manoeuvres-takeoff-landing]]** — The manoeuvres, take-off and landing are the foundation of the range and endurance.
-- **[[flight-mechanics/longitudinal-static-stability]]** — The longitudinal static stability is the foundation of the range and endurance.
-- **[[flight-mechanics/lateral-static-stability]]** — The lateral-directional static stability is the foundation of the range and endurance.
-- **[[flight-mechanics/aircraft-equations-of-motion]]** — The aircraft equations of motion are the foundation of the range and endurance.
-- **[[flight-mechanics/dynamic-modes]]** — The dynamic modes are the foundation of the range and endurance.
-- **[[flight-mechanics/flight-control]]** — The flight control is the foundation of the range and endurance.
-- **[[propulsion/thrust-efficiency]]** — The thrust and propulsive efficiency are the foundation of the range and endurance.
-- **[[aerodynamics/aerodynamic-forces]]** — The aerodynamic forces are the foundation of the range and endurance.
-- **[[thermodynamics/first-law-closed]]** — The first law is the foundation of the range and endurance.
-
-::: history Range and endurance: from Alcock and Brown to the solar aircraft {#history-range-endurance}
-**1919** — **Alcock and Brown** complete the **first non-stop transatlantic flight**, which is the foundation of the range and endurance. **The first non-stop transatlantic flight is the reason the range and endurance are the oldest concept in flight mechanics, and the age is the reason the range and endurance are the most refined concept in flight mechanics.**
-
-**1927** — **Charles Lindbergh** flies the **Spirit of St. Louis** solo across the Atlantic, and the solo transatlantic flight is the reason the range and endurance are the most historic concept in flight mechanics. **The solo transatlantic flight is the reason the range and endurance are the most refined concept in flight mechanics, and the range and endurance are the reason the solo transatlantic flight is the most historic concept in flight mechanics.**
-
-**1958** — **The Breguet equation** is applied to jet airliners, and the application to jet airliners is the reason the range and endurance are the most practical concept in flight mechanics. **The application to jet airliners is the reason the range and endurance are the most refined concept in flight mechanics, and the range and endurance are the reason the application to jet airliners is the most practical concept in flight mechanics.**
-
-**1960s** — **The payload-range diagram** is developed, and the payload-range diagram is the reason the range and endurance are the most applied concept in flight mechanics. **The payload-range diagram is the reason the range and endurance are the most refined concept in flight mechanics, and the range and endurance are the reason the payload-range diagram is the most applied concept in flight mechanics.**
-
-**1980s** — **The Voyager** flies non-stop around the world without refueling, and the non-stop around-the-world flight is the reason the range and endurance are the most efficient concept in flight mechanics. **The non-stop around-the-world flight is the reason the range and endurance are the most refined concept in flight mechanics, and the range and endurance are the reason the non-stop around-the-world flight is the most efficient concept in flight mechanics.**
-
-**2010s** — **The solar-powered aircraft** completes a round-the-world flight, and the solar-powered round-the-world flight is the reason the range and endurance are the most futuristic concept in flight mechanics. **The solar-powered round-the-world flight is the reason the range and endurance are the most refined concept in flight mechanics, and the range and endurance are the reason the solar-powered round-the-world flight is the most futuristic concept in flight mechanics.**
-:::
-
-::: summary Range and endurance {#summary-range-endurance}
-- **The Breguet range equation for propeller aircraft is $R = ( \eta _ { P } / c ) \, ( L / D ) \, \ln ( W _ { 1 } / W _ { 2 } )$ , and the endurance equation is $E = ( 2 / c ) \, { \sqrt { 2 / \rho } } \, { \sqrt { C _ { L } } } ^ { 3 } / C _ { D } \, { \sqrt { S } } \, \ln ( W _ { 1 } / W _ { 2 } )$ .** The Breguet equation is the reason the range and endurance are designed for the equation, not the guess, and the equation is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.
-- **The Breguet range equation for jet aircraft is $R = ( V / c _ { T } ) \, ( L / D ) \, \ln ( W _ { 1 } / W _ { 2 } )$ , and the endurance equation is $E = ( 1 / c _ { T } ) \, C _ { L } ^ { 1 / 2 } / C _ { D } \, { \sqrt { 2 / \rho } } \, { \sqrt { S } } \, \ln ( W _ { 1 } / W _ { 2 } )$ .** The fuel weight fraction is the reason the range and endurance are designed for the fraction, not the whole, and the fraction is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.
-- **The fuel weight fraction is $\zeta _ { f } = W _ { \text{fuel } } / W _ { 0 } = 1 - W _ { 2 } / W _ { 1 }$ , and the maximum range condition for propeller aircraft is $( L / D ) _ { \max }$ at $C _ { L } = { \sqrt { C _ { D 0 } / K } }$ .** The specific fuel consumption is the reason the range and endurance are designed for the consumption, not the production, and the consumption is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.
-- **The maximum range condition for jet aircraft is $C _ { L } ^ { 1 / 2 } / C _ { D }$ maximum at $C _ { L } = { \sqrt { C _ { D 0 } / ( 3 \, K ) } }$ , and the thrust specific fuel consumption is $c _ { T } = { \dot { m } } _ { f } / T$ .** The propeller efficiency is the reason the range and endurance are designed for the propeller, not the jet, and the propeller is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.
-- **The maximum range with payload is $R _ { \max , \text{pay } } = ( V / c _ { T } ) \, ( L / D ) \, \ln ( W _ { 0 } / ( W _ { \text{OEW } } + W _ { \text{pay } } ) )$ , and the ferry range is $R _ { \text{ferry } } = ( V / c _ { T } ) \, ( L / D ) \, \ln ( W _ { 0 } / W _ { \text{OEW } } )$ .** The cruise altitude is the reason the range and endurance are designed for the altitude, not the sea level, and the altitude is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.
-- **The still-air range is $R _ { \text{still } } = ( V / c _ { T } ) \, ( L / D ) \, \ln ( W _ { 1 } / W _ { 2 } )$ , the range with headwind is $R _ { \text{head } } = R _ { \text{still } } \times ( V - V _ { \text{wind } } ) / V$ , and the range with tailwind is $R _ { \text{tail } } = R _ { \text{still } } \times ( V + V _ { \text{wind } } ) / V$ .** The cruise speed is the reason the range and endurance are designed for the speed, not the stall, and the speed is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.
-- **The reserve fuel is $W _ { \text{reserve } } = 0 . 0 5 \times W _ { \text{fuel } }$ , and the design range is $R _ { \text{design } } = R _ { \text{mission } } + R _ { \text{reserve } }$ .** The weight ratio is the reason the range and endurance are designed for the ratio, not the difference, and the ratio is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.
-- **The operating empty weight is $W _ { \text{OEW } } = 3 0 \\% \text{--} 5 0 \\%$ of $W _ { 0 }$ , the fuel weight is $W _ { \text{fuel } } = 3 0 \\% \text{--} 5 0 \\%$ of $W _ { 0 }$ , and the payload is $W _ { \text{pay } } = 1 0 \\% \text{--} 3 0 \\%$ of $W _ { 0 }$ .** The still-air range is the reason the range and endurance are designed for the still air, not the wind, and the still air is the reason the range and endurance are the most fundamental performance metrics in flight mechanics.
-- **The range and endurance calculation is the most important calculation in flight mechanics, because the range and endurance calculation determines the mission capability of the aircraft.** The mission capability is the reason the engineer can design the aircraft to meet its mission requirements.
-- **The range and endurance are the most fundamental performance metrics in flight mechanics, because the range is the distance an aircraft can fly on a given fuel load, and the endurance is the time an aircraft can stay airborne on a given fuel load.** The performance metric is the reason the engineer can design the aircraft to meet its mission requirements.
-:::
-
-## Further reading
-
-- **A. W. Nicoll and S. F. Ashford (2003)** — *Aircraft Performance*, 2nd ed. Pearson. The range and endurance, the Breguet equation, and the fuel weight fraction.
-- **J. D. Anderson (2017)** — *Aircraft Performance and Design*. McGraw-Hill. The range and endurance and the payload-range diagram.
-- **P. Filippone (2012)** — *Flight Vehicle Performance and Design*. Springer. The range and endurance and the still-air range.
-- **E. Torenbeek (1982)** — *Synthesis of Subsonic Airplane Design*. Delft University Press. The range and endurance and the cruise altitude.
-- **J. Roskam (1987)** — *Airplane Design, Part 6: Preliminary Sizing of Airplanes*. Roskam Aviation. The range and endurance and the cruise speed.
-- **D. P. Raymer (2012)** — *Aircraft Design: A Conceptual Approach*, 5th ed. AIAA. The range and endurance and the weight ratio.
-- **A. C. Kermode (2006)** — *Mechanics of Flight*, 9th ed. Pearson. The range and endurance and the still-air range.
-- **B. Stevens and F. Lewis (1992)** — *Aircraft Control and Simulation*. Wiley. The range and endurance and the payload-range diagram.

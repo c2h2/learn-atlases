@@ -5,34 +5,33 @@
   "area": "aerospace",
   "level": 3,
   "order": 190,
-  "tagline": "Aircraft performance, range and endurance, manoeuvres, take-off and landing, static stability and trim, equations of motion, dynamic modes and flight control",
-  "summary": "Flight mechanics predicts how an aircraft flies: how fast, how far and how high it can go, whether it is stable, and how it is controlled. The course covers steady-flight performance, range and endurance, turns and take-off and landing, longitudinal and lateral\u2013directional static stability and trim, the rigid-body equations of motion, the dynamic modes of an aircraft, and an introduction to stability augmentation and autopilots.",
+  "tagline": "Aircraft performance, range and endurance, manoeuvres, take-off and landing, static stability and trim, the equations of motion, dynamic modes and flight control",
+  "summary": "Flight mechanics predicts how an aircraft flies: how fast, how far and how high it can go, whether it is stable, and how it is controlled. The course covers steady-flight performance, range and endurance, turns, take-off and landing, longitudinal and lateral–directional static stability and trim, the rigid-body equations of motion, the dynamic modes of an aircraft and handling qualities, and an introduction to stability augmentation, autopilots and fly-by-wire.",
   "overview": [
-    "Flight mechanics is the branch of aerospace engineering that predicts how an aircraft flies: how fast, how far and how high it can go, whether it is stable after a disturbance, and how it responds to the pilot's control inputs. The course begins with the steady-flight performance of an aircraft in level flight, climb and glide, and proceeds to the range and endurance equations that determine how much fuel is needed for a given mission. The Breguet equations, derived from the drag polar and the thrust-specific fuel consumption, remain the foundation of aircraft sizing and mission planning.",
-    "The second part of the course covers static stability and trim. The longitudinal static stability analysis determines whether the aircraft returns to its original angle of attack after a pitch disturbance, using the pitching moment coefficient, the neutral point and the static margin. The lateral-directional static stability analysis determines whether the aircraft returns to its original roll and yaw after a disturbance, using the dihedral effect, the directional stability derivative and the vertical tail volume. Both analyses are essential for ensuring that the aircraft is controllable and that the control forces are acceptable.",
-    "The third part of the course covers the dynamic response of the aircraft. The six-degree-of-freedom equations of motion are derived in body axes using Euler angles and the inertia tensor, then linearised about a trim condition to obtain the state-space representation. The eigenvalues of the system matrix reveal the natural modes of the aircraft: the phugoid (a slow exchange between airspeed and altitude), the short period (a fast oscillation of angle of attack and pitch rate), the Dutch roll (an oscillatory coupling of yaw and roll), the spiral mode (a slow divergence or convergence of bank angle), and the roll subsidence (a first-order roll response). The damping ratios and frequencies of these modes determine the handling qualities of the aircraft.",
-    "The final lesson introduces flight control systems, from the mechanical linkages of early aircraft to the fly-by-wire systems of modern transports and fighters. The control surfaces (elevator, aileron, rudder) generate the aerodynamic moments needed to control the aircraft attitude, and the hinge moment determines the stick force felt by the pilot. The control law \u2014 the mathematical relationship between the pilot input and the control surface deflection \u2014 is designed to give the aircraft the desired handling qualities, and the stability augmentation system uses rate feedback to damp the natural modes."
+    "Flight mechanics predicts how an aircraft flies as a whole: how fast, how slowly, how high and how far it can go, whether it returns to its trimmed condition after a disturbance, how it responds to its controls, and what feedback is needed to make it pleasant and safe to fly. It takes the aerodynamic forces of the [[aerodynamics]] course and the thrust and fuel consumption of [[propulsion]] as given, and combines them with Newton's laws for a rigid body. Its results are used every day in aircraft design (sizing the wing, tail and engines), in certification and flight test, in the performance manuals that pilots and airlines use to plan every flight, and in the design of autopilots and fly-by-wire systems.",
+    "The course has three parts. The first three lessons treat the aircraft as a particle: the standard atmosphere and airspeeds, the drag polar and the thrust and power required, maximum speed, climb and glide; the Breguet range and endurance equations and the best cruise speeds; and turns, the V–n diagram, take-off and landing. The next two lessons ask whether the trimmed aircraft is statically stable in pitch, yaw and roll — the neutral point and static margin, the elevator angle to trim, the fin and the dihedral effect, and the control needed for crosswinds and engine failures. The last three lessons derive the six-degree-of-freedom equations of motion, linearise them about steady flight into longitudinal and lateral–directional state-space models, compute the five classical modes (short period, phugoid, roll subsidence, spiral and Dutch roll) and judge them against handling-qualities requirements, and finally show how dampers, autopilots and fly-by-wire control laws change them.",
+    "Two generic aircraft — a four-seat light aircraft and a narrow-body jet transport — are used throughout, so that each lesson's numbers can be checked against the others. The hard part of the subject is not the mathematics, which is algebra, calculus and the eigenvalues of small matrices, but the bookkeeping: axes and sign conventions, true against equivalent airspeed, weight against mass in fuel consumption, and the many assumptions behind each formula. Each lesson states its assumptions and conventions explicitly; working the examples with a calculator or a few lines of Python, and checking every result for order of magnitude, is the best way to learn the subject."
   ],
   "prerequisites": [
     "aerodynamics",
     "dynamics"
   ],
   "outcomes": [
-    "Calculate the thrust required, power required, maximum speed, rate of climb and glide ratio of an aircraft from its drag polar and thrust characteristics.",
-    "Derive and apply the Breguet range and endurance equations for jet and propeller aircraft, and determine the best speeds for maximum range and maximum endurance.",
-    "Analyse turning flight, calculate the load factor, turn radius and turn rate, and estimate take-off and landing ground rolls.",
-    "Determine the longitudinal static stability of an aircraft from the pitching moment curve, calculate the neutral point and static margin, and find the elevator deflection required for trim.",
-    "Evaluate the lateral-directional static stability from the dihedral effect and directional stability derivative, and calculate the vertical tail contribution to directional stability.",
-    "Derive the six-degree-of-freedom equations of motion in body axes, linearise them about a trim condition, and identify the stability derivatives.",
-    "Compute the natural modes of the aircraft (phugoid, short period, Dutch roll, spiral, roll subsidence) from the eigenvalues of the linearised system, and assess the handling qualities against MIL-F-8785C criteria.",
-    "Design a simple stability augmentation system and a PID autopilot, and explain the principles of fly-by-wire control.",
-    "Use the standard atmosphere to convert between indicated, calibrated and true airspeeds, and apply the results to performance calculations at altitude."
+    "Use the International Standard Atmosphere and convert between true, equivalent and calibrated airspeed in performance calculations.",
+    "Calculate the thrust and power required, minimum-drag and minimum-power speeds, maximum speed, rate and angle of climb, ceilings and glide performance of an aircraft from its drag polar and engine data.",
+    "Derive and apply the Breguet range and endurance equations for jet and propeller aircraft, choose the best cruise conditions, and construct a payload–range diagram.",
+    "Analyse turning and pulling-up flight, construct a V–n diagram, and estimate take-off and landing ground distances.",
+    "Determine the neutral point, static margin, trim elevator angle and centre-of-gravity limits of an aircraft, stick-fixed and stick-free.",
+    "Evaluate directional stability, dihedral effect, roll damping and control power, and size the rudder and ailerons for crosswind and engine-out conditions.",
+    "Derive the rigid-body equations of motion in body axes, linearise them about steady flight, and assemble the longitudinal and lateral–directional state-space models from stability derivatives.",
+    "Compute and interpret the short-period, phugoid, roll, spiral and Dutch-roll modes, using both the full models and the classical approximations, and assess them against handling-qualities criteria.",
+    "Design simple pitch and yaw dampers and attitude-hold loops, and explain the principles, benefits and risks of relaxed static stability and fly-by-wire control laws."
   ],
   "chapters": [
     {
       "slug": "steady-flight-performance",
       "title": "Steady flight performance",
-      "summary": "The standard atmosphere and airspeeds, drag polars, thrust and power required and available, maximum speed, climb and gliding flight.",
+      "summary": "The standard atmosphere and airspeeds, the equations of steady flight and the drag polar, thrust and power required, minimum drag and minimum power, maximum speed, climb, ceilings and gliding.",
       "requires": [
         "aerodynamics/finite-wings",
         "aerodynamics/viscous-aerodynamics"
@@ -41,7 +40,7 @@
     {
       "slug": "range-endurance",
       "title": "Range and endurance",
-      "summary": "The Breguet equations for jet and propeller aircraft, and the best speeds for range and endurance.",
+      "summary": "Specific fuel consumption, the Breguet range and endurance equations for jet and propeller aircraft, cruise programmes, best speeds for range and endurance, wind and the payload–range diagram.",
       "requires": [
         "flight-mechanics/steady-flight-performance"
       ]
@@ -49,7 +48,7 @@
     {
       "slug": "manoeuvres-takeoff-landing",
       "title": "Manoeuvres, take-off and landing",
-      "summary": "Turning flight, load factor and the V\u2013n diagram, and take-off and landing distances.",
+      "summary": "Load factor, level turns and pull-ups, corner speed, the V–n diagram and gust loads, and take-off and landing ground distances.",
       "requires": [
         "flight-mechanics/steady-flight-performance"
       ]
@@ -57,7 +56,7 @@
     {
       "slug": "longitudinal-static-stability",
       "title": "Longitudinal static stability and trim",
-      "summary": "Pitching moment, the neutral point and static margin, trim with the elevator, and stick-fixed and stick-free stability.",
+      "summary": "The pitching moment about the centre of gravity, the neutral point and static margin, trim with the elevator and centre-of-gravity limits, and stick-free stability and stick forces.",
       "requires": [
         "flight-mechanics/steady-flight-performance",
         "aerodynamics/thin-airfoil-theory"
@@ -65,8 +64,8 @@
     },
     {
       "slug": "lateral-static-stability",
-      "title": "Lateral\u2013directional static stability",
-      "summary": "Directional and roll stability, the dihedral effect, and rudder and aileron control.",
+      "title": "Lateral–directional static stability",
+      "summary": "Sideslip, directional stability and the fin, the dihedral effect, roll damping and aileron power, and steady asymmetric flight in crosswinds and after an engine failure.",
       "requires": [
         "flight-mechanics/longitudinal-static-stability"
       ]
@@ -74,7 +73,7 @@
     {
       "slug": "aircraft-equations-of-motion",
       "title": "Aircraft equations of motion",
-      "summary": "Body axes and Euler angles, the rigid-body equations of motion, stability derivatives and linearisation about trim.",
+      "summary": "Body axes and Euler angles, the rigid-body equations of motion, linearisation about steady flight, stability derivatives and the longitudinal and lateral state-space models.",
       "requires": [
         "flight-mechanics/longitudinal-static-stability",
         "dynamics/three-dimensional-dynamics"
@@ -83,7 +82,7 @@
     {
       "slug": "dynamic-modes",
       "title": "Dynamic stability and aircraft modes",
-      "summary": "The phugoid and short-period modes, Dutch roll, roll subsidence and the spiral mode, and handling qualities.",
+      "summary": "Eigenvalues and mode shapes, the short-period and phugoid modes, roll subsidence, the spiral mode and the Dutch roll, their approximations, and handling-qualities criteria.",
       "requires": [
         "flight-mechanics/aircraft-equations-of-motion"
       ]
@@ -91,7 +90,7 @@
     {
       "slug": "flight-control",
       "title": "Introduction to flight control",
-      "summary": "Stability augmentation, autopilots and fly-by-wire control laws.",
+      "summary": "Stability augmentation with pitch and yaw dampers, relaxed static stability, autopilot loops and the principles of fly-by-wire control laws and redundancy.",
       "requires": [
         "flight-mechanics/dynamic-modes"
       ]
@@ -99,97 +98,124 @@
   ],
   "history": [
     {
-      "year": 1799,
-      "title": "Cayley's forces of flight",
-      "detail": "Sir George Cayley identifies the four forces of flight \u2014 lift, weight, thrust and drag \u2014 and builds the first successful glider, establishing the foundations of flight mechanics."
+      "year": 1809,
+      "title": "Cayley's \"On Aerial Navigation\"",
+      "detail": "George Cayley's three-part paper in *Nicholson's Journal* (1809–1810) treats the fixed-wing aeroplane as the production of lift against a resisting force, and argues that wings set at an upward angle give stability in roll — the first statement of the dihedral effect.",
+      "people": [
+        "George Cayley"
+      ]
+    },
+    {
+      "year": 1904,
+      "title": "The first stability theory",
+      "detail": "G. H. Bryan and W. E. Williams publish \"The longitudinal stability of aerial gliders\" in the *Proceedings of the Royal Society*, introducing the resistance (stability) derivatives and the quartic stability equation.",
+      "people": [
+        "George Hartley Bryan",
+        "W. E. Williams"
+      ]
     },
     {
       "year": 1908,
-      "title": "Lanchester's mathematical theory",
-      "detail": "Frederick Lanchester publishes the first mathematical theory of aircraft stability and dynamic response, introducing the concepts of the phugoid and the short-period mode."
+      "title": "Lanchester's Aerodonetics",
+      "detail": "F. W. Lanchester's *Aerodonetics*, the second volume of his *Aerial Flight*, analyses the long-period oscillation of a glider and names it the phugoid.",
+      "people": [
+        "Frederick W. Lanchester"
+      ]
     },
     {
-      "year": 1909,
-      "title": "The Breguet equations",
-      "detail": "Louis Breguet derives the range and endurance equations for propeller aircraft, relating the fuel consumption to the lift-to-drag ratio and the propeller efficiency."
+      "year": 1911,
+      "title": "Stability in Aviation",
+      "detail": "Bryan's book sets out the small-disturbance equations of motion in body axes, their separation into longitudinal and lateral sets, and the stability criteria for each — the framework still used today.",
+      "people": [
+        "George Hartley Bryan"
+      ]
     },
     {
-      "year": 1913,
-      "title": "The V-n diagram",
-      "detail": "The concept of the velocity-load factor (V-n) diagram is introduced, providing the fundamental tool for aircraft structural design and manoeuvre analysis."
+      "year": 1919,
+      "title": "The range equation",
+      "detail": "J. G. Coffin's \"A study of airplane ranges and useful loads\" (NACA Report No. 69, issued with the NACA's fifth annual report, for 1919) is the earliest published derivation usually cited of what is now called the Breguet range equation.",
+      "people": [
+        "J. G. Coffin"
+      ]
     },
     {
-      "year": 1946,
-      "title": "The neutral point concept",
-      "detail": "The modern theory of longitudinal static stability, including the neutral point and static margin, is formalised in the post-war textbooks of Perkins and Hage."
+      "year": 1943,
+      "title": "Quantitative flying qualities",
+      "detail": "R. R. Gilruth's NACA Report 755, *Requirements for Satisfactory Flying Qualities of Airplanes*, turns pilots' opinions and flight-test measurements into quantitative design criteria.",
+      "people": [
+        "Robert R. Gilruth"
+      ]
     },
     {
-      "year": 1958,
-      "title": "MIL-F-8785C handling qualities",
-      "detail": "The US military establishes the handling qualities specification MIL-F-8785C, defining Level 1, 2 and 3 flying qualities in terms of the short-period frequency and damping ratio."
+      "year": 1969,
+      "title": "The Cooper–Harper scale",
+      "detail": "NASA TN D-5153 by G. E. Cooper and R. P. Harper Jr. standardises the pilot rating scale for handling qualities, from 1 (excellent) to 10 (major deficiencies).",
+      "people": [
+        "George E. Cooper",
+        "Robert P. Harper Jr."
+      ]
     },
     {
       "year": 1972,
-      "title": "F-8 Digital Fly-By-Wire",
-      "detail": "NASA's F-8 Digital Fly-By-Wire research aircraft demonstrates that a digital computer can replace mechanical linkages, opening the door to relaxed static stability and active control."
+      "title": "Digital fly-by-wire",
+      "detail": "NASA's F-8 Digital Fly-By-Wire research aircraft first flies on 25 May, the first fixed-wing aircraft with a digital fly-by-wire system and no mechanical back-up.",
+      "people": [
+        "Gary E. Krier"
+      ]
     },
     {
-      "year": 1988,
-      "title": "Airbus A320 fly-by-wire",
-      "detail": "The Airbus A320 enters service as the first commercial airliner with a full digital fly-by-wire control system, bringing electronic flight control to airline operations."
+      "year": 1980,
+      "title": "MIL-F-8785C",
+      "detail": "The U.S. military specification *Flying Qualities of Piloted Airplanes* (5 November 1980) sets Level 1–3 requirements on the frequencies, damping and time constants of the aircraft modes; it was later replaced by the MIL-STD-1797 series."
+    },
+    {
+      "year": 1987,
+      "title": "Airbus A320",
+      "detail": "The A320 first flies on 22 February 1987 and enters service with Air France in April 1988, the first airliner with digital fly-by-wire flight controls and side-stick controllers."
     }
   ],
   "references": [
     {
-      "author": "John D. Anderson Jr.",
-      "year": 2017,
       "title": "Aircraft Performance and Design",
-      "publisher": "McGraw-Hill"
+      "authors": "John D. Anderson Jr.",
+      "year": 1999,
+      "note": "McGraw-Hill. Clear, thorough treatment of steady performance, range and endurance, manoeuvres, take-off and landing, with the conceptual-design context; the main reference for the first three lessons."
     },
     {
-      "author": "Bernard Stevens and Frank Lewis",
-      "year": 1992,
-      "title": "Aircraft Control and Simulation",
-      "publisher": "Wiley"
-    },
-    {
-      "author": "Wayne Nelson",
-      "year": 1998,
       "title": "Flight Stability and Automatic Control",
-      "edition": "2nd",
-      "publisher": "McGraw-Hill"
+      "authors": "Robert C. Nelson",
+      "year": 1998,
+      "note": "2nd edition (McGraw-Hill). The standard undergraduate text on static stability, the linearised equations, the aircraft modes, handling-qualities criteria and classical autopilot design; this course follows its notation for the dimensional derivatives."
     },
     {
-      "author": "Egbert Torenbeek",
-      "year": 1982,
-      "title": "Synthesis of Subsonic Airplane Design",
-      "publisher": "Delft University Press"
+      "title": "Dynamics of Flight: Stability and Control",
+      "authors": "Bernard Etkin and Lloyd Duff Reid",
+      "year": 1996,
+      "note": "3rd edition (Wiley). Rigorous derivation of the equations of motion, stability derivatives and modes; the source of the moment equation and neutral-point treatment used here."
     },
     {
-      "author": "Daniel P. Raymer",
-      "year": 2012,
-      "title": "Aircraft Design: A Conceptual Approach",
-      "edition": "5th",
-      "publisher": "AIAA"
+      "title": "Flight Dynamics Principles",
+      "authors": "Michael V. Cook",
+      "year": 2013,
+      "note": "3rd edition (Butterworth-Heinemann). A linear-systems approach to flight dynamics with worked examples, mode approximations and an introduction to stability augmentation."
     },
     {
-      "author": "Jan Roskam",
-      "year": 1987,
-      "title": "Airplane Design, Part 6: Preliminary Sizing of Airplanes",
-      "publisher": "Roskam Aviation"
+      "title": "Aircraft Control and Simulation",
+      "authors": "Brian L. Stevens, Frank L. Lewis and Eric N. Johnson",
+      "year": 2016,
+      "note": "3rd edition (Wiley). Nonlinear six-degree-of-freedom modelling, trimming and simulation, and modern flight-control design; the next step after the last three lessons."
     },
     {
-      "author": "Alexander C. Kermode",
-      "year": 2006,
       "title": "Mechanics of Flight",
-      "edition": "9th",
-      "publisher": "Pearson"
+      "authors": "Warren F. Phillips",
+      "year": 2010,
+      "note": "2nd edition (Wiley). Comprehensive and detailed on performance, static and dynamic stability, with careful derivations and many numerical examples."
     },
     {
-      "author": "Paolo Filippone",
-      "year": 2012,
-      "title": "Flight Vehicle Performance and Design",
-      "publisher": "Springer"
+      "title": "Aircraft Design: A Conceptual Approach",
+      "authors": "Daniel P. Raymer",
+      "year": 2018,
+      "note": "6th edition (AIAA). How the performance and stability results of this course are used to size the wing, tail and engines and to build mission fuel fractions."
     }
   ],
   "next": []

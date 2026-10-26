@@ -1,552 +1,307 @@
-Longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics: the longitudinal static stability is the tendency of the aircraft to return to its original angle of attack after a disturbance, and the trim is the condition where the pitching moment is zero at a chosen angle of attack. **The engineer who calculates the longitudinal static stability without checking the neutral point is not calculating the longitudinal static stability; they are guessing.** The longitudinal static stability calculation is the reason the engineer can design the aircraft to be stable and controllable, and the static margin is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.
+The performance lessons treated the aircraft as a particle: lift, drag, thrust and weight act at one point, and the pitching moments were assumed to be balanced somehow. This lesson asks how. An aircraft in steady flight must be **trimmed** — the total pitching moment about its centre of gravity must be zero — and it should be **statically stable**: if a gust raises the nose, the aerodynamic moment that results should push the nose back down. Both properties depend on where the centre of gravity is, and on the horizontal tail, whose job is precisely to provide them. The analysis leads to the single most important number in an aircraft's loading manual: the allowable range of centre-of-gravity positions.
 
-The quantitative tools of longitudinal static stability are the **pitching moment coefficient** (the non-dimensional pitching moment), the **static stability derivative** (the rate of change of pitching moment coefficient with angle of attack), the **neutral point** (the center-of-gravity location where the stability derivative is zero), and the **static margin** (the distance between the center of gravity and the neutral point). The tools are the language in which the longitudinal static stability analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+The aerodynamic ingredients — the aerodynamic centre, the moment coefficient $C_{m,ac}$ and the lift-curve slope — come from [[aerodynamics/aerodynamic-forces]] and [[aerodynamics/thin-airfoil-theory]]; downwash from [[aerodynamics/finite-wings]]. Dynamic stability, which asks how the aircraft returns (or not) over time, is the subject of [[flight-mechanics/dynamic-modes]].
 
-::: warning Nine ways longitudinal static stability calculation goes wrong
-**Not checking the neutral point.** The engineer who calculates the longitudinal static stability without checking the neutral point is not calculating the longitudinal static stability; they are guessing. **The neutral point is the reason the longitudinal static stability and trim are designed for the point, not the line, and the point is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.** **Not checking the static margin.** The engineer who calculates the longitudinal static stability without checking the static margin is not calculating the longitudinal static stability; they are guessing. **The static margin is the reason the longitudinal static stability and trim are designed for the margin, not the trim, and the margin is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.** **Not checking the center of gravity.** The engineer who calculates the longitudinal static stability without checking the center of gravity is not calculating the longitudinal static stability; they are guessing. **The center of gravity is the reason the longitudinal static stability and trim are designed for the gravity, not the lift, and the gravity is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.** **Not checking the tail volume coefficient.** The engineer who calculates the longitudinal static stability without checking the tail volume coefficient is not calculating the longitudinal static stability; they are guessing. **The tail volume coefficient is the reason the longitudinal static stability and trim are designed for the volume, not the area, and the volume is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.** **Not checking the downwash.** The engineer who calculates the longitudinal static stability without checking the downwash is not calculating the longitudinal static stability; they are guessing. **The downwash is the reason the longitudinal static stability and trim are designed for the downwash, not the upwash, and the downwash is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.** **Not checking the trim condition.** The engineer who calculates the longitudinal static stability without checking the trim condition is not calculating the longitudinal static stability; they are guessing. **The trim condition is the reason the longitudinal static stability and trim are designed for the trim, not the stability, and the trim is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.** **Not checking the control surface effectiveness.** The engineer who calculates the longitudinal static stability without checking the control surface effectiveness is not calculating the longitudinal static stability; they are guessing. **The control surface effectiveness is the reason the longitudinal static stability and trim are designed for the effectiveness, not the deflection, and the effectiveness is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.** **Not checking the stick-force gradient.** The engineer who calculates the longitudinal static stability without checking the stick-force gradient is not calculating the longitudinal static stability; they are guessing. **The stick-force gradient is the reason the longitudinal static stability and trim are designed for the gradient, not the force, and the gradient is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.** **Not checking the maneuver point.** The engineer who calculates the longitudinal static stability without checking the maneuver point is not calculating the longitudinal static stability; they are guessing. **The maneuver point is the reason the longitudinal static stability and trim are designed for the maneuver, not the steady flight, and the maneuver is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.**
+## Static stability {#sec-static}
+
+::: definition Static stability and trim {#def-static-stability}
+An aircraft is **trimmed** at an angle of attack $\alpha_{\text{trim}}$ if the pitching-moment coefficient about the centre of gravity is zero there, $C_m(\alpha_{\text{trim}}) = 0$. It is **statically stable in pitch** (has positive **pitch stiffness**) if a small increase in angle of attack from trim produces a nose-down moment:
+$$
+C_{m\alpha} = \frac{\partial C_m}{\partial\alpha} < 0 .
+$$
+Positive $C_m$ is nose-up; $\alpha$ is measured from the zero-lift line of the aircraft, so that $C_L = a\alpha$ (with $a$ the lift-curve slope of the whole aircraft). Stability alone does not guarantee trim at a useful lift coefficient: for that the moment at zero lift must be positive, $C_{m0} > 0$, so that the line $C_m(\alpha)$ crosses zero at a positive $\alpha$.
 :::
 
-## 1. Static stability
+"Static" means that only the *initial tendency* is examined: whether the restoring moment has the right sign, not whether the motion that follows dies out. A statically unstable aircraft is always dynamically unstable; a statically stable one is usually, but not always, dynamically stable.
 
-::: definition The pitching moment coefficient {#def-pitching-moment}
-The **pitching moment coefficient** is the non-dimensional pitching moment about the center of gravity, and the pitching moment coefficient is the reason the engineer can design the aircraft to be stable and controllable.
+A plain wing on its own is a poor flying machine. Its lift acts at the aerodynamic centre with a constant moment $C_{m,ac}$, which is negative (nose-down) for a positively cambered section. If the centre of gravity is ahead of the aerodynamic centre the wing is stable but cannot trim at positive lift ($C_{m0} = C_{m,ac} < 0$); if it is behind, the wing is unstable. Flying wings solve this with reflexed or swept and twisted sections that make $C_{m,ac}$ positive; conventional aircraft add a horizontal tail.
 
-The **pitching moment coefficient** is:
+## The moment equation {#sec-moment}
 
+**Free-body diagram in pitch.** Measure distances along the mean aerodynamic chord $\bar c$ of the wing from its leading edge, as fractions of $\bar c$. The forces and moments that act on the aircraft in the plane of symmetry are:
+
+- the lift of the **wing–body** combination $L_{wb}$, acting at its aerodynamic centre at $h_{ac}\bar c$, together with its constant moment $M_{ac} = qS\bar c\,C_{m,ac}$ (the body moves the aerodynamic centre forward of the wing's own, typically by $0.03$–$0.10\,\bar c$);
+- the lift of the **horizontal tail** $L_t$, at the tail's aerodynamic centre, a distance $l_t$ behind the wing–body aerodynamic centre;
+- the **weight**, at the centre of gravity at $h\bar c$;
+- thrust and drag, whose moments are neglected here (their lines of action pass close to the centre of gravity on most aircraft; the effect of a high or low thrust line is a correction to $C_{m0}$ and, for propellers, to $C_{m\alpha}$).
+
+The tail sits in the downwash of the wing, which reduces its angle of attack by the **downwash angle** $\varepsilon$, and in a slower, disturbed flow, expressed by the **tail efficiency** $\eta = q_t/q$ (typically $0.85$–$1.0$). If the tail is set at incidence $i_t$ relative to the wing–body zero-lift line and has an elevator deflected by $\delta_e$ (trailing edge down positive),
 $$
-C _ { m } \; = \; { \frac { M } { { \frac { 1 } { 2 } } \, \rho \, V ^ { 2 } \, S \, c } }
-$$
+\alpha_t = \alpha - \varepsilon + i_t,\qquad \varepsilon = \varepsilon_\alpha\,\alpha,\qquad C_{L,t} = a_t\alpha_t + a_e\delta_e ,
+$$ {#eq-tail-alpha}
+where $a_t$ is the tail lift-curve slope, $a_e = \tau a_t$ the elevator effectiveness ($\tau \approx 0.3$–$0.6$ for typical elevator-to-tail chord ratios) and $\varepsilon_\alpha = \mathrm{d}\varepsilon/\mathrm{d}\alpha$ the downwash gradient. Lifting-line theory gives, far downstream of an elliptically loaded wing, $\varepsilon = 2C_L/(\pi AR)$, so a first estimate is $\varepsilon_\alpha \approx 2a_{wb}/(\pi AR)$; at a real tail position it is somewhat smaller.
 
-The **pitching moment coefficient about the center of gravity** is:
-
+::: definition Tail volume coefficient {#def-tail-volume}
+The **horizontal tail volume coefficient** is
 $$
-C _ { m _ { \text{cg } } } \; = \; C _ { m _ { 0 } } + C _ { L } \, \left( { \frac { h _ { \text{cg } } - h _ { \text{ac } } } { \bar { c } } } \right)
+\bar V_H = \frac{l_tS_t}{S\bar c},
 $$
-
-The **stability derivative** is:
-
-$$
-C _ { m _ { \alpha } } \; = \; { \frac { \partial C _ { m } } { \partial \alpha } } \; = \; - C _ { L _ { \alpha } } \, \left( { \frac { h _ { \text{cg } } - h _ { \text{np } } } { \bar { c } } } \right)
-$$
-
-The **static stability condition** is:
-
-$$
-C _ { m _ { \alpha } } \; < \; 0 \quad \text{(stable)}
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Pitching moment coeff} & C _ { m } & M / ( q \, S \, c ) & - 0 . 2 \text{--} 0 . 1 \\
-\text{Stability derivative} & C _ { m _ { \alpha } } & \partial C _ { m } / \partial \alpha & - 0 . 1 \text{--} - 1 . 0 \\
-\text{Lift curve slope} & C _ { L _ { \alpha } } & \partial C _ { L } / \partial \alpha & 0 . 0 5 \text{--} 0 . 1 \text{ per deg } \\
-\text{CG position} & h _ { \text{cg } } & \text{CG location} & 0 . 2 \text{--} 0 . 4 \, \bar { c } \\
-\end{array}
-$$
-
-**The neutral point is the reason the longitudinal static stability and trim are designed for the point, not the line, and the point is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics. The engineer who calculates the longitudinal static stability without checking the neutral point is not calculating the longitudinal static stability; they are guessing.**
+the ratio of the "volume" $l_tS_t$ swept by the tail area about the wing–body aerodynamic centre to the reference volume $S\bar c$. Typical values are $0.5$–$0.8$ for light aircraft and $0.8$–$1.2$ for jet transports.
 :::
 
-::: definition The neutral point {#def-neutral-point}
-The **neutral point** is the center-of-gravity location where the stability derivative is zero, and the neutral point is the reason the engineer can design the aircraft to be stable and controllable.
-
-The **neutral point** is:
-
+::: proposition Pitching moment about the centre of gravity {#prop-cm}
+With the assumptions above, the pitching-moment coefficient about the centre of gravity is
 $$
-h _ { \text{np } } \; = \; h _ { \text{ac } } + { \frac { V _ { H } \, C _ { L _ { \alpha _ { t } } } } { C _ { L _ { \alpha } } } } \, ( 1 - \varepsilon _ { \alpha } )
+C_m = C_{m,ac} + C_L\,(h - h_{ac}) - \eta\bar V_H\,C_{L,t},
+$$ {#eq-cm}
+where $C_L = C_{L,wb} + \eta(S_t/S)C_{L,t}$ is the lift coefficient of the whole aircraft. Its slope is
 $$
-
-The **tail volume coefficient** is:
-
-$$
-V _ { H } \; = \; { \frac { l _ { t } \, S _ { t } } { S \, \bar { c } } }
-$$
-
-The **static margin** is:
-
-$$
-\Sigma \; = \; h _ { \text{np } } - h _ { \text{cg } } \; = \; - { \frac { C _ { m _ { \alpha } } } { C _ { L _ { \alpha } } } }
-$$
-
-The **maneuver point** is:
-
-$$
-h _ { m } \; = \; h _ { \text{np } } + { \frac { V _ { H } \, C _ { L _ { \alpha _ { t } } } } { C _ { L _ { \alpha } } } } \, { \frac { c } { V } } \, { \frac { q } { g } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Neutral point} & h _ { \text{np } } & \text{Zero-stability CG} & 0 . 2 5 \text{--} 0 . 4 0 \, \bar { c } \\
-\text{Tail volume coeff} & V _ { H } & l _ { t } \, S _ { t } / ( S \, \bar { c } ) & 0 . 3 \text{--} 1 . 1 \\
-\text{Static margin} & \Sigma & h _ { \text{np } } - h _ { \text{cg } } & 0 . 0 5 \text{--} 0 . 2 5 \, \bar { c } \\
-\text{Downwash gradient} & \varepsilon _ { \alpha } & \partial \varepsilon / \partial \alpha & 0 . 1 \text{--} 0 . 6 \\
-\end{array}
-$$
-
-**The static margin is the reason the longitudinal static stability and trim are designed for the margin, not the trim, and the margin is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics. The engineer who calculates the longitudinal static stability without checking the static margin is not calculating the longitudinal static stability; they are guessing.**
+C_{m\alpha} = a\,(h - h_{ac}) - \eta\bar V_H\,a_t(1 - \varepsilon_\alpha),\qquad
+a = a_{wb} + \eta\frac{S_t}{S}a_t(1 - \varepsilon_\alpha).
+$$ {#eq-cm-alpha}
 :::
 
-::: widget plot
-title: The static margin vs CG position
-f: 0.35-x
-x: 0.1,0.35
-y: 0,0.25
-labels: Static margin
-caption: The static margin against the CG position for $h _ { \text{np } } = 0 . 3 5$ . **The static margin decreases with the CG position, and the static margin is the reason the longitudinal static stability and trim are designed for the margin, not the trim.** **The margin is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.**
+::: proof
+Take moments about the centre of gravity, nose-up positive. The wing–body lift acts a distance $(h - h_{ac})\bar c$ *ahead* of the centre of gravity (if $h > h_{ac}$), giving a nose-up moment $L_{wb}(h - h_{ac})\bar c$. The tail lift acts a distance $l_t + (h_{ac} - h)\bar c$ behind the centre of gravity, giving a nose-down moment $L_t[l_t + (h_{ac} - h)\bar c]$. With $M_{ac}$:
+$$
+M = M_{ac} + L_{wb}(h - h_{ac})\bar c - L_tl_t + L_t(h - h_{ac})\bar c .
+$$
+The two terms in $(h - h_{ac})$ combine into $(L_{wb} + L_t)(h - h_{ac})\bar c = L(h - h_{ac})\bar c$. Dividing by $qS\bar c$ and writing $L_t = \eta qS_tC_{L,t}$ gives [[#eq-cm]]. Differentiating with respect to $\alpha$, using $\mathrm{d}C_{L,t}/\mathrm{d}\alpha = a_t(1 - \varepsilon_\alpha)$ from [[#eq-tail-alpha]] at fixed $\delta_e$ and $\mathrm{d}C_L/\mathrm{d}\alpha = a$, gives [[#eq-cm-alpha]]. Assumptions: small angles (lift and drag directions are not distinguished from the normal and axial directions), linear aerodynamics, thrust and drag moments and the vertical offsets of the surfaces neglected.
 :::
 
-::: example Static margin calculation {#ex-static-margin-calc level=3 check="2"}
-An aircraft has $C _ { L _ { \alpha } } = 0 . 0 8 \; \text{per deg }$ , $C _ { L _ { \alpha _ { t } } } = 0 . 1 \; \text{per deg }$ , $V _ { H } = 0 . 7$ , $\varepsilon _ { \alpha } = 0 . 3 5$ , $h _ { \text{ac } } = 0 . 2 5$ , and $h _ { \text{cg } } = 0 . 2 0$ . Calculate the neutral point and the static margin.
+## The neutral point and static margin {#sec-neutral-point}
 
-**Neutral point:**
+[[#eq-cm-alpha]] is linear in the centre-of-gravity position $h$: moving the centre of gravity forward makes $C_{m\alpha}$ more negative. There is one position at which $C_{m\alpha} = 0$.
 
+::: proposition Stick-fixed neutral point {#prop-neutral-point}
+The pitch stiffness vanishes when the centre of gravity is at the **stick-fixed neutral point**
 $$
-h _ { \text{np } } \; = \; h _ { \text{ac } } + { \frac { V _ { H } \, C _ { L _ { \alpha _ { t } } } } { C _ { L _ { \alpha } } } } \, ( 1 - \varepsilon _ { \alpha } )
+h_n = h_{ac} + \eta\bar V_H\,\frac{a_t}{a}\,(1 - \varepsilon_\alpha),
+$$ {#eq-neutral-point}
+and for any other position
 $$
-
-$$
-h _ { \text{np } } \; = \; 0 . 2 5 + { \frac { 0 . 7 \times 0 . 1 } { 0 . 0 8 } } \times ( 1 - 0 . 3 5 ) \; = \; 0 . 2 5 + { \frac { 0 . 0 7 } { 0 . 0 8 } } \times 0 . 6 5
-$$
-
-$$
-h _ { \text{np } } \; = \; 0 . 2 5 + 0 . 8 7 5 \times 0 . 6 5 \; = \; 0 . 2 5 + 0 . 5 6 9 \; = \; { \bf 0 . 8 1 9 }
-$$
-
-**Note:** The neutral point at 0.819 is unrealistically far aft. In practice, the tail volume coefficient and lift curve slopes must be carefully checked. A typical neutral point is 0.30-0.40.
-
-**Static margin:**
-
-$$
-\Sigma \; = \; h _ { \text{np } } - h _ { \text{cg } } \; = \; 0 . 8 1 9 - 0 . 2 0 \; = \; { \bf 0 . 6 1 9 }
-$$
-
-**Stability derivative:**
-
-$$
-C _ { m _ { \alpha } } \; = \; - C _ { L _ { \alpha } } \, \Sigma \; = \; - 0 . 0 8 \times 0 . 6 1 9 \; = \; { \bf - 0 . 0 4 9 5 } \; \text{per deg }
-$$
-
-**The neutral point is 0.819, the static margin is 0.619, and the stability derivative is -0.0495 per degree. The engineer would design the aircraft for the point, because the point is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.**
+C_{m\alpha} = -a\,(h_n - h) = -a\,K_n,\qquad K_n = h_n - h,
+$$ {#eq-static-margin}
+where $K_n$ is the **static margin**. The aircraft is statically stable if and only if the centre of gravity is ahead of the neutral point ($K_n > 0$). The neutral point is the aerodynamic centre of the whole aircraft.
 :::
 
-## 2. Trim
-
-::: definition The trim condition {#def-trim-condition}
-The **trim condition** is the condition where the pitching moment is zero at a chosen angle of attack, and the trim condition is the reason the engineer can design the aircraft to be stable and controllable.
-
-The **trim condition** is:
-
-$$
-C _ { m _ { \text{cg } } } \; = \; 0 \quad \text{at the desired} \quad \alpha _ { \text{trim } }
-$$
-
-The **trim equation** is:
-
-$$
-C _ { m _ { 0 } } + C _ { L _ { \text{trim } } } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) + C _ { m _ { \delta _ { e } } } \, \delta _ { e _ { \text{trim } } } \; = \; 0
-$$
-
-The **elevator deflection for trim** is:
-
-$$
-\delta _ { e _ { \text{trim } } } \; = \; - { \frac { C _ { m _ { 0 } } + C _ { L _ { \text{trim } } } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) } { C _ { m _ { \delta _ { e } } } } }
-$$
-
-The **trim curve** is:
-
-$$
-\delta _ { e _ { \text{trim } } } \quad \text{vs} \quad C _ { L _ { \text{trim } } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Elevator deflection} & \delta _ { e } & \text{Elevator angle} & - 2 0 ^ { \circ } \text{--} + 2 0 ^ { \circ } \\
-\text{Elevator effectiveness} & C _ { m _ { \delta _ { e } } } & \partial C _ { m } / \partial \delta _ { e } & - 0 . 0 1 \text{--} - 0 . 0 5 \\
-\text{Zero-lift moment} & C _ { m _ { 0 } } & C _ { m } \text{ at } C _ { L } = 0 & - 0 . 1 \text{--} 0 . 0 5 \\
-\text{Trim CL} & C _ { L _ { \text{trim } } } & \text{CL at trim} & 0 . 2 \text{--} 1 . 0 \\
-\end{array}
-$$
-
-**The center of gravity is the reason the longitudinal static stability and trim are designed for the gravity, not the lift, and the gravity is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics. The engineer who calculates the longitudinal static stability without checking the center of gravity is not calculating the longitudinal static stability; they are guessing.**
+::: proof
+Set [[#eq-cm-alpha]] to zero and solve for $h$: $a(h_n - h_{ac}) = \eta\bar V_Ha_t(1 - \varepsilon_\alpha)$, which is [[#eq-neutral-point]]. Substituting $\eta\bar V_Ha_t(1 - \varepsilon_\alpha) = a(h_n - h_{ac})$ back into [[#eq-cm-alpha]] gives $C_{m\alpha} = a(h - h_{ac}) - a(h_n - h_{ac}) = a(h - h_n)$. Since $a > 0$, $C_{m\alpha} < 0 \iff h < h_n$. Finally, about the point $h_n$ the moment does not change with $\alpha$ — the definition of an aerodynamic centre.
 :::
 
-::: definition The control surface effectiveness {#def-control-effectiveness}
-The **control surface effectiveness** is the rate of change of pitching moment coefficient with elevator deflection, and the control surface effectiveness is the reason the engineer can design the aircraft to be stable and controllable.
+The static margin is the distance, in mean chords, between the centre of gravity and the neutral point. Light aircraft fly with $K_n$ of about $0.05$–$0.25$ depending on loading; transports with $0.05$–$0.15$; some fly-by-wire combat aircraft, beginning with the F-16, are designed with very small or negative margins at subsonic speeds ("relaxed static stability"), the stability being supplied by the control system ([[flight-mechanics/flight-control]]).
 
-The **elevator effectiveness** is:
-
-$$
-C _ { m _ { \delta _ { e } } } \; = \; - { \frac { V _ { H } \, C _ { L _ { \alpha _ { t } } } \, \tau } { \bar { c } } }
-$$
-
-The **trim tab effectiveness** is:
-
-$$
-C _ { m _ { \delta _ { t } } } \; = \; C _ { m _ { \delta _ { e } } } \, { \frac { \partial \delta _ { e } } { \partial \delta _ { t } } }
-$$
-
-The **stick-force gradient** is:
-
-$$
-{ \frac { \partial F _ { \text{stick } } } { \partial V } } \; \propto \; C _ { m _ { \alpha } } + { \frac { C _ { m _ { \delta _ { e } } } \, b _ { 2 } } { V _ { H } \, C _ { L _ { \alpha _ { t } } } } }
-$$
-
-The **free stability** is:
-
-$$
-C _ { m _ { \alpha } } \big | _ { \text{free } } \; = \; C _ { m _ { \alpha } } \big | _ { \text{fixed } } - { \frac { C _ { m _ { \alpha } } \, C _ { h _ { \alpha } } } { C _ { h _ { \delta _ { e } } } } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Elevator effectiveness} & C _ { m _ { \delta _ { e } } } & \partial C _ { m } / \partial \delta _ { e } & - 0 . 0 1 \text{--} - 0 . 0 5 \\
-\text{Hinge moment coeff} & C _ { h } & \text{Hinge moment} & - 0 . 1 \text{--} 0 . 1 \\
-\text{Stick force gradient} & \partial F / \partial V & \text{Force per speed} & 1 \text{--} 1 0 \ \text{ N/(m/s) } \\
-\text{Free stability} & C _ { m _ { \alpha , \text{free } } } & \text{Free-elevator stability} & - 0 . 0 3 \text{--} - 0 . 3 \\
-\end{array}
-$$
-
-**The tail volume coefficient is the reason the longitudinal static stability and trim are designed for the volume, not the area, and the volume is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics. The engineer who calculates the longitudinal static stability without checking the tail volume coefficient is not calculating the longitudinal static stability; they are guessing.**
-:::
-
-::: widget plot
-title: The elevator deflection for trim vs CL
-f: -0.05+0.1*x
-x: 0,1.5
-y: -0.1,0.1
-labels: delta_e_trim
-caption: The elevator deflection for trim against the trim CL for $C _ { m _ { \delta _ { e } } } = - 0 . 0 2$ . **The elevator deflection increases with the trim CL, and the elevator deflection is the reason the longitudinal static stability and trim are designed for the effectiveness, not the deflection.** **The effectiveness is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.**
-:::
-
-::: example Trim calculation {#ex-trim-calc level=3 check="2"}
-An aircraft has $C _ { m _ { 0 } } = - 0 . 0 5$ , $C _ { L _ { \text{trim } } } = 0 . 6$ , $h _ { \text{cg } } - h _ { \text{ac } } = 0 . 0 5$ , and $C _ { m _ { \delta _ { e } } } = - 0 . 0 3$ . Calculate the elevator deflection for trim.
-
-**Trim equation:**
-
-$$
-\delta _ { e _ { \text{trim } } } \; = \; - { \frac { C _ { m _ { 0 } } + C _ { L _ { \text{trim } } } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) } { C _ { m _ { \delta _ { e } } } } }
-$$
-
-$$
-\delta _ { e _ { \text{trim } } } \; = \; - { \frac { - 0 . 0 5 + 0 . 6 \times 0 . 0 5 } { - 0 . 0 3 } } \; = \; - { \frac { - 0 . 0 5 + 0 . 0 3 } { - 0 . 0 3 } } \; = \; - { \frac { - 0 . 0 2 } { - 0 . 0 3 } } \; = \; - 0 . 6 6 7 \; \text{rad}
-$$
-
-**Convert to degrees:**
-
-$$
-\delta _ { e _ { \text{trim } } } \; = \; - 0 . 6 6 7 \times { \frac { 1 8 0 } { \pi } } \; = \; { \bf - 3 8 . 2 ^ { \circ } }
-$$
-
-**Note:** The elevator deflection of -38.2° is unrealistically large, indicating the elevator effectiveness is too low or the CG is too far aft. In practice, the designer would increase the tail volume or move the CG forward.
-
-**The elevator deflection for trim is -38.2°. The engineer would design the aircraft for the volume, because the volume is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.**
-:::
-
-::: example Maneuver point calculation {#ex-maneuver-point-calc level=3 check="2"}
-An aircraft has $h _ { \text{np } } = 0 . 3 5$ , $V _ { H } = 0 . 7$ , $C _ { L _ { \alpha _ { t } } } = 0 . 1$ per degree, $C _ { L _ { \alpha } } = 0 . 0 8$ per degree, $\\bar { c } = 2 . 5 \\; \\text{m }$ , $V = 2 0 0 \\; \\text{m/s }$ , and $q = { \\frac { 1 } { 2 } } \\rho V ^ { 2 } = 2 4 { , } 5 0 0 \\; \\text{Pa }$ . Calculate the maneuver point.
-
-**Maneuver point:**
-
-$$
-h _ { m } \\; = \\; h _ { \text{np } } + { \frac { V _ { H } \\, C _ { L _ { \alpha _ { t } } } } { C _ { L _ { \alpha } } } } \\, { \frac { \\bar { c } } { V } } \\, { \frac { q } { g } }
-$$
-
-First, calculate the correction term:
-
-$$
-{ \frac { V _ { H } \\, C _ { L _ { \alpha _ { t } } } } { C _ { L _ { \alpha } } } } \\; = \\; { \frac { 0 . 7 \\times 0 . 1 } { 0 . 0 8 } } \\; = \\; { \frac { 0 . 0 7 } { 0 . 0 8 } } \\; = \\; 0 . 8 7 5
-$$
-
-$$
-{ \frac { \\bar { c } } { V } } \\; = \\; { \frac { 2 . 5 } { 2 0 0 } } \\; = \\; 0 . 0 1 2 5
-$$
-
-$$
-{ \frac { q } { g } } \\; = \\; { \frac { 2 4 { , } 5 0 0 } { 9 . 8 1 } } \\; = \\; 2 4 9 7 . 4
-$$
-
-**Maneuver point:**
-
-$$
-h _ { m } \\; = \\; 0 . 3 5 + 0 . 8 7 5 \\times 0 . 0 1 2 5 \\times 2 4 9 7 . 4 \\; = \\; 0 . 3 5 + 2 7 . 3
-$$
-
-**Note:** The correction term is unrealistically large because the formula requires careful unit handling. In practice, the maneuver point is typically 0.02-0.05 behind the neutral point.
-
-Using the typical approximation:
-
-$$
-h _ { m } \\; \\approx \\; h _ { \text{np } } + 0 . 0 3 \\; = \\; 0 . 3 5 + 0 . 0 3 \\; = \\; { \\bf 0 . 3 8 }
-$$
-
-**Maneuver static margin:**
-
-$$
-\\Sigma _ { m } \\; = \\; h _ { m } - h _ { \text{cg } } \\; = \\; 0 . 3 8 - 0 . 2 5 \\; = \\; { \\bf 0 . 1 3 }
-$$
-
-**The maneuver point is 0.38, and the maneuver static margin is 0.13. The engineer would design the aircraft for the maneuver, because the maneuver is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.**
-:::
-
-::: example Free stability calculation {#ex-free-stability-calc level=3 check="2"}
-An aircraft has $C _ { m _ { \alpha } } \\big | _ { \\text{fixed } } = - 0 . 0 4$ per degree, $C _ { h _ { \alpha } } = - 0 . 0 0 5$ per degree, and $C _ { h _ { \\delta _ { e } } } = - 0 . 0 0 8$ per degree. Calculate the free stability.
-
-**Free stability:**
-
-$$
-C _ { m _ { \alpha } } \\big | _ { \\text{free } } \\; = \\; C _ { m _ { \alpha } } \\big | _ { \\text{fixed } } - { \frac { C _ { m _ { \alpha } } \\, C _ { h _ { \alpha } } } { C _ { h _ { \\delta _ { e } } } } }
-$$
-
-$$
-C _ { m _ { \alpha } } \\big | _ { \\text{free } } \\; = \\; - 0 . 0 4 - { \frac { ( - 0 . 0 4 ) \\times ( - 0 . 0 0 5 ) } { - 0 . 0 0 8 } } \\; = \\; - 0 . 0 4 - { \frac { 0 . 0 0 0 2 } { - 0 . 0 0 8 } }
-$$
-
-$$
-C _ { m _ { \alpha } } \\big | _ { \\text{free } } \\; = \\; - 0 . 0 4 + 0 . 0 2 5 \\; = \\; { \\bf - 0 . 0 1 5 } \\; \\text{per degree }
-$$
-
-**Stability reduction:**
-
-$$
-\\Delta C _ { m _ { \alpha } } \\; = \\; C _ { m _ { \alpha } } \\big | _ { \\text{free } } - C _ { m _ { \alpha } } \\big | _ { \\text{fixed } } \\; = \\; - 0 . 0 1 5 - ( - 0 . 0 4 ) \\; = \\; { \\bf 0 . 0 2 5 }
-$$
-
-**Percentage reduction:**
-
-$$
-{ \frac { | \\Delta C _ { m _ { \alpha } } | } { | C _ { m _ { \alpha } } \\big | _ { \\text{fixed } } | } } \\; = \\; { \frac { 0 . 0 2 5 } { 0 . 0 4 } } \\; = \\; { \\bf 6 2 . 5 } \\; \\%
-$$
-
-**The free stability is -0.015 per degree, which is 62.5% less stable than the fixed-elevator case. The engineer would design the aircraft for the gradient, because the gradient is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.**
-:::
-
-::: exercise Elevator effectiveness {#ex-elevator-effectiveness-ex level=3 check="2"}
-An aircraft has $V _ { H } = 0 . 6$ , $C _ { L _ { \alpha _ { t } } } = 0 . 0 9$ per degree, $\\tau = 0 . 9 5$ , and $\\bar { c } = 2 \\; \\text{m }$ . Calculate the elevator effectiveness.
-
+::: example Neutral point of the light aircraft {#ex-neutral-point}
+The light aircraft has $S = 16.2\ \mathrm{m^2}$, $AR = 7.5$, $\bar c = 1.47\ \mathrm{m}$, wing–body lift slope $a_{wb} = 4.8\ \mathrm{rad^{-1}}$ and aerodynamic centre $h_{ac} = 0.20$. Its tail has $S_t = 3.0\ \mathrm{m^2}$, $l_t = 4.5\ \mathrm{m}$, $a_t = 4.0\ \mathrm{rad^{-1}}$ and $\eta = 0.90$. Estimating $\varepsilon_\alpha$ from lifting-line theory, find the neutral point and the static margin with the centre of gravity at $h = 0.30$.
 ::: solution
+$\bar V_H = 4.5 \times 3.0/(16.2 \times 1.47) = 0.5669$. $\varepsilon_\alpha = 2 \times 4.8/(\pi \times 7.5) = 0.4074$, so $1 - \varepsilon_\alpha = 0.5926$. Aircraft lift slope:
 $$
-C _ { m _ { \\delta _ { e } } } \\; = \\; - { \frac { V _ { H } \\, C _ { L _ { \\alpha _ { t } } } \\, \\tau } { \\bar { c } } } \\; = \\; - { \frac { 0 . 6 \\times 0 . 0 9 \\times 0 . 9 5 } { 2 } } \\; = \\; - { \frac { 0 . 0 5 1 3 } { 2 } } \\; = \\; { \\bf - 0 . 0 2 5 7 } \\; \\text{per degree }
+a = 4.8 + 0.90 \times \frac{3.0}{16.2} \times 4.0 \times 0.5926 = 4.8 + 0.3950 = 5.195\ \mathrm{rad^{-1}}.
 $$
-
-**The elevator effectiveness is -0.0257 per degree.**
+Neutral point:
+$$
+h_n = 0.20 + 0.90 \times 0.5669 \times \frac{4.0}{5.195} \times 0.5926 = 0.20 + 0.2328 = 0.4328 .
+$$
+At $h = 0.30$: $K_n = 0.1328$ and $C_{m\alpha} = -5.195 \times 0.1328 = -0.690\ \mathrm{rad^{-1}}$. Sanity check: the tail moves the aerodynamic centre back by $0.23\bar c = 0.34\ \mathrm{m}$, and a static margin of $13\,\%$ is typical of a light aircraft at mid loading. Downwash matters: with $\varepsilon_\alpha = 0$ the tail term would be $0.39$ instead of $0.23$.
 :::
+:::
+
+::: widget plot
+f: -0.05 - 0.023271*(h - 0.2) + 0.071237 + 5.19504*(h - 0.43278)*x*pi/180 + (0.3*(h - 0.2) - 0.918367)*d*pi/180
+x: -4, 16
+y: -0.4, 0.4
+sliders: h=0.30:0.10:0.55:0.01; d=0:-20:10:0.5
+hlines: 0
+labels: C_m
+caption: Pitching-moment coefficient of the light aircraft against angle of attack $\alpha$ (degrees, from the zero-lift line) for centre of gravity $h$ (fraction of $\bar c$) and elevator angle $\delta_e$ (`d`, degrees, trailing edge down positive). Trim is where the line crosses zero. Move $h$ aft and the line flattens; at $h = 0.433$ it is horizontal (neutral point) and beyond it the slope reverses. Move the elevator trailing edge up (negative `d`) and the line shifts up, moving the trim point to a higher $\alpha$ — lower speed.
+:::
+
+::: warning Moving the centre of gravity
+It is easy to get the direction wrong: moving the centre of gravity **aft** reduces the static margin and makes the aircraft *less* stable and lighter on the controls; moving it **forward** increases stability but needs more elevator to trim and to rotate on take-off. Loading an aircraft beyond the aft limit — baggage at the back, passengers moved aft, fuel burned from forward tanks — has caused fatal accidents, because the aircraft can become unstable and the pilot's corrections then grow instead of dying out. Note also that the neutral point is a property of the aircraft, but the static margin depends on the loading, and that $h$ is measured from the leading edge of the *mean aerodynamic chord*, not from the nose.
+:::
+
+## Trim and the elevator {#sec-trim}
+
+The elevator changes the tail lift and so both $C_L$ and $C_m$. From [[#eq-cm]] and [[#eq-tail-alpha]], the derivatives with respect to $\delta_e$ are
+$$
+C_{L\delta} = \eta\frac{S_t}{S}a_e,\qquad C_{m\delta} = C_{L\delta}(h - h_{ac}) - \eta\bar V_H\,a_e ,
+$$ {#eq-elevator-derivs}
+so the linear model of the aircraft is
+$$
+C_L = C_{L0} + a\alpha + C_{L\delta}\delta_e,\qquad C_m = C_{m0} + C_{m\alpha}\alpha + C_{m\delta}\delta_e .
+$$ {#eq-linear-model}
+The elevator is a powerful moment generator ($C_{m\delta}$ is large and negative: trailing edge up gives nose-up moment) but a weak lift generator ($C_{L\delta}$ is small, and acts against the wanted lift when the elevator is raised).
+
+::: proposition Trim elevator angle {#prop-trim}
+The trimmed elevator angle and angle of attack for a required lift coefficient $C_L$ are
+$$
+\delta_{\text{trim}} = -\frac{C_{m0}\,a + C_{m\alpha}(C_L - C_{L0})}{\Delta},\qquad
+\alpha_{\text{trim}} = \frac{(C_L - C_{L0})C_{m\delta} + C_{m0}C_{L\delta}}{\Delta},\qquad
+\Delta = aC_{m\delta} - C_{m\alpha}C_{L\delta}.
+$$ {#eq-trim}
+The elevator angle per unit lift coefficient is
+$$
+\frac{\mathrm{d}\delta_{\text{trim}}}{\mathrm{d}C_L} = -\frac{C_{m\alpha}}{\Delta} = \frac{a\,K_n}{\Delta},
+$$ {#eq-elevator-gradient}
+and $\Delta = a\left[C_{L\delta}(h_n - h_{ac}) - \eta\bar V_Ha_e\right]$ does not depend on the centre-of-gravity position, so the gradient is proportional to the static margin.
+:::
+
+::: proof
+Setting $C_m = 0$ and $C_L$ to its required value in [[#eq-linear-model]] gives two linear equations in $\alpha$ and $\delta_e$; Cramer's rule gives [[#eq-trim]]. Differentiating $\delta_{\text{trim}}$ with respect to $C_L$ gives $-C_{m\alpha}/\Delta$, and $C_{m\alpha} = -aK_n$. For $\Delta$, substitute $C_{m\delta}$ from [[#eq-elevator-derivs]] and $C_{m\alpha} = a(h - h_n)$: $\Delta = aC_{L\delta}(h - h_{ac}) - a\eta\bar V_Ha_e - a(h - h_n)C_{L\delta} = a[C_{L\delta}(h_n - h_{ac}) - \eta\bar V_Ha_e]$, in which $h$ has cancelled.
+:::
+
+Because $\Delta < 0$, a stable aircraft ($K_n > 0$) needs more trailing-edge-up elevator ($\delta$ more negative) to trim at a higher lift coefficient — that is, at a lower speed. This is the property pilots call **speed stability**: to fly slower you must pull. As the centre of gravity moves aft the gradient flattens, and at the neutral point the elevator angle no longer depends on speed. This gives the classic **flight-test method** for the neutral point: measure $\mathrm{d}\delta/\mathrm{d}C_L$ at two or more centre-of-gravity positions and extrapolate linearly to zero.
+
+::: example Trim of the light aircraft {#ex-trim}
+For the light aircraft of [[#ex-neutral-point]], take $C_{m,ac} = -0.05$, tail incidence $i_t = -2^\circ$ and elevator effectiveness $\tau = 0.45$. With the centre of gravity at $h = 0.30$, find the trim elevator angle and angle of attack in cruise ($C_L = 0.40$) and on approach ($C_L = 1.2$, flaps neglected).
+::: solution
+$a_e = 0.45 \times 4.0 = 1.80\ \mathrm{rad^{-1}}$; $C_{L\delta} = 0.90 \times 0.1852 \times 1.80 = 0.300\ \mathrm{rad^{-1}}$; $C_{m\delta} = 0.300 \times 0.10 - 0.90 \times 0.5669 \times 1.80 = 0.030 - 0.9184 = -0.8884\ \mathrm{rad^{-1}}$.
+
+At $\alpha = \delta_e = 0$ the tail lift coefficient is $a_ti_t = 4.0 \times (-0.03491) = -0.1396$, so $C_{L0} = 0.90 \times 0.1852 \times (-0.1396) = -0.02327$ and, from [[#eq-cm]], $C_{m0} = -0.05 + (-0.02327)(0.10) - 0.90 \times 0.5669 \times (-0.1396) = -0.05 - 0.00233 + 0.07124 = 0.01891$.
+
+$\Delta = 5.195 \times (-0.8884) - (-0.6898)(0.300) = -4.615 + 0.207 = -4.408$.
+
+Cruise, $C_L - C_{L0} = 0.4233$:
+$$
+\delta_{\text{trim}} = -\frac{0.01891 \times 5.195 + (-0.6898)(0.4233)}{-4.408} = -\frac{0.09824 - 0.2920}{-4.408} = -0.04395\ \mathrm{rad} = -2.52^\circ,
+$$
+$$
+\alpha_{\text{trim}} = \frac{0.4233 \times (-0.8884) + 0.01891 \times 0.300}{-4.408} = 0.08401\ \mathrm{rad} = 4.81^\circ .
+$$
+Approach, $C_L - C_{L0} = 1.2233$: $\delta_{\text{trim}} = -9.69^\circ$, $\alpha_{\text{trim}} = 14.05^\circ$. Sanity check: the gradient is $(-9.69 + 2.52)/0.8 = -8.97^\circ$ per unit $C_L$, equal to $aK_n/\Delta = 5.195 \times 0.1328/(-4.408)$ rad $= -8.97^\circ$; both elevator angles are well inside a typical travel of $-25^\circ$ to $+15^\circ$.
+:::
+:::
+
+**Centre-of-gravity limits.** The **aft limit** is set by stability: a minimum static margin (stick-fixed and, more critically, stick-free — below) must remain, typically $5\,\%$. The **forward limit** is set by control power: with the centre of gravity far forward the elevator must be able to trim the aircraft at $C_{L,\max}$ in the landing configuration, including the nose-down moment of the flaps and the reduced downwash in ground effect, and to rotate the aircraft on take-off. The allowable range is typically $15$–$30\,\%$ of $\bar c$ for light aircraft.
+
+::: example Locating the neutral point in flight test {#ex-flight-test}
+In flight tests of the light aircraft the trim elevator angle was measured against $C_L$ at two loadings. With the centre of gravity at $h = 0.20$ the slope was $-15.72^\circ$ per unit $C_L$; at $h = 0.30$, $-8.97^\circ$. Estimate the neutral point.
+::: solution
+By [[#eq-elevator-gradient]], the slope is linear in $h$ and zero at $h_n$. It changes by $6.75^\circ$ per $0.10$ of chord, so it reaches zero $8.97/67.5 = 0.1329$ beyond $h = 0.30$: $h_n = 0.433$. Sanity check: this agrees with the estimate of [[#ex-neutral-point]] — of course, since the "measurements" were computed from the same model; in a real test the measured neutral point is the trustworthy one, because downwash and fuselage effects are hard to predict. Testing is done at safe forward positions and *extrapolated*: nobody flies at the neutral point to find it.
+:::
+:::
+
+::: widget plot
+f: (180/pi)*1.17851*(-0.05 - 0.023271*(h - 0.2) + 0.071237 + (h - 0.43278)*(x + 0.023271))
+x: 0, 1.4
+y: -25, 10
+sliders: h=0.30:0.10:0.50:0.01
+hlines: 0
+labels: \delta_{\text{trim}}\ (^\circ)
+caption: Trim elevator angle (degrees, trailing edge down positive) against lift coefficient for the light aircraft, with the centre of gravity $h$ on the slider. A stable aircraft has a falling line: more up-elevator to fly slower. At $h = 0.433$ the line is flat; beyond it the slope reverses and the aircraft needs *down* elevator to fly slower — unstable, and very hard to fly by hand. Move $h$ forward to $0.10$: the elevator needed at high $C_L$ approaches the travel limit, which sets the forward centre-of-gravity limit.
+:::
+
+## Stick-free stability and control forces {#sec-stick-free}
+
+So far the elevator was held fixed ("stick-fixed"). In an aircraft with reversible (unpowered) controls, the pilot can let go of the stick, and the elevator then **floats** to the angle at which its aerodynamic hinge moment is zero. The hinge-moment coefficient of the elevator is modelled as
+$$
+C_h = \frac{H}{q_tS_ec_e} = C_{h0} + b_1\alpha_t + b_2\delta_e ,
+$$ {#eq-hinge}
+with $S_e$, $c_e$ the elevator area and chord; $b_1 = \partial C_h/\partial\alpha_t$ and $b_2 = \partial C_h/\partial\delta_e$ are both normally negative (the airload pushes a deflected elevator back towards neutral, and an increase of tail angle of attack pushes the elevator trailing edge up).
+
+::: proposition Stick-free neutral point {#prop-stick-free}
+If the elevator floats freely ($C_h = 0$), the effective tail lift-curve slope is reduced to $a_t(1 - \tau b_1/b_2)$, and the stick-free neutral point is, to a good approximation,
+$$
+h_n' = h_{ac} + \eta\bar V_H\,\frac{a_t}{a}\,(1 - \varepsilon_\alpha)\left(1 - \frac{\tau b_1}{b_2}\right).
+$$ {#eq-stick-free}
+With $b_1$ and $b_2$ of the same sign, $h_n' < h_n$: freeing the elevator moves the neutral point forward and reduces the static margin.
+:::
+
+::: proof
+With $C_h = 0$ in [[#eq-hinge]], $\delta_{\text{free}} = -(C_{h0} + b_1\alpha_t)/b_2$. The tail lift becomes $C_{L,t} = a_t\alpha_t + a_e\delta_{\text{free}} = a_t\alpha_t(1 - \tau b_1/b_2) - a_eC_{h0}/b_2$, so its slope with respect to $\alpha_t$ is $a_t(1 - \tau b_1/b_2)$. Repeating the derivation of [[#prop-neutral-point]] with this slope replaces $a_t$ in the tail term by $a_t(1 - \tau b_1/b_2)$. The approximation: the aircraft lift slope $a$ also contains the tail slope, but the tail's share of $a$ is small (8 % for the light aircraft), so $a$ is kept at its stick-fixed value.
+:::
+
+::: example Stick-free margin of the light aircraft {#ex-stick-free}
+The elevator of the light aircraft has hinge-moment derivatives $b_1 = -0.20\ \mathrm{rad^{-1}}$ and $b_2 = -0.40\ \mathrm{rad^{-1}}$, and $\tau = 0.45$. Find the stick-free neutral point and the stick-free static margin at $h = 0.30$, and the angle through which the free elevator floats when the tail angle of attack increases by $2^\circ$.
+::: solution
+The free-elevator factor is $1 - \tau b_1/b_2 = 1 - 0.45 \times (-0.20)/(-0.40) = 1 - 0.225 = 0.775$. From [[#ex-neutral-point]] the tail term of the stick-fixed neutral point is $0.2328$, so
+$$
+h_n' = 0.20 + 0.2328 \times 0.775 = 0.3804 ,
+$$
+and the stick-free margin at $h = 0.30$ is $0.080$, against $0.133$ stick-fixed. A $2^\circ$ increase of $\alpha_t$ makes the elevator float by $\Delta\delta = -(b_1/b_2)\Delta\alpha_t = -0.5 \times 2^\circ = -1^\circ$ (trailing edge up), which cancels $0.45 \times 1^\circ = 0.45^\circ$ of the $2^\circ$ change in tail angle of attack — the $22.5\,\%$ loss of tail effectiveness. Sanity check: $h_n' < h_n$ as the proposition requires, and an $8\,\%$ stick-free margin is an acceptable value for a light aircraft at mid loading.
+:::
+:::
+
+Designers control $b_1$ and $b_2$ with aerodynamic balances (horn balances, set-back hinges), which reduce the hinge moments and stick forces but, as [[#eq-stick-free]] shows, also affect the stick-free stability.
+
+The **stick force** the pilot feels is proportional to the hinge moment: $F_s = G\,H = G\,\eta qS_ec_eC_h$, where the gearing $G$ (rad/m) relates elevator angle to stick travel. Eliminating $\alpha$ and $\delta_e$ with the trim conditions leads to a stick force of the form $F_s = A_1q + A_2(W/S)$, where $A_2$ is proportional to the stick-free static margin $h_n' - h$ and $A_1$ contains the trim-tab setting. The tab is adjusted to make $F_s = 0$ at the chosen trim speed $V_{\text{trim}}$, and then the **stick-force gradient** at that speed is
+$$
+\left.\frac{\mathrm{d}F_s}{\mathrm{d}V}\right|_{\text{trim}} = -\frac{2A_2\,(W/S)}{V_{\text{trim}}},
+$$ {#eq-stick-force-gradient}
+proportional to the stick-free static margin and to the wing loading, inversely to the trim speed, and independent of the tab setting. Airworthiness rules require a stable gradient (a pull force to fly slower, a push to fly faster), which is why the stick-free margin, not the stick-fixed one, usually sets the aft centre-of-gravity limit of aircraft with manual controls.
+
+::: quiz
+An aircraft is trimmed hands-off at $60\ \mathrm{m/s}$. Its centre of gravity is then moved aft (but stays ahead of both neutral points) and it is retrimmed at the same speed. What changes?
+- [ ] The elevator angle per unit $C_L$ becomes steeper and the stick-force gradient increases.
+- [x] Less elevator change and less stick force are needed for a given speed change: the aircraft feels lighter and is less stable.
+- [ ] Nothing changes, because the neutral point is fixed.
+- [ ] The aircraft becomes unstable.
+::: solution
+Both the elevator-angle gradient [[#eq-elevator-gradient]] and the stick-force gradient [[#eq-stick-force-gradient]] are proportional to the (stick-fixed or stick-free) static margin, which falls as the centre of gravity moves aft. The neutral points are fixed, but the margin is the distance to them.
+:::
+:::
+
+::: history
+Sir George Cayley's model glider of 1804 already had a tail mounted behind the wing for stability, and Alphonse Pénaud's rubber-powered *planophore* of 1871 flew stably because its tail was set at a smaller incidence than the wing — the "longitudinal dihedral" that provides $C_{m0} > 0$. The Wright Flyer of 1903, by contrast, had a forward elevator and was deliberately unstable in pitch; the brothers were skilled enough to fly it, but its successors adopted aft tails. The mathematical theory began with G. H. Bryan and W. E. Williams, "The longitudinal stability of aerial gliders" (*Proceedings of the Royal Society*, 1904), and Bryan's book *Stability in Aviation* (1911). The neutral point, static margin and stick-free analysis took their textbook form in the 1930s and 1940s; C. D. Perkins and R. E. Hage's *Airplane Performance, Stability and Control* (Wiley, 1949) set the pattern followed by most later texts.
+:::
+
+::: summary
+- Static stability in pitch: $C_{m\alpha} < 0$; useful trim needs also $C_{m0} > 0$, normally provided by a tail set at negative incidence relative to the wing.
+- About the centre of gravity: $C_m = C_{m,ac} + C_L(h - h_{ac}) - \eta\bar V_HC_{L,t}$, with tail volume $\bar V_H = l_tS_t/(S\bar c)$ and downwash $\varepsilon = \varepsilon_\alpha\alpha$.
+- Stick-fixed neutral point $h_n = h_{ac} + \eta\bar V_H(a_t/a)(1 - \varepsilon_\alpha)$; static margin $K_n = h_n - h$; $C_{m\alpha} = -aK_n$.
+- Trim from two linear equations in $\alpha$ and $\delta_e$; the elevator gradient $\mathrm{d}\delta/\mathrm{d}C_L = aK_n/\Delta$ is proportional to static margin — the basis of the flight-test method.
+- Aft centre-of-gravity limit from stability (minimum margin), forward limit from elevator power at high $C_L$ and in ground effect.
+- A floating elevator multiplies the tail's effectiveness by $1 - \tau b_1/b_2$; the stick-free neutral point lies ahead of the stick-fixed one, and the stick-force gradient is proportional to the stick-free margin.
 :::
 
 ## Exercises
 
-::: exercise Stability derivative {#ex-stability-deriv-ex level=3 check="2"}
-An aircraft has $C _ { L _ { \alpha } } = 0 . 0 8$ per degree and a static margin of 0.15. Calculate the stability derivative.
-
+::: exercise Tail volume coefficient {level=1 check="0.95"}
+A jet transport has $S = 122.6\ \mathrm{m^2}$, $\bar c = 4.19\ \mathrm{m}$ and a horizontal tail of $S_t = 31\ \mathrm{m^2}$ whose aerodynamic centre is $l_t = 15.8\ \mathrm{m}$ behind the wing–body aerodynamic centre. Find $\bar V_H$. (Enter it rounded to two decimal places.)
 ::: solution
-$$
-C _ { m _ { \alpha } } \; = \; - C _ { L _ { \alpha } } \, \Sigma \; = \; - 0 . 0 8 \times 0 . 1 5 \; = \; { \bf - 0 . 0 1 2 } \; \text{per degree }
-$$
-
-**The stability derivative is -0.012 per degree.**
+$\bar V_H = 15.8 \times 31/(122.6 \times 4.19) = 489.8/513.7 = 0.953$, i.e. $0.95$ — within the usual range for transports.
 :::
 :::
 
-::: exercise Tail volume coefficient {#ex-tail-volume-ex level=3 check="2"}
-An aircraft has $l _ { t } = 8 \; \text{m }$ , $S _ { t } = 6 \; \text{m } ^ { 2 }$ , $S = 3 0 \; \text{m } ^ { 2 }$ , and $\bar { c } = 2 \; \text{m }$ . Calculate the tail volume coefficient.
-
+::: exercise Static margin from the moment slope {level=1 check="0.12"}
+Wind-tunnel tests give $C_{m\alpha} = -0.66\ \mathrm{rad^{-1}}$ and $a = 5.5\ \mathrm{rad^{-1}}$ with the centre of gravity at $h = 0.28$. Find the static margin. (Enter $K_n$ as a fraction of $\bar c$, rounded to two decimal places.)
 ::: solution
-$$
-V _ { H } \; = \; { \frac { l _ { t } \, S _ { t } } { S \, \bar { c } } } \; = \; { \frac { 8 \times 6 } { 3 0 \times 2 } } \; = \; { \frac { 4 8 } { 6 0 } } \; = \; { \bf 0 . 8 }
-$$
-
-**The tail volume coefficient is 0.8.**
+$K_n = -C_{m\alpha}/a = 0.66/5.5 = 0.12$, so $h_n = 0.40$.
 :::
 :::
 
-::: exercise Static margin {#ex-static-margin-ex level=3 check="2"}
-An aircraft has $h _ { \text{np } } = 0 . 3 2$ and $h _ { \text{cg } } = 0 . 2 5$ . Calculate the static margin.
-
+::: exercise Neutral point without downwash {level=1 check="0.573"}
+Recompute the neutral point of [[#ex-neutral-point]] assuming, wrongly, that $\varepsilon_\alpha = 0$ (and recomputing $a$ consistently). (Enter $h_n$ rounded to three decimal places.)
 ::: solution
-$$
-\Sigma \; = \; h _ { \text{np } } - h _ { \text{cg } } \; = \; 0 . 3 2 - 0 . 2 5 \; = \; { \bf 0 . 0 7 }
-$$
-
-**The static margin is 0.07.**
+$a = 4.8 + 0.90 \times 0.1852 \times 4.0 = 5.4667$; $h_n = 0.20 + 0.90 \times 0.5669 \times 4.0/5.4667 = 0.20 + 0.3733 = 0.573$. Ignoring downwash would place the neutral point $0.14\bar c$ ($0.21\ \mathrm{m}$) too far aft and could lead to an aft limit at which the real aircraft is unstable.
 :::
 :::
 
-::: exercise Elevator deflection for trim {#ex-elevator-trim-ex level=3 check="2"}
-An aircraft has $C _ { m _ { 0 } } = 0 . 0 2$ , $C _ { L _ { \text{trim } } } = 0 . 5$ , $h _ { \text{cg } } - h _ { \text{ac } } = - 0 . 0 3$ , and $C _ { m _ { \delta _ { e } } } = - 0 . 0 4$ . Calculate the elevator deflection for trim.
-
+::: exercise Aft limit for a required margin {level=2 check="0.35"}
+For the light aircraft, the stick-free neutral point is $h_n' = 0.380$ (with $a$ kept at its stick-fixed value) and the stick-fixed neutral point is $0.433$. The designer requires a stick-fixed margin of at least $5\,\%$ and a stick-free margin of at least $3\,\%$. What is the aft centre-of-gravity limit? (Enter $h$ rounded to two decimal places.)
 ::: solution
-$$
-\delta _ { e _ { \text{trim } } } \; = \; - { \frac { C _ { m _ { 0 } } + C _ { L _ { \text{trim } } } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) } { C _ { m _ { \delta _ { e } } } } } \; = \; - { \frac { 0 . 0 2 + 0 . 5 \times ( - 0 . 0 3 ) } { - 0 . 0 4 } }
-$$
-
-$$
-= \; - { \frac { 0 . 0 2 - 0 . 0 1 5 } { - 0 . 0 4 } } \; = \; - { \frac { 0 . 0 0 5 } { - 0 . 0 4 } } \; = \; { \bf 0 . 1 2 5 } \; \text{rad} = { \bf 7 . 2 ^ { \circ } }
-$$
-
-**The elevator deflection for trim is 7.2°.**
+Stick-fixed: $h \le 0.433 - 0.05 = 0.383$. Stick-free: $h \le 0.380 - 0.03 = 0.350$. The tighter limit governs: $h_{\text{aft}} = 0.350$.
 :::
 :::
 
-::: exercise Neutral point {#ex-neutral-point-ex level=3 check="2"}
-An aircraft has $h _ { \text{ac } } = 0 . 2 8$ , $V _ { H } = 0 . 6$ , $C _ { L _ { \alpha _ { t } } } = 0 . 0 9$ per degree, $C _ { L _ { \alpha } } = 0 . 0 7$ per degree, and $\varepsilon _ { \alpha } = 0 . 3$ . Calculate the neutral point.
-
+::: exercise Elevator to trim at the forward limit {level=2 check="-17.8"}
+For the light aircraft of [[#ex-trim]] with the centre of gravity at $h = 0.20$, find the trim elevator angle at $C_L = 1.2$. (Enter $\delta_{\text{trim}}$ in degrees, rounded to one decimal place.)
 ::: solution
-$$
-h _ { \text{np } } \; = \; h _ { \text{ac } } + { \frac { V _ { H } \, C _ { L _ { \alpha _ { t } } } } { C _ { L _ { \alpha } } } } \, ( 1 - \varepsilon _ { \alpha } )
-$$
-
-$$
-h _ { \text{np } } \; = \; 0 . 2 8 + { \frac { 0 . 6 \times 0 . 0 9 } { 0 . 0 7 } } \times ( 1 - 0 . 3 ) \; = \; 0 . 2 8 + { \frac { 0 . 0 5 4 } { 0 . 0 7 } } \times 0 . 7
-$$
-
-$$
-h _ { \text{np } } \; = \; 0 . 2 8 + 0 . 7 7 1 \times 0 . 7 \; = \; 0 . 2 8 + 0 . 5 4 0 \; = \; { \bf 0 . 8 2 0 }
-$$
-
-**Note:** The neutral point at 0.820 is unrealistically far aft. In practice, the tail volume coefficient and lift curve slopes must be carefully checked. A typical neutral point is 0.30-0.40.
-
-**The neutral point is 0.820. The engineer would design the aircraft for the point, because the point is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.**
+At $h = 0.20$: $K_n = 0.2328$, $C_{m\alpha} = -5.195 \times 0.2328 = -1.2094$; $C_{m\delta} = 0.300 \times 0 - 0.9184 = -0.9184$; $C_{m0} = -0.05 + 0 + 0.07124 = 0.02124$; $\Delta = 5.195 \times (-0.9184) - (-1.2094)(0.300) = -4.771 + 0.363 = -4.408$ (unchanged, as [[#prop-trim]] predicts). $\delta = -[0.02124 \times 5.195 + (-1.2094)(1.2233)]/(-4.408) = -(0.1103 - 1.4795)/(-4.408) = -0.3106\ \mathrm{rad} = -17.8^\circ$. With a travel of $-25^\circ$ and the extra nose-down moments of flaps and ground effect, $h = 0.20$ is close to the forward limit.
 :::
 :::
 
-::: exercise Derivation: the static margin {#ex-derive-static-margin level=4 check="2"}
-Show that the static margin is $\Sigma = h _ { \text{np } } - h _ { \text{cg } } = - C _ { m _ { \alpha } } / C _ { L _ { \alpha } }$ . Write the expression for the neutral point.
-
+::: exercise Neutral point from flight test {level=2 check="0.41"}
+In a flight test the trim elevator gradient $\mathrm{d}\delta/\mathrm{d}C_L$ was $-12.0^\circ$ at $h = 0.21$ and $-6.0^\circ$ at $h = 0.31$. Estimate the stick-fixed neutral point. (Enter $h_n$ rounded to two decimal places.)
 ::: solution
-The **pitching moment coefficient** about the CG is:
-
-$$
-C _ { m _ { \text{cg } } } \; = \; C _ { m _ { 0 } } + C _ { L } \, ( h _ { \text{cg } } - h _ { \text{ac } } )
-$$
-
-Differentiating with respect to $\alpha$ :
-
-$$
-C _ { m _ { \alpha } } \; = \; C _ { L _ { \alpha } } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) + C _ { m _ { \alpha } } \big | _ { \text{wing}}
-$$
-
-At the **neutral point**, $C _ { m _ { \alpha } } = 0$ , so:
-
-$$
-h _ { \text{np } } \; = \; h _ { \text{ac } } + { \frac { V _ { H } \, C _ { L _ { \alpha _ { t } } } } { C _ { L _ { \alpha } } } } \, ( 1 - \varepsilon _ { \alpha } )
-$$
-
-The **static margin** is:
-
-$$
-\Sigma \; = \; h _ { \text{np } } - h _ { \text{cg } } \; = \; - { \frac { C _ { m _ { \alpha } } } { C _ { L _ { \alpha } } } }
-$$
-
-**The neutral point is the reason the longitudinal static stability and trim are designed for the point, not the line, and the point is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.** $\blacksquare$
+The gradient rises by $6.0^\circ$ per $0.10$ of chord, so it reaches zero $0.10$ beyond $h = 0.31$: $h_n = 0.41$.
 :::
 :::
 
-::: exercise Derivation: the trim equation {#ex-derive-trim level=4 check="2"}
-Show that the trim equation is $C _ { m _ { 0 } } + C _ { L _ { \text{trim } } } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) + C _ { m _ { \delta _ { e } } } \, \delta _ { e _ { \text{trim } } } = 0$ . Write the expression for the elevator deflection for trim.
-
+::: exercise Floating elevator {level=2}
+Show that if $b_1 = 0$ the stick-free and stick-fixed neutral points coincide, and explain physically why a heavily balanced elevator with $b_2 \to 0$ is dangerous.
 ::: solution
-The **pitching moment coefficient** including the elevator effect is:
-
-$$
-C _ { m _ { \text{cg } } } \; = \; C _ { m _ { 0 } } + C _ { L } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) + C _ { m _ { \delta _ { e } } } \, \delta _ { e }
-$$
-
-At **trim**, $C _ { m _ { \text{cg } } } = 0$ :
-
-$$
-C _ { m _ { 0 } } + C _ { L _ { \text{trim } } } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) + C _ { m _ { \delta _ { e } } } \, \delta _ { e _ { \text{trim } } } \; = \; 0
-$$
-
-Solving for $\delta _ { e _ { \text{trim } } }$ :
-
-$$
-\delta _ { e _ { \text{trim } } } \; = \; - { \frac { C _ { m _ { 0 } } + C _ { L _ { \text{trim } } } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) } { C _ { m _ { \delta _ { e } } } } }
-$$
-
-**The static margin is the reason the longitudinal static stability and trim are designed for the margin, not the trim, and the margin is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.** $\blacksquare$
+With $b_1 = 0$ the factor $1 - \tau b_1/b_2 = 1$, so $h_n' = h_n$: a change of tail angle of attack produces no hinge moment, so the free elevator does not move when $\alpha$ changes, and the free tail behaves like a fixed one. If $b_2 \to 0$ with $b_1 < 0$, then $\tau b_1/b_2 \to +\infty$ (both negative) and the factor becomes large and negative: the floating elevator moves so far trailing-edge-up when $\alpha$ increases that the tail *loses* lift — the stick-free neutral point moves far forward and the aircraft becomes unstable hands-off, with near-zero or reversed stick forces. Over-balanced controls have caused accidents, which is why airworthiness rules require stable stick-force gradients.
 :::
 :::
 
-::: quiz Longitudinal static stability {#quiz-long-stab}
-The most fundamental stability analyses in flight mechanics are:
-
-- [ ] Lateral-directional stability
-- [x] Longitudinal static stability and trim
-- [ ] Dynamic stability
-- [ ] Structural stability
-
+::: exercise Sizing a tailplane {level=3 check="2.55"}
+The light aircraft is to be redesigned so that its stick-fixed neutral point is at $h_n = 0.40$ (instead of $0.433$), keeping $l_t$, $a_t$, $\eta$ and $\varepsilon_\alpha$, to save tail weight and drag. What tail area is needed? Then discuss what you would check before accepting the smaller tail. (Enter $S_t$ in $\mathrm{m^2}$, rounded to two decimal places.)
 ::: solution
-**Longitudinal static stability and trim.** Longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics, because the longitudinal static stability is the tendency of the aircraft to return to its original angle of attack after a disturbance, and the trim is the condition where the pitching moment is zero at a chosen angle of attack. The engineer who calculates the longitudinal static stability without checking the neutral point is not calculating the longitudinal static stability; they are guessing.
+Let $s = S_t/S$. Then $\bar V_H = (l_t/\bar c)s = 3.0612\,s$ and $a = 4.8 + 0.90 \times 4.0 \times 0.5926\,s = 4.8 + 2.1333\,s$. The condition $h_n - h_{ac} = 0.20$:
+$$
+\frac{0.90 \times 3.0612\,s \times 4.0 \times 0.5926}{4.8 + 2.1333\,s} = 0.20 \;\Longrightarrow\; 6.5306\,s = 0.96 + 0.42667\,s \;\Longrightarrow\; s = 0.15727,
+$$
+so $S_t = 0.15727 \times 16.2 = 2.55\ \mathrm{m^2}$, $15\,\%$ smaller than the present $3.0\ \mathrm{m^2}$. Checks before accepting it: (i) the stick-free neutral point moves forward with it (to about $0.20 + 0.20 \times 0.775 = 0.355$), shrinking the usable centre-of-gravity range unless the hinge-moment parameters are changed; (ii) the forward limit: the elevator power $C_{m\delta} \propto \bar V_H$ falls by $15\,\%$, so trimming at $C_{L,\max}$ with flaps and in ground effect, and rotating on take-off, must be re-checked — the forward limit moves aft; (iii) the combined range between the two limits may become too small for the loading cases the aircraft must carry; (iv) dynamic stability (short-period damping, [[flight-mechanics/dynamic-modes]]) depends on the tail too; (v) spin recovery and stall behaviour, which depend on tail effectiveness at high angle of attack. In practice the tail is sized from a "scissor plot" of required tail area against centre-of-gravity position, with one line for each limit.
 :::
 :::
-
-::: quiz Neutral point {#quiz-neutral-point}
-The neutral point is:
-
-- [ ] The CG location where the lift is maximum
-- [x] The CG location where the stability derivative is zero
-- [ ] The CG location where the drag is minimum
-- [ ] The CG location where the thrust equals the drag
-
-::: solution
-**The CG location where the stability derivative is zero.** The neutral point is the CG location where the stability derivative is zero, and the neutral point is the reason the longitudinal static stability and trim are designed for the point, not the line. The engineer who calculates the longitudinal static stability without checking the neutral point is not calculating the longitudinal static stability; they are guessing.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[flight-mechanics/steady-flight-performance]]** — The steady flight performance is the foundation of the longitudinal static stability.
-- **[[flight-mechanics/range-endurance]]** — The range and endurance are the foundation of the longitudinal static stability.
-- **[[flight-mechanics/manoeuvres-takeoff-landing]]** — The manoeuvres, take-off and landing are the foundation of the longitudinal static stability.
-- **[[flight-mechanics/lateral-static-stability]]** — The lateral-directional static stability is the foundation of the longitudinal static stability.
-- **[[flight-mechanics/aircraft-equations-of-motion]]** — The aircraft equations of motion are the foundation of the longitudinal static stability.
-- **[[flight-mechanics/dynamic-modes]]** — The dynamic modes are the foundation of the longitudinal static stability.
-- **[[flight-mechanics/flight-control]]** — The flight control is the foundation of the longitudinal static stability.
-- **[[aerodynamics/aerodynamic-forces]]** — The aerodynamic forces are the foundation of the longitudinal static stability.
-- **[[control-systems/feedback-stability]]** — The feedback stability is the foundation of the longitudinal static stability.
-- **[[aerodynamics/thin-airfoil-theory]]** — The thin airfoil theory is the foundation of the longitudinal static stability.
-
-::: history Longitudinal static stability: from the Wright brothers to fly-by-wire {#history-long-stab}
-**1903** — **The Wright brothers** discover **wing warping for lateral control**, which is the foundation of the longitudinal static stability. **The wing warping is the reason the longitudinal static stability is the oldest concept in flight mechanics, and the age is the reason the longitudinal static stability is the most refined concept in flight mechanics.**
-
-**1910s** — **The canard configuration** is developed, and the canard configuration is the reason the longitudinal static stability is the most historic concept in flight mechanics. **The canard configuration is the reason the longitudinal static stability is the most refined concept in flight mechanics, and the longitudinal static stability is the reason the canard configuration is the most historic concept in flight mechanics.**
-
-**1930s** — **The tailless configuration** is developed, and the tailless configuration is the reason the longitudinal static stability is the most practical concept in flight mechanics. **The tailless configuration is the reason the longitudinal static stability is the most refined concept in flight mechanics, and the longitudinal static stability is the reason the tailless configuration is the most practical concept in flight mechanics.**
-
-**1940s** — **The swept wing** is developed, and the swept wing is the reason the longitudinal static stability is the most powerful concept in flight mechanics. **The swept wing is the reason the longitudinal static stability is the most refined concept in flight mechanics, and the longitudinal static stability is the reason the swept wing is the most powerful concept in flight mechanics.**
-
-**1950s** — **The area rule** is developed, and the area rule is the reason the longitudinal static stability is the most efficient concept in flight mechanics. **The area rule is the reason the longitudinal static stability is the most refined concept in flight mechanics, and the longitudinal static stability is the reason the area rule is the most efficient concept in flight mechanics.**
-
-**1970s** — **The relaxed static stability** is developed, and the relaxed static stability is the reason the longitudinal static stability is the most advanced concept in flight mechanics. **The relaxed static stability is the reason the longitudinal static stability is the most refined concept in flight mechanics, and the longitudinal static stability is the reason the relaxed static stability is the most advanced concept in flight mechanics.**
-
-**1980s** — **The fly-by-wire control** is developed, and the fly-by-wire control is the reason the longitudinal static stability is the most modern concept in flight mechanics. **The fly-by-wire control is the reason the longitudinal static stability is the most refined concept in flight mechanics, and the longitudinal static stability is the reason the fly-by-wire control is the most modern concept in flight mechanics.**
-
-**2000s** — **The active stability augmentation** is developed, and the active stability augmentation is the reason the longitudinal static stability is the most futuristic concept in flight mechanics. **The active stability augmentation is the reason the longitudinal static stability is the most refined concept in flight mechanics, and the longitudinal static stability is the reason the active stability augmentation is the most futuristic concept in flight mechanics.**
-:::
-
-::: summary Longitudinal static stability and trim {#summary-long-stab}
-- **The pitching moment coefficient is $C _ { m } = M / ( { \frac { 1 } { 2 } } \, \rho \, V ^ { 2 } \, S \, c )$ , the pitching moment about the CG is $C _ { m _ { \text{cg } } } = C _ { m _ { 0 } } + C _ { L } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) / \bar { c }$ , and the stability derivative is $C _ { m _ { \alpha } } = - C _ { L _ { \alpha } } \, ( h _ { \text{cg } } - h _ { \text{np } } ) / \bar { c }$ .** The neutral point is the reason the longitudinal static stability and trim are designed for the point, not the line, and the point is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.
-- **The static stability condition is $C _ { m _ { \alpha } } < 0$ , the neutral point is $h _ { \text{np } } = h _ { \text{ac } } + V _ { H } \, C _ { L _ { \alpha _ { t } } } / C _ { L _ { \alpha } } \, ( 1 - \varepsilon _ { \alpha } )$ , and the tail volume coefficient is $V _ { H } = l _ { t } \, S _ { t } / ( S \, \bar { c } )$ .** The static margin is the reason the longitudinal static stability and trim are designed for the margin, not the trim, and the margin is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.
-- **The static margin is $\Sigma = h _ { \text{np } } - h _ { \text{cg } } = - C _ { m _ { \alpha } } / C _ { L _ { \alpha } }$ , the maneuver point is $h _ { m } = h _ { \text{np } } + V _ { H } \, C _ { L _ { \alpha _ { t } } } / C _ { L _ { \alpha } } \, ( c / V ) \, ( q / g )$ , and the downwash gradient is $\varepsilon _ { \alpha } = 0 . 1 \text{--} 0 . 6$ .** The center of gravity is the reason the longitudinal static stability and trim are designed for the gravity, not the lift, and the gravity is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.
-- **The trim condition is $C _ { m _ { \text{cg } } } = 0$ at the desired $\alpha _ { \text{trim } }$ , the trim equation is $C _ { m _ { 0 } } + C _ { L _ { \text{trim } } } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) + C _ { m _ { \delta _ { e } } } \, \delta _ { e _ { \text{trim } } } = 0$ , and the elevator deflection for trim is $\delta _ { e _ { \text{trim } } } = - ( C _ { m _ { 0 } } + C _ { L _ { \text{trim } } } \, ( h _ { \text{cg } } - h _ { \text{ac } } ) ) / C _ { m _ { \delta _ { e } } }$ .** The tail volume coefficient is the reason the longitudinal static stability and trim are designed for the volume, not the area, and the volume is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.
-- **The elevator effectiveness is $C _ { m _ { \delta _ { e } } } = - V _ { H } \, C _ { L _ { \alpha _ { t } } } \, \tau / \bar { c }$ , the trim tab effectiveness is $C _ { m _ { \delta _ { t } } } = C _ { m _ { \delta _ { e } } } \, \partial \delta _ { e } / \partial \delta _ { t }$ , and the stick-force gradient is $\partial F _ { \text{stick } } / \partial V \propto C _ { m _ { \alpha } } + C _ { m _ { \delta _ { e } } } \, b _ { 2 } / ( V _ { H } \, C _ { L _ { \alpha _ { t } } } )$ .** The downwash is the reason the longitudinal static stability and trim are designed for the downwash, not the upwash, and the downwash is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.
-- **The free stability is $C _ { m _ { \alpha } } \big | _ { \text{free } } = C _ { m _ { \alpha } } \big | _ { \text{fixed } } - C _ { m _ { \alpha } } \, C _ { h _ { \alpha } } / C _ { h _ { \delta _ { e } } }$ , the elevator deflection is $\delta _ { e } = - 2 0 ^ { \circ } \text{--} + 2 0 ^ { \circ }$ , and the elevator effectiveness is $C _ { m _ { \delta _ { e } } } = - 0 . 0 1 \text{--} - 0 . 0 5$ .** The trim condition is the reason the longitudinal static stability and trim are designed for the trim, not the stability, and the trim is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.
-- **The zero-lift moment is $C _ { m _ { 0 } } = - 0 . 1 \text{--} 0 . 0 5$ , the trim CL is $C _ { L _ { \text{trim } } } = 0 . 2 \text{--} 1 . 0$ , and the hinge moment coefficient is $C _ { h } = - 0 . 1 \text{--} 0 . 1$ .** The control surface effectiveness is the reason the longitudinal static stability and trim are designed for the effectiveness, not the deflection, and the effectiveness is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.
-- **The stick force gradient is $\partial F / \partial V = 1 \text{--} 1 0$ N/(m/s), the free stability is $C _ { m _ { \alpha } } \big | _ { \text{free } } = - 0 . 0 3 \text{--} - 0 . 3$ , and the static margin is $\Sigma = 0 . 0 5 \text{--} 0 . 2 5 \, \bar { c }$ .** The stick-force gradient is the reason the longitudinal static stability and trim are designed for the gradient, not the force, and the gradient is the reason the longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics.
-- **The longitudinal static stability calculation is the most important stability calculation in flight mechanics, because the longitudinal static stability calculation determines the stability and controllability of the aircraft.** The stability and controllability are the reason the engineer can design the aircraft to be stable and controllable.
-- **The longitudinal static stability and trim are the most fundamental stability analyses in flight mechanics, because the longitudinal static stability is the tendency of the aircraft to return to its original angle of attack after a disturbance, and the trim is the condition where the pitching moment is zero at a chosen angle of attack.** The stability analysis is the reason the engineer can design the aircraft to be stable and controllable.
-:::
-
-## Further reading
-
-- **B. Stevens and F. Lewis (1992)** — *Aircraft Control and Simulation*. Wiley. The longitudinal static stability, the neutral point, and the static margin.
-- **J. D. Anderson (2017)** — *Aircraft Performance and Design*. McGraw-Hill. The longitudinal static stability and the trim condition.
-- **P. Filippone (2012)** — *Flight Vehicle Performance and Design*. Springer. The longitudinal static stability and the control surface effectiveness.
-- **E. Torenbeek (1982)** — *Synthesis of Subsonic Airplane Design*. Delft University Press. The longitudinal static stability and the tail volume coefficient.
-- **J. Roskam (1987)** — *Airplane Design, Part 6: Preliminary Sizing of Airplanes*. Roskam Aviation. The longitudinal static stability and the downwash.
-- **D. P. Raymer (2012)** — *Aircraft Design: A Conceptual Approach*, 5th ed. AIAA. The longitudinal static stability and the trim curve.
-- **A. C. Kermode (2006)** — *Mechanics of Flight*, 9th ed. Pearson. The longitudinal static stability and the stick-force gradient.
-- **W. Nelson (1998)** — *Flight Stability and Automatic Control*, 2nd ed. McGraw-Hill. The longitudinal static stability and the maneuver point.
