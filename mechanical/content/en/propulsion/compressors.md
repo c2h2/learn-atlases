@@ -1,512 +1,423 @@
-Compressors are the most fundamental components in gas turbine engines: the compressor is the component that increases the pressure of the air before it enters the combustor, and the compressor is the component that determines the pressure ratio and the thermal efficiency. **The engineer who calculates the compressor without checking the pressure ratio is not calculating the compressor; they are guessing.** The compressor calculation is the reason the engineer can design the gas turbine engine to be efficient, and the efficiency is the reason the compressor is the most fundamental component in gas turbine engines.
+A gas turbine is a heat engine that has to compress its working fluid before it can heat it, and the compressor is the component that decides whether the engine works at all. In a modern turbofan the core compressor raises the pressure of the air by a factor of 40 or more and absorbs roughly half of the power the turbines produce; a loss of a few points of compressor efficiency is paid for twice, once in extra turbine work and once in a lower cycle pressure ratio. The compressor is also the component that most often limits the engine's operating range, because air that is being pushed *up* a pressure gradient is prone to separating from the blades, and separated flow in a compressor can collapse into stall or surge within milliseconds.
 
-The quantitative tools of compressors are the **pressure ratio** (the ratio of the outlet pressure to the inlet pressure), the **degree of reaction** (the fraction of the static enthalpy rise that occurs in the rotor), the **Euler work equation** (the work per unit mass equals the change in the tangential velocity component), and the **Stodt slip factor** (the ratio of the actual tangential velocity to the ideal tangential velocity). The tools are the language in which the compressor analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+This chapter develops compressor aerodynamics from one equation. The **Euler turbomachinery equation** says that the work done on each kilogram of gas equals the change in the product of blade speed and swirl velocity; everything else — velocity triangles, stage loading, degree of reaction, the limits on diffusion — is a way of choosing that swirl change without separating the flow. We then turn the stage-level picture into whole-machine quantities: the difference between isentropic and polytropic efficiency, the centrifugal compressor with its slip factor, the compressor map with its surge line and corrected parameters, and the devices (variable stators, bleed valves, multiple spools) that keep a high-pressure-ratio compressor stable across its speed range.
 
-::: warning Nine ways compressor calculation goes wrong
-**Not checking the pressure ratio.** The engineer who calculates the compressor without checking the pressure ratio is not calculating the compressor; they are guessing. **The pressure ratio is the reason the compressor is designed for the compression, not the expansion, and the compression is the reason the compressor is the most fundamental component in gas turbine engines.** **Not checking the degree of reaction.** The engineer who calculates the compressor without checking the degree of reaction is not calculating the compressor; they are guessing. **The degree of reaction is the reason the compressor is designed for the reaction, not the action, and the reaction is the reason the compressor is the most fundamental component in gas turbine engines.** **Not checking the Euler work equation.** The engineer who calculates the compressor without checking the Euler work equation is not calculating the compressor; they are guessing. **The Euler work equation is the reason the compressor is designed for the work, not the power, and the work is the reason the compressor is the most fundamental component in gas turbine engines.** **Not checking the slip factor.** The engineer who calculates the compressor without checking the slip factor is not calculating the compressor; they are guessing. **The slip factor is the reason the compressor is designed for the slip, not the flow, and the slip is the reason the compressor is the most fundamental component in gas turbine engines.** **Not checking the stall margin.** The engineer who calculates the compressor without checking the stall margin is not calculating the compressor; they are guessing. **The stall margin is the reason the compressor is designed for the stall, not the surge, and the stall is the reason the compressor is the most fundamental component in gas turbine engines.** **Not checking the surge line.** The engineer who calculates the compressor without checking the surge line is not calculating the compressor; they are guessing. **The surge line is the reason the compressor is designed for the surge, not the choke, and the surge is the reason the compressor is the most fundamental component in gas turbine engines.** **Not checking the Mach number.** The engineer who calculates the compressor without checking the Mach number is not calculating the compressor; they are guessing. **The Mach number is the reason the compressor is designed for the compressibility, not the viscosity, and the compressibility is the reason the compressor is the most fundamental component in gas turbine engines.** **Not checking the flow coefficient.** The engineer who calculates the compressor without checking the flow coefficient is not calculating the compressor; they are guessing. **The flow coefficient is the reason the compressor is designed for the flow, not the pressure, and the flow is the reason the compressor is the most fundamental component in gas turbine engines.** **Not checking the stage loading.** The engineer who calculates the compressor without checking the stage loading is not calculating the compressor; they are guessing. **The stage loading is the reason the compressor is designed for the loading, not the unloading, and the loading is the reason the compressor is the most fundamental component in gas turbine engines.**
+Throughout, stagnation (total) quantities carry the subscript $t$ — $T_t$, $p_t$, $h_t$ — and station numbers follow SAE ARP 755: station 2 is the compressor face, station 3 the compressor exit. The overall compressor pressure ratio is $\pi_c = p_{t3}/p_{t2}$ and its isentropic efficiency is $\eta_c$. Air is a perfect gas with $c_p = 1005\ \mathrm{J\,kg^{-1}\,K^{-1}}$, $\gamma = 1.4$ and $R = 287\ \mathrm{J\,kg^{-1}\,K^{-1}}$ unless stated. The cycle context is in [[propulsion/gas-turbine-cycles]] and the thermodynamics of stagnation states in [[thermodynamics/power-cycles]].
+
+## The physical picture: why compressors have many stages
+
+A turbine blade row accelerates the flow, and accelerating flow is easy to guide: the boundary layers on the blades are thinned by the falling pressure. A compressor blade row does the opposite. To raise the pressure, each row must **diffuse** the flow — slow it down relative to the blade — and a boundary layer that is asked to flow into rising pressure thickens and eventually separates. That is the whole reason axial compressors have many more stages than the turbines that drive them: a typical high-bypass turbofan has 10 to 14 compressor stages in its core (plus fan and booster) driven by perhaps 2 high-pressure and 4 to 7 low-pressure turbine stages. Each compressor stage can only be asked for a modest pressure rise, around 1.2 to 1.6 in a core stage, before the blade boundary layers separate.
+
+An axial stage consists of a **rotor**, a ring of blades on a disc spinning at blade speed $U = \omega r$, followed by a **stator**, a stationary ring of vanes. The rotor adds swirl to the flow and so does work on it; its passages also diffuse the flow relative to the blades, raising the static pressure. The stator removes the swirl, diffusing the absolute flow and raising the static pressure further, and hands the flow to the next rotor at the angle it was designed for. A **centrifugal** (radial) compressor does the same job differently: the flow enters axially near the shaft, is turned outward in the impeller and leaves at the rim with a large tangential velocity, so that much of the work goes in through the increase of radius rather than through turning; a radial diffuser then recovers the kinetic energy as pressure. One centrifugal stage can deliver a pressure ratio of 4 to 8, which is why small engines, helicopter turboshafts and the last stage of many turboprop compressors are centrifugal.
+
+## Velocity triangles and the Euler equation
+
+The flow seen by a rotor blade is not the flow seen by an observer on the casing. The connection between the two frames is the whole content of the velocity triangle.
+
+::: definition Velocity triangles {#def-velocity-triangles}
+At a given radius $r$ the blade moves tangentially with speed $U = \omega r$. The **absolute velocity** $\mathbf{c}$ is measured in the stationary frame and the **relative velocity** $\mathbf{w}$ in the frame rotating with the blade; they are related by
+$$
+\mathbf{c} = \mathbf{w} + \mathbf{U}.
+$$
+Each velocity is split into an **axial** component (subscript $x$), a **tangential** or **swirl** component (subscript $\theta$) and, in radial machines, a **radial** component (subscript $r$). For an axial compressor we measure the absolute flow angle $\alpha$ from the axial direction, positive in the direction of rotation, and the relative flow angle $\beta$ from the axial direction, positive *against* the direction of rotation, so that
+$$
+c_\theta = c_x\tan\alpha, \qquad U - c_\theta = c_x\tan\beta, \qquad \tan\alpha + \tan\beta = \frac{U}{c_x}.
+$$
+Station 1 is the rotor inlet, station 2 the rotor exit (stator inlet) and station 3 the stator exit. A **repeating** (normal) stage has $c_3 = c_1$ and $\alpha_3 = \alpha_1$, so that identical stages can be stacked.
 :::
 
-## 1. Centrifugal compressors
+The rotor turns the relative flow from the large angle $\beta_1$ to the smaller angle $\beta_2$ — towards the axial direction — and so increases the absolute swirl from $c_{\theta 1}$ to $c_{\theta 2}$. How much work that represents follows from the angular-momentum balance.
 
-::: definition The Euler work equation {#def-euler-work}
-The **Euler work equation** is the equation that relates the work per unit mass to the change in the tangential velocity component, and the Euler work equation is the reason the engineer can design the gas turbine engine to be efficient.
-
-The **Euler work equation** for a compressor is:
-
+::: proposition The Euler turbomachinery equation {#prop-euler}
+For steady, adiabatic flow through a rotor turning at angular speed $\omega$, with mass flow $\dot m$ entering at radius $r_1$ with swirl $c_{\theta 1}$ and leaving at radius $r_2$ with swirl $c_{\theta 2}$, the shaft power absorbed is
 $$
-w \; = \; U _ { 2 } \, V _ { \theta 2 } - U _ { 1 } \, V _ { \theta 1 }
+\dot W = \dot m\,(U_2 c_{\theta 2} - U_1 c_{\theta 1}),
 $$
-
-For a **centrifugal compressor** with no inlet swirl $( V _ { \theta 1 } = 0 )$ :
-
+and the specific work, equal to the rise in stagnation enthalpy, is
 $$
-w \; = \; U _ { 2 } \, V _ { \theta 2 }
+\Delta h_t = h_{t2} - h_{t1} = U_2 c_{\theta 2} - U_1 c_{\theta 1}.
+$$ {#eq-euler}
+For an axial stage with constant radius and constant axial velocity ($U_1 = U_2 = U$, $c_{x1} = c_{x2} = c_x$),
 $$
-
-The **ideal work** (no slip) is:
-
-$$
-w _ { \text{ideal } } \; = \; U _ { 2 } ^ { 2 }
-$$
-
-The **actual work** (with slip) is:
-
-$$
-w _ { \text{actual } } \; = \; \sigma \, U _ { 2 } ^ { 2 }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Work per unit mass} & w & \text{Euler work} & 5 0 \text{--} 3 0 0 \ \text{ kJ/kg } \\
-\text{Tip speed} & U _ { 2 } & \text{Impeller tip speed} & 3 0 0 \text{--} 5 0 0 \ \text{ m/s } \\
-\text{Tangential velocity} & V _ { \theta 2 } & \text{Whirl velocity} & 2 0 0 \text{--} 5 0 0 \ \text{ m/s } \\
-\text{Slip factor} & \sigma & \text{Stodt slip factor} & 0 . 8 0 \text{--} 0 . 9 5 \\
-\end{array}
-$$
-
-**The pressure ratio is the reason the compressor is designed for the compression, not the expansion, and the compression is the reason the compressor is the most fundamental component in gas turbine engines. The engineer who calculates the compressor without checking the pressure ratio is not calculating the compressor; they are guessing.**
+\Delta h_t = U\,(c_{\theta 2} - c_{\theta 1}) = U c_x(\tan\alpha_2 - \tan\alpha_1) = U c_x(\tan\beta_1 - \tan\beta_2).
+$$ {#eq-euler-axial}
 :::
 
-::: definition The slip factor {#def-slip-factor}
-The **slip factor** is the ratio of the actual tangential velocity to the ideal tangential velocity, and the slip factor is the reason the engineer can design the gas turbine engine to be efficient.
-
-The **Stodt slip factor** is:
-
+::: proof
+Take a control volume enclosing the rotor passages and fixed in space. Assume steady flow (averaged over a blade passing period), uniform properties across the inlet and outlet stations, adiabatic walls, and negligible torque from shear on the stationary casing. The angular-momentum balance about the axis says that the torque $\tau$ exerted by the rotor on the fluid equals the net outflow of angular momentum,
 $$
-\sigma \; = \; 1 - { \frac { \pi } { Z } } \quad \text{(Stodt)}
+\tau = \dot m\,(r_2 c_{\theta 2} - r_1 c_{\theta 1}).
 $$
+Only tangential velocity components carry angular momentum about the axis; axial and radial components have no moment arm in that direction. The power delivered by the shaft is $\dot W = \tau\omega$, and with $U = \omega r$ this is $\dot W = \dot m(U_2 c_{\theta 2} - U_1 c_{\theta 1})$. The steady-flow energy equation for an adiabatic control volume with shaft work input $\dot W$ reads $\dot W = \dot m\,(h_{t2} - h_{t1})$, where $h_t = h + c^2/2$ (potential energy negligible for a gas). Equating the two expressions gives [[#eq-euler]]. For the axial stage, set $U_1 = U_2$ and use $c_\theta = c_x\tan\alpha$ and $U - c_\theta = c_x\tan\beta$ from [[#def-velocity-triangles]]; the difference $c_{\theta 2} - c_{\theta 1}$ equals $c_x(\tan\alpha_2 - \tan\alpha_1)$ and also $(U - c_x\tan\beta_2) - (U - c_x\tan\beta_1) = c_x(\tan\beta_1 - \tan\beta_2)$.
 
-The **Stanitz slip factor** is:
-
-$$
-\sigma \; = \; 1 - { \frac { 1 . 9 8 7 } { Z } } \quad \text{(Stanitz)}
-$$
-
-The **pressure ratio** for a centrifugal compressor is:
-
-$$
-{ \frac { p _ { 2 } } { p _ { 1 } } } \; = \; \left( 1 + { \frac { \eta _ { c } \, \sigma \, U _ { 2 } ^ { 2 } } { c _ { p } \, T _ { 1 } } } \right) ^ { \gamma / ( \gamma - 1 ) }
-$$
-
-The **pressure coefficient** is:
-
-$$
-\psi \; = \; { \frac { \Delta p } { { \frac { 1 } { 2 } } \, \rho \, U _ { 2 } ^ { 2 } } } \; = \; { \frac { \sigma \, U _ { 2 } ^ { 2 } } { { \frac { 1 } { 2 } } \, U _ { 2 } ^ { 2 } } } \; = \; 2 \, \sigma
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Slip factor} & \sigma & \text{Stodt/Stanitz} & 0 . 8 0 \text{--} 0 . 9 5 \\
-\text{Number of blades} & Z & \text{Impeller blades} & 1 5 \text{--} 3 0 \\
-\text{Pressure coefficient} & \psi & \text{Pressure rise coefficient} & 1 . 6 \text{--} 1 . 9 \\
-\text{Pressure ratio} & p _ { 2 } / p _ { 1 } & \text{Compressor pressure ratio} & 2 \text{--} 1 2 \\
-\end{array}
-$$
-
-**The degree of reaction is the reason the compressor is designed for the reaction, not the action, and the reaction is the reason the compressor is the most fundamental component in gas turbine engines. The engineer who calculates the compressor without checking the degree of reaction is not calculating the compressor; they are guessing.**
+Notice what the proof did *not* need: no assumption about friction or losses inside the passages. The Euler equation is exact for the stagnation-enthalpy rise; losses show up only in how much of that enthalpy rise becomes useful pressure rise.
 :::
+
+Two consequences are worth stating at once. First, the work per stage scales as $U^2$: double the blade speed at fixed flow angles and the work quadruples. Blade speed is limited by disc and blade stresses and by the relative Mach number at the tip, so a core compressor stage typically runs at mean blade speeds of $300$ to $400\ \mathrm{m/s}$. Second, the work depends only on the *change* in swirl, so a stator that leaves residual swirl $c_{\theta 1}$ at the next rotor's inlet (a positive $\alpha_1$, **prewhirl**) reduces the work for a given rotor exit swirl — but it also reduces the relative velocity at the rotor tip, which is why prewhirl is used in the front stages where relative Mach numbers are highest.
+
+In a rotor the quantity $h + w^2/2$ — the stagnation enthalpy in the relative frame — is conserved along a streamline at constant radius, because in the rotating frame the blades are stationary and do no work. Combining $h_t = h + c^2/2$ with [[#eq-euler-axial]] confirms this: $h_2 - h_1 = \tfrac{1}{2}(w_1^2 - w_2^2)$. The static enthalpy rise in the rotor is therefore set by the *relative* deceleration, and that is the quantity the blade boundary layers have to survive.
+
+## Stage design parameters
+
+Three dimensionless numbers describe the shape of the velocity triangles and so the character of a stage.
+
+::: definition Flow coefficient, stage loading and degree of reaction {#def-stage-parameters}
+For an axial stage with mean blade speed $U$:
+
+- the **flow coefficient** $\phi = c_x/U$ measures the axial throughflow relative to the blade speed;
+- the **stage loading coefficient** $\psi = \Delta h_t / U^2$ measures the work per unit mass relative to the blade kinetic energy;
+- the **degree of reaction** $R$ is the fraction of the stage's static-enthalpy rise that occurs in the rotor,
+$$
+R = \frac{h_2 - h_1}{h_3 - h_1}.
+$$
+:::
+
+::: proposition Loading and reaction from the triangles {#prop-reaction}
+For a repeating axial compressor stage with constant axial velocity,
+$$
+\psi = \phi(\tan\beta_1 - \tan\beta_2) = 1 - \phi(\tan\alpha_1 + \tan\beta_2),
+\qquad
+R = \frac{\phi}{2}(\tan\beta_1 + \tan\beta_2).
+$$ {#eq-reaction}
+A stage with $R = \tfrac{1}{2}$ has symmetric triangles: $\beta_1 = \alpha_2$ and $\beta_2 = \alpha_1$.
+:::
+
+::: proof
+The loading follows from [[#eq-euler-axial]] divided by $U^2$: $\psi = (c_x/U)(\tan\beta_1 - \tan\beta_2)$. Eliminating $\tan\beta_1 = 1/\phi - \tan\alpha_1$ from the identity in [[#def-velocity-triangles]] gives the second form. For the reaction, the rotor static rise is $h_2 - h_1 = \tfrac{1}{2}(w_1^2 - w_2^2)$ (conservation of relative stagnation enthalpy at constant radius) $= \tfrac{1}{2}c_x^2(\tan^2\beta_1 - \tan^2\beta_2)$, since the axial component is unchanged. For a repeating stage $c_3 = c_1$, so the static rise across the whole stage equals the stagnation rise: $h_3 - h_1 = h_{t3} - h_{t1} = U c_x(\tan\beta_1 - \tan\beta_2)$ (the stator does no work). Dividing, and factoring the difference of squares,
+$$
+R = \frac{\tfrac12 c_x^2(\tan\beta_1 - \tan\beta_2)(\tan\beta_1 + \tan\beta_2)}{U c_x(\tan\beta_1 - \tan\beta_2)} = \frac{\phi}{2}(\tan\beta_1 + \tan\beta_2).
+$$
+With $R = \tfrac12$, $\phi(\tan\beta_1 + \tan\beta_2) = 1 = \phi(\tan\alpha_2 + \tan\beta_2)$, using $\tan\alpha_2 = 1/\phi - \tan\beta_2$. Hence $\tan\beta_1 = \tan\alpha_2$; the same argument at inlet gives $\beta_2 = \alpha_1$. The assumptions are constant axial velocity, constant radius and a repeating stage; with radius change or axial-velocity change the formulas acquire extra terms.
+:::
+
+The second form of $\psi$ in [[#eq-reaction]] is the stage's ideal **characteristic**: for fixed blade exit angles ($\alpha_1$ set by the upstream stator, $\beta_2$ set by the rotor blade), the loading *falls* as the flow coefficient rises. That negative slope matters for stability. If the flow through the machine drops a little, the stage does more work and produces more pressure rise, which pushes the flow back up. Near stall the real characteristic flattens and then turns over, and the stabilising mechanism is lost — the origin of surge, discussed below.
+
+Typical core-compressor values are $\phi \approx 0.4$–$0.7$, $\psi \approx 0.3$–$0.45$ and $R \approx 0.5$–$0.7$. A reaction near one half shares the diffusion equally between rotor and stator, which is why it is a natural choice for a stage whose rows are equally limited by diffusion.
 
 ::: widget plot
-title: The slip factor vs number of blades
-f: 1-3.14159/x
-x: 6,30
-y: 0.7,1
-labels: sigma
-caption: The slip factor against the number of blades for the Stodt slip factor. **The slip factor increases with the number of blades, and the slip factor is the reason the compressor is designed for the slip, not the flow.** **The slip is the reason the compressor is the most fundamental component in gas turbine engines.**
+f: 1 - x*(tan(a1*pi/180) + tan(b2*pi/180)); cos(atan(1/x - tan(a1*pi/180)))/cos(b2*pi/180)
+x: 0.2, 1
+y: 0, 1.2
+sliders: a1=20:0:40:1; b2=45:20:60:1
+labels: \psi\ \text{(stage loading)}; w_2/w_1\ \text{(de Haller)}
+hlines: 0.72
+caption: The ideal stage characteristic of a repeating stage, $\psi = 1 - \phi(\tan\alpha_1 + \tan\beta_2)$, and the rotor de Haller ratio $w_2/w_1$, both against the flow coefficient $\phi$ on the horizontal axis. The horizontal line marks the de Haller limit $0.72$. Lower $\phi$ (throttling the machine) raises the loading but pushes the rotor towards excessive diffusion: find the flow coefficient at which the de Haller curve crosses $0.72$ for $\alpha_1 = 20^\circ$, $\beta_2 = 45^\circ$, then increase $\beta_2$ (less turning) and see the trade between loading and margin.
 :::
 
-::: example Centrifugal compressor calculation {#ex-centrifugal-calc level=3 check="2"}
-A centrifugal compressor has an impeller tip speed of $U _ { 2 } = 4 5 0 \; \text{m/s }$ , 20 blades, an inlet temperature of $T _ { 1 } = 2 8 8 \; \text{K}$ , and a compressor efficiency of $\eta _ { c } = 0 . 8 5$ . Calculate the slip factor, the actual work, and the pressure ratio.
+## How much diffusion a blade row can take
 
-**Slip factor (Stodt):**
+The work of a stage rises with the turning $\tan\beta_1 - \tan\beta_2$, and the turning is limited by the deceleration the blade boundary layers will accept. Two empirical criteria are in everyday use; both summarise cascade experiments and neither is a law.
 
+The oldest is **de Haller's criterion** (de Haller, 1953): the velocity ratio across a blade row should not fall below about $0.72$,
 $$
-\sigma \; = \; 1 - { \frac { \pi } { 2 0 } } \; = \; 1 - 0 . 1 5 7 \; = \; { \bf 0 . 8 4 3 }
+\frac{w_2}{w_1} \ge 0.72 \ \ \text{(rotor)}, \qquad \frac{c_3}{c_2} \ge 0.72 \ \ \text{(stator)}.
+$$ {#eq-dehaller}
+It is a crude rule, because it ignores the blade spacing: a row with closely spaced blades shares the turning among more blades and can diffuse further.
+
+The more refined criterion is the **diffusion factor** of Lieblein, Schwenk and Broderick (NACA RM E53D01, 1953), which estimates the peak velocity on the suction surface and compares it with the exit velocity:
 $$
+D = 1 - \frac{w_2}{w_1} + \frac{\lvert w_{\theta 1} - w_{\theta 2}\rvert}{2\sigma w_1},
+\qquad \sigma = \frac{\text{chord}}{\text{blade pitch}},
+$$ {#eq-diffusion-factor}
+written here for a rotor (use absolute velocities for a stator). Correlation of NACA cascade and rotor data shows profile losses staying low for $D$ up to about $0.45$ at a rotor tip and about $0.55$–$0.6$ at hub and mean radii, and rising steeply beyond. The **solidity** $\sigma$ enters because more blades per unit circumference lower the loading on each.
 
-**Actual work:**
-
-$$
-w \; = \; \sigma \, U _ { 2 } ^ { 2 } \; = \; 0 . 8 4 3 \times 4 5 0 ^ { 2 } \; = \; 0 . 8 4 3 \times 2 0 2 { , } 5 0 0 \; = \; { \bf 1 7 0 { , } 7 0 8 } \ \text{ J/kg } = { \bf 1 7 0 . 7 } \ \text{ kJ/kg }
-$$
-
-**Pressure ratio:**
-
-$$
-{ \frac { p _ { 2 } } { p _ { 1 } } } \; = \; \left( 1 + { \frac { 0 . 8 5 \times 1 7 0 { , } 7 0 8 } { 1 0 0 5 \times 2 8 8 } } \right) ^ { 3 . 5 } \; = \; \left( 1 + { \frac { 1 4 5 { , } 1 0 2 } { 2 8 9 { , } 4 4 0 } } \right) ^ { 3 . 5 } \; = \; ( 1 + 0 . 5 0 1 ) ^ { 3 . 5 } \; = \; 1 . 5 0 1 ^ { 3 . 5 } \; = \; { \bf 4 . 1 4 }
-$$
-
-**The slip factor is 0.843, the actual work is 170.7 kJ/kg, and the pressure ratio is 4.14. The engineer would design the compressor for the compression, because the compression is the reason the compressor is the most fundamental component in gas turbine engines.**
-:::
-
-## 2. Axial compressors
-
-::: definition The degree of reaction {#def-degree-reaction}
-The **degree of reaction** is the fraction of the static enthalpy rise that occurs in the rotor, and the degree of reaction is the reason the engineer can design the gas turbine engine to be efficient.
-
-The **degree of reaction** is:
-
-$$
-R \; = \; { \frac { \Delta h _ { \text{rotor } } } { \Delta h _ { \text{stage } } } } \; = \; { \frac { V _ { x } } { 2 \, U } } \, \left( \tan \beta _ { 3 } - \tan \beta _ { 2 } \right)
-$$
-
-For a **50% reaction stage**:
-
-$$
-R \; = \; 0 . 5 \quad \Rightarrow \quad \beta _ { 2 } = \beta _ { 3 } \quad \text{and} \quad V _ { \theta 2 } = - V _ { \theta 3 }
-$$
-
-The **flow coefficient** is:
-
-$$
-\phi \; = \; { \frac { V _ { x } } { U } }
-$$
-
-The **stage loading coefficient** is:
-
-$$
-\psi \; = \; { \frac { \Delta h _ { 0 } } { U ^ { 2 } } } \; = \; \phi \, ( \tan \beta _ { 2 } - \tan \beta _ { 3 } ) \quad \text{(for } R = 0 . 5 \\text{)}
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Degree of reaction} & R & \text{Rotor enthalpy fraction} & 0 . 3 \text{--} 0 . 7 \\
-\text{Flow coefficient} & \phi & V _ { x } / U & 0 . 4 \text{--} 0 . 7 \\
-\text{Stage loading} & \psi & \Delta h _ { 0 } / U ^ { 2 } & 0 . 3 \text{--} 0 . 6 \\
-\text{Stage pressure ratio} & p _ { \text{stage } } & \text{Per stage} & 1 . 1 \text{--} 1 . 5 \\
-\end{array}
-$$
-
-**The Euler work equation is the reason the compressor is designed for the work, not the power, and the work is the reason the compressor is the most fundamental component in gas turbine engines. The engineer who calculates the compressor without checking the Euler work equation is not calculating the compressor; they are guessing.**
-:::
-
-::: definition The compressor map {#def-compressor-map}
-The **compressor map** is the plot of pressure ratio versus corrected mass flow at constant corrected speed, and the compressor map is the reason the engineer can design the gas turbine engine to be efficient.
-
-The **corrected mass flow** is:
-
-$$
-\dot { m } _ { \text{corr } } \; = \; { \frac { \dot { m } \, { \sqrt { T _ { \text{ref } } / T _ { 1 } } } } { p _ { \text{ref } } / p _ { 1 } } }
-$$
-
-The **corrected speed** is:
-
-$$
-N _ { \text{corr } } \; = \; N \, { \sqrt { \frac { T _ { \text{ref } } } { T _ { 1 } } } }
-$$
-
-The **surge margin** is:
-
-$$
-\text{SM } \; = \; { \frac { \left( { \dot { m } _ { \text{corr } } } \right) _ { \text{op } } - \left( { \dot { m } _ { \text{corr } } } \right) _ { \text{surge } } } { \left( { \dot { m } _ { \text{corr } } } \right) _ { \text{surge } } } } \times 1 0 0 \ \\%
-$$
-
-The **choke line** is the maximum mass flow at each speed:
-
-$$
-\dot { m } _ { \text{choke } } \; = \; \max ( \dot { m } _ { \text{corr } } ) \quad \text{at each } N _ { \text{corr } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Corrected mass flow} & \dot { m } _ { \text{corr } } & \text{Normalized flow} & 1 0 \text{--} 1 0 0 0 \ \text{ kg/s } \\
-\text{Corrected speed} & N _ { \text{corr } } & \text{Normalized speed} & 5 0 \text{--} 1 1 0 \ \% \\
-\text{Surge margin} & \text{SM} & \text{Distance to surge} & 1 0 \text{--} 2 5 \ \\%
-\text{Choke line} & \text{Choke} & \text{Maximum flow} & \text{Design dependent} \\
-\end{array}
-$$
-
-**The slip factor is the reason the compressor is designed for the slip, not the flow, and the slip is the reason the compressor is the most fundamental component in gas turbine engines. The engineer who calculates the compressor without checking the slip factor is not calculating the compressor; they are guessing.**
-:::
-
-::: widget plot
-title: The pressure ratio vs corrected mass flow
-f: 1.5-0.002*x^2; 1.2-0.001*x^2
-x: 10,100
-y: 0.8,1.6
-labels: 100% speed; 80% speed
-caption: The pressure ratio against the corrected mass flow for two corrected speeds. **The pressure ratio decreases with the corrected mass flow, and the pressure ratio is the reason the compressor is designed for the compression, not the expansion.** **The compression is the reason the compressor is the most fundamental component in gas turbine engines.**
-:::
-
-::: example Axial compressor stage calculation {#ex-axial-stage level=3 check="2"}
-An axial compressor stage has a mean blade speed of $U = 3 5 0 \; \text{m/s }$ , a flow coefficient of $\phi = 0 . 5 5$ , a degree of reaction of $R = 0 . 5$ , and a stage loading of $\psi = 0 . 4 5$ . Calculate the tangential velocity and the stage pressure ratio.
-
-**Tangential velocity (from $\psi = \Delta V _ { \theta } / U$ ):**
-
-$$
-\Delta V _ { \theta } \; = \; \psi \, U \; = \; 0 . 4 5 \times 3 5 0 \; = \; { \bf 1 5 7 . 5 } \ \text{ m/s }
-$$
-
-**Work per unit mass:**
-
-$$
-w \; = \; U \, \Delta V _ { \theta } \; = \; 3 5 0 \times 1 5 7 . 5 \; = \; { \bf 5 5 { , } 1 2 5 } \ \text{ J/kg } = { \bf 5 5 . 1 } \ \text{ kJ/kg }
-$$
-
-**Stage pressure ratio** (assuming $T _ { 1 } = 4 0 0 \; \text{K}$ , $\eta _ { c } = 0 . 8 8$ ):
-
-$$
-{ \frac { p _ { 2 } } { p _ { 1 } } } \; = \; \left( 1 + { \frac { 0 . 8 8 \times 5 5 { , } 1 2 5 } { 1 0 0 5 \times 4 0 0 } } \right) ^ { 3 . 5 } \; = \; \left( 1 + { \frac { 4 8 { , } 5 1 0 } { 4 0 2 { , } 0 0 0 } } \right) ^ { 3 . 5 } \; = \; 1 . 1 2 1 ^ { 3 . 5 } \; = \; { \bf 1 . 4 9 }
-$$
-
-**The tangential velocity is 157.5 m/s, the work is 55.1 kJ/kg, and the stage pressure ratio is 1.49. The engineer would design the compressor for the compression, because the compression is the reason the compressor is the most fundamental component in gas turbine engines.**
-:::
-
-::: example Multi-stage axial compressor {#ex-multi-stage-axial level=3 check="2"}
-A 10-stage axial compressor has a stage pressure ratio of 1.35 per stage, a stage efficiency of $\\eta _ { c , \\text{stage } } = 0 . 8 8$ , and an inlet temperature of $T _ { 1 } = 3 0 0 \\; \\text{K}$ . Calculate the overall pressure ratio and the overall temperature rise.
-
-**Overall pressure ratio:**
-
-$$
-{ \frac { p _ { \\text{out } } } { p _ { \\text{in } } } } \\; = \\; ( 1 . 3 5 ) ^ { 1 0 } \\; = \\; { \bf 2 0 . 1 }
-$$
-
-**Overall temperature rise:**
-
-$$
-T _ { \\text{out } } \\; = \\; T _ { \\text{in } } \\times \\left( { \frac { p _ { \\text{out } } } { p _ { \\text{in } } } } \\right) ^ { ( \\gamma - 1 ) / ( \\gamma \\, \\eta _ { c } ) } \\; = \\; 3 0 0 \\times 2 0 . 1 ^ { 0 . 2 8 6 / 0 . 8 8 } \\; = \\; 3 0 0 \\times 2 0 . 1 ^ { 0 . 3 2 5 }
-$$
-
-$$
-T _ { \\text{out } } \\; = \\; 3 0 0 \\times 2 . 6 9 5 \\; = \\; { \bf 8 0 9 } \\; \\text{ K }
-$$
-
-**Overall temperature rise:**
-
-$$
-\\Delta T \\; = \\; 8 0 9 - 3 0 0 \\; = \\; { \bf 5 0 9 } \\; \\text{ K }
-$$
-
-**The overall pressure ratio is 20.1, the outlet temperature is 809 K, and the temperature rise is 509 K. The engineer would design the compressor for the compression, because the compression is the reason the compressor is the most fundamental component in gas turbine engines.**
-:::
-
-::: example Compressor map calculation {#ex-compressor-map-calc level=3 check="2"}
-A compressor operates at a corrected speed of $N _ { \\text{corr } } = 9 5 \\%$ with a corrected mass flow of $\\dot { m } _ { \\text{corr } } = 4 5 \\; \\text{kg/s }$ . The surge line at this speed is at $\\dot { m } _ { \\text{corr , surge } } = 3 6 \\; \\text{kg/s }$ . Calculate the surge margin. If the actual mass flow is $\\dot { m } = 5 0 \\; \\text{kg/s }$ at $T _ { 1 } = 2 8 8 \\; \\text{K}$ and $p _ { 1 } = 1 0 1 . 3 \\; \\text{kPa }$ , calculate the reference temperature and pressure used for the correction.
-
-**Surge margin:**
-
-$$
-\\text{SM } \\; = \\; { \frac { 4 5 - 3 6 } { 3 6 } } \\times 1 0 0 \\; = \\; { \frac { 9 } { 3 6 } } \\times 1 0 0 \\; = \\; { \bf 2 5 } \\; \\%
-$$
-
-**Reference conditions** (standard: $T _ { \\text{ref } } = 2 8 8 . 1 5 \\; \\text{K}$ , $p _ { \\text{ref } } = 1 0 1 . 3 2 5 \\; \\text{kPa }$ ):
-
-$$
-\\dot { m } _ { \\text{corr } } \\; = \\; { \frac { 5 0 \\times { \\sqrt { 2 8 8 . 1 5 / 2 8 8 } } } { 1 0 1 . 3 2 5 / 1 0 1 . 3 } } \\; = \\; { \frac { 5 0 \\times 1 . 0 0 0 } { 1 . 0 0 0 2 5 } } \\; = \\; { \bf 5 0 } \\; \\text{ kg/s }
-$$
-
-**The surge margin is 25%, and the corrected mass flow is 50 kg/s. The engineer would design the compressor for the compression, because the compression is the reason the compressor is the most fundamental component in gas turbine engines.**
-:::
-
-::: exercise Stage loading {#ex-stage-loading level=3 check="2"}
-An axial compressor stage has $U = 3 0 0 \\; \\text{m/s }$ , $\\phi = 0 . 6$ , $\\beta _ { 2 } = 6 0 ^ { \\circ }$ , and $\\beta _ { 3 } = 3 5 ^ { \\circ }$ . Calculate the stage loading coefficient.
-
+::: example An axial stage from the velocity triangles {#ex-axial-stage}
+A repeating stage of a core compressor runs at mean blade speed $U = 350\ \mathrm{m/s}$ with axial velocity $c_x = 175\ \mathrm{m/s}$. The upstream stator delivers the flow at $\alpha_1 = 20^\circ$ and the rotor blades turn the relative flow to $\beta_2 = 45^\circ$. Find the rotor inlet relative angle, the stagnation temperature rise, the loading and reaction, and check the de Haller ratio and the diffusion factor (solidity $\sigma = 1.2$). If the stage isentropic efficiency is $0.90$ and the inlet stagnation temperature is $288\ \mathrm{K}$, what is the stage pressure ratio?
 ::: solution
+**Triangles.** $\phi = 175/350 = 0.500$, so $\tan\beta_1 = 1/\phi - \tan\alpha_1 = 2 - 0.3640 = 1.6360$, $\beta_1 = 58.57^\circ$. At rotor exit, $\tan\alpha_2 = 1/\phi - \tan\beta_2 = 2 - 1 = 1$, so $\alpha_2 = 45.00^\circ$.
+
+**Work.** From [[#eq-euler-axial]],
 $$
-\\psi \\; = \\; \phi \\, ( \\tan \\beta _ { 2 } - \\tan \\beta _ { 3 } ) \\; = \\; 0 . 6 \\times ( \\tan 6 0 ^ { \\circ } - \\tan 3 5 ^ { \\circ } ) \\; = \\; 0 . 6 \\times ( 1 . 7 3 2 - 0 . 7 0 0 ) \\; = \\; 0 . 6 \\times 1 . 0 3 2 \\; = \\; { \bf 0 . 6 1 9 }
+\Delta h_t = U c_x(\tan\beta_1 - \tan\beta_2) = 350 \times 175 \times (1.6360 - 1.0000) = 38.96\ \mathrm{kJ/kg},
+\qquad
+\Delta T_t = \frac{38\,960}{1005} = 38.8\ \mathrm{K}.
 $$
 
-**The stage loading coefficient is 0.619.**
+**Coefficients.** $\psi = 38\,960/350^2 = 0.318$ and $R = \tfrac{1}{2}(0.5)(1.6360 + 1.0000) = 0.659$.
+
+**Diffusion.** $w_1 = c_x/\cos\beta_1 = 175/0.5216 = 335.6\ \mathrm{m/s}$ and $w_2 = 175/\cos 45^\circ = 247.5\ \mathrm{m/s}$, so $w_2/w_1 = 0.738$ — just inside de Haller's limit. The stator has $c_3/c_2 = \cos\alpha_2/\cos\alpha_1 = 0.7071/0.9397 = 0.752$, also acceptable. The diffusion factor is
+$$
+D = 1 - 0.738 + \frac{175 \times 0.636}{2 \times 1.2 \times 335.6} = 0.262 + 0.138 = 0.401,
+$$
+comfortably below $0.45$.
+
+**Pressure ratio.** With $T_{t1} = 288\ \mathrm{K}$,
+$$
+\frac{p_{t3}}{p_{t1}} = \left(1 + \eta_s\frac{\Delta T_t}{T_{t1}}\right)^{\gamma/(\gamma-1)} = \left(1 + 0.90 \times \frac{38.76}{288}\right)^{3.5} = 1.49.
+$$
+
+**Sanity check.** A loading of $0.32$ and a stage pressure ratio of $1.5$ are typical of a front core stage. The pressure ratio of later stages with the same temperature rise will be smaller, because the same $\Delta T_t$ is a smaller fraction of a higher $T_t$. Real stages also do slightly less work than the mean-line triangles predict, because the axial velocity profile peaks at mid-span as end-wall boundary layers thicken; designers multiply by a **work-done factor** of about $0.98$ for the first stages, falling towards $0.85$ in a long compressor (Howell's empirical correction).
 :::
+:::
+
+::: warning Mixing up the angle conventions
+Textbooks disagree on whether $\beta$ is measured from the axial or the tangential direction, and on its sign. With the convention of [[#def-velocity-triangles]], $\tan\alpha + \tan\beta = U/c_x$ at every station, and in a compressor rotor $\beta_1 > \beta_2$ (the relative flow is turned *towards* the axis). If your computed work comes out negative, or the reaction comes out above 1, you have almost certainly mixed a tangential-angle formula with axial-angle data or lost a sign on $w_\theta$. Draw the triangle — blade speed horizontal, axial velocity vertical — before writing any equation, and check that $w_\theta + c_\theta = U$.
+:::
+
+## Isentropic and polytropic efficiency
+
+An overall pressure ratio of 40 is reached by stacking many stages, and the efficiency of the stack is not the efficiency of a stage. The reason is thermodynamic, not aerodynamic: the losses of an early stage heat the gas, and hotter gas needs more work to compress through the next pressure ratio — the **preheat effect**. The *polytropic* efficiency removes this effect and describes the quality of the blading itself.
+
+::: definition Isentropic and polytropic compressor efficiency {#def-polytropic}
+The **isentropic efficiency** of a compressor is the ratio of the ideal (isentropic) work to the actual work between the same stagnation pressures,
+$$
+\eta_c = \frac{h_{t3s} - h_{t2}}{h_{t3} - h_{t2}} = \frac{T_{t3s} - T_{t2}}{T_{t3} - T_{t2}} \quad\text{(perfect gas)}.
+$$
+The **polytropic** (small-stage) efficiency $\eta_p$ is the isentropic efficiency of an infinitesimal compression step, $\eta_p = \mathrm{d}h_{ts}/\mathrm{d}h_t$, assumed constant through the machine.
+:::
+
+::: proposition Isentropic efficiency from polytropic efficiency {#prop-polytropic}
+For a perfect gas with constant $c_p$ and constant $\eta_p$,
+$$
+\frac{T_{t3}}{T_{t2}} = \pi_c^{(\gamma-1)/(\gamma\eta_p)},
+\qquad
+\eta_c = \frac{\pi_c^{(\gamma-1)/\gamma} - 1}{\pi_c^{(\gamma-1)/(\gamma\eta_p)} - 1}.
+$$ {#eq-polytropic}
+For $\pi_c > 1$ and $\eta_p < 1$, $\eta_c < \eta_p$, and $\eta_c$ falls as $\pi_c$ rises.
+:::
+
+::: proof
+For an isentropic step, the Gibbs relation $T\,\mathrm{d}s = \mathrm{d}h - v\,\mathrm{d}p$ applied to stagnation states gives $\mathrm{d}h_{ts} = v_t\,\mathrm{d}p_t = (R T_t/p_t)\,\mathrm{d}p_t$. The actual enthalpy change in the step is $\mathrm{d}h_t = \mathrm{d}h_{ts}/\eta_p = c_p\,\mathrm{d}T_t$. Hence
+$$
+c_p\,\mathrm{d}T_t = \frac{R T_t}{\eta_p}\frac{\mathrm{d}p_t}{p_t}
+\quad\Longrightarrow\quad
+\frac{\mathrm{d}T_t}{T_t} = \frac{\gamma-1}{\gamma\eta_p}\frac{\mathrm{d}p_t}{p_t},
+$$
+using $R/c_p = (\gamma-1)/\gamma$. Integrating from station 2 to station 3 with $\eta_p$ constant gives $T_{t3}/T_{t2} = \pi_c^{(\gamma-1)/(\gamma\eta_p)}$. The isentropic temperature ratio is $\pi_c^{(\gamma-1)/\gamma}$, and substituting both into the definition of $\eta_c$ gives [[#eq-polytropic]].
+
+To see that $\eta_c < \eta_p$, write $a = (\gamma-1)/\gamma\cdot\ln\pi_c > 0$, so $\eta_c = (e^{a} - 1)/(e^{a/\eta_p} - 1)$. The function $g(x) = (e^{x}-1)/x$ is increasing for $x > 0$, and $a/\eta_p > a$, so $(e^{a/\eta_p}-1)/(a/\eta_p) > (e^{a}-1)/a$, which rearranges to $\eta_c < \eta_p$. As $\pi_c \to 1$, $a \to 0$ and $\eta_c \to \eta_p$: a single small stage has isentropic efficiency equal to its polytropic efficiency.
+:::
+
+::: widget plot
+f: (x^(0.4/1.4) - 1)/(x^(0.4/(1.4*ep)) - 1); ep + 0*x
+x: 1.01, 60
+y: 0.75, 1
+sliders: ep=0.9:0.8:0.95:0.005
+labels: \eta_c\ \text{(isentropic)}; \eta_p\ \text{(polytropic)}
+caption: Isentropic efficiency of a compressor against overall pressure ratio $\pi_c$ for a fixed polytropic efficiency $\eta_p$ (the slider). At $\pi_c \to 1$ the two coincide; at $\pi_c = 40$ and $\eta_p = 0.90$ the isentropic efficiency is only about $0.84$. Use this when comparing compressors of different pressure ratio: quote $\eta_p$, which measures blading quality, not $\eta_c$, which penalises high pressure ratio.
+:::
+
+::: example Overall efficiency of a high-pressure-ratio compressor {#ex-polytropic}
+A turbofan core compressor (booster plus high-pressure compressor) has overall pressure ratio $\pi_c = 40$ and polytropic efficiency $\eta_p = 0.90$, with $T_{t2} = 288\ \mathrm{K}$. Find the isentropic efficiency, the delivery temperature and the specific work. If the stages each produce the temperature rise of [[#ex-axial-stage]], about how many stages are needed?
+::: solution
+The exponents are $(\gamma - 1)/\gamma = 0.2857$ and $0.2857/0.90 = 0.3175$. Then
+$$
+\frac{T_{t3}}{T_{t2}} = 40^{0.3175} = 3.225, \qquad T_{t3} = 928.9\ \mathrm{K},
+$$
+while the isentropic temperature ratio is $40^{0.2857} = 2.868$. Hence
+$$
+\eta_c = \frac{2.868 - 1}{3.225 - 1} = 0.840,
+\qquad
+\Delta h_t = c_p(T_{t3} - T_{t2}) = 1005 \times 640.9 = 644\ \mathrm{kJ/kg}.
+$$
+With $\Delta T_t = 38.8\ \mathrm{K}$ per stage, $640.9/38.8 = 9.9$, so about ten stages — in practice more, because the work-done factor reduces the delivered rise and the rear stages, with short blades and thick end-wall boundary layers, are loaded more lightly.
+
+**Sanity check.** A delivery temperature near $930\ \mathrm{K}$ at take-off is typical of a modern engine and is one of the constraints on further raising pressure ratio: the last-stage discs and the combustor inlet see this temperature. An efficiency difference of six points between $\eta_p$ and $\eta_c$ is precisely the preheat penalty of a long compressor.
+:::
+:::
+
+## Centrifugal compressors
+
+In a centrifugal compressor the flow leaves the impeller radially at the tip radius $r_2$, where the blade speed is $U_2$. With no inlet swirl ($c_{\theta 1} = 0$) the Euler equation reduces to $\Delta h_t = U_2 c_{\theta 2}$. If the fluid left the impeller exactly in the direction of radial blades, $c_{\theta 2}$ would equal $U_2$ and the work would be $U_2^2$. It does not: the pressure difference between the faces of each blade, which is what transmits the torque, also sets up a relative circulation in each passage, and the flow leaves with less swirl than the blades would impose. This is **slip**.
+
+::: definition Slip factor and power input factor {#def-slip}
+The **slip factor** is the ratio of the actual exit swirl to the swirl that perfect guidance would give. For radial-tipped blades,
+$$
+\sigma_s = \frac{c_{\theta 2}}{U_2},
+$$
+and for blades swept back by the angle $\beta_{2b}$ from radial it is defined with respect to the blade-congruent swirl. The **power input factor** $\psi_p \ge 1$ accounts for the extra work absorbed by disc friction and windage, which heats the gas without adding swirl. The stagnation temperature rise of an impeller with radial blades and no inlet swirl is
+$$
+\Delta T_t = \frac{\psi_p\,\sigma_s U_2^2}{c_p}.
+$$ {#eq-centrifugal}
+:::
+
+Slip factors are not derived from first principles in practice but taken from correlations. For radial blades, the formula of Stanitz (1952),
+$$
+\sigma_s \approx 1 - \frac{0.63\pi}{Z},
+$$ {#eq-stanitz}
+with $Z$ the number of blades, fits the data well; for backswept impellers the correlation of Wiesner (1967),
+$$
+\sigma_s \approx 1 - \frac{\sqrt{\cos\beta_{2b}}}{Z^{0.7}}, \qquad c_{\theta 2} = U_2\left(\sigma_s - \phi_2\tan\beta_{2b}\right),\quad \phi_2 = \frac{c_{r2}}{U_2},
+$$ {#eq-wiesner}
+is the usual choice. Both are accurate to a few per cent for conventional blade numbers (about 15 to 30) and unreliable for very few blades.
+
+::: widget plot
+f: 1 - 0.63*pi/x; 1 - sqrt(cos(b*pi/180))/x^0.7
+x: 6, 40
+y: 0.6, 1
+sliders: b=30:0:50:1
+labels: \text{Stanitz (radial blades)}; \text{Wiesner}, \ \beta_{2b}\ \text{slider}
+caption: Slip factor against the number of impeller blades $Z$. Adding blades reduces slip (the flow is better guided) but adds blockage and friction at the impeller eye, so designs settle at 15–30 blades, often with splitter blades that start part-way along the passage. With $\beta_{2b} = 0$ the two correlations nearly agree; increase the backsweep and Wiesner's slip factor rises slightly — but the work, $U_2 c_{\theta 2}$, falls, because the blades themselves now turn the flow backwards.
+:::
+
+Backswept blades are used in almost all modern centrifugal compressors despite their lower work per unit $U_2^2$: they reduce the absolute exit velocity (and so the diffuser's task), widen the stable flow range because the characteristic slopes downwards, and lower the impeller-exit Mach number. The price is a higher tip speed for the same pressure ratio, and impellers of titanium alloy running at $U_2 = 500$–$600\ \mathrm{m/s}$ are common.
+
+::: example A radial-bladed centrifugal compressor {#ex-centrifugal}
+An impeller of tip diameter $0.50\ \mathrm{m}$ runs at $20\,000\ \mathrm{rpm}$ with $19$ radial blades, power input factor $1.04$ and no inlet swirl. Inlet stagnation temperature is $288.15\ \mathrm{K}$ and the compressor's isentropic efficiency is $0.80$. Find the tip speed, the stagnation temperature rise and the pressure ratio, and the shaft power for $5.0\ \mathrm{kg/s}$.
+::: solution
+**Tip speed.** $U_2 = \pi D_2 N/60 = \pi \times 0.50 \times 20\,000/60 = 523.6\ \mathrm{m/s}$.
+
+**Slip.** By [[#eq-stanitz]], $\sigma_s = 1 - 0.63\pi/19 = 0.896$.
+
+**Temperature rise.** From [[#eq-centrifugal]],
+$$
+\Delta T_t = \frac{1.04 \times 0.896 \times 523.6^2}{1005} = 254.2\ \mathrm{K}.
+$$
+
+**Pressure ratio.**
+$$
+\pi_c = \left(1 + 0.80\times\frac{254.2}{288.15}\right)^{3.5} = 6.48.
+$$
+
+**Power.** $\dot W = \dot m c_p\Delta T_t = 5.0 \times 1005 \times 254.2 = 1.28\ \mathrm{MW}$.
+
+**Sanity check.** A single stage at 6.5 is at the upper end of what is achieved and implies a supersonic absolute velocity leaving the impeller ($c_{\theta 2} = 0.896 \times 523.6 = 469\ \mathrm{m/s}$, while the exit static temperature is at most $542 - 469^2/2010 \approx 433\ \mathrm{K}$, where the speed of sound is $\sqrt{1.4 \times 287 \times 433} \approx 417\ \mathrm{m/s}$), which requires a carefully designed vaned diffuser. A radial-blade impeller at this tip speed is plausible for a small turboshaft; a backswept design would need a higher speed for the same ratio.
+:::
+:::
+
+## Compressor maps, stall and surge
+
+A compressor's performance is plotted on a **map**: pressure ratio against mass flow, with lines of constant rotational speed and contours of efficiency. To make one map serve all inlet conditions, the variables are made dimensionless — or, as the industry does, *corrected* to standard sea-level conditions.
+
+::: definition Corrected mass flow and corrected speed {#def-corrected}
+With $\theta = T_{t2}/T_{\mathrm{ref}}$ and $\delta = p_{t2}/p_{\mathrm{ref}}$, where $T_{\mathrm{ref}} = 288.15\ \mathrm{K}$ and $p_{\mathrm{ref}} = 101.325\ \mathrm{kPa}$ (ISA sea level), the **corrected mass flow** and **corrected speed** are
+$$
+\dot m_c = \frac{\dot m\sqrt{\theta}}{\delta}, \qquad N_c = \frac{N}{\sqrt{\theta}}.
+$$
+For a given machine and gas, $\pi_c$ and $\eta_c$ are functions of $\dot m_c$ and $N_c$ alone (neglecting Reynolds-number effects).
+:::
+
+The justification is dimensional analysis: the non-dimensional groups governing a compressor are $\dot m\sqrt{RT_t}/(D^2 p_t)$, $ND/\sqrt{RT_t}$, the pressure ratio and the efficiency, with $\gamma$ and the Reynolds number as further parameters. Fixing the machine (its diameter $D$) and the gas ($R$, $\gamma$) and ignoring Reynolds number, the two independent groups reduce to the corrected quantities. Corrected mass flow per unit area is directly related to the axial Mach number, and corrected speed to the blade Mach number — so equal corrected values mean equal velocity triangles.
+
+On each speed line the pressure ratio rises as the flow is throttled, until the line ends at the **surge line**. To the right, the speed lines become vertical where the flow **chokes** — some blade row reaches sonic conditions at its throat and no more flow can pass. The engine runs along an **operating line** fixed by the turbine and nozzle (see [[propulsion/turbines]]), and the **surge margin** is the distance between operating line and surge line, commonly defined as
+$$
+\mathrm{SM} = \frac{\pi_{c,\text{surge}} - \pi_{c,\text{op}}}{\pi_{c,\text{op}}}
+$$
+at constant corrected mass flow (definitions vary between companies; always say which you use). Civil engines are designed with surge margins of roughly 15–25 % to cover transients, inlet distortion and deterioration.
+
+Two kinds of instability lie beyond the surge line. **Rotating stall** is a local phenomenon: one or more cells of stalled, low-flow passages propagate around the annulus at a fraction (typically 30–70 %) of rotor speed, because the flow diverted around a stalled cell increases the incidence on the blades ahead of it and unloads those behind. The average flow is nearly steady but blade vibration can be destructive. **Surge** is a system instability: the compressor can no longer sustain the pressure in the downstream volume (combustor and ducts), the flow through the whole machine collapses or even reverses, the volume empties, and the cycle repeats at a few hertz with loud bangs and, in an engine, flames from the inlet. Its cause is the turnover of the characteristic described after [[#prop-reaction]]: once $\mathrm{d}\pi_c/\mathrm{d}\dot m$ becomes positive, a small flow reduction lowers the pressure rise and the reduction grows.
+
+A high-pressure-ratio compressor is hard to run off its design speed for a simple reason. At design, the density rises by a factor of about 12 through a 40:1 compressor and the annulus area shrinks accordingly. At low speed, the pressure rise is much smaller, the density rise falls short, and the rear stages — sized for dense air — must pass a larger volume flow: they run at high $\phi$ and choke, while the front stages run at low $\phi$ and stall. Three cures are used, often together:
+
+- **Variable stator vanes.** The inlet guide vanes and first few stator rows are rotated as speed falls, closing to add prewhirl and lower the front-stage incidence.
+- **Bleed valves.** Air is dumped from the middle of the compressor at low speed, raising the front-stage flow coefficient and unloading the rear.
+- **Multiple spools.** The compressor is split into low- and high-pressure sections on separate shafts, each driven by its own turbine, so that each can find its own speed. Three-spool engines carry the idea further.
+
+::: example Corrected flow at cruise {#ex-corrected}
+A compressor passes $100\ \mathrm{kg/s}$ at $10\,000\ \mathrm{rpm}$ in sea-level static ISA conditions. At cruise, at $11\ \mathrm{km}$ in ISA ($T = 216.65\ \mathrm{K}$, $p = 22.63\ \mathrm{kPa}$) and Mach 0.80, the engine runs at the same corrected speed and corrected flow (the same point on the map). Assuming an ideal inlet, what are the actual mass flow and the physical rotational speed?
+::: solution
+Ideal inlet: stagnation values equal free-stream stagnation values,
+$$
+T_{t2} = 216.65\,(1 + 0.2 \times 0.8^2) = 244.4\ \mathrm{K},
+\qquad
+p_{t2} = 22.63\,(1.128)^{3.5} = 34.50\ \mathrm{kPa}.
+$$
+Then $\theta = 244.4/288.15 = 0.848$ and $\delta = 34.50/101.325 = 0.340$. Same corrected flow:
+$$
+\dot m = \frac{\dot m_c\,\delta}{\sqrt{\theta}} = \frac{100 \times 0.3405}{\sqrt{0.848}} = 37.0\ \mathrm{kg/s},
+\qquad
+N = N_c\sqrt{\theta} = 10\,000\sqrt{0.848} = 9\,210\ \mathrm{rpm}.
+$$
+**Sanity check.** The engine swallows only about a third of its sea-level mass flow at cruise because the air is a third as dense, yet the compressor is aerodynamically doing exactly the same thing — same triangles, same pressure ratio — while spinning about 8 % slower in the cold air. That is why a cruise thrust is a small fraction of take-off thrust even at similar corrected settings.
+:::
+:::
+
+::: quiz
+A compressor stage is throttled so that its flow coefficient falls while the blade angles stay fixed. What happens, according to the ideal stage characteristic?
+- [ ] The loading coefficient falls and the de Haller ratio rises.
+- [x] The loading coefficient rises and the rotor de Haller ratio falls, moving the stage towards stall.
+- [ ] Neither changes, because the blade angles are fixed.
+- [ ] The degree of reaction must stay at one half.
+::: solution
+With fixed $\alpha_1$ and $\beta_2$, $\psi = 1 - \phi(\tan\alpha_1 + \tan\beta_2)$ rises as $\phi$ falls. The inlet relative angle $\beta_1$ grows (higher incidence), $w_1$ grows relative to $w_2$, and the ratio $w_2/w_1$ falls towards the de Haller limit — the stage approaches stall. Reaction also changes, since $\tan\beta_1$ changes.
+:::
+:::
+
+::: history
+Charles **Parsons**, who built the first practical reaction steam turbine in 1884, also built axial-flow compressors in the first years of the twentieth century by running turbine-style blading in reverse; with blades that were not designed as aerofoils, their efficiencies were poor and the centrifugal compressor dominated early gas-turbine work. In July 1926 A. A. **Griffith** of the Royal Aircraft Establishment wrote *An Aerodynamic Theory of Turbine Design* (RAE Report H1111), arguing that existing blades were in effect flying stalled and that compressor blades should be designed as aerofoils; RAE rig tests in the following years confirmed that axial stages could be made efficient. Frank **Whittle**'s first engine, which ran on 12 April 1937, used a single-stage double-sided centrifugal compressor, as did the W.1 that flew in the Gloster E.28/39 in May 1941. In the 1950s NACA's systematic cascade programme and the diffusion factor of Lieblein, Schwenk and Broderick (1953) gave designers the empirical loading limits used, in refined form, ever since.
+:::
+
+::: summary
+- The **Euler equation** $\Delta h_t = U_2 c_{\theta 2} - U_1 c_{\theta 1}$ is an exact angular-momentum result: work equals the change in blade speed times swirl.
+- **Velocity triangles** link absolute and relative frames through $\mathbf{c} = \mathbf{w} + \mathbf{U}$; in an axial stage $\Delta h_t = U c_x(\tan\beta_1 - \tan\beta_2)$.
+- **Flow coefficient** $\phi$, **loading** $\psi$ and **reaction** $R = \tfrac{\phi}{2}(\tan\beta_1 + \tan\beta_2)$ define the stage shape; typical core values are $\phi \approx 0.5$, $\psi \approx 0.35$, $R \approx 0.5$–$0.7$.
+- Compressor blade rows **diffuse** the flow; de Haller's ratio ($\ge 0.72$) and Lieblein's **diffusion factor** ($D \lesssim 0.45$–$0.6$) are empirical limits that set the work per stage and hence the number of stages.
+- **Polytropic efficiency** measures blading quality; the overall isentropic efficiency falls below it as pressure ratio rises because of preheat.
+- A **centrifugal** stage gets most of its work from $U_2^2$, reduced by **slip** (Stanitz, Wiesner correlations) and increased by disc friction.
+- **Maps** in corrected flow and speed bound the operating range by **surge** and **choke**; variable stators, bleed and multiple spools keep high-pressure-ratio compressors stable at part speed.
 :::
 
 ## Exercises
 
-::: exercise Slip factor {#ex-slip-factor level=3 check="2"}
-A centrifugal compressor has 24 blades. Calculate the Stodt slip factor.
-
+::: exercise {level=1 check="182.25"}
+A centrifugal impeller has tip speed $U_2 = 450\ \mathrm{m/s}$ and the flow leaves it with swirl $c_{\theta 2} = 0.90\,U_2$; there is no inlet swirl. What is the specific work input? (Enter the work in kJ/kg.)
 ::: solution
-$$
-\sigma \; = \; 1 - { \frac { \pi } { 2 4 } } \; = \; 1 - 0 . 1 3 1 \; = \; { \bf 0 . 8 6 9 }
-$$
-
-**The Stodt slip factor is 0.869.**
+With $c_{\theta 1} = 0$, [[#eq-euler]] gives $\Delta h_t = U_2 c_{\theta 2} = 450 \times 405 = 182\,250\ \mathrm{J/kg} = 182.25\ \mathrm{kJ/kg}$. The corresponding temperature rise is $182\,250/1005 = 181\ \mathrm{K}$.
 :::
 :::
 
-::: exercise Pressure ratio {#ex-centrifugal-pressure-ratio level=3 check="2"}
-A centrifugal compressor has a tip speed of $U _ { 2 } = 4 0 0 \; \text{m/s }$ , a slip factor of $\sigma = 0 . 9$ , an inlet temperature of $T _ { 1 } = 3 0 0 \; \text{K}$ , and a compressor efficiency of $\eta _ { c } = 0 . 8 2$ . Calculate the pressure ratio.
-
+::: exercise {level=1 check="0.864"}
+A compressor has polytropic efficiency $0.90$ and pressure ratio $10$. What is its isentropic efficiency? (Enter the efficiency as a fraction, rounded to three significant figures.)
 ::: solution
-$$
-{ \frac { p _ { 2 } } { p _ { 1 } } } \; = \; \left( 1 + { \frac { 0 . 8 2 \times 0 . 9 \times 4 0 0 ^ { 2 } } { 1 0 0 5 \times 3 0 0 } } \right) ^ { 3 . 5 } \; = \; \left( 1 + { \frac { 1 1 8 { , } 0 8 0 } { 3 0 1 { , } 5 0 0 } } \right) ^ { 3 . 5 } \; = \; 1 . 3 9 2 ^ { 3 . 5 } \; = \; { \bf 3 . 2 4 }
-$$
-
-**The pressure ratio is 3.24.**
+$10^{0.2857} = 1.931$ and $10^{0.2857/0.9} = 10^{0.3175} = 2.077$. So $\eta_c = 0.931/1.077 = 0.864$. Compare $0.840$ at $\pi_c = 40$ in [[#ex-polytropic]].
 :::
 :::
 
-::: exercise Degree of reaction {#ex-degree-reaction-calc level=3 check="2"}
-An axial compressor stage has $V _ { x } = 1 8 0 \; \text{m/s }$ , $U = 3 2 0 \; \text{m/s }$ , $\beta _ { 2 } = 5 5 ^ { \circ }$ , and $\beta _ { 3 } = 3 0 ^ { \circ }$ . Calculate the degree of reaction.
-
+::: exercise {level=1 check="75.5"}
+An engine on a test bed at altitude conditions draws $40\ \mathrm{kg/s}$ with compressor-face stagnation conditions $T_{t2} = 250\ \mathrm{K}$, $p_{t2} = 50\ \mathrm{kPa}$. What is the corrected mass flow? (Enter it in kg/s, rounded to three significant figures.)
 ::: solution
-$$
-R \; = \; { \frac { V _ { x } } { 2 \, U } } \, ( \tan \beta _ { 3 } - \tan \beta _ { 2 } ) \; = \; { \frac { 1 8 0 } { 2 \times 3 2 0 } } \, ( \tan 3 0 ^ { \circ } - \tan 5 5 ^ { \circ } ) \; = \; 0 . 2 8 1 \times ( 0 . 5 7 7 - 1 . 4 2 8 )
-$$
-
-$$
-R \; = \; 0 . 2 8 1 \times ( - 0 . 8 5 1 ) \; = \; { \bf - 0 . 2 3 9 }
-$$
-
-**The degree of reaction is -0.239 (negative, indicating a reaction stage with diffusion in the stator).**
+$\theta = 250/288.15 = 0.8676$, $\delta = 50/101.325 = 0.4935$. $\dot m_c = 40\sqrt{0.8676}/0.4935 = 75.5\ \mathrm{kg/s}$. The corrected flow is larger than the actual flow because the air is less dense than the reference.
 :::
 :::
 
-::: exercise Flow coefficient {#ex-flow-coefficient level=3 check="2"}
-An axial compressor stage has $V _ { x } = 1 6 0 \; \text{m/s }$ and $U = 2 8 0 \; \text{m/s }$ . Calculate the flow coefficient.
-
+::: exercise {level=2 check="12"}
+A compressor of pressure ratio $20$ and polytropic efficiency $0.90$ takes in air at $T_{t2} = 288\ \mathrm{K}$. Each stage can deliver at most a $40\ \mathrm{K}$ stagnation temperature rise. What is the minimum whole number of stages? (Enter the number of stages.)
 ::: solution
-$$
-\phi \; = \; { \frac { V _ { x } } { U } } \; = \; { \frac { 1 6 0 } { 2 8 0 } } \; = \; { \bf 0 . 5 7 1 }
-$$
-
-**The flow coefficient is 0.571.**
+$T_{t3} = 288 \times 20^{0.3175} = 745.4\ \mathrm{K}$, so the total rise is $457.4\ \mathrm{K}$. Dividing by $40\ \mathrm{K}$ gives $11.4$, so at least $12$ stages. With a work-done factor below one, a real design would need one or two more.
 :::
 :::
 
-::: exercise Surge margin {#ex-surge-margin level=3 check="2"}
-A compressor operates at a corrected mass flow of $\dot { m } _ { \text{corr , op } } = 2 5 \; \text{kg/s }$ and the surge line is at $\dot { m } _ { \text{corr , surge } } = 2 0 \; \text{kg/s }$ . Calculate the surge margin.
-
+::: exercise {level=2 check="0.678"}
+A designer proposes a 50 % reaction stage with $\phi = 0.50$ and $\psi = 0.40$. Find the relative flow angles $\beta_1$ and $\beta_2$ and the rotor de Haller ratio. Is the stage acceptable? (Enter $w_2/w_1$, rounded to three significant figures.)
+::: hint
+Solve $R = \tfrac{\phi}{2}(\tan\beta_1 + \tan\beta_2)$ and $\psi = \phi(\tan\beta_1 - \tan\beta_2)$ simultaneously.
+:::
 ::: solution
-$$
-\text{SM } \; = \; { \frac { 2 5 - 2 0 } { 2 0 } } \times 1 0 0 \; = \; { \frac { 5 } { 2 0 } } \times 1 0 0 \; = \; { \bf 2 5 } \ \\%
-$$
-
-**The surge margin is 25%.**
+Adding and subtracting: $\tan\beta_1 = (R + \psi/2)/\phi = 0.70/0.50 = 1.40$ and $\tan\beta_2 = (R - \psi/2)/\phi = 0.30/0.50 = 0.60$. So $\beta_1 = 54.46^\circ$, $\beta_2 = 30.96^\circ$. With constant $c_x$, $w_2/w_1 = \cos\beta_1/\cos\beta_2 = 0.5812/0.8575 = 0.678$. This is below $0.72$: the rotor is over-diffused. Either reduce the loading, raise the flow coefficient, or (since de Haller ignores solidity) check the diffusion factor with a high solidity before rejecting it.
 :::
 :::
 
-::: exercise Derivation: the Euler work equation {#ex-derive-euler level=4 check="2"}
-Show that the Euler work equation for a centrifugal compressor with no inlet swirl is $w = U _ { 2 } \, V _ { \theta 2 }$ . Write the expression for the ideal work.
-
+::: exercise {level=2 check="4.18"}
+A backswept centrifugal impeller has $Z = 20$ blades swept back $\beta_{2b} = 30^\circ$, tip speed $U_2 = 500\ \mathrm{m/s}$, exit flow coefficient $\phi_2 = c_{r2}/U_2 = 0.30$ and no inlet swirl. Using Wiesner's correlation, find the exit swirl, the specific work and the pressure ratio for $T_{t1} = 288.15\ \mathrm{K}$ and $\eta_c = 0.82$ (take the power input factor as $1$). (Enter the pressure ratio, rounded to three significant figures.)
 ::: solution
-The **Euler work equation** is derived from the angular momentum equation:
-
-$$
-w \; = \; U _ { 2 } \, V _ { \theta 2 } - U _ { 1 } \, V _ { \theta 1 }
-$$
-
-For **no inlet swirl** $( V _ { \theta 1 } = 0 )$ :
-
-$$
-w \; = \; U _ { 2 } \, V _ { \theta 2 }
-$$
-
-For **no slip** $( V _ { \theta 2 } = U _ { 2 } )$ :
-
-$$
-w _ { \text{ideal } } \; = \; U _ { 2 } ^ { 2 }
-$$
-
-The **actual work** (with slip factor $\sigma$ ) is:
-
-$$
-w _ { \text{actual } } \; = \; \sigma \, U _ { 2 } ^ { 2 }
-$$
-
-**The pressure ratio is the reason the compressor is designed for the compression, not the expansion, and the compression is the reason the compressor is the most fundamental component in gas turbine engines.** $\blacksquare$
+$\sigma_s = 1 - \sqrt{\cos 30^\circ}/20^{0.7} = 1 - 0.9306/8.141 = 0.886$. Then $c_{\theta 2} = 500(0.886 - 0.30\tan 30^\circ) = 500(0.886 - 0.173) = 356.2\ \mathrm{m/s}$. Work $= U_2 c_{\theta 2} = 178.1\ \mathrm{kJ/kg}$, $\Delta T_t = 177.2\ \mathrm{K}$, and $\pi_c = (1 + 0.82 \times 177.2/288.15)^{3.5} = 4.18$. A radial-bladed impeller at the same speed would give roughly $\sigma_s U_2^2 = 0.90 \times 500^2 = 225\ \mathrm{kJ/kg}$: backsweep costs work but buys stability and a lower exit Mach number.
 :::
 :::
 
-::: exercise Derivation: the degree of reaction {#ex-derive-reaction level=4 check="2"}
-Show that the degree of reaction for an axial compressor stage is $R = ( V _ { x } / 2 U ) \, ( \tan \beta _ { 3 } - \tan \beta _ { 2 } )$ . Write the expression for the 50% reaction stage.
-
+::: exercise {level=3}
+Starting from [[#eq-polytropic]], show that for a compressor of small pressure ratio, $\pi_c = 1 + \varepsilon$ with $\varepsilon \ll 1$, the isentropic efficiency is
+$$
+\eta_c \approx \eta_p\left[1 - \frac{\gamma-1}{2\gamma}\left(\frac{1}{\eta_p} - 1\right)\varepsilon\right],
+$$
+and explain physically why the correction is negative.
 ::: solution
-The **degree of reaction** is defined as:
-
+Let $k = (\gamma-1)/\gamma$ and $a = k\ln(1+\varepsilon) \approx k\varepsilon$. Expand $e^{x} - 1 = x(1 + x/2 + \dots)$. Then
 $$
-R \; = \; { \frac { \Delta h _ { \text{rotor } } } { \Delta h _ { \text{stage } } } } \; = \; { \frac { h _ { 3 } - h _ { 2 } } { h _ { 0 3 } - h _ { 0 1 } } }
+\eta_c = \frac{a(1 + a/2)}{(a/\eta_p)(1 + a/(2\eta_p))} = \eta_p\frac{1 + a/2}{1 + a/(2\eta_p)} \approx \eta_p\left[1 + \frac{a}{2}\left(1 - \frac{1}{\eta_p}\right)\right],
 $$
-
-For a **50% reaction stage**:
-
-$$
-R \; = \; 0 . 5 \quad \Rightarrow \quad \beta _ { 2 } = \beta _ { 3 } \quad \text{and} \quad V _ { \theta 2 } = - V _ { \theta 3 }
-$$
-
-The **enthalpy rise in the rotor** is:
-
-$$
-\Delta h _ { \text{rotor } } \; = \; { \frac { 1 } { 2 } } \, ( W _ { 2 } ^ { 2 } - W _ { 3 } ^ { 2 } )
-$$
-
-Using the **velocity triangles**:
-
-$$
-W _ { 2 } ^ { 2 } \; = \; V _ { x } ^ { 2 } + ( U - V _ { \theta 2 } ) ^ { 2 } \qquad W _ { 3 } ^ { 2 } \; = \; V _ { x } ^ { 2 } + ( U - V _ { \theta 3 } ) ^ { 2 }
-$$
-
-Substituting and simplifying:
-
-$$
-R \; = \; { \frac { V _ { x } } { 2 \, U } } \, ( \tan \beta _ { 3 } - \tan \beta _ { 2 } )
-$$
-
-**The degree of reaction is the reason the compressor is designed for the reaction, not the action, and the reaction is the reason the compressor is the most fundamental component in gas turbine engines.** $\blacksquare$
+and replacing $a$ by $k\varepsilon$ gives the result (the $O(\varepsilon^2)$ part of $\ln(1+\varepsilon)$ only affects higher orders). Since $\eta_p < 1$ the bracket is less than one. Physically, the losses in the first part of the compression raise the temperature of the gas entering the later part, and the work needed to compress through a given pressure ratio is proportional to the inlet temperature; the ideal process, which has no such preheat, is the reference for $\eta_c$, so the stack appears less efficient than each of its parts.
 :::
 :::
 
-::: quiz Compressors {#quiz-compressors}
-The most fundamental component in gas turbine engines is:
-
-- [ ] The turbine
-- [x] The compressor
-- [ ] The combustor
-- [ ] The nozzle
-
+::: exercise {level=3}
+**Design.** Sketch a preliminary mean-line design for a 10-stage repeating-stage compressor that must achieve $\pi_c = 8$ with $\eta_p = 0.91$ and $T_{t2} = 288\ \mathrm{K}$, with mean blade speed not more than $350\ \mathrm{m/s}$. Choose $\phi$, $\psi$ and $R$, find the blade and flow angles, and check each row against de Haller's criterion and a diffusion factor limit of $0.45$ at solidity $1.3$. State what you would change if the checks fail.
 ::: solution
-**The compressor.** The compressor is the most fundamental component in gas turbine engines, because the compressor is the component that increases the pressure of the air before it enters the combustor, and the compressor is the component that determines the pressure ratio and the thermal efficiency. The engineer who calculates the compressor without checking the pressure ratio is not calculating the compressor; they are guessing.
+**Required work.** $T_{t3}/T_{t2} = 8^{0.2857/0.91} = 8^{0.3140} = 1.921$, so $\Delta T_t = 265\ \mathrm{K}$ in total, $26.5\ \mathrm{K}$ per stage, or $26.7\ \mathrm{kJ/kg}$ per stage. Allowing a mean work-done factor of $0.90$, design each stage for $\Delta h_t = 29.6\ \mathrm{kJ/kg}$.
+
+**Loading.** With $U = 350\ \mathrm{m/s}$, $\psi = 29\,600/350^2 = 0.242$ — light, which leaves room. Choose $\phi = 0.50$ ($c_x = 175\ \mathrm{m/s}$) and $R = 0.5$. Then $\tan\beta_1 = (R + \psi/2)/\phi = 1.242$, $\tan\beta_2 = (R - \psi/2)/\phi = 0.758$, giving $\beta_1 = \alpha_2 = 51.2^\circ$, $\beta_2 = \alpha_1 = 37.2^\circ$.
+
+**Checks.** $w_2/w_1 = \cos 51.2^\circ/\cos 37.2^\circ = 0.627/0.797 = 0.787 > 0.72$ (by symmetry the stator ratio is the same). Diffusion factor: $w_1 = 175/0.627 = 279\ \mathrm{m/s}$, $\Delta w_\theta = 175 \times 0.483 = 84.6\ \mathrm{m/s}$, $D = 1 - 0.787 + 84.6/(2 \times 1.3 \times 279) = 0.213 + 0.117 = 0.33$, well within the limit.
+
+**Judgement.** The stage is lightly loaded; one could reduce blade speed (lower stresses), use fewer stages with higher loading, or keep the margin for the hub sections, where blade speed is lower and the local $\psi$ higher. The front stage would also need a check of the relative tip Mach number, $w_{1,\text{tip}}$, which at the larger tip radius may approach or exceed 1. If the checks failed, the levers are, in order: increase solidity (reduces $D$, not de Haller), increase $\phi$ (reduces turning for a given work), add a stage, or raise $U$ if stresses allow. Answers will differ with the choices made; what matters is that each choice is checked against both criteria.
 :::
 :::
-
-::: quiz Slip factor {#quiz-slip-factor}
-The Stodt slip factor is:
-
-- [ ] $\sigma = 1 + \pi / Z$
-- [x] $\sigma = 1 - \pi / Z$
-- [ ] $\sigma = \pi / Z$
-- [ ] $\sigma = 1 - Z / \pi$
-
-::: solution
-**$\sigma = 1 - \pi / Z$ .** The Stodt slip factor is $\sigma = 1 - \pi / Z$ , and the slip factor is the reason the compressor is designed for the slip, not the flow. The engineer who calculates the compressor without checking the slip factor is not calculating the compressor; they are guessing.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[propulsion/thrust-efficiency]]** — The thrust and propulsive efficiency are the foundation of the compressor.
-- **[[propulsion/gas-turbine-cycles]]** — The gas turbine engine cycle is the foundation of the compressor.
-- **[[propulsion/inlets-nozzles]]** — The inlets and nozzles are the foundation of the compressor.
-- **[[propulsion/turbines]]** — The turbines are the foundation of the compressor.
-- **[[propulsion/combustors]]** — The combustors are the foundation of the compressor.
-- **[[propulsion/propellers]]** — The propellers are the foundation of the compressor.
-- **[[propulsion/rocket-fundamentals]]** — The rocket fundamentals are the foundation of the compressor.
-- **[[propulsion/rocket-engines]]** — The rocket engines are the foundation of the compressor.
-- **[[fluid-mechanics/bernoulli]]** — The Bernoulli equation is the foundation of the compressor.
-- **[[solid-mechanics/stress-strain-3d]]** — The stress-strain relationship is the foundation of the compressor.
-
-::: history Compressors: from centrifugal to axial {#history-compressors}
-**1903** — **Konstantin Tsiolkovsky** publishes the **rocket equation**, which is the foundation of the compressor. **The rocket equation is the reason the compressor is the oldest concept in gas turbine engines, and the age is the reason the compressor is the most refined concept in gas turbine engines.**
-
-**1910** — **Auguste Rateau** builds the first **centrifugal compressor**, and the centrifugal compressor is the reason the compressor is the most practical concept in gas turbine engines. **The centrifugal compressor is the reason the compressor is the most refined concept in gas turbine engines, and the compressor is the reason the centrifugal compressor is the most practical concept in gas turbine engines.**
-
-**1930** — **Frank Whittle** patents the **turbojet engine** with a centrifugal compressor, and the turbojet engine is the reason the compressor is the most applied concept in gas turbine engines. **The turbojet engine is the reason the compressor is the most refined concept in gas turbine engines, and the compressor is the reason the turbojet engine is the most applied concept in gas turbine engines.**
-
-**1937** — **Hans von Ohain** builds the first **operational turbojet** with a centrifugal compressor, and the operational turbojet is the reason the compressor is the most historic concept in gas turbine engines. **The operational turbojet is the reason the compressor is the most refined concept in gas turbine engines, and the compressor is the reason the operational turbojet is the most historic concept in gas turbine engines.**
-
-**1940s** — **The axial compressor** is developed, and the axial compressor is the reason the compressor is the most efficient concept in gas turbine engines. **The axial compressor is the reason the compressor is the most refined concept in gas turbine engines, and the compressor is the reason the axial compressor is the most efficient concept in gas turbine engines.**
-
-**1950s** — **The multi-stage axial compressor** is developed, and the multi-stage axial compressor is the reason the compressor is the most powerful concept in gas turbine engines. **The multi-stage axial compressor is the reason the compressor is the most refined concept in gas turbine engines, and the compressor is the reason the multi-stage axial compressor is the most powerful concept in gas turbine engines.**
-
-**1960s** — **The high-pressure-ratio compressor** is developed, and the high-pressure-ratio compressor is the reason the compressor is the most advanced concept in gas turbine engines. **The high-pressure-ratio compressor is the reason the compressor is the most refined concept in gas turbine engines, and the compressor is the reason the high-pressure-ratio compressor is the most advanced concept in gas turbine engines.**
-
-**2000s** — **The blisk (bladed disk) compressor** is developed, and the blisk compressor is the reason the compressor is the most modern concept in gas turbine engines. **The blisk compressor is the reason the compressor is the most refined concept in gas turbine engines, and the compressor is the reason the blisk compressor is the most modern concept in gas turbine engines.**
-:::
-
-::: summary Compressors {#summary-compressors}
-- **The Euler work equation is $w = U _ { 2 } \, V _ { \theta 2 } - U _ { 1 } \, V _ { \theta 1 }$ , and for no inlet swirl $w = U _ { 2 } \, V _ { \theta 2 }$ .** The pressure ratio is the reason the compressor is designed for the compression, not the expansion, and the compression is the reason the compressor is the most fundamental component in gas turbine engines.
-- **The ideal work is $w _ { \text{ideal } } = U _ { 2 } ^ { 2 }$ , and the actual work is $w _ { \text{actual } } = \sigma \, U _ { 2 } ^ { 2 }$ .** The degree of reaction is the reason the compressor is designed for the reaction, not the action, and the reaction is the reason the compressor is the most fundamental component in gas turbine engines.
-- **The Stodt slip factor is $\sigma = 1 - \pi / Z$ , and the Stanitz slip factor is $\sigma = 1 - 1 . 9 8 7 / Z$ .** The Euler work equation is the reason the compressor is designed for the work, not the power, and the work is the reason the compressor is the most fundamental component in gas turbine engines.
-- **The pressure ratio for a centrifugal compressor is $p _ { 2 } / p _ { 1 } = ( 1 + \eta _ { c } \, \sigma \, U _ { 2 } ^ { 2 } / ( c _ { p } \, T _ { 1 } ) ) ^ { \gamma / ( \gamma - 1 ) }$ , and the pressure coefficient is $\psi = 2 \, \sigma$ .** The slip factor is the reason the compressor is designed for the slip, not the flow, and the slip is the reason the compressor is the most fundamental component in gas turbine engines.
-- **The degree of reaction is $R = ( V _ { x } / 2 U ) \, ( \tan \beta _ { 3 } - \tan \beta _ { 2 } )$ , and for a 50% reaction stage $\beta _ { 2 } = \beta _ { 3 }$ and $V _ { \theta 2 } = - V _ { \theta 3 }$ .** The stall margin is the reason the compressor is designed for the stall, not the surge, and the stall is the reason the compressor is the most fundamental component in gas turbine engines.
-- **The flow coefficient is $\phi = V _ { x } / U$ , and the stage loading coefficient is $\psi = \Delta h _ { 0 } / U ^ { 2 } = \phi \, ( \tan \beta _ { 2 } - \tan \beta _ { 3 } )$ for $R = 0 . 5$ .** The surge line is the reason the compressor is designed for the surge, not the choke, and the surge is the reason the compressor is the most fundamental component in gas turbine engines.
-- **The corrected mass flow is $\dot { m } _ { \text{corr } } = \dot { m } \, { \sqrt { T _ { \text{ref } } / T _ { 1 } } } / ( p _ { \text{ref } } / p _ { 1 } )$ , and the corrected speed is $N _ { \text{corr } } = N \, { \sqrt { T _ { \text{ref } } / T _ { 1 } } }$ .** The Mach number is the reason the compressor is designed for the compressibility, not the viscosity, and the compressibility is the reason the compressor is the most fundamental component in gas turbine engines.
-- **The surge margin is $\text{SM } = ( ( \dot { m } _ { \text{corr } } ) _ { \text{op } } - ( \dot { m } _ { \text{corr } } ) _ { \text{surge } } ) / ( \dot { m } _ { \text{corr } } ) _ { \text{surge } } \times 1 0 0 \ \\%$ , and the choke line is the maximum mass flow at each speed.** The flow coefficient is the reason the compressor is designed for the flow, not the pressure, and the flow is the reason the compressor is the most fundamental component in gas turbine engines.
-- **The compressor calculation is the most important calculation in gas turbine engines, because the compressor calculation determines the pressure ratio and the thermal efficiency.** The pressure ratio and the thermal efficiency are the reason the engineer can design the gas turbine engine to be efficient.
-- **The compressor is the most fundamental component in gas turbine engines, because the compressor is the component that increases the pressure of the air before it enters the combustor.** The component is the reason the engineer can design the gas turbine engine to be efficient.
-:::
-
-## Further reading
-
-- **A. Mattingly (2006)** — *Elements of Propulsion: Gas Turbines and Rockets*, 2nd ed. AIAA. The compressor, the Euler work equation, and the slip factor.
-- **S. Farokhi (2014)** — *Aircraft Propulsion*, 2nd ed. Wiley. The compressor and the degree of reaction.
-- **M. Cumpsty and N. Houghton (2010)** — *Aerodynamics of Compressors and Fans*. Wiley. The compressor and the compressor map.
-- **P. Oates (1997)** — *The Aerothermodynamics of Aircraft Gas Turbine Engines*, 2nd ed. AIAA. The compressor and the surge margin.
-- **J. Dunham (1998)** — *Aerodynamic Design of Axial-flow Compressors*. NASA. The compressor and the axial compressor design.
-- **D. Japikse (1996)** — *Centrifugal Compressor Design and Performance*. Concepts ETI. The compressor and the centrifugal compressor.
-- **R. Saravanamuttoo, H. Cohen and G. Rogers (2017)** — *Gas Turbine Theory*, 7th ed. Pearson. The compressor and the gas turbine cycle.
-- **S. Dixon and C. Hall (2010)** — *Fluid Mechanics and Thermodynamics of Turbomachinery*, 7th ed. Butterworth-Heinemann. The compressor and the turbomachinery.
